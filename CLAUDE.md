@@ -62,6 +62,7 @@ A write-up is written from the target's `NOTES.md` and `profile.json`, and goes 
 New finds are leads, not catalogue entries. Sweeps write `research/<sweep>/candidates.json`, and
 `research/archive_sweep_2026-10/merge.py --write` merges them into `research/leads.json`, never into `catalogue.json`.
 `research/COVERAGE.md` lists what is still unswept: check it before choosing a sweep, and remove a row when a sweep closes it.
+`research/README.md` indexes every research folder by area and kind: run `python research/_index.py` after adding one.
 A lead enters the catalogue only through `python docs/_check_catalogue.py --promote <id>`, which refuses it until its
 `vetting` block meets the vetting bar in README Conventions: ciphertext seen, prior art searched in DECODE, Tomokiyo,
 Lasry, the edition and the literature, keys recorded (a key in the volume, in the collection or in print does not block a lead with no known decipherment;

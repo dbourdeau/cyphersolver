@@ -1,0 +1,113 @@
+{
+ "2570": {
+  "date": "2026-11-13",
+  "by": "outside contributor (not at the keyboard, handle not given), Claude Code agent, model claude-fable-5-2",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet R0000624 images 55, 56 and 57, each opened at 1800 px: https://lbiiif.riksarkivet.se/arkis!R0000624_000NN/full/1800,/0/default.jpg (Referer https://sok.riksarkivet.se/)",
+   "extent": "Image 55: one passage of 7 lines of cipher inside the German text (about 150 groups). Image 56 left page: one passage of 8 lines (about 180 groups) in a letter dated 'Datum Nürnberg den 7 Xbris Ao 1631'. Image 57: a leaf written almost wholly in cipher, about 20 lines.",
+   "cipher": "Dot-separated one- and two-digit numbers (3 to 93) mixed with letters such as m and pf, in a German letter to the king. On images 55 and 56 nothing is written between the cipher lines or in the margin, and no decipherment is on the facing page. Image 57, addressed 'A Sa Maiestie le roy de Sweden', has German words written above every cipher line ('avanciren', 'munition', 'offendiren'): that sibling letter is deciphered on the leaf, the passages on 55 and 56 are not."
+  },
+  "prior_art": {
+   "decode": "DECODE RecordsList keyword search (curl ?search=, and research/sweep_2026-11-11_german/decode_search.py): 'Chemnitz' 0 records, 'Skrivelser till konungen' 0, 'Gustav II Adolf' 0, 'Nuremberg' 2 (R465 and R2765, not opened; the row shown is a 1673 State Papers item), 'Nürnberg' 1 (R3185, opened: a 1908 postcard). No record for this letter.",
+   "tomokiyo": "Cryptiana index (cryptiana.web.fc2.com/code/crypto.htm) fetched: no heading with Chemnitz, Sweden, Swedish or Nuremberg; no article on Swedish despatches of 1631 found there.",
+   "lasry": "Cryptiana GL.htm (Lasry's solved ciphers) fetched: 0 hits for Chemnitz, Nuremberg, Nürnberg; the one Swedish item is a 'Swedish Cipher in Latin' added 15 Oct 2026, not this German letter. Lasry's papers were not searched one by one.",
+   "edition": "Opened two editions. Arkiv till upplysning om svenska krigens historia, vol. II (archive.org arkivtillupplys01mankgoog, full text): the register of 1631 (nos. 687-698) has no letter of Chemnitz and none from Nuremberg in Nov-Dec 1631. Irmer, Die Verhandlungen Schwedens ... mit Wallenstein, vol. I (archive.org dieverhandlungen01irme): the index has 'Chemnitz, Martin S. 169 Anm. 1' only, a report of 3/13 March 1632. Not opened: Irmer vols. II-III, Soden's Gustav Adolph und sein Heer in Süddeutschland.",
+   "literature": "Web searches (see searches) found no decipherment or discussion of these despatches in HistoCrypt or Cryptologia; the nearest hits are the 1637 Heusner von Wandersleben letter (Tartu, 2024) and Banér 1640. NOTE: pull request #539 of this repository (bdudout, opened 13 Nov 2026) reports a key rebuilt from the glosses of image 57 and a reading in part of 55-56; that is this project's own work on this lead, not earlier print."
+  },
+  "key_check": "No key sheet for this cipher was found in the repository (known.py 'Chemnitz', 'R0000624', '1133.07/4': only the lead's own rows) or on DECODE (searches above). No key was tried: vetting only.",
+  "key_in_volume": "No key sheet seen, but the glossed letter on image 57 of the same volume and hand gives number-to-letter pairs for this cipher (the lead says image 58 is glossed too; 58 was not opened in this pass). Not tested here.",
+  "duplicates": "known.py \"1133.07/4\" \"R0000624\" \"Chemnitz\": hits only in research/leads.json (this lead) and research/sweep_2026-11-13_nordic_paging (its sweep). No catalogue entry or target in this checkout. Open pull request #539 adds a target chemnitz1631 for the same letters.",
+  "searches": [
+   {
+    "query": "Martin Chemnitz Nürnberg 1631 schwedischer Resident Briefe an Gustav Adolf Chiffre dechiffriert",
+    "result": "Deutsche Biographie entry for Martin Chemnitz (1596-1645, envoy of Gustav Adolf); nothing on the Nuremberg letters of 1631 or on a decipherment."
+   },
+   {
+    "query": "Martin Chemnitz schwedischer Resident Nürnberg Dezember 1631 Bericht an Gustav Adolf Wallenstein Friedland gedruckt Irmer OR Soden \"Chemnitz\"",
+    "result": "W. H. Stein's study places Hofrat Martin Chemnitz in Nuremberg from October 1631; no printed text of a December 1631 report turned up."
+   },
+   {
+    "query": "DECODE RecordsList search: Chemnitz; Nürnberg; Nuremberg; Skrivelser till konungen; Gustav II Adolf",
+    "result": "0, 1 (R3185 postcard of 1908), 2 (R465, R2765), 0, 0 records: no DECODE record of this letter."
+   },
+   {
+    "query": "archive.org full text of Arkiv till upplysning om svenska krigens historia vol. II and Irmer vol. I, grep Chemnitz / Nürnberg Nov-Dec 1631",
+    "result": "Arkiv II prints no Chemnitz letter of 1631; Irmer I cites only his report of 3/13 March 1632 (p. 169 note)."
+   }
+  ],
+  "verdict": "open"
+ },
+ "2571": {
+  "date": "2026-11-13",
+  "by": "outside contributor (not at the keyboard, handle not given), Claude Code agent, model claude-fable-5-2",
+  "seen": {
+   "kind": "scan",
+   "where": "Riksarkivet R0000795 images 78, 79 and 122 at 1800 px, and crops of 78 and 122 at native size: https://lbiiif.riksarkivet.se/arkis!R0000795_000NN/full/1800,/0/default.jpg (Referer https://sok.riksarkivet.se/)",
+   "extent": "Image 78 (fol. 76, 9 Oct 1630): about 11 lines of cipher. Image 79 (fol. 77, 9 Oct 1630): about 16 lines. Image 122 (fol. 120, 8 Nov 1630): 7 lines.",
+   "cipher": "Comma-separated two-digit numbers with empty square signs, in Swedish letters signed Gustaf Horn. Images 78 and 122 carry a decipherment in a small hand above the cipher lines ('avertera', 'Mekelenburgh', 'hazardera' on 78; 'marcherar', 'Rytery', 'footfolck', 'sampt' on 122). Image 79 has nothing between the lines; it opens with the same clear sentence ('sub dato den 29 Septem...'), the same first eight groups (79, 80, 88, 93, 26, 78, 89, 96) and the same date and signature as 78."
+  },
+  "prior_art": {
+   "decode": "DECODE RecordsList keyword search: 'Horn', 'Gustav Horn', 'Gustaf Horn', 'Stettin', 'Skrivelser till konungen' all 0 records. The key record R4122 named by the lead is not found by these words; it was not opened in this pass.",
+   "tomokiyo": "Cryptiana index crypto.htm fetched: no heading with Horn, Sweden or Swedish; nothing on these letters.",
+   "lasry": "Cryptiana GL.htm fetched: 0 hits for Horn; its one Swedish item (a cipher in Latin, 15 Oct 2026) is another document.",
+   "edition": "Arkiv till upplysning om svenska krigens historia, vol. II (archive.org arkivtillupplys01mankgoog) opened at the register for Oct-Nov 1630: it prints Horn's letters to the king of 5, 7, 13 and 30 Oct and 8 and 10 Nov 1630 (nos. 582, 583, 585, 588, 594, 597). No. 594 was opened: a German letter 'Datum in E. K. M. Feldtlager bey Stettin d. 8 Novembris 1630', not the Swedish letter of image 122. The 9 Oct letter is not in the register.",
+   "literature": "Web search found no article on Horn's 1630 cipher letters. Issue #535 of this repository (bdudout, 13 Nov 2026) reports the same glosses on 78 and 122 and that the R4122 table reads the bare image 79."
+  },
+  "key_check": "No key tried in this pass: vetting only. The decipherment is on the leaves.",
+  "key_held": "DECODE R4122 (Horn / Banér cipher), transcribed in targets/baner1640/key_r4122.json. Not tested by me; issue #535 reports that it reads image 79.",
+  "duplicates": "known.py \"1133.07/15\" \"R0000795\" \"Gustaf Horn\" \"Gustav Horn\" \"R4122\": the shelfmark and image series give no hit outside this lead and its sweep; 'Gustaf Horn' also hits the 1625-29 volume in research/sweep_2026-11-11_riksarkivet_paging/notes.md (another volume); R4122 hits targets/baner1640 (the key, another letter). No duplicate.",
+  "searches": [
+   {
+    "query": "Gustaf Horn 1630 brev till Gustav II Adolf chiffer dechiffrerad \"Horn\" \"Stettin\" 1630 utgåva tryckt",
+    "result": "Biographies and the Tartu copy of 'Briefe König Gustav Adolphs an verschiedene Personen' (letters from the king); no printed text of Horn's 9 Oct or 8 Nov 1630 letters."
+   },
+   {
+    "query": "Cryptologia OR HistoCrypt Swedish cipher Thirty Years War Gustav Horn Banér 1630 deciphered letters Riksarkivet \"Skrivelser till konungen\"",
+    "result": "Heusner von Wandersleben 1637, the DECRYPT project paper, Banér 1640: nothing on Horn or on this series."
+   },
+   {
+    "query": "archive.org full text of Arkiv till upplysning om svenska krigens historia vol. II: Horn till konungen, Oct-Nov 1630",
+    "result": "Six Horn letters printed for those weeks; neither the 9 Oct letter nor the Swedish 8 Nov letter is among them."
+   }
+  ],
+  "verdict": "read",
+  "closed": "A contemporary decipherment is written between the cipher lines on Riksarkivet R0000795 image 78 (9 Oct 1630) and image 122 (8 Nov 1630), seen at native size. Image 79, the only bare leaf, is a second copy of the 9 Oct letter (same clear opening, first groups, date and signature as 78; the full texts were not collated here). The lead's title ('three passages of bare ... cipher, no decipherment') is wrong for 78 and 122. Issue #535 reports the same independently."
+ },
+ "2572": {
+  "date": "2026-11-13",
+  "by": "outside contributor (not at the keyboard, handle not given), Claude Code agent, model claude-fable-5-2",
+  "seen": {
+   "kind": "scan",
+   "where": "JACAR C10072242200, both frames of the PDF linked from https://www.jacar.archives.go.jp/das/image/C10072242200 (400 dpi bitonal), frame 1 read at 300 dpi",
+   "extent": "Frame 1 (stamped 0533): eight ruled columns of katakana under the heading '四号'. Frame 2 (0534): a blank ruled sheet.",
+   "cipher": "Each ruled column holds two lines of katakana side by side. One line of each pair is plain Japanese in kana ('カゴシマトンザイタイ', 'シツセイテアテハモチロン', 'ケツテイシダイ'), the other is not: the plaintext is written beside the cipher on the leaf. The JACAR record text runs the two together, which is why the lead took it for one cipher string."
+  },
+  "prior_art": {
+   "decode": "DECODE RecordsList keyword search: 'Kagoshima' 0, 'JACAR' 0, 'Japan' and 'Japanese' 1 each (R5413, opened: a Milan Sforza key of 1450-1555). Not on DECODE.",
+   "tomokiyo": "Cryptiana meijiarmy.htm, meijiarmy_e.htm and meijijapan.htm fetched: they describe the Army's kana cipher of 1877-1894 (22 substitution tables, the telegram opens with the table number, as '四号' here) but do not cite C10072242200, the 草按 file or a Kagoshima telegram of 1879.",
+   "lasry": "Cryptiana GL.htm fetched: 0 hits for Japan or Meiji; nothing by Lasry on this item.",
+   "edition": "No edition or calendar of the 陸軍省雑 明治12年 草按 file was found; the JACAR record itself gives only the kana string. Not checked: Nagata 1989 and Sasaki 1995, the studies Tomokiyo cites.",
+   "literature": "Two Japanese web searches found no discussion of this draft. Pull request #536 of this repository (bdudout, 13 Nov 2026) reports the same finding, plaintext beside the cipher on the leaf, with table 4 of the 1877 Army tables."
+  },
+  "key_check": "No key tried in this pass: vetting only. The clerk's plaintext is on the leaf.",
+  "key_held": "In print: the 1877 Army kana tables as described by Tomokiyo (meijiarmy.htm; pull request #536 cites JACAR C09084568800). Not tested by me.",
+  "duplicates": "known.py \"C10072242200\" \"鹿児島出張\" \"陸軍省-雑-M12-2-150\": only this lead, its sibling lead 2573 (C10072242900, another draft) and research/sweep_2026-11-13_jacar. No catalogue entry or target in this checkout; open pull request #536 adds a target kagoshima1879 for 2572 and 2573.",
+  "searches": [
+   {
+    "query": "\"暗号文\" \"鹿児島出張の件諸注意\" 明治12年 陸軍省 暗号 解読",
+    "result": "NDL column on the 1879 cipher disks of the Mishima papers; no page on this document or a reading of it."
+   },
+   {
+    "query": "明治12年 陸軍省 暗号 電報 草按 鹿児島 琉球 出張 暗号文 解読 陸軍暗号盤 \"四号\" JACAR C10072242200 OR C10072242900",
+    "result": "Other JACAR items of the 陸軍省雑 M12 series and the same NDL column; neither reference code found anywhere but JACAR."
+   },
+   {
+    "query": "Cryptiana meijiarmy.htm / meijiarmy_e.htm / meijijapan.htm: C10072242, 草按, 鹿児島出張, 琉球, Kagoshima",
+    "result": "0 hits for each; the pages give the system (1877 tables, table number first) but not this telegram."
+   }
+  ],
+  "verdict": "read",
+  "closed": "The plaintext is on the leaf: on frame 1 of JACAR C10072242200 every ruled column carries the cipher kana with the clerk's plain kana written beside it ('カゴシマトンザイタイ ...'), seen at 300 dpi. It is a cipher draft with its own clear text, not an unread cipher. Pull request #536 reports the same."
+ }
+}

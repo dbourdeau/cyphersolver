@@ -35,7 +35,8 @@ done, and search with `research/archive_sweep_2026-10/known.py` before starting.
 | Archivi Nazionali search (SIUSA redirects there), Milan ICAR image viewer | Up again 6 Nov 2026, but results and images are drawn by JavaScript: Chrome (`archivinazionali.cultura.gov.it/it/risultati-di-ricerca?search=cifra`; ICAR scat. 1591). Florence MAP images, Milan/Mantua/Genoa inventory PDFs answer curl | `sweep_2026-11_italian_state_retry` |
 | Braidense, Trivulziana | See the sweep | `milan_archives` |
 | NLS, National Library of Wales | Cloudflare challenge | `uk_libraries` |
-| TCD, Lambeth | Security check, 403 | `uk_libraries` |
+| TCD | Security check, 403 | `uk_libraries` |
+| Lambeth | No longer blocked: the CalmView catalogue answers scripts and was searched on "cipher" (`sweep_2026-11_uk_ireland`), "cypher" (`sweep_2026-11_uk_retest`) and nine more terms (`sweep_2026-11-13_lambeth`, 13 Nov 2026). No manuscript images are online; left: "in code", "characters", "figures", old spellings | `sweep_2026-11-13_lambeth` |
 | PRONI, NAI, NRS Jacobite catalogue | Bot wall, 403 or not tried | `uk_tna` |
 | manuscripta.at, ÖNB Primo, Vaud | 403 in both browsers (2 Nov 2026); ÖNB Digital and Basel were swept in a browser pass (two Basel leads) | `swiss_austrian`, `browser_pass_oenb_basel_geneva` |
 | Hispana, BVPB | HTTP 429; not tried in the Chrome pass, nor was BDCyL | `bne_hispana`, `chrome_pass_2026-11` |

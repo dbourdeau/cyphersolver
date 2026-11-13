@@ -5,7 +5,7 @@ This repository is a shared ledger of historical ciphers: what has been decipher
 [contribute.html](https://dbourdeau.github.io/cyphersolver/contribute.html), and everyone credited so far is on
 [contributors.html](https://dbourdeau.github.io/cyphersolver/contributors.html).
 
-## Five kinds of contribution
+## Six kinds of contribution
 
 | Kind | What to send | Issue form |
 |---|---|---|
@@ -13,6 +13,7 @@ This repository is a shared ledger of historical ciphers: what has been decipher
 | A fuller reading of a partial one | the write-up and the gap (from its NOTES.md `## Remaining gaps` or [contributors.html#further](https://dbourdeau.github.io/cyphersolver/contributors.html#further)), the value or reading you propose, the evidence for it | [Fuller reading](https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml) |
 | A new unsolved cipher | archive, shelfmark, folio, image link, date and correspondents if known, what you know of its status | [New cipher](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher.yml) |
 | A new cipher with its solution | both of the above; say whether an unpublished result may be shown in full | [New cipher with solution](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher-solved.yml) |
+| New ciphers found and vetted by your AI | the sweep folder your agent wrote from `research/SWEEP.md` (what it searched, each ciphered item found; an empty search counts), or the vetting file it wrote from `research/VET.md` (a verdict with its evidence for each lead) | [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) |
 | A verification of a reading here | the passage and images you worked from, where your reading agrees and where it does not | [Verification](https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml) |
 
 **Full texts.** A contribution that claims a document is read, in full or in part, has to include the complete
@@ -48,6 +49,51 @@ language. Then look at where the result stops making sense: those places often r
 in the key. Check them against the images, correct the labels or the key, decrypt again and repeat until the
 sentences hold. Mark every value the model proposed from context alone as doubtful (`[?word]`) until it holds at every
 occurrence or a contemporary text confirms it. Record each round, failures included, as a solution step.
+
+## Searching an archive with your AI
+
+Every catalogue entry started as a lead: a ciphered document in an archive that nobody seems to have read. The leads
+here are found by AI agents that search a portal, open the page images and check each find against what is known. You
+can run one. You do not need to know the archive or solve anything; the repository carries the context.
+
+1. **Start a coding agent in a checkout of this repository**, one that can browse the web and read images.
+2. **Give it the brief**: `Read research/SWEEP.md and follow it. Sweep: pick one from the coverage list.` (or name an
+   archive, a portal or a series). [research/SWEEP.md](research/SWEEP.md) sends it to
+   [research/COVERAGE.md](research/COVERAGE.md) (what is not searched yet), to [research/README.md](research/README.md)
+   (every earlier sweep and its notes) and to [the sweep brief](research/archive_sweep_2026-10/BRIEF.md) (what counts,
+   the row schema), so it continues the earlier searches and does not repeat them.
+3. **Reserve the archive** it chose by opening the
+   [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) form with its name.
+4. **Send the folder it wrote**, `research/sweep_<yyyy-mm-dd>_<archive>/` (`README.md`: what was searched, found,
+   blocked and left; `candidates.json`: one row per lead, `[]` is a valid result), as a pull request with nothing else
+   in it. The merge into `research/leads.json`, the coverage update and the promotion to `catalogue.json` are run after
+   review; a lead enters the catalogue only when it meets the vetting bar (README Conventions).
+
+What you add that the project's own agents lack: another network (see "Tried and blocked" in the coverage list), your
+browser when a site asks whether you are human (the agent must not get round a bot check; you clear it), a reader's
+login, and the hours it takes to page through a volume leaf by leaf. An empty search is merged and credited like a
+full one. A lead keeps its finder's name, and the write-up of a cipher that came from it credits the finder with the
+role `new cipher`. A find made by hand goes on the same form.
+
+## Vetting leads into the catalogue
+
+A lead enters `catalogue.json` only when its `vetting` block meets the vetting bar (README Conventions): ciphertext
+seen, prior art searched, keys recorded, duplicates searched, verdict `open`. Several hundred leads in
+`research/leads.json` have no verdict yet, most with a named blocker (`vetting_note`). Your agent can vet them:
+
+1. **Give it the brief**: `Read research/VET.md and follow it. Leads: pick ten that are online.` (or give ids, or an
+   area). [research/VET.md](research/VET.md) has it list the waiting leads with `python research/vet.py --list` and
+   prefer those whose blocker you can lift: a subscription, a reader's login, a book, another network.
+2. **Reserve the lead ids** on the [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) form.
+3. **Send the folder it wrote**, `research/vetting_<yyyy-mm-dd>_<handle>/` (`vetting.json`: `{"<lead id>": block}`;
+   `README.md`), as a pull request, once `python research/vet.py --check <folder>/vetting.json` prints `result: pass`.
+   The check holds it to the rules of the project's own passes: at least three searches run for each lead, nothing
+   pasted across leads, and a reason on every verdict other than `open`.
+
+**Promotion** is run by the project after review, never in the pull request: the blocks are applied to
+`research/leads.json`, and `python docs/_check_catalogue.py --promote <id>` moves each lead vetted `open` into
+`catalogue.json` under the same id. Leads vetted `read`, `partly_read`, `duplicate` or `not_cipher` are closed with
+the reason. Do not edit `research/leads.json` or `catalogue.json` in a pull request.
 
 Not on GitHub? Email <picture><source media="(prefers-color-scheme: dark)" srcset="docs/email-dark.png"><img src="docs/email.png" alt="email address (see image)" height="22"></picture> with the same details. The entry is made for you and credited the same way.
 
