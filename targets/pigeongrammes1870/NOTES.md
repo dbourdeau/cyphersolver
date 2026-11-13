@@ -1,8 +1,7 @@
 # Pigeongrammes and telegraph ciphers, France 1870-71 (Pillon / Debove collection)
 
-Status: in progress (reopened 13 Nov 2026: a partial reading of the inspectors' telegram is under way; the page is held at its 8 Nov state at the owner's request and must be re-read against these notes before it is next reviewed).
 
-Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome: not solved, attempted, not read; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
+Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome since 13 Nov 2026: key recovered based on adjacent plaintext, read in part, 64% of groups valued; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
 
 ## Source
 Alexandre Pillon (collector) and Bruno Debove, via the forwarded email of 7 Nov 2026.
@@ -421,3 +420,17 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 - Printed-text search: no match except 13 Nov; 7 Dec table probably Chaudordy's dispatch of 7 Dec (Favre II p. 255); Quai d'Orsay papers not checked.
 - Corrections: old overlap figure 87-95% wrong (mixed pool); 701119 is Favre family; 701023 block 2 is R1; a seven-group run read on 2emeS-2 does not exist.
 - Open requests to the collector: beacon pairs, recipients 6819 3412 (P...-ET, Pierret?) and 5006 9701 2729, Nantes/Rennes names, other ciphertext, rescans of the four weak spots.
+
+## Remaining gaps
+- names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
+- about 35 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
+- eleven assumed digit slips and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
+- exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
+
+## Escalation
+- [x] siblings: the collection's other pages were sorted on 8 Nov (R1, R2, Favre/delegation code); none is in the inspectors' code
+- [x] clear-pages: the clear words inside the telegram are the adjacent plaintext used; no separate clear copy exists in the collection
+- [x] known-keys: R1 tested on 7 Nov (18% of groups in its table, 10% by chance, no sense): not the inspectors' table
+- [x] print: Steenackers 1883 (HathiTrust), Dagron, the 1872 Bulletin article searched on 7 Nov; the telegram is not printed there; web searches of 13 Nov for Pierret and for Trochu's aides-de-camp found nothing
+- [x] key-rebuild: alphabetical bracketing of the paged book (interval_cands.py), three passes on 13 Nov, 23 to 236 values
+- [x] retry: every unread group listed again with the tightened intervals in the third pass; candidates recorded, none adopted without a second support
