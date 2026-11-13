@@ -349,6 +349,15 @@
    ],
    "what": "Integration check of the R3 files (R8, AI agent): decode_R3.py, mkledger_R3.py and valscore_R3.py re-run with python3 -I, byte-identical; four b195 stamp imprints equal the manifests, which hold the frozen R3 transcriptions; frame 233 compared: word count and sign positions agree, one word-seeking letter seen (image tbdf, R3 tzbdf = lasen, a borderline unit); frame 882 of Nr. 529 holds the f.7 draft as stated. R3 figures filed per slip as a labelled third reading, not figures of record (non-blind); outcome.method set to 'read with known key' by the owner's decision.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of the blind fourth reading b198 (R8, AI agent): both RFC 3161 tokens (Sectigo, 11:32:42 and 11:35:17 GMT) verify with openssl ts -verify and their imprints equal the manifests; the freeze manifest holds the three frozen transcriptions. Own decoder from the frame-168 worksheet: 236/236 units equal the reader's decodes; ledger reproduces (S+SP 33/84, 49/100, 25/52). Strict recount with doubtful-letter words as holes: f.102 22/84, f.104 42/100, f.204 19/52. Frame 233 against the transcription: 36 of 50 words agree, 3 differ, 11 undecidable. Blind to other readings, not to the key. Adopted as figures of record for the three slips (better documented than R1); fraction_read 135/354 = 0.3814. Status stays in progress (hand, frame 278, drafts workable).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -361,8 +370,8 @@
    "key recovered"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "counts.txt (scripts/build.py): the five held-out slips at their figures of record, first pass with frozen KEY_v2, no selection: f.7 36/83, f.101 16/35, f.102 28/81, f.104 45/101, f.204 24/51 = 149/351 = 0.4245 (integration check 13 Nov 2026; was the best single slip, 0.4706). Unit = cipher word.",
-  "fraction_read": 0.4245,
+  "fraction_read_source": "the five held-out slips at their figures of record, first pass with frozen KEY_v2, no selection: f.7 36/83 (R1), f.101 16/35 (R2), f.102 22/84, f.104 42/100, f.204 19/52 (blind fourth reader b198, blind4_b198/dec/*.ledger.tsv, words with a letter marked doubtful counted as holes) = 135/354 = 0.3814 (13 Nov 2026, R8; was 149/351 = 0.4245 with R1 on f.102, f.104, f.204). Unit = cipher word.",
+  "fraction_read": 0.3814,
   "verification": [
    "key confirms",
    "contemporary decipherment",
@@ -386,7 +395,7 @@
    {
     "who": "mcbratney",
     "role": "transcription",
-    "note": "slips of Nr. 530 from the LASA images, two readers (not blind), with AI agents",
+    "note": "slips of Nr. 530 from the LASA images, four readers (the fourth, b198, blind to the other readings), with AI agents",
     "date": "2026-11-12"
    },
    {
@@ -399,9 +408,9 @@
   ],
   "gaps": [
    {
-    "item": "Every bare slip below 65% (strict 34.57%-47.06% first pass)",
+    "item": "Every bare slip below 65% (strict 26.19%-45.71% first pass, figures of record)",
     "blocker": "not-attempted",
-    "detail": "the hand: g/q, c/e, t/l and final f/n confusions; reader agreement 162/312; the key is complete (frame 168), so a careful re-transcription against the images is workable (integration check 13 Nov 2026: was marked illegible)"
+    "detail": "the hand: g/q, c/e, t/l and final f/n confusions; reader agreement 162/312; the key is complete (frame 168), so a careful re-transcription against the images is workable (integration check 13 Nov 2026: was marked illegible); the blind fourth reader b198 (13 Nov 2026) puts its own shortfall on c/e and g/q in its transcription, not on the key"
    },
    {
     "item": "f.102, f.104, f.204: Nr. 529 searched only in part; Nr. 543 (Krull's draft reports) not checked",
@@ -465,20 +474,22 @@
     "transcription": [
      "transcriptions/f102_frame118_R1.txt",
      "transcriptions/f102_frame118_R2.txt",
-     "transcriptions/f102_frame118_R3.txt"
+     "transcriptions/f102_frame118_R3.txt",
+     "blind4_b198/tx/f102.txt"
     ],
     "decryption": [
      "decryptions/f102_R1.txt",
      "decryptions/f102_R2.txt",
-     "decryptions/f102_R3.txt"
+     "decryptions/f102_R3.txt",
+     "blind4_b198/dec/f102.decode.tsv"
     ],
     "reading": "readings/f102.md",
     "translation": "translations/f102.md",
     "language": "de",
     "state": "decoded, not read",
-    "read_share": 0.3457,
+    "read_share": 0.2619,
     "summary": "Fragments: 'gros zu thun', Groß-Glogau, Bremen, 'spiritu vertiginis getriben'; mostly holes. English gist in translations/ is AI-made.",
-    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 53/84 = 63.10% with borderline S? units as holes; the contributor's figure counting them read 61/84 = 72.62% (units/f102_R3.tsv; reading readings/f102_R3.md). Not the figure of record, which stays read_share; a blind fourth reader is announced."
+    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 53/84 = 63.10% with borderline S? units as holes; the contributor's figure counting them read 61/84 = 72.62% (units/f102_R3.tsv; reading readings/f102_R3.md). Not the figure of record. Blind fourth reading b198 (13 Nov 2026; blind to the other readings, knew the key; transcription frozen under an RFC 3161 stamp before the result): strict 22/84 = 26.19% with words holding a doubtful letter as holes, now the figure of record (was R1 28/81 = 34.57%); the reader's own figure, doubtful-letter words read: 33/84 = 39.29%."
    },
    {
     "doc": "f104",
@@ -486,20 +497,22 @@
     "transcription": [
      "transcriptions/f104_frame121_R1.txt",
      "transcriptions/f104_frame121_R2.txt",
-     "transcriptions/f104_frame121_R3.txt"
+     "transcriptions/f104_frame121_R3.txt",
+     "blind4_b198/tx/f104.txt"
     ],
     "decryption": [
      "decryptions/f104_R1.txt",
      "decryptions/f104_R2.txt",
-     "decryptions/f104_R3.txt"
+     "decryptions/f104_R3.txt",
+     "blind4_b198/dec/f104.decode.tsv"
     ],
     "reading": "readings/f104.md",
     "translation": "translations/f104.md",
     "language": "de",
     "state": "decoded, not read",
-    "read_share": 0.4455,
+    "read_share": 0.42,
     "summary": "Fragments: something strange told to the legates 'in vertrawen', a proposal, 'post repulsam ... invidia', a Münster burgher; mostly holes. English gist in translations/ is AI-made.",
-    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 71/102 = 69.61% with borderline S? units as holes; the contributor's figure counting them read 73/102 = 71.57% (units/f104_R3.tsv; reading readings/f104_R3.md). Not the figure of record, which stays read_share; a blind fourth reader is announced."
+    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 71/102 = 69.61% with borderline S? units as holes; the contributor's figure counting them read 73/102 = 71.57% (units/f104_R3.tsv; reading readings/f104_R3.md). Not the figure of record. Blind fourth reading b198 (13 Nov 2026; blind to the other readings, knew the key; transcription frozen under an RFC 3161 stamp before the result): strict 42/100 = 42.00% with words holding a doubtful letter as holes, now the figure of record (was R1 45/101 = 44.55%); the reader's own figure, doubtful-letter words read: 49/100 = 49.00%."
    },
    {
     "doc": "f204",
@@ -507,20 +520,22 @@
     "transcription": [
      "transcriptions/f204_frame233_R1.txt",
      "transcriptions/f204_frame233_R2.txt",
-     "transcriptions/f204_frame233_R3.txt"
+     "transcriptions/f204_frame233_R3.txt",
+     "blind4_b198/tx/f204.txt"
     ],
     "decryption": [
      "decryptions/f204_R1.txt",
      "decryptions/f204_R2.txt",
-     "decryptions/f204_R3.txt"
+     "decryptions/f204_R3.txt",
+     "blind4_b198/dec/f204.decode.tsv"
     ],
     "reading": "readings/f204.md",
     "translation": "translations/f204.md",
     "language": "de",
     "state": "decoded, not read",
-    "read_share": 0.4706,
+    "read_share": 0.3654,
     "summary": "Someone told the writer 'in vertrawen et pro certo'; 'lieber', 'solte nur damit'; mostly holes. English gist in translations/ is AI-made.",
-    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 42/51 = 82.35% with borderline S? units as holes; the contributor's figure counting them read 45/51 = 88.24% (units/f204_R3.tsv; reading readings/f204_R3.md). Not the figure of record, which stays read_share; a blind fourth reader is announced."
+    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 42/51 = 82.35% with borderline S? units as holes; the contributor's figure counting them read 45/51 = 88.24% (units/f204_R3.tsv; reading readings/f204_R3.md). Not the figure of record. Blind fourth reading b198 (13 Nov 2026; blind to the other readings, knew the key; transcription frozen under an RFC 3161 stamp before the result): strict 19/52 = 36.54% with words holding a doubtful letter as holes, now the figure of record (was R1 24/51 = 47.06%); the reader's own figure, doubtful-letter words read: 25/52 = 48.08%."
    }
   ]
  }
