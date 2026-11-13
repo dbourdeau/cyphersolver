@@ -1,0 +1,226 @@
+{
+ "schema_version": 1,
+ "target": "idiaquez1577",
+ "title": "Juan de Idiáquez and Pedro de Mendoza, Genoa, to Philip II, 24 November 1577 (catalogue 754, AGS Estado 1410,115): the 1577 Genoa embassy syllabary, key K_P2 applied frozen; cipher of images 1-2 read in part",
+ "documents": [
+  {
+   "id": "ags_est_1410_115",
+   "read": "read in part",
+   "shelfmark": "Archivo General de Simancas, Estado, leg. 1410, no. 115 (PARES 3577720)",
+   "date": "1577-11-24",
+   "year": 1577,
+   "country": "Spain",
+   "route": "Juan de Idiáquez and Pedro de Mendoza, Spanish ambassadors in Genoa -> Philip II",
+   "places": {
+    "from": "Genoa",
+    "to": "Madrid"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 6,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the images and none noted on PARES. The key comes from other letters of the same legajo (K_P2, targets/perez1578)."
+   },
+   "length": {
+    "tokens": 411,
+    "distinct": 104,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_1410_115.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES JPEGs at zoom 10 (about 1000x1420)",
+    "image_quality": "good",
+    "notes": "Sign conventions written first; two passes from different crops (2x-3x, the second with contrast stretch); 14 disagreements settled on 3x-4x zooms (RECONCILE.md); after the blind review one shape (upright 1 + crossed stroke) is transcribed 11 in all 4 places where it occurs. Images 1-2 only. Length: 411 cipher signs (104 distinct sign forms) in 26 cipher lines of about 130, 187 cipher words; counted on transcription_1410_115.txt without word gaps, line-end fillers and commas."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Numerical syllabary of the Spanish embassy at Genoa, 1577: a numeral is a consonant, a mark after it the vowel (cross a, dot e, 6-loop i, hook o, stroke u), bare 10/4/2/18/1 the vowels, marks above add n, s, r or l; code groups carry a small cross above (145 V.Md., 8 + hook Señoria, 6 + hook republica). Inline in clear Spanish.",
+  "symbol_kind": "digits",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Key: K_P2 of Brice Dudout (targets/perez1578/key.tsv), with 8 = b as his notes give for the Genoa table, frozen before decrypting. Seen here but not in the key: tilde over 33, underline (perhaps r -> l), small 2 above, dot after vowel 2, code 30. underlined. 35 + hook read pri once (a marked repair). key_frozen.tsv holds 49 entries on 56 lines (7 comment lines): 5 bare vowels, 27 consonant numerals, 5 vowel marks, 4 superscript marks, 1 special sign, 7 code groups.",
+  "distinct_symbols": 49
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment filed with the letter; no edition found in two web searches (12 Nov 2026); not in Dan's repo (origin/main 65445e3f8).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "cleartext context"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 754) and the rules; AI language-model agents transcribed, applied the frozen key, read and checked. No human palaeographer checked the text.",
+  "tools": [
+   "PARES images",
+   "scripts in this folder (decryption, held-out test, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "PARES record 3577720: viewer page, 8 images at zoom 10 and the description page; 1414,4 (3549587): viewer and 4 images. 15 requests, one at a time, 6-9 s apart, no 429.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions by shape; two independent passes of the 26 cipher lines of images 1-2; reconciled on zooms.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "K_P2 (Brice Dudout, from cipher/descifrada pairs of AGS Estado 1410) frozen with the Genoa-table value 8 = b before decryption (SHA-256 in key_frozen.sha256).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Whole passage held out from the key. Frozen key: 97.0% of characters and 91.0% of 122 words (3+ letters; 111 of 122) agree with the reading; 200 permuted-key controls at most 92.2% / 74.6% (mean 8.0% words). The reference is the reading itself, so the test is not independent of it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Mechanical decryption read as Spanish with every departure marked; check_marks.py passes. 187 cipher words: 173 verbatim, 3 repaired, 3 guesses, 8 holes. Dan's docs/_check_reading.py: reading_1410_115.md readable, clean share 0.727 (16 of 22 sentences).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Two web searches on the letter, the ambassadors, Genoa 1577 and the French ambassador; no edition or decipherment found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Independent blind review: 4 lines of image 2 (68 signs) read by shape before opening the transcription, 64 agree; mark check, decryption and held-out test rerun; state read in part confirmed, grade B. After it, one shape read 11 in all 4 places (two repairs became verbatim readings) and the English of the first sentence aligned with the reading.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "Key K_P2, rebuilt by Brice Dudout from contemporary decipherments of other 1577 letters of the Genoa embassy (AGS Estado 1410), applied frozen to this letter, which has no decipherment.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.19,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "26 of about 130 cipher lines (images 1-2 of the 6 cipher images), counted on the images.",
+  "verification": [
+   "key confirms",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "key or decipherment used",
+    "note": "K_P2, the 1577 Genoa embassy key, targets/perez1578/key.tsv",
+    "date": "2026-10-29"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key applied frozen; cipher of images 1-2 decrypted and read in part",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "26 cipher lines of images 1-2, two passes, from PARES images",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ags_est_1410_115",
+    "label": "AGS Estado 1410,115, cipher of images 1-2",
+    "transcription": "transcription_1410_115.txt",
+    "decryption": "decryption_1410_115.txt",
+    "reading": "reading_1410_115.md",
+    "translation": "translation_1410_115.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "The ambassadors play down the report that the French will send an ordinary ambassador to Genoa: perhaps the Count of [Fiesco] and some exiles of the conspiracy or their relatives pressed for it, but it is no general request of the 'new' nobles, whose leading men now make one body with the 'old'; if a French ambassador could ever be kept out it is now, though Genoa is too changeable to promise anything. On the conspiracy, they gave the Signoria the King's letter on investigating it and punishing the guilty.",
+    "note": "Images 1-2 only (26 of about 130 cipher lines). 187 cipher words: 173 verbatim from the signs (92.5%), 3 with a marked repair, 3 guesses (Fiesco, llaman, mucho), 8 holes (signs with marks the key does not give, among them acá and inferiores). Images 3-6 not transcribed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "The five sentences build sense in 16th-century chancery Spanish, with one or two marked holes or guesses each; 4 lines of image 2 (68 signs) were read by shape before opening the transcription and 64 signs agree. Only 26 of about 130 cipher lines are read, and acá llaman is the weakest guess."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Images 3-6 of 1410,115 (about 105 cipher lines)",
+    "blocker": "not-attempted",
+    "detail": "Not transcribed in this round; the same key should apply."
+   },
+   {
+    "item": "Marks not in K_P2: tilde over 33, underline, small 2 above, dot after vowel 2, code 30. underlined",
+    "blocker": "open-codes",
+    "detail": "Proposals from sense only (underline r -> l)."
+   },
+   {
+    "item": "Guesses: Fiesco (signs fiesbo), acá llaman (signs a? quilaman), inferiores (signs jn?riores), mucho (signs meco)",
+    "blocker": "not-attempted",
+    "detail": "To be retried on the image and against images 3-6; acá llaman is the weakest."
+   },
+   {
+    "item": "Shape 'upright 1 + crossed stroke' in agora, algun, negocio, averiguacion, read 11",
+    "blocker": "not-attempted",
+    "detail": "Close to the crossed 4 of this hand; read as 14, the four words would need repairs."
+   },
+   {
+    "item": "No independent blind transcription",
+    "blocker": "not-attempted",
+    "detail": "Only the blind reviewer's 4 lines (68 signs) checked by a second reader; no human palaeographer."
+   }
+  ]
+ }
+}
