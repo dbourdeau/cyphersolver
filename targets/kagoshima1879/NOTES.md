@@ -11,8 +11,8 @@ The JACAR record text (内容) of 2572 and 2573 looks like a kana string that is
 | doc | shelfmark | catalogue | table | words | check (signs matching the table) |
 |---|---|---|---|---|---|
 | 1 | JACAR C10072242200, frame 0533 (0534 blank), 陸軍省-雑-M12-2-150 | 2572 | no. 4 (header 四号) | 35/35 | 95/96 |
-| 2 | JACAR C10072242900, frame 0545, 陸軍省-雑-M12-2-150 | 2573 | no. 1 | 20/20 | 45/47 |
-| 3 | JACAR C10072244400, frames 0575-0576, 陸軍省-雑-M12-3-151 | - | no. 6 (header 第六号) | 41/44 | 132/138 |
+| 2 | JACAR C10072242900, frame 0545, 陸軍省-雑-M12-2-150 | 2573 | no. 1 | 19/20 (contributor 20/20) | 45/47 |
+| 3 | JACAR C10072244400, frames 0575-0576, 陸軍省-雑-M12-3-151 | - | no. 6 (header 第六号) | 44/44 (contributor 41/44) | 132/138 |
 
 NIDS, Ministry of Defense. No images included (JACAR, all rights reserved).
 
@@ -28,7 +28,7 @@ Protocol and transcription frozen by SHA-256 before any key test. The pre-regist
 
 - Doc 1 (2572): 鹿児島屯在隊出張ハ出征ニ非ザル故、出征手当ハ勿論賜ラズ。出発日限未定ナリ。決定次第申シ進ズベシ。携帯ノ外ノ弾薬ハ当地ヨリ送ル方便利ナラン。御考ヘ如何ニ。 A short passage is struck out on the draft (not counted).
 - Doc 2 (2573): 琉球ヘ出張兵隊ノ為、小屋ハ建ツルニ及バズ。是等ノ事ハ益満大尉ヘモ申シ遣ハス。 The sign マ of マスミツ looks like テ in the plaintext but the cipher (レ, table 1) gives マ.
-- Doc 3: 鹿児島屯在兵ノ内半大隊、琉球藩ヘ出張ヲ命ゼラレタル処、残リ半大隊モ何時出張ノ令アルモ計リ難キニ付キ、先般達シタル数箇条ノ内第二・四・五・六・七条ニ基ヅキ … 不足品ハ申シ達スベシ (3 words unresolved).
+- Doc 3: 鹿児島屯在兵ノ内半大隊、琉球藩ヘ出張ヲ命ゼラレタル処、残リ半大隊モ何時出張ノ令アルモ計リ難キニ付キ、先般達シタル数箇条ノ内第二・四・五・六・七条ニ基ヅキ、食料ヲ除キ準備ノ目途ヲ以テ、不足品ハ申シ達スベシ (the contributor left 3 words unresolved; settled by the kanji draft C10072244300, see Integration check).
 
 Context: the Ryukyu Disposition of March-April 1879, when a half battalion backed the annexation of the Ryukyu domain (Okinawa prefecture).
 
