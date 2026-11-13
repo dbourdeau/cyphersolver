@@ -155,6 +155,8 @@ def build():
            'sweeps. This file lists each folder once.' % (len(folders), sweeps), '',
            '## Start here', '',
            '| File | What it is |', '|---|---|',
+           '| [`SWEEP.md`](SWEEP.md) | The brief a contributor gives their own AI agent to run one sweep: read what has '
+           'been searched, choose an archive, search, write the folder. |',
            '| [`COVERAGE.md`](COVERAGE.md) | What has **not** been swept yet, by area and archive. Pick a sweep from it; '
            'remove the row when a sweep closes it. |',
            '| [`leads.json`](leads.json) | Every lead the sweeps found that is not yet vetted into `catalogue.json`. '
@@ -168,8 +170,8 @@ def build():
            'A lead goes from a sweep to the catalogue in four steps: the sweep writes `<folder>/candidates.json`; '
            '`python research/archive_sweep_2026-10/merge.py --write` merges it into `leads.json`; a vetting pass fills '
            'the lead\'s `vetting` block; `python docs/_check_catalogue.py --promote <id>` moves it to `catalogue.json`. '
-           'Outside contributors do not need any of this: the "Leads from an archive" issue form takes the same '
-           'information ([CONTRIBUTING.md](../CONTRIBUTING.md), "Scanning an archive for leads").', '',
+           'A contributor\'s agent does the first step only, from [`SWEEP.md`](SWEEP.md), and sends its folder as a pull '
+           'request ([CONTRIBUTING.md](../CONTRIBUTING.md), "Searching an archive with your AI").', '',
            '## A sweep folder', '',
            '| File | Content |', '|---|---|',
            '| `README.md` | What was searched (portal, terms, date), what was found, what was blocked and what is left. '
