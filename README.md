@@ -847,7 +847,10 @@ decode_updates/    corrections and transcriptions queued for the DECODE database
 tools/             shared scripts: transcription export (transcription_xml.py), the targets/ migration for old checkouts
 
 targets/<name>/    one directory per cipher target: NOTES.md, profile.json, ciphertext, scripts, small derived data
-research/          work that is not a single target:
+research/          work that is not a single target; research/README.md indexes every folder (python research/_index.py):
+  COVERAGE.md         what no sweep has covered yet;  leads.json  the leads waiting to be vetted
+  archive_sweep_2026-10/  the sweep brief (BRIEF.md), the duplicate search (known.py) and the merge (merge.py)
+  sweep_<date>_<archive>/ and the older archive-named folders: one archive sweep each (README.md, candidates.json)
   catalogue_harvest/  bulk DECODE / archive harvests that feed catalogue.json
   cryptoole/          catalogue candidates pulled from Satoru's Cryptoole index (pull.py)
   gallica_sweep/      Gallica volume sweeps for unlisted cipher leaves;  gallica_siblings/  their sibling letters
