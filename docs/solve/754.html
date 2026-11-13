@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 754 · class C · priority 5.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 754 · class C · priority 5.0 · in progress</p>
   <h1>Spanish ambassadors in Genoa (Sancho de Padilla, Miguel de Oviedo, Juan de Idiáquez, Pedro de Mendoza / conde de Binasco, Juan Vivas) and García de Toledo: cipher letters and duplicates to Philip II and Philip III (1565-1603)</h1>
   <p class="sub">The densest cipher run in the sweep (about 80 items, 1571-1587 mostly): duplicates of the same letter give depth, and the series spans the 1570s-80s Italian cipher changes (see the key leads).</p>
   <dl class="facts">
@@ -61,6 +61,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/idiaquez1577/NOTES.md" rel="noopener">targets/idiaquez1577</a> is working on this cipher (status: in progress. Folder integrated 13 Nov 2026 without a page: images 3-6 (about 105 cipher lines) are not transcribed (workable gap); the contributor's state for images 1-2 is read in part.). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/754.html</p>
@@ -69,6 +70,10 @@
 This page: https://cyphersolver.com/solve/754.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/idiaquez1577/NOTES.md  (status: in progress. Folder integrated 13 Nov 2026 without a page: images 3-6 (about 105 cipher lines) are not transcribed (workable gap); the contributor's state for images 1-2 is read in part.)
 
 THE CIPHER
   Title:          Spanish ambassadors in Genoa (Sancho de Padilla, Miguel de Oviedo, Juan de Idiáquez, Pedro de Mendoza / conde de Binasco, Juan Vivas) and García de Toledo: cipher letters and duplicates to Philip II and Philip III (1565-1603)
@@ -139,19 +144,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: PARES hits (27 Oct 2026, "carta cifrada"/"cifrada"; EST,LEG,1401,54, 1416,11 and 1416,79 also "no descifrada"). Pairs of "Carta cifrada" and "Duplicado de carta cifrada" of the same letter are common (e.g. 1414, 1416). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Sibling of the Binasco 1592 row already here (EST,LEG,1424,79). EST,LEG,1394,247 (PARES 3576569, García de Toledo to Philip II, 16 July 1565), found in the sweep, is targets/toledo1565/, already solved, and was taken out of this row at the merge review (27 Oct 2026); its key (two-digit homophonic, 12-43) is the first to try on the García de Toledo items here. known.py missed it because the repo writes "AGS Estado leg. 1394 no. 247", not "EST,LEG,1394,247"; re-run with "leg. 1401/1405/1408/1410/1413/1414/1416/1418/1419/1430/1432": no other hits for the remaining legajos (checked 27 Oct 2026).
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/idiaquez1577/.
   Prior-art check: not searched (title screening only). Check first: Estudios Románicos 34 (2025) and Luo (2021) for 16th-century AGS Estado ciphers; Tomokiyo, cryptiana, for Philip II Italian ciphers; CODOIN prints some Genoa despatches.
   Check first: Try the toledo1565 key (two-digit homophonic, 12-43) on the García de Toledo items first. Open the three "no descifrada" hits (1401,54; 1416,11; 1416,79); then sample the run for filed descifrados.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/idiaquez1577/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/toledo1565/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/toledo1565/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/idiaquez1577/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/toledo1565/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/idiaquez1577/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -192,7 +198,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/toledo1565/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/idiaquez1577/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+754&amp;target=catalogue+754
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -211,9 +217,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> PARES hits (27 Oct 2026, "carta cifrada"/"cifrada"; EST,LEG,1401,54, 1416,11 and 1416,79 also "no descifrada"). Pairs of "Carta cifrada" and "Duplicado de carta cifrada" of the same letter are common (e.g. 1414, 1416). PARES full-text search matches words, not the phrase, so a term hit is a pointer; the hit-list title says the letter is in cipher, not whether a decipherment is filed with it. Sibling of the Binasco 1592 row already here (EST,LEG,1424,79). EST,LEG,1394,247 (PARES 3576569, García de Toledo to Philip II, 16 July 1565), found in the sweep, is targets/toledo1565/, already solved, and was taken out of this row at the merge review (27 Oct 2026); its key (two-digit homophonic, 12-43) is the first to try on the García de Toledo items here. known.py missed it because the repo writes "AGS Estado leg. 1394 no. 247", not "EST,LEG,1394,247"; re-run with "leg. 1401/1405/1408/1410/1413/1414/1416/1418/1419/1430/1432": no other hits for the remaining legajos (checked 27 Oct 2026).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: not searched (title screening only). Check first: Estudios Románicos 34 (2025) and Luo (2021) for 16th-century AGS Estado ciphers; Tomokiyo, cryptiana, for Philip II Italian ciphers; CODOIN prints some Genoa despatches..</p>
+<p><b>Outcome so far.</b> In progress here, in targets/idiaquez1577/. Prior-art check: not searched (title screening only). Check first: Estudios Románicos 34 (2025) and Luo (2021) for 16th-century AGS Estado ciphers; Tomokiyo, cryptiana, for Philip II Italian ciphers; CODOIN prints some Genoa despatches..</p>
 <p><b>Check first.</b> Try the toledo1565 key (two-digit homophonic, 12-43) on the García de Toledo items first. Open the three "no descifrada" hits (1401,54; 1416,11; 1416,79); then sample the run for filed descifrados.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/toledo1565/NOTES.md" rel="noopener">targets/toledo1565/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/toledo1565" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/idiaquez1577/NOTES.md" rel="noopener">targets/idiaquez1577/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/idiaquez1577" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/toledo1565/NOTES.md" rel="noopener">targets/toledo1565/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/toledo1565" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>

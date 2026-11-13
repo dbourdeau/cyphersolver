@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2161 · class B · priority 6.0 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 2161 · class B · priority 6.0 · in progress</p>
   <h1>Diego Hurtado de Mendoza (imperial ambassador in Rome) → Ferrante Gonzaga, letter with enclosures partly in cipher</h1>
   <p class="sub">Charles V's ambassador in Rome writing to the governor of Milan during the Parma-Piacenza crisis of 1549. Follow-up (issue #254): useful for mendoza1548, the same chancery syllabary with a neighbouring key. 10 of the 11 sure 1548 values that recur in 1549 keep their value (n=a, mo=s, ω=e, que, y...), while the 1549 inventory has signs absent from the 1548 pairs, so the 44r/42r pair extends that key.</p>
   <dl class="facts">
@@ -61,6 +61,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1549/NOTES.md" rel="noopener">targets/mendoza1549</a> is working on this cipher (status: in progress (read in part; the gaps below are workable, so no write-up yet).). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/2161.html</p>
@@ -69,6 +70,10 @@
 This page: https://cyphersolver.com/solve/2161.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1549/NOTES.md  (status: in progress (read in part; the gaps below are workable, so no write-up yet).)
 
 THE CIPHER
   Title:          Diego Hurtado de Mendoza (imperial ambassador in Rome) → Ferrante Gonzaga, letter with enclosures partly in cipher
@@ -83,10 +88,11 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: Record: 'Le cc. 42-44 contengono allegati alla lettera, alcuni cifrati.' Hurtado de Mendoza appears in Dan's repo for other archives, not for this item. The other ~95 Hurtado de Mendoza records here were checked: none mentions cipher. Manifest uuid(s): e02077fa-33a9-4749-b581-f88f2d45e9be. Compare with the Hurtado de Mendoza key of open PR #216 (mendoza1548), same sender a year earlier; not tested. Brice Dudout's note (issue #254, PR #265, 5 Nov 2026), not yet reconciled with the vetting above: he reads c. 44r as the ciphered enclosure (17 lines, about 400 signs) and c. 42r as its contemporary decipherment, a shorter sheet laid over 44 beginning 'Y quando huvieremos dado la auctoridad a los ocho...', with a sign-by-sign alignment of 340 of 376 signs; the vetting read cc. 40r-42r as the letter in clear. The two readings of c. 42r conflict: look at c. 42r before relying on either. Both agree the place is Siena ('en Sena iij de abril 1549'), not Rome. Prior print: none found; not checked: Vazquez &amp; Selden Rose, Algunas cartas... 1538-1552 (Yale 1945), and Varo Zafra, Cartas (Granada 2016). Lead found by WAINUT.
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/mendoza1549/.
   Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main)
   Check first: Read the list on c. 43 at full size: if it pairs names with signs, it is a key.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1549/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1548/NOTES.md
   Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferrante1549/NOTES.md
 
@@ -94,9 +100,9 @@ STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); targets/mendoza1548/NOTES.md (everything
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/mendoza1549/NOTES.md (everything
    already tried on this cipher, with the files it used); and lang/README.md (shared language models).
-   Put all your work in targets/mendoza1548/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   Put all your work in targets/mendoza1549/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
    under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
@@ -137,7 +143,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/mendoza1548/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/mendoza1549/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2161&amp;target=catalogue+2161
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -156,9 +162,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> Record: 'Le cc. 42-44 contengono allegati alla lettera, alcuni cifrati.' Hurtado de Mendoza appears in Dan's repo for other archives, not for this item. The other ~95 Hurtado de Mendoza records here were checked: none mentions cipher. Manifest uuid(s): e02077fa-33a9-4749-b581-f88f2d45e9be. Compare with the Hurtado de Mendoza key of open PR #216 (mendoza1548), same sender a year earlier; not tested. Brice Dudout's note (issue #254, PR #265, 5 Nov 2026), not yet reconciled with the vetting above: he reads c. 44r as the ciphered enclosure (17 lines, about 400 signs) and c. 42r as its contemporary decipherment, a shorter sheet laid over 44 beginning 'Y quando huvieremos dado la auctoridad a los ocho...', with a sign-by-sign alignment of 340 of 376 signs; the vetting read cc. 40r-42r as the letter in clear. The two readings of c. 42r conflict: look at c. 42r before relying on either. Both agree the place is Siena ('en Sena iij de abril 1549'), not Rome. Prior print: none found; not checked: Vazquez &amp; Selden Rose, Algunas cartas... 1538-1552 (Yale 1945), and Varo Zafra, Cartas (Granada 2016). Lead found by WAINUT.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
+<p><b>Outcome so far.</b> In progress here, in targets/mendoza1549/. Prior-art check: open as far as checked (checked 3 Nov 2026: Dan's catalogue, leads and Dudout's Estense list by uuid and shelfmark; sender names grepped in origin/main).</p>
 <p><b>Check first.</b> Read the list on c. 43 at full size: if it pairs names with signs, it is a key.</p>
-<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1548/NOTES.md" rel="noopener">targets/mendoza1548/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mendoza1548" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferrante1549/NOTES.md" rel="noopener">targets/ferrante1549/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ferrante1549" rel="noopener">the folder</a>)</li></ul>
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1549/NOTES.md" rel="noopener">targets/mendoza1549/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mendoza1549" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/mendoza1548/NOTES.md" rel="noopener">targets/mendoza1548/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/mendoza1548" rel="noopener">the folder</a>)</li><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/ferrante1549/NOTES.md" rel="noopener">targets/ferrante1549/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/ferrante1549" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
