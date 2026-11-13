@@ -1,6 +1,6 @@
-# este1585: a cipher page in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, p. 523; catalogue 1572)
+# este1585: two cipher pages in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, pp. 517 and 523; catalogue 1572)
 
-Status: read in part (Brice Dudout, 5 Nov 2026; 177 of 200 words = 88.5% without restorations; key: Satoshi Tomokiyo's table, partial by our protocol on this volume, M5 0.457 against 0.078 on the held-out page).
+Status: **p. 517 read** (Brice Dudout, 13 Nov 2026; 223 of 231 words = 96.5%; key K-C02 validated by one pre-registered held-out measurement, M5 0.509 against 0.067). **p. 523 read in part** (5 Nov 2026; 177 of 200 words = 88.5%; key K-C01, partial by our protocol, M5 0.457 against 0.078).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 1572 (BAM sweep: "Luigi, card.le
 d'Este, 9 lettres en partie chiffrées"). **The key is not ours**: it is Satoshi Tomokiyo's reconstruction of "Cardinal
@@ -59,16 +59,18 @@ be told, and that no one learn the news came from him, since it reaches him thro
 3. **The barred dumbbell is e in our key and a null in Tomokiyo's**: not settled; it touches lines 1 and 22.
 4. **One reader**: an AI agent transcribed and read; Brice Dudout answered the shape sheet only. No palaeographer checked
    the page.
-5. **Only p. 523 is read.** pp. 435-438, 453-454 and 504 were used to fix the shapes (their ciphers read as French, but
-   they were deciphered at the time and we do not count them); pp. 513 and 517-518, and the other letters of entry 1572
-   (pp. 433, 459, 491, 503, 511 ff.), are **not read**. Entry 1572 stays open apart from p. 523.
+5. **Only pp. 517 and 523 are read** (p. 517 added 13 Nov 2026, see below). pp. 435-438, 453-454 and 504 were used to fix the
+   shapes (their ciphers read as French, but they were deciphered at the time and we do not count them); pp. 513 and 518, and the
+   other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.), are **not read**. Entry 1572 stays open apart from pp. 517 and 523.
+6. **p. 517 thresholds changed before its test**: 0.45 instead of 0.60 for M5, declared in the pre-registration with the reasons
+   (validation.txt, section 3). Under the old 0.60, p. 517 (0.509) would also be "partial".
 
 ## Remaining gaps
 
 - 22 unresolved words, mostly line 1 (the prince's name: code word y, two barred dumbbells) and the ends of lines 3-4 - blocker: open-codes; y has no value in the table or in our key.
-- The barred dumbbell (e or null) - blocker: open-codes; needs a separate, hashed key amendment and a fresh glossed page.
+- The barred dumbbell (e or null; p. 517 L1 and L29 favour null) and the Venus sign (o, a or [faire]) - blocker: open-codes; needs a separate, hashed key amendment and a fresh glossed page.
 
-Not gaps of this reading: pp. 513, 517-518 and the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is p. 523 only.
+Not gaps of this reading: pp. 513, 518 and the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is pp. 517 and 523 only.
 
 ## Escalation
 
@@ -76,7 +78,7 @@ Not gaps of this reading: pp. 513, 517-518 and the other letters of entry 1572 (
 - [x] clear-pages: the clear lines at the foot of pp. 436-437 and 453 checked as decipherments (V3, V5).
 - [x] known-keys: Tomokiyo's d'Este key (the series' key) applied; it fits the whole file.
 - [x] print: no edition of Colbert 338 or of fr. 16041-16042 found; Favalli 2024 (CHMO 49/2) read in full text: it covers 1569-1580 and does not mention this request; Favalli's thesis (Teramo / École des chartes 2021, HAL tel-03435435, 1559-1580) not read in full (HAL blocked our fetch), its abstract covers 1559-1580 only.
-- [x] key-rebuild: probable words placed on the training pages (aj = f); newt = nn found by reading.
+- [x] key-rebuild: probable words placed on the training pages (aj = f); newt = nn found by reading; K-C02 (sig = m, A = [fait]) on 13 Nov, validated on p. 517.
 - [x] retry: every unresolved word retried with the reading key after the shape sheet.
 
 ## Prior work
@@ -91,6 +93,32 @@ tel-03435435): **not read** (the HAL page blocked our fetch, and the API lists n
 WAINUT and Brackx have no part in this target. No edition of fr. 16041-16042 found. If either source prints this advice,
 we will credit it.
 
+## p. 517 (added 13 Nov 2026)
+
+**Document.** p. 517 (Gallica view 272, right page): the whole page in cipher, 29 lines, 1,094 signs, no gloss, no signature; the
+letter runs on to p. 518 (about 17 cipher lines, not transcribed). Same hand and system as p. 523.
+
+**Key K-C02** (`key-p517.tsv`). K-C01 plus four changes made only on pages already seen: sig = m ("mesmes" twice, "Maiesté", "de Mets",
+"s'em-", p. 436), A = [fait] (seven places on pp. 436, 438, 453, 523), Venus sign = [faire] (one place, p. 523), newt = nn. Frozen and
+hashed before p. 517 lines 4-29 were transcribed.
+
+**Validation** (`validation.txt`, section 3). Pre-registration hashed before transcription; block = p. 517 lines 4-29 (979 signs; lines
+1-3 had been seen in October and were left out); two transcription passes, 17 differences settled on the image, frozen before decoding;
+one run: **M5 = 0.509** against **0.067** for the best of 200 shuffled keys; thresholds >= 0.45 and >= +0.30, fixed before from the clear
+texts of the volume (which themselves score 0.50-0.73) and from a sensitivity test (5% wrong tokens already give a median of 0.35).
+**Validated.** After the measurement, the reading contradicts one change: the Venus sign is o in L1 and a in L28, not [faire].
+
+**Reading** (`reading-p517.md`, `translation-p517.md`). 231 words: 201 certain, 22 probable, 3 restored, 5 unresolved = **96.5%: read**
+(`reading_review` grade A). Each probable word is justified in the reading file. The writer heard that the pope was told, from the court of
+‹T…›, that "this duke" had letters from the King of [Spain] urging him to make war on Henri III and protect Marshal de Montmorency
+(Damville); he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lodève and his letters to [Spain], and hopes that
+Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away. "Spain" is the code word `y`
+(also on p. 523, unread there), restored by sense only and not counted.
+
+**Prior work for p. 517.** No edition of Colbert 338 found (see above); one web search on Poigny, Montmorency, Joyeuse and
+Clermont-de-Lodève in 1584 found nothing printing this advice. Tomokiyo's table is again the key; we claim only the transcription, the
+added values and the reading.
+
 ## Credits
 
 - `tomokiyo`: key or decipherment used (the table; we do not claim the key).
@@ -99,4 +127,4 @@ we will credit it.
 
 ## Files
 
-`transcription.txt`, `decryption.txt`, `key.tsv`, `validation.txt`, `reading.md`, `translation.md`, `profile.json`.
+`transcription.txt`, `decryption.txt`, `key.tsv`, `validation.txt`, `reading.md`, `translation.md`, `profile.json`; for p. 517: `transcription-p517.txt`, `decryption-p517.txt`, `key-p517.tsv`, `reading-p517.md`, `translation-p517.md`.
