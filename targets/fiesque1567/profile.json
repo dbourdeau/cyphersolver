@@ -793,35 +793,47 @@
    "kind": "access",
    "what": "Contact sheet of all 34 cipher views at reduced size (openapi.bnf.fr IIIF), then native crops of the margins: views 65, 103 and 125 right carry contemporary decipherments of their cipher in the left margin (65 not recorded before); view 37 right has a two-line margin decipherment; view 6 right holds an untranscribed first cipher page of the 11 Oct 1567 letter.",
    "result": "worked",
-   "technique": ["manual reconstruction"]
+   "technique": [
+    "manual reconstruction"
+   ]
   },
   {
    "date": "2026-10-22",
    "kind": "transcription",
    "what": "The rest of the contemporary decipherment on view 23 right (matching view 23 left) and the three margin decipherments (views 65, 103, 125 right) transcribed from native IIIF crops and aligned with the key decode; they agree clause by clause.",
    "result": "worked",
-   "technique": ["plaintext matching", "manual reconstruction"]
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ]
   },
   {
    "date": "2026-10-22",
    "kind": "reading",
    "what": "The other 19 letters built word by word into French from the key decode (decoded_*.txt), reading through the known sign confusions, with a few image checks (views 6, 37, 109, 159); translated. All 23 letters read (4 grade A, 19 B); docs/_check_reading.py clean share before 0.0-0.17 per page, after 0.50-1.0 per reading.",
    "result": "worked",
-   "technique": ["contextual inference", "manual reconstruction"]
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ]
   },
   {
    "date": "2026-10-22",
    "kind": "hypothesis",
    "what": "Sign values from the readings: a lone ϖ (and \"pi\") stands for l'Empereur (confirmed by the margins of views 65 and 103) or le Roy; 16 fits \"vostre\" in the 1569 letters to the King; H# = ss in ambassadeur/commissaires/asseurer, o elsewhere; =ii stands for a person (King of Spain, once the Landgrave). Not entered in key.tsv.",
    "result": "partial",
-   "technique": ["contextual inference"]
+   "technique": [
+    "contextual inference"
+   ]
   },
   {
    "date": "2026-10-22",
    "kind": "reading",
    "what": "Phrase-level holes left open without image checks: 17 Jul 1568 f. 79v and f. 80, 4 Sep 1568 f. 100r c17-c27, 10 Sep 1569 v150l c17-c23, 15 Feb 1568 v038l c03-c04/c17-c18, 6 Mar 1568 f. 39r c22-c29.",
    "result": "partial",
-   "technique": ["contextual inference"]
+   "technique": [
+    "contextual inference"
+   ]
   },
   {
    "date": "2026-10-23",
@@ -878,11 +890,36 @@
    "kind": "reading",
    "what": "r2m: the single-word holes of the 17 letters not re-checked in round 2 worked through on native-resolution openapi.bnf.fr IIIF crops (views 7, 8, 34, 35, 49, 65, 70, 71, 99, 100, 103, 109, 110, 125, 129, 130, 140, 141, 146, 155, 159, 161, 163, 168; scratchpad only) with the key and Dz = con. Bracketed holes in the 17 readings 161 -> 90 (view 6 right's, already checked in round 2, included). What closed them: number codes the contributed transcription read as letter signs (this hand writes 10 'ic', 13 'iz', 14 'i4', 18 'i8'/'ig', 20 'zo', 21 'zi', 23 'z3': e.g. 'jusques a tant', 'estre', 'est venue', 'vous'), the lone codes (the volume's ϖ for the Emperor or the King, pp for the King of Spain), Dz = con ('[con]me' x7, '[con]seiller'), groups the transcription left out (view 7 left c20 'sont [?soubz] les mains', view 110 right a whole line, cipher at the ends of clear lines on views 34 and 49), and words the 22 Oct readings had supplied that the figures contradict, now corrected: 'l'Emperatrice est venue' (not l'Empereur), 'l'evesque de Retes' (Bochetel, twice, not 'le sieur'), 'pourchassoict la seconde pour le roy de Portugal', 'poussoict ... le Turc', 'me faire ce bien de ne croire', 'car il ne sçavoict encores en quels termes', 'Et depuis' (the 'Il' of 20 Oct 1569 is the null 'Il ti ol'), 'Vanega' (Philip II's ambassador). Unsupported words withdrawn: 'arriver' (12 Jun 1568), '[?princes]' (20 Oct 1569), '[?Cosme]' (4 Sep 1568). Clean share (v2_score, plain / explicit holes) rises on 11 letters, e.g. 11 Oct 1567 0.461/0.724 -> 0.564/0.833, 20 Oct 1569 0.333/0.667 -> 0.400/0.867, 27 Mar 1568 0.385/0.846 -> 0.462/0.923; none falls below its state. The holes left give no word under the key or rest on a look-alike the figures do not settle (listed per letter in read/<doc>_reread_log.md, r2m sections; label corrections in read/r2/corrections.tsv).",
    "result": "partial",
-   "technique": ["manual reconstruction", "contextual inference"]
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 6 of 22 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
-,
-  {"date": "2026-10-25", "kind": "verification", "technique": ["key matching"], "what": "Harumi-Matsuba's independent transcription and decode of view 23 left (issue #97; 445 signs, 13 lines) compared with ours of 23 Oct: same content; it settles the two open places as 'par le chemin de Flandres, par ce que c'est le plus court' (our 'le ...o...imin' = le chemin). Taken into read/1567-11-15_reading.md with doubt marks.", "result": "worked"}
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 6 of 22 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Harumi-Matsuba's independent transcription and decode of view 23 left (issue #97; 445 signs, 13 lines) compared with ours of 23 Oct: same content; it settles the two open places as 'par le chemin de Flandres, par ce que c'est le plus court' (our 'le ...o...imin' = le chemin). Taken into read/1567-11-15_reading.md with doubt marks.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Second check (14 Nov 2026, Brice Dudout with Claude; NOTES): a separate decoder from contributed/data/key.tsv reproduces the contributor's decoded_*.txt on 45 pages, 32,272 of 32,352 letters (99.75%). The sign w, used 8 times, is missing from key.tsv: Tomokiyo's table has it as W in the double-letters row under r, so w = rr; the W shape seen on the Gallica images at 3 of the 8 places (view 70 right c04, c08; view 65 right c06), and the readings already read r there (courrier, conclure, verriez). fraction_read measured: 10,628 words read in the letters that read over 12,176 words and holes = 0.873 (was 0.91 estimated).",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "method": "read with known key",
@@ -892,10 +929,10 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.91,
+  "fraction_read": 0.873,
   "fraction_coherent": 0.81,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "22 Oct 2026, re-read (batch b02): all 23 letters build French sentences and are translated (read/<doc>_reading.md, _en.md; grades 4 A, 19 B). Signs of letters that read: the 29,707 transcribed signs, plus view 23 left (about 600 signs, untranscribed, read through its contemporary decipherment); not read: the first cipher page of the 11 Oct 1567 letter on view 6 right (about 800 signs, untranscribed). 30,300 / 31,100, so estimated. Holes remain inside the readings (Remaining gaps); docs/_check_reading.py clean share per reading 0.50-1.0 with header and notes counted. Earlier figures: 0.056 (audit, 22 Oct), 0.997 signs with a value (withdrawn as a reading figure). 23 Oct 2026 (round 2): every letter now reads, so every transcribed sign belongs to a letter that reads: 29,707 contributed signs + 816 (view 6 right, read/r2/transcription_v006r.txt) + 446 (view 23 left, read/r2/transcription_v023l.txt) = 30,969 of 30,969 (sign counts from the transcription files). Holes remain inside the readings (outcome.gaps); body clean share per reading 0.61-1.0 on docs/_check_reading.py's word list. Revised 23 Oct 2026 after round 2: 10 Sep 1569 kept decoded, not read on the look-alike limit; the letters that read hold about 91% of the reading files' words (estimated from word counts, not re-counted in signs).",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Measured 14 Nov 2026 with research/reading_audit/v10_relabel.share on the 23 readings of outcome.texts: 11,615 words and 561 holes; the 22 letters that read hold 10,628 words read, so 10,628 / 12,176 = 0.873 (the 10 Sep 1569 letter, decoded, not read, counts as unread). The earlier estimate 0.91 was the letters' share of the words (measured 0.915) without the holes taken off. Earlier history: 22 Oct 2026, re-read (batch b02): all 23 letters build French sentences and are translated (read/<doc>_reading.md, _en.md; grades 4 A, 19 B). Signs of letters that read: the 29,707 transcribed signs, plus view 23 left (about 600 signs, untranscribed, read through its contemporary decipherment); not read: the first cipher page of the 11 Oct 1567 letter on view 6 right (about 800 signs, untranscribed). 30,300 / 31,100, so estimated. Holes remain inside the readings (Remaining gaps); docs/_check_reading.py clean share per reading 0.50-1.0 with header and notes counted. Earlier figures: 0.056 (audit, 22 Oct), 0.997 signs with a value (withdrawn as a reading figure). 23 Oct 2026 (round 2): every letter now reads, so every transcribed sign belongs to a letter that reads: 29,707 contributed signs + 816 (view 6 right, read/r2/transcription_v006r.txt) + 446 (view 23 left, read/r2/transcription_v023l.txt) = 30,969 of 30,969 (sign counts from the transcription files). Holes remain inside the readings (outcome.gaps); body clean share per reading 0.61-1.0 on docs/_check_reading.py's word list. Revised 23 Oct 2026 after round 2: 10 Sep 1569 kept decoded, not read on the look-alike limit; the letters that read hold about 91% of the reading files' words (estimated from word counts, not re-counted in signs).",
   "key": "recovered",
   "codes_open": "unknown",
   "grades": "unknown",
@@ -904,7 +941,33 @@
    "matched control"
   ],
   "notes": "Contributed AI-only transcription (Claude + Codex), no human check. 22 Oct 2026: all 23 letters re-read into French sentences and translated (19 from the key decode, 4 after contemporary decipherments, three of them in margins not recorded before); class stays read in part: holes in several letters are workable by sign-level image checks, and the first cipher page of the 11 Oct 1567 letter (view 6 right) is untranscribed. 23 Oct 2026 (round 2): view 6 right and view 23 left transcribed and read, the 10 Sep 1569 letter now reads (all 23 letters read), Dz = con settled; class stays read in part: open codes and phrase holes remain inside the readings, and the transcription is AI-only with no human check.",
-  "gaps": [{"item": "View 6 right (11 Oct 1567) c05-c06, two words (\"que [...] bien qu'il estoict necessaire\"), and about ten [?] words on that page", "blocker": "no-key-material", "detail": "transcribed and checked sign by sign on native crops 23 Oct 2026; the sign groups give no word under the key's values and no contemporary decipherment or print of this letter exists"}, {"item": "View 23 left (15 Nov 1567): the bearer's name (9 signs) and about 17 signs between \"Flandres\" and \"court\"", "blocker": "no-key-material", "detail": "decoded 23 Oct 2026; a name not in the key, and the contemporary decipherment abridges and is cramped at that line"}, {"item": "Phrase holes left after round-2 image checks: f. 79v c01-c03 and f. 80 c01, c08 (17 Jul 1568); f. 100r c18 end, c24-c26 three words (4 Sep 1568); v038l c17 subject (15 Feb 1568); f. 39r c08, c22-c23 end, c29 verb (6 Mar 1568); v150l [?conclurre], [?cest] (10 Sep 1569)", "blocker": "no-key-material", "detail": "each checked on native-resolution crops 23 Oct 2026 (read/<doc>_reread_log.md, round 2); the groups fit no word under the key's values and no contemporary decipherment, clear copy or print exists for these letters"}, {"item": "Single-word holes in the letters not re-checked in round 2 (1568-01-21, 03-27, 06-04, 06-12, 08-14, 08-21, 09-04q, 11-06, 12-02; 1569-01-14, 03-02, 10-01, 10-15, 10-20, 10-29, 11-04; v007r-v008l of 11 Oct 1567)", "blocker": "not-attempted", "detail": "about 60 isolated [?] or [...] words across 17 letters, each needing its own crop; left for a later pass because every one of these letters already reads (0.58-1.0 clean share) and the round-2 time went to the untranscribed pages and the phrase holes"}, {"item": "Lone signs and groups standing as codes, values not settled: ϖ (l'Empereur or le Roy), ∞ alone (le Roy / l'Empereur), =ii, pp/ꝥ (the King of Spain by sense), H# alone, the group ffx-3y (10 Sep 1569), arrow, \"lele\"; 16 = ce or vostre (vostre in the letters to the King and in 4 Sep 1568)", "blocker": "no-key-material", "detail": "not in Tomokiyo's table; read from context in read/*_reread_log.md; key.tsv unchanged. Dz = con is now settled from 11 words in five letters (read/r2/v006r_reread_log.md)"}],
+  "gaps": [
+   {
+    "item": "View 6 right (11 Oct 1567) c05-c06, two words (\"que [...] bien qu'il estoict necessaire\"), and about ten [?] words on that page",
+    "blocker": "no-key-material",
+    "detail": "transcribed and checked sign by sign on native crops 23 Oct 2026; the sign groups give no word under the key's values and no contemporary decipherment or print of this letter exists"
+   },
+   {
+    "item": "View 23 left (15 Nov 1567): the bearer's name (9 signs) and about 17 signs between \"Flandres\" and \"court\"",
+    "blocker": "no-key-material",
+    "detail": "decoded 23 Oct 2026; a name not in the key, and the contemporary decipherment abridges and is cramped at that line"
+   },
+   {
+    "item": "Phrase holes left after round-2 image checks: f. 79v c01-c03 and f. 80 c01, c08 (17 Jul 1568); f. 100r c18 end, c24-c26 three words (4 Sep 1568); v038l c17 subject (15 Feb 1568); f. 39r c08, c22-c23 end, c29 verb (6 Mar 1568); v150l [?conclurre], [?cest] (10 Sep 1569)",
+    "blocker": "no-key-material",
+    "detail": "each checked on native-resolution crops 23 Oct 2026 (read/<doc>_reread_log.md, round 2); the groups fit no word under the key's values and no contemporary decipherment, clear copy or print exists for these letters"
+   },
+   {
+    "item": "Single-word holes in the letters not re-checked in round 2 (1568-01-21, 03-27, 06-04, 06-12, 08-14, 08-21, 09-04q, 11-06, 12-02; 1569-01-14, 03-02, 10-01, 10-15, 10-20, 10-29, 11-04; v007r-v008l of 11 Oct 1567)",
+    "blocker": "not-attempted",
+    "detail": "about 60 isolated [?] or [...] words across 17 letters, each needing its own crop; left for a later pass because every one of these letters already reads (0.58-1.0 clean share) and the round-2 time went to the untranscribed pages and the phrase holes"
+   },
+   {
+    "item": "Lone signs and groups standing as codes, values not settled: ϖ (l'Empereur or le Roy), ∞ alone (le Roy / l'Empereur), =ii, pp/ꝥ (the King of Spain by sense), H# alone, the group ffx-3y (10 Sep 1569), arrow, \"lele\"; 16 = ce or vostre (vostre in the letters to the King and in 4 Sep 1568)",
+    "blocker": "no-key-material",
+    "detail": "not in Tomokiyo's table; read from context in read/*_reread_log.md; key.tsv unchanged. Dz = con is now settled from 11 words in five letters (read/r2/v006r_reread_log.md)"
+   }
+  ],
   "provenance": "contributed",
   "credits": [
    {
@@ -933,6 +996,12 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "decipherment of the 15 Nov 1567 letter on view 23 right, used here for calibration"
+   },
+   {
+    "who": "dudout",
+    "role": "key corrected",
+    "note": "missing sign w = rr found in Tomokiyo's table and seen on 3 Gallica places; second decoder over the 45 contributed pages (99.75% of letters); fraction_read measured (0.873)",
+    "date": "2026-11-14"
    }
   ],
   "texts": [
