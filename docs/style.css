@@ -1556,3 +1556,97 @@ html.fs-lock{overflow:hidden}
   body:has(.tabbar) footer{padding-bottom:4.2rem}
   @media (prefers-reduced-motion:reduce){.tabbar,.tabbar.on{transition:none}}
 }
+
+/* ---------------------------------------------------------------- the home page, 13 Nov 2026 (index.html)
+   The hero lies on a manuscript page (.ms-bg) and keeps the dark palette in both themes, so the wordmark's animation
+   is the one of the dark theme; the three counts sit on a strip across its lower edge (.herostrip); the film waits in
+   a dialog behind a button (home.js, herovid.js data-wait). Below it: no stickers, larger headings, larger pictures
+   on the featured cards and on the latest findings. body:has(.ms-bg) is the home page. */
+.hero:has(.ms-bg){max-width:none;margin:0 0 5.2rem;padding:0;position:relative;display:flex;flex-direction:column;justify-content:center;min-height:min(78vh,720px);background:#1b130b}
+.ms-bg{position:absolute;inset:0;overflow:hidden}
+.ms-bg img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:70% 30%;filter:sepia(.25) contrast(1.05)}
+.ms-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,15,7,.95) 0%,rgba(24,15,7,.9) 40%,rgba(24,15,7,.62) 68%,rgba(24,15,7,.25) 100%),linear-gradient(0deg,rgba(24,15,7,.78) 0%,rgba(24,15,7,0) 34%)}
+.ms-in{position:relative;width:100%;max-width:var(--maxw);margin:0 auto;padding:3.2rem 1.2rem 4.6rem;
+  --ink:#f3e9d2;--ink2:#e2d3b3;--muted:#b9ad95;--head:#f6ead0;--rule:rgba(246,234,208,.2);
+  --gold:#d9ac52;--gold2:#f0cf86;--gold-ink:#1a1408;--wm-hi:#fff6dc;--amber-bg:rgba(236,194,90,.16);color:var(--ink)}
+.hero:has(.ms-bg) .kicker{color:var(--gold)}
+.hero:has(.ms-bg) h1.wordmark{font-size:clamp(2rem,9.1vw,6.2rem)}
+.hero:has(.ms-bg) .wm{--gold:#ecd49c;--gold2:#fbeecb;--wm-hi:#ffffff}
+.hero:has(.ms-bg) .tagline{font-size:clamp(1.25rem,3vw,2rem);margin-bottom:1.2rem}
+.hero:has(.ms-bg) .hero-grid{grid-template-columns:minmax(0,1fr) 21rem;gap:2.4rem;align-items:end}
+.hero:has(.ms-bg) .hero-lead > .sub:first-child{font-size:1.08rem;line-height:1.55;max-width:54ch;color:var(--ink2)}
+.hero:has(.ms-bg) .sub .aid{color:var(--head);font-weight:600}   /* the AI disclosure: said up front, on every screen */
+.hero:has(.ms-bg) .hero-cta{gap:.8rem;margin:1.6rem 0 .4rem}
+.hero:has(.ms-bg) .hero-cta .btn{font-size:1rem;padding:.8rem 1.4rem}
+.hero:has(.ms-bg) .hero-cta .btn.alt{color:var(--head);box-shadow:inset 0 0 0 1px rgba(246,234,208,.6)}
+.filmbtn{display:inline-flex;align-items:center;gap:.6rem;margin-left:.3rem;font:500 .9rem var(--ui);color:var(--ink2);text-decoration:none;border:0}
+.filmbtn:hover{color:var(--gold2)}
+.filmbtn span{display:inline-grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;border:1px solid rgba(246,234,208,.6)}
+.filmbtn span::before{content:"";margin-left:.15rem;border-style:solid;border-width:.36rem 0 .36rem .58rem;border-color:transparent transparent transparent currentColor}
+.hero:has(.ms-bg) .meta{font-size:.8rem;margin-top:1.1rem}
+.hero:has(.ms-bg) .meta a{color:var(--ink2)}
+.hero:has(.ms-bg) .hero-media{min-height:11.5rem;padding:1rem 1.2rem;border:1px solid rgba(246,234,208,.18);border-radius:var(--radius);background:rgba(24,15,7,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.hero:has(.ms-bg) .cipherstrip{margin:0}
+.ms-credit{margin:.9rem 0 0;text-align:right;font:.75rem var(--ui);letter-spacing:.04em}
+.ms-credit a{color:rgba(246,234,208,.85);text-decoration:none;border:0}
+.ms-credit a:hover{color:var(--gold2)}
+.herostrip{position:absolute;z-index:2;left:50%;bottom:0;transform:translate(-50%,50%);width:min(calc(var(--maxw) - 2.4rem),calc(100% - 2.4rem));display:flex;align-items:stretch;
+  background:linear-gradient(var(--panel),var(--panel)),var(--bg);border:1px solid var(--rule);border-radius:var(--radius);box-shadow:0 18px 40px -18px rgba(0,0,0,.5);overflow:hidden}
+.herostrip .herostats{flex:1;display:flex;flex-wrap:nowrap;gap:0;margin:0;font-size:.86rem;color:var(--ink2)}
+.herostrip .herostats a{flex:auto;display:flex;align-items:baseline;gap:.55rem;padding:1.05rem 1.1rem;border-right:1px solid var(--rule);white-space:nowrap}
+.herostrip .herostats a:hover{background:var(--panel)}
+.herostrip .herostats b{font-size:2rem;margin:0}
+.herostrip .randbtn{align-self:center;margin:0 .5rem;padding:.7rem .7rem;border-color:transparent;background:transparent;color:var(--gold);font-weight:600;font-size:.86rem;white-space:nowrap}
+.herostrip .randbtn:hover{transform:none;box-shadow:none;color:var(--gold2)}
+.filmdlg{width:min(92vw,900px);max-width:none;padding:0;border:0;background:transparent;overflow:visible}
+.filmdlg::backdrop{background:rgba(10,7,3,.82)}
+.filmdlg .herovid{max-width:none;margin:0}
+.filmdlg{--ink:#f3e9d2;--ink2:#e2d3b3;--muted:#b9ad95;--head:#f6ead0;--rule:rgba(246,234,208,.2);--gold:#d9ac52;--gold2:#f0cf86;--gold-ink:#1a1408;color:var(--ink)}
+.herostrip .herostats a .lg-only{margin-right:-.3rem}
+.filmdlg .film-x{display:block;margin:0 0 .6rem auto;background:transparent;color:#f3e9d2;box-shadow:inset 0 0 0 1px rgba(246,234,208,.5)}
+/* the ledger follows the hero, in the text column: the timeline first, the bar and its categories as its legend, the
+   four counts smaller under them (_build_stats.py) */
+.scoreboard{--sbw:100%;margin-top:0;margin-bottom:3rem}
+.scoreboard .sb-note{font-size:.9rem;margin:0 0 .5rem}
+.scoreboard .tlwrap{margin:0 0 1rem}
+.scoreboard .sb-methods{margin:.5rem 0 1.4rem}
+.scoreboard .sb-methods > summary{display:none}
+.scoreboard .sb-big b{font-size:clamp(1.6rem,3vw,2rem)}
+.scoreboard .sb-big span{font-size:.85rem}
+.scoreboard .sb-lede{font-size:.9rem;color:var(--muted);max-width:none;margin:0 0 .6rem}
+body:has(.ms-bg) .nav .sticker,body:has(.ms-bg) .hb-way .sticker{display:none}
+body:has(.ms-bg) .hb-way{border-top:3px solid var(--gold)}
+body:has(.ms-bg) .cards.featured .card{box-shadow:0 14px 30px -22px rgba(0,0,0,.55)}
+@media (min-width:761px){
+  body:has(.ms-bg) main > h2,body:has(.ms-bg) main > section > h2{font-size:clamp(1.7rem,3vw,2.2rem)}
+  body:has(.ms-bg) main > h2{margin-top:3.6rem}
+  body:has(.ms-bg) .hb-way{padding:1.4rem 1.4rem 1.3rem;gap:.55rem}
+  body:has(.ms-bg) .hb-t b{font-size:2.6rem}
+  body:has(.ms-bg) .hb-d{font-size:.98rem}
+  body:has(.ms-bg) .cards.featured{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+  body:has(.ms-bg) .cards.featured .card .thumb{aspect-ratio:16/10}
+  body:has(.ms-bg) ul.findings li[data-mirror]:has(> .fth){padding:1rem 0 1rem 9.2rem;min-height:7.2rem}
+  body:has(.ms-bg) ul.findings li[data-mirror] .fth{top:1.1rem;width:7.6rem;height:5rem}
+  body:has(.ms-bg) ul.findings li[data-mirror] .fth .sc{border-radius:8px}
+  body:has(.ms-bg) ul.findings li[data-mirror] .fdate{display:block;text-transform:uppercase;letter-spacing:.1em;color:var(--gold)}
+  body:has(.ms-bg) ul.findings li[data-mirror] > b{font-family:var(--display);font-weight:500;font-size:1.18rem;line-height:1.3}
+  body:has(.ms-bg) ul.findings li[data-mirror] .fnd{display:inline}
+}
+@media (max-width:1000px) and (min-width:761px){.hero:has(.ms-bg) .hero-grid{grid-template-columns:minmax(0,1fr)}.hero:has(.ms-bg) .hero-media{display:none}.ms-credit{text-align:left}}
+@media (max-width:760px){
+  .hero:has(.ms-bg){min-height:0;margin-bottom:1.2rem;display:block}
+  .ms-bg::after{background:linear-gradient(0deg,rgba(24,15,7,.96) 0%,rgba(24,15,7,.88) 60%,rgba(24,15,7,.7) 100%)}
+  .ms-in{padding:2rem 1.2rem 1.6rem}
+  .hero:has(.ms-bg) .hero-grid{display:flex;gap:0;align-items:stretch}
+  .hero:has(.ms-bg) .hero-lead > .sub:first-child{font-size:1rem}
+  .hero:has(.ms-bg) .hero-cta{grid-template-columns:1fr 1fr;margin:.4rem 0 0}
+  .hero:has(.ms-bg) .hero-cta .btn{font-size:.9rem;padding:.4rem .5rem}
+  .filmbtn{grid-column:1/-1;margin:.3rem 0 0;min-height:2.75rem}
+  .ms-credit{text-align:left;margin-top:.7rem;font-size:.7rem}
+  .herostrip{position:relative;left:auto;bottom:auto;transform:none;width:auto;margin:0 1.2rem;top:1.2rem;display:block}
+  .herostrip .herostats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;font-size:.78rem}
+  .herostrip .herostats a{display:block;white-space:normal;padding:.8rem .7rem;line-height:1.3}
+  .herostrip .herostats a:last-child{border-right:0}
+  .herostrip .herostats b{display:block;font-size:1.6rem;margin:0 0 .2rem}
+  .herostrip .randbtn{display:none}
+}

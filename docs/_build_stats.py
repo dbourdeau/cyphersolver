@@ -99,7 +99,7 @@ def timeline_svg(items):
     dated = [it for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
     x0, x1 = min(1480, min(it['year'] for it in dated) // 50 * 50 - 10), 2000
     c0 = (x0 // 100 + 1) * 100          # first century line on the axis
-    W, top, r = 1000, 34, 4.6
+    W, top, r = 800, 34, 4.6      # 800 units across the text column: the dots draw larger and the mounds stand taller than at 1000
     # Piecewise-linear axis: each half-century gets width in proportion to 1 + count**0.85, so the crowded
     # sixteenth century is spread out and the empty fifteenth and nineteenth are compressed. Every 50-year line is
     # drawn, so the uneven spacing stays visible.
@@ -138,7 +138,7 @@ def timeline_svg(items):
         a, b = max(30, X(c)), X(c + 100)
         if k % 2 == 0:
             out.append(f'<rect class="band" x="{a:.1f}" y="{top-18}" width="{b-a:.1f}" height="{base-top+18}" fill="url(#tlfade)"/>')
-        if b - a >= 70:                                    # compressed centuries are too narrow for a label
+        if b - a >= 56:                                    # compressed centuries are too narrow for a label
             out.append(f'<text class="era" x="{(a+b)/2:.1f}" y="{top-6}" text-anchor="middle">{c//100+1}th c.</text>')
     for c in range(c0 - 50, 2001, 50):
         x = X(c)
@@ -148,7 +148,8 @@ def timeline_svg(items):
     for c in range(c0, 2001, 100):
         x = X(c)
         out.append(f'<line x1="{x:.1f}" y1="{base-4}" x2="{x:.1f}" y2="{base+4}" class="axis"/>')
-        out.append(f'<text x="{x:.1f}" y="{base+18}" class="tick" text-anchor="middle">{c}</text>')
+        if c == 2000 or X(c + 100) - x >= 26:              # a year that would run into the next one goes unlabelled
+            out.append(f'<text x="{x:.1f}" y="{base+18}" class="tick" text-anchor="middle">{c}</text>')
     out.append(f'<g class="cursor" aria-hidden="true"><line class="cur-line" x1="0" x2="0" y1="{top-2}" y2="{base}"/>'
                f'<rect class="cur-box" x="-19" y="{base+5}" width="38" height="17" rx="4"/><text class="cur-yr" x="0" y="{base+17.5}" text-anchor="middle"></text></g>')
     tip_data = []   # tooltip text, loaded by site.js from timeline.json so the page does not carry it per dot
@@ -225,7 +226,13 @@ def build(items):
     lines.append('<!-- stats:start -->')
     lines.append('<section class="scoreboard" id="scoreboard" aria-labelledby="sb-h">')
     lines.append('<h2 id="sb-h">Results so far</h2>')
-    lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
+    # the timeline leads; the bar and its categories are its legend; the four counts follow, smaller (the hero's strip has the headline ones)
+    lines.append(f'<p class="sb-note lg-only">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; click a category under the bar to isolate it.</p>')
+    lines.append(f'<p class="sb-note sm-only">Entries by century, {min(span)}&ndash;{max(span)}. Tap a century for its write-ups.</p>')
+    lines.append(timeline_svg(items))
+    lines.append(century_mini(items))
+    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} entries by method">{bar}</div>')
+    lines.append(f'<details class="sb-methods" open><summary>All {sum(1 for c in order if n[c])} categories</summary><div class="sb-legend">{legend}</div></details>')
     lines.append('<div class="sb-grid">')
     by_contrib = sum(1 for it in items if it['cat'] in ('ct', 'extpt', 'adjpt') and it['outside'])
     who = f' {by_contrib} of them with <a href="contributors.html">outside contributors</a>.' if by_contrib else ''
@@ -234,12 +241,7 @@ def build(items):
     lines.append(f'<div class="sb-big fam-no"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
     lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full<i class="lg-only"> ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]})</i>.</span></div>')
     lines.append('</div>')
-    lines.append(f'<div class="sb-bar" role="img" aria-label="Outcomes of {total} entries by method">{bar}</div>')
-    lines.append(f'<details class="sb-methods"><summary>All {sum(1 for c in order if n[c])} categories</summary><div class="sb-legend">{legend}</div></details>')
-    lines.append(f'<p class="sb-note lg-only">Every entry by date, {min(span)}&ndash;{max(span)}. Hover or tap a dot for the story; open the categories and click one to isolate it.</p>')
-    lines.append(f'<p class="sb-note sm-only">Entries by century, {min(span)}&ndash;{max(span)}. Tap a century for its write-ups.</p>')
-    lines.append(timeline_svg(items))
-    lines.append(century_mini(items))
+    lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
     lines.append('</section>')
     lines.append('<!-- stats:end -->')
