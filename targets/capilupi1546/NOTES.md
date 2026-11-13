@@ -5,7 +5,7 @@ Status: in progress (Brice Dudout, 12 Nov 2026; integration check 13 Nov 2026). 
 - **System Y** (the cursive hand: images 02r, 04r, 05r, 05v, 06r, 06v, 07r) is read in part. Strict share (README rule, sure words only): 631 of 692 = **91.2 %**. The contributor's own figure counts the 37 probable words as read: 668/692 = 96.5 %.
 - **By document, strict:** 02r 92.2 %, 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. Only 04r (118 words) reaches the 95 % bar.
 - **System X** (images 03r and 09r, about 1,400 digits) is a different hand and system and is not attacked.
-- **The key** was proposed by Claude Fable 5.2, frozen, and passed one preregistered measure on the held-out folio 05r: M = 0.7962 against 200 controls (max 0.175).
+- **The key** was proposed by Claude Fable 5.2, frozen, and passed one preregistered measure on the held-out folio 05r: M = 0.7962 against 200 controls (max 0.175). The frozen key and the measure's lexicon were added in PR #521; the hash, M and the controls were re-run and checked on 13 Nov 2026 (second integration check below).
 - **No human palaeographer** has checked the transcription or the reading.
 
 ## The document
@@ -134,12 +134,22 @@ That table is the contributor's (sure + probable). Strict (sure only), recounted
 Done on the files as submitted (PR #497); no human palaeographer.
 
 - **Strict share.** Recounted from `dudout/reading.md`, sure words only (probable, restored and unresolved are holes): 631/692 = 91.2 %. By document 02r 92.2 %, 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. The 96.5 % in the contributor's text counts the 37 probable words as read; it is kept above, labelled as theirs. Class: read in part.
-- **Own decoder.** Written from `dudout/key.txt` only (23 simple codes, longest first). It gives the same Italian as `decryption.txt` (letter similarity 0.93-0.98 per folio); the difference is the parse of ambiguous strings (e.g. 51 u against 5 + 1), which the roughly 2,000 composite entries of the frozen JSON settle. **KEY-1555.json and the lexicon file are not in the PR**, so the frozen hash, M = 0.7962 and the controls (max 0.175) could not be reproduced exactly. With my own lexicon (16th-century Italian words of frequency >= 30, 3 letters or more) and the simple key, held-out 05r gives M = 0.83 against 200 permuted-value controls with max 0.34, mean 0.16. The key therefore works as a system on 05r; the order of events (protocol before key) is by the contributor's record only.
+- **Own decoder.** Written from `dudout/key.txt` only (23 simple codes, longest first). It gives the same Italian as `decryption.txt` (letter similarity 0.93-0.98 per folio); the difference is the parse of ambiguous strings (e.g. 51 u against 5 + 1), which the roughly 2,000 composite entries of the frozen JSON settle. KEY-1555.json and the lexicon file were not in PR #497, so at this first check the frozen hash, M = 0.7962 and the controls (max 0.175) could not be reproduced exactly; PR #521 added them and they were checked (second integration check, below). With my own lexicon (16th-century Italian words of frequency >= 30, 3 letters or more) and the simple key, held-out 05r gives M = 0.83 against 200 permuted-value controls with max 0.34, mean 0.16. The key therefore works as a system on 05r; the order of events (protocol before key) is by the contributor's record only.
 - **What the test shows.** The held-out folio is a sibling of the training folios (same hand, same letter, same system), and the key came from a package that held the other Y folios and the 1545 c. 48 and c. 49r digits. It validates the key on that system. It does not validate each word.
 - **Image check.** The manifest of cc. 80a-80h (18 images, 0080-01r to 0080-09v) loads with curl; images load as regions at native size (full-size requests above 1599 px are refused). The labels used here are the manifest labels: 02r = 0080-02r (canvas 3), 05r = canvas 9 (0080-05r, penciled 80d), 09r = canvas 17. So the carta mapping is answered by the manifest, as far as the labels go. On 05r, lines 1-4 and the end of line 7 (about 150 groups) agree with the transcription by count and shape. The 7 / 9 distinction (short bar against hook) was not judged independently.
 - **Code 11.** At 'imperammor' (05r line 7) the image shows two short 1-shaped strokes before the 2. The transcription is as written, so the 'mm' is a key problem (a second value of 11, mostly t, once l), not a transcription slip. Code 11 never gives a valid 'mm' anywhere in the decryption.
 - **Same cipher as capilupi1545?** The digit system of c. 48 and c. 49r (Camillo Capilupi, Feb 1546) is the same as system Y: the simple key gives Italian runs on their first-pass digits (they were in the build set, so this is not independent). The 8 May 1545 letter in that folder is a different, homophonic cipher. One key, one entry: the digit key is held here. When both targets are finished they are to be one page about the digit system, with c. 48 and c. 49r read here from a fresh transcription; until then each folder points to the other.
 - **Date.** Docket year 1546 against content that fits 1545 (Charles of Orleans died on 9 Sept 1545): left as a gap; no one has looked at the docket on the image.
+
+## Second integration check (13 Nov 2026, PR #521)
+
+PR #521 adds `dudout/KEY-1555.json`, `dudout/lexicon_1555.txt` and `dudout/HASHES-1555.md`, so the measure can now be checked.
+
+- **Hashes.** SHA-256 of `KEY-1555.json` = 76ab7684...955e, as stated in PREREG/key.txt/HASHES. SHA-256 of `lexicon_1555.txt` = 328049d3...d533, as in HASHES-1555.md. The PR text gives e59da4f9... for the lexicon; that value is the hash of the source corpus `it_nunz_clean.txt` (HASHES-1555.md has it right). The corpus is not committed, so that its derived word list is exactly this file is by the contributor's record.
+- **Lexicon.** 6,462 words written three times plus one written four times; the script's filter (frequency >= 3, length >= 3) keeps 6,463 words, the count HASHES-1555.md states. The English header lines add no word that passes the filter.
+- **Measure re-run.** `python3 -I measure_1555.py KEY-1555.json transcription_05r.txt lexicon_1555.txt` (script read first: no network, no writes) prints M 0.7962, controls max 0.175 mean 0.0181, PASS. The output is byte-identical to `MESURE-1555-H.txt`.
+- **Frozen key = key used.** An own longest-code-first decoder (written from KEY-1555.json, not importing the contributor's code) decodes the seven Y transcriptions to exactly the text of `decryption.txt` (02r, 04r, 05r, 05v, 06r, 06v, 07r: 0 differing characters). The 1-2 digit entries of the JSON equal the table in `key.txt`.
+- **What stays as before.** The key file carries no external timestamp: that it was frozen before the run is by the contributor's record. The test validates the key as a system on a sibling folio, not each word. The contributor accepts the strict 91.2 % (read in part) and a second value for code 11 (PR #521 text). The other gaps below are unchanged, so the target stays in progress.
 
 ## Remaining gaps
 
@@ -183,6 +193,9 @@ Brice Dudout's project, with Claude agents directed by Brice Dudout.
 | `dudout/PREREG-1555.md` | the frozen protocol |
 | `dudout/measure_1555.py` | the frozen measure script |
 | `dudout/MESURE-1555-H.txt` | verbatim output of the single run on 05r |
+| `dudout/KEY-1555.json` | the frozen key (SHA-256 76ab7684...955e), PR #521 |
+| `dudout/lexicon_1555.txt` | the word list of the measure (SHA-256 328049d3...d533), PR #521 |
+| `dudout/HASHES-1555.md` | hashes and the re-run command, PR #521 |
 | `profile.json` | the target profile |
 
 ## Contributor's note (dudout, 12 Nov 2026)
