@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root{
-  --bg:#0c0f15; --bg2:#121724; --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06); --panel3:#090b10;
+  --bg:#14110c; --bg2:#1d1811; --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06); --panel3:#0e0c08;
   --ink:#e9e4d8; --ink2:#c9c3b4; --muted:#8f8a7d; --head:#ffffff; --rule:rgba(233,228,216,.13);
   --gold:#d9ac52; --gold2:#f0cf86; --gold-ink:#1a1408; --red:#ff8d7e; --red-bg:rgba(255,141,126,.13);
   --blue:#7fb3ff; --blue-bg:rgba(127,179,255,.13); --green:#6fd39a; --green-bg:rgba(111,211,154,.13);
   --amber:#ecc25a; --amber-bg:rgba(236,194,90,.14); --grey-bg:rgba(255,255,255,.07); --violet:#b9a8ff; --violet-bg:rgba(180,160,255,.14);
-  --shadow:0 18px 50px rgba(0,0,0,.45); --navbg:rgba(12,15,21,.72);
-  --glow1:rgba(217,172,82,.12); --glow2:rgba(127,179,255,.10);
+  --shadow:0 18px 50px rgba(0,0,0,.45); --navbg:rgba(20,17,12,.74);
+  --glow1:rgba(217,172,82,.12); --glow2:rgba(214,150,90,.08);
   --serif:"Source Serif 4",Georgia,serif; --display:"Source Serif 4",Georgia,serif; --ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --maxw:980px; --radius:14px;
   color-scheme:dark;
@@ -790,10 +790,10 @@ html.zv-lock{overflow:hidden}
 .zv-src{margin:0;padding:.35rem 1rem;font:0.8rem var(--ui);color:#8f8a7d;min-height:1.6em}
 .zv-err{padding:2rem;text-align:center;color:#ff8d7e}
 .zv-line{overflow:hidden;border-radius:3px;pointer-events:auto;
-  background:rgba(12,15,21,.34);border:1px solid rgba(240,207,134,.5);color:#fff7e2;text-shadow:0 0 3px #000,0 0 6px #000;padding:0 .3em;line-height:1.05;
+  background:rgba(20,17,12,.34);border:1px solid rgba(240,207,134,.5);color:#fff7e2;text-shadow:0 0 3px #000,0 0 6px #000;padding:0 .3em;line-height:1.05;
   font-family:var(--ui);white-space:nowrap;transition:opacity .25s,background .2s}
 .zv-line .in{display:flex;flex-direction:column;justify-content:center;height:100%;gap:.08em}
-.zv-line:hover{background:rgba(12,15,21,.82)}
+.zv-line:hover{background:rgba(20,17,12,.82)}
 .zv-line .gl{font-family:var(--period);color:#f0cf86;font-size:1.15em;text-overflow:ellipsis;overflow:hidden}
 .zv-line .t{text-overflow:ellipsis;overflow:hidden}
 .zv.zv-off .zv-line{opacity:0;pointer-events:none}
@@ -1658,12 +1658,15 @@ body:has(.ms-bg) .cards.featured .card{box-shadow:0 14px 30px -22px rgba(0,0,0,.
    are toned to one paper colour, and the phone hero holds still while the cipher line changes. */
 .hero:has(> .hero-ms){isolation:isolate}
 .hero-ms{position:absolute;z-index:-1;top:0;bottom:0;right:0;width:min(52%,32rem);overflow:hidden;pointer-events:none;
-  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 55%,#000 82%,transparent 100%),linear-gradient(180deg,transparent 0,#000 16%,#000 70%,transparent 100%);
-  mask-image:linear-gradient(90deg,transparent 0,#000 55%,#000 82%,transparent 100%),linear-gradient(180deg,transparent 0,#000 16%,#000 70%,transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 12%,#000 68%,#000 84%,transparent 100%),linear-gradient(180deg,transparent 0,#000 16%,#000 70%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 12%,#000 68%,#000 84%,transparent 100%),linear-gradient(180deg,transparent 0,#000 16%,#000 70%,transparent 100%);
   -webkit-mask-composite:source-in;mask-composite:intersect}
-.hero-ms img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 30%;opacity:.3;filter:grayscale(1) contrast(1.15);mix-blend-mode:screen}
-:root[data-theme="light"] .hero-ms img{opacity:.42;filter:sepia(.55) contrast(1.1);mix-blend-mode:multiply}
-@media (max-width:760px){.hero-ms{display:none}}
+.hero-ms img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:var(--pos,center 30%);opacity:calc(.3 * var(--fd,1));filter:grayscale(1) contrast(1.15);mix-blend-mode:screen}
+:root[data-theme="light"] .hero-ms img{opacity:calc(.42 * var(--fl,1));filter:sepia(.55) contrast(1.1);mix-blend-mode:multiply}
+@media (max-width:760px){   /* on a phone: a band of the figure across the top of the hero */
+  .hero-ms{position:relative;z-index:0;top:auto;bottom:auto;right:auto;width:auto;height:6.2rem;margin:-2.6rem -1.2rem .9rem;
+    -webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 100%);mask-image:linear-gradient(180deg,#000 30%,transparent 100%)}
+}
 @media print{.hero-ms{display:none}}
 /* latest findings: every picture on the same paper */
 body:has(.ms-bg) ul.findings li[data-mirror] .fth{background:#cdbb92;border-radius:8px}
@@ -1692,3 +1695,16 @@ body:has(.ms-bg) ul.findings li[data-mirror] .fth .sc{mix-blend-mode:multiply;fi
   .ms-bg::after{background:linear-gradient(0deg,rgba(24,15,7,.97) 0%,rgba(24,15,7,.92) 60%,rgba(24,15,7,.8) 100%)}
   .hero:has(.ms-bg) .cipherstrip{height:4.8rem;min-height:0}
 }
+
+/* ---------------------------------------------------------------- 13 Nov 2026, third pass
+   The dark theme is a warm ink, like the manuscript heroes (tokens at the top). The sections rail shows from 1340 px,
+   narrower, where it used to wait for 1500. A write-up's dateline, method and credits close its hero under a rule. */
+@media (min-width:1340px) and (max-width:1499px){
+  .secnav{right:.9rem;top:5.5rem;bottom:auto;width:calc(50vw - 490px - 1.9rem);visibility:hidden;opacity:0;transition:opacity .2s}
+  .secnav.past{visibility:visible;opacity:1}
+  .secnav .secbtn,.secnav.past .secbtn{display:none}
+  .seclist{display:block;position:static;width:auto;max-height:calc(100vh - 7rem);background:none;border:0;box-shadow:none;padding:0}
+  .seclist a{font-size:.78rem;padding:.3rem .5rem}
+  .seclist .sechead{font-size:.7rem}
+}
+.hero:has(> .meta + .outcome) > .meta,.hero:has(> .hero-ms) > .meta{margin-top:1.3rem;padding-top:.9rem;border-top:1px solid var(--rule);max-width:46rem}
