@@ -158,5 +158,44 @@
   "prior_art": "known.py: no hit. DECODE, Tomokiyo, Lasry and editions not searched for this item.",
   "needs_archive_scan": "no",
   "access_note": "open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts"
+ },
+ {
+  "year": 1630,
+  "date": "9 Oct 1630 (images 78-79) and Nov 1630 (image 122)",
+  "title": "Gustaf Horn to Gustav II Adolf, Stettin, 1630: three passages of bare two-digit homophonic cipher with square null signs, no decipherment",
+  "correspondents": "Gustaf Horn (field marshal, in Pomerania) -> King Gustav II Adolf",
+  "place": "Stettin (read 'Alten Stettin' in the dateline of image 77, 7? Oct 1630; not checked for the others)",
+  "language": "Swedish",
+  "region": "Scandinavia",
+  "period": "1611-1650",
+  "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/15 (Horn, Gustaf Carlsson, band 1630-1632), image series R0000795, images 78, 79 (fol. 75-77) and 122 (fol. 120)",
+  "folio_note": "R0000795 image 78 right page: a cipher passage of about 14 lines under the date 9 Oct 1630; image 79 right page: about 24 lines (about 170 groups) of comma-separated 2-digit numbers (13-96) with empty square signs (nulls or a sign for a word), opened at 1800 px: nothing between the lines or in the margin, only the clear Swedish before and after; image 122 right page: about 9 lines, Nov 1630. A third cipher leaf may follow in the other Horn letters of the volume (the top-64 detector sheet showed 78, 79, 122 only)",
+  "cls": "B",
+  "status": "Viewed 13 Nov 2026: images 76-80 and 122 at 700 px, 79 at 1800 px. Bare. The code is plausibly the Horn/Banér cipher held on DECODE as R4122 ('Ciphera cum Dno Gustavo Horn, Dn. Johanne et Carolo Bannerio', c. 1630-31, homophonic 76-99 and 10-66 plus a sign nomenclator; transcription in targets/baner1640/key_r4122.json): groups 76-96 occur in the letter, which fits that alphabet but has not been tried. known.py on R0000795 and 'Gustaf Horn': no hit. Lead, no vetting block: no edition of Horn's letters opened (HSH register lists none found).",
+  "why": "A field marshal's 1630 despatch in a code for which a key sheet is already held (DECODE R4122 transcription in the repo), so a direct key-match test should settle the reading; it would also test the Banér letter of 1627 in the same fonds.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed at native size",
+  "verify": "Run the R4122 table (targets/baner1640/key_r4122.json) over the groups of image 79; if it fits, read 78, 79, 122 and check Horn's other 1630-32 letters in the volume (1133.07/14 and /15).",
+  "links": [
+   {
+    "label": "Riksarkivet viewer, image 79",
+    "href": "https://sok.riksarkivet.se/bildvisning/R0000795_00079"
+   },
+   {
+    "label": "image 78",
+    "href": "https://sok.riksarkivet.se/bildvisning/R0000795_00078"
+   },
+   {
+    "label": "image 122",
+    "href": "https://sok.riksarkivet.se/bildvisning/R0000795_00122"
+   }
+  ],
+  "seen": "image",
+  "source": "Riksarkivet paging sweep 13 Nov",
+  "prior_art": "DECODE: key record R4122 only (via decode_updates/queue.json); no record for the letter. known.py: no hit. Editions, Tomokiyo, Lasry not searched for this item.",
+  "needs_archive_scan": "no",
+  "access_note": "open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts"
  }
 ]
