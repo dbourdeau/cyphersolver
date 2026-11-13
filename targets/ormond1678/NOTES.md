@@ -1,10 +1,10 @@
 # Ormond to the Earl of Arran, 24 January 1677/8: a "trial" passage in figures (Unsolved Catalogue no. 353)
 
-Status: key identified: Tomokiyo's reconstruction of Ormond-Longford Cipher 1 shifted by +7; read in part 15/20 figures; holes kept
+Status: read in part, 10/20 figures (50%) under the read bar. Key: Tomokiyo's reconstruction of Ormond-Longford Cipher 1 (1680) with every number 7 higher, found by Malcolm McBratney (PR #526, 13 Nov 2026); written up 13 Nov 2026.
 
-Attempted 26-27 Oct 2026, not solved. The 20 figures do not fit either Ormond key of these years. The passage is too
-short for a ciphertext-only attack on a code of this size. The next step is the manuscript (NLI, Ormonde MSS), which
-needs physical access. Cryptoole XX1678-1; Tomokiyo, "An Unidentified Cipher?" on cryptiana `charlesii2.htm`.
+Attempted here 26-27 Oct 2026 and closed unread: the 20 figures fit neither Ormond key of these years taken unchanged.
+On 13 Nov 2026 Malcolm McBratney found the offset (section below): the 1680 key fits once every figure is reduced by 7.
+Cryptoole XX1678-1; Tomokiyo, "An Unidentified Cipher?" on cryptiana `charlesii2.htm`.
 
 
 ## Key identified, 13 Nov 2026 (files in `identification/`)
@@ -16,7 +16,7 @@ Every figure is the Ormond-Longford Cipher 1 (1680) number **plus 7**. With Tomo
 
 Decryption: `[726] an d King ar e in a [700] [720]` / `to Ormond not c re di b le`. English is AI-made.
 
-- 15/20 figures given a value (75.00%): 10 from printed glosses or the p.498 plain rendering, 4 interpolated from the
+- 15/20 figures given a value (75.00%; the contributor's count, under the read bar 10/20 = 50%, see Integration check): 10 from printed glosses or the p.498 plain rendering, 4 interpolated from the
   key's regular order (51 e, 47 a, 25 c, 433 le), 1 from context (418 King). Gloss-attested only: 10/20. Holes: 5
   (1680 numbers 438, 335, 719, 693, 713), none glossed in print.
 - Tomokiyo's key as published gives 14/20 (418 is an empty row in it) and reads 84 "and", 566 "Dor -> or?". We read
@@ -32,8 +32,43 @@ Decryption: `[726] an d King ar e in a [700] [720]` / `to Ormond not c re di b l
   working with Claude (Anthropic). The offset was first noticed by an agent Malcolm ran on Perplexity and was then
   checked independently (transcription, glosses on images, controls rebuilt).
 
-The record of the October attempt follows unchanged, except that "Ruled out" for Longford 1 applies to the key
-**unchanged**.
+## Integration check (13 Nov 2026)
+
+Verified before merging (report: SOUND WITH CORRECTIONS).
+
+- Scripts re-run with `python3 -I` (read first; they write only `decryption.txt` and `ledger.tsv` in their folder, which
+  came out unchanged): `decode.py` 15/20 given a value; `controls.py` and `controls_joint.py` reproduce every figure in
+  `controls_out.txt` (14/20 at -7 on K1, unique maximum; only -7 of 602 key-offset trials spells a 5+ letter word,
+  "credible"; random sets 8+ letters 6/2000; hit count 14 in 5/2000; shuffles at -7 8+ letters 0/3000; K1 alone 3/2000,
+  joint 0/2000).
+- Own decoder, from Tomokiyo's table image `charlesii2_Ormond_Longford1.png` typed afresh (not the contributor's K1): at -7
+  it gives `[445] [342] [726] and d [418 empty] ar e in a [700] [720] / to Dor/or not c re di b l/le`, the same 14 values.
+- Own control: the same key with a different vocabulary (`lang/lexicons/en.json.gz`, words of 6+ letters) over offsets
+  -150..+150: only -7 spells a word ("credible"); 1,000 random figure sets of the same run shape, at their best offset:
+  6+ letters 8/1000, 8+ letters 0/1000. The word statistic was chosen after "credible" had been seen, so these margins
+  are supporting evidence, not a pre-registered test. The bare hit count is weak (14 reached in 5/2000 random sets).
+- Images (Internet Archive `calendarofmanusc04greauoft`): p.93 (leaf n122) 20/20 figures agree, sixth of run 1 = 58.
+  p.454 (n1235): "in" over 377, "not" over 519, "to" over 725, "re" over 636, "hard" over 337 634 26, "by" over 48 45,
+  "Dor" over 566, "pal" over 581 433, "Portsmouth are friends" over 1039 86 237 301. p.469 (n1250): "de" 206, "di" 207,
+  "on" over 84. p.479 (n1260): "his discourse with 418". p.498 (n1279): 579 ... 206 followed by "our letters to Ormond
+  are opened on that side". All as in `identification/GLOSS_CHECK.md`, except one point:
+- **Correction, p.486 (n1267):** "and" is printed over 84 alone and "i" over 50 (Ormond's glosses, which the editor
+  footnotes as "scarcely legible"); it does not span 84 50. So the print gives 84 = "and" (as Tomokiyo's key does);
+  84 = "an" is the contributor's reading, supported by the alphabetical slot (83 am, 84, no 85 known, 86 ar) and by the
+  run 84 26 (an + d). The group gives "and" either way; 84 stays counted as attested, the conflict is recorded.
+- **Correction, the share:** under the read bar the 4 interpolated values (58 e, 54 a, 32 c, 440 le) and the context
+  value (425 King) are holes. Strict share **10/20 = 50%** (the contributor's own "gloss-attested" figure). The
+  contributor's 15/20 = 75% counts them as given a value. Class: read in part. `outcome.fraction_read` 0.50.
+- No held-out text: the IA full text of the bound vols. iv-v was scanned for runs of figures; apart from this passage
+  they are all in the 1680 Longford numbering (Longford 16 Oct, Arran 30 Oct and 13 Nov, Longford 20 Nov 1680, and a
+  six-figure run). The transcription freeze is RFC 3161-stamped (10:32:39Z, hash matches); the order of events is by
+  the contributor's record. The 34-file manifest hashes match the files in the folder.
+- Prior art: Tomokiyo's key is published; his hidden trial at offset 0 is on charlesii2.htm (seen); no offset is
+  tried there. One key, one entry: `targets/ormonde` (Maltravers to Ormonde 1634-35) is a different key; no other target
+  uses the Longford ciphers. A reading file `identification/reading.txt` was added for `_check_reading.py`.
+
+The record of the October attempt follows, except that "Ruled out" for Longford 1 applies to the key **unchanged**,
+and the Remaining gaps, Escalation and Prior art sections are brought up to date.
 
 ## The document
 
@@ -68,8 +103,9 @@ so does the IA OCR. "57" comes from Tomokiyo's quotation and went into the catal
 
 ## System
 
-A numeric code or nomenclator. Single letters are not among the 18 figures in the runs: no figure repeats, and
-the spread runs to 732 with only five values below 91 (32, 33, 54, 55, 58). The type is the Restoration English one
+A numeric code or nomenclator. (October text; with the +7 offset the five low figures 32, 33, 54, 55, 58 are single
+letters of the two alphabets after all: c, d, a, b, e.) No figure repeats, and the spread runs to 732 with only five
+values below 91 (32, 33, 54, 55, 58). The type is the Restoration English one
 described on cryptiana `charlesii2.htm`: a short alphabet section plus alphabetically arranged syllables and words
 up to about 800, with names after them. Ormond's phrase "a trial whether you are skilful in deciphering" suggests a
 test of a cipher Arran held. The sense is that the matter was minor ("else it might have been written in plain
@@ -98,33 +134,37 @@ letters"), and Arran's reply of 5 Feb (p. 102) talks of "this cipher ... which i
 
 ## Prior art
 
-None. HMC prints no gloss. The IA full text of vols. iv-v has no other copy of the passage. Tomokiyo lists it as
+The key: Tomokiyo's reconstruction of Longford 1 (charlesii2.htm), used here with the offset found by McBratney (new by
+the contributor's record, `identification/PRIOR_ART.md`). The passage, before 13 Nov 2026: none. HMC prints no gloss. The IA full text of vols. iv-v has no other copy of the passage. Tomokiyo lists it as
 unidentified. Cryptoole XX1678-1 is open. Web search on 27 Oct 2026 (the quotation, Ormond + Arran + January 1678 +
 cipher) found only the NLI catalogue records. HMC 6th Report App. p. 719 (1877) is a short descriptive list of the
 Kilkenny papers and is not expected to print the letter. It was not seen; no scan was found on IA.
 
 ## Remaining gaps
 
-- All 20 figures - blocker: too-short; 20 distinct figures of a code of about 800 entries. No repeats, so there is
-  no pattern for a ciphertext-only attack, and no control at this length could succeed.
-- The key - blocker: no-key-material; neither the 1678 pair code nor the 1680 Longford key fits, and no numeric
-  Ormond-Arran key of 1677-78 is in print or on DECODE.
-- An interlinear or marginal gloss on the sent letter or on Ormond's retained copy - blocker: needs-physical-access;
+- figures 445, 342, 726, 700, 720 (1680 numbers 438, 335, 719, 693, 713) - blocker: no-key-material; no gloss for these
+  numbers anywhere in HMC n.s. v, none in Tomokiyo's table. Alphabetical bracketing gives only the section: 438 after
+  lo 435 (l-), 335 before h 336 (g-/h-), 693, 713 and 719 among the s- entries.
+- figures 58, 54, 32, 440 (1680 numbers 51 e, 47 a, 25 c, 433 le) and 425 (418 King) - blocker: no-key-material; values
+  from the key's regular order and from context only; no gloss in print for these numbers.
+- whether +7 holds over the rest of the table - blocker: too-short; 20 figures, no repeats, and no other passage in the
+  1678 numbering in HMC n.s. iv-v.
+- an interlinear or marginal gloss on the sent letter or on Ormond's retained copy - blocker: needs-physical-access;
   NLI MSS 2335-2362 (Ormonde papers 1665-80), letter of 24 Jan 1677/8 in the bundle catalogued as MS UR 006261; not
-  digitised. Arran's own papers (Bodleian Carte MSS, e.g. Carte 216-217, NLI microfilm MS UR 076819) may hold the
-  letter as received, perhaps deciphered by Arran.
+  digitised. Arran's papers (Bodleian Carte MSS; MS. Carte 50 fols 439-440 reported by cipher-lab as a January 1678
+  Ormond-Arran cipher, not seen) may hold the letter as received, perhaps deciphered.
 
 ## Escalation
 
-- [x] siblings: every Ormond-Arran letter of Jan-Feb 1678 in HMC n.s. iv read (pp. 92-107). Arran's replies of
-  26 and 29 Jan and 5, 9 and 12 Feb do not repeat or answer the figures. The 5 Feb reply puts off deciphering.
-- [x] clear-pages: the clear text of the same letter and of Ormond to Arran 29 Jan gives the subject (Douglas,
-  Mansell, Granard), not the wording. No usable crib.
-- [x] known-keys: the 1678 Ormond-Arran two-letter code is ruled out (not numeric). The Ormond-Longford 1680 key is
-  ruled out (low figures fall on single consonants). Anglesey 1663 and Longford 2-3 are untested (see Key material 3).
-- [x] print: HMC n.s. iv-v full text and cryptiana charlesii2.htm: nothing. HMC 6th Rept. App. not seen, and not
-  expected to print the letter.
-- [n/a] key-rebuild: no partial key exists to extend. 20 distinct figures give no repeats to anchor a solver.
-- [n/a] retry: nothing reads yet.
-- Next step: have NLI MSS 2335-62 searched for the 24 Jan 1677/8 letter (and Carte 216-217 for Arran's copy), and
-  look for an interlinear decipherment. A numeric key of 1677-78 among the Ormonde papers would also do.
+- [x] siblings: every Ormond-Arran letter of Jan-Feb 1678 in HMC n.s. iv read (pp. 92-107); Arran's replies do not
+  repeat or answer the figures. The IA text of vols. iv-v scanned for other figure runs: none in the 1678 numbering.
+- [x] clear-pages: the clear text of the same letter gives the subject (Douglas, Mansell, Granard) and fits the reading
+  ("but it seems to Ormond not credible"); no further crib.
+- [x] known-keys: the 1678 two-letter code is ruled out (not numeric); Longford 1 (1680) fits with +7 (13 Nov 2026);
+  Longford 2 and 3 tested by the contributor over offsets -150..+150: no fit (max 12/20 and 4/20, no word).
+- [x] print: HMC n.s. iv-v (all Longford 1 glosses, pp. 454-498), cryptiana charlesii2.htm. HMC 6th Rept. App. not seen.
+- [x] key-rebuild: alphabetical bracketing of the five open numbers gives only their initial sections (Remaining gaps);
+  no value can be fixed from 20 figures.
+- [x] retry: every figure re-run with the shifted key and Tomokiyo's table as published (14/20) and with the
+  contributor's values (15/20); strict 10/20 attested.
+- Next step: have NLI MSS 2335-62 searched for the 24 Jan 1677/8 letter (and Carte 50, 216-217 for Arran's copy).
