@@ -75,7 +75,7 @@ permission (`chrome_pass_2026-11`).
 | PARES | Bare terms "cifra" and "descifrado" | `pares_ags` |
 | DECODE Sforzesco | R5297-R5587: 13 thumbnails and one PDF of 169 records | `venice_milan_decode` |
 | JACAR | 144 undated volume hits not opened; `cands_raw.json` is git-ignored | `jacar` |
-| Abhilekh Patal | "cypher" paged to 691 of 4,505 | `asia_india` |
+| Abhilekh Patal | "cypher" title run is date-sorted: the 691 records read reach 1915; the other ~3,800 are post-1915 administrative cypher-telegram files (13 Nov 2026), low value | `asia_india` |
 | BNP Lisbon | Keyword search only for the COD./MSS./PBA. shelves (Tarouca, Forjaz, Fontes Pereira de Melo crawled whole); "sinais" stopped part-way on 503s (one request a second works); Correlo 1970 (Nisa ciphers), the printed Santarém correspondence and Cluny 2006 (Tarouca) unread | `sweep_2026-11_bnp_portugal` |
 | KB The Hague | Catalogue covered through SRU + OAI (4,040 manuscript records, ~200 read in full); `kb.on.worldcat.org` shows Cloudflare and was not tried in Chrome (adds nothing the SRU route lacks); Delpher full text of the KB annual reports and the Literatuurmuseum catalogue not reached. No KB cipher item has scans online | `sweep_2026-11_kb_netherlands` |
 | NARA M1194 | No search for "decipher" across all 261 rolls; only cards the bulk scan flagged were read | `nara_triage_c` |
