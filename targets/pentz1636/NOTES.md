@@ -103,7 +103,7 @@ Done on the files as submitted; no human reader. Folder only, no page: both lett
 - Vienna clear text - blocker: not-attempted; transcribed only next to the cipher runs.
 - Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a, TKUA Kejseren 14 - blocker: needs-physical-access; may hold copies or decipherments.
 - Short texts (Vienna 20 letter words) - blocker: too-short; the shuffle test is weak on its own.
-- The Glückstadt letter is `research/leads.json` lead 2565 - blocker: not-attempted; close it into this target at write-up.
+- The Glückstadt letter was lead 2565 and is now catalogue entry 2565 (promoted 13 Nov 2026, PR #527); it is worked in this folder - blocker: not-attempted; narrow or remove entry 2565 at write-up.
 
 ## Escalation
 
