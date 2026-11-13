@@ -67,5 +67,26 @@ row(year=1632, date="Sep-Oct 1632 (letters dated 1, 2, 21, 28, 30 Oct; the ciphe
     needs_archive_scan="no",
     access_note="open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts")
 
+row(year=1631, date="5 Nov - 14 Dec 1631 (letters dated 5 Nov, 7 Dec and 14 Dec 1631)",
+    title="'Chemnitz' (Nuremberg) to Gustav II Adolf: German despatches of Nov-Dec 1631 with number-and-letter cipher, some passages without decipherment",
+    correspondents="signature read as '...Chemnitz' (first name not read; a Swedish agent writing from Nuremberg) -> King Gustav II Adolf",
+    place="Nuremberg ('Datum Nürnberg den 7 Xbris Ao 1631'); 55/57 letter from 'Mainz 14 Dec 1631' on the cover of image 59 (the cover's place not checked against the letter)",
+    language="German", region="Scandinavia", period="1611-1650",
+    shelfmark="Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/4 (C), image series R0000624, images 55-59",
+    folio_note="R0000624 image 55 (one leaf): a 6-line passage of dotted numbers with letters (m, pf, q, gl) at the foot of the German text, no gloss; image 56 left page: a 7-line passage, no gloss, under a letter of Wallenstein's movements ('Friedland', 'Würzburg'), dated Nuremberg 7 Dec 1631; image 58: 5 Nov 1631 letter with a passage that has small plaintext words above some groups, and a 7 Dec postscript in clear; image 57: a letter written almost wholly in number-and-letter groups with a German decipherment written between the lines (glossed). So the glossed sibling and the bare passages are in the same hand and volume",
+    cls="A",
+    status="Viewed 13 Nov 2026: images 54-59 at 700 px, 56 and 57 at 1700 px, 58 at 1800 px. Nomenclator of 2-digit numbers with letters m, pf and others, German context. Passages on 55 and 56 show no decipherment at that size; the top-64 window sheet of this volume was the only screening, so more passages may lie elsewhere in the volume. known.py on R0000624, 1133.07/4 and 'Chemnitz': no hit. Lead, no vetting block: no edition opened (Swedish despatches from Nuremberg of 1631 may be printed in the Gustav Adolf correspondence editions; not searched).",
+    why="A 1631 German-language number cipher whose deciphered letter (image 57) sits in the same volume, which gives a crib for the bare passages on 55 and 56, about the movements of Wallenstein and the contributions of Nuremberg.",
+    importance=2, solvability=4, difficulty=2,
+    score_note="Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed",
+    verify="Identify the writer (the signature after 'Undertänigster gehorsamer Diener' ends in '-mnitz'); look for a printed edition of his 1631 despatches; transcribe image 57's gloss to build the table and read 55 and 56.",
+    links=[{"label": "Riksarkivet viewer, image 55", "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00055"},
+           {"label": "image 56", "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00056"},
+           {"label": "image 57 (glossed)", "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00057"}],
+    seen="image", source="Riksarkivet paging sweep 13 Nov",
+    prior_art="known.py: no hit. DECODE, Tomokiyo, Lasry and editions not searched for this item.",
+    needs_archive_scan="no",
+    access_note="open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts")
+
 json.dump(ROWS, open('candidates.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(len(ROWS), 'rows')
