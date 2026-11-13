@@ -1,0 +1,206 @@
+counts.txt: written by scripts/build.py. One block per despatch; figures per page and per despatch, never pooled across despatches.
+Read = S: every number of the word gives its frozen value and the word is spelt. E and N are not read. Unit = a word of the plaintext.
+Gloss values: tiers A B G H (chancery decipherments). Context values: tiers F P Q T (read from context, not from a gloss).
+
+## Carl Bonde (Paris) to Charles XI, 12/22 Feb 1676, images 159R-165L, cipher 161R-165L
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  161R               key v10 b124 tx md5 6d6d9fe2537e2fe460a14054a2b27ae1 frozen 2026-11-12T07:52:28Z: S 41 + E 10 + N 0 = 51; strict 41/51 = 80.39%
+  162L               key v10 b124 tx md5 e2181c8205d72713236e0aa0f6cb1e42 frozen 2026-11-12T07:53:38Z: S 48 + E 38 + N 1 = 87; strict 48/87 = 55.17%
+  162R               key v10 b124 tx md5 6cf85273d0f864f3d849b61cfb6bec47 frozen 2026-11-12T07:54:37Z: S 68 + E 31 + N 0 = 99; strict 68/99 = 68.69%
+  163L               key v10 b124 tx md5 67c2f1d4020060b89df024e487c115ce frozen 2026-11-12T07:55:19Z: S 44 + E 44 + N 2 = 90; strict 44/90 = 48.89%
+  163R               key v10 b124 tx md5 393889b1a79c70777da9b747c5312b7a frozen 2026-11-12T07:55:58Z: S 82 + E 17 + N 1 = 100; strict 82/100 = 82.00%
+  164L               key v10 b124 tx md5 adc5bf8c8beec224623f756f7a78a316 frozen 2026-11-12T07:56:33Z: S 35 + E 52 + N 1 = 88; strict 35/88 = 39.77%
+  164R               key v10 b124 tx md5 3dd909b2f4c0d3af2a268f39f3057ffe frozen 2026-11-12T07:57:13Z: S 64 + E 21 + N 0 = 85; strict 64/85 = 75.29%
+  165L               key v10 b124 tx md5 81399ee5bbd3e3abfa54e48837ce609e frozen 2026-11-12T07:57:24Z: S 2 + E 1 + N 0 = 3; strict 2/3 = 66.67%
+  sum: 41 + 48 + 68 + 44 + 82 + 35 + 64 + 2 of 51 + 87 + 99 + 90 + 100 + 88 + 85 + 3 = 384/603 = 63.68%
+  short pages (under 20 units): 165L
+  numbers inside the read units, by source of their key value: gloss 869, context 870 (A 824, B 19, F 386, G 11, H 15, P 272, Q 121, T 91)
+  read units using at least one context value: 322 of 384
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 15; with them counted not read: 369/603 = 61.19%
+Second transcription:
+  162L               key v10 b125 tx md5 601302116a70cc68e1aba29817bd84c9 frozen 2026-11-12T08:10:02Z: S 45 + E 39 + N 1 = 85; strict 45/85 = 52.94%
+  163L               key v10 b125 tx md5 27c18dff201196d60051f1e336af2af3 frozen 2026-11-12T08:10:02Z: S 44 + E 40 + N 5 = 89; strict 44/89 = 49.44%
+  164L               key v10 b125 tx md5 ba48847e4c42285d006561c1a84a7f88 frozen 2026-11-12T08:10:02Z: S 40 + E 36 + N 5 = 81; strict 40/81 = 49.38%
+  165L               key v10 b125 tx md5 6dd544c0136c910d2a7d2c8efc16b92a frozen 2026-11-12T08:10:02Z: S 1 + E 2 + N 0 = 3; strict 1/3 = 33.33%
+  sum: 45 + 44 + 40 + 1 of 85 + 89 + 81 + 3 = 130/258 = 50.39%
+  despatch with this transcription in place of the first on 162L, 163L, 164L, 165L: 41 + 68 + 82 + 64 + 45 + 44 + 40 + 1 of 51 + 99 + 100 + 85 + 85 + 89 + 81 + 3 = 385/593 = 64.92%
+  '?' rule (a numeral marked '?' makes its unit a hole): 6 numerals marked '?', 0 read units hold one; strict 130/258 = 50.39% by our rule, 130/258 = 50.39% by the '?' rule
+
+## Bonde and Lillieroot (Paris) to Charles XI, 12/22 Aug 1676, images 278R-283R, cipher 278R-282R
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  278R               key v10 b123 tx md5 7210940093ca3c0b1b3d018cdb8321d7 frozen 2026-11-12T07:34:01Z: S 26 + E 8 + N 0 = 34; strict 26/34 = 76.47%
+  279L               key v10 b123 tx md5 8d1ffdcf7628b8c2a4e122c1937b3a84 frozen 2026-11-12T07:35:17Z: S 61 + E 34 + N 1 = 96; strict 61/96 = 63.54%
+  279R               key v10 b123 tx md5 3f7199c2dcccf5749eb26c6a2d0172b6 frozen 2026-11-12T07:35:57Z: S 64 + E 12 + N 0 = 76; strict 64/76 = 84.21%
+  280L               key v10 b122 tx md5 aa8f6c38a2b099f356399b33c0dd5257 frozen 2026-11-12T07:27:55Z: S 57 + E 28 + N 2 = 87; strict 57/87 = 65.52%
+  280R               key v10 b122 tx md5 83ca760f64840daff13155f11b54cd9c frozen 2026-11-12T07:28:36Z: S 69 + E 12 + N 2 = 83; strict 69/83 = 83.13%
+  281L               key v10 b123 tx md5 6a68e3bc2fa9a4b5682ade5185026faa frozen 2026-11-12T07:36:41Z: S 50 + E 46 + N 0 = 96; strict 50/96 = 52.08%
+  281R               key v10 b123 tx md5 c24fecd6719c5766a65e9f0019420584 frozen 2026-11-12T07:37:25Z: S 92 + E 11 + N 0 = 103; strict 92/103 = 89.32%
+  282L               key v10 b123 tx md5 65ef3a442160a3243bab0f389be26c01 frozen 2026-11-12T07:38:07Z: S 56 + E 48 + N 0 = 104; strict 56/104 = 53.85%
+  282R               key v10 b123 tx md5 c8c63f3740e499f1ce23a8b205b958b7 frozen 2026-11-12T07:38:33Z: S 19 + E 7 + N 0 = 26; strict 19/26 = 73.08%
+  sum: 26 + 61 + 64 + 57 + 69 + 50 + 92 + 56 + 19 of 34 + 96 + 76 + 87 + 83 + 96 + 103 + 104 + 26 = 494/705 = 70.07%
+  numbers inside the read units, by source of their key value: gloss 1515, context 739 (A 1411, B 46, F 432, G 3, H 55, P 205, Q 58, T 44)
+  read units using at least one context value: 362 of 494
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 55; with them counted not read: 439/705 = 62.27%
+
+## Bonde and Lillieroot (Paris) to Charles XI, 6/16 Oct 1676, images 317R-321L, cipher 317R-320R
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  317R               key v7  b112 tx md5 870123397393138920c249d091dfd589 frozen 2026-11-12T05:01:48Z: S 17 + E 9 + N 7 = 33; strict 17/33 = 51.52%
+  318L               key v7  b111 tx md5 219a4d4c18f90b4c075d44d93f27ab66 frozen 2026-11-12T04:47:11Z: S 30 + E 35 + N 14 = 79; strict 30/79 = 37.97%
+  318R               key v7  b111 tx md5 9831fd264f486b7cac460a942df48697 frozen 2026-11-12T04:47:56Z: S 33 + E 17 + N 16 = 66; strict 33/66 = 50.00%
+  319L               key v7  b112 tx md5 c168645188907c86228cdb3346cee6c9 frozen 2026-11-12T05:02:38Z: S 28 + E 42 + N 14 = 84; strict 28/84 = 33.33%
+  319R               key v8  b117 tx md5 febdbd9e271f51642d0113e2014480ca frozen 2026-11-12T05:54:07Z: S 39 + E 44 + N 12 = 95; strict 39/95 = 41.05%
+  320L               key v8  b117 tx md5 d445eeca787bcf90c128173bdfef7cf5 frozen 2026-11-12T05:55:18Z: S 30 + E 31 + N 10 = 71; strict 30/71 = 42.25%
+  320R               key v8  b117 tx md5 4a4714470dcb3977c3af5cd72b1ceaee frozen 2026-11-12T05:55:18Z: S 9 + E 7 + N 3 = 19; strict 9/19 = 47.37%
+  key v7 pages: 17 + 30 + 33 + 28 of 33 + 79 + 66 + 84 = 108/262 = 41.22%
+  key v8 pages: 39 + 30 + 9 of 95 + 71 + 19 = 78/185 = 42.16%
+  whole despatch, first pass under the keys above (mixed key states, given for completeness only): 17 + 30 + 33 + 28 + 39 + 30 + 9 of 33 + 79 + 66 + 84 + 95 + 71 + 19 = 186/447 = 41.61%
+  short pages (under 20 units): 320R
+  numbers inside the read units, by source of their key value: gloss 448, context 439 (A 435, B 8, F 203, G 1, H 4, P 125, Q 50, T 61)
+  read units using at least one context value: 159 of 186
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 4; with them counted not read: 182/447 = 40.72%
+Second transcription:
+  318L               key v7  b112 tx md5 8f236787c63b55a9c9717de31958bb0d frozen 2026-11-12T04:59:46Z: S 31 + E 30 + N 17 = 78; strict 31/78 = 39.74%
+  318R               key v7  b112 tx md5 a5a9f0c733f1a1c0cc9c5e61ebb10dfa frozen 2026-11-12T04:59:46Z: S 40 + E 20 + N 9 = 69; strict 40/69 = 57.97%
+  sum: 31 + 40 of 78 + 69 = 71/147 = 48.30%
+  despatch with this transcription in place of the first on 318L, 318R: 17 + 28 + 39 + 30 + 9 + 31 + 40 of 33 + 84 + 95 + 71 + 19 + 78 + 69 = 194/449 = 43.21%
+Re-score with a later key: NOT held-out (the pages had been seen; values may come from them):
+  317R               key v8  b117 tx md5 870123397393138920c249d091dfd589: S 18 + E 6 + N 9 = 33; strict 18/33 = 54.55%
+  318L               key v8  b117 tx md5 8f236787c63b55a9c9717de31958bb0d: S 34 + E 24 + N 20 = 78; strict 34/78 = 43.59%
+  318R               key v8  b117 tx md5 a5a9f0c733f1a1c0cc9c5e61ebb10dfa: S 42 + E 15 + N 12 = 69; strict 42/69 = 60.87%
+  319L               key v8  b117 tx md5 c168645188907c86228cdb3346cee6c9: S 33 + E 34 + N 17 = 84; strict 33/84 = 39.29%
+  sum: 18 + 34 + 42 + 33 of 33 + 78 + 69 + 84 = 127/264 = 48.11%
+
+## Bonde and Lillieroot (Paris) to Charles XI, 13/23 Oct 1676, images 327R-330R
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  327R               key v4  b103 tx md5 b155e755c052cdba81b944b018188c64 frozen 2026-11-12T03:19:29Z: S 10 + E 10 + N 3 = 23; strict 10/23 = 43.48%
+  328L_lines1-13     key v5  b103 tx md5 c33bc1a00b39ac32303791d9e5f1eddb frozen 2026-11-12T03:20:57Z: S 11 + E 13 + N 2 = 26; strict 11/26 = 42.31%
+  328L_lines14-24    key v6  b104 tx md5 bae85394e5d1a6297cd4955a7df8ef70 frozen 2026-11-12T03:35:07Z: S 8 + E 11 + N 5 = 24; strict 8/24 = 33.33%
+  328R               key v6  b104 tx md5 cbf5c4dbaa5dde02f0d8446524731471 frozen 2026-11-12T03:35:07Z: S 46 + E 14 + N 8 = 68; strict 46/68 = 67.65%
+  329L               key v6  b104 tx md5 253a34c4cdce7bd9374c9d226ceb8264 frozen 2026-11-12T03:35:57Z: S 31 + E 39 + N 11 = 81; strict 31/81 = 38.27%
+  329R               key v6  b104 tx md5 a58e920fbce1c3f81142cbae595aef28 frozen 2026-11-12T03:35:57Z: S 42 + E 29 + N 8 = 79; strict 42/79 = 53.16%
+  330L               key v6  b104 tx md5 ab969987740ac7ce1dd0e9abb982367b frozen 2026-11-12T03:36:31Z: S 14 + E 10 + N 7 = 31; strict 14/31 = 45.16%
+  330R               key v6  b104 tx md5 409af792cda1c3ad74845ffce0f9a114 frozen 2026-11-12T03:36:31Z: S 20 + E 11 + N 1 = 32; strict 20/32 = 62.50%
+  key v4 pages: 10 of 23 = 10/23 = 43.48%
+  key v5 pages: 11 of 26 = 11/26 = 42.31%
+  key v6 pages: 8 + 46 + 31 + 42 + 14 + 20 of 24 + 68 + 81 + 79 + 31 + 32 = 161/315 = 51.11%
+  whole despatch, first pass under the keys above (mixed key states, given for completeness only): 10 + 11 + 8 + 46 + 31 + 42 + 14 + 20 of 23 + 26 + 24 + 68 + 81 + 79 + 31 + 32 = 182/364 = 50.00%
+  numbers inside the read units, by source of their key value: gloss 445, context 418 (A 439, B 6, F 205, P 112, Q 56, T 45)
+  read units using at least one context value: 141 of 182
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 0; with them counted not read: 182/364 = 50.00%
+Re-score with a later key: NOT held-out (the pages had been seen; values may come from them):
+  328L_lines14-24    key v8  b117 tx md5 bae85394e5d1a6297cd4955a7df8ef70: S 11 + E 10 + N 3 = 24; strict 11/24 = 45.83%
+  328R               key v8  b117 tx md5 cbf5c4dbaa5dde02f0d8446524731471: S 49 + E 12 + N 7 = 68; strict 49/68 = 72.06%
+  329L               key v8  b117 tx md5 253a34c4cdce7bd9374c9d226ceb8264: S 36 + E 35 + N 10 = 81; strict 36/81 = 44.44%
+  329R               key v8  b117 tx md5 a58e920fbce1c3f81142cbae595aef28: S 50 + E 23 + N 6 = 79; strict 50/79 = 63.29%
+  330L               key v8  b117 tx md5 ab969987740ac7ce1dd0e9abb982367b: S 15 + E 8 + N 8 = 31; strict 15/31 = 48.39%
+  330R               key v8  b117 tx md5 409af792cda1c3ad74845ffce0f9a114: S 22 + E 9 + N 1 = 32; strict 22/32 = 68.75%
+  sum: 11 + 49 + 36 + 50 + 15 + 22 of 24 + 68 + 81 + 79 + 31 + 32 = 183/315 = 58.10%
+
+## Carl Bonde (Paris) to Charles XI, 3/13 Nov 1677, images 471R-473R, cipher 471R-473L
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  471R               key v9  b118 tx md5 63c5106076e78a51fb772ab54769753a frozen 2026-11-12T06:09:40Z: S 3 + E 3 + N 0 = 6; strict 3/6 = 50.00%
+  472L               key v9  b118 tx md5 9fe9d8cdb0be72fce670a9058b1cb018 frozen 2026-11-12T06:11:04Z: S 37 + E 32 + N 2 = 71; strict 37/71 = 52.11%
+  472R               key v9  b118 tx md5 a9159966978d6b4fca708367db6ab976 frozen 2026-11-12T06:11:40Z: S 28 + E 8 + N 3 = 39; strict 28/39 = 71.79%
+  473L               key v9  b118 tx md5 64cad75bdeff5d4b7734e036b06e4f24 frozen 2026-11-12T06:12:07Z: S 7 + E 7 + N 1 = 15; strict 7/15 = 46.67%
+  sum: 3 + 37 + 28 + 7 of 6 + 71 + 39 + 15 = 75/131 = 57.25%
+  SHORT DESPATCH: 131 word units (under 150); the shuffle test is weak on so little text
+  short pages (under 20 units): 471R, 473L
+  numbers inside the read units, by source of their key value: gloss 212, context 154 (A 204, B 6, F 80, G 1, H 1, P 45, Q 19, T 10)
+  read units using at least one context value: 69 of 75
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 1; with them counted not read: 74/131 = 56.49%
+
+## Carl Bonde (Paris) to Charles XI, 17/27 Nov 1677, images 479R-482L, cipher 479R-481R
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  479R               key v9  b119 tx md5 c05a787b72eb41f879877fbcf6d1bdc1 frozen 2026-11-12T06:18:35Z: S 4 + E 4 + N 0 = 8; strict 4/8 = 50.00%
+  480L               key v9  b119 tx md5 540e5c0a30a62721bdf40a29db63d7cb frozen 2026-11-12T06:18:35Z: S 16 + E 11 + N 0 = 27; strict 16/27 = 59.26%
+  480R               key v9  b119 tx md5 a04a87a9c2cd89a86225512a7ce4787f frozen 2026-11-12T06:19:44Z: S 21 + E 8 + N 1 = 30; strict 21/30 = 70.00%
+  481L               key v9  b119 tx md5 7633130b7b2ffd0a4fbe82e882f96adb frozen 2026-11-12T06:20:09Z: S 10 + E 9 + N 0 = 19; strict 10/19 = 52.63%
+  481R               key v9  b119 tx md5 f11316c27f71183b5613a4f7f8cd6f91 frozen 2026-11-12T06:20:59Z: S 11 + E 5 + N 0 = 16; strict 11/16 = 68.75%
+  sum: 4 + 16 + 21 + 10 + 11 of 8 + 27 + 30 + 19 + 16 = 62/100 = 62.00%
+  SHORT DESPATCH: 100 word units (under 150); the shuffle test is weak on so little text
+  short pages (under 20 units): 479R, 481L, 481R
+  numbers inside the read units, by source of their key value: gloss 177, context 160 (A 163, B 5, F 94, G 3, H 6, P 42, Q 17, T 7)
+  read units using at least one context value: 57 of 62
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 6; with them counted not read: 56/100 = 56.00%
+
+## Charles Bonde (Paris) to an Excellency, French, copy, 24 Nov/4 Dec 1677, images 490R-491L
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  490R               key v3  b121 tx md5 972bd748588c9c0df4b1dd1a3d102386 frozen 2026-11-12T07:12:06Z: S 31 + E 33 + N 0 = 64; strict 31/64 = 48.44%
+  491L               key v3  b121 tx md5 37c76962b38606b4e5f3033e9bddbfae frozen 2026-11-12T07:12:06Z: S 3 + E 3 + N 0 = 6; strict 3/6 = 50.00%
+  sum: 31 + 3 of 64 + 6 = 34/70 = 48.57%
+  SHORT DESPATCH: 70 word units (under 150); the shuffle test is weak on so little text
+  short pages (under 20 units): 491L
+  numbers inside the read units, by source of their key value: gloss 99, context 69 (A 98, B 1, F 51, P 18)
+  read units using at least one context value: 27 of 34
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 0; with them counted not read: 34/70 = 48.57%
+
+## Carl Bonde (Paris) to Charles XI, 1/11 Dec 1677, images 491R-493R, cipher 491R-493L
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  491R               key v9  b121 tx md5 114b3e3a5076025ac4f460bfb46c515c frozen 2026-11-12T07:08:58Z: S 8 + E 5 + N 0 = 13; strict 8/13 = 61.54%
+  492L               key v9  b121 tx md5 5670e37768a2f37f58971412a9ed9321 frozen 2026-11-12T07:08:58Z: S 21 + E 23 + N 0 = 44; strict 21/44 = 47.73%
+  492R               key v9  b121 tx md5 edf769357219297917bed5f9cc287e5c frozen 2026-11-12T07:08:58Z: S 30 + E 8 + N 0 = 38; strict 30/38 = 78.95%
+  493L               key v9  b121 tx md5 e1983ce471dfcd2b5dd85e151e334f4f frozen 2026-11-12T07:08:58Z: S 7 + E 2 + N 0 = 9; strict 7/9 = 77.78%
+  sum: 8 + 21 + 30 + 7 of 13 + 44 + 38 + 9 = 66/104 = 63.46%
+  SHORT DESPATCH: 104 word units (under 150); the shuffle test is weak on so little text
+  short pages (under 20 units): 491R, 493L
+  numbers inside the read units, by source of their key value: gloss 207, context 145 (A 197, B 5, F 98, G 2, H 3, P 28, Q 16, T 3)
+  read units using at least one context value: 60 of 66
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 3; with them counted not read: 63/104 = 60.58%
+Re-score with a later key: NOT held-out (the pages had been seen; values may come from them):
+  491R               key v10 b122 tx md5 114b3e3a5076025ac4f460bfb46c515c: S 9 + E 4 + N 0 = 13; strict 9/13 = 69.23%
+  492L               key v10 b122 tx md5 5670e37768a2f37f58971412a9ed9321: S 25 + E 19 + N 0 = 44; strict 25/44 = 56.82%
+  492R               key v10 b122 tx md5 edf769357219297917bed5f9cc287e5c: S 32 + E 6 + N 0 = 38; strict 32/38 = 84.21%
+  493L               key v10 b122 tx md5 e1983ce471dfcd2b5dd85e151e334f4f: S 7 + E 2 + N 0 = 9; strict 7/9 = 77.78%
+  sum: 9 + 25 + 32 + 7 of 13 + 44 + 38 + 9 = 73/104 = 70.19%
+
+## Carl Bonde (Paris) to Charles XI, 29 Dec 1677/8 Jan 1678, images 506R-511R, cipher 507L-511L
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  507L               key v9  b121 tx md5 9c8610ff40bce462dd7f51c14ce67392 frozen 2026-11-12T06:54:25Z: S 18 + E 16 + N 0 = 34; strict 18/34 = 52.94%
+  507R               key v9  b121 tx md5 e54de5ea96bf27ed4df0d9cf56b9a49a frozen 2026-11-12T06:54:25Z: S 28 + E 16 + N 0 = 44; strict 28/44 = 63.64%
+  508L               key v9  b121 tx md5 d2a5b06a03ff10c460b287d8f1e1fe27 frozen 2026-11-12T06:55:59Z: S 24 + E 24 + N 1 = 49; strict 24/49 = 48.98%
+  508R               key v9  b121 tx md5 451866dce08eab26d68c810164de04e3 frozen 2026-11-12T06:55:59Z: S 22 + E 6 + N 1 = 29; strict 22/29 = 75.86%
+  509L               key v9  b121 tx md5 aa5d550904dc11c512de79800f1ed1af frozen 2026-11-12T06:56:55Z: S 15 + E 21 + N 1 = 37; strict 15/37 = 40.54%
+  509R               key v9  b121 tx md5 12da27b53b34a032057796c44c45db7d frozen 2026-11-12T06:56:55Z: S 32 + E 18 + N 0 = 50; strict 32/50 = 64.00%
+  510L               key v9  b121 tx md5 be77edcbfaad6f7aae36b14bfb1c91fc frozen 2026-11-12T06:58:07Z: S 29 + E 30 + N 2 = 61; strict 29/61 = 47.54%
+  510R               key v9  b121 tx md5 cf6c3865b05adc2184dcf3e4edec292c frozen 2026-11-12T06:58:07Z: S 43 + E 20 + N 1 = 64; strict 43/64 = 67.19%
+  511L               key v9  b121 tx md5 b3897562645c15a0625418cd60fea45c frozen 2026-11-12T06:58:27Z: S 3 + E 6 + N 0 = 9; strict 3/9 = 33.33%
+  sum: 18 + 28 + 24 + 22 + 15 + 32 + 29 + 43 + 3 of 34 + 44 + 49 + 29 + 37 + 50 + 61 + 64 + 9 = 214/377 = 56.76%
+  short pages (under 20 units): 511L
+  numbers inside the read units, by source of their key value: gloss 585, context 526 (A 557, B 14, F 313, G 2, H 12, P 144, Q 42, T 27)
+  read units using at least one context value: 190 of 214
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 12; with them counted not read: 202/377 = 53.58%
+Re-score with a later key: NOT held-out (the pages had been seen; values may come from them):
+  507L               key v10 b122 tx md5 9c8610ff40bce462dd7f51c14ce67392: S 22 + E 12 + N 0 = 34; strict 22/34 = 64.71%
+  507R               key v10 b122 tx md5 e54de5ea96bf27ed4df0d9cf56b9a49a: S 35 + E 9 + N 0 = 44; strict 35/44 = 79.55%
+  508L               key v10 b122 tx md5 d2a5b06a03ff10c460b287d8f1e1fe27: S 29 + E 19 + N 1 = 49; strict 29/49 = 59.18%
+  508R               key v10 b122 tx md5 451866dce08eab26d68c810164de04e3: S 24 + E 4 + N 1 = 29; strict 24/29 = 82.76%
+  509L               key v10 b122 tx md5 aa5d550904dc11c512de79800f1ed1af: S 20 + E 16 + N 1 = 37; strict 20/37 = 54.05%
+  509R               key v10 b122 tx md5 12da27b53b34a032057796c44c45db7d: S 37 + E 13 + N 0 = 50; strict 37/50 = 74.00%
+  510L               key v10 b122 tx md5 be77edcbfaad6f7aae36b14bfb1c91fc: S 43 + E 16 + N 2 = 61; strict 43/61 = 70.49%
+  510R               key v10 b122 tx md5 cf6c3865b05adc2184dcf3e4edec292c: S 47 + E 16 + N 1 = 64; strict 47/64 = 73.44%
+  511L               key v10 b122 tx md5 b3897562645c15a0625418cd60fea45c: S 5 + E 4 + N 0 = 9; strict 5/9 = 55.56%
+  sum: 22 + 35 + 29 + 24 + 20 + 37 + 43 + 47 + 5 of 34 + 44 + 49 + 29 + 37 + 50 + 61 + 64 + 9 = 262/377 = 69.50%
+
+## Carl Bonde (Paris) to Charles XI, 5/15 Jan 1678, images 512R-516L, cipher 513L-516L
+First pass: each page frozen, then decoded once with the key frozen before it (figure of record):
+  513L               key v9  b121 tx md5 3c25d570dbb243f4de7f88d02cd75956 frozen 2026-11-12T07:03:24Z: S 18 + E 24 + N 0 = 42; strict 18/42 = 42.86%
+  513R               key v9  b121 tx md5 d01713d6ef44d270d43a39b902d99b01 frozen 2026-11-12T07:03:24Z: S 28 + E 12 + N 2 = 42; strict 28/42 = 66.67%
+  514L               key v9  b121 tx md5 7aadbc47f5b69192a3f3d8dac4603c1f frozen 2026-11-12T07:04:23Z: S 10 + E 15 + N 0 = 25; strict 10/25 = 40.00%
+  514R               key v9  b121 tx md5 2079409587f5aa623ade3c6156cd4ff5 frozen 2026-11-12T07:04:23Z: S 32 + E 8 + N 0 = 40; strict 32/40 = 80.00%
+  515L               key v9  b121 tx md5 6651386006c254f7fd0d106c17b99aad frozen 2026-11-12T07:04:59Z: S 6 + E 7 + N 0 = 13; strict 6/13 = 46.15%
+  515R               key v9  b121 tx md5 1115751364c468e48b418e9ab2d40315 frozen 2026-11-12T07:04:59Z: S 6 + E 1 + N 0 = 7; strict 6/7 = 85.71%
+  516L               key v9  b121 tx md5 8806e659afb1a4cb900ad3cb4c356ba6 frozen 2026-11-12T07:05:33Z: S 12 + E 12 + N 1 = 25; strict 12/25 = 48.00%
+  sum: 18 + 28 + 10 + 32 + 6 + 6 + 12 of 42 + 42 + 25 + 40 + 13 + 7 + 25 = 112/194 = 57.73%
+  short pages (under 20 units): 515L, 515R
+  numbers inside the read units, by source of their key value: gloss 311, context 261 (A 295, B 3, F 159, G 1, H 12, P 69, Q 22, T 11)
+  read units using at least one context value: 103 of 112
+  word-layer sensitivity: read units resting on a gloss word code (tier H): 12; with them counted not read: 100/194 = 51.55%
+Re-score with a later key: NOT held-out (the pages had been seen; values may come from them):
+  513L               key v10 b122 tx md5 3c25d570dbb243f4de7f88d02cd75956: S 23 + E 19 + N 0 = 42; strict 23/42 = 54.76%
+  513R               key v10 b122 tx md5 d01713d6ef44d270d43a39b902d99b01: S 30 + E 10 + N 2 = 42; strict 30/42 = 71.43%
+  514L               key v10 b122 tx md5 7aadbc47f5b69192a3f3d8dac4603c1f: S 13 + E 12 + N 0 = 25; strict 13/25 = 52.00%
+  514R               key v10 b122 tx md5 2079409587f5aa623ade3c6156cd4ff5: S 35 + E 5 + N 0 = 40; strict 35/40 = 87.50%
+  515L               key v10 b122 tx md5 6651386006c254f7fd0d106c17b99aad: S 8 + E 5 + N 0 = 13; strict 8/13 = 61.54%
+  515R               key v10 b122 tx md5 1115751364c468e48b418e9ab2d40315: S 7 + E 0 + N 0 = 7; strict 7/7 = 100.00%
+  516L               key v10 b122 tx md5 8806e659afb1a4cb900ad3cb4c356ba6: S 14 + E 10 + N 1 = 25; strict 14/25 = 56.00%
+  sum: 23 + 30 + 13 + 35 + 8 + 7 + 14 of 42 + 42 + 25 + 40 + 13 + 7 + 25 = 130/194 = 67.01%
