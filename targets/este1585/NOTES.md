@@ -1,8 +1,8 @@
-# este1585: four cipher passages in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, pp. 513, 517-518 and 523; catalogue 1572)
+# este1585: five cipher passages in Cardinal Luigi d'Este's cipher, 1584-85 (BnF Cinq Cents de Colbert 338, pp. 513, 517-518 and 523; BnF fr. 16041 f. 271; catalogue 1572)
 
-Status: in progress (the gaps can still be worked: the probable words could be settled by a palaeographer; a blind shape sheet, second reader on shapes only, settled the doubtful signs of pp. 518 and 513 on 14 Nov 2026). All four passages read in part (integration check of PR #546, 13 Nov 2026, README read bar applied strictly: sure words only; probable, restored and unresolved words are holes): **p. 517 201/231 = 87.0%**, **p. 523 146/200 = 73.0%**; pp. 518 and 513, added after PR #546 and counted the same way: **p. 518 87/108 = 80.6%**, **p. 513 38/47 = 80.9%**. Key: Satoshi Tomokiyo's table; K-C02 passed its pre-registered held-out test on p. 517 (M5 0.509 against 0.067, bar 0.45), K-C01 was partial on p. 523 (M5 0.457 against 0.078, bar 0.60).
+Status: in progress (the gaps can still be worked: the probable words could be settled by a palaeographer; a blind shape sheet, second reader on shapes only, settled the doubtful signs of pp. 518 and 513 on 14 Nov 2026). All five passages read in part (integration check of PR #546, 13 Nov 2026, README read bar applied strictly: sure words only; probable, restored and unresolved words are holes): **p. 517 201/231 = 87.0%**, **p. 523 146/200 = 73.0%**; pp. 518 and 513, added after PR #546 and counted the same way: **p. 518 87/108 = 80.6%**, **p. 513 38/47 = 80.9%**; BnF fr. 16041 f. 271, added on 14 Nov 2026: **135/160 = 84.4%**. Key: Satoshi Tomokiyo's table; K-C02 passed its pre-registered held-out test on p. 517 (M5 0.509 against 0.067, bar 0.45), K-C01 was partial on p. 523 (M5 0.457 against 0.078, bar 0.60), K-C03.1 passed on fr. 16041 f. 271 by 0.001 (M5 0.451 against 0.077, bar 0.45).
 
-Contributor's status line (Brice Dudout, counting certain + probable words): **p. 517 read** (Brice Dudout, 13 Nov 2026; 223 of 231 words = 96.5%; key K-C02 validated by one pre-registered held-out measurement, M5 0.509 against 0.067). **p. 523 read in part** (5 Nov 2026; 177 of 200 words = 88.5%; key K-C01, partial by our protocol, M5 0.457 against 0.078). **p. 518** (end of the p. 517 letter, 13 Nov 2026): 103 of 108 words = 95.4% (after a blind shape sheet, 14 Nov 2026), so the **letter pp. 517-518 is read (326 of 339 words = 96.2%)**. **p. 513** (cipher block of a letter of 2 January 1585, 13 Nov 2026): 43 of 47 words = 91.5%, read in part; its margin carries a contemporary decipherment, which agrees with our reading.
+Contributor's status line (Brice Dudout, counting certain + probable words): **p. 517 read** (Brice Dudout, 13 Nov 2026; 223 of 231 words = 96.5%; key K-C02 validated by one pre-registered held-out measurement, M5 0.509 against 0.067). **p. 523 read in part** (5 Nov 2026; 177 of 200 words = 88.5%; key K-C01, partial by our protocol, M5 0.457 against 0.078). **p. 518** (end of the p. 517 letter, 13 Nov 2026): 103 of 108 words = 95.4% (after a blind shape sheet, 14 Nov 2026), so the **letter pp. 517-518 is read (326 of 339 words = 96.2%)**. **p. 513** (cipher block of a letter of 2 January 1585, 13 Nov 2026): 43 of 47 words = 91.5%, read in part; its margin carries a contemporary decipherment, which agrees with our reading. **BnF fr. 16041 f. 271 read** (14 Nov 2026; 152 of 160 words = 95.0%; key K-C03.1 validated by one pre-registered held-out measurement, M5 0.451 against 0.077).
 
 Contributed by Brice Dudout (Europe chiffrée), with AI agents. Catalogue entry 1572 (BAM sweep: "Luigi, card.le
 d'Este, 9 lettres en partie chiffrées"). **The key is not ours**: it is Satoshi Tomokiyo's reconstruction of "Cardinal
@@ -66,6 +66,7 @@ be told, and that no one learn the news came from him, since it reaches him thro
 5. **Only pp. 513, 517-518 and 523 are read** (p. 517 added 13 Nov 2026; pp. 518 and 513 the same evening, see below). pp. 435-438, 453-454 and 504 were used to fix the
    shapes (their ciphers read as French, but they were deciphered at the time and we do not count them); the
    other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.) are **not read**. Entry 1572 stays open apart from pp. 513, 517-518 and 523.
+   Outside Colbert 338, only BnF fr. 16041 f. 271 is read (14 Nov 2026, see below).
 6. **p. 517 thresholds changed before its test**: 0.45 instead of 0.60 for M5, declared in the pre-registration with the reasons
    (validation.txt, section 3). Under the old 0.60, p. 517 (0.509) would also be "partial".
 
@@ -78,9 +79,10 @@ be told, and that no one learn the news came from him, since it reaches him thro
 - p. 523: 31 probable words - blocker: not-attempted; as for p. 517.
 - p. 518: 16 probable, 1 restored and 4 unresolved words (L3, L8, L11, L16 end) - blocker: open-codes; the unresolved words and several probable ones rest on the new shapes of p. 518, whose values are probable only (`key-p518-513.tsv`).
 - p. 513: 5 probable and 4 unresolved words, mostly the first words of the cipher block (end of L7, start of L8; first sign cut at the margin) - blocker: open-codes.
+- fr. 16041 f. 271: 17 probable, 3 restored and 5 unresolved words (line 1, the start of the page continuing f. 271 r, and two line ends) - blocker: open-codes; ff. 271 r and 272-273 of the same letter (cipher, partly glossed between the lines) are not transcribed.
 - The frozen files of the p. 517 test (PREREG-KC02, the hashed key file, the frozen block bab39c61...) - blocker: not-attempted; not in the repository: the committed `key-p517.tsv` quotes the frozen hash aa7d73db in its own header and hashes to 98ef85f6, so it is a copy, not the hashed file; the contributor can send them.
 
-Not gaps of this reading: the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is pp. 513, 517-518 and 523 only.
+Not gaps of this reading: the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is Colbert 338 pp. 513, 517-518 and 523 and fr. 16041 f. 271 only. The many other cipher letters of fr. 16041 (ff. 269-280) and fr. 16042 (1585-86) are not gaps of this reading either.
 
 ## Escalation
 
@@ -176,6 +178,21 @@ p. 518: no gloss, no edition found (three web searches on Luigi d'Este's letters
 *Négociations diplomatiques de la France avec la Toscane*, whose tome IV prints the Florentine envoys' dispatches, not d'Este's French
 letters; not checked page by page). Tomokiyo's table is again the key.
 
+## BnF fr. 16041 f. 271: a new letter in the same cipher, and a held-out test of K-C03.1 (14 Nov 2026, after PR #546)
+
+- Source: BnF fr. 16041 (Gallica btv1b9060909s; images: source gallica.bnf.fr / BnF, not reproduced), Luigi d'Este's letters to Villeroy.
+  Tomokiyo built his table on this volume but cites only ff. 259 and 264 and prints no decipherment; views 524-537 were excluded.
+- f. 271 (view 551) is a whole page in cipher (23 lines, 677 signs) of a letter signed by the cardinal on f. 273 r (April 1584). Unlike Colbert 338,
+  the groups are separated by vertical strokes (word separators, no value).
+- K-C03.1 (the probable values of pp. 517-518 frozen as K-C03, plus a clerical fix) was pre-registered against this page and measured once:
+  M5 0.451 vs 0.077 (gap 0.374), thresholds 0.45 / +0.30: validated at the bar, by a margin of 0.001 only (validation.txt section 5).
+- Read (`reading-f16041-271.md`, `translation-f16041-271.md`): 160 words, 135 certain, 17 probable, 3 restored, 5 unresolved. Contributor's
+  count (certain + probable) 152/160 = 95.0%; strict README count, as in the integration check above, **135/160 = 84.4%, read in part**.
+  Content: the Pope's failing health, his stay in the country, and d'Este's plan to plead the King's case against
+  Montmorency "as of himself", Montmorency being backed by "someone greater" (Spain). New on this page: g8 = m, X with doubled arms = u.
+- Open: ff. 271 r and 272-273 of the same letter (cipher, partly glossed between the lines) not transcribed; many more cipher letters in
+  fr. 16041 ff. 269-280 and fr. 16042 (1585-86).
+
 ## Credits
 
 - `tomokiyo`: key or decipherment used (the table; we do not claim the key).
@@ -184,4 +201,4 @@ letters; not checked page by page). Tomokiyo's table is again the key.
 
 ## Files
 
-`transcription.txt`, `decryption.txt`, `key.tsv`, `validation.txt`, `reading.md`, `translation.md`, `profile.json`; for p. 517: `transcription-p517.txt`, `decryption-p517.txt`, `key-p517.tsv`, `reading-p517.md`, `translation-p517.md`; for pp. 518 and 513: `transcription-p518.txt`, `decryption-p518.txt`, `reading-p518.md`, `translation-p518.md`, `transcription-p513.txt`, `decryption-p513.txt`, `reading-p513.md`, `translation-p513.md`, `key-p518-513.tsv` (probable values).
+`transcription.txt`, `decryption.txt`, `key.tsv`, `validation.txt`, `reading.md`, `translation.md`, `profile.json`; for p. 517: `transcription-p517.txt`, `decryption-p517.txt`, `key-p517.tsv`, `reading-p517.md`, `translation-p517.md`; for pp. 518 and 513: `transcription-p518.txt`, `decryption-p518.txt`, `reading-p518.md`, `translation-p518.md`, `transcription-p513.txt`, `decryption-p513.txt`, `reading-p513.md`, `translation-p513.md`, `key-p518-513.tsv` (probable values); for fr. 16041 f. 271: `transcription-f16041-271.txt`, `decryption-f16041-271.txt`, `key-f16041-271.tsv` (K-C03.1), `reading-f16041-271.md`, `translation-f16041-271.md`.

@@ -66,3 +66,21 @@ the line '# = i' through a clerical error (comment filter); corrected as K-C03.1
 Informative only (not a test; block already seen): K-C03.1 on p. 513 gives M5 0.528 against a best shuffled key of 0.170; K-C02, 0.495
 against 0.123. Independent check: the margin of p. 513 carries a contemporary decipherment of the same block (partly in the binding),
 looked at only after the decision; it agrees with our reading word for word where both are legible, including "Espaigne" for y.
+
+== 5. Key K-C03.1 re-tested on a NEW document: BnF fr. 16041 f. 271 (14 Nov 2026) ==
+Pre-registration PREREG-KC03b (SHA-256 10272c722c8d2e7d31f025015ad394d1a8cf281991f6ca340976b67d4893cc4d) and amendment AVENANT-1 (44060a11...),
+both hashed before any transcription or decoding of the block; key K-C03.1 unchanged (eddc33b7...), tool mlex2.py unchanged (b57eaff9...).
+Source: BnF fr. 16041 (Gallica btv1b9060909s), Luigi d'Este's letters to Villeroy. Tomokiyo cites ff. 259 and 264 only and prints no decipherment;
+views 524-537 (about ff. 258-264) were excluded from the choice. Block B = view 551 (f. 271), a whole page in cipher (23 lines), chosen on 400 px
+thumbnails by layout only; same letter as f. 273 r (signed "Luigi Card. d'Este", April 1584, same shapes as Colbert 338).
+Amendment 1 (before transcription): this file separates groups with vertical strokes, absent from Colbert 338; they carry no value and are
+removed mechanically from the measured file, so the calibration of section 3 still applies.
+Transcription: pass A by one AI agent, pass B by a second AI agent working blind (own crops, no key, no values), each hashed; 57 differences
+settled on the image; frozen (1bd8bb77...) before decoding. The few contemporary interlinear letters were transcribed only after the freeze.
+Measure: M5 taken as the higher of the French and Italian lexicons (section 4), 200 shuffled keys, seed 271; thresholds 0.45 and best control
++ 0.30 (sections 3-4). Result (one run): 677 signs, 660 with a value (0.975); M5 = 0.451 (fr 0.451, it 0.374); best control 0.077 (median 0.032);
+gap 0.374. VALIDATED, at the bar (margin 0.001). The block is used up.
+Secondary check, informative only and declared uninformative before the run: alignment of the decryption with the 27 letters of the contemporary
+interlinear glosses, C = 1.000 but 1.000 for the best shuffled key too (a 27-letter sparse gloss aligns anywhere in 677 letters).
+Found by reading after the measurement (not part of the test): five transcription choices of the arbitration were wrong (see the header of
+transcription-f16041-271.txt) and g8 is m on this page; corrected, the reading reaches 95.0% of words (reading-f16041-271.md).
