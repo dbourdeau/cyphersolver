@@ -47,7 +47,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1988 · class B · priority 6.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1988 · class B · priority 6.5 · in progress</p>
   <h1>Philip III → Rodrigo Niño Laso, conde de Añover: reales cédulas in cipher (four with no decipherment bound in)</h1>
   <p class="sub">Philip III's cipher to the Spanish commander in Flanders during the Condé flight and the Dutch truce talks; same series has eight glossed leaves, so a key can be rebuilt from siblings.</p>
   <dl class="facts">
@@ -61,6 +61,7 @@
 </section>
 
 <main>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/anover1610/NOTES.md" rel="noopener">targets/anover1610</a> is working on this cipher (status: in progress (Alberto Garvía García, issue #499, 12 Nov 2026; checked and filed 13 Nov 2026). A reading of the ten ciphered lines exists in the contributor's report and reproduces from his transcription and key table; the transcription and the sibling parallels could not be checked against the manuscripts, the images being behind a bot block this session, and the gaps below are workable. No page yet.). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/1988.html</p>
@@ -69,6 +70,10 @@
 This page: https://cyphersolver.com/solve/1988.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/anover1610/NOTES.md  (status: in progress (Alberto Garvía García, issue #499, 12 Nov 2026; checked and filed 13 Nov 2026). A reading of the ten ciphered lines exists in the contributor's report and reproduces from his transcription and key table; the transcription and the sibling parallels could not be checked against the manuscripts, the images being behind a bot block this session, and the gaps below are workable. No page yet.)
 
 THE CIPHER
   Title:          Philip III → Rodrigo Niño Laso, conde de Añover: reales cédulas in cipher (four with no decipherment bound in)
@@ -82,20 +87,21 @@ THE CIPHER
     - Hispana record: https://hispana.mcu.es/es/registros/registro.do?idBib=58678726&amp;tipoRegistro=MTD
 
 WHAT IS KNOWN
-  Status: Hispana/Memoria de Madrid records 'Real cédula cifrada'. Page 2 of the scan viewed: whole page of 2-4 digit groups mixed with a few letters (la, de, fal, ba), no interlinear or banderilla decipherment. Eight sibling cédulas of the same series have the decipherment bound in on a slip (banderilla), which gives cribs.
-  Outcome so far: not yet attempted by the project
+  Status: Hispana/Memoria de Madrid records 'Real cédula cifrada'. Page 2 of the scan viewed: whole page of 2-4 digit groups mixed with a few letters (la, de, fal, ba), no interlinear or banderilla decipherment. Eight sibling cédulas of the same series have the decipherment bound in on a slip (banderilla), which gives cribs. Narrowed 13 Nov 2026 (issue #499, Alberto Garvía García): I 242,29 (20 May 1610) read in part from a key rebuilt from the siblings I 242,33, 42, 47 and 48 (ten lines of f. 53r; transcription not checked against the images; targets/anover1610, in progress, no page); the other three leaves of the entry are still open.
+  Outcome so far: In progress here, in targets/anover1610/.
   Prior-art check: open as far as checked (2 Nov 2026: known.py no hit for Añover/Niño Laso/Biblioteca Histórica; 2 web searches found nothing on this series; Tomokiyo page on Philip III ciphers not read; Lasry and DECODE: nothing in local dumps)
   Check first: Read the glossed siblings (idBib 58438206, 58438211, 58438294, 58678722, 58678826, 58678829, 58678890, 58678891) for a key, then apply it to 58678726, 58438217, 58438218, 58678720.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/anover1610/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/anover1610/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/anover1610/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +141,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/anover1610/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1988&amp;target=catalogue+1988
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -153,10 +159,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Hispana/Memoria de Madrid records 'Real cédula cifrada'. Page 2 of the scan viewed: whole page of 2-4 digit groups mixed with a few letters (la, de, fal, ba), no interlinear or banderilla decipherment. Eight sibling cédulas of the same series have the decipherment bound in on a slip (banderilla), which gives cribs.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (2 Nov 2026: known.py no hit for Añover/Niño Laso/Biblioteca Histórica; 2 web searches found nothing on this series; Tomokiyo page on Philip III ciphers not read; Lasry and DECODE: nothing in local dumps).</p>
+<p><b>Status and prior art.</b> Hispana/Memoria de Madrid records 'Real cédula cifrada'. Page 2 of the scan viewed: whole page of 2-4 digit groups mixed with a few letters (la, de, fal, ba), no interlinear or banderilla decipherment. Eight sibling cédulas of the same series have the decipherment bound in on a slip (banderilla), which gives cribs. Narrowed 13 Nov 2026 (issue #499, Alberto Garvía García): I 242,29 (20 May 1610) read in part from a key rebuilt from the siblings I 242,33, 42, 47 and 48 (ten lines of f. 53r; transcription not checked against the images; targets/anover1610, in progress, no page); the other three leaves of the entry are still open.</p>
+<p><b>Outcome so far.</b> In progress here, in targets/anover1610/. Prior-art check: open as far as checked (2 Nov 2026: known.py no hit for Añover/Niño Laso/Biblioteca Histórica; 2 web searches found nothing on this series; Tomokiyo page on Philip III ciphers not read; Lasry and DECODE: nothing in local dumps).</p>
 <p><b>Check first.</b> Read the glossed siblings (idBib 58438206, 58438211, 58438294, 58678722, 58678826, 58678829, 58678890, 58678891) for a key, then apply it to 58678726, 58438217, 58438218, 58678720.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/anover1610/NOTES.md" rel="noopener">targets/anover1610/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/anover1610" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
