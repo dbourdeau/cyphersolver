@@ -435,6 +435,15 @@
    ],
    "what": "Two tests that need no outside source. (1) Slip test: for every unread group, each one-digit change that gives a known group was listed and judged in its sentence. Four fit and are adopted as assumed slips: 8319 for 2319 (restreint aux depeches officielles, next to 6180 for 6120 with the same 8/2 confusion), 3019 for 5019 (on les a vus), 3021 for 5021 (ses lettres par ballon monte), 8626 for 8628 (Prussie). About 150 other one-digit neighbours gave no sense. (2) Adjacent-form test: do unread groups one or two lines from a known word carry another form of it? One reading follows from the order: 9010, one line before succes, is succeder (charge de me succeder, with 5215 = m). Candidates not adopted: 5308 for 5508 (mere), 2329 and 2705 as second forms of depeche and donner, 6005 between nos and notre (notaire / notable). Result: 238 values, 491 of 754 occurrences (65%), 91 unread, seventeen assumed slips (20 occurrences), none checked on the scan.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Automatic ranking of the unread groups: for 38 groups with known neighbours, every word in the book interval (30,000-word list) scored in its sentence with a character 5-gram model of modern French plus word frequency and position. The top choices are frequent words without sense in place; nothing adopted. A word-level model of the period's administrative French would be needed.",
+   "result": "failed"
   }
  ],
  "outcome": {

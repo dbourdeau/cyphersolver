@@ -400,6 +400,10 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
   before succes 9011, = succeder, 5215 = m ("charge de me succeder"). Not adopted: 5308 -> 5508 (mere; maison also fits unslipped), 2329 / 2705 as second forms of depeche /
   donner, 2704 (dont / donnee), 6005 between nos and notre (notaire / notable), 4125 after hardi, 8517 before secret. No fit: about 150 other one-digit neighbours.
   Now: 238 values, no inversion; 491 of 754 valued (65%), 172 markers (23%), 91 unread (12%, 80 distinct); SEVENTEEN assumed slips, 20 occurrences, none checked on the scan.
+- Automatic ranking test (13 Nov): for 38 unread groups with known neighbours on both sides, every word in the book interval (wordfreq, 30,000 words) was scored in its
+  sentence with the fr-modern character model (order 5, with spaces) plus word frequency and position. Result: negative. The top choices are frequent words with no sense in
+  place (pourquoi, longtemps, france, influence); the intended word, where one is guessed, is rarely first (mesures and claire are; dont is). A character model cannot choose
+  a word; a word-level model of 1870 administrative French would be needed. Nothing adopted.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
 
 ## Wiki and engine (7 Nov 2026): start here
