@@ -80,3 +80,6 @@ Transcription pilot 271/283 groups (95.8%). Three codes sorted by codebook decod
 
 ## [2026-11-08] ingest | collector's permission to publish scans and transcripts
 Pillon agreed (relayed by the project owner) that his scans and the transcriptions of them are published. Added: his transcription files and the derived sequence/alignment outputs in this folder, the AI page-transcription workbook and text zip under docs/data/pigeongrammes1870/, six scan snips on the page. Not covered and still unpublished: repertoires R1-R3, his Excel files, the R2 gap table (count only), the zip. [[Q07]] answered for scans and transcripts; the Tomokiyo question stays open. Checked that alpha_test, spell_solver, apply_telegram and joint_loop run; bench_loop needs his Repertoire1.xlsx.
+
+## [2026-11-13] query | collector's suggestions: PIERR-ET, messieurs, et, VIN-OY, DUC-ROT
+`heading_test.py`; NOTES.md section of 13 Nov. Supported: 3412 = et, 5511 = messieurs, 5711 = monsieur, three addressees with a paragraph each (0109 closes a paragraph). 6819 3412 is one name P...-ET (Pierret consistent, not confirmed; updates C017, Q02; C016 "5511 = M." is superseded). Not supported: VIN-OY, DUC-ROT (both break the order against ON = 6129 and RO = 8317). Claims files and lexicon_inspectors.json not yet edited.
