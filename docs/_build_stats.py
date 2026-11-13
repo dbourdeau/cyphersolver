@@ -90,7 +90,7 @@ def load():
             when = strip_md(cells[2]) if len(cells) >= 5 else ''
             ext = strip_md(cells[cols.index('Extent')]) if 'Extent' in cols and len(cells) == len(cols) else ''
             folders = re.findall(r'targets/([\w.-]+)/', cells[-1])
-            items.append(dict(ext=ext, name=name, outside=outside(folders), date=date.strip(), year=parse_year(date) or next((y for k, y in YEAR_BRACKET.items() if name.startswith(k)), None), cat=c, note=note,
+            items.append(dict(ext=ext, name=name, folders=folders, outside=outside(folders), date=date.strip(), year=parse_year(date) or next((y for k, y in YEAR_BRACKET.items() if name.startswith(k)), None), cat=c, note=note,
                               notehead=head2, when=when, whenhead=cols[2] if len(cols) >= 5 else '',
                               href=m.group(1) if m else ''))
     return items
