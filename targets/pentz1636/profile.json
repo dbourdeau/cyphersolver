@@ -1,0 +1,338 @@
+{
+ "schema_version": 1,
+ "target": "pentz1636",
+ "title": "Christian Pentz to Christian IV: Vienna 26 Mar 1636 (catalogue 2543) and Glückstadt c.1629-30, Zobel-family index-switched number cipher, key found from the ciphertext, both read in part below 65%",
+ "documents": [
+  {
+   "id": "vienna_1636-03-26",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, TKUA Speciel del, Kejseren, Gesandtskabsrelationer 1630-58, unit 260651, images 37 (right page) and 38 (left page); Arkivalieronline epid 19852211",
+   "date": "26 Mar / 5 Apr 1636",
+   "year": 1636,
+   "country": "Denmark",
+   "route": "Christian Pentz (with Gottlieb von Hagen), Danish envoy at the Emperor's court, Vienna -> Christian IV",
+   "places": {
+    "from": "Vienna",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on or beside the leaves (images 33-43 viewed, b106 and b110). Fridericia (1881) II p. 17 n. 1 cites Pentz and Hagen to Christian IV of 26 and 30 March in a Bremen series and paraphrases the talks; no decipherment printed."
+   },
+   "length": {
+    "tokens": 137,
+    "distinct": 43,
+    "unit": "mixed",
+    "measured": false,
+    "file": "transcriptions/vienna_1636-03-26.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline images 48703328 and 48703329, crops at 1.2x-2.2x",
+    "image_quality": "good",
+    "notes": "137 figure groups (letters, 11 index numbers 62/13, codes) counted by us, so measured is false. One reader (b106), not blind: the key was found while transcribing. Frozen 12 Nov 2026 04:11:09 UTC (md5 953fd409), decoded once. A code 165 on image 38 left, line 1, was missed and found later (b110); the file is not changed. Clear German is transcribed only next to the runs."
+   }
+  },
+  {
+   "id": "glueckstadt_c1630_img2",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, Tyske Kancelli, SHLK A IV 89, Relationer fra guvernør i Glückstadt Christian Pentz 1629-45, unit 274999, image 2 (recto; ref 52788770); Arkivalieronline epid 20017886; archive note 'Ny kgl. Saml. Fol. 616c'",
+   "date": "undated; c. early 1630 (proposed from content)",
+   "year": 1630,
+   "country": "Denmark",
+   "route": "Christian Pentz, governor of Glückstadt -> Christian IV ('Kön. Mayt. zu Dennemarck', address panel image 4)",
+   "places": {
+    "from": "Glückstadt",
+    "to": "unknown"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on images 2-4; none found in print (Bricka and Fridericia II searched). Not checked: Ny kgl. Saml. Fol. 616c."
+   },
+   "length": {
+    "tokens": 300,
+    "distinct": 31,
+    "unit": "mixed",
+    "measured": false,
+    "file": "transcriptions/glueckstadt_c1630_img2.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline image 52788770 at full size, line crops",
+    "image_quality": "fair",
+    "notes": "300 figure groups on the recto (288 in table-1 runs, 11 codes, 1 struck group), counted by us, so measured is false. One reader (b157), NOT blind: he had applied table 1 to line 1 in his head before the freeze (his log). Frozen 12 Nov 2026 13:30:55 UTC (md5 1e70795f), decoded once. Faint mirrored figures from the verso not transcribed; the verso (image 3) not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Index numbers select the number alphabet for the run that follows (62: table 1, a-i = 37..29, k-z = 14..28; 13: table 2, a-i = 38..46, n 61, o 60, r 57, s 56, u 54), with three-digit code numbers for names; the same family as targets/zobel1629, a different key.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 38,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 0,
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 16
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial",
+  "sibling_key": "targets/zobel1629 (Johan Zobel, Paris 1629): same index-switching family, different numbers. Not used to read these letters.",
+  "notes": "distinct_symbols = letter values in the decoder's tables (24 in table 1, 14 in table 2), not signs seen. nomenclator.entries 0 is a placeholder: no code is solved. unread_groups = distinct code numbers in the two transcriptions (9 Vienna, 7 Glückstadt; 165 not counted). homophones: none in key v1; a second value for o (28) is suspected in the Glückstadt letter, not applied. A later key state (v2, key_history/) reads 64, 12, 10 as index numbers from a gloss and adds a third table; not used."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Checked 13 Nov 2026 in local OCR: Fridericia, Danmarks ydre politiske Historie II (1881) p. 17 n. 1 cites Pentz and V. Hagen 'til Christ. IV, 26. og 30. Marts (Bremen Nr. 29, 30 a)' and paraphrases the Vienna talks: RISK on content for the 1636 letter; no decipherment seen. Bricka and Fridericia, Kong Christian IV's egenhændige Breve II and IV: Pentz hits read in context, no print of either letter. Fridericia I hit lines; Danske Magazin, Cryptiana, DECODE (earlier passes). Not checked: Ny kgl. Saml. Fol. 616c; the Bremen series cited; Kejseren 14 (unscanned); Hurter; Londorp. Priority not established.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney directed the work and set the rules (transcriptions frozen before one decode, shuffled-key controls at two seeds, every attempt recorded, figures per document, no claim without its check) and authorised filing below his own 65% line; Claude sessions (b106, b110, b157, b190) transcribed, found the key, decoded, counted and prepared this folder. No reading by a person without AI.",
+  "tools": [
+   "own Python decoder and tally (scripts/build.py, standard library; originals in scripts/original/)",
+   "own shuffled-key controls, German 4-gram models from Project Gutenberg texts, 5,000 keys at seeds 20261112 and 7 (scripts/shuffle_control.py)",
+   "Pillow crops",
+   "RFC 3161 and OpenTimestamps through the contributor's stamp script"
+  ],
+  "models": [
+   "Claude (Anthropic), sessions b106, b110, b157 of 12 Nov 2026 (model ids not recorded)",
+   "claude-opus-5-5 (b190, the session that prepared this folder, 13 Nov 2026)"
+  ],
+  "sessions": 4,
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Catalogue 2543 (sweep of 11 Nov 2026): unit 260651 images 37-38 viewed at full size; number cipher inside German clear text; no decipherment on or beside the leaves.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ],
+   "what": "While transcribing the Vienna letter (b106), runs after 62 gave 'einige reale dienste' with a rule alphabet (a-i 37 down to 29, k-z 14 up to 28); runs after 13 gave 'sache', 'Fridericus' with a second table (a-i 38 up). Key found before the freeze (declared). Transcription frozen 04:11:09 UTC, md5 953fd409.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Vienna decoded once: 33 units, 17 S, 15 E (13 codes, 2 declared), 1 N: strict 17/33 = 51.52%; letter words only 17/20 = 85.00%. Below 65%: read in part.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Vienna: 5,000 shuffled keys, German 4-gram: 0 reach the true score (true -2.4750; best -3.4441 at seed 20261112; -3.4529 at seed 7, added 13 Nov). Short text.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "b110: unit 260651 images 20-110 screened for more Pentz-family cipher: none fresh; a code 165 on image 38 left, line 1, missed by the frozen transcription: with it counted, 17/34 = 50.00%. Key v2 made from a gloss on Günther's letter (image 48); not applied here.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "b157: Pentz's Glückstadt relations (unit 274999) image 2, a whole page of figures 14-37 with codes; key v1 table 1 applied unchanged (reader not blind: had tried it on line 1 before the freeze; frozen 13:30:55 UTC, md5 1e70795f). Decoded once: 68 units, 25 S, 31 E, 12 N: strict 25/68 = 36.76%. German: Hamburg, admiral, Norway, provisions, constables, fortress.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "Glückstadt: 5,000 shuffled keys, German 4-gram (Simplicissimus): 0 reach the true score at both seeds (true -5.4767; best -6.7301 seed 20261112, -6.5759 seed 7).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "literature search",
+   "what": "Fridericia II p. 17 n. 1 cites Pentz and Hagen to Christian IV of 26 and 30 March 1636 (Bremen Nr. 29, 30 a) and paraphrases the talks: risk on content, no decipherment. Bricka and Fridericia II and IV searched: no print of either letter. Ny kgl. Saml. Fol. 616c not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Folder rebuild (b190): both decodes reproduced byte for byte from the frozen files; every figure reproduced by scripts/build.py; the filed shuffle lines reproduced; the b157 'code units 11' corrected to 10 codes plus one fragment.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The key was found from the ciphertext of the Vienna letter itself (rule alphabets fitted to word runs while transcribing, before the freeze), with no decipherment on or beside it; the clear German around the runs is context. The Glückstadt letter was then decoded with table 1 of that key unchanged. Neither text reaches the contributor's own 65% line.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.515,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "counts.txt (scripts/build.py), per document, never pooled: Vienna 17/33 = 51.52% (first pass, of record; 17/34 = 50.00% with the missed code 165); Glückstadt 25/68 = 36.76% (first pass, of record; 23/68 = 33.82% with doubtful figures as holes). fraction_read is the Vienna figure, the catalogued document.",
+  "codes_open": {
+   "open": 16,
+   "total": 16,
+   "tokens_open": 23
+  },
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-13",
+   "file": "controls/shuffle.txt",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys, German 4-gram, seeds 20261112 and 7: Vienna 0 and 0 (true -2.4750; best -3.4441, -3.4529); Glückstadt 0 and 0 (true -5.4767; best -6.7301, -6.5759). Short texts."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "catalogue 2543: Pentz-family key found from the Vienna ciphertext and both letters read in part, with Claude; the Glückstadt letter (unit 274999) found and brought in",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 2543 (Rigsarkivet TKUA sweep, 11 Nov 2026): the Vienna leaves and their images",
+    "date": "2026-11-11"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Code numbers: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165 (missed by the transcription); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767",
+    "blocker": "open-codes",
+    "detail": "no code list found; some Vienna low numbers may be index numbers (key v2), not codes"
+   },
+   {
+    "item": "Suspected second value for o (figure 28) in the Glückstadt letter",
+    "blocker": "no-key-material",
+    "detail": "three words (andwzrt, bekzme, anherkzmen); not applied to any decode or count"
+   },
+   {
+    "item": "Glückstadt verso (image 3)",
+    "blocker": "not-attempted",
+    "detail": "the letter continues there; not transcribed"
+   },
+   {
+    "item": "No second transcription of either letter; neither reader blind",
+    "blocker": "not-attempted",
+    "detail": "Vienna: key found while transcribing; Glückstadt: table 1 tried on line 1 before the freeze"
+   },
+   {
+    "item": "Vienna clear text",
+    "blocker": "not-attempted",
+    "detail": "transcribed only next to the cipher runs; the reading has [...] between them"
+   },
+   {
+    "item": "Ny kgl. Saml. Fol. 616c; Fridericia's Bremen Nr. 29, 30 a; TKUA Kejseren 14",
+    "blocker": "needs-physical-access",
+    "detail": "may hold copies or decipherments; priority not established"
+   },
+   {
+    "item": "Short texts",
+    "blocker": "too-short",
+    "detail": "Vienna 20 letter words; the shuffle test is weak on its own"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "vienna_1636-03-26",
+    "label": "Christian Pentz to Christian IV, Vienna, 26 Mar / 5 Apr 1636",
+    "transcription": [
+     "transcriptions/vienna_1636-03-26.txt"
+    ],
+    "decryption": [
+     "decryptions/vienna_1636-03-26.txt"
+    ],
+    "reading": "readings/vienna_1636-03-26.md",
+    "translation": "translations/vienna_1636-03-26.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.515,
+    "summary": "Pentz, sent to the Emperor in early 1636 to offer Christian IV's mediation and press Duke Frederik's claim to Bremen, writes in cipher that he has not yet touched on the [168] matter, that real services will be hard to obtain, and that he wishes 'Fridericus' were with the King again; the cipher words sit in clear German that is transcribed only around them.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), for Malcolm McBratney: a model reading, not a person, and not independent (sessions of the same project). The reviewer's own record should replace it.",
+     "date": "2026-11-13",
+     "note": "The cipher words fit their clear clauses (einige reale dienste swer zu erhalten sein; Fridericus wider bei euer Mt. were); thirteen codes unread; the clear text is only partly transcribed."
+    },
+    "note": "read_share is the strict first-pass share: 17 of 33 units (51.52%); 17/34 with the missed code 165."
+   },
+   {
+    "doc": "glueckstadt_c1630_img2",
+    "label": "Christian Pentz (Glückstadt) to Christian IV, c.1629-30, image 2 recto",
+    "transcription": [
+     "transcriptions/glueckstadt_c1630_img2.txt"
+    ],
+    "decryption": [
+     "decryptions/glueckstadt_c1630_img2.txt"
+    ],
+    "reading": "readings/glueckstadt_c1630_img2.md",
+    "translation": "translations/glueckstadt_c1630_img2.md",
+    "language": "de",
+    "state": "decoded, not read",
+    "read_share": 0.368,
+    "summary": "Pentz as governor of Glückstadt writes to the King about a letter to His Majesty, Hamburg, men come in, and asks for an admiral, timber from Norway, provisions, gunners and fireworkers for the fortress; probably early 1630, when the Elbe dispute with Hamburg led to a fleet under an admiral. Holes in most sentences.",
+    "note": "read_share is the strict first-pass share: 25 of 68 units (36.76%). Marked 'decoded, not read' because most sentences have holes; the reviewer may judge otherwise."
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ],
+  "notes": "No docs/_validate.py run (repository scripts not run by the contributor). Figures per document; the two letters are not pooled. Key v2 (key_history/KEY_pentz_v2_b110.txt) is filed for the record and not used."
+ }
+}
