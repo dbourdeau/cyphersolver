@@ -1,0 +1,20 @@
+# New-sources sweep, 13 Nov 2026 (cloud session) - 0 candidate rows
+
+`candidates.json` is `[]`. Every source tried was already swept (the COVERAGE.md "never swept" list is out of date) or gave only noise. Scripts are in this folder; downloads are in scratch.
+
+## Routes and results
+| Source | Route from this network | Terms / hits | Outcome |
+|---|---|---|---|
+| BSB / MDZ | `www.digitale-sammlungen.de/api/search?query=T&handler=simple-all|simple-metadata&filter=type_manufact:"handmade"` works with curl (`bsb_search.py`). simple-all searches HTR text of manuscripts. | Chiffre 64, chiffres 39, cifra 352, cipher 117, nomenclator 39, Geheimschrift 10; metadata only: Ziffern 155, en chiffre 502, entziffert 10, others 0-3 | Noise (HTR gibberish, library catalogues, Camerariana Clm 103xx-104xx already in catalogue/leads). Already swept 9 Nov (`sweep_2026-11_digital_ms_libraries`). |
+| Polona | POST `polona.pl/api/search-service/search/simple?query=T&page=0&pageSize=48&sort=RELEVANCE`, body `{"keywordFilters":{"copyright":["false"],"category":["Rękopisy"]},"temporalFilters":null}`; record at `/api/search-service/search/<objectId>` (`polona.py`, `polona_ms*.py`). Metadata only, no OCR on manuscripts; multi-word queries are OR. | szyfr 0, szyfrem 1, kryptogram 11 (all Górecki music), cyfra/cyfry/cyframi 10 each (cover numerals, music), szyfrowane 0 | The one real cipher, BN Rps 6537 I (priest's diary, Podolia c. 1864): half a page in numeral cipher with the decipherment on the attached leaf, so read. Nothing else. Already done in `polish_archives`. |
+| Internet Culturale | Firewall CAPTCHA page to curl | - | Blocked, not circumvented. |
+| e-rara, e-manuscripta, SLUB, Heidelberg, Trove, Smithsonian Transcription, NatLib NZ, Cervantes Virtual, BNE | Bot challenge / 403 | - | Blocked. |
+| Memòria Digital de Catalunya (CONTENTdm API `mdc.csuc.cat/digital/api/search/searchterm/T/maxRecords/100/page/N`) | Works (`mdc.py`) | xifra 227, xifrat 36, cifra 626, cifrado 59, cifrada 33, criptograma 1 | All noise (printed OCR "cifra" = figure; librarians' diaries; Maragall/Guimerà letters on "xifra" = number). New to the repo, but nothing in it. |
+| OPenn | `Data/<repo>_contents.csv` titles only | - | No cipher description searchable; not pursued. |
+| Archive.org full-text API (`be-api.us.archive.org/fts/v1/search`, `ia_fts.py`) | Works | Foreign "undeciphered" phrases: chiffre non déchiffré 11, cifra non decifrata 1, ikke dechiffreret 5 ... | Only footnotes on single words (Desjardins, Négociations avec la Toscane; Kervyn de Lettenhove), plus BnF fr. 4715 (already in repo) and Salazar y Castro (`ia_pass2_c`). |
+
+## Best remaining route (not finished)
+Omont's printed *Catalogue général des manuscrits français* (IA ids `p1cataloguegnr01..05bibluoft`, `p2catalogue0*`, `p4catalogue0*`, `cataloguemanfran01..04bibluoft`, `CatalogueBnfNaf*`, `CatalogueGeneralDesManuscritsAncStGermFr3`; downloaded to scratch, `bnfcat_scan.py`, `omont_map.py`) marks cipher pieces as "Lettre, avec chiffre" (no decipherment mentioned) versus "avec chiffre et déchiffrement". About 150 windows in the Ancien fonds volumes are "avec chiffre" without decipherment, concentrated in:
+- the Nevers papers, BnF fr. 4681-4730 (OCR-garbled headings; e.g. 4687 Marguerite Paleologue 1562-64, 4691, 4697, 4701, 4712; 1593-95 letters of Nevers to Revol "avec chiffre" in the volumes of those years). Tomokiyo's nevers.htm covers fr. 4702, 4712, 4715 only; the 1593 symbol cipher (his "no. 60") is a known key.
+- Richelieu to Rancé 1629-30 (fr. 3828/3835; already lead 1577), Henri II to Du Bellay 1548, Sabran 1633 (fr. 4134, solved), Hotman de Villiers (Clèves-Juliers, "Chiffre pour le S. Hoteman").
+Blocker: I found no route to the Gallica ark for a given Français number from this network (gallica 403, BnF SRU has no manuscripts, archivesetmanuscrits search is JS). Earlier sweeps got arks from Gallica SRU (`gallica_sweep/ark_shelfmarks.json`, 32 volumes). With arks, openapi.bnf.fr IIIF works and the leaves can be vetted.

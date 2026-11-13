@@ -6,7 +6,7 @@ sf (seq_a, reference_a, date_a, date_d, inst_a), f_date, f_inst, f_type, f_datat
 import re, sys, time, html, json, urllib.request, urllib.parse
 
 BASE = "https://www.jacar.archives.go.jp"
-UA = {"User-Agent": "Mozilla/5.0 (cyphersolver research; dnbourdeau@gmail.com)"}
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) research-client"}
 
 
 def get(url, tries=5):
