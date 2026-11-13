@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "BNE Digital (CC BY 4.0; one crop on the site write-up)",
     "image_quality": "good",
-    "notes": "Re-read on the image twice; 16 places settled by a blind shape sheet answered by Brice Dudout (5 Nov), then two more blind sheets (FL2-C, 15 questions; FS1, 6 questions; 11 Nov): four signs re-read (1v.05 for, 1v.10 4, 1v.14 88, 1v.18 84). Marked signs (barred 4, q with a stroke below, x with two dots below, and those seen on FL2-C) have no value."
+    "notes": "Re-read on the image twice; 16 places settled by a blind shape sheet answered by Brice Dudout (5 Nov), then two more blind sheets (FL2-C, 15 questions; FS1, 6 questions; 11 Nov): four signs re-read (1v.05 for, 1v.10 4, 1v.14 88, 1v.18 84). Marked signs (barred 4, q with a stroke below, x with two dots below, and those seen on FL2-C) have no value. 13 Nov 2026: the raised sign of 34ʳ (= SR) seen on the image on both 34 of the letter (1r.12, 1v.17), transcribed plain 34 before."
    }
   }
  ],
@@ -84,7 +84,7 @@
   ],
   "attack": "known plaintext",
   "first_date": "2026-11-02",
-  "last_date": "2026-11-12",
+  "last_date": "2026-11-13",
   "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement per held-out passage, thresholds fixed in advance) and answered the three blind shape sheets (shapes only; M16, FL2-C, FS1). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the letter.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
@@ -153,6 +153,15 @@
    "kind": "verification",
    "what": "Integration of PR #417: the contributor's counts reproduce from the word table (421 = 337 / 47 / 31 / 6; main 425 = 338 / 37 / 29 / 21); the table covers the 975 tokens in order; 4 tokens of the transcription changed (the FS1 re-readings); a second decoder from key.tsv matches decryption.txt on 423 of 423 rows. Recount by the README read bar: 349/421 = 82.9% (code values placed by the sense, the text-only run's proposals and the xe words reclassed against the M16 pre-registration are not counted; 384/421 = 91.2% is the contributor's count). Order test: tau recomputed on key.tsv 0.74 on 45 code words (0.93 without the 8 sense-placed ones) against at most 0.31-0.34 for controls, so the nomenclator is alphabetical, but the contributor's exact figures (0.750 vs 0.463 on 37 values; 14 of 16 in the window) are not reproducible, the list and script not being in the repository. Two proposals do not fit strict order (127 DIFICULTAD, _52_ CRISTIAN); the note on 264 HONRA cites 267 INDIAS, which is not in key.tsv. key.tsv left as the frozen C04 with a header listing where the reading departs (_30_, _35_, bo, +, sa, 141). Images and sheets not seen (BNE Digital 403).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Every cipher passage of BNE MSS/18428 with a contemporary clear aligned with it (clear copies v33 g and v39 d - v40 g; margin clears v5 d, v6 g, v6 d, v7 d, v41 d), learning only, no measurement (no held-out passage left): 39 = BIEN, 4‡ = g, 60 = i, _49_ = BUEN, _56_ = CAPITULA, 225 = FUERTE, 308 = NUESTRO and 308 34ʳ = nuestro señor held by clears; the two 34 of the letter re-read 34ʳ on the image. 421 words: 347 certain, 42 probable, 28 restored, 4 unresolved (389 = 92.4%); by the README read bar 363/421 = 86.2% (contributor's recount). Key file unchanged (C04).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -164,9 +173,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.829,
+  "fraction_read": 0.862,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Word table of reading.md, which covers the transcription in order: 421 words, 337 certain, 47 probable, 31 restored, 6 unresolved (11 Nov 2026). By the README read bar (integration recount, 12 Nov 2026) 349/421 = 82.9%: counted are 336 certain words (all but 'casa', code _60_ placed by the sense), 9 probable words read with the key through a spelling or a doubtful token, and the 4 words re-read blind on sheet FS1; not counted are the unresolved and restored words, the 30 probable words that are code values placed by the sense (24 from 5 Nov, 6 proposed by the text-only model run from sense and alphabetical order), 'ofreciéndole' (same run, one sign off) and the 3 xe words the M16 pre-registration kept restored. Same rule on the 5 Nov table: 348/425 = 81.9%. The contributor's counts: certain + probable 384/421 = 91.2% (375/425 = 88.2% on 5 Nov); his stricter count 378/421 = 89.8%. Without the four FS1 words, whose sheet cannot exclude an answer by position: 345/421 = 81.9%.",
+  "fraction_read_source": "Word table of reading.md, which covers the transcription in order: 421 words, 347 certain, 42 probable, 28 restored, 4 unresolved (13 Nov 2026). By the README read bar, the rule of the integration recount of 12 Nov 2026 applied by the contributor to the table of 13 Nov: 363/421 = 86.2% (349 at the integration + 14 words now held by contemporary clears of MSS/18428 or re-read: bien, viene, nuestro señor twice = 4 words, buena, buenos, capitulaciones twice, fuertes, grande, hizo, havia; see NOTES.md, section 13 Nov 2026). Still not counted: the unresolved and restored words, the 21 probable words that are code values placed by the sense, 'ofreciéndole' and the 3 xe words. The contributor's count of certain + probable: 389/421 = 92.4% (384 on 11 Nov, 375/425 on 5 Nov).",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -189,13 +198,13 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by his protocol, two of four measurements failed), letter read in part and translated (PR #279); two values from the clear of MSS/18428 fol. 31, code-value proposals and the blind shape sheets FL2-C and FS1, which he answered (PR #417, https://github.com/dbourdeau/cyphersolver/pull/417). By the project's read bar 349/421 = 82.9%; 384/421 = 91.2% on his count",
-    "date": "2026-11-11"
+    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by his protocol, two of four measurements failed), letter read in part and translated (PR #279); two values from the clear of MSS/18428 fol. 31, code-value proposals and the blind shape sheets FL2-C and FS1, which he answered (PR #417, https://github.com/dbourdeau/cyphersolver/pull/417). By the project's read bar 349/421 = 82.9%; 384/421 = 91.2% on his count; 13 Nov 2026: the other clears of MSS/18428 aligned, 92.4% on his count, 86.2% by the read bar (his recount)",
+    "date": "2026-11-13"
    },
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "the margin clears of the Duke of Feria's letters to Coloma (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key; the clear copy of MSS/18428 fol. 31 (141 = ello, 318 = oficio)",
+    "note": "the margin clears of the Duke of Feria's letters to Coloma (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key; the clear copy of MSS/18428 fol. 31 (141 = ello, 318 = oficio); the clear copies v33 g and v39 d - v40 g and the margin clears of v5 d - v7 d of MSS/18428 (39 = bien, 4‡ = g, 60 = i, 49 BUEN, 56 CAPITULA, 225 FUERTE, 308 NUESTRO)",
     "date": "1622"
    },
    {
@@ -207,16 +216,16 @@
   ],
   "gaps": [
    {
-    "item": "6 unresolved words: code 39 (two places), bo, code 2, [ge]ia, z cer zan",
+    "item": "4 unresolved words: bo, code 2, [ge]ia, z cer zan (39 = BIEN since 13 Nov)",
     "blocker": "open-codes"
    },
    {
-    "item": "Marked signs 4‡, q̲, x̤ and those seen on FL2-C (no value); 31 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53, K, 68, 81, 139, 317, R, 62, L/54/y)",
+    "item": "Marked signs q̲, x̤ and those seen on FL2-C (no value; 4‡ = g since 13 Nov); 28 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53, K, 68, 81, 139, 317, R, 62, L/54/y)",
     "blocker": "open-codes",
-    "detail": "a new letter of the system with a contemporary clear is needed"
+    "detail": "none of these codes occurs in the clears of RES/227/120-129 or MSS/18428 (all aligned by 13 Nov 2026); a new letter of the system with a contemporary clear is needed"
    },
    {
-    "item": "30 probable words that are code values placed by the sense (caso, empresa, nuestro señor, Reina, Duque, estado, buen-, govierna, capitula-, confianza, fuerte; 48 TRATA, _52_ CRISTIAN, _30_ ALLA)",
+    "item": "21 probable words that are code values placed by the sense (caso, empresa, Reina, Duque, estado, govierna, confianza; 48 TRATA, _52_ CRISTIAN, _30_ ALLA)",
     "blocker": "open-codes",
     "detail": "not counted as read; 127 DIFICULTAD and _52_ CRISTIAN do not fit strict alphabetical order; a contemporary clear carrying these codes would settle them"
    },
@@ -236,22 +245,22 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.829,
+    "read_share": 0.862,
     "summary": "Louis XIII's proposals to the Duke of Savoy (Valtellina, help in case of rupture, Geneva), the French answer and the Duke's return from Avignon; Mirabel's talk with the Queen Mother on the deposit of the Valtellina forts, a Lorraine garrison and the capitulations of Aranjuez, the Catholic religion to be kept there; Richelieu, not of the King's Council, governs the Queen Mother.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout); re-read at integration for the project",
-     "date": "2026-11-12",
-     "note": "Read again as sentences 11 Nov 2026 by one AI reader after the blind sheets FL2-C and FS1 (Brice Dudout answered the shape sheets only; FS1 position bias declared, answers confirmed by shape). The letter construes as Spanish sentences throughout, with gaps: 337 certain, 47 probable, 31 restored, 6 unresolved of 421 words (91.2%), so read in part. Most new code values are machine proposals by sense and key order (restored at one place). Integration of PR #417 (12 Nov 2026): the normalised text read clause by clause against decryption.txt and translation.md; it construes where unmarked and the translation follows; 'Cristianos no resolvió' gives no clear sense. By the read bar 349/421 = 82.9% (code values placed by the sense not counted); grade kept at B."
+     "date": "2026-11-13",
+     "note": "Read again as sentences 11 Nov 2026 by one AI reader after the blind sheets FL2-C and FS1 (Brice Dudout answered the shape sheets only; FS1 position bias declared, answers confirmed by shape). The letter construes as Spanish sentences throughout, with gaps: 337 certain, 47 probable, 31 restored, 6 unresolved of 421 words (91.2%), so read in part. Most new code values are machine proposals by sense and key order (restored at one place). Integration of PR #417 (12 Nov 2026): the normalised text read clause by clause against decryption.txt and translation.md; it construes where unmarked and the translation follows; 'Cristianos no resolvió' gives no clear sense. By the read bar 349/421 = 82.9% (code values placed by the sense not counted); grade kept at B. 13 Nov 2026 (contributor): the normalised text re-read after the changes from the clears of MSS/18428 ('o bien', 'viene', 'hizo grande instancia', 'el Rey nuestro señor, en que esperaba', 'nuestro señor había dudado'); 347 certain, 42 probable, 28 restored, 4 unresolved (92.4%); still read in part; grade B kept."
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "New key for the Mirabel/Feria cipher of 1622 (key.tsv, CC BY 4.0), partial by our protocol. codes_open counts the underlined and three-digit code tokens of the letter (40 distinct): 39 (two places) and 2 have no value at all; many others have a value by the sense only (see gaps).",
+  "notes": "New key for the Mirabel/Feria cipher of 1622 (key.tsv, CC BY 4.0), partial by our protocol. codes_open counts the underlined and three-digit code tokens of the letter (40 distinct): 2 has no value at all (39 = BIEN since 13 Nov 2026); many others have a value by the sense only (see gaps).",
   "codes_open": {
-   "open": 2,
+   "open": 1,
    "total": 40,
-   "tokens_open": 3
+   "tokens_open": 1
   }
  }
 }

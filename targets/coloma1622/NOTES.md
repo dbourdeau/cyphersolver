@@ -1,6 +1,6 @@
 # coloma1622: the Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622 (BNE RES/227/122; catalogue 1601)
 
-Status: read in part (Brice Dudout, 11 Nov 2026; 349 of 421 cipher words = 82.9% by the README read bar, which leaves out unresolved and restored words and code values given by the sense; the word table has 337 certain, 47 probable, 31 restored, 6 unresolved, and the contributor's count of certain + probable is 384 = 91.2%; key partial by the contributor's protocol, two of four measurements failed: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears). See the integration check of 12 Nov 2026.
+Status: read in part (Brice Dudout, 13 Nov 2026; 349 of 421 cipher words = 82.9% by the README read bar at the integration of 12 Nov, 363/421 = 86.2% by the same rule on the table of 13 Nov (contributor's recount, to be checked); the word table has 347 certain, 42 probable, 28 restored, 4 unresolved, and the contributor's count of certain + probable is 389 = 92.4%; key partial by the contributor's protocol, two of four measurements failed: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears). See the integration check of 12 Nov 2026.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents (and, on 11 Nov 2026, one text-only Claude Fable 5.2 run). Catalogue entry 1601 (Chrome pass, BNE Digital).
 The key comes from the Duke of Feria's letters to Coloma (lead 1602), whose cipher passages carry a contemporary clear in the
@@ -37,7 +37,8 @@ Thresholds fixed in advance: >= 0.85 and >= 0.30 above the best control. **Parti
 | version | words | certain | probable | restored | unresolved | certain + probable | with restored |
 |---|---|---|---|---|---|---|---|
 | 5 Nov 2026 (PR #279) | 425 | 338 | 37 | 29 | 21 | 375 = 88.2% | 404 = 95.1% |
-| 11 Nov 2026 (this version) | 421 | 337 | 47 | 31 | 6 | 384 = 91.2% | 415 = 98.6% |
+| 11 Nov 2026 (PR #417) | 421 | 337 | 47 | 31 | 6 | 384 = 91.2% | 415 = 98.6% |
+| 13 Nov 2026 (this version) | 421 | 347 | 42 | 28 | 4 | 389 = 92.4% | 417 = 99.0% |
 
 The last two columns are the contributor's count. **By the README read bar the share is 349/421 = 82.9%** (348/425 = 81.9% on
 the 5 Nov version): 34 of the 47 probable words and one certain word are not counted, as set out in the integration check of
@@ -88,11 +89,51 @@ describes Richelieu: "although he is not of this King's Council, it is he who go
 
 ## Remaining gaps
 
-- 6 unresolved words (39 twice, bo, 2, "[ge]ia", "z cer zan") - blocker: open-codes; one or two places each, no clear in the training letters.
-- 30 probable words that are code values placed by the sense (caso, casos, empresa, nuestro señor, Reina, Duque, estado, buena, buenos, govierna, capitulaciones, confianza, fuertes; and the 11 Nov proposals trata, trataba, Cristianísimo, cristianos, allanar, allanado) - blocker: open-codes; not counted as read; a contemporary clear with these codes would settle them.
+- 4 unresolved words (bo, code 2, "[ge]ia", "z cer zan") - blocker: open-codes; one place each, in no clear we have (39 resolved 13 Nov).
+- 21 probable words that are code values placed by the sense (caso, casos, empresa, Reina, Duque, estado, govierna, confianza; and the 11 Nov proposals trata, trataba, Cristianísimo, cristianos, allanar, allanado; nuestro señor, buena, buenos, capitulaciones and fuertes are held by clears since 13 Nov) - blocker: open-codes; not counted as read; a contemporary clear with these codes would settle them.
 - the BNE images and the clear of MSS/18428 fol. 31 were not seen by the project at this integration - blocker: needs-physical-access; BNE Digital answers 403 (Cloudflare) to a plain fetch and no browser session was available on 12 Nov 2026; the blind sheets, their rules, maps and answers are not in the repository, so the hashes and "rule hashed first" are by the contributor's record.
-- 31 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53, K, 68, 81, 139, 317, R, 62, L/54/y) - blocker: open-codes; a new letter of the same system with a contemporary clear is needed (MSS/18428 has some).
-- The marked signs 4‡, q̲, x̤ and those seen on FL2-C (barred 0, xo with a v above, o with a cross, "fov") - blocker: open-codes; no value in any key or clear we have.
+- 28 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53 twice, K, 68, 81, 139, 317, R, 62, L/54/y) - blocker: open-codes; none of these codes occurs in the clears of RES/227/120-129 or MSS/18428 (all seven cipher letters of MSS/18428 now aligned, 13 Nov); a new letter of the system with a contemporary clear is needed.
+- The marked signs q̲, x̤ and those seen on FL2-C (4‡ = g since 13 Nov) (barred 0, xo with a v above, o with a cross, "fov") - blocker: open-codes; no value in any key or clear we have.
+
+## 13 Nov 2026: the other contemporary clears of MSS/18428
+
+Every cipher passage of BNE MSS/18428 that carries a contemporary clear was aligned with it (learning only: the volume had been
+seen at the inventory of 9 Nov, so no held-out passage is left in it and nothing was measured; the key file stays C04). The
+values below are read directly on a clear of the time, the same status as 141 = ello and 318 = oficio (fol. 31). Views are the
+BNE Digital image numbers; the scans are not in the repository.
+
+| clear (MSS/18428) | cipher | clear | value |
+|---|---|---|---|
+| copy v39 d - v40 g of the letter of 17 Mar 1622 | xo chu _140_ zen fi x̣o **_39_** fi Δ fo xo Δ | no fuera pequeño **bien** que esto nos | **_39_ = BIEN** |
+| same | car x̣ **_49_ 30** sor fri 93 | (si allaran) **buena** acogida | **_49_ = BUEN** |
+| same | 78 f **_56_** sir 62 x Δ for as n cir m | las **capitulaciones** de Madrid | **_56_ = CAPITULA** |
+| same | 78 98 69 xar as f **225** san car 78 | la causa mas **fuerte** para la | **225 = FUERTE** |
+| same; margin v6 g | fi **308** Δ _136_ ; 94 fo 96 f **308** f ; se 84 fa 8 **308** f | porque **nuestros** enemigos ; de todos **nuestros** emulos ; el estar **nuestras** armas | **308 = NUESTRO** |
+| copy v33 g of the letter v34 d | 62 g cer xir 96 se tu **308 34ʳ** fi xo car fi chi 98 car | ofrecido el Rey **nuestro S.r** que no ratificara | 308 34ʳ = nuestro señor (34ʳ = SR, as in key C04) |
+| margin v6 d | sor tt 81 f **4‡** c̣ir xor xe Δ | con los **G**risones | **4‡ = g** |
+| margin v5 d | 55 tt **y** c̣ir xor xe Δ | en **G**risones | y = g (homophone) |
+| margin v7 d | xer 66 **60** 40 | se ve**i**a | **60 = i** |
+| margins v39 g, v6 g, v7 d; v5 d, v34 d | 66 **sa** fo 80 xa ; **sa** 98 8 ; **sa** _136_ ; f fi **+** 81 ; fe x̣ fi **+** | Valtolina ; alçar ; al enemigo ; aqui lo ; que aqui | sa = al ; + = i after qu |
+
+Also confirmed: _141_ ELLO (three more places), 202 ESPAÑA, 213 FRANCIA, 221 FUERZA, 246 GENTE, 260 HECHO, 261 HEREGE, 280 ITALIA,
+_136_ ENEMIGO, _89_ CUYDADO, _100_ DIOS, _113_ DUQUE DE FERIA (three places), 319 OTRO, ar = ma, fi = que.
+
+Effect on the letter (`reading.md`): 1r.06 "o **bien** en caso de rompimiento" (unresolved -> certain); 1r.18 "el Cardenal _39_ 55"
+= BIEN + e = "**viene**" (unresolved -> probable: the code used for its letters, as _60_ CAS- and _141_ d-ELLO-s); 1r.07 "{hizo}
+{grande} instancia" (restored -> probable: 60 = i and 4‡ = g held by clears; the barred 4 of this letter is the "4+" seen blind
+on sheet M16, and the shapes were compared by the agent, not blind). **The two 34 of the letter carry a raised sign** (seen on the
+image, 13 Nov; transcribed plain 34 before) and both follow "se tu 308" = el Rey nuestro, as in v34 d: so 1r.12 reads "el Rey
+nuestro señor, **en** que esperaba" (the certain word "bien" becomes "en") and 1v.17 "el Rey nuestro señor {había} dudado"
+(restored "havia", mechanical "biavia", becomes a-ui-a = avia, probable). Words held by these clears move from probable to
+certain: nuestro señor (twice, 4 words), buena, buenos, capitulaciones (twice), fuertes. Count: 421 words = 347 certain,
+42 probable, 28 restored, 4 unresolved; 389 = 92.4% (99.0% with restored). The same rule as the integration check of 12 Nov
+(the README read bar) gives 363/421 = 86.2% (349 + 14: bien, viene, nuestro señor x2 = 4 words, buena, buenos, capitulaciones
+x2, fuertes, grande, hizo, havia); this recount is the contributor's.
+
+Still under 95% (400 words needed, 11 more). Nothing in the clears of RES/227/120-129 or MSS/18428 for: _53_ (twice), 295, 2,
+bo, ge, "z cer zan", 127, _40_, 264, _K_, _R_, _68_, _81_, _139_, 317, _35_, _62_, L/54/y, 48, _52_, _30_, _60_, _123_, _A_/_L_,
+204, 250, _79_, _138_, q̲, x̤. The one cipher letter of the system in MSS/18428 without a clear (v13 d - v15 g, about 35-40 lines)
+cannot settle a code value; it is the only passage of the system never decoded, so it is kept for a future lexical test.
 
 ## Integration check (12 Nov 2026)
 
@@ -156,7 +197,7 @@ On integration of PR #417 the project recounted the files; an independent verifi
 - [x] known-keys: no published key of this system found (DECODE, Cryptiana, Lasry); the Gondomar ciphers (Rodríguez Gómez) noted, not checked.
 - [x] print: three web searches (the third on 5 Nov 2026: Mirabel to Coloma, Lyon 1622) found no edition or study of this letter; Guill Ortega 2007 (Coloma biography), Herrero García 2023 and the Codoin index not read, named as the next print sources.
 - [x] key-rebuild: CLE_C02 -> C03 -> C04 extended from the clears of RES/227/128-129.
-- [x] retry: the whole letter re-read with C04 values (v4); two words moved after the shape sheet M16; 11 Nov: two more blind sheets (FL2-C, FS1) on the image, and the code values re-examined against the order of the nomenclator (`BLIND-REREADING.md`); 12 Nov: recount by the read bar at integration, 349/421 = 82.9%.
+- [x] retry: the whole letter re-read with C04 values (v4); two words moved after the shape sheet M16; 11 Nov: two more blind sheets (FL2-C, FS1) on the image, and the code values re-examined against the order of the nomenclator (`BLIND-REREADING.md`); 12 Nov: recount by the read bar at integration, 349/421 = 82.9%; 13 Nov: every cipher passage of MSS/18428 that has a contemporary clear aligned (v5 - v7 margins, the clear copies v33 g and v39 d - v40 g, v41 margins), see the section "13 Nov 2026".
 
 ## Prior work
 
@@ -168,7 +209,7 @@ in this target. Not read: Guill Ortega 2007, Herrero García 2023 (see deviation
 ## Credits
 
 - `dudout`: transcription, key, the tests, the reading, the blind sheets (Brice Dudout answered them).
-- `contemporary`: the margin clears of Feria's letters (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key; the clear copy of MSS/18428 fol. 31 (141 = ello, 318 = oficio).
+- `contemporary`: the margin clears of Feria's letters (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key; the clear copy of MSS/18428 fol. 31 (141 = ello, 318 = oficio); the clear copies v33 g and v39 d - v40 g and the margin clears of v5 d - v7 d of MSS/18428 (39 = bien, 4‡ = g, 60 = i, 49 BUEN, 56 CAPITULA, 225 FUERTE, 308 NUESTRO, 34ʳ SR).
 - `bourdeau`: pointer (catalogue 1601, leads 1602 and 1271).
 
 ## Files
