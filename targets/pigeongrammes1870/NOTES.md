@@ -352,6 +352,33 @@ repo, so the errors differ slightly) and against the telegram's own structure:
 Does it help? Three whole-word values (et, messieurs, monsieur) and the paragraph structure (three addressees, 0109 as paragraph end) are added; no new passage reads. Asked
 of Pillon: whether a Pierret (or Pieret, Piet ...) and a third official L-V-E appear in his sources next to Mercadier.
 
+## Working reading of the inspectors' telegram (13 Nov 2026, later): about 58% of the groups have a value
+Dan asked to keep going after the Pillon test. Method: read the telegram by context, using the code as a PAGED alphabetical book.
+- Structure: a group PPLL is page PP (01-99) and line LL (01-30; only 5 of 754 groups have LL > 30, slips or misreads), so about 2,970 entries; rank = (PP-1)*30+LL.
+  Single letters open their sections (c 1121 before ca 1122; d 2112; e 2729; f 3616; h 4113; k 4906; l 4914; n 5901; o 6019; r 7703; s 8328; t 9113; v 9612; y 9915).
+  Pages 01-03 and 05, low lines, hold marker groups (beacons 0101/0201/0301/0501/0102/0103, paragraph end 0109, and endings such as 0311 past participle, 0312 -ant,
+  0212 adjective/-aire/-ant, 0211 plural, 0303 noun ending, 0305/0307 imperfect): like R1's balises. Their exact meanings are NOT settled.
+- interval_cands.py lists, for a group, the French words that sort between the nearest known values (wordfreq list); anchors_inspecteurs.json holds the values; the
+  machine gloss is inspecteurs_2nov_gloss.txt and the sentence reading, with holes and an English version, is inspecteurs_2nov_reading.md.
+- Values: 197 groups (was 23). Coverage: 438 of 754 group occurrences have a value (58%), 193 are marker groups (26%), 123 are unread (16%).
+- Order check: sorted by rank, the 197 readings are in alphabetical order with 1 inversion (5511 messieurs before 5512 ?mesures); a random assignment gives 98 on average
+  (minimum 83 in 2,000 shuffles). CAVEAT: the values were proposed knowing roughly where each group sits, so this test is partly circular; it shows the readings are
+  mutually consistent at line level, not that each is right. Three first guesses failed it and were withdrawn (1516 combattre, 7126 preciser, 5825 mon).
+- Independent support comes from pieces that recur in different words: 0503 air (l'air d' / circul-air-e), 0607 an (Je-an / an-gl..), 4009 ger (Saint-Ger-main twice),
+  2011 cot (cot-e / cot-on), 5006 le (col-le, fil-le, le-t-h-ar-gi-e, article), 2703 donner (pour donner / etant donnees), 6129 on (pigeons, ballon, coton), 1216 car and
+  6816 pi (Pi-car-d twice), 2112 d (Picard, Herold, d'y), 7508 pru (Prussien twice), 8328 s, 3316 er, 0814 au (Rousse-au, Pont-Au-demer, au).
+- Names and places read: rue Jean-Jacques Rousseau (the Paris post office), Picard, Saint-Germain-en-Laye, Pont-Audemer, Prussiens, Madame Herold (H?-RO-L-D),
+  Jules [Fa]vre (needs 0617 to be a slip for 3617; not checked on the scan), Trochu. Content: Steenackers tells his Paris colleagues what line to take towards the post
+  office (services rendered, the capital not cut off, balloon and pigeon post, the pigeon service to be extended to private messages, the decree uniting posts and
+  telegraphs, the decree ending the post's monopoly on carrying newspapers), a report of 20 Prussians leaving Saint-Germain daily with pickaxes, advice on coating
+  cotton balloons with strong glue, then a paragraph of personal news for each of the three addressees.
+- Digit slips assumed (written -> meant), all 3/5, 0/6 or 5/8 type: 8312->8512 (se, in Rousseau), 3304->5504 (mer, Pont-Audemer), 3227->5227 (main), 0816->6816 (Picard),
+  1017->1617 (colle), 6519->6819, 2534->2514, 5005->5006, 3121->5121, 0129->6129, 6180->6120. To check on the scan.
+- Pillon's items after this pass: 5121 in ballon is not L (l = 4914); it sorts between lie 5102 and lui 5209 (ll or lo). VIN-OY: 6124 sorts below on, so "oi" (phonetic)
+  is possible, still unconfirmed. DUC-ROT: 7802 = re (relie, renseignement), so 2722 7802 is D..-RE, not Ducrot; it also follows a first name ("votre ami [0312 9516] [2722 7802]").
+  Third addressee 5006 9701 2729 = LE-V..-E. The "prefet" idea for 6819 3412 stays dropped.
+- NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
+
 ## Wiki and engine (7 Nov 2026): start here
 `wiki/` is the project's knowledge tree, built on Karpathy's LLM-wiki pattern (gist 442a6bf5..., raw sources / wiki / schema; ingest, query, lint; index.md and log.md): read `wiki/SCHEMA.md`, `wiki/PROCESS.md`, `wiki/index.md`
 and `wiki/syntheses/Z01.md` (overview and ranked next steps) before anything else; `wiki/log.md` has the history including two rolled-back false acceptances. Machine state: `wiki/lexicon_inspectors.json`, `wiki/lexicon_favre.json`.

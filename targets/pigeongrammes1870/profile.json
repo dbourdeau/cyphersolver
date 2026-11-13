@@ -383,6 +383,18 @@
    ],
    "what": "Collector's suggestions (two emails): 6819 3412 = PIERR-ET (Pierret), 5511 = messieurs, 3412 = et, 9802 6124 = VIN-OY, 2722 7802 = DUC-ROT. Tested with heading_test.py against the alphabetical rule and the telegram's structure. Supported: 3412 = et (position -0.005; joins the spelled runs ballon and pigeons); 5511 = messieurs and 5711 = monsieur (5511 once before three bracketed names, 5711 six times before one; three later paragraphs open with monsieur and the same three names in order). 6819 3412 is one name P...-ET (it stands alone after monsieur in its paragraph), consistent with Pierret but not confirmed: no Pierret found in the 1870 Paris telegraph service. Not supported: VIN-OY (oy sorts after on = 6129, the group is below it) and DUC-ROT (rot sorts after ro = 8317, the group 7802 is below it and recurs as an R piece elsewhere). Third addressee 5006 9701 2729 unidentified. No new passage reads.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference",
+    "crib testing",
+    "statistical test"
+   ],
+   "what": "Treated the inspectors' code as a paged alphabetical book (group PPLL = page 01-99, line 01-30, about 2,970 entries; single letters open their sections; pages 01-03 and 05 hold marker groups). Read the telegram by context with interval_cands.py (words that sort between the nearest known values). Values rose from 23 to 197 groups; 438 of 754 group occurrences (58%) have a value, 193 (26%) are marker groups, 123 (16%) unread. Sentence reading with holes in inspecteurs_2nov_reading.md. Order check: 1 inversion among 197 values against 98 expected at random, but the test is partly circular because values were proposed knowing the approximate position; three guesses failed it and were withdrawn. Eleven digit slips assumed, not yet checked on the scan. Names read: rue Jean-Jacques Rousseau, Picard, Saint-Germain-en-Laye, Pont-Audemer, Prussiens, Madame Herold. No second text in this code exists to test the values.",
+   "result": "partial"
   }
  ],
  "outcome": {
