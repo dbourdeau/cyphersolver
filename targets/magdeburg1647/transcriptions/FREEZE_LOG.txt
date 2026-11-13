@@ -1,0 +1,39 @@
+# Freeze and decode lines copied verbatim from the session logs (b160_hunt_north/LOG.md, times UTC on 2026-11-12, the date is in its first line; b162_lasa_reader2/LOG.md, full UTC stamps).
+# These times are the sessions' own clock. No RFC 3161 stamp covers the transcriptions; the first stamp covering the key is 13 Nov 2026 09:08:54 GMT (timestamps/).
+## b160 (reader R1)
+2026-11-12T13:28:08Z start b160; mkdir
+13:40:46 LASA f.5 cipher transcribed (tx/f5_tx_v1.txt, md5 ab3bce39), frozen before any solve
+13:44:48 f5_tx_v2 (md5 787d9ec3): two re-reads at 2x zoom
+13:45:23 KEY_lasa_v1 FROZEN md5 c892c744 (ciphertext-only from f.5; seeds 3,4,5 converge identically at -4.8464). Next: transcribe f.6, f.7 blind of key output, freeze, decode once
+13:45:51 f6_tx_v1 FROZEN md5 2c1d1ee5 (before any decode of f.6)
+13:46:29 f.6 decoded once with KEY_v1: strict 35/101 = 34.65% (below). Readable fragments: 'bishero seine ... der subsidien gelder ... der berichtet undt ... gehabt auch es wie er ... wurde nebst ... darbey gewesen'; uflpar = Volmar (imperial envoy) with y,x fixes. Next: KEY_v2 from f.5+f.6 ciphertext, hold out f.7
+13:47:27 KEY_lasa_v2 FROZEN md5 c8fade56: annealer on f.5+f.6 converged (3 seeds) to an exact reciprocal table (a z)(b s)(c q)(d e)(f n)(g o)(h u)(i r)(k y)(l t)(m x)(p w). Held-out: f.7
+13:48:03 f7_tx_v1 FROZEN md5 5620ca36 before decode
+13:48:44 f.7 HELD-OUT: strict 36/83 = 43.37%, 0/5000 both seeds (true -4.8427 vs best -6.5494/-6.7112). BELOW 65% -> no FILE_NOW. Reading: 'obstination ... der portugesischen ... praesertim in pari autoritate constituti ... der die widrigen humeur ... zwischen ... qualitaten ... geruhmet; derselbe sich zu nicht ubel schicken'
+13:49:43 LASA frame 3 'Catalogus' (enciphered names with clear glosses) checked against frozen KEY_v2: 13/13 name-words agree (papa romanus, hispania, moscovia, italien, polonia, rex/regina, parlament, resident, dux princeps, imperator romanus, reverendissimus, schweden, engelland). Ciphertext-only key independently confirmed by contemporary glosses.
+13:53:07 LASA frame 51 (Postscriptum, No. 27, 1647): cipher with CONTEMPORARY interlinear glosses ('circa numeros eadem steganographiae ratio ... pro claue genomen ... pro ratione alterius clauis ... tria millia ... centum mille'). KEY_v2 vs 18 glossed words: 11 exact, letters 104/118 = 88.14%; all mismatches are my g/q, t/l reading slips or unkeyed m (=x by the involution). Third independent confirmation of the key
+13:55:33 NEW SISTER BARE SLIPS found in A1 530: frame 117 (f.101 'ad Diarium No. 54'), 118 (f.102 'ad Appendicem Diarii No. 22'), 121 (f.104 'ad Diarium No. 22', almost wholly cipher, sections alpha-delta); no glosses at 900px. Missed by catalogue vetting. Target: f.104
+13:56:34 f104_tx_v1 FROZEN md5 20bb050f (before decode)
+13:57:06 f.104 BARE: strict 45/101 = 44.55%, 0/5000 both seeds (true -5.1877 vs best -6.7109/-6.8095). Below 65% -> no FILE_NOW. Error dominated by reader g/q confusion. Recommend blind reader with letter-form reference crops
+13:57:29 glyph rule from glossed f.51 (grigz=circa, fhxdigb=numeros, wig=pro): q = straight descender (plain c); g = left-curling/looped descender (plain o). Applying to a fresh slip f.102 (frame 118)
+13:58:14 f102_tx_v1 FROZEN md5 2e78161c before decode
+13:58:39 f.102 BARE: strict 28/81 = 34.57%; seed 20261112: true -5.3593; shuffles 5000; >= true 0; best -6.7336; median -7.4582 seed 7: true -5.3593; shuffles 5000; >= true 0; best -6.7462; median -7.4577 . Below threshold. LASA attack STOPPED: key solid (3 independent confirmations), reading quality limited by single non-blind reader's g/q, d/e, t/l glyph confusions. Needs blind reader with glossed f.51 reference crops
+14:00:36 LASA frame 168 (f.14x): contemporary KEY WORKSHEET: keyword 'AMPHICTYONES' over 'zxwurqlkgfdb' = exactly our KEY_v2 involution (a-z m-x p-w h-u i-r c-q t-l y-k o-g n-f e-d s-b), plus 'q: centum, x: mille' numerals. 4th confirmation; key is contemporary and in the file. Frame 233 (f.204 'Annotata ad No. 40'): another bare cipher slip. Frames 176, 178 clear
+14:01:00 f204_tx_v1 FROZEN md5 e2578787
+14:01:16 f.204 BARE: strict 24/53 = 45.28%, 0/5000 both seeds. Gist: 'deswegen auch wie er folgender Tagen die Herren Gesandten ... mich in hohem vertrawen et pro certo berichtet ... Consilia ... zur recompens ... nach Inhalt ... gute Bremen?'.
+14:01:16 LASA POOLED bare (f.6, f.7, f.102, f.104, f.204; f.5 used to build key): S = 35+36+28+45+24 = 168; words = 101+83+81+101+53 = 419; strict 168/419 = 40.10%. Every passage 0/5000 both seeds. NO FILE_NOW. Key not in doubt (4 independent checks incl. contemporary AMPHICTYONES worksheet frame 168): ceiling is single non-blind reader's transcription
+## b162 (reader R2)
+# b162 LOG\n2026-11-12T14:03:43Z start
+2026-11-12T14:05:11Z fetched max frames 3,10,11,51,117,118,121,233 (plain curl, LASA images/max); md5s IMAGE_MD5S.txt
+2026-11-12T14:07:32Z FROZEN tx/f7_tx_b162.txt md5 ec516450
+2026-11-12T14:08:32Z FROZEN tx/f104_tx_b162.txt md5 4494290d
+2026-11-12T14:09:11Z FROZEN tx/f102_tx_b162.txt md5 73f2202e
+2026-11-12T14:09:34Z FROZEN tx/f204_tx_b162.txt md5 a33a4f5e
+2026-11-12T14:09:52Z FROZEN tx/f101_tx_b162.txt md5 afef59b1
+2026-11-12T14:10:04Z lowercased copies tx/*_lc.txt (mechanical, for dec_once which lacks lower()); decoded each ONCE with dec_once.py KEY_v2 -> dec/
+2026-11-12T14:11:05Z SCORED one pass (SCORES_b162.txt): f7 38/81 46.91; f104 47/101 46.53; f102 31/79 39.24; f204 22/51 43.14; f101 16/35 45.71; pooled 154/347 44.38
+2026-11-12T14:11:23Z SHUFFLES 5000 x seeds 20261112,7 (b160 shuffle_lasa.py, Simplicissimus md5+German header asserted at import): all 5 slips 0/5000 both seeds; see shuf/
+2026-11-12T14:12:17Z ALIGN vs b160 v1 tx: f7 39/81, f104 58/101, f102 43/79, f204 22/51 exact-equal words; pooled 162/312. Adjudicated 6 on crops (see report)
+2026-11-12T14:13:08Z ref sheet REF_SHEET_f51_f3.jpg + REF_GLYPHS.txt; full-size images deleted (md5s kept in IMAGE_MD5S.txt); prior art: CS repo row 1639 open/no decipherment; A 1 Nr. 529 Diarium unread (possible clear text); web searches found no edition/decipherment. NO FILE_NOW (max slip 46.91%, pooled 44.38% < 65%)
+ADJUDICATION on 3x crops (6 disputed words): f7 ldxWdir: mine (b160 alignment shift; decodes 'temperi'); f7 hdibtzfel/udlblzfdl: crop = hdiblzfel (split; 'uerstandt'); f7 tquhtel/bquhtdl: crop = bquhtel (split; 'schuldt'); f104 sdrtzsdi/pdrtzsdi: b160 ('weil aber'); f104 'occasion' x2 (gggzbrgt vs qqqzbrqf; qqqzbrqf vs gggzbrgf): crop = gqqzbrgf, both readers wrong. Tally: mine 1, b160 1, split/neither 4.
+Main systematic errors: g/q tail (both readers, opposite directions), e read for c-like glyph, my word-final cipher f read as n (gives '-ef' for '-en'), t/l.
