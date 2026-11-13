@@ -2,6 +2,8 @@
 
 WAINUT, 12 Nov 2026. Work by AI language-model agents for WAINUT; no human palaeographer checked the text.
 
+Read in part, 13 Nov 2026: Narváez's key 313 applied to the 11 cipher runs; 22 of 32 cipher words are read as typed (68.8%), 7 carry a typing slip, 3 are holes. Written up on the site (sanchez1922.html) at the integration of PR #512.
+
 ## Document
 
 - CEHM-Carso, Fondo DCXXI Archivo de Félix Díaz, **DCXXI.3.323.1** (archivo no. 91121). Typed letter, 2 pages,
@@ -55,6 +57,8 @@ It is a partial gloss only: no word count above rests on it.
 
 State proposed: **not prose** (names, a place, a title and one short phrase in a clear letter).
 
+The words are counted by the README rule: a word with a restored or replaced letter is not read as typed, and a hole is not read, so 22 of 32 (68.8%), the contributor's own figure too.
+
 ## Prior art (checked 12 Nov 2026)
 
 - CEHM: "incluye claves no descifradas"; signer "ilegible, Manuel".
@@ -105,3 +109,15 @@ full page only. No human palaeographer has checked the text. Who Sánchez is is 
   there is nothing to extend
 - [x] retry: the three holes retried with every single-position change of shift (0 to 4) and with key 103: only
   VAJA for W06 comes near a word (see above); YULAS and CORCU stay holes
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session. Reproduced: `check_marks.py` passes (32 words, 22 verbatim, 7 repaired, 3 holes). Own
+decoder (written from the rule key 313 over the 27-letter alphabet, shifts 3-1-3 restarting at each word, not their script)
+gives the same decryption of all 11 runs. Images DCXXI.3.323.1.0001 and .0002 fetched from the CEHM viewer (plain http, no
+host refused) and compared with the transcription: all 11 runs (W01-W05 on p. 1, W06-W11 on p. 2) agree, including the pen
+strokes over letters in W07 and the overstruck sign before W09; the pencil note at the foot of p. 2 is visible ("Manuel
+Roz... Parral"). The key (313, Gronsfeld-type) is Narváez's published key for another letter, as the contributor states;
+the integrating session did not read Narváez 2015 and relies on the contributor's and the reviewer's account of pp. 125-126.
+Nothing was frozen before: the whole letter is held out because the key comes from outside, so there is no order-of-events
+question. Class stays read in part (68.8% strict). Method: read with known key.

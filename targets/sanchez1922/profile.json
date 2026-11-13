@@ -131,9 +131,15 @@
    "kind": "verification",
    "what": "Independent blind review by an AI language-model agent separate from the solver: 6 of 11 runs copied from its own crops, 0 disagreements; key checked in Narváez 2015; W07, W09 and W10 decoded by hand, exact; check_marks.py re-run (passes). Applied after the review: the pencil note at the foot of p. 2 recorded as a partial gloss, '[? Emilio]' corrected to '[Emilio]', W06 offered as [?Baja] in the sentences (still counted as a hole). Dan's _check_reading.py on 13 Nov 2026 after these changes: reading 0.46 (23 of 50 sentences), translation 0.773 (17 of 22).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check by the repository: check_marks.py reproduced (22 verbatim, 7 repaired, 3 holes of 32 words); own decoder from the rule (key 313, restart per word) gives the same decryption of all 11 runs; CEHM images 0001 and 0002 compared with the transcription, all 11 runs agree. Narváez 2015 not read by the integrating session. Class read in part (68.8%) stands.",
+   "result": "worked"
   }
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-13", "verdict": "not applicable", "notes": "A Gronsfeld-type key (shift by position in the word) is not a letter-to-value table, so the token-by-token n-gram validation does not apply; the key is a published one (Narváez 2015) applied unchanged to a whole letter, with 177 of 185 letters of the identified words exact."}, 
   "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
@@ -162,13 +168,15 @@
     "who": "lccompany",
     "role": "solution",
     "note": "Narváez's published key 313 identified as the key this letter names in clear and applied to DCXXI.3.323.1 (restart per word); runs deciphered and read",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #512 (dbourdeau/cyphersolver)"
    },
    {
     "who": "lccompany",
     "role": "transcription",
     "note": "11 runs from the CEHM-Carso images",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #512 (dbourdeau/cyphersolver)"
    }
   ],
   "texts": [
@@ -188,7 +196,8 @@
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-13",
      "note": "The key holds and the runs read in their clear sentences: 6 of 9 context sentences without holes, the other 3 with one hole each; 3 holes and 7 marked repairs in 32 cipher words."
-    }
+    },
+    "read_share": 0.688
    }
   ],
   "key_file": [
