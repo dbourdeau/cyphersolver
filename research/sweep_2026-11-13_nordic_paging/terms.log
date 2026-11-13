@@ -1,0 +1,7 @@
+chiffer True 8 8
+chiffer False 33 33
+Traceback (most recent call last):
+  File "/home/user/cyphersolver/research/sweep_2026-11-13_nordic_paging/terms.py", line 15, in <module>
+    e = seen.setdefault(r['daisyId'], dict(id=r['daisyId'], type=r['documentType'], titel=r['titel'], f=(r.get('dateFrom') or '')[:4], t=(r.get('dateTo') or '')[:4], desc=r.get('beskrivelse') or '', creator=r.get('visBedsteArkivskaberNavn'), online=False, terms=[]))
+                        ~^^^^^^^^^^^
+KeyError: 'daisyId'
