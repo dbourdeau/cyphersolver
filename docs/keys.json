@@ -5150,6 +5150,14 @@
    "by": "WAINUT",
    "year": 1646,
    "note": "Two-figure groups, one letter each, a few homophones in the 40-80 range, a bar to double; built from 20 glossed words of 24852, frozen, 72 of 72 held-out groups of 24853 right; six groups of 24854 (50 60 70 73 80 86) have no gloss (key partial for this letter)."
+  },
+  {
+   "id": "k-inspecteurs1870",
+   "label": "Inspectors' code of the French telegraph service, 1870 (values rebuilt from the telegram of 2 November 1870)",
+   "kind": "rebuilt here",
+   "by": "Daniel Bourdeau with Claude",
+   "year": 1870,
+   "note": "Four-digit groups, page 01-99 and line 01-30 of an alphabetical book of words, syllables and single letters, with marker groups on pages 01-03 and 05; 236 values rebuilt from the clear words of one telegram, partial, no second text to test."
   }
  ],
  "links": [
@@ -8332,6 +8340,12 @@
    "target": "blaufeldt1646",
    "how": "rebuilt from",
    "note": "rebuilt from the glossed sibling letter 24852, frozen, tested on 24853 and applied to the bare 24854"
+  },
+  {
+   "key": "k-inspecteurs1870",
+   "target": "pigeongrammes1870",
+   "how": "rebuilt from",
+   "note": "rebuilt from the clear words of the telegram and the alphabetical order of the book; 485 of 754 group occurrences valued"
   }
  ],
  "sources": [
@@ -9700,6 +9714,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-blaufeldt1646"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-inspecteurs1870"
   }
  ],
  "unlinked": {
@@ -9708,7 +9726,6 @@
   "alphen1200": "Not solved: no key exists (an invocation in abbreviations); the sibling blades' published readings (Wagner et al. 2009) were used for a formula-level parse only.",
   "rok800": "Cipher runes read by Bugge (1878) and Wessen (1958); the three keys are re-derived here from the stone's own text but not stored as a key table.",
   "kopp1921": "Not solved: no key recovered or identified.",
-  "pigeongrammes1870": "Not solved: the inspectors' code has no key recovered; the collector's repertoires R1 and R2 (his own, unpublished) decode other telegrams in his collection but not this one, and no key file of ours is rebuilt or reused.",
   "milroy": "Stager Cipher No. 7 route grid published by Richard Bean (cryptiana, 2026); two runs checked here, no key file rebuilt or reused",
   "duben1764": "Not read: no key found for the May 1764 letter. Key table 219 (targets/duben1764/payne2026/key219.txt) is not this letter's key; it decodes the cipher groups of Schück's printed letter 143 (February 1771), see payne2026/KEY219_PROVENANCE.md (PR #185).",
   "carlos1903": "deciphered from the decodes of the time (the card m0060 and the ink decode on m0058); no key: only four group values follow from the repeats, and the codebook was not found",
