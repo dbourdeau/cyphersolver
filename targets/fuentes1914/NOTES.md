@@ -5,9 +5,9 @@ checked the text. An independent AI language-model agent reviewed the work blind
 
 Status: read in part, 13 Nov 2026. The four coded runs of this pencil note are read with the Clave Extra 3 key rebuilt
 in `targets/murguia1914/` from the contemporary pencil decipherment of LXVIII-1.14.1943.1. All 13 coded words read as
-sense, with no hole, but 2 of them rest on a marked one-figure repair, so 11 of 13 (84.6%) are verbatim from the signs,
-under the 95% read bar. The reviewer proposed "read"; the repository's write-up checker requires "read in part" at this
-share, and we follow it. The key was frozen before
+sense, but 2 of them rest on a marked one-figure repair chosen by the sense, and by the README read bar a repaired word
+is not read: 11 of 13 (84.6%) are verbatim from the signs, under the 95% bar. The contributor's own count is the same;
+the reviewer proposed "read" and the contributor kept "read in part" at this share. The key was frozen before
 this sheet was decrypted and is copied unchanged into this folder (`key_frozen.tsv`).
 
 ## Document
@@ -47,7 +47,7 @@ uniformity he proposes a scale from private (one peso) to colonel (eight pesos) 
 decision be sent to all chiefs.
 
 Coded words (`scripts/count_words.py`): 13 in 4 runs; 11 verbatim from the signs (84.6%), 2 with a marked changed
-value, 0 holes. Per run:
+value (counted as not read by the strict rule; the script's own "read share 1.000" counts them). Per run:
 
 | Run | Groups | Words | Verbatim | Marked repair |
 |---|---|---|---|---|
@@ -92,8 +92,13 @@ Narváez 2019 and 2025 and M. W. González, *Con Carranza*, were not read (see `
 
 ## Remaining gaps
 
-- F02 g10 and F04 g11 - blocker: illegible. Read with a one-figure repair each; F04 g11 has its first figure under the
-  pencil loop.
+- F04 g11, the first figure of "establece{i/r}" - blocker: illegible. Hidden where the pencil loop crosses the line; read
+  12 as it shows, the sense needs 42.
+- F02 g10, "{g/e}l" - blocker: too-short. The sheet shows 24 (g) where the sense needs 26 (e); it is a single occurrence, so
+  a slip of the writer or a misread cannot be told apart.
+- F01 g2 (second figure of the second group of "haberes") - blocker: illegible. Open at the top, 0 or 9; the transcription
+  keeps 20 (a) because "haberes" needs it (the integration check saw 20 and 29 as both possible on the scan). The word stays
+  counted as verbatim, as the contributor counted it; the doubt is recorded here.
 
 Not gaps in the cipher: the clear words "en m[i]s" and the pay list were read once, without a second pass,
 and the corner word ("Earle"?) is not read; the year 1914 is the catalogue's.
@@ -118,3 +123,19 @@ and the corner word ("Earle"?) is not read; the year 1914 is the catalogue's.
 `decryption_LXVIII-1.17.2435.1.txt`; `reading_LXVIII-1.17.2435.1.md`; `translation_LXVIII-1.17.2435.1.md`;
 `key_frozen.tsv` (copy from `targets/murguia1914/`); `validation.tsv`; `scripts/` (`validation_pairs.py`, `decrypt.py`, `check_marks.py`, `count_words.py`,
 `coded_only.py`, `reading_debug.py`; standard library only; run from this folder).
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session, not by the contributor. Reproduced: `scripts/check_marks.py` passes (4 runs, 2 marks);
+`scripts/decrypt.py` gives the same decryption (the file differs only by line endings); `docs/_validate.py` gives the same
+figures (z 6.0, pass). An own decoder written from `key_frozen.tsv` (nothing of the contributor's scripts imported) gives
+the same four lines. `key_frozen.tsv` equals `targets/murguia1914/key_frozen.tsv` of the Murguía pull request (#513) line for
+line apart from two comment lines. The CEHM image LXVIII-1.17.2435.1.0001 was fetched (plain http, no refusal) and every run
+was compared with the transcription: all groups agree except the places listed under Remaining gaps. The order in which the key
+was frozen and this sheet decrypted rests on the contributor's record (one commit, no external timestamp); the test is
+nonetheless real because the key was built from another item and nothing on this sheet was used to fit it. Method: key
+recovered based on adjacent plaintext (the contemporary decipherment of LXVIII-1.14.1943.1, rebuilt in `targets/murguia1914/`),
+applied unchanged here; the key entry is `murguia1914`, this page is one more document read with it. `key: partial` because
+the key as a whole has only 60 of its cells valued. Other Mexican targets (mexico1911, hernandez1911, mccarty1911,
+nuevaclave1911, duron1911, mundic1912, delabarra1913, nunez1899, reyes1886) use other systems; reyes1886's numeric key agrees
+with this one in 1 of 27 common groups.

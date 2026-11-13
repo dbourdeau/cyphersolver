@@ -1686,6 +1686,11 @@ PAGES = [
          blurb='Twenty-seven cipher words in a clear telegram, read with a letter-substitution key recovered from the ciphertext (110 of 112 held-out letters right, none wrong). Boaz Long of the State Department came to see De la Barra, surely sent by Wilson and Bryan; he will go to Europe unless invited. Read in part (24 of 27 cipher words verbatim).',
          quote='&ldquo;Si recibola, saldr&eacute; Europa s&aacute;bado pr&oacute;ximo&rdquo;',
          rights='Images: CEHM-Carso, Fondo X-1 (manuscritos de Francisco Le&oacute;n de la Barra), via visor.cehm.org.mx; transcription, key and reading by WAINUT'),
+    dict(slug='fuentes1914', label='Fuentes to Gonz&aacute;lez 1914', year='1914', y=1914.45, place='Monterrey &rarr; Pablo Gonz&aacute;lez', st='partial', stt='read in part',
+         title='A. Fuentes D. to Pablo Gonz&aacute;lez, Monterrey, 13 June [1914]',
+         blurb='A pencil note of Gen. Pablo Gonz&aacute;lez&rsquo;s chief of staff with four coded runs in Clave Extra 3, a two-figure table. The key, built from another sheet of the same papers and frozen before this one was decrypted (by the contributor&rsquo;s record), reads all 13 coded words, 11 from the figures as written. A proposed scale of pay from private to colonel; read in part (84.6%).',
+         quote='&ldquo;A fin de establecer uniformidad, se establezca la cuota siguiente: soldado un peso &hellip; Coronel ocho pesos&rdquo;',
+         rights='Images: CEHM-Carso, Fondo LXVIII-1 (manuscritos del General Pablo Gonz&aacute;lez), via visor.cehm.org.mx; transcription, key application and reading by WAINUT'),
     dict(slug='loeschnen1816', label='Loeschner&rsquo;s cipher memorandum', year='1816', y=1816.5, place='Vienna', st='found', stt='not a cipher',
          title='W. Loeschner&rsquo;s memorandum on the Staatskanzlei cipher instruction, Vienna 1816',
          blurb='DECODE R2227 was catalogued as a ciphered letter of &ldquo;W. Loeschnen?&rdquo; of 1 July 1816. It is W. Loeschner&rsquo;s memorandum in clear German proposing changes to the instruction for using the Staatskanzlei&rsquo;s cipher keys. Not a cipher: its only figures are worked examples with the plaintext written above them.',
@@ -3332,6 +3337,7 @@ IMAGES['morris1813'] = ('morris1813_lead.jpg', 'Morris&rsquo;s No. 24, Madrid, 3
 IMAGES['reyes1886'] = ('reyes1886_lead.jpg', 'Reyes to Revueltas, 1 April 1886: runs of two-digit cipher inside the clear lines', 'CEHM-Carso, Fondo DLI (Archivo del General Bernardo Reyes), DLI.4.634.1, image 0001, via visor.cehm.org.mx')
 IMAGES['nunez1899'] = ('nunez1899_lead.jpg', 'The first lines of the code telegram of 26 August 1899', 'CEHM-Carso, Fondo CDLIV (Colecci&oacute;n Jos&eacute; Y. Limantour), CDLIV.1a.1883.38.9926, image 0002, via visor.cehm.org.mx')
 IMAGES['mundic1912'] = ('mundic1912_lead.jpg', 'The telegram of 13 February 1912: four lines of cipher and the signature', 'CEHM-Carso, Fondo X-1, X-1.3.207.1, image 0001, via visor.cehm.org.mx')
+IMAGES['fuentes1914'] = ('fuentes1914_lead.jpg', 'The note of 13 June [1914]: Spanish lines with runs of two-figure groups and the pencil loop', 'CEHM-Carso, Fondo LXVIII-1, LXVIII-1.17.2435.1, image 0001, via visor.cehm.org.mx')
 IMAGES['frankenthal1646'] = None
 IMAGES['juel1647'] = ('juel1647_lead.jpg', 'Register p. 5: the first nine lines of the run of numbers in the entry to the chancellor of 20 November 1647', 'Rigsarkivet, Copenhagen, TKUA, Speciel del, Sverige, Peder Juels og Mogens H&oslash;egs gesandtskabsarkiver, Ekstraktprotokol 1647-49, Arkivalieronline unit 261585, image 5 (p. 5)')
 IMAGES['hopken1740'] = ('hopken1740_lead.jpg', 'The start of the bare cipher copy of the comte de Castellane\'s letter, image 49: the heading row and the first rows', 'Riksarkivet, Stockholm, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/27, image 49 (R0003636_00049), via Riksarkivet IIIF')

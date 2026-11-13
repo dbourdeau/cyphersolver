@@ -142,6 +142,22 @@
    ],
    "what": "Statistical validation (docs/_validate.py on validation.tsv, the mechanical values of the frozen key per group; scripts/validation_pairs.py): 81 read tokens, 29 types, es-modern order 4: reading -2.175 per letter; random keys mean -5.569, max -3.946 (z 6.0); key annealed onto shuffled ciphertext best -2.591 (mean -2.675, z 6.0); annealer on the real text -2.295. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check (13 Nov 2026): own decoder from key_frozen.tsv (nothing imported) gives the same four lines; scripts and docs/_validate.py re-run with the same figures (z 6.0, pass); key_frozen.tsv equals targets/murguia1914/key_frozen.tsv (PR #513) line for line. The freezing order rests on the contributor's record (one commit). Reading checked as sentences (a pay scale from private to colonel).",
+   "result": "worked",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): CEHM image LXVIII-1.17.2435.1.0001 fetched over plain http (no refusal) and every run compared at full resolution: about 78 of 81 groups agree; the second figure of F01 g2 (20 or 29), F02 g10 (24 where the sense needs 26) and the loop-hidden F04 g11 are the doubtful places. Strict share confirmed: 11 of 13 coded words verbatim (84.6%), read in part.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -155,7 +171,7 @@
   ],
   "fraction_read": 0.846,
   "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/count_words.py on the coded runs: 11 of 13 coded words verbatim from the signs; the other 2 carry a marked one-figure repair checked on the image. No holes. The clear text reads in full (the quoted reading, clear and coded, is 117 words).",
+  "fraction_read_source": "scripts/count_words.py on the coded runs: 11 of 13 coded words verbatim from the signs; the other 2 carry a marked one-figure repair chosen by the sense and count as not read (strict rule). The clear text of the note reads in full except the corner word.",
   "verification": [
    "key confirms",
    "historical consistency",
@@ -202,7 +218,7 @@
     "state": "read in part",
     "read_share": 0.846,
     "summary": "The chief of staff writes that the chiefs of forces draw pay at different rates (in some pay sheets the first captain is given $5.00, in others $4.00 or $3.00, and the same for the other officers) and proposes a uniform scale from private (one peso) to colonel (eight pesos), asking that González's decision be sent to all chiefs.",
-    "note": "13 coded words in 4 runs: 11 verbatim from the signs (84.6%), 2 with a marked changed value ({g/e}l, establece{i/r}), 0 holes. The note as a whole has no hole; the coded words are a small part of it. The reviewer proposed read; the state is read in part because 84.6% of the coded words are verbatim, under the 95% bar.",
+    "note": "13 coded words in 4 runs: 11 verbatim from the signs (84.6%), 2 with a marked changed value ({g/e}l, establece{i/r}), the 2 repaired words count as not read. The clear text has no hole except the unread corner word; the coded words are a small part of it. The reviewer proposed read; the state is read in part because 84.6% of the coded words are verbatim, under the 95% bar.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
@@ -214,9 +230,19 @@
   "key_file": "key_frozen.tsv",
   "gaps": [
    {
-    "item": "F02 g10 and F04 g11",
+    "item": "F04 g11 (first figure of 'establece{i/r}')",
     "blocker": "illegible",
-    "detail": "Read with a marked one-figure repair each; in F04 g11 the first figure is under the pencil loop."
+    "detail": "Hidden where the pencil loop crosses the line; read 12 as it shows, the sense needs 42."
+   },
+   {
+    "item": "F02 g10 ('{g/e}l')",
+    "blocker": "too-short",
+    "detail": "The sheet shows 24 (g) where the sense needs 26 (e); a single occurrence, so a slip of the writer and a misread cannot be told apart."
+   },
+   {
+    "item": "F01 g2 (second figure, 'haberes')",
+    "blocker": "illegible",
+    "detail": "Open at the top, 0 or 9; kept as 20 (a) because the word needs it; counted verbatim by the contributor, doubt recorded at the integration check."
    }
   ],
   "validation": {
@@ -248,6 +274,11 @@
    "power": -2.295,
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.175; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.295"
+  },
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
   }
  }
 }
