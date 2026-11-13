@@ -20,15 +20,16 @@
     "source": "Not in DECODE; Tomokiyo lists it as not deciphered."
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 186,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "transcription_f317.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "Gallica IIIF full-resolution images (about 6100 x 5000), line strips",
+    "source": "Gallica IIIF full-resolution image of view 329 (6124 x 5431), own line crops",
     "image_quality": "good",
-    "notes": "No labelled transcription made; NOTES estimate about 150-170 glyphs in nine runs, segmentation uncertain."
+    "notes": "transcription_f317.txt (14 Nov 2026): two blind passes by independent agents (188 and 187 cipher tokens), compared sign by sign and arbitrated on 2-4x crops; 186 tokens in 9 cipher-bearing lines, about 45-50 distinct signs; 9 places left as {x|y}."
    }
   }
  ],
@@ -36,9 +37,9 @@
   "types": [
    "undetermined"
   ],
-  "summary": "Letter shapes, ligatures and a few figures in nine short runs inside clear French; system not established.",
+  "summary": "Letter-shaped signs (round d, theta, q, long s, PU, pi, infinity loop, barred t's, $), underlined signs, signs with two dots, and two-digit numbers (86 three times, 89) in short runs inside clear French. Same construction as de Castille's 1616 cipher in the same volume (Tomokiyo's reconstruction, Clair 369 f. 11); not tested as a key.",
   "symbol_kind": "letters and symbols",
-  "distinct_symbols": "unknown",
+  "distinct_symbols": 47,
   "diacritics": {
    "used": true,
    "note": "Underlined pairs and ö with two dots; function unknown."
@@ -55,8 +56,8 @@
   "key_order": "unknown",
   "word_division": "unknown",
   "doubled_letters": "unknown",
-  "sibling_key": "Baugy, Castille, Du Maurier (Clair 369) and anonymous Clair 372 f. 169 and 373 f. 303 keys compared by repertoire; none matches.",
-  "notes": "About 40-50 distinct units (provisional)."
+  "sibling_key": "Lead, not measured: de Castille's cipher (Clair 369 f. 11, Tomokiyo 2016-) has the same build: letter homophones drawn as d, theta, H, eta, q, g, long s, a barred ff, a barred #, pi as a null, two-digit syllable codes in the 73-99 range (85 con, 88 de, 89 di) and digits with two dots for syllables. Cocquet uses 86 (x3) and 89, o with two dots, pi, theta, round d, H, eta, q, g, long s and a barred ff. Baugy and Du Maurier are figure ciphers; the Clair 372/373 anonymous keys use numeric word codes.",
+  "notes": "About 45-50 distinct signs (42 firm labels plus 9 unresolved {x|y} places in transcription_f317.txt; 47 is the midpoint). Repertoire from a labelled two-pass transcription (14 Nov 2026). The 16 Sept 2026 gate note said Castille shares 'only generic shapes'; with the labelled transcription the overlap is structural (same sign classes and the same two-digit syllable band), though the values may differ."
  },
  "conditions": {
   "prior_solution": {
@@ -73,11 +74,12 @@
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
   "tools": [],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 2,
+  "sessions": 3,
   "first_date": "2026-09-16",
-  "last_date": "2026-09-16"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -88,7 +90,10 @@
   },
   {
    "date": "2026-09-16",
-   "kind": "statistics", "technique": ["repeat/pattern analysis"],
+   "kind": "statistics",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
    "what": "Gate measurement: about 160 glyphs over 40-50 units in nine runs, the du Croc regime, below threshold.",
    "result": "partial"
   },
@@ -103,18 +108,35 @@
    "kind": "literature search",
    "what": "Searched DECODE for Cocquet, Mangot, Trainel, Clairambault and Tomokiyo's Louis XIII page for siblings.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Labelled transcription of the nine cipher-bearing lines of f. 317: two blind passes by independent agents from the full Gallica image (188 and 187 tokens), compared sign by sign, disagreements settled on crops; 186 tokens, about 45-50 distinct signs, 9 unresolved places marked. transcription_f317.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "hypothesis",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Compared the labelled repertoire with Tomokiyo's reconstructed Clair 369 keys (Castille f. 11, Baugy f. 109, Du Maurier ff. 229, 294) by sign class. Castille's cipher has the same build (letter-shape homophones, pi null, barred ff, two-digit syllable codes 73-99, digits and letters with two dots); Baugy and Du Maurier do not. Recorded as a lead; Castille's key was not applied and nothing was measured.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
   "method_basis": "About 160 signs in nine short runs on Clairambault 369 f. 317; five period keys from the same volumes did not match, and it was closed at the length gate without an attack.",
-  "contribution": ["none"],
+  "contribution": [
+   "transcription"
+  ],
   "class": "not read",
   "fraction_read": 0,
   "grades": "unknown",
   "verification": [
    "none"
   ],
-  "notes": "Closed at the gate; reopen only with a second Cocquet letter or the embassy key."
+  "notes": "Closed at the gate on 16 Sept 2026; a labelled two-pass transcription was added on 14 Nov 2026, and de Castille's 1616 cipher (same volume) is the family lead. Not read."
  }
 }
