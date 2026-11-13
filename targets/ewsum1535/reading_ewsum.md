@@ -1,6 +1,6 @@
 # Reading of the cipher opening in Johan van Ewsum's register (Groninger Archieven 696 inv. 595, scan 193 = scan 1)
 
-Status: **read** (see the word count at the foot and NOTES.md). Language: Low Saxon / eastern Middle Dutch of the
+Status: **read in part** (116 of 119 words read; 116 of 123 = 94.3% with the four struck groups counted as holes; see NOTES.md). Language: Low Saxon / eastern Middle Dutch of the
 Groningen Ommelanden. Spelling is kept as the signs give it (`v` for `u`, `w` for `u` in *stwnt*, `y` for `ij`); only
 capitals and punctuation are added.
 

@@ -113,6 +113,7 @@ def check_doc(doc):
             print(f'FAIL {doc} {lid}: doubtful sign shape(s) {re.findall(r"[(][^()]*[)]", rd)} not marked {{?x}} in order')
             ok = False
         ws = words(rr)
+        ws = [w for w in ws if any(c.isalpha() for c in w)]  # a lone ':' or '-' is punctuation, not a word
         for i, w in enumerate(ws):
             if i == 0 and joined_prev:
                 # second half of a word split at the line end: counted once, with the worse category of the two halves
@@ -125,7 +126,7 @@ def check_doc(doc):
                 codes += 1
             cnt[last_cat] += 1
         last = ws[-1] if ws else ''
-        joined_prev = last.endswith('-') and not rr.rstrip().endswith('>')
+        joined_prev = last.endswith('-') and len(last) > 1 and not rr.rstrip().endswith('>')
     missing = set(dec) - seen
     if missing:
         print(f'FAIL {doc}: lines missing from reading: {sorted(missing)}'); ok = False

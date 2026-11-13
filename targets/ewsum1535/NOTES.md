@@ -33,7 +33,7 @@ The writer marks a word carried over to the next line with `//`. A few groups ar
 
 The key is the writer's own, on the same page: each of the 23 entries in `key.tsv` is read from the key lines, none was set from
 the cipher text, and the file was frozen (`key_frozen.tsv`) before the first decryption run. The whole cipher text is
-therefore held out from the key. Result with the frozen key, unchanged: 120 of 123 cipher words (97.6%) decrypt
+therefore held out from the key. Result with the frozen key, unchanged: 116 of 119 cipher words (97.5%) decrypt
 mechanically to words of the period language; the other three are one omitted letter (*knech{+t}en*, where L13 spells
 *knechten*) and two signs under blots. No sign of the text is missing from the key, and no key value had to be
 changed. An internal check: the writer repeats the clause *ind raitslagen woe gy die veylich averkrigen* (L08-L09 and
@@ -50,11 +50,12 @@ group (L18, one lying eight, not two).
 
 `reading_ewsum.md` (marked text and the text as sentences), `translation_ewsum.md` (English).
 `scripts/check_marks.py` rebuilds `decryption_ewsum.txt` from the transcription and the frozen key and fails on any
-unmarked departure in the reading: PASS. Word count: 123 cipher words; 120 verbatim from the signs, 1 with a marked
+unmarked departure in the reading: PASS. Word count: 119 cipher words; 116 verbatim from the signs, 1 with a marked
 repair, 0 guesses, 2 holes (the blotted last letter of *ambasiate[n]*, one blotted sign in *be[...]lo*). Counting
 rule: a word with a sign under a blot is counted as a hole even where the reading proposes a letter for it, so the
 L03 mark `[?ambasiaten=ambasiate?]` (a guess for the blotted letter) is counted once, as a hole, not also as a
-guess. Struck groups are not counted.
+guess. Struck groups are not words and are not in the 119; the strict share counts them as holes (see Integration check).
+(Corrected 13 Nov 2026: `reading.py` had counted the three colons and two dashes of R06 and R10 as words, giving 123 and 120; the script now skips tokens without a letter.)
 
 The text is not a recipe, as the catalogue guessed from the facing page. It holds:
 
@@ -70,7 +71,7 @@ The text is not a recipe, as the catalogue guessed from the facing page. It hold
 - **D.** Under a rule, between colons: *ergo : tergo : be[...]lo*, followed by the clear Latin caption "ad
   perforandum caput gallinae". This looks like a charm or trick formula and is not part of the letter.
 
-Proposed state: **read**. 120 of the 123 words are read from the signs and the other 3 are marked; the sentences are coherent
+State: **read in part** (strict share 116 of 123 = 94.3%, struck groups counted as holes; see Integration check). 116 of the 119 words are read from the signs and the other 3 are marked; the sentences are coherent
 Low Saxon. Two renderings are doubtful in sense, not in the signs: *sich verechtert hebben* (L14-L15, "have fallen
 behind"?) and the syntax of L17-L20 (*dat vm Wedde decima Ivly die ambasiat en nyet van der betalonge syen werden
 ontbaden*).
@@ -108,10 +109,10 @@ this language; a human reader of Middle Low German or Middle Dutch should judge 
 
 ## Remaining gaps
 
-- Two blotted signs: the last letter of *ambasiate-* (L03) and the third sign of *be[...]lo* (R10) - blocker:
-  needs-physical-access; under ink blots on the scan, the original might show more.
-- Struck groups in L04, L11, L17 and R10 - blocker: illegible; deleted by the writer under ink, not part of the
-  text, not counted in the 123 words.
+- Two blotted signs: the last letter of *ambasiate-* (L03) and the third sign of *be[...]lo* (R10) - blocker: needs-physical-access; under ink blots on the scan, the original might show more.
+- Struck groups in L04, L11, L17 and R10 - blocker: illegible; deleted by the writer under ink, the shape under
+  the ink was taken as a hash or knot and not read as a sign; not part of the 119 words, but counted as holes in the
+  strict share (owner's rule, 13 Nov 2026).
 - Sense of *sich verechtert hebben* (L14-L15) and of the clause L17-L20 - blocker: too-short; the words read, the
   meaning of two phrases does not settle from a letter of this size; a reader of Middle Low German should judge.
 
@@ -142,8 +143,11 @@ cipher found).
   returns 404): the 22 letter signs of the key lines read as the key file has them (a to p over 15 signs, q to y
   over 7) and the venus-sign note; the first 15 words of L01-L05 (about 45 signs) agree with the transcription.
   This is a sample, not a sign-by-sign check of the page.
-- Strict share: 120 of 123 cipher words (97.6%): the one added letter (*knech{+t}en*) and the two blotted words
-  count as holes. Struck groups are not words and not counted. Class: read.
+- Recount (13 Nov 2026, independent claims reader): the cipher has 119 words, not 123; `reading.py` counted the
+  colons and dashes. Verbatim 116, repaired 1 (*knech{+t}en*), holes 2 (the blotted words). Share of words 116/119
+  = 97.5%. The 4 struck groups (L04, L11, L17, R10) are counted as holes because the read bar counts every token of
+  the document: 116/123 = 94.3%, under 95%. Class: **read in part**; the contributor's figure, 120 of 123 (97.6%),
+  is given on the page once, as theirs.
 - The key is the writer's own, so the decryption is a test of the transcription and not a held-out test of a
   key; "frozen before the first run" is by the contributor's record (one commit).
 - The date range and the identifications of Hackfort, Meinert van Ham and Schenck are the contributor's inference

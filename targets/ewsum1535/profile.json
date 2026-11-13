@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "inv595_scan193",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Groninger Archieven, 696 Familie van Ewsum, inv. nr. 595 (old order 136II), scan 193 (the same opening photographed again as scan 1)",
    "date": "undated; the text gives only '10 July' (decima Ivly). Probably 1533-1536, on the contributor's identification of the persons named (Hacfort as Berend van Hackfort at Wedde, Meynert van Ham as the Guelders commander Meinert van Ham, Iorien Schenck as probably Georg Schenck van Toutenburg); not yet checked against Meinert van Ham's dated career or the dated truces with the Sticht",
    "year": 1535,
@@ -101,7 +101,7 @@
   {
    "date": "2026-11-12",
    "kind": "key from source",
-   "what": "Key read from the two key lines and the clear note on the same page and frozen (key_frozen.tsv) before the first decryption.",
+   "what": "Key read from the two key lines and the clear note on the same page and frozen (key_frozen.tsv) before the first decryption (by the contributor's record: one commit).",
    "result": "worked"
   },
   {
@@ -111,7 +111,7 @@
     "key matching",
     "language-model scoring"
    ],
-   "what": "Whole text held out from the key: with the frozen key unchanged, 120 of 123 cipher words decrypt to words of the period language; the writer's repeated clause (L08-L09, L10-L11) gives the same 35 signs in both copies.",
+   "what": "Whole text held out from the key: with the frozen key unchanged, 116 of 119 cipher words decrypt to words of the period language; the writer's repeated clause (L08-L09, L10-L11) gives the same 35 signs in both copies.",
    "result": "worked"
   },
   {
@@ -129,12 +129,12 @@
   {
    "date": "2026-11-13",
    "kind": "verification",
-   "what": "Integration check (13 Nov 2026): check_marks.py passes; own decoder from key.tsv and the transcription gives the same 33 lines; scan 1 re-fetched (2225 x 3000 px): the 22 key letters and the null note read as in key.tsv, and the first 15 words of L01-L05 (about 45 signs) agree with the transcription. Strict share 120 of 123 words (97.6%). Not checked: the dating (1533-1536) and the identification of Hackfort, Meinert van Ham and Schenck, which are the contributor's inference; writer and recipients open.",
+   "what": "Integration check (13 Nov 2026): check_marks.py passes; own decoder from key.tsv and the transcription gives the same 33 lines; scan 1 re-fetched (2225 x 3000 px): the 22 key letters and the null note read as in key.tsv, and the first 15 words of L01-L05 (about 45 signs) agree with the transcription. Strict share first recorded as 120 of 123 words (97.6%); recounted by the claims reader on 13 Nov 2026 as 116 of 119 words (the earlier count included colons and dashes), and 116 of 123 = 94.3% with the four struck groups counted as holes. Not checked: the dating (1533-1536) and the identification of Hackfort, Meinert van Ham and Schenck, which are the contributor's inference; writer and recipients open.",
    "result": "worked"
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "not applicable",
   "method": "read with known key",
   "method_basis": "The writer's own key alphabet and null note at the head of the cipher page; the key was applied unchanged. Catalogue correction: the text is a letter and a note on soldiers' pay and a truce, not recipes.",
@@ -142,9 +142,9 @@
    "transcription",
    "catalogue correction"
   ],
-  "fraction_read": 0.98,
+  "fraction_read": 0.943,
   "fraction_read_method": "measured",
-  "fraction_read_source": "120 of 123 cipher words verbatim from the signs (reading.py); struck groups not counted. The sweep of 11 Nov 2026 found no other cipher in the register.",
+  "fraction_read_source": "116 of 119 cipher words verbatim from the signs (reading.py, corrected 13 Nov 2026 to skip colons and dashes); with the 4 struck groups counted as holes, 116 of 123 = 94.3% (the contributor gave 120 of 123 = 97.6%, which counted punctuation tokens and left the struck groups out). The sweep of 11 Nov 2026 found no other cipher in the register.",
   "verification": [
    "key confirms",
    "historical consistency"
@@ -179,14 +179,15 @@
     "reading": "reading_ewsum.md",
     "translation": "translation_ewsum.md",
     "language": "nl",
-    "state": "read",
+    "state": "read in part",
+    "read_share": 0.943,
     "summary": "A letter to 'good friends': the soldiers' pay came yesterday with the envoys and Hendricus; send the account and receipt at once and see how to get it over safely; about twenty soldiers who were out with the colonels could be used for it, so that at Wedde on 10 July the envoy and those not covered by the payment are summoned. A note to 'Heer Drost', signed Hendricus: the truce between 'my gracious lords' and the cities of the Sticht is extended by a month, but Jorien Schenck (probably Georg Schenck van Toutenburg) will not keep it, so travel over the open country will be dangerous. Address: to Hackfort and Meinert van Ham, colonel(s). Under a rule a formula 'ergo : tergo : be[...]lo' with the clear Latin caption 'ad perforandum caput gallinae'.",
-    "note": "Words: 123 cipher words, 120 verbatim from the signs (97.6%), 1 with a marked repair (knech{+t}en), 0 guesses, 2 holes (signs under blots; a word with a blotted sign counts as a hole even where a letter is proposed for it, as in L03 ambasiate[n]). Two renderings doubtful in sense, not in the signs: 'sich verechtert hebben' and the syntax of L17-L20. Dan's reading checker scores 0.400 (decryption), 0.571 (reading, language picked fr) and 0.714 (translation) because its word lists lack 16th-century Low Saxon (nl does not know 'gecomen', 'heren', 'lant'); a human reader should judge the sentences.",
+    "note": "Words: 119 cipher words (not counting colons and dashes), 116 verbatim from the signs (97.5%; 94.3% of 123 with the 4 struck groups counted as holes), 1 with a marked repair (knech{+t}en), 0 guesses, 2 holes (signs under blots; a word with a blotted sign counts as a hole even where a letter is proposed for it, as in L03 ambasiate[n]). Two renderings doubtful in sense, not in the signs: 'sich verechtert hebben' and the syntax of L17-L20. Dan's reading checker scores 0.400 (decryption), 0.571 (reading, language picked fr) and 0.714 (translation) because its word lists lack 16th-century Low Saxon (nl does not know 'gecomen', 'heren', 'lant'); a human reader should judge the sentences.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
-     "note": "Five cipher lines (L01, L06, L10, L11, R04) re-copied from scan 193 agree sign for sign with the transcription; check_marks passes and the writer's own key, frozen before decryption, gives 120 of 123 words verbatim. All 7 prose sentences of the letter, the note and the address read as coherent Low Saxon against the English; the sense of 'sich verechtert hebben' and the syntax of L17-L20 remain doubtful."
+     "note": "Five cipher lines (L01, L06, L10, L11, R04) re-copied from scan 193 agree sign for sign with the transcription; check_marks passes and the writer's own key, frozen before decryption, gave 120 of 123 words verbatim by the contributor's count (116 of 119 after the recount of 13 Nov 2026). All 7 prose sentences of the letter, the note and the address read as coherent Low Saxon against the English; the sense of 'sich verechtert hebben' and the syntax of L17-L20 remain doubtful."
     }
    }
   ],
@@ -203,7 +204,7 @@
    {
     "item": "Four struck groups (L04, L11, L17, R10)",
     "blocker": "illegible",
-    "detail": "Deleted by the writer under ink; not part of the text and not counted in the 123 words."
+    "detail": "Deleted by the writer under ink; the shape under the ink was taken as a hash or knot and not read as a sign. Not part of the 119 words, but counted as holes in the strict share (116 of 123 = 94.3%)."
    },
    {
     "item": "Sense of 'sich verechtert hebben' (L14-L15) and of the clause L17-L20",
