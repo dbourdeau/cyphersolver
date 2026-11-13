@@ -2,6 +2,8 @@
 
 Gelders Archief (Arnhem), 0613 Familie Bentinck / Aldenburg Bentinck, inv. nr. 3889, 79 scans.
 Permalink: https://proxy.archieven.nl/0/9F5C2770E8A342E0A4384AC604A46608 (viewer on www.archieven.nl).
+Status: in progress (not yet written up). The July letter is read from the contemporary slip; the May 1730 letters and the other code scans are workable and untried (see Remaining gaps).
+
 Scans are not in this folder (screenshots kept locally only). Writer and addressee as given by the inventory and the
 catalogue entry; the letter is addressed "A Monsieur de Ginkel".
 
@@ -168,3 +170,24 @@ sharp tiles. User-Agent WAINUT-research, one page at a time. No block met.
 `heldout_fontainebleau1730_transcription.txt`, `heldout_fontainebleau1730_decryption.txt`, `profile.json`,
 `scripts/` (anl_view.py, crop.py, stack.py,
 build_key.py, decrypt.py, reading.py, check_marks.py).
+
+## Integration check (13 Nov 2026)
+
+Re-run and re-checked before integration; nothing in the files was changed except this note and a profile step.
+
+- Reproduced: `scripts/check_marks.py` passes (pairs cover all 253 groups, 107 keys, 0 conflicts, split test 38 of 38
+  known groups agree, 25 unknown, 0 wrong); `docs/_check_profile.py` valid. An independent decoder written from
+  `key_frozen.tsv` and the transcription gives the same text as `decryption_goslinga1730.txt`.
+- Images: scans 23 and 27 fetched on 13 Nov 2026 (Zoomify tiles of the archive viewer, one request at a time) and about
+  70 code groups compared by eye (lines 23.1, 23.2, 27.3, 27.4, 27.10-27.12, carets included): all agree except three
+  glyph doubts the transcriber had already settled on the image (41 or 21 in 23.2, 81 or 61 in 27.11, 888 or 088 in
+  27.10). Scan 24 and the slip on scan 25 were not re-read.
+- What the figure means: the key is the slip aligned with the groups. 29 of the 78 cipher words are spelled out of
+  letter groups alone (confirmed by repeated groups); 46 are word or name groups whose values rest on the slip only.
+  75 of 78 = 96.2% is therefore a reading from the slip, with the letter table cross-checked, not a ciphertext-only
+  result. The split test is internal to a letter the slip covers.
+- Other targets: none shares this code (the Van Reede targets vanreede1787, 1792, 1793, reede1789, reede1796 are Arend
+  Willem van Reede's Berlin despatches 1787-1814 in the Grand Chiffre and in marked 3-digit codes; this is Goslinga to
+  Reinhard van Reede-Ginkel, 1730, another writer, key and archive).
+- The May 1730 letters (another letter table, 130 groups transcribed) are workable by a ciphertext-only attack on
+  the low groups, so the target is not "read in part with outside blockers": it stays in progress with no page.
