@@ -1,8 +1,10 @@
 # este1585: two cipher pages in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, pp. 517 and 523; catalogue 1572)
 
-Status: **p. 517 read** (Brice Dudout, 13 Nov 2026; 223 of 231 words = 96.5%; key K-C02 validated by one pre-registered held-out measurement, M5 0.509 against 0.067). **p. 523 read in part** (5 Nov 2026; 177 of 200 words = 88.5%; key K-C01, partial by our protocol, M5 0.457 against 0.078).
+Status: in progress (the gaps can still be worked: p. 518, where the p. 517 letter goes on, is not transcribed, and the probable words could be settled by a second reader). Both pages read in part (integration check of PR #546, 13 Nov 2026, README read bar applied strictly: sure words only; probable, restored and unresolved words are holes): **p. 517 201/231 = 87.0%**, **p. 523 146/200 = 73.0%**. Key: Satoshi Tomokiyo's table; K-C02 passed its pre-registered held-out test on p. 517 (M5 0.509 against 0.067, bar 0.45), K-C01 was partial on p. 523 (M5 0.457 against 0.078, bar 0.60).
 
-Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 1572 (BAM sweep: "Luigi, card.le
+Contributor's status line (Brice Dudout, counting certain + probable words): **p. 517 read** (Brice Dudout, 13 Nov 2026; 223 of 231 words = 96.5%; key K-C02 validated by one pre-registered held-out measurement, M5 0.509 against 0.067). **p. 523 read in part** (5 Nov 2026; 177 of 200 words = 88.5%; key K-C01, partial by our protocol, M5 0.457 against 0.078).
+
+Contributed by Brice Dudout (Europe chiffrée), with AI agents. Catalogue entry 1572 (BAM sweep: "Luigi, card.le
 d'Este, 9 lettres en partie chiffrées"). **The key is not ours**: it is Satoshi Tomokiyo's reconstruction of "Cardinal
 d'Este's Cipher (1584-1586)" on Cryptiana, made from BnF fr. 16041-16042 (Luigi d'Este to Villeroy). Colbert 338 is not cited
 there.
@@ -41,6 +43,8 @@ BIGA = [pour] (doubtful). M and Z are nulls. `key.tsv` gives the measured and th
 |---|---|---|---|---|---|---|
 | 200 | 146 | 31 | 1 | 22 | 177 = 88.5% | 89.0% |
 
+Strict share (README read bar, integration check of 13 Nov 2026): 146/200 = **73.0%** (certain words only). The 88.5% above is the contributor's figure (certain + probable).
+
 Under 95%: **read in part** (`reading_review` grade B). A blind shape sheet of 14 questions, answered by Brice Dudout, settled
 "l'a", "il", "premier" and removed one stray sign (86.6% before). The pre-registered maximum of that sheet was 89.4%.
 
@@ -70,7 +74,12 @@ be told, and that no one learn the news came from him, since it reaches him thro
 - 22 unresolved words, mostly line 1 (the prince's name: code word y, two barred dumbbells) and the ends of lines 3-4 - blocker: open-codes; y has no value in the table or in our key.
 - The barred dumbbell (e or null; p. 517 L1 and L29 favour null) and the Venus sign (o, a or [faire]) - blocker: open-codes; needs a separate, hashed key amendment and a fresh glossed page.
 
-Not gaps of this reading: pp. 513, 518 and the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is pp. 517 and 523 only.
+- p. 517: 22 probable words, 3 restored words (Espagne twice: the code word y; que) and 5 unresolved words (end of L4, last words of L29) - blocker: not-attempted; the probable words rest on doubtful shapes that a second reader or a palaeographer could settle; y is open-codes as above.
+- p. 523: 31 probable words - blocker: not-attempted; as for p. 517.
+- p. 518, the continuation of the p. 517 letter (about 17 cipher lines) - blocker: not-attempted; not transcribed; it would complete the last words of p. 517 L29.
+- The frozen files of the p. 517 test (PREREG-KC02, the hashed key file, the frozen block bab39c61...) - blocker: not-attempted; not in the repository: the committed `key-p517.tsv` quotes the frozen hash aa7d73db in its own header and hashes to 98ef85f6, so it is a copy, not the hashed file; the contributor can send them.
+
+Not gaps of this reading: pp. 513 and the other letters of entry 1572 (pp. 433, 459, 491, 503, 511 ff.). They are other documents of the volume, not transcribed in this round (no reserve with a literal gloss is left in this volume to test a new key); this target is pp. 517 and 523 only.
 
 ## Escalation
 
@@ -108,8 +117,8 @@ one run: **M5 = 0.509** against **0.067** for the best of 200 shuffled keys; thr
 texts of the volume (which themselves score 0.50-0.73) and from a sensitivity test (5% wrong tokens already give a median of 0.35).
 **Validated.** After the measurement, the reading contradicts one change: the Venus sign is o in L1 and a in L28, not [faire].
 
-**Reading** (`reading-p517.md`, `translation-p517.md`). 231 words: 201 certain, 22 probable, 3 restored, 5 unresolved = **96.5%: read**
-(`reading_review` grade A). Each probable word is justified in the reading file. The writer heard that the pope was told, from the court of
+**Reading** (`reading-p517.md`, `translation-p517.md`). 231 words: 201 certain, 22 probable, 3 restored, 5 unresolved = **96.5%: read** by the contributor's count (certain + probable)
+(`reading_review` grade A). Strict share (README read bar): **201/231 = 87.0%, read in part**; see the integration check below. Each probable word is justified in the reading file. The writer heard that the pope was told, from the court of
 ‹T…›, that "this duke" had letters from the King of [Spain] urging him to make war on Henri III and protect Marshal de Montmorency
 (Damville); he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lodève and his letters to [Spain], and hopes that
 Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away. "Spain" is the code word `y`
@@ -118,6 +127,18 @@ Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan
 **Prior work for p. 517.** No edition of Colbert 338 found (see above); one web search on Poigny, Montmorency, Joyeuse and
 Clermont-de-Lodève in 1584 found nothing printing this advice. Tomokiyo's table is again the key; we claim only the transcription, the
 added values and the reading.
+
+## Integration check (13 Nov 2026, PR #546)
+
+Done on the files as submitted.
+
+- **Own decoder** (written from `key-p517.tsv`, not the contributor's code): `transcription-p517.txt` decoded line by line equals the letter lines of `decryption-p517.txt` on all 29 lines. 1,092 signs in the file (the profile says 1,094), 979 in lines 4-29 as stated.
+- **M5, own implementation.** No measuring script is in the PR. Re-implemented from the description in `validation.txt` (French lexicon of the repository, frequency >= 5, words of 5+ letters, accents removed, j->i, v->u, y->i; dynamic programming over lines 4-29; code words spelled out as letters; 200 shuffles of the letter values, seed 517): **M5 0.509**, best control 0.068, median 0.025 (contributor: 0.509, 0.067, 0.025). With the code words dropped instead: 0.525 against 0.054. The test reproduces.
+- **Hashes and order of events.** By the contributor's record only: the pre-registration, the frozen key file and the frozen block are not in the PR, so their hashes cannot be recomputed, and no external timestamp exists. The committed `key-p517.tsv` hashes to 98ef85f6...; it carries the frozen value aa7d73db in its own header, so it is a later copy of the key. The M5 bar of 0.45 (0.60 for p. 523) was set before the test by the contributor's record; under 0.60 the p. 517 result would also be partial.
+- **Images.** Gallica IIIF through `openapi.bnf.fr` (btv1b10033937d, f272, no bot check): lines 1, 2 and 20 at full resolution, about 110 signs, all agree with the transcription (the code word y stands in L20 as transcribed, "escript en y"; L5's y was not looked at).
+- **Strict share.** p. 517: 201 certain of 231 words = **87.0%**; holes: 22 probable, 3 restored (Espagne twice from the code word y by sense, que), 5 unresolved. p. 523: 146/200 = **73.0%** (31 probable, 1 restored, 22 unresolved). The contributor's figures, 96.5% and 88.5%, count probable words as read; they are theirs. Both pages are read in part. "Spain" for y is a sense-only value and stays a hole.
+- **Reading.** The p. 517 decryption reads as French in its certain words (que le pape a esté advisé de la court de ... que ce duc auoict eu letres du Roy d'[y] de vouloir resolument mouvoir guerre au Roy; la levée des quatre mil hommes de pied qui se faisoict sur l'estat de Milan); the translation follows it.
+- **Prior art and duplicates.** Colbert 338 p. 517 is in no other target, lead or catalogue entry than 1572 (grep of the shelfmark and view). Key credit stays with Tomokiyo.
 
 ## Credits
 
