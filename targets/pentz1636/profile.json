@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "pentz1636",
- "title": "Christian Pentz to Christian IV: Vienna 26 Mar 1636 (catalogue 2543) and Glückstadt c.1629-30, Zobel-family index-switched number cipher, key found from the ciphertext; Vienna read in part, Glückstadt decoded, not read",
+ "title": "Christian Pentz to Christian IV: Vienna 26 Mar 1636 (catalogue 2543), Glückstadt c.1629-30 and Glückstadt 1644-45, Zobel-family index-switched number cipher, key found from the ciphertext and completed from a contemporary gloss; Vienna and the 1644-45 letters read in part, Glückstadt c.1630 decoded, not read",
  "documents": [
   {
    "id": "vienna_1636-03-26",
@@ -72,6 +72,79 @@
     "image_quality": "fair",
     "notes": "300 figure groups on the recto (288 in table-1 runs, 11 codes, 1 struck group), counted by us, so measured is false. One reader (b157), NOT blind: he had applied table 1 to line 1 in his head before the freeze (his log). Frozen 12 Nov 2026 13:30:55 UTC (md5 1e70795f), decoded once. Faint mirrored figures from the verso not transcribed; the verso (image 3) not transcribed."
    }
+  },
+  {
+   "id": "pentz_1644-04-29",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, Tyske Kancelli, SHLK A IV 89, Relationer fra guvernør i Glückstadt Christian Pentz 1629-45, unit 274999, images 321 (recto) and 322/323 (verso, two shots of one page)",
+   "date": "29 Apr 1644",
+   "year": 1644,
+   "country": "Denmark",
+   "route": "Christian Pentz, governor of Glückstadt -> Christian IV",
+   "places": {
+    "from": "Glückstadt",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment over every cipher figure on the recto (image 321) and over line 1 of the verso (image 322); the rest of the verso has none.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 205,
+    "distinct": "unknown",
+    "unit": "mixed",
+    "measured": false,
+    "file": "dudout/transcriptions/HELDOUT-322-A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline images 52789089, 52789090, 52789091 (curl), crops 2.5-5x",
+    "image_quality": "fair",
+    "notes": "Recto: figures and glosses in dudout/key_history/GLOSES-1644.tsv (one reader, glosses read with the figures). Verso lines 2-11: two passes (A, then B on re-made crops without looking at A), identical, frozen by SHA-256 before any decode. Counts not measured. Length: 89 figure groups on verso lines 2-11 (docs/_check_profile.py --measure --digits --drop-first on the file) + 116 on the recto and verso line 1 (dudout/key_history/GLOSES-1644.tsv, counted by us; the 21 at the head of verso line 2 counted once), so measured is false. Contributed by Brice Dudout (PR #545), folded into this target at integration (13 Nov 2026); files in dudout/. Integration check: about 100 verso figures agree with image 52789090; 'Revellin' third figure may be 35 rather than 39."
+   }
+  },
+  {
+   "id": "pentz_1645_img425",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, Tyske Kancelli, SHLK A IV 89, unit 274999, image 425",
+   "date": "1645 (pencil '1645 5/6'; dated in the clear at foot, place read as 'in der Cremper(?) Schantz', uncertain)",
+   "year": 1645,
+   "country": "Denmark",
+   "route": "Christian Pentz -> 'Herr Cantzler' (the Danish chancellor)",
+   "places": {
+    "from": "Krempe",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "margin",
+     "interlinear"
+    ],
+    "source": "Contemporary marginal decipherment of the cipher of lines 1-9 (another hand, insertion mark); later word glosses over lines 6, 10-12. Both read only after the measurement.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 197,
+    "distinct": 50,
+    "unit": "mixed",
+    "measured": true,
+    "file": "dudout/transcriptions/HELDOUT-425-A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet Arkivalieronline image 52789193 (curl), crops 3x",
+    "image_quality": "fair",
+    "notes": "Two passes (A, then B on re-made crops), identical, frozen by SHA-256 before any decode; 4 doubtful figures marked. Contributed by Brice Dudout (PR #545), folded into this target at integration (13 Nov 2026); files in dudout/. Integration check: all 12 lines (about 200 figures) agree with image 52789193."
+   }
   }
  ],
  "system": {
@@ -94,44 +167,49 @@
   },
   "nomenclator": {
    "present": true,
-   "entries": 0,
+   "entries": 1,
    "kinds": [
     "names"
    ],
    "unread_groups": 16
   },
   "nulls": {
-   "present": false
+   "present": true
   },
   "key_order": "partly alphabetical",
   "word_division": "partial",
   "sibling_key": "targets/zobel1629 (Johan Zobel, Paris 1629): same index-switching family, different numbers. Not used to read these letters.",
-  "notes": "distinct_symbols = letter values in the decoder's tables (24 in table 1, 14 in table 2), not signs seen. nomenclator.entries 0 is a placeholder: no code is solved. unread_groups = distinct code numbers in the two transcriptions (9 Vienna, 7 Glückstadt; 165 not counted). homophones: none in key v1; a second value for o (28) is suspected in the Glückstadt letter, not applied. A later key state (v2, key_history/) reads 64, 12, 10 as index numbers from a gloss and adds a third table; not used."
+  "notes": "distinct_symbols = letter values in the decoder's tables (24 in table 1, 14 in table 2), not signs seen. nomenclator.entries 0 is a placeholder: no code is solved. unread_groups = distinct code numbers in the two transcriptions (9 Vienna, 7 Glückstadt; 165 not counted). homophones: none in key v1; a second value for o (28) is suspected in the Glückstadt letter, not applied. A later key state (v2, key_history/) reads 64, 12, 10 as index numbers from a gloss and adds a third table; not used. Documents 3-4 (PR #545): key v3 (dudout/key.tsv): index 62/63/64 table 1, 13/12/11 table 2, 10/9/8 table 3; table 3 the mirror of table 1 with g 33, e 35, r 39 from the 1644 gloss; 251 a null; code 301 = the Archbishop of Bremen (marginal decipherment, image 425), so nomenclator.entries is 1; unread_groups not updated for 560 and 756 (see outcome.codes_open)."
  },
  "conditions": {
   "prior_solution": {
    "exists": "unknown",
-   "where": "Checked 13 Nov 2026 in local OCR: Fridericia, Danmarks ydre politiske Historie II (1881) p. 17 n. 1 cites Pentz and V. Hagen 'til Christ. IV, 26. og 30. Marts (Bremen Nr. 29, 30 a)' and paraphrases the Vienna talks: RISK on content for the 1636 letter; no decipherment seen. Bricka and Fridericia, Kong Christian IV's egenhændige Breve II and IV: Pentz hits read in context, no print of either letter. Fridericia I hit lines; Danske Magazin, Cryptiana, DECODE (earlier passes). Not checked: Ny kgl. Saml. Fol. 616c; the Bremen series cited; Kejseren 14 (unscanned); Hurter; Londorp. Priority not established. Integration check 13 Nov 2026: Fridericia II (archive.org danmarksydrepoli02frid, OCR) p. 17 n. 1 confirmed as quoted; the cited letters are joint letters of Pentz and v. Hagen in the Bremen series; no cipher or decipherment is mentioned in the volume (no hit for chiffr/cifr).",
+   "where": "Checked 13 Nov 2026 in local OCR: Fridericia, Danmarks ydre politiske Historie II (1881) p. 17 n. 1 cites Pentz and V. Hagen 'til Christ. IV, 26. og 30. Marts (Bremen Nr. 29, 30 a)' and paraphrases the Vienna talks: RISK on content for the 1636 letter; no decipherment seen. Bricka and Fridericia, Kong Christian IV's egenhændige Breve II and IV: Pentz hits read in context, no print of either letter. Fridericia I hit lines; Danske Magazin, Cryptiana, DECODE (earlier passes). Not checked: Ny kgl. Saml. Fol. 616c; the Bremen series cited; Kejseren 14 (unscanned); Hurter; Londorp. Priority not established. Integration check 13 Nov 2026: Fridericia II (archive.org danmarksydrepoli02frid, OCR) p. 17 n. 1 confirmed as quoted; the cited letters are joint letters of Pentz and v. Hagen in the Bremen series; no cipher or decipherment is mentioned in the volume (no hit for chiffr/cifr). Documents 3-4 (1644, 1645): contemporary interlinear decipherment on image 321 (and line 1 of image 322) and a contemporary marginal decipherment on image 425, on the leaves themselves; found before the attempt and used for key v3.",
    "found": "not found",
    "used": false
   },
   "inputs": [
    "images",
-   "cleartext context"
+   "cleartext context",
+   "known plaintext",
+   "sibling key"
   ],
   "attack": "ciphertext-only",
-  "human_role": "Malcolm McBratney directed the work and set the rules (transcriptions frozen before one decode, shuffled-key controls at two seeds, every attempt recorded, figures per document, no claim without its check) and authorised filing below his own 65% line; Claude sessions (b106, b110, b157, b190) transcribed, found the key, decoded, counted and prepared this folder. No reading by a person without AI.",
+  "human_role": "Malcolm McBratney directed the work and set the rules (transcriptions frozen before one decode, shuffled-key controls at two seeds, every attempt recorded, figures per document, no claim without its check) and authorised filing below his own 65% line; Claude sessions (b106, b110, b157, b190) transcribed, found the key, decoded, counted and prepared this folder. No reading by a person without AI. Documents 3-4: Brice Dudout set the rules (pre-registration frozen before the key and the held-out, two transcription passes, one measurement); an AI session did the transcription, key, measurement and reading (PR #545).",
   "tools": [
    "own Python decoder and tally (scripts/build.py, standard library; originals in scripts/original/)",
    "own shuffled-key controls, German 4-gram models from Project Gutenberg texts, 5,000 keys at seeds 20261112 and 7 (scripts/shuffle_control.py)",
    "Pillow crops",
-   "RFC 3161 and OpenTimestamps through the contributor's stamp script"
+   "RFC 3161 and OpenTimestamps through the contributor's stamp script",
+   "own Python decoder and pre-registered measure (dudout/scripts/measure2.py; German 4-gram, repository corpus de-gutenberg) (documents 3-4)",
+   "Pillow crops (documents 3-4)"
   ],
   "models": [
    "Claude (Anthropic), sessions b106, b110, b157 of 12 Nov 2026 (model ids not recorded)",
-   "claude-opus-5-5 (b190, the session that prepared this folder, 13 Nov 2026)"
+   "claude-opus-5-5 (b190, the session that prepared this folder, 13 Nov 2026)",
+   "claude-opus-5-5 (Brice Dudout's session for documents 3-4, 13 Nov 2026)"
   ],
-  "sessions": 4,
+  "sessions": 5,
   "first_date": "2026-11-12",
   "last_date": "2026-11-13"
  },
@@ -216,24 +294,59 @@
    ],
    "what": "Integration check (PR #522): scripts/build.py re-run with python3 -I in the worktree reproduces every figure and leaves the files unchanged; own decoder written from the stated table rules (not the contributor's key file) gives the same letters as decryptions/vienna_1636-03-26.txt and as the Glückstadt unit list (288 letters). Images fetched from api.rigsarkivet.dk (48703328, 48703329, 52788770): Vienna lines 1-13, 15-18 (about 130 figures) and Glückstadt lines L01-L09 (131 figures) agree with the frozen transcriptions, except Vienna line 4 figure 8 (25, written like the 15 of reale: would give wolen) and the code 165 on image 38 left line 1 already declared missed. Strict recount by the README bar: Vienna 16/33 = 48.48% (berhuren is a transposed decode, a hole), Glückstadt 23/68 = 33.82% (doubtful-figure units nUr and Prouiant are holes); contributor's 17/33 and 25/68 kept as theirs. Own control with lang de-modern, same permutations: 0/1,000 for each letter. Pentz's key (letters 14-61, index 62 and 13) differs from Zobel's (letters 4-27, index 28-39): separate entries. Fridericia II p. 17 n. 1 checked on archive.org: cites joint Pentz-Hagen letters of 26 and 30 March in the Bremen series, no decipherment. Folder only, Status: in progress.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "access",
+   "what": "Documents 3-4 (Brice Dudout, PR #545): Unit 274999 (503 images) fetched with curl from api.rigsarkivet.dk; thumbnails 137-502 swept: number-cipher pages at images 321-323, 402-405, 408, 411, 412, 420, 425 (1644-45).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Documents 3-4 (Brice Dudout, PR #545): Image 321 carries a contemporary letter-by-letter decipherment over every figure: 41 figure-letter pairs; they fit pentz1636 tables 1-2 and index numbers, and give table 3 as a mirror of table 1 with g 33, e 35, r 39; 251 is a null. Pre-registration and measure frozen (21:35 CET), key v3 frozen (21:36).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Documents 3-4 (Brice Dudout, PR #545): Held-out (image 322 lines 2-11 + image 425, 286 figures, two identical passes, frozen 21:41) decoded once: coverage 99.6%, N = 0.760 against bar 0.75, best of 200 within-table permutations 0.145 (bar +0.30): PASS. Readings: 1644 letter 27/28, 1645 letter 38/41.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction",
+    "statistical test"
+   ],
+   "what": "Integration check (PR #545, folded into this target under dudout/, one key one entry): hashes recomputed: key v3, glosses, PREREG-2.md and the held-out files match; measure2.py does not (a3f24f4b vs frozen 198495aa). measure2.py read and run with python3 -I on the frozen files: output byte-identical to MESURE-2.txt (N 0.7595, best control 0.1452). Own decoder from dudout/key.tsv equals both decryptions; 89 glossed figures on the recto agree with the key (0 disagreements). Rigsarkivet images 52789089, 52789090, 52789193: about 300 figures agree, one doubt ('Revellin' third figure 39 or 35). Strict recount: 1644 26/28 = 92.9% (REVELLIN, CREMPER holes), 1645 37/41 = 90.2% (560, 756, 29 33 28 20, C{O}MMANDIRT holes; 301 read from the marginal decipherment); contributor's 27/28 and 38/41 kept as theirs. Key v3 applied to the Vienna figures reads 64, 63, 12, 11, 9, 8 as index numbers (den, die, dan, deruon); not re-counted.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The key was found from the ciphertext of the Vienna letter itself (rule alphabets fitted to word runs while transcribing, before the freeze), with no decipherment on or beside it; the clear German around the runs is context. The Glückstadt letter was then decoded with table 1 of that key unchanged. Neither text reaches the contributor's own 65% line.",
+  "method_basis": "The key was found from the ciphertext of the Vienna letter itself (rule alphabets fitted to word runs while transcribing, before the freeze), with no decipherment on or beside it; the clear German around the runs is context. The Glückstadt letter was then decoded with table 1 of that key unchanged. Neither text reaches the contributor's own 65% line. Documents 3-4 (1644, 1645): key v3 completed from the contemporary interlinear decipherment of the 1644 recto (key recovered based on adjacent plaintext), then applied to the unglossed verso and to the 1645 letter; the 1644 recto is read from that decipherment.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
   "fraction_read": 0.485,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Integration check (13 Nov 2026), README read bar applied strictly, per document, never pooled: Vienna 16/33 = 48.48% (berhuren, a decode with u and h transposed that the reading corrects to BERUHREN, counted as a hole); Glückstadt 23/68 = 33.82% (units with a doubtful figure, nUr and Prouiant, counted as holes). The contributor's own first-pass figures (counts.txt, scripts/build.py): Vienna 17/33 = 51.52%, Glückstadt 25/68 = 36.76%. fraction_read is the Vienna figure, the catalogued document.",
+  "fraction_read_source": "Integration check (13 Nov 2026), README read bar applied strictly, per document, never pooled: Vienna 16/33 = 48.48% (berhuren, a decode with u and h transposed that the reading corrects to BERUHREN, counted as a hole); Glückstadt 23/68 = 33.82% (units with a doubtful figure, nUr and Prouiant, counted as holes). The contributor's own first-pass figures (counts.txt, scripts/build.py): Vienna 17/33 = 51.52%, Glückstadt 25/68 = 36.76%. fraction_read is the Vienna figure, the catalogued document. Documents 3-4 (PR #545, dudout/), strict: Glückstadt 1644 26/28 = 92.9%, Glückstadt 1645 37/41 = 90.2% (contributor's 27/28 = 96.4% and 38/41 = 92.7%).",
   "codes_open": {
-   "open": 16,
-   "total": 16,
-   "tokens_open": 23
+   "open": 18,
+   "total": 19,
+   "tokens_open": 25
   },
   "verification": [
    "statistical test",
@@ -243,7 +356,7 @@
    "date": "2026-11-13",
    "file": "controls/shuffle.txt",
    "verdict": "not applicable",
-   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys, German 4-gram, seeds 20261112 and 7: Vienna 0 and 0 (true -2.4750; best -3.4441, -3.4529); Glückstadt 0 and 0 (true -5.4767; best -6.7301, -6.5759). Short texts. Integration check (13 Nov 2026): the contributor's corpora are not in git, so the filed control lines were not re-run; an own control with the repository German model (lang, de-modern) and the same permutation rules gives 0 of 1,000 for each letter (Vienna true -3.14 per char, best shuffle -6.46; Glückstadt true -6.07, best -7.47)."
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys, German 4-gram, seeds 20261112 and 7: Vienna 0 and 0 (true -2.4750; best -3.4441, -3.4529); Glückstadt 0 and 0 (true -5.4767; best -6.7301, -6.5759). Short texts. Integration check (13 Nov 2026): the contributor's corpora are not in git, so the filed control lines were not re-run; an own control with the repository German model (lang, de-modern) and the same permutation rules gives 0 of 1,000 for each letter (Vienna true -3.14 per char, best shuffle -6.46; Glückstadt true -6.07, best -7.47). Documents 3-4 (PR #545): the contributor's pre-registered test (dudout/scripts/PREREG-2.md, measure2.py; German 4-gram on the repository corpus de-gutenberg): N 0.7595 against bar 0.75, best of 200 within-table permutations 0.1452 (bar +0.30), coverage 99.6%: passed narrowly; reproduced byte for byte at integration. Freeze order by the contributor's record (SHA-256 files only); the committed measure2.py does not match its frozen hash (a3f24f4b vs 198495aa)."
   },
   "provenance": "contributed",
   "credits": [
@@ -258,6 +371,18 @@
     "role": "pointer",
     "note": "catalogue entry 2543 (Rigsarkivet TKUA sweep, 11 Nov 2026): the Vienna leaves and their images",
     "date": "2026-11-11"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "documents 3-4 (Glückstadt 1644 and 1645, unit 274999 images 321-322 and 425; PR #545): table 3 completed from the contemporary gloss (key v3), pre-registered held-out test, both letters read in part",
+    "date": "2026-11-13"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "interlinear decipherment on image 321 and marginal decipherment on image 425 (unit 274999), used for key v3 and code 301",
+    "date": "1644"
    }
   ],
   "gaps": [
@@ -305,6 +430,36 @@
     "item": "Glückstadt letter is research/leads.json lead 2565 (not in the catalogue)",
     "blocker": "not-attempted",
     "detail": "to be closed with docs/_check_catalogue.py --close when the target is written up"
+   },
+   {
+    "item": "Documents 3-4: codes 560 and 756 (image 425)",
+    "blocker": "open-codes",
+    "detail": "no gloss on either; the untranscribed 1644-45 letters may give them"
+   },
+   {
+    "item": "Documents 3-4: image 425 group 29 33 28 20 (T1 i e z q)",
+    "blocker": "not-attempted",
+    "detail": "perhaps a misread 23 (ietzt); the margin's 'sich' does not fit"
+   },
+   {
+    "item": "Documents 3-4: image 322 'Revellin' third figure (39 or 35) and the struck figure",
+    "blocker": "not-attempted",
+    "detail": "a second look at the original or a better image"
+   },
+   {
+    "item": "Documents 3-4: other 1644-45 cipher letters of unit 274999 (images 402-405, 408, 411, 412, 420)",
+    "blocker": "not-attempted",
+    "detail": "not transcribed; key v3 should read them"
+   },
+   {
+    "item": "Documents 3-4: dudout/scripts/measure2.py is not the frozen file",
+    "blocker": "not-attempted",
+    "detail": "SHA-256 a3f24f4b, frozen value 198495aa; the contributor can send the frozen version"
+   },
+   {
+    "item": "Key v3 on the Vienna letter",
+    "blocker": "not-attempted",
+    "detail": "key v3 reads 64, 63, 12, 11, 9, 8 as index numbers, which the Vienna count lists as codes; a new, separately counted pass is owed"
    }
   ],
   "texts": [
@@ -347,6 +502,53 @@
     "read_share": 0.338,
     "summary": "Pentz as governor of Glückstadt writes to the King about a letter to His Majesty, Hamburg, men come in, and asks for an admiral, timber from Norway, provisions, gunners and fireworkers for the fortress; probably early 1630, when the Elbe dispute with Hamburg led to a fleet under an admiral. Holes in most sentences.",
     "note": "read_share is the strict share at integration: 23 of 68 units (33.82%), units with a doubtful figure counted as holes. The contributor's first-pass figure is 25/68 = 36.76%. 'Decoded, not read': most sentences have holes."
+   },
+   {
+    "doc": "pentz_1644-04-29",
+    "label": "Christian Pentz to Christian IV, Glückstadt, 29 Apr 1644",
+    "transcription": [
+     "dudout/key_history/GLOSES-1644.tsv",
+     "dudout/transcriptions/HELDOUT-322-A.txt"
+    ],
+    "decryption": [
+     "dudout/decryptions/pentz_1644-04-29_img322.txt"
+    ],
+    "reading": "dudout/readings/pentz_1644-04-29.md",
+    "translation": "dudout/translations/pentz_1644-04-29.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.929,
+    "summary": "Pentz tells the King he can no longer harass the Swedes from Glückstadt as his raiding parties did, because the garrison was cut and the troops sent to Dithmarschen; at times only four men hold the ravelin before the Krempe gate, and the troops in Dithmarschen have done nothing against the enemy.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (Anthropic), for Brice Dudout: a model reading, not a person, and not independent (same session).",
+     "date": "2026-11-13",
+     "note": "Every cipher word sits in its clear clause; recto glossed by the contemporary decipherer and matched by the key; verso read by the frozen key alone, one word probable."
+    },
+    "note": "read_share is the strict share at integration: 26 of 28 units (92.9%); holes {REVELLIN} (doubtful figures) and CREMPER (last figure 21 inside a table-2 run, a corrected decode). The recto is read from the contemporary interlinear decipherment, which the key matches; the verso was deciphered with key v3. The contributor's figure is 27/28 = 96.4% ('read')."
+   },
+   {
+    "doc": "pentz_1645_img425",
+    "label": "Christian Pentz to the Chancellor, 1645",
+    "transcription": [
+     "dudout/transcriptions/HELDOUT-425-A.txt"
+    ],
+    "decryption": [
+     "dudout/decryptions/pentz_1645_img425.txt"
+    ],
+    "reading": "dudout/readings/pentz_1645_img425.md",
+    "translation": "dudout/translations/pentz_1645_img425.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.902,
+    "summary": "With the Archbishop of Bremen's consent Pentz sent a strong party to fall on Wrangel's quarters; the men could move hidden in the wood by a separate road as far as Rendsburg.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), for Brice Dudout: a model reading, not a person, and not independent (same session).",
+     "date": "2026-11-13",
+     "note": "Running German read by the frozen key alone, confirmed after the measure by a contemporary marginal decipherment; two codes and one four-figure group open."
+    },
+    "note": "read_share is the strict share at integration: 37 of 41 units (90.2%); holes codes 560 and 756, the group 29 33 28 20 and C{O}MMANDIRT (cipher c m m, the o from a correction by another hand). Code 301 counted read from the contemporary marginal decipherment (read after the measure); without it 36/41 = 87.8%. The contributor's figure is 38/41 = 92.7%."
    }
   ],
   "key_file": [

@@ -1,6 +1,8 @@
-# Christian Pentz to Christian IV: Vienna 1636 (catalogue 2543) and Glückstadt c.1629-30, in the Zobel-family number cipher
+# Christian Pentz to Christian IV: Vienna 1636 (catalogue 2543), Glückstadt c.1629-30 and Glückstadt 1644-45, in the Zobel-family number cipher
 
-Status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text).
+Status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text; and, since PR #545, the 1644-45 cipher letters of unit 274999 not yet transcribed).
+
+Documents 3-4 (Glückstadt 1644 and 1645, Brice Dudout, PR #545) use the same key and are filed here under `dudout/` (one key, one entry); see the section "Documents 3-4" below. Nothing in Malcolm McBratney's files was changed by that merge.
 
 Contributor's status line: **key family recovered; read in part; both documents below our own 65% line.** Contributed. No claim of a first reading (see Prior art).
 
@@ -94,9 +96,38 @@ Done on the files as submitted; no human reader. Folder only, no page: both lett
 - **Catalogue.** Entry 2543 (the Vienna letter) matches the leaves: autograph, 26 Mar / 5 Apr 1636, cipher on image 37 right and image 38 left, codes 85, 165, 168, 226. It stays in the catalogue while the target is in progress. The Glückstadt letter is not in the catalogue but is `research/leads.json` lead **2565** (sweep b169 backfill, unit 274999): close it into this target at write-up.
 - **Order of events.** The RFC 3161 reply of 12 Nov 2026 04:14:03 GMT (Sectigo) carries the SHA-256 of `MANIFEST.sha256` as its message imprint (checked with `openssl ts -reply -text`; the signature chain was not verified), and that manifest lists the stamped b106 key, Vienna transcription (md5 953fd409, the frozen file) and run output, whose SHA-256 match. So the Vienna key, transcription and decode existed by then. That the key was found while transcribing is declared. The Glückstadt files are in no stamp before the PR folder stamp of 13 Nov.
 
+## Documents 3-4: Glückstadt 1644 and 1645 (Brice Dudout, PR #545; files in `dudout/`)
+
+Contributed by Brice Dudout (13 Nov 2026), working with an AI model, as a new target `pentz1644`. The contributor said it is the same key as this target and offered to fold it in; it is folded here under the repository's one-key-one-entry rule (key v3 below agrees with every value of key v1 and v2 and completes table 3). The contributor's own notes and profile are kept unchanged as `dudout/NOTES_PR545.md` and `dudout/profile_PR545.json`; all paths in this section are relative to `dudout/`.
+
+| | 3. Pentz to Christian IV, Glückstadt, 29 Apr 1644 | 4. Pentz to "Herr Cantzler", 1645 |
+|---|---|---|
+| archive | Rigsarkivet, Tyske Kancelli, SHLK A IV 89, unit 274999 (the unit of the c.1629-30 letter), images 321 (recto, ref 52789089) and 322 = 323 (verso, refs 52789090/91) | same unit, image 425 (ref 52789193; pencil "1645 5/6") |
+| cipher | 11 lines on the recto, every figure with a contemporary letter-by-letter decipherment above it; 11 lines on the verso, only line 1 glossed | 12 lines; a contemporary marginal decipherment of lines 1-9 (another hand); later word glosses on lines 6 and 10-12 |
+| transcription | recto with its glosses: `key_history/GLOSES-1644.tsv`; verso lines 2-11: `transcriptions/HELDOUT-322-A.txt` | `transcriptions/HELDOUT-425-A.txt` |
+| contributor's figure | 27/28 = 96.4 % ("read") | 38/41 = 92.7 % (37/41 without code 301) |
+| **strict figure (integration check)** | **26/28 = 92.9 %, read in part** | **37/41 = 90.2 %, read in part** |
+
+**Key v3** (`key.tsv`, `key_history/KEY-v3.json`). Index 62, 63, 64 select table 1; 13, 12, 11 table 2; 10, 9, 8 table 3 (62, 64, 13, 11, 10, 8 attested by the 1644 gloss; 63, 12, 9 from key v2). Tables 1 and 2 are key v1/v2 of this target, unchanged; every glossed value agrees. Table 3 is the mirror of table 1 (a-i = 29 up to 37, k-z = 28 down to 14) with three glossed exceptions, g = 33, e = 35, r = 39; its glossed values include v2's t 19, e 35, n 25, a 29. 251 is a null (never glossed; it stands inside nich-251-t). Code 301 = the Archbishop (of Bremen), from the marginal decipherment on image 425; 560 and 756 open.
+
+**Pre-registered test, by the contributor's record.** The contributor froze, by SHA-256 only and in this order, the pre-registration and its script (`scripts/PREREG-2.md`, `scripts/measure2.py`), then key v3, then the held-out transcription (image 322 lines 2-11, which carry no gloss, and the whole cipher of image 425: 301 groups, 286 figures; two passes said to be identical). No external timestamp exists; the folder arrived in one commit. Bar: N >= 0.75, N >= best control + 0.30, coverage >= 90 %. Result (`controls/MESURE-2.txt`): coverage 254/255 = 99.6 %, N = 0.7595, best of 200 within-table permutations 0.1452: passed, narrowly on the first condition. The reading, not the score, carries the text.
+
+**What the letters say.** 1644: Pentz can no longer harass the enemy from Glückstadt as his raiding parties did, because the garrison was cut and the troops taken to Dithmarschen; at times only four men hold the ravelin before the Krempe gate. 1645: with the consent of the Archbishop of Bremen (code 301) he has ordered a strong party to fall on Wrangel's quarters; the men can move hidden in the wood by a separate road as far as Rendsburg (the Torstensson war). `readings/`, `translations/`.
+
+### Integration check (13 Nov 2026, PR #545)
+
+- **Hashes.** Recomputed: `KEY-v3.json` f5d41697, `GLOSES-1644.tsv` 65a924fa, `PREREG-2.md` 67d733e3, `HELDOUT.json` ca92cbd3 and the three pass files match the hash files. **`scripts/measure2.py` does not match**: its SHA-256 is a3f24f4b..., the frozen value in `controls/HASHES-PREREG-2.sha256` is 198495aa.... The committed script is therefore not the file that was frozen (it was changed after the freeze, by a path or a byte; what changed is not known). Its statistic is the one PREREG-2.md describes, and it reproduces the filed output exactly (next point), but the freeze of the script is not shown by the files.
+- **Reproduction.** `measure2.py`, read first (standard library, reads the repository corpus `lang/corpora/de-gutenberg.txt`, SHA-256 4828ed84 as asserted, no network, no writes), run with `python3 -I` on the frozen key and held-out: output byte-identical to `controls/MESURE-2.txt` (N 0.7595, best control 0.1452, PASS). After the move into `dudout/` its corpus path (`parents[3]`) no longer reaches `lang/`; it was run from a scratch copy, and the frozen file is left unchanged.
+- **Own decoder** (written from `key.tsv`, not importing the contributor's code or `KEY-v3.json`): the held-out decode equals both files in `decryptions/` letter for letter. On the recto and verso line 1, the 89 figures that carry a gloss letter all agree with the key (0 disagreements).
+- **Images.** `api.rigsarkivet.dk/ao/v1/images/52789089`, `52789090`, `52789193` load with plain curl. Image 425, all 12 cipher lines (about 200 figures), and image 322 lines 1-11 (about 100 figures) agree with the transcriptions, with one doubt: in "Revellin" (322 line 3) the third figure, transcribed 39 in both passes, may be 35 (as written it is not clearly either); read as 35 the group gives r e u [struck] e l l i n directly. The recto figures and their glosses (image 321) were looked at line by line and agree with `GLOSES-1644.tsv`; the margin of image 425 reads as quoted in the reading (mit belieben des Ertzbischoffs zu Bremen ...).
+- **Strict share (README read bar).** 1644: 26/28 = 92.9 %. Holes: {REVELLIN} (doubtful figures; the contributor also counts it probable) and CREMPER, whose last figure 21 stands inside a table-2 run where the frozen key has no 21 (the reading assumes the writer forgot the index for table 1; a corrected decode, a hole as `berhuren` above). VERRINGER is counted read: every cipher letter is read and glossed; the [T] is an editorial completion of a word the cipher and the gloss both end at r. 1645: 37/41 = 90.2 %. Holes: codes 560 and 756, the group 29 33 28 20 (T1 i e z q, unresolved), and C{O}MMANDIRT (the cipher gives c m m; the o comes from a small 18 written over the first 16 by another hand; a corrected decode). Code 301 is counted read: its value comes from the contemporary marginal decipherment, an external record on the leaf, not from the sense; it was read only after the measure, which matters for the test (301 is a code, ignored by the measure) but not for the reading. Without 301: 36/41 = 87.8 %. The contributor's figures, 27/28 = 96.4 % and 38/41 = 92.7 %, are theirs. Both letters are read in part.
+- **Method per document.** The 1644 recto: read from the existing contemporary decipherment (and the key agrees). The 1644 verso and the 1645 letter: deciphered with key v3, which was recovered from the adjacent gloss (key recovered based on adjacent plaintext); code 301 from the marginal decipherment.
+- **Key v3 and the Vienna letter.** Key v3 reads 64, 63, 12, 11, 9 and 8 as index numbers. In the Vienna transcription (document 1) these stand where the integration check of PR #522 lists them as open codes; with key v3 the runs after them decode to words (64 34 33 17 "den", 13 12 41 46 42 "die", 8 9 32 29 25 "dan", 13 11 41 42 57 54 60 61 "deruon"). This is a test on the Vienna letter's figures only, not a re-count: McBratney's files and figures are unchanged, and the code list in Remaining gaps now carries the note.
+- **Not done.** The other 1644-45 cipher letters of the unit (images 402-405, 408, 411, 412, 420, several pages each, found by the contributor's thumbnail sweep) are not transcribed; the key should read them, and they may give 560 and 756. Catalogue entry 2565 (unit 274999) says images 137-503 were not viewed; it is left as it is until the write-up.
+
 ## Remaining gaps
 
-- Codes: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165; Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found; some Vienna low numbers may be index numbers (key v2).
+- Codes: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165 (key v3 of documents 3-4 reads 64, 63, 12, 11, 9, 8 as index numbers: see Documents 3-4); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found; some Vienna low numbers may be index numbers (key v2).
 - Suspected homophone 28 = o in the Glückstadt letter (andwzrt, bekzme, anherkzmen) - blocker: no-key-material; not applied to any decode or count.
 - Glückstadt verso (image 3) - blocker: not-attempted; the letter runs on there and is not transcribed.
 - Second, blind transcription of both letters (including Vienna line 4 figure 8, 25 or 15, wowen / wolen, seen on the image at integration, and code 165) - blocker: not-attempted; one reader each, neither blind.
@@ -104,6 +135,12 @@ Done on the files as submitted; no human reader. Folder only, no page: both lett
 - Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a, TKUA Kejseren 14 - blocker: needs-physical-access; may hold copies or decipherments.
 - Short texts (Vienna 20 letter words) - blocker: too-short; the shuffle test is weak on its own.
 - The Glückstadt letter was lead 2565 and is now catalogue entry 2565 (promoted 13 Nov 2026, PR #527); it is worked in this folder - blocker: not-attempted; narrow or remove entry 2565 at write-up.
+- Documents 3-4, codes 560 and 756 (image 425) - blocker: open-codes; no gloss on either; the untranscribed 1644-45 letters may give them.
+- Documents 3-4, image 425 group 29 33 28 20 (T1 i e z q) - blocker: not-attempted; perhaps a misread 23 (ietzt); the margin has "sich", which does not fit.
+- Documents 3-4, image 322 "Revellin" third figure (39 or 35) and the struck figure - blocker: not-attempted; a second look at the original or a better image.
+- Documents 3-4, the other 1644-45 cipher letters of unit 274999 (images 402-405, 408, 411, 412, 420) - blocker: not-attempted; not transcribed; key v3 should read them.
+- Documents 3-4, `dudout/scripts/measure2.py` is not the frozen file (SHA-256 a3f24f4b, frozen value 198495aa) - blocker: not-attempted; the contributor can send the frozen version.
+- Documents 3-4, printed editions of the 1644-45 letters - blocker: not-attempted; not searched beyond the checks above.
 
 ## Escalation
 
@@ -113,3 +150,4 @@ Done on the files as submitted; no human reader. Folder only, no page: both lett
 - [ ] print: Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a and Kejseren 14 not seen; Fridericia II p. 17 checked.
 - [x] key-rebuild: tables 1 and 2 rebuilt from the Vienna runs; table 2 k l m w x y z and the codes have no material yet.
 - [ ] retry: a second, blind transcription of both letters (Vienna line 4 figure 8, code 165), the Glückstadt verso (image 3), and the suspected homophone 28 = o.
+- [ ] retry (documents 3-4): transcribe the 1644-45 letters at images 402-405, 408, 411, 412, 420 with key v3; re-decode the Vienna letter with key v3 (64, 63, 12, 11, 9, 8 as index numbers) in a new, separately counted pass.
