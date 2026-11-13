@@ -11,7 +11,7 @@ for t in terms:
             r=subprocess.run(['curl','-s','-m','40','-A',UA,'https://www.digitale-sammlungen.de/api/search?'+q],capture_output=True,text=True).stdout
             try:d=json.loads(r)
             except Exception: print('ERR',t,r[:100]);break
-            docs+=d['docs'];n=d['numTotal']
+            docs+=d.get('docs',[]);n=d.get('numTotal',0)
             if len(docs)>=n or not d['docs']:break
             p+=1;time.sleep(2)
         print(t,n)
