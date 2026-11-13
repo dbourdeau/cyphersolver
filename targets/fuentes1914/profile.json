@@ -1,0 +1,253 @@
+{
+ "schema_version": 1,
+ "target": "fuentes1914",
+ "title": "A. Fuentes D. to Pablo González, Monterrey, 13 June [1914] (catalogue 1465): four coded runs in Clave Extra 3 read in part with the key rebuilt from the pencil decipherment of LXVIII-1.14.1943.1 (11 of 13 coded words verbatim, 2 with a marked one-figure repair, no holes)",
+ "documents": [
+  {
+   "id": "LXVIII-1.17.2435.1",
+   "read": "read in part",
+   "shelfmark": "Mexico City, CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo LXVIII-1 (Manuscritos del General Manuel Willars González [Pablo González]), LXVIII-1.17.2435.1",
+   "date": "13 June [1914] (the sheet gives '13 Jun.'; the year is the catalogue's)",
+   "year": 1914,
+   "country": "Mexico",
+   "route": "Col. A. Fuentes D., Jefe de E. Mayor, Monterrey -> Gral. Pablo González",
+   "places": {
+    "from": "Monterrey",
+    "to": "unknown"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare coded runs; no decipherment on the sheet. Key: Clave Extra 3, rebuilt from LXVIII-1.14.1943.1 (same fondo; targets/murguia1914)."
+   },
+   "length": {
+    "tokens": 81,
+    "distinct": 29,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_LXVIII-1.17.2435.1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer images (visor.cehm.org.mx), https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/LXVIII-1/17/2435/1/LXVIII-1.17.2435.1.jzd",
+    "image_quality": "fair",
+    "notes": "Pencil, a large loop drawn across the text. Two passes without the key (overview and 1:1 crops; fresh crops enlarged 1.6x): same group at 77 of 81 places, the 4 differences settled on the enlarged crops; F04 g11 has its first figure hidden under the loop. Blind check by the reviewer: 39 of 39 groups agree."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Clave Extra 3 (so named on LXVIII-1.14.1943.1). Two-figure groups 10-99 in a table read by the units figure: tens 1/2 = a0 b9 c8 d7 e6 f5 g4 h3 i2 j1; tens 3/4 = l0 ll9 m8 n7 ñ6 o5 p4 q3 r2 rr1; tens 5/6 = s0 t9 u8 v7 y4 z3 (51 -mente); 7x-9x are word groups (78 por, 82 enemigo, 87 para, 90 parque, 91 la, 96 de, 99 que; 88 and 97 not identified). The layout gives each letter two homophones, one per tens figure of its pair.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "mixed"
+  },
+  "distinct_symbols": 62,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 10,
+   "kinds": [
+    "common words",
+    "word parts"
+   ],
+   "unread_groups": 2
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts the 62 cells of the Clave Extra 3 key (key_frozen.tsv holds the 60 with a value); 29 distinct groups occur on this sheet, the word groups 3 times as 2 distinct groups (96, 99). Groups are joined by hyphens; runs are separated by clear words."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the sheet; the key comes from LXVIII-1.14.1943.1 (targets/murguia1914). No edition found (web searches 12-13 Nov 2026; Narváez 2019 and 2025 and M. W. González, Con Carranza, not read).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "human_role": "WAINUT set the task (catalogue 1465) and the rules; AI language-model agents transcribed the figures twice, built or fitted and froze the key, decrypted, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM viewer images",
+   "scripts in this folder (decryption, mark check, word count)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "LXVIII-1.2.56.1, 2.75.1, 7.890.1, 14.1943.1 (4 pages), 17.2435.1, 23.3148.1 and 23.3165.1 fetched from the CEHM image server one at a time, 2 s apart; 8.957.1-2 returned 404.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Pencil, a large loop drawn across the text. Two passes without the key (overview and 1:1 crops; fresh crops enlarged 1.6x): same group at 77 of 81 places, the 4 differences settled on the enlarged crops; F04 g11 has its first figure hidden under the loop. Blind check by the reviewer: 39 of 39 groups agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "what": "Clave Extra 3 key (targets/murguia1914/key_frozen.tsv, 60 entries) rebuilt from the contemporary pencil decipherment of LXVIII-1.14.1943.1 and frozen before this sheet was decrypted; copied unchanged into this folder. This sheet was not used to build or test the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Decrypted mechanically with key_frozen.tsv and read as sentences with every departure marked; scripts/check_marks.py passes (4 runs, 2 marks, 0 failures). 13 coded words: 11 verbatim, 2 with a marked changed value where the figure as read is one stroke off (F02 g10 24 for 26; F04 g11 12 for 42, first figure hidden). Per run verbatim: F01 4/4, F02 3/4, F03 2/2, F04 2/3.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Web searches (Pablo González 1913-1914 clave; cifrados constitucionalistas; Narváez, 'Algunos casos criptográficos del movimiento constitucionalista, 1914-1915', Historia Mexicana 75/2, 2025), repeated once by the reviewer on 13 Nov: no edition or decipherment of these documents or of Clave Extra 3. Narváez 2025 (403 to a script) and 2019, and M. W. González, Con Carranza (1933-34), not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Independent blind review by a second AI language-model agent (13 Nov 2026): 39 of 39 groups agree on its own crops, including the hidden figure of F04 g11; scripts reproduced; reading graded A.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py on validation.tsv, the mechanical values of the frozen key per group; scripts/validation_pairs.py): 81 read tokens, 29 types, es-modern order 4: reading -2.175 per letter; random keys mean -5.569, max -3.946 (z 6.0); key annealed onto shuffled ciphertext best -2.591 (mean -2.675, z 6.0); annealer on the real text -2.295. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from the cipher and contemporary pencil decipherment of LXVIII-1.14.1943.1 (same fondo and recipient; targets/murguia1914), frozen and tested there on held-out page 4 (0.842 letter agreement), then applied unchanged to this bare sheet.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.846,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/count_words.py on the coded runs: 11 of 13 coded words verbatim from the signs; the other 2 carry a marked one-figure repair checked on the image. No holes. The clear text reads in full (the quoted reading, clear and coded, is 117 words).",
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "independent verification",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the pencil decipherment on the typed copy of LXVIII-1.14.1943.1 (pp. 3-4), from which the Clave Extra 3 key used here was rebuilt (targets/murguia1914)",
+    "date": "1914",
+    "source": "CEHM images of LXVIII-1.14.1943.1, pp. 3-4"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "four coded runs read in part with the Clave Extra 3 key rebuilt in targets/murguia1914; 11 of 13 coded words verbatim, 2 with a marked one-figure repair",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "two passes from the CEHM images, without the key; see the transcription files",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent, blind from the scans: sign check, scripts re-run, reading read as sentences against the translation; no human palaeographer",
+    "date": "2026-11-13"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "LXVIII-1.17.2435.1",
+    "label": "Fuentes to González, Monterrey, 13 Jun [1914]",
+    "transcription": "transcription_LXVIII-1.17.2435.1.txt",
+    "decryption": "decryption_LXVIII-1.17.2435.1.txt",
+    "reading": "reading_LXVIII-1.17.2435.1.md",
+    "translation": "translation_LXVIII-1.17.2435.1.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.846,
+    "summary": "The chief of staff writes that the chiefs of forces draw pay at different rates (in some pay sheets the first captain is given $5.00, in others $4.00 or $3.00, and the same for the other officers) and proposes a uniform scale from private (one peso) to colonel (eight pesos), asking that González's decision be sent to all chiefs.",
+    "note": "13 coded words in 4 runs: 11 verbatim from the signs (84.6%), 2 with a marked changed value ({g/e}l, establece{i/r}), 0 holes. The note as a whole has no hole; the coded words are a small part of it. The reviewer proposed read; the state is read in part because 84.6% of the coded words are verbatim, under the 95% bar.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "Three clean sentences; the coded parts fit the clear text exactly (haberes, papeletas, capitán primero, demás oficiales, uniformidad). Two marked one-figure repairs, both checked on the image."
+    }
+   }
+  ],
+  "key_file": "key_frozen.tsv",
+  "gaps": [
+   {
+    "item": "F02 g10 and F04 g11",
+    "blocker": "illegible",
+    "detail": "Read with a marked one-figure repair each; in F04 g11 the first figure is under the pencil loop."
+   }
+  ],
+  "validation": {
+   "date": "2026-11-13",
+   "model": "es-modern",
+   "file": "validation.tsv",
+   "tokens": 81,
+   "types": 29,
+   "tokens_per_type": 2.79,
+   "score": -2.175,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.569,
+     "sd": 0.57,
+     "max": -3.946,
+     "z": 6.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.675,
+     "sd": 0.083,
+     "max": -2.591,
+     "z": 6.0,
+     "p": 0.1429
+    }
+   },
+   "power": -2.295,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.175; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.295"
+  }
+ }
+}
