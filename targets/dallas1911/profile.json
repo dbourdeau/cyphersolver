@@ -1,0 +1,229 @@
+{
+ "schema_version": 1,
+ "target": "dallas1911",
+ "title": "F. González Garza ('Olliphant') to F. I. Madero, 17 March 1911 (BNM Archivo Madero Ms.M/40; carbons CEHM-Carso CMXV.14.1370.1): 69 cipher runs in the 'clave de Dallas', a bigram substitution rebuilt from a period decipherment",
+ "documents": [
+  {
+   "id": "CMXV.14.1370.1",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Nacional de México (IIB-UNAM), Archivo Francisco I. Madero, Ms.M/40 (UNAM digital repository record 700), 3 pp. typed; carbons CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.14.1370.1, 7 pp. (CEHM record 8,907)",
+   "date": "1911-03-17",
+   "year": 1911,
+   "country": "Mexico",
+   "route": "Federico González Garza ('Olliphant'), in the United States (El Paso, per the sibling letter of 21 March) -> Francisco I. Madero ('Señor Presidente'), in the field in Chihuahua; courier Escudero",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the letter; the key comes from the period typed transcription of the sibling letter CMXV.14.1395.1 (21 March 1911, same key)."
+   },
+   "length": {
+    "tokens": 1362,
+    "distinct": 20,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "SeldomPhooey (issue #520): BNM/UNAM repository 700 (500 px) and CEHM viewer images CMXV.14.1370.1.0001-0007 (about 1,400 px wide); both typings read",
+    "image_quality": "fair",
+    "notes": "69 runs, 681 bigrams (1,362 letters, measured). Typing B (carbon, pp. 5-7) has struck-out and retyped blocks. Integration (13 Nov 2026): runs 1-26 and 39-51 compared with CEHM pp. 5, 6 and 2, all agree; one variant (run 43, -lk in typing A, -lw in typing B). The clear text as typed is in the contributor's attachment, not in this folder."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Each plain letter is a bigram; three rows of first letters (h/y/ñ, j/p/v, l/q/t) share second-letter columns, giving up to three homophones per letter; ll is one sign; accents not written.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 20,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "word_division": "partial",
+  "notes": "The 'clave de Dallas', named on the letter. 54 bigrams known from the period decipherment of CMXV.14.1395.1; 17 more values (row structure, context, typing errors) added for this letter and marked in key.tsv."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of this letter found: CEHM record 8,907 lists it as 'palabras en clave' with no decipherment; the contributor searched this repository, Narváez 2011, the CEHM and BNM catalogues and HathiTrust full text of Fabela vols. 5-9. Narváez 2019 and González Garza 1936 not read. The key itself is the period key, recovered from the period decipherment of the sibling CMXV.14.1395.1.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "SeldomPhooey submitted the work (issue #520); AI agents transcribed, rebuilt the table from 1395.1, decoded, read, translated and made a blind second reading. No human cryptographer or historian checked it. The repository checked it on 13 Nov 2026 (own decoder, images).",
+  "tools": [
+   "CEHM-Carso viewer images",
+   "UNAM repository images",
+   "scripts/decode.py (integration decoder)"
+  ],
+  "models": [
+   "AI agents (contributor's harness)"
+  ],
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "access",
+   "what": "Contributor: BNM/UNAM repository 700 images (3 pp., 500 px) and CEHM CMXV.14.1370.1 images (7 pp.) and CMXV.14.1395.1 fetched.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Contributor: clear text and 69 cipher runs transcribed from both typings and the BNM copy.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "key from source",
+   "what": "Contributor: the table of the 'clave de Dallas' rebuilt from the period typed transcription of CMXV.14.1395.1 (21 March 1911) by aligning its cipher bigrams with the plaintext: 54 bigrams for 21 letters.",
+   "result": "worked",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Contributor: the table applied to the 69 runs; 17 more values added (row structure je, tx, hk, vz; context jw, ho/yo/ño, yu/ñu; single lz, jx, ti, bk; typing errors hb, uo, js) and emendations for typing slips (u/w, k/z, e/i, o/a), each marked. Contributor's count: 1,738 of 1,785 words of the whole letter sure (97.4%); 67 of 114 cipher words sure (58.8%).",
+   "result": "partial",
+   "technique": [
+    "contextual inference"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Contributor's record: a blind second reading by an AI agent of the same family, without the first reading: 99.5% of cipher letters identical (1,355 of about 1,360); one word decided by the images; three emendations dropped by following typing B.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "literature search",
+   "what": "Contributor: this repository, Narváez 2011, CEHM and BNM catalogues, HathiTrust full text of Fabela vols. 5-9; clear parallels found in CMXV.14.1351.1 and 1383.1-2; Narváez 2019 and González Garza 1936 not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check: own decoder (scripts/decode.py over key.tsv) reproduces all 69 raw decodes (681 bigrams, 0 differences); CEHM pp. 2, 5, 6 compared with runs 1-26 and 39-51 (all agree; run 43 variant -lk/-lw between typings); 1395.1 pp. 1 and 5 fetched and its first cipher line checked against the period transcription (table consistent). Count by the README bar from the issue's reading: 67 of 114 cipher words read as typed = 58.8%. Class read in part; Status in progress (gaps workable).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "sibling key",
+   "what": "Integration: CMXV.14.1352.1 (13 March 1911, to Olliphant, 'palabras en clave y descifradas') and CMXV.14.1383.1-2 (19 March 1911, pencil decode) opened as possible further 'clave de Dallas' material: both are in other systems.",
+   "result": "failed",
+   "technique": [
+    "key matching"
+   ]
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "The table was rebuilt from the cipher/plaintext pairs of another letter in the same key (CMXV.14.1395.1, with a period typed transcription) and applied to this letter; 17 values were added from row structure and context.",
+  "fraction_read": 0.588,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Integration count by cipher words (README rule), from the reading of issue #520 (reading.md, decryption.txt), 13 Nov 2026: 114 cipher words, 67 read as typed with table values only; 46 rest on values outside the table, emendations or context, 1 hole (MAU...). The contributor's headline counts the clear text as read: 1,738 of 1,785 words of the letter = 97.4% (99.9% with the probable words).",
+  "verification": [
+   "independent verification"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "seldomphooey",
+    "role": "new cipher with solution",
+    "note": "found the letter in the BNM and CEHM, rebuilt the period table from CMXV.14.1395.1, transcribed, decoded, read and translated the 69 runs; blind second reading (AI agents)",
+    "date": "2026-11-13",
+    "source": "issue #520 (dbourdeau/cyphersolver)"
+   },
+   {
+    "who": "seldomphooey",
+    "role": "transcription",
+    "note": "69 cipher runs and the clear text from both typings and the BNM copy",
+    "date": "2026-11-13",
+    "source": "issue #520 (dbourdeau/cyphersolver)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "CMXV.14.1370.1",
+    "label": "González Garza ('Olliphant') to Madero, 17 March 1911: 69 cipher runs in clear Spanish",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "summary": "González Garza warns Madero that Caracristi ('Cristi'), who claims an appointment from him, has made rash declarations and told Secretary Knox that Díaz had arranged with Japan to bring in 15,000 Japanese disguised as colonists; Madero's courier Mason lives with Caracristi, so Madero is to ignore Mason's letter but keep using him. A confidential judgment: Madero is too indulgent with his subordinates. Arms: a second shipment found in bad condition, delivery near Palomas, about fifty armed men with Escudero, Cano's failed expedition. The clear text covers Washington, the bond commission, Pino Suárez, Yucatán, Villarreal and Casas Grandes.",
+    "read_share": 0.588,
+    "state": "read in part",
+    "reading_review": {
+     "grade": "A",
+     "by": "repository integration check (AI agent)",
+     "date": "2026-11-13",
+     "note": "The Spanish reading reads as continuous sentences and matches the English translation; the cipher words fit their clear sentences. 47 of 114 cipher words are holes by the read bar (values outside the 1395.1 table, emendations, context-only values, one hole), so the reading is coherent but in part."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "46 cipher words resting on values outside the 1395.1 table, on emendations or on context alone (17 marked [?...])",
+    "blocker": "not-attempted",
+    "detail": "Workable: further 'clave de Dallas' letters with period decodes (CEHM CMXV catalogue, the 1795.1 list) would test je, tx, jw, ho/yo/ño, yu/ñu and the single values."
+   },
+   {
+    "item": "REMESA MAU[...]: the run ends after three letters",
+    "blocker": "illegible",
+    "detail": "No further letters on either typing, per the contributor."
+   },
+   {
+    "item": "contributor's attachments (clear text as typed, reasons for each emendation)",
+    "blocker": "no-key-material",
+    "detail": "GitHub attachments refused to this sandbox (403); to be added to the folder."
+   },
+   {
+    "item": "Narváez 2019 and González Garza 1936 not read for a prior decode",
+    "blocker": "needs-physical-access"
+   }
+  ]
+ }
+}
