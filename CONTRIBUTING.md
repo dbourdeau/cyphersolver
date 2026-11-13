@@ -71,7 +71,7 @@ can run one. You do not need to know the archive or solve anything; the reposito
 
 What you add that the project's own agents lack: another network (see "Tried and blocked" in the coverage list), your
 browser when a site asks whether you are human (the agent must not get round a bot check; you clear it), a reader's
-login, and the hours it takes to page through a volume leaf by leaf. An empty search is merged and credited like a
+login, and your agent's tokens: it is the agent that pages through a volume leaf by leaf, and a long volume takes many. An empty search is merged and credited like a
 full one. A lead keeps its finder's name, and the write-up of a cipher that came from it credits the finder with the
 role `new cipher`. A find made by hand goes on the same form.
 
