@@ -25,8 +25,9 @@ def feat(p):
     rows20=int((np.bincount(band,minlength=1)>=20).sum()) if k else 0
     return k,rowmax,rows20
 if __name__=='__main__':
-    d=sys.argv[1]
+    d=sys.argv[1]; lo=int(sys.argv[2]) if len(sys.argv)>2 else 0; hi=int(sys.argv[3]) if len(sys.argv)>3 else 10**9
     for f in sorted(os.listdir(d)):
+        if f.endswith('.jpg') and not (lo<=int(f[1:8])<=hi): continue
         if not f.endswith('.jpg'): continue
         try: k,r,r20=feat(os.path.join(d,f))
         except Exception as e: k=r=r20=-1
