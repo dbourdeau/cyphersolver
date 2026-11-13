@@ -1,0 +1,8 @@
+LABEL: heespen1676_pr
+Local UTC: 20261113T093757Z
+Files: 47
+Manifest SHA-256: 6e41ed1b1a66138e0fc877c68e8cf4d4f28a684904d609183c20e74620a2779a
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 13 09:37:57 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
