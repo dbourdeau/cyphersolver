@@ -108,17 +108,43 @@ this language; a human reader of Middle Low German or Middle Dutch should judge 
 
 ## Remaining gaps
 
-- Two blotted signs: the last letter of *ambasiate-* (L03) and the third sign of *be[...]lo* (R10); struck groups in
-  L04, L11, L17 and R10 not read.
-- Sense of *sich verechtert hebben* and of the clause L17-L20; a reader of Middle Low German should check. The
-  reviewer noted that the English for L17-L20 ("the envoy and those who are not [included] in the payment") supplies
-  more than the words carry; it is now marked [?] in `translation_ewsum.md`.
-- Who wrote it: "Hendricus" signs note B; whether the opening is Johan van Ewsum's copy of intercepted or received
-  letters, drafts, or a cipher exercise is not settled. The "Heer Drost" is not identified.
-- Date: probably 1533-1536 from the persons named, on the contributor's identifications; not yet checked against
-  Meinert van Ham's dated career or the dated truces between the Guelders side and the Oversticht/Sticht cities
-  (raised by the reviewer). The July of the letter and the one-month truce extension were not matched to a dated
-  event. The slug is a placeholder.
-- Whether A-C are one letter with its address or two pieces to different people is open; they are kept together here
-  because they share one opening and one key.
-- The rest of the register was paged through in the 11 Nov sweep at contact-sheet size only (no other cipher found).
+- Two blotted signs: the last letter of *ambasiate-* (L03) and the third sign of *be[...]lo* (R10) - blocker:
+  needs-physical-access; under ink blots on the scan, the original might show more.
+- Struck groups in L04, L11, L17 and R10 - blocker: illegible; deleted by the writer under ink, not part of the
+  text, not counted in the 123 words.
+- Sense of *sich verechtert hebben* (L14-L15) and of the clause L17-L20 - blocker: too-short; the words read, the
+  meaning of two phrases does not settle from a letter of this size; a reader of Middle Low German should judge.
+
+Open questions about the document, not unread cipher: who wrote it ("Hendricus" signs note B; copy of letters
+received, drafts or an exercise is not settled; the "Heer Drost" is not identified); the date (probably 1533-1536
+from the persons named, on the contributor's identifications, not checked against Meinert van Ham's dated career or
+the dated truces with the Sticht cities; the slug is a placeholder); whether A-C are one letter with its address or
+two pieces. The rest of the register was paged through in the 11 Nov sweep at contact-sheet size only (no other
+cipher found).
+
+## Escalation
+
+- [x] siblings: all 199 scans of inv. 595 paged at contact-sheet size (11 Nov 2026 sweep); one cipher opening only
+  (scan 193, photographed again as scan 1)
+- [x] clear-pages: the clear note under the key and the Latin caption are on the page; no separate decipherment
+- [n/a] known-keys: the writer's own key stands on the same page and reads the text unchanged
+- [x] print: DECODE, cryptiana, Perton 2017, Kluyver 1900, two web searches (12 Nov 2026): nothing on this item;
+  Rutgers' 1899 inventory not opened
+- [n/a] key-rebuild: no key to rebuild, 23 of 23 entries read from the page and used unchanged
+- [x] retry: the 3 words with a doubtful sign re-read on scan 193 at 3x by the contributor; the integrator's
+  re-check of scan 1 (below) agrees on the sampled signs
+
+## Integration check (13 Nov 2026)
+
+- `scripts/check_marks.py` passes; an own decoder written from `key.tsv` and `transcription_ewsum.txt` alone gives
+  the same 33 lines as `decryption_ewsum.txt` (only the carry-over mark and the spelling of struck groups differ).
+- Scan 1 (2225 x 3000 px, `preserve3.archieven.nl` IIP, fetched 13 Nov 2026; the scan 193 URL in Images now
+  returns 404): the 22 letter signs of the key lines read as the key file has them (a to p over 15 signs, q to y
+  over 7) and the venus-sign note; the first 15 words of L01-L05 (about 45 signs) agree with the transcription.
+  This is a sample, not a sign-by-sign check of the page.
+- Strict share: 120 of 123 cipher words (97.6%): the one added letter (*knech{+t}en*) and the two blotted words
+  count as holes. Struck groups are not words and not counted. Class: read.
+- The key is the writer's own, so the decryption is a test of the transcription and not a held-out test of a
+  key; "frozen before the first run" is by the contributor's record (one commit).
+- The date range and the identifications of Hackfort, Meinert van Ham and Schenck are the contributor's inference
+  and are given as such on the page. The catalogue said recipes; the text is a letter and a note.
