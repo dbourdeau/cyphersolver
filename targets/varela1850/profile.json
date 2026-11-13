@@ -1,0 +1,236 @@
+{
+ "schema_version": 1,
+ "target": "varela1850",
+ "title": "Benito Varela, Paraguayan foreign minister, to the Consul General in Rio de Janeiro (Manuel Moreira de Castro in the ANA file title), Asunción, 13 February 1850 (catalogue 1500): letter table rebuilt from one crib and an alphabetical-order rule, tested on held-out runs; read in part, name numbers open",
+ "documents": [
+  {
+   "id": "varela1850",
+   "read": "read in part",
+   "shelfmark": "Archivo Nacional de Asunción, Colección Rio Branco, ANA-AHRP-PY-558-1-31, item 13 (ex BN Rio de Janeiro I-29,25,23 no. 13), sheets 586-587",
+   "date": "13 February 1850",
+   "year": 1850,
+   "country": "Paraguay",
+   "route": "Benito Varela (Ministerio de Relaciones Exteriores, Asunción) -> Consul General of Paraguay in Rio de Janeiro (unnamed in the letter; Manuel Moreira de Castro in the ANA file title)",
+   "places": {
+    "from": "Asunción",
+    "to": "Rio de Janeiro"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare cipher: no decipherment, interlining or key on or with the letter (catalogue vetting, 28 Oct 2026, PDF images 38-45). No key known."
+   },
+   "length": {
+    "tokens": 86,
+    "distinct": 17,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_varela1850.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANA PDF ANA-AHRP-PY_-_558-1-31.compressed.pdf, images 41-42 (0-based), embedded images of 685 x 973 and 695 x 961 px",
+    "image_quality": "fair",
+    "notes": "Two passes without the key (page view and 2x; 3x-8x crops); three disagreements settled on the image (R02 43 not 49, R10 19 not 13, R12 27 not 21). Length: 86 number groups in 12 letter runs, 98 inside R12 included; the lone numbers 25, 25, 1, 1, 116 and the barred-circle sign are not counted. Blind review, 13 Nov 2026: 64 group occurrences in 9 runs or part-runs re-read on the images, all 64 agree."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "nomenclator"
+  ],
+  "summary": "Numeric letter table on odd numbers: vowels u 1, a 3, e 5, i 7, o 9; consonants b 11 to z 53 in alphabetical order with k, ll and ñ, without ch. Whole words enciphered inside clear Spanish sentences, groups separated by dots. Lone numbers (25, 1, 116, 98) and one barred-circle sign stand for names or words from another list; not identified.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 17,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 5,
+   "kinds": [
+    "names"
+   ],
+   "unread_groups": 5
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "notes": "distinct_symbols counts the 17 distinct values in the letter runs: the 16 letter values of the table and 98. Nomenclator: 5 distinct items (25, 1, 116, 98 and the barred-circle sign) in 7 occurrences; kind guessed from context, none identified."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Catalogue vetting 28 Oct 2026 (DECODE, Cryptiana, Lasry's list, web searches) and one web search on 12 Nov 2026: no edition, decipherment or key found. Printed Paraguayan and Brazilian diplomatic collections not checked page by page.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "crib"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 1500) and the rules; AI language-model agents transcribed, built and froze the candidate keys, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "ANA PDF images",
+   "scripts in this folder (candidate keys, mechanical decryption, held-out test with shuffled keys, mark check and word count)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "ANA PDF of 558-1-31 downloaded (6.3 MB, 98 images); images 41-42 extracted at their embedded size.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Catalogue vetting record of 28 Oct 2026 and one web search: no edition or decipherment found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Cipher runs transcribed twice from crops without the key; R02, R10 and R12 settled on 6x-8x crops.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ],
+   "what": "Crib 'ocupacion' for run R05 (before the clear 'de Grande') gave seven values; an alphabetical-order rule fitted three consonant orders, all frozen before any other run was decrypted (key_candidates.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out: the other 11 runs (76 groups). Whole-run lexicon measure: candidate A 64.5%, B 60.5%, C 31.6%; 1,000 shuffled keys keeping the crib values: mean 9.1%, max 44.7%. By hand, A gives contrata, pesos, Olinda (twice), Paulino, declaracon, de, ministerial and ocupagion; B and C give che for de. A frozen as the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Letter read with every departure marked; scripts/check_marks.py passes. Dan's reading checker: clean share 0.536 (reading, 15 of 28 sentences), 0.59 (translation, 23 of 39 sentences; 0.561, 23 of 41, after the notes were reworded on 13 Nov).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Blind review by an AI language-model agent that did not take part in the solve: 64 group occurrences in 9 runs or part-runs re-read on the images, 64 of 64 agree with the transcription; own decryption code gives the same output; held-out figures reproduced; 13 of 15 sentences hold, 1 borderline, 1 fails. State read in part, grade B.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Seven values from the crib 'ocupacion' on run R05 and an alphabetical-order rule fixed the letter table; candidate orders were frozen and tested on the other 11 runs.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.43,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/reading.py: 9 of 14 cipher words verbatim (64.3%); 9 of 21 counting the seven unidentified lone numbers and sign as holes (42.9%). The clear text of the letter is read in full.",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "letter table rebuilt from a context crib and an order rule, frozen and tested on held-out runs; letter read in part",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "ANA-AHRP-PY-558-1-31 sheets 586-587 from the ANA PDF",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "varela1850",
+    "label": "13 Feb 1850, ANA-AHRP-PY-558-1-31 item 13, sheets 586-587",
+    "transcription": "transcription_varela1850.txt",
+    "decryption": "decryption_varela1850.txt",
+    "reading": "reading_varela1850.md",
+    "translation": "translation_varela1850.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.643,
+    "summary": "Varela acknowledges the consul's notes of 17 October and 21 November 1849 with the newspapers, news of an English contract and of Montevideo (partly unread), and that 'that one' received the pesos. Hopkins has arrived with the consul's letter of 12 November. The President does not see why news of a concentration should please [25], unless [25] dreams of the occupation of [Rio] Grande. He has seen in print the business of Olinda with [1]; it is strange that Paulino should feel embarrassed by Olinda's declaration to [1] about the occupation of [Rio] Grande; he is tainted with ministerial perfidy. The contributor identifies Olinda and Paulino as very likely the Brazilian foreign ministers of 1849-50.",
+    "note": "Cipher words 14: 9 verbatim from the signs (64.3%), 2 with a marked repair, 0 from a gloss, 3 holes; 7 occurrences of lone numbers or signs (25 twice, 1 twice, 116, 98, barred circle; 5 distinct) not identified. Reading checker clean share 0.536 (15 of 28 sentences); translation 0.561 (23 of 41).",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "Read as sentences against the translation: 13 of 15 sentences hold with at most about one hole in ten words, 1 is borderline and the closing sentence fails; the cipher runs R02, R03 and the R12 tail are open and the lone numbers 25, 1, 116, 98 and the barred-circle sign are unidentified. A sign check of 64 group occurrences on the images agreed with the transcription."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "Lone numbers 25, 1, 116, 98 and the barred-circle sign",
+    "blocker": "open-codes",
+    "detail": "A separate list for names or words; not identified. Context guesses (25 Rosas, 1 the Argentine envoy in Rio) untested and unused."
+   },
+   {
+    "item": "R02 43.9.35 (soñ) and R03 27.5 / 7.45.5 (le / ite)",
+    "blocker": "open-codes",
+    "detail": "Decoded letter by letter, no sense found in place; first group of R02 read 49 in pass 1, 43 on an 8x crop, and 43 by the blind reviewer. The blind reviewer suggests R03 may be the surname Leite ([?Leite]); not tested, kept as a hole."
+   },
+   {
+    "item": "R12 tail 98.15.5.27.19",
+    "blocker": "open-codes",
+    "detail": "98 is outside the table; 'de lg' not read; the last group has a line through it."
+   },
+   {
+    "item": "Image resolution",
+    "blocker": "illegible",
+    "detail": "Only the PDF's embedded images (about 690 px wide) are online; R02, R10 and R12 would gain from a better scan."
+   },
+   {
+    "item": "Held-out test",
+    "blocker": "too-short",
+    "detail": "76 groups; crib and rule chosen by the solver with the clear context visible."
+   },
+   {
+    "item": "Sibling letters",
+    "blocker": "not-attempted",
+    "detail": "Other images of 558-1-31 and the López-era files not paged through for more cipher in the same table."
+   }
+  ]
+ }
+}
