@@ -1,10 +1,12 @@
 """Leads waiting to be vetted, and the check of a vetting file before it is sent (research/VET.md).
 
-  python research/vet.py --list [--online] [--area <word>]   leads in research/leads.json with no verdict yet: id,
-                                                             access, year, title, shelfmark and what blocked the last
-                                                             attempt (vetting_note). --online leaves out the leads whose
-                                                             ciphertext is only in the archive; --area filters on a
-                                                             word of the region, shelfmark or title
+  python research/vet.py --list [--online] [--area <word>] [--limit <n>]
+                                                             leads in research/leads.json with no verdict yet, newest
+                                                             first: id, access, whether the leaf was seen, year, title,
+                                                             shelfmark, and what blocked the last attempt (vetting_note)
+                                                             or else the lead's next step (verify). --online leaves out
+                                                             the leads whose ciphertext is only in the archive; --area
+                                                             filters on a word of the region, shelfmark or title
   python research/vet.py --show 1234                         one lead in full
   python research/vet.py --check <folder>/vetting.json       check a vetting file; prints result: pass or result: fail
   python research/vet.py --apply <folder>/vetting.json       project sessions only, after review: write the blocks of
@@ -45,19 +47,28 @@ def waiting(l):
 def listing(args):
     online = '--online' in args
     area = args[args.index('--area') + 1].lower() if '--area' in args else None
-    n = 0
-    for l in sorted(leads(), key=lambda x: x['id']):
+    limit = int(args[args.index('--limit') + 1]) if '--limit' in args else None
+    n = shown = 0
+    for l in sorted(leads(), key=lambda x: -x['id']):
         if not waiting(l) or (online and l.get('access') == 'archive'):
             continue
         if area and area not in ' '.join(str(l.get(k, '')) for k in ('region', 'shelfmark', 'title', 'place')).lower():
             continue
         n += 1
-        note = re.sub(r'\s+', ' ', l.get('vetting_note') or '')
-        print('%d  [%s]  %s  %s' % (l['id'], l.get('access') or 'online', l.get('year', ''), l.get('title', '')))
+        if limit is not None and shown >= limit:
+            continue
+        shown += 1
+        seen = l.get('seen')
+        seen = seen.get('kind') if isinstance(seen, dict) else seen
+        print('%d  [%s; seen: %s]  %s  %s' % (l['id'], l.get('access') or 'online', seen or 'not recorded',
+                                              l.get('year', ''), l.get('title', '')))
         print('      %s' % l.get('shelfmark', ''))
-        if note:
-            print('      last attempt: %s' % (note if len(note) <= 300 else note[:297] + '...'))
-    print('%d lead(s) waiting to be vetted' % n)
+        for label, key in (('last attempt', 'vetting_note'), ('next step', 'verify')):
+            note = re.sub(r'\s+', ' ', l.get(key) or '')
+            if note:
+                print('      %s: %s' % (label, note if len(note) <= 300 else note[:297] + '...'))
+                break
+    print('%d lead(s) waiting to be vetted%s' % (n, '' if shown == n else '; %d shown' % shown))
 
 
 def show(n):
@@ -98,6 +109,11 @@ def check(path):
                 bad.append('%s: needs "date" (ISO) and "by" (the contributor, and the agent and model used)' % i)
             if not C.text_ok(b.get('closed')):
                 bad.append('%s: verdict %s needs "closed" saying exactly what shows it' % (i, b['verdict']))
+            seen = b.get('seen') or {}
+            if b['verdict'] in ('read', 'partly_read', 'not_cipher') and not (
+                    isinstance(seen, dict) and seen.get('kind') and C.text_ok(seen.get('where'))):
+                bad.append('%s: verdict %s needs "seen" {"kind", "where"}: the leaf or the printed page looked at'
+                           % (i, b['verdict']))
             continue
         e = dict(by_id[i])
         e.update(b.get('lead_updates') or {})

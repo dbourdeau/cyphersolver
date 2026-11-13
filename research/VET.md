@@ -22,41 +22,56 @@ duplicates. Each `open` you write puts a cipher in front of solvers on your word
 
 1. The docstring of [`docs/_check_catalogue.py`](../docs/_check_catalogue.py): the `vetting` block, field by field.
 2. [`vetting_2026-11/BRIEF.md`](vetting_2026-11/BRIEF.md), sections "For each lead", "Per-lead work, enforced",
-   "Verdict" and "Block format". They are binding. Ignore its worktree path, its `in_NN`/`out_NN` batch files and its
-   "do not use the browser" rule: those were for one pass of the project's own sessions.
+   "Verdict" and "Block format": the method, which this file repeats in short. Its "Access" section has route hints
+   (Gallica IIIF, archive.org full text). It was written for one pass of the project's own sessions, so ignore its
+   worktree path, its `in_NN`/`out_NN` batch files, `check_out.py` (here: `vet.py --check`), its `by` example, its "do
+   not use the browser" rule, and its statement that `known.py` searches the DECODE dump (not in this checkout).
 3. The lead itself: `python research/vet.py --show <id>`, and the README of the sweep it came from (named in its
    `score_note` or `source`; [`README.md`](README.md) indexes them).
 
 ## 2. Choose the leads and say so
 
-`python research/vet.py --list` prints every lead with no verdict yet; `--online` leaves out those whose ciphertext
-is only in the archive, and `--area <word>` filters on region, shelfmark or title. The "last attempt" line is why
-the lead is still waiting: an edition that could not be opened, a portal that blocked, a subscription database, a
-leaf not seen. **Prefer the leads whose blocker you or the contributor can lift**: another network, a library
+`python research/vet.py --list` prints every lead with no verdict yet, newest first; `--online` leaves out those whose
+ciphertext is only in the archive, `--area <word>` filters on region, shelfmark or title, and `--limit <n>` shortens
+the list. "online" means the images can be reached, not that anyone has opened them: the `seen:` word on each line
+says whether the sweep looked at the leaf or only at the catalogue. The "last attempt" line is why an older lead is
+still waiting: an edition that could not be opened, a portal that blocked, a subscription database, a leaf not seen.
+A new lead has a "next step" line in its place. **Prefer the leads whose blocker you or the contributor can lift**: another network, a library
 subscription (State Papers Online, Gale, a national licence), a reader's login, a book on the contributor's shelf, a
 visit to the reading room. Ask the contributor what they have access to before choosing.
 
-Take ten or fewer at a time. Before starting, tell the contributor the ids, and ask them to open a
+Take ten or fewer at a time. **Before settling on a lead, check that nobody is working on it**: contributors solve
+leads as well as vet them, and their work sits in open issues and pull requests under many titles. For each id run
+`gh api -X GET search/issues -f q='repo:dbourdeau/cyphersolver is:open <lead id>'` (it covers pull requests too), and search again on the
+correspondent's surname. Drop any lead that an open issue or pull request names, and take another: its vetting will
+come with that work.
+
+Then tell the contributor the ids and ask them to open a
 [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) issue listing
-them ("Leads: vetting 1243, 1255 ..."), so nobody else's agent takes the same ones. Check the open issues first:
-`gh api "repos/dbourdeau/cyphersolver/issues?state=open&labels=leads"` lists them (titles start "Leads:"); if that returns nothing, read the open issue titles.
+them ("Leads: vetting 1243, 1255 ..."), so nobody else's agent takes the same ones. Do not wait for it to start.
 
 ## 3. Per lead
 
 Do all four for each lead, with searches run for that document and no text shared between leads.
 
 1. **Duplicates.** `python research/archive_sweep_2026-10/known.py "<shelfmark>" "<correspondent>" "R<decode id>"`.
-   A hit that is only the lead's own row is not a duplicate. It matches substrings and stops after a dozen hits, so give it the distinctive form ("Lambeth MS 615", not "MS 615") and a correspondent's surname.
+   A hit that is only the lead's own row is not a duplicate. `known.py` skips, without saying so, the dumps that are not
+   in the checkout (DECODE, Cryptoole). It matches substrings and stops after a dozen hits, so give it the distinctive form ("Lambeth MS 615", not "MS 615") and a correspondent's surname.
    The DECODE dump is not in the checkout, so `known.py` does not cover DECODE: search it with
-   `python research/sweep_2026-11-11_german/decode_search.py "<term>" ["<term>" ...]` (a bare request to DECODE's `RecordsList` returns a page with no records in it) and say what you ran.
+   `python research/sweep_2026-11-11_german/decode_search.py "<term>" ["<term>" ...]`. Its keyword search is shallow (a
+   record can be missed under its correspondent's name): try the archive, the shelfmark and each correspondent, and
+   treat "0 records" as weak evidence and say what you ran.
 2. **Prior art.** At least three distinct searches: the shelfmark or series with "decipher"; the correspondents with
-   "cipher"; the printed edition or calendar. Cover each of DECODE, Tomokiyo's Cryptiana, Lasry (papers and GL.htm),
+   "cipher"; the printed edition or calendar. Cover each of DECODE, Tomokiyo's Cryptiana (`cryptiana.web.fc2.com`; the
+   pages are Shift_JIS), Lasry (his papers, and the list of his keys at `cryptiana.web.fc2.com/code/GL.htm`),
    the edition or calendar, and the literature (HistoCrypt, Cryptologia). If a printed edition or calendar would
    cover the item, open its text at that item; one you could not open is an unanswered question, and the lead stays
    `unvetted` naming the volume. A contemporary decipherment, printed or between the lines, is prior art.
 3. **See the cipher.** Open the leaf at full size and say what is on it: signs, letters or numbers, how many lines
    or pages, and that no decipherment is written on it or filed with it. A description that only says a letter was
-   "sent in cipher" does not show that ciphertext survives. For an archive-only item, quote the archive's description.
+   "sent in cipher" does not show that ciphertext survives. Zoom until single signs and anything written between the lines are legible: a whole page rendered under
+   about 1,500 px across is not "seen", and glosses have been missed at 700 px.
+   Do not trust the lead's own "bare": look. For an archive-only item, quote the archive's description.
 4. **Keys.** Record any key in the same volume (`key_in_volume`) or held in this repository, on DECODE or in print
    (`key_held`), and whether it was tested. A key never blocks a lead; `key_lookup` is only for a text whose reading
    with that key is already on record.
@@ -73,7 +88,12 @@ Page images stay in a scratch directory outside the repository.
 | `read`, `partly_read` | A decipherment is on the leaf, in print or otherwise on record. `closed` says exactly where. |
 | `duplicate` | Same document as a catalogue entry, a lead or a target. `closed` names it. |
 | `not_cipher` | Shorthand, a mention of cipher with no ciphertext, or a key with no ciphertext. `closed` gives the evidence. |
+| `key_lookup` | Rare: a reading of this text with a known key is already on record. `closed` says where. |
 | `{"unvetted": "..."}` | You could not establish a verdict honestly. Name the blocker so the next attempt starts there. |
+
+If you find, after the work, that an open issue or pull request already reads the lead, do not choose between `open`
+and `read`: write `{"unvetted": "being read in pull request #<n>; verdict to follow that work"}` and put what you saw
+in the README.
 
 Prefer a true `unvetted` to a weak `open`. Never invent a finding, and never write `read` or `not_cipher` from a
 low-resolution glance. A closed lead is as useful as an open one: it stops solvers being sent to a letter that is
@@ -85,11 +105,21 @@ Create `research/vetting_<yyyy-mm-dd>_<contributor's handle>/` with:
 
 | File | Content |
 |---|---|
-| `vetting.json` | A JSON object `{"<lead id>": block}`, rewritten after every lead. A block has `date` (ISO), `by` (the contributor, then the agent and model), `seen` {`kind`, `where`, `extent`, `cipher`}, `prior_art` {`decode`, `tomokiyo`, `lasry`, `edition`, `literature`}, `key_check`, optional `key_in_volume` / `key_held`, `duplicates`, `searches` [{`query`, `result`}, ...], `verdict`, and `closed` when the verdict is not `open`. If the ciphertext is only in the archive, add `"lead_updates": {"access": "archive"}`. To overturn a verdict a lead already has, add `supersedes` saying what new evidence changes it. |
+| `vetting.json` | A JSON object `{"<lead id>": block}`, rewritten after every lead. A block has `date` (ISO), `by` (the contributor, then the agent and model), `seen` {`kind`, `where`, `extent`, `cipher`}, `prior_art` {`decode`, `tomokiyo`, `lasry`, `edition`, `literature`}, `key_check`, optional `key_in_volume` / `key_held`, `duplicates`, `searches` [{`query`, `result`}, ...], `verdict`, and `closed` when the verdict is not `open`. If the ciphertext is only in the archive, add `"lead_updates": {"access": "archive"}`. To overturn a verdict a lead already has, add `supersedes` saying what new evidence changes it. `seen.kind` is `scan`, `facsimile`, `transcription` or `not online`. |
 | `README.md` | First line `# Vetting, <contributor> (<date>)`. Who ran it and with which agent and model; one line per lead (verdict and why); the routes and logins that worked and those that blocked; what is left. |
 
+If the contributor's handle is not known, ask; failing an answer use their GitHub login (`gh api user --jq .login`).
+
 Then run `python research/vet.py --check research/vetting_<...>/vetting.json` and fix what it reports until it
-prints `result: pass`. Never pad a field to pass it: move the lead to `unvetted`.
+prints `result: pass`. Never pad a field to pass it: move the lead to `unvetted`. What it enforces:
+
+- every text field says something (12 characters or more; an `unvetted` reason 25 or more);
+- an `open` block passes the catalogue gate and lists three or more searches, each with its result;
+- `seen.cipher` on an `open` block does not hedge (probably, presumably, likely, perhaps, possibly, "may contain",
+  "should be"): if you are not sure cipher is there, the lead is `unvetted`;
+- no search query and no `prior_art` text is used on more than two leads;
+- every other verdict has `closed`, and `read`, `partly_read` and `not_cipher` also say in `seen` what was looked at
+  (the leaf, or the printed page).
 
 Write only inside your own folder. Do **not** edit `research/leads.json` or `catalogue.json`, do not run
 `_check_catalogue.py --promote` or `--close`, and do not run the site build.

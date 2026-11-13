@@ -40,7 +40,8 @@ If the contributor named an archive, take it. If not, choose from `COVERAGE.md` 
 
 Before starting, tell the contributor in one sentence which archive or series you are taking, and ask them to open a
 [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) issue naming it,
-so that nobody else's agent takes the same one. Check first that no open issue claims it: `gh api "repos/dbourdeau/cyphersolver/issues?state=open&labels=leads"` lists them (titles start "Leads:"); if that returns nothing, read the open issue titles.
+so that nobody else's agent takes the same one. Check first that no open issue claims it: `gh api -X GET search/issues -f q='repo:dbourdeau/cyphersolver is:open <archive name>'` searches open issues and pull requests; claims and
+work in progress sit there under many titles, so search the series and the main correspondents as well.
 
 Work in passes and stop at a natural end: a portal's term list exhausted, a volume paged to its last image, or the
 time or request budget the contributor gave you (ask for one; without an answer, stop after about an hour or 300
@@ -57,10 +58,13 @@ requests to one host). Keep the README current as you go, so a sweep cut short s
   what you saw: signs, letters or numbers, how many lines, and whether a decipherment is written on it.
 - **A glossed cipher is read, not a lead.** Plaintext between the lines, in the margin or over the groups means it
   was deciphered at the time. Only bare ciphertext with no decipherment on it or filed with it is a lead. Open the
-  leaf at full size before calling it bare. A bare key or table with no ciphertext goes in `key_leads.json`.
+  leaf at full size before calling it bare: zoom until single signs and anything between the lines are legible (a
+  whole page under about 1,500 px across is not enough; glosses have been missed at 700 px). A bare key or table with no ciphertext goes in `key_leads.json`.
 - **Duplicates.** Run `python research/archive_sweep_2026-10/known.py "<shelfmark>" "<correspondent>"` on every
   candidate. It matches substrings and stops after a dozen hits, so give it the distinctive form ("Lambeth MS 615", not "MS 615") and a correspondent's surname. The DECODE dump is not in the checkout, so `known.py` does not cover DECODE:
-  search it with `python research/sweep_2026-11-11_german/decode_search.py "<term>" ["<term>" ...]` (a bare request to DECODE's `RecordsList` returns a page with no records in it) and give the R-number if the item is there.
+  search it with `python research/sweep_2026-11-11_german/decode_search.py "<term>" ["<term>" ...]` and give the R-number if the item
+  is there. Its keyword search is shallow: try the archive, the shelfmark and each correspondent, and treat "0
+  records" as weak evidence.
 - **Prior art.** For every row, search for a published decipherment: Tomokiyo's Cryptiana (`cryptiana.web.fc2.com`;
   `unsolved.htm` in the repository root is a snapshot of his list), George Lasry's papers and the HistoCrypt
   proceedings (a web search on the correspondents with "cipher" and "Lasry" or "HistoCrypt"), and the printed edition
