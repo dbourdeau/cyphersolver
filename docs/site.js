@@ -452,7 +452,8 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     const wr=wrap.getBoundingClientRect(), pr=p.querySelector('.core').getBoundingClientRect();
     const cx=pr.left+pr.width/2-wr.left, tw=tip.offsetWidth, th=tip.offsetHeight;
     let x=Math.max(4,Math.min(wr.width-tw-4,cx-tw/2)), y=pr.top-wr.top-th-14, below=false;
-    if(pr.top-th-14<8){ y=pr.bottom-wr.top+14; below=true; }
+    const sb=wrap.closest('.scoreboard'), lim=Math.max(8,sb?sb.getBoundingClientRect().top+4:8);   // the panel clips what leaves it
+    if(pr.top-th-14<lim){ y=pr.bottom-wr.top+14; below=true; }
     tip.classList.toggle('below',below);
     tip.style.setProperty('--tx',x+'px'); tip.style.setProperty('--ty',y+'px');
     tip.style.setProperty('--ax',(cx-x)+'px'); tip.style.setProperty('--ox',(cx-x)+'px');

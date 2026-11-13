@@ -1604,6 +1604,16 @@ html.fs-lock{overflow:hidden}
 .filmdlg{--ink:#f3e9d2;--ink2:#e2d3b3;--muted:#b9ad95;--head:#f6ead0;--rule:rgba(246,234,208,.2);--gold:#d9ac52;--gold2:#f0cf86;--gold-ink:#1a1408;color:var(--ink)}
 .herostrip .herostats a .lg-only{margin-right:-.3rem}
 .filmdlg .film-x{display:block;margin:0 0 .6rem auto;background:transparent;color:#f3e9d2;box-shadow:inset 0 0 0 1px rgba(246,234,208,.5)}
+/* the ledger follows the hero, in the text column: the timeline first, the bar and its categories as its legend, the
+   four counts smaller under them (_build_stats.py) */
+.scoreboard{--sbw:100%;margin-top:0;margin-bottom:3rem}
+.scoreboard .sb-note{font-size:.9rem;margin:0 0 .5rem}
+.scoreboard .tlwrap{margin:0 0 1rem}
+.scoreboard .sb-methods{margin:.5rem 0 1.4rem}
+.scoreboard .sb-methods > summary{display:none}
+.scoreboard .sb-big b{font-size:clamp(1.6rem,3vw,2rem)}
+.scoreboard .sb-big span{font-size:.85rem}
+.scoreboard .sb-lede{font-size:.9rem;color:var(--muted);max-width:none;margin:0 0 .6rem}
 body:has(.ms-bg) .nav .sticker,body:has(.ms-bg) .hb-way .sticker{display:none}
 body:has(.ms-bg) .hb-way{border-top:3px solid var(--gold)}
 body:has(.ms-bg) .cards.featured .card{box-shadow:0 14px 30px -22px rgba(0,0,0,.55)}
