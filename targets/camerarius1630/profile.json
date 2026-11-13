@@ -1,0 +1,267 @@
+{
+ "schema_version": 1,
+ "target": "camerarius1630",
+ "title": "Ludwig Camerarius's letters from The Hague, 1630 (Riksarkivet, Diplomatica Hollandica): letter table and code list rebuilt from the contemporary glosses, validated, and the unglossed postscript of 20/30 Sept 1630 read in part",
+ "documents": [
+  {
+   "id": "img402-419",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Hollandica, SE/RA/2109/I/5/7 (series R0003234), image 402",
+   "date": "Aug-Sept 1630",
+   "year": 1630,
+   "country": "Netherlands",
+   "route": "Ludwig Camerarius, The Hague -> Gustav II Adolf",
+   "places": {
+    "from": "The Hague",
+    "to": "Gustav II Adolf (Swedish court / camp)"
+   },
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF R0003234_00402, full resolution (Public Domain Mark 1.0)",
+    "image_quality": "good",
+    "notes": "Glossed letters 402, 405-406, 412, 415, 418-419 (and 414, 423, 427 from 6 Nov): only code groups with their glosses transcribed (codes.tsv). Training of the code list."
+   },
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary glosses above most cipher groups.",
+    "partial": true
+   },
+   "length": "unknown"
+  },
+  {
+   "id": "img498",
+   "read": "read",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Hollandica, SE/RA/2109/I/5/7 (series R0003234), image 498",
+   "date": "10/20 Dec 1630",
+   "year": 1630,
+   "country": "Netherlands",
+   "route": "Ludwig Camerarius, The Hague -> Gustav II Adolf",
+   "places": {
+    "from": "The Hague",
+    "to": "Gustav II Adolf (Swedish court / camp)"
+   },
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF R0003234_00498, full resolution (Public Domain Mark 1.0)",
+    "image_quality": "good",
+    "notes": "Glossed; held-out part of the letter-table test (6 Nov 2026), then training of the code list."
+   },
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary glosses above most cipher groups.",
+    "partial": true
+   },
+   "length": "unknown"
+  },
+  {
+   "id": "img442",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Hollandica, SE/RA/2109/I/5/7 (series R0003234), image 442",
+   "date": "20/30 Sept 1630",
+   "year": 1630,
+   "country": "Netherlands",
+   "route": "Ludwig Camerarius, The Hague -> Gustav II Adolf",
+   "places": {
+    "from": "The Hague",
+    "to": "Gustav II Adolf (Swedish court / camp)"
+   },
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF R0003234_00442, full resolution (Public Domain Mark 1.0)",
+    "image_quality": "good",
+    "notes": "Unglossed Post script to the King; held-out part of the code-list test, transcribed after the freeze in two passes (second blind)."
+   },
+   "length": {
+    "tokens": 151,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription_442.txt"
+   },
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the letter or its neighbours.",
+    "partial": false
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic"
+  ],
+  "summary": "Latin clear text with a two-part nomenclator of 3-4 digit groups (some with 1/2) and letter signs (Lq Rex Sueciae, aa cum, rr et, t in), and words spelled with numbers 10-99, three homophones per letter in consecutive blocks (15-17 s, 18-20 m, 21-23 f, 24-26 e, 27-29 l, 30-32 r, 36-38 x, 39-41 q, 45-47 d, 48-50 c, 51-53 i, 54-56 p, 57-59 w?, 60-62 u, 63-65 o, 66-68 h, 69-71 b, 72-74 a, 75-77 g, 78-80 n, 81-83 t); nulls 10, 11, 88-90, 95, 97-99.",
+  "symbol_kind": "digits",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial",
+  "distinct_symbols": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary interlinear glosses on the glossed letters (existing). No decipherment on image 442 or its neighbours. No edition of these letters found (searches of 6 Nov 2026, catalogue row 2313 vetting n09); not on DECODE; no target for this volume in the repository (origin/main f6b285a7b, 13 Nov 2026). Not opened: F. H. Schubert, Ludwig Camerarius (1955) and Stålhane 1934 ('Camerarius key'); Riksarkivet Chifferklaver I:19 A and I:22 not digitised.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout set the rules (pre-registration, frozen keys and transcriptions, one measurement per test, thresholds fixed in advance). AI agents transcribed, built the letter table and the code list, ran the tests and wrote up; a separate agent did the blind second transcription pass and another the blind judging. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "crib",
+   "what": "Letter table learned from the glosses of images 409, 414, 423, 427, frozen.",
+   "result": "worked",
+   "technique": [
+    "crib testing",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out image 498: 83 glossed letters, 0.904 against 0.277 for the best of 200 shuffled keys (thresholds 0.85 and +0.30).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Code groups and glosses of images 402, 405, 406, 412, 415, 418, 419 added to those of 414, 423, 427, 498: 109 groups (codes.tsv), frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out image 442 (unglossed), transcribed after the freeze in two passes: blind forced choice between the list's value and a random decoy for the 59 covered code occurrences, 59/59 against 0.695 for the best of 200 random controls (thresholds n >= 30, 0.85 and +0.30). 4 items had an empty filler by a clean-up flaw; without them 55/55 against 0.673.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Image 442 read with key.tsv and codes.tsv: 335 of 414 word units read by sense (0.81).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Letter table and code list learned from the contemporary glosses of other letters of the volume and validated on held-out letters (498, 442); then applied to the unglossed postscript 442.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-13",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py): letter table 0.904 vs 0.277 on image 498; code list 59/59 vs 0.695 (blind forced choice) on image 442."
+  },
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "interlinear glosses on the glossed letters; the letter table and the code list were learned from them",
+    "date": "1630"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "glossed code groups (codes.tsv), letter table (key.tsv), held-out tests (validation.txt), image 442 transcribed and read in part (reading.md)",
+    "date": "2026-11-13"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "Riksarkivet western sweep and leads review batch n09 listed the bare and glossed letters (row 2313)",
+    "date": "2026-11-06"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "image 442: 79 of 138 code occurrences unresolved (read share 0.81)",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "bare letters 426, 432, 460 and the postscript on 454 not read (426 about 93 % with the list)",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "glossed original of 441/443 probably on 439-440, not transcribed",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one AI reader on the images; 3/7, 1/7 and 5/6 are easy to confuse; no human palaeographic check",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "img442",
+    "label": "image 442, Post script of 20/30 Sept 1630",
+    "transcription": "transcription_442.txt",
+    "decryption": "decryption_442.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.81,
+    "summary": "Frederick Henry offers his help; Camerarius urges a diversion or Dutch support under the King of Sweden; the Prince defers to the States General; the Duke of Neuburg and Count Wilhelm's troops; Camerarius asks the King to send someone and warns of intrigues against him.",
+    "reading_review": {
+     "grade": "B",
+     "note": "Read by sense with the validated letter table and code list; one AI reader, no independent or human review; count by script (reading.md).",
+     "by": "Claude Opus 5.5 agent for Brice Dudout",
+     "date": "2026-11-13"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "The glossed letters were deciphered at the time; what is new is the letter table and the code list as validated reusable tables, and a partial reading of the unglossed postscript 442."
+ }
+}
