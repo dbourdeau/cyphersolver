@@ -1,0 +1,198 @@
+{
+ "schema_version": 1,
+ "target": "anover1610",
+ "title": "Philip III to the Count of Añover, Lerma, 20 May 1610 (Madrid, Biblioteca Histórica Municipal, I 242,29): a partial nomenclator rebuilt from sibling letters (catalogue 1988)",
+ "documents": [
+  {
+   "id": "i242-29",
+   "shelfmark": "Madrid, Biblioteca Histórica Municipal (Ayuntamiento de Madrid), I 242,29 (Memoria de Madrid 424541; Hispana idBib 58678726)",
+   "date": "20 May 1610",
+   "year": 1610,
+   "country": "Spain",
+   "route": "Philip III (Lerma) -> Rodrigo Niño Laso, conde de Añover",
+   "language": "Spanish",
+   "pages": 5,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Real cédula in cipher; no decipherment bound in or with it (catalogue 1988: four leaves of the series have none). The key values come from the clear texts of the sibling letters I 242,33, 42, 47 and 48."
+   },
+   "length": {
+    "tokens": 211,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Alberto Garvía García's report (Zenodo 10.5281/zenodo.24174363, section 4): ten lines of f. 53r; the five pages were transcribed in full in his dossier (not seen here); images from Memoria de Madrid",
+    "image_quality": "unknown",
+    "notes": "The 211 cipher-group occurrences are the contributor's segmentation figure; the ten lines were not counted by the project with the measure tool because the signs are typographic approximations (delta, R, B, ji, a loop). Not checked against the manuscript images (403 from Memoria de Madrid)."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "syllabic"
+  ],
+  "summary": "A mixed nomenclator: numbers 10 to 114 and 241-242 with letter-syllable signs (ba, cle, je, fal, ...), homophones for letters, syllables and whole words, groups of unequal length, nulls likely; rebuilt by the contributor from sibling letters; no key sheet of the series has been identified.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "sibling_key": "I 242,33, 42, 47 and 48 (clear text in the same volume); I 242,71 as a separate control, not transferred"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No reading of I 242,29 known: the contributor searched Tomokiyo, DECODE, Retortillo Atienza 2019 and the Correia thesis; a web search here found none. Devos 1950 not consulted.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Alberto Garvía García directed the work and posted it; the transcription, matching with the sibling clear texts and the key table were prepared with ChatGPT/Codex (his statement). No independent palaeographic check. This project checked the report and re-derived the reading from his transcription and key table with its own parser; the manuscripts could not be fetched.",
+  "tools": [
+   "own backtracking parser (scratchpad, not committed)",
+   "es-golden-age quadgram model (lang/)"
+  ],
+  "models": [
+   "ChatGPT/Codex (OpenAI), contributor's statement"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "The contributor obtained images of I 242,29 and the siblings I 242,33, 42, 47, 48 and 71 from Memoria de Madrid; the images of 47 and 48 reached him by a user's contribution (his report). The project's own requests to the viewer returned 403.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Sequences of the ciphers of I 242,42, 47, 48 and 33 matched with their contemporary clear texts to give group values (66 graded C, 3 M, 5 I in the table for I 242,29); I 242,71 kept apart as a negative control (the earlier key is not transferred).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Ten lines of f. 53r read in part: Dutch factory at Pinda, Angola coast, against the truce; the king charges the count to see it remedied and report. The contributor's figures: 173 of 211 group occurrences in firm words (81.99%), 202 of 211 with an equivalence in the table (95.73%), 78 of 88 words firm.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Own parser applied to the transcription and key table of the report (all segmentations of the digit runs): 213 tokens, two not in the table as written; the output is the contributor's reading, ten lines of connected Spanish. The transcription and the sibling parallels are not checked against the manuscripts.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Control of my own, Spanish 1490-1650 quadgrams on the decode against 200 permutations of the digit values: real -4.39 per letter, best permutation -4.20: inconclusive on this short syllabic text; not relied on. The contributor's own control was not re-run.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "literature search",
+   "what": "Prior art: Tomokiyo, DECODE, Retortillo Atienza 2019 and Correia searched by the contributor; a web search here found no mention of a 1610 cipher letter to Añover about Pinda; Devos 1950 not consulted.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The contributor rebuilt a partial nomenclator from the clear texts of sibling letters in the same volume (I 242,33, 42, 47, 48) and applied it to I 242,29, whose cipher has no decipherment bound in. The reading reproduces from his transcription and table; the manuscripts and the sibling plaintexts were not seen by the project, and the transcription is unverified.",
+  "key": "partial",
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "credits": [
+   {
+    "who": "garvia",
+    "role": "new cipher with solution",
+    "note": "posted the key table, the transcription and the reading of I 242,29 (report on Zenodo, doi 10.5281/zenodo.24174363; ChatGPT/Codex-assisted, as he states)",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/499"
+   }
+  ],
+  "fraction_read": 0.886,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "The contributor's own word count (report, section 7): 78 of 88 words firm = 88.6%; firm means every value in the word is graded C (matched with a clear text), as strict as the README rule. Not recomputed word by word; his looser figures (173 of 211 group occurrences = 81.99%; 202 of 211 with a table equivalence = 95.73%) are not the read bar.",
+  "key_file": "key.tsv",
+  "notes": "In progress. Ten lines of f. 53r read in part from a key rebuilt from sibling letters; transcription and sibling parallels unchecked against the images (Memoria de Madrid blocked scripted requests). No page.",
+  "gaps": [
+   {
+    "item": "transcription of f. 53r and the sibling parallels against the manuscripts",
+    "blocker": "needs-physical-access",
+    "detail": "Memoria de Madrid returns Akamai Access Denied to scripted requests; needs a Chrome pass or the contributor's images"
+   },
+   {
+    "item": "U01 (buena), 101, 114, 241 (context-only codes), e = mu, fo = so (persona), the nulls 28~ and 58~, the otraas anomaly",
+    "blocker": "open-codes",
+    "detail": "values inferred from context or a single parallel; the contributor lists them as open"
+   },
+   {
+    "item": "the three other cipher-only leaves of catalogue 1988 and I 242,66 as a further parallel",
+    "blocker": "not-attempted",
+    "detail": "Hispana idBib 58438217, 58438218, 58678720; not transcribed"
+   },
+   {
+    "item": "Devos 1950 and any complete key sheet of the series",
+    "blocker": "no-key-material",
+    "detail": "not seen by anyone"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "i242-29",
+    "label": "Philip III to the Count of Añover, 20 May 1610 (I 242,29): the ten transcribed lines",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.886,
+    "summary": "Philip III learns that Dutch merchants are setting up a factory at Pinda on the coast of Angola, against the truce, and charges the Count of Añover to remedy it without sending anyone to the Islands, and to report."
+   }
+  ]
+ }
+}
