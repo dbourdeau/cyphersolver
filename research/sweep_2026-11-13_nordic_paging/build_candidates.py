@@ -24,5 +24,26 @@ row(year=1632, date="26 Mar 1632",
     needs_archive_scan="no",
     access_note="open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts")
 
+row(year=1627, date="6 Apr 1627 (read 'den 6 Aprilis 1627'; header 'Aprilis 627')",
+    title="Johan Banér to Gustav II Adolf: seven number-cipher passages in a Swedish letter of April 1627, no decipherment on the leaf",
+    correspondents="Johan Banér (colonel, later field marshal) -> King Gustav II Adolf",
+    place="not read",
+    language="Swedish", region="Scandinavia", period="1611-1650",
+    shelfmark="Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/3 (Banér), image series R0000623, images 356-357 (printed fol. 42-43)",
+    folio_note="R0000623 image 357, left page (the letter begins on the right page of image 356 and ends on the right page of image 357 with 'Datum ... den 6 Aprilis 1627'): about 25 lines of running Swedish carrying seven passages of colon-separated 1-3 digit groups (e.g. '85,26,3,15,32,96 / 111,51,60,86,52,20,53 / 100,17,66,8,20,26 / 116,33:96,72:35,45:85,52,70,24,29,56,98,31,10,35,40:71,116,37,3,18,58,29 / ...'), with a Roman 'III' and a possible 'anno 1559' written among them; no writing between the lines or in the margin. Image 358 (a postscript of 7 April) is in clear",
+    cls="C",
+    status="Viewed 13 Nov 2026: image 357 downloaded at 2000 px, images 356 and 358 at 1100 px. Bare numeric nomenclator in running text; nothing interlinear, marginal or on a separate sheet near it. The volume (R0000623) was only reached by the detector top-64 windows, so other leaves with cipher may remain unlooked at. Known.py on the shelfmark, R0000623 and 'Johan Banér': no hit. Lead, no vetting block: no edition of Banér's letters to the king found or opened.",
+    why="A letter of 1627 whose context (Prussian campaign, cavalry, 'Correspondentz', Danish and Polish affairs) is readable Swedish and gives cribs; the code is earlier than the glossed Oxenstierna nomenclator of 1633-35 and may be a Banér-specific one.",
+    importance=3, solvability=3, difficulty=3,
+    score_note="Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed at native size",
+    verify="Check whether the letter is printed (Banér's despatches of 1627 in Handlingar rörande Skandinaviens historia or in a Banér biography, e.g. Sjögren / Fryxell-type editions) and whether a Banér key is among the Riksarkivet Chifferklaver sheets or in 1133.07 volumes of the same fonds; look at the other Banér volumes for a glossed letter in the same code.",
+    links=[{"label": "Riksarkivet viewer, image 357", "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00357"},
+           {"label": "image 356", "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00356"},
+           {"label": "image 358", "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00358"}],
+    seen="image", source="Riksarkivet paging sweep 13 Nov",
+    prior_art="Not opened: any edition of Banér's letters of 1627. HSH Kronologiskt register (archive.org handlingarrrand03scangoog) full text not searched for Banér 1627 yet. DECODE: the key records R4122, R4123, R4325 (Banér keys, from decode_updates/queue.json via targets/baner1640) are known; the letter itself is not recorded there under this shelfmark (queue.json and known.py: no hit).",
+    needs_archive_scan="no",
+    access_note="open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts")
+
 json.dump(ROWS, open('candidates.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(len(ROWS), 'rows')
