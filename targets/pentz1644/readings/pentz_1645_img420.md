@@ -1,0 +1,8 @@
+# Pentz to the Chancellor, 1645, pencil "1645 4/5" (image 420; one page, mentions a letter of 24 April)
+Conventions: SURE in plain; {probable}; [restored letter]; ‹unresolved›. Units = cipher words (index figures and the null 251 not counted; codes counted). Key v3 applied unchanged (SHA-256 f5d41697…). Clear text of the letter in roman between the cipher passages, abridged and read quickly from the images (not checked; only the cipher words are counted).
+
+Des Herrn Cantzlers jüngstes Brieffel vom 24. Aprilis hab ich erhalten, den einhalt und dass Ihr Königl. Maytt. vielleicht nochmahls darin gedruckt, wie **diser erlit[t]ene Verlust den Frieden** so weit zurückgesetzt, allerseits vernommen. Ich zweifle nicht eher, dass sonderlich **der ‹lezere› ‹ineuperqte›** ‹t› ... noch über **nun Rensburg in höchster Gefahr** groß ‹erdar?nur› ‹sach› ... Ich hab meine trewe Erinnerung ... auch lang vor dem Jahr geschickt, dass ‹101› **die übrige Völcker** zumahl **wir** in kurtzer Zeit **deren viel verlohren** ... bey der Hand halten solte ... dass ich remonstrirt ‹ua› **dise Vestung bei weitem nach** ‹n???urffhm› **{mit} {Volck} nicht versehen**. Alles aber geschehe vergeblich, und wollte wenig helfen ...
+- ‹lezere› ‹ineuperqte›: T2 d e r l e z e r e | i n e u p e r q t e ; a later gloss above reads like "... Commandant hat"(?); not reached by the key; probably transcription faults in a dense, overwritten line.
+- {mit} {Volck}: 9 37 19 18 24 31 28 = i t u o c k (T3); m and l missing.
+- Code 101 open; one line (L14) largely illegible under strokes.
+Count: 35 units; sure 25, probable 2, unresolved 8. **27/35 = 77.1 % → read in part.**
