@@ -2,7 +2,9 @@
 
 Status: in progress (integration check of 13 Nov 2026, PR #524: the key is right and is the envoys' own, but the slips
 are decoded, not read, and the gap that holds them back, the transcription of the hand, is workable; folder only, no page
-and no ledger row; catalogue 1639 narrowed, not removed).
+and no ledger row; catalogue 1639 narrowed, not removed). 13 Nov 2026, R8: a third, non-blind reading (R3) of f.102, f.104 and f.204 is
+filed (`NOTES_R3.md`); the contributor has announced a blind fourth reader, so the target stays in progress until it is in.
+Outcome method set by the owner to "read with known key" (see Integration check of the R3 files).
 
 Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 34.57% to 47.06% on the first pass). The limit is our reading of the hand, not the key. The content of f.5, f.6, f.7 and f.101 exists in clear in Nr. 529, so it is not first.
 
@@ -113,7 +115,7 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 - [x] known-keys: the envoys' own key (frame 168, AMPHICTYONES) equals KEY_v2 in all 12 pairs; decoding the slips with it gives the same letters
 - [ ] print: Acta Pacis Westphalicae and older Magdeburg histories not searched page by page
 - [x] key-rebuild: not needed (the key is complete)
-- [ ] retry: every slip to be re-transcribed with the glyph reference and re-decoded (non-blind; say so)
+- [ ] retry: f.102, f.104 and f.204 re-transcribed by a third reader (R3, non-blind, 13 Nov 2026, `NOTES_R3.md`); f.7 also, as a check against its draft; f.101 not; a blind fourth reader is announced by the contributor (open)
 
 ## How to reproduce (standard-library Python, no network)
 
@@ -152,7 +154,7 @@ Done by the integrating session after its own verification (report R8_bremen). T
 - **Order of events**: KEY_v2 frozen 13:47:27, frame 168 first seen 14:00:36 UTC, by the contributor's record
   (`transcriptions/FREEZE_LOG.txt`); the first RFC 3161 stamp is 13 Nov 09:08:54 GMT. The catalogue entry the work started
   from already said the envoys' key was in the file, so the existence of a key was known, its content not.
-- **Method**: kept as "key recovered from ciphertext-only" (that is how the table was obtained, by the contributor's record),
+- **Method** (superseded the same day, see the R3 integration check below): kept as "key recovered from ciphertext-only" (that is how the table was obtained, by the contributor's record),
   but the key is not new: it survives in the volume (frame 168) and gives the same decryption. The contribution is the
   transcription and the confirmation, not new key material. Recorded in `outcome.method_basis` and in catalogue 1639's
   vetting (`key_in_volume`).
@@ -164,3 +166,50 @@ Done by the integrating session after its own verification (report R8_bremen). T
   figures stay as filed.
 - **Gaps**: "the hand" was marked `illegible`; with a complete key and readable images it is `not-attempted`.
 - **One key, one entry**: no other target or lead holds A 1 Nr. 530 or this table; thumbshirn1647 (Saxe-Altenburg envoys at the same congress) names catalogue 1639 but uses a homophonic key, a different system.
+
+## Integration check of the R3 files (13 Nov 2026, R8)
+
+By an AI agent for the maintainer, not a person. PR #524 received 14 more commits after the first integration (54 files
+under `*_R3*`, `timestamps/b195/`, `gloss/REF_SIGNS_R3.md`, `NOTES_R3.md`, `PRIOR_ART_R3.md`); nothing existing changed.
+
+- **What R3 is:** a third reader's transcription of f.102, f.104 and f.204 (and of f.7 as a check), with the same frozen
+  KEY_v2, a sign reference built from the glossed frames and the Nr. 529 drafts, and one judging pass. Not blind: the reader
+  knew the key and had seen reader 2's lists of read words for these slips (logged in `transcriptions/FREEZE_LOG_R3.txt`).
+- **Reproduced** (`python3 -I`, scripts read first, outputs to a scratch folder): `decode_R3.py` gives the four
+  `decryptions/*_R3.txt` byte for byte; `mkledger_R3.py` gives `units/f102_R3.tsv`, `f104_R3.tsv`, `f204_R3.tsv` byte for byte;
+  `valscore_R3.py` gives f.7 against the draft as filed (59 pairs, 41 exact words = 69.49%, letters 318/341 = 93.26%).
+  `shuffle_control.py` not re-run (needs the contributor's corpus); its outputs are filed.
+- **Stamps:** the four RFC 3161 tokens in `timestamps/b195/` carry the SHA-256 of their manifests, and each manifest's hash
+  equals the frozen R3 transcription (f.7 10:50:57, f.102 10:57:04, f.104 10:58:43, f.204 10:59:38 GMT). The TSA chain was
+  not verified. That the decode came after (11:00:22) is by the contributor's record.
+- **Counting:** `mkledger_R3.py` labels a unit S unless the reader listed it; "S?" marks borderline units (split-word halves,
+  names spelt oddly, a dropped letter: "gesanten", "lasen", "genisenden", "crosen", "uehrden"). Under the strict rule
+  (probable units are holes) the S? units are holes, so the strict figure is the contributor's "floor":
+
+| slip | R3 strict (S? as holes) | contributor's figure, S? counted read | figure of record (R1/R2, unchanged) |
+|---|---|---|---|
+| f.102 | 53/84 = 63.10% | 61/84 = 72.62% | 28/81 = 34.57% |
+| f.104 | 71/102 = 69.61% | 73/102 = 71.57% | 45/101 = 44.55% |
+| f.204 | 42/51 = 82.35% | 45/51 = 88.24% | 24/51 = 47.06% |
+
+- **Images:** LASA `max` jpg of frame 233 (2500 px, plain curl, 200). f.204: 7 lines, 51 cipher words and the name signs in
+  the same places as R3. At this resolution letters in several words cannot be settled; where they can, R3 departs from the
+  image at least once toward a word: image "tbdf" (as reader 2 and the first integration check read it), R3 "tzbdf" = "lasen"
+  (labelled S?, so a hole in the strict figure). Frame 882 of Nr. 529 (fol. 807v, left): the underlined draft with "obstination"
+  (margin), "gelangen", "schuldt an ihme nicht", "praesertim in pari ... constituti legati", "humeur", "nicht übel schicken" and
+  the margin "...er autoritate" is there, cut at the gutter on the right as the pairs file says; the f.7 check pairs are sound in
+  kind. Not checked word by word.
+- **The reading reads:** f.204 under R3 is connected German: in confidence and for certain the envoys report dangerous counsels,
+  that the archbishoprics and bishoprics be given up as recompense so that the others keep what they still hold. f.104 and f.102
+  read in stretches.
+- **Verdict on the figures:** R3 is a non-blind re-transcription after the reader had seen another reader's read words, and the
+  image shows at least one word-seeking letter. Its figures are filed per slip as a third reading, labelled; they do **not**
+  replace the figures of record, the text states stay "decoded, not read", and `fraction_read` stays 149/351. The contributor
+  has said on the PR (13 Nov 2026) that a strictly blind fourth reader is running and will be added whatever it shows: that is
+  the test that can move the figures, so the target stays `Status: in progress` until it is in.
+- **Outcome method (owner's decision, 13 Nov 2026):** set to "read with known key", because the envoys' own key survives in the
+  volume (frame 168, the AMPHICTYONES worksheet) and gives the same decryption. The facts stay as recorded: the contributor's
+  table was recovered from the ciphertext by annealing and frozen before the worksheet was seen (by the contributor's record),
+  and the worksheet then confirmed it in all 12 pairs. The label is the conservative one chosen by the owner for the paper.
+- **Prior art for f.102, f.104, f.204** (`PRIOR_ART_R3.md`): no clear draft found in the frames searched (contributor's record,
+  not re-checked here); the fair copies carry insertion marks only.

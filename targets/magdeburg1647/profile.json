@@ -334,13 +334,28 @@
    "kind": "verification",
    "what": "Integration check (PR #524, report R8_bremen): all scripts re-run with python3 -I, byte-identical; original annealer re-run on f.5+f.6 (fresh Gutenberg 55171) converges to KEY_v2; own decoder from the frame-168 worksheet agrees with every KEY_v2 decryption except words with cipher m (worksheet m = x); LASA frames 168, 233, 278 fetched: worksheet confirmed, f.204 lines 1-3 compared (about 15/24 R1 words agree, R2 closer), frame 278 is a glossed sign catalogue not yet used. Texts set to decoded, not read; fraction_read 149/351 over the five held-out slips; 'illegible' gap corrected to not-attempted; target kept in progress.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Third reader R3 (contributor's session b195): f.7, f.102, f.104 and f.204 re-transcribed from the LASA images with a sign reference (gloss/REF_SIGNS_R3.md), not blind (key known; reader 2's read-word lists seen), each frozen and RFC 3161 stamped (10:50:57-10:59:38 GMT), decoded once with KEY_v2 at 11:00:22 by the contributor's record. Strict with borderline units as holes: f.102 53/84 = 63.10%, f.104 71/102 = 69.61%, f.204 42/51 = 82.35% (contributor's literal figures 72.62%, 71.57%, 88.24%). f.7 against its Nr. 529 draft (frame 882): 41/59 exact words, letters 318/341 = 93.26%.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of the R3 files (R8, AI agent): decode_R3.py, mkledger_R3.py and valscore_R3.py re-run with python3 -I, byte-identical; four b195 stamp imprints equal the manifests, which hold the frozen R3 transcriptions; frame 233 compared: word count and sign positions agree, one word-seeking letter seen (image tbdf, R3 tzbdf = lasen, a borderline unit); frame 882 of Nr. 529 holds the f.7 draft as stated. R3 figures filed per slip as a labelled third reading, not figures of record (non-blind); outcome.method set to 'read with known key' by the owner's decision.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
-  "method": "key recovered from ciphertext-only",
-  "method_basis": "KEY_v2 was found by simulated annealing on the ciphertext of f.5 and f.6 alone, frozen before any gloss, worksheet or clear draft was compared; it was then applied unchanged to the held-out slips. The key is not new: the envoys' own key survives in the same volume (Nr. 530 frame 168, keyword AMPHICTYONES over zxwurqlkgfdb, all 12 pairs equal, and it decodes the slips to the same letters, cipher m = x added); by the contributor's record the table was frozen (13:47:27 UTC, 12 Nov 2026) before frame 168 was seen (14:00:36), and the catalogue entry the work started from already said a key was in the file.",
+  "method": "read with known key",
+  "method_basis": "Owner's decision (13 Nov 2026): 'read with known key', because the envoys' own key survives in the same volume (Nr. 530 frame 168, keyword AMPHICTYONES over zxwurqlkgfdb, all 12 pairs equal) and decodes the slips to the same letters (cipher m = x added). The facts behind it: KEY_v2 was found by simulated annealing on the ciphertext of f.5 and f.6 alone and frozen (13:47:27 UTC, 12 Nov 2026) before frame 168 was seen (14:00:36), by the contributor's record; the worksheet then confirmed it 12/12; the catalogue entry the work started from already said a key was in the file. The label is the conservative one chosen by the owner for the paper.",
   "contribution": [
    "transcription",
    "key recovered"
@@ -449,54 +464,63 @@
     "label": "f.102, frame 118, ad Appendicem Diarii No. 22",
     "transcription": [
      "transcriptions/f102_frame118_R1.txt",
-     "transcriptions/f102_frame118_R2.txt"
+     "transcriptions/f102_frame118_R2.txt",
+     "transcriptions/f102_frame118_R3.txt"
     ],
     "decryption": [
      "decryptions/f102_R1.txt",
-     "decryptions/f102_R2.txt"
+     "decryptions/f102_R2.txt",
+     "decryptions/f102_R3.txt"
     ],
     "reading": "readings/f102.md",
     "translation": "translations/f102.md",
     "language": "de",
     "state": "decoded, not read",
     "read_share": 0.3457,
-    "summary": "Fragments: 'gros zu thun', Groß-Glogau, Bremen, 'spiritu vertiginis getriben'; mostly holes. English gist in translations/ is AI-made."
+    "summary": "Fragments: 'gros zu thun', Groß-Glogau, Bremen, 'spiritu vertiginis getriben'; mostly holes. English gist in translations/ is AI-made.",
+    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 53/84 = 63.10% with borderline S? units as holes; the contributor's figure counting them read 61/84 = 72.62% (units/f102_R3.tsv; reading readings/f102_R3.md). Not the figure of record, which stays read_share; a blind fourth reader is announced."
    },
    {
     "doc": "f104",
     "label": "f.104, frame 121, ad Diarium No. 22",
     "transcription": [
      "transcriptions/f104_frame121_R1.txt",
-     "transcriptions/f104_frame121_R2.txt"
+     "transcriptions/f104_frame121_R2.txt",
+     "transcriptions/f104_frame121_R3.txt"
     ],
     "decryption": [
      "decryptions/f104_R1.txt",
-     "decryptions/f104_R2.txt"
+     "decryptions/f104_R2.txt",
+     "decryptions/f104_R3.txt"
     ],
     "reading": "readings/f104.md",
     "translation": "translations/f104.md",
     "language": "de",
     "state": "decoded, not read",
     "read_share": 0.4455,
-    "summary": "Fragments: something strange told to the legates 'in vertrawen', a proposal, 'post repulsam ... invidia', a Münster burgher; mostly holes. English gist in translations/ is AI-made."
+    "summary": "Fragments: something strange told to the legates 'in vertrawen', a proposal, 'post repulsam ... invidia', a Münster burgher; mostly holes. English gist in translations/ is AI-made.",
+    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 71/102 = 69.61% with borderline S? units as holes; the contributor's figure counting them read 73/102 = 71.57% (units/f104_R3.tsv; reading readings/f104_R3.md). Not the figure of record, which stays read_share; a blind fourth reader is announced."
    },
    {
     "doc": "f204",
     "label": "f.204, frame 233, Annotata ad No. 40",
     "transcription": [
      "transcriptions/f204_frame233_R1.txt",
-     "transcriptions/f204_frame233_R2.txt"
+     "transcriptions/f204_frame233_R2.txt",
+     "transcriptions/f204_frame233_R3.txt"
     ],
     "decryption": [
      "decryptions/f204_R1.txt",
-     "decryptions/f204_R2.txt"
+     "decryptions/f204_R2.txt",
+     "decryptions/f204_R3.txt"
     ],
     "reading": "readings/f204.md",
     "translation": "translations/f204.md",
     "language": "de",
     "state": "decoded, not read",
     "read_share": 0.4706,
-    "summary": "Someone told the writer 'in vertrawen et pro certo'; 'lieber', 'solte nur damit'; mostly holes. English gist in translations/ is AI-made."
+    "summary": "Someone told the writer 'in vertrawen et pro certo'; 'lieber', 'solte nur damit'; mostly holes. English gist in translations/ is AI-made.",
+    "note": "Third reading R3 (13 Nov 2026, non-blind: the reader knew the key and had seen reader 2's read words): strict 42/51 = 82.35% with borderline S? units as holes; the contributor's figure counting them read 45/51 = 88.24% (units/f204_R3.tsv; reading readings/f204_R3.md). Not the figure of record, which stays read_share; a blind fourth reader is announced."
    }
   ]
  }

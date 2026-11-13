@@ -1,0 +1,8 @@
+LABEL: bonde1676_v10_pr
+Local UTC: 20261113T102855Z
+Files: 136
+Manifest SHA-256: 23cb3e2bd404b9253c69b147eb5ab053a116d28adaa53758d5e29793bdd73316
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 13 10:28:57 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

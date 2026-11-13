@@ -1,0 +1,8 @@
+LABEL: magdeburg_fable_f204
+Local UTC: 20261113T105938Z
+Files: 1
+Manifest SHA-256: 1b1d24f8db94ea3e4b0eac2e794b7944eef7f625546453e6ba6a50842584cebb
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 13 10:59:38 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
