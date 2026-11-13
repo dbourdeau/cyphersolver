@@ -1,8 +1,43 @@
 {
  "schema_version": 1,
  "target": "este1585",
- "title": "A cipher page in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, p. 523): read in part with Tomokiyo's key",
+ "title": "Two cipher pages in Cardinal Luigi d'Este's cipher, Rome 1584-85 (BnF Cinq Cents de Colbert 338, pp. 517 and 523): p. 517 read, p. 523 read in part, with Tomokiyo's key",
  "documents": [
+  {
+   "id": "colbert338-p517",
+   "read": "read",
+   "shelfmark": "Paris, BnF, Cinq Cents de Colbert 338, p. 517 (Gallica btv1b10033937d, view 272, right page)",
+   "date": "1584-1585 (not on the page; by the file)",
+   "year": 1585,
+   "country": "Italy",
+   "route": "a writer in Rome, in Cardinal Luigi d'Este's cipher -> a correspondent at the French court",
+   "places": {
+    "from": "Rome (by the file)",
+    "to": "the French court (by the content)"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on p. 517.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1094,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription-p517.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica btv1b10033937d (BnF; not reproduced)",
+    "image_quality": "fair",
+    "notes": "Shape names only, two independent passes, 17 differences settled on the image; lines 4-29 transcribed after key K-C02 was frozen and hashed before decoding."
+   }
+  },
   {
    "id": "colbert338-p523",
    "read": "read in part",
@@ -70,7 +105,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "online",
-   "where": "The key: S. Tomokiyo, Cryptiana, 'Cardinal d'Este's Cipher (1584-1586)' (henryiii.htm), built on BnF fr. 16041-16042; Colbert 338 not cited, no letter edited. The text of p. 523: no edition found; Favalli, CHMO 49/2 (2024), read, covers 1569-1580 and does not mention it; Favalli's thesis (HAL tel-03435435, 1559-1580) not read in full. Catalogue 1572 open on origin/main (GitHub API, e2315f8a, 5 Nov 2026).",
+   "where": "The key: S. Tomokiyo, Cryptiana, 'Cardinal d'Este's Cipher (1584-1586)' (henryiii.htm), built on BnF fr. 16041-16042; Colbert 338 not cited, no letter edited. The text of p. 523: no edition found; Favalli, CHMO 49/2 (2024), read, covers 1569-1580 and does not mention it; Favalli's thesis (HAL tel-03435435, 1559-1580) not read in full. Catalogue 1572 open on origin/main (GitHub API, e2315f8a, 5 Nov 2026). p. 517 (13 Nov 2026): no edition found; one web search on Poigny / Montmorency / Joyeuse / Clermont-de-Lodève 1584 found nothing printing this advice.",
    "found": "before attempt",
    "used": true
   },
@@ -81,7 +116,7 @@
   ],
   "attack": "published key",
   "first_date": "2026-10-29",
-  "last_date": "2026-11-05",
+  "last_date": "2026-11-13",
   "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement on a held-out page, thresholds fixed in advance) and answered the blind shape sheet (shapes only). AI agents transcribed, applied and adjusted the key, measured, read and wrote up. No palaeographer checked the page.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
@@ -132,29 +167,53 @@
    "kind": "literature search",
    "what": "Cryptiana re-read; Favalli 2024 read in full; Favalli's thesis (HAL tel-03435435) not readable; web searches for an edition of fr. 16041-16042 or of this advice: nothing.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Probable words placed on pages already seen only (pp. 436-438, 453-454, 504, 523): sig = m, A = [fait], Venus sign = [faire], newt = nn; key K-C02 frozen and hashed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement on held-out p. 517 lines 4-29 (979 signs): M5 0.509 vs 0.067 for the best of 200 shuffled keys (gap 0.442); thresholds >= 0.45 and >= +0.30 fixed before.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "p. 517 read by sense: 231 words, 201 certain, 22 probable, 3 restored, 5 unresolved (96.5%).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read with known key",
-  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed pages of the same volume; the key is partial (one sign e/null open, the code word y unknown) and its test on this page is partial by our protocol.",
+  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517; the code word y and two signs (Venus sign, barred dumbbell) stay open.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
-  "fraction_read": 0.885,
+  "fraction_read": 0.928,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule (certain + probable; restored not counted), counted by script on the word list in reading.md: 200 words, 146 certain, 31 probable, 1 restored, 22 unresolved = 177/200 = 88.5%.",
+  "fraction_read_source": "Daniel's rule (certain + probable; restored not counted), counted by script on the word lists: p. 523 177/200 (88.5%) in reading.md, p. 517 223/231 (96.5%) in reading-p517.md; both pages 400/431 = 92.8%.",
   "verification": [
    "statistical test",
    "historical consistency"
   ],
   "validation": {
-   "date": "2026-11-05",
-   "verdict": "weak",
+   "date": "2026-11-13",
+   "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py): key frozen, p. 523 transcribed and hashed before decoding, one measurement: M5 0.457 vs 0.078 for the best of 200 shuffled keys; thresholds >= 0.60 and >= +0.30: partial. Earlier tests against the volume's glosses (V1-V5) failed or were not admissible."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated."
   },
   "provenance": "mixed",
   "credits": [
@@ -168,8 +227,8 @@
    {
     "who": "dudout",
     "role": "transcription",
-    "note": "p. 523 transcribed and read in part (88.5%) with Tomokiyo's table; shape names and values aj = f, large looped rho = a, newt = nn added; one held-out measurement (partial)",
-    "date": "2026-11-05"
+    "note": "p. 523 transcribed and read in part (88.5%) with Tomokiyo's table; shape names and values aj = f, large looped rho = a, newt = nn added; one held-out measurement (partial); p. 517 transcribed and read (96.5%) with key K-C02 (sig = m, A = [fait]), one held-out measurement validated (13 Nov 2026)",
+    "date": "2026-11-13"
    },
    {
     "who": "bourdeau",
@@ -180,15 +239,37 @@
   ],
   "gaps": [
    {
-    "item": "22 unresolved words, mostly line 1 (the prince's name, code word y) and the ends of lines 3-4",
+    "item": "p. 523: 22 unresolved words, mostly line 1 and the ends of lines 3-4",
     "blocker": "open-codes"
    },
    {
-    "item": "Barred dumbbell: e in our key, null in Tomokiyo's table; not settled",
+    "item": "Code word y (restored as Spain on p. 517 by sense only) and the Venus sign / barred dumbbell values (contradicted between pages)",
     "blocker": "open-codes"
+   },
+   {
+    "item": "p. 518 (continuation of the p. 517 letter, about 17 cipher lines) and p. 513 not transcribed",
+    "blocker": "not-attempted"
    }
   ],
   "texts": [
+   {
+    "doc": "colbert338-p517",
+    "label": "Colbert 338 p. 517, whole page in cipher",
+    "transcription": "transcription-p517.txt",
+    "decryption": "decryption-p517.txt",
+    "reading": "reading-p517.md",
+    "translation": "translation-p517.md",
+    "language": "fr",
+    "state": "read",
+    "read_share": 0.965,
+    "summary": "The writer hears that the pope was told, from the court of T(urin?), that 'this duke' had letters from the King of [Spain] urging him to make war on the King and protect Marshal de Montmorency; he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lodève and his letters to [Spain], and hopes Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-13",
+     "note": "Read as sentences 13 Nov 2026 by one AI reader: 201 certain, 22 probable, 3 restored, 5 unresolved of 231 words (96.5%), each probable word justified in reading-p517.md; the code word y restored as Spain by sense only. No palaeographer checked the page."
+    }
+   },
    {
     "doc": "colbert338-p523",
     "label": "Colbert 338 p. 523, whole page in cipher",
@@ -209,6 +290,6 @@
    }
   ],
   "key_file": "key.tsv",
-  "notes": "The table is Tomokiyo's; key.tsv is given with his credit, our shape names and our few changes marked."
+  "notes": "The table is Tomokiyo's; key.tsv is given with his credit, our shape names and our few changes marked. key-p517.tsv gives K-C02, the key frozen before the p. 517 measurement."
  }
 }
