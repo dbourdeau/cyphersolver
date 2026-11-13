@@ -1,10 +1,39 @@
 # Ormond to the Earl of Arran, 24 January 1677/8: a "trial" passage in figures (Unsolved Catalogue no. 353)
 
-Status: in progress
+Status: key identified: Tomokiyo's reconstruction of Ormond-Longford Cipher 1 shifted by +7; read in part 15/20 figures; holes kept
 
 Attempted 26-27 Oct 2026, not solved. The 20 figures do not fit either Ormond key of these years. The passage is too
 short for a ciphertext-only attack on a code of this size. The next step is the manuscript (NLI, Ormonde MSS), which
 needs physical access. Cryptoole XX1678-1; Tomokiyo, "An Unidentified Cipher?" on cryptiana `charlesii2.htm`.
+
+
+## Key identified, 13 Nov 2026 (files in `identification/`)
+
+Every figure is the Ormond-Longford Cipher 1 (1680) number **plus 7**. With Tomokiyo's reconstruction of that key
+(Cryptiana `charlesii2.htm`), from the glosses in HMC n.s. v pp.454 ff., the passage reads in part:
+
+> If what he says of [445] and [342] be true, [726] and King are in a [700] [720]; but it seems to Ormond not credible.
+
+Decryption: `[726] an d King ar e in a [700] [720]` / `to Ormond not c re di b le`. English is AI-made.
+
+- 15/20 figures given a value (75.00%): 10 from printed glosses or the p.498 plain rendering, 4 interpolated from the
+  key's regular order (51 e, 47 a, 25 c, 433 le), 1 from context (418 King). Gloss-attested only: 10/20. Holes: 5
+  (1680 numbers 438, 335, 719, 693, 713), none glossed in print.
+- Tomokiyo's key as published gives 14/20 (418 is an empty row in it) and reads 84 "and", 566 "Dor -> or?". We read
+  84 as "an" (p.486 "and" spans 84 50) and 566 as Ormond (p.498 plain rendering; p.454 gloss "Dor").
+- Each value was checked on the page images (`identification/GLOSS_CHECK.md`, crops in `identification/crops/`).
+- Controls (`identification/controls_out.txt`): over offsets -150..+150 on Longford 1 and 2, only -7 on Longford 1
+  spells any vocabulary word of 5+ letters across 3+ groups ("credible"). Random figure sets of the same shape at
+  their best of 602 key-offset pairs reach 8 letters 6/2000; shuffles of the real figures at -7 reach it 0/3000.
+  The bare hit count (14/20 at -7) reached 14 in 5/2000 random sets, so it is weak on its own.
+- No held-out text is in the 1678 numbering. Whether +7 holds over the whole table is not known. The figures
+  `445 342` and `700 720` stay open.
+- Credit: key reconstruction S. Tomokiyo; glosses HMC; offset identification and check Malcolm McBratney (Brisbane),
+  working with Claude (Anthropic). The offset was first noticed by an agent Malcolm ran on Perplexity and was then
+  checked independently (transcription, glosses on images, controls rebuilt).
+
+The record of the October attempt follows unchanged, except that "Ruled out" for Longford 1 applies to the key
+**unchanged**.
 
 ## The document
 
