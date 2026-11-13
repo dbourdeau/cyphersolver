@@ -24,10 +24,10 @@
     "partial": true
    },
    "length": {
-    "tokens": 736,
-    "distinct": 343,
+    "tokens": 754,
+    "distinct": 349,
     "unit": "code groups",
-    "measured": false,
+    "measured": true,
     "file": "inspecteurs_2nov_partial.txt"
    },
    "transcription": {
@@ -36,7 +36,7 @@
     "image_quality": "good",
     "notes": "736 four-digit coded groups (343 distinct) mixed with 437 clear words (names, addresses, ordinary words), counts from NOTES and the wiki. The transcription file is now in the repository (inspecteurs_2nov_partial.txt, published with the collector's permission of 8 Nov 2026); a plain regex for four-digit strings finds 754 (349 distinct) in it, which includes four-digit numbers in clear text, so the 736/343 coded-group count has not been reconciled with the file and 'measured' stays false. The clear words are in the original (Pillon). Snips of his scan are on the site."
    },
-   "read": "not read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -44,7 +44,7 @@
    "code",
    "syllabic"
   ],
-  "summary": "A four-digit code whose table is an alphabetical lexicon laid out over 0000-9999 (words and syllables), with beacon groups (0101, 0201, 0301, 0102 ...) that bracket words spelled in syllable groups; mixed with clear words in one telegram.",
+  "summary": "A four-digit code that behaves as a paged alphabetical book: page 01-99 and line 01-30, about 2,970 entries of words, syllables and single letters, with marker groups on pages 01-03 and 05 (brackets around spelled runs, paragraph end, grammatical endings); mixed with clear words in one telegram.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "4",
@@ -100,7 +100,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-11-07",
-  "last_date": "2026-11-07"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -467,12 +467,12 @@
   ],
   "fraction_read": 0.643,
   "fraction_read_method": "measured",
-  "fraction_read_source": "13 Nov 2026: 485 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json after the eleven assumed digit slips (counted by the script in NOTES.md, third pass); 172 further groups are marker groups with a working function and 97 are unread. The clear words are not counted.",
+  "fraction_read_source": "13 Nov 2026: 485 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json after the thirteen assumed digit slips (16 occurrences) (counted by the script in NOTES.md, third pass); 172 further groups are marker groups with a working function and 97 are unread. The clear words are not counted.",
   "verification": [
    "statistical test",
    "historical consistency"
   ],
-  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 236 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (64% of group occurrences valued, 23% marker groups, 13% unread). Limits: one transcription, no second text in this code, eleven assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
+  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 236 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (64% of group occurrences valued, 23% marker groups, 13% unread). Limits: one transcription, no second text in this code, thirteen assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
   "credits": [
    {
     "who": "pillon",
@@ -499,9 +499,9 @@
     "detail": "Each occurs once or twice; the interval between known neighbours still holds several words."
    },
    {
-    "item": "Eleven assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180) and the doubtful 0617",
+    "item": "Thirteen assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180, 4913, 4915; 16 occurrences) and the doubtful 0617",
     "blocker": "needs-physical-access",
-    "detail": "The full scan of the telegram is in the collector's hands and on the project owner's machine, not in the repository; only the opening lines are published as a crop."
+    "detail": "The full scan of the telegram is in the collector's hands and on the project owner's machine, not in the repository; only two crops of this telegram are published."
    },
    {
     "item": "Exact meaning of the marker groups on pages 01-03 and 05 (172 occurrences)",
@@ -524,7 +524,7 @@
      "grade": "B",
      "by": "Claude (the model that made the reading; no second reader yet)",
      "date": "2026-11-13",
-     "note": "Most paragraphs build sentences with scattered holes; the personal-news paragraphs and the postscript have holes in most sentences. Eleven digit slips are assumed and not checked on the scan. docs/_check_reading.py: 38 of 80 sentences clean (0.475) in the reading file."
+     "note": "Most paragraphs build sentences with scattered holes; the personal-news paragraphs and the postscript have holes in most sentences. Thirteen digit slips are assumed and not checked on the scan. docs/_check_reading.py: 38 of 80 sentences clean (0.475) in the reading file."
     },
     "summary": "Steenackers, director general of telegraphs and posts at Tours, tells three colleagues in besieged Paris what line to take towards the post office: the services rendered, balloon and pigeon post, the pigeon service about to be opened to private messages, the decree uniting posts and telegraphs and the one ending the post's monopoly on carrying newspapers. He passes on a report of Prussians leaving Saint-Germain daily with pickaxes, advice on coating cotton balloons, and family news for each addressee."
    }

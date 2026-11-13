@@ -391,6 +391,9 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
   aide-de-camp of Trochu, not for Trochu. The name fits BRU-NE-T (guess; a web search did not confirm a Brunet on Trochu's staff). 1027 = bonnes ("vos bonnes communications").
   Withdrawn: 3604 = excavation (the clear word before it is "la", so the entry starts with a consonant; f.. such as fable is possible, which would put the start of F before 3604).
   Candidates noted but not adopted: 6005 9029 0312 = notaire/notable + surintend-ant; 4423 = inertie/incurie; 8122 = reste; 4519 = installee; 2329/2705 = second forms of depeche/donner.
+- Correction from the claims review (13 Nov): the slips are THIRTEEN written groups, 16 occurrences (the eleven listed above plus 4913 and 4915 for 4914); not all are 3/5, 0/6 or 5/8 (2534 is 3/1, 6180 8/2, 5005 5/6).
+  The single inversion of the first pass was 7119/7208 (not 5511/5512). The transcription file has 754 groups, 349 distinct, 0101 52 times, and no four-digit number in clear; 736/343/49 was the 7 Nov count.
+  PRU-S-SIE-N occurs once; the second run is PRU-S-[8626], 8626 unread. 3927 = garde is used in 'mettre en garde' only; in L-[3927]-E it is unread.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
 
 ## Wiki and engine (7 Nov 2026): start here
@@ -424,7 +427,7 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 ## Remaining gaps
 - names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
 - about 35 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
-- eleven assumed digit slips and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
+- thirteen assumed digit slips (16 occurrences) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
 - exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
 
 ## Escalation
