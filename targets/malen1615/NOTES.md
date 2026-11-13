@@ -133,3 +133,20 @@ held-out test and made the reading. No human palaeographer or historian has chec
 - [ ] print: two web searches only; printed inventories of the Ammerzoden archive not checked
 - [x] key-rebuild: key rebuilt ciphertext-only, all 23 signs valued; the code numbers 59, 60, 68 and the `&` sign open
 - [ ] retry: faint signs of L02-L04 not retried beyond the first crops; letter 2 Dutch passages not transcribed
+
+## Integration check (13 Nov 2026)
+
+- Reproduced: `scripts/check_marks.py` PASS (154 of 165 words verbatim, 3 repairs, 3 guesses, 5 holes), `signs.py`
+  (781 and 179 signs), `_check_profile.py` valid, `_check_reading.py` as quoted in the PR. An independent decoder written
+  from `key_frozen.tsv` reproduces `decryption_malen1.txt` on all 33 lines.
+- Images: scan 2 fetched on 13 Nov 2026 (Zoomify tiles, one request at a time). The line layout, the word counts and the
+  clear words of L07-L10 agree with the transcription; signs are not separable by eye at that scale between the paired
+  shapes (X/C, Y/R, D/O), so no sign-by-sign blind comparison was made. The X/C, Y/R and O/M splits stay the open gap.
+- Strict share: 154 of 165 = 93.3% (the contributor already counted strictly). With the 4 unresolved code-number
+  occurrences (60, 59 twice, 68) counted as holes it is 154 of 169 = 91.1%. Letter 2 has 8 of about 19 cipher lines
+  transcribed, so the whole target is lower. Class: read in part.
+- The held-out test is ordered by the contributor's record (single commit); the freeze header names L05-L32, and the
+  X/C split in the held-out lines was made with the key in mind (stated in `heldout.md`).
+- Duplicates: no other target covers Gelders Archief 0372 inv. 52 or the Van Malen letters.
+- The Dutch cipher passages of letter 2 and a blind transcription are workable, so the target stays in progress with
+  no page.
