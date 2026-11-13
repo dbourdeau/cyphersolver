@@ -1,0 +1,292 @@
+{
+ "schema_version": 1,
+ "target": "goslinga1730",
+ "title": "Sicco van Goslinga to Reinhard van Reede-Ginkel, 1730 (catalogue 2534): Dutch number code rebuilt from the contemporary decipherment slip of the letter of Compiègne, 23 July 1730, and that letter read; the key does not carry over to the May 1730 page from Fontainebleau",
+ "documents": [
+  {
+   "id": "compiegne_23jul1730",
+   "read": "read",
+   "shelfmark": "Gelders Archief (Arnhem), 0613 Familie Bentinck / Aldenburg Bentinck, inv. nr. 3889, scans 23, 24, 27 (letter) and 25 (the same page with the decipherment slip lying on it)",
+   "date": "23 July 1730",
+   "year": 1730,
+   "country": "Netherlands",
+   "route": "Sicco van Goslinga, Compiègne -> Reinhard van Reede, heer van Ginkel (address 'A Monsieur de Ginkel')",
+   "places": {
+    "from": "Compiègne",
+    "to": "unknown"
+   },
+   "language": "Dutch",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "A loose slip in a second hand, lying on the letter (scan 25), gives the Dutch passages in plain text, with two French phrases copied from the letter. The page without the slip is scan 27."
+   },
+   "length": {
+    "tokens": 253,
+    "distinct": 109,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_goslinga1730.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer screenshots (headless Chromium, device scale 2, 14-15 s tile wait)",
+    "image_quality": "good",
+    "notes": "Two passes (1x crops, then 2x half-line crops); 17 differing lines, all settled on the image (mostly 4 against 7 and 2 against 4 in this hand). A first set of screenshots had blurred tiles and was not used for reading. A blind review on 13 Nov 2026 compared 60 code groups of six lines with the images: 59 agree; the one difference, a caret over 253 in the first line (253^), is corrected."
+   }
+  },
+  {
+   "id": "fontainebleau_may1730",
+   "read": "not read",
+   "shelfmark": "Gelders Archief (Arnhem), 0613 Familie Bentinck / Aldenburg Bentinck, inv. nr. 3889, scan 8 (first 16 written lines tested)",
+   "date": "May 1730 (scan 7 is headed Fontainebleau 6 May 1730; the dateline of scan 8 is faint)",
+   "year": 1730,
+   "country": "Netherlands",
+   "route": "Sicco van Goslinga, Fontainebleau -> Reinhard van Reede, heer van Ginkel",
+   "places": {
+    "from": "Fontainebleau",
+    "to": "unknown"
+   },
+   "language": "Dutch",
+   "cleartext_in_document": "interspersed",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on or with the page."
+   },
+   "length": {
+    "tokens": 130,
+    "distinct": 96,
+    "unit": "code groups",
+    "measured": true,
+    "file": "heldout_fontainebleau1730_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "archieven.nl viewer screenshots",
+    "image_quality": "good",
+    "notes": "One careful pass of the first 16 written lines, used only as a held-out test of the July key."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Numbers set into clear Dutch, a point after every group. Groups up to about 160 stand for single letters with several homophones (e 19, 42, 56, 85, 92, 112, 139; o 37, 38, 49, 68, 76, 88, 98, 115; n 10, 58, 79, 105, 153; 91 = ij); a coded stretch has no word division. Groups from about 200 to 970 stand for words in roughly alphabetical order (207 aen, 418 dat, 421 de, 433 dese, 457 dit, 479 een, 491 en, 582 het, 623 ick, 639 in, 669 konnen, 697 maar, 729 met, 806 onse, 809 op, 814 over, 856 saken, 866 seer, 881 sijnde, 888 soo, 937 tusschen, 947 van de, 958 veel). Groups with a caret over the last digit are names and titles (103^ and 109^ the Emperor, 253^ the King of Prussia, 286^ the British minister, 292^ Seckendorff, 342^ the King of Great Britain, 697^ the King of France, 704^ the Keeper of the Seals, 744^ Spain, 914^ Sicily); 697 without the caret is 'maar'. Group 12^ is the word 'werdt'.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 41,
+   "kinds": [
+    "common words",
+    "names",
+    "titles",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Key: 107 entries, one per group (66 letter groups, 41 word and name groups); the 253 code-group occurrences of the letter are 109 distinct groups, the 107 of the key and the two holes 158 and 478, all from the slip of 23 July 1730. The letter groups give no Dutch on the May 1730 page (scan 8), so that letter uses another letter table, or its low groups mean something else; some word groups seem to fit it (958 veel, 418 dat, 744^ Spain), not tested further. Irregular: 92 for the w of 'waer' (92 is e six times); 158 in the margin before it has no value."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Contemporary decipherment slip with the letter of 23 July 1730 (scan 25). No modern reading or edition found: web searches on 12 Nov 2026 (Goslinga, Van Reede/Ginkel, 1730, geheimschrift/cijfer) found only the printed Slingelandt-Goslinga correspondence (Van Rappard 1978), another series; the vetting of 11 Nov 2026 found nothing in DECODE, Tomokiyo or Lasry.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "WAINUT set the task (catalogue 2534) and the rules; AI language-model agents fetched the images, transcribed, built and froze the key, ran the held-out tests, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "archieven.nl viewer in headless Chromium (Playwright)",
+   "scripts in this folder (viewer screenshots, crops, key build, decryption, held-out test, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Scans 4-14, 22-31, 39-41 and 68-70 of inv. 3889 captured from the archieven.nl viewer in headless Chromium, one page at a time, 6-15 s apart; the code pages again with a 14-15 s wait after blurred tiles were seen in the first set.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written first; the code groups of scans 23, 24 and 27 transcribed in two passes and reconciled on the image; the slip (scan 25) transcribed separately.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Every code group of the letter paired with the slip (pairs.tsv covers all 253 groups in order); key built by script, no conflicts.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Split test inside the letter: key from the first part (up to 'verdwinen') applied to the last paragraph (63 groups, 23 words): 38 of the 38 groups that key knows agree with the slip, 25 groups not in it, 0 wrong; 4 of 23 words fully given. Cross-letter test on the May 1730 page (scan 8, no slip): the letter groups give no Dutch.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Letter of 23 July decrypted mechanically and read; scripts/check_marks.py rebuilds the decryption and fails on any unmarked departure (passes).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Web searches on Goslinga, Van Reede-Ginkel and the 1730 letters: no edition or decipherment found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Independent blind review by an AI reader: 60 code groups of six lines read from the images before the transcription was opened (59 agree; a missing caret over 253 corrected), mark check re-run, held-out exclusion checked in the script, the 8 sentences read against the slip. Group 12^ corrected from 'nie werdt' to 'werdt' (the 'nie' on the slip ends 'harmonie'), which makes the conditional sentence positive.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from the contemporary decipherment slip that lies with the letter of 23 July 1730 and used to read that letter; the same key does not read the May 1730 page.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.15,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "The July letter has 253 code groups; the code pages of the folder (about 12 scans by the catalogue's count) hold perhaps 1,500-2,000 groups (scan 8 alone has about 200). A rough estimate from images, not counted groups.",
+  "verification": [
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the loose decipherment slip in a second hand lying on the letter of 23 July 1730",
+    "date": "1730",
+    "source": "Gelders Archief 0613 inv. 3889, scan 25"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key rebuilt from the slip, split-tested, letter of 23 July 1730 read; May 1730 page tested and not read",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "code groups of scans 23, 24, 27 (two passes), slip of scan 25, first 16 lines of scan 8",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI reader, blind: 60 code groups of six lines on the images and the 8 sentences against the slip; no human palaeographer",
+    "date": "2026-11-13"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "compiegne_23jul1730",
+    "label": "Compiègne, 23 July 1730: the Dutch coded passages",
+    "transcription": "transcription_goslinga1730.txt",
+    "decryption": "decryption_goslinga1730.txt",
+    "reading": "reading_goslinga1730.md",
+    "translation": "translation_goslinga1730.md",
+    "language": "nl",
+    "state": "read",
+    "summary": "Seckendorff's information to the King of Prussia proved true, and the Emperor's answer agrees with it and contains the points then listed in French; a plan of war and operations has been drawn up; if things are settled and carried out in full harmony the Emperor will in all likelihood listen to reason; but the writer fears that the jealousy between the Kings of France and Great Britain, a British letter to Spain and another from 'this court' (probably the French court, where the writer is) about the expedition to Sicily may make all these measures go up in smoke; the Keeper of the Seals told of an incident between the British minister and the King of Prussia, which could hinder 'our affairs'; the writer asks the addressee to tell him whether it is true.",
+    "note": "78 cipher words: 29 spelled from letter groups verbatim, 46 word or name groups whose values come from the slip, 1 marked repair ({e/w}aer), 2 holes (groups 158 and 478, which the slip does not render). 75 of 78 words (96.2%) read from the signs without repair. The letter groups are confirmed by the split test (38 of 38 known part-B groups agree); the word and name groups rest on the slip alone. Dan Bourdeau's reading checker scores the original-spelling sentences 0 of 11 clean and the modern-spelling version 5 of 11: its Dutch word list lacks the period spellings (ick, seer, soo, dese, saken, waer) and also common words (tussen, zo, waarschijnlijkheid); the only real holes are the two groups. The translation scores 22 of 23 clean.",
+    "reading_review": {
+     "grade": "B",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "The reviewer read 60 code groups of six lines from the images (59 agree; the missing caret over 253 is now corrected) and found all 8 sentences coherent Dutch with at most one hole each. It corrected group 12^ from 'nie werdt' to 'werdt', which turns the sentence on the Emperor from negative to positive; the word and name groups rest on the slip alone."
+    },
+    "read_share": 0.962
+   },
+   {
+    "doc": "fontainebleau_may1730",
+    "label": "Fontainebleau, May 1730 (scan 8): held-out test only",
+    "transcription": "heldout_fontainebleau1730_transcription.txt",
+    "decryption": "heldout_fontainebleau1730_decryption.txt",
+    "language": "nl",
+    "state": "decoded, not read",
+    "summary": "Not read. The July key applied mechanically to the first 16 lines: its letter groups give no Dutch (for example 'hswlls', 'gtsmb'); a few word groups may fit the context (958 veel after 'geoordeelt dat', 744^ Spain after 'van').",
+    "note": "Held-out test of the July key, not a decipherment of this letter: 130 code-group occurrences, 96 distinct groups; 46 of 82 low-group occurrences and 8 of 48 high or caret-group occurrences are in the key."
+   }
+  ],
+  "key_file": "key_frozen.tsv",
+  "gaps": [
+   {
+    "item": "Groups 158 and 478 of the letter of 23 July 1730",
+    "blocker": "open-codes",
+    "detail": "Each occurs once; the slip renders neither (158 stands in the left margin before 'waer', 478 before 'volkomene')."
+   },
+   {
+    "item": "The word and name groups of the July letter",
+    "blocker": "too-short",
+    "detail": "Their values rest on the slip only; none is confirmed by a second occurrence outside this letter."
+   },
+   {
+    "item": "The letter table of the May 1730 letters from Fontainebleau (scans 5/7, 8, 9, 11-13)",
+    "blocker": "no-key-material",
+    "detail": "The July key's letter groups give no Dutch on scan 8 (first 16 lines tested); a ciphertext-only attack helped by the shared word list was not tried."
+   },
+   {
+    "item": "The French-language number code of scans 30 and 40",
+    "blocker": "not-attempted",
+    "detail": "Another style of code; not examined."
+   },
+   {
+    "item": "The decipherment slip on scan 69 (dateline read as 1 June 1733, uncertain)",
+    "blocker": "not-attempted",
+    "detail": "Its cipher letter was not found among the scans fetched; not paired."
+   },
+   {
+    "item": "The key Gelders Archief 0613 inv. 3973 ('Sleutel voor geheimschrift')",
+    "blocker": "needs-physical-access",
+    "detail": "Not scanned; not compared."
+   }
+  ]
+ }
+}
