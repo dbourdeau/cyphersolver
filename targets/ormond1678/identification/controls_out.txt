@@ -1,0 +1,10 @@
+vocab size 5644 credible count 11
+K1: hits at -7 = 14/20; at 0 = 6/20; max 14; top [(-7, 14), (-5, 12), (-9, 10), (-8, 10), (-10, 9), (-6, 8)]; offsets with any 5+ word: 1/301 [(-7, (8, ('credible', 5)))]
+K2: hits at -7 = 11/20; at 0 = 5/20; max 12; top [(-24, 12), (10, 12), (15, 12), (-51, 11), (-50, 11), (-8, 11)]; offsets with any 5+ word: 0/301 []
+K3: hits at -7 = 2/20; at 0 = 3/20; max 4; top [(-6, 4), (142, 4), (-107, 3), (-29, 3), (-5, 3), (0, 3)]; offsets with any 5+ word: 0/301 []
+K1c: hits at -7 = 15/20; at 0 = 6/20; max 15; top [(-7, 15), (-5, 12), (-9, 10), (-8, 10), (-10, 9), (-6, 8)]; offsets with any 5+ word: 1/301 [(-7, (8, ('credible', 5)))]
+real best over 2 keys x 301 offsets = (8, 'K1', -7)
+random sets N=2000 (decodes 2000*2*301=1204000): best word length dist [(0, 1883), (5, 80), (6, 22), (7, 9), (8, 4), (10, 1), (11, 1)]; any 5+ word 117/2000; 8+ letters 6/2000
+random sets K1 max hits over 301 offsets dist [(8, 29), (9, 393), (10, 774), (11, 570), (12, 186), (13, 43), (14, 5)]; >=14: 5/2000
+shuffles N=3000 at -7 K1: dist [(0, 2965), (5, 31), (6, 4)]; any 5+ word 35/3000; 8+ letters 0/3000
+K1 only, N=2000x301: any 5+ word 31/2000; 8+ letters 3/2000; same offset >=14 hits AND 8+ letter word: 0/2000
