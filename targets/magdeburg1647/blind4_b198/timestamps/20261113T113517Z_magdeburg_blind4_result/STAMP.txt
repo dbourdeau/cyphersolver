@@ -1,0 +1,8 @@
+LABEL: magdeburg_blind4_result
+Local UTC: 20261113T113517Z
+Files: 139
+Manifest SHA-256: a3cf703f1e2480d4d612475d51fbc8e83a3d26c6ba0435235f07c3baa78510b0
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 13 11:35:17 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

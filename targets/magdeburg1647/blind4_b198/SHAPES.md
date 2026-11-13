@@ -1,0 +1,12 @@
+# SHAPES.md (b198) letter-shape notes only, from frames 0003 and 0051 and the slips themselves. No letter-to-letter mapping was worked out from the glosses.
+- z: written like a "2", often with a long tail sweeping down to the right under the following letters.
+- i: a short "1"-like minim, usually undotted; r: a "v"-like stroke with a right-hand ear. i/r are separable when the ear is visible.
+- g/q: both have a closed bowl. q has a short straight descender; g has a longer descender that curves or hooks to the left (clearest in f.104 line 4 "ggqzbrgf"). Where a z-tail from the line above or a following f crosses the descender the pair is doubtful.
+- c/e: c is a plain arc with a small head; e is the same arc with a tick or small eye at mid-height (clear in f.104 line 5 "hgfedfdn"). At this resolution many are doubtful.
+- t/l: t is short with a crossbar; l is tall and plain, often with a foot.
+- final f/n: f has a descender and a crossbar; final n has two minims and a long horizontal exit stroke.
+- h: tall ascender plus arch, ascender often looped. k: h-shape with a kink, or capital K.
+- d: bowl plus tall ascender, sometimes written as separate "c"+"l" (f.204).
+- w is always a capital W; p has a plain descender. ij is two minims with two dots, the second descending (read as i+j, not y). y is v-shaped with a tail and no dots.
+- b alone with a looped cross-stroke occurs twice in f.102 and once in f.204; read as b.
+- Symbols (triangle, squares, stars, spiral and so on) match the kind listed in the frame 3 Catalogus and are transcribed as {S:name}, not as letters.
