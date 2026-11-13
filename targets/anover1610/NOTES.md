@@ -18,6 +18,7 @@ Issue #499 (alberto-garvia, 12 Nov 2026) carries a summary and figures; the tran
 - An own parser (all segmentations of the digit runs, `decryption.txt`) applied to the table reproduces the contributor's line-by-line reading: 213 tokens, two not in the table as written (the group read gelb = mando, bum = pues). The result is ten lines of connected Spanish; a wrong key could not do that, so the values taken from the siblings do carry over.
 - A language-model control of my own (Spanish 1490-1650 quadgrams, permuting the digit values) was inconclusive (the real decode -4.39 per letter, the best of 200 permutations -4.20); it is not relied on. The contributor's own control (316 contiguous quadgrams from graded-C fragments at -1.95 against -3.17 for the best of 200 permuted keys) was not re-run.
 - Not checked: the transcription against the manuscript (Memoria de Madrid answers curl with an Akamai "Access Denied"; Hispana 429; no browser tool in this session); the sibling plaintexts behind the key values; the zip dossier.
+- English translation (PR #547, alberto-garvia, 13 Nov 2026): `translation.md`, line by line on `reading.md`; checked here by script that the 12 bracketed holes stand in the same lines and order, and read line by line against the Spanish. Two small fixes: line 1 no longer translates code 101 twice ('word [101: report?] has been had'), and line 5 keeps the null 58~ in place with its gloss. It claims no complete decipherment. The target stays in progress (sibling leaves untranscribed).
 - Prior art: the contributor searched Tomokiyo, DECODE, Retortillo Atienza 2019 and the Correia thesis and found no earlier reading; a web search here found none either. Devos 1950 (Les chiffres de Philippe II) was not consulted by anyone. DECODE: not a DECODE record that this project knows of.
 
 ## Strict count
@@ -52,6 +53,7 @@ Alberto Garvía García (issue #499; report with AI assistance, ChatGPT/Codex as
 | `key.tsv` | the key table of the report (74 values) |
 | `decryption.txt` | mechanical decode with an own parser |
 | `reading.md` | the contributor's line-by-line reading, translation and notes |
+| `translation.md` | the contributor's line-by-line English translation of `reading.md`, holes kept (PR #547) |
 | `profile.json` | the target profile |
 
 
