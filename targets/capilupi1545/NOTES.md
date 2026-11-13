@@ -86,3 +86,7 @@ Checked 3 Nov 2026. Three web searches by the solver (Capilupi cipher and Worms 
 - Blind second read of c. 15r, of c. 15v from v09, c. 16r, and of the pass 3 corrections.
 - cc. 48 and 49r: not read; no matched control for "too short"; digits one pass. cc. 49v-50 not worked.
 - The clear passages are a first transcription.
+
+## Cross-reference (13 Nov 2026)
+
+The digits of c. 48 and c. 49r are in the same system as system Y of `../capilupi1546/` (Ippolito Capilupi, cc. 80a-80h, catalogue 1555), whose key (`dudout/key.txt`) gives Italian runs on them (not an independent test: both pages were in its build set). The key is held in capilupi1546; one key, one entry.

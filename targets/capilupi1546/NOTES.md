@@ -1,9 +1,9 @@
 # capilupi1546: Ippolito Capilupi to Ferrante Gonzaga, two cipher letters of May [1546], system Y read with a substitution of 1-2 digit codes (Estense, Autografoteca Campori, cc. 80a-80h; catalogue 1555)
 
-Status: read in part as a target (Brice Dudout, 12 Nov 2026).
+Status: in progress (Brice Dudout, 12 Nov 2026; integration check 13 Nov 2026). System Y is read in part (strict share 91.2 %), several steps are untried, and no write-up page has been made.
 
-- **System Y** (the cursive hand: images 02r, 04r, 05r, 05v, 06r, 06v, 07r) is read. 668 of 692 words are sure or probable, 96.5 % (strict, sure only: 631/692 = 91.2 %).
-- **Folio 05r alone is 93.9 %** (with its continuation 05v, 94.3 %). That is under the 95 % bar, so that document is *read in part*.
+- **System Y** (the cursive hand: images 02r, 04r, 05r, 05v, 06r, 06v, 07r) is read in part. Strict share (README rule, sure words only): 631 of 692 = **91.2 %**. The contributor's own figure counts the 37 probable words as read: 668/692 = 96.5 %.
+- **By document, strict:** 02r 92.2 %, 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. Only 04r (118 words) reaches the 95 % bar.
 - **System X** (images 03r and 09r, about 1,400 digits) is a different hand and system and is not attacked.
 - **The key** was proposed by Claude Fable 5.2, frozen, and passed one preregistered measure on the held-out folio 05r: M = 0.7962 against 200 controls (max 0.175).
 - **No human palaeographer** has checked the transcription or the reading.
@@ -114,6 +114,8 @@ By document:
 | 05r-05v | 149/158 = 94.3 % | read in part |
 | 06r-07r | 278/288 = 96.5 % | read |
 
+That table is the contributor's (sure + probable). Strict (sure only), recounted at integration: 02r 118/128 = 92.2 % (read in part), 04r 114/118 = 96.6 % (read), 05r-05v 138/158 = 87.3 % (read in part), 06r-07r 261/288 = 90.6 % (read in part), total 631/692 = 91.2 %.
+
 - 05v (10 words) is the end of the 05r passage.
 - 07r (about 180 letters) is too short to count alone, so it is counted with 06r-06v.
 - About half of the sure words are function words. The harder content words fall disproportionately among the probable and restored ones.
@@ -127,12 +129,24 @@ By document:
 - **07r.** The Emperor keeps the Pope in suspense about the council, and the Pope wants Farnese sent to him.
 - 'Il cardinal nostro' is probably Ercole Gonzaga, Ferrante's brother.
 
+## Integration check (13 Nov 2026)
+
+Done on the files as submitted (PR #497); no human palaeographer.
+
+- **Strict share.** Recounted from `dudout/reading.md`, sure words only (probable, restored and unresolved are holes): 631/692 = 91.2 %. By document 02r 92.2 %, 04r 96.6 %, 05r-05v 87.3 %, 06r-07r 90.6 %. The 96.5 % in the contributor's text counts the 37 probable words as read; it is kept above, labelled as theirs. Class: read in part.
+- **Own decoder.** Written from `dudout/key.txt` only (23 simple codes, longest first). It gives the same Italian as `decryption.txt` (letter similarity 0.93-0.98 per folio); the difference is the parse of ambiguous strings (e.g. 51 u against 5 + 1), which the roughly 2,000 composite entries of the frozen JSON settle. **KEY-1555.json and the lexicon file are not in the PR**, so the frozen hash, M = 0.7962 and the controls (max 0.175) could not be reproduced exactly. With my own lexicon (16th-century Italian words of frequency >= 30, 3 letters or more) and the simple key, held-out 05r gives M = 0.83 against 200 permuted-value controls with max 0.34, mean 0.16. The key therefore works as a system on 05r; the order of events (protocol before key) is by the contributor's record only.
+- **What the test shows.** The held-out folio is a sibling of the training folios (same hand, same letter, same system), and the key came from a package that held the other Y folios and the 1545 c. 48 and c. 49r digits. It validates the key on that system. It does not validate each word.
+- **Image check.** The manifest of cc. 80a-80h (18 images, 0080-01r to 0080-09v) loads with curl; images load as regions at native size (full-size requests above 1599 px are refused). The labels used here are the manifest labels: 02r = 0080-02r (canvas 3), 05r = canvas 9 (0080-05r, penciled 80d), 09r = canvas 17. So the carta mapping is answered by the manifest, as far as the labels go. On 05r, lines 1-4 and the end of line 7 (about 150 groups) agree with the transcription by count and shape. The 7 / 9 distinction (short bar against hook) was not judged independently.
+- **Code 11.** At 'imperammor' (05r line 7) the image shows two short 1-shaped strokes before the 2. The transcription is as written, so the 'mm' is a key problem (a second value of 11, mostly t, once l), not a transcription slip. Code 11 never gives a valid 'mm' anywhere in the decryption.
+- **Same cipher as capilupi1545?** The digit system of c. 48 and c. 49r (Camillo Capilupi, Feb 1546) is the same as system Y: the simple key gives Italian runs on their first-pass digits (they were in the build set, so this is not independent). The 8 May 1545 letter in that folder is a different, homophonic cipher. One key, one entry: the digit key is held here. When both targets are finished they are to be one page about the digit system, with c. 48 and c. 49r read here from a fresh transcription; until then each folder points to the other.
+- **Date.** Docket year 1546 against content that fits 1545 (Charles of Orleans died on 9 Sept 1545): left as a gap; no one has looked at the docket on the image.
+
 ## Remaining gaps
 
 - **System X (03r, 09r).** Blocker: too-short. About 1,400 digits in another system; the glosses are partial and not alignable. A table or a clear copy would open it.
 - **'mm' for t or l (code 11), and 'mignor' for 'signor'.** Blocker: open-codes. Five and two occurrences.
 - **05r under the bar (93.9 %).** Blocker: illegible. It has 8 restored words to check on the image.
-- **The key on capilupi1545 c. 48 and c. 49r.** Blocker: not-attempted. Same system; it should apply. Not done here.
+- **The key on capilupi1545 c. 48 and c. 49r.** Blocker: not-attempted as a reading. A quick test at integration shows the key gives Italian runs on their first-pass digits (see Integration check), but they were part of the build set and the transcription is a first pass. To be read properly, on a re-transcription.
 - **Date (1545 or 1546).** Blocker: needs-physical-access. The docket year conflicts with the content.
 - **Carta mapping of the image labels.** Blocker: needs-physical-access.
 - **A human reader of transcription and reading.** Blocker: not-attempted.

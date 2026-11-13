@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "img-02r",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera C, Capilupi Ippolito, sfasc. I, cc. 80a-80h; image 02r (labels follow the order of the Lodovico images of cc. 80a-80h; the carta for each label is still to be checked)",
    "date": "17 May, year not on the docket ('Capilupo da Civitavecchia 17 mayo'); 1546 by the catalogue, 1545 by the content (to check)",
    "year": 1546,
@@ -141,7 +141,7 @@
   },
   {
    "id": "img-06r-07r",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera C, Capilupi Ippolito, sfasc. I, cc. 80a-80h; images 06r, 06v and 07r (cartae to be checked)",
    "date": "10 May, docket 'di Roma alli 10 di maggio', received '7 giugno 1546'; content points to 1545 (to check)",
    "year": 1546,
@@ -305,6 +305,30 @@
    "kind": "reading",
    "what": "Words counted by the README rule (sure / probable / restored / unresolved) by Claude Opus 5.5 via the API: 692 words, 631 sure, 37 probable, 20 restored, 4 unresolved; 96.5 % sure+probable, strict 91.2 %. Per folio: 02r 96.9, 04r 99.2, 05r 93.9, 05v 100 (10 words), 06r 97.2, 06v 95.1, 07r 97.6. 05r+05v together 94.3 %: read in part. A recurring 'mm' where t or l is needed (five occurrences) points to code 11 or its transcription.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Integration check: strict recount from dudout/reading.md (sure only). 631 of 692 = 91.2 % overall; by document 02r 118/128 = 92.2 %, 04r 114/118 = 96.6 %, 05r-05v 138/158 = 87.3 %, 06r-07r 261/288 = 90.6 %. Only 04r passes the 95 % bar. The contributor's sure + probable figure (96.5 %) is kept once, labelled as theirs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check: own decoder written from dudout/key.txt (23 simple codes, longest code first, no composite entries) decodes the arbitrated transcriptions to the same Italian (letter-sequence similarity to decryption.txt 0.93-0.98 per folio; differences are the parse of ambiguous strings that the unpublished ~2,000 composite entries fix). Own coverage measure on held-out 05r with a lexicon of Italian 16th-century words of frequency >= 30 (length >= 3): M = 0.83 against 200 permuted-value controls max 0.34, mean 0.16. KEY-1555.json and the contributor's lexicon are not in the repository, so M = 0.7962 and the frozen hashes could not be reproduced exactly.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check, image: Estense IIIF manifest of cc. 80a-80h fetched (18 images, labelled 0080-01r ... 0080-09v; the contributor's label 05r is canvas 9 = 0080-05r, penciled 80d). Lines 1-4 and the end of line 7 of 05r compared with the transcription (about 150 groups by count and shape): they agree; the 7 / 9 (short bar / hook) calls were not judged independently. At 'imperammor' (05r line 7) the image does show two short 1-shaped strokes before the 2, so the 'mm' is in the transcription as written, not a transcription slip.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Integration check, sibling test (not a claim): the simple key.txt applied to the first-pass digits of capilupi1545 c. 48 and c. 49r (Camillo Capilupi, Feb 1546) gives Italian runs ('mi ha deto hor basta trata', 'lambasciador di Francia ha deto a Ferar', 'tre di sono', 'il tene da due hore ragionando', 'suo figliuolo piglila figlia de ... re', 'lo scriuessa al re ... conditioni'), with gaps where the first-pass digits are doubtful. Those two pages were part of the build set, so this is not an independent test and no reading of them is claimed. It shows that the digit system of c. 48 and c. 49r is the same as system Y.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -383,9 +407,9 @@
    }
   ],
   "notes": "Two letters of Ippolito Capilupi in two cipher systems. System Y (02r, 04r, 05r, 05v, 06r, 06v, 07r) read with a key proposed by Claude Fable 5.2 and measured on the held-out folio 05r. 668 of 692 words sure or probable (96.5 %), strict 91.2 %; 05r+05v 94.3 %, read in part. System X (03r, 09r, about 1,400 of 5,773 transcribed digits) not attacked. Same system as Camillo Capilupi's c. 48 and c. 49r (capilupi1545); not the homophonic alphabet of Camillo's 8 May 1545 letter there.",
-  "fraction_read": 0.965,
+  "fraction_read": 0.912,
   "fraction_read_method": "measured",
-  "fraction_read_source": "dudout/reading.md, by words (README rule), system Y folios only: 692 words, 631 sure + 37 probable = 96.5 %; strict 91.2 %. System X (03r, 09r) not attacked and not counted.",
+  "fraction_read_source": "dudout/reading.md, by words, system Y folios only: 692 words, 631 sure = 91.2 % (strict, README rule: probable, restored and unresolved words are holes). The contributor's own figure counts the 37 probable words as read: 668/692 = 96.5 %. System X (03r, 09r) not attacked and not counted.",
   "key_file": "dudout/key.txt",
   "texts": [
    {
@@ -396,14 +420,14 @@
     "reading": "dudout/reading.md",
     "translation": "dudout/translation.md",
     "language": "it",
-    "state": "read",
-    "read_share": 0.969,
+    "state": "read in part",
+    "read_share": 0.922,
     "summary": "The Count of Reggio's letter is in Salviati's hands. Salviati let Capilupi read it but refused a copy, and begs Ferrante never to show he knows of it. Capilupi learned the short letter by heart at one reading and sends it from memory, sure of the sense.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (API), for Brice Dudout",
      "date": "2026-11-12",
-     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review"
+     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review Integration check 13 Nov 2026: strict share (sure only) 118/128 = 92.2 %; the contributor's sure + probable figure was 96.9 %."
     }
    },
    {
@@ -423,13 +447,13 @@
     "translation": "dudout/translation.md",
     "language": "it",
     "state": "read",
-    "read_share": 0.992,
+    "read_share": 0.966,
     "summary": "Salviati reports that his niece, wife of the Count of Santa Fiora, offers to arrange a marriage of Donna Ippolita to the lord of Piombino; he favours it as preserving that state. Capilupi committed to nothing and asks what to answer if pressed.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (API), for Brice Dudout",
      "date": "2026-11-12",
-     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review"
+     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review Integration check 13 Nov 2026: strict share (sure only) 114/118 = 96.6 %; the contributor's sure + probable figure was 99.2 %."
     }
    },
    {
@@ -441,13 +465,13 @@
     "translation": "dudout/translation.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.943,
+    "read_share": 0.873,
     "summary": "Juan de Vega still thinks Ferrante should not come to Rome: the Pope would use the visit with the French, and a rumour might spread that the Emperor means to give Siena, as at Juan de Luna's visit. If Ferrante comes on his own business the Emperor will not rebuke him but would rather he stayed away.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (API), for Brice Dudout",
      "date": "2026-11-12",
-     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review. 05r alone 93.9 %, with 05v 94.3 %: under the 95 % bar, read in part"
+     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review. 05r alone 93.9 %, with 05v 94.3 %: under the 95 % bar, read in part Integration check 13 Nov 2026: strict share (sure only) 138/158 = 87.3 %; the contributor's sure + probable figure was 94.3 %."
     }
    },
    {
@@ -458,14 +482,14 @@
     "reading": "dudout/reading.md",
     "translation": "dudout/translation.md",
     "language": "it",
-    "state": "read",
-    "read_share": 0.965,
+    "state": "read in part",
+    "read_share": 0.906,
     "summary": "Girolamo da Correggio reports that Cardinal Farnese will serve 'our cardinal' but not Ferrante, for the Sicilian grain dispute, Monreale and the Milan negotiation. Camillo Colonna reports Farnese telling Vittoria that the Pope now consents to her marriage with Orleans. Juan de Vega says the Emperor keeps the Pope guessing, so the Pope wants Farnese sent to him.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (API), for Brice Dudout",
      "date": "2026-11-12",
-     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review"
+     "note": "read as sentences by Claude Opus 5.5 (API), 12 Nov 2026; no human review Integration check 13 Nov 2026: strict share (sure only) 261/288 = 90.6 %; the contributor's sure + probable figure was 96.5 %."
     }
    },
    {
@@ -492,6 +516,11 @@
     "extent": "none",
     "basis": "transcribed only; partial glosses recorded, not alignable"
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 1,
+   "total": 24,
+   "tokens_open": 7
+  }
  }
 }
