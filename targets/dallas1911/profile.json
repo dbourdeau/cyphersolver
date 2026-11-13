@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "SeldomPhooey (issue #520): BNM/UNAM repository 700 (500 px) and CEHM viewer images CMXV.14.1370.1.0001-0007 (about 1,400 px wide); both typings read",
     "image_quality": "fair",
-    "notes": "69 runs, 681 bigrams (1,362 letters, measured). Typing B (carbon, pp. 5-7) has struck-out and retyped blocks. Integration (13 Nov 2026): runs 1-26 and 39-51 compared with CEHM pp. 5, 6 and 2, all agree; one variant (run 43, -lk in typing A, -lw in typing B). The clear text as typed is in the contributor's attachment, not in this folder."
+    "notes": "69 runs, 681 bigrams (1,362 letters, measured). Typing B (carbon, pp. 5-7) has struck-out and retyped blocks. Integration (13 Nov 2026): runs 1-26 and 39-51 compared with CEHM pp. 5, 6 and 2, all agree; one variant (run 43, -lk in typing A, -lw in typing B). The contributor's full transcription with the clear text (base typing A, B and BNM variants) is contributor/transcription.txt (gist, fetched 13 Nov 2026); A p. 1 (10 lines) and the struck-out block of B p. 5 checked against the CEHM images. transcription.txt keeps the issue's runs, which take typing B in runs 21, 30, 49."
    }
   }
  ],
@@ -146,6 +146,12 @@
    "technique": [
     "key matching"
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration, second pass with the contributor's files (gists on issue #520, fetched 13 Nov 2026, in contributor/): the gist's 69 runs equal the folder's except line-end hyphens and runs 21, 30, 49, where the folder (issue) has typing B and the gist's base text typing A (B given as variants). scripts/decode.py reproduces all 69 raw decodes of the gist decryption (one slip there: run 55's raw is A's form while its note says B). Emendation reasons read: none turns a hole into a sure word. Witness rule made consistent (earlier typing B, with the BNM copy): MILITAR (run 43, B/BNM -lw) becomes a hole, CINCUENTA (run 68, B overtypes ña to ñx, checked on CEHM p. 7) becomes sure; strict count unchanged at 67 of 114 = 58.8% (A alone 64, any witness 68). Clear text checked on CEHM A p. 1 (10 lines, agrees; accents normalised in places) and B p. 5 (struck-out block as described; one short struck group before 'Veo que' not in the gist).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -160,7 +166,7 @@
   "method_basis": "The table was rebuilt from the cipher/plaintext pairs of another letter in the same key (CMXV.14.1395.1, with a period typed transcription) and applied to this letter; 17 values were added from row structure and context.",
   "fraction_read": 0.588,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Integration count by cipher words (README rule), from the reading of issue #520 (reading.md, decryption.txt), 13 Nov 2026: 114 cipher words, 67 read as typed with table values only; 46 rest on values outside the table, emendations or context, 1 hole (MAU...). The contributor's headline counts the clear text as read: 1,738 of 1,785 words of the letter = 97.4% (99.9% with the probable words).",
+  "fraction_read_source": "Integration count by cipher words (README rule), from the reading of issue #520 (reading.md, decryption.txt) and the contributor's decryption.txt (gist), 13 Nov 2026: 114 cipher words, 67 read as typed with table values only, reading each run from the earlier typing B (with the BNM copy) where the typings differ; 46 rest on values outside the table, emendations, context or typing A only (MILITAR), 1 hole (MAU...). Typing A alone: 64; any witness: 68. The contributor's headline counts the clear text as read: 1,738 of 1,785 words of the letter = 97.4% (99.9% with the probable words).",
   "verification": [
    "independent verification"
   ],
@@ -198,7 +204,8 @@
      "by": "repository integration check (AI agent)",
      "date": "2026-11-13",
      "note": "The Spanish reading reads as continuous sentences and matches the English translation; the cipher words fit their clear sentences. 47 of 114 cipher words are holes by the read bar (values outside the 1395.1 table, emendations, context-only values, one hole), so the reading is coherent but in part."
-    }
+    },
+    "note": "The contributor's own files, kept unchanged: contributor/transcription.txt (the whole letter, clear text and cipher runs, typing A with B and BNM variants) and contributor/decryption.txt (per run: raw decode, reading, witness notes, reasons for each emendation); gists on issue #520, fetched 13 Nov 2026."
    }
   ],
   "key_file": [
@@ -206,19 +213,14 @@
   ],
   "gaps": [
    {
-    "item": "46 cipher words resting on values outside the 1395.1 table, on emendations or on context alone (17 marked [?...])",
+    "item": "46 cipher words resting on values outside the 1395.1 table, on emendations, on context alone or on typing A only (17 marked [?...])",
     "blocker": "not-attempted",
-    "detail": "Workable: further 'clave de Dallas' letters with period decodes (CEHM CMXV catalogue, the 1795.1 list) would test je, tx, jw, ho/yo/ño, yu/ñu and the single values."
+    "detail": "Workable: further 'clave de Dallas' letters with period decodes (CEHM CMXV catalogue, the 1795.1 list) would test je, tx, jw, ho/yo/ño, yu/ñu and the single values. The contributor is searching for further letters in the key (issue #520, 13 Nov 2026)."
    },
    {
     "item": "REMESA MAU[...]: the run ends after three letters",
     "blocker": "illegible",
     "detail": "No further letters on either typing, per the contributor."
-   },
-   {
-    "item": "contributor's attachments (clear text as typed, reasons for each emendation)",
-    "blocker": "no-key-material",
-    "detail": "GitHub attachments refused to this sandbox (403); to be added to the folder."
    },
    {
     "item": "Narváez 2019 and González Garza 1936 not read for a prior decode",

@@ -1,7 +1,8 @@
 # dallas1911: F. González Garza ("Olliphant") to F. I. Madero, 17 March 1911, in the "clave de Dallas"
 
 Contributed by SeldomPhooey (issue #520, 13 Nov 2026; transcription, key rebuild, decoding, reading, translation and a
-blind second reading by AI agents). Integrated 13 Nov 2026.
+blind second reading by AI agents). Integrated 13 Nov 2026; the contributor's two files (transcription.txt with the clear
+text, decryption.txt with the reasons for each emendation) followed the same day as gists and are in `contributor/`.
 
 Status: in progress. Not written up: by the README read bar 67 of the 114 cipher words read as typed (58.8%); the
 other 47 rest on values outside the period table, on emendations or on context alone, and they can still be tested
@@ -57,8 +58,7 @@ catalogue entry or lead names 1370.1, 1395.1, Caracristi or the clave de Dallas.
 
 ## Integration check (13 Nov 2026)
 
-Issue #520 only; the two attachments (transcription.txt, decryption.txt) answer 403 to this sandbox, so the contributor's
-clear-text transcription as typed and the per-run reasons for each emendation were not read. The issue body carries
+First pass from issue #520 alone (the two attachments answered 403); second pass with the gists, below. The issue body carries
 the 54-bigram table, every cipher run as typed, the raw decode, the reading, the full Spanish and English texts and the
 counts, which is enough to reproduce.
 
@@ -85,26 +85,58 @@ counts, which is enough to reproduce.
 7. Blind second reading: by the contributor's record, a second AI agent of the same family, without the first reading,
    agreed on 99.5% of cipher letters (1,355 of about 1,360). Not model-independent; not re-run here.
 
+## Contributor's files (13 Nov 2026, second pass)
+
+SeldomPhooey answered on #520 with the two files as gists (fetched 13 Nov 2026, read as text, kept unchanged under a header
+line): `contributor/transcription.txt` (gist 31cbb06db3e6a89cf694874376263489; witnesses A = CEHM 1370.1 pp. 1-4,
+B = pp. 5-7, AMA = BNM Ms.M/40; base text A with B/AMA variants; the 69 runs as `[n] <<...>>`) and
+`contributor/decryption.txt` (gist 119fbb8b1673340f47d0ece4b88da249; per run: context, bigrams, raw decode, reading,
+witness notes and the reason for each emendation; statuses 45 read, 17 emended, 6 doubtful, 1 unresolved).
+
+1. **Runs, gist against this folder.** 69 runs in both. Identical except line-end hyphens (runs 20, 24, 41-43, 46, 47,
+   53, 61: layout only) and three runs where the folder (from the issue) has typing B and the gist's base text has typing
+   A: run 21 (folder adds B's final `po`), run 30 (A `teñzvoyato`, folder/B `teñxvoyato`), run 49 (A `jayavepoyzhxvu`,
+   folder/B `jayaveheqoyzhxvu`). The gist itself records these B readings as variants and its decryption uses them. Runs
+   43 (A `-lk`, B/AMA `-lw`), 55 (A `julwja-`, B `julwya-`) and 68 (A final `ña`, B `ña` overtyped with x) follow A in
+   both. The folder's transcription.txt keeps the issue's runs and now lists these witness choices in its header.
+2. **Decodes.** scripts/decode.py over key.tsv, run on the cipher of each run in the gist decryption: 69 of 69 raw
+   decodes identical to the gist's raw column once its notation is matched (table / {row} / [?xy] for every other value).
+   On the gist's A-only runs the decode differs only where expected: 21 `diplomati co` (no final s), 30 `mtson`, 49
+   `volstad`. One slip in the gist: run 55's raw is A's `eampodeveraciones` while its note calls it B's `oeraciones`.
+3. **Emendation reasons and the strict count.** The reasons are the ones the issue implied (u/w, k/z, e/i, o/a, y/j, p/q
+   typing slips; a dittography in run 2; a doubled n in run 62); none turns a hole into a sure word. What changes is the
+   witness rule: the count of 67 took B for runs 21, 30, 49 but A for runs 43 and 68. Read consistently from the earlier
+   typing (B, with the BNM top copy where legible), MILITAR (run 43) becomes a hole (B and BNM give `militae`) and
+   CINCUENTA (run 68) becomes sure (B's typist overtyped `ña` with x, giving `ñx` = a, checked here on CEHM p. 7). The
+   total stays **67 of 114 = 58.8%**; the composition changes by those two words. For the record: typing A alone gives
+   64/114 (56.1%), any witness 68/114 (59.6%). Class unchanged: read in part.
+4. **Clear text.** The clear text is now transcribed (the folder said it was not). Checked against the CEHM images: A p. 1
+   from "Como creo que mis correos" to "su carta no ha llegado" (10 lines) agrees word for word; accents are normalised
+   in places (the typing has `Envie`/`Envíe` where the gist has `Envié`, not settled at this resolution). B p. 5: the
+   struck-out block is where the gist puts it, about eight lines crossed with x from "aseguró que en el programa" to "a
+   que se refiere lulkyijohzyi", after run 15, then typed again further down; a short struck-out group before "Veo que en
+   ella hay una" on the same page is not mentioned in the gist (clear text only).
+
 ## Remaining gaps
 
 One line per open piece, with its blocker type.
 
-- 46 cipher words resting on values outside the 1395.1 table, on emendations or on context - blocker: not-attempted; 17
-  marked `[?...]` (DECLARACIÓN, PELIGROSA, HIZO, COLONOS, MÉXICO, ATACAR, AMERICANOS, NUESTROS, DISCIPLINA, EXIGE,
-  RIGUROSO, MAYOR, PELIGRO, MÁS, OPERACIONES, OBEDIENCIA, JUNTARA), 8 other emended words (CARTA, CRISTI twice, NIPONES
-  twice, COMPLACENCIAS, CAMPO, CINCUENTA) and 21 unmarked words that need a value outside the table (je, tx, jw,
+- 46 cipher words resting on values outside the 1395.1 table, on emendations, on context or on the later typing -
+  blocker: not-attempted; 17 marked `[?...]` (DECLARACIÓN, PELIGROSA, HIZO, COLONOS, MÉXICO, ATACAR, AMERICANOS, NUESTROS,
+  DISCIPLINA, EXIGE, RIGUROSO, MAYOR, PELIGRO, MÁS, OPERACIONES, OBEDIENCIA, JUNTARA), 7 other emended words (CARTA,
+  CRISTI twice, NIPONES twice, COMPLACENCIAS, CAMPO), MILITAR (sure in typing A only; B and the BNM copy give `militae`)
+  and 21 unmarked words that need a value outside the table (je, tx, jw,
   ho/yo/ño, yu/ñu, lz, jx: e.g. MIL, LE, AL, ORIGINAL, BATALLA, FUERZAS, KNOX). Workable: further "clave de Dallas"
   letters with period decodes (CEHM CMXV catalogue, the 1795.1 list of decipherments) would test these values.
 - REMESA MAU[...] - blocker: illegible; the run ends after three letters (leyxhe = m a u), with nothing further on either
   typing, per the contributor.
-- The contributor's attachments (clear text as typed, reasons for each emendation) - blocker: no-key-material; the
-  GitHub attachments are refused to this sandbox (403); to be added to the folder.
 - Narváez 2019 and González Garza 1936, not read for a prior decode - blocker: needs-physical-access.
 
 ## Escalation
 
 - [x] siblings: CMXV.14.1395.1 (same key, the key source) opened; 1352.1 and 1383.1-2 opened, both in other systems; a
-  catalogue-wide search for "Clave: la de Dallas" not yet done
+  catalogue-wide search for "Clave: la de Dallas" not yet done here; the contributor is searching for further letters
+  in the key (issue #520, 13 Nov 2026)
 - [x] clear-pages: the letter's clear text and the clear parallels 1351.1 and 1383.1-2 (pencil decode) checked; none is
   a decipherment of these runs
 - [ ] known-keys: the other Maderista keys of this repository (Clave G.A., grille, swaps, shifts) differ in form; the
