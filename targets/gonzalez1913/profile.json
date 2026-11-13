@@ -1,0 +1,288 @@
+{
+ "schema_version": 1,
+ "target": "gonzalez1913",
+ "title": "El General en Jefe (identified by the contributor as Pablo González) to Col. Andrés Saucedo, Matamoros, December 1913 (catalogue 1465): simple substitution recovered from the ciphertext alone, 59 of 61 coded words verbatim; split-half test weak",
+ "documents": [
+  {
+   "id": "LXVIII-1.7.890.1",
+   "read": "read",
+   "shelfmark": "Mexico City, CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo LXVIII-1 (Manuscritos del General Manuel Willars González [Pablo González]), LXVIII-1.7.890.1",
+   "date": "2[?] December 1913 (the second day figure is faint)",
+   "year": 1913,
+   "country": "Mexico",
+   "route": "El General en Jefe (identified by the contributor as Pablo González), Cuartel General, División del Noreste, H. Matamoros -> Col. Andrés Saucedo, Sabinas Hidalgo",
+   "places": {
+    "from": "Matamoros",
+    "to": "Sabinas Hidalgo"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Bare coded runs; no decipherment on the sheet and no key found. LXVIII-1.23.3148.1 is only a cover note sending 'Clave alpha-32'; the key is not on the scan."
+   },
+   "length": {
+    "tokens": 290,
+    "distinct": 23,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_LXVIII-1.7.890.1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer images (visor.cehm.org.mx), https://www.cehm.org.mx/Buscador/VisorArchivoDigital?jzd=/janium/JZD/LXVIII-1/7/890/1/LXVIII-1.7.890.1.jzd",
+    "image_quality": "fair",
+    "notes": "Typed, faint ribbon. Two passes without a key (0.85x crops; fresh crops enlarged 1.1x with contrast stretch): same group at 289 of 290 places; the one figure open in pass 1 (M09 g18) reads 42. Blind check by the reviewer: 36 of 36 groups agree."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution, one two-figure number per letter; 23 numbers used, all between 41 and 79: 41 i, 42 h, 43 g, 45 e, 46 d, 47 a, 48 b, 49 c, 52 n, 54 o, 55 l, 56 p, 57 ll, 58 q, 59 m, 71 z, 72 u, 73 y, 74 r, 76 t, 77 v, 78 s, 79 x. Not Clave Extra 3.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "mixed"
+  },
+  "distinct_symbols": 23,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Numbers partly in alphabetical order (a b c = 47 48 49; i h g = 41 42 43). key.tsv and key_frozen.tsv are the same file, 23 entries. 42, 43, 57, 58 and 79 occur once each. Groups are joined by hyphens; runs are separated by clear words."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the sheet; no key found in the fondo (LXVIII-1.23.3148.1 is only a cover note). No edition found (web searches 12-13 Nov 2026; Narváez 2019 and 2025 and M. W. González, Con Carranza, not read).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "WAINUT set the task (catalogue 1465) and the rules; AI language-model agents transcribed the figures twice, built or fitted and froze the key, decrypted, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM viewer images",
+   "scripts in this folder (hill-climbing substitution fit with Spanish trigrams from the repository lexicon, decryption, mark check, word count)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "LXVIII-1.2.56.1, 2.75.1, 7.890.1, 14.1943.1 (4 pages), 17.2435.1, 23.3148.1 and 23.3165.1 fetched from the CEHM image server one at a time, 2 s apart; 8.957.1-2 returned 404.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions first; the 290 groups transcribed twice without a key: same group at 289 of 290 places, the one open figure settled on the pass-2 crop.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "what": "The Clave Extra 3 key from LXVIII-1.14.1943.1 tried on these runs: no Spanish. The sheet uses another system.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
+   "what": "scripts/hillclimb.py: one-to-one substitution fitted by hill-climbing on Spanish letter trigrams from lang/lexicons/es.json.gz, 40 random restarts (seed 7). The best fit reads at once (work/fit_7890_full.txt); three cells then set by reading (57 ll, 77 v, 79 x).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "hill climbing"
+   ],
+   "what": "Split-half test: fitted on M01-M08 alone the program does not find the key; fitted on M01-M12 alone it agrees with the final key in 10 of 22 cells, and M13-M16 read only in part (work/heldout_7890.txt, heldout_7890_b.txt). Weak: the key is not validated by a held-out passage.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Decrypted with key_frozen.tsv and read as sentences with every departure marked; scripts/check_marks.py passes (16 runs, 2 marks, 0 failures). 61 coded words: 59 verbatim, 1 marked repair, 1 open (the first three groups of M01). The reading gives places of Nuevo León and Tamaulipas and surnames the trigram model does not know.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Web searches (Pablo González 1913-1914 clave; cifrados constitucionalistas; Narváez, 'Algunos casos criptográficos del movimiento constitucionalista, 1914-1915', Historia Mexicana 75/2, 2025), repeated once by the reviewer on 13 Nov: no edition or decipherment of these documents or of Clave Extra 3. Narváez 2025 (403 to a script) and 2019, and M. W. González, Con Carranza (1933-34), not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Independent blind review by a second AI language-model agent (13 Nov 2026): 36 of 36 groups agree on its own crops; scripts reproduced; key accepted on the reading (simple substitution of 23 numbers, far past the unicity distance, with internal order); held-out test marked weak; reading graded A.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py on validation.tsv, the mechanical values of the frozen key per group; scripts/validation_pairs.py): 290 read tokens, 23 types, es-modern order 4: reading -2.216 per letter; random keys mean -7.613, max -5.222 (z 7.4); key annealed onto shuffled ciphertext best -4.004 (mean -4.103, z 22.6); annealer on the real text -2.918. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check (13 Nov 2026): scripts/hillclimb.py re-run unchanged (python3 -I) reproduces the fit (20 of 23 cells as in the key; the three misfits 57 j, 77 f, 79 v set by reading as stated); own decoder from key.tsv (nothing imported) gives the same sixteen lines; scripts and docs/_validate.py re-run with the same figures (59 of 61 verbatim; z 7.4, pass). The split-half test stays published as failed.",
+   "result": "worked",
+   "technique": [
+    "hill climbing",
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): CEHM image LXVIII-1.7.890.1.0001 fetched over plain http (no refusal); M01-M12 (about 190 groups, typed and clear) compared at full resolution: every group agrees; the typed date reads 22 on the scan. Strict share confirmed: 59 of 61 coded words verbatim (96.7%), read.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "One-to-one substitution fitted by hill-climbing on Spanish letter trigrams (scripts/hillclimb.py, 40 restarts), three cells set by reading. The split-half test is weak; the key rests on the reading (places Cerralvo, Lampazos, Villaldama, Laredo, San Ygnacio; surnames Castro, Dávila Sánchez, Santoscoy).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.967,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "scripts/count_words.py on the coded runs: 59 of 61 coded words verbatim from the signs; 1 with a marked changed value (l{o/a}s); 1 open (the first three groups of M01, 'eln'). The clear text reads in full.",
+  "verification": [
+   "historical consistency",
+   "independent verification",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "simple substitution recovered from the ciphertext alone (hill-climbing on Spanish trigrams), three cells set by reading; split-half test weak; 59 of 61 coded words verbatim",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "two passes from the CEHM images, without the key; see the transcription files",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "verification",
+    "note": "one independent AI language-model agent, blind from the scans: sign check, scripts re-run, reading read as sentences against the translation; no human palaeographer",
+    "date": "2026-11-13"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "LXVIII-1.7.890.1",
+    "label": "El General en Jefe to Col. Andrés Saucedo, Matamoros, Dec 1913",
+    "transcription": "transcription_LXVIII-1.7.890.1.txt",
+    "decryption": "decryption_LXVIII-1.7.890.1.txt",
+    "reading": "reading_LXVIII-1.7.890.1.md",
+    "translation": "translation_LXVIII-1.7.890.1.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.967,
+    "summary": "The General en Jefe (identified by the contributor as Pablo González) tells Saucedo to finish operations at Lampazos and Villaldama or cut off the enemy at Lampazos, advance north destroying the lines of communication and be near Laredo by next Friday; Castro, Dávila Sánchez and Santoscoy are to take up position near Laredo the same day, the place to be attacked on Saturday or Sunday at the latest; he leaves for San Ygnacio and will send instructions for the attack. Probably the preparations for the attack on Nuevo Laredo (inferred).",
+    "note": "61 coded words in 16 runs: 59 verbatim from the signs (96.7%), 1 with a marked changed value (l{o/a}s), 1 open ({eln/[?]} in M01).",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "Three clean paragraphs and the translation matches; one open run ('eln' before A REUNIRSE) and one repair (l{o/a}s). The held-out test is weak; the key is accepted on the reading."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "M01, the three groups before A REUNIRSE ('eln')",
+    "blocker": "too-short",
+    "detail": "Legible typed groups (45-55-52) that decrypt to 'eln', no word; a clerk's slip or a name the key cannot give, with no second occurrence. Counted as not read."
+   },
+   {
+    "item": "Key validation",
+    "blocker": "too-short",
+    "detail": "One sheet; 42, 43, 57, 58 and 79 occur once; the split-half test does not recover the key."
+   },
+   {
+    "item": "Day of the month (2[?])",
+    "blocker": "illegible",
+    "detail": "The typed day is 2 and a worn figure; the integration check read 22 on the scan; not relied on."
+   }
+  ],
+  "validation": {
+   "date": "2026-11-13",
+   "model": "es-modern",
+   "file": "validation.tsv",
+   "tokens": 290,
+   "types": 23,
+   "tokens_per_type": 12.61,
+   "score": -2.216,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -7.613,
+     "sd": 0.732,
+     "max": -5.222,
+     "z": 7.4,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -4.103,
+     "sd": 0.083,
+     "max": -4.004,
+     "z": 22.6,
+     "p": 0.1429
+    }
+   },
+   "power": -2.918,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.216; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.918"
+  },
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  }
+ }
+}
