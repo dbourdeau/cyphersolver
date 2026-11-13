@@ -7,12 +7,17 @@
                                                              word of the region, shelfmark or title
   python research/vet.py --show 1234                         one lead in full
   python research/vet.py --check <folder>/vetting.json       check a vetting file; prints result: pass or result: fail
+  python research/vet.py --apply <folder>/vetting.json       project sessions only, after review: write the blocks of
+                                                             a file that passes --check into research/leads.json and
+                                                             print the ids now ready for _check_catalogue.py --promote
 
 A vetting file is a JSON object {"<lead id>": block}. A block is either the "vetting" block of
 docs/_check_catalogue.py with a verdict, or {"unvetted": "what is missing"}. The rules are those the project's own
 vetting passes are held to (research/vetting_2026-11/check_out.py): an "open" verdict must pass the catalogue gate and
 rest on at least three searches run for that lead; nothing may be pasted across leads; any other verdict says in
-"closed" exactly what shows it. This script only reads leads.json; applying a file and promoting are done after review.
+"closed" exactly what shows it. --list, --show and --check only read leads.json. --apply is the one step that writes
+it, and it promotes nothing: an "open" block that collides with a catalogue entry is taken off the lead and kept as
+"vetting_held" with the reason; a verdict that replaces an earlier one keeps the earlier block as "vetting_superseded".
 """
 import collections
 import json
@@ -128,6 +133,46 @@ def check(path):
     return 1 if bad else 0
 
 
+def apply(path):
+    if check(path):
+        print('not applied: the file must pass --check first')
+        return 1
+    with open(path, encoding='utf-8') as fh:
+        out = json.load(fh)
+    d, all_leads = C.load(C.LEADS, 'leads')
+    _, entries = C.load(C.CAT, 'entries')
+    by_id = {str(l['id']): l for l in all_leads}
+    src = os.path.relpath(os.path.abspath(path), os.path.dirname(HERE)).replace(os.sep, '/')
+    ready, tally = [], collections.Counter()
+    for i, b in out.items():
+        l = by_id[i]
+        if 'verdict' not in b:
+            l['vetting_note'] = '%s (%s)' % (b['unvetted'].rstrip(), src)
+            tally['unvetted'] += 1
+            continue
+        b = dict(b)
+        l.update(b.pop('lead_updates', None) or {})
+        if (l.get('vetting') or {}).get('verdict'):
+            l['vetting_superseded'] = l['vetting']
+        l['vetting'] = b
+        l.pop('vetting_note', None)
+        if b['verdict'] == 'open':
+            why = C.vetting_problems(l) + C.collisions(l, entries)
+            if why:
+                l['vetting_held'] = l.pop('vetting')
+                l['vetting_note'] = 'Vetted open in %s; held: %s. Block kept in vetting_held.' % (src, '; '.join(why))
+                print('#%s held: %s' % (i, '; '.join(why)))
+                tally['held'] += 1
+                continue
+            ready.append(i)
+        tally[b['verdict']] += 1
+    C.save(C.LEADS, d)
+    print('applied to research/leads.json:', dict(tally))
+    if ready:
+        print('ready to promote: python docs/_check_catalogue.py --promote ' + ' '.join(ready))
+    return 0
+
+
 def main():
     a = sys.argv[1:]
     if hasattr(sys.stdout, 'reconfigure'):
@@ -138,6 +183,8 @@ def main():
         sys.exit(show(int(a[1])))
     elif a[:1] == ['--check'] and len(a) == 2:
         sys.exit(check(a[1]))
+    elif a[:1] == ['--apply'] and len(a) == 2:
+        sys.exit(apply(a[1]))
     else:
         print(__doc__)
         sys.exit(2)
