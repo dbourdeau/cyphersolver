@@ -72629,6 +72629,110 @@
    "repository": "asf"
   },
   {
+   "id": 2351,
+   "counted": true,
+   "year": 1513,
+   "date": "23 Oct 1513",
+   "title": "Roberto Acciaiuoli, Florentine orator in France, Amiens 23 October 1513: two sides of homophonic cipher, bare; a glossed letter of the same day gives the key",
+   "correspondents": "Roberto Acciaiuoli, orator at the French court -> [Giuliano de' Medici / the Medici in Florence]",
+   "place": "Amiens",
+   "language": "Italian (sign cipher with superscript homophone marks)",
+   "region": "Italy",
+   "period": "1497-1559",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, doc. 192 (old c. 234)",
+   "folio_note": "One leaf: recto opens \"Mag.ce Vir\" then about 15 lines of letter-signs, many with small superscript digits (3, 4, 5); the verso about 14 more lines of the same. MAP inventory vol. 3: \"Robertus Acciarolus, orator. Ex Amiens, 1513 ott. 23, n. 192\" (no cipher flag).",
+   "cls": "A",
+   "status": "Bare (900 px, recto and verso). Key material: doc. 190 (c. 232), Acciaiuoli's cipher letter of the same day in the same system (signed \"Robertus Acciarolus\", \"Ex Amiens die xxiii Octobris MDXIII\"), and doc. 191 (c. 233), \"Copia di lettera di Ruberto Acciaioli da Amiens ...\", which repeats the text of 190 in clear (\"Oltre alle lettere publiche ... Sanseverino ... arrivò adì xx la sera\"): a full plaintext for 190. Vetted 13 Nov 2026 (images re-viewed at 1400 px; Canestrini vol. II checked).",
+   "why": "The Florentine ambassador at Louis XII's court in the year after the Medici restoration; the key can be rebuilt from 190/191 and 192 read.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Align 190 with 191 to rebuild the homophonic table (superscripts included); apply to 192 r-v.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=192&c=",
+     "label": "MAP filza 72, doc. 192"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79574",
+     "label": "image id 79574"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79575",
+     "label": "image id 79575"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=190&c=",
+     "label": "MAP filza 72, doc. 190"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79570",
+     "label": "image id 79570"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79571",
+     "label": "image id 79571"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79572",
+     "label": "image id 79572"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=79573",
+     "label": "image id 79573"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, second ASF Florence pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the second ASF Florence pass, 6 Nov 2026 (research/sweep_2026-11_asf_florence_2/)",
+   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (1600 px max)",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza or document; not flagged as cipher in the MAP inventory; DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "Leaf not re-viewed and the plaintext check against Dieci Responsive 118 c. 139 still not done. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: connection reset on https (curl exit 35) and HTTP 503 on http for /map/riproduzione/?id=79574. Retry when the ASF host answers.",
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "claude cloud session 13 Nov (continue-sweep vetting)",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP viewer images id 79574 (doc. 192 r, c. 234; ptif A0000465) and 79575 (v); doc. 191 r (c. 233, ptif A0000463) also viewed; https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=72&d=192&c=",
+     "extent": "One leaf, recto about 21 lines of cipher, verso the same system again (about 14 lines per the earlier pass; verso not re-viewed here).",
+     "cipher": "Viewed at 1400 px on 13 Nov 2026: recto opens in clear 'Mag.ce Vir', then dense invented letter-signs, almost every sign carrying a small superscript digit (3, 4, 5), written as a continuous run with no clear words and no interlinear, marginal or foot decipherment. Doc. 191 (c. 233) is the clear 'Copia di lettera di Ruberto Acciaioli da Amiens' in cursive Italian, a separate sheet."
+    },
+    "prior_art": {
+     "decode": "Not on DECODE: repo DECODE notes record no ASF MAP LXXII records (decode_updates/queue.json entries for toledo1479 and pandolfini1514); de-crypt.org RecordsList is a JavaScript page and was not queryable by term from curl.",
+     "tomokiyo": "Tomokiyo's list (repo unsolved.htm) has no Acciaiuoli or Amiens 1513 entry (grep, 13 Nov 2026).",
+     "lasry": "No Lasry or HistoCrypt paper on this letter found: two web searches (Acciaiuoli 1513 cipher Amiens; MAP filza 72 cifra Acciaiuoli) returned nothing on it.",
+     "edition": "Canestrini and Desjardins, Negociations diplomatiques de la France avec la Toscane, vol. II (archive.org gri_33125010469852, full text grepped 13 Nov 2026): prints Acciaiuoli's dispatches from MAP filza 72 only for Amiens, 26 Sept 1513 (pp. 588-589, in clear); no 23 Oct 1513 letter is printed there.",
+     "literature": "Nothing found on the cipher of MAP LXXII 190-192; the project's own pandolfini1514 target (same filza, 1514-15) uses a superscript-index homophonic style but records no 1513 reading."
+    },
+    "key_check": "Not read by any held key. The glossed pair 190/191 (same day, same system) is the only adjacent plaintext: 191 is a clear copy of 190's text, so a table can be rebuilt by alignment; not yet attempted. The pandolfini1514 table was not applied, and the superscript style alone does not show the two tables are the same.",
+    "key_in_volume": "Doc. 190 (c. 232) is the cipher original of the clear copy in doc. 191; not tested here.",
+    "duplicates": "known.py on 'Mediceo avanti il Principato LXXII', 'Acciaiuoli', 'Acciajuoli', 'Amiens 1513' (13 Nov 2026): only this lead and the sweep_2026-11_asf_florence_2 candidate; catalogue entries for LXXII 171 and the 1514 Pandolfini letters are other documents. Catalogue.json has no row for docs 190-192.",
+    "verdict": "open",
+    "searches": [
+     {
+      "query": "known.py Mediceo avanti il Principato LXXII / Acciaiuoli / Amiens 1513",
+      "result": "only lead 2351 and its sweep candidate"
+     },
+     {
+      "query": "Canestrini Negociations diplomatiques vol II full text: Acciaiuoli, Amiens, octobre 1513",
+      "result": "only Amiens 26 Sept 1513 printed; no 23 Oct letter"
+     },
+     {
+      "query": "WebSearch Roberto Acciaiuoli ambassador France 1513 cipher letter Amiens decipherment",
+      "result": "nothing on this letter"
+     },
+     {
+      "query": "WebSearch Mediceo avanti il Principato filza 72 cifra Acciaiuoli 1513",
+      "result": "nothing on this letter"
+     }
+    ]
+   },
+   "repository": "asf"
+  },
+  {
    "id": 2353,
    "counted": true,
    "year": 1485,

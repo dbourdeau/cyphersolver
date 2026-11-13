@@ -1,0 +1,28 @@
+# make_candidates.py: writes candidates.json (rows built here; rewritten after every find)
+import json,os
+HERE=os.path.dirname(os.path.abspath(__file__))
+IIIF='https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100%03d/A%07d.ptif/full/1272,/0/default.jpg'
+def links(f,pos,vid,doc,label):
+    return [{"label":"MAP filza %s doc. %s (viewer)"%(label,doc),"href":"https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=%d"%vid},
+            {"label":"IIIF image pos %d"%pos,"href":IIIF%(f,pos)},
+            {"label":"filza search","href":"https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=%d&d=%s&c="%(f,doc)}]
+rows=[]
+rows.append({
+ "year":1482,"date":"27 Mar 1482 (dating line 'Die xxvij Marty 1482'; endorsement 'ad xxvij di marzo')",
+ "title":"Pierfilippo Pandolfini, Florentine orator in Rome, to Lorenzo de' Medici, 27 Mar 1482: full page of symbol cipher with clear opening and closing, bare (MAP XXXVIII doc. 418)",
+ "correspondents":"Pierfilippo Pandolfini (orator at Rome) -> Lorenzo de' Medici",
+ "place":"Rome","language":"Italian (symbol-and-figure cipher, clear Italian around it)","region":"Italy","period":"15th century",
+ "shelfmark":"Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XXXVIII, doc. 418 (old c. 428)",
+ "folio_note":"Image positions 913 (doc. 418 r, viewer id 51734, pencil number 428) and 914 (doc. 418 v: address 'Mco viro Laurentio de medicis Maiori', endorsement 'Da Pierfilippo pandolfini da Roma ad xxvij di marzo', show-through of the recto). Recto: 4 clear lines ('Mce vir etcetera. Hiersera ... vi scripsi una tra ... di che vi mandai copia'), then about 19 lines mostly in cipher with clear words between the cipher runs ('del papa', 'alla dieta', 'Hò altro per hora racchomandomi a voi'), signed 'Petrus philippus Padolfi Rome ora'.",
+ "cls":"A","status":"Bare on the leaf viewed 13 Nov 2026: no interlinear, marginal or foot decipherment on recto or verso; neighbouring leaves 912 and 915 are clear letters of other correspondents. A sibling of lead 2559 (MAP LIII doc. 13, Pandolfini, Apr 1483, same hand and cipher style).",
+ "why":"Roman news for Lorenzo in March 1482 (the pope, a diet, an 'impresa'), in what looks like the same sign cipher as Pandolfini's April 1483 letter; the clear words between cipher runs give cribs and a second sample of the system exists.",
+ "importance":3,"solvability":4,"difficulty":3,
+ "score_note":"Scored from the leaf at 1272 px: about 19 lines, roughly 1,000 symbols and figures, clear context words every few lines; with lead 2559 the pair gives two samples of one system.",
+ "verify":"Transcribe the cipher lines of c. 428r and compare with MAP LIII doc. 13 (lead 2559). NOT VETTED: the date lies inside the range of the Lettere di Lorenzo il Magnifico edition (notes not online) and this is an incoming letter, so no vetting block; check the Lettere notes for 1482 and DECODE by hand before promotion.",
+ "links":links(38,913,51734,"418","XXXVIII")+[{"label":"IIIF image pos 914 (doc. 418 v)","href":IIIF%(38,914)}],
+ "seen":"image","source":"ASF Mediceo avanti il Principato images (MAP filza XXXVIII paging), map_paging sweep, 13 Nov 2026",
+ "prior_art":"Not vetted. known.py (13 Nov 2026) shows only the sibling lead 2559 (LIII doc. 13); DECODE RecordsList search Pandolfini run 13 Nov 2026 (see README); the Lettere di Lorenzo il Magnifico notes, which could cover a 1482 incoming letter, are not online and were not opened.",
+ "needs_archive_scan":"no",
+ "access_note":"scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000913.ptif (1272 px max)"})
+json.dump(rows,open(os.path.join(HERE,'candidates.json'),'w'),ensure_ascii=False,indent=1)
+print(len(rows),'rows')

@@ -220,3 +220,11 @@ reaches some hosts the earlier one did not and the reverse; each README has its 
   `bellievre_2` (fr. 15894, 15897, 15898, 15890: fetch scripts only), `alvin_waller` (paging Waller letters on Alvin by image: scripts
   only). Resume from the scripts; none has a README yet.
 - **Result of the pass:** 36 leads promoted (catalogue 1210 to 1246: 32 of the 89 rows merged today and 4 older leads), 57 new leads left in `leads.json`, 9 leads closed as read, partly read or not cipher.
+
+## 13 Nov 2026 pass (cloud session; folders `sweep_2026-11-13_*`)
+
+- **MAP paging** (`sweep_2026-11-13_map_paging`): filze XXX-XXXVIII, XLI, XLVI, LV, LX, LXVIII paged by detector (top ranks only); 1 bare lead (XXXVIII 418, held: Lettere di Lorenzo range). Not paged: XX-XXIX, LXVI, early-1500s filze, deeper ranks.
+- **TKUA paging 5** (`..._tkua_paging_5`): 0 rows. The Indkomne breve and relation series are single letters; a 1-in-4 sample at 400 px misses short runs.
+- **Riksarkivet Skrivelser till konungen 1133.07** (`..._nordic_paging`): top-64 screen per volume; 5 bare leads (Grubbe, Horn, Banér, De la Gardie, "Chemnitz"), unvetted for lack of an online edition. Not reached: 1133.07/26-35, 1133.01-05, second windows, Danske Kancelli, Kongehuset.
+- **JACAR** (`..._jacar`): 403 after parallel threads at about 4 requests a second; retry at one request per 2-3 s. 2,474 selected records unscanned; two 1879 Japanese rows unvetted.
+- **New sources** (`..._new_sources`): BSB/MDZ search API, Polona, Memoria Digital de Catalunya reachable and swept (0 rows); Internet Culturale CAPTCHA, e-rara, e-manuscripta, SLUB, Heidelberg blocked. Best route left: Omont's BnF catalogue (about 150 "avec chiffre" pieces), blocked only by finding Gallica arks (needs Chrome).
