@@ -1201,7 +1201,9 @@ def process(path):
         s = s.replace('<!-- catalogue:end -->', '<!-- catalogue:end -->\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
         s = re.sub(r'<!-- live:start -->.*?<!-- live:end -->\n?', '', s, flags=re.S)
         s = re.sub(r'<script src="home\.js[^"]*" defer></script>\n?', '', s)
-        s = re.sub(r'(<div class="hero-cta">.*?)(\s*</div>)', lambda m: m.group(1) + '\n' + live_html() + m.group(2), s, count=1, flags=re.S)
+        # the random button sits on the counts strip under the hero (.herostrip), or with the hero's buttons where there is none
+        live_at = 'herostrip' if '<div class="herostrip">' in s else 'hero-cta'
+        s = re.sub(r'(<div class="%s">.*?)(\s*</div>)' % live_at, lambda m: m.group(1) + '\n' + live_html() + m.group(2), s, count=1, flags=re.S)
         s = s.replace('</body>', f'<script src="home.js?v={VERSION}" defer></script>\n</body>', 1)
         feat = [next(p for p in PAGES if p['slug'] == f) for f in FEATURED]
         cards = ('<!-- cards:start -->\n<h2 id="featured">Start with these</h2>\n<div class="cards featured">\n' + ''.join(card_html(p) for p in feat) + '</div>\n'
