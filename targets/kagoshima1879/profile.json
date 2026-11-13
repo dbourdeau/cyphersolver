@@ -1,0 +1,272 @@
+{
+ "schema_version": 1,
+ "target": "kagoshima1879",
+ "title": "Kagoshima / Ryukyu 1879: three Army Ministry cipher drafts in the 1877 kana substitution tables (nos. 4, 1, 6), contemporary plaintext on the drafts",
+ "documents": [
+  {
+   "id": "jacar-c10072242200",
+   "read": "read",
+   "shelfmark": "JACAR C10072242200 (NIDS, Ministry of Defense), 陸軍省大日記 陸軍省雑 明治12年 草按, call no. 陸軍省-雑-M12-2-150",
+   "date": "Meiji 12 (1879), probably March-April (Ryukyu Disposition)",
+   "year": 1879,
+   "country": "Japan",
+   "route": "Army Ministry (Tokyo) draft -> Kagoshima / Kumamoto garrison (recipient not named)",
+   "places": {
+    "from": "Tokyo",
+    "to": "Kagoshima (garrison detachment), not named"
+   },
+   "language": "Japanese",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary kana plaintext written sign by sign beside the cipher on the same draft"
+   },
+   "length": {
+    "tokens": 109,
+    "unit": "letters",
+    "measured": true,
+    "file": "dudout/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "JACAR PDF (frames 0533, 0545, 0575-0576)",
+    "image_quality": "fair"
+   }
+  },
+  {
+   "id": "jacar-c10072242900",
+   "read": "read",
+   "shelfmark": "JACAR C10072242900 (NIDS, Ministry of Defense), 陸軍省大日記 陸軍省雑 明治12年 草按, call no. 陸軍省-雑-M12-2-150",
+   "date": "Meiji 12 (1879), probably March-April (Ryukyu Disposition)",
+   "year": 1879,
+   "country": "Japan",
+   "route": "Army Ministry (Tokyo) draft -> Kagoshima / Kumamoto garrison (recipient not named)",
+   "places": {
+    "from": "Tokyo",
+    "to": "Kagoshima (garrison detachment), not named"
+   },
+   "language": "Japanese",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary kana plaintext written sign by sign beside the cipher on the same draft"
+   },
+   "length": {
+    "tokens": 52,
+    "unit": "letters",
+    "measured": true,
+    "file": "dudout/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "JACAR PDF (frames 0533, 0545, 0575-0576)",
+    "image_quality": "fair"
+   }
+  },
+  {
+   "id": "jacar-c10072244400",
+   "read": "read in part",
+   "shelfmark": "JACAR C10072244400 (NIDS, Ministry of Defense), 陸軍省大日記 陸軍省雑 明治12年 草案, call no. 陸軍省-雑-M12-3-151",
+   "date": "Meiji 12 (1879), probably March-April (Ryukyu Disposition)",
+   "year": 1879,
+   "country": "Japan",
+   "route": "Army Ministry (Tokyo) draft -> Kagoshima / Kumamoto garrison (recipient not named)",
+   "places": {
+    "from": "Tokyo",
+    "to": "Kagoshima (garrison detachment), not named"
+   },
+   "language": "Japanese",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "contemporary kana plaintext written sign by sign beside the cipher on the same draft"
+   },
+   "length": {
+    "tokens": 146,
+    "unit": "letters",
+    "measured": true,
+    "file": "dudout/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "JACAR PDF (frames 0533, 0545, 0575-0576)",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Army kana substitution tables of 1877 (隠語表 第一号-第二十二号): 22 shifts of one cipher sequence against the iroha; table number written as header (四号, 第六号)",
+  "symbol_kind": "letters",
+  "distinct_symbols": 40,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary plaintext is written beside the cipher on each draft (JACAR images). The 1877 tables are in JACAR C09084568800; the 1876-77 table system is described by Satoshi Tomokiyo, Cryptiana, meijiarmy.htm. No reading of these three drafts found in print or online (JACAR, Cryptiana, this repository, web search JA, 13 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "archive decipherment",
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-13",
+  "human_role": "Brice Dudout chose the targets and set the rules (protocol frozen by SHA-256 before any key test); a Claude agent fetched the JACAR images, transcribed, identified the tables, ran the frozen check and wrote up. No human visual review yet.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "access",
+   "what": "JACAR item pages and PDFs fetched; the JACAR 内容 field interleaves the cipher and the plaintext columns, which is why the record strings look partly in clear.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Headers 四号 / 第六号 and the cipher-plaintext pairs identified as tables 4, 1 and 6 of the 1877 Army tables (C09084568800); all 22 tables are shifts (8 - 2n mod 44) of one sequence.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Frozen protocol: each documentary table applied to the plaintext reproduces the transcribed cipher for 95/96 (doc 1), 45/47 (doc 2) and 132/138 (doc 3) signs; 200 controls (the 21 other tables + 179 random alphabets) reach at most 0.188, 0.255, 0.174. The pre-registered H1 (one key learned on doc 1, applied to doc 2) failed (0.021), as the drafts use different tables.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Contemporary kana plaintext segmented, put into kanji and translated; doc 2 sign テ/マ settled by the cipher (レ = マ in table 1).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "not applicable",
+  "method": "read from existing decipherment",
+  "method_basis": "The clerk wrote the plaintext beside the cipher on each draft; we transcribe and read it, and check it against the 1877 tables found in the archive.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.97,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Daniel's rule, certain + probable words: doc 1 35/35, doc 2 20/20, doc 3 41/44; 96/99 = 97.0%.",
+  "first_break": false,
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "historical consistency"
+  ],
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "plaintext written beside the cipher on the three Army Ministry drafts (1879)",
+    "date": "1879"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "prior solution",
+    "note": "describes the Army's 1876-77 numbered kana tables (nos. 1-22) on Cryptiana",
+    "date": "2014",
+    "source": "https://cryptiana.web.fc2.com/code/meijiarmy.htm"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "transcription, identification of tables 4, 1 and 6, reading and translation of the three drafts",
+    "date": "2026-11-13"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "jacar-c10072242200",
+    "label": "Army Ministry draft, 1879: Kagoshima dispatch, notes (catalogue 2572)",
+    "transcription": "transcription.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "ja",
+    "state": "read",
+    "summary": "The Kagoshima garrison's dispatch is not a campaign, so no campaign allowance; departure date not fixed; spare ammunition better sent from here.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 for Brice Dudout",
+     "date": "2026-11-13",
+     "note": "contemporary plaintext, 35/35 words; checked against table no. 4 (95/96 signs)"
+    }
+   },
+   {
+    "doc": "jacar-c10072242900",
+    "label": "Army Ministry draft, 1879: no huts to be built for the troops sent to Ryukyu (catalogue 2573)",
+    "transcription": "transcription.txt",
+    "reading": "reading_2.md",
+    "translation": "translation_2.md",
+    "language": "ja",
+    "state": "read",
+    "summary": "No need to build huts for the troops sent to Ryukyu; Captain Masumitsu informed as well.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 for Brice Dudout",
+     "date": "2026-11-13",
+     "note": "contemporary plaintext, 20/20 words (1 probable, the name 益満); checked against table no. 1 (45/47 signs)"
+    }
+   },
+   {
+    "doc": "jacar-c10072244400",
+    "label": "Army Ministry draft, 1879: half battalion of Kagoshima ordered to Ryukyu (not in the catalogue)",
+    "transcription": "transcription.txt",
+    "reading": "reading_3.md",
+    "translation": "translation_3.md",
+    "language": "ja",
+    "state": "read in part",
+    "read_share": 0.932,
+    "summary": "Half the Kagoshima garrison ordered to the Ryukyu domain; the other half to prepare under articles 2, 4-7 and report missing items.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 for Brice Dudout",
+     "date": "2026-11-13",
+     "note": "contemporary plaintext, 41/44 words, 3 unresolved; checked against table no. 6 (132/138 signs)"
+    }
+   }
+  ],
+  "key_file": "key.tsv"
+ }
+}
