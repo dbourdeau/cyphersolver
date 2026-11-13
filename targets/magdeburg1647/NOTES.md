@@ -3,10 +3,12 @@
 Status: in progress (integration check of 13 Nov 2026, PR #524: the key is right and is the envoys' own, but the slips
 are decoded, not read, and the gap that holds them back, the transcription of the hand, is workable; folder only, no page
 and no ledger row; catalogue 1639 narrowed, not removed). 13 Nov 2026, R8: a third, non-blind reading (R3) of f.102, f.104 and f.204 is
-filed (`NOTES_R3.md`); the contributor has announced a blind fourth reader, so the target stays in progress until it is in.
+filed (`NOTES_R3.md`). 13 Nov 2026, R8: the blind fourth reading (b198, `blind4_b198/`) is in and verified; it is now the
+figure of record for f.102, f.104 and f.204 and confirms that the hand, not the key, is the limit. The gaps are still
+workable (the hand, frame 278, drafts not yet searched), so the target stays in progress.
 Outcome method set by the owner to "read with known key" (see Integration check of the R3 files).
 
-Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 34.57% to 47.06% on the first pass). The limit is our reading of the hand, not the key. The content of f.5, f.6, f.7 and f.101 exists in clear in Nr. 529, so it is not first.
+Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 26.19% to 45.71% on the first pass, figures of record). The limit is our reading of the hand, not the key. The content of f.5, f.6, f.7 and f.101 exists in clear in Nr. 529, so it is not first.
 
 ## What this folder is
 
@@ -62,9 +64,12 @@ A reciprocal letter substitution in Latin letters: 12 pairs, each letter enciphe
 |---|---|---|
 | f.7 | R1 (b160) | 36/83 = 43.37% |
 | f.101 | R2 (b162; R1 did not transcribe it) | 16/35 = 45.71% |
-| f.102 | R1 | 28/81 = 34.57% |
-| f.104 | R1 | 45/101 = 44.55% |
-| f.204 | R1 | 24/51 = 47.06% |
+| f.102 | b198, blind (since 13 Nov 2026; was R1 28/81 = 34.57%) | 22/84 = 26.19% |
+| f.104 | b198, blind (was R1 45/101 = 44.55%) | 42/100 = 42.00% |
+| f.204 | b198, blind (was R1 24/51 = 47.06%) | 19/52 = 36.54% |
+
+The b198 figures count a word holding a letter the reader marked doubtful as a hole; R1 and R2 mark no doubtful letters,
+so for them the rule changes nothing. See the integration check of the blind fourth reading below.
 
 **Second reader** (b162, glossed reference crops, frozen before its own single decode): f.7 38/81 = 46.91%; f.102 31/79 = 39.24%; f.104 46/101 = 45.54%; f.204 22/51 = 43.14%.
 
@@ -77,7 +82,7 @@ No pooled figure is given as a headline.
 - f.204 R1: the b160 ledger states 24/53, but the frozen file holds 51 cipher words (its line 2 says 10, the file has 8); recounted, 24/51 = 47.06%.
 - Catalogus: 8/13 (9/13 with m = x), not the 13/13 in our session log.
 
-**Blind second reading:** none. Reader 2 (b162) did not see reader 1's transcriptions before freezing its own. It did know the key and the decodes of f.5 and f.6, so it is a second reader, not blind. Reader 1 is one reader, not blind: it had seen key output on f.5 and f.6. Word agreement between the readers (`agreement.txt`, `scripts/align.py`) is 162 of 312 R2 words = 51.92% over four slips: f.7 39/81, f.104 58/101, f.102 43/79, f.204 22/51. The systematic disagreements are g/q, c/e, t/l and a word-final f read as n.
+**Blind reading:** one, b198 (the fourth reader, below), blind to the other readings but not to the key. Reader 2 (b162) did not see reader 1's transcriptions before freezing its own. It did know the key and the decodes of f.5 and f.6, so it is a second reader, not blind. Reader 1 is one reader, not blind: it had seen key output on f.5 and f.6. Word agreement between the readers (`agreement.txt`, `scripts/align.py`) is 162 of 312 R2 words = 51.92% over four slips: f.7 39/81, f.104 58/101, f.102 43/79, f.204 22/51. The systematic disagreements are g/q, c/e, t/l and a word-final f read as n.
 
 ## Controls (`controls/`)
 
@@ -102,7 +107,7 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 
 ## Remaining gaps
 
-- The hand: g/q, c/e, t/l and final f/n confusions cap every slip at 35-47% (f.7, f.101, f.102, f.104, f.204) - blocker: not-attempted; the key is complete (the envoys' own table, frame 168), so a careful third transcription of the slips at full size with the frame-51 glossed reference is workable. The integration check found reader 2 closer to the image than reader 1 on f.204 lines 1-3 (below). Was marked "illegible" in `profile.json`; it is not.
+- The hand: g/q, c/e, t/l and final f/n confusions cap every slip at 26-46% (f.7, f.101, f.102, f.104, f.204; the blind fourth reader b198 says the same of its own transcription) - blocker: not-attempted; the key is complete (the envoys' own table, frame 168), so a careful third transcription of the slips at full size with the frame-51 glossed reference is workable. The integration check found reader 2 closer to the image than reader 1 on f.204 lines 1-3 (below). Was marked "illegible" in `profile.json`; it is not.
 - Clear drafts for f.102, f.104 and f.204 - blocker: not-attempted; Nr. 529 searched only in the frames listed in `nr529/README.md`; Nr. 543 (Krull's draft reports), 537, 538, 540, 546 not checked.
 - Frame 278 of Nr. 530 ("Signatura catalogi sive clavis": a sign table and a long cipher passage with interlinear glosses) and frames 5, 6 - blocker: not-attempted; not compared with KEY_v2 or used for the name signs.
 - Name signs (Catalogus, frames 3 and 278) left as holes ('|') - blocker: not-attempted.
@@ -115,7 +120,7 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 - [x] known-keys: the envoys' own key (frame 168, AMPHICTYONES) equals KEY_v2 in all 12 pairs; decoding the slips with it gives the same letters
 - [ ] print: Acta Pacis Westphalicae and older Magdeburg histories not searched page by page
 - [x] key-rebuild: not needed (the key is complete)
-- [ ] retry: f.102, f.104 and f.204 re-transcribed by a third reader (R3, non-blind, 13 Nov 2026, `NOTES_R3.md`); f.7 also, as a check against its draft; f.101 not; a blind fourth reader is announced by the contributor (open)
+- [ ] retry: f.102, f.104 and f.204 re-transcribed by a third reader (R3, non-blind, 13 Nov 2026, `NOTES_R3.md`); f.7 also, as a check against its draft; f.101 not; blind fourth reader b198 (13 Nov 2026, `blind4_b198/`) on f.102, f.104, f.204: 26-42% strict, now the figures of record; still below 65% (open)
 
 ## How to reproduce (standard-library Python, no network)
 
@@ -162,7 +167,7 @@ Done by the integrating session after its own verification (report R8_bremen). T
   reading" or "marginal" for every slip. State changed from "read in part" to "decoded, not read" per text; the entry class
   stays read in part.
 - **fraction_read**: was the best single slip (f.204, 0.4706), which is selective. Now the five held-out slips at their
-  figures of record, no selection: (36 + 16 + 28 + 45 + 24) / (83 + 35 + 81 + 101 + 51) = 149/351 = 0.4245. Per-slip
+  figures of record, no selection: (36 + 16 + 28 + 45 + 24) / (83 + 35 + 81 + 101 + 51) = 149/351 = 0.4245 (135/354 = 0.3814 since the blind fourth reading). Per-slip
   figures stay as filed.
 - **Gaps**: "the hand" was marked `illegible`; with a complete key and readable images it is `not-attempted`.
 - **One key, one entry**: no other target or lead holds A 1 Nr. 530 or this table; thumbshirn1647 (Saxe-Altenburg envoys at the same congress) names catalogue 1639 but uses a homophonic key, a different system.
@@ -186,7 +191,7 @@ under `*_R3*`, `timestamps/b195/`, `gloss/REF_SIGNS_R3.md`, `NOTES_R3.md`, `PRIO
   names spelt oddly, a dropped letter: "gesanten", "lasen", "genisenden", "crosen", "uehrden"). Under the strict rule
   (probable units are holes) the S? units are holes, so the strict figure is the contributor's "floor":
 
-| slip | R3 strict (S? as holes) | contributor's figure, S? counted read | figure of record (R1/R2, unchanged) |
+| slip | R3 strict (S? as holes) | contributor's figure, S? counted read | figure of record then (R1; replaced by b198 the same day) |
 |---|---|---|---|
 | f.102 | 53/84 = 63.10% | 61/84 = 72.62% | 28/81 = 34.57% |
 | f.104 | 71/102 = 69.61% | 73/102 = 71.57% | 45/101 = 44.55% |
@@ -213,3 +218,41 @@ under `*_R3*`, `timestamps/b195/`, `gloss/REF_SIGNS_R3.md`, `NOTES_R3.md`, `PRIO
   and the worksheet then confirmed it in all 12 pairs. The label is the conservative one chosen by the owner for the paper.
 - **Prior art for f.102, f.104, f.204** (`PRIOR_ART_R3.md`): no clear draft found in the frames searched (contributor's record,
   not re-checked here); the fair copies carry insertion marks only.
+
+## Integration check of the blind fourth reading (13 Nov 2026, R8)
+
+By an AI agent for the maintainer, not a person. PR #524 received six more commits (29 files in `blind4_b198/`: three
+transcriptions, decodes and ledgers, scripts, a shuffle control, `REPORT.md`, `LOG.md`, `SHAPES.md` and two RFC 3161 stamps);
+nothing existing changed. Report: `scratchpad/reports/R8_magd4.md` of the integrating session.
+
+- **What it is:** reader b198 transcribed f.102, f.104 and f.204 from the five LASA frames (3, 51, 118, 121, 233) only,
+  froze the three files, then decoded each once with the KEY_v2 table and judged each word once (S / SP period spelling / E).
+  By its own list of what it opened, it saw no earlier transcription, decode, word list or reading. It **knew the key** (printed
+  in its task text, as it says), as R1 and R2 did. The task text is not filed, so what else it carried is the contributor's record.
+- **Stamps:** `openssl ts -reply -text`: the freeze token (Sectigo Public Time Stamping Signer R37, 13 Nov 2026 11:32:42 GMT)
+  carries SHA-256 9817e417..., the hash of its `MANIFEST.sha256`, which lists the three frozen transcriptions with their
+  current hashes; the result token (11:35:17 GMT) carries a3cf703f..., the hash of its 139-line manifest. `openssl ts -verify`
+  with the system CA bundle: OK for both. 22 of the 23 filed files listed in the result manifest match; `LOG.md` matches
+  without its last line ("result stamped", written after the stamp). So the transcriptions existed unchanged before the result;
+  that no decode was run before the freeze is by the contributor's record (with the key known, it cannot be shown).
+- **Own decoder** from the frame-168 worksheet (AMPHICTYONES over zxwurqlkgfdb), not the reader's script: 236 of 236 units equal
+  `dec/*.decode.tsv`. `ledger.py` labels reproduce (S + SP: 33/84, 49/100, 25/52). The shuffle control was not re-run (needs
+  Project Gutenberg 5323); the script was read and is sound.
+- **Strict recount:** SP words are period spellings, which the target's rule counts as read. Words holding a letter the reader
+  marked doubtful (`[x?]`) are holes under the '?' rule: 11 such S/SP units in f.102, 7 in f.104, 6 in f.204. Strict:
+  f.102 22/84 = 26.19%, f.104 42/100 = 42.00%, f.204 19/52 = 36.54%. The reader's own figures, doubtful-letter words read:
+  33/84 = 39.29%, 49/100 = 49.00%, 25/52 = 48.08%.
+- **Image** (LASA `max` jpg of frame 233, plain curl, 200; the viewer burns its own date into each image, so md5s differ from
+  the reader's): 50 cipher words over all seven lines compared with my reading. 36 agree, 3 differ (line 1: the initial capital
+  of "[C?]odbpdodf" left out, which turns "deswegen" into "geswegen"; line 3: "tzbdf" where I see "tbdf", the reading R3 also
+  made; line 5: "sdKzfcdf" written as one word where the image has a gap), 11 cannot be settled at this resolution (c/e and g/q,
+  nearly all flagged by the reader). The signs agree in kind and place. I had the reader's file open, so this check is not blind.
+- **The reading reads:** no. The decodes are lists of words with E words in every line; the text states stay "decoded, not read".
+- **Figures of record:** b198 is the one reading of these slips that is blind to the others, has an external stamp on the frozen
+  transcription and marks each doubtful letter; R1's freeze rests on session logs. It is better documented, so its strict figures
+  become the figures of record for f.102, f.104 and f.204. f.7 (R1) and f.101 (R2) are unchanged. `fraction_read`:
+  (36 + 16 + 22 + 42 + 19) / (83 + 35 + 84 + 100 + 52) = 135/354 = 0.3814 (was 149/351 = 0.4245). R1, R2 and R3 stay filed.
+- **Status:** stays in progress. The blind reader puts its own shortfall on the transcription (c/e, g/q), not on the key, so the
+  hand remains a workable gap; frame 278, the drafts in Nr. 537, 538, 540 and 546 and the Acta Pacis Westphalicae print are
+  untried. None of these has an outside blocker.
+
