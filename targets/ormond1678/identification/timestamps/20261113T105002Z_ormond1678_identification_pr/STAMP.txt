@@ -1,0 +1,8 @@
+LABEL: ormond1678_identification_pr
+Local UTC: 20261113T105002Z
+Files: 34
+Manifest SHA-256: 304d6ae7851ba4cf98f4c8d357fb63780f5bcc9d1b43f95306e3c1b85e51838c
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 13 10:50:03 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots

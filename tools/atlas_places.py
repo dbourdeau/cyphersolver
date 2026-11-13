@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Dublin': [53.349, -6.260],  # ormond1678: Ormond, Lord Lieutenant, at Dublin, 1678
     'Beijing': [39.904, 116.407],  # army1901: Fukushima in Peking, 1901
     'Stralsund': [54.309, 13.082],  # wackerbarth1717: the Saxon camp before Stralsund, November 1715
     'Münster': [51.962, 7.626],  # fuerstenberg1659: the dean Brabeck at Münster, July 1659

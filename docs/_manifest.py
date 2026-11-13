@@ -768,6 +768,11 @@ PAGES = [
          blurb='Ten ciphered letters from Spain&rsquo;s ambassador in Rome to its envoy in Denmark, with contemporary decipherments in the margin and no key; DECODE lists two as not decrypted. The syllabic nomenclator was recovered by aligning the 4 September letter with its margin, and applied to all ten; the two &ldquo;not decrypted&rdquo; letters also carry a faint margin decipherment, which agrees with the key&rsquo;s output.',
          quote='la pr&oacute;xima campa&ntilde;a habr&aacute; guerra en Mil&aacute;n, pues el Cardenal de Estr&eacute;es, que est&aacute; en Tur&iacute;n, no se descuida',
          rights='Archives g&eacute;n&eacute;rales du Royaume, Brussels, via DECODE R1002&ndash;R1011'),
+    dict(slug='ormond1678', footer_date='November 2026', label='Ormond to Arran 1678', year='24 January 1677/8', y=1678.06, place='Dublin &rarr; London', st='partial', stt='read in part',
+         title='Ormond to his son Arran, 24 January 1677/8: twenty figures set as a trial',
+         blurb='The Duke of Ormond put twenty figures into a letter to his son the Earl of Arran as &ldquo;a trial whether you are skilful in deciphering&rdquo;. Malcolm McBratney found that they are S. Tomokiyo&rsquo;s reconstruction of the Ormond&ndash;Longford cipher of 1680 with every number raised by 7. Half the figures carry a value attested in print; the second run reads &ldquo;but it seems to Ormond not credible&rdquo;.',
+         quote='but it seems to Ormond not credible',
+         rights='HMC, Calendar of the MSS of the Marquess of Ormonde, new series iv and v, via the Internet Archive'),
     dict(slug='battier1686', label='Battier to Fagel', year='1686&ndash;1688', y=1686, place='Madrid &rarr; Gaspar Fagel', st='partial', stt='read with known key, partial',
          title='Battier to Fagel: a court divided',
          blurb='The named Battier key in NA 1.10.29 inv. 1209 reads Dutch reports from Madrid. Three letters validate the key, including 19 December 1686: four passages, 186 tokens, compared with the contemporary decipherment on 32R. Two letters pass the strict sense screen without a known contemporary decipherment: 24 April 1687, conservatively 230/235 (97.9%), and 8 April 1688, 313/323 (96.9%), conservatively 312/323 (96.6%). The volume remains partial; the earlier estimate was roughly 55%, with no revised denominator for the 235-token addition.',
@@ -3559,6 +3564,7 @@ IMAGES['majesty1624'] = None
 IMAGES['deboli1787'] = None
 IMAGES['deboli1786'] = None
 IMAGES['mediceo1483'] = None
+IMAGES['ormond1678'] = ('ormond1678_p93.jpg', 'HMC Ormonde n.s. iv p. 93: the twenty figures in Ormond&rsquo;s letter of 24 January 1677/8, printed without a gloss', 'HMC, Calendar of the MSS of the Marquess of Ormonde, n.s. iv (1906), p. 93, via the Internet Archive (calendarofmanusc04greauoft, leaf n122)')
 IMAGES['dahku1715'] = None
 IMAGES['delcarretto1576'] = None
 IMAGES['pawel1624'] = None

@@ -16,8 +16,8 @@
     "location": [
      "none"
     ],
-    "source": "HMC prints the figures without a gloss; the manuscript has not been seen.",
-    "partial": false
+    "source": "HMC prints the figures without a gloss; the manuscript has not been seen. Values come from Tomokiyo's 1680 key shifted by +7 (identification/).",
+    "partial": true
    },
    "length": {
     "tokens": 20,
@@ -30,14 +30,18 @@
     "image_quality": "good",
     "notes": "Figures as printed in HMC n.s. iv p. 93, checked against the Internet Archive scan (calendarofmanusc04greauoft, leaf n122). The sixth figure of the first run is printed 58, not 57 as in Tomokiyo's quotation."
    },
-   "read": "not read"
+   "read": "read in part",
+   "places": {
+    "from": "Dublin",
+    "to": "London"
+   }
   }
  ],
  "system": {
   "types": [
    "code"
   ],
-  "summary": "Numeric code or nomenclator, figures 32-732, all 20 distinct. Probably the Restoration English type (short alphabet section plus alphabetically ordered syllables and words up to about 800), but the key is unknown.",
+  "summary": "Numeric code of the Restoration English type: the Ormond-Longford Cipher 1 (1680) table as reconstructed by Tomokiyo, with every number 7 higher (two regular alphabets 30-53 and 54-77, then syllables and words in alphabetical order). The offset was found by Malcolm McBratney (PR #526, 13 Nov 2026).",
   "symbol_kind": "digits",
   "distinct_symbols": 20,
   "diacritics": {
@@ -52,13 +56,13 @@
   "nulls": {
    "present": "unknown"
   },
-  "key_order": "not applicable",
-  "notes": "key_order is a placeholder: the order of the key is not known (alphabetical is likely by analogy with the Ormond-Longford keys)."
+  "key_order": "alphabetical",
+  "notes": "The +7 relation is shown for the entries touched (1680 numbers 25-51, 84-86, 207, 377, 418, 433, 519, 566, 636, 725); whether it holds over the whole table is not known."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "none found: HMC n.s. iv-v, cryptiana charlesii2.htm (Tomokiyo's trial rejected), Cryptoole XX1678-1 open",
+   "where": "none found: Cryptiana charlesii2.htm lists the passage as unidentified and its hidden trial at offset 0 was rejected; Tomokiyo's 1680 key itself is published. The offset is new by the contributor's record (identification/PRIOR_ART.md).",
    "found": "not found",
    "used": false
   },
@@ -69,19 +73,21 @@
    "published key"
   ],
   "attack": "published key",
-  "human_role": "Pasted the catalogue task; no other input.",
+  "human_role": "Malcolm McBratney ran an agent on Perplexity that noticed the offset; he set the check task. No other input.",
   "tools": [
    "Internet Archive full text and page images",
-   "cryptiana charlesii2.htm",
    "NLI Sources catalogue and collection list A017 (built-in browser)",
+   "Python 3 (standard library), Pillow for crops",
+   "archive.org page images of HMC Ormonde n.s. V-VII",
+   "cryptiana charlesii2.htm",
    "web search"
   ],
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -129,44 +135,116 @@
     "repeat/pattern analysis"
    ],
    "result": "failed"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "key from source",
+   "what": "Tomokiyo's Ormond-Longford Cipher 1 (1680) applied with every 1678 figure reduced by 7: run 2 reads 'to Ormond not c-re-di-b-le', run 1 'an-d King ar-e in a'. Offsets -150..+150 on Longford 1 and 2 (602 trials) and Longford 3.",
+   "technique": [
+    "key matching",
+    "key-structure hypothesis"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Every 1680 value used checked on the page images of HMC n.s. V pp.454, 469, 479, 486, 498 (identification/GLOSS_CHECK.md); 566 = Ormond rests on the plain rendering on p.498 and the gloss 'Dor' on p.454; 418 = King is context only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Longest vocabulary word over 3+ groups: only -7 of 301 offsets on K1 gives one ('credible'); 2,000 random figure sets at their best of 602 key-offset pairs reach 8+ letters 6/2000; 3,000 shuffles at -7 reach 8+ letters 0/3000 (identification/controls_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check of PR #526: decode.py, controls.py and controls_joint.py re-run (python3 -I): every figure reproduced (14/20 at -7 on Tomokiyo's key; only -7 of 602 key-offset trials spells a 5+ letter word, 'credible'; random sets 8+ letters 6/2000; hit count 14 in 5/2000; shuffles 0/3000). Own decoder from Tomokiyo's table image: same 14 values. Own control with another lexicon (lang/lexicons/en.json.gz, words of 6+ letters): only -7 spells one; random sets 8+ letters 0/1000. p.93 figures 20/20 on the scan; glosses checked on pp.454, 469, 479, 486, 498: on p.486 'and' stands over 84 alone and 'i' over 50, so 84 = 'an' is the contributor's reading. Strict share 10/20 = 50% (interpolated and context values are holes); class read in part.",
+   "technique": [
+    "key matching"
+   ],
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "not read",
-  "key": "none",
-  "method": "not solved",
-  "method_basis": "Neither the 1678 Ormond-Arran pair code nor the 1680 Ormond-Longford key fits the figures, and twenty distinct figures are too few for a ciphertext-only break.",
+  "class": "read in part",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Tomokiyo's reconstruction of the 1680 Ormond-Longford key, from the HMC n.s. V glosses, read the 1678 figures once each is reduced by 7.",
   "verification": [
-   "none"
+   "historical consistency",
+   "key confirms"
   ],
   "contribution": [
-   "transcription",
-   "catalogue correction"
+   "key extended or corrected",
+   "transcription"
   ],
   "gaps": [
    {
-    "item": "all 20 figures",
-    "blocker": "too-short"
+    "item": "figures 445, 342, 726, 700, 720 (1680 numbers 438, 335, 719, 693, 713)",
+    "blocker": "no-key-material",
+    "detail": "no gloss for these numbers anywhere in HMC n.s. v; Tomokiyo's table has none; alphabetical bracketing gives only the section (438 in l-, 335 in g-/h-, 693, 713, 719 in s-)"
    },
    {
-    "item": "the key",
-    "blocker": "no-key-material"
+    "item": "figures 58, 54, 32, 440 (1680 numbers 51 e, 47 a, 25 c, 433 le) and 425 (418 King)",
+    "blocker": "no-key-material",
+    "detail": "values from the key's regular order and from context only; no gloss in print for these numbers"
    },
    {
-    "item": "gloss on the sent letter or Ormond's copy (NLI MSS 2335-2362; Bodleian Carte 216-217)",
-    "blocker": "needs-physical-access"
+    "item": "a test of +7 over the rest of the table",
+    "blocker": "too-short",
+    "detail": "20 figures, no repeats; no other passage in the 1678 numbering in HMC n.s. iv-v (IA full text scanned for figure runs)"
+   },
+   {
+    "item": "gloss on the sent letter or Ormond's copy",
+    "blocker": "needs-physical-access",
+    "detail": "NLI Ormonde MSS 2335-2362 (MS UR 006261 bundle) and Bodleian MS. Carte 50 fols 439-440, not digitised"
    }
   ],
-  "fraction_read": 0,
-  "fraction_read_method": "measured",
+  "fraction_read": 0.5,
   "credits": [
    {
     "who": "tomokiyo",
-    "role": "pointer",
-    "note": "identified the passage, the 1678 two-letter Ormond-Arran code and the Ormond-Longford 1680 key reconstruction; his trial of that key was rejected",
-    "source": "cryptiana charlesii2.htm"
+    "role": "key or decipherment used",
+    "note": "Ormond-Longford Cipher 1 (1680) reconstruction from the HMC n.s. v glosses, Cryptiana charlesii2.htm; also listed the passage as unidentified"
+   },
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "found that the 1678 figures are the 1680 numbers plus 7 and checked it (glosses on the page images, controls), working with Claude (Anthropic); PR #526",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/526"
    }
   ],
-  "notes": "Attempted and closed for now. The figure printed 58 (not 57) is a catalogue correction. Next step: the NLI manuscript."
+  "notes": "Key identified by Malcolm McBratney (PR #526): Tomokiyo's reconstruction of Ormond-Longford Cipher 1 (1680) with every number 7 higher. Read in part: 10/20 figures (50%) carry a gloss-attested value; 5 interpolated or context values and 5 figures without a value are holes. 'but it seems to Ormond not credible' reads; the first run reads only in part. Not a new break of the key.",
+  "key_file": "identification/key_shifted.tsv",
+  "fraction_read_source": "identification/ledger.tsv: 20 figures; 10 with a value attested by a printed gloss or the p.498 plain rendering (read); 4 interpolated from the key's order (58 e, 54 a, 32 c, 440 le) and 1 from context (425 King) count as holes under the read bar; 5 figures have no value. Strict 10/20 = 50%. The contributor's figure, 15/20 = 75% given a value, counts the interpolated and context values.",
+  "codes_open": {
+   "open": 10,
+   "total": 20,
+   "tokens_open": 10
+  },
+  "texts": [
+   {
+    "doc": "A",
+    "label": "Ormond to Arran, 24 January 1677/8 (HMC n.s. iv p. 93)",
+    "transcription": "identification/transcription_b197.txt",
+    "decryption": "identification/decryption.txt",
+    "reading": "identification/reading.txt",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.5,
+    "summary": "Ormond, Lord Lieutenant at Dublin, writes to his son Arran in London about William Douglas, a Scottish preacher whose tale of a covenanting rising had come to nothing. Two names and a clause are in figures, set as a trial of Arran's skill in deciphering; the figures say that if Douglas is right someone and the King are in some danger or plot, 'but it seems to Ormond not credible'.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration check (AI agent)",
+     "date": "2026-11-13",
+     "note": "The second run reads as a clause that completes the clear words ('but it seems to Ormond not credible'); the first run reads only around its holes ('[726] and King are in a [700] [720]', with King from context). 10 of 20 figures attested."
+    }
+   }
+  ],
+  "fraction_read_method": "measured",
+  "provenance": "contributed"
  }
 }
