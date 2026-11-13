@@ -1,6 +1,6 @@
 # Inspectors' telegram, Tours 2 Nov 1870: working reading (13 Nov 2026)
 
-Status (second pass, 63% of groups valued): partial and unverified by a second source. Made by Claude from Pillon's transcription (`inspecteurs_2nov_partial.txt`),
+Status (third pass, 64% of groups valued, 23% marker groups with a working function): partial and unverified by a second source. Made by Claude from Pillon's transcription (`inspecteurs_2nov_partial.txt`),
 the values in `anchors_inspecteurs.json` and the machine gloss `inspecteurs_2nov_gloss.txt` (`interval_cands.py text`).
 Plain words are clear in the original. Words in *italics* are read from code groups. `[1234]` is a group not read,
 `[?word]` a guess, `(...)` a grammatical marker group not understood. Spelled names are in CAPITALS.
@@ -42,7 +42,7 @@ aurait eu impossibilité à *faire le bien qui a été fait* si les *deux servic
 qui pourra* mettre en *garde* [0420]s. De SAINT-GERMAIN [6301] tous *les jours, armés* de [0530] *et* de PIOCHE, 20 PRUSSIENS
 qui restent 48 *heures* et reviennent se *reposer* pour *repartir à* leur *tour*. On a *essayé* de les *faire* [0421] sans
 *succès*, mais en les *surveillant* on [3019] *a vu* se *diriger du côté du* [9620 3328 3824]. Cela ne [1617 ?colle / ?coïncide]-t-*il pas*
-avec la [3604 ?excavation] dont parlent les *journaux* AN-[4012 2716] ?
+avec la [3604] dont parlent les *journaux* AN-[4012 2716] ?
 
 6° Faites connaître à [0402 4712 0302] que ses [3021] par *ballon monté arrivent* bien. Faites savoir aux *conducteurs* de
 *ballons* en COT-ON qu'on les rend beaucoup plus *imperméables* par premier *enduit* de COL-LE forte et MÉL-ASSE ; laissez
@@ -61,8 +61,8 @@ J'envoie à *votre* [5308] ce que *vous désirez*.
 
 *Monsieur* LE-[9701]-E. *Bonnes nouvelles* de votre *famille* et de vos *amis*. LEG-O-F [?Le Goff] demande une *lettre de sa* FI-L-LE.
 Faites dire au *général* VIN?-[6124] que *madame* VIN?-[6124] *est* bien *portante* à Nantes, quai de la Fosse 25, et à
-*monsieur* [1114 5911 0131 0423] de [1206] ; au *général* T-RO-CHU que *madame* [1114 5911 0131] est en *bonne santé* à Rennes,
-quai de l'Université 2. Mille *remerciements à tous trois* de *vos* [1027 ?bons] [1709 0303] *et amis*. *Votre* *toujours dévoué*
+*monsieur* [1114 5911 0131 ?BRU-NE-T], *aide de camp* au *général* T-RO-CHU, que *madame* [1114 5911 0131] est en *bonne santé* à Rennes,
+quai de l'Université 2. Mille *remerciements à tous trois* de *vos bonnes communications et amis*. *Votre* *toujours dévoué*
 STEENACKERS.
 
 [4515] RIC-ARD à *monsieur* [7708 5825 9511]-D, chargé de [5215 9010], est constamment en ÉV-EIL en *étudiant la question*
@@ -100,7 +100,7 @@ do the good that has been done if the two services had not been with us [in] a s
 5. I am receiving a perfectly honourable person, [..], an inhabitant of Saint-Germain-en-Laye, come with a Prussian [pass?] to
 Pont-Audemer, who gives us information that may put [..] on guard. From Saint-Germain [..] every day, armed with [..] and
 pickaxes, 20 Prussians who stay 48 hours and come back to rest and set out again in their turn. An attempt was made to have them [..] without
-success, but by watching them they were seen heading towards [..]. Would this not tally with the [excavation?] the [English?]
+success, but by watching them they were seen heading towards [..]. Would this not tally with the [..] the [English?]
 newspapers speak of?
 
 6. Let [..] know that his [..] by manned balloon arrive well. Let the pilots of cotton balloons know that they are made much
@@ -115,7 +115,7 @@ Madame H[é]rold [..] very well, and the [..]. Tell [..] that success is almost 
 that this pleases the [members?] of the government. The [..] family in good health. I am sending to your [..] what you want.
 
 M. Le-...-e. Good news of your family and friends. [Le Goff?] asks for a letter from his daughter. Have General [Vinoy?] told that
-Madame [..] is well at Nantes, 25 quai de la Fosse, and M. [..] of [..]; General Trochu that Madame [..] is in good health at
-Rennes, 2 quai de l'Université. A thousand thanks to all three of your good [..] and friends. Ever your devoted, Steenackers.
+Madame [..] is well at Nantes, 25 quai de la Fosse, and M. [Brunet?], aide-de-camp to General Trochu, that Madame [same name] is in good health at
+Rennes, 2 quai de l'Université. A thousand thanks to all three for your good communications and [friendship]. Ever your devoted, Steenackers.
 
 [..] Ricard to M. ...d, in charge of [..], is constantly on the alert, studying the question [..].

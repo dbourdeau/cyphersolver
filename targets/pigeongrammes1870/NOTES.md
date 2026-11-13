@@ -386,6 +386,12 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
   Still unread, by type: names (third addressee LE-V..-E, the Nantes and Rennes names, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516, the place 9620 3328 3824,
   prefect of 0903 2719); single words with several candidates (7126, 1516, 3921, 3601, 3604, 4423, 0703, 3408 2809, 3215, 6808, 6005 9029, 4125, 0702, 0420, 0421, 6301, 0530, 3019, 3021, 2704,
   5413 6421, 8122, 2329, 2705, 8517 5024, 5308, 1027, 4515, 5215 9010, 3927, 8319, 7122 3030 1502, 6714 4905); the marker groups.
+- Third pass (13 Nov): 236 values, no inversion. Occurrences: 485 of 754 valued (64%), 172 marker groups with a working function (23%; functions listed under "_markers" in
+  anchors_inspecteurs.json: brackets, paragraph end, plural, participles, imperfect, adjective and noun endings; 0113 = a / à in all 8 uses), 97 unread (13%, 86 distinct groups).
+  Correction of sense: "... et a M. [1114 5911 0131], AIDE DE CAMP (0423, 1206) au general Trochu, que Madame [same name] est en bonne sante a Rennes": the Rennes news is for an
+  aide-de-camp of Trochu, not for Trochu. The name fits BRU-NE-T (guess; a web search did not confirm a Brunet on Trochu's staff). 1027 = bonnes ("vos bonnes communications").
+  Withdrawn: 3604 = excavation (the clear word before it is "la", so the entry starts with a consonant; f.. such as fable is possible, which would put the start of F before 3604).
+  Candidates noted but not adopted: 6005 9029 0312 = notaire/notable + surintend-ant; 4423 = inertie/incurie; 8122 = reste; 4519 = installee; 2329/2705 = second forms of depeche/donner.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
 
 ## Wiki and engine (7 Nov 2026): start here
