@@ -1,0 +1,10 @@
+# Pentz/Guenther 1636 key v2 (b110). Frozen BEFORE reading any Guenther cipher other than the one run on image 48 (30 Jan / 9 Feb 1636), which is the TRAINING run for the changes below.
+# 24-letter alphabet abcdefghiklmnopqrstuwxyz.
+# Number ranges: table 1 letters 14-37; table 2 letters 38-61; table 3 letters in the same 14-37 range (told apart only by its index).
+# Index numbers (not letters): 62, 63, 64 -> table 1 follows. 13, 12, 11 -> table 2 follows. 10, 9, 8 -> table 3 follows.
+#   Source: b106 (62, 13); image 48 gloss "gesanten, an, Ewer, May, zu schiken" beside 64|ge 13|san 10|tenan 12|ewermay 62|zuschicken (64, 12, 10 by gloss); 63, 11, 9, 8 by analogy only [unverified].
+T1 a=37 b=36 c=35 d=34 e=33 f=32 g=31 h=30 i=29 k=14 l=15 m=16 n=17 o=18 p=19 q=20 r=21 s=22 t=23 u=24 w=25 x=26 y=27 z=28   # unchanged from b106
+T2 a=38 b=39 c=40 d=41 e=42 f=43 g=44 h=45 i=46 k=47 l=48 m=49 n=61 o=60 p=59 q=58 r=57 s=56 t=55 u=54 w=53 x=52 y=51 z=50
+#   b106 had a-i, n o r s u (p q t by rule). New: m=49, w=53, y=51 from the image-48 gloss (ewer may). k=47, l=48, x=52, z=50 by rule only [unverified].
+T3 t=19 e=35 n=25 a=29     # from the image-48 gloss (ten an) only. All other table-3 values unknown.
+# Codes not solved: 168, 226, 85 (Pentz); 229, 230 and the group 71.63.69.77.70.66 (Guenther, not covered by the gloss). Numbers 65-77: unknown (fourth table or codes).
