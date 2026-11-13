@@ -1,0 +1,55 @@
+name: Leads from an archive
+description: Ciphered documents you found while searching an archive, a portal or a volume. No solution needed; an empty search counts too.
+title: "Leads: <archive or series searched>"
+labels: [contribution, leads]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        What has not been searched yet is in [research/COVERAGE.md](https://github.com/dbourdeau/cyphersolver/blob/main/research/COVERAGE.md); every search made so far is in [research/README.md](https://github.com/dbourdeau/cyphersolver/blob/main/research/README.md).
+        To reserve an archive before you start, open this form with only the first field filled and add the finds later.
+  - type: input
+    id: searched
+    attributes:
+      label: Archive, portal or series searched
+      description: For example "Archivio di Stato di Genova, Archivio Segreto, Lettere Ministri Spagna 1590-1610" or "Kalliope, term Chiffre".
+    validations: {required: true}
+  - type: textarea
+    id: how
+    attributes:
+      label: How you searched
+      description: Search terms and date, or the volumes paged through (which images), or the reading-room visit. Say what you did not get to.
+    validations: {required: true}
+  - type: textarea
+    id: leads
+    attributes:
+      label: What you found
+      description: |
+        One block per item, as far as you have it. Write "nothing found" if the search was empty.
+        - archive, shelfmark, folio or image number, and a stable link
+        - date, sender, recipient, place, expected language
+        - what the archive's description says of the cipher (quote it)
+        - did you see the ciphertext? What is on the leaf: signs, letters or numbers, how much, any decipherment on it or with it
+        - how it can be seen: free online, behind a login, reading room only
+    validations: {required: true}
+  - type: textarea
+    id: prior
+    attributes:
+      label: Earlier decipherments checked
+      description: DECODE, Cryptiana (Tomokiyo), the printed edition or calendar, anything else, with what each showed. "Not checked" is a fine answer.
+  - type: textarea
+    id: keys
+    attributes:
+      label: Keys and cipher tables seen on the way (optional)
+      description: A key with no letters beside it is still useful; it may open letters held elsewhere.
+  - type: dropdown
+    id: claim
+    attributes:
+      label: Do you want to work on any of these yourself?
+      options:
+        - "No, anyone may take them"
+        - "Yes, hold them for me (say which below)"
+  - type: input
+    id: credit
+    attributes:
+      label: How to credit you
