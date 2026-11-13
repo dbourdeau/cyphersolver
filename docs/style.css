@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root{
-  --bg:#0c0f15; --bg2:#121724; --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06); --panel3:#090b10;
+  --bg:#14110c; --bg2:#1d1811; --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.06); --panel3:#0e0c08;
   --ink:#e9e4d8; --ink2:#c9c3b4; --muted:#8f8a7d; --head:#ffffff; --rule:rgba(233,228,216,.13);
   --gold:#d9ac52; --gold2:#f0cf86; --gold-ink:#1a1408; --red:#ff8d7e; --red-bg:rgba(255,141,126,.13);
   --blue:#7fb3ff; --blue-bg:rgba(127,179,255,.13); --green:#6fd39a; --green-bg:rgba(111,211,154,.13);
   --amber:#ecc25a; --amber-bg:rgba(236,194,90,.14); --grey-bg:rgba(255,255,255,.07); --violet:#b9a8ff; --violet-bg:rgba(180,160,255,.14);
-  --shadow:0 18px 50px rgba(0,0,0,.45); --navbg:rgba(12,15,21,.72);
-  --glow1:rgba(217,172,82,.12); --glow2:rgba(127,179,255,.10);
-  --serif:"Source Serif 4",Georgia,serif; --display:"Source Serif 4",Georgia,serif; --ui:"Source Serif 4",Georgia,serif; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --shadow:0 18px 50px rgba(0,0,0,.45); --navbg:rgba(20,17,12,.74);
+  --glow1:rgba(217,172,82,.12); --glow2:rgba(214,150,90,.08);
+  --serif:"Source Serif 4",Georgia,serif; --display:"Source Serif 4",Georgia,serif; --ui:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --maxw:980px; --radius:14px;
   color-scheme:dark;
 }
@@ -790,10 +790,10 @@ html.zv-lock{overflow:hidden}
 .zv-src{margin:0;padding:.35rem 1rem;font:0.8rem var(--ui);color:#8f8a7d;min-height:1.6em}
 .zv-err{padding:2rem;text-align:center;color:#ff8d7e}
 .zv-line{overflow:hidden;border-radius:3px;pointer-events:auto;
-  background:rgba(12,15,21,.34);border:1px solid rgba(240,207,134,.5);color:#fff7e2;text-shadow:0 0 3px #000,0 0 6px #000;padding:0 .3em;line-height:1.05;
+  background:rgba(20,17,12,.34);border:1px solid rgba(240,207,134,.5);color:#fff7e2;text-shadow:0 0 3px #000,0 0 6px #000;padding:0 .3em;line-height:1.05;
   font-family:var(--ui);white-space:nowrap;transition:opacity .25s,background .2s}
 .zv-line .in{display:flex;flex-direction:column;justify-content:center;height:100%;gap:.08em}
-.zv-line:hover{background:rgba(12,15,21,.82)}
+.zv-line:hover{background:rgba(20,17,12,.82)}
 .zv-line .gl{font-family:var(--period);color:#f0cf86;font-size:1.15em;text-overflow:ellipsis;overflow:hidden}
 .zv-line .t{text-overflow:ellipsis;overflow:hidden}
 .zv.zv-off .zv-line{opacity:0;pointer-events:none}
@@ -1614,11 +1614,11 @@ html.fs-lock{overflow:hidden}
 .scoreboard .sb-big b{font-size:clamp(1.6rem,3vw,2rem)}
 .scoreboard .sb-big span{font-size:.85rem}
 .scoreboard .sb-lede{font-size:.9rem;color:var(--muted);max-width:none;margin:0 0 .6rem}
-body:has(.ms-bg) .nav .sticker,body:has(.ms-bg) .hb-way .sticker{display:none}
+.nav .sticker,body:has(.ms-bg) .hb-way .sticker{display:none}   /* no stickers in the bar, on any page */
 body:has(.ms-bg) .hb-way{border-top:3px solid var(--gold)}
 body:has(.ms-bg) .cards.featured .card{box-shadow:0 14px 30px -22px rgba(0,0,0,.55)}
 @media (min-width:761px){
-  body:has(.ms-bg) main > h2,body:has(.ms-bg) main > section > h2{font-size:clamp(1.7rem,3vw,2.2rem)}
+  body:has(.ms-bg) main > h2,body:has(.ms-bg) main > section > h2,.duo > section > h2{font-size:clamp(1.7rem,3vw,2.2rem)}
   body:has(.ms-bg) main > h2{margin-top:3.6rem}
   body:has(.ms-bg) .hb-way{padding:1.4rem 1.4rem 1.3rem;gap:.55rem}
   body:has(.ms-bg) .hb-t b{font-size:2.6rem}
@@ -1650,3 +1650,61 @@ body:has(.ms-bg) .cards.featured .card{box-shadow:0 14px 30px -22px rgba(0,0,0,.
   .herostrip .herostats b{display:block;font-size:1.6rem;margin:0 0 .2rem}
   .herostrip .randbtn{display:none}
 }
+
+/* ---------------------------------------------------------------- 13 Nov 2026, second pass
+   Labels are set in the system sans (--ui, top of this file); text and headings stay in Source Serif.
+   A write-up's lead figure lies faintly under the right of its hero (.hero-ms, _build_site.py). On the home page the
+   catalogue and the contributors share a row (.duo), the browse lists become rows of chips, the findings' pictures
+   are toned to one paper colour, and the phone hero holds still while the cipher line changes. */
+.hero:has(> .hero-ms){isolation:isolate}
+.hero-ms{position:absolute;z-index:-1;top:0;bottom:0;right:0;width:min(52%,32rem);overflow:hidden;pointer-events:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent 12%,#000 68%,#000 84%,transparent 100%),linear-gradient(180deg,transparent 0,#000 16%,#000 70%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 12%,#000 68%,#000 84%,transparent 100%),linear-gradient(180deg,transparent 0,#000 16%,#000 70%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.hero-ms img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:var(--pos,center 30%);opacity:calc(.3 * var(--fd,1));filter:grayscale(1) contrast(1.15);mix-blend-mode:screen}
+:root[data-theme="light"] .hero-ms img{opacity:calc(.42 * var(--fl,1));filter:sepia(.55) contrast(1.1);mix-blend-mode:multiply}
+@media (max-width:760px){   /* on a phone: a band of the figure across the top of the hero */
+  .hero-ms{position:relative;z-index:0;top:auto;bottom:auto;right:auto;width:auto;height:6.2rem;margin:-2.6rem -1.2rem .9rem;
+    -webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 100%);mask-image:linear-gradient(180deg,#000 30%,transparent 100%)}
+}
+@media print{.hero-ms{display:none}}
+/* latest findings: every picture on the same paper */
+body:has(.ms-bg) ul.findings li[data-mirror] .fth{background:#cdbb92;border-radius:8px}
+body:has(.ms-bg) ul.findings li[data-mirror] .fth .sc{mix-blend-mode:multiply;filter:grayscale(1) contrast(1.3)}
+@media (min-width:761px){
+  body:has(.ms-bg) .br-grid{grid-template-columns:minmax(0,1fr);gap:.7rem}
+  body:has(.ms-bg) .br-col{display:grid;grid-template-columns:11.5rem minmax(0,1fr);align-items:baseline;gap:1rem}
+  body:has(.ms-bg) .br-col h3{margin:0;letter-spacing:.1em}
+  body:has(.ms-bg) .br-col ul{display:flex;flex-wrap:wrap;gap:.45rem;border-top:0}
+  body:has(.ms-bg) .br-col a{align-items:center;gap:.5rem;padding:.3rem .85rem;border:1px solid var(--rule);border-radius:999px;background:var(--panel)}
+  body:has(.ms-bg) .br-col a:hover{border-color:var(--gold)}
+}
+@media (min-width:1001px){
+  .duo{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:2.6rem;align-items:start}
+  .duo > section{margin-top:0;margin-bottom:0}
+  .duo > section > h2{margin-top:3.6rem;font-size:1.65rem}
+  .duo .cs-grid{grid-template-columns:minmax(0,1fr)}
+  .duo ul.list.cattop a{grid-template-columns:2.4rem minmax(0,1fr) auto;gap:.7rem}
+  .duo ul.list.cattop .yr{display:none}
+  .duo ul.list.cattop .t{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .duo .catq > p.muted{display:none}
+  .duo .cs-people li:nth-child(n+7){display:none}
+}
+@media (max-width:760px){
+  .ms-bg img{object-position:8% 60%;filter:sepia(.25) contrast(1.05) blur(1.5px)}
+  .ms-bg::after{background:linear-gradient(0deg,rgba(24,15,7,.97) 0%,rgba(24,15,7,.92) 60%,rgba(24,15,7,.8) 100%)}
+  .hero:has(.ms-bg) .cipherstrip{height:4.8rem;min-height:0}
+}
+
+/* ---------------------------------------------------------------- 13 Nov 2026, third pass
+   The dark theme is a warm ink, like the manuscript heroes (tokens at the top). The sections rail shows from 1340 px,
+   narrower, where it used to wait for 1500. A write-up's dateline, method and credits close its hero under a rule. */
+@media (min-width:1340px) and (max-width:1499px){
+  .secnav{right:.9rem;top:5.5rem;bottom:auto;width:calc(50vw - 490px - 1.9rem);visibility:hidden;opacity:0;transition:opacity .2s}
+  .secnav.past{visibility:visible;opacity:1}
+  .secnav .secbtn,.secnav.past .secbtn{display:none}
+  .seclist{display:block;position:static;width:auto;max-height:calc(100vh - 7rem);background:none;border:0;box-shadow:none;padding:0}
+  .seclist a{font-size:.78rem;padding:.3rem .5rem}
+  .seclist .sechead{font-size:.7rem}
+}
+.hero:has(> .meta + .outcome) > .meta,.hero:has(> .hero-ms) > .meta{margin-top:1.3rem;padding-top:.9rem;border-top:1px solid var(--rule);max-width:46rem}

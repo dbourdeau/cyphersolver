@@ -107,7 +107,8 @@ body.pg-catalogue .pill.unf{color:var(--muted,#888);border-color:currentColor;bo
 body.pg-catalogue [hidden]{display:none !important}
 body.pg-catalogue #list,body.pg-catalogue #where,body.pg-catalogue #about,body.pg-catalogue #gone{scroll-margin-top:4.6rem}
 body.pg-catalogue .stand{margin:1.5rem 0 0}
-body.pg-catalogue .tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem}
+body.pg-catalogue .tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem;align-items:stretch}
+body.pg-catalogue a.tile{align-items:flex-start;align-self:stretch;margin:0;text-align:left}   /* five even tiles: .tile elsewhere centres its content */
 body.pg-catalogue a.tile{display:flex;flex-direction:column;gap:.1rem;padding:.7rem .9rem .75rem;border:1px solid var(--rule);border-radius:var(--radius);background:var(--panel);color:var(--ink2);text-decoration:none;transition:border-color .15s,background .15s}
 body.pg-catalogue a.tile::after{display:none}
 body.pg-catalogue a.tile:hover{border-color:var(--gold);background:var(--panel2)}
