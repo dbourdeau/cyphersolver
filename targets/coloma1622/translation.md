@@ -1,6 +1,6 @@
 # coloma1622 - English translation (working translation of reading.md)
 
-Read in part: 82.9% of the cipher words by the project's count of 12 Nov 2026 (restored words and code words placed by the sense not counted; 86.2% by the same rule on the table of 13 Nov, contributor's recount); 92.4% on the contributor's count of certain + probable (13 Nov 2026). `{x}` = probable word, `[x]` = restored word, `[…]` = unresolved; *italic* = clear in the manuscript.
+Read in part: 82.2% of the cipher words by the project's count (sure words only, 13 Nov 2026: probable, restored and unresolved words are holes); 92.4% on the contributor's count of certain + probable (13 Nov 2026). `{x}` = probable word, `[x]` = restored word, `[…]` = unresolved; *italic* = clear in the manuscript.
 
 *[…] of the proposals the King has made to the Duke of Savoy, which were:* the settlement and restitution of the Valtellina;
 the advantages that would follow from it for this King and his allies, {offering him} his assistance in case no settlement

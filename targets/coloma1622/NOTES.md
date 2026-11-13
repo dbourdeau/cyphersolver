@@ -1,6 +1,6 @@
 # coloma1622: the Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622 (BNE RES/227/122; catalogue 1601)
 
-Status: read in part (Brice Dudout, 13 Nov 2026; 349 of 421 cipher words = 82.9% by the README read bar at the integration of 12 Nov, 363/421 = 86.2% by the same rule on the table of 13 Nov (contributor's recount, to be checked); the word table has 347 certain, 42 probable, 28 restored, 4 unresolved, and the contributor's count of certain + probable is 389 = 92.4%; key partial by the contributor's protocol, two of four measurements failed: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears). See the integration check of 12 Nov 2026.
+Status: read in part (Brice Dudout, 13 Nov 2026; **346 of 421 cipher words sure = 82.2%** at the integration of 13 Nov, counting sure words only: the certain words of the word table except 'casa' (code _60_ placed by the sense); probable, restored and unresolved words are holes. The word table has 347 certain, 42 probable, 28 restored, 4 unresolved; the contributor's count of certain + probable is 389 = 92.4%. Key partial by the contributor's protocol, two of four measurements failed: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears). See the integration checks of 12 and 13 Nov 2026.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents (and, on 11 Nov 2026, one text-only Claude Fable 5.2 run). Catalogue entry 1601 (Chrome pass, BNE Digital).
 The key comes from the Duke of Feria's letters to Coloma (lead 1602), whose cipher passages carry a contemporary clear in the
@@ -40,9 +40,9 @@ Thresholds fixed in advance: >= 0.85 and >= 0.30 above the best control. **Parti
 | 11 Nov 2026 (PR #417) | 421 | 337 | 47 | 31 | 6 | 384 = 91.2% | 415 = 98.6% |
 | 13 Nov 2026 (this version) | 421 | 347 | 42 | 28 | 4 | 389 = 92.4% | 417 = 99.0% |
 
-The last two columns are the contributor's count. **By the README read bar the share is 349/421 = 82.9%** (348/425 = 81.9% on
-the 5 Nov version): 34 of the 47 probable words and one certain word are not counted, as set out in the integration check of
-12 Nov 2026 below.
+The last two columns are the contributor's count. **Counting sure words only, the share is 346/421 = 82.2%** (13 Nov table;
+integration check of 13 Nov below). The figure of 12 Nov, 349/421 = 82.9%, was taken by a looser rule that also counted 13 probable
+words read with the key (integration check of 12 Nov below); it is kept there as history.
 
 **Read in part** (`reading_review` grade B). 5 Nov: a blind shape sheet of 16 questions (M16, pre-registered and hashed
 before it was built, shapes only), answered by Brice Dudout, confirmed the transcribed token in eight places and moved
@@ -91,7 +91,7 @@ describes Richelieu: "although he is not of this King's Council, it is he who go
 
 - 4 unresolved words (bo, code 2, "[ge]ia", "z cer zan") - blocker: open-codes; one place each, in no clear we have (39 resolved 13 Nov).
 - 21 probable words that are code values placed by the sense (caso, casos, empresa, Reina, Duque, estado, govierna, confianza; and the 11 Nov proposals trata, trataba, Cristianísimo, cristianos, allanar, allanado; nuestro señor, buena, buenos, capitulaciones and fuertes are held by clears since 13 Nov) - blocker: open-codes; not counted as read; a contemporary clear with these codes would settle them.
-- the BNE images and the clear of MSS/18428 fol. 31 were not seen by the project at this integration - blocker: needs-physical-access; BNE Digital answers 403 (Cloudflare) to a plain fetch and no browser session was available on 12 Nov 2026; the blind sheets, their rules, maps and answers are not in the repository, so the hashes and "rule hashed first" are by the contributor's record.
+- the BNE images, the clear of MSS/18428 fol. 31, the clears of MSS/18428 aligned on 13 Nov (v5 d - v7 d, v33 g, v39 d - v40 g) and the raised sign on the two 34 of the letter were not seen by the project - blocker: needs-physical-access; BNE Digital answers 403 (Cloudflare) to a plain fetch (again on 13 Nov 2026) and no browser session was available at either integration; the blind sheets, their rules, maps and answers are not in the repository, so the hashes and "rule hashed first" are by the contributor's record.
 - 28 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53 twice, K, 68, 81, 139, 317, R, 62, L/54/y) - blocker: open-codes; none of these codes occurs in the clears of RES/227/120-129 or MSS/18428 (all seven cipher letters of MSS/18428 now aligned, 13 Nov); a new letter of the system with a contemporary clear is needed.
 - The marked signs q̲, x̤ and those seen on FL2-C (4‡ = g since 13 Nov) (barred 0, xo with a v above, o with a cross, "fov") - blocker: open-codes; no value in any key or clear we have.
 
@@ -134,6 +134,32 @@ Still under 95% (400 words needed, 11 more). Nothing in the clears of RES/227/12
 bo, ge, "z cer zan", 127, _40_, 264, _K_, _R_, _68_, _81_, _139_, 317, _35_, _62_, L/54/y, 48, _52_, _30_, _60_, _123_, _A_/_L_,
 204, 250, _79_, _138_, q̲, x̤. The one cipher letter of the system in MSS/18428 without a clear (v13 d - v15 g, about 35-40 lines)
 cannot settle a code value; it is the only passage of the system never decoded, so it is kept for a future lexical test.
+
+## Integration check (13 Nov 2026, PR #543)
+
+- **Counts reproduce.** The word table of `reading.md` (426 rows, multi-word rows counted as words) gives 421 words = 347
+  certain, 42 probable, 28 restored, 4 unresolved. Against the table of 12 Nov exactly 13 rows change: 39 bien (unresolved ->
+  certain), hizo and grande (restored -> probable), the two "308 34ʳ" nuestro señor (probable -> certain; the following
+  certain "bien" becomes "en", same count), viene (unresolved -> probable), buena, buenos, capitulaciones twice, fuertes
+  (probable -> certain), havia (restored -> probable). 337 + 1 + 4 + 2 + 2 + 1 = 347.
+- **Second decoder.** Written from `key.tsv` plus the values the reading now takes from clears (_39_ BIEN, 4‡ g; the que
+  ligatures; 141 ELLO): it reproduces the values column of `decryption.txt` on 414 of 423 rows; the other 9 are notation
+  only (img: prefix, A>B re-readings, 141 written as a code). So `decryption.txt` is no longer the mechanical output of
+  `key.tsv` alone: _39_ = BIEN and 4‡ = g are not rows of the key, and the clears give 308 = NUESTRO (nuestros enemigos,
+  nuestras armas) where the key row has NUESTRO SEÑOR. The key rows stay C04 by design; the key header now lists these.
+- **Alignments.** The clear passages as transcribed in the 13 Nov table decode with the key rows consistently where the key
+  has values (car x̣ _49_ 30 sor fri 93 = ra·?·BUEN·a·co·gi·da "buena acogida"; 78 98 69 xar as f 225 san car 78 =
+  la·ca·u·sa·ma·s·FUERTE·pa·ra·la; xer 66 60 40 = se·u·i·a "se veia"). The clears themselves were not seen (BNE Digital 403
+  on 13 Nov 2026; no browser session), so the alignments and the raised sign on the two 34 are by the contributor's record.
+- **Learning only.** No held-out passage is left in MSS/18428; nothing was measured; the key's test record is unchanged.
+- **Strict count: 346/421 = 82.2%.** Sure words only (the owner's rule of 13 Nov for all targets): the 347 certain words except
+  "casa" (code _60_ = CAS, placed by the sense, as on 12 Nov). The contributor's "363/421 = 86.2% by the README rule" is the
+  looser rule of the 12 Nov integration (which also counted 9 probable words read with the key through a spelling or doubtful
+  token and the 4 FS1 words) plus 14 words: the 10 moved to certain and 4 that stay probable (hizo and grande rest on 60 = i at
+  one place and on a shape of 4‡ compared by the agent, not blind; havia on the raised sign seen by the agent; viene on code 39
+  used for its letters). Under the strict rule the 13 earlier probable words and those 4 are holes. Not used.
+- `_check_reading.py` on the 13 Nov files: 81 of 251 sentences clean, 0.323 (the notes added to `reading.md` add sentences; 72 of 206 on 12 Nov).
+- Still under 95% (400 sure words needed, 54 more). The open codes and signs are as listed in the section of 13 Nov above.
 
 ## Integration check (12 Nov 2026)
 

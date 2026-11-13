@@ -162,6 +162,15 @@
    ],
    "what": "Every cipher passage of BNE MSS/18428 with a contemporary clear aligned with it (clear copies v33 g and v39 d - v40 g; margin clears v5 d, v6 g, v6 d, v7 d, v41 d), learning only, no measurement (no held-out passage left): 39 = BIEN, 4‡ = g, 60 = i, _49_ = BUEN, _56_ = CAPITULA, 225 = FUERTE, 308 = NUESTRO and 308 34ʳ = nuestro señor held by clears; the two 34 of the letter re-read 34ʳ on the image. 421 words: 347 certain, 42 probable, 28 restored, 4 unresolved (389 = 92.4%); by the README read bar 363/421 = 86.2% (contributor's recount). Key file unchanged (C04).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration of PR #543: the word table gives 421 = 347 / 42 / 28 / 4 and differs from 12 Nov in exactly 13 rows; a second decoder from key.tsv plus _39_ BIEN and 4‡ g reproduces decryption.txt on 414 of 423 rows (9 notation only); the clear passages of MSS/18428 as transcribed decode consistently with the key rows; the BNE images and clears were not seen (BNE Digital 403, 13 Nov). Strict count, sure words only: 346/421 = 82.2% (the contributor's 363/421 is the looser 12 Nov rule plus four words that stay probable: hizo, grande, havia, viene). Learning only, nothing measured.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -173,9 +182,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.862,
+  "fraction_read": 0.822,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Word table of reading.md, which covers the transcription in order: 421 words, 347 certain, 42 probable, 28 restored, 4 unresolved (13 Nov 2026). By the README read bar, the rule of the integration recount of 12 Nov 2026 applied by the contributor to the table of 13 Nov: 363/421 = 86.2% (349 at the integration + 14 words now held by contemporary clears of MSS/18428 or re-read: bien, viene, nuestro señor twice = 4 words, buena, buenos, capitulaciones twice, fuertes, grande, hizo, havia; see NOTES.md, section 13 Nov 2026). Still not counted: the unresolved and restored words, the 21 probable words that are code values placed by the sense, 'ofreciéndole' and the 3 xe words. The contributor's count of certain + probable: 389/421 = 92.4% (384 on 11 Nov, 375/425 on 5 Nov).",
+  "fraction_read_source": "Word table of reading.md, which covers the transcription in order: 421 words, 347 certain, 42 probable, 28 restored, 4 unresolved (13 Nov 2026). Sure words only (integration of 13 Nov 2026): 346/421 = 82.2%, the certain words except 'casa' (code _60_ placed by the sense); probable, restored and unresolved words are holes. The contributor's count of certain + probable: 389/421 = 92.4% (384 on 11 Nov, 375/425 on 5 Nov); his recount by the looser rule of the 12 Nov integration (349/421 = 82.9%, which also counted 13 probable words read with the key): 363/421 = 86.2%.",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -198,7 +207,7 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by his protocol, two of four measurements failed), letter read in part and translated (PR #279); two values from the clear of MSS/18428 fol. 31, code-value proposals and the blind shape sheets FL2-C and FS1, which he answered (PR #417, https://github.com/dbourdeau/cyphersolver/pull/417). By the project's read bar 349/421 = 82.9%; 384/421 = 91.2% on his count; 13 Nov 2026: the other clears of MSS/18428 aligned, 92.4% on his count, 86.2% by the read bar (his recount)",
+    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by his protocol, two of four measurements failed), letter read in part and translated (PR #279); two values from the clear of MSS/18428 fol. 31, code-value proposals and the blind shape sheets FL2-C and FS1, which he answered (PR #417, https://github.com/dbourdeau/cyphersolver/pull/417). 13 Nov 2026 (PR #543): the other clears of MSS/18428 aligned (39 = BIEN, 4‡ = g, 308 NUESTRO, 34ʳ SR ...); 346/421 = 82.2% sure words only, 92.4% on his count of certain + probable",
     "date": "2026-11-13"
    },
    {
@@ -245,13 +254,13 @@
     "translation": "translation.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.862,
+    "read_share": 0.822,
     "summary": "Louis XIII's proposals to the Duke of Savoy (Valtellina, help in case of rupture, Geneva), the French answer and the Duke's return from Avignon; Mirabel's talk with the Queen Mother on the deposit of the Valtellina forts, a Lorraine garrison and the capitulations of Aranjuez, the Catholic religion to be kept there; Richelieu, not of the King's Council, governs the Queen Mother.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout); re-read at integration for the project",
      "date": "2026-11-13",
-     "note": "Read again as sentences 11 Nov 2026 by one AI reader after the blind sheets FL2-C and FS1 (Brice Dudout answered the shape sheets only; FS1 position bias declared, answers confirmed by shape). The letter construes as Spanish sentences throughout, with gaps: 337 certain, 47 probable, 31 restored, 6 unresolved of 421 words (91.2%), so read in part. Most new code values are machine proposals by sense and key order (restored at one place). Integration of PR #417 (12 Nov 2026): the normalised text read clause by clause against decryption.txt and translation.md; it construes where unmarked and the translation follows; 'Cristianos no resolvió' gives no clear sense. By the read bar 349/421 = 82.9% (code values placed by the sense not counted); grade kept at B. 13 Nov 2026 (contributor): the normalised text re-read after the changes from the clears of MSS/18428 ('o bien', 'viene', 'hizo grande instancia', 'el Rey nuestro señor, en que esperaba', 'nuestro señor había dudado'); 347 certain, 42 probable, 28 restored, 4 unresolved (92.4%); still read in part; grade B kept."
+     "note": "Read again as sentences 11 Nov 2026 by one AI reader after the blind sheets FL2-C and FS1 (Brice Dudout answered the shape sheets only; FS1 position bias declared, answers confirmed by shape). The letter construes as Spanish sentences throughout, with gaps: 337 certain, 47 probable, 31 restored, 6 unresolved of 421 words (91.2%), so read in part. Most new code values are machine proposals by sense and key order (restored at one place). Integration of PR #417 (12 Nov 2026): the normalised text read clause by clause against decryption.txt and translation.md; it construes where unmarked and the translation follows; 'Cristianos no resolvió' gives no clear sense. By the read bar 349/421 = 82.9% (code values placed by the sense not counted); grade kept at B. 13 Nov 2026 (contributor): the normalised text re-read after the changes from the clears of MSS/18428 ('o bien', 'viene', 'hizo grande instancia', 'el Rey nuestro señor, en que esperaba', 'nuestro señor había dudado'); 347 certain, 42 probable, 28 restored, 4 unresolved (92.4%); still read in part; grade B kept. Integration of PR #543 (13 Nov 2026): the changed rows re-read in context ('o bien en caso de rompimiento', 'el Rey nuestro señor, en que esperaba'); they construe; sure words only 346/421 = 82.2%."
     }
    }
   ],
