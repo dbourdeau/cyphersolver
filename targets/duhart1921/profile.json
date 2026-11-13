@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "DCXXI.3.231.1",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo DCXXI Archivo de Félix Díaz, DCXXI.3.231.1 (archivo no. 90934)",
    "date": "1921-08-29",
    "year": 1921,
@@ -134,10 +134,17 @@
    "kind": "verification",
    "what": "Independent blind review by an AI language-model agent separate from the solver: capitals copied from its own crops before reading the transcription (its list names 14 runs, R01-R06, R08, R09, R12-R17; its tally line says 12 of 17), 0 disagreements; check_marks.py re-run (passes), R01, R03, R12 and R14 decoded by hand with the same output, FROZEN.sha256 checked and the held-out result reproduced (11 of 16 runs exact, 252 of 260 letters). No correction raised. Dan's _check_reading.py on 13 Nov 2026: reading 0.686 (48 of 70 sentences), translation 0.806 (29 of 36).",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check by the repository: heldout.py (11 of 16 runs exact, 252 of 260 letters), check_marks.py and the frozen-key hash reproduced; own decode of R01, R03, R12, R14 identical; CEHM images 0001 and 0002 compared with the transcription (R01-R14, about 290 of the 325 letters, all agree). The expected forms were written after the decryption, so the held-out run is a consistency test. Class set to read in part: 50 of 57 words as typed (87.7%) by the strict rule.",
+   "result": "worked"
+  },
+  {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 257 tokens, 23 types, es-modern order 4: reading -2.861 per letter; random keys -7.859 (z 6.0); key annealed onto shuffled ciphertext best -3.885 (mean -4.066, z 11.1); annealer on the real text -3.002. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {
-  "class": "read",
+ "outcome": {"validation": {"date": "2026-11-13", "model": "es-modern", "file": "validation.tsv", "tokens": 257, "types": 23, "tokens_per_type": 11.17, "score": -2.861, "nulls": {"random keys": {"n": 200, "mean": -7.859, "sd": 0.827, "max": -5.707, "z": 6.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.066, "sd": 0.108, "max": -3.885, "z": 11.1, "p": 0.1429}}, "power": -3.002, "verdict": "pass", "notes": "claimed per-occurrence score -2.861; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -3.002"}, 
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Key read off one quoted English sentence by probable words (a short reciprocal swap), frozen, and applied to the 16 other runs, which decrypt to persons of the 1921 exile in New York (García Cuéllar, Calero, Esquivel Obregón, Martínez Carrillo, López Negrete, Garza Aldape, García Naranjo, Rubio Navarrete, Villar) and to Cantú, Lucio Blanco, Pablo González, Cándido Aguilar and Murguía, whom the contributor identifies as rebel chiefs of 1921. The clear text and the runs agree at every point (the same two men claim to have the capital on pp. 1 and 3).",
@@ -145,27 +152,25 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.877,
   "fraction_read_method": "measured",
-  "fraction_read_source": "All 17 runs (325 letters) of this letter deciphered; 57 cipher words, 50 verbatim, 7 repaired, 0 holes. The other 11 letters of catalogue entry 1445 use other systems and are not part of this target.",
-  "verification": [
-   "independent verification",
-   "matched control",
-   "historical consistency"
-  ],
+  "fraction_read_source": "Strict README rule: 50 of 57 cipher words read as typed (87.7%); the 7 words with a marked restored or replaced letter are not counted as read. The contributor's figure counts them as read (100%, 0 holes). The other 11 letters of catalogue entry 1445 use other systems and are not part of this target.",
+  "verification": ["independent verification", "matched control", "historical consistency", "statistical test"],
   "provenance": "contributed",
   "credits": [
    {
     "who": "lccompany",
     "role": "solution",
     "note": "key recovered from the quoted English sentence, frozen, tested on the 16 other runs; all runs deciphered and read",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #511 (dbourdeau/cyphersolver)"
    },
    {
     "who": "lccompany",
     "role": "transcription",
     "note": "17 runs, two passes, from the CEHM-Carso images",
-    "date": "2026-11-12"
+    "date": "2026-11-12",
+    "source": "PR #511 (dbourdeau/cyphersolver)"
    }
   ],
   "texts": [
@@ -179,18 +184,26 @@
     "language": "es",
     "state": "not prose",
     "summary": "Duhart reports on the New York juntas: General Samuel (García) Cuéllar, Manuel Calero, Toribio Esquivel Obregón and Rafael Martínez Carrillo met; Cuéllar, 'managed' by López Negrete, claimed to have the capital and wanted sole direction, and the other three withdrew; Garza Aldape tried to reconcile them and García Naranjo was brought in. Duhart's telegram phrase was 'excluyendo actual representante', and a financier told him: 'If this man has anything to do with this matter I won't recommend to put a damn nickel.' The man in question is said to be in talks with Cantú and Lucio Blanco, who are said to be in league with Pablo González, Cándido Aguilar and Murguía.",
-    "note": "Not prose: 17 runs set into a letter in clear Spanish, 16 of them names or a three-word phrase; R12 is one whole English sentence (18 words, all verbatim). Each run is given in its clear Spanish sentence with an English translation. Words: 57 cipher words, 50 verbatim from the signs (87.7%), 7 with a marked repair (encipherer slips: ESQU{+I}VEL, OBR{+E}GON, ALDAP{R/E}, ALD{N/A}PE, NE{A/G}RETE, GA{E/R}CI{G/A}, NARA{+N}JO), 0 from a gloss, 0 holes.",
+    "note": "Not prose: 17 runs set into a letter in clear Spanish, 16 of them names or a three-word phrase; R12 is one whole English sentence (18 words, all verbatim). Each run is given in its clear Spanish sentence with an English translation. Words: 57 cipher words, 50 verbatim from the signs (87.7%), 7 with a marked repair (encipherer slips: ESQU{+I}VEL, OBR{+E}GON, ALDAP{R/E}, ALD{N/A}PE, NE{A/G}RETE, GA{E/R}CI{G/A}, NARA{+N}JO), 0 from a gloss; by the README rule the 7 repaired words are not read as typed, so the share is 87.7% (the contributor counts 100%).",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-13",
      "note": "Each of the 17 runs reads as a name or phrase in its clear Spanish sentence: 8 of 8 context sentences without holes, the 7 repairs all marked encipherer slips. The capitals the reviewer copied blind from crops agree letter for letter with the transcription."
-    }
+    },
+    "read_share": 0.877
    }
   ],
   "key_file": [
    "key.tsv",
    "key_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "the 7 repaired words: ESQU{+I}VEL, OBR{+E}GON, ALDAP{R/E}, ALD{N/A}PE, NE{A/G}RETE, GA{E/R}CI{G/A}, NARA{+N}JO",
+    "blocker": "illegible",
+    "detail": "Encipherer slips (a plain letter typed where its partner was due, or a letter left out): the signs themselves are wrong, so no key can read them as typed. Each name occurs correctly elsewhere in the letter."
+   }
   ]
  }
 }

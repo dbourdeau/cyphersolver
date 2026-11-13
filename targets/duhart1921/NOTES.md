@@ -2,6 +2,8 @@
 
 WAINUT, 12 Nov 2026. Work by AI language-model agents for WAINUT; no human palaeographer checked the text.
 
+Read in part, 13 Nov 2026: all 17 runs decrypt, 50 of 57 cipher words are read as typed (87.7%), seven carry an encipherer's slip. Written up on the site (duhart1921.html) at the integration of PR #511.
+
 ## Document
 
 - CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo DCXXI Archivo de Félix Díaz,
@@ -56,7 +58,7 @@ who claims the capital and the man who "manages" him) return as R15 and R16 on p
 `translation_DCXXI.3.231.1.md` (English). `scripts/check_marks.py` rebuilds `decryption_DCXXI.3.231.1.txt`
 from the transcription and the frozen key and fails on any unmarked departure: it passes.
 
-Words: **57 cipher words: 50 verbatim from the signs (87.7%), 7 with a marked repair, 0 from a gloss, 0 holes.**
+Words: **57 cipher words: 50 verbatim from the signs (87.7%), 7 with a marked repair, 0 from a gloss, 0 holes.** By the README read bar a word with a restored or replaced letter is not read as typed, so 87.7% is the share; the contributor's own figure counts the seven repaired words as read (100%, no holes).
 Repairs: ESQU{+I}VEL, OBR{+E}GON (R03), ALDAP{R/E} (R06), ALD{N/A}PE (R08), NE{A/G}RETE (R16),
 GA{E/R}CI{G/A} and NARA{+N}JO (R17).
 
@@ -66,7 +68,7 @@ decryption is unspaced names, which the period word lists do not know; the readi
 name lists and modern unaccented Spanish words such as "telefono", "Ud", "concurri").
 
 State proposed: **not prose** (as in ralamb1657 image 104/114: short runs set into a clear letter). All runs are
-deciphered and R12 is a whole English sentence read verbatim.
+deciphered and R12 is a whole English sentence read verbatim. Class at the integration: **read in part** (see Integration check).
 
 Persons named. The runs give names as written; the identifications below are the contributor's, from those names
 and the 1921 exile in New York, and the first names in brackets are not in the letter:
@@ -104,20 +106,45 @@ reading A. It raised no correction to the transcription or the reading.
 
 ## Remaining gaps
 
-- Independent blind review (13 Nov 2026, an AI language-model agent separate from the solver, see the section
-  below): the runs it copied blind from crops agree letter for letter with the transcription; R07, R10 and R11 were
-  not in its spot-check. No human palaeographer has checked the text.
+- The seven repaired words (ESQUIVEL, OBREGON, ALDAPE twice, NEGRETE, GARCIA, NARANJO) - blocker: illegible; the typist's signs are wrong or a sign is missing (an encipherer slip: a plain letter typed where its partner was due, or a letter left out), so no key reads them as typed; each name occurs correctly elsewhere in the letter.
+
+## Limits of the check (not gaps in the reading)
+
+- Independent blind review (13 Nov 2026, an AI language-model agent separate from the solver): the runs it copied blind
+  from crops agree letter for letter with the transcription; R07, R10 and R11 were not in its spot-check. No human
+  palaeographer has checked the text.
 - The held-out expected forms (`expected.tsv`) were written after the decryption, so the held-out figure is a
   consistency test (the reviewer repeated this caveat).
-- Identifications of persons are the contributor's, by surname and context. The letter gives first names only
-  for Samuel, Manuel, Toribio, Rafael, Lucio, Pablo and Cándido; other first names above are bracketed and marked
-  "probably".
+- Identifications of persons are the contributor's, by surname and context. The letter gives first names only for
+  Samuel, Manuel, Toribio, Rafael, Lucio, Pablo and Cándido; the other first names are bracketed and marked "probably".
 - Who "this man" / the "actual representante" is is not said in clear in this letter.
-- The other 11 letters of catalogue entry 1445 are not in this target. Seen at contact-sheet size on 12 Nov 2026:
-  Mina (3.263.1, 3.278.1) use groups of numbers and letters (e.g. 35-33-15-16-6-3-07-Z), Amaya (3.242.1) two-digit
-  numbers with a few pencil letters written over them; neither is this letter swap. DCXXI.3.323.1 (Sánchez) is
-  target sanchez1922 (key 313). Not worked: DCXXI.3.256.2 (same family as Mina), 3.301.2 and 5.514.1 ("Ch.",
-  two-digit numbers), 5.474.2 (Lozano, two-digit numbers with pencil names in the margin), 3.288.1 (Suárez, cipher
-  not located at contact-sheet size), 6.576.1 and 7.656.1 (not viewed beyond download).
-- The companion records DCXXI.3.231.1-2 (Gutiérrez's reply) and 3.231.2-2 (a letter in clear jargon, "bonita
-  mañana", "felitus") were not worked.
+- The other 11 letters of catalogue entry 1445 are not in this target (other systems, listed below; the catalogue entry
+  stays, narrowed). Seen at contact-sheet size on 12 Nov 2026: Mina (3.263.1, 3.278.1) use groups of numbers and letters
+  (e.g. 35-33-15-16-6-3-07-Z), Amaya (3.242.1) two-digit numbers with a few pencil letters written over them; neither is
+  this letter swap. DCXXI.3.323.1 (Sánchez) is target sanchez1922 (key 313). Not worked: DCXXI.3.256.2 (same family as
+  Mina), 3.301.2 and 5.514.1 ("Ch.", two-digit numbers), 5.474.2 (Lozano, two-digit numbers with pencil names in the
+  margin), 3.288.1 (Suárez, cipher not located at contact-sheet size), 6.576.1 and 7.656.1 (not viewed beyond download).
+- The companion records DCXXI.3.231.1-2 (Gutiérrez's reply) and 3.231.2-2 (a letter in clear jargon, "bonita mañana",
+  "felitus") were not worked.
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session. Reproduced: `heldout.py` 11 of 16 runs exact, 252 of 260 letters (96.9%); `check_marks.py`
+passes (57 words, 50 verbatim, 7 repaired, 0 holes); the decryption file rebuilds identically; `key_frozen.tsv` matches
+`FROZEN.sha256`. Own decode of R01, R03, R12 and R14 from the five pairs gives the same text. Images DCXXI.3.231.1.0001 and
+.0002 fetched from the CEHM viewer (plain http, no host refused) and compared with the transcription: R01-R10 (p. 1) and
+R11-R14 (p. 2), about 290 of the 325 letters, all agree; p. 3 (R15-R17) was not compared by the integrating session. The held-out
+expected forms were written after the decryption (the contributor says so): a consistency test, not a prediction; the
+frozen file has no external timestamp, so the order of events is by the contributor's record. Class changed from read to
+**read in part**: seven of 57 words carry a restored or replaced letter and the README rule does not count them as read, so
+the strict share is 50 of 57 (87.7%); the contributor's 100% counts them. Not claimed: the identity of "Vicente
+Gutiérrez" or of the "actual representante" (the contributor's inference).
+
+## Escalation
+
+- [x] siblings: the 12 records of catalogue entry 1445 opened at contact-sheet size; the others use number or number-and-letter systems (Mina, Amaya) or are sanchez1922 (a different key, its own page)
+- [x] clear-pages: none on the pages; the clear Spanish names the same men as the runs
+- [x] known-keys: Narváez's two felicista systems (Argumedo's numbers, Wellington's 313) tried in the notes; neither fits a letter swap
+- [x] print: Narváez 2015 read in full; one web search on the persons; nothing on this letter
+- [n/a] key-rebuild: the key is complete (ten entries, five pairs); the seven repaired words are typing slips, not missing values
+- [x] retry: every run decoded again with the frozen key; the five misses are slips, as listed
