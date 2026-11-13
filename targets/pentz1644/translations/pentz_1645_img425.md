@@ -1,0 +1,2 @@
+# Translation: Pentz to the Chancellor, 1645 (cipher passages in capitals)
+"… Wrangel threatens this place …: WITH THE CONSENT OF THE [301: Archbishop of Bremen] I HAVE ORDERED A STRONG PARTY TO FALL UPON WRANGEL IN HIS QUARTERS; [560] GOOD SUCCESS …, especially since OUR MEN ‹…› [can lie] HIDDEN IN THE WOOD AND BY A SEPARATE [756] ROAD GET SAFELY AS FAR AS RENDSBURG. I remain, commending you to God …"
