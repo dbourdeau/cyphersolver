@@ -204,6 +204,12 @@
    "kind": "verification",
    "what": "Folder rebuild (b191): every script re-run on the folder's files; decodes, keys, counts, held-out checks and controls byte-identical to the stored outputs, except the 342R count (29 filed, 28 reproduced).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (PR #523, report R8_bremen): all scripts re-run with python3 -I (decodes, keys, held-out, counts, word-layer control byte-identical; shuffle seed 20261112 reproduced with a fresh Gutenberg 55171, md5 as asserted); own decoder from key.tsv gives the same 537L letters (106/158 v1, 122/158 v2); Rigsarkivet images 49059236 (537) and 49059110 (413) fetched: 145/145 tokens of the 12 main lines of 537L and all 18 glossed groups of 413 with their glosses agree; strictest held-out figure (unvalued as holes and mechanical) 342R 24/32 = 75.0%, 413 36/50 = 72.0%. Gap blocker corrected to not-attempted; target kept in progress (workable gaps).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -259,7 +265,7 @@
   "gaps": [
    {
     "item": "Signs of 537L with no value: 52 of 158 tokens under v1, 36 under v2 (holes.md section 2)",
-    "blocker": "no-key-material",
+    "blocker": "not-attempted",
     "detail": "most glossed pages of unit 262098 were not transcribed (336, 340, 342, 389, 391, 401, 411, 455, 481, 526 and others); transcribing them is the way to a bigger key"
    },
    {
@@ -303,6 +309,11 @@
    "gloss/KEY_HB_v1.tsv",
    "gloss/KEY_HB_v2.tsv"
   ],
-  "notes": "No docs/_validate.py run (repository scripts not run by the contributor). Filed below the contributor's own 65% line, at the contributor's direction, so the key and its tests are on record. Held-out key tests per page in NOTES.md and controls/heldout.txt."
+  "notes": "No docs/_validate.py run (repository scripts not run by the contributor). Filed below the contributor's own 65% line, at the contributor's direction, so the key and its tests are on record. Held-out key tests per page in NOTES.md and controls/heldout.txt.",
+  "codes_open": {
+   "open": 30,
+   "total": 70,
+   "tokens_open": 52
+  }
  }
 }

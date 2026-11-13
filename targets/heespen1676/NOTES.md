@@ -1,6 +1,8 @@
 # The Heespen/Baudissin code: Danish commissioners at Bremen, 1675-76 (Rigsarkivet unit 262098)
 
-Status: key rebuilt from contemporary glosses; the one bare passage read in part, far below our own 65% line.
+Status: in progress (integration check of 13 Nov 2026, PR #523: the gaps below are workable, chiefly the glossed pages of
+unit 262098 not yet transcribed into the key; folder only, no page and no ledger row). Contributor's status: key rebuilt from
+contemporary glosses; the one bare passage read in part, far below our own 65% line.
 Text state of 537L: **decoded, not read** (only short function words are read: 9/60 = 15.0%). Entry class: read in part.
 New entry: no catalogue row, lead or target covers RA 262098 or this code (row 602, the Oldenburg parallel relations, is
 related but not digitised). No claim of a first reading (see PRIOR_ART.md).
@@ -133,3 +135,59 @@ our own log times only.
 - `key.tsv`, `gloss/`: keys v1 and v2, gloss pairs, attestations by code.
 - `heldout/`: 342R and 413 transcriptions with glosses, decodes, judgement list.
 - `controls/`, `counts_raw.txt`, `holes.md`, `screening/`, `scripts/`, `timestamps/`, `PRIOR_ART.md`, `MANIFEST.sha256`.
+
+## Remaining gaps
+
+- Key too small for 537L: 52 of 158 tokens have no v1 value (36 under v2) - blocker: not-attempted; most glossed pages of unit 262098 (336, 340, 342, 389, 391, 401, 411, 455, 481, 526 and others) were not transcribed into gloss pairs, the key rests on images 96, 117, 118 (v1) plus 240, 241, 320 (v2). Transcribing them is the way to a bigger key. Workable, so the target stays in progress.
+- 537L has no blind second transcription - blocker: not-attempted; one reader, not blind. The integration check compared all 145 tokens of the 12 main lines with the image (below), so the transcription itself is sound.
+- No fresh bare text to test a bigger key on - blocker: no-key-material; 2,919 images screened in units 262098-262107, no other bare passage in this code; a bigger key can be tested only on further held-out glossed pages.
+- Oldenburg, NLA Best. 20-44 Nr. 8 (catalogue 602; parallel Klingenberg/Heespen relations with cipher) - blocker: needs-physical-access; not digitised, not seen.
+- Prior art not reached - blocker: not-attempted; HathiTrust and Google Books full text, the rest of Vejledende Arkivregistraturer XVI, Rigsarkivet's own key collections (a contemporary key may survive), the literature on the Bremen talks of 1675-76.
+
+## Escalation
+
+- [x] siblings: glossed relations in the same unit used as the key source (six images); the other glossed pages listed above
+  not yet used (open)
+- [ ] clear-pages: no clear copy of the 17 Apr 1676 passage looked for in the Copenhagen answer drafts or the Oldenburg file
+- [ ] known-keys: Rigsarkivet key collections not searched; checked here that the code is not klingenberg1675's (syllable
+  table 432-525; 477 = le, 457 = ge there against 477 = ge here), nor biermann1675 K55, petkum1665 (French syllabary) or
+  sehested1657 (no Heespen, Baudissin or 262098 in any of their files)
+- [ ] print: Aarsberetninger VI and Danske Magazin only
+- [x] key-rebuild: v1 and v2 from the glosses, frozen, held-out tests on 342R and 413; a v3 from the untranscribed glossed
+  pages is the next step (open)
+- [ ] retry: 537L to be decoded again with the bigger key (non-blind, since 537L has been seen; say so)
+
+## Integration check (13 Nov 2026, PR #523)
+
+Done by the integrating session after its own verification (report R8_bremen). The folder is merged as it came, with
+`Status: in progress` and no page, ledger row or catalogue change. This is a new entry: no catalogue row or lead covers
+RA 262098; it is not added to `catalogue.json` (a worked target, not a lead).
+
+- **Reproduction** (scripts read first, run with `python3 -I` on a scratch copy): both decodes, both key rebuilds
+  (`buildkey.py` v1 95 codes / 232 attestations, v2 121 codes / 119 valued / 359 attestations), `heldout.py`, `count.py` and
+  `word_control.py` (both seeds) are byte-identical to the stored outputs. The shuffle control needs Project Gutenberg 55171
+  (`controls/CORPUS.txt` is only a pointer); downloaded fresh, md5 f476bb74 as asserted, it reproduces seed 20261112 exactly
+  (true -4.4246, best -4.6888, 0 of 5,000). md5s of KEY_HB_v1 (5dad6d11), KEY_HB_v2 (374a472c), the 537L transcription
+  (a9c2ae41), 342R (bec93dca) and 413 (57b2af17) match.
+- **Own decoder** written from `key.tsv` (not importing theirs): 537L gives the same letters line for line under v1 and v2
+  (valued 106/158 and 122/158).
+- **Held out**: the gloss-pair files hold only images 96, 117, 118 (v1) and those plus 240, 241, 320 (v2); 342 and 413 are
+  absent, so both pages are held out from the key they test. The RFC 3161 tokens (Sectigo, 13 Nov 09:08:54 and 09:37:57 GMT)
+  match their manifests (imprints 650a82c9..., 6e41ed1b...) and all 47 files of the PR-folder manifest still hash the same;
+  they postdate the work, so the order of events (v1 frozen before 537L was seen) is by the contributor's record.
+- **Strictest held-out figure**: counting unvalued tokens as holes *and* the mechanical rule (the decode must spell the
+  gloss) together gives 342R 24/32 = 75.0% and 413 36/50 = 72.0%. The contributor's figures (filed 28/28 and 40/42;
+  unvalued as holes 28/32 and 40/50; mechanical 24/28 and 36/42) all reproduce.
+- **Images** (Rigsarkivet API, plain curl, HTTP 200): id 49059236 is image 537, Heespen's relation with the bare block on the
+  left page and clear text around it ("Ob und wie weit ... mit Ew. Königl. Mayt. allergnädigsten absehen und interesse
+  übereinkompt"); the correction of the id (49059234 in the frozen header) is right. All 145 tokens of the 12 main cipher
+  lines agree with the transcription (the doubtful 30/130 on line 1 noted as such by the contributor). Image 413 (id 49059110):
+  all 18 glossed groups and their glosses agree with `heldout/413_transcription_glosses.tsv` (den, übrigen, allijrten, das,
+  nachsehen, Cassen, Stade, außgehen, der, Feind, den, setzen, das gantze, also, auch, fürter, unter, alleiniger), which
+  checks key values 401 de, # n, 336 allijrten, 400 da, 330 als, 332 auch, 457 feind, 97 stade on the image.
+- **Reading**: 537L is decoded, not read (9/60 = 15.0%, function words only); `_check_reading.py` agrees ("decoded, not
+  read"). Entry class read in part; method key recovered from adjacent plaintext (same unit's glosses), as petkum1665.
+- **One key, one entry**: no other target uses this code (checked against klingenberg1675, biermann1675, petkum1665,
+  sehested1657).
+- **Correction**: the first gap in `profile.json` was marked `no-key-material`, but its own detail says the glossed pages
+  were not transcribed: changed to `not-attempted`. `outcome.codes_open` filled (key v1, 537L: 30 of 70 distinct signs, 52 of 158 tokens without a value; `holes.md` section 2).
