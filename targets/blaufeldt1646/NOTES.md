@@ -4,7 +4,7 @@ Contributed by WAINUT (lccompany), 12 Nov 2026. Work done by AI language-model a
 checked the text. A separate AI language-model agent that took no part in the solution reviewed it blind on 12 Nov
 2026 (see "Independent review" below).
 
-Status: read in part.
+Status: read in part (written up: docs/blaufeldt1646.html).
 
 ## Documents
 
@@ -174,3 +174,27 @@ count is unchanged (24 words, 15 verbatim); the reading checker's clean share fe
   as repairs
 - [x] retry: every doubtful group retried on 3x-4x crops by the solver and again blind by the reviewer (6x on L5);
   the groups listed above stay open and need a clean scan from SOA Zámrsk (not ordered)
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session after an independent verification (report R7_north). Contributed by WAINUT (PR #507).
+
+- `scripts/check_marks.py` re-run (decryption rebuilt identical; 24 cipher words, 15 verbatim, 6 repaired, 3 holes) and
+  `check_pairs.py` (72 of 72 held-out groups with a value). An own decoder written from `key_frozen.tsv` reproduces
+  `decryption_24854.txt` line by line.
+- **Strict share:** 15 of 24 cipher words (62.5%), already the contributor's own count (repairs from sense and holes are
+  not counted). By groups: of 123 groups, 6 have no value in any gloss (50 60 70 73 80 86), 8 are unread `?`, one is
+  doubtful (30?) and one clashes (23 where c is needed). Read in part. Key recorded as partial (six groups without a value).
+- **Image check, first time.** The appendix zip of Vlnas 2017 (14.5 MB) can be fetched by a script: request the thesis page
+  with a cookie jar (`curl -c jar -b jar https://theses.cz/id/p3p2kb/`), wait about 8 seconds, request it again (now the
+  real page), then `.../P_lohy_A_a_B.zip` with the same jar. Frame 24854.jpg (2200 x 1650) is lying on its side; rotated
+  clockwise by 90 degrees it reads. About 45 groups of lines 1-5 compared: all agree, except that the end of
+  *difficoltà* (30? in the transcription, 80 to the blind reader, 15 or 19 + 80 to the integrator) is not settled by the
+  image, and that the 86 of line 2 could as well be 56. The date line and the foot line were not compared again.
+- The key is its own: of 23 group numbers shared with the table of `frankenthal1646`, one gives the same letter (15 = e);
+  `piccolomini1646` shares no group number and `claudiamedici1646` one with a different value. One key, one entry holds; the
+  glossed siblings 24852 and 24853 are the key's sources here, not separate targets.
+- Order of events: the freezing of `key_frozen.tsv` before the held-out test and before 24854 was decrypted rests on the
+  contributor's record (one commit, file times).
+- Page `docs/blaufeldt1646.html` written from this file, cipher crop from frame 24854; portrait of the recipient from
+  Wikimedia Commons; the writer is unidentified, so no portrait.

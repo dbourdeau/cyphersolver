@@ -147,6 +147,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 109 tokens, 30 types, it-cinquecento order 4: reading -2.082 per letter; random keys -4.386 (z 4.9); key annealed onto shuffled ciphertext best -2.361 (mean -2.463, z 5.9); annealer on the real text -2.264. Verdict: weak.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): check_marks.py (decryption rebuilt identical; 24 cipher words, 15 verbatim, 6 repaired, 3 holes) and check_pairs.py (72 of 72 held-out groups) re-run; own decoder written from key_frozen.tsv reproduces decryption_24854.txt line by line. Strict count confirmed: 15 of 24 cipher words (62.5%), the contributor's own figure; read in part. The key shares no value with frankenthal1646 (1 of 23 shared group numbers agree), piccolomini1646 or claudiamedici1646. Transcription compared with the photograph for the first time by the integrating session: the appendix zip of Vlnas 2017 was fetched from theses.cz with a cookie jar (first request, wait, second request passes the proof-of-work page); about 45 groups of lines 1-5 agree, the end of difficolta (30?/80/15) and one 86/56 look-alike stay unsettled; the date line and the foot line were not compared. Order of the freeze rests on the contributor's record (one commit).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -181,9 +187,9 @@
    "notes": "claimed per-occurrence score -2.014; polyphony 0.009; 14 unread tokens left out; annealer on the real text from random keys reached -2.264"
   },
   "class": "read in part",
-  "key": "recovered",
+  "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "Key built from the contemporary interlinear decipherment of the sibling letter 24852 (same writer and cipher signature, February 1646), frozen and tested on the held-out glossed sibling 24853, then applied unchanged to the bare letter 24854.",
+  "method_basis": "Key built from the contemporary interlinear decipherment of the sibling letter 24852 (same writer and cipher signature, February 1646), frozen and tested on the held-out glossed sibling 24853, then applied unchanged to the bare letter 24854. The key is partial for this letter: six groups (50, 60, 70, 73, 80, 86) have no value in the glosses and carry the letter the sense needs.",
   "contribution": [
    "transcription",
    "key recovered"
@@ -288,6 +294,11 @@
     "blocker": "needs-physical-access",
     "detail": "One blind AI reviewer compared 68 of the 123 groups; no human palaeographer checked any sign. A clean scan of inv. 24852-24854 from SOA Zámrsk (not ordered) would settle most holes."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  }
  }
 }
