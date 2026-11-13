@@ -1,0 +1,48 @@
+Key of system Y, catalogue 1555 (capilupi1546)
+==============================================
+Source: KEY-1555.json, proposed by Claude Fable 5.2 (API), frozen unchanged 12 Nov 2026 20:56:15 CET,
+SHA-256 76ab7684...955e. Parse: longest code first (_parse = longest). Used unchanged for the gate,
+the single measure on 05r (MESURE-1555-H.txt) and decryption.txt.
+
+System: simple substitution, codes of 1 or 2 digits, no homophones, no nomenclator, no word division.
+
+Vowels (even digits alone)
+  0 = i     2 = o     4 = e     6 = a
+  (u is coded 51, below)
+
+Odd digits alone
+  1 = m     3 = n     5 = s     7 = r
+
+Two-digit codes
+  13 = z    15 = t    17 = l    19 = q
+  51 = u/v
+  29 = p    39 = h    49 = g    59 = f
+  69 = d    79 = c    89 = b
+
+Nulls
+  8 alone, 9 alone, and 31 (reads nothing)
+
+Doubled letters are written by repeating the code (77 rr, 1515 tt, 7979 cc).
+No code for j, k, w, x, y (j is written i, v is written u).
+
+Composite entries
+-----------------
+KEY-1555.json also lists about 2,000 entries of 3 to 7 digits. Most spell out the codes above so that the
+longest-match parse cuts ambiguous strings the intended way, for example:
+  7939 = ch    1951 = qu    513 = un    51315 = unt    17793 9 -> 177939 = lch
+  3115 = t     3179 = c     3139 = h    (31 null before a consonant code)
+Some entries are irregular as frozen and were left unchanged:
+  31 is null in 3115, 3117, 3119, 3139, 3151, 3159, 3179, but not in 3111 (nmmm) or 31151 (nmtm);
+  5131 = szm while 513 = un; 1931 = q, 3931 = h, 5931 = f, 7931 = c (31 dropped after a consonant).
+The full table is the frozen JSON.
+
+Open points
+-----------
+- Code 11 reads 'mm'. Five times 'mm' stands where t or l is needed: dargmmi = dargli (04r),
+  imperammor = imperator (05r), demmo = deto (05r, 06v), inmmender = intender (06r).
+  Either two signs of the cursive hand are confused in the transcription, or the key lacks a code.
+  To check on the images.
+- 'mignor' for 'signor' twice (06r, 06v): m where s is needed; possibly related.
+- The same system is used by Camillo Capilupi in c. 48 and c. 49r (targets/capilupi1545, WAINUT).
+  The key should apply there; it has not been applied.
+- System X (images 03r, 09r) is a different system; this key does not apply to it.
