@@ -196,5 +196,5 @@ Done by the integrating session after an independent verification (report R7_nor
   glossed siblings 24852 and 24853 are the key's sources here, not separate targets.
 - Order of events: the freezing of `key_frozen.tsv` before the held-out test and before 24854 was decrypted rests on the
   contributor's record (one commit, file times).
-- Page `docs/blaufeldt1646.html` written from this file, cipher crop from frame 24854; portrait of the recipient from
-  Wikimedia Commons; the writer is unidentified, so no portrait.
+- Page `docs/blaufeldt1646.html` written from this file, cipher crop from frame 24854; no portrait yet: a portrait of the recipient was found
+  (File:Piccolomini_5.jpg) but Wikimedia answered HTTP 429 (docs/_explore_skip.json); the writer is unidentified, so no portrait.
