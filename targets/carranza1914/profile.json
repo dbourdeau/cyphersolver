@@ -142,6 +142,22 @@
    ],
    "what": "Statistical validation (docs/_validate.py on validation.tsv, the mechanical values of the frozen key per group; scripts/validation_pairs.py): 227 read tokens, 41 types, es-modern order 4: reading -2.317 per letter; random keys mean -6.136, max -4.722 (z 7.3); key annealed onto shuffled ciphertext best -2.978 (mean -3.122, z 8.1); annealer on the real text -2.828. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Integration check (13 Nov 2026): own decoder from key_frozen.tsv (nothing imported) gives the same eight lines; scripts and docs/_validate.py re-run with the same figures (52 of 61 verbatim; z 7.3, pass); key_frozen.tsv equals targets/murguia1914/key_frozen.tsv (PR #513) line for line. The freezing order rests on the contributor's record (one commit). The reading names Saltillo, Villa, Coss, Eulalio Gutiérrez and San Luis.",
+   "result": "worked",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): CEHM image LXVIII-1.23.3165.1.0001 fetched over plain http (no refusal); runs C01-C03, C06 and C07 compared at full resolution, about 100 groups: every legible group agrees, the open figures are as transcribed (C06 g14 looks like an open 99). Strict share confirmed: 52 of 61 coded words verbatim (85.2%), read in part.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -253,6 +269,11 @@
    "power": -2.828,
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.317; polyphony 0.0; 8 unread tokens left out; annealer on the real text from random keys reached -2.828"
+  },
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
   }
  }
 }

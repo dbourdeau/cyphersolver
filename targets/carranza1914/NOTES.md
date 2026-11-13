@@ -127,3 +127,21 @@ Not a gap in the cipher: the sheet gives no date; probably May 1914 from the con
 `decryption_LXVIII-1.23.3165.1.txt`; `reading_LXVIII-1.23.3165.1.md`; `translation_LXVIII-1.23.3165.1.md`;
 `key_frozen.tsv` (copy from `targets/murguia1914/`); `validation.tsv`; `scripts/` (`validation_pairs.py`, `decrypt.py`, `check_marks.py`, `count_words.py`,
 `coded_only.py`, `reading_debug.py`; standard library only; run from this folder).
+
+## Integration check (13 Nov 2026)
+
+Done by the integrating session, not by the contributor. Reproduced: `scripts/check_marks.py` passes (8 runs, 10 marks);
+`scripts/decrypt.py` gives the same decryption (the file differs only by line endings); `scripts/count_words.py` gives 61
+coded words, 52 verbatim, 2 repaired, 7 guessed; `docs/_validate.py` gives the same figures (z 7.3, pass). An own decoder
+written from `key_frozen.tsv` (nothing of the contributor's scripts imported) gives the same eight lines. `key_frozen.tsv` equals
+`targets/murguia1914/key_frozen.tsv` of the Murguía pull request (#513) line for line apart from two comment lines. The CEHM
+image LXVIII-1.23.3165.1.0001 was fetched (plain http, no refusal) and runs C01 to C03, C06 and C07 were compared with the
+transcription at full resolution (about 100 groups): every legible group agrees; the open places are as transcribed (C06 g14
+looks like 99, que, with an open top, which is the contributor's guess). The strict share is the contributor's: 52 of 61
+coded words verbatim (85.2%); the 2 repaired and the 7 guessed words are not read. The order in which the key was frozen and this
+sheet decrypted rests on the contributor's record (one commit, no external timestamp); the test is nonetheless real because
+the key was built from another item and nothing on this sheet was used to fit it, and the decryption names Saltillo, Villa,
+Coss, Eulalio Gutiérrez and San Luis. Method: key recovered based on adjacent plaintext (the contemporary decipherment of
+LXVIII-1.14.1943.1, rebuilt in `targets/murguia1914/`), applied unchanged here; the key entry is `murguia1914`, this page is
+one more document read with it; `key: partial` because the key as a whole has only 60 of its cells valued. The date (probably
+May 1914) is the contributor's inference from the orders, not from the sheet.
