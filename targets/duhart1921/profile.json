@@ -1,0 +1,196 @@
+{
+ "schema_version": 1,
+ "target": "duhart1921",
+ "title": "Pedro Duhart, New York, to 'Vicente Gutiérrez' (identified as Félix Díaz), New Orleans, 29 August 1921 (catalogue 1445, CEHM-Carso DCXXI.3.231.1): the 17 cipher runs, a reciprocal five-pair letter swap, deciphered",
+ "documents": [
+  {
+   "id": "DCXXI.3.231.1",
+   "read": "read",
+   "shelfmark": "CEHM-Carso (Centro de Estudios de Historia de México, Fundación Carlos Slim), Fondo DCXXI Archivo de Félix Díaz, DCXXI.3.231.1 (archivo no. 90934)",
+   "date": "1921-08-29",
+   "year": 1921,
+   "country": "Mexico",
+   "route": "Pedro Duhart, New York -> 'Vicente Gutiérrez', 1433 Pleasant St., New Orleans (identified by the contributor as a cover name of Félix Díaz, from the greetings to 'Isabelita' and the subject; the letter does not name Díaz)",
+   "places": {
+    "from": "New York",
+    "to": "New Orleans"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment or gloss on the pages (a received stamp 'SEP 2 REC'D' only). The CEHM record says 'existen veintiún claves no descifradas que corresponden a personajes felicistas'."
+   },
+   "length": {
+    "tokens": 325,
+    "distinct": 26,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_DCXXI.3.231.1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM-Carso viewer images DCXXI.3.231.1.0001-0003.jpg (visor.cehm.org.mx, 1995 px wide)",
+    "image_quality": "good",
+    "notes": "Typewritten capitals. Two passes (full page, then fresh 2x crops) agree letter for letter on all 17 runs (325 letters). Two overstruck letters noted (R05 letter 8, an A over another letter; R07 letter 3). Independent blind check (13 Nov 2026, an AI language-model agent separate from the solver): the runs it copied from its own crops (its list names R01-R06, R08, R09, R12-R17; its tally line says 12 of 17) agree letter for letter, 0 disagreements; R07, R10 and R11 were not in its spot-check."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Clear Spanish letter with names, one telegram phrase and one quoted English sentence enciphered in capitals on the same typewriter. Five letter pairs are swapped both ways (A-G, E-R, I-S, L-O, P-U); every other letter stands for itself. Word spaces are dropped inside a name and kept in the phrase and the English sentence. The encipherer slips five times by typing the plain letter (or a wrong letter) where its partner was due, and leaves out three letters.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "partial",
+  "notes": "A reciprocal swap of five pairs; the other 16 letters seen (B C D F H J K M N Q T V W X Y Z) stand for themselves. How the pairs were chosen is not known. The system is not one of the two Narváez (2015) described for the same fondo (Argumedo's numbers A=34 ... Z=23; Wellington's Gronsfeld key 313)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "CEHM catalogue: 'claves no descifradas'. Narváez 2015 (Documenta & Instrumenta 13, pp. 107-132, read 12 Nov 2026) deciphers DCXXI.3.244.1, 3.250.2 and 6.588.1 only and does not mention Duhart or this letter. One web search (12 Nov 2026) on Duhart, Díaz, Garza Aldape, García Naranjo, Rubio Navarrete and the 1921 New York juntas found nothing on this letter.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "crib"
+  ],
+  "attack": "crib",
+  "human_role": "WAINUT set the task (catalogue 1445) and the rules; AI language-model agents transcribed, built and froze the key, ran the held-out test, read and checked. No target-specific human intervention. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM-Carso viewer images",
+   "scripts in this folder (fetch, crops, decryption, held-out test, mark check)"
+  ],
+  "models": [
+   "AI language-model agents (WAINUT), viewing the images"
+  ],
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Three page images fetched from visor.cehm.org.mx (plain http), one request at a time, 1.6 s apart, no login.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Sign conventions written first; 17 runs transcribed from the full pages and again from fresh 2x crops; the passes agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "crib",
+   "what": "Key read off run R12 alone, the English sentence Duhart quotes 'textually' from a financier (SF THSI MGN HGI GNYTHSNA = IF THIS MAN HAS ANYTHING), and frozen (key_frozen.tsv, FROZEN.sha256) before the other runs were decrypted.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out: the 16 other runs decrypted with the frozen key and compared with the names and phrase the clear text points to (expected.tsv): 11 of 16 runs exact, 252 of 260 letters (96.9%). The 5 misses are encipherer slips (a plain letter typed, or a letter left out), not key errors; the seven letters the key source did not show (B F J Q V X Z) all decrypt as themselves in the held-out runs. The expected forms were set down after the decryption, from the decryption and the clear text, so this tests consistency, not blind prediction.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Runs decrypted mechanically (scripts/decrypt.py) and read with every departure marked; scripts/check_marks.py rebuilds the decryption and passes. 57 cipher words: 50 verbatim, 7 repaired, 0 holes. Dan's _check_reading.py: reading file 0.676, translation 0.806, decryption 0.167 (the decryption is unspaced names, which the period word lists do not know).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Narváez 2015 read for the two felicista systems it describes; one web search on the persons and the letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Independent blind review by an AI language-model agent separate from the solver: capitals copied from its own crops before reading the transcription (its list names 14 runs, R01-R06, R08, R09, R12-R17; its tally line says 12 of 17), 0 disagreements; check_marks.py re-run (passes), R01, R03, R12 and R14 decoded by hand with the same output, FROZEN.sha256 checked and the held-out result reproduced (11 of 16 runs exact, 252 of 260 letters). No correction raised. Dan's _check_reading.py on 13 Nov 2026: reading 0.686 (48 of 70 sentences), translation 0.806 (29 of 36).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key read off one quoted English sentence by probable words (a short reciprocal swap), frozen, and applied to the 16 other runs, which decrypt to persons of the 1921 exile in New York (García Cuéllar, Calero, Esquivel Obregón, Martínez Carrillo, López Negrete, Garza Aldape, García Naranjo, Rubio Navarrete, Villar) and to Cantú, Lucio Blanco, Pablo González, Cándido Aguilar and Murguía, whom the contributor identifies as rebel chiefs of 1921. The clear text and the runs agree at every point (the same two men claim to have the capital on pp. 1 and 3).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "All 17 runs (325 letters) of this letter deciphered; 57 cipher words, 50 verbatim, 7 repaired, 0 holes. The other 11 letters of catalogue entry 1445 use other systems and are not part of this target.",
+  "verification": [
+   "independent verification",
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "key recovered from the quoted English sentence, frozen, tested on the 16 other runs; all runs deciphered and read",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "17 runs, two passes, from the CEHM-Carso images",
+    "date": "2026-11-12"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "DCXXI.3.231.1",
+    "label": "Duhart to 'Vicente Gutiérrez', New York, 29 Aug 1921: 17 cipher runs",
+    "transcription": "transcription_DCXXI.3.231.1.txt",
+    "decryption": "decryption_DCXXI.3.231.1.txt",
+    "reading": "reading_DCXXI.3.231.1.md",
+    "translation": "translation_DCXXI.3.231.1.md",
+    "language": "es",
+    "state": "not prose",
+    "summary": "Duhart reports on the New York juntas: General Samuel (García) Cuéllar, Manuel Calero, Toribio Esquivel Obregón and Rafael Martínez Carrillo met; Cuéllar, 'managed' by López Negrete, claimed to have the capital and wanted sole direction, and the other three withdrew; Garza Aldape tried to reconcile them and García Naranjo was brought in. Duhart's telegram phrase was 'excluyendo actual representante', and a financier told him: 'If this man has anything to do with this matter I won't recommend to put a damn nickel.' The man in question is said to be in talks with Cantú and Lucio Blanco, who are said to be in league with Pablo González, Cándido Aguilar and Murguía.",
+    "note": "Not prose: 17 runs set into a letter in clear Spanish, 16 of them names or a three-word phrase; R12 is one whole English sentence (18 words, all verbatim). Each run is given in its clear Spanish sentence with an English translation. Words: 57 cipher words, 50 verbatim from the signs (87.7%), 7 with a marked repair (encipherer slips: ESQU{+I}VEL, OBR{+E}GON, ALDAP{R/E}, ALD{N/A}PE, NE{A/G}RETE, GA{E/R}CI{G/A}, NARA{+N}JO), 0 from a gloss, 0 holes.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (blind review)",
+     "date": "2026-11-13",
+     "note": "Each of the 17 runs reads as a name or phrase in its clear Spanish sentence: 8 of 8 context sentences without holes, the 7 repairs all marked encipherer slips. The capitals the reviewer copied blind from crops agree letter for letter with the transcription."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key_frozen.tsv"
+  ]
+ }
+}
