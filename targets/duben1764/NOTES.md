@@ -147,10 +147,9 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
   with short period (differences between groups for the same syllable), a table switched at each stroke
   (the 5-group preamble as indicator), a book code (group = position in a page). Identify the writer
   "C. F." of 15 Nov 1765.
-- System B (2,072 groups pooled): the Python homophonic annealer fails its control even at this size;
-  an AZdecrypt-class solver is the next ciphertext-only step; a block-order test
-  (align cipher lines or stroke segments against the draft out of order); group-by-group tests of the
-  three key tables at 218-220, including with constant offsets.
+- System B: done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and
+  completed on 13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no
+  value (dates, 236, 339, 55, 234) and the single-occurrence values of key c04, which no further text tests.
 - Transcribe the other cipher letters (87-100, 104-117, 121-127) to pool statistics: the code may be
   shared across letters of one series.
 - Read the other clear pages for any that is a true decipherment (no compositional corrections).
@@ -222,3 +221,42 @@ system B key (built on 118.00-119L.06 only) against this new clear, transcribed 
 was seen are confirmed. Key completed by alignment (dudout/c04/key_systemB_c04.json, 1,236 of 1,247 groups); the 5 Oct letter,
 not used for those changes, rises from 0.699 to 0.825 against its clear. The letter is read from its contemporary clear;
 system B now has no text without a clear in this volume. System A (6 Mar 1764, 15 Nov 1765) unchanged. See dudout/c04/README.md.
+
+### Integration check of the 13 Nov contribution (PR #541, 13 Nov 2026)
+
+Reproduced: `dudout/c04/scripts/measure_clair.py`, run with its paths pointed at the repository files (key_c03 =
+`dudout/key_systemB_c03.json`, c03b_ajouts = `dudout/key_systemB_c03b_additions.json`, lecture_121-124L =
+`tx/c-chiffer2-121-124.txt`, clear = `dudout/c04/frozen/127-128_norm.txt`), gives exactly M 0.5353 (1,032 of 1,247 groups
+known; permuted keys max 0.0593, shuffled orders max 0.0586) and 0.6943 with the 25 context values. All ten SHA-256 values
+in `dudout/c04/frozen/SHA256SUMS-PREREG` match the files (the lexicon line is `lang/lexicons/fr.json.gz`). The re-tested key
+`key_systemB_c03.json` carries the hash frozen on 12 Nov and was committed in PR #477 on 12 Nov, before the 127-128
+identification, so the key side of the test is externally dated; the order of events within 13 Nov (N_draft before the clear
+was seen, the amendment before the clear was transcribed) is by the contributor's record. The 121-124L cipher had already
+been decoded on 12 Nov with this key and 25 context values (declared by the contributor); the clear was not.
+
+Own decoder (written from the key files, not importing the contributor's): c03 0.5353, c03 + additions 0.6943, c04 0.9461
+against the 127-128 clear (the last is circular: c04 was completed from that clear). Unknown to c04: 12 group tokens (236 x3,
+481, 150, 761, 790, 315, 339, 234, 55, and a stray "2" on 122R.00 that the contributor's parser skips). 5 Oct 1764 (118-119R)
+against `tx/p1764-10-05.final.txt` normalised here (1,626 letters): c03 0.733, c04 0.854; the contributor's 0.699 -> 0.825
+used another normalisation of the 120 clear; the rise of about 0.12 on a letter not used to build c04 reproduces.
+Of the 15 N_draft values, 14 agree with key c04 (62 is "affair", not "vu"); several of the 14 rest on one occurrence in the
+alignment (6, 40, 202, 376, 505), so "confirmed" means "agrees with the completed key".
+
+Images (Riksarkivet IIIF, `lbiiif.riksarkivet.se/arkis!A0073297_00121`, `_00127`, `_00128`, full/max, curl, no bot check):
+121 lines 1-4 and 13-14 (117 groups) agree with `tx/c-chiffer2-121-124.txt`, including the date groups 481 150 761 and 790;
+127 is the clear as transcribed (head note "Tillhör brev av den 31/12 1764 und: 28 Jan 765", lines 1-10 and 19, 25 checked;
+the interlinear "laisse" over a struck word on 127.19 and "equelala" on 127.25 are as transcribed).
+
+Strict count of 121-124L, read through its period clear: 612 of 613 word tokens of the clear (elisions split) are sure;
+the one hole is "equelala" (127.25 "et tres equelala verité"; the cipher has e-qu-el-a-la), whose sense is not settled
+(the English translation marks it [?]). Read share 0.998. Method for this letter: read from existing decipherment (the
+contemporary clear); the key c04 is the project's addition and stays partial (1,236 of 1,247 groups; about 100 values
+added or corrected after the measure, many on one occurrence). Date groups 481 150 761 ("28 Novembre"), 790 + 315 ("31"),
+and 236, 339, 55, 234 have no value.
+
+"System B now has no text without a clear in this volume" holds for the Chiffer n:o 2 folder (118-127): its two system B
+letters, 5 Oct 1764 and 31 Dec 1764, both have their clear (120, 127-128). The Chiffer n:o 1 letters 87-117 are not all
+transcribed or profiled, so it is not checked that none of them is in system B.
+
+The target stays **Status: in progress**: system A (6 Mar 1764 and 15 Nov 1765) is open with workable gaps, and the key of
+issue #437 is still not in the repository. No page yet.

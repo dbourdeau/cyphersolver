@@ -567,6 +567,16 @@
    ],
    "what": "Key completed by alignment to the 127-128 clear (key_systemB_c04.json: 1,236 of 1,247 groups; corrections such as 3 ne, 12 con, 320 fi, 437 ri, 523 ar, 118 vi; code words Fersen, Stachieff, Diete, million, Princesse); the 5 Oct letter, not used for these changes, rises from 0.699 to 0.825 against its clear on 120. 121-124L read from the contemporary clear.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #541: measure_clair.py re-run on the repository files gives M 0.5353 (1,032 of 1,247 groups known; controls max 0.0593) and 0.6943 with the 25 context values, exactly as stated; all ten SHA-256 values in c04/frozen match; key c03 was committed with PR #477 on 12 Nov, before the clear was identified (order within 13 Nov by the contributor's record). Own decoder: c04 0.946 against 127-128 (circular), 5 Oct 1764 c03 0.733 -> c04 0.854 with this normalisation of the 120 clear (contributor 0.699 -> 0.825). Riksarkivet images 121 (117 groups) and 127 (clear lines checked) agree with the transcriptions. Strict count of 121-124L through its clear: 612/613 word tokens (0.998). Target stays in progress: system A open.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -581,7 +591,7 @@
    "none"
   ],
   "provenance": "mixed",
-  "notes": "In progress: two systems; the 15 Nov 1765 letter carries a positioned contemporary decipherment (36/47 lines), but its values vary through the text (no fixed table), so no key has been rebuilt; system B (2,072 groups) is beyond the Python annealer (control not recovered). Additional contribution and bounded experiments in payne2026/NOTES.md; separate1771 fragment decode does not change target class or main key state.",
+  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765, with a positioned contemporary gloss over 36 of 47 lines) is open: no fixed key rebuilt here; the key of issue #437 is not in the repository. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
   "credits": [
    {
     "who": "dudout",
@@ -679,7 +689,9 @@
      "by": "Brice Dudout (Claude Opus 5.5)",
      "date": "2026-11-13",
      "note": "The clear on 127-128 read as French sentences (two transcription passes); key c04 decodes 1,236 of 1,247 groups and follows it group by group; the frozen 12 Nov key alone gives M 0.535 against it (controls max 0.059)."
-    }
+    },
+    "read_share": 0.998,
+    "note": "Read through its contemporary clear (method for this letter: read from existing decipherment). Strict count: 612 of 613 word tokens of the clear sure; the hole is 'equelala' (127.25), whose sense is not settled. Key c04 decodes 1,236 of 1,247 groups; 481 150 761, 790, 315, 236, 339, 55, 234 have no value. The cipher had been decoded on 12 Nov with key c03 and 25 context values before the clear was found (declared)."
    }
   ],
   "key_file": [
