@@ -423,8 +423,27 @@
     "statistical test",
     "language-model scoring"
    ],
-   "what": "Statistical validation (docs/_validate.py): 657 tokens, 250 types, fr-modern order 4: reading -2.023 per letter; random keys -2.4 (z 6.4); key annealed onto shuffled ciphertext best -1.854 (mean -1.873, z -10.9); annealer on the real text -1.832. Verdict: underdetermined.",
+   "what": "Statistical validation (docs/_validate.py): 663 tokens, 252 types, fr-modern order 4: reading -2.028 per letter; random keys -2.406 (z 6.7); key annealed onto shuffled ciphertext best -1.848 (mean -1.874, z -11.2); annealer on the real text -1.883. Verdict: underdetermined.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "repeat/pattern analysis",
+    "contextual inference"
+   ],
+   "what": "Two tests that need no outside source. (1) Slip test: for every unread group, each one-digit change that gives a known group was listed and judged in its sentence. Four fit and are adopted as assumed slips: 8319 for 2319 (restreint aux depeches officielles, next to 6180 for 6120 with the same 8/2 confusion), 3019 for 5019 (on les a vus), 3021 for 5021 (ses lettres par ballon monte), 8626 for 8628 (Prussie). About 150 other one-digit neighbours gave no sense. (2) Adjacent-form test: do unread groups one or two lines from a known word carry another form of it? One reading follows from the order: 9010, one line before succes, is succeder (charge de me succeder, with 5215 = m). Candidates not adopted: 5308 for 5508 (mere), 2329 and 2705 as second forms of depeche and donner, 6005 between nos and notre (notaire / notable). Result: 238 values, 491 of 754 occurrences (65%), 91 unread, seventeen assumed slips (20 occurrences), none checked on the scan.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Automatic ranking of the unread groups: for 38 groups with known neighbours, every word in the book interval (30,000-word list) scored in its sentence with a character 5-gram model of modern French plus word frequency and position. The top choices are frequent words without sense in place; nothing adopted. A word-level model of the period's administrative French would be needed.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -432,47 +451,46 @@
    "date": "2026-11-13",
    "model": "fr-modern",
    "file": "validation.tsv",
-   "tokens": 657,
-   "types": 250,
+   "tokens": 663,
+   "types": 252,
    "tokens_per_type": 2.63,
-   "score": -2.023,
+   "score": -2.028,
    "nulls": {
     "random keys": {
      "n": 200,
-     "mean": -2.4,
-     "sd": 0.059,
-     "max": -2.269,
-     "z": 6.4,
+     "mean": -2.406,
+     "sd": 0.057,
+     "max": -2.272,
+     "z": 6.7,
      "p": 0.005
     },
     "shuffled refit": {
      "n": 6,
-     "mean": -1.873,
+     "mean": -1.874,
      "sd": 0.014,
-     "max": -1.854,
-     "z": -10.9,
+     "max": -1.848,
+     "z": -11.2,
      "p": 1.0
     }
    },
-   "power": -1.832,
+   "power": -1.883,
    "verdict": "underdetermined",
-   "notes": "claimed per-occurrence score -2.023; polyphony 0.0; 97 unread tokens left out; annealer on the real text from random keys reached -1.832"
+   "notes": "claimed per-occurrence score -2.028; polyphony 0.0; 91 unread tokens left out; annealer on the real text from random keys reached -1.883"
   },
   "method": "key recovered based on adjacent plaintext",
   "key": "partial",
   "class": "read in part",
-  "method_basis": "The telegram mixes clear words with code groups. The values were rebuilt from those clear words and from the book's own order: a group is page (01-99) and line (01-30) of an alphabetical book, so each group is boxed between its neighbours and the clear context picks the word. 236 values stand in book order with no inversion; 485 of 754 group occurrences (64%) have a value. No key and no second text in this code was available.",
+  "method_basis": "The telegram mixes clear words with code groups. The values were rebuilt from those clear words and from the book's own order: a group is page (01-99) and line (01-30) of an alphabetical book, so each group is boxed between its neighbours and the clear context picks the word. 238 values stand in book order with no inversion; 491 of 754 group occurrences (65%) have a value. No key and no second text in this code was available.",
   "contribution": [
    "key recovered"
   ],
-  "fraction_read": 0.643,
+  "fraction_read": 0.651,
   "fraction_read_method": "measured",
-  "fraction_read_source": "13 Nov 2026: 485 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json after the thirteen assumed digit slips (16 occurrences) (counted by the script in NOTES.md, third pass); 172 further groups are marker groups with a working function and 97 are unread. The clear words are not counted.",
+  "fraction_read_source": "13 Nov 2026: 491 of the 754 four-digit groups in inspecteurs_2nov_partial.txt have a value in anchors_inspecteurs.json after the seventeen assumed digit slips (20 occurrences) (counted by the script in NOTES.md, third pass); 172 further groups are marker groups with a working function and 91 are unread. The clear words are not counted.",
   "verification": [
-   "statistical test",
    "historical consistency"
   ],
-  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 236 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (64% of group occurrences valued, 23% marker groups, 13% unread). Limits: one transcription, no second text in this code, thirteen assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
+  "notes": "Read in part (13 Nov 2026). The code is a paged alphabetical book; 238 values were rebuilt from the clear words and the book order, and the telegram reads as sentences with holes (65% of group occurrences valued, 23% marker groups, 12% unread). Limits: one transcription, no second text in this code, seventeen assumed digit slips not checked on the scan, the order check partly circular, and the n-gram validation is underdetermined. Earlier state (8 Nov): 20 supported entries, 12.5%. Pillon's scans and the transcriptions of them are published with his permission (8 Nov 2026; DATA_NOT_INCLUDED.md); his repertoires R1-R3 and Excel files are not. The work on the Favre / delegation code is a different cipher, still in progress, with no page of its own yet.",
   "credits": [
    {
     "who": "pillon",
@@ -483,9 +501,9 @@
   ],
   "key_file": "anchors_inspecteurs.json",
   "codes_open": {
-   "open": 86,
+   "open": 80,
    "total": 322,
-   "tokens_open": 97
+   "tokens_open": 91
   },
   "gaps": [
    {
@@ -494,12 +512,12 @@
     "detail": "Spelled once or twice from pieces with no other use in the telegram; no second text in the inspectors' code exists in the collection and no source naming these people was found."
    },
    {
-    "item": "About 35 single groups with two or more candidates that fit both the book position and the sentence (7126, 1516, 3921, 3601, 3604, 4423, 0703, 3408, 2809, 3215, 6808, 6005, 9029, 4125, 0702, 0420, 0421, 6301, 0530, 3019, 3021, 2704, 5413, 6421, 8122, 2329, 2705, 8517, 5024, 5308, 4515, 5215, 9010, 3927, 8319, 7122 3030 1502, 6714 4905)",
+    "item": "About 30 single groups with two or more candidates that fit both the book position and the sentence (7126, 1516, 3921, 3601, 3604, 4423, 0703, 3408, 2809, 3215, 6808, 6005, 9029, 4125, 0702, 0420, 0421, 6301, 0530, 2704, 5413, 6421, 8122, 2329, 2705, 8517, 5024, 5308, 4515, 3927, 7122 3030 1502, 6714 4905)",
     "blocker": "open-codes",
     "detail": "Each occurs once or twice; the interval between known neighbours still holds several words."
    },
    {
-    "item": "Thirteen assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180, 4913, 4915; 16 occurrences) and the doubtful 0617",
+    "item": "Seventeen assumed digit slips (8312, 3304, 3227, 0816, 1017, 6519, 2534, 5005, 3121, 0129, 6180, 4913, 4915, 8626; 20 occurrences) and the doubtful 0617",
     "blocker": "needs-physical-access",
     "detail": "The full scan of the telegram is in the collector's hands and on the project owner's machine, not in the repository; only two crops of this telegram are published."
    },
@@ -519,12 +537,12 @@
     "translation": "inspecteurs_2nov_translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.643,
+    "read_share": 0.651,
     "reading_review": {
      "grade": "B",
      "by": "Claude (the model that made the reading; no second reader yet)",
      "date": "2026-11-13",
-     "note": "Most paragraphs build sentences with scattered holes; the personal-news paragraphs and the postscript have holes in most sentences. Thirteen digit slips are assumed and not checked on the scan. docs/_check_reading.py: 38 of 80 sentences clean (0.475) in the reading file."
+     "note": "Most paragraphs build sentences with scattered holes; the personal-news paragraphs and the postscript have holes in most sentences. Seventeen digit slips are assumed and not checked on the scan. docs/_check_reading.py: 38 of 80 sentences clean (0.475) in the reading file."
     },
     "summary": "Steenackers, director general of telegraphs and posts at Tours, tells three colleagues in besieged Paris what line to take towards the post office: the services rendered, balloon and pigeon post, the pigeon service about to be opened to private messages, the decree uniting posts and telegraphs and the one ending the post's monopoly on carrying newspapers. He passes on a report of Prussians leaving Saint-Germain daily with pickaxes, advice on coating cotton balloons, and family news for each addressee."
    }

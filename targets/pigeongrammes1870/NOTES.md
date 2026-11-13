@@ -1,7 +1,7 @@
 # Pigeongrammes and telegraph ciphers, France 1870-71 (Pillon / Debove collection)
 
 
-Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome since 13 Nov 2026: key recovered based on adjacent plaintext, read in part, 64% of groups valued; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
+Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome since 13 Nov 2026: key recovered based on adjacent plaintext, read in part, 65% of groups valued; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
 
 ## Source
 Alexandre Pillon (collector) and Bruno Debove, via the forwarded email of 7 Nov 2026.
@@ -394,6 +394,16 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
 - Correction from the claims review (13 Nov): the slips are THIRTEEN written groups, 16 occurrences (the eleven listed above plus 4913 and 4915 for 4914); not all are 3/5, 0/6 or 5/8 (2534 is 3/1, 6180 8/2, 5005 5/6).
   The single inversion of the first pass was 7119/7208 (not 5511/5512). The transcription file has 754 groups, 349 distinct, 0101 52 times, and no four-digit number in clear; 736/343/49 was the 7 Nov count.
   PRU-S-SIE-N occurs once; the second run is PRU-S-[8626], 8626 unread. 3927 = garde is used in 'mettre en garde' only; in L-[3927]-E it is unread.
+- Slip test and adjacent-form test (13 Nov, after publication; no outside source used). For each unread group every one-digit change that gives a known group was listed
+  and judged in its sentence. Adopted as ASSUMED slips: 8319 -> 2319 ("restreint aux depeches officielles"; the next group 6180 -> 6120 has the same 8/2 confusion),
+  3019 -> 5019 ("on les a vus se diriger"), 3021 -> 5021 ("que ses lettres par ballon monte arrivent bien"), 8626 -> 8628 (PRU-S-SIE). From the book order: 9010, one line
+  before succes 9011, = succeder, 5215 = m ("charge de me succeder"). Not adopted: 5308 -> 5508 (mere; maison also fits unslipped), 2329 / 2705 as second forms of depeche /
+  donner, 2704 (dont / donnee), 6005 between nos and notre (notaire / notable), 4125 after hardi, 8517 before secret. No fit: about 150 other one-digit neighbours.
+  Now: 238 values, no inversion; 491 of 754 valued (65%), 172 markers (23%), 91 unread (12%, 80 distinct); SEVENTEEN assumed slips, 20 occurrences, none checked on the scan.
+- Automatic ranking test (13 Nov): for 38 unread groups with known neighbours on both sides, every word in the book interval (wordfreq, 30,000 words) was scored in its
+  sentence with the fr-modern character model (order 5, with spaces) plus word frequency and position. Result: negative. The top choices are frequent words with no sense in
+  place (pourquoi, longtemps, france, influence); the intended word, where one is guessed, is rarely first (mesures and claire are; dont is). A character model cannot choose
+  a word; a word-level model of 1870 administrative French would be needed. Nothing adopted.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
 
 ## Wiki and engine (7 Nov 2026): start here
@@ -426,8 +436,8 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 
 ## Remaining gaps
 - names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
-- about 35 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
-- thirteen assumed digit slips (16 occurrences) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
+- about 30 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
+- seventeen assumed digit slips (20 occurrences) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
 - exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
 
 ## Escalation

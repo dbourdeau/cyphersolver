@@ -8,7 +8,7 @@ My dear friends. I want to [..] the attitude that seems to me required by the on
 [the Paris post office]: to be able to stress on every occasion the services rendered by us in Paris and at Tours; that it is above all
 to the organisation set up by us here and in Paris that the capital owes not being completely cut off from the provinces;
 that we have set up on a large scale communication by balloon and pigeons; that the pigeon service, at first restricted to
-official [dispatches], is going to be extended to private ones; that we have quickened here the postal service, made more
+official dispatches, is going to be extended to private ones; that we have quickened here the postal service, made more
 difficult and slower by the disorganisation of the railways due to the war and its necessities.
 
 2. In Paris it is we who organised the system of communications linking all the most important points of the defence. In the
@@ -35,7 +35,7 @@ pickaxes, 20 Prussians who stay 48 hours and come back to rest and set out again
 success, but by watching them they were seen heading towards [..]. Would this not tally with the [..] the [English?]
 newspapers speak of?
 
-6. Let [..] know that his [..] by manned balloon arrive well. Let the pilots of cotton balloons know that they are made much
+6. Let [..] know that his letters by manned balloon arrive well. Let the pilots of cotton balloons know that they are made much
 more impermeable by a first coat of strong glue and molasses; let it dry; ordinary coating.
 
 M. P...et. I have appointed your friend [..] head of the office recently created at the general secretariat. Please tell
@@ -50,4 +50,4 @@ M. Le-...-e. Good news of your family and friends. [Le Goff?] asks for a letter 
 Madame [..] is well at Nantes, 25 quai de la Fosse, and M. [Brunet?], aide-de-camp to General Trochu, that Madame [same name] is in good health at
 Rennes, 2 quai de l'Université. A thousand thanks to all three for your good communications and [friendship]. Ever your devoted, Steenackers.
 
-[..] Ricard to M. ...d, in charge of [..], is constantly on the alert, studying the question [..].
+[..] Ricard to M. ...d, who is to succeed me, is constantly on the alert, studying the question [..].
