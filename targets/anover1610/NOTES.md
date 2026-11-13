@@ -53,3 +53,15 @@ Alberto Garvía García (issue #499; report with AI assistance, ChatGPT/Codex as
 | `decryption.txt` | mechanical decode with an own parser |
 | `reading.md` | the contributor's line-by-line reading, translation and notes |
 | `profile.json` | the target profile |
+
+
+## Documentary and transcription update (13 November 2026)
+
+A subsequent AI-assisted review by Alberto Garvía García is available in the updated Zenodo deposit (version 2, 13 November 2026), including `INFORME_REVISION_20261113.md` and `Cyphersolver_1988_Incidencia_499.md`.
+
+- **Manuscript recheck:** All 211 analytical cipher occurrences in I 242,29 were re-examined against the available manuscript images. No additional secure code values or corrections were established. This review was AI-assisted and does not constitute independent human palaeographic verification.
+- **Tokenization:** The difference between the contributor's 211 analytical occurrences and the parser's 213 tokens has been documented. The counts use different segmentation conventions; neither should be treated as an independently verified correction to the other.
+- **Historical corroboration:** *Monumenta Missionária Africana*, first series, volume V, p. 587, was inspected directly. It contains a related dispatch dated 31 May 1610 concerning Pinda, rather than a transcription of the ciphered letter dated 20 May 1610. The general historical episode was already documented; the potential contribution of this project lies in recovering the specific instructions and the cipher key.
+- **Remaining work:** Devos (1950) has been identified bibliographically but not consulted in full. Independent palaeographic verification, unresolved code groups and the remaining cipher-only letters are still outstanding.
+
+The decipherment remains **read in part / key partial**. The contributor's strict figures are unchanged: 173/211 cipher occurrences in firmly read words (81.99%) and 78/88 editorial words firm (88.64%).
