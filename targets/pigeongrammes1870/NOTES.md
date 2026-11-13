@@ -1,5 +1,7 @@
 # Pigeongrammes and telegraph ciphers, France 1870-71 (Pillon / Debove collection)
 
+Status: in progress (reopened 13 Nov 2026: a partial reading of the inspectors' telegram is under way; the page is held at its 8 Nov state at the owner's request and must be re-read against these notes before it is next reviewed).
+
 Write-up: `docs/pigeongrammes1870.html`, about the inspectors' code only (outcome: not solved, attempted, not read; profile.json). The Favre / delegation code (Chaudordy letter, 18 Dec 1870) is a different cipher, still in progress, with no page of its own yet; its sections below are working notes.
 
 ## Source
