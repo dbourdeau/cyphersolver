@@ -38,15 +38,17 @@ visit to the reading room. Ask the contributor what they have access to before c
 
 Take ten or fewer at a time. Before starting, tell the contributor the ids, and ask them to open a
 [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) issue listing
-them ("Vetting leads 1243, 1255 ..."), so nobody else's agent takes the same ones. Check the open issues first.
+them ("Leads: vetting 1243, 1255 ..."), so nobody else's agent takes the same ones. Check the open issues first:
+`gh api "repos/dbourdeau/cyphersolver/issues?state=open&labels=leads"` lists them (titles start "Leads:"); if that returns nothing, read the open issue titles.
 
 ## 3. Per lead
 
 Do all four for each lead, with searches run for that document and no text shared between leads.
 
 1. **Duplicates.** `python research/archive_sweep_2026-10/known.py "<shelfmark>" "<correspondent>" "R<decode id>"`.
-   A hit that is only the lead's own row is not a duplicate. The DECODE dump is not in the checkout: search DECODE
-   yourself (`https://de-crypt.org/decrypt-web/RecordsList`) and say what you ran.
+   A hit that is only the lead's own row is not a duplicate. It matches substrings and stops after a dozen hits, so give it the distinctive form ("Lambeth MS 615", not "MS 615") and a correspondent's surname.
+   The DECODE dump is not in the checkout, so `known.py` does not cover DECODE: search it with
+   `python research/sweep_2026-11-11_german/decode_search.py "<term>" ["<term>" ...]` (a bare request to DECODE's `RecordsList` returns a page with no records in it) and say what you ran.
 2. **Prior art.** At least three distinct searches: the shelfmark or series with "decipher"; the correspondents with
    "cipher"; the printed edition or calendar. Cover each of DECODE, Tomokiyo's Cryptiana, Lasry (papers and GL.htm),
    the edition or calendar, and the literature (HistoCrypt, Cryptologia). If a printed edition or calendar would

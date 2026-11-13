@@ -76,7 +76,7 @@ RULES = [
     (r'nationaal|dutch|netherlands|belgium|kb_', NL),
     (r'riksarkivet|tkua|nordic|scandinavia|denmark|baltic', SC),
     (r'german|archivportal|kalliope|hhsta|aut_|czech|hungary|mnl', DE),
-    (r'^uk_|tna|archiveshub', UK),
+    (r'^uk_|tna|archiveshub|lambeth|bodleian|british_library', UK),
     (r'polish|russia|balkans|ottoman', EAST),
     (r'^latam|mexico|brazil', LATAM),
     (r'^chi_|^us_|^nara|nyc|dpla|canada', US),
