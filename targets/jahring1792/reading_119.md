@@ -9,20 +9,20 @@ Marked readings (scripts/check_marks.py reads them from runs.json; they are repe
 
 <!-- 119L.1  die casse ist -->
 <!-- 119L.2  [...|sehult] -->
-<!-- 119.1   cassenges{l/c}hafte -->
+<!-- 119.1   cassengeschafte -->
 <!-- 119.2   furchterli{b/c}h gut -->
 <!-- 119.3   {c/u}{j/n}glaublichen schwierigkeiten gezogen -->
 <!-- 119.5   kredi{d/t} zu schaden -->
 <!-- 119.6   ihn d{j/o}ch -->
 <!-- 119.7   ermude [...|flstjr] liege ich -->
-<!-- 119.8   sind gut g{a/e}stim{+m}t -->
+<!-- 119.8   sind gut gestim{+m}t -->
 <!-- 119.10  aufkund{h/i}gung{j/e}n -->
-<!-- 119.12  aus miscr{a/e}dit -->
+<!-- 119.12  aus miscredit -->
 <!-- 119.13  tausend gulden [...|crd] -->
 
 Status: **not prose**. The cipher is a set of short runs (28 words in all) set into a letter in clear German. Each run
-completes a clear sentence, but the cipher forms no sentence of its own. Words: 17 verbatim from the signs, 8 with a
-marked change, 3 holes.
+completes a clear sentence, but the cipher forms no sentence of its own. Words: 19 verbatim from the signs, 6 with a
+marked change, 3 holes (14 Nov 2026: three r read as v on the image, in 119.1, 119.8 and 119.12; see NOTES.md).
 
 ## The runs in their sentences
 
