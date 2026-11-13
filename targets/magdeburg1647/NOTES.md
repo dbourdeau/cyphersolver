@@ -1,5 +1,9 @@
 # Magdeburg envoys at Osnabrück, 1646-47: bare cipher slips in LASA A 1 Nr. 530, key recovered from the ciphertext (catalogue row 1639)
 
+Status: in progress (integration check of 13 Nov 2026, PR #524: the key is right and is the envoys' own, but the slips
+are decoded, not read, and the gap that holds them back, the transcription of the hand, is workable; folder only, no page
+and no ledger row; catalogue 1639 narrowed, not removed).
+
 Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 34.57% to 47.06% on the first pass). The limit is our reading of the hand, not the key. The content of f.5, f.6, f.7 and f.101 exists in clear in Nr. 529, so it is not first.
 
 ## What this folder is
@@ -96,8 +100,20 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 
 ## Remaining gaps
 
-- **The hand.** g/q, c/e, t/l and final f/n confusions cap the readings. A third reader, or a person, reading against the Nr. 529 drafts would lift f.5, f.6, f.7 and f.101 at once, but those are not first.
-- **Nr. 529 for f.102, f.104 and f.204** was searched only in the frames listed in `nr529/README.md`. Nr. 543 (Krull's draft reports) is not checked.
+- The hand: g/q, c/e, t/l and final f/n confusions cap every slip at 35-47% (f.7, f.101, f.102, f.104, f.204) - blocker: not-attempted; the key is complete (the envoys' own table, frame 168), so a careful third transcription of the slips at full size with the frame-51 glossed reference is workable. The integration check found reader 2 closer to the image than reader 1 on f.204 lines 1-3 (below). Was marked "illegible" in `profile.json`; it is not.
+- Clear drafts for f.102, f.104 and f.204 - blocker: not-attempted; Nr. 529 searched only in the frames listed in `nr529/README.md`; Nr. 543 (Krull's draft reports), 537, 538, 540, 546 not checked.
+- Frame 278 of Nr. 530 ("Signatura catalogi sive clavis": a sign table and a long cipher passage with interlinear glosses) and frames 5, 6 - blocker: not-attempted; not compared with KEY_v2 or used for the name signs.
+- Name signs (Catalogus, frames 3 and 278) left as holes ('|') - blocker: not-attempted.
+- f.101 is short (35 cipher words, one reader) - blocker: too-short for its own control; its clear draft is in Nr. 529 frame 532.
+
+## Escalation
+
+- [x] siblings: the five bare slips and the two training slips of Nr. 530 found and decoded; frame 278 (glossed) not yet used (open)
+- [x] clear-pages: Nr. 529 clear drafts found for f.5, f.6, f.7 and f.101 (frames 875, 881-882, 532); not for f.102, f.104, f.204 in the frames searched (open)
+- [x] known-keys: the envoys' own key (frame 168, AMPHICTYONES) equals KEY_v2 in all 12 pairs; decoding the slips with it gives the same letters
+- [ ] print: Acta Pacis Westphalicae and older Magdeburg histories not searched page by page
+- [x] key-rebuild: not needed (the key is complete)
+- [ ] retry: every slip to be re-transcribed with the glyph reference and re-decoded (non-blind; say so)
 
 ## How to reproduce (standard-library Python, no network)
 
@@ -113,3 +129,38 @@ The shuffle control needs the Simplicissimus text (Project Gutenberg 55171) as i
 ## Timestamps
 
 See `timestamps/README.md`. The frozen key existed unchanged by 13 Nov 2026 09:08:54 GMT (Sectigo RFC 3161). The freeze order of the transcriptions rests on the session logs (`transcriptions/FREEZE_LOG.txt`).
+
+## Integration check (13 Nov 2026, PR #524)
+
+Done by the integrating session after its own verification (report R8_bremen). The folder is merged as it came, with
+`Status: in progress` and no page or ledger row; catalogue 1639 is narrowed (status text), not removed.
+
+- **Reproduction** (scripts read first; `python3 -I` on a scratch copy): `build.py`, `confirm.py`, `align.py`,
+  `compare_nr529.py`, `readings.py`, `keytable.py` rewrite every file byte for byte. Every per-slip figure reproduces,
+  including the two the contributor corrected (f.104 R2 46/101, f.204 R1 24/51) and the catalogus 8/13. The original
+  annealer (`scripts/original/solve_mono.py`, corpus path patched to a fresh Project Gutenberg 55171, md5 f476bb74 as
+  asserted) run on `f5f6_combined_anneal_input.txt` with seed 3 and 3 restarts converges to KEY_v2 exactly (plus j = x).
+- **Own decoder** from the frame-168 worksheet (AMPHICTYONES over zxwurqlkgfdb, both directions): all KEY_v2 decryptions
+  agree word for word except the words holding cipher m, which the worksheet gives as x (f.102 "e?pecratdi" becomes
+  "expecratdi"); no count changes.
+- **Images** (LASA max jpgs, plain curl, HTTP 200): frame 168 shows the boxed AMPHICTYONES / zxwurqlkgfdb line, the
+  untouched trial lines and "q: Centum, x: Mille", as `gloss/worksheet_frame168.txt` says. Frame 233 (f.204), lines 1-3
+  (24 words) compared with both transcriptions: about 15 of 24 R1 words agree with my reading of the image, and R2 is closer
+  (e.g. image "izodf", "odbzfldn", "hdlfduxdn", "tbdf", where R1 has idodf, odbzfdn, hdifdlxdn, tdsdf). The low shares are a
+  transcription limit, as the contributor says. Frame 278 is a "Signatura catalogi sive clavis" with a glossed cipher passage
+  (not in the folder; gap above).
+- **Order of events**: KEY_v2 frozen 13:47:27, frame 168 first seen 14:00:36 UTC, by the contributor's record
+  (`transcriptions/FREEZE_LOG.txt`); the first RFC 3161 stamp is 13 Nov 09:08:54 GMT. The catalogue entry the work started
+  from already said the envoys' key was in the file, so the existence of a key was known, its content not.
+- **Method**: kept as "key recovered from ciphertext-only" (that is how the table was obtained, by the contributor's record),
+  but the key is not new: it survives in the volume (frame 168) and gives the same decryption. The contribution is the
+  transcription and the confirmation, not new key material. Recorded in `outcome.method_basis` and in catalogue 1639's
+  vetting (`key_in_volume`).
+- **Text state**: each slip's reading has holes in most lines (the contributor says so); `_check_reading.py` gives "not a
+  reading" or "marginal" for every slip. State changed from "read in part" to "decoded, not read" per text; the entry class
+  stays read in part.
+- **fraction_read**: was the best single slip (f.204, 0.4706), which is selective. Now the five held-out slips at their
+  figures of record, no selection: (36 + 16 + 28 + 45 + 24) / (83 + 35 + 81 + 101 + 51) = 149/351 = 0.4245. Per-slip
+  figures stay as filed.
+- **Gaps**: "the hand" was marked `illegible`; with a complete key and readable images it is `not-attempted`.
+- **One key, one entry**: no other target or lead holds A 1 Nr. 530 or this table; thumbshirn1647 (Saxe-Altenburg envoys at the same congress) names catalogue 1639 but uses a homophonic key, a different system.

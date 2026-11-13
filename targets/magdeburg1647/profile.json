@@ -328,20 +328,26 @@
    ],
    "what": "Our reading of the Nr. 529 clear drafts enciphered with KEY_v2 and compared letter by letter with the frozen transcriptions: f.5 248/271 = 91.51%, f.6 364/419 = 86.87%; 1,000 random reciprocal keys at two seeds: none reaches it (best 114, 186).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (PR #524, report R8_bremen): all scripts re-run with python3 -I, byte-identical; original annealer re-run on f.5+f.6 (fresh Gutenberg 55171) converges to KEY_v2; own decoder from the frame-168 worksheet agrees with every KEY_v2 decryption except words with cipher m (worksheet m = x); LASA frames 168, 233, 278 fetched: worksheet confirmed, f.204 lines 1-3 compared (about 15/24 R1 words agree, R2 closer), frame 278 is a glossed sign catalogue not yet used. Texts set to decoded, not read; fraction_read 149/351 over the five held-out slips; 'illegible' gap corrected to not-attempted; target kept in progress.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "KEY_v2 was found by simulated annealing on the ciphertext of f.5 and f.6 alone, frozen before any gloss, worksheet or clear draft was compared; it was then applied unchanged to the held-out slips.",
+  "method_basis": "KEY_v2 was found by simulated annealing on the ciphertext of f.5 and f.6 alone, frozen before any gloss, worksheet or clear draft was compared; it was then applied unchanged to the held-out slips. The key is not new: the envoys' own key survives in the same volume (Nr. 530 frame 168, keyword AMPHICTYONES over zxwurqlkgfdb, all 12 pairs equal, and it decodes the slips to the same letters, cipher m = x added); by the contributor's record the table was frozen (13:47:27 UTC, 12 Nov 2026) before frame 168 was seen (14:00:36), and the catalogue entry the work started from already said a key was in the file.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "counts.txt (scripts/build.py): per slip, first pass with the frozen KEY_v2, reader of record; cipher words labelled S in the one-pass ledgers of 12 Nov, recounted. Per slip: f.7 36/83, f.101 16/35, f.102 28/81, f.104 45/101, f.204 24/51. fraction_read is the best single held-out slip (f.204), not a pool.",
-  "fraction_read": 0.4706,
+  "fraction_read_source": "counts.txt (scripts/build.py): the five held-out slips at their figures of record, first pass with frozen KEY_v2, no selection: f.7 36/83, f.101 16/35, f.102 28/81, f.104 45/101, f.204 24/51 = 149/351 = 0.4245 (integration check 13 Nov 2026; was the best single slip, 0.4706). Unit = cipher word.",
+  "fraction_read": 0.4245,
   "verification": [
    "key confirms",
    "contemporary decipherment",
@@ -379,8 +385,8 @@
   "gaps": [
    {
     "item": "Every bare slip below 65% (strict 34.57%-47.06% first pass)",
-    "blocker": "illegible",
-    "detail": "the hand: g/q, c/e, t/l and final f/n confusions; reader agreement 162/312"
+    "blocker": "not-attempted",
+    "detail": "the hand: g/q, c/e, t/l and final f/n confusions; reader agreement 162/312; the key is complete (frame 168), so a careful re-transcription against the images is workable (integration check 13 Nov 2026: was marked illegible)"
    },
    {
     "item": "f.102, f.104, f.204: Nr. 529 searched only in part; Nr. 543 (Krull's draft reports) not checked",
@@ -396,6 +402,11 @@
     "item": "f.101: 35 cipher words, one reader",
     "blocker": "too-short",
     "detail": "the shuffle test is weaker on a short text"
+   },
+   {
+    "item": "Nr. 530 frame 278 ('Signatura catalogi sive clavis': sign table and a glossed cipher passage) and frames 5, 6",
+    "blocker": "not-attempted",
+    "detail": "not compared with KEY_v2 or used for the name signs"
    }
   ],
   "texts": [
@@ -413,7 +424,7 @@
     "reading": "readings/f7.md",
     "translation": "translations/f7.md",
     "language": "de",
-    "state": "read in part",
+    "state": "decoded, not read",
     "read_share": 0.4337,
     "summary": "An envoys' report: the obstinacy of a legation, 'praesertim in pari autoritate constituti', 'humeur', qualities praised; mostly holes. English gist in translations/ is AI-made."
    },
@@ -429,7 +440,7 @@
     "reading": "readings/f101.md",
     "translation": "translations/f101.md",
     "language": "de",
-    "state": "read in part",
+    "state": "decoded, not read",
     "read_share": 0.4571,
     "summary": "Someone not content that Salvius stayed so long at Münster; 'als der Venetianische hierunter'; mostly holes. English gist in translations/ is AI-made."
    },
@@ -447,7 +458,7 @@
     "reading": "readings/f102.md",
     "translation": "translations/f102.md",
     "language": "de",
-    "state": "read in part",
+    "state": "decoded, not read",
     "read_share": 0.3457,
     "summary": "Fragments: 'gros zu thun', Groß-Glogau, Bremen, 'spiritu vertiginis getriben'; mostly holes. English gist in translations/ is AI-made."
    },
@@ -465,7 +476,7 @@
     "reading": "readings/f104.md",
     "translation": "translations/f104.md",
     "language": "de",
-    "state": "read in part",
+    "state": "decoded, not read",
     "read_share": 0.4455,
     "summary": "Fragments: something strange told to the legates 'in vertrawen', a proposal, 'post repulsam ... invidia', a Münster burgher; mostly holes. English gist in translations/ is AI-made."
    },
@@ -483,7 +494,7 @@
     "reading": "readings/f204.md",
     "translation": "translations/f204.md",
     "language": "de",
-    "state": "read in part",
+    "state": "decoded, not read",
     "read_share": 0.4706,
     "summary": "Someone told the writer 'in vertrawen et pro certo'; 'lieber', 'solte nur damit'; mostly holes. English gist in translations/ is AI-made."
    }
