@@ -1,0 +1,30 @@
+counts.txt: written by scripts/build.py. Strict = S/(S+E+N) per word unit, per document; never pooled.
+key: key_history/KEY_pentz1636_T1T2.py md5 8306f733e78da38f1f86ac61d6bfd582 (= key v1, b106, frozen 12 Nov 2026 before the Vienna run); key.tsv checked equal.
+
+## A. Vienna, 26 Mar / 5 Apr 1636 (catalogue 2543): TKUA Kejseren, unit 260651, images 37 right and 38 left
+transcription md5 953fd40913212af269df6dd4bc128b86 (frozen 12 Nov 2026 04:11:09 UTC, b106, one reader, not blind); decoded once.
+decryptions/vienna_1636-03-26.txt = the first 46 lines of the b106 run output, byte for byte (checked).
+index numbers (not units): 13 x4, 62 x7
+S 17 + E 15 + N 1 = 33
+FIRST PASS (figure of record): strict 17/33 = 51.52%
+  of the E: codes 13 (64, 226x, 12, 168, 63, 226, 8, 9, 85, 168, 12, 11, 168), declared E words 2 (wowen, ?erpetuum); N 1 (32 29 25)
+'?' rule (doubtful figure = hole): 17/33 = 51.52% (the only doubtful figure is in ?erpetuum, already E)
+letter words only (b106's second figure; codes left out): 17/20 = 85.00%
+with code 165 added (b110, 12 Nov 04:40 UTC: a code on image 38 left, line 1, before '62 34 29 33 17', missed by the frozen transcription; counted E): 17/34 = 50.00%. The transcription file is not changed.
+POST-HOC, NOT OF RECORD (key v2, b110, made after this run from the Guenther gloss on image 48; key_history/KEY_pentz_v2_b110.txt):
+  v2 reads 64 and 12 as index numbers (gloss-attested; 3 units here). Dropped from the units: 17/33-3 = 17/30 = 56.67%; with 165: 17/31 = 54.84%
+  v2 also reads 63, 11, 9, 8 as index numbers by analogy only ([unverified]; 4 units here). Dropping those too: 17/26 = 65.38%; with 165: 17/27 = 62.96%
+  These re-scores change no reading and are not claimed: they rest on a later key, partly on analogy, after the run.
+
+## B. Glueckstadt, c.1629-30: SHLK A IV 89 (Relationer fra guvernoer i Glueckstadt Christian Pentz 1629-45), unit 274999, image 2 (recto)
+transcription md5 1e70795fd31a4ee8c1c30dce00354226 (frozen 12 Nov 2026 13:30:55 UTC, b157, one reader, NOT blind: he had applied table 1 to line 1 in his head before the freeze); decoded once with key v1 table 1, unchanged.
+decryptions/glueckstadt_c1630_img2.txt is byte-identical to the b157 run output (checked). Units and classes: the b157 reader, after the decode.
+S 25 + E 31 + N 12 = 68
+FIRST PASS (figure of record): strict 25/68 = 36.76%
+S+E (sense, holes included): 56/68 = 82.35%
+code units 11; letter units 57; strict on letter units 25/57 = 43.86% (b157's line, reproduced)
+  correction: those 11 bracketed units include the fragment [2?] (N); true code units 10; letter units 58; strict on letter units 25/58 = 43.10%
+'?' rule (doubtful figure = hole): 23/68 = 33.82% (S units with a doubtful figure: nUr, Prouiant)
+units where figure 28 (= z in table 1) stands where o is wanted: andwzrt, bekzme, anherkzmen (3; a homophone 28 = o is suspected and NOT applied; no count here uses it)
+
+Not pooled. The two documents are different letters of different years.
