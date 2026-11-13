@@ -50,3 +50,19 @@ already bring M5 to a median of 0.35 (max 0.43), so M5 >= 0.45 means fewer than 
 Result (one run, seed 517): 979 signs, 969 with a value (0.990); M5 = 0.509; best control 0.067 (median 0.025); gap 0.442. VALIDATED.
 The block is used up. Found by reading after the measurement (not part of the test): the Venus sign is o in p. 517 L1 (K-C01's value)
 and a in L28, against K-C02's [faire]; the barred dumbbell behaves as a null in L1 and L29 (Tomokiyo), as on p. 523 L22.
+
+== 4. Key K-C03 pre-registered on p. 513: no measurement (13 Nov 2026) ==
+Pre-registration PREREG-KC03 (SHA-256 a951b8bf7ae8ce85c32a0b7a774511bb14a3ea2dea3ed046c9b396c0a8787a8c), hashed at 22:45 CET before any
+transcription of p. 513 and before its margin was looked at. Key K-C03 (SHA-256 b734cb37...) = K-C02 + the values of key-p518-513.tsv
+(ven = o, oob = null, y = [Espagne], Xc = o, feq = f, fnb = u, ssi = p, dag = a), all taken from p. 517 after its measurement and from
+p. 518 (training page, never measured). Held-out portion: the cipher block of p. 513, never transcribed or decoded, chosen on a blurred
+thumbnail; estimated 120-200 signs. Rule fixed in advance: two transcription passes; if the frozen block has >= 300 signs, one measurement
+(M5 taken as the higher of the French and Italian lexicons, the same for 200 shuffled keys, seed 513; thresholds 0.45 / +0.30 as in
+section 3); if < 300 signs, no measurement, p. 513 read with K-C02 unchanged and the new values given as probable only.
+Result: the two passes gave 208 and 207 signs (hashed before arbitration). 208 < 300: NO MEASUREMENT. K-C03 is not validated.
+Declared deviations: (1) the two passes of p. 513 were decoded with K-C02 to settle their 11 differences before the no-measurement
+decision was written down (the count, already known to be < 300, made a test impossible either way); (2) the written K-C03 file had lost
+the line '# = i' through a clerical error (comment filter); corrected as K-C03.1 at 23:30, no other change.
+Informative only (not a test; block already seen): K-C03.1 on p. 513 gives M5 0.528 against a best shuffled key of 0.170; K-C02, 0.495
+against 0.123. Independent check: the margin of p. 513 carries a contemporary decipherment of the same block (partly in the binding),
+looked at only after the decision; it agrees with our reading word for word where both are legible, including "Espaigne" for y.
