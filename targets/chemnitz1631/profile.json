@@ -1,0 +1,219 @@
+{
+ "schema_version": 1,
+ "target": "chemnitz1631",
+ "title": "Martin Chemnitz (Swedish agent at Nuremberg) to Gustav II Adolf, Nov.-Dec. 1631 (Riksarkivet, Skrivelser till konungen 1133.07/4, R0000624 images 55-58): two-digit homophonic letter cipher; key rebuilt from the contemporary interlinear glosses of image 57 and tested on a held-out glossed page (58); a partial reading (88.8 %) of the bare passages of images 55 and 56 (contributed by Brice Dudout)",
+ "documents": [
+  {
+   "id": "ra-1133-07-4-r0000624-55",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/4 (C), image series R0000624, image 55",
+   "date": "1631 (Nov.-Dec.; the leaf's own date not read)",
+   "year": 1631,
+   "country": "Holy Roman Empire / Sweden",
+   "route": "Martin Chemnitz (Swedish Hofrat and agent at Nuremberg) -> King Gustav II Adolf",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on this leaf; the key comes from the glossed letter of image 57 in the same file.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 212,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF lbiiif.riksarkivet.se R0000624_00055 full resolution (Public Domain Mark); images not reproduced",
+    "image_quality": "good",
+    "notes": "Cipher groups only; the 7-line passage at the foot of the German text."
+   }
+  },
+  {
+   "id": "ra-1133-07-4-r0000624-56",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/4 (C), image series R0000624, image 56 (left page)",
+   "date": "7 Dec 1631",
+   "year": 1631,
+   "country": "Holy Roman Empire / Sweden",
+   "route": "Martin Chemnitz, Nuremberg -> King Gustav II Adolf",
+   "places": {
+    "from": "Nuremberg ('Datum Nürnberg den 7 Xbris Ao 1631')",
+    "to": "Gustav II Adolf (Mainz / Frankfurt)"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on this page; key from image 57.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 240,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF R0000624_00056 full resolution (Public Domain Mark); images not reproduced",
+    "image_quality": "good",
+    "notes": "Cipher groups only; 8-line passage."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Letter cipher for German: one- and two-digit numbers 2-95 with several homophones per letter (e: 18, 42, 65, 89, Sr; n: 8, 32, 49, 56, 79, m; t: 4, 28, 52, 75 ...), plus letter-like signs (a hooked long s = e, m = n, x = b, y = c and long-s ligatures); clear German between the passages; words separated by dots, commas or a slash, not by the cipher. The numbers run in a near-cycle of 24 (2, 26, 50, 73 = m; 4, 28, 52, 75 = t; 17, 41, 64, 88 = a), with a one-step slip after about 52; the order of letters within the cycle is not alphabetical, hence key_order 'random'.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 70,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "separator symbol"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The contemporary interlinear decipherment of the letter on image 57 (same writer, same file) gives the key; the bare passages of 55 and 56 carry no gloss. Not on DECODE; no edition found: Arkiv till upplysning om svenska krigens historia I-II (1854-1861, archive.org OCR) has no Chemnitz letter of 1631; a web search found none. Riksarkivet's 'Agenten Chemnitz brev till Kungl. Maj:t' (Diplomatica Germanica SE/RA/2106/F/XI/1392, 1631-1632) is not digitised and was not seen.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Daniel Bourdeau's Riksarkivet paging sweep of 13 Nov 2026 found the passages (lead 2570). Brice Dudout set the rules (protocol and key frozen by SHA-256 before one held-out measurement, thresholds fixed in advance). An AI agent transcribed, built the key, measured and wrote up. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Image 57: the whole glossed letter read by eye at full resolution, 124 gloss words aligned with their cipher groups (598 letter-group pairs, gloss57_pairs.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "crib",
+   "what": "Key = majority letter per group from the 57 pairs only (79 values); frozen with the protocol (PREREG-3) before any group of 55, 56 or 58 was transcribed by eye. An earlier test of a 23-value table on 55+56 (coverage 59 %) had failed; 55 and 56 were therefore not reused for testing.",
+   "result": "worked",
+   "technique": [
+    "crib testing"
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement on the held-out page 58 left (another letter, 5 Nov 1631; 144 groups, under the 150 asked, so indicative): German letter-frequency cosine 0.969 vs 0.869 for the best of 200 permuted keys, coverage 97 %; then agreement with 58's own glosses 95.6 % of 91 letters vs 34.1 % for the best control (thresholds >= 0.85 and >= 0.30 above the best control, fixed in advance).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Images 55 and 56 transcribed by eye (452 groups) and decoded with the frozen key; read by sense; values not in the glosses restored from the sense (46=w, 29=b, 51=r, ligatures Sd=w, Sf=t) and marked.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key learned from the contemporary interlinear decipherment of image 57 (same writer, same file) and applied to the unglossed passages of images 55 and 56.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "validation": {
+   "date": "2026-11-13",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered held-out test (not docs/_validate.py); protocol, pairs, key and the 58 transcription hashed before the run; the frequency test is indicative (144 < 150 groups), the gloss test passes."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription of images 55-58, key rebuilt from the glosses of image 57, pre-registered held-out measurement on 58, reading of 55-56 (88.8 % sure or probable) and summaries: Brice Dudout with Claude Opus 5.5 agents",
+    "date": "2026-11-13"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the interlinear decipherment written at the time on the letter of image 57; the key was learned from it",
+    "date": "1631"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "lead 2570, Riksarkivet paging sweep of 13 Nov 2026",
+    "date": "2026-11-13"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "89 cipher words of 55-56: 68 sure, 11 probable (one group read against the key or a doubtful 4/7, 24/27 figure), 10 on values restored from the sense; 88.8 % sure+probable, under the 95 % bar.",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "ra-1133-07-4-r0000624-55",
+     "ra-1133-07-4-r0000624-56"
+    ],
+    "label": "Images 55 and 56: the two bare cipher passages",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "de",
+    "state": "read in part",
+    "summary": "Chemnitz advises the king that the new troops at Nuremberg could harass the enemy's quarters but are too green to risk, and that the arms and guns stored at Ansbach should be seized by force before the enemy takes them, since asking the margrave's government would betray the plan to the enemy.",
+    "read_share": 0.888,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (model), agent run by Brice Dudout",
+     "date": "2026-11-13",
+     "note": "decryption.txt read line by line as German sentences: both passages construe throughout (unspaced, raw spelling: 'newe volck', 'travaillirens', 'ungetrewe'), normalised and translated in reading.md; 89 cipher words, 68 sure, 11 probable, 10 on values restored from the sense and marked; no human reader yet"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Writer identified from the signature ('M. Chemnitz') and the literature: Martin Chemnitz (1596-1645), sent by Gustav II Adolf to Nuremberg in October 1631. The glossed letter of image 57 is itself already read (the gloss), so it is not claimed."
+ }
+}
