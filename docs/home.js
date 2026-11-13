@@ -27,7 +27,15 @@
       await flip(Ls[Math.random()*Ls.length|0],300+Math.random()*300); } })();
   }
 
-  // the hero video: herovid.js
+  // the hero video: herovid.js. It waits in a dialog; the film button opens it and plays it from the start with sound,
+  // closing it stops it. Without JavaScript, or without <dialog>, the button is a plain link to the file.
+  const fb=document.querySelector('.filmbtn'), fd=document.querySelector('.filmdlg');
+  if(fb && fd && fd.showModal){
+    const fv=fd.querySelector('video');
+    fb.addEventListener('click',e=>{ e.preventDefault(); fd.showModal(); const b=fd.querySelector('.hv-sound'); if(b) b.click(); });
+    fd.addEventListener('close',()=>{ if(fv) fv.pause(); });
+    fd.addEventListener('click',e=>{ if(e.target===fd || e.target.closest('.film-x')) fd.close(); });
+  }
 
   // On a phone the four reference sections (results, browse, the catalogue queue, contributors) fold to a row each:
   // style.css hides their bodies under html.js until .open. The row is the heading, with a hint of what is inside and
