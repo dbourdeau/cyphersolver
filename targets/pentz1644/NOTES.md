@@ -44,7 +44,7 @@ Five more letters of Christian Pentz from the same unit 274999 were transcribed 
 | to the Chancellor, Glückstadt 8 Apr 1645 | 404-405 | 52 | 42 + 3 = 86.5% | read in part |
 | to the Chancellor, Glückstadt 20 Apr 1645 | 408-409 | 16 | 16 + 0 = 100% | read |
 | to Christian IV, Glückstadt 20 Apr 1645 | 411-412 | 108 | 95 + 6 = 93.5% | read in part |
-| to the Chancellor, 1645 (pencil 4/5, after 24 Apr) | 420 | 35 | 25 + 2 = 77.1% | read in part |
+| to the Chancellor, 1645 (pencil 4/5, after 24 Apr) | 420 | 36 | 28 + 3 = 86.1% (second reader, 14 Nov) | read in part |
 
 Per document, never pooled. Context: Torstensson's war, spring 1645; Glückstadt damaged by the March assault (the "Reithofel/Reithoffel" work, the new castle, the rampart, the old town gate); Pentz asks for money and orders for repairs, mentions the Spanish loan and a paymaster, and in late April Rendsburg "in the greatest danger".
 

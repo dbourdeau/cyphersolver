@@ -253,7 +253,7 @@
     "by": "llm from images",
     "source": "Rigsarkivet Arkivalieronline images (curl, same harvest as images 321-425), crops 2-4.5x",
     "image_quality": "fair",
-    "notes": "Two passes (A; B on re-made crops by the same model reader without reopening A), arbitration on the image; differences in transcriptions/suite/DIFF-AB.tsv; arbitrated sequence in TRANSCRIPTION-SUITE.json. Not frozen by SHA before decoding: these letters were decoded with the already-measured key v3 (application, no new test). Length: figure groups counted by us from the arbitrated sequence (TRANSCRIPTION-SUITE.json, legible figures incl. index figures), so measured is false."
+    "notes": "Two passes (A; B on re-made crops by the same model reader without reopening A), arbitration on the image; differences in transcriptions/suite/DIFF-AB.tsv; arbitrated sequence in TRANSCRIPTION-SUITE.json. Not frozen by SHA before decoding: these letters were decoded with the already-measured key v3 (application, no new test). Length: figure groups counted by us from the arbitrated sequence (TRANSCRIPTION-SUITE.json, legible figures incl. index figures), so measured is false. Image 420: independent second reader (pass C, frozen by SHA-256 before comparison), differences in DIFF-AC-420.tsv."
    }
   }
  ],
@@ -560,7 +560,8 @@
     "doc": "pentz_1645_img420",
     "label": "Christian Pentz to Herr Cantzler, 1645 (pencil 4/5; answers a letter of 24 April)",
     "transcription": [
-     "transcriptions/suite/A-420.txt"
+     "transcriptions/suite/A-420.txt",
+     "transcriptions/suite/C-420.txt"
     ],
     "decryption": [
      "decryptions/pentz_1645_img420.txt"
@@ -569,13 +570,13 @@
     "translation": "translations/pentz_1645_img420.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.771,
-    "summary": "The loss suffered has set back the peace; Rendsburg in the greatest danger; many troops lost; the fortress is far from provided with men.",
+    "read_share": 0.861,
+    "summary": "The loss suffered has set back the peace; Rendsburg in the greatest danger; many troops lost; the fortress is far from provided with men. Whoever is the cause of it.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (Anthropic), for Brice Dudout: a model reading, not a person, and not independent (same session).",
-     "date": "2026-11-13",
-     "note": "Partial reading: 27/35 cipher words; one dense overwritten passage and one code open. Dense, overwritten line (L03-L04, L14) partly unread; one code open."
+     "date": "2026-11-14",
+     "note": "Partial reading: 31/36 cipher words (28 sure, 3 probable). Image 420: independent second reader (pass C, frozen by SHA-256 before comparison), differences in transcriptions/suite/DIFF-AC-420.tsv. Code 101 and one passage (der lezere ineuperqte) open."
     }
    }
   ],
