@@ -1,0 +1,59 @@
+# counts.txt: written by scripts/build.py from the frozen files and the one-pass ledgers. Strict share = S/(S+E+N); N = 0 (no code groups in these slips).
+# Rule (b160, read after freezing): S = the decoded string is a German or Latin word as it stands (period spellings u/v, i/j, dt, th allowed;
+# proper names count; two words run together in the cipher count S when both read); E otherwise. No emendation, no rescoring.
+# Dan Bourdeau's rule ('?' units are holes): a word holding '?' (a cipher letter not in the key file: m, j, v) is counted not read.
+
+f6_KEY_v1 R1 [held out from KEY_v1; then TRAINING text of KEY_v2]  tx transcriptions/f6_frame10_R1_training.txt md5 2c1d1ee5  key KEY_lasa_v1.txt md5 c892c744
+   strict S/(S+E+N) = 35/101 = 34.65%   (ledger states 35/101; per-line figures match; unmatched ledger words none)
+   words holding '?': 3; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 35/101 = 34.65%
+   reproduces: YES
+f7 R1 [held out (first pass)]  tx transcriptions/f7_frame11_R1.txt md5 5620ca36  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 36/83 = 43.37%   (ledger states 36/83; per-line figures match; unmatched ledger words none)
+   words holding '?': 1; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 36/83 = 43.37%
+   reproduces: YES
+f7 R2 [held out (second reader)]  tx transcriptions/f7_frame11_R2.txt md5 ec516450  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 38/81 = 46.91%   (ledger states 38/81; per-line figures match; unmatched ledger words none)
+   words holding '?': 1; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 38/81 = 46.91%
+   reproduces: YES
+f101 R2 [held out (first pass; one reader only)]  tx transcriptions/f101_frame117_R2.txt md5 afef59b1  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 16/35 = 45.71%   (ledger states 16/35; per-line figures match; unmatched ledger words none)
+   words holding '?': 0; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 16/35 = 45.71%
+   reproduces: YES
+f102 R1 [held out (first pass)]  tx transcriptions/f102_frame118_R1.txt md5 2e78161c  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 28/81 = 34.57%   (ledger states 28/81; per-line figures match; unmatched ledger words none)
+   words holding '?': 1; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 28/81 = 34.57%
+   reproduces: YES
+f102 R2 [held out (second reader)]  tx transcriptions/f102_frame118_R2.txt md5 73f2202e  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 31/79 = 39.24%   (ledger states 31/79; per-line figures match; unmatched ledger words none)
+   words holding '?': 1; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 31/79 = 39.24%
+   reproduces: YES
+f104 R1 [held out (first pass)]  tx transcriptions/f104_frame121_R1.txt md5 20bb050f  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 45/101 = 44.55%   (ledger states 45/101; per-line figures match; unmatched ledger words none)
+   words holding '?': 0; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 45/101 = 44.55%
+   reproduces: YES
+f104 R2 [held out (second reader)]  tx transcriptions/f104_frame121_R2.txt md5 4494290d  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 46/101 = 45.54%   (ledger states 47/101; per-line figures DO NOT MATCH; unmatched ledger words none)
+   words holding '?': 2; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 46/101 = 45.54%
+   reproduces: NO
+f204 R1 [held out (first pass)]  tx transcriptions/f204_frame233_R1.txt md5 e2578787  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 24/51 = 47.06%   (ledger states 24/53; per-line figures DO NOT MATCH; unmatched ledger words none)
+   words holding '?': 0; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 24/51 = 47.06%
+   reproduces: NO
+f204 R2 [held out (second reader)]  tx transcriptions/f204_frame233_R2.txt md5 a33a4f5e  key KEY_lasa_v2.txt md5 c8fade56
+   strict S/(S+E+N) = 22/51 = 43.14%   (ledger states 22/51; per-line figures match; unmatched ledger words none)
+   words holding '?': 1; of them labelled S: 0  ->  Dan's '?'-as-hole rule: 22/51 = 43.14%
+   reproduces: YES
+
+Figure of record per slip (first pass with the frozen KEY_v2; training text excluded):
+   f7: 36/83 = 43.37% (reader R1)
+   f101: 16/35 = 45.71% (reader R2)
+   f102: 28/81 = 34.57% (reader R1)
+   f104: 45/101 = 44.55% (reader R1)
+   f204: 24/51 = 47.06% (reader R1)
+Second reader on the same slips (b162, frozen before its own one decode):
+   f7: 38/81 = 46.91%
+   f102: 31/79 = 39.24%
+   f104: 46/101 = 45.54%
+   f204: 22/51 = 43.14%
+No pooled figure is given as a headline.
+LEDGER FIGURES THAT DO NOT REPRODUCE (the reproduced figure is the one used): f104 R2 (ledger 47/101, reproduced 46/101); f204 R1 (ledger 24/53, reproduced 24/51)

@@ -1,0 +1,319 @@
+{
+ "schema_version": 1,
+ "target": "heespen1676",
+ "title": "The Heespen/Baudissin code: Danish commissioners at Bremen, 1675-76 (Rigsarkivet unit 262098): key rebuilt from contemporary glosses; one bare passage read in part (15.0%)",
+ "documents": [
+  {
+   "id": "heespen_1676-04-17_537L",
+   "read": "read in part",
+   "shelfmark": "Copenhagen, Rigsarkivet, Department of Foreign Affairs, unit 262098 (relations of the Danish commissioners at Bremen, G. A. Baudissin and W. Heespen, 1675 - May 1676), image 537 (image id 49059236), left page",
+   "date": "Bremen, 17 April 1676 (relation of W. Heespen)",
+   "year": 1676,
+   "country": "Denmark",
+   "route": "Wilhelm Heespen, Danish commissioner (Bremen) to the Danish court (Copenhagen)",
+   "places": {
+    "from": "Bremen",
+    "to": "Copenhagen"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No gloss on this passage. The key was rebuilt from the chancery's interlinear decipherments of other relations in the same unit (images 96, 117, 118, 240, 241, 320; gloss/)."
+   },
+   "length": {
+    "tokens": 158,
+    "distinct": 70,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcriptions/heespen_1676-04-17_537L.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Rigsarkivet API images (api.rigsarkivet.dk/ao/v1/images/49059236), full size and crops",
+    "image_quality": "good",
+    "notes": "12 cipher lines and one marginal line, 158 tokens (49 distinct numbers and about 20 drawn signs, 70 distinct in all), counted by scripts/count.py, so measured is false. Frozen 12 Nov 2026 18:05:46 UTC (md5 a9c2ae41) before the single decode. One reader, not blind: no second transcription. The frozen header gives image id 49059234; the API list gives 49059236 (see NOTES.md)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "German syllabic nomenclator: one- and two-digit numbers and about 20 drawn signs for letters and syllables, three-digit numbers for syllables and whole words (336 Allijrten, 97 Stade, 253 Coppenhagen), no word division.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 70,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 4,
+   "max_per_consonant": 5
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 28,
+   "kinds": [
+    "syllables",
+    "common words",
+    "places"
+   ],
+   "unread_groups": 22
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "distinct_symbols counts distinct tokens in the 537L transcription. nomenclator.entries = whole-word codes in key v2 (a gloss writes a whole word over the code alone; controls/word_layer.txt); unread_groups = distinct signs of 537L with no value in either key (holes.md section 2: 22). homophones from single-letter values in key v2 (i 4 codes, t 5). key_order: the 400s (400 da, 401 de) and 700s (733 we, 735 wo, 743 wie, 744 wol) run partly in alphabetical order; the low numbers do not."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not found as far as checked (PRIOR_ART.md): Aarsberetninger fra Geheimearchivet VI (1878) p. 127 names the commissioners, no cipher text; Danske Magazin; Cyphersolver catalogue (row 602 = the Oldenburg parallel relations, not digitised); four web searches; part of Rigsarkivet's Vejledende Arkivregistraturer XVI. NOT checked: HathiTrust and Google Books full text, Rigsarkivet key collections, the Oldenburg file. Priority not claimed.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Malcolm McBratney directed the work and set the rules (every attempt recorded, key and transcription frozen before one decode, held-out glossed pages, shuffled-key controls, no claim without its check) and authorised filing below the project's own 65% line; Claude sessions found the glossed and bare pages, transcribed the gloss pairs, built the keys, transcribed and decoded the bare passage and ran the controls. No reading by a person without AI.",
+  "tools": [
+   "own Python key builder from gloss pairs, majority rule (scripts/buildkey.py)",
+   "own Python decoder and per-unit count (scripts/decode.py, scripts/count.py)",
+   "held-out gloss checks (scripts/heldout.py)",
+   "shuffled-key control, 5,000 keys, German 4-gram model with a language-header guard (scripts/shuffle_control.py)",
+   "word-layer shuffle control over the key's word inventory (scripts/word_control.py)",
+   "Rigsarkivet API images, crops and contact sheets (PIL)"
+  ],
+  "models": [
+   "Claude (Anthropic), sessions b179 and b180 of 12 Nov 2026 (model ids not recorded)",
+   "claude-opus-5-5 (b191, the session that prepared this folder)"
+  ],
+  "sessions": 3,
+  "first_date": "2026-11-12",
+  "last_date": "2026-11-13"
+ },
+ "solution": [
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Rigsarkivet unit 262098 (Bremen commissioners 1675 - May 1676) surveyed: Heespen-code cipher on about 34 images, all glossed between the lines by the chancery except one block, image 537 left page (Heespen, Bremen 17 Apr 1676).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "KEY_HB_v1 from the glosses on images 96, 117, 118: each code takes the value most often written over it; 95 codes, 232 attestations, 3 conflicts kept. Frozen 17:59:12 UTC (md5 5dad6d11) before the bare page was seen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out glossed page 342R decoded with v1: 28 valued tokens of 32 agree with the gloss (filed as 29; recounted 28 in b191), 26/28 with spelling allowances counted against, 24/28 by a strict mechanical rule.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Bare passage 537L transcribed (158 tokens, 12 lines and a margin line) and frozen 18:05:46 UTC (md5 a9c2ae41). One reader, not blind.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "537L decoded once with v1 (18:05:51 UTC) and judged once: 60 word units, S 9 + N 13 + E 38; strict 9/60 = 15.0%, the figure of record. Only short function words read (der, an, den, als, mit, dem).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "5,000 shuffled keys per seed, German 4-gram model (Simplicissimus, language header asserted): 0 of 5,000 reach the true score at seed 20261112 (true -4.4246, best -4.6888) and at seed 7 (best -4.5144).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "KEY_HB_v2 from the v1 glosses plus images 240 L/R, 241 L, 320 L: 121 codes, 119 valued, 2 ties left unvalued, 359 attestations. Frozen 18:47:22 UTC (md5 374a472c). Page 413 set aside before building.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out glossed page 413 decoded with v2: 40/42 valued tokens agree (95.24%); 39/42 counting führ/für against; 40/50 counting unvalued tokens as holes; 36/42 by the mechanical rule.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "NON-BLIND re-decode of 537L with v2 (the page had been seen before v2 was built): strict 11/60 = 18.3%; 15/60 = 25.0% reading 709 as vo. Not a test; does not count.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "Screened 2,919 images for more text in this code (b179 628 in 262098 and 262100; b180 2,291 in 262100, 262102, 262105, 262107): no other bare passage.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Word-layer control: 9 held-out glossed groups open with a word code and 8 agree; values permuted over the key's own word inventory reach 8 in 0 of 5,000 at seed 20261112 (best 5) and 0 of 5,000 at seed 7 (best 4). 537L itself rests on one word code (330 = als, two glosses).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "literature search",
+   "what": "Prior art: see conditions.prior_solution and PRIOR_ART.md. HathiTrust, Google Books and Rigsarkivet key collections not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Folder rebuild (b191): every script re-run on the folder's files; decodes, keys, counts, held-out checks and controls byte-identical to the stored outputs, except the 342R count (29 filed, 28 reproduced).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (PR #523, report R8_bremen): all scripts re-run with python3 -I (decodes, keys, held-out, counts, word-layer control byte-identical; shuffle seed 20261112 reproduced with a fresh Gutenberg 55171, md5 as asserted); own decoder from key.tsv gives the same 537L letters (106/158 v1, 122/158 v2); Rigsarkivet images 49059236 (537) and 49059110 (413) fetched: 145/145 tokens of the 12 main lines of 537L and all 18 glossed groups of 413 with their glosses agree; strictest held-out figure (unvalued as holes and mechanical) 342R 24/32 = 75.0%, 413 36/50 = 72.0%. Gap blocker corrected to not-attempted; target kept in progress (workable gaps).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt only from the Danish chancery's interlinear decipherments of other relations in the same archival unit (262098), frozen, tested on held-out glossed pages, and applied once, unchanged, to the one passage that carries no gloss.",
+  "contribution": [
+   "key recovered",
+   "transcription",
+   "sender or date identified"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "units/heespen_1676-04-17_537L_v1_ledger.tsv and counts_raw.txt (scripts/count.py): 9 of 60 word units of 537L spelt entirely by frozen KEY_HB_v1 values. Unit = a word of the plaintext.",
+  "fraction_read": 0.15,
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Danish chancery's interlinear decipherments of the Bremen commissioners' relations (Rigsarkivet unit 262098, images 96, 117, 118, 240, 241, 320), from which both keys were rebuilt",
+    "date": "1675-1676"
+   },
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "Heespen/Baudissin key rebuilt from the glosses (v1, v2) and tested on held-out glossed pages; the bare 17 Apr 1676 passage read in part (15.0%), with AI agents",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "gloss pairs from six glossed images, two held-out glossed pages and the bare passage 537L, one reader, with AI agents",
+    "date": "2026-11-12"
+   },
+   {
+    "who": "mcbratney",
+    "role": "identification",
+    "note": "the bare passage on image 537 (Heespen, Bremen 17 Apr 1676) and the code's use across unit 262098",
+    "date": "2026-11-12"
+   }
+  ],
+  "validation": {
+   "date": "2026-11-12",
+   "file": "controls/shuffle_537L_v1.txt",
+   "verdict": "not applicable",
+   "notes": "Contributor's own shuffled-key control (not docs/_validate.py, which was not run): 5,000 shuffled keys per seed, German 4-gram model (Language header asserted): 0 reach the true score (true -4.4246; best -4.6888 seed 20261112, -4.5144 seed 7). The control shows the key's values read more like German than shuffled values; it does not show the reading is right, and 15.0% is far below the contributor's own 65% line."
+  },
+  "gaps": [
+   {
+    "item": "Signs of 537L with no value: 52 of 158 tokens under v1, 36 under v2 (holes.md section 2)",
+    "blocker": "not-attempted",
+    "detail": "most glossed pages of unit 262098 were not transcribed (336, 340, 342, 389, 391, 401, 411, 455, 481, 526 and others); transcribing them is the way to a bigger key"
+   },
+   {
+    "item": "No fresh bare text to test a bigger key",
+    "blocker": "no-key-material",
+    "detail": "2,919 images screened in 262098-262107, no other bare passage; detection weaker on images viewed at about 333 px"
+   },
+   {
+    "item": "Oldenburg, NLA Best. 20-44 Nr. 8 (catalogue row 602): parallel Klingenberg/Heespen relations with cipher",
+    "blocker": "needs-physical-access",
+    "detail": "not digitised, not seen"
+   },
+   {
+    "item": "537L blind second transcription",
+    "blocker": "not-attempted",
+    "detail": "one reader, not blind"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "heespen_1676-04-17_537L",
+    "label": "W. Heespen, relation to the Danish court, Bremen 17 Apr 1676, cipher block on image 537 left page",
+    "transcription": [
+     "transcriptions/heespen_1676-04-17_537L.txt"
+    ],
+    "decryption": [
+     "decryptions/heespen_1676-04-17_537L_v1_once.txt",
+     "decryptions/heespen_1676-04-17_537L_v2_NONBLIND.txt"
+    ],
+    "reading": "readings/heespen_1676-04-17_537L.md",
+    "translation": "readings/heespen_1676-04-17_537L.md",
+    "language": "de",
+    "state": "decoded, not read",
+    "read_share": 0.15,
+    "summary": "Fragments only: function words (der, an, den, als, mit, dem) and shapes suggesting Intention and perhaps Münster. No sense of the passage can be given. Context: Heespen and Baudissin were instructed in January 1676 to treat with the Münster ministers at Bremen (Danish council protocol, 28 Jan 1676).",
+    "note": "read_share is the strict share of word units read with key v1, the first and only blind decode: 9 of 60. The v2 decode (11/60 = 18.3%) is non-blind and not counted. The English version is AI-made. Text state is decoded, not read: only short function words are read; the entry class stays read in part (the key and its held-out tests)."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "gloss/KEY_HB_v1.tsv",
+   "gloss/KEY_HB_v2.tsv"
+  ],
+  "notes": "No docs/_validate.py run (repository scripts not run by the contributor). Filed below the contributor's own 65% line, at the contributor's direction, so the key and its tests are on record. Held-out key tests per page in NOTES.md and controls/heldout.txt.",
+  "codes_open": {
+   "open": 30,
+   "total": 70,
+   "tokens_open": 52
+  }
+ }
+}

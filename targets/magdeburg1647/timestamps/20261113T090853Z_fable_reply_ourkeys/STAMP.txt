@@ -1,0 +1,8 @@
+LABEL: fable_reply_ourkeys
+Local UTC: 20261113T090853Z
+Files: 11
+Manifest SHA-256: 650a82c9ed32e84d9021fafd95b5637b62343799e5b6e19fb2ed0ac8762fee9f
+RFC3161 TSA (Sectigo Public Time Stamping Signer): status=Granted. time=Nov 13 09:08:54 2026 GMT
+OpenTimestamps: submitted (pending Bitcoin; ots upgrade later)
+Verify RFC3161: openssl ts -reply -in MANIFEST.sha256.tsr -text ; openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.tsr -CAfile <Sectigo chain>
+Verify OTS: ots verify MANIFEST.sha256.ots
