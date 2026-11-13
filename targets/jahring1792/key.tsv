@@ -1,0 +1,12 @@
+# Working key = key_frozen.tsv plus two sign values set after the freeze (see NOTES.md, Key).
+# field	value
+table	porta
+alphabet	abcdefghijklmnopqrstuvwxyz
+keyword	constantinopolitanus
+key_start	restart with each run; runs on across line breaks
+# Porta table: the key letter picks one of 13 reciprocal alphabets (key pairs ab, cd, ef, ..., yz).
+# For pair index k (a,b=0; c,d=1; ...; y,z=12): a cipher letter x in a-m gives n-z: 13+((x+k) mod 13);
+# a cipher letter x in n-z gives a-m: (x-13-k) mod 13. Encryption and decryption are the same operation.
+sign	ð	f	the looped upright d-shape is the cipher letter f (set after the freeze: 119.3, 119.12, 119.13, 120.3, 119L.1; plain d stays d)
+sign	•	o	the heavy dot that opens runs 119.10 and 119.12 is a blotted o (set after the freeze: both runs then start with key letter c and read aufk... and aus...)
+skip	[...]	struck letters are skipped and take no key letter
