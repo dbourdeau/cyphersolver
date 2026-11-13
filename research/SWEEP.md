@@ -84,7 +84,7 @@ A lead enters the catalogue only when its `vetting` block is complete (README Co
 If you saw the ciphertext and ran the prior-art searches for a row, add the block to that row, with `by` naming the
 contributor and the agent, and at least three searches actually run for that document listed in it. If an edition
 that would cover the item could not be opened, leave the block out and name the volume in `verify`. No block is
-better than a weak `open`.
+better than a weak `open`. Vetting leads that an earlier sweep left unvetted is a job of its own: [`VET.md`](VET.md).
 
 ## 6. Hand it over
 

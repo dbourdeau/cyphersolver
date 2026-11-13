@@ -9,13 +9,14 @@ Work that is not a single cipher target: the archive sweeps that look for new ci
 | File | What it is |
 |---|---|
 | [`SWEEP.md`](SWEEP.md) | The brief a contributor gives their own AI agent to run one sweep: read what has been searched, choose an archive, search, write the folder. |
+| [`VET.md`](VET.md), [`vet.py`](vet.py) | The brief a contributor gives their agent to vet leads already found, the list of leads waiting (`--list`) and the check of a vetting file (`--check`). |
 | [`COVERAGE.md`](COVERAGE.md) | What has **not** been swept yet, by area and archive. Pick a sweep from it; remove the row when a sweep closes it. |
 | [`leads.json`](leads.json) | Every lead the sweeps found that is not yet vetted into `catalogue.json`. Written by `merge.py`, never by hand. |
 | [`archive_sweep_2026-10/BRIEF.md`](archive_sweep_2026-10/BRIEF.md) | What counts as a lead, and the row a sweep writes for each one (`candidates.json`). |
 | [`archive_sweep_2026-10/known.py`](archive_sweep_2026-10/known.py) | `python known.py "<shelfmark or name>"`: is this item already in the catalogue, the leads, the notes or DECODE? Run it before writing a row. |
 | [`vetting_2026-11/BRIEF.md`](vetting_2026-11/BRIEF.md) | How a lead is vetted before it can enter the catalogue (the vetting bar is in the README Conventions). |
 
-A lead goes from a sweep to the catalogue in four steps: the sweep writes `<folder>/candidates.json`; `python research/archive_sweep_2026-10/merge.py --write` merges it into `leads.json`; a vetting pass fills the lead's `vetting` block; `python docs/_check_catalogue.py --promote <id>` moves it to `catalogue.json`. A contributor's agent does the first step only, from [`SWEEP.md`](SWEEP.md), and sends its folder as a pull request ([CONTRIBUTING.md](../CONTRIBUTING.md), "Searching an archive with your AI").
+A lead goes from a sweep to the catalogue in four steps: the sweep writes `<folder>/candidates.json`; `python research/archive_sweep_2026-10/merge.py --write` merges it into `leads.json`; a vetting pass fills the lead's `vetting` block; `python docs/_check_catalogue.py --promote <id>` moves it to `catalogue.json`. A contributor's agent does the first step from [`SWEEP.md`](SWEEP.md) or the third from [`VET.md`](VET.md), and sends its folder as a pull request ([CONTRIBUTING.md](../CONTRIBUTING.md), "Searching an archive with your AI").
 
 ## A sweep folder
 

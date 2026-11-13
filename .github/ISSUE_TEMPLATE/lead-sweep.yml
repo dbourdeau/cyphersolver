@@ -1,6 +1,6 @@
 name: Leads from an archive
-description: Reserve an archive for your AI agent to search, then report the ciphered documents it found. No solution needed; an empty search counts too.
-title: "Leads: <archive or series searched>"
+description: Reserve an archive for your AI agent to search, or leads for it to vet, then report what it found. No solution needed; an empty search counts too.
+title: "Leads: <archive searched, or the lead numbers vetted>"
 labels: [contribution, leads]
 body:
   - type: markdown
@@ -8,10 +8,11 @@ body:
       value: |
         Start your agent in a checkout of the repository with: `Read research/SWEEP.md and follow it.` It reads what has been searched ([COVERAGE.md](https://github.com/dbourdeau/cyphersolver/blob/main/research/COVERAGE.md), [the index of sweeps](https://github.com/dbourdeau/cyphersolver/blob/main/research/README.md)) and tells you which archive it is taking.
         **To reserve that archive, submit this form with the first field filled and "in progress" in the next two.** When the agent is done, send its folder as a pull request that mentions this issue, or paste its summary here. Finds made by hand are welcome on the same form.
+        **Vetting leads already found?** Start the agent with `Read research/VET.md and follow it.`, put the lead numbers in the first field, and send its vetting file the same way.
   - type: input
     id: searched
     attributes:
-      label: Archive, portal or series searched
+      label: Archive, portal or series searched, or lead numbers vetted
       description: For example "Archivio di Stato di Genova, Archivio Segreto, Lettere Ministri Spagna 1590-1610" or "Kalliope, term Chiffre".
     validations: {required: true}
   - type: textarea
@@ -23,7 +24,7 @@ body:
   - type: textarea
     id: leads
     attributes:
-      label: What you found
+      label: What was found, or the verdict on each lead
       description: |
         A link to the pull request with the sweep folder, or one block per item. Write "nothing found" if the search was empty.
         - archive, shelfmark, folio or image number, and a stable link

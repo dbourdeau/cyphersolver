@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to contribute &mdash; solutions, new ciphers, archive searches and checks for the ledger</title>
-<meta name="description" content="How to add to the ledger of historical ciphers: a solution to a listed cipher, a new unsolved cipher, a new cipher with its solution, an archive searched by your AI for new ciphers, or an independent check of a reading." data-full="How to add to the ledger of historical ciphers: a solution to a listed cipher, a new unsolved cipher, a new cipher with its solution, an archive searched by your AI for new ciphers, or an independent check of a reading. What to send, where, and how it is credited.">
+<title>How to contribute &mdash; solutions, new ciphers, leads found and vetted, and checks for the ledger</title>
+<meta name="description" content="How to add to the ledger of historical ciphers: a solution to a listed cipher, a new unsolved cipher, a new cipher with its solution, new ciphers found and vetted by your AI, or an independent check of a reading." data-full="How to add to the ledger of historical ciphers: a solution to a listed cipher, a new unsolved cipher, a new cipher with its solution, new ciphers found and vetted by your AI, or an independent check of a reading. What to send, where, and how it is credited.">
 <link rel="stylesheet" href="style.css?v=02aff2b7">
 <meta name="date" content="2026-10-13">
 <meta name="last-modified" content="2026-10-29">
@@ -17,8 +17,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cyphersolver">
 <meta property="og:url" content="https://cyphersolver.com/contribute.html">
-<meta property="og:title" content="How to contribute &mdash; solutions, new ciphers, archive searches and checks for the ledger">
-<meta property="og:description" content="How to add to the ledger of historical ciphers: a solution to a listed cipher, a new unsolved cipher, a new cipher with its solution, an archive searched by your AI for new ciphers, or an independent check of a reading.">
+<meta property="og:title" content="How to contribute &mdash; solutions, new ciphers, leads found and vetted, and checks for the ledger">
+<meta property="og:description" content="How to add to the ledger of historical ciphers: a solution to a listed cipher, a new unsolved cipher, a new cipher with its solution, new ciphers found and vetted by your AI, or an independent check of a reading.">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
 <meta name="twitter:card" content="summary_large_image">
 <!-- social:end -->
@@ -71,7 +71,7 @@
       <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:11.25">The letter</button><button type="button" data-t="11.25" style="--w:10">How it works</button><button type="button" data-t="21.25" style="--w:15">The ledger</button><button type="button" data-t="36.25" style="--w:13.75">How to contribute</button><button type="button" data-t="50" style="--w:8.75">To the archive</button></div>
     </figcaption>
   </figure>
-  <div class="jump"><a href="#kinds">Six kinds</a><a href="#leads">Point your AI at an archive</a><a href="#send">How to send</a><a href="#credit">How credit works</a><a href="#next">What happens next</a><a href="archives.html">To the archive</a><a href="contributors.html">Contributors</a></div>
+  <div class="jump"><a href="#kinds">Six kinds</a><a href="#leads">Point your AI at an archive</a><a href="#vet">Vet leads</a><a href="#send">How to send</a><a href="#credit">How credit works</a><a href="#next">What happens next</a><a href="archives.html">To the archive</a><a href="contributors.html">Contributors</a></div>
   <p class="meta">Daniel Bourdeau and contributors &middot; posted <time datetime="2026-10-13">13 October 2026</time> &middot; updated <time datetime="2026-10-29">29 October 2026</time></p>
 </section>
 
@@ -112,8 +112,9 @@
 <h3 id="new-solved">A new cipher with its solution</h3>
 <p>Both of the above: the document, then the key, the full transcription and decipherment, and how you obtained them. Results that have never been published are welcome; say whether they may be shown here in full or only noted.</p>
 
-<h3 id="leads">An archive searched by your AI</h3>
-<p>Every cipher in the <a href="catalogue.html">catalogue</a> was first a lead: a line in an archive&rsquo;s catalogue, or a leaf in a digitised volume, that is in cipher and that nobody seems to have read. Here the leads are found by AI agents that search an archive&rsquo;s portal, open the page images and check each find against what is already known. You can run one. You do not need to know the archive, read its language or solve anything: you point your agent at the repository, and the repository tells it what has been searched and what to do.</p>
+<h3 id="leads">New ciphers found and vetted by your AI</h3>
+<p>Every cipher in the <a href="catalogue.html">catalogue</a> was first a lead: a line in an archive&rsquo;s catalogue, or a leaf in a digitised volume, that is in cipher and that nobody seems to have read. Here the leads are found by AI agents that search an archive&rsquo;s portal, open the page images and check each find against what is already known. A lead becomes a catalogue entry only after it is vetted: the ciphertext seen, earlier decipherments searched for, duplicates excluded. You can run an agent for either half, <a href="#sweep">finding leads</a> or <a href="#vet">vetting them</a>. You do not need to know the archive, read its language or solve anything: you point your agent at the repository, and the repository tells it what has been done and what to do.</p>
+<p id="sweep"><b>Finding leads: search an archive.</b></p>
 <ol>
 <li><b>Open the repository in your agent.</b> Clone <a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">github.com/dbourdeau/cyphersolver</a> and start a coding agent in it that can browse the web and read images (Claude Code, Codex, Gemini CLI or another).</li>
 <li><b>Give it the brief.</b> One line is enough:
@@ -124,7 +125,17 @@ Name an archive, a portal or a series in place of the last sentence if you have 
 <li><b>Send what it wrote.</b> The agent leaves one folder: its notes on what it searched, and a list of the ciphered documents it found, each with its shelfmark, a link, what is on the leaf and what was checked for an earlier decipherment. Send the folder as a pull request, or paste the agent&rsquo;s summary into the form.</li>
 </ol>
 <p><b>What you bring</b> is what the project&rsquo;s own agents lack. Your network: many portals refuse the project&rsquo;s machines and answer yours, and the coverage list has a whole section of archives &ldquo;tried and blocked&rdquo;. Your browser, when a site asks whether you are human (the agent must not get round that check; you clear it). A reader&rsquo;s login, if you hold one. And the hours: paging through a digitised volume leaf by leaf finds the ciphers that no catalogue mentions.</p>
-<p>A search that finds nothing is sent and credited like one that finds ten: its notes save the next agent the same work. If you want to work on a cipher your agent found, say so and it is held for you. Found something by hand, in an archive you know? The same form takes it: the shelfmark, a link, and what is on the leaf.</p>
+<p>A search that finds nothing is sent and credited like one that finds ten: its notes save the next agent the same work. Found something by hand, in an archive you know? The same form takes it: the shelfmark, a link, and what is on the leaf.</p>
+<p id="vet"><b>Vetting leads: turn a find into a catalogue entry.</b> Several hundred leads are waiting. Each was found by a search and then stopped short of the catalogue, usually for one named reason: an edition that could not be opened, a portal that refused, a database behind a subscription, a leaf not yet looked at. The brief is one line again:</p>
+<pre><code>Read research/VET.md and follow it. Leads: pick ten that are online.</code></pre>
+<ol>
+<li><b>It lists what is waiting</b> (<code>python research/vet.py --list</code>), each lead with the reason the last attempt stopped, and picks those whose obstacle you can lift. Tell it what you have: a library subscription, a reader&rsquo;s login, a book on your shelf.</li>
+<li><b>Reserve the leads</b> it chose, on the same <a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml" rel="noopener">form</a>, by their numbers.</li>
+<li><b>For each lead it does four things</b>: looks for the same document already in the ledger; searches for a decipherment in <a href="https://de-crypt.org/" rel="noopener">DECODE</a>, Satoshi Tomokiyo&rsquo;s <a href="https://cryptiana.web.fc2.com/" rel="noopener">Cryptiana</a>, George Lasry&rsquo;s papers, the printed edition and the literature; opens the leaf and says what is on it; records any key that might fit.</li>
+<li><b>It gives a verdict</b>: open, already read, a duplicate, not a cipher, or still not settled, with the reason. A lead closed as read is as useful as one found open: it keeps solvers from a letter that is already read.</li>
+<li><b>Send the file it wrote</b>, once its own check passes (<code>python research/vet.py --check</code>), as a pull request.</li>
+</ol>
+<p><b>Into the catalogue.</b> The file is reviewed, and every lead vetted open is promoted: it becomes an entry of the <a href="catalogue.html">catalogue</a> under the same number, offered to anyone to solve, and it keeps the record of who checked what. The promotion is done by the project through a gate that refuses an entry whose checks are incomplete; a lead it refuses comes back to you with what is missing. If you want to work on a cipher your agent found or vetted, say so and it is held for you.</p>
 
 <h3 id="verify">A verification of a reading already here</h3>
 <p>The <a href="contributors.html#verify">verification queue</a> lists the readings whose key was recovered or matched here and that no one outside the project has checked. Take the images and the key from the write-up, decipher a passage yourself (a paragraph is enough), and report:</p>
@@ -144,7 +155,7 @@ Name an archive, a portal or a series in place of the last sentence if you have 
 <h2 id="credit"><span class="num">03</span> How credit works</h2>
 <ul>
 <li><b>On the write-up.</b> The page names every contributor under its outcome line, with what each did: solution, new cipher, verification, key correction, transcription, identification, a pointer to a source, or the key or decipherment the reading used.</li>
-<li><b>On a lead.</b> A lead your search found carries your name from the day it is filed. When the cipher is taken up, by you or by anyone else, its write-up credits you for bringing it into the ledger.</li>
+<li><b>On a lead.</b> A lead your search found carries your name from the day it is filed, and a lead you vetted carries your name on its record of checks. When the cipher is taken up, by you or by anyone else, its write-up credits the finder for bringing it into the ledger.</li>
 <li><b>On the contributors page.</b> Credits are added up by person and by kind, each count linking to the write-ups. The top contributors are listed on the front page.</li>
 <li><b>Your name, your way.</b> Say how you want to be named (full name, initials, a handle) and where your name should link.</li>
 <li><b>Unpublished work.</b> An earlier solution you never published is noted as unpublished, and shown in full only with your agreement.</li>
@@ -155,7 +166,7 @@ Name an archive, a portal or a series in place of the last sentence if you have 
 <ul>
 <li>The contribution is checked against the images: the key applied to the ciphertext, the decipherment read for sense.</li>
 <li>It is filed in the target&rsquo;s folder with its key, transcription and notes, given a <a href="glossary.html#methods">method</a> and an extent, and written up or added to an existing write-up.</li>
-<li>A search is merged with its notes, so the next agent starts from it. Its finds are filed as leads, vetted, and moved into the <a href="catalogue.html">catalogue</a> once the ciphertext has been seen and no decipherment found. One that turns out to be read already, or a duplicate, is closed with the reason, and you are told.</li>
+<li>A search is merged with its notes, so the next agent starts from it. Its finds are filed as leads. A lead that is vetted open, by the project or by a contributor, is promoted into the <a href="catalogue.html">catalogue</a>; one that turns out to be read already, a duplicate or not a cipher is closed with the reason, and you are told.</li>
 <li>Where the target is on <a href="https://de-crypt.org/" rel="noopener">DECODE</a>, the corrections and the decipherment are queued for the DECODE record, credited to you.</li>
 <li>The ledger also feeds a study of how language models perform against historical ciphers. A result you contributed is marked as yours and is kept out of the model&rsquo;s figures.</li>
 <li>Tools are your choice, including AI. Say what you used, and check the reading against the images before sending it.</li>

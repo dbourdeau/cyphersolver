@@ -13,7 +13,7 @@ This repository is a shared ledger of historical ciphers: what has been decipher
 | A fuller reading of a partial one | the write-up and the gap (from its NOTES.md `## Remaining gaps` or [contributors.html#further](https://dbourdeau.github.io/cyphersolver/contributors.html#further)), the value or reading you propose, the evidence for it | [Fuller reading](https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml) |
 | A new unsolved cipher | archive, shelfmark, folio, image link, date and correspondents if known, what you know of its status | [New cipher](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher.yml) |
 | A new cipher with its solution | both of the above; say whether an unpublished result may be shown in full | [New cipher with solution](https://github.com/dbourdeau/cyphersolver/issues/new?template=new-cipher-solved.yml) |
-| An archive searched by your AI | the sweep folder your agent wrote from `research/SWEEP.md`: what it searched, each ciphered item found (shelfmark, link, what is on the leaf, earlier decipherments checked); an empty search counts | [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) |
+| New ciphers found and vetted by your AI | the sweep folder your agent wrote from `research/SWEEP.md` (what it searched, each ciphered item found; an empty search counts), or the vetting file it wrote from `research/VET.md` (a verdict with its evidence for each lead) | [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) |
 | A verification of a reading here | the passage and images you worked from, where your reading agrees and where it does not | [Verification](https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml) |
 
 **Full texts.** A contribution that claims a document is read, in full or in part, has to include the complete
@@ -74,6 +74,26 @@ browser when a site asks whether you are human (the agent must not get round a b
 login, and the hours it takes to page through a volume leaf by leaf. An empty search is merged and credited like a
 full one. A lead keeps its finder's name, and the write-up of a cipher that came from it credits the finder with the
 role `new cipher`. A find made by hand goes on the same form.
+
+## Vetting leads into the catalogue
+
+A lead enters `catalogue.json` only when its `vetting` block meets the vetting bar (README Conventions): ciphertext
+seen, prior art searched, keys recorded, duplicates searched, verdict `open`. Several hundred leads in
+`research/leads.json` have no verdict yet, most with a named blocker (`vetting_note`). Your agent can vet them:
+
+1. **Give it the brief**: `Read research/VET.md and follow it. Leads: pick ten that are online.` (or give ids, or an
+   area). [research/VET.md](research/VET.md) has it list the waiting leads with `python research/vet.py --list` and
+   prefer those whose blocker you can lift: a subscription, a reader's login, a book, another network.
+2. **Reserve the lead ids** on the [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) form.
+3. **Send the folder it wrote**, `research/vetting_<yyyy-mm-dd>_<handle>/` (`vetting.json`: `{"<lead id>": block}`;
+   `README.md`), as a pull request, once `python research/vet.py --check <folder>/vetting.json` prints `result: pass`.
+   The check holds it to the rules of the project's own passes: at least three searches run for each lead, nothing
+   pasted across leads, and a reason on every verdict other than `open`.
+
+**Promotion** is run by the project after review, never in the pull request: the blocks are applied to
+`research/leads.json`, and `python docs/_check_catalogue.py --promote <id>` moves each lead vetted `open` into
+`catalogue.json` under the same id. Leads vetted `read`, `partly_read`, `duplicate` or `not_cipher` are closed with
+the reason. Do not edit `research/leads.json` or `catalogue.json` in a pull request.
 
 Not on GitHub? Email <picture><source media="(prefers-color-scheme: dark)" srcset="docs/email-dark.png"><img src="docs/email.png" alt="email address (see image)" height="22"></picture> with the same details. The entry is made for you and credited the same way.
 
