@@ -9,7 +9,7 @@ Conventions as in `reading-p517.md`. Decryption: `decryption-p513.txt` (K-C02 un
 
 ## Word list (as counted)
 
-‹sin› ‹[Roy]o› ‹u?i› qu'en {[Espagne]} le sieur de {Longlée} ‹x› {m'avise} qu'ils font praticques si l'eglise
+‹sin› ‹[Roy]o› ‹nmi› qu'en {[Espagne]} le sieur de {Longlée} ‹x› {m'avise} qu'ils font praticques si l'eglise
 changeoit de pasteur {fortifiant} leur desaings et afoiblisant ceuls des autres et qu'a esté envoié ici ordre {expres} et [pour] ce que
 c'est chose tant importante [pour] le seruice du [Roy]
 
@@ -21,8 +21,9 @@ c'est chose tant importante [pour] le seruice du [Roy]
 - L10 `?ortifiant` -> **fortifiant**: the bold = overwritten by a double oblique (`eqtt`) as f (eq = f); margin "fortiffiant".
 - L12 `elpres` -> **expres**: the beta-like long s (rl, l elsewhere) as x; margin "exprès".
 
-Unresolved: the first three groups (`··sin[Roy]o` at the end of L7, `u?i` at the start of L8, where the first sign is cut by the margin
-and r2 has no value); the margin there reads only "…oy qu'en Espaigne". And the lone sign after "Longl".
+Unresolved: the first three groups (`··sin[Roy]o` at the end of L7, `nmi` at the start of L8); the margin there reads only "…oy qu'en
+Espaigne". The two doubtful signs of `nmi` were settled by a blind shape sheet (14 Nov 2026: N and the section sign ss = m); the
+group still makes no word, so the count is unchanged. And the lone sign after "Longl".
 
 ## The text
 
