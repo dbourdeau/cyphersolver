@@ -4,11 +4,11 @@ Partial English translation of `reading.md`. Each row corresponds to the same nu
 
 | Line | English translation |
 |---|---|
-| 53r.L01 | From [U01: a good?] source it has been learned [101: report?] that the Dutch have gone |
+| 53r.L01 | From [U01: a good?] quarter word [101: report?] has been had that the Dutch have gone |
 | 53r.L02 | to establish a trading post at the [port?] of Pinda on the |
 | 53r.L03 | coast of Angola, and that there and in [otraas: other?] places |
 | 53r.L04 | they are [establishing?] their [241: trade?] contrary to what was stipu- |
-| 53r.L05 | lated [58~] in the truce; and because it is not [114: right?] to let this pass in dis- |
+| 53r.L05 | la[58~: null?]ted in the truce; and because it is not [114: right?] to let this pass in dis- |
 | 53r.L06 | simulation [e: mu?], I charge and command you to see that it is re- |
 | 53r.L07 | medied by whatever means seem appropriate to you, without any- |
 | 53r.L08 | one [person?] going to the Islands for this purpose, since it would not be advis- |
