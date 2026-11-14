@@ -20,9 +20,9 @@ demander la permission au Roy; et en ce temps mesme **94,** [le marquis] y arriv
 digne de vous en importuner. Pour ce qui est de **23** [la reine de Navarre], je ne m'en suis voulu jamais mesler, et
 vous supplie tres humblement de le croyre; je sçay combien je doibs de respect en ces lieux la, et pource les honore
 sans m'en entremettre davantage. Pour ce | qui est de ce dont il vous a pleu, Monseigneur, vouloir prendre trop de
-peyne pour moy, il y a quelques jours [?], ce n'est des lors ny cest heure que je recognois les tres grandes
+peyne pour moy, il y a quelques jours, ce n'est des lors ny cest heure que je recognois les tres grandes
 obligations que je vous ay, mais de tout temps, me faisant trop d'honneur de m'aymer comme je le sçay; pource
-librement je vous diray que resolution aulcune je ne puis faire en ce faict sans avoir cest heur que de vous
+librement je vous diray que resolution aulcune je ne puis faire en ce faict sans avoir eu cest heur que de vous
 entretenir une heure, et cependant je vous requiers en toute humilité de laisser les choses comme elles sont. Dieu,
 s'il luy plaist, me conservera tel que je doibs estre, et rendra plus fortuné que je n'ay esté jusques a ceste heure;
 et quel que je soys, je ne diray avec verité [que] vostre tres fidelle serviteur, vous suppliant tres humblement pour
