@@ -1,0 +1,11 @@
+# Carleton to Haldimand, 25 September 1782: reading in cipher order
+
+Each word is the reading of one cipher unit, aligned with the clear copy kept at Quebec (B.148 p. 102; B.146 p. 54). Spelled words are the Army List key output; where it differs from the clear copy the literal output follows in {literal: ...}. A word code whose frozen table value disagrees with the clear copy is bracketed with a query: 13-14 [near?] (table in/on), 43-19 [thousand?] (table hundred), 5-22 [whom?] (table who), 9-8 [have?] (table has), 11-1 [any?] (table an). "(cipher only: ...)" is in the cipher and not in either clear copy. The duplicate heading 3-4 and the archival note "Cypher Signal." are left out. Sentence punctuation and capitals are supplied from the clear copy. The prose with punctuation is postclear/CLEAR_COPY.md.
+
+## Reading
+
+Congress and the Pensylvania assembly determined to make two incursions {literal: incuosions} into the Indian Country the principal one under Major General Potter will consist of four hundred Continental troops and six hundred Militia and Volunteers are to assemble at fort munsey [near?] the West branch of Susquehannah {literal: susnuehannah} the eighth of October and to march from thence to the open of Pines Creek (cipher only: to Pines Creek) head and into the Seneca Country. The other under the command of General Irwin will consist of one [thousand?] Men a very few of [whom?] are Continental assemble at fort Pit early in October and march towards lake Erie. The principal Object is supposed to be against the Seneca Country, and the information given by several prisoners who have escaped {literal: escapedo} from thence [have?] contributed much to forward the present expedition. As there is a large force in Nova Scotia I have given Orders to Major General Paterson who Commands there to furnish you with [any?] Assistance You may require {literal: reuuire}. The French and Continentals under General Washington are assembled at Verplanks Point. Our fleet here and the French mostly at Boston repairing.
+
+New York, September 25.
+
+ The L'Aigle of 44 Guns Capt Latouch & a valuable Ship of 20 Guns with bale goods from France were lately taken in the Delaware. Guy Carleton.
