@@ -451,7 +451,7 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 
 ## Remaining gaps
 - names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
-- about 30 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
+- about 30 single groups with several candidates (list in the third-pass note above) - blocker: no-key-material; each occurs once or twice, so no second use of the group exists to test a candidate on, no second text in this code, and no 1870 administrative-French word model in lang/ to choose between the words that fit the interval (retried 14 Nov: 3921 hauteur rejected by position)
 - seventeen assumed digit slips (20 occurrences, counted as holes) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
 - exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
 
@@ -461,4 +461,4 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 - [x] known-keys: R1 tested on 7 Nov (18% of groups in its table, 10% by chance, no sense): not the inspectors' table
 - [x] print: Steenackers 1883 (HathiTrust), Dagron, the 1872 Bulletin article searched on 7 Nov; the telegram is not printed there; web searches of 13 Nov for Pierret and for Trochu's aides-de-camp found nothing
 - [x] key-rebuild: alphabetical bracketing of the paged book (interval_cands.py), three passes on 13 Nov, 23 to 236 values
-- [x] retry: every unread group listed again with the tightened intervals in the third pass; candidates recorded, none adopted without a second support
+- [x] retry: every unread group listed again with the tightened intervals in the third pass; candidates recorded, none adopted without a second support; retried again on 14 Nov against Pillon's suggestions (0305 settled, 3921 rejected, 0211 unsettled)
