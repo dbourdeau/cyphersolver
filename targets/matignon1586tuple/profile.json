@@ -468,6 +468,15 @@
    ],
    "what": "Brackx (issue #99) recorded the glosses over the multi-valued groups on 234v, 236r, 236v, 238r, 238v (109 groups): 66 agree, 6 contradict, 9 unclear, 28 no gloss. All ten pages now checked: 114 of 2,135 groups unconfirmed (5.3%). Contradictions taken into the readings: 238r m'a dit auoir charge (0.803 -> 0.836), 236v cure remo[ns]trant. No class changes.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py, key.json and transcription only): all 2,152 groups decode to a value of their label (L and M not in the key, as legend.md says), every decrypted line is the join of its values, all 216 gloss rows point at the right group. decryption/ had not been updated at the ten groups where the gloss contradicts the decoder and the reading follows the gloss; synced (234r l. 7 qui, 236r ll. 22, 25, 236v ll. 4, 7, 11, 237r l. 1 de, 237v ll. 3-4 monsieur, 238r l. 20 m). On the Gallica images: the gloss over 234r l. 3 CN is the 8-shaped que sign (agrees; 234r unconfirmed 2 of 251); 234r l. 12 DAN and BQ not settled; blind sample of 235r ll. 5-8, 35 of 36 groups agree. v10_relabel.measure equals the recorded read_share on all ten pages.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -542,6 +551,12 @@
     "who": "tomokiyo",
     "role": "identification",
     "note": "describes Matignon's tuple cipher and this letter as the only one known in it (cryptiana, henryiii page)"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent decoder, decryption/ synced with the ten gloss contradictions, image check of f. 234r (unclear glosses) and a blind sample of f. 235r (VERIFY_dudout_20261114.md)",
+    "date": "2026-11-14"
    }
   ],
   "texts": [
