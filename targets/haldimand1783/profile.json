@@ -263,6 +263,12 @@
       "kind": "verification",
       "what": "An independent check by another of our AI agents rechecked 15 groups on the LAC copy and Entick page images (15 confirmed) and reran the No. 4 test and read shares with identical results; it was not blind to Sherwood’s sketch. On its suggestion No. 2 was reread: the first half reads as a description of a man, so No. 2 is now read in part (review grade B, first half only). It also noted that the No. 4 page test passes narrowly: the hit Say rests on the scan text recognition placing it on p. 315; without it the score is 7, below the frozen mark of 8.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "what": "Integration check on merging PR #575: verify.py reproduced; a second script from key.tsv found all 216 groups (169 with a direct headword, 39 inferred, 8 unresolved); all 47 groups of No. 4 and about 45 groups of No. 3 compared with the LAC copy images without a disagreement; Entick 1781 p. 218 row 11 and p. 220 right row 30 confirmed on the scan. Word-by-word strict count: No. 1 63.5%, No. 2 69.4%, No. 3 63.4%, No. 4 67.2%. The gloss test stays failed (3 of 9).",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -439,6 +445,11 @@
     "notes": "Status in progress: waiting for British Library images of Add MS 21838 ff. 306r-307v, 324v and 379r (ordered 12 Nov 2026) to check the copied numbers, and for the unchecked literature. No. 3 and the second half of No. 2 are excluded from the coherent-reading count. Validation: the letter-model test is underdetermined for a dictionary code (about 1.3 occurrences per group); the book identification rests on the frozen No. 4 page test (8 hits, controls at most 3) and the edition row score 96/107.",
     "fraction_read": 0.7824074074074074,
     "fraction_read_method": "measured",
-    "fraction_read_source": "lookup_occurrences.tsv: 169/216 enciphered groups have direct dictionary/headword evidence (V); all I/? and all clear items excluded from numerator. This conservative key-lookup measure is not sentence coherence; separate strict read_share values and states govern document extent."
+    "fraction_read_source": "lookup_occurrences.tsv: 169/216 enciphered groups have direct dictionary/headword evidence (V); all I/? and all clear items excluded from numerator. This conservative key-lookup measure is not sentence coherence; separate strict read_share values and states govern document extent.",
+    "codes_open": {
+      "open": 8,
+      "total": 169,
+      "tokens_open": 8
+    }
   }
 }
