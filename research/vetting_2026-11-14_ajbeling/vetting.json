@@ -1,0 +1,269 @@
+{
+ "1208": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "not online",
+   "where": "ANOM notice ark:/61561/3072359 (read in Chrome 13 Nov 2026): COL F3 16 f. 115, 29 Aug 1760, 247 MIOM 13, no viewer. Library and Archives Canada reel C-10523 on Héritage (heritage.canadiana.ca/view/oocihm.lac_reel_c10523): table of contents (frame 7) and frames 360-392 read at full size.",
+   "extent": "Brymner's calendar gives 'Folio 115, 8½ pages' for this despatch. The leaf itself was not seen.",
+   "cipher": "Brymner, Report on Canadian Archives 1899, Supplement (Ottawa 1901), calendar of F3 vol. 16: 'M. de Vaudreuil à M. de Berryer. A dû recevoir ses lettres chiffrées du 23 avril, 26 et 28 juin et du 13 de ce mois ... (Cette dépêche est chiffrée.) Folio 115'. So 'en chiffres' in the ANOM title means cipher. The Héritage frames 372-373 named in our recheck are not this letter: the reel's contents list and frames 360-381 show they are F3 16 ff. 12-19, Vaudreuil to the minister, Montréal 15 April 1760 (LAC transcript pp. 320-340), a different letter whose short cipher passages are copied with their decipherment. F3 16 f. 115 is not on reel C-10523."
+  },
+  "prior_art": {
+   "decode": "decode_search.py 'Vaudreuil' and 'Moreau': 0 records. Not on DECODE.",
+   "tomokiyo": "Cryptiana has no page on Vaudreuil's 1760 ciphers (site searches for Vaudreuil and Nouvelle-France cipher, and the targets/vaudreuil1760 notes).",
+   "lasry": "Lasry's list (targets/gramont1529/GL.htm, Shift_JIS) has no Vaudreuil entry.",
+   "edition": "Brymner's 1899 calendar summarizes the despatch's content (Île aux Noix, Pouchot at fort Lévis, Montréal unfortified, will fight but capitulate with honour if he must), which suggests the Paris copyist worked from a decipherment, but no text is printed. Collection de manuscrits relatifs à la Nouvelle-France vol. IV (1884) grepped: not there.",
+   "literature": "Internet Archive full-text searches (14 Nov 2026) on phrases of the calendar summary and on 'Vaudreuil Berryer 29 août 1760 chiffre' found no printed text or decipherment."
+  },
+  "key_check": "Not tried: no ciphertext seen. The calendar says this despatch follows Vaudreuil's cipher letter of 13 August 1760, which upstream reads with the 1757 Vaudreuil table (targets/vaudreuil1760, LAC e001295274); the same table read a 157-group passage of his 15 April 1760 letter at 98% (output of this session, not in this file).",
+  "key_held": "targets/vaudreuil1760/key/key274.json with overrides.json (Brice Dudout and this repository): Vaudreuil's 1757 numerical table, ANOM COL C11E 10 f. 289. Very likely the key; untested on this letter.",
+  "duplicates": "known.py 'F3 16', 'Vaudreuil', 'C11A 105': only this lead and the four upstream Vaudreuil targets (8, 10, 16 Apr 1759; 13 Aug 1760). Different date and volume from catalogue 1391 (13 Aug 1760, C11A 105); not a duplicate as far as the descriptions show.",
+  "searches": [
+   {
+    "query": "Héritage reel C-10523, typed contents list (frame 7) and frames 360-392",
+    "result": "Item 5 is 'Mémoire de Vaudreuil au ministre, 1760, pages 320-340, extrait du vol. 16, ff. 12-19' (15 April 1760); no item for f. 115."
+   },
+   {
+    "query": "Brymner, Report on Canadian Archives 1899 Supplement, calendar of F3 vol. 16 (archive.org cihm_97295)",
+    "result": "f. 115 calendared, 'Cette dépêche est chiffrée', 8½ pages; also f. 26 (3 May 1760) and f. 50 (June 1760) marked partly in cipher."
+   },
+   {
+    "query": "archive.org full text: Vaudreuil Berryer août 1760 chiffre perte de la colonie",
+    "result": "No printed decipherment of the 29 August 1760 despatch."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  },
+  "unvetted": "cipher confirmed by Brymner's 1899 calendar but the leaf (ANOM COL F3 16 f. 115, microfilm 247 MIOM 13) is not online; the Héritage frames once linked to this lead are a different letter (F3 16 ff. 12-19, 15 April 1760)"
+ },
+ "1151": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery records for SP 91/5 (as linked in the lead); Sbornik Imperatorskago Russkago Istoricheskago Obshchestva vol. 50 (St Petersburg 1886), Internet Archive sbornikimperatorskogorusskogoistorichesk58, full text read 14 Nov 2026.",
+   "extent": "About 50 Whitworth despatches, Jan 1707 to Oct 1708, several 'partly in cipher'; Sbornik vol. 50 begins with the despatch of 24 March 1708 from Moscow.",
+   "cipher": "Discovery: 'partly in cipher', with decipherments in the volume for some (f. 180 for f. 163, f. 294 for f. 298) and 'partly undeciphered' for ff. 108 and 163. Sbornik vol. 50 prints Whitworth's despatches from 24 March 1708 in English with a Russian translation; its text marks a group left unread as '(шифрованное и не разобранное слово)' (a ciphered word not made out), so the editors printed from deciphered copies, and Whitworth himself (No. 81, 1709) refers to the office's deciphering."
+  },
+  "prior_art": {
+   "decode": "decode_search.py 'Whitworth': hits are British Library Add MS 38238 (1803-09, Paris), another Whitworth; 'SP 91': nothing relevant. No DECODE record for SP 91/5.",
+   "tomokiyo": "No Cryptiana page on Whitworth's Russian ciphers found (site search, Whitworth Moscow).",
+   "lasry": "No Whitworth entry in Lasry's list (GL.htm grep).",
+   "edition": "Sbornik vol. 50 (1886) prints the despatches from 24 March 1708 onward in English and Russian, deciphered, with unread groups marked. Sbornik vol. 39, said to cover 1704 to early 1708, is not on the Internet Archive under the series' identifiers (listing of 97 volumes checked) and was not opened.",
+   "literature": "Our recheck agent (13 Nov 2026) and the October vetting note reached the same Sbornik volumes; no study of Whitworth's cipher found."
+  },
+  "key_check": "No key tried: the 1708 text is in print deciphered. The deciphered/undeciphered pair SP 91/5/294 and /298 is held as catalogue 863's crib.",
+  "duplicates": "known.py 'SP 91/5' 'Whitworth': catalogue 863 (Whitworth's Russia despatches, SP 91/6 and SP 91/5/298) overlaps this lead for 1708. Not otherwise duplicated.",
+  "searches": [
+   {
+    "query": "archive.org advanced search identifier sbornikimperators* (97 volumes)",
+    "result": "vol. 50 present (…istorichesk58); vol. 39 not found under these identifiers."
+   },
+   {
+    "query": "grep of Sbornik vol. 50 full text for шифр / дешифр / cypher",
+    "result": "the 'ciphered and unread word' note and Whitworth's own reference to deciphering; despatches from 24 March 1708."
+   },
+   {
+    "query": "known.py SP 91/5 Whitworth",
+    "result": "catalogue 863 and this lead only."
+   }
+  ],
+  "verdict": "partly_read",
+  "closed": "Whitworth's despatches from 24 March 1708 are printed deciphered in English (with Russian) in Sbornik RIO vol. 50 (1886), unread groups marked; the January 1707 to March 1708 part (including SP 91/5 ff. 108 and 163) should be in Sbornik vol. 39, not opened. The 1708 duplicates overlap catalogue 863.",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "868": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "not online",
+   "where": "TNA Discovery record of the Bodleian calendar (lead link); Original Letters and Negotiations of Sir Richard Fanshaw, the Earl of Sandwich ... (London 1724) vol. 2, Internet Archive bim_eighteenth-century_original-letters-and-neg_fanshawe-richard-sir_1724_2, full text read 14 Nov 2026.",
+   "extent": "Two letters, Bodleian MS. Carte 75 ff. 493 and 498-499 (October 1666 and 27 February 1667).",
+   "cipher": "Calendar: f. 498, 27 Feb 1667, 'Enters at great length, and almost entirely in cypher, into the questions relating to the provisions and form of the Treaty with Spain'; 'Original; in cypher'; Arlington's own 'At the end of this cursed cypher'. Not digitised. The 1724 volume 2 prints the other side of the channel: letters from Madrid to Arlington (Sandwich, Godolphin, Sunderland), with 55 passages marked 'Cypher.' in the margin as deciphered; it does not print Arlington's letters to Sandwich (contents list read)."
+  },
+  "prior_art": {
+   "decode": "decode_search.py 'Sandwich': one record, R499, TNA SP 106/6 (Charles II), 1667, Spain, a key; 'Arlington': SP 106/6 keys of the 1660s. 'Carte 75': nothing. No record of these two letters.",
+   "tomokiyo": "No Cryptiana page on the Arlington-Sandwich cipher of 1666-67 found (site search Arlington Sandwich Madrid).",
+   "lasry": "No Arlington or Sandwich entry in Lasry's list (GL.htm grep).",
+   "edition": "Original Letters (1724) vol. 2 prints Sandwich's and Godolphin's letters to Arlington with the cipher passages deciphered, not Arlington's to Sandwich. Arlington's Letters (1701) vol. 2 does not print his letters to Sandwich (recheck agent, 13 Nov). Harris, Life of Edward Montagu, first Earl of Sandwich (1912) not opened.",
+   "literature": "Internet Archive full-text searches 'cursed cypher Arlington Sandwich' and 'Arlington Sandwich Madrid 1667 cypher treaty' found only Pepys editions; no study of these letters."
+  },
+  "key_check": "Not tried: ciphertext not seen.",
+  "key_held": "DECODE R499 (TNA SP 106/6, 1667, Spain, a key) may be the Arlington-Sandwich table; untested. The 1724 print gives deciphered vocabulary of the same channel.",
+  "duplicates": "known.py 'Carte 75' 'Arlington': only this lead's sweep row; a catalogue entry on Arlington-Carlingford is a different letter.",
+  "searches": [
+   {
+    "query": "Original Letters 1724 vol. 2 full text: contents list and 'Cypher' margins",
+    "result": "letters to Arlington from Madrid, 55 'Cypher.' marks; none from Arlington to Sandwich."
+   },
+   {
+    "query": "decode_search.py Sandwich / Arlington / Carte 75",
+    "result": "R499 key (SP 106/6, 1667, Spain); no record of the letters."
+   },
+   {
+    "query": "archive.org full text 'cursed cypher' Arlington Sandwich",
+    "result": "no printed text of the 27 Feb 1667 letter."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  },
+  "unvetted": "Arlington's two letters (Bodleian MS. Carte 75 ff. 493, 498-499) are not digitised; whether a decipherment is on the leaf, and whether Harris (1912) prints them, is open; the Sandwich side is printed deciphered in Original Letters (1724) vol. 2"
+ },
+ "1576": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "not online",
+   "where": "BnF Archives et manuscrits records cc499533/cd0e59 (Français 3485) and cc49954b/cd0e318 (Français 3486), as in the lead; HathiTrust catalogue record 000410962 (Recueil des lettres missives de Henri IV) read in Chrome 14 Nov 2026; Internet Archive copies of the Recueil.",
+   "extent": "15 letters, November 1602 to May 1605, each described 'Lettre, avec chiffre'.",
+   "cipher": "BnF Archives et manuscrits: each item 'Lettre, avec chiffre' (Henri IV to Philippe de Béthune, ambassador at Rome). Not digitised; whether a decipherment is written on the letters is not known."
+  },
+  "prior_art": {
+   "decode": "decode_search.py 'Béthune' and 'Bethune': one record, R2734 (BnF Mélanges de Colbert 172, 1673, Louis de Béthune, duc de Charost), not this series; '3485': nothing relevant.",
+   "tomokiyo": "Cryptiana's Henri IV pages carry the Villeroy-office cipher; no page on the 1602-05 letters to Philippe de Béthune found.",
+   "lasry": "Lasry's list has two Henri IV entries, neither for the Béthune letters of 1602-05 (GL.htm grep).",
+   "edition": "Berger de Xivrey, Recueil des lettres missives de Henri IV, tome VI (1603-06), is the edition that would print these letters. Not reachable: HathiTrust record 000410962 lists tomes 1-4 and 7-9 in full view, not 5 or 6; the Internet Archive holds tomes 1-5, 8 and 9 (tome VIII, the supplement, has no letter to Philippe de Béthune of these dates). Halphen (1894) and Lajeunie (1952) not opened.",
+   "literature": "Upstream's SOLVED_CATALOGUE reads the sibling Français 3484 nos. 7, 8, 12 (1601) with a Villeroy-office key; no study of the 1602-05 letters found."
+  },
+  "key_check": "Not tried: no images.",
+  "key_held": "The Villeroy-office key that reads Français 3484 nos. 7, 8, 12 (upstream SOLVED_CATALOGUE); very probably the same office's key, untested.",
+  "duplicates": "known.py 'Français 3485' 'Béthune': only this lead's sweep row and the Français 3484 reading upstream; not a duplicate.",
+  "searches": [
+   {
+    "query": "HathiTrust catalogue: Recueil des lettres missives de Henri IV (record 000410962)",
+    "result": "full-view tomes 1-4, 7-9; tome VI not listed."
+   },
+   {
+    "query": "archive.org title 'lettres missives' Henri IV (19 items, each text checked for 1604)",
+    "result": "tomes 1-5, 8 (supplement), 9; no tome VI."
+   },
+   {
+    "query": "decode_search.py Béthune / Bethune / 3485",
+    "result": "only R2734 (1673, a different Béthune)."
+   }
+  ],
+  "lead_updates": {
+   "access": "archive"
+  },
+  "unvetted": "Lettres missives tome VI (1603-06), the edition that would settle prior art, is not online by any route tried (HathiTrust, Internet Archive; Gallica blocked this network), and Français 3485/3486 are not imaged"
+ },
+ "2091": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "scan",
+   "where": "National Archives Catalog, Papers of the Continental Congress, item 51 vol. 1 (naId 475670722), digital objects 552-556 (p. 705 ff., Fold3 files 407600-407612) and 582 (p. 759, file 407695), images fetched from catalog.archives.gov/medialz/partners/dc-metro/rg-360/M247/pcc_405131_0001/<file>.jp2 and read 14 Nov 2026.",
+   "extent": "Intercepted copy, 5 pages, 'Wilmington 23d July 1781', 'My Lord', clear text with runs of dotted two-digit numbers (10 to 39); translation sheet p. 759 with 18 numbered passages.",
+   "cipher": "Craig's two-digit number cipher in runs within a clear letter, copied by the Americans who intercepted it ('In the original, the word is blotted' note at the foot of p. 705). Page 759, headed '759' and signed off 'J. H. Craig to Cornwallis from Wilmington July 23d 1781', gives 18 numbered translations ('1 - order me to remain here', '2 - Hopes I gave of making a powerful Diversion in favor of Ld Rawdon' ... '18 - spare them from South Carolina'). The New-York Historical Society original (MS 2958.2318) was not seen."
+  },
+  "prior_art": {
+   "decode": "decode_search.py 'Craig' and 'Cornwallis': 0 records.",
+   "tomokiyo": "Our Fold3 sweep notes cite Tomokiyo's cornwals page for this number substitution (10-39); the page was not re-read in this pass.",
+   "lasry": "No Craig or Cornwallis entry in Lasry's list (GL.htm grep).",
+   "edition": "The period translation sits in the Papers of the Continental Congress, item 51 p. 759 (seen). Saberton's Cornwallis Papers vols. 5-6 not opened.",
+   "literature": "Upstream's targets/balfour1781 lists this copy as item D (images 552-556, translations 582-584) and leaves it untranscribed because the translation is on file."
+  },
+  "key_check": "Not needed: the period translation of all 18 cipher passages is on p. 759. Upstream's balfour1781 rebuilt the Common cipher ring; not tried on this letter.",
+  "duplicates": "known.py 'Craig' 'item 51': no catalogue entry; upstream targets/balfour1781 NOTES names the copy (item D) without reading it. Same letter as the N-YHS original of this lead.",
+  "searches": [
+   {
+    "query": "catalog.archives.gov proxy records naId 475670722 digital objects 550-585",
+    "result": "object 552 'Craig, James H. Wilmington. To Lord Cornwallis. 5 p. Copy. (Part in cipher with translation on p. 759); 1781-07-23'."
+   },
+   {
+    "query": "PCC item 51 p. 759 image (Fold3 file 407695)",
+    "result": "18 numbered translations headed for Craig to Cornwallis, Wilmington, 23 July 1781."
+   },
+   {
+    "query": "known.py Craig / item 51 and upstream targets grep Craig",
+    "result": "only targets/balfour1781 item D."
+   }
+  ],
+  "verdict": "read",
+  "closed": "The Papers of the Continental Congress copy of Craig to Cornwallis, Wilmington, 23 July 1781 (item 51, p. 705, National Archives Catalog naId 475670722 image 552) carries a period translation of its 18 cipher passages on p. 759 (image 582), read on the images 14 Nov 2026.",
+  "supersedes": "The block of 3 Nov 2026 gave the same verdict from a catalogue description; this one rests on the National Archives Catalog images of the copy and of the translation sheet, seen.",
+  "lead_updates": {
+   "access": "online"
+  }
+ },
+ "1036": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "transcription",
+   "where": "Founders Online, Papers of John Jay, https://founders.archives.gov/documents/Jay/01-02-02-0151, read in Chrome 14 Nov 2026 (Selected Papers of John Jay vol. 2, ed. Nuxoll, 2012, pp. 385-386).",
+   "extent": "One short letter (about 170 words), 'partly in code', Madrid 28 Jan 1781, to Samuel Huntington.",
+   "cipher": "Source note: 'ALS, partly in code, decoded by the editors based on the draft, DNA: PCC, item 89, 1: 361 ... The code is based on Boyer's Royal Dictionary (1771)'; three duplicates partly in code (PCC Misc. 5); draft partly in code, decoded (Columbia); letterbook copies 'partly in code, not decoded'. The printed text is the full plaintext (bills drawn on Jay, 150,000 dollars promised, Livingston carrying letters, 'let me beseech you to keep the Contents secret')."
+  },
+  "prior_art": {
+   "decode": "decode_search.py 'Jay' and 'Huntington': no record of this letter (one unrelated 1526 hit).",
+   "tomokiyo": "No Cryptiana page on Jay's Boyer-dictionary code found; the editors cite Weber, U.S. Codes and Ciphers, p. 69 n. 4.",
+   "lasry": "No Jay entry in Lasry's list (GL.htm grep).",
+   "edition": "Selected Papers of John Jay vol. 2 (2012), pp. 385-386, decoded by the editors from Jay's own decoded draft; Burnett (1933), the source of the lead, predates it.",
+   "literature": "The editors' note 'John Jay's Use of Codes and Ciphers' (vol. 2 p. 9) and Weber (1979) treat the code."
+  },
+  "key_check": "Not needed: Jay's decoded draft and the editors' decode are published. Boyer's Royal Dictionary (1771) is the code book.",
+  "duplicates": "known.py 'Jay' '28 Jan 1781': no catalogue entry for this letter.",
+  "searches": [
+   {
+    "query": "Founders Online Jay/01-02-02-0151 (Chrome)",
+    "result": "full decoded text and source note quoted above."
+   },
+   {
+    "query": "known.py Jay / 28 Jan 1781",
+    "result": "no catalogue entry; unrelated Jay hits only."
+   },
+   {
+    "query": "decode_search.py Jay / Huntington",
+    "result": "no record of this letter."
+   }
+  ],
+  "verdict": "read",
+  "closed": "Decoded by the editors of the Selected Papers of John Jay, vol. 2 (2012) pp. 385-386, from Jay's decoded draft (Columbia), on Founders Online (Jay/01-02-02-0151); the code is Boyer's Royal Dictionary. Read on the page 14 Nov 2026.",
+  "supersedes": "The block of 29 Oct 2026 gave the same verdict without opening the Founders page; this one quotes the page and its source note, read 14 Nov 2026."
+ },
+ "2110": {
+  "date": "2026-11-14",
+  "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+  "seen": {
+   "kind": "scan",
+   "where": "Yale Library, collections.library.yale.edu/catalog/10844890 (IIIF manifest collections.library.yale.edu/manifests/10844890), three images; pages 1 and 2 opened at 1800 px across, 14 Nov 2026. DECODE record R2855 read by curl.",
+   "extent": "Barcelona, 7 Sept 1519, Tommaso Spinelli to the canon Leonardo Spinelli, 4 pp. (2 written pages and the address leaf); page 1 has 9 lines of symbol cipher between clear Italian; page 2 about 2 more lines.",
+   "cipher": "Graphic symbol cipher (Greek-like and invented signs, numerals) in runs inside a clear letter; no decipherment written above or between the lines on page 1. Piero Spinelli's 30 letters (box 126, ff. 2560-65) are not digitised; Yale's record for them was not opened."
+  },
+  "prior_art": {
+   "decode": "R2855 (Yale Beinecke GEN MSS 109, Barcelona 1519) status 'Decrypted', note by Satoshi Tomokiyo of 18 Jan 2024: it can be deciphered with the key reconstructed by Ekaterina Domnina.",
+   "tomokiyo": "Tomokiyo's note on DECODE R2855 (18 Jan 2024); his partial reading of the leaf is mentioned in upstream SOLVED_CATALOGUE (catalogue 306).",
+   "lasry": "No Spinelli entry in Lasry's list (GL.htm grep).",
+   "edition": "No edition of the Spinelli letters. Domnina, 'Ciphers in Early Tudor Diplomacy', Geheime Post (2015), rebuilds the key and discusses ciphered content; not opened here.",
+   "literature": "Upstream SOLVED_CATALOGUE: 'Spinelli family private cipher letters (Beinecke GEN MSS 109; catalogue 306): Read in part (checked 22 Sept 2026) ... The rest of Gen. MSS 109 has no published reading.'"
+  },
+  "key_check": "Domnina's 2015 key is the key for Tommaso's letter (per DECODE R2855); not obtained or tried here. Piero's cipher is unknown.",
+  "key_held": "Domnina 2015 (Geheime Post), in print.",
+  "duplicates": "known.py 'GEN MSS 109' 'Spinelli': upstream SOLVED_CATALOGUE catalogue 306 covers the Spinelli family cipher letters as read in part; catalogue 1350 (Gasparo Spinelli, 1618) is another family. The Barcelona letter is the item 306 refers to.",
+  "searches": [
+   {
+    "query": "Yale IIIF manifest 10844890",
+    "result": "Tommaso Spinelli, Barcelona, 1519 Sep 7, 'part in cipher', completely digitized, 3 images, public."
+   },
+   {
+    "query": "de-crypt.org RecordsView 2855",
+    "result": "status Decrypted; Tomokiyo's note on Domnina's key."
+   },
+   {
+    "query": "known.py GEN MSS 109 / Spinelli",
+    "result": "SOLVED_CATALOGUE catalogue 306, read in part."
+   }
+  ],
+  "verdict": "partly_read",
+  "closed": "The Barcelona letter of 7 Sept 1519 is now online at Yale (10844890) and is marked decrypted on DECODE (R2855, Domnina's 2015 key; Tomokiyo's partial reading), and upstream already closes the Spinelli cipher letters as read in part (catalogue 306). Piero Spinelli's 30 letters (box 126, ff. 2560-65) are not digitised and have no reading on record; split them into their own lead.",
+  "supersedes": "The block of 3 Nov 2026 said no scan was online; the leaf is now online and seen, and DECODE R2855 and catalogue 306 are added.",
+  "lead_updates": {
+   "access": "online"
+  }
+ }
+}
