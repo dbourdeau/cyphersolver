@@ -49,7 +49,7 @@
     "location": [
      "separate folio"
     ],
-    "source": "Contemporary decipherment on 109R + 110L (archivist's note 'Till chifferbrevet av den 15 juni 1764'); it continues the clear opening on 108R. key_c01, unchanged, decodes 108R-109L as this clear (pre-registered, 0.383 vs 200 permuted keys max 0.057, 14 Nov 2026). The end of the cipher (110L.03-08 of the clear) is on 110R (three lines at the top and four inside a clear paragraph), placed by a post-measure decode. Read by sense 341 of 342 word tokens (one letter string the decipherer left unresolved, 110L.03). See dudout/system_a/june1764/."
+    "source": "Contemporary decipherment on 109R + 110L (archivist's note 'Till chifferbrevet av den 15 juni 1764'); it continues the clear opening on 108R. key_c01, unchanged, decodes 108R-109L as this clear (pre-registered, 0.383 vs 200 permuted keys max 0.057, 14 Nov 2026). The end of the cipher (110L.03-08 of the clear) is on 110R (three lines at the top and four inside a clear paragraph), placed by a post-measure decode. Strict count: 337 of 342 word tokens sure (98.5 %); the contributor's figure with the four probable words is 341 of 342 (one letter string the decipherer left unresolved, 110L.03). See dudout/system_a/june1764/."
    },
    "length": {
     "tokens": 539,
@@ -651,6 +651,16 @@
    ],
    "what": "The script behind validation/val_L101.json (PR #566 lacked it) is scripts/val_L101.py: align_em.py with key_c01 as hard anchors (env ANCH), 1 EM iteration, ratio 2.7, on 101R and its clear 102R; it reproduces the stored alignment path exactly (320/320) and counts 175 of 228 known groups agreeing (0.768, the maintainer's recount; the README's 178/232 is not reproduced). Re-running the three stored permuted keys with the same settings gives 0.231, 0.247, 0.247; the stored control files (0.214-0.225) were made with settings not recorded and are not reproduced.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #582 by the project: the plan hash (text above the amendment), the five amendment hashes and the 26 earlier hashes match; measure_june.py re-run gives 511 groups, M 0.3829, controls max 0.0573, mean 0.0347, as filed; own decoder with a different measure (decoded 5-letter windows found in the clear) 0.380 against 200 permuted keys max 0.061; 108R.01-04 compared with the image, 60 of 63 groups agree and the 3 others are already marked doubtful; the clear recounted at 342 word tokens, strict share 337/342 = 0.985. val_L101.py reproduces the stored 101R path (320/320) and 175/228; the stored control files are not reproduced. Judged a pre-registered test by the files; the order of events is by the contributor's record, the script was hashed in the amendment and not with the plan, and the bar was low and set with earlier scores of the same key in hand. Target stays in progress.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -665,7 +675,7 @@
    "none"
   ],
   "provenance": "mixed",
-  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations not yet made. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Chiffer n:o 1, 15 June 1764 (108R-110R): key_c01 passed a pre-registered held-out test against its contemporary clear 109R-110L (0.383 vs controls max 0.057, 14 Nov 2026); read through that clear (341/342 tokens). Open: the other Chiffer n:o 1 letters (87-89, 90R-93L, 100R, 104R-105L, 105R-108L, 110R-111 with clear 116, 112-115) and their clears; inventory in dudout/system_a/INVENTORY_chiffer1.md. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
+  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations not yet made. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Chiffer n:o 1, 15 June 1764 (108R-110R): key_c01 passed a pre-registered held-out test against its contemporary clear 109R-110L (0.383 vs controls max 0.057, 14 Nov 2026); read through that clear (337 of 342 word tokens sure, 98.5 %; 341 by the contributor's count with probable words; order of events by the contributor's record). Open: the other Chiffer n:o 1 letters (87-89, 90R-93L, 100R, 104R-105L, 105R-108L, 110R-111 with clear 116, 112-115) and their clears; inventory in dudout/system_a/INVENTORY_chiffer1.md. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
   "credits": [
    {
     "who": "dudout",
@@ -773,6 +783,25 @@
     },
     "read_share": 0.998,
     "note": "Read through its contemporary clear (method for this letter: read from existing decipherment). Strict count: 612 of 613 word tokens of the clear sure; the hole is 'equelala' (127.25), whose sense is not settled. Key c04 decodes 1,236 of 1,247 groups; 481 150 761, 790, 315, 236, 339, 55, 234 have no value. The cipher had been decoded on 12 Nov with key c03 and 25 context values before the clear was found (declared)."
+   },
+   {
+    "doc": "K259-1764-06-15",
+    "label": "System A, 15 June 1764, Düben to 'mon cher Comte' (108R-109L, end on 110R): contemporary decipherment on 109R-110L, confirmed by key_c01",
+    "transcription": "dudout/system_a/june1764/transcr/c1764-06-15.txt",
+    "decryption": "dudout/system_a/june1764/outputs/measure_result.txt",
+    "reading": "dudout/system_a/june1764/clears/p1764-06-15_clear_contemporary.txt",
+    "translation": "dudout/system_a/june1764/reading_1764-06-15_en.md",
+    "state": "read",
+    "read_share": 0.985,
+    "language": "fr",
+    "summary": "Düben explains his silence, reports that the Empress means to change the King's situation once Poland is settled and is concerting with Prussia against the French party in Sweden, warns that she is displeased with the Queen, and asks to be got out of St Petersburg.",
+    "note": "Text of the decipherment of the time; 337 of 342 word tokens sure (4 probable, 1 string the decipherer left unresolved). The cipher lines on 110R that carry the end are not in the frozen transcription.",
+    "reading_review": {
+     "grade": "A",
+     "by": "project integration check",
+     "date": "2026-11-14",
+     "note": "The clear read as French sentences against the English translation; 109R.01-05 compared with the image; the key decode of 108R-109L follows it."
+    }
    }
   ],
   "key_file": [
