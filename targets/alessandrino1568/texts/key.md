@@ -32,7 +32,7 @@ chiarire). A doubled letter is enciphered once.
 | 1050 | Francia | (dec. R93, R98) |
 | 2010 | — | **Imperatore** (dec. R93, R96); R115 has it where the decipherer writes N.S. |
 | 1090 | Vostra Signoria | |
-| 2020 | con? | |
+| 2020 | con? | **essendo** (dec. R99 "essendosi fatto"; R99 "essendone stato ricerco", 14 Nov 2026) |
 | 2040 | Concilio | |
 | 2050 | — | **Spagna** (R95, R100) |
 | 2060 | non | (dec. R95 "n'è" once) |
@@ -49,7 +49,7 @@ chiarire). A doubled letter is enciphered once.
 | 4090, 9030 | Germania | (R94 "us[4090] ad" = usque ad in the decipherment) |
 | 5020 | per | |
 | 5070 | — | **Imbasciatore** (dec. R100) |
-| 5090 | qui | |
+| 5090 | qui | (R115 "fin qui", 14 Nov 2026) |
 | 6050 | — | **Imbasciatore [di Francia]** (dec. R95, twice; with 7070 before it once) |
 | 6060 | — | **Inquisitione** (written 6 0 6; dec. R100) |
 | 6020 | — | **causa / negocio** (dec. R99, R115) |
@@ -61,6 +61,9 @@ chiarire). A doubled letter is enciphered once.
 | 9090 | — | **havendo** (dec. R99; fits R101) |
 | 6090 | quel | a demonstrative: **questa / queste / questo** in the decipherments |
 | 7070 | — | **Imbasciatore** (dec. R97; + 2 = plural) |
+| 7020 | — | **risposta** (dec. R115, 14 Nov 2026; the 23 Oct "9070" was a misdivision of 5090 qui + 7020) |
+| 4050 (or 5070) | — | **Monsignor Reverendissimo** (dec. R115 "Mons.r R.mo", 14 Nov 2026; the division 4 + 5070 is also possible) |
+| dotted 2010 | — | **il Duca d'Alburquerque**, governor of Milan (dec. R99, correction above a struck "Imp.re", 14 Nov 2026) |
 | 7090 | quello | quello / quella / quelle / quelli |
 | 8010 | Re di Francia | |
 | 8090 | sauere? | **havere** (R101 "possano havere notarii") |
@@ -70,9 +73,12 @@ chiarire). A doubled letter is enciphered once.
 | 0^.0 (00.) | — | **et** (dec. R94, four times) |
 | 4^. + 8 | — | **perché** (dec. R95, twice; R93, R98) |
 | 1^. + 8 | — | **ancora** (dec. R94, R98, R115) |
-| 9^. + 8 | — | **acciò** (dec. R115) |
+| 9^. + 8 | — | **acciò** (dec. R115; R99, 14 Nov 2026: the dot over the 9 or the next 0) |
+| 3^. + 8 | — | **quanto** (dec. R115 "q.to", twice: "quanto prima", "quanto al negocio"; 14 Nov 2026) |
 
 Extended again 23 Oct 2026 (r2g) from the decipherments of R93, R96-R99, R102, R115.
 
-Unresolved: 4050, 9070 (R115 "risposta"?), 2020 (R99), dotted 3 + 8 (R115), dotted 3 + 4 (R97, "Principe di Condé" in the decipherment), 4060 5050 (R97, "il Duca di Ferrara" in the decipherment), dotted [01.] (R94 "anchora"?), [03.], [08.] (R95, the Crusade?),
+**14 Nov 2026:** 2020, 4050, 9070 and dotted 3 + 8 resolved above; 2010 is the Pope in R115 ("scalco segreto di N.S."), probably a later list (R115 is probably of January 1572).
+
+Unresolved: dotted 3 + 4 (R97, "Principe di Condé" in the decipherment), 4060 5050 (R97, "il Duca di Ferrara" in the decipherment), dotted [01.] (R94 "anchora"?), [03.], [08.] (R95, the Crusade?),
 [3.] (R95, a person), and the other dotted groups listed in NOTES.md.

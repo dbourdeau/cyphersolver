@@ -1,5 +1,7 @@
 # Cardinal Alessandrino to the nuncio in Spain, 1568–69 — read
 
+**14 Nov 2026 (verification):** R99 and R115, the two letters under the 95% bar since 24 Oct, re-read on the DECODE images and decipherments: R99 94.7% -> 98.9%, R115 88.5% -> 97.4%; all eleven letters now read. Codes 2020, 4050 and 9070 resolved; R115 probably of January 1572. Section at the end.
+
 Status: read (23 Oct 2026, r2g: all eleven letters read; R93, R96-R99, R102, R115 from the contemporary decipherments found on their DECODE cleartext images). Not yet written up again for the site.
 
 **22 Oct 2026, reading audit** (George Lasry's test): R93, R96, R97, R98, R99, R102 and R115 build Italian sentences with scattered slips; **R94, R95, R100 and R101 are decoded, not read**: the beam search's digit choices corrupt words in most of their sentences (R94 "liberagemptume", R95 "desersaleaniosina", R100 ends in ??????, R101 "unmannifestsobismain"). Claim read -> read in part; 7,036 of 10,555 items (66.7%) in letters that read.
@@ -120,7 +122,8 @@ read; fraction_read 0.333 -> 1.0 (10,555 / 10,555 items).
 - R94 (2 short gaps): "9 0 4 0 2 0" before S.M. and the verb 6 2 4 7 6 after "comincia" - blocker: no-key-material; the contemporary decipherer left the first unread and guessed the second; no other text of the letter (Serrano 1914 not reachable)
 - R95 (4 holes): dotted groups [08.] (the Crusade?) and [3.] (a person), "co[…]", "[?fece]" - blocker: illegible; the decipherment is illegible at these words
 - R101 (5 holes): two places in row 1 under a burn and a hole in the paper, one illegible group in row 14, "[?Sora]", code 6020 (9090 havendo and 8020 avviso read 23 Oct from the R99/R93 decipherments) - blocker: illegible
-- R93, R96-R99, R102, R115 (read 23 Oct 2026): short unread runs and codes inside the readings - R93 one group; R96 the heretic's surname, [?quanto]; R97 four runs, "Duca di Ferrara" (4060 5050) and "Principe di Condé" (dotted 3+4) on the decipherer's word only; R98 [?possa], [?et]; R99 the stretch after d'Oria and the head of the Milan paragraph (2020, [02.] 1040); R102 three words; R115 codes 4050, 2010, 9070, dotted 3+8 and four runs - blocker: no-key-material; the decipherers left them blank or wrote words the figures do not carry, and the codes occur nowhere else
+- R93, R96-R98, R102 (read 23 Oct 2026): short unread runs and codes inside the readings - R93 one group; R96 the heretic's surname, [?quanto]; R97 four runs, "Duca di Ferrara" (4060 5050) and "Principe di Condé" (dotted 3+4) on the decipherer's word only; R98 [?possa], [?et]; R102 three words - blocker: no-key-material; the decipherers left them blank or wrote words the figures do not carry, and the codes occur nowhere else
+- R99, R115 (read 14 Nov 2026): R99 [?poco] (a slip), [?e] (a blot), [con] (no figure); R115 [?Francesco] (a slip), [?ancora] (burn hole), the name after "negocio de" (4 1 8 2 4 4 2), one 5 2 not placed - blocker: illegible / no-key-material
 - Serrano, Correspondencia diplomatica ... Pio V (1914): not checked - blocker: needs-physical-access (HathiTrust 403 from here, not on archive.org)
 
 ## Escalation
@@ -131,3 +134,45 @@ read; fraction_read 0.333 -> 1.0 (10,555 / 10,555 items).
 - [x] print: 22 Oct 2026, Serrano 1914 searched again: not on archive.org, HathiTrust full text 403, Google Books API quota exhausted; Serrano's Liga de Lepanto (1918-19) begins in 1570 - not reached
 - [x] key-rebuild: 23 Oct 2026 (r2g) extended again (2010, 4010, 1020, 8020, 8070, 3050, 6030, 7040, 9090, 6020, 7030, 7070, dotted 1+8, 9+8); 22 Oct 2026, key extended from the decipherments (9 = con, dotted 0 = z, 0^.0 = et, codes 1040, 3020, 3060, 4020, 4040, 4080, 5070, 6050, 6060, 8090); [01.], [03.], [08.], [3.], [4.]8 (= perché), 9090, 6020, 8020 partly or not resolved
 - [x] retry: 22 Oct 2026, R94, R95, R100, R101 re-read (texts/R94-R101_reread_log.md); all four build sentences; 23 Oct 2026 the other seven re-decoded with the extended key and word-divided: below the bar; same day (r2g) read from their decipherments (texts/R93-R115_reread_log.md)
+
+## Verification 14 Nov 2026 (R99, R115; Claude Opus 5.5)
+
+The two letters under the read bar (R99 0.947, R115 0.885 on 24 Oct) were re-read on the full DECODE images of the
+ciphers (R99 ff. 169r-v, R115 f. 641r) and of their contemporary decipherments (R99 D1284, R115 D1340), opened at
+native resolution in a private scratch copy (DECODE R99, R115; images not committed). The disputed lines were
+transcribed a second time by a separate pass that saw only the crops, not the DECODE transcription or this reading:
+of the 11 crops (about 300 figures), 6 agree figure for figure with DECODE; in the other 5 the differences are the place
+of dots (R99 "0̇ 2010", the blind pass seeing the mark above "2 0" and one doubtful 0; R99 "9 0̇ 8"; R115 "3 0̇ 8", "0 1̇ 0":
+same groups), one "1" in R115 "s(u)a", and the last figures of R115 line 12, read "1? 5? 0 1?" where DECODE and this
+reading have "3 0 1" (3010, the decipherer's "S.M.").
+
+**R99.** The stretch after "d'Oria" reads "essendone stato ricerco da N.S.; ma inteso questo" (2020 = essendo; 7 2 8 6 7 8 5 =
+ricerco; 2 4 = ma), and the decipherer, re-read, has "[?essendone stato ricerco da S.S.]" and "ma inteso" there (the 23 Oct
+transcription "come sono certo che V.S. haverà inteso" was a misreading). The second 2020 is the decipherer's
+"essendosi fatto" (not "è stato fatto"). The head of the Milan paragraph is "Il Duca d'Alburquerque ha usato novamente in
+Milano uno atto di propria autorità": a dotted 2010 that the decipherer first wrote "Imp.re" and corrected above the line
+to "Duca d'Alburquerque a usa[to]" (read "Della dalla Chiesa a Milano" on 23 Oct); Gabriel de la Cueva, duke of
+Alburquerque, governor of Milan 1564-71, against Archbishop Carlo Borromeo. "acciò" is the dotted 9 + 8 group. Left: [?poco]
+(1 for 9), [?e] (a blot), [con] (no figure). read_share 0.947 -> **0.989** (259 words, 3 holes).
+
+**R115.** "fino [?…] [9070] [2]" was a misdivision: fin 5090 qui 7020 risposta (the decipherer "sinqui risposta"); 9070 does
+not occur. "del vero [?…]; di [?…] che" is "del vero valore di esso; di che" (the 2 that ended the old run starts 2090).
+Dotted 3 + 8 = quanto, twice ("quanto prima potrà", "Quanto al negocio"; the decipherer "q.to"; the same group reads
+"quanto alla" in R95). "et avisarmi poi […]" is "con le prime" (9 = con; the decipherer "c[on] le pr.e"). "[?…] la causa de
+[?…] […] [?la] tratta" is "Quanto al negocio de [name], poi che Re lo tratta di costà" (4 5 = lo; the decipherer "la").
+4050 (or 4 + 5070) = Monsignor Reverendissimo, the decipherer's "Mons.r R.mo" (read "Commendatore" on 23 Oct). 2010 is the
+Pope here ("scalco segreto di N.S."). Left: [?Francesco] (6 for a), [?ancora] (burn hole), the name 4 1 8 2 4 4 2 (the
+decipherer "lucadi", not carried), one 5 2. read_share 0.885 -> **0.974** (151 words, 4 holes).
+
+**R115's date (probable, not proved).** The writer "wrote to Monsignor Reverendissimo d'Alessandrino" on 30 November
+asking him to obtain the nomination from the King: this fits Cardinal Alessandrino at the King's court on his legation
+of 1571-72, so the letter is probably of about late January 1572, like the clear letters on the record (ff. 639, 642),
+and its writer is not Alessandrino. A 2010 that means the Pope, not the Emperor as in 1568, fits a different list.
+Title and route left as they are for Daniel to decide.
+
+**Measurement.** The new values (2020 essendo, 7020 risposta, 4050 Monsignor Reverendissimo, dotted 2010 il Duca
+d'Alburquerque, dotted 3 + 8 quanto) are read from the contemporary decipherments, not found by search; key frozen
+(texts/key.md, SHA-256 4c86fbca89de5b5c3fe06e3546178af0aee352ccf98affdb085891404fe1b2ef). **Not measurable:** outside
+R99 and R115 the codes occur only once more (dotted 3 + 8 in R95, already read "quanto alla" there), far from 300 fresh
+signs. read_share as `research/reading_audit/v10_relabel.py` counts it.
+
