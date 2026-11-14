@@ -1,6 +1,6 @@
 # coloma1622: the Marquis of Mirabel to Carlos Coloma, Lyon, 8 December 1622 (BNE RES/227/122; catalogue 1601)
 
-Status: read in part (Brice Dudout, 13 Nov 2026; **346 of 421 cipher words sure = 82.2%** at the integration of 13 Nov, counting sure words only: the certain words of the word table except 'casa' (code _60_ placed by the sense); probable, restored and unresolved words are holes. The word table has 347 certain, 42 probable, 28 restored, 4 unresolved; the contributor's count of certain + probable is 389 = 92.4%. Key partial by the contributor's protocol, two of four measurements failed: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears). See the integration checks of 12 and 13 Nov 2026.
+Status: read in part (Brice Dudout, 13 Nov 2026; **346 of 421 cipher words sure = 82.2%** at the integration of 13 Nov, counting sure words only: the certain words of the word table except 'casa' (code _60_ placed by the sense); probable, restored and unresolved words are holes. The word table has 347 certain, 42 probable, 28 restored, 4 unresolved; the contributor's count of certain + probable is 389 = 92.4%. Key partial by the contributor's protocol, two of four measurements failed: C02 0.761, H3 0.690, H5 0.814 on characters against contemporary clears). See the integration checks of 12 and 13 Nov 2026. **Second document since 14 Nov 2026 (PR #560, folded in, one key one entry):** the Marquis of Mirabel to the Count of Gondomar, Paris, early 1622 (BNE MSS/18428, viewer images 13 right - 15 left; files in `mss18428/`), read in part, **182 of 250 cipher words sure = 72.8%**; its extended key CLE_M02 failed one measurement (M01) and is partial on the other (M02): not validated. See the integration check of 14 Nov 2026.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents (and, on 11 Nov 2026, one text-only Claude Fable 5.2 run). Catalogue entry 1601 (Chrome pass, BNE Digital).
 The key comes from the Duke of Feria's letters to Coloma (lead 1602), whose cipher passages carry a contemporary clear in the
@@ -93,7 +93,9 @@ describes Richelieu: "although he is not of this King's Council, it is he who go
 - 21 probable words that are code values placed by the sense (caso, casos, empresa, Reina, Duque, estado, govierna, confianza; and the 11 Nov proposals trata, trataba, Cristianísimo, cristianos, allanar, allanado; nuestro señor, buena, buenos, capitulaciones and fuertes are held by clears since 13 Nov) - blocker: open-codes; not counted as read; a contemporary clear with these codes would settle them.
 - the BNE images, the clear of MSS/18428 fol. 31, the clears of MSS/18428 aligned on 13 Nov (v5 d - v7 d, v33 g, v39 d - v40 g) and the raised sign on the two 34 of the letter were not seen by the project - blocker: needs-physical-access; BNE Digital answers 403 (Cloudflare) to a plain fetch (again on 13 Nov 2026) and no browser session was available at either integration; the blind sheets, their rules, maps and answers are not in the repository, so the hashes and "rule hashed first" are by the contributor's record.
 - 28 restored words, among them the code values at one place (127, 40, 264, 295, 35, 53 twice, K, 68, 81, 139, 317, R, 62, L/54/y) - blocker: open-codes; none of these codes occurs in the clears of RES/227/120-129 or MSS/18428 (all seven cipher letters of MSS/18428 now aligned, 13 Nov); a new letter of the system with a contemporary clear is needed.
-- The marked signs q̲, x̤ and those seen on FL2-C (4‡ = g since 13 Nov) (barred 0, xo with a v above, o with a cross, "fov") - blocker: open-codes; no value in any key or clear we have.
+- The marked signs q̲, x̤ and those seen on FL2-C (4‡ = g since 13 Nov) (barred 0, xo with a v above, o with a cross, "fov") - blocker: open-codes; no value in any key or clear we have, except that the clear copies of MSS/18428 give an o with a cross = t ("trae", "ministros"; PR #560, by the contributor's record); whether the FL2-C sign of this letter is that sign was not checked.
+- MSS/18428 letter (images 13 right - 15 left, `mss18428/`): 20 unresolved words (codes 24, 322, _1_, _13_, _41_, md, 87, 48~ and a few signs), 11 restored and 36 probable (signs with no value read by sense: xix, c̣ir, f‡, fir, fizt, 20~, g‡, p‡, D‡, x‡, zan; code _A_ Reina) - blocker: open-codes; none of these is in a clear of RES/227/120-129 or MSS/18428, and no unseen passage of the system is left in MSS/18428 to test the extended key; a letter of the system with a contemporary clear elsewhere (Gondomar papers, Real Biblioteca; Coloma's papers) is needed.
+- MSS/18428 letter: the images not seen by the project (BNE Digital 403 to a script again on 14 Nov 2026); part B in one transcription pass; the tests' files (pre-registrations, scripts, hashes) are in the contributor's working folder, so their order is by the contributor's record - blocker: needs-physical-access.
 
 ## 13 Nov 2026: the other contemporary clears of MSS/18428
 
@@ -218,7 +220,7 @@ On integration of PR #417 the project recounted the files; an independent verifi
 
 ## Escalation
 
-- [x] siblings: Feria's letters RES/227/120-121, 127, 128, 129 opened and used; RES/227/123-124 and 112 (Mirabel) have no cipher; MSS/18428 opened (same system).
+- [x] siblings: Feria's letters RES/227/120-121, 127, 128, 129 opened and used; RES/227/123-124 and 112 (Mirabel) have no cipher; MSS/18428 opened (same system). 14 Nov: the one cipher letter of MSS/18428 without a decipherment of the time read in part (PR #560, `mss18428/`).
 - [x] clear-pages: the margin clears of Feria's letters used as keys and tests; the margin of MSS/18428 p. 15 found to be show-through.
 - [x] known-keys: no published key of this system found (DECODE, Cryptiana, Lasry); the Gondomar ciphers (Rodríguez Gómez) noted, not checked.
 - [x] print: three web searches (the third on 5 Nov 2026: Mirabel to Coloma, Lyon 1622) found no edition or study of this letter; Guill Ortega 2007 (Coloma biography), Herrero García 2023 and the Codoin index not read, named as the next print sources.
@@ -236,10 +238,53 @@ in this target. Not read: Guill Ortega 2007, Herrero García 2023 (see deviation
 
 - `dudout`: transcription, key, the tests, the reading, the blind sheets (Brice Dudout answered them).
 - `contemporary`: the margin clears of Feria's letters (RES/227/127-129) and of MSS/18428 p. 44, used to build and test the key; the clear copy of MSS/18428 fol. 31 (141 = ello, 318 = oficio); the clear copies v33 g and v39 d - v40 g and the margin clears of v5 d - v7 d of MSS/18428 (39 = bien, 4‡ = g, 60 = i, 49 BUEN, 56 CAPITULA, 225 FUERTE, 308 NUESTRO, 34ʳ SR).
-- `bourdeau`: pointer (catalogue 1601, leads 1602 and 1271).
+- `dudout` (PR #560, 14 Nov 2026): the MSS/18428 letter of images 13 right - 15 left: inventory of the volume (issue #367), transcription, key CLE_M02, measurements M01 and M02, reading and translation.
+- `contemporary`: for the MSS/18428 letter, the decipherments by Gondomar's secretary of the six other cipher letters of the volume (`mss18428/CONTEMPORARY-CLEARS.md`).
+- `bourdeau`: pointer (catalogue 1601, leads 1602 and 1271 = catalogue entry 1271 for MSS/18428).
 
 ## Files
 
+`mss18428/`: the MSS/18428 letter (PR #560): transcription, decryption, reading, translation, key CLE_M02, validation, contemporary clears.
 `transcription.txt`, `decryption.txt` (word by word: tokens, key values, word), `key.tsv` (CC BY 4.0), `validation.txt`,
 `reading.md` (normalised text and word table), `translation.md`, `BLIND-REREADING.md` (11 Nov: new code values, sheets FL2-C and FS1,
 hashes, counts), `profile.json`.
+
+## Integration check (14 Nov 2026, PR #560): the MSS/18428 letter folded in
+
+PR #560 (Brice Dudout) brought the letter of BNE MSS/18428, viewer images 13 right - 15 left (the Marquis of Mirabel to the Count of
+Gondomar, Paris, early 1622; catalogue 1271) as a new target `mirabel1622`. It is the same system as this target and its key CLE_M02 is
+key C04 of this folder extended from the clears of MSS/18428, so under one key, one entry it is folded in here as a second document:
+files in `mss18428/` (the contributor's NOTES and profile kept as `NOTES_PR560.md` and `profile_PR560.json`; the key extension as
+`mss18428/key.tsv`). `key.tsv` of this folder stays C04 (the frozen key behind `decryption.txt`).
+
+- **Reproduction.** An own decoder from `mss18428/key.tsv` over the token column of `mss18428/decryption.txt` gives the same values on
+  231 of 237 rows; the other 6 are notation (faz / fez = que, which are not rows of the key file; + written as a null). The word table
+  counts 250 cipher words: 183 certain, 36 probable, 11 restored, 20 unresolved, as stated.
+- **Strict count: 182/250 = 72.8%.** The 183 certain words less "Reina" (code _A_), a value placed by the sense in this folder's key and
+  counted here as a hole; every other certain code word rests on a clear (REY, ELLO, BIEN, OTRO, FRANCES, NUESTRO, SR, HECHO, CAPITULA)
+  or on C04 rows built from Feria's clears (MUY, MENTE, AUNQUE, ALGUNA). The contributor's figures: 183/250 = 73.2% sure, 219/250 =
+  87.6% certain + probable. Read in part. Part A alone (contributor): 166 words, 124 / 21 / 7 / 14; part B: 84 words, 59 / 15 / 4 / 6.
+- **Tests: failed and partial, published as such.** M01 (part B, image 15 left, 192 tokens, key CLE_M01, lexical score with the cipher
+  runs segmented alone): score -2.381 against the threshold -2.35, gap 0.499 to the best of 200 controls against 0.60: **failed**. M02 (part A,
+  images 13 right - 14 right, 349 tokens, key CLE_M02, a whole-text lexical metric recalibrated after M01 on burned passages only):
+  -2.383 against -2.25, gap 1.029 against 0.30: **partial** by the contributor's protocol. The extended key is not validated. The metric of
+  M02 was changed after M01 failed; that is a new rule for a new passage, not a re-scoring of M01. Pre-registrations, scripts and
+  hashes are in the contributor's working folder: the order of events is by the contributor's record. The 0.921 agreement on the 39
+  aligned segments of the six deciphered letters is learning data (the added values come from them), not a test.
+- **H4 and M01.** Part B is the passage that was reserve H4 of this target (burned without a measurement on 5 Nov because its margin was
+  show-through). It was measured for the first time as M01.
+- **o with a cross = t, and the H5 transcription.** The contributor reads the sign of "trae" and "ministros" in the clear copy of images
+  39 right - 40 left and in the H5 margin passage (image 44 right, "is xi Δ ō cor f" = ministros) as an o with a cross, value t, a sign
+  distinct from Ð = n; the H5 transcription of 5 Nov had it as Ð. This explains the "Ð (n? / t) in conflict" loss recorded under H5 in
+  `validation.txt` (a transcription slip, not a key fault). It is applied as a note: the H5 score stays as measured (0.814, partial), and
+  the two Ð of the Lyon letter (conveniencias, rompimiento, Ð = n) are unaffected. The images were not seen by the project, so the
+  re-reading is by the contributor's record.
+- **_0_ REBELDE.** C04 had _0_ = REVES; the clear copy on image 33 left gives "sus rebeldes" twice. _0_ does not occur in the Lyon
+  letter, so its reading is unchanged.
+- **g doubtful.** The clear copies give g = p (v39 d) and g = f (v33 g); g does not occur in the MSS/18428 letter.
+- **Images.** BNE Digital answered 403 to a script again (14 Nov 2026, bdh-rd.bne.es viewer); no browser session. The transcription and
+  every alignment with the clears are by the contributor's record.
+- **Prior art.** Not on DECODE; nothing at Cryptiana or in Lasry's lists; no target or PR for MSS/18428 before issue #367 (inventory) and
+  this PR; Herrero García (*Avisos* 100, 2023) and the *Correspondencia oficial* of Gondomar (Documentos inéditos, 1936-1945) not read.
+- **Catalogue 1271** (MSS/18428) leaves the catalogue: six of its seven cipher letters carry a decipherment of the time and the seventh is
+  read in part here.

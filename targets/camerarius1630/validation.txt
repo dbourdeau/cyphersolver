@@ -1,0 +1,32 @@
+Camerarius, The Hague 1630 (Riksarkivet, Diplomatica Hollandica SE/RA/2109/I/5/7, series R0003234)
+Two pre-registered held-out tests, each run once. Protocols, keys, transcriptions and tools were hashed (SHA-256)
+before the held-out part was transcribed; hashes are kept in the contributor's working folder.
+
+1. Letter table (numbers 10-99), 6 Nov 2026
+   Learned only from the contemporary interlinear glosses of images 409, 414, 423 and 427; frozen.
+   Held out: image 498 (letter of 10/20 Dec 1630), chosen before it was enlarged; 14 glossed spelled words, 83 letters.
+   Character agreement 0.904 (whole words 0.714); best of 200 shuffled keys 0.277 (0.143).
+   Thresholds fixed in advance: >= 0.85 and >= best control + 0.30. PASS.
+
+2. Code list (nomenclator groups), 13 Nov 2026
+   109 groups learned only from the glosses of images 402, 405, 406, 412, 414, 415, 418, 419, 423, 427 and 498
+   (codes.tsv); frozen (protocol sha 315f757e..., list sha eff82a4c...).
+   Held out: image 442, the unglossed "Post script" of 20/30 Sept 1630 (151 cipher tokens), transcribed after the
+   freeze in two passes (the second blind, by a separate agent: 361 of 362 elements agree before arbitration).
+   138 code occurrences, 59 covered by the list (0.43).
+   Test: for each covered occurrence, the decoded Latin around it (+-15 words) with the group blanked, and two
+   fillers: the list's value and a decoy drawn at random (seed 20261113) from the other values; a blind judge
+   (a separate agent that saw only the passages and fillers) chose one.
+   Score 59/59 = 1.00; best of 200 random-answer controls 0.695. Thresholds fixed in advance: n >= 30,
+   score >= 0.85 and >= best control + 0.30. PASS (margin 0.305).
+   Flaw found after judging: a mechanical clean-up of bracketed notes, done before judging, emptied 4 fillers
+   (2 true values of the sign Lq, 2 decoys). Without those 4 items: 55/55 against 0.673 (margin 0.327), still a pass.
+   Caveat: a forced choice against random decoys tests that the list's values fit; it does not prove every gloss.
+
+Addendum, 13 Nov 2026 (after the test): image 442 is the bare duplicate of the glossed original 438-440
+(alignment_439-442.txt). The test remains blind (the code list was built without 438-440 and the judge saw only
+contexts and two options), but "unglossed" above means "without glosses on this copy", not "without a decipherment
+of the time". The glosses of 439 agree with the list for all 59 judged occurrences (51 same word, 8 synonym or same
+referent). The held-out portion was 442R (postscript) followed by 442L (end of the main letter), not one text; the
+contexts of a few items near the junction were therefore mixed. New groups from 438-444 (codes_438-444.tsv) are
+attested by glosses; they were not measured.

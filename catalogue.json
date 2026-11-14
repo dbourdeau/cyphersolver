@@ -40173,69 +40173,6 @@
    "repository": "bne"
   },
   {
-   "id": 1271,
-   "counted": true,
-   "seen": "image",
-   "source": "BNE/Hispana sweep",
-   "prior_art": "open (checked 28 Oct 2026: Tomokiyo spanish2C.htm (key list), repo known.py; BDH viewer returned HTTP 403 to script, not viewed; Mirabel not mentioned)",
-   "score_note": "Scored from the BNE catalogue description (via the Europeana record API) during the Oct 2026 BNE/Hispana sweep (research/bne_hispana/); not viewed",
-   "decode_ids": [],
-   "year": 1622,
-   "date": "1621-1624",
-   "title": "Marquis of Mirabel (Paris) → Count of Gondomar: letters, some in cipher",
-   "correspondents": "Antonio de Zúñiga y Dávila, Marquis of Mirabel → Diego Sarmiento de Acuña, Count of Gondomar",
-   "place": "Paris / Madrid",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1611-1650",
-   "shelfmark": "Madrid, Biblioteca Nacional de España, MSS/18428 (Gayangos); BDH bdh0000141369",
-   "folio_note": "volume of originals and copies; 'algunas cifradas'",
-   "cls": "C",
-   "status": "9 Nov 2026 (Brice Dudout, issue #367, not checked by the project): five of the seven 1622 letters have a contemporary decipherment (margin clears and two clear copies); the letter on images 13-15 (Paris 1622) has none; the clear copies fix two values of the coloma1622 system (141 = ELLO, 318 = OFICIO). Earlier: BNE catalogue: some letters ciphered, on the Valtelline and European politics. No decipherment noted. Not on DECODE. Checked 28 Oct 2026: Verified 28 Oct: no reading found.",
-   "why": "Spanish ambassador in Paris on the Valtelline crisis, writing to Gondomar; a 1620s Spanish diplomatic cipher.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "View ciphered letters; find Gondomar-era Spanish ambassador cipher.",
-   "links": [
-    {
-     "label": "BDH viewer",
-     "href": "http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1"
-    },
-    {
-     "label": "Europeana record",
-     "href": "https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000141369"
-    }
-   ],
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "access_note": "online (backfilled 28 Oct 2026 from the entry: link BDH viewer (http://bdh-rd.bne.es/viewer.vm?id=0000141369&page=1))",
-   "vetting_note": "BNE Digital blocked on 3 Nov 2026 in Chrome: no checkbox showed; the Crolope card loaded, then the viewer returned 'SE HA BLOQUEADO EL ACCESO POR PARTE DE LOS SISTEMAS DE SEGURIDAD' (Cloudflare 1000-series). Stopped on the host, nothing clicked through, no retry. Not opened this pass: BDH 0000141369 (Mss/18619; check against Mss. 18428); ciphered letters not located.",
-   "vetting": {
-    "date": "2026-11-09",
-    "by": "claude vetting agent nov9 v1",
-    "seen": {
-     "kind": "scan",
-     "where": "BNE Digital card https://bnedigital.bne.es/bd/card?oid=0000141369&site=bdh (signature MSS/18428, 108 h., 1621-1624; viewer id=e2ff5c2e-4a66-40f3-90e3-c2b5f1a8583f), viewer page 44 (spread) viewed and zoomed in Chrome 9 Nov 2026",
-     "extent": "Viewed one spread (viewer page 44, a Mirabel letter to Gondomar): about 4-5 lines of numeral cipher groups interlined in Spanish prose on the right leaf. Other ciphered letters in the 108 folios not individually located; the card summary says 'algunas cifradas'.",
-     "cipher": "Spanish ambassador's numeral nomenclator: groups of digits (two- and three-digit numbers, some with dots/marks) mixed with clear words (con, por, de) inside the text. No interlinear plaintext above the groups; a short marginal note on the left of the right leaf could be a contemporary clear (the coloma1622 notes treat marginal clears of this volume as a crib source, one margin on p.15 being only show-through). No decipherment is bound with it that I could confirm."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE per lead decode_ids empty and the local harvest; DECODE not searched online beyond that.",
-     "tomokiyo": "Cryptiana spanish2C.htm key list was checked on 28 Oct (no Mirabel); web search 'cryptiana Spanish ciphers 17th century Mirabel Coloma Gondomar Tomokiyo' returned nothing on Mirabel.",
-     "lasry": "Searched Lasry/DECRYPT with Mirabel Gondomar 1622 Valtelline: nothing found.",
-     "edition": "Searches (Spanish and English: 'Marques de Mirabel cartas Conde de Gondomar cifra descifrada MSS/18428', 'Mirabel Gondomar 1622 cipher Valtelline decipherment') found no edition or decipherment of these letters. Real Biblioteca Avisos articles (Herrero Garcia 2023 on the Mirabel marchioness letters; Rodriguez Gomez on the Gondomar ciphers and the 1625 general cipher) surfaced but were not read in full.",
-     "literature": "Rodriguez Gomez (Avisos) says plaintexts are usually kept as marginal notes or on adjoining folios in the Gondomar papers (Real Biblioteca), a different archive; nothing on BNE MSS/18428 found."
-    },
-    "key_check": "targets/coloma1622 (catalogue 1601, Mirabel to Coloma, Lyon 8 Dec 1622, same nomenclator family) rebuilt a key and tested it on MSS/18428 p.44 right: partial fit (0.814 vs best-of-200 controls 0.466), p.15 inconclusive; so a related key exists but did not read this volume.",
-    "key_held": "targets/coloma1622/key.tsv, a partial key of the same system, only partly tested on MSS/18428 p.44; not enough to count as a reading. No key for this volume published.",
-    "duplicates": "known.py 'Mirabel','Gondomar','141369': lead itself, bne_hispana candidates, catalogue 1601 / targets/coloma1622 (a different Mirabel letter, RES/227/122, which used MSS/18428 pages only as tests). Correct shelfmark is MSS/18428; 'Mss/18619' in the lead is the other volume named in the card note (Gayangos note), not this one.",
-    "verdict": "open"
-   },
-   "repository": "bne"
-  },
-  {
    "id": 1272,
    "counted": true,
    "seen": "image",
@@ -70460,7 +70397,7 @@
    "shelfmark": "Riksarkivet, Diplomatica Hollandica, SE/RA/2109/I/5/7 (Residenten, slutligen ambassadören, Ludwig Camerarius, Brev till Kungl. Maj:t 1626-1628, 1630; also letters to Johan Skytte)",
    "folio_note": "535 images (series R0003234). Bare cipher: 426 (Duplicata, 6/16 Sept 1630), 432 (Duplicata, 13/23 Sept 1630), 442 (Post script, 20/30 Sept 1630, full page), 460 (19/29 Oct 1630, both pages), postscript on 454 left. 428 is bare but duplicates the glossed 427. Glossed: 109 (4 June 1627), 427 (10/20 Sept 1630), 498; postscript of 423 partly glossed; 215 is a second system, glossed. More cipher at 73, 144, 423, 451 (not zoomed). About 70 of 535 images seen (checked 6 Nov 2026, batch n09).",
    "cls": "B",
-   "status": "Letter table rebuilt and validated; nomenclator only partly known (Brice Dudout, 6 Nov 2026). Latin text with a nomenclator of 3-4 digit groups and letters spelled by numbers 10-99, three homophones per letter in blocks (15-17 s, 18-20 m, 21-23 f, 24-26 e, 27-29 l, 30-32 r, 45-47 d, 48-50 c, 51-53 i, 72-74 a, 75-77 g, 78-80 n, 81-83 t); nulls 10, 11, 88-90, 95, 97-99. Key learned only from the interlinear glosses of images 409, 414, 423, 427 and frozen; held out image 498 (14 glossed words, 83 letters), pre-registered: character agreement 0.904 against 0.277 for the best of 200 shuffled keys (thresholds 0.85 and best + 0.30). Not the 1621-22 Solms code of camerarius1621. Glossed letters (109, 409, 411, 414, 416, 423, 427, 498) are existing; bare letters 426, 432, 442, 460 and postscript 454 are not read (426: about 25 of 45 groups unknown). A contemporary key is probably at Riksarkivet (Chifferklaver I:19 A and I:22), not digitised. Riksarkivet manifest: Public Domain Mark 1.0. Earlier note: Catalogue: volume title only, no mention of cipher. Bare at 2400 px on 426, 432, 442, 460 (428 at 3200 px): no interlinear or marginal decipherment, and no deciphered copy on the facing images 424-432 except for 427/428 (two copies of one letter, one glossed). Other letters in the volume carry Latin decipherments above the numbers, so a key can be rebuilt from the glossed pairs. The system looks like the one-part nomenclator of Camerarius's 1621-22 Munich letters (target camerarius1621: 2-4 digit groups in plaintext order, low numbers spelling letters, homophones for frequent words).",
+   "status": "14 Nov 2026 (PR #549, Brice Dudout; integration check): 426 and 442 are bare duplicates of glossed originals (425R; 438-440), so their content exists; 442 read through its original (targets/camerarius1630, in progress); code list of about 225 groups from the glosses. Still bare, originals not yet looked for: 432, 460, postscript on 454. Letter table rebuilt and validated; nomenclator only partly known (Brice Dudout, 6 Nov 2026). Latin text with a nomenclator of 3-4 digit groups and letters spelled by numbers 10-99, three homophones per letter in blocks (15-17 s, 18-20 m, 21-23 f, 24-26 e, 27-29 l, 30-32 r, 45-47 d, 48-50 c, 51-53 i, 72-74 a, 75-77 g, 78-80 n, 81-83 t); nulls 10, 11, 88-90, 95, 97-99. Key learned only from the interlinear glosses of images 409, 414, 423, 427 and frozen; held out image 498 (14 glossed words, 83 letters), pre-registered: character agreement 0.904 against 0.277 for the best of 200 shuffled keys (thresholds 0.85 and best + 0.30). Not the 1621-22 Solms code of camerarius1621. Glossed letters (109, 409, 411, 414, 416, 423, 427, 498) are existing; bare letters 426, 432, 442, 460 and postscript 454 are not read (426: about 25 of 45 groups unknown). A contemporary key is probably at Riksarkivet (Chifferklaver I:19 A and I:22), not digitised. Riksarkivet manifest: Public Domain Mark 1.0. Earlier note: Catalogue: volume title only, no mention of cipher. Bare at 2400 px on 426, 432, 442, 460 (428 at 3200 px): no interlinear or marginal decipherment, and no deciphered copy on the facing images 424-432 except for 427/428 (two copies of one letter, one glossed). Other letters in the volume carry Latin decipherments above the numbers, so a key can be rebuilt from the glossed pairs. The system looks like the one-part nomenclator of Camerarius's 1621-22 Munich letters (target camerarius1621: 2-4 digit groups in plaintext order, low numbers spelling letters, homophones for frequent words).",
    "why": "Gustav Adolf's agent at The Hague in the years before the Swedish landing in Germany (1626-30), reporting on the Palatine cause, the Dutch, England and the Empire: a dated Latin code corpus with its own key material in the same volume, and some letters never deciphered on the page.",
    "importance": 4,
    "solvability": 4,
