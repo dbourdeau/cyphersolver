@@ -94,7 +94,7 @@ succombons ce ne sera qu'à la dernière extrémité. M. le Chevalier de L[évis
 [que] moy. Je concevrois les plus grandes espérances de notre étroite union et de notre parfaite intelligence si nous étions moins accablés.
 Enfin si les Anglois achèvent la conquête de la Colonie, ils ne la devront qu'à l'épuisement de nos forces et de nos dernières ressources, car
 si j'avois seulement les vivres et munitions qui viennent en danger d'être pris à Rastigouche, cela joint aux précautions que je prendrois
-d'ailleurs me mettroit en état de m'assurer une retraite où je me maintiendrois avec les troupes lorsqu'il ne me seroit plus possible d'arrêter
+d'ailleurs me mett[roit] en état de m'assurer une retraite où je me maintiendrois avec les troupes lorsqu'il ne me seroit plus possible d'arrêter
 les progrès de l'ennemi.
 
 *Je suis avec un très profond respect, Monsieur, votre très humble et très obéissant serviteur, Vaudreuil.*
