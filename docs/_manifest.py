@@ -2338,7 +2338,7 @@ PAGES = [
          rights='National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, via the National Archives Catalog'),
     dict(slug='greenhow1861', label='Greenhow mourning-paper letter 1861', year='1861', y=1861.6, place='Washington &rarr; Confederate lines', st='partial', stt='read in part',
          title='Rose Greenhow&rsquo;s letter on mourning paper, Washington 1861',
-         blurb='A torn letter in symbols on mourning paper, seized from Rose O&rsquo;Neal Greenhow&rsquo;s house on 23 August 1861 (NARA naId 1634036). Side 1 deciphers with the key found on her body when she drowned off Fort Fisher in 1864: Washington expects an attack hourly and is hunting whoever gave the alarm. About 60% of its words read as sense between paper losses; side 2 and a scrap of figures stay open. No earlier decipherment was found.',
+         blurb='A torn letter in symbols on mourning paper, seized from Rose O&rsquo;Neal Greenhow&rsquo;s house on 23 August 1861 (NARA naId 1634036). Side 1 deciphers with the key found on her body when she drowned off Fort Fisher in 1864: Washington expects an attack hourly and is hunting whoever gave the alarm. About half of its words read as sense between paper losses; side 2 and a scrap of figures stay open. No earlier decipherment was found.',
          quote='&ldquo;Attack is hourly expected. They beleive this: the atta[ck] will [b]e simultaneou[s]&rdquo;',
          rights='National Archives (NARA), RG 59, Seized Correspondence of Rose O&rsquo;Neal Greenhow, and RG 45, M1091, via the National Archives Catalog'),
     dict(slug='milroy', label='Milroy telegrams 1861&ndash;62', year='1861&ndash;62', y=1862.9, place='Washington &rarr; Milroy', st='solved', stt='known key applied',
