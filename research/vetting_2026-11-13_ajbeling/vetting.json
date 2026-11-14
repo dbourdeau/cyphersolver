@@ -103,60 +103,62 @@
  "1206": {
   "date": "2026-11-13",
   "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
-  "unvetted": "Pusch, 'Kerlérec's Cipher: The Code Book of Louisiana's Last French Governor', Louisiana History 49/4 (2008) 463-480, JSTOR 25478601, is still unread beyond page 1 (needs a JSTOR login), and ANOM COL C13 A 39 is not online. Pusch reconstructs Kerlérec's code for his despatches of 1752-63, and Villiers du Terrage (1904) already summarises the 9 October 1755 cipher despatch, so this lead is very probably read.",
+  "verdict": "read",
   "seen": {
-   "kind": "not online",
-   "where": "JSTOR stable/25478601 page-1 preview, opened in Chrome; Villiers du Terrage, Les dernières années de la Louisiane française (1904), archive.org lesdernieresanne00vill full text, p. 71; FranceArchives notices for COL C13 A 39.",
-   "extent": "Three despatches of 9, 10 and 18 October 1755 (ANOM calendar).",
-   "cipher": "ANOM calendar: 'Dépêche chiffrée'. Pusch's page 1 says many of the governor's despatches to the Minister of the Marine, 'some in code', survive in Colonies C13a. Villiers p. 71: 'Le lendemain [of 8 Oct 1755], Kerlérec envoie sa première dépêche chiffrée', and summarises it (the platforms of the four batteries at the Détour-à-l'Anglais, a request for 43 cannon and 700 men)."
+   "kind": "scan",
+   "where": "Archives nationales d'outre-mer (ANOM), COL C13 A 39, which is digitised on recherche-anom.culture.gouv.fr (image files FRANOM50_C13A_39_NNNN.jpg). Folio 60 recto and verso (images 0120 and 0121) of despatch no. 86, 9 October 1755, 'Première', were opened at 800 px high on 13 Nov 2026. Also read in full: Donald E. Pusch, 'Kerlérec's Cipher: The Code Book of Louisiana's Last French Governor', Louisiana History 49/4 (Fall 2008) 463-480, JSTOR 25478601, downloaded through the University of Maryland proxy and kept in sources/raw/kerlerec_pusch_2026-11-13/ with SHA256SUMS.",
+   "extent": "Three despatches: no. 86 of 9 Oct 1755 (C13A 39 ff. 60-62v, first copy), no. 87 of 10 Oct 1755 (ff. 63-64, first copy) and no. 91 of 18 Oct 1755 (ff. 69-70v, second copy), all listed in Pusch's Table 1 (p. 476).",
+   "cipher": "Numeric two-part nomenclator (groups of one to three figures, with homophones written one above the other). On f. 60 every code line carries the ministry's decipherment written above it in the clerk's hand ('M. De Montberault Commandant aux Alibamons auquel j'ay donné des ordres ...')."
   },
+  "closed": "Read twice. The Ministry of the Marine deciphered all three despatches on receipt, writing the plaintext between the code lines (seen on C13A 39 f. 60 for no. 86); Pusch 2008 lists nos. 86, 87 and 91 among the 33 despatches he decoded with his reconstructed code book, prints the code book (Table 2, 547 of 700 entries, pp. 477-480), and corrects the ministry's reading of no. 86 (the Okkonis River, p. 472) and no. 91 (the cannoneers, p. 472). Villiers du Terrage (1904) p. 71 summarises no. 86 in French. Nothing here is left to read.",
   "searches": [
    {
-    "query": "Pusch \"Kerlérec's cipher\" Louisiana History 2008 pdf",
-    "result": "No open copy; only the Maggs dealer listing of a Kerlérec number-code despatch."
+    "query": "Pusch 2008 full text, Table 1, dispatches of October 1755",
+    "result": "Nos. 86 (9 Oct, C13A 39 ff. 60-62v), 87 (10 Oct, ff. 63-64) and 91 (18 Oct, ff. 69-70v), all with ministry plaintext; Pusch's own decodings compared with it on p. 472."
+   },
+   {
+    "query": "ANOM recherche-anom COL C13 A 39 digitised images, folio 60",
+    "result": "Image 0120 is f. 60 of no. 86 'Première', 9 Oct 1755, with the decipherment written above each line of numbers."
    },
    {
     "query": "archive.org full text: \"Kerlérec\" \"chiffre\" Louisiane",
     "result": "Villiers du Terrage 1904, p. 71: content of the 9 October 1755 'première dépêche chiffrée' given in summary."
-   },
-   {
-    "query": "decode_search.py Kerlerec / Louisiana",
-    "result": "0 DECODE records."
    }
-  ]
+  ],
+  "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): Pusch 2008 has now been read in full and the ANOM leaf seen."
  },
  "1207": {
   "date": "2026-11-13",
   "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
-  "unvetted": "Whether Pusch 2008 (Louisiana History 49/4, JSTOR 25478601) prints the plaintext of the C13 A 41/42 letters of 1759-60 is still unanswered: the article needs a JSTOR login (Andrew's), and ANOM COL C13 A 41-42 are microfilm only, so no ciphertext can be seen online.",
+  "verdict": "partly_read",
   "seen": {
-   "kind": "not online",
-   "where": "JSTOR 25478601 page 1 in Chrome (title 'Kerlérec's Cipher: The Code Book of Louisiana's Last French Governor'); FranceArchives notices for COL C13 A 41 and 42.",
-   "extent": "Four letters of 3 July, 17 September and 10 November 1759 and 12 June 1760, plus a 1736 item outside Kerlérec's term.",
-   "cipher": "ANOM calendar: 'Lettre chiffrée'. Pusch (p. 1) describes the series as Kerlérec's despatches 'some in code' and reconstructs the code book, which does not survive."
+   "kind": "scan",
+   "where": "ANOM COL C13 A 41, digitised in full (302 images) at https://recherche-anom.culture.gouv.fr/ark:/61561/664449.2269381/daogrp/0, page images FRANOM50_C13A_41_0162-0164 (ff. 81-82, no. 206), 0174-0198 (ff. 87-99, no. 207), 0221-0224 (ff. 111-112, no. 215), opened at 450 to 900 px high on 13 Nov 2026; Donald E. Pusch, 'Kerlérec's Cipher: The Code Book of Louisiana's Last French Governor', Louisiana History 49/4 (Fall 2008) 463-480, JSTOR 25478601, read in full.",
+   "extent": "Lead items: 3 Jul 1759 (no. 206, C13A 41 ff. 81-82, third copy), 17 Sep 1759 (no. 215, ff. 111-111v, second copy), 10 Nov 1759 (no. 194, second copy, ff. 144-145v), 12 Jun 1760 (no. 228, C13A 42 ff. 48-53), and a 1 Sep 1736 item in C13A 21 from before Kerlérec's time. The same volume also holds no. 207 of 13 Jul 1759 (ff. 87-98v), mostly in clear with one coded passage on f. 97.",
+   "cipher": "No. 206: f. 81r has three lines of clear text ('Le plus grand hazard ne me procure qu'un instant pour profiter de l'occasion d'un religieux Espagnol qui va faire voile pour la Havanne') then about 13 lines of numbers, f. 81v about 23 lines, f. 82r about 13 lines and the signature: about 650 groups, nothing written between the lines. No. 215: f. 111r one clear line then about 20 lines of numbers, f. 111v about 10 lines: about 370 groups, bare. No. 207: about 17 lines of numbers on f. 97r-v (about 220 groups) inside a clear despatch, bare."
   },
+  "closed": "Partly read. Pusch 2008 (Table 1 and pp. 468, 474-475) decoded all of nos. 194, 206, 215 and 228 with his reconstructed code book; the ministry's interlinear plaintext exists for no. 228 and for no. 194 in its 6 May 1759 copy (C13A 41 ff. 51-52v), of which the 10 Nov copy is a duplicate. For nos. 206 and 215 (and 207) no contemporary decipherment exists (Pusch n. 13) and Pusch prints only summaries (no. 206 on the Rochemore affair, p. 474) and no plaintext. The 1736 item in C13A 21 is outside Pusch's study and was not examined. The code book is printed (Table 2, 547 of 700 entries), so nos. 206, 207 and 215 can be read from the online ANOM images; that reading is a follow-on target built on Pusch's key, not an open cipher.",
+  "key_held": "Pusch 2008, Table 2 (pp. 477-480): the décodage table of Kerlérec's 1755-62 nomenclator, 547 code numbers of 700; not yet tested by us on nos. 206, 207 or 215.",
   "searches": [
    {
-    "query": "JSTOR stable/25478601 opened in the contributor's Chrome",
-    "result": "Page 1 preview only; the article reconstructs the code of 1752-63 from the C13A despatches. Full text behind a login."
+    "query": "Pusch 2008 full text, Table 1 and note 13, dispatches of 1759-60",
+    "result": "Nos. 194 (6 May and 10 Nov 1759), 206 (3 Jul), 207 (13 Jul), 215 (17 Sep), 226 (8 Dec 1759), 228 (12 Jun 1760); 206, 207 and 215 have no plaintext version; all decoded by Pusch, none printed in full."
    },
    {
-    "query": "heritage.canadiana.ca \"C13A\" Louisiane correspondance générale microfilm Kerlérec",
-    "result": "C13A exists only as microfilm (61 reels; Moncton finding aid); no Canadiana or free online copy found."
+    "query": "ANOM recherche-anom COL C13 A 41 digital object, manifest",
+    "result": "302 page images of 2150 x 3110 px online; f. 81 = image 0162, f. 97 = 0193, f. 111 = 0222; nos. 206 and 215 are bare numeric cipher."
    },
    {
     "query": "Villiers du Terrage 1904 full text grep 1759-1760 despatch dates",
     "result": "No summary of the 1759-60 cipher letters found there (only the 1755 and 1756 cipher remarks)."
    }
   ],
-  "lead_updates": {
-   "access": "archive"
-  }
+  "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): Pusch 2008 has now been read and C13A 41 turns out to be digitised on the ANOM site."
  },
  "1299": {
   "date": "2026-11-13",
   "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
-  "unvetted": "The Ministère des Armées inventory (bibliotheques-numeriques.defense.gouv.fr, document 2bc715e2-...) could not be opened from the contributor's home network either (curl connection failure, Chrome falls back to a blank tab), so the cote and the cipher items are still unknown; and Pusch 2008 (JSTOR 25478601) is behind a login.",
+  "unvetted": "The Ministère des Armées inventory (bibliotheques-numeriques.defense.gouv.fr, document 2bc715e2-...) still does not open from the contributor's network, by curl (exit 28) or in his Chrome (13 Nov 2026, 22:20), so the cote and which despatches are in cipher are unknown. Pusch 2008, now read in full, decoded the two Kerlérec cipher despatches of these dates that are in ANOM: 12 and 23 Aug 1758 (C13A 40 ff. 31-33v) and no. 194 of 6 May 1759 (C13A 41 ff. 51-52v), both with the ministry's plaintext between the lines. If the Ministère des Armées items are copies of these, the lead is read; that needs the inventory.",
   "seen": {
    "kind": "not online",
    "where": "Inventory URL tried with curl and Chrome on 13 Nov 2026; JSTOR page 1 preview.",
@@ -175,6 +177,10 @@
    {
     "query": "archive.org full text: \"Pusch\" \"Kerlérec\"",
     "result": "45 hits, none of them Pusch's article or a printing of Kerlérec's 1758-59 cipher despatches."
+   },
+   {
+    "query": "Pusch 2008 Table 1, dispatches dated 23 Aug 1758 to 25 Jun 1759",
+    "result": "Two: 'August 12 and 23, 1758' (C13A 40 ff. 31-33v) and no. 194 of 6 May 1759 (C13A 41 ff. 51-52v); both have ministry plaintext."
    }
   ]
  },
@@ -206,35 +212,37 @@
  "1300": {
   "date": "2026-11-13",
   "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
-  "unvetted": "Narváez, 'Los despachos codificados de Pablo Obregón desde Washington en 1825. Análisis y dos decodificaciones', Historia Mexicana 58/3 (231), 2009, pp. 1093-1153, is still unread: historiamexicana.colmex.mx shows a Cloudflare check that did not clear in the contributor's Chrome either (tab left open for him). The despatches are in the SRE archive (AHGE), not online, so no ciphertext can be seen.",
+  "verdict": "read",
   "seen": {
-   "kind": "not online",
-   "where": "Narváez, Documenta & Instrumenta 6 (2008) 29-53 (revistas.ucm.es, read in full) and EHMCM 38 (2009) 139-163 (moderna.historicas.unam.mx, read), both of which describe the Obregón despatches.",
-   "extent": "An unknown number of coded despatches of 1825-26; Narváez decoded nos. 3 and 14 of 1825 and one of 16 January 1826.",
-   "cipher": "Narváez (EHMCM 38, p. 141) calls Obregón 'muy afecto a valerse de la codificación'; Documenta 6, n. 34: he coded 'aquellos [despachos] que por su materia lo exigían'. Narváez says he reconstructed the code system 'tras un examen minucioso y comparativo de los despachos codificados'."
+   "kind": "transcription",
+   "where": "Roberto Narváez, 'Los despachos codificados de Pablo Obregón desde Washington en 1825. Análisis y dos decodificaciones', Historia Mexicana 58/3 (231), 2009, pp. 1093-1153, read in full in the contributor's Chrome (article 1751, PDF view; Cloudflare cleared by him), 62 pages, 13 Nov 2026.",
+   "extent": "Obregón's reserved coded despatches of 1825 in Acervo Histórico Diplomático de la SRE (AHDSREM), bound legajo L-E-1333 'Independencia de Cuba', with its register 'Correspondencia reservada del Sr. Obregón de este año' (ff. 31-32) of every number received, whether in cipher and whether 'traducido'.",
+   "cipher": "One-part numeric code of about 200 entries (groups of two or three figures, a bar above or below a group reversing the bigram), shown in facsimile in figures 1-4 (ff. 16, 10, 69)."
   },
+  "closed": "Read. Narváez (pp. 1103-1104) says the ministry decoded Obregón's coded despatches on receipt (interlinear decodings, figures 3 and 4) and these are printed in Chávez Orozco, Un esfuerzo de México por la independencia de Cuba (1930) and México y Cuba (1982); only 'un par' of 1825 were left undecoded, reserved nos. 3 (23 Mar 1825, ff. 15-30bis) and 14 (1 Nov 1825, ff. 10-12). He decodes both and prints them in full (pp. 1135-1149) and prints the reconstructed code book (figure 5, p. 1132). He also recovered the plaintext of one partly coded 1826 document (n. 26) for a later paper. No undecoded 1825 despatch remains; the archive is not online.",
   "searches": [
    {
-    "query": "Narváez \"despachos codificados\" Obregón Historia Mexicana pdf",
-    "result": "Article download URLs on historiamexicana.colmex.mx (1751/1569 and 1797/1615); curl 403, Chrome stuck on Cloudflare."
-   },
-   {
-    "query": "redalyc Narváez Obregón despachos codificados 1825 dos decodificaciones",
-    "result": "No redalyc copy of the 2009 articles; redalyc holds the 2011 Michelena article instead."
+    "query": "Narváez, Historia Mexicana 231 (2009), full text, list of undecoded despatches",
+    "result": "Only reserved nos. 3 and 14 of 1825 were undecoded in L-E-1333; both decoded and printed pp. 1135-1149; code book figure 5."
    },
    {
     "query": "Narváez, Documenta & Instrumenta 6 (2008), grep Obregón",
     "result": "Only footnote 34 pointing to the Historia Mexicana study; no list of Obregón despatches."
+   },
+   {
+    "query": "redalyc Narváez Obregón despachos codificados 1825 dos decodificaciones",
+    "result": "No redalyc copy of the 2009 articles; redalyc holds the 2011 Michelena article instead."
    }
   ],
   "lead_updates": {
    "access": "archive"
-  }
+  },
+  "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): the Historia Mexicana article has now been read in full."
  },
  "1301": {
   "date": "2026-11-13",
   "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
-  "unvetted": "Narváez's 'Dos criptosistemas empleados por el coronel José A. Torrens en Colombia (1825-1826)', Memorias de la Academia Mexicana de la Historia 49 (2007-08) 7-43, is not online, and the notes are in the SRE archive. What is now known: notes 2 (23 Jan) and 3 (9 Apr 1826) are wholly in Torrens's 10 x 7 matrix cipher, whose key sheet survives (AHDSREM exp. 5-16-8615 ff. 27-29) and is printed in EHMCM 38 (2009) p. 142; Narváez says several messages Torrens enciphered this way are already printed in books. So the cipher part is almost certainly read; the code part is unknown.",
+  "unvetted": "Narváez's 'Dos criptosistemas empleados por el coronel José A. Torrens en Colombia (1825-1826)', Memorias de la Academia Mexicana de la Historia 49 (2007-08) 7-43, is still not online, and the notes are in the SRE archive. Known now: EHMCM 38 (2009) p. 142 prints the key of Torrens's 10 x 7 matrix cipher and says notes 2 and 3 of 1826 are wholly in it; Historia Mexicana 231 (2009) n. 52 says 'Dos criptosistemas' gives 'una decodificación precaria de un manuscrito presuntamente suyo' in Torrens's code, and p. 1133 suggests Obregón's 1825 code book (printed there, figure 5) and Torrens's code are versions of one another.",
   "seen": {
    "kind": "not online",
    "where": "Narváez, EHMCM 38 (2009) 139-163, pp. 139-142 and n. 21-22 (moderna.historicas.unam.mx, read); Documenta & Instrumenta 6 (2008) 29-53, the Torrens section and n. 23 and 25 (revistas.ucm.es, read).",
@@ -253,6 +261,10 @@
    {
     "query": "Narváez, Documenta & Instrumenta 6 (2008), Torrens section, n. 25",
     "result": "'ya se han publicado en libros varios mensajes aclarados que Torrens cifró con este método'."
+   },
+   {
+    "query": "Narváez, Historia Mexicana 231 (2009) full text, grep Torrens",
+    "result": "p. 1133 and n. 52: Torrens's code possibly a variant of Obregón's; 'Dos criptosistemas' has a precarious decoding of a manuscript presumed his."
    }
   ],
   "lead_updates": {
@@ -262,20 +274,43 @@
  "1437": {
   "date": "2026-11-13",
   "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
-  "unvetted": "texashistory.unt.edu answers this network with an 'I'm not a robot' (Altcha) check at /dam/; it was not passed by the agent and is left open in the contributor's Chrome for him to clear. The eight Sinclair-Zevely telegrams are unseen.",
+  "verdict": "open",
+  "seen": {
+   "kind": "scan",
+   "where": "Portal to Texas History, Rice University Woodson Research Center, MS 1052 (Teapot Dome Scandal, Sinclair Oil, and related company records); all nine items the Portal describes as 'telegraphic commercial code' were opened through their IIIF images at 1800 px across (texashistory.unt.edu/iiif/ark:/67531/<id>/m1/1/full/1800,/0/default.jpg), both images of each, after the contributor cleared the robot check in his Chrome on 13 Nov 2026: metapth1891647, 1891648, 1891662, 1891668, 1891718, 1891736, 1891737, 1891738, 1891750.",
+   "extent": "Nine telegrams, not eight. Code is in three: metapth1891750 (Sinclair, Mexico DF, to J. W. Zevely, Washington, 29 Apr 1922, about 45 words of which about 15 are code words), metapth1891738 (Wahlberg, New York, to Colonel J. W. Zevely care John W. Lacey, Cheyenne, 1 Oct 1923, about 100 words, more than half code words) and metapth1891736 (G. T. S[tanford], New York, to Bert W. Henry, New Orleans, 21 Jan 1924, about 40 words, about 20 code words). metapth1891648 (Chandler to Stanford, 13 Dec 1916) has two code names, OUTSPARAL and OUTSPAPIN, glossed in pencil 'H. F. Sinclair' and 'E. R. Kemp'. The other five are in plain English.",
+   "cipher": "Code words mixed with plain words: 'PAVILLION MONDAY ARROGANCE BLAMEFUL GLADSOMELY FOUR OCLOCK THURSDAY ARROGANCE STOP HYGIENIC RECOMMIT ME THERE' (1891750); 'FIBEL LEBAAL RATAPLAN FROM DLOUXELI TUBOLDNUMD ANZUNDET APTENTURED ANOMALIDAD ANCHORA QUOTE THE PELUOE HAS UNDER COLLIGAREM THE ASEGURABAN' (1891738); 'PYRR ANZIEHEN LEFT MINIMENT FOR ANZUNDET RESPONSE TOMALLINE CABIVNA KUBEL' (1891736). Nothing is written between the lines or on the backs (the verso of 1891738 shows only the front's ink through the paper, reversed)."
+  },
+  "prior_art": {
+   "decode": "decode_search.py on 'Sinclair', 'Zevely', 'Teapot' and 'Wahlberg': 0 records each.",
+   "tomokiyo": "No Cryptiana page on the Teapot Dome telegrams or on Sinclair Oil codes found by web search on the site and the topic; Cryptiana's material on 1920s US code telegrams does not cover these.",
+   "lasry": "Cryptiana GL.htm (Lasry's list of solved items) fetched 13 Nov 2026: no entry for Sinclair, Zevely, Teapot Dome or any 1922-24 item.",
+   "edition": "The Senate hearings 'Leases upon Naval Oil Reserves' (Committee on Public Lands and Surveys, 1923-24; HathiTrust full view) were searched inside: v. 3 (uc1.c051768921), pt. 7-11 (uiug.30112110126072) and v. 10-14 (mdp.39015024568084) for 'Lacey' and 'Lacey Cheyenne': no hit on these telegrams. The coded telegrams William Friedman decoded for that committee on 6 Mar 1924 are E. B. McLean's, in a Justice Department code, not these.",
+   "literature": "HathiTrust full-text search for the code-word pairs 'colligarem aseguraban' (hits only two word lists: the Berne 'New official vocabulary for telegrams in preconcerted language', 1901, and Wright's Código brasileiro universal, 1902), 'peluoe teobroma' and 'anomador spuktested' (no hits); web search for the words: nothing. No decoding of these telegrams in print found."
+  },
+  "key_check": "No key held. The 1923-24 code words (COLLIGAREM, ASEGURABAN and the like) are drawn from the International Telegraph Bureau's official vocabulary of 1901, which lists permitted words without meanings, so the book is a code built on that vocabulary (a commercial one or Sinclair's own) and is not identified; the 1922 telegram uses ordinary English words as code. ANZUNDET appears in both 1891738 and 1891736, so those two share a book. Not tested: vetting only.",
+  "duplicates": "known.py \"metapth1891738\" \"metapth1891750\" \"metapth1891736\" \"Wahlberg\" \"Zevely\": hits only this lead, its sweep row (research/dpla_smithsonian) and the first block of this vetting file. Not a catalogue entry or a target.",
   "searches": [
    {
-    "query": "curl https://texashistory.unt.edu/ark:/67531/metapth1891647/",
-    "result": "302 to /dam/?next=..., the robot check page."
+    "query": "Portal to Texas History full text \"telegraphic commercial code\"",
+    "result": "Nine items, all MS 1052; images opened: three carry code, one two glossed code names, five plain English."
    },
    {
-    "query": "known.py \"metapth1891647\" \"Sinclair\"",
-    "result": "Only this lead and its sweep row (research/dpla_smithsonian)."
+    "query": "HathiTrust search inside Leases upon Naval Oil Reserves hearings for 'Lacey' and 'Lacey Cheyenne'",
+    "result": "No hit on the 1 Oct 1923 Wahlberg telegram in v. 3, pt. 7-11 or v. 10-14."
    },
    {
-    "query": "decode_search.py Sinclair Zevely",
-    "result": "0 DECODE records."
+    "query": "HathiTrust full text 'colligarem aseguraban', 'peluoe teobroma', 'anomador spuktested'",
+    "result": "Only the 1901 Berne official vocabulary and a 1902 Brazilian code for the first pair; nothing for the others."
+   },
+   {
+    "query": "Teapot Dome hearings Wahlberg telegram Zevely code \"Cheyenne\" 1923 decoded",
+    "result": "Only Friedman's March 1924 work on McLean's Justice Department code; nothing on these telegrams."
    }
-  ]
+  ],
+  "lead_updates": {
+   "folio_note": "nine telegrams, 1916-24, of which three carry code words (metapth1891736, 1891738, 1891750), one has two code names glossed in pencil (1891648), five are plain"
+  },
+  "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): the contributor cleared the robot check and all nine telegrams were seen."
  }
 }
