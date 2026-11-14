@@ -239,13 +239,13 @@ Huntington holds/digitized the sources; Decoding the Civil War volunteers suppli
 period operators and the printed Official Records supply prior readings. This is source collation, not first
 historical plaintext recovery, a blind experiment, or a human scholarly review.
 
-- **U1, p4:** Book2 gives the coherent Sedgwick/Kelley/Early message. Image correction Word -> World; Tobsy is
+- **U1, p4:** Book2 gives the coherent Sedgwick/Kelley/Early message. Emendation Word -> World (the clerk wrote Word; World = West in No.2); Tobsy is
   treated explicitly as Topsy, half past twelve P.M. in No.2 (not Book1's midnight). OR I/33 p486 is an earlier
   printed clear text, found after the exploratory key reading; the ledger does not encode OR's extra General.
 - **U2, p6:** heading1 and four image-verified Book1 mappings recover Washington, fifth, ten A.M., Colonel.
   `unity` stays unresolved. Body was already ordinary English. McCallum and Beckwith repairs are documented;
   no extra as is silently supplied to "soon as possible".
-- **McPhail, pp9-10:** complete wrappers/report and forwarding request, with five explicit lexical doubts.
+- **McPhail, pp9-10:** complete wrappers/report and forwarding request, with three explicit lexical doubts (whims, Greers, Dusty). Allen = 1 (Book No. 2 p. 26, misread Alton in the first key extract) and plain Provost Marshal were read on 13 Nov 2026.
   No.2 Java = Johnston is checked in two copies. **Two printed versions differ:** OR I/32 II p394 agrees on
   Johnston and has Greer's [?], while OR I/33 p559 has Beauregard and Green's. The ledger says 700 infantry;
   both printed versions say 780 Maryland Line. p394 lacks Hoke, p559 supplies it. All four relevant printed
@@ -262,7 +262,7 @@ historical plaintext recovery, a blind experiment, or a human scholarly review.
   David/Pittsburgh), but no vocabulary table or direct locator. Its 1865–1867 date prevents assigning U3’s 1864
   codeword values from custody alone.
 
-`decode_complete.py` verifies the frozen input hashes, reproduces the 175 earlier Book2 substitution tuples,
+`decode_complete.py` verifies the frozen input hashes, reproduces the 175 earlier Book2 substitution tuples plus Allen = 1 (176),
 adds four Book1 mappings, and writes all65 original lines with their literals. The selected key has112 entries,
 not a complete No.2 vocabulary. Complete cipher/literal/reading files exist for all five items. Body word shares
 are measured with the unmodified `v10_relabel.share` and retain conjectures as holes; the denominator excludes

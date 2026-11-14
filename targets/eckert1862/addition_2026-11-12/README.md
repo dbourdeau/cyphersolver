@@ -10,15 +10,15 @@ This addition applies surviving keys per message, preserves complete source line
 | McPhail, pp9–10 | [source](transcription/McPhail.txt) | [literal](decoded/McPhail.txt) | [reading with holes](reading/McPhail.md) | [notes](reading/McPhail_notes.md), [source discussion](McPhail_reading.md) |
 | Halleck to Grant, p10 | [source](transcription/Grant.txt) | [literal](decoded/Grant.txt) | [reading](reading/Grant.md) | [notes](reading/Grant_notes.md), [print witnesses](printed_parallels.md) |
 
-All 65 source lines are retained, including operator headings and possible post-signature check wording. The reading body excludes those separately documented headings/check tails from its word denominator; it does not quietly decipher them. English needs no separate translation. Body conjectures remain holes. U2 retains one body hole, McPhail five, and U3 six. U3's six unresolved words are ciphertext labels, not reconstructed ranks/names. `reading_metrics.json` gives every reproducible denominator and count, not a whole-ledger success percentage.
+All 65 source lines are retained, including operator headings and possible post-signature check wording. The reading body excludes those separately documented headings/check tails from its word denominator; it does not quietly decipher them. English needs no separate translation. Body conjectures remain holes. U2 retains one body hole, McPhail three, and U3 six. U3's six unresolved words are ciphertext labels, not reconstructed ranks/names. `reading_metrics.json` gives every reproducible denominator and count, not a whole-ledger success percentage.
 
 ## What changes
 
-- U1 uses No.2, with World corrected and Tobsy/Topsy = 12:30 P.M.; Book1 Topsy would give midnight.
+- U1 uses No.2, with the clerk's "Word" emended to World and Tobsy/Topsy = 12:30 P.M.; Book1 Topsy would give midnight.
 - U2 uses No.1 for four heading/address values; its body was already clear. Unity stays unresolved.
 - McPhail and the Grant telegram use No.2. The full McPhail wrappers and forwarding request are included.
 - **Three McPhail witnesses:** ledger/No.2 Java = Johnston; OR I/32 II p394 also Johnston, while OR I/33 p559 prints Beauregard. The two print versions also differ on Greer's/Green's and Hoke. Both print versions still differ from the ledger's 700 infantry at Hanover Junction. See [print collation](printed_parallels.md).
-- The Grant telegram restores omitted Grant but preserves Elliotts against OR's Ellet's, plus two printed additions. Primary p407 verification is now complete; the older independent review correctly describes its earlier, narrower boundary.
+- The Grant telegram restores omitted Grant but preserves Elliotts against OR's Ellet's, plus two printed additions. Primary p407 verification is now complete; the earlier AI-agent review in REVIEW.md correctly describes its earlier, narrower boundary.
 
 The subsequent Stager register sweep inspected every digitized locality/account page. It found a No.10 custody trail through Baldwin/Baltimore and Culgan → David/Pittsburgh, but no vocabulary or direct locator. The 1865–1867 register cannot by itself establish U3’s February1864 codeword values. Evidence and retrieval hashes are linked in [U3_search.md](U3_search.md).
 
@@ -26,15 +26,15 @@ The subsequent Stager register sweep inspected every digitized locality/account 
 
 | Item/line | Earlier transcript | Edition | Evidence/status |
 |---|---|---|---|
-| U1 L3 | Word | World | p4 image8896; No.2 World/West |
+| U1 L3 | Word | World | the clerk wrote Word (p4 image8896); World is our emendation from No.2 World/West |
 | U2 L1 | Beckmith | Beckwith | p6 image8898, operator name |
 | U2 L2–3 | Ma / Callum | Mc / Callum | p6 image8898; normalized McCallum in reading |
 | McPhail L10 | Snake Pine Talbot | Snake Peru Talbot | p9 image8901; No.2 Peru/Army |
 | Grant L2 | For Tulip | For Grant Tulip | p10 image8902; omitted plain Grant restored |
 | U1 L6, McPhail L2 | Tobsy | kept in cipher; Topsy mapping | explicit spelling variant, No.2 time page |
-| McPhail L10 | Prove | kept; [?provost] in reading | contextual abbreviation proposal |
+| McPhail L10 | Prove | kept; provost in reading | plain "Prove Marsh-al" = Provost Marshal, not a code word (13 Nov 2026) |
 | McPhail L22 | Greers | kept; [?Greers] in reading | handwriting uncertain; p394 Greer's [?], p559 Green's |
-| McPhail L26 | Allen | kept; [?one] in reading | Alton/one exists in numeral table, but repair is unproved |
+| McPhail L26 | Allen | Allen = 1 | Book No. 2 p. 26 reads Allen = 1; the key extract had misread it as Alton (corrected 13 Nov 2026) |
 | McPhail L36 | Dusty | kept; [?forage] in reading | Rusty/forage in key, R/D-like initial and printed parallels |
 | McPhail L2 | whims | kept and marked hole | no verified selected-key value |
 | U2 L3 | unity | kept and marked hole | punctuation/check function not proved |
@@ -58,4 +58,4 @@ The decoder uses only the standard library. The last reading checks require NumP
 
 Sources have retrieval URLs and hashes in `source_records/SOURCE_URLS.tsv` and `U3_SOURCE_URLS.tsv`; unchanged volunteer p9/p10 JSON is included. Large images remain outside git. `REVIEW.md` is a dated context-aware review by a separate AI agent working for this contribution (not an independent or human check), not a blind test or external human verification; its original scope is preserved. The accompanying updated `verification.json` explicitly records the later p407 and p394 print checks. Source/raw originals and previous repository files are not overwritten.
 
-Remaining barriers: U3 needs a verified No.10 filling or an exact period plaintext; five McPhail words, unity, and check-tail interpretation remain uncertain; most ledger pages are unattempted. [U3_search.md](U3_search.md) states what was actually checked and what remains available or access-limited. No publication, commit, push or PR has been made.
+Remaining barriers: U3 needs a verified No.10 filling or an exact period plaintext; three McPhail words, unity, and check-tail interpretation remain uncertain; most ledger pages are unattempted. [U3_search.md](U3_search.md) states what was actually checked and what remains available or access-limited. No publication, commit, push or PR has been made.

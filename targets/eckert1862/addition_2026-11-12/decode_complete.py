@@ -36,17 +36,17 @@ for name,book,tail in [('U1',2,'nasty day this'),('U2',1,'Nothing about Devereux
 with (HERE/'applied_complete.tsv').open('w') as f:
     w=csv.writer(f,delimiter='\t',lineterminator='\n');w.writerow(['message','line','cipher_word','meaning','book','key_page','method','note']);w.writerows(ledger)
 # Regression comparisons concern evidence-sensitive claims, not grammar guesses.
-assert len(ledger)==179, len(ledger)
+assert len(ledger)==180, len(ledger)
 assert keys[2]['java']['meaning']=='Johnston'
 assert keys[2]['ink']['meaning']=='Beauregard'
 assert keys[2]['topsy']['meaning']=='12:30 p.m.'
 assert keys[1]['emily']['meaning']=='10 a.m.'
 assert 'For Grant [Period]' in (HERE/'decoded/Grant.txt').read_text()
 assert 'Elliotts' in (HERE/'decoded/Grant.txt').read_text()
-assert all(r[2].lower() not in ['nasty','elliotts','allen','dusty','whims','unity'] for r in ledger)
+assert all(r[2].lower() not in ['nasty','elliotts','dusty','whims','unity'] for r in ledger)
 assert stats['U2']['substitutions']==4 and stats['U3']['substitutions']==0
 assert (HERE/'decoded/U3.txt').read_text().count('[?')==6
-# Portable legacy run must agree for the original 175 substitution tuples.
+# Portable legacy run must agree with the 176 Book2 substitution tuples (175 originally, plus Allen = 1 after the 13 Nov key correction).
 old=list(csv.DictReader((HERE/'applied_key_ledger.tsv').open(),delimiter='\t'))
 triples=lambda rows:[(r[2],r[3],str(r[5])) for r in rows]
 assert triples([r for r in ledger if r[0] in ['U1','McPhail','Grant']])==[(r['cipher_word'],r['meaning'],r['key_page']) for r in old]
