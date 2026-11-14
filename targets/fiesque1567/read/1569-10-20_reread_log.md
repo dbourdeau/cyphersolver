@@ -32,3 +32,8 @@ Reads: three holes in about 80 words; the hole in c04 is the name of the feared 
   like "Il ti ol"). c10 "ic z3" = et qu'il; "zz T△ꝑ | aʒ ı4 | zz ꝑ zz ⁴L‡va" = que s'il en est quelque chose
   ("[?advient]" withdrawn).
 - Left: c03 [?a] before Erfort (C o ı x ‡ ß ʊ: l'Erfort?), c04 "par […] le comte […]" (no word parse), c09 [?levée].
+
+## Holes counted by words (14 Nov 2026)
+
+Owner decision of 14 Nov 2026: the read share counts holes by words; a mark with a number is that many unread words
+(README Conventions). c04 "par [… 2] le comte [… 4]": sized from the decode quoted above ("pla QUE LL e | le comte | [?] e le chaoo"): two fragments after "par", four after "le comte" (estimates). Read share 0.944 by marks (201 words, 12 holes) -> 0.926 by words (16 holes): read in part as before.

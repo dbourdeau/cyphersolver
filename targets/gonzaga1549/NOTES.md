@@ -1,6 +1,8 @@
-# gonzaga1549 — Charles V → Ferrante Gonzaga, Modena (catalogue lead 1560)
+# gonzaga1549 — Charles V and Prince Philip → Ferrante Gonzaga, Modena (catalogue 1560 and 1561)
 
-Status: read in part, written up 3 Nov 2026
+Status: read in part, written up 3 Nov 2026; WAINUT's work on the same letters and on Prince Philip's (formerly targets/ferrante1549) folded in on 14 Nov 2026 as `wainut/`, see the section of that date
+
+Status: in progress. The page stands (read in part, 3 Nov 2026), but since the fold of 14 Nov 2026 the entry has workable gaps: the 23 open differences between the two readings and the unresolved lines are each a look at an open image, not yet done (Remaining gaps, Escalation).
 
 Lead 1560 in `research/leads.json` (the page `docs/solve/1560.html` on the site). Biblioteca Estense Universitaria,
 Modena, Autografoteca Campori, Lettera K, Karl V, sfasc. I / III / IV. Emperor → Ferrante I Gonzaga, governor of Milan.
@@ -249,7 +251,7 @@ Serenissimo cia, Sicilia popli, Su Magestad dide, Su Santidad inta, tiempo du, t
 Tunez dess, Venecia ams, voluntad (b)imi, Vuestra gien, V. S. vitis, gente sem, galera tum, persona mbel, cifra con
 (the rest not copied; small hand, one reader).
 
-**Checked against keys that do not depend on it.** `targets/ferrante1549/key.tsv` (WAINUT; built on Prince Philip's
+**Checked against keys that do not depend on it.** `wainut/key.tsv` (then `targets/ferrante1549/`) (WAINUT; built on Prince Philip's
 letters to the same Ferrante Gonzaga with their contemporary decipherments, frozen before the 14 Nov letter was read)
 has six code words learned from those decipherments: dide Su Magestad, quod Embaxador, gien vuestra, em franceses,
 gaces Rey de Francia, mus para. The sheet gives the same value for all six. Seen here on the Estense images as well:
@@ -285,24 +287,204 @@ row: that is the next step and it is workable, because the sheet is public.
 round: the three targets that hold this cipher are to be put in order together (below), and the code values should go
 into the readings once, with a strict recount, when that is decided.
 
-**One key, three folders.** `targets/ferrante1549/` (WAINUT, in progress) reads the same letter of 14 Nov 1549, and the
+**One key, three folders.** WAINUT's folder (then `targets/ferrante1549/`, in progress; now `wainut/`) reads the same letter of 14 Nov 1549, and the
 passages of 13 May, 30 Sep and 20 Nov, from its own transcription and its own table, together with Philip's letters in
 the same cipher. Neither folder cited the other before today. `targets/vargas1552/` is a third letter in the cipher by
 Tomokiyo's identification and two code words. The recommendation written for the owner is in the round's report
 (R14_ib.md); nothing is merged here.
 
+## 14 Nov 2026 (evening): targets/ferrante1549 folded in. One key, one entry, two readings
+
+Owner's decision on issue #618 (Brice Dudout pointed out in #615 and #618 that the two folders concern the same Campori
+letters and the same cipher; the check of #615 found that both read the same letter of 14 Nov 1549). WAINUT's folder
+`targets/ferrante1549/` is now `wainut/` in this folder, **as filed**: nothing in it is rewritten. Its notes and profile
+are `wainut/NOTES_ferrante1549.md` and `wainut/profile_ferrante1549.json` (they keep the old folder name in their text).
+WAINUT's scripts run from `wainut/` unchanged.
+
+**What is whose.** Two readings of the same letters were made apart, on 2 and 3 Nov 2026, from separate transcriptions
+and separate tables; neither folder cited the other before 14 Nov. That they were made apart is by the two records
+(the files and notes of each side); it is not stamped from outside.
+
+| part | who | where |
+|---|---|---|
+| Identification of the letters of 1549 to Ferrante Gonzaga as the Imperial Cipher of 1544-1554; the key images | Satoshi Tomokiyo (Cryptiana, spanish2.htm); the reconstruction pictured is Bertomeu Masiá's (2009), Meister 1906 p. 212 | `sign_table.tsv` header |
+| Reading 1: transcription of five Charles letters (3,032 signs), sign table extended from Bertomeu Masiá's key as pictured, reading of 14 Nov, sign readings of 13 May, 30 Sep (first passage), 20 Nov, 23 Dec | the project | this folder, files without `wainut` in the name |
+| Reading 2: transcription of twelve letters of Charles V and Prince Philip, the table `key.tsv` recovered from the contemporary decipherments of Philip's letters and frozen (`key_frozen_1547.tsv`), the held-out tests, the reading of 14 Nov, Philip c. 10r, c. 26r, c. 28r read in part, three Philip letters decoded; the marginal decipherments of 30 Sep, 20 Nov and c. 28r found and transcribed; four catalogue corrections | WAINUT (GitHub LcCompany), a Dutch AI company, with AI language-model agents | `wainut/` |
+| The contemporary decipherments (slip c. 29, c. 77, c. 14r, c. 11, the margin notes) | the imperial chancery and the recipient's clerks | on the leaves |
+| The same-documents link (ferrante1549 and gonzaga1549; cc. 131-132 = renard1549; 11 Aug 1542 = gonzaga1542); two more Philip letters (cc. 15-17, cc. 32-34); the Simancas sheet applied to the code words | Brice Dudout, issues #615 and #618 | sections of 14 Nov above |
+| The code list used as a third witness: AGS, Biblioteca, D/00203 no. 243 | reconstruction of 1866 by Nemesio Ruiz de Alday, located by Satoshi Tomokiyo (note of July 2020); cited, not reproduced | section of 14 Nov above |
+| The comparison, the carrying of the code values, the recount, the fold | the project, 14 Nov 2026 | `compare_readings.py` and its outputs |
+
+### The two readings of 14 Nov 1549 compared (`compare_readings.py`)
+
+Done on the files, by alignment; **no image was opened for it**. Outputs: `comparison_14nov1549.tsv` (every word of both
+readings side by side, with a category and a verdict), `comparison_signs.tsv` (WAINUT's 160 key rows against the values
+this folder's sign files have at the aligned places), `comparison_summary.json`.
+
+| level | figure |
+|---|---|
+| signs | 2,536 (reading 1) and 2,543 (reading 2); 2,523 places aligned; **2,312 carry the same value (91.6%)** |
+| words sure and the same in both | 725 |
+| sure in both, close in their letters: spelling, division or one sign (ratificacion / gratificacion, hallarse / hallarnos, curar / procurar, seguro / segura are here) | 25 |
+| sure in both, unlike words (de / no five times, con / contra, bien / si, hasta / hastaqui, a division) | 8 |
+| sure in one, the other gives the same word with a mark (doubt, repair or proposal) | 77 |
+| sure in reading 1 only | 25 |
+| sure in reading 2 only | 36 |
+| the same word, marked in both | 15 |
+| sure in neither | 104 (mostly the 129 unresolved sign values of reading 1) |
+
+The alignment is by similarity, so these are close figures, not exact ones.
+
+**Differences between two sure words: 33, of which 10 settled, 23 open.** A difference is settled only where a
+contemporary decipherment decides the value, or the two readings have the same letters and differ in division, or one
+reading's own sign file decides it. No difference was settled on the sense alone.
+
+| reading 1 | reading 2 | verdict | basis |
+|---|---|---|---|
+| ratificacion | gratificacion | settled: gratificacion | the sign R is gra in the contemporary decipherments of Philip's letters (WAINUT's frozen key); reading 1 needs gra for the same shape in desgracia |
+| a [.] tarde dar | a tratar de dar | settled: tratar de | same signs ta r de; reading 1 had the sign before unread and divided wrongly |
+| que bien esta empresa; bien nuestro nombre | que si esta empresa; si en nuestro nonbre | settled: si, si en | the sign (7 with two dots) is si in yglesia and quisiesse in reading 1 itself |
+| con la yglesia | contra la yglesia | settled: contra | reading 1's sign file has an unread sign between con and la (c.60v line 1) |
+| consta re-estar; fines que; hasta qui; assi mismo; haver lo; sobre ello | constara estar; fin es que; hastaqui; assimismo; hauer lo; sobrello | settled (division) | the same letters |
+| Ottavio (9), remittimos (2) | Octauio, remictimos | **open** | one sign: tt in Bertomeu Masiá's key as pictured on Cryptiana, ct in WAINUT's table (a value from this letter). The word is the same |
+| de / no (5 places: "forma de haver", "no la tiene", "no haviendo", "si no las", "no se tomasse") | no / de | **open** | the two signs (X and x in WAINUT's names) are exchanged; the sense favours reading 1 at these five places; a look at the image decides |
+| hallarse | hallarnos | **open** | one sign; the first person is expected after verniamos, and reading 1 noted that |
+| de curar | procurar | **open** | xo = pro is in WAINUT's frozen key; x with an o-loop = de in the key as pictured. Sense favours procurar |
+| apuntar, pretende, dezes, seguro (… justificada) | apontar, pretiende, dezis, segura (… justificado) | **open** | one vowel mark or one sign each |
+| nombre | nonbre | open (spelling) | |
+
+Other points the comparison shows, none settled here:
+- Where reading 1 has sign values that do not form words (129 tokens, now enclosed in ‹ › in `14nov1549_reading.txt`),
+  reading 2 mostly has words: "sostener y aprobar su derecho por mejor que el imperio", "esta claro que", "enflaquecer el
+  derecho", "con su sucessor … meter en juyzio", "es de creer que por pura imposibilidad", "al cabo con su aguelo",
+  "no podemos dexar de approbarle", "encargamos con toda eficacia", "muy gran aduertencia", "el sucesso", "la tregua".
+  Several of these are repairs or proposals in reading 2. They are the lines to reread with both tables.
+- Where reading 2 has a proposal or a hole, reading 1 is sure at 25 places: quedava ([?quedays]), voluntad
+  ([?somontado]), "sacar la gente" ([...]), "como desesperado" ([?nos] [?es] esperado), meterle (meterse), "hazer nos alli"
+  ([?desde]), sacaria (saca).
+- The end of c.60r: reading 1 counts "lo qual & romper la guerra contra la yglesia o" as text and c.60v repeats the words;
+  reading 2 takes the line (A19) as a repeat struck by the clerk and leaves it out of its count.
+- Tables (`comparison_signs.tsv`): of WAINUT's 160 rows, 124 occur in this letter; at 93 of them the project's sign
+  files have the same value at more than half the places (the code-word rows count as different only because the
+  sign files hold the code word itself). Systematic differences: `+` ct / tt (11 places), `fh` f / ff (4), `R` gra / ra
+  (2), `N` pl / p doubtful (4), `X` de and `x` no exchanged at 11 places, `ys` su / unread or ua (7 of 8), `v` do / bare d
+  (8; WAINUT marks these as repairs), `xo` pro / de or no (2 of 3). `9` (d and u) and `c` (rr and c) are doubtful in both.
+- 13 May 1549: both sign readings give "haver los dineros" where WAINUT's transcription of the slip has "sauer" (the
+  project first read "saber" there too). 30 Sep, first passage: the same text in both, Brissiuc / Brissiu, and one unread
+  sign in reading 1. 20 Nov: reading 1's "‹qui si ss e [.] mos› mover guerra" stands where the margin has "que no
+  queremos mouer guerra". WAINUT found seven marginal decipherments on the 30 Sep letter and six on 20 Nov; the project
+  had read one cipher block of 30 Sep and five passages of 20 Nov. (Claims review, 14 Nov 2026: WAINUT's own files
+  disagree on 30 Sep. `wainut/reading_ch1549_0930_1120.md` lists seven; the status table of
+  `wainut/NOTES_ferrante1549.md` says six and `wainut/clear_margins_charles.txt` has six lines, M2 missing. Left as filed.)
+
+### Code values carried into both readings
+
+| code | value | basis | reading 1 | reading 2 |
+|---|---|---|---|---|
+| Pollo | Papa | Simancas list of 1866; decipherment of 1552 in vargas1552; both readings | 6 uses | 6 |
+| mus, mms | para | WAINUT's frozen key (contemporary decipherments); list of 1866 | 6 | already para |
+| inta | Su Santidad | list of 1866 | 2 | 2 (was [?la Yglesia]) |
+| em | Franceses | WAINUT's frozen key; list of 1866 | 1 | already franceses |
+| gien | vuestra | WAINUT's frozen key; list of 1866 | 1 | already vuestra |
+| saa | Duque | list of 1866; the gloss "Duq octauio" over the sign on c.76r; reading 1 | 1 | 1 (fills the hole at A03, `5 a a`) |
+| nerp / nep | Francia | both readings by the sense; the list has Francia as nec with an end mark | 1 | 1 (was [?Francia]) |
+| vela / bela | open | not on the list; "Roma" is WAINUT's proposal | 2 | 2 |
+| et ud, tu | open | on the list as Embajador de Inglaterra and lea; no sense here | 2 | 1 hole |
+
+The project's reading file carries them as `{code = value}`. WAINUT's filed reading is not touched: the same text with the
+three changed values is `14nov1549_reading_wainut_codes.md`, written by `compare_readings.py`.
+
+### One strict recount per document
+
+Rule (README Conventions, the read bar): sure words only. Reading 1: a word with (x?), [.], an open {code}, or inside
+‹ › is a hole. Reading 2: a repair (°), a proposal [?word] and [...] are holes. A settled code word counts.
+
+| document | reading | strict | other figures, once |
+|---|---|---|---|
+| Charles, 14 Nov 1549 | 1, the project | 837 of 1,007 tokens, **83.1%** | 129 of the tokens are sign values, not words, so the share of words is higher than this; the 93.4% carried until today was the share of *signs* given a value |
+| Charles, 14 Nov 1549 | 2, WAINUT | 817 of 910 words, **89.8%** (811 before the code values) | WAINUT's "with repairs": 864 of 910, 94.9%; Brice Dudout's rerun with the code values: 867 of 908, 95.5% (his file not sent) |
+| Charles, 13 May 1549 | 1, fitted to the slip c. 29 | 45 of 45 | |
+| Charles, 23 Dec 1549 | 1, fitted to c. 77 | 46 of 48 | passage 2 lines 2-3 not transcribed |
+| Charles, 30 Sep 1549 | 1, first of seven passages, margin in view | 33 of 35 | the other six passages: WAINUT's blind pass, unrepaired, and the margins |
+| Charles, 20 Nov 1549 | 1, fitted to the margins | 49 of 65 | two lines of c.64r unread, not in the count |
+| Philip, 4 Aug 1548, c. 10r | 2 | 75 of 80, 93.8% | with repairs 78 |
+| Philip, 24 Nov 1551, c. 28r D-E | 2 | 56 of 66, 84.8% | with repairs 62 |
+| Philip, 24 Nov 1551, c. 26r | 2 | 75 of 91, 82.4% | with repairs 82 |
+
+**Class: read in part.** No letter without a contemporary decipherment reaches 95% in either reading. 13 May and 23 Dec
+reach it, with the chancery's own decipherment beside them. The two readings together would cover more (reading 2 is
+sure at 36 word places where reading 1 is not, reading 1 at 25 where reading 2 is not), but a joint text has not been
+checked on the image and is not counted.
+
+### Philip's letters (catalogue 1561), now documents of this entry
+
+All WAINUT's work; details in `wainut/NOTES_ferrante1549.md`.
+
+| document | state | strict | files in `wainut/` |
+|---|---|---|---|
+| 4 Aug 1548, Felipe II sfasc. I c. 10r | read in part | 75/80 | `reading_1548_c10r.md` |
+| 24 Nov 1551, c. 28r, passages D and E | read in part | 56/66 | `reading_1551_c28r.md` |
+| 24 Nov 1551, c. 26r | read in part | 75/91 | `reading_1551_c26r.md` |
+| 8 Mar 1549, c. 12r | covered by the decipherment on c. 14r; the table was built on it | | `transcription_1549_c12r.txt`, `clear_1549_c14r.txt` |
+| 23 May 1547, cc. 9r-9v | covered by c. 11; table extended on it, lines 11-16 of 9v held out | | `transcription_1547_c09.txt`, `clear_1547_c11.txt` |
+| 25 Jun 1546, 14 Mar 1553, the letter catalogued 16 Jun 1563 | decoded from one rough blind pass, not read | | `decryption_philip_1546_1553_x_blind.txt` |
+| cc. 15-17 (cipher and clear slip), cc. 32-34 (Monzón, 6 Oct 1552) | not transcribed (issue #615) | | |
+
+WAINUT's catalogue corrections stand: marginal decipherments exist for c. 28r and c. 64v and for every passage of
+30 Sep and 20 Nov; c. 14r begins "De Su Mt."; the copy on c. 12r is not abridged; the letter catalogued 16 Jun 1563
+opens "El Principe" and is addressed to Ferrante (died 1557), so it is not of 1563.
+
+### WAINUT's frozen key and held-out tests: the validation evidence
+
+Reading 1 had no frozen-key test (its statistical validation tests the key as a whole). Reading 2 has them, with
+their real results:
+
+| test | table | reader | letters in order | runs of 4+ | 200 shuffled tables, max | result |
+|---|---|---|---|---|---|---|
+| Philip 23 May 1547, 9v lines 11-16 | frozen | not blind | 0.888 | 0.857 | 0.418 / 0.239 | above the controls |
+| Charles 13 May 1549 | frozen | not blind | 0.978 | 0.932 | 0.431 / 0.374 | above the controls |
+| Charles 30 Sep 1549, 408 signs | frozen | blind (no table, no clear text) | 0.728 | 0.595 | 0.420 / 0.532 | above the controls on both |
+| Charles 20 Nov 1549, 140 signs | frozen | blind | 0.652 | 0.323 | 0.519 / 0.355 | above on order, **fails on runs of 4+** |
+
+The two blind rows were rerun here after the move (`python wainut/scripts/score_blind.py key_frozen_1547.tsv`): the same
+figures. The two rows that are not blind were not rerun. WAINUT declared no pass bar beforehand, so these are held-out
+tests against shuffled controls, not pre-registered tests. That the table was frozen before the Charles letters were
+opened is by the contributor's record. WAINUT's own blind checks of the 14 Nov reading: a second reader without the
+table agrees on 80.8% of 2,132 signs (A08-D23); an independent reader with the table in view differs on 39 of 425 signs
+(D14-E03); on c. 10r at half scale 43 of 212 signs differ. A second measure now exists that neither side made: the
+91.6% agreement of the two transcriptions above.
+
+Six code words of the frozen key (dide, quod, gien, em, gaces, mus) have the same value on the Simancas list of 1866.
+
+### Outcome method, per part
+
+- Reading 1 of 14 Nov: read after matching with key from external sources (Bertomeu Masiá's reconstruction as pictured by Tomokiyo).
+- Reading 2 of 14 Nov and Philip c. 10r, c. 26r, c. 28r D-E: key recovered based on adjacent plaintext (WAINUT, from the decipherments on c. 14r and c. 11).
+- 13 May, 30 Sep, 20 Nov, 23 Dec 1549, Philip 8 Mar 1549, 23 May 1547, c. 28r passage C: read from existing decipherment (the chancery's slips and margins).
+
+`vargas1552` stays a separate entry (the same cipher by Tomokiyo's identification and two code words; no sign of it is
+transcribed), cross-linked.
+
 ## Remaining gaps
-- Code words in clear: vela/bela, et ud, tu, and the letters of nerp - blocker: open-codes; not on the Simancas sheet of 1866 or not making sense with it. Pollo, mus/mms, inta, em and gien have values from that sheet and from ferrante1549 (section of 14 Nov 2026), not yet written into the reading files
-- c.60v lines 7-8 and 23-27, c.61r L4-5 and L16-18, c.61v L18 - blocker: open-codes; stretches that do not form sentences, signs not all fixed
-- 20 Nov 1549, last two lines of c.64r - blocker: open-codes; nearly every sign has dots below, and dropping them gives no Spanish
-- Bertomeu Masia 2009, the printed key and possibly these letters - blocker: needs-physical-access; book not online, listing only
-- 15 Jul 1549 and 11 Aug 1542 numeric, 1 Jul 1552, undated cc.131-132 - blocker: no-key-material; other ciphers or not located, not part of this target
+- 14 Nov 1549: 23 differences between sure words of the two readings (Ottavio / Octauio and remittimos / remictimos; de / no at five places; hallarse / hallarnos; procurar / de curar; four vowel marks) and the systematic table differences (R, N, f / ff) - blocker: not-attempted; each is one sign on the Estense images, which are open; `comparison_14nov1549.tsv` lists the places
+- 14 Nov 1549, reading 1: 129 tokens of sign values that do not form words (c.60v lines 7-8 and 23-27, c.61r L4-5 and L16-18, c.61v L18 and others) - blocker: not-attempted; reading 2 gives words at most of them, not yet checked sign by sign against the sign files of reading 1
+- 14 Nov 1549, reading 2: 53 repairs, 38 proposals, 2 holes (A14 `lalgunte`, A16 `et ud y tu`); differences of WAINUT's blind pass on A08-D23 not all settled; A00-A07 one pass - blocker: not-attempted; reading 1 is sure at 25 of these places; a zoom reading of A00-D13
+- Code words: vela/bela, et ud, tu, and the letters of nerp / nep - blocker: open-codes; not on the Simancas list of 1866 or not making sense with it
+- 20 Nov 1549, last two lines of c.64r; 30 Sep and 20 Nov not yet editions (reading 1 has the first of seven passages of 30 Sep; WAINUT's blind pass covers all, unrepaired) - blocker: not-attempted; the marginal decipherments give the text, a line-by-line sign pass is owed
+- Philip c. 10r, c. 26r, c. 28r: one primary pass each; the vicariate passage on c. 26r is unsafe - blocker: not-attempted
+- Philip 25 Jun 1546, 14 Mar 1553, the letter catalogued 16 Jun 1563: decoded, not read - blocker: not-attempted; need a pass in a named sign set
+- Philip, sfasc. I cc. 15-17 (cipher c. 15r, clear slip c. 17r) and cc. 32-34 (Monzón, 6 Oct 1552): not transcribed (issue #615) - blocker: not-attempted; the first is a third pair for the key or a second held-out test
+- Bertomeu Masia 2009, Corpus documental de Carlos V vol. III, Druffel, the Simancas minutes (Estado 1196) - blocker: needs-physical-access; not online; whether the 14 Nov letter or its minute is printed is unknown
+- 15 Jul 1549 and 11 Aug 1542 numeric, 1 Jul 1552, cc. 131-132 - blocker: no-key-material; other ciphers, not part of this entry (`gonzaga1542`, `renard1549`)
 
 ## Escalation
-- [x] siblings: c.29, c.41, c.77 used; c.82-83 (1 Jul 1552) is another sign set; c.64v and c.50r margins used. The other letters of the 151 Karl V items were not all opened for more cipher.
-- [x] clear-pages: the slip c.29, c.77 and the margin notes are the decipherments; c.62r-62v clear text read for context; c.63 blank
-- [ ] known-keys, 14 Nov 2026 (issue #618): the Simancas reconstruction of 1866 (AGS D/00203 no. 243) opened, its code list read and five code words settled with it; its syllable rows not yet compared with `sign_table.tsv`
-- [x] known-keys: Meister and Masia/Tomokiyo images of the Imperial Cipher; the 1548 numeric key belongs to 15 Jul only
-- [x] print: Cryptiana read; web search for the letter and for Bertomeu Masia 2009 found only a listing; Corpus documental de Carlos V not checked page by page
-- [x] key-rebuild: table extended by hand across 3,000 signs to 277 sign names, `sign_values.tsv`; no annealing, because the reading is by sign shape and the validation already shows annealing does worse
-- [x] retry: c.60r block 1 unread signs, c.60r block 2, c.30r and c.50r retried with the extended table; c.60v not reread with it
+- [x] siblings: c.29, c.41, c.77 used; c.82-83 (1 Jul 1552) is another sign set; c.64v and c.50r margins used. WAINUT fetched all listed letters of catalogue 1560 and 1561 and built the table on Philip's letters with a decipherment
+- [ ] siblings, 14 Nov 2026 (issue #615, Brice Dudout): Philip sfasc. I cc. 15-17 and cc. 32-34 opened, neither transcribed; the other Felipe II records of the search (39 in all) and the other Karl V items (151) not opened one by one
+- [x] clear-pages: the slip c.29, c.77 and the margin notes are the decipherments; c.62r-62v clear text read for context; WAINUT found the marginal decipherments on c. 28r, c. 64v and on every passage of 30 Sep
+- [x] known-keys: Meister and Masia/Tomokiyo images of the Imperial Cipher; the 1548 numeric key belongs to 15 Jul only; WAINUT checked the repository keys (mendoza1548 is the same chancery syllabary, not compared value by value)
+- [x] known-keys, 14 Nov 2026: the two tables of this entry compared on the 14 Nov letter (`comparison_signs.tsv`); the code list of the Simancas reconstruction of 1866 used for the code words
+- [ ] known-keys: the syllable rows of the Simancas reconstruction of 1866 not compared with either table; it could decide tt / ct, f / ff, R and N
+- [x] print: Cryptiana read; CSP Spain IX, CSP Venice V and the DBI opened by WAINUT; Bertomeu Masia 2009, Corpus documental III, Druffel and the Simancas minutes not
+- [x] key-rebuild: reading 1 extended by hand to 277 sign names; reading 2 rebuilt from the contemporary decipherments and extended on 14 Nov
+- [ ] retry, 14 Nov 2026: the open differences and the unresolved lines of reading 1 are to be reread on the image with both tables in view; not done in the round of the fold
+- [x] retry: c.60r block 1 unread signs, c.60r block 2, c.30r and c.50r retried with the extended table; WAINUT reread ten lines at zoom after its independent check

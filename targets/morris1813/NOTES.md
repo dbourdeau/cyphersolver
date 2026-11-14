@@ -8,6 +8,8 @@ Method: read after matching with key from external sources. Provenance: contribu
 reversal and frame 0039; Andrew Beling, PR #200 and PR #415: the key sheet and ten letters). Two short pieces were
 added at the integration of 12 Nov 2026. The state of each text, the counts and the corrections are in
 "Integration check (12 Nov 2026)" below; that section is the latest word where it differs from the older ones.
+The word counts and the state of each text were changed once more on 14 Nov 2026, when the sign 370 was taken as
+punctuation: the figures in force are in "The sign 370 on the image (14 Nov 2026)".
 Sections 1 to 6 are the record of the first contribution (27 Oct 2026), which used the table rebuilt in
 [`../jqa`](../jqa/NOTES.md) and read frame 0039 at 0.678; the reading of frame 0039 was replaced on 31 Oct 2026
 (PR #200, 0.965 of the words).
@@ -395,10 +397,123 @@ the three texts under the bar and the totals. Changing it moves two letters up a
 on the image (the cell on M97 roll 13 frame 1057 was not viewed by him or here), so it is left to the repository owner.
 370 itself stays in the gaps below either way.
 
+## The sign 370 on the image (14 Nov 2026)
+
+The repository owner asked for the check that the section above left open: look at the cell on the image and, if the
+evidence holds, adopt Brice Dudout's point in one pass. Done here by the project; the observation is his (PR #570).
+
+**The sheet.** Both frames of the code sheet were fetched from the National Archives Catalog, the way the M31 frames
+are fetched (direct download, no bot check):
+`https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-013/M97-013-1057.jpg` (numerical sheet, 4304 x
+3744) and `...-1056.jpg` (alphabetical sheet, 4288 x 3728). Both are bitonal film scans.
+
+- *Numerical sheet (1057).* In the column 1201-1300 the cells 1261 to 1270 (Morris 361 to 370) hold no word or
+  syllable. They hold, in order: a comma, a semicolon, a colon, a full stop, an exclamation mark, a question mark, a
+  dash, a pair of round brackets, a double quotation mark, and in 1270 a small upright sign: an S-like stroke with a
+  loop in the middle and a hooked foot, like a section sign (§). The d of "down" in the cell below (1271) runs into
+  its foot, which is probably why it was first described as "z-like". 1260 is "having" and 1271 "down": the ten cells
+  are a closed run between two words.
+- *Alphabetical sheet (1056).* The last column, after X, Y and Z, lists the figures 0 to 9 and then the same marks,
+  printed, in the same order, each with its number written beside it in ink: , 1261 ; 1262 : 1263 . 1264 ! 1265
+  ? 1266 - 1267 ( ) 1268 " 1269, and an eleventh printed sign of the same shape as on the other sheet (a curl like a 2
+  over a second curl), with a faint number beside it that fits 1270. The printed instructions for the marks under the
+  figures begin directly below it.
+
+So on both halves 370 is the last entry of the sheet's list of punctuation marks. Beling's transcription has it right
+("[z-like glyph; unidentified]", first reading "[PARAGRAPH SIGN?]"); nothing in the key file is changed. Which mark it
+is cannot be said for certain on this film: the shape fits a section sign better than a pilcrow, and the use (below)
+fits either. Weber's print of WE028 was not seen.
+
+**Where it stands.** One count, from the transcription files, one line per place (a place that stands in two copies
+is counted once). 22 places in the thirteen texts; every one comes directly after the full stop 364.
+
+| Text | Line | Position | Before | After |
+|---|---|---|---|---|
+| Frame 0039 | L12 | mid-line | ... mother country . | In summer of the year 1810 |
+| Frame 0039 | L21 | mid-line (364 and 370 both marked doubtful) | ... insurrection mentioned . | In the month of June 1811 |
+| Frame 0039 | L24 | mid-line | ... the said Floridas . | The ambassadors |
+| No. 12 | L06 (second copy D07) | mid-line | ... means of this description . | I have waited |
+| No. 12 | L10 | line head; L09 ends with 364 | ... yet appeared . | the coded signature |
+| No. 13 | copy A, L5 | line end | ... to proceed . | (end of the text; copy B stops at 364 and has no 370) |
+| No. 13 | copy A, signature line | after a second 364 | . | the coded signature |
+| No. 17 | 111.03 | line end | ... hearing from you . | (end of the coded lines) |
+| No. 18 | 112.08 | mid-line | ... the pope's nuncio . | Numerous arrests |
+| No. 18 | 112.11 | mid-line | ... suppressed . | The government is |
+| No. 18 | 113.04 | mid-line | ... revolution in 1808 . | No facts have |
+| No. 18 | 113.09 | line end | ... secretary of state . | (words in clear), I have |
+| No. 19 | 139.04 | mid-line; the line begins 364.370 | ... complied with . | It is very difficult |
+| No. 19 | 139.08 | line end | ... foreign papers . | (end of the coded text) |
+| Cevallos | 115.06 | mid-line | ... su real nombre . | El desaire |
+| Cevallos | 115.12 | line head; 115.11 ends S . M . | ... S. M. | Por otra parte |
+| Cevallos | 115.16 | mid-line | ... de Erving . | S. M. tiene |
+| Cevallos | 115.21 | mid-line | ... Estados Unidos . | No obstante |
+| Cevallos | 116.04 | mid-line | ... para ello . | Aprovecho esta ocasion |
+| Cevallos | 116.06 | mid-line | ... muchos años . | Palacio a 20 de |
+| No. 24 | 220.04 | line end | ... Louisiana and Florida . | The number of |
+| 24 March 1815 | 124.25 (copy B 192.03) | line end | ... impropriety in it . | I have |
+
+Per text: frame 0039 3, No. 12 2, No. 13 2, No. 17 1, No. 18 4, No. 19 2, Cevallos note 6, No. 24 1, 24 March 1815 1;
+none in Nos. 14, 25, 26 and 28. That is 19 in the twelve letters and 3 on frame 0039. The earlier figures: 21 was
+Dudout's script, which reads the `transcription.txt` files only and so counts 24 March 1815 twice (both copies), frame
+0039 not at all and Nos. 12 and 13 not at all; 20 "in the letters" was a miscount of the 19 in `word_share.txt`; 22
+was right. "19 of 21 follow 364" understated it: the two line heads also follow a 364, across the line break. With the
+second copies there are 24 written instances (No. 12 second copy and 24 March 1815 copy B repeat theirs); copy B of
+No. 13 drops the final one, which a copyist could do with a paragraph mark and not with a word.
+
+**Verdict: punctuation.** A mark of the sheet's punctuation list, used after a full stop where a new sentence or
+paragraph begins, before the signature and at the end of a coded passage. It is not a word.
+
+**Applied.** `word_share.py` now leaves `[370]` out of the words and of the holes (the readings themselves are not
+changed, and the contributors' files keep their own wording, "unread group"). This amends the counting rule of 12 Nov
+2026 in one point only: an unread group is still a hole, but 370 is not a group that stands for a word. Output in
+`word_share.txt`:
+
+| Text | Coded words | Holes | Share | State | Before (370 as a hole) |
+|---|---|---|---|---|---|
+| Frame 0039, 4 January 1814 (by hand) | 350 | 10 | 0.971 | read in part | 353, 13, 0.963 |
+| No. 12, 4 April 1814 | 179 | 3 | 0.983 | read | 0.972 |
+| No. 13, 11 April 1814 | 72 | 2 | 0.972 | **read** | 0.946, read in part |
+| No. 14, 11 May 1814 | 157 | 6 | 0.962 | read | same |
+| No. 17, 21 June 1814 (three lines) | 34 | 2 | 0.941 | read in part | 0.914 |
+| No. 18, 20 September 1814 | 308 | 9 | 0.971 | read | 0.958 |
+| No. 19, 27 October 1814 | 104 | 4 | 0.962 | **read** | 0.943, read in part |
+| Cevallos to Morris, 20 November 1814 | 306 | 6 | 0.980 | read | 0.962 |
+| No. 24, 30 December 1814 | 130 | 3 | 0.977 | read | 0.969 |
+| No. 25, 6 January 1815 | 74 | 0 | 1.000 | read | same |
+| No. 26, 27 January 1815 | 46 | 2 | 0.957 | read | same |
+| 24 March 1815 | 778 | 17 | 0.978 | read | 0.977 |
+| No. 28, 12 May 1815 | 71 | 1 | 0.986 | read | same |
+
+All thirteen texts: 2,609 coded words, 65 holes, **0.975** (was 2,631, 87, 0.967). The 65 holes are 5 unread or
+unsettled groups (575.1060 in No. 19; 1520, 572.1001, 1466 and 1407 in the letter of 24 March 1815) and 60 words
+guessed or with letters supplied (26 in the PR #200 letters, 24 in the other seven, 10 on frame 0039); the page and
+README had said 58 and 59. In the profile, frame 0039's `read_share` is now this recount (0.971), with Andrew Beling's
+0.965 named once as his; its state is not changed (it is a fragment reread with the clear copies in view).
+`codes_open` goes from 3 open groups and 16 tokens to 2 and 2 (575 and 1060).
+
+**The class does not change.** Nos. 13 and 19 are now read. No. 17 has two inferred words in 34 (0.941) and stays
+read in part; one sure word more would not be enough either (33 of 34 is 0.971, so it needs one of [?present] and
+[?prudent] settled: the blotted group on frame 0111 or another occurrence of 1159). The target stays read in part.
+
+**One-digit rule not applied; a workable next step (claims review, 14 Nov 2026).** Three of the 65 holes are one
+digit away from the sheet value the word wants: No. 13 `sour[?ce]` (510 cape for 516 ce) and `vis[?it]` (146 jur for
+140 it), No. 24 `[?Sir]` (593 shall for 598 si before 813 R). The one-digit rule (README Conventions, 14 Nov 2026) asks
+that the slip be seen on the image, so that it is the writer's slip and not a misreading here. The contributors'
+transcriptions give 510 and 146 as written in both copies of No. 13
+(`beling/letters/1814-04-11_No13/first_reader_line_by_line_both_short_letters.md`) and 593 on frame 0220, but the
+project has not looked at the three places on the frames for this rule, so the rule is not applied and they are
+counted as holes. Next step: look at the three places on the frames. If they are confirmed: No. 13 72 of 72, No. 24
+128 of 130 (0.985), 62 holes in 2,609 words (0.976); the class does not change (No. 17 stays at 0.941).
+
+**Credit.** The observation is Brice Dudout's (PR #570). The image check, the count and the change are the
+project's. Andrew Beling's transcription of the sheet and WAINUT's block reversal are as before.
+
 ## Remaining gaps
 
-- [370], the sign after full stops (22 times in the thirteen texts by this count; Dudout's script finds 21 and word_share.txt shows 20 in the letters plus three on frame 0039: to be recounted) - blocker: open-codes; the cell of the code sheet
-  has a z-like sign and no value.
+- The exact mark that 370 stands for (22 places, each directly after the full stop 364) - blocker: illegible; its
+  meaning is settled: it is the last entry of the punctuation list on both halves of the code sheet (seen 14 Nov
+  2026) and is not counted as a word. The mark itself, a small S-like sign with a second curl, like a section sign,
+  cannot be named with certainty on the bitonal film; Weber's print of WE028 was not seen.
 - 575.1060 in No. 19, an adverb before "guards" - blocker: open-codes; se with two strokes + ti gives no word, and the
   three copies agree.
 - Words read from context where Morris's group does not give the word (counted as holes) - blocker: open-codes;

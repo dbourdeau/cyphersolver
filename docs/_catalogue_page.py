@@ -69,9 +69,9 @@ def solved_map():
         if not sec or sec in OPEN_SECTIONS or not line.startswith('| ') or line.startswith('| Target') or line.startswith('|---'): continue
         cells = [c.strip() for c in line.strip().strip('|').split('|')]
         if len(cells) < 5: continue
-        m = CAT_RE.search(cells[0])
-        if not m: continue
-        ids = [int(x) for x in re.findall(r'\d+', m.group(1))]
+        ms = list(CAT_RE.finditer(cells[0]))      # every "catalogue N" of the row: a folded row names two (159 and 160)
+        if not ms: continue
+        ids = list(dict.fromkeys(int(x) for m in ms for x in re.findall(r'\d+', m.group(1))))
         name = re.sub(r'\*\*|\[|\]\([^)]*\)', '', cells[0])
         name = re.sub(r'\s*\((?:[^()]|\([^()]*\))*(?:catalogue|DECODE)(?:[^()]|\([^()]*\))*\)\s*$', '', name).strip()
         slug = re.search(r'dbourdeau\.github\.io/cyphersolver/([\w-]+)\.html', line)

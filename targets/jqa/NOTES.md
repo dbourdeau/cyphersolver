@@ -6,7 +6,7 @@ Page split, 14 Oct 2026 (one key, one entry): this entry was shown on the combin
 pages: this one is `docs/jqa.html`; Erving's letter, a different cipher with its own page, is `docs/erving1807.html`
 (folder `../erving1807/`). `legation.html` is a stub pointing to both.
 
-Status: read in part (24 Oct 2026; kept on 14 Nov 2026, see "Integration check"). The paragraph below is the group count of 22 Sept 2026 (third pass). No. 88, measured with `measure.py`: **380 of 390 code groups read as sense
+Status: read in part (24 Oct 2026; kept on 14 Nov 2026, see "Integration check" and "Image check of the seven one-digit groups": remainder 164 of 177 words, 0.927; nine lines 97 of 100, 0.970). The paragraph below is the group count of 22 Sept 2026 (third pass). No. 88, measured with `measure.py`: **380 of 390 code groups read as sense
 (0.974)**; the nine lines Ford left out 133/133 (1.000), the remainder 247/257 (0.961). 382/390 groups have a value;
 362/390 (0.928) without the grade-I values. Still open: 7 groups cut by the microfilm gutter (needs the original)
 and 3 single code groups (1508, 1185, 570).
@@ -224,7 +224,7 @@ Brice Dudout's verification above was re-run here before it was merged.
 - **Image.** Frame 0207 was fetched from the National Archives Catalog (NAID 188725601) and lines 8-12 and 14-17 of
   the remainder compared with `rem88.txt`: about 95 groups agree, and the two corrections are right, l.10 reads 262
   and l.11 reads 649. `rem88.txt`, `code_table.tsv` (252 *str*, 549 *min*) and `overrides.tsv` still carry the old
-  digits: `we028_no88.tsv` is the corrected record until they are brought into line. Frame 0206 was not compared.
+  digits: `we028_no88.tsv` is the corrected record until they are brought into line. Frame 0206 was not compared. (Brought into line later the same day, and frame 0206 looked at: next section.)
 - **Count and class.** By the strict rule of this project a probable or restored word is a hole. Remainder: 161 sure
   words of 177, **0.910** (the contributor's 0.972 counts the 11 probable words as read). Nine lines: *expectation*,
   *advice* and *Alexander* rest on one-digit slips and *[there]* is restored, 95 of 99, **0.960**; *impaired* is kept
@@ -236,9 +236,68 @@ Brice Dudout's verification above was re-run here before it was merged.
   now have sheet values that do not read (1508 *acious*, 1185 *wick*, 570 *tol*), which points to a digit misread or a
   writer's slip in each, not to a missing key value.
 
+## Image check of the seven one-digit groups, and the one-digit rule (14 Nov 2026)
+
+Owner's decision of 14 Nov 2026, now in README Conventions: a code group one digit away from the value the sense
+wants counts as read when (1) the key is the surviving key of the period, (2) the correction changes one digit,
+(3) the group is part of a word whose other groups are read from the key. The slip is marked in the reading and
+listed on the page. A group whose key value gives no sense and has no such correction stays a hole.
+
+The key here is the M97 roll 13 sheet (WE028), a surviving period key, used unchanged: condition 1 holds for all seven.
+
+**Images.** Frames 0206 and 0207 fetched again from the National Archives Catalog (NAID 188725601; the search proxy
+`catalog.archives.gov/proxy/records/search?naId_is=188725601` lists the objects, the JPEGs are
+`.../medialz/dc-metro/rg-059/603720/M35/M35-03/M35-03-0206.jpg` and `-0207.jpg`; plain HTTPS, no bot check). Each
+group enlarged 8 to 12 times. The film is bitonal: a blotted digit cannot always be told.
+
+| Group | Place | Wanted (sheet) | On the image | Single digit | Inside a word read from the key | Verdict |
+|---|---|---|---|---|---|---|
+| 1864 | rem l.2, 1021 **1864** 897 cer-tain-ly | 1364 tain | 1864: the second digit is a closed two-lobed 8 (the 3s of 399 and 539 on the next line are open); no number above 1600 on the sheet | yes | yes (1021 cer, 897 ly) | Adams's slip; rule applies: **read** |
+| 669 | rem l.6, 949 **669** 44 (pre-limina-ry to negotiation) | 569 to | 669: the first two digits have the same shape | yes | **no**, 569 to is a whole word | Adams's slip, but condition 3 fails: **hole** |
+| 588 | rem l.13, 1309 **588** bat-tle | 568 tle | 5, then a one-loop digit that may be 6 or 8, then 8 | yes | yes (1309 bat) | digit not told; with 6 it is the sheet's group, with 8 a slip under the rule: **read** either way. rem88.txt keeps 588 |
+| 508 | rem l.18, 844 **508** 897 dir-ect-ly | 518 ect | 508, a small raised 0 | yes | yes (844 dir, 897 ly) | Adams's slip; rule applies: **read** |
+| 818 | gap l.1, 295 **818** 864 exp-ect-ation | 518 ect | first digit with a closed lower loop, like the 8 of 864 beside it; a blotted 5 is not excluded | yes | yes (295 exp, 864 ation) | a slip under the rule or the sheet's group: **read** either way. gap88.txt keeps 818 |
+| 1575 | gap l.3, **1575** 1405 adv-ice | 1515 adv | 1575, the third digit has the bar of a 7 | yes | yes (1405 ice) | Adams's slip; rule applies: **read** |
+| 1585 | gap l.1, 16 **1585** / 1549 828 Emperor ..-an-der | 1535 al | the third digit is written over another, 3 or 8 cannot be told; a faint stroke cut by the gutter follows at the line end | not told | the word as written also lacks ex (289; rem l.10 has 1535 289 1549 828) | **hole** |
+
+None of the seven was a misreading here: where the digit can be told the image has the transcribed digit, so the
+slips are the writer's (the leaf is Adams's triplicate). The three groups whose sheet value gives no sense (1508,
+1185, 570) and the gutter-cut 55x stay holes, as before.
+
+**New on frame 0206.** The left leaf also runs into the gutter. After 908 with the plural mark (gap l.2,
+*Chancellor's*) the heavy stroke of a further group is visible at the edge, and the sentence wants a noun ("in
+opposition to the Chancellor's ... and advice"). The group is not in `gap88.txt` (133 groups as before); it is counted
+as one lost word.
+
+**Recount (words, strict rule plus the one-digit rule).**
+
+- Nine lines: 100 words (99 and the lost word), 97 read, **0.970**. Holes: {?Alexander}, [...], [there]. (95 of 99
+  before; *expectation* and *advice* now read.)
+- Remainder: 177 words, 164 read, **0.927**. *certainly*, *battle*, *directly* now read. Holes (13): six words on
+  gutter-cut groups (inflexibly, preliminary, ambassador, proposition, said, attempt), *to* (669, a whole word),
+  *empire* (written em only), [thus], [rather], [1508], [1185], [570].
+- The remainder is under 95%: the target stays **read in part**. The remainder holds it back; the six gutter-cut
+  words alone would take it to 170 of 177 (0.960).
+
+**Files brought into line with the sheet.** `rem88.txt` l.10 262 and l.11 649; `pairs_jqa.txt` rows 252 str, 549 min
+and 1398 thither commented out; `overrides.tsv` rows 252 str and 927 pire commented out; `code_table.tsv` edited by
+hand in the same four places (252 Sp M from the remaining sources, 549 and 927 removed, 1398 without "also thither":
+1,166 numbers) and `code_conflicts.txt` regenerated. `consolidate.py` was not used to rewrite the table: it breaks
+ties between spellings by set order, so a re-run changes seven unrelated rows (13, 403, 730, 1150, 1400, 1484, 1565)
+each time. `python measure.py` now gives 379 of 390 groups (rem88 246 of 257: 927 has no value); the 380 of the
+22 Sept paragraph above is the figure of that date. `validation.tsv` (the file of the 11 Oct test) is left as it was
+tested. The table still carries its rebuilt values for the slip groups (818 pect, 1575 adv, 1585 Alex, 1864 tain,
+588 tled, 508 rect): they are the values the 22 Sept reading used, not the sheet's.
+
+Credit: the check with the code sheet and the seven proposed corrections are Brice Dudout's (PR #596); the image
+check of the seven groups was done here.
+
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
+- gap88 l.1 1585 (Alexander): third digit overwritten on the film, and the word lacks ex unless the stroke cut by the gutter after it is 289 - blocker: needs-physical-access (14 Nov 2026)
+- gap88 l.2 a group cut by the gutter after 908 (Chancellor's ... and advice), not in gap88.txt - blocker: needs-physical-access; frame 0206, left leaf, line end (14 Nov 2026)
+- rem88 l.6 669 for 569 to: a one-digit slip on the image, but a whole word, so not covered by the one-digit rule - blocker: needs-physical-access; only the original or the duplicate could show 569 (14 Nov 2026)
 - rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; the M97 sheet gives acious / account, which does not fit 'as a pre-' (14 Nov 2026)
 - rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; the M97 sheet gives wick (14 Nov 2026); the image shows 1185 and a stroke cut by the gutter
 - rem88 l.11 570 ('it tol he said'): the M97 sheet gives tol / toe, which does not read; the image shows 570, not 500 (was) - blocker: no-key-material
@@ -250,12 +309,13 @@ Brice Dudout's verification above was re-run here before it was merged.
 - [x] known-keys: Armstrong's THE=972 table tested and ruled out (18 Sept); Pinkney's London code not found in print or online
 - [x] print: Ford 4:357-358 prints both passages as not decyphered; no other printed reading found; JQA's diary (Primary Source Cooperative) confirms the two strokes at Wilna
 - [x] key-rebuild: table rebuilt to 1,166 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)
+- [x] retry (14 Nov 2026): the seven one-digit groups looked at on frames 0206 and 0207 enlarged; five read under the one-digit rule, 669 and 1585 stay holes
 - [x] retry: No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 confirmed; 1097 and 1383 read as JQA's own overwritten digits
 
 ## Next
 
 - The original or duplicate of No. 88 (not on M35 reel 3) or JQA's letterbook copy at the MHS would restore the seven
-  gutter-cut groups; with them the letter would be at about 98%.
+  gutter-cut groups of frame 0207 and the one of frame 0206; with them the remainder would pass 95%.
 - 1508, 1185 and 570 have sheet values that do not read (14 Nov 2026): a further occurrence would not help, only the
   original, the duplicate or the letterbook copy could show the misread digit or slip. Still unaligned: the 1812
   blocks of Nos. 77, 78, 81 and the remaining lines of No. 85

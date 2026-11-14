@@ -21,7 +21,7 @@ KIND = {'visit': ('reading room', 'Go to the reading room and look at, or photog
 STATUS = {'open': 'open', 'claimed': 'taken', 'requested': 'asked the archive', 'received': 'images in hand',
           'closed': 'gap closed', 'unavailable': 'not available'}
 LIVE = ('open', 'claimed', 'requested')
-OPEN_FIRST = 3          # archives shown unfolded; the rest fold until a search or filter touches them
+OPEN_FIRST = 0     # every archive starts folded: the three largest alone ran to 46,000 px; a filter or a map click opens what it finds
 
 
 # the map: each request at the town of its archive. The ledger's city when it names a place the atlas gazetteer knows,

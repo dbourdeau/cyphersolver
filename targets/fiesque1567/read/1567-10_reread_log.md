@@ -68,3 +68,8 @@ transcription are listed in `r2/corrections.tsv` (r2m rows).
 - Left: v007l c04 [?fort] (3y read f), c14-c15 [?bon escient] (a H# 1 o 3n, no c), c22 [?accordé] (a ffx H# ⊣, no
   "dé"); v007r c22 nothing; v008l c18 [?Plus] (f C ꝑ v, f for p); c21 "et que […] bagues": the groups ꝑ‖ʒam‖ʒ‖
   ‖ʒf++ıʊo give no word under the key (perhaps "n'a ... apporté"); v008r c01 [?fort].
+
+## Holes counted by words (14 Nov 2026)
+
+Owner decision of 14 Nov 2026: the read share counts holes by words; a mark with a number is that many unread words
+(README Conventions). v008l c21 "et que [... 2] bagues": two cipher groups give no word (see above), counted as two unread words. The mark in "que […] bien qu'il" keeps no size: the log does not record what stands there (extent unknown). Read share 0.954 by marks (1,100 words, 53 holes) -> 0.953 by words (54 holes): still read.

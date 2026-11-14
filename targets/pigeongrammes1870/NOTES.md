@@ -358,7 +358,7 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
 - Structure: a group PPLL is page PP (01-99) and line LL (01-30; only 5 of 754 groups have LL > 30, slips or misreads), so about 2,970 entries; rank = (PP-1)*30+LL.
   Single letters open their sections (c 1121 before ca 1122; d 2112; e 2729; f 3616; h 4113; k 4906; l 4914; n 5901; o 6019; r 7703; s 8328; t 9113; v 9612; y 9915).
   Pages 01-03 and 05, low lines, hold marker groups (beacons 0101/0201/0301/0501/0102/0103, paragraph end 0109, and endings such as 0311 past participle, 0312 -ant,
-  0212 adjective/-aire/-ant, 0211 plural, 0303 noun ending, 0305/0307 imperfect): like R1's balises. Their exact meanings are NOT settled.
+  0212 adjective/-aire/-ant, 0211 plural (unsettled: see 14 Nov), 0303 noun ending, 0307 imperfect, 0305 future or conditional since 14 Nov): like R1's balises. Their exact meanings are NOT settled.
 - interval_cands.py lists, for a group, the French words that sort between the nearest known values (wordfreq list); anchors_inspecteurs.json holds the values; the
   machine gloss is inspecteurs_2nov_gloss.txt and the sentence reading, with holes and an English version, is inspecteurs_2nov_reading.md.
 - Values: 197 groups (was 23). Coverage: 438 of 754 group occurrences have a value (58%), 193 are marker groups (26%), 123 are unread (16%).
@@ -412,6 +412,44 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
   a word; a word-level model of 1870 administrative French would be needed. Nothing adopted.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
 
+## Pillon's reply of 14 Nov 2026 (marker groups; relayed by Dan)
+He asked for all partial decryptions (he found the Full texts section of the page, which holds ciphertext and gloss; the sentence reading is inspecteurs_2nov_reading.md), and read the markers as R1-style tags.
+Tested against the contexts (inspecteurs_2nov_gloss.txt): 0312 -ant, 0212 adjective (revolution -> revolutionnaire), 0307 imperfect: agree. 0305 = FUTURE: adopted ("celui qui [etre] 0305 charge de" = sera charge;
+the single occurrence fits future or conditional, not the imperfect we had). 6221 = ORGANISER with its conjugations and ORGANISATION: supported, it is a verb in "c'est nous qui avons organise le systeme" and a noun in
+"4914 6221 etablie" (l'organisation etablie). 4914 = le/la/l' compatible (first entry of L); 0814 = au/a la/aux compatible. 0211 = FEMININE: not settled. "communication 0211 qui relie" (singular verb) favours feminine;
+"enfant 0211" and "ami 0211 0109" (amie or amities) fit either feminine or plural; kept as unsettled. 3921 = HAUTEUR: rejected by position, the H section opens at 4113 (h, habit 4116, hardi 4124) and 3921 lies just
+before garde 3927 (G); "a la hauteur des circonstances" is the idiom but 3921 would have to be a slip. PIERRET from Gemini: no independent evidence (it repeats his own PIERR-ET reading); source asked for.
+Gemini's other candidates to be run against the spelled runs only if he names sources.
+
+## Pillon's corrections of 14 Nov 2026 (second email: transcription slips read from his scan; tested by book position, nothing yet entered in anchors_inspecteurs.json)
+He is still verifying and will answer about Pierret later: do NOT change the figure of record (469 of 754, 62%) or the anchors until he finishes; then enter the values below, the slips, and re-run coverage.py.
+Position tests (anchors_inspecteurs.json neighbours; 'fits' = the word sorts between the nearest known groups on both sides):
+- Slips he reads (written -> meant), all plausible digit confusions: 0505 -> 0303 ("decrets arretes 0303 circulaires"); 0815 0115 -> 6818 0113 (line 34, first occurrence only; the second 0815 in "aucune depeche" stays); 0118 -> 0113 (a, now 9 uses);
+  9913 -> 9915 (y; "Laye"); 0702 -> 6712 (after "venu avec une"); 0420 -> 6420; 6301 -> 6501; 0530 -> 6530; 3328 -> 3318 and 3824 -> 5824 (the place 9620 3318 5824); 0617 -> 3617 (Jules FAVRE: confirms our assumed slip);
+  0312 9516 -> 6312 9516 (first name before the surname). 9029 stays (our file already has it; 9019 would be succ-/sui-). 4702 for 4712 is NOT supported: 4712 sits between ion and isoler, which is where IS belongs, so 6402 4712 = PAR-IS as written.
+- FITS: 6421 = PARTIR (between par 6402 and pas 6505; "faire partir sans succes"); 6501 = PARTENT (same interval, after partir; "partent tous les jours"); 6530 = PELLES (between pas and pi; with 3412 et and 6816 6019 1416 = PI-O-CH: "armes de pelles et de pioches");
+  5512 = MESURE(S) (right after messieurs 5511, "ces mesures"); 2722 = DUP (between du 2720 and e 2729; with 7802 RE = Dupre); 4822 = JOURN (before ju 4823; "au journal officiel", 6120 = officiel);
+  6312 9516 = PA + UL = PAUL (pa sorts between organisation and par; ul between tu and une), so "votre ami Paul Dupre": a candidate, one name, not confirmed;
+  6818 0113 5006 0703 = PIECES A L APPUI (pie sorts just before pierre 6819, ap between an 0607 and ar 0706): "autant de pieces a l'appui": a candidate that matches his pattern PI** A L* A*; aucune 0815 is dropped for this occurrence.
+- 0211 = FEMININE: now fits all three uses (communication, enfant(e), amie); reads as feminine, plural no longer needed. 0303: he says masculine noun (conducteur de ballon, enduit); but "vos bonnes communications 0303" is feminine plural, so a plain noun or plural marker fits better; open, scan to check.
+- NOT supported: 4314 = LE. 4314 sorts at IL (between 4113 h and the I words), and the same group reads "il aurait" after FER-RY (line 63), so "cela ne col 4314 pas" cannot be colle by position; either the group is misread on the scan or the sentence is something else (col-IL-pas...). "Mains actives" for 0418 0312: 0418 is AGIR and 0312 is -ant, so the telegram says agissantes (the adjective agissant, -e exists in French dictionaries); actives would need the entry act (0317).
+- Not resolved by position: 6714 4903/4905 (the "par le ...-L-organisation du service prive" group: 6714 sits among pe/ph words, 4903 among jo/ju words), 4125 0203, 6420, 3318 5824, 5604 (between mettre and ministere; 'militaire', 'mille', 'milieu' possible).
+Next: wait for his finished verification, then update anchors (values + slips), coverage.py, and the figure on every surface that carries it (README row, SOLVED_CATALOGUE, SOLVED_RANKING, docs/findings.html, the page twice, profile.json three places).
+
+## Pillon's third email of 14 Nov 2026 (evening): more readings, a missing passage, Pierret and Brunet (tested by book position; anchors and figure of record still unchanged)
+- MISSING PASSAGE CONFIRMED: inspecteurs_2nov_partial.txt jumps from "a 5711 0201" (monsieur, bracket) straight to "7708 5825 9511 2112 0201 charge de". He reads between them: "[Steenackers ... Richard] a monsieur PIERRET (6819 3412 0101 0109). Je 6501 7111 une 6011 5612 3113 Algerie 5711 0101",
+  i.e. JE PARS POUR UNE NOUVELLE MISSION EN ALGERIE, MONSIEUR [successor] charge de me succeder... The groups fit by position: 6501 = pars (par..pas), 6011 = nouvelle(s), 5612 = mission (after ministere 5606, before monopole 5710), 3113 = en, 5711 = monsieur;
+  7111 sits before pour (7119), so one digit slip 7111 -> 7119 is likely. This changes the reading of the last paragraph (the writer leaves for Algeria; the successor is the named official). The file needs the line added from the scan (adds about 16 groups, so the counts change).
+- Also: 9550 -> 9330 (tous, "tous en bonne sante"; 9550 as written sits in V); 5508 = mere and 3122 = enfants already ours; 8122 (ainsi que les 8122) not read.
+- AVEYRON: "au prefet de 0501 0903 [e] [y] 8317 5824" = AV (0903, between aux and avec) + E 2729 + Y 9915 + RO 8317 + N 5824, with slips 2719 -> 2729, 8517 -> 8317, 5024 -> 5824. Fits throughout, and resolves the 'prefecture 0903 2719' gap.
+  5824 = N although the book has it between monter and n (5901): a second entry for N (he suggests double entries for a letter), also ending 3920 8914 3005 5824 and 9620 3318 5824. 5825 sits beside it (maybe also a letter).
+- 3102 = EMENT (gouv + ement: elles 3008 < ement < employes 3109) fits; 5425 = MEMBRES (mel 5421 < membres < mer 5504; "agreable aux membres du gouvernement") fits.
+- 6124 = OI: between officiel 6120 and on 6129, so VIN-OI(Y) fits position (OY after ON does not). His argument: no other general of the period starts VIN in two syllables; Vinoy (13e corps, Paris) exists. Upgrade from 'unsupported' to consistent, a hypothesis not a value.
+- BRU-NET: 1114 (bonnes < bru < bureau) and 5911 (necessaire < net < ni) fit; the third group 0131 is probably a misread closing bracket 0101. His Gemini sources (Dictionnaire des parlementaires, Enquete parlementaire, Oeuvres posthumes, Brunet-Moret 1955) are cited without pages; one web search (14 Nov) found no capitaine Brunet aide de camp to Trochu (Jules Brunet was aide de camp to the minister of war in 1871, a different man); Brunet-Moret is an author, not evidence. Position fit only: guess.
+- PIERRET: now addressed by name in the missing passage. His Gemini text (Henri-Pierre Pierret, inspecteur general, later director) was searched once (14 Nov) and found nowhere; the quoted Lafollye -> Pierret dispatch of 30 Nov 1870 ('chiffre des inspecteurs') is checkable in Steenackers 1883 / the Enquete and is unverified. No page numbers given: treat as unverified until a source is named.
+- Successor 7708 5825 9511 D: 7708 sits among RA.. words, 9511 among UL..; Rampont does not fit (it needs M and PONT). Open.
+- Still unread: 4519 0311 (Herold, installee?), 4515, 8122.
+
 ## Wiki and engine (7 Nov 2026): start here
 `wiki/` is the project's knowledge tree, built on Karpathy's LLM-wiki pattern (gist 442a6bf5..., raw sources / wiki / schema; ingest, query, lint; index.md and log.md): read `wiki/SCHEMA.md`, `wiki/PROCESS.md`, `wiki/index.md`
 and `wiki/syntheses/Z01.md` (overview and ranked next steps) before anything else; `wiki/log.md` has the history including two rolled-back false acceptances. Machine state: `wiki/lexicon_inspectors.json`, `wiki/lexicon_favre.json`.
@@ -442,7 +480,7 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 
 ## Remaining gaps
 - names and places (third addressee LE-V..-E, first addressee P..-ET, 9802 6124 at Nantes, the aide-de-camp 1114 5911 0131, 0402 4712, 1002 5825 9924 T, 7708 5825 9511 D, 3920 8914 3005 5824, 0312 9516 / 2722 7802, place 9620 3328 3824, prefecture 0903 2719) - blocker: no-key-material; spelled once or twice, no second text in this code, no source naming them found
-- about 30 single groups with several candidates (list in the third-pass note above) - blocker: open-codes; each occurs once or twice and the interval between known neighbours still holds several words
+- about 30 single groups with several candidates (list in the third-pass note above) - blocker: no-key-material; each occurs once or twice, so no second use of the group exists to test a candidate on, no second text in this code, and no 1870 administrative-French word model in lang/ to choose between the words that fit the interval (retried 14 Nov: 3921 hauteur rejected by position)
 - seventeen assumed digit slips (20 occurrences, counted as holes) and the doubtful 0617 - blocker: needs-physical-access; the full scan is with the collector and on the owner's machine, not in the repository
 - exact meaning of the marker groups on pages 01-03 and 05 - blocker: no-key-material; working functions only
 
@@ -452,4 +490,4 @@ At the collector's request 12 untranscribed page scans (about 14,000 groups) wer
 - [x] known-keys: R1 tested on 7 Nov (18% of groups in its table, 10% by chance, no sense): not the inspectors' table
 - [x] print: Steenackers 1883 (HathiTrust), Dagron, the 1872 Bulletin article searched on 7 Nov; the telegram is not printed there; web searches of 13 Nov for Pierret and for Trochu's aides-de-camp found nothing
 - [x] key-rebuild: alphabetical bracketing of the paged book (interval_cands.py), three passes on 13 Nov, 23 to 236 values
-- [x] retry: every unread group listed again with the tightened intervals in the third pass; candidates recorded, none adopted without a second support
+- [x] retry: every unread group listed again with the tightened intervals in the third pass; candidates recorded, none adopted without a second support; retried again on 14 Nov against Pillon's suggestions (0305 settled, 3921 rejected, 0211 unsettled)

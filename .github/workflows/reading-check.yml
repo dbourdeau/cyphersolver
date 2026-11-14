@@ -3,9 +3,10 @@
 # scored by docs/_check_reading.py with the committed word lists in lang/lexicons/). Read-only: no secrets, no writes.
 name: Reading check
 
+# It runs on every pull request, with nothing to check when no target changed: the "main" ruleset requires this check,
+# and a required check that a path filter skips never reports, which would block the pull request for good.
 on:
   pull_request:
-    paths: ['targets/**']
 
 permissions:
   contents: read

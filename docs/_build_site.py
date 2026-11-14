@@ -72,7 +72,7 @@ GENERATED = [
     r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
-    r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
+    r'<!-- press:start -->.*?<!-- press:end -->\n?', r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
@@ -207,9 +207,11 @@ def outcome_html(p):
         ext += f' ({shown}% of the cipher)'
     if M.key_only(m, p['extent']): ext = 'none (key obtained, text not read)'   # George Lasry, 24 Oct 2026
     if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods
-        bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}">{pm}</a> ({pe})' for f, pm, pe in p['parts']]
+        bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}" title="{pm}">{M.LABEL[pm]}</a> ({pe})' for f, pm, pe in p['parts']]
         return '<p class="outcome">Method &middot; ' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
-    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}">{m if m != M.NA else plain(p["stt"])}</a>']
+    # the link text is the badge label used everywhere else on the site; the full category name is its title and the glossary entry
+    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}" title="{m}">{M.LABEL[m]}</a>' if m != M.NA else
+            f'Method: <a href="glossary.html#{M.KEY[m]}">{plain(p["stt"])}</a>']
     if ext: bits.append(f'Extent: {ext}')
     return '<p class="outcome">' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
 
@@ -438,12 +440,12 @@ def credits_html(p):
     return '<p class="credits">' + ' &middot; '.join(parts) + '</p><!-- /credits -->'
 
 # chip value on writeups.html, menu label, badge class, predicate
-GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, 'complete'), (lambda m: lambda p: p.get('method') == m)(m))
+GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], 'm-' + M.KEY[m], (lambda m: lambda p: p.get('method') == m)(m))
           for m in M.METHODS] + [
           ('other', 'Not yet classified', 'todo', lambda p: not p.get('method') and p['slug'] not in SURVEYS),
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
-EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the historic, the ingenious'),
+EXPLORE = [('highlights', 'Highlights', 'Twenty favourites: the funny, the historic, the ingenious, the hardest'),
            ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
@@ -500,6 +502,7 @@ def nav_html(current):
         f'      <div class="panel wp">{panel}</div></details>\n'
         f'    <details class="menu"><summary{" class=\"active\"" if in_explore else ""}>Explore {CHEVRON}</summary>\n'
         f'      <div class="panel ex">{explore}</div></details>\n'
+        f'    <span class="navlab">Help</span>\n'
         f'    <a class="navcat" href="catalogue.html"{cur("catalogue")}>Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>\n'
         f'    <a class="navcat" href="further.html"{cur("further")}>Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>\n'
         f'    <a class="navcat" href="archives.html"{cur("archives")}>To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>\n'
@@ -917,6 +920,28 @@ def mirror_findings(s, n=RECENT_VISIBLE):
 FEATURED = ['voynich', 'lucca', 'armstrong', 'sunyatsen', 'feuquieres', 'ormonde']
 BROWSE_LANGS = 6        # languages listed under "Browse the write-ups"; the filter on writeups.html has the rest
 
+def press_html():
+    """The home page hero's "As seen in" line, from press.json: one link per published piece, oldest first. A piece with
+    no url (announced, not yet out) is not shown."""
+    items = [x for x in json.loads((HERE.parent / 'press.json').read_text(encoding='utf-8'))['items'] if x.get('url')]
+    if not items:
+        return '<!-- press:start -->\n<!-- press:end -->'
+    def link(x):
+        tip = ' title="' + html.escape(x['title'], quote=True) + '"' if x.get('title') else ''
+        lang = f' hreflang="{x["lang"]}"' if x.get('lang') else ''
+        name = html.escape(x.get('label') or x['outlet'])
+        # a logo (a file in docs/) stands for the name when the entry has one and the file is there; it is drawn in the
+        # hero's ink unless "logo_colours" keeps its own colours (a logo that is a filled box would become a blank one)
+        logo = x.get('logo')
+        if logo and (HERE / logo).exists():
+            cls = 'lg' if x.get('logo_colours') else 'lg mono'
+            return (f'<a class="haslogo" href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>'
+                    f'<img class="{cls}" src="{html.escape(logo, quote=True)}" alt="{name}" loading="lazy"></a>')
+        return f'<a href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>{name}</a>'
+    return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in items)
+            + '</p>\n<!-- press:end -->')
+
+
 def browse_html():
     """The routes from the home page into writeups.html: its own filters, each with what it would show."""
     from collections import Counter
@@ -1206,6 +1231,7 @@ def process(path):
         import _contributors_page as CP
         s = re.sub(r'<!-- help:start -->.*?<!-- help:end -->', lambda m: CP.helpband(PAGES, PROFILES), s, flags=re.S)
         s = re.sub(r'<!-- browse:start -->.*?<!-- browse:end -->', lambda m: browse_html(), s, flags=re.S)
+        s = re.sub(r'<!-- press:start -->.*?<!-- press:end -->', lambda m: press_html(), s, flags=re.S)
         s = re.sub(r'\n*<!-- contrib:start -->.*?<!-- contrib:end -->', '', s, flags=re.S)
         s = s.replace('<!-- catalogue:end -->', '<!-- catalogue:end -->\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
         s = re.sub(r'<!-- live:start -->.*?<!-- live:end -->\n?', '', s, flags=re.S)
@@ -1216,7 +1242,7 @@ def process(path):
         s = s.replace('</body>', f'<script src="home.js?v={VERSION}" defer></script>\n</body>', 1)
         feat = [next(p for p in PAGES if p['slug'] == f) for f in FEATURED]
         cards = ('<!-- cards:start -->\n<h2 id="featured">Start with these</h2>\n<div class="cards featured">\n' + ''.join(card_html(p) for p in feat) + '</div>\n'
-                 '<p class="allws"><a href="highlights.html">Thirty favourites: the funny, the historic, the ingenious &rarr;</a></p>\n<!-- cards:end -->')
+                 '<p class="allws"><a href="highlights.html">Twenty favourites: the funny, the historic, the ingenious, the hardest &rarr;</a></p>\n<!-- cards:end -->')
         s = re.sub(r'<!-- catintro:start -->.*?<!-- catintro:end -->', lambda m: catintro_html(), s, flags=re.S)
         # the hero's open count follows the catalogue on every build; the rest of the hero's counts come from _build_stats.py
         import _catalogue_page as C

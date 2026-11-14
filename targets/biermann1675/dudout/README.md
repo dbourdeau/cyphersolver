@@ -1,7 +1,7 @@
 # Brice Dudout's readings in the Biermann copybook (catalogue 465)
 
 Contributed 28 Oct 2026. Write-ups: https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675 and
-#meyercrone-1675 ; history article: https://bdudout.github.io/europe-chiffree/en/copenhague-1675.html
+#meyercrone-1675; history article: https://bdudout.github.io/europe-chiffree/en/copenhague-1675.html
 
 Same key as this folder (TKUA "Chiffer" 1670-1709, image 55), transcribed independently as `key_K55.tsv` and
 frozen on 26 Oct 2026 before any reading (`K55.sha256`). Values added after freezing are in

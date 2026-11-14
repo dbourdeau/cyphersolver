@@ -57,7 +57,7 @@
   {"date": "2026-10-23", "kind": "verification", "technique": ["plaintext matching"], "what": "Decipherment checked against the cipher without a key: the clear words left in the cipher lines agree with it word for word at ten places, and the code groups ager = cardenal (3), pollo = papa (5), s-o el, x-o del, n-o al recur consistently (texts/R9967_code_check.tsv). Sign-by-sign check not possible: the Imperial Cipher of 1544-1554 key is not in the repository.", "result": "partial"},
   {"date": "2026-10-23", "kind": "reading", "technique": ["language-model scoring"], "what": "Reading and English written (texts/R9967_reading.md, R9967_en.md), aligned word by word with the transcription; one supplied word, eight words of the margin hand uncertain, look-alike share 0. b17 on the body 0.701 plain, 0.996 explicit holes (Spanish 1552). Set read, grade A.", "result": "worked"},
   {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): the contemporary-decipherment credit still said 'not viewed here' (from the 21 Sept closure); corrected to what b36 viewed: all 16 DECODE images, decipherment transcribed in full.", "result": "worked", "technique": ["statistical test"]},
-  {"date": "2026-11-14", "kind": "key from source", "technique": ["key matching"], "what": "Issue #618 (Brice Dudout): the Simancas sheet AGS D/00203 no. 243 (a reconstruction of 1866 from deciphered letters of 1545) read from the public PDF. Its code list has Cardenal ager and Papa pollo, the two code groups checked on this letter (R9967_code_check.tsv). The gap 'key not in the repository' is reworded: sign tables for this cipher are in targets/gonzaga1549 and targets/ferrante1549; the cipher runs of R9967 are not transcribed, so the sign-by-sign check is not attempted rather than blocked.", "result": "partial"}
+  {"date": "2026-11-14", "kind": "key from source", "technique": ["key matching"], "what": "Issue #618 (Brice Dudout): the Simancas sheet AGS D/00203 no. 243 (a reconstruction of 1866 from deciphered letters of 1545) read from the public PDF. Its code list has Cardenal ager and Papa pollo, the two code groups checked on this letter (R9967_code_check.tsv). The gap 'key not in the repository' is reworded: sign tables for this cipher are in targets/gonzaga1549 and targets/gonzaga1549/wainut; the cipher runs of R9967 are not transcribed, so the sign-by-sign check is not attempted rather than blocked.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -83,7 +83,7 @@
    {
     "item": "sign-by-sign check of the spelled cipher runs",
     "blocker": "not-attempted",
-    "detail": "the cipher runs are not transcribed; key material now exists (sign tables of gonzaga1549 and ferrante1549; the Simancas reconstruction of 1866, AGS D/00203 no. 243, issue #618)"
+    "detail": "the cipher runs are not transcribed; key material now exists (the two sign tables of gonzaga1549, the project's and WAINUT's (wainut/, formerly ferrante1549); the Simancas reconstruction of 1866, AGS D/00203 no. 243, issue #618)"
    }
   ],
   "fraction_read": 1.0,

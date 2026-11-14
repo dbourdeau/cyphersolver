@@ -1,4 +1,6 @@
-# Cardinal Alessandrino to the nuncio in Spain, 1568–69 — read
+# Cardinal Alessandrino to the nuncio in Spain, 1567–69, and a letter of 1572 — read
+
+**14 Nov 2026 (title, owner decision):** the target is now titled for what it holds: the ten ciphers of Spagna 6/I, from Alessandrino (R94 of 7 November 1567, the rest of 1568 and 1569), and R115, of about the end of January 1572 and not his (writer not established). R115 stays in this target (same DECODE series, same key with its extension; "one key, one entry"). The folder name and the slug `alessandrino1568` are unchanged. Section "Title" at the end.
 
 **14 Nov 2026 (verification):** R99 and R115, the two letters under the 95% bar since 24 Oct, re-read on the DECODE images and decipherments: R99 94.7% -> 98.9%, R115 88.5% -> 97.4%; all eleven letters now read. Codes 2020, 4050 and 9070 resolved; R115 probably of January 1572. Section at the end.
 
@@ -21,8 +23,9 @@ imprisoned. Readings + English: texts/R94|R95|R100|R101_reading.md, _en.md; clea
 
 Catalogue items 253 (class B) and 254. ASV (AAV), Segreteria di Stato, Spagna 6/I, items 1–10 ("Lettere orig. e
 cifre del cardinale Alessandrino dal 16 gennaio 1568 …"), DECODE R93–R102; and Spagna 6/II item 13 (catalogued 1569; of early 1572, see the integration check of 14 Nov 2026), DECODE R115.
-Sender: Michele Bonelli, Cardinal Alessandrino, nephew and secretary of Pius V. Recipient: the nuncio at Madrid,
-Giovan Battista Castagna. The letters are undated on DECODE; folio order puts 6/I in 1568.
+Sender of the ten letters of 6/I: Michele Bonelli, Cardinal Alessandrino, nephew and secretary of Pius V. Sender of R115: not
+Alessandrino, not established (integration check of 14 Nov 2026). Recipient: the nuncio at Madrid,
+Giovan Battista Castagna. The letters are undated on DECODE; folio order puts 6/I in 1568 (R94 is of 7 Nov 1567 by its covering letter).
 
 **Result (21 Sept 2026): read.** All eleven ciphertexts read end to end with George Lasry's reconstructed key.
 
@@ -201,6 +204,34 @@ The class change to read is applied.
   for this volume; which of the two wrote f. 641 is not established here. That Alessandrino was then on his legation
   to Spain and Portugal, and that Rusticucci held the secretariat meanwhile, is background not checked against a source
   here. `profile.json` documents: R115 year 1569 -> 1572. The page and the README row say so. The target's title is
-  unchanged: it names the ten letters of 6/I (November 1567 to summer 1569).
+  unchanged: it names the ten letters of 6/I (November 1567 to summer 1569). [Changed the same evening by the owner's decision: section "Title" below.]
 - R115's 2010 = N.S. (Emperor in the letters of 1568) and its 4050 fit a revised list of codes; the letter figures and
   the other codes (1010, 2060, 2090, 3010, 5020, 5090, 7090) are the same, so R115 stays in this target.
+
+## Title, 14 Nov 2026 (owner decision)
+
+Old title: "Cardinal Alessandrino to the nuncio in Spain, 1568–69". New title: "Cardinal Alessandrino to the nuncio in
+Spain, 1567–69, and a letter of 1572".
+
+- R115 stays in this target. It is in the same DECODE series and the same nunciature correspondence, and it was read
+  with the same key and its extension; a target of its own would be a one-letter entry in the same key, against "one
+  key, one entry". The slug and folder name `alessandrino1568` and every link are kept.
+- The ten letters of Spagna 6/I are Alessandrino's by the archive's description of the volume ("Lettere orig. e cifre
+  del cardinale Alessandrino dal 16 gennaio 1568 …"). Their dates, where there is evidence: R94 7 November 1567
+  (covering letter, f. 44r); R96 19 May 1568 (covering letter, f. 79); R99 summer 1568 (clear letters ff. 164-168, 21
+  June - 27 July 1568); R100 spring 1569 (neighbouring clear letters, f. 282r Rome 25 April 1569, f. 279r May 1569);
+  R102 summer 1569 (covering letter docketed June-Aug 1569). R93, R95, R97, R98 and R101 have no date evidence of
+  their own recorded here beyond their place in the volume (the readings head R95 "early 1568" and R101 "summer
+  1569" without stating the evidence). The range is therefore 1567–69, not 1568–69: the title now says so. `profile.json` documents carry
+  these dates (they were all "unknown", year 1568).
+- R115: about the end of January 1572, not written by Alessandrino, writer not established; the archive's description
+  names Cardinal Rusticucci and Ugolino Gualterucci beside Alessandrino for ff. 584-674 (integration check above).
+  Its 2010 stands for the Pope (the Emperor in the letters of 1568), which fits a revised code list.
+- Not stated anywhere as fact: that Alessandrino was away on his legation, that the letter was "written in his
+  absence" (the manifest blurb said so; removed), or that the writer belonged to the papal secretariat. The headings
+  of `texts/R115_reading.md` and `R115_en.md`, filed with PR #604 as "The papal secretariat (not Alessandrino) …", were
+  changed on 14 Nov 2026 to "Not Alessandrino (writer not established)"; no source in this folder establishes the
+  office of the writer.
+- Surfaces changed: `docs/_manifest.py` (title, year, blurb), the page, this file, `profile.json` (title, document
+  dates), README row, `SOLVED_CATALOGUE.md`, `SOLVED_RANKING.md`, `CATALOGUE.md`, the findings line,
+  `decode_updates/queue.json` (R115 sender).

@@ -28,3 +28,8 @@ Reads: one sentence with a hole, three words partly carried.
   elliptic in the cipher). c14 "pour les ı8 ⁴‖⊣7aß" = pour les vous bailler (18 = vous; no "faire" is written), "zz ı8
   ʒa Cov zo⊣⊣ʒTa" = que vous ne les [?pourrons] (18 again, not "nous"). c16 the sign before "advertir" is "ız" (13,
   faire) on the image, so "[?vous]" stays. c07 "de […] qui craignent": "b⊣aϖ Caʒm T‡ b⊣a tꝑ⊢ꝑ‖" gives no word.
+
+## Holes counted by words (14 Nov 2026)
+
+Owner decision of 14 Nov 2026: the read share counts holes by words; a mark with a number is that many unread words
+(README Conventions). c07 "de [… 3] qui craignent": the decode has three fragments there ("m lihngs odeccurd"), counted as three unread words (an estimate). Read share 0.958 by marks (294 words, 13 holes) -> 0.951 by words (15 holes): still read, by one word.

@@ -31,7 +31,7 @@ The o sign and the i sign differ by one minim (three or two minims, then a tail)
 
 ## How the key was obtained
 
-1. 10 Nov 2026. First transcription of c. 3r (904 tokens, 29 types). The sign set was compared with the Gonzaga keys in this repository (ferrante1549, ercole1544, capilupi1545, bresegno1548): none fits.
+1. 10 Nov 2026. First transcription of c. 3r (904 tokens, 29 types). The sign set was compared with the Gonzaga keys in this repository (gonzaga1549 (WAINUT's table, formerly ferrante1549), ercole1544, capilupi1545, bresegno1548): none fits.
 2. 11 Nov. An own homophonic annealer (Italian quadgrams) recovered a synthetic text of the same size, then failed on the letter and on five variants that split ligatures (best -4.30 per character, no Italian). The cause, found later: the first transcription merged look-alike signs.
 3. 11 Nov. The sister letter c. 5r has a cipher passage inside clear text, with word dividers added on the sheet and an early hand's letters t r a d ij o a over one line. With the two signs before them this gave c o n t r a d. The clear text before and after the passage and the dividers then gave "per questo" and "scoperta questa pratica", and so most of the alphabet.
 4. 11 Nov. c. 3r transcribed again from line strips with the look-alike signs split (861 units, `timestamps/stamped/c3r_pass2.txt`), and the key completed by reading. The reader knew values from line 5 on.
@@ -122,7 +122,7 @@ Claude (Anthropic) models for the transcriptions, the solving, the scripts and t
 
 - [x] siblings: cc. 5-6 of the same file (the sister letter of 12 Jan) opened and read; the other items of the Muzio folder were not searched beyond the catalogue entry
 - [x] clear-pages: c. 3v and c. 4r are blank, c. 4v has the address and docket; no decipherment of c. 3r anywhere; the early hand's letters and margin on cc. 5r-5v gave the first values and two code values
-- [x] known-keys: the Gonzaga keys in the repository (ferrante1549, ercole1544, capilupi1545, bresegno1548) compared by sign set: none fits
+- [x] known-keys: the Gonzaga keys in the repository (gonzaga1549 (WAINUT's table, formerly ferrante1549), ercole1544, capilupi1545, bresegno1548) compared by sign set: none fits
 - [x] print: Ronchini 1864 (the clear letters of 10 and 11 Jan 1550), the Lettere of 1590, Pastor 13, Vandini's Campori appendices, Cryptiana, HistoCrypt searched; no reading; Negri 2000 and the Parma originals not reached
 - [x] key-rebuild: the annealer failed on the first transcription; the key was rebuilt from the sister letter's crib and the clear text, and completed by reading, then checked by the c. 5v margin
 - [x] retry: every unit where the two transcriptions differ was looked at again on the image on 12 Nov 2026, nine units corrected, the reading re-formed; what stays open is listed above

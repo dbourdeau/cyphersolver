@@ -95,7 +95,15 @@
    "by": "Bertomeu Masiá; Tomokiyo",
    "year": 1544,
    "found": 2009,
-   "note": "Base shape for the consonant, mark for the vowel. Extended by hand from the Estense letters, Nov 2026 (targets/gonzaga1549/sign_values.tsv)."
+   "note": "Base shape for the consonant, mark for the vowel. Extended by hand from the Estense letters, Nov 2026 (targets/gonzaga1549/sign_values.tsv). A second table for the same cipher, built apart, is k-imperial-1544-wainut."
+  },
+  {
+   "id": "k-imperial-1544-wainut",
+   "label": "Imperial Cipher of 1544-1554: table rebuilt by WAINUT from the contemporary decipherments of Prince Philip's letters to Ferrante Gonzaga",
+   "kind": "rebuilt here",
+   "by": "WAINUT",
+   "year": 1544,
+   "note": "160 rows in WAINUT's own sign names (targets/gonzaga1549/wainut/key.tsv); built on Philip's letters of 8 Mar 1549 and 23 May 1547 against the decipherments on c. 14r and c. 11, frozen (key_frozen_1547.tsv), then extended on Charles V's letter of 14 Nov 1549. The same cipher as k-imperial-1544; the two tables give the same value at 2,312 of 2,523 aligned signs of that letter (comparison_signs.tsv)."
   },
   {
    "id": "k-voikov1921",
@@ -5166,6 +5174,14 @@
    "by": "Army Ministry (Yamagata); described by Satoshi Tomokiyo (Cryptiana)",
    "year": 1877,
    "note": "Each table pairs the iroha (44 signs) with the iroha reversed, shifted two places per table; the table number is written in clear at the head of the message. Tables in JACAR C09084568800; rules in C08052370500. Cryptiana meijiarmy.htm."
+  },
+  {
+   "id": "k-anover1610",
+   "label": "Philip III's cipher with the Count of Añover, 1610-1611: partial table rebuilt from the glossed sibling letters I 242,33, 42, 47 and 48",
+   "kind": "rebuilt here",
+   "by": "Alberto Garvía García",
+   "year": 1610,
+   "note": "A mixed nomenclator (numbers 10 to 114 and 241-242 with letter-syllable signs, homophones for letters, syllables and whole words). 74 groups for I 242,29: 66 matched with a contemporary clear text, 8 without a sure value (U01, 101, 114, 241, e, fo and the looped signs 28~ and 58~). Key partial; no key sheet of the series is known."
   }
  ],
  "links": [
@@ -5227,7 +5243,13 @@
    "key": "k-imperial-1544",
    "target": "gonzaga1549",
    "how": "adapted",
-   "note": "Key image read at low resolution, extended by hand from the letters; validated on 2,959 read signs."
+   "note": "Key image read at low resolution, extended by hand from the letters; validated on 2,959 read signs. The project's reading."
+  },
+  {
+   "key": "k-imperial-1544-wainut",
+   "target": "gonzaga1549",
+   "how": "rebuilt from",
+   "note": "WAINUT's reading: table from the contemporary decipherments on Philip's letters, frozen; blind held-out tests on 30 Sep 1549 (passes) and 20 Nov 1549 (fails on runs of 4+)"
   },
   {
    "key": "k-voikov1921",
@@ -8101,7 +8123,7 @@
    "key": "k-we028",
    "target": "morris1813",
    "how": "adapted",
-   "note": "Morris's copy numbers the sixteen blocks of 100 in reverse order (the = 285); with that renumbering the sheet decodes thirteen coded texts of 1814-15, 96.7% of 2,631 coded words read. Claiborne's copy of 1805 (three letters to Madison, NARA T260) has the same reversed blocks: the sheet gives 295 of the 328 coded words of Wagner's decipherments (in progress)"
+   "note": "Morris's copy numbers the sixteen blocks of 100 in reverse order (the = 285); with that renumbering the sheet decodes thirteen coded texts of 1814-15, 97.5% of 2,609 coded words read. Claiborne's copy of 1805 (three letters to Madison, NARA T260) has the same reversed blocks: the sheet gives 295 of the 328 coded words of Wagner's decipherments (in progress)"
   },
   {
    "key": "k-jqa1385",
@@ -8360,6 +8382,12 @@
    "target": "kagoshima1879",
    "how": "read unchanged",
    "note": "Tables 4, 1 and 6 reproduce the cipher of the three drafts from the clerk's plaintext (95/96, 45/47, 132/138 signs); the text itself is the clerk's plaintext on the leaves."
+  },
+  {
+   "key": "k-anover1610",
+   "target": "anover1610",
+   "how": "rebuilt from",
+   "note": "rebuilt by the contributor from the contemporary clear texts of the sibling letters and applied to the bare I 242,29; 77 of 89 words sure"
   }
  ],
  "sources": [
@@ -8492,6 +8520,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-bernstorff-0075-1917"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-imperial-1544-wainut"
   },
   {
    "source": "s-cyphersolver",
@@ -9732,6 +9764,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-inspecteurs1870"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-anover1610"
   }
  ],
  "unlinked": {
@@ -9753,7 +9789,7 @@
   "devil1539": "Not a cipher: the characters are a pictorial omen (tridents); no key exists. Amadi's demon-named sign table (c. 1588) was tested as values and gives no text.",
   "costabili1493": "Not a cipher: three clear Italian originals, no key.",
   "papai1710": "not solved: a graphic-sign alphabet with no key; Pápai's numeric key R580 does not cover it",
-  "beatrice1482": "text read from the 1877 printed decipherment; key rebuilt from the period clear copies by Brice Dudout (PR #620, targets/beatrice1482/vestigia/K_V.json), partial; the same alphabet as matthias1482 with three values in dispute, so no key entry until the two targets are reconciled",
+  "beatrice1482": "text read from the printed decipherments of 1877 and 1895; key rebuilt from the period clear copies by Brice Dudout (PR #620, targets/beatrice1482/vestigia/K_V.json), partial; the king's letter R1156 is in the same key (folded in 14 Nov 2026) and its further signs are recorded in the notes only, so no key entry yet",
   "beatrice1486": "read from the 1878 printed decipherment; the old cipher is not the 1482 key (tested, PR #620) and is not rebuilt; the new one it encloses is not identified",
   "beatrice1486b": "read from the contemporary slips and the 1877 print; no key identified or rebuilt",
   "beatrice1505": "not a cipher",
@@ -9825,7 +9861,6 @@
   "nevers1595": "not read: key not identified; fr. 3995 no. 76 shares the sign family but not the values",
   "nevers1574": "read from the target manuscript's own interlinear decipherment and clear copies; the related Nevers no. 2 key of 1584 is not identical and did not read it",
   "schiner1516": "Read by Büchi and Schiess (1925) with keys they rebuilt for Schiner's correspondence and never printed; no key sheet is known, and the leaf is not digitised.",
-  "indus": "undeciphered script: no key read it; published sign values (Parpola, Fairservis, Yajnadevam) tested against their own shuffles, not used",
   "ilten1697": "read from the contemporary interlinear decipherment; no key sheet for code A is known",
   "ilten1705": "read from the contemporary interlinear decipherments; no key sheet for code B is known",
   "r2236": "not deciphered: another list from the R2237/R2239 one, no key found; nothing read",

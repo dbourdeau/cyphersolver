@@ -30,9 +30,10 @@ OVERRIDE = {}  # README row text -> category, for rows filed in a table that doe
 LABEL = {M.KEY[m]: M.LABEL[m] for m in M.METHODS}
 LABEL.update(na='not a cipher or not reachable', active='in progress')
 COLOR = {  # CSS variables from style.css
-    'ct': 'var(--green)', 'extpt': 'color-mix(in srgb, var(--green) 65%, var(--blue))', 'adjpt': 'color-mix(in srgb, var(--green) 40%, var(--blue))',
-    'extkey': 'var(--violet)', 'known': 'color-mix(in srgb, var(--violet) 50%, var(--blue))', 'deciph': 'var(--amber)',
-    'notsolved': 'var(--red)', 'na': 'var(--muted)', 'active': 'var(--ink2)',
+    # one hue per family (key recovered, existing key or decipherment, not solved), a step of it per method: --m-* in style.css
+    'ct': 'var(--m-ct)', 'extpt': 'var(--m-extpt)', 'adjpt': 'var(--m-adjpt)',
+    'extkey': 'var(--m-extkey)', 'known': 'var(--m-known)', 'deciph': 'var(--m-deciph)',
+    'notsolved': 'var(--m-notsolved)', 'na': 'var(--m-na)', 'active': 'var(--m-active)',
 }
 
 def parse_year(s):

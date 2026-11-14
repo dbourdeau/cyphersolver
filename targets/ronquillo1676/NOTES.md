@@ -1,6 +1,14 @@
 # Salinas (London) and Ronquillo (Nijmegen) to Fuenmayor, 1676–78 — DECODE R966–R984, R1001
 
-Status: read in part (22 Oct 2026: all twenty letters read and translated, eighteen from their contemporary margins; 14 Nov 2026: R982 re-read by Brice Dudout, twelve holes closed, 0.919 -> 0.954 by hole marks, about 0.93 by words, so R982 stays under the bar; holes left in R983 f. 1, R982, R984 and single words, each with an outside blocker)
+Status: read in part (22 Oct 2026: all twenty letters read and translated, eighteen from their contemporary margins; 14 Nov 2026: R982 re-read by Brice Dudout, twelve holes closed, 0.919 -> 0.954 by hole marks, 0.914 by words, so R982 stays under the bar; holes left in R983 f. 1, R982, R984 and single words, each with an outside blocker)
+
+Recount by words (14 Nov 2026, owner decision: the read share counts holes by words, not by hole marks; a mark with a
+number, `[... n]`, is n unread words). The seven multi-word marks of `read/R982_reading.md` are sized from
+`read/R982.dec.txt` and the reading's Notes: opening groups 3, after "corra" 4, before "el dolor" 4, "por el" (dul de
+Burgomayne) 3, "critico ... el estado" 2, "persistan en" 4, "sino" 2. The cipher is syllabic, so these are estimates,
+taken at the least number of words the decode shows. 27 unread words under the twelve marks, 31 holes with [al]eses and
+the three [?word]s, against 330 words read: `read_share` 0.914 (was 0.954 by marks; the "about 0.93" of the integration
+check below was the same count before sizing). R982 and the target stay read in part.
 
 14 Nov 2026 (verification, Claude Opus 5.5): R982, which has no margin, re-read on the full-resolution DECODE images
 (I5093-I5095) wherever the reading had a hole, with a second blind pass on the doubtful figures. Most holes came from
@@ -156,7 +164,7 @@ DECODE's margin transcription where there is one). 22 Oct 2026: `keyx.py` (key +
 ## Remaining gaps
 
 - R983 f. 1 passage, many holes - blocker: illegible; the margin is faded almost to nothing on the DECODE scan and groups l, c, 1q, L2, pA, 11, 300 are not in the key
-- R982 opening groups and about ten phrase-level holes (16 hole marks, at least 26 words); R984 about 11 code groups (M, 491, 36, dul, lop, 188, the al of "los [al]eses", 113, 138, cus, 600) - blocker: no-key-material; no margin on either letter and no gloss that fits these codes in the eighteen margins; [?habra] and [?tenemos] hang on figures (21/31, bc/oc) that two readings of the image did not settle
+- R982 opening groups and about ten phrase-level holes (12 marks, 27 unread words by the count of 14 Nov 2026); R984 about 11 code groups (M, 491, 36, dul, lop, 188, the al of "los [al]eses", 113, 138, cus, 600) - blocker: no-key-material; no margin on either letter and no gloss that fits these codes in the eighteen margins; [?habra] and [?tenemos] hang on figures (21/31, bc/oc) that two readings of the image did not settle
 - single uncertain words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001 - blocker: illegible; margin faded or blotted at that word and the figures do not settle it
 
 ## Escalation

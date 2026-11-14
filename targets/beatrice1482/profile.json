@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "beatrice1482",
- "title": "Beatrice d'Aragona to Eleonora d'Aragona, Pozsony, May-June 1482 (DECODE R1140, R1141)",
+ "title": "The Hungarian court cipher of 1482: Beatrice d'Aragona to Eleonora d'Aragona (DECODE R1140, R1141) and Matthias Corvinus to Ercole I d'Este (R1156), Pozsony, May-June 1482",
  "documents": [
   {
    "id": "R1140",
@@ -66,6 +66,38 @@
     "notes": "Full glyph transcription of the recto cipher runs made blind (shape labels only) from the Vestigia images, 14 Nov 2026."
    },
    "read": "read"
+  },
+  {
+   "id": "R1156",
+   "read": "read",
+   "shelfmark": "Modena, Archivio di Stato, Cancelleria, Carteggio principi esteri 1622, b. 1/3, nos. 2, 2a (DECODE R1156)",
+   "date": "1 Jun 1482",
+   "year": 1482,
+   "country": "Hungary",
+   "route": "Pozsony -> Ferrara",
+   "language": "Latin",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio",
+     "printed edition"
+    ],
+    "source": "Fraknói, Mátyás király levelei II (1895) no. 131, pp. 232-233 (matthias1482/fraknoi_v2.txt); MDE III (1877) no. 11 by Vestigia's record (not opened); period clear copy, Vestigia 2627",
+    "partial": false
+   },
+   "length": {
+    "tokens": 409,
+    "unit": "symbols",
+    "measured": true,
+    "file": "matthias1482/vestigia/R1156_V2626_transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Vestigia 2626 (cipher original) with 2627 (period clear copy) beside it; matthias1482/vestigia/",
+    "image_quality": "good",
+    "notes": "Sign transcription of 69 cipher runs (409 signs: 10 name signs and the 2 large unread signs after regina among them) made 14 Nov 2026 from Vestigia's public web image, not blind: the runs were cut into words through the clear copy. The first reading of 19 Sept 2026 was from the DECODE images and kept no sign file."
+   }
   }
  ],
  "system": {
@@ -92,13 +124,13 @@
    "present": "unknown"
   },
   "key_order": "unknown",
-  "summary": "Graphic substitution alphabet with a few homophones (a, o, u, n), signs for doubled letters (tt, ss, ff, ll) and two nomenclator signs (King of Hungary, Venetians); the same alphabet as matthias1482.",
-  "notes": "The 1482 alphabet looks different from those of the 1486 letters (RESULT.md); R1142 (March 1486) says it uses the old cipher and encloses a new one. Split 14 Oct 2026: R1142 is beatrice1486, R1143 beatrice1486b, R1154 (not a cipher) beatrice1505. Key rebuilt 14 Nov 2026 from the Vestigia cipher/clear pairs (vestigia/README.md): 17 letter values shared with matthias1482; 9 = d and 2 = g here, against 9 = e and 2 = d/i in the matthias1482 key (open point there; one key by the evidence, the two targets not folded, owner's decision)."
+  "summary": "Graphic substitution alphabet with homophones, signs for doubled letters (tt, ss, ff, ll) and name signs. The queen's two letters use few homophones (a, o, u, n) and two name signs (King of Hungary, Venetians); the king's letter uses the same values with more signs for e (three), i, u/v, g and s, and name signs for King Ferdinand, the Duke of Ferrara and the Emperor.",
+  "notes": "The 1482 alphabet looks different from those of the 1486 letters (RESULT.md); R1142 (March 1486) says it uses the old cipher and encloses a new one. Split 14 Oct 2026: R1142 is beatrice1486, R1143 beatrice1486b, R1154 (not a cipher) beatrice1505. Key rebuilt 14 Nov 2026 from the Vestigia cipher/clear pairs (vestigia/README.md). The king's letter R1156 (former target matthias1482) folded in on 14 Nov 2026 after 9 = d and 2 = g were confirmed on its image (NOTES, 'Fold of matthias1482'). distinct_symbols counts the queen's letters only."
  },
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Nagy-Nyáry, Magyar Diplomácziai Emlékek III (1877), nos. 10 and 12, with the cipher passages set in italics",
+   "where": "Nagy-Nyáry, Magyar Diplomácziai Emlékek III (1877), nos. 10 and 12, with the cipher passages set in italics; for R1156 the same volume (no. 11 by Vestigia's record) and Fraknói, Mátyás király levelei II (1895) no. 131. Period clear copies of all three letters on Vestigia (1958, 1961, 2627).",
    "found": "before attempt",
    "used": true
   },
@@ -109,13 +141,14 @@
    "transcription"
   ],
   "attack": "known plaintext",
-  "human_role": "Supplied target catalogue entry and pointed out available DECODE cookie.",
+  "human_role": "Supplied target catalogue entry and pointed out available DECODE cookie. For R1156 (project-level): obtained a DECODE login and passed its session token to the model.",
   "models": [
    "GPT-6",
-   "claude-opus-5-5"
+   "claude-opus-5-5",
+   "claude-opus-5"
   ],
-  "sessions": 3,
-  "first_date": "2026-09-20",
+  "sessions": 5,
+  "first_date": "2026-09-19",
   "last_date": "2026-11-14",
   "tools": [
    "Python urllib (authorized DECODE downloads)",
@@ -126,6 +159,36 @@
   ]
  },
  "solution": [
+  {
+   "date": "2026-09-19",
+   "kind": "access",
+   "what": "R1156 (then the target matthias1482): DECODE record R1156 and its two images fetched with a login.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "literature search",
+   "what": "R1156 (then the target matthias1482): Found the letter printed in full in MDE III (1877) no. 14 and Fraknoi II (1895) no. 131, from the Modena original. [Note of 14 Nov 2026: \"no. 14\" was taken from Fraknói's reference \"III. 14.\", which is the page; the letter is no. 11 by Vestigia's record. The 1877 volume was not opened for this letter.]",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "key from source",
+   "what": "R1156 (then the target matthias1482): Working key rebuilt from the cipher runs aligned with the printed text, each value checked on at least two words; three name signs identified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "reading",
+   "what": "R1156 (then the target matthias1482): Every run read from the glyphs; four corrections to the print (valent, gentibus, the closing 'Speramus cito nos res nostras ita disposituros...', and the 'contemporary regest' shown to be the letter's own half-ciphered last sentence).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-09-19",
+   "kind": "reading",
+   "what": "R1156 (then the target matthias1482): 'illic faciet [q-sign] venient' against printed 'convenire', and two signs after 'regina' on line 3, left unresolved.",
+   "result": "partial"
+  },
   {
    "date": "2026-09-20",
    "kind": "access",
@@ -169,6 +232,12 @@
    "result": "partial"
   },
   {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "R1156 (then the target matthias1482): Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the letter with its cipher runs as read from the glyphs (NOTES.md, copied to texts/R1156_decryption.md), Fraknói's 1895 printed text extracted from fraknoi_v2.txt (texts/R1156_fraknoi1895.txt), and the rebuilt key copied from NOTES.md (texts/key.md); the glyph sequence itself was never written out, so there is no transcription (project work)",
+   "result": "partial"
+  },
+  {
    "date": "2026-11-14",
    "kind": "verification",
    "technique": [
@@ -187,11 +256,54 @@
    ],
    "what": "Integration check of PR #620. measure.py re-run with the relabel argument: 0.900 / 0.867 / 0.644, controls best 0.290 (0.891 without the relabelling); hashes of PREREG.md and K_V.json match; own scorer 0.901 against at most 0.346. train_key.py is seeded with 9 = d and 2 = g; re-run without them: 2 = g 10/10, 9 = d 29/33. matthias1482's values on R1141: 9 = e with 2 = d 0.833, with 2 = i 0.843. Vestigia images opened: 62 signs of R1141 agree with the transcription; the margin of the clear copy 1961 has the restored run. Key partial (three shapes without a value, 8 signs, and one unread sign). Order of events by the contributor's record. Guerra 2010 (listed by Vestigia) not opened.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "R1156 (then the target matthias1482): Comparison with the key rebuilt for beatrice1482 (PR #620, Brice Dudout): sixteen letter values and the sign for the King of Hungary agree (seventeen values), three differ (d: 2 here, 9 there; g: hooked L here, 2 there; e: 5, 4, 9, ς here, one 5-like sign there). On R1141, held out, 9 = d and 2 = g give 0.900 against 0.833-0.843 for this key's values. Not settled for R1156: no sign-level transcription in this folder, images behind the DECODE login. Key left unchanged; open point in NOTES. Same key as beatrice1482 by the evidence; not folded (owner's decision).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "R1156: Vestigia searched for the king's letter. Found with open images, no login: document 2626 (cipher original, DF 295613) and 2627 (a clear copy of the time, DF 295614), not known to the project before.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "R1156: the cipher runs of Vestigia 2626 transcribed sign by sign with the clear copy beside it (not blind): 69 runs, 409 signs, 10 of them name signs and 2 the large unread signs after regina (matthias1482/vestigia/R1156_V2626_transcription.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching"
+   ],
+   "what": "Same-key question decided on R1156 itself. d is a 9-form in 8 of 8 places (the head unclear in two); g is the figure 2 in Mager and quingentos (an L-form in four other places); the Venetians' and the king's signs are those of the queen's letters. K_V as it stands recovers 283 of 399 letters of the clear copy (0.709), with the signs only this letter has 389 of 399 (0.975); the earlier key's 9 = e and 2 = d give 379 (0.950), losing all ten deciding places. Not a held-out test, no controls. Verdict: one key; the king's letter uses more homophones. The earlier key of R1156 corrected on d, g, e, i and the Venetians' sign.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "R1156 re-read against the period clear copy (Vestigia 2627): electos added after quingentos; 'significet Regi Hungarie et illic faciet quod venient' settled; more runs marked as cipher; the copy reads sentibus where the sense wants gentibus; valent, the Speramus sentence and the closing sentence were already in the copy of the time. Two signs after regina still unread.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "matthias1482 folded into this entry under the one-key rule (owner's decision, conditional on the same key): folder moved to matthias1482/ with its notes and profile kept beside it; the page docs/matthias1482.html replaced by a moved-page notice.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "method": "read from existing decipherment",
-  "method_basis": "Both letters were already deciphered in print in Magyar Diplomácziai Emlékek III (1877), nos. 10 and 12, with the cipher passages in italics; the prints were matched to the DECODE images (clear wording, dates, cipher boundaries) and no key was applied.",
+  "method_basis": "All three letters were already deciphered in print: Magyar Diplomácziai Emlékek III (1877), nos. 10 and 12 for the queen's letters, the same volume and Fraknói 1895 no. 131 for the king's. The prints were matched to the images; the king's letter was also re-read from its signs.",
   "contribution": [
    "catalogue correction",
    "key recovered",
@@ -205,7 +317,7 @@
    "independent clear copy",
    "key confirms"
   ],
-  "notes": "Matthias's offer of Swiss and cavalry against Venice for money paid at Milan. Split on 14 Oct 2026 from the five-record group. 14 Nov 2026: key rebuilt and validated on a held-out letter; one cipher run of R1141 missing from the 1877 print restored (vestigia/README.md).",
+  "notes": "Matthias's offer of Swiss and cavalry against Venice for money paid at Milan, and his own letter to Ercole on the 500 horse he cannot get through. Split on 14 Oct 2026 from the five-record group. 14 Nov 2026: key rebuilt and validated on a held-out letter; one cipher run of R1141 missing from the 1877 print restored; the king's letter R1156 (former target matthias1482) folded in after its d and g were checked on Vestigia's image.",
   "credits": [
    {
     "who": "nagy",
@@ -217,7 +329,7 @@
    {
     "who": "vestigia",
     "role": "key or decipherment used",
-    "note": "documents 1958 and 1961, the period clear copies of R1140 and R1141, with the cipher originals 1957 and 1960",
+    "note": "documents 1958, 1961 and 2627, the period clear copies of R1140, R1141 and R1156, with the cipher originals 1957, 1960 and 2626",
     "source": "https://www.vestigia.hu/documents/1958"
    },
    {
@@ -225,6 +337,13 @@
     "role": "verification",
     "note": "PR #620: blind shape transcriptions of both letters from the Vestigia images, the 1482 key rebuilt from R1140 and its period clear copy and measured on R1141 held out (0.900 against 0.290; by the contributor's record for the order of events); the run missing from MDE III no. 12 restored; with AI agents",
     "date": "2026-11-14"
+   },
+   {
+    "who": "fraknoi",
+    "role": "key or decipherment used",
+    "note": "R1156: printed text (Mátyás király levelei II no. 131) aligned with the cipher runs for the first working key of that letter",
+    "date": "1895",
+    "source": "Fraknói, Mátyás király levelei. Külügyi osztály II (1895), no. 131, pp. 232-233"
    }
   ],
   "texts": [
@@ -255,30 +374,43 @@
      "note": "The corrected sentence read against the margin of the period clear copy (Vestigia 1961, image opened): 'et tale che non solamente havia tolto Venetiani da sua offesa ma li haria ridocti a carastia de defenderse'. The rest of the reading is the 1877 print as before; not re-read in full against the copy. The contributor's own review (same date) reported the same correction."
     },
     "transcription": "vestigia/R1141_V1960_transcription.txt"
+   },
+   {
+    "doc": "R1156",
+    "label": "Matthias to Ercole I d'Este, Pozsony, 1 June 1482",
+    "decryption": [
+     "matthias1482/texts/R1156_decryption.md",
+     "matthias1482/texts/R1156_fraknoi1895.txt"
+    ],
+    "summary": "King Matthias Corvinus to Duke Ercole I of Ferrara, his brother-in-law, in the first weeks of the War of Ferrara: he and Queen Beatrix had resolved to send 500 picked horse, among them 100 hussars, but found no safe road; his captain Balázs Magyar goes to Croatia towards the Venetian border to gather troops. Printed by Fraknói (1895, no. 131); re-read from the signs and against the clear copy of the time.",
+    "reading": "matthias1482/texts/R1156_reading.md",
+    "translation": "matthias1482/texts/R1156_en.md",
+    "language": "la",
+    "transcription": "matthias1482/vestigia/R1156_V2626_transcription.txt"
    }
   ],
   "key": "partial",
   "key_file": "vestigia/K_V.json",
   "codes_open": {
-   "open": 3,
-   "total": 37,
-   "tokens_open": 8
+   "open": 5,
+   "total": 42,
+   "tokens_open": 10
   },
   "provenance": "mixed",
   "parts": [
    {
-    "label": "The text of both letters",
-    "records": "R1140, R1141",
+    "label": "The text of the three letters",
+    "records": "R1140, R1141, R1156",
     "method": "read from existing decipherment",
     "extent": "complete",
-    "basis": "Printed decipherment in MDE III (1877) nos. 10 and 12; one run of R1141 missing from the print restored from the period clear copy (Vestigia 1961)."
+    "basis": "Printed decipherments in MDE III (1877) and Fraknói 1895 no. 131; one run of R1141 missing from the print restored from the period clear copy (Vestigia 1961); R1156 re-read from its signs and against its period clear copy (Vestigia 2627)."
    },
    {
     "label": "The 1482 key",
-    "records": "R1140, R1141",
+    "records": "R1140, R1141, R1156",
     "method": "key recovered based on plaintext from external sources",
     "extent": "partial",
-    "basis": "Brice Dudout (PR #620): rebuilt from R1140 aligned on its period clear copy and the print, measured on R1141 held out (0.900 against 0.290 for shuffled keys; order of events by the contributor's record); three shapes without a value."
+    "basis": "Brice Dudout (PR #620): rebuilt from R1140 aligned on its period clear copy and the print, measured on R1141 held out (0.900 against 0.290 for shuffled keys; order of events by the contributor's record); three shapes without a value. Its values 9 = d and 2 = g confirmed on R1156 (14 Nov 2026), whose further signs were added from that letter and its clear copy."
    }
   ]
  }

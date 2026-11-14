@@ -87,8 +87,6 @@
   "riksarkivet4284": "Sender unnamed and recipient only conjectured (a later archival note files it with the letters to Ludwig Camerarius), so no portrait pair can be verified.",
   "r2276": "The letter is unsigned (the writer is probably Jean de Piles, abbé d'Orbais, who has no known portrait) and the addressee is not named.",
   "benedict1399": "Recipient side only: Francesc Climent Sapera (Çapera) has no trustworthy portrait on Wikimedia Commons (Wikidata Q68866337 has no image); sender Benedict XIII has one.",
-  "indus": "Not a letter between people: undeciphered Bronze Age seals and tablets, no named sender or recipient.",
-  "lineara": "Not correspondence: anonymous Minoan scribes and administrators; no named sender or recipient.",
   "ilten1743": "Recipient Johann Georg von Ilten (1688-1749) and sender Ernst von Steinberg (Hanoverian minister in London) have no portrait on Wikimedia Commons (Wikidata Q28374583 and Q5395212 carry no image; Commons search found none); the other letter is unsigned.",
   "siena7": "Sender: an orator signing 'Servitor vester Orator Ant...', name not legible; recipients the Officiales Balie of Siena (an office). Leonardo Benvoglienti and the Duke of Milan are only mentioned.",
   "siena8": "Writer unnamed (a Sienese informant or envoy); recipient the government of Siena (an office). Bianca Maria Visconti and Leonello d'Este are only mentioned.",
@@ -218,7 +216,8 @@
   "sanchez1922": "The sender signs F. Sánchez (cipher) and is not identified beyond the signature; the recipient 'José González' is a cover name, and its identification with Félix Díaz is the contributor's inference, not in the letter. A Wikimedia query on 13 Nov 2026 was answered with a rate-limit refusal (HTTP 429); no portrait of a named correspondent could be sought.",
   "murguia1914": "Recipient Pablo González Garza: portrait added. Sender Francisco Murguía: Wikimedia Commons answered HTTP 429 (too many requests) to this session on three tries on 13 Nov 2026, so the file could not be fetched or its licence checked; the candidate is File:Francisco Murguia.JPG (the lead image of his Wikipedia article), to add when Commons answers.",
   "blaufeldt1646": "The writer is not identified (the cipher signature reads Blaufeldt; no person found). For the recipient, Ottavio Piccolomini, a portrait was found and checked on 13 Nov 2026 (Wikipedia lead image of his article, File:Piccolomini_5.jpg on Wikimedia Commons: painting by Anselm van Hulle, c. 1650, public domain), but the fetch of the file by docs/_add_portrait.py answered HTTP 429 (too many requests) on six tries over about 20 minutes, so it was not added; run `python docs/_add_portrait.py blaufeldt1646 recipient \"Ottavio Piccolomini\" \"File:Piccolomini_5.jpg\" \"Portrait by Anselm van Hulle, c. 1650\"` when Wikimedia answers.",
-  "kagoshima1879": "Unsigned drafts between offices: the Army Ministry to the Kagoshima garrison detachment and the troops for the Ryukyu; the drafts name no sender or recipient, so there is no person to portray (13 Nov 2026)."
+  "kagoshima1879": "Unsigned drafts between offices: the Army Ministry to the Kagoshima garrison detachment and the troops for the Ryukyu; the drafts name no sender or recipient, so there is no person to portray (13 Nov 2026).",
+  "anover1610": "Philip III of Spain and Rodrigo Niño Laso, Count of Añover, are both named people. One Commons file search for the count on 14 Nov 2026 returned only unrelated files (a printed life of Pedro Niño, Count of Buelna); every later Wikimedia query (Commons, Wikidata) was answered HTTP 429 (too many requests) on four tries over the session, so no portrait of the king could be fetched or its licence checked. Add Philip III with docs/_add_portrait.py when Wikimedia answers; no portrait of the count is known to us."
  },
  "reveal": {
   "deboli1786": "The page decodes with the frozen key K3 (decryption/z2_146.txt), but 17 of its 219 groups are restored from the clear of the time, which is not reproduced here; no reveal passage was built (10 Nov 2026).",
@@ -289,7 +288,7 @@
   "r1871": "Not solved: no value is known for any of the 211 three-digit groups, so no passage can be replayed sign by sign.",
   "mniszech1714": "Not solved: no value is known for any of the 232 figures, so no passage can be replayed sign by sign.",
   "affry1757c": "Not solved: no value is known for any of the 761 code groups of R1071, so no passage can be replayed.",
-  "beatrice1482": "Read from the 1877 printed decipherment only: no transcription of the graphic signs was made and no key rebuilt, so no passage can be decoded sign by sign; the images may not be published without the archive's permission.",
+  "beatrice1482": "Not built. The text is the printed decipherment; the sign transcriptions (shape labels, 14 Nov 2026) were made on Vestigia's images, which are not reproduced here, and the DECODE images of the queen's letters may not be published without the archive's permission. The one published detail, of the king's letter, has no sign positions recorded.",
   "beatrice1486": "Read from the 1878 printed decipherment only: no transcription of the graphic signs and no key, so no passage can be decoded sign by sign.",
   "beatrice1486b": "Read from the contemporary slips and the 1877 print only: no transcription of the graphic signs and no key, so no passage can be decoded sign by sign.",
   "beatrice1505": "Not a cipher: a plain Italian letter, nothing to replay.",
@@ -331,7 +330,6 @@
   "rohan1636": "No ciphertext in hand: the Savoy and Canisy letters (Français 5190 nos. 214-215) are beyond the Gallica reproduction, so no passage can be replayed sign by sign.",
   "emery1636": "No ciphertext in hand: Français 5190 nos. 171-172 are beyond the Gallica reproduction, so no passage can be replayed sign by sign.",
   "schiner1516": "No ciphertext in hand: Cotton Vitellius B XIX is not digitised and Büchi printed only the plaintext (italics), no key or facsimile, so no passage can be replayed sign by sign.",
-  "indus": "Nothing is read: the script is undeciphered, so no passage can be decoded sign by sign.",
   "burgo1527": "Not a cipher: the record is a clear Spanish minute, so there is nothing to decipher.",
   "waldeck1744": "Not deciphered: no code group has a value, so no passage can be decoded sign by sign.",
   "champagne1590": "Short two-digit runs (8 to 16 figures) inside clear text in three letters; no continuous passage of 40 cipher groups exists to replay.",
@@ -505,7 +503,8 @@
   "setembrino1914": "The CPDOC images were not fetched by the integrating session: the DocReader pages (docvirt.com, answered 200) load their images by JavaScript and give no image URL (PDFExport answered 404, SaveAsFile 500), so a browser session is needed. A crop of the tape with the pencil decipherment of pagfis 1319 can be added then.",
   "frankenthal1646": "No image is shown and none was seen by the project at integration: the photograph of inv. 25071 is in the appendix zip of Vlnas 2017 on theses.cz, which answers every script request with a JavaScript proof-of-work page (a bot check, not gone round), and no browser tool was available in the integrating session; the contributor worked from the zip in Chrome and did not commit images (12 Nov 2026).",
   "mauborgne1915": "No image of the 1915 sheet is known: the original is lost (found by Louis Kruh among Army Signal School papers in the New York Public Library, then not found again when Craig Bauer asked) and the printings (Cryptologia 17(2) 1993, Bauer 2017) are in copyright and were not scanned; the page shows the cipher as text, in the hero strip, the watch-it-decipher figure and the full texts (12 Nov 2026).",
-  "kagoshima1879": "No image is shown: the JACAR frames of the three drafts (fetched as PDFs for the check, 13 Nov 2026) are marked 'All rights reserved' by JACAR, and the contributor withheld them too, as for meiji1874."
+  "kagoshima1879": "No image is shown: the JACAR frames of the three drafts (fetched as PDFs for the check, 13 Nov 2026) are marked 'All rights reserved' by JACAR, and the contributor withheld them too, as for meiji1874.",
+  "anover1610": "No image is shown: the project saw page 2 of I 242,29 once, in a browser, at the catalogue sweep of 2 Nov 2026 and kept no copy; since then the Memoria de Madrid viewer (record 424541, Biblioteca Histórica Municipal de Madrid) has answered every scripted request with an Access Denied page (a bot check, recorded on 13 and 14 Nov 2026 and not got round), no browser tool was available in the sessions that did the work, the contributor's zip packages on issue #499 returned 403, and the reuse terms of the images were not checked. The hero strip prints the first groups of the cipher as transcribed."
  },
  "atlas": {
   "azuares1837": "Sent from London; the place of the Carlist court and its Secretary of State on 8 September 1837 is not stated in the sources, so the letter is left off the map rather than guessed.",
@@ -560,7 +559,6 @@
   "turculet1709": "Place of writing not stated (news from Bender, sent from Wallachia?) and the recipient's whereabouts in 1709 not established.",
   "r7475": "Unsigned and undated; written in Sieniawski's camp, whose place is not given.",
   "labbe1582": "Origins known, destination only France; no city established for Nevers at either date.",
-  "indus": "Not letters: seals and tablets from some fifty sites, no sender or destination.",
   "ilten1743": "Both letters are from London; Ilten was with the Hanoverian troops in the Low Countries and no city is established for him in Feb-Apr 1743.",
   "siena7": "Written at Milan to Siena, but the date line is torn: only the 1450s, not a year; left out rather than guessed.",
   "siena8": "The slip names neither its place of writing nor its date (c. 1440-41 is proposed from its contents); left out rather than guessed.",
@@ -593,6 +591,7 @@
   "vanhalen1840": "Sent from Igualada; the place of the acting commander of the División auxiliar del Norte on 6 May 1840 is not stated in the sources, so the letter is left off the map rather than guessed.",
   "peking1912": "Sent from Peking; the addressee and the place of destination are not named in the telegram or the notes.",
   "friedrichwilhelm1655": "The Elector wrote from Cöslin on 4 September 1655, but where Waldeck was that day is not stated in the sources, and the other pieces name no place, so the letters are left off the map rather than guessed (Waldeck's letter of 14 September is from Königsberg, to the Elector at an unstated place) (12 Nov 2026).",
-  "ewsum1535": "Place of writing, and where the addressees were on the day, are not stated in the text or the notes; the date is only 'decima Ivly' in an unknown year, so the opening is left off the map rather than guessed."
+  "ewsum1535": "Place of writing, and where the addressees were on the day, are not stated in the text or the notes; the date is only 'decima Ivly' in an unknown year, so the opening is left off the map rather than guessed.",
+  "anover1610": "Sent from Lerma; where the Count of Añover was on 20 May 1610 is not stated in the letter or the notes, so the letter is left off the map rather than guessed."
  }
 }

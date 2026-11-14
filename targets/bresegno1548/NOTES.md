@@ -31,7 +31,7 @@ are not independent of c. 22r (see Transcription).
 
 ## Collision and prior art (3 Nov 2026)
 
-- Dan's repo at origin/main d803a1d8d: no target for 1563; `ferrante1549/NOTES.md` lists 1563 as "not tested". Open
+- Dan's repo at origin/main d803a1d8d: no target for 1563; `gonzaga1549/wainut/NOTES_ferrante1549.md` (then `ferrante1549/NOTES.md`) lists 1563 as "not tested". Open
   PRs #227, #216, #201: none about these letters.
 - Two web searches (Bresegno/Brezeno, Ferrante Gonzaga 1548, Morone, cipher; Campori) found no edition or study. The independent check made one more (Fierravante/Fieravante, 1548, Bologna, Tor di
   Nona, Ferrante Gonzaga, Morone) and found none. The
@@ -49,7 +49,7 @@ Consonant signs with a vowel number written above them, plus bare signs, doubles
 - doubles `{bar}` ss, `{bir}` rr, `{barn}` ssi;
 - code: `Os` V. Ex., `{Per}` su Mag., `{Ar}` Papa, `{mi}` Cardenal, `{Gra}` Bolona, `{Bran}` Duque de Florencia.
 
-It is not the Imperial syllabary of `ferrante1549` (dots and bars over a base for the vowel) and not the table of PR
+It is not the Imperial syllabary of `gonzaga1549 (WAINUT's table, formerly ferrante1549)` (dots and bars over a base for the vowel) and not the table of PR
 #216; same family of idea, different marks. `cifuentes1534` (Charles V's Rome correspondence, base signs with
 superscript digits 1-10) describes a similar system; I did not compare the two.
 

@@ -1,0 +1,113 @@
+{
+ "schema_version": 1,
+ "target": "sforza1598",
+ "title": "Sforza chancery letters in cipher, ASMi cart. 1598 and 1591 (catalogue 1311)",
+ "documents": [
+  {
+   "id": "R5482",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 (DECODE R5482)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": 0,
+    "distinct": 0,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "unknown",
+    "source": "not transcribed",
+    "image_quality": "good",
+    "notes": "Seen at 150 dpi only."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Pool of many keys and hands. R5482: capital letter with superscript number (code groups) mixed with single signs, a code or nomenclator.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 60,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "none",
+  "notes": "Dots distinguish sign variants; the 115 key sheets of the box are 19th-century reconstructions and none was matched."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Not yet searched beyond the catalogue vetting (no published readings found, 28 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "The user asked to solve catalogue 1311.",
+  "tools": [
+   "PyMuPDF"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-11-14",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Fetched all 203 DECODE records of cart. 1598/1591 (110 letters, 93 key sheets).",
+   "result": "worked"
+  },
+  {
+   "kind": "statistics",
+   "what": "Contact-sheet triage of the 133 letter pages; R5482 viewed at 150 dpi. Finding: many sign families and hands, at least one code (letter+number groups); not one cipher.",
+   "result": "partial"
+  },
+  {
+   "kind": "statistics",
+   "what": "Grouped all 110 letters by sign hand on 110-dpi strips; catalogue 1311 split into 18 entries (2628-2645: 17 families + 1 miscellany of 38 singletons); 9 clear leaves excluded.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Triage only so far.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "Pool of separate ciphers; needs splitting by family as was done for cart. 1597."
+ }
+}

@@ -22,14 +22,14 @@
    "length": {
     "tokens": 211,
     "unit": "code groups",
-    "measured": false,
-    "file": "transcription.txt"
+    "measured": true,
+    "file": "contributor/tokenization_211.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "Alberto Garvía García's report (Zenodo 10.5281/zenodo.24174363, section 4): ten lines of f. 53r; the five pages were transcribed in full in his dossier (not seen here); images from Memoria de Madrid",
     "image_quality": "unknown",
-    "notes": "The 211 cipher-group occurrences are the contributor's segmentation figure; the ten lines were not counted by the project with the measure tool because the signs are typographic approximations (delta, R, B, ji, a loop). Not checked against the manuscript images (403 from Memoria de Madrid)."
+    "notes": "211 cipher-group occurrences in the contributor's analytical tokenization (contributor/tokenization_211.txt), counted with the measure tool on 14 Nov 2026 (221 tokens, of which 10 are the line labels). The project's own parser splits the same ten lines into 213 tokens (three groups cut differently). The signs are typographic approximations (delta, R, B, ji, a loop). Not checked against the manuscript images by the project (Memoria de Madrid refuses scripted requests); Brice Dudout's independent transcription agrees on every digit string."
    },
    "read": "read in part"
   }
@@ -76,13 +76,14 @@
   "human_role": "Alberto Garvía García directed the work and posted it; the transcription, matching with the sibling clear texts and the key table were prepared with ChatGPT/Codex (his statement). No independent palaeographic check. This project checked the report and re-derived the reading from his transcription and key table with its own parser; the manuscripts could not be fetched.",
   "tools": [
    "own backtracking parser (scratchpad, not committed)",
-   "es-golden-age quadgram model (lang/)"
+   "es-golden-age quadgram model (lang/)",
+   "docs/_validate.py"
   ],
   "models": [
    "ChatGPT/Codex (OpenAI), contributor's statement"
   ],
   "first_date": "2026-11-12",
-  "last_date": "2026-11-13"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -143,7 +144,7 @@
    "technique": [
     "key matching"
    ],
-   "what": "Issue #499 comments of 13 Nov 2026: the contributor's 211-token analytical layer and his control windows A01-D06, E01-E04 saved in contributor/; all 211 tokens have a value in key.tsv and decode to his reading letter for letter; the 74-entry graded table equals key.tsv. Dudout's independent transcription comparison (all digit strings of L01-L10 agree; L05 bo/60 doubtful) recorded. Memoria de Madrid still 403, images not seen. No open code closed; strict share unchanged (88.6%).",
+   "what": "Issue #499 comments of 13 Nov 2026: the contributor's 211-token analytical layer and his control windows A01-D06, E01-E04 saved in contributor/; all 211 tokens have a value in key.tsv and decode to his reading letter for letter; the 74-entry graded table equals key.tsv. Dudout's independent transcription comparison (all digit strings of L01-L10 agree; L05 bo/60 doubtful) recorded. Memoria de Madrid still 403, images not seen. No open code closed; the contributor's own word count unchanged (78 of 88 words, 88.6%; the project's strict recount of 14 Nov is 77 of 89, 86.5%).",
    "result": "worked"
   },
   {
@@ -154,15 +155,78 @@
    ],
    "what": "Brice Dudout's token-by-gloss alignment of the glossed letter I 243,18 (Memoria de Madrid 425791, 30 Apr 1610; issue #499, 14 Nov 2026; contributor/i243_18_dudout_alignment.txt) compared with key.tsv: 71 pairs agree, 1 does not (mel glossed or once), 24 tokens are not in the table; none of the open codes U01, 101, 114, 241, e, fo occurs, so no open code is closed. The contributor reports the same and confirms L05 bo 32 on the images. His two new zip attachments return 403 and were not seen. The alignment was not compared with the image.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 205 tokens, 68 types, es-golden-age order 4: reading -1.948 per letter; random keys -3.627 (z 7.7); key annealed onto shuffled ciphertext best -2.176 (mean -2.221, z 10.4); annealer on the real text -2.119. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Statistical check with docs/_validate.py on the contributor's 211 tokens and key.tsv (validation.tsv; the six context-only or single-parallel values left unread, the two doubtful nulls read as nothing): -1.948 per letter in the Spanish 4-gram model against -3.627 on average for 200 random keys of the same structure (best -3.001, z 7.7) and -2.176 at best for a key annealed onto the shuffled ciphertext (z 10.4). Verdict pass, on 205 tokens and 68 types, with a key that came from the sibling clear texts, not from this text. It replaces the inconclusive control of 13 Nov, which permuted digit values only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Strict recount of the read share from reading.md, word by word: 89 words in the ten lines; 10 are marked holes (buena, aviso, puerto, otras, entablando, trato, capitulado, bien, disimulacion, persona: a context-only code, a revisable transfer with no direct parallel (fo = so, grade M), a doubtful null inside the word or the otraas anomaly) and 2 more rest on a sign the transcriptions do not settle (mando, the sign printed gel{b?}; porque in line 5, bo in one transcription and 60 in the other). 77 of 89 words sure = 86.5%. The contributor's own count is 78 of 88 words (88.6%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "Write-up as read in part by the owner's decision. Memoria de Madrid was not asked again by script (it refused on 13 and 14 Nov with an Access Denied page, a bot check, not got round). The project's only sight of the manuscript is page 2 in a browser at the catalogue sweep of 2 Nov 2026 (no copy kept; the opening groups noted then agree with line 1 of the contributor's transcription); the transcription was not compared with the image, and no image is shown. The contributor's two zip packages of 14 Nov returned 403 and were not seen.",
+   "result": "failed"
   }
  ],
  "outcome": {
+  "validation": {
+   "date": "2026-11-14",
+   "model": "es-golden-age",
+   "file": "validation.tsv",
+   "tokens": 205,
+   "types": 68,
+   "tokens_per_type": 3.01,
+   "score": -1.948,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.627,
+     "sd": 0.217,
+     "max": -3.001,
+     "z": 7.7,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.221,
+     "sd": 0.026,
+     "max": -2.176,
+     "z": 10.4,
+     "p": 0.1429
+    }
+   },
+   "power": -2.119,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.948; polyphony 0.0; 6 unread tokens left out; annealer on the real text from random keys reached -2.119"
+  },
   "class": "read in part",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The contributor rebuilt a partial nomenclator from the clear texts of sibling letters in the same volume (I 242,33, 42, 47, 48) and applied it to I 242,29, whose cipher has no decipherment bound in. The reading reproduces from his transcription and table; the manuscripts and the sibling plaintexts were not seen by the project, and the transcription is unverified.",
+  "method_basis": "The contributor rebuilt a partial nomenclator from the clear texts of sibling letters in the same volume (I 242,33, 42, 47, 48) and applied it to I 242,29, whose cipher has no decipherment bound in. The reading reproduces from his transcription and table; the transcription was not compared with the manuscript by the project, and the sibling plaintexts were not seen by it.",
   "key": "partial",
   "verification": [
-   "none"
+   "independent verification",
+   "statistical test",
+   "historical consistency"
   ],
   "provenance": "contributed",
   "contribution": [
@@ -171,50 +235,66 @@
   ],
   "credits": [
    {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the contemporary clear texts of the sibling letters I 242,33, 42, 47 and 48 gave the key values (the contributor's matching; not seen by the project)",
+    "date": "1610",
+    "source": "Madrid, Biblioteca Histórica Municipal, I 242,33, 42, 47, 48 (Memoria de Madrid)"
+   },
+   {
     "who": "garvia",
-    "role": "new cipher with solution",
-    "note": "posted the key table, the transcription and the reading of I 242,29 (report on Zenodo, doi 10.5281/zenodo.24174363; ChatGPT/Codex-assisted, as he states)",
+    "role": "solution",
+    "note": "key table rebuilt from the sibling letters and the reading of I 242,29 f. 53r (report on Zenodo, doi 10.5281/zenodo.24174363; AI-assisted, as he states); English translation (PR #547)",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/499"
+   },
+   {
+    "who": "garvia",
+    "role": "transcription",
+    "note": "the ten ciphered lines of I 242,29 f. 53r and the sibling control windows, from the Memoria de Madrid images",
     "date": "2026-11-12",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/499"
    },
    {
     "who": "dudout",
     "role": "verification",
-    "note": "independent transcription of I 242,29 f. 53r (3 Nov 2026, by his record) agrees on every digit string; L05 bo/60 doubt; pointed to I 243,18 and I 242,35/59/60; token-by-gloss alignment of the glossed letter I 243,18 (14 Nov 2026), tried here on the open codes without result",
+    "note": "independent transcription of I 242,29 f. 53r (3 Nov 2026, by his record) agreeing on every digit string, one sign of line 5 doubtful (bo or 60)",
     "date": "2026-11-13",
     "source": "issue #499 (dbourdeau/cyphersolver), comment of 13 Nov 2026"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "pointed to the glossed sibling I 243,18 and the unglossed I 242,35, 59 and 60, and sent his token-by-gloss alignment of I 243,18 (14 Nov 2026), tried here on the open codes without result",
+    "date": "2026-11-14",
+    "source": "issue #499 (dbourdeau/cyphersolver), comment of 14 Nov 2026"
    }
   ],
-  "fraction_read": 0.886,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "The contributor's own word count (report, section 7): 78 of 88 words firm = 88.6%; firm means every value in the word is graded C (matched with a clear text), as strict as the README rule. Not recomputed word by word; his looser figures (173 of 211 group occurrences = 81.99%; 202 of 211 with a table equivalence = 95.73%) are not the read bar.",
+  "fraction_read": 0.865,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Strict count from reading.md, word by word (14 Nov 2026): 89 words; 77 sure. Holes: the 10 words the reading brackets (buena U01, aviso 101, trato 241, bien 114: context-only codes; disimulacion: e = mu from context; persona: fo = so, a revisable transfer, grade M, no direct parallel in key.tsv; puerto, entablando, capitulado: a doubtful null 28~ or 58~ inside the word; otras: the otraas anomaly) and 2 words on a sign the transcriptions do not settle (mando, gel{b?}; porque in line 5, bo or 60). The contributor's own figure is 78 of 88 words = 0.886 (his looser ones: 173 of 211 group occurrences in firm words, 202 of 211 with a table equivalence).",
   "key_file": "key.tsv",
-  "notes": "In progress. Ten lines of f. 53r read in part from a key rebuilt from sibling letters; transcription and sibling parallels unchecked against the images (Memoria de Madrid blocked scripted requests). No page.",
+  "notes": "Written up as read in part on 14 Nov 2026 (owner's decision). Ten lines of f. 53r read in part from a key rebuilt from sibling letters; 77 of 89 words sure. The transcription and the sibling parallels are unchecked against the images by the project (Memoria de Madrid refuses scripted requests; page 2 was seen once in a browser on 2 Nov 2026, no copy kept). The open codes are still workable from the unglossed and further glossed letters of the series, which belong to catalogue 1988.",
   "gaps": [
    {
-    "item": "transcription of f. 53r and the sibling parallels against the manuscripts",
+    "item": "transcription of f. 53r and of the sibling parallels against the manuscripts",
     "blocker": "needs-physical-access",
-    "detail": "Memoria de Madrid returns Akamai Access Denied to scripted requests; needs a Chrome pass or the contributor's images"
+    "detail": "Memoria de Madrid answers scripted requests with an Access Denied page (a bot check, not got round); it needs a person at a browser, or the contributor's images sent as files. One sign of line 5 is bo or 60 between the two transcriptions."
    },
    {
-    "item": "U01 (buena), 101, 114, 241 (context-only codes), e = mu, fo = so (persona), the nulls 28~ and 58~, the otraas anomaly",
+    "item": "the last sign of line 4: clu = tu (capi-tu-lado) in the contributor's reading, written du by Brice Dudout, whose du is glossed conde twice in I 243,18",
+    "blocker": "needs-physical-access",
+    "detail": "whether these are one sign or two can only be settled on the images of both letters; asked of both in issue #499"
+   },
+   {
+    "item": "U01 (buena), 101 (aviso), 114 (bien), 241 (trato), e = mu, fo = so (persona), the nulls 28~ and 58~, the otraas anomaly",
     "blocker": "open-codes",
-    "detail": "values inferred from context or a single parallel; the contributor lists them as open"
-   },
-   {
-    "item": "the three other cipher-only leaves of catalogue 1988 and I 242,66 as a further parallel",
-    "blocker": "not-attempted",
-    "detail": "Hispana idBib 58438217, 58438218, 58678720; not transcribed"
+    "detail": "values from context or by a revisable transfer (fo = so, grade M, no direct parallel); tried against the glossed letter I 243,18 (Brice Dudout's alignment, 14 Nov 2026): none of them occurs in it. Still workable from further glossed letters of the series (I 242,66 and others) once a transcription of them is available."
    },
    {
     "item": "Devos 1950 and any complete key sheet of the series",
     "blocker": "no-key-material",
-    "detail": "not seen by anyone"
-   },
-   {
-    "item": "the open codes were tried against the glossed letter I 243,18 (MdM 425791): none of them occurs in it",
-    "blocker": "open-codes",
-    "detail": "Brice Dudout's alignment, issue #499, 14 Nov 2026 (contributor/i243_18_dudout_alignment.txt); not compared with the image. The unglossed I 242,35, 59 and 60 are not transcribed."
+    "detail": "identified bibliographically by the contributor; no copy seen by anyone here"
    }
   ],
   "texts": [
@@ -226,10 +306,22 @@
     "reading": "reading.md",
     "language": "es",
     "state": "read in part",
-    "read_share": 0.886,
-    "summary": "Philip III learns that Dutch merchants are setting up a factory at Pinda on the coast of Angola, against the truce, and charges the Count of Añover to remedy it without sending anyone to the Islands, and to report.",
-    "translation": "translation.md"
+    "read_share": 0.865,
+    "summary": "Philip III learns that Dutchmen have gone to set up a factory at Pinda on the coast of Angola, against the truce, and charges the Count of Añover to remedy it without sending anyone to the Islands, and to report.",
+    "translation": "translation.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "AI language-model agent (for the project)",
+     "date": "2026-11-14",
+     "note": "decryption.txt and reading.md read as Spanish sentences against translation.md: the ten lines are one connected royal order (news of the Dutch at Pinda; the charge to remedy it; no person to be sent to the Islands; report back) and every clause holds. 12 of 89 words are holes (10 bracketed in the reading, 2 on an unsettled sign); they are scattered, and the sense of each is narrow, which is why grade A. Not compared with the manuscript."
+    },
+    "note": "Words 89; sure 77 (0.865). The 12 holes are listed in outcome.fraction_read_source."
    }
-  ]
+  ],
+  "codes_open": {
+   "open": 8,
+   "total": 74,
+   "tokens_open": 9
+  }
  }
 }
