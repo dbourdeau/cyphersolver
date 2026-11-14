@@ -93,9 +93,9 @@
    "claude-opus-5",
    "claude-opus-5-5"
   ],
-  "sessions": 3,
+  "sessions": 4,
   "first_date": "2026-09-19",
-  "last_date": "2026-10-14"
+  "last_date": "2026-11-13"
  },
  "solution": [
   {
@@ -195,7 +195,10 @@
    "kind": "verification",
    "what": "Reading audit (George Lasry's test: can a reader build coherent sentences and translate them?). texts/no68_decryption.md and reading68.md read: the decode is a stream of syllables with the three-letter word codes unread in most clauses; a few phrases are intelligible, no sentence can be built (docs/_check_reading.py: 0 of 3 and 14 of 30 sentences clean, the clean ones mostly the clear opening). Relabelled decoded, not read; class read in part -> not read, method read with known key -> not solved (key work kept as a part); fraction_read 0.375 -> 0.",
    "result": "failed",
-   "technique": ["language-model scoring", "statistical test"]
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
   },
   {
    "date": "2026-10-23",
@@ -214,21 +217,37 @@
    "kind": "crib",
    "what": "f. 130 decoded with keyM + 57 = li (b28_ibarra_dec.py) and aligned with its contemporary decipherment: alphabet and syllabary confirmed; values fixed: 64 ha, 63 he, 62 hi, 31 jo, 19 fa, 81 vi (h-, j-, f-rows of Tomokiyo's table), codes xen Infanteria, pun hombre, fon Flandes, dir Magestad, Vas senor, con fuerca; mon = gente and tel = exercito fit every occurrence where the clerk varied (flagged for review). The clerk left the other three-letter groups blank too.",
    "result": "worked",
-   "technique": ["crib testing"]
+   "technique": [
+    "crib testing"
+   ]
   },
   {
    "date": "2026-10-23",
    "kind": "reading",
    "what": "no. 68 decoded with the new values, marks re-read on the Gallica full image where needed; partial reading texts/no68_reading_b28.md (0.258 clean sentences, 0.355 explicit holes; before 0.000). Stays decoded, not read: ~30 three-letter code groups without value (no-key-material).",
    "result": "partial",
-   "technique": ["language-model scoring"]
+   "technique": [
+    "language-model scoring"
+   ]
   },
   {
    "date": "2026-10-24",
    "kind": "verification",
-   "technique": ["other"],
+   "technique": [
+    "other"
+   ],
    "what": "Method restored: key obtained by Tomokiyo's Feria-Mansfeld key, which cites this folio (read with known key); text not read, class stays not read. The 22-24 Oct reading audit had set the method to not solved because the class was not read; George Lasry (24 Oct 2026) separates the two.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "result": "partial",
+   "what": "Feria's own letter in the same cipher (fr. 3984 f. 143, 10 July 1593, 150 groups) transcribed in two passes and aligned with its contemporary decipherment f. 131v (texts/f143_feria_ct.txt, texts/f143_alignment.md): 89 = yu, 77 + loop = pli, len = grand-, mark ^ = -n, 64 = ha confirmed; by context ner = necesidad (2x) and gur = -mente (encarecidamente; no. 68 l. 20 abundantemente). no. 68 about 0.266 clean (from 0.258); still decoded, not read. No fresh portion exists for a measurement."
   }
  ],
  "outcome": {
@@ -274,7 +293,7 @@
   "texts": [
    {
     "doc": "no68",
-    "note": "Decoded, not read: re-read 23 Oct 2026 (b28). The sibling letter in the same key, Mansfeld to Feria 7 July 1593 (fr. 3984 f. 130), and its contemporary French decipherment (f. 131r-v) fix 64 = ha, 63 = he, 62 = hi, 31 = jo, 19 = fa, 81 = vi and the codes xen = Infanteria, mon = gente, pun = hombre, tel = exercito, fon = Flandes (texts/codes_b28.json); with them a third of no. 68's sentences build (partial reading texts/no68_reading_b28.md, 0.258 clean, 0.355 explicit holes). The rest break on ~30 three-letter code groups (pra x6, xur x3, gar, dur, var, tor, vis ...) that no table gives and that the 1593 decipherer also left blank. Blocker: no-key-material.",
+    "note": "Decoded, not read: re-read 23 Oct 2026 (b28). The sibling letter in the same key, Mansfeld to Feria 7 July 1593 (fr. 3984 f. 130), and its contemporary French decipherment (f. 131r-v) fix 64 = ha, 63 = he, 62 = hi, 31 = jo, 19 = fa, 81 = vi and the codes xen = Infanteria, mon = gente, pun = hombre, tel = exercito, fon = Flandes (texts/codes_b28.json); with them a third of no. 68's sentences build (partial reading texts/no68_reading_b28.md, 0.258 clean, 0.355 explicit holes). The rest break on ~30 three-letter code groups (pra x6, xur x3, gar, dur, var, tor, vis ...) that no table gives and that the 1593 decipherer also left blank. Blocker: no-key-material. 13 Nov 2026: f. 143 aligned with f. 131v adds 89 = yu, 77 = pi(+l), len = grand-, ner = necesidad, gur = -mente (texts/f143_alignment.md).",
     "label": "Diego de Ibarra, Paris, 10 July 1593, BnF fr. 3984 no. 68, f. 145",
     "transcription": "ct68.txt",
     "decryption": [

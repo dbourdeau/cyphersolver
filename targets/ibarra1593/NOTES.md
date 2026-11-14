@@ -113,3 +113,13 @@ transcription `ct68.txt`; sense count `sense68.tsv` (the no. 68 rows of sessa159
 Done 23 Oct 2026 (b28): f. 130 opened and used as a crib. Still possible: Feria's f. 143 cipher against its f. 131v
 decipherment would confirm the syllabary again but its codes ({pra}, {ner}, {cur} ...) are blank in the decipherment
 too; a nomenclature for this key has not been found.
+
+## 13 Nov 2026: f. 143 transcribed and aligned with its decipherment (contributed by bdudout)
+
+The "Next" item above is done: Feria's own letter of 10 July (f. 143, canvas 265), 150 cipher groups, transcribed
+in two passes (`texts/f143_feria_ct.txt`) and aligned with the clerk's decipherment on f. 131v
+(`texts/f143_alignment.md`, `texts/codes_f143.json`). From the period decipherment: 89 = yu, 77 + loop = pli,
+len = grand-, mark ª = -n; 64 = ha confirmed ("se hallase"). By context (probable, unmeasured): ner = necesidad
+(twice), gur = -mente ("encarecidamente"; in no. 68 l. 20 it gives "abundantemente"). pra stays open ("esperando a
+pra con grandisimo deseo"). no. 68 moves from 0.258 to about 0.266 clean; still decoded, not read. No fresh portion
+exists in this cipher for a measurement; the nomenclature remains the blocker.
