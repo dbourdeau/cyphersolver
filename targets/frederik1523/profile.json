@@ -32,7 +32,7 @@
         "source": "Arkivalieronline image 94 (id 41301914), full resolution crops",
         "corrections": 0,
         "image_quality": "good",
-        "notes": "First-pass transcription of the page (30 lines, 50 sign tokens, 15 sign types) made before the edition was found; its sign labels agree with the edition's Ch. numbers. The rest of item 8 (images 95-129) was not transcribed."
+        "notes": "First-pass transcription of the page (30 lines, 51 sign tokens, 15 sign types) made before the edition was found; its sign labels agree with the edition's Ch. numbers. The rest of item 8 (images 95-129) was not transcribed."
       },
       "read": "read"
     }
@@ -169,7 +169,8 @@
       "kind": "verification",
       "what": "Brice Dudout (Claude Opus 5.5): image 94 collated sign by sign with the apparatus of Hanserecesse III/8 n. 292 (verify_dudout_20261114.py): the edition gives 51 signs for K1 (image 94), the transcription has 51 labels; 50/51 agree, the one difference being the l. 10 sign already recorded; key.tsv values found in decryption_094.txt 51/51. Of the ten words given 'as printed', l. 29 <durchtheent> is not the printed text (L reads durchthendes; durchtheent is in a passage struck out in the drafts, note l*); decryption_094.txt corrected to <durchthendes>. v10 read_share 1.0 unchanged.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-11-14", "kind": "verification", "what": "Project check of PR #572 (Brice Dudout): his collation script re-run (51 K1 signs in the edition's apparatus, 51 labels in transcription_094.txt, 50 agree, the l. 10 sign being the known difference; 51 of 51 key values stand in the decryption). The count '50 sign tokens' of the transcription step is 51; the ciphertext note corrected. l. 29 checked in Hanserecesse III/8 n. 292 (PDF p. 345): the printed text has 'krygesvolk durchthendes', note a* gives 'knechte adir rutere' for K1; his correction of <durchtheent> to <durchthendes> stands. No key correction.", "result": "worked"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
