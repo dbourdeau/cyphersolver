@@ -44,3 +44,18 @@ the lines at the time. The writer is not yet identified.
 Transcribe the four letters with their glosses; align glossed codes to rebuild the nomenclator; identify the writer
 (Lars Nilsson Tungel is the first candidate, from the key list) and search series II of Oxenstierna's printed
 correspondence.
+
+## 14 Nov 2026: probable writer from Riksarkivet's catalogue (Brice Dudout's agents)
+
+Riksarkivet files Axel Oxenstierna's incoming letters by writer. Volume **E 708** is in two parts, both titled
+**"Salvius, Johan Adler"**: SE/RA/720701/II/01/B/I/E 708 A (data.riksarkivet.se record ucDQuPya1QLMUpVXdAiro7) and
+E 708 B (record 2hhZg3ZsE4zMgKbE9OaND7). The DECODE file names (Oxenstiernska_samlingen_E_708-1 ... -4) do not say A or
+B, but either way the letters of 8/18 and 27 June 1633 are most probably **Johan Adler Salvius's** (Swedish
+resident in Hamburg; the leaves are Swedish reports to the chancellor). Lars Nilsson Tungel, the first
+candidate above, has his own volume (E 744, "Tungel-Törnsköld"), so the Tungel 1633 key in the key list need not
+be this code. Not yet checked against the hand or a signature on the DECODE images.
+
+Both E 708 volumes are **analog only** at Riksarkivet (no digitised instantiation), so the DECODE photographs are
+still the only images. Next: look for a Salvius code among the Chifferklaver records and in printed Salvius
+correspondence (check whether Rikskanslern Axel Oxenstiernas skrifter och brefvexling, series II, prints
+Salvius's letters of 1633).
