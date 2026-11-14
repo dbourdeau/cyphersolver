@@ -101,7 +101,8 @@ Fragments only, grade M (probable) unless marked:
 ## What would finish it
 
 1. A sign-level transcription of the cipher passages on ff. 80r, 81, 88r, 92r and 96r–97r, from full-resolution
-   crops (the images are 7200×10200 px, so each passage can be cut at about 4× reading size).
+   crops (the images are 7200×10200 px, so each passage can be cut at about 4× reading size). Done: R8490 on 9 Nov 2026,
+   R8492, R8495, R8496 on 13 Nov 2026 (Brice Dudout, `dudout/frozen/R849*_chiffre.tsv`).
 2. Separate the two Λ forms (s/t) and the r/y signs from the glossed siblings, if they differ at all.
 3. Merge with cypher-7e's `harley287` key for R8477–R8487.
 4. Read the passages. The letters are in plain English and the context is known (Bourbourg talks, Armada news).
@@ -209,9 +210,10 @@ CSP Foreign vol. 21 pt 4 calendars Cobham letters of 1, 4, 9, 13, 24, 29 May and
 ## Remaining gaps
 
 - R8490 (ff. 80r-80v), decoded, not read: runs c∪ǂǂ8ϕ, WLϕΛ, Xd+c:·87, ∞7γǂǂcL and the 22/27 passage of ll. 31-34; codes 22, 27 and the square - blocker: no-key-material; W, the square, 22 and 27 are glossed in no sibling (R8481, R8488, R8489, R8493); the hostages passage and the f. 80v run now read (b13)
-- R8492 (f. 88r), decoded, not read: name after 'captain', words after 'haven of', ll. 3-11 and the cipher words of ll. 12-20 - blocker: no-key-material; signs K, ɔ/Q, upsilon, rho glossed nowhere; polyphonic signs leave several readings with nothing to choose between them
-- R8495 (f. 92r), decoded, not read: runs 92a-c and the ten cipher lines below "Dunkergh: 4 sent by" - blocker: no-key-material; same signs; solver finds no word with two edits
-- R8496 (f. 96v), decoded, not read: all runs but a few probable words - blocker: no-key-material; same signs; f. 97r is blank
+- R8492 (f. 88r), decoded, not read: 48 of 55 cipher words not sure after the 13 Nov 2026 pass (13 probable, 3 restored, 32 unresolved), among them the name after 'captain' and the words after 'haven of' - blocker: no-key-material; signs K, ɔ/Q, upsilon, rho glossed nowhere; polyphonic signs leave several readings with nothing to choose between them
+- R8495 (f. 92r), decoded, not read: 31 of 38 cipher words not sure after the 13 Nov 2026 pass (5 probable, 5 restored, 21 unresolved) - blocker: no-key-material; same signs; solver finds no word with two edits
+- R8496 (f. 96v), decoded, not read: 23 of 30 cipher words not sure after the 13 Nov 2026 pass (11 probable, 1 restored, 11 unresolved; "Earle of [Westmorland]" restored with three signs changed) - blocker: no-key-material; same signs; f. 97r is blank
+- R8492 clear text at ll. 3, 7, 8, 21: the 22 Oct and 13 Nov passes differ (texts/R8492_reading.md, last section) - blocker: needs-physical-access (DECODE full images need a login, refused on 14 Nov 2026)
 - Clear text of f. 96r (R8496) and the bracketed secretary-hand words of ff. 80, 88, 92, 96v - blocker: not-attempted; outside the cipher, not transcribed on 22 Oct 2026
 
 ## Escalation
@@ -221,6 +223,7 @@ CSP Foreign vol. 21 pt 4 calendars Cobham letters of 1, 4, 9, 13, 24, 29 May and
 - [x] known-keys: harley287 key and Bodley's R8497 key tried
 - [x] print: CSP Foreign vol. 21 pt 4 (Jan-June 1588): Harley 287 letters not calendared, no printed decipherment
 - [x] key-rebuild: candidate-set solver (solve.py, CSP 1588 word list) with solver loop 1: L = e, c = a, phi = p added
+- [x] retry (13 Nov 2026, PR #550): every cipher word of R8492, R8495, R8496 transcribed sign by sign in two passes, hashed, decoded with the frozen f. 78r key (Brice Dudout)
 - [x] retry (22 Oct 2026, b13): every run of ff. 80, 88, 92, 96v re-read on the 7,200 px images at 0.5-1.0x with the clear text transcribed round it; f. 80 relabelled (treaties, hostages, surety); f. 97r is blank, so nothing to add to runs.txt; partial readings in texts/
 
 ## Contribution, 9 Nov 2026 (Brice Dudout, with Claude): held-out test of the key, codes 22, 26, 27 and the square
@@ -236,3 +239,18 @@ begyn the openning of the [...]" (f. 80r) and "[22: Sir James Croft] hath a desi
 class is unchanged: R8490 is still decoded, not read.
 
 Second pass, 9 Nov 2026 (Brice Dudout, with Claude): every cipher word of R8490 ff. 80r-80v transcribed and hashed before decoding, then decoded with the frozen f. 78r key and a declared derived key: 35/43 cipher words read by sense (81%; 21 sure, 14 probable, 8 unresolved), 41/49 with the codes, below the 95% rule. New: Croft promised the Queen "to send to Bruges [27: Dr Dale]"; "yt will not be kept"; "treat of Breda"; "subiect". See `dudout/reading_R8490.md`.
+
+Third pass, 13 Nov 2026 (Brice Dudout, with Claude): the three remaining letters, every cipher word re-read on the DECODE images. Each passage of ff. 88r (R8492), 92r (R8495) and 96v (R8496) was transcribed sign by sign in two blind passes, arbitrated on the image and hashed before decoding (protocol frozen beforehand, `dudout/frozen/PREREG-B-R8492-R8495-R8496.md`), then decoded with the frozen f. 78r key plus declared derived values. Cipher words read by sense: R8492 20/55 (36%), R8495 12/38 (32%), R8496 18/30 (60%), all far below the 95% rule; the class is unchanged (decoded, not read). New words: R8492 "account", "a great [pension]", "the town … to 15 by means of our abode", "soldiers", "intelligence", "in France", "Winter would send money to their wives"; R8495 "inprisoned at Bridges (Bruges)" twice, "Ionson", "[leftenant]", "[preist]", agreeing on "ancient of Newport"; R8496 "treater", "written into England", "captan", and a weak "the Earle of [Westmorland]". Codes: no code in R8495 or R8496; in R8492 only 15 (Parma, glossed) and a dotted .V. (f. 88r l. 6) seen once, so no value could be proposed and measured on a second occurrence. Five clear-text points differ from texts/R8492_reading.md (ll. 3, 7, 8, 21) and are listed in the worksheets. See `dudout/reading_R8492.md`, `reading_R8495.md`, `reading_R8496.md`.
+
+**14 Nov 2026, verification and integration of PR #550.** All SHA-256 sums in `dudout/frozen/` match their files
+(the order of events rests on the contributor's record: no outside timestamp). `decode_cle_gelee.py` re-run on the three
+transcriptions and an own decoder written from `cle_R8489_f78r.tsv` + `cle_R8490_derivee.tsv` give the same raw decode
+on every passage (they differ only in how an isolated dot is shown). Counted strictly (sure words only; probable,
+restored and unresolved words are holes): R8492 7/55 = 13%, R8495 7/38 = 18%, R8496 7/30 = 23%; with R8490's 21/43 the
+four letters stand at 42/166 = 25%. The contributor's figures count the probable words too: 36%, 32%, 60% (85/166 =
+51% with R8490). The class is unchanged: decoded, not read. The DECODE full images were refused without a login (the
+file server returns an "insufficient permissions" placeholder; the thumbnail is 200 px), so the transcriptions and the
+four clear-text differences of R8492 (ll. 3, 7, 8, 21) were not checked on the image; they are listed with a decision
+each in `texts/R8492_reading.md` (l. 3 no change; ll. 7, 8, 21 open). The new readings that agree with ours (the
+haven, Italians, Antonio, divers, number of; R8495 Bruges, ancient of Newport; R8496 France, servant, priest) are not
+fully independent: the PREREG declares that NOTES.md and runs.txt were seen before transcription.

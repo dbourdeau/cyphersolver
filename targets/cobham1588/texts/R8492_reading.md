@@ -34,3 +34,17 @@ ys the Landers, with saddelles, bryddelles, bootes and spurres with [?] made rea
 * l. 6-7 `cl··7VΛcn` *[?divers]*; `n:·x··` *[?number] of*. Every other run of the page (`T7HLVTA`, `p7nATcn`, `7nIAIAT`,
   `Tnn HVcnnG`, `cp-IQ--V`, `TnnAVV`) gives no word with the glossed sign values; the 22 Oct look at the image did not
   change any reading. The clear text of the lower half is as read on 21 Sept, checked on the image.
+
+## Clear-text differences with the 13 Nov 2026 pass (Brice Dudout, PR #550), reviewed 14 Nov 2026
+
+The second reader's pass (`../dudout/reading_R8492.md`, worksheet `../dudout/frozen/LECTURE-R8492.md`, made at full
+resolution in two passes) reads four clear places differently. The DECODE image could not be re-opened on 14 Nov
+2026 (full images need a login; the thumbnail is 200 px), so none is settled on the image; the reading above is kept
+and each place is decided on what the two files show:
+
+| line | 22 Oct reading (above) | 13 Nov pass | decision on the evidence in hand |
+|---|---|---|---|
+| l. 3 | *there* to *[15]*. Of latte there ys | *ther* bo[struck word] 15 : of latte theyrs | no change: both have the cipher word *there* and the code 15 next; only the little clear word between differs |
+| l. 7 | […] to us by reason of our aboode | *the town* to 15 by m[ean]es of our aboade | open: "to 15" would repeat the promise to Parma of l. 3; "to us" also builds; needs the image |
+| l. 8 | There are coming of other Scottishmen | There are coming of other hethere | open: the two readings differ in whole letters; "Scotsmen" is no longer quoted as read |
+| l. 21 | *[…]* and *[…]* worde[s]; send money to them by such | and *{Winter}* woolde send mony to theyr wyfes | open: our line carries a supplied letter, theirs a probable cipher word; needs the image |

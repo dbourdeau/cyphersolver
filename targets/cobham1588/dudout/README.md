@@ -66,3 +66,12 @@ Word table, classes and passages: `reading_R8490.md` (the French working file is
 - Sign distinctions: the small closed o = d (not ∞'s twin), the barred-c sign = o, d = o throughout.
 - Unresolved: l. 9 (where forces are drawn from), l. 10 "...ances", l. 12 the state of the haven, l. 19 the verb
   ("to [...] ther surti"), l. 33 two words, l. 34 the mayor of [...].
+
+## 13 Nov 2026: R8492, R8495, R8496
+
+- Protocol: `frozen/PREREG-B-R8492-R8495-R8496.md` (frozen before any transcription; SHA-256 in the `.sha256` file). Two blind sign-level passes per letter, arbitrated on the image without decoding, hashed in `frozen/PREREG-B.addendum-B1-<R>.md`; R8495 has one post-hash correction (· Y read W, giving Newport), declared in `frozen/PREREG-B.addendum-B1-R8495-corr.md`.
+- Decoder: `frozen/decode_cle_gelee.py` (frozen keys `frozen/cle_R8489_f78r.tsv`, `frozen/cle_R8490_derivee.tsv`). The version used for the first raw decodings split {a|b} hesitations at the word bar; those passages were decoded by hand in the worksheets; the copy here is fixed (same keys, same logic).
+- Derived values, not measured against a control: `frozen/cle_R8492_derivee.tsv`, `frozen/R8495_cle_derivee.tsv`, `frozen/R8496_cle_derivee.tsv` (grades A/B/C, attestations by id). L = p gains three attestations (captein, inprisoned, preist).
+- Readings: `reading_R8492.md` (36%), `reading_R8495.md` (32%), `reading_R8496.md` (60%): read in part, class unchanged. French worksheets with word-by-word justification: `frozen/LECTURE-<R>.md`.
+- Codes: only the dotted .V. of f. 88r l. 6 is new, and it occurs once; nothing measured.
+- No DECODE image or crop is in this folder.
