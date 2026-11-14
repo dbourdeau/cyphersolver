@@ -929,7 +929,15 @@ def press_html():
     def link(x):
         tip = ' title="' + html.escape(x['title'], quote=True) + '"' if x.get('title') else ''
         lang = f' hreflang="{x["lang"]}"' if x.get('lang') else ''
-        return f'<a href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>{html.escape(x["outlet"])}</a>'
+        name = html.escape(x.get('label') or x['outlet'])
+        # a logo (a file in docs/) stands for the name when the entry has one and the file is there; it is drawn in the
+        # hero's ink unless "logo_colours" keeps its own colours (a logo that is a filled box would become a blank one)
+        logo = x.get('logo')
+        if logo and (HERE / logo).exists():
+            cls = 'lg' if x.get('logo_colours') else 'lg mono'
+            return (f'<a class="haslogo" href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>'
+                    f'<img class="{cls}" src="{html.escape(logo, quote=True)}" alt="{name}" loading="lazy"></a>')
+        return f'<a href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>{name}</a>'
     return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in items)
             + '</p>\n<!-- press:end -->')
 

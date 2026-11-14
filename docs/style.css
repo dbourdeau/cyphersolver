@@ -1625,6 +1625,12 @@ html.fs-lock{overflow:hidden}
 .hero .seen span{margin-right:.5rem;font-size:var(--fs-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .hero .seen a{color:var(--ink);font-weight:600;border:0;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:.2em}
 .hero .seen a:hover{color:var(--gold2)}
+.hero .seen{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem .5rem}
+.hero .seen span{margin-right:.2rem}
+.hero .seen a.haslogo{display:inline-flex;align-items:center;text-decoration:none;opacity:.85}
+.hero .seen a.haslogo:hover{opacity:1}
+.hero .seen .lg{display:block;height:1.15rem;width:auto;max-width:7.5rem}
+.hero .seen .lg.mono{filter:brightness(0) invert(.93) sepia(.25)}
 .hero:has(.ms-bg) .hero-media{min-height:11.5rem;padding:1rem 1.2rem;border:1px solid rgba(246,234,208,.18);border-radius:var(--radius);background:rgba(24,15,7,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .hero:has(.ms-bg) .cipherstrip{margin:0}
 .ms-credit{margin:.9rem 0 0;text-align:right;font:var(--fs-xs) var(--ui);letter-spacing:.04em}
