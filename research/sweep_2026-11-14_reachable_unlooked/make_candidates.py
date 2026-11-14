@@ -1,0 +1,221 @@
+"""Builds candidates.json and key_leads.json for the 14 Nov 2026 sweep of GStA PK's own database (ACTApro) and BU ArchivesSpace.
+
+Every row is scored from the finding-aid text only (seen: catalogue). Item ids are the ACTApro permalink ids
+(https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++<uuid>).
+"""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = 'GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), reachable-unlooked sweep, 14 Nov 2026'
+SCORE = ('Scored from the ACTApro finding-aid text during the 14 Nov 2026 sweep '
+         '(research/sweep_2026-11-14_reachable_unlooked/); not viewed')
+PRIOR = ('open as far as checked (14 Nov 2026): known.py on the fonds, number and correspondents (catalogue, leads, targets, '
+         'DECODE and HCPortal dumps) finds nothing on this shelfmark; the Archivportal-D sweeps of 26 Oct and 2 Nov did not '
+         'list it; no web, Tomokiyo or Lasry search made in this sweep')
+ACCESS = ('description only in ACTApro; digitisation not checked (the record page shows digital objects when there are any); '
+          'scans must be ordered from GStA PK, Berlin-Dahlem, or the file consulted in the reading room')
+
+
+def link(label, uuid):
+    return {'href': 'https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++' + uuid, 'label': label}
+
+
+R = []
+
+
+def add(**kw):
+    kw.setdefault('source', SRC)
+    kw.setdefault('score_note', SCORE)
+    kw.setdefault('prior_art', PRIOR)
+    kw.setdefault('seen', 'catalogue')
+    kw.setdefault('needs_archive_scan', 'yes')
+    kw.setdefault('access_note', ACCESS)
+    R.append(kw)
+
+
+add(year=1705, date='1694-1713', language='French and German (not stated)', region='Other', period='1701-1800',
+    title="Neuchatel succession and 'Negotiation' files: reports of Prussian and allied agents 'teils chiffriert mit Entzifferung' (deciphered copies filed with the ciphertext)",
+    correspondents="Count Ernst von Metternich (Prussian commissioner), Emer de Montmollin, the Bondeli brothers, Spanheim (London), Strunckede and others -> Frederick I of Prussia / the Prussian court",
+    place='Neuchatel / Berne / Regensburg / London',
+    shelfmark='GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 686, 695-706, 713, 750, 752, 969',
+    folio_note="Finding aids read 'teils chiffriert mit Entzifferung' / 'chiffriert, mit Entzifferung' for each volume (Nr. 695 also mentions a Chiffrierung dated 30 Jan 1705). 21 volumes, ciphered reports of 1694-1724",
+    cls='A',
+    status="Finding aid as quoted; no decipherment published that the sweep found. Each volume files the contemporary Entzifferung beside the ciphered letter, so the plaintext is in the same volume.",
+    why="Prussia took over the principality of Neuchatel in 1707 (the Orange succession); the agents' ciphered letters come with their contemporary deciphered copies, a large known-plaintext set from one chancery, with several correspondents and so several keys.",
+    importance=3, solvability=4, difficulty=2,
+    verify="Order Nr. 695, 699 and 701 (three correspondents); check whether each ciphertext has its Entzifferung on the facing sheet; if so, build the key per correspondent from the pairs.",
+    links=[link('Rep. 64 Nr. 695', 'cfcfccc1-23f5-5ffe-bc20-9325009541e5'), link('Rep. 64 Nr. 699', 'ad3f89f4-4ba7-5f75-91d3-ca5d2676e4dc'), link('Rep. 64 Nr. 701', '14b24e3f-3af5-5f80-9cba-0cc3454eff08'), link('Rep. 64 Nr. 969', 'b4a04072-bff8-5cbc-873c-92a1994670f2')])
+
+add(year=1707, date='1690-1729', language='French and German (not stated)', region='Other', period='1701-1800',
+    title="Neuchatel succession and administration files: Metternich's relations, royal rescripts and agents' reports 'teils chiffriert' (no decipherment mentioned)",
+    correspondents="Metternich, Montmollin, the Bondeli brothers, Dupuy, Spanheim, Strunckede, J. L. Choupard -> Frederick I / Frederick William I of Prussia",
+    place='Neuchatel / Berlin', shelfmark='GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 692-694, 707-710, 715, 717, 718, 732, 753, 760, 799, 935, 944, 945, 951, 959, 966, 995',
+    folio_note="'teils chiffriert' / 'teilsweise chiffriert' / 'gelegentlich chiffriert'; Nr. 718 'teils chiffrierte', Nr. 732 'chiffrierte Namen', Nr. 944 'chiffriert' agents' reports. Nr. 769 (1737) sends a new cipher for the secret correspondence",
+    cls='C',
+    status="Finding aid as quoted. The volumes next door (Nr. 686, 695-706) file Entzifferungen; these do not say so and may carry only the ciphertext, or may carry the same alongside.",
+    why="Same Prussian-Neuchatel ciphers as the row above, wider spread (1690-1737, Frederick I's own rescripts partly ciphered), so a plaintext set from the neighbour volumes can be tested on these.",
+    importance=3, solvability=3, difficulty=3,
+    verify="Order Nr. 944 and 951 (royal rescripts, Ausfertigungen) and compare with the Entzifferung volumes.",
+    links=[link('Rep. 64 Nr. 692', '9db40c06-a43f-59e4-907f-b18da1640cb5'), link('Rep. 64 Nr. 944', 'a5388712-1413-5180-8eed-e954fb9c7f26'), link('Rep. 64 Nr. 951', '0a0ff7a7-4cdf-5f6a-8050-eb5ef023d523'), link('Rep. 64 Nr. 769', 'c52513f9-bda9-5aa9-91c8-3c32a10f0f89')])
+
+add(year=1722, date='1717-1759', language='French and German (not stated)', region='Other', period='1701-1800',
+    title="Neuchatel administration files 1717-1759: reports 'chiffriert und entziffert' (Le Chambrier from Paris, Strunckede, Sellentin and others)",
+    correspondents="Le Chambrier (Paris), De Perrot, Strunckede, Karl August Sellentin, Froment and others -> Frederick William I / Frederick II of Prussia",
+    place='Neuchatel / Paris / Berlin', shelfmark='GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 725, 726, 733, 741, 742, 747, 748, 757, 764, 783, 787, 828',
+    folio_note="'chiffriert und entziffert' (Nr. 741, 742, 747, 748, 757, 764), 'teils dechiffriert' (Nr. 725, 726, 733), 'nicht entziffert' (Nr. 783, 787); Nr. 828 (1758) a ciphered message 'teils entziffert'",
+    cls='A',
+    status="Finding aid as quoted. Several pieces carry the deciphered version; Nr. 783 and 787 are explicitly not deciphered.",
+    why="Later part of the same Prussian-Neuchatel series; Nr. 783 (1723) and Nr. 787 (1743-44) hold ciphertext with no decipherment, a test for a key rebuilt from the paired letters.",
+    importance=3, solvability=4, difficulty=2,
+    verify="Order Nr. 783 and 787 first (the undeciphered ones), then Nr. 764 (Le Chambrier, Paris).",
+    links=[link('Rep. 64 Nr. 783', 'db2c1834-2ff0-5659-af8d-f764b18fc83a'), link('Rep. 64 Nr. 787', '70f4e874-eea1-5488-81b1-67e3e6028570'), link('Rep. 64 Nr. 764', '9a68be9d-f131-5177-b2fd-af04c3ea1f64'), link('Rep. 64 Nr. 828', '624626e0-9446-54e6-b4c5-4dbc6abad135')])
+
+add(year=1674, date='1674', language='German (probable)', region='Germany', period='1651-1700',
+    title="Field Marshal Georg von Derfflinger's reports from The Hague, 1674, 'z. T. chiffriert'",
+    correspondents='Georg von Derfflinger (The Hague) -> Elector Frederick William of Brandenburg', place='The Hague',
+    shelfmark='GStA PK, I. HA Rep. 34, Nr. 5876', folio_note="Part of the file 'Entsendung des Feldmarschalls Georg von Derfflinger'; reports of 1674 'z. T. chiffriert'",
+    cls='C', status='Finding aid as quoted; no decipherment mentioned.',
+    why="Brandenburg's Dutch-alliance diplomacy in the Franco-Dutch War; a Brandenburg field marshal's cipher with no key or sibling known here.",
+    importance=3, solvability=2, difficulty=3, verify='Order the file; count the ciphered reports; look for a key in the Rep. 34 series (Nr. 7048 of 1747 concerns new ciphers, a different period).',
+    links=[link('Rep. 34 Nr. 5876', '6796cb74-ad20-5db8-bb85-22a807a03efc')])
+
+add(year=1676, date='23-25 July 1676', language='Swedish or German (not stated)', region='Scandinavia', period='1651-1700',
+    title="King Charles XI of Sweden to a field marshal, 23-25 July 1676: 'chiffriert, inklusive entschluesselte Abschrift' (cipher letter with a deciphered copy)",
+    correspondents='Charles XI of Sweden -> a Swedish field marshal (name cut off in the listing seen)', place='Swedish army, Scania/Pomerania (not stated)',
+    shelfmark='GStA PK, BPH Rep. 35, Nr. 104', folio_note="Title reads '(chiffriert, inklusive entschluesselte Abschrift)'", cls='A',
+    status='Finding aid as quoted; the deciphered copy is filed with the ciphertext.',
+    why="A Swedish royal cipher letter of the Scanian War with its contemporary decipherment, in a Prussian house archive (probably an intercept or a copy passed to Brandenburg); crib-rich and short.",
+    importance=3, solvability=4, difficulty=2, verify='Open the record for the recipient and the number of sheets; compare with the Riksarkivet Karl XI ciphers.',
+    links=[link('BPH Rep. 35 Nr. 104', 'c2c13e74-0d9b-51c2-9384-c637f3a89382')])
+
+add(year=1743, date='28 Sept 1743', language='German', region='Scandinavia', period='1701-1800',
+    title="Cabinet order (ciphered) to Count Karl Wilhelm Finck von Finckenstein, Prussian envoy at Copenhagen, 28 Sept 1743",
+    correspondents='Frederick II -> Karl Wilhelm Finck von Finckenstein', place='Potsdam / Copenhagen',
+    shelfmark='GStA PK, I. HA Rep. 81 Kopenhagen, Nr. 254 (keys in Nr. 1 and Nr. 4 of the same legation fonds)',
+    folio_note="Title 'Kabinettsordre (chiffriert)'. Rep. 81 Kopenhagen Nr. 1 is 'Chiffren fuer die Gesandtschaft', ca. 1735; Nr. 4 'Chiffren fuer Ernst Idel Jobst von Vincke', 1768",
+    cls='B', status='Finding aid as quoted; one ciphered order, with the legation keys in the same fonds.',
+    why="A single Prussian cabinet-order cipher with the Copenhagen legation keys filed in the same fonds; a clean small test of the 1730s-40s Prussian cipher family (compare the Frederick II orders already catalogued).",
+    importance=2, solvability=3, difficulty=2, verify='Order Nr. 254 with Nr. 1 together; check which cipher the order uses.',
+    links=[link('Rep. 81 Kopenhagen Nr. 254', '4e3ce5c4-fa11-5c94-9d0d-a3a5378a34f9')])
+
+add(year=1757, date='1756-1763', language='German', region='Germany', period='1701-1800',
+    title="Frederick II to various commanders during the Seven Years' War, some orders 'chiffriert' (e.g. to General Ziethen, Lobendau, 27 Nov 1757)",
+    correspondents='Frederick II -> Generals Ziethen, C. Chr. von ... and other commanders', place='Silesia / Saxony',
+    shelfmark='GStA PK, I. HA Rep. 94, Nr. 5745', folio_note="Contents list marks single orders '(chiffriert)'; the list is cut off in the listing seen",
+    cls='C', status='Finding aid as quoted; the number of ciphered orders is not stated.',
+    why="Frederick II's own ciphered orders in the field in 1757; compare the Bevern/Schwerin ciphers already in the catalogue (entry 590), whose key may carry over.",
+    importance=3, solvability=2, difficulty=3, verify="Open the full contents list; count the '(chiffriert)' items; compare with catalogue 590.",
+    links=[link('Rep. 94 Nr. 5745', '8d9e075d-ebb3-5bb4-9dcb-50673e9ffbc6')])
+
+add(year=1761, date='1761-1762', language='German or French (not stated)', region='Germany', period='1701-1800',
+    title="Ciphered correspondence concerning the envoy Gottfried Fabian Haude under an assumed name, 1761-62",
+    correspondents='Gottfried Fabian Haude (Prussian agent) <-> the Prussian cabinet', place='not stated',
+    shelfmark='GStA PK, I. HA Rep. 11 Akten, Nr. 10646', folio_note="Title: 'Chiffrierte Korrespondenz betr. den Gesandten [Gottfried Fabian] Haude unter dem Namen Karl Adolf ...' (name cut off in the listing seen)",
+    cls='C', status="Finding aid as quoted. A whole file titled as ciphered correspondence.",
+    why="A file whose whole title is ciphered correspondence, in the last years of the Seven Years' War, about an agent operating under a cover name; no key or decipherment known here.",
+    importance=3, solvability=2, difficulty=3, verify='Read the full title and date range on the record; order the file.',
+    links=[link('Rep. 11 Akten Nr. 10646', '800a54fb-82c5-5839-93ac-0c6877c49d4e')])
+
+add(year=1571, date='1571', language='Spanish (probable)', region='Other', period='1560-1589',
+    title="Mary Stuart, Queen of Scots, to [Thomas Howard, Duke of Norfolk?] and Philip II of Spain: a secret report, 'Dechiffrierung und Uebersetzung' filed with it",
+    correspondents='Mary Stuart (via the Ridolfi plot?) -> Philip II (listing cut off)', place='England / Spain',
+    shelfmark='GStA PK, I. HA Rep. 11 Akten, Nr. 10019', folio_note="Title ends '... Philipp [II.] von Spanien (Dechiffrierung und Uebersetzung eines Geheimberichts)'",
+    cls='A', status='Finding aid as quoted; the decipherment and a translation are filed with the ciphertext. Whether the original cipher sheet is in the file is not stated.',
+    why="A 1571 secret report of the Mary Stuart / Ridolfi affair in a Prussian archive, with its deciphered form; may duplicate a Simancas or Hatfield text.",
+    importance=3, solvability=3, difficulty=2, verify='Open the record for the full title; check the Calendar of State Papers Spanish and Scottish for the same text; compare with the Mary Stuart ciphers already in the catalogue.',
+    links=[link('Rep. 11 Akten Nr. 10019', '4ae95c3b-604e-4c20-87d4-75240219c4a8')])
+
+add(year=1790, date='Aug-Nov 1790', language='German or French (not stated)', region='Other', period='1701-1800',
+    title="Count Spiridion Lusi, reports during his mission, Aug-Nov 1790, ciphered",
+    correspondents='Spiridion Graf von Lusi -> Frederick William II / Hertzberg (not stated)', place='not stated (a Prussian mission, 1790)',
+    shelfmark='GStA PK, VI. HA, FA Lusi, v., Nr. 3', folio_note="Contents shows '(chiffriert)'; the mission and recipient are cut off in the listing seen",
+    cls='C', status='Finding aid as quoted.',
+    why="Prussian diplomatic reports of the Reichenbach-Sistova year (1790) in cipher, from a family archive; no key known here.",
+    importance=2, solvability=2, difficulty=3, verify='Read the full record: place of the mission, recipient, number of ciphered reports.',
+    links=[link('FA Lusi Nr. 3', '59cb4f28-dcfa-5c9a-87d5-b1c1579edfcc')])
+
+add(year=1756, date='1756', language='German or French (not stated)', region='Scandinavia', period='1701-1800',
+    title="Three ciphered letters of Queen Louisa Ulrika of Sweden to her brother (Prince August Wilhelm of Prussia's papers), 1756",
+    correspondents='Louisa Ulrika of Sweden -> her brother (Frederick II or August Wilhelm)', place='Stockholm / Berlin',
+    shelfmark='GStA PK, BPH Rep. 56 I, J, Nr. 23', folio_note="'Enthaelt auch: Drei chiffrierte Briefe der Koenigin Ulrike von Schweden an ihren Bruder'",
+    cls='B', status="Finding aid as quoted. Related: catalogue 590 holds Frederick II's ciphered letters to Ulrike (Nl Schweden Nr. 3); the Riksarkivet Lovisa Ulrika K 259 volume carries her 1764-66 ciphers.",
+    why="Three letters, the 1756 conspiracy year (the Swedish coup attempt of 1756), in the queen's own cipher with her brother; sits between the Prussian side already catalogued and the Swedish side (K 259).",
+    importance=3, solvability=3, difficulty=2, verify='Order the file; compare the cipher with the Lovisa Ulrika K 259 tables and with catalogue 590.',
+    links=[link('BPH Rep. 56 I,J Nr. 23', '9dd4d21e-7fd9-4e77-83f9-d93c5ad2a0fd')])
+
+add(year=1811, date='1810-1813', language='German', region='Germany', period='1801-1900',
+    title="Scharnhorst's seven ciphered letters to Boyen, 1810-13 (23 letters to Boyen and four drafts in all)",
+    correspondents='Gerhard von Scharnhorst -> Hermann von Boyen', place='Berlin / Breslau',
+    shelfmark='GStA PK, VI. HA, Nl Boyen, H. L. L. G. v., d. Ae., Nr. 648', folio_note="Title: 'Scharnhorst, 23 Schreiben an Boyen, vier an Scharnhorst (Konzepte), sieben chiffrierte Schreiben'",
+    cls='C', status="Finding aid as quoted. Boyen Nr. 468 holds a Frederick-the-Great-period 'Chiffre' (1778) copied in secret, a different period.",
+    why="Seven ciphered letters of the Prussian army reformers in the secret rearmament of 1810-13, between two named men; the key may be in the Boyen or Scharnhorst papers.",
+    importance=4, solvability=3, difficulty=3, verify='Order Nr. 648; check the Boyen memoirs (Nachlass) and the Scharnhorst Briefe edition (Lehmann, Linnebach) for the ciphered letters being printed deciphered.',
+    links=[link('Nl Boyen Nr. 648', '10125ba8-5303-540e-873e-2401377cf3f8')])
+
+add(year=1811, date='1810-1812', language='French and German (not stated)', region='Germany', period='1801-1900',
+    title="Kingdom of Westphalia: envoy reports at Berlin 1810-12, ciphered copies, and 'chiffrierte Berichte' of 1811",
+    correspondents="Westphalian envoy at Berlin (Baron ..., cut off) <-> Kassel", place='Berlin / Kassel',
+    shelfmark='GStA PK, V. HA, Koenigreich Westphalen, Nr. 304 and Nr. 393', folio_note="Nr. 304: 'enth. nur: z.T. chiffrierte Abschriften' (1810-12, Gesandtschaftsberichte Bd. 1); Nr. 393 (1811, Presseangelegenheiten): 'chiffrierte Berichte an den westphaelischen Gesandten in Berlin'",
+    cls='C', status='Finding aid as quoted.',
+    why="Napoleonic client-state diplomacy in cipher; a Westphalian cipher is not in the catalogue.",
+    importance=3, solvability=2, difficulty=3, verify='Open both records; check whether the Westphalian Staatsarchiv Marburg or the French Quai d Orsay holds the key.',
+    links=[link('V. HA Westphalen Nr. 304', '4bfe6d09-0a0b-55ed-93f2-923245e067ce'), link('V. HA Westphalen Nr. 393', '3ecef4d9-20bd-50f8-a7b5-24d48a446d8e')])
+
+add(year=1519, date='1519-1520', language='German', region='Germany', period='1497-1559',
+    title="Grand Master Albrecht of Prussia's letters in cipher, 1519-20: Nr. 22442 (use of ciphers), Nr. 22687 (ciphered letter with a transcription, a ciphered slip of news), Nr. 23213 (Margrave Kasimir asks for a cipher alphabet to decipher a letter)",
+    correspondents='Grand Master Albrecht von Brandenburg-Ansbach -> Dietrich von Schoenberg; Margrave Kasimir -> the Grand Master', place='Koenigsberg / Cracow',
+    shelfmark='GStA PK, XX. HA, OBA, Nr. 22442, 22687, 23213',
+    folio_note="Nr. 22687 (1 Oct 1519): 'Chiffren, mit Uebertragung. Auch Entwurf u. Abschrift. 1 Zettel (Chiffren)'. Not in the catalogue's OBA rows 530, 554, 555 (which list Nr. 20039, 21069, 22448, 22472, 22473, 22490 and others)",
+    cls='A', status="Finding aid as quoted. Siblings of catalogue entries 530-555 (the Teutonic Order cipher letters of 1514-20); Nr. 22687 files its transcription beside the cipher.",
+    why="Three further pieces of the Teutonic Order cipher series already catalogued; Nr. 22687 comes with its Uebertragung, a plaintext pair for the Albrecht-Schoenberg cipher.",
+    importance=3, solvability=4, difficulty=2, verify='Fold into the catalogue 530/554/555 set if the cipher is the same; Nr. 23213 may hold the alphabet.',
+    links=[link('OBA Nr. 22442', '897b791c-056c-544d-9a8f-8b104801421f'), link('OBA Nr. 22687', 'b02f4e6c-8b99-5a1b-9ae1-2df1fe86e3b3'), link('OBA Nr. 23213', 'b6853bb3-9252-547c-a85a-3bcd7a12a1fd')])
+
+add(year=1779, date='ca. 1777-1781', language='German', region='Germany', period='1701-1800',
+    title="Johann Christoph von Woellner's notebook of notes on places and persons, partly encrypted, ca. 1777-81",
+    correspondents='Johann Christoph Woellner (note-book)', place='Berlin / Prussia',
+    shelfmark='GStA PK, VI. HA, Nl Woellner, J. C. v., Nr. 6', folio_note="'Notizheft mit Angaben zu verschiedenen Orten und Personen (z. T. verschluesselt)'",
+    cls='C', status='Finding aid as quoted. One notebook, partly enciphered.',
+    why="The notebook of the Rosicrucian minister of Frederick William II (the Gold- und Rosenkreuzer circle) with enciphered entries; a personal cipher, short, no key known.",
+    importance=3, solvability=2, difficulty=3, verify='Open the record for the size; check Rosicrucian literature (Lenning, Geffarth) for a cipher key.',
+    links=[link('Nl Woellner Nr. 6', '21a70622-d7ea-5b30-a6c4-7eb14c4ca5ce')])
+
+add(year=1806, date='1803-1813', language='German', region='Germany', period='1801-1900',
+    title="Letters from the papers of Ludwig Graf zu Dohna, 1803-13, with a cipher key (Chiffrenschluessel) filed among them",
+    correspondents='Ludwig zu Dohna, his sister Christiane, Amalia and others', place='Prussia',
+    shelfmark='GStA PK, VI. HA, FA Dohna (-Finckenstein), Nr. 51', folio_note="Contents list names 'einen Chiffrenschluessel' beside a letter of 22 Dec 1803 (cut off in the listing seen)",
+    cls='B', status='Finding aid as quoted; the number of ciphered letters is not stated.',
+    why="A family correspondence from the Prussian reform circle with its own cipher key in the file; short.",
+    importance=2, solvability=3, difficulty=2, verify='Open the record; check how many letters are enciphered.',
+    links=[link('FA Dohna Nr. 51', '1b5ae905-622d-5d97-9d3a-6a200bdc1306')])
+
+add(year=1562, date='1559-1563', language='Spanish', region='England', period='1560-1589',
+    title="Bishop Alvaro de la Quadra (Spanish ambassador in London), ciphered letters to Philip II and Margaret of Parma: the 'Cuadra Cypher' working file in Jorge Gonzalez's papers, with the Simancas citations",
+    correspondents='Alvaro de la Quadra, bishop of Aquila -> Philip II; -> Margaret of Parma', place='London',
+    shelfmark="Boston University School of Theology Archives, Gonzalez, Jorge papers (THE-03-067), Box 5, Folders 57-131 ('Cuadra Cypher File', Folder 131); cipher letters at AGS Estado 812, 815, 816 (e.g. Estado 816:85 'Cuadra (Cifrado)', 27 Jan 1563)",
+    folio_note="Box 5 has one folder per Simancas letter ('Simancas - Estado 815:197. Cuadra al Rey. Londres, 10 Enero 1562' and others); the same collection has a 1981-82 paper 'The Quadra Cipher' (Sixteenth Century Studies Conference), Box 1 Folder 16. Collection 5 linear feet, finding aid by Stacey Duran",
+    cls='B', status="Finding aid as quoted. Gonzalez worked on the cipher in 1981-82, so a decipherment may exist in the collection or the paper; Quadra's letters were also calendared deciphered (CSP Spanish, Elizabeth, vol. 1, 1892). A prior reading is probable.",
+    why="A British-Spanish ambassador's cipher of the early Elizabethan years with a modern researcher's working file in Boston (the Boston gap of COVERAGE); the originals at Simancas are digitised on PARES.",
+    importance=3, solvability=3, difficulty=2, verify="Find the 1981-82 paper and any decipherment; compare with the CSP Spanish printing; if the cipher is already read, close the lead as a key lookup. Ask BU STH Archives for Box 5 Folder 131 and Box 1 Folder 16.",
+    links=[{'href': 'https://archivesspace.bu.edu/repositories/2/archival_objects/5201', 'label': 'BU: Cuadra Cypher File'}, {'href': 'https://archivesspace.bu.edu/repositories/2/archival_objects/4890', 'label': 'BU: The Quadra Cipher (1981-82)'}, {'href': 'https://archivesspace.bu.edu/repositories/2/resources/117', 'label': 'BU: Gonzalez, Jorge collection'}],
+    source='BU ArchivesSpace (archivesspace.bu.edu, through Chrome), reachable-unlooked sweep, 14 Nov 2026',
+    score_note='Scored from the BU ArchivesSpace finding aid during the 14 Nov 2026 sweep; not viewed',
+    prior_art=PRIOR.replace('GStA', 'BU').replace('the Archivportal-D sweeps of 26 Oct and 2 Nov did not list it; ', '') + "; Quadra's Spanish calendar printing and the 1981-82 paper not read",
+    access_note='description only on BU ArchivesSpace; the Simancas originals are on PARES (not checked here)')
+
+with open(os.path.join(HERE, 'candidates.json'), 'w', encoding='utf-8') as fh:
+    json.dump(R, fh, ensure_ascii=False, indent=1)
+
+K = [
+    {'title': 'Prussian diplomatic ciphers 1806-1820 (III. HA MdA, I and ZB): about 30 files titled Chiffren, e.g. ZB Nr. 73/1-73/7 (1806-1809), I Nr. 2698, 3777-3780, 4207, 4387, 4824-4826, 5801, 7027, 7195/1 (1808-1815), 1856 (Bundestag 1817), ZB Nr. 109-110, 712, I Nr. 5168 (1808)',
+     'shelfmark': 'GStA PK, III. HA MdA', 'note': 'Key tables for the Prussian legations and the king\'s correspondence in the Napoleonic years; no ciphertext in these files; the ciphered reports sit in the Rep. 81 legation fonds. Held by ACTApro description only.'},
+    {'title': "Legation keys: Rep. 81 Kopenhagen Nr. 1 (ca. 1735) and Nr. 4 (1768, Vincke), Rep. 81 London Nr. 60 (1755) and Nr. 67a (1757), Rep. 81 Koeln Nr. 1 (1737), Rep. 41 Nr. 145 (1747), Rep. 34 Nr. 7048 (1747, Ammon), Rep. 96 Nr. 1 D (1736), Rep. 11 Nr. 983 (1794, Doenhoff), Nl Lucchesini Nr. 41 (1794, 'Chiffre chiffrant et dechiffrant'), I. HA Rep. 74 Nr. 5099 (1811, Staatskanzler)",
+     'shelfmark': 'GStA PK, I. HA Rep. 81 / 41 / 34 / 96 / 11 / 74', 'note': 'Key-only items; useful for the Frederick II era ciphers (catalogue 590) and the 1790s.'},
+    {'title': "Livonian, Danish and Ducal Prussian ciphers 1520-1648 (XX. HA, EM 19 a, Nr. 66 'Livlaendische und daenische Chiffren' 1520-1538; Nr. 67 'Chiffren aus der Zeit Herzog Albrechts'; Nr. 69; Nr. 70 'Chiffren zu geheimen Relationen' 1648)",
+     'shelfmark': 'GStA PK, XX. HA, EM 19 a, Nr. 66, 67, 69, 70', 'note': "Keys for the Teutonic Order / Ducal Prussia cipher letters (catalogue 530-555 and this sweep's OBA row)."},
+    {'title': "Key for coded writings in the Heunisch case, 1839 (Apothekergehilfe Max Joseph Heunisch, Burschenschaft prosecution): 'Enthaelt nur: Geheimschluessel fuer kodierte Schriften'",
+     'shelfmark': 'GStA PK, I. HA Rep. 97, Nr. 5261', 'note': 'Key only; related Burschenschaft ciphers: Rep. 77 Tit. 18 Nr. 3 Bd. 5 (1834, Halle, "Pereat [Chiffre]").'},
+]
+with open(os.path.join(HERE, 'key_leads.json'), 'w', encoding='utf-8') as fh:
+    json.dump(K, fh, ensure_ascii=False, indent=1)
+print(len(R), 'rows,', len(K), 'key leads')
