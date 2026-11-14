@@ -1,7 +1,7 @@
 # British and South African holdings, Africa slant (14 Nov 2026)
 
 Run by a Claude Code sweep agent (Claude Sonnet 5.5) for the project, 14 Nov 2026, about 1 h wall clock of the 4 h allowed; stopped because every reachable host was exhausted. No Chrome tools in this session.
-Result: **1 candidate row** (`candidates.json`, weak, catalogue only), 4 key leads (`key_leads.json`). Nothing was viewed on an image; no African cipher leaf was found online on any reachable host.
+Result (second pass included): **3 candidate rows** (`candidates.json`), 8 key leads (`key_leads.json`). Pass 1 (catalogues) found one weak row; pass 2 (printed-source OCR grep) found the two better rows below. One printed page was viewed (Hake, p. 50); no archive leaf of an African cipher was seen on any reachable host.
 
 ## Routes that worked
 - **TNA Discovery open API** (`harvest.py`, `harvest_series.py`, `harvest_places.py`, `harvest_places2.py`; `raw.jsonl` = 1,932 unique records, `harvest.log`, `series.out`, `places.out`, `places2.out`). `sps.departments` and `sps.recordSeries` filters both work. 2.5 s per request.
@@ -42,7 +42,12 @@ Other hosts:
 - archive.org FTS: three Africa phrase queries ("in cipher" with Zanzibar Sultan, Khartoum Gordon, Gold Coast) gave 7,613, 6,032 and 444 page hits of noise (Crispi memoirs, Wolseley letters, German diplomatic documents). Metadata search "(cipher or cypher) AND African place AND texts" gave only newspaper issues and Trithemius.
 - Web search: two searches found only the Livingstone 1871 Bambarre letter (faded ink, deciphered 2010, not a cipher).
 
-## Finds, ranked
+## Finds, ranked (after pass 2)
+1. **Egerton to Gordon, Cairo, 30 Aug 1884, numeric cipher telegram** (23 six-digit groups printed in Hake's edition of Gordon's Khartoum journals, Book I p. 50 footnote 67; page image viewed from the archive.org PDF, digits checked against the OCR of two editions and Gutenberg 49224). Gordon: "which I cannot decipher" (Stewart had the cipher books). Plaintext not in the book. Short, code not published: solvability 2, difficulty 5. Distinct from the catalogue's PRO 30/57/4/119 and from the Durham SAD.250/1/550 lead of the north-east literature sweep. The Appendix X 'Arabic Cipher Telegram' (Wolseley, 20 Sep 1884) prints no ciphertext (checked on the page image, p. 379).
+2. **Yonge to Dundas, Cape Town, 6 Jan 1801, secret**: the papers of a Dutch passenger Prediger bound for Batavia, "some in cypher", "a long letter in cypher" survives (Theal, Records of the Cape Colony vol. III p. 387). Same name and years as the solved `batavia1800` letter (Raad der Aziatische Bezittingen to C. J. Prediger, 2-digit grid key): a possible ready key. Original is in TNA CO 48, volume not identified; no image.
+3. Dawes, CMS/B/OMS/C/W/O31/29-30 (1823), as in pass 1 (below, now rank 3).
+
+### Pass 1 find
 1. **CMS/B/OMS/C/W/O31/29-30, William Dawes, 1823** (Cadbury Research Library): "Letters to used for cypher" and "Key to cypher". West Indies (Antigua) but the writer was the former governor of Sierra Leone. Probably an alphabet and its key; needs the Library to say. Score 2/3/2. Not on DECODE.
 
 That is the whole list. Africa gave nothing else that is both enciphered and unread.
@@ -64,3 +69,23 @@ That is the whole list. Africa gave nothing else that is both enciphered and unr
 - Not done: Theal's *Records of the Cape Colony*, *Records of South-Eastern Africa*, *Annals of Natal* and *Basutoland Records* are on archive.org (e.g. `recordsofcapecol00thea_1`, `recordscapecolo05offigoog`, `basutolandrecor00theagoog`, `annalsofnatal02birdiala`); their OCR could be grepped for cipher mentions to find printed-but-unread items. Not downloaded here.
 - Not done: Tomokiyo and Lasry searches for the single row; Royal African Company (T 70) item level; CMS Birmingham with more terms ("code", "secret characters", "figures"); Dutch (Nationaal Archief VOC Kaap, WIC Elmina) and Portuguese (AHU) are other sweeps' ground.
 - Catalogue wording is the limit: TNA's Africa series (CO 96 Gold Coast, CO 267 Sierra Leone, CO 179 Natal, CO 48 Cape, SP 71-75 Barbary, FO 76 Tripoli) are described at volume level, so a ciphered letter inside never shows in term searches. Paging those volumes needs images, and TNA does not hold digital images of them; the Barbary SP volumes would need a visit or a scan order.
+
+
+## Pass 2 (14 Nov 2026, after the coordinator's request)
+
+### Printed-source OCR grep (`ia_ids.py`, `ia_dl_grep.py`; ids in `ids.json`; raw OCR in scratch)
+254 archive.org ids picked by metadata queries; 38 had no usable OCR (`short/none` in `ia_dl_grep.out`, e.g. `recordscapecolo28offigoog`, `recordscapecolo15offigoog`, `laterannalsofnat0000alan`, `papersconcerning0057unse`), 216 were grepped for cipher, cypher, decipher, decypher, cyphered, ciphered, "in code", "secret writing", cryptogram, cryptograph (175 context windows, `ocr_hits.jsonl`, trimmed). Sets: Theal Records of the Cape Colony (about 36 volume scans over several copies, 91 ids incl. duplicates), Records of South-Eastern Africa (8 ids), Basutoland Records (4), Moodie's Record, Bird/Annals of Natal (3 of 4 readable), Precis of the Archives of the Cape of Good Hope (59 ids), Gold Coast and Sierra Leone parliamentary correspondence (about 12), Zanzibar, Bechuanaland, Gordon's journals (Hake, 2 editions), Gordon at Khartoum (Blunt), Story of the Soudan War, Too Late for Gordon, Emin Pasha, Oswell. Not covered: any Theal volume whose scan was `short/none`, and Theal volumes archive.org did not list. Explorer books were grepped in a separate step (`ia_explorers.py`, below).
+Result: nearly all hits are figurative ("cyphering", "a mere cypher", "decipher the old records"). Real ones: Yonge/Prediger (row 2); Heren XVII to Riebeeck 1656 (cypher key sent, key lead); Riebeeck "alphabet (? in cipher)" (key lead); Gordon journals (row 1 and key lead); Emin Pasha (key lead); Egerton and Wolseley telegrams in Blunt and Soudan War as narrative only.
+Calendars of State Papers Colonial: the archive.org series are America and the West Indies, and East Indies; none covers Africa or Barbary, so not grepped. There is no printed SP 71 (Barbary) calendar.
+
+### Explorer books (`ia_explorers.py`)
+139 ids from 26 title phrases (Livingstone's Missionary Travels, Zambesi narrative and Last Journals; Stanley's How I Found Livingstone, Through the Dark Continent, In Darkest Africa, Coomassie and Magdala; Burton's First Footsteps, Lake Regions, Zanzibar; Baker's Albert N'yanza and Ismailia; Speke; Emin Pasha; Slatin's Fire and Sword in the Sudan; Churchill-era Soudan books). 53 had no usable OCR, 86 were grepped (87 windows). Only narrative mentions: Slatin (a French-cypher message from Marcopoli Bey 1883; a half-ciphered Arabic telegram of Gordon to the Khedive read by Abdel Halim Effendi; a note written by Gordon "in French cypher language" shown to the Khalifa), Livingstone editors' "deciphering" of faded journals (handwriting, not cipher). No ciphertext printed. The Slatin and Gordon items are further Khartoum cipher pointers (originals unlocated), not rows.
+
+### Hosts retried or newly tried
+Wits (AtoM host), SAnA (eahra, nationalarchives.gov.za), Cory/NAHECS: retried, still no answer (connect failure). Rhodes University pages answer but the catalogues are an Alma JS app and `researchrepository.ru.ac.za` is Cloudflare-blocked. RGS: `collections.rgs.org` and `catalogue.rgs.org` no answer; the site's search page points to `rgs.koha-ptfs.co.uk`, Cloudflare-blocked (403). National Army Museum: answers, "cipher", "cypher", Zulu/Boer/Sudan/Egypt combinations, "code telegram", "secret code": 0 results each (simple search is object-level). IWM and Europeana: Cloudflare challenge (403). HathiTrust (babel and catalog): Cloudflare 403. Google Books API: 429 quota exceeded (stopped). Wikimedia Commons API: 429 (stopped); Wikisource API answers, one query only ("in cipher" Khartoum: 1 hit, Queen Victoria life, not relevant). Livingstone Online: no usable result.
+
+### 20th century range
+Nothing found with cipher text on an image. archive.org FTS for Mafeking, Ladysmith, Kimberley, Maji Maji: noise (biographies). TNA WO 108 / CO 417 series searches (pass 1): 0. The only 20th-century hits are 1906 FO telegram files (Liberia, Boma), administrative.
+
+### Left after pass 2
+Burton, Speke, Baker, Stanley, Livingstone printed editions (ids not collected by the title filter; do by explicit identifiers); Theal volumes with missing OCR; TNA CO 48 volume for 6 Jan 1801 and an image of the Prediger cypher; the FO plaintext of Egerton's telegram; Durham SAD.250 (IIIF works, covered by the north-east literature sweep); Bodleian, SOAS, LSE, Cambridge, RGS, Wits, SAnA, Cory still need a browser or another network.
