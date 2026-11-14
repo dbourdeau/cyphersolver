@@ -24,26 +24,38 @@ source.
 
 ## Who read what
 
-- **Jean de Neufville** made the code: Baudouin writes on 30 March 1779 (p.516) that he has received "la lettre ... avec
-  le chiffre qui y étoit joint et que j'ay trouvé à merveille". De Neufville enciphered his own letters from his plain
-  drafts, and wrote the plain French over many of Baudouin's groups. Those parts were read by him in 1779-1780.
+- **Who made which table.** On 7 March 1779 (p.499) Baudouin wrote: "je me depesche de faire le chiffre pour vous
+  l'envoyer, en attendant, je vous en joins un petit icy, que vous entendrez aisement, ce n'est qu'un changement de
+  noms", and that he would sign with "un des noms que je prends dans le petit chiffre cy joint". On 30 March 1779
+  (p.516) he acknowledges "la lettre ... avec le chiffre qui y étoit joint et que j'ay trouvé à merveille".
+  - So there were two tables: Baudouin's "petit chiffre", a list of cover names (not in the file), and a "chiffre" that
+    reached Baudouin from de Neufville by 30 March.
+  - The evidence makes it likely that the numeric code of the drafts is the one de Neufville sent. It does not show
+    who composed it: Baudouin had said he was making one, and de Neufville may have sent his own instead or as well.
+  - Neither table survives as a table; the numeric code is rebuilt here from its use.
+- **Jean de Neufville** enciphered his own letters from his plain drafts, and wrote the plain French over many of
+  Baudouin's groups. Those parts were read by him in 1779-1780.
 - **Baudouin** read de Neufville's letters in the code (the sent letters are not in this file).
-- **The Department of State's clerk** who bound and indexed the volume in the 19th century read the signatures and
-  covers (index, below). Fold3's indexers listed the drafts as "Letters from William Lee to John de Neufville and Son ...
+- **The Department of State's clerk** who bound and indexed the volume in the 19th century made the identification:
+  his index (p.3) lists the correspondent as "Du Noyer, Bowdoin or Mad. D. Arras".
+- **The Franklin Papers editors** cite the letter of 23 February 1779 (p.495) as "a cryptic note from Baudouin to an
+  unknown recipient" (Papers of Benjamin Franklin 28:354 n.9). Fold3's indexers listed the drafts as "Letters from William Lee to John de Neufville and Son ...
   in French with cipher".
 - **What this folder adds** (Andrew Beling, with AI agents, 13-14 Nov 2026):
   - the reconstruction of the code from de Neufville's drafts and the glosses;
-  - the identification of "Dunoyer" as Baudouin from the leaves;
-  - the reading of the bare passages that no one glossed (B573, B491, B492);
-  - two blind transcription passes of each bare passage.
-  No second agent and no person has rechecked it.
+  - the evidence on the leaves for the index-maker's identification of "Dunoyer" as Baudouin (the hand, the 7 March
+    letter, the 30 March letter);
+  - the reading of the bare passages that no one glossed (B573, B491, B492), each transcribed in two passes by the
+    same agent (top-down and from the end backward).
+  A second AI agent of ours, not a person, checked the folder independently on 13-14 Nov 2026. Its corrections are
+  applied (key/corrections_post_test.tsv and below).
 
-## Identification of the correspondent (checked on the leaves)
+## Identification of the correspondent (made by the volume's index; the evidence on the leaves)
 
-- pp.495-497, Paris 25 February 1779, and pp.498-499, Paris Monday 7 March 1779, are signed **"Baudouin"**. The second ends:
+- pp.495-497, Paris 23 February 1779, and pp.498-499, Paris Monday 7 March 1779, are signed **"Baudouin"**. The second ends:
   "à l'avenir je signeray un des noms que je prends dans le petit chiffre cy joint".
 - From 30 March 1779 the letters in the same hand are signed "Dunoyer"; the covers to "Van Temmel" are docketed "Baudouin".
-- The volume's index (p.3, 19th-century hand) reads: "12. Thirty-five . . . Du Noyer, Bowdoin or Mad. D. Arras (Private
+- The volume's index (p.3, 19th-century hand) already makes the identification. It reads: "12. Thirty-five . . . Du Noyer, Bowdoin or Mad. D. Arras (Private
   news from Paris, for use U.S. 1779-81.)", folio 148.
 - Baudouin is Sartine's secretary at the Ministry of Marine: Papers of Benjamin Franklin 29:5-7, note 4 to Dumas's letter of
   1 March 1779 ("'Baud——' for Sartine's secretary Baudouin"); Baudouin's own notes to Franklin, 5 and 25 May 1779 (PBF 29:438).
@@ -52,7 +64,18 @@ source.
 
 ## The tests
 
-Each key was frozen (key/FREEZE.txt) and its test plan written (TEST_PLAN.md) before it was run.
+The keys are in key/FREEZE.txt and the test plans in TEST_PLAN.md. Two limits on what the files can show:
+- Each test script builds its key by majority vote from a pair file written earlier and scores it in the same run, so
+  the file times cannot show that a key was frozen before its test. What is fixed beforehand is the pair file, not the
+  key file.
+- The full key key_full_r3.json was built after p.573 had already been decoded once with an earlier key. The entries it
+  added for p.573 (158 aux, 100 ent, 136 au, 224) come from glosses and drafts on other pages, so the reading is not
+  circular, but the key was not frozen before the first look at the passage.
+- T2 is weak as a test, because its ten held-out pairs were chosen so that each number also occurs among the training
+  pairs.
+
+A second agent of ours took 183 pairs from the drafts pp.599 and 601 before seeing the key. It agreed on 87 of 94
+numbers, confirmed 38 of 39 further key entries on the images, and reran the three tests with identical results.
 
 | Test | Key | Result | 200 shuffled keys |
 |---|---|---|---|
@@ -63,6 +86,10 @@ Each key was frozen (key/FREEZE.txt) and its test plan written (TEST_PLAN.md) be
 The misses in T1 and T2 are the writer's own variants (86 ne/na, 263 i/j, and the word "ménagera", which p.599 glosses
 96 86 36 92 = mé na ge ra while his other drafts use 36 = ra, 92 = la).
 
+Corrections after the tests are in key/corrections_post_test.tsv; the frozen keys are unchanged. Each was checked
+on the image: 224 is m in "compter" (p.600) and n in "l'emprunt" (p.573), so it is m/n; 381 "passe" is a misreading of 384;
+9 is "deux" (p.600) and "da" (p.599); 71 is "on" (p.535 gloss) and "mme" (p.601). No reading in this folder changes.
+
 Statistical validation (docs/_validate.py, validation.tsv: the drafts' own plain units plus the bare passages read with
 key_full_r3): pass, z 9.1 against random keys, 4.1 against refits to shuffled text.
 
@@ -71,21 +98,27 @@ key_full_r3): pass, z 9.1 against random keys, 4.1 against refits to shuffled te
 Decoded with key/key_full_r3.json (204 numbers). In the readings, [n] marks a hole and {x} a unit settled by the word, not
 by the key.
 
-**B573, "Dunoyer" (Baudouin) to "Van Temmel" (de Neufville), 24 January 1780 (p.573).** 43 numbers, 39 read (91%).
+**B573, "Dunoyer" (Baudouin) to "Van Temmel" (de Neufville), 24 January 1780 (p.573).** 43 numbers, 39 read (91%; 38 by the key as written, the 39th being 30 = g).
+The last number is 369 or 349: the middle digit could be this hand's 6 or its looped 4 (our first pass and the second
+agent read 369). Either way it is a hole.
 "Il est certain que le patriarche et la bande joyeuse feront tous leurs efforts pour faire avaler la dernière pilule,
 mais ... cela couvrira **les États Généraux** d'opprobre et de ridicule. Il y a longtemps que [3] **a retiré aux
 [58]rands** l'affaire de **l'emprunt** ... d'ouvrir **un emprunt** où personne ne se soucie de **[227]er son ar{g}ent**,
-cela ne peut que faire beaucoup de tort **au crédit du [349]**." He then advises de Neufville to speak to "M. du Fresne".
-- In English: the pro-British party will make the Republic swallow the last pill, to the shame of the States General.
-  Someone [3] long ago took the loan business away from the [58]rands and gave it up when de Neufville met obstacles. A loan
-  nobody will put money into only hurts the credit of [349].
+cela ne peut que faire beaucoup de tort **au crédit du [369/349]**." He then advises de Neufville to speak to "M. du Fresne".
+- In English, as close as the French allows: the patriarch and the merry band will do all they can to make [them]
+  swallow the last pill, but this will cover the States General with shame and ridicule. It is long since [3] took "the
+  loan business" away from the [58]rands, and he has given it up since de Neufville met obstacles there. To open a loan
+  in which nobody cares to [227] his money can only do much harm to the credit of the [369/349].
+  - That "the loan" is the American loan de Neufville was trying to raise is inference; the letter says only "l'affaire
+    de l'emprunt".
 - Open numbers and candidates (holes in the text):
   - 3: a person. The only gloss of 3 is the numeral 3 (p.529), which does not parse here.
-  - 58: an initial. "Grands" (the Grand bankers) fits if 58 = G, and so does 30 = g in B492 "{G}rand".
+  - 58: an initial. "Grands" fits if 58 = G, and so does 30 = g in B492 "{G}rand". The Grand family of bankers is
+    meant if so; Dumas calls Georges Grand "le ch—— G——" (PBF 29:5-7 n.4).
   - 227: "plac-", "hasard-" or "risqu-".
-  - 349: "Congrès".
+  - 369/349: "Congrès" (context only).
 - 30 is read "g" here because the word "argent" forces it; in de Neufville's drafts 30 is "re". So 30 is either a homophone
-  or a writer's slip.
+  or a writer's slip; a slip for 33 (= ge) is the simpler explanation.
 
 **B491, the same to the same, 18 January [1780] (p.491).** 18 numbers, 12 read (67%; 86% if the four likely nulls are left out).
 "Je pense absolument comme M. Leerding sur le compte du **Stadhouder** [507] [501] [405 387 390 447] **Stadhouder** ...
@@ -134,8 +167,9 @@ Kept apart: what the letters say; established history, with the reference checke
 **What the letters say.**
 - De Neufville was passing Paris news to the Pensionary of Amsterdam. Baudouin was asking about Spanish intentions, the
   Amsterdam Pensionary and the French ambassador, and he advised on de Neufville's dealings with Chaumont ("M. du Fresne").
-- In January 1780 Baudouin judged that the American loan de Neufville was trying to raise in Amsterdam would harm "the
-  credit of [349]", and that the pro-British party would make the States General swallow a humiliation.
+- In January 1780 Baudouin wrote that opening a loan nobody would put money into could only harm "the credit of
+  [369/349]". That this is the American loan is inference. He also wrote that the patriarch and the merry band would make
+  [them] swallow the last pill, to the shame of the States General.
 - De Neufville's draft of 19 April 1779 reports that he passed news of Spain to the Pensionary and could not yet sound
   him about a direct correspondence.
 
@@ -174,17 +208,26 @@ finding of the literature.
 
 ## In print
 
-Nothing of this correspondence, its content or its code was found in print.
+One letter is cited, none is printed:
+- Papers of Benjamin Franklin 28:354, note 9 (Founders Online, Franklin/01-28-02-0286) cites "a cryptic note from Baudouin
+  to an unknown recipient, Feb. 23, 1779, mentioning that Stürler had arrived in Paris and had been in contact with
+  someone named Montaigu. National Archives." That is p.495 of this file. The editors did not identify the recipient and
+  do not mention the code.
+- Nothing was found that prints the letters' text, their content or the code.
+
+Searches made:
 - Founders Online: "Neufville Baudouin" finds only Dumas's letters with the abbreviation note; "Dunoyer" and "Temmel" find
   nothing relevant.
 - HathiTrust full text: "Van Temmel" Neufville finds only Butler's index. Wharton's *Revolutionary Diplomatic
   Correspondence* is full text there, and it does not match.
+- Schulte Nordholt, *The Dutch Republic and American Independence*, and van Winter, *American Finance and Dutch
+  Investment*: no hits for Baudouin, Dunoyer, Van Temmel or Sartine in HathiTrust's search-only view. One hit for
+  "Arras" in van Winter vol. 2, probably the town, was not seen.
 - Cryptiana: nothing found.
-- Schulte Nordholt and van Winter are in copyright and were not read.
 
 ## Remaining gaps
 
-- Numbers 3, 58, 227, 349, 507, 501, 143 and 162, the two lines of p.527, and the likely nulls 405, 387, 390 and 447.
+- Numbers 3, 58, 227, 369/349, 507, 501, 143 and 162, the two lines of p.527, and the likely nulls 405, 387, 390 and 447.
 - The glossed letters pp.516-548 are transcribed as pairs only.
 - Baudouin's letters of February 1779 to November 1781 (pp.487-590) contain more clear intelligence that is not
   summarised here.
@@ -193,7 +236,7 @@ Nothing of this correspondence, its content or its code was found in print.
 
 Tried for the open numbers:
 - every glossed letter and draft in the file (all 808 images paged);
-- the code's own thematic neighbours (names sit at 500-550, but there is no alphabetical run that settles 3, 58, 227 or 349);
+- the code's own thematic neighbours (names sit at 500-550, but there is no alphabetical run that settles 3, 58, 227 or 369/349);
 - Founders Online, HathiTrust full text and Cryptiana.
 
 Not tried:
