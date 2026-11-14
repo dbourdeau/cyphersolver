@@ -2,6 +2,16 @@
 
 Status: in progress (23 Oct 2026, consistency pass: the Halphen 1889 edition is not yet opened, a gap marked not-attempted; the print, key-rebuild and retry escalation steps are not done)
 
+**14 Nov 2026, verification pass (Claude Opus 5.5): three code groups fixed, letters still read in part.** The eight
+cipher lines of f. 53r, block 1, were transcribed and aligned with their verbatim marginal gloss
+(`f53r_alignment.md`): **72 = vous** (four aligned occurrences, which settles the proposal below and the D1
+counter-indication), **6, standing as a word, = Sa Sainteté** (three), **66 = sa** (one); also `3:` = faire, `+.` = de,
+`n,` = nous. A pre-registered check on glossed blocks not used for the derivation (f. 56r, f. 50r) found only one
+locatable occurrence (72 under *que je vous*, agrees): not conclusive; the protocol measurement is not applicable to
+groups this rare. Three 22 Nov runs give sense with the new values and the clear frames (*vostre negotiation*,
+*…correspondance … discretion*, *le respect*), probable only. The 9 and 22 Nov letters stay decoded, not read;
+Halphen 1889 is still behind HathiTrust's human check (403 on 14 Nov) and not elsewhere online.
+
 **Status, 17 Sept 2026 (third pass): partly read; the 22 Nov letter (ff. 46r-47v) now transcribed in full.** The 10 November letter (f. 34) is read in full, because its minute survives in
 clear four leaves on (f. 36, the notice's "copie du n° précédent"); that pair, six glossed passages of the 8 November
 letter and a glossed passage of 10 December give the cipher's design and most of its letter values; the 9 November
@@ -439,7 +449,7 @@ The 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs are decoded, not read (2,849 
 
 - 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
 - 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
-- code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80 - blocker: no-key-material; glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned
+- code groups 2, 5, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 67, 69, 80 - blocker: no-key-material; 6, 66 and 72 fixed on 14 Nov 2026 from the f. 53r gloss (`f53r_alignment.md`); the f. 56r blocks and the second f. 53r block (the Cordelier) are the next cribs
 - Halphen 1889 (HathiTrust iau.31858014633857, full view): may print the 9 and 22 Nov letters in clear - blocker: not-attempted; behind a human-verification page, to be opened by a person
 - clear copies in BnF Cinq cents de Colbert 346 - blocker: needs-physical-access; copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)
 
@@ -449,5 +459,5 @@ The 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs are decoded, not read (2,849 
 - [x] clear-pages: f. 36 is the clear minute of f. 34; marginal glosses on ff. 53r, 56r found verbatim
 - [x] known-keys: Bazeries 1901 key for Bethune 1599 compared: same design, different values
 - [ ] print: Halphen, Lettres inedites ... 18 oct - 24 dec 1601 located 22 Oct 2026 in full view on HathiTrust (iau.31858014633857) but behind human verification, not opened; Xivrey, Colbert 17, fr. 3677/3678, Tomokiyo, DECODE checked
-- [ ] key-rebuild: not done - align the eight f. 53r cipher lines (cut.py 113 ...) and the f. 56r block against their verbatim glosses to fix 66, 72 and the name figures
+- [ ] key-rebuild: partly done 14 Nov 2026 - f. 53r block 1 aligned (72, 6, 66 fixed); the f. 56r blocks and f. 53r block 2 not yet aligned
 - [ ] retry: not done - rerun em_align.py / decode2.py on f. 33 and ff. 46-47 after the gloss alignments
