@@ -1515,6 +1515,7 @@ html.fs-lock{overflow:hidden}
   .cipherstrip .ls .lp{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .cipherstrip .lsrc{margin-top:0;padding:.3rem 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
   .hero-lead > .meta{order:3;margin:.9rem 0 0;font-size:var(--fs-sm)}
+  .hero-lead > .seen{order:4}
   .hv-ch button{min-height:2.75rem}
   .hv-ctl button{width:44px;height:44px}
   /* three ways to help: a row each, sticker, count and line */
@@ -1619,6 +1620,11 @@ html.fs-lock{overflow:hidden}
 .filmbtn span::before{content:"";margin-left:.15rem;border-style:solid;border-width:.36rem 0 .36rem .58rem;border-color:transparent transparent transparent currentColor}
 .hero:has(.ms-bg) .meta{font-size:var(--fs-sm);margin-top:1.1rem}
 .hero:has(.ms-bg) .meta a{color:var(--ink2)}
+/* "As seen in": press and blog coverage, under the byline (press.json, press_html in _build_site.py) */
+.hero .seen{margin:.55rem 0 0;font-family:var(--ui);font-size:var(--fs-sm);color:var(--ink2)}
+.hero .seen span{margin-right:.5rem;font-size:var(--fs-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.hero .seen a{color:var(--ink);font-weight:600;border:0;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:.2em}
+.hero .seen a:hover{color:var(--gold2)}
 .hero:has(.ms-bg) .hero-media{min-height:11.5rem;padding:1rem 1.2rem;border:1px solid rgba(246,234,208,.18);border-radius:var(--radius);background:rgba(24,15,7,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .hero:has(.ms-bg) .cipherstrip{margin:0}
 .ms-credit{margin:.9rem 0 0;text-align:right;font:var(--fs-xs) var(--ui);letter-spacing:.04em}
