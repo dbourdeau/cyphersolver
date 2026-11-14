@@ -168,12 +168,53 @@ which the table already has.) WAINUT's readings
 Crawford: the legation register (frame 0005, checked here) dates the letter 15 Aug 1813, and "952 959 952 954" can
 only be 1813 (the groups 932 939 932 were a misreading of 952 959 952).
 
+## Verification with the surviving code sheet (Brice Dudout, 14 Nov 2026)
+
+Since PR #200 (Andrew Beling, for `../morris1813`) the repository holds a transcription of the State Department code
+sheet itself, NARA M97 roll 13 frames 1056 (alphabetical) and 1057 (numerical), the code Weber (1979) prints as WE028:
+`../morris1813/beling/key/codebook_M97_13_transcription.csv`, 1,600 entries in the order of this table (the = 1385,
+of = 1576). It had not been applied to No. 88. It is used here unchanged; no value is added to it.
+
+**Held-out check.** Before use, the sheet was tested against every grade-H pair of the clerk's interlinear decodes in
+`clerk_*.tsv` (the sheet was not built from them). Rule and threshold written and frozen by SHA-256 first (agreement
+>= 0.80 and >= best of 200 shuffled keys + 0.30): **1,624 of 1,742 pairs agree, 0.932; shuffled keys at most 0.044
+(p99 0.025)**. `we028_measure.py`, `we028_measure.txt`. So JQA's code of 1811-12 is WE028. Of the
+table's H and C values, 138 of 823 differ from the sheet (mostly single-occurrence C values; a few are clerk splits
+such as 948 rus / Russia).
+
+**No. 88 with the sheet.** Every group of `gap88.txt` and `rem88.txt` decoded with the sheet and compared with
+`code_table.tsv`, group by group in `we028_no88.tsv` (status sure / probable / restored / unresolved). Frames 0206 and
+0207 re-read on the NARA images where the two disagree.
+
+- Grade-I values the sheet confirms: 143 moderate, 350 fla, 1403 ib (in-fla-ex-ib-ly), 426 negociat, 1309 bat,
+  1540 along, 1434 journ, 168 ey.
+- Two transcription errors, corrected on the image: rem88 l.10 **262** (st), not 252 (demon-st-ration); l.11 **649**
+  (min), not 549 (de-ter-min-ed).
+- One-digit slips the sheet and the sense fix (probable): 1864 for 1364 tain (no number above 1600); 669 for 569 to;
+  588 for 568 tle (bat-tle; 588 is learn/term); 508 for 518 ect (dir-ect-ly); gap 818 for 518 ect (exp-ect-ation);
+  gap 1575 for 1515 adv (adv-ice; 1575 is oe and the image reads 1575); gap 1585 for 1535 al (1585 is ok).
+- Gutter groups whose visible digits fit the sheet value: 142x in (1426), 1xxx sa (1068; "10" visible), 13xx temp
+  (1374), 15xx ad (1513, am-bas-ad-or), 21x pre/pri; 11xx (pro-po-...) is read from the sense.
+- Changed: rem88 l.19 927 is oud on the sheet, not pire; 727 is **rather** (7/9 are confused in this hand), so the line
+  reads "to that centre of the em[pire] [rather] than along the shores of the Baltic"; JQA wrote only em (539).
+  Gap l.5 1398 is thirty on the sheet (14 thither, 1391 there): the earlier grade-I thither is withdrawn and the word
+  is restored as [there].
+- Still unresolved: 1508 (acious / account), 1185 (wick; "He considered it", 118, would fit but is not what is
+  written), 570 (tol / toe; "it was, he said" would want 500). 55x (gutter) can only be 558 thus among 550-559.
+
+**Counts (Daniel's rule, words; texts/no88_remainder_reading.md and texts/no88_gap_reading.md rewritten):** the
+remainder 172 of 177 words read as sense (161 sure, 11 probable; 2 restored, 3 unresolved) = **0.972**, up from 0.938,
+so **read**. Ford's nine lines 98 of 99 = 0.990 (one restored word). Groups: 384 of 390 sure or probable (0.985).
+
+No new value is proposed for the table; `code_table.tsv` is left as it is. The sheet is the better key for this code:
+where they differ, `we028_no88.tsv` gives the sheet's value.
+
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
-- rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; 1508 (le/bable, M) does not fit 'as a pre-'; no other occurrence in the decoded pairs
-- rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; no occurrence in any decoded frame or Ford block read
-- rem88 l.11 570 ('it tol he said'): valued (tol, C) but does not read; the image shows 570, not 500 (was) - blocker: no-key-material
+- rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; the M97 sheet gives acious / account, which does not fit 'as a pre-' (14 Nov 2026)
+- rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; the M97 sheet gives wick (14 Nov 2026); the image shows 1185 and a stroke cut by the gutter
+- rem88 l.11 570 ('it tol he said'): the M97 sheet gives tol / toe, which does not read; the image shows 570, not 500 (was) - blocker: no-key-material
 
 ## Escalation
 
