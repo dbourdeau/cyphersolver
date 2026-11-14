@@ -69,7 +69,7 @@ def frame278():
     """Descriptive rescoring of the 23 frame-278 gloss pairs (gloss/frame278_BEL/) with the worksheet key.
     The pre-registered test (PREREG2_frame0278.md) used the earlier booklet key and is filed as it ran."""
     import csv, difflib
-    base = HERE / 'gloss' / 'frame278_BEL'
+    base = HERE / 'gloss' / 'frame278_BEL' / 'transcription'
     norm = lambda s: s.lower().replace('ä', 'a').replace('ö', 'o').replace('ü', 'u').replace('v', 'u').replace('j', 'i').replace(' ', '')
     ci = {r['id']: r['cipher_as_seen'] for r in csv.DictReader(open(base / 'f0278_cipher_as_seen.tsv', encoding='utf-8'), delimiter='\t')}
     gl = {r['id']: norm(r['clear_as_seen']) for r in csv.DictReader(open(base / 'f0278_gloss_as_seen.tsv', encoding='utf-8'), delimiter='\t')}
