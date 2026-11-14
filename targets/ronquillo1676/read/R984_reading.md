@@ -15,7 +15,7 @@ deliveraciones de Su Magestad Britanica, aunque [135] que toda la disposicion es
 animo de enpeñar al Rey en ella.
 
 V.S. obro muy cuerdamente y muy conforme a su [138] en haber procurado envarazar el que los ministros de los aliados
-que [91]n en esa [113] echasen a los Estados Generales la ronca que tenian resuelto. Pudiera ser que, si lo hubieran puesto
+que asisten en esa [113] echasen a los Estados Generales la ronca que tenian resuelto. Pudiera ser que, si lo hubieran puesto
 en ejecucion, la hubiesen segundado holandeses en tal forma que les hubiese escocido muy vien, como sucedio con el otro
 enviado de Dinamarca, de que V.S. estara informado. Y yo prometo a V.S. que, si llegare el caso de que ronpa el Rey de
 Inglaterra, sera muy posible que amansen la colera y el paso en echar roncas, pues si se hallan solos, y el Rey de
@@ -48,3 +48,4 @@ V.S. algo fijo de esta trama.
 - Context: Ronquillo was Spanish plenipotentiary at the Nijmegen congress; Fuenmayor, Spanish envoy in Copenhagen,
   had reported on the meeting of the northern allies there. Estrades was one of the French plenipotentiaries at
   Nijmegen; the Duke of Hanover (Johann Friedrich) was pro-French; the Duchess of Zell is Eleonore d'Olbreuse.
+- 14 Nov 2026: `91` = asist- from the R981 margin (twice: "ha asistido", "asistir"), so "que [91]n en esa [113]" reads "que asisten en esa [113]"; 113 stays open (probably corte).

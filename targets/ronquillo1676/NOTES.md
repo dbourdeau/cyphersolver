@@ -1,6 +1,16 @@
 # Salinas (London) and Ronquillo (Nijmegen) to Fuenmayor, 1676–78 — DECODE R966–R984, R1001
 
-Status: read in part (22 Oct 2026: all twenty letters read and translated, eighteen from their contemporary margins; holes left in R983 f. 1, R982, R984 and single words, each with an outside blocker)
+Status: read (14 Nov 2026: R982, the last letter under the 95% bar, re-read on the images, 0.919 -> 0.954; every letter now at or above 95% of words read as sense)
+
+14 Nov 2026 (verification, Claude Opus 5.5): R982, which has no margin, re-read on the full-resolution DECODE images
+(I5093-I5095) wherever the reading had a hole, with a second blind pass on the doubtful figures. Most holes came from
+the hand, not the key: its 7 has a heavy flourished head and was transcribed 2 or 3 (72 ti, 71 te, 70 ta, 73 to, 74 tu,
+78 on), its 4 and 9 alike (54 gu), and a struck o was taken for a null. Twelve holes closed (actividad, o nos, atender a
+todas, aseguro, tan, ambiguedad, Mequelemburg, constitucion, puestos, abrogado, Bruselas, ofrece); [?habra] and
+[?tenemos] stay uncertain where the blind pass disagreed. Three code values glossed in the sibling margins but missing
+from keyx.py are keyed: fin = ofrece (R975, R977, R981), al = despues (R980, R981; balbases1677 R986 twice), 91 = asist-
+(R981; gives "que asisten" in R984). read_share R982 0.954, R984 0.969. The balbases1677 key.json itself lacks al;
+its R986 margin glosses it twice.
 
 22 Oct 2026, later (re-read, batch ronq; REREAD_BRIEF.md): **all twenty letters read and translated.** For each
 letter the contemporary decipherment in the left margin was transcribed from the DECODE images (full-resolution

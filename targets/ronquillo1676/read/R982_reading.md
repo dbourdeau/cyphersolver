@@ -5,42 +5,50 @@
 ## Reading
 
 ⟨... con que me continuan los favores que V.S. me hace.⟩ [...] He visto con particular gusto los discursos de V.S. y
-lo que [...] caminando acia los pasos, que son muy propios de la prudencia, celo y [?actividad] de V.S. Y pluguiera a
-Dios que nuestras desgracias no fueran tan superiores [...] nos hallasemos en estado de poder [...]; pero siendo de la
-mala calidad que V.S. [?habra] entendido, es menester conformarnos con la voluntad de Dios y atribuir a sus justos
-juicios el que Flandes corra [...] a la ultima desesperacion, lo que, [?aseguro] a V.S., nos tiene a todos [?tan]
+lo que [...] caminando acia los pasos, que son muy propios de la prudencia, celo y actividad de V.S. Y pluguiera a
+Dios que nuestras desgracias no fueran tan superiores, o nos hallasemos en estado de poder atender a todas; pero
+siendo de la mala calidad que V.S. [?habra] entendido, es menester conformarnos con la voluntad de Dios y atribuir a sus
+justos juicios el que Flandes corra [...] a la ultima desesperacion, lo que, aseguro a V.S., nos tiene a todos tan
 atonitos y sorprendidos que hasta el gusto de discurir con los [...] nos falta, [...] el dolor y consideraciones de
 nuestra infelicidad.
 
-La Inglaterra se mantiene todavia en la misma [?ambigüedad] e irresolucion que experimentamos dos meses ha, como V.S.
+La Inglaterra se mantiene todavia en la misma ambiguedad e irresolucion que experimentamos dos meses ha, como V.S.
 estara informado por el [...]; con que, reconociendo el punto critico [...] el estado presente de las cosas y el
 peligro y evidente riesgo en que se hallan los Paises Bajos, y por consiguiente los demas del Norte, despues [?de] la
 perdida de Gante, podemos esperar, si Dios por su misericordia no permite que experimentemos el ultimo castigo, que
 nuestros aliados, excusando sus particulares controversias, se apliquen enteramente a defendernos y a defenderse todos
 contra los progresos de Francia. Para lo cual, y para que los Brunswick no persistan en [...] de sus pretensiones,
-obligara tambien mucho las noticias que tienen [bc]s de la entrada que ha hecho el conde de Konigsmarck en el
-[?Mecklenburg]; juntandose a esta mala [...] de cosas los discursos que, por otras correspondencias habra entendido
-V.S., hacen ya los [al]eses, que no pueden dejar de concevir pesimas consecuencias. Con que de todas maneras estamos
-muy mal, pues [...]. Yo refiero a V.S. estas melancolicas reflexiones no solo por ser propias de [...] sino [...],
-porque, haviendose [?arrogado] a las cortes de [...], La Haya y [109] la [...] de estas manos, no se [fin] que decir a
-V.S. del congreso.
+obligara tambien mucho las noticias que [?tenemos] de la entrada que ha hecho el conde de Konigsmarck en el
+Mequelemburg; juntandose a esta mala constitucion de cosas los discursos que, por otras correspondencias habra
+entendido V.S., hacen ya los [al]eses, que no pueden dejar de concevir pesimas consecuencias. Con que de todas
+maneras estamos muy mal puestos. Yo refiero a V.S. estas melancolicas reflexiones no solo por ser propias de [...]
+sino [...], porque, haviendose abrogado a las cortes de [...], La Haya y Bruselas la [...] de estas manos, no se
+ofrece que decir a V.S. del congreso.
 
 ## Notes
 
-- No margin decipherment on any page; the reading rests on the key and the image only. The scan is soft and the
-  numerals of this hand (4, 7, 9 with flourishes) are hard to tell apart at the DECODE resolution; that, not the key,
-  is what leaves most holes.
-- The values used are the key's, with the code words that the sibling letters of this volume confirm: be = estado
-  (estado presente de las cosas; R972 "en estado de entrar en guerra"), er = Dios (three), fes = noticia, cun = hech-,
-  112 = conde, 143 = porque, 141 = para que, and two tall signs: the underlined k-like sign = tod- (todos, todas,
-  todavía) and another, joined to yu or 33, = ju (justos juicios, juntándose). The underlined sign before "de Dios" is
-  read as voluntad.
-- Uncertain readings: "actividad" (the cipher has six groups ending -vi-da-d), "ambigüedad" (a-?-bi-gü-e-?-d), "habrá
-  entendido" (a-n-d-ra en-a-n-di-do), "aseguro" (only gu-ro clear), "Mecklenburg" (me-c-le-de-bur-g), "arrogado"
-  (a-b-r-ro-ga-do).
-- Holes: the opening groups (M 182 491); "lo que [...] caminando"; the end of the "superiores" clause and "poder [...]";
-  "corra [...]"; "discurrir con los [...]" and the words before "el dolor"; "por el [...]" (dul + de bu-r-go-ma-...);
-  the person or place after "en el" in "persistan en [...]"; "mala [...] de cosas"; "pues [...]"; "propias de [...]
-  sino [...]"; "cortes de [...]"; "la [...] de estas manos". 109 is probably Madrid (R980 "las cartas de [109]"), al
-  probably a nation (ingleses or holandeses), fin probably "más"; none is confirmed.
-- Context: Ghent fell to Louis XIV on 9-12 March 1678; Königsmarck commanded the Swedish forces in Pomerania.
+- No margin decipherment on any page; the reading rests on the key and the images (DECODE R982, full resolution,
+  re-read 14 Nov 2026). The hand writes 7 with a heavy flourished head that DECODE took for 2 or 3, and 4 and 9 alike;
+  most of the old holes came from that, not from the key.
+- 14 Nov 2026 verification (Claude Opus 5.5). Closed on the images, with the key value and the figure read stated:
+  "actividad" (r 9 12 32 42 45: the 32 is 72 = ti; "prudencia, celo y actividad"); "superiores, o nos" (o+ = the struck
+  o, 6+ = o in this volume; it was taken for a null); "atender a todas" (3+ 21 24 46 31 21 + tall sign + r 21 B: the
+  21 after the struck 3 is 71 = te; the tall sign = tod-, as in "todavia"); "aseguro" (ef 59 68: 59 is 54 = gu); "tan atonitos" (the image has 70 y = ta-n, not do y; 21 23 62 73
+  28 with 23 = 73 = to); "ambiguedad" (a, struck sign, 42 54 13 25: the struck sign is unidentified, the rest
+  a-?-bi-gu-e; kept for the fixed pair "ambiguedad e irresolucion"); "Mequelemburg" (ec d+ 56 q+ 44 31 +: me-que-le-?-bu-r-g, the period spelling of Mecklenburg);
+  "constitucion" (xo y 28 72 74 xi 78: the three 2s are flourished 7s; "mala constitucion de cosas"); "puestos" (ud ye
+  73 B: the 23/33 of the transcription is 73 = to; "estamos muy mal puestos"); "abrogado" (21 n 31 68 50 48:
+  a-b-r-ro-ga-do, i.e. arrogado). Two code values come from the margins of the sibling letters: 109 = Bruselas (keyx.py,
+  from the margins) and fin = ofrece (R975 "ofrecen los mediadores", R977 "los papeles que ofrece", R981 "ofrecer
+  montes y valles"): "no se ofrece que decir a V.S. del congreso".
+- Second, blind pass on the image crops (another agent, figures only): agrees on 72 (actividad), 71 (atender), 54
+  (aseguro, ambiguedad), 70 (tan), 72 74 and 78 (constitucion), 73 (puestos, low confidence). It reads the first group
+  of "[?tenemos]" as bc, not oc, and does not settle 31/21 in "[?habra]": both stay uncertain.
+- al = despues in four margins (R980, R981 twice, Balbases R986 twice), but "los [al]eses" (al + a crossed 4 + ef 28)
+  does not read with it; the group is left open (a nation: ingleses or holandeses).
+- Holes left: the opening groups (M 182 491); "lo que [...] caminando" (xi 20 36); "corra [...]" (do y is 55 ed 28 do);
+  "discurrir con los [...]" (25 B) and the words before "el dolor"; "por el [...]" (dul + de bu-r-go-ma-y-ne); "el
+  punto critico [...] el estado"; "persistan en [...]" (p-e-l-i-co-s-a-ni-en-a); "los [al]eses"; "propias de [...]
+  sino [...]"; "cortes de [...]" (a capital C sign with a tail, DECODE lop); "la [...] de estas manos" (188 r xi 28,
+  tr-y-ci-s). "[?de] la perdida": the cipher has 4 there; "de" is supplied.
+- Context: Ghent fell to Louis XIV on 9-12 March 1678; Konigsmarck commanded the Swedish forces in Pomerania.
