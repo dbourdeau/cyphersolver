@@ -10,13 +10,13 @@ unread; `[31]` etc. unidentified name numbers.
 By the grace of God Johann Friedrich, elected and postulated archbishop and bishop of the sees of Bremen and Lübeck,
 heir to Norway, duke of Schleswig-Holstein.
 
-Our gracious greeting with especial [?well-disposed] goodwill first, noble, steadfast and most learned, especially dear
+Our gracious greeting with especial well-inclined goodwill first, noble, steadfast and most learned, especially dear
 [friend]. We do not doubt that you will have duly received our last letter, and what we asked in it about the succour
 that might be sent to us in haste, you will have learned from it. When we are then informed whether [?the Landgrave of
 Hesse] should, by [?His Royal Majesty's order], with his army from the Westphalian [...]. And [?therefore] not [?...]
 [?now] the town [would be] summoned.
 
-And we then [?...], because the Count Gronsfeld's [troops] at [31] and the Minden folk and [19] troops otherwise have no
+And we then [?...], because the Count Gronsfeld's [troops] at [31] and the Minden folk and Cologne (Colonien) troops otherwise have no
 resistance to fear on that account, [?as] ours are also advised from Minden, that they will [?join forces] and also
 press upon us, whereby [?the Landgrave] [18] [82] would go, and [we] would come into the utmost danger.
 
@@ -40,9 +40,9 @@ things. Given in our town of Bremen, 27 Nov. 1631. Friedrich.
 
 [Title as above.]
 
-Our gracious greeting with especial [?well-disposed] goodwill first, noble, steadfast and most learned, especially dear
+Our gracious greeting with especial well-inclined goodwill first, noble, steadfast and most learned, especially dear
 [friend]. We have no doubt that you will have received our last letter about speedy succour and troops'
-[?help-sending], since the [?sconce] castle has now also been occupied and taken. And although we have quartered the
+help-sending, since the sconce castle has now also been occupied and taken. And although we have quartered the
 cavalry there, Reinach nevertheless raids hard here and there through [?our] lands and lays waste one place after
 another, and we cannot prevent it.
 
@@ -53,7 +53,7 @@ invasion of Bönninghausen's and Gronsfeld's troops, of which a strong [rumour] 
 But as we take every comfort [?in this] and rely on it, that we would be seconded, as promised, with some thousands and
 helped out, so we still have the firm confidence that one will send us in haste some troops to our help and [?not]
 leave us so any longer, or hold us off only with good promises, whereby we, together with land and people, would be
-wholly endangered and might come into [?misfortune] [?utterly].
+wholly endangered and might come into misfortune [?utterly].
 
 And we therefore, because the highest need demands it, graciously request of you once more that you will make the
 definite arrangement and order and [?provision] that, if the full number of which you lately wrote to us cannot be, at
@@ -65,7 +65,7 @@ Anno 1631. Friedrich.
 
 ### R4331, postscript
 
-Could Salvius also, since he [...] anyway, [...] [?go] to Celle, [and] so dispose and direct the work with Duke Christian
+Could Salvius also, since he is anyway, as we hope, [?now] [?present] at Celle, [and] so dispose and direct the work with Duke Christian
 and Duke Georg that we [?therefore] in that quarter not only may expect all good assistance and have cause to rejoice,
 but also may surely obtain that the enemy, where [he would come] [?down] from Neuenburg and otherwise over the Aller,
 through the land of Lüneburg, [be] granted passage of war, [but rather be] [?blocked], [lest] from there harm of war

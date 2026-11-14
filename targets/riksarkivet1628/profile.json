@@ -193,6 +193,15 @@
       ],
       "what": "Eight numeric letter keys of 1618-1627 from KHA A23-311 (Ernst Casimir) applied to R4284 and R4306: gibberish under Latin, Dutch, German, French (-4.6 to -8.6/char). Rusdorff R4333-37 numbers exceed their ranges.",
       "result": "failed"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "technique": [
+        "language-model scoring"
+      ],
+      "what": "Verification of the 24 Oct partial reading (Brice Dudout with Claude Opus 5.5): DECODE R4330 and R4331 fetched at full size from the public image URLs (no login); the open words re-read on crops twice, the second reading blind, and a word changed only where both readings agree. Gained: wolgeneigtem (twice), sich, schantze, Unglück (gloss over 81, both readings), unserm verhoffen nach and zubelangen in the postscript, hulff{+s}chickunge as a one-letter emendation of the figures, and code 19 = Cologne (gloss 'Colonien:' over it, both readings). Key unchanged; no measurement. v10 read share 0.931 -> 0.942 (777 words, 48 holes): still under 95%, read in part. Proposed by one reading only and not adopted: 31 Hameln, 82 Creutz, 86 Ungemach.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -253,12 +262,12 @@
         "detail": "phone photographs, digits and hand not resolvable"
       },
       {
-        "item": "name numbers 18, 19, 31, 82, 86 (and 42 in R4330)",
+        "item": "name numbers 18, 31, 82, 86 (and 42 in R4330); 19 = Cologne from the gloss since 14 Nov 2026",
         "blocker": "no-key-material",
-        "detail": "no gloss of the time names them; no nomenclator sheet"
+        "detail": "no gloss of the time names them, or the gloss is too faint to agree on (31 Hameln?, 82 Creutz?, 86 Ungemach?, one reading only); no nomenclator sheet"
       },
       {
-        "item": "about 30 clear words marked [?word]",
+        "item": "about 25 clear words marked [?word]",
         "blocker": "illegible",
         "detail": "resolution of the DECODE phone photographs"
       }
@@ -287,8 +296,8 @@
           "date": "2026-10-23",
           "note": "Clear German re-read on the DECODE photographs; cipher words decoded with the band key on figures re-read on crops (23 label corrections, bremen1631_corrections.tsv; key unchanged) and aligned word by word (bremen1631_aligned.txt: 132 cipher words, 118 equal to their decode, 10 clerk's slips read from the gloss of the time, 4 holes); name numbers 4, 5, 7, 17, 27, 32, 59, 83 from the glosses. b17 de: 0.600 plain, 0.843 explicit holes only; look-alike letters 8 of ~900 (0.9%). Open: R4330 opening paragraph (one cipher word, a few clear words), codes 18, 19, 31, 82, 86, 42."
         },
-        "read_share": 0.931,
-        "note": "24 Oct 2026: 93.1% of the words of bremen1631_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+        "read_share": 0.942,
+        "note": "24 Oct 2026: 93.1% of the words of bremen1631_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 14 Nov 2026 verification: 94.2% (777 words, 48 holes), still read in part."
       }
     ],
     "key_file": "texts/key.md"
