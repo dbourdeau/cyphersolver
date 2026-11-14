@@ -57,3 +57,14 @@ of friendship if both kings act as Catholic kings), but several clauses have hol
 ## 23 Oct 2026, r2d (Claude Opus 5.5)
 
 Regraded on the v2 measure (research/reading_audit/r2d_score.py, body only, every conjecture and unread stretch a hole): see the profile reading_review for the scores; now read. DECODE attachments re-opened (no decipherment). Image checks this pass (crops in the session scratchpad, r2d/morosini/crops): 202v ll. 8-9: a hole in the paper at the start of l. 8 ("si [...] enemigos"), so that stretch is illegible.
+
+## 14 Nov 2026: one-digit slips (Brice Dudout, with Claude Opus 5.5)
+
+README rule of 14 Nov 2026 (Meister no. 40 is the key of the period). Holes tested for one digit changed; candidates
+looked at on the DECODE R35 images. Closed:
+- 202r l. 13 "maio{+r}": 20 21 17 91 2 | 3 01 17 91 0 union; a 2 like those of 212 at the head of the line. Slip.
+- 202v l. 10 "colo{+r}": 25 91 50 91 2 | 62 5 de; a hooked figure DECODE reads 2 (or the clerk's final 1): read either way.
+- 202v l. 11 "religion": DECODE's "(?)" after 1 3 is a 5 (e) on the image. Misreading corrected.
+- 203r l. 12 "responde{+n}": 13 5 44 91 01 26 35 1 for 0 n (subject los dos Reies); a hooked 1, not a 0. Slip.
+Not counted: "camina[r]", "particola[r]" (212 is a valid a; no visible slip), the in-word letters that have no figure
+(seguri[d]ad, s[e]r, i[u]ntamente). Read share by words 38 -> 34 holes in 509 words, 0.925 -> 0.933: still read in part.

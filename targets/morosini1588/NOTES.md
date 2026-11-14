@@ -2,6 +2,8 @@
 
 Status: in progress
 
+**14 Nov 2026, one-digit slips (Brice Dudout, with Claude Opus 5.5; README rule of 14 Nov 2026).** Meister no. 40 is the key of the period, so the rule applies. The holes of R32, R33 and R35, the three letters under the read bar, were tested for the word the sense wants with one digit changed, and the candidates looked at on the DECODE images. R33: uole{+r} twice and {+p}iù are the encipherer's slips seen on the image; esenti and fatomi read from the figures; 78 -> 73 holes, read share 0.948 -> 0.952, **R33 now read**. R35: maio{+r}, colo{+r}, responde{+n} (slips) and religion (DECODE's queried figure is a 5); 38 -> 34 holes, 0.925 -> 0.933, still read in part. R32: the pages are covered by show-through, no slip can be seen; 0.938 unchanged. Word-final r is written with a hooked figure that DECODE reads 2 in the four places looked at (R33 uole twice, R35 maio and colo; the second maior of R35, 202v l. 20, was already read): the clerk's 2 for 1, or his final 1 with a flourish; each word counts as read either way. Details in texts/R33_reading.md and R35_reading.md ("Notes on the figures") and the reread logs.
+
 **23 Oct 2026, r2p (Claude Opus 5.5): the hole check finished for every record.** The 31 records r2m had not done
 (R17-R22, R27 rest, R28-R34, R36-R38, R39 rest, R40 rest, R41-R48, R52, R56, R57 rest, R58) were worked letter by
 letter: each hole located on its transcription line (`research/reading_audit/r2p_holes.py`), the line looked at on the

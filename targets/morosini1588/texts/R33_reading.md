@@ -26,7 +26,7 @@ tempo di comonicare questo negotio nela loro congregatione del clero, doue esend
 che io prima haueuo fati a parte et le promese che mi erano state fate, ci furono molti contrasti et molta diuisione;
 perché, se bene tuti in uniuersale lodauano la publicatione del concilio, nondimeno [f. 189v] ognuno, discendendo a
 considerare il suo particolare interese, truouaua dele dificoltà grandi et insoportabili. Et prima li capitoli
-diceuano di non uole[r] [?per]dere i loro priuilegi di esere [?esenti] da i loro uescoui; et perché questi sono in
+diceuano di non uole{+r} [?per]dere i loro priuilegi di esere esenti da i loro uescoui; et perché questi sono in
 numero di più di otanta et li uescoui non sono più che uenti, [et] per uedere di aquetarli molti di esi uescoui
 s'ofersero di dimandare unita[mente] con i capitoli a N. S. che li conseruase le loro esentioni. Altri non la uogliono
 intendere, dicendo che era cosa impertinente che 'l uescouo non potese coregere i uitii et gli abusi de i suoi
@@ -34,7 +34,7 @@ canon[i]ci, et che [?…]inouando [questo] disordine non si poteua aspetare frut
 grauauano per la pluralità et incompatibilità de' benefici che [?posedono]; altri per questa loro pretensa libertà
 […] dela chiesa galicana, che uogliono per pontiglio d'honore et per hauere questa superiorità [?fra] tute [l']altre
 nationi christiane [?mantenere] ostinatam[ente]. Onde, dopo longhe dispute et dopo hauere ridoto la nobiltà et il
-terzo stato nela loro uolontà, ritornarono dal Re et disero a S. M.tà che tuti insieme la ringratiauano di uole[r]
+terzo stato nela loro uolontà, ritornarono dal Re et disero a S. M.tà che tuti insieme la ringratiauano di uole{+r}
 publicare il concilio, ma perché ci uoria [f. 190r] il tempo almeno di [?dui anni] per dichiarare gli interesi del
 regno, la pregauano di publicarlo con riserua di quatro sole ecetioni: la prima, di riseruare l'autorità sua; la
 seconda, la libertà dela chiesa galicana; la terza, le esentioni dei capitoli; et l'ultima, i particolari priuilegi che
@@ -71,7 +71,7 @@ N. S. In che feci tuta quella più gagliarda [f. 191v] et eficace instanza che p
 dice che senza questa conditione non si uenga ad alcun acordo. S. M.tà mi dise che [?non] poteua sprezare l'autorità
 sua, né meno [?contra] il consenso di tuti li stati del suo regno fare una risolutione che potria causare qualche
 grande inconueniente con rouina et destrutione dele cose sue; che però mi pregaua di hauere un poco di pacientia,
-perché fra dui o tre giorni mi hauria fato chiamare, et dal suo guardasigilo fato[mi] intendere ala sua presenza tuto
+perché fra dui o tre giorni mi hauria fato chiamare, et dal suo guardasigilo fatomi intendere ala sua presenza tuto
 quello che ella hauese potuto fare, et che desideraua grandem[ente] di potermi dare sodisfatione, così per rispeto di
 N. S. come anco per mio particolare contento. Io disi a la maestà sua che non pretendeuo altro contento che l'honore
 del sig. Dio et il beneficio di questo regno; con che mi partii, et dopo non ho lasato di tratare il medesmo con tuti
@@ -84,7 +84,7 @@ molto bene quali fosero li miei ordini, et che però se il Re credese che questo
 [scr]iuere a N. S., perché quando io hauesi trapasato le mie comisioni haurei riceuto quella riprensione che meritauo.
 Questo è quello che sin qui si è fato, da che V. S. Ill.ma potrà uedere che sarà cosa molto dificile, et forse
 imposibile, di potere guadagnare questo punto che il concilio sia riceuto senza alcuna conditione, poiché né il Re né
-li stati lo uogliono sentire, et quelli che più lo douriano procurare, che sono quelli del clero, metono loro [?più]
+li stati lo uogliono sentire, et quelli che più lo douriano procurare, che sono quelli del clero, metono loro {+p}iù
 dificoltà de gli altri. Però prego V. S. Ill.ma farmi gratia di comandarmi distintam[ente] et risolutam[ente] quello
 che io dourò fare, senza rimetere alcuna cosa al mio giudicio, perché confeso che non saprei che partito pigliare,
 parendomi ragioneuole molto che il concilio sia publicato et liberam[ente] riceuto, et d'altra parte molto pericoloso
@@ -99,7 +99,20 @@ dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S
 - "sia riceuto […] liberam." (189r l. 7): "1 7 1 0 1 5 1" between riceuto and liberam. gives no word.
 - "di christiani, […] parue" (189r l. 8): "2 2 6" (226 catolici undotted? or a stray) left open.
 - "et […] et [?d]esiderio" (189r l. 12): DECODE has "? ? ?" (illegible to the transcriber); the d of desiderio missing.
-- "[?esenti]" (189v l. 4): 153 45 35 0 21 51 171, one stray 2.
+- "esenti" (189v l. 4): 153 45 35 01 15 171. DECODE gives "0 2 1 5 1 7 1"; on the image (DECODE R33, 14 Nov 2026) the
+  figure it reads as 2 has the same hooked form as the 1 that ends the line (171 = i), so 01 = n as in "esentioni"
+  (189v l. 8-9). Taken as a 2 it would be a one-digit slip for 01 (README, one-digit rule of 14 Nov 2026): read either
+  way.
+- One-digit slips (README, one-digit rule of 14 Nov 2026; the key is Meister no. 40, the key of the period sent to
+  Morosini in 1587), checked on the DECODE R33 images on 14 Nov 2026:
+  - uole{+r} (189v l. 4, "di non uole{+r} perdere"): 3 91 50 35 **2** 64 for 1 r. The figure is a hooked 2 (or the
+    clerk's final 1 with a flourish: then the r is as written); read either way.
+  - uole{+r} (189v l. 24, "di uole{+r} publicare"): 3 91 50 35 **2** 70 37 42 ... for 1 r; on the image a 2 with a flat
+    base before the 7 of 70. The encipherer's slip.
+  - {+p}iù (192r l. 16, "metono loro {+p}iù dificoltà"): **20** 17 173 for 70 p; on the image the first figure is a 2
+    of the same form as the 2 of 26 that follows, not a 7. The encipherer's slip.
+- "fatomi" (191v l. 11): 8 30 2 15 191 20 7, a lone null 8 before 30 f (the r2p parse took 8 3 for a null and left
+  "[mi]"); every figure carries the word.
 - "[?per]dere" (189v l. 4): "2 6 4 2 6 3 5 0 0 5": per = 64 written after a stray 2 6.
 - "[?…]inouando [questo]" (189v l. 12): the transcriber's "? 6 ? ?" and "? ? ? ?"; [questo] from the 6 of 166.
 - "[?posedono]" (189v l. 15): 70 91 45 35 26 9 8 8 19 8.
