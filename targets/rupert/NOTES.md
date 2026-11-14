@@ -172,8 +172,10 @@ f. 9/f. 10 texts against every key in ff. 25-109.
 ## Remaining gaps
 - f. 9 (R8623), whole cipher text: - blocker: no-key-material; none of the 73 Add MS 72438 keys nor Lasry's five SP 106 keys fits, and 108 letter
   groups are too few for a ciphertext-only rebuild.
-- f. 10 (R8624), whole cipher text: - blocker: no-key-material; no Add MS 72438 key and none of Lasry's five SP 106 keys fits; 300 letter groups over
-  ~99 homophones, short runs.
+- f. 10 (R8624), whole cipher text: - blocker: no-key-material; the key is identified (14 Nov 2026, issue #554: Digby-cabinet key no. 129, of
+  which only f. 77, names 559-580, survives in the volume) and about 45 of its values are fixed from the King's 1646 letters to Nicholas
+  (Evelyn iv. 178-179), but 190 of 715 groups take a value and the text does not read; the rest of key 129 or the contemporary
+  decipherment is not available (candidates: Add MS 72438 f. 11, Bodleian Tanner 59-60, TNA SP 16/514).
 - Maurice 7 July 1645: - blocker: no-key-material; key not in Add MS 72438 or on DECODE (Lasry's five SP 106 keys tried 22 Oct); 93 groups.
 - f. 104r (R8725), opening line and 21 nomenclator groups (466, 543, 534, 668, 643, 502, 769 ...): - blocker: no-key-material; the letter is in Lasry's SP106-8 (22 Oct 2026), but these groups are absent from R924, his only letter in that key, or unidentified there; deciphered in part, 4 of 15 sentences hold.
 - R8433 Trevor 1645, 54 letter groups: - blocker: too-short; no stable key from cribs/annealing, no print found.
@@ -183,6 +185,7 @@ f. 9/f. 10 texts against every key in ff. 25-109.
 - [x] siblings: all 115 DECODE records of Add MS 72438 / 18982 / 18983 listed; all 73 keys of Add MS 72438 screened by range; 6 letter tables applied; f. 106 (R8727) next to f. 107 proved to be its key; R8433 (Trevor, 18982 ff. 51-52) transcribed.
 - [x] clear-pages: none with the intercepts f. 9/f. 10 or f. 104; f. 25r index read (keys 80-139 with correspondents); f. 107's interlinear gloss used as crib.
 - [x] known-keys: 22 Oct 2026: Lasry's SP 106, SP106-2, -3, -5, -8 keys (sibling targets hm1645, sp106r787, goring1645, rupert1645/sp106r929, sp106r924) on all five numeric texts: SP106-8 deciphers f. 104 in part (Charles I to the Prince of Wales), the rest gibberish. Earlier: keys 118, 123, 125, the Digby-Walsingham key, R8744/R8745, the Parliament key R8741, Tomokiyo's 1644-45 royalist keys (Ormond-Rupert, Nicholas-Rupert May/July 1645): no fit on f. 9, f. 10, f. 104, R8433 or Maurice; f. 106 lower alphabet reads f. 107.
+- [x] known-keys (14 Nov 2026, issue #554, aaymeloglu): f. 10 is in Digby key no. 129 ("without name, from the Queen's Court" in the f. 25 index), the key of Charles I's letters to Nicholas of 24 June and 16 Aug 1646 printed with Nicholas's decipherments (Evelyn iv. 178-179); only f. 77 of it survives; f. 10 not read.
 - [x] print: Warburton iii (Maurice; no Trevor letter of the week), cryptiana, web search; 22 Oct: Clarendon State Papers ii and Bruce, Charles I in 1646 grepped for the f. 104 letter (Petrie 1935 lending-only); no decipherment in print for f. 9/f. 10/f. 104/R8433.
 - [x] key-rebuild: homophonic annealing on R8433 with and without cribs (chester/bristol) does not converge (54 letter groups over 36 values); f. 9 (108 letter groups) and f. 10 (300) too short for ciphertext-only over ~80-99 homophones; f. 107 homophones added to the f. 106 alphabet.
 - [x] retry: f. 104 transcription checked on the full image (no change), key gaps filled from Lasry's R924 interlinear and contexts (f104_key_additions.tsv), reading aligned word by word (0.267, kept as partial). f. 107 re-read with the extended alphabet (95.3%); remaining six words are blots or conjectures. The others need a 1646 royalist key that is not in the volume.
@@ -228,3 +231,30 @@ f. 9/f. 10 texts against every key in ff. 25-109.
   lynes, ioyfull, neuer, sattisfied, louing), **0.818 on explicit holes** (9 of 11 sentences); `b17_score.py` HOLES=1
   0.909. No look-alike alternates are involved (m/n and u/v share one sign in the key itself). The sentences hold for a
   reader, so f. 107 stays read; the six-word gap line in Remaining gaps is unchanged.
+
+## 14 Nov 2026 — issue #554 (aaymeloglu): the key of f. 10 identified as Digby key no. 129 (integration check)
+
+Claim (GitHub issue #554, from the contributor's public repository aaymeloglu/unsolved-ciphers, folder royalist-1646, CC0;
+files copied into `aaymeloglu_f10/`: `key129.txt`, `f10_ct.txt`, `f9_ct.txt`, their notes as `NOTES_aaymeloglu.md`): f. 10 is enciphered in
+Digby-cabinet key no. 129, "without name, from the Queen's Court" in the f. 25r index. Only one page of it survives in the volume, f. 77
+(R8701, names 559-580; listed above on 9 Oct as "a 559-580 names fragment" and passed over). The contributor's evidence:
+(1) f. 10 uses 562 twice and 572 once, which are Davenant and Mylord on f. 77 and read naturally ("to 329 Davenant to", "of the Mylord 496 and
+express"); (2) the King's letters to Nicholas of 24 June and 16 Aug 1646, printed with Nicholas's interlinear decipherment in Evelyn,
+*Diary and Correspondence* (1857) iv. 178-179, use the same word values (and 112, be 121, I 209, if 213, left 234, me 250, my 251, nor 269,
+not 270, of 280, or 281, send 341, to 360, with 409, where 412, which 413, write 422, you 429, Earl 503, Marquis 550, Hertford 520), all
+of which fit f. 10; (3) the fit falls in the word and name ranges, mostly lost from f. 77, which explains why the range screen of the surviving page
+missed it. The contributor marks f. 10 **not read**: fragments only. f. 9 is in a different, smaller key (to 343); 226 = London there by the key of the
+deciphered f. 4 intercept of 1645 (not checked here).
+
+Integration check (14 Nov 2026):
+- Evelyn iv. 178-179 (archive.org `diarycorresponde41evel`, djvu text fetched): every listed value is printed over its word there (209 I, 429 you,
+  360 to, 341 send, 250 me, 412 where, 413 which, 197 had, 112 and, 213 if, 251 my, 234 left, 409 with, 121 be, 281 or, 270 not, 550 Marq:,
+  520 H., 269 nor, 503 Earl, 280 of). The OCR prints 122 and 856 where the contributor reads 422 (write) and 356 (Southampton) from the
+  page scans; the scans were not opened here.
+- The contributor's f. 10 transcription and this folder's own (`f10_transcription.txt`, 9 Oct 2026) were made independently from the DECODE images. They
+  agree on 685 of about 720 groups; the differences are single digits and torn places.
+- Own script `aaymeloglu_f10/apply_key129.py`: 190 of 715 groups (26.6%) take a value from key129.txt; the output is fragments. f. 10 stays
+  decoded, not read (strictly, not decoded either).
+- Not checked: that f. 77 belongs to key 129 (R8701 is private on DECODE; no session here), beyond the two name values.
+- Credit: aaymeloglu, identification (outcome.credits). No page section is rewritten; one sentence is added in section 04 of docs/rupert.html.
+

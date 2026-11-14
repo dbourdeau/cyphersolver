@@ -10,7 +10,7 @@
    "year": 1568,
    "country": "Scotland",
    "route": "Edinburgh -> London",
-   "language": "unknown",
+   "language": "sco",
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
@@ -29,7 +29,7 @@
     "by": "published",
     "source": "Tomokiyo, cryptiana elizabeth.htm (image stewart.jpg returns 404)",
     "image_quality": "no images",
-    "notes": "Semicolon-separated file the measure tool does not split; counts from NOTES. BL viewer offline, so symbol identities are unchecked."
+    "notes": "Semicolon-separated file the measure tool does not split; counts from NOTES. BL viewer offline, so symbol identities are unchecked. 14 Nov 2026: the contributor of issue #553 re-transcribed from the DECODE R8345 image (aaymeloglu/transcription.txt), splitting five of Tomokiyo's symbols; the order and length agree with Tomokiyo's."
    }
   }
  ],
@@ -93,7 +93,11 @@
   },
   {
    "date": "2026-09-15",
-   "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
    "what": "Counts, IC, repeats; 'r 17 10' = the tried and not preferred.",
    "result": "worked"
   },
@@ -105,41 +109,113 @@
   },
   {
    "date": "2026-09-15",
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Homophonic annealing under Scots, English, French and Latin models.",
    "result": "failed"
   },
   {
    "date": "2026-09-15",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "Nulls, separators and merged variant families tested.",
    "result": "ruled out"
   },
   {
    "date": "2026-09-15",
-   "kind": "hypothesis", "technique": ["statistical test"],
+   "kind": "hypothesis",
+   "technique": [
+    "statistical test"
+   ],
    "what": "Rare symbols as word codes; matched control shows the test has no power.",
    "result": "failed"
   },
   {
    "date": "2026-09-15",
-   "kind": "crib", "technique": ["crib testing", "contextual inference"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
    "what": "Twenty words and names dragged over 730 placements; none supported.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Issue #553 (aaymeloglu) integrated: own decoder aaymeloglu/own_decode.py reproduces reading.txt; the 134-glyph sequence matches Tomokiyo's position by position apart from five splits; splits not checked on the R8345 image (private, no login); strict count 27/35 words = 77%.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "method": "not solved",
-  "method_basis": "Homophonic annealing under Scots, English, French and Latin models, null and word-code hypotheses and crib dragging on Tomokiyo's transcription gave no reading; matched controls were read.",
-  "contribution": ["none"],
-  "class": "not read",
-  "fraction_read": 0,
-  "verification": [
-   "matched control"
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "By the contributor (GitHub issue #553, aaymeloglu): a new glyph transcription from the DECODE R8345 image that splits five of Tomokiyo's symbols, then annealing over glyph-to-letter maps scored by Scots dictionary segmentation, with values held from a first run (sending, freindis, oure). The project's own attempt of Sept 2026 on Tomokiyo's transcription failed: Homophonic annealing under Scots, English, French and Latin models, null and word-code hypotheses and crib dragging on Tomokiyo's transcription gave no reading; matched controls were read.",
+  "contribution": [
+   "key recovered",
+   "transcription"
   ],
-  "notes": "Undetermined: name-heavy plaintext or word codes; needs the page or a second letter in the cipher.",
+  "class": "read in part",
+  "key": "partial",
+  "provenance": "contributed",
+  "fraction_read": 0.771,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "aaymeloglu/reading.md: words of the Scots reading, 27 of 35 read under the strict rule (holes: [Q], [Q2], [and], Carlyle, la??is, spil, e?, the last word), counted 14 Nov 2026",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "notes": "Reading by the contributor; transcription splits not checked on the image here (R8345 private, no login in the integration session). The project's own Sept 2026 attempt on Tomokiyo's transcription failed because his symbol 19 carries both 'the' and 'm'.",
+  "gaps": [
+   {
+    "item": "the five glyph splits (U/M, x/P, F/s, z3 shapes, e/c)",
+    "blocker": "not-attempted",
+    "detail": "check on the DECODE R8345 image with a login"
+   },
+   {
+    "item": "seven-sign last word (L4) and hapax glyphs Zz, t, x3, Xs",
+    "blocker": "too-short",
+    "detail": "one or two occurrences each in 134 glyphs"
+   },
+   {
+    "item": "person-signs 4b and Eb",
+    "blocker": "no-key-material",
+    "detail": "read as the Queen by sense only"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f213",
+    "label": "Cipher postscript, f. 213v",
+    "transcription": "aaymeloglu/transcription.txt",
+    "decryption": "aaymeloglu/reading.txt",
+    "reading": "aaymeloglu/reading.md",
+    "translation": "aaymeloglu/reading.md",
+    "state": "read in part",
+    "language": "sco",
+    "read_share": 0.771,
+    "summary": "Moray tells Wood that letting Mary remain at Carlisle and sending Lord Fleming home has done great harm, and that if she comes home it will ruin the whole, as far as the reading goes; the last word is unresolved."
+   }
+  ],
+  "key_file": "aaymeloglu/key.json",
   "credits": [
-    {"who": "tomokiyo", "role": "transcription", "note": "transcription of the Moray-Wood cipher (cryptiana elizabeth.htm), the only ciphertext available", "source": "cryptiana elizabeth.htm, \"Moray-Wood Cipher (1568)\""}
+   {
+    "who": "tomokiyo",
+    "role": "transcription",
+    "note": "transcription of the Moray-Wood cipher (cryptiana elizabeth.htm), the only ciphertext available",
+    "source": "cryptiana elizabeth.htm, \"Moray-Wood Cipher (1568)\""
+   },
+   {
+    "who": "aaymeloglu",
+    "role": "solution",
+    "note": "new transcription from DECODE R8345, key and reading of the postscript (GitHub issue #553)",
+    "date": "2026-11-13",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/553",
+    "published": true
+   }
   ]
  }
 }

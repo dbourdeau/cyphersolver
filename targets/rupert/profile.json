@@ -399,7 +399,8 @@
    "result": "worked",
    "technique": ["language-model scoring"]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "sibling key", "technique": ["key matching", "plaintext matching"], "what": "Issue #554 (aaymeloglu): f. 10 identified as Digby-cabinet key no. 129 (f. 25r index; surviving page f. 77, R8701, names 559-580) from 562 Davenant / 572 Mylord in f. 10 and the word values of Charles I's 1646 letters to Nicholas printed with their decipherment (Evelyn iv. 178-179). Checked here: the Evelyn values against the archive.org text; contributor's f. 10 transcription vs this folder's (685 of ~720 groups agree); own script aaymeloglu_f10/apply_key129.py: 190 of 715 groups take a value, fragments only.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -461,7 +462,7 @@
    {
     "item": "Add MS 72438 f. 10 (R8624)",
     "blocker": "no-key-material",
-    "detail": "no key in the volume nor Lasry's five SP 106 keys fits (22 Oct 2026); 300 letter groups over ~99 homophones"
+    "detail": "no key in the volume nor Lasry's five SP 106 keys fits (22 Oct 2026); 14 Nov 2026 (issue #554): the key is identified as Digby key no. 129, of which only f. 77 (names 559-580) survives; about 45 values fixed from Evelyn iv. 178-179; 190 of 715 groups take a value, no sentences; the rest of the key or the contemporary decipherment is needed (Add MS 72438 f. 11, Tanner 59-60, SP 16/514)"
    },
    {
     "item": "Maurice to Rupert, 7 July 1645",
@@ -494,7 +495,8 @@
   },
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "lower alphabet of the royalist key sheet f. 106 (DECODE R8727), and the partial interlinear gloss on f. 107 used as crib"},
-    {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed key TNA SP106-8 and his interlinear decipherment of R924 (DECODE, 2020), which decipher f. 104 in part"}
+    {"who": "lasry", "role": "key or decipherment used", "note": "reconstructed key TNA SP106-8 and his interlinear decipherment of R924 (DECODE, 2020), which decipher f. 104 in part"},
+    {"who": "aaymeloglu", "role": "identification", "note": "identified the key of Add MS 72438 f. 10 as Digby key no. 129 and fixed about 45 of its values (GitHub issue #554)", "date": "2026-11-13", "source": "https://github.com/dbourdeau/cyphersolver/issues/554", "published": true}
   ],
   "texts": [
    {

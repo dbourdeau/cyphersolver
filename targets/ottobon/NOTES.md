@@ -1,9 +1,11 @@
 # Marco Ottobon to Giovanni Mocenigo, 27 April 1589 (BNE Mss/994 ff. 34–38) — NOTES
 
-Status: read in part — key identified (Council of Ten's Zifra Prima, DECODE R1789 + two homophones); letter
-deciphered in part, 62.7 % of tokens measured (981/1,565, measure_rd.py, 9 Oct 2026, after the dec.py/fit.py
-re-reading; 46 % before). Open: ff.35v-36v and gaps of ff.37r-38r, blocked by the image resolution / register copy.
-See §9-§11, Remaining gaps, Escalation.
+Status: read in part, 14 Nov 2026, with the full transcription of GitHub issue #552 (aaymeloglu; section 13 at the end).
+Strict count 692 of 747 words = 92.6 %. The first piece, ff. 35r-36v, is read in part (311/349 = 89.1 %). The second piece, ff. 37r-38r,
+is read (381/398 = 95.7 %). The key is the Council of Ten's Zifra Prima (DECODE R1789) as it stands. The two "extra homophones" d83 and c86
+of 9 Oct were misreadings of d53 and h86 at 130 dpi. Every remaining gap is outside-blocked: gutter and binding losses, blots, and literal
+copyist forms with no second witness. Earlier status (superseded): 62.7 % of tokens measured (981/1,565, 9 Oct 2026), then
+decoded, not read (22-23 Oct 2026).
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: the second piece,
 ff. 37r-38r (the Senate's answer, sentences with scattered gaps). **Decoded, not read**: the first piece, ff. 35r-36v
@@ -597,14 +599,13 @@ without an anchoring phrase: neither the decoder nor a proposed text can be conf
 
 ## Remaining gaps
 
-Measured 9 Oct 2026 (measure_rd.py): 981 of 1,565 tokens read (62.7 %); f.35r 68 %, f.35v 48 %, f.36r 35 %, f.36v
-29 %, f.37r 70 %, f.37v 79 %, f.38r 84 %. The unread tokens are where the first-pass digits are too corrupt for the
-calibrated decoder (dec.py) or a crib fit (fit.py) to fix them and no anchoring sense exists; an image pass at 2x on
-the DECODE scans (previous pass) did not resolve them.
-- ff.35v-36v, 316 tokens (f.35v ll.3-6, 10-11, 15, 20; f.36r ll.4, 6, 8-11, 14-16; f.36v ll.2-3, 5-6, and gaps in the read lines) - blocker: needs-physical-access; the only images (BNE scan, ~130 dpi in the PDF, ~1.4x on DECODE) do not separate 2/7, 3/5/8, 0/8 and the bleed-through is heavy; a 400-dpi BNE reproduction of ff.35-38 or the register copy (ASVe, Senato Secreta, Deliberazioni Francia 1589, 27 April) is needed.
-- f.35r, 69 tokens (ll.1-3 and 12, about 50, plus gaps in read lines) - blocker: illegible; ll.1-3 under the stain at the head of f.35r, l.12 too faint; no better image than the BNE scan exists online.
-- ff.37r-38r (decoded, not read since 23 Oct 2026), 199 unread tokens (f.37r ll.1-2, 7, 10, 22, 24; f.37v ll.1, 3; gaps in read lines) and 155 tokens valued by the crib fit on sense alone - blocker: needs-physical-access; unresolved digits and gutter losses; the text of this second piece (the Senate's answer to the French ambassador) should be in de Maisse's letter-book "avec les responses", BL Add MS 30635 (not digitised), and in the ASVe register.
-- f.37r top-right header (four small groups) - blocker: illegible; too small to transcribe at this resolution.
+From 14 Nov 2026 (issue #552 transcription; strict count `aaymeloglu/strict_count.py`). Superseded list of 9 Oct-23 Oct 2026 kept
+in the history above (316 + 69 + 199 tokens unread on the 130-dpi pass).
+- f. 35v, short connections and line endings hidden in the gutter (e.g. del[la cor]ona l. 1, [tol]togli, col[...] l. 19) - blocker: needs-physical-access; one to three groups at each right edge are under the binding on every available image; needs the volume or a photograph of the opened leaf.
+- f. 36r l. 8, two blotted groups before *benissimo*, and the ending after *di nostra* on f. 36v l. 6 - blocker: illegible; blots, no second copy.
+- Label disputes f. 35r l. 3 (a84/a94), f. 35v l. 20 (a92/a94), f. 38r l. 9 (f63/f67), and the other 45 alternative or unread signs - blocker: illegible; not separable on the BNE scans (1100 px per page).
+- Literal copyist forms *recessimo*, *[po]tergo*, *soletione*, *giussima*, *crirtissimo*, *tempo* for *tempi* - blocker: needs-physical-access; errors of the cipher clerk, readable in sense but not as written; only the Senate's register copy (ASVe Senato Secreta reg. 87, 27 Apr 1589) would give the intended words.
+- f. 37r top-right header (four small groups) - blocker: illegible; too small to transcribe at this resolution.
 
 ## Escalation
 
@@ -616,14 +617,15 @@ Section 0a of the writeup skill:
 - [x] clear-pages: Valle's clear heading on f.34r, the clear passage of ff.36r-36v (postmaster of Lyon, intercepted
   letters of 28 March), the protocol and the address on f.38v read; none is a decipherment. No clear copy of the
   letter in the volume or on DECODE.
-- [x] known-keys: R1789 (Zifra Prima, CX b.4 reg.16) is the key, adopted with d83 = a and c86 = o (fourth
-  session; 89 % decoder agreement shows no second key is mixed in); R1790 (same register) and R1788 checked and not
+- [x] known-keys: R1789 (Zifra Prima, CX b.4 reg.16) is the key, as it stands (14 Nov 2026: d83 and c86 were misreadings
+  of d53 and h86; first adopted with d83 = a and c86 = o, fourth session; 89 % decoder agreement shows no second key is mixed in); R1790 (same register) and R1788 checked and not
   this system; the 1590/1595 Venetian ciphers R1843/R1870 are of the zifra-granda family.
 - [x] print: CSP Venice viii (Mar-June 1589), Hübner *Sixte-Quint* ii-iii (Doge to Badoer 29 April and 13 May 1589:
   parallel wording only), Desjardins *Négociations* v, A. Morosini *Historia Veneta* XIII, De Thou XCV: no text of the
   letter or of the answer to de Maisse. Manuscript copies: ASVe Senato Secreta register; BL Add MS 30635-30637.
 - [n/a] key-rebuild: the key is the archival sheet R1789 and covers every code read; the two homophones the sheet
   lacks were found from context; no code among the 981 tokens read needs a value the sheet does not give.
+- [x] retry (14 Nov 2026): issue #552 (aaymeloglu) re-transcribed all seven pages from the public BNE scans (1100 px per page, CC BY 4.0) and read both pieces with R1789 as it stands; 1,537 of 1,585 group slots are plain lookups.
 - [x] retry (23 Oct 2026): DECODE images re-fetched, no new material; first piece kept decoded, not read
 - [x] retry: 9 Oct 2026, every unread line retried computationally: calibrated noisy-channel decoder (dec.py, 89 %
   agreement with the hand reading on held-out pages) and crib fits of proposed texts (fit.py, chance level 10 % per
@@ -659,3 +661,46 @@ Section 0a of the writeup skill:
   the full-resolution BNE viewer images (GET_IMAGES.md) need a browser session.
 - Result: both pieces decoded, not read; class `not read`, method `not solved` (the R1789 match stays in method_basis),
   fraction_read 0. The page and README still describe it as read in part (not edited in this sweep).
+
+## 13. Issue #552 (aaymeloglu): a full transcription and reading (integration check, 14 Nov 2026)
+
+Claim (GitHub issue #552; the contributor's public repository aaymeloglu/unsolved-ciphers, folder ottobon-1589, CC0). Copied into
+`aaymeloglu/`: `transcription.json` (118 cipher lines: groups, literal key output, editorial reading), `key.json` (their excerpt
+of R1789: every entry used or considered), `READING.md` (Italian and English of both pieces, with notes on every repair),
+`TRANSCRIPTION.md`, `SOURCES.md` and their notes as `NOTES_aaymeloglu.md`. Derived here: `ct_first.txt`, `ct_second.txt`,
+`rd_first.txt`, `rd_second.txt` (the same lines as plain text). The page images (`pages/f34r-f38r.jpg`, BNE public scans) were not copied.
+- A full reading of all seven cipher pages with Ziffra prima (R1789) alone. No other key and no dispatch-specific values were needed.
+  The transcription comes from the public BNE scans, not the 130-dpi copy used here. Most of the 7/2, 8/0 and 3/5/8 trouble disappears
+  at that resolution.
+- 1,585 group slots: 1,537 straight lookups, 48 uncertain (alternative labels, unread signs), 54 supplied readings in brackets.
+- The contributor: "the transcription is context-assisted (repeated-sign comparisons by Codex agents, then an independent editorial
+  review), not a blind validation. Unmarked labels can still be wrong." Tools: Claude Code and Codex agents.
+- Content. The French ambassador is **Gerolamo Gondi**, named in clear key values on f. 35r l. 2 and in the heading of the
+  second piece, f. 37r l. 2 ("Copia della risposta fata al signor Gondi, ambasc[iatore] di Francia"). The first piece: Gondi came to
+  Venice by the 15th, set out Henry III's troubles and needs in two audiences, asked Venice to help him against the imminent danger
+  to his crown, and invited it to a closer league. Venice excused itself, sent Mocenigo a copy of its answer with instructions on how to
+  present it, and reported the Lyon postmaster's news of intercepted despatches (clear passage). The second piece (24 April 1589): no help for now, because
+  of the present conditions; Venice will again intercede with the Pope, as it did over Saluzzo, so that Sixtus V favours the King's most
+  just cause.
+
+Integration check:
+- Own decoder `aaymeloglu/own_decode.py`. Every group of their transcription was looked up in this folder's own R1789 transcription
+  (keys/zifra_prima_R1789.tsv, 9 Oct 2026), not in their key.json. 1,512 of the 1,537 lookups give the same value in both independent key
+  transcriptions. The other 25 differ in notation only ([1] / #1, null '' / '_', Sua Maesta / Sua M.ta, ambasc / Ambassador, cusi / Cosi,
+  ilqual / il qual). No group is missing from the R1789 table here.
+- d83 and c86 do not occur in their transcription. It has d53 80 times and h86 37 times where the 130-dpi pass read d83 and c86. That
+  is what `keys/ottobon_overrides.tsv` already suspected ("Could also be h86 = o misread as c86"; "the d53 of the sheet written/read with an
+  8-like 5"). The overrides are withdrawn: the key is R1789 unchanged.
+- Images. About 50 groups were compared on the contributor's copies of the BNE scans: f. 37r ll. 1-2 (27 groups, including the date
+  1589 a 24 april) and f. 35v ll. 9-10 (25 groups, "in qualche unione di lega"). They agree, with one doubtful first letter (f. 35v l. 10, g98, could be
+  a98). The BNE viewer still refuses scripts (GET_IMAGES.md).
+- Strict count (`aaymeloglu/strict_count.py`, README read bar). Every word with a supplied or restored part, a ? or a [sic] form is a hole,
+  abbreviation expansions such as ambasc[iatore] included. First piece 311/349 = 89.1 %, second piece 381/398 = 95.7 %, whole
+  692/747 = 92.6 %. The contributor gives slot grades, not a word share.
+- The reading reads: both pieces are connected chancery Italian, and the contributor's English follows it. Romanin VI p. 409 (cited by the
+  contributor, not opened here) gives Venice's 1589 answer to Henry III in the same terms.
+- Corrections to this folder's earlier text: the French ambassador is Gondi, not de Maisse (de Maisse was the resident ambassador; the
+  letter names Gondi, an envoy who arrived in April). The 22-23 Oct verdict "decoded, not read" for both pieces is superseded.
+- Class: read in part (92.6 %); the second piece read. Method unchanged: read after matching with key from external sources. Provenance
+  mixed: the project matched the key (9 Oct 2026), and the contributor transcribed and read the letter. Credit: aaymeloglu, solution.
+

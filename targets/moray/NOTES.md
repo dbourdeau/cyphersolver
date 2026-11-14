@@ -1,4 +1,6 @@
-# Regent Moray to John Wood, Edinburgh, 13 July 1568 (BL Add MS 32091 f. 213) — attempted 2026-09-15, not solved
+# Regent Moray to John Wood, Edinburgh, 13 July 1568 (BL Add MS 32091 f. 213) — attempted 2026-09-15, not solved; read in part by a contributor 2026 (issue #553)
+
+Status: in progress. Read in part (strict 27/35 words = 77 %) with the key of GitHub issue #553 (aaymeloglu; section "14 Nov 2026" at the end). The five glyph splits the reading rests on are not yet checked on the image (DECODE R8345, login), so no page yet.
 
 Cryptiana "Moray-Wood Cipher — A Scotch Diplomatic Cipher (1568)" (unsolved list; Tomokiyo's article `elizabeth.htm`,
 section "Moray-Wood Cipher (1568)"): "Although the cipher seems simple, the short ciphertext is not deciphered."
@@ -155,3 +157,47 @@ would change the frequency profile the controls were matched to.
 BL Add MS 4136 f. 33 (DECODE R2989) has a 39-sign line from John Wood to Cecil, 6 Sept 1568, in the same symbol
 families (x and z with variants, g, o, e, f). See `../wod1568/NOTES.md`; Bain ii no. 804's deciphered phrase from
 that letter does not align with the line, so the Hatfield original is the next source to see.
+
+## 14 Nov 2026 — issue #553 (aaymeloglu): read in part (integration check)
+
+Claim (GitHub issue #553; the contributor's public repository aaymeloglu/unsolved-ciphers, folder moray-1568, CC0; copied into
+`aaymeloglu/`: `transcription.txt`, `key.json`, `reading.txt`, their notes as `NOTES_aaymeloglu.md`, `LAST-WORD-AUDIT.md`,
+`FRESH-MANUSCRIPT-REVIEW.md`, `ONLINE-SOURCES.md`): DECODE has the page after all, **R8345** ("Add MS 32091 f 213-214", "Moray
+[transc]"), which the 15 Sept search here missed. The contributor transcribed the postscript glyph by glyph from it (134 glyphs, 33 labels).
+Their solver: annealing over glyph-to-letter maps, scored by dictionary segmentation against a Scots corpus. Unconstrained runs did not
+converge. One run gave *sending*, *freindis*, *oure*; holding those values and re-annealing gave the rest. The key is a simple substitution with
+a few homophones and word-signs (U = the, o2 = and, 4b and Eb = a person or party, read as the Queen by sense). Reading and translation in
+`aaymeloglu/reading.md`: the allowing of [the Queen] to remain in Carlisle and the sending home of Lord Fleming has done great harm; if [she]
+comes home there, ... our friends ... (last word unresolved). Context (contributor): Mary moved from Carlisle to Bolton on 13-15 July 1568;
+Fleming was back in Scotland by 21 August (Bain ii no. 775). The contributor says the Wood -> Cecil line (Add MS 4136 f. 33, R2989;
+targets/wod1568) uses the same glyph repertoire but a different key: fixing its twelve values here scores no better than shuffles.
+Contributor's figures: 119 S, 14 M, 1 I of 134 glyphs; key-shuffle z = 17.0; four synthetic Scots controls.
+
+Integration check (14 Nov 2026):
+- Own decoder `aaymeloglu/own_decode.py` (not their verify.py, which needs their cipherkit package): the reading.txt letters reproduce exactly.
+- The transcription against Tomokiyo's (`elizabeth_moray.txt`, made independently): both have 134 glyphs, and the order matches position by position.
+  The contributor splits five of Tomokiyo's symbols: 19 into U (the, 4) and M (m, 5); x into x (e, 12) and P (v, 2); s into F (d, 2) and
+  s (p, 1); z3 into three; e into e (f, 3) and c (r, 1). Every other symbol corresponds one to one. This explains why the attacks here failed:
+  Tomokiyo's 19 carried both *the* and *m*.
+- The splits rest on the image. R8345's ciphertext is private on DECODE, and no login was available in this session. **Not checked.**
+- Strict count (README read bar): 27 of 35 words = 77 %, read in part. Holes: [Q], [Q2], [and], Carlyle (M value plus a slip), la??is, spil, e?,
+  the last word. The contributor says "most of it reads".
+- Controls: z = 17 is not reproduced (needs their corpus). Overfitting risk is real: the key was found by a dictionary-guided annealer on 134 glyphs.
+  What weighs against it: long words that no crib list supplied (*sending*, *freindis*, *Fleming*, *Carlyle*) and content that fits 13 July 1568.
+- Prior art: none found (Bain does not calendar the letter; one web search, 14 Nov 2026). By the contributor's record the reading was on GitHub on
+  18 Sept 2026.
+- Outcome: key recovered from ciphertext-only, by the contributor (provenance contributed). Credit: aaymeloglu, solution.
+
+## Remaining gaps
+- The five glyph splits (U/M, x/P, F/s, the z3 shapes, e/c): - blocker: not-attempted; check them on the DECODE R8345 image (login), which is workable.
+- The seven-sign last word (L4) and the hapax glyphs Zz, t, x3, Xs: - blocker: too-short; each occurs once or twice in 134 glyphs.
+- The person-signs 4b and Eb ([Q], [Q2]): - blocker: no-key-material; read as the Queen by sense only, no key sheet for this cipher.
+
+## Escalation
+- [ ] siblings: Wood -> Cecil, Add MS 4136 f. 33 (R2989, targets/wod1568), same glyph families, different key (contributor); not re-tested here.
+- [x] clear-pages: the clear letter round the postscript is on R8345 (not seen here).
+- [ ] known-keys: the Donibristle "Quein's Cipher" (HMC 6th Report) has a different symbol set (section above).
+- [x] print: Bain ii, HMC; no clear text in print.
+- [x] key-rebuild: done by the contributor (annealing with word segmentation), reproduced mechanically here.
+- [ ] retry: check the splits and the last word on the R8345 image with a DECODE login.
+

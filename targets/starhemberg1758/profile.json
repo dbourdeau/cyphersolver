@@ -1,0 +1,197 @@
+{
+ "schema_version": 1,
+ "target": "starhemberg1758",
+ "title": "Georg Adam Starhemberg (Paris) to the Austrian envoy at Madrid, 23 May 1758 (Pillon collection; Cryptiana)",
+ "documents": [
+  {
+   "id": "1758-05-23",
+   "shelfmark": "Alexandre Pillon collection (no archive shelfmark known); transcribed on Cryptiana variable2.htm",
+   "date": "23 May 1758",
+   "year": 1758,
+   "country": "Austria",
+   "route": "Georg Adam Starhemberg (Paris) -> Austrian envoy at Madrid [Rosenberg?]",
+   "language": "de",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No clear copy or decipherment known; the clear opening and closing frame the cipher."
+   },
+   "length": {
+    "tokens": 1726,
+    "distinct": 10,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Tomokiyo's Cryptiana transcription from Pillon's image (1,721 digits) plus five digits read by the contributor of issue #555 from manuscript photographs",
+    "image_quality": "no images",
+    "notes": "No image in the project's hands; the photographs are Pillon's and not shareable. Tomokiyo's digits re-fetched 14 Nov 2026 agree with the contributor's apart from the five insertions. Length: 1,726 digits (symbols); 413 units in the contributor's parse (units.txt, measured: 413 tokens, 223 distinct)."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "code"
+  ],
+  "summary": "Austrian two-table numeric code of 1752 (Clavis Prima and Secunda), figures written without break: 2-digit and 5-digit (31xxx) units, with switch, control and null units.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 10,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "notes": "Key per the contributor: DECODE R1695 and R1698 (1752 tables), R1696/R1697 instructions and worked examples; not checked here."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Tomokiyo, Cryptiana variable2.htm, lists it as non-decrypted; one web search 14 Nov 2026 found nothing",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "transcription",
+   "key from archive",
+   "images"
+  ],
+  "attack": "key from archive",
+  "human_role": "Contributed result (GitHub issue #555, aaymeloglu): the contributor matched the 1752 tables to the digit stream and checked the photographs; the project only checked and filed it. The contributor names OpenAI Codex as the tool used.",
+  "tools": [
+   "two-table parse and alignment (contributor's run_checks.py, not run here)",
+   "own_check.py (project's own check)"
+  ],
+  "models": [
+   "unknown"
+  ],
+  "first_date": "2026-11-14",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-09-21",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "By the contributor (issue #555, by the contributor's record): the 1752 Austrian Prima/Secunda tables (DECODE R1695/R1698) applied to Tomokiyo's digits; two-table parse matched to the stream; five digits added from the photographs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Integration check: Tomokiyo's 1,721 digits re-fetched; difflib shows exactly three line-end insertions (1+2+2) in the contributor's 1,726; own_check.py: the 413 units cover the stream exactly, 389 agree with the contributor's tables, 14 are documented alternatives or values missing from their tsv excerpt; key tables and photographs not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "Strict count of the German reading of the cipher passage (aaymeloglu/edition.md): 170 of 188 words = 90.4% (restored letters, [?] words and the defective 119 as holes).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Cryptiana (non-decrypted), catalogue.json and leads.json (not listed), one web search (Starhemberg 1758 Farinelli Minorca cipher): no prior decipherment found.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "read after matching with key from external sources",
+  "method_basis": "The 1752 Austrian Clavis Prima/Secunda (DECODE R1695/R1698), matched to the digit stream by the contributor of issue #555.",
+  "contribution": [
+   "decipherment with ambiguous key",
+   "transcription"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "provenance": "contributed",
+  "fraction_read": 0.904,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "aaymeloglu/edition.md, German of the encrypted passage: 170 of 188 words read under the strict rule (counted 14 Nov 2026)",
+  "verification": [
+   "historical consistency"
+  ],
+  "codes_open": {
+   "open": 2,
+   "total": 223,
+   "tokens_open": 2
+  },
+  "gaps": [
+   {
+    "item": "five digits from the photographs and eleven digit repairs",
+    "blocker": "needs-physical-access",
+    "detail": "photographs are Pillon's, not shareable"
+   },
+   {
+    "item": "the 1752 key tables as transcribed by the contributor (stat?, bereit?, Verlangen?, gege)",
+    "blocker": "not-attempted",
+    "detail": "check on DECODE R1695/R1698 with a login"
+   },
+   {
+    "item": "the defective 119 at the recto/verso join",
+    "blocker": "illegible",
+    "detail": "writer's error, no second copy"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "1758-05-23",
+    "transcription": "ciphertext.txt",
+    "decryption": "aaymeloglu/alignment.tsv",
+    "reading": "aaymeloglu/edition.md",
+    "translation": "aaymeloglu/edition.md",
+    "state": "read in part",
+    "language": "de",
+    "read_share": 0.904,
+    "summary": "Starhemberg hopes the memorandum given to Wall will bring Spain into the war or towards an honourable peace, reads the matching statements of Farinelli and Wall as a sign that the cession of Minorca would bring Spain in against England and Prussia, and tells the envoy to keep working on Wall until the courier Zinner arrives."
+   }
+  ],
+  "key_file": [
+   "aaymeloglu/working-prima-v4.tsv",
+   "aaymeloglu/working-secunda.tsv"
+  ],
+  "credits": [
+   {
+    "who": "aaymeloglu",
+    "role": "new cipher with solution",
+    "note": "reading of the cipher passage with the 1752 tables, five digits added from the photographs (GitHub issue #555)",
+    "date": "2026-11-13",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/555",
+    "published": true
+   },
+   {
+    "who": "tomokiyo",
+    "role": "transcription",
+    "note": "Cryptiana transcription (1,721 digits) and description, variable2.htm"
+   },
+   {
+    "who": "pillon",
+    "role": "pointer",
+    "note": "provided the image to Tomokiyo; photographs held by him"
+   },
+   {
+    "who": "decode",
+    "role": "key or decipherment used",
+    "note": "1752 Austrian Prima/Secunda tables, DECODE R1695/R1698"
+   }
+  ],
+  "notes": "Recipient's name not in the letter; Rosenberg by context only. codes_open: the two malformed units {30073} and {33139} of the manuscript parse; the defective 119."
+ }
+}
