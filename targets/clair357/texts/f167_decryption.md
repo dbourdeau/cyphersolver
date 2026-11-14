@@ -23,14 +23,19 @@ continuous clear text. The glossed part is given as the glosses read, and figure
 > [au]mosnier [corrected "aon" over a struck word] cest [?] qui venoit en ce pays, … compagnye et … ressentira
 > [?] richement … que me donn[e] … a pense … tout ce bruict que vous recommandiez … pour ne me sembler a propos
 > de le f[aire]. Cependant ne pressé ne comprise [?] que sont les seulles causes qui vous y doivent precipiter. Je
-> croy que faisant des stances [?] et autres places qui vous ont esté distraictes vous les pourrez avoir ou du
-> moings faire congnoistre que vous n'y quictez rien. La poursuite ne les travaux [?] de la brouillerie du Roy de
-> Navarre et de vous, que je tiens tres difficile pour la qualité que chascun de vous a prinse, luy de [protecteur?]
-> … Catholiques … Huguenotz … qui passe avant. ✝
+> croy que faisant instance des autres places qui vous ont esté distraictes vous les pourrez avoir ou du
+> moings ferez congnoistre que vous ne quictez ny la poursuicte ny l'esperance pour la reconciliation du Roy de
+> Navarre et de vous, que je tiens tres difficile pour la qualité que chascun de vous a prinse, l'un de proteger les
+> Catholiques, l'autre les Huguenotz, sans l'autre qui passe avant. ✝
 
-The last sentence is uncertain. The image seems to show "luy de protecteur les Catholiques … les Huguenotz", but the
-word before "les Catholiques" may not be "protecteur", and the words between are not read. The sense expected is that
-Navarre protects the Huguenots and the addressee the Catholics. It needs the matching cipher words decoded.
+The last three sentences were corrected on 14 Nov 2026 from the cipher itself (Brice Dudout, PR #572): he transcribed
+the seven figure lines of f. 167r before the ✝ (`texts/f167r_l23-29_figures_dudout.txt`), decoded them with Tomokiyo's
+table and re-read the copy against the decode. The first pass had "faisant des stances [?] et autres places", "que vous
+n'y quictez rien. La poursuite ne les travaux [?] de la brouillerie" and "luy de [protecteur?] … Catholiques …
+Huguenotz …". The cipher has *ferez* (35 28 43 28 41) where the copy was read *faire*; the copy's word ends in the
+same z as *pourrez* on the image, and *ferez* is adopted. The sentence is about the hope of a reconciliation between
+Navarre and the addressee, which the writer holds very difficult because one protects the Catholics and the other
+the Huguenots.
 
 ### f. 167r from the ✝ (interlinear decipherment)
 

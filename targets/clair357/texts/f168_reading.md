@@ -19,6 +19,6 @@ laissé seul abandonné. Le bruit que ces jours icy [?] avoit couru par tout que
 [au]mosnier cest [?] qui venoit en ce pays, … compagnye et … ressentira [?] richement … que me donn[e] … a pense … tout
 ce bruict que vous recommandiez … pour ne me sembler a propos de le f[aire]. Cependant ne pressé ne comprise [?] que sont
 les seulles causes qui vous y doivent precipiter. Je croy que faisant instance des autres places qui vous ont esté
-distraictes vous les pourrez avoir ou du moings faire congnoistre que vous ne quictez ny la poursuicte ny l'esperance
+distraictes vous les pourrez avoir ou du moings ferez congnoistre que vous ne quictez ny la poursuicte ny l'esperance
 pour la reconciliation du Roy de Navarre et de vous, que je tiens tres difficile pour la qualité que chascun de vous a
 prinse, l'un de proteger les Catholiques, l'autre les Huguenotz, sans l'autre qui passe avant. ✝

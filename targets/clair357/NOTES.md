@@ -54,8 +54,10 @@ interlinear glosses:
 | 92 81 | et que | et que |
 | 25 28 | de | d e |
 
-The key-based reading of the upper f. 167r also matches f. 168. For example, the run "…25 28 88 22 20 24 26 88 72 82 70
-14 | 18 28 …" reads "de[s] autres pla|ce[s]", and f. 168 has "…et autres places qui vous ont esté distraictes". The line
+The key-based reading of the upper f. 167r also matches f. 168. For example, the run "…25 28 82 22 20 24 26 88 72 82 40
+70 14 18 28 82 …" reads "des autres places", and f. 168 has "…des autres places qui vous ont esté distraictes" (the
+third group is 82, s, on the image, not 88 as first transcribed, and the run stands on one line: re-read by Brice
+Dudout, 14 Nov 2026; 22 is a null there). The line
 glossed "pour ne me sembler a propos de le faire" matches f. 168 "…ne me sembler a propos de le f[aire]".
 
 Additions to the key:
@@ -64,6 +66,10 @@ Additions to the key:
 - **66** and 45 31 are nulls or signals (for example "C 66 35 24 64 87" = "C [null] Fumé"). 45.31.73.65.21 at the
   opening of the letter and again before D are dotted groups outside the text stream.
 - **87 = e** and **71 = a** (in "visadmiral" and "tres confident").
+- From ll. 23-29 decoded against the copy (Brice Dudout, 14 Nov 2026; 293 of 311 letters agree): **46 = les** (three
+  times), **94 = t** (*distraictes*, *tres*), **89 = ff** (*difficile*), **33 = c** (*chacun*); once each and less sure:
+  30 = p(o) in *pour* at a line end, 75 = d and 90 = s in *distraictes*, 79 = r(r) in *pourrez*, 48 a null in
+  "ne 48 quictez". 87 also stands once where the copy has no letter ("prinse 87 l'un"), so 87 = e rests on *Fumé* alone.
 - Nomenclator signs:
 
 | Sign | Meaning | Status |
@@ -73,7 +79,8 @@ Additions to the key:
 | && | Monsieur de Mayne | Tomokiyo; glossed "Monsieur du Mayne" on the verso |
 | R | Navarre | glossed "Navarre" on f. 167r l. 33; probably Nérac |
 | ✝ C | head of a proper-name group | before "Fumé" and elsewhere |
-| ⊖ | uncertain | near "Huguenotz" in the glosses, not confirmed |
+| ⊖ | Huguenotz | l. 29: "l'autre 46 ⊖" = *l'autre les Huguenotz* in the f. 168r copy (14 Nov 2026) |
+| double-barred cross (partly under a blot) | Catholiques | l. 29: "proteger 46 [sign]" = *proteger les Catholiques* in the copy (14 Nov 2026) |
 | Ω, ∞, ✝o | uncertain | Ω with Villeroy; the others stand for places or people named on the verso |
 
 ## Text
@@ -99,14 +106,19 @@ continuous clear text. The glossed part is given as the glosses read, and figure
 > [au]mosnier [corrected "aon" over a struck word] cest [?] qui venoit en ce pays, … compagnye et … ressentira
 > [?] richement … que me donn[e] … a pense … tout ce bruict que vous recommandiez … pour ne me sembler a propos
 > de le f[aire]. Cependant ne pressé ne comprise [?] que sont les seulles causes qui vous y doivent precipiter. Je
-> croy que faisant des stances [?] et autres places qui vous ont esté distraictes vous les pourrez avoir ou du
-> moings faire congnoistre que vous n'y quictez rien. La poursuite ne les travaux [?] de la brouillerie du Roy de
-> Navarre et de vous, que je tiens tres difficile pour la qualité que chascun de vous a prinse, luy de [protecteur?]
-> … Catholiques … Huguenotz … qui passe avant. ✝
+> croy que faisant instance des autres places qui vous ont esté distraictes vous les pourrez avoir ou du
+> moings ferez congnoistre que vous ne quictez ny la poursuicte ny l'esperance pour la reconciliation du Roy de
+> Navarre et de vous, que je tiens tres difficile pour la qualité que chascun de vous a prinse, l'un de proteger les
+> Catholiques, l'autre les Huguenotz, sans l'autre qui passe avant. ✝
 
-The last sentence is uncertain. The image seems to show "luy de protecteur les Catholiques … les Huguenotz", but the
-word before "les Catholiques" may not be "protecteur", and the words between are not read. The sense expected is that
-Navarre protects the Huguenots and the addressee the Catholics. It needs the matching cipher words decoded.
+The last three sentences were corrected on 14 Nov 2026 from the cipher itself (Brice Dudout, PR #572): he transcribed
+the seven figure lines of f. 167r before the ✝ (`texts/f167r_l23-29_figures_dudout.txt`), decoded them with Tomokiyo's
+table and re-read the copy against the decode. The first pass had "faisant des stances [?] et autres places", "que vous
+n'y quictez rien. La poursuite ne les travaux [?] de la brouillerie" and "luy de [protecteur?] … Catholiques …
+Huguenotz …". The cipher has *ferez* (35 28 43 28 41) where the copy was read *faire*; the copy's word ends in the
+same z as *pourrez* on the image, and *ferez* is adopted. The sentence is about the hope of a reconciliation between
+Navarre and the addressee, which the writer holds very difficult because one protects the Catholics and the other
+the Huguenots.
 
 ### f. 167r from the ✝ (interlinear decipherment)
 
@@ -151,11 +163,30 @@ The sender's signs at the foot of f. 167v are not identified.
 
 ## Open
 
-- Word-by-word decoding of the ~30 cipher lines above the ✝, to check f. 168 phrase by phrase. So far this was done
-  on sample runs only, all of which agreed.
+- Word-by-word decoding of the cipher lines above the ✝, to check f. 168 phrase by phrase: done for ll. 23-29 (the
+  seven lines before the ✝) by Brice Dudout on 14 Nov 2026; ll. 1-22 are not transcribed yet, and the doubtful words of
+  the copy there ("Charry …", "Nemours [?]", "vingt [?]", "[au]mosnier …") would be settled the same way.
 - Several uncertain words in the f. 168 transcription (ll. 2-3, 6-7, 17-19).
 - The f. 167v glosses, especially the proper names at Cambaronne [?] and Coride [?], and the sender's signs.
 - Identity of Fumé (a vice-admiral of Guyenne of that name, probably of the Fumée family) and of the addressee.
+
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) transcribed the seven figure lines of
+f. 167r before the ✝ (266 groups, Gallica canvas 331) and decoded them with Tomokiyo's table and the additions above,
+without `b26_clair_dec.py`: 293 of 311 letters agree with the f. 168r copy (0.942); the rest are nine groups outside
+the key and two surplus 7s after 27. His decoder also reproduces 222 of 235 letters of the DEC lines after the ✝.
+Re-run here: same figures. Three passages of the copy were corrected from the decode (see "Text"), and the key gained
+the values listed under "Additions to the key". No existing value is wrong.
+
+Checked here on the images: the last line before the ✝ and the line beginning "25 28 82" on canvas 331 (about 75
+groups) agree with his transcription; on canvas 333 the copy reads "la poursuicte ny l'esperan[ce] pour la
+reconcilia[ti]on du Roy de Na[varre]" and "l'un de proteger les Catholiques … les Huguenotz sans", as he says, and
+"ferez congnoistre" (adopted here; he had left *faire*).
+
+Read share of the f. 168r entry (`v10_relabel.measure` on `texts/f168_reading.md`): 0.955 before, 0.964 after
+(371 words, 14 holes); recorded. It stays read. The other entry is unchanged at 0.942, so the target stays read in
+part.
 
 ## Remaining gaps
 
