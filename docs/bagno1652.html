@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guidi di Bagno, 5 January 1652 — ciphertext-only key recovery</title>
 <meta name="description" content="George Lasry's ciphertext-only solution of DECODE R5622: CTTS key, full four-page Italian decryption and English translation.">
-<link rel="stylesheet" href="style.css?v=02aff2b7"><meta name="date" content="2026-09-22">
+<link rel="stylesheet" href="style.css?v=80d49d4a"><meta name="date" content="2026-09-22">
 <meta name="last-modified" content="2026-10-20">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -26,6 +26,7 @@
       <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
     <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
@@ -52,7 +53,7 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
 <p class="sub">George Lasry recovered the cipher with Astra and Opus 5.5, revealing threats against Mazarin and an appeal for papal intervention during the Fronde.</p>
 <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-22">22 September 2026</time> &middot; updated <time datetime="2026-10-20">20 October 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=bagno1652">On the map</a></p><!-- /outcome -->
+<p class="outcome">Method: <a href="glossary.html#ct" title="key recovered from ciphertext-only">ciphertext-only break</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=bagno1652">On the map</a></p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#lasry">George Lasry</a> (solution, transcription)</p><!-- /credits --></section><main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#context">Context and document</a><a href="#method">How the key was recovered</a><a href="#key">CTTS key</a><a href="#reading">Full decryption and translation</a><a href="#gaps">Remaining uncertainties</a><a href="#texts">Full texts</a><a href="#sources">Sources and files</a></nav>
 <div class="callout glance"><p class="gl-top"><strong>At a glance</strong><span class="gl-res">Ciphertext-only break &middot; complete</span></p><dl>
@@ -69,7 +70,7 @@
 <h2 id="method"><span class="num">02</span> How the key was recovered</h2><p>The attack recovered the grouping of a continuous digit stream into single-digit letters, two-digit letters and syllables, and four-digit word/name codes. Repeated Italian words and crib testing constrained the values; the roughly alphabetical nomenclator helped extend them. The manuscript was revisited to correct touching-digit ligatures, duplicated boxes, and the marked 04 = qu versus plain 04 = che. Values were checked across the four cipher pages. No matching historical key or decipherment was used. Clear words interspersed in the letter supply context, not a parallel decipherment of the cipher passages.</p>
 <p>The September repository attempt had excluded the Francia 346 key and found OCR too noisy. Lasry's CTTS transcription enabled a new attack. No generic null-5 rule was accepted.</p>
 <h2 id="key"><span class="num">03</span> CTTS key</h2>
-<figure data-credit="George Lasry, CTTS snapshot of the reconstructed Francia 104 key, 20 October 2026"><a href="bagno1652_key.png"><img src="bagno1652_key.png" width="2189" height="1151" decoding="async" srcset="thumbs/bagno1652_key-960.webp 960w, bagno1652_key.png 2189w" sizes="(max-width: 1000px) 100vw, 940px" alt="Refreshed CTTS key with code values and manuscript samples" loading="lazy"></a><figcaption>The supplied CTTS snapshot, preserved at its original resolution. Question marks are tentative values. <span class="credit">Image: George Lasry, CTTS snapshot of the reconstructed Francia 104 key, 20 October 2026.</span></figcaption></figure>
+<figure data-credit="George Lasry, CTTS snapshot of the reconstructed Francia 104 key, 20 October 2026"><a href="bagno1652_key.png"><img src="bagno1652_key.png" width="2189" height="1151" decoding="async" srcset="thumbs/bagno1652_key-960.webp 960w, bagno1652_key.png 2189w" sizes="(max-width: 1000px) 100vw, (min-width: 1800px) 1240px, 940px" alt="Refreshed CTTS key with code values and manuscript samples" loading="lazy"></a><figcaption>The supplied CTTS snapshot, preserved at its original resolution. Question marks are tentative values. <span class="credit">Image: George Lasry, CTTS snapshot of the reconstructed Francia 104 key, 20 October 2026.</span></figcaption></figure>
 <h2 id="reading"><span class="num">04</span> Full decryption and translation</h2>
 <figure class="creveal" data-src="reveal/bagno1652.json"></figure>
 <p>All four cipher pages follow in manuscript order. Bold Italian is deciphered text; the words originally left clear are regular. Brackets and question marks preserve gaps and tentative readings. English follows each folio.</p>
@@ -580,7 +581,7 @@ unresolved date or the personal names.</pre></details>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="urquhart.html" rel="prev">&larr; Urquhart 1652</a><a href="conley1652.html" rel="next">Cowley&rsquo;s hand 1652&ndash;53 1652&ndash;53 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
-<script src="solve-replay.js?v=02aff2b7" defer></script>
-<script src="zoom.js?v=02aff2b7" defer></script>
-<script src="site.js?v=02aff2b7"></script>
+<script src="solve-replay.js?v=80d49d4a" defer></script>
+<script src="zoom.js?v=80d49d4a" defer></script>
+<script src="site.js?v=80d49d4a"></script>
 </body></html>

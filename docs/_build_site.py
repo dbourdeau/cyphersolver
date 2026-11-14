@@ -207,9 +207,11 @@ def outcome_html(p):
         ext += f' ({shown}% of the cipher)'
     if M.key_only(m, p['extent']): ext = 'none (key obtained, text not read)'   # George Lasry, 24 Oct 2026
     if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods
-        bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}">{pm}</a> ({pe})' for f, pm, pe in p['parts']]
+        bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}" title="{pm}">{M.LABEL[pm]}</a> ({pe})' for f, pm, pe in p['parts']]
         return '<p class="outcome">Method &middot; ' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
-    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}">{m if m != M.NA else plain(p["stt"])}</a>']
+    # the link text is the badge label used everywhere else on the site; the full category name is its title and the glossary entry
+    bits = [f'Method: <a href="glossary.html#{M.KEY[m]}" title="{m}">{M.LABEL[m]}</a>' if m != M.NA else
+            f'Method: <a href="glossary.html#{M.KEY[m]}">{plain(p["stt"])}</a>']
     if ext: bits.append(f'Extent: {ext}')
     return '<p class="outcome">' + ' &middot; '.join(bits) + '</p><!-- /outcome -->'
 
@@ -438,7 +440,7 @@ def credits_html(p):
     return '<p class="credits">' + ' &middot; '.join(parts) + '</p><!-- /credits -->'
 
 # chip value on writeups.html, menu label, badge class, predicate
-GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, 'complete'), (lambda m: lambda p: p.get('method') == m)(m))
+GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], 'm-' + M.KEY[m], (lambda m: lambda p: p.get('method') == m)(m))
           for m in M.METHODS] + [
           ('other', 'Not yet classified', 'todo', lambda p: not p.get('method') and p['slug'] not in SURVEYS),
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
@@ -500,6 +502,7 @@ def nav_html(current):
         f'      <div class="panel wp">{panel}</div></details>\n'
         f'    <details class="menu"><summary{" class=\"active\"" if in_explore else ""}>Explore {CHEVRON}</summary>\n'
         f'      <div class="panel ex">{explore}</div></details>\n'
+        f'    <span class="navlab">Help</span>\n'
         f'    <a class="navcat" href="catalogue.html"{cur("catalogue")}>Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>\n'
         f'    <a class="navcat" href="further.html"{cur("further")}>Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>\n'
         f'    <a class="navcat" href="archives.html"{cur("archives")}>To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>\n'

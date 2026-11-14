@@ -33,14 +33,15 @@ KEY_ONLY_LABEL = {
     KNOWN: 'known key applied',
 }
 
-# method -> (filter/anchor key, badge label, seal word, dateline verb)
+# method -> (filter/anchor key, badge label, seal word, dateline verb). The badge label is the one name a reader sees
+# for an outcome (menu, lists, chart legend, a write-up's Method line); the seal word is that label cut to fit the wax.
 INFO = {
     CT:      ('ct',      'ciphertext-only break',        'ciphertext-only', 'key recovered'),
-    EXT_PT:  ('extpt',   'key from external plaintext',  'external text',   'key recovered'),
-    ADJ_PT:  ('adjpt',   'key from adjacent plaintext',  'adjacent text',   'key recovered'),
+    EXT_PT:  ('extpt',   'key from external plaintext',  'external plaintext', 'key recovered'),
+    ADJ_PT:  ('adjpt',   'key from adjacent plaintext',  'adjacent plaintext', 'key recovered'),
     EXT_KEY: ('extkey',  'external key matched',         'key matched',     'deciphered'),
     KNOWN:   ('known',   'known key applied',            'known key',       'deciphered'),
-    DECIPH:  ('deciph',  'existing decipherment',        'deciphered copy', 'transcribed'),
+    DECIPH:  ('deciph',  'existing decipherment',        'existing decipherment', 'transcribed'),
     NOT:     ('notsolved', 'not solved',                 'not solved',      'attempted'),
     NA:      ('na',      'not applicable',               'closed',          'resolved'),
 }

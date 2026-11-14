@@ -72,7 +72,10 @@ def annotate(s, base=HERE):
             small = 'class="thumb"' in tag or 'class="sc"' in tag or 'hl-fig' in tag
             # a card on a phone is nearly the screen's width, but a copy at twice its size is sharp enough: 62vw stops a
             # screen of density 3 from fetching the original
-            sizes = '96px' if 'class="sc"' in tag else '(max-width: 760px) 62vw, 420px' if small else '(max-width: 1000px) 100vw, 940px'
+            # a scan at least as wide as the wide measure (--widew, 1240 px) may leave the text column on a screen with room
+            # for it; style.css finds those figures by this sizes value
+            sizes = ('96px' if 'class="sc"' in tag else '(max-width: 760px) 62vw, 420px' if small else
+                     '(max-width: 1000px) 100vw, (min-width: 1800px) 1240px, 940px' if wh[0] >= 1240 else '(max-width: 1000px) 100vw, 940px')
             add += ' srcset="' + ', '.join(f'{cp[w]} {w}w' for w in sorted(cp)) + f', {name} {wh[0]}w" sizes="{sizes}"'
         return tag.replace(f'src="{name}"', f'src="{name}"{add}', 1)
     return IMG.sub(one, s)
