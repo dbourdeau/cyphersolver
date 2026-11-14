@@ -336,5 +336,29 @@ class Links(unittest.TestCase):
         self.assertEqual(probs, ['links b.html#gone, but that page has no such anchor', 'links #none, but the page has no such id'])
 
 
+class Reservations(unittest.TestCase):
+    """research/SWEEP.md, "Reserving a lead": 30 days from the merge, at most 10 live per contributor."""
+    def setUp(self):
+        import importlib.util, datetime
+        p = ROOT / 'research' / 'archive_sweep_2026-10' / 'merge.py'
+        spec = importlib.util.spec_from_file_location('sweep_merge', p)
+        self.m = importlib.util.module_from_spec(spec); spec.loader.exec_module(self.m)
+        self.day = datetime.date(2026, 11, 14)
+
+    def test_stamped(self):
+        b, why = self.m.reserve({'reserved': {'by': ' someone '}}, {}, self.day)
+        self.assertEqual(b, {'by': 'someone', 'since': '2026-11-14', 'until': '2026-12-14'})
+
+    def test_malformed(self):
+        self.assertIsNone(self.m.reserve({'reserved': True}, {}, self.day)[0])
+
+    def test_cap_counts_live_only(self):
+        rows = [{'reserved': {'by': 'A', 'until': '2026-12-01'}}] * 10 + [{'reserved': {'by': 'a', 'until': '2026-11-01'}}]
+        held = self.m.live_reservations(rows, self.day)
+        self.assertEqual(held, {'a': 10})
+        self.assertIsNone(self.m.reserve({'reserved': {'by': 'A'}}, held, self.day)[0])
+        self.assertIsNotNone(self.m.reserve({'reserved': {'by': 'B'}}, held, self.day)[0])
+
+
 if __name__ == '__main__':
     unittest.main()

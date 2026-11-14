@@ -240,6 +240,12 @@ CLASS_TEXT = {
 }
 
 
+def reserved(e):
+    """The entry's live reservation (research/SWEEP.md, "Reserving a lead"): its finder tries it first until the date."""
+    r = e.get('reserved')
+    return r if isinstance(r, dict) and r.get('by') and str(r.get('until', '')) >= datetime.date.today().isoformat() else None
+
+
 def short_outcome(e):
     return 'in progress' if progress(e) else (e.get('outcome') or 'open').split(':')[0]
 
@@ -936,7 +942,12 @@ def solve_page(e, shell):
     folders = ''.join(f'<li><a href="{notes_url(f)}" rel="noopener">targets/{f}/NOTES.md</a>: what was tried and ruled out '
                       f'(<a href="{REPO}/tree/main/targets/{f}" rel="noopener">the folder</a>)</li>' for f in target_folders(e))
     prog = ''.join(f' <a href="{notes_url(f)}" rel="noopener">targets/{f}</a> is working on this cipher (status: {esc(st)}).' for f, _, st in progress(e))
-    if prog:
+    rv = reserved(e)
+    if rv and not prog:
+        prog = (f'<div class="callout blue"><p><strong>Reserved until {esc(rv["until"])}.</strong> {esc(rv["by"])} found this cipher and '
+                f'asked to try it first (reserved {esc(rv["since"])}). Checking it against the vetting bar is still open to anyone; '
+                f'a decipherment attempt by someone else waits until the date has passed.</p></div>\n')
+    elif prog:
         prog = (f'<div class="callout blue"><p><strong>In progress here.</strong>{prog} Read its NOTES.md before you start, and hand it to '
                 f'your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>\n')
     who = people_html(e)

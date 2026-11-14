@@ -10,8 +10,12 @@ fields and allowed vocabularies, dropped if their shelfmark or a DECODE id is al
 research/leads.json, given the next free ids (shared with the catalogue),
 and tagged counted / scored "sweep". A row with needs_archive_scan "yes" becomes access "archive" (the site's
 "needs archive scans" pill). merged.json records which sweep row became which id.
+
+A row may carry "reserved": {"by": "<name or handle>"}: its finder asks to try the decipherment first (SWEEP.md,
+"Reserving a lead"). The merge stamps "since" (the day of the merge) and "until" (30 days later). A contributor
+holds at most 10 live reservations over leads.json and catalogue.json; a row past that is merged unreserved.
 """
-import json, os, re, sys
+import datetime, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -32,6 +36,33 @@ def norm(s):
     return re.sub(r'[^a-z0-9]+', ' ', (s or '').lower()).strip()
 
 
+RESERVE_DAYS, RESERVE_MAX = 30, 10
+
+
+def live_reservations(entries, today):
+    """{holder, lower case: count} of reservations whose "until" has not passed."""
+    n = {}
+    for e in entries:
+        r = e.get('reserved')
+        if isinstance(r, dict) and r.get('by') and str(r.get('until', '')) >= today.isoformat():
+            n[r['by'].strip().lower()] = n.get(r['by'].strip().lower(), 0) + 1
+    return n
+
+
+def reserve(row, held, today):
+    """The stamped "reserved" block for a sweep row, or (None, why) when it is malformed or past the cap."""
+    r = row.get('reserved')
+    if not isinstance(r, dict) or not isinstance(r.get('by'), str) or not r['by'].strip():
+        return None, 'reserved must be {"by": "<name or handle>"}: merged unreserved'
+    who = r['by'].strip()
+    if held.get(who.lower(), 0) >= RESERVE_MAX:
+        return None, f'{who} already holds {RESERVE_MAX} reservations: merged unreserved'
+    held[who.lower()] = held.get(who.lower(), 0) + 1
+    out = {'by': who, 'since': today.isoformat(), 'until': (today + datetime.timedelta(days=RESERVE_DAYS)).isoformat()}
+    if r.get('note'): out['note'] = str(r['note'])
+    return out, ''
+
+
 def main(write):
     cat = json.load(open(os.path.join(ROOT, 'catalogue.json'), encoding='utf-8'))
     leads_path = os.path.join(ROOT, 'research', 'leads.json')
@@ -47,6 +78,8 @@ def main(write):
     exclude = json.load(open(os.path.join(HERE, 'exclude.json'), encoding='utf-8'))
     notes = json.load(open(os.path.join(HERE, 'notes.json'), encoding='utf-8'))
     added, problems, log = [], [], []
+    today = datetime.date.today()
+    held = live_reservations(entries, today)
     for sweep in SWEEPS:
         path = os.path.join(ROOT, 'research', sweep, 'candidates.json')
         if not os.path.exists(path):
@@ -79,6 +112,12 @@ def main(write):
             e = {'id': next_id, 'counted': True}
             e.update({k: r[k] for k in r if k not in ('id', 'counted')})
             e.setdefault('ark', '')
+            if 'reserved' in r:
+                block, why = reserve(r, held, today)
+                if block: e['reserved'] = block
+                else:
+                    del e['reserved']
+                    log.append(f'{sweep}[{i}] {why}')
             # needs_archive_scan "yes" = nothing to work from online: the site shows the "needs archive scans" pill
             if r.get('needs_archive_scan') == 'yes':
                 e.setdefault('access', 'archive')

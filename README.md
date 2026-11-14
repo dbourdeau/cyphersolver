@@ -992,6 +992,10 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   issue or pull request with no response from its author 4 days after our last comment is closed with a comment that
   lists what is open and says it can be reopened at any time. Until then, a submission whose author says they will
   refresh it is held, not written up, and falls under the same rule. A date already promised to a contributor is kept.
+- **Reserving a lead** (14 Nov 2026). The finder of a lead may ask to try its decipherment first: the sweep row carries
+  `"reserved": {"by": ...}`, the merge stamps `since` and `until` (30 days), and the field follows the lead into the
+  catalogue, whose page shows it. At most 10 live reservations per contributor; vetting stays open to anyone; leads
+  merged before 14 Nov 2026 are not reserved. The rule is in `research/SWEEP.md`, "Reserving a lead".
 - **Catalogue vetting bar** (28 Oct 2026). `catalogue.json` holds vetted leads only. What sweeps find goes to
   `research/leads.json` and enters the catalogue only when its `vetting` block records all of these: (1) **seen**: the
   ciphertext was looked at on a scan, facsimile or printed transcription, with where, how much cipher, and that no

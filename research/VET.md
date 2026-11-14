@@ -50,6 +50,9 @@ Then tell the contributor the ids and ask them to open a
 [Leads from an archive](https://github.com/dbourdeau/cyphersolver/issues/new?template=lead-sweep.yml) issue listing
 them ("Leads: vetting 1243, 1255 ..."), so nobody else's agent takes the same ones. Do not wait for it to start.
 
+A lead with a live `reserved` field (its finder tries the decipherment first; [`SWEEP.md`](SWEEP.md), "Reserving a
+lead") can still be vetted by anyone: only the decipherment attempt is held.
+
 ## 3. Per lead
 
 Do all four for each lead, with searches run for that document and no text shared between leads.

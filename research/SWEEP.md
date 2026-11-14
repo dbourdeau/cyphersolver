@@ -98,6 +98,23 @@ Write only inside your own folder. Do **not** edit `research/leads.json`, `catal
 files outside your folder, `archive_sweep_2026-10/` or anything in `docs/`, and do not run the site build: the merge
 into the leads, the coverage update and the index are done after review.
 
+### Reserving a lead
+
+A contributor who wants to try the decipherment of a lead their sweep found before anyone else does adds
+`"reserved": {"by": "<name or GitHub handle>"}` to that row of `candidates.json` (ask the contributor which rows; do not
+reserve every row by default). This is the one field allowed beyond the BRIEF schema.
+
+- **Where it is recorded.** On the lead's own row. The merge stamps `since` (the day the sweep is merged) and `until`
+  (30 days later) and carries the field into `research/leads.json`, and into `catalogue.json` if the lead is promoted;
+  the cipher's catalogue page shows it. A row with no `reserved` field is free.
+- **How long.** 30 days from the merge. It ends when `until` passes, when the holder releases it (a comment or a pull
+  request removing the field), or when their result arrives. While the holder has a target folder for it with
+  `Status: in progress`, the cipher stays theirs under the catalogue's "in progress" tag.
+- **How many.** A contributor holds at most 10 live reservations; rows past that are merged unreserved.
+- **What stays open.** Vetting a reserved lead ([`VET.md`](VET.md)) is open to anyone; only the decipherment attempt
+  is held. Before taking a lead or a catalogue entry to solve, check that it has no live `reserved` field.
+- **Earlier leads.** Leads merged before 14 Nov 2026 are not reserved by anyone.
+
 ## 5. Vet, if you can
 
 A lead enters the catalogue only when its `vetting` block is complete (README Conventions, "Catalogue vetting bar").
