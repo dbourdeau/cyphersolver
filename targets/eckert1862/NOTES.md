@@ -40,7 +40,9 @@ printed words were refilled with new meanings for each issue. What the papers ho
 | mssEC 41-45 (Cipher Book #1, 5 copies) | one filling: Juno = Lt Gen U. S. Grant, Andes = Fort Donelson, Alden = Indiana, Knox/Knave = Maj Gen B. F. Butler | 1864-65 traffic |
 | mssEC 46 (Book #1, 6th copy) | a different 1864 filling (Atlanta campaign places, Rebel generals), pages glued over | Sherman's 1864 traffic (not checked) |
 | mssEC 38 (Generals and Places, S. B. Fairchild, New Orleans) | Banks's Department of the Gulf, 1863 (Port Hudson, Brashear, Opelousas) | Gulf 1863 (not checked) |
-| mssEC 47-48 (Book #2), 49-66 (Book #5, 16 copies), 67 (Book #9) | not yet looked at | 1865-67 |
+| mssEC 47-48 (Book #2) | selected 112-entry extraction; two copies checked for Java = Johnston | selected Feb 1864 telegrams U1 and pp9-10 (see 12 Nov addition); catalogue dates alone do not date every entry |
+| mssEC 49-66 (Book #5, 16 copies) | not transcribed here | not assessed |
+| mssEC 67 (Book #9) | existing verified extraction | T1-T11 of mssEC19 pp1-7 |
 | mssEC 37, 39, 40 (handwritten) | post-1866 codes ("Act of Congress of July 1866") | 1866-67 |
 | mssEC 36 | Stager's memoranda: who held which key where | index to the keys |
 
@@ -137,9 +139,9 @@ No. 9 as the key of mssEC 19, which carries forward to pp. 8-400 of the ledger.
   during the Civil War* (1882), vol. 1, appendix "Cipher Number Nine Complete" (archive.org `cu31924092908742`). A
   first pass used the Plum OCR. Every code word used in pp. 1-7 was then read on the book images (canvases
   1719-1744). `key_book9_mssEC67.tsv` lists them with the canvas, and the time words (canvas 1720).
-- **Book #1 does not fit this ledger.** In Book #1 (`key_book1_mssEC43.tsv`) Pagan is Battery, Applause is Big Sandy,
+- **Book #1 does not fit these No.9 telegrams.** In Book #1 (`key_book1_mssEC43.tsv`) Pagan is Battery, Applause is Big Sandy,
   Vernon is Point and Relay is Evacuate. In No. 9 they are Washington, Halleck, Major General and Cavalry, which is
-  what the telegrams need.
+  what these telegrams need. This is message-specific: U2 below instead uses No.1; U1 uses No.2 (12 Nov update).
 
 ### Result: pages 1-7
 
@@ -162,7 +164,7 @@ No. 9 as the key of mssEC 19, which carries forward to pp. 8-400 of the ledger.
 
 - **Eleven telegrams read.** Every code word in T1-T11 has a meaning in No. 9, and each telegram reads as English
   sentences (read_share 1.0, 665 words, measured with `research/reading_audit/v10_relabel.py`). The document
-  (pp. 1-7, 14 telegrams) is *read in part*, because U1-U3 below are not read.
+  (pp. 1-7, 14 telegrams) remains *read in part*. The original work left U1-U3 unread; the 12 Nov addition reads the U1/U2 bodies with other keys and retains six U3 gaps.
 - **Nine are earlier solutions.** OR Series I prints T2 and T4-T11 in clear (`contemporary/mssEC19_p1-7_OR.txt`, from the
   archive.org OCR of vols. 32 pt. 2 and 33). For these the contribution is the pointer and the evidence that No. 9
   is the key of this ledger. T1 (Baker's cavalry on the way to Yorktown) and T3 (Parker's cavalry men and the
@@ -182,10 +184,10 @@ No. 9 as the key of mssEC 19, which carries forward to pp. 8-400 of the ledger.
   line. Antwerp was found in the book (canvas 1729); it had first been inferred from OR. Vernon/Vermin is on page
   [22], not [21].
 
-### Not read on pages 1-7
+### Historical failed No.9 application on pages 1-7 (27 October)
 
 `decoded/mssEC19_p1-7_U1-U3_unread.txt` shows these three telegrams with the No. 9 meanings where they exist. They
-are not counted as read.
+were not counted as read in that attempt. The old output is retained unchanged; current U1/U2 readings and U3 gaps are in the 12 Nov addition.
 
 - **U1, Caldwell to "Nestor", 1 Feb.** No. 9 gives Nestor = Raleigh, Midas = New York, Bermuda = F. Sigel, Biscay =
   Jno. Pope and Peru = Wilmington. The second agent also read Walnut = Army, Salem = Flotilla, Lady = Galveston and
@@ -200,10 +202,9 @@ are not counted as read.
 
 ### Remaining gaps (this contribution)
 
-- mssEC 19 pp. 8-400 (about 810 telegrams) are not decoded yet. This includes the McPhail report of 15-16 Feb 1864
-  on pp. 9-10, which is heavy with code words. Blocker: not attempted; the method is the same.
-- U1-U3: the word list they use is not identified. Blocker: no key material found yet.
-- The page images of pp. 2 and 5-7 were not checked against the transcription.
+- Most mssEC19 pp8-400 remain unattempted. The 12 Nov addition reads the complete selected pp9-10 McPhail wrapper/report (14-15 Feb) and the 16 Feb Grant telegram; this does not promote the rest of the ledger. Blocker for the remaining pages: not attempted; key must be selected per message.
+- U3: the heading is 10; six No.10 tokens remain without verified values. The matching key filling has not been located. U1 uses No.2 and U2 uses No.1. Their post-signature check wording remains separate and unresolved.
+- Pages2 and5 remain unchecked against the transcription in this work. Selected U1/U2/U3 and both pp9-10 telegrams were image-checked for the addition; checking selected lower messages does not certify every other message on pp6-7.
 - OR was not searched for T1 and T3 beyond vols. 32 pt. 2 and 33. D. H. Bates, *Lincoln in the Telegraph Office*
   (1907; archive.org `cu31924032766846`, OCR) was searched for T1, T3 and Cipher No. 9: T1 and T3 are not in it, and
   it does not discuss No. 9. It describes the twelve War Department editions in general, refers to Plum for the
@@ -227,3 +228,43 @@ The class of the target does not change (still in progress; the 1864-65 Book #1 
 - `reading/mssEC19_p1-7.md`: T1-T11 as sentences.
 - `contemporary/mssEC19_p1-7_OR.txt`: the nine printed clear texts (OR I/32/2 and I/33), for comparison.
 - `ledgers.tsv`: row for mssEC 19 added.
+
+
+## 12 November 2026: message-specific keys and a portable selected edition
+
+Andrew Beling (`ajbeling`), with OpenAI Codex AI agents, adds a bounded update in
+[`addition_2026-11-12/README.md`](addition_2026-11-12/README.md). Existing WAINUT/`lccompany` Book9 work,
+William Echols's separate 1862 filling, original transcripts and old failed decodes are preserved.
+Huntington holds/digitized the sources; Decoding the Civil War volunteers supplied the ledger transcription;
+period operators and the printed Official Records supply prior readings. This is source collation, not first
+historical plaintext recovery, a blind experiment, or a human scholarly review.
+
+- **U1, p4:** Book2 gives the coherent Sedgwick/Kelley/Early message. Image correction Word -> World; Tobsy is
+  treated explicitly as Topsy, half past twelve P.M. in No.2 (not Book1's midnight). OR I/33 p486 is an earlier
+  printed clear text, found after the exploratory key reading; the ledger does not encode OR's extra General.
+- **U2, p6:** heading1 and four image-verified Book1 mappings recover Washington, fifth, ten A.M., Colonel.
+  `unity` stays unresolved. Body was already ordinary English. McCallum and Beckwith repairs are documented;
+  no extra as is silently supplied to "soon as possible".
+- **McPhail, pp9-10:** complete wrappers/report and forwarding request, with five explicit lexical doubts.
+  No.2 Java = Johnston is checked in two copies. **Two printed versions differ:** OR I/32 II p394 agrees on
+  Johnston and has Greer's [?], while OR I/33 p559 has Beauregard and Green's. The ledger says 700 infantry;
+  both printed versions say 780 Maryland Line. p394 lacks Hoke, p559 supplies it. All four relevant printed
+  pages (including U1 and Grant) have been visually checked. See the three-witness table in
+  [`printed_parallels.md`](addition_2026-11-12/printed_parallels.md); no historical accuracy verdict is inferred.
+- **Grant, p10:** Book2 reading, source Grant restored. Manuscript Elliotts remains distinct from OR I/32 II
+  p407 Ellet's; print also adds by the Government and General before Sherman. Post-signature check wording stays
+  outside the body. The old verification JSON's indexed-only p407 limitation is corrected in this portable copy.
+- **U3, p7:** actual underlined10 heading and six holes preserved. Plum p52 gives the red/blue/black No.10/9/12
+  combined-key trail. Inspected available No.9 and Gulf fillings do not establish No.10; a matching table has
+  not been located. [`U3_search.md`](addition_2026-11-12/U3_search.md) distinguishes inspected samples, unsearched
+  holdings, contextual prisoner correspondence and the National Cryptologic Museum catalogue lead VF69-62.
+  The later complete digitized Stager locality/account sweep found custody trails (Baldwin/Baltimore, Culgan →
+  David/Pittsburgh), but no vocabulary table or direct locator. Its 1865–1867 date prevents assigning U3’s 1864
+  codeword values from custody alone.
+
+`decode_complete.py` verifies the frozen input hashes, reproduces the 175 earlier Book2 substitution tuples,
+adds four Book1 mappings, and writes all65 original lines with their literals. The selected key has112 entries,
+not a complete No.2 vocabulary. Complete cipher/literal/reading files exist for all five items. Body word shares
+are measured with the unmodified `v10_relabel.share` and retain conjectures as holes; the denominator excludes
+operator headings and possible post-signature check tails, which remain explicitly documented. These are not
+whole-ledger percentages. `profile.json` remains in progress with target-wide fraction unknown.
