@@ -1,8 +1,8 @@
 # Christian Pentz to Christian IV: Vienna 1636 (catalogue 2543), Glückstadt c.1629-30 and Glückstadt 1644-45, in the Zobel-family number cipher
 
-Status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text; and, since PR #545, the 1644-45 cipher letters of unit 274999 not yet transcribed).
+Status: in progress (integration check 13 Nov 2026: folder only, no page; the gaps are workable: second transcription, Glückstadt verso, codes, Vienna clear text; and the codes and corrected decodes of the 1644-45 letters; 14 Nov 2026: five more 1645 letters (PR #545, second part) are in as documents 5-9, all read in part, and the 28 = o suspicion is withdrawn by its contributor (PR #558)).
 
-Documents 3-4 (Glückstadt 1644 and 1645, Brice Dudout, PR #545) use the same key and are filed here under `dudout/` (one key, one entry); see the section "Documents 3-4" below. Nothing in Malcolm McBratney's files was changed by that merge.
+Documents 3-9 (Glückstadt 1644 and 1645, Brice Dudout, PR #545) use the same key and are filed here under `dudout/` (one key, one entry); see the sections "Documents 3-4" and "Documents 5-9" below. Nothing in Malcolm McBratney's files was changed by that merge.
 
 Contributor's status line: **key family recovered; read in part; both documents below our own 65% line.** Contributed. No claim of a first reading (see Prior art).
 
@@ -43,7 +43,7 @@ Key history (`key_history/`):
 | v1 (b106) `KEY_pentz_v1_b106.txt` + `KEY_pentz1636_T1T2.py` | 1a28f084, 8306f733 | 12 Nov 2026 before 04:11 UTC, from the Vienna ciphertext | yes, for both documents |
 | v2 (b110) `KEY_pentz_v2_b110.txt` | 20ad2a86 | 12 Nov 2026 04:36 UTC, from the gloss on Frederik Günther's letter of 30 Jan / 9 Feb 1636 (same unit, image 48): 64, 12, 10 as index numbers, a third table, table 2 m w y; 63, 11, 9, 8 by analogy | **no**: made after the Vienna run; not applied to Glückstadt; post-hoc re-scores in `counts.txt`, not claimed |
 
-The Glückstadt letter was decoded with table 1 of v1, unchanged. It has no figure under 14 and no 62 or 13, so the index layer does not arise. Figure 28 (z) stands three times where o is wanted (andwzrt, bekzme, anherkzmen): probably a homophone of o outside the Vienna table. **Suspected; not applied** to any decode or count.
+The Glückstadt letter was decoded with table 1 of v1, unchanged. It has no figure under 14 and no 62 or 13, so the index layer does not arise. Figure 28 (z) stands three times where o is wanted (andwzrt, bekzme, anherkzmen): probably a homophone of o outside the Vienna table. **Suspected; not applied** to any decode or count. **Withdrawn by the contributor on 14 Nov 2026** (PR #558): the three figures are 18 written with a hooked 1; see "Correction of 14 Nov 2026" below.
 
 Method class: key recovered from the ciphertext (Vienna), then applied unchanged to a second letter by the same writer (Glückstadt).
 
@@ -125,10 +125,112 @@ Contributed by Brice Dudout (13 Nov 2026), working with an AI model, as a new ta
 - **Key v3 and the Vienna letter.** Key v3 reads 64, 63, 12, 11, 9 and 8 as index numbers. In the Vienna transcription (document 1) these stand where the integration check of PR #522 lists them as open codes; with key v3 the runs after them decode to words (64 34 33 17 "den", 13 12 41 46 42 "die", 8 9 32 29 25 "dan", 13 11 41 42 57 54 60 61 "deruon"). This is a test on the Vienna letter's figures only, not a re-count: McBratney's files and figures are unchanged, and the code list in Remaining gaps now carries the note.
 - **Not done.** The other 1644-45 cipher letters of the unit (images 402-405, 408, 411, 412, 420, several pages each, found by the contributor's thumbnail sweep) are not transcribed; the key should read them, and they may give 560 and 756. Catalogue entry 2565 (unit 274999) says images 137-503 were not viewed; it is left as it is until the write-up.
 
+## Documents 5-9: five more letters of 1645 (Brice Dudout, PR #545, second part; files in `dudout/`)
+
+Added to PR #545 by the contributor after the first integration (13-14 Nov 2026) and relocated here at integration from
+`targets/pentz1644/` to `dudout/` (files unchanged; their own description is the addendum at the end of
+`dudout/NOTES_PR545.md`). All five are letters of Christian Pentz from Glückstadt in Rigsarkivet, Tyske Kancelli, SHLK A IV
+89, unit 274999, written during the Torstensson war in spring 1645. They were decoded with key v3 **as frozen** (SHA-256
+f5d41697, recomputed): no value was changed and no new test was run, so this is key v3 applied to further letters, not a
+validation. Files: `transcriptions/suite/` (pass A per page, `DIFF-AB.tsv`, `C-420.txt`, `DIFF-AC-420.tsv`, the arbitrated
+`TRANSCRIPTION-SUITE.json`), `scripts/decode_suite.py`, `decryptions/`, `readings/`, `translations/` (paths relative to
+`dudout/`).
+
+| | letter | images | cipher words | contributor's figure (sure + probable) | **strict figure (integration check)** |
+|---|---|---|---|---|---|
+| 5 | to the Chancellor, 31 Mar 1645 | 402-403 | 72 | 66/72 = 91.7 % | **49/72 = 68.1 %, read in part** |
+| 6 | to the Chancellor, 8 Apr 1645 | 404-405 | 52 | 45/52 = 86.5 % | **36/52 = 69.2 %, read in part** |
+| 7 | to the Chancellor, 20 Apr 1645 | 408-409 | 16 | 16/16 = 100 % ("read") | **14/16 = 87.5 %, read in part** |
+| 8 | to Christian IV, 20 Apr 1645 | 411-412 | 108 | 101/108 = 93.5 % | **87/108 = 80.6 %, read in part** |
+| 9 | to the Chancellor, 1645 (pencil "1645 4/5"; answers a letter of 24 April) | 420 | 36 | 31/36 = 86.1 % (27/35 = 77.1 % before the second reader) | **25/36 = 69.4 %, read in part** |
+
+Figures per letter, never pooled. **What the letters say** (`readings/`, `translations/`): damage to Glückstadt from the
+March 1645 assault (the Reithofel work, the breastworks and main rampart, the new castle and its bridge, the old town
+gate), a retrenchment being built, repair costs (a contract of 2,000 thaler, 330 rixdollars for the bridge), requests for
+orders and money, the Spanish loan and a paymaster, the shortage of troops, and in late April Rendsburg "in höchster
+Gefahr".
+
+**Transcription.** Each page in two passes by the same reader (an AI model; B on re-made crops without reopening A);
+14 differences settled on the image (`DIFF-AB.tsv`). Not frozen before decoding (the key was already fixed). Image 420 was
+read a third time by a second reader (pass C, 14 Nov). Pass C is said to have been frozen by SHA-256 4a8f4ab7... before it saw A/B
+or any decode, by the contributor's record: the frozen file (a French-annotated original "kept locally") is not in the PR,
+and the committed `C-420.txt` hashes to c4fa8ebe..., so the freeze cannot be checked. The arbitration of A/B against C was
+not blind: in several places the key's output decided (`DIFF-AC-420.tsv`: L06 pos 1 taken as 31 "key gives g -> Gefahr",
+where C read 21; L14 pos 4 taken as 45 for "Nothurfft", where C read 55). C found two interlinear insertions that A and B
+had missed (53 in "wer", 27 in "Volck"); both are on the image.
+
+**Word glosses on the leaves.** Images 402-420 carry word glosses in another hand above most cipher words (they skip the
+codes): e.g. "dieses festung Zustand" (402), "grosser schaden", "an beiden", "Sturm", "an der Vestung, sonderlich am
+Reithoffel" (411), "Fall der Ort", "gar leichtlich", "mit geringer Mannschafft" (411), "nun Rensburg in größter Gefahr" (420).
+They were seen while transcribing; the contributor used one ("Mayen", image 404) and none for the key. They are an existing
+word-level decipherment of these letters, of unknown date, and they agree with the key's output wherever they were looked
+at. Not transcribed or compared systematically.
+
+### Integration check (14 Nov 2026, PR #545 second part)
+
+- **Reproduction.** `scripts/decode_suite.py` (read first; standard library, no network, writes only `dudout/`), run with
+  `python3 -I` on a scratch copy: `TRANSCRIPTION-SUITE.json` and the five decryptions are reproduced byte for byte.
+- **Own decoder** (written from `key.tsv`, not importing the contributor's code or `KEY-v3.json`), on the arbitrated
+  transcription: all five decryptions identical, line for line (127 lines).
+- **Images.** `api.rigsarkivet.dk/ao/v1/images/<ref>` with ref = 52788768 + image number (52789170 for 402 ... 52789188 for
+  420), plain curl, 200. Compared: image 402, all 11 cipher lines (about 165 figures); image 420, all 15 lines (about 200
+  figures, including both interlinear insertions); image 411, lines 1-2 and 17-21 (about 100 figures). All agree except two
+  places, both inside words already counted as holes: 420 L12 figure 4 looks like 42 (as pass C), not 62; 420 L14 figure 4
+  looks like 55 (as pass C), not the arbitrated 45. Line-final figures on 402-403 are cut by the page edge in the image
+  (402 L01, L07; 403 L07, L19, L21), so their letters are partly supplied.
+- **Strict recount (README read bar).** Holes are the contributor's probable and unresolved words, and in addition every
+  word the contributor counted sure that needs a letter not given by a legible figure under key v3: a figure with no value
+  in the running table, a figure read as another (a corrected decode), a figure cut at the edge or illegible, or a figure
+  chosen by the expected word where the readers disagreed. Letters the writer simply left out (desiderir(e), erlit(t)ene,
+  runirt) are not holes, as VERRINGER in document 3.
+  - 5 (31 Mar): 61 sure - 12 = 49/72. Holes added: Vestung (402 L01, last figure cut), [i]st (38, no table-3 value),
+    Vestung (402 L05, 49 = m for g), [s]onderlich (33 = e for s), Brustwehren (last figure cut), gescheh[e]n (55, no value),
+    begri[f]fen (figure cut), eingezogen (struck figure where e stands), ho[f]fentlich (40 = c for f), W[e]rcke (38 = a),
+    Ordre (last figure cut), Commissarius (last figure cut).
+  - 6 (8 Apr): 42 sure - 6 = 36/52. Holes added: [M]eyen (28 = k for m; the later gloss "Mayen" supplies it, as
+    C{O}MMANDIRT in document 4), kayserlichen (one figure illegible), erkleckliche (figure cut), mehr (the run decodes only
+    if the index before it is assumed to be table 3, as for {nicht}), Abdanckung (A 27, B 37, settled by the word),
+    Völcker (405 L11, decodes "uoicker").
+  - 7 (20 Apr, Chancellor): 16 - 2 = 14/16. Holes: Reparir[u]ng (14, no table-2 value), hi[e]siger (23 = t for e).
+  - 8 (20 Apr, King): 95 - 8 = 87/108. Holes added: u[n]d (decodes "unu"), sonderlich (A 50, B 56?, settled by the word),
+    Brück[e] (decodes "bruche"), daran (first figure illegible), Sch[a]den (29 = i), Gel[d]er (decodes "delter"),
+    herzune[h]men (decodes "herzunehken"), werden (55, no value).
+  - 9 (image 420): 28 - 3 = 25/36. Holes added: Rensburg (two overwritten figures: A unreadable, C 18? 22?, settled by the
+    word with image 425's "Rensbyrg"), Gefahr (first figure blotted: C 21, taken as 31 because the key gives g), nicht
+    (decodes "nicmt", 26 for 36). The figure 38 in {daran} is 38 on the image (it decodes daran exactly), but the contributor
+    counts the word probable, and it is left a hole.
+  The contributor's figures (sure + probable, restored letters read) are given once in the table above as theirs.
+- **Values after the measure.** 252 = {im} and 434 = {dass} come from the sense of the clause only and were never tested;
+  both are holes. No other value was added.
+- **Method per letter.** Deciphered with key v3 (recovered from the adjacent 1644 gloss; for these letters: read with known
+  key). The leaves also carry the later word glosses above, an existing decipherment not used for the reading.
+- **Classes.** All five read in part. Letter 7 is not "read" under the strict rule (two corrected decodes in 16 words), and
+  it is short. The gaps are workable (corrected decodes can be checked on the original, the glosses can be compared, codes
+  remain), so this target stays in progress and gets no page.
+
+## Correction of 14 Nov 2026 (PR #558): 28 = o withdrawn
+
+Malcolm McBratney's file `CORRECTION_2026-11-14_figure28.md`: the suspected homophone 28 = o in the c.1629-30 Glückstadt
+letter (andwzrt, bekzme, anherkzmen) is withdrawn. The writer's 1 has a hooked form, like a 2 without its base stroke; the
+three "28"s where o is wanted are 18 by form, the same glyph as the 1 of the adjacent 16 (m); 18 = o is the table value.
+The one 28 with a based, z-form 2 (line 17) gives z ("zur"). The re-read (b193) was not blind: the reader knew the table and
+the suspicion. A second checker (an AI model) gives the hooked-1 reading for four tokens independently, by the contributor's
+record.
+
+- **Checked at integration** on image 2 (ref 52788770): in "14 28 16 33" (line 9) and "25 18 21" (line 6) the doubtful first
+  digit has no base stroke and matches the hooked 1 of the following 16, while the 2 of 29 and 21 on the same lines has its
+  base. The correction is consistent with the image. This is one more non-blind look, not the blind test.
+- **Figures.** No figure of record changes: the frozen transcription keeps 28, and 28 = o was never applied. With 18 read in
+  the three places the three words decode exactly (andwort, bekome, anherkomen): 26/68 = 38.24 % strict (contributor's rule
+  28/68 = 41.18 %), not of record because the re-read is not blind and came after the freeze.
+- **Date note (unverified, the contributor's).** The leaf may date to Feb 1644 rather than c.1629-30 (Bricka & Fridericia
+  vol. V, letter 381; another citation gives vol. 2, no. 214, p. 234). Not checked here; the date stays "c.1629-30, uncertain".
+
 ## Remaining gaps
 
 - Codes: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165 (key v3 of documents 3-4 reads 64, 63, 12, 11, 9, 8 as index numbers: see Documents 3-4); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found; some Vienna low numbers may be index numbers (key v2).
-- Suspected homophone 28 = o in the Glückstadt letter (andwzrt, bekzme, anherkzmen) - blocker: no-key-material; not applied to any decode or count.
+- Glückstadt letter, the three figures once suspected as 28 = o (andwzrt, bekzme, anherkzmen): withdrawn as 18 with a hooked 1 (PR #558); a blind, shuffled digit-crop test is still to do - blocker: not-attempted; the frozen transcription and its counts are unchanged.
+- Glückstadt letter date (c.1629-30, or Feb 1644 by the contributor's unverified note) - blocker: not-attempted; Bricka & Fridericia vol. V letter 381 and vol. 2 no. 214 not checked.
 - Glückstadt verso (image 3) - blocker: not-attempted; the letter runs on there and is not transcribed.
 - Second, blind transcription of both letters (including Vienna line 4 figure 8, 25 or 15, wowen / wolen, seen on the image at integration, and code 165) - blocker: not-attempted; one reader each, neither blind.
 - Vienna clear text - blocker: not-attempted; transcribed only next to the cipher runs.
@@ -138,7 +240,12 @@ Contributed by Brice Dudout (13 Nov 2026), working with an AI model, as a new ta
 - Documents 3-4, codes 560 and 756 (image 425) - blocker: open-codes; no gloss on either; the untranscribed 1644-45 letters may give them.
 - Documents 3-4, image 425 group 29 33 28 20 (T1 i e z q) - blocker: not-attempted; perhaps a misread 23 (ietzt); the margin has "sich", which does not fit.
 - Documents 3-4, image 322 "Revellin" third figure (39 or 35) and the struck figure - blocker: not-attempted; a second look at the original or a better image.
-- Documents 3-4, the other 1644-45 cipher letters of unit 274999 (images 402-405, 408, 411, 412, 420) - blocker: not-attempted; not transcribed; key v3 should read them.
+- Documents 5-9, corrected decodes and supplied letters (31 Mar 12 words, 8 Apr 6, 20 Apr Chancellor 2, 20 Apr King 8, image 420 3; listed in "Documents 5-9") - blocker: not-attempted; a look at the originals or better images of the page edges (402-403) may settle some; the cut line ends need-physical-access.
+- Documents 5-9, codes 1009, 306 (2x), 470, 311, 1000 (2x), 269, 305, 81, 393, 1011, 753, 1400, 101, 560 (2x, with image 425), and 252 {im}, 434 {dass} (sense only) - blocker: open-codes; no gloss on the codes.
+- Documents 5-9, unresolved groups ‹Plo?k› (402), ‹km› and ‹re anpariw› (404), ‹?ar› (412), ‹lezere› ‹ineuperqte›, ‹t›, ‹ua› (420) - blocker: not-attempted; the later word glosses above them are not yet compared.
+- Documents 5-9, the later word glosses over images 402-420 - blocker: not-attempted; not transcribed or compared with the key's output; date and hand unknown.
+- Documents 5-9, second blind transcription of 402-412 (one reader, two passes) and a checkable freeze of pass C of 420 (the frozen file is not in the PR) - blocker: not-attempted.
+- Documents 5-9, Kong Christian IV's egenhændige Breve VI (1644-48) and Danish war histories for these dates - blocker: not-attempted.
 - Documents 3-4, `dudout/scripts/measure2.py` is not the frozen file (SHA-256 a3f24f4b, frozen value 198495aa) - blocker: not-attempted; the contributor can send the frozen version.
 - Documents 3-4, printed editions of the 1644-45 letters - blocker: not-attempted; not searched beyond the checks above.
 
@@ -150,4 +257,6 @@ Contributed by Brice Dudout (13 Nov 2026), working with an AI model, as a new ta
 - [ ] print: Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a and Kejseren 14 not seen; Fridericia II p. 17 checked.
 - [x] key-rebuild: tables 1 and 2 rebuilt from the Vienna runs; table 2 k l m w x y z and the codes have no material yet.
 - [ ] retry: a second, blind transcription of both letters (Vienna line 4 figure 8, code 165), the Glückstadt verso (image 3), and the suspected homophone 28 = o.
-- [ ] retry (documents 3-4): transcribe the 1644-45 letters at images 402-405, 408, 411, 412, 420 with key v3; re-decode the Vienna letter with key v3 (64, 63, 12, 11, 9, 8 as index numbers) in a new, separately counted pass.
+- [x] siblings (documents 5-9): the 1645 letters at images 402-405, 408-409, 411-412, 420 transcribed and decoded with key v3 (PR #545, second part); strict 68-88 %, read in part.
+- [ ] retry (documents 5-9): settle the corrected decodes on the original; compare the later word glosses; a blind second transcription.
+- [ ] retry (documents 3-4): re-decode the Vienna letter with key v3 (64, 63, 12, 11, 9, 8 as index numbers) in a new, separately counted pass.
