@@ -67,6 +67,27 @@ Plain-bar check (French 1644): the entry pointed at the bare decode `contributed
 contributor's joined French reading is now `f50_reading.md`: plain 0.6, explicit 0.667, at the bar (open signs, supplied
 endings, the name Marca). Keeps read; the human sign check on views 111-112 ("Next") is still the way to lift it.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded
+`contributed/data/transcription_f50.txt` with `key.tsv` and the code groups of Tomokiyo's table and the contributor's
+`METHOD.en.md`: the bare decode equals `decoded_f50.txt` on 725 of 725 letters. Re-run here: same.
+
+Reading side. Of the 741 letters of the line readings, 24 are marked as supplied and 13 more come from no sign. Nine
+are the documented *qu'il* from an unbarred 12. Four were silent supplies, which the transcription confirms (no sign
+there): *pr[is] soing* (r02-r03: no i, and one s sign for two), *c[e] que* (v03), *[d]'icy* (v04), *p[a]ssent* (v06).
+They are now bracketed in `f50_reading.md` (our scored copy; the contributor's `READING.en.md` is unchanged).
+Read share recounted with `v10_relabel.measure`: 0.924 before, **0.904** after (178 words, 19 holes). Read in part, as
+before.
+
+Open signs, as he reads them on Gallica views 111-112 (not repeated here on the image, not counted as read):
+- r02 `p` is the s of Tomokiyo's table, as in v01 *paquets*; the word it belongs to is still not understood.
+- the dots around r04 `22` also stand between plain letters in r03, so they do not mark a code group.
+- the hooked mark of r06 `23` stands over the 3 only: perhaps 2 and a marked 3 rather than a code 23.
+- v05 `18` carries a full bar; the code words run in alphabetical order (9 pour, 11 que, 12 qui, 26 vous), and 18
+  falls between *qui* and *vous*, where *sçavoir* fits. Still a guess, with one more argument.
+No key correction. The human check of the signs is still owed.
+
 ## Remaining gaps
 - signs and code groups without a value: p (r02), the sign ending r03 (l… logis?), 22 (r04), 23 with a hooked mark (r06), Ꝺ 22 (r16), the double-barred cross before =3 (r19), =18 (v05) - blocker: no-key-material; each occurs once; =18 is not in the four sister letters and their decipherments
 - 18 of 32 lines where a sign was chosen from context or letters are missing (r02-r07, r10-r13, r15, r16, r19, v05, v08, v10-v12) - blocker: no-key-material; the transcription was made and checked by AI only, workable by a person reading the signs on views 111-112
