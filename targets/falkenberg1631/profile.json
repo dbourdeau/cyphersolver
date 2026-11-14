@@ -86,7 +86,7 @@
    "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
   ],
   "first_date": "2026-10-29",
-  "last_date": "2026-10-29"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -127,6 +127,15 @@
    ],
    "what": "K2 on a second held-out letter (22 Jan 1631): too few glossed lines, inconclusive.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #571 by the project: hashes of the protocol, K1 and K2 match; frozen/validate.py re-run gives the same 39/43 and 22/24 against 0.233 / 0.125 for 200 permuted keys; no K1 source is the held-out image 131; about 130 groups of the transcription compared with image R0000785_00133, all agree (L02 '37?9' is 3729); the clear copy on image 134 seen and follows the cipher; own decoder from K2.json gives the same words. Not the key of chemnitz1631 or magdeburg1647. Target kept in progress: the clear copy is not yet fully transcribed, translated or used to re-key.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -142,7 +151,7 @@
    "date": "2026-10-29",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "K1: letters 39/43 = 0.907, codes 22/24 = 0.917 by the frozen script (24/24 after two normalisation misses) on the held-out letter of 17 March; controls 0.233 / 0.125."
+   "notes": "K1 on the held-out letter of 17 March: letters 39/43 = 0.907, codes 22/24 = 0.917 by the frozen script; best of 200 permuted keys 0.233 / 0.125; thresholds 0.85 / 0.75. Re-run on 14 Nov 2026: identical. The 24/24 is a judgment after the run. The order of events is by the contributor's record. The second test (K2, 22 Jan 1631) was inconclusive."
   },
   "verification": [
    "independent clear copy",
@@ -152,7 +161,7 @@
   "fraction_read": 0.535,
   "fraction_read_method": "measured",
   "fraction_read_source": "reading.md: 172 cipher tokens before the clear copy was found: strict count 92 sure (0.535); with 20 probable 0.651; with 25 restored 0.797; 35 unresolved. The content is existing (two clear copies of the time).",
-  "provenance": "project",
+  "provenance": "contributed",
   "credits": [
    {
     "who": "contemporary",
@@ -164,16 +173,27 @@
     "who": "dudout",
     "role": "new cipher with solution",
     "note": "letter found, K1 built and validated, the cipher read to about 80 % by sense before the clear copy was seen",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/571"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "leads 1126 and 1127, Internet Archive printed-sources sweep of October 2026 (Dittmar's edition)",
+    "date": "2026-10-28"
    }
   ],
   "gaps": [
    {
-    "item": "codes never glossed and nine abbreviations, mostly now identified from the clear copy but not yet re-keyed",
+    "item": "clear copy (images 134-135) filed only as a quick reading; part 2 not re-read, image 135 not compared, no full translation",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "codes never glossed and nine abbreviations, mostly identified from the clear copy but not re-keyed; no strict count of the cipher against the clear copy",
     "blocker": "open-codes"
    },
    {
-    "item": "lead 1127 not located in the images 100-137",
+    "item": "lead 1127 (2 March 1631) not located in the images 100-137",
     "blocker": "not-attempted"
    },
    {
