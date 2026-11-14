@@ -109,6 +109,10 @@ Gap closed: "n23, ff. 35r-v beyond the sample: not transcribed".
   transcription notes, and "empieter" stays the sense reading.
 - Recount by the README rule (`v10_relabel.share` on `texts/n23_decryption.md`): 963 words, 0 holes, 4 doubtful,
   0.996, as recorded.
+- Integration check (14 Nov 2026): an own script resolves the 26 codes of the transcription (the year 1590 left out) on
+  key.txt in the order of codes.txt, and they match the 26 names of the decryption one for one; the 15 codes of f. 35r
+  seen on the Gallica canvas 79 (full size, viewed reduced) as transcribed; v10_relabel.share re-run: 963 words, 0 holes,
+  4 doubtful, 0.996. Nothing on the page changes.
 
 ## Open
 
