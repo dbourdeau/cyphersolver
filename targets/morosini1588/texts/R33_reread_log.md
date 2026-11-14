@@ -114,3 +114,20 @@ a blot over the place of the c; both illegible):
 - 192v l. 8 "compitam[ente] a […] uolontà et": "5 5 0 2 1 2" (best parse "ela"). Blocker: no-key-material.
 - 192v l. 9 "N S […]": "8 7 2 2 9 5 7 9 6 9 5 7 221^. 0 5 7 2 0 0 166^. 4" (best parse "aaoeioetei[lettere]liar[questo]s"). Blocker: no-key-material.
 Result: 1 hole filled; 55 left, each with its blocker.
+
+## 14 Nov 2026: one-digit slips (Brice Dudout, with Claude Opus 5.5)
+
+README rule of 14 Nov 2026. Meister no. 40 is the key of the period (the Secretariat's key for Morosini, 8 June 1587),
+not one rebuilt here. Every hole of the r2p list was tested for the word the sense wants with exactly one digit
+changed (no insertion, no deletion); the candidates were looked at on the DECODE R33 images (crops kept privately).
+Closed:
+- 189v l. 4 "uole{+r}": 3 91 50 35 2 | 64 per; a hooked 2 (or the clerk's final 1 with a flourish): read either way.
+- 189v l. 24 "uole{+r}": 3 91 50 35 2 | 70 37 42 ...; a 2 with a flat base. Slip.
+- 192r l. 16 "{+p}iù": 20 17 173; the first figure is a 2 like the 2 of the following 26, not a 7. Slip.
+- 189v l. 4 "esenti": DECODE "0 2 1 5 1 7 1"; the figure read 2 has the same hooked form as the line's final 1
+  (171 = i): 01 n, as in "esentioni" (l. 8-9). Read from the figures (a slip for 01 if it were a 2: read either way).
+- 191v l. 11 "fatomi": 8 30 2 15 191 20 7, a lone null 8. Read from the figures.
+Looked at, not counted: 190v l. 14 "conu[e]niua" (76 37 3 at the line end, at the gutter: a lost 5 cannot be ruled
+out); 190r l. 14 "in[st]igati" (the figure that would be 15 is under show-through); 192v l. 4 "destr[i]", 191v l. 4
+"[?contra]", 189v l. 16 "[?posedono]" (blot, show-through, hole in the paper). Read share by words 78 -> 73 holes in
+1,506 words, 0.948 -> 0.952: read.
