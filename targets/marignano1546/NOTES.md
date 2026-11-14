@@ -9,7 +9,8 @@ checked it. Not in the catalogue: a new find from a WAINUT sweep of online archi
 
 Word counts (`scripts/check_marks.py`, output `validation/check_marks_output.txt`): 62 words in cipher. 55 come verbatim
 from the signs; 7 carry a marked repair (four double letters restored; two doubtful signs, in *di [?l]a* and *aviso [?a]*;
-one sign read against its value in *pu{b}lica*). All 62 read as sense (100%), above the 95% bar; 59 of 62 (95.2%) have no
+one sign read against its value in *pu{b}lica*). All 62 read as sense (100%); by the README read bar the three words on a
+doubtful or contradicted sign are holes, so the read share is 59 of 62 (95.2%), above the 95% bar; the same 59 have no
 departure from the signs other than the scribe's single-written double letters (the independent check gives 60, 96.8%:
 it counted *di la* before its *l* was marked doubtful; see Corrections). A further seven clear words stand in
 the passage (*Qua, Hora, meglio, L'aparechio, -cular, questa, cosa*) and are not counted. The code *eti* (V. Ecc.a) is
@@ -95,7 +96,8 @@ It passes (`validation/check_marks_output.txt`).
 names (`g e + f q N o`, and `u` u|v) it cannot tell whether the right value was picked. The independent check showed this:
 *primo* changed to *priso* and *si* changed to *qi* both pass with exit 0. Real departures (*luterini*, *cosa*, *tenor*)
 fail. The checker now prints every two-valued pick so that a reader can check them against c. 14r; it does not check them
-itself. Splitting the merged shapes on the image would close this; it was not done.
+itself. Splitting the merged shapes on the image would close this; it was not done by the contributor. Brice Dudout did it on 14 Nov 2026
+for six of the seven names (next section); `key.tsv` and the transcription still use the merged names.
 
 Summary: from the imperial court at Ratisbon, Marignano tells Ferrante Gonzaga, governor of Milan, that the war against
 the Lutherans is decided. Provisions are being made, and he has more than his share in them. The preparation is great,
@@ -124,6 +126,30 @@ The translation on c. 14r follows the cipher closely but normalises the spelling
 - `scripts/pass2_blind.py`: the local path and the model-client call are removed (stub); `__pycache__` deleted.
 - `scripts/check_marks.py`: prints the two-valued picks and states the held-out test's basis.
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) wrote a decoder that reads only `key.tsv`,
+`transcription_c13r.txt` and `reading_marked_c13r.txt`: 239 sign units, 238 give a key value of their sign name; the
+exception is the marked *pu{b}lica*. Re-run here: the same.
+
+He then looked at the two-valued sign names on the Estense image of c. 13r and found that six of the seven are two
+different shapes, one value each (table in his file): `+` g/h, `g` s/q, `o` s/m, `N` f/c, `f` r/t, `e` e/i. `q` (t/f)
+may be two shapes; `u`/`v` was not looked at. Checked here on full-size crops of M01-M02 and M07-M09 (Estense IIIF,
+regions of 1,000 px): the epsilon (e: *luterani*, *ale*) and the round e (i: *provisione*) are different signs; the small
+joined o of *pu?lica* is the s shape and the tall dark oval of *me* the m shape; the g of *provisione* has a closed
+loop and that of *quale* a long descender; the cross of *già* is plain. The other rows of his table were not re-read
+here. The split is not written into `key.tsv` or the transcription: that is a renaming job still to do, and it would let
+`scripts/check_marks.py` test the 29 letters that now rest on a pick.
+
+Consequences applied:
+
+- **M08 reads *tener*, not *tenir*.** The fourth sign is the epsilon (seen here on the crop), which is e in the seven
+  other places; the round e is the i sign. The reading had taken *tenir* from c. 14r. `reading_c13r.md` and
+  `reading_marked_c13r.txt` now have *tener*; the sense and the counts do not change.
+- **Read share recorded as 0.952, not 1.0.** By the README read bar a word on a doubtful sign or read against its sign is
+  a hole: *di [?l]a*, *aviso [?a]* and *pu{b}lica* are three of the 62 cipher words, so 59 of 62. The class stays read.
+  (`research/reading_audit/v10_relabel.py` gives 0.977 because it counts the whole file, notes included.)
+
 ## Remaining gaps
 
 Unread or unsettled pieces of the cipher (as in profile.json outcome.gaps):
@@ -131,7 +157,8 @@ Unread or unsettled pieces of the cipher (as in profile.json outcome.gaps):
 - Doubtful signs `l?` (M01, *di la*), `j'?` (M07, *a*), `o?` (M09, *publica*, read against the sign's value) - blocker:
   illegible; single occurrences, every word confirmed by c. 14r.
 - `f` or sigma `s` in *actende* (M02) and *auctore* (M10) - blocker: illegible; open after the independent check, same
-  value either way.
+  value either way. Brice Dudout (14 Nov 2026) reads it as neither: one shape in both words, a bowl into a hooked
+  descender, a third sign for t. Not re-read here; not checked by a palaeographer.
 - The dotted-vowel groups `{onu} {nao} {nou} {anu}` - blocker: too-short; null or stop marks, not proved either way.
 
 Not unread pieces, but open (profile.json outcome.notes):
