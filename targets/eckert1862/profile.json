@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "eckert1862",
- "title": "Eckert ledgers, War Department cipher telegrams 1862-1867 (catalogue 648): code layer, Book #1 applied to the 1864-65 traffic; in progress",
+ "title": "Eckert ledgers, War Department cipher telegrams 1862-1867 (catalogue 648): message-specific Books 9, 2 and 1; in progress",
  "documents": [
   {
    "id": "mssEC25",
@@ -77,7 +77,7 @@
     "location": [
      "printed edition"
     ],
-    "source": "Contributed by WAINUT (27 Oct 2026). War of the Rebellion: Official Records, Ser. I vol. 32 pt. 2 pp. 244, 263-264 and vol. 33 pp. 488, 489, 497, 503, 518-519 print 9 of the 14 telegrams (T2, T4-T11) in clear (contemporary/mssEC19_p1-7_OR.txt); T1 and T3 not found there.",
+    "source": "Contributed by WAINUT (27 Oct 2026). War of the Rebellion: Official Records, Ser. I vol. 32 pt. 2 pp. 244, 263-264 and vol. 33 pp. 488, 489, 497, 503, 518-519 print 9 of the 14 telegrams (T2, T4-T11) in clear (contemporary/mssEC19_p1-7_OR.txt); T1 and T3 not found there. Addition 12 Nov 2026: U1 also appears in OR I/33 p486 (print image checked).",
     "partial": true
    },
    "length": {
@@ -92,7 +92,71 @@
     "source": "Decoding the Civil War volunteers (Zooniverse, 2016-17), text field of the Huntington Digital Library page records 8893-8899",
     "corrections": 0,
     "image_quality": "good",
-    "notes": "Contributed by WAINUT (27 Oct 2026). Pages 1, 3 and 4 checked word for word against the page images (IIIF canvases 8893, 8895, 8896): no difference. Count includes the headings, addresses and check words (docs/_check_profile.py --measure); the route transposition is not yet applied in this ledger, code words stand among clear words."
+    "notes": "Contributed by WAINUT (27 Oct 2026). Pages 1, 3 and 4 checked word for word against the page images (IIIF canvases 8893, 8895, 8896): no difference. Count includes the headings, addresses and check words (docs/_check_profile.py --measure); the route transposition is not yet applied in this ledger, code words stand among clear words. The preserved original file is not overwritten; addition_2026-11-12 carries corrected standalone U1/U2 extracts and an image-checked U3 extract. Its correction ledger supersedes the earlier no-difference statement for U1."
+   }
+  },
+  {
+   "id": "mssEC19-McPhail",
+   "read": "read",
+   "shelfmark": "Huntington Library, Thomas T. Eckert Papers, mssEC19, pp9-10: forwarding wrapper and McPhail intelligence report",
+   "date": "14-15 Feb 1864",
+   "year": 1864,
+   "country": "United States",
+   "route": "War Department, Washington -> S. H. Beckwith for Grant; McPhail report includes Baltimore wrappers",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "OR I/33 p559; print image checked and variants retained in addition_2026-11-12/McPhail_reading.md; additional printed witness OR I/32 II p394 visually checked, agrees with ledger on Johnston and lacks Hoke",
+    "partial": true
+   },
+   "length": {
+    "tokens": 317,
+    "distinct": 204,
+    "unit": "mixed",
+    "measured": true,
+    "file": "addition_2026-11-12/transcription/McPhail.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Decoding the Civil War volunteers, Huntington page records 8901/8902; corrections checked on manuscript images by Codex agents for Andrew Beling",
+    "corrections": 1,
+    "image_quality": "good",
+    "notes": "Downloaded JSON preserved. McPhail: Pine -> Peru; Grant: restore omitted Grant. Includes headings, signature/check words and = word divisions in measured count."
+   }
+  },
+  {
+   "id": "mssEC19-Grant",
+   "read": "read",
+   "shelfmark": "Huntington Library, Thomas T. Eckert Papers, mssEC19, pp9-10: Halleck to Grant, plantation protection",
+   "date": "16 Feb 1864",
+   "year": 1864,
+   "country": "United States",
+   "route": "War Department, Washington -> S. H. Beckwith for Grant; McPhail report includes Baltimore wrappers",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "OR I/32 part II p407; print image checked and variants retained in addition_2026-11-12/McPhail_reading.md",
+    "partial": false
+   },
+   "length": {
+    "tokens": 79,
+    "distinct": 65,
+    "unit": "mixed",
+    "measured": true,
+    "file": "addition_2026-11-12/transcription/Grant.txt"
+   },
+   "transcription": {
+    "by": "published",
+    "source": "Decoding the Civil War volunteers, Huntington page records 8901/8902; corrections checked on manuscript images by Codex agents for Andrew Beling",
+    "corrections": 1,
+    "image_quality": "good",
+    "notes": "Downloaded JSON preserved. McPhail: Pine -> Peru; Grant: restore omitted Grant. Includes headings, signature/check words and = word divisions in measured count."
    }
   }
  ],
@@ -131,27 +195,32 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Decoded at the time; many of the telegrams are printed in clear in the Official Records. No modern decoding of the ledgers' code layer published (Decoding the Civil War phase 3 not reported; searched 27 Oct 2026).",
-   "found": "before attempt",
-   "used": false
+   "where": "Earlier readings in the Official Records; selected addition: U1 OR I/33 p486, McPhail OR I/33 p559, Grant OR I/32 II p407. The U1 printed parallel was located after its No.2 reading; other prior texts were visible during exploratory collation. U2 body was already clear in volunteer transcription. No universal novelty claim. A later local source search also located McPhail in OR I/32 II p394; its print image was checked and differs from I/33 p559.",
+   "found": "during attempt",
+   "used": true
   },
   "inputs": [
    "transcription",
    "images",
-   "key from archive"
+   "key from archive",
+   "published reading",
+   "cleartext context"
   ],
   "attack": "key from archive",
-  "human_role": "unknown",
+  "human_role": "Earlier role unrecorded. For 12 Nov addition, Andrew Beling directed the research and requested continuation; OpenAI Codex agents acquired, read and collated the sources. No claim of human scholarly review.",
   "tools": [
    "CONTENTdm API harvest (harvest.py)",
-   "word-level key application (decode.py)"
+   "word-level key application (decode.py)",
+   "addition_2026-11-12/decode_complete.py (hash-checked line-by-line application)",
+   "addition_2026-11-12/decode_selected.py (portable original 175-substitution reproduction)"
   ],
   "models": [
-   "claude-opus-5-5"
+   "claude-opus-5-5",
+   "OpenAI Codex (exact model identifier not recorded in artifact)"
   ],
-  "sessions": 1,
+  "sessions": "unknown",
   "first_date": "2026-10-27",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-12"
  },
  "solution": [
   {
@@ -277,13 +346,55 @@
    "kind": "key from source",
    "what": "William Echols (issue #352) matched ledger telegrams of 6-16 Feb 1862 to the printed texts in the Official Records, series I, vol. VII, and read two McClellan to Halleck telegrams of 14 Feb 1862; eleven code words of the February 1862 filling result (key_1862_echols.tsv). Project check: his transcription agrees with transcription/mssEC15.txt, and the values read as sense on pp. 26-28 with the parallel telegrams to Buell and Halleck decoding alike. The printed pages were not checked.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "key from source",
+   "what": "Andrew Beling with Codex agents: matched U1 to surviving No.2 vocabulary (mssEC47); applied four existing No.1 entries to U2. Heading 1 supports U2; U3 explicitly bears 10 and remains unresolved.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "transcription",
+   "what": "Corrections preserved separately: U1 Word -> World (emendation; the clerk wrote Word); U2 Beckmith -> Beckwith and Ma/Callum -> Mc/Callum; McPhail Pine -> Peru; p10 restore omitted Grant. Full lines, headings and unresolved tails retained.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "reading",
+   "what": "Complete selected message readings, literal line records and key ledger added: U1, U2, McPhail and Grant. Conjectural Greers/Dusty/whims and unity remain holes (Allen = 1 and Provost Marshal read on 13 Nov 2026 after the Alton key misreading was corrected). U3 has a readable clear frame with six unknown No.10 tokens.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Three printed parallels visually checked: OR I/33 pp486/559 and I/32 II p407. Preserve Java/Johnston versus printed Beauregard, 700 infantry versus 780 Maryland Line, and Elliotts versus Ellet’s. Existing decipherments, not first historical plaintext.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "verification",
+   "what": "Separate context-aware Codex agent checked twenty source images (REVIEW.md); coordinator later checked printed p407. Complete decoder checks frozen input hashes and all 175 legacy substitution tuples, adds four U2 entries, preserves unresolved tokens/tails. This is not blind or external scholarly verification.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "access",
+   "what": "U3 No.10 search: public 67-item inventory has no expressly titled No.10; inspected No.9 pages and Fairchild Gulf key differ. Plum describes a red No.10 layer in combined 9/10/12 books, but the actual matching No.10 table has not been located. OR II/6 bounded search found related prisoner transport correspondence, no exact U3 parallel.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-12",
+   "kind": "literature search",
+   "what": "Located and visually checked a second printed McPhail report in OR I/32 II p394. It agrees with ledger Java/Johnston, has Greer’s [?], lacks Hoke, and retains 780 Maryland Line unlike ledger 700 infantry. Three-witness comparison added; no attribution of the divergence to a particular clerk/editor.",
+   "result": "worked"
   }
  ],
- "outcome": {
-  "method": "read with known key",
-  "method_basis": "Cipher Book #1 filed in the same papers (mssEC 41-45) applied to the 1864-65 coded ledgers; not yet measured against the read bar.",
+ "outcome": {"validation": {"date": "2026-11-13", "verdict": "not applicable", "notes": "No key was recovered from the ciphertext: the code-word values come from the period cipher books (Nos. 1, 2 and 9) and printed parallels, so there is no fitted key to test against chance"}, 
+  "method": "read after matching with key from external sources",
+  "method_basis": "Message-specific surviving book matches: existing No.9 for T1-T11, matched No.2 for U1 and pp9-10, known No.1 for U2; most ledgers and No.10 U3 remain open.",
   "contribution": [
-   "none"
+   "transcription"
   ],
   "class": "not read",
   "key": "partial",
@@ -291,7 +402,7 @@
   "verification": [
    "key confirms"
   ],
-  "notes": "In progress. Book #1 covers the 1864-65 traffic; the 1862 filling is not in the papers; Books #2, #5, #9 not yet transcribed.",
+  "notes": "In progress, target-wide fraction unknown. Selected complete texts have measured body read shares; this does not promote unexamined ledger pages. Original failed No.9 U1-U3 output remains as historical evidence. No.2 extraction has 112 selected entries, not the whole book.",
   "credits": [
    {
     "who": "contemporary",
@@ -327,6 +438,42 @@
     "role": "identification",
     "note": "eleven code words of the February 1862 filling (Alden = Halleck, Alvord = Buell, Saffron = Columbus and others) matched to the Official Records; issue #352",
     "date": "2026-11-09"
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "date": "2026-11-12",
+    "note": "Andrew Beling with AI agents: U1 No.2 and U2 No.1 application; full selected pp9-10 reading and source collation. Exploratory, with prior readings visible; no first historical recovery claim."
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "date": "2026-11-12",
+    "note": "With Codex agents, corrections World (emendation), Beckwith, McCallum, Peru and restored Grant; originals retained unchanged."
+   },
+   {
+    "who": "decodingcivilwar",
+    "role": "transcription",
+    "note": "Volunteer transcriptions (2016-2017) in Huntington page records underpin ledger source text. Image repairs are distinguished."
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "source": "https://hdl.huntington.org/digital/collection/p16003coll11/id/596",
+    "note": "No.2 mssEC47 selected vocabulary; sensitive Java assignment cross-checked in mssEC48 p17; No.1 mssEC43 heading/time entries."
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "published": true,
+    "note": "U1 OR I/33 p486; McPhail report OR I/33 p559; Grant plantations telegram OR I/32 II p407. All three print pages visually checked by agents; variant readings remain distinct."
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "published": true,
+    "source": "https://archive.org/details/warofrebellion013202rootrich/page/n402/mode/1up",
+    "note": "Second printed McPhail witness, OR I/32 II p394; visually checked after initial two-witness collation."
    }
   ],
   "texts": [
@@ -341,22 +488,109 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "Halleck's War Department telegrams of late January and early February 1864: Ewell's brigades leaving for Johnston or Longstreet, Johnston's detachment against Sherman's movements in Mississippi, troops and cavalry sent to Harper's Ferry and West Virginia against Early's raid, and Butler left free to relieve North Carolina; plus two staff telegrams to Fort Monroe (Baker's cavalry to Yorktown; Parker's cavalry and recruits from Maine) not found in print.",
-    "note": "Contributed by WAINUT (27 Oct 2026). This entry covers T1-T11 only, which read whole; the document mssEC19-p1-7 as a whole is read in part, because U1-U3 (next entry) are not read: 11 of its 14 telegrams. read_share measured with research/reading_audit/v10_relabel.py (665 words, no holes). Reading grade left to a reviewer. The contemporary slot holds the OR clear texts of T2 and T4-T11, so 9 of the 11 telegrams are earlier solutions; the new step is tying Cipher Book No. 9 to mssEC 19."
+    "note": "Contributed by WAINUT (27 Oct 2026). This entry covers the original T1-T11 reading only: 11 of the 14 telegrams. The 12 November additions below supply U1 and U2 readings (U2 retains one body hole) and a partial U3 clear frame with six holes; the whole pp.1-7 document remains read in part. read_share measured with research/reading_audit/v10_relabel.py (665 words, no holes). Reading grade left to a reviewer. The contemporary slot holds the OR clear texts of T2 and T4-T11, so 9 of the 11 telegrams are earlier solutions; the new step is tying Cipher Book No. 9 to mssEC 19."
    },
    {
     "doc": "mssEC19-p1-7",
-    "label": "mssEC 19 pp. 4, 6, 7, telegrams U1-U3 (1 and 5 Feb 1864), not read (WAINUT)",
-    "transcription": "transcription/mssEC19_p1-7.txt",
-    "decryption": "decoded/mssEC19_p1-7_U1-U3_unread.txt",
+    "label": "U1: Book No.2 (mssEC19 p4)",
+    "transcription": "addition_2026-11-12/transcription/U1.txt",
+    "decryption": "addition_2026-11-12/decoded/U1.txt",
+    "reading": "addition_2026-11-12/reading/U1.md",
     "language": "en",
-    "state": "decoded, not read",
-    "note": "Contributed by WAINUT (27 Oct 2026). Cipher Book No. 9 gives no sense for these three telegrams; shown for checking only."
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Kelley reports Early advancing against West Virginia and the Baltimore and Ohio Railroad with a force detached from Lee.",
+    "note": "Body-only explicit-hole measure by v10_relabel.share: 34 words, 0 holes, 0 doubtful; denominator 34. Operator heading and post-signature possible check words remain in full transcript/literal and reading notes but are excluded from this body denominator; unresolved body tokens are holes. No percentage of total ledger claimed.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex AI agent (context-assisted; not a human review)",
+     "date": "2026-11-12",
+     "note": "Read the complete selected body as English sentences with the explicit remaining holes and witness variants. Agent source review in REVIEW.md; printed p407 later checked by coordinator."
+    },
+    "contemporary": "addition_2026-11-12/printed_parallels.md"
+   },
+   {
+    "doc": "mssEC19-p1-7",
+    "label": "U2: Book No.1 (mssEC19 p6)",
+    "transcription": "addition_2026-11-12/transcription/U2.txt",
+    "decryption": "addition_2026-11-12/decoded/U2.txt",
+    "reading": "addition_2026-11-12/reading/U2.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.962,
+    "summary": "Anderson leaves that day and will report to Colonel McCallum; the new key application reads the heading and addressee.",
+    "note": "Body-only explicit-hole measure by v10_relabel.share: 25 words, 1 holes, 0 doubtful; denominator 26. Operator heading and post-signature possible check words remain in full transcript/literal and reading notes but are excluded from this body denominator; unresolved body tokens are holes. No percentage of total ledger claimed.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex AI agent (context-assisted; not a human review)",
+     "date": "2026-11-12",
+     "note": "Read the complete selected body as English sentences with the explicit remaining holes and witness variants. Agent source review in REVIEW.md; printed p407 later checked by coordinator."
+    }
+   },
+   {
+    "doc": "mssEC19-p1-7",
+    "label": "U3: No.10, clear frame only (mssEC19 p7)",
+    "transcription": "addition_2026-11-12/transcription/U3.txt",
+    "decryption": "addition_2026-11-12/decoded/U3.txt",
+    "reading": "addition_2026-11-12/reading/U3.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.854,
+    "summary": "Prisoners leaving Cleveland are to pass a city under precautions against communication; city, coded ranks and signature/time remain unvalued.",
+    "note": "Body-only explicit-hole measure by v10_relabel.share: 35 words, 6 holes, 0 doubtful; denominator 41. Operator heading and post-signature possible check words remain in full transcript/literal and reading notes but are excluded from this body denominator; unresolved body tokens are holes. No percentage of total ledger claimed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "OpenAI Codex AI agent (context-assisted; not a human review)",
+     "date": "2026-11-12",
+     "note": "Final consistency pass read the full supplied transcription, literal and partial clear-frame prose. Central sentences are coherent with six explicit holes and the tail separately retained. Grade applies only to this partial prose; no fresh glyph validation, missing codeword values, city identification or No.10 recovery is claimed. Reviewer previously contributed to source review and packaging."
+    }
+   },
+   {
+    "doc": "mssEC19-McPhail",
+    "label": "McPhail report and forwarding wrapper, Book No.2 (pp9-10)",
+    "transcription": "addition_2026-11-12/transcription/McPhail.txt",
+    "decryption": "addition_2026-11-12/decoded/McPhail.txt",
+    "reading": "addition_2026-11-12/reading/McPhail.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.989,
+    "summary": "Intelligence estimates of Confederate forces in Virginia and the Carolinas, forwarded to Grant and Schofield; variants from print are recorded.",
+    "note": "Body-only explicit-hole measure by v10_relabel.share: 261 words, 3 holes, 0 doubtful; denominator 264 (Allen = 1 and Provost Marshal read on 13 Nov 2026). Operator heading and post-signature possible check words remain in full transcript/literal and reading notes but are excluded from this body denominator; unresolved body tokens are holes. No percentage of total ledger claimed.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex AI agent (context-assisted; not a human review)",
+     "date": "2026-11-12",
+     "note": "Read the complete selected body as English sentences with the explicit remaining holes and witness variants. Agent source review in REVIEW.md; printed p407 later checked by coordinator."
+    },
+    "contemporary": "addition_2026-11-12/printed_parallels.md"
+   },
+   {
+    "doc": "mssEC19-Grant",
+    "label": "Halleck to Grant, Book No.2 (p10)",
+    "transcription": "addition_2026-11-12/transcription/Grant.txt",
+    "decryption": "addition_2026-11-12/decoded/Grant.txt",
+    "reading": "addition_2026-11-12/reading/Grant.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "The Secretary of War requests protection of leased Mississippi plantations using the Marine Brigade; manuscript and print differ in the officer name.",
+    "note": "Body-only explicit-hole measure by v10_relabel.share: 58 words, 0 holes, 0 doubtful; denominator 58. Operator heading and post-signature possible check words remain in full transcript/literal and reading notes but are excluded from this body denominator; unresolved body tokens are holes. No percentage of total ledger claimed.",
+    "reading_review": {
+     "grade": "A",
+     "by": "OpenAI Codex AI agent (context-assisted; not a human review)",
+     "date": "2026-11-12",
+     "note": "Read the complete selected body as English sentences with the explicit remaining holes and witness variants. Agent source review in REVIEW.md; printed p407 later checked by coordinator."
+    },
+    "contemporary": "addition_2026-11-12/printed_parallels.md"
    }
   ],
   "key_file": [
    "key_book1_mssEC43.tsv",
    "key_book9_mssEC67.tsv",
-   "key_1862_echols.tsv"
-  ]
+   "key_1862_echols.tsv",
+   "addition_2026-11-12/key_book2_selected.tsv",
+   "addition_2026-11-12/key_book1_selected.tsv"
+  ],
+  "provenance": "mixed"
  }
 }
