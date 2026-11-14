@@ -125,14 +125,14 @@ Venetian state papers.
 
 ## Remaining gaps
 
-- codes 117 (twice) and 118 - blocker: no-key-material; three tokens, no other leaf in this code is known, the sense narrows 118 to the place of writing (Venice likely, not proved)
+- codes 117 (twice) and 118 - blocker: no-key-material; three tokens. Corrected 14 Nov 2026: 118 also heads the sibling letter of 25 July 1627 (images 465-466), written at another place, so it is a dating word of the writer's own code, not the place of writing (M. V. Prizmic, issue #450 comment of 14 Nov 2026; doi:10.5281/zenodo.24210516). Our earlier gloss 'place of writing, Venice likely' is withdrawn.
 - g/q sign class (13 units), pi/Z/n and c/e classes (7 units) - blocker: illegible; the tails of g and q cannot be told apart at the resolution available here (image 443, 4473 x 3436), three readers split; a person comparing them at full size is needed
 Not unread cipher pieces, but open: the writer and the year (1627 or 1628) are not proved; the clear German was read by one
 reader only, and no person has compared any transcription with the image.
 
 ## Escalation
 
-- [x] siblings: neighbouring leaves images 426-475 of unit 261377 swept; image 447 is a chancery sheet for Schultetus's number code, a different cipher; no sibling in this key
+- [x] siblings: neighbouring leaves images 426-475 of unit 261377 swept; image 447 is a chancery sheet for Schultetus's number code, a different cipher. Corrected 14 Nov 2026: our sweep missed a sibling in this key. Images 465-466 (Rigsarkivet list ids 48900949-48900950) hold a second letter in the same hand, signed 'Quem novit E.', dated in cipher 25 July 1627, found and read by Mark Vladimir Prizmic (issue #450 comment of 14 Nov 2026; preprint doi:10.5281/zenodo.24210516). We checked only that key_B reads its opening unchanged ('gnedigster konig', 'siebenden'); its transcription and reading are his and are not in this folder.
 - [x] clear-pages: no decipherment on or beside the leaf (images 442-449 seen)
 - [x] known-keys: zobel1629 (figures) and Schultetus's number code are different systems and do not apply; no other key of this series is a letter-sign substitution
 - [x] print: Danske Magazin, Christian IV's egenhaendige Breve, Danske Samlinger, Historisk Tidsskrift, Swedish Handlingar, DECODE, Cryptiana: nothing (thin: an anonymous letter cannot be searched by name)
