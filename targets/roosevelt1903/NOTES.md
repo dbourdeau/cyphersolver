@@ -20,6 +20,19 @@ A codebook: each five-digit group stands for a phrase, the first three digits gi
 
 The codebook pages were reported unreachable on 9 Nov; the integration of PR #561 (`targets/kobe1918`, NOTES "Integration check") found them online: NARA T1171 roll 1, catalog id 417267710, image files `https://catalog.archives.gov/medialz/dc-metro/rg-059/2034503/T1171/T1171-01/T1171-01-NNNN.jpg`. Each of the 22 distinct groups was looked up on its page image (page number read on the image header; for the pages used here image = page - 3 up to page 368 and page - 2 from page 384 on): every entry agrees with the contributor's (`key_excerpt.tsv`, columns page, image, checked). The spelling code, division 1, page 579 (image 0577): with the key 56169 (rows 5 6 1 6), U A W C stand under K I E L. Codebook pages hold two columns of 50 entries (00-49, 50-99) under one page number. No figure of the reading changes. The transcription of the telegram itself is still the contributor's.
 
+Brice Dudout made the same lookup independently the same day (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`): the
+same 22 entries on the same images, all agreeing; he did not check the spelling table (done here, above). His script re-run here: 22 of 22.
+
+**Which book (14 Nov 2026).** He noted that the NARA target sheet at the head of the roll (image 0004) reads "Target 1 / CIPHER AND KEY /
+July 1, 1867" and that the title page after it (image 0006) has no date, so the name "Red Cipher of 1876" was not confirmed by what he saw.
+Checked here on the images: roll 1 holds two books. Images 0005-0089 are the 1867 book (explanatory remarks dated "Department of State,
+Washington, July 1, 1867", image 0008; a vocabulary of letter groups, e.g. "Against ... ajc", image 0011, "Bread ... jap", image 0016).
+Image 0090 is a new title page, "The Cipher of the Department of State. Washington: Government Printing Office. 1876" (copy "No. 343",
+stamped "American Consulate, Belize, British Honduras"), followed by "Directions" (image 0092, which says the 1867 cipher was "in use from
+that time until quite recently") and, at image 0094, a pasted slip "To be attached to page 9, Red Cipher of 1876" giving the spelling-code
+rule. The entries used here (images 0097-0577: "Code word / Code No / Message or true reading", e.g. page 561, image 0559) are in this
+second, 1876 book. The name "Red Cipher of 1876" stands; no rename. The kobe1918 entries (same pages) are in the same book.
+
 ## Remaining gaps
 
 - A check of the 23 groups of the transcription against the Library of Congress scan - blocker: needs-physical-access; loc.gov returns 403 to curl and the scan was not tried in a browser (CLAUDE.md: Chrome), so this gap is workable in principle, not closed. The codebook half of the former gap is closed: the 22 entries and the spelling table were checked on the NARA images on 14 Nov 2026 (`key_excerpt.tsv`). The gap concerns verification of a reading already complete, not an unread piece, so the class "read" stands
