@@ -325,3 +325,28 @@ written before any decoding": it is that by the contributor's record, and it doe
 The target stays **Status: in progress**: what remains for system A (strict counts and translations of the two period
 decipherments, the cipher of the rest of the 6 Mar clear) and the other Chiffer n:o 1 letters with filed clears are workable,
 not outside-blocked. No page yet.
+
+## 14 Nov 2026 (second contribution) — key_c01 passes a pre-registered test on the 15 June 1764 letter (Brice Dudout, Claude Opus 5.5)
+
+Files in `dudout/system_a/june1764/` and `dudout/system_a/INVENTORY_chiffer1.md`; script `dudout/system_a/scripts/val_L101.py`.
+
+- Inventory of Chiffer n:o 1 (images 85-117) from the full-size images: table in `INVENTORY_chiffer1.md`. Letters with a filed clear:
+  96 (97R-99L), 6 Mar 1764 (102R-103R), 15/4 May 1764 (106R-107L), 15 June 1764 (109R-110L), 20/31 Aug 1764 (116-117).
+  Without an identified clear: 87-89 (value profile unlike system A) and 90R-93L (system A profile); 94-95 is a clear letter of
+  30 Jan [1764] that may belong to one of them.
+- **15 June 1764** (108R "St Petersbourg ce 15. Juin 1764", clear opening, then cipher on 108R-109L, end on 110R). Never seen by the key.
+  `PREREG.md` hashed before transcription (key by SHA-256, one measure = the check2.py metric with seed 1764, 200 permuted keys,
+  bar M >= 0.15 and >= controls max + 0.10, justified there); amendment with the transcription hashes before the decode.
+  Cipher transcribed twice (second pass by a blind sub-agent; 478 groups alike, 74 differ, first reading kept with "?"), clear
+  twice. **M 0.383 against controls max 0.057 (mean 0.035): pass.** The raw decode reads as the clear ("primo parceque je ne veux
+  pas reveiller mal apropos ... l'Imperatrice ... la situation du Roy ... Elle concerte avec le Roi de Prusse ... tout se sait ...
+  un mot ... sans dessein devant ... produit un effet que toutes negociations ne pourront ...").
+- The clear runs past the cipher of 108R-109L; the rest ("de la tromper ... conscience. Je pourrai bientot quitter Pettersbourg
+  ... un homme ruiné") is enciphered on 110R (three lines at the top, four inside a clear paragraph), placed by a decode made after
+  the measure. The decipherer's meaningless string "ritedriibsdoucle" (110L.03) sits where the cipher decodes "ri te ... s doute".
+- Reading through the contemporary clear: 342 word tokens, 337 sure, 4 probable, 1 unresolved: read by sense 99.7 % -> read
+  (method: existing decipherment). English translation in `reading_1764-06-15_en.md`.
+- `scripts/val_L101.py` is the missing producer of `validation/val_L101.json`: align_em.py with key_c01 as hard anchors, 1 iteration,
+  ratio 2.7; it reproduces the stored path exactly (320/320) and gives 175/228 = 0.768. The stored control files are not reproduced
+  by the same settings (0.231, 0.247, 0.247 vs 0.214-0.225).
+- Not done: strict counts and translations of the 6 Mar 1764 and 15 Nov 1765 period decipherments; the other Chiffer n:o 1 letters.
