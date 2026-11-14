@@ -1,0 +1,12 @@
+# Readings of the frozen table (key/table_e001295272.tsv) that the context of Casgrain's four letters shows to be wrong.
+# Written AFTER the freeze and after the comparison. The frozen table is NOT changed, and decode_letters.py does not apply these.
+# Columns: cell, reading as frozen, status as frozen, value the letters require, letters where the cell occurs, context in Casgrain's clear text.
+cell	frozen_reading	frozen_status	context_value	occurs_in	context
+428	ut	doubtful	va	I1 I3 I4	"Vaudreuil" spelled 428 133 221 195 133 569 (pass A read ut, pass B vu)
+479	cra	doubtful	ces	I3 I4	I3 opens "C'est avec" = 479 474 671 (pass A qui, pass B os)
+474	v	doubtful	t	I1 I2 I3 I4	same opening, "c'es-t"; pass B read t
+210	vent	doubtful	vraie	I3	"une vraie peine" = 106 160 210 160
+604	envi	doubtful	croi	I3	"j'ai lieu de croire" = 315 604 195
+621	ai	doubtful	si	I1 I3 I4	"le Canada, si votre zèle" = {Le Canada} 621 522
+591	lors	doubtful	po	I3	"je répondrai" = 195 591 329 221 233 414
+# Not counted among the seven: cell 623, sheet "bau" (doubtful, alternative "bas"); in I4 it stands where Casgrain prints "Bougainville" (623 then further groups). Our older aligner-built code I table had merged "bougainvil" onto it.
