@@ -149,6 +149,8 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
   169 group types of 101R have none) and some values are mis-cut by the alignment ("kie" = je, "limp", "sama", "ontje");
   two group readings doubtful on the images (101 L09 last group 187 or 184; 96 L02 409 or 609). Identify the writer "C. F." of
   15 Nov 1765.
+  *14 Nov 2026 (third contribution): strict counts and translations made (0.998 and 1.000, `sysA_1616/`); 100R is the end of letter 96,
+  not the rest of 6 Mar, and the cipher of 103L.08-103R.13 is not in the volume as far as checked (outside blocker).*
 - System B: done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and
   completed on 13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no
   value (dates, 236, 339, 55, 234) and the single-occurrence values of key c04, which no further text tests.
@@ -156,7 +158,7 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
   workable: the end of the cipher on 110R is not in the frozen transcription; 74 groups differ between the two passes.
 - The other letters of Chiffer n:o 1 (inventory in `dudout/system_a/INVENTORY_chiffer1.md`), workable from the online images:
   15 May 1764 (104R or 105R-108L; clear 106R-107L), 20/31 Aug 1764 (110R-115; clear 116-117), 100R (perhaps the rest of
-  6 Mar), and the two without an identified clear, 87-89 (value profile unlike system A) and 90R-93L (94-95, a clear
+  6 Mar; *14 Nov 2026: it is the end of letter 96, see the last section*), and the two without an identified clear, 87-89 (value profile unlike system A) and 90R-93L (94-95, a clear
   letter of 30 Jan, may belong to one of them).
 - Read the other clear pages for any that is a true decipherment (no compositional corrections).
 
@@ -393,3 +395,36 @@ Checked by the project on the merged files; the contributor's section above is u
 The target stays **Status: in progress**: the strict counts and translations of the 6 Mar 1764 and 15 Nov 1765
 decipherments, the letters of Chiffer n:o 1 with a filed clear (15 May, 20/31 Aug 1764, 100R) and the two without one
 (87-89, 90R-93L) are all workable from the online images. No page yet.
+
+## 14 Nov 2026 (third contribution) — catalogue 1616: the two system A decipherments counted and translated; 100R is the end of letter 96 (Arya Sanketbhai Patel)
+
+Files in `sysA_1616/` (README there). Images used: Riksarkivet IIIF A0073297_00100-00103, _00124-00126 at full size;
+_00087, _00090, _00104 at 1800 px.
+
+- **Prior art** (web search 14 Nov 2026: Düben / Gyldenstolpe / Panin / Lovisa Ulrika / cipher 1764, cryptiana, DECODE):
+  no printed edition or calendar of either letter found; nothing on cryptiana. Same result as 26 Oct.
+- **6 Mar 1764 read through its clear of the time** (`sysA_1616/reading_1764-03-06.md`): the clear 102R-103R compared
+  with the images line by line, agrees with `tx/p1764-03-06.txt`. Strict count 622 words, one doubtful ("la", 103R.03,
+  overwritten): read share 0.998. English translation and summary there. key_c01 places all 33 number lines of
+  101R-102L in order against the clear, from 102R.01 to 103L.08 "Il reitera a" (`decode_1764-03-06_key_c01.txt`).
+- **The cipher of the rest of the 6 Mar letter (103L.08-103R.13, 304 of the 622 words) is not in the volume as far as
+  checked.** 102L ends mid-sentence with blank paper below. 100R, the candidate named above, is not it (next point);
+  87, 90R and 104R each open a letter of their own. That part survives in its clear only.
+- **100R is the end of letter 96** (the training letter of key_c01): new transcription `sysA_1616/c100R_letter96_end.txt`
+  (11 lines, 197 groups, one pass). 97L ends "...453.630.497" and 100R begins "453.630.498" (the last groups repeated at
+  the head of the page). Decoded with key_c01, 100R reads as the last 98 words of the L096 clear in order ("[ni trop] peu,
+  et justement ce qu'il faut pour ne pas donner de l'ombrage aux autres Ministres ... realiser les promesses de Fersen et
+  de Hermanson, il ne faut qu'un mot pour me mettre au fait ... que des fausses demarches"). check2.py (seed 1616):
+  0.529 against that tail, 200 permuted keys max 0.094; against the 6 Mar clear after 103L.08 0.038 (controls max 0.040).
+  The tail was part of the clear the key was aligned to; the 100R groups were not. No bar set beforehand; run after the
+  decode was read.
+- **15 Nov 1765 read through its gloss** (`sysA_1616/reading_1765-11-15.md`): the gloss compared with the images
+  (124R.06-14, 125L.01-11, 125R.01-15, 126.06-12). One misreading corrected in `tx/g1765-11-15.txt`: 126.06G "en honneur"
+  is "en homme" ("en homme d'honneur"); `tx/g_p.txt` and `tx/g_pall.txt` are left as they were measured. Strict count:
+  letter 610 words, gloss 367, no hole: read share 1.000. English translation and summary there.
+- Method for both letters: read from existing decipherment. key_c01 unchanged; nothing here adds to it.
+
+Remaining for catalogue 1616, after this: no workable gap in the two letters' text. Open and blocked from outside: the
+cipher of 103L.08-103R.13 (not in the volume; needs another file or is lost), so that part of the 6 Mar text cannot be
+checked against a cipher; the writer "C. F.?" of 15 Nov 1765. Not done here: a reviewer's `reading_review`; a second
+reading of the 100R transcription.

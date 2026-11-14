@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "K259-1764-03-06",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00101 (right) and _00102 (left)",
    "date": "1764-03-06",
    "year": 1764,
@@ -18,7 +18,7 @@
     "location": [
      "separate folio"
     ],
-    "source": "Contemporary decipherment on 102R-103R (archivist's note 'Hör till chiffermeddelandet \"4.83.445.196.552\" etc 6 mars 1764'). The earlier 'does not fit' verdict (fb.py) is withdrawn on 14 Nov 2026: key_c01 (PR #566, built on letter 96 only) decodes 101R as the first page of this clear (0.767 of known groups agree on 101R; whole letter 0.261 against controls max 0.043). The cipher on 101R-102L covers the clear up to 103L.08 (by the contributor's record); the cipher of the rest of the clear is not located. Strict word count and translation not yet made."
+    "source": "Contemporary decipherment on 102R-103R (archivist's note 'Hör till chiffermeddelandet \"4.83.445.196.552\" etc 6 mars 1764'). The earlier 'does not fit' verdict (fb.py) is withdrawn on 14 Nov 2026: key_c01 (PR #566, built on letter 96 only) decodes 101R as the first page of this clear (0.767 of known groups agree on 101R; whole letter 0.261 against controls max 0.043). The cipher on 101R-102L covers the clear from 102R.01 to 103L.08 'Il reitera a' (all 33 number lines placed in order with key_c01, 14 Nov 2026); 102L ends mid-sentence. The cipher of the rest (103L.08-103R.13, 304 of 622 words) is not in the volume as far as checked: 100R, the earlier candidate, is the end of letter 96 (sysA_1616/README.md). Strict count of the clear: 622 words, 1 doubtful, read share 0.998; translation in sysA_1616/reading_1764-03-06.md."
    },
    "length": {
     "tokens": 641,
@@ -97,7 +97,7 @@
   },
   {
    "id": "K259-1765-11-15",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00124 (right), _00125, _00126",
    "date": "1765-11-15",
    "year": 1765,
@@ -110,7 +110,7 @@
     "location": [
      "interlinear"
     ],
-    "source": "Contemporary interlinear decipherment (tx/g1765-11-15.txt). It is complete but not positioned: it runs ahead of the cipher, by about one line at the start and about six lines by 125L.12; the 11 number lines without a gloss carry text glossed above earlier lines (checked with key_c01 on 125L.12, 125L.15, 125R.11, 126.13; PR #566 / issue #437). Strict word count and translation not yet made."
+    "source": "Contemporary interlinear decipherment (tx/g1765-11-15.txt). It is complete but not positioned: it runs ahead of the cipher, by about one line at the start and about six lines by 125L.12; the 11 number lines without a gloss carry text glossed above earlier lines (checked with key_c01 on 125L.12, 125L.15, 125R.11, 126.13; PR #566 / issue #437). Gloss compared with the images on 14 Nov 2026 (126.06G corrected: 'en homme d'honneur'). Strict count: letter 610 words, gloss 367, no hole, read share 1.000; translation in sysA_1616/reading_1765-11-15.md."
    },
    "length": {
     "tokens": 742,
@@ -661,6 +661,81 @@
    ],
    "what": "Integration check of PR #582 by the project: the plan hash (text above the amendment), the five amendment hashes and the 26 earlier hashes match; measure_june.py re-run gives 511 groups, M 0.3829, controls max 0.0573, mean 0.0347, as filed; own decoder with a different measure (decoded 5-letter windows found in the clear) 0.380 against 200 permuted keys max 0.061; 108R.01-04 compared with the image, 60 of 63 groups agree and the 3 others are already marked doubtful; the clear recounted at 342 word tokens, strict share 337/342 = 0.985. val_L101.py reproduces the stored 101R path (320/320) and 175/228; the stored control files are not reproduced. Judged a pre-registered test by the files; the order of events is by the contributor's record, the script was hashed in the amendment and not with the plan, and the bar was low and set with earlier scores of the same key in hand. Target stays in progress.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Prior-art search for catalogue 1616 (web: Düben, Gyldenstolpe, Panin, Lovisa Ulrika, cipher 1764; cryptiana; DECODE): no printed edition, calendar or reading of the 6 Mar 1764 or 15 Nov 1765 letters found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The 6 Mar 1764 clear (102R, 103L, 103R) compared with the full-size images line by line: agrees with tx/p1764-03-06.txt; five misspelt words settled on the image; 103R.03 'la' overwritten, left doubtful.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "beam/DP decoding"
+   ],
+   "what": "key_c01 decode of 101R-102L placed line by line in the clear (sysA_1616/sysA_place.py, difflib blocks of 3+ letters): all 33 lines in order, 102R.01 to 103L.08 'Il reitera a'; 102L ends mid-sentence with blank paper below.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Hypothesis from NOTES: 100R carries the cipher of the 6 Mar clear after 103L.08. 100R transcribed (11 lines, 197 groups, one pass) and decoded with key_c01: check2.py against the 6 Mar clear after 103L.08 gives 0.038 (200 permuted keys max 0.040). Ruled out.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "100R identified as the end of letter 96: 97L ends 453.630.497 and 100R begins 453.630.498; the key_c01 decode reads the last 98 words of the L096 clear in order; check2.py against that tail 0.529, controls max 0.094 (seed 1616, 200 permuted keys). The tail was in the key's training clear; the 100R groups were not. No bar set beforehand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "repeat/pattern analysis"
+   ],
+   "what": "Search of the other Chiffer n:o 1 cipher pages for the rest of the 6 Mar cipher: 87 (another hand, profile unlike system A), 90R (opens a letter, '...445.196.552' = '[Mo]n cher [Comte]'), 104R (opens 15 May 1764): none continues 102L. Not in the volume as far as checked.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The 15 Nov 1765 gloss compared with the images (124R.06-14, 125L.01-11, 125R.01-15, 126.06-12): agrees except 126.06G 'en honneur', corrected to 'en homme' in tx/g1765-11-15.txt (tx/g_p.txt left as measured).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Strict counts with research/reading_audit/v10_relabel.share: 6 Mar 1764 622 words, 1 doubtful, read share 0.998; 15 Nov 1765 610 words (gloss 367), no hole, 1.000. English translations and summaries in sysA_1616/reading_1764-03-06.md and reading_1765-11-15.md. Both read from the existing decipherment; reading_review left to a reviewer.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -675,7 +750,7 @@
    "none"
   ],
   "provenance": "mixed",
-  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations not yet made. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Chiffer n:o 1, 15 June 1764 (108R-110R): key_c01 passed a pre-registered held-out test against its contemporary clear 109R-110L (0.383 vs controls max 0.057, 14 Nov 2026); read through that clear (337 of 342 word tokens sure, 98.5 %; 341 by the contributor's count with probable words; order of events by the contributor's record). Open: the other Chiffer n:o 1 letters (87-89, 90R-93L, 100R, 104R-105L, 105R-108L, 110R-111 with clear 116, 112-115) and their clears; inventory in dudout/system_a/INVENTORY_chiffer1.md. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
+  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations made 14 Nov 2026 (6 Mar 1764: 622 words, 0.998; 15 Nov 1765: 610 words, 1.000; sysA_1616/). The cipher of 6 Mar 1764 after 103L.08 is not in the volume as far as checked; 100R is the end of letter 96. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Chiffer n:o 1, 15 June 1764 (108R-110R): key_c01 passed a pre-registered held-out test against its contemporary clear 109R-110L (0.383 vs controls max 0.057, 14 Nov 2026); read through that clear (337 of 342 word tokens sure, 98.5 %; 341 by the contributor's count with probable words; order of events by the contributor's record). Open: the other Chiffer n:o 1 letters (87-89, 90R-93L, 104R-105L, 105R-108L, 110R-111 with clear 116, 112-115) and their clears; inventory in dudout/system_a/INVENTORY_chiffer1.md. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
   "credits": [
    {
     "who": "dudout",
@@ -721,6 +796,18 @@
     "date": "2026-11-14",
     "source": "https://github.com/dbourdeau/cyphersolver/pull/566",
     "note": "System A: key_c01 (217 groups) rebuilt by anchored EM from letter 96 and its contemporary clear 97R-99L; held-out check on 101R; showed that both system A letters were deciphered at the time and that the 15 Nov 1765 gloss runs ahead of the cipher (issue #437); dudout/system_a/"
+   },
+   {
+    "who": "arya",
+    "role": "identification",
+    "date": "2026-11-14",
+    "note": "Image 100R identified as the end of letter 96 (not the rest of 6 Mar 1764): transcribed and placed with key_c01 (0.529 vs controls max 0.094); the cipher of 6 Mar 1764 after 103L.08 shown absent from the volume's cipher pages; sysA_1616/"
+   },
+   {
+    "who": "arya",
+    "role": "verification",
+    "date": "2026-11-14",
+    "note": "Catalogue 1616: the 6 Mar 1764 clear and the 15 Nov 1765 gloss compared with the images (one gloss misreading corrected), strict counts (0.998, 1.000) and English translations; sysA_1616/"
    }
   ],
   "method_basis": "Main target remains unsolved; separately, an existing archival key219 was applied to the printed1771 fragments, yielding a literal decode with uncertain expansions.",
@@ -802,6 +889,35 @@
      "date": "2026-11-14",
      "note": "The clear read as French sentences against the English translation; 109R.01-05 compared with the image; the key decode of 108R-109L follows it."
     }
+   },
+   {
+    "doc": "K259-1764-03-06",
+    "label": "System A, 6 Mar 1764, Düben to 'Mon cher Comte' (101R-102L): contemporary decipherment on 102R-103R, placed by key_c01",
+    "transcription": "tx/c1764-03-06.txt",
+    "decryption": "sysA_1616/decode_1764-03-06_key_c01.txt",
+    "reading": "sysA_1616/reading_1764-03-06.md",
+    "translation": "sysA_1616/reading_1764-03-06.md",
+    "state": "read",
+    "read_share": 0.998,
+    "language": "fr",
+    "summary": "Düben reports Panin's account of a supposed Danish-Russian concert against any change in the Swedish constitution (Ogier to Breteuil, after Moltke), Panin's assurances that the Empress will restore the King's authority, and advises that the King's security come before the Empress's friendship if her promises are slow.",
+    "note": "Text of the decipherment of the time (102R-103R), compared with the images; 622 words, 1 doubtful ('la', 103R.03). The cipher covers the clear only to 103L.08; the cipher of the remaining 304 words is not in the volume as far as checked (100R is the end of letter 96)."
+   },
+   {
+    "doc": "K259-1765-11-15",
+    "label": "System A, 15 Nov 1765, 'C. F.?' to 'mon cher Comte' (124R-126): complete contemporary interlinear decipherment, placed by key_c01",
+    "transcription": "tx/g1765-11-15.txt",
+    "decryption": [
+     "sysA_1616/decode_1765-11-15_key_c01.txt",
+     "dudout/system_a/outputs/decodage_C01_g1765-11-15.txt"
+    ],
+    "reading": "sysA_1616/reading_1765-11-15.md",
+    "translation": "sysA_1616/reading_1765-11-15.md",
+    "state": "read",
+    "read_share": 1.0,
+    "language": "fr",
+    "summary": "The writer, who has left St Petersburg, regrets that the King and Queen ignored his advice, calls useless the King's approach to the Russian court about the Crown Prince's marriage, advises how to avoid an open slight over the Order of St Andrew on 30 November, and urges that the Empress be humoured.",
+    "note": "Clear passages and the gloss in order; the gloss runs ahead of the cipher (NOTES 14 Nov 2026). 610 words (gloss 367), no hole. Writer not identified (monogram read 'C. F.?')."
    }
   ],
   "key_file": [
