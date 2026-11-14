@@ -159,8 +159,8 @@ The margin of p. 513 was not looked at until the transcription was frozen and th
 
 **Key.** The pages were decrypted with K-C02 **unchanged** (`decryption-p518.txt`, `decryption-p513.txt`). Values for the shapes K-C02
 leaves open or contradicts were gathered from p. 517 (after its test) and p. 518 and listed in `key-p518-513.tsv`: Venus sign = o,
-barred dumbbell = null, y = [Espagne], and four new shapes of p. 518 (X with a curved stroke = o, f crossed by a double = = f, plain long s
-= u, three tight loops = p) each from one place. They were frozen as key K-C03 with a pre-registration naming p. 513 as held-out block, but
+barred dumbbell = null, y = [Espagne], and five new shapes of p. 518 (X with a curved stroke = o, f crossed by a double = = f, plain long s
+= u, three tight loops = p, cross with a looped head = a) each from one place. They were frozen as key K-C03 with a pre-registration naming p. 513 as held-out block, but
 that block has 208 signs, under the 300 the pre-registration required, so **no test was run** and these values are **probable only**
 (validation.txt, section 4).
 
