@@ -1760,3 +1760,32 @@ body:has(.ms-bg) ul.findings li[data-mirror] .fth .sc{mix-blend-mode:multiply;fi
 }
 /* between the phone layout and the full bar the strip has no room for its button: it goes, rather than being cut off */
 @media (min-width:761px) and (max-width:1000px){.herostrip .randbtn{display:none}.herostrip .herostats a:last-child{border-right:0}}
+/* ---------------------------------------------------------------- watch it decipher: the reading line, and tiles set as words
+   The passage is read in the line above the tiles: ordinary text, words spaced, nulls left out, filling in as the tiles
+   settle. The tiles of one word touch, words stand well apart, and a null is a narrow dim tile, so the row below reads
+   as the same words sign by sign. */
+.cr-read{margin:.9rem 0 .2rem;padding:.1rem 0 .1rem .9rem;border-left:2px solid var(--gold);font-family:var(--period,var(--serif));font-size:var(--fs-xl);line-height:1.5;color:var(--head);max-width:none;overflow-wrap:anywhere}
+.cr-read .cr-rt{opacity:0;transition:opacity .35s}
+.cr-read .cr-rt.done{opacity:1}
+.cr-read .cr-rt.plain{font-style:italic;color:var(--ink2)}
+.cr-read .cr-rt.unk{color:var(--red)} .cr-read .cr-rt.unc{color:var(--amber)} .cr-read .cr-rt.code{color:var(--blue)}
+.cr-read .cr-rw{border-radius:4px;transition:background .15s}
+.cr-read .cr-rw.on{background:var(--amber-bg);box-shadow:0 0 0 3px var(--amber-bg)}
+.creveal.cipher .cr-read,.creveal.sealed .cr-read{visibility:hidden}
+.cr-tiles{margin-top:1.1rem}
+.cr-tiles.words{gap:.75rem 1.5rem}
+.cr-tiles.words .cr-w{gap:.3rem 2px;flex-wrap:wrap;border-radius:8px;transition:box-shadow .15s}
+.cr-tiles.words .cr-w.on{box-shadow:0 0 0 4px var(--amber-bg);background:var(--amber-bg)}
+.cr-tiles.words .cr-t{min-width:1.75rem;padding:.2rem .3rem;border-radius:3px}
+.cr-tiles.words .cr-w > .cr-t:first-child{border-top-left-radius:8px;border-bottom-left-radius:8px}
+.cr-tiles.words .cr-w > .cr-t:last-child{border-top-right-radius:8px;border-bottom-right-radius:8px}
+.cr-tiles.words .cr-t.plain{min-width:0;padding-left:0;padding-right:0}
+.cr-tiles .cr-t.null{min-width:1.1rem;padding-left:.15rem;padding-right:.15rem;background:transparent;border-style:dashed}
+.cr-tiles .cr-t.null .g{opacity:.7}
+@media (max-width:640px){
+  .cr-read{font-size:var(--fs-lg);padding-left:.7rem}
+  .cr-tiles.words{gap:.6rem 1.1rem}
+  .cr-tiles.words .cr-t{min-width:1.45rem;padding:.15rem .2rem}
+  .cr-tiles .cr-t.null{min-width:.9rem}
+}
+@media (prefers-reduced-motion:reduce){.cr-read .cr-rt{transition:none}}
