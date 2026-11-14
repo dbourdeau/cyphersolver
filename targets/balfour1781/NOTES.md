@@ -89,10 +89,30 @@ swapped) gives 2.1%, 0.0% and 0.0% for Nos. 1-3. The only flagged span in B is "
 Letter agreement with the interlinear (as transcribed) is 62-82% on pages where the interlinear is legible and
 far lower on p. 724, where it is very faint; the differences checked are faint or misread interlinear letters,
 not disagreements of the decipherer. One real disagreement: No. 3 has the numeral 18 for the men lost; the
-decipherer wrote "fifteen".
+decipherer's small word above it was first read "fifteen" (it is faint and partly struck through and only "-teen" is
+sure: see the verification section below).
 
 The reading is in `reading.md`; the line-by-line decipherment against the cipher and the interlinear is in
 `decoded.txt`.
+
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) wrote a second decoder that takes only
+the ring and table C from `decode.py` (as literals) and the transcription pages, and decides the indicators by the
+dash-group rule alone, with no language model: A 2,742 of 2,742 letters, B 1,539 of 1,539, C 850 of 850 equal to
+`decryption_A/B/C.txt`, with the same 31 + 4 settings. Nos. 2 and 3 open on the last setting of the sheet before
+(a=9, a=14) without the `START` table, so the carry-over is confirmed. Re-run here: same figures. No key correction.
+
+Read bar. Counted by the README rule on the reading files (`v10_relabel.measure`; every `[?]` and every conjecture
+such as `[Hightown?]`, `[Pedee?]`, `[the next?]` is a hole): A 0.988 (668 words, 8 holes), B 0.990 (406, 4),
+C 0.970 (226, 7). The profile had 1.0, 0.994 and 1.0, which were the table's letter shares above, not word shares;
+`read_share` now carries the measured values. All three stay above 0.95: read.
+
+p. 725, L09 `15 - 18 -` (NARA image 570). Dudout reads the mark over 15 as an *f*, the end of "loss of" (a=16), not
+the "4" of the transcription note, and the small struck word over 18 as ending "-teen", first letters unclear
+("fifteen" or "eighteen"). Looked at here on the same microfilm scan: the mark over 15 does look like an f, and the
+word over 18 is too small and faint to decide. So the one disagreement between cipher and decipherer rests on a faint,
+struck word; the cipher's 18 stands.
 
 ## Who deciphered it, and prior art
 
