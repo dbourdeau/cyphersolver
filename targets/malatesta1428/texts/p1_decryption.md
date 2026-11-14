@@ -15,7 +15,7 @@ concepi et excogitavi valde utilia, quibus poterit amplitudo Vestra statum et no
 re ipsam premissa rogare ac simul decrevi ne **de suis gentibus armigeris cas(s)andis vel quid aliud peragendum [·]
 delliberet** donec sciam; alioquin non possim, quod deo auspice infra viginti dies futurum spero si novum ipsum pacis
 sensu(?) verificari. Nam sibi tue prepositum(?) me sciat quo modo valeat **absque dis(c)rimine et multo dispendio
-provincie Moree, patrie siquidem fertilis et amene, rex efici**; precor itaque prefatam amplitudinem Vestram, cum se
+provincie Moree, patrie siquidem fertilis et amene, rex ef(f)ici**; precor itaque prefatam amplitudinem Vestram, cum se
 fratrem(?) paratam quoque reperiat posse sibi et natis amplitudinem tantam vendicare, nolit rem ipsam negligere. **De eo
 autem regno magnificum c(o)mitem Riciardum bene informatum puto, quoniam ad illud cum serenissima sorore nostra domina
 vaxilissa tetendit, et iterum deinde etiam sui ocaxione redivit.** Recommendo me prefate amplitudini Vestre, quam cum

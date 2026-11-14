@@ -42,8 +42,8 @@ Checked here (5 Nov 2026), with the key (`key.json`) and the corrected transcrip
   unread sign, and 5 signs are nulls.
 - Latin model `la`: -5.25 per letter against -6.90 for the best of 300 keys with the letters shuffled among the sign
   classes (mean -7.88); `lm.best_language` names Latin (-2.18).
-- Our own `p1v2.txt` agrees sign for sign at both ends of run 1 (`cc ss Z K bz Z` = d-e-s-u-i-s; `cc ss g cc ss 8 vb 8
-  bz x n H y I` = d-e-l-l-i-b-e-r-e-t, vb a null).
+- Our own `p1v2.txt` agrees sign for sign at both ends of run 1 (`cc ss Z K bz Z` = d-e-s-u-i-s; `cc ss 8 vb 8
+  bz x n H y I` = d-e-l-l-i-b-e-r-e-t, vb a null; the `g` before it is the unread sign 23, and the `cc : ss` before that ends *peragendum*; corrected at the claims review of 14 Nov 2026).
 - The plaintext fits the clear text around each run: run 2 follows "me sciat quo modo valeat", run 3 precedes "amplitudinem
   tantam vendicare ... sibi et natis", and "ne ... delliberet" has "amplitudo Vestra" as its third-person subject.
   Pandolfo is Paola's brother (clear text), so "sorore nostra" fits Cleofe Malatesta, the Despot Theodore II's wife

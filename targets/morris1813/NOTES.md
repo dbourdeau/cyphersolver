@@ -397,7 +397,7 @@ on the image (the cell on M97 roll 13 frame 1057 was not viewed by him or here),
 
 ## Remaining gaps
 
-- [370], the sign after full stops (22 times in the thirteen texts) - blocker: open-codes; the cell of the code sheet
+- [370], the sign after full stops (22 times in the thirteen texts by this count; Dudout's script finds 21 and word_share.txt shows 20 in the letters plus three on frame 0039: to be recounted) - blocker: open-codes; the cell of the code sheet
   has a z-like sign and no value.
 - 575.1060 in No. 19, an adverb before "guards" - blocker: open-codes; se with two strokes + ti gives no word, and the
   three copies agree.
