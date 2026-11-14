@@ -109,6 +109,12 @@ hole rate 0. **A reading of fragments; keeps read** (grade A): each cipher run i
 confirmed letter for letter by the contemporary memorandum. Not 'not prose' (the runs are running sentences) and not
 decoded-only (no hole).
 
+## Independent verification by Brice Dudout (PR #565, 14 Nov 2026)
+
+Brice Dudout (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded `transcripts/no08.tok` from `key.json`
+alone: 166 signs, 23 distinct, the four runs identical to `texts/no08_decryption.txt`. No key correction. Re-run here: same result;
+the read share 1.0 stands. The DECODE image was not fetched.
+
 ## Remaining gaps
 
 - the cipher behind paragraphs 1-4 of the memorandum - blocker: needs-physical-access; that cipher is in a covering letter not on this sheet and not among the DECODE photographs; its decipherment is on the memorandum.
