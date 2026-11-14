@@ -26,6 +26,7 @@ def main():
  assert len(old.replace(' ',''))==58 and len(new.replace(' ',''))==57
  assert decrypt(new,KEYS[0])==expected
  assert decrypt('EIEX',KEYS[0],17)=='SENT' and decrypt('GJS',KEYS[0],44)=='THE'
+ assert decrypt('FIEX',KEYS[0],17)=='TENT'  # the first glyph may be the clerk's F: SENT/TENT is open
  mech=list(csv.DictReader((P/'APRIL_MECHANICAL.tsv').open(),delimiter='\t'))
  assert len(mech)==228
  for row in mech:
@@ -40,6 +41,6 @@ def main():
    f=args.images/row['path'];assert f.stat().st_size==row['bytes']
    assert hashlib.sha256(f.read_bytes()).hexdigest()==row['sha256'],str(f)
   print('PASS all 3 reacquired original image hashes.')
- print('PASS 13 January groups / 54 cipher letters; CONTENT exact; April10 SENT/THE exact, 57 revised letters; 225 April11 comparisons reproduced, none accepted in accompanying review. Payload hashes verified.')
+ print('PASS 13 January groups / 54 cipher letters; CONTENT exact; April10 THE exact, EIEX->SENT / FIEX->TENT (open), 57 revised letters; 225 April11 comparisons reproduced, none accepted in accompanying review. Payload hashes verified.')
  print('April10 literal:',expected)
 if __name__=='__main__':main()

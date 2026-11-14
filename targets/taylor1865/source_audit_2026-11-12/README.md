@@ -1,6 +1,6 @@
 # Source audit: Taylor/Surget, January18 and April10–11,1865
 
-This is a partial source-reading addendum. It promotes no complete reading, new key, or whole-text percentage. Original target ciphertext/key/profile files are unchanged. Exact local improvements with known keys are **CONTENT**, **SENT**, and **THE**. Other glyphs and endings remain uncertain. The large original images and all prior February contributions are outside this payload.
+This is a partial source-reading addendum. It promotes no complete reading, new key, or whole-text percentage. Original target ciphertext/key/profile files are unchanged. Local improvements with known keys supported by the images are **CONTENT** and **THE**; **SENT** depends on reading EIEX rather than FIEX (which gives TENT) and is open. Other glyphs and endings remain uncertain. The large original images and all prior February contributions are outside this payload.
 
 ## Evidence and review limits
 
@@ -49,4 +49,4 @@ If the archive changes bytes, record the new witness separately; do not silently
 
 ## Remaining witness work
 
-The earlier investigation verified Davis Papers volume11p339, citing the same NARA bookcopy. P340 was not acquired/read; do not treat the modern edition as an independent contemporary clear duplicate. [Official publisher](https://lsupress.org/9780807129098/the-papers-of-jefferson-davis/) offers the authorized ebook ISBN9780807158920. [Tulane's official guide](https://libguides.tulane.edu/c.php?g=528385&p=3612964) lists Davis microfilm2012-0192reel14 with incoming telegrams fromJanuary1,1865; the exactJanuary18 item has not been located. Both are concrete next access paths, not claims of an existing clear counterpart. No purchase, contact, or order was made in this audit.
+The earlier investigation (12 November 2026) read Davis Papers volume11 p339 in the publisher-authorized Google Books preview; it cites the same NARA bookcopy (chapter2 volume10:107), and its printed opening agrees with the existing provisional reading. The image is kept locally, not committed. P340 was not acquired/read; do not treat the modern edition as an independent contemporary clear duplicate. [Official publisher](https://lsupress.org/9780807129098/the-papers-of-jefferson-davis/) offers the authorized ebook ISBN9780807158920. [Tulane's official guide](https://libguides.tulane.edu/c.php?g=528385&p=3612964) lists Davis microfilm2012-0192reel14 with incoming telegrams fromJanuary1,1865; the exactJanuary18 item has not been located. Both are concrete next access paths, not claims of an existing clear counterpart. No purchase, contact, or order was made in this audit.
