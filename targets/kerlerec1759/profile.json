@@ -207,6 +207,15 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 1065 tokens, 247 types, fr-modern order 4: reading -1.976 per letter; random keys -3.377 (z 11.5); key annealed onto shuffled ciphertext best -2.3 (mean -2.322, z 18.3); annealer on the real text -2.283. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check of PR #586 (round 13). Counts reproduced by an own parser: 555, 191 and 322 legible groups (1,068), 3 without a value (107, 209, 591), 220 on Pusch's values alone (101, 56, 63), 27 gutter marks. decode.py with the union of key_manuscript.tsv and pusch_values_used.tsv resolves 552/555, 191/191, 322/322. Held-out test re-run: key from the clerks' glosses 198/253 = 78.3% (shuffles mean 16.4%, max 24.1%), identical; test plan and frozen key hashes match. The merged-key figure of 96.0% could not be re-run, the frozen merged key is not in the folder; the union of the two committed key files gives 232/253 = 91.7% (50 shuffles, max 20.2%). Strict word count over the coded text only: 206 278/295 (94.2%), 207 100/103 (97.1%), 215 179/187 (95.7%). ANOM images not sampled: the viewer answered with a bot check and no browser route was available in this session.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -261,8 +270,8 @@
      "date": "2026-11-14",
      "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
     },
-    "read_share": 0.9536082474226805,
-    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage."
+    "read_share": 0.9424,
+    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage. Integration check, 14 Nov 2026: read_share is the strict count over the coded text only, 278 of 295 words; the clear opening and closing lines and editorial identifications are left out, and words restored over an encoding slip count as holes."
    },
    {
     "doc": "207",
@@ -280,8 +289,8 @@
      "date": "2026-11-14",
      "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
     },
-    "read_share": 0.9699248120300752,
-    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage."
+    "read_share": 0.9709,
+    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage. Integration check, 14 Nov 2026: read_share is the strict count over the coded text only, 100 of 103 words; the clear opening and closing lines and editorial identifications are left out, and words restored over an encoding slip count as holes."
    },
    {
     "doc": "215",
@@ -299,8 +308,8 @@
      "date": "2026-11-14",
      "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
     },
-    "read_share": 0.9775784753363229,
-    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage."
+    "read_share": 0.9572,
+    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage. Integration check, 14 Nov 2026: read_share is the strict count over the coded text only, 179 of 187 words; the clear opening and closing lines and editorial identifications are left out, and words restored over an encoding slip count as holes."
    }
   ],
   "gaps": [
@@ -362,8 +371,8 @@
    "verdict": "pass",
    "notes": "claimed per-occurrence score -1.976; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.283"
   },
-  "fraction_read": 0.9637096774193549,
+  "fraction_read": 0.9521,
   "fraction_read_method": "measured",
-  "fraction_read_source": "measure_reading.py: 717/744 words of reading_fr_206/207/215.txt carry no uncertainty mark. Normalised reading including the clear lines quoted for context; not cipher-group coverage (1,065 of 1,068 legible groups decoded, gutter losses not counted) and not a measure of accuracy."
+  "fraction_read_source": "Integration check, 14 Nov 2026, strict count over the coded text of reading_fr_206/207/215.txt: 557 of 585 words (206: 278/295, 207: 100/103, 215: 179/187); a word in brackets, a word with a restored part and a word restored over an encoding slip (readings/DOUBTS.md) are holes; clear lines not counted. The contributor's count, measure_reading.py, is 717 of 744 words with the clear lines included."
  }
 }

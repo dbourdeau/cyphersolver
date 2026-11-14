@@ -149,6 +149,39 @@ captures and reran the test with identical numbers; its nine corrections are app
   1759 is printed.
 - Gourmelon 2003/2004: search-only on HathiTrust; not read.
 
+## Integration check (14 Nov 2026)
+
+Checked when pull request #586 was integrated (round 13).
+
+- Counts reproduced with an own parser of the reconciled transcriptions: 555, 191 and 322 legible groups (1,068);
+  3 without a value (107, 209, 591); 220 resting on Pusch's values alone (101 in no. 206, 56 in no. 207, 63 in
+  no. 215); 27 gutter marks (18, 2, 7).
+- Decoding: `scripts/decode.py` with the union of `key/key_manuscript.tsv` and `key/pusch_values_used.tsv` resolves
+  552 of 555, 191 of 191 and 322 of 322 groups and gives the lines of `decoded_*.txt`.
+- Held-out test. The sha256 of `test/TEST_PLAN.md` and of `key/key_manuscript_frozen.tsv` match the recorded values.
+  Re-run with the key from the clerks' glosses: 198 of 253 = 78.3%, 200 shuffles mean 16.4%, max 24.1%, identical.
+  The merged-key figure (243 of 253 = 96.0%) could not be re-run: the frozen merged key is not in the folder. The
+  union of the two key files that are in the folder gives 232 of 253 = 91.7% (50 shuffles, max 20.2%). That the plan
+  and keys were frozen before the held-out pages were transcribed is by the contributor's record.
+- Strict word count, coded text only (the clear opening and closing lines and the editorial identifications left out;
+  a bracketed word, a word with a restored part, and a word silently restored over an encoding slip listed in
+  `readings/DOUBTS.md` are holes): no. 206 278 of 295 words (94.2%), no. 207 100 of 103 (97.1%), no. 215 179 of 187
+  (95.7%). The contributor's count, with the clear lines included and the silent restorations counted as read, is
+  370 of 388, 129 of 133 and 218 of 223. The profile now carries the strict figures.
+- Images not sampled: the ANOM viewer answered with a bot check ("Making sure you're not a bot") and this session had
+  no browser route. The transcription rests on the contributor's two passes and their second agent's 42 groups.
+- Outcome method stays "read with known key": the key is Pusch's printed code book for this correspondence, with 164
+  of its codes tied here to the clerks' pairs. Pusch decoded the three despatches and summarised two of them; no
+  French text of them is in print, so this is not a reading from an existing decipherment.
+- One key, one entry: the Kerlérec code book is not one of the Canada codes (`targets/montcalm1757w`,
+  `targets/montcalm1758i`, `targets/vaudreuil1760`); no target in the repository uses it. Catalogue entries 829 and 830
+  (Kerlérec despatches of 1756-57 in the Loudoun papers, not seen) should be in the same code book by Pusch's account
+  of its use from 1755 to 1762; that has not been tested.
+- Why the folder stays `Status: in progress`: two things can still be worked. Pusch counts 30
+  glossed despatches; only nos. 194 and 228 are transcribed here, so the 124 codes taken from his table alone, and
+  perhaps the three open codes, could be tied to clerks' pairs from the others. And lead 1207 is being vetted in
+  pull request #580; the lead is closed or narrowed there, not here.
+
 ## Remaining gaps
 
 - Groups lost in the binding gutter at the line ends of ff. 81v, 97v and 111v (at least 18, 2 and 7) - blocker:
@@ -156,6 +189,9 @@ captures and reran the test with identical numbers; its nine corrections are app
   Project, reel 48) or the leaves themselves would restore them.
 - Codes 107, 209 and 591 in no. 206 have no value in the clerks' pairs or in Pusch's table - blocker: open-codes;
   context suggests *surpris*, *ô(ter)* and *retour*/*bord* (`readings/DOUBTS.md`); left as holes.
+- The 124 codes read from Pusch's table alone have no manuscript pair here - blocker: not-attempted; the other
+  glossed Kerlérec despatches that Pusch used (series C13A) are not transcribed here; C13A 41 and 42 are online, the
+  other volumes were not checked.
 - The group 300 at the end of no. 206 f. 81v l. 8 (small, cramped, fully visible) may be the numeral 300 or a code
   group - blocker: open-codes; numerals and codes cannot be told apart by form in this series.
 
