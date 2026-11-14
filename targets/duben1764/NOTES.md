@@ -55,7 +55,7 @@ was a count coincidence and is withdrawn.)
 
 ## The clear pages do not decipher the ciphers (as far as tested)
 
-*Withdrawn for system B and the 5 Oct 1764 letter on 12 Nov 2026 (see the last two sections): the clear on 120 is the plaintext of 118-119R, and a key built from it passes a held-out test. Still standing for system A (6 Mar 1764 and 15 Nov 1765): issue #437 reports the opposite, but its key and scripts are not in the repository (see below).*
+*Withdrawn for system B and the 5 Oct 1764 letter on 12 Nov 2026 (see the last two sections): the clear on 120 is the plaintext of 118-119R, and a key built from it passes a held-out test. Withdrawn for system A on 14 Nov 2026 too: key_c01 (PR #566), built on letter 96 and its clear only, decodes 6 Mar 1764 as its clear on 102R-103R and 15 Nov 1765 as its gloss (see the 14 Nov section). The fb.py failures below came from the clear running far beyond the cipher (6 Mar) and from the offset of the gloss (15 Nov), not from a changing key.*
 
 Two pairs transcribed in full:
 
@@ -113,7 +113,7 @@ de Vous ecrire..."), on the King's approach to the Russian court about the Crown
 orders of the Seraphim and St Andrew. Signed with a monogram read "C. F.?", postscript "un million de
 complimens, à Mme Mörner". The writer is therefore not certainly Düben; to identify.
 
-The gloss is a positioned decipherment (checked on the image): the French sits over the groups it
+The gloss is a positioned decipherment (checked on the image; *withdrawn 14 Nov 2026: decoded with key_c01 the cipher lags the gloss, see below*): the French sits over the groups it
 renders, the scribe's strokes fall at sentence breaks under it ("517 | 584" where "Si bien..." starts,
 "583 | 358" under "a propos de | prendre", "213 | 39" under "depart. | Les Suites"), and horizontal rules
 fence off the unglossed lines (125L.09, 12-16; also 125R.05/11/12, 126.13). 56 75 100 135 517 is a preamble.
@@ -126,7 +126,7 @@ But it does not yield a fixed table:
   (125L.03), no constant difference; "l'Imperatrice" and "l'ordre" twice each with no shared groups.
 - A few runs recur ("540 347" three times, "620 660" twice under "mariage" and once elsewhere).
 
-So the values change through the text: an additive key, a table switched by sentence (the strokes and the
+*Withdrawn on 14 Nov 2026: the gloss is not positioned (it runs ahead of the cipher, about six lines by 125L.12) and one fixed key, key_c01, decodes the letter (14 Nov section). The paragraph is kept as the record of the reasoning.* So the values change through the text: an additive key, a table switched by sentence (the strokes and the
 preamble could be indicators), or a book/keytext position code. A hand rebuild of a single table is not
 possible, and there is no key yet to test on 6 Mar 1764.
 
@@ -142,22 +142,25 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
 
 ## Remaining gaps
 
-- System A: the 15 Nov 1765 gloss shows the values vary (above). Next: align the gloss word by word to its
-  groups by position (strokes as anchors) and test variable-key models against those pairs: an additive
-  with short period (differences between groups for the same syllable), a table switched at each stroke
-  (the 5-group preamble as indicator), a book code (group = position in a page). Identify the writer
-  "C. F." of 15 Nov 1765.
+- System A (6 Mar 1764, 15 Nov 1765): both letters were deciphered at the time and key_c01 decodes both (14 Nov section). Open,
+  all workable: the strict word count and English translation of each period decipherment (the 102R-103L.08 part of the clear
+  for 6 Mar; the gloss for 15 Nov, rearranged to the cipher's order with key_c01), then `outcome.texts` entries; locating the cipher
+  of the rest of the 6 Mar clear (103L.08 on: 100R-101L is a candidate); key_c01 is partial (197 groups with a value; 58 of the
+  169 group types of 101R have none) and some values are mis-cut by the alignment ("kie" = je, "limp", "sama", "ontje");
+  two group readings doubtful on the images (101 L09 last group 187 or 184; 96 L02 409 or 609). Identify the writer "C. F." of
+  15 Nov 1765.
 - System B: done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and
   completed on 13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no
   value (dates, 236, 339, 55, 234) and the single-occurrence values of key c04, which no further text tests.
-- Transcribe the other cipher letters (87-100, 104-117, 121-127) to pool statistics: the code may be
-  shared across letters of one series.
+- Transcribe the other cipher letters (87-95, 100, 104-117) and test key_c01 on them: letter 96 shows that Chiffer n:o 1
+  is system A, and several have a clear filed with them (106R, 109R, 116 by the archivist's notes).
 - Read the other clear pages for any that is a true decipherment (no compositional corrections).
 
 ## Escalation
 
-- Siblings: the clear pages filed with the ciphers were tested as plaintext for two letters (6 Mar,
-  5 Oct 1764) with a control-validated aligner: no fit. The other clear pages are not yet checked.
+- Siblings: the clear pages filed with the ciphers are decipherments for 96 (97R-99L), 6 Mar 1764 (102R-103R), 5 Oct
+  1764 (120) and 31 Dec 1764 (127-128); the earlier "no fit" for 6 Mar and 5 Oct is withdrawn. The other clear pages
+  (106R, 109R, 116) are not yet checked.
 - Known keys: the three tables at 218-220 were checked by value range only; a group-by-group test is
   still to do once some values are known.
 - Print: no edition found (web search 26 Oct 2026); check Svenska Akademiens Handlingar 29 and the
@@ -183,6 +186,8 @@ This withdraws, for system B, "the clear pages do not decipher the ciphers" and 
 (the draft is the cipher's plaintext).
 
 ### System A claim of issue #437 (Brice Dudout, 11 Nov 2026), not verifiable here
+
+*Superseded on 14 Nov 2026: the key and scripts came with PR #566 and the claim is checked in the 14 Nov section below.*
 
 The issue says that both system A letters (6 Mar 1764; 15 Nov 1765) were deciphered at the time, that the gloss of 15 Nov
 1765 runs ahead of the cipher by one to three lines, and that one fixed key (key_c01, 217 values, rebuilt from image 96 and
@@ -260,3 +265,63 @@ transcribed or profiled, so it is not checked that none of them is in system B.
 
 The target stays **Status: in progress**: system A (6 Mar 1764 and 15 Nov 1765) is open with workable gaps, and the key of
 issue #437 is still not in the repository. No page yet.
+
+## 14 Nov 2026 — system A key key_c01 and the scripts of issue #437 (PR #566, Brice Dudout)
+
+Files in `dudout/system_a/` (text only; README there). Transcriptions by one reader, an AI agent, not checked by a
+palaeographer. `key_c01.json`: 217 groups (197 with a value; 20 empty, as nulls: 17 groups below 100 and 100, 400, 508; 16 = mo is the one
+group below 100 with a value), a one-part syllabic
+nomenclator with homophones (e.g. 107 a, 218/213 de, 540 que, 536 Panin, 569 roi, 158 Breteuil, 679 vous, 285 faire),
+rebuilt by anchored EM alignment (`scripts/align_em.py`, 28 hand anchors in `anchors_c01.json`) from letter 96 + 97L
+(`transcr/i096.txt`, `i097g.txt`, the letter beginning 15.73.100.347.503.401.107.536, early 1764) and its contemporary clear
+97R + 98L + 99L (`clears/L096_clear_contemporary.txt`; archivist's note on 97R). `PROTOCOLE.md` is dated 27 Oct 2026 02:20,
+before any decoding, by the contributor's record (no outside timestamp); it plans tests of the key tables 218-220 with a
+"the key reads" bar, not the EM key, and no threshold was declared for the held-out check below.
+
+- Held-out check on 101R (6 Mar 1764, `transcr/i101d.txt`) against its clear on 102R (`clears/L101_clear_contemporary.txt`,
+  first page only): 178 of 232 known groups agree (0.767); three permuted keys 0.224-0.254 (`validation/`). No group of the key
+  comes from 101R.
+- `scripts/check2.py` on this repository's own transcriptions: 15 Nov 1765 against its gloss, 704 groups, coverage 0.776,
+  0.545 against 200 permuted keys (max 0.061); 6 Mar 1764 against 102R-103R, 605 groups, 0.807, 0.261 (max 0.043; the clear
+  is about 2.6 times longer than the cipher on 101R-102L, which covers it to 103L.08).
+- The 15 Nov 1765 gloss is complete and runs ahead of the cipher; the "unglossed" lines carry text glossed above earlier lines.
+- Nothing is claimed as a new reading: both letters were deciphered at the time. Method for them: read from existing
+  decipherment; key partial.
+
+### Integration check (14 Nov 2026)
+
+Reproduced (scripts read first, run with `python3 -I` in the worktree): all 26 SHA-256 values in `SHA256SUMS` match;
+`check2.py` gives exactly 704 / 0.776 / 0.545 / max 0.061 / mean 0.037 and 605 / 0.807 / 0.261 / max 0.043 / mean 0.025;
+`check.py` gives the issue's 703 groups and 0.544 (its parser skips one group that `check2.py` keeps). Every one of the 217
+key groups occurs in the 96/97L transcriptions; none was taken from 101R.
+
+Not reproducible from a script: the 0.767 of the held-out check. The script that made `validation/val_L101.json` (an alignment
+of 101R to its clear) is not in the PR. Recounted from that file: 175 of 228 groups with a key value agree (0.768); the three
+control files give 0.214, 0.224, 0.225. Each control file holds its own alignment path, so the alignment was refitted with each
+key: the measure is how well a key-guided alignment fits the clear, matched by its controls, not a decode compared word for word.
+
+Own decoder (written from `key_c01.json`, not importing the contributor's code): 101R decoded with the key against the 102R
+clear, share of clear letters in matching blocks of 4 letters or more, 0.325 against 200 permuted keys (max 0.062, mean 0.034).
+The raw decode reads as the clear: "...deavoirrecu ... nsieurpanin maaprevenu ... ilmaavoitappel ... etcon..catparmesdi ...
+luiavoitmar[que] ... nouv de ... luisisoit delapeine ..." against "Deux jours avant d'avoir reçu ... Monsieur Panin m'a prevenu
+... Il m'avoit appellé exprès et commença par me dire qu'on lui avoit mandé une nouvelle de Stockholm qui lui faisoit de la
+peine". On 96 itself (training) the same score is 0.363. Lines of 15 Nov 1765 without a gloss, decoded by me: 125L.12
+"...tacheraaucon[tra]i[r]edeycon..." = gloss of 125L.06-07 "tachera au contraire d'y contribuer"; 125L.15
+"edecette‹614›tativenepourraquenet" = gloss of 125L.10-11 "de cette tentative ne pourra qu'en être"; 125R.11
+"...rter...dre..sama..andrele..decemois" = gloss of 125R.10 "porter l'ordre de St André le 30 de ce mois"; 126.13
+"...enresulimpter..." = gloss of 126.12 "qui en Resulteront". The offset is about one line at 124R.07 and about six by 125L.12.
+
+Images (Riksarkivet IIIF, `lbiiif.riksarkivet.se/arkis!A0073297_00101` and `_00096`, full/max, curl, no bot check): 101R
+lines 1, 9 and 14 (60 groups) and 96 lines 1-3 (54 groups): 112 of 114 agree; doubtful on the image: 101R L09 last group
+(transcribed 187, could be 184) and 96 L02 group 16 (transcribed 409, could be 609). The 102R clear was not compared with
+its image.
+
+Corrections made here: "the clear pages do not decipher the ciphers", "the gloss is a positioned decipherment" and "the values
+change through the text" are withdrawn for system A; profile: documents 6 Mar 1764 and 15 Nov 1765 now carry their period
+decipherments (read in part until the strict counts and translations are made), system types nomenclator / syllabic /
+homophonic, key_c01 added to `key_file`, credit and two solution steps. The contributor's README calls `PROTOCOLE.md` "the plan
+written before any decoding": it is that by the contributor's record, and it does not cover the key_c01 method or the 101R check.
+
+The target stays **Status: in progress**: what remains for system A (strict counts and translations of the two period
+decipherments, the cipher of the rest of the 6 Mar clear) and the other Chiffer n:o 1 letters with filed clears are workable,
+not outside-blocked. No page yet.

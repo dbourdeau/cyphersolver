@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "K259-1764-03-06",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00101 (right) and _00102 (left)",
    "date": "1764-03-06",
    "year": 1764,
@@ -16,9 +16,9 @@
    "cleartext_in_document": "none",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "A clear French page filed with it (102R-103R, archivist's note 'Hör till chiffermeddelandet \"4.83.445.196.552\" etc 6 mars 1764') was tested as its plaintext with a control-validated aligner and does not fit; no decipherment known."
+    "source": "Contemporary decipherment on 102R-103R (archivist's note 'Hör till chiffermeddelandet \"4.83.445.196.552\" etc 6 mars 1764'). The earlier 'does not fit' verdict (fb.py) is withdrawn on 14 Nov 2026: key_c01 (PR #566, built on letter 96 only) decodes 101R as the first page of this clear (0.767 of known groups agree on 101R; whole letter 0.261 against controls max 0.043). The cipher on 101R-102L covers the clear up to 103L.08 (by the contributor's record); the cipher of the rest of the clear is not located. Strict word count and translation not yet made."
    },
    "length": {
     "tokens": 641,
@@ -80,8 +80,7 @@
     "location": [
      "interlinear"
     ],
-    "source": "Contemporary interlinear decipherment over 36 of 47 number lines (tx/g1765-11-15.txt). 11 number lines are unglossed.",
-    "partial": true
+    "source": "Contemporary interlinear decipherment (tx/g1765-11-15.txt). It is complete but not positioned: it runs ahead of the cipher, by about one line at the start and about six lines by 125L.12; the 11 number lines without a gloss carry text glossed above earlier lines (checked with key_c01 on 125L.12, 125L.15, 125R.11, 126.13; PR #566 / issue #437). Strict word count and translation not yet made."
    },
    "length": {
     "tokens": 742,
@@ -190,9 +189,11 @@
  ],
  "system": {
   "types": [
-   "undetermined"
+   "nomenclator",
+   "syllabic",
+   "homophonic"
   ],
-  "summary": "Two numeric systems in the volume, separated by value profiles: A (6 Mar 1764, 15 Nov 1765) and B ('Chiffer n:o 2': 5 Oct 1764, 31 Dec 1764 and 122-124L). Groups 1-~760, dots, scribe's strokes, flat frequencies. Neither is the filed clear text enciphered with a fixed table of short values; the 15 Nov 1765 interlinear gloss does not give a fixed table either.",
+  "summary": "Two numeric systems in the volume, separated by value profiles. A (6 Mar 1764, 15 Nov 1765, and letter 96 of early 1764): one-part syllabic nomenclator with homophones and nulls below 100, partial key key_c01 (217 groups, 197 with a value) rebuilt from letter 96 and its clear (PR #566, 14 Nov 2026). B ('Chiffer n:o 2': 5 Oct 1764, 31 Dec 1764): two-part syllabic nomenclator with homophones, key c04 rebuilt from the clears on 120 and 127-128. Groups 1-~760, dots, scribe's strokes, flat frequencies.",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-3",
@@ -204,13 +205,18 @@
    "note": "occasional double dots and ticks over or under groups; meaning unknown"
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
-   "present": "unknown"
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names"
+   ]
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "random",
   "word_division": "none",
@@ -220,7 +226,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Interlinear decipherment of the 15 Nov 1765 letter in K 259 (124R-126); none found for the other letters.",
+   "where": "Contemporary decipherments of both system A letters (interlinear gloss of 15 Nov 1765, 124R-126; clear 102R-103R for 6 Mar 1764) and of both system B letters (120; 127-128).",
    "found": "during attempt",
    "used": true
   },
@@ -246,7 +252,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-26",
-  "last_date": "2026-11-13"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -577,6 +583,25 @@
    ],
    "what": "Integration check of PR #541: measure_clair.py re-run on the repository files gives M 0.5353 (1,032 of 1,247 groups known; controls max 0.0593) and 0.6943 with the 25 context values, exactly as stated; all ten SHA-256 values in c04/frozen match; key c03 was committed with PR #477 on 12 Nov, before the clear was identified (order within 13 Nov by the contributor's record). Own decoder: c04 0.946 against 127-128 (circular), 5 Oct 1764 c03 0.733 -> c04 0.854 with this normalisation of the 120 clear (contributor 0.699 -> 0.825). Riksarkivet images 121 (117 groups) and 127 (clear lines checked) agree with the transcriptions. Strict count of 121-124L through its clear: 612/613 word tokens (0.998). Target stays in progress: system A open.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "PR #566 (Brice Dudout; transcriptions by an AI agent): key_c01, 217 groups (197 with a value; 20 empty, read as nulls: 17 below 100 and 100, 400, 508), rebuilt by anchored EM alignment (28 hand anchors) from cipher 96 + 97L and its contemporary clear 97R-99L; held-out check on 101R (6 Mar 1764) against its clear 102R: 178 of 232 known groups agree (0.767), three permuted keys 0.224-0.254; no threshold was declared for this check. The protocol file PROTOCOLE.md (dated 27 Oct 2026 by the contributor's record) plans tests of the tables 218-220, not the EM key. check2.py: 15 Nov 1765 vs gloss 0.545 (controls max 0.061), 6 Mar 1764 vs 102R-103R 0.261 (0.043).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #566: all 26 SHA-256 values match; check2.py re-run (python3 -I) gives 704 groups 0.545 vs max 0.061 and 605 groups 0.261 vs max 0.043, check.py 703 groups 0.544, exactly as stated; every key group occurs in the training transcriptions 96/97L (none from 101R). The 101R alignment script is not in the PR: recounted from validation/val_L101.json, 175 of 228 known groups agree (0.768), controls 0.214-0.225 (each control path was refitted with its own permuted key). Own decoder (not importing theirs): 101R decoded with key_c01 against the 102R clear, order-free 4-letter blocks, 0.325 vs 200 permuted keys max 0.062; the decode reads as the clear ('...m'avoit appellé exprès ... qu'on lui avoit mandé une nouvelle ... qui lui faisoit de la peine'). Unglossed 15 Nov 1765 lines decode as text glossed earlier (125L.15 'de cette [ten]tative ne pourra qu'en ét[re]' = gloss 125L.10-11; 125R.11 'l'ordre de St André le .. de ce mois' = gloss 125R.10). Riksarkivet images 101 (lines 1, 9, 14: 60 groups) and 96 (lines 1-3: 54 groups): 112 agree, 2 doubtful (101 L09 last group 187 or 184; 96 L02 409 or 609). 'Values vary through the text' and 'the clear pages do not decipher the ciphers' withdrawn for system A.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -591,7 +616,7 @@
    "none"
   ],
   "provenance": "mixed",
-  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765, with a positioned contemporary gloss over 36 of 47 lines) is open: no fixed key rebuilt here; the key of issue #437 is not in the repository. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
+  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations not yet made. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Open: the other Chiffer n:o 1 letters (87-117) and their clears. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class.",
   "credits": [
    {
     "who": "dudout",
@@ -630,6 +655,13 @@
     "role": "identification",
     "date": "2026-11-13",
     "note": "Images 127-128 identified as the clear of the 31 Dec 1764 cipher letter (121-124L); key B re-tested on it and completed; dudout/c04/"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/566",
+    "note": "System A: key_c01 (217 groups) rebuilt by anchored EM from letter 96 and its contemporary clear 97R-99L; held-out check on 101R; showed that both system A letters were deciphered at the time and that the 15 Nov 1765 gloss runs ahead of the cipher (issue #437); dudout/system_a/"
    }
   ],
   "method_basis": "Main target remains unsolved; separately, an existing archival key219 was applied to the printed1771 fragments, yielding a literal decode with uncertain expansions.",
@@ -700,7 +732,8 @@
    "payne2026/key220.txt",
    "dudout/key_systemB_c03.json",
    "dudout/key_systemB_c03b_extended.json",
-   "dudout/c04/key_systemB_c04.json"
+   "dudout/c04/key_systemB_c04.json",
+   "dudout/system_a/key_c01.json"
   ]
  }
 }
