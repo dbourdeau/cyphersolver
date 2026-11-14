@@ -336,6 +336,24 @@ class Links(unittest.TestCase):
         self.assertEqual(probs, ['links b.html#gone, but that page has no such anchor', 'links #none, but the page has no such id'])
 
 
+class SuppliedMarkers(unittest.TestCase):
+    """research/reading_audit/v2_score.holes: a supplied word is a hole, a one-letter emendation is not."""
+    def setUp(self):
+        sys.path.insert(0, str(ROOT / 'research' / 'reading_audit')); sys.path.insert(0, str(ROOT / 'docs'))
+        import v2_score
+        self.h = v2_score.holes
+
+    def test_supplied_word_is_a_hole(self):
+        self.assertEqual(self.h('il {+que} vient').split(), ['il', '[?]', 'vient'])
+        self.assertEqual(self.h('a {+de la} b').split(), ['a', '[?]', '[?]', 'b'])
+
+    def test_dropped_group_is_not_text(self):
+        self.assertEqual(self.h('il {-x} vient').split(), ['il', 'vient'])
+
+    def test_emended_letter_keeps_the_word(self):
+        self.assertEqual(self.h('actuellemen{+t} pro{-u}c {+s}se').split(), ['actuellement', 'proc', 'sse'])
+
+
 class Reservations(unittest.TestCase):
     """research/SWEEP.md, "Reserving a lead": 30 days from the merge, at most 10 live per contributor."""
     def setUp(self):

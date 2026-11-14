@@ -35,6 +35,13 @@ def holes(t):
             return ' '.join(['[?]'] * n)
         return m.group(0)
     t = re.sub(r'\[(?:l|ll|f|ff|fol|p|pp|c|line|page)\.?\s*[\divxlcrv,\s–-]+\]', ' ', t, flags=re.I)   # [l. 12] [f. 79v]: markers
+    # {+x} supplied, {-x} dropped (14 Nov 2026, after Brice Dudout, PR #565). Standing alone, {+word} is a word the
+    # reader supplied: a hole; {-x} is a group the reader dropped: not text. Inside a word (actuellemen{+t}, pro{-u}c)
+    # they mark a one-letter emendation of a word that is read from the cipher: the word stays read.
+    t = re.sub(r'(?<![^\W\d_])\{\+[^}\n]*\}(?![^\W\d_])', lambda m: ' '.join(['[?]'] * max(1, len(re.findall(r'[^\W\d_]+', m.group(0))))), t)
+    t = re.sub(r'(?<![^\W\d_])\{-[^}\n]*\}(?![^\W\d_])', ' ', t)
+    t = re.sub(r'\{\+([^}\n?]*)\}', r'\1', t)
+    t = re.sub(r'\{-[^}\n?]*\}', '', t)
     t = re.sub(r'\{([^}\n]*\?[^}\n]*|[\s.…]*)\}',lambda m: rep(re.match(r'(.*)', m.group(1))), t)   # {?} {?word} {…}: unread
     t = re.sub(r'\[([^\]\n]*)\]', rep, t)
     t = re.sub(r'(\w*)\[\?\](\w*)', lambda m: '[?]' if (m.group(1) or m.group(2)) else m.group(0), t)

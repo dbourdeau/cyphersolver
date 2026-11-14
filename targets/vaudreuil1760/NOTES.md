@@ -34,8 +34,8 @@ corrected from the letter, each with its reason). The table was not previously c
 not read), `restored.json` (gutter-cut groups restored from the visible first digits and the sense).
 Outcome method: **external key matched** (a key from the same collection, filed for the same correspondent three years earlier, not
 connected with this letter, found to fit and applied; the table cells were read from the images and corrected from the letter).
-Measured (`tools/stats.py`, 5 Nov 2026, third pass): of 2424 groups, 2328 (96.0%) are read from the image as written; 25 more (1.0%, total 97.1%)
-are groups cut by the binding that the visible leading digit(s) and the sense fix; 24 (1.0%) are legible and unread, in 9 places; 47 (1.9%) are lost in the gutter.
+Measured (`tools/stats.py`, 5 Nov 2026, third pass): of 2424 groups, 2326 (96.0%) are read from the image as written; 25 more (1.0%, total 97.0%)
+are groups cut by the binding that the visible leading digit(s) and the sense fix; 26 (1.1%) are legible and unread, in 9 places; 47 (1.9%) are lost in the gutter.
 These are shares of groups. The README read bar is a share of words: by that measure the letter reads at 0.933, under 0.95, so it is **read in part** (recount of 14 Nov 2026, below); every folio reads and every legible gap was tried, and what stays open is scattered groups and the binding.
 Third pass: an interlinear line on f.150v belongs at a caret after "de" ("ces derniers se lassent de notre extrême indigence, il ne faut rien moins
 que mes soins ..."); the duplicate group 51 that had been read there is removed; "qui[n]ze", "[Lou]isbourg" and "aie [don]né" settle three more places;
@@ -53,7 +53,7 @@ Brice Dudout's verification (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudou
 now has "me mett[roit]". The LAC image of f.152r (e000875758) was compared group by group with the transcription of the whole folio and
 the first seven lines of f.151v (about 240 groups): all agree, and the inserted 672 written above the line is on the image.
 
-He also pointed out that the recorded `read_share` 0.96 was the share of groups (2328 of 2424, `tools/stats.py`), not of words. Measured
+He also pointed out that the recorded `read_share` 0.96 was the share of groups (2326 of 2424, `tools/stats.py`), not of words. Measured
 on the reading body (ff.147r-152r) with the README rule (`research/reading_audit/v2_score.holes`: supplied, restored and unread words are
 holes): 1383 words, 100 holes, **0.933**; his figure with `v10_relabel.measure` on the whole file was 0.937 (0.936 once the emendation is
 marked; the whole file counts the preamble too). Under 0.95, so the class moves from read to **read in part** (profile, page and ledgers
@@ -96,4 +96,4 @@ decode, stats), `WORKLOG.md`, `profile.json`. Images are fetched, not stored (`i
 `curl -L "https://central.bac-lac.gc.ca/.item?id=e000875753&op=img&app=nf"` (ids e000875753-58 and e001295267-76).
 Image credit: Library and Archives Canada (LAC) / Archives nationales d'outre-mer (ANOM), via New France Archives.
 
-Count check, 14 Nov 2026: the ranges in gaps.json add up to 26 groups, while the page and profile give 24 open groups. Not reconciled here (two ranges may also be counted among the binding losses); to settle against transcription.txt.
+Count check, 14 Nov 2026 (settled): gaps.json keyed the "de moyen" gap as f150v.24, but `tools/lines.py` numbers that line f150v.23 (the file's 24th row of the folio counts a comment line), so `tools/stats.py` skipped its 2 groups and reported 24. With the key corrected to f150v.23 the tool gives 26 legible unread groups (1.1%) in the same 9 places, 2326 groups read as written and 2351 (97.0%) with the 25 restored ones. The word measure (1383 words, 100 holes, 0.933) is not changed by this: "de moyen" was already among its holes or is to be rechecked there (not recounted today).
