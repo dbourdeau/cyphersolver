@@ -2,7 +2,7 @@
 
 Status: in progress (folder only, no page)
 
-Class: read in part (key recovered based on adjacent plaintext). The partial key is rebuilt from the period interlinear decipherment, and the French prose is that decipherment, transcribed and normalized. This is a source-and-key contribution, not an independent solution.
+Class: read in part (read from existing decipherment; the partial key index is drawn from the same adjacent plaintext). The partial key is rebuilt from the period interlinear decipherment, and the French prose is that decipherment, transcribed and normalized. This is a source-and-key contribution, not an independent solution.
 
 **The anonymous period clerks who deciphered these passages read them first.** Andrew Beling, with AI agents, transcribed the archival copies, rebuilt the code evidence and translated the texts in November 2026.
 
@@ -69,3 +69,14 @@ One of our own AI agents (the coordinating model, not a person) read both comple
 `measure_reading.py` counts editorial holes in the two normalized French reading units, treating every unmarked word as known: **637 of 648 words unmarked** (424/431 in 179, 213/217 in 180; `reading_measurements.json`). This is the share of words in our edition of the period decipherment that carry no uncertainty mark. It is not cipher-group coverage and not a measure of accuracy; both units stay “read in part” because of the withheld digits and source slips above. The French sentence checker gives 0.946 and 0.950 clean sentence shares, a different measure.
 
 Held-out statistical validation is recorded as not applicable (`docs/_validate.py --na`): the table was built from these same period cipher/plain pairs and the prose is the existing decipherment, so a shuffled-key test would not validate an independent recovery. Testing the table on a new W ciphertext remains possible future work.
+
+## Integration check (14 Nov 2026)
+
+Checked when pull request #574 was integrated (round 13).
+
+- Counts reproduced with an own script over `line_by_line_179.txt` and `line_by_line_180.txt`: 610 and 306 groups (916), 318 distinct clearly numbered groups, each present in `key/W_1757_attestations.tsv` with every value it takes in the two units; the two uncertain-digit groups are outside the index.
+- Images: 118 of 118 groups sampled on the LAC reel C-12578 frames agree with the transcription (copy p. 506, all 60 groups; p. 517, lines 1 to 5, 58 groups). The p. 506 group reads more like 670 than 690 to this reader too; it stays withheld.
+- Strict word count of the normalized French (a word in brackets or with a query is a hole): 427 of 433 words in 179 (98.6%) and 207 of 211 in 180 (98.1%). The contributor's count is 424 of 431 and 213 of 217. Both units are above the 95% line; the class stays "read in part" as the contributor set it while the Escalation steps below are open (siblings, known-keys, print, retry), and the folder stays `Status: in progress` with no page.
+- Outcome method set to "read from existing decipherment": the clerks' decipherment between the lines is complete for both declared units, and the work here is transcribing the figures and checking the decipherment against them. The 318-group index is a by-product of the same pairs (`outcome.parts` keeps "key recovered based on adjacent plaintext" for it). No held-out test exists, and none is claimed.
+- Not the Vaudreuil table: 0 of 242 numbers shared with `targets/vaudreuil1760/key/key274.json` agree (the contributor counted 243). Not code I either: `targets/montcalm1758i/results/compare_codeW.tsv`, 0 agreements. One key, one entry holds: W, I and the Vaudreuil table are three codes.
+- Not rechecked here: the e001295276 comparison (its files are not in the folder), the OCR searches of the printed collections, the `support/` transcriptions.

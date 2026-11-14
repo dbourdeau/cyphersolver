@@ -151,12 +151,21 @@
       ],
       "what": "A second AI agent that had not seen our conclusions rechecked 25 table entries on the reel images (24 confirmed, 1 unsettled) and two passages digit for digit. p. 510: 159 is clear and the sic mark stands after 139, so 'toujours' is corrected to 'une' (159 = une attested). p. 506: the group after 654 is unsettled 670/690 and withheld (690 = rt withdrawn); 318 clearly numbered groups remain.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check of PR #574 (round 13). Own script over line_by_line_179/180: 610 and 306 groups (916), 318 distinct clearly numbered groups, every one in key/W_1757_attestations.tsv with every value it takes; 2 uncertain-digit groups withheld. 118 of 118 groups sampled on the LAC reel C-12578 images (copy p. 506, 60 groups; p. 517 lines 1-5, 58 groups) agree with the transcription; p. 506 6?0 looks like 670 but stays withheld. Strict word count of the normalized French: 427 of 433 (179) and 207 of 211 (180) words carry no bracket or query, close to the contributor's 424/431 and 213/217. Code W against targets/vaudreuil1760/key/key274.json: 0 of 242 shared numbers agree. Outcome method changed from 'key recovered based on adjacent plaintext' to 'read from existing decipherment': the decipherment between the lines is complete for both declared units.",
+      "result": "worked"
     }
   ],
   "outcome": {
     "class": "read in part",
     "key": "partial",
-    "method": "key recovered based on adjacent plaintext",
+    "method": "read from existing decipherment",
     "verification": [
       "contemporary decipherment"
     ],
@@ -239,7 +248,7 @@
       }
     ],
     "first_break": "unpublished prior",
-    "method_basis": "Partial key reconstructed directly from interlinear period decipherment preserved in LAC copies; prose transcribes that decipherment.",
+    "method_basis": "The French prose is the period clerks' complete interlinear decipherment, preserved on the LAC copies and transcribed here; the 318-group index of code W was drawn from those same cipher/plain pairs (integration check, 14 Nov 2026: top-level method set to the existing decipherment, the key part keeps 'adjacent plaintext').",
     "parts": [
       {
         "label": "Partial War-code key",
