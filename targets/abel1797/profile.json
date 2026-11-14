@@ -1,0 +1,295 @@
+{
+ "schema_version": 1,
+ "target": "abel1797",
+ "title": "Abel (Wuerttemberg minister in Paris) to Duke Frederick II, 1797-1799 (HStA Stuttgart A 16 a Bue 696-702): nomenclator K3 rebuilt from the period glosses and validated; 24 unglossed words read in part",
+ "documents": [
+  {
+   "id": "bu696",
+   "read": "read",
+   "shelfmark": "HStA Stuttgart, A 16 a Bü 696 (Abel to Duke Frederick II, Paris, 29 Oct - 24 Dec 1797), Bild 7-9, 29-31, 44, 50",
+   "date": "29 Oct - 24 Dec 1797",
+   "year": 1797,
+   "country": "Germany",
+   "route": "Abel, Wuerttemberg minister in Paris -> Duke Frederick II of Wuerttemberg",
+   "places": {
+    "from": "Paris",
+    "to": "Stuttgart"
+   },
+   "language": "German",
+   "pages": 9,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "decipherment of the time written above the cipher lines in another hand (Stuttgart)"
+   },
+   "length": {
+    "tokens": 116,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Landesarchiv Baden-Wuerttemberg viewer, Public Domain Mark 1.0",
+    "image_quality": "good",
+    "notes": "116 words of the glossed passages used to build K2; one AI transcriber"
+   }
+  },
+  {
+   "id": "bu702",
+   "read": "read",
+   "shelfmark": "HStA Stuttgart, A 16 a Bü 702 (Jan-Jun 1799), Bild 16, 17, 19",
+   "date": "1799",
+   "year": 1799,
+   "country": "Germany",
+   "route": "Abel -> Duke Frederick II",
+   "places": {
+    "from": "Paris",
+    "to": "Stuttgart"
+   },
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "margin",
+     "separate folio"
+    ],
+    "source": "interlinear and marginal glosses; clear of Bild 19 on the facing page"
+   },
+   "length": {
+    "tokens": 71,
+    "unit": "mixed",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Landesarchiv Baden-Wuerttemberg viewer, Public Domain Mark 1.0",
+    "image_quality": "good",
+    "notes": "Bild 17 held out for the K3 measurement"
+   }
+  },
+  {
+   "id": "bu699-nonglose",
+   "read": "read in part",
+   "shelfmark": "HStA Stuttgart, A 16 a Bü 699 (1798), Bild 75 (12 Jul), 86 (30 Jul), 90 (Aug)",
+   "date": "Jul-Aug 1798",
+   "year": 1798,
+   "country": "Germany",
+   "route": "Abel -> Duke Frederick II",
+   "places": {
+    "from": "Paris",
+    "to": "Stuttgart"
+   },
+   "language": "German",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "no gloss and no slip found for these passages"
+   },
+   "length": {
+    "tokens": 24,
+    "unit": "mixed",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Landesarchiv Baden-Wuerttemberg viewer, Public Domain Mark 1.0",
+    "image_quality": "good",
+    "notes": "rows glimpsed during triage before the protocol (declared in AVENANT-C03.md)"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic"
+  ],
+  "summary": "Mixed nomenclator: two-digit groups for letters with 2-3 homophones, two-lower-case-letter codes for words, three-digit groups as nulls, 90 alone = und; doubled letters written once.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 120,
+  "digit_groups": {
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Interlinear, marginal or facing-page decipherments of the time on every enciphered passage seen (Stuttgart chancery). No edition or study of the cipher found: Obser (PC Karl Friedrichs, vol. 3) cites Abel in passing; nothing in this repository on main (catalogue, leads, targets; 12 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout set the rules (protocols hashed before calculation, one held-out measurement per key, thresholds fixed in advance). AI agents transcribed, aligned, built K2/K3, measured and read. No human palaeographer checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-10-28",
+  "last_date": "2026-10-28"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "transcription",
+   "what": "Glossed passages of Bue 696 (Bild 7-9, 29-31, 44, 50) and Bue 702 (Bild 16-19) transcribed token by token.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Cipher lines lined up with the interlinear glosses; K1/K2 built by majority letter per code from Bue 696.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out Bue 696 Bild 44, 50, 29: characters 0.895, words 0.621 (word criterion 0.75 missed); K2 on Bue 702 Bild 16: 0.863 / 0.367, not validated (1799 homophones missing).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K3 = K2 + Bue 702 Bild 16, frozen before Bild 17; held out Bild 17 (24 words): 0.963 characters / 0.792 words against 0.306 / 0.167 for 200 permuted keys.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "reading",
+   "what": "Unglossed passages of Bue 699 Bild 75, 86, 90 read with K3: 24 words, 14 sure, 6 probable, 4 unresolved (83 %).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "Bue 696 Bild 50: the later pencil gloss Georgi is wrong, the key reads albert (clear paragraph about Albert).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #563: held-out score reproduced with an independent decoder from key.tsv (19/24 words = 0.792, characters about 0.963; the controls' 0.167 is the four 'und'; without them 15/20 = 0.75, the bar); key_K3.json SHA-256 matches the frozen value, order of events by the contributor's record; Landesarchiv BW images fetched with curl: Bü 702 Bild 17 about 55 groups agree (one extra 20 in 'angegriffen' in the transcription, score unchanged), Bü 699 Bild 75 both passages agree; unglossed reading reproduced, strict 14/24; lead 2037 found (the PR said none) and pointed here.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "K3 was learnt from the contemporary interlinear glosses of the same file and validated once on a held-out piece; the passages without a gloss were read with it.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "validation": {
+   "date": "2026-10-28",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "K3: 0.963 / 0.792 against 0.306 / 0.167 (200 permuted keys), thresholds 0.85 / 0.75 fixed beforehand; earlier keys failed the word criterion and are reported."
+  },
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "fraction_read": 0.583,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 24 words of the unglossed passages, strict count 14 sure (0.583); with 6 probable 20 (0.833); the glossed passages are read from their decipherments of the time.",
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "decipherments of the time on every glossed passage, written in the file (Stuttgart chancery)",
+    "date": "1797-1799"
+   },
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "cipher found in the Stuttgart sweep; K3 rebuilt and validated; unglossed Bue 699 passages read in part",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "codes oi, ut, ps, vf (Bü 699 Bild 75) unresolved; glossed occurrences in Bü 700-701 not searched",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "six probable words (sw x2, ka, ld, hb, 33 = s) not confirmed by a gloss",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "Bü 701 Bild 35-173, Bü 706 and the 1798 second system not examined",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "the chancery's original keys (A 11 Bü 66, L 6 Bü 1392, A 74 i Bü 24) not online",
+    "blocker": "no-key-material"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "bu699-nonglose",
+    "label": "Bue 699 Bild 75, 86, 90 (1798), passages without clear text",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.583,
+    "summary": "Fragments of a report from Paris: according to what the writer knows, one believes that the spirit of the Revolution is kept ... in ...; Talleyrand; after Barras's motion.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-14",
+     "note": "14/24 words sure, 6 probable, 4 codes unresolved; passages glimpsed during triage before the protocol (declared)"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "No image is reproduced (Public Domain Mark 1.0 would allow it; kept out of the repository). Content existing for all glossed passages."
+ }
+}

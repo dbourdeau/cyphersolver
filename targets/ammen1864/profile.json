@@ -1,0 +1,226 @@
+{
+ "schema_version": 1,
+ "target": "ammen1864",
+ "title": "Headquarters Department of the Ohio to Brig. Gen. Ammen, Knoxville, 29 Sept 1864 (Ball State DMR LSTACivWar 2072): Union route cipher reconstructed and read, 85 of 90 words sure",
+ "documents": [
+  {
+   "id": "ammen-1864-09-29",
+   "read": "read in part",
+   "shelfmark": "Henry County Historical Society (New Castle, Ind.), Ammen Civil War Collection; Ball State University DMR, LSTACivWar, compound object 2072 (page 2070 = HCHS_L_18640929_01)",
+   "date": "29 Sept 1864",
+   "year": 1864,
+   "country": "United States",
+   "route": "Headquarters Department of the Ohio (G. M. Bascom, for Schofield) -> Brig. Gen. Ammen, Knoxville",
+   "places": {
+    "from": "Knoxville",
+    "to": "Knoxville"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "The War of the Rebellion, Official Records, series I, vol. XXXIX, part 2, p. 524"
+   },
+   "length": {
+    "tokens": 107,
+    "unit": "mixed",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Ball State DMR image (1025 px wide, NoC-US 1.0)",
+    "image_quality": "fair",
+    "notes": "one AI transcriber; one word per token, frozen before the calculation; all 107 words compared with the Ball State image (IIIF) on 14 Nov 2026: agree"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "transposition",
+   "code"
+  ],
+  "summary": "Union (Stager family) route cipher: plain words in two grids of 6 columns, sent column 6 up, 1 down, 5 up, 2 down, 4 up, 3 down; null words in each column; code words for proper names.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "places",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "not applicable",
+  "word_division": "kept"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Clear text printed in the Official Records, series I, vol. XXXIX, part 2, p. 524. Daniel Bourdeau's leads 1432 / 2097 list the sheet as a coded letter to Ammen without a reading.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout set the rules (protocol hashed before the calculation). An AI agent transcribed, found the route and read; no human palaeographer checked.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
+  ],
+  "first_date": "2026-11-03",
+  "last_date": "2026-11-03"
+ },
+ "solution": [
+  {
+   "date": "2026-11-03",
+   "kind": "access",
+   "what": "Two images downloaded from the Ball State repository; date corrected from 1862 to 29 Sept 1864 from the sheet.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "transcription",
+   "what": "Body transcribed word by word (107 tokens), hashed before the calculation.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "literature search",
+   "what": "Clear text found printed in the Official Records, series I, vol. XXXIX, part 2, p. 524.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "manual reconstruction"
+   ],
+   "what": "Route of the Union cipher family reconstructed: 2 grids of 6 columns, route 6 up, 1 down, 5 up, 2 down, 4 up, 3 down; nulls and code words identified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Descriptive bigram measure 0.455 against 0.250 for 200 control routes; declared non-decisive (blocks cut with the reconstruction).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "reading",
+   "what": "Read: 85 of 90 words sure, 1 probable (was = forces), 3 code words restored from the printed text, 1 unresolved (rig).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #562: all 107 words compared with the Ball State IIIF image (agree); the route of key.json undone with an independent decoder reproduces decryption.txt word for word (17 nulls and commencement word, 'all' missing from the NOTES null list); strict count 83/90 (0.922) with the two emended initials as holes; leads 1432 and 2097 dated 1864; Eckert cipher book 1 (targets/eckert1862) checked for ink/muscle/maxim: other values, not this book.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "The route was rebuilt from the sheet with the clear text printed in the Official Records at hand (found before the attempt).",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "validation": {
+   "date": "2026-11-03",
+   "verdict": "underdetermined",
+   "file": "validation.txt",
+   "notes": "Standard character test declared not applicable; descriptive measure 0.455 vs 0.250 with a declared bias."
+  },
+  "verification": [
+   "independent clear copy",
+   "statistical test"
+  ],
+  "fraction_read": 0.922,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Integration check 14 Nov 2026, README rule: 90 words, 83 sure (0.922); holes: 3 code words valued from the printed text only, 1 probable (was), 1 unresolved (rig), 2 initials emended from the grid (or = N., T. = L.). The contributor's count is 85/90 (0.944), the emended initials taken as sure.",
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Official Records, series I, vol. XXXIX, part 2, p. 524: the clear text",
+    "date": "1893"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "transcription, route and code words rebuilt, reading with the sheet's date corrected to 1864",
+    "date": "2026-11-03"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "code words ink, muscle, maxim valued from the Official Records text only; Union cipher books (Eckert Papers, Huntington) not searched",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "'rig' before W. T. Sherman unresolved (code word, or a slip for 'Sig.')",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "'was' = forces probable",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "two initials emended from the grid ('or' = N., 'T.' = L.)",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ammen-1864-09-29",
+    "label": "Knoxville, 29 Sept 1864, dispatch in cypher to Brig. Gen. Ammen",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.922,
+    "summary": "Sherman's order of 28 Sept recalls Burbridge to Nashville; Schofield's headquarters ask Ammen to forward it, acknowledge receipt and report, adding that Burbridge may not have this cypher.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-14",
+     "note": "read as sentences; clear text printed in the Official Records; one word unresolved"
+    }
+   }
+  ],
+  "key_file": "key.json",
+  "notes": "No image is reproduced (NoC-US 1.0, watermark, commercial use needs HCHS permission). The leads 1432 and 2097 of the catalogue are one object; their date 1862 should read 1864. Daniel's vetting of lead 1432 (4 Nov 2026) already gives the 1864 date and the Official Records page; lead 2097 is closed there as its duplicate.",
+  "codes_open": {
+   "open": 5,
+   "tokens_open": 5
+  }
+ }
+}
