@@ -5,10 +5,12 @@ are decoded, not read, and the gap that holds them back, the transcription of th
 and no ledger row; catalogue 1639 narrowed, not removed). 13 Nov 2026, R8: a third, non-blind reading (R3) of f.102, f.104 and f.204 is
 filed (`NOTES_R3.md`). 13 Nov 2026, R8: the blind fourth reading (b198, `blind4_b198/`) is in and verified; it is now the
 figure of record for f.102, f.104 and f.204 and confirms that the hand, not the key, is the limit. The gaps are still
-workable (the hand, frame 278, drafts not yet searched), so the target stays in progress.
+workable (the hand, frame 278, drafts not yet searched), so the target stays in progress. 14 Nov 2026, PR #558: the slip
+labelled f.7 is fol. 6 verso, the second page of dispatch No. 32 (labels only; no figure changes; see "Correction of 14 Nov
+2026" below), and the prior art of f.204 is not cleared.
 Outcome method set by the owner to "read with known key" (see Integration check of the R3 files).
 
-Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 26.19% to 45.71% on the first pass, figures of record). The limit is our reading of the hand, not the key. The content of f.5, f.6, f.7 and f.101 exists in clear in Nr. 529, so it is not first.
+Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 26.19% to 45.71% on the first pass, figures of record). The limit is our reading of the hand, not the key. The content of f.5, f.6 (recto and verso; the verso is the slip labelled f.7) and f.101 exists in clear in Nr. 529, so it is not first.
 
 ## What this folder is
 
@@ -18,7 +20,7 @@ Landesarchiv Sachsen-Anhalt (Magdeburg), A 1 Erzstift Magdeburg, Auswärtige Ang
 |---|---|---|---|
 | f.5 | 8 | 1647 ad Diarium No. 31 | key training text |
 | f.6 | 10 right | 1647 ad Diarium No. 32 | held out from KEY_v1, then key training text for KEY_v2 |
-| f.7 | 11 left | (1647) | held out from KEY_v2 |
+| f.7 (= f.6 verso) | 11 left | none (second page of No. 32) | held out from KEY_v2, but it is the other page of the dispatch whose recto (f.6) trained KEY_v2 |
 | f.101 | 117 | ad Diarium No. 54 | held out |
 | f.102 | 118 | ad Appendicem Diarii No. 22 | held out |
 | f.104 | 121 | ad Diarium No. 22 | held out |
@@ -101,12 +103,13 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 ## What is not claimed
 
 - No slip reaches our own 65% line or Dan's 95% read bar.
-- The content of f.5, f.6, f.7 and f.101 is not first: it is in clear in Nr. 529 (`PRIOR_ART.md`).
+- The content of f.5, f.6 recto and verso ("f.7") and f.101 is not first: it is in clear in Nr. 529 (`PRIOR_ART.md`).
 - The contemporaries had this key (frame 168). A contemporary decipherment of f.102, f.104 and f.204 may survive.
 - Our reading of the Nr. 529 drafts is one reader's and not blind.
 
 ## Remaining gaps
 
+- Prior art of f.204 ("Annotata ad Num. 40", frame 233) - blocker: not-attempted; f.204 lies in the frames 226-259 Annotationes run linked to the margin notes of the Nr. 529 diary, and diary No. 40 was outside the ranges searched; Nr. 529 No. 40, the Nr. 545 fair copy and Nr. 546 are still to check (contributor's correction of 14 Nov 2026, follow-up promised).
 - The hand: g/q, c/e, t/l and final f/n confusions cap every slip at 26-46% (f.7, f.101, f.102, f.104, f.204; the blind fourth reader b198 says the same of its own transcription) - blocker: not-attempted; the key is complete (the envoys' own table, frame 168), so a careful third transcription of the slips at full size with the frame-51 glossed reference is workable. The integration check found reader 2 closer to the image than reader 1 on f.204 lines 1-3 (below). Was marked "illegible" in `profile.json`; it is not.
 - Clear drafts for f.102, f.104 and f.204 - blocker: not-attempted; Nr. 529 searched only in the frames listed in `nr529/README.md`; Nr. 543 (Krull's draft reports), 537, 538, 540, 546 not checked.
 - Frame 278 of Nr. 530 ("Signatura catalogi sive clavis": a sign table and a long cipher passage with interlinear glosses) and frames 5, 6 - blocker: not-attempted; not compared with KEY_v2 or used for the name signs.
@@ -136,6 +139,26 @@ The shuffle control needs the Simplicissimus text (Project Gutenberg 55171) as i
 ## Timestamps
 
 See `timestamps/README.md`. The frozen key existed unchanged by 13 Nov 2026 09:08:54 GMT (Sectigo RFC 3161). The freeze order of the transcriptions rests on the session logs (`transcriptions/FREEZE_LOG.txt`).
+
+## Correction of 14 Nov 2026 (PR #558): "f.7" is fol. 6 verso
+
+Contributor's file: `CORRECTION_2026-11-14_f7_is_f6v.md`. The slip labelled **f.7** (frame 11, left page) is not a separate
+slip but the **verso of fol. 6**, the second page of the dispatch "ad Diarium No. 32"; the leaf foliated 7 (frame 11, right
+page) is blank, and its verso (frame 12, left page) carries the endorsement "1647 ad Diarium No. 32". The contributor
+credits the first notice to the frame sweep of a second checker (an AI model) and checked it on the images.
+
+- **Checked at integration (14 Nov 2026).** LASA frames 10, 11 and 12 (`max` jpg, plain curl, 200) show exactly this:
+  frame 10 right is fol. 6 recto headed "1647 ad Diarium No. 32"; frame 11 left is the same small slip turned over, and the
+  right page is foliated 7 and has no cipher; frame 12 left is fol. 7 verso, blank but for "1647 ad Diarium No. 32". The md5
+  values in the correction file cannot be re-checked: the viewer stamps each delivered image with the time of the request
+  (footer "Landesarchiv Sachsen-Anhalt - 14.11.2026 02:15:49"), so every fetch gives a new file.
+- **What changes.** Labels only: read every "f.7" in this folder as f.6v. File names stay as filed (they are inside the
+  frozen manifests and timestamp tokens). The open set is four distinct slips plus f.6v (f.5, f.6r-v, f.101, f.102, f.104,
+  f.204). No count changes: f.7 R1 36/83 = 43.37 % stays the figure of record for that page.
+- **The held-out test of KEY_v2 on "f.7" (b160) was weaker than described.** It held out the other page of the dispatch
+  whose recto trained KEY_v2, not a separate letter. The key does not rest on it: the Catalogus, the glossed postscript, the
+  frame 168 worksheet (the envoys' own table, equal to KEY_v2 in all 12 pairs) and the Nr. 529 drafts confirm it.
+- **f.204 prior art not cleared** (see Remaining gaps).
 
 ## Integration check (13 Nov 2026, PR #524)
 
