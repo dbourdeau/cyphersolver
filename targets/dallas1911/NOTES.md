@@ -4,9 +4,10 @@ Contributed by SeldomPhooey (issue #520, 13 Nov 2026; transcription, key rebuild
 blind second reading by AI agents). Integrated 13 Nov 2026; the contributor's two files (transcription.txt with the clear
 text, decryption.txt with the reasons for each emendation) followed the same day as gists and are in `contributor/`.
 
-Status: in progress. Not written up: by the README read bar 67 of the 114 cipher words read as typed (58.8%); the
-other 47 rest on values outside the period table, on emendations or on context alone, and they can still be tested
-against other letters in the same key (see Remaining gaps), so the gaps are workable.
+Status: in progress. Not written up: by the README read bar 91 of the 114 cipher words read as typed (79.8%) since the
+period key card CMXV.16.1557.1 scan 4 (issue #520, 14 Nov 2026) confirmed the values that rested on row structure and
+context (67/114 = 58.8% before); the other 23 rest on emendations, one value not on the card (bk) or an illegible end,
+and the emendations can still be tested against other letters in the same key (see Remaining gaps), so the gaps are workable.
 
 ## Documents
 
@@ -117,17 +118,45 @@ witness notes and the reason for each emendation; statuses 45 read, 17 emended, 
    que se refiere lulkyijohzyi", after run 15, then typed again further down; a short struck-out group before "Veo que en
    ella hay una" on the same page is not mentioned in the gist (clear text only).
 
+## Key card CMXV.16.1557.1, scan 4 (issue #520, 13-14 Nov 2026)
+
+Brice Dudout (comment of 13 Nov 2026, 23:33 UTC) pointed to a period key card in the same fonds, CEHM **CMXV.16.1557.1,
+scan 4**, headed "P.", which his project had transcribed on 12 Nov 2026 for catalogue 1462 (frozen by SHA-256 before
+issue #520, by his record) without trying it on any Dallas letter; he says the same table is on scans 15 and 18 and that
+scan 6 ("Clave Madero, letras más frecuentes") agrees. Checked here, 14 Nov 2026:
+
+1. **Image.** Scan 4 fetched over plain http (`.../CMXV/16/1557/1/CMXV.16.1557.1.0004.jpg`, 1145 x 526): a typed card,
+   columns W K Z X A E I O U, rows P V J / Ñ H Y / Q T L, and the typed note "Clave para traducir toda mi correspondencia
+   con D. Pancho mientras estuve en El Paso." (D. Pancho = Francisco I. Madero). Transcribed here as
+   `key_card_1557-1.tsv`; it equals the table in the comment cell for cell. Scans 6 and 15 were fetched, not compared.
+2. **Against key.tsv** (own script): all 67 bigrams of key.tsv that the card covers agree, 0 disagree: the 54 values of
+   the 1395.1 table and the 13 values rebuilt from row structure or context (je, tx, hk, vz = row; jw, ho/yo/ño, yu/ñu
+   = context; lz, jx, ti = single). Not on the card: bk (p by context; on the card p is pk/vk/jk) and the three typo
+   readings hb, uo, js. The card has 14 bigrams not in key.tsv (pw, pz, px, pa, vw, vx, ñw, ñk, hw, hu, qz, qi, tz, li).
+   The comment's claim that seven other tables of 1557.1 agree on 0-2 of the same bigrams was not checked here; with
+   67 of 67 agreeing on a 27-cell card the identification does not rest on it.
+3. **Strict recount** (README read bar, cipher words, own script over decryption.txt with card and table values as the
+   period key; same witness rule as before): 21 unmarked words that needed a value outside the 1395.1 table become sure
+   (ORIGINAL, AMENAZA, KNOX, DIAZ, MIL twice, FUERZAS, LOS, LE three times, BATALLA, SUBALTERNOS, BENEVOLENCIA,
+   ADVERTIRLE, AL, EXPEDICION twice, ORGANIZANDO, PALOMAS, BLANCO), and three words marked `[?...]` for context values
+   now decode letter for letter from the card: HIZO (run 13), MAYOR (run 47, `ma y o r`, the r typed apart) and EXIGE
+   (run 43, spelled `exije`). No emended word decodes without its emendation under the card's 14 new bigrams.
+   **91 of 114 cipher words = 79.8%** (58.8% before). Class unchanged: read in part.
+4. **Credit.** The reading and the key rebuild are SeldomPhooey's, made without the card; the card confirms 13 values
+   that rested on structure or context. Pointer to the card: Brice Dudout. Dudout's offered card JSON and comparison
+   script were not needed (the card is transcribed here from the image).
+
 ## Remaining gaps
 
 One line per open piece, with its blocker type.
 
-- 46 cipher words resting on values outside the 1395.1 table, on emendations, on context or on the later typing -
-  blocker: not-attempted; 17 marked `[?...]` (DECLARACIÓN, PELIGROSA, HIZO, COLONOS, MÉXICO, ATACAR, AMERICANOS, NUESTROS,
-  DISCIPLINA, EXIGE, RIGUROSO, MAYOR, PELIGRO, MÁS, OPERACIONES, OBEDIENCIA, JUNTARA), 7 other emended words (CARTA,
-  CRISTI twice, NIPONES twice, COMPLACENCIAS, CAMPO), MILITAR (sure in typing A only; B and the BNM copy give `militae`)
-  and 21 unmarked words that need a value outside the table (je, tx, jw,
-  ho/yo/ño, yu/ñu, lz, jx: e.g. MIL, LE, AL, ORIGINAL, BATALLA, FUERZAS, KNOX). Workable: further "clave de Dallas"
-  letters with period decodes (CEHM CMXV catalogue, the 1795.1 list of decipherments) would test these values.
+- 22 cipher words resting on emendations, on one value not on the key card or on the later typing - blocker:
+  not-attempted; 14 marked `[?...]` (DECLARACIÓN, PELIGROSA, COLONOS, MÉXICO, ATACAR, AMERICANOS, NUESTROS, DISCIPLINA
+  (bk = p, not on the card), RIGUROSO, PELIGRO, MÁS, OPERACIONES, OBEDIENCIA, JUNTARA), 7 other emended words (CARTA,
+  CRISTI twice, NIPONES twice, COMPLACENCIAS, CAMPO) and MILITAR (sure in typing A only; B and the BNM copy give
+  `militae`). The 21 words that needed row or context values and HIZO, MAYOR, EXIGE are read from the period key card
+  since 14 Nov 2026. Workable: further "clave de Dallas" letters (CEHM CMXV catalogue, the 1795.1 list of
+  decipherments) would test the typing-slip emendations.
 - REMESA MAU[...] - blocker: illegible; the run ends after three letters (leyxhe = m a u), with nothing further on either
   typing, per the contributor.
 - Narváez 2019 and González Garza 1936, not read for a prior decode - blocker: needs-physical-access.
@@ -139,8 +168,10 @@ One line per open piece, with its blocker type.
   in the key (issue #520, 13 Nov 2026)
 - [x] clear-pages: the letter's clear text and the clear parallels 1351.1 and 1383.1-2 (pencil decode) checked; none is
   a decipherment of these runs
-- [ ] known-keys: the other Maderista keys of this repository (Clave G.A., grille, swaps, shifts) differ in form; the
-  21 keys of CMXV.16.1557.1 not compared with the Dallas table
+- [x] known-keys: the other Maderista keys of this repository (Clave G.A., grille, swaps, shifts) differ in form; the
+  key card CMXV.16.1557.1 scan 4 ("P.", for the correspondence with Madero from El Paso) is the clave de Dallas: 67 of
+  67 shared bigrams agree (issue #520, Dudout's pointer, checked here 14 Nov 2026)
 - [ ] print: Fabela vols. 5-9 searched by the contributor (HathiTrust full text); Narváez 2019 and González Garza 1936 not seen
-- [ ] key-rebuild: 17 values added from row structure and context; not tested on further text in the key
-- [ ] retry: the 46 words not retried, waiting on further period pairs
+- [x] key-rebuild: 17 values added from row structure and context; 13 of them confirmed by the period card (bk and the
+  three typo readings are not on it)
+- [ ] retry: the 22 emended or bk words not retried, waiting on further letters in the key (the card's 14 new bigrams resolve none of them)

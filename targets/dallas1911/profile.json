@@ -152,6 +152,15 @@
    "kind": "verification",
    "what": "Integration, second pass with the contributor's files (gists on issue #520, fetched 13 Nov 2026, in contributor/): the gist's 69 runs equal the folder's except line-end hyphens and runs 21, 30, 49, where the folder (issue) has typing B and the gist's base text typing A (B given as variants). scripts/decode.py reproduces all 69 raw decodes of the gist decryption (one slip there: run 55's raw is A's form while its note says B). Emendation reasons read: none turns a hole into a sure word. Witness rule made consistent (earlier typing B, with the BNM copy): MILITAR (run 43, B/BNM -lw) becomes a hole, CINCUENTA (run 68, B overtypes ña to ñx, checked on CEHM p. 7) becomes sure; strict count unchanged at 67 of 114 = 58.8% (A alone 64, any witness 68). Clear text checked on CEHM A p. 1 (10 lines, agrees; accents normalised in places) and B p. 5 (struck-out block as described; one short struck group before 'Veo que' not in the gist).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Issue #520, Dudout's pointer: period key card CEHM CMXV.16.1557.1 scan 4 fetched (plain http), transcribed (key_card_1557-1.tsv) and compared with key.tsv by script: 67 of 67 shared bigrams agree (54 table values and the 13 row/context/single values je, tx, hk, vz, jw, ho, yo, ño, yu, ñu, lz, jx, ti); bk and the typo readings hb, uo, js are not on the card; the card adds 14 bigrams. Strict recount over decryption.txt with card values as period key: 91 of 114 cipher words (79.8%, was 67); none of the emended words decodes without its emendation.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -163,10 +172,10 @@
    "tokens_open": 0
   },
   "method": "key recovered based on plaintext from external sources",
-  "method_basis": "The table was rebuilt from the cipher/plaintext pairs of another letter in the same key (CMXV.14.1395.1, with a period typed transcription) and applied to this letter; 17 values were added from row structure and context.",
-  "fraction_read": 0.588,
+  "method_basis": "The table was rebuilt from the cipher/plaintext pairs of another letter in the same key (CMXV.14.1395.1, with a period typed transcription) and applied to this letter; 17 values were added from row structure and context. On 14 Nov 2026 the period key card CEHM CMXV.16.1557.1 scan 4 ('Clave para traducir toda mi correspondencia con D. Pancho mientras estuve en El Paso') was found to be this key: all 67 shared bigrams agree, including 13 of the 17 added values; the reading was made without it.",
+  "fraction_read": 0.798,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Integration count by cipher words (README rule), from the reading of issue #520 (reading.md, decryption.txt) and the contributor's decryption.txt (gist), 13 Nov 2026: 114 cipher words, 67 read as typed with table values only, reading each run from the earlier typing B (with the BNM copy) where the typings differ; 46 rest on values outside the table, emendations, context or typing A only (MILITAR), 1 hole (MAU...). Typing A alone: 64; any witness: 68. The contributor's headline counts the clear text as read: 1,738 of 1,785 words of the letter = 97.4% (99.9% with the probable words).",
+  "fraction_read_source": "Integration count by cipher words (README rule), 14 Nov 2026, after the period key card CEHM CMXV.16.1557.1 scan 4 (issue #520, pointed out by Brice Dudout) confirmed 13 values that rested on row structure or context: 114 cipher words, 91 read as typed with values of the 1395.1 table or of the card, reading each run from the earlier typing B (with the BNM copy) where the typings differ; 22 rest on emendations, on bk (not on the card) or on typing A only (MILITAR), 1 hole (MAU...). Before the card (13 Nov 2026): 67 of 114 = 58.8% (typing A alone 64, any witness 68). The contributor's headline counts the clear text as read: 1,738 of 1,785 words of the letter = 97.4% (99.9% with the probable words).",
   "verification": [
    "independent verification"
   ],
@@ -185,6 +194,13 @@
     "note": "69 cipher runs and the clear text from both typings and the BNM copy",
     "date": "2026-11-13",
     "source": "issue #520 (dbourdeau/cyphersolver)"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "pointed to the period key card CEHM CMXV.16.1557.1 scan 4 as the clave de Dallas (67 of 67 shared bigrams agree)",
+    "date": "2026-11-13",
+    "source": "issue #520 (dbourdeau/cyphersolver), comment of 13 Nov 2026"
    }
   ],
   "texts": [
@@ -197,25 +213,26 @@
     "translation": "translation.md",
     "language": "es",
     "summary": "González Garza warns Madero that Caracristi ('Cristi'), who claims an appointment from him, has made rash declarations and told Secretary Knox that Díaz had arranged with Japan to bring in 15,000 Japanese disguised as colonists; Madero's courier Mason lives with Caracristi, so Madero is to ignore Mason's letter but keep using him. A confidential judgment: Madero is too indulgent with his subordinates. Arms: a second shipment found in bad condition, delivery near Palomas, about fifty armed men with Escudero, Cano's failed expedition. The clear text covers Washington, the bond commission, Pino Suárez, Yucatán, Villarreal and Casas Grandes.",
-    "read_share": 0.588,
+    "read_share": 0.798,
     "state": "read in part",
     "reading_review": {
      "grade": "A",
      "by": "repository integration check (AI agent)",
      "date": "2026-11-13",
-     "note": "The Spanish reading reads as continuous sentences and matches the English translation; the cipher words fit their clear sentences. 47 of 114 cipher words are holes by the read bar (values outside the 1395.1 table, emendations, context-only values, one hole), so the reading is coherent but in part."
+     "note": "The Spanish reading reads as continuous sentences and matches the English translation; the cipher words fit their clear sentences. 23 of 114 cipher words are holes by the read bar (emendations, bk not on the key card, typing A only, one hole), so the reading is coherent but in part (14 Nov 2026, after the key card)."
     },
     "note": "The contributor's own files, kept unchanged: contributor/transcription.txt (the whole letter, clear text and cipher runs, typing A with B and BNM variants) and contributor/decryption.txt (per run: raw decode, reading, witness notes, reasons for each emendation); gists on issue #520, fetched 13 Nov 2026."
    }
   ],
   "key_file": [
-   "key.tsv"
+   "key.tsv",
+   "key_card_1557-1.tsv"
   ],
   "gaps": [
    {
-    "item": "46 cipher words resting on values outside the 1395.1 table, on emendations, on context alone or on typing A only (17 marked [?...])",
+    "item": "22 cipher words resting on emendations, on bk (not on the key card) or on typing A only (14 marked [?...])",
     "blocker": "not-attempted",
-    "detail": "Workable: further 'clave de Dallas' letters with period decodes (CEHM CMXV catalogue, the 1795.1 list) would test je, tx, jw, ho/yo/ño, yu/ñu and the single values. The contributor is searching for further letters in the key (issue #520, 13 Nov 2026)."
+    "detail": "Workable: further 'clave de Dallas' letters (CEHM CMXV catalogue, the 1795.1 list) would test the typing-slip emendations. The 21 words that needed row or context values, and HIZO, MAYOR, EXIGE, are read from the period key card CMXV.16.1557.1 scan 4 since 14 Nov 2026."
    },
    {
     "item": "REMESA MAU[...]: the run ends after three letters",
