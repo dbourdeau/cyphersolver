@@ -1,0 +1,9 @@
+Frozen keys (sha256 of the JSON files as written by the scripts; rerunning the scripts rewrites them identically). Each script builds its key from a pair file written earlier and scores it in the same run, so file times cannot show a freeze before the test; key_full_r3.json was built after p.573 had been decoded once with an earlier key. Post-test corrections: corrections_post_test.tsv (frozen keys unchanged).
+
+dc04ab4667108a8c92a2ccd64e2fc00ba429a5c07c335351d90f87722f57d658  key_K1.json        round 1, 13 Nov 2026: 139 numbers from de Neufville's drafts pp.600-603 and 609 only (scripts/test_key.py)
+e7f5cff218e0f0cc4fd1249092add6ee85f011c00ed00c036a8acd76f94a0da4  key_K2.json        round 2, 13-14 Nov 2026: K1 + p.599 + key_additions_round2.tsv; the whole p.608 draft held out (scripts/test_round2.py)
+9c1eaa33ec04d23b1e8baa8e9370d8f3a5131a8adc0560c6a8986a7642eede89  key_full_r3.json   round 3, 14 Nov 2026: every draft pair (incl. p.608) + the recipient's glosses (key_pairs_classB_glosses.tsv); used to decode the bare passages
+
+The test plans are in ../TEST_PLAN.md.
+key_entries.tsv lists the same 204 numbers with every vote and source (scripts/build_key_table.py).
+key_drafts_all.json (173 numbers, sha256 66e748b3...) is the intermediate all-drafts key of round 2, kept for the record.
