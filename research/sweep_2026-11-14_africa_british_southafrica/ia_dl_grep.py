@@ -15,7 +15,7 @@ for k in ["explorers", "khartoum", "barbary"]:
         if EXP.search(t or ""): sel.append((k, i, t))
 seen = set(); sel = [x for x in sel if not (x[1] in seen or seen.add(x[1]))]
 print(len(sel), "ids", flush=True)
-out = open("ocr_hits.jsonl", "a", encoding="utf8")
+out = open(os.path.join(S, "ocr_hits.jsonl"), "w", encoding="utf8")
 PAT = re.compile(r"\b(cipher|cypher|decipher|decypher|cyphered|ciphered|in code|secret writing|cryptogram|cryptograph)\w*", re.I)
 for k, i, t in sel:
     f = os.path.join(S, i + ".txt")
