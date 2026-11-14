@@ -358,7 +358,7 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
 - Structure: a group PPLL is page PP (01-99) and line LL (01-30; only 5 of 754 groups have LL > 30, slips or misreads), so about 2,970 entries; rank = (PP-1)*30+LL.
   Single letters open their sections (c 1121 before ca 1122; d 2112; e 2729; f 3616; h 4113; k 4906; l 4914; n 5901; o 6019; r 7703; s 8328; t 9113; v 9612; y 9915).
   Pages 01-03 and 05, low lines, hold marker groups (beacons 0101/0201/0301/0501/0102/0103, paragraph end 0109, and endings such as 0311 past participle, 0312 -ant,
-  0212 adjective/-aire/-ant, 0211 plural, 0303 noun ending, 0305/0307 imperfect): like R1's balises. Their exact meanings are NOT settled.
+  0212 adjective/-aire/-ant, 0211 plural (unsettled: see 14 Nov), 0303 noun ending, 0307 imperfect, 0305 future or conditional since 14 Nov): like R1's balises. Their exact meanings are NOT settled.
 - interval_cands.py lists, for a group, the French words that sort between the nearest known values (wordfreq list); anchors_inspecteurs.json holds the values; the
   machine gloss is inspecteurs_2nov_gloss.txt and the sentence reading, with holes and an English version, is inspecteurs_2nov_reading.md.
 - Values: 197 groups (was 23). Coverage: 438 of 754 group occurrences have a value (58%), 193 are marker groups (26%), 123 are unread (16%).
@@ -411,6 +411,15 @@ Dan asked to keep going after the Pillon test. Method: read the telegram by cont
   place (pourquoi, longtemps, france, influence); the intended word, where one is guessed, is rarely first (mesures and claire are; dont is). A character model cannot choose
   a word; a word-level model of 1870 administrative French would be needed. Nothing adopted.
 - NOT a reading by the README bar (95% of tokens): this is "read in part", from one transcription, with no second text in this code to test the values on.
+
+## Pillon's reply of 14 Nov 2026 (marker groups; relayed by Dan)
+He asked for all partial decryptions (he found the Full texts section of the page, which holds ciphertext and gloss; the sentence reading is inspecteurs_2nov_reading.md), and read the markers as R1-style tags.
+Tested against the contexts (inspecteurs_2nov_gloss.txt): 0312 -ant, 0212 adjective (revolution -> revolutionnaire), 0307 imperfect: agree. 0305 = FUTURE: adopted ("celui qui [etre] 0305 charge de" = sera charge;
+the single occurrence fits future or conditional, not the imperfect we had). 6221 = ORGANISER with its conjugations and ORGANISATION: supported, it is a verb in "c'est nous qui avons organise le systeme" and a noun in
+"4914 6221 etablie" (l'organisation etablie). 4914 = le/la/l' compatible (first entry of L); 0814 = au/a la/aux compatible. 0211 = FEMININE: not settled. "communication 0211 qui relie" (singular verb) favours feminine;
+"enfant 0211" and "ami 0211 0109" (amie or amities) fit either feminine or plural; kept as unsettled. 3921 = HAUTEUR: rejected by position, the H section opens at 4113 (h, habit 4116, hardi 4124) and 3921 lies just
+before garde 3927 (G); "a la hauteur des circonstances" is the idiom but 3921 would have to be a slip. PIERRET from Gemini: no independent evidence (it repeats his own PIERR-ET reading); source asked for.
+Gemini's other candidates to be run against the spelled runs only if he names sources.
 
 ## Wiki and engine (7 Nov 2026): start here
 `wiki/` is the project's knowledge tree, built on Karpathy's LLM-wiki pattern (gist 442a6bf5..., raw sources / wiki / schema; ingest, query, lint; index.md and log.md): read `wiki/SCHEMA.md`, `wiki/PROCESS.md`, `wiki/index.md`
