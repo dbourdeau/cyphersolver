@@ -91,3 +91,86 @@ Not started: nothing was in hand. Next steps, in order:
    1379,14-18; 1380,10-11), then the eleven Imperial Cipher letters of 1547-1553.
 4. Test the Imperial Cipher of 1555 and Cg.1 on the two 1557 letters.
 5. Split entry 744 by cipher (one key per entry) once the images confirm Tomokiyo's assignment.
+
+## Key validated on a held-out page (14 Nov 2026, Brice Dudout with Claude)
+
+Images: the PARES records were fetched on Brice Dudout's machine (Spanish exit in earlier sessions). No AGS image is
+in this folder ("Prohibida la reproducción"); the transcriptions here are of the cipher signs only.
+
+**Key.** Imperial Cipher of 1544-1554 as published by Tomokiyo (after Bertomeu Masiá), completed for study only by
+the period table AGS MPD D/00203 no. 243 ("Es del año de 1545", pointed out by Tomokiyo; issue #618). The table is not
+reproduced here. Values never changed after the key was frozen by SHA-256.
+
+**Shape atlas.** Figueroa's secretary writes at about 1000 px on PARES, and the vowel marks (dot, two dots, bar,
+small o) and several look-alike bases (X-bar = pre, x-stroke-o = de, sideloop = do, x-curl = no; eight / g / ring /
+open j) were confused in our earlier passes. We built an atlas of 76 sign families, 337 crops, from the Biblioteca
+Estense copy of Charles V to Ferrante Gonzaga, 14 Nov 1549 (Campori, Lettera K, Karl V sfasc. IV c. 60r/60v, IIIF,
+CC BY-NC-SA), aligned on the sign names of `targets/gonzaga1549` (Daniel Bourdeau's names and recipe). The atlas
+classes shapes only; it sets no values.
+
+**Validation (pre-registered, one measurement).** Reference: AGS Estado 1379,14-18 (PARES 3615615), Figueroa to
+Charles V, Genoa 8 Sep 1547. The unit holds the cipher (images 01-07) and a full clear copy of the time (images
+11-17), so the letter itself is "existing"; it serves as the test. Held-out portion: cipher image 06, never looked
+at before the freeze. Transcription by shape only, by three separate Claude sub-agents: pass A, pass B without
+access to A (their own crops), arbitration on the image without values or clear text (passes agreed on 78 % of
+signs; 492 tokens after arbitration). The clear copy (image 15) was read after the transcription was frozen.
+
+| measure (character precision, LCS, scorer of earlier sessions) | value |
+|---|---|
+| decode vs clear copy of the time | **0.873** |
+| 200 within-class shuffles (values permuted inside letters / syllables / codes / nulls), max | 0.477 |
+| 200 whole-key shuffles, max | 0.449 |
+| signs outside the key | 4.1 % |
+
+Threshold set before: ≥ 0.85 and ≥ best within-class shuffle + 0.30 and ≤ 20 % outside the key: passed. The
+within-class control is the harder one (whole-key shuffles move long code values onto frequent signs). Earlier
+measurements with the same key family on other portions, without the atlas: 0.740 (1554), 0.783 and 0.795 (1547).
+
+**1553 letters: decoded, not read.** See the next section.
+
+## Five 1553 letters transcribed and decoded (14 Nov 2026, Brice Dudout with Claude)
+
+Letters: 1383,242 (28 May, to Juan Vázquez de Molina, 1 p.), 1383,296 (29 Aug, 4 pp.), 1383,364 (30 Aug, 3 pp.),
+1383,312 (20 Sep, 2 pp.), 1383,351-353 (27 Oct, 10 pp.), all from Figueroa in Genoa, the last four to Prince Philip.
+20 pages, 12,741 signs (`transcriptions/`). Each page: pass A and pass B by two separate Claude sub-agents, blind to
+each other and to all values; arbitration on the image by a third sub-agent, shape only (passes agreed on 44-80 % of
+signs; the low figures come from line-numbering shifts, realigned on the image). The arbitrated transcriptions were
+frozen by SHA-256 before decoding. Decode: the key frozen before the validation, unchanged (`readings/*_decode.txt`).
+
+**Reading count (Daniel Bourdeau's rule: sure / probable / supplied / unread words; 95 % = read).**
+
+| letter | words read as sense | sure only | `_check_reading.py` clean share | state |
+|---|---|---|---|---|
+| 1383,242 (28 May) | 66 % | 54 % | 0.375 | decoded, not read |
+| 1383,296 (29 Aug) | 75 % | 42 % | 0.239 | decoded, not read |
+| 1383,364 (30 Aug) | 75 % | 46 % | 0.250 | decoded, not read |
+| 1383,312 (20 Sep) | 60 % | 44 % | 0.206 | decoded, not read |
+| 1383,351-353 (27 Oct) | 72 % | 38 % | 0.144 | decoded, not read |
+
+Under the schema's bar (coherent sentences, about 0.60 clean sentences), none is "read in part" yet: holes remain in
+most sentences. "Probable" words need either a shape pair this hand merges at PARES resolution (r-series vs c-series,
+`L-bar` me vs the closed "4" que, y-series s vs 7-series b/v, dot counts, triangle vs sideloop) or a post-validation
+conjecture: a value given after the measurement to one of about 30 recurrent signs that the label table does not
+name, kept only when it gives a clean word at least three times. Examples: a 6 joined to a small l-stroke = "al"
+(alteza, al principe); an o with a long cross before `mo` = "ge" (Magestad); a dotted omega = "qua" (qual, quales);
+`+` = "ne"/"ze" (manera, hazer); the u-shape before an h-series sign = "ch" (dicho, hecho). None of these is applied
+to the key; they are listed so that high-resolution images can test them.
+
+**What the letters say, as far as read.** 29-30 Aug: the French and Turkish fleets in Corsica (San Fiorenzo taken;
+the French fleet at Calvi, the Turkish one at Bonifacio, "more than a hundred miles" apart); Genoa cannot hold the
+island alone and refused the French king's ambassador; the French seem to offer Corsica back if Genoa takes him;
+dispatches go "por la via de Leon con cartas de mercaderes" because of corsairs. 20 Sep: Doria comes with 26 galleys
+and 2000 Germans (figures in clear); a place surrenders on terms; the Genoese will bear half the cost of the
+enterprise of the island, "assi para la seguridad de su tierra como … de Secilia y Cerdenia". 27 Oct: Bonifacio lost;
+the French mean to arm 40 galleys and to call the galleys of Algiers (12 galleys, 18 galiots); galleys of Naples and
+Sicily sent for (Juan de Vega); Andrea Doria named general of the enterprise of Corsica, with a ceremony of the St
+George standard in the cathedral; money to be taken a cambio. 28 May: changes, asientos, the Spinola, what remains
+owed. The contemporary Relaciones (1383,80-81, 89-91, 404) agree where they overlap.
+
+**Prior work and collation.** Satoshi Tomokiyo's short drafts in the HTML comments of spanish2.htm agree with our
+openings of all five ("lo que le puedo escrebir en esta", "por esta via de", "con cartas de mercaderes por las
+qua[les]", "del presente", "mercaderes burgaleses"). 296 and 364 share the passage on the French ambassador; 242 and
+351-353 share "a cambio". The duplicate 1383,308-311 (16 Sep) and 1383,265-266 (16 May) are not transcribed yet.
+
+**Next.** AGS high-resolution reproductions (requested in Brice Dudout's archive register, 28 Oct 2026) would settle
+the dots and the merged shapes; then test the conjectures on 1547 image 04, which is still untouched.
