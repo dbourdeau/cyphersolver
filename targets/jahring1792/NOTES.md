@@ -77,7 +77,7 @@ unmarked departure; it passes.
 
 | text | runs | words | verbatim | marked change | hole | state |
 |---|---|---|---|---|---|---|
-| 119, letter of 1 June 1792 | 12 | 28 | 17 | 8 | 3 | not prose |
+| 119, letter of 1 June 1792 | 12 | 28 | 19 | 6 | 3 | not prose |
 | 120 right, upper runs of the report | 4 | 37 | 29 | 7 | 1 | read in part |
 | 120.5 and 121, rest of the report | 4 fragments | about 15 | | | | decoded, not read |
 
@@ -125,6 +125,28 @@ its own Porta code, and the held-out figures, and confirmed that run 120.5, whic
 scored runs. It agreed the three states (not prose; read in part; decoded, not read), grade B for each. It read the
 four sentences of image 120 against the translation: 4 of 4 hold, with one hole in the second.
 
+## Second reading of image 119 (14 Nov 2026, Brice Dudout with Claude)
+
+An independent Porta decoder was written from the statements of key.tsv only (table, keyword, restart per run, the two
+sign rows) and run on transcription_119.txt and transcription_120.txt: 372 of 372 letters agree with
+decryption_119.txt and decryption_120.txt. For every marked change in the 119 runs the cipher letter that would give the
+wanted plaintext was computed, and the place was then looked at on the arcinsys image 119 (3500 x 2607, crops at 4x).
+Three of the wanted letters are a v where the transcription has r, and the image shows v at all three; in this hand v is
+an open pointed sign and r has a shoulder, and the same runs show both side by side (119.12 "amvr").
+
+| run | letter | was | image | mechanical before | after |
+|---|---|---|---|---|---|
+| 119.1 | 10 | r | v | cassengeslhafte | cassengeschafte |
+| 119.8 | 9 | r | v | sindgutgastimt | sindgutgestimt (the m left out by the writer stays marked) |
+| 119.12 | 9 (the dot is letter 1) | r | v | ausmiscradit | ausmiscredit |
+
+Two more places look the same way but are not changed, because the image does not settle them: 119.2 letter 11 (the
+first sign of the second line, transcribed v; w would give "fürchterlich") and 119.6 letter 5 (transcribed s; the sign
+seems to carry a cross-stroke, and f would give "doch"). Both stay marked changes. 119.10 letter 8 (q, where r would give
+"aufkündigungen") is a clear q on the image, so that change is the writer's. In 120.2, letter 10 is a clear l, so
+"operrtion" is the writer's slip, not ours. After the change, 119 has 19 words verbatim, 6 with a marked change and 3
+holes; scripts/check_marks.py passes on all 16 runs. The state of 119 (not prose) is unchanged.
+
 ## Remaining gaps
 
 One line per open piece, with its blocker type.
@@ -140,7 +162,7 @@ One line per open piece, with its blocker type.
   reading) is undecided on this image; the original or a sharper image would settle it. s gives the a of "anstatt"; the looped d-shape would give x. Kept as s.
 - Second reading of 9 of the 16 runs - blocker: not-attempted; the two transcription passes were made by the same
   agent. The blind reviewer checked about 230 letters in 7 of the 16 runs and the first 14 letters of 121 line 1 (see
-  Review); 119L.1, 119L.2, 119.1, 119.2, 119.3, 119.7, 119.8, 119.10 and 119.12 were checked by no second reader.
+  Review); 119L.1, 119L.2, 119.3 and 119.7 were checked by no second reader; 119.1, 119.2, 119.6, 119.8, 119.10 and 119.12 were looked at on the image at the places of their marked changes on 14 Nov 2026 (see above), not letter by letter.
 - The clear text around the runs - blocker: not-attempted; it is a working transcription only, weak in places on 119
   ("geben mir immer fürchterlich gut"; "liege ich Kuppels Speyer und stellen unsern Correspondenten"), as the reviewer
   also noted.

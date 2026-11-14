@@ -149,6 +149,15 @@
    "technique": [
     "plaintext matching"
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Recount (14 Nov 2026, Brice Dudout with Claude): v10_relabel.share on texts/f33_decryption.txt gives 135 words, 0 holes, 2 doubtful (L06, L09), read share 0.985, not 1.0; the letter stays read. L06 looked at again on Gallica canvas 62 at full size: c or g not settled from the scan.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -183,7 +192,7 @@
     "translation": "texts/f33_en.md",
     "language": "it",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.985,
     "summary": "Orlando Pallavicino, reconciled with Sforza, asks Birago's help to get home; Birago will give it on Sforza's commission, all the more since the Milanese mean to give Francesco Piccinino whatever he asks, Orlando's lands included.",
     "reading_review": {
      "grade": "A",
@@ -206,6 +215,12 @@
     "role": "key or decipherment used",
     "note": "Birago's clear duplicate f. 32 and his key sheet (ASMi cart. 1597 no. 16, DECODE R5316).",
     "published": false
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "recount of the read share by the README rule (0.985) and a second look at the doubtful sign of L06 on the Gallica scan",
+    "date": "2026-11-14"
    }
   ],
   "notes": "Lead 1546. The key sheet on DECODE had no description; its connection to this letter is new."

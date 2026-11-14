@@ -138,6 +138,30 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
    d'Austriche … Fiesque") with its text. The contributed page list has no v023l. Other untranscribed pages may
    exist (the contributor scanned the 183 views at reduced size).
 
+## 14 Nov 2026: second decoder, one missing key sign, recount (Brice Dudout, with Claude)
+
+- **Decoder.** A separate script applied `contributed/data/key.tsv` (first value of each sign; codes =NN give their
+  word; the (null) signs dropped) to the 45 `contributed/data/transcription_*.txt` pages and compared the letters with
+  the contributor's `decoded_*.txt`: 32,272 of 32,352 letters agree (99.75%); 18 pages are identical and no page is
+  under 98.8%. Every difference is a sign with no value in the key (marked `?` or `[?]` in the contributor's decode),
+  so the decode is reproduced in full.
+- **Key correction (missing sign).** The transcriptions use a sign `w` 8 times (v038l c18; v049r c06, c11, c13, c17;
+  v065r c06; v070r c04, c08) that is not in `key.tsv` (only `wt` = m is), so the mechanical decode prints `[?]` there.
+  Tomokiyo's table (`easternScipion.png`, cryptiana.web.fc2.com/code/frencheastern.htm) has this sign: a plain W in
+  its "double letters" row, under r, so **`w` = rr**, a double-letter sign like `=ll`, `=ss` and the others in the key.
+  It was missed when the table was set up as key.tsv. The image confirms the shape at three places (Gallica
+  btv1b90573568, full size): view 70 right c04 and c08 (a plain W, no tilde, between the cross sign and the triangle:
+  "cou-rr-ier") and view 65 right c06 (W before a, in "[con]clu-rr-e"). The readings already have the r there:
+  "[con]clure le mariage avec le Roy" (v065r c06), "courrier" (v070r c04, c08), "seroient" (v049r c13),
+  "verriez" (v049r c06). With rr all 8 places give the reading's word in a spelling of the time (courrier, verriez;
+  serroient, conclurre); m gives no word anywhere. Proposed key row: `w` -> rr (table, double letters).
+- **Recount.** `research/reading_audit/v10_relabel.share` on the 23 readings of `outcome.texts`: 11,615 words and 561
+  holes in all. The 22 letters that read (read or read in part) hold 10,628 of the words; the one decoded, not read
+  (10 Sep 1569) holds 987. Words read in letters that read, over all words and holes: 10,628 / 12,176 = **0.873**. The
+  earlier 0.91 was the letters' share of the words, estimated, with the holes inside them not taken off (measured,
+  that share is 10,628 / 11,615 = 0.915, so the estimate stood). The per-letter read shares recorded agree with the
+  measure to within 0.005.
+
 ## Prior work
 
 - Tomokiyo published the key and wrote that it "will allow reading undeciphered portions"; no reading of the

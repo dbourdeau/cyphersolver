@@ -167,6 +167,16 @@
    "kind": "literature search",
    "what": "Web searches for an edition of the Camerarius-Solms letters: none found. Schubert's biography and the Briefe und Akten series not opened.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Second check (14 Nov 2026, Brice Dudout with Claude; VERIFY.md last section): separate lookup of the 60 code groups of n.194 in key.tsv, 56 as in decryption_n194.txt and the 4 marked places (1513 and 858 not in the key, 1682 and 43 doubt) as marked. Read share recounted by v10_relabel.share without the paragraph line references: 858 words, 74 holes, 0.921 (was 0.943 by check_marks.py).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -178,9 +188,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.943,
+  "fraction_read": 0.921,
   "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/check_marks.py n194: clear-text words 784, 43 not read; code groups 60, 55 read; 796 of 844 tokens. Words marked [?word] count as not read.",
+  "fraction_read_source": "n194/reading_n194.md by research/reading_audit/v10_relabel.share with the paragraph line references [01-07] ... removed: 858 words, 74 holes, 0.921 (14 Nov 2026). scripts/check_marks.py gives 796 of 844 tokens (0.943), counting a multi-word [?...] or [...] as one token.",
   "verification": [
    "independent verification",
    "contemporary decipherment",
@@ -205,6 +215,12 @@
     "role": "verification",
     "note": "one independent AI reader, blind on fol. 416r; no human palaeographer",
     "date": "2026-11-03"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "separate lookup of the 60 code groups of n.194 and recount of the read share by the README rule (0.921)",
+    "date": "2026-11-14"
    }
   ],
   "texts": [
@@ -217,7 +233,7 @@
     "translation": "n194/translation_n194.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.943,
+    "read_share": 0.921,
     "summary": "From Bremen during his mission to the Lower Saxon Circle, Camerarius reports that the Bremen diet refused the archbishop's triple levy, that imperial envoys at Lueneburg will ask the Circle for a contribution to be granted only if the Elector Palatine is restored, that Electoral Saxony quarters troops in Thuringia, that Christian IV is taken up with Osnabrueck and Verden and goes to Norway in June, and that Christian of Brunswick has raised 100,000 thalers from the Eichsfeld.",
     "note": "796 of 844 tokens (94.3%), below the 95% bar. Open: 1513 and 2472 (no legible gloss), [2]858 (under a pasted slip), 1682 (gloss K. i. B., King of Bohemia; earlier read as Denmark), 43 (von Dohna, doubtful), 43 clear-text words.",
     "reading_review": {
