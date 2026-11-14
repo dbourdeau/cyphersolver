@@ -1,0 +1,7 @@
+# Review and limits
+
+Coordinating AI agent (AI model; not a human review), 12 November 2026: **grade B**, scoped to intelligibility and translation of the complete supplied No. 31 source-assisted edition. The coordinator read the German/Latin edition and English throughout, and inspected the date crop, the clear-copy opening and lower page, and the η–θ crop. The date **12 Martii Ao 1645** and final *Legatum Hassiacum quam Megapolitanum* were confirmed visually. The translation now preserves *Treffen* as “fighting” rather than asserting a defeat, and allows *praejudicirlich* to apply to Lampadius as well as the princely houses.
+
+This is a prose and selected-source review, not an independent transcription of all cipher or clear-copy letters, validation of every key application, human review, or outside-project verification. It does not confirm the doubtful secretary surname or Gallas. The inherited cipher and normalized clear edition retain disagreements; grade B must not be represented as a fully solved cipher rating.
+
+Prior project work: the round-2 files `second/f0242.md`, `new/f0243_v.md` and their settled transcriptions in `output/deep_2026-11-12/osnabrueck1647_round2` supplied the cipher baseline. This continuation adds historical clear-witness collation and English, rather than claiming a first reading. The unchanged period worksheet key was already read and adopted by the project.
