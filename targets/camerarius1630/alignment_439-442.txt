@@ -1,0 +1,32 @@
+Glossed original against bare duplicate, letter and postscript to Gustav II Adolf, The Hague, 20/30 Sept 1630
+(checked 13 Nov 2026, after the code-list test of the same day).
+
+Order of the pages (from the text and the hands):
+  glossed original : 438R letter "Serenissime ac potentissime Rex ... subiicio" -> 439L "Hoc etiam nunc addere volui ...
+                     20/30 Septemb. Anno 1630", signed L. ; 439R "Post script. Serenissime Rex" -> 440L top (end of the postscript).
+  bare duplicate   : 441R "Duplicata", same letter + "Hoc etiam ... ut propter" -> 442L "3906 ... Anno 1630" ;
+                     442R "Post script" to "ex 768. si forte" -> 443L "ratio inveniri ... Dat. ut in litteris".
+So transcription_442.txt (the held-out portion of the code-list test) is 442R (postscript) followed by 442L (end of the
+main letter), not one continuous text. The test items (code occurrences, +/-15 words of context) are unaffected except
+for a few contexts at the junction.
+
+1. 442 (transcription_442.txt, frozen before this check) against 439R (to "768") + 439L (from "3906"), element by
+   element (code groups, signs and spelled numbers): 361 vs 362 elements, 352 identical. Differences:
+     20.16.?2.18 (439, glossed "nram") / 20.26.72.28 (442)   spelled word, both copies uncertain ("meam"?)
+     1572 / 15?2      3239 / 3230      72 / ?2      3811 / 3821      579 / 879      1561 / 156?
+   i.e. only digits that are hard to read (3/7, 0/9, 5/8, 1/2) or marked uncertain in 442; 579 is confirmed by 444R
+   ("Episcopatus").
+2. 441R against 438R, central block (3959 ... 2691a, about 120 elements, read on the image): no difference
+   (931|971 equally unclear in both). 441R adds a marginal note: "Nondum venit, ut mihi indicatum fuerat, sed aegrotus
+   mansit Londini".
+3. 443L against 439R end + 440L: 2110, 4000, 1561.730, 2691, 683, 2304, 3894, 448, rr, 449: identical.
+4. Gloss against clear text: the clear words of 439/440 and 441-443 are the same text (spot-checked line by line);
+   the glosses of 439 fill the code groups of 442 to a coherent Latin text.
+
+Consequence: 442 is a duplicate of a glossed letter. Its content is EXISTING (contemporary decipherment on 438-440).
+The code-list test stays a valid blind test (the list was built from other images and the judge saw neither), and the
+glosses of 439 now check it directly: for the 59 code occurrences of 442 covered by codes.tsv, the gloss of the same
+occurrence on 439 agrees in all 59 cases at the level of lemma or referent (51 same word; 8 same referent or synonym:
+2110 Rex Sueciae / Mtis Vrae x3, 2066.5 Caesar / Imperatore, 1842 Dux / Princeps Neoburgicus, 1843 Wolfgang Wilhelm /
+Princeps Neoburgicus, 3894 opportune / tempestive, 2102 Regia / Regem). uu, given "a" in codes.tsv, is glossed "ab",
+"a (se)" and once not glossed on 439, but "est" twice on 438R: its value is not fixed.
