@@ -202,6 +202,15 @@
    "kind": "verification",
    "what": "Bue 696 Bild 50: the later pencil gloss Georgi is wrong, the key reads albert (clear paragraph about Albert).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #563: held-out score reproduced with an independent decoder from key.tsv (19/24 words = 0.792, characters about 0.963; the controls' 0.167 is the four 'und'; without them 15/20 = 0.75, the bar); key_K3.json SHA-256 matches the frozen value, order of events by the contributor's record; Landesarchiv BW images fetched with curl: Bü 702 Bild 17 about 55 groups agree (one extra 20 in 'angegriffen' in the transcription, score unchanged), Bü 699 Bild 75 both passages agree; unglossed reading reproduced, strict 14/24; lead 2037 found (the PR said none) and pointed here.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -244,20 +253,20 @@
   ],
   "gaps": [
    {
-    "item": "4 codes unresolved (oi, ut, ps, vf) in the unglossed passages",
-    "blocker": "open-codes"
-   },
-   {
-    "item": "Bue 701 pieces 35-173 and Bue 700 not examined",
+    "item": "codes oi, ut, ps, vf (Bü 699 Bild 75) unresolved; glossed occurrences in Bü 700-701 not searched",
     "blocker": "not-attempted"
    },
    {
-    "item": "original keys of the chancery not online",
+    "item": "six probable words (sw x2, ka, ld, hb, 33 = s) not confirmed by a gloss",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "Bü 701 Bild 35-173, Bü 706 and the 1798 second system not examined",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "the chancery's original keys (A 11 Bü 66, L 6 Bü 1392, A 74 i Bü 24) not online",
     "blocker": "no-key-material"
-   },
-   {
-    "item": "one AI transcriber; no human check",
-    "blocker": "not-attempted"
    }
   ],
   "texts": [
