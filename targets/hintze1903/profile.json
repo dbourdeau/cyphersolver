@@ -205,6 +205,16 @@
    "kind": "literature search",
    "what": "One web search on the interpellation and the 1903 journey: general literature only. The Diário da Câmara dos Pares not consulted.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): re-read all 54 groups of m0001 and m0003 and the decode of the time on the four DigitArq images (no difference from the transcriptions); an independent script (verify_dudout_20261114.py) re-derives the word counts (75, 46), applies code_values.tsv to m0003 (25/25 groups as published) and refits the page model (rho 0.957, 21/24 in order; 500 shuffles reach at most 0.697). Reading 50554 as 'Presidente da Republica', 3707 as 'franceza' and 49641 as the full stop the decoder wrote after 'franceza' (or 'o') puts 23 of 24 values in order; the three highest groups (67033, 67394, 67398) all stand for or after a place, which fits a block of place names at the end of the book.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -280,6 +290,12 @@
     "role": "key or decipherment used",
     "note": "decode by hand under the strips of m0003 and on its back",
     "source": "https://digitarq.arquivos.pt/documentDetails/70a181c91c944a74bed573252735928b"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "groups and decode re-read on the DigitArq images; independent decoder and page model; 3707/49641 split and place-name block proposed",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [

@@ -191,6 +191,15 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher items ciphertext.txt; both letters in full with the cipher items resolved in reading.md, the decode in reading.tsv (key BnF fr. 3995 no. 11 used unchanged)",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): independent decode from key.md and ciphertext.txt only (verify_dudout_20261114.py): 24 of 27 units take a value the key or the writer column allows; the other three (dateline z = n, dateline ι = d, run ƥ as a null) are the readings NOTES already argues. f. 28v re-read on the Gallica image (canvas 53): the [?] after 'quelques jours' is a word struck through with 'jours' written above it (not a hole), and 'sans avoir eu cest heur' had lost 'eu'; reading.md corrected. Dateline and the f. 30 run as transcribed. v10_relabel.measure 0.993 (f. 28 0.991, f. 30 0.997); class unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -226,7 +235,13 @@
   ],
   "credits": [
     {"who": "contemporary", "role": "key or decipherment used", "note": "Nevers key book no. 11 (BnF fr. 3995 f. 23), unchanged; interlinear decipherment of the sibling fr. 3413 f. 102 calibrated the hand"},
-    {"who": "tomokiyo", "role": "pointer", "note": "catalogue of the fr. 3995 keys (no. 11) and the note that no. 11 is used in fr. 3413 f. 102, the glossed sibling", "source": "cryptiana nevers.htm"}
+    {"who": "tomokiyo", "role": "pointer", "note": "catalogue of the fr. 3995 keys (no. 11) and the note that no. 11 is used in fr. 3413 f. 102, the glossed sibling", "source": "cryptiana nevers.htm"},
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent decode of the cipher items and image check of f. 28v; two corrections to the clear text of reading.md (VERIFY_dudout_20261114.md)",
+    "date": "2026-11-14"
+   }
   ],
   "texts": [
    {

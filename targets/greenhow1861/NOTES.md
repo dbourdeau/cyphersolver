@@ -128,7 +128,8 @@ maximum of 5.)
 - Side 1, paper losses (al[l], acti[vi]ty, atta[ck], [b]e, Ferr[y], eff[o]rt, tro[op o]f, [th]is, Harpe[r's F]erry) - blocker: illegible; lost with the paper, restorations marked.
 - Side 1, torn clear words (myste.., a.., u.., l..) and the heading "P 31 ?" - blocker: illegible.
 - Side 1, "Edwards Ferry" and "Baltimore" - blocker: illegible; conjectures only.
-- Side 2 - blocker: illegible; two ink lines, fragments only (gr..e, tim.., bo.., ..ganiz.ing), read once.
+- Side 2 - blocker: illegible; two ink lines, fragments only (gr..e, tim.., bo.., [or]ganising). Line 2 re-read on
+  the image on 14 Nov 2026 (`VERIFY_dudout_20261114.md`): GANISING, not GANI[Z?][?]ING.
 - Numeral fragment (image 3) - blocker: no-key-material; tested against the 1864 key in review (`numerals_test.py`):
   the key writes figures as letter-like signs (1 a, 2 d, 3 phi, 4 ff, 5 m, 6 b, 7 nn, 8 c, 9 c; 10 III), so these
   Arabic figures are not its numbers; read as its digit-like letter signs they give no words (11 of 33 groups hold a 2

@@ -178,7 +178,8 @@
    "what": "Verification 5 (plain-bar rows): the scored file was the bare decode; the contributor's joined French reading written out as f50_reading.md: plain 0.6, explicit 0.667. Keeps read at the bar.",
    "result": "partial"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "technique": ["beam/DP decoding"], "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) from key.tsv, transcription_f50.txt and the code groups of Tomokiyo's table (louisxiv0.htm) and METHOD.en.md: bare decode 725/725 letters equal to decoded_f50.txt. Reading side: 13 letters of the line readings come from no sign and are not in [ ], 9 of them the documented qu'il from an unbarred 12; 4 are silent supplies (pr[i]s s-, c[e] que v03, [d]'icy v04, p[a]ssent v06, the last checked on view 112). Open signs re-read on views 111-112: r02 p is the s of Tomokiyo's table; the dots of r04 also stand between plain letters; the mark of r06 23 stands over the 3 only; v05 18 carries a full bar, and its alphabetical slot between qui (12) and vous (26) fits sçavoir. v10 read_share 0.924 unchanged.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -249,6 +250,12 @@
     "date": "2026-10-13",
     "source": "https://github.com/NoAutopilot/cipher-lab",
     "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent decoder, reading-side alignment (4 silent supplies), code list from Tomokiyo's table, open signs re-read on Gallica views 111-112",
+    "date": "2026-11-14"
    }
   ],
   "texts": [
