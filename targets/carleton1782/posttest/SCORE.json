@@ -1,0 +1,75 @@
+{
+  "frozen_units": 200,
+  "classes": {
+    "uncovered word code": {
+      "uncovered_before_clear": 56
+    },
+    "Army List literal": {
+      "agrees": 36,
+      "fails": 6,
+      "no_clear_counterpart": 1
+    },
+    "Clinton candidate lexical constraint": {
+      "agrees": 55,
+      "fails": 3
+    },
+    "Clinton qualified": {
+      "qualified_set_agrees": 21,
+      "qualified_mismatch": 3,
+      "no_clear_counterpart": 1
+    },
+    "already clear on cipher witness": {
+      "already_clear_or_notation": 18
+    }
+  },
+  "word_code_failures": [
+    [
+      "45",
+      "13-14",
+      "in / on",
+      "near"
+    ],
+    [
+      "59",
+      "22-19",
+      "thence",
+      "there"
+    ],
+    [
+      "87",
+      "43-19",
+      "hundred",
+      "thousand"
+    ],
+    [
+      "93",
+      "5-22",
+      "who",
+      "Whom"
+    ],
+    [
+      "132",
+      "9-8",
+      "has",
+      "have"
+    ],
+    [
+      "164",
+      "11-1",
+      "an",
+      "any"
+    ]
+  ],
+  "unqualified_agree": 55,
+  "unqualified_total": 58,
+  "shuffled_control": {
+    "shuffles": 200,
+    "seed": 1782,
+    "mean_agreements": 0.44,
+    "sd": 1.43,
+    "max": 15,
+    "reaching_real": 0,
+    "note": "the 58 units that carried an unqualified prediction; a shuffled code counts only if its new value is also unqualified"
+  },
+  "note": "Frozen predictions unchanged. Spelled groups scored as frozen, so the transcription slip escapedo stays a failure here; see CORRECTIONS.md."
+}
