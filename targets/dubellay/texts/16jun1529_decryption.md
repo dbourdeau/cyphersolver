@@ -6,9 +6,9 @@ du Bellay* t. I (1969), no. 12 p. 41. The clear text around the block is in `p21
 
 *Monsr, si vous trouvez bon l'advis que piecza vous ay envoé de faire semblant que Madame ne fust allée pour conclure,
 et qu'estant là madame Marguerite luy ayt par importunité faict envoyé querir pouoir, il ne vous faudroyt oublyer a
-le faire dater de ce temps là et du lieu ou ser[a le] Roy.*
+le faire dater de ce temps là et du lieu ou sera [le] Roy.*
 
 Unread (NOTES.md, Remaining gaps): in line 7, two signs (ρ with a triangle foot, a small x) between *lieu* and *ou*,
-and one smudged sign before *roy* (where the print has *a le*), have no value. The ꝡ sign (line 0 after *vous*,
+have no value. The smudged sign before *roy* is the open a cup under a blot (re-read on the Gallica image by Brice Dudout, 14 Nov 2026), so the cipher has *ou sera* and only the *le* of the print is not enciphered. The ꝡ sign (line 0 after *vous*,
 line 7 after *roy*) is a null. The signs give *et qu'estant là madame Marguerite* where Scheurer's snippet shows
 "et que ostant madame Marguerite".
