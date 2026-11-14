@@ -98,8 +98,8 @@ Images: the PARES records were fetched on Brice Dudout's machine (Spanish exit i
 in this folder ("Prohibida la reproducción"); the transcriptions here are of the cipher signs only.
 
 **Key.** Imperial Cipher of 1544-1554 as published by Tomokiyo (after Bertomeu Masiá), completed for study only by
-the period table AGS MPD D/00203 no. 243 ("Es del año de 1545", pointed out by Tomokiyo; issue #618). The table is not
-reproduced here. Values never changed after the key was frozen by SHA-256.
+the period table AGS MPD D/00203 no. 243 ("Es del año de 1545", pointed out by Tomokiyo; issue #618). The table's
+image is not reproduced here; the key as frozen, with the source of each value, is `validation/K4.tsv`. Values never changed after the key was frozen by SHA-256.
 
 **Shape atlas.** Figueroa's secretary writes at about 1000 px on PARES, and the vowel marks (dot, two dots, bar,
 small o) and several look-alike bases (X-bar = pre, x-stroke-o = de, sideloop = do, x-curl = no; eight / g / ring /
@@ -126,6 +126,12 @@ Threshold set before: ≥ 0.85 and ≥ best within-class shuffle + 0.30 and ≤ 
 within-class control is the harder one (whole-key shuffles move long code values onto frequent signs). Earlier
 measurements with the same key family on other portions, without the atlas: 0.740 (1554), 0.783 and 0.795 (1547).
 
+**Re-running it (15 Nov 2026, for the review of PR #621).** `validation/` holds the frozen files: the PREREG
+(French, as frozen), the shape labels, the key table `K4.tsv`, the scorer `score_atlas.py` (and the earlier
+`score_k4.py`), the arbitrated transcription of image 06, our transcription of the clear copy of the time, the
+recorded output and the SHA-256 values. `sh validation/rerun.sh` checks the hashes and regenerates the recorded
+output byte for byte (checked here, Python 3.9.6). No AGS image or crop is included (see `validation/README.md`).
+
 **1553 letters: decoded, not read.** See the next section.
 
 ## Five 1553 letters transcribed and decoded (14 Nov 2026, Brice Dudout with Claude)
@@ -137,15 +143,20 @@ each other and to all values; arbitration on the image by a third sub-agent, sha
 signs; the low figures come from line-numbering shifts, realigned on the image). The arbitrated transcriptions were
 frozen by SHA-256 before decoding. Decode: the key frozen before the validation, unchanged (`readings/*_decode.txt`).
 
-**Reading count (Daniel Bourdeau's rule: sure / probable / supplied / unread words; 95 % = read).**
+**Reading count (Daniel Bourdeau's rule: sure / probable / supplied / unread words; 95 % = read).** Holes are
+counted by words (README, 14 Nov 2026): each unread passage in `readings/*_reading.txt` carries its size, `[... n]`,
+estimated from the decode by the reading sheets' rule (max(1, round(decoded characters / 5)), an unlabelled sign or a
+multiple value counting one character; a bare `[...]` is one word). Recounted on 15 Nov 2026 with the sized holes.
+The strict figure is "sure only"; "sure + probable" is given for comparison, since the probable words rest on shape
+pairs or post-validation conjectures.
 
-| letter | words read as sense | sure only | `_check_reading.py` clean share | state |
-|---|---|---|---|---|
-| 1383,242 (28 May) | 66 % | 54 % | 0.375 | decoded, not read |
-| 1383,296 (29 Aug) | 75 % | 42 % | 0.239 | decoded, not read |
-| 1383,364 (30 Aug) | 75 % | 46 % | 0.250 | decoded, not read |
-| 1383,312 (20 Sep) | 60 % | 44 % | 0.206 | decoded, not read |
-| 1383,351-353 (27 Oct) | 72 % | 38 % | 0.144 | decoded, not read |
+| letter | sure only | sure + probable | unread words (sized) | `_check_reading.py` clean share (15 Nov) | state |
+|---|---|---|---|---|---|
+| 1383,242 (28 May) | 54 % (88 / 163) | 66 % | 53 | 0.133 | decoded, not read |
+| 1383,296 (29 Aug) | 40 % (343 / 860) | 72 % | 230 | 0.329 | decoded, not read |
+| 1383,364 (30 Aug) | 46 % (268 / 585) | 75 % | 139 | 0.229 | decoded, not read |
+| 1383,312 (20 Sep) | 44 % (191 / 436) | 60 % | 173 | 0.366 | decoded, not read |
+| 1383,351-353 (27 Oct) | 37 % (1,037 / 2,777) | 70 % | 824 | 0.285 | decoded, not read |
 
 Under the schema's bar (coherent sentences, about 0.60 clean sentences), none is "read in part" yet: holes remain in
 most sentences. "Probable" words need either a shape pair this hand merges at PARES resolution (r-series vs c-series,
@@ -156,21 +167,28 @@ name, kept only when it gives a clean word at least three times. Examples: a 6 j
 `+` = "ne"/"ze" (manera, hazer); the u-shape before an h-series sign = "ch" (dicho, hecho). None of these is applied
 to the key; they are listed so that high-resolution images can test them.
 
-**What the letters say, as far as read.** 29-30 Aug: the French and Turkish fleets in Corsica (San Fiorenzo taken;
-the French fleet at Calvi, the Turkish one at Bonifacio, "more than a hundred miles" apart); Genoa cannot hold the
-island alone and refused the French king's ambassador; the French seem to offer Corsica back if Genoa takes him;
-dispatches go "por la via de Leon con cartas de mercaderes" because of corsairs. 20 Sep: Doria comes with 26 galleys
-and 2000 Germans (figures in clear); a place surrenders on terms; the Genoese will bear half the cost of the
-enterprise of the island, "assi para la seguridad de su tierra como … de Secilia y Cerdenia". 27 Oct: Bonifacio lost;
-the French mean to arm 40 galleys and to call the galleys of Algiers (12 galleys, 18 galiots); galleys of Naples and
-Sicily sent for (Juan de Vega); Andrea Doria named general of the enterprise of Corsica, with a ceremony of the St
-George standard in the cathedral; money to be taken a cambio. 28 May: changes, asientos, the Spinola, what remains
-owed. The contemporary Relaciones (1383,80-81, 89-91, 404) agree where they overlap.
+**What the letters say, as far as read** (words in square brackets are holes or supplied, not read). 29-30 Aug:
+the French and Turkish fleets in Corsica (San Fiorenzo taken; the French fleet at Calvi, the Turkish one at
+Bonifacio, "más de cien [...] de distancia"); the Genoese would not accept "su embaxador", and if they accepted him
+"el rrey les [... 2] la Corcega" (the verb unread); whether the city has the forces to resist France ("esta ciudad
+[...] tiene fuerças para rresistir", the word before tiene unread); dispatches go "por la via de Leon con cartas de
+mercaderes" because of corsairs. 20 Sep: the Prince comes with 26 galleys and 2000 Germans (figures in clear); a
+place surrenders on terms; the Genoese will bear half the cost of the enterprise of the island, "assi para la
+seguridad de [...] tierra como para lo de [... 2] de Secilia y Cerdenia". 27 Oct: Bonifacio lost; the French mean to
+arm up to 40 galleys and to call the galleys of Algiers (12 galleys, 18 galiots); the galleys of Naples and Sicily
+sent for, after a report "del virrey [...] de Vega" (the first name is supplied, not read); a ceremony in the
+cathedral ("yglesia mayor") to give the Prince a standard ("el estandarte de San [...]": the saint's name is a hole);
+the Prince's office in the enterprise rests on holes and on a conjecture, so it is not claimed; money to be taken a
+cambio. 28 May: changes, asientos, the Spinola, what remains owed. The contemporary Relaciones (1383,80-81, 89-91,
+404) agree where they overlap.
 
 **Prior work and collation.** Satoshi Tomokiyo's short drafts in the HTML comments of spanish2.htm agree with our
 openings of all five ("lo que le puedo escrebir en esta", "por esta via de", "con cartas de mercaderes por las
 qua[les]", "del presente", "mercaderes burgaleses"). 296 and 364 share the passage on the French ambassador; 242 and
 351-353 share "a cambio". The duplicate 1383,308-311 (16 Sep) and 1383,265-266 (16 May) are not transcribed yet.
+
+**Shape work in progress (not in this PR's figures).** Since 14 Nov the 7 / y and 8 / ȣ shape pairs of this hand are
+being separated on the images (atlas v4); no new figure is claimed from it.
 
 **Next.** AGS high-resolution reproductions (requested in Brice Dudout's archive register, 28 Oct 2026) would settle
 the dots and the merged shapes; then test the conjectures on 1547 image 04, which is still untouched.

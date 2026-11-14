@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "figueroa1534",
- "title": "Gómez Suárez de Figueroa, Genoa: cipher letters 1534-1557 (AGS Estado 1367-1386, catalogue 744): Imperial Cipher of 1544-1554 key validated on a held-out page with a clear copy of the time (0.873); five 1553 letters transcribed and decoded, 60-75% of words read as sense but holes in most sentences",
+ "title": "Gómez Suárez de Figueroa, Genoa: cipher letters 1534-1557 (AGS Estado 1367-1386, catalogue 744): Imperial Cipher of 1544-1554 key validated on a held-out page with a clear copy of the time (0.873); five 1553 letters transcribed and decoded, not read (37-54% of words sure, holes in most sentences)",
  "documents": [
   {
    "id": "run",
@@ -305,7 +305,13 @@
   {
    "date": "2026-11-14",
    "kind": "reading",
-   "what": "Decode with the frozen key, read by sense under a strict count (sure / probable / supplied / unread): 60-75% of words read per letter, 38-54% sure only; docs/_check_reading.py clean share 0.10-0.38. Phrases such as 'por la via de Leon con cartas de mercaderes', 'la francesa esta en Calvi y la turquesca en Bonifacio', 'la mitad del gasto y la otra mitad le haran ellos' come out, but most sentences keep holes.",
+   "what": "Decode with the frozen key, read by sense under a strict count (sure / probable / supplied / unread): 38-54% sure only (60-75% with probable words); docs/_check_reading.py clean share 0.10-0.38. Phrases such as 'por la via de Leon con cartas de mercaderes', 'la francesa esta en Calvi y la turquesca en Bonifacio', 'la mitad del gasto y la otra mitad le haran ellos' come out, but most sentences keep holes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "verification",
+   "what": "For the review of PR #621: the frozen files of the 14 Nov measurement added in validation/ (PREREG, shape labels, key table K4.tsv, scorer, arbitrated transcription of image 06, our transcription of the clear copy of the time, recorded output, SHA-256 values); validation/rerun.sh checks the hashes and regenerates the recorded output byte for byte (0.873; within-class controls max 0.477; whole-key max 0.449). Unread passages of the five 1553 readings sized by words from the decode (README, holes counted by words): 1,419 unread words in 4,821; sure only 37-54% per letter. Content summaries cut back to what is read. The 7/y and 8/ȣ shape work of 14-15 Nov (atlas v4) is ongoing; no new figure is claimed from it.",
    "result": "partial"
   }
  ],
@@ -313,7 +319,7 @@
   "class": "not read",
   "key": "partial",
   "method": "read after matching with key from external sources",
-  "method_basis": "The key of the Imperial Cipher of 1544-1554 (published by Tomokiyo after Masiá, completed by the 1545 AGS table) was matched to Figueroa's hand with a shape atlas and validated on a held-out page with a clear copy of the time (0.873). Five 1553 letters decode with the frozen key into Spanish with holes: 60-75% of words read as sense, but holes remain in most sentences at PARES resolution (about 1000 px).",
+  "method_basis": "The key of the Imperial Cipher of 1544-1554 (published by Tomokiyo after Masiá, completed by the 1545 AGS table) was matched to Figueroa's hand with a shape atlas and validated on a held-out page with a clear copy of the time (0.873). Five 1553 letters decode with the frozen key into Spanish with holes: 37-54% of words sure (60-75% with probable words, holes counted by words), and holes remain in most sentences at PARES resolution (about 1000 px). The measurement can be re-run from validation/ (rerun.sh).",
   "contribution": [
    "catalogue correction",
    "transcription"
@@ -377,7 +383,7 @@
     "state": "decoded, not read",
     "language": "es",
     "summary": "Changes (a cambio), asientos and the Spinola; what remains owed; opening agrees with Tomokiyo's draft.",
-    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule): 66% of words read as sense, 54% sure only; docs/_check_reading.py clean share 0.375. Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
+    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule; holes counted by words, 53 unread words sized from the decode, 15 Nov 2026): 54% (88 of 163 words) sure only, 66% with probable words; docs/_check_reading.py clean share 0.133 (15 Nov 2026, sized holes). Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
    },
    {
     "doc": "1383_312",
@@ -387,8 +393,8 @@
     "reading": "readings/1383_312_reading.txt",
     "state": "decoded, not read",
     "language": "es",
-    "summary": "Surrender of a Corsican place under terms; Doria with 26 galleys and 2000 Germans; Genoa to bear half the cost of the enterprise of the island, for the safety of Sicily, Sardinia and Naples.",
-    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule): 60% of words read as sense, 44% sure only; docs/_check_reading.py clean share 0.206. Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
+    "summary": "Surrender of a Corsican place under terms; the Prince with 26 galleys and 2000 Germans (figures in clear); the Genoese to bear half the cost of the enterprise of the island, for the safety of their land and of Sicily and Sardinia.",
+    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule; holes counted by words, 173 unread words sized from the decode, 15 Nov 2026): 44% (191 of 436) sure only, 60% with probable words; docs/_check_reading.py clean share 0.366 (15 Nov 2026, sized holes). Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
    },
    {
     "doc": "1383_364",
@@ -398,8 +404,8 @@
     "reading": "readings/1383_364_reading.txt",
     "state": "decoded, not read",
     "language": "es",
-    "summary": "French fleet at Calvi and Turkish fleet at Bonifacio; Genoa cannot keep Corsica alone; Genoa refused the French king's ambassador; dispatches sent by way of Lyon with merchants' letters.",
-    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule): 75% of words read as sense, 46% sure only; docs/_check_reading.py clean share 0.25. Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
+    "summary": "French fleet at Calvi and Turkish fleet at Bonifacio, more than a hundred [...] apart; whether the city has the forces to resist France (a word unread); dispatches sent by way of Lyon with merchants' letters.",
+    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule; holes counted by words, 139 unread words sized from the decode, 15 Nov 2026): 46% (268 of 585) sure only, 75% with probable words; docs/_check_reading.py clean share 0.229 (15 Nov 2026, sized holes). Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
    },
    {
     "doc": "1383_296",
@@ -409,8 +415,8 @@
     "reading": "readings/1383_296_reading.txt",
     "state": "decoded, not read",
     "language": "es",
-    "summary": "Landing of the French and Turkish fleets in Corsica (San Fiorenzo taken); the prince of Salerno; the French claim to restore Corsica if Genoa accepts their ambassador; news of the Emperor's health and army.",
-    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule): 75% of words read as sense, 42% sure only; docs/_check_reading.py clean share 0.239. Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
+    "summary": "Landing of the French and Turkish fleets in Corsica (San Fiorenzo taken); the prince of Salerno; the Genoese would not accept the ambassador, and if they did the King would [...] Corsica to them (the verb unread); the Emperor's health and the army of Piedmont to be reported.",
+    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule; holes counted by words, 230 unread words sized from the decode, 15 Nov 2026): 40% (343 of 860) sure only, 72% with probable words; docs/_check_reading.py clean share 0.329 (15 Nov 2026, sized holes). Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
    },
    {
     "doc": "1383_351-353",
@@ -420,8 +426,8 @@
     "reading": "readings/1383_351-353_reading.txt",
     "state": "decoded, not read",
     "language": "es",
-    "summary": "Loss of Bonifacio; French plans to arm 40 galleys and call the Algiers galleys; galleys of Naples and Sicily sent for; Andrea Doria named general of the enterprise of Corsica with a ceremony of the St George standard; money taken a cambio.",
-    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule): 72% of words read as sense, 38% sure only; docs/_check_reading.py clean share 0.13. Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
+    "summary": "Loss of Bonifacio; French plans to arm up to 40 galleys and call the Algiers galleys; galleys of Naples and Sicily sent for after a report of the viceroy [...] de Vega; a ceremony in the cathedral to give the Prince a standard (the saint's name is a hole); money taken a cambio.",
+    "note": "Strict reading count (sure / probable / supplied / unread words, Daniel's 95% rule; holes counted by words, 824 unread words sized from the decode, 15 Nov 2026): 37% (1,037 of 2,777) sure only, 70% with probable words; docs/_check_reading.py clean share 0.285 (15 Nov 2026, sized holes). Most read words depend on shape confusions of this hand or on post-validation conjectures for unlabelled signs (NOTES.md)."
    }
   ]
  }
