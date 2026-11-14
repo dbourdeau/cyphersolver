@@ -1,0 +1,11 @@
+# The Entick page–row code
+
+The matching book is John Entick, *The New Spelling Dictionary*, London, 1781, [Internet Archive 11280377bsb](https://archive.org/details/11280377bsb). This identifies a setting that fits; an unexamined printing with identical pages is not excluded.
+
+For a pair P-R, open printed page P and count printed lines from the first line below the running head, separately down each column. Count continuation lines. Both columns are candidates; the cipher does not select a column. The alphabetic word list is followed by a market-town list used for Boston, Portsmouth, Windsor and York. The image for printed page P is at `https://archive.org/download/11280377bsb/page/n{P+31}_w1400.jpg` for this scanned copy.
+
+The sender often uses a headword for an inflected word, a fragment (Albion → Albany), or a sound-alike (Slay → sleigh, Inn → in, Bee → be). These transformations are interpretations, not instructions recovered from a surviving key sheet. Apparent repairs include 32-12 → 23-12 (at), 64-12 → 46-12 (by), 176-26 → 175-26 (house) and 242-8 → 142-8 (five). Every repair remains marked. The originals are needed to decide whether wrong figures came from the encoder or the later copyist.
+
+`key.tsv` is an **occurrence-aware lookup table**, not a deterministic key: the same pair can yield different grammatical forms, and the unmarked column remains ambiguous. Fields give the written pair, evidence at the row, proposed word, grade, note and occurrence. H means the cited row supplies the headword/stem, I an inference/repair, M an unresolved or doubtful value. H certifies dictionary support only; it does not certify sentence sense. The complete aligned evidence, including clear items and the extra sign, is in `lookup_occurrences.tsv` and the four decryption files.
+
+The corrected pair **218-11** in No. 3 is **Magnanimous, left column row 11**. The right-column row is Maintenance. Count from Magician = left row 1: the automatic crop labels used during research wrongly include page furniture. The LAC cipher copy reads 218, not the previously transcribed 216; two AI readers independently checked this correction on 12 November 2026. The inference of a possessive in “the General['s] magnanimous clemency” remains bracketed.
