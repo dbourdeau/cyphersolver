@@ -69,14 +69,14 @@
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#the-documents">The documents</a><a href="#the-code">The code</a><a href="#what-the-glossed-letters-say">What the glossed letters say</a><a href="#method-and-what-remains-open">Method and what remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance" data-term-ok>
-<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from adjacent plaintext &middot; partial (43% of the cipher)</span></p>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Existing decipherment (R9571, R9589) &middot; the other 23 decoded, not read</span></p>
 <dl>
 <dt>The documents</dt><dd>Naples ambassador Fabrizio Ruffo, principe di Castelcicala, to the Marchese di Circello (foreign minister) and, in 1823, to his successor Medici; 1816&ndash;1823. The catalogue held two entries (166, 167) for what is one series; &ldquo;Ciscello&rdquo; misreads the recipient.</dd>
 <dt>Where</dt><dd>Archivio di Stato di Napoli, Ministero degli affari esteri, busta 2337; DECODE R9553&ndash;R9589 (login required).</dd>
 <dt>The cipher</dt><dd>A two-part numeric code of about 2,450 groups for syllables, words and names; homophonic, with short alphabetical runs. Groups written with a fifth figure are nulls.</dd>
 <dt>How it was read</dt><dd>Three 1823 Paris letters (R9569, R9571, R9589) in the same code were deciphered between the lines, as were ten lines of despatch 3874 (R9566). Aligning these glosses group by group gave the key; an earlier pass on 21 September had found no key.</dd>
 <dt>What it says</dt><dd>Despatch 3874 (Paris, 1 December 1816) reports a conversation between the French interior minister and the Spanish minister Onis about the cession of the Floridas.</dd>
-<dt>Still open</dt><dd>The key values 46.7% of the groups in the target letters (key coverage, not reading); about a third of its values are inferences, and no letter is yet decrypted in full.</dd>
+<dt>Still open</dt><dd>The key values 46.7% of the groups in the target letters (key coverage, not reading); about a third of its values are inferences, and no letter without a gloss is decrypted.</dd>
 </dl>
 </div>
 
@@ -114,7 +114,8 @@
 
 <h2 id="method-and-what-remains-open"><span class="num">04</span> Method and what remains open</h2>
 <p>The 27 records were fetched from DECODE and transcribed from full-resolution crops by two transcription agents: 9,428 groups in the 25 letters in the main code, 1,315 distinct. The glosses were aligned group by group, and the key was extended by hand from repeated contexts. Its 162 values are graded in <code translate="no">key.tsv</code>: 90 taken directly from a contemporary gloss (G), 18 glossed and confirmed in a second context (X), and 54 inferred here and unconfirmed (I). With them, 46.7% of the groups in the target letters get a value (4,340 of 9,286 counted without the five-figure nulls). Scoring candidate syllables for each unknown group with an Italian 5-gram model did not separate the candidates. The known neighbours are too sparse, and the segmentation into syllables or words is unknown.</p>
-<p>So <b>no letter is decrypted in full</b>. The partial decode (<code translate="no">reading_partial.txt</code>) is a working file, not an edition of the text. Some I values are surely wrong: &ldquo;il Sr troppo l d&rsquo;An ta&rdquo; in R9579 must be a name. The next step is to decrypt the 1816 letters one at a time, around the Floridas&ndash;Cuba&ndash;Decazes themes the gloss supplies, using the alphabetical runs to bracket unknown groups. The code book itself, if it survives in the Esteri or the Segreteria di Stato papers of the ASNa, would settle it at once. The consular keys of Borbone 1666 on DECODE (R9532&ndash;R9541) are from 1859&ndash;60 and do not apply.</p>
+<p>Two more records carry traces of a gloss: faint pencil words on pp. 2&ndash;3 of R9563 (five candidate values, all uncertain) and two words on R9561; they are too few to read either despatch. In November 2026 Brice Dudout checked the key against the glosses in the transcripts (G 180 of 215, X 30 of 41, I 54 of 70 values found in order; the misses are abbreviations and unglossed groups) and corrected three places of R9571 and one of R9589 from the code groups under the gloss. The DECODE images were not re-opened for this, by him or by the project. One inferred value, 1050 = <em>ci&ograve;</em>, is doubtful.</p>
+<p>So <b>none of the 23 unglossed letters is decrypted</b>. The partial decode (<code translate="no">reading_partial.txt</code>) is a working file, not an edition of the text. Some I values are surely wrong: &ldquo;il Sr troppo l d&rsquo;An ta&rdquo; in R9579 must be a name. The next step is to decrypt the 1816 letters one at a time, around the Floridas&ndash;Cuba&ndash;Decazes themes the gloss supplies, using the alphabetical runs to bracket unknown groups. The code book itself, if it survives in the Esteri or the Segreteria di Stato papers of the ASNa, would settle it at once. The consular keys of Borbone 1666 on DECODE (R9532&ndash;R9541) are from 1859&ndash;60 and do not apply.</p>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>

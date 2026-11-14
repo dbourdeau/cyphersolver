@@ -34,7 +34,7 @@
     "image_quality": "fair",
     "notes": "2397 groups seen (81 of them partly), 27 more wholly lost in the gutter, 35 words in clear (not counted). ct.txt keeps the partly seen groups with '~' for the cut digits. Third pass 5 Nov: an interlinear line on f.150v moved to its caret and a spurious duplicate group removed."
    },
-   "read": "read",
+   "read": "read in part",
    "places": {
     "from": "Montréal",
     "to": "Versailles"
@@ -255,7 +255,8 @@
    "result": "worked"
   },
   {"kind": "verification", "date": "2026-11-14", "technique": ["key matching", "other"], "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) reading only key/key274.json with key/overrides.json, run on transcription.txt: 2401 legible number groups, none without a cell; the decoded syllables align with the letters of reading.md at 97.5% (0.958 to 0.996 per folio); the larger differences are clear words, gutter-lost groups and the open groups of gaps.json, except f. 152r, where 672 672^ 51 51 494 gives 'me me t t un' and reading.md has 'me mettroit' without a mark (494 = un, a confirmed cell). README read bar recount: research/reading_audit/v10_relabel.measure on reading.md gives 0.937 over 1531 words; the recorded read_share 0.96 is the share of groups (tools/stats.py), not of words, so by the README the letter is under the 0.95 word bar.", "result": "worked"},
-  {"kind": "verification", "date": "2026-11-14", "technique": ["other"], "what": "Project check of PR #565 (Brice Dudout): his decoder re-run (2401 groups, none unkeyed, 97.5% of decoded letters align with reading.md); f.152r and the first seven lines of f.151v compared group by group with LAC image e000875758 (about 240 groups, all agree; the inserted 672 above the line on f.152r line 12 is on the image). The unmarked emendation on f.152r (672 672^ 51 51 494 = me me t t un, read 'me mettroit') is now marked 'me mett[roit]' in reading.md. Word measure (README read bar) on the reading body: 1383 words, 100 holes, 0.933 < 0.95; the recorded 0.96 was a share of groups. Class changed from read to read in part; every remaining gap keeps its outside blocker (binding, open codes).", "result": "worked"}
+  {"kind": "verification", "date": "2026-11-14", "technique": ["other"], "what": "Project check of PR #565 (Brice Dudout): his decoder re-run (2401 groups, none unkeyed, 97.5% of decoded letters align with reading.md); f.152r and the first seven lines of f.151v compared group by group with LAC image e000875758 (about 240 groups, all agree; the inserted 672 above the line on f.152r line 12 is on the image). The unmarked emendation on f.152r (672 672^ 51 51 494 = me me t t un, read 'me mettroit') is now marked 'me mett[roit]' in reading.md. Word measure (README read bar) on the reading body: 1383 words, 100 holes, 0.933 < 0.95; the recorded 0.96 was a share of groups. Class changed from read to read in part; every remaining gap keeps its outside blocker (binding, open codes).", "result": "worked"},
+  {"kind": "verification", "date": "2026-11-14", "what": "Round 13 claims review: profile brought into line with NOTES. fraction_read_source 0.971 -> 0.970 with the restored groups (2351 of 2424); codes_open.tokens_open 24 -> 26 (gaps.json key f150v.23, the count check in NOTES); documents[0].read read -> read in part (outcome.class). No reading changed.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -273,11 +274,11 @@
   ],
   "fraction_read": 0.96,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription.txt + gaps.json + restored.json via tools/stats.py: cipher groups; groups cut by the binding or unread counted as unread; 0.960 excludes 25 gutter-cut groups restored from visible digits + context (0.971 with them)",
+  "fraction_read_source": "transcription.txt + gaps.json + restored.json via tools/stats.py: cipher groups; groups cut by the binding or unread counted as unread; 0.960 excludes 25 gutter-cut groups restored from visible digits + context (0.970 with them: 2351 of 2424)",
   "codes_open": {
    "open": 9,
    "total": 9,
-   "tokens_open": 24
+   "tokens_open": 26
   },
   "verification": [
    "key confirms",
