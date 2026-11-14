@@ -114,6 +114,28 @@ Gascon captains away. The second half: La Saussaie, the sieur de la Fontaine, th
 with 2,000 muids of salt or three Huguenot councillors' offices), Alincourt and Gouffiers, the friends of La
 Roussière and of la Magdaleine.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) wrote a decoder that reads only
+`key.json` and `transcription/`: all 2,152 groups decode to one of their label's values (labels `L` and `M` are not
+in the key, as `legend.md` says), every decrypted line is the join of its group values, and all 216 rows of
+`glosses_multivalued.tsv` point at the right group. Re-run here: same figures. No key correction.
+
+`decryption/` synced. At the ten groups where the gloss contradicts the first decode and the readings follow the
+gloss (issues #95, #99), `decryption/` had kept the first decode. He changed them on six pages, each new value being
+one of the key's values for the label: 234r l. 7 *qui*; 236r l. 22 *m*, l. 25 *ss*; 236v l. 4 *m*, l. 7 *que*,
+l. 11 *pour*; 237r l. 1 *de*; 237v ll. 3-4 *monsieur*; 238r l. 20 *m*. Checked here: the ten places are the ten
+"contradicts" rows of the gloss table, and the readings already had these values.
+
+Images (Gallica canvases 241-242), his reading, not repeated here. He reads the gloss over 234r l. 3 g. 11 (CN,
+recorded "unclear") as the 8-shaped *que* sign that is counted as agreeing on 236r l. 1; on that reading 234r would
+have 2 unconfirmed groups of 251 (0.8%) instead of 3. The row of `glosses_multivalued.tsv` is Michael Brackx's record
+and is left as it is; the figure above stays 3 of 251 (1.2%), the more cautious one, and either is under the 3% limit.
+234r l. 12 DAN and BQ are not settled. A blind sample of 235r ll. 5-8 agreed with the transcription on 35 of 36
+groups (the 36th he had left unread).
+
+Read share: `v10_relabel.measure` equals the recorded `read_share` on all ten pages; no class changes.
+
 ## Remaining gaps
 - multi-valued labels on the nine pages other than 234r (E2, M30, QUI, N18, DA and others) - blocker: no-key-material; every multi-valued group on all ten pages checked against the glosses (issues #95, #99): 114 of 2,152 groups are not confirmed by a gloss (104 none or unclear, 10 contradicted and followed in the readings), and nothing else on the leaves settles them
 - f. 236v, most of the page (read share 0.431) - blocker: illegible; show-through and faded ink, fragmentary glosses, verso subtraction failed to register
