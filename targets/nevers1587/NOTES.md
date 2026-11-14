@@ -106,6 +106,23 @@ DECODE R4285/R4286: "Non-decrypted", sender unknown, R4286 origin "Rome" (wrong)
 Guise. Not in *Les Mémoires de M. le duc de Nevers* (1665; Gallica `bpt6k6435941k`, `bpt6k8717151d`, full-text search
 for Randan, Chenonceau, Espernon: no hit on these letters). No reading anywhere before this session.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the cipher items from
+`key.md` and `ciphertext.txt` alone: 24 of 27 units take a value that the key or the writer's-forms column allows; the
+other three (dateline `z` = n, dateline `ι` = d, `ƥ` in the run as a null) are the readings argued above. Re-run here:
+same. No key correction.
+
+He read f. 28v against `reading.md` on the Gallica image (btv1b90605473, canvas 53) and corrected two places in the
+clear text. Both were checked here on the same image at full size:
+- "il y a quelques jours [?]": after *quelques* a word is struck through and *jours* is written above it. There is
+  no unread word; the `[?]` is removed.
+- "sans avoir eu cest heur que de vous entretenir": *eu* stands on the leaf and had been dropped.
+
+Read share (`v10_relabel.share` on `reading.md`, by letter): f. 28 0.989 before, 0.991 after (468 words, 4 holes);
+f. 30 0.997 (295 words, 1 hole). `read_share` now carries these in place of the whole-file 0.992. Both letters stay
+read. Nothing on the image settles `ƥ`. f. 28r was not re-read on the image by him or here.
+
 ## Remaining gaps
 - f. 30 run, sign 6 (ƥ, after the null ∞) - blocker: too-short; key value a gives no sense, taken as a null; one occurrence, nothing to test it against
 

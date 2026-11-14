@@ -21,7 +21,7 @@ beg you very humbly to believe so; I know how much respect I owe in those quarte
 without involving myself further. As for that, Monseigneur, about which it pleased you to want to take too much
 trouble for me some days ago [?], it is not from then nor from this hour that I recognise the very great obligations I
 have to you, but from all time, you doing me too much honour in loving me, as I know; therefore I will tell you freely
-that I can make no resolution in this matter without having the good fortune to talk with you for an hour, and
+that I can make no resolution in this matter without having had the good fortune to talk with you for an hour, and
 meanwhile I beg you in all humility to leave things as they are. God, if it please Him, will keep me such as I ought
 to be, and make me more fortunate than I have been until this hour; and whatever I am, I shall say with truth [only]
 that I am your very faithful servant, begging you very humbly always to love me as such and keep me in your good
