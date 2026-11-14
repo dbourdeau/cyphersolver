@@ -268,3 +268,29 @@ not a complete No.2 vocabulary. Complete cipher/literal/reading files exist for 
 are measured with the unmodified `v10_relabel.share` and retain conjectures as holes; the denominator excludes
 operator headings and possible post-signature check tails, which remain explicitly documented. These are not
 whole-ledger percentages. `profile.json` remains in progress with target-wide fraction unknown.
+
+### Integration check (14 Nov 2026, PR #576)
+
+Verified from the files by the integrating reader (an AI reader, not a person).
+
+- **Reproduced.** `decode_selected.py` (176 substitutions) and `decode_complete.py` (180) re-run and leave every file
+  unchanged; `SHA256SUMS` and `INPUT_SHA256SUMS` match; `measure_readings.py` gives the five body counts. A second
+  decoder written from the two selected key files, without the contributor's code, gives the same 180 substitutions
+  on the same lines.
+- **Strict read share per telegram** (body words; headings and check tails outside): U1 34 of 34, U2 25 of 26 (0.962),
+  McPhail 261 of 264 (0.989), Halleck to Grant 58 of 58, U3 35 of 41 (0.854). The contributor counted strictly; the
+  figures stand. World for the clerk's Word is a one-letter emendation and keeps its word. No pooled figure is given:
+  the ledger has about 810 more telegrams that were not attempted.
+- **Images** (Huntington, `cdm16003.contentdm.oclc.org` IIIF, no bot check): Book No. 2 page 20, all 13 entries used
+  (Pacific, Palmetto, Palmyra, Paxton, Pearl, Pedlar, Pekin, Pigeon, Pike, Pine, Poplar, Queen, Quicken) agree; ledger
+  p. 4, the 34 words of U1 agree, and the clerk did write "Word". 47 of 47. The same page shows Pauline = Camp and
+  Quarrel = Defeat in Book No. 2, which do not read in U3, as the addition says. Not re-checked: page 26 (Allen = 1),
+  the other key pages, pp. 6, 7, 9 and 10 of the ledger, the Official Records pages, the Stager register.
+- **What kind of result.** A reading with surviving period books (outcome method: read after matching with key from
+  external sources), with the earlier readings visible: U1, the McPhail report and Halleck to Grant are printed in
+  clear in the Official Records. No test was declared and none is claimed. The reviews in `REVIEW.md` are the
+  contributor's own AI agents'.
+- **One key, one entry.** `civilwar1862`, `union1864`, `army1865` and `ammen1864` hold other War Department telegrams;
+  none holds mssEC 19 pp. 4-10. The Kanawha telegrams (`kanawha1863`) use a different route and word list.
+- **Status.** Still in progress, no page: U3 waits on Cipher Book No. 10 (blocker: no key material), and the rest of
+  the ledger is not attempted, which is workable.

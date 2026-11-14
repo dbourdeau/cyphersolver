@@ -388,9 +388,20 @@
    "kind": "literature search",
    "what": "Located and visually checked a second printed McPhail report in OR I/32 II p394. It agrees with ledger Java/Johnston, has Greer’s [?], lacks Hoke, and retains 780 Maryland Line unlike ledger 700 infantry. Three-witness comparison added; no attribution of the divergence to a particular clerk/editor.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Integration check (PR #576) by an AI reader of the project, not a person: both decoders re-run, input and payload hashes match, measure_readings.py reproduces the five body counts (U1 34/34, U2 25/26, U3 35/41, McPhail 261/264, Grant 58/58); a second decoder written from the two selected key files gives the same 180 substitutions on the same lines. Images: the 13 Book No. 2 page 20 entries used (Pacific, Palmetto, Palmyra, Paxton, Pearl, Pedlar, Pekin, Pigeon, Pike, Pine, Poplar, Queen, Quicken) and the 34 words of U1 on ledger p. 4 (the clerk's Word included) agree, 47 of 47. Not re-checked: page 26 (Allen = 1), the other key pages, the Official Records pages and the Stager register.",
+   "result": "worked"
   }
  ],
- "outcome": {"validation": {"date": "2026-11-13", "verdict": "not applicable", "notes": "No key was recovered from the ciphertext: the code-word values come from the period cipher books (Nos. 1, 2 and 9) and printed parallels, so there is no fitted key to test against chance"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-13",
+   "verdict": "not applicable",
+   "notes": "No key was recovered from the ciphertext: the code-word values come from the period cipher books (Nos. 1, 2 and 9) and printed parallels, so there is no fitted key to test against chance"
+  },
   "method": "read after matching with key from external sources",
   "method_basis": "Message-specific surviving book matches: existing No.9 for T1-T11, matched No.2 for U1 and pp9-10, known No.1 for U2; most ledgers and No.10 U3 remain open.",
   "contribution": [
