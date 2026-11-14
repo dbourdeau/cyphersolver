@@ -70,6 +70,13 @@ promises Dunod carried between "that court" and Bucharest have turned out mostly
 Gegenbey was killed through a false friend's treachery and his head sent as a gift, and that his companion Gityk is
 still more active "in the East".
 
+## Independent verification by Brice Dudout (PR #565, 14 Nov 2026)
+
+Brice Dudout (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the 70 runs of `runs.tsv` from `key.tsv`
+alone: 60 give the gloss letter for letter (u/v, ae/e equal), the other 10 are the two code groups and the eight slips listed above.
+No key correction. Re-run here, plus a separate decoder written here: the same 60 of 70. The read share 0.986 stands. The WBC scans were
+not fetched (proof-of-work page).
+
 ## Remaining gaps
 - code group 202 - blocker: no-key-material; occurs once, no gloss (the contemporary decipherer left it too, and a "+" marks the line), no key table, and the clear word before it ("Damis"?) is itself unclear
 ## Escalation

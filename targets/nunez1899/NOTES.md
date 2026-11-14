@@ -107,6 +107,15 @@ holes are the guess for ampida, the 2 words not rendered (te se) and the 5 suppl
 The contributor's 97% (111 of 114 units) leaves the supplied words out. 36 of the 65 code values rest only on the
 contemporary translation of this very telegram, which is why the method is "read from existing decipherment".
 
+## Independent verification by Brice Dudout (PR #565, 14 Nov 2026)
+
+Brice Dudout (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the telegram from `key.tsv` alone: all 22
+lines identical to `decryption_9926.txt`, no key correction; he re-read L04 "curadela" on the CEHM scan. Re-run here: same result. The
+CEHM scan p. 2 was compared with L01-L07 here (41 words, all as transcribed). The recorded read share 0.933 (read in part) follows the
+README rule and stands. Tooling note: `research/reading_audit/v10_relabel.measure` gives 0.990 on `reading_9926.md`, because
+`v2_score.holes` does not treat the `{+x}` and `{-x}` markers as holes; `v10_relabel.py --apply` would wrongly move this telegram to
+"read" and must not be run on it until the tool counts those markers.
+
 ## Remaining gaps
 
 - ampida (L06) - blocker: no-key-material; the contemporary translator left it blank; context and Limantour's answer

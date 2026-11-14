@@ -27,12 +27,20 @@ The cipher: homophonic symbol cipher with word dividers (|), signs for tt and ss
 - Italian per-letter score of the decode: -1.78 (`it-cinquecento`; -1.99 `it-modern`), against a best of -4.30 (mean -5.30) over 200 keys of the same shape with the letters
   shuffled among the sign classes (-6.66 / -8.49 under `it-modern`).
 - Compared with the Gallica image (IIIF crop of f. 292r, git-ignored): the first nine words of line 1 agree sign by sign (the stroke, 231 and the word divider included), and the
-  code "64" before the second "Monsignor Beria" is two digits, as he has it. The whole transcription was not re-checked by eye; his is a first transcription.
+  code "64" before the second "Monsignor Beria" is two digits, as he has it. (Brice Dudout, 14 Nov 2026, finds it undecided: see below.) The whole transcription was not re-checked by eye; his is a first transcription.
 - His own controls (on his page, not re-run): 16 synthetic ciphers of the same size solved in 15 cases (97-100% of letters); 24 shuffled versions of the text scored -1294 to -1236 against -1073.7 for the real one; 5 of 8
   seeds gave the identical reading. The same key reads the cipher line of f. 294 (claimed; not checked here).
 - Small points for him: the page says 53 words and lists 54; the viewer's last line range stops before "incertissimo".
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is Italian of 1637 (not Spanish). Satoru's reading: plain 0.333, explicit 0.667 on six sentences; the holes are the five name codes (no key material), one unread sign and 'dattone?'. Each sentence builds around the codes: only scattered codes open. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
+
+## Independent verification by Brice Dudout (PR #565, 14 Nov 2026)
+
+Brice Dudout (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded `cipher_words.tsv` from `key.json` alone (47
+of 54 words as published; the other 7 are the known abbreviations, query marks and open signs) and re-read the doubtful signs on the
+Gallica image of f. 292r: 231 and 31 are digits, though the writer's 1 has the shape of the e homophone; "li?" is a crossed 3, distinct
+from the 3 of 31, with no value; the second sign of "64" is written exactly like ꝗ, so the group could be two key signs (a, m) as well as the code 64: undecided, "[64?]" stays a guess; dattone as transcribed. No key correction. His
+decoder re-run here gives the same figures; the image re-reading is his (not repeated). The read share 0.926 (read in part) stands.
 
 ## Remaining gaps
 

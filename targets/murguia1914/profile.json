@@ -160,7 +160,9 @@
    "kind": "verification",
    "what": "Integration check by the repository: heldout.py (0.842 on page 4, shuffled max 0.154) and check_marks.py reproduced; own decoder from key_frozen.tsv gives the same 23 decryptions; all 217 groups of S16-S23 compared with the CEHM image .0004 (typed copy, pencil layer visible): all agree. Own statistical check (es-modern): -2.104 per letter against -6.186 for random keys (z 9.3), pass. Strict word share 99 of 104 = 95.2% (the supplied [por] counts as a hole); class read, key partial.",
    "result": "worked"
-  }
+  },
+  {"kind": "verification", "date": "2026-11-14", "technique": ["key matching"], "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) reading only key.tsv, run on the 23 segments of transcription_LXVIII-1.14.1943.1.txt: 488 groups, the decoded segments identical to decryption_LXVIII-1.14.1943.1.txt in all 23. Key layout checked: each decade is a reversed alphabet block (10-19 and 20-29 a j i h g f e d c b; 30-39 and 40-49 l rr r q p o ñ n m ll; 50-59 and 60-69 s . . z y x w v u t), and every value from the pairs fits it. CEHM scan p. 1 re-read: groups 88 and 97 are clearly typed, and the S11 over-strike is 58 or 68 (both u). Reading note: S13 decodes 'tomarla' (69 35 38 10 42 40 10); with 88 = 'por' the sentence needs no supplied [por] ('no habiéndonos sido posible tomarla por ser el enemigo ...'), but 78 is already por and 88 occurs once, so this stays a guess. Read bar: the recorded 0.952 (99 of 104 words) follows the README; research/reading_audit/v10_relabel.measure returns 0.985 because v2_score.holes does not count the {+x} restorations.", "result": "worked"},
+  {"kind": "verification", "date": "2026-11-14", "technique": ["key matching", "other"], "what": "Project check of PR #565 (Brice Dudout): his independent decoder re-run (23 segments, 488 groups, identical to the published decryption). CEHM scan p. 1 (LXVIII-1.14.1943.1.0001) compared with S10-S15: 120 groups, all as transcribed; 88 (S13) and 97 (S12) clearly typed; S11 over-strike 58/68 seen. His suggestion 88 = por is recorded as a possibility only and not counted (78 is already por; 88 occurs once). The recorded 0.952 (99 of 104 coded words) stands; v10_relabel.measure gives 0.985 because v2_score.holes ignores {+x} markers (tooling note).", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -241,7 +243,8 @@
     "note": "one independent AI language-model agent, blind from the scans: sign check, scripts re-run, reading read as sentences against the translation; no human palaeographer",
     "date": "2026-11-13",
     "source": "PR #513 (dbourdeau/cyphersolver)"
-   }
+   },
+   {"who": "dudout", "role": "verification", "note": "independent re-run of key.tsv on all 488 groups (identical), key layout check, scan re-read of groups 88, 97 and S11, read-bar recount; VERIFY_dudout_20261114.md", "date": "2026-11-14"}
   ],
   "texts": [
    {

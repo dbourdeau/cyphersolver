@@ -7,7 +7,7 @@
 <meta name="description" content="A letter of 8 October 1637 from Fra Guglielmo Vizani on Prinkipo to the French ambassador at Constantinople, with eight lines in a homophonic symbol cipher." data-full="A letter of 8 October 1637 from Fra Guglielmo Vizani on Prinkipo to the French ambassador at Constantinople, with eight lines in a homophonic symbol cipher. Satoru transcribed it, recovered the key and read it: 4,000 scudi promised for Monsignor Beria, who is close to the Patriarchate and hopes the Patriarch will be replaced within two months. Verified here; six name codes stay open.">
 <link rel="stylesheet" href="style.css?v=02aff2b7">
 <meta name="date" content="2026-10-01">
-<meta name="last-modified" content="2026-11-07">
+<meta name="last-modified" content="2026-11-14">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -58,9 +58,9 @@
   <h1>Fra Guglielmo Vizani to the Comte de C&eacute;sy, 1637</h1>
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">BnF Fran&ccedil;ais 16158, ff. 292&ndash;294. A letter from Prinkipo, off Constantinople, to the French ambassador, with eight cipher lines. The project listed it as having no transcription. On 1 October 2026 Satoru sent a transcription, a key and a reading, made with Claude; this page checks them against the image and against shuffled keys.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-01">1 October 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-01">1 October 2026</time> &middot; updated <time datetime="2026-11-14">14 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#extkey">read after matching with key from external sources</a> &middot; Extent: partial (99% of the cipher) &middot; <a href="atlas.html#slug=vizani1637">On the map</a></p><!-- /outcome -->
-<p class="credits">Contributed by <a href="contributors.html#satoru">Satoru</a> (solution, identification)</p><!-- /credits -->
+<p class="credits">Contributed by <a href="contributors.html#satoru">Satoru</a> (solution, identification) and <a href="contributors.html#dudout">Brice Dudout</a> (verification)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span>key matched</span></div>
 </section>
 <main>
@@ -110,7 +110,7 @@
 <ul>
 <li><b>Re-decoding.</b> His key applied to his 54 transcribed words (<code translate="no">dec.py</code>) gives the plain he lists for 46 of 48 words. The other two, both <i>monsignor</i>, lose an s and an n in his glyph strings (an abbreviation, or a slip in the transcription); the rest are name codes.</li>
 <li><b>A control.</b> The decode scores &minus;1.78 per letter under a model of sixteenth-century Italian, against &minus;4.30 for the best of 200 keys of the same shape with the letters shuffled among the sign classes (mean &minus;5.30). Under a modern Italian model the figures are &minus;1.99 against &minus;6.66.</li>
-<li><b>The image.</b> The first nine words of line 1 (<i>il signor [231] m&rsquo;ha mandato &hellip;</i>) agree with the Gallica image sign by sign, and the code 64 before the second <i>Monsignor Beria</i> is two digits, as he has it. The rest was not compared by eye.</li>
+<li><b>The image.</b> The first nine words of line 1 (<i>il signor [231] m&rsquo;ha mandato &hellip;</i>) agree with the Gallica image sign by sign, and the code 64 before the second <i>Monsignor Beria</i> is two digits, as he has it. The rest was not compared by eye. On 14 November 2026 Brice Dudout re-read the doubtful places on the same image: 231 and 31 are digits, though the writer&rsquo;s 1 has the shape of the e homophone; the sign read &ldquo;li?&rdquo; is a 3 with a crossed top stroke, unlike the 3 of 31, and has no value; and the second digit of 64 is written exactly like the key sign for m, so the group could also be two key signs (a, m) and the code reading stays a guess. His decoder, built from the key file alone, gives the published plain for 47 of the 54 words; the other seven are the abbreviations, query marks and open signs already marked.</li>
 <li><b>His own controls</b>, taken from his page and not re-run: 16 synthetic ciphers of the same size were solved in 15 cases (97&ndash;100% of letters); 24 shuffles of the text scored &minus;1294 to &minus;1236 against &minus;1073.7 for the real one.</li>
 </ul>
 
@@ -250,13 +250,13 @@ nothing can be said by letter while the plague lasts.</pre></details>
 <p class="muted">Notes, his transcription and key, and the decoder with its control: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/vizani1637">targets/vizani1637/</a>.</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Satoru and Daniel Bourdeau, “Fra Guglielmo Vizani to the Comte de Césy, 1637”, Cyphersolver, posted 1 October 2026, updated 7 November 2026, https://cyphersolver.com/vizani1637.html.</p>
-<p class="citebtns"><button type="button" data-copy="Satoru and Daniel Bourdeau, “Fra Guglielmo Vizani to the Comte de Césy, 1637”, Cyphersolver, posted 1 October 2026, updated 7 November 2026, https://cyphersolver.com/vizani1637.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-vizani1637,
-  author = {Satoru and Daniel Bourdeau},
+<p class="citetext">Satoru, Brice Dudout and Daniel Bourdeau, “Fra Guglielmo Vizani to the Comte de Césy, 1637”, Cyphersolver, posted 1 October 2026, updated 14 November 2026, https://cyphersolver.com/vizani1637.html.</p>
+<p class="citebtns"><button type="button" data-copy="Satoru, Brice Dudout and Daniel Bourdeau, “Fra Guglielmo Vizani to the Comte de Césy, 1637”, Cyphersolver, posted 1 October 2026, updated 14 November 2026, https://cyphersolver.com/vizani1637.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-vizani1637,
+  author = {Satoru and Brice Dudout and Daniel Bourdeau},
   title = {Fra Guglielmo Vizani to the Comte de Césy, 1637},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 1 October 2026, updated 7 November 2026},
+  note = {posted 1 October 2026, updated 14 November 2026},
   url = {https://cyphersolver.com/vizani1637.html}
 }">Copy BibTeX</button></p>
 </details>

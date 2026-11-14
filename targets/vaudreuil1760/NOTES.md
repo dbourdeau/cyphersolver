@@ -36,13 +36,28 @@ Outcome method: **external key matched** (a key from the same collection, filed 
 connected with this letter, found to fit and applied; the table cells were read from the images and corrected from the letter).
 Measured (`tools/stats.py`, 5 Nov 2026, third pass): of 2424 groups, 2328 (96.0%) are read from the image as written; 25 more (1.0%, total 97.1%)
 are groups cut by the binding that the visible leading digit(s) and the sense fix; 24 (1.0%) are legible and unread, in 9 places; 47 (1.9%) are lost in the gutter.
-That clears the read bar (95% as sense, measured; every folio read; every legible gap tried; what stays open is scattered groups and the binding).
+These are shares of groups. The README read bar is a share of words: by that measure the letter reads at 0.933, under 0.95, so it is **read in part** (recount of 14 Nov 2026, below); every folio reads and every legible gap was tried, and what stays open is scattered groups and the binding.
 Third pass: an interlinear line on f.150v belongs at a caret after "de" ("ces derniers se lassent de notre extrême indigence, il ne faut rien moins
 que mes soins ..."); the duplicate group 51 that had been read there is removed; "qui[n]ze", "[Lou]isbourg" and "aie [don]né" settle three more places;
 cell 2 of the table is "campagne" (the alphabetical sheet e001295269 has compagnie = 102), not "compagnie".
 The historical frame is confirmed by the clear letters next to it in C11A 105 (7 and 13 Aug 1760: the Machault, the Bienfaisant and the Marquis
 de Malauze with the troops, François-Gabriel d'Angeac = "M. Danjac", La Giraudais, Villemont carrying the despatches, the goélette
 l'Extravagante, Bigot, Amherst).
+
+## Read bar recount and check of PR #565 (14 Nov 2026)
+
+Brice Dudout's verification (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decodes `transcription.txt` from
+`key/key274.json` + `key/overrides.json` alone: 2401 legible groups, none without a cell, 97.5% of the decoded letters aligned with
+`reading.md`. Re-run here: same figures. He found no key correction, and one unmarked emendation: on f.152r, line 12 of the folio,
+`672 672^ 51 51 | 494` decodes "me me t t / un", and the reading had "me mettroit" with no mark (494 = un is a confirmed cell). The reading
+now has "me mett[roit]". The LAC image of f.152r (e000875758) was compared group by group with the transcription of the whole folio and
+the first seven lines of f.151v (about 240 groups): all agree, and the inserted 672 written above the line is on the image.
+
+He also pointed out that the recorded `read_share` 0.96 was the share of groups (2328 of 2424, `tools/stats.py`), not of words. Measured
+on the reading body (ff.147r-152r) with the README rule (`research/reading_audit/v2_score.holes`: supplied, restored and unread words are
+holes): 1383 words, 100 holes, **0.933**; his figure with `v10_relabel.measure` on the whole file was 0.937 (0.936 once the emendation is
+marked; the whole file counts the preamble too). Under 0.95, so the class moves from read to **read in part** (profile, page and ledgers
+changed the same day). The gaps below all keep an outside blocker; nothing in the reading changed except the mark.
 
 ## Remaining gaps
 - groups cut by the binding at the right edge of ff.147v-151v (20 partly visible and not restored, 27 wholly lost) - blocker: illegible; microfilm image, a clear copy would restore them

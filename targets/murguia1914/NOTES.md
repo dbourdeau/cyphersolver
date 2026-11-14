@@ -125,6 +125,16 @@ the translation and graded it A, noting that it is an existing decipherment and 
 - The only earlier work on this fondo in the repository is Brice Dudout's note of 29 Oct 2026
   (`research/dudout_2026-10-29/CORRECTIONS-FOR-DANIEL-2026-10-29.txt`), which found no key and read nothing.
 
+## Independent verification by Brice Dudout (PR #565, 14 Nov 2026)
+
+Brice Dudout (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the 488 groups from `key.tsv` alone: all
+23 segments identical to the published decryption, no key correction (every value fits the reversed-alphabet layout per decade). Re-run
+here: same result. The CEHM scan p. 1 was compared with S10-S15 here (120 groups, all as transcribed; 88 and 97 clearly typed; the
+over-strike 58/68 in S11 seen). He offers **88 = por** in S13 ("tomarla por ser el enemigo ...", with no supplied word) as a
+possibility beside [?plaza:88] + [por]: recorded, not adopted and not counted (78 is already por; 88 occurs once). The recorded 0.952
+stands. Tooling note: `v10_relabel.measure` gives 0.985 because `v2_score.holes` ignores the `{+x}` markers; do not run
+`v10_relabel.py --apply` on this target.
+
 ## Remaining gaps
 
 - Groups 88 and 97 - blocker: open-codes. One occurrence each and not glossed; the sense suggests "plaza" (or "plaza

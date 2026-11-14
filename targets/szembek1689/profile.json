@@ -134,7 +134,9 @@
    "result": "worked",
    "date": "2026-09-28"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked runs.tsv (every run with its contemporary gloss) and ct.txt as transcription, reading.md (with translation) as decryption; key_file key.tsv", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): linked runs.tsv (every run with its contemporary gloss) and ct.txt as transcription, reading.md (with translation) as decryption; key_file key.tsv", "result": "worked"},
+  {"kind": "verification", "date": "2026-11-14", "technique": ["key matching"], "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) reading only key.tsv, run on the 70 cipher runs of runs.tsv: 436 two-digit signs (one doubtful, 12?), 1 struck single digit and 2 code groups, 439 tokens as in ct.txt. With u/v and ae/e taken as equal, 60 runs give the gloss letter for letter; the other 10 are code groups 203 and 202 and the eight writer or glosser slips already listed in NOTES.md (gerant, solicitaverant, Gegenbeio, Gegenbeii, functsm, pricipem, defunct, audi2?et). No key value is contradicted. README read bar recount (research/reading_audit/v10_relabel.measure on reading.md): 0.986 over 778 words, as recorded. The WBC scans sit behind a proof-of-work page and were not re-read.", "result": "worked"},
+  {"kind": "verification", "date": "2026-11-14", "technique": ["key matching"], "what": "Project check of PR #565 (Brice Dudout): his decoder re-run and a separate decoder written here from key.tsv with u/v, ae/e, i/j equal: 60 of 70 runs give the gloss (59 plus intricavit once the doubtful 12? is taken as u), the other 10 the two code groups and the eight slips in NOTES; v10_relabel.measure 0.986 over 778 words, as recorded. WBC scans not fetched.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -169,7 +171,8 @@
   ],
   "notes": "Read at the time; key rebuilt and checked here. Catalogue 348's 'unknown to the Szembek family, early 18th c.' corrected: Wallachian court after Şerban Cantacuzino's death (Oct 1688), denouncing Antide Dunod SJ. Postscript only; the letter's main body is not in the item.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment over every run but one"}
+    {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear decipherment over every run but one"},
+    {"who": "dudout", "role": "verification", "note": "independent re-run of key.tsv on all 70 runs (no key value contradicted) and read-bar recount (0.986); VERIFY_dudout_20261114.md", "date": "2026-11-14"}
   ],
   "texts": [
    {"doc": "WBC 343124", "label": "BK 1560 'List zaszyfrowany', Latin cipher postscript, after Oct 1688", "transcription": ["runs.tsv", "ct.txt"], "decryption": "reading.md", "summary": "A writer in the service of a 'Celsissimus Princeps' (most likely Constantin Brâncoveanu) thanks a 'Reverendissimus Pater', protests the Wallachian side's sincerity against imperial broken promises, and denounces Antide Dunod as an impostor who misled the late Prince Şerban Cantacuzino; he adds that Gegenbey was killed by a false friend's treachery.", "translation": "WBC343124_en.md", "language": "la", "read_share": 0.986}
