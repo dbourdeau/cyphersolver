@@ -40,3 +40,4 @@
 - 2026-11-14 Search for the rest of the 6 Mar cipher: 87 (other hand and profile), 90R (letter opening "[Mo]n cher [Comte]"), 104R (15 May opening): none continues 102L. Not in the volume as far as checked (failed; outside blocker).
 - 2026-11-14 Verification: 15 Nov 1765 gloss compared with the images (124R-126): agrees except 126.06G "en honneur" -> "en homme" (corrected in tx/g1765-11-15.txt only).
 - 2026-11-14 Reading: strict counts with v10_relabel.share: 6 Mar 622 words, 1 doubtful, 0.998; 15 Nov 610 words (gloss 367), 0 holes, 1.000. English translations written (sysA_1616/reading_*.md).
+- 2026-11-14 English translation of the 5 Oct 1764 clear (tx/p1764-10-05_en.md), linked in profile outcome.texts; it was missing and failed the PR reading check.
