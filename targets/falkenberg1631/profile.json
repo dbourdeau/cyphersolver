@@ -1,0 +1,227 @@
+{
+ "schema_version": 1,
+ "target": "falkenberg1631",
+ "title": "Falkenberg to Gustavus Adolphus, Magdeburg, 28 March 1631 (Riksarkivet R0000785_00133): letter and alphabetical-nomenclator key built from the chancery glosses, validated on a held-out letter; content existing (clear copy)",
+ "documents": [
+  {
+   "id": "ra-1126",
+   "read": "read in part",
+   "shelfmark": "Riksarkivet, SE/RA/1133/1133.07/~/10 (Skrivelser till konungen, Gustav II Adolf, F), image R0000785_00133 (fol. 101); clear copies 00134 (fol. 102) and 00135 (fol. 103)",
+   "date": "28 March 1631",
+   "year": 1631,
+   "country": "Germany",
+   "route": "Dietrich von Falkenberg, commander at Magdeburg -> Gustavus Adolphus",
+   "places": {
+    "from": "Magdeburg",
+    "to": "Gustavus Adolphus's field headquarters in Germany"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "two clear copies of the time on the following images (fol. 102, signed D. v. F., and fol. 103)"
+   },
+   "length": {
+    "tokens": 172,
+    "unit": "mixed",
+    "measured": true,
+    "file": "reading_tokens.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images, Public Domain Mark",
+    "image_quality": "good",
+    "notes": "one AI transcriber; clear words kept in lower case"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "homophonic"
+  ],
+  "summary": "Two-digit numbers 10-99 = letters in bands of 3 homophones; numbers 100-3999 = alphabetical nomenclator (about one code per word); abbreviations for common words; clear words interspersed.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "digit_groups": {
+   "separation": "mixed"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Two clear copies of the time follow the ciphered letter (fol. 102 signed D. v. F., fol. 103); Dittmar and Kirchhoff discuss the letter (Dittmar wrongly says it was not deciphered). Found after the first reading. Daniel's leads 1126 and 1127 only (the vetting of 1126 already records the clear copies, from our corrections of 29 Oct 2026); nothing else in this repository.",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout set the rules (protocol hashed before any key was built, one held-out measurement). An AI agent transcribed, harvested the glosses, built K1/K2, measured and read; no human palaeographer.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
+  ],
+  "first_date": "2026-10-29",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "transcription",
+   "what": "Ciphered letter of 28 March 1631 transcribed (parts 1 and 2); gloss pairs of the neighbouring letters collected.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "K1 built on the interlinear glosses of the other letters (images 112-132) with the letter of 17 March set aside; frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out letter of 17 March: letters 39/43 = 0.907, codes 22/24 = 0.917 by the frozen script; best of 200 permuted keys 0.233 / 0.125; thresholds 0.85 / 0.75 fixed beforehand.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "what": "Letter of 28 March read with K2: about 80 % of 172 tokens by sense; then the clear copies on images 134-135 were found, 21 of 25 restorations confirmed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "K2 on a second held-out letter (22 Jan 1631): too few glossed lines, inconclusive.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #571 by the project: hashes of the protocol, K1 and K2 match; frozen/validate.py re-run gives the same 39/43 and 22/24 against 0.233 / 0.125 for 200 permuted keys; no K1 source is the held-out image 131; about 130 groups of the transcription compared with image R0000785_00133, all agree (L02 '37?9' is 3729); the clear copy on image 134 seen and follows the cipher; own decoder from K2.json gives the same words. Not the key of chemnitz1631 or magdeburg1647. Target kept in progress: the clear copy is not yet fully transcribed, translated or used to re-key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key learnt on the interlinear glosses of the neighbouring letters of the same volume; the letter itself has two clear copies of the time.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "validation": {
+   "date": "2026-10-29",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "K1 on the held-out letter of 17 March: letters 39/43 = 0.907, codes 22/24 = 0.917 by the frozen script; best of 200 permuted keys 0.233 / 0.125; thresholds 0.85 / 0.75. Re-run on 14 Nov 2026: identical. The 24/24 is a judgment after the run. The order of events is by the contributor's record. The second test (K2, 22 Jan 1631) was inconclusive."
+  },
+  "verification": [
+   "independent clear copy",
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "fraction_read": 0.535,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 172 cipher tokens before the clear copy was found: strict count 92 sure (0.535); with 20 probable 0.651; with 25 restored 0.797; 35 unresolved. The content is existing (two clear copies of the time).",
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "two clear copies of the letter on the images that follow it (fol. 102-103)",
+    "date": "1631"
+   },
+   {
+    "who": "dudout",
+    "role": "new cipher with solution",
+    "note": "letter found, K1 built and validated, the cipher read to about 80 % by sense before the clear copy was seen",
+    "date": "2026-10-29",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/571"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "leads 1126 and 1127, Internet Archive printed-sources sweep of October 2026 (Dittmar's edition)",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "clear copy (images 134-135) filed only as a quick reading; part 2 not re-read, image 135 not compared, no full translation",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "codes never glossed and nine abbreviations, mostly identified from the clear copy but not re-keyed; no strict count of the cipher against the clear copy",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "lead 1127 (2 March 1631) not located in the images 100-137",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "collection Falkenberg SE/RA/720223 and the Stallman letters not digitised",
+    "blocker": "needs-physical-access"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ra-1126",
+    "label": "Falkenberg to Gustavus Adolphus, 28 March 1631",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.535,
+    "summary": "Falkenberg reports from Magdeburg that the situation has changed, asks for a general relief and not small troops, says supplies are short and the town cannot hold long beyond Easter, and describes the country on the Elbe (Garleben, Saltwedel).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-14",
+     "note": "strict count 53.5 % sure (79.7 % with probable and restored); 4 of 25 restorations wrong against the clear copy; content existing"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "No image is reproduced (Public Domain Mark would allow it). decryption.txt is a quick reading of the clear copy, not a full edition."
+ }
+}

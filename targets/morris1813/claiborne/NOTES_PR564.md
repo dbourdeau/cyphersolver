@@ -1,3 +1,8 @@
+> Folded into `targets/morris1813` on 14 Nov 2026 (one key, one entry: the same reversed-block copy of WE028). This file is the
+> NOTES.md of the former folder `targets/claiborne1806` as it stood after PR #564 and PR #581, kept as the record; its paths
+> are those of the old folder (`../morris1813/...` is now `../...`, `targets/claiborne1806/` is `targets/morris1813/claiborne/`).
+> The current state of the Claiborne letters is in `../NOTES.md`, section "Claiborne's letters of 1805-06".
+
 # claiborne1806: William C. C. Claiborne's State Department code, 1805-1806 ("key not found")
 
 Status: in progress (integration check of PR #564, 14 Nov 2026: the code is the State Department code WE028 with its blocks of 100 reversed, the same copy order as Anthony Morris's in `../morris1813`; see Integration check below. Gaps are workable: images of 0226 to finish, 1077, the LoC letters, the Founders notes behind a bot check, and the one-key-one-entry decision with morris1813. No page yet.)
@@ -85,14 +90,47 @@ external sources (WE028 and the reversal from morris1813), method "read after ma
 The contributor's own partial rebuild from Wagner's interlinear decipherments ("key recovered based on adjacent plaintext")
 is kept as a step and in the credits.
 
+## Second pass (14 Nov 2026, contributor): frame 0226, entry 1077, the LoC letters
+
+**Frame 0226** (T260 roll 7, the end of 24 Oct 1805; public NARA image). All 57 live groups (data lines 211-250) were compared
+with `transcription.txt`. One misread, the same as on 0225: the second Lakes is `153 148L`, not `153 1482L` (the final hook
+after 148, then `. 1. 1229` "a few"); added to `transcription_corrections.tsv`. "The collecting" is settled: the clerk wrote
+`1035. 362. 285.` (field ; the), then struck `153. 148L. 1. 12`, an eye-skip to "Lakes a few" two lines below, then `76`
+(of) at the end of the line. "Collecting" has no group; Wagner's gloss, written over the struck groups, supplies it. Philip
+ends `401` (P), as transcribed. With the correction, `we028_check.py` gives 295 of 328 words mechanically (was 294). By hand:
+319 of 328 (97.3%; was 317): the second Lakes and "the" (285) now fit, and "collecting" moves to the encoder slips (now four).
+Left: 1077 tra x3, and arrival and leather on 0224, where the digit in question is a blot under Wagner's gloss (looked at
+again, still unreadable: 179 riv and 1087 lea would fit).
+
+**Entry 1077 = tra.** Beling's transcription reads tra on both halves of the M97 r13 sheet. The block runs 570 tol, ton, too,
+tor, total, toward, town, 577 tra, trac, tract, 580 traction (WE028 numbers), so tro could not stand at 577 in alphabetical
+order, and WE028 has no tro or troop entry (Morris numbers: tre 854, tri 856, tru 857; trouble 1519). Morris uses 1077 for
+con-tra-ry (No. 18, 20 Sep 1814) and writes troops as 1519 (trouble, cut back by strokes) + 603 op (No. 14). Claiborne's
+clerk writes troops as 1077 603L all three times: the nearest syllable for a missing tro, used consistently. A clerk's
+substitution, not a misread of the sheet. The sheet image itself was not re-read here.
+
+**Letters of 18 and 19 Nov 1806.** NARA T260 roll 8 image 0408 is a typed slip: "Governor Claiborne's letters of November 18
+and 19, 1806 are missing from our files", filed in "Burr's Conspiracy", Library of Congress, Manuscript Division. Both
+clear texts are already in print, twice: the coded words decoded in PJM-SS 13 (Founders 02-13-02-0066 and -0069) and
+Claiborne's letterbook copy, in clear, in Rowland, *Official Letter Books* 4:36-37 (Internet
+Archive `officialletterbo04clai`). Decoding them with WE028 would therefore check Wagner's decoding; it would not give a new
+text. Images: www.loc.gov, its JSON API and findingaids.loc.gov answer scripts with a Cloudflare challenge (HTTP 403), so
+whether the collection (one microfilm reel) is online could not be checked from a script. No image was seen, nothing was
+transcribed or decoded, and no figure is given for these two letters. *Territorial Papers* IX is not open on the Internet
+Archive, and HathiTrust answers with the same kind of challenge: not consulted.
+
+The key is not the contributor's: WE028 is Weber's table (surviving copy NARA M97 r13, transcribed by Beling in
+`../morris1813`), and the reversal was found for Morris. What supports it here is that external table and its agreement
+with Wagner's words; nothing in this pass was measured against controls, and no new measure is claimed.
+
 ## Remaining gaps
 - 261 of about 1 600 numbers; the letters of 18-19 Nov 1806 (LoC) not accessible: Wagner's decipherments there could be checked with this key.
 - Doubtful zones: 135, 143, 149 (Wilkinson), 362, 364 (defen-ce), 484, 1037/1087.
 - Weber 1979 not consulted.
 
-- (14 Nov 2026) 1077 = tra against tro- in troops x3: re-read the M97 r13 sheet at 1077 (WE028 577) or accept a clerk/copy variant.
-- (14 Nov 2026) arrival (1?0) and leather (1?37) unsettled on the image (illegible under the gloss); image 0226 not compared (second Lakes, the struck groups before "of"): workable.
-- (14 Nov 2026) the LoC letters of 18 and 19 Nov 1806: check whether the Burr Conspiracy Collection is online (LoC digital collections) before calling them blocked.
+- (14 Nov 2026) 1077 = tra against tro- in troops x3: WE028 has no tro and 577 = tra fits the alphabetical run (second pass): a clerk's substitution. The sheet image at 577 not re-read.
+- (14 Nov 2026) arrival (1?0) and leather (1?37) unsettled on the image (illegible under the gloss). Image 0226 compared in the second pass.
+- (14 Nov 2026) the LoC letters of 18 and 19 Nov 1806: loc.gov blocks scripts (Cloudflare); someone with a browser has to check whether the Burr Conspiracy Collection is online. Clear texts in PJM-SS 13 and Rowland 4:36-37.
 - (14 Nov 2026) PJM-SS notes read through search snippets only (Founders WAF challenge; use Claude in Chrome).
 - (14 Nov 2026) one key, one entry with morris1813: owner's decision.
 

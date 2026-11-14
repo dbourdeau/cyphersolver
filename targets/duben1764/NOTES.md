@@ -152,15 +152,19 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
 - System B: done for the two letters of the Chiffer n:o 2 folder (key rebuilt and tested on 12 Nov, re-tested and
   completed on 13 Nov against the clear on 127-128; see the 12 and 13 Nov sections below). Open: the 12 key tokens with no
   value (dates, 236, 339, 55, 234) and the single-occurrence values of key c04, which no further text tests.
-- Transcribe the other cipher letters (87-95, 100, 104-117) and test key_c01 on them: letter 96 shows that Chiffer n:o 1
-  is system A, and several have a clear filed with them (106R, 109R, 116 by the archivist's notes).
+- Chiffer n:o 1, 15 June 1764 (108R-110R): done through its clear 109R-110L (14 Nov, PR #582; strict 337 of 342 words). Open,
+  workable: the end of the cipher on 110R is not in the frozen transcription; 74 groups differ between the two passes.
+- The other letters of Chiffer n:o 1 (inventory in `dudout/system_a/INVENTORY_chiffer1.md`), workable from the online images:
+  15 May 1764 (104R or 105R-108L; clear 106R-107L), 20/31 Aug 1764 (110R-115; clear 116-117), 100R (perhaps the rest of
+  6 Mar), and the two without an identified clear, 87-89 (value profile unlike system A) and 90R-93L (94-95, a clear
+  letter of 30 Jan, may belong to one of them).
 - Read the other clear pages for any that is a true decipherment (no compositional corrections).
 
 ## Escalation
 
 - Siblings: the clear pages filed with the ciphers are decipherments for 96 (97R-99L), 6 Mar 1764 (102R-103R), 5 Oct
-  1764 (120) and 31 Dec 1764 (127-128); the earlier "no fit" for 6 Mar and 5 Oct is withdrawn. The other clear pages
-  (106R, 109R, 116) are not yet checked.
+  1764 (120) and 31 Dec 1764 (127-128); the earlier "no fit" for 6 Mar and 5 Oct is withdrawn. 109R-110L is the decipherment of
+  15 June 1764 (PR #582). The other clear pages (106R-107L, 116-117, 94-95) are not yet checked.
 - Known keys: the three tables at 218-220 were checked by value range only; a group-by-group test is
   still to do once some values are known.
 - Print: no edition found (web search 26 Oct 2026); check Svenska Akademiens Handlingar 29 and the
@@ -325,3 +329,67 @@ written before any decoding": it is that by the contributor's record, and it doe
 The target stays **Status: in progress**: what remains for system A (strict counts and translations of the two period
 decipherments, the cipher of the rest of the 6 Mar clear) and the other Chiffer n:o 1 letters with filed clears are workable,
 not outside-blocked. No page yet.
+
+## 14 Nov 2026 (second contribution) — key_c01 passes a pre-registered test on the 15 June 1764 letter (Brice Dudout, Claude Opus 5.5)
+
+Files in `dudout/system_a/june1764/` and `dudout/system_a/INVENTORY_chiffer1.md`; script `dudout/system_a/scripts/val_L101.py`.
+
+- Inventory of Chiffer n:o 1 (images 85-117) from the full-size images: table in `INVENTORY_chiffer1.md`. Letters with a filed clear:
+  96 (97R-99L), 6 Mar 1764 (102R-103R), 15/4 May 1764 (106R-107L), 15 June 1764 (109R-110L), 20/31 Aug 1764 (116-117).
+  Without an identified clear: 87-89 (value profile unlike system A) and 90R-93L (system A profile); 94-95 is a clear letter of
+  30 Jan [1764] that may belong to one of them.
+- **15 June 1764** (108R "St Petersbourg ce 15. Juin 1764", clear opening, then cipher on 108R-109L, end on 110R). Never seen by the key.
+  `PREREG.md` hashed before transcription (key by SHA-256, one measure = the check2.py metric with seed 1764, 200 permuted keys,
+  bar M >= 0.15 and >= controls max + 0.10, justified there); amendment with the transcription hashes before the decode.
+  Cipher transcribed twice (second pass by a blind sub-agent; 478 groups alike, 74 differ, first reading kept with "?"), clear
+  twice. **M 0.383 against controls max 0.057 (mean 0.035): pass.** The raw decode reads as the clear ("primo parceque je ne veux
+  pas reveiller mal apropos ... l'Imperatrice ... la situation du Roy ... Elle concerte avec le Roi de Prusse ... tout se sait ...
+  un mot ... sans dessein devant ... produit un effet que toutes negociations ne pourront ...").
+- The clear runs past the cipher of 108R-109L; the rest ("de la tromper ... conscience. Je pourrai bientot quitter Pettersbourg
+  ... un homme ruiné") is enciphered on 110R (three lines at the top, four inside a clear paragraph), placed by a decode made after
+  the measure. The decipherer's meaningless string "ritedriibsdoucle" (110L.03) sits where the cipher decodes "ri te ... s doute".
+- Reading through the contemporary clear: 342 word tokens, 337 sure, 4 probable, 1 unresolved: read by sense 99.7 % -> read
+  (method: existing decipherment). English translation in `reading_1764-06-15_en.md`.
+- `scripts/val_L101.py` is the missing producer of `validation/val_L101.json`: align_em.py with key_c01 as hard anchors, 1 iteration,
+  ratio 2.7; it reproduces the stored path exactly (320/320) and gives 175/228 = 0.768. The stored control files are not reproduced
+  by the same settings (0.231, 0.247, 0.247 vs 0.214-0.225).
+- Not done: strict counts and translations of the 6 Mar 1764 and 15 Nov 1765 period decipherments; the other Chiffer n:o 1 letters.
+
+## Integration check (14 Nov 2026, PR #582)
+
+Checked by the project on the merged files; the contributor's section above is unchanged.
+
+| claim | contributor | ours | how |
+|---|---|---|---|
+| hashes | PREREG c941c974... (text above the amendment), amendment set of 5, key 3fcecea8... | all match; the 26 lines of `SHA256SUMS` (PR #566) still match | sha256sum; `head` rule of `june1764/README.md` |
+| the one measure, 15 June 1764 | 511 groups, coverage 0.761, 1,465 clear letters, M 0.3829, controls max 0.0573, mean 0.0347: pass | identical | `measure_june.py` run with `python3 -I` in a scratch copy |
+| key has no group from 108-110 | yes | key_c01.json is byte-identical to the file of PR #566 (same SHA-256), whose groups all come from 96/97L; 133 of the 220 group types of the June cipher have a key value | hash; own count |
+| own measure | - | own decoder, share of decoded 5-letter windows found anywhere in the clear: 0.380 against 200 permuted keys max 0.061 (mean 0.028) | own script |
+| the decode reads | "primo parceque je ne veux pas reveiller mal apropos ..." | yes: "primoparcequekieneveupasreveillermal ... limperat[rice] ... lasituationduroy ... elleconce[r]te[av]ecleroide ... toutses[ait] ... unmot ... produitunef[f]etquetoutes ..." | `outputs/measure_result.txt` and own decode |
+| images | - | 108R.01-04 compared with the Riksarkivet image (63 groups): 60 agree, the 3 others are the ones the transcription already marks "?" (108R.03); clear 109R.01-05 agrees | IIIF A0073297_00108, _00109 |
+| word count of the clear | 342 word tokens: 337 sure, 4 probable, 1 unresolved; "read by sense 341/342 = 99.7 %" | 342 tokens recounted; **strict share 337/342 = 98.5 %** (sure words only; the 4 probable words and the unresolved string are holes) | own count |
+| `val_L101.py` | reproduces the stored path 320/320; 175/228 = 0.768; controls 0.231, 0.247, 0.247, the stored control files not reproduced | identical: 175/228, path 320 of 320, controls 53/229, 55/223, 56/227; the stored control files count 0.214, 0.224, 0.225 | script run in a scratch copy |
+
+- **Is it a pre-registered test?** By what the files show, yes: a written plan names the key by hash, the one measure, the
+  number of controls and the seed, and a bar with its reasons; the plan's hash is filed apart from the amendment that
+  freezes the transcriptions and the script. The order of events (plan 04:15, amendment 04:33, one commit 04:48 CET on
+  14 Nov 2026) is by the contributor's record; nothing outside stamps it. Two limits to state with the result: the
+  measuring script was hashed in the amendment, after the transcription and before the decode, not with the plan; and
+  the bar (M at least 0.15 and at least 0.10 above the best control) was chosen with four earlier scores of the same
+  key on the same measure in hand, so it is a low bar. The result does not lean on the bar: 0.383 is more than six times
+  the best control and above the 0.363 of the training letter.
+- **What it changes.** key_c01 now has two letters it never saw decoding as their filed clears: 101R (held out, no bar
+  declared, PR #566) and 15 June 1764 (bar declared beforehand, passed). The 101R figure of record is 175/228 = 0.768;
+  its controls with the reconstructed settings are 0.231-0.247, and the three stored control files are kept as filed,
+  unreproduced.
+- **The 15 June 1764 letter.** Text: the decipherment of the time on 109R + 110L (method: read from existing
+  decipherment). Strict share 98.5 % (337 of 342); 99.7 % is the contributor's figure with the four probable words
+  counted. Not settled: the cipher lines on 110R that carry the end of the letter were read once, after the measure,
+  and are not in the frozen transcription; 74 of the 552 groups of 108R-109L differ between the two passes and stand
+  as first readings.
+- **Inventory.** `dudout/system_a/INVENTORY_chiffer1.md` is the contributor's survey; not re-checked image by image
+  here. It supersedes the line "transcribe the other cipher letters (87-95, 100, 104-117)" under Remaining gaps.
+
+The target stays **Status: in progress**: the strict counts and translations of the 6 Mar 1764 and 15 Nov 1765
+decipherments, the letters of Chiffer n:o 1 with a filed clear (15 May, 20/31 Aug 1764, 100R) and the two without one
+(87-89, 90R-93L) are all workable from the online images. No page yet.

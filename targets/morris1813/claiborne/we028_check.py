@@ -1,10 +1,11 @@
 """Integration check, 14 Nov 2026: decode transcription.txt with the State Department code WE028 under the
-block reversal found for Anthony Morris's copy (targets/morris1813), and compare each word with Wagner's word.
+block reversal found for Anthony Morris's copy (this target; the folder was targets/claiborne1806 until it was
+folded in here on 14 Nov 2026), and compare each word with Wagner's word.
 
-    python targets/claiborne1806/we028_check.py            # summary per letter
-    python targets/claiborne1806/we028_check.py --words    # every word, decoded
+    python targets/morris1813/claiborne/we028_check.py            # summary per letter
+    python targets/morris1813/claiborne/we028_check.py --words    # every word, decoded
 
-Key: ../morris1813/beling/key/codebook_M97_13_transcription.csv (NARA M97 roll 13 frames 1056-1057, Weber's WE028),
+Key: ../beling/key/codebook_M97_13_transcription.csv (NARA M97 roll 13 frames 1056-1057, Weber's WE028),
 column morris_number_after_reversal (Morris/Claiborne 100*i + r = WE028 100*(15-i) + r). Nothing here was built from
 Claiborne's letters: the table is used unchanged. Corrections to the contributor's transcription seen on the NARA
 images are applied from transcription_corrections.tsv (they are listed there, with the image).
@@ -16,7 +17,7 @@ confid-en) and I/J, U/V merged; digits are digits. Everything else is listed as 
 import csv, re, sys, collections, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
-KEY = HERE.parent / 'morris1813' / 'beling' / 'key' / 'codebook_M97_13_transcription.csv'
+KEY = HERE.parent / 'beling' / 'key' / 'codebook_M97_13_transcription.csv'
 
 code = {}
 for r in csv.reader(open(KEY, encoding='utf-8')):
