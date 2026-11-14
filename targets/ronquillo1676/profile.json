@@ -122,7 +122,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-21",
-  "last_date": "2026-09-21"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -211,13 +211,14 @@
    "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): the modernised spelling of 22 Oct restored to the cipher's, letter by letter from the key decode streams (read2/R*.txt; research/reading_audit/v6_charalign.py: the stream's letters taken where they spell the same word another way, e.g. tomavan, assi, devia, aora, quando, haver; editorial accents off; ñ kept where the key writes n); no margin transcription file was kept by the 22 Oct batch, so the key's letters, which are the writer's, are the source; holes and brackets kept, no word changed. Rescored with research/reading_audit/v2_score.py: read/R1001_reading.md plain 0.627 -> 0.597, explicit holes 0.91 -> 0.91; read/R966_reading.md plain 0.885 -> 0.808, explicit holes 1.0 -> 1.0; read/R967_reading.md plain 0.844 -> 0.781, explicit holes 1.0 -> 1.0; read/R968_reading.md plain 0.913 -> 0.826, explicit holes 1.0 -> 1.0; read/R969_reading.md plain 0.88 -> 0.8, explicit holes 1.0 -> 1.0; read/R970_reading.md plain 0.796 -> 0.755, explicit holes 0.98 -> 0.98; read/R971_reading.md plain 0.679 -> 0.651, explicit holes 0.936 -> 0.936; read/R972_reading.md plain 0.732 -> 0.691, explicit holes 0.928 -> 0.928; read/R973_reading.md plain 0.621 -> 0.586, explicit holes 0.966 -> 0.966; read/R974_reading.md plain 0.744 -> 0.718, explicit holes 1.0 -> 1.0; read/R975_reading.md plain 0.746 -> 0.634, explicit holes 1.0 -> 1.0; read/R976_reading.md plain 0.708 -> 0.542, explicit holes 1.0 -> 1.0; read/R977_reading.md plain 0.76 -> 0.72, explicit holes 1.0 -> 1.0; read/R978_reading.md plain 0.73 -> 0.698, explicit holes 0.984 -> 0.984; read/R979_reading.md plain 0.778 -> 0.698, explicit holes 0.984 -> 0.984; read/R980_reading.md plain 0.638 -> 0.59, explicit holes 0.886 -> 0.886; read/R981_reading.md plain 0.725 -> 0.662, explicit holes 1.0 -> 1.0; read/R982_reading.md plain 0.552 -> 0.483, explicit holes 0.828 -> 0.828; read/R983_reading.md plain 0.694 -> 0.597, explicit holes 0.903 -> 0.903; read/R984_reading.md plain 0.708 -> 0.604, explicit holes 0.958 -> 0.958. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 20 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 20 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "technique": ["manual reconstruction", "plaintext matching"], "what": "R982 (no margin) re-read on the full-resolution DECODE images (I5093-I5095), with a second blind pass on the doubtful figures by another agent: the hand's flourished 7 was transcribed 2 or 3 (72 ti, 71 te, 70 ta, 73 to, 74 tu, 78 on), 4/9 (54 gu), a struck o taken for a null. Closed: actividad, o nos, atender a todas, aseguro, tan, ambiguedad, Mequelemburg, constitucion, puestos, abrogado; from the sibling margins fin = ofrece (R975, R977, R981: 'no se ofrece que decir') and 109 = Bruselas (already in keyx.py). Keyed from the margins: fin, al = despues (R980, R981; balbases1677 R986), 91 = asist- (R981; closes 'que asisten' in R984). read_share R982 0.919 -> 0.954, R984 0.967 -> 0.969; all twenty letters at or above 0.95, class read. No measurement: the values are margin glosses (known plaintext), and no unseen portion of this system exists.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "Eighteen of the twenty letters carry a contemporary decipherment in the left margin (R970 and R973 too: DECODE recorded theirs only in a comment). On 22 Oct 2026 the margins were transcribed from the DECODE images and aligned word by word with the decode of the Balbases 1677 key (rebuilt earlier in this project for sibling letters in the same volume). The two letters without a margin, R982 and R984, were read on the images with that key.",
   "contribution": ["decipherment with ambiguous key", "transcription", "key extended or corrected", "sender or date identified", "catalogue correction"],
-  "class": "read in part",
+  "class": "read",
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
   "fraction_read_source": "22 Oct 2026, re-read (batch ronq): all twenty letters build sentences and are translated (read/R*_reading.md, _en.md; grades 13 A, 7 B). Tokens of letters that read / all = 23,463 / 23,463. Holes remain inside the readings: R983 f. 1 (faded margin), R982 and R984 (unglossed code groups, soft scan of R982) and single words elsewhere; docs/_check_reading.py clean share per reading 0.50-0.86 (the Notes sections included; reading bodies about 0.62-1.0).",
@@ -226,7 +227,7 @@
    "contemporary decipherment",
    "historical consistency"
   ],
-  "notes": "22 Oct 2026, re-read: all twenty letters read and translated, eighteen from their contemporary margins; the code values found in the margins entered into keyx.py (key coverage 93.6% -> 95.4%, sense 83.3% -> 85.4% by dec2.py). Read in part: holes remain in R983 f. 1 (faded margin), R982 and R984 (unglossed codes, soft scan) and single words elsewhere, each with an outside blocker.",
+  "notes": "22 Oct 2026, re-read: all twenty letters read and translated, eighteen from their contemporary margins; the code values found in the margins entered into keyx.py (key coverage 93.6% -> 95.4%, sense 83.3% -> 85.4% by dec2.py). Read in part: holes remain in R983 f. 1 (faded margin), R982 and R984 (unglossed codes, soft scan) and single words elsewhere, each with an outside blocker. 14 Nov 2026: R982 re-read on the images (12 holes closed, 0.919 -> 0.954); every letter now at or above the 95% read bar, class read in part -> read. Three margin values keyed (fin = ofrece, al = despues, 91 = asist-).",
   "gaps": [
    {
     "item": "R983 f. 1 passage (many holes)",
@@ -234,9 +235,9 @@
     "detail": "the f. 1 margin is faded almost to nothing on the DECODE scan; groups l, c, 1q, L2, pA, 11, 300 not in the key"
    },
    {
-    "item": "R982 opening groups and about 12 phrase-level holes; R984 about 12 code groups",
+    "item": "R982: opening groups and about ten phrase-level holes (16 holes in 330 words); R984 about 11 code groups",
     "blocker": "no-key-material",
-    "detail": "no margin; codes 138, 91, 113, 460, cus, 600, dul, al, lop, fin, 109, bc have no gloss in the margined letters read so far; R982 soft scan"
+    "detail": "no margin; codes M, 491, 36, dul, lop, 188 (as tr-), the al of 'los [al]eses' (not despues there), 113, 138, cus, 600 have no gloss that fits; [?habra] and [?tenemos] hang on 21/31 and bc/oc, which a blind re-read did not settle"
    },
    {
     "item": "single words in R966, R967, R968, R971/R972, R976, R977, R979, R981, R1001",
@@ -558,18 +559,18 @@
     "transcription": "decode/DOC_R982_D2510_2510.txt",
     "decryption": "read/R982.dec.txt",
     "summary": "Ronquillo to Fuenmayor, Nijmegen 19 Mar 1678: after the loss of Ghent Flanders is near despair; England stays irresolute; he hopes the allies drop their quarrels to defend the Low Countries and the North; Königsmarck's incursion should press the Brunswick princes; nothing worth reporting from the congress.",
-    "note": "Re-read 22 Oct 2026 (batch ronq): read/R982_reading.md and read/R982_en.md, log read/R982_reread_log.md; decryption read/R982.dec.txt (key decode cut into words, page by page, spaced.py). 24 Oct 2026: 91.9% of the words of read/R982_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
-    "state": "read in part",
+    "note": "Re-read 22 Oct 2026 (batch ronq): read/R982_reading.md and read/R982_en.md, log read/R982_reread_log.md; decryption read/R982.dec.txt (key decode cut into words, page by page, spaced.py). 24 Oct 2026: 91.9% of the words of read/R982_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 14 Nov 2026 (verification): re-read on the full-resolution DECODE images; 12 holes closed (flourished 7 read as 2/3, 4/9, a struck o, and fin = ofrece / 109 = Bruselas from the sibling margins); 95.4% of the words read as sense: read.",
+    "state": "read",
     "language": "es",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "Read on the images (no margin), second-pass re-transcription in txi/R982.txt (about 35 labels changed). Opening groups and about 12 phrase-level holes: soft scan (4/7/9 and tall signs not distinguishable) and no key material for dul, al, lop, fin, 109, bc. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 1 words bracketed (0 supplied, 1 partly) ([?de] in \"después [?de] la pérdida\", figure 4=t), 0 replaced; clean sentences on the reading body 0.621 -> 0.621. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1678: plain bar. '## Reading' heading added after the title of read/R982_reading.md: body plain 0.552 (16/29), explicit holes 0.828 (24/29), hole rate 0.082. The plain failures are gaps of the Spanish word list (progresos, infelicidad, irresolución, experimentamos, sorprendidos) and the explicit holes the known ones (soft scan; no key material for dul, al, lop, fin, 109, bc), about one per failing sentence; the sentences build. Keeps read."
+     "date": "2026-11-14",
+     "note": "Read on the images (no margin), second-pass re-transcription in txi/R982.txt (about 35 labels changed). Opening groups and about 12 phrase-level holes: soft scan (4/7/9 and tall signs not distinguishable) and no key material for dul, al, lop, fin, 109, bc. Verified word by word 22 Oct 2026 (verify2_ronquillo_align.py: reading aligned with the margin decipherment and the key decode of the corrected transcription): 1 words bracketed (0 supplied, 1 partly) ([?de] in \"después [?de] la pérdida\", figure 4=t), 0 replaced; clean sentences on the reading body 0.621 -> 0.621. v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Spanish of 1678: plain bar. '## Reading' heading added after the title of read/R982_reading.md: body plain 0.552 (16/29), explicit holes 0.828 (24/29), hole rate 0.082. The plain failures are gaps of the Spanish word list (progresos, infelicidad, irresolución, experimentamos, sorprendidos) and the explicit holes the known ones (soft scan; no key material for dul, al, lop, fin, 109, bc), about one per failing sentence; the sentences build. Keeps read. 14 Nov 2026 verification (Claude Opus 5.5): the images re-read group by group where the reading had holes, with a second, blind pass by another agent on the figures; 12 holes closed (details in the reading's Notes), [?habra] and [?tenemos] kept uncertain where the blind pass disagreed; 16 holes left in 330 words, read_share 0.919 -> 0.954 (v10 measure)."
     },
     "translation": "read/R982_en.md",
     "reading": "read/R982_reading.md",
-    "read_share": 0.919
+    "read_share": 0.954
    },
    {
     "doc": "margined",
@@ -596,7 +597,7 @@
     "transcription": "decode/DOC_R984_D2809_2809.txt",
     "decryption": "read/R984.dec.txt",
     "summary": "Ronquillo to Fuenmayor, Nijmegen 26 Feb 1678: on the assembly of the northern allies at Copenhagen; everything hangs on England's resolution; praises Fuenmayor for stopping the allies' ministers threatening the States General; the allies complain of Spanish subsidies paid in monthly instalments; a Hanover intrigue (a marriage to the Duchess of Celle's daughter; Estrades dealing with Hanover).",
-    "note": "Re-read 22 Oct 2026 (batch ronq): read/R984_reading.md and read/R984_en.md, log read/R984_reread_log.md; decryption read/R984.dec.txt (key decode cut into words, page by page, spaced.py).",
+    "note": "Re-read 22 Oct 2026 (batch ronq): read/R984_reading.md and read/R984_en.md, log read/R984_reread_log.md; decryption read/R984.dec.txt (key decode cut into words, page by page, spaced.py). 14 Nov 2026: 91 = asist- (R981 margin) closes one hole; read_share 0.967 -> 0.969.",
     "state": "read",
     "language": "es",
     "reading_review": {
@@ -607,7 +608,7 @@
     },
     "translation": "read/R984_en.md",
     "reading": "read/R984_reading.md",
-    "read_share": 0.967
+    "read_share": 0.969
    },
    {
     "doc": "margined",

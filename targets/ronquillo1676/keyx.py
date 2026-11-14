@@ -19,3 +19,6 @@ _ronq={'ers':'jo','bes':'espera','fos':'ningun','for':'ningun','121':'congreso',
  '104':'batalla','107':'beneficio','109':'bruselas','173':'suceso','182':'siempre','fes':'noticia','fol':'ocasion',
  'fel':'opinion','dun':'nuev','cun':'hech','con':'haber','126':'correo','175':'secret','400':'','470':'','760':''}
 K.update({k:v for k,v in _ronq.items() if k not in K})
+# 14 Nov 2026 (verification): three code values glossed in the margins of the sibling letters, not yet keyed:
+# fin = ofrece (R975, R977, R981), al = despues (R980, R981 x2; balbases1677 R986 x2), 91 = asist- (R981 x2).
+K.update({k:v for k,v in {'fin':'ofrece','al':'despues','91':'asist'}.items() if k not in K})
