@@ -232,6 +232,30 @@
    ],
    "what": "WE028 reversed applied unchanged to the 328 aligned words (we028_check.py): 294 reproduce Wagner's word mechanically, 23 more by the clerk's spelling, overlaps, numerals or a re-split of 'General Wilkinson' and 'General binding' (fixing the doubtful 149, 232, 484); 3 encoder slips (611 order in information, 235 bil for the, John 101 51), troops 1077 tra x3, 5 unsettled on the image or alignment. Graham's 1806 code (graham1806) does not fit the reversed table.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Image 0226 (T260 roll 7, end of 24 Oct 1805) compared group by group: the 57 live groups agree with transcription.txt except the second Lakes, 153 1482L -> 153 148L (the final hook read as a 2, as on 0225; added to transcription_corrections.tsv). Before 'of' (76) the clerk wrote 362 285 (';' 'the'), then struck 153 148L 1 12 (an eye-skip to 'Lakes a few' two lines below); 'collecting' has no group: Wagner's gloss supplies it. With the correction we028_check.py gives 295 of 328 words mechanically (was 294); by hand 319 of 328 (was 317): the second Lakes and 'the' now fit, 'collecting' joins the encoder slips.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Entry 1077 = tra: in Beling's transcription both halves of the M97 r13 sheet read tra, and the block runs tol, ton, too, tor, total, toward, town, tra, trac, tract, traction (WE028 570-580), so tro cannot stand at 1077 in alphabetical order; WE028 has no tro or troop entry at all (tre 854, tri 856, tru 857 in Morris numbering). Morris uses 1077 for con-tra-ry (No. 18, 20 Sep 1814) and writes troops as 1519 (trouble, cut back by strokes) + 603 op. Claiborne's clerk wrote tro- as 1077 tra three times: a consistent substitution of the nearest syllable, not a misread of the sheet. The sheet image itself was not re-read here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Letters of 18 and 19 Nov 1806 (Library of Congress, Burr Conspiracy Collection; NARA T260 roll 8 image 0408 is a typed slip saying they were removed there). Their clear text is in print twice: the coded words decoded in PJM-SS 13 (Founders 02-13-02-0066 and -0069) and Claiborne's letterbook copy in clear, Rowland, Official Letter Books 4:36-37 (Internet Archive officialletterbo04clai). Images: www.loc.gov and its JSON API answer scripts with a Cloudflare challenge (HTTP 403), so whether the collection (one microfilm reel) is digitized could not be checked; no image, no transcription, no decoding. Territorial Papers IX is not open on the Internet Archive and HathiTrust answers with the same kind of challenge: not consulted.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -257,7 +281,7 @@
   ],
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
-  "fraction_read_source": "The texts are Wagner's 1805-1806 decipherments (printed); not new. Key coverage, measured by we028_check.py on transcription.txt with transcription_corrections.tsv: 294 of 328 words (89.6%) reproduced mechanically by WE028 reversed, 317 of 328 (96.6%) after hand classification (NOTES, Integration check). The contributor's own key, sure values only: 326 of 550 groups (59.3%), 202 of 328 words with every group sure (61.6%).",
+  "fraction_read_source": "The texts are Wagner's 1805-1806 decipherments (printed); not new. Key coverage, measured by we028_check.py on transcription.txt with transcription_corrections.tsv: 295 of 328 words (89.9%) reproduced mechanically by WE028 reversed, 319 of 328 (97.3%) after hand classification (NOTES, Integration check and Second pass). The contributor's own key, sure values only: 326 of 550 groups (59.3%), 202 of 328 words with every group sure (61.6%).",
   "provenance": "mixed",
   "credits": [
    {
@@ -275,16 +299,16 @@
   ],
   "gaps": [
    {
-    "item": "1077 = tra in WE028, used three times for tro- in troops: clerk slip, copy variant or a misread of the codebook sheet (M97 r13 fr. 1056-1057 not re-read)",
+    "item": "1077 = tra used three times for tro- in troops: WE028 has no tro entry and 1077 = tra fits the alphabetical run (second pass, 14 Nov 2026), so a clerk's substitution; the M97 r13 sheet image itself was not re-read",
     "blocker": "open-codes"
    },
    {
-    "item": "arrival (980 1?0 35, middle digit 3 or 8 on the image) and leather (1?37, 1087 = lea would fit) unsettled on the image; second Lakes (1482L, probably 148L) and the struck groups before \"of\" (the collecting) not checked on T260 roll 7 image 0226",
+    "item": "arrival (980 1?0 35) and leather (1?37) unsettled on T260 roll 7 image 0224: in both the digit is blotted under Wagner's gloss (179 riv and 1087 lea would fit). Image 0226 compared on 14 Nov 2026 (second Lakes corrected, 'collecting' not encoded)",
     "blocker": "illegible"
    },
    {
-    "item": "letters of 18 and 19 Nov 1806 (LoC, Burr Conspiracy Collection) in the same code not seen; whether they are online was not checked",
-    "blocker": "not-attempted"
+    "item": "letters of 18 and 19 Nov 1806 (LoC, Burr Conspiracy Collection, one microfilm reel) not seen: loc.gov answers scripts with a Cloudflare challenge, so whether they are online is still unknown; clear texts printed in PJM-SS 13 and Rowland 4:36-37",
+    "blocker": "needs-physical-access"
    },
    {
     "item": "PJM-SS \"key not found\" notes read through web-search snippets only: Founders Online is behind an AWS WAF challenge for scripts and no browser was available in this session",
@@ -306,7 +330,7 @@
     "language": "en",
     "state": "read",
     "read_share": 1.0,
-    "summary": "Wagner's 1805-1806 decipherments (printed), aligned word by word with the groups; WE028 with reversed blocks reproduces 317 of 328 words (294 mechanically).",
+    "summary": "Wagner's 1805-1806 decipherments (printed), aligned word by word with the groups; WE028 with reversed blocks reproduces 319 of 328 words (295 mechanically).",
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout (with Claude)",
