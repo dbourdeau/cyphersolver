@@ -1,0 +1,276 @@
+{
+ "schema_version": 1,
+ "target": "claiborne1806",
+ "title": "Claiborne to Madison, 1805-1806 (NARA T260 Orleans): the State Department code of 'key not found' despatches, structure rebuilt and 261 of about 1 600 values",
+ "documents": [
+  {
+   "id": "or-1805",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T260 roll 7, images 0224-0226 (Claiborne to Madison)",
+   "date": "24 Oct 1805",
+   "year": 1805,
+   "country": "United States",
+   "route": "W. C. C. Claiborne, governor of the Orleans Territory -> James Madison, Secretary of State",
+   "places": {
+    "from": "New Orleans",
+    "to": "Washington"
+   },
+   "language": "English",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment, printed in PJM-SS 10, 11, 13 and (24 Oct 1805) Rowland, Official Letter Books 3:211-213"
+   },
+   "length": {
+    "tokens": 270,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA T260 microfilm images (public domain)",
+    "image_quality": "fair",
+    "notes": "groups transcribed line by line on crops; counts approximate"
+   }
+  },
+  {
+   "id": "or-1806a",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T260 roll 8, image 0045 (Claiborne to Madison)",
+   "date": "13 Jan 1806",
+   "year": 1806,
+   "country": "United States",
+   "route": "W. C. C. Claiborne, governor of the Orleans Territory -> James Madison, Secretary of State",
+   "places": {
+    "from": "New Orleans",
+    "to": "Washington"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment, printed in PJM-SS 10, 11, 13 and (24 Oct 1805) Rowland, Official Letter Books 3:211-213"
+   },
+   "length": {
+    "tokens": 75,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA T260 microfilm images (public domain)",
+    "image_quality": "fair",
+    "notes": "groups transcribed line by line on crops; counts approximate"
+   }
+  },
+  {
+   "id": "or-1806b",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T260 roll 8, image 0409 (Claiborne to Madison; held out)",
+   "date": "25 Nov 1806",
+   "year": 1806,
+   "country": "United States",
+   "route": "W. C. C. Claiborne, governor of the Orleans Territory -> James Madison, Secretary of State",
+   "places": {
+    "from": "New Orleans",
+    "to": "Washington"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment, printed in PJM-SS 10, 11, 13 and (24 Oct 1805) Rowland, Official Letter Books 3:211-213"
+   },
+   "length": {
+    "tokens": 45,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA T260 microfilm images (public domain)",
+    "image_quality": "fair",
+    "notes": "groups transcribed line by line on crops; counts approximate"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "Numerical code of about 1 600 numbers: vocabulary in alphabetical order by segments of variable length, segments permuted ('one and a half part'); I/J and U/V merged; hook = -s, triangle = -ed.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "digit_groups": {
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Jacob Wagner's interlinear decipherments, printed in PJM-SS 10:464-65, 11, 13 and Rowland, Official Letter Books of W. C. C. Claiborne 3:211-213. The key itself is listed as not found by the editors; no reconstruction found. Nothing in this repository (12 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout set the rules (protocol before the calculation). An AI agent transcribed, aligned and built the partial key; no human palaeographer checked.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
+  ],
+  "first_date": "2026-10-27",
+  "last_date": "2026-10-27"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Groups of the three NARA pieces transcribed line by line.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "328 words aligned with the printed decipherments; 261 numbers valued (89 sure, 145 probable, 27 doubtful).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "One-and-a-half-part code: alphabetical segments of variable length, permuted; 96 % of sure/probable pairs in order within pages of 50 (controls <= 57 %).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out letter of 25 Nov 1806: 22 of 23 testable new groups fall at their alphabetical place.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "History of the code from Founders and Rowland: sent 8 July 1805, received 12 Aug 1805; Graham's Weber 419-30 code is Sargent's, a different one.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Values read off Wagner's interlinear decipherments of the same letters; structure validated on a held-out letter.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "key extended or corrected"
+  ],
+  "validation": {
+   "date": "2026-10-27",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Structure: 22/23 held-out groups at their place; 96 % order in pages of 50 against <= 57 % for controls. Not a validation of a complete key."
+  },
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "The three pieces are aligned word by word with the printed decipherments (328 words); no new reading is claimed.",
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Jacob Wagner's interlinear decipherments, printed in PJM-SS and Rowland",
+    "date": "1805-1806"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "partial key (261 values, no earlier key known) and structure of the code; correction of three details of the printed text (489 = wise, 235 = bil slip, 611 = order slip)",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "about 1 340 numbers of the code unvalued",
+    "blocker": "no-key-material"
+   },
+   {
+    "item": "letters of 18-19 Nov 1806 at the Library of Congress not accessible",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "doubtful zones 135, 143, 149, 362, 364, 484, 1037/1087",
+    "blocker": "open-codes"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "or-1805",
+    "label": "Claiborne to Madison, 24 Oct 1805, 13 Jan and 25 Nov 1806",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Despatches on the Spanish threat (Pensacola, Baton Rouge) and the Burr affair, read from the printed decipherments; aligned word by word.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-14",
+     "note": "content existing (Wagner); the alignment of 328 words is ours; no new reading"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "No image is reproduced. The value of the target is the partial key and the structure of the code."
+ }
+}
