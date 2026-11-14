@@ -76,3 +76,26 @@ User must verify: the counts before quoting them.
 Checked: DECODE search index for five terms, Tomokiyo's Louis XIII page for other Cocquet/Mangot items. Not checked:
 a page-by-page scan of Clair 368-373 for further Rome letters (the 400-px contact sheet of Clair 369 canvases 280-359 is
 too coarse). User must verify: that Cocquet's identity and the Rome embassy key are not documented elsewhere.
+
+## 14 Nov 2026: labelled transcription and family lead (Brice Dudout's agents)
+
+- **Transcription** (`transcription_f317.txt`). Image: Gallica view 329 at full size (6124 x 5431; Source gallica.bnf.fr / BnF).
+  Two blind passes by independent agents from the image only (188 and 187 cipher tokens; neither saw the other),
+  compared sign by sign; disagreements were settled on 2-4x crops. Result: **186 cipher tokens in nine lines,
+  about 45-50 distinct signs**, nine places left as `{x|y}`. The passes agreed on segmentation almost everywhere;
+  the main label differences were naming only (the small flat-topped 8, here `B`, and the round d).
+  Settled on the image: the last sign of line 1 has two bars (T2, probable); line 2 has a three-bar sign followed by a
+  two-bar sign; the two signs after "a" in line 5 are the clear abbreviation "f[air]e", not cipher; the dot-slash
+  marks at the end are punctuation. Open: whether "soy" in line 8 is clear or cipher (+3 tokens).
+- **Repertoire** (most frequent): round d 16, B 13, PU 12, theta 10, infinity loop 9, `ot` 9, q 8, L 8, I 7,
+  underlined pi 6, g 6, s 6, $ 6; numbers 86 (three times) and 89; o with two dots (three times); underlined y, n, C.
+- **Family lead, not measured.** Tomokiyo's reconstruction of **de Castille's cipher (Clair 369 f. 11, 1616)**,
+  `../../research/gallica_siblings/src/louisxiii_Castille.png`, is built the same way: letter homophones drawn as
+  d, theta, H, eta, q, g, long s, a barred ff and a barred #, pi among the nulls, two-digit syllable codes in the
+  73-99 band (85 con, 88 de, 89 di, 93, 99 est), and digits with two dots for syllables. Cocquet has every one of
+  these classes (86 x3, 89, o with two dots, pi, theta, round d, H, eta, q, g, long s, barred ff). Baugy and Du
+  Maurier are figure ciphers; the Clair 372/373 keys use numeric word codes. This revises the 16 Sept note
+  ("only generic shapes"): the overlap is in structure, though Cocquet's values may differ from Castille's.
+  Castille's key was **not** applied; it is the first test to run (one held-out measure against shuffled keys).
+- Not done: a quantitative family test (sign-set overlap against shuffled witnesses); it needs Castille's key
+  transcribed with the same labels.
