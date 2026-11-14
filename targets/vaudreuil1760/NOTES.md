@@ -61,7 +61,7 @@ changed the same day). The gaps below all keep an outside blocker; nothing in th
 
 ## Remaining gaps
 - groups cut by the binding at the right edge of ff.147v-151v (20 partly visible and not restored, 27 wholly lost) - blocker: illegible; microfilm image, a clear copy would restore them
-- f.147v.4 "et i" after "tiennent ce poste" and f.147v.9 "mais son se le pour-ra-t" (6 groups) - blocker: open-codes; cells confirmed on the alphabetical sheet, the words are not identified
+- f.147v.4 "et i" after "tiennent ce poste" and f.147v.9 "mais son se le pour-ra-t" (8 groups: 2 at f.147v.4 and 6 at f.147v.9, as in gaps.json) - blocker: open-codes; cells confirmed on the alphabetical sheet, the words are not identified
 - f.147v.24-25 "au pre[..] / i si un instant favorable" (3 groups) - blocker: open-codes; the order given for the Machault, words not identified
 - f.148r.13-14 "fin-i-ra bateau campagne" (5 groups) - blocker: open-codes; the officer Villemont, "fin i ra" and "bateau" confirmed, the phrase is not
 - f.148v.17 "de b l[..]" (2 groups) after "quinze diverses charges du" - blocker: open-codes; the word is not identified
@@ -95,3 +95,5 @@ The records' image lists end one short for 1388 (the 13th image, e000874967, hol
 decode, stats), `WORKLOG.md`, `profile.json`. Images are fetched, not stored (`img/`, `key/*.jpg`, `crops/` are git-ignored); fetch with
 `curl -L "https://central.bac-lac.gc.ca/.item?id=e000875753&op=img&app=nf"` (ids e000875753-58 and e001295267-76).
 Image credit: Library and Archives Canada (LAC) / Archives nationales d'outre-mer (ANOM), via New France Archives.
+
+Count check, 14 Nov 2026: the ranges in gaps.json add up to 26 groups, while the page and profile give 24 open groups. Not reconciled here (two ranges may also be counted among the binding losses); to settle against transcription.txt.
