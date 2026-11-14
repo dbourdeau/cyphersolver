@@ -7,7 +7,10 @@ filed (`NOTES_R3.md`). 13 Nov 2026, R8: the blind fourth reading (b198, `blind4_
 figure of record for f.102, f.104 and f.204 and confirms that the hand, not the key, is the limit. The gaps are still
 workable (the hand, frame 278, drafts not yet searched), so the target stays in progress. 14 Nov 2026, PR #558: the slip
 labelled f.7 is fol. 6 verso, the second page of dispatch No. 32 (labels only; no figure changes; see "Correction of 14 Nov
-2026" below), and the prior art of f.204 is not cleared.
+2026" below), and the prior art of f.204 is not cleared. 14 Nov 2026, PR #578 (Andrew Beling, with AI agents): eight more
+annexes of the volume decoded with the same key, the Nr. 540 clear copies of the 1645 annexes Nos. 31 and 32 found, and 23
+gloss pairs of frame 278 checked against the key; all added texts are decoded, not read, and no figure of record changes
+(see "Integration check of the Beling addition" at the end).
 Outcome method set by the owner to "read with known key" (see Integration check of the R3 files).
 
 Bottom line: the cipher is broken. We recovered the key from the ciphertext alone, and four independent checks confirm it, including the clear drafts in the sister volume Nr. 529. The slips are read only in part: every bare slip is below our own 65% line (strict 26.19% to 45.71% on the first pass, figures of record). The limit is our reading of the hand, not the key. The content of f.5, f.6 (recto and verso; the verso is the slip labelled f.7) and f.101 exists in clear in Nr. 529, so it is not first.
@@ -112,14 +115,16 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 - Prior art of f.204 ("Annotata ad Num. 40", frame 233) - blocker: not-attempted; f.204 lies in the frames 226-259 Annotationes run linked to the margin notes of the Nr. 529 diary, and diary No. 40 was outside the ranges searched; Nr. 529 No. 40, the Nr. 545 fair copy and Nr. 546 are still to check (contributor's correction of 14 Nov 2026, follow-up promised).
 - The hand: g/q, c/e, t/l and final f/n confusions cap every slip at 26-46% (f.7, f.101, f.102, f.104, f.204; the blind fourth reader b198 says the same of its own transcription) - blocker: not-attempted; the key is complete (the envoys' own table, frame 168), so a careful third transcription of the slips at full size with the frame-51 glossed reference is workable. The integration check found reader 2 closer to the image than reader 1 on f.204 lines 1-3 (below). Was marked "illegible" in `profile.json`; it is not.
 - Clear drafts for f.102, f.104 and f.204 - blocker: not-attempted; Nr. 529 searched only in the frames listed in `nr529/README.md`; Nr. 543 (Krull's draft reports), 537, 538, 540, 546 not checked.
-- Frame 278 of Nr. 530 ("Signatura catalogi sive clavis": a sign table and a long cipher passage with interlinear glosses) and frames 5, 6 - blocker: not-attempted; not compared with KEY_v2 or used for the name signs.
+- Frame 278 of Nr. 530 ("Signatura catalogi sive clavis": a sign table and a long cipher passage with interlinear glosses) and frames 5, 6 - blocker: not-attempted; 23 gloss pairs of frame 278 now agree with the worksheet key (146/153 letters, PR #578, not blind), but its cipher passage is not read as a text and its signs are not used for the name signs; frames 5, 6 not compared.
+- The 1645 annexes Nos. 31 and 32 (f.210-212): delta lines, the Elbe clause, zeta, the 27/72 year, the secretary's surname - blocker: not-attempted; 16 items in `nr540/f210_gaps.tsv`, the clear copies are in Nr. 540 Bd. 1.
+- Nos. 20, 21, 22, 23 gamma (frames 250-259) and Nos. 3, 20 (frames 161-162): holes and marked repairs in most lines, strict 54-57% on the three with a word ledger - blocker: not-attempted; the hand again, and clear copies in Nr. 540 or drafts in Nr. 529 not yet searched for them. No. 29 (frames 244-245) and the cipher in the letters of frames 15-28, 186, 203, 252, 281, 283 are not filed.
 - Name signs (Catalogus, frames 3 and 278) left as holes ('|') - blocker: not-attempted.
 - f.101 is short (35 cipher words, one reader) - blocker: too-short for its own control; its clear draft is in Nr. 529 frame 532.
 
 ## Escalation
 
-- [x] siblings: the five bare slips and the two training slips of Nr. 530 found and decoded; frame 278 (glossed) not yet used (open)
-- [x] clear-pages: Nr. 529 clear drafts found for f.5, f.6, f.7 and f.101 (frames 875, 881-882, 532); not for f.102, f.104, f.204 in the frames searched (open)
+- [x] siblings: the five bare slips and the two training slips of Nr. 530 found and decoded; frame 278: 23 gloss pairs checked against the key (PR #578), passage unread; eight more annexes (frames 161-162, 240-243, 250-259) decoded by Andrew Beling, 14 Nov 2026 (open)
+- [x] clear-pages: Nr. 529 clear drafts found for f.5, f.6, f.7 and f.101 (frames 875, 881-882, 532); not for f.102, f.104, f.204 in the frames searched; Nr. 540 Bd. 1 holds the clear copies of the 1645 annexes Nos. 31 and 32 (frames 633-634, 648-650; PR #578), not yet searched for the other annexes (open)
 - [x] known-keys: the envoys' own key (frame 168, AMPHICTYONES) equals KEY_v2 in all 12 pairs; decoding the slips with it gives the same letters
 - [ ] print: Acta Pacis Westphalicae and older Magdeburg histories not searched page by page
 - [x] key-rebuild: not needed (the key is complete)
@@ -374,3 +379,47 @@ the 103 records replace an earlier count of 104 that held an artificial label 37
   Nr. 529 not yet searched for them.
 - Copied reading files mention working paths of our project (`output/...`, `crops/...`, `sources/raw/...`); those
   files and the images are not in this repository.
+
+## Integration check of the Beling addition (14 Nov 2026, PR #578)
+
+Checked by an AI agent at integration; the contributor's section above is left as filed.
+
+| claim | contributor | at integration | how |
+|---|---|---|---|
+| the ten decodes | reproduce | reproduce | `scripts/beling_build.py --check`: all identical; a second decoder written from the 12 pairs: 0 differing lines of 417 |
+| cipher words, eight annexes | 3,429 in 386 records | 3,429 in 386 | recount (922, 328, 294, 256, 14, 1,495, 48, 72); f.102 84 and f.104 103 besides |
+| frame-4 booklet key, right page | 0.8659, best shuffled 0.2793 | the same | `heldout_test.py` rerun on a copy |
+| frame 278, 23 gloss pairs, booklet key | 0.8889, best shuffled 0.4314 | the same | `check_0278.py` rerun |
+| frame 278 with the worksheet key | 146/153 letters, 18/23 words | the same | `beling_build.py --frame278` |
+| SHA-256 lists of `gloss/frame278_BEL` | match | 11 of 11 match | `sha256sum -c` |
+| word ledgers S / L / R / E | 42/13/15/2, 160/41/50/5, 187/44/83/14 | the same | recount of `units/*_BEL_words.tsv`; every `literal` equals the decode of its `cipher` |
+| strict share f139 | 42/72 = 58.33% | **41/72 = 56.94%** | one S word stands on an unsettled glyph |
+| strict share f224 | 160/256 = 62.50% | **139/256 = 54.30%** | 21 S words stand on an unsettled glyph |
+| strict share f212 | 187/328 = 57.01% | 187/328 = 57.01% | no S word on an unsettled glyph |
+
+- **The strict rule.** The ledgers count a word as S when the first of two branches of a glyph "the image did not settle"
+  gives the word. For the blind fourth reading this folder counts a word holding a doubtful letter as a hole, and the same
+  rule is applied here: f139 41/72, f224 139/256, f212 187/328. These are the `read_share` values in `profile.json`; the
+  contributor's figures (58.33%, 62.50%) appear once, here and in the table of the section above. The ledgers are not blind (the
+  readers knew the key; f212 is aligned with the clear copy), so none of the three enters `fraction_read`, which stays
+  135/354 = 0.3814 on the five held-out slips.
+- **Order of events.** That `PREREG.md` and `PREREG2_frame0278.md` were written before the key file and the frame-278
+  transcription rests on the contributor's record (local dates, no external stamp). The frame-278 reader had seen the page.
+  The booklet key differs from the worksheet in one pair (m/p for x/w, the W-shaped glyph written as m), which the
+  contributor states; the tests confirm the known table and add no key.
+- **Images** (LASA viewer, max jpg, 14 Nov 2026). Frame 162 (f139), all 72 words: 69 agree with the transcription, 3 are
+  look-alikes (c/e in *bdehrhb*, g/q in *qgtldoz*, *giezd*). Frame 242 (f212) lines 1-6, 52 words: 48 agree, 4 are
+  look-alike or smudged (*pdodf*, *qgÿdblWgferid*, *bdtsbt*, *xdrfd?*). Frame 278: ten of the 23 gloss pairs seen as
+  transcribed (Mylonius, Rasquius, Medicus, Lampadius, Secretarii, General, Majeur, Minden, recomendiren,
+  difficultaten). Nr. 540 Bd. 1 frame 633: headed "Annotationes ad continuationem Diarii sub No. 31", f. 585, opening
+  "Praesertim cum sint Status Imperii atque inter eos plurimi Evangelici, quibus per Gallos non multum sperare liceat",
+  which is the decode of f212 line 1 with its signs filled. Frames 648-650 (No. 32) and frames 250-259 were not opened.
+- **Not first.** The content of the 1645 annexes Nos. 31 and 32 is in clear in Nr. 540 Bd. 1, as that of f.5, f.6 and
+  f.101 is in Nr. 529. Braun (2015) was not opened at integration.
+- **Class.** Every added text is below the 65% line and the gaps are workable, so the target stays `Status: in progress`:
+  folder only, no page, no README row. Catalogue 1639 keeps its entry with one sentence added.
+- **One key, one entry.** All added annexes use the frame-168 table; they belong in this folder.
+- **Credit.** Andrew Beling, with AI agents (`ajbeling` in `outcome.credits`: transcription, identification of the
+  Nr. 540 copies). The key and the first readings are Malcolm McBratney's. Two parts overlap work Malcolm McBratney has
+  announced (frames 226-259 against the Nr. 529 diary; frame 278); both contributors' files stay side by side.
+

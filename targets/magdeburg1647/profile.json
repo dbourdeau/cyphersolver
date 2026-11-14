@@ -472,7 +472,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Clear drafts of f.5, f.6 recto and verso (the verso is the page labelled f.7) and f.101 (the enciphered passages underlined) in LASA A 1 Nr. 529, frames 875, 881-882 and 532; found 13 Nov 2026 after the key was recovered and the slips decoded. No decipherment found for f.102, f.104, f.204 in the Nr. 529 frames searched; Nr. 543 (Krull's draft reports) not checked. The file holds the contemporary key worksheet (frame 168). Details: PRIOR_ART.md, nr529/README.md. f.204 prior art not cleared: it lies in the frames 226-259 Annotationes run linked to the Nr. 529 diary margin notes, and diary No. 40 was not searched (PR #558).",
+   "where": "Clear drafts of f.5, f.6 recto and verso (the verso is the page labelled f.7) and f.101 (the enciphered passages underlined) in LASA A 1 Nr. 529, frames 875, 881-882 and 532; found 13 Nov 2026 after the key was recovered and the slips decoded. No decipherment found for f.102, f.104, f.204 in the Nr. 529 frames searched; Nr. 543 (Krull's draft reports) not checked. The file holds the contemporary key worksheet (frame 168). Details: PRIOR_ART.md, nr529/README.md. f.204 prior art not cleared: it lies in the frames 226-259 Annotationes run linked to the Nr. 529 diary margin notes, and diary No. 40 was not searched (PR #558). Beling addition (PR #578): the envoys' clear copies of the 1645 annexes No. 31 (Nr. 530 f. 212) and No. 32 (ff. 210-211) are in LASA A 1 Nr. 540 Bd. 1, f. 585r-v (frames 633-634) and ff. 599r-600v (frames 648-650); found 12 Nov 2026 and used for those two readings (nr540/README.md); frame 633 checked at integration.",
    "found": "after reading",
    "used": false
   },
@@ -624,6 +624,15 @@
    "kind": "reading",
    "what": "Beling addition: word-by-word readings with per-word ledgers and English for f139 (No. 20), f224 (No. 21) and f212 (No. 31; source-assisted, aligned with the Nr. 540 clear copy): strict 42/72, 160/256, 187/328; with look-alikes 55/72, 201/256, 231/328. _check_reading clean shares 0.143, 0.222, 0.121 with repairs marked, so all stay 'decoded, not read'. Two transcription errors in f212 corrected after an independent image check (51 words: 37 confirmed, 10 differ, 4 not legible).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of the Beling addition (PR #578): beling_build.py --check reproduces all ten decodes and an own decoder written from the 12 pairs gives 0 differing lines of 417; cipher-word counts reproduce (3,429 in the eight annexes, 386 records; plus 84 and 103 for f.102, f.104). All eleven SHA-256 values of gloss/frame278_BEL match and the three scripts reproduce 0.8659 / 0.2793 and 0.8889 / 0.4314 (pass by the bar written in PREREG, by the contributor's record of the order) and 146/153, 18/23 with the worksheet key. Word ledgers recount to S/L/R/E 42/13/15/2, 160/41/50/5, 187/44/83/14; with words on an unsettled glyph counted as holes (the rule used for b198) the strict shares are f139 41/72 = 0.5694, f224 139/256 = 0.5430, f212 187/328 = 0.5701. Images (LASA viewer, max jpg): frame 162 69 of 72 words agree, frame 242 lines 1-6 48 of 52, the rest look-alikes; frame 278 ten of the 23 gloss pairs seen as transcribed; Nr. 540 Bd. 1 frame 633 is the clear copy of No. 31. All added texts stay 'decoded, not read' and out of fraction_read (0.3814 unchanged). Status stays in progress.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -719,7 +728,17 @@
    {
     "item": "Nr. 530 frame 278 ('Signatura catalogi sive clavis': sign table and a glossed cipher passage) and frames 5, 6",
     "blocker": "not-attempted",
-    "detail": "not compared with KEY_v2 or used for the name signs"
+    "detail": "14 Nov 2026 (PR #578): 23 gloss pairs of frame 278 compared with the worksheet key (146/153 letters, 18/23 words exact; not blind). Still open: the glossed cipher passage is not read as a text and the name signs are not valued; frames 5, 6 not compared."
+   },
+   {
+    "item": "1645 No. 32 (f.210-211): delta lines, the Elbe clause, zeta, the 27/72 year; No. 31 (f.212): the secretary's surname",
+    "blocker": "not-attempted",
+    "detail": "16 items in nr540/f210_gaps.tsv; the clear copies are in Nr. 540 Bd. 1"
+   },
+   {
+    "item": "Nos. 20, 21, 22, 23 gamma (frames 250-259) and Nos. 3, 20 (frames 161-162): holes and marked repairs in most lines; strict 54-57% on the three with a word ledger",
+    "blocker": "not-attempted",
+    "detail": "the hand (c/e, g/q, t/l, final f/n); clear copies in Nr. 540 and drafts in Nr. 529 not yet searched for them; No. 29 (frames 244-245) and the cipher in the letters of frames 15-28, 186, 203, 252, 281, 283 not filed"
    }
   ],
   "texts": [
@@ -836,7 +855,7 @@
     "language": "de",
     "state": "decoded, not read",
     "summary": "Conversations with Lampadius and the Mecklenburg envoy in March 1645: a superficial peace, restitution, the archbishop of Magdeburg, Lampadius's six reasons for declining to act for all the Estates, Württemberg and amnesty, and questions and answers on the Emperor, the Swedes and the Turks; the lower block (delta) is still partly unread. English in translations/ is AI-made.",
-    "note": "Source-assisted: read with the envoys' own clear copy open (Nr. 540 Bd. 1), aligned by paragraph units, not word by word; 16 gaps and variants in nr540/f210_gaps.tsv. The mechanical decryption alone scores 'not a reading' (_check_reading 0.009) and the edition 'marginal' (0.677), so the state is set as for the slips above; AI agent (coordinator of the Beling continuation), 12 Nov 2026, not a person; scoped to the intelligibility and translation of the source-assisted edition and English (readings/f210_BEL_REVIEW.md). The prose leans on the Nr. 540 clear copy: it is a source-assisted reading, not an independent recovery of the plaintext from the cipher. No word-level read share is measured, so this entry is not in fraction_read."
+    "note": "Source-assisted: read with the envoys' own clear copy open (Nr. 540 Bd. 1), aligned by paragraph units, not word by word; 16 gaps and variants in nr540/f210_gaps.tsv. The mechanical decryption alone scores 'not a reading' (_check_reading 0.009) and the edition 'marginal' (0.677), so the state is set as for the slips above; AI agent (coordinator of the Beling continuation), 12 Nov 2026, not a person; scoped to the intelligibility and translation of the source-assisted edition and English (readings/f210_BEL_REVIEW.md). The prose leans on the Nr. 540 clear copy: it is a source-assisted reading, not an independent recovery of the plaintext from the cipher. No word-level read share is measured, so this entry is not in fraction_read. Content NOT FIRST: it is in clear in Nr. 540 Bd. 1 (by the contributor's record; frames 648-650 not opened at integration)."
    },
    {
     "doc": "f212",
@@ -851,7 +870,7 @@
     "language": "de",
     "state": "decoded, not read",
     "summary": "Reports of Lampadius and the Mecklenburg envoy: Wolfenbüttel's correspondence with the Emperor, Electoral Saxony's neutrality, Danish and French designs (succession in the Empire), Torstensson's plans. English in translations/ is AI-made.",
-    "note": "Word-by-word reading (13 Nov 2026), ledger units/f212_BEL_words.tsv: 328 cipher words, S 187 (as it stands), L 44 (hand look-alikes or the second branch of an unsettled glyph), R 83 (other marked repairs), E 14; read_share = strict S share; S+L 0.7043. The reading's _check_reading clean share is 0.121 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Source-assisted: the reading word is the aligned word of the Nr. 540 clear copy; 187 of 328 cipher words agree with it as they stand. Source-assisted: read with the envoys' own clear copy open (Nr. 540 Bd. 1); the clear text sits beside each cipher record in units/f212_BEL.tsv. The secretary's surname and Gallas stay tentative. The mechanical decryption alone scores 'not a reading' (_check_reading 0.163) and the edition 'marginal' (0.588), so the state is set as for the slips above; AI agent (coordinator of the Beling continuation), 12 Nov 2026, not a person; scoped to the intelligibility and translation of the source-assisted edition and English (readings/f212_BEL_REVIEW.md). The prose leans on the Nr. 540 clear copy: it is a source-assisted reading, not an independent recovery of the plaintext from the cipher. No word-level read share is measured, so this entry is not in fraction_read.",
+    "note": "Word-by-word reading (13 Nov 2026), ledger units/f212_BEL_words.tsv: 328 cipher words, S 187 (as it stands), L 44 (hand look-alikes or the second branch of an unsettled glyph), R 83 (other marked repairs), E 14; read_share = strict S share; S+L 0.7043. The reading's _check_reading clean share is 0.121 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Source-assisted: the reading word is the aligned word of the Nr. 540 clear copy; 187 of 328 cipher words agree with it as they stand. Source-assisted: read with the envoys' own clear copy open (Nr. 540 Bd. 1); the clear text sits beside each cipher record in units/f212_BEL.tsv. The secretary's surname and Gallas stay tentative. The mechanical decryption alone scores 'not a reading' (_check_reading 0.163) and the edition 'marginal' (0.588), so the state is set as for the slips above; AI agent (coordinator of the Beling continuation), 12 Nov 2026, not a person; scoped to the intelligibility and translation of the source-assisted edition and English (readings/f212_BEL_REVIEW.md). The prose leans on the Nr. 540 clear copy: it is a source-assisted reading, not an independent recovery of the plaintext from the cipher. Not in fraction_read (source-assisted, not blind). Integration check (14 Nov 2026): the ledger reproduces (no S word stands on an unsettled glyph, so 187/328 = 0.5701 stands); frame 242 lines 1-6 against the transcription: 48 of 52 words agree, 4 are look-alike or smudged; the Nr. 540 clear copy (frame 633, 'Annotationes ad continuationem Diarii sub No. 31', f. 585) opens with the same sentence as the decode. Content NOT FIRST: it is in clear in Nr. 540.",
     "read_share": 0.5701
    },
    {
@@ -877,9 +896,9 @@
     "language": "de",
     "state": "decoded, not read",
     "summary": "Partial readings: oaths, the principal proposition, delay and negotiations; actors uncertain. English is in the reading file and is AI-made.",
-    "note": "Word-by-word reading (13 Nov 2026), ledger units/f224_BEL_words.tsv: 256 cipher words, S 160 (as it stands), L 41 (hand look-alikes or the second branch of an unsettled glyph), R 50 (other marked repairs), E 5; read_share = strict S share; S+L 0.7852. The reading's _check_reading clean share is 0.222 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines, and no word-level read share is measured.",
+    "note": "Word-by-word reading (13 Nov 2026), ledger units/f224_BEL_words.tsv: 256 cipher words, S 160 (as it stands), L 41 (hand look-alikes or the second branch of an unsettled glyph), R 50 (other marked repairs), E 5; read_share = strict S share; S+L 0.7852. The reading's _check_reading clean share is 0.222 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines. Integration check (14 Nov 2026): 21 of the 160 S words stand on the first branch of a glyph the image did not settle; with unsettled-glyph words as holes, as for b198, strict 139/256 = 0.5430 (read_share); the contributor's figure 160/256 = 0.6250. Not blind; not in fraction_read.",
     "translation": "translations/f224_BEL.md",
-    "read_share": 0.625
+    "read_share": 0.543
    },
    {
     "doc": "f220",
@@ -926,9 +945,9 @@
     "language": "de",
     "state": "decoded, not read",
     "summary": "Two envoys quarrel over discussing temporalia, instructions and religion, then are reconciled; actors are signs. English is in the reading file and is AI-made.",
-    "note": "Word-by-word reading (13 Nov 2026), ledger units/f139_BEL_words.tsv: 72 cipher words, S 42 (as it stands), L 13 (hand look-alikes or the second branch of an unsettled glyph), R 15 (other marked repairs), E 2; read_share = strict S share; S+L 0.7639. The reading's _check_reading clean share is 0.143 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines, and no word-level read share is measured.",
+    "note": "Word-by-word reading (13 Nov 2026), ledger units/f139_BEL_words.tsv: 72 cipher words, S 42 (as it stands), L 13 (hand look-alikes or the second branch of an unsettled glyph), R 15 (other marked repairs), E 2; read_share = strict S share; S+L 0.7639. The reading's _check_reading clean share is 0.143 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines. Integration check (14 Nov 2026): one of the 42 S words stands on the first branch of a glyph the image did not settle (zusamen / zusamgen); with unsettled-glyph words as holes, as for b198, strict 41/72 = 0.5694 (read_share); the contributor's figure 42/72 = 0.5833. Frame 162 against the transcription: 69 of 72 words agree, 3 are c/e or g/q look-alikes. Not blind; not in fraction_read.",
     "translation": "translations/f139_BEL.md",
-    "read_share": 0.5833
+    "read_share": 0.5694
    }
   ]
  }
