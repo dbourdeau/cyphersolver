@@ -30,6 +30,7 @@
       <div class="cr-bar"><i></i></div>
       <p class="cr-read" translate="no" aria-label="The passage as it reads"></p>
       <div class="cr-tiles" translate="no"></div>
+      <button type="button" class="cr-more" hidden></button>
       <p class="cr-info" aria-live="polite"><span>${ciph.length} ${unit} &middot; ${read} read &middot; ${key.size} distinct.</span> <span class="cr-hint">${toks.some(t=>t.cls==='plain'&&t.p.trim().length>1)?'Italic words were written in clear. ':''}Hover or tab to a group to trace it through the text and the key.</span></p>
       <details class="cr-key"><summary>The key for this passage <span>${key.size} ${unit}</span></summary><div class="cr-grid" translate="no"></div>${d.key_note?`<p class="cr-note">${esc(d.key_note)}</p>`:''}</details>
       ${d.caption?`<figcaption>${esc(d.caption)}</figcaption>`:''}`;
@@ -96,6 +97,15 @@
     grid.addEventListener('click',e=>{ const r=e.target.closest('[data-g]'); if(!r) return; cur=null; trace(r.dataset.g);
       els.find(el=>el.dataset.g===r.dataset.g).scrollIntoView({block:'nearest',behavior:still?'auto':'smooth'}); });
 
+    // a long passage shows its first rows of tiles and a button: the reading line above already gives all of it,
+    // and 200 tiles are 2,500 px on a phone. Tracing a group from the key opens the rest.
+    const more=fig.querySelector('.cr-more');
+    const fold=on=>{ box.classList.toggle('clip',on); more.textContent=on?`Show all ${ciph.length} ${d.unit||'groups'}, sign by sign`:'Show fewer'; more.setAttribute('aria-expanded',on?'false':'true'); };
+    if(!fig.dataset.manual) requestAnimationFrame(()=>{ const lim=parseFloat(getComputedStyle(box).getPropertyValue('--crh'))*parseFloat(getComputedStyle(document.documentElement).fontSize);
+      if(box.scrollHeight>lim*1.5){ more.hidden=false; fold(true); } });
+    more.addEventListener('click',()=>{ const on=!box.classList.contains('clip'); fold(on); if(on) fig.scrollIntoView({block:'nearest'}); });
+    grid.addEventListener('click',()=>{ if(box.classList.contains('clip')) fold(false); },true);
+    addEventListener('beforeprint',()=>{ if(box.classList.contains('clip')) fold(false); });
     let run=0;
     const settle=(el,t)=>{ el._p.textContent=(t.show??t.p)||' '; el.classList.add('done'); el._r.classList.add('done'); };
     function play(){

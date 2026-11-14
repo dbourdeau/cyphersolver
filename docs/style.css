@@ -1789,3 +1789,11 @@ body:has(.ms-bg) ul.findings li[data-mirror] .fth .sc{mix-blend-mode:multiply;fi
   .cr-tiles .cr-t.null{min-width:.9rem}
 }
 @media (prefers-reduced-motion:reduce){.cr-read .cr-rt{transition:none}}
+/* a long passage: the first rows of tiles, faded out, and a button for the rest (cipher-reveal.js sets .clip) */
+.cr-tiles{--crh:17rem}
+.cr-tiles.clip{max-height:var(--crh);overflow:hidden;-webkit-mask-image:linear-gradient(#000 62%,transparent);mask-image:linear-gradient(#000 62%,transparent)}
+.cr-more{display:block;margin:.6rem auto .2rem;padding:.45rem 1.1rem;border:1px solid var(--gold);border-radius:999px;background:var(--amber-bg);color:var(--gold2);font:600 var(--fs-sm) var(--ui);cursor:pointer}
+.cr-more:hover{background:var(--gold);color:var(--gold-ink);transform:none;box-shadow:none}
+.cr-more[hidden]{display:none}
+@media (max-width:640px){.cr-tiles{--crh:11.5rem}}
+@media print{.cr-more{display:none}}
