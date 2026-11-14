@@ -72,7 +72,7 @@ GENERATED = [
     r'<meta name="(?:date|last-modified)"[^>]*>', r'<link rel="(?:icon|apple-touch-icon)"[^>]*>',
     r'\n?<!-- bnx -->.*?<!-- /bnx -->', r' data-bnx="1"', r'<span class="fth">.*?</span><!-- /fth -->',
     r'<!-- cattop:start -->.*?<!-- cattop:end -->\n?',
-    r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
+    r'<!-- press:start -->.*?<!-- press:end -->\n?', r'<!-- help:start -->.*?<!-- help:end -->\n?', r'<!-- browse:start -->.*?<!-- browse:end -->\n?', r' data-mirror',
     r'<!-- lasry:start -->.*?<!-- lasry:end -->\n?',
     r'\n?<p class="outcome">.*?</p><!-- /outcome -->',
     r'\n?<p class="credits">.*?</p><!-- /credits -->', r'<!-- contrib:start -->.*?<!-- contrib:end -->\n?',
@@ -920,6 +920,20 @@ def mirror_findings(s, n=RECENT_VISIBLE):
 FEATURED = ['voynich', 'lucca', 'armstrong', 'sunyatsen', 'feuquieres', 'ormonde']
 BROWSE_LANGS = 6        # languages listed under "Browse the write-ups"; the filter on writeups.html has the rest
 
+def press_html():
+    """The home page hero's "As seen in" line, from press.json: one link per published piece, oldest first. A piece with
+    no url (announced, not yet out) is not shown."""
+    items = [x for x in json.loads((HERE.parent / 'press.json').read_text(encoding='utf-8'))['items'] if x.get('url')]
+    if not items:
+        return '<!-- press:start -->\n<!-- press:end -->'
+    def link(x):
+        tip = ' title="' + html.escape(x['title'], quote=True) + '"' if x.get('title') else ''
+        lang = f' hreflang="{x["lang"]}"' if x.get('lang') else ''
+        return f'<a href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>{html.escape(x["outlet"])}</a>'
+    return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in items)
+            + '</p>\n<!-- press:end -->')
+
+
 def browse_html():
     """The routes from the home page into writeups.html: its own filters, each with what it would show."""
     from collections import Counter
@@ -1209,6 +1223,7 @@ def process(path):
         import _contributors_page as CP
         s = re.sub(r'<!-- help:start -->.*?<!-- help:end -->', lambda m: CP.helpband(PAGES, PROFILES), s, flags=re.S)
         s = re.sub(r'<!-- browse:start -->.*?<!-- browse:end -->', lambda m: browse_html(), s, flags=re.S)
+        s = re.sub(r'<!-- press:start -->.*?<!-- press:end -->', lambda m: press_html(), s, flags=re.S)
         s = re.sub(r'\n*<!-- contrib:start -->.*?<!-- contrib:end -->', '', s, flags=re.S)
         s = s.replace('<!-- catalogue:end -->', '<!-- catalogue:end -->\n\n' + CP.strip(PAGES, PROFILES, CONTRIB), 1)
         s = re.sub(r'<!-- live:start -->.*?<!-- live:end -->\n?', '', s, flags=re.S)
