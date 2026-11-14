@@ -158,3 +158,8 @@ https://www.digitale-sammlungen.de/en/view/bsb00116446?page=797 (n.194), ?page=7
 https://www.digitale-sammlungen.de/en/view/bsb00116447?page=287 (n.63), ?page=469 (n.106). Fetched by `scripts/fetch.py`
 and the survey script (IIIF, one request at a time, ~1 s apart, User-Agent WAINUT-research); no blocks met. Scans in
 `scans/` are not for git.
+
+## Note (14 Nov 2026): camerarius1630
+
+The Hague letters of 1630 (targets/camerarius1630, Riksarkivet) use a different code: six group numbers occur in both lists and all six
+differ in value (487, 722, 2095, 2472, 2503, 3143). Separate entries.

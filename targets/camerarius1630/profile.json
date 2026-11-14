@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "camerarius1630",
- "title": "Ludwig Camerarius's letters from The Hague, 1630 (Riksarkivet, Diplomatica Hollandica): letter table and code list rebuilt from the contemporary glosses and validated; the postscript of 20/30 Sept 1630 read and checked against its glossed original",
+ "title": "Ludwig Camerarius's letters from The Hague, 1630 (Riksarkivet, Diplomatica Hollandica): letter table and code list rebuilt from the contemporary glosses; the postscript of 20/30 Sept 1630 read through its glossed original; bare letters still open",
  "documents": [
   {
    "id": "img402-419",
@@ -262,13 +262,22 @@
    "kind": "reading",
    "what": "Image 442 read with the glosses of its original: 415 of 420 word units (0.988), reading_442_v2.md.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check: own decoder from key.tsv and the two code lists on transcription_442.txt reproduces the spelled words and code values of decryption_442_v2.txt; 442R compared with the Riksarkivet image (full/max): about 110 cipher elements agree (7/3 as declared); glosses of 439R lines 1-18 agree with reading_442_v2.md; strict recount 402/420 = 0.957 (contributor 0.988); camerarius1621 code compared: 6 shared groups, all with different values (separate key); class set to read in part (bare letters 432, 460, 454 open), method to read from existing decipherment.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "Letter table and code list learned from the contemporary glosses of other letters of the volume and validated on held-out letters (498, 442); 442 then turned out to be a duplicate of the glossed 438-440, whose glosses confirm the list and complete the reading.",
+  "method": "read from existing decipherment",
+  "method_basis": "Every text read here carries a decipherment of the time: the glossed letters on their own leaves, and image 442 through its glossed original on 438-440 (found 13 Nov 2026, after the code-list test). The letter table and the code list were learned from the glosses of other letters and passed the contributor's held-out tests (498, 442), but no letter without a decipherment of the time has been read yet (432, 460, the postscript on 454).",
   "contribution": [
    "transcription",
    "key recovered"
@@ -281,7 +290,7 @@
    "date": "2026-11-13",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py): letter table 0.904 vs 0.277 on image 498; code list 59/59 vs 0.695 (blind forced choice) on image 442."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py): letter table 0.904 vs 0.277 on image 498; code list 59/59 vs 0.695 (blind forced choice) on image 442. Integration check 14 Nov 2026: the hashes, scripts, decoys and judge files are not in the repository, so 'frozen before' is by the contributor's record; 442 turned out to be the bare duplicate of the glossed 438-440, so the held-out text had a decipherment of the time (not used by the test, by the contributor's record)."
   },
   "provenance": "mixed",
   "credits": [
@@ -306,11 +315,11 @@
   ],
   "gaps": [
    {
-    "item": "image 442: 5 of 420 word units unresolved (uu once, 3206, 2472, 2917, 3821, not glossed on the original either)",
+    "item": "image 442: 5 of 420 units unresolved (uu once, 3206, 2472, 2917, 3821; not glossed on the original either) and 12 probable",
     "blocker": "open-codes"
    },
    {
-    "item": "bare letters 432, 460 and the postscript on 454 not read; glossed originals not looked for (426 has one on 425, 441-443 on 438-440)",
+    "item": "bare letters 432 (Duplicata 13/23 Sept), 460 (19/29 Oct) and the postscript on 454 not read; their glossed originals not yet looked for in the volume (426 has one on 425R, 441-443 on 438-440); the images are online (Riksarkivet IIIF, Public Domain Mark)",
     "blocker": "not-attempted"
    },
    {
@@ -318,7 +327,15 @@
     "blocker": "not-attempted"
    },
    {
-    "item": "one AI reader on the images (two passes); 3/7, 1/7, 0/9 and 5/8 are easy to confuse; no human palaeographic check",
+    "item": "uu has no fixed value (glossed ab, a se, est; sometimes not glossed)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "the held-out tests' hashes, scripts and judge files are in the contributor's working folder, not in the repository: the order of events is by the contributor's record",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one AI reader on the images (two passes); 3/7, 1/7, 0/9 and 5/8 easy to confuse; no human palaeographic check",
     "blocker": "not-attempted"
    }
   ],
@@ -332,17 +349,20 @@
     "translation": "reading_442_v2.md",
     "language": "la",
     "state": "read",
-    "read_share": 0.988,
+    "read_share": 0.957,
     "summary": "Frederick Henry offers his help; Camerarius asks that Count Wilhelm's troops be kept (diversion or pay under the King's name) rather than disbanded into enemy hands; the States General defer; Neuburg has the Spanish led out of Juelich and seeks the same from the Emperor; the King should send orders and a soldier to take the companies into his service; a secret warning that the Prussian tolls are used to set Denmark against Sweden; intrigues against Camerarius.",
     "reading_review": {
      "grade": "A",
-     "note": "Read as sentences with the glosses of the original 438-440, aligned occurrence by occurrence; 5 code groups open; one AI reader, two transcription passes (second blind), no human review. docs/_check_reading.py on decryption_442_v2.txt: clean share 0.52 (names and period forms outside the word list).",
+     "note": "Read as sentences with the glosses of the original 438-440, aligned occurrence by occurrence; 5 code groups open; one AI reader, two transcription passes (second blind), no human review. docs/_check_reading.py on decryption_442_v2.txt: clean share 0.52 (names and period forms outside the word list). Integration check 14 Nov 2026: second decoder (own, from key.tsv) agrees on the spelled words; the strict share is 402/420 = 0.957 (probable units and the uncertain 'meam' are holes); 442R checked on the Riksarkivet image (about 110 elements agree, 7/3 confusions as declared) and the glosses of 439R top checked against reading_442_v2.md (all legible ones agree).",
      "by": "Claude Opus 5.5 agent for Brice Dudout",
      "date": "2026-11-13"
     }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "The glossed letters were deciphered at the time; what is new is the letter table and the code list as validated reusable tables (now 225 groups). Image 442, first read as an unglossed held-out text, is a duplicate of the glossed 438-440: its content is existing."
+  "notes": "The glossed letters were deciphered at the time; what is new is the letter table and the code list as validated reusable tables (now 225 groups). Image 442, first read as an unglossed held-out text, is a duplicate of the glossed 438-440: its content is existing. Not the 1621-22 Solms code of camerarius1621: the six code groups present in both lists all have different values (487, 722, 2095, 2472, 2503, 3143), so the two are separate entries (one key, one entry).",
+  "fraction_read": 0.957,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Image 442 (integration check 14 Nov 2026, README read bar, sure units only): 402/420 = 95.7%: the 403 units the contributor counts sure, less the spelled 'meam' (20.26.72.28, which the key decodes 'meal'; gloss 'nram' on the original; uncertain in both copies); the 12 probable and 5 unresolved units are holes. The contributor's figure, counting probable units: 415/420 = 0.988 (0.963 with the 11 probable nulls counted as unresolved). The bare letters 432, 460 and the postscript on 454 are not read; the target as a whole is read in part."
  }
 }
