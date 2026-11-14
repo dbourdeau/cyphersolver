@@ -338,6 +338,15 @@
    ],
    "what": "Outside validation by Brice Dudout (27 Oct 2026), table frozen: against Crawford's Despatch No. 4 interlinear decipherment, Paris 3 Sept 1813 (M34 roll 17 frames 0031-0032), 194/226 and 224/246 values agree (shuffled p99 0.027/0.020); against the Department's decoding of Everett's 8 Sept 1825 despatch (Manning doc. 1133), 288/304 = 0.947 (permuted p99 0.023). Two new values added as overrides (126 convey, 1323 been); his conflicting values kept apart in overlay_dudout.tsv.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Brice Dudout (with Claude Opus 5.5): the surviving State Department code sheet, NARA M97 roll 13 frames 1056-1057 (Weber WE028; Beling's transcription in ../morris1813, unchanged), tested first against all 1,742 grade-H clerk decode pairs of clerk_*.tsv with a frozen threshold: 1,624 agree (0.932), 200 shuffled keys at most 0.044. Then No. 88 decoded group by group with the sheet (we028_no88.tsv) and re-read on frames 0206-0207: eight grade-I values confirmed; 252 -> 262 st and 549 -> 649 min corrected on the image; one-digit slips fixed by the sheet (1864 tain 1364, 669 to 569, 588 tle 568, 508 ect 518, 818 ect 518, 1575 adv 1515); 927 is oud, read [rather] (727); 1398 is thirty, [there] restored. Remainder 172/177 words (0.972), Ford's nine lines 98/99 (0.990).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -377,15 +386,15 @@
    "transcription",
    "key recovered"
   ],
-  "class": "read in part",
+  "class": "read",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "python measure.py (22 Sept 2026, third pass): 380 of 390 code groups of No. 88 read as sense = 0.974 (gap88 133/133 = 1.000, rem88 247/257 = 0.961; the 7 gutter-cut groups counted unread); 382/390 valued; 362/390 = 0.928 without the grade-I values. JQA's copying slips 1112 1433 read as intended (im-pa-ir-ed) per his catchword 1102 and No. 83's un-im-pa-ir-ed (sense88.tsv header). Second pass: 355/390 = 0.910.",
+  "fraction_read_source": "python measure.py (22 Sept 2026, third pass): 380 of 390 code groups of No. 88 read as sense = 0.974 (gap88 133/133 = 1.000, rem88 247/257 = 0.961; the 7 gutter-cut groups counted unread); 382/390 valued; 362/390 = 0.928 without the grade-I values. JQA's copying slips 1112 1433 read as intended (im-pa-ir-ed) per his catchword 1102 and No. 83's un-im-pa-ir-ed (sense88.tsv header). Second pass: 355/390 = 0.910. 14 Nov 2026, with the M97 code sheet (we028_no88.tsv): 384 of 390 groups sure or probable (0.985); words: remainder 172/177 = 0.972, gap 98/99 = 0.990.",
   "fraction_read": 0.974,
   "codes_open": {
    "open": 3,
-   "total": 1166,
-   "tokens_open": 10
+   "total": 1600,
+   "tokens_open": 3
   },
   "grades": {
    "H": 301,
@@ -396,24 +405,24 @@
   "verification": [
    "contemporary decipherment",
    "historical consistency",
-   "statistical test",
-   "independent verification"
+   "independent verification",
+   "statistical test"
   ],
   "gaps": [
    {
-    "item": "rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx), cut by the binding gutter on the microfilm of frame 0207",
+    "item": "rem88 gutter-cut groups (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx): six read from their visible digits with the M97 sheet and the sense; 55x only restored ([thus], 558)",
     "blocker": "needs-physical-access"
    },
    {
-    "item": "rem88 l.5 1508 before [pre]-liminary",
+    "item": "rem88 l.5 1508 before pre-liminary: the M97 sheet gives acious / account",
     "blocker": "no-key-material"
    },
    {
-    "item": "rem88 l.9 1185 (He [took?] it as a demonstration)",
-    "blocker": "no-key-material"
+    "item": "rem88 l.9 1185 (He ... it as a demonstration): the M97 sheet gives wick; the gutter cuts a stroke after it",
+    "blocker": "needs-physical-access"
    },
    {
-    "item": "rem88 l.11 570 tol in \"it tol he said\"",
+    "item": "rem88 l.11 570 (it ... he said): the M97 sheet gives tol / toe; 'was' would be 500",
     "blocker": "no-key-material"
    }
   ],
@@ -437,6 +446,12 @@
     "date": "2026-10-27",
     "source": "https://bdudout.github.io/europe-chiffree/en/documents.html#crawford-1813",
     "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "14 Nov 2026: the M97 roll 13 code sheet (WE028) checked against the clerk decodes (0.932, shuffled max 0.044) and applied to No. 88; two digits corrected on the image; remainder 0.938 -> 0.972 of words",
+    "date": "2026-11-14"
    }
   ],
   "texts": [
@@ -455,7 +470,8 @@
     "language": "en",
     "reading": "texts/no88_gap_reading.md",
     "state": "read",
-    "read_share": 0.98
+    "read_share": 0.99,
+    "note": "14 Nov 2026: with the M97 code sheet, 98 of 99 words read as sense; 'thither' (grade I) withdrawn, 1398 is thirty on the sheet, the word is restored as [there]."
    },
    {
     "doc": "no88-remainder",
@@ -464,16 +480,16 @@
     "decryption": "texts/no88_remainder_decryption.md",
     "summary": "The rest of No. 88: a proposal to evacuate Prussia as a preliminary to negotiation would have been neither unreasonable nor offensive; the French ambassador Lauriston took Prince Kurakin's note as proof that Alexander would not negotiate; and JQA expects that early French success would let Napoleon strike directly at the centre of the empire rather than along the Baltic.",
     "reading_review": {
-     "grade": "A",
-     "by": "Claude Opus 5.5",
-     "date": "2026-10-23",
-     "note": "v5 check 23 Oct 2026 (English 1812: plain share is a bar too): the sweep scored the decryption file with hyphenated syllables and group table (plain 0.38, explicit 0.82). Reading written out with words joined, grade-I words marked [?], texts/no88_remainder_reading.md: plain 0.688 (11/16), explicit 0.812 (13/16); the failing sentences carry the inferred words and the valued-but-not-sense groups {1185}, {tol}. Keeps read."
+     "grade": "B",
+     "by": "Brice Dudout (with Claude Opus 5.5)",
+     "date": "2026-11-14",
+     "note": "Reading rewritten with the M97 code sheet (WE028), group by group in we028_no88.tsv; fiche in the reading file: 161 sure, 11 probable, 2 restored ([thus], [rather]), 3 unresolved (1508, 1185, 570). Grade B: seven groups are cut by the microfilm gutter and six words rest on one-digit slips."
     },
     "language": "en",
     "reading": "texts/no88_remainder_reading.md",
-    "state": "read in part",
-    "read_share": 0.938,
-    "note": "24 Oct 2026: 93.8% of the words of texts/no88_remainder_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "state": "read",
+    "read_share": 0.972,
+    "note": "14 Nov 2026: 172 of 177 words read as sense with the M97 code sheet (161 sure, 11 probable; 2 restored, 3 unresolved: 1508, 1185, 570); was 0.938 (24 Oct 2026)."
    }
   ],
   "key_file": "code_table.tsv"
