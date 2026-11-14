@@ -1,6 +1,6 @@
 # Linear A research
 
-Status: written up (docs/lineara.html), no ledger entries and no profile by the user's choice, 23 Sept 2026. Structure, numbers, commodities, accounting terms and three place names read; the language unread.
+Status: no write-up (the page docs/lineara.html was dropped from the site on 14 Nov 2026 at the owner's request; no ledger entries and no profile by the user's choice, 23 Sept 2026). Structure, numbers, commodities, accounting terms and three place names read; the language unread.
 
 ## Objective and limits
 
