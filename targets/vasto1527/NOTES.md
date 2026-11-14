@@ -112,3 +112,43 @@ here; it is kept as a cross-reference only and no longer counted as part of this
 del Vasto's December letter in Cipher 2, with no. 19 as its sibling: read, 98.0% measured. The image tools
 (`blocks*.py`, `grid*.py`, `crop20.py`, `halves.py`, `lines.py`, `seg.py`, `sheet.py`, `slowfetch.py`) work on the
 fr. 3022 scans and stay here.
+
+## 14 Nov 2026: no. 19 ff. 41r–42r transcribed; Lasry's key passes a held-out check
+
+Images: Gallica btv1b90601558, views 79–82 (Source gallica.bnf.fr / BnF). View 80 is f. 41r, view 81 is f. 41v and view 82 is f. 42r.
+
+**Transcription.** The cipher passages of no. 19 after f. 40v had never been transcribed. They are now: 63 lines, 612 groups, in `n19_transcription.txt`.
+- The transcription was done in two passes. Pass A (`n19_passA.txt`) used 3-line crops at 1:1. Pass B (`n19_passB.txt`) used 4-line strips at 0.6 scale and did not consult pass A.
+- The two passes differ in 4 lines, settled on the image (`gl` in 41r.05; `nnbtt` in 41r.28; `To qpsxb` = *inporta* in 41r.29; `LHpmhBttfo` = *holgasen* in 42r.08).
+- Pass B was made by the same reader, so it is not an independent transcription.
+
+**Held-out check of Lasry's key.** Neither his key nor this target's code values had ever seen these folios. A single pre-registered test was run (`PREREG_n19.md`, `n19_decode.py`, `n19_measure.md`):
+- 232 letter-only words were scored against the repository Spanish lexicon;
+- Lasry's key: 0.591; 200 shuffled keys: best 0.164;
+- **PASS** (threshold ≥ 0.50 and ≥ best control + 0.30).
+
+Decoded output is in `texts/no19_ff41-42_decryption.txt`. Strict count by sense: 565 of 612 groups read (0.923).
+
+**Content (6 Nov 1527).**
+- Del Vasto hopes for relief and asks the Emperor for a quick provision.
+- He reports that the Germans will not leave without their pay ("los alemanes no [quieren] salir en [cnt] manera …").
+- He plans to march out with the army "hasta que salgamos juntos", and to go and look for food.
+- He closes: "procuraremos que se vaya la [bog] de [rar]".
+- The second half of f. 41v is a personal plea to the Emperor ("como el menor criado y vasallo suyo").
+
+**Lasry's f. 40v.** At line 5, "caminamos por [bog] de no de venirse aca" has **[rar]**, not "no". On the image the group ends in r, unlike "ras" (= no) earlier on the same line. So: "si nosotros caminamos la buelta de [rar], de venirse aca".
+
+**Open groups of no. 6: new contexts, no value settled.** The list below was frozen (SHA-256 f51d12b2…) before any count:
+- **rar**: the destination of the imperial army's march. f. 40v reads "si nosotros caminamos la buelta de [rar]"; f. 42r reads "si querran caminar, procuraremos que se vaya la buelta de [rar]". Read with no. 6 ("ganar en el camino a [rar] y ponella debaxo el mando de V. M. … pues bastara a sustentar el exercito"), it is Florencia (a homophone of cac?) or Toscana. Luca is now unlikely. Open.
+- **cnt**: f. 42r has "los alemanes no [daf]n salir en [cnt] manera [el mundo?] si [bnq] …"; no. 6 has "si caminara en [cnt] parte". Alguna or otra. Open.
+- **bnq**: f. 42r, "si [bnq] y que dar …". f. 41v has a separate group **baq**: "podriamos si no tener por muy [baq] la vitoria". Open.
+- **dnh**: f. 41r, "la [der] [dnh] que [das]n (= tienen) de [?] la guerra". Roma, suggested by f. 40v, does not fit here. Open.
+- **car, cny, bny, beb, bnc, ge+**: they do not occur in ff. 41r–42r. Open.
+
+New code groups in no. 19, unread:
+- fab ×4: "para la [fab] casi ruinada", "en tranquilidad que [fab] si ruina", "holgasen de salir de tan … [fab]";
+- coh ×2, dig ×2, de ×2;
+- cot, bat, cil, dez, be, bob;
+- dob: "de tan gran [dob]".
+
+The no. 6 count is unchanged (0.980).
