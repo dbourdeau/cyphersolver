@@ -42,4 +42,4 @@ with open(out, 'a', encoding='utf8') as f:
             f.write(json.dumps(keep, ensure_ascii=False) + '\n')
         if page % 50 == 0:
             print(page, flush=True)
-        time.sleep(0.25)
+        time.sleep(2.5)
