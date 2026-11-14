@@ -1,0 +1,45 @@
+rucellai1482 (catalogue 2350 and lead 2323): what has been measured, and what has not
+
+1. The one pre-registered measurement of this cipher system (6 Nov 2026)
+   Key K_T, built from the pair 207/208 only, decoded the cipher passages of LXXII 204 and was compared with
+   their contemporary clear copy 205 (character agreement, Levenshtein alignment).
+   Agreement 0.6018 (176 operations over 442); 200 shuffled keys: best 0.2281, mean 0.1446.
+   Threshold set in advance: max(0.85, best + 0.30) -> not validated. 204/205 is used up.
+   A second test (13 Nov 2026) on the glossed groups of LXXII 201 against their interlinear glosses gave 0.5088
+   (best of 200 shuffled keys 0.2832) -> not validated; 201 is used up too.
+
+2. This key (K_HP_v1, 14 Nov 2026) has NOT been measured on a fresh portion
+   There is no HP passage with a contemporary clear left that has not been used: 204/205 and 201 are used up,
+   207/208 is the training pair, the five letters 196, 200, 202, 206, 211 are bare. So no validation figure is
+   given for this key. What follows are consistency checks, not tests.
+
+3. Fit on the training pair 207/208 (not a test)
+   1 - Levenshtein / length of 208 (535 letters):
+     key of 6 Nov (K_T) ................................ about 0.68 (first transcription)
+     lot 11 proposal, 14 Nov ............................ 0.7701 (transcription of 13 Nov)
+     lot 12 proposal, 14 Nov ............................ 0.7776 (same)
+     K_HP_v1 on the v2 transcription of 207 ............. 0.8093 (200 shuffled keys: best 0.340, mean 0.228)
+   The gain comes from one finding: the token "g" of the earlier transcription merged two shapes, a q with a
+   barred descender (= o) and a "g" with an open lower loop (= e). Re-examined sign by sign on the image of 207
+   (57 tokens re-classed), the two shapes take different values; the bare letters had been transcribed with "g"
+   for the first shape and "c" for the second, which made their decodings print e for o and t for e.
+
+4. Lexical consistency on the bare letters (not a test)
+   Share of the decoded letters covered by Italian words of 4 or more letters (a 16th-century Italian word list),
+   K_HP_v1 against 200 keys with the same values shuffled:
+     200: 0.319 (shuffled best 0.150)   202: 0.320 (0.223)   206: 0.378 (0.188)   211: 0.432 (0.127)
+     200-211 together (740 letters): 0.374 (shuffled best 0.122, mean 0.044; none of 200 reaches the key)
+     196: 0.368 (0.131), given for the record only: 196 was used for a lexical measurement on 14 Nov.
+   Before this work, with the lot 11 key and the earlier transcription: 196 0.246, 200 0.321, 202 0.256,
+   206 0.324, 211 0.186.
+   Every value change was accepted only if it did not lower the fit on 207 and raised the Italian letter-trigram
+   likelihood on held-out letters (one letter left out at a time, 200/202/206/211). The two new shape classes
+   pass on 207 (+0.034 and +0.037) and on 3 and 4 of the 4 letters. An automatic search for further single-value
+   changes found nothing that held out of sample. Signs absent from 207 (I, the dot, l with small o, crossed
+   equals) cannot meet the 207 condition: I = rr and dot = tt are kept as probable from the reading; the others
+   are left out of the key and only restored in the reading cards.
+
+5. What would validate it
+   A fresh HP letter with its clear (MAP LXXII 189-215 or XLVIII, not yet surveyed sign by sign), higher-resolution
+   images from the ASF, or Rucellai's printed keys (R. M. Comanducci, Il carteggio di Bernardo Rucellai, 1996,
+   Appendix III), which we have not seen.
