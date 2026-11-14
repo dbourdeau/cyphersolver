@@ -329,6 +329,12 @@
       "kind": "reading",
       "what": "Both cipher copies collated with the letterbook copy and the translation (alignment.tsv): word for word with the letterbook except Sorel/St Johns and the transcript's Robinson; each cipher copy has slips the other corrects; the 1781 translator had 'any other' for 'the least', 'would' for 'will' and guessed the signature 'A. F.'.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "what": "Integration check on merging PR #579: verify.py and measure_strict.py reproduced; a second decoder written from the key file and the frozen Clinton table gave the same 55 of 58 with the same three failures and 36 of 43 spelled groups; about 150 number pairs of B.148 p. 123 and about 75 numbers of PCC item 51 vol. 2 p. 227 compared with the images without a disagreement; the three failing words confirmed on the clear copy p. 102. Order of freeze and clear copy by the contributor's record.",
+      "result": "worked"
     }
   ],
   "outcome": {

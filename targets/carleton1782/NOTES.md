@@ -101,12 +101,29 @@ What we add: the reconstructed code table and Army List spelling over all three 
 
 Not in `catalogue.json` (items 781 and 783 are Clinton-Cornwallis photostats in the Clements Library, different letters). It attaches to waiting lead **1137** (Carleton Papers, TNA PRO 30/55: Clinton, Haldimand, Cornwallis and Leslie letters in cypher, 1779-1782), whose Carleton side this is, and whose 1779 Clinton-Haldimand item Brice Dudout pointed to (#359). Lead 1136 (Cornwallis Papers, PRO 30/11) is the southern Common cipher of 1780-81, a different system.
 
+## Integration check (14 Nov 2026)
+
+Verified from the files by the integrating reader (an AI reader, not a person) when PR #579 was merged.
+
+- Reproduced: `verify.py` passes every line (freeze hashes, the 200 regenerated predictions, 55 of 58, 21 of 25, 36 of 43, control mean 0.44 and maximum 15, the 16 March controls). `measure_strict.py` gives 236 of 268, 103 of 109, 171 of 182 and 510 of 559. `docs/_check_profile.py carleton1782`: valid; `docs/_check_terms.py carleton1782`: 0 hits; `docs/_check_writeup.py --gate`: 0 new violations.
+- Second decoder, written from `key/armylist_titlepage_1778.txt` and `preclear/evidence/clinton_word_constraints.tsv` without the contributor's code: the same 55 of 58 with the same three failures (22-19, 43-19, 9-8), 36 of 43 spelled groups exact, 56 codes without a prediction; Clinton 39 of 44 spelled words; the 16 March letter decodes to the same text from both cipher copies.
+- Images. Canadiana frame 1205 (B.148 p. 123; the file hash equals the one in `preclear/sources.json`): all six columns compared with the transcription, about 150 number pairs, no disagreement; one figure is doubtful at this resolution (column 6, 24-21 could be read 24-31, but line 24 has only 26 letters and 21 gives repairin). Frame 1183 (clear copy p. 102): "march from there", "one thousand Men" and "have contributed" are as the post-test alignment has them, so the three failures stand as failures. National Archives image 408459 (PCC item 51 vol. 2 p. 227): column 1 and the first seven boxes of column 2, about 75 numbers, no disagreement; the signature 6.11 11.1 is there. Not compared: the Clinton cipher pages (frames 1080-1082), the 6 Sep cipher, pp. 124-125, the second 16 March copy (p. 737) and the letterbook copy B.148 p. 21.
+- One point the notes did not state: in the 16 March letter the word after *since* (.29 .14 .17 .9) follows 16.31 .3, and by the rule "a dotted number repeats the last line" it would be line 16 and give *neor*; it reads *your* on line 18. The working copy carries a line override there (`test/transcription_reading.txt`, `{lead=18}`), and `test/TEST_PLAN.md` discloses the crib *your*. The page shows no line number at that place, so this is the clerk's omission, not a transcription slip.
+- The freeze: the hashes in `CHECKPOINT.md` and `SHA256SUMS` match the files; the order of events (freeze, then the clear copy) is by the contributor's record only, as the Freeze disclosure says. The test is a held-out test inside one system with clear copies, and the table was built from clear copies of the same headquarters.
+- The strict figures are word-level and were already counted strictly by the contributor; they stand. Two remarks: the three cipher-only units "to Pines Creek" (25 Sep, 66-68) are counted as read though no clear copy has them (without them 168 of 179, 0.939 [derived]); and 56 of the 139 word codes of 25 Sep take their value from that letter's own clear copy, so the share measures agreement with the 1782 clear texts, not an independent reading. Per document: Clinton 0.881, 6 Sep 0.945, 25 Sep 0.940, all read in part; the 16 March letter is spelled throughout and decodes in full but for 14.21 in *will* (65 of 66 word boxes [derived]).
+- Class and method stand: read in part, key partial (the word list is not identified; 10 of 174 codes have conflicting or provisional readings), key recovered from external plaintext.
+- Duplicates: no other target, catalogue entry or lead holds these letters; `balfour1781` only lists the two PCC items as not its own; lead 1137 stays a lead (its Carleton Papers copies were not opened here). `targets/haldimand1783` (PR #575) is a different system (Entick dictionary pages), not this key.
+- Why no page yet: three gaps can still be worked from the open images, so the folder stays `Status: in progress` as the contributor filed it (see the last three lines of Remaining gaps).
+
 ## Remaining gaps
 
 - Clinton 22 Feb, the glare strip on p. 11B column 4 (to [?]duce it that engagement by) and the prefix of reduce - blocker: illegible (photographic defect on the LAC film; original needed)
 - spelled groups that differ from the clear copies (Clinton intllligent, newyhrk, storis, hggreed; 6 Sep dit; 25 Sep incuosions, susnuehannah, reuuire) - blocker: needs-physical-access (digits or the special q mark in the originals)
 - codes with more than one reading across the letters (9-8 has/have, 22-19 thence/there, 13-14 in/on/near, 2-5 engagement/French, 46-9 just/been, 9-19 this/the, 11-1 an/any, 5-22 who/whose/whom) and the provisional 23-6, 49-9, 2-2 - blocker: open-codes (the printed word list is not identified; a headword list would settle inflection and digit slips)
 - the printed word list behind the codes - blocker: no-key-material (no candidate book found; `clinton_1782-02-22/DIFFERENCES.md` lists the coordinates any candidate must fit)
+- the duplicate arrangement of the 25 Sep cipher (B.148 pp. 126-128, frames 1208-1210) is not transcribed in full; it could settle incuosions, susnuehannah and reuuire without the originals - blocker: not-attempted (workable)
+- the other copies named in the margins (the 6 Sep cipher in Add MS 21705 fos. 73-74 = LAC B.45; CO 5/107) were not looked for on the LAC reels - blocker: not-attempted (workable)
+- the search for the printed word list (first number to 58, second to 34) has no recorded list of books tried - blocker: not-attempted (workable)
 
 ## Escalation
 
@@ -122,3 +139,4 @@ Not in `catalogue.json` (items 781 and 783 are Clinton-Cornwallis photostats in 
 - 2026-11-12: Army List key identified on Haldimand's 1778-81 letters; 6 Sep 1782 aligned; Clinton 22 Feb collated in full; freeze; 25 Sep test (Andrew Beling, with AI agents).
 - 2026-11-13: Haldimand to Clinton 16 Mar 1782 (PCC item 51 intercepts) identified, decoded with the unchanged key against a pre-written test, collated with both copies, the letterbook copy B.148 p. 21 and the 1781 American translation (Andrew Beling, with AI agents).
 - 2026-11-13: folder assembled from those packages, strict figures measured, profile and validation; second AI check, scoring error and two misreadings corrected in `posttest/`, print search (Andrew Beling, with AI agents).
+- 2026-11-14: integration check on merging PR #579 (reproduction, second decoder, image sample, strict figures confirmed); folder stays in progress.
