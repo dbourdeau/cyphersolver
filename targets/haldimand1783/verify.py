@@ -1,6 +1,7 @@
 """Recheck package measurements and frozen test totals; no network or writes.
-Run from the repository root: python3 -I targets/haldimand1783/verify.py
-Requires the repository checkers' NumPy dependency.
+Run from the repository root, with the same Python as the repository checkers (it needs NumPy):
+  PYTHONUTF8=1 python targets/haldimand1783/verify.py
+Do not use -I: isolated mode drops user site-packages, where NumPy often lives.
 """
 from pathlib import Path
 import csv,json,sys,importlib.util,collections,ast,re
@@ -15,7 +16,7 @@ for d,t in zip(p['documents'],p['outcome']['texts']):
  score=v.score(v.holes(v.body_of((T/t['reading']).read_text())),'en',True)
  assert abs(1-score['hole_rate']-t['read_share'])<1e-9
  assert all((T/t[k]).is_file() for k in ['transcription','decryption','reading','contemporary'])
- n=d['id'][-1]; rr=[x for x in rows if x['msg']=='No'+n or n=='3' and x['msg']=='P5']
+ n=d['id'][-1]; rr=[x for x in rows if x['msg']=='No'+n]
  marks=collections.Counter(x['mark'] for x in rr)
  print(d['id'],m['tokens'],'code groups;',dict(marks),'dictionary-evidence items;',t['read_share'],'strict reading share;',t['state'])
  assert t['state']!='read'

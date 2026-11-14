@@ -257,6 +257,12 @@
       "kind": "literature search",
       "what": "Recorded the 12-13 Nov prior-art results: Pemberton's 1972 thesis (all 373 pages OCR-screened, relevant passages and bibliography read) and his 1976 Vermont History article checked, no reading of these messages and no Entick identification; Mathews to Sherwood 9 Jan 1783 (B.179-2 pp. 162-169) read, no book or rule named; both 1956 Sherwood journal instalments read, neither prints the messages. Fryer's King's Men (1980) and Buckskin Pimpernel (1981) located in catalogues but relevant pages not accessible; intended Hoyt citation unresolved; Wagner 2026 thesis returned 403; Jackson 1958 unseen.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "what": "An independent check by another of our AI agents rechecked 15 groups on the LAC copy and Entick page images (15 confirmed) and reran the No. 4 test and read shares with identical results; it was not blind to Sherwood’s sketch. On its suggestion No. 2 was reread: the first half reads as a description of a man, so No. 2 is now read in part (review grade B, first half only). It also noted that the No. 4 page test passes narrowly: the hit Say rests on the scan text recognition placing it on p. 315; without it the score is 7, below the frozen mark of 8.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -309,7 +315,7 @@
       {
         "who": "ajbeling",
         "role": "new cipher with solution",
-        "note": "Andrew Beling, with his own AI agents: identified fitting Entick setting and extended the partial reading; two documents remain decoded, not read.",
+        "note": "Andrew Beling, with his own AI agents: identified fitting Entick setting and extended the partial reading; No. 3 remains decoded, not read; No. 2 is read in its first half only.",
         "date": "2026-11-12"
       },
       {
@@ -383,11 +389,17 @@
         "decryption": "decryption_no2.md",
         "reading": "reading_no2.md",
         "contemporary": "sherwood_sketch_and_letter.txt",
-        "state": "decoded, not read",
+        "state": "read in part",
         "language": "en",
         "read_share": 0.778,
-        "summary": "A physical description of a man associated with New Haven; later spy, rebel, York and trading references remain disconnected. Sherwood understood only that it was an advertisement.",
-        "note": "Strict read_share measures marked conjectures and supplied endings in Reading section using repository v 2_score, all words treated as known. It is not the fraction of direct dictionary look-ups. No independent full-document reading review is claimed."
+        "summary": "A notice describing a man: thirty years old, five feet two inches, freckled, light or sandy hair, belonging to New Haven, a spy and rebel whose name is unknown. The clauses around York, trade and hemp do not connect. Sherwood in 1783 recognised an advertisement but could not make sense of it.",
+        "note": "Strict read_share measures marked conjectures and supplied endings in Reading section using repository v 2_score, all words treated as known. It is not the fraction of direct dictionary look-ups. Read in part: the first half (the description) reads; the second half does not connect.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Claude Opus 5.5, one of the contributor’s own AI agents (not a human review)",
+          "date": "2026-11-13",
+          "note": "Reread the reading against decryption_no2.md. The description through \"belong[s] to New Haven\", with \"spy, rebel\" and \"name unknown\", is coherent; face, years and hair are inferred repairs, and 415 is unread. \"Slipped through ye [?]\" and the York/trade/hemp clause do not connect. Approved only as read in part. Not checked against the images in this review."
+        }
       },
       {
         "doc": "no3",
@@ -424,7 +436,7 @@
       "key.tsv",
       "KEY.md"
     ],
-    "notes": "Status in progress: waiting for British Library images of Add MS 21838 ff. 306r-307v, 324v and 379r (ordered 12 Nov 2026) to check the copied numbers, and for the unchecked literature. Nos. 2 and 3 are excluded from the coherent-reading count. Validation: the letter-model test is underdetermined for a dictionary code (about 1.3 occurrences per group); the book identification rests on the frozen No. 4 page test (8 hits, controls at most 3) and the edition row score 96/107.",
+    "notes": "Status in progress: waiting for British Library images of Add MS 21838 ff. 306r-307v, 324v and 379r (ordered 12 Nov 2026) to check the copied numbers, and for the unchecked literature. No. 3 and the second half of No. 2 are excluded from the coherent-reading count. Validation: the letter-model test is underdetermined for a dictionary code (about 1.3 occurrences per group); the book identification rests on the frozen No. 4 page test (8 hits, controls at most 3) and the edition row score 96/107.",
     "fraction_read": 0.7824074074074074,
     "fraction_read_method": "measured",
     "fraction_read_source": "lookup_occurrences.tsv: 169/216 enciphered groups have direct dictionary/headword evidence (V); all I/? and all clear items excluded from numerator. This conservative key-lookup measure is not sentence coherence; separate strict read_share values and states govern document extent."

@@ -2,7 +2,7 @@
 
 Status: in progress — partial reading; the copied numbers are to be checked against British Library images of the originals (on order), and part of the modern literature is still unchecked.
 
-Andrew Beling, with his own AI agents, 12–13 November 2026. **Read after matching with key from external sources, in part:** Nos. 1 and 4 are read in part. Nos. 2 and 3 are **decoded, not read**. This is not a first decipherment: Justus Sherwood himself read much of this in 1783 (most of Nos. 1 and 4 and some of No. 3), and his sketch was used as a crib from the outset. The credit for those readings is his.
+Andrew Beling, with his own AI agents, 12–13 November 2026. **Read after matching with key from external sources, in part:** Nos. 1, 2 and 4 are read in part (for No. 2, its first half). No. 3 is **decoded, not read**. This is not a first decipherment: Justus Sherwood himself read much of this in 1783 (most of Nos. 1 and 4 and some of No. 3), and his sketch was used as a crib from the outset. The credit for those readings is his.
 
 ## Documents and context
 
@@ -18,7 +18,7 @@ Related but separate: Haldimand's headquarters also corresponded with Sir Henry 
 
 A group gives **printed page and printed line down either unmarked column** of John Entick's *New Spelling Dictionary*, London 1781, scanned as Internet Archive 11280377bsb. Continuation lines count. The market-town appendix supplies place names. Dictionary headwords can represent inflections, fragments or sound-alikes. See [KEY.md](KEY.md) and [key.tsv](key.tsv). No silent digit corrections or column choices have been passed off as a deterministic key.
 
-Sherwood's sketch suggested member, new, the and related words; these fitted Entick pages. The pre-registered No. 4 test then compared a frozen lemma list from Sherwood's sketch with cipher page numbers. It scored 8; six shifted-page controls scored 1, 1, 0, 3, 1, 2, meeting the recorded rule. A packaging rerun on the original input files reproduced this exactly, and the frozen transcription hashes matched. This supports the book identification. It is **not** a blind recovery of the message, and it validates neither every numeral nor every proposed word. The OCR drops 17 of 30 lemmas and sometimes chooses an irrelevant first headword occurrence; the modest page-match test is reported as run, without improving it after the result.
+Sherwood's sketch suggested member, new, the and related words; these fitted Entick pages. The pre-registered No. 4 test then compared a frozen lemma list from Sherwood's sketch with cipher page numbers. It scored 8; six shifted-page controls scored 1, 1, 0, 3, 1, 2, meeting the recorded rule (8 or more, controls at most 3). The pass is narrow: one of the 8 hits, Say, counts only because the scan's text recognition places it on p. 315; without it the score is 7, below the frozen mark of 8, while recognition errors also cost three real hits. The frozen result is kept as it is. A packaging rerun on the original input files reproduced this exactly, and the frozen transcription hashes matched. This supports the book identification. It is **not** a blind recovery of the message, and it validates neither every numeral nor every proposed word. The OCR drops 17 of 30 lemmas and sometimes chooses an irrelevant first headword occurrence; the modest page-match test is reported as run, without improving it after the result.
 
 The later pre-registered edition screen compared ten scanned printings. The 1781 copy scored 54/79 in the OCR page screen; the next best, 1772, scored 21/79 and did not pass the half-baseline threshold for visual row scoring. Visual counting of 1781 gave 77/79 in set A and 19/28 in set B: **96/107 exact or same-stem hits**. The other inspected printings do not share the matching page layout. Unexamined printings with an identical setting are not excluded. The gloss test gave only 3/9 exact, below its required 4 of 5 alphabetically possible glosses: **that separate question remains open**. Frozen rules and scores are in `evidence/`.
 
@@ -37,8 +37,10 @@ Each message has a diplomatic transcription, a complete occurrence-by-occurrence
 | Message | Code groups | Strict reading share | Editorial state |
 |---|---:|---:|---|
 | No. 1 |56|64.5%|read in part|
-| No. 2 |32|77.8%|decoded, not read|
+| No. 2 |32|77.8%|read in part (first half)|
 | No. 3 plus probable continuation |81|63.8%|decoded, not read|
+
+The probable continuation on copy p. 347 is labelled No3 in `lookup_occurrences.tsv` and `key.tsv` (lines f347.*), matching these counts; an earlier draft labelled it P5.
 | No. 4 |47|70.2%|read in part|
 
 The profile also records 169/216 (78.24%) direct dictionary-supported code groups, excluding all conjectural repairs; this is key-lookup coverage, not a sentence-reading claim.
@@ -49,7 +51,7 @@ Strict reading shares are the repository `v2_score.py` explicit-hole measure ove
 
 The statistical validation (`docs/_validate.py`, pairs in `validation.tsv`, 13 November) is **underdetermined**: with about 1.3 occurrences per code group, a key fitted to shuffled groups scores better under the English letter model (-1.875 per letter) than the reading (-2.098), so the test can neither confirm nor refute a word-level dictionary code. The book identification rests on the frozen No. 4 page test and the edition row score above, not on this test.
 
-Our own AI agent acting as coordinator reviewed the complete prose and decryption tables for Nos. 1 and 4 with LAC source-page inspection: No. 1 grade B (its first source/account/council clause remains raw), No. 4 grade A, both only read in part. This review checks prose/table consistency; it is not fresh validation of every Entick row, human verification, or outside-project independent verification. The separate two-reader numeral/headword check applies to 218-11. Nos. 2 and 3 receive no reading review and are not counted as coherent readings.
+Our own AI agent acting as coordinator reviewed the complete prose and decryption tables for Nos. 1 and 4 with LAC source-page inspection: No. 1 grade B (its first source/account/council clause remains raw), No. 4 grade A, both only read in part. This review checks prose/table consistency; it is not fresh validation of every Entick row, human verification, or outside-project independent verification. The separate two-reader numeral/headword check applies to 218-11. On 13 November, after an independent check by another of our AI agents suggested it, a further AI agent of ours reread No. 2 and agreed that its first half is a coherent description of a man (thirty years old, five feet two, freckled, light or sandy hair, of New Haven, a spy and rebel, name unknown); No. 2 is now read in part with a grade B reading review that covers the first half only (the repository allows only A or B on a reading), and the words after "slipped through" and around York, trade and hemp remain unconnected. No. 3 receives no reading review and is not counted as a coherent reading.
 
 ## Who read what, and when
 
