@@ -213,3 +213,22 @@ cypher telegram: Results:   4 Items
 secret code: Results:   2 Items	
 code book: Results:   17 Items	
 cryptic: Results:   21 Items	
+   519  "in cipher" Tripoli
+   772  "in cipher" Tunis
+   893  "in cipher" Algiers
+  1189  cipher Morocco consul
+  2544  cipher Egypt consul
+   479  cipher Abyssinia
+   348  cipher Zanzibar
+   245  cipher Khartoum
+   150  cypher Barbary
+   222  cipher Sudan Gordon
+
+## Europeana (api2demo)
+cipher AND (Morocco OR Algiers OR Tunis OR Tripoli OR Egypt) 1; "in cipher" AND (...) 0; chiffre AND (Alger OR Tunis OR Maroc OR Tripoli OR Egypte) 255 (BnF Arabic mss, 'chiffre' = numerals: noise); cifra AND (Algeri...) 4; cifra AND (Argel...) 12; cijfer AND (...) 1
+"carta cifrada" Marruecos 0; "carta cifrada" Argel 0; "lettre chiffree" Maroc 0; "lettre chiffree" Alger 2; "lettera cifrata" Tunisi 0; "in cifra" Tripoli 0; "en chiffre" Egypte 1; "in cijfer" Marokko 0; Geheimschrift Abessinien 0; chiffre Abyssinie 2; cifra Abissinia 0; cipher Abyssinia 0; cipher Khartoum 0; cipher Gordon Sudan 0; cryptogram Africa 3 (all scarabs or noise)
+
+## Wellcome API: cipher Ethiopia 0; cipher Arabic manuscript 0; cryptogram Egypt 0; secret alphabet Abyssinian 0; cipher Sudan 0; cipher Morocco 1 (Latin Galateo, noise); code Zanzibar 0; cryptographic Ethiopic 0
+## Persee (persee.py, fuzzy OR ranking, 10 titles read each): correspondance chiffree Maroc 34828; ecriture chiffree Abyssinie 4079; lettres chiffrees Alger consul 85894; en chiffres Tripoli consul 179927; clef du chiffre Egypte 74955. No relevant title.
+## Wikimedia Commons file search (namespace 6): cipher Ethiopia 208; cipher telegram Khartoum 5; cryptogram Morocco 15; cipher Gordon Khartoum 17; secret code Egypt 19th century letter 161; Nsibidi cipher 0; magic square talisman Timbuktu manuscript 0 (all book scans, noise). Then 429-like non-JSON replies from Commons and Wikisource: stopped.
+## TNA Discovery extra queries (dateTo 1940): Arabic cipher 9; Arabic code 1142 (FO 'Code 65' file-code noise); Gordon cypher 10; Gordon cipher Khartoum 0; Gordon code Khartoum 176; Mudir Dongola code 7; Mahdi cipher 0; Emin Pasha cipher 0; Slatin cipher 0; Abyssinia code telegram 46 (FO 371 1906 file codes); Menelik cipher 0; Zanzibar cipher 1; Stanley cipher 12; Livingstone cipher 0; Mombasa cipher 3; Uganda cipher 0; Hicks cypher 2; Berbera cipher 0; Harar cipher 0; Massowah cipher 0; Cipher telegram Mackinnon 0; Inheritor cipher 1 (SOAS Mackinnon Emin Pasha file 56, p.261, 28 Mar 1890: cipher telegram re Tippoo Tib, summarised so evidently read)

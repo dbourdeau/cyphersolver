@@ -1,0 +1,82 @@
+[
+  {
+    "year": 1884,
+    "date": "1302 AH (the Hijri year began 21 Oct 1884); day and month not read. Covering letter Palmer to Grenfell, 15 Nov 1886",
+    "title": "Gordon at Khartoum, note in two-digit Arabic-numeral cipher addressed to the Mudir of Dongola (found 1886 among papers from Dongola)",
+    "correspondents": "Charles G. Gordon, Khartoum → the Mudir of Dongola (addressee line read from the image as 'to His Excellency Mustafa Pasha, Mudir of Dongola'; name not checked elsewhere)",
+    "place": "Khartoum (siege of Khartoum, Mar 1884 - Jan 1885)",
+    "language": "Arabic (plaintext presumed; a few Arabic words are written in clear between the groups)",
+    "region": "Other",
+    "period": "1801-1900",
+    "shelfmark": "Durham University Library, Archives and Special Collections, Sudan Archive, Wingate Papers, SAD.250/1/550 (covering letter SAD.250/1/549)",
+    "folio_note": "One leaf (SAD.250/1/550): about 14 lines of two-digit Arabic-Indic number groups, roughly 80-95 groups (not counted exactly), a few groups stacked or overwritten as corrections, the addressee and a few words in Arabic script in clear, a date and signature at the foot. The covering letter 549 is a clear English letter",
+    "cls": "B",
+    "status": "Open as far as checked. SAD.250/1/549 (Elwin Palmer to Grenfell, 15 Nov 1886) says the scrap 'containing figures signed by Gordon' was found among papers from Dongola, that Gordon 'evidently had a code' and that a Dongola employee, Khalil Ibrahim, 'has the key'; the finding aid only says 'a note written in code by Gordon'. No decipherment is written on or filed with the leaf. A possible key family is in the same papers (key_leads.json: SAD.250/1/81, a Nile Expedition cipher table with Arabic-numeral columns); not tested. Not on DECODE.",
+    "why": "A cipher in Gordon's own hand from the Khartoum siege, in a two-digit numeric code with plain words mixed in (cribs), plus a candidate key table in the same collection; Hansard 14 Nov 1884 records 'four Arabic cipher letters' reaching Debbeh from Gordon.",
+    "importance": 4,
+    "solvability": 3,
+    "difficulty": 3,
+    "score_note": "Scored 14 Nov 2026 in the north-east Africa sweep (research/sweep_2026-11-14_africa_north_east_literature/); leaf viewed on Durham's IIIF images (one request returns at most 1024 px per side; region requests give native detail)",
+    "verify": "Transcribe the groups from the IIIF image; read the Arabic words and date at the foot; test the SAD.250/1/81 table and the Palmer letter's key remark; compare the four 'Arabic cipher letters' of Nov 1884 and the Kitchener telegrams TNA PRO 30/57/4/77-78 ('use Arabic cipher'), 4/89-109 (Arabic script)",
+    "links": [
+      {"label": "Durham finding aid, Wingate Papers (SAD.250/1/549-550 in the range 528-606)", "href": "https://reed.dur.ac.uk/xtf/view?docId=ark/32150_s1f4752g79m.xml"},
+      {"label": "Digitised SAD.250/1/528-606 (Mirador viewer; leaves 549, 550)", "href": "https://n2t.durham.ac.uk/ark:/32150/t2mqj72p714z.html"},
+      {"label": "IIIF manifest", "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mq/j7/t2mqj72p714z/manifest"},
+      {"label": "Hansard 14 Nov 1884, Gordon's messenger with four Arabic cipher letters", "href": "https://api.parliament.uk/historic-hansard/commons/1884/nov/14/egypt-events-in-the-soudan-general-gordon"}
+    ],
+    "seen": "image",
+    "source": "Durham Sudan Archive sweep",
+    "prior_art": "open (checked 14 Nov 2026: DECODE keyword search for Gordon, Khartoum, Dongola, Wingate, Hicks, Sudan Archive: 0 records; Tomokiyo: all 295 cryptiana pages fetched and searched, no Gordon, Sudan or Khartoum cipher page; Lasry/HistoCrypt: web search found only the Biafran ciphers paper, nothing on Sudan; Durham catalogue entry gives no decipherment; Hake's printed edition of Gordon's Khartoum journals mentions undecipherable cipher telegrams but was only searched by text, not for this leaf; repo known.py: no hit for SAD.250, Mudir, Dongola cipher other than the Kitchener leads 1159 and 356)",
+    "needs_archive_scan": "no",
+    "access_note": "Images are free on Durham's IIIF server (no login, plain curl works); the Mirador link above shows all 96 leaves of SAD.250/1/528-606",
+    "vetting": {
+      "date": "2026-11-14",
+      "by": "claude sweep agent (sweep_2026-11-14_africa_north_east_literature); contributor not named",
+      "seen": {
+        "kind": "scan",
+        "where": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mq/j7/t2mqj72p714z/manifest, canvases SAD.250/1/549 and SAD.250/1/550, viewed 14 Nov 2026; native-resolution region of the upper left of 550 also viewed",
+        "extent": "One leaf, about 14 lines, roughly 80-95 two-digit groups",
+        "cipher": "Two-digit Arabic-Indic numerals in lines, some groups overwritten or stacked as corrections, a few Arabic words in clear and an addressee line; date (read as 1302) and Gordon's signature at the foot. No plaintext or decipherment is written on the leaf; the covering letter 549 does not decipher it."
+      },
+      "prior_art": {
+        "decode": "decode_search.py: Wingate, Dongola, Hicks, Gordon, Khartoum, Sudan Archive, Egypt, Abyssinia, Ethiopia, Morocco: 0 records.",
+        "tomokiyo": "All 295 pages linked from cryptiana.web.fc2.com/code/crypto.htm fetched and searched for Gordon, Khartoum, Sudan, Mahdi, Egypt: nothing on this note.",
+        "lasry": "Web search (HistoCrypt, Lasry, Africa, Sudan): only 'The Biafran Ciphers' (1960s); nothing on Gordon.",
+        "edition": "Durham finding aid prints no text; Hake, Journals of Major-Gen. C. G. Gordon at Kartoum (Gutenberg 49224) text-searched for cipher: Gordon complains of undecipherable cipher telegrams; no printed Arabic numeral cipher found.",
+        "literature": "Web searches for a Gordon numeral cipher, Mudir of Dongola and Khalil Ibrahim found nothing; Hansard 14 Nov 1884 notes four Arabic cipher letters from Gordon via Kitchener's messenger."
+      },
+      "key_check": "SAD.250/1/81 (Nile Expedition cipher table with Arabic-numeral columns) is a candidate key and was seen but not tested; Palmer's letter says Khalil Ibrahim had the key.",
+      "key_in_volume": "SAD.250/1/81 is in the Wingate Papers, a different digitised unit (SAD.250/1/59-96, https://n2t.durham.ac.uk/ark:/32150/t1m6969z078q.html); not tested.",
+      "duplicates": "known.py: SAD.250, SAD.600, Mudir, Dongola, Mustafa Yawer, Khalil Ibrahim, Gordon; hits only lead 1159 (Kitchener telegrams, TNA) and catalogue 356/Wolseley to Gordon 19 Oct 1884 (TNA PRO 30/57/4/119), which are different items.",
+      "verdict": "open"
+    }
+  },
+  {
+    "year": 1883,
+    "date": "25 Feb - 30 Jun 1883 and 10-19 Mar, 4 Jul - 6 Sep 1883",
+    "title": "Hicks Pasha, registers of telegrams sent and received in the Sudan (language given as English, Arabic and cypher)",
+    "correspondents": "William Hicks Pasha (Berber, Shendi, Khartoum, Aba Island) ↔ Baker Pasha, Sir E. Malet, Sir E. Wood, Col. Stewart, the Khedive and others",
+    "place": "Sudan (Sennar and Kordofan campaigns)",
+    "language": "English and Arabic (plaintext); some entries in cypher",
+    "region": "Other",
+    "period": "1801-1900",
+    "shelfmark": "Durham University Library, Archives and Special Collections, Sudan Archive, Hicks Pasha papers, SAD.866/5/1-46 and SAD.600/2/1-35",
+    "folio_note": "46 + 35 items; how many carry cypher text is not stated. The same finding aid cites M. W. Daly, The Road to Shaykan (Durham 1983) for Hicks's letters to his wife, not for the registers. See also SAD.246/7/54 (Wingate Papers, as parsed from the finding aid text): 'Cypher telegram to London reporting the Hicks disaster', Nov 1883",
+    "cls": "C",
+    "status": "Catalogue only: both entries say 'Language: English, Arabic and cypher'. No images online (no digitised link in the finding aid). An earlier sweep (sweep_2026-11_ireland_uk_univ) saw the Hicks papers and set them aside with other Sudan telegrams; it does not say these registers were opened. It is not known whether the cypher entries are plaintext-decoded alongside.",
+    "why": "The last weeks of the Hicks expedition (destroyed at Shaykan, 5 Nov 1883), whose telegraph traffic with Cairo and Khartoum went partly in cypher.",
+    "importance": 3,
+    "solvability": 2,
+    "difficulty": 4,
+    "score_note": "Scored from the Durham catalogue description during the 14 Nov 2026 north-east Africa sweep (research/sweep_2026-11-14_africa_north_east_literature/); not viewed",
+    "verify": "Ask the Sudan Archive (Durham) whether the registers carry cypher groups and whether decoded text is written beside them; check Daly's edition and the Egyptian army telegraph code of 1883",
+    "links": [
+      {"label": "Durham finding aid, Hicks Pasha papers", "href": "https://reed.dur.ac.uk/xtf/view?docId=ark/32150_s19306sz310.xml"}
+    ],
+    "seen": "catalogue",
+    "source": "Durham Sudan Archive sweep",
+    "prior_art": "open (checked 14 Nov 2026: DECODE keyword Hicks, Sudan Archive: 0 records; cryptiana 295 pages: nothing; web search found no Hicks cipher paper; known.py 'Hicks Pasha' hits only an earlier sweep README that set the papers aside)",
+    "needs_archive_scan": "yes",
+    "access_note": "Not digitised; request scans from Durham Archives and Special Collections (Sudan Archive)"
+  }
+]
