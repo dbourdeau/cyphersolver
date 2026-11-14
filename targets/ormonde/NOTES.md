@@ -100,7 +100,7 @@ with OCR line numbers in [knowler_excerpts.txt](knowler_excerpts.txt)):
   sent back as is advised." This is exactly Maltravers's sentence: *he was angry with the Lord Deputy; the King
   refused to see him because he brought no letters from the Lord Deputy.* So **143 = the King** and **113** is the
   connective between "angry" and "the Lord Deputy" ("with"/"against"; Wentworth's own word is "against").
-* **Ormonde and Crosby (letter 2).** Wentworth to Coke, Dublin 22 Dec. 1634, pp. 352–3, reporting who had served well
+* **Ormonde and Crosby (letter 2).** Wentworth to Coke, Dublin 16 Dec. 1634 ("22 Dec." until 14 Nov 2026; see the last section), pp. 352–3, reporting who had served well
   in the Parliament: "In the Higher House, there is my Lord of Ormond, that hath as much advantage of the rest in
   judgment and parts, as he hath in estate and blood; and one, who upon my observation since I came hither,
   expresseth very good affections to the Crown and Government; so as I hold him a person of consequence, and fit to
@@ -196,4 +196,23 @@ Coke) and 185, 149, 31 left unread. **0.75 on explicit holes**, 0.667 plain, hol
 clear text carrying them around short cipher runs. Kept read, grade B. It rests on the alphabet recovered from the
 adjacent clear text and the nomenclator matched against Knowler 1739; there is no manuscript, key sheet or
 contemporary decipherment.
+
+## Verification, 14 Nov 2026
+
+Brice Dudout (*L'Europe chiffrée*), with Claude Opus 5.5. Details in
+[texts/verification_20261114.md](texts/verification_20261114.md).
+
+* **The print checked again.** All 59 figures were compared with the HMC page images (IA n43, n44) and agree; 26 and
+  31 are clearly printed so. This check is not blind. The same pages hold two other Maltravers letters, 30 Sept 1634
+  and 10 July 1635, and neither has any figures.
+* **185 = the Lord Deputy (probable).** Three points support it. The clause "185 hath written unto 149 concerning
+  Crosby" is built like "186 hath written unto 218". In Knowler vol. I, Wentworth wrote on Crosby before 22 Jan 1635
+  only in the dispatch to Coke of 16 Dec 1634, and that dispatch also praises Ormond and proposes him for the Council.
+  And 185 sits next to 186, which fits the key's blocks of consecutive figures. **149** stays open: it could be Coke
+  under a second figure, or Laud (Wentworth sent him duplicates of the dispatch the same day), or the King.
+* **Date.** The Ormond dispatch is signed 16 Dec 1634 in Knowler. The letter of 22 Dec 1634 is to Cottington.
+* The vowel blocks are still not fixed: 5 each, or a = 3 and the others 6, the second making 89 = u. No measurement
+  is possible, since the text has 59 figures in all.
+* **Strict count:** 17 of 19 cipher units read as sense (12 sure, 5 probable, 2 unresolved: 149 and 31), 89.5%,
+  against 84.2% before. Still **read in part**.
 
