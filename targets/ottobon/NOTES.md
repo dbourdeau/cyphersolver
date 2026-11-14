@@ -622,9 +622,9 @@ Section 0a of the writeup skill:
   this system; the 1590/1595 Venetian ciphers R1843/R1870 are of the zifra-granda family.
 - [x] print: CSP Venice viii (Mar-June 1589), Hübner *Sixte-Quint* ii-iii (Doge to Badoer 29 April and 13 May 1589:
   parallel wording only), Desjardins *Négociations* v, A. Morosini *Historia Veneta* XIII, De Thou XCV: no text of the
-  letter or of the answer to de Maisse. Manuscript copies: ASVe Senato Secreta register; BL Add MS 30635-30637.
-- [n/a] key-rebuild: the key is the archival sheet R1789 and covers every code read; the two homophones the sheet
-  lacks were found from context; no code among the 981 tokens read needs a value the sheet does not give.
+  letter or of the answer to the French envoy (Gondi; de Maisse in the text before 14 Nov 2026). Manuscript copies: ASVe Senato Secreta register; BL Add MS 30635-30637.
+- [n/a] key-rebuild: the key is the archival sheet R1789 and covers every code read; the two homophones once thought
+  missing from the sheet (d83, c86) were misreadings of d53 and h86 (14 Nov 2026); no code of the issue #552 transcription needs a value the sheet does not give.
 - [x] retry (14 Nov 2026): issue #552 (aaymeloglu) re-transcribed all seven pages from the public BNE scans (1100 px per page, CC BY 4.0) and read both pieces with R1789 as it stands; 1,537 of 1,585 group slots are plain lookups.
 - [x] retry (23 Oct 2026): DECODE images re-fetched, no new material; first piece kept decoded, not read
 - [x] retry: 9 Oct 2026, every unread line retried computationally: calibrated noisy-channel decoder (dec.py, 89 %
@@ -633,6 +633,9 @@ Section 0a of the writeup skill:
   or a register copy (above).
 
 ## DECODE queue
+
+14 Nov 2026: the entries below are superseded where they name de Maisse (read Gondi) or add d83 = a and c86 = o (withdrawn;
+R1789 as it stands); `decode_updates/queue.json` carries the current R2252 and R1789 text.
 
 - R2252 (9 Oct 2026 addition): offer the re-read rd_*.txt (62.7 % of tokens) and the decoder; correct the item: the
   second piece (ff.37r-38r) is the Senate's answer to the French ambassador in Venice (de Maisse), headed *[co]pia
