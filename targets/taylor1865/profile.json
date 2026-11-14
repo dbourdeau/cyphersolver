@@ -1135,6 +1135,18 @@
       "kind": "verification",
       "what": "Integration check by an independent session: the measure, the post hoc check and align.py were re-run and agree with the contributor's files (measure_results.json identical; frozen hashes match); an own decoder from the keys reproduces both decryptions; the NARA images (SHA-256 of fr. 0030 and 0032 as stated) were compared with the transcription: 28 of 29 cipher words of fr. 0030 and 30 of 44 of fr. 0032 viewed, no disagreement.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "Source audit by Andrew Beling with AI agents (PR #577, source_audit_2026-11-12/): on the NARA images the 18 January group read QDYXXRQ is ODYXXRO, which gives CONTENT under COMPLETE VICTORY at phase 2, and the 10 April group GJS gives THE under COME RETRIBUTION; both had been proposed from context in PR #186. SENT or TENT on 10 April stays open; three versions of the 11 April ending against the five known keys at every phase (225 comparisons) give no plaintext. No reading or share changed.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "what": "Integration check (PR #577) by an AI reader of the project: check.py passes, the two image hashes match on re-download, ODYXXRO and GJS confirmed on the crops. On the 10 April crop two further groups read LYWVEW (SHOUKD for SHOULD) and MF (TO) against the transcription's LVWVEW and NF; recorded in NOTES for the next pass, files not edited.",
+      "result": "worked"
     }
   ],
   "outcome": {
