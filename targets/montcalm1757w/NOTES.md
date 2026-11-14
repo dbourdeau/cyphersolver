@@ -26,7 +26,7 @@ The digit rechecks corrected p. 511, 13? to 83; confirmed 886 and the problemati
 
 Not the Vaudreuil table. Brice Dudout’s `targets/vaudreuil1760/` (with `vaudreuil1759a`–`c`) reads Vaudreuil’s letters to the Marine minister with the 1757 Vaudreuil numerical table, ANOM COL C11E 10 (Archives nationales d’outre-mer, colonial series), LAC sheet e001295274 (`targets/vaudreuil1760/key/key274.json`). Code W is a different code: of the 243 numbers present in both that table and our attestation index, none has the same value (checked 13 November 2026). Casgrain’s *Collection des manuscrits du maréchal de Lévis*, III (1890), p. 64 prints Paulmy’s letter of 10 April 1757 sending Montcalm “un petit chiffre”. Whether that is code W is uncertain: Paulmy offers it for a private and secret correspondence, apart from Montcalm’s ordinary letters to the war minister, while code W is used in the ordinary dispatches and is already in Montcalm’s cipher postscript of 3 November 1756 (`support/W1756-11-03_A1_3417_duplicata.txt`).
 
-Open follow-up: the third numerical sheet of the same volume, LAC e001295276 (the 1758 Montcalm table described in `targets/vaudreuil1760/NOTES.md`), has not been compared with code W.
+Follow-up done on 13 November 2026 by one of our AI agents (not yet rechecked by a second one): the third numerical sheet of the same volume, LAC e001295276 (described in `targets/vaudreuil1760/NOTES.md` as the 1758 Montcalm table), was transcribed twice and compared. It is a second handwritten copy of the Vaudreuil table on e001295274 (592 of 680 cells agree) and agrees with code W on 1 of 238 shared numbers, no better than 200 shuffled tables. It is not W.
 
 ## Prior readings, editions and our contribution
 
@@ -49,7 +49,7 @@ Outside the declared units, and not counted as gaps in them: the clear text of t
 
 - [x] clear-pages: the period interlinear decipherments of both declared units located on LAC C-12578 and transcribed.
 - [ ] siblings: 1756–1759 supporting pages sampled (`support/`); the complete Lévis 1759 sequence and the French originals not yet inspected.
-- [ ] known-keys: Casgrain’s codes B and I and the Vaudreuil table e001295274 compared, none is W; the 1758 Montcalm sheet e001295276 not yet tried; no original W key located.
+- [ ] known-keys: Casgrain’s codes B and I and the Vaudreuil table e001295274 compared, none is W; sheet e001295276 tried on 13 November 2026 and found to be a second copy of the Vaudreuil table, not W; no original W key located.
 - [ ] print: NYCD X, Casgrain I–XII, CMNF IV, Chapais and RAPQ 1920–1942 screened; RAPQ 1924–1927 not checked; no claim that the text is unpublished everywhere.
 - [x] key-rebuild: 318 clearly numbered values indexed from the period plaintext; conflicting values and uncertain digits withheld or qualified.
 - [ ] retry: the doubtful digits retried with a second AI reader on fresh crops; a comparison with the French originals and a retry of every source slip not done.
