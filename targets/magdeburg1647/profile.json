@@ -6,8 +6,8 @@
   {
    "id": "f7",
    "read": "read in part",
-   "shelfmark": "Landesarchiv Sachsen-Anhalt (Magdeburg), A 1 Erzstift Magdeburg, Auswärtige Angelegenheiten, Nr. 530 (Osnabrück envoys, 1646-47), frame 11 left leaf (f.7)",
-   "date": "1647 (with ad Diarium No. 32)",
+   "shelfmark": "Landesarchiv Sachsen-Anhalt (Magdeburg), A 1 Erzstift Magdeburg, Auswärtige Angelegenheiten, Nr. 530 (Osnabrück envoys, 1646-47), frame 11 left page (labelled f.7; it is fol. 6 verso, the second page of dispatch No. 32: correction of 14 Nov 2026, PR #558)",
+   "date": "1647 (fol. 6 verso; the dispatch ad Diarium No. 32)",
    "year": 1647,
    "country": "Germany",
    "route": "Archbishopric of Magdeburg's envoys at the Osnabrück peace congress (enclosure to their diary)",
@@ -240,7 +240,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "partial",
-   "where": "Clear drafts of f.5, f.6, f.7 and f.101 (the enciphered passages underlined) in LASA A 1 Nr. 529, frames 875, 881-882 and 532; found 13 Nov 2026 after the key was recovered and the slips decoded. No decipherment found for f.102, f.104, f.204 in the Nr. 529 frames searched; Nr. 543 (Krull's draft reports) not checked. The file holds the contemporary key worksheet (frame 168). Details: PRIOR_ART.md, nr529/README.md.",
+   "where": "Clear drafts of f.5, f.6 recto and verso (the verso is the page labelled f.7) and f.101 (the enciphered passages underlined) in LASA A 1 Nr. 529, frames 875, 881-882 and 532; found 13 Nov 2026 after the key was recovered and the slips decoded. No decipherment found for f.102, f.104, f.204 in the Nr. 529 frames searched; Nr. 543 (Krull's draft reports) not checked. The file holds the contemporary key worksheet (frame 168). Details: PRIOR_ART.md, nr529/README.md. f.204 prior art not cleared: it lies in the frames 226-259 Annotationes run linked to the Nr. 529 diary margin notes, and diary No. 40 was not searched (PR #558).",
    "found": "after reading",
    "used": false
   },
@@ -358,6 +358,12 @@
    ],
    "what": "Integration check of the blind fourth reading b198 (R8, AI agent): both RFC 3161 tokens (Sectigo, 11:32:42 and 11:35:17 GMT) verify with openssl ts -verify and their imprints equal the manifests; the freeze manifest holds the three frozen transcriptions. Own decoder from the frame-168 worksheet: 236/236 units equal the reader's decodes; ledger reproduces (S+SP 33/84, 49/100, 25/52). Strict recount with doubtful-letter words as holes: f.102 22/84, f.104 42/100, f.204 19/52. Frame 233 against the transcription: 36 of 50 words agree, 3 differ, 11 undecidable. Blind to other readings, not to the key. Adopted as figures of record for the three slips (better documented than R1); fraction_read 135/354 = 0.3814. Status stays in progress (hand, frame 278, drafts workable).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Correction by the contributor (PR #558): the slip labelled f.7 (frame 11 left) is fol. 6 verso, the second page of dispatch No. 32, not a separate slip; so the b160 held-out test of KEY_v2 on it held out the other page of the dispatch whose recto trained KEY_v2. Checked at integration on LASA frames 10-12 (frame 10 right f.6r headed 'ad Diarium No. 32'; frame 11 left the same slip turned, right page foliated 7 and blank; frame 12 left f.7v endorsed 'ad Diarium No. 32'). The contributor's frame md5 values cannot be re-checked (the viewer stamps the request time into each image). Labels only; no count changes. f.204 prior art reopened: Nr. 529 diary No. 40, Nr. 545, Nr. 546 still to check.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -408,6 +414,11 @@
   ],
   "gaps": [
    {
+    "item": "Prior art of f.204 (Annotata ad Num. 40, frame 233)",
+    "blocker": "not-attempted",
+    "detail": "Nr. 529 diary No. 40 was outside the ranges searched; Nr. 529 No. 40, the Nr. 545 fair copy and Nr. 546 to check (contributor's correction of 14 Nov 2026)"
+   },
+   {
     "item": "Every bare slip below 65% (strict 26.19%-45.71% first pass, figures of record)",
     "blocker": "not-attempted",
     "detail": "the hand: g/q, c/e, t/l and final f/n confusions; reader agreement 162/312; the key is complete (frame 168), so a careful re-transcription against the images is workable (integration check 13 Nov 2026: was marked illegible); the blind fourth reader b198 (13 Nov 2026) puts its own shortfall on c/e and g/q in its transcription, not on the key"
@@ -436,7 +447,7 @@
   "texts": [
    {
     "doc": "f7",
-    "label": "f.7, frame 11 left leaf (1647; content NOT FIRST, in clear in Nr. 529 frame 882)",
+    "label": "f.7 = fol. 6 verso, frame 11 left page (1647, second page of No. 32; content NOT FIRST, in clear in Nr. 529 frame 882)",
     "transcription": [
      "transcriptions/f7_frame11_R1.txt",
      "transcriptions/f7_frame11_R2.txt"
