@@ -916,6 +916,16 @@ needs Pillow, and the rebuild workflow runs it). A catalogue number that has lef
 pointing to its write-up, and `docs/404.html` catches everything else. Anything new that the build adds to a page must
 be removed in `normalise()`, or every page's "updated" date moves.
 
+The stylesheet has a few fixed scales, set out as tokens at the top of `style.css`; use them rather than a new value. Type:
+the twelve `--fs-*` steps (12 px is the floor), with `clamp()` only for display headings. Width: the text column (`--maxw`),
+the wide measure for tables and tools (`--widew`), or full bleed. Breakpoints: 480, 640, 760, 900 and 1000 px. Outcome
+colours: three families (`--fam-key`, `--fam-ext`, `--fam-no`) with a step per method (`--m-*`), shared by the scoreboard,
+the Write-ups menu and the atlas; the status colours on a badge (`--green`, `--amber`, `--red`) say how much was read, not
+how. An outcome has one name on the site, the badge label in `docs/_methods.py` (`LABEL`); a write-up's Method line shows it
+with the full category name as its title. A list of several hundred rows is folded by `site.js` after its first screenful
+(the `SPEC` list near the end of the file: add a selector there for a new long list); a filter, a link to a folded row
+and Ctrl+F all open what they need.
+
 Datestamps are kept in [`docs/_dates.json`](docs/_dates.json): for each page, the day the finding first landed in
 the repository and the day the page last really changed. `_build_site.py` maintains the second by hashing the page
 with everything it generates itself removed, so a rebuild that only restamps the furniture does not move the date;

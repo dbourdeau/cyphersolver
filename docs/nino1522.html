@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rodrigo Niño to Charles V, 1522 — Key recovered from ciphertext</title><meta name="description" content="George Lasry's CTTS recovery of the key and eight-line cipher block in Rodrigo Niño's letter from Naples to Charles V, 19 March 1522."><link rel="stylesheet" href="style.css?v=02aff2b7"><meta name="date" content="2026-10-20">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rodrigo Niño to Charles V, 1522 — Key recovered from ciphertext</title><meta name="description" content="George Lasry's CTTS recovery of the key and eight-line cipher block in Rodrigo Niño's letter from Naples to Charles V, 19 March 1522."><link rel="stylesheet" href="style.css?v=80d49d4a"><meta name="date" content="2026-10-20">
 <meta name="last-modified" content="2026-10-20">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -24,6 +24,7 @@
       <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
     <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
     <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
@@ -46,7 +47,7 @@
 <section class="hero"><p class="kicker">Naples → Charles V · homophonic cipher · 19 March 1522</p><h1>Rodrigo Niño to Charles V</h1>
 <div class="parties"><figure class="party recipient"><img src="portrait_charles-v.jpg" width="192" height="192" decoding="async" alt="Charles V" title="Charles V: Seated portrait, formerly attributed to Titian, 1548. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Charles V</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump --><p class="sub">George Lasry recovered the key to a plea for soldiers’ pay, hidden in eight lines of a letter about the government of Naples.</p><p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-20">20 October 2026</time></p>
-<p class="outcome">Method: <a href="glossary.html#ct">key recovered from ciphertext-only</a> &middot; Extent: complete</p><!-- /outcome -->
+<p class="outcome">Method: <a href="glossary.html#ct" title="key recovered from ciphertext-only">ciphertext-only break</a> &middot; Extent: complete</p><!-- /outcome -->
 <p class="credits">Contributed by <a href="contributors.html#lasry">George Lasry</a> (solution, transcription) &middot; Also credited &middot; <a href="contributors.html#kolosova">Olga Kolosova</a> (earlier solution) &middot; <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (pointer to a source)</p><!-- /credits --></section>
 <main>
 <nav class="toc" aria-label="On this page"><span>On this page</span><a href="#document">The document</a><a href="#key">The recovered key</a><a href="#reading">Decryption and translation</a><a href="#method">Recovery and open signs</a><a href="#prior">Prior published work</a><a href="#texts">Full texts</a><a href="#sources">Sources and files</a></nav>
@@ -67,7 +68,7 @@
 <p>The 49 entries comprise 44 letter-sign classes (including the ambiguous p/y class), LL and ND, the address V.M., and two null groups. The maxima among settled letter values are four signs for a and i, and three for g, p and r. The apparent Arabic digits are sign shapes, not numerical code values. Bars and ticks distinguish several classes.</p>
 <p>The null groups <em>mer</em> (twice) and <em>por</em> (once) are included as three cipher elements, not counted letter by letter. The paragraph mark and two punctuation marks are excluded. Seven duplicate detection boxes were removed. The earlier eye transcription split modifiers and gave 336 signs; it is retained as a record of the unsuccessful September attempt, not mixed with this inventory.</p>
 <p><strong>255 of 257 non-null occurrences have an unambiguous assigned value (99.2% assignment coverage).</strong> This measures key application, not independent accuracy. Two occurrences of (39) remain unresolved; LL and ND are contextual one-occurrence readings. The decoder and token-aligned output let a reader inspect the distinction.</p>
-<figure data-credit="George Lasry’s CTTS sign inventory; newly drawn font/geometric equivalents by GPT 6.1 Sol"><img src="nino1522_symbols.png" width="1320" height="1800" decoding="async" srcset="thumbs/nino1522_symbols-960.webp 960w, nino1522_symbols.png 1320w" sizes="(max-width: 1000px) 100vw, 940px" alt="All 49 observed signs with CTTS identifiers and values" loading="lazy"><figcaption>CTTS identifiers connect the transcription to the visual key; they were assigned for this transcription and are not on the manuscript. <span class="credit">Image: George Lasry’s CTTS sign inventory; newly drawn font/geometric equivalents by GPT 6.1 Sol.</span></figcaption></figure>
+<figure data-credit="George Lasry’s CTTS sign inventory; newly drawn font/geometric equivalents by GPT 6.1 Sol"><img src="nino1522_symbols.png" width="1320" height="1800" decoding="async" srcset="thumbs/nino1522_symbols-960.webp 960w, nino1522_symbols.png 1320w" sizes="(max-width: 1000px) 100vw, (min-width: 1800px) 1240px, 940px" alt="All 49 observed signs with CTTS identifiers and values" loading="lazy"><figcaption>CTTS identifiers connect the transcription to the visual key; they were assigned for this transcription and are not on the manuscript. <span class="credit">Image: George Lasry’s CTTS sign inventory; newly drawn font/geometric equivalents by GPT 6.1 Sol.</span></figcaption></figure>
 <h2 id="reading"><span class="num">03</span> Decryption and translation</h2>
 <figure class="creveal" data-src="reveal/nino1522.json"></figure>
 <p>The following is the whole eight-line cipher block. Word division, accents, ñ and u/v are normalized in the edited Spanish; the literal stream below preserves the key output. V.M. is rendered “Your Majesty” for the established recipient. The proposed opening connective in line 7 remains uncertain.</p>
@@ -193,7 +194,7 @@ service to Your Majesty.</pre></details>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="adrian1521.html" rel="prev">&larr; Adrian 1521 1521</a><a href="poupet1522.html" rel="next">La Chaulx 1522 1522 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=5aaf1bd9" defer></script>
-<script src="solve-replay.js?v=02aff2b7" defer></script>
-<script src="zoom.js?v=02aff2b7" defer></script>
-<script src="site.js?v=02aff2b7"></script>
+<script src="solve-replay.js?v=80d49d4a" defer></script>
+<script src="zoom.js?v=80d49d4a" defer></script>
+<script src="site.js?v=80d49d4a"></script>
 </body></html>

@@ -4,7 +4,7 @@
 (async()=>{
   const root=document.getElementById('atlas'); if(!root || !window.d3) return;
   const $=id=>document.getElementById(id);
-  const still=matchMedia('(prefers-reduced-motion: reduce)').matches, phone=matchMedia('(max-width:860px)');
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches, phone=matchMedia('(max-width:900px)');
   const LAND='https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/';
   const [atlas,pages,open,stories,land50]=await Promise.all([
     fetch('atlas.json').then(r=>r.json()), fetch('pages.json').then(r=>r.json()).catch(()=>[]),
@@ -18,7 +18,7 @@
 
   // how the text was obtained (docs/_methods.py), in the five families the map can colour
   const FAM={ct:'rebuilt',extpt:'rebuilt',adjpt:'rebuilt',extkey:'applied',known:'applied',deciph:'prior',notsolved:'none',na:'na'};
-  const FAMS={rebuilt:['key recovered','green'],applied:['existing key applied','blue'],prior:['existing decipherment','violet'],none:['not solved','red'],na:['not applicable','muted']};
+  const FAMS={rebuilt:['key recovered','fam-key'],applied:['existing key applied','fam-ext'],prior:['existing decipherment','m-deciph'],none:['not solved','fam-no'],na:['not applicable','muted']};
 
   // ---------------------------------------------------------------- the letters and their routes
   const letters=atlas.letters.map((l,i)=>({...l,i,pg:page[l.slug]})).filter(l=>atlas.places[l.from]&&atlas.places[l.to]).sort((x,y)=>x.year-y.year);

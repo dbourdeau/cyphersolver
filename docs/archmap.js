@@ -4,7 +4,7 @@
 (async()=>{
   const root=document.getElementById('amap'), L=window.archList; if(!root || !L || !window.d3 || !window.topojson) return;
   const $=id=>document.getElementById(id);
-  const still=matchMedia('(prefers-reduced-motion: reduce)').matches, phone=matchMedia('(max-width:860px)');
+  const still=matchMedia('(prefers-reduced-motion: reduce)').matches, phone=matchMedia('(max-width:900px)');
   const LAND='https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/';
   const towns=JSON.parse($('amapdata').textContent).towns;
   const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));

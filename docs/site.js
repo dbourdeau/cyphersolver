@@ -106,6 +106,13 @@ function renderTiles(el, items){
     if(cite){ const a=document.createElement('a'); a.href=pageUrl+'#cite'; a.textContent='Cite this page'; a.className='seccite'; a.addEventListener('click',()=>{ cite.open=true; }); list.appendChild(a); }
     if(folds.length>=3){ const t=document.createElement('div'); t.className='sectools'; t.appendChild(makeToggle()); list.appendChild(t); }
     box.append(list,btn); document.body.appendChild(box); document.body.classList.add('has-secnav');
+    // a page with a table or a figure wider than the text column keeps the rail off it until the window has room for both
+    const mainEl=toc.closest('main'), mw=mainEl.getBoundingClientRect().width;
+    if([...mainEl.querySelectorAll(':scope > *, :scope > section > *')].some(e=>e.getBoundingClientRect().width>mw+60)) document.body.classList.add('has-wide');
+    // the button gets out of the way while the reader scrolls down, and returns on the way up or at rest
+    let lastY=scrollY, rest=0;
+    addEventListener('scroll',()=>{ const y=scrollY; if(Math.abs(y-lastY)<8) return; box.classList.toggle('away',y>lastY&&!box.classList.contains('open')); lastY=y;
+      clearTimeout(rest); rest=setTimeout(()=>box.classList.remove('away'),1400); },{passive:true});
     const setOpen=on=>{ box.classList.toggle('open',on); btn.setAttribute('aria-expanded',on?'true':'false'); };
     btn.addEventListener('click',e=>{ e.stopPropagation(); setOpen(!box.classList.contains('open')); });
     list.addEventListener('click',e=>{ if(e.target.closest('a')) setOpen(false); });
@@ -516,4 +523,41 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
     document.body.appendChild(s);
     s.addEventListener('animationend',()=>s.remove());
   },{passive:true});
+})();
+
+// long lists: the first screenfuls, then "show more". A list of several hundred rows is not a page anyone scrolls, so
+// each of these shows its first N entries and a button. The rest are only folded: a filter still counts and matches
+// them (it sets [hidden], this sets .pg-cut), a link to a folded row opens the list as far as that row, and Ctrl+F
+// opens everything so the browser's own search still finds every line.
+(()=>{
+  const SPEC=[['ul.findings',40],['section.wsec > ul.list',50],['table.ctable > tbody',15],['.ccards',10],['ul.cqueue',20],['ul.rqs',15],['#cat tbody',40]];
+  const pagers=[];
+  SPEC.forEach(([sel,step])=>document.querySelectorAll('main '+sel).forEach(box=>{
+    if(box.closest('.hero')||box.children.length<=step*1.5) return;
+    let limit=step;
+    const bar=document.createElement('p'); bar.className='pager';
+    const more=document.createElement('button'), all=document.createElement('button'), note=document.createElement('span');
+    more.type=all.type='button'; more.className='pg-more'; all.className='pg-all'; bar.append(more,all,note);
+    (box.closest('.tw')||box.closest('table')||box).after(bar);
+    const live=()=>[...box.children].filter(k=>!k.hidden);
+    const apply=()=>{ const ks=live(); ks.forEach((k,i)=>k.classList.toggle('pg-cut',i>=limit));
+      const left=ks.length-limit; bar.hidden=left<=0&&limit<=step;
+      more.hidden=all.hidden=left<=0; more.textContent='Show '+Math.min(step,Math.max(left,0))+' more'; all.textContent='Show all '+ks.length;
+      note.textContent=left>0?Math.min(limit,ks.length)+' of '+ks.length+' shown':ks.length+' shown'; };
+    const p={box,apply,open:n=>{ limit=Math.max(limit,n); apply(); }};
+    more.addEventListener('click',()=>{ const at=live()[limit]; limit+=step; apply(); if(at&&at.focus){ at.tabIndex=-1; at.focus({preventScroll:true}); } });
+    all.addEventListener('click',()=>p.open(1e9));
+    // a filter that hides or shows rows starts the list again from the top
+    let t=0; new MutationObserver(()=>{ clearTimeout(t); t=setTimeout(()=>{ limit=step; apply(); },30); }).observe(box,{attributes:true,attributeFilter:['hidden'],subtree:true,childList:true});
+    apply(); pagers.push(p);
+  }));
+  if(!pagers.length) return;
+  const reveal=()=>{ let el=null; try{ el=location.hash.length>1&&document.getElementById(decodeURIComponent(location.hash.slice(1))); }catch(e){}
+    if(!el) return; let moved=false;
+    pagers.forEach(p=>{ if(!p.box.contains(el)) return; const row=[...p.box.children].find(k=>k.contains(el)); const i=[...p.box.children].filter(k=>!k.hidden).indexOf(row);
+      if(row&&row.classList.contains('pg-cut')){ p.open(i+1); moved=true; } });
+    if(moved) el.scrollIntoView(); };
+  addEventListener('hashchange',reveal); reveal();
+  addEventListener('keydown',e=>{ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='f') pagers.forEach(p=>p.open(1e9)); });
+  addEventListener('beforeprint',()=>pagers.forEach(p=>p.open(1e9)));
 })();
