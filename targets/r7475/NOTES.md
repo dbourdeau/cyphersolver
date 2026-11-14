@@ -35,6 +35,13 @@ out as `texts/R7475_reading.md`: words joined and divided, the gloss's spelling 
 notes show the glossator slipping, blotted or partial words as holes. **0.95 on explicit holes**, hole rate 0.032 (no
 Polish word list, so no plain score). Kept read; it rests on the contemporary interlinear decipherment.
 
+## Independent verification by Brice Dudout (PR #565, 14 Nov 2026)
+
+Brice Dudout (PR #565, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the 79 cipher lines with the majority value of
+each number from `R7475_key.tsv` and aligned them with the gloss: 2374 of 2443 decoded letters agree (97.2%); the rest are the conflicts
+and slips listed in `R7475.txt`, one unquoted clear word (L20 super) and code 600. No key correction. Re-run here: same figures; the
+read share 0.968 stands. The DECODE images were not fetched by him or here.
+
 ## Remaining gaps
 - 10 of 2,444 numbers without an aligned gloss (ink blots L37, L38, L56, L70; a smudged figure L40; a superfluous 10 L5; the ringed 18 L41; 46 22 L55; the last 13 of -kiemi L73), plus the struck passage L58 and a lone unglossed "1." (L64) - blocker: illegible; blotted, smudged or cancelled on the page, no legible gloss
 
