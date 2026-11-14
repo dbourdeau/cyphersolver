@@ -536,3 +536,28 @@ A focused reread of the public NARA originals supports two words with the existi
 - April 11, vol. 11 fr. 0046, MS p. 88, lower telegram: both source readings and meaningful glyph alternatives are preserved. A bounded standard-Vigenere comparison of three terminal variants against the five existing keys at all phases accepts no plaintext. This does not establish a new key or exclude missing-letter/segmentation errors.
 
 Portable readings, source URLs/SHA-256 hashes, crop coordinates and deterministic checks are in `source_audit_2026-11-12/README.md`. No original images are included. Review was by AI models, with documentary context visible; it was not human paleographical certification or an entirely blind test. The opening of the 18 January telegram is already printed in *The Papers of Jefferson Davis*, vol. 11 (LSU Press, 2003), p. 339, located by Andrew Beling through the edition's official Rice index (https://jeffersondavis.rice.edu/volumes/volume-indexes/volume-11-september-1864-may-1865-index). Our coordinating AI agent read the image of p. 339 in the publisher-authorized Google Books preview (https://books.google.com/books?id=BXCeAgAAQBAJ&pg=PA339) on 12 November 2026; the image is kept locally and is not committed. Its citation is RG 109, Department of Alabama, Mississippi, and East Louisiana, Letters Sent, chapter 2, vol. 10:107, in cipher: the same page as frame 0056, so it is a modern edition of this witness, not an independent clear copy. The opening it prints agrees with the existing provisional reading. Page 340, with the ending, was not available in the preview and is unread. The Tulane Davis microfilm locator is only a potential independent witness, not an exact item located. Target ciphertexts, keys, profiles and complete-reading status are unchanged, as are Brice Dudout's two telegrams of 21 February 1865 (PR #438, `dudout/`) and the 12 November integration check of them; this audit does not touch those telegrams and does not change their read shares (0.655 and 0.75).
+
+### Integration check (14 Nov 2026, PR #577)
+
+Verified from the files by the integrating reader (an AI reader, not a person). No ciphertext file, key, status or read
+share is changed by the audit or by this check.
+
+- **Reproduced.** `source_audit_2026-11-12/check.py` passes; the two NARA images fetched again on 14 Nov 2026 (vol. 10
+  frame 0056, vol. 11 frame 0045) have the sha256 values in `SOURCES.json`. A Vigenère routine of ours gives CONTENT
+  for ODYXXRO at phase 2 of COMPLETE VICTORY (EONTENV for the old QDYXXRQ), and THE for GJS under COME RETRIBUTION.
+- **Images, 18 January (frame 0056).** The 13 final groups were compared on the crop: ODYXXRO is clear (both round
+  letters are O, not Q), and the sentence around it reads "but am [content] to serve in a subordinate capacity [in any
+  field] you may direct". Eleven other groups agree; the third letter of OHTV and the first of MEFM/NEFM are not
+  settled on the image, as the audit says.
+- **Images, 10 April (frame 0045).** GJS and the four-letter JMNH agree with the audit. Two more groups read differently
+  from `v11-0045b_transcription.txt` on the image: the second group looks like LYWVEW (not LVWVEW), which gives SHOUKD
+  for SHOULD, and the group after EIEX/FIEX looks like MF (not NF), which gives TO. With these the line decrypts
+  TQOOPS SHOUKD NOT BE SENT TO DEMO POLIS AND PORTIRN OF THE ST ORDS BLTO. The first letter of EIEX has the same form
+  as the E of the group EX on the same line, which favours SENT; it is one reader's look at a 1,900-pixel crop and
+  stays open with the rest. These two letters are recorded here for the next pass; the transcription file is not edited.
+- **Not checked:** frame 0046 (11 April), the Davis Papers p. 339, the 225 comparisons beyond the script's own check.
+- **Duplicates.** Brice Dudout's 21 February telegrams (`dudout/`) are separate and untouched. The repository's reading
+  check fails on those two entries (state "read" at 0.655 and 0.75) on the coordinator branch as well; that is an older
+  item, not part of this pull request.
+- **Status.** In progress, no page. The audit supports two of bdpayne's contextual words on the image and leaves the rest
+  open.
