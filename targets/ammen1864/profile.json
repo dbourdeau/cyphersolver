@@ -34,7 +34,7 @@
     "by": "llm from images",
     "source": "Ball State DMR image (1025 px wide, NoC-US 1.0)",
     "image_quality": "fair",
-    "notes": "one AI transcriber; one word per token, frozen before the calculation"
+    "notes": "one AI transcriber; one word per token, frozen before the calculation; all 107 words compared with the Ball State image (IIIF) on 14 Nov 2026: agree"
    }
   }
  ],
@@ -129,10 +129,19 @@
    "kind": "reading",
    "what": "Read: 85 of 90 words sure, 1 probable (was = forces), 3 code words restored from the printed text, 1 unresolved (rig).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #562: all 107 words compared with the Ball State IIIF image (agree); the route of key.json undone with an independent decoder reproduces decryption.txt word for word (17 nulls and commencement word, 'all' missing from the NOTES null list); strict count 83/90 (0.922) with the two emended initials as holes; leads 1432 and 2097 dated 1864; Eckert cipher book 1 (targets/eckert1862) checked for ink/muscle/maxim: other values, not this book.",
+   "result": "worked"
   }
  ],
  "outcome": {
-  "class": "already solved",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "The route was rebuilt from the sheet with the clear text printed in the Official Records at hand (found before the attempt).",
@@ -151,9 +160,9 @@
    "independent clear copy",
    "statistical test"
   ],
-  "fraction_read": 0.944,
+  "fraction_read": 0.922,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: 90 cipher words of the body; strict count 85 sure (0.944); with 1 probable 0.956; with 3 restored code words 0.989; 1 unresolved",
+  "fraction_read_source": "Integration check 14 Nov 2026, README rule: 90 words, 83 sure (0.922); holes: 3 code words valued from the printed text only, 1 probable (was), 1 unresolved (rig), 2 initials emended from the grid (or = N., T. = L.). The contributor's count is 85/90 (0.944), the emended initials taken as sure.",
   "provenance": "project",
   "credits": [
    {
@@ -171,11 +180,19 @@
   ],
   "gaps": [
    {
-    "item": "rig before W. T. Sherman unresolved",
-    "blocker": "open-codes"
+    "item": "code words ink, muscle, maxim valued from the Official Records text only; Union cipher books (Eckert Papers, Huntington) not searched",
+    "blocker": "not-attempted"
    },
    {
-    "item": "one AI transcriber; no human check",
+    "item": "'rig' before W. T. Sherman unresolved (code word, or a slip for 'Sig.')",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "'was' = forces probable",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "two initials emended from the grid ('or' = N., 'T.' = L.)",
     "blocker": "not-attempted"
    }
   ],
@@ -189,7 +206,7 @@
     "translation": "reading.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.944,
+    "read_share": 0.922,
     "summary": "Sherman's order of 28 Sept recalls Burbridge to Nashville; Schofield's headquarters ask Ammen to forward it, acknowledge receipt and report, adding that Burbridge may not have this cypher.",
     "reading_review": {
      "grade": "B",
@@ -200,6 +217,10 @@
    }
   ],
   "key_file": "key.json",
-  "notes": "No image is reproduced (NoC-US 1.0, watermark, commercial use needs HCHS permission). The leads 1432 and 2097 of the catalogue are one object; their date 1862 should read 1864. Daniel's vetting of lead 1432 (4 Nov 2026) already gives the 1864 date and the Official Records page; lead 2097 is closed there as its duplicate."
+  "notes": "No image is reproduced (NoC-US 1.0, watermark, commercial use needs HCHS permission). The leads 1432 and 2097 of the catalogue are one object; their date 1862 should read 1864. Daniel's vetting of lead 1432 (4 Nov 2026) already gives the 1864 date and the Official Records page; lead 2097 is closed there as its duplicate.",
+  "codes_open": {
+   "open": 5,
+   "tokens_open": 5
+  }
  }
 }
