@@ -98,7 +98,7 @@ loose. A second sign-by-sign pass is advised before these values are used to cor
 The copied cipher leaves have no sign-level transcription here: the copies are complete texts, so it is recorded as
 `transcription_missing` in the profile rather than as a gap.
 
-## Verification, 14 Nov 2026 (Brice Dudout, Claude Opus 5.5)
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
 
 - f. 68 "Monsignore da Cologna": the cipher f. 69 (canvas 65, l. 2) has the same word, `ott p+ p- ⊃ o-` = c-ol-og-n-a
   after `Є p7 fo ꝺ7 ⊃ per ÷` (Monsignore) and `♀ o-` (da); `ott` is the key's c, not a b sign. The slip is the
@@ -107,6 +107,16 @@ The copied cipher leaves have no sign-level transcription here: the copies are c
   alone (not the gloss-inferred t-o, h, fto, ϵg, ꝕ): 241 of 495 signs of the deciphered runs fit a key value. Only
   143.8 and 143.25 fit sign for sign; runs labelled K (143.24, .26, .48 …) rest on the gloss-inferred values too.
   Details in `VERIFY_dudout_20261114.md`.
+
+Project check of the above, same day. The script was re-run: 241 of 495, as he says. The f. 69 slip was looked at on
+Gallica canvas 65 at full size: after `♀ o-` (da) the line has a c sign (`ott`), then `p+ p- ⊃ o-`; the word is
+*Cologna* in the cipher too. So the sentence "f. 143: 51 runs; 9 from the key with the gloss agreeing" above means
+"labelled K in the table"; only 143.8 and 143.25 are read by the key list alone, sign for sign, and the other K runs
+also use values taken from the glosses (t-o, h, fto, ϵg, ꝕ). `ʒ=` is given *an* in 143.4 and *am* in 143.24, and `9#`
+is read *ag* where the key list has ag = ꝺ# / 9÷o: these are open labelling points for the second sign-by-sign pass.
+Read bar, by letter (the Text sections of `texts/glossed_letters.md`, `v10_relabel.share`): f. 135 1.0 (89 words);
+f. 143 **0.9496** (641 words, 34 holes). The 0.9 recorded before was a count of runs (46 of 51), not of words.
+`read_share` is now 0.949 (cut, not rounded, so that it does not round up to the bar). f. 143 stays read in part.
 
 ## Escalation
 
