@@ -443,7 +443,7 @@ GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], M.status_class(m, '
           ('other', 'Not yet classified', 'todo', lambda p: not p.get('method') and p['slug'] not in SURVEYS),
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
-EXPLORE = [('highlights', 'Highlights', 'Thirty favourites: the funny, the historic, the ingenious'),
+EXPLORE = [('highlights', 'Highlights', 'Twenty favourites: the funny, the historic, the ingenious, the hardest'),
            ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
            ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
@@ -1216,7 +1216,7 @@ def process(path):
         s = s.replace('</body>', f'<script src="home.js?v={VERSION}" defer></script>\n</body>', 1)
         feat = [next(p for p in PAGES if p['slug'] == f) for f in FEATURED]
         cards = ('<!-- cards:start -->\n<h2 id="featured">Start with these</h2>\n<div class="cards featured">\n' + ''.join(card_html(p) for p in feat) + '</div>\n'
-                 '<p class="allws"><a href="highlights.html">Thirty favourites: the funny, the historic, the ingenious &rarr;</a></p>\n<!-- cards:end -->')
+                 '<p class="allws"><a href="highlights.html">Twenty favourites: the funny, the historic, the ingenious, the hardest &rarr;</a></p>\n<!-- cards:end -->')
         s = re.sub(r'<!-- catintro:start -->.*?<!-- catintro:end -->', lambda m: catintro_html(), s, flags=re.S)
         # the hero's open count follows the catalogue on every build; the rest of the hero's counts come from _build_stats.py
         import _catalogue_page as C
