@@ -133,7 +133,7 @@
   "word_division": "none",
   "doubled_letters": "special sign (phi doubles the preceding symbol)",
   "sibling_key": "Bazeries 1901 prints the 1599 key given to Bethune's brother, same office and design, other values; used for the design only.",
-  "notes": "Known names: 48 Cardinal, 17 Aldobrandin, 7 le Roy d'Espagne; 61 qui, 63 re, 65 si, 68 tout, 71 tion, 73 vostre. 72 = vous proposed, unconfirmed."
+  "notes": "Known names and words: 48 Cardinal, 17 Aldobrandin, 7 le Roy d'Espagne, 6 (standalone) Sa Saintete; 61 qui, 63 re, 65 si, 66 sa, 68 tout, 71 tion, 72 vous, 73 vostre. 72, 6 and 66 fixed on 14 Nov 2026 from the f. 53r gloss."
  },
  "conditions": {
   "prior_solution": {
@@ -160,11 +160,12 @@
   ],
   "models": [
    "claude-opus-5",
-   "claude-fable-5-1"
+   "claude-fable-5-1",
+   "claude-opus-5-5"
   ],
   "sessions": "unknown",
   "first_date": "2026-09-17",
-  "last_date": "2026-09-17"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -279,7 +280,19 @@
    "kind": "verification",
    "what": "Consistency pass (cl): 'read in part' not justified: the Halphen 1889 gap is genuinely untried (not-attempted kept) and the print, key-rebuild and retry escalation steps are not done (left unticked); NOTES Status: in progress. The umbrella gap line for the 9 and 22 Nov runs restated as a lead sentence (its two letters are separate gap lines, mirrored in outcome.gaps).",
    "result": "partial",
-   "technique": ["statistical test"]
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "Verification pass (Claude Opus 5.5): the eight cipher lines of f. 53r block 1 transcribed and aligned with their verbatim marginal gloss (f53r_alignment.md): 72 = vous (four aligned occurrences; settles the earlier proposal and the D1 counter-indication), standalone 6 = Sa Saintete (three), 66 = sa (one), plus 3: = faire, +. = de, n, = nous. Pre-registered check (SHA-256 285ddb07...) on glossed blocks not used for the derivation (f. 56r, f. 50r): one locatable occurrence, agrees; not conclusive; the 200-shuffled-key measurement is not applicable to groups this rare. Three 22 Nov runs give sense (vostre negotiation; correspondance ... discretion; le respect), probable only. Halphen 1889 still behind HathiTrust's human check (403). 9 and 22 Nov stay decoded, not read.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -308,14 +321,14 @@
   "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. The 10 Nov letter reads (17 cipher lines, about 750 tokens estimated at the 9 Nov letter's 44 tokens a line); the 9 Nov (970 tokens) and 22 Nov (1,879) letters are decoded, not read. About 750 of 3,600, estimated. The earlier 0.55 (NOTES prose) is withdrawn as a reading figure.",
   "key": "partial",
   "codes_open": {
-   "open": 19
+   "open": 16
   },
   "grades": "unknown",
   "verification": [
    "independent clear copy",
    "historical consistency"
   ],
-  "notes": "10 Nov read in full; 9 Nov about six words in ten; 22 Nov clear text read, cipher in fragments. Open code groups include 44, 45, 62, 66-72, 26-28, 5, 3, 8. fraction_read estimated from the notes (10 Nov full; 9 Nov about half the words; 22 Nov clear text read, cipher runs fragments only), not measured. codes_open counts the 19 code numbers listed open in NOTES (2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80); total not counted. 22 Oct 2026, reading audit: 9 Nov and 22 Nov letters relabelled decoded, not read; only the 10 Nov letter reads.",
+  "notes": "10 Nov read in full; 9 Nov about six words in ten; 22 Nov clear text read, cipher in fragments. Open code groups include 44, 45, 62, 67, 69, 70, 26-28, 5, 3, 8 (6, 66, 72 fixed 14 Nov 2026). fraction_read estimated from the notes (10 Nov full; 9 Nov about half the words; 22 Nov clear text read, cipher runs fragments only), not measured. codes_open counts the 16 code numbers listed open in NOTES (2, 5, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 67, 69, 80; was 19 before 6, 66, 72 were fixed on 14 Nov 2026); total not counted. 22 Oct 2026, reading audit: 9 Nov and 22 Nov letters relabelled decoded, not read; only the 10 Nov letter reads.",
   "gaps": [
    {
     "item": "9 Nov 1601 letter, f. 33 (about half the words)",
@@ -328,9 +341,9 @@
     "detail": "decode2.py gives fragments only, the same transcription ceiling"
    },
    {
-    "item": "code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80",
+    "item": "code groups 2, 5, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 67, 69, 80",
     "blocker": "no-key-material",
-    "detail": "glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned"
+    "detail": "6, 66 and 72 fixed 14 Nov 2026 from the f. 53r gloss (f53r_alignment.md); the f. 56r blocks and the second f. 53r block are the next cribs"
    },
    {
     "item": "clear copies in BnF Cinq cents de Colbert 346",
