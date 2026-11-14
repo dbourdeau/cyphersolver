@@ -66,8 +66,8 @@ there from head Paint says 40
 fifth and 20 second were to
 leave Lewisburg yesterday Truly yours White""".splitlines()]
 C341 = ("Venus were says va post Rye sycamore reported miller there fifth leave Italy second paint thirteenth ? amazon July we "
-        "wife ? and Lewisburg ?ssissipi to forty is ms just second from soldier had twenty yesterday").split()
-VARIANT = {('virginia', 'va'), ('13th', 'thirteenth'), ('40', 'forty'), ('20', 'twenty'), ('mrs', 'ms'), ('head', 'had')}
+        "wife ? and Lewisburg ?ssissipi to forty is ms just second from soldier head twenty yesterday").split()
+VARIANT = {('virginia', 'va'), ('13th', 'thirteenth'), ('40', 'forty'), ('20', 'twenty'), ('mrs', 'ms')}
 pred = encipher(G114)
 same = code = var = hidden = 0
 for a, b in zip(pred, C341):
@@ -84,7 +84,8 @@ for a, b in zip(pred, C341):
         var += 1
 print(f'.341 vs .114 through the route: {same} same word, {code} code words with the key value, {var} spelling variants, '
       f'{hidden} hidden under the repair patch (of {len(pred)})')
-check((same, code, var, hidden) == (22, 6, 6, 2), '.341 crib: 34 of 36 positions agree, 2 unseen under the patch')
+check((same, code, var, hidden) == (23, 6, 5, 2), '.341 crib: 34 of 36 positions agree, 2 unseen under the patch')
+print('  (2 of the 6 code-word positions, Venus/Agnes and Italy/truly, are uncertain readings; if word 14 is "truly" it is a plain word)')
 
 
 # 4. Held-out test (freeze/round2/TEST_PROTOCOL_v2.md), reproduced -------------
@@ -176,7 +177,7 @@ T344 = ("lookout by still o'clock ordered to my post whistle sycamore came night
         "vermillion front all out amazon July within have to currants attack morning currants air mississippi citizens laying in these "
         "rain apricot last apricot third sight sent the into at whistle only on").split()
 T341 = ("Venus were says va post Rye sycamore reported miller there fifth leave Italy second paint thirteenth [patch] amazon July we "
-        "wife [patch] and Lewisburg Mississippi to forty is ms just second from soldier had twenty yesterday").split()
+        "wife [patch] and Lewisburg Mississippi to forty is ms just second from soldier head twenty yesterday").split()
 # .339, arrangement A (round 2): interlined "when not" counted, "&" not counted; second-route column one short, one empty cell.
 T339A = ("signed with start important united might rye sherry I answering if direct nile proposed away interfere shall is our last "
          "amazon July saw the when not amore nile the bent please opinion before Virginia first missouri gaol movement at this on").split()
@@ -206,11 +207,12 @@ for name, (note, grid, rest, _) in out.items():
         rows = render(grid[:10], AFTER_TEST) + '\n-- second section, commencement word "turkey" --\n' + render(grid[11:], AFTER_TEST)
         body = rows
     open(os.path.join(HERE, 'decryption', name + '.txt'), 'w').write(HDR + f'# {name}: {note}\n' + body + '\n')
-inf = {(0, 0): '{Camp Piatt}', (5, 0): '[nile]'}  # the first nile does not read as Toland: left as a hole
+inf = {(0, 0): '{Camp Piatt}', (5, 0): '[nile/will?]', (4, 2): 'at/as'}  # first nile: nile or will on the image; left a hole
 txt = (HDR + '# GLC02414.339: 7 rows (Dacotah). {Camp Piatt} = "sherry", inferred from the heading slot and the printed form, '
        'not from a pair. nile = Toland in the signature cell comes from .185, learned after the test; the first nile (row 6) is left a hole.\n'
-       '# Arrangement B (adopted at packaging, 13 Nov 2026): every written word counted, including the darker-ink "&" and the '
-       'margin "when not"; 42 words, no empty cell.\n'
+       '# Arrangement B (adopted at packaging, 13 Nov 2026): every written word counted, including the darker-ink "&", the '
+       'margin "when", the interlined "not", the overwritten word and the struck word; 42 words, no empty cell. 3 of the '
+       'cells read (&, when, not) are later additions in other ink or another hand.\n'
        + render(gB, AFTER_TEST, inf) +
        '\n\n# Arrangement A (round 2): "&" not counted; column 2 one short, so row 7 column 2 is empty.\n'
        + render(gA, AFTER_TEST, inf) + '\n')
@@ -221,11 +223,22 @@ open(os.path.join(HERE, 'decryption', 'GLC02414.185.txt'), 'w').write(
     'plated and nile shown raw.\n' + '\n'.join(' | '.join(gloss(w) or '[ ]' for w in r) for r in g185) + '\n')
 
 # 6. Share of .339 cells with a value ---------------------------------------------
+LATER = {(2, 1), (4, 1), (5, 1)}  # in arrangement B: the darker-ink "&", the margin "when", the interlined "not"
+ALT = {(2, 2), (5, 0)}             # gaol/gave, nile/will: plain words under the second reader's readings
+def holes_of(g):
+    rows = [line.split(' | ') for line in render(g, AFTER_TEST, inf).split('\n')]
+    return {(r, c) for r, row in enumerate(rows) for c, w in enumerate(row) if w.startswith('[')}, sum(len(r) for r in rows)
 for lab, g in (('A', gA), ('B', gB)):
-    cells = [c for line in render(g, AFTER_TEST, inf).split('\n') for c in line.split(' | ')]
-    holes = sum(c.startswith('[') for c in cells)
-    print(f'.339 arrangement {lab}: {len(cells)} cells, {holes} holes (empty or unvalued); '
-          f'{len(cells) - holes} with a value, of which 1 (Camp Piatt) is inferred from the heading slot')
+    holes, n = holes_of(g)
+    print(f'.339 arrangement {lab}: {n} cells, {len(holes)} holes; {n - len(holes)} with a word or value '
+          f'(Camp Piatt inferred from the heading slot)')
+holes, n = holes_of(gB)
+read = {(r, c) for r in range(7) for c in range(6)} - holes
+for lab, extra in (('our readings', set()), ('with gave and will', ALT)):
+    rd = read | extra
+    print(f'.339 B, {lab}: {len(rd)} of {n} ({len(rd)/n:.3f}); without the 3 later additions {len(rd - LATER)} of {n} '
+          f'({len(rd - LATER)/n:.3f})')
+check(len(read) == 35 and len(read - LATER) == 32, '.339 B counts: 35 of 42, 32 without the later additions')
 
 print('result:', 'pass' if ok else 'FAIL')
 sys.exit(0 if ok else 1)

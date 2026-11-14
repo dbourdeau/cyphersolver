@@ -10,17 +10,18 @@ Contributed by Andrew Beling, with AI agents (Claude Opus 5.5), 13 November 2026
 
 | Telegram | Read first by | What this folder adds |
 |---|---|---|
-| GLC02414.341, White to Scammon, Fayette, 2 July 1863 | Scammon's headquarters, 1863: decipherment grid GLC02414.114 (catalogue: "possibly a copy in General Scammon's hand") | The route, recovered from this pair; six code words |
+| GLC02414.341, White to Scammon, Fayette, 2 July 1863 | Scammon's headquarters, 1863: decipherment grid GLC02414.114 (catalogue: "possibly a copy in General Scammon's hand") | The route, recovered from this pair; six code words, two of them on uncertain readings (Venus/Agnes, Italy/truly) |
 | GLC02414.229, White to Scammon, Fayette, 2 July 1863 | Scammon's headquarters, 1863: clear copy GLC02414.137 ("Recd telegram") | Route confirmed on a 10-row and a 2-row section; six more code words |
 | GLC02414.344, White to Scammon, Fayette, 3 July 1863, 9.35 p.m. | Scammon's headquarters, 1863: clear copy GLC02414.138, marked "Cipher" | Four more code words |
 | GLC02414.185, Toland to [Scammon], undated | Its own decipherer, on the same sheet (grid below the cipher) | Held-out test: the frozen key predicted 60 of 66 cells |
-| GLC02414.339, Camp Piatt to "Operator", 1 July 1863, signed by code as Toland | No decipherment of the time found | Partial reading: 35 of 42 cells (one of them inferred), 7 holes |
+| GLC02414.339, Camp Piatt to "Operator", 1 July 1863, signed by code as Toland | No decipherment of the time found | Partial reading: 35 of 42 cells with a word or value under our readings (32 without three later additions in other ink or another hand), 7 holes |
 
 The readings of .341, .229 and .344 are therefore not independent solutions: the key was built from those pairs. Only
 .185 (as a test) and .339 (as a reading) go beyond what the 1863 decipherers left.
 
 The transcriptions, the grids and the readings in this folder are the project's, made by AI agents on 13 November 2026
-from the images described under Sources. No person has checked them against the images.
+from the images described under Sources. No person has checked them against the images. A second AI agent of ours
+checked them independently on 13 Nov 2026 (see Independent check below); its corrections are applied.
 
 ## Sources and terms
 
@@ -33,12 +34,23 @@ from the images described under Sources. No person has checked them against the 
   Lehrman Collection, opened through the University of Maryland's library subscription. The transcriptions were made
   from that edition's viewer and its per-document PDFs. The images are licensed; none is included here or anywhere in
   the repository.
-- **Terms.** The Gilder Lehrman item pages (read 13 Nov 2026) say that images are available to Collection subscribers,
-  that publishing an image needs a publication-rights request and fee, that research-copy PDFs "cannot be used for any
-  print or publication purposes", and they carry the standard notice on title 17 of the United States Code. The
-  Rights and Reproductions page (https://www.gilderlehrman.org/collection/rights-and-reproductions) speaks only of
-  images and research copies. Neither page says anything about transcribing or quoting the text of an item. The
-  telegrams are 1863 United States Army messages; this folder gives our own transcriptions and readings and no image.
+- **Terms, Gilder Lehrman** (read 13 Nov 2026). The item pages say images are available to Collection subscribers and
+  carry the standard notice on title 17 of the United States Code. The Rights and Reproductions page
+  (https://www.gilderlehrman.org/collection/rights-and-reproductions) covers images only: publishing an image needs a
+  publication-rights request and fee, and "Research copies cannot be used for any print or publication purposes." The
+  site has no general terms-of-use page that we could find (/terms-use and /terms-and-conditions give "page not
+  found"; the footer links only a privacy policy). Nothing we found on the Gilder Lehrman site restricts publishing a
+  transcription of an item's text.
+- **Terms, Adam Matthew** (the edition we read; "Terms of Use" page of "American History, 1493-1945", read 13 Nov 2026).
+  It grants research and non-commercial use and says: "Authorised Users have the right to use, with appropriate credit
+  and copyright permission from the original source archive in the case of re-publication, figures, tables and brief
+  excerpts from the Licensed Materials in the Authorised User's own scientific, scholarly and educational works." It
+  also says "The Licensee shall not modify or create a derivative work of the Licensed Materials without the prior
+  written permission of Licensor", and forbids commercial use and "bulk reproduction or distribution". It does not
+  mention transcriptions. Whether a full transcription of a short 1863 manuscript counts as a "brief excerpt" of the
+  licensed materials, or needs Gilder Lehrman's permission, is not settled by these words: this is a decision for
+  Andrew before posting. The manuscripts themselves are 1863 United States Army messages, out of copyright; the
+  transcriptions are ours; no image is included.
 - **Catalogue notes used.** .341 docket "Col. C.B. White / Statement of Mrs. Miller / about 22nd & 45th Va."; .344 docket
   "Enemy's scouts seen"; .339 "In code addressed to Operator. Written in Camp Piatt" (place written: Belle, West
   Virginia); .114 and .117 "possibly a copy in General Scammon's hand of a decoded cypher telegram".
@@ -47,18 +59,31 @@ from the images described under Sources. No person has checked them against the 
 
 A Union military-telegraph route cipher with local code words.
 
-- The message is written six words to a row. Row 1 is a heading: place, month, day, Scammon, Charleston (Scammon's
-  station; left out in .344), then the first word of the text. The sender's name is the last cell.
+- The message is written six words to a row. In four telegrams row 1 is a heading; what it holds:
+  - .341 (.114): Fayette, July, second, Scammon, Charleston, then the first text word "Just".
+  - .229: Fayette, July, second, Scammon, Charleston, then "we" (= Lew, the first text word).
+  - .344: Fayette, July, third, Scammon, then the text begins ("enemy's cavalry"): no Charleston.
+  - .339: sherry (inferred: Camp Piatt), July, first, Scammon, Charleston, then [Virginia].
+  - .185 has no heading row: its grid begins with the text ("after making a thorough search of").
+  The sender's name is the last cell in .341, .229, .344, .185 and .339.
 - The columns are taken off in this order: **up the 5th, down the 1st, up the 4th, down the 2nd, up the 6th, down the
   3rd.** No blind (check) words are added at the column ends.
-- A **commencement word** stands in front of each section and gives its number of rows (`COMMENCEMENT.tsv`): Florida 6
-  (.341), Dacotah 7 (.339), Wilderness 9 (.344 and .185), Ocean 10 (.229), Turkey 2 (the second sections of .229 and
-  of .185). Wilderness gives 9 rows and Turkey 2 rows in two telegrams each. The route is the same for every row count
-  seen; no telegram shows another route.
+- A **commencement word** stands in front of each section (`COMMENCEMENT.tsv`). Observed, not tested: the number of rows
+  goes with the word in every case seen. Florida 6 rows (1 example, .341), Ocean 10 (1 example, .229), Dacotah 7 (1
+  example, .339, and only if the later additions in .339 are counted as words, so this one is circular), Wilderness 9
+  (2 examples, .344 and .185), Turkey 2 (2 examples, the second sections of .229 and .185). Only Wilderness and Turkey
+  repeat. In every case the rows also equal the word count divided by six, which is how our key computes them, so
+  nothing here shows that the word sets the rows; the held-out test held the grid sizes fixed and does not test it.
+  Plum (1882, vol. 1, p. 47) describes Stager's cipher No. 7 as having commencement words that "indicated the number of
+  lines", which fits. The route is the same for every row count seen; no telegram shows another route.
 - **Code words** replace places, names and military words: `codewords.tsv` lists every one, with the pair it was valued
-  from. Sixteen word forms were frozen in the key (sycamore, rye, amazon, mississippi, venus, italy, apricot(s), apple,
-  cedar, whistle, cotton, currants, vermillion, gild, gilding, coat); plated = retreated and nile = Toland were learned
-  from .185 after the test.
+  from and how often it occurs in the valued pairs. Sixteen word forms were frozen in the key. Two of them rest on
+  uncertain readings of .341 and are not counted: word 2, "Venus" or "Agnes" (= yours), and word 14, "Italy" or "truly"
+  (= Truly; if "truly", it is a plain word, not a code word). That leaves **14 code words valued** in the frozen key:
+  sycamore, rye, amazon, mississippi, apricot(s), apple, cedar, whistle, cotton, currants, vermillion, gild, gilding,
+  coat. Of these, **rye, apple, cedar, cotton, gild, gilding and coat rest on a single occurrence** in a valued pair
+  (cedar and cotton are also corrected in the decipherment .110). plated = retreated and nile = Toland were learned
+  from .185 after the test, one occurrence each. sherry = Camp Piatt is inferred from the heading slot, not valued.
 - Telegraph slips are common and are not code: ffine = from, rain = run, "laying road" = hanging around, "the" for They,
   "of" for if, "air" for are, "we" for Lew, "these" for them, "might" for night. An ink blot in .229 marks a deleted
   word; words struck through in .229 (twenty, fortifying, would, say) are needed in the grid and count as text.
@@ -69,9 +94,11 @@ A Union military-telegraph route cipher with local code words.
 ## How the route was found (round 1, 13 Nov 2026)
 
 GLC02414.114 is a period decipherment of .341 written into a 6 x 6 grid. Putting the .114 grid through the route gives
-the .341 cipher word for word (`verify.py`, part 3): 22 positions are the same word, 6 are code words, 6 are spelling
-variants (va, thirteenth, forty, twenty, ms, had), and 2 are hidden under a paper repair patch on the .341 form, so
-they are not seen. The round 1 notes said "all 36 positions agree"; 34 of 36 is the seen count.
+the .341 cipher word for word (`verify.py`, part 3): 23 positions are the same word, 6 are code words (two of them,
+Venus/Agnes and Italy/truly, uncertain readings), 5 are spelling variants (va, thirteenth, forty, twenty, ms), and 2
+are hidden under a paper repair patch on the .341 form, so they are not seen. The round 1 notes said "all 36 positions
+agree"; 34 of 36 is the seen count. The key was built from this same pair, so this shows consistency, not a test.
+("had" in our first transcription is "head" on the image, as in .114.)
 
 ## Tests
 
@@ -118,6 +145,17 @@ Limits, stated as they are:
   (whistle, twice); the other 13 code-word values are not tested by it.
 - `verify.py` re-runs the test and reproduces the frozen figures.
 
+## Independent check (13 Nov 2026)
+
+A second AI agent of ours, working from the images before it opened this folder, derived the route from .341 and .114
+and got the same route (up 5, down 1, up 4, down 2, up 6, down 3, commencement word outside the grid) and the same
+code-word values. Its agreement counts match ours: 70 of 70 checkable cells on .229 (row 1 columns 4-5 are not in
+.137), 54 of 54 on .344, and 60 of 66 on .185 by our script. Its record is outside this folder. Its corrections are
+applied here: the heading row and commencement-word statements, the sources of rye and amazon, the single-occurrence
+marks, "head" for "had", the uncertain readings Venus/Agnes and Italy/truly (now outside the count of code words),
+the alternative readings in .339 (gave, will, as, way) and the .339 counts with and without the later additions.
+It also noted that the .185 control randomises the route only, with grid sizes and code values fixed.
+
 ## Readings
 
 Sentences in `reading/`, grids in `decryption/` (written by `verify.py`). Holes are marked [ ].
@@ -133,17 +171,24 @@ Sentences in `reading/`, grids in `decryption/` (written by `verify.py`). Holes 
 - **.185** (read at the time on the sheet; our held-out test): Toland reports that the powder and fuse are not in the
   army wagon, that he started at three in the morning, and that it will be a close race if the enemy has retreated.
 - **.339** (no decipherment of the time): "[Camp Piatt], July first. Scammon, Charleston. [Virginia] I saw [Missouri]
-  last night before answering, and [gaol] our united opinion. If the movement is important, please direct when [it]
-  shall start [bent]. [nile] not this interfere with the proposed [amore] on [away]? Signed Toland." 35 of 42 cells
-  carry a word or a value; Camp Piatt (the code word sherry) is inferred from the heading slot and the printed form,
-  so 34 rest on plain words or pair values; nile = Toland in the signature was learned after the test.
-  - **Arrangement.** At packaging (13 Nov 2026) the darker-ink "&" between "saw" and "the" was counted as a word. With
-    it and the margin "when not" (another hand, with a caret), the 42 words fill the 7 x 6 grid exactly and rows 3-7
-    read as above. The round 2 arrangement left the "&" out and an empty cell at row 7 column 2; it gave "if when
-    movement is important please direct not at shall start" and also 34 cells with a value. Arrangement B was chosen
-    by sense and has not been checked by a second reader; both are in `decryption/GLC02414.339.txt`.
-  - "at" is read as a slip for "it" (an emendation). The darker ink also overwrites the word read "amore" and strikes
-    "bent"; it may be the receiving operator's or the decipherer's.
+  last night before answering, & [gaol, or the plain word gave] our united opinion. If the movement is important,
+  please direct when at/as shall start [bent]. [nile, or the plain word will] not this interfere with the proposed
+  [amore] on [away]? Signed Toland."
+  - **Filling the grid.** The 42 cells fill exactly only if the darker-ink "&", the margin "when", the interlined
+    "not", the overwritten word ("amore") and the struck word ("bent") each count as one word. Three of the cells
+    counted as read (&, when, not) are later additions in other ink or another hand.
+  - **Counts.** Under our readings: 35 of 42 cells carry a word or a value (0.833); without the three later additions,
+    32 of 42 (0.762). Under the second reader's "gave" and "will": 37 of 42 (0.881), or 34 of 42 (0.810) without the
+    additions. In every count Camp Piatt (sherry) is inferred from the heading slot and nile = Toland in the signature
+    was learned after the test.
+  - **Readings re-examined on the image** after the independent check (13 Nov 2026): "gaol" (the letters look like
+    o-l, not v-e, but "gave" reads well: both given, kept as a hole); the first "nile" (n or w, not settled: both given,
+    kept as a hole); "at" or "as" (a plain word either way; the earlier emendation to "it" is dropped); "away" or
+    "way" (a hole either way); the struck word "bent", "bout" or "best" (illegible).
+  - **Arrangement.** The round 2 arrangement left the "&" out and an empty cell at row 7 column 2 ("if when movement is
+    important please direct not at shall start"). Arrangement B was chosen at packaging by sense; the independent
+    check reached the same arrangement. Both are in `decryption/GLC02414.339.txt`. The darker ink may be the receiving
+    operator's or the decipherer's.
 
 ### The six (now seven) unvalued code words in .339, tried against the context
 
@@ -157,8 +202,9 @@ Tried on 13 Nov 2026 after the test; none is given a value.
 - So the last sentence may ask whether "the movement" would interfere with the proposed raid ([amore]?) on the
   railroad or Wytheville ([away]?), and "our united opinion" may be Toland's and Powell's ([Missouri]?). These are
   guesses from context; no second message tests them.
-- [Virginia] stands in the first text slot (where .114 has "Just" and .344 "enemy's"). [gaol] and [bent] give no
-  firm lead. The first nile (row 6) does not read as Toland and is left open.
+- [Virginia] stands in the first text slot (where .114 has "Just" and .344 "enemy's"). [gaol] may be the plain word
+  "gave"; [bent] is illegible. The first nile (row 6) does not read as Toland; read "will" it gives "Will not this
+  interfere with the proposed [amore] on [away]?".
 
 ## Period decipherments whose ciphers were not found
 
@@ -232,8 +278,10 @@ The round 1 notes gave Pack's Ferry as p. 1031; the mention is on p. 1032 (and p
 
 - .339: code words Virginia, Missouri, gaol, bent, amore, away and the first nile have no value - blocker: open-codes;
   no second message with these words and no decipherment of the time has been found; the cipher book is not identified.
-- .339: arrangement of the "&" and the margin "when not" chosen by sense - blocker: illegible; whose hand added them,
-  and when, cannot be settled from the image alone.
+- .339: arrangement of the "&", the margin "when" and the interlined "not" chosen by sense, and the readings gaol/gave,
+  nile/will, at/as, away/way - blocker: illegible; not settled on the image; whose hand added the words, and when,
+  cannot be settled either.
+- .341: word 2 Venus/Agnes and word 14 Italy/truly - blocker: illegible; both readings kept, neither counted as a code word.
 - The cipher book behind the route, commencement words and code words - blocker: no-key-material; Books 1, 2 and 9 do
   not fit, No. 12 and No. 10 were not seen.
 - .341: two words under the paper repair patch - blocker: needs-physical-access; supplied from .114.

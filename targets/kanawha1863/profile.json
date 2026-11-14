@@ -34,7 +34,7 @@
     "by": "llm from images",
     "source": "Adam Matthew Digital, 'American History, 1493-1945' (Gilder Lehrman Collection), via a University of Maryland library subscription; licensed images, not included",
     "image_quality": "good",
-    "notes": "one AI transcription pass; 37 words (commencement word Florida + 36 grid words), counted from the token list in verify.py; 2 grid words hidden under a paper repair patch"
+    "notes": "one AI transcription pass; 37 words (commencement word Florida + 36 grid words), counted from the token list in verify.py; 2 grid words hidden under a paper repair patch; re-examined after an independent check: 'had' corrected to 'head'; words 2 (Venus/Agnes) and 14 (Italy/truly) uncertain"
    }
   },
   {
@@ -166,7 +166,7 @@
     "by": "llm from images",
     "source": "Adam Matthew Digital, 'American History, 1493-1945' (Gilder Lehrman Collection), via a University of Maryland library subscription; licensed images, not included",
     "image_quality": "good",
-    "notes": "two AI passes and a re-examination of the '&' and the overwritten word at packaging; 43 words (Dacotah + 42 incl. the margin 'when not' and the darker-ink '&'), counted from verify.py"
+    "notes": "two AI passes and a re-examination of the '&' and the overwritten word at packaging; 43 words (Dacotah + 42 incl. the margin 'when not' and the darker-ink '&'), counted from verify.py; re-examined after an independent check: gaol/gave, nile/will, at/as, away/way not settled, both readings kept"
    }
   }
  ],
@@ -311,6 +311,16 @@
    ],
    "what": "Unvalued .339 code words tried against Official Records I/27/3 (Scammon's railroad expedition, Toland's brigade of 8 July): guesses only, no value assigned.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Independent check by a second AI agent of the project: route derived from the .341 and .114 images before it opened the folder; same route and code-word values; 70 of 70 checkable cells on .229, 54 of 54 on .344, 60 of 66 on .185 reproduced. Its corrections applied: heading row, commencement words stated as an untested observation, sources of rye and amazon, single occurrences marked, 'head' for 'had', Venus/Agnes and Italy/truly uncertain and outside the count (14 code words valued), .339 alternative readings and counts with and without later additions.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -330,7 +340,7 @@
   ],
   "fraction_read": 0.974,
   "fraction_read_method": "measured",
-  "fraction_read_source": "verify.py grids, unit grid cells (cipher words less commencement words): 270 cells over five telegrams (.341 36, .229 72, .344 54, .185 66, .339 42); 7 holes, all in .339. In .339 alone 35 of 42 (0.833), one of them inferred.",
+  "fraction_read_source": "verify.py grids, unit grid cells (cipher words less commencement words): 270 cells over five telegrams (.341 36, .229 72, .344 54, .185 66, .339 42); 7 holes, all in .339. In .339 alone 35 of 42 (0.833), one inferred and three later additions in other ink or hand (32 of 42 without them).",
   "codes_open": {
    "open": 7,
    "tokens_open": 7
@@ -357,7 +367,11 @@
     "detail": "Supplied from the decipherment .114."
    }
   ],
-  "validation": {"date": "2026-11-13", "verdict": "not applicable", "notes": "Route transposition of whole words with a code layer: the character-level test has no token alignment to score. The key was instead tested on a held-out decipherment written before scoring (freeze/round2: 60 of 66 cells; 200 random routes, maximum 40)."},
+  "validation": {
+   "date": "2026-11-13",
+   "verdict": "not applicable",
+   "notes": "Route transposition of whole words with a code layer: the character-level test has no token alignment to score. The key was instead tested on a held-out decipherment written before scoring (freeze/round2: 60 of 66 cells; 200 random routes, maximum 40)."
+  },
   "credits": [
    {
     "who": "ajbeling",
@@ -390,7 +404,7 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "A soldier's wife from the head of Paint Creek reports that the 45th and 22nd Virginia were to leave Lewisburg.",
-    "note": "Two grid words under the repair patch supplied from .114.",
+    "note": "Two grid words under the repair patch supplied from .114. Words 2 (Venus/Agnes) and 14 (Italy/truly) are uncertain readings; the cells read 'yours' and 'Truly' in .114 either way.",
     "reading_review": {
      "grade": "B",
      "by": "the packaging AI agent (Claude Opus 5.5), one of the contributor's own agents, not a human review",
@@ -463,7 +477,7 @@
     "state": "read in part",
     "read_share": 0.833,
     "summary": "Toland gives Scammon 'our united opinion' and asks, if the movement is important, when it shall start, and whether it will interfere with a proposed operation; written a fortnight before his raid toward Wytheville.",
-    "note": "7 code words unvalued; Camp Piatt inferred from the heading slot; arrangement with the '&' chosen by sense.",
+    "note": "7 holes; Camp Piatt inferred from the heading slot; 3 of the 35 cells read are later additions (&, when, not): 32 of 42 (0.762) without them; 37 of 42 under a second reader's 'gave' and 'will'. Arrangement with the '&' chosen by sense; a second reader reached the same.",
     "reading_review": {
      "grade": "B",
      "by": "the packaging AI agent (Claude Opus 5.5), one of the contributor's own agents, not a human review",
@@ -477,6 +491,6 @@
    "codewords.tsv",
    "COMMENCEMENT.tsv"
   ],
-  "notes": "No image is included (licensed edition). .229, .341 and .344 were read in 1863; the key was built from them, so their readings are not tests."
+  "notes": "No image is included (licensed edition). .229, .341 and .344 were read in 1863; the key was built from them, so their readings are not tests. 14 code words valued in the frozen key (Venus/Agnes and Italy/truly uncertain, not counted); 7 of them rest on one occurrence. A second AI agent of the project checked the work independently (not a human check)."
  }
 }
