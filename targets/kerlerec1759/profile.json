@@ -1,0 +1,369 @@
+{
+ "schema_version": 1,
+ "target": "kerlerec1759",
+ "title": "Kerlérec to the Marine minister, 1759: three cipher despatches without a period decipherment (nos. 206, 207, 215)",
+ "documents": [
+  {
+   "id": "206",
+   "shelfmark": "ANOM COL C13A 41 ff. 81r-82r (no. 206, third copy)",
+   "date": "3 July 1759",
+   "year": 1759,
+   "country": "France",
+   "language": "French",
+   "read": "read in part",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 555,
+    "distinct": 168,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/no206_groups.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANOM viewer images (IIIF crops); links in NOTES.md",
+    "image_quality": "good"
+   },
+   "places": {
+    "from": "New Orleans",
+    "to": "Versailles"
+   }
+  },
+  {
+   "id": "207",
+   "shelfmark": "ANOM COL C13A 41 ff. 97r-97v (no. 207, first copy, coded passage)",
+   "date": "13 July 1759",
+   "year": 1759,
+   "country": "France",
+   "language": "French",
+   "read": "read in part",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 191,
+    "distinct": 102,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/no207_groups.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANOM viewer images (IIIF crops); links in NOTES.md",
+    "image_quality": "good"
+   },
+   "places": {
+    "from": "New Orleans",
+    "to": "Versailles"
+   }
+  },
+  {
+   "id": "215",
+   "shelfmark": "ANOM COL C13A 41 ff. 111r-111v (no. 215, second copy)",
+   "date": "17 September 1759",
+   "year": 1759,
+   "country": "France",
+   "language": "French",
+   "read": "read in part",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": 322,
+    "distinct": 137,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/no215_groups.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANOM viewer images (IIIF crops); links in NOTES.md",
+    "image_quality": "good"
+   },
+   "places": {
+    "from": "New Orleans",
+    "to": "Versailles"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Kerlérec's two-part numerical nomenclator of 1755-62 (about 700 code numbers for letters, syllables, words and names; nine letters with two homophones, usually written stacked).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "mixed"
+  },
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false,
+   "note": "No codes for accents or capitals; stacked homophone pairs written one above the other."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Pusch 2008 (Louisiana History 49:463-480) rebuilt the code book (547 of 700 entries, Table 2) and says the three despatches, for which no period plaintext is extant, could be decoded with it (p. 468 and n. 13); he summarises the content of no. 206 (pp. 474-475) and no. 207 (p. 475) and shows the first coded lines of no. 215 as an image (p. 465); he prints no French text.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "published key"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Andrew Beling directed the research and set the contribution scope; the work was done with AI agents.",
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "tools": [
+   "Python alignment, decoding and test scripts (scripts/)",
+   "image inspection of IIIF crops"
+  ],
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "access",
+   "what": "ANOM C13A 41 and 42 viewed through IIIF crops in Chrome (curl blocked by a proof-of-work page and a 403; not bypassed).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "key from source",
+   "what": "Transcribed 492 code groups of the ministry-deciphered nos. 194 (1759) and 228 (1760, f. 48r) with the clerk's interlinear plaintext and aligned them into 452 group pairs, 164 codes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Compared the manuscript pairs with Pusch 2008 Table 2: 156 codes agree, 5 spelling variants, 2 differ, 1 not in Pusch.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "what": "Froze keys (sha256), wrote a held-out test, then transcribed no. 228 ff. 48v-49r: merged key 243/253 = 96.0% of held-out groups decode to the clerk's word (200 shuffled keys max 17.8%); key from the clerks' glosses (segmented with Pusch's table, so not independent of it) 198/253 = 78.3% (shuffles max 24.1%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Transcribed nos. 206, 207 (coded passage) and 215 twice, the second pass from the last line upward; one disagreement in 1,068 groups, settled on the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Decoded with the clerk's pairs plus Pusch's values where no pair exists: 1,065 of 1,068 legible groups; three codes in no. 206 have no value anywhere.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Paged C13A 41 (1,010 images) and C13A 42 (638 images) at thumbnail crops for further cipher pages and duplicate copies: none of nos. 206, 207, 215; C13A 42 ff. 42-47 is the first copy of no. 228, already deciphered in its second copy.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1065 tokens, 247 types, fr-modern order 4: reading -1.976 per letter; random keys -3.377 (z 11.5); key annealed onto shuffled ciphertext best -2.3 (mean -2.322, z 18.3); annealer on the real text -2.283. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "verification": [
+   "statistical test",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "date": "2026-11-13",
+    "note": "Andrew Beling, with AI agents: transcriptions, key tied to manuscript pairs, held-out test, first full text of the three despatches. Reading with a known key, not an independent solution."
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "date": "1759-1760",
+    "note": "Anonymous clerks of the Ministry of the Marine: interlinear decipherments of nos. 194 and 228, the source of every manuscript pair."
+   },
+   {
+    "who": "pusch",
+    "role": "key or decipherment used",
+    "date": "2008",
+    "note": "Donald E. Pusch, 'Kerlérec's Cipher', Louisiana History 49 (2008) 463-480: rebuilt the code book (Table 2), says these three despatches could be decoded with it and summarises nos. 206 and 207 (pp. 474-475); his table was used to segment the clerks' glosses, and 124 of his values are used for codes with no clerk's pair (key/pusch_values_used.tsv)."
+   }
+  ],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "key_file": "key/key_manuscript.tsv",
+  "texts": [
+   {
+    "doc": "206",
+    "label": "Coded body of no. 206, 3 July 1759 (clear opening and close outside the code)",
+    "transcription": "transcriptions/no206_reconciled.txt",
+    "decryption": "decoded_206.txt",
+    "reading": "reading_fr_206.txt",
+    "translation": "translation_en_206.txt",
+    "state": "read in part",
+    "language": "fr",
+    "summary": "Kerlérec denounces the cabal of the ordonnateur Rochemore and his officer allies, asks for a frigate and Swiss troops to send them to France, and warns that Indian trade goods have run out.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Andrew Beling's own AI agents (the working agent; not a person)",
+     "date": "2026-11-14",
+     "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
+    },
+    "read_share": 0.9536082474226805,
+    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage."
+   },
+   {
+    "doc": "207",
+    "label": "Coded passage of no. 207, 13 July 1759 (ff. 97r-97v)",
+    "transcription": "transcriptions/no207_reconciled.txt",
+    "decryption": "decoded_207.txt",
+    "reading": "reading_fr_207.txt",
+    "translation": "translation_en_207.txt",
+    "state": "read in part",
+    "language": "fr",
+    "summary": "Kerlérec reports telling the officers that the Balize post no longer commands the river mouth, has two cannon left for signals, and is under orders to be evacuated at the sight of a certain number of enemies.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Andrew Beling's own AI agents (the working agent; not a person)",
+     "date": "2026-11-14",
+     "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
+    },
+    "read_share": 0.9699248120300752,
+    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage."
+   },
+   {
+    "doc": "215",
+    "label": "Coded body of no. 215, 17 September 1759",
+    "transcription": "transcriptions/no215_reconciled.txt",
+    "decryption": "decoded_215.txt",
+    "reading": "reading_fr_215.txt",
+    "translation": "translation_en_215.txt",
+    "state": "read in part",
+    "language": "fr",
+    "summary": "The Choctaw nation (\"nearly half\", in the clear opening) is resolved to receive English traders for want of French goods; war is feared, the garrison is about 900 men short of 2,000 and gunpowder nearly gone.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Andrew Beling's own AI agents (the working agent; not a person)",
+     "date": "2026-11-14",
+     "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
+    },
+    "read_share": 0.9775784753363229,
+    "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage."
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Groups lost in the binding gutter at line ends of ff. 81v, 97v and 111v (at least 18, 2 and 7)",
+    "blocker": "needs-physical-access",
+    "detail": "No duplicate copy in C13A 41 or 42; the Library of Congress LCRP microfilm (reel 48) or the leaf itself would restore them."
+   },
+   {
+    "item": "Codes 107, 209 and 591 in no. 206 have no value in our pairs or in Pusch's table",
+    "blocker": "open-codes",
+    "detail": "Context suggests surpris, ô(ter) and retour/bord (readings/DOUBTS.md); marked as holes."
+   }
+  ],
+  "first_break": "unpublished prior",
+  "method_basis": "Key from the Marine clerks' interlinear decipherments of nos. 194 and 228, completed from Pusch 2008 Table 2; three bare despatches decoded with it.",
+  "parts": [
+   {
+    "label": "Manuscript key",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "452 group pairs (164 codes) from the clerks' decipherments of nos. 194 and 228, cut into per-code pieces with Pusch's table as the aligner's dictionary."
+   },
+   {
+    "label": "Text of nos. 206, 207, 215",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Clerks' values for about 80% of the groups, Pusch 2008 values alone for 220 of 1,068; gutter losses and three unknown codes."
+   }
+  ],
+  "notes": "Lead 1207. First full text and translation of three Kerlérec cipher despatches of 1759 that carry no period decipherment; Pusch 2008 summarised the content of nos. 206 and 207 but printed no text. About a fifth of the groups (220 of 1,068) rest on Pusch's values alone.",
+  "validation": {
+   "date": "2026-11-13",
+   "model": "fr-modern",
+   "file": "validation.tsv",
+   "tokens": 1065,
+   "types": 247,
+   "tokens_per_type": 4.31,
+   "score": -1.976,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.377,
+     "sd": 0.122,
+     "max": -3.035,
+     "z": 11.5,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.322,
+     "sd": 0.019,
+     "max": -2.3,
+     "z": 18.3,
+     "p": 0.1429
+    }
+   },
+   "power": -2.283,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.976; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.283"
+  },
+  "fraction_read": 0.9637096774193549,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "measure_reading.py: 717/744 words of reading_fr_206/207/215.txt carry no uncertainty mark. Normalised reading including the clear lines quoted for context; not cipher-group coverage (1,065 of 1,068 legible groups decoded, gutter losses not counted) and not a measure of accuracy."
+ }
+}
