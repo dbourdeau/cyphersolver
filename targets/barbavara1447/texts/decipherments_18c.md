@@ -100,8 +100,9 @@ Ex Roma die quarto Martii 1447. per V.S. servitorem devotum Marcolinum de Barbav
 ## f. 68 = decipherment of f. 69 (Rome, 6 Mar 1447) [canvas 65, upper leaf]
 
 Illustris ac excellens domine honorandissime. In questa hora decima septima, o circha, è publicato Papa Monsignore da
-Cologna {so in the copy: Tommaso Parentucelli, elected as Nicholas V on 6 March 1447, was cardinal-bishop of Bologna;
-the cipher was not checked at this word}. Credo firmamente che serà amico, e presto me sforzarò de vederne la
+Cologna {so in the copy and in the cipher: f. 69 l. 2 has ott p+ p- ⊃ o- = c-ol-og-n-a, with ott = c (checked on
+canvas 65, 14 Nov 2026); Tommaso Parentucelli, elected as Nicholas V on 6 March 1447, was cardinal-bishop of Bologna}.
+Credo firmamente che serà amico, e presto me sforzarò de vederne la
 experientia circa le cosse me sono comesse. Et de quello seguirà V.S. ne serà avisata, la quale me po avisare, se gli
 pare che sia da servare per mi più uno modo che un altro. Me ricommando a la Excelencia vostra.
 Ex Roma sexto Marcij 1447. Per Servitorem V.V. Marcolinum de Barbavariis.
