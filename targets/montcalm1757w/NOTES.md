@@ -16,11 +16,11 @@ Each declared unit has the full figure transcription (`transcriptions/`), the pe
 
 ## System and key
 
-“Code W” is our working label for the War Department numerical code, not the title of a recovered key sheet. Numbers stand for letters, syllables, words and names, without alphabetical order. `key/W_1757_attestations.tsv` indexes 319 clearly numbered groups from the 1757 cipher/decipherment pairs, keeping conflicting values and sic observations with their counts (`KEY_SCOPE.md`). `key/uncertain_digits.tsv` withholds two uncertain numbered occurrences, so that a miscopied group does not create a false homophone. The expanded 430-entry alignment table from the exploratory work is deliberately not presented as a key.
+“Code W” is our working label for the War Department numerical code, not the title of a recovered key sheet. Numbers stand for letters, syllables, words and names, without alphabetical order. `key/W_1757_attestations.tsv` indexes 318 clearly numbered groups from the 1757 cipher/decipherment pairs, keeping conflicting values and sic observations with their counts (`KEY_SCOPE.md`). `key/uncertain_digits.tsv` withholds two uncertain numbered occurrences, so that a miscopied group does not create a false homophone. The expanded 430-entry alignment table from the exploratory work is deliberately not presented as a key.
 
-The digit recheck corrected p. 506, 670? to 690 and p. 511, 13? to 83; confirmed 886 and the problematic literal 63 on p. 517; and left the middle digit of p. 518, 2?5, unresolved. Supporting p. 167 (1758) reads 60 and 83, not 670? and 13?. The 1756 group ?59 remains uncertain. Details in `DIGIT_AUDIT.md`.
+The digit rechecks corrected p. 511, 13? to 83; confirmed 886 and the problematic literal 63 on p. 517; and left two groups unsettled: p. 506, 6?0 (670 or 690: the middle stroke is open like this copyist’s 7s, though two earlier readers saw a 9) and the middle digit of p. 518, 2?5. On p. 510 the first group is a clear 159, and the copyist’s “+” stands after 139 (“toujours”), so his margin “sic pro 159 = une” means “une livre de bœuf”; the reading and translation follow the correction. Supporting p. 167 (1758) reads 60 and 83, not 670? and 13?. The 1756 group ?59 remains uncertain. Details in `DIGIT_AUDIT.md`.
 
-Not the Vaudreuil table. Brice Dudout’s `targets/vaudreuil1760/` (with `vaudreuil1759a`–`c`) reads Vaudreuil’s letters to the Marine minister with the 1757 Vaudreuil numerical table, ANOM COL C11E 10 (Archives nationales d’outre-mer, colonial series), LAC sheet e001295274 (`targets/vaudreuil1760/key/key274.json`). Code W is a different code: of the 243 numbers present in both that table and our attestation index, none has the same value (checked 13 November 2026). Paulmy’s 1757 mention of a “petit chiffre” sent to Montcalm (Casgrain, *Collection des manuscrits du maréchal de Lévis*, III, p. 64) is probably this code; that identification is our inference.
+Not the Vaudreuil table. Brice Dudout’s `targets/vaudreuil1760/` (with `vaudreuil1759a`–`c`) reads Vaudreuil’s letters to the Marine minister with the 1757 Vaudreuil numerical table, ANOM COL C11E 10 (Archives nationales d’outre-mer, colonial series), LAC sheet e001295274 (`targets/vaudreuil1760/key/key274.json`). Code W is a different code: of the 243 numbers present in both that table and our attestation index, none has the same value (checked 13 November 2026). Casgrain’s *Collection des manuscrits du maréchal de Lévis*, III (1890), p. 64 prints Paulmy’s letter of 10 April 1757 sending Montcalm “un petit chiffre”. Whether that is code W is uncertain: Paulmy offers it for a private and secret correspondence, apart from Montcalm’s ordinary letters to the war minister, while code W is used in the ordinary dispatches and is already in Montcalm’s cipher postscript of 3 November 1756 (`support/W1756-11-03_A1_3417_duplicata.txt`).
 
 Open follow-up: the third numerical sheet of the same volume, LAC e001295276 (the 1758 Montcalm table described in `targets/vaudreuil1760/NOTES.md`), has not been compared with code W.
 
@@ -36,7 +36,7 @@ Open follow-up: the third numerical sheet of the same volume, LAC e001295276 (th
 
 ## Remaining gaps
 
-- Uncertain 1757 numerals, p. 510 159? and p. 518 2?5 - blocker: needs-physical-access; the LAC copy is ambiguous and two digit readers disagree on 2?5, so both are withheld from the key; the French originals at Vincennes would settle them.
+- Unsettled 1757 numerals, p. 506 6?0 (670 or 690, read “rt”) and p. 518 2?5 (read “em”) - blocker: needs-physical-access; the LAC copy is ambiguous and the readers disagree, so both are withheld from the key; the French originals at Vincennes would settle them.
 - Conflicting 1757 values, chiefly 63 written over “s” where the usual reading is “vivres” - blocker: open-codes; copy slip or enciphering slip cannot be told apart without the original key or the original letters.
 
 Outside the declared units, and not counted as gaps in them: the clear text of the covering letter, the full Lévis 1759 sequence, and a fuller prior-publication check (the RAPQ volumes for 1924–1927 were not available to us).
@@ -47,10 +47,14 @@ Outside the declared units, and not counted as gaps in them: the clear text of t
 - [ ] siblings: 1756–1759 supporting pages sampled (`support/`); the complete Lévis 1759 sequence and the French originals not yet inspected.
 - [ ] known-keys: Casgrain’s codes B and I and the Vaudreuil table e001295274 compared, none is W; the 1758 Montcalm sheet e001295276 not yet tried; no original W key located.
 - [ ] print: NYCD X, Casgrain I–XII, CMNF IV, Chapais and RAPQ 1920–1942 screened; RAPQ 1924–1927 not checked; no claim that the text is unpublished everywhere.
-- [x] key-rebuild: 319 clearly numbered values indexed from the period plaintext; conflicting values and uncertain digits withheld or qualified.
+- [x] key-rebuild: 318 clearly numbered values indexed from the period plaintext; conflicting values and uncertain digits withheld or qualified.
 - [ ] retry: the doubtful digits retried with a second AI reader on fresh crops; a comparison with the French originals and a retry of every source slip not done.
 
 The LAC copies supplied adjacent plaintext, so this was source alignment, not ciphertext-only cryptanalysis. Further key recovery should use the untranscribed Lévis cipher pages and the French originals.
+
+## Independent recheck, 13 November 2026
+
+A second AI agent of ours, which had not seen our conclusions, rechecked 25 table entries against the reel images (24 confirmed, 1 unsettled: the p. 506 group above) and read p. 511 and p. 517 lines 1–11 digit for digit, with no differences. It also found the p. 510 sic placement and two loose translation phrases (“out of every eight days”; “and an expedition”), now corrected. It is not a person and not an outside check.
 
 ## Internal prose review, 12 November 2026
 

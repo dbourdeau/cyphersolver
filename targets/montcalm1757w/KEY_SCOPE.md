@@ -1,6 +1,6 @@
 # Key scope
 
-89 aligned cipher/decipherment lines; 319 distinct unambiguously numbered groups in the 1757 excerpts. This is an **attestation index**, not a conflict-free key: retain every value and count. Sic uses and apparent enciphering/copying errors must not become ordinary homophones. The proposed 430-entry expanded table is omitted because DP alignment can merge unknown neighbours. Two digit-uncertain occurrences are withheld if listed in key/uncertain_digits.tsv.
+89 aligned cipher/decipherment lines; 318 distinct unambiguously numbered groups in the 1757 excerpts. This is an **attestation index**, not a conflict-free key: retain every value and count. Sic uses and apparent enciphering/copying errors must not become ordinary homophones. The proposed 430-entry expanded table is omitted because DP alignment can merge unknown neighbours. Two digit-uncertain occurrences are withheld if listed in key/uncertain_digits.tsv.
 
 The anonymous period decipherer supplied the French readings copied for the Public Archives of Canada. Andrew Beling, with AI agents, transcribed those copies and assembled this reusable code evidence in November 2026. It is not a new decipherment of the 1757 text.
 

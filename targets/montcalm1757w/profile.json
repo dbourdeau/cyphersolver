@@ -142,6 +142,15 @@
       "technique": [
         "key matching"
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "A second AI agent that had not seen our conclusions rechecked 25 table entries on the reel images (24 confirmed, 1 unsettled) and two passages digit for digit. p. 510: 159 is clear and the sic mark stands after 139, so 'toujours' is corrected to 'une' (159 = une attested). p. 506: the group after 654 is unsettled 670/690 and withheld (690 = rt withdrawn); 318 clearly numbered groups remain.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -168,7 +177,7 @@
       {
         "who": "hrcasgrain",
         "role": "pointer",
-        "note": "Collection des manuscrits du maréchal de Lévis III (1890), p. 64: Paulmy's 1757 'petit chiffre', taken here (inference) to be code W; volumes I-XII searched for earlier printing of these passages, none found in the OCR."
+        "note": "Collection des manuscrits du maréchal de Lévis III (1890), p. 64: Paulmy to Montcalm, 10 April 1757, sending a 'petit chiffre' for a private correspondence; whether that is code W is uncertain (W is in the ordinary dispatches and already in use in Nov 1756). Volumes I-XII searched for earlier printing of these passages, none found in the OCR."
       }
     ],
     "contribution": [
@@ -219,9 +228,9 @@
     ],
     "gaps": [
       {
-        "item": "Uncertain 1757 numerals, p. 510 159? and p. 518 2?5",
+        "item": "Unsettled 1757 numerals, p. 506 6?0 (670 or 690) and p. 518 2?5",
         "blocker": "needs-physical-access",
-        "detail": "The LAC copy is ambiguous and two digit readers disagree on 2?5; both withheld from the key. The French originals (SHD GR A1 3457) would settle them."
+        "detail": "The LAC copy is ambiguous and the readers disagree; both withheld from the key. The French originals (SHD GR A1 3457) would settle them."
       },
       {
         "item": "Conflicting 1757 values, chiefly 63 over 's' where 'vivres' is usual",
@@ -249,6 +258,10 @@
     "fraction_read": 0.9830246913580247,
     "fraction_read_method": "measured",
     "fraction_read_source": "measure_reading.py: 637/648 words of reading_fr_179.txt and reading_fr_180.txt carry no uncertainty mark (holes counted after explicit-hole conversion). Edition of the period decipherment; not cipher-group coverage and not a measure of accuracy.",
-    "validation": {"date": "2026-11-13", "verdict": "not applicable", "notes": "Key evidence comes from the period clerks' interlinear decipherment: the table was built from these same cipher/plain pairs and the prose is the existing decipherment, so a held-out or shuffled-key test would not validate an independent recovery. No independent solution is claimed."}
+    "validation": {
+      "date": "2026-11-13",
+      "verdict": "not applicable",
+      "notes": "Key evidence comes from the period clerks' interlinear decipherment: the table was built from these same cipher/plain pairs and the prose is the existing decipherment, so a held-out or shuffled-key test would not validate an independent recovery. No independent solution is claimed."
+    }
   }
 }
