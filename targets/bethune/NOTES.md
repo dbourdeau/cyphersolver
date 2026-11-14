@@ -1,6 +1,25 @@
 # Henri IV to Philippe de Béthune (Rome), 9, 10 and 22 November 1601 — BnF fr. 3484 nos. 7, 8, 12 (catalogue item 22)
 
-Status: in progress (23 Oct 2026, consistency pass: the Halphen 1889 edition is not yet opened, a gap marked not-attempted; the print, key-rebuild and retry escalation steps are not done)
+Status: read (14 Nov 2026: Halphen 1889 prints the 9 and 22 Nov letters in clear; the 10 Nov letter reads from its minute)
+
+**14 Nov 2026 (later): read. Halphen pp. 35–40 print the rest of the 22 Nov letter, so all three letters have a clear
+text.** A second pre-registered measurement on a fresh portion (ff. 46v–47v, 1,062 tokens, key K' frozen) scores 0.535
+against a best of 0.319 for 200 shuffled keys. The default 0.85 bar is not met; the key-signal bar is. Strict count on
+the 371 printed words: 136 sure, 107 probable, 128 restored. The target is read from an existing decipherment
+(Halphen 1889 for 9 and 22 Nov, the minute f. 36 for 10 Nov). The cipher alone supports about two thirds of the words
+(`halphen_check.md`).
+
+**14 Nov 2026, Halphen 1889 opened (`halphen_check.md`): the 9 Nov letter is in print, and so is most of f. 46r.**
+E. Halphen, *Lettres inédites du roi Henri IV à M. de Béthune* (Paris, 1889), pp. 16–18, prints the whole ciphered
+passage of f. 33 in clear, from the original. pp. 33–34 print f. 46r of the 22 Nov letter up to l. 28. The cipher
+is not marked as such. One pre-registered measurement of the frozen key on f. 33 against his text scores 0.507
+(best of 200 shuffled keys 0.291). That misses the default 0.85 bar, as the transcription ceiling predicts, but shows
+the key carries his text. 130 of his 353 words are confirmed letter by letter by the decode, 105 in part, 118
+restored from the print. The 9 Nov letter is therefore read from an existing decipherment (printed edition). The
+print fixes 12 = le Grand Duc, 20 = la Seigneurie de Venise, 28 = Espagne, 26 = France, 27 = Italie,
+44 = Prince(s), 45 = Duc and 70 = partant; 69 and 67 are tentative. Halphen also dates the glossed letter ff. 30–31
+to 9 Nov, not 8 Nov. Still to do: open Halphen pp. 35 ff. for ff. 46v–47v, and re-read the clear of f. 46r against
+his text (the September transcription has errors).
 
 **14 Nov 2026, verification pass (Claude Opus 5.5): three code groups fixed, letters still read in part.** The eight
 cipher lines of f. 53r, block 1, were transcribed and aligned with their verbatim marginal gloss
@@ -447,10 +466,7 @@ Not in Tomokiyo (his Béthune ciphers are fr. 15975 for 1602–05 and fr. 15972 
 
 The 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs are decoded, not read (2,849 tokens; reading audit 22 Oct 2026); the two letter lines below carry their blockers. The glyph transcription (~70% accurate) caps the decode; re-transcribe on full-resolution crops, using the glossed leaves ff. 49v-50r, 53r, 56r to fix the confusable glyphs.
 
-- 9 Nov 1601 letter, f. 33 (about half the words) - blocker: illegible; third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key
-- 22 Nov 1601 letter, 80 ciphered runs (ff. 46-47) - blocker: illegible; decode2.py gives fragments only, the same transcription ceiling
-- code groups 2, 5, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 67, 69, 80 - blocker: no-key-material; 6, 66 and 72 fixed on 14 Nov 2026 from the f. 53r gloss (`f53r_alignment.md`); the f. 56r blocks and the second f. 53r block (the Cordelier) are the next cribs
-- Halphen 1889 (HathiTrust iau.31858014633857, full view): may print the 9 and 22 Nov letters in clear - blocker: not-attempted; behind a human-verification page, to be opened by a person
+- code groups 2, 3, 5, 8, 9, 31, 62, 80 - blocker: open-codes; 6, 66, 72 fixed from the f. 53r gloss and 12, 20, 26, 27, 28, 44, 45, 70 from Halphen 1889 (14 Nov 2026)
 - clear copies in BnF Cinq cents de Colbert 346 - blocker: needs-physical-access; copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)
 
 ## Escalation
@@ -458,6 +474,6 @@ The 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs are decoded, not read (2,849 
 - [x] siblings: f. 36 minute read the 10 Nov letter; glossed leaves ff. 49v-50r, 53r, 56r-57r examined
 - [x] clear-pages: f. 36 is the clear minute of f. 34; marginal glosses on ff. 53r, 56r found verbatim
 - [x] known-keys: Bazeries 1901 key for Bethune 1599 compared: same design, different values
-- [ ] print: Halphen, Lettres inedites ... 18 oct - 24 dec 1601 located 22 Oct 2026 in full view on HathiTrust (iau.31858014633857) but behind human verification, not opened; Xivrey, Colbert 17, fr. 3677/3678, Tomokiyo, DECODE checked
+- [x] print: Halphen 1889 opened 14 Nov 2026 (pp. 8-42): prints 9 Nov f. 33 and the whole 22 Nov letter in clear
 - [ ] key-rebuild: partly done 14 Nov 2026 - f. 53r block 1 aligned (72, 6, 66 fixed); the f. 56r blocks and f. 53r block 2 not yet aligned
 - [ ] retry: not done - rerun em_align.py / decode2.py on f. 33 and ff. 46-47 after the gloss alignments
