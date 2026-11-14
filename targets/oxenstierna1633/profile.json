@@ -10,7 +10,7 @@
    "date": "8/18 June 1633",
    "year": 1633,
    "country": "Holy Roman Empire",
-   "route": "unidentified Swedish correspondent -> Axel Oxenstierna",
+   "route": "probably Johan Adler Salvius (Riksarkivet files E 708 under his name; not checked on the hand) -> Axel Oxenstierna",
    "language": "Swedish",
    "pages": 3,
    "cleartext_in_document": "mostly clear",
@@ -35,7 +35,7 @@
    "date": "June 1633",
    "year": 1633,
    "country": "Holy Roman Empire",
-   "route": "unidentified Swedish correspondent -> Axel Oxenstierna",
+   "route": "probably Johan Adler Salvius (Riksarkivet files E 708 under his name; not checked on the hand) -> Axel Oxenstierna",
    "language": "Swedish",
    "pages": 4,
    "cleartext_in_document": "mostly clear",
@@ -60,7 +60,7 @@
    "date": "June 1633",
    "year": 1633,
    "country": "Holy Roman Empire",
-   "route": "unidentified Swedish correspondent -> Axel Oxenstierna",
+   "route": "probably Johan Adler Salvius (Riksarkivet files E 708 under his name; not checked on the hand) -> Axel Oxenstierna",
    "language": "Swedish",
    "pages": 3,
    "cleartext_in_document": "mostly clear",
@@ -85,7 +85,7 @@
    "date": "June 1633",
    "year": 1633,
    "country": "Holy Roman Empire",
-   "route": "unidentified Swedish correspondent -> Axel Oxenstierna",
+   "route": "probably Johan Adler Salvius (Riksarkivet files E 708 under his name; not checked on the hand) -> Axel Oxenstierna",
    "language": "Swedish",
    "pages": 2,
    "cleartext_in_document": "mostly clear",
@@ -131,7 +131,7 @@
   "word_division": "kept",
   "doubled_letters": "unknown",
   "sibling_key": "none",
-  "notes": "Whether the four letters share one code is not established. The key collection lists a key 'Oxenstierna and Lars Nilsson Tungel (1633)', not identified among the 70 key records fetched. DECODE dates the records 1646; the leaves are dated 8/18 and 27 June 1633. Split on 14 Oct 2026 from riksarkivet1628 (catalogue 207)."
+  "notes": "Whether the four letters share one code is not established. The key collection lists a key 'Oxenstierna and Lars Nilsson Tungel (1633)', not identified among the 70 key records fetched. DECODE dates the records 1646; the leaves are dated 8/18 and 27 June 1633. Split on 14 Oct 2026 from riksarkivet1628 (catalogue 207). 14 Nov 2026: the writer is probably Johan Adler Salvius (Riksarkivet catalogues E 708 A, 1613-1634, and E 708 B, 1635-1646, under 'Salvius, Johan Adler'); Tungel has his own volume (E 744), so the Tungel 1633 key need not be this code."
  },
  "conditions": {
   "prior_solution": {
@@ -171,6 +171,12 @@
    "kind": "literature search",
    "what": "Riksarkivet's catalogue (data.riksarkivet.se, records ucDQuPya1QLMUpVXdAiro7 and 2hhZg3ZsE4zMgKbE9OaND7): Oxenstiernska samlingen, Axel Oxenstierna, incoming letters, volumes SE/RA/720701/II/01/B/I/E 708 A and E 708 B are both titled 'Salvius, Johan Adler'. The series is filed by writer, so the E 708 letters of June 1633 are most probably Johan Adler Salvius's. Both volumes are analog only (not digitised by Riksarkivet), so the DECODE photographs remain the only images. Not checked against the hand or the signatures on the images.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Integration check of the 14 Nov literature step: the two Riksarkivet records re-fetched as JSON-LD (data.riksarkivet.se/archive/<id>.jsonld): both named 'Salvius, Johan Adler', reference codes E 708 A and E 708 B in series SE/RA/720701/II/01/B/I, instantiation Analog; date ranges E 708 A 1613-1634, E 708 B 1635-1646 (so the June 1633 leaves fall in E 708 A by date). E 744 'Tungel-Törnsköld' confirmed in the records API (uFzydVoaGf5iqAIHHtCyq3). Writer kept as probable: hand and signatures not compared.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -193,7 +199,7 @@
    {
     "item": "R4338-R4341, the code groups",
     "blocker": "not-attempted",
-    "detail": "surveyed only; the interlinear decipherments of the time are unused; the Tungel 1633 key not identified among the 70 fetched key records"
+    "detail": "surveyed only; the interlinear decipherments of the time are unused; the Tungel 1633 key not identified among the 70 fetched key records; writer probably Salvius (archive filing), not checked on the hand; a Salvius code not yet searched among the key records"
    }
   ],
   "notes": "Split on 14 Oct 2026 from riksarkivet1628. In progress: not yet worked; the interlinear glosses are the obvious start."

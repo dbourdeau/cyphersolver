@@ -19,7 +19,8 @@ committed). DECODE dates them 1646 and has no sender, receiver or language. The 
 1633 (R4338 image 1 is headed "8/18 Juni 1633", folio 20). Swedish letters to Oxenstierna ("Höghwälborne Herre,
 gunstige patron"), mostly clear, with two-digit letter codes, four-digit nomenclator codes (1328, 1504, 1564, 3143,
 3192, 3319, 3597 …) and letter-pair codes (rr, mm, aa, tt). Some code groups carry a decipherment written between
-the lines at the time. The writer is not yet identified.
+the lines at the time. The writer is probably Johan Adler Salvius (Riksarkivet files E 708 under his name; see 14 Nov
+2026 below); not checked against the hand or a signature.
 
 ## Work log
 
@@ -29,7 +30,7 @@ the lines at the time. The writer is not yet identified.
 2. (14 Oct 2026) Split from riksarkivet1628; R4338 image 1 viewed again for the snip. No transcription, no attack.
 
 ## Remaining gaps
-- R4338-R4341, the code groups - blocker: not-attempted; surveyed only; the interlinear decipherments of the time are unused; the Tungel 1633 key not identified
+- R4338-R4341, the code groups - blocker: not-attempted; surveyed only; the interlinear decipherments of the time are unused; the Tungel 1633 key not identified (and need not be this code: the writer is probably Salvius, 14 Nov 2026); a Salvius code not yet searched in the Chifferklaver records
 
 ## Escalation
 - [x] siblings: the 14 records of catalogue 207 opened; 70 Chifferklaver key records R4259-R4329 fetched (Tungel key not among them)
@@ -43,7 +44,7 @@ the lines at the time. The writer is not yet identified.
 
 Transcribe the four letters with their glosses; align glossed codes to rebuild the nomenclator; identify the writer
 (Lars Nilsson Tungel is the first candidate, from the key list) and search series II of Oxenstierna's printed
-correspondence.
+correspondence. (14 Nov 2026: superseded in part; the writer is probably Salvius, see below.)
 
 ## 14 Nov 2026: probable writer from Riksarkivet's catalogue (Brice Dudout's agents)
 
@@ -59,3 +60,13 @@ Both E 708 volumes are **analog only** at Riksarkivet (no digitised instantiatio
 still the only images. Next: look for a Salvius code among the Chifferklaver records and in printed Salvius
 correspondence (check whether Rikskanslern Axel Oxenstiernas skrifter och brefvexling, series II, prints
 Salvius's letters of 1633).
+
+Checked 14 Nov 2026 (integration): both records fetched as JSON-LD from data.riksarkivet.se
+(`/archive/<id>.jsonld`): `schema:name` "Salvius, Johan Adler" for both; reference codes SE/RA/720701/II/01/B/I/E 708 A
+and E 708 B; parent series SE/RA/720701/II/01/B/I "Furstars, ämbetsmäns och enskilda personer brev och ansökningar"
+(Axel Oxenstierna, incoming letters); instantiation type Analog for both. The records also carry date ranges:
+**E 708 A 1613-1634, E 708 B 1635-1646**, so by date the June 1633 leaves belong to E 708 A. DECODE's single date
+1646 may echo the end date of E 708 B or of the whole E 708 span; that is a guess, not checked. E 744 confirmed in the
+records API: SE/RA/720701/II/01/B/I/E 744, caption "Tungel-Törnsköld" (record uFzydVoaGf5iqAIHHtCyq3). The writer
+stays **probable**: filing by writer is strong evidence, but no hand, signature or clear self-reference on the DECODE
+images has been compared.
