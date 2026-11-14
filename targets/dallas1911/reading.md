@@ -4,7 +4,9 @@ Reading by SeldomPhooey (issue #520, 13 Nov 2026; AI agents), as published in th
 there for accents, punctuation and a few slips. Notation: CAPITALS = deciphered words; `WORD*` = emended (the raw decode
 corrected to read); `[?WORD]` = the value rests on context alone; `[MAU...]` = a hole. By the README read bar every
 `*` and `[?...]` word, every word that needs a value outside the 54-bigram table of CMXV.14.1395.1 and the hole are
-counted as not read: 67 of the 114 cipher words read as typed (see NOTES.md).
+counted as not read: 67 of the 114 cipher words read as typed (see NOTES.md). Since 14 Nov 2026 the period key card
+CMXV.16.1557.1 scan 4 confirms the row and context values, and HIZO, MAYOR and EXIGE (marked `[?...]` below) decode
+from it letter for letter: 91 of 114 (NOTES.md, "Key card"). The marks below are the issue's and are kept.
 
 17 de marzo 911. Correo: Escudero. Clave: la de Dallas.
 

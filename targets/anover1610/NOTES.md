@@ -27,9 +27,10 @@ The contributor's figures (his, not the README bar): 173 of 211 cipher-group occ
 
 ## Remaining gaps
 
-- The transcription of f. 53r against the manuscript (Memoria de Madrid 424541), and of the sibling parallels A01-A14 etc. - blocker: needs-physical-access (the viewer refuses scripted requests; a Claude in Chrome pass is needed)
+- The transcription of f. 53r against the manuscript (Memoria de Madrid 424541), and of the sibling parallels A01-A14 etc. - blocker: needs-physical-access (the viewer refuses scripted requests, 403 again on 14 Nov 2026; a Claude in Chrome pass is needed). Two independent AI transcriptions of f. 53r now agree on every digit string (the contributor's and Brice Dudout's, frozen 3 Nov 2026 by his record); one doubt stands: L05 `bo 32` or `60 32` (por fits the sense only)
 - U01 (buena), 101, 114 and 241 (context-only codes), e = mu, fo = so (persona), the nulls 28~/58~ and the otraas anomaly - blocker: open-codes
-- The three other cipher-only leaves of catalogue 1988 and the rest of the series (Hispana idBib 58438217, 58438218, 58678720; I 242,66 as a further parallel) are not transcribed - blocker: not-attempted
+- The three other cipher-only leaves of catalogue 1988 and the rest of the series (Hispana idBib 58438217, 58438218, 58678720; I 242,66 as a further parallel) are not transcribed - blocker: not-attempted. Named by Dudout (issue #499, 13 Nov 2026) in the same table family: unglossed I 242,35 (MdM 424529, cipher copy of the King's letter to the Archduke of 19 Jun 1610), I 242,59 (425639) and I 242,60 (425637), both Lerma 10 May 1610; the contributor reports work on 35/59/60 in his dossier that settles no target value; which of these are the catalogue's unglossed identifiers is not mapped
+- I 243,18 (MdM 425791, Lerma 30 Apr 1610), a glossed letter of the same table family named by Dudout, is not among the contributor's controls; it may give 101, 114, 241, e or fo - blocker: not-attempted
 - Devos 1950 and any complete nomenclator sheet of the series: not seen by anyone - blocker: no-key-material
 
 ## Escalation
@@ -41,9 +42,38 @@ The contributor's figures (his, not the README bar): 173 of 211 cipher-group occ
 - [x] key-rebuild: the contributor's table (the material of this folder)
 - [ ] retry: waits for the manuscript images
 
+## Issue #499 comments of 13 Nov 2026 (checked 14 Nov 2026)
+
+Three new comments after the project's reply of 13 Nov:
+
+1. **Alberto Garvía García, 18:32 UTC: transcription, tokenization, full key with evidence, controls.** The ten-line
+   diplomatic transcription equals `transcription.txt`. His analytical tokenization (211 occurrences) is now in
+   `contributor/tokenization_211.txt` and his control windows A01-D06 and four new ones E01-E04 (I 242,48: G48_trata,
+   gul = muy) in `contributor/controls.tsv`. Checked here: every one of the 211 tokens has a value in `key.tsv`, and
+   decoding them gives his ten-line reading letter for letter (codes U01, 101, 114, 241, e and the nulls marked as he
+   marks them). The 74-entry table with grades and references equals `key.tsv` (66 C, 3 M, 5 I). The controls are his
+   consistency checks of a key built from them (27 of 34 earlier windows agree, 4 of 4 new), not blind tests; the
+   sibling images were not seen here. His figures are unchanged (78/88 words firm, 88.6%); no open code is closed.
+   He identifies Devos 1950 (Commission royale d'histoire, in-4 series no. 52) without a copy, and checks MMA V p. 587
+   (Brásio 1955, doc. 222, 31 May 1610, AGS Secretarias Provinciales livro 1503 f. 10v): a different letter on the
+   Pinda episode, not this decipherment. Santana Pérez 2015 p. 910 n. 46 cites AGS Estado leg. 436 (20 Apr 1610),
+   not checked.
+2. **Alberto Garvía García, 22:23 UTC:** asks to publish the result as a partial decipherment now. Answer for the
+   owner: the README rule lets "read in part" stand only when every unread piece has an outside blocker; here the open
+   codes can still be tried against I 243,18 (glossed, unused) and the unglossed siblings, so the target stays in
+   progress with no page.
+3. **Brice Dudout, 23:42 UTC: an independent transcription.** His own shape transcription of I 242,29 (3 Nov 2026,
+   SHA-256 fda879da..., unpublished; order by his record) agrees with the contributor's on every digit string of
+   L01-L10, including the cross on 26 and `72 m` in L03; letter-sign differences are notation (`de`/`du` = `cle`/`clu`,
+   `jo` = `fo`, `bup` = `bum`). One real difference: L05 `fal 242 37 bo 32` against his `60 32` (a hooked ascender
+   like the 6 of L07); he marks it doubtful, `por` supporting `bo` by sense only. Date clause "de Lerma a 20 de Mayo
+   de 1610" confirmed. He names further letters of the family (I 243,18 glossed; I 242,35, 59, 60 unglossed; I 242,39
+   another table) and reports that his preregistered test of a family table on held-out I 242,42 failed his bar (0.640
+   against 0.252, bar 0.85); I 242,42 is a control here, so it cannot be a blind test any more.
+
 ## Credits
 
-Alberto Garvía García (issue #499; report with AI assistance, ChatGPT/Codex as he states) proposed the key and the reading. The Biblioteca Histórica Municipal de Madrid (Ayuntamiento de Madrid) holds the originals; the images are on Memoria de Madrid.
+Alberto Garvía García (issue #499; report with AI assistance, ChatGPT/Codex as he states) proposed the key and the reading. Brice Dudout (issue #499, 13 Nov 2026; AI agents) sent an independent transcription comparison of f. 53r and pointed to further letters of the family. The Biblioteca Histórica Municipal de Madrid (Ayuntamiento de Madrid) holds the originals; the images are on Memoria de Madrid.
 
 ## Files
 
@@ -55,6 +85,8 @@ Alberto Garvía García (issue #499; report with AI assistance, ChatGPT/Codex as
 | `reading.md` | the contributor's line-by-line reading, translation and notes |
 | `translation.md` | the contributor's line-by-line English translation of `reading.md`, holes kept (PR #547) |
 | `profile.json` | the target profile |
+| `contributor/tokenization_211.txt` | the contributor's 211-token analytical layer (issue #499, 13 Nov 2026) |
+| `contributor/controls.tsv` | his sibling control windows A01-D06 and E01-E04 (issue #499, 13 Nov 2026) |
 
 
 ## Documentary and transcription update (13 November 2026)
