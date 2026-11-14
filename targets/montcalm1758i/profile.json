@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "target": "montcalm1758i",
+  "title": "Montcalm's 1758 court code (code I): the Marine ministry's deciphering table, ANOM COL C11E 10 f.288",
+  "documents": [
+    {
+      "id": "I1",
+      "read": "read",
+      "shelfmark": "Casgrain III no. LIV pp.122-123 (original letter not located)",
+      "date": "26 August 1758",
+      "year": 1758,
+      "country": "France",
+      "route": "Claude-Louis d'Espinchal, marquis de Massiac (Marine minister) -> Louis-Joseph, marquis de Montcalm",
+      "places": {
+        "from": "Versailles",
+        "to": "Canada"
+      },
+      "language": "French",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Casgrain prints the period decipherment below the figures (letters/I1.tr, C lines)."
+      },
+      "length": {
+        "tokens": 230,
+        "distinct": 117,
+        "unit": "code groups",
+        "measured": true,
+        "file": "letters/I1_groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Casgrain's printed figures, read by our agents against the archive.org page images, 12 Nov 2026",
+        "image_quality": "good"
+      }
+    },
+    {
+      "id": "I2",
+      "read": "read",
+      "shelfmark": "Casgrain III no. LV pp.124-125 (cipher end of a letter otherwise in clear)",
+      "date": "23 September 1758",
+      "year": 1758,
+      "country": "France",
+      "route": "Massiac -> Montcalm",
+      "places": {
+        "from": "Versailles",
+        "to": "Canada"
+      },
+      "language": "French",
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Casgrain prints the period decipherment below the figures (letters/I2.tr, C lines)."
+      },
+      "length": {
+        "tokens": 47,
+        "distinct": 38,
+        "unit": "code groups",
+        "measured": true,
+        "file": "letters/I2_groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Casgrain's printed figures, read by our agents against the archive.org page images, 12 Nov 2026",
+        "image_quality": "good"
+      }
+    },
+    {
+      "id": "I3",
+      "read": "read",
+      "shelfmark": "Casgrain III no. LVI pp.125-127",
+      "date": "23 September 1758",
+      "year": 1758,
+      "country": "France",
+      "route": "Massiac -> Montcalm",
+      "places": {
+        "from": "Versailles",
+        "to": "Canada"
+      },
+      "language": "French",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Casgrain prints the period decipherment below the figures (letters/I3.tr, C lines)."
+      },
+      "length": {
+        "tokens": 370,
+        "distinct": 143,
+        "unit": "code groups",
+        "measured": true,
+        "file": "letters/I3_groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Casgrain's printed figures, read by our agents against the archive.org page images, 12 Nov 2026",
+        "image_quality": "good"
+      }
+    },
+    {
+      "id": "I4",
+      "read": "read",
+      "shelfmark": "Casgrain III no. LXXII pp.161-164",
+      "date": "10 February 1759",
+      "year": 1759,
+      "country": "France",
+      "route": "Charles-Louis-Auguste Fouquet, maréchal de Belle-Isle (War minister) -> Montcalm",
+      "places": {
+        "from": "Versailles",
+        "to": "Canada"
+      },
+      "language": "French",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Casgrain prints the period decipherment below the figures (letters/I4.tr, C lines)."
+      },
+      "length": {
+        "tokens": 660,
+        "distinct": 209,
+        "unit": "code groups",
+        "measured": true,
+        "file": "letters/I4_groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Casgrain's printed figures, read by our agents against the archive.org page images, 12 Nov 2026",
+        "image_quality": "good"
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code",
+      "syllabic",
+      "nomenclator"
+    ],
+    "summary": "Two-part code of 700 numbered cells: letters, syllables, common words and a few names, numbers in no order against the values.",
+    "symbol_kind": "digits",
+    "digit_groups": {
+      "width": "1-3",
+      "separation": "spaces"
+    },
+    "distinct_symbols": 700,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "syllables",
+        "common words",
+        "names",
+        "places",
+        "titles"
+      ]
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "random"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in print",
+      "where": "Casgrain, Collection des manuscrits du maréchal de Lévis III (1890), prints all four letters in figures with the period clear text; the table itself had not been identified or transcribed.",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "key from archive",
+      "published reading"
+    ],
+    "attack": "key from archive",
+    "human_role": "Andrew Beling directed the research and set the contribution scope; the work was done with AI agents.",
+    "models": [
+      "Claude Opus 5.5"
+    ],
+    "tools": [
+      "image crops",
+      "Python comparison scripts"
+    ],
+    "first_date": "2026-11-12",
+    "last_date": "2026-11-14"
+  },
+  "solution": [
+    {
+      "date": "2026-11-12",
+      "kind": "transcription",
+      "what": "Transcribed Casgrain's four code I letters (figures and clear lines) against the page images.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "key from source",
+      "what": "Aligned the figures with Casgrain's clear text to get code I values (281 groups; not part of this folder).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "access",
+      "what": "Fetched the ten LAC images of ANOM COL C11E 10 (e001295267-76); sheet e001295272 is 775 px wide, cells 1-20 off the photograph.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "transcription",
+      "what": "Two blind passes over the 700 cells (A forward, B backward, separate agents, no code files); 609 of 680 legible cells agree; differences settled on 6x crops; table and test plan frozen (sha256).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "control",
+      "technique": [
+        "key matching",
+        "statistical test"
+      ],
+      "what": "Pre-registered comparison with our code I values: 188 of 273 exact against at most 3 for 200 shuffled tables; codes B and W: 0 agreements.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "technique": [
+        "plaintext matching",
+        "statistical test"
+      ],
+      "what": "Decoded the four letters with the frozen table alone: 0.921-0.939 similarity to Casgrain's clear text, shuffled tables at most 0.352 (measure chosen after the plan).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Applied the table to Montcalm's 21 Nov 1758 letter to Bougainville (code B, 112 groups): 0 exact.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "literature search",
+      "what": "Searched New France Archives, C11A 103-104, the F3 inventory of 1899, NY Colonial Documents X and Casgrain for more code I text; found F3 15 f.194 (Montcalm to the minister, 1 Sep 1758, cipher with interlinear decipherment) and the cipher postscript of 12 Apr 1759, neither online.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "Five Trémais groups (1759) looked up in the table: no sense; his letters use stacked groups, a different system.",
+      "result": "ruled out"
+    },
+    {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1292 tokens, 273 types, fr-1750-nospace order 4: reading -2.13 per letter; random keys -3.164 (z 11.4); key annealed onto shuffled ciphertext best -2.198 (mean -2.212, z 8.4); annealer on the real text -2.167. Verdict: pass.", "result": "worked"}
+   ],
+  "outcome": {"validation": {"date": "2026-11-13", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 1292, "types": 273, "tokens_per_type": 4.73, "score": -2.13, "nulls": {"random keys": {"n": 200, "mean": -3.164, "sd": 0.091, "max": -2.929, "z": 11.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.212, "sd": 0.01, "max": -2.198, "z": 8.4, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.13; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
+    "class": "already solved",
+    "key": "partial",
+    "method": "read after matching with key from external sources",
+    "first_break": false,
+    "method_basis": "The period deciphering table, transcribed blind from the archive image, matched to letters already printed in clear.",
+    "contribution": [
+      "transcription",
+      "key extended or corrected"
+    ],
+    "verification": ["contemporary decipherment", "key confirms", "statistical test"],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "ajbeling",
+        "role": "solution",
+        "date": "2026-11-13",
+        "note": "Andrew Beling, with AI agents: identification of sheet e001295272 as the Marine's 1758 table for Montcalm (code I), its transcription in two blind passes and the test against Casgrain's letters; no new reading. Not rechecked by a second agent."
+      },
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "date": "1758",
+        "note": "The Marine ministry's clerks: the deciphering table (ANOM COL C11E 10 f.288) and the decipherments of the four letters."
+      },
+      {
+        "who": "hrcasgrain",
+        "role": "prior solution",
+        "date": "1890",
+        "published": true,
+        "source": "Collection des manuscrits du maréchal de Lévis III, nos. LIV-LVI, LXXII",
+        "note": "Printed the four letters in figures with their clear text."
+      }
+    ],
+    "key_file": "key/table_e001295272.tsv",
+    "texts": [
+      {
+        "doc": "I1",
+        "label": "I1, Claude-Louis d'Espinchal, 26 August 1758",
+        "transcription": "letters/I1_groups.txt",
+        "decryption": "letters/I1_decode.txt",
+        "contemporary": "letters/I1_casgrain_fr.txt",
+        "reading": "letters/I1_casgrain_fr.txt",
+        "translation": "letters/I1_en.txt",
+        "state": "read",
+        "language": "fr",
+        "summary": "Massiac answers the news of the fall of Louisbourg (Île Royale): he is sending a corvette at once, and the King expects Montcalm to support Vaudreuil and Bigot and keep up the troops and inhabitants.",
+        "read_share": 1.0,
+        "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
+          "date": "2026-11-14",
+          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+        }
+      },
+      {
+        "doc": "I2",
+        "label": "I2, Massiac, 23 September 1758",
+        "transcription": "letters/I2_groups.txt",
+        "decryption": "letters/I2_decode.txt",
+        "contemporary": "letters/I2_casgrain_fr.txt",
+        "reading": "letters/I2_casgrain_fr.txt",
+        "translation": "letters/I2_en.txt",
+        "state": "read",
+        "language": "fr",
+        "summary": "The cipher close of a clear letter: Massiac regrets that Montcalm asks him to speak to the King about his return, on which he writes separately.",
+        "read_share": 1.0,
+        "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
+          "date": "2026-11-14",
+          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+        }
+      },
+      {
+        "doc": "I3",
+        "label": "I3, Massiac, 23 September 1758",
+        "transcription": "letters/I3_groups.txt",
+        "decryption": "letters/I3_decode.txt",
+        "contemporary": "letters/I3_casgrain_fr.txt",
+        "reading": "letters/I3_casgrain_fr.txt",
+        "translation": "letters/I3_en.txt",
+        "state": "read",
+        "language": "fr",
+        "summary": "Massiac on the coolness between Montcalm and Vaudreuil after Carillon: union is essential, he will tell Belle-Isle of Montcalm's wish to be recalled, and will answer his letters by the first ships.",
+        "read_share": 1.0,
+        "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
+          "date": "2026-11-14",
+          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+        }
+      },
+      {
+        "doc": "I4",
+        "label": "I4, Charles-Louis-Auguste Fouquet, 10 February 1759",
+        "transcription": "letters/I4_groups.txt",
+        "decryption": "letters/I4_decode.txt",
+        "contemporary": "letters/I4_casgrain_fr.txt",
+        "reading": "letters/I4_casgrain_fr.txt",
+        "translation": "letters/I4_en.txt",
+        "state": "read",
+        "language": "fr",
+        "summary": "Belle-Isle answers Montcalm's cipher letters: defend Canada or its essential part this campaign, act in concert with Vaudreuil; help from France will be small; Bougainville will explain; the victory of Carillon gives hope.",
+        "read_share": 1.0,
+        "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
+        "reading_review": {
+          "grade": "B",
+          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
+          "date": "2026-11-14",
+          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+        }
+      }
+    ],
+    "fraction_read": 1.0,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "letters/*.tr: Casgrain's printed clear text covers every paragraph of figures (1307 groups). The frozen table alone gives a value to 1292 of the 1307 groups (results/letters_test.json).",
+    "gaps": [
+      {
+        "item": "Table cells 1-20",
+        "blocker": "needs-physical-access",
+        "detail": "Off the top edge of the LAC photograph; ANOM COL C11E 10 f.288 would settle them."
+      },
+      {
+        "item": "138 doubtful table cells",
+        "blocker": "needs-physical-access",
+        "detail": "Short syllables at 775 px; a better image is needed. Seven are shown wrong by the letters (key/corrections_post_freeze.tsv)."
+      }
+    ],
+    "notes": "No new plaintext: the letters were read by the clerks and printed by Casgrain. The contribution is the identification and transcription of the period table and its blind test. No other text in this code was found online (NOTES.md)."
+  }
+}
