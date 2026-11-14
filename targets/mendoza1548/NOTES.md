@@ -165,6 +165,17 @@ Not checked here: the BNE image; MSS/7919/75.
   `T°` looks almost like *I*; in L07 the dot after `β` sits closer to the following `V`). The rest of the letter was
   not checked by a person.
 
+## Escalation
+
+Added 14 Nov 2026 when the letter was reclassed read in part; none of these was worked today.
+
+- [ ] siblings: the other five letters under MSS/20212/29/1-6 not opened for the same cipher
+- [x] clear-pages: the decipherment between the lines is used; MSS/7919/75 (first part of the letter) not seen
+- [ ] known-keys: other Mendoza and Granvelle keys of the 1540s not tried
+- [ ] print: editions of Mendoza's correspondence not searched for this letter
+- [ ] key-rebuild: the 10 unread sign types and the two-valued vowel tokens not worked further
+- [ ] retry: the 34 supplied words not retried
+
 ## Next steps (ranked)
 
 1. If BNE provides a better image (reproduction request), re-read the vowel marks of `V`, `ꝺ̇`, `ꝗ`, `ÿ` and `aꝶ`.
