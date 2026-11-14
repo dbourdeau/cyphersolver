@@ -136,6 +136,15 @@
    "kind": "reading",
    "what": "English translation contributed by Alberto Garvía García (PR #547, translation.md): line by line on reading.md, the same 12 bracketed holes in the same lines and order (checked by script), no claim of a complete decipherment. Two small fixes here: line 1 'it has been learned [101: report?]' put back as 'word [101: report?] has been had' so the bracketed code is not translated twice; line 5 the null 58~ restored in its place inside 'stipu-la[58~: null?]ted' with its gloss.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Issue #499 comments of 13 Nov 2026: the contributor's 211-token analytical layer and his control windows A01-D06, E01-E04 saved in contributor/; all 211 tokens have a value in key.tsv and decode to his reading letter for letter; the 74-entry graded table equals key.tsv. Dudout's independent transcription comparison (all digit strings of L01-L10 agree; L05 bo/60 doubtful) recorded. Memoria de Madrid still 403, images not seen. No open code closed; strict share unchanged (88.6%).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -158,6 +167,13 @@
     "note": "posted the key table, the transcription and the reading of I 242,29 (report on Zenodo, doi 10.5281/zenodo.24174363; ChatGPT/Codex-assisted, as he states)",
     "date": "2026-11-12",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/499"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent transcription of I 242,29 f. 53r (3 Nov 2026, by his record) agrees on every digit string; L05 bo/60 doubt; pointed to I 243,18 and I 242,35/59/60",
+    "date": "2026-11-13",
+    "source": "issue #499 (dbourdeau/cyphersolver), comment of 13 Nov 2026"
    }
   ],
   "fraction_read": 0.886,
@@ -185,6 +201,11 @@
     "item": "Devos 1950 and any complete key sheet of the series",
     "blocker": "no-key-material",
     "detail": "not seen by anyone"
+   },
+   {
+    "item": "I 243,18 (MdM 425791, glossed, same table family) not used as a control; it may give 101, 114, 241, e or fo",
+    "blocker": "not-attempted",
+    "detail": "Named by Brice Dudout, issue #499, 13 Nov 2026."
    }
   ],
   "texts": [
