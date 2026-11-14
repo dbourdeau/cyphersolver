@@ -123,6 +123,15 @@
    ],
    "what": "Compared the labelled repertoire with Tomokiyo's reconstructed Clair 369 keys (Castille f. 11, Baugy f. 109, Du Maurier ff. 229, 294) by sign class. Castille's cipher has the same build (letter-shape homophones, pi null, barred ff, two-digit syllable codes 73-99, digits and letters with two dots); Baugy and Du Maurier do not. Recorded as a lead; Castille's key was not applied and nothing was measured.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration check: 74 signs of lines 1-3 compared with the Gallica image (IIIF crops), all present in the transcription; then Tomokiyo's reconstruction of de Castille's 1616 key (Clair 369 f. 11) applied once by shape correspondence (castille_test.py). 108 of 186 tokens have a same-shape sign in Castille's table; B, PU and the infinity loop (the 2nd-4th commonest signs), L, s and $ have none. The mapped part gives f as the commonest letter (from the round d), e 4 times, and no French word. Castille's key as reconstructed does not decipher f. 317; the family lead stays a hypothesis.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -137,6 +146,6 @@
   "verification": [
    "none"
   ],
-  "notes": "Closed at the gate on 16 Sept 2026; a labelled two-pass transcription was added on 14 Nov 2026, and de Castille's 1616 cipher (same volume) is the family lead. Not read."
+  "notes": "Closed at the gate on 16 Sept 2026; a labelled two-pass transcription was added on 14 Nov 2026, and de Castille's 1616 cipher (same volume) is the family lead. Not read. Castille's key applied once on 14 Nov 2026: failed (58% of tokens map, wrong letter frequencies, no French)."
  }
 }

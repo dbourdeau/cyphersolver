@@ -1,5 +1,7 @@
 # Cocquet → Mangot, Rome, 13? November 1616 (BnF Clairambault 369, ff. 316-317)
 
+Status: in progress — closed at the length gate on 16 Sept 2026; a labelled transcription (14 Nov 2026) reopens it as a lead; not read, no write-up page.
+
 Session 2026-09-16. Gate check only: fetched, measured, not attacked.
 
 ## Source
@@ -99,3 +101,21 @@ too coarse). User must verify: that Cocquet's identity and the Rome embassy key 
   Castille's key was **not** applied; it is the first test to run (one held-out measure against shuffled keys).
 - Not done: a quantitative family test (sign-set overlap against shuffled witnesses); it needs Castille's key
   transcribed with the same labels.
+
+## 14 Nov 2026: integration check and one Castille-key test
+
+- **Image check.** Gallica view 329 fetched again through `openapi.bnf.fr` IIIF (full width 1500 px, then pixel
+  crops of lines 1-3 at full resolution). Compared with `transcription_f317.txt`: all of line 1 (35 tokens), the first
+  21 tokens of line 2 and the first 18 of line 3, 74 signs in all. Every sign is present in the transcription in the
+  same order; differences are naming only (the barred-t bar count at the end of line 1 is hard to settle at this
+  size, as the file says). The token count of 186 is reproduced with a separate parser (first choice at each `{x|y}`,
+  `{S S|FF}` as one token); distinct labels 47 on the same count.
+- **Castille's key applied once** (`castille_test.py`, shape correspondences judged from Tomokiyo's table image
+  `../../research/gallica_siblings/src/louisxiii_Castille.png`; first value where a shape has two). **Result: failed.**
+  Only 108 of the 186 tokens (58%) have a sign of the same shape in Castille's table; the second, third and fourth
+  most frequent Cocquet signs (B 13, PU 12, infinity loop 9), and L 8, s 7 and $ 6, have none. Under the mapped part
+  the round d (Castille's f) is the commonest letter (f 17, i 15, s 14, b 10) and e occurs 4 times; no French word
+  appears in any run. Castille's table is Tomokiyo's partial reconstruction, so a missing shape may be a gap in it
+  rather than in the cipher; but the shapes it does have give the wrong values. Castille's key, as reconstructed, does
+  not decipher f. 317. The structural lead (a cipher of the same build with other values) is not refuted and stays a
+  hypothesis; a shifted-alphabet test on the letter-shaped signs (Castille's key is Caesar-like) was not tried.
