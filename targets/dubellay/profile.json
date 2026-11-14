@@ -297,7 +297,8 @@
   {"date": "2026-10-23", "kind": "access", "what": "fr. 3005 identified as Gallica ark btv1b90599952 (Tomokiyo's francis.htm link); folio numbers read on the canvas corners (259 = f. 165r, 260 = f. 165v, 261 = f. 166r); full-resolution leaves fetched through openapi.bnf.fr IIIF. Neighbouring leaves (canvases 255-266) checked: no decipherment.", "result": "worked"},
   {"date": "2026-10-23", "kind": "transcription", "what": "Ciphered opening (34 + 35 + 5 lines) read sign by sign on native-resolution strips (research/reading_audit/b26_strips.py) with key_p21.tsv and Tomokiyo's table; value transcription texts/22oct1529_transcription.txt; sign values beyond the key in texts/22oct1529_corrections.tsv (adopted: cup = a, barred cup = s, ƕ = f, tall ϙ = m, barred triangle = l, x on a stem = e; confirmed R = faict, V = bien, 4 = madame; sense only, flagged: ꝑ and ℋ = the two Kings).", "result": "partial", "technique": ["key matching", "contextual inference"]},
   {"date": "2026-10-23", "kind": "verification", "what": "First lines agree with Scheurer's snippets word for word (la ou je vouldroye ... seul feal; maint tour de corde); 'si le roy et madame ne l'aydent' matches Le Grand's 17 Oct letter. Reading body scored (b17_score.py, fr): 0.513 (20/39), explicit holes 0.692 (27/39); the last two paragraphs do not build sentences. Kept decoded, not read; 10 letters rest on look-alike alternates.", "result": "partial", "technique": ["language-model scoring"]},
-  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.", "result": "worked", "technique": ["statistical test"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.", "result": "worked", "technique": ["statistical test"]},
+  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test"], "what": "Brice Dudout (Claude Opus 5.5): (1) independent decoder (verify_dudout_20261114.py, reads key_p21.tsv and p21_signs.txt only): 194 sign tokens, 191 agree with their labels, 3 not in the key (line 7); the decoded letters (216) all occur in order in texts/16jun1529_decryption.md, which adds v in 'trouvez' (signs: trouez), the second l in 'allée' (alee), 'ue' after the que sign, and 'a le' at the end. On the Gallica image (fr. 3078 p. 21) the smudged line-7 sign is the a cup: the cipher has 'sera', only 'le' is not enciphered. (2) 22 Oct 1529, Gallica ff. 165v-166r re-read on f. 165v ll. 24-25, 29-30 and f. 166r ll. 1-2: three shapes kept apart (slanted-foot cross = e; closed q-head on a crossed stem = t; hooked stem = s, so the 't / s conflicting' row is two signs); 'saichant ne consentent de ceste reques[t]e suz payne', 'la fureur de ses enemys qui luy ont ainsi tranportes', 'si avant des deux', 'vous en'. Reading, translation, transcription and corrections.tsv updated; v10_relabel share on the reading 0.913 -> 0.922 (the entry has no reading field, so v10 scores ref/legrand3_p330_400.txt at 1.0). Stays decoded, not read.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -339,6 +340,12 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "interlinear decipherment of 22 June 1529 (fr. 3078 no. 4)"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "Independent decoder of the 16 June 1529 block; 22 Oct 1529 opening partly re-read on the Gallica images (VERIFY_dudout_20261114.md).",
+    "date": "2026-11-14"
    }
   ],
   "texts": [

@@ -14,6 +14,14 @@ Marks: `[?word]` partly carried (a doubtful sign, or a value from sense only), `
 `[ꝏ]` a word sign not identified; `[?Roy]` stands for two word signs read from sense only (ꝑ, five places,
 Henry VIII; ℋ, two places, Francis I: "il supplye ℋ et madame"). Spelling as enciphered (no modernisation); apostrophes and punctuation are editorial.
 
+14 Nov 2026 (Brice Dudout, Claude Opus 5.5; VERIFY_dudout_20261114.md): f. 165v ll. 24-25, 29 and f. 166r ll. 1-2
+re-read on the Gallica images. Three sign shapes are kept apart: the cross with a slanted stroke at its foot = e
+(consentent, de ses, enemys, requeste, vieillesse, et, en), the closed q-head on a crossed stem = t (saichant, ont,
+honteuse, et madame, avant), the hooked stem = s (passion, vieillesse). Changes: "saichant ne consentent de ceste
+reques[t]e suz payne" (no sign stands between saichant and ne; "suz payne" = on pain of); "la fureur de ses enemys qui
+luy ont ainsi tranportes" (ll. 29-30: 3 ◇+ ꝗ | ᴗ —o ◇+ | si = ont ain|si); "si avant des deux" (f. 166r l. 1: the two
+signs after "ava" are its n and t); "vous en" (f. 166r l. 2: e, n).
+
 ## Reading
 
 Monseigneur, la ou je vouldroye, si ne me sçauroye je guarder d'accorder au cardinal d'York sa requeste qu'il me
@@ -39,12 +47,12 @@ avoir d'autres poinctz que je n'entendz pas, mais voy la ce que j'en entendz.
 
 La dessus il demande qu'ilz envoyent ung gentilhomme en toute diligence remons[t]rer a [?Roy], qui vous suppliera le
 plus […] de ce moyens, sans plus avant particulariser, ne […] osera cognoistre [?en] façon du monde qu'il
-fust, saichant […] ne consentent de ces […] payne de le faire incontinent mourir. Il supplye [?le Roy] et madame pour l'honeur
-de la passion de Dieu, [?asseurance] par ce moyen, que la fureur des [?ennemys] qui luy ont […] si tranportes ont
+fust, saichant ne consentent de ceste reques[t]e suz payne de le faire incontinent mourir. Il supplye [?le Roy] et madame pour l'honeur
+de la passion de Dieu, [?asseurance] par ce moyen, que la fureur de ses enemys qui luy ont ainsi tranportes ont
 mais […] a pouvre vieillesse, a la plus honteuse et si [?miserable] fin qui jamais advint a homme, laquelle il voit si
 prochaine et devant ses yeulx, s'ilz n'ont pitié de luy.
 
-Quant a moy, encores que je me desplaise de m'ingerer si avant […] des deux, son advis, ce que […] vous [?en]
+Quant a moy, encores que je me desplaise de m'ingerer si avant des deux, son advis, ce que […] vous en
 vouldroye je peu. Car le regrossant les biens que la on [a] afection […], pitié [?regnent], bon jugement […] tourne en
 son entier.
 
