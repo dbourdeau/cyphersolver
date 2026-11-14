@@ -1,0 +1,326 @@
+{
+ "schema_version": 1,
+ "target": "claiborne1806",
+ "title": "Claiborne to Madison, 1805-1806 (NARA T260 Orleans): the State Department code of 'key not found' despatches, structure rebuilt and 261 of about 1 600 values",
+ "documents": [
+  {
+   "id": "or-1805",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T260 roll 7, images 0224-0226 (Claiborne to Madison)",
+   "date": "24 Oct 1805",
+   "year": 1805,
+   "country": "United States",
+   "route": "W. C. C. Claiborne, governor of the Orleans Territory -> James Madison, Secretary of State",
+   "places": {
+    "from": "New Orleans",
+    "to": "Washington"
+   },
+   "language": "English",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment, printed in PJM-SS 10, 11, 13 and (24 Oct 1805) Rowland, Official Letter Books 3:211-213"
+   },
+   "length": {
+    "tokens": 270,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA T260 microfilm images (public domain)",
+    "image_quality": "fair",
+    "notes": "groups transcribed line by line on crops; counts approximate"
+   }
+  },
+  {
+   "id": "or-1806a",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T260 roll 8, image 0045 (Claiborne to Madison)",
+   "date": "13 Jan 1806",
+   "year": 1806,
+   "country": "United States",
+   "route": "W. C. C. Claiborne, governor of the Orleans Territory -> James Madison, Secretary of State",
+   "places": {
+    "from": "New Orleans",
+    "to": "Washington"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment, printed in PJM-SS 10, 11, 13 and (24 Oct 1805) Rowland, Official Letter Books 3:211-213"
+   },
+   "length": {
+    "tokens": 75,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA T260 microfilm images (public domain)",
+    "image_quality": "fair",
+    "notes": "groups transcribed line by line on crops; counts approximate"
+   }
+  },
+  {
+   "id": "or-1806b",
+   "read": "read",
+   "shelfmark": "NARA RG 59, T260 roll 8, image 0409 (Claiborne to Madison; held out)",
+   "date": "25 Nov 1806",
+   "year": 1806,
+   "country": "United States",
+   "route": "W. C. C. Claiborne, governor of the Orleans Territory -> James Madison, Secretary of State",
+   "places": {
+    "from": "New Orleans",
+    "to": "Washington"
+   },
+   "language": "English",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Jacob Wagner's interlinear decipherment, printed in PJM-SS 10, 11, 13 and (24 Oct 1805) Rowland, Official Letter Books 3:211-213"
+   },
+   "length": {
+    "tokens": 45,
+    "unit": "code groups",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA T260 microfilm images (public domain)",
+    "image_quality": "fair",
+    "notes": "groups transcribed line by line on crops; counts approximate"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code"
+  ],
+  "summary": "The State Department code WE028 (about 1,600 numbers; Weber 1979) in a copy whose sixteen blocks of 100 run in reverse order (Claiborne n = WE028 100*(15-i)+r for n = 100*i+r), as in Anthony Morris's copy; I/J and U/V merged; final hook = -s, triangle = -ed. The contributor described it, before the match, as alphabetical segments of variable length in permuted order.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "digit_groups": {
+   "separation": "spaces"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Jacob Wagner's interlinear decipherments, printed in PJM-SS 10:464-65, 11, 13 and Rowland, Official Letter Books of W. C. C. Claiborne 3:211-213. The key itself is listed as not found by the editors; no reconstruction found. Nothing in this repository (12 Nov 2026). Integration 14 Nov 2026: the code is WE028 with reversed blocks; WE028 is printed in Weber 1979 and its copy at NARA M97 r13 is transcribed in this repository (morris1813, 11 Nov 2026); the block reversal was found for Morris's copy here (morris1813). PJM-SS 'key not found' confirmed only from Founders search snippets.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "published reading"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Brice Dudout set the rules (protocol before the calculation). An AI agent transcribed, aligned and built the partial key; no human palaeographer checked.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agent run by Brice Dudout"
+  ],
+  "first_date": "2026-10-27",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-10-27",
+   "kind": "transcription",
+   "what": "Groups of the three NARA pieces transcribed line by line.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "328 words aligned with the printed decipherments; 261 numbers valued (89 sure, 145 probable, 27 doubtful).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "One-and-a-half-part code: alphabetical segments of variable length, permuted; 96 % of sure/probable pairs in order within pages of 50 (controls <= 57 %).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Held-out letter of 25 Nov 1806: 22 of 23 testable new groups fall at their alphabetical place.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-27",
+   "kind": "literature search",
+   "what": "History of the code from Founders and Rowland: sent 8 July 1805, received 12 Aug 1805; Graham's Weber 419-30 code is Sargent's, a different one.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check: the three NARA images (T260 r7 0224-0226, r8 0045, 0409) fetched; the 62 groups of 25 Nov 1806 and the 99 of 13 Jan 1806 all agree with transcription.txt; about 150 groups of 24 Oct 1805 compared: two misreads (learn 135 -> 185; lakes 1482L -> 148L, the hook read as a 2), two places unsettled (arrival 1?0, leather 1?37).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Own script: order test 96.4% of 197 pairs (shuffled median 49.7%, max 56.9% in 1,000); 28 groups only in the held-out letter, 27 consistent with the page bounds of the other letters (1116 'd' not).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Contributor's key compared with every State Department key in the repository: king1797, the Pinckney/legation codes, jqa (WE028 direct), Armstrong 972, Mountflorence: no agreement. WE028 with the blocks of 100 reversed (morris1813's map): 223 of 261 values exact (S 85/89, P 125/145, D 13/27); the jqa table under the same reversal 169 of 237 against at most 63 for 1,000 random block orders.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "WE028 reversed applied unchanged to the 328 aligned words (we028_check.py): 294 reproduce Wagner's word mechanically, 23 more by the clerk's spelling, overlaps, numerals or a re-split of 'General Wilkinson' and 'General binding' (fixing the doubtful 149, 232, 484); 3 encoder slips (611 order in information, 235 bil for the, John 101 51), troops 1077 tra x3, 5 unsettled on the image or alignment. Graham's 1806 code (graham1806) does not fit the reversed table.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "Integration check 14 Nov 2026: the code is the State Department code WE028 (Weber 1979; surviving copy NARA M97 roll 13 frames 1056-1057, transcribed in ../morris1813/beling/key/) with its sixteen blocks of 100 in reverse order, the same copy order as Anthony Morris's (targets/morris1813). Applied unchanged (we028_check.py), it reproduces Wagner's word for 294 of 328 aligned words by a mechanical rule and 317 of 328 after hand classification. The contributor's own partial key (adjacent plaintext: Wagner's interlinear decipherments) was built before this match, by the contributor's record, and agrees with it (85 of 89 sure values exactly, the other 4 spelling variants). The texts themselves were deciphered in 1805-1806 by Wagner.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "validation": {
+   "date": "2026-10-27",
+   "verdict": "pass",
+   "file": "validation.txt",
+   "notes": "Structure: 22/23 held-out groups at their place; 96 % order in pages of 50 against <= 57 % for controls. Not a validation of a complete key. Reproduced here 14 Nov 2026: 96.4% of 197 adjacent pairs, shuffled median 49.7%, max 56.9% (own script); 28 groups occur only in the held-out letter. The held-out status is by the contributor's record. The structure is now explained by WE028 with reversed blocks, which also confirms the key from outside."
+  },
+  "verification": [
+   "contemporary decipherment",
+   "key confirms",
+   "statistical test"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "The texts are Wagner's 1805-1806 decipherments (printed); not new. Key coverage, measured by we028_check.py on transcription.txt with transcription_corrections.tsv: 294 of 328 words (89.6%) reproduced mechanically by WE028 reversed, 317 of 328 (96.6%) after hand classification (NOTES, Integration check). The contributor's own key, sure values only: 326 of 550 groups (59.3%), 202 of 328 words with every group sure (61.6%).",
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Jacob Wagner's interlinear decipherments, printed in PJM-SS and Rowland",
+    "date": "1805-1806"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "partial key (261 values, no earlier key known) and structure of the code; correction of three details of the printed text (489 = wise, 235 = bil slip, 611 = order slip)",
+    "date": "2026-10-27"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "1077 = tra in WE028, used three times for tro- in troops: clerk slip, copy variant or a misread of the codebook sheet (M97 r13 fr. 1056-1057 not re-read)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "arrival (980 1?0 35, middle digit 3 or 8 on the image) and leather (1?37, 1087 = lea would fit) unsettled on the image; second Lakes (1482L, probably 148L) and the struck groups before \"of\" (the collecting) not checked on T260 roll 7 image 0226",
+    "blocker": "illegible"
+   },
+   {
+    "item": "letters of 18 and 19 Nov 1806 (LoC, Burr Conspiracy Collection) in the same code not seen; whether they are online was not checked",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "PJM-SS \"key not found\" notes read through web-search snippets only: Founders Online is behind an AWS WAF challenge for scripts and no browser was available in this session",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "one key, one entry: the number-to-value map is the same as morris1813 (reversed WE028); fold into morris1813 or keep as its own entry (as jqa and morris1813 share the WE028 table) is for the owner",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "or-1805",
+    "label": "Claiborne to Madison, 24 Oct 1805, 13 Jan and 25 Nov 1806",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Wagner's 1805-1806 decipherments (printed), aligned word by word with the groups; WE028 with reversed blocks reproduces 317 of 328 words (294 mechanically).",
+    "reading_review": {
+     "grade": "B",
+     "by": "Brice Dudout (with Claude)",
+     "date": "2026-11-14",
+     "note": "content existing (Wagner); the alignment of 328 words is ours; no new reading"
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "No image is reproduced. The value of the target is the partial key and the structure of the code.",
+  "codes_open": {
+   "open": 1,
+   "total": 261,
+   "tokens_open": 3
+  }
+ }
+}
