@@ -122,6 +122,24 @@ Fixed: the head and hero said every group was set against Jefferson's decoding (
 674 groups); "the printed readings hold" cut (nothing here tests the editors' 156 groups); the glance box now says that
 Carmichael's code has no other letter to search. Counts on the page are those of `reading.tsv` (679, 667, 4, 8).
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) put `key.tsv` against `ct/short_17920726.txt`:
+674 groups in the same order as the decryption, and all 471 groups that carry a value in `key.tsv` agree with it (99 more
+are later parts of a word spread over several groups; 104 have no value in `key.tsv`). Re-run here: the same.
+
+- **How to read `key.tsv`.** `make_key.py` credits a word that runs over several groups to its first group, so a
+  syllable group can carry several words: 1101 accept / acquainted / account (probably ac-), 689 conspicuous /
+  consolation / consider (con-), 562 forms / inform (form), 1259 re-. 494 (from, without) and 534 (circumstan-,
+  honourable) do not resolve to one value. The file is a list of Jefferson's words by first group, not a table of code
+  values. No reading changes and `key.tsv` is left as it is.
+- **Carmichael, 14 Apr 1788.** `read_share` stays 0.0, the share of its five code items read from a key (none).
+  `research/reading_audit/v10_relabel.py` would give 0.974 on the reading file, because it does not turn the capitalised
+  conjectures *[Maryland]* and *[Massachusetts]* into holes and does not count 597; with the four conjectures and 597 as
+  holes among the 40 words of the sentences the figure is 0.875. Either way the letter is read in part.
+
+Not checked: the Library of Congress images (597, the blotted 108; 494 and 534 on frames 016_1006-1007).
+
 ## Remaining gaps
 
 - Short 26 Jul 1792, groups 401 (x2), 1083, 359, 199, 34, 724 - blocker: too-short; they occur only in this passage and its re-encipherment of 27 Jul; no decoding in any Code No. 10 letter checked; 401 is not the attested "been" (1700)

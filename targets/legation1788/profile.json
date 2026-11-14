@@ -199,7 +199,17 @@
    "kind": "verification",
    "what": "Split: Code No. 16 (Pinckney 28 Aug 1793 and the six letters of PR #399) moved to its own target, pinckney1793, one key per entry. This record keeps Short (Code No. 10) and Carmichael (Code No. 13). reading.tsv recounted for the two letters: 679 groups, 667 with a reading (511 under Jefferson's interlinear, 156 the editors'), 4 by conjecture only, 8 open; make_reading.py and make_key.py re-run and give the same files.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) applying key.tsv to ct/short_17920726.txt: 674 groups, same order as texts/short_17920726_decryption.txt; 471 groups with a key.tsv value, 471 agree with the value or its other_readings; 99 continuation groups, 104 without a value (editors' readings, 7 open). key.tsv credits a word spread over several groups to its first group, so syllable groups carry several words: 1101 accept/acquainted/account (1101.660, 1101.119.844, 1101.1341: likely ac-), 689 conspicuous/consolation/consider (likely con-), 562 forms/inform/in-forming (form), 1259 re-medy/remaining (re-); 494 (from/without) and 534 (circumstances/honourable) stay unresolved. Carmichael 14 Apr 1788: v10 gives 0.974 only because capitalised conjectures [Maryland] [Massachusetts] are not turned into holes and 597 is a number; counting the 4 conjectures and 597 as holes over the 35 clear words gives 0.875, so read in part stands (recorded 0.0 counts the 5 code items only). No reading changed; images not re-read.",
+   "result": "worked"
+  },
+  {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Project check of PR #570 (Brice Dudout): his script re-run: 674 groups of Short's letter in the order of the decryption, 471 with a key.tsv value, all agreeing. key.tsv credits a multi-group word to its first group, so 1101, 689, 562, 1259 carry several words (syllable values ac-, con-, form, re- likely); 494 and 534 unresolved. Carmichael: read_share kept at 0.0 (code items); the word figure with the conjectures as holes is 0.875; v10's 0.974 is an artefact. Nothing changed in key.tsv or the readings.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -239,6 +249,12 @@
     "date": "1956-1990",
     "source": "The Papers of Thomas Jefferson vols. 13 and 24, via Founders Online",
     "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "key.tsv re-applied to Short's 674 groups (471/471 agree); syllable groups credited with whole words listed (1101 ac-, 689 con-, 562 form); Carmichael read share recounted 0.875 by the README rule (v10's 0.974 is an artefact); VERIFY_dudout_20261114.md",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [

@@ -32,7 +32,7 @@
     "image_quality": "poor",
     "notes": "Signs 10-14 px high and vowel marks 2-3 px: most marks not seen, so a base sign often stands for several syllables. A large 8-loop (y) and the small m sign were first merged and then split; lines 5-19 were read twice. The largest image BNE serves."
    },
-   "read": "read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -189,7 +189,18 @@
    "kind": "transcription",
    "what": "Sign names normalised to one Unicode form (NFC): Ṿ had been stored two ways and was missed by the decoder. L24's gloss aligned in part (ė ra, ri; ʒ jo, as ʒ yo in the 1554 key). Unread tokens 16 -> 10.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "other"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) reading only key_1548.md (value used), the two dotted-sign rules of NOTES and transcription/d1_transcription.md: 702 tokens, 10 without a value, 178 with two; 691 of 692 items agree with decryption/d1_decode.txt. Letters of d1_reading.md outside brackets: 0.916 given by the key value, 0.944 with the 1548 gloss pairs, 0.979 with the crib pairs (about 51 unbracketed letters rest on the edition alignment only, mostly unseen vowel marks). README read bar: the entry is 'read' with no read_share (written after the 24 Oct v10 pass); fraction_read 0.986 is a token share. v10_relabel.measure on d1_reading.md gives 0.869 (205 words, 31 holes), 0.856 with the three capitalised brackets counted: under the 0.95 word bar.",
+   "result": "worked"
+  },
+  {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Project check of PR #570 (Brice Dudout): his decoder re-run (702 tokens, 10 unvalued, 178 two-valued; 691 of 692 items equal to d1_decode.txt; letters outside brackets given by the key 0.916, with the 1548 glosses 0.944, with the crib pairs 0.979). README read bar on d1_reading.md: 202 words read, 34 supplied, 0.856 (v10_relabel 0.869). The entry had state read with no read_share; class and state changed to read in part.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -197,7 +208,7 @@
    "verdict": "not applicable",
    "notes": "Syllabary with homophones and unseen vowel marks: 135 sign types over 702 tokens (about 5 per type); the letter model cannot separate a reading from a fitted key on so few tokens per type. The reading rests on the decipherment of the time and the printed decipherment."
   },
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "About a third of the key's pairs (194 of 618) come from the interlinear decipherment of 1548 on the letter; the rest (424) from aligning the unglossed lines with the printed decipherment (Bertomeu Masiá 2009). Words that neither the decode nor the gloss gives in full are bracketed in the reading.",
@@ -256,6 +267,12 @@
     "who": "bucure",
     "role": "key or decipherment used",
     "note": "Nápoles 1547: cartas cifradas y secretos de Estado (Estudios Románicos 34, 2025): partial key and code words of the same cipher."
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent re-run of key_1548.md on the 702 tokens (691/692 agree with d1_decode.txt); word read bar recount 0.869 (0.856 strict) against the recorded state read; VERIFY_dudout_20261114.md",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [
@@ -289,10 +306,11 @@
     "reading": "decryption/d1_reading.md",
     "translation": "decryption/d1_en.md",
     "language": "es",
-    "state": "read",
+    "state": "read in part",
+    "read_share": 0.856,
     "reading_review": {"grade": "B", "by": "Claude Code (maintainer session; a model reading, not a person)", "date": "2026-11-04", "note": "Read as sentences 4 Nov 2026: coherent period Spanish on Piacenza, the Interim and the ratification text; B because 34 words are bracketed as supplied from the edition (Bertomeu Masia 2009) used as a crib, so the reading depends on it where marked."},
     "summary": "Farnese will take any compensation for Piacenza; the papal side means to use the Interim as a bargaining point through Sfondrato and the legates, and the Pope's haste over the translation of the Council is for show; Mendoza finds Spanish turns of phrase and faults of Latin grammar in the text of the ratification and will send his notes.",
-    "note": "The reading is the decode with the rebuilt key; glossed lines follow the decipherment of 1548. Values left open by the scan were chosen by context and checked against the printed decipherment; words the decode does not give are bracketed (NOTES.md, Reading)."
+    "note": "The reading is the decode with the rebuilt key; glossed lines follow the decipherment of 1548. Values left open by the scan were chosen by context and checked against the printed decipherment; words the decode does not give are bracketed (NOTES.md, Reading). read_share: README read bar, counted 14 Nov 2026 on decryption/d1_reading.md: 202 words read, 34 supplied words in brackets counted as holes. research/reading_audit/v10_relabel.py gives 0.869 (it leaves three capitalised brackets as words); Brice Dudout's check (PR #570) reports 0.869 and 0.856."
    }
   ],
   "key_file": "key_1548.md",

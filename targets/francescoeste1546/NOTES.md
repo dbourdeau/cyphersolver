@@ -8,15 +8,16 @@ contemporary decipherment is written above every cipher line.
 
 | Document | Cipher | Words | Read as sense | Sign for sign, no mark | Unread groups | Status |
 |---|---|---|---|---|---|---|
-| c. 42r | 14 lines, 476 signs | 85 | 85 of 96 word slots (88.5%) | 57 of 96 (59.4%) | 11 | read in part |
+| c. 42r | 14 lines, 476 signs | 85 | 85 of 97 word slots (87.6%) | 57 of 97 (58.8%) | 12 | read in part |
 | cc. 42v-43r | 40 lines, about 1,370 signs | | | | | not transcribed; key tested |
 | cc. 43v-45v | not examined | | | | | not examined |
 
 c. 42r carries about a quarter of the letter's cipher (476 of about 1,830 signs). Its 85 words of decipherment are all
 carried by signs; 57 match the signs unit by unit with no mark, 28 have at least one marked unit (a value seen only once on
-the page, a letter with no sign, or a doubtful sign). 11 groups of signs have no decipherment above them; all but part of
-the first stand under the writer's superscript digits 6 or 4. Counting each as an unread word slot, 85 of 96 read as sense
-(88.5%), under the 95% bar. `scripts/check_marks.py` prints 87 words because "risoluto" and "senza" run over a line end,
+the page, a letter with no sign, or a doubtful sign). 12 groups of signs have no decipherment above them (11 until the
+check of 14 Nov 2026, below); all but part of
+the first stand under the writer's superscript digits 6 or 4. Counting each as an unread word slot, 85 of 97 read as sense
+(87.6%), under the 95% bar. `scripts/check_marks.py` prints 87 words because "risoluto" and "senza" run over a line end,
 and 15 unread runs because it also counts four single raised o's after omega inside words (a writing convention, see
 below).
 
@@ -111,12 +112,32 @@ After the fixes the marked reading is aligned in L06 (de), L08 (che), L09 (benef
 tutto). Still awkward: "Spagna" in L10 (`4 m` taken as one unit for "na") and "volerne determinare" in L12 (the
 alignment gives one o + to "de-" and marks a missing e in "volerne"). Both are marked, not hidden.
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded `transcription_c42r.txt` from the key
+files alone: the top values give 320 of the 381 letters of the interlinear decipherment in order with `key_c42r.tsv`
+(0.840), 313 with `key.tsv` pass A (0.822), 302 with pass B (0.793). No key value changes. Re-run here: the same figures.
+
+Two points follow from the check, both confirmed here:
+
+- **12 unread groups, not 11.** `reading_c42r.md` has 12 `[?]` in the cipher passages; NOTES, the profile and
+  `scripts/check_marks.py` counted 11, because the script counts unglossed runs per line and L11 has two of them: one at
+  the head of the line and one before the cipher of "venendo", with the clear words "me ne allegro però, perchè fra
+  tanto" between them. Seen here on the Estense image of c. 42r (the line is legible at 1,000 px wide: signs under the
+  digits 6 4 at the line head, clear words, then more signs under 6 4). The count is therefore 85 of 97 word slots,
+  **0.876** (was 0.885). `check_marks.py` is left as it is and still prints 11 for this reason.
+- **The 0.969 of `research/reading_audit/v10_relabel.py` is not a read share of the cipher.** The reading file has no
+  `## Reading` heading, so that measure counts the preamble, the notes and the clear text of the letter (441 words).
+  On the cipher passages alone it gives 90 words and 12 holes, 0.882. The class stays read in part.
+
+Not checked here: any other sign on the image; cc. 42v-43r.
+
 ## Remaining gaps
 
 - cc. 42v and 43r (40 cipher lines, about 1,370 signs): transcription not settled. Only the two model passes exist.
 - c. 42r: 28 words carry a marked unit, most values seen only once on this page (42v-43r would test them) or letters the
   decipherer wrote in abbreviations. One sign is doubtful (L13).
-- The writer's 6 and 4 digits: not understood. 11 groups stand under them unread.
+- The writer's 6 and 4 digits: not understood. 12 groups stand under them unread (two of them on L11).
 - The gloss read is a model read corrected by hand at word level; the clear text of the letter around the cipher is a
   first transcription.
 - 43v-45v were not examined. No human has checked any sign.

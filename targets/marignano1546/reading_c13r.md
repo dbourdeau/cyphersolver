@@ -13,7 +13,7 @@ Marks: `(x)` = a letter with no sign, since the cipher writes double letters onc
 
 *Qua* la cossa di [?l]a guer(r)a contra luterani è per resolta, si actende al(l)e provisione, et io non li manco di quanto
 posso, e ne ho più di parte. *Hora* si cognoscerà *meglio* V. Ecc.a. *L'aparechio* è grando, e per il primo ne mandarò
-parti*cular* aviso [?a] V. Ecc.a. Qua si fa professione di tenir *questa cosa* oc(c)ulta, quale già è pu{b}lica. Però
+parti*cular* aviso [?a] V. Ecc.a. Qua si fa professione di tener *questa cosa* oc(c)ulta, quale già è pu{b}lica. Però
 V. Ecc.a non mi ne fac(c)ia me auctore.
 
 ## Notes on the text
@@ -25,6 +25,8 @@ V. Ecc.a non mi ne fac(c)ia me auctore.
   on c. 14r.
 - *di [?l]a*: the l is a looped script l with a descender. It occurs once and is doubtful on the image. c. 14r has *della*.
 - *aviso [?a]*: the sign is the hooked d (a) with an inner dot or stroke, which is doubtful.
+- *tener*: the fourth sign is the epsilon, which is e everywhere else in the passage, so the cipher spells *tener*. The
+  translation on c. 14r has *tenir*. Read *tenir* here until 14 Nov 2026.
 - *per il primo*: by the first courier. c. 14r abbreviates it as "p.o".
 - The last sentence on c. 14r reads "però V. Ecc.a no' [?mi ne] [?faccia] me autore". Some letters there are small and
   doubtful.

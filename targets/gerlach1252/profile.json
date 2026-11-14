@@ -36,7 +36,7 @@
     "by": "llm from images",
     "source": "Wellcome IIIF images (iiif.wellcomecollection.org/presentation/b19695561, Public Domain Mark), full resolution",
     "image_quality": "good",
-    "notes": "6,479 lettered signs (not counting word dividers, = signs and damage marks) in 348 lines of 17 pages or parts of pages, counted at integration by an own parser of transcription.txt (not by docs/_check_profile.py --measure, so measured is false); 143 signs carry a doubt mark. Pages 7-10, 13-15, 19 and the partial pages by Claude (Anthropic); pp.16-18 first passes by GPT-6 Astra/Sol and Gemini 4 Argon (p.18 by two, adjudicated); pp.8, 9, 10 and 13 also read independently by GPT-6 Astra/Sol (agreement 91.6% to 99.6% sign by sign, contributor's figures; agreement is not accuracy). Compared with the image at integration: the first six lines of p.8 (130 signs), group by group: agree; the other pages were not compared. The inserted narrow leaf (pp.11-12) has no scan of its own; p.9 lines 21-25 and two lines of p.10 are damaged."
+    "notes": "6,479 lettered signs (not counting word dividers, = signs and damage marks) in 348 lines of 17 pages or parts of pages, counted at integration by an own parser of transcription.txt (not by docs/_check_profile.py --measure, so measured is false); 143 signs carried a doubt mark at integration, 96 after the re-reading of p.7 on the image (14 Nov 2026). Pages 7-10, 13-15, 19 and the partial pages by Claude (Anthropic); pp.16-18 first passes by GPT-6 Astra/Sol and Gemini 4 Argon (p.18 by two, adjudicated); pp.8, 9, 10 and 13 also read independently by GPT-6 Astra/Sol (agreement 91.6% to 99.6% sign by sign, contributor's figures; agreement is not accuracy). Compared with the image at integration: the first six lines of p.8 (130 signs), group by group: agree; the other pages were not compared. The inserted narrow leaf (pp.11-12) has no scan of its own; p.9 lines 21-25 and two lines of p.10 are damaged."
    }
   }
  ],
@@ -142,7 +142,17 @@
    ],
    "what": "Integration after an independent check from the issue text: own decoder written from the key table reproduces all 348 decoded lines from the sign transcription (0 differences, 6,479 signs); Kohn's two key leaves and the first six lines of p.8 compared with the Wellcome IIIF images; word-level count by the README rule from reading.md: 1,259 of 1,395 words read without a doubt mark or bracket = 90.3%. Not re-run: the word-list test and shuffles (list not sent).",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) from key.tsv and transcription.txt only: 348/348 lines give the letters of decryption.txt. p.7 re-read on the Wellcome IIIF image (b19695561_0012, full resolution, line bands): the open 4 (l), the closed 4 with the stem through ending in a point (r) and the flat-foot modern 4 (u) are distinct on the page; the 45 doubtful 4-shapes of p.7 all agree with their shapes and lose their '?'. Three corrections: L07 'PI LEO OL? PHI DOT 4R?' -> 'PI LEO PHI DOT 4L' (souil; no o+ sign, the curl belongs to LEO), L07 'SQ? LEO 4L? ST LAM' -> 'RH LEO 4L ST LAM' (wolet), L13 'EUR 4U? PLUS? ST TRI' -> 'EUR 4U 4R? ST TRI' (ruret: a pale figure 4, not a plain cross). p.7 doubtful signs 54 -> 7. transcription.txt and decryption.txt updated; reading.md left to the maintainer (suggested: souil ir wolet, ruret in wol umb).",
+   "result": "worked"
+  },
+  {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Project check of PR #570 (Brice Dudout): his decoder re-run (348 of 348 lines). Lines L07, L08, L12 and L13 of p.7 (about 75 signs) compared with the full-size Wellcome image b19695561_0012: all agree with his corrected transcription, including the three changed signs (souil, wolet, ruret with a faded 4R?). reading.md p.7 updated (wolet without doubt mark; ruret? for ruhet? [ruret?]); count 1,260 of 1,394 words, 90.4% (was 1,259 of 1,395, 90.3%); doubtful signs 143 -> 96. Other pages not re-read.", "result": "worked"}
  ],
  "outcome": {
   "class": "read in part",
@@ -153,9 +163,9 @@
    "transcription",
    "catalogue correction"
   ],
-  "fraction_read": 0.903,
+  "fraction_read": 0.904,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md, words of the 17 pages and parts: 1,259 of 1,395 read with no '?' and no bracketed supply or hole = 90.3% (holes: words with a doubtful letter, supplied or restored words, gaps; recounted at integration, 12 Nov 2026). The contributor's sign-level figures are firm 92.4% (p.8), 80.5% (p.9), 86.2% (p.10), 96.1% (p.13), 95.7% (p.19), 'probable' 97% to 99%; those are his rule, not the README's.",
+  "fraction_read_source": "reading.md, words of the 17 pages and parts: 1,260 of 1,394 read with no '?' and no bracketed supply or hole = 90.4% (holes: words with a doubtful letter, supplied or restored words, gaps; recounted at integration, 12 Nov 2026: 1,259 of 1,395, 90.3%; two words of p.7 settled on the image on 14 Nov 2026). The contributor's sign-level figures are firm 92.4% (p.8), 80.5% (p.9), 86.2% (p.10), 96.1% (p.13), 95.7% (p.19), 'probable' 97% to 99%; those are his rule, not the README's.",
   "codes_open": {
    "open": 0,
    "total": 0,
@@ -186,11 +196,17 @@
     "role": "pointer",
     "note": "catalogue entry 1252 (UK libraries sweep, Oct 2026): the manuscript and Kohn's key sheet at pp.260-261",
     "date": "2026-10-29"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "decoder re-run (348/348 lines); p.7 re-read on the Wellcome image: 45 doubtful 4-shapes confirmed, three sign corrections (souil, wolet, ruret), p.7 doubtful signs 54 -> 7; VERIFY_dudout_20261114.md",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [
    {
-    "item": "143 doubtful signs, mostly the three figure-4 shapes (l, r, u) and the s-signs, 54 of them on p.7",
+    "item": "96 doubtful signs, mostly the three figure-4 shapes (l, r, u) and the s-signs (143 before p.7 was re-read on the image, 14 Nov 2026; 7 left on p.7)",
     "blocker": "illegible",
     "detail": "shapes assigned partly from context; a second look at the originals would settle them."
    },
@@ -225,7 +241,7 @@
     "translation": "translation.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.903,
+    "read_share": 0.904,
     "summary": "Alchemical and medical recipes of a 1570s German notebook: how to make flowers of sulphur and to prepare sublimed sulphur three times with colcothar and salt as a medicine for the lungs and chest (pp.7-10), flowers of antimony red and white, with a fever remedy (pp.13-15), how to make quicksilver out of gold, and the numbered preparations 'belonging to the corruption of Sol': sal ammoniac sublimed through rock salt, spiritus vini from burnt wine and tartar, and aqua regis (pp.16-19); the openings of later sections on the philosopher's stone, putrefaction, the mercury of Sol and Luna and the arcanum of tartar are read in part.",
     "reading_review": {
      "grade": "B",

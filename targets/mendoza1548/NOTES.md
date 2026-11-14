@@ -127,6 +127,27 @@ Sources of the reading:
   signs of M6 come after *reputación*. Both stand at a break in the text, so they are probably nulls.
 - **Start:** the letter begins on MSS/7919/75, so the reading starts mid-sentence.
 
+## Read bar recount and check of PR #570 (14 Nov 2026): read in part
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the 702 tokens from `key_1548.md` and
+the two dotted-sign rules alone: 10 tokens without a value, 178 with two values, and 691 of 692 items equal to
+`decryption/d1_decode.txt` (the one difference is a bracket). Of the 915 letters of the reading outside brackets, the
+key's value gives 838 (91.6%), the 1548 glosses bring that to 864 (94.4%) and the crib pairs from the edition to 896
+(97.9%). About 51 unbracketed letters, in 41 places, therefore rest only on the pairs aligned with the printed
+decipherment, mostly the vowel of a base sign whose mark is not seen. They are not errors; they are not bracketed
+either. Re-run here: the same figures. No key value changes.
+
+**The letter is read in part, not read.** The text entry was written on 2 Nov 2026, after the pass that applied the
+README read bar to every reading, and carried `state: read` with no `read_share`; `fraction_read` 0.986 is the share of
+tokens with a value (692 of 702), not a share of words. Counted on `decryption/d1_reading.md` by the README rule
+(a supplied `[word]` is a hole): 202 words read and 34 supplied, **0.856**, under the 95% bar.
+`research/reading_audit/v10_relabel.py` gives 0.869 on the same file because it leaves the three capitalised brackets
+(*[Fernés]*, *[Monseñor]*, *[Que]*) as words; the contributor of the check reports both figures. Class and text state
+are now read in part, with `read_share` 0.856. The supplied words stay blocked by the scan (vowel marks at 2-3 px), as
+listed below.
+
+Not checked here: the BNE image; MSS/7919/75.
+
 ## Remaining gaps
 
 - **Vowel marks:** at 2-3 px on the scan, most are not seen. 178 tokens print two values; the reading chooses by

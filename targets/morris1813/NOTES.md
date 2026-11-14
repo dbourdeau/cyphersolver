@@ -373,6 +373,28 @@ in the table (a slot inference); it fits here (democratic).
   table; the letter decodes use the code sheet file.
 - The mark example on the page corrected: dispose with one stroke, then -it-ion (140 = it).
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded the letters from
+`beling/key/codebook_M97_13_transcription.csv` and the transcriptions alone: 1,707 of 1,712 groups equal
+`line_by_line_decode.txt` (the five others are marks kept inside a value and the three catchwords of 24 March 1815), and
+No. 13 from copy A gives its reading word for word. His count reproduces the twelve `word_share.py` figures exactly.
+Re-run here: the same. `research/reading_audit/v10_relabel.py` gives higher figures for Nos. 13, 17 and 19 (0.966 to
+0.971) only because it counts the heading, summary and notes in clear; the `word_share.py` figures stand.
+
+**370.** He points out that `word_share.py` counts each `[370]` as an unread word, while on the key sheet 370 closes
+the run of punctuation signs 361 to 370 (`, ; : . ! ? — ( ) "`; the first reading of the numerical sheet has "[PARAGRAPH
+SIGN?]") and in the letters it stands after a full stop. Checked here in the key file and the transcriptions: the run is
+as he says, and of the 21 places his script finds 19 follow 364 directly; the other two stand at the head of a line
+(Cevallos 115.12, where the line before ends with 364, and No. 12 L10, before the coded signature). So 370 behaves as a
+sentence or paragraph mark, not as a word. Leaving it out of the count gives No. 13 0.972 (72 words, 2 holes), No. 19 0.962 (104, 4) and
+No. 17 0.941 (34, 2): Nos. 13 and 19 would cross the 95% bar, No. 17 would not.
+
+**Not applied.** The counting rule of 12 Nov 2026 (an unread group is a hole) is kept, and with it every `read_share`,
+the three texts under the bar and the totals. Changing it moves two letters up a class on a sign nobody has identified
+on the image (the cell on M97 roll 13 frame 1057 was not viewed by him or here), so it is left to the repository owner.
+370 itself stays in the gaps below either way.
+
 ## Remaining gaps
 
 - [370], the sign after full stops (22 times in the thirteen texts) - blocker: open-codes; the cell of the code sheet

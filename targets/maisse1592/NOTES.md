@@ -335,6 +335,27 @@ advice to the English ambassador and Brèves on the Spanish intrigue at the Port
 Pope's resolutions awaited. Beyond the opening the reading rests on the copy alone (figures not aligned). fraction_read
 0.87 -> 0.98, estimated.
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) decoded both figure files with `key1.tsv` alone
+and aligned the letters with the readings: f. 370 2,291 of 2,355 decoded letters (97.3%), f. 373 4,015 of 4,026 (99.7%).
+Re-run here: the same. No new disagreement; `research/reading_audit/v10_relabel.py` gives the recorded read shares
+(1.0 and 0.987).
+
+He also made the first blind sample of f. 370 (f. 373 had one): five lines drawn with `random.seed(370)` (r30, v09, v10,
+v25, v29), 182 groups read from Gallica views 419-420 before comparison, 177 agreeing (97.3%). The order of the work is
+by his record. Three points come out of it; view 420 was fetched here (openapi.bnf.fr, full-size bands of v25 and v29):
+
+- **v29, *contrainct*: the figure is 8, not `9?`.** Seen here: a closed 8 like the 8 of the 18 that follows. The
+  encipherer wrote b for c. `texts/f370_figures.txt` now has `8`, and the slip is in the list of
+  `texts/f370_figures_vs_copy.md`. The reading keeps the copy's word, as for the other slips.
+- **v29, one more group at the gutter** (21, *luy*) after the last 19: by his reading. The band fetched here ends at that
+  place and shows the start of a figure; the group is not added to the file.
+- **The code for *pape* may be 25, not 23** (v25 and r06). Seen here at v25: the second digit has a looped top and a
+  tail turning left, like the 5 of 15, and unlike the flat-topped 3 of the 73 and the 3 nearby. r06 was not found again
+  here. The value is not in doubt (the copy has *pape* at both places). `key1.tsv`, the figures and the page still call
+  the code 23; renaming it wants both places seen, and is left open.
+
 ## Remaining gaps
 
 - f. 370: read 23 Oct 2026; figures aligned with the copy (r2f). Line ends of f. 370v hidden in the binding gutter (about 147 copy letters, the copy is the only witness there) - blocker: needs-physical-access; group 90 at the end of f. 370r l. 1, probably a null - blocker: too-short

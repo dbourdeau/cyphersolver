@@ -910,6 +910,24 @@
    ],
    "what": "Fold of targets/claiborne1806 into this target (owner's decision, one key, one entry), after checking PR #581 and the same-map claim again with a script written for it: every row of the sheet's reversal column is 100*(15-i)+r; the contributor's 261 values (built from Wagner's words) agree with the reversed sheet on 223 and with the sheet read directly on 0; 2,000 random block orders give at most 102; each of Claiborne's sixteen blocks matches its reversed block (3 to 21 agreements) and no other block (0). Image T260 roll 7 0226 fetched and its 57 groups compared: as the contributor states (second Lakes 153 148 with the hook; four struck groups under Wagner's 'collecting'). claiborne/we028_check.py after the move: 295 of 328 words (228/250, 40/51, 27/27). Files moved to claiborne/; the part stays in progress.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) from beling/key/codebook_M97_13_transcription.csv and each letter's transcription.txt: 1,707 of 1,712 groups as in line_by_line_decode.txt (the rest are marks inside the published value and the catchwords of 24 Mar 1815); No. 13 decoded from copy A gives the reading word for word. Read shares: v10's 0.966-0.971 for Nos. 13, 17, 19 count the whole reading.txt (heading, summary, notes in clear; No. 17 231 words against 35 coded), so the recorded word_share.py figures are the right count (reproduced exactly). But word_share.py counts the sign 370 as a hole; on the key sheet 370 ends the punctuation run 361-370 (, ; : . ! ? - ( ) \" 370; numerical sheet '[PARAGRAPH SIGN?]') and in the letters it follows 364 (.) in 19 of 21 places. Leaving it out: No. 13 0.946 -> 0.972 and No. 19 0.943 -> 0.962 (over the 0.95 bar), No. 17 0.914 -> 0.941 (under). Class left to the maintainer; no image viewed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Project check of PR #570 (Brice Dudout): his decoder re-run (1,707 of 1,712 groups equal line_by_line_decode.txt) and the twelve word_share.py figures reproduced. His point on 370 checked in the key file and transcriptions: 370 ends the punctuation run 361-370 and follows a full stop in 19 of 21 places (the other two stand at a line head: after a line ending in 364, and before the coded signature of No. 12). With 370 left out of the word count Nos. 13 and 19 would be 0.972 and 0.962, No. 17 0.941. Not applied: the rule of 12 Nov 2026 and every read_share are kept; the change is left to the repository owner. Frame 1057 of M97 roll 13 not viewed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -1092,6 +1110,12 @@
     "role": "prior solution",
     "note": "Jacob Wagner's decipherments between the lines of Claiborne's three letters, State Department, 1805-06; printed in the Papers of James Madison, Secretary of State series",
     "date": "1805-1806"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "decoder re-run (1,707/1,712 groups); v10 gap explained (whole-file denominator); 370 shown to be a punctuation sign, which puts Nos. 13 and 19 over the read bar if not counted as a hole; VERIFY_dudout_20261114.md",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [

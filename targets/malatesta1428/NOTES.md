@@ -50,7 +50,9 @@ Checked here (5 Nov 2026), with the key (`key.json`) and the corrected transcrip
   (Prizmic's identification, citing the DBI).
 - Why we failed: 262 signs against 308. The corrected transcription counts as cipher letters the marks we had set aside
   as separators (the double slash is i, the three dots a). The 5 Oct anneal with separators kept as five extra signs
-  still found nothing. We did not diff the two transcriptions beyond that.
+  still found nothing. We did not diff the two transcriptions beyond that at the time; Brice Dudout did on 14 Nov 2026
+  (see the section before Remaining gaps): the 46 signs are the double slash (i, 24), the three dots (a, 12) and the
+  colon (v, 10).
 - Limits: the key was built together with the reading, so the control shows the transcription and key are consistent, not
   that the cipher was broken independently; the preprint does not say whether the clear text served as cribs, so the
   outcome is "read after matching with key from external sources", not a ciphertext-only break by this project.
@@ -75,6 +77,28 @@ words of the clear text (prepositum?, fratrem?, sensu?) need a better image than
 - 5 Oct 2026: images re-fetched, run lines cropped at 3x (L05 matches `p1v2.txt` sign for sign); separators kept as
   five extra cipher signs (`p1_withsep.txt`), annealed in Latin and Italian, 10 restarts each: -2.76 / -2.63 per char,
   no words (`run_withsep_*.txt`).
+
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) applied `key.json` to
+`transcription_tomokiyo_corrected.txt` with his own decoder (not `dec.py`): the three runs give `texts/p1_reading.md`
+letter for letter, apart from the unread sign 23 and the four letters the scribe left out (cas(s)andis, dis(c)rimine,
+ef(f)ici, c(o)mitem). Re-run here: the same.
+
+He then made the comparison these notes said was not done: this project's own first transcription `p1v2.txt`
+(22 Sept 2026, before any key) against the corrected one. With the colon counted as a sign, both have 308 signs, with
+no insertion or deletion, and 293 positions carry the same value. Each name of `p1v2.txt` is one sign of the corrected
+transcription except three merges of naming: `ss` covers ss (e) and ss2 (m), `oo` covers 48 (c) and 49 (x), and one `v`
+is the null. The colon is sign 10 (v), ten times; with the double slash (i, 24 times) and the three dots (a, 12 times)
+that is the whole difference between 262 and 308. Re-run here: the same counts. So a transcription made without the
+key and without Tomokiyo's file has the same signs in the same order; what it lacked was the three marks taken for
+separators and the split of two sign pairs.
+
+Read bar: `read_share` 0.997 is the share of signs (307 of 308). `p1_reading.md` did not mark the unread sign; it now
+has `[?]` before *delliberet*, as `p1_decryption.md` has `[·]`. The three runs hold 51 words and that one unread
+sign, so the class is not affected. The clear Latin around the runs keeps the doubts listed in `p1_decryption.md`.
+
+Not checked: the image (DECODE, account needed); the ss/ss2 and 48/49 splits on the image.
 
 ## Remaining gaps
 - sign 23, once, before "delliberet" - blocker: illegible; the sentence is complete without it, so it may be a null; one sign, no other occurrence to compare

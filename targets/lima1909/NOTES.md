@@ -2,8 +2,10 @@
 
 Status: contributed by WAINUT (27 Oct 2026). The eight coded telegrams are read from the decodes of the time that the
 receiver pencilled above the groups; nine of 409 code items stay open. One rule for all eight: a telegram is read
-when at least 95% of its words read as sense; each is at 95.7% or above (400 of 409 items, 0.978), so all eight are
-classed read, with the open items listed under Remaining gaps. Pairing the glosses with the groups gives 261
+when at least 95% of its words read as sense. Counted on the words of the readings (14 Nov 2026, see "Read bar recount"
+below), seven telegrams are at 96.3% or above and m0011 is at 93.7%, so seven are classed read and m0011 read in part,
+and the target read in part; the earlier figure (each at 95.7% or above, 400 of 409, 0.978) was a share of code items.
+The open items are listed under Remaining gaps. Pairing the glosses with the groups gives 261
 values of a two-part (randomised) Portuguese code. The site page and the ledger rows are left to the maintainer.
 
 Catalogue 409. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
@@ -112,6 +114,43 @@ Medina para o trem especial" (the first pass had "Medina, na onde").
 - "Government-to-king telegrams in the 1909 cabinet crisis": they concern the King's state visit to Spain, France and
   England of November-December 1909 and his return journey (route, toast, decorations, reception in Lisbon).
 - Place "Lisbon": Lisbon -> Madrid (Palacio Real) and Lisbon -> Paris (Hotel Bristol).
+
+## Read bar recount and check of PR #570 (14 Nov 2026): m0011 read in part
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) re-ran the decode from `code_values.tsv` and the
+eight transcriptions: 409 code items in the order of the decryption files, 409 of 409 values equal to the glosses.
+Re-run here: the same.
+
+He also showed that the `read_share` values recorded on 27 Oct 2026 (0.957 to 1.0) were shares of code items with a
+gloss (m0011: 97 of 101), not shares of words, and that the pass which applied the README read bar to every reading
+was never run on this target. `research/reading_audit/v10_relabel.py` on the reading files gives 0.868 to 0.973, but it
+counts as holes the 31 words the readings supply in brackets for readability and which stand for no code group:
+articles and prepositions the telegraphic style leaves out (`[o]`, `[a]`, `[da]`, `[vá]`), the signature place `[Lima]`,
+and the expansions of abbreviated code values (`Pres[idente da]`, `G[rã-]C[ruz da]`, `[de Honra]`; the code book has
+"Pres. Republica" and "G. C. Legião"). Those are not words of the telegrams, so they are left out of both the words
+and the holes. What remains as holes are the unread groups and the doubt marks `[?]`:
+
+| telegram | words | holes | share | recorded before (items) |
+|---|---|---|---|---|
+| m0001 | 36 | 0 | 1.0 | 1.0 |
+| m0005 | 37 | 0 | 1.0 | 1.0 |
+| m0007 | 110 | 1 | 0.991 | 0.975 |
+| m0009 | 65 | 2 | 0.970 | 0.957 |
+| **m0011** | 104 | 7 | **0.937** | 0.96 |
+| m0014 | 49 | 0 | 1.0 | 1.0 |
+| m0018 | 103 | 2 | 0.981 | 0.989 |
+| m0020 | 79 | 3 | 0.963 | 0.985 |
+
+Re-run here: the same figures. **m0011 is under the 95% bar and is now read in part** (three groups with no usable
+gloss, the open gloss of 43243, the doubtful *Hen[daya?]* and two doubt marks on glossed words); the other seven stay
+read, and the target as a whole is read in part. `read_share` now holds the word figures of this table. Counted with
+the supplements as holes (the unchanged v10 measure), m0009 (0.926), m0014 (0.868), m0018 (0.935) and m0020 (0.878)
+would fall under the bar as well; that reading of the rule is not applied here, because the supplied words answer to
+no group of the telegram.
+
+Not checked: the DigitArq scans (the faint glosses of m0009, m0011 line 7 and m0020). The decryption files mark more
+glosses as doubtful (`?`) than the readings carry as `[?]`, for example *Tudo ?* and *Escrevo ?* in m0001 and six
+in m0020; the readings were not re-marked from them.
 
 ## Remaining gaps
 
