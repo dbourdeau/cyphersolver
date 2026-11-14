@@ -33,14 +33,15 @@ KEY_ONLY_LABEL = {
     KNOWN: 'known key applied',
 }
 
-# method -> (filter/anchor key, badge label, seal word, dateline verb)
+# method -> (filter/anchor key, badge label, seal word, dateline verb). The badge label is the one name a reader sees
+# for an outcome (menu, lists, chart legend, a write-up's Method line); the seal word is that label cut to fit the wax.
 INFO = {
     CT:      ('ct',      'ciphertext-only break',        'ciphertext-only', 'key recovered'),
-    EXT_PT:  ('extpt',   'key from external plaintext',  'external text',   'key recovered'),
-    ADJ_PT:  ('adjpt',   'key from adjacent plaintext',  'adjacent text',   'key recovered'),
+    EXT_PT:  ('extpt',   'key from external plaintext',  'external plaintext', 'key recovered'),
+    ADJ_PT:  ('adjpt',   'key from adjacent plaintext',  'adjacent plaintext', 'key recovered'),
     EXT_KEY: ('extkey',  'external key matched',         'key matched',     'deciphered'),
     KNOWN:   ('known',   'known key applied',            'known key',       'deciphered'),
-    DECIPH:  ('deciph',  'existing decipherment',        'deciphered copy', 'transcribed'),
+    DECIPH:  ('deciph',  'existing decipherment',        'existing decipherment', 'transcribed'),
     NOT:     ('notsolved', 'not solved',                 'not solved',      'attempted'),
     NA:      ('na',      'not applicable',               'closed',          'resolved'),
 }
@@ -171,9 +172,6 @@ PAGE_METHOD = {
     'beale': (NA, 'n/a', 'Beale Paper no. 1 is judged a fabrication; a book-cipher scan over Project Gutenberg found no key text.'),
     'goldbar': (NA, 'n/a', 'The letters are almost exactly ten of each kind, a sign of a design, not a message.'),
     'voynich': (NOT, 'none', 'Plain or simply enciphered European languages were tested and excluded; no reading.'),
-    'lineara': (NOT, 'none', 'The Linear B sound values carry over and the accounts (numbers, fractions, commodities, totals, three place '
-                'names; 41.8% of tokens) give sense, but the language is unknown and no word is translated.'),
-    'indus': (NOT, 'none', 'Published decipherments were tested against the corpus; no reading is established.'),
 }
 # pages that report several targets, each with its own profile (the badge takes the first method in METHODS order)
 PAGE_PROFILES = {'vatican': ['vatican5']}

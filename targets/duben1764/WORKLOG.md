@@ -31,3 +31,13 @@
 - 2026-10-26 Hand rebuild of system A from the gloss: for every group seen on 3+ glossed lines, the letter strings common to all those lines' French: none for 218 (15 lines), 583, 555, 552, 540, 452, 618, 170 ...; at best one bigram for a few. Repeated plaintext gets different groups: 'L: L: M: M:' over 555 215 424 526 (124R.08) and 584 143 401 171 (125L.03), no constant difference; 'l'Imperatrice' and 'l'ordre' twice each, no shared groups. A few runs recur ('540 347' x3, '620 660' x2). Conclusion: not a fixed table; values vary through the text (additive or switched table suspected). No key, so the test on 6 Mar 1764 could not be run (failed).
 
 - 2026-10-28: Integrated Bryan Payne / OpenAI Codex research in payne2026/; see its dated WORKLOG.md. Preserved prior work and separate method/control results.
+- 2026-11-14 (catalogue 1616, Arya Sanketbhai Patel) Prior-art search (Düben / Gyldenstolpe / Panin / Lovisa Ulrika / cipher 1764; cryptiana; DECODE): no edition, calendar or reading found (no change).
+- 2026-11-14 Images 100-103, 124-126 fetched full size from Riksarkivet IIIF; 87, 90, 104 at 1800 px.
+- 2026-11-14 Verification: the 6 Mar clear (102R, 103L, 103R) compared with the images line by line: agrees with tx/p1764-03-06.txt; 103R.03 "la" overwritten, doubtful (worked).
+- 2026-11-14 Solver run (decode only): key_c01 on 101R-102L with sysA_place.py: all 33 lines placed in order, 102R.01 to 103L.08 "Il reitera a"; 102L ends mid-sentence, blank below (worked).
+- 2026-11-14 Hypothesis: 100R is the cipher of the rest of the 6 Mar clear (103L.08-103R.13). Transcription of 100R (11 lines, 197 groups, one pass) -> sysA_1616/c100R_letter96_end.txt.
+- 2026-11-14 Control/measure: check2.py on 100R: vs 6 Mar clear after 103L.08 0.038 (controls max 0.040); vs letter 96 clear tail 0.529 (max 0.094). Hypothesis ruled out: 100R is the end of letter 96 (97L ends 453.630.497, 100R begins 453.630.498).
+- 2026-11-14 Search for the rest of the 6 Mar cipher: 87 (other hand and profile), 90R (letter opening "[Mo]n cher [Comte]"), 104R (15 May opening): none continues 102L. Not in the volume as far as checked (failed; outside blocker).
+- 2026-11-14 Verification: 15 Nov 1765 gloss compared with the images (124R-126): agrees except 126.06G "en honneur" -> "en homme" (corrected in tx/g1765-11-15.txt only).
+- 2026-11-14 Reading: strict counts with v10_relabel.share: 6 Mar 622 words, 1 doubtful, 0.998; 15 Nov 610 words (gloss 367), 0 holes, 1.000. English translations written (sysA_1616/reading_*.md).
+- 2026-11-14 English translation of the 5 Oct 1764 clear (tx/p1764-10-05_en.md), linked in profile outcome.texts; it was missing and failed the PR reading check.

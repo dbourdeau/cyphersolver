@@ -1,0 +1,24 @@
+# Who must approve a pull request (CONTRIBUTING.md, "Review and merging").
+#
+# The "main" ruleset requires a code owner's approval, and GitHub does not let an author approve their own pull
+# request. So a change to an owned path merges only with the approval of the maintainer who did not write it, and a
+# contributor's change with the approval of either. The last matching line wins.
+#
+# Everything is owned unless a later line says otherwise: readings, keys, transcriptions, the catalogue, leads,
+# credits, write-up pages, the checkers, the build scripts, the workflows and this file.
+*                        @dbourdeau @bdudout
+
+# Design only: no owner, so no approval is required and a maintainer can merge their own change. A pull request that
+# also touches an owned path still needs its approval. Add a path here only if nothing in it states a result.
+/docs/style.css
+/docs/pg-*.css
+/docs/site.js
+/docs/home.js
+/docs/herovid.js
+/docs/zoom.js
+/docs/cipher-reveal.js
+/docs/solve-replay.js
+/docs/atlas.js
+/docs/archmap.js
+/docs/apple-touch-icon.png
+/docs/favicon*
