@@ -37,6 +37,41 @@
     "image_quality": "good",
     "notes": "Re-read on the image twice; 16 places settled by a blind shape sheet answered by Brice Dudout (5 Nov), then two more blind sheets (FL2-C, 15 questions; FS1, 6 questions; 11 Nov): four signs re-read (1v.05 for, 1v.10 4, 1v.14 88, 1v.18 84). Marked signs (barred 4, q with a stroke below, x with two dots below, and those seen on FL2-C) have no value. 13 Nov 2026: the raised sign of 34ʳ (= SR) seen on the image on both 34 of the letter (1r.12, 1v.17), transcribed plain 34 before."
    }
+  },
+  {
+   "id": "mss18428-13-15",
+   "read": "read in part",
+   "shelfmark": "Madrid, BNE MSS/18428 (Gayangos), BDH 0000141369, viewer images 13 right - 15 left",
+   "date": "early 1622 (after Luynes's death, 15 Dec 1621; 'de Paris a ... 1622' on image 15 right)",
+   "year": 1622,
+   "country": "France",
+   "route": "Antonio Dávila y Zúñiga, Marquis of Mirabel, Spanish ambassador in France -> Diego Sarmiento de Acuña, Count of Gondomar",
+   "places": {
+    "from": "Paris",
+    "to": "Madrid"
+   },
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on this letter (the only one of the seven ciphered letters of the volume without one). The key comes from coloma1622 (Feria's margin clears) and from the contemporary clears of the six other ciphered letters of MSS/18428 (CONTEMPORARY-CLEARS.md).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 541,
+    "unit": "symbols",
+    "measured": true,
+    "file": "mss18428/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital viewer images harvested 5 Nov 2026 (kept private, not reproduced)",
+    "image_quality": "good",
+    "notes": "Part A (images 13 right - 14 right, 349 tokens): two independent passes (the second by an agent that saw neither the first pass nor any key), arbitrated on the image with no key open, frozen before measurement M02 (14 Nov 2026). Part B (image 15 left, 192 tokens): one pass, 5 Nov 2026, frozen before any decoding (held-out passage H4 of coloma1622, then M01). Folded into coloma1622 on 14 Nov 2026 (one key, one entry): files in mss18428/."
+   }
   }
  ],
  "system": {
@@ -84,7 +119,7 @@
   ],
   "attack": "known plaintext",
   "first_date": "2026-11-02",
-  "last_date": "2026-11-13",
+  "last_date": "2026-11-14",
   "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement per held-out passage, thresholds fixed in advance) and answered the three blind shape sheets (shapes only; M16, FL2-C, FS1). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the letter.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
@@ -171,6 +206,69 @@
    ],
    "what": "Integration of PR #543: the word table gives 421 = 347 / 42 / 28 / 4 and differs from 12 Nov in exactly 13 rows; a second decoder from key.tsv plus _39_ BIEN and 4‡ g reproduces decryption.txt on 414 of 423 rows (9 notation only); the clear passages of MSS/18428 as transcribed decode consistently with the key rows; the BNE images and clears were not seen (BNE Digital 403, 13 Nov). Strict count, sure words only: 346/421 = 82.2% (the contributor's 363/421 is the looser 12 Nov rule plus four words that stay probable: hizo, grande, havia, viene). Learning only, nothing measured.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "MSS/18428 letter (PR #560): Inventory of the 112 images of MSS/18428: seven ciphered letters, all of 1622; five (six after 13 Nov) with a contemporary decipherment; only images 13 right - 15 left without one (issue #367). Held-out passage H6 (image 38 right) burned before any computation: its clear copy (image 39 right) had already been seen.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "MSS/18428 letter (PR #560): Key CLE_M01 = coloma1622 key C04 + 23 values read on the contemporary clears of MSS/18428 (bound clear copies fol. 31 and images 39 right - 40 left, margin of image 44 right); adds ō = t (o with a cross, distinct from the Ð = n of C04). Frozen (4f09539f...) before the measurement.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "MSS/18428 letter (PR #560): M01: one lexical measurement on part B (image 15 left, 192 tokens), pre-registered: score -2.381 against threshold -2.35; best of 200 controls -2.880, gap 0.499 against threshold 0.60; coverage 0.922.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "MSS/18428 letter (PR #560): M02: metric recalibrated on burned passages only (whole-text lexical score); key CLE_M02 = CLE_M01 + 5 values of contemporary clears (4‡ g, 308 NUESTRO, _113_, _0_ REBELDE, 319 OTRO); part A transcribed in two independent passes and arbitrated, then one measurement: score -2.383 against threshold -2.25; best of 200 controls -3.413, gap 1.029 (threshold 0.30); coverage 0.928.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "MSS/18428 letter (PR #560): The whole letter read word by word after both measurements, all 541 tokens covered in order: 250 words, 183 certain, 36 probable, 11 restored, 20 unresolved (87.6% certain + probable; 73.2% sure words only). Signs without a value read by sense are probable at two places or more, restored at one. English translation. 14 Nov 2026: the one sign of part B transcribed Ð re-read ō on the image (no count changes).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "MSS/18428 letter (PR #560): The six ciphered letters of the volume that carry a contemporary decipherment, decoded on their 39 aligned segments with CLE_M02: 515 of 559 characters of the clears (0.921). Learning data (the values come from these clears), not a test.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration of PR #560 (mirabel1622 folded in as the document mss18428-13-15, one key one entry: the same system, CLE_M02 = C04 + values of the clears of MSS/18428). Own decoder from mss18428/key.tsv reproduces decryption.txt; strict recount 182/250 = 72.8% (contributor 183/250 = 73.2% sure, 219/250 = 87.6% with probable). M01 failed and M02 partial: the extended key is not validated. The contributor's re-reading of the sign in the H5 passage (MSS/18428 image 44 right, 'ministros') as o with a cross = t, not Ð = n, explains the 'Ð (n? / t) conflict' recorded in H5; the H5 score is not recomputed. BNE Digital answered 403 to a script again; images not seen by the project.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -184,7 +282,7 @@
   ],
   "fraction_read": 0.822,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Word table of reading.md, which covers the transcription in order: 421 words, 347 certain, 42 probable, 28 restored, 4 unresolved (13 Nov 2026). Sure words only (integration of 13 Nov 2026): 346/421 = 82.2%, the certain words except 'casa' (code _60_ placed by the sense); probable, restored and unresolved words are holes. The contributor's count of certain + probable: 389/421 = 92.4% (384 on 11 Nov, 375/425 on 5 Nov); his recount by the looser rule of the 12 Nov integration (349/421 = 82.9%, which also counted 13 probable words read with the key): 363/421 = 86.2%.",
+  "fraction_read_source": "Word table of reading.md, which covers the transcription in order: 421 words, 347 certain, 42 probable, 28 restored, 4 unresolved (13 Nov 2026). Sure words only (integration of 13 Nov 2026): 346/421 = 82.2%, the certain words except 'casa' (code _60_ placed by the sense); probable, restored and unresolved words are holes. The contributor's count of certain + probable: 389/421 = 92.4% (384 on 11 Nov, 375/425 on 5 Nov); his recount by the looser rule of the 12 Nov integration (349/421 = 82.9%, which also counted 13 probable words read with the key): 363/421 = 86.2%. Second document (PR #560, MSS/18428 images 13 right - 15 left), counted separately, never pooled: strict 182/250 = 72.8% (the contributor's 183 certain words less 'Reina', code _A_ placed by the sense); the contributor's figures 183/250 = 73.2% sure and 219/250 = 87.6% certain + probable. fraction_read is the figure of the Lyon letter, the catalogued document (entry 1601).",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -193,7 +291,7 @@
    "date": "2026-11-05",
    "verdict": "weak",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py), characters against contemporary clears, thresholds >= 0.85 and >= +0.30: C02 0.761 vs 0.437 (partial), H3 0.690 vs 0.419 (failed), H5 0.814 vs 0.466 (partial); C01 (M5, no clear) 0.333 vs 0.169 (failed); H4 burned without measurement (show-through)."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py), characters against contemporary clears, thresholds >= 0.85 and >= +0.30: C02 0.761 vs 0.437 (partial), H3 0.690 vs 0.419 (failed), H5 0.814 vs 0.466 (partial); C01 (M5, no clear) 0.333 vs 0.169 (failed); H4 burned without measurement (show-through). MSS/18428 letter (PR #560): key CLE_M02 (C04 extended from the clears of MSS/18428), lexical measurements, contributor's protocol: M01 on part B -2.381 against -2.35, gap 0.499 against 0.60: FAILED; M02 on part A -2.383 against -2.25, gap 1.029 against 0.30: PARTIAL. Not validated."
   },
   "human_check": {
    "date": "2026-11-11",
@@ -207,7 +305,7 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by his protocol, two of four measurements failed), letter read in part and translated (PR #279); two values from the clear of MSS/18428 fol. 31, code-value proposals and the blind shape sheets FL2-C and FS1, which he answered (PR #417, https://github.com/dbourdeau/cyphersolver/pull/417). 13 Nov 2026 (PR #543): the other clears of MSS/18428 aligned (39 = BIEN, 4‡ = g, 308 NUESTRO, 34ʳ SR ...); 346/421 = 82.2% sure words only, 92.4% on his count of certain + probable",
+    "note": "transcription, key rebuilt from Feria's margin clears and tested on held-out clears (partial by his protocol, two of four measurements failed), letter read in part and translated (PR #279); two values from the clear of MSS/18428 fol. 31, code-value proposals and the blind shape sheets FL2-C and FS1, which he answered (PR #417, https://github.com/dbourdeau/cyphersolver/pull/417). 13 Nov 2026 (PR #543): the other clears of MSS/18428 aligned (39 = BIEN, 4‡ = g, 308 NUESTRO, 34ʳ SR ...); 346/421 = 82.2% sure words only, 92.4% on his count of certain + probable 14 Nov 2026 (PR #560): the letter of MSS/18428 images 13 right - 15 left (Mirabel to Gondomar, early 1622, the one cipher letter of the volume without a decipherment of the time) transcribed, key extended to CLE_M02 from the volume's clears (o with a cross = t, _0_ REBELDE), two pre-registered measurements (M01 failed, M02 partial), read in part (strict 182/250 = 72.8%).",
     "date": "2026-11-13"
    },
    {
@@ -242,6 +340,14 @@
     "item": "images, the clear of MSS/18428 fol. 31 and the blind sheets not seen by the project at the integration of 12 Nov 2026",
     "blocker": "needs-physical-access",
     "detail": "BNE Digital answers 403 (Cloudflare) to a plain fetch and no browser session was available; the sheets, rules, maps and answers are not in the repository, so their hashes and 'rule hashed first' are by the contributor's record; the order test's exact figures (tau 0.750 vs 0.463; 14 of 16) are not reproducible from the repository"
+   },
+   {
+    "item": "MSS/18428 letter (images 13 right - 15 left): 20 unresolved, 11 restored and 36 probable words of 250 (codes 24, 322, _1_, _13_, _41_, md, 87, 48~ and signs read by sense only: xix, c̣ir, f‡, fir, fizt, 20~, g‡, p‡, D‡, x‡, zan); the extended key failed one measurement and is partial on the other; no unseen passage of the system is left in MSS/18428",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "MSS/18428 letter: the BNE Digital images (and the clears of the volume) not seen by the project; part B transcribed in one pass",
+    "blocker": "needs-physical-access"
    }
   ],
   "texts": [
@@ -261,6 +367,24 @@
      "by": "Claude Opus 5.5 (for Brice Dudout); re-read at integration for the project",
      "date": "2026-11-13",
      "note": "Read again as sentences 11 Nov 2026 by one AI reader after the blind sheets FL2-C and FS1 (Brice Dudout answered the shape sheets only; FS1 position bias declared, answers confirmed by shape). The letter construes as Spanish sentences throughout, with gaps: 337 certain, 47 probable, 31 restored, 6 unresolved of 421 words (91.2%), so read in part. Most new code values are machine proposals by sense and key order (restored at one place). Integration of PR #417 (12 Nov 2026): the normalised text read clause by clause against decryption.txt and translation.md; it construes where unmarked and the translation follows; 'Cristianos no resolvió' gives no clear sense. By the read bar 349/421 = 82.9% (code values placed by the sense not counted); grade kept at B. 13 Nov 2026 (contributor): the normalised text re-read after the changes from the clears of MSS/18428 ('o bien', 'viene', 'hizo grande instancia', 'el Rey nuestro señor, en que esperaba', 'nuestro señor había dudado'); 347 certain, 42 probable, 28 restored, 4 unresolved (92.4%); still read in part; grade B kept. Integration of PR #543 (13 Nov 2026): the changed rows re-read in context ('o bien en caso de rompimiento', 'el Rey nuestro señor, en que esperaba'); they construe; sure words only 346/421 = 82.2%."
+    }
+   },
+   {
+    "doc": "mss18428-13-15",
+    "label": "BNE MSS/18428 images 13 right - 15 left: Mirabel to Gondomar, Paris, early 1622 (cipher passages)",
+    "transcription": "mss18428/transcription.txt",
+    "decryption": "mss18428/decryption.txt",
+    "reading": "mss18428/reading.md",
+    "translation": "mss18428/translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.728,
+    "summary": "Early 1622, after Luynes's death: court gossip about Luynes's widow; Philip IV's order to send the French ladies home from Madrid and the Spanish servants from Paris; the Queen's confessor; Louis XIII's good faith and the capitulations of the Grisons treaties expected.",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI agent for Brice Dudout; recount by the project",
+     "date": "2026-11-14",
+     "note": "Read as sentences by one AI reader after the two measurements: the cipher construes with the interspersed clear as Spanish sentences, with holes (20 unresolved and 11 restored words of 250; 87.6% certain + probable, 73.2% sure), normalised in reading.md and translated. Not checked by a human reader. Grade B: coherent but normalised from a raw syllabic decode. Integration check 14 Nov 2026 (project): strict share 182/250 = 72.8%: the contributor's 183 certain words less 'Reina' (code _A_, a value placed by the sense in coloma1622 and counted there as a hole); own decoder from mss18428/key.tsv reproduces the values column of decryption.txt (6 rows differ by notation only: faz/fez = que, + null). Images not seen (BNE Digital 403)."
     }
    }
   ],
