@@ -55,16 +55,18 @@ output in heldout_result.txt):
 
 | key | table | letters right |
 |---|---|---|
-| frozen key as frozen (looped d-shape read as d, dot dropped) | Porta | 303/346 = 0.876 |
+| frozen key as frozen (looped d-shape read as d, dot dropped) | Porta | 305/346 = 0.882 |
 | frozen key as frozen | Vigenère (control) | 1/346 = 0.003 |
 | frozen key as frozen | Beaufort (control) | 4/346 = 0.012 |
-| working key (looped d-shape = f, dot = o) | Porta | 330/348 = 0.948 |
+| working key (looped d-shape = f, dot = o) | Porta | 333/348 = 0.957 |
 | working key | Vigenère (control) | 0/348 = 0.000 |
 | working key | Beaufort (control) | 3/348 = 0.009 |
 
-These figures are after the five letter corrections of the blind review (see Review below). Before them the Porta
-figures were 298/346 = 0.861 (frozen key as frozen) and 325/348 = 0.934 (working key); the controls did not change.
-The reading against which the letters are scored was made by us, so the 0.948 is not independent of the reading. The
+These figures are after the five letter corrections of the blind review (see Review below) and the three r -> v
+corrections of 14 Nov 2026 on image 119 (re-run of scripts/heldout.py at the integration, 14 Nov 2026). Before the
+blind review the Porta figures were 298/346 = 0.861 (frozen key as frozen) and 325/348 = 0.934 (working key); after it
+and before 14 Nov, 303/346 = 0.876 and 330/348 = 0.948; the controls did not change.
+The reading against which the letters are scored was made by us, so the 0.957 is not independent of the reading. The
 controls show what the same reading gives with the wrong table. The two sign values were set after the freeze, from the
 held-out runs themselves: f for the looped d-shape fits at five places (gezogen, Miscredit, tausend twice, Casse), and o
 for the dot at both runs it opens.
@@ -146,6 +148,12 @@ seems to carry a cross-stroke, and f would give "doch"). Both stay marked change
 "aufkündigungen") is a clear q on the image, so that change is the writer's. In 120.2, letter 10 is a clear l, so
 "operrtion" is the writer's slip, not ours. After the change, 119 has 19 words verbatim, 6 with a marked change and 3
 holes; scripts/check_marks.py passes on all 16 runs. The state of 119 (not prose) is unchanged.
+
+Integration check (14 Nov 2026): an own Porta decoder written from key.tsv gives 372 of 372 letters of
+decryption_119.txt and decryption_120.txt; the three places were looked at on the arcinsys image 119 (plain GET, 3500 x
+2607) and show the pointed v, not the shouldered r (runs 119.1, 119.8 and 119.12, 41 letters, all as now transcribed).
+The corrections move the held-out figures, which the contribution had left as they were: scripts/heldout.py now gives
+333/348 = 0.957 (working key) and 305/346 = 0.882 (frozen key as frozen), controls unchanged (heldout_result.txt updated).
 
 ## Remaining gaps
 

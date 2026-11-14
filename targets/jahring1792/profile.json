@@ -218,6 +218,15 @@
    ],
    "what": "Independent check (14 Nov 2026, Brice Dudout with Claude): a Porta decoder written from the statements of key.tsv alone reproduces decryption_119.txt and decryption_120.txt, 372 of 372 letters. At each marked change in the 119 runs the cipher letter that would give the wanted plaintext was computed and the place read on the arcinsys image 119: at 119.1 letter 10, 119.8 letter 9 and 119.12 letter 9 the image has v, not r, which gives 'cassengeschafte', 'gestimt' and 'miscredit' with no change. 119.2 letter 11 (v or w) and 119.6 letter 5 (s or f) stay open; 119.10 letter 8 is a clear q and 120.2 letter 10 a clear l (writer's slips). 119 now 19 words verbatim, 6 changed, 3 holes; check_marks.py passes.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration check of PR #559 (14 Nov 2026): own Porta decoder from key.tsv reproduces decryption_119.txt and decryption_120.txt, 372 of 372 letters; arcinsys image 119 fetched (plain GET) and runs 119.1, 119.8 and 119.12 (41 letters) compared: all as now transcribed, the three corrected places a pointed v. scripts/heldout.py re-run on the corrected runs: working key Porta 333/348 = 0.957 (was 330/348 = 0.948), frozen key as frozen 305/346 = 0.882 (was 303/346 = 0.876), Vigenere and Beaufort controls unchanged (0/348, 3/348; 1/346, 4/346); heldout_result.txt updated.",
+   "result": "worked"
   }
  ],
  "outcome": {
