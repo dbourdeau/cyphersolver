@@ -82,4 +82,4 @@ to me very reasonable that the Council be published and freely received, and on 
 persisted in their first intention to proceed to some […] [f. 192v] […] general congregation of the Estates of the whole
 kingdom. So I shall go on with the same offices, trying by skilful means to gain more than […] on this point, and […]
 can be carried, I shall temporise until I can have light from Your Most Illustrious Lordship on [what] I am to do to
-satisfy fully […] the will and desire of His Holiness. […]
+satisfy fully […] the will and desire of His Holiness. [… 5]

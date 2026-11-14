@@ -10,7 +10,8 @@ the four reservations; the legate's four arguments; the King's answer on the Gal
 the guardasigilli in three days); used to recognise sense only, never as a source of words.
 Spelling as the figures give it; punctuation, capitals and word division added; codes expanded (113 S. M.tà / il Re,
 111 N. S., 135 uescouo/i, 141 clero, 151 Francia, 161 quanto, 165/166 quello/questo, 167 V. S. Ill.ma, 213 ambasciatore,
-226 catolico/a, 221 lettere). Marks: [?word] partly carried, […] unread.
+226 catolico/a, 221 lettere). Marks: [?word] partly carried, […] one unread word, [… n] n unread words (README, "Holes are counted by words";
+the sizes are estimates, listed under "Hole sizes" below).
 
 ## Reading
 
@@ -91,7 +92,7 @@ parendomi ragioneuole molto che il concilio sia publicato et liberam[ente] riceu
 quando continouasero nel primo proposito procedere a qualche […] [f. 192v] […] generale congregatione de li stati di tuto
 il regno. Però andarò continouando nei medesimi ofici, procurando con modi destr[i] di guadagnare più che […] in questo
 punto, et […] si potrà spontare, m'andrò tratenendo sino a tanto che posi hauere lume da V. S. Ill.ma di quello [che]
-dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S. […]
+dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S. [… 5]
 
 ## Notes on the figures
 
@@ -127,4 +128,38 @@ dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S
   (m i n a … : perhaps a word for a forcible step); left open.
 - 192v l. 4–5: "4? 1 3? 1 0 3? 3 7 1 9 1" and "4 1 3 5 3 7 1 8" unread (transcriber's queries).
 - 192v l. 8: "a 1 5? ? ? ? ? 5 0 2 1 2": illegible to the transcriber.
-- Closing (192v l. 9): "8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4" (221 = lettere) not read.
+- Closing (192v l. 9), re-read on the DECODE R33 image of f. 192v (IMG_R33_I187_P8) on 15 Nov 2026: after 111 (N. S.)
+  the line carries 25 figures, "8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4", the dots over the second 2 of 221 and the
+  first 6 of 166 as DECODE has them. The image agrees with DECODE's figures except the two after 221 ("0 5"): two
+  slanted strokes blurred by spread ink, which could also be 1 1. Neither gives a word ("0 5 7 2 0 0": l i a r, n e
+  acciochè r; "1 1 7 2 0 0": r i a r). The twelve figures before 221 give no Italian under Meister no. 40 in any
+  segmentation (the best scored is "acciochè a qua come et e i"), and no one-digit change gives a word that could be
+  seen on the image. Not read. Sized [… 5], the least number of words the figures show: at least one word in the twelve
+  figures before 221, 221 lettere, at least one word in the six figures after it, 166 questo, and the final 4 (s; 8 is
+  the only null of Meister no. 40) at least one more. An estimate; lettere and questo are counted unread, since the
+  words around them are not read.
+
+## Hole sizes (README, "Holes are counted by words", 15 Nov 2026)
+
+Every […] of the reading, with the figures it covers (DECODE D1697, checked on the images where noted above) and the
+least number of words they show. Each is an estimate: a run of figures with no word parse counts one word.
+
+| Place | Figures under the mark | Words |
+|---|---|---|
+| 189r l. 1 (opening, before N. S.) | 9 7 5 2 4 7 0 | 1 |
+| 189r l. 7 (riceuto […] liberam.) | 1 7 1 0 1 5 1 | 1 |
+| 189r l. 8 (christiani, […] parue) | 2 2 6 (226 catolici undotted, or a stray) | 1 |
+| 189r l. 12 (et […] et) | three figures eaten through by the ink (DECODE "? ? ?") | 1 |
+| 189v l. 16 (libertà […] dela) | 2 0 5 2 | 1 |
+| 190r l. 12 (più […] che io potei) | "6? 9? ? 1 ? ? ? 2 1 5 2 5", holes in the paper | 1 |
+| 190v l. 21 (ma che […] considerasi) | "? ? ? 9" | 1 |
+| 192r l. 24 (a qualche […]) | 2 0 1 7 0 1 ("min…") | 1 |
+| 192v l. 1 ([…] generale) | 2 1 2 5 1 1? 2 1 7 7 0 3 0 1 2 1 2 | 1 |
+| 192v ll. 4-5 (più che […] in questo) | 4? 1 3? 1 0 3? 3 7 1 9 1 | 1 |
+| 192v l. 5 (et […] si potrà) | 4 1 3 5 3 7 1 8 | 1 |
+| 192v l. 8 (a […] uolontà) | "1 5? ? ? ? ? 5 0 2 1 2", a blot over five figures (seen on the image 15 Nov) | 1 |
+| 192v l. 9 (closing) | 8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4 | 5 |
+
+Partly carried words ([?…]inouando, [?posedono] …) and supplied words ([questo], [et] …) count one hole a word, as
+v2_score.holes counts them. Total: 77 holes in 1,510 words, read share 0.94901 (v10_relabel.share), under the 0.95
+bar: read in part.

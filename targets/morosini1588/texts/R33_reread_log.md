@@ -131,3 +131,14 @@ Looked at, not counted: 190v l. 14 "conu[e]niua" (76 37 3 at the line end, at th
 out); 190r l. 14 "in[st]igati" (the figure that would be 15 is under show-through); 192v l. 4 "destr[i]", 191v l. 4
 "[?contra]", 189v l. 16 "[?posedono]" (blot, show-through, hole in the paper). Read share by words 78 -> 73 holes in
 1,506 words, 0.948 -> 0.952: read.
+
+## 15 Nov 2026: holes sized by words (Brice Dudout, with Claude Opus 5.5; review of PR #634)
+
+Daniel Bourdeau's review: the closing mark (192v l. 9) covers 25 figures with two dotted word codes (221 lettere,
+166 questo), so it is more than one word. 192v l. 9 re-read on the DECODE R33 image of f. 192v: the figures agree with
+DECODE's except the two after 221 ("0 5", blurred by spread ink, possibly 1 1); no segmentation under Meister no. 40
+gives Italian, and no one-digit change gives a word visible on the image. Not read; sized [… 5] (at least one word
+before 221, lettere, at least one word after it, questo, and the final 4, s, not a null). Every other […] of the
+reading checked against its figures and sized the same way: each covers one unparsed run, so each stays one word
+(table "Hole sizes" in R33_reading.md). Read share by words (v10_relabel.share, unrounded): 77 holes in 1,510 words,
+0.94901, under the 0.95 bar. **R33 stays read in part.** The five words closed on 14 Nov stand.
