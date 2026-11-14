@@ -31,6 +31,18 @@ All images are Library and Archives Canada (LAC) microfilm reel H-1649, on Canad
 | B.148 p. 103 | [1184](https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/1184) | signature, "Rec'd 26th Octr", docket |
 | B.146 p. 54 | [616](https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/616) | second clear copy, No. 10, received by express 26 Oct; settles "Pines Creek" |
 
+## Haldimand to Clinton, 16 March 1782 (intercepted)
+
+National Archives (US), RG 360, Papers of the Continental Congress, item 51 (Intercepted Letters), M247 roll 65; free catalog images, file `https://catalog.archives.gov/medialz/partners/dc-metro/rg-360/M247/pcc_405131_0001/<number>.jp2`. Hashes of the copies read are in `haldimand_1782-03-16/sources.json`; images not in the repository.
+
+| page | image | content |
+|---|---|---|
+| item 51 vol. 2 p. 227 | 408459 (volume naId 475671370) | cipher, headed "Duplicate", signature 6.11 11.1 |
+| item 51 vol. 2 p. 228 | 408460 | docket "Letter in Cypher from J. R."; unrelated faint notes |
+| item 51 vol. 1 p. 737 | 407687 (volume naId 475670722) | cipher, headed "dupl.", x and + marks beside some numbers |
+| item 51 vol. 1 p. 738 | 407691 | American translation, "(perhaps) A. F." |
+| B.148 p. 21 (BL Add MS 21808 fo. 17) | [1096](https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/1096) | Haldimand's letterbook copy, St Johns March 16th; endorsed "1782 Copy. Cypher to Sir H. Clinton" |
+
 ## Key
 
 - Haldimand's key sheet of late 1781, B.147 pp. 402-405 (BL Add MS 21807 fo. 323 ff.), describing the Army List line-letter cipher with worked examples.

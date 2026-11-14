@@ -91,5 +91,34 @@ fixed = {r['unit']: r['now'].split(' (')[0] for r in read(F / 'posttest/correcti
 check(spell(fixed['129']) == 'escaped', 'post-test transcription correction: unit 129 spells escaped')
 cl = {r['order']: r for r in read(F / 'clinton_1782-02-22/alignment.tsv')}
 check(cl['159']['tokens'] == '43-19' and cl['159']['clear'] == 'thousand', 'Clinton 43-19 aligned as thousand (corrected)')
+# 5. Haldimand to Clinton, 16 March 1782 (PCC item 51): the unchanged key against the crib cells and the controls
+import random
+H = F / 'haldimand_1782-03-16'
+sys.path.insert(0, str(H / 'test'))
+from parse import parse
+check(sha(H / 'test/key_work.json') == 'eeb66761cd53edbc02791d31c33cb6f584758853e4679eb1e602d2e12a4e19fd', 'Sorel crib cells = hash in TEST_PLAN')
+check(sha(H / 'test/transcription_reading.txt') == '63b4021d1d0c9bd0687a7460f043e93a0549a76fb9986ecd4d03fcd95dcb0c8c', 'Sorel transcription = hash in TEST_PLAN')
+crib = {tuple(map(int, k.split('.'))): v for k, v in json.loads((H / 'test/key_work.json').read_text()).items()}
+rows = {n: list(s) for n, s in key.items()}
+def agree(L, tf=lambda c: c):
+    def d(c):
+        l, p = tf(c); r = L.get(l); return r[p - 1] if r and 1 <= p <= len(r) else '?'
+    return sum(d(c) == v for c, v in crib.items()) / len(crib)
+check(agree(rows) == 1.0, f'Sorel: the key gives all {len(crib)} crib cells')
+ctl = [agree(rows, lambda c: (c[0] % 29 + 1, c[1])), agree(rows, lambda c: (c[0], c[1] + 1)), agree(rows, lambda c: (30 - c[0], c[1]))]
+shuf = [agree({k: random.Random(s).sample(v, len(v)) for k, v in rows.items()}) for s in range(200)]
+check(max(ctl + shuf) < 0.5, f'Sorel controls: line+1 {ctl[0]:.2f}, place+1 {ctl[1]:.2f}, reversed {ctl[2]:.2f}, shuffles max {max(shuf):.2f}')
+def dec(c):
+    if c == '@': return 'q'
+    if not isinstance(c, tuple): return '?'
+    r = rows.get(c[0]); return r[c[1] - 1] if r and 1 <= c[1] <= len(r) else '?'
+al = read(H / 'alignment.tsv')
+a = [''.join(dec(c) for c in w[1]) for w in parse(H / 'test/transcription_reading.txt')]
+b = [''.join(dec(c) for c in w[1]) for w in parse(H / 'transcription_pcc51v1p737.txt')]
+check(a == [r['p227_decode'] for r in al] and b == [r['p737_decode'] for r in al], 'Sorel alignment.tsv regenerates from both transcriptions')
+lb = lambda r: norm(r['letterbook_B148_p21'].split(']')[-1])
+same = sum((x == lb(r)) or (y == lb(r)) for x, y, r in zip(a, b, al))
+check(same == 58, f'Sorel: {same} of 66 words equal the letterbook copy in at least one cipher copy (the rest: will, Augt, intreat, Govr, Robinson, St Johns, 16th, paraph)')
+
 print('result:', 'pass' if ok else 'FAIL')
 sys.exit(0 if ok else 1)
