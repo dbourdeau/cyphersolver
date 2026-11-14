@@ -139,7 +139,7 @@
   "conditions": {
     "prior_solution": {
       "exists": "in archive",
-      "where": "Clear texts kept with the ciphers at Quebec: Clinton's own clear quadruplicate (B.148 pp. 8-9), and the Carleton letters in Haldimand's register B.146 pp. 50, 54 and B.148 p. 102. Brymner's calendars (Report on Canadian Archives 1885 and 1887) print English summaries only. No printed full text or modern reading found; the HMC Royal Institution calendar and CO 5/107 not checked.",
+      "where": "Clear texts kept with the ciphers at Quebec: Clinton's own clear quadruplicate (B.148 pp. 8-9), and the Carleton letters in Haldimand's register B.146 pp. 50, 54 and B.148 p. 102. Clinton's letter of 22 Feb is printed in full (clear text) in Michigan Pioneer and Historical Collections vol. 20 (1892) pp. 2-4, found 13 Nov 2026 after the work. The Carleton letters: English summaries in Brymner's calendars (Report on Canadian Archives 1885, 1887) and headings in the HMC Royal Institution calendar vol. III (1907); not found in Michigan Pioneer and Historical Collections vols. 9-11, 19-20. No modern reading found.",
       "found": "before attempt",
       "used": true
     },
@@ -149,7 +149,7 @@
       "known plaintext"
     ],
     "attack": "known plaintext",
-    "human_role": "Andrew Beling set the research direction and the posting restraint; AI agents located the sources, transcribed, aligned, froze and ran the held-out test, and packaged the folder. A second AI agent (the coordinator) checked the freeze hashes before the clear copy was opened. No human reading verification recorded.",
+    "human_role": "Andrew Beling set the research direction and the posting restraint; AI agents located the sources, transcribed, aligned, froze and ran the held-out test, and packaged the folder. Our own AI coordinator checked the freeze hashes before the clear copy was opened; the order of events rests on our agents' own file times. A second AI agent of ours later rechecked the work without being shown our conclusions. No human reading verification recorded.",
     "tools": [
       "Canadiana IIIF fetches and crops",
       "Army List decoder (preclear/predict.py)",
@@ -199,7 +199,7 @@
     {
       "date": "2026-11-12",
       "kind": "prediction",
-      "what": "Freeze at 23:44 UTC: the Clinton code table, the key and a full transcription of the 25 Sep cipher with its mechanical predictions; hashes checked by a second agent before the clear copy was opened.",
+      "what": "Freeze at 23:44 UTC: the Clinton code table, the key and a full transcription of the 25 Sep cipher with its mechanical predictions; hashes checked by our own AI coordinator before the clear copy was opened (our file times only; an 800-pixel copy of B.146 p.54 and Brymner's 1887 calendar OCR were already on disk from earlier work, not in the freezing agent's declared inputs).",
       "result": "worked"
     },
     {
@@ -208,8 +208,8 @@
       "technique": [
         "statistical test"
       ],
-      "what": "Held-out test against the 25 Sep clear copies: 56 of 58 unqualified word predictions agree (failures 43-19 hundred/thousand, 9-8 has/have); qualified 21 of 25 in set, 3 fail; spelled groups 36 of 43 exact, 6 differ; 56 uncovered codes not counted.",
-      "result": "worked"
+      "what": "Held-out test against the 25 Sep clear copies, as scored on 12 Nov: 56 of 58 unqualified word predictions agree (failures 43-19, 9-8). That scorer filled in the clear word from the prediction where it had no hand alignment; the 13 Nov re-score below supersedes it.",
+      "result": "partial"
     },
     {
       "date": "2026-11-12",
@@ -226,27 +226,95 @@
     {
       "date": "2026-11-13",
       "kind": "verification",
-      "what": "Strict measure (measure_strict.py): 511 of 559 cipher units give the clear-copy word unchanged from the key and table (Clinton 0.884, 6 Sep 0.945, 25 Sep 0.940); spelled mismatches, the unread unit, glare and conflicting codes not counted.",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "A second AI agent of ours, not shown our conclusions, reran the predictions byte for byte, rechecked 26 groups on the images (24 confirmed, 2 wrong: Clinton 43-19 is thousand on p.8; 25 Sep unit 129 has seven pairs, escaped) and found that the 12 Nov scorer defaulted clear words to the predictions.",
       "result": "partial"
     },
-    {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1089 tokens, 407 types, en-modern order 4: reading -2.037 per letter; random keys -3.163 (z 16.0); key annealed onto shuffled ciphertext best -2.155 (mean -2.172, z 8.3); annealer on the real text -2.111. Verdict: pass.", "result": "worked"}
-   ],
-  "outcome": {"validation": {"date": "2026-11-13", "model": "en-modern", "file": "validation.tsv", "tokens": 1089, "types": 407, "tokens_per_type": 2.68, "score": -2.037, "nulls": {"random keys": {"n": 200, "mean": -3.163, "sd": 0.07, "max": -2.985, "z": 16.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.172, "sd": 0.016, "max": -2.155, "z": 8.3, "p": 0.1429}}, "power": -2.111, "verdict": "pass", "notes": "claimed per-occurrence score -2.034; polyphony 0.017; 89 unread tokens left out; annealer on the real text from random keys reached -2.111"}, 
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "Every unit of the 25 Sep letter hand-aligned with B.148 p.102 independently of the predictions (posttest/clear_alignment_25sep.tsv) and re-scored: 55 of 58 unqualified word predictions agree; failures 22-19 thence (clear there, both copies), 43-19 hundred (thousand), 9-8 has (have). Qualified 21 of 25, spelled 36 of 43 as frozen. Shuffled-table control, 200 shuffles: mean 0.44, max 15, none reaches 55.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "literature search",
+      "what": "Michigan Pioneer and Historical Collections vols. 9-11 and 19-20 (Internet Archive OCR): Clinton 22 Feb 1782 printed in full in vol. 20 pp. 2-4; Carleton 6 and 25 Sep not found. HMC Report on American Manuscripts in the Royal Institution vol. III (1907): both Carleton letters calendared as headings with locations, no text.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "what": "Strict measure (measure_strict.py): 510 of 559 cipher units give the clear-copy word unchanged from the key and table (Clinton 0.881, 6 Sep 0.945, 25 Sep 0.940); spelled mismatches, the unread unit, glare and conflicting codes not counted. (recomputed after the 13 Nov corrections)",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "language-model scoring"
+      ],
+      "what": "Statistical validation (docs/_validate.py): 1088 tokens, 406 types, en-modern order 4: reading -2.031 per letter; random keys -3.151 (z 13.9); key annealed onto shuffled ciphertext best -2.148 (mean -2.174, z 8.6); annealer on the real text -2.08. Verdict: pass.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-11-13",
+      "model": "en-modern",
+      "file": "validation.tsv",
+      "tokens": 1088,
+      "types": 406,
+      "tokens_per_type": 2.68,
+      "score": -2.031,
+      "nulls": {
+        "random keys": {
+          "n": 200,
+          "mean": -3.151,
+          "sd": 0.081,
+          "max": -2.909,
+          "z": 13.9,
+          "p": 0.005
+        },
+        "shuffled refit": {
+          "n": 6,
+          "mean": -2.174,
+          "sd": 0.017,
+          "max": -2.148,
+          "z": 8.6,
+          "p": 0.1429
+        }
+      },
+      "power": -2.08,
+      "verdict": "pass",
+      "notes": "claimed per-occurrence score -2.03; polyphony 0.017; 89 unread tokens left out; annealer on the real text from random keys reached -2.08"
+    },
     "class": "read in part",
     "key": "partial",
     "method": "key recovered based on plaintext from external sources",
-    "method_basis": "The word-code table was rebuilt by aligning the ciphers with clear copies kept in the same archive, and the spelling key is Haldimand's Army List page; the table frozen from the February letter then predicted the September letter before its clear copy was opened.",
+    "method_basis": "The word-code table was rebuilt by aligning the ciphers with clear copies kept in the same archive, and the spelling key is Haldimand's Army List page; the table frozen from the February letter then predicted the September letter before its clear copy was opened (55 of 58).",
     "contribution": [
       "transcription",
       "key recovered",
       "key extended or corrected"
     ],
-    "verification": ["contemporary decipherment", "key confirms", "matched control", "statistical test"],
+    "verification": [
+      "contemporary decipherment",
+      "key confirms",
+      "matched control",
+      "statistical test"
+    ],
     "credits": [
       {
         "who": "ajbeling",
         "role": "new cipher with solution",
-        "note": "Andrew Beling, with AI agents: transcribed the three ciphers, identified the Army List spelling page, rebuilt the word-code table and ran the pre-registered prediction of 25 Sep 1782 (56 of 58).",
+        "note": "Andrew Beling, with AI agents: transcribed the three ciphers, identified the Army List spelling page, rebuilt the word-code table and ran the pre-registered prediction of 25 Sep 1782 (55 of 58).",
         "date": "2026-11-12"
       },
       {
@@ -271,22 +339,17 @@
     ],
     "gaps": [
       {
-        "item": "43-19 hundred (February) against thousand (25 Sep)",
-        "blocker": "needs-physical-access",
-        "detail": "Both LAC copies agree on the figures; the British Library originals are needed to tell a copying slip from a code conflict."
-      },
-      {
         "item": "Clinton p. 11B column 4 under the glare strip, and the prefix of reduce",
         "blocker": "illegible",
         "detail": "Photographic defect on the LAC film."
       },
       {
-        "item": "Spelled groups that differ from the clear copies (9 groups)",
+        "item": "Spelled groups that differ from the clear copies (8 groups)",
         "blocker": "needs-physical-access",
-        "detail": "intllligent, newyhrk, storis, hggreed, dit, incuosions, susnuehannah, escapedo, reuuire: digits or the special q mark in the originals."
+        "detail": "intllligent, newyhrk, storis, hggreed, dit, incuosions, susnuehannah, reuuire: digits or the special q mark in the originals. (escapedo was our transcription slip, corrected: escaped.)"
       },
       {
-        "item": "Codes with conflicting or provisional readings (9-8, 13-14, 2-5, 46-9, 9-19, 11-1, 5-22, 23-6, 49-9, 2-2)",
+        "item": "Codes with conflicting or provisional readings (9-8, 22-19, 13-14, 2-5, 46-9, 9-19, 11-1, 5-22, 23-6, 49-9, 2-2)",
         "blocker": "open-codes",
         "detail": "The printed word list is not identified; its headwords would settle inflection and digit slips."
       },
@@ -307,7 +370,7 @@
         "language": "en",
         "read_share": 0.955,
         "summary": "Chief Justice Smith's intelligence of an American plan to invade Canada, Lafayette gone to France to propose it; George Rogers Clark to move down the Ohio and up the Wabash against Detroit; Congress said to have agreed to give Canada to France.",
-        "note": "read_share is 1 - hole rate on research/reading_audit/v2_score.py. The strict share of cipher units that the key and table give unchanged is 0.884 (measure_strict.py).",
+        "note": "read_share is 1 - hole rate on research/reading_audit/v2_score.py. The strict share of cipher units that the key and table give unchanged is 0.881 (measure_strict.py). 43-19 corrected to thousand after the test (posttest/corrections.tsv).",
         "reading_review": {
           "grade": "B",
           "by": "Codex coordinator, one of the contributor's own AI agents (not a human review)",
@@ -337,12 +400,12 @@
         "transcription": "carleton_1782-09-25/transcription.txt",
         "decryption": "carleton_1782-09-25/postclear/comparison.tsv",
         "reading": "carleton_1782-09-25/reading.md",
-        "contemporary": "carleton_1782-09-25/postclear/CLEAR_COPY.md",
+        "contemporary": "posttest/CLEAR_COPY_25sep.md",
         "state": "read in part",
         "language": "en",
         "read_share": 0.963,
         "summary": "Two expeditions into the Indian country, Potter from Fort Muncy towards the Seneca country and Irwin from Fort Pitt towards Lake Erie; Paterson in Nova Scotia ordered to assist; Washington at Verplanck's Point; L'Aigle taken in the Delaware.",
-        "note": "read_share is 1 - hole rate on research/reading_audit/v2_score.py; the five codes whose frozen value disagrees with the clear copy are holes. Strict share 0.940.",
+        "note": "read_share is 1 - hole rate on research/reading_audit/v2_score.py; the five codes whose frozen value disagrees with the clear copy (22-19, 13-14, 5-22, 9-8, 11-1) are holes. Aligned with the 13 Nov hand alignment and the escaped correction. Strict share 0.940.",
         "reading_review": {
           "grade": "A",
           "by": "Codex coordinator, one of the contributor's own AI agents (not a human review)",
@@ -356,14 +419,14 @@
       "key/word_codes.tsv",
       "KEY.md"
     ],
-    "fraction_read": 0.914,
+    "fraction_read": 0.912,
     "fraction_read_method": "measured",
-    "fraction_read_source": "measure_strict.py over the three alignments: 511 of 559 cipher units (word codes, spelled groups, the unread unit) give the clear-copy word unchanged from the key and table; clear words in the cipher not counted.",
+    "fraction_read_source": "measure_strict.py over the three alignments: 510 of 559 cipher units (word codes, spelled groups, the unread unit) give the clear-copy word unchanged from the key and table; clear words in the cipher not counted. Uses the post-test hand alignment and corrections (posttest/).",
     "codes_open": {
       "open": 10,
       "total": 174,
       "tokens_open": "unknown"
     },
-    "notes": "Status in progress, folder only. The held-out test is the core result: 56 of 58 unqualified word predictions on a letter whose clear copy was opened only after the freeze. Prior readings exist in the archive (the clear copies), so this is not a first reading of the messages."
+    "notes": "Status in progress, folder only. The held-out test is the core result: 55 of 58 unqualified word predictions on a letter whose clear copy was opened only after the freeze, by our own agents' file times; a shuffled table averages 0.44. Prior readings exist in the archive (the clear copies) and Clinton's letter is printed in full (MPHC vol. 20, 1892), so this is not a first reading of the messages."
   }
 }

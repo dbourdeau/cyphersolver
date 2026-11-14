@@ -17,7 +17,7 @@ The following Intelligence has been received since the above by another channel 
 
 Large Stores of Provisions at the falls of Ohio.
 
-The Rebel General Clark a very enterprising man, a Virginian at Kain Tuck and is to have the Command of two State Regiments, besides other Troops, with about One Hundred French and Spaniards, with these the ensuing Spring he set off on an Expedition against Detroit and its dependencies, his rout is down the Ohio,
+The Rebel General Clark a very enterprising man, a Virginian at Kain Tuck and is to have the Command of two State Regiments, besides other Troops, with about One thousand French and Spaniards, with these the ensuing Spring he set off on an Expedition against Detroit and its dependencies, his rout is down the Ohio,
 
 ## Quadruplicate continued, p.9 / frame 1078
 

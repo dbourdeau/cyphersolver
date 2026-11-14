@@ -42,3 +42,10 @@ All images are Library and Archives Canada (LAC) microfilm reel H-1649, on Canad
 - Douglas Brymner, Report on Canadian Archives 1885, calendar of B.146: summary of Carleton, 6 Sep 1782.
 
 Both read in the archive.org OCR texts; summaries only, no full text and no cipher figures.
+
+## Other printed texts (checked 13 Nov 2026 in Internet Archive OCR; copies in the workspace, not in the repository)
+
+- Michigan Pioneer and Historical Collections, vol. 20 (1892), pp. 2-4: Clinton to Haldimand, 22 Feb 1782, the full clear text from B.148 p. 8 with its endorsement (Internet Archive `michiganhistoric20michuoft`).
+- The same series, vols. 9, 10, 11, 19 and 20 (`michiganhistoric09michuoft` ... `michiganhistoric20michuoft`): the Carleton letters of 6 and 25 Sep 1782 not found.
+- Historical Manuscripts Commission, Report on American Manuscripts in the Royal Institution of Great Britain, vol. III (1907), about p. 111 (6 Sep: Am. MSS vol. 47 no. 9, "Copy"; lists a cipher in Add MS 21705 fos. 73-74 and other copies) and p. 132 (25 Sep: vol. 47 nos. 13-14, "Copy & Extract"): headings and locations only, no text (Internet Archive `amerimanuscript34greauoft`).
+- The margin of B.148 p. 102 lists further copies of the 25 Sep letter: Q series vol. 20 p. 384, CO 5/107 p. 289 and Royal Institution Am. MSS vol. 47 nos. 13-14. Not checked: the CO 5 and Q copies.

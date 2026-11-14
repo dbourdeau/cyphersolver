@@ -55,20 +55,26 @@ for r in read(PRE / 'transcript.tsv'):
 check(again == [p['mechanical_prediction'] for p in pred], f'all {len(pred)} frozen predictions regenerate from key + table')
 check(len(wc) == 100, f'frozen table has {len(wc)} word codes')
 
-# 3. the score
-comp = read(POST / 'comparison.tsv')
-check([c['mechanical_prediction'] for c in comp] == [p['mechanical_prediction'] for p in pred], 'comparison.tsv carries the frozen predictions unchanged')
+# 3. the score, against the independent hand alignment of the post-test layer (posttest/rescore.py writes it)
+import subprocess
+subprocess.run([sys.executable, str(F / 'posttest/rescore.py')], check=True, stdout=subprocess.DEVNULL)
+comp = read(F / 'posttest/comparison.tsv')
+check([c['prediction'] for c in comp] == [p['mechanical_prediction'] for p in pred], 'posttest/comparison.tsv carries the frozen predictions unchanged')
+old = read(POST / 'comparison.tsv')
+check([c['mechanical_prediction'] for c in old] == [p['mechanical_prediction'] for p in pred], 'the 12 Nov postclear/comparison.tsv also carries them (its clear column is superseded)')
 by = Counter((c['basis'], c['status']) for c in comp)
-check(by[('Clinton candidate lexical constraint', 'exact_ij_equivalent')] == 56 and
-      by[('Clinton candidate lexical constraint', 'literal_or_lexical_mismatch')] == 2, 'unqualified word predictions: 56 agree, 2 fail')
+check(by[('Clinton candidate lexical constraint', 'agrees')] == 55 and
+      by[('Clinton candidate lexical constraint', 'fails')] == 3, 'unqualified word predictions: 55 agree, 3 fail')
 check(by[('Clinton qualified', 'qualified_set_agrees')] == 21 and by[('Clinton qualified', 'qualified_mismatch')] == 3
       and by[('Clinton qualified', 'no_clear_counterpart')] == 1, 'qualified word predictions: 21 in set, 3 fail, 1 extra')
-check(by[('Army List literal', 'exact_ij_equivalent')] == 36 and by[('Army List literal', 'literal_or_lexical_mismatch')] == 6
-      and by[('Army List literal', 'no_clear_counterpart')] == 1, 'spelled groups: 36 exact, 6 mismatch, 1 extra')
+check(by[('Army List literal', 'agrees')] == 36 and by[('Army List literal', 'fails')] == 6
+      and by[('Army List literal', 'no_clear_counterpart')] == 1, 'spelled groups as frozen: 36 exact, 6 differ, 1 extra')
 check(by[('uncovered word code', 'uncovered_before_clear')] == 56, '56 word-code occurrences had no prediction')
-fails = [(c['order'], c['tokens'], c['mechanical_prediction'], c['clear_alignment']) for c in comp
-         if c['basis'] == 'Clinton candidate lexical constraint' and c['status'] != 'exact_ij_equivalent']
-print('     the two failures:', fails)
+fails = [(c['order'], c['tokens'], c['prediction'], c['clear_p102']) for c in comp
+         if c['basis'] == 'Clinton candidate lexical constraint' and c['status'] != 'agrees']
+print('     the three failures:', fails)
+sc = json.loads((F / 'posttest/SCORE.json').read_text())['shuffled_control']
+check(sc['reaching_real'] == 0, f"shuffled-table control: mean {sc['mean_agreements']}, max {sc['max']} of 58 over {sc['shuffles']} shuffles")
 
 # 4. spelled words in the two training letters
 norm = lambda s: ''.join(c for c in s.lower() if c.isalpha()).replace('j', 'i')
@@ -81,5 +87,9 @@ for l in (F / 'carleton_1782-09-06/alignment.tsv').read_text(encoding='utf-8').s
         _, t, c = l.split('\t'); got, want = spell(t), norm(c.split()[0])
         words += 1; wgood += got == want; letters += len(want); good += sum(x == y for x, y in zip(got, want))
 check((good, letters, wgood, words) == (95, 96, 14, 15), f'Carleton 6 Sep: {good} of {letters} letters, {wgood} of {words} spelled words agree')
+fixed = {r['unit']: r['now'].split(' (')[0] for r in read(F / 'posttest/corrections.tsv') if r['letter'] == 'carleton_1782-09-25' and ' ' in r['now'].split(' (')[0]}
+check(spell(fixed['129']) == 'escaped', 'post-test transcription correction: unit 129 spells escaped')
+cl = {r['order']: r for r in read(F / 'clinton_1782-02-22/alignment.tsv')}
+check(cl['159']['tokens'] == '43-19' and cl['159']['clear'] == 'thousand', 'Clinton 43-19 aligned as thousand (corrected)')
 print('result:', 'pass' if ok else 'FAIL')
 sys.exit(0 if ok else 1)

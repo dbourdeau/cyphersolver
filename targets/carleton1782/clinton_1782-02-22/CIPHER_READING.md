@@ -24,7 +24,7 @@ The Rebel General Clark a very enterprising man is at Kaintuck and is to have
 
 ## 11A.C2
 
-the Command of two State Regiments besides other Troops with about one Hundred French and Spaniards with these the ensuing Spring
+the Command of two State Regiments besides other Troops with about one thousand French and Spaniards with these the ensuing Spring
 
 ## 11A.C3
 
