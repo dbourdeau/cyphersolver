@@ -70,6 +70,7 @@ OVERRIDE = {
 
 # First match wins; tested against the folder name without its "sweep_<date>_" prefix.
 RULES = [
+    (r'^africa_', ASIA),
     (r'gallica|bellievre|archives_nationales|calames|france', FR),
     (r'pares|bne|hispana|bdcyl|bvpb|spain|torre_do_tombo|bnp|portugal', ES),
     (r'^it_|ital|asf|map_paging|medici|milan|venice|naples|turin|vat|b1\d\d_backfill', IT),
