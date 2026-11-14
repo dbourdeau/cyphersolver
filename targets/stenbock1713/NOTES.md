@@ -87,3 +87,13 @@ Riksarkivet IIIF, transcribe Lit. F and one glossed letter, and compare with Dud
    005/52; (b) find Malmström 1901 (LIBRIS; possibly on runeberg or archive.org) and read its source notes for cipher
    letters and Danish decipherments; (c) search Rigsarkivet Daisy for Erlund and for the 1714-17 Stenbock
    interceptions (Gehejmearkivet / Tyske Kancelli).
+
+## Brice Dudout, 15 Nov 2026: Lit. L verified, petition to Charles XII read in part
+
+See `dudout/README.md`. Erlund's key (Lit. F) transcribed and checked on Lit. L (62/63 clear signs agree with his period
+decipherment: verification, not a new reading). Stenbock's petition to Charles XII ([1 May] 1714, Erlund pp. 697-707), in a
+different one-part code that Erlund glossed only in part, rebuilt and read in part: 844 of 1,014 groups sure or probable
+outside the held-out page (83.2%), 974 of 1,192 overall (81.7%). Malmström (1901) quotes about 12% of it from the Danish
+copy; a complete Danish decipherment probably exists in Copenhagen, not seen. Write-up:
+https://bdudout.github.io/europe-chiffree/en/copenhague-1714.html
+
