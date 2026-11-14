@@ -61,7 +61,7 @@
     "common words",
     "titles"
    ],
-   "unread_groups": 2
+   "unread_groups": 1
   },
   "nulls": {
    "present": true,
@@ -71,7 +71,7 @@
   "word_division": "none",
   "doubled_letters": "written with consecutive figures of the letter's block (49 50 = tt, 28 29 = ll)",
   "sibling_key": "Tomokiyo's early Stuart Wentworth ciphers show the same regular type; none is this key and none was used",
-  "notes": "Vowel block sizes cannot be fixed from the text; 1-6 unassigned. 185 and 149 (persons) unidentified; 26 is a misfit in 'angry'."
+  "notes": "Vowel block sizes cannot be fixed from the text; 1-6 unassigned. 185 read as the Lord Deputy beside 186 (probable, 14 Nov 2026); 149 unidentified; 26 is a misfit in 'angry'."
  },
  "conditions": {
   "prior_solution": {
@@ -95,7 +95,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-15"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -137,7 +137,8 @@
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 57 tokens, 36 types, en-1640s order 4: reading -2.277 per letter; random keys -2.961 (z 3.8); key annealed onto shuffled ciphertext best -2.069 (mean -2.119, z -3.6); annealer on the real text -2.113. Verdict: underdetermined.", "result": "partial"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): letters as printed with the figures, ciphertext.txt; reading copied from NOTES to texts/letters_decryption.md; alphabet and nomenclator copied from NOTES to texts/key_alphabet.md and texts/key_nomenclator.md", "result": "worked"},
   {"date": "2026-10-23", "kind": "reading", "what": "Verification 3 (v3_below_b): flagged at 0.29 on letters_decryption.md (code numbers and [null] marks in the text). Wrote texts/letters_reading.md with the codes resolved and doubtful values marked: 0.75 explicit holes, 0.667 plain. Kept read, grade B.", "result": "worked", "technique": ["manual reconstruction", "statistical test"]},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "technique": ["crib testing", "contextual inference"], "what": "Verification by Brice Dudout (L'Europe chiffrée, with Claude Opus 5.5): the 59 figures checked again on the HMC page images (not blind); 185 read as the Lord Deputy (probable), from the clause built like '186 hath written unto 218' and from Knowler vol. I, where Wentworth's only writing on Crosby before 22 Jan 1635 is the 16 Dec 1634 dispatch to Coke, which also praises Ormond; 149 left open (Coke, Laud or the King); the dispatch's date corrected from 22 to 16 Dec 1634. Strict count 17 of 19 cipher units (12 sure, 5 probable, 2 unresolved), 89.5%; no measurement possible on 59 figures. texts/verification_20261114.md.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-1640s", "file": "validation.tsv", "tokens": 57, "types": 36, "tokens_per_type": 1.58, "score": -2.277, "nulls": {"random keys": {"n": 200, "mean": -2.961, "sd": 0.179, "max": -2.389, "z": 3.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.119, "sd": 0.044, "max": -2.069, "z": -3.6, "p": 1.0}}, "power": -2.113, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.277; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached -2.113"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -147,7 +148,7 @@
   "fraction_read": "unknown",
   "grades": "unknown",
   "verification": ["historical consistency"],
-  "notes": "Two person-codes (185, 149) in one clause unidentified; vowel block boundaries not fixable.",
+  "notes": "Person-code 149 unidentified and 31 unexplained; 185 read as the Lord Deputy (probable, 14 Nov 2026); vowel block boundaries not fixable.",
   "texts": [
    {
     "doc": "letters1634-35",
@@ -165,7 +166,7 @@
     "reading": "texts/letters_reading.md",
     "language": "en",
     "read_share": 0.938,
-    "note": "24 Oct 2026: 93.8% of the words of texts/letters_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "note": "24 Oct 2026: 93.8% of the words of texts/letters_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 14 Nov 2026: 185 read (probable); strict count 17 of 19 cipher units (89.5%), still under the read bar on cipher units."
    }
   ],
   "key_file": [

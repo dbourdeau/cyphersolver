@@ -1,4 +1,4 @@
-# Nomenclator copied verbatim from NOTES.md, section 4a (22 Oct 2026).
+# Nomenclator copied verbatim from NOTES.md, section 4a (22 Oct 2026); rows 185 and 149 updated 14 Nov 2026.
 Nomenclator, as it now stands:
 
 | code | value | evidence |
@@ -10,6 +10,6 @@ Nomenclator, as it now stands:
 | 218 | Mr Secretary Coke (or the King, through Coke) | addressee of the 22 Dec. dispatch |
 | 270 | Sir Piers Crosby | assigned in the text ("for whom 270 thus hereafter") |
 | 113 | with / against (connective) | "angry 113 the Lord Deputy" ↔ "in seeming displeasure against me" |
-| 185 | a person or body, not the Lord Deputy | "what 185 hath written unto 149 concerning Crosby"; see §5 |
-| 149 | a person or body, not the King or Lord Deputy | same clause |
+| 185 | the Lord Deputy (probable; a second figure beside 186) | read 14 Nov 2026: the clause is built like "186 hath written unto 218" two lines below, and the only dispatch of Wentworth on Crosby before 22 Jan 1635 in Knowler is the 16 Dec 1634 dispatch to Coke that also praises Ormonde (`verification_20261114.md`) |
+| 149 | open: the addressee of that dispatch (Coke, already 218) or of its duplicate (Laud, "your Grace"); not decidable | same clause |
 
