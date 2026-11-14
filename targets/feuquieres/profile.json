@@ -38,7 +38,7 @@
   "distinct_symbols": 367,
   "diacritics": {"used": false},
   "homophones": {"used": true, "max_per_vowel": 4, "max_per_consonant": 5},
-  "nomenclator": {"present": true, "entries": "unknown", "kinds": ["syllables", "common words", "titles", "names"], "unread_groups": 12},
+  "nomenclator": {"present": true, "entries": "unknown", "kinds": ["syllables", "common words", "titles", "names"], "unread_groups": 6},
   "nulls": {"present": true, "count": "unknown"},
   "key_order": "random",
   "word_division": "none",
@@ -52,10 +52,10 @@
   "attack": "known plaintext",
   "human_role": "Supplied the Gallica PDF of Burgaud and Bazeries, Le Masque de fer (1893).",
   "tools": ["solver.py (annealing, 7-gram French LM)", "solver_w.py (word segmentation)", "make_control.py, make_control_gc.py (matched controls)", "seed_test.py", "align.py (beam aligner)", "fetch_mdz_ocr.py", "show.py, ctx.py (hand propagation)"],
-  "models": ["claude-fable-5-1"],
-  "sessions": 2,
+  "models": ["claude-fable-5-1", "claude-opus-5-5"],
+  "sessions": 3,
   "first_date": "2026-09-15",
-  "last_date": "2026-09-16"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {"date": "2026-09-15", "kind": "transcription", "what": "Collated Tomokiyo's transcription with the 1819 page images: three corrections.", "result": "worked"},
@@ -72,7 +72,8 @@
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 586 tokens, 167 types, fr-grand-siecle order 4: reading -2.078 per letter; random keys -3.514 (z 11.0); key annealed onto shuffled ciphertext best -2.271 (mean -2.295, z 12.8); annealer on the real text -2.27. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions ciphertext.txt and herleville.txt; decryptions and the English translation copied from NOTES.md to texts/, beside the group alignment reading.txt; key key_petit_chiffre_1690.tsv", "result": "worked"},
   {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): reading bodies cut out of the decryption files into texts/feuquieres1691_reading.md and texts/herleville1690_reading.md. Feuquières letter 0.545 plain and explicit (6/11 sentences; twelve unread singleton groups): demoted to decoded, not read, gap no-key-material; fraction_read 0.975 -> 0.304 (d'Herleville 183 of 601 tokens), class read -> read in part. d'Herleville letter (control) 0.667 plain, 0.833 explicit, with its printed contemporary translation: keeps read.", "result": "failed"},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "technique": ["crib testing"], "what": "Verification of 14 Nov 2026 (Brice Dudout, Claude Opus 5.5): gaps re-read on the page images (no slip found); 241 vous? -> me (three contexts), 54 po and 257 so (disposois, probable), 194 null, 333 et, 353 par; 145 go kept (dragons), the 'disposois [à]' slot shown as supplied. Key frozen (SHA-256 28de3e96...) before counting. No held-out portion exists (both known letters built the key): not measurable. Feuquières reading read_share 0.875 -> 0.926 (176 words, 14 holes): still read in part. Groups 9, 122, 19, 132, 292, 271 open.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-grand-siecle", "file": "validation.tsv", "tokens": 586, "types": 167, "tokens_per_type": 3.51, "score": -2.078, "nulls": {"random keys": {"n": 200, "mean": -3.514, "sd": 0.131, "max": -3.211, "z": 11.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.295, "sd": 0.017, "max": -2.271, "z": 12.8, "p": 0.1429}}, "power": -2.27, "verdict": "pass", "notes": "claimed per-occurrence score -2.078; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.27"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -82,7 +83,7 @@
   "fraction_read": 0.304, "fraction_read_source": "Re-measured 23 Oct 2026 (verification 5): tokens of the letters that read / all, 183 (d'Herleville 1690) of 601 code groups; the Feuquières letter (418) is decoded, not read.",
   "grades": "unknown",
   "verification": ["independent clear copy", "historical consistency", "key confirms", "statistical test"],
-  "notes": "586 of 601 tokens over the two letters (NOTES); 12 groups unread, singletons or nulls.",
+  "notes": "586 of 601 tokens over the two letters (NOTES); 12 groups unread, singletons or nulls. 14 Nov 2026: six more groups valued (241 corrected to me); six still unread.",
   "credits": [
     {"who": "bazeries", "role": "key or decipherment used", "note": "Grand Chiffre de 1691 table (Le Masque de fer, 1893); gave the design"},
     {"who": "bazeries", "role": "prior solution", "note": "deciphered the petit chiffre despatch in 1893, never published", "date": "1893", "published": false},
@@ -100,8 +101,11 @@
     ],
     "translation": "texts/translation_en.md",
     "summary": "Feuquières acknowledges Catinat's letter of the 24th and sets out the plan for the surprise of Veillane (Avigliana): the enemy will not defend it seriously, he cannot see how to get the eighty horse to Sant'Ambrogio, and he will attack at two points and keep the dragoons from escaping. It matches Catinat's 'Mémoire pour l'entreprise de Veillane' of 19 Jan; printed in cipher in the 1819 Mémoires de Catinat, t. II pp. 283-284.",
-    "note": "v5 check 23 Oct 2026 (1691 French; the fr word list knows the period spelling, so the plain share is a bar too): the sweep scored texts/feuquieres1691_decryption.md with its header and commentary (plain 0.469, explicit 0.75). The reading alone, texts/feuquieres1691_reading.md: plain 0.545 (6/11), explicit 0.545 (6/11), hole rate 0.123. The five failing sentences carry three to six unread groups each (9, 19, 54, 122, 132, 257, 271, 292, 333, 353, singletons or doubletons of the petit chiffre with no value in either printed letter) plus supplied words ([par], [À]). The story is clear (Veillane, the 80 horse for Saint-Ambroise, the two roads, the dragoons), but under the bar on both measures: decoded, not read. Not workable here: no further text in this code is known; the original is at the SHD (A1 1079).",
-    "state": "decoded, not read"
+    "note": "v5 check 23 Oct 2026 (1691 French; the fr word list knows the period spelling, so the plain share is a bar too): the sweep scored texts/feuquieres1691_decryption.md with its header and commentary (plain 0.469, explicit 0.75). The reading alone, texts/feuquieres1691_reading.md: plain 0.545 (6/11), explicit 0.545 (6/11), hole rate 0.123. The five failing sentences carry three to six unread groups each (9, 19, 54, 122, 132, 257, 271, 292, 333, 353, singletons or doubletons of the petit chiffre with no value in either printed letter) plus supplied words ([par], [À]). The story is clear (Veillane, the 80 horse for Saint-Ambroise, the two roads, the dragoons), but under the bar on both measures: decoded, not read. Not workable here: no further text in this code is known; the original is at the SHD (A1 1079). 14 Nov 2026 verification: 241 = me, 54 po, 257 so, 194 null, 333 et, 353 par; read_share 0.926 (v10 rule; 0.875 before), under the 95% bar: read in part.",
+    "state": "read in part",
+    "language": "fr",
+    "reading": "texts/feuquieres1691_reading.md",
+    "read_share": 0.926
    },
    {
     "doc": "herleville1690",
@@ -129,7 +133,7 @@
   "key_file": "key_petit_chiffre_1690.tsv",
   "gaps": [
    {
-    "item": "Feuquières to Catinat, 25 Jan 1691: decoded, not read (0.545 plain and explicit, 6 of 11 sentences); twelve singleton or doubleton groups unread (9, 19, 54, 122, 132, 194, 257, 271, 292, 333, 353, closing nulls)",
+    "item": "Feuquières to Catinat, 25 Jan 1691: read in part (read_share 0.926 after the 14 Nov 2026 verification); groups 9, 19, 122, 132, 271, 292 unread, 257 probable",
     "blocker": "no-key-material",
     "detail": "the petit chiffre is known from two printed letters only (this one and d'Herleville 1690); the unread groups occur nowhere else; the original (SHD A1 1079) is not digitised"
    }
