@@ -83,20 +83,21 @@ THE CIPHER
     - Fridericia, Danmarks ydre politiske Historie 1629-1660, vol. 1 (1876): https://archive.org/details/danmarksydrepoli01frid
 
 WHAT IS KNOWN
-  Status: Bare: no interlinear or marginal decipherment at 700 px (13 Nov) or on the 750 px sheets (12 Nov). Decoded once by this project with Pentz's 1636 table unchanged: 25 of 68 word units read (36.8%), clearly German (Hamburg, Admiral, Norwegen, Proviant, Constables, Feuerwerker, Vestung) but below any read bar; figure 28 stands where o is expected, a homophone outside the 1636 table. Not read.
+  Status: Bare: no interlinear or marginal decipherment at 700 px (13 Nov) or on the 750 px sheets (12 Nov). Decoded once by this project with Pentz's 1636 table unchanged: 25 of 68 word units read (36.8%), clearly German (Hamburg, Admiral, Norwegen, Proviant, Constables, Feuerwerker, Vestung) but below any read bar; figure 28 stands where o is expected, a homophone outside the 1636 table. Not read. Issue #540 (Brice Dudout, 13 Nov 2026): the letter continues on image 3 (left page), a page of about 240 figures (239 by his count) ending with the clear date '14/24 Februar' (seen here on image 52788771, 14 Nov 2026), not yet transcribed in targets/pentz1636; his frozen key (Vienna 1636 table 1 plus 28 = o) failed one preregistered measure on that verso (N 0.244 against a control maximum of 0.204, bar 0.75; by his record), so he claims no reading. Images 321-323 and 402-425 (1644-45) of the same unit use the later glossed system now in targets/pentz1636 (PR #545), not the 1630 one.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 13 Nov 2026: DECODE 'Pentz' 0, Tomokiyo nothing, Fridericia vol. 1 full text opened, web)
   Check first: Transcribe image 2 and 3 in full; extend the 1636 table (catalogue 2543's cipher family) with the o-homophone and other gaps; check whether the Christian IV letter-books answer it.
   Class B: part of a key or a known cipher family of the same office is in print or on DECODE.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/pentz1636/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/pentz1636/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/pentz1636/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -136,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/pentz1636/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2565&amp;target=catalogue+2565
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -154,10 +155,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Bare: no interlinear or marginal decipherment at 700 px (13 Nov) or on the 750 px sheets (12 Nov). Decoded once by this project with Pentz's 1636 table unchanged: 25 of 68 word units read (36.8%), clearly German (Hamburg, Admiral, Norwegen, Proviant, Constables, Feuerwerker, Vestung) but below any read bar; figure 28 stands where o is expected, a homophone outside the 1636 table. Not read.</p>
+<p><b>Status and prior art.</b> Bare: no interlinear or marginal decipherment at 700 px (13 Nov) or on the 750 px sheets (12 Nov). Decoded once by this project with Pentz's 1636 table unchanged: 25 of 68 word units read (36.8%), clearly German (Hamburg, Admiral, Norwegen, Proviant, Constables, Feuerwerker, Vestung) but below any read bar; figure 28 stands where o is expected, a homophone outside the 1636 table. Not read. Issue #540 (Brice Dudout, 13 Nov 2026): the letter continues on image 3 (left page), a page of about 240 figures (239 by his count) ending with the clear date '14/24 Februar' (seen here on image 52788771, 14 Nov 2026), not yet transcribed in targets/pentz1636; his frozen key (Vienna 1636 table 1 plus 28 = o) failed one preregistered measure on that verso (N 0.244 against a control maximum of 0.204, bar 0.75; by his record), so he claims no reading. Images 321-323 and 402-425 (1644-45) of the same unit use the later glossed system now in targets/pentz1636 (PR #545), not the 1630 one.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 13 Nov 2026: DECODE 'Pentz' 0, Tomokiyo nothing, Fridericia vol. 1 full text opened, web).</p>
 <p><b>Check first.</b> Transcribe image 2 and 3 in full; extend the 1636 table (catalogue 2543's cipher family) with the o-homophone and other gaps; check whether the Christian IV letter-books answer it.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/pentz1636/NOTES.md" rel="noopener">targets/pentz1636/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/pentz1636" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
