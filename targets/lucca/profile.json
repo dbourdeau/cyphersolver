@@ -20,7 +20,7 @@
    },
    "length": {
     "tokens": 231,
-    "distinct": 24,
+    "distinct": 23,
     "unit": "code groups",
     "measured": true,
     "file": "ct.txt"
@@ -28,8 +28,8 @@
    "transcription": {
     "by": "published",
     "source": "Tomokiyo, cryptiana variable2.htm",
-    "image_quality": "no images",
-    "notes": "DECODE images need a login and were not seen; 17 = n and 19 = s might be misread 14 and another figure."
+    "image_quality": "good",
+    "notes": "Tomokiyo's transcription; checked on the DECODE images 22 Sept 2026 (ten 17 -> 14) and 14 Nov 2026 (group 79 is 21, not 32)."
    }
   }
  ],
@@ -38,13 +38,13 @@
    "homophonic",
    "polyphonic"
   ],
-  "summary": "24-figure Italian alphabet in dot-delimited 1-2 digit groups, a few homophones; no polyphony (17 and 19 were misreadings or encipherment slips: 17 = i, 19 = s).",
+  "summary": "23-figure Italian alphabet in dot-delimited 1-2 digit groups, a few homophones; no polyphony (17 and 19 were misreadings or encipherment slips: 17 = i, 19 = s).",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-2",
    "separation": "dots"
   },
-  "distinct_symbols": 24,
+  "distinct_symbols": 23,
   "diacritics": {
    "used": false
   },
@@ -156,7 +156,8 @@
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 231 tokens, 24 types, it-cinquecento order 4: reading -2.043 per letter; random keys -4.124 (z 8.1); key annealed onto shuffled ciphertext best -2.865 (mean -2.922, z 18.0); annealer on the real text -2.75. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): ct.txt (corrected transcription) and plaintext.txt (decryption) linked; corrected key table copied from docs/lucca.html to texts/key.md.", "result": "worked"},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Brice Dudout (Claude Opus 5.5): cipher of f. 18r re-read on the DECODE R2159 images (P1, full resolution): 230 of 231 groups as in ct.txt; group 79 (rivoltare) is 21, not 32, so figure 32 goes (23 figures; letter r unchanged). The nine 19s come in two shapes (plain 1, dotted 1) that do not follow the value: the three places wanting t have the plain form, as do four of the six s. Independent decoder (verify_dudout_20261114.py) reading only texts/key.md and ct.txt: 226 of 231 letters as in plaintext.txt; key unchanged. The brackets of plaintext.txt mark the cipher u of Transiuania and the cipher o of Bogodania (both on the page), while the supplied l, the supplied i of ogni and the three 19 = t emendations are unmarked or silent; checked on the image. A diplomatic text with {+x}/{-x} markers reproduces all 231 cipher letters: 52 of 56 words read from the key as written (0.929), 4 with forced emendations, 0 unresolved; v2_score 1.0. Class not changed. VERIFY_dudout_20261114.md.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 231, "types": 24, "tokens_per_type": 9.62, "score": -2.043, "nulls": {"random keys": {"n": 200, "mean": -4.124, "sd": 0.257, "max": -3.539, "z": 8.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.922, "sd": 0.049, "max": -2.865, "z": 18.0, "p": 0.1429}}, "power": -2.75, "verdict": "pass", "notes": "claimed per-occurrence score -1.993; polyphony 0.017; 0 unread tokens left out; annealer on the real text from random keys reached -2.75"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -170,7 +171,8 @@
   "credits": [
     {"who": "tomokiyo", "role": "key or decipherment used", "note": "partial decipherment 'Al principe di trenti...' used as crib", "source": "cryptiana variable2.htm"},
     {"who": "tomokiyo", "role": "transcription", "note": "231-group ciphertext transcription (variable2.htm), corrected here in ten places", "source": "cryptiana variable2.htm"},
-    {"who": "lasry", "role": "pointer", "note": "apparent polyphony is encipherment or transcription error, not polyphony", "date": "2026-09-21"}
+    {"who": "lasry", "role": "pointer", "note": "apparent polyphony is encipherment or transcription error, not polyphony", "date": "2026-09-21"},
+    {"who": "dudout", "role": "verification", "note": "cipher re-read on the DECODE images (group 79 = 21, figure 32 removed; the 19 shapes), independent decoder from texts/key.md (226/231 letters as in plaintext.txt), audit of the reading's brackets, diplomatic text with {+x}/{-x} markers and word recount; VERIFY_dudout_20261114.md", "date": "2026-11-14"}
   ],
   "texts": [
     {"doc": "R2159", "label": "R2159, 30 May 1644, f. 18r cipher paragraph", "transcription": "ct.txt", "decryption": "plaintext.txt", "summary": "Fra Giovanni di Lucca, writing from Brody, relays to the Emperor an offer from Grand Hetman Stanisław Koniecpolski: he will by every means stop the Turk from helping the Prince of Transylvania (György Rákóczi I, who had invaded Habsburg Hungary in February 1644), will if need be set the Prince of Moldavia against him with two thousand Cossacks, and asks that the Emperor make no peace until Rákóczi is humbled or defeated.", "translation": "plaintext_en.md", "language": "it", "read_share": 0.946, "state": "read in part", "note": "24 Oct 2026: 94.6% of the words of plaintext.txt read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."}
