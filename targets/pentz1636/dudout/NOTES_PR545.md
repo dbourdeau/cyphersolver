@@ -33,3 +33,22 @@ Timestamps are local file times and SHA-256 files only (no RFC 3161 stamp).
 - {Revellin} on image 322: second figure transcribed 39 twice, probably 35.
 - Other cipher letters in the same unit, 1644-45, not transcribed: images 402-405, 408, 411, 412, 420 (several pages each). The key should read them; not attempted here.
 - prior solution: not searched beyond pentz1636's checks (Fridericia, Bricka-Fridericia); the 1644-45 letters may be printed in summary in Danish war histories.
+
+## Addendum (prepared 13 Nov 2026, not pushed): the other 1645 cipher letters, key v3 applied unchanged
+
+Five more letters of Christian Pentz from the same unit 274999 were transcribed and decoded with key v3 **as frozen** (SHA-256 f5d41697…, no value changed, no new test: key v3 was measured on PREREG-2, N 0.760). Files: `transcriptions/suite/` (pass A per page, `DIFF-AB.tsv`, arbitrated `TRANSCRIPTION-SUITE.json`), `scripts/decode_suite.py`, `decryptions/`, `readings/`, `translations/`.
+
+| letter | images | cipher words | sure + probable | state |
+|---|---|---|---|---|
+| to the Chancellor, Glückstadt 31 Mar 1645 | 402-403 | 72 | 61 + 5 = 91.7% | read in part |
+| to the Chancellor, Glückstadt 8 Apr 1645 | 404-405 | 52 | 42 + 3 = 86.5% | read in part |
+| to the Chancellor, Glückstadt 20 Apr 1645 | 408-409 | 16 | 16 + 0 = 100% | read |
+| to Christian IV, Glückstadt 20 Apr 1645 | 411-412 | 108 | 95 + 6 = 93.5% | read in part |
+| to the Chancellor, 1645 (pencil 4/5, after 24 Apr) | 420 | 36 | 28 + 3 = 86.1% (second reader, 14 Nov) | read in part |
+
+Per document, never pooled. Context: Torstensson's war, spring 1645; Glückstadt damaged by the March assault (the "Reithofel/Reithoffel" work, the new castle, the rampart, the old town gate); Pentz asks for money and orders for repairs, mentions the Spanish loan and a paymaster, and in late April Rendsburg "in the greatest danger".
+
+- Transcription: two passes by the same model reader (B on re-made, differently processed crops, without reopening A); 14 differences, arbitrated on the image (`DIFF-AB.tsv`). Weaker than the held-out protocol: not frozen before decoding (the key was already measured; this is an application).
+- New values: none counted as sure. Probable from context only: 252 = "im", 434 = "dass". Open codes: 1009, 306 (×2), 470, 311, 1000 (×2, images 404 and 411), 269, 305, 81, 393, 1011, 753, 1400, 101; 560 now twice (images 411 and 425), still open. No PREREG-3 was run (nothing to validate beyond these two probable values).
+- Later word glosses (another hand) stand over many cipher words on images 402-420; they skip the codes. Only one was used: "Mayen" on image 404 for a word with one misread figure. They are not letter-by-letter and were not used for the key.
+- Prior printing: not searched beyond pentz1636's checks (Bricka and Fridericia print the King's letters, not Pentz's). Kong Christian IV's egenhændige Breve VI (1644-48) not checked for these dates.
