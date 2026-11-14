@@ -48,11 +48,26 @@ service and offering him refuge in Spain, and a second letter goes to Mostafa, a
 been at La Goleta and now sailed with Uluç Ali in the Turkish fleet. Esquivia carries both letters; Don Juan is to
 decide how to use them. The letter is dated a week before La Goleta fell (13 Sept 1574).
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) recounted the read bar on `clear_version.md`.
+`research/reading_audit/v10_relabel.py` gives 433 words and 37 holes, 0.921, under the bar; but the 37 holes are the
+abbreviation expansions written in brackets (r[elaci]on, q[ue], v[uest]ra ...), not unread words. Counted on the
+Spanish body with the expansions as read words: 406 words and one hole, *[?]oran*, the interpreter's name, whose first
+letter is not read on the clear sheet (the cipher spells it Oram): **0.998**. Re-run here (the script takes the checkout
+root as its argument): the same figures. `read_share` is now 0.998 (was 1.0); the class stays read. Running
+`v10_relabel.py --apply` on this target as the file stands would wrongly move it to read in part.
+
+The scans: the rendition address in Source now answers 410 Gone (checked here too, 14 Nov 2026) and, by his report, the
+deepzoom paths of `scans.json` answer 404. The lines not compared with the key (below) therefore cannot be checked from
+this route at present.
+
 ## Remaining gaps
 
 - code groups 161 (*turco*?) and g 90 (*Porque*?) - blocker: open-codes; one context each, read from the clear version
 - Verification, not reading: about 16 cipher lines on scan 1 and the cipher end on scan 2 left were not compared sign
-  by sign with the key; the clear version covers them and every compared line agreed.
+  by sign with the key; the clear version covers them and every compared line agreed. The image route used in October
+  no longer answers (410 Gone, 14 Nov 2026), so this needs the scans again.
 
 ## Escalation
 
