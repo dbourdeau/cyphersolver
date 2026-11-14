@@ -12,6 +12,11 @@ Sections 1 to 6 are the record of the first contribution (27 Oct 2026), which us
 [`../jqa`](../jqa/NOTES.md) and read frame 0039 at 0.678; the reading of frame 0039 was replaced on 31 Oct 2026
 (PR #200, 0.965 of the words).
 
+Since 14 Nov 2026 this folder also holds three letters of Governor William C. C. Claiborne to James Madison of 1805-06
+(NARA T260 rolls 7-8), written in a copy of the same code with the same reversed blocks, in `claiborne/` (Brice Dudout,
+PR #564 and PR #581; folded in under one key, one entry). Their texts are Jacob Wagner's decipherments of the time; that
+part is still in progress and is not counted in the figures above. See "Claiborne's letters of 1805-06" at the end.
+
 Catalogue 650. Contributed by WAINUT (https://github.com/WAINUTAI), a Dutch AI company. The work was done with AI
 language-model agents. The transcription of frame 0039 was made from the NARA image; a second agent re-read a quarter
 of the groups blind against the image and re-tested the block order with its own code.
@@ -387,6 +392,10 @@ in the table (a slot inference); it fits here (democratic).
   HSP's catalogue lists a copybook of letters, 1813-1816, to Monroe and with Erving, and Woolfley cites the collection
   for nearly every dispatch. It may hold clear copies, which would test the readings of Nos. 18, 19 and 28 line by
   line. Not seen, and whether the letters are in clear is unknown.
+- Claiborne's letter of 24 Oct 1805 (`claiborne/`): troops written 1077 603 three times - blocker: open-codes; 1077 is
+  tra on both halves of the code sheet, which has no tro: a substitution by Claiborne's clerk, which no key entry settles.
+- Claiborne's letter of 24 Oct 1805: "arrival" (980 1?0 35) and "leather" (1?37), image 0224 - blocker: illegible; in
+  both the digit is a blot under Wagner's gloss (179 riv and 1087 lea would fit).
 
 ## Escalation
 
@@ -427,6 +436,19 @@ These are not gaps in the reading (12 Nov 2026):
 - Print: Woolfley's page references (Ebook Central) were not checked at integration. *American State Papers*,
   Foreign Relations, was not searched beyond two web searches. *Papers of James Monroe* vol. 7 was searched by Google
   Books snippets only (catalogue vetting, 3 Nov 2026). So no passage here is called unpublished.
+- Claiborne's letters (14 Nov 2026), none of them a gap in a reading here:
+  - The letters of 18 and 19 Nov 1806, which the Madison editors list under the same code, are in the Library of
+    Congress (Burr Conspiracy Collection; T260 roll 8 image 0408 is the slip that says so). loc.gov answers a script
+    with a Cloudflare challenge (HTTP 403, the contributor's attempt), so whether they are online is not known: to be
+    looked at in a browser. No image seen, nothing decoded. Their clear texts are in print by the contributor's record
+    (PJM-SS 13; Rowland, *Official Letter Books* 4:36-37).
+  - The editors' note "State Department code; key not found" and the printed texts of Wagner's decipherments were read
+    through search snippets only (Founders Online answers a script with an AWS WAF challenge); the volume and page
+    numbers are by the contributor's record. Wagner's words were seen between the lines on images 0045, 0409 and 0226.
+  - The code sheet image (M97 roll 13) was not re-read at 577 (Morris and Claiborne 1077); the value tra is Beling's
+    transcription, on which the two halves of the sheet agree.
+  - The rest of T260 rolls 7-8 was not paged for further coded despatches of Claiborne (the contributor scanned roll 9
+    in contact sheets: none).
 
 ## Files
 
@@ -444,6 +466,11 @@ These are not gaps in the reading (12 Nov 2026):
 - `beling/letters/1814-11-20_Cevallos/` and `beling/letters/1814-06-21_No17/` (added at integration, 12 Nov 2026):
   `transcription.txt`, `line_by_line_decode.txt`, `reading.txt`; the first also `translation.txt`
 - `word_share.py`, `word_share.txt`: the share of coded words read in each letter reading, by one rule
+- `claiborne/` (folded in on 14 Nov 2026 from `targets/claiborne1806`, PR #564 and PR #581, Brice Dudout): `transcription.txt`
+  (the groups of the three letters lined up with Wagner's words), `transcription_corrections.tsv` (three corrections seen on
+  the images), `we028_check.py` (the code sheet under the block reversal, unchanged, against Wagner's words), `key.tsv` (the
+  contributor's own partial key, 261 values, built from Wagner's words before the match), `decryption.txt`, `reading.md`,
+  `validation.txt`, `frozen/`, and the former folder's `NOTES_PR564.md` and `profile_PR564.json`
 
 ## Follow-up commit of the contributor (12 Nov 2026, c84e484c of PR 415)
 
@@ -469,3 +496,91 @@ His reviews: No. 18 and No. 19 as above in the profile notes; the clerk's deciph
 before the figures were transcribed (No. 25) or after the decode (No. 24), so the agreement with it supports the
 reading and is not an independent test. `beling/SHA256SUMS.txt` carries the new hashes (No. 19 reading changed by his
 note and the integration's mark, No. 28).
+
+## Claiborne's letters of 1805-06 (folded in 14 Nov 2026; PR #564 and PR #581, Brice Dudout)
+
+**Status of this part: in progress.** Three letters of William C. C. Claiborne, governor of the Orleans Territory, to
+James Madison: New Orleans, 24 Oct 1805 (NARA RG 59, Territorial Papers, Orleans, microfilm T260 roll 7 images
+0224-0226), 13 Jan 1806 (roll 8 image 0045) and 25 Nov 1806 (roll 8 image 0409). Each carries Jacob Wagner's decipherment
+between the lines, and the *Papers of James Madison* print the texts with the note "State Department code; key not
+found" (by the contributor's record and search snippets). Brice Dudout, with an AI agent, transcribed the groups, lined
+them up with Wagner's words (328 words) and rebuilt 261 values and the block structure from them (27 Oct 2026, PR #564).
+At the integration of PR #564 the project found that his values are the State Department code with its blocks of 100 in
+reverse order, the numbering of Morris's copy. The owner decided on 14 Nov 2026 that the folder `targets/claiborne1806`
+joins this target (one key, one entry), provided the same-map claim held when checked again. It does.
+
+### The same map (checked again, 14 Nov 2026)
+
+Own script, written for this check, on `claiborne/key.tsv` (the contributor's values, which were built from Wagner's
+words and not from any code sheet) against `beling/key/codebook_M97_13_transcription.csv`:
+
+- Every one of the 1,600 rows of the sheet's column `morris_number_after_reversal` is 100*(15-i) + r: the column is the
+  pure reversal and nothing else.
+- Under that reversal the sheet gives the contributor's value for 223 of his 261 numbers (I/J and U/V merged); of his 89
+  sure values 86 by this script (85 at the earlier check; the difference is how "I.J." is normalised). Read directly,
+  the sheet gives 0 of 261.
+- 2,000 random orders of the sixteen blocks give at most 102 agreements.
+- Block by block: for each of Claiborne's sixteen blocks the best-matching block of the sheet is the reversed one, with
+  3 to 21 agreements, and no other block of the sheet scores a single agreement for any of them.
+
+So Claiborne's copy (sent by Wagner on 8 July 1805, by the contributor's record of Rowland 3:165) and Morris's copy of
+1813-15 number the code the same way. The map is one; what differs is the clerk's usage (below).
+
+### PR #581 (second pass by the contributor), verified
+
+| claim | contributor | ours | how |
+|---|---|---|---|
+| image 0226 (end of 24 Oct 1805) | 57 live groups agree with `transcription.txt` except the second Lakes, 153 1482L -> 153 148L | image fetched from the NARA catalogue; 57 groups counted and compared: the same, with 148 followed by the final hook | NARA medialz, T260-07-0226 |
+| "the collecting" | the clerk wrote 362 285, struck 153 148L 1 12, then 76; "collecting" has no group | seen: four groups struck through after 285, "collecting" written by Wagner over them, 76 at the end of the line | image |
+| Philip ends 401 | yes | the group reads 401 with the clerk's open 4 (it can be taken for 1101 at low size) | image crop |
+| `we028_check.py` | 295 of 328 words mechanically (was 294) | 295/328: 228/250, 40/51, 27/27 | script re-run, before and after the move |
+| by hand | 319 of 328 (was 317) | the list recounted: 13 of the 22 mechanical misfits of 24 Oct 1805 and all 11 of 13 Jan 1806 fit by hand; 9 do not | from the script's misfit list |
+| 1077 = tra | both halves of the sheet read tra; the run is tol ... town, tra, trac, tract, traction; no tro entry | sheet rows 570-580 read as stated; the only "tro" on the sheet is trouble (19 = Morris 1519) | grep of the sheet transcription |
+| the LoC letters | not seen, no figure | nothing to verify; kept as a check not made | - |
+
+### Figures, per letter
+
+The texts are Wagner's, so the question is not whether the letters are read but how far the code sheet, used unchanged
+under the reversal, gives his words. Strict count = the mechanical rule of `claiborne/we028_check.py` (the values of a
+word's groups, joined, spell Wagner's word; overlaps of one or two letters and I/J, U/V allowed; nothing else):
+
+| letter | coded words | reproduced mechanically (strict) | with the hand classification |
+|---|---|---|---|
+| 24 Oct 1805 (T260 r7 0224-0226) | 250 | 228 = 91.2% | 241 = 96.4% |
+| 13 Jan 1806 (r8 0045) | 51 | 40 = 78.4% | 51 = 100% |
+| 25 Nov 1806 (r8 0409) | 27 | 27 = 100% | 27 = 100% |
+| all three | 328 | 295 = 89.9% | 319 = 97.3% |
+
+The hand classification is the contributor's and the earlier integration's, given once: it accepts the clerk's spellings
+(mo-bil-e, missisipi, sp-e-dy, ben), his near syllables (at-tact-k, cant-non), the numerals of 13 Jan 1806 written as
+digits (653 659 651 = 2 8 0), 364 as a full stop, and a different split of "General Wilkinson" and "General binding".
+The nine words that no rule gives: four slips of the encoder (611 order in "information", 235 bil for "the", "John"
+written 101 51, "collecting" with no group), troops three times (1077 tra), and "arrival" and "leather", unreadable on
+the image. The letter of 13 Jan 1806 is low on the strict count only because of its numerals and the two re-splits.
+
+The contributor's own key, sure values only, covers 326 of the 550 groups (59.3%); it is kept as `claiborne/key.tsv`
+and is not the key of this target.
+
+### What is and is not claimed
+
+- Outcome for these three letters: read from Wagner's decipherments of the time (existing), and matched with a key from
+  external sources (the code sheet under the reversal). The editors' "key not found" is explained. No new text.
+- Credit: Brice Dudout for the transcription, the alignment and the rebuild of 261 values and of the block structure
+  from Wagner's words, made before the match by the contributor's record (one commit); and for the second pass (image
+  0226, the 1077 argument, the search for the letters at the Library of Congress). The identification of his table with
+  the reversed code sheet was made at the integration of PR #564. The code sheet is Beling's transcription; the
+  reversal was found by WAINUT for Morris.
+- The held-out test in `claiborne/validation.txt` (22 of 23 new groups of 25 Nov 1806 at their alphabetical place)
+  tests the structure of the contributor's rebuild; the letter was held out by the contributor's record. It is superseded
+  by the external key.
+- Two corrections to the printed text that the code confirms: 489 before "measures" is "wise" (Wagner does not gloss it),
+  and "information" and "the" on 24 Oct 1805 carry encoder slips (611, 235).
+- The share of 96.7% and the count of thirteen texts in this file are for Morris's letters only. The Claiborne letters
+  have their own figures above and are not pooled with them.
+- `../graham1806` (Graham, 1806) is a different code: it does not fit the reversed table.
+
+### Open for this part
+
+Blocked from outside: 1077 for tro- (open-codes), "arrival" and "leather" (illegible); both are under Remaining gaps.
+Workable, listed under Checks not made: the two letters at the Library of Congress, the editors' notes and printed texts
+in a browser, the sheet image at 577, the rest of T260 rolls 7-8. Until those are done this part stays in progress.

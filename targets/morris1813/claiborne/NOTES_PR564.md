@@ -1,3 +1,8 @@
+> Folded into `targets/morris1813` on 14 Nov 2026 (one key, one entry: the same reversed-block copy of WE028). This file is the
+> NOTES.md of the former folder `targets/claiborne1806` as it stood after PR #564 and PR #581, kept as the record; its paths
+> are those of the old folder (`../morris1813/...` is now `../...`, `targets/claiborne1806/` is `targets/morris1813/claiborne/`).
+> The current state of the Claiborne letters is in `../NOTES.md`, section "Claiborne's letters of 1805-06".
+
 # claiborne1806: William C. C. Claiborne's State Department code, 1805-1806 ("key not found")
 
 Status: in progress (integration check of PR #564, 14 Nov 2026: the code is the State Department code WE028 with its blocks of 100 reversed, the same copy order as Anthony Morris's in `../morris1813`; see Integration check below. Gaps are workable: images of 0226 to finish, 1077, the LoC letters, the Founders notes behind a bot check, and the one-key-one-entry decision with morris1813. No page yet.)
