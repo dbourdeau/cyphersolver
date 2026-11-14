@@ -156,6 +156,37 @@ marks, "head" for "had", the uncertain readings Venus/Agnes and Italy/truly (now
 the alternative readings in .339 (gave, will, as, way) and the .339 counts with and without the later additions.
 It also noted that the .185 control randomises the route only, with grid sizes and code values fixed.
 
+## Integration check (14 Nov 2026, PR #585)
+
+Verified from the files by the integrating reader (an AI reader, not a person).
+
+- **Reproduced.** `verify.py` passes; the four sha256 values in `freeze/` match the files. A second decoder written from
+  `key_v2.json` without the contributor's code gives the same grids for all five telegrams and the same held-out score
+  on .185: 60 of 66 cells. Our own control, 2,000 random six-column routes: median 1, maximum 41, none at or above 60.
+- **The held-out test** is judged on what the files show: no value of `key_v2.json` is needed from .185, and the six
+  misses are the ones listed above. That the key was frozen before scoring is by the contributor's record (file times
+  11 seconds apart, no outside stamp), and the agent had seen the opening words of the .185 sheet. The test covers the
+  route; of the 14 valued code words it touches one (whistle).
+- **Strict read share per telegram** (README read bar: supplied, inferred and unsettled words are holes), in grid cells:
+  .341 32 of 36 (0.889; two words under the patch supplied from .114, words 2 and 14 uncertain); .229 71 of 72 (0.986;
+  the word read as Coat is not legible); .344 54 of 54; .185 66 of 66 (the decipherment is on the sheet); .339 **33 of
+  42 (0.786)**: the seven unvalued words, sherry (Camp Piatt is inferred from the heading slot, no pair) and the
+  unsettled at/as. The contributor's count for .339 is 35 of 42 (0.833). Four of the five telegrams were deciphered in
+  1863; the only reading that is ours is .339, so the pooled 256 of 270 (0.948) is not a headline.
+- **Outcome method:** key recovered based on plaintext from external sources (the 1863 decipherments, separate items of
+  the same collection). Key state: partial.
+- **Not checked:** the transcriptions against the images. gilderlehrman.org answered 403 (bot check) on 14 Nov 2026 and
+  its free preview is too small to read; the readable images are in the licensed Adam Matthew edition. No person has
+  compared any word with an image. The Official Records and Plum page references were not re-opened.
+- **Duplicates.** No other target holds GLC02414 or this route; `eckert1862`, `civilwar1862`, `union1864`, `army1865`
+  and `ammen1864` use the War Department books (No. 1, 2, 9 ...), whose six-column routes differ. Lead 2051 in
+  `research/leads.json` is this folder.
+- **Why it stays in progress.** The gaps can still be worked: the rest of GLC02414 .100-.350 has not been opened (the
+  cipher forms of the decipherments .110, .116-.118, .184 and the autumn grids would value more code words and could
+  give a second message with the open words of .339), and Books No. 10 and No. 12 were not seen. Whether the
+  transcriptions may be published in full under the edition's terms is for the owner and Andrew Beling to settle
+  before a page is written.
+
 ## Readings
 
 Sentences in `reading/`, grids in `decryption/` (written by `verify.py`). Holes are marked [ ].

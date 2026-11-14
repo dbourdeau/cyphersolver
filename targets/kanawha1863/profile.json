@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "GLC02414.341",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Gilder Lehrman Collection GLC02414.341 (papers of Eliakim P. Scammon), The Gilder Lehrman Institute of American History, New York",
    "date": "2 July 1863",
    "year": 1863,
@@ -321,6 +321,15 @@
    ],
    "what": "Independent check by a second AI agent of the project: route derived from the .341 and .114 images before it opened the folder; same route and code-word values; 70 of 70 checkable cells on .229, 54 of 54 on .344, 60 of 66 on .185 reproduced. Its corrections applied: heading row, commencement words stated as an untested observation, sources of rye and amazon, single occurrences marked, 'head' for 'had', Venus/Agnes and Italy/truly uncertain and outside the count (14 code words valued), .339 alternative readings and counts with and without later additions.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check (PR #585) by an AI reader of the project, not a person: verify.py re-run (all checks pass, four freeze hashes match); a second decoder written from key_v2.json without the contributor's code reproduces the grids of all five telegrams and the held-out score on .185, 60 of 66 cells; 2,000 random six-column routes of ours: median 1, maximum 41, none at or above 60. The order of freeze and scoring is by the contributor's record (file times 11 seconds apart, no outside stamp). Read shares recounted strictly per telegram: .341 32/36, .229 71/72, .344 54/54, .185 66/66, .339 33/42. Images not compared: gilderlehrman.org answered 403 (bot check) and the readable images are in a licensed edition.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -338,12 +347,12 @@
    "matched control",
    "statistical test"
   ],
-  "fraction_read": 0.974,
+  "fraction_read": 0.948,
   "fraction_read_method": "measured",
-  "fraction_read_source": "verify.py grids, unit grid cells (cipher words less commencement words): 270 cells over five telegrams (.341 36, .229 72, .344 54, .185 66, .339 42); 7 holes, all in .339. In .339 alone 35 of 42 (0.833), one inferred and three later additions in other ink or hand (32 of 42 without them).",
+  "fraction_read_source": "Strict count of the integration check (14 Nov 2026), unit grid cells: 256 of 270 over five telegrams (.341 32/36, .229 71/72, .344 54/54, .185 66/66, .339 33/42). Four of the five were deciphered in 1863 and are read here against those decipherments; the only reading of ours is .339, 33 of 42 (0.786). The contributor's count is 263 of 270 (0.974), with .339 at 35 of 42.",
   "codes_open": {
-   "open": 7,
-   "tokens_open": 7
+   "open": 8,
+   "tokens_open": 8
   },
   "gaps": [
    {
@@ -401,10 +410,10 @@
     "reading": "reading/GLC02414.341.md",
     "contemporary": "contemporary/GLC02414.114.txt",
     "language": "en",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.889,
     "summary": "A soldier's wife from the head of Paint Creek reports that the 45th and 22nd Virginia were to leave Lewisburg.",
-    "note": "Two grid words under the repair patch supplied from .114. Words 2 (Venus/Agnes) and 14 (Italy/truly) are uncertain readings; the cells read 'yours' and 'Truly' in .114 either way.",
+    "note": "Two grid words under the repair patch supplied from .114. Words 2 (Venus/Agnes) and 14 (Italy/truly) are uncertain readings; the cells read 'yours' and 'Truly' in .114 either way. Strict count (integration check, 14 Nov 2026): 32 of 36 cells; the two words under the repair patch are supplied from .114 and words 2 and 14 are uncertain readings, so four cells count as holes.",
     "reading_review": {
      "grade": "B",
      "by": "the packaging AI agent (Claude Opus 5.5), one of the contributor's own agents, not a human review",
@@ -421,14 +430,15 @@
     "contemporary": "contemporary/GLC02414.137.txt",
     "language": "en",
     "state": "read",
-    "read_share": 1.0,
+    "read_share": 0.986,
     "summary": "Confederates fortifying at the ford of Piney, 45th Virginia at Pack's Ferry, 22nd moving to Raleigh; talk of an attack with six thousand to take Fayette, which White doubts.",
     "reading_review": {
      "grade": "B",
      "by": "the packaging AI agent (Claude Opus 5.5), one of the contributor's own agents, not a human review",
      "date": "2026-11-13",
      "note": "Read against the clear copy .137; all 72 cells agree once telegraph slips are allowed."
-    }
+    },
+    "note": "Strict count (integration check, 14 Nov 2026): 71 of 72 cells; the cipher word read as Coat (Count?/Coal?) is not legible and its cell is known only from the clear copy .137."
    },
    {
     "doc": "GLC02414.344",
@@ -475,9 +485,9 @@
     "reading": "reading/GLC02414.339.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.833,
+    "read_share": 0.786,
     "summary": "Toland gives Scammon 'our united opinion' and asks, if the movement is important, when it shall start, and whether it will interfere with a proposed operation; written a fortnight before his raid toward Wytheville.",
-    "note": "7 holes; Camp Piatt inferred from the heading slot; 3 of the 35 cells read are later additions (&, when, not): 32 of 42 (0.762) without them; 37 of 42 under a second reader's 'gave' and 'will'. Arrangement with the '&' chosen by sense; a second reader reached the same.",
+    "note": "7 holes; Camp Piatt inferred from the heading slot; 3 of the 35 cells read are later additions (&, when, not): 32 of 42 (0.762) without them; 37 of 42 under a second reader's 'gave' and 'will'. Arrangement with the '&' chosen by sense; a second reader reached the same. Strict count (integration check, 14 Nov 2026): 33 of 42 cells; holes are the seven unvalued words, sherry (Camp Piatt inferred from the heading slot, no pair) and the unsettled at/as. The contributor counts 35 of 42 (0.833).",
     "reading_review": {
      "grade": "B",
      "by": "the packaging AI agent (Claude Opus 5.5), one of the contributor's own agents, not a human review",
