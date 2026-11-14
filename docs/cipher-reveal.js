@@ -3,6 +3,10 @@
 // every occurrence of it, its homophones (other groups with the same value) and its row in the key.
 // Data: {title, caption, unit, key_note, tokens:[{g, p, cls, w}]}, cls one of '' unk unc code plain null; w:1 marks the first
 // group of a plaintext word. When any token carries w, the tiles of each word are kept together and words are spaced.
+// Above the tiles runs the reading line: the same passage as ordinary text, a word at a time as it deciphers, nulls
+// left out and the words spaced. It is what a reader reads; the tiles show how each letter was reached. A passage with
+// no w marks whose values are whole words (codes, avg. four letters or more) is spaced a group to a word; any other
+// passage without marks shows its letters unspaced (python _reveal_words.py --audit lists them).
 (()=>{
   const figs=document.querySelectorAll('.creveal[data-src]'); if(!figs.length) return;
   const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -24,22 +28,41 @@
       <div class="cr-ctl"><button type="button" class="cr-play">&#8635; Replay</button>
       <button type="button" class="cr-mode" aria-pressed="false">Cipher only</button></div></div>
       <div class="cr-bar"><i></i></div>
+      <p class="cr-read" translate="no" aria-label="The passage as it reads"></p>
       <div class="cr-tiles" translate="no"></div>
-      <p class="cr-info" aria-live="polite"><span>${ciph.length} ${unit} &middot; ${read} read &middot; ${key.size} distinct.</span> <span class="cr-hint">Hover or tab to a group to trace it through the text and the key.</span></p>
+      <p class="cr-info" aria-live="polite"><span>${ciph.length} ${unit} &middot; ${read} read &middot; ${key.size} distinct.</span> <span class="cr-hint">${toks.some(t=>t.cls==='plain'&&t.p.trim().length>1)?'Italic words were written in clear. ':''}Hover or tab to a group to trace it through the text and the key.</span></p>
       <details class="cr-key"><summary>The key for this passage <span>${key.size} ${unit}</span></summary><div class="cr-grid" translate="no"></div>${d.key_note?`<p class="cr-note">${esc(d.key_note)}</p>`:''}</details>
       ${d.caption?`<figcaption>${esc(d.caption)}</figcaption>`:''}`;
     const box=fig.querySelector('.cr-tiles'), grid=fig.querySelector('.cr-grid'), info=fig.querySelector('.cr-info'), bar=fig.querySelector('.cr-bar i');
-    const words=toks.some(t=>t.w); let wd=null, solo=true;   // solo: the open word takes no more groups
-    if(words) box.classList.add('words');
-    const put=(t,el)=>{ if(!words) return box.appendChild(el);
-      const alone=t.cls==='plain' || (t.p!=='' && !t.p.trim());   // clear text and word dividers stand alone; a null stays in its word
-      if(solo || alone || t.w){ wd=document.createElement('span'); wd.className='cr-w'; box.appendChild(wd); }
-      wd.appendChild(el); solo=alone; };
+    const vals=ciph.filter(t=>t.cls!=='null'&&t.cls!=='unk'&&t.p!=='?'&&t.p.trim()), avg=vals.reduce((a,t)=>a+[...t.p].length,0)/Math.max(1,vals.length);
+    // marked: the data carries word starts, or writes the spaces between words as clear tokens of their own
+    const marked=toks.filter(t=>t.w).length*12>=ciph.length||toks.filter(t=>t.cls==='plain'&&t.p!==''&&(!t.p.trim()||t.p.trim()==='\u00b7')).length>=3, perGroup=!marked&&avg>=3.5;   // perGroup: every group is a word of its own
+    const words=marked||perGroup; let wd=null, rw=null, solo=true, glue=false;   // solo: the open word takes no more groups
+    const line=fig.querySelector('.cr-read');
+    if(words) box.classList.add('words'); else line.classList.add('run');
+    let fresh=false, started=false, afterLb=false;                                  // fresh: a word has begun and its space is still owed
+    const put=(t,el,rt)=>{
+      const lb=t.cls==='plain' && t.p.trim()==='/';   // a line break of the manuscript: shown among the tiles, no break in the word
+      const divider=t.p!=='' && (!t.p.trim() || (t.cls==='plain' && t.p.trim()==='\u00b7')), phrase=!lb && t.cls==='plain' && !divider && [...t.p.trim()].length>1;
+      const alone=divider || phrase;   // clear phrases and word dividers stand alone; a null or a single clear letter stays in its word
+      const newTile=words && (!wd || solo || alone || t.w || perGroup), newRead=!rw || newTile || (!words && (alone || solo));
+      if(newTile){ wd=document.createElement('span'); wd.className='cr-w'; box.appendChild(wd); } else if(!wd) wd=box;
+      if(newRead){ rw=document.createElement('span'); rw.className='cr-rw'; line.appendChild(rw); fresh=true; if(words){ wd._r=rw; rw._w=wd; } }
+      // the space is set when the word's first letter arrives, so a divider or a null adds none of its own;
+      // none before a closing stop or after an apostrophe: d'hostel, Navarre, aurez
+      const v=said(t);
+      if(v){ if(fresh && started && !glue && !(t.cls==='plain' && /^[,.;:!?)\]’']/.test(v))) line.insertBefore(document.createTextNode(' '),rw);
+        glue=fresh && /^[’'(\[]$/.test(v.trim()); fresh=false; started=true; }
+      wd.appendChild(el); rw.appendChild(rt); solo=alone; afterLb=lb; };
+    // what a group contributes to the reading line: nothing for a null or a divider, ? for an unread group
+    const said=t=>{ if(t.cls==='null') return ''; if(t.cls==='unk'||t.p==='?') return '?'; const raw=String(t.cls==='plain'?t.p:(t.show??t.p)), v=(words||t.cls==='plain')?raw.trim():raw; return (t.cls==='plain'&&v==='/')?'':v.replace(/\u00b7/g,''); };
     const els=toks.map(t=>{
       const el=document.createElement('span'); el.className='tile cr-t '+t.cls;
       el.innerHTML=`<span class="p"></span><span class="g">${esc(t.g||' ')}</span>`;
       if(isCipher(t)){ el.tabIndex=0; el.dataset.g=t.g; el.setAttribute('aria-label',`${t.g} = ${t.cls==='unk'?'unread':t.p}`); }
-      el._p=el.firstChild; put(t,el); return el;
+      const rt=document.createElement('span'); rt.className='cr-rt '+t.cls; rt.textContent=said(t); el._r=rt;
+      if(t.cls==='plain') rt.classList.add('done');
+      el._p=el.firstChild; put(t,el,rt); return el;
     });
     const num=s=>/^\d+$/.test(s)?parseInt(s,10):NaN;
     const order=[...key.keys()].sort((a,b)=>{ const x=num(a),y=num(b); return (isNaN(x)||isNaN(y))?a.localeCompare(b):x-y; });
@@ -62,18 +85,22 @@
       info.innerHTML=`<b class="cr-g">${esc(g)}</b> = <b class="cr-p">${val}</b> &middot; ${k.n}&times; in this passage`+
         (homs.length?` &middot; <span class="cr-homs">also written ${homs.map(esc).join(', ')}</span> (homophones)`:'');
     }
-    const on=e=>{ const t=e.target.closest('[data-g]'); if(t && fig.contains(t)) trace(t.dataset.g); };
+    // a word of the reading line and its tiles light each other
+    let curW=null;
+    const word=w=>{ if(w===curW) return; if(curW){ curW.classList.remove('on'); curW._r.classList.remove('on'); } curW=w; if(w){ w.classList.add('on'); w._r.classList.add('on'); } };
+    const on=e=>{ const r=e.target.closest('.cr-rw'), w=r?r._w:e.target.closest('.cr-w'); word(w&&w._r&&fig.contains(w)?w:null);
+      const t=e.target.closest('[data-g]'); if(t && fig.contains(t)) trace(t.dataset.g); else if(r) trace(null); };
     fig.addEventListener('pointerover',on); fig.addEventListener('focusin',on);
-    fig.addEventListener('pointerleave',()=>trace(null));
+    fig.addEventListener('pointerleave',()=>{ trace(null); word(null); });
     fig.addEventListener('focusout',e=>{ if(!fig.contains(e.relatedTarget)) trace(null); });
     grid.addEventListener('click',e=>{ const r=e.target.closest('[data-g]'); if(!r) return; cur=null; trace(r.dataset.g);
       els.find(el=>el.dataset.g===r.dataset.g).scrollIntoView({block:'nearest',behavior:still?'auto':'smooth'}); });
 
     let run=0;
-    const settle=(el,t)=>{ el._p.textContent=(t.show??t.p)||' '; el.classList.add('done'); };
+    const settle=(el,t)=>{ el._p.textContent=(t.show??t.p)||' '; el.classList.add('done'); el._r.classList.add('done'); };
     function play(){
       const me=++run; fig.classList.remove('cipher'); fig.querySelector('.cr-mode').setAttribute('aria-pressed','false');
-      els.forEach((el,i)=>{ el.classList.remove('done'); el._p.textContent=toks[i].cls==='plain'?toks[i].p:' '; });
+      els.forEach((el,i)=>{ el.classList.remove('done'); if(toks[i].cls!=='plain') el._r.classList.remove('done'); el._p.textContent=toks[i].cls==='plain'?toks[i].p:' '; });
       if(still){ els.forEach((el,i)=>settle(el,toks[i])); bar.style.width='100%'; return; }
       const n=els.length, step=fig.dataset.manual?Math.max(35,Math.min(110,5200/n)):Math.max(10,Math.min(70,3400/n)), lag=6, t0=performance.now();
       function frame(now){
