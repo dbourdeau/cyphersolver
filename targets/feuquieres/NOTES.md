@@ -268,3 +268,36 @@ read in part.
 - [x] key-rebuild: 167 of 179 groups from the two letters (key_petit_chiffre_1690.tsv)
 - [x] retry: re-read 23 Oct 2026 (v5); the original at the SHD (A1 1079) could settle printing slips but is not online
 
+
+## Verification 14 Nov 2026 (Brice Dudout, with Claude Opus 5.5)
+
+Re-read of the open passages of the Feuquières letter on the MDZ page images (`img/t2_0317.jpg`, `img/t2_0318.jpg`):
+the groups around every gap (lines 6, 7, 9, 10, 12, 22-23 of p. 283; lines 2-7 of p. 284) were read again on the page
+image, one pass at page resolution: they agree with `ciphertext.txt`; no printing slip found by eye. Then context work on the gaps, with the values carried through both letters:
+
+| group | was | now | evidence |
+|---|---|---|---|
+| 241 | vous? | **me** | three contexts, all better with *me*: "que je **me** disposois", "les quatre-vingts maistres que vous **me** demandez" (Catinat's memoir of 19 Jan asks Feuquières for the horse; the old reading needed a supplied *[vous]*), "dont l'un **me** conduit". 316 = me already (*vous me faites*): a second homophone |
+| 54, 257 | unread | po, so (probable) | "que je me di-s-**po-so**-is", *disposois*; 280 = is is sure (*reçois, sçais, trois, endrois*). 257's second context (*Javan et ta 132 257 l*) does not read with *so*: kept probable |
+| 145 | go | go (unchanged) | sure from *dra-go-ns*; in "disposois 145 exécuter" the sense wants *à*: a clerk's or printer's slip, shown as supplied [à] |
+| 194 | unread | null (probable) | "ce _ cy" = *cecy* is complete without it |
+| 333 | unread | et (probable) | "tout prest, **et** qu'on ne pense"; "des Trois Couronnes, **et** l'autre aux maisons"; third homophone of *et* (258, 341) |
+| 353 | unread | par | "J'attaqueray **par** deux endrois" |
+
+Also: *doivent* (214 do i 150 ve 263 nt) and *dès* (237) are decoded, not supplied; `342 103 190` (closing) and `249 86`
+are the key's nulls and are left out of the reading body. Key: `key_petit_chiffre_1690.tsv`, SHA-256
+28de3e9662c35c5ea9e0f103d109786b3c5db6c7db186fcd3834887c97b817f3 (frozen before any count).
+
+**No measurement.** No portion of this code was left unseen: the two known letters (601 groups) were both used to build
+the key, so a held-out test (≥ 150 groups, 200 shuffled keys) is impossible. The new values rest on context only.
+
+**Count (v10 `share` rule, `texts/feuquieres1691_reading.md`):** 176 words, 14 holes, read_share **0.926** (it was
+0.875 on the 23 Oct reading: 168 words, 24 holes). Still under the 95 % bar: **read in part**. Groups still open:
+9, 122 (×2), 19, 132, 292, 271 (and 257's second context). Conjectures not used in the reading: 19 = *poste* or
+*quartier*; 292 = *qui*; `317 183 271 110 200` after *et sur tout* may hide *[toutes] choses* (271 = cho) but that
+would make 317 *es*, against *m'escrire*/*m'eschaper*; *Javan et ta-132-so-l* may hold a second road name (the memoir's
+Trane) or *estant ...*: none fits the groups cleanly.
+
+**Neighbour checked:** the Catinat letter of 15 Sept 1702 (`../catinat1702`) has the same design but another
+assignment (Norbert Biermann 2016; our test of this 1690 key on it, Nov 2026: rank 122 of 200 shuffled keys); it gives
+no value for this code.

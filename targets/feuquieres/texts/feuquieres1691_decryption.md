@@ -2,16 +2,18 @@
 
 ## The Feuquières letter, as read (17th-century spelling kept; unread groups in brackets)
 
+(Verification 14 Nov 2026: 241 = me, 54 po, 257 so, 194 null, 333 et, 353 par; see NOTES.md.)
+
 > Je reçois, Monsieur, à dix heures du matin la lettre que vous me faites l'honneur de m'escrire du vingt-quatre,
-> avec le duplicata. Vous aurez veu [par] le retour du courrier que je vous dis [54 257]is [go] exécuter vos ordres.
-> [Par] cecy vous sçaurez que je suis tout prest, [333] qu'on ne pense [9 go ri 122] les [des] que vous [122]u les
+> avec le duplicata. Vous aurez veu [par] le retour du courrier que je me disposois [à] exécuter vos ordres.
+> [Par] cecy vous sçaurez que je suis tout prest, et qu'on ne pense [9 go ri 122] les dès que vous [122]u les
 > commencer. [À] Veillane, persuadé qu'ils enlèveront le [19] au bruit de l'attaque de Veillane, le peu de monde
-> qu'il y a et les moyens d'y entrer, tout doi[ven]t faire croire qu'ils ne viendront pas à le défendre
-> sérieusement. Je ne sçais du tout par où faire passer à Saint-Ambroise les quatre-vingts maistres que vous [vous]
-> demandez ; les chemins pour y aller du costé de Javan e[t] [a 132 257 l] vous coupe[s] [249 86]. En approchant de
-> Veillane on trouve deux chemins, dont l'un vous conduit au fauxbourg des Trois Couronnes, l'autre aux maisons [292]
-> et le long de l'estang. J'attaqueray [353] deux endrois, et surtout [mes se 271 se s] prendray garde que les dragons
-> ne puissent m'eschaper. [342 103 190]
+> qu'il y a et les moyens d'y entrer, tout doivent faire croire qu'ils ne viendront pas à le défendre
+> sérieusement. Je ne sçais du tout par où faire passer à Saint-Ambroise les quatre-vingts maistres que vous me
+> demandez ; les chemins pour y aller du costé de Javan et [ta 132 257 l] vous coupes. En approchant de
+> Veillane on trouve deux chemins, dont l'un me conduit au fauxbourg des Trois Couronnes, et l'autre aux maisons [292]
+> et le long de l'estang. J'attaqueray par deux endrois, et surtout [mes se 271 se s] prendray garde que les dragons
+> ne puissent m'eschaper.
 
 What it says: Feuquières acknowledges Catinat's letter of the 24th (received at 10 a.m. with its duplicate), says he
 is ready and that the return of the courier carries his execution of Catinat's orders; the enemy will not defend
