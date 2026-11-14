@@ -66,6 +66,23 @@ In substance:
 4. Fetched the similar 1584 Nevers no. 2 alphabet from BnF fr. 3995 f. 16 and tested its relation to the target. It is demonstrably not the exact key.
 5. Searched printed literature and identified a superficially similar Henri III passage in Lavisse and the Lyon palaeographical volume; its date and sender exclude it as a crib for this letter.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) enciphered the reading back with
+`f15_key.md` and aligned it with the signs of `f15_signs.tsv`: 942 of 978 collapsed signs agree on f. 15r (0.963),
+637 of 781 on f. 15v (0.816; ll. 2-5 unread), 587 of 620 on f. 16r (0.947). Re-run here: same figures. So "gloss and
+decode agree word for word on f. 15r and f. 16r" holds for the words, not for every sign: about fifty places differ by
+a letter or two, mostly letters the sign transcription does not show (*veu[l]x*, *fai[l]lir*, *vou[s]*) and one gap
+in the transcription (16r l. 6).
+
+Two regular usages were missing from `f15_key.md` and are now listed there under "Homophones and traps":
+*gouvernement* is written `0 8 2 …` in all five places (n sign for u), and the d sign `b` stands for u/v three times.
+Checked here in `f15_signs.tsv`: the five lines and the three places are as he says. He saw 15r ll. 2 and 8 on the
+Gallica image (btv1b90600800 f17) as transcribed; the image was fetched here but those two lines were not read again.
+f. 15v ll. 2-5: he re-read them at full size and recovered nothing new; the gap stays.
+
+Read share `v10_relabel.measure` 0.941, as recorded; read in part stands. No change to a letter value.
+
 ## Remaining gaps
 
 - f. 15v ll. 2-5 and the gloss-only line at its head (about 70 words) - blocker: illegible; the decipherer wrote over the cipher signs and the gloss above is faded or struck on the native scan; the original or a multispectral image might recover them

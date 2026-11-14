@@ -46,6 +46,11 @@ Name and number signs (not letters):
   (both written `+`); the gloss decides (`+F` me, `+174` faict).
 * `6` is u and v; `b` is d. Read `6` as d nowhere: the 1584 table's d=6 does not hold here.
 * `8` occasionally stands where the gloss has a (`+178` mais, 15v l.18) - probably a slip.
+* *gouvernement* is written `0 8 2 …` in all five places (15r ll. 8, 10-11, 15; 15v l. 23; 16r l. 12): the n sign `2`
+  stands where the gloss has u, and the v is `6` (or `b` on 15r l. 8). Elsewhere u is `6` (`686` vous, `G86T` pour).
+* `b`, the d sign, stands for u/v three times: 15r l. 2 `9bE` que, l. 8 `082bFT2F+F24` gouvernement, l. 26
+  `9b1PTF9` qu'apres. Both usages found by Brice Dudout's check of 14 Nov 2026 (PR #572), who saw 15r ll. 2 and 8 on
+  the image as transcribed: the encipherer's habit or slips, not transcription errors. They are not table values.
 
 ## Difference from Nevers no. 2 (1584, BnF fr. 3995 f. 16)
 
