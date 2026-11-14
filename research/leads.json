@@ -7781,7 +7781,34 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...ct 1755 notice 'Dépêche chiffrée' (Momberault/Abekas news); no image viewer on the page. Pusch, 'Kerlérec's cipher: the code boo...)",
-   "vetting_note": "Pusch, 'Kerlérec's Cipher', Louisiana History 49/4 (2008) 463-480 not readable: JSTOR stable/25478601 shows page 1 as a preview and 'Read online' needs an account; Scribd 116703976 gives a Client Challenge page in Chrome. A University of Arkansas chapter opened in Chrome says Pusch gives a deciphering code for Kerlérec's letters, and it cites COL C13A 39 f.280 (21 Oct 1757) with a 'decoded version', so this volume is probably covered. C13A notices (bo755nhimlnc, bo755vpquuos, bo755ztuyx0a) read 'Dépêche chiffrée' with no viewer; no C13A image path found on the ANOM IIIF server. Needs the article."
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+    "verdict": "read",
+    "seen": {
+     "kind": "scan",
+     "where": "Archives nationales d'outre-mer (ANOM), COL C13 A 39, which is digitised on recherche-anom.culture.gouv.fr (image files FRANOM50_C13A_39_NNNN.jpg). Folio 60 recto and verso (images 0120 and 0121) of despatch no. 86, 9 October 1755, 'Première', were opened at 800 px high on 13 Nov 2026. Also read in full: Donald E. Pusch, 'Kerlérec's Cipher: The Code Book of Louisiana's Last French Governor', Louisiana History 49/4 (Fall 2008) 463-480, JSTOR 25478601, downloaded through the University of Maryland proxy and kept in sources/raw/kerlerec_pusch_2026-11-13/ with SHA256SUMS.",
+     "extent": "Three despatches: no. 86 of 9 Oct 1755 (C13A 39 ff. 60-62v, first copy), no. 87 of 10 Oct 1755 (ff. 63-64, first copy) and no. 91 of 18 Oct 1755 (ff. 69-70v, second copy), all listed in Pusch's Table 1 (p. 476).",
+     "cipher": "Numeric two-part nomenclator (groups of one to three figures, with homophones written one above the other). On f. 60 every code line carries the ministry's decipherment written above it in the clerk's hand ('M. De Montberault Commandant aux Alibamons auquel j'ay donné des ordres ...')."
+    },
+    "closed": "Read twice. The Ministry of the Marine deciphered all three despatches on receipt, writing the plaintext between the code lines (seen on C13A 39 f. 60 for no. 86); Pusch 2008 lists nos. 86, 87 and 91 among the 33 despatches he decoded with his reconstructed code book, prints the code book (Table 2, 547 of 700 entries, pp. 477-480), and corrects the ministry's reading of no. 86 (the Okkonis River, p. 472) and no. 91 (the cannoneers, p. 472). Villiers du Terrage (1904) p. 71 summarises no. 86 in French. Nothing here is left to read.",
+    "searches": [
+     {
+      "query": "Pusch 2008 full text, Table 1, dispatches of October 1755",
+      "result": "Nos. 86 (9 Oct, C13A 39 ff. 60-62v), 87 (10 Oct, ff. 63-64) and 91 (18 Oct, ff. 69-70v), all with ministry plaintext; Pusch's own decodings compared with it on p. 472."
+     },
+     {
+      "query": "ANOM recherche-anom COL C13 A 39 digitised images, folio 60",
+      "result": "Image 0120 is f. 60 of no. 86 'Première', 9 Oct 1755, with the decipherment written above each line of numbers."
+     },
+     {
+      "query": "archive.org full text: \"Kerlérec\" \"chiffre\" Louisiane",
+      "result": "Villiers du Terrage 1904, p. 71: content of the 9 October 1755 'première dépêche chiffrée' given in summary."
+     }
+    ],
+    "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): Pusch 2008 has now been read in full and the ANOM leaf seen.",
+    "note": "Review at integration (14 Nov 2026, research/vetting_2026-11-13_ajbeling (PR #580)): the ANOM site reset the connection from the project's cloud session and JSTOR did not load, so neither f. 60 nor Pusch 2008 was re-opened; closed on the contributor's record of both. Pusch's article and code book are also the basis of targets/kerlerec1759 (PR #586)."
+   }
   },
   {
    "id": 1207,
@@ -7825,7 +7852,35 @@
    "scored": "sweep",
    "access": "archive",
    "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...ct 2026: Checked 28 Oct 2026: 3 Jul 1759 'Lettre chiffrée', no viewer on page. Pusch's Kerlérec code-book article (title only) is...)",
-   "vetting_note": "Pusch 2008 'Kerlerec's Cipher' (Louisiana History 49, JSTOR 25478601) still unread, so whether the C13A 41/42 letters of 1759-60 are printed deciphered is unanswered. jstor.org retested from the cloud on 11 Nov 2026: curl gets a 3 kB shell and headless Chromium the 'Client Challenge' error page (not passed). francearchives.gouv.fr answers but the ANOM notices only say 'Lettre chiffrée'. A web search for the article text found no open copy."
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+    "verdict": "partly_read",
+    "seen": {
+     "kind": "scan",
+     "where": "ANOM COL C13 A 41, digitised in full (302 images) at https://recherche-anom.culture.gouv.fr/ark:/61561/664449.2269381/daogrp/0, page images FRANOM50_C13A_41_0162-0164 (ff. 81-82, no. 206), 0174-0198 (ff. 87-99, no. 207), 0221-0224 (ff. 111-112, no. 215), opened at 450 to 900 px high on 13 Nov 2026; Donald E. Pusch, 'Kerlérec's Cipher: The Code Book of Louisiana's Last French Governor', Louisiana History 49/4 (Fall 2008) 463-480, JSTOR 25478601, read in full.",
+     "extent": "Lead items: 3 Jul 1759 (no. 206, C13A 41 ff. 81-82, third copy), 17 Sep 1759 (no. 215, ff. 111-111v, second copy), 10 Nov 1759 (no. 194, second copy, ff. 144-145v), 12 Jun 1760 (no. 228, C13A 42 ff. 48-53), and a 1 Sep 1736 item in C13A 21 from before Kerlérec's time. The same volume also holds no. 207 of 13 Jul 1759 (ff. 87-98v), mostly in clear with one coded passage on f. 97.",
+     "cipher": "No. 206: f. 81r has three lines of clear text ('Le plus grand hazard ne me procure qu'un instant pour profiter de l'occasion d'un religieux Espagnol qui va faire voile pour la Havanne') then about 13 lines of numbers, f. 81v about 23 lines, f. 82r about 13 lines and the signature: about 650 groups, nothing written between the lines. No. 215: f. 111r one clear line then about 20 lines of numbers, f. 111v about 10 lines: about 370 groups, bare. No. 207: about 17 lines of numbers on f. 97r-v (about 220 groups) inside a clear despatch, bare."
+    },
+    "closed": "Partly read. Pusch 2008 (Table 1 and pp. 468, 474-475) decoded all of nos. 194, 206, 215 and 228 with his reconstructed code book; the ministry's interlinear plaintext exists for no. 228 and for no. 194 in its 6 May 1759 copy (C13A 41 ff. 51-52v), of which the 10 Nov copy is a duplicate. For nos. 206 and 215 (and 207) no contemporary decipherment exists (Pusch n. 13) and Pusch prints only summaries (no. 206 on the Rochemore affair, p. 474) and no plaintext. The 1736 item in C13A 21 is outside Pusch's study and was not examined. The code book is printed (Table 2, 547 of 700 entries), so nos. 206, 207 and 215 can be read from the online ANOM images; that reading is a follow-on target built on Pusch's key, not an open cipher.",
+    "key_held": "Pusch 2008, Table 2 (pp. 477-480): the décodage table of Kerlérec's 1755-62 nomenclator, 547 code numbers of 700; not yet tested by us on nos. 206, 207 or 215.",
+    "searches": [
+     {
+      "query": "Pusch 2008 full text, Table 1 and note 13, dispatches of 1759-60",
+      "result": "Nos. 194 (6 May and 10 Nov 1759), 206 (3 Jul), 207 (13 Jul), 215 (17 Sep), 226 (8 Dec 1759), 228 (12 Jun 1760); 206, 207 and 215 have no plaintext version; all decoded by Pusch, none printed in full."
+     },
+     {
+      "query": "ANOM recherche-anom COL C13 A 41 digital object, manifest",
+      "result": "302 page images of 2150 x 3110 px online; f. 81 = image 0162, f. 97 = 0193, f. 111 = 0222; nos. 206 and 215 are bare numeric cipher."
+     },
+     {
+      "query": "Villiers du Terrage 1904 full text grep 1759-1760 despatch dates",
+      "result": "No summary of the 1759-60 cipher letters found there (only the 1755 and 1756 cipher remarks)."
+     }
+    ],
+    "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): Pusch 2008 has now been read and C13A 41 turns out to be digitised on the ANOM site.",
+    "note": "Review at integration (14 Nov 2026, research/vetting_2026-11-13_ajbeling (PR #580)): ANOM and JSTOR not reachable from the project's cloud session; closed on the contributor's record. Nos. 206, 207 and 215 of 1759, bare on the leaf, are being read by the same contributor in targets/kerlerec1759 (PR #586), whose notes say Pusch states they could be decoded with his code book and summarises nos. 206 and 207 without printing their text. The 1 Sep 1736 item in C13A 21 was not examined by anyone and is not covered by this verdict."
+   }
   },
   {
    "id": 1208,
@@ -9334,7 +9389,7 @@
    "source": "UK libraries sweep (Bodleian)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Edition still not opened; narrowed on 11 Nov. Sbornik RIO vol. 50 (archive.org sbornikimperatorskogorusskogoistorichesk58) was opened: it ends in late 1711, so Whitworth's despatches to St John of Mar-Jun 1712 (Rawl. C.392 ff. 301, 304) fall in vol. 61. The archive.org item labelled vol. 61 (sbornikimperatorskogorusskogoistorichesk4) is mislabelled: its text is vol. 53 (Teutonic Order, 1516-20). No other copy of vol. 61 found on archive.org (metadata and full-text searches); prlib.ru and elib.shpl.ru answer but were not searched for it; HathiTrust is blocked here. The Rawl. A.286 letters to Bishop Robinson (f. 60 Wich, f. 72 Whitworth) are private letters the Sbornik would not print; no images. Needs Sbornik vol. 61 (prlib.ru or a library) and sight of the Bodleian leaves."
+   "vetting_note": "Half settled. The two Rawl. C. 392 items (ff. 301, 304) are 'Copies of two despatches from C. Whitworth ... to St. John, Mar-Jun 1712' (Bodleian notice), and Sbornik RIO vol. 61 (1888) prints Whitworth's despatches to St John of that span in English from the Public Record Office (Russia 12), e.g. No. 42 of 4/15 March and No. 54 of 8/19 June 1712. The Rawl. A. 286 letters to Bishop Robinson (Wich f. 60, Whitworth f. 72) are private, not in Sbornik and not digitised: they need the Bodleian leaves. (research/vetting_2026-11-13_ajbeling/vetting.json)"
   },
   {
    "id": 1258,
@@ -10275,42 +10330,6 @@
    }
   },
   {
-   "id": 1285,
-   "counted": true,
-   "cls": "C",
-   "seen": "catalogue",
-   "source": "US societies finding-aid sweep",
-   "score_note": "Scored from the finding-aid description during the Oct 2026 US societies sweep (research/us_societies/); not viewed",
-   "prior_art": "open (checked 28 Oct 2026: known.py, web search of the finding aid; no decipherment found)",
-   "language": "English",
-   "place": "Spain",
-   "correspondents": "Thomas Robinson, 2nd Baron Grantham -> Thomas Thynne",
-   "folio_note": "",
-   "verify": "Open the Houghton record; compare with Bedfordshire L 30/15/54.",
-   "year": 1778,
-   "date": "18 Jun 1778",
-   "title": "Lord Grantham (British ambassador in Spain) to Thomas Thynne, Marquess of Bath, duplicate, part in code",
-   "region": "Spain",
-   "period": "1701-1800",
-   "shelfmark": "Houghton Library, Harvard: Autograph File, G, 1641-2009, item 'Grantham ... letter signed (duplicate) to Thomas Thynne; [Spain] 18 Jun 1778'",
-   "status": "HOLLIS: 'Part of text in code.' Probably a Grantham family or Foreign Office code; research/tna_discovery notes Grantham to Frederick Robinson 1778-79 (Bedfordshire L 30/15/54) as a private family code, importance 1. Not viewed.",
-   "why": "An ambassador's private cipher during the French entry into the American war; a possible sibling of the Bedfordshire Grantham letters.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "links": [
-    {
-     "label": "HOLLIS for Archival Discovery",
-     "href": "https://hollisarchives.lib.harvard.edu/catalog/hou01430_hou01430c00499"
-    }
-   ],
-   "ark": "",
-   "scored": "sweep",
-   "access": "online",
-   "access_note": "Houghton digital object urn-3:FHCL.HOUGH:38447771 (checked 28 Oct 2026)",
-   "vetting_note": "Harvard retested from the cloud on 11 Nov 2026: hollisarchives.lib.harvard.edu, nrs.harvard.edu (urn-3:FHCL.HOUGH:38447771) and iiif.lib.harvard.edu all return 403 Forbidden to curl and to headless Chromium. The Grantham duplicate of 18 Jun 1778 ('Part of text in code') is still unseen; a decoded text may exist with the Bedfordshire L 30/15 siblings. Needs the Houghton digital object from a network Harvard accepts."
-  },
-  {
    "id": 1286,
    "counted": true,
    "cls": "C",
@@ -10635,7 +10654,7 @@
    "prior_art": "not verified: inventory page host (bibliotheques-numeriques.defense.gouv.fr) not opened; web search only",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Despatches not located and no ciphertext seen; Pusch, 'Kerlérec's Cipher', Louisiana History 49 (2008) not opened. Retested from the cloud on 11 Nov 2026: bibliotheques-numeriques.defense.gouv.fr resets the connection (curl exit 35), the Wayback Machine did not answer for that URL, jstor.org/stable/4234315 returns a 3 kB script shell, scribd search likewise; one web search for the Pusch article found only a Maggs listing of a Kerlérec cipher despatch. Needs the inventory notice (cote) and Pusch's article before any verdict."
+   "vetting_note": "The Ministère des Armées inventory (bibliotheques-numeriques.defense.gouv.fr, document 2bc715e2-...) still does not open from the contributor's network, by curl (exit 28) or in his Chrome (13 Nov 2026, 22:20), so the cote and which despatches are in cipher are unknown. Pusch 2008, now read in full, decoded the two Kerlérec cipher despatches of these dates that are in ANOM: 12 and 23 Aug 1758 (C13A 40 ff. 31-33v) and no. 194 of 6 May 1759 (C13A 41 ff. 51-52v), both with the ministry's plaintext between the lines. If the Ministère des Armées items are copies of these, the lead is read; that needs the inventory. (research/vetting_2026-11-13_ajbeling/vetting.json)"
   },
   {
    "id": 1300,
@@ -10674,9 +10693,36 @@
    "prior_art": "partly read: Narvaez, Historia Mexicana 'Los despachos codificados de Pablo Obregon' (2 despatches decoded); others unconfirmed",
    "ark": "",
    "scored": "sweep",
-   "access": "online",
+   "access": "archive",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: ...rom 'small sample', not confirmed. Not on DECODE. Not found digitised online. Checked 28 Oct 2026: Narvaez article not read in th...)",
-   "vetting_note": "historiamexicana.colmex.mx retested from the cloud on 11 Nov 2026: curl 403, headless Chromium gets the Cloudflare 'Performing security verification' page, WebFetch 403; scielo.org.mx 429 and redalyc 403 on the first request. Narváez's article (Historia Mexicana 231, 2009, pp. 1093-1153; follow-up in no. 233 with despatches 3 and 14 of 1825 and one of 1826) is still unopened, so which Obregón despatches remain undecoded and their AHGE legajo are unknown. Cluster, not one document."
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+    "verdict": "read",
+    "seen": {
+     "kind": "transcription",
+     "where": "Roberto Narváez, 'Los despachos codificados de Pablo Obregón desde Washington en 1825. Análisis y dos decodificaciones', Historia Mexicana 58/3 (231), 2009, pp. 1093-1153, read in full in the contributor's Chrome (article 1751, PDF view; Cloudflare cleared by him), 62 pages, 13 Nov 2026.",
+     "extent": "Obregón's reserved coded despatches of 1825 in Acervo Histórico Diplomático de la SRE (AHDSREM), bound legajo L-E-1333 'Independencia de Cuba', with its register 'Correspondencia reservada del Sr. Obregón de este año' (ff. 31-32) of every number received, whether in cipher and whether 'traducido'.",
+     "cipher": "One-part numeric code of about 200 entries (groups of two or three figures, a bar above or below a group reversing the bigram), shown in facsimile in figures 1-4 (ff. 16, 10, 69)."
+    },
+    "closed": "Read. Narváez (pp. 1103-1104) says the ministry decoded Obregón's coded despatches on receipt (interlinear decodings, figures 3 and 4) and these are printed in Chávez Orozco, Un esfuerzo de México por la independencia de Cuba (1930) and México y Cuba (1982); only 'un par' of 1825 were left undecoded, reserved nos. 3 (23 Mar 1825, ff. 15-30bis) and 14 (1 Nov 1825, ff. 10-12). He decodes both and prints them in full (pp. 1135-1149) and prints the reconstructed code book (figure 5, p. 1132). He also recovered the plaintext of one partly coded 1826 document (n. 26) for a later paper. No undecoded 1825 despatch remains; the archive is not online.",
+    "searches": [
+     {
+      "query": "Narváez, Historia Mexicana 231 (2009), full text, list of undecoded despatches",
+      "result": "Only reserved nos. 3 and 14 of 1825 were undecoded in L-E-1333; both decoded and printed pp. 1135-1149; code book figure 5."
+     },
+     {
+      "query": "Narváez, Documenta & Instrumenta 6 (2008), grep Obregón",
+      "result": "Only footnote 34 pointing to the Historia Mexicana study; no list of Obregón despatches."
+     },
+     {
+      "query": "redalyc Narváez Obregón despachos codificados 1825 dos decodificaciones",
+      "result": "No redalyc copy of the 2009 articles; redalyc holds the 2011 Michelena article instead."
+     }
+    ],
+    "supersedes": "Replaces the 'unvetted' block of 13 Nov 2026 (commit 3c9b6a05): the Historia Mexicana article has now been read in full.",
+    "note": "Review at integration (14 Nov 2026, research/vetting_2026-11-13_ajbeling (PR #580)): a web search confirms Narváez, Historia Mexicana 231 (2009), with decoded versions of Obregón's despatches 3 and 14 of 1825, and a follow-up in no. 233 (2009, pp. 443-448) decoding a despatch of 1826; the article's text was not re-read here."
+   }
   },
   {
    "id": 1301,
@@ -10711,7 +10757,7 @@
    "prior_art": "partly read: Narvaez 2009, Estudios de Historia Moderna y Contemporanea de Mexico 38 (cipher part analysed, code part thin)",
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Still undecided whether Narvaez prints the plaintext of Torrens's notes 2 and 3 of 1826: Memorias de la Academia Mexicana de la Historia 49 (2007-08) pp. 7-43 and the 2019 SRE book are not online, and no scan of the notes exists. moderna.historicas.unam.mx retested from the cloud on 11 Nov 2026: no answer (curl 000, connection failed), so even the EHMCM article could not be re-read here. Needs a library copy of Memorias 49."
+   "vetting_note": "Narváez's 'Dos criptosistemas empleados por el coronel José A. Torrens en Colombia (1825-1826)', Memorias de la Academia Mexicana de la Historia 49 (2007-08) 7-43, is still not online, and the notes are in the SRE archive. Known now: EHMCM 38 (2009) p. 142 prints the key of Torrens's 10 x 7 matrix cipher and says notes 2 and 3 of 1826 are wholly in it; Historia Mexicana 231 (2009) n. 52 says 'Dos criptosistemas' gives 'una decodificación precaria de un manuscrito presuntamente suyo' in Torrens's code, and p. 1133 suggests Obregón's 1825 code book (printed there, figure 5) and Torrens's code are versions of one another. (research/vetting_2026-11-13_ajbeling/vetting.json)"
   },
   {
    "id": 1302,
@@ -14665,40 +14711,6 @@
     "closed": "Both Digital Maryland items (hawp id 170, 216) are viewed and hold only typewritten clear text: Tower's 12 Feb 1903 telegram is a decoded typescript headed 'Received in cipher' and Hay's 8 Apr 1904 reply is a Department of State 'Telegram Sent in Cipher' file form giving the plaintext; no cipher groups appear anywhere.",
     "date": "2026-11-04"
    }
-  },
-  {
-   "id": 1437,
-   "counted": true,
-   "year": 1920,
-   "date": "1916-1924",
-   "title": "H. F. Sinclair, Zevely, Stanford, Chandler, Parham, Wahlberg: eight ciphered telegrams in a telegraphic commercial code (Teapot Dome period)",
-   "correspondents": "Harry F. Sinclair, Edwin H. Chandler, G. T. Stanford, J. W. Zevely, N. D. Parham, A. E. Watts, M. M. Doan",
-   "place": "various US/France",
-   "language": "English (code words)",
-   "region": "Americas",
-   "period": "1901-1950",
-   "shelfmark": "Portal to Texas History / Rice University Woodson Research Center, Zevely and Sinclair papers (metapth1891647 and siblings)",
-   "folio_note": "eight telegrams, 1916-1924, each a 'ciphered' or 'partially ciphered message expressed in telegraphic commercial code'",
-   "cls": "C",
-   "status": "Titles and summaries only. Zevely and Sinclair figure in the Teapot Dome scandal (Zevely to Fall, 12 Mar 1923). The commercial code is probably an off-the-shelf book (Bentley's, A.B.C., Lieber's), so a book key may open them. Not on DECODE; known.py not hit.",
-   "why": "Sinclair Oil telegrams around the Teapot Dome lease; the commercial code books are online.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the hub's catalogue description during the Oct 2026 DPLA/Smithsonian sweep (research/dpla_smithsonian/); not viewed",
-   "verify": "View the telegrams; test Bentley's/ABC/Lieber's code books from Archive.org against the five-letter groups.",
-   "links": [
-    {
-     "label": "Sinclair to Chandler, 14 Dec 1916",
-     "href": "https://texashistory.unt.edu/ark:/67531/metapth1891647/"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "DPLA/Smithsonian sweep",
-   "prior_art": "open (checked 28 Oct 2026: catalogue only)",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "texashistory.unt.edu did not connect from the cloud on 11 Nov (curl, no response; earlier passes met an Altcha robot check, not bypassed). The eight telegrams are unseen. Needs the user to clear the check in a browser tab."
   },
   {
    "id": 1438,
@@ -30778,7 +30790,33 @@
    "decode_ids": [],
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "Scan still unseen, so Chinook Jargon versus cipher cannot be judged. gilderlehrman.org retested from the cloud on 11 Nov 2026: Cloudflare 'Just a moment' page (HTTP 403) on https://www.gilderlehrman.org/collection/glc00537; the Wayback Machine did not answer for it. Needs the GLC00537 image (Gilder Lehrman login or order)."
+   "vetting": {
+    "date": "2026-11-13",
+    "by": "ajbeling (Andrew Beling), Claude Code agent, model claude-opus-5-5",
+    "seen": {
+     "kind": "scan",
+     "where": "Gilder Lehrman Collection GLC00537, the public preview image on the item page (https://www.gilderlehrman.org/collection/glc00537, opened in Chrome after the Cloudflare check passed; image d16sa08ayyuei.cloudfront.net/GLC00537/GLC00537_00001.jpg, 400 x 646 px). The full-size scan needs a Collection subscription and was not seen.",
+     "extent": "One page, 'Head Quarters Army of the Potomac, Office of Chief Quarter Master, Dec. 12th 1862', to J. W. Nesmith, 221 Pa. Av., Washington: six lines of text, signed Rufus Ingalls, Chief Quarter Master.",
+     "cipher": "The six lines are Chinook Jargon written in ordinary script, with English words mixed in: 'Wake siyah cultus mitlite nesika conoway ... tum-tum ... rebels puck puck nesika tomolloh ... devils. Klosh nanitch conoway sun tomolloh. Klahawyum mika?' The hand is large and every word is legible at this size; no letter or number substitution is used."
+    },
+    "closed": "Not a cipher. Ingalls wrote to Senator Nesmith of Oregon in Chinook Jargon, the Pacific Northwest trade language (that both men knew it from Oregon service is our background knowledge, not checked here): 'nesika' we, 'conoway' all, 'tum-tum' heart, 'tomolloh' tomorrow, 'kloshe nanitch' look out, 'klahowya mika' how are you. The catalogue's 'Union cipher letter' is a cataloguer's word for an unfamiliar language. Read on the 400 px public preview; the hand is large enough for every word, but a subscriber view of the full scan would confirm it.",
+    "searches": [
+     {
+      "query": "known.py \"GLC00537\" \"Ingalls\"",
+      "result": "Only this lead and its sweep row (research/sweep_2026-11_us_blocked)."
+     },
+     {
+      "query": "decode_search.py Ingalls / Chinook / Gilder Lehrman",
+      "result": "0 DECODE records for each."
+     },
+     {
+      "query": "Cryptiana civilwar1-7.htm fetched, grep Ingalls / Chinook",
+      "result": "No mention of Ingalls or Chinook Jargon in Tomokiyo's Civil War pages."
+     }
+    ],
+    "verdict": "not_cipher",
+    "note": "Review at integration (14 Nov 2026, research/vetting_2026-11-13_ajbeling (PR #580)): the public 400 px preview (GLC00537_00001.jpg) opened; the six lines are legible at that size and are Chinook Jargon in ordinary script as transcribed ('Wake siyah cultus mitlite nesika conoway ... Klosh nanitch conoway sun tomolloh'). Closed on two readings of the preview; the full scan was not seen."
+   }
   },
   {
    "id": 2051,
@@ -30827,7 +30865,7 @@
    "decode_ids": [],
    "ark": "",
    "scored": "sweep",
-   "vetting_note": "gilderlehrman.org retested from the cloud on 11 Nov 2026: 403 to curl and the Cloudflare 'Performing security verification' challenge in headless Chromium (not passed). The four GLC02414 items 'in code' are still unseen and the Official Records check at 1-3 July 1863 is still owed. Needs the scans through institutional access."
+   "vetting_note": "The four telegrams are real route-cipher text, but only 400 px public previews are free: the full scans need a Gilder Lehrman Collection subscription (login) or a PDF order. A period decipherment of GLC02414.341 exists in the same collection (GLC02414.114), so the lead should be split: .341 read, .229, .339 and .344 with no decipherment found yet. (research/vetting_2026-11-13_ajbeling/vetting.json)"
   },
   {
    "id": 2052,
