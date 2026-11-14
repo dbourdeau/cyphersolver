@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "target": "montcalm1757w",
+  "title": "Montcalm’s War code: 4 November 1757 cipher passages and annexed defence sheet",
+  "documents": [
+    {
+      "id": "179-cipher",
+      "shelfmark": "SHD GR A1 3457 pièce179; LAC copy pp505–506,510–513",
+      "date": "4 November 1757",
+      "year": 1757,
+      "country": "France",
+      "language": "French",
+      "read": "read in part",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ]
+      },
+      "length": {
+        "tokens": 610,
+        "distinct": 260,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcriptions/179_groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Digitized manuscript or archival copy; source links in NOTES.md",
+        "image_quality": "fair"
+      }
+    },
+    {
+      "id": "180",
+      "shelfmark": "SHD GR A1 3457 pièce180; LAC copy pp517–518",
+      "date": "4 November 1757",
+      "year": 1757,
+      "country": "France",
+      "language": "French",
+      "read": "read in part",
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "interlinear"
+        ]
+      },
+      "length": {
+        "tokens": 306,
+        "distinct": 174,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcriptions/180_groups.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Digitized manuscript or archival copy; source links in NOTES.md",
+        "image_quality": "fair"
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic",
+      "syllabic",
+      "nomenclator"
+    ],
+    "summary": "Numerical letters, syllables, words and names; partial reconstructed table.",
+    "symbol_kind": "digits",
+    "digit_groups": {
+      "width": "1-3",
+      "separation": "mixed"
+    },
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": false,
+      "note": "Code B has distinct + variants; W plus signs in the transcription are copyist sic marks."
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "syllables",
+        "common words",
+        "names",
+        "places"
+      ]
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "random"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Period interlinear decipherment, reproduced in the Public Archives of Canada copy on LAC C-12578. Anonymous decipherer.",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "known plaintext"
+    ],
+    "attack": "known plaintext",
+    "human_role": "Andrew Beling directed the research and set the contribution scope; the work was done with AI agents.",
+    "models": [
+      "unknown"
+    ],
+    "tools": [
+      "Python alignment and audit scripts",
+      "image inspection"
+    ],
+    "first_date": "2026-11-11",
+    "last_date": "2026-11-13"
+  },
+  "solution": [
+    {
+      "date": "2026-11-12",
+      "kind": "access",
+      "what": "Located LAC copies preserving the figures and period decipherment on C-12578.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "key from source",
+      "what": "Token-aligned period plaintext with cipher figures; retained conflicting uses and sic errors.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "verification",
+      "what": "Fresh-image digit audit read 690 for 670? (p. 506; withdrawn 13 Nov 2026 as unsettled 670/690) and 83 for 13? (p. 511); uncertain sept-em-bre group withheld.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "sibling key",
+      "what": "Compared the attestation index with the 1757 Vaudreuil numerical table (ANOM COL C11E 10, LAC e001295274; targets/vaudreuil1760/key/key274.json with overrides): none of the 243 numbers present in both has the same value. Sheet e001295276 was tried on 13 November 2026 by one of our AI agents: a second handwritten copy of the Vaudreuil table (592 of 680 cells agree with e001295274); 1 of 238 shared numbers agrees with W, no better than 200 shuffled tables.",
+      "result": "ruled out",
+      "technique": [
+        "key matching"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "A second AI agent that had not seen our conclusions rechecked 25 table entries on the reel images (24 confirmed, 1 unsettled) and two passages digit for digit. p. 510: 159 is clear and the sic mark stands after 139, so 'toujours' is corrected to 'une' (159 = une attested). p. 506: the group after 654 is unsettled 670/690 and withheld (690 = rt withdrawn); 318 clearly numbered groups remain.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Integration check of PR #574 (round 13). Own script over line_by_line_179/180: 610 and 306 groups (916), 318 distinct clearly numbered groups, every one in key/W_1757_attestations.tsv with every value it takes; 2 uncertain-digit groups withheld. 118 of 118 groups sampled on the LAC reel C-12578 images (copy p. 506, 60 groups; p. 517 lines 1-5, 58 groups) agree with the transcription; p. 506 6?0 looks like 670 but stays withheld. Strict word count of the normalized French: 427 of 433 (179) and 207 of 211 (180) words carry no bracket or query, close to the contributor's 424/431 and 213/217. Code W against targets/vaudreuil1760/key/key274.json: 0 of 242 shared numbers agree. Outcome method changed from 'key recovered based on adjacent plaintext' to 'read from existing decipherment': the decipherment between the lines is complete for both declared units.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "class": "read in part",
+    "key": "partial",
+    "method": "read from existing decipherment",
+    "verification": [
+      "contemporary decipherment"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "ajbeling",
+        "role": "solution",
+        "date": "2026-11-12",
+        "note": "Andrew Beling, with AI agents; partial code reconstruction, transcription and qualified reading, not a ciphertext-only solution."
+      },
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "Anonymous period clerks: the French interlinear decipherment, copied for the Public Archives of Canada (LAC C-12578).",
+        "date": "1757"
+      },
+      {
+        "who": "hrcasgrain",
+        "role": "pointer",
+        "note": "Collection des manuscrits du maréchal de Lévis III (1890), p. 64: Paulmy to Montcalm, 10 April 1757, sending a 'petit chiffre' for a private correspondence; whether that is code W is uncertain (W is in the ordinary dispatches and already in use in Nov 1756). Volumes I-XII searched for earlier printing of these passages, none found in the OCR."
+      }
+    ],
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "key_file": "key/W_1757_attestations.tsv",
+    "texts": [
+      {
+        "doc": "179-cipher",
+        "label": "Complete cipher extracts of pièce179 (clear portions outside declared scope)",
+        "transcription": "transcriptions/179.txt",
+        "decryption": "line_by_line_179.txt",
+        "contemporary": "contemporary_179.txt",
+        "reading": "reading_fr_179.txt",
+        "translation": "translation_en_179.txt",
+        "state": "read in part",
+        "language": "fr",
+        "summary": "Reports Louisbourg’s weak defences and the food crisis: reduced bread, horse meat and public leadership through frugality.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Andrew Beling's own AI agents (the coordinating model; not a person)",
+          "date": "2026-11-12",
+          "note": "Read the full normalized French against the English; reviewed selected source digit crops, not every group against the whole images. Coherent on the declared cipher-extract and annex scope, with gaps marked; the anonymous period decipherers have reading priority. Not an exhaustive check against the images and not an outside check."
+        },
+        "read_share": 0.9837587006960556,
+        "note": "Share of words in our edition of the period decipherment that carry no uncertainty mark (bracketed supplied words counted as holes; reading_measurements.json). Not cipher-group coverage and not a measure of accuracy."
+      },
+      {
+        "doc": "180",
+        "transcription": "transcriptions/180.txt",
+        "decryption": "line_by_line_180.txt",
+        "contemporary": "contemporary_180.txt",
+        "reading": "reading_fr_180.txt",
+        "translation": "translation_en_180.txt",
+        "state": "read in part",
+        "language": "fr",
+        "summary": "Outlines defence of Quebec between Montmorency and the Saint-Charles and plans for field expeditions and supply to western posts.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Andrew Beling's own AI agents (the coordinating model; not a person)",
+          "date": "2026-11-12",
+          "note": "Read the full normalized French against the English; reviewed selected source digit crops, not every group against the whole images. Coherent on the declared cipher-extract and annex scope, with gaps marked; the anonymous period decipherers have reading priority. Not an exhaustive check against the images and not an outside check."
+        },
+        "read_share": 0.9815668202764977,
+        "note": "Share of words in our edition of the period decipherment that carry no uncertainty mark (bracketed supplied words counted as holes; reading_measurements.json). Not cipher-group coverage and not a measure of accuracy."
+      }
+    ],
+    "gaps": [
+      {
+        "item": "Unsettled 1757 numerals, p. 506 6?0 (670 or 690) and p. 518 2?5",
+        "blocker": "needs-physical-access",
+        "detail": "The LAC copy is ambiguous and the readers disagree; both withheld from the key. The French originals (SHD GR A1 3457) would settle them."
+      },
+      {
+        "item": "Conflicting 1757 values, chiefly 63 over 's' where 'vivres' is usual",
+        "blocker": "open-codes",
+        "detail": "Copy slip or enciphering slip cannot be told apart without the original key or letters; kept as an observation, not a homophone."
+      }
+    ],
+    "first_break": "unpublished prior",
+    "method_basis": "The French prose is the period clerks' complete interlinear decipherment, preserved on the LAC copies and transcribed here; the 318-group index of code W was drawn from those same cipher/plain pairs (integration check, 14 Nov 2026: top-level method set to the existing decipherment, the key part keeps 'adjacent plaintext').",
+    "parts": [
+      {
+        "label": "Partial War-code key",
+        "method": "key recovered based on adjacent plaintext",
+        "extent": "partial",
+        "basis": "1757 token-aligned cipher/decipherment pairs."
+      },
+      {
+        "label": "1757 French prose",
+        "method": "read from existing decipherment",
+        "extent": "partial",
+        "basis": "Anonymous period decipherer, copied by Public Archives of Canada; no first-decipherment claim."
+      }
+    ],
+    "notes": "Source-and-key contribution: documents are the complete cipher extracts of pièce 179 and the complete cipher annex 180. Clear portions of 179 and the supporting 1756-59 letters are outside the claimed scope. Code W is not the Vaudreuil table of targets/vaudreuil1760 (0 of 243 shared numbers agree).",
+    "fraction_read": 0.9830246913580247,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "measure_reading.py: 637/648 words of reading_fr_179.txt and reading_fr_180.txt carry no uncertainty mark (holes counted after explicit-hole conversion). Edition of the period decipherment; not cipher-group coverage and not a measure of accuracy.",
+    "validation": {
+      "date": "2026-11-13",
+      "verdict": "not applicable",
+      "notes": "Key evidence comes from the period clerks' interlinear decipherment: the table was built from these same cipher/plain pairs and the prose is the existing decipherment, so a held-out or shuffled-key test would not validate an independent recovery. No independent solution is claimed."
+    }
+  }
+}
