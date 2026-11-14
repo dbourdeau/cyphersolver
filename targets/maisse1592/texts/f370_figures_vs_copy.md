@@ -45,7 +45,7 @@ sitost* (r18: 17 for 18 three times, 16 17 22 for s s e); *saruice* (r14, 7 for 
 (r07), *seulerent* and *dextrerent* (v00, v23: 16 for 6 in *-ment*), *piecont* (v19, 9 for 6), *faicdes* (v26),
 *apres apres* (v27, the word enciphered twice), *d'icelles* (v02, against the singular *depesche*), *laquell* (r03, final
 e missing at the line end), *mesa affaires* (r11, a struck 7), *quelques* (r02, look-alike 7/17 before *iours*),
-*anant* (r18, 12 read for 4), *aueci* (r23), *sIais* for *pais* (v14, 14 read as 4), *Pcontrainct* (v29).
+*anant* (r18, 12 read for 4), *aueci* (r23), *sIais* for *pais* (v14, 14 read as 4), *Pcontrainbt* (v29: a clear 8 written for 9, *contrainct*; read `9?` until the image check of 14 Nov 2026).
 
 **Unidentified:** 90 at the end of r01 (between *ia* and *auoir*), probably a null.
 
@@ -182,7 +182,7 @@ v27 fig : aPRESapreslesquellesilnaurapas-occa~~on_____
 v27 copy: a----apreslesquellesilnaurapasDoccasionduser
 v28 fig : dedissimu-la~~onquonmauoulupersuaderquil_____
 v28 copy: dedissimuLlationquonmauoulupersuaderquilestoi
-v29 fig : Pcontrainctdesuiureattendantquillu_____
+v29 fig : Pcontrainbtdesuiureattendantquillu_____
 v29 copy: Tcontrainctdesuiureattendantquilluyfust
 v30 fig : ouuertquelquechemindefaireparoistreso______
 v30 copy: ouuertquelquechemindefaireparoistresonaffec
