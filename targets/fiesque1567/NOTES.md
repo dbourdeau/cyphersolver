@@ -162,6 +162,21 @@ the cursive is unreliable", their OPEN §7: 51–55% when read by Sonnet/Codex).
   that share is 10,628 / 11,615 = 0.915, so the estimate stood). The per-letter read shares recorded agree with the
   measure to within 0.005.
 
+Integration check (14 Nov 2026, PR #559):
+- **Decoder.** An own decoder (first value of each key.tsv row, nulls dropped, unvalued signs counted as disagreement,
+  letters compared by position) over the same 45 pages: 32,352 letters in the contributed decodes, every difference
+  either a sign with no value in key.tsv (Dz 49, arrow 9, w 8, K 7, `?` 6, pa 1) or the apostrophe of "l'empereur"
+  shifting five lines (f079, f094). The decode is reproduced.
+- **The sign w is not missing from the key.** key.tsv already has the row `=rr` = rr, source table, shape note "W (double letters row)": the
+  same plain W of Tomokiyo's table, under the label `=rr`, which the transcriptions use for it at 45 places (f039r
+  c05, c16, c22 and others). The eight `w` are a second label for that sign, not a new key sign. Seen on Gallica at full
+  size: view 70 right c04 (a plain W after the two cross signs, before the triangle, "cou-rr-ier") and, for comparison,
+  view 43 right c05, where the transcription's `=rr` is the same W shape. So the value rr stands, nothing is added to the
+  key, and the readings (which already read r at all eight places) are unchanged; the proposed key row above is not
+  needed. The mechanical decodes keep `[?]` at the eight places because the transcription label differs from the key's.
+- **Recount.** v10_relabel.share re-run on the 23 readings: 11,615 words, 561 holes, 0 doubtful; 10,628 words in the 22
+  letters that read; 10,628 / 12,176 = 0.873, as stated.
+
 ## Prior work
 
 - Tomokiyo published the key and wrote that it "will allow reading undeciphered portions"; no reading of the

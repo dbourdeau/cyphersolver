@@ -919,6 +919,15 @@
    ],
    "what": "Second check (14 Nov 2026, Brice Dudout with Claude; NOTES): a separate decoder from contributed/data/key.tsv reproduces the contributor's decoded_*.txt on 45 pages, 32,272 of 32,352 letters (99.75%). The sign w, used 8 times, is missing from key.tsv: Tomokiyo's table has it as W in the double-letters row under r, so w = rr; the W shape seen on the Gallica images at 3 of the 8 places (view 70 right c04, c08; view 65 right c06), and the readings already read r there (courrier, conclure, verriez). fraction_read measured: 10,628 words read in the letters that read over 12,176 words and holes = 0.873 (was 0.91 estimated).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration check of PR #559 (14 Nov 2026): own decoder from key.tsv over the 45 pages reproduces the contributed decodes (32,352 letters; every difference an unvalued sign: Dz 49, arrow 9, w 8, K 7, ? 6, pa 1, or the apostrophe of l'empereur shifting five lines). The 'missing' sign w is not missing: key.tsv already has =rr = rr, described as the W of the double-letters row, and the transcriptions write it =rr at 45 places; w at 8 places is a second label for the same sign (Gallica view 70 right c04 a plain W; view 43 right c05, labelled =rr, the same shape). Value rr stands, no key row added, readings unchanged. v10_relabel.share re-run: 11,615 words, 561 holes, 10,628 words in letters that read, 0.873.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -999,8 +1008,8 @@
    },
    {
     "who": "dudout",
-    "role": "key corrected",
-    "note": "missing sign w = rr found in Tomokiyo's table and seen on 3 Gallica places; second decoder over the 45 contributed pages (99.75% of letters); fraction_read measured (0.873)",
+    "role": "verification",
+    "note": "second decoder over the 45 contributed pages (99.75% of letters); the 8 places transcribed w traced to the key's =rr sign (W, rr) and seen on Gallica; fraction_read measured (0.873)",
     "date": "2026-11-14"
    }
   ],
