@@ -261,7 +261,7 @@
     "by": "llm from images",
     "source": "LASA online viewer, max jpg (recherche.landesarchiv.sachsen-anhalt.de/images//A_1/Nr_530/max/)",
     "image_quality": "fair",
-    "notes": "38 records, inherited settled transcription of an earlier round (one reader per round, reconciled), not re-read glyph by glyph; not blind. Token count by scripts/beling_build.py, so measured is false."
+    "notes": "38 records, inherited settled transcription of an earlier round (one reader per round, reconciled), not re-read glyph by glyph; not blind. Token count by scripts/beling_build.py, so measured is false. Two letters corrected 13 Nov 2026 after an image check (L32 t restored, L33 g for q)."
    }
   },
   {
@@ -618,6 +618,12 @@
    "kind": "reading",
    "what": "Beling addition: Nos. 31 and 32 of 1645 read with the envoys' clear copies in Nr. 540 Bd. 1 open (source-assisted, not independent); other annexes decoded with partial readings only.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Beling addition: word-by-word readings with per-word ledgers and English for f139 (No. 20), f224 (No. 21) and f212 (No. 31; source-assisted, aligned with the Nr. 540 clear copy): strict 42/72, 160/256, 187/328; with look-alikes 55/72, 201/256, 231/328. _check_reading clean shares 0.143, 0.222, 0.121 with repairs marked, so all stay 'decoded, not read'. Two transcription errors in f212 corrected after an independent image check (51 words: 37 confirmed, 10 differ, 4 not legible).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -676,12 +682,6 @@
     "role": "identification",
     "note": "the clear copies of 1645 Nos. 31 and 32 in LASA A 1 Nr. 540 Bd. 1 (frames 633-634, 648-650) and their March 1645 dates, with AI agents",
     "date": "2026-11-12"
-   },
-   {
-    "who": "ajbeling",
-    "role": "verification",
-    "note": "pre-registered key checks on the frame-4 name-sign booklet and the frame-278 glosses (gloss/frame278_BEL/), with AI agents",
-    "date": "2026-11-11"
    },
    {
     "who": "contemporary",
@@ -843,12 +843,16 @@
     "label": "f.212r-v, frames 242-243, No. 31 of 12 Mar 1645 (Beling addition; clear copy Nr. 540 Bd. 1 f. 585r-v)",
     "transcription": "transcriptions/f212_frame242-243_BEL.txt",
     "decryption": "decryptions/f212_frame242-243_BEL.txt",
-    "reading": "readings/f212_BEL.md",
+    "reading": [
+     "readings/f212_BEL_read.md",
+     "readings/f212_BEL.md"
+    ],
     "translation": "translations/f212_BEL.md",
     "language": "de",
     "state": "decoded, not read",
     "summary": "Reports of Lampadius and the Mecklenburg envoy: Wolfenbüttel's correspondence with the Emperor, Electoral Saxony's neutrality, Danish and French designs (succession in the Empire), Torstensson's plans. English in translations/ is AI-made.",
-    "note": "Source-assisted: read with the envoys' own clear copy open (Nr. 540 Bd. 1); the clear text sits beside each cipher record in units/f212_BEL.tsv. The secretary's surname and Gallas stay tentative. The mechanical decryption alone scores 'not a reading' (_check_reading 0.163) and the edition 'marginal' (0.588), so the state is set as for the slips above; AI agent (coordinator of the Beling continuation), 12 Nov 2026, not a person; scoped to the intelligibility and translation of the source-assisted edition and English (readings/f212_BEL_REVIEW.md). The prose leans on the Nr. 540 clear copy: it is a source-assisted reading, not an independent recovery of the plaintext from the cipher. No word-level read share is measured, so this entry is not in fraction_read."
+    "note": "Word-by-word reading (13 Nov 2026), ledger units/f212_BEL_words.tsv: 328 cipher words, S 187 (as it stands), L 44 (hand look-alikes or the second branch of an unsettled glyph), R 83 (other marked repairs), E 14; read_share = strict S share; S+L 0.7043. The reading's _check_reading clean share is 0.121 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Source-assisted: the reading word is the aligned word of the Nr. 540 clear copy; 187 of 328 cipher words agree with it as they stand. Source-assisted: read with the envoys' own clear copy open (Nr. 540 Bd. 1); the clear text sits beside each cipher record in units/f212_BEL.tsv. The secretary's surname and Gallas stay tentative. The mechanical decryption alone scores 'not a reading' (_check_reading 0.163) and the edition 'marginal' (0.588), so the state is set as for the slips above; AI agent (coordinator of the Beling continuation), 12 Nov 2026, not a person; scoped to the intelligibility and translation of the source-assisted edition and English (readings/f212_BEL_REVIEW.md). The prose leans on the Nr. 540 clear copy: it is a source-assisted reading, not an independent recovery of the plaintext from the cipher. No word-level read share is measured, so this entry is not in fraction_read.",
+    "read_share": 0.5701
    },
    {
     "doc": "f221",
@@ -866,11 +870,16 @@
     "label": "f.224r, frame 255, 'Observationes' No. 21 (1644-45 series) (Beling addition)",
     "transcription": "transcriptions/f224_frame255_BEL.txt",
     "decryption": "decryptions/f224_frame255_BEL.txt",
-    "reading": "readings/f224_f220_BEL.md",
+    "reading": [
+     "readings/f224_BEL_read.md",
+     "readings/f224_f220_BEL.md"
+    ],
     "language": "de",
     "state": "decoded, not read",
     "summary": "Partial readings: oaths, the principal proposition, delay and negotiations; actors uncertain. English is in the reading file and is AI-made.",
-    "note": "Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines, and no word-level read share is measured."
+    "note": "Word-by-word reading (13 Nov 2026), ledger units/f224_BEL_words.tsv: 256 cipher words, S 160 (as it stands), L 41 (hand look-alikes or the second branch of an unsettled glyph), R 50 (other marked repairs), E 5; read_share = strict S share; S+L 0.7852. The reading's _check_reading clean share is 0.222 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines, and no word-level read share is measured.",
+    "translation": "translations/f224_BEL.md",
+    "read_share": 0.625
    },
    {
     "doc": "f220",
@@ -910,11 +919,16 @@
     "label": "f.139, frame 162, 'ad Diarium No. 20' (Beling addition)",
     "transcription": "transcriptions/f139_frame162_BEL.txt",
     "decryption": "decryptions/f139_frame162_BEL.txt",
-    "reading": "readings/f138_f139_f102_f104_BEL.md",
+    "reading": [
+     "readings/f139_BEL_read.md",
+     "readings/f138_f139_f102_f104_BEL.md"
+    ],
     "language": "de",
     "state": "decoded, not read",
     "summary": "Two envoys quarrel over discussing temporalia, instructions and religion, then are reconciled; actors are signs. English is in the reading file and is AI-made.",
-    "note": "Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines, and no word-level read share is measured."
+    "note": "Word-by-word reading (13 Nov 2026), ledger units/f139_BEL_words.tsv: 72 cipher words, S 42 (as it stands), L 13 (hand look-alikes or the second branch of an unsettled glyph), R 15 (other marked repairs), E 2; read_share = strict S share; S+L 0.7639. The reading's _check_reading clean share is 0.143 (marked repairs count as holes), below the threshold for 'read in part', so the state stays 'decoded, not read'. Two blind transcriptions, then a context-assisted reconciliation; the reading has holes and bracketed repairs in most lines, and no word-level read share is measured.",
+    "translation": "translations/f139_BEL.md",
+    "read_share": 0.5833
    }
   ]
  }

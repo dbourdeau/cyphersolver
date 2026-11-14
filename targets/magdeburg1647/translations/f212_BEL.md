@@ -26,3 +26,13 @@ The secretary's surname is still bracketed; his full identity is not claimed as 
 **θ.** If only they would append the general clause that this principal proposition should take nothing away from, or prejudice, the Imperial Estates' particular interests and private requests: he had shown himself inclined to this in dealings with both the Hessian and Mecklenburg envoys. A cancelled phrase in the clear copy and an additional sign in the cipher prevent treating every word of this sentence as a settled exact collation.
 
 Period vocabulary: the Imperial Estates are the political members of the Empire; *neutrality* here is a proposed contemporary political arrangement; *desideria* are requests or desired terms; *succurs* is military assistance; *agnatus* is a male-line relative. The historical territorial forms Celle, Calenberg, Wolfenbüttel and Styria translate the copy's Zell, Calenberg, Wolffenbüttel and Steuermarck. No modern geographical boundary is implied.
+
+## What the envoys are reporting (context, kept apart from the reading and the translation)
+
+Annex to the diary signed at Osnabrück on 12 March 1645. The envoys pass on conversations with Lampadius, the
+Brunswick-Lüneburg envoy, and the Mecklenburg envoy: Wolfenbüttel's continuing correspondence with the Emperor, the hope that
+Electoral Saxony would turn neutral, a Danish secretary's report of the Emperor's reproaches to Denmark, French plans to take the
+imperial succession from the Habsburgs for Bavaria, and Salvius's account of Torstensson's next moves (joining the Austrian
+peasants, Styria, relieving Olmütz). "The fighting and ruin of the imperial army" in δ is very probably the battle of Jankau
+(6 March 1645), six days before the diary's date [inference]. This was the moment when the Imperial defeat shifted the balance at
+the congress, and when the Protestant Estates were deciding how far to bind themselves to Sweden.
