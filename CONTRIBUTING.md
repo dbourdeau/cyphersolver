@@ -115,6 +115,28 @@ Conventions). In short:
   `docs/pages.json`, `docs/writeups.html`). They are rebuilt when the contribution is merged.
 - Say in the description how you want to be credited (full name, initials or a handle, and a link if you like).
 
+## Review and merging
+
+Two maintainers review and merge: Daniel Bourdeau (`@dbourdeau`) and Brice Dudout (`@bdudout`). The rules are held by
+the repository ([`.github/CODEOWNERS`](.github/CODEOWNERS) and the ruleset on `main`), not by memory.
+
+- **A change to a result needs the other maintainer.** Readings, keys, transcriptions, catalogue entries, leads,
+  credits, write-up pages, the checkers, the build scripts and the workflows are owned paths. A pull request that
+  touches one merges only with the approval of a maintainer who is not its author: a maintainer's own goes through
+  the other, a contributor's through either.
+- **A design-only change needs no approval.** The stylesheets and page scripts listed at the end of `CODEOWNERS` have
+  no owner, so a maintainer can merge their own change to them. A pull request that mixes design and results counts
+  as a change to results.
+- **A reading merges only with its sources and a `reading_review` graded A or B**, recorded by the reviewer, not by the
+  author of the reading. Anything doubtful stays open with a comment saying what is missing; either maintainer can ask
+  the other for a second look before a merge.
+- **Nothing merges with a failing check.** "Check write-ups" and "Reading check" are required.
+- Promotion of a lead to the catalogue stays a separate step after review, never part of a contributor's pull request.
+
+The site rebuild pushes with its deploy key, outside these rules; it changes generated files only. The owner's
+maintainer sessions also push to `main` directly for now, so the owner's own changes to results are bound by this
+section as a convention rather than by the ruleset.
+
 ## How credit is recorded
 
 Each target's `profile.json` carries `outcome.credits`: who contributed and in what role (solution, new cipher, new
