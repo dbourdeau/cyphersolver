@@ -136,10 +136,38 @@ Paged or searched, with result:
   them. The Rapport de l'Archiviste de la Province de Québec was not searched.
 - Upstream targets from Canada 1757-60 other than the Vaudreuil letters: none in the repository holds open groups.
 
+## Integration check (14 Nov 2026)
+
+Checked when pull request #583 was integrated (round 13).
+
+- Freeze: the four sha256 values in `key/FREEZE.txt` match the files in the folder. That the table and plan were frozen
+  before any comparison is by the contributor's record (one commit, no outside timestamp).
+- `decode_letters.py` re-run: the four similarities (0.938, 0.921, 0.939, 0.935) and every shuffle figure come out the
+  same. An own decoder written from the frozen table gives the same four `_decode.txt` files.
+- Strict word count, table alone. A word of Casgrain's clear text counts only when every letter of it comes out of cells
+  the table marks clear: I1 82 of 122 words (67.2%), I2 23 of 31 (74.2%), I3 169 of 233 (72.5%), I4 265 of 371 (71.4%).
+  With the doubtful cells counted too: 79.5%, 83.9%, 82.0%, 82.7%. The contributor's 92 to 94% is a letter-level
+  similarity, a different and looser measure. So the table alone does not read a letter; the text is Casgrain's.
+- Image: the LAC file of e001295272 has the recorded sha256. 80 cells (301-394 and 401-494, first four columns) were
+  read on it at five times enlargement: 71 agree with the table. Of the 9 differences, 8 fall on cells the table already
+  marks doubtful (474 read "t", which is the contributor's own post-freeze correction), 1 on a cell marked clear
+  (492, "contraire" in the table, "connoitre" possible). At 775 pixels neither reading of 492 is safe.
+- Outcome method set to "read from existing decipherment": all four letters were printed in clear by Casgrain in 1890
+  and nothing is read here that was not in print. Matching the archive table to them is kept as a part of the outcome
+  (`outcome.parts`, "read after matching with key from external sources", partial).
+- One key, one entry: code I is not code W (`results/compare_codeW.tsv`, 0 of 238) and not the Vaudreuil table of
+  `targets/vaudreuil1760` (sheet 274; that target tried sheet 272 on its letter and rejected it). Three codes, three
+  folders. This folder and `targets/montcalm1757w` point to each other.
+- Not rechecked: the comparisons with the contributor's earlier code I and code B tables (those tables are not in the
+  folder, only the result files), Casgrain's figures against the page images, the searches for more text.
+
+The gaps are workable from here only in part: the doubtful cells can be settled from the four letters (the seven
+post-freeze corrections show how), so the folder stays `Status: in progress` and has no page.
+
 ## Remaining gaps
 
 - Cells 1-20 of the table: off the LAC photograph. blocker: needs-physical-access (ANOM COL C11E 10 f.288).
-- 138 doubtful cells, chiefly short syllables, at 775 pixels. blocker: needs-physical-access (a better image).
+- 138 doubtful cells, chiefly short syllables, at 775 pixels. blocker: needs-physical-access (a better image) for the cells the four letters never use; the cells the letters use can be settled from Casgrain's clear text, not done yet (not-attempted beyond the seven in `key/corrections_post_freeze.tsv`).
 - No second text in the code read: the F3 15 f.194 and 12 Apr 1759 cipher pieces are not online. blocker:
   needs-physical-access.
 

@@ -263,14 +263,19 @@
       "what": "Five Trémais groups (1759) looked up in the table: no sense; his letters use stacked groups, a different system.",
       "result": "ruled out"
     },
+    {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Integration check of PR #583 (round 13). The four sha256 values of key/FREEZE.txt match the files. decode_letters.py re-run: all four similarities and shuffle figures identical (0.938, 0.921, 0.939, 0.935). An own decoder from the frozen table gives the same four decode files. Strict word count, table alone, a word of Casgrain's text counted only when every letter of it comes from cells marked clear: I1 82 of 122 (67.2%), I2 23 of 31 (74.2%), I3 169 of 233 (72.5%), I4 265 of 371 (71.4%); with doubtful cells also counted 79.5, 83.9, 82.0 and 82.7%. Table against the LAC image e001295272 (same sha256 as recorded), 80 cells of blocks 301-394 and 401-494 read at five times enlargement: 71 agree; 8 of the 9 differences are on cells the table marks doubtful (one, 474 t, is the contributor's own post-freeze correction), 1 on a clear cell (492). Outcome method changed from 'read after matching with key from external sources' to 'read from existing decipherment': the text is Casgrain's printed clear text.", "result": "worked"},
     {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1292 tokens, 273 types, fr-1750-nospace order 4: reading -2.13 per letter; random keys -3.164 (z 11.4); key annealed onto shuffled ciphertext best -2.198 (mean -2.212, z 8.4); annealer on the real text -2.167. Verdict: pass.", "result": "worked"}
    ],
   "outcome": {"validation": {"date": "2026-11-13", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 1292, "types": 273, "tokens_per_type": 4.73, "score": -2.13, "nulls": {"random keys": {"n": 200, "mean": -3.164, "sd": 0.091, "max": -2.929, "z": 11.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.212, "sd": 0.01, "max": -2.198, "z": 8.4, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.13; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
     "class": "already solved",
     "key": "partial",
-    "method": "read after matching with key from external sources",
+    "method": "read from existing decipherment",
     "first_break": false,
-    "method_basis": "The period deciphering table, transcribed blind from the archive image, matched to letters already printed in clear.",
+    "method_basis": "The text of the four letters is the period decipherment as Casgrain printed it in 1890. The period deciphering table, transcribed blind from the archive image, was matched to those letters afterwards; the table alone does not give the text (integration check, 14 Nov 2026).",
+    "parts": [
+      {"label": "The four letters (text)", "method": "read from existing decipherment", "extent": "complete", "basis": "Casgrain III (1890) prints figures and clear text; nothing read here that was not in print."},
+      {"label": "Deciphering table e001295272", "method": "read after matching with key from external sources", "extent": "partial", "basis": "The table, not connected with the letters before, was matched to them: with clear cells only it gives 67 to 74% of Casgrain's words whole, per letter."}
+    ],
     "contribution": [
       "transcription",
       "key extended or corrected"
