@@ -1,6 +1,6 @@
 # Check of the contributor's transcription and reading (9 Nov 2026)
 
-What an AI model (Claude) checked of the submission by William Echols (issue #353). The Library of Congress scan and the NARA codebook pages are not reachable from the project's environment, so **no group and no codebook entry was compared with an image by the project**. No human has repeated the check.
+What an AI model (Claude) checked of the submission by William Echols (issue #353). The Library of Congress scan and the NARA codebook pages are not reachable from the project's environment, so **no group and no codebook entry was compared with an image by the project** on that date. No human has repeated the check. Update 14 Nov 2026: the codebook pages are online and every entry was then checked on them (section 4); the scan is still not seen.
 
 ## 1. The groups
 
@@ -12,7 +12,11 @@ Replacing each group by its entry gives "What is the object of British governmen
 
 ## 3. What the project could not check
 
-- Any entry of the codebook, the page references or the spelling table, and the transcription of the groups against the scan.
+- The transcription of the groups against the scan. (The codebook entries, page references and spelling table were checked on 14 Nov 2026, section 4.)
 - That the cancelled groups are cancelled on the original, and the pen correction of a group on line 2 to 53664.
 - The history (the squadron visit, the Kiel call) beyond the telegram's text.
 - Statistical validation: not applicable to a codebook lookup; the coherence of the sentences is the evidence.
+
+## 4. Codebook check (14 Nov 2026)
+
+The codebook pages turned out to be online (NARA T1171 roll 1, catalog id 417267710, one printed page per image; found in the integration of PR #561, `targets/kobe1918`). The project (Claude) looked up each of the 22 distinct groups on its page image and the spelling code, division 1 (page 579, image 0577): every entry agrees with `key_excerpt.tsv`, and the key 56169 reads U A W C as K I E L. Section 3's first point is now limited to the transcription of the groups against the Library of Congress scan, which is still not seen; the other points stand.

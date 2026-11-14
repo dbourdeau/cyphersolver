@@ -62,7 +62,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "The Roosevelt Center record gives no decoding and the contributor found none; the codebook is an archived key (NARA T1171; a repository note says it is printed in Weber 1979, not consulted here) not previously connected with this telegram.",
+   "where": "The Roosevelt Center record gives no decoding and the contributor found none; the codebook is an archived key (NARA T1171 roll 1, online; a repository note says it is printed in Weber 1979, not consulted here) not previously connected with this telegram. The same codebook is used in the 1918 Kobe telegrams (targets/kobe1918), a separate correspondence.",
    "found": "before attempt",
    "used": false
   },
@@ -71,12 +71,12 @@
    "published key"
   ],
   "attack": "published key",
-  "human_role": "William Echols submitted the transcription, the key identification and the reading (issue #353), made with GPT-6.1 Sol in Codex. The project checked the submission for internal coherence; it has not seen the scan or the codebook pages.",
+  "human_role": "William Echols submitted the transcription, the key identification and the reading (issue #353), made with GPT-6.1 Sol in Codex. The project checked the submission for internal coherence and, on 14 Nov 2026, checked every codebook entry used on the NARA page images; it has not seen the scan of the telegram.",
   "models": [
    "GPT"
   ],
   "first_date": "2026-11-09",
-  "last_date": "2026-11-09"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -96,6 +96,12 @@
    "kind": "verification",
    "what": "Project check: 23 groups (22 distinct) each have an entry in key_excerpt.tsv and the replaced text is a coherent English telegram (VERIFICATION.md). No scan or codebook page compared.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Project check of the key on the codebook itself: NARA T1171 roll 1 (catalog id 417267710), found online in the integration of PR #561 (targets/kobe1918). Each of the 22 distinct groups looked up on its page image (images listed in key_excerpt.tsv) and the spelling code division 1, page 579 (image 0577), with the key 56169: all 22 entries agree with the contributor's, and U A W C read K I E L. The scan of the telegram is still not seen, so the transcription is not checked.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -110,7 +116,7 @@
   ],
   "method": "read after matching with key from external sources",
   "key": "not applicable",
-  "method_basis": "The key is an existing codebook (the 1876 State Department Red Cipher) that had not been connected with this telegram; the contributor identified it and applied it. The project did not see the codebook pages and checked only that the result is coherent.",
+  "method_basis": "The key is an existing codebook (the 1876 State Department Red Cipher) that had not been connected with this telegram; the contributor identified it and applied it. The project checked that the result is coherent and, on 14 Nov 2026, that every entry used stands in the codebook (NARA T1171 roll 1 images).",
   "contribution": [
    "transcription"
   ],
@@ -136,9 +142,9 @@
   ],
   "gaps": [
    {
-    "item": "a human check of the 23 groups and the codebook entries against the Library of Congress scan and the NARA codebook pages",
+    "item": "a check of the 23 groups of the transcription against the Library of Congress scan",
     "blocker": "needs-physical-access",
-    "detail": "tile.loc.gov and catalog.archives.gov are not reachable from the project"
+    "detail": "loc.gov returns 403 to curl; not tried in a browser, so workable in principle. The codebook half of the former gap was closed on 14 Nov 2026 (all 22 entries and the spelling table checked on the NARA images). A check of a complete reading, not an unread piece: the class read stands."
    },
    {
     "item": "Hay's received copy or a printed edition of Roosevelt's papers as a check on the decipherment",
@@ -146,7 +152,7 @@
     "detail": "not searched by the contributor or the project"
    }
   ],
-  "notes": "Transcription, key identification and reading by William Echols; checked by the project for internal coherence only, not against the scan or the codebook.",
+  "notes": "Transcription, key identification and reading by William Echols; checked by the project for internal coherence and, on 14 Nov 2026, every codebook entry and the spelling rows checked on the NARA T1171 images; the transcription not checked against the scan. Same printed codebook as targets/kobe1918 (separate target, cross-referenced; one-entry question left to the owner at kobe1918's write-up).",
   "fraction_read": 1.0,
   "fraction_read_method": "measured",
   "fraction_read_source": "All 23 uncancelled groups and the four spelled letters read (contributor); counted from transcription.txt.",
@@ -168,7 +174,7 @@
      "grade": "A",
      "by": "Claude (for the project)",
      "date": "2026-11-09",
-     "note": "Read the decipherment as English sentences: the 23 groups replaced by their entries build a coherent telegram; the transcription and the codebook entries are the contributor's and were not compared with the images."
+     "note": "Read the decipherment as English sentences: the 23 groups replaced by their entries build a coherent telegram; the transcription is the contributor's and was not compared with the scan; the codebook entries were checked on the NARA images on 14 Nov 2026."
     }
    }
   ]

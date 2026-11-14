@@ -1,6 +1,6 @@
 # roosevelt1903: Theodore Roosevelt to John Hay, coded telegram of 27 May 1903 (Library of Congress, Roosevelt Papers reel 413 frame 0026)
 
-Status: read (9 Nov 2026). Contributed by William Echols (issue #353; he worked with OpenAI's GPT-6.1 Sol in Codex): a telegram in the State Department's Red Cipher of 1876, a codebook of numbered groups, found to fit and applied. Checked here against the submission only (`VERIFICATION.md`); neither the telegram scan nor the codebook pages are reachable from the project, so **no codebook entry and no group of the transcription was compared with an image here**. The check made is that the 23 groups and the spelled letters give a coherent English telegram.
+Status: read (9 Nov 2026). Contributed by William Echols (issue #353; he worked with OpenAI's GPT-6.1 Sol in Codex): a telegram in the State Department's Red Cipher of 1876, a codebook of numbered groups, found to fit and applied. Checked here against the submission (`VERIFICATION.md`): the 23 groups and the spelled letters give a coherent English telegram. On 14 Nov 2026 the codebook was found online (NARA T1171 roll 1, one printed page per image) and **all 22 distinct entries and the spelling of K I E L were looked up on the page images and agree** (`key_excerpt.tsv`, image per entry). The telegram scan (Library of Congress) is still not seen here, so **no group of the transcription was compared with an image**.
 
 ## The document
 
@@ -14,16 +14,20 @@ Roosevelt asks what the object of the British government's request is, says he d
 
 ## The cipher
 
-A codebook: each five-digit group stands for a phrase, the first three digits giving the printed page and the last two the entry, in the State Department Red Cipher of 1876 compiled by John H. Haswell (NARA catalog id 417267710, microfilm T1171; a repository note (research/nara_state) says Weber 1979 prints it; not consulted here). The column "Message or true reading" is the plain side. Names the book lacks are spelled with a spelling table, keyed by the first number group of the message (here 56169): the coded letters U A W C read K I E L. A clear word may stand between groups ("junketing"), and two groups are cancelled. Florentijn van Kampen's study of the State Department codes supplied the clue for the group 10000 and pointed to the digitized codebook. This is a code, not a cipher recovered from the ciphertext: the book is an existing key found to fit.
+A codebook: each five-digit group stands for a phrase, the first three digits giving the printed page and the last two the entry, in the State Department Red Cipher of 1876 compiled by John H. Haswell (NARA, RG 59, microfilm T1171 roll 1, "Codebooks of the Department of State, 1867-1876", catalog id 417267710, 587 images, one printed page per image, public and fetched with curl; a repository note (research/nara_state) says Weber 1979 prints it; the print was not consulted here). The column "Message or true reading" is the plain side. Names the book lacks are spelled with a spelling table, keyed by the first number group of the message (here 56169): the coded letters U A W C read K I E L. A clear word may stand between groups ("junketing"), and two groups are cancelled. Florentijn van Kampen's study of the State Department codes supplied the clue for the group 10000 and pointed to the digitized codebook. This is a code, not a cipher recovered from the ciphertext: the book is an existing key found to fit.
+
+## Codebook check (14 Nov 2026)
+
+The codebook pages were reported unreachable on 9 Nov; the integration of PR #561 (`targets/kobe1918`, NOTES "Integration check") found them online: NARA T1171 roll 1, catalog id 417267710, image files `https://catalog.archives.gov/medialz/dc-metro/rg-059/2034503/T1171/T1171-01/T1171-01-NNNN.jpg`. Each of the 22 distinct groups was looked up on its page image (page number read on the image header; for the pages used here image = page - 3 up to page 368 and page - 2 from page 384 on): every entry agrees with the contributor's (`key_excerpt.tsv`, columns page, image, checked). The spelling code, division 1, page 579 (image 0577): with the key 56169 (rows 5 6 1 6), U A W C stand under K I E L. Codebook pages hold two columns of 50 entries (00-49, 50-99) under one page number. No figure of the reading changes. The transcription of the telegram itself is still the contributor's.
 
 ## Remaining gaps
 
-- A human check of the 23 groups and the codebook entries against the Library of Congress scan and the NARA codebook pages - blocker: needs-physical-access; tile.loc.gov and catalog.archives.gov are not reachable from the project
+- A check of the 23 groups of the transcription against the Library of Congress scan - blocker: needs-physical-access; loc.gov returns 403 to curl and the scan was not tried in a browser (CLAUDE.md: Chrome), so this gap is workable in principle, not closed. The codebook half of the former gap is closed: the 22 entries and the spelling table were checked on the NARA images on 14 Nov 2026 (`key_excerpt.tsv`). The gap concerns verification of a reading already complete, not an unread piece, so the class "read" stands
 - Whether Hay's received copy or a printed edition of Roosevelt's papers carries the decipherment (Hay Papers at the Library of Congress and Brown; the Roosevelt letters) - blocker: needs-physical-access; not searched by the contributor or the project
 
 ## Escalation
 
-- [x] siblings: none; the project holds no other telegram known to use the 1876 Red Cipher
+- [x] siblings: `targets/kobe1918` (five State Department - Kobe consulate telegrams of Jan-Feb 1918) uses the same printed Red Code of 1876 (integration check of PR #561, 14 Nov 2026: 23 groups looked up in T1171 roll 1, `targets/kobe1918/codebook_check.tsv`; 47372 = Request in both). Separate correspondences fifteen years apart; kept as separate targets and cross-referenced, the owner decides at the write-up of kobe1918 whether the Red Code gets one entry
 - [x] clear-pages: the clear word "junketing" and the cancelled groups read with the coded text; no page is a decipherment
 - [x] known-keys: the 1876 Red Cipher (Haswell) is the key used, matched by the contributor after the catalogue had suggested a State Department code
 - [x] print: the contributor reports no earlier reading found; the repository was checked by the project (no earlier reading of this telegram)
@@ -35,7 +39,7 @@ A codebook: each five-digit group stands for a phrase, the first three digits gi
 | File | Content |
 |---|---|
 | `transcription.txt` | the telegram as transcribed (contributor) |
-| `key_excerpt.tsv` | the 22 codebook entries used (contributor), with the spelling rule |
+| `key_excerpt.tsv` | the 22 codebook entries used (contributor), with the spelling rule; page and image of each entry, checked on the NARA images 14 Nov 2026 |
 | `decryption.txt` | the literal decipherment (contributor) |
 | `reading.md` | the reading |
 | `contributor_issue.md` | the submission as filed, shortened |
