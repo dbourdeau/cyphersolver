@@ -414,7 +414,7 @@ PAGES = [
          rights='Archiwum G&#322;&oacute;wne Akt Dawnych, Warsaw, via szukajwarchiwach.gov.pl'),
     dict(slug='oxenstierna1633', label='Letters to Oxenstierna 1633', year='1633', y=1633.45, place='Germany &rarr; Axel Oxenstierna', st='stuck', stt='surveyed only',
          title='Swedish letters to Oxenstierna, June 1633',
-         blurb='Four Swedish letters to Axel Oxenstierna of June 1633 (Riksarkivet, Oxenstierna collection E 708, DECODE R4338&ndash;R4341, dated 1646 there), mostly clear with two- and four-digit code numbers, some glossed between the lines at the time. Opened and dated, not yet transcribed; the writer is unidentified.',
+         blurb='Four Swedish letters to Axel Oxenstierna of June 1633 (Riksarkivet, Oxenstierna collection E 708, DECODE R4338&ndash;R4341, dated 1646 there), mostly clear with two- and four-digit code numbers, some glossed between the lines at the time. Opened and dated, not yet transcribed; the writer is probably Johan Adler Salvius, under whose name the archive files E 708.',
          quote='1328 &middot; 3192 &middot; 3105 &middot; 1564 &middot; undeciphered',
          rights='Manuscript rights: Riksarkivet, Stockholm, via DECODE'),
     dict(slug='geleen1633', label='Electors to Geleen 1633', year='1633', y=1633.8, place='Cologne &rarr; Geleen&rsquo;s army', st='partial', stt='key from ciphertext only &middot; partial',
