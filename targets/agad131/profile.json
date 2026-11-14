@@ -111,6 +111,26 @@
    "kind": "control",
    "what": "Project check: an own script applied the reciprocal key to the 64 cipher lines and got the contributor's decryption in 62 lines and at 99.9% letter agreement; a word-list test gives 46.3% of letters in listed words against a mean of 4.5% and a best of 19.1% for 200 shuffled keys (VERIFICATION.md). No scan compared.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Second check (14 Nov 2026, Brice Dudout with Claude; VERIFICATION.md section 4): own decoder from key.tsv alone, 2,447 of 2,449 letters as decryption.txt (the two differences are the capital X of p4.14 and p4.17, outside the key, given as K in decryption.txt). Recount by the README rule with v10_relabel.share: French cipher passages 576 words, 22 holes, 0.963 (whole file 0.971), replacing the estimate 0.946. Scans not seen; the contributor's ~300 pass differences remain unsettled.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Integration check of PR #559 (14 Nov 2026): own decoder from key.tsv gives 2,447 of 2,449 letters of decryption.txt (the two capital X); v10_relabel.share on reading.md: whole file 895 words, 27 holes (0.971); own paragraph split of the French cipher passages 563 words, 22 holes (0.962), against the contributor's 576/22 (0.963). Class kept read in part: word share above 0.95, but three signs and code 190 unread and the ~300 pass differences not settled on the scans.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -137,6 +157,12 @@
     "role": "solution",
     "note": "transcription and partial reading of the letter with his key of letter 446; issue #331; repository prabal-rje/branicki-1757, CC BY 4.0",
     "date": "2026-11-07"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "second decoder from key.tsv (99.9% of letters) and recount of the reading by the README rule (0.963 on the cipher passages)",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [
@@ -146,7 +172,7 @@
     "detail": "each occurs a few times and no text fixes it"
    },
    {
-    "item": "three cipher signs and about 25 of some 460 cipher words doubtful or holding an unread code",
+    "item": "three cipher signs and 22 holes (doubtful words and unread codes) in 576 cipher words (measured 14 Nov 2026; contributor's estimate about 25 of some 460)",
     "blocker": "illegible",
     "detail": "look-alike hand (c, e and r; n, o and u; g and q; w and y)"
    },
@@ -161,10 +187,10 @@
     "detail": "not searched by the contributor and not available to the project"
    }
   ],
-  "notes": "Transcription and reading by Prabal Gupta with the key of letter 446; checked by the project against his files and a shuffled-key control, not against the scans. About 435 of some 460 cipher words read (94.6%).",
-  "fraction_read": 0.946,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Contributor's issue #331: about 25 of some 460 cipher words doubtful or holding an unread code, so about 435 of 460 = 94.6%; the project did not recount.",
+  "notes": "Transcription and reading by Prabal Gupta with the key of letter 446; checked by the project against his files and a shuffled-key control, not against the scans. Read share measured 14 Nov 2026: 576 cipher words, 22 holes, 0.963 (the contributor estimated about 435 of some 460, 94.6%); stays read in part because three signs and code 190 are unread and the transcription is not checked on the scans.",
+  "fraction_read": 0.963,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, French cipher passages only (the Polish clear passages left out): 576 words, 22 holes, read share 0.963 by research/reading_audit/v10_relabel.share (14 Nov 2026); the whole file gives 0.971 (895 words, 27 holes). Replaces the contributor's estimate of 0.946.",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -178,7 +204,7 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.946,
+    "read_share": 0.963,
     "summary": "An unsigned letter from Wilno of 11 July 1757 to a patron in the Branicki circle, in the contributor's reading: the Castellan of Brest and Count Pociej, Strażnik of Lithuania, ask protection and a subsidy for the coming Lithuanian Tribunal, having borrowed up to two hundred thousand francs beyond the French subsidy; the Castellan's nephew Ciechanowiecki's memorial is to go to the French ambassador, the Count de L'Hôpital; in the contributor's reading Strutyński, Starost of Szakinów, came armed to the Brasław dietine to kill a Ciechanowiecki (the word 'massacre' is a conjecture) and is shielded by Field Marshal Apraksin. The identities of writer and addressee and the two rumours at the end are the contributor's inference.",
     "reading_review": {
      "grade": "B",

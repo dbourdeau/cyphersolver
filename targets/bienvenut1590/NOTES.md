@@ -96,6 +96,24 @@ Gap closed: "n23, ff. 35r-v beyond the sample: not transcribed".
   letter); Lucien Cramer and Alain Dufour, *La Seigneurie de Genève et la Maison de Savoie*, t. IV (*La guerre de
   1589-1593*), is the book to check for Roccas and Vier. Open, names only.
 
+## 14 Nov 2026: independent check of the codes (Brice Dudout, with Claude)
+
+- A separate script read `key.txt` and the code numbers of `texts/n23_transcription.md` (a number followed by a
+  point; the plain figures 8, 10000, 1000, 1200 and the year 1590 left out) and gave 26 codes, in the order of
+  `codes.txt`. Each resolves on the key slip, and the 26 bracketed names of `texts/n23_decryption.md` follow them one
+  for one, the two double entries (15, 17) given as the reading chooses.
+- The 26 numbers were read again on Gallica btv1b525245007 canvases 79-80 at full resolution (4061 x 5828): all as
+  transcribed (36, 53, 37 x3, 1 x6, 10 x6, 35 x3, 15 x2, 17 x3, 26). The key slip on canvas 81 was fetched too.
+- Two doubtful places seen again: 35r.11 "fer[r]oit": the word is written "ferr" and its last letters are inked over
+  in a darker stroke, so "feroit (?)" stays doubtful; 35r.29: the word after "veuille" is written "empretes" as the
+  transcription notes, and "empieter" stays the sense reading.
+- Recount by the README rule (`v10_relabel.share` on `texts/n23_decryption.md`): 963 words, 0 holes, 4 doubtful,
+  0.996, as recorded.
+- Integration check (14 Nov 2026): an own script resolves the 26 codes of the transcription (the year 1590 left out) on
+  key.txt in the order of codes.txt, and they match the 26 names of the decryption one for one; the 15 codes of f. 35r
+  seen on the Gallica canvas 79 (full size, viewed reduced) as transcribed; v10_relabel.share re-run: 963 words, 0 holes,
+  4 doubtful, 0.996. Nothing on the page changes.
+
 ## Open
 
 * The dual entries 15 (villes de l'Union, or Provence & Dauphiné) and 17 (duc de Parme, or Picardie) are taken from

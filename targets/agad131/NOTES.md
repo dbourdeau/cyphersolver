@@ -19,9 +19,20 @@ The key of letter 446 with no change: a reciprocal alphabet of twelve pairs (a-h
 ## Remaining gaps
 
 - Code group 190 and the proposed values 185 = Branicki and 275 = Dantzig, which are conjectures - blocker: open-codes; each occurs a few times and no text fixes it
-- Three cipher signs, one before "de Russie" and two in the proposed "réponse", and about 25 of some 460 cipher words doubtful or holding an unread code (Autres, Ce pourquoi, par de, massacre, cris/crimes, d'être entré, tous, marque; Pińsk, Szkultyn, Königsberg, Bruwen/Bouwen) - blocker: illegible; look-alike hand (c, e and r; n, o and u; g and q; w and y)
+- Three cipher signs, one before "de Russie" and two in the proposed "réponse", and the doubtful words and unread codes of the reading, 22 holes in 576 cipher words (measured 14 Nov 2026; the contributor had estimated about 25 of some 460) (Autres, Ce pourquoi, par de, massacre, cris/crimes, d'être entré, tous, marque; Pińsk, Szkultyn, Königsberg, Bruwen/Bouwen) - blocker: illegible; look-alike hand (c, e and r; n, o and u; g and q; w and y)
 - About 300 transcription differences between the two passes (88% agreement on 2,514 tokens) not settled one by one on the scan - blocker: needs-physical-access; the scans are not reachable from the project
 - Unit 83 (Beck, 1757) and the rest of the fonds, key sheet 1196, and the Radziwiłł and Branicki papers in other archives - blocker: needs-physical-access; not searched by the contributor and not available to the project
+
+## Read share and state (14 Nov 2026)
+
+Recount by Brice Dudout (PR #559, `VERIFICATION.md` section 4), checked at the integration: the French cipher passages of
+`reading.md` give 576 words and 22 holes, 0.963 (own split of the paragraphs: 563 words, 22 holes, 0.962; the line
+between Polish and French inside the "JMPan de [?Bruwen]" paragraph is drawn by hand); the whole file gives 895 words,
+27 holes, 0.971. An own decoder from key.tsv gives 2,447 of 2,449 letters of decryption.txt (p4.14 and p4.17: capital X,
+outside the key, given as K). The word share is above 0.95, but the letter stays **read in part** under the read bar's
+other conditions: three cipher signs are unread and code 190 is open (not every letter read), and the about 300
+differences between the two transcription passes have not been settled on the scans (the AGAD scans on
+szukajwarchiwach are not reached from the project; blocker needs-physical-access above).
 
 ## Escalation
 

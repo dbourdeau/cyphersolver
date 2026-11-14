@@ -34,6 +34,20 @@ Piccinino whatever he asks, especially all his lands. Orlando would be better of
 Why both copies: a clear letter and its ciphered duplicate sent the same day, presumably by two routes so that one
 would get through. No other copy was found.
 
+## Recount (14 Nov 2026, Brice Dudout with Claude)
+
+`research/reading_audit/v10_relabel.share` on `texts/f33_decryption.txt` gives 135 words, 0 holes, 2 doubtful words
+(the two `(?)` of L06 and L09), read share **0.985**; the profile had 1.0, which does not count the two doubtful words
+the README rule counts. The letter stays read (bar 0.95). `fraction_read` (513 of 513 signs on the key) is a sign
+count and is left as it is. The two places were looked at again on Gallica btv1b52525947w canvas 62 at full
+resolution: the sign of L06 is a small n-shaped stroke run into the next sign, which fits c (small raised n) or g
+(small low m) equally; it is not settled from this scan. The decode of `texts/f33_cipher.txt` is the identity on the
+key letters (the transcription writes signs as key letters), so no second decoder adds anything here.
+
+Integration check (14 Nov 2026): the recount was re-run (135 words, 0 holes, 2 doubtful, 0.985); the letter stays read
+(the read bar's word share is met, the two doubtful words are single cramped signs that the clear duplicate f. 32 fixes,
+and every sign is on the key). The page now gives the 98.5%. The Gallica re-look at L06 was not repeated.
+
 ## Remaining gaps
 
 - Two sign shapes uncertain (L06 c/g, L09 i) - blocker: illegible; small cramped strokes on a microfilm-derived scan, and the sense fixes both.

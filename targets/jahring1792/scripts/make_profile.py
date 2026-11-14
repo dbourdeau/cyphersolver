@@ -145,7 +145,7 @@ P = {
              "summary": "Business letter of 1 June 1792: the building goes slowly, the cash box, constant withdrawals of credit, people try "
                         "to harm \"our credit\" but \"we keep it all the same\"; the correspondents \"are well disposed\"; Jacobi and a thousand guilders.",
              "note": "Not prose: 12 runs of one to five words (28 words) inside a letter in clear German; each completes a clear sentence. "
-                     "Words: 17 verbatim from the signs, 8 with a marked change, 3 holes (119L.2, part of 119.7, end of 119.13). Clean share "
+                     "Words: 19 verbatim from the signs, 6 with a marked change (14 Nov 2026: three r read as v on the image), 3 holes (119L.2, part of 119.7, end of 119.13). Clean share "
                      "of the German sentences 0.70 (10 sentences); whole file 0.541. The clear frame is an approximate working transcription."},
             {"doc": "img120_bericht_upper", "label": "Image 120 right, report \"Unterthänigster Bericht\": the four upper runs",
              "transcription": "transcription_120.txt", "decryption": "decryption_120.txt", "reading": "reading_120.md",

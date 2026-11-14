@@ -208,6 +208,25 @@
    "kind": "verification",
    "what": "Integration check (13 Nov 2026): check_marks.py re-run (16 of 16 runs, all marks accounted for); own Porta decoder (keyword constantinopolitanus, restart per run, signs d-loop = f and dot = o) written from runs.json reproduces the mechanical decryption of all 16 runs; arcinsys image 120 fetched (plain GET) and runs 120.1-120.4 (about 160 letters) compared with the transcription: agree except one q/g-shape place at the end of 120.3. Held-out figures not re-run in full (scripts read; reading made with the key in view; two sign values set after the freeze). Status in progress: five gaps are not-attempted, no page.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "other"
+   ],
+   "what": "Independent check (14 Nov 2026, Brice Dudout with Claude): a Porta decoder written from the statements of key.tsv alone reproduces decryption_119.txt and decryption_120.txt, 372 of 372 letters. At each marked change in the 119 runs the cipher letter that would give the wanted plaintext was computed and the place read on the arcinsys image 119: at 119.1 letter 10, 119.8 letter 9 and 119.12 letter 9 the image has v, not r, which gives 'cassengeschafte', 'gestimt' and 'miscredit' with no change. 119.2 letter 11 (v or w) and 119.6 letter 5 (s or f) stay open; 119.10 letter 8 is a clear q and 120.2 letter 10 a clear l (writer's slips). 119 now 19 words verbatim, 6 changed, 3 holes; check_marks.py passes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration check of PR #559 (14 Nov 2026): own Porta decoder from key.tsv reproduces decryption_119.txt and decryption_120.txt, 372 of 372 letters; arcinsys image 119 fetched (plain GET) and runs 119.1, 119.8 and 119.12 (41 letters) compared: all as now transcribed, the three corrected places a pointed v. scripts/heldout.py re-run on the corrected runs: working key Porta 333/348 = 0.957 (was 330/348 = 0.948), frozen key as frozen 305/346 = 0.882 (was 303/346 = 0.876), Vigenere and Beaufort controls unchanged (0/348, 3/348; 1/346, 4/346); heldout_result.txt updated.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -254,6 +273,12 @@
     "role": "verification",
     "note": "one independent AI reader, blind: about 230 cipher letters in 7 of the 16 runs copied from the image, the marks, decryption and held-out figures reproduced, the image 120 reading checked as sentences; no human palaeographer",
     "date": "2026-11-13"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent Porta decoder (372 of 372 letters) and a second reading of the marked places of image 119: three r read as v (119.1, 119.8, 119.12)",
+    "date": "2026-11-14"
    }
   ],
   "key_file": [
@@ -293,7 +318,7 @@
     "language": "de",
     "state": "not prose",
     "summary": "Business letter of 1 June 1792: the building goes slowly, the cash box, constant withdrawals of credit, people try to harm \"our credit\" but \"we keep it all the same\"; the correspondents \"are well disposed\"; Jacobi and a thousand guilders.",
-    "note": "Not prose: 12 runs of one to five words (28 words) inside a letter in clear German; each completes a clear sentence. Words: 17 verbatim from the signs, 8 with a marked change, 3 holes (119L.2, part of 119.7, end of 119.13). Clean share of the German sentences 0.70 (10 sentences); whole file 0.541. The clear frame is an approximate working transcription."
+    "note": "Not prose: 12 runs of one to five words (28 words) inside a letter in clear German; each completes a clear sentence. Words: 19 verbatim from the signs, 6 with a marked change (14 Nov 2026: three r read as v on the image), 3 holes (119L.2, part of 119.7, end of 119.13). Clean share of the German sentences 0.70 (10 sentences); whole file 0.541. The clear frame is an approximate working transcription."
    },
    {
     "doc": "img120_bericht_upper",

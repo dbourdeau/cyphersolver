@@ -133,3 +133,18 @@ are themselves prior art for every glossed group.
 7. Describe the held-out test accurately: 11 groups, graded against the glosses, key values only; the hard-coded
    "frozen" dictionary cannot be verified.
 8. Check Schubert and the *Briefe und Akten* series for prior publication.
+
+## Second check and recount (14 Nov 2026, Brice Dudout with Claude)
+
+- **Code groups.** A separate lookup took every number followed by a point in the letter lines of
+  `n194/transcription_n194.txt` (62; the date figures 24 and 1622 are not codes, leaving 60) and looked each up in
+  `key.tsv`. The 60 groups are those of `n194/decryption_n194.txt`, in the same order, and 56 of them give the value
+  printed there. The other 4 are the places already marked: 1513 (not in the key), 858 (not in the key; the
+  decryption's [?Bethlen Gabor] rests on the gloss and on 2858 elsewhere, `code_groups_n194.tsv` line 59), 1682 and 43
+  (status doubt).
+- **Recount by the README rule.** `research/reading_audit/v10_relabel.share` on `n194/reading_n194.md` gives 858
+  words, 87 holes, 0.908, but 13 of those holes are the paragraph line references `[01-07]` ... `[37-41]`, which the
+  measure takes for supplied words. With them taken out: 858 words, 74 holes, **0.921**. The figure of 0.943 came
+  from `scripts/check_marks.py`, which counts a multi-word `[?...]` and an illegible `[...]` as one token each; the
+  README measure counts each guessed or supplied word. The letter stays read in part either way.
+
