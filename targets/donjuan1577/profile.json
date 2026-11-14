@@ -1,0 +1,214 @@
+{
+ "schema_version": 1,
+ "target": "donjuan1577",
+ "title": "Don John of Austria to the Spanish ambassadors in Genoa, Namur, 6 and 7 August 1577 (catalogue 753, AGS Estado 1410,77 and 1410,135): cipher copies whose contemporary decipherments are filed apart (1410,111 and 1410,110); 1577 Genoa-embassy key validated on the fresh pair 1410,135/110",
+ "documents": [
+  {
+   "id": "ags_est_1410_135",
+   "read": "read",
+   "shelfmark": "Archivo General de Simancas, Estado, leg. 1410, no. 135 (PARES 3578951), \"Carta completamente cifrada\"",
+   "date": "1577-08-07",
+   "year": 1577,
+   "country": "Spain",
+   "route": "Don John of Austria, governor general of the Netherlands -> Juan de Idiáquez and Pedro de Mendoza, Spanish ambassadors in Genoa (cipher copy)",
+   "places": {
+    "from": "Namur",
+    "to": "Genoa"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "AGS Estado 1410,110 (PARES 3577630), \"Copia de carta de Juan de Austria ... sobre la toma de Charleroi\", Namur 7 Aug 1577: the contemporary decipherment, filed as a separate item and not linked to 1410,135 by PARES. Transcribed here as plaintext_1410_110.txt."
+   },
+   "length": {
+    "tokens": 247,
+    "distinct": 86,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_1410_135.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES JPEG, image 1 (993 x 1437 px)",
+    "image_quality": "fair",
+    "notes": "Cipher body only (15 lines; the 4-line cipher heading was decoded by eye to identify the letter and is left out). 247 syllabic units (number + vowel mark + finals), 86 distinct unit forms on 27 base numbers. Two passes (line crops at 2-3x; then half-line strips at 2.5x with contrast), settled on the image; 8 doubtful signs listed in the file header."
+   }
+  },
+  {
+   "id": "ags_est_1410_77",
+   "read": "read",
+   "shelfmark": "Archivo General de Simancas, Estado, leg. 1410, no. 77 (PARES 3576845), \"Carta totalmente cifrada\"",
+   "date": "1577-08-06",
+   "year": 1577,
+   "country": "Spain",
+   "route": "Don John of Austria -> Juan de Idiáquez and Pedro de Mendoza, Spanish ambassadors in Genoa (cipher copy)",
+   "places": {
+    "from": "Namur",
+    "to": "Genoa"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "none",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "AGS Estado 1410,111 (PARES 3577649), \"Copia de carta descifrada del Sr don Juan para los embaxadores de Genova ... del castillo de Namur a 6 de agosto 1577\", 3 pp.; incipit \"Son tan varios los successos de por aca\", explicit \"de lo que sucediere les avisare\" = first and last words of 1410,77. Not linked by PARES."
+   },
+   "length": {
+    "tokens": 1713,
+    "distinct": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "unknown"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "PARES JPEGs (about 1011 px wide)",
+    "image_quality": "fair",
+    "notes": "Transcribed in full (84 lines, 1,713 units) by Brice Dudout's agents in Oct 2026; not included here because the letter is read from its contemporary decipherment. Used only as learning data for the key (lines 1-24 and page 3, lines 1-20, against 1410,111)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "The 1577 numerical syllabary of the Spanish embassy at Genoa (as in targets/perez1578 and targets/idiaquez1577), in the hand of the copies made for Don John: a number is a consonant (6 d, 7 c, 8 b, 11 g, 12 h, 14 gu, 15 l, 16 m, 17 n, 20 p, 21 qu, 22 r, 23 s, 24 t, 25 v, 27 x, 28 y, 30 br, 33 fr, 35 pr, 36 tr), a mark after it is the vowel (cross a, dot e, 6-loop i, hook o, long-s mark o in 1410,77), the bare numbers 10, 4, 2, 18, 1 are vowels, marks above or a bar add n, s, r or l; letter groups and crossed numbers are nomenclator entries (in 1410,77: gil estados, xil gente, pam nuestro, hom marques, 1008+ successos ...).",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 86,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Homophones seen: vowels 10/9 a, 4/3 e, 1/0 u in 1410,77. Values that differ by hand: 26 is v in 1410,77 but fi in 1410,135 (firme), and 8 is b here but g in Pérez's hand. A digit 3 with a loop above stands for the numeral three (tres dias)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "AGS Estado 1410,111 (decipherment of 1410,77) and 1410,110 (decipherment of 1410,135), filed as separate items in the same legajo; neither is linked to its cipher in PARES. No edition found.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout chose the catalogue rows and set the rules (frozen key, one held-out measurement, 200 controls); AI agents found the decipherments, transcribed, built and froze the key and ran the test. No human palaeographer checked the transcription.",
+  "tools": [
+   "PARES images",
+   "scripts/decode.py",
+   "scripts/heldout.py"
+  ],
+  "models": [
+   "claude-opus-5",
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-10-28",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "literature search",
+   "what": "PARES full-text search \"copia de carta de Juan de Austria\": 1410,111 (decipherment of 1410,77, 6 Aug 1577) and 1410,110 (decipherment of the 7 Aug letter) found, neither linked to a cipher.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "key from source",
+   "what": "The Genoa 1577 key (K5, validated on the pair 1410,78/79: 87.3% words, 95.5% characters) adapted to the hand of 1410,77 on 1410,77 lines 1-24 against 1410,111; held-out 1410,77 page 3 against 1410,111 page 3: 57.9% words, 72.7% characters, 200 controls at most 27.1 / 49.2 (old transcription at 1011 px).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "what": "Key extended on the already-used 77/111 data only (xil gente, sim mente, pam nuestro, pam+ nuestra, yum+ otra, 26 = v, bare 6 = i) and frozen (key_frozen.json, SHA-256 in key_frozen.sha256) before 1410,135 was transcribed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "1410,135 found to be the cipher of 1410,110 from its cipher heading (\"copia de carta del señor [don Juan] para los embaxadores de Genova del castillo de Namur a 7 de agosto 1577\"). Body transcribed in two passes and frozen (SHA-256 3558ee69...) before 1410,110 was opened.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One measurement, scripts/heldout.py: frozen key on 1410,135 against 1410,110 = 80.2% of 106 words, 89.2% of 437 characters; 200 controls (100 permuted consonant values, 100 shuffled unit orders) at most 18.9% / 47.8%. Criterion written beforehand (characters >= 0.85 and >= best control + 0.30): met.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "The decryption follows 1410,110 word for word; the misses are signs of the copy (26 = fi here, 14 written with a cross, an+ for on) and words the cipher has and the decipherment drops (\"que cada dia\" before \"se ofrecen\").",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "recovered",
+  "method": "read from existing decipherment",
+  "method_basis": "Both letters are read in their contemporary decipherments (1410,111 and 1410,110); the key of the Genoa 1577 syllabary in the copyist's hand was rebuilt on 1410,77/111 and checked on the fresh pair 1410,135/110.",
+  "contribution": [
+   "catalogue correction",
+   "key extended or corrected",
+   "transcription"
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "matched control"
+  ],
+  "provenance": "project",
+  "notes": "Catalogue 753 lists 1410,77 and 1410,135 as open ciphertexts; both have contemporary decipherments filed apart in the same legajo (1410,111 and 1410,110). The 7 Aug letter: Don John expects Charlemont (Charleroi in PARES) to fall to the States, plans to take it by a deal within three days and then to wait there with a German garrison, unless those of Luxembourg force him elsewhere; plans change from hour to hour.",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "contemporary decipherments AGS Estado 1410,110 and 1410,111",
+    "date": "1577"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "decipherments found and matched to the cipher copies 1410,77 and 1410,135; key adapted and validated; transcription of 1410,135",
+    "date": "2026-11-14"
+   }
+  ],
+  "key_file": [
+   "key_frozen.json"
+  ],
+  "gaps": [
+   {
+    "item": "1410,77: no new transcription at full quality",
+    "blocker": "not-attempted",
+    "detail": "Read from 1410,111; the October transcription (1,713 units) was used only to learn the key."
+   },
+   {
+    "item": "Signs not in the key: 3 with a loop above (tres), small 2 above 8 (ble?), underlines (r -> l?)",
+    "blocker": "open-codes",
+    "detail": "Values from 1410,110 only, not added to the frozen key."
+   }
+  ]
+ }
+}
