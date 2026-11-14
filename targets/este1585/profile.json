@@ -55,9 +55,9 @@
    "cleartext_in_document": "none",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "No gloss on p. 517.",
+    "source": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellevé qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'.",
     "partial": false
    },
    "length": {
@@ -90,9 +90,9 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "No gloss on p. 518; the page ends with a postscript in clear Italian (never enciphered).",
+    "source": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellevé qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'.",
     "partial": false
    },
    "length": {
@@ -351,20 +351,32 @@
    "kind": "reading",
    "what": "fr. 16041 f. 271 read by sense: 160 words, 135 certain, 17 probable, 3 restored, 5 unresolved (95.0%); g8 = m and new3 = u learned on the page.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Integration check of PR #557: own decoders from key-p517.tsv (pp. 518, 513) and key-f16041-271.tsv (f. 271) equal the committed decryptions on every line (490, 208 and 677 signs); M5 re-implemented on f. 271: 0.451 (fr), 0.374 (it), best shuffled 0.08-0.11; Gallica images (openapi.bnf.fr IIIF) compared: about 125 signs of p. 518 (L1, L2, L8, L9), 60 of p. 513 (L8, L9, with the code word y in place) and 80 of f. 271 (L1, L2, L10) agree; the p. 513 margin reads '...oy qu'en Espaig[ne] / de Longlée / ...dvise qu'ilz font / ...tiques si l'eglise / ...geoit de pasteur / ...tiffiant leurs / ...saings et / ...oiblissant ceulx / ...aultres, et / ...a esté envoyé / ordre exprès / ...pour ce que / ...chose tant / ...portant pour / ...ruice du Roy', as the reading. Strict recount with y attested: p. 517 203/231, p. 513 39/47, f. 271 136/160; p. 518 87/108 unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellevé qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'. Spot checks against the reading of p. 518: 'suivant' where the cipher gives 'suldant', 'fermer' before 'mes letres', 'm'a donné de tant plus grand suspect' (cipher 'docue de tant'), 'en tel pays' at the end, '[Sa] Saincteté' as restored. Not yet compared word by word; not used for any count except to attest y.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read with known key",
-  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517 (bar 0.45, lowered from 0.60 before the test, by the contributor's record); the code word y and two signs (Venus sign, barred dumbbell) stay open. pp. 518 and 513 (after PR #546) read with K-C02 unchanged plus probable values for new shapes (key-p518-513.tsv); the pre-registered test of these values (K-C03) could not run (p. 513 too short). K-C03.1 (K-C03 + one clerical fix) then passed a pre-registered test on a new document, BnF fr. 16041 f. 271 (M5 0.451 vs 0.077, bar 0.45: passed by 0.001 only, 14 Nov 2026).",
+  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517 (bar 0.45, lowered from 0.60 before the test, by the contributor's record); the code word y and two signs (Venus sign, barred dumbbell) stay open. pp. 518 and 513 (after PR #546) read with K-C02 unchanged plus probable values for new shapes (key-p518-513.tsv); the pre-registered test of these values (K-C03) could not run (p. 513 too short). K-C03.1 (K-C03 + one clerical fix) then passed a pre-registered test on a new document, BnF fr. 16041 f. 271 (M5 0.451 vs 0.077, bar 0.45: passed by 0.001 only, 14 Nov 2026). Integration check of PR #557 (14 Nov 2026): M5 0.451 on f. 271 re-implemented and reproduced (best control 0.08-0.11 across shuffling seeds, so the gap holds); the frozen files of the three pre-registrations are not in the repository, so the order of events is by the contributor's record. A contemporary clear copy of the letter pp. 517-518 was found on p. 515 at that check; it was not used by the reading and has not yet been compared word by word.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
   "fraction_read": 0.73,
   "fraction_read_method": "measured",
-  "fraction_read_source": "README read bar applied strictly at integration (13 Nov 2026), per page, never pooled: p. 523 146/200 = 73.0%, p. 517 201/231 = 87.0% (certain words only; probable, restored and unresolved words are holes). fraction_read is p. 523, the page first written up. The contributor's figures (Daniel's rule as they applied it, certain + probable): p. 523 177/200 = 88.5%, p. 517 223/231 = 96.5%. pp. 518 and 513, added after PR #546, counted by the same strict rule: p. 518 87/108 = 80.6%, p. 513 38/47 = 80.9%; contributor's figures: p. 518 103/108 = 95.4% (letter 326/339 = 96.2%; 101/107 = 94.4% before the blind shape sheet of 14 Nov 2026), p. 513 43/47 = 91.5%. BnF fr. 16041 f. 271 (added after PR #546), same strict rule: 135/160 = 84.4%; contributor's figure 152/160 = 95.0%.",
+  "fraction_read_source": "README read bar applied strictly, per page, never pooled (certain words only; probable, restored and unresolved words are holes). fraction_read is p. 523, the page first written up: 146/200 = 73.0%. Other pages: p. 517 203/231 = 87.9% (201/231 = 87.0% at the check of 13 Nov; the two 'Espagne' words count as sure since the check of PR #557, 14 Nov 2026, y being attested at pp. 513 and 515), p. 518 87/108 = 80.6%, p. 513 39/47 = 83.0%, BnF fr. 16041 f. 271 136/160 = 85.0%. The contributor's figures (certain + probable): p. 523 177/200 = 88.5%, p. 517 223/231 = 96.5%, p. 518 103/108 = 95.4% (letter pp. 517-518 326/339 = 96.2%), p. 513 43/47 = 91.5%, f. 271 152/160 = 95.0%.",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -373,7 +385,7 @@
    "date": "2026-11-14",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated. Integration check (13 Nov 2026): no M5 script in the PR; an own re-implementation from the description gives M5 0.509, best control 0.068, median 0.025 on p. 517 lines 4-29 (code words spelled out). The p. 517 bar (0.45) was lowered from p. 523's 0.60 before the test, by the contributor's record; the frozen pre-registration, key file and block are not in the repository (the committed key-p517.tsv is a later copy: it hashes to 98ef85f6, the frozen value is aa7d73db). fr. 16041 f. 271 (14 Nov 2026, after PR #546, key K-C03.1, same thresholds, French/Italian lexicons): M5 0.451 vs 0.077, validated at the bar (0.451 against 0.45: a margin of 0.001)."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated. Integration check (13 Nov 2026): no M5 script in the PR; an own re-implementation from the description gives M5 0.509, best control 0.068, median 0.025 on p. 517 lines 4-29 (code words spelled out). The p. 517 bar (0.45) was lowered from p. 523's 0.60 before the test, by the contributor's record; the frozen pre-registration, key file and block are not in the repository (the committed key-p517.tsv is a later copy: it hashes to 98ef85f6, the frozen value is aa7d73db). fr. 16041 f. 271 (14 Nov 2026, after PR #546, key K-C03.1, same thresholds, French/Italian lexicons): M5 0.451 vs 0.077, validated at the bar (0.451 against 0.45: a margin of 0.001). Integration check of PR #557 (14 Nov 2026): own M5 implementation (fr and it lexicons, frequency >= 5, 5+ letters, separators removed, code words spelled out) gives 0.451 (fr) and 0.374 (it) on the frozen f. 271 transcription, as stated; best of 200 shuffled keys 0.110 with seed 271 in our shuffling (0.080-0.106 with other seeds; contributor 0.077), so the gap stays above 0.30. PREREG-KC03, PREREG-KC03b, AVENANT-1, the frozen K-C03/K-C03.1 key files, the frozen block and mlex2.py are not in the repository: the committed key-f16041-271.tsv and transcription-f16041-271.txt carry headers and do not hash to the stated values, so the pre-registration is by the contributor's record. The pass is at the bar by 0.001."
   },
   "provenance": "mixed",
   "credits": [
@@ -403,13 +415,13 @@
     "blocker": "open-codes"
    },
    {
-    "item": "Code word y (restored as Spain on p. 517 by sense only; the contemporary margin decipherment of p. 513 now gives 'Espaigne' for it), the Venus sign / barred dumbbell values (contradicted between pages) and four new shapes of p. 518 (probable values only, key-p518-513.tsv, not validated)",
+    "item": "The Venus sign / barred dumbbell values (contradicted between pages) and five new shapes of p. 518 (and eqtt on p. 513) (probable values only, key-p518-513.tsv, not validated). The code word y is no longer open: Espagne is attested by the margin decipherment of p. 513 and the clear copy on p. 515 (integration check of PR #557)",
     "blocker": "open-codes"
    },
    {
-    "item": "p. 517: 22 probable, 3 restored and 5 unresolved words",
+    "item": "p. 517: 22 probable, 1 restored (que) and 5 unresolved words",
     "blocker": "not-attempted",
-    "detail": "probable words rest on doubtful shapes; a palaeographer could settle them (the second-reader step, a blind shape sheet answered by Brice Dudout, was done for p. 523 and for the doubtful signs of pp. 518 and 513 on 14 Nov 2026)"
+    "detail": "workable: the contemporary clear copy on p. 515 (found 14 Nov 2026) gives the whole text of the letter pp. 517-518 and can settle the doubtful shapes word by word (not yet done); the blind shape sheet answered by Brice Dudout was done for p. 523 and for the doubtful signs of pp. 518 and 513"
    },
    {
     "item": "p. 523: 31 probable words",
@@ -418,21 +430,29 @@
    },
    {
     "item": "p. 518: 16 probable, 1 restored and 4 unresolved words (L3, L8, L11, L16 end)",
-    "blocker": "open-codes",
-    "detail": "the unresolved words and several probable ones rest on new shapes with probable, unvalidated values (key-p518-513.tsv)"
-   },
-   {
-    "item": "p. 513: 5 probable and 4 unresolved words; the first words of the cipher block (end of L7, start of L8) unresolved, first sign cut at the margin",
-    "blocker": "open-codes"
-   },
-   {
-    "item": "Frozen files of the p. 517 test (pre-registration, hashed key file, frozen block)",
     "blocker": "not-attempted",
-    "detail": "not in the repository; the committed key-p517.tsv is a later copy (98ef85f6 vs frozen aa7d73db)"
+    "detail": "the unresolved words and several probable ones rest on new shapes with probable values (key-p518-513.tsv); the clear copy on p. 515 gives the text (e.g. 'suivant' for 'suldant', 'fermer' before 'mes letres', 'pays' at the end), not yet compared word by word"
    },
    {
-    "item": "fr. 16041 f. 271: 17 probable, 3 restored and 5 unresolved words (line 1, start of the page continuing f. 271 r, and two line ends); ff. 271 r, 272-273 of the same letter not transcribed",
+    "item": "p. 513: 4 probable and 4 unresolved words; the first words of the cipher block (end of L7, start of L8) unresolved, first sign cut at the margin",
     "blocker": "open-codes"
+   },
+   {
+    "item": "Frozen files of the three pre-registered tests (PREREG-KC02, PREREG-KC03, PREREG-KC03b and AVENANT-1, the hashed key files K-C02, K-C03, K-C03.1, the frozen blocks, the measuring tool mlex2.py)",
+    "blocker": "not-attempted",
+    "detail": "not in the repository after PR #557 either; the committed key-p517.tsv is a later copy (98ef85f6 vs frozen aa7d73db), and key-f16041-271.tsv / transcription-f16041-271.txt carry headers and do not hash to the stated values"
+   },
+   {
+    "item": "fr. 16041 f. 271: 16 probable, 3 restored and 5 unresolved words (line 1, start of the page continuing f. 271 r, and two line ends); ff. 271 r, 272-273 of the same letter not transcribed",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "p. 523: the code word y (twice, 'le Roy d'{y}' and 'ledict Roy') not re-read with the attested value Espagne; the content (who seeks the royal title) would change",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "A contemporary clear copy of p. 523 elsewhere in Colbert 338 (as p. 515 is for pp. 517-518) not searched",
+    "blocker": "not-attempted"
    }
   ],
   "texts": [
@@ -445,15 +465,15 @@
     "translation": "translation-f16041-271.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.844,
+    "read_share": 0.85,
     "summary": "Luigi d'Este writes that, by common report, the Pope cannot last long, falling back so often into his illnesses; he is in the country for eight days, after which d'Este will speak to him 'as of himself', as Villeroy's letter asks, about the Duke of Montmorency and the King's gentleness towards him, arguing that the duke would not defy the King unless backed by someone greater (Spain is named in line 1), and that the Pope's predecessors were wont to ...",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "by": "an AI model (for Brice Dudout)",
      "date": "2026-11-14",
      "note": "Read as sentences 14 Nov 2026 by one AI reader after the measurement: 135 certain, 17 probable, 3 restored, 5 unresolved of 160 words (95.0%, at the bar); five arbitration choices corrected while reading (listed); each probable word justified in reading-f16041-271.md. No palaeographer checked the page."
     },
-    "note": "read_share is the strict share (README read bar, as at the integration check of PR #546): 135 certain of 160 words = 84.4%; the 17 probable, 3 restored and 5 unresolved words are holes. The contributor's figure, certain + probable, is 152/160 = 95.0%."
+    "note": "read_share is the strict share (README read bar): 136 certain of 160 words = 85.0%; the 16 probable, 3 restored ([lettre], [Sa], [sera]) and 5 unresolved words are holes. The contributor's strict figure was 135/160 = 84.4% with 'd'Espagne' (code word y) probable; at the integration check of PR #557 it counts as sure (y attested at Colbert 338 pp. 513 and 515). The contributor's figure, certain + probable, is 152/160 = 95.0%."
    },
    {
     "doc": "colbert338-p517",
@@ -464,15 +484,15 @@
     "translation": "translation-p517.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.87,
-    "summary": "The writer hears that the pope was told, from the court of T(urin?), that 'this duke' had letters from the King of [Spain] urging him to make war on the King and protect Marshal de Montmorency; he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lodève and his letters to [Spain], and hopes Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away.",
+    "read_share": 0.879,
+    "summary": "The writer hears that the pope was told, from the court of ‹T…› (Savoy in the clear copy on p. 515), that 'this duke' had letters from the King of Spain urging him to make war on the King and protect Marshal de Montmorency; he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lodève and his letters to Spain, and hopes Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away.",
     "reading_review": {
      "grade": "A",
      "by": "an AI model (for Brice Dudout)",
      "date": "2026-11-13",
      "note": "Read as sentences 13 Nov 2026 by one AI reader: 201 certain, 22 probable, 3 restored, 5 unresolved of 231 words (96.5%), each probable word justified in reading-p517.md; the code word y restored as Spain by sense only. No palaeographer checked the page."
     },
-    "note": "read_share is the strict share at integration (13 Nov 2026): 201 certain of 231 words = 87.0%; the 22 probable, 3 restored (Espagne twice, the code word y by sense; que) and 5 unresolved words are holes. The contributor's figure, certain + probable, is 223/231 = 96.5% ('read')."
+    "note": "read_share is the strict share (README read bar): 203 certain of 231 words = 87.9%; the 22 probable, 1 restored (que) and 5 unresolved words are holes. Recounted at the integration check of PR #557 (14 Nov 2026): the code word y is now attested as Espagne by two contemporary witnesses (the margin decipherment of p. 513 and the clear copy of this letter on p. 515), so the two 'Espagne' words, restored by sense at the check of 13 Nov (201/231 = 87.0%), count as sure. The contributor's figure, certain + probable, is 223/231 = 96.5% ('read')."
    },
    {
     "doc": "colbert338-p518",
@@ -487,7 +507,7 @@
     "summary": "End of the p. 517 letter: the writer asks that the news be referred to His Majesty and doubts it bodes well for the pacification with Montmorency; going to his audience before closing his letters, he discussed Languedoc with the Pope, who ordered him to do all he can so that the King comes to terms with Marshal de Montmorency to calm the troubles.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "by": "an AI model (for Brice Dudout)",
      "date": "2026-11-14",
      "note": "Read as sentences 13 Nov 2026 by one AI reader, updated 14 Nov 2026 after a blind shape sheet answered by Brice Dudout (L1 '6' = plain o): 87 certain, 16 probable, 1 restored, 4 unresolved of 108 words (95.4%); each probable word justified in reading-p518.md; new shapes take probable, unvalidated values. With p. 517 the letter is 96.2%. No palaeographer checked the page."
     },
@@ -502,15 +522,15 @@
     "translation": "translation-p513.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.809,
+    "read_share": 0.83,
     "summary": "Luigi d'Este reports that, according to the sieur de Longlée, in Spain they are scheming in case the Church changes its shepherd (the pope dies), strengthening their designs and weakening those of others, and that express orders have been sent to Rome; a matter of great importance for the King's service. Already deciphered in the margin at the time.",
     "reading_review": {
      "grade": "B",
-     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "by": "an AI model (for Brice Dudout)",
      "date": "2026-11-13",
      "note": "Read as sentences 13 Nov 2026 by one AI reader: 38 certain, 5 probable, 4 unresolved of 47 words (91.5%); the contemporary margin decipherment, looked at after the transcription was frozen, agrees word for word where legible."
     },
-    "note": "read_share is the strict share (README read bar, as at the integration check of PR #546): 38 certain of 47 words = 80.9%; the 5 probable and 4 unresolved words are holes. The contributor's figure, certain + probable, is 43/47 = 91.5%."
+    "note": "read_share is the strict share (README read bar): 39 certain of 47 words = 83.0%; the 4 probable and 4 unresolved words are holes. The contributor counted 'Espagne' (code word y) as probable (38/47 = 80.9% strict); at the integration check of PR #557 it counts as sure, the value being attested by the margin decipherment of this page and by the clear copy on p. 515. The contributor's figure, certain + probable, is 43/47 = 91.5%."
    },
    {
     "doc": "colbert338-p523",
