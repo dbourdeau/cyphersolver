@@ -11,3 +11,4 @@
 - 2026-11-14 reading: 1383,312 and 1383,242 decoded from two blind passes: phrases, about a third of the words; not read.
 - 2026-11-14 transcription: 1383,242, 296, 312, 351-353, 364 (20 pages, 12,741 signs): two blind shape passes per page, arbitrated on the image by a third sub-agent; frozen by SHA-256 before decoding.
 - 2026-11-14 reading: decode with the frozen key, read by sense with a strict count: 60-75 % of words read per letter (38-54 % sure only); _check_reading.py clean share 0.14-0.38: decoded, not read.
+- 2026-11-15 review of PR #621: frozen files of the 0.873 measurement added (validation/, rerun.sh regenerates the recorded output byte for byte); unread passages of the five 1553 readings sized by words (1,419 unread words in 4,821; sure only 37-54 %); content summaries cut back to what is read.
