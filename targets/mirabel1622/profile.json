@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "target": "mirabel1622",
+ "title": "The Marquis of Mirabel to the Count of Gondomar, Paris, early 1622 (BNE MSS/18428, images 13-15): key partial by our protocol, read in part",
+ "documents": [
+  {
+   "id": "mss18428-13-15",
+   "read": "read in part",
+   "shelfmark": "Madrid, BNE MSS/18428 (Gayangos), BDH 0000141369, viewer images 13 right - 15 left",
+   "date": "early 1622 (after Luynes's death, 15 Dec 1621; 'de Paris a ... 1622' on image 15 right)",
+   "year": 1622,
+   "country": "France",
+   "route": "Antonio Dávila y Zúñiga, Marquis of Mirabel, Spanish ambassador in France -> Diego Sarmiento de Acuña, Count of Gondomar",
+   "places": {
+    "from": "Paris",
+    "to": "Madrid"
+   },
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on this letter (the only one of the seven ciphered letters of the volume without one). The key comes from coloma1622 (Feria's margin clears) and from the contemporary clears of the six other ciphered letters of MSS/18428 (CONTEMPORARY-CLEARS.md).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 541,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BNE Digital viewer images harvested 5 Nov 2026 (kept private, not reproduced)",
+    "image_quality": "good",
+    "notes": "Part A (images 13 right - 14 right, 349 tokens): two independent passes (the second by an agent that saw neither the first pass nor any key), arbitrated on the image with no key open, frozen before measurement M02 (14 Nov 2026). Part B (image 15 left, 192 tokens): one pass, 5 Nov 2026, frozen before any decoding (held-out passage H4 of coloma1622, then M01)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "The coloma1622 system: syllabary on a grid, two-digit numbers for letters and syllables, three-digit numbers and underlined tokens for code words, ligatures faz/fez/fuz = que; marked signs are distinct signs.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 141,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "titles",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Same system as coloma1622 (Mirabel to Coloma, RES/227/122) and the Duke of Feria's letters to Coloma (RES/227/120-129). 141 distinct tokens in the 541 of this letter (marked signs counted apart)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the letter. Six other ciphered letters of the same volume carry a contemporary decipherment (CONTEMPORARY-CLEARS.md), not this one. No modern reading found: not on DECODE, Cryptiana or Lasry's lists; no target, PR or issue in this repository (issue #367 is our inventory). Not read: Herrero García, Avisos 100 (2023); Correspondencia oficial del conde de Gondomar (Documentos inéditos, 1936-1945).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext",
+   "sibling key",
+   "crib"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-11-09",
+  "last_date": "2026-11-14",
+  "human_role": "Brice Dudout chose the target, set the rules (protocol and pre-registrations hashed before each computation, one measurement per held-out passage, thresholds fixed in advance) and decided to publish as read in part. AI agents inventoried the volume, transcribed, extended the key, measured, read and wrote up. No palaeographer checked the letter.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-09",
+   "kind": "literature search",
+   "what": "Inventory of the 112 images of MSS/18428: seven ciphered letters, all of 1622; five (six after 13 Nov) with a contemporary decipherment; only images 13 right - 15 left without one (issue #367). Held-out passage H6 (image 38 right) burned before any computation: its clear copy (image 39 right) had already been seen.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "Key CLE_M01 = coloma1622 key C04 + 23 values read on the contemporary clears of MSS/18428 (bound clear copies fol. 31 and images 39 right - 40 left, margin of image 44 right); adds ō = t (o with a cross, distinct from the Ð = n of C04). Frozen (4f09539f...) before the measurement.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "M01: one lexical measurement on part B (image 15 left, 192 tokens), pre-registered: score -2.381 against threshold -2.35; best of 200 controls -2.880, gap 0.499 against threshold 0.60; coverage 0.922.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "M02: metric recalibrated on burned passages only (whole-text lexical score); key CLE_M02 = CLE_M01 + 5 values of contemporary clears (4‡ g, 308 NUESTRO, _113_, _0_ REBELDE, 319 OTRO); part A transcribed in two independent passes and arbitrated, then one measurement: score -2.383 against threshold -2.25; best of 200 controls -3.413, gap 1.029 (threshold 0.30); coverage 0.928.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "The whole letter read word by word after both measurements, all 541 tokens covered in order: 250 words, 183 certain, 36 probable, 11 restored, 20 unresolved (87.6% certain + probable; 73.2% sure words only). Signs without a value read by sense are probable at two places or more, restored at one. English translation. 14 Nov 2026: the one sign of part B transcribed Ð re-read ō on the image (no count changes).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The six ciphered letters of the volume that carry a contemporary decipherment, decoded on their 39 aligned segments with CLE_M02: 515 of 559 characters of the clears (0.921). Learning data (the values come from these clears), not a test.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key of a sibling letter (coloma1622, rebuilt from Feria's margin clears) extended with the contemporary clears of the other ciphered letters of the same volume, then applied to the one letter without a decipherment.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "fraction_read": 0.732,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Word table of reading.md, which covers the 541 tokens of transcription.txt in order: 250 words, 183 certain, 36 probable, 11 restored, 20 unresolved. Sure words only: 183/250 = 73.2%; the contributor's count of certain + probable: 219/250 = 87.6%.",
+  "verification": [
+   "statistical test",
+   "historical consistency"
+  ],
+  "validation": {
+   "date": "2026-11-14",
+   "verdict": "weak",
+   "file": "validation.txt",
+   "notes": "Contributor's pre-registered lexical tests against 200 controls (not docs/_validate.py): M01 on part B failed (-2.381; gap 0.499 < 0.60); M02 on part A partial (-2.383 < -2.25; gap 1.029). No contemporary clear exists for this letter; no unseen passage of the system is left in the volume."
+  },
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "inventory of MSS/18428 (issue #367), transcription, key extended from the volume's contemporary clears (ō = t added), two pre-registered measurements (failed, partial), reading in part and translation",
+    "date": "2026-11-14"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the decipherments by Gondomar's secretary in MSS/18428: bound clear copies fol. 31 (image 32 right) and images 39 right - 40 left, clear copy image 33 left, margin and interlinear clears of images 5 right - 7 right, 41 right and 44 right; and the margin clears of Feria's letters to Coloma (RES/227/120-129) behind key C04",
+    "date": "1622"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 1271 (BNE/Hispana sweep)",
+    "date": "2026-10-28"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "20 unresolved words: codes 24, 322, _1_, _13_, _41_, md, 87, 48~; signs fizt, f‡an, su, sar; the name ‹Jamuila›",
+    "blocker": "open-codes",
+    "detail": "none of these occurs in the contemporary clears of MSS/18428 or of Feria's letters"
+   },
+   {
+    "item": "key not validated (M01 failed, M02 partial)",
+    "blocker": "no-key-material",
+    "detail": "no unseen passage of the system left in MSS/18428; a test needs another letter of the system with a contemporary clear (Gondomar papers, Real Biblioteca; Coloma's papers)"
+   },
+   {
+    "item": "signs read by sense only: c̣ir, xix, f‡, fir, I after 202, 20~ (probable); g‡, p‡, D‡, x‡, fizt, zan (one place, restored)",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "images not reproduced; part B transcribed in one pass only",
+    "blocker": "needs-physical-access",
+    "detail": "BNE Digital answers 403 to a plain fetch; scans harvested in a browser and kept private"
+   },
+   {
+    "item": "g: p by the clear copy v39 d, f by the clear copy v33 g",
+    "blocker": "open-codes",
+    "detail": "not in this letter; doubtful in key.tsv"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "mss18428-13-15",
+    "label": "MSS/18428 images 13 right - 15 left: the cipher passages of the letter",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.732,
+    "summary": "Early 1622, after Luynes's death: court gossip about Luynes's widow; Philip IV's order to send the French ladies home from Madrid and the Spanish servants from Paris; the Queen's confessor; Louis XIII's good faith and the capitulations of the Grisons treaties expected.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-14",
+     "note": "Read as sentences by one AI reader after the two measurements: the cipher construes with the interspersed clear as Spanish sentences, with holes (20 unresolved and 11 restored words of 250; 87.6% certain + probable, 73.2% sure), normalised in reading.md and translated. Not checked by a human reader. Grade B: coherent but normalised from a raw syllabic decode."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "key.tsv is CLE_M02 (CC BY 4.0), the coloma1622 key C04 extended and corrected from the contemporary clears of MSS/18428 (each row with its source); partial by the contributor's protocol. Additions that concern coloma1622 too: ō = t (distinct from Ð = n), _0_ = REBELDE; g doubtful (p against f in two clears). codes_open counts the underlined and three-digit code tokens and 20~ (21 distinct): _1_, 322, _13_, _41_ have no value, 20~ is read Su Majestad by sense only; the two-digit 24 (twice) is not counted there.",
+  "codes_open": {
+   "open": 5,
+   "total": 21,
+   "tokens_open": 6
+  }
+ }
+}
