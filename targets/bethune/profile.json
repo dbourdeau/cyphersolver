@@ -46,9 +46,10 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "printed edition"
     ],
-    "source": "No decipherment on the leaf; a clear copy may be in Cinq cents de Colbert 346 or Halphen's edition, neither consulted."
+    "source": "E. Halphen (ed.), Lettres inedites du roi Henri IV a M. de Bethune (Paris, 1889), pp. 16-18, printed from the original f. 33 with the ciphered passage in clear",
+    "partial": false
    },
    "length": {
     "tokens": 970,
@@ -63,7 +64,7 @@
     "image_quality": "fair",
     "notes": "Counted by a scratch script over the token field (the --measure line mode also counts the line labels and bars: 992/63). Three glyph families (g, m, r variants) are not separable at the available resolution; the transcription caps decoding at about 71 % of letters."
    },
-   "read": "not read"
+   "read": "read"
   },
   {
    "id": "22nov",
@@ -77,8 +78,10 @@
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "none"
-    ]
+     "printed edition"
+    ],
+    "source": "Halphen 1889, pp. 33-40, printed from the original f. 46 with the ciphered passages in clear",
+    "partial": false
    },
    "length": {
     "tokens": 1879,
@@ -93,7 +96,7 @@
     "image_quality": "fair",
     "notes": "80 cipher runs; counted by a scratch script over the token field (the file has label columns)."
    },
-   "read": "not read"
+   "read": "read"
   }
  ],
  "system": {
@@ -133,12 +136,12 @@
   "word_division": "none",
   "doubled_letters": "special sign (phi doubles the preceding symbol)",
   "sibling_key": "Bazeries 1901 prints the 1599 key given to Bethune's brother, same office and design, other values; used for the design only.",
-  "notes": "Known names: 48 Cardinal, 17 Aldobrandin, 7 le Roy d'Espagne; 61 qui, 63 re, 65 si, 68 tout, 71 tion, 73 vostre. 72 = vous proposed, unconfirmed."
+  "notes": "Known names and words: 48 Cardinal, 17 Aldobrandin, 7 le Roy d'Espagne, 6 (standalone) Sa Saintete; 61 qui, 63 re, 65 si, 66 sa, 68 tout, 71 tion, 72 vous, 73 vostre. 72, 6 and 66 fixed on 14 Nov 2026 from the f. 53r gloss."
  },
  "conditions": {
   "prior_solution": {
-   "exists": "partial",
-   "where": "Clear minute of the 10 Nov letter (f. 36) and marginal glosses of other letters in the same volume; none for 9 or 22 Nov",
+   "exists": "in print",
+   "where": "Halphen 1889 prints the 9 Nov (f. 33) and 22 Nov (f. 46) letters in clear from the originals; clear minute f. 36 for 10 Nov; marginal glosses of other letters",
    "found": "during attempt",
    "used": true
   },
@@ -146,7 +149,8 @@
    "images",
    "known plaintext",
    "cleartext context",
-   "sibling key"
+   "sibling key",
+   "published reading"
   ],
   "attack": "known plaintext",
   "human_role": "Project-level: obtained a DECODE login with privileges and passed its session cookie (from the browser developer tools) to the model, set up Claude Code with Fable 5.1 or Opus 5, and posed the problem with /goal; occasionally offered encouragement or chose which of the model-identified leads to pursue. No target-specific intervention recorded.",
@@ -160,11 +164,12 @@
   ],
   "models": [
    "claude-opus-5",
-   "claude-fable-5-1"
+   "claude-fable-5-1",
+   "claude-opus-5-5"
   ],
   "sessions": "unknown",
   "first_date": "2026-09-17",
-  "last_date": "2026-09-17"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -279,7 +284,55 @@
    "kind": "verification",
    "what": "Consistency pass (cl): 'read in part' not justified: the Halphen 1889 gap is genuinely untried (not-attempted kept) and the print, key-rebuild and retry escalation steps are not done (left unticked); NOTES Status: in progress. The umbrella gap line for the 9 and 22 Nov runs restated as a lead sentence (its two letters are separate gap lines, mirrored in outcome.gaps).",
    "result": "partial",
-   "technique": ["statistical test"]
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "Verification pass (Claude Opus 5.5): the eight cipher lines of f. 53r block 1 transcribed and aligned with their verbatim marginal gloss (f53r_alignment.md): 72 = vous (four aligned occurrences; settles the earlier proposal and the D1 counter-indication), standalone 6 = Sa Saintete (three), 66 = sa (one), plus 3: = faire, +. = de, n, = nous. Pre-registered check (SHA-256 285ddb07...) on glossed blocks not used for the derivation (f. 56r, f. 50r): one locatable occurrence, agrees; not conclusive; the 200-shuffled-key measurement is not applicable to groups this rare. Three 22 Nov runs give sense (vostre negotiation; correspondance ... discretion; le respect), probable only. Halphen 1889 still behind HathiTrust's human check (403). 9 and 22 Nov stay decoded, not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Halphen 1889 (HathiTrust iau.31858014633857) opened by a person in a browser, pp. 8-34: prints the 9 Nov letters (f. 30, f. 33), 10 Nov (f. 34), 18 Nov (f. 38) and 22 Nov (f. 46, from p. 33) from the originals, the ciphered passages given in clear and not marked. Halphen dates the glossed letter ff. 30-31 to 9 Nov (NOTES leaf map: 8 Nov).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "One pre-registered measurement (PREREG SHA-256 2e3d1707..., script ce5daf65...): frozen key (first value per symbol, no LM) on the whole f. 33 run (970 tokens, ct_f33_v2.txt) against Halphen's clear (1,460 letters), 1 - Levenshtein/max length: 0.507; 200 shuffled keys best 0.291, mean 0.251. Default bar (>= 0.85 and >= best + 0.30) not met; key-signal bar (>= best + 0.15) met. Word classes of the printed text against the decode: 130 sure, 105 probable, 118 restored of 353.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching",
+    "crib testing"
+   ],
+   "what": "Clear frames of Halphen's text aligned with the decoded runs of f. 33 and f. 46r: 12 = le Grand Duc, 20 = la Seigneurie de Venise, 28 = Espagne, 26 = France, 27 = Italie, 44 = Prince(s), 45 = Duc, 70 = partant; 69 tous?, 67 sans? (halphen_check.md, key.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Second pre-registered measurement on a fresh portion (PREREG SHA-256 5ad234e5..., key K' = f. 33 key + 12, 20, 26, 27, 28, 44, 45, 67, 69, 70): 34 chunks, 1,062 tokens of ff. 46v-47v and f. 46r l. 31, segmented from the clear frames before decoding, against Halphen pp. 34-40: 0.535; 200 shuffled keys best 0.319, mean 0.276. Default bar not met, key-signal bar met. Strict count on the 371 printed words: 136 sure, 107 probable, 128 restored. (One accidental re-run through an import, fixed seed, same figures.)",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -295,52 +348,38 @@
    "verdict": "not applicable",
    "notes": "polyphonic: 33% of read tokens differ from their type's commonest value"
   },
-  "method": "key recovered based on adjacent plaintext",
-  "method_basis": "The key was rebuilt by EM alignment of the 10 Nov 1601 cipher (f. 34) with its clear minute four leaves on (f. 36) and the marginal glosses of the 8 Nov and 10 Dec letters in the same volume (BnF fr. 3484), then applied to the unglossed 9 and 22 Nov letters.",
+  "method": "read from existing decipherment",
+  "method_basis": "The 9 and 22 Nov 1601 letters are printed in clear from the originals by Halphen (1889), pp. 16-18 and 33-40; the 10 Nov letter reads from its clear minute f. 36. The key rebuilt from the minute and the glosses (EM alignment, 17 Sept 2026; f. 53r gloss and Halphen alignments, 14 Nov 2026) decodes both printed letters well above shuffled keys (0.507 and 0.535 against best controls 0.291 and 0.319).",
   "contribution": [
    "transcription",
    "key recovered",
    "catalogue correction"
   ],
-  "class": "read in part",
-  "fraction_read": 0.2,
+  "class": "read",
+  "fraction_read": 1.0,
   "fraction_read_method": "estimated",
-  "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. The 10 Nov letter reads (17 cipher lines, about 750 tokens estimated at the 9 Nov letter's 44 tokens a line); the 9 Nov (970 tokens) and 22 Nov (1,879) letters are decoded, not read. About 750 of 3,600, estimated. The earlier 0.55 (NOTES prose) is withdrawn as a reading figure.",
+  "fraction_read_source": "14 Nov 2026: every cipher token of the three letters has a clear text (minute f. 36 for 10 Nov; Halphen 1889 for 9 and 22 Nov). The cipher alone supports about two thirds of the printed words (9 Nov 235/353, 22 Nov fresh part 243/371, sure + probable), so the reading rests on the print, not on the decode.",
   "key": "partial",
   "codes_open": {
-   "open": 19
+   "open": 8
   },
   "grades": "unknown",
   "verification": [
    "independent clear copy",
-   "historical consistency"
+   "historical consistency",
+   "statistical test"
   ],
-  "notes": "10 Nov read in full; 9 Nov about six words in ten; 22 Nov clear text read, cipher in fragments. Open code groups include 44, 45, 62, 66-72, 26-28, 5, 3, 8. fraction_read estimated from the notes (10 Nov full; 9 Nov about half the words; 22 Nov clear text read, cipher runs fragments only), not measured. codes_open counts the 19 code numbers listed open in NOTES (2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80); total not counted. 22 Oct 2026, reading audit: 9 Nov and 22 Nov letters relabelled decoded, not read; only the 10 Nov letter reads.",
+  "notes": "Read from an existing decipherment: 10 Nov from the minute f. 36, 9 and 22 Nov from Halphen 1889 (pp. 16-18, 33-40). Two pre-registered measurements of the frozen key against Halphen (f. 33: 0.507 vs best control 0.291; ff. 46v-47v: 0.535 vs 0.319) miss the 0.85 bar but show the key carries the printed text. Code groups: 6, 66, 72 from the f. 53r gloss; 12, 20, 26, 27, 28, 44, 45, 70 from Halphen; open 2, 3, 5, 8, 9, 31, 62, 80 (codes_open counts these 8).",
   "gaps": [
    {
-    "item": "9 Nov 1601 letter, f. 33 (about half the words)",
-    "blocker": "illegible",
-    "detail": "third pass measured the ceiling as set by the glyph transcription (similar glyphs differ by a hook), not by the key"
-   },
-   {
-    "item": "22 Nov 1601 letter, 80 ciphered runs (ff. 46-47)",
-    "blocker": "illegible",
-    "detail": "decode2.py gives fragments only, the same transcription ceiling"
-   },
-   {
-    "item": "code groups 2, 5, 6, 8, 9, 12, 20, 26-28, 31, 44, 45, 62, 66, 67, 69, 72, 80",
-    "blocker": "no-key-material",
-    "detail": "glossed leaves ff. 49v-50r, 53r, 56r carry verbatim decipherments containing 66 and 72, but the eight cipher lines of f. 53r were never transcribed/aligned"
+    "item": "code groups 2, 3, 5, 8, 9, 31, 62, 80",
+    "blocker": "open-codes",
+    "detail": "6, 66, 72 fixed from the f. 53r gloss and 12, 20, 26, 27, 28, 44, 45, 70 from Halphen 1889 (14 Nov 2026)"
    },
    {
     "item": "clear copies in BnF Cinq cents de Colbert 346",
     "blocker": "needs-physical-access",
     "detail": "copy register 23 Aug 1601 - 22 Nov 1602, not digitised (Gallica SRU no record)"
-   },
-   {
-    "item": "Halphen (ed.), Lettres inedites du roi Henri IV a M. de Bethune, 18 Oct - 24 Dec 1601 (1889): may print the 9 and 22 Nov letters in clear",
-    "blocker": "not-attempted",
-    "detail": "full view on HathiTrust, item iau.31858014633857 (record 100644113), behind a human-verification page; a person opening babel.hathitrust.org/cgi/pt?id=iau.31858014633857 can read it"
    }
   ],
   "credits": [
@@ -355,6 +394,13 @@
     "note": "1599 Béthune key printed 1901: same design; its doubling-sign rule applied (values differ)",
     "date": "1901",
     "source": "Bazeries 1901, pp. 28-29"
+   },
+   {
+    "who": "halphen",
+    "role": "prior solution",
+    "note": "prints the 9 Nov letter f. 33 and the 22 Nov letter f. 46 in clear from the originals",
+    "date": "1889",
+    "source": "E. Halphen, Lettres inedites du roi Henri IV a M. de Bethune (Paris, 1889), pp. 16-18, 33-40"
    }
   ],
   "texts": [
@@ -376,29 +422,43 @@
    },
    {
     "doc": "9nov",
-    "note": "Re-read 22-23 Oct 2026 (b17), still decoded, not read: no DECODE record; no decipherment on or near f. 33 (leaf map, NOTES); the decode stays at the measured transcription ceiling (oracle 71% of letters on known blocks; two careful readings of the hand agree on 69% of glyphs), so its lines do not build sentences ('mil escus et la cetresioatl depentionrln sur le reuenu de naples'). Blockers: illegible (the glyph families g/looped g, m/hooked m, r/2-shaped r differ by a hook at the 450 dpi of the only images) and a clear text not yet consulted: Halphen, Lettres inedites du roi Henri IV a M. de Bethune (1889), is in full view on HathiTrust (iau.31858014633857) but behind a human-verification page this session must not pass; BnF Cinq cents de Colbert 346 (copy register Aug 1601-Nov 1602) is not digitised.",
+    "note": "Read from an existing decipherment: Halphen 1889 pp. 16-18 prints the whole ciphered passage in clear (not reproduced here; HathiTrust copy). The frozen key decodes f. 33 to 0.507 similarity with his text (best of 200 shuffled keys 0.291); 130 of his 353 words are confirmed letter by letter, 105 in part, 118 restored from the print (halphen_check.md).",
     "label": "9 Nov 1601, f. 33r",
     "transcription": "ct_f33_v2.txt",
     "decryption": [
      "decode_f33_v3.txt",
      "decode_f33_v2.txt"
     ],
-    "summary": "A page entirely in cipher about the Spanish news from La Rochepot's secretary and the cardinalate of Don Alexandre, with the cardinals of Joyeuse and d'Ossat. The decryption is decoder output only (about six words in ten); bracketed numbers are open code groups.",
+    "summary": "Henri IV reports, from La Rochepot's secretary in Spain, that the King of Spain has taken the Duke of Modena and the Princes of la Mirandola under his protection with pensions on the revenue of Naples and the Golden Fleece; Bethune is to confer with Cardinal Aldobrandini, the King drops the idea of courting Cardinal d'Este, and the cardinals of Joyeuse and d'Ossat are to advise on Don Alessandro's promotion. Text: Halphen 1889, pp. 16-18.",
     "language": "fr",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (verification)",
+     "date": "2026-11-14",
+     "note": "Text from the printed edition, checked against the cipher by one pre-registered measurement and a word-level alignment; the text itself is not in the repository."
+    },
+    "read_share": 1.0
    },
    {
     "doc": "22nov",
-    "note": "Re-read 22-23 Oct 2026 (b17), still decoded, not read: the clear French reads (reading_22nov.md) but its 80 cipher runs, most of the letter, decode only to fragments at the transcription ceiling measured for this hand; no decipherment on the leaves (ff. 45, 48 are address leaves). Blockers as for 9 Nov: illegible glyph families at the images' resolution, and the clear texts in Halphen 1889 (HathiTrust iau.31858014633857, full view behind human verification, not opened here) and BnF Cinq cents de Colbert 346 (not digitised).",
+    "note": "Read from an existing decipherment: Halphen 1889 pp. 33-40 prints the whole letter with the ciphered passages in clear (not reproduced here; HathiTrust copy). Fresh-portion measurement of the frozen key K' on ff. 46v-47v: 0.535 against best of 200 shuffled keys 0.319; on the 371 printed words of the measured runs, 136 confirmed letter by letter, 107 in part, 128 restored from the print. reading_22nov.md's clear transcription has errors to correct against Halphen (halphen_check.md).",
     "label": "22 Nov 1601, ff. 46r-47v",
     "transcription": [
      "reading_22nov.md",
      "ct_22nov.txt"
     ],
     "decryption": "reading_22nov.md",
-    "summary": "Saint-Germain-en-Laye, answering Béthune's despatch of 29 October: a rebuke of two persons named by code groups for not breaking 'ce coup', the pension of Camaiano to raise the French party in Rome, the Pope's welcome, Barberini's coming, and the baptism of the Dauphin. The clear text is transcribed in full; the 80 cipher runs decode only to fragments.",
+    "summary": "Henri IV answers Bethune's despatch of 29 October: his negotiation with the Grand Duke and Grand Duchess of Tuscany; Venice and the Grand Duke should have stopped Spain's taking Modena and la Mirandola under its protection; three French candidates for the cardinalate (Evreux, the old Archbishop of Vienne, Clermont); the idea of binding Cardinal Aldobrandini to France with the protection of French affairs; Camaiano's pension; Chateau-Dauphin, Barberini, the Jesuits, the Council; the nuncio in Switzerland; a postscript preferring Clermont to Vienne. Text: Halphen 1889, pp. 33-40.",
     "language": "fr",
-    "state": "decoded, not read"
+    "state": "read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (verification)",
+     "date": "2026-11-14",
+     "note": "Text from the printed edition, checked against the cipher by a pre-registered measurement on a fresh portion and a word-level alignment; the text itself is not in the repository."
+    },
+    "read_share": 1.0
    }
   ],
   "key_file": "key.tsv"
