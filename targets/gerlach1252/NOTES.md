@@ -1,6 +1,6 @@
 # gerlach1252: Johann Gerlach, Occulta scripta chymica, Wellcome Collection MS.309 (catalogue 1252), pp.7-10, 13-19 and parts of six later pages
 
-Status: read in part (Malcolm McBratney with Claude and other model sessions, 10-11 Nov 2026, issue #439; integration check 12 Nov 2026). 1,259 of 1,395 words of the reading carry no doubt mark, bracket or hole = 90.3% by the README read bar (counted from `reading.md`); 17 of about 172 cipher pages. Key: Julius Kohn's of 1889, filed in the volume, applied by the contributor as a table of sign labels with three groups re-aligned. The rest of the cipher (pp.20-178) is not read: catalogue 1252 stays, narrowed.
+Status: read in part (Malcolm McBratney with Claude and other model sessions, 10-11 Nov 2026, issue #439; integration check 12 Nov 2026). 1,260 of 1,394 words of the reading carry no doubt mark, bracket or hole = 90.4% by the README read bar (counted from `reading.md`); 17 of about 172 cipher pages. Key: Julius Kohn's of 1889, filed in the volume, applied by the contributor as a table of sign labels with three groups re-aligned. The rest of the cipher (pp.20-178) is not read: catalogue 1252 stays, narrowed.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic), as GitHub issue #439 (no comments); GPT-6 Astra/Sol and Gemini 4 Argon made the first passes of pp.16-18 and independent passes of pp.8-10 and 13, as he names them. The issue carried the key table, the full sign transcription (Part B), the line-by-line decode (Part A), the reading and translation by page; the files here were laid out from it at integration. Catalogue entry **1252** (Daniel Bourdeau, UK libraries sweep, 28-29 Oct 2026).
 
@@ -20,11 +20,11 @@ Recipes: flowers of sulphur (p.7), sulphur sublimed three times with colcothar a
 
 | Rule | Read | Of | Share |
 |---|---|---|---|
-| README bar, from `reading.md`: words with no '?', bracket or hole, 17 pages | 1,259 | 1,395 | 90.3% |
-| Same, per page (read / words): p.8 99/111, p.13 115/125, p.19 99/105, p.7 91/97, p.9 91/118, p.10 91/118 | | | 89.2%, 92.0%, 94.3%, 93.8%, 77.1%, 77.1% |
+| README bar, from `reading.md`: words with no '?', bracket or hole, 17 pages | 1,260 | 1,394 | 90.4% |
+| Same, per page (read / words): p.8 99/111, p.13 115/125, p.19 99/105, p.7 92/96, p.9 91/118, p.10 91/118 | | | 89.2%, 92.0%, 94.3%, 95.8%, 77.1%, 77.1% |
 | Contributor's rule: signs in words giving sense, firm | p.8 489/529, p.9 405/503, p.10 461/535, p.13 515/536, p.19 450/470 | | 92.4%, 80.5%, 86.2%, 96.1%, 95.7% (his figures) |
 
-No page reaches the 95% read bar by the README count; the contributor's p.13 and p.19 "read" rests on his sign-level count. Class: read in part for all.
+No page but p.7 reaches the 95% read bar by the README count, and p.7 only on the marks of `reading.md` (see the check of 14 Nov 2026 below); the contributor's p.13 and p.19 "read" rests on his sign-level count. Class: read in part for all.
 
 ## Integration check (12 Nov 2026)
 
@@ -34,8 +34,40 @@ No page reaches the 95% read bar by the README count; the contributor's p.13 and
 - Pp.16-18 rest on single non-Claude readers (p.18 two, adjudicated) and are not rated.
 - Prior art: the Wellcome catalogue says Kohn's key is inserted; the contributor found no published reading; German literature, Kohn's papers and the Wellcome files not checked. A reading with an existing key, not a first break.
 
+## Independent verification by Brice Dudout (PR #570, 14 Nov 2026): p.7 re-read on the image
+
+Brice Dudout (`VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) reproduced all 348 lines of `decryption.txt`
+from `key.tsv` and `transcription.txt` with his own decoder (re-run here: 348 of 348), and re-read p.7 on the full-size
+Wellcome image (b19695561_0012). On that page the three figure-4 shapes are distinct: the open form (4L, l), the closed
+form with the stem through it (4R, r) and the closed form with a flat foot (4U, u). All 45 figure-4 signs marked
+doubtful on p.7 agree with their shape, and three signs change:
+
+| line | was | now | word |
+|---|---|---|---|
+| L07 | `PI LEO OL? PHI DOT 4R?` | `PI LEO PHI DOT 4L` | souil |
+| L07 | `SQ? LEO 4L? ST LAM` | `RH LEO 4L ST LAM` | wolet |
+| L13 | `EUR 4U? PLUS? ST TRI` | `EUR 4U 4R? ST TRI` | ruret |
+
+His commit changed `transcription.txt` and `decryption.txt` for p.7 (54 doubtful signs there, now 7) and left
+`reading.md` and the count to the maintainer.
+
+Checked here on the same image (full size, lines L07, L08, L12 and L13, about 75 signs): every sign agrees with the
+corrected transcription. L07 word 2 has no sign between the delta and the crossed circle, and ends in the open 4; L07
+word 4 begins with the rhombus that begins the line; the third sign of L13 is a faded figure 4 with its stem, so `4R?`
+with its doubt mark is right.
+
+Applied to `reading.md` p.7: *wolet* without the doubt mark; *ruret?* in place of *ruhet? [ruret?]*. The count becomes
+1,260 of 1,394 words (90.4%; was 1,259 of 1,395, 90.3%), and p.7 92 of 96 (95.8%). That p.7 figure rests on the marks
+of `reading.md` only: five more words of the page stand on a sign still marked doubtful in the transcription (`X?`
+L13 and L18, `CC?` L14, `EUR?` L17, `PST?` L21) and carry no mark in the reading; with them p.7 would be 87 of 96
+(90.6%). The single text entry stays read in part. The end of L24, left untranscribed, fits *o[der]* by his reading; it
+stays bracketed.
+
+Not re-read: the other pages. Doubtful figure-4 signs remain on pp.8, 9, 10, 13, 16, 107, 112, 115 and 177 (his list),
+and the same re-reading could be done there.
+
 ## Remaining gaps
-- 143 doubtful signs, mostly the three figure-4 shapes and the s-signs (54 on p.7) - blocker: illegible; assigned partly from context
+- 96 doubtful signs, mostly the three figure-4 shapes and the s-signs (143 until p.7 was re-read on the image, 14 Nov 2026: 54 there, now 7) - blocker: illegible; assigned partly from context
 - p.9 lines 21-25 and two lines of p.10 - blocker: illegible; stained or damaged in the scan
 - handwritten pp.11-12 (inserted narrow leaf) - blocker: needs-physical-access; no scan of its own
 - p.40 beyond line 9, p.112 beyond line 5, the rest of pp.107, 115, 156, 177 - blocker: needs-physical-access; only opening lines were transcribed, the rest of those pages is a separate piece (see catalogue 1252, narrowed to pp.20-178 and the unread pages)
