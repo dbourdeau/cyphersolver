@@ -16,8 +16,10 @@ interlinear glosses:
 | 92 81 | et que | et que |
 | 25 28 | de | d e |
 
-The key-based reading of the upper f. 167r also matches f. 168. For example, the run "…25 28 88 22 20 24 26 88 72 82 70
-14 | 18 28 …" reads "de[s] autres pla|ce[s]", and f. 168 has "…et autres places qui vous ont esté distraictes". The line
+The key-based reading of the upper f. 167r also matches f. 168. For example, the run "…25 28 82 22 20 24 26 88 72 82 40
+70 14 18 28 82 …" reads "des autres places", and f. 168 has "…des autres places qui vous ont esté distraictes" (the
+third group is 82, s, on the image, not 88 as first transcribed, and the run stands on one line: re-read by Brice
+Dudout, 14 Nov 2026; 22 is a null there). The line
 glossed "pour ne me sembler a propos de le faire" matches f. 168 "…ne me sembler a propos de le f[aire]".
 
 Additions to the key:
@@ -26,6 +28,10 @@ Additions to the key:
 - **66** and 45 31 are nulls or signals (for example "C 66 35 24 64 87" = "C [null] Fumé"). 45.31.73.65.21 at the
   opening of the letter and again before D are dotted groups outside the text stream.
 - **87 = e** and **71 = a** (in "visadmiral" and "tres confident").
+- From ll. 23-29 decoded against the copy (Brice Dudout, 14 Nov 2026; 293 of 311 letters agree): **46 = les** (three
+  times), **94 = t** (*distraictes*, *tres*), **89 = ff** (*difficile*), **33 = c** (*chacun*); once each and less sure:
+  30 = p(o) in *pour* at a line end, 75 = d and 90 = s in *distraictes*, 79 = r(r) in *pourrez*, 48 a null in
+  "ne 48 quictez". 87 also stands once where the copy has no letter ("prinse 87 l'un"), so 87 = e rests on *Fumé* alone.
 - Nomenclator signs:
 
 | Sign | Meaning | Status |
@@ -35,5 +41,6 @@ Additions to the key:
 | && | Monsieur de Mayne | Tomokiyo; glossed "Monsieur du Mayne" on the verso |
 | R | Navarre | glossed "Navarre" on f. 167r l. 33; probably Nérac |
 | ✝ C | head of a proper-name group | before "Fumé" and elsewhere |
-| ⊖ | uncertain | near "Huguenotz" in the glosses, not confirmed |
+| ⊖ | Huguenotz | l. 29: "l'autre 46 ⊖" = *l'autre les Huguenotz* in the f. 168r copy (14 Nov 2026) |
+| double-barred cross (partly under a blot) | Catholiques | l. 29: "proteger 46 [sign]" = *proteger les Catholiques* in the copy (14 Nov 2026) |
 | Ω, ∞, ✝o | uncertain | Ω with Villeroy; the others stand for places or people named on the verso |

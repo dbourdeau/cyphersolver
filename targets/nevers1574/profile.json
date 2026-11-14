@@ -102,7 +102,17 @@
     {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryptions f15_reading.md (opening, address and clear ending only) and f21_transcription.md (the clear fair copy); no sign-level transcription of either cipher exists in the folder", "result": "partial"},
     {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): f21_transcription.md reads as continuous Italian (reviewed A); f15_reading.md gives only the opening of the gloss, the address and the clear closing, so f. 15 is relabelled decoded, not read. fraction_read 0.4 -> about 0.3 (estimated).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
     {"date": "2026-10-22", "kind": "reading", "what": "Re-read of f. 15 under REREAD_BRIEF (batch mix1): the interlinear gloss transcribed line by line on the Gallica native images (f15_gloss.md), the cipher signs transcribed (f15_signs.tsv, 70 lines; f. 16r lines 1-19 found to continue the cipher) and decoded with an alphabet rebuilt from gloss-sign alignment (f15_key.md). Gloss and decode agree word for word on f. 15r and f. 16r; f. 15v ll. 2-5 illegible. f. 15 relabelled read (f15_reading.md, f15_en.md, f15_reread_log.md).", "result": "worked", "technique": ["crib testing", "manual reconstruction", "plaintext matching"]},
-    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Brice Dudout (Claude Opus 5.5): independent check (verify_dudout_20261114.py, f15_key.md and f15_signs.tsv only): the reading enciphered back with the key agrees with the transcribed signs on 942 of 978 (f. 15r), 637 of 781 (f. 15v) and 587 of 620 (f. 16r cipher) collapsed signs. The ~50 one- or two-letter differences on 15r/16r are mostly letters the transcription omits, plus two regular usages f15_key.md does not list: 'gouvernement' is written 0 8 2 ... (2 = n for u) in all five occurrences, and the d-sign b stands for u/v three times (15r ll. 2, 8, 26); 15r ll. 2 and 8 checked on the Gallica image (f17): as transcribed. f. 15v ll. 2-5 re-read at full size: nothing new. v10_relabel.measure 0.941 = recorded.",
+      "result": "worked"
+    },
+    {"date": "2026-11-14", "kind": "verification", "technique": ["other"], "what": "Project check of PR #572 (Brice Dudout): his script re-run (942/978, 637/781, 587/620 collapsed signs agree with the reading enciphered back). The two usages checked in f15_signs.tsv: 0 8 2 for gou- in the five occurrences of gouvernement (15r ll. 8, 10, 15; 15v l. 23; 16r l. 12) and b for u/v at 15r ll. 2, 8, 26; added to f15_key.md under 'Homophones and traps' as usages, not table values. v10_relabel.measure 0.941 as recorded; read in part stands. Gallica f17 fetched; ll. 2 and 8 not read again here.", "result": "worked"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
@@ -123,7 +133,13 @@
       {"item": "f. 21 first-sentence expression", "blocker": "illegible", "detail": "Fair copy appears to read 'per saluato suo'; perhaps a personal name or abbreviation."}
     ],
     "credits": [
-      {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy under the cipher flap (f. 21) and interlinear decipherment of f. 15"}
+      {"who": "contemporary", "role": "key or decipherment used", "note": "clear copy under the cipher flap (f. 21) and interlinear decipherment of f. 15"},
+      {
+        "who": "dudout",
+        "role": "verification",
+        "note": "independent check of the f. 15-16 reading against the transcribed signs; two key usages found (gou- with 2, b for u/v), checked on the image (VERIFY_dudout_20261114.md)",
+        "date": "2026-11-14"
+      }
     ],
     "texts": [
       {

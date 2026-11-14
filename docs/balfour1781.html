@@ -4,7 +4,7 @@
 <meta name="description" content="Two cipher dispatches of Lt Col. Nisbet Balfour at Charleston to Lord Cornwallis, early March 1781, and his cipher letter to Lt Col." data-full="Two cipher dispatches of Lt Col. Nisbet Balfour at Charleston to Lord Cornwallis, early March 1781, and his cipher letter to Lt Col. Alexander Stewart of 12 August 1781, intercepted by the Americans and filed in the Papers of the Continental Congress (NARA RG 360, item 51 vol. 1, pp. 717-736) with a decipherment written between the lines at the time. The ring key of the southern British &lsquo;Common cipher&rsquo; and its setting rule were rebuilt from that decipherment, and all three letters were deciphered from the transcribed numbers: 99.8% of 4,630 letters read as English.">
 <link rel="stylesheet" href="style.css?v=02aff2b7">
 <meta name="date" content="2026-10-27">
-<meta name="last-modified" content="2026-11-08">
+<meta name="last-modified" content="2026-11-14">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -55,9 +55,9 @@
 <div class="parties"><figure class="party recipient"><img src="portrait_lord-cornwallis.jpg" width="192" height="192" decoding="async" alt="Lord Cornwallis" title="Lord Cornwallis: Portrait by Thomas Gainsborough, 1783. Wikimedia Commons, public domain." loading="lazy"><figcaption><span class="role">to</span>Lord Cornwallis</figcaption></figure></div><!-- /parties -->
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">The British commandant at Charleston reported to Cornwallis in a number cipher that the Americans took and deciphered; the key was rebuilt from their decipherment and every letter deciphered again from the numbers.</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-27">27 October 2026</time> &middot; updated <time datetime="2026-11-08">8 November 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-27">27 October 2026</time> &middot; updated <time datetime="2026-11-14">14 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#deciph">read from existing decipherment</a> &middot; Extent: complete</p><!-- /outcome -->
-<p class="credits">Credits &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
+<p class="credits">Credits &middot; <a href="contributors.html#dudout">Brice Dudout</a> (verification) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal solved" aria-hidden="true"><span class="long">deciphered copy</span></div>
 </section>
 <main>
@@ -129,7 +129,7 @@
 <p>The two volumes of Intercepted Letters (848 images) were listed through the National Archives Catalog&rsquo;s records API. The pages were fetched as JPEG 2000 and cut into strips, and three transcription agents copied every number, the interlinear letters and the decipherer&rsquo;s marks: 6,349 cipher tokens on 17 pages.</p>
 <p>A single number-to-letter table per sheet, aligned against the interlinear, agreed only 20&ndash;27%: the table changes inside a sheet. Saberton&rsquo;s ring, given a setting for each word, read in long runs. A 25-letter alphabet fixed the remaining i/j and h/i slips, and then one ring order fitted every page. The braced groups proved to be the setting indicators. From then on the decoder (<code translate="no">decode.py</code>) works from the numbers alone: it reads an indicator&rsquo;s number as A, skips fillers and prints lone numbers as numerals. Where an indicator has only two fillers and could also be the word &ldquo;a&rdquo; padded with fillers, the next 40 letters are scored both ways with the project&rsquo;s English model. The only outside correction is the decipherer&rsquo;s &ldquo;should be 13&rdquo;. Two fillers cut off at the page edge on p. 722 were restored as &ldquo;4x&rdquo; from the visible first digit, which completed two indicators.</p>
 <p>Measured on the decoder&rsquo;s output, a letter counts as read when a 24-letter window containing it scores at least &minus;3.3 per letter on the <code translate="no">en-modern</code> model. No. 1: 1,213 of 1,213; No. 2: 1,292 of 1,292; No. 3: 237 of 237; B: 1,530 of 1,539; Stewart: 850 of 850. The same measure on the same numbers deciphered with a corrupted ring gives 0&ndash;2%. The project&rsquo;s validation test (<code translate="no">docs/_validate.py</code>) scores the reading at &minus;2.24 per letter, against &minus;7.26 for random keys of the same shape and &minus;4.16 for a key refitted to shuffled ciphertext: pass.</p>
-<p>Against the interlinear as transcribed, the decoder agrees on 62&ndash;82% of letters where the interlinear is legible. The differences checked are faint or misread interlinear letters. The one real disagreement is in No. 3, where the cipher has the numeral 18 for the men lost and the decipherer wrote &ldquo;fifteen&rdquo;.</p>
+<p>Against the interlinear as transcribed, the decoder agrees on 62&ndash;82% of letters where the interlinear is legible. The differences checked are faint or misread interlinear letters. The one real disagreement is in No. 3, where the cipher has the numeral 18 for the men lost and the decipherer&rsquo;s small word above it was first read &ldquo;fifteen&rdquo;. Brice Dudout re-read the place on the microfilm image in November 2026: the word is faint and partly struck through and only its ending &ldquo;-teen&rdquo; is sure, and the mark beside it is an f (the end of &ldquo;loss of&rdquo;), not a 4. The cipher&rsquo;s 18 stands. His second decoder, which uses no language model, reproduces all three decryptions letter for letter.</p>
 
 <h2 id="what-remains-uncertain"><span class="num">07</span> What remains uncertain</h2>
 <ul>
@@ -1451,13 +1451,13 @@ convenient.</pre></details>
 <p class="muted">Files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/balfour1781">targets/balfour1781/</a> (transcription per page, ciphertext files, <code translate="no">decode.py</code>, <code translate="no">decoded.txt</code> line by line, <code translate="no">reading.md</code>, NOTES).</p>
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, “Nisbet Balfour’s intercepted cipher dispatches, 1781”, Cyphersolver, posted 27 October 2026, updated 8 November 2026, https://cyphersolver.com/balfour1781.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, “Nisbet Balfour’s intercepted cipher dispatches, 1781”, Cyphersolver, posted 27 October 2026, updated 8 November 2026, https://cyphersolver.com/balfour1781.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-balfour1781,
-  author = {Daniel Bourdeau},
+<p class="citetext">Daniel Bourdeau and Brice Dudout, “Nisbet Balfour’s intercepted cipher dispatches, 1781”, Cyphersolver, posted 27 October 2026, updated 14 November 2026, https://cyphersolver.com/balfour1781.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Brice Dudout, “Nisbet Balfour’s intercepted cipher dispatches, 1781”, Cyphersolver, posted 27 October 2026, updated 14 November 2026, https://cyphersolver.com/balfour1781.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-balfour1781,
+  author = {Daniel Bourdeau and Brice Dudout},
   title = {Nisbet Balfour’s intercepted cipher dispatches, 1781},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 27 October 2026, updated 8 November 2026},
+  note = {posted 27 October 2026, updated 14 November 2026},
   url = {https://cyphersolver.com/balfour1781.html}
 }">Copy BibTeX</button></p>
 </details>

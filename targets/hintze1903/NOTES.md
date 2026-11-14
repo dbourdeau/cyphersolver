@@ -100,6 +100,28 @@ on 49641 = franceza, which the page model puts in doubt.
 - "presumably during a regency": they were sent to the Queen during her Mediterranean journey of spring 1903.
 - Status: the May telegram carries a decode of the time.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) re-read all 54 groups of m0001 and
+m0003 and the decode of the time on the four DigitArq images: no difference from the transcriptions; *divorciado* and
+*contestar* legible, *Livorno* still doubtful. His script re-derives the telegraph word counts (75 and 46), applies
+`code_values.tsv` to m0003 (25 of 25 groups as published) and refits the page model: rho 0.957, 21 of 24 in order, 500
+shuffles at most 0.697. Re-run here: same figures. The images were not fetched again here.
+
+His proposal for the two groups out of order, recorded and not adopted: 50554 = *Presidente da Republica* as one
+phrase, 3707 = *franceza*, and 49641 = the full stop the decoder wrote after *franceza* (a word such as *ponto*, which
+falls between *ministro* and *presidente*). It takes the decode unit for unit, needs no unwritten word, and puts 23 of
+24 values in order (rho 0.969; 23 of 23 without Livorno). It replaces the "unwritten o" idea of section 4 as the
+better guess; the values of `code_values.tsv` are unchanged, since nothing but the page model speaks for it. He also
+notes that the three highest groups (67033, 67394 in m0001 after *em* and *a*, and 67398 Livorno) look like a block of
+place names at the end of the book, which supports 67394 = Lisboa as a guess.
+
+Read share of m0003. All 25 groups have a word in the decode of the time, but two of the 46 words of the telegram are
+doubtful readings of the ink (Livorno, contestar). Counting sure words only, 44 of 46 = 0.957; `read_share` now carries
+that in place of 1.0. It stays read. (`v10_relabel.measure` gives 0.793 on `m0003_reading.md` because it also counts
+the ten articles and prepositions supplied in brackets for the English reader as holes; they are not in the telegram,
+so they are neither read nor unread.)
+
 ## Remaining gaps
 
 - m0001, 28 of 29 groups (Lisbon -> Naples, 23 Apr 1903) - blocker: no-key-material; no decode in M15, only 41285 recurs in m0003, the page model brackets the others but does not fix them, and the codebook was not found

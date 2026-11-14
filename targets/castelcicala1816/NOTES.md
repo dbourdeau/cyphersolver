@@ -158,6 +158,38 @@ Plain-bar check (Italian 1823): R9589 had been scored on `transcripts/R9589.txt`
 groups and notes (plain 0.385). Its contemporary interlinear decipherment is now running text in
 `transcripts/R9589_reading.md` (English `_en.md`): plain 0.8, explicit 0.8; keeps read.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) checked `key.tsv` against the glosses
+of the time, reading only the key and `transcripts/R*.txt`: on each glossed line, the key values found in order in the
+gloss letters are G 180 of 215, X 30 of 41, I 54 of 70. The misses are the decipherer's abbreviations, groups he left
+unglossed and words carried over a line end, not wrong values. Re-run here: same figures.
+
+Readings corrected from the code groups under the gloss, each group looked up again here in `key.tsv`:
+- R9571 "Cardinale [?Vo...] Castiglione": the groups are 2009 2211 1725 2295 | 2012 2448 1535 2169 =
+  car-di-na-le | cas-ti-gli-one. No group stands under "Vo...": it is the decipherer's own unfinished word. Dropped.
+- R9571 "Pontefica[te]": 1609 2448 2221 1951 2450 = pon-ti-fi-ca-to, *Pontificato*.
+- R9571 "tra la Francia. L'Austria per la elezione": 2353 332 2231 383 1418 2231 1708 = Francia e l'Austria per
+  l'ele(zione); the decipherer's full stop stands over the group 332 = *e*.
+- R9589 first line: five groups, 1450 2232 2357 1758 2318 = ? la li-ber-ta. *avuto* is the gloss of 1450 (no key
+  value; the gloss word is doubtful), and the `[…]` before it had counted 1450 twice. Dropped; `[?avuto]` stays a hole.
+
+Read share (`v10_relabel.measure`): R9571 0.961 -> 1.0 (51 words, no hole), R9589 0.974 -> 0.987 (74 words, 1 hole).
+Both were read and stay read.
+
+Key notes, nothing changed in `key.tsv`:
+- 1161 is glossed *sua* in R9571 and *suo* in R9589: its value is su-o/a.
+- 1050 = *ciò* (grade I) is doubtful. In R9571 l. 11 the gloss "fatto ciò vedere" stands over 1553 1050 2268 1568 1836,
+  and 2268 is *ciò* again two lines on ("che ciò nuoccia" over 1999 2201 2268). Both cannot be *ciò*; 1050 is more
+  likely the second half of *fatto* or a null. It occurs in R9560, R9561, R9570 and R9571 only.
+- The statement in the re-read log and in the per-record notes that no record beyond R9566, R9569, R9571 and R9589
+  has a gloss is not exact: `transcripts/R9563.txt` records faint pencil glosses on pp. 2-3 (candidates 453 *avvisi*,
+  1378 *a*, 1614 *sarebbe*, 497/1502 *politici*, 2268 *ciò*; the transcriber marks them uncertain) and
+  `transcripts/R9561.txt` two words (*Collo stesso Corriere*, *che*). They are too few and too doubtful to read either
+  despatch; they are candidates to test when the images are re-read.
+
+Not checked by him or here: the DECODE images (login required, not held).
+
 ## Remaining gaps
 
 Decoded, not read (reading audit, 22 Oct 2026; re-read 22 Oct 2026, reread_log.md): unread groups between nearly every pair of words in each; the
@@ -173,7 +205,7 @@ blocker is the code itself (about half the groups have no value, no codebook onl
 - R9560 (19 Oct 1816), decoded, not read - blocker: no-key-material
 - R9561 (30 Nov 1816), decoded, not read - blocker: no-key-material
 - R9562 (3 Dec 1816), decoded, not read - blocker: no-key-material
-- R9563 (no. 2814), decoded, not read - blocker: no-key-material
+- R9563 (no. 2814), decoded, not read - blocker: no-key-material (the faint pencil glosses on pp. 2-3 give five candidate values, all uncertain)
 - R9564 (no. 3388/3588), decoded, not read - blocker: no-key-material
 - R9565 (no. 3721), decoded, not read - blocker: no-key-material
 - R9566 (1 Dec 1816; gloss on ten lines of p. 3 only), decoded, not read - blocker: no-key-material

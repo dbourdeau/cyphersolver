@@ -46,7 +46,7 @@
     "by": "llm from images",
     "source": "NARA naId 1634036 image 2",
     "image_quality": "poor",
-    "notes": "Two ink lines at the top; the rest is show-through from side 1. Read once, not re-read independently."
+    "notes": "Two ink lines at the top; the rest is show-through from side 1. Read once by the first agent; line 2 re-read on the image on 14 Nov 2026 (dudout): GANI[Z?][?]ING is GANISING (the Z is part of the I-sign before it; the unread sign is the torn box of S)."
    }
   }
  ],
@@ -149,7 +149,14 @@
    "kind": "verification",
    "what": "Review (Claude, for Daniel Bourdeau): side 1 reading re-read against decryption_side1.txt and image 1 (lines 4-9 checked sign by sign: ATTACK IS HOURLY EXPEC-R-TED, THEY BELEIVE, SIMULTANEOU, FERR-). Grade B: coherent, but holes or conjectures in 9 of 15 sentences. Side 2 counted from transcription_side2.txt (17 signs read; no clear words), filling the two 'unknown' fields.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Brice Dudout (Claude Opus 5.5): an independent script (verify_dudout_20261114.py) applies the label legend of transcription_side1.txt to the 183 signs of side 1: 17 of 17 lines as in decryption_side1.txt. Side 1 and side 2 checked on the NARA images (naId 1634036, images 1-2), the key on M1091 image 0484. Side 2, line 2, read once before, is GANISING, '[or]ganising': the '[Z?]' is the two extra strokes of the I-sign (as the I of MORNING on side 1) and the unread sign is the lower half of the box with X (S). The G of MORNING is a closed 8 with a stroke, so the stroke alone does not tell G from U (the U of OUT is the key's open $).",
+   "result": "worked"
+  },
+  {"date": "2026-11-14", "kind": "verification", "what": "Project check of PR #572 (Brice Dudout): his side-1 script re-run (24 labels, 183 signs, 17 of 17 lines equal decryption_side1.txt). Side 2 line 2 (GANISING) taken on his record: the NARA catalogue returned no image link to a script this session, so the re-read was not repeated here. Read share of side 1 recounted with v10_relabel.share: 30 words, 31 holes, 0.492; read_share and fraction_read set to it in place of 0.595 (v2_score's hole rate, a different count); README, SOLVED_CATALOGUE, SOLVED_RANKING, findings and manifest lines brought into line. Class unchanged (read in part). Page: side-2 fragment line corrected.", "result": "worked"}
  ],
  "outcome": {
   "class": "read in part",
@@ -157,9 +164,9 @@
   "method": "read after matching with key from external sources",
   "method_basis": "The 1864 key found on Greenhow's body (NARA M1091 naId 62017285 image 0484), not previously tied to this 1861 letter, decodes side 1 with no change except one extra N form; side 2 and the numeral fragment are not read.",
   "contribution": ["transcription", "catalogue correction"],
-  "fraction_read": 0.6,
+  "fraction_read": 0.49,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_side1.md scored with research/reading_audit/v2_score.py: hole rate 0.405 with every supplied letter and conjecture counted as a hole (0.595 read as sense); side 2 not counted.",
+  "fraction_read_source": "reading_side1.md, reading body, counted with research/reading_audit/v10_relabel.py (share): 30 whole words, 31 holes, with every supplied letter and conjecture counted as a hole (0.492 read as sense; recounted 14 Nov 2026; the 0.595 recorded before was the hole rate of v2_score.py, 0.405 over 42 word tokens, a different count); side 2 not counted.",
   "verification": ["key confirms", "historical consistency"],
   "provenance": "contributed",
   "notes": "Applying the 1864 key to 1861 Greenhow material is not new (the Rosenbach did so in 2011 for another note); no decipherment of this letter was found. The second N form (looped l with a crossbar) is not on the key sheet; every word that contains it is otherwise keyed.",
@@ -167,7 +174,7 @@
    {"item": "Side 1, paper losses (al[l], acti[vi]ty, atta[ck], [b]e, Ferr[y], eff[o]rt, tro[op o]f, Harpe[r's F]erry, line 15 [th]is)", "blocker": "illegible", "detail": "signs lost with the paper; restorations from context, marked"},
    {"item": "Side 1, clear words cut by losses (myste.., a.., u.., l..) and the heading 'P 31 ?'", "blocker": "illegible", "detail": "torn clear words; the heading may be a number or date"},
    {"item": "Side 1, '[..]r[d]s Ferr[y]' and '[Bal]timore'", "blocker": "illegible", "detail": "'Edwards Ferry' and 'Baltimore' are conjectures; only R d S - F E R R and TIMORE are on the paper"},
-   {"item": "Side 2 (image 2)", "blocker": "illegible", "detail": "two ink lines, the rest show-through; fragments only"},
+   {"item": "Side 2 (image 2)", "blocker": "illegible", "detail": "two ink lines, the rest show-through; fragments only: gr[..]e. tim[..] bo[..] / i[..] [or]ganising"},
    {"item": "Numeral fragment (image 3)", "blocker": "no-key-material", "detail": "tested against the 1864 key (numerals_test.py): its figure signs are letter-like (1 a, 2 d ...), so the Arabic figures are not this key's numbers, and read as its letter signs the figures give no words (2 and 6 have no value); the scrap reads as a money reckoning ('$5 dollers $25'), and the three key-like signs on its last line are too few to read. No other key or code book is known"}
   ],
   "credits": [
@@ -188,6 +195,12 @@
     "role": "key or decipherment used",
     "note": "the 1864 key found on Greenhow's body, copy in NARA M1091 naId 62017285 image 0484 ('Lamb Papers CXXIX')",
     "source": "https://catalog.archives.gov/id/62017285"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "side 1 decode re-run (17/17 lines); side 2 line 2 re-read on the image: [or]ganising",
+    "date": "2026-11-14"
    }
   ],
   "texts": [
@@ -199,7 +212,7 @@
     "reading": "reading_side1.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.595,
+    "read_share": 0.492,
     "reading_review": {
      "grade": "B",
      "by": "Claude (review for Daniel Bourdeau)",

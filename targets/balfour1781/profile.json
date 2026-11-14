@@ -303,7 +303,14 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 6151 tokens, 533 types, en-modern order 4: reading -2.241 per letter; random keys -7.258 (z 23.4); key annealed onto shuffled ciphertext best -4.101 (mean -4.156, z 37.9); annealer on the real text -3.66. Verdict: pass.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Brice Dudout (Claude Opus 5.5): independent decoder (verify_dudout_20261114.py) reading only RING and TABLES['C'] of decode.py and the transcription pages, with dash-group rules and no language model: A 2742/2742, B 1539/1539, C 850/850 letters equal to decryption_A/B/C.txt; the same 31 + 4 indicator settings, and Nos. 2 and 3 open on the previous sheet's last setting without the START table. README read bar (v10_relabel.measure): A 0.988, B 0.990, C 0.970 (recorded 1.0, 0.994, 1.0); all stay read. Image p. 725 (NARA image 570): over 15 in L09 the interlinear has an f (15 = the f of 'of'), and the word over the numeral 18, read 'fifteen', is faint and partly struck through, ending '-teen'; the cipher's 18 stands.",
+   "result": "worked"
+  },
+  {"date": "2026-11-14", "kind": "verification", "what": "Project check of PR #572 (Brice Dudout): his decoder re-run (A 2742/2742, B 1539/1539, C 850/850 letters, 31 + 4 indicator settings); v10_relabel.measure reproduced (A 0.988, B 0.990, C 0.970) and recorded as read_share in place of 1.0, 0.994, 1.0, which were letter shares; all stay read. p. 725 L09 looked at on NARA image 570: the mark over 15 looks like an f, the struck word over 18 is too faint to decide between fifteen and eighteen; the cipher's 18 stands. No key correction.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -366,6 +373,12 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "interlinear decipherments in PCC item 51 vol. 1, pp. 717-736, probably James Lovell, 1781"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "independent decoder without language model (100% of A, B, C), README read-bar recount, p. 725 checked on the NARA image",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [
@@ -397,7 +410,7 @@
     ],
     "decryption": "decryption_A.txt",
     "reading": "reading_A.md",
-    "read_share": 1.0,
+    "read_share": 0.988,
     "summary": "Charleston news for Cornwallis after he left: the Chatham convoy with Governor Bull and Sir Egerton Leigh, the raid of Marion and Lee on Monk's Corner, Craig's seizure of Wilmington, Georgetown attacked, a fleet from Ireland, Arnold's express from the Chesapeake, Captain Barclay refusing to sail against the French, and Sumter beaten off at the Congarees and pursued by Rawdon and Watson.",
     "language": "en",
     "contemporary": "decoded.txt",
@@ -419,7 +432,7 @@
     ],
     "decryption": "decryption_B.txt",
     "reading": "reading_B.md",
-    "read_share": 0.994,
+    "read_share": 0.99,
     "summary": "Arnold's plan to raid the Albemarle Sound and Newbern; Balfour has sent Arnold the cipher by Evans; Savannah short of provisions, the frontier under pressure; what to do with the troops from England and the Wilmington post; Rodney's capture of St Eustatius and a Dutch war certain.",
     "language": "en",
     "contemporary": "decoded.txt",
@@ -441,7 +454,7 @@
     ],
     "decryption": "decryption_C.txt",
     "reading": "reading_C.md",
-    "read_share": 1.0,
+    "read_share": 0.97,
     "summary": "Arrangements for an escort and supplies to Stewart's army: no dragoons at Charleston, the depot near Monk's Corner put in defence, Caldwell not to act with the cavalry, and a request to cover the escort at Manigault's or Murray's ferries with a move towards Nelson's.",
     "language": "en",
     "contemporary": "decoded.txt",

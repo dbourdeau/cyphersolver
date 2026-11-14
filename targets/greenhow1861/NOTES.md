@@ -71,8 +71,10 @@ Corrections from the second reading, applied:
   is plausible, not read.
 - **A TRO[OP O]F CAVALRY**: A T R O, a loss, F, then CA|VALRY; "troop of" is a conjecture that fits the loss.
 
-Measured: with every supplied letter and conjecture counted as a hole, 0.595 of the words read as sense
-(`research/reading_audit/v2_score.py`). That is why the document is "read in part", not "read".
+Measured: with every supplied letter and conjecture counted as a hole, 0.492 of the words read as sense: 30 whole
+words and 31 holes in the reading body (`research/reading_audit/v10_relabel.py`, `share`; recounted 14 Nov 2026 after
+Brice Dudout's check, PR #572). The figure recorded before, 0.595, was `v2_score.py`'s hole rate (0.405 over 42
+word tokens), a different count; `v10_relabel`'s share is the one used for `read_share` across the project. That is why the document is "read in part", not "read".
 
 Context: written in Washington in the weeks before 23 Aug 1861 (McClellan took command at Washington in late July 1861).
 The panic in the city, an attack hourly expected, a search for whoever "gave the alarm", cavalry movements, and
@@ -128,7 +130,20 @@ maximum of 5.)
 - Side 1, paper losses (al[l], acti[vi]ty, atta[ck], [b]e, Ferr[y], eff[o]rt, tro[op o]f, [th]is, Harpe[r's F]erry) - blocker: illegible; lost with the paper, restorations marked.
 - Side 1, torn clear words (myste.., a.., u.., l..) and the heading "P 31 ?" - blocker: illegible.
 - Side 1, "Edwards Ferry" and "Baltimore" - blocker: illegible; conjectures only.
-- Side 2 - blocker: illegible; two ink lines, fragments only (gr..e, tim.., bo.., ..ganiz.ing), read once.
+- Side 2 - blocker: illegible; two ink lines, fragments only (gr..e, tim.., bo.., [or]ganising). Line 2 re-read on
+  the image on 14 Nov 2026 (`VERIFY_dudout_20261114.md`): GANISING, not GANI[Z?][?]ING.
+
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) applied the label legend of
+`transcription_side1.txt` to the 183 signs of side 1: 17 of 17 lines equal `decryption_side1.txt`. Re-run here: same.
+He re-read side 2 line 2 on NARA image 2: `G A N I [Z?] [?] I N G` is `G A N I S I N G`, "[or]ganising"; the "[Z?]"
+was the two extra strokes of the I sign and the unread sign is the torn lower half of the S box. Sign count 17,
+distinct 11, unchanged. He also notes that the G of MORNING is a closed 8 with a stroke and the U of OUT an open $,
+so it is the closed or open form, not the stroke, that tells G from U; no reading changes. The side-2 re-read was not
+repeated here on the image (the NARA catalogue returned no image link to a script this session); it is taken on his
+record. Side 2 stays decoded, not read: one word and three fragments.
+The read share of side 1 was recounted: 0.492 (see "Measured" above). No key correction.
 - Numeral fragment (image 3) - blocker: no-key-material; tested against the 1864 key in review (`numerals_test.py`):
   the key writes figures as letter-like signs (1 a, 2 d, 3 phi, 4 ff, 5 m, 6 b, 7 nn, 8 c, 9 c; 10 III), so these
   Arabic figures are not its numbers; read as its digit-like letter signs they give no words (11 of 33 groups hold a 2

@@ -5,7 +5,7 @@
 of the cipher block (agrees with Scheurer, Correspondance du cardinal Jean du Bellay t. I, 1969, no. 12 p. 41):
 *Monsr, si vous trouvez bon l'advis que piecza vous ay envoé de faire semblant que Madame ne fust allée pour conclure,
 et qu'estant là madame Marguerite luy ayt par importunité faict envoyé querir pouoir, il ne vous faudroyt oublyer a
-le faire dater de ce temps là et du lieu ou ser[a le] Roy.* See NOTES.md section 6. The older line-by-line notes below are
+le faire dater de ce temps là et du lieu ou sera [le] Roy.* See NOTES.md section 6. The older line-by-line notes below are
 kept as history.
 Source image: Gallica `btv1b9060311s` canvas 21 (= page 21), 4262 x 6155 px (`img/c021_full.jpg`, gitignored).
 DECODE record 3688 (BNF_Français_3078_021), status "Non-decrypted" (checked 17 Sept 2026). Not in Le Grand 1688,

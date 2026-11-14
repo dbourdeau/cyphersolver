@@ -71,3 +71,15 @@ is the English.
 The rest of item 8 was not transcribed, and the letters were not re-collated against the print. The decipherment
 is complete in Hanserecesse, so a new reading would add nothing. The parchment key strip (XIII, 38) was not looked
 for among the item-8 images. The slip's "Pergamentsbreve E 16-23" may be where it is now filed.
+
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`) typed the K1 sign sequence from the
+apparatus of Hanserecesse III/8 n. 292 and compared it with `transcription_094.txt`: the edition gives 51 signs for K1
+(image 94) and the transcription has 51 labels (not 50, as the transcription step said); 50 of 51 agree, the one
+difference being the l. 10 sign already recorded above. All 51 values of `key.tsv` stand in `decryption_094.txt`.
+Re-run here: same figures. He also corrected one of the ten words given "as printed" in `decryption_094.txt`: l. 29
+`<durchtheent>` to `<durchthendes>`. Checked here in the edition (PDF p. 345): the text has "in synen gebeden
+krygesvolk durchthendes", and note a* gives "knechte adir rutere", also in signs, for K1. No key correction; read share
+1.0 as recorded. Image 95 and the other letters of item 8 were not looked at by him or here.
+

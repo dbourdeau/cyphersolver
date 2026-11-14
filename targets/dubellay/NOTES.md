@@ -241,12 +241,40 @@ line 7 came from the print.
 - R2287 (Clair. 328 f. 291, 28 Oct 1528): solved by Lasry 2022; text in Bourrilly 1905 no. 156; it is the 1528
   cipher, which is why the record's note says Tomokiyo's 1529 table does not fit.
 
+## Independent verification by Brice Dudout (PR #572, 14 Nov 2026)
+
+Brice Dudout (PR #572, `VERIFY_dudout_20261114.md`, `verify_dudout_20261114.py`).
+
+16 June 1529 (p. 21). His decoder reads only `key_p21.tsv` and the sign half of each token of `p21_signs.txt`: 194
+tokens, 191 give the value of their label, 3 are outside the key (line 7). All 216 decoded letters occur in order in
+`texts/16jun1529_decryption.md`; the decryption adds the v of *trouvez*, the second l of *allée*, *ue* after the que
+sign (twice) and *le* at the end, which are the edition's spelling, not the cipher's. Re-run here: same figures. On
+Gallica (btv1b9060311s f21) he reads the smudged sign of line 7 as the open a cup under a blot. Looked at here at full
+size: a small rounded sign under a faint blot after `ω ⊡`, which fits the cup. The first transcription already had
+"a?". Adopted: the cipher has *ou sera*; only *le* is not enciphered (`sera [le]` in the decryption). ρ with a triangle
+foot and the small x stay without value.
+
+22 Oct 1529 (fr. 3005 ff. 165v-166r, btv1b90599952 f260-f261). He re-read f. 165v ll. 24-25 and 29-30 and f. 166r
+ll. 1-2 and keeps three shapes apart that the first transcription wrote alike: the cross with a slanted foot stroke
+(e), the closed q-head on a crossed stem (t) and the hooked stem with no closed head (s). The row "ꝗ t / s
+conflicting" of `texts/22oct1529_corrections.tsv` is therefore two signs. New readings: "saichant ne consentent de
+ceste reques[t]e suz payne de le faire incontinent mourir", "la fureur de ses enemys qui luy ont ainsi tranportes",
+"si avant des deux", "vous en". Checked here against the files, not sign by sign on the image: the twelve signs of
+v25 as first transcribed (`♀ ω ⊡ ‡◇ ⊤ ℓ ‡◇ ᴖ ω ʊ 8 j̈`) give t-e-r-e-q-u-e-s-e-s-u-z with the values of `key_p21.tsv`
+(♀ t, ω e, ⊡ r, ℓ u, ʊ s, 8 u, j̈ z), so the new line is a plain key decode. Canvas 260 was fetched and the lines
+located; the three shapes were not told apart again here.
+
+Read share of the 22 Oct reading (`v10_relabel.share` on `texts/22oct1529_reading.md`): 0.913 (471 words, 45 holes)
+before, 0.922 (475, 40) after. Under 0.95: decoded, not read, as before. (`v10_relabel.measure` reports 1.0 for this
+entry because the entry has no `reading` field and the measure falls on Le Grand's printed text: not a figure of
+this reading.) Still open on those lines: v30 after "ont mais", w2 after "ce que".
+
 ## Remaining gaps
 
-- p. 21 line 7: two signs (ρ with a triangle foot, a small x) between *lieu* and *ou* and one smudged sign before
-  *roy* have no value. blocker: too short; three isolated signs with no counterpart in the print, probably nulls or a slip.
+- p. 21 line 7: two signs (ρ with a triangle foot, a small x) between *lieu* and *ou* have no value (the smudged sign
+  before *roy* is the a cup, 14 Nov 2026). blocker: too short; isolated signs with no counterpart in the print, probably nulls or a slip.
 - Scheurer t. I seen only through Google Books snippets. blocker: externally blocked; snippet view only.
-- 22 Oct 1529 opening (fr. 3005 ff. 165r-166r): read in part 23 Oct 2026 (texts/22oct1529_reading.md); f. 165v ll. 21-35, f. 166r ll. 1-5 and the word signs ꝑ, ℋ, ꝏ, # left open - blocker: needs-physical-access; Scheurer t. I (1969) prints the whole opening (snippet view only) and Friedmann's key NAF 4206 no. 5 is not imaged
+- 22 Oct 1529 opening (fr. 3005 ff. 165r-166r): read in part 23 Oct 2026 (texts/22oct1529_reading.md); f. 165v ll. 21-35 and f. 166r ll. 1-5 in part (ll. 24-25, 29 and f. 166r l. 1 closed 14 Nov 2026 by Brice Dudout) and the word signs ꝑ, ℋ, ꝏ, # left open - blocker: needs-physical-access; Scheurer t. I (1969) prints the whole opening (snippet view only) and Friedmann's key NAF 4206 no. 5 is not imaged
 
 ## Escalation
 

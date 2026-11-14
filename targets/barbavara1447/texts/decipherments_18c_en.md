@@ -91,7 +91,7 @@ Francesco Sforza.
 
 ## f. 68 = f. 69 (Rome, 6 Mar 1447)
 
-Illustrious and excellent, most honoured lord. At this seventeenth hour or about, Monsignor of "Cologna" [so the copy;
+Illustrious and excellent, most honoured lord. At this seventeenth hour or about, Monsignor of "Cologna" [so the copy and the cipher;
 Tommaso Parentucelli, cardinal of Bologna] has been proclaimed Pope. I firmly believe he will be a friend, and I shall
 soon strive to see proof of it in the matters entrusted to me. Of what follows Your Lordship will be informed; and you
 may tell me whether it seems to you that one way rather than another should be kept by me. I commend myself to Your
