@@ -421,6 +421,21 @@ the single occurrence fits future or conditional, not the imperfect we had). 622
 before garde 3927 (G); "a la hauteur des circonstances" is the idiom but 3921 would have to be a slip. PIERRET from Gemini: no independent evidence (it repeats his own PIERR-ET reading); source asked for.
 Gemini's other candidates to be run against the spelled runs only if he names sources.
 
+## Pillon's corrections of 14 Nov 2026 (second email: transcription slips read from his scan; tested by book position, nothing yet entered in anchors_inspecteurs.json)
+He is still verifying and will answer about Pierret later: do NOT change the figure of record (469 of 754, 62%) or the anchors until he finishes; then enter the values below, the slips, and re-run coverage.py.
+Position tests (anchors_inspecteurs.json neighbours; 'fits' = the word sorts between the nearest known groups on both sides):
+- Slips he reads (written -> meant), all plausible digit confusions: 0505 -> 0303 ("decrets arretes 0303 circulaires"); 0815 0115 -> 6818 0113 (line 34, first occurrence only; the second 0815 in "aucune depeche" stays); 0118 -> 0113 (a, now 9 uses);
+  9913 -> 9915 (y; "Laye"); 0702 -> 6712 (after "venu avec une"); 0420 -> 6420; 6301 -> 6501; 0530 -> 6530; 3328 -> 3318 and 3824 -> 5824 (the place 9620 3318 5824); 0617 -> 3617 (Jules FAVRE: confirms our assumed slip);
+  0312 9516 -> 6312 9516 (first name before the surname). 9029 stays (our file already has it; 9019 would be succ-/sui-). 4702 for 4712 is NOT supported: 4712 sits between ion and isoler, which is where IS belongs, so 6402 4712 = PAR-IS as written.
+- FITS: 6421 = PARTIR (between par 6402 and pas 6505; "faire partir sans succes"); 6501 = PARTENT (same interval, after partir; "partent tous les jours"); 6530 = PELLES (between pas and pi; with 3412 et and 6816 6019 1416 = PI-O-CH: "armes de pelles et de pioches");
+  5512 = MESURE(S) (right after messieurs 5511, "ces mesures"); 2722 = DUP (between du 2720 and e 2729; with 7802 RE = Dupre); 4822 = JOURN (before ju 4823; "au journal officiel", 6120 = officiel);
+  6312 9516 = PA + UL = PAUL (pa sorts between organisation and par; ul between tu and une), so "votre ami Paul Dupre": a candidate, one name, not confirmed;
+  6818 0113 5006 0703 = PIECES A L APPUI (pie sorts just before pierre 6819, ap between an 0607 and ar 0706): "autant de pieces a l'appui": a candidate that matches his pattern PI** A L* A*; aucune 0815 is dropped for this occurrence.
+- 0211 = FEMININE: now fits all three uses (communication, enfant(e), amie); reads as feminine, plural no longer needed. 0303: he says masculine noun (conducteur de ballon, enduit); but "vos bonnes communications 0303" is feminine plural, so a plain noun or plural marker fits better; open, scan to check.
+- NOT supported: 4314 = LE. 4314 sorts at IL (between 4113 h and the I words), and the same group reads "il aurait" after FER-RY (line 63), so "cela ne col 4314 pas" cannot be colle by position; either the group is misread on the scan or the sentence is something else (col-IL-pas...). "Mains actives" for 0418 0312: 0418 is AGIR and 0312 is -ant, so the telegram says agissantes (the adjective agissant, -e exists in French dictionaries); actives would need the entry act (0317).
+- Not resolved by position: 6714 4903/4905 (the "par le ...-L-organisation du service prive" group: 6714 sits among pe/ph words, 4903 among jo/ju words), 4125 0203, 6420, 3318 5824, 5604 (between mettre and ministere; 'militaire', 'mille', 'milieu' possible).
+Next: wait for his finished verification, then update anchors (values + slips), coverage.py, and the figure on every surface that carries it (README row, SOLVED_CATALOGUE, SOLVED_RANKING, docs/findings.html, the page twice, profile.json three places).
+
 ## Wiki and engine (7 Nov 2026): start here
 `wiki/` is the project's knowledge tree, built on Karpathy's LLM-wiki pattern (gist 442a6bf5..., raw sources / wiki / schema; ingest, query, lint; index.md and log.md): read `wiki/SCHEMA.md`, `wiki/PROCESS.md`, `wiki/index.md`
 and `wiki/syntheses/Z01.md` (overview and ranked next steps) before anything else; `wiki/log.md` has the history including two rolled-back false acceptances. Machine state: `wiki/lexicon_inspectors.json`, `wiki/lexicon_favre.json`.
