@@ -2,6 +2,11 @@
 
 Status: in progress. Not yet written up: no site page or README row. Read in part, with escalation steps still open (see Remaining gaps and Escalation). The status below is the contributor's.
 
+Read share by the README rule, 14 Nov 2026 (Brice Dudout, PR #559; reproduced at the integration): 858 words, 74 holes,
+**0.921** (n194/reading_n194.md, the 13 paragraph references such as [01-07] left out); the contributor's 796 of 844 tokens
+(94.3%) below counts a multi-word [?...] or [...] as one token. The 60 code groups were looked up again in key.tsv by
+an own script at the integration: 56 as decrypted, the other 4 the places marked (1513, 858 not in the key; 1682, 43 doubt).
+
 Status, 3 Nov 2026: **read in part** (borderline). One letter (n.194) transcribed and decoded; 796 of 844 tokens read
 (94.3%), below the 95% bar after the independent check's fixes (the first count, 95.3%, did not survive it). Outcome
 method "read from existing decipherment": the Solms letters carry interlinear decipherments in a second hand, so this
