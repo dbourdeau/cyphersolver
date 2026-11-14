@@ -88,11 +88,12 @@
    "sign-level reading file and measure (n6_signs.tsv, n6_measure.py)"
   ],
   "models": [
-   "claude-opus-5"
+   "claude-opus-5",
+   "claude-opus-5-5"
   ],
-  "sessions": 3,
+  "sessions": 4,
   "first_date": "2026-09-18",
-  "last_date": "2026-09-22"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -176,6 +177,24 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Lasry's preliminary decryption (prior/, his file) and, as separate files, this project's sign-level reading file n6_signs.tsv, its current reading of the cipher runs (texts/no6_decryption.txt, saved from n6_measure.py --text) and the 18 Sept edited reading; key = Lasry's key image plus the code values added here, copied from NOTES to texts/key.md.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Transcribed the cipher passages of no. 19 ff. 41r-42r (Gallica views 80-82), never transcribed before: 63 lines, 612 groups (n19_transcription.txt), in two passes (n19_passA.txt 1:1 crops, n19_passB.txt 0.6-scale strips, same reader, not consulting pass A); 4 lines differed, settled on the image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Pre-registered held-out check of Lasry's Cipher 2 letter key on no. 19 ff. 41r-42r, which neither his key nor this target's code values had seen (PREREG_n19.md, n19_decode.py, n19_measure.md): 232 letter-only words, share in the Spanish lexicon 0.591 against 200 shuffled keys (mean 0.045, best 0.164); threshold >= 0.50 and >= best + 0.30: pass. Strict count of the portion by sense 565/612 = 0.923.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "New contexts for the open no. 6 groups, value set frozen (SHA-256) before counting: rar is the destination of the imperial army's march (f. 40v, where Lasry's 'de no de' is [rar]; f. 42r 'procuraremos que se vaya la buelta de [rar]'), Florencia or Toscana; cnt 'salir en [cnt] manera' (alguna or otra); bnq 'si [bnq]'; dnh 'la [der] [dnh] que tienen'. None settled; car, cny, bny, beb, bnc, ge+ do not occur in ff. 41r-42r. No. 6 count unchanged (0.980).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -236,7 +255,7 @@
    {
     "item": "No. 6 code groups dnh, bnq, rar (x2), car, cny, bny, beb, bnc, ge+, der at 17va.2 (11 tokens)",
     "blocker": "no-key-material",
-    "detail": "One or two contexts each, none fixing a value (rar Florencia or Luca; ge+ perhaps a stop). More contexts in no. 19 ff. 41-43, not transcribed in full."
+    "detail": "One to three contexts each, none fixing a value. No. 19 ff. 41r-42r transcribed 14 Nov 2026 (n19_transcription.txt): rar is the destination of the imperial army's march (f. 40v, f. 42r), Florencia or Toscana; cnt 'salir en [cnt] manera' (alguna or otra); bnq 'si [bnq]'; dnh 'la [der] [dnh] que tienen'; car, cny, bny, beb, bnc, ge+ do not occur there. ge+ perhaps a stop."
    },
    {
     "item": "No. 6 nine short stretches (23 tokens): 'y y por [mq]', 'es [en de las los]', '[es de] otro exercito', 'servira [que de con]', 'ira [que l] camino', '[der de] pais', 'en [cnt] parte', 'esperar [es]', 'apuntamiento [es]'",
@@ -244,7 +263,7 @@
     "detail": "Signs transcribed but the syllable-sign values do not make sense there; Lasry's labels probably merge different glyphs. Needs glyph-level retranscription."
    }
   ],
-  "notes": "No. 6 read (98.0% measured, 22 Sept 2026; was 'read' unmeasured on 18 Sept). Grades: 34 values inferred from context (24 code groups, 8 syllable signs, 2 switch markers); Lasry's letter key is taken as it stands. Until 14 Oct 2026 this target also held no. 10 (Cipher 1) and no. 20 with the Ranzo letters (now targets/ranzo1528/).",
+  "notes": "No. 6 read (98.0% measured, 22 Sept 2026; was 'read' unmeasured on 18 Sept). Grades: 34 values inferred from context (24 code groups, 8 syllable signs, 2 switch markers); Lasry's letter key is taken as it stands. Until 14 Oct 2026 this target also held no. 10 (Cipher 1) and no. 20 with the Ranzo letters (now targets/ranzo1528/). 14 Nov 2026: no. 19 ff. 41r-42r transcribed (612 groups) and decoded with Lasry's key unchanged; pre-registered held-out check passed (lexicon share 0.591 vs best of 200 shuffled keys 0.164); portion read 0.923 by sense; no new code value, no. 6 unchanged.",
   "provenance": "project",
   "credits": [
    {
@@ -256,8 +275,29 @@
    }
   ],
   "texts": [
-   {"doc": "no6", "label": "No. 6, BnF fr. 3022 ff. 16v-17v, del Vasto to Charles V, [Rome, early December 1527]: George Lasry's preliminary decryption, and this project's reading", "transcription": ["n6_signs.tsv", "prior/BnF_fr3022_f16_decryption.txt"], "decryption": ["prior/BnF_fr3022_f16_decryption.txt", "texts/no6_decryption.txt", "n6_reading.md"], "summary": "The Marquis del Vasto to Charles V from Rome, early December 1527, after the agreement for the Pope's liberty: his plan to take the army out of Rome toward Tuscany, secure Siena, threaten Florence, take Perugia and the state of Urbino and pass into the Marche, with the warning that the army cannot be sustained 'desta manera' without money. prior/BnF_fr3022_f16_decryption.txt is George Lasry's preliminary letter-level decryption (cryptiana GL.htm), which also serves as the sign transcription; texts/no6_decryption.txt is this project's current reading of the cipher runs with the code groups identified (98.0% of 1,680 tokens), and n6_reading.md its edited text of 18 Sept.", "reading": "texts/no6_reading.md", "translation": "texts/no6_en.md", "language": "es", "read_share": 0.963}
+   {
+    "doc": "no6",
+    "label": "No. 6, BnF fr. 3022 ff. 16v-17v, del Vasto to Charles V, [Rome, early December 1527]: George Lasry's preliminary decryption, and this project's reading",
+    "transcription": [
+     "n6_signs.tsv",
+     "prior/BnF_fr3022_f16_decryption.txt"
+    ],
+    "decryption": [
+     "prior/BnF_fr3022_f16_decryption.txt",
+     "texts/no6_decryption.txt",
+     "n6_reading.md"
+    ],
+    "summary": "The Marquis del Vasto to Charles V from Rome, early December 1527, after the agreement for the Pope's liberty: his plan to take the army out of Rome toward Tuscany, secure Siena, threaten Florence, take Perugia and the state of Urbino and pass into the Marche, with the warning that the army cannot be sustained 'desta manera' without money. prior/BnF_fr3022_f16_decryption.txt is George Lasry's preliminary letter-level decryption (cryptiana GL.htm), which also serves as the sign transcription; texts/no6_decryption.txt is this project's current reading of the cipher runs with the code groups identified (98.0% of 1,680 tokens), and n6_reading.md its edited text of 18 Sept.",
+    "reading": "texts/no6_reading.md",
+    "translation": "texts/no6_en.md",
+    "language": "es",
+    "read_share": 0.963
+   }
   ],
-  "key_file": ["prior/BnF_fr3022_f16.png", "texts/key.md", "n6_codes.json"]
+  "key_file": [
+   "prior/BnF_fr3022_f16.png",
+   "texts/key.md",
+   "n6_codes.json"
+  ]
  }
 }
