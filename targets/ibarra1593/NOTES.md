@@ -98,7 +98,8 @@ transcription `ct68.txt`; sense count `sense68.tsv` (the no. 68 rows of sessa159
 
 ## Remaining gaps
 - no. 68 as a whole, decoded, not read (a third of the sentences build after b28) - blocker: no-key-material; the three-letter word codes have no table (see next line)
-- no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and the f. 130/131 crib fixes only xen, mon, pun, tel, fon and 64, 31, 81 (b28); the contemporary decipherer left the rest blank; 77, 95 and the groups pra, xur, gar, dur, var, tor, vis ... stay open
+- no. 68, f. 145: 374 of 598 groups unread - blocker: no-key-material; the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere, fr. 3995 f. 101 is Italian and the f. 130/131 crib fixes only xen, mon, pun, tel, fon and 64, 31, 81 (b28); the contemporary decipherer left the rest blank; 95, 200T, 800T and the groups pra, xur, gar, dur, var, tor, vis ... stay open; 77 = pi from f. 143 (13 Nov 2026) gives no sense at its two places in no. 68
+- ner = necesidad, gur = -mente (f. 143, 13 Nov 2026): placed by context only, holes by the read bar - blocker: no-key-material (no further occurrence with a period decipherment)
 
 ## Escalation
 - [x] siblings: the three office-cipher letters of sessa1593 are another key; fr. 3995 ff. 94-101 opened next to the office key (f. 101 another correspondence); fr. 3984 f. 130 (Mansfeld 7 July 1593) opened 23 Oct 2026 through openapi.bnf.fr and transcribed; its decipherment is f. 131r-v
@@ -106,13 +107,14 @@ transcription `ct68.txt`; sense count `sense68.tsv` (the no. 68 rows of sessa159
 - [x] known-keys: Tomokiyo's Feria-Mansfeld table (keyM.tsv) applied; the 1592-93 office key (key92.tsv, fr. 3995 f. 97) does not fit (higher figures, three-letter word codes; 19 Sept 2026); Tomokiyo's Ibarra-Doria (1592) and Ibarra-Zúñiga (1593) key images listed with it are for other correspondences and were not applied; fr. 3995 f. 101 is an Italian nomenclature of another correspondence
 - [x] print: Tomokiyo spanish3.htm (the key, no reading); BnF notice for fr. 3984
 - [x] key-rebuild: keyM tested against 200 value-shuffled keys (-2.500 vs at most -3.378); unconstrained hill-climb rejected (collapses onto que); constrained fill accepts 57 = li, 64 (ha by context) not separated (5 Oct 2026)
+- [x] siblings (13 Nov 2026, PR #548): Feria's f. 143 transcribed and aligned with its decipherment f. 131v: 89 = yu, 77 = pi, len = grand-; no other letter in this key is known in fr. 3984
+- [ ] still to try: the Feria correspondence in other volumes (AGS Estado K 1587-1589, BnF fr. 3983-3999) for a nomenclature or another deciphered letter in this key
 - [x] retry: all 20 cipher lines transcribed (ct68.txt) and decoded with keyM + 57 = li; each line scored for sense (sense68.tsv); b28 re-decode with the crib values, marks re-read on the image
 
 ## Next
 
-Done 23 Oct 2026 (b28): f. 130 opened and used as a crib. Still possible: Feria's f. 143 cipher against its f. 131v
-decipherment would confirm the syllabary again but its codes ({pra}, {ner}, {cur} ...) are blank in the decipherment
-too; a nomenclature for this key has not been found.
+Done 23 Oct 2026 (b28): f. 130 opened and used as a crib. Done 13 Nov 2026 (PR #548): Feria's f. 143 against its f. 131v
+decipherment (below). A nomenclature for this key has not been found.
 
 ## 13 Nov 2026: f. 143 transcribed and aligned with its decipherment (contributed by bdudout)
 
@@ -123,3 +125,15 @@ len = grand-, mark ª = -n; 64 = ha confirmed ("se hallase"). By context (probab
 (twice), gur = -mente ("encarecidamente"; in no. 68 l. 20 it gives "abundantemente"). pra stays open ("esperando a
 pra con grandisimo deseo"). no. 68 moves from 0.258 to about 0.266 clean; still decoded, not read. No fresh portion
 exists in this cipher for a measurement; the nomenclature remains the blocker.
+
+**14 Nov 2026, verification and integration of PR #548.** The f. 143 transcription was compared with the Gallica image
+(openapi.bnf.fr IIIF, canvas 265, 2400 px), all eight cipher lines: the groups agree; the doubtful places are those
+the file flags (P1 `23 5?` may be `2 35`; the marks on 76 and ter* are of uncertain form). An own decoder (keyM.tsv,
+the b28 values, 89 = yu, 77 = pi; marks ª -n, ° -s, . -r) reproduces the alignment: 22 of the 150 groups are codes
+or unread. 89 = yu and 77 = pi fill the gaps of Tomokiyo's y- and p-rows; the mark ª = -n is the "v final -n" of
+Tomokiyo's table (keyM.tsv header), confirmed rather than new. ner = necesidad and gur = -mente rest on the sense
+alone: holes by the read bar. Counted strictly, no. 68 is unchanged (0.258 clean sentences, b28; class not read,
+fraction 0); the contributor's "about 0.266" with gur = -mente is an estimate, not measured. f. 131v itself was not
+re-opened (its text is the b28 transcription `texts/f131_decipherment.txt`). In no. 68, 77 = pi gives no sense at
+l. 14 (`vis 77 11 cle`) or l. 17 (`43 11 77 90 8`): left open.
+

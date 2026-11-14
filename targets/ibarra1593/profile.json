@@ -93,9 +93,9 @@
    "claude-opus-5",
    "claude-opus-5-5"
   ],
-  "sessions": 4,
+  "sessions": 5,
   "first_date": "2026-09-19",
-  "last_date": "2026-11-13"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -248,6 +248,15 @@
    ],
    "result": "partial",
    "what": "Feria's own letter in the same cipher (fr. 3984 f. 143, 10 July 1593, 150 groups) transcribed in two passes and aligned with its contemporary decipherment f. 131v (texts/f143_feria_ct.txt, texts/f143_alignment.md): 89 = yu, 77 + loop = pli, len = grand-, mark ^ = -n, 64 = ha confirmed; by context ner = necesidad (2x) and gur = -mente (encarecidamente; no. 68 l. 20 abundantemente). no. 68 about 0.266 clean (from 0.258); still decoded, not read. No fresh portion exists for a measurement."
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "result": "worked",
+   "what": "PR #548 checked: f. 143 transcription compared with the Gallica image (openapi.bnf.fr IIIF, canvas 265, 2400 px), all eight cipher lines: the groups agree, the doubtful places are those flagged (P1 '23 5?' may be '2 35'; 76 and ter* carry marks of uncertain form); own decoder (keyM.tsv + b28 values + 89 yu, 77 pi; marks ª -n, ° -s, . -r) reproduces the alignment, 22 of 150 groups are codes or unread. 89 = yu and 77 = pi fill the gaps of Tomokiyo's y- and p-rows; the mark ª = -n is Tomokiyo's 'v final -n' mark, confirmed, not new. ner and gur rest on context only (holes by the read bar); no. 68 class and fraction unchanged (not read, 0)."
   }
  ],
  "outcome": {
@@ -271,7 +280,7 @@
    {
     "item": "no. 68, f. 145: 374 of 598 groups unread",
     "blocker": "no-key-material",
-    "detail": "the three-letter nomenclature (pra, dur, hes, gar, pun, rom, mon, xen, vul, cil, var, vis, tor ...) is published nowhere and no crib fixes it; numbers 64, 31, 77, 81, 95 not separated by the LM control; diacritic finals dropped in ct68.txt"
+    "detail": "the three-letter nomenclature (pra, dur, hes, gar, rom, vul, cil, var, vis, tor, xur ...) is published nowhere and no crib fixes it (f. 130 and f. 143 with their 1593 decipherment fix xen, pun, mon, tel, fon, dir, Vas, len; ner and gur are placed by context only and count as holes); 77 = pi from f. 143, but its two occurrences in no. 68 give no sense; 95, 200T, 800T unplaced; diacritic finals dropped in ct68.txt"
    }
   ],
   "provenance": "mixed",
@@ -288,12 +297,19 @@
     "role": "key or decipherment used",
     "note": "key image of the Feria-Mansfeld cipher, 1593 (cryptiana spanish3.htm, spanish3mansfeld.png)",
     "source": "cryptiana spanish3.htm"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "date": "2026-11-13",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/548",
+    "note": "Feria's letter f. 143 (150 cipher groups) transcribed in two passes and aligned with its 1593 decipherment f. 131v: 89 = yu, 77 = pi (with the loop, pli), len = grand- held by the decipherment; ner = necesidad and gur = -mente placed by context (texts/f143_alignment.md)"
    }
   ],
   "texts": [
    {
     "doc": "no68",
-    "note": "Decoded, not read: re-read 23 Oct 2026 (b28). The sibling letter in the same key, Mansfeld to Feria 7 July 1593 (fr. 3984 f. 130), and its contemporary French decipherment (f. 131r-v) fix 64 = ha, 63 = he, 62 = hi, 31 = jo, 19 = fa, 81 = vi and the codes xen = Infanteria, mon = gente, pun = hombre, tel = exercito, fon = Flandes (texts/codes_b28.json); with them a third of no. 68's sentences build (partial reading texts/no68_reading_b28.md, 0.258 clean, 0.355 explicit holes). The rest break on ~30 three-letter code groups (pra x6, xur x3, gar, dur, var, tor, vis ...) that no table gives and that the 1593 decipherer also left blank. Blocker: no-key-material. 13 Nov 2026: f. 143 aligned with f. 131v adds 89 = yu, 77 = pi(+l), len = grand-, ner = necesidad, gur = -mente (texts/f143_alignment.md).",
+    "note": "Decoded, not read: re-read 23 Oct 2026 (b28). The sibling letter in the same key, Mansfeld to Feria 7 July 1593 (fr. 3984 f. 130), and its contemporary French decipherment (f. 131r-v) fix 64 = ha, 63 = he, 62 = hi, 31 = jo, 19 = fa, 81 = vi and the codes xen = Infanteria, mon = gente, pun = hombre, tel = exercito, fon = Flandes (texts/codes_b28.json); with them a third of no. 68's sentences build (partial reading texts/no68_reading_b28.md, 0.258 clean, 0.355 explicit holes). The rest break on ~30 three-letter code groups (pra x6, xur x3, gar, dur, var, tor, vis ...) that no table gives and that the 1593 decipherer also left blank. Blocker: no-key-material. 13 Nov 2026 (PR #548, bdudout): Feria's f. 143 aligned with its decipherment f. 131v gives 89 = yu, 77 = pi (pli with the loop) and len = grand- from the decipherment, ner = necesidad and gur = -mente by context only (texts/f143_alignment.md). Counted strictly (context-only values are holes) no. 68 is unchanged at 0.258 clean; the contributor's estimate with gur = -mente is about 0.266 (not measured).",
     "label": "Diego de Ibarra, Paris, 10 July 1593, BnF fr. 3984 no. 68, f. 145",
     "transcription": "ct68.txt",
     "decryption": [
