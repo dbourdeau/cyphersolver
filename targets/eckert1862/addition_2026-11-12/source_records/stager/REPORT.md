@@ -42,4 +42,4 @@ No explicit page, shelfmark, or vocabulary table was found to follow. Thus there
 
 The containing edition’s SHA256SUMS covers these portable reports/manifests. The original local acquisition separately verifies all raw files. To reacquire an image, download its exact listed URL and compare the listed hash; archive image processing may change bytes subsequently.
 
-Credit: Andrew Beling (`ajbeling`) with OpenAI Codex AI agents for this source-based sweep; Huntington Library for the manuscript images/metadata; historical clerks for the register. No new plaintext or novelty claim.
+Credit: Andrew Beling (`ajbeling`) with AI agents for this source-based sweep; Huntington Library for the manuscript images/metadata; historical clerks for the register. No new plaintext or novelty claim.

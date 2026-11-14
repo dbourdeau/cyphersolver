@@ -232,7 +232,7 @@ The class of the target does not change (still in progress; the 1864-65 Book #1 
 
 ## 12 November 2026: message-specific keys and a portable selected edition
 
-Andrew Beling (`ajbeling`), with OpenAI Codex AI agents, adds a bounded update in
+Andrew Beling (`ajbeling`), with AI agents, adds a bounded update in
 [`addition_2026-11-12/README.md`](addition_2026-11-12/README.md). Existing WAINUT/`lccompany` Book9 work,
 William Echols's separate 1862 filling, original transcripts and old failed decodes are preserved.
 Huntington holds/digitized the sources; Decoding the Civil War volunteers supplied the ledger transcription;

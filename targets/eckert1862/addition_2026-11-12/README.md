@@ -1,6 +1,6 @@
 # Selected Eckert telegrams: local contribution edition, 12 November 2026
 
-This addition applies surviving keys per message, preserves complete source lines, and collates prior printed readings. It does not claim to solve the entire Eckert corpus or recover previously unknown historical plaintext. Prepared by **Andrew Beling (`ajbeling`) with OpenAI Codex AI agents**. Prior work by WAINUT (`lccompany`), William Echols on the separate 1862 filling, period operators, and the Decoding the Civil War volunteer transcribers is retained and credited. Huntington holds and digitized the manuscripts.
+This addition applies surviving keys per message, preserves complete source lines, and collates prior printed readings. It does not claim to solve the entire Eckert corpus or recover previously unknown historical plaintext. Prepared by **Andrew Beling (`ajbeling`) with AI agents**. Prior work by WAINUT (`lccompany`), William Echols on the separate 1862 filling, period operators, and the Decoding the Civil War volunteer transcribers is retained and credited. Huntington holds and digitized the manuscripts.
 
 | Item | Cipher | Line-by-line literal | Full-length English reading, with gaps | Apparatus |
 |---|---|---|---|---|
