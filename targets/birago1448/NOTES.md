@@ -44,6 +44,10 @@ resolution: the sign of L06 is a small n-shaped stroke run into the next sign, w
 (small low m) equally; it is not settled from this scan. The decode of `texts/f33_cipher.txt` is the identity on the
 key letters (the transcription writes signs as key letters), so no second decoder adds anything here.
 
+Integration check (14 Nov 2026): the recount was re-run (135 words, 0 holes, 2 doubtful, 0.985); the letter stays read
+(the read bar's word share is met, the two doubtful words are single cramped signs that the clear duplicate f. 32 fixes,
+and every sign is on the key). The page now gives the 98.5%. The Gallica re-look at L06 was not repeated.
+
 ## Remaining gaps
 
 - Two sign shapes uncertain (L06 c/g, L09 i) - blocker: illegible; small cramped strokes on a microfilm-derived scan, and the sense fixes both.

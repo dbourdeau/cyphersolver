@@ -158,6 +158,15 @@
    ],
    "what": "Recount (14 Nov 2026, Brice Dudout with Claude): v10_relabel.share on texts/f33_decryption.txt gives 135 words, 0 holes, 2 doubtful (L06, L09), read share 0.985, not 1.0; the letter stays read. L06 looked at again on Gallica canvas 62 at full size: c or g not settled from the scan.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #559 (14 Nov 2026): v10_relabel.share re-run on texts/f33_decryption.txt: 135 words, 0 holes, 2 doubtful (L06 darc(?)helo, L09 mi(?)lano), 0.985; the letter stays read (word share above 0.95, the clear duplicate f. 32 fixes both words, all 513 signs on the key). The L06 image re-check was not repeated here.",
+   "result": "worked"
   }
  ],
  "outcome": {
