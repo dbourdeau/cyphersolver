@@ -1,0 +1,30 @@
+# Printed cipher letter -> plain values in the reading, with the shift each needs on the 24-letter alphabet
+# (a b c d e f g h i k l m n o p q r s t u w x y z). Base shift 7: cipher a = plain h. Printed u is taken
+# as cipher n and printed v as cipher u (letters confused in reading a secretary hand). Counts are over the
+# 636 read letters (the printed "to" in A10 is not included). "multi" = more than one value in the reading.
+printed	base_value(shift7)	values_in_reading (plain:count:shift)	multi
+a	h	h:47:7	
+b	i	i:45:7	
+c	k	k:1:7, m:1:9	yes
+d	l	l:25:7	
+e	m	m:16:7, a:3:20, e:1:0	yes
+f	n	n:48:7, b:1:20	yes
+g	o	o:64:7, c:7:20, y:1:16	yes
+h	p	p:10:7, d:2:20	yes
+i	q	e:17:20	
+k	r	r:38:7, f:5:20, s:1:8	yes
+l	s	s:37:7	
+m	t	t:60:7	
+n	u	u:18:7	
+o	w	w:4:7, a:4:11	yes
+p	x	a:10:10, b:2:11, x:1:7	yes
+q	y	y:5:7, c:1:11, o:1:22	yes
+r	z	a:8:8, c:7:10, d:3:11, r:1:0	yes
+s	a	e:7:11, d:6:10, a:6:7	yes
+t	b	e:24:10, b:3:7, f:1:11, c:1:8	yes
+u	u	u:7:7, c:1:7	yes
+v	c	c:3:7, f:2:10, d:2:8	yes
+w	d	e:21:8, d:4:7	yes
+x	e	e:27:7, f:6:8	yes
+y	f	f:3:7	
+z	g	g:17:7	
