@@ -561,3 +561,25 @@ share is changed by the audit or by this check.
   item, not part of this pull request.
 - **Status.** In progress, no page. The audit supports two of bdpayne's contextual words on the image and leaves the rest
   open.
+
+### Follow-up on the PR #577 notes (15 Nov 2026, Andrew Beling, with AI agents)
+
+The three groups of 10 April (vol. 11 frame 0045, MS p. 86, lower telegram) that the integration check read differently
+were looked at again on the full NARA frame (7331 x 4767 px, sha256 `a9afc23e...59a6` as in `SOURCES.json`), in two
+passes by one AI reader (Claude), not by a person: pass 1 on enlarged grayscale crops of each group, pass 2 on the whole
+line in original colour and in grayscale, with comparison letters from the same telegram.
+
+- **LYWVEW, not LVWVEW.** The second letter has a long descender with a turned tail, the form of the Y in XCYKG on the
+  next line and of the y in the clear word "why" above; it is not this clerk's V. Both passes agree. The group gives
+  SHOUKD. The fifth letter has a top bar, a flagged middle stroke and a foot, the same form as the second letter of
+  VEASGW; SHOULD and TROOPS would need F there, so the image gives E in both groups (an encoding or copying slip, or a
+  form this clerk used for both letters); this is not settled here.
+- **MF, not NF.** The first letter is a straight stroke, a diagonal and a hooked last stroke, the three-part form of the
+  M in MRU (which decrypts to AND, so M is attested there) and in JMNH; this clerk's N in JMNH has two parts. Both passes
+  agree. The group gives TO.
+- **EIEX.** The first letter carries a foot stroke like the E of EX on the next line; the F of MF and of LFGH has none.
+  This leans to E and SENT, as the integration check says; it rests on AI readers only and stays open.
+
+`v11-0045b_transcription.txt` now carries these groups and the earlier ones as superseded. Decrypted with COME
+RETRIBUTION from position 0: TQOOPS SHOUKD NOT BE SENT TO DEMO POLIS AND PORTIRN OF THE ST ORDS BLTO. No reading, share,
+key, status or profile figure changes: the telegram stays outside the completed readings, and EX FVWJ JMNH stay unread.
