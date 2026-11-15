@@ -160,7 +160,11 @@
       ],
       "what": "Integration check of PR #574 (round 13). Own script over line_by_line_179/180: 610 and 306 groups (916), 318 distinct clearly numbered groups, every one in key/W_1757_attestations.tsv with every value it takes; 2 uncertain-digit groups withheld. 118 of 118 groups sampled on the LAC reel C-12578 images (copy p. 506, 60 groups; p. 517 lines 1-5, 58 groups) agree with the transcription; p. 506 6?0 looks like 670 but stays withheld. Strict word count of the normalized French: 427 of 433 (179) and 207 of 211 (180) words carry no bracket or query, close to the contributor's 424/431 and 213/217. Code W against targets/vaudreuil1760/key/key274.json: 0 of 242 shared numbers agree. Outcome method changed from 'key recovered based on adjacent plaintext' to 'read from existing decipherment': the decipherment between the lines is complete for both declared units.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-11-14", "kind": "sibling key", "technique": ["beam/DP decoding", "key matching"], "what": "Siblings: the OCR of every frame of LAC reels C-12577 to C-12579 (SHD GR A1, 1756-59) searched again (looser figure-line scan, 'chiffr', 'sic pro'); hits checked by eye. No code W text beyond the four known sibling letters and no bare W passage. Found: d'Argenson's minute of March 1756 sending Montcalm 'un chiffre' (C-12577 frame 0276) and Montcalm's letter of 12 Apr 1759 (A1 3540 piece 40, C-12579 frame 0861) whose copy gives the cipher passages in clear between brackets, no figures. The 1757 index aligned with the period decipherment of the siblings: 9 May 1758 502 of 526 indexed groups same value; 3 Nov 1756 19 of 20; 9 Sep 1758 36 of 37; Levis 10 Nov 1759 p.307 65 of 93. 52 new group values in key/W_sibling_values.tsv (separate table).", "result": "partial"},
+    {"date": "2026-11-14", "kind": "sibling key", "technique": ["key matching", "statistical test"], "what": "Known keys: code W (370 groups) compared with the French code tables of 1755-1760 in the repository (montcalm1758i sheet e001295272, Vaudreuil sheet e001295274, kerlerec1759, orvilliers1759 K3 and K4, affry1757 M, X, B, U), exact agreement on shared numbers against 200 shuffles: 0, 0, 0, 0, 0, 1, 0, 1, 1; shuffled maxima 2-3. None is W.", "result": "failed"},
+    {"date": "2026-11-14", "kind": "literature search", "technique": ["other"], "what": "Print: RAPQ 1924-25, 1925-26, 1926-27 (Internet Archive rapport02queb_0, rapport03queb_0, rapport04queb_0), Casgrain's Levis collection I-XII and Montcalm et Levis (1891) searched with whitespace normalised for phrases of both declared units; every hit read; none prints the 4 Nov 1757 cipher passages or the defence sheet.", "result": "failed"},
+    {"date": "2026-11-14", "kind": "verification", "technique": ["other"], "what": "Retry: p.506 group after 654 and p.518 group 2?5 looked at again on the full-size LAC frames 0526 and 0538; neither settled (670/690; 235 most likely to this reader but 235 = com elsewhere); withheld. The siblings settle the 63-for-s conflict on p.517 as a slip (63 = vivres five times, 83 = s eight times in May 1758) and support the copyist's 'sic pro 159 = une'.", "result": "partial"}
   ],
   "outcome": {
     "class": "read in part",
@@ -208,9 +212,9 @@
         "summary": "Reports Louisbourg’s weak defences and the food crisis: reduced bread, horse meat and public leadership through frugality.",
         "reading_review": {
           "grade": "A",
-          "by": "Andrew Beling's own AI agents (the coordinating model; not a person)",
+          "by": "Author's agents (Andrew Beling, with AI agents)",
           "date": "2026-11-12",
-          "note": "Read the full normalized French against the English; reviewed selected source digit crops, not every group against the whole images. Coherent on the declared cipher-extract and annex scope, with gaps marked; the anonymous period decipherers have reading priority. Not an exhaustive check against the images and not an outside check."
+          "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the coordinating model; not a person) before the rule of 14 Nov 2026, and merged in #574. Read the full normalized French against the English; reviewed selected source digit crops, not every group against the whole images. Coherent on the declared cipher-extract and annex scope, with gaps marked; the anonymous period decipherers have reading priority. Not an exhaustive check against the images and not an outside check."
         },
         "read_share": 0.9837587006960556,
         "note": "Share of words in our edition of the period decipherment that carry no uncertainty mark (bracketed supplied words counted as holes; reading_measurements.json). Not cipher-group coverage and not a measure of accuracy."
@@ -227,9 +231,9 @@
         "summary": "Outlines defence of Quebec between Montmorency and the Saint-Charles and plans for field expeditions and supply to western posts.",
         "reading_review": {
           "grade": "A",
-          "by": "Andrew Beling's own AI agents (the coordinating model; not a person)",
+          "by": "Author's agents (Andrew Beling, with AI agents)",
           "date": "2026-11-12",
-          "note": "Read the full normalized French against the English; reviewed selected source digit crops, not every group against the whole images. Coherent on the declared cipher-extract and annex scope, with gaps marked; the anonymous period decipherers have reading priority. Not an exhaustive check against the images and not an outside check."
+          "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the coordinating model; not a person) before the rule of 14 Nov 2026, and merged in #574. Read the full normalized French against the English; reviewed selected source digit crops, not every group against the whole images. Coherent on the declared cipher-extract and annex scope, with gaps marked; the anonymous period decipherers have reading priority. Not an exhaustive check against the images and not an outside check."
         },
         "read_share": 0.9815668202764977,
         "note": "Share of words in our edition of the period decipherment that carry no uncertainty mark (bracketed supplied words counted as holes; reading_measurements.json). Not cipher-group coverage and not a measure of accuracy."
