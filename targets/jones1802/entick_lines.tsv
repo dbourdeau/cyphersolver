@@ -4,6 +4,8 @@
 # type E = new entry, C = continuation line; word = the line's first word as the counting readers wrote it
 # (blind counts by two AI readers per page, 0 disagreements in line count or type; spelling as printed, OCR not used).
 # text = the whole printed line, given only where a group has a third number (word within the line).
+# Pages 442-443 (list of Christian names, five columns): line = n-th name on the page, down the columns in turn,
+# letter headings and blank rows not counted (found after the fact); column = n1..n5, line_in_column = place in that column.
 # Only the lines the letters /49, /212, /217 use are kept, each with the line before and after.
 # pages counted: 1 2 4 5 6 7 8 9 10 11 12 13 15 19 20 21 22 23 24 28 29 30 31 32 33 35 37 40 41 48 49 50 53 55 56 61 67 68 69 70 72 75 79 80 81 84 87 88 93 95 97 98 106 108 112 113 115 123 127 128 129 130 131 137 138 139 141 147 148 149 154 156 159 160 161 162 164 166 169 170 174 177 179 180 187 192 194 202 204 205 206 213 215 217 220 221 224 225 227 228 229 230 232 233 235 236 237 238 239 240 244 245 249 250 254 255 256 258 259 260 261 262 266 270 271 272 275 276 285 286 288 293 295 297 299 302 304 305 308 309 312 313 314 316 321 327 330 333 338 339 343 345 351 353 359 366 370 371 373 376 378 380 382 383 384 386 387 390 391 394 396 398 401 404 411 427 431 432 433 435 436 438 439 440 442 443
 page	line	column	line_in_column	type	word	text
@@ -1035,10 +1037,10 @@ page	line	column	line_in_column	type	word	text
 440	73	b	34	E	Zany	
 440	74	b	35	E	Zeal	
 440	75	b	36	E	Zealot	
-442	54	b	2	E	Cyril	
-442	55	b	3	E	Daniel	
-442	56	b	4	E	David	
-442	57	b	5	E	Demetrius	
-443	47	a	47	E	Jos'celin	
-443	48	a	48	E	Jóseph	
-443	49	a	49	E	Josías	
+442	54	n4	2	E	Cyril	
+442	55	n4	3	E	Daniel	
+442	56	n4	4	E	David	
+442	57	n4	5	E	Demetrius	
+443	47	n2	15	E	Jos'celin	
+443	48	n2	16	E	Jóseph	
+443	49	n2	17	E	Josías	

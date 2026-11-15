@@ -3,7 +3,9 @@ copy ..._1795_0) and compare each value with this folder's 1798 table and propos
 
 Rule: a group p,n is printed page p, printed line n (column a lines 1..k, continuation lines counted; column b goes
 on from k + 1; k = 39 on almost every page). A third number k picks the k-th word of the line, part-of-speech
-abbreviations not counted. The lines are in entick_lines.tsv (blind line counts of the page images; only the lines
+abbreviations not counted. On the name pages 442-443 (five columns) n is instead the n-th name on the page, down
+the columns in turn, letter headings and blank rows not counted (found after the fact; entick_lines.tsv already holds
+those rows by that count). The lines are in entick_lines.tsv (blind line counts of the page images; only the lines
 the letters use, each with the line before and after), so nothing here needs the page images.
 
 Inputs: entick_lines.tsv; ct_49_reread.txt and ct_212_reread.txt (blind re-readings of the digits, group boundaries
@@ -33,7 +35,8 @@ OVERRIDES = {'169,25': 'government', '327,66': 'said'}  # align.py's OVERRIDES
 POS = {'v', 'a', 's', 'f', 'ad', 'pr', 'prep', 'pret', 'part', 'conj', 'interj', 'pron', 'n', 'pl'}
 # Dictionary words that do not make sense in place. Kept in entick_<n>.tsv; in the readings they are marked
 # [?word] and counted as holes. Probably a digit or a count problem; not resolved. Listed after the fact.
-NOT_SENSE = {'180,31': 'Heresy for January? (R1 read 188, R2 and R3 180)', '166,71': 'Glaver',
+NOT_SENSE = {'180,31': 'Heresy for January? (doubtful re-reading: R1 read 188, R2 and R3 180)',
+             '166,71': 'Glaver for difficulty? (doubtful re-reading of 106,71)',
              '160,30': 'Fugitive for General? (164,30 elsewhere)', '394,33': 'Trode for troops?',
              '387,24': 'Toad for to', '156,57': 'Fortunateness for fortnight?', '237,18': 'Mercifully for messenger?',
              '221,25': 'Levigate for letter? (Letter is 221,5)', '433,25': 'Where for whom?',
@@ -313,6 +316,10 @@ def look_up(name, pos, pages, ltext, counted):
     return rows, words, stat
 
 
+GRADES = ('# folder_grade: H, M, L = grade in proposals.tsv; 1798w / 1798l = word / letter value of table_1798.tsv; '
+          '1802l = letter fixed by the 1802 names (apply.py LETTERS_1802); open = no value; for /49 "clear copy /51" '
+          '(word) or "letter (clear copy)"; skipc = the group align.py skipped.\n'
+          '# Pages 442-443 (names list): line n = the n-th name on the page, a separate count found after the fact.\n')
 HEAD = ['folio', 'ms_line', 'group', 'group_ct', 'suffix', 'dictionary_line_n', 'value', 'third_number_word',
         'folder_value', 'folder_grade', 'status']
 NOTE = {
@@ -329,7 +336,7 @@ def main():
     for name, pos in sets.items():
         rows, words, stat = look_up(name, pos, pages, ltext, counted)
         with open(HERE / f'entick_{name}.tsv', 'w', encoding='utf-8', newline='\n') as o:
-            o.write(f'# {NOTE[name]} Written by entick.py.\n' + '\t'.join(HEAD) + '\n')
+            o.write(f'# {NOTE[name]} Written by entick.py.\n' + GRADES + '\t'.join(HEAD) + '\n')
             for r in rows:
                 o.write('\t'.join(r) + '\n')
         holes = sum(1 for w in words if w.startswith('[') and not w.startswith('[?'))
