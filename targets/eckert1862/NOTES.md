@@ -294,3 +294,33 @@ Verified from the files by the integrating reader (an AI reader, not a person).
   none holds mssEC 19 pp. 4-10. The Kanawha telegrams (`kanawha1863`) use a different route and word list.
 - **Status.** Still in progress, no page: U3 waits on Cipher Book No. 10 (blocker: no key material), and the rest of
   the ledger is not attempted, which is workable.
+
+### Follow-up on the PR #576 notes (15 Nov 2026, Andrew Beling, with AI agents)
+
+Looked at by one AI reader (Claude), not by a person.
+
+- **Page 26 (Allen = 1).** Book No. 2, back fly leaf recto, page numbered 26 and headed "Numerals" (Huntington IIIF
+  `p16003coll11:588`, 2000 px; sha256 `2b994137...6bd74`, the file listed in
+  `addition_2026-11-12/source_records/SOURCE_URLS.tsv` as `book2_backrecto.jpg`). Read on the whole page and on an
+  enlarged crop of the first rows: the first row is "Allen | 1 | Brown", then "Arnold 2 Brooks", "Austin 3 Benton". So
+  Allen = 1, as the merged decoder uses. The printed text agrees: Official Records, series I, vol. 32, part 2, p. 394
+  (Internet Archive `warofrebellion013202rootrich`), McPhail to Sharpe, Baltimore, 14 February 1864, has "Lee one month
+  ago had 46,000", where the ledger has "Lee had Allen month ago had ...".
+- **Two stale sentences in hashed files.** `addition_2026-11-12/REVIEW.md` (the "Other numbers" row: "Alton = 1 is clear
+  in the key; the source word represented as Allen on p9 is not silently repaired") and
+  `addition_2026-11-12/McPhail_reading.md` ("Lee had [one?; ledger Allen] month ago") were written before the 13 Nov
+  correction. The counted reading `addition_2026-11-12/reading/McPhail.md` already has "Lee had one month ago", and
+  `key_book2_selected.tsv` has Allen = 1. The two files are left unchanged because `SHA256SUMS` covers them; this note
+  supersedes those two sentences. No count changes.
+- **Cipher Book No. 10 (U3).** Searched further on 12 Nov 2026 (not in the merged folder): the George C. Marshall
+  Foundation holds *Federal Army Cipher Books*, William F. Friedman Papers, Item 187 (catalogue record 15289,
+  https://library.marshallfoundation.org/Portal/Default/en-US/RecordView/Index/15289), six colour PDF sections, 248 pages,
+  public. Sections 1, 3, 4, 5 and 6 carry printed titles No. 1, No. 4, No. 5, No. 9 and No. 12. Section 2 has no title
+  page; an attached slip reads "#10" and "I think this must be the 3d of the series No 12, 9, 10." It fails the No. 10
+  test from Plum, *The Military Telegraph during the Civil War* (1882), vol. 1 p. 52 (Adam/Asia = McClellan in the red
+  No. 10 layer): on section 2 p. 10, the "Rivers" table, read on the page image on 15 Nov 2026, Adam = Arkansas and
+  Asia = Alabama, Abel = Aquia Creek and Austria = Big Sandy. (The 12 Nov worksheet had Asia = Havana and Abel = Squirrel
+  Creek; the image gives Alabama and Aquia Creek. Neither is McClellan, so the verdict stands.) Its other entries for the
+  six U3 words (Pauline, Quarrel, Ink, Rodneyed, Abel, Viola) were recorded as a rejected test and are not entered in any
+  key. U3 still has no key: the six words stay holes.
+- **Official Records pages and the Stager register.** Nothing new beyond the 12-13 Nov checks already recorded above.
