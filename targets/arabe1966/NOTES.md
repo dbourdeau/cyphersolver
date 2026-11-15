@@ -2,7 +2,7 @@
 
 Status: in progress
 
-Worked 15 Nov 2026 in one session. **Not solved.** The line was transcribed (23 numerals) and nine families of
+Worked 15 Nov 2026 in one session. **Not solved.** The line was transcribed (23 numerals) and eleven families of
 system were tested; none gives a reading. What follows is the record, so the next attempt does not repeat it.
 
 ## The document
@@ -78,6 +78,13 @@ Scripts are in `scripts/`. The word lists are the `wordfreq` Arabic list (modern
    series. None fits. A talismanic number string written as a preservative at the end of the book (Gacek, Vademecum,
    "Popular culture in manuscripts") stays possible and would have no reading.
 
+10. **Digit = digital root of the letter's place in the alphabet** (hijāʾī in two orders of the last letters,
+    Maghribi hijāʾī, Maghribi abjad), each digit standing for three or four letters (`classes.py`, both directions,
+    both vocabularies). Short words turn up everywhere (ابن, ابو, ربنا, بعد for the hijāʾī order read right to left),
+    as they must with three letters to a digit, but no cut makes a phrase. **Failed.**
+11. **Two digits summing to a letter's value** (the splitting of a value into addends described for the medieval
+    Arabic cryptologists): pairs from either end give sums that are not letter values (11, 13). **Ruled out.**
+
 Prior art: the catalogue vetting of 15 Nov 2026 found none (DECODE, Cryptiana, de Slane, web). This session added
 Gacek's *Arabic Manuscripts: A Vademecum for Readers* (full text on the Internet Archive): its entries on secret
 alphabets, abjad and popular culture describe no numeral cipher of this kind and do not mention this manuscript.
@@ -99,5 +106,6 @@ alphabets, abjad and popular culture describe no numeral cipher of this kind and
   on the film, and the doubtful 4/3 and 9/6 shapes.
 - Another line by the same hand, in this volume's margins (not visible at the size viewed) or in a sister
   manuscript of the same copyist or owner.
-- A documented scribal numeral cipher of fourteenth-century Syria or Egypt to test (Ibn al-Durayhim's *Miftāḥ
-  al-kunūz* lists numeral methods; not opened in this session).
+- A documented scribal numeral cipher of fourteenth-century Syria or Egypt to test. Ibn al-Durayhim's *Miftāḥ
+  al-kunūz* (c. 1350) lists numeral methods; the edition (Mrayati and others, *Arabic Origins of Cryptology* 3) was
+  searched for and is not online in full, so only the methods remembered from it were tried (items 1, 2, 5, 11).
