@@ -1,0 +1,61 @@
+{
+ "2887": {
+  "unvetted": "Leaf not seen. The volume is digitised, but only on Orient-Digital, which resets the connection from this network (as does Qalamos). Correct shelfmark: SBB Wetzstein II 203, not Wetzstein I 203. Ahlwardt's 'We.' is Wetzstein II, and K10plus PPN 1982423900 / Qalamos DE1Book_manuscript_00022629 give 'Wetzstein II 203', Diwan of ad-Darwish Mustafa al-Hazayini as-Sukkari, 1117 [1705], 145 Bl., digitised 2026 in 'Islamische Handschriften digital', Public Domain. Its resolver (SBB00048A9700000000) answers NOTFOUND on digital.staatsbibliothek-berlin.de, there is no METS on content.staatsbibliothek-berlin.de, and the Deutsche Digitale Bibliothek has a bot check (Anubis), which was not passed. Ahlwardt vol. 1 no. 13 note 1 (cipher 'an einigen Stellen', key on f. 103a) and no. 8012 (vol. 7) were read on archive.org: no folios for the cipher passages, no reading. known.py, DECODE ('Wetzstein', 'Sukkari') and a web search found nothing. Next: open the Orient-Digital/Qalamos copy from another network, find the cipher passages and f. 103a, and test the key.",
+  "lead_updates": {
+   "shelfmark": "Staatsbibliothek zu Berlin, Ms. or. Wetzstein II 203 (We. 203); Ahlwardt no. 8012; K10plus PPN 1982423900",
+   "title": "Darwish Mustafa ibn Isma'il al-Khaza'ini as-Sukkari, autograph extracts from his diwans, with passages in a secret script and its key on f. 103a (Berlin, Wetzstein II 203)"
+  }
+ },
+ "2888": {
+  "unvetted": "Not established as cipher, and the leaf itself was not seen. Sellheim, VOHD XVII A 2 (1987), Tafel 22 Abb. 37 (SBB digital PPN1879940027, image 462, 2184 x 3171 px; the strip is about 990 x 240 px at full size) shows one underlined line of about 16 signs to the left of the 'ya kabikaj' invocation. They are groups of 2, 3 and 4 upright strokes, some crossed or joined at the top, two looped signs and a hooked sign. That looks like a stroke-group numeral notation (a rumi/Fasi- or zimam-type numeral sequence) as much as a cipher. The signs do not match the Greek-Coptic foliation numerals on Sellheim's Tafel 24 Abb. 46-47. Sellheim's own entry (printed p. 66, image 94, not p. 65) says 'daneben Geheimschrift (?; s. Abb. 37)' and gives no reading. His caption reads '37. Geheimschrift, nach 917/1511 (s. S. 66 u. Abb. 10, 34)', tying the hand to the scribe's siglum and to al-Gharbi's colophon. Ms. or. oct. 1474 is not found in the K10plus SBB catalogue by shelfmark, and Qalamos/Orient-Digital are unreachable here. Next: see f. 1a at full size, compare the signs with rumi/Fasi and zimam numeral tables, and decide numerals or not_cipher."
+ },
+ "2893": {
+  "unvetted": "Leaf not seen, and the description does not show that it is a cipher. Savage-Smith, New Catalogue of Arabic MSS in the Bodleian I: Medicine (2011), entry 8, as given in the Fihrist TEI (manuscript_11359), says only: 'On folio 101a, between two sections of text, there are some curious letter forms and undeciphered writing'. That could equally be pen trials, another script or charakteres. Both Digital Bodleian objects were checked through their IIIF manifests: bcc68154-303d-43cb-bee6-c5ddffcd8d39 has 3 canvases (fol. 1a, 1b-2a, 170a), and eacd31dd-5101-4cde-8e89-f285f3bb85d2 has 1 canvas (fol. 001v-002r). Neither shows f. 101a. Web searches on the shelfmark found no study of the passage, and known.py and DECODE ('Laud Or', 'Bodleian Arabic') found nothing. Next: an image order for f. 101a from the Bodleian, or a reading-room visit, then decide.",
+  "lead_updates": {
+   "access": "archive"
+  }
+ },
+ "2894": {
+  "date": "2026-11-15",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Opus 5.5), 15 Nov 2026",
+  "seen": {
+   "kind": "not online",
+   "where": "BAV manuscripts OPAC, record 117402 (Vat.ar.34, Paleographie - Codicologie; source of information: 'catalogue G. Graf'), https://opac.vatlib.it/mss/detail/117402, read 15 Nov 2026. DigiVatLib has no digitisation: https://digi.vatlib.it/iiif/MSS_Vat.ar.34/manifest.json and /view/MSS_Vat.ar.34 both return 404, while the control MSS_Vat.ar.28 manifest returns 200.",
+   "extent": "One inscription at the head of f. 288v of a 320-leaf codex. Its length is not stated in the record; it was not seen.",
+   "cipher": "The archive's description (Graf, in BAV OPAC 117402): 'In summo f. 288v inscriptio cryptographica e notis numericis arabicis et copticis composita'. The same record transcribes and translates the volume's other notes (the reader's note on f. 1a.r, the note on f. 295r) but gives no reading of this inscription."
+  },
+  "prior_art": {
+   "decode": "decode_search.py for 'Vat. ar.' (5 unrelated Naples key rows from a word match), 'Coptic' (0) and 'Vaticana Arabic' (0): no DECODE record for this codex. The search is shallow.",
+   "tomokiyo": "Cryptiana: Lasry's key list GL.htm fetched and searched; no Arabic, Coptic or Vatican entries. A web search of cryptiana.web.fc2.com for Arabic manuscript ciphers returned no Cryptiana page. Nothing for Vat. ar. 34.",
+   "lasry": "GL.htm (Lasry's keys on Cryptiana) has no Arabic or Coptic key. No Lasry paper on Coptic-Arabic numeral cryptograms was found in the web searches.",
+   "edition": "A. Mai, Scriptorum veterum nova collectio IV (1831), Codices arabici no. XXXIV (archive.org bub_gb_6nULIbKT1dsC, full text): 'Expositio geneseos in lectiones LVI distributa ... saeculo XV'. No mention of the inscription. Graf's description (the OPAC text) gives no reading.",
+   "literature": "Web searches on Vat. ar. 34 with cryptographic or Coptic numerals, on Coptic scribal cryptography with numerals, and on Graf with Vat. ar. 34 found only general work (A. Delattre 2023 synthesis; N. I. Mohammed on Coptic cryptographic writing; Cambridge Genizah notes on zimam numerals). None names this codex. Doresse (Coptic Encyclopedia) and Salah-Eldin 2013 were not opened."
+  },
+  "key_check": "No key has been tested; the inscription has not been seen. The candidate systems are a substitution of Arabic letters by abjad numeral values written in mixed Arabic and Coptic (zimam) numerals, and the Coptic scribal cryptography keyed in the two sibling sources below.",
+  "key_held": "Untested. Two possible keys from the same Coptic scribal milieu, both listed in the Arabic sweep part C: BnF Arabe 238 f. 384v, 'Clef d'un chiffre dont se servaient les écrivains coptes' (de Slane; Gallica btv1b11004021j, not opened), and Vat. ar. 28 (1271), where 'alia manus clavem cryptogrammatis addidit' (BAV record 116992; digitised, not opened).",
+  "duplicates": "known.py 'Vat. ar. 34', 'Vat.ar.34', 'Vat. ar. 28', 'Coptic numerals': only this lead's own rows (leads.json, the sweep candidates and notes). No catalogue entry or target. DECODE searches as in prior_art.decode: none. Sibling Vat. ar. 28 is a different, read cryptogram.",
+  "searches": [
+   {
+    "query": "\"Vat. ar. 34\" cryptographic Coptic numerals inscription",
+    "result": "Only Cambridge T-S Ar.34 Genizah fragments with Coptic numerals and unrelated Vatican news; nothing on Vat. ar. 34 or a reading of f. 288v."
+   },
+   {
+    "query": "Graf Vatican \"Vat. ar. 34\" Genesis commentary Coptic Arabic manuscript 56 lessons",
+    "result": "Graf's Cairo catalogue and notes on his Nachlass; no description or study of Vat. ar. 34 beyond the OPAC record."
+   },
+   {
+    "query": "Coptic scribes cryptography numerals Arabic manuscripts colophon \"cryptogram\" Coptic numerals cipher study",
+    "result": "General Coptic cryptography literature (Delattre 2023, Mohammed, Doresse cited); the Sinai Arabic 533 numeral tables; nothing on this inscription."
+   },
+   {
+    "query": "\"Coptic numerals\" cryptogram Arabic Christian manuscript scribe name \"Vatican\" Vat. ar. cryptographic note",
+    "result": "BnF ar. 95/96 Coptic-numeral foliation, Genizah records and King's Ciphers of the Monks; no Vatican Arabic cryptogram read."
+   },
+   {
+    "query": "Mai, Scriptorum veterum nova collectio IV (1831), Codices arabici XXXIV, full text on archive.org",
+    "result": "The entry describes the codex (320 ff., Genesis commentary in 56 lessons, 15th c.) and does not mention the f. 288v inscription."
+   }
+  ],
+  "verdict": "open"
+ }
+}
