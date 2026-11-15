@@ -54,7 +54,7 @@ Frame numbers are the catalog image numbers (M31-005-0294 = roll 5, image 0294).
 |---|---|---|---|---|
 | No. 214, Madrid, 6 Aug 1799, to Pickering | M31 roll 5, 0414-0417 | 352 in ten passages | bare | read in part |
 | No. 188, Madrid, 19 Mar 1799, to Pickering | M31 roll 5, 0294 | 56 | bare | read in part |
-| despatch of April 1799, number not read | M31 roll 5, 0364 left | 16 | bare | read |
+| despatch of April 1799, number not read | M31 roll 5, 0364 left | 16 | bare | read in part |
 
 `inventory.tsv` lists every despatch found in this code (16), with roll, frame, date, groups and whether it is
 interlined or bare. How the film was searched: every frame of M31 rolls 4, 5 and 6, M43 rolls 2 and 3, and M31 roll 7
@@ -153,6 +153,14 @@ groups, pieces and mark (T table, C supported context value, G guess, U unread).
 | No. 214 | 224 | 173 | 17 | 24 | 10 | 293 of 352 (83.2%) |
 | No. 188 | 43 | 35 | 1 | 4 | 3 | 50 of 56 (89.3%) |
 | April 1799 | 14 | 12 | 2 | 0 | 0 | 14 of 16 |
+
+Sure words only, by README Conventions (a word is sure when every group comes from the frozen table or from a value
+attested by a clerk's decipherment of the same group, basis H; hidden digits restored by sense, basis P, count as
+holes): No. 214 176 of 224 (78.6%), No. 188 35 of 43 (81.4%), April 1799 13 of 14 (92.9%). These are the `read_share`
+figures in `profile.json` (15 Nov 2026, after Daniel Bourdeau's review of PR #664, whose counts they match). Our earlier
+figures, which also counted the basis-P words, were 190 of 224 (84.8%), 36 of 43 (83.7%) and 14 of 14. The April 1799
+sentence is therefore read in part: "Paris" stands on 74[2?], whose last digit is cut by the binding; on our saved
+full-size image of frame 0364 only the edge of a stroke shows after 74.
 
 The first session counted 295 of 352 groups (84%) for No. 214; the recount here is two lower because 349 ("lay"),
 1587 ("child") and the uncertain 827 are not counted as table readings where the reading uses another value.

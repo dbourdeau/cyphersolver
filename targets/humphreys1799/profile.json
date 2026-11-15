@@ -85,7 +85,7 @@
     "to": "Philadelphia"
    },
    "language": "English",
-   "read": "read",
+   "read": "read in part",
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
@@ -256,9 +256,9 @@
    "what": "After the test, while packaging: No. 73 (29 May 1793, M43-02-0285), not in the build, decodes to the clerk's separate decipherment for 16 of 17 groups (the 17th has no table value). Not pre-registered.",
    "result": "worked"
   },
-  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 364 tokens, 179 types, en-modern order 4: reading -1.842 per letter; random keys -2.665 (z 9.6); key annealed onto shuffled ciphertext best -1.823 (mean -1.85, z 0.4); annealer on the real text -1.793. Verdict: underdetermined.", "result": "partial"}
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 364 tokens, 179 types, en-modern order 4: reading -1.842 per letter; random keys -2.665 (z 9.6); key annealed onto shuffled ciphertext best -1.823 (mean -1.85, z 0.4); annealer on the real text -1.793. Verdict: underdetermined.", "result": "partial"}
  ],
- "outcome": {"validation": {"date": "2026-11-14", "model": "en-modern", "file": "validation.tsv", "tokens": 364, "types": 179, "tokens_per_type": 2.03, "score": -1.842, "nulls": {"random keys": {"n": 200, "mean": -2.665, "sd": 0.086, "max": -2.422, "z": 9.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.85, "sd": 0.018, "max": -1.823, "z": 0.4, "p": 0.4286}}, "power": -1.793, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.842; polyphony 0.003; 60 unread tokens left out; annealer on the real text from random keys reached -1.793"}, 
+ "outcome": {"validation": {"date": "2026-11-15", "model": "en-modern", "file": "validation.tsv", "tokens": 364, "types": 179, "tokens_per_type": 2.03, "score": -1.842, "nulls": {"random keys": {"n": 200, "mean": -2.665, "sd": 0.086, "max": -2.422, "z": 9.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.85, "sd": 0.018, "max": -1.823, "z": 0.4, "p": 0.4286}}, "power": -1.793, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.842; polyphony 0.003; 60 unread tokens left out; annealer on the real text from random keys reached -1.793"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -321,8 +321,8 @@
      "date": "2026-11-14",
      "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent and a second checking agent; not a person). Read as sentences against the decode; the second agent checked the transcription on the image and set the wording of every content claim. Holes and guesses are marked word by word (readings/marked_214.tsv). Not an outside check."
     },
-    "read_share": 0.848,
-    "note": "Share of words resting on the frozen table or on a supported context value (readings/marked_214.tsv: 190 of 224); on the table alone 173 of 224 (0.772). By code groups: 293 of 352 read by the frozen table (0.832)."
+    "read_share": 0.786,
+    "note": "Sure words only (README Conventions): 176 of 224 (78.6%), the 173 words on the frozen table and the 3 whose context value is attested by a clerk's decipherment of the same group (basis H: carried, never twice); words resting on a hidden digit restored by sense (basis P, 14), on sense only (24) or unread (10) are counted as holes (readings/marked_214.tsv, key/context_values.tsv). Our earlier figure, counting the basis-P words as read: 190 of 224 (0.848). By code groups: 293 of 352 read by the frozen table (0.832)."
    },
    {
     "doc": "188",
@@ -338,15 +338,15 @@
      "date": "2026-11-14",
      "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent and a second checking agent; not a person). Read as sentences; transcribed independently by the second agent (one difference, settled on the image). 'Sweden', 'inclined' and 'Staël' are guesses. Not an outside check."
     },
-    "read_share": 0.837,
-    "note": "Share of words resting on the frozen table or on a supported context value (readings/marked_188.tsv: 36 of 43). By code groups: 50 of 56 read by the frozen table (0.893)."
+    "read_share": 0.814,
+    "note": "Sure words only (README Conventions): 35 of 43 (81.4%), all on the frozen table; 'now' (a hidden first digit restored by sense, basis P), four sense-only guesses and three unread groups are counted as holes (readings/marked_188.tsv). Our earlier figure, counting 'now' as read: 36 of 43 (0.837). By code groups: 50 of 56 read by the frozen table (0.893)."
    },
    {
     "doc": "0364",
     "label": "Coded sentence of the April 1799 despatch (frame 0364)",
     "transcription": "transcriptions/april1799_0364.txt",
     "decryption": "readings/reading_0364.txt",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "summary": "Humphreys has seen a letter from the Dutch minister at Paris reporting (in clear) the outcry against Scherer's peculations and Rewbell's leaving the Directory with thirty millions.",
     "reading_review": {
@@ -355,8 +355,8 @@
      "date": "2026-11-14",
      "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent; not a person). 16 groups; 14 from the frozen table, 'Dutch' from a clerk's gloss on frame 0307 found after the test, 'Paris' with its last digit uncertain. Not an outside check."
     },
-    "read_share": 1.0,
-    "note": "14 of 14 words on the table or a supported context value (readings/marked_0364.tsv)."
+    "read_share": 0.929,
+    "note": "Sure words only (README Conventions): 13 of 14 (92.9%): 12 on the frozen table and 'Dutch' (1290), given by a clerk's gloss of the same group on frame 0307. 'Paris' stands on 74[2?], whose last digit is cut by the binding at the page edge; on our saved full-size image of frame 0364 (5152 x 3296) only the edge of a stroke shows after 74, so it is counted as a hole. Our earlier figure, counting 'Paris' as read: 14 of 14."
    }
   ],
   "gaps": [
