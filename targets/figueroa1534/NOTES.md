@@ -132,7 +132,7 @@ measurements with the same key family on other portions, without the atlas: 0.74
 recorded output and the SHA-256 values. `sh validation/rerun.sh` checks the hashes and regenerates the recorded
 output byte for byte (checked here, Python 3.9.6). No AGS image or crop is included (see `validation/README.md`).
 
-**Second held-out measurement (15 Nov 2026), cipher image 04**, the last intact 1547 portion, now spent: same frozen rule and three blind sub-agents; with K4 unchanged **0.887** (best within-class control 0.554, margin +0.333; 13.8 % outside the key). A shape-split candidate K5 scores 0.879, but only one of its 8 new labels (po) occurs often enough to be tested; it is not used in the readings. Files and `rerun.sh` (both measures, byte for byte): `validation/img04/`.
+**Second held-out measurement (15 Nov 2026), cipher image 04**, the last intact 1547 portion, now spent: same frozen rule and three blind sub-agents; with K4 unchanged **0.887** (best within-class control 0.554, margin +0.333; 13.8 % outside the key). A shape-split candidate K5 scores 0.879, but only one of its 8 new labels (po) occurs often enough to be tested. Since the ARB8e recount (last section) the readings use its labels where Brice Dudout's shape answers put them, and a word that needs one is probable at best. Files and `rerun.sh` (both measures, byte for byte): `validation/img04/`.
 
 **1553 letters: decoded, not read.** See the next section.
 
@@ -189,8 +189,37 @@ openings of all five ("lo que le puedo escrebir en esta", "por esta via de", "co
 qua[les]", "del presente", "mercaderes burgaleses"). 296 and 364 share the passage on the French ambassador; 242 and
 351-353 share "a cambio". The duplicate 1383,308-311 (16 Sep) and 1383,265-266 (16 May) are not transcribed yet.
 
-**Shape work in progress (not in this PR's figures).** Since 14 Nov the 7 / y and 8 / ȣ shape pairs of this hand are
-being separated on the images (atlas v4); no new figure is claimed from it.
+**Shape work since 14 Nov.** The 7 / y and 8 / ȣ shape pairs of this hand were separated on the images (atlas v4, v5), and the split classes were settled on shape sheets; the figures above are the first state. The recount on the ARB8e transcription is in the last section.
 
 **Next.** AGS high-resolution reproductions (requested in Brice Dudout's archive register, 28 Oct 2026) would settle
 the dots and the merged shapes; then test the conjectures on 1547 image 04, which is still untouched.
+
+## Shape sheet 312e and the ARB8e recount (15 Nov 2026, Brice Dudout with Claude)
+
+**Sheet.** Shape sheet 312e asked Brice Dudout, by shape only (one framed sign per question, option thumbnails without labels or values, dot count and a remark for each), for the 20 signs of the 1553 letters where a split shape class decides a word, plus 3 controls from the 1547 clear copy. The PREREG (decision rules for every answer, written before the answers) and the answer key were frozen by SHA-256 before the sheet was built. Controls: **3 / 3 shapes and 3 / 3 dot counts**, so the answers were applied as pre-registered. Answers, read literally (no remarks were written):
+
+| targets | answer | effect |
+|---|---|---|
+| 5 ɏ-like signs in mañana, señores, campaña, España, enseñoreada | the closed "4" form (?Z4, 3 earlier supports for ñ: daño ×2, Señoría) | these words probable; with ≥ 3 such answers, ñ on this form counts as supported, and the other ñ words (señor …) become probable |
+| 3 ɏ-like signs in Su Majestad ×2, sustentar | the "yr" form (su, K5 candidate) | words stay probable; blind re-label of all ɏ (below) |
+| 4 X-bar signs (te / pre) | 2 × the barred triangle (te, K4), 2 × the te-form of X (K5) | "entendía" replaces "emprendía" (312); ternemos (364) sure; parte, tener probable; the re-label of all 82 X-bar was not triggered (1 of 3 needed) |
+| 2 ꞓ signs | the 1545 table's cre sign (K4) | escrebí, escrebir sure (they agree with Tomokiyo's draft) |
+| 2 dotted n | the n-with-dot (fa) | faltan, infantes probable; blind re-label (below); one of them was answered with 0 dots, noted |
+| bo, ce, ne, po (4) | as expected | Bonifacio (312) probable; hazer, manera, propósito kept as probable |
+
+**Blind re-labels.** Seven Claude sub-agents re-read, on the images, by shape only and with no values, every sign of the two classes that reached their pre-registered threshold (378 signs; reference rows of confirmed shapes, targets masked in the transcription). ɏ: the "yr" form on 16 of 281 (closed "4" on 20, not applied: that re-label was not pre-registered). Dotted n / caret: the n-with-dot on 33 of 97; all 32 earlier "dotted n" came back as n-with-dot and all earlier carets as carets except one. The new transcription ARB8e (the answers plus these re-labels) was frozen by SHA-256 before decoding. Key K4 unchanged; no measurement (no intact 1547 portion is left).
+
+**Recount** (same strict rule; the readings were redone from the ARB8e decode and the holes sized again):
+
+| letter | sure only | sure + probable | unread words (sized) | clean share | state |
+|---|---|---|---|---|---|
+| 1383,242 | 58 % (94 / 162) | 68 % | 50 | 0.333 | decoded, not read |
+| 1383,296 | 47 % (384 / 812) | 80 % | 147 | 0.382 | decoded, not read |
+| 1383,364 | 49 % (286 / 586) | 77 % | 129 | 0.407 | decoded, not read |
+| 1383,312 | 53 % (236 / 445) | 70 % | 127 | 0.244 | decoded, not read |
+| 1383,351-353 | 42 % (1,248 / 2,949) | 74 % | 703 | 0.346 | decoded, not read |
+
+Against the first state: unread words 1,156 of 4,954 (1,419 of 4,821); sure only 42-58 % (37-54 %). Most of the gain comes from the 7 / y and 8 / ȣ separation; sheet 312e and the re-labels themselves add 14 read words net and remove 19 unread words (escrebí, escrebir, entendía, ternemos, mañana, señor, señores, campaña, España, Bonifacio, faltan, infantes, parte, tener …). The `_check_reading.py` clean share rises for four letters and falls for 312 (0.366 to 0.244) although its hole rate falls (0.321 to 0.254): the holes are fewer but spread over more sentences. No letter reaches 95 % or the sentence bar, so the states do not change.
+
+Doubts kept: 351-353 img05 l. 1 "asentarse" (sure) has the "yr" form on its second sign by one sub-agent ("probable"); the reading is kept, not counted as changed. Same letter img05 l. 32, "se" became the "yr" form: the word is now an unread passage (perhaps "suplico", not read).
+
