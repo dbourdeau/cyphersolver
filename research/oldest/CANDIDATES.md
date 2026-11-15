@@ -116,6 +116,14 @@ letter in patches, four signs unvalued, share read not measured; see `targets/bu
 - Vaesen, *Lettres de Louis XI* II no. CLXIII: "(Suit un passage en chiffres.)"; Mandrot III also stops short.
   Original at ASMi, Potenze Estere, Francia; not online. Milan keys in DECODE. Needs a photograph from Milan.
 
+### B7. Archivo del Reino de Aragon, Cartas Reales (AHP Zaragoza, Zurita collection), 1477-79 (DARA, online), added 15 Nov 2026
+- DARA `C_CRAR/000001/0020` (Ferdinand to John II, 13 Jul 1477, cipher at the foot), `/0024` (Ferdinand to John II,
+  Seville 9 Jun 1478, first page wholly in cipher) and `/0026` (Count of Cardona to John II, 16 Jul 1478, cipher
+  blocks); `/0029` (25 Jan 1479) answers two cipher letters of the king. Leads 2854-2856 (promoted), 2859. The DARA
+  summaries do not mention the cipher. Not among the BNE MSS/20211 letters Tomokiyo used (checked only as far as
+  web search; his PDF is behind a login). Test his 1476-79 system first. PDFs: `dara.aragon.es/opac/app/attachment?a=<dir>/AHPZ_C_CRAR_0000NN.pdf`.
+- If read: **1477-78**. Also: ACPS 1487 'Instruccions per cartes xifrades a Antonio Ximeno' has no ciphertext online.
+
 ## Ruled out or already read (so nobody re-searches)
 - ACA Reserva 12 (DECODE R10170, "ca. 1420", public): read in full by Salas 1931 (EUC 16, 374-377, with facsimile);
   a word-chunk columnar transposition, content dated 1413-16. DECODE's "Non-decrypted" is stale despite citing the
