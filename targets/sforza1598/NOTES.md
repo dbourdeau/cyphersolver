@@ -63,3 +63,27 @@ glyphs too; the signs are 12-18 px tall; and dotted signs (p with a raised o, o-
 Seen by eye on R5518 at 2x: the alphabet is small and legible (o, inverted T, +, 6, 8, 1, 9, 2, z, 3, p, raised-o p, x, crossed stroke, f, v, T, t, d,
 long s, o-dot-o, / ), with some word spacing. A hand transcription is workable: R5518 (15 lines, about 500 signs) first, clear words marked
 as cribs, then extend to R5514/R5517.
+
+## 14 Nov 2026: R5518 transcribed by hand, family C key partly recovered (ciphertext only)
+`famC/hand/r5518_hand_v2.txt`: R5518 (cart. 1598 no. 44, 11 lines of cipher after the clear opening "Illustrissime princeps et ex.me domine";
+a clear phrase "quando ... la V.ra Ill.ma Sig.ria" in line 2), 563 signs, about 36 sign types, read from 3x crops of each line.
+v1 (`r5518_hand.txt`) merged three signs as one q and lost the line beginning with the crossed stroke (a comment filter); v2 splits
+q / h (hooked, like a turned y) / y (open reversed 9) and restores the line.
+CTTS headless (period Italian corpus, n-gram 5, up to 4 homophones, 300 s), shuffled-token control each time:
+- v1 (506 signs): 16.90 M vs 11.75 M shuffled (1.44).
+- v2 without the lost line (506): 19.02 M vs 12.72 M (1.50).
+- v2 full (563): 18.60 M vs 11.97 M (1.55); two seeds give the same key (`famC/hand/v3a.txt`).
+Key (homophonic, about 2 signs per vowel): + T = a; z w = a; 1 = c; v = d; 2 d f = e; e = f; 3 = g; h = m; u = m; q = n; S = n; 6 = o; l t = o;
+# = p; 7 = q; L = r; 8 R = s; P m = s; b = t; c = t; r = b; - 4 X Q = i; o y = u/v; p = l. The ct sign is a cipher sign here (t), not the clear "et".
+Readable stretches in the decryption (spelling of the chancery, u/v merged):
+- l. 9 "mente adoperarme in bene[f]icio del vostra stato ... subito"
+- l. 10 "de cio avisarme"
+- l. 8 "in ordine ... fornire de le cose necesvrae (necessarie) e acio ..."
+- l. 6 "... pericvla ... come poria ..."
+- l. 5 "... in qviesto paese per cvrestia (carestia?) ... de ogni [a]ltra cosa sia"
+- l. 3 "... la cosa ... conclusione ... aspecto"; l. 7 "... electione del ..."
+Lines 1, 2, 4 and 11 do not read yet. Known problems: the o sign takes u in "qviesto" but a in "ogni altra" and "carestia", so it is
+probably two signs (plain o and o with a top stroke, written "o -" in places) merged; + and t may be confused; e is f in "beneficio" and
+"fornire" but the solver flips it to d. Status: R5518 read in part (estimate: about half the text in words; not yet measured), key from the
+ciphertext alone. Next: re-check o / o-with-stroke and + / t on the image, fix the key by hand from the cribs above, then decrypt R5514
+and R5517 (same family) with this key as the check.

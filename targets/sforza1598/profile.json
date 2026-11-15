@@ -4,14 +4,14 @@
  "title": "Sforza chancery letters in cipher, ASMi cart. 1598 and 1591 (catalogue 1311)",
  "documents": [
   {
-   "id": "R5482",
-   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 (DECODE R5482)",
+   "id": "R5518",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 44 (DECODE R5518)",
    "date": "unknown",
    "year": "unknown",
    "country": "Italy",
    "route": "unknown",
    "language": "Italian",
-   "cleartext_in_document": "none",
+   "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
      "none"
@@ -19,25 +19,26 @@
     "source": "unknown"
    },
    "length": {
-    "tokens": 0,
-    "distinct": 0,
+    "tokens": 563,
+    "distinct": 36,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "famC/hand/t2.txt"
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed",
-    "image_quality": "good",
-    "notes": "Seen at 150 dpi only."
+    "by": "llm from images",
+    "source": "by eye from 3x crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "q/h/y split in v2; o vs o-with-stroke and + vs t still uncertain."
    },
-   "read": "not read"
+   "read": "read in part"
   }
  ],
  "system": {
   "types": [
    "homophonic"
   ],
-  "summary": "Pool of many keys and hands. R5482: capital letter with superscript number (code groups) mixed with single signs, a code or nomenclator.",
+  "summary": "Pool of many keys. Family C (R5518 etc.): homophonic substitution, about 36 signs (numerals, crosses, letter shapes), about two signs per vowel, Italian. R5482: a code.",
   "symbol_kind": "symbols",
   "distinct_symbols": 60,
   "diacritics": {
@@ -114,11 +115,30 @@
    "kind": "control",
    "what": "Shuffled-token control run alongside each solve; the real tokens barely beat it.",
    "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5518 transcribed by hand from 3x crops: 563 signs, about 36 types (v2 splits three q-like signs merged in v1).",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "CTTS on the hand transcription: v1 1.44, v2 1.55 against shuffled; two seeds agree on the key.",
+   "result": "partial"
+  },
+  {
+   "kind": "reading",
+   "what": "Italian phrases read: \"mente adoperarme in beneficio del vostra stato\", \"de cio avisarme\", \"in ordine ... fornire de le cose necessarie\", \"in questo paese per carestia\".",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Triage only so far.",
+  "method_basis": "R5518 partly decrypted with a key recovered from the ciphertext alone (no external key); about half the text reads, not yet measured.",
   "contribution": [
    "none"
   ],
