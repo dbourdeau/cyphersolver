@@ -19,24 +19,23 @@ Spelling is the writer's: Firensa/Firense (Firenze), cum (con), scripto (scritto
 
 ## R5562 (cart. 1598 no. 88), 5 December
 
-> F{hi}a Firensa de prosimo, et avisai Nicodemo de tuto quelo che intesi per tenire al signore. Trovai Iovan Galeasmo in quela cita,
+> Fui a Firensa de prosimo, et avisai Nicodemo de tuto quelo che intesi per tenire al signore. Trovai Iovan Galeasmo in quela cita,
 > venuto a cercare partiti cum Fiorentini, facendo soldati, o cum lo signore; le dimande sue sono grande, e cum lui era uno
 > {ma}miglio di l'arcivescovo mandato per sentire di qua. {Si s'gain} desiderio et espectatione di cose nove; ma se pur al signor
 > parese di prendere alcun partito cum meser Ludovic{o}, advertite che sua signoria el facia obligare per Tomasino, el quale intende
-> temp{er}are le cose de Corsica in li primi movimenti de importantia chi a{c}cadano. A Firensa trovai le cose molto in {vicupate};
-> non ne scrivo altro, essendo la Nicodemo, como e il quale ancho avisai de uno ambasiatore venitiano chi secundo {vebi da} Iovan
-> Galeasmo doveva venir a {iar} pratiche a Firanse e poi andare a Roma. Sar{vane}, die quinto decembris, etcetera.
+> temp{er}are le cose de Corsica in li primi movimenti de importantia chi a{c}cadano. A Firensa trovai le cose molto inviluppate;
+> non ne scrivo altro, essendo la Nicodemo, como e il quale ancho avisai de uno ambasiatore venitiano chi secundo hebi da Iovan
+> Galeasmo doveva venir a far pratiche a Firanse e poi andare a Roma. Sar{vane}, die quinto decembris, etcetera.
 
-*[...] of Florence recently, and I informed Nicodemo of everything I heard, to pass on to the lord. I found Iovan Galeasmo in that
+*I was in Florence recently, and I informed Nicodemo of everything I heard, to pass on to the lord. I found Iovan Galeasmo in that
 city, come to look for arrangements with the Florentines, raising soldiers, or with the lord; his demands are great, and with him
 was a {servant} of the archbishop, sent to sound things out here. [?] desire and expectation of new things; but if the lord should
 nevertheless see fit to make some arrangement with messer Ludovico, take care that his lordship has it guaranteed through Tomasino,
 who means to temper the affairs of Corsica at the first important movements that occur. In Florence I found things very much
-[?]; I write nothing more of it, since Nicodemo is there, whom I also informed of a Venetian ambassador who, according to {what I
-had from} Iovan Galeasmo, was to come to {conduct} negotiations in Florence and then go to Rome. [Place?], 5 December, etc.*
+tangled; I write nothing more of it, since Nicodemo is there, whom I also informed of a Venetian ambassador who, according to what I
+had from Iovan Galeasmo, was to come to conduct negotiations in Florence and then go to Rome. [Place?], 5 December, etc.*
 
-Open words: the first letters, "{vicupate}", "{vebi da}", "{iar}" (probably "far"), and the place name "sarvane" (probably Sarsane,
-as in the other letters).
+Resolved 15 Nov by the confirmed look-alike pairs (5/S, M/N, c/D): "Fui a", "inviluppate", "hebi da", "far". Open: "{mamiglio}" (probably famiglio), "Si s'gain", and the place "sarvane" (probably Sarsane).
 
 ---
 
@@ -95,7 +94,7 @@ Open: two digit-like signs (6, 10) in "Volter{ra}"; "Ponsano" not identified.
 ## R5575 (cart. 1598 no. 101), 20 February
 
 > Respondo a la vostra ricevuta heri. Nicodemo ha sempre confortato meser Ludovico circa la specialita del signore, ma ben gli ha
-> {scripto} e mi ha mandato a dire che certi mesani chi sono tra el signore e lui sono casone che le sue cose non {mas}cano bene. Meser
+> scripto e mi ha mandato a dire che certi mesani chi sono tra el signore e lui sono casone che le sue cose non {mas}cano bene. Meser
 > Ludovico per tali avisi e stato molti di in suspecto de li soi, e spesso mi mostrava la letera de Nicodemo; il perche, vedendolo io in
 > tal fantasia, ordinai che mi fusse mandata la electione di la cancelaria di Volterra, la quale acceptai non per voglia che io ne havesse,
 > ma per estinguere de mi ogni sinistro umbramento; e cosi e succeduto. El tempo non comincia fino a octobre, ne ancho anora gli andero, se
@@ -116,7 +115,7 @@ having accepted the said office; nevertheless do as you think best. Iovan Galeas
 letter from Iovan Coscia, who wished to send one of his men to duke Iovani for a good reason, and that he wanted to send one Piero del
 Cerreto, a servant of the archbishop, {?}, familiar with and practised in the language and the country. Sarzana, 20 February, etc.*
 
-Open: "{scripto}", "{mas}cano", "{coqesum}".
+Open: "{mas}cano", "{coqesum}". ("ha scripto" resolved by the 5/S and c/D pairs.)
 
 ---
 
@@ -162,6 +161,16 @@ give fuller satisfaction. Sarzana, 23 March, etc.*
 Open: "{canteera}" (probably "Tomasino era" lost in the transcription), "{vala}".
 
 ---
+
+## Historical check (15 Nov 2026, not complete)
+- Ludovico Sforza (il Moro) was exiled to Pisa, in Florentine territory, after the failed coup of May 1477, and returned to Milan in
+  September 1479. Bona of Savoy governed for her son Gian Galeazzo; the letters' "Madona" and "el Signore" fit them.
+- "messer Ieronimo" whose death is mentioned (R5586) fits Girolamo Olgiati, executed in January 1477 for the murder of Galeazzo Maria
+  Sforza (not checked in the text beyond the name).
+- Tommasino (da Campo)fregoso was lord of Sarzana and, later (1484), governor of Corsica; Milan held Corsica 1464-1481.
+- Nicodemo Tranchedini wrote from Genoa in 1478 (DBI); a Nicodemo handling Genoese and Corsican affairs fits him.
+- So the letters most likely date from June 1477 to March 1479, written by a Sforza informer at Sarzana close to Ludovico in exile.
+  Not checked against the Milanese registers or Musso, "Il dominio sforzesco in Corsica (1464-1481)".
 
 ## Notes for the reviewer
 - **Names:** messer Ludovico, Tomasino, Nicodemo, Iovan Galeasmo / Galeaso, Madona (the duchess) and el Signore (the duke), Guido

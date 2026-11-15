@@ -384,3 +384,12 @@ the reader review. Measured 0.887 with a strict segmenter that counts chancery s
 ## 15 Nov 2026 (later): reader review draft for family B
 `famB/READER_REVIEW.md`: all seven letters with word division, punctuation, open words marked ([?], [...], { }), and a close English
 translation, for a second reader (the reading gate asks for a reader review and English). Not yet reviewed by anyone.
+
+## 15 Nov 2026 (later): more family B analysis
+- Five open words resolved with the look-alike pairs already confirmed on the images (5/S, M/N barred m/n, c/D): R5562 "fhia" ->
+  "Fui a [Firensa]", "vebi da" -> "hebi da", "a iar pratiche" -> "a far pratiche", "invicvpate" -> "inviluppate"; R5575 "vaslripto" ->
+  "ha scripto" (`v62.txt`, `v75.txt`). Same classes as the confirmed fixes; these five were not cropped individually.
+- Historical check (web, 15 Nov; sources in `famB/READER_REVIEW.md`): Ludovico Sforza's exile at Pisa (May 1477 - Sept 1479) under the
+  regency of Bona of Savoy ("Madona", "el Signore"), Tommasino Campofregoso lord of Sarzana (governor of Corsica later), Milanese
+  Corsica 1464-1481, Nicodemo Tranchedini writing from Genoa in 1478 (DBI), and "meser Ieronimo" (Girolamo Olgiati, d. Jan 1477?) all
+  fit. Working date: June 1477 - March 1479; an informer at Sarzana near Ludovico. Not checked in archival registers.
