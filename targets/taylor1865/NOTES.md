@@ -144,6 +144,14 @@ not checked. We know of no modern decipherment of these letter-book passages; th
   needs a new hypothesis. Re-run 11 Nov 2026: `nov9_analysis.py` reproduces every count (9 March is 124/135,
   not the 123/135 written below).
 
+- 15 Nov 2026 (Andrew Beling, with AI agents; `blind_2026-11-15/README.md`): the open frames were transcribed twice
+  blind and tested with the four known keys. Of the catalogue's open list, vol. 11 frames 0078-0081 hold no cipher
+  (clear telegrams of 20-22 April and the back cover). The 9 March Levy telegram (fr. 0056 lower) is read
+  (`v196-0056-levy_*`). Still open: fr. 0046 lower telegram, 11 April (fails every known key at every position; blind
+  readers agree on 0.953 of its letters, so a new key or convention is needed - blocker: none outside); fr. 0046 upper
+  telegram, nine middle cipher words (`v11-0046a-maury_*`; flowing capitals, readers agree on about two letters in
+  three - blocker: legibility, a person's reading of the image would help).
+
 None of these has an outside blocker, so this is not a stopping point: the folder stays "in progress" until the
 remaining passages are read (mechanical with the known key; vol. 10 probably COMPLETE VICTORY).
 
@@ -583,3 +591,41 @@ line in original colour and in grayscale, with comparison letters from the same 
 `v11-0045b_transcription.txt` now carries these groups and the earlier ones as superseded. Decrypted with COME
 RETRIBUTION from position 0: TQOOPS SHOUKD NOT BE SENT TO DEMO POLIS AND PORTIRN OF THE ST ORDS BLTO. No reading, share,
 key, status or profile figure changes: the telegram stays outside the completed readings, and EX FVWJ JMNH stay unread.
+
+## 15 November 2026 — the open frames transcribed twice blind; 9 March to Levy read (Andrew Beling, with AI agents)
+
+Work by AI readers (Claude, Opus), not checked by a person. Details, figures and files: `blind_2026-11-15/README.md`.
+
+- **Method.** Four readers transcribed the cipher groups of the open frames from the NARA images, each alone and
+  without any earlier transcription, key or decryption, after passing a seed telegram (90% mark). A test plan was then
+  frozen (sha256) before any key was applied: four known keys at all 15 positions on each reader's transcription,
+  quadgram score, a one-slip model, 400 controls per telegram and reader (shuffles maximised over all four keys, and
+  random keys); pass above the highest control.
+- **Agreement.** 1230 of 1317 letters over twelve telegrams (0.934); weakest the flowing capitals of the first
+  11 April telegram on fr. 0046 (60/94).
+- **Test.** Positive controls pass. Eleven of twelve telegrams yield for both readers with the key the folder already
+  gives for their date. **Miss:** the second 11 April telegram on fr. 0046 fails under every key and both models. The
+  run was repeated by a verifier with identical figures.
+- **New: 9 March 1865, Bullock for Taylor to Lt Col Wm. M. Levy** (fr. 0056 lower telegram;
+  `v196-0056-levy_reading.md`): COMPLETE VICTORY from position 0. "The Lieut. Genl. Comdg. understands there are one
+  hundred & fifty five CARS or [on] MOBILE and MONTGOMERY R. R. and thinks such of them as are not needed for daily use
+  should immediately be TRANSFERRED ON TRUCKS to WIDE [?GUAGE] AT COLUMBUS, GA. ... It might be done UNDER PRETENSE
+  OF ASSISTING ROADS in Georgia." 21 cipher words: 20 read; GUAGE needs I for J twice, and the image shows the clerk's
+  J both times (a correction against the image, so a hole). COLUMBUS needs F where two readers read E: F is one
+  reader's first reading and another's marked alternative (the stroke allows it). It is the order to Levy that the
+  same day's telegram to D. W. Adams (`v196-0056-dw_reading.md`) announces. Not printed in OR I/49/1 (p. 1042 prints
+  the clear telegram on the left of the same frame, Taylor to Maury, 9 March) or I/49/2.
+- **New in part: 11 April 1865, Surget to Maury** (fr. 0046 upper telegram; `v11-0046a-maury_reading.md`): COME
+  RETRIBUTION. "ONE [?OF] THE [?TRAINS] from Mobile last night brought [... 9] and quite a number of BALES OF COTTON
+  FOR THE RAIL ROAD COMPANY." 21 cipher words: 10 read, 2 need one letter no reader saw (holes), 9 unread. Not in OR
+  I/49/2 (pp. 1223-1226 print the clear telegrams of 10-11 April around it).
+- **Confirmed** (blind transcriptions, same keys and phases as the earlier readings; the earlier files are not
+  edited): 8 and 9 March to D. W. Adams, 13 March to the Secretary of War, 13/14 March to Maury, 17 March to Taylor
+  (Bryan Payne, PR #388); 10 April to Taylor (fr. 0044 first passage) and to Maury (fr. 0045), and 18 January to Davis
+  (Bryan Payne, 28 October and #388). The word-by-word comparison, including the words that still need a letter, is
+  in `blind_2026-11-15/reading_tables.md`; these are proposals for the reviewers, not changed readings.
+- **Verification.** An independent verifier and a second blind helper transcribed the Levy and the first 11 April
+  telegrams from the images before seeing this work (107/109 and 67/91 letters agreeing between the two), decrypted
+  their own transcriptions with every known key at every position and got the same words.
+- **Not changed:** `profile.json` outcome, read shares and reading reviews. The two new telegrams are not yet entries
+  in `outcome.texts`; their reading review is the reviewers' to record.

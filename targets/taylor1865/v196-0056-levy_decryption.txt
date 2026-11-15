@@ -1,0 +1,33 @@
+# 9 March 1865, Bullock (for Taylor) to Lt. Col. Wm. M. Levy: decryption
+# Key COMPLETE VICTORY, standard Vigenere (plain = cipher - key), key over cipher letters only, from position 0 with
+# the first cipher letter, continuous across clear words. Chosen by test, not assumed: blind_2026-11-15/README.md.
+# Status column: R = the agreed letters give the word; A = a letter one reader marked as an alternative gives it
+# (image-supported choice); C = a letter no reader saw is needed (correction against the image).
+
+ # cipher          key              plain            status
+ 1 EODH            COMP             cars             R
+ 2 XSUMGM          LETEVI           mobile           R  (A2's N for M would not)
+ 3 OHBKEQAQGJ      CTORYCOMPL       montgomery       R
+ 4 V               E                r                R
+ 5 K               T                r                R
+ 6 XMIPLTVPTSP     EVICTORYCOM      transferred      R  (L, not the helper's Z)
+ 7 DY              PL               on               R
+ 8 XKYXSU          ETEVIC           trucks           R
+ 9 PWUC            TORY             wide             R
+10 JJMVP           COMPL            hvage            C2 -> IIMVP = guage (period spelling of gauge); J for I twice,
+                                                         against the image: both letters are this clerk's J form
+11 EM              ET               at               R
+12 GJTWFPLQIO      EVICTORYCO       columbusga       A  (F: A1's first reading, verifier's alternative; E gives colulbusga)
+13 EJAIKMIBGGRVLV  MPLETEVICTORYC   superintendent   R
+14 CR              OM               of               R
+15 G               P                r                R
+16 C               L                r                R
+17 YGHZZ           ETEVI            under            R
+18 RKSKCPGQ        CTORYCOM         pretense         R
+19 DQ              PL               of               R
+20 ELWDAVBBX       ETEVICTOR        assisting        R  (L, not Z or I)
+21 PQOPH           YCOMP            roads            R
+
+# 21 cipher words: 20 read, 1 read with a two-letter correction against the image (guage).
+# Controls: of the 60 key positions (4 known keys x 15) the next best gives no English (chi-square 238 against 23
+# for this one); quadgram test and 400 controls in blind_2026-11-15/test_results_table.md (T03).

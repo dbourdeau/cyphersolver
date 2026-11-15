@@ -1153,6 +1153,35 @@
       "kind": "verification",
       "what": "Follow-up to the PR #577 notes: one AI reader re-read the three disputed groups of 10 April on the full NARA frame 0045, two passes (enlarged grayscale crops; whole line in colour and grayscale) against letter forms on the same telegram. LYWVEW (Y as in XCYKG) and MF (M as in MRU and JMNH) are supported; EIEX leans to E (foot stroke as in EX) and stays open. v11-0045b_transcription.txt updated; decrypts TQOOPS SHOUKD NOT BE SENT TO DEMO POLIS AND PORTIRN OF THE ST ORDS BLTO. No person has checked it; no reading or share changes.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "transcription",
+      "what": "Open frames of entry 681 (vol. 196 fr. 0053, 0056, 0064, 0065, 0071; vol. 11 fr. 0044-0046, 0078-0081; vol. 10 fr. 0056) transcribed twice blind by four AI readers (two per volume), each with a seed telegram first (all passed the 90% mark). Agreement 1230/1317 letters over 12 telegrams; weakest the flowing-capital 11 April telegram on fr. 0046 (60/94). Frames 0078-0081 hold no cipher. blind_2026-11-15/.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "control",
+      "technique": [
+        "key matching",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Pre-registered test (TEST_PLAN.md, frozen by sha256 before any key was applied): four known keys at all 15 positions on each reader's transcription, quadgram score, one-slip model; 200 shuffles and 200 random keys under the same maximisation; pass above the maximum of all 400. Positive controls pass. 11 of 12 telegrams yield for both readers; the second 11 April telegram on fr. 0046 fails under every key and both models (a miss).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "reading",
+      "what": "New: 9 March 1865 to Lt Col W. M. Levy (fr. 0056 lower telegram), COMPLETE VICTORY from position 0, 20 of 21 cipher words read, GUAGE needs I for J twice (hole): 155 Mobile and Montgomery cars to be moved on trucks to the wide gauge at Columbus, Ga., under pretense of assisting roads in Georgia. New in part: 11 April 1865 to Maury (fr. 0046 upper telegram), COME RETRIBUTION, 10 of 21 words read, 2 doubtful, 9 unread. Earlier provisional readings of 8, 9, 13, 17 March, 10 April and 18 January confirmed on the blind transcriptions; not applied to their files. Not in profile.outcome.texts and no reading review recorded: left to the reviewers.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "what": "Independent verifier (AI) and a second blind helper transcribed the 9 March Levy and the first 11 April telegrams from the images before seeing the work (107/109 and 67/91 letters agreeing), decrypted their own transcriptions with every known key at every position and got the same words; re-ran the frozen test with identical results; classified the letter corrections against the image (GUAGE, OF, TRAINS) and as image-supported alternatives (COLUMBUS, RAIL).",
+      "result": "worked"
     }
   ],
   "outcome": {
