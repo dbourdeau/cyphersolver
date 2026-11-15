@@ -87,3 +87,19 @@ probably two signs (plain o and o with a top stroke, written "o -" in places) me
 "fornire" but the solver flips it to d. Status: R5518 read in part (estimate: about half the text in words; not yet measured), key from the
 ciphertext alone. Next: re-check o / o-with-stroke and + / t on the image, fix the key by hand from the cribs above, then decrypt R5514
 and R5517 (same family) with this key as the check.
+
+## 14 Nov 2026 (later): R5514 transcribed, joint solve with R5518 reads in long stretches
+`famC/hand/r5514_hand.txt`: R5514 (cart. 1598 no. 40), 26 lines, 1,853 cipher signs, with long clear passages left out ("che merita
+possuto io fare cosa alcuna che fosse grata a la V.ra Ill.ma Sig.ria ...", "a qual cosa prego cum ogni instantia ...", "a qual cosa
+racordo", "prego La V.ra Ill.ma S.ria voglia"). New sign O (o with a top stroke) kept apart from o here (R5518 v2 still merges them).
+Joint CTTS run on R5518 + R5514 (`tj.txt`, 2,416 signs, 400 s, two seeds agree): 17.46 M against 8.67 M shuffled, **ratio 2.01**.
+Decryption with the solver key and r = b: `famC/hand/dec_joint.txt`. Share of letters in dictionary words of 4-12 letters (greedy, period
+corpus): R5518 0.39, R5514 0.51, shuffled-token control 0.23 (so roughly 15-30 points of real words; far from the read bar).
+R5514 stretches that read (u/v merged, chancery spelling): "la qual cosa grandemente me sto ... per adoperar ben del vostro stato",
+"... a roma ... castro ... el quale a posto", "la civita di ... a cremona", "... in questa ... nel paese ... per persone inteligenti",
+"... secreti ... ", "risposta ... scrito", "secreto ... seguire", "per le ... scrito ... scrivere", "a la cosa", "lo vostro stato".
+Key changes from R5518 alone: r = b (was c), the theta sign reads f in "beneficio"/"fornire" but t in "scrito"/"secreto": probably two
+signs (barred o and theta) that the transcription merges; same for o / O in R5518.
+Status: family C read in part (R5514 and R5518), key recovered from the ciphertext alone; not yet at the read bar.
+Next: (1) split theta and o/O on the images of both letters; (2) hand-fix the key from the word stretches; (3) transcribe R5517 and
+R5515 and decrypt them with the fixed key as an out-of-sample check; (4) then R5502-R5506 (two-page letters).

@@ -32,6 +32,36 @@
     "notes": "q/h/y split in v2; o vs o-with-stroke and + vs t still uncertain."
    },
    "read": "read in part"
+  },
+  {
+   "id": "R5514",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 40 (DECODE R5514)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": 1853,
+    "distinct": 40,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famC/hand/t14.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from 3x crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "O kept apart from o; theta probably two signs."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -133,6 +163,30 @@
   {
    "kind": "reading",
    "what": "Italian phrases read: \"mente adoperarme in beneficio del vostra stato\", \"de cio avisarme\", \"in ordine ... fornire de le cose necessarie\", \"in questo paese per carestia\".",
+   "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5514 transcribed by hand from 3x crops: 1,853 cipher signs, clear passages left out.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Joint CTTS on R5518 + R5514 (2,416 signs): 17.46 M vs 8.67 M shuffled (2.01); two seeds agree.",
+   "result": "partial"
+  },
+  {
+   "kind": "control",
+   "what": "Dictionary-word share of the decryption (4-12 letters, greedy): R5514 0.51, R5518 0.39, shuffled 0.23.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "R5514 reads in stretches: \"la qual cosa grandemente ... per adoperar ben del vostro stato\", \"a roma\", \"a cremona\", \"per persone inteligenti\", \"risposta ... scrito\", \"secreto\".",
    "result": "partial"
   }
  ],
