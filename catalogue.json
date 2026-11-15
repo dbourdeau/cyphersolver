@@ -84562,6 +84562,210 @@
     "verdict": "open"
    },
    "repository": "bnf"
+  },
+  {
+   "id": 2753,
+   "counted": true,
+   "source": "archives-online.org federated search (Chrome), Austria/Swiss sweep, 15 Nov 2026",
+   "score_note": "Scored from the finding-aid text during the 15 Nov 2026 Austria/Swiss sweep (research/sweep_2026-11-15_austria_swiss/); not viewed",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "region": "Central Europe",
+   "year": 1656,
+   "date": "10 Dec 1655 - 15 Feb 1656",
+   "language": "German",
+   "period": "1651-1700",
+   "title": "Ciphered correspondence between Luzern, Fribourg and Solothurn, Dec 1655 - Feb 1656 (key: the Catholic cantons' agreements on secret signs and ciphers, AKT 13/153)",
+   "correspondents": "Luzern <-> Fribourg <-> Solothurn (Catholic cantons, in the run-up to the First Villmergen War)",
+   "place": "Luzern / Fribourg / Solothurn",
+   "shelfmark": "Staatsarchiv Luzern, AKT 13/2346 (key volume: AKT 13/153, 1568-1696)",
+   "folio_note": "Title as indexed: 'Chiffrierte Korrespondenz zwischen den Orten Luzern, Freiburg und Solothurn (Schluessel siehe AKT 13/153)'. AKT 13/153 is 'Verabredungen der katholischen Orte ueber die geheimen Wortzeichen und Chiffren 1568-1696'",
+   "cls": "A",
+   "status": "Not online (Luzern catalogue record seen 15 Nov 2026; no images, access closed). Key volume AKT 13/153 is a separate unit. Needs a reading-room photograph.",
+   "why": "A ciphered letter file of 1655-56 with its key named in the same archive, from the Swiss Catholic cantons' diplomacy just before 1656. Same system as the Luzern key series AKT 13/152-158 (see key_leads.json).",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 3,
+   "verify": "Open AKT 13/2346 and 13/153 at the Staatsarchiv Luzern (query database or reading room); check whether the key of 13/153 covers 1655 or only the earlier agreements; compare the Zurich Ziffernschrift keys of 1653 (swiss_austrian) and StAZH A 235.2 (1655, \"mit 3 Chiffrierschluesseln\").",
+   "links": [
+    {
+     "href": "https://www.archives-online.org/Search",
+     "label": "archives-online.org (search the shelfmark)"
+    }
+   ],
+   "prior_art": "open as far as checked (15 Nov 2026): AKT 13/2346, AKT 13/153, Luzern, Geheimkonferenz searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
+   "access_note": "Staatsarchiv Luzern record AKT 13/2346 viewed 15 Nov 2026: no images, closed (reading room, order from the archive).",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), Austria/Swiss sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Staatsarchiv Luzern online catalogue (dls.staatsarchiv.lu.ch/records/1483460, Chrome, 15 Nov 2026): record AKT 13/2346 'Erster Villmergerkrieg 1656. Verschiedenes in chronologischer Reihenfolge', level Archivunit, no images, access 'closed' (reading room).",
+     "extent": "unknown; one file of Dec 1655 - Feb 1656 (10 Dec 1655 - 15 Feb 1656).",
+     "cipher": "Archive's title: 'Chiffrierte Korrespondenz zwischen den Orten Luzern, Freiburg und Solothurn (Schluessel siehe AKT 13/153)'. Nothing in the record says a decipherment is filed with it."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, views dumps, ledgers, 15 Nov 2026): no DECODE record and no ledger entry for these shelfmarks or places; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana has no Swiss cantonal or St Gallen abbey cipher of this period in the repo's holdings (known.py); not named.",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "The war is covered by the Luzern Geschichtsfreund article on Villmergen 1656 (Staatsarchiv Luzern PDF, gfr06 2006) and the Acta Helvetica, plain-text letters of the Catholic cantons; no edition or decipherment of this ciphered file found.",
+     "literature": "Web search 15 Nov 2026 (Swiss 17th-century cantonal cipher, Chiffrierschluessel, Usteri, Kryptographie): nothing on Swiss cantonal or Stiftsarchiv ciphers; Usteri's 'Ueber Chiffrierung in frueherer Zeit' (1960, already in the ledgers for the Zurich keys) is not about these files and was not seen."
+    },
+    "searches": [
+     {
+      "query": "known.py Luzern / Solothurn / Villmergen / AKT 13",
+      "result": "this lead and the sweep row only"
+     },
+     {
+      "query": "web: Luzern Staatsarchiv chiffrierte Korrespondenz katholische Orte 1655 1656 Chiffrenschluessel Villmergen",
+      "result": "context on the war only; no cipher item"
+     }
+    ],
+    "key_check": "Key recorded, not tested: AKT 13/153 (agreements on secret signs and ciphers 1568-1696) named by the archive; no ciphertext seen. No key is held here or on DECODE for the Luzern series.",
+    "key_in_volume": "Key named by the archive in a separate unit, AKT 13/153 'Verabredungen der katholischen Orte ueber die geheimen Wortzeichen und Chiffren 1568-1696'; not seen, so not tested; it is a series of agreements, so whether it covers 1655 is open.",
+    "duplicates": "known.py 'AKT 13', 'Solothurn', 'Fribourg', 'Catholic cantons' (15 Nov 2026): only this lead and its sweep row; the Zurich keys of 1653/1655 are a different series.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2754,
+   "counted": true,
+   "source": "archives-online.org federated search (Chrome), Austria/Swiss sweep, 15 Nov 2026",
+   "score_note": "Scored from the finding-aid text during the 15 Nov 2026 Austria/Swiss sweep (research/sweep_2026-11-15_austria_swiss/); not viewed",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "region": "Central Europe",
+   "year": 1712,
+   "date": "1711-1712 (key made 1708)",
+   "language": "German / French",
+   "period": "1701-1800",
+   "title": "Secret conference of Luzern, Fribourg, Solothurn and the Valais at Solothurn, 1711-12, 'teilweise chiffriert' (key: Geheimschluessel of 1708, Luzern COD 1100; same code in the Valais as 'Alphabet secret')",
+   "correspondents": "Luzern, Fribourg, Solothurn, Valais (Catholic cantons and the Valais, Toggenburg War period)",
+   "place": "Solothurn",
+   "shelfmark": "Staatsarchiv Luzern, FAA 763 (key: COD 1100, 9 folios, 1708; Valais copy AEV AV 54/7)",
+   "folio_note": "FAA 763: 'Abschied einer Geheimkonferenz ... zu Solothurn (teilweise chiffriert) 1711-1712'. COD 1100: 'Geheimschluessel zwecks Aufloesung von chiffrierten Dokumenten militaerischen Charakters ... geltend fuer die Staende Luzern, Freiburg und Solothurn. Angefertigt 1708 (Villmergerkriege?)', 1-9 fol. AEV AV 54/7: 'Alphabet secret (code) partage par les cantons catholiques de Lucerne, Fribourg, Soleure et par la Republique du Valais', frontispiece with the arms of the four allies",
+   "cls": "A",
+   "status": "Not online. Finding aids name the partly ciphered Abschied FAA 763 and the 1708 key COD 1100 with a Valais copy AV 54/7. Needs reading-room photographs.",
+   "why": "A short 1711-12 ciphered conference record with a dated key (1708) held in the same archive, and a second key copy in Sion: a clean key-plus-ciphertext pair, small enough to read.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Order FAA 763 and COD 1100 (Luzern); look at AEV AV 54/7 on the Valais site; check the key covers the 1711 Abschied (the key was made for war-time military papers).",
+   "links": [
+    {
+     "href": "https://www.archives-online.org/Search",
+     "label": "archives-online.org (search the shelfmark)"
+    }
+   ],
+   "prior_art": "open as far as checked (15 Nov 2026): FAA 763, COD 1100, AV 54/7, Alphabet secret, Geheimschluessel searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
+   "access_note": "Staatsarchiv Luzern record layout viewed 15 Nov 2026: no images, closed; description on archives-online.org.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), Austria/Swiss sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Staatsarchiv Luzern online catalogue (dls.staatsarchiv.lu.ch, Chrome, 15 Nov 2026): same record layout as AKT 13/2346 (no images, closed); archives-online.org finding-aid text for FAA 763, COD 1100 and the Valais copy AEV AV 54/7. The Valais catalogue (scopequery.vs.ch) also shows no images for the fonds de Courten records opened the same day.",
+     "extent": "FAA 763 is one Abschied; the key COD 1100 is 1-9 folios (1708).",
+     "cipher": "Archive's titles: FAA 763 'Abschied einer Geheimkonferenz ... zu Solothurn (teilweise chiffriert) 1711-1712'; COD 1100 'Geheimschluessel zwecks Aufloesung von chiffrierten Dokumenten militaerischen Charakters ... geltend fuer die Staende Luzern, Freiburg und Solothurn. Angefertigt 1708'. No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, views dumps, ledgers, 15 Nov 2026): no DECODE record and no ledger entry for these shelfmarks or places; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana has no Swiss cantonal or St Gallen abbey cipher of this period in the repo's holdings (known.py); not named.",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "The Abschiede of the Catholic cantons for 1711-12 are not known to be printed with the ciphered passages deciphered; not checked for this Abschied.",
+     "literature": "Web search 15 Nov 2026 (Swiss 17th-century cantonal cipher, Chiffrierschluessel, Usteri, Kryptographie): nothing on Swiss cantonal or Stiftsarchiv ciphers; Usteri's 'Ueber Chiffrierung in frueherer Zeit' (1960, already in the ledgers for the Zurich keys) is not about these files and was not seen."
+    },
+    "searches": [
+     {
+      "query": "known.py Luzern / Valais / Solothurn",
+      "result": "this lead only"
+     },
+     {
+      "query": "web: Swiss 17th-century cantonal cipher Chiffrierschluessel Usteri Kryptographie",
+      "result": "nothing on this series"
+     }
+    ],
+    "key_check": "Key recorded, not tested: COD 1100 (1708) and AEV AV 54/7; no ciphertext seen. No key is held here or on DECODE for the Luzern series.",
+    "key_in_volume": "The 1708 Geheimschluessel (Luzern COD 1100, 9 fol.) and its copy 'Alphabet secret (code)' (Valais AEV AV 54/7, with the four allies' arms) are named in the finding aids; not seen, so not tested. Whether the 1708 code was in use in 1711-12 is open.",
+    "duplicates": "known.py 'Valais', 'Solothurn', 'Lucerne' (15 Nov 2026): this lead only.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2758,
+   "counted": true,
+   "source": "archives-online.org federated search (Chrome), Austria/Swiss sweep, 15 Nov 2026",
+   "score_note": "Scored from the finding-aid text during the 15 Nov 2026 Austria/Swiss sweep (research/sweep_2026-11-15_austria_swiss/); not viewed",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "region": "Central Europe",
+   "year": 1802,
+   "date": "1801-1803",
+   "language": "German / French",
+   "period": "1801-1900",
+   "title": "Abbot Pankraz Vorster of St Gallen and Hofrat Peter Mueller (Paris): letters 'in Geheimschrift', 1801-03 (3 units)",
+   "correspondents": "Fuerstabt Pankraz Vorster <-> Hofrat Peter Mueller (agent of the abbey in Paris)",
+   "place": "St Gallen / Paris",
+   "shelfmark": "Stiftsarchiv St. Gallen, Nachlass Pankraz Vorster, Nr. 203-002 (19 Sep 1801), 358-002 (26 Dec 1801), 868-001 (9 Mar 1803)",
+   "folio_note": "Nachlass Pankraz Vorster: 203-002 (19 Sep 1801), 358-002 (26 Dec 1801) and 868-001 (9 Mar 1803) in Geheimschrift; 203-003 'Schablone fuer die Geheimschrift in einigen Briefen von Hofrat Peter Mueller' is the stencil key; Nr. 70 'Directorium S. Gallense' 1798 also hit 'Entzifferung'.",
+   "cls": "B",
+   "status": "Not online (catalogue records seen; no images). A stencil key, Nr. 203-003, sits beside letter 203-002. Needs scans from the Stiftsarchiv.",
+   "why": "The St Gallen abbot's correspondence with his Paris agent after the abbey's 1798 dissolution, letters in both directions, so a two-way key can be tested; the Vorster Nachlass is digitised at the Stiftsarchiv in part.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Check whether the Stiftsarchiv images exist for Nr. 203, 358 and 868; look for plaintext copies in the same Nachlass (Mueller's letters may exist in clear in the Directorium files); search the Vorster key in the Nachlass.",
+   "links": [
+    {
+     "href": "https://www.archives-online.org/Search",
+     "label": "archives-online.org (search the shelfmark)"
+    }
+   ],
+   "prior_art": "open as far as checked (15 Nov 2026): Vorster, Peter Mueller, Geheimschrift St. Gallen searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
+   "access_note": "Stiftsarchiv St. Gallen catalogue records seen 15 Nov 2026: no images or digital-copy link on 203-002 or 203-003.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), Austria/Swiss sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Stiftsarchiv St. Gallen online catalogue (scope.stiftsarchiv.sg.ch, detail records ID 90589 and ID 90590, Chrome, 15 Nov 2026): the records show no images or digital-copy link; Nr. 203 is 'Hofrat Peter Mueller an Fuerstabt Pankraz Vorster, 19 Sep 1801' with 203-001 (a letter), 203-002 (in Geheimschrift) and 203-003.",
+     "extent": "three letters: 203-002 (19 Sep 1801), 358-002 (26 Dec 1801), 868-001 (9 Mar 1803, Vorster to Mueller); length unknown.",
+     "cipher": "Archive's titles: '(in Geheimschrift)' for 203-002 and 868-001, 'Brief in Geheimschrift' for 358-002; nothing says a decipherment is filed with them."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, views dumps, ledgers, 15 Nov 2026): no DECODE record and no ledger entry for these shelfmarks or places; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana has no Swiss cantonal or St Gallen abbey cipher of this period in the repo's holdings (known.py); not named.",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "No edition found: the 1801-03 Paris correspondence of the exiled abbot is not named in what web search 15 Nov 2026 returned (Vorster, Mueller, Geheimschrift).",
+     "literature": "Web search 15 Nov 2026 (Pankraz Vorster, Peter Mueller, Geheimschrift, Stiftsarchiv): nothing on a decipherment or on the cipher."
+    },
+    "searches": [
+     {
+      "query": "known.py Vorster / Stiftsarchiv / St. Gallen",
+      "result": "this lead only"
+     },
+     {
+      "query": "web: Pankraz Vorster Peter Mueller Paris Geheimschrift Stiftsarchiv St. Gallen Chiffre",
+      "result": "nothing"
+     }
+    ],
+    "key_check": "Stencil key Nr. 203-003 recorded, not tested; no ciphertext seen. No Vorster/Mueller key is held here or on DECODE.",
+    "key_in_volume": "Nr. 203-003 in the same Nachlass is 'Schablone fuer die Geheimschrift in einigen Briefen von Hofrat Peter Mueller an Fuerstabt Pankraz Vorster', i.e. a stencil key for Mueller's secret script (undated); not seen, so not tested. No key for Vorster's own outgoing letter (868-001) is named.",
+    "duplicates": "known.py 'Vorster', 'Stiftsarchiv', 'St. Gallen' (15 Nov 2026): this lead and its sweep row only.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
   }
  ]
 }
