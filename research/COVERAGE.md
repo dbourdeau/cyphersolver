@@ -311,3 +311,9 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **Badator terms run:** cifrado, cifrada, cifradas, cifras, clave, descifrado, descifrar, abecedario. Chrome allows one download per tab: a fresh tab per export. San Sebastian Marqueses de San Millan y Villalegre series (Philip II and Zayas to Frances de Alava, 1560-69) found and closed read (printed 1991 edition). Not run: criptograma, zifra, cifrar, cartilla de cifra, numeros (low yield expected).
 - **Galiciana ARPAD:** behind a JavaScript bot-challenge page (the search returns a challenge shell, not results); not solved.
 - **Still unswept:** Valencia (ARV), Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers; the CSP harvest for 1522-24 is thin (vol. 2 pages carry few Salazar references), so a pass over Bergenroth's 1522-24 entries against 2870-2873 and 2876 would tighten them.
+
+## Chrome wave 12 (15 Nov 2026, `sweep_2026-11-15_chrome_wave12`)
+- **CSP Spain re-matched by sender and date** (vol. 2 1522-24, vol. 3 1525-29): the folio match of wave 11 missed printed letters. 2873 and 2869 closed `read` (moved back to leads), 2867 narrowed to 9 letters, 2868 to 29; 2870-2872 and 2876 unchanged. Vols 4 (1529-30) not re-matched: 2868 and others reach 1529 only through vol. 3.
+- **Probed, no yield:** Archivi Nazionali portal (search parameter ignored, script-drawn; already swept), AGATHA Belgium (inventory-level hits only, reCAPTCHA; `belgium_lux` has the EAD grep), Lombardia Beni Culturali (fonds-level), Archives Quickaccess (staff login).
+- **Blocked:** Valencia SAVEX (`savex.gva.es`) loads an error page in Chrome.
+- **Still unswept:** Canarias, Madrid regional, Veneto, Sardinia, Sicily regional portals, Dutch regional leftovers; Valencia needs another route.
