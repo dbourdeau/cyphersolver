@@ -269,3 +269,9 @@ Folders `sweep_2026-11-15_uk_blocked_chrome`, `_continental_blocked_chrome`, `_o
 Folder `sweep_2026-11-15_script_wave5`; 0 leads. Omont Saint-Germain I/II are readable from archive.org (`cataloguegnrald00manugoog`, `cataloguegnrald01manugoog`):
 only key sheets, "avec dechiffrement" entries and Bellievre fr. 15566-15572 Matignon/Chasteauneuf cipher letters (unconfirmed folios). Still open: Gallica arks for fr. 15566-15568 (SRU needs Chrome),
 NAF I (no OCR). Gallica manifests answer curl at 3 s; ark check character is NOID (see README there).
+
+## Omont wave 6, 15 Nov 2026 (Gallica SRU in Chrome, Bellievre recueil)
+
+Folder `sweep_2026-11-15_gallica_omont_wave6`; leads 2838-2842 merged and promoted (fr. 15567 f. 24 and ff. 158-164, fr. 15568 ff. 151-152 and 207-208, fr. 15571 f. 37; tables by Tomokiyo, texts unread).
+fr. 15566 f. 50 is solved by Lasry (GL.htm), fr. 15572 ff. 277-278 are deciphered in ff. 279-280 (matignon1586c3 notes): neither is a lead. Route: Gallica SRU
+`gallica all "Français N" and dc.type all "manuscrit"` from a gallica.bnf.fr tab, then openapi.bnf.fr IIIF by curl. Still open: fr. 15567 f. 54 and f. 71, 113, 162, 194 and fr. 15568 f. 68v (named by Tomokiyo, not viewed), fr. 15569-15570 (arks unknown).
