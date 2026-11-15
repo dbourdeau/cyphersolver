@@ -270,3 +270,23 @@ E = t breaks "beneficio" (long-barred o read f on the crop), c = d contradicts t
 model's taste for common letters. Adopted only P = i (fits "regoai[i]", "per[i]", "racosi[i]"): `key_h5.json`.
 Conclusion: more text sharpens the solver signal but does not move the reading past about 0.47-0.48; the key is stable. The rest needs
 cleaner signs (ASMi images) or a contemporary key; family C is left read in part.
+
+## 15 Nov 2026: family B (id 2629), R5562 deciphered on the first pass, key from the ciphertext alone
+`famB/r5562_hand.txt`: R5562 (cart. 1598 no. 88, stamped 134), 14 lines, 686 signs, all cipher (no clear text), read from a 2/3-scale
+render and line crops; about 35 sign types (letters, digits, crossed tt/ff/pp/n/m ligatures, o with a cross, q with a cross).
+CTTS (period Italian, n-gram 5, 4 homophones, 240 s), two seeds agree: 24.09 M against 10.73 M shuffled (ratio 2.24). Dictionary
+cover of the decryption: 0.99 with words of 2+ letters (shuffled 0.93), 0.65 with 4+ letters (shuffled 0.26). The text reads as
+continuous Italian (`famB/oa.txt`), word division added here, spelling as decrypted:
+"Firensa de presimo et t'avisai Nicodemo de tutto quello che intesi per tenire al signore. Trovai Iovan Galeasmo in quela cita,
+venuto a cercare partiti cum Fiorentini facendo soldati, o cum lo signore; le dimande sue sono grande, e cum lui era uno [famiglio?]
+di l'arcivescovo mandato per sentire di qua ... desiderio et espectatione di cose nove. Ma se pur al signor parese di prendere
+alcun partito cum meser Ludovico, ma advertite che sua signoria el facio obligare per Tomasino, el quale intende temperare le cose de
+Corsica in li primi movimenti de importantia ... A Firensa trovai le cose molto in [?]; non ne scrivo altro ... Nicodemo como ... el
+quale ancho avisai de uno ambasiatore venitiano ... Iovan Galeasmo dove va venir a far pratiche a Firanse e poi andare a Roma.
+... die quinto decembris etcetera."
+Key (solver, `oa.txt`): a = 8 X p; c = D; d = 4; e = P m x; f = N; g = Q; i = F v; l = c; m = R; n = O; o = 7 k; p = H; r = 3; s = T;
+t = 9; u/v = 5 a; b = +; h = S; q = y; s = d g. Simple homophonic substitution, no code words seen.
+Context: Nicodemo (Tranchedini, Sforza agent in Florence?), Giovanni Galeazzo, messer Ludovico (il Moro?), Tomasino (Campofregoso?)
+and Corsica point to the 1470s-80s; not checked against dated sources. Status: R5562 read as sentences on a first-pass
+transcription; a few words open. Next: re-check the doubtful spots on the image, measure the read share, and decrypt the other six
+family B slips (R5572, R5573, R5575-R5577, R5586) with this key.

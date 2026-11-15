@@ -182,6 +182,36 @@
     "notes": "Page 2 not transcribed."
    },
    "read": "read in part"
+  },
+  {
+   "id": "R5562",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 88 (DECODE R5562)",
+   "date": "5 December, year unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Decrypted here."
+   },
+   "length": {
+    "tokens": 686,
+    "distinct": 35,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famB/t62.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from a 2/3-scale render and line crops",
+    "image_quality": "good",
+    "notes": "First pass."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -419,6 +449,25 @@
    ],
    "what": "Joint CTTS on all eight family C letters (9,509 signs): 17.13 M vs 7.18 M shuffled (2.39), seeds agree; solver key 0.476 vs hand key 0.460 word share; only P = i adopted after context checks.",
    "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "what": "Family B: R5562 transcribed by hand (686 signs, all cipher).",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "CTTS on R5562: 24.09 M vs 10.73 M shuffled (2.24), seeds agree; decryption reads as continuous Italian (Nicodemo, Iovan Galeasmo, meser Ludovico, Tomasino, Corsica, die quinto decembris).",
+   "result": "worked"
+  },
+  {
+   "kind": "control",
+   "what": "Dictionary cover of the R5562 decryption with 4+ letter words 0.65 vs 0.26 for shuffled tokens.",
+   "result": "worked"
   }
  ],
  "outcome": {
