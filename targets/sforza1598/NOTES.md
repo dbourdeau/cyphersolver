@@ -240,3 +240,11 @@ potese desviare", "Baglione ... oltra lo pensero", "per la parentela ... esser p
 Cristoforo (his cancelliere), conte Carlo, Baglione, the duke of Modena, la Marca, Urbino, Castiglione, la Mirandola, Lodovico.
 Family C: six letters, 8,710 cipher signs, one key from the ciphertext alone, out of sample on four (0.42, 0.47, 0.46, 0.47).
 Remaining: R5506 page 2, R5504, R5505 (two pages each), R5515 (faint).
+
+## 15 Nov 2026 (later): R5504 sample transcribed; out of sample again
+`famC/hand/r5504_hand.txt`: R5504 (cart. 1598 no. 30) page 1, lines 1-16 only, 393 cipher signs (rest of the page and page 2 not
+transcribed). Decrypted with `key_h4.json`, no re-solve (`dec04.txt`): **word share 0.417 against 0.102 shuffled**. Phrases: "per
+vostro cavallaro", "lo fatto de tutta ... stato bene informato", "per maggior", "litera ... secretamente", "ogni altra cosa ... in modo
+... strattamente", "piaseria", "pare ... bono", "dubio", "conoscere questa vostra litera", "oltra questo ... intendeva".
+Family C: seven letters (9,103 cipher signs), one key from the ciphertext alone, read out of sample on five (0.42, 0.47, 0.46, 0.47,
+0.42; shuffled 0.10-0.16). Remaining: the rest of R5504, R5505, R5506 page 2, R5515 (faint).
