@@ -33,7 +33,7 @@ Character precision of the mechanical decode against the window of the clear cop
 clear characters 2165-2973). Controls, 200 each, seed 744: values permuted inside letter / syllable / code / null
 classes, max **0.477** (the threshold plan); values permuted over the whole key, max 0.449. Signs outside the key
 4.1%. Thresholds written before: ≥ 0.85, ≥ best within-class control + 0.30, ≤ 20% outside the key: passed.
-Image 06 is spent; image 04 of 1379,14-18 is untouched.
+Image 06 is spent. Image 04, untouched at the time, was measured on 15 Nov under a frozen amendment (K4 0.887): see `img04/README.md`; both images are now spent.
 
 ## Declared deviation (in the PREREG itself)
 
