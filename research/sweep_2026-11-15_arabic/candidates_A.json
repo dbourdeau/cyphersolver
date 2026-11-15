@@ -1,0 +1,118 @@
+[
+ {
+  "year": 1200,
+  "date": "undated Geniza letter (PGP gives no date; classical Geniza period, 11th-13th c., is plausible for a Qus-Fustat family letter but is not assessed)",
+  "title": "Son in Qus to his mother: Judaeo-Arabic letter with six lines in a secret language (nearly every word begins with alef)",
+  "correspondents": "a son in Qus -> his mother, presumably in Fustat",
+  "place": "Qus (Upper Egypt)",
+  "language": "Judaeo-Arabic (Hebrew script)",
+  "period": "unknown",
+  "shelfmark": "Jewish Theological Seminary Library, ENA 4100.7b (PGPID 11951)",
+  "folio_note": "recto, about 17 lines in Hebrew script; lines 7-12 (six lines, about 30 words) are the secret passage, written in ordinary Hebrew letters; verso is a second letter in Arabic script mixed with Hebrew script",
+  "cls": "C",
+  "status": "PGP: \"Written in Judaeo-Arabic and a cipher (lines 7-12; noticed by OZ; probably this is also in Judaeo-Arabic) ... Needs examination/decipherment\"; tags cipher, to examine. PGP shows no transcription. This is the letter Elbaum's 2022 Genizah blog describes (found by Oded Zinger; almost all words begin with alef, so not a plain substitution). Not on DECODE.",
+  "why": "The only Geniza family letter known with an unread secret-language passage; the clear lines around it give the context (regards, a complaint about Abu Mansur).",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "verify": "Transcribe lines 7-12 from the JTS image (5428 x 7230 px); test word-game hypotheses (alef prefixed to each word or syllable, letter shift after a dummy alef); ask O. Zinger / A. Elbaum (Princeton Geniza Project) whether a reading is in hand.",
+  "links": [
+   {
+    "label": "PGP 11951",
+    "href": "https://geniza.princeton.edu/en/documents/11951/"
+   },
+   {
+    "label": "JTS image, recto (IIIF)",
+    "href": "https://iiif-cloud.princeton.edu/iiif/2/9b%2Fdc%2Fd9%2F9bdcd9be1aed4b108412a7faffee4438%2Fintermediate_file/full/full/0/default.jpg"
+   },
+   {
+    "label": "Elbaum, Cambridge Genizah blog 2022",
+    "href": "https://genizahfragments.lib.cam.ac.uk/2022/06/22/qa-wednesday-secret-codes-and-erotic-prose-with-alan-elbaum/"
+   }
+  ],
+  "prior_art": "open (checked 15 Nov 2026: PGP record and scholarship tab, Cambridge Genizah blog 2022, web searches, Tomokiyo, Lasry key list, DECODE)",
+  "needs_archive_scan": "no",
+  "access_note": "JTS image served by Princeton IIIF (iiif-cloud.princeton.edu), plain curl, full size 5428 x 7230 px",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part A",
+   "seen": {
+    "kind": "scan",
+    "where": "https://iiif-cloud.princeton.edu/iiif/2/9b%2Fdc%2Fd9%2F9bdcd9be1aed4b108412a7faffee4438%2Fintermediate_file/full/full/0/default.jpg (recto, 5428 x 7230 px, viewed whole and lines 6-14 as a full-resolution crop); verso image 3b%2Fff%2Feb%2F3bffeb7e... also viewed",
+    "extent": "recto of one paper leaf, about 17 lines; the secret passage is lines 7-12 by the PGP count, six lines of roughly five words each",
+    "cipher": "Ordinary Hebrew square/semi-cursive letters, same hand and pen as the clear Judaeo-Arabic lines above and below, but the words are not Judaeo-Arabic words and most of them begin with alef. No interlinear or marginal gloss on the leaf; the verso (a second letter, Arabic and Hebrew script) carries no key or reading."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: decode_search.py for Geniza, Genizah, Judaeo-Arabic and Arabic each returned 0 records.",
+    "tomokiyo": "Cryptiana unsolved.htm, crypto.htm (index) and GL.htm fetched 15 Nov 2026 and searched for Geniza, Hebrew, Judaeo: no entry.",
+    "lasry": "GL.htm (Lasry's key list on Cryptiana) has no Hebrew-script or Geniza item; no Lasry or HistoCrypt paper on a Geniza letter found by web search.",
+    "edition": "No printed edition. PGP scholarship tab lists only \"Alan Elbaum's edition (2020)\", a PGP-internal record; the PGP page shows no transcription and its description ends \"Needs examination/decipherment\".",
+    "literature": "Elbaum, Cambridge Genizah Research Unit blog, 22 Jun 2022: Zinger's letter has \"a portion in an incomprehensible cipher. Almost all the words begin with alef\". Bohak 2010 (CSIC) treats a different cipher; T-S NS 70.1 (cracked by Bohak 2025, unpublished) was viewed and is a different system (dotted Hebrew-letter substitution)."
+   },
+   "key_check": "No key is known for this system. The Geniza keys on record (CUL Or.1080 J277: Coptic-numeral, atbash and pangram keys; T-S K2.4 atbash) are letter substitutions and do not produce alef-initial words; not tested by hand in this sweep, which does not solve.",
+   "duplicates": "known.py \"ENA 4100\" and \"Qus\": only the unmerged rows and notes of research/sweep_2026-11_hebrew and sweep_2026-11_arabic (this row carries that candidate forward); not in catalogue.json or research/leads.json. DECODE: 0 records.",
+   "searches": [
+    {
+     "query": "WebSearch: \"ENA 4100.7\" Geniza cipher letter Qus mother Zinger",
+     "result": "only the PGP record (EN/AR/HE); no decipherment and no publication found"
+    },
+    {
+     "query": "WebSearch: Zinger Geniza letter cipher \"begins with alef\" Judaeo-Arabic secret language deciphered",
+     "result": "Elbaum's 2022 blog only: letter called incomprehensible; no later reading"
+    },
+    {
+     "query": "PGP site search: cipher (39 hits), tag:\"cipher\" (13), \"cipher to examine\", cryptic (97), code (111), undeciphered (51)",
+     "result": "ENA 4100.7b is the only letter tagged cipher + to examine; no second fragment in the same alef system and no key"
+    },
+    {
+     "query": "PGP document page 11951 and its /scholarship/ tab, read 15 Nov 2026",
+     "result": "no transcription or translation shown; description says needs decipherment"
+    }
+   ],
+   "verdict": "open"
+  },
+  "region": "Other",
+  "source": "Arabic sweep 15 Nov 2026 (part A)",
+  "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+  "seen": "image"
+ },
+ {
+  "year": 1139,
+  "date": "after 1 Nisan 1139 (inferred, PGP / India Book IV)",
+  "title": "Yishaq b. Avraham Ibn Ezra to Halfon b. Netanel ha-Levi: Judaeo-Arabic letter with three words in a Coptic-numeral code",
+  "correspondents": "Yishaq b. Avraham Ibn Ezra (Spain) -> Halfon b. Netanel ha-Levi",
+  "place": "Spain (al-Andalus)",
+  "language": "Judaeo-Arabic (Hebrew script), code in Greek/Coptic numerals",
+  "period": "unknown",
+  "shelfmark": "Cambridge University Library, T-S 13J18.19 (India Book IV, 41 = H55; PGPID 9097)",
+  "folio_note": "recto line 11 (five numeral signs after 'wa-l-'), recto line 12 (three signs at the line start), verso line 5 (about 11 signs, readings doubtful); paper 16.9 x 25.1 cm",
+  "cls": "B",
+  "status": "Edited: Gil and Fleischer, Yehuda ha-Levi and his Circle (2001) pp. 282-285, who proposed readings for the first two code words by two different methods and none for the third; Goitein, Friedman and Ashur, India Book IV B (2013) no. 41 print the signs and judge the matter unresolved (PGP: \"substitution mechanism that has not yet been determined\"). Partial, disputed proposals in print: no vetting block. Not on DECODE.",
+  "why": "A dated 1139 Andalusi merchant-scholar letter (Halfon / Judah ha-Levi circle) hiding names or goods in a numeral code; the oldest dated unread Judaeo-Arabic code found.",
+  "importance": 3,
+  "solvability": 1,
+  "difficulty": 4,
+  "verify": "Read Gil-Fleischer pp. 282-285 and India Book IV B no. 41 note 1 for the proposed solutions; test the Coptic-numeral letter keys of CUL Or.1080 J277 verso, Bodl. MS heb. f 102/28 and JRL L 259 on the three groups; too short for anything but a key test.",
+  "links": [
+   {
+    "label": "PGP 9097",
+    "href": "https://geniza.princeton.edu/en/documents/9097/"
+   },
+   {
+    "label": "CUDL image, recto (IIIF)",
+    "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-00013-J-00018-00019-000-00001.jp2/full/full/0/default.jpg"
+   },
+   {
+    "label": "Key specimen: PGP 34004 (CUL Or.1080 J277)",
+    "href": "https://geniza.princeton.edu/en/documents/34004/"
+   }
+  ],
+  "prior_art": "partial proposals in print, disputed (Gil-Fleischer 2001 pp. 282-285; India Book IV B no. 41 leaves it open); checked 15 Nov 2026 on PGP only, the two books not opened",
+  "needs_archive_scan": "no",
+  "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 5685 x 8199 px by regions",
+  "region": "Other",
+  "source": "Arabic sweep 15 Nov 2026 (part A)",
+  "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+  "seen": "image"
+ }
+]
