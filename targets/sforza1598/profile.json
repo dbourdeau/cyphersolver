@@ -62,6 +62,36 @@
     "notes": "O kept apart from o; theta probably two signs."
    },
    "read": "read in part"
+  },
+  {
+   "id": "R5517",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 43 (DECODE R5517)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": 1698,
+    "distinct": 40,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famC/hand/t17.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from 3x crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "Same sign set as R5514."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -188,6 +218,25 @@
    "kind": "reading",
    "what": "R5514 reads in stretches: \"la qual cosa grandemente ... per adoperar ben del vostro stato\", \"a roma\", \"a cremona\", \"per persone inteligenti\", \"risposta ... scrito\", \"secreto\".",
    "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5517 transcribed by hand from 3x crops: 1,698 cipher signs.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "Out-of-sample: R5517 decrypted with the key solved on R5518 + R5514 only: word share 0.40 vs 0.23 shuffled; reads \"la impresa de urbino\", \"lo mio cancelliero\", \"conte Iacomo\", \"risposta\".",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Joint CTTS on R5518 + R5514 + R5517 (4,114 signs): 16.70 M vs 8.04 M shuffled (2.08); word share 0.42 / 0.48 / 0.42.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -199,7 +248,8 @@
   "class": "not read",
   "fraction_read": 0,
   "verification": [
-   "none"
+   "matched control",
+   "key confirms"
   ],
   "notes": "Pool of separate ciphers; needs splitting by family as was done for cart. 1597."
  }

@@ -103,3 +103,16 @@ signs (barred o and theta) that the transcription merges; same for o / O in R551
 Status: family C read in part (R5514 and R5518), key recovered from the ciphertext alone; not yet at the read bar.
 Next: (1) split theta and o/O on the images of both letters; (2) hand-fix the key from the word stretches; (3) transcribe R5517 and
 R5515 and decrypt them with the fixed key as an out-of-sample check; (4) then R5502-R5506 (two-page letters).
+
+## 14 Nov 2026 (later still): R5517 transcribed; the key reads it out of sample
+`famC/hand/r5517_hand.txt`: R5517 (cart. 1598 no. 43), 33 lines, 1,698 cipher signs, clear passages left out ("Spero pure che sera
+tanta la benignita et clementia de la V.ra Ill.ma Sig.ria", "questo sia cusi ma non se retrovera mai ...").
+**Out-of-sample test**: R5517 decrypted with the key solved on R5518 + R5514 only (`ja.txt`, r = b), no re-solve: dictionary-word share
+0.40 (shuffled control 0.23), and it reads: "la impresa de urbino" (twice), "lo mio cancelliero" (three times), "conte Iacomo",
+"risposta", "delibero", "regimenti", "pratica", "provisionata", "Francesco", "la vostra signoria". The key generalises to a letter it
+was not fitted on, so it is a real key, not an artefact of the solver.
+Joint solve of all three (`t3.txt`, 4,114 signs, 480 s, two seeds agree): 16.70 M vs 8.04 M shuffled (2.08). Word share R5518 0.42,
+R5514 0.48, R5517 0.42 (`dec3.txt`); the joint key changes a few rare signs (w, q, c, u) without raising the share.
+Context from the text: Conte Iacomo (Jacopo Piccinino?) and an "impresa de Urbino", with the writer's cancelliere going back and forth:
+the 1460s Sforza-Piccinino-Montefeltro politics are a candidate setting; not checked against dated letters.
+Remaining: theta and o/O splits, + / t, the rare signs; R5515 and R5502-R5506 not transcribed; no clear-text decipherment checked.
