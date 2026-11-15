@@ -380,3 +380,7 @@ holes), an erased word in l. 13, and the date line "dd o+ T o+ bb 6" in signs ou
 reads in sentences where the paper is whole (`famB/read86.txt`).
 Family B gaps now: physical damage in R5586 (outside blocker for those few words), the numeral-like signs (6, 10, dd, bb, o+), and
 the reader review. Measured 0.887 with a strict segmenter that counts chancery spellings as unread.
+
+## 15 Nov 2026 (later): reader review draft for family B
+`famB/READER_REVIEW.md`: all seven letters with word division, punctuation, open words marked ([?], [...], { }), and a close English
+translation, for a second reader (the reading gate asks for a reader review and English). Not yet reviewed by anyone.
