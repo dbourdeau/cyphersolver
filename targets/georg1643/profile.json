@@ -1,0 +1,251 @@
+{
+ "schema_version": 1,
+ "target": "georg1643",
+ "title": "Hesse-Darmstadt cipher letters of November 1643 in HStA Darmstadt D 4 Nr. 113/9 (catalogue 568: Landgrave Georg II's encrypted correspondence)",
+ "documents": [
+  {
+   "id": "HStAD-D4-113-9-f17",
+   "read": "read",
+   "shelfmark": "Hessisches Staatsarchiv Darmstadt, D 4 Nr. 113/9, fol. 17r (image 015)",
+   "date": "18 Nov 1643",
+   "year": 1643,
+   "country": "Holy Roman Empire",
+   "route": "President, Vice-Chancellor and councillors at Giessen -> Landgrave Georg II of Hesse-Darmstadt",
+   "places": {
+    "from": "Giessen",
+    "to": "Darmstadt"
+   },
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "margin"
+    ],
+    "source": "Two '#' notes of the writer in the left margin paraphrase the two cipher blocks (not letter for letter).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 231,
+    "distinct": 36,
+    "unit": "code groups",
+    "measured": true,
+    "file": "c_f17.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "digitalisate-he.arcinsys.de image hstad_d_4_nr_113--9_015.jpg (3500 px), zoomed line crops",
+    "image_quality": "good",
+    "notes": "One pass by one AI agent. The measured count includes the ':' and '.' marks; 216 number groups."
+   }
+  },
+  {
+   "id": "HStAD-D4-113-9-f2",
+   "read": "not read",
+   "shelfmark": "Hessisches Staatsarchiv Darmstadt, D 4 Nr. 113/9, fol. 2r (image 02)",
+   "date": "8 Nov 1643",
+   "year": 1643,
+   "country": "Holy Roman Empire",
+   "route": "unknown (letter to a 'Herr Gevatter', signature not read)",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Words of the time written over most cipher words; not transcribed yet.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not made yet",
+    "image_quality": "good",
+    "notes": "Not transcribed."
+   }
+  },
+  {
+   "id": "HStAD-D4-113-9-f5",
+   "read": "not read",
+   "shelfmark": "Hessisches Staatsarchiv Darmstadt, D 4 Nr. 113/9, fol. 5r (image 03)",
+   "date": "9 Nov 1643",
+   "year": 1643,
+   "country": "Holy Roman Empire",
+   "route": "unknown (postscript)",
+   "language": "German",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Words of the time over the cipher words ('die convoy von', 'Landgraff Johann', 'Herrn Vicecantzler', 'zwanzig' ...); not transcribed in full.",
+    "partial": true
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "not made yet",
+    "image_quality": "good",
+    "notes": "Glosses read in part only."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Fol. 17: letters replaced by two-digit numbers (10-39) and a few single digits, homophones for t (8+, 32) and m (22, 24), one code sign (probably Landgraf Johann). Fols. 2 and 5: a different system of letters, digits and signs, not yet identified.",
+  "symbol_kind": "digits and symbols",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "distinct_symbols": 24,
+  "key_order": "unknown",
+  "diacritics": {
+   "used": false
+  }
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment known: catalogue check of 26 Oct 2026 and web search of 14 Nov 2026; the writer's margin notes on fol. 17 paraphrase the blocks.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "crib",
+  "human_role": "Arya Sanketbhai Patel ran the session. An AI agent found the image route, transcribed, rebuilt the key and read fol. 17. No palaeographer checked the transcription.",
+  "models": [
+   "AI coding agent (model not named by the contributor)"
+  ],
+  "first_date": "2026-11-14",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Repository, PRs, issues and web searched: no decipherment of these letters; hatzfeldt1641 is another target.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "technique": [
+    "other"
+   ],
+   "what": "Archivportal-D behind an Anubis bot check (not bypassed); DDB API EDM record lists the scans on digitalisate-he.arcinsys.de; D 4 113/9 (18 images), 141/2, 239/1 reached; the other 16 files not digitised.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Fol. 17, two cipher blocks, 216 number groups (c_f17.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "plaintext matching"
+   ],
+   "what": "Margin summary '... und erheblichen ...' against line 17.1.4 '34 23 17 12 28 16 12 11 13 14 5 16 12 23': one-for-one substitution; key rebuilt from the letter (key_f17.json), every group decodes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Fol. 17 read: 39 words read, 2 holes (code sign), read share 0.951; translation (reading_f17.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Filed key D 4 141/2 (1652-58 symbol alphabets) compared with fol. 17: a different system.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "hypothesis",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Fols. 2/5 symbol cipher against the interlinear words: 'die convoy von' fits one letter table, 'Landgraff Johann' does not as read; left open. Lead: Landgrave Johann's 'Chiffrentabelle' (web search).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The fol. 17 key was rebuilt from the letter with the writer's own margin summaries on the same page as cribs.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "notes": "Status in progress. Fol. 17 (18 Nov 1643) read, 0.951. Fols. 2 and 5 (symbol cipher with words of the time over it) open and workable; the other 16 files of catalogue 568 are not digitised.",
+  "credits": [
+   {
+    "who": "arya",
+    "role": "solution",
+    "date": "2026-11-14",
+    "note": "Image route found (DDB API -> digitalisate-he.arcinsys.de); D 4 113/9 fol. 17 transcribed, key rebuilt from the margin notes, read; targets/georg1643/"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "HStAD-D4-113-9-f17",
+    "label": "D 4 113/9 fol. 17, Giessen councillors to Georg II, 18 Nov 1643: two-digit cipher, key rebuilt from the margin notes",
+    "transcription": "c_f17.txt",
+    "decryption": "decode_f17.txt",
+    "reading": "reading_f17.md",
+    "translation": "reading_f17.md",
+    "state": "read",
+    "read_share": 0.951,
+    "language": "de",
+    "summary": "The councillors at Giessen report that the Landgrave's brother is to hurry back to Darmstadt to confer with Georg II in person on weighty points, and that he will arrive there on Monday evening.",
+    "note": "39 words read, the code sign (probably Landgraf Johann) open."
+   }
+  ],
+  "key_file": "key_f17.json"
+ }
+}
