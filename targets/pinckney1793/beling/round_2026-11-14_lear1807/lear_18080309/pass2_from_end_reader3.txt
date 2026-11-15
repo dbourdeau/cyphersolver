@@ -1,0 +1,57 @@
+# Second, blind transcription of the numerical code passage
+# Source: NARA M23 roll 10 frame 0014 (sources/raw/barbary_code16/M23-010-0014.tif),
+#   Tobias Lear to James Madison, Algiers, 9 March 1808, "Duplicate", left page
+# Method: thumbnail to locate; line strips at full resolution (autocontrast);
+#   doubtful spots enlarged 2-4x, also with background subtraction (s4.py).
+#   Read from the last line backwards, last group first; written out in normal order.
+#   No other transcription consulted; no key applied.
+# Date: 14 Nov 2026
+# Conventions: ? = doubtful digit/group, _ = lost digit, a/b = alternatives,
+#   [ins ...] = interlined insertion, ( ) = Lear's parentheses, -- = Lear's dash
+#
+# Clear text before: "...in making payments to the Regency.--"
+# Clear text after:  "I pray you to accept the assurances of the high respect, and sincere attachment, with which ..."
+
+L1 663 1203 867 1518? 581 1543 1513 1376 800
+L2 (515 77 1155 1565 157 663 648 840 1466 900/906 855? 673? 214
+L3 1343 596 1465 582 1127 663 1492 1371/1377 63? 1026 1465 649?
+L4 800 1490 663 214 788) 1408? 1240 675 1203? 867 581? 108? 612
+L5 1056 740 856 1097 774 1520 1373 709 1_00 1472 126 856?
+L6 753 986 967 1517 668 867 423 1124 673 1513 1415 [ins 1465] 1941?
+L7 1306 1490 474 604 677 -- 270 214 579 800 923 1058 663
+L8 53 1406? 967 1517 314 1515 1490 832 581 108 1517 1259 385?
+L9 7 663 649 1206 1063 373 121 675 616 663 236 1362
+L10 1076 1230 557 1515 --
+
+# Marks:
+# - L2 opens with "(" ; L4 closes it after 788 ")". Parenthesised span = 515 ... 788.
+# - L6: caret (small "^"/"3"-like mark) on the line between 1415 and 1941; "1465." is
+#   written small above it (between L5 and L6). Insertion read as 1415 1465 1941.
+# - L7: long dash between 677 and 270. L10 ends with a dash.
+# - Faint word ("the"?) after L5 856 and below L6 end: looks like bleed-through/margin
+#   writing, not a group. Vertical margin note at right ("Schedule ... Tobias Lear ...") ignored.
+# - Fold/crease line runs vertically through L9 649 and L10 557 (digits still readable).
+
+# Doubtful groups:
+# L1  1518  : 1518 / 1516 (last digit)
+# L2  900   : 900 / 906 (blot above last digit)
+# L2  855   : 855 / 835 / 833 (two faint digits after 8)
+# L2  673   : 673 / 073 (top of first digit faint)
+# L2  214   : 214, last digit (open 4) partly faint
+# L3  1371  : 1371 / 1377 (last stroke has no clear top bar)
+# L3  63    : 63 / 53
+# L3  649   : 649, middle 4 faint
+# L4  1408  : 1408 / 1406
+# L4  1203  : 1203 / 1208, third digit faint
+# L4  581   : 581, 5 faint
+# L4  108   : 108 / 708, first digit faint
+# L5  1_00  : 1400 / 1300 / 1500 (second digit in stain; slight lean to 1400)
+# L5  856   : 856, last two digits faint in stain
+# L6  1941  : 1941 / 1441 / 1911 (second digit looks like 9; third is an open 4)
+# L8  1406  : 1406 / 1408
+# L8  385   : 385, last digit overlaps margin writing
+# (L6 interlined 1465 is clear)
+
+# Count: 113 groups including the interlined 1465 (112 on the lines + 1 insertion).
+# Per line: L1 9, L2 13, L3 12, L4 13, L5 12, L6 13 (incl. insertion), L7 12, L8 13, L9 12, L10 4.
+# Doubtful groups: 17.

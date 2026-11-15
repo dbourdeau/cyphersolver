@@ -220,3 +220,10 @@ decodes (section 6) were made before these corrections and were not regenerated.
 - a declared test on frame 0178 (25 Nov 1793) that **failed**: 0.724, against a shuffled best of 0.264. A post hoc check
   against the clerk's full Explication on 0179 gives 0.948.
 
+
+## Addition of 14 Nov 2026: Lear's coded passages of 8 Nov and 31 Dec 1807
+
+`round_2026-11-14_lear1807/` (its README gives the detail) adds Tobias Lear's coded passages to Madison from Algiers, 281
+groups on two copies each (NARA M23 rolls 9 and 10), transcribed by two readers, decoded with key v5 unaltered (222 of 281
+groups), with a local-values file kept out of the key, a character 5-gram control and a preliminary decode of Lear's passage
+of 9 Mar 1808. The readings are `../texts/lear_18071108_reading.txt` and `../texts/lear_18071231_reading.txt`.

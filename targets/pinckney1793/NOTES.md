@@ -7,6 +7,9 @@ Hammuda Bey to Jefferson, 8 Sep 1802, in Eaton's coded copy with Eaton's postscr
 537-group key and its tests were contributed by Andrew Beling (PR #399, merged 11 Nov 2026; [`beling/`](beling/README.md)).
 Split out of `legation1788` on 11 Nov 2026 (see "Split", below): Short's Code No. 10 and Carmichael's Code No. 13 are
 different codes, with their own page, `targets/legation1788/`.
+Since 14 Nov 2026 the folder also holds Tobias Lear's coded passages to Madison of 8 Nov and 31 Dec 1807, read in part with
+key v5, unaltered (this target's Code No. 16 key as revised by Andrew Beling in the round of 11 Nov 2026, already in the
+repository: `beling/round_2026-11-11/code16_key_v5.tsv`) ("Lear's passages of 8 November and 31 December 1807", below; [`beling/round_2026-11-14_lear1807/`](beling/round_2026-11-14_lear1807/README.md)).
 
 ## What it is
 
@@ -24,6 +27,8 @@ the) and lists as not located.
 | Hammuda Bey to Jefferson, 8 Sep 1802, Eaton's coded copy, with Eaton's postscript, enclosed 9 Oct 1802 (`eaton_18021009`) | T303 roll 2 frames 0299-0303 | 468 + 94 | 1802 printed translation (body); Madison Papers editors (postscript) |
 | Eaton to Madison, 22 Oct 1802 (`eaton_18021022`) | T303 roll 2 frame 0320 | 92 | interlinear on the page; repeats the postscript |
 | Lear to Madison, [Jan] 1813 (`lear_181301`) | LoC James Monroe Papers reel 5, images 981-982 | 354 | John Graham's interlinear |
+| Lear to Madison, Algiers, 8 Nov 1807 (`lear_18071108`) | NARA M23 roll 9 frame 0182; roll 10 frame 0072 | 28 | none known; read here with key v5 (14 Nov 2026) |
+| Lear to Madison, Algiers, 31 Dec 1807 (`lear_18071231`) | M23 roll 9 frames 0187-0199; roll 10 frames 0075-0082 | 253 | the postscript only: pencil on its repeat, M23 roll 10 frame 0008; the rest read here with key v5 |
 
 ## Sources and files
 
@@ -298,12 +303,92 @@ The follow-up was verified independently before integration; this records the re
 - Group 447 is absent from 0178, 0196 and 0208 (searched in the three transcription folders).
 - Class and method are unchanged (already solved; read from existing decipherment; key partial).
 
+## Lear's passages of 8 November and 31 December 1807 (Andrew Beling, 14 Nov 2026)
+
+Contributed by Andrew Beling, with AI agents; everything is in
+[`beling/round_2026-11-14_lear1807/`](beling/round_2026-11-14_lear1807/README.md) (transcriptions, decode, local values,
+control, the 9 March 1808 passage). Key v5 is used as it stands and is not changed.
+
+- **Documents.** Tobias Lear, consul general at Algiers, to Madison, 8 Nov 1807 (one passage, P1, 28 groups) and 31 Dec 1807
+  (five passages and a postscript, P2-P7, 253 groups), on NARA M23 (Despatches from US Consuls in Algiers): copy 1 on roll 9
+  (frame 0182; frames 0187-0199, "Triplicate"), copy 2 on roll 10 (frame 0072; frames 0075-0082, "(Copy)"). The Madison Papers'
+  Early Access on Founders Online prints both letters with the groups as numbers (99-01-02-2308, 99-01-02-2490), following copy 2.
+- **Transcription.** Two readers on both copies (one forward on copy 1 and from the end on copy 2; the other blind on copy 1,
+  doubtful groups checked on copy 2). The copies differ only at P4 group 3 (980 kept; copy 1 could be 986) and in a 663 near the
+  end of P6 that only copy 2 has (kept). 281 groups. The small 3-shaped marks under 972 and 606 in P6 are the caret (doubles the
+  last letter), not groups; Founders prints one as a group "3", which in key v5 is "greatbritain" and would mislead if decoded.
+- **Decode** (`ct/lear_18071108.txt`, `ct/lear_18071231.txt`, `texts/*_decryption.txt`, `decode_v5.tsv`): 222 of 281 groups
+  have a key v5 value (0.790). Seven more take local values kept out of the key (`local_values.tsv`): five from the pencil
+  decipherment of the postscript (894 only, 1455 cu, 573 rity, 742 can, 1333 na) and two fixed by recurrence (374 first, three
+  places; 988 tri, two). 48 groups have no value.
+- **Readings** (`texts/lear_18071108_reading.txt`, `texts/lear_18071231_reading.txt`): plain words are key values, word° holds
+  a local value, [?word:n] is a guess for group n, [n] a group with neither. read_share 0.792 and 0.777: read in part. The
+  passages read as continuous English inside Lear's clear sentences.
+- **Control.** The first reader's figure (0.950 against a shuffled maximum of 0.947, share of decoded letters covered by a word
+  list) is withdrawn: it scored how word-like each table value is alone, which shuffling keeps, so it could not fail. The second
+  reader's control: a character 5-gram English model over letters joined across group boundaries gives the real table -0.856
+  per letter; 200 tables with the occurring values reshuffled give a mean of -1.037 and a maximum of -0.950 (real table rank 1 of
+  201, 5.9 standard deviations above the mean; 4.4 against whole-table shuffles); Lear's own clear text scores -0.722.
+  `scripts/control_char5.py` reruns it from the repository with the same figures. Neither control was declared before the
+  numbers had been seen in print.
+- **The postscript checks the table.** Lear repeated it in his letter of [4] Jan 1808 (M23 roll 10 frame 0008), where a pencil
+  interlinear in another hand reads "the only real security we can have in this Sea is a naval force". All 13 key values in it
+  agree with the pencil.
+- **Corrections by the second reader, applied:** the English consul "has done al(l) in his power to [?hur]t us" (the verb ends in
+  924 = t; not "injure"); "no [?dou]bt", not "nothing but" (the letters spell it); "will [?call] him" is a guess (606 is not in
+  the table); "[?pi][?ra]cy can" rather than "[depred]ation can", since 1176 = cy is grade A (the S1 value 956 = ration is set
+  aside there); in "ten thousand [?dollar]s", the number is key values, but "ten" (1340) is a weak single fit in key v5 (grade S1)
+  and the plural "s" (800) is grade S2; "dollars" and "presents" are guesses; Tri and first are
+  fixed by their other occurrences, "follow" and "struggle" are guesses; the nation "at present not wel(l) [?dis][?pos]ed toward
+  us" is Britain by context only, and "urged" and "disposed" are partly guessed.
+
+What the passages say (key values; guesses marked in the readings; "ten" is a weak key value, S1): Lear was [?oblig]ed to [?make presents] of ten thousand
+[?dollar]s [?among] the [?principal] men which [1232] [180]ed the thing; he had reason to think the Algerines would be ur[?ged] on by the
+representa[?tions] of a nation at present not well [?dispos]ed toward us; the English consul has done all in his power to [?hur]t
+us; this [?sy]stem of [?pira]cy cannot last long, Tripoli will quit it first, and here there will be a strou[?ggle]; he found so
+much secret [?work]ing to involve the United States in war; the Dey [?dre]ads the [?breach] of peace among the powers of Europe,
+knowing that one nation at [?least] will [?call] him (the Dey, from context) to an ac[?count], and there is no [?dou]bt a latent flame in this [?country];
+the only real security in this sea is a naval force.
+
+Established history, from print checked on 14 Nov 2026: in October 1807 an Algerine frigate took the ship Eagle, the brig Violet
+and the schooner Mary Ann, the annuities for two years not having been sent in naval and military stores (Lear's circular of
+16 Dec 1807, Naval Documents Related to the United States Wars with the Barbary Powers vol. 6, p. 583). The Mary Ann was retaken
+by her master and part of her crew and brought into Naples on 4 November (Ducoster's letter from Naples, 9 Nov 1807, ibid.
+p. 577; the circular's postscript of 17 Dec). On 16 December Lear settled with the Dey, who received the two years' annuities in
+cash, and the vessels were liberated (circular, p. 583; American State Papers, Foreign Relations vol. 3, pp. 32-33; Irwin,
+Diplomatic Relations of the United States with the Barbary Powers, 1931, pp. 168-169). That the Eagle and the Violet sailed on
+18 December is from Lear's clear text of 31 Dec (Founders 99-01-02-2490), as the two readers read it; not re-read for this
+note. Richard Cartwright was British consul general at Algiers in 1806 (Naval Documents vol. 6, p. 335 and index); whether he
+still held the post in November 1807 was not checked, and the passage says only "the English consul here".
+
+Inference (ours): the passages add to the clear text Lear's private view that the English were behind the seizure and that the
+settlement cost presents to the men who arranged it. This is Lear's opinion as he wrote it, not established fact, and the
+amount's unit and the word "presents" are guesses.
+
+Who read them before: the postscript was deciphered at the time (frame 0008, hand not identified). For P1-P6 no decipherment
+was found on the film (roll 9 frames 0176-0199; roll 10 frames 0005-0016, 0042-0044, 0054-0056, 0070-0084; text layer of rolls
+8-11), in Naval Documents vol. 6, in American State Papers, Foreign Relations vol. 3 (pp. 32-33 print only Lear's circular of
+16 December) or in Irwin (pp. 168-169); Brighton's biography of Lear was not searchable and was not checked. The Madison Papers
+editors hold a Lear family key; their printed Secretary of State Series has reached vol. 14, 1 April-30 September 1807
+(University of Virginia Press, https://upress.virginia.edu/series/PJM, seen 14 Nov 2026), so a later volume may print a decoding.
+This is the first reading known to us.
+
+- **Lear, 9 March 1808** (M23 roll 10 frame 0014, "Duplicate", 113 groups, one stained copy): read twice, the second time from
+  the end by a reader who had not seen the first (106 of 113 agree); decoded with key v5 at 0.717 in
+  `beling/round_2026-11-14_lear1807/lear_18080309/`. Preliminary: not read, not counted, not in `outcome.texts`.
+- **Pointer for the Eaton material.** The bare "Duplicate" copy of Hammuda Bey to Jefferson, 8 Sep 1802 (T303 roll 2 frames
+  0302-0303) is a second coded copy of the letter in `eaton_18021009` (transcribed from the "Triplicate", frames 0299-0301). It
+  was not transcribed here; it could settle the doubtful digits in that transcription (for example 1058?, 1350?, 371?-1184?,
+  1432?, 610-564?).
+
 ## Remaining gaps
 
 - Pinckney 28 Aug 1793, group 447 (first word of the passage, before "regiments") - blocker: too-short; single occurrence in all 15 coded Pinckney frames on M30 roll 2 and in none of the six other Code No. 16 letters, no decoding; Pinckney's own copy (PrC, Pinckney Family Papers, South Carolina Historical Society) not online
 - Pinckney 28 Aug 1793, ?55 668 800 (a general's name ending -at-s; the editors' [Dunda]s) - blocker: illegible; the first digits of ?55 are in the binding gutter, and 668 = at in Eaton 1801, Pinckney 1795 and the Bey's letter of 1802, so the groups do not spell Dundas (234 time and 501 secret are closed: attested in Lear 1813)
 - Pinckney 28 Oct and 18 Dec 1795 (M31 roll 7 frames 0111, 0177), line ends and several groups - blocker: illegible; binding gutter and a shadowed last line, the NARA JPEG is the only image
 - Eaton 22 Oct 1802 (T303 roll 2 frame 0320), six interlinear words - blocker: illegible; blotted on the film; the passage repeats the 9 Oct postscript, which reads
+- Lear 8 Nov and 31 Dec 1807, 48 groups with no key or local value (guesses marked in the readings) - blocker: no-key-material; not in key v5, no other occurrence with a decipherment, the Lear family key unprinted, the Madison Papers' printed series not yet at late 1807
+- Lear 9 Mar 1808 (M23 roll 10 frame 0014), 113 groups decoded preliminarily only - blocker: illegible; one stained copy, the two readings differ in 7 groups; not counted in the readings
 - Code No. 16 groups without a value (about 1,600 elements; 537 in key v4, 549 in v5; 598 and 640 carry conflicting values, see the integration check of 12 Nov 2026) - blocker: no-key-material; the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer (contributor's notes)
 
 ## Escalation
@@ -314,3 +399,5 @@ The follow-up was verified independently before integration; this records the re
 - [x] print: Founders Online (PTJ 26), Founders search for each number, web search for the size of Grey's force (Aug 1793): no number found; the 1802 printed translation of the Bey's letter used for its body
 - [x] key-rebuild: Code No. 16 values collected from seven decoded Pinckney letters and applied (30 of 58 groups of 28 Aug attested); then Beling's key of 537 groups from the six later letters (39 of 58 attested)
 - [x] retry: 447/497 re-read at 2x on frame 0140; every open group searched in all transcribed frames; 11 Nov 2026: the 28 Aug 1793 passage regraded with the six other Code No. 16 letters (PR #399), 447 and 672 searched in them (absent)
+- [x] print (14 Nov 2026, Lear 1807): Founders Online Early Access prints the groups as numbers only; Naval Documents vol. 6, American State Papers, Foreign Relations vol. 3 and Irwin (1931) searched: not decoded there; the Madison Papers' printed series ends at 30 Sep 1807
+- [x] clear-pages (14 Nov 2026, Lear 1807): frames either side on M23 rolls 9 and 10 and the 1808 letters paged; only the postscript has a decipherment (frame 0008)
