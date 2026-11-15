@@ -28,6 +28,23 @@ before 1497 that is a text cipher. The candidates below are what is left.
 
 ## Tier A: could set a record, images in hand or obtainable
 
+### A0. Arabic letter in a secret script, Ihnas (Egypt), 3rd c. AH / 9th c. AD (ÖNB P.Vindob. A. P. 11016), added 15 Nov 2026
+- Lead 2832, vetted open, withheld from the catalogue and the site at the user's request while it is attempted
+  in `targets/vindob11016` (15 Nov 2026). Images online:
+  https://api.onb.ac.at/iiif/presentation/v3/manifest/DTL_4865249 (three views, 636 px wide at most).
+- The recto opens with 11 lines (about 100–120 signs) in a secret script read right to left. It mixes
+  Greek/Coptic-like letters (chi, beta), circles, Arabic letter forms and colon-like dividers. An ordinary Arabic
+  letter of about 20 lines naming Ihnas follows. The verso is an iqrār (legal declaration) of one Šenute with
+  witnesses. ÖNB (Mellon project, Bsees 2015 / Kaplony 2016): "Inhalt unbekannt", unpublished. Karabacek 1894
+  (PERF Führer p. 226 no. 8) only lists it.
+- Probably a simple substitution of Arabic letters by foreign signs, the kind the Arabic cryptographic tradition
+  calls *qalam* alphabets. A blind solve is hard at this length and resolution. Routes: (1) ask ÖNB for a
+  high-resolution scan; (2) test the alphabets of Ibn Waḥshiyya's *Šawq al-mustahām* and the sign tables of the
+  ʿAbbāsid *kutub al-aqlām*; (3) use the clear letter and the declaration as cribs for names and formulae (basmala,
+  Ihnās, Šenute).
+- If read: a 9th-century ciphertext, centuries older than anything in the table above. It is outside the European
+  diplomatic tradition, so it would count as a separate record.
+
 ### A1. Queen María of Castile → Alfonso V, Valencia 5 Aug 1435 (ACA, Cancillería, reg. 3225 f. 59r)
 - DECODE R10171, public, image fetched without login and saved here as `ACA_reg3225_f59r_1435.jpg`
   (https://de-crypt.org/decrypt-web/RecordsView/10171).
