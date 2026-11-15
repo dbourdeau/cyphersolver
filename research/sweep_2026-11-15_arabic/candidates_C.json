@@ -75,5 +75,167 @@
    ],
    "verdict": "open"
   }
+ },
+ {
+  "year": 1550,
+  "date": "16th century (de Slane's dating of the manuscript); undated",
+  "title": "Recipes with the operative words in a numeral-and-letter cipher, two leaves in an Arabic miscellany (BnF Arabe 2562, ff. 54-55)",
+  "correspondents": "unknown",
+  "place": "unknown (Egypt likely: the volume opens with a Coptic-year calendar and Nile tables)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1497-1559",
+  "shelfmark": "Paris, BnF, Département des Manuscrits, Arabe 2562, ff. 54r-55v",
+  "folio_note": "Four pages (Gallica views 56-58; f. 54r is the left page of view 56, f. 54v-55r are view 57, f. 55v is the right page of view 58), 19-20 lines a page. Each recipe opens with a clear rubric (sifa ..., 'it is good for ...') and clear running words; the names and quantities are in strings of Arabic-Indic numerals (0, 1, 2, 5, 7, 8 most often) mixed with a few detached letters and signs. Roughly half of each page is cipher. Show-through from the other side of the leaf is heavy on the microfilm.",
+  "cls": "C",
+  "status": "De Slane, no. 2562, 3°: 'Feuillet qui paraît avoir appartenu à un recueil de recettes médicales. La plus grande partie du texte est écrite en chiffres et en caractères de convention.' Vajda's index files ff. 54-55 under al-Tibb. Seen on the Gallica microfilm scan 15 Nov 2026: bare cipher inside clear recipe text, no gloss, no key on the leaves. Not on DECODE. No reading found.",
+  "why": "A sizeable private Arabic cipher of the 16th century with clear context around every cipher string: the hidden words are drug names, quantities and the object of each operation (one recipe speaks of the sages of India and of commanding spirits), so it shows what a practitioner thought worth hiding.",
+  "importance": 2,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the images during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); viewed",
+  "verify": "Transcribe the four pages from the microfilm scan (a colour scan would separate the show-through); test a simple substitution in which numerals and signs stand for letters, using the clear recipe formulas as cribs; check Vajda's notes on the manuscript (cited in the BnF notice) for any remark on the cipher.",
+  "links": [
+   {
+    "label": "Gallica, Arabe 2562 (view 56)",
+    "href": "https://gallica.bnf.fr/ark:/12148/btv1b100375395/f56.item"
+   },
+   {
+    "label": "IIIF image, view 56",
+    "href": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100375395/f56/full/max/0/default.jpg"
+   },
+   {
+    "label": "IIIF image, view 57",
+    "href": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100375395/f57/full/max/0/default.jpg"
+   },
+   {
+    "label": "BnF Archives et manuscrits notice",
+    "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc304761"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "open (checked 15 Nov 2026: DECODE search, cryptiana unsolved.htm and GL.htm, de Slane and the BnF notice, two web searches; no reading found)",
+  "needs_archive_scan": "no",
+  "access_note": "Microfilm scan free on Gallica (openings 3,418 x 2,587 px, so a page is about 1,450 px wide at full size); gallica.bnf.fr is 403 to scripts, openapi.bnf.fr IIIF works.",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part C",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100375395/f56/pct:8,8,42,88/max/0/default.jpg (f. 54r, 1,435 x 2,276 px, the full resolution of the scan) and .../f57/pct:48,8,44,88/max/0/default.jpg (f. 54v, 1,503 x 2,276 px); views 55-60 also as a sheet at 800 px",
+    "extent": "four pages, ff. 54r-55v, 19-20 lines each, about half of every page in cipher (a few hundred cipher signs in all)",
+    "cipher": "Strings of Arabic-Indic numerals with a few detached letters and signs, set inside clear Arabic recipe text (rubrics 'sifa', 'yanfa' fi', 'dirhamayn' etc. are clear). No decipherment between the lines or in the margins on ff. 54r and 54v at full size, none seen on 55r-55v at 800 px; no key on the neighbouring leaves (ff. 53v and 56r are ordinary text)."
+   },
+   "prior_art": {
+    "decode": "decode_search.py 'Arabe 2562', 'recettes', 'arabe', 'arabic': no Arabic-script record (the row returned for 'Arabe 2562' is Vienna Cod. 2398, unrelated)",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026, searched for arabic/arabe: no Arabic-language item",
+    "lasry": "cryptiana.web.fc2.com/code/GL.htm fetched 15 Nov 2026: nothing Arabic; not diplomatic material",
+    "edition": "De Slane, Catalogue des manuscrits arabes, no. 2562 (archive.org cataloguearabes00bibluoft) describes the leaf as written 'en chiffres et en caractères de convention' and gives no reading; BnF Archives et manuscrits notice cc304761 repeats it; no edition of these leaves known",
+    "literature": "Web searches on the shelfmark with cipher terms and on enciphered ingredients in Arabic recipe manuscripts found nothing on these leaves. Vajda's 'Notes sur la Geschichte...' cited in the BnF notice was not opened."
+   },
+   "key_check": "No key held here, in the volume or in print. The system looks like a simple substitution of numerals and signs for letters; not tested, since the sweep does not solve.",
+   "duplicates": "known.py 'Arabe 2562', 'Colbert 6514': no hits. Not in the 6 Nov 2026 Arabic sweep.",
+   "searches": [
+    {
+     "query": "decode_search.py \"Arabe 2562\" \"recettes\"",
+     "result": "no relevant record"
+    },
+    {
+     "query": "web: \"Arabe 2562\" BnF manuscrit recettes médicales \"caractères de convention\" OR chiffres OR cipher OR cryptography",
+     "result": "only catalogue pages of other BnF Arabic manuscripts; nothing on the cipher"
+    },
+    {
+     "query": "web: Arabic manuscript medical magical recipes ingredients written in numerical cipher ... Journal of Islamic Manuscripts",
+     "result": "general studies of medical-magical manuscripts (Sijpesteijn 2022, Raggetti 2021); no study of enciphered recipes in this manuscript"
+    },
+    {
+     "query": "BnF Archives et manuscrits simple search: \"caractères de convention\"",
+     "result": "2 notices: Arabe 2357 f. 12 (treasure-hunting tract) and Arabe 2562 f. 54; no further literature in either notice"
+    }
+   ],
+   "verdict": "open"
+  }
+ },
+ {
+  "year": 1700,
+  "date": "17th-18th century (the manuscript is dated to the 17th century; the cryptogram is an undated owner's note)",
+  "title": "Numeral cryptogram on the first page of a copy of al-Qusuni's tested remedies (Wellcome MS Arabic 449, f. 1a)",
+  "correspondents": "unknown (an owner or physician who also wrote recipes and marginal notes in the volume)",
+  "place": "unknown (Syria or Egypt; Haddad collection, Beirut)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1651-1700",
+  "shelfmark": "London, Wellcome Collection, MS Arabic 449 (WMS Arabic 449), f. 1a",
+  "folio_note": "Image 2 of the digitised volume, left-hand page. Twelve lines at the top left: Arabic-Indic numerals, many carrying one to three diacritical dots as if they were letters, with a few letters (shin, ta, a theta-like sign) among them, about 150 signs. Lower on the page a recipe in clear with one more line of the same signs inside it. No gloss.",
+  "cls": "C",
+  "status": "The Wellcome/Fihrist description (Serikoff's WAMCP record): 'Fol. 1a. - recipes and a cryptogram', and notes in the same hand on ff. 2b, 21b, 22a, 48b. Seen at full size 15 Nov 2026: bare. Not on DECODE. No reading found; Serikoff's printed catalogue (Brill 2005) was not opened.",
+  "why": "A private cipher of an Ottoman-period Arab physician, next to his recipes: probably a recipe or a formula he wanted kept to himself. The dotted numerals point to a substitution of numerals for letter shapes.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the image during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); viewed",
+  "verify": "Check the entry for WMS Arabic 449 in Serikoff, Arabic Medical Manuscripts of the Wellcome Library (Leiden 2005), for any reading; transcribe from the IIIF image; test numerals-as-letter-skeletons with the dots as the letters' own dots, with the clear recipe below as a control.",
+  "links": [
+   {
+    "label": "Wellcome Collection, MS Arabic 449",
+    "href": "https://wellcomecollection.org/works/bdd7p9r7"
+   },
+   {
+    "label": "IIIF image 2 (f. 1a), full",
+    "href": "https://iiif.wellcomecollection.org/image/b20297191_WMS_Arabic_449_0002.jp2/full/max/0/default.jpg"
+   },
+   {
+    "label": "IIIF manifest",
+    "href": "https://iiif.wellcomecollection.org/presentation/v2/b20297191"
+   },
+   {
+    "label": "Fihrist TEI record",
+    "href": "https://github.com/fihristorg/fihrist-mss/blob/master/collections/wellcome%20trust/WMS_Arabic_449.xml"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "open (checked 15 Nov 2026: DECODE search, cryptiana unsolved.htm and GL.htm, the Wellcome/Fihrist record, two web searches; no reading found; Serikoff 2005 not opened)",
+  "needs_archive_scan": "no",
+  "access_note": "Free colour IIIF images at wellcomecollection.org (the site is 403 to curl; api.wellcomecollection.org and iiif.wellcomecollection.org answer scripts).",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part C",
+   "seen": {
+    "kind": "scan",
+    "where": "https://iiif.wellcomecollection.org/image/b20297191_WMS_Arabic_449_0002.jp2/pct:3,4,24,50/full/0/default.jpg (native-resolution crop 1,594 x 2,294 px of the upper part of f. 1a) and .../pct:3,50,24,46/full/0/default.jpg (lower part, 1,594 x 2,110 px); the opening is 6,640 x 4,586 px",
+    "extent": "twelve lines of cipher, about 150 signs, and one further cipher line inside a clear recipe lower on the same page",
+    "cipher": "Arabic-Indic numerals (0-9) bearing letter dots, mixed with a few letters and a theta-like sign, written continuously; nothing is written between the lines or beside them, and the notes around it (a title note, a French plant name, recipes) are separate clear texts, not a decipherment."
+   },
+   "prior_art": {
+    "decode": "decode_search.py 'Wellcome', 'arabic': no Arabic-script record and no Wellcome record",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026, searched for arabic/arabe: no Arabic-language item",
+    "lasry": "cryptiana.web.fc2.com/code/GL.htm fetched 15 Nov 2026: nothing Arabic; not diplomatic material",
+    "edition": "The Fihrist TEI record, which is Serikoff's catalogue data, says only 'recipes and a cryptogram' and gives no reading; the printed catalogue (Serikoff, Leiden 2005, Haddad collection WMS 401-487) was not opened",
+    "literature": "Web searches for the shelfmark and for the catalogue with 'cryptogram' found the Wellcome records and reviews of the catalogue, no study or reading of the cryptogram"
+   },
+   "key_check": "No key held here or found in the record. The dotted numerals suggest numerals used as letter skeletons; not tested, since the sweep does not solve.",
+   "duplicates": "known.py 'Arabic 449', 'Qusuni', 'Qūṣūnī': no hits. The 6 Nov 2026 Arabic sweep searched the Wellcome API (0 relevant) and did not list this item.",
+   "searches": [
+    {
+     "query": "grep of the fihrist-mss TEI (15,638 records) for cipher|cypher|cryptogra|secret script|coded",
+     "result": "WMS_Arabic_449: 'Fol. 1a. - recipes and a cryptogram'; no reading in the record"
+    },
+    {
+     "query": "web: Wellcome \"MS Arabic 449\" Qūṣūnī \"al-Durrah al-muntakhabah\" cryptogram recipes Serikoff catalogue",
+     "result": "Wellcome catalogue pages only; nothing on the cryptogram"
+    },
+    {
+     "query": "web: Serikoff \"Arabic Medical Manuscripts of the Wellcome Library\" Haddad collection cryptogram numerals deciphered",
+     "result": "bibliographic records and reviews; no mention of a decipherment"
+    },
+    {
+     "query": "api.wellcomecollection.org works search: cryptogram; cipher arabic manuscript; secret alphabet; cryptography arabic",
+     "result": "0, 0, 3 (none Arabic), 0"
+    }
+   ],
+   "verdict": "open"
+  }
  }
 ]
