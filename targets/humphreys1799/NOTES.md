@@ -261,6 +261,14 @@ envoys gives the end of his mission as 13 July 1799, and another secondary sourc
 if the reading is right, Adlerberg foresaw in March 1799 a departure that came that summer; this rests on
 "Bar-on [?] Sta-".
 
+## Reading review
+
+Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
+"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (3 entries) were
+written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
+Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
+maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+
 ## Limits
 
 - 12 groups of No. 214 have digits hidden in the binding (frames 0415 and 0417); frame 0416 adds nothing, and there is
