@@ -145,3 +145,13 @@ In the 3x crops, two things typed as two tokens are one sign: "- T" (a bracket s
   transcription did not mark the two shapes consistently, so the split cannot be scored from it. Word share unchanged (0.43 / 0.50 / 0.43).
 What it needs: a box-level transcription (each sign with its position, CTTS-style) so the theta shapes, + / t and o / O can be
 relabelled from the image and re-scored; a by-eye re-read of whole letters is not precise enough for these look-alikes.
+
+## 15 Nov 2026 (later): box-level transcription by alignment, failed
+`famC/hand/align.py`: the hand tokens of R5518, R5514 and R5517 aligned line by line (DP, costs re-estimated from token-cluster
+co-occurrence over four rounds, line correspondences fixed by hand from the crop positions) to the signreader v2 boxes (60 shape
+clusters). 3,063 of 4,114 tokens get a box. Checked with montages of the box masks (`montage.py`): of 52 barred-o tokens about 4 boxes
+show a barred o; of 60 sampled "6" tokens about 6 show a 6. The detector splits and merges signs (12-18 px tall, ligatures, dots) too
+often for a token sequence to align to it, so the boxes cannot be used to relabel look-alikes. Not repeated with other settings: the
+detector itself is the limit, as on R5464 (sforza1597).
+Routes left for the theta / + vs t / o vs O splits: (a) a second by-eye pass over the 3x crops with a strict legend for these shapes
+only; (b) a human CTTS session drawing boxes; (c) higher-resolution images from ASMi (`../sforza1597/asmi_request_draft.md`, unsent).
