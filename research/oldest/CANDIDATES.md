@@ -29,7 +29,8 @@ before 1497 that is a text cipher. The candidates below are what is left.
 ## Tier A: could set a record, images in hand or obtainable
 
 ### A0. Arabic letter in a secret script, Ihnas (Egypt), 3rd c. AH / 9th c. AD (ÖNB P.Vindob. A. P. 11016), added 15 Nov 2026
-- Catalogue 2832 (promoted 15 Nov 2026). Images online:
+- Lead 2832, vetted open, withheld from the catalogue and the site at the user's request while it is attempted
+  in `targets/vindob11016` (15 Nov 2026). Images online:
   https://api.onb.ac.at/iiif/presentation/v3/manifest/DTL_4865249 (three views, 636 px wide at most).
 - The recto opens with 11 lines (about 100–120 signs) in a secret script read right to left. It mixes
   Greek/Coptic-like letters (chi, beta), circles, Arabic letter forms and colon-like dividers. An ordinary Arabic
