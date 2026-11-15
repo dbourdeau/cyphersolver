@@ -184,3 +184,14 @@ So the nomenclator question stays open: it needs a test that compares against a 
 clear text and the history (names: Iacomo, Urbino, Francesco, Roma, Cremona, Castro), or a contemporary key sheet. The 93 key
 sheets of cart. 1598 are still uncompared with family C; that is now the strongest lead: a sheet whose signs match family C would
 give the nomenclator directly.
+
+## 15 Nov 2026 (later): key sheets compared with family C, no match
+Family C test values (key_h4): + T = a, 2 = e, 6 = o, 4 X = i, L = r, S q = n, 8 = s, b = t, # = p, 1 = c, v = d, p = l, h = m, 7 = q, r = b, 3 = g.
+- cart. 1598, all 93 key records (`keysheets.py`, contact sheets `sheets/k00-k04.jpg`, top strips `sheets/kt00-kt07.jpg`): most are
+  16th-18th-century numeric or syllabic codes. Sign alphabets close in style, checked at full size: R5245 (a = +, but o = 4, i = e-hook),
+  R5255 (+ = e, crossed stroke = a), R5475 "Vincentius / Nicola Guarna" (a = +, but b = 6, o = q), R5265, R5266, R5240, R5243. None fits.
+- cart. 1597, all 115 key sheets (sforza1597 `sheets/k00-k22.png`): none has a = +, e = 2, o = 6, i = 4. Close in style: R5346
+  (a = +, but m = 6, o = m), whose "nichil importans" list includes the ct sign, which fits family C's ct sign hardly ever sitting
+  inside a word (70/80); Antonius M., Lancelotus de Figine, Petrus de Monteferrato and Ottone del Carretto keys are different alphabets.
+Conclusion: the family C key is not among the 208 key sheets of cart. 1597/1598. Many keys of the period start a = + (the chancery
+habit), so the style is shared, not the key. The reading rests on the key recovered from the ciphertext alone.
