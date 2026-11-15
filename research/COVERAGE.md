@@ -83,7 +83,6 @@ permission (`chrome_pass_2026-11`).
 | QDL | No Arabic or Persian terms; 23,753 hit pages not screened as images | `qdl` |
 | BnF | Bellièvre papers not yet screened: fr. 15890, 15892-15905, 15907-15911; fr. 15900 (2) has no Gallica ark (15906, 15900 (1) and 15891 swept 5 Nov 2026) | `gallica_sweep` |
 | Dudout's BnF BAM list | The 675-article JSON, available from him on request | `dudout_2026-10-29` |
-| Archivportal-D | Only the first 200 "chiffriert" slots, no other terms | `central_archives` |
 | HHStA | Staatenabteilungen Spanien, Rom, Venedig beyond the term searches | `central_archives` |
 | Printed series | Hardwicke, Journals of the Continental Congress, Official Records, Home Office calendar after 1775 | `ia_pass2_b` |
 
