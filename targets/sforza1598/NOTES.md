@@ -338,3 +338,23 @@ Family B status: all seven letters decrypted with one key recovered from the cip
 ciphertext-only), confirmed on six letters it was not fitted on, each reading as dated Italian sentences. Not yet at the read bar as
 measured: first-pass transcriptions, R5586 second half rough, two digit-like signs (6, 10) and a few words open; no word-by-word
 review against the images and no reader review yet. Remaining gaps are workable, not blocked.
+
+## 15 Nov 2026 (later): family B review
+- `flag.py`: every sign position re-scored with a 5-gram letter model (period Italian); 130 positions where one other sign would read
+  much better. Two systematic look-alike merges in the transcription explain most of them:
+  1. `R` covers two shapes, a plain "r4" ligature (= m) and a longer underlined "rr4" (seen on R5572 l.1); in "lvdovic[R]",
+     "bartol[R]meo", "servid[R]re", "tenend[R]", "molt[R]" the sign must be o.
+  2. `5` and `S` (5-like v sign and 5-like h sign) were merged: "c[5]e" must be "che" (S = h): 13 places.
+  Also c / D (l vs c) in a few places.
+- 43 emendations applied for these look-alike pairs only, with a model gain of 10+ (`emend.json`, emended tokens `e*.txt`). They are
+  editorial: each fits a known look-alike and the context, but they have not each been checked on the image.
+- Read share, strict segmenter (dictionary words of 4+ letters seen 5+ times in the corpus, a closed list of short function words, the
+  names; chancery spellings and u/v count against it), first pass / emended: R5562 0.897 / 0.915, R5576 0.921 / 0.932,
+  R5572 0.882 / 0.902, R5577 0.899 / 0.910, R5575 0.872 / 0.894, R5586 0.830 / 0.836, R5573 0.916 / 0.916; **all 0.893 emended**.
+  Segmented readings with unread pieces in brackets: `famB/read*.txt`.
+- What the unread 11 % is, read by eye: mostly words the segmenter cannot place but that read (spellings like "tvto", "cvi", "vebi",
+  "facio", "sarvane"; split words such as "lvdo vi cma"), a few names (Iovan Coscia, Piero del Cerreto, Marcelino), the two digit-like
+  signs (6, 10), and R5586's second half where the transcription is rough. Genuinely unread stretches by eye are a handful of words per
+  letter.
+Status: family B read in part, measured 0.89 (below the 95 % bar); the gap is the R/rr4 and 5/S splits (need a token-by-token pass on
+the images to replace the emendations with readings), R5586's second half, and the two digit signs. All workable from the scans.

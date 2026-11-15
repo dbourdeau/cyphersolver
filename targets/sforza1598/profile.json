@@ -658,6 +658,15 @@
    "kind": "reading",
    "what": "Family B complete: R5575 and R5586 finished, R5573 added; all seven letters (4,363 signs) decrypted with keyB.json unchanged, 4+ letter word cover 0.61 overall; reads as dated letters from Sarzana and Florence on messer Ludovico, Tomasino, Corsica, Volterra.",
    "result": "partial"
+  },
+  {
+   "kind": "verification",
+   "technique": [
+    "language-model scoring",
+    "contextual inference"
+   ],
+   "what": "Family B review: 5-gram re-scoring flagged 130 positions; two look-alike merges found (R = r4/rr4, 5/S); 43 emendations applied (editorial, not yet each checked on the image). Strict-segmenter read share 0.893 over all seven letters.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -672,6 +681,6 @@
    "matched control",
    "key confirms"
   ],
-  "notes": "Pool of separate ciphers; needs splitting by family as was done for cart. 1597."
+  "notes": "Family B (seven letters, cart. 1598 nos. 88-112): one key recovered from the ciphertext alone, read share 0.89 measured. Family C: one key, about 0.47 word share. Other families not started."
  }
 }
