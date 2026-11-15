@@ -1,0 +1,8 @@
+# Vetting, TNA Discovery leads 2783-2807 (15 Nov 2026)
+
+Claude Code session (Claude Sonnet 5.5). `sweep_2026-11-15_tna_discovery` (25 rows) merged as 2783-2807 (all regions and periods were valid; nothing remapped; `tna_discovery` added to `SWEEPS` in merge.py). Evidence in `vetting.json` (built by `make.py`). Each TNA record was re-read through the Discovery API (`/API/records/v1/details/<C-id>`): none is digitised, so all are "not online" items vetted from the archive's description.
+
+- **Promoted (4):** 2784 (ADM 1/1808/193, three captured 'lettres en chiffre' of the Governor-General of the Indies to the French Minister of Marine, 1811; Janssens despatches in NA 2.01.27.05 inv. 12 are the possible key route, per targets/batavia1800), 2788 (Stapleton de Laurence to Kerguelen, SP 46/146 and 148, narrowed to the letters without a decipher; 63-64 is the interlinear crib, key_in_volume), 2792 (SP 31/3/117 f. 207, 1687, narrowed to the cipher leaf), 2797 (SP 46/97 fo. 47 Beverning to Newport 1653, copy part in code; separate from targets/thurloe).
+- **Left as leads, decipher on or beside the item (fails the bar):** 2783 (Marlborough SP 87/2/49, /51 interlinear), 2785 (Hillyar), 2786 (Carteret), 2789 (Gleneves, a names list only), 2790, 2795, 2796, 2807.
+- **Left, not vetted further (weak or unidentified):** 2787, 2791, 2793 (Raby SP 90/2: check for a decipher in the volume first), 2794, 2798-2806 (calendar-derived rows need the SP volume and folio first).
+- Web searches (Marlborough, Kerguelen, Rover/Batavia, Gleneves, Cryptiana-restricted) found nothing on any decipherment. TNA State Papers Online (Gale) was not checked for images.
