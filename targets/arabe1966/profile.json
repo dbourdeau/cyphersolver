@@ -1,0 +1,194 @@
+{
+ "schema_version": 1,
+ "target": "arabe1966",
+ "title": "One line of numerals under the colophon of a sira manuscript dated 732 AH (BnF Arabe 1966; catalogue 2890)",
+ "documents": [
+  {
+   "id": "arabe1966-line",
+   "read": "not read",
+   "shelfmark": "Paris, BnF, Département des Manuscrits, Arabe 1966, last written page (Gallica btv1b11001551n, view 50)",
+   "date": "after Jumada I 732 AH (Feb 1332); the line is undated",
+   "year": 1332,
+   "country": "unknown",
+   "route": "unknown (a scribe's or reader's note)",
+   "language": "unknown",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None. The black words at the right of the line are the end of the colophon's blessing, not a gloss; the two notes below are collation notes."
+   },
+   "length": {
+    "tokens": 23,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "BnF IIIF crop of view 50 at native resolution (2,329 x 533 px), enlarged four times",
+    "image_quality": "fair",
+    "notes": "Black-and-white microfilm. The 4 (twice) could be a 3 and the 9 (three times) a 6. The catalogue entry counted about 28 numerals and took the colophon's last words for part of the cipher; 23 numerals are there."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Twenty-three Eastern Arabic numerals in one line without zeros, dots or visible division, seven distinct digits; the system is not identified.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 7,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "sibling_key": "none",
+  "notes": "No 0, 3 or 6. Read right to left, '1 2' occurs four times. The line cuts cleanly into 16 or 17 numbers no larger than 28. It may not be a text at all."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: de Slane no. 1966 only notes the line; DECODE, Cryptiana and web searches (catalogue vetting, 15 Nov 2026) and Gacek's Vademecum found no reading.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: the user posed the target by its catalogue number; no target-specific intervention.",
+  "tools": [
+   "BnF IIIF images",
+   "Python",
+   "wordfreq Arabic word list",
+   "Sahih al-Bukhari text (hadith-json) as a classical vocabulary",
+   "Internet Archive full text of Gacek's Vademecum"
+  ],
+  "models": [
+   "claude-fable-5-2"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-15",
+  "last_date": "2026-11-15"
+ },
+ "solution": [
+  {
+   "date": "2026-11-15",
+   "kind": "access",
+   "what": "Fetched view 50 through the BnF IIIF route (line crop at native resolution, lower half of the page at 1,800 px).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "Transcribed the line from fourfold enlargements: 23 numerals. The dark words at its right end are the colophon's 'ila yawm al-din', not cipher.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "statistics",
+   "what": "Counts and adjacency: 7 distinct digits, no 0, 3 or 6; '1 2' four times right to left; clean cuts into 16 or 17 numbers up to 28; glyph spacing measured, no groups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "Letters by abjad value with zeros lost (reduced abjad), both directions, word segmentation (abjad_seg.py); repeated with 4 as 3 and 9 as 6.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "beam/DP decoding"
+   ],
+   "what": "Whole-word abjad sums run together (wordsum.py, wordsum2.py): every cut finds words, so the test decides nothing.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "Alphabet positions 1 to 28 in four orders, from either end, all cuts, both directions (ordinal.py); shifts and affine maps mod 28 on the two clean cuts (shift.py).",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
+   "what": "One digit one letter: depth-first word segmentation with 1 and 2 fixed to alif and lam (subst.py, classical.py), then to every ordered pair of letters in both directions with a vocabulary from Sahih al-Bukhari (allpairs.py). Best strings are word salad.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Place-marker digits, strokes as zeros or separators, digit pairs (table, abjad words, aiq-bakr groups), and non-text readings (horoscope, sira numbers, buduh square, doubling series), worked by hand.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "access",
+   "what": "Looked at all 54 views as contact sheets for more writing in the pale numeral hand; read the two notes under the line (collation notes, one dated Rajab 734).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "literature search",
+   "what": "Gacek, Arabic Manuscripts: A Vademecum for Readers (Internet Archive full text): entries on secret alphabets, abjad, popular culture; two web searches on numeral cryptograms in colophons. No description of such a cipher, no mention of this manuscript.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "Nine families of numeral system were tested on the 23 digits and none gives a reading; the line is too short, with no word division, key or second text in the same hand.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "class": "not read",
+  "key": "none",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "The whole line, 23 numerals",
+    "blocker": "too-short",
+    "detail": "Seven symbols over 23 places with no word division, no second text in the same hand and no key; every standard numeral system tested fails. The colour scan would settle the doubtful shapes and whether dots were lost."
+   }
+  ],
+  "notes": "Left in progress, 15 Nov 2026. Catalogue 2890 stays in the catalogue.",
+  "credits": []
+ }
+}
