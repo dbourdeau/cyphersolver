@@ -240,3 +240,21 @@ potese desviare", "Baglione ... oltra lo pensero", "per la parentela ... esser p
 Cristoforo (his cancelliere), conte Carlo, Baglione, the duke of Modena, la Marca, Urbino, Castiglione, la Mirandola, Lodovico.
 Family C: six letters, 8,710 cipher signs, one key from the ciphertext alone, out of sample on four (0.42, 0.47, 0.46, 0.47).
 Remaining: R5506 page 2, R5504, R5505 (two pages each), R5515 (faint).
+
+## 15 Nov 2026 (later): R5504 sample transcribed; out of sample again
+`famC/hand/r5504_hand.txt`: R5504 (cart. 1598 no. 30) page 1, lines 1-16 only, 393 cipher signs (rest of the page and page 2 not
+transcribed). Decrypted with `key_h4.json`, no re-solve (`dec04.txt`): **word share 0.417 against 0.102 shuffled**. Phrases: "per
+vostro cavallaro", "lo fatto de tutta ... stato bene informato", "per maggior", "litera ... secretamente", "ogni altra cosa ... in modo
+... strattamente", "piaseria", "pare ... bono", "dubio", "conoscere questa vostra litera", "oltra questo ... intendeva".
+Family C: seven letters (9,103 cipher signs), one key from the ciphertext alone, read out of sample on five (0.42, 0.47, 0.46, 0.47,
+0.42; shuffled 0.10-0.16). Remaining: the rest of R5504, R5505, R5506 page 2, R5515 (faint).
+
+## 15 Nov 2026 (later): R5505 sample transcribed; out of sample again
+`famC/hand/r5505_hand.txt`: R5505 (cart. 1598 no. 31) page 1, lines 1-16, 439 cipher signs. Decrypted with `key_h4.json`, no re-solve
+(`dec05.txt`): **word share 0.417 against 0.171 shuffled**. Phrases: "la vostra signoria sia de tutto", "de la Mirandola dove ero trovato
+ser Cristoforo cancellero del mio [?] conte Iacomo", "el quale", "molte ... per modo alcuno", "facendo ... a mario", "per la ... altra
+trovara meglio", "farà per la via", "dicendome ... me pare ... la impresa de questi". Clear opening "quando ... senza fallo me pare
+impossibile a l'altro".
+Family C: eight letters (9,542 cipher signs), out of sample on six (0.42-0.47). Each new letter confirms the key and the setting
+(conte Iacomo, ser Cristoforo his cancelliere, the Mirandola) but none raises the share above about 0.47: the remaining gap is in the
+transcription and in signs the key does not yet place, not in missing text. Not transcribed: rest of R5504 and R5505, R5506 p.2, R5515.
