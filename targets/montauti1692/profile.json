@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "L01",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 1r-1v",
    "date": "undated (after June 1691; breaks off, no date line)",
    "year": "unknown",
@@ -413,7 +413,7 @@
   },
   {
    "id": "L70",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 70r-72r",
    "date": "Pisa li 17 Gennaio 169[3] (last digit retraced in later ink; Florentine style)",
    "year": 1693,
@@ -709,7 +709,7 @@
   {
    "date": "2026-11-14",
    "kind": "reading",
-   "what": "35 runs of Codex 533 decoded with key v3 and the context values: 318 of the 401 groups in the decode (79.3%) take a letter; 15 runs read whole, 15 in part, 5 not read; about 60% of groups read as Italian (estimate).",
+   "what": "35 runs of Codex 533 decoded with key v3 and the context values: 318 of the 401 groups in the decode (79.3%) take a letter; 15 runs read whole, 15 in part, 5 not read; the word share is in fraction_read.",
    "result": "partial"
   },
   {
@@ -733,9 +733,15 @@
    "what": "Searched for editions or studies of the letters and the cipher, and for any 1690s report that the Electress wished to return or separate: none found in the sources opened; Acton not read; Florence State Archive and Medici Archive Project unreachable.",
    "result": "worked"
   },
-  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 825 tokens, 40 types, it-modern order 4: reading -2.592 per letter; random keys -6.86 (z 6.0); key annealed onto shuffled ciphertext best -3.371 (mean -3.482, z 14.0); annealer on the real text -2.832. Verdict: pass.", "result": "worked"}
+  {
+   "date": "2026-11-15",
+   "kind": "reading",
+   "what": "Recount by words after Daniel Bourdeau's review of PR #665 (readings/words_533_strict.tsv): of 87 cipher words in Cosimo's 35 runs, 30 sure, 42 with the context-only values; L01 9 of 16 and L70 0 of 1 sure, both now read in part.",
+   "result": "partial"
+  },
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 825 tokens, 40 types, it-modern order 4: reading -2.592 per letter; random keys -6.86 (z 6.0); key annealed onto shuffled ciphertext best -3.371 (mean -3.482, z 14.0); annealer on the real text -2.832. Verdict: pass.", "result": "worked"}
  ],
- "outcome": {"validation": {"date": "2026-11-14", "model": "it-modern", "file": "validation.tsv", "tokens": 825, "types": 40, "tokens_per_type": 20.62, "score": -2.592, "nulls": {"random keys": {"n": 200, "mean": -6.86, "sd": 0.706, "max": -5.244, "z": 6.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.482, "sd": 0.064, "max": -3.371, "z": 14.0, "p": 0.1429}}, "power": -2.832, "verdict": "pass", "notes": "claimed per-occurrence score -2.521; polyphony 0.016; 64 unread tokens left out; annealer on the real text from random keys reached -2.832"}, 
+ "outcome": {"validation": {"date": "2026-11-15", "model": "it-modern", "file": "validation.tsv", "tokens": 825, "types": 40, "tokens_per_type": 20.62, "score": -2.592, "nulls": {"random keys": {"n": 200, "mean": -6.86, "sd": 0.706, "max": -5.244, "z": 6.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.482, "sd": 0.064, "max": -3.371, "z": 14.0, "p": 0.1429}}, "power": -2.832, "verdict": "pass", "notes": "claimed per-occurrence score -2.521; polyphony 0.016; 64 unread tokens left out; annealer on the real text from random keys reached -2.832"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -767,13 +773,13 @@
     "label": "L01, Codex 533 ff. 1r-1v, undated (after June 1691; breaks off, no date line)",
     "transcription": "readings/L01_groups.txt",
     "decryption": "readings/L01_decode.txt",
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "summary": "Cosimo tells Montauti that the Elector Palatine has let him know of a report, written to the Elector, that Cosimo's daughter (Anna Maria Luisa, Electress Palatine) had written asking permission to return home and separate from her husband; he says such talk shames and offends his and her reputation, speaks of 'such calumnies', and asks Montauti to act, if need be by going to Düsseldorf. A report at second or third hand that Cosimo treats as calumny; no explicit denial among the words read; the writer to the Elector is unread; undated.",
     "reading": "readings/L01_it.txt",
     "translation": "readings/L01_en.txt",
-    "read_share": 1.0,
-    "note": "All 85 cipher groups read as words (two single-letter slips; letters on context-only values and emended digits marked in readings/letter_1r1v.md). The clear text has gaps and needs a palaeographer.",
+    "read_share": 0.563,
+    "note": "Sure words only (README Conventions): 9 of 16 cipher words (56.3%), word by word in readings/words_533_strict.tsv. Not sure: Palatino, ritornare, qua and marito rest on the context-only values ww = o and 62 = q; permission[e] on ww = o and a letter not written; l'El[e]ttor[e] and figl[i]a on a letter supplied or replaced by sense. With the context-only values 13 of 16. Daniel Bourdeau's review counts 11 of 16, admitting the two words with a supplied letter. Our earlier figure was 1.0: all 85 cipher groups read as words (two single-letter slips; letters on context-only values and emended digits marked in readings/letter_1r1v.md). The clear text has gaps and needs a palaeographer.",
     "reading_review": {
      "grade": "B",
      "by": "Author's agents (Andrew Beling, with AI agents)",
@@ -959,13 +965,13 @@
     "label": "L70, Codex 533 ff. 70r-72r, Pisa li 17 Gennaio 169[3] (last digit retraced in later ink; Florentine style)",
     "transcription": "readings/L70_groups.txt",
     "decryption": "readings/L70_decode.txt",
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "summary": "'agosto'.",
     "reading": "readings/L70_it.txt",
     "translation": "readings/L70_en.txt",
-    "read_share": 1.0,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
+    "read_share": 0.0,
+    "note": "Sure words only (README Conventions): 0 of 1; the one cipher word, agosto, rests on the context-only value ww = o (readings/words_533_strict.tsv). Our earlier figure was 1.0, an estimate from readings/runs_533.tsv.",
     "reading_review": {
      "grade": "B",
      "by": "Author's agents (Andrew Beling, with AI agents)",
@@ -1050,9 +1056,9 @@
     }
    }
   ],
-  "fraction_read": 0.6,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Cosimo's runs only (Codex 533, 403 groups): 40.2% of the 403 groups lie in runs read whole and 318 of the 401 groups in decode/decode_rec2_v3ctx.tsv (79.3%) take a letter value; about 60% read as Italian words is an estimate between the two (readings/runs_533.tsv). The bare 1694 passages (about 85-95% by estimate) are not included.",
+  "fraction_read": 0.345,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Cosimo's 35 runs only (Codex 533), counted by words (README Conventions): 30 of 87 words sure (34.5%), every letter from frozen key v3 with no context-only value, no letter supplied or replaced by sense, no doubt mark and no unread group; 42 of 87 (48.3%) with the context-only values ww = o and 62 = q. Word list and rule: readings/words_533_strict.tsv. Daniel Bourdeau's review counts 37 of 87 and 51 of 87; the difference is the seven words with a supplied or replaced letter, which his count admits. By groups: 40.2% of the 403 groups lie in runs read whole and 318 of the 401 groups in decode/decode_rec2_v3ctx.tsv (79.3%) take a letter value. Our earlier figure, about 60% of groups read as Italian, was our estimate between those two. The bare 1694 passages are not included.",
   "codes_open": {
    "open": 13,
    "total": "unknown",

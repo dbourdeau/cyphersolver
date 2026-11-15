@@ -1,0 +1,97 @@
+# Cosimo's 35 cipher runs in Codex 533 (readings/runs_533.tsv), word by word, with the status that decides whether a
+# word is counted as sure (recount of 15 Nov 2026, after Daniel Bourdeau's review of PR #665).
+# Rule (README Conventions, "A reading must read" and "Holes are counted by words"): a word is SURE when every letter
+# comes from frozen key v3 (key/key_v3.json) read on the signs as transcribed (a sign reading marked * in
+# runs_533.tsv, e.g. 9 read as 5, is a transcription reading and is allowed), with no context-only value, no letter
+# supplied or replaced by sense, no doubt mark and no unread group.
+# status: sure; context = sure but for a context-only value (ww = o or 62 = q, key/CONTEXT_VALUES.md);
+# supplied = a letter supplied where the cipher has nothing, or replaced by sense (README: a hole);
+# context+supplied = both; doubtful = marked (?) or conjecture; hole N = unread, guessed or code number, N words (default 1).
+# Words are as in the italian column of runs_533.tsv; "l'Elettore" is one word.
+# Totals: 87 words. Sure 30 of 87 (34.5%). Sure or context-only value 42 of 87 (48.3%).
+# Supplied 7, context+supplied 3, doubtful 7, holes 28.
+# Daniel Bourdeau's count (review of PR #665): 37 of 87 sure, 51 of 87 with the context-only values. The 7-word
+# difference is the seven 'supplied' words, which his count admits and README Conventions counts as holes; with them
+# the two figures are 37 and 51 (the 51 adds permission[e] and sodisfatt[i]; ult[i]mo(?) stays out as doubtful).
+# Per letter, sure of all: L01 9 of 16; L03 2 of 5; L19 0 of 1; L21 2 of 10; L25 0 of 4; L26 4 of 18; L28 1 of 5; L35 6 of 15; L36 0 of 1; L53 0 of 2; L56 3 of 3; L63 3 of 6; L70 0 of 1
+doc	run	word	status	note
+L01	1r a	l'El[e]ttor[e]	supplied	one e not written; the final e rests on reading the second 64 as w4
+L01	1r a	Palatino	context	final o on ww = o
+L01	1r b	mia	sure	m on a 9 read as 5 (sign reading, marked *)
+L01	1r b	figlia	sure	
+L01	1r b	mi	sure	
+L01	1r b	havea	sure	h on a 9 read as 5
+L01	1r c	permission[e]	context+supplied	o on ww = o; the last group gives a where e is needed
+L01	1r d	ritornare	context	o on ww = o
+L01	1r d	qua	context	q on 62 = q
+L01	1r e	separarsi	sure	
+L01	1r f	marito	context	o on ww = o
+L01	1v a	mia	sure	
+L01	1v a	et	sure	
+L01	1v a	di	sure	
+L01	1v a	mia	sure	
+L01	1v a	figl[i]a	supplied	written figlea (w4 = e where i is needed)
+L03	3r a	la	sure	
+L03	3r a	[14]	hole	probable code number
+L03	3r b	la	sure	
+L03	3r b	[14]	hole	probable code number
+L03	3r b	o[..]	hole	
+L19	19r a	[..]	hole	pass B only; may be a plain number
+L21	21v a	[c]onte	doubtful	rests on a shared sign; run marked (?)
+L21	21v a	[..]a	hole	
+L21	21v a	mil	doubtful	run marked (?)
+L21	21v a	t[..]	hole	
+L21	22r a	sono	context	o on ww = o
+L21	22r a	sodisfatt[i]	context+supplied	o on ww = o; final i supplied
+L21	22r a	del	sure	
+L21	22r a	duca	sure	
+L21	22r a	d[i]	supplied	
+L21	22r a	Savoia	context	o on ww = o
+L25	25r a	[..]	hole	
+L25	25r b	qu[..]	hole	
+L25	25r c	costà	context	o on ww = o
+L25	25r d	addit[a]ssi(?)	doubtful	one a not written; word uncertain
+L26	26r a	servivi[..]	hole	
+L26	26r b	de[..]	hole	
+L26	26r c	relation[e]	supplied	final e not written
+L26	26r c	del	sure	
+L26	26r c	[13 14 19 25 34 39 36 37]	hole 8	eight groups with no letter value (probable code numbers), counted as eight words
+L26	26r c	sca[..]ug[..]io[..]e	hole	
+L26	26r c	et	sure	
+L26	26r d	havrà	sure	h on 92 read as 52
+L26	26r d	[..]	hole	
+L26	26r d	con	sure	n on 98 read as 5w
+L26	26r d	l[..]	hole	
+L28	28v a	[..]	hole	
+L28	28v b	[mia?]	hole	guess by context
+L28	28v b	figliola	sure	i on 71 read as 31
+L28	28v c	corte	context	o on ww = o
+L28	28v d	toscani	context	o on ww = o
+L35	35r a	fussi	sure	
+L35	35r a	disgustat[o]	supplied	final o not written
+L35	35r a	del	sure	
+L35	35r a	[..]	hole	
+L35	35r a	della	sure	
+L35	35r a	corte	sure	
+L35	35v a	[d]ell[a]	supplied	
+L35	35v a	d[o]n[n]a(?)	doubtful	conjecture
+L35	35v a	di	sure	
+L35	35v a	camera	sure	
+L35	35v a	favorita	context	o on ww = o
+L35	35v a	dell[a]	supplied	
+L35	35v a	[14]	hole	probable code number
+L35	35v b	mandarai(?)	doubtful	
+L35	35v b	[..]	hole	
+L36	36r a	[..]	hole	
+L53	53r a	il	doubtful	conjecture, not counted in runs_533.tsv
+L53	53r a	Spagna	doubtful	conjecture
+L56	56r a	mia	sure	
+L56	56r a	figlia	sure	
+L56	57r a	Dusseldorf	sure	
+L63	63r a	li	sure	
+L63	63r a	tempi	sure	
+L63	63r b	[..]a[..]	hole	
+L63	63r b	qualche	context	q on 62 = q
+L63	63r b	facilità	sure	
+L63	63r c	ult[i]mo(?)	context+supplied	o on ww = o; one i not written; doubtful
+L70	70v a	agosto	context	o on ww = o

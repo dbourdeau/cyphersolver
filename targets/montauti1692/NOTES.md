@@ -15,8 +15,8 @@ despatches of the Florentine secretariat to Montauti, 1689-1699, signed "Il gran
   on an interlined letter it had not seen: **76 of 92 groups (82.6%) agree; 200 shuffled keys reach at most 35.9%.**
 - **Cosimo's own cipher passages in Codex 533 are read for the first time, as far as we found.** They were transcribed
   twice (one pass blind), the 116 sign-level disagreements were checked on the image (112 settled, 4 left open), and the 35 runs were decoded:
-  by this package's count 15 read whole, 15 in part, 5 not at all (`readings/runs_533.tsv`). About 60% of Cosimo's
-  groups read as Italian; that figure is an estimate.
+  by this package's count 15 read whole, 15 in part, 5 not at all (`readings/runs_533.tsv`). By words, 30 of Cosimo's 87
+  cipher words (34.5%) are sure, 42 of 87 (48.3%) with the two context-only values (`readings/words_533_strict.tsv`).
 - **What the cipher hides is mostly his daughter's household.** Anna Maria Luisa de' Medici, Electress Palatine ("mia figlia",
   "mia figliola"), the Elector Palatine, Düsseldorf, the court and "toscani" there, a favourite lady of the bedchamber,
   and the Duke of Savoy.
@@ -157,7 +157,13 @@ The round-4 working notes counted 15 whole, 14 in part, 6 not read; round 4b, af
 part, 2 not read. The differences are calls on short runs with a code number (3r) or a single word (22r, 25r b, 36r).
 Measured bounds: 40.2% of Cosimo's 403 groups (162) lie in runs read whole; 79.3% of the 401 groups in
 `decode/decode_rec2_v3ctx.tsv` (318) take a letter value (78.9% if counted against 403); "about 60% read as
-Italian" lies between and is an estimate.
+Italian" lay between and was our estimate. Measured by words (15 Nov 2026, `readings/words_533_strict.tsv`, after Daniel
+Bourdeau's review of PR #665): 30 of 87 cipher words sure (34.5%), 42 of 87 (48.3%) with the context-only values
+ww = o and 62 = q. A word is sure when every letter comes from frozen key v3, read on the signs as transcribed, with no
+context-only value, no letter supplied or replaced by sense, no doubt mark and no unread group. Daniel Bourdeau counts
+37 and 51 of 87; the difference is the seven words with a supplied or replaced letter (l'El[e]ttor[e], figl[i]a,
+d[i], relation[e], disgustat[o], [d]ell[a], dell[a]), which README Conventions counts as holes. The first letter
+(1r-1v) is 9 of 16 sure (Daniel Bourdeau: 11 of 16) and L70 (agosto, on ww = o) 0 of 1; both are read in part.
 
 ## History and significance
 
@@ -203,7 +209,7 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
 
 ## Limits
 
-- About 60% of Cosimo's groups read as Italian, **by estimate** (measured bounds above).
+- By words, 30 of Cosimo's 87 cipher words are sure (34.5%), 42 with the context-only values (measured above).
 - **Runs not read:** six by the round-4 count, five by this package's (19r, 25r a, 25r b, 26r b, 36r).
 - **The block on 26r** ("relatione del" + 13 14 19 25 34 39 36 37) has no w-sign and only 1-3-9 digits: it looks like a
   different table (System A of Codex 531, or code numbers). Not read.
