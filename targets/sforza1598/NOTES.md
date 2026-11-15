@@ -402,3 +402,12 @@ translation, for a second reader (the reading gate asks for a reader review and 
   look-alike search gives no strong single fix, and the image crops for these spots missed (position estimates from token counts are
   too rough on these lines). They need a person, or a sign-by-sign box transcription, to read the exact shapes. R5586's 'dd', 'bb', 'e'
   cluster (the date line and two spots) is also still unread.
+
+## 15 Nov 2026 (later): open words, whole-line image pass
+Whole lines holding the open words cropped and read by eye (`L0-L6.png`, git-ignored). Result:
+- R5577 l. 7 "tornermche" -> "tornero, che" (an underlined rr4 = o read as plain R); fixed in `w77.txt`.
+- R5562 l. 5 "si s'gain": the image shows a plain q-shaped sign with an ink blot where `Q` (g) was written; no candidate reads.
+- R5577 "promqso": the image gives "pp ɔ 7 tt m S k" around it, which does not yield "promesso" under the key; left open.
+- R5562 "sarvane": the date line is torn at the left edge; the sign before "rvane" is lost (outside blocker; probably Sarsane).
+- "mamiglio", "mas…sano", "canteera", "sevala", "Miser Andremto": the line crops are legible but my token sequence for these spots
+  does not align closely enough with the image to say which sign is wrong; a box-level transcription of these lines is the fix.
