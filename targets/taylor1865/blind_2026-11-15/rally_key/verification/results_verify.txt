@@ -1,0 +1,38 @@
+== helperA
+plain: HXACTLPHOWLNNGYNUWIVLHOLDTHECITYRTNNINGOFTHETRAINSDEPENDSHOLDONTNTILMINESCLNQKTOLORROWADDITIONALTRAINSTHERE
+G22: words 11/22; random keys max 5 mean 1.79; known keys max 5 (MANCHESTERBLUFF@8); offset 0 {'COMPLETEVICTORY': 3, 'COMERETRIBUTION': 2, 'MANCHESTERBLUFF': 1, 'OURNAVYOURPRIDE': 1}
+   HXACTLP HOW LNNG YNU WIVL HOLD THE CITY RTNNING OF THETRAINS DEPENDS HOLD ON TNTIL MINE S CLNQK TOLORROW ADDITIONAL TRAINS THERE
+G25: words 12/25; random keys max 8 mean 2.43; known keys max 5 (COMERETRIBUTION@8); offset 0 {'COMPLETEVICTORY': 4, 'COMERETRIBUTION': 2, 'MANCHESTERBLUFF': 1, 'OURNAVYOURPRIDE': 2}
+   HXACTLP HOW LNNG YNU WIVL HOLD THE CITY RTNNING OF THETRA INS DEPENDS HOLD ON TNTIL MI NE S CLNQK TOLORROW ADDITIONAL TRAI NS THERE
+letter changes: 12; needed letter among helper's alternatives: 3; not: 9
+   pos   1 g1.1 read Y alts [] high -> gives H, claim E needs V  in alts: False  | 
+   pos   7 g1.7 read D alts [B] low -> gives P, claim Y needs M  in alts: False  | last letter before the gutter; one bowl seen, dark node mid-right could be a B waist; a faint further stroke runs into the binding (possible lost letter); see L1_gutter.jpg
+   pos  12 g3.2 read E alts [L] high -> gives N, claim O needs F  in alts: False  | middle hooked stroke visible at 5x (L2_E_close.jpg)
+   pos  16 g4.2 read E alts [] high -> gives N, claim O needs F  in alts: False  | 
+   pos  20 g5.3 read T alts [] high -> gives V, claim L needs J  in alts: False  | pencil mark above (see pencil_marks.txt)
+   pos  34 g9.2 read E alts [F] high -> gives T, claim U needs F  in alts: True  | top bar, middle stroke, bottom bar
+   pos  64 g15.1 read E alts [] high -> gives T, claim U needs F  in alts: False  | 
+   pos  69 g16.1 read T alts [Z,I] medium -> gives M, claim N needs U  in alts: False  | top bar hooked down at left, stem, base bar (same as T in group 11)
+   pos  73 g17.1 read G alts [C] medium -> gives S, claim O needs C  in alts: True  | single-letter group between dashes: large C with a small c-shaped stroke at upper right (L6_C.jpg)
+   pos  76 g18.3 read E alts [] high -> gives N, claim O needs F  in alts: False  | 
+   pos  77 g18.4 read Q alts [] high -> gives Q, claim C needs C  in alts: False  | tail in dark ink
+   pos  81 g19.3 read E alts [F] high -> gives L, claim M needs F  in alts: True  | 
+== helperB
+plain: HXACTLPHOWLNNGYNUWIVLHOLDTHECITYRTNNINGOFTHETRAINSDEPENDSHOLDONTNTILNINEOCLNQKTOLARROWADDITIONALTRAINSTHERE
+G22: words 11/22; random keys max 5 mean 1.79; known keys max 5 (MANCHESTERBLUFF@8); offset 0 {'COMPLETEVICTORY': 3, 'COMERETRIBUTION': 2, 'MANCHESTERBLUFF': 1, 'OURNAVYOURPRIDE': 1}
+   HXACTLP HOW LNNG YNU WIVL HOLD THE CITY RTNNING OF THETRAINS DEPENDS HOLD ON TNTIL NINE O CLNQK TOLARROW ADDITIONAL TRAINS THERE
+G25: words 12/25; random keys max 7 mean 2.44; known keys max 5 (COMERETRIBUTION@8); offset 0 {'COMPLETEVICTORY': 3, 'COMERETRIBUTION': 2, 'MANCHESTERBLUFF': 1, 'OURNAVYOURPRIDE': 2}
+   HXACTLP HOW LNNG YNU WIVL HOLD THE CITY RTNNING OF THETRA INS DEPENDS HOLD ON TNTIL NI NE O CLNQK TOLARROW ADDITIONAL TRAI NS THERE
+letter changes: 11; needed letter among helper's alternatives: 2; not: 9
+   pos   1 g1.1 read Y alts [] high -> gives H, claim E needs V  in alts: False  | 
+   pos   7 g1.7 read D alts [B,M] low -> gives P, claim Y needs M  in alts: True  | last letter before the gutter: top serif, stem, one bowl; a faint extra stroke runs into the gutter (could make it M, or be a further hidden letter)
+   pos  12 g3.2 read E alts [] high -> gives N, claim O needs F  in alts: False  | 
+   pos  16 g4.2 read E alts [] high -> gives N, claim O needs F  in alts: False  | 
+   pos  20 g5.3 read T alts [] high -> gives V, claim L needs J  in alts: False  | pencil digit above this letter
+   pos  34 g9.2 read E alts [] high -> gives T, claim U needs F  in alts: False  | 
+   pos  64 g15.1 read E alts [] high -> gives T, claim U needs F  in alts: False  | 
+   pos  76 g18.3 read E alts [] high -> gives N, claim O needs F  in alts: False  | 
+   pos  77 g18.4 read Q alts [] high -> gives Q, claim C needs C  in alts: False  | Q with heavy ink blot on tail
+   pos  81 g19.3 read E alts [] high -> gives L, claim M needs F  in alts: False  | 
+   pos  82 g19.4 read O alts [C] medium -> gives A, claim O needs C  in alts: True  | oval looks closed with a top-right hook; compare open C in group 9
+PASS: False  ['helperA G25 12 < 17', 'helperB G25 12 < 17', 'helperA G22 11 < 15', 'helperB G22 11 < 15']
