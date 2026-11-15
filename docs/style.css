@@ -565,7 +565,9 @@ ul.findings b{color:var(--head)}
 .nav .panel.wp{width:min(640px,calc(100vw - 2rem));grid-template-columns:1.35fr 1fr}
 .nav .panel .foot{grid-column:1/-1;border-top:1px solid var(--rule);padding-top:.7rem;margin-top:.1rem;display:flex;justify-content:space-between;gap:.6rem 1.2rem;flex-wrap:wrap;font-size:var(--fs-ui)}
 .nav .panel .foot a{border:0;color:var(--gold2)}
-.nav .panel.ex{width:min(400px,calc(100vw - 2rem));grid-template-columns:1fr;gap:.6rem}
+.nav .panel.ex{width:min(640px,calc(100vw - 2rem));grid-template-columns:1fr 1fr;gap:.9rem 1.2rem}
+.nav .panel.ex .grp ul{margin:0;padding:0;list-style:none}
+.nav .panel.ex .foot{grid-column:1/-1}
 .nav .panel.ex li a{grid-template-columns:1fr;gap:.05rem;padding:.45rem .6rem}
 @media (max-width:900px){ .nav .panel.wp,.nav .panel.ex{width:auto;grid-template-columns:1fr} }
 .nav .panel.ex li a .d{font-size:var(--fs-sm);color:var(--muted);line-height:1.3}
