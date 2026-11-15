@@ -1,0 +1,211 @@
+import json, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+BY = "claude session 14 Nov 2026 (Claude Sonnet 5.5), Hungaricana sweep vetting"
+D = "2026-11-14"
+HG = "Hungaricana Becsi segedletek (archives.hungaricana.hu/hu/lear/BecsSeg/%s/), leaf page opened in a Chrome tab on 14 Nov 2026: regest only (shelfmark, date and place, one-line summary); the page has no image viewer and no scan."
+LANG = ("Lang's repertory of Hungarian-related ciphers (Lang Benedek, Titkosiras doctoral thesis, 2015, real-d.mtak.hu/922/7/dc_758_13_doktori_mu.pdf, "
+        "text layer searched 14 Nov 2026 for %s)")
+FAZ = ("Fazekas-Fodor-Gluck (eds.), Reports of the Habsburg Envoys in Constantinople 1568-1574, vols. I-II (Budapest-Szeged 2025; tti.abtk.hu): "
+       "contents, preface and title page read; the full text is not online, so what it prints of this despatch is not checked")
+out = {}
+
+# ---------------------------------------------------------------- Wyss
+out["2675"] = {
+    "date": D, "by": BY,
+    "seen": {
+        "kind": "not online",
+        "where": HG % "44944",
+        "extent": "Two items under fol. 78-81 and 82-85 of Kt. 18 Konv. 1 (Jan-Feb 1564): the Latin original of 11 Feb 1564 and a second sheet group; leaves not counted by the regest.",
+        "cipher": "Regest, verbatim: 'Albert de Wyss - I. Ferdinand (latin orig, sifrir, nincs feloldva)' = Latin original, cipher, no decipherment filed. Leaf not seen: no image online.",
+    },
+    "prior_art": {
+        "decode": "decode_search.py 'Wyss' on de-crypt.org (14 Nov 2026): one record, R1548, a Wyss cipher-key sheet of 1568 in HHStA Staatskanzlei Interiora Chiffrenschluessel Kt. 14 Fasc. 20 f. 415-419 (a key, no ciphertext); no DECODE record for a Wyss letter.",
+        "tomokiyo": "Web search naming Tomokiyo, Lasry, DECODE and Albert de Wyss (14 Nov 2026): no Cryptiana page on Wyss or on the Habsburg Constantinople despatches of 1564.",
+        "lasry": "Same search: nothing by Lasry on the Constantinople resident Wyss; hits were unrelated HistoCrypt papers.",
+        "edition": FAZ + "; its range starts in 1568, so a letter of Feb 1564 is outside it. " + LANG % "Wyss" + " lists five Wyss letters (C.Wys.01-05: 6 May, 25 Oct, 29 Nov, 29 Dec 1564, 27 Jun 1565, all 'a levelben feloldva'), none of 11 Feb 1564.",
+        "literature": "Web searches for the Lang appendix and for Wyss (14 Nov 2026) returned Lang's Cryptologia 2015 article on Hungarian private ciphers and Busbecq-code papers (Loncar and Soric); nothing on Wyss's cipher.",
+    },
+    "searches": [
+        {"query": "decode_search.py Wyss (de-crypt.org RecordsList)", "result": "R1548 only, the 1568 Wyss key sheet; no Wyss ciphertext on DECODE."},
+        {"query": "Lang 2015 repertory text layer grep 'Wyss' (PyMuPDF over dc_758_13_doktori_mu.pdf)", "result": "Table p. 249: C.Wys.01-05, five 1564-65 Wyss letters with in-letter decipherment, Kt. 18 Konv. 2, Kt. 19; the 11 Feb 1564 piece (Kt. 18 Konv. 1) is not listed."},
+        {"query": "Albert de Wyss imperial resident Constantinople cipher despatches Ferdinand I decipherment Tomokiyo OR Lasry OR DECODE (web search)", "result": "Nothing on Wyss; unrelated HistoCrypt and WWI cipher pages."},
+        {"query": "Lang 2015 Habsburg Constantinople ciphers appendix decipherments Wyss Rym Busbecq Turkei I (web search)", "result": "Lang's 2015 Cryptologia article and Busbecq code-name papers; no appendix that lists Wyss deciphered."},
+    ],
+    "key_check": "A Wyss key sheet of 1568 is on DECODE (R1548); whether the 1564 cipher is the same system is unknown and was not tested (no image of the letter). The same Karton holds interlinear decipherments of other 1564 Wyss letters (e.g. Hungaricana 45050, 12 Aug 1564, interlinear plus a second cipher copy), which give plaintext to rebuild the key.",
+    "key_in_volume": "Interlinear decipherments of neighbouring 1564 Wyss letters in the same Karton (regests 45050 and others); not online.",
+    "key_held": "DECODE R1548 (Wyss key sheet of 1568, HHStA Staatskanzlei Interiora Chiffrenschluessel Kt. 14 Fasc. 20 f. 415-419); not tested.",
+    "duplicates": "known.py 'Wyss' (14 Nov 2026): only this sweep's own row and the DECODE key; no entry or lead holds Kt. 18 Konv. 1 fol. 78-85; lead 1220 starts at Kt. 29 (1573).",
+    "verdict": "open",
+    "lead_updates": {
+        "access": "archive",
+        "shelfmark": "OeStA HHStA Wien, Staatenabteilungen, Tuerkei I, Karton 18, Konv. 1 (1564 I-II), fol. 78-81, 82-85 (Hungaricana BecsSeg 44944)",
+        "title": "Albert de Wyss, Constantinople -> Ferdinand I, 11 Feb 1564: Latin original in cipher, no decipherment filed",
+        "date": "11 Feb 1564", "year": 1564, "place": "Constantinople",
+        "folio_note": "One letter (Kt. 18 Konv. 1, fol. 78-85). Siblings, not part of this entry: the other Wyss regests of Kt. 16-25 (about 155 naming a cipher; 117 interlinear, 17 'nincs feloldva', mostly duplicates), e.g. 44956 (15 Mar 1564), 45199 (8 May 1565), 45649/45656 (Feb 1567), 45823 (11 Aug 1567); 45536 (31 Aug 1566) is a duplicate copy.",
+    },
+}
+
+# ---------------------------------------------------------------- Rym
+out["2676"] = {
+    "date": D, "by": BY,
+    "seen": {
+        "kind": "not online",
+        "where": HG % "46735",
+        "extent": "Kt. 28 Konv. 5 (Jul-Oct 1572), fol. 87-92 and a second set fol. 93-96 (the duplicate); the letter of 5 Sep 1572, Rym to Maximilian II.",
+        "cipher": "Regest, verbatim: 'Carolus Rym - Miksa (teljesen sifrir, csak a datum feloldva, alul a duplikatum minosites)' = entirely cipher, only the date solved, a duplicate marked at the foot. Leaf not seen: no image online.",
+    },
+    "prior_art": {
+        "decode": "decode_search.py 'Rym' (14 Nov 2026): R389 (NSZL Quart. Lat 2254/19, Carolus Rym, c. 1570) and R390 (Quart. Lat 2254/20, Rym von Eesenbeke, c. 1570), Gevay's copies of Rym cipher sheets; no record for the Vienna despatch of 5 Sep 1572.",
+        "tomokiyo": "Web search naming Tomokiyo, Cryptiana, Carolus Rym and Maximilian II (14 Nov 2026): no Cryptiana page on Rym; the only Tomokiyo hit was an unrelated DECRYPT acknowledgement.",
+        "lasry": "Same search: Kopal-Waldispuehl (Maximilian II, 1575) and Chodkiewicz 1574-75 papers, the DECRYPT project's Habsburg material of the same decade; nothing on Rym's Constantinople despatches.",
+        "edition": FAZ + ". " + LANG % "Rym" + " lists Rym letters C.Rym.01-05 (1570-71, 1573) and C.Ryu.01-08 (1573-74), all deciphered in the letter, and key tables T.Gev.17/18; not 5 Sep 1572.",
+        "literature": "Web search for the Fazekas-Fodor edition (14 Nov 2026) found front matter only; no study of the 1572 Rym cipher.",
+    },
+    "searches": [
+        {"query": "decode_search.py Rym (de-crypt.org RecordsList)", "result": "R389 and R390, Gevay's copies of Rym cipher sheets of c. 1570, held at NSZL; no Vienna despatch."},
+        {"query": "Lang 2015 repertory text layer grep 'Rym' (PyMuPDF)", "result": "Tables pp. 191-193, 250-251: letters C.Rym.01-05 and C.Ryu.01-08 deciphered in-letter, key descriptions T.Gev.17 (monoalphabetic graphic signs) and T.Gev.18 (homophonic, 1-4 signs per letter, nomenclator words); nothing dated 5 Sep 1572."},
+        {"query": "Carolus Rym Maximilian II Constantinople 1572 cipher letters decipherment Habsburg embassy cryptography Tomokiyo cryptiana (web search)", "result": "Maximilian II 1575 letters (Kopal-Waldispuehl), Chodkiewicz letters, Ungnad blog; nothing on Rym."},
+        {"query": "Reports of the Habsburg Envoys in Constantinople 1568-1574 Fazekas Fodor tti.abtk.hu pdf (web search)", "result": "Front matter only (title page, contents, preface); full text not online."},
+    ],
+    "key_check": "Rym's cipher sheets of c. 1570 (Lang T.Gev.17 monoalphabetic graphic signs, T.Gev.18 homophonic with nomenclator words; DECODE R389/R390) are held; whether the 1572 letter uses them was not tested. Rym's earlier and later letters carry in-letter decipherments in the same Karton, giving plaintext for the system.",
+    "key_in_volume": "Interlinear decipherments of neighbouring Rym letters in Kt. 26-28 (e.g. regest 46348, 15 Jul 1570, 'sorkozben felig feloldva'); not online.",
+    "key_held": "DECODE R389 and R390 (Gevay's copies of Rym cipher sheets, NSZL Quart. Lat 2254/19-20); not tested against the 1572 letter.",
+    "duplicates": "known.py 'Rym' (14 Nov 2026): lead 1220 (Rym and Ungnad 1573-77) covers Kt. 29 onward; no entry holds Kt. 28 Konv. 5 fol. 87-96.",
+    "verdict": "open",
+    "lead_updates": {
+        "access": "archive",
+        "shelfmark": "OeStA HHStA Wien, Staatenabteilungen, Tuerkei I, Karton 28, Konv. 5 (1572 VII-X), fol. 87-92, 93-96 (Hungaricana BecsSeg 46735)",
+        "title": "Carolus Rym, Constantinople -> Maximilian II, 5 Sep 1572: wholly ciphered despatch, only the date solved",
+        "date": "5 Sep 1572", "year": 1572, "place": "Constantinople",
+        "folio_note": "One letter (fol. 87-92 with its duplicate fol. 93-96). Siblings, not part of this entry: the other Rym regests of Kt. 26-28 (about 75 naming a cipher): 46741 (28 Sep 1572, a duplicate copy 'nincs feloldva'), 46529, 46398, 46351, 46680, 46667, 46408, 46719, 46410, 46717, 46413; 46523 ('only XVIII can be read'); 46702 (wholly cipher, perhaps Ungnad and Provisionali) and the key-only sheets 'Titkosiraskulcsok, Sifre' in Kt. 28 Konv. 2 fol. 171-180 (46649).",
+    },
+}
+
+# ---------------------------------------------------------------- Busbecq
+out["2677"] = {
+    "date": D, "by": BY,
+    "seen": {
+        "kind": "not online",
+        "where": HG % "44414",
+        "extent": "Kt. 14 Konv. 3 (Jul-Dec 1559), fol. 26-32: the despatch of 6 Aug 1559 from Constantinople, Busbecq to Ferdinand I.",
+        "cipher": "Regest, verbatim: 'Busbeck - I. Ferdinand (sifrir, sorkozben feloldott jelentes)' = cipher, with an interlinear decipherment on the sheet. Leaf not seen: no image online.",
+    },
+    "prior_art": {
+        "decode": "decode_search.py 'Busbecq' (14 Nov 2026): R1220, a Busbecq key sheet of 1559 in HHStA Staatskanzlei Interiora Chiffrenschluessel Kt. 13 Fasc. 20 f. 50-52 (French); no DECODE record for a Busbecq letter of 1559.",
+        "tomokiyo": "Web search naming Busbecq, 1559, Chiffrenschluessel and decipherment (14 Nov 2026): no Cryptiana page on Busbecq's Constantinople despatches.",
+        "lasry": "Same search: nothing by Lasry or DECODE authors on Busbecq's 1559 despatches.",
+        "edition": "Lang's repertory text layer searched for Busbecq (14 Nov 2026): no row for him. The Fazekas-Fodor edition starts in 1568; Nehring's Austro-Turcica ends in 1552. A scholarly article cites the Vienna despatch of 13 Aug 1559 (HHSA Turcica I 14) for the negotiations, without mentioning cipher; whether any edition prints the 6 Aug 1559 despatch was not found.",
+        "literature": "Web search (14 Nov 2026) returned Busbecq biographies, the Turkish Letters and the OAPEN book on Hungarian ciphers; nothing on this despatch's cipher or its decipherment.",
+    },
+    "searches": [
+        {"query": "decode_search.py Busbecq (de-crypt.org RecordsList)", "result": "R1220 only: the 1559 Busbecq key sheet, no ciphertext."},
+        {"query": "Lang 2015 repertory text layer grep 'Busbec' (PyMuPDF)", "result": "No match for Busbecq or Busbeck in the 344 pages."},
+        {"query": "Busbecq 1559 Constantinople cipher despatch Ferdinand I Chiffrenschluessel decipherment Turkish letters code (web search)", "result": "Biographies and the Turkish Letters; a 1559 negotiations article citing the 13 Aug 1559 despatch; nothing on the cipher."},
+    ],
+    "key_check": "DECODE R1220 is a Busbecq key sheet of 1559, the year of this despatch; it has not been tested because the despatch is not online. The interlinear decipherment on the sheet is the second source for the key.",
+    "key_in_volume": "The interlinear decipherment is on the sheet itself (regest 'sorkozben feloldott'); not online.",
+    "key_held": "DECODE R1220 (Busbecq key sheet 1559, Staatskanzlei Interiora Chiffrenschluessel Kt. 13 Fasc. 20 f. 50-52); not tested.",
+    "duplicates": "known.py 'Busbecq' (14 Nov 2026): catalogue 501 is the Amasya letter of 28 May 1555 by Vrancic, Zay and Busbecq (Kt. 11), a different despatch; lead rows for Busbecq's Paris reports are another run. Regest 43971, listed in this sweep's row as Busbecq's, is that Amasya letter (catalogue 501), so it is excluded.",
+    "verdict": "open",
+    "lead_updates": {
+        "access": "archive",
+        "shelfmark": "OeStA HHStA Wien, Staatenabteilungen, Tuerkei I, Karton 14, Konv. 3 (1559 VII-XII), fol. 26-32 (Hungaricana BecsSeg 44414)",
+        "title": "Busbecq, Constantinople -> Ferdinand I, 6 Aug 1559: ciphered despatch with interlinear decipherment on the sheet (key sheet of 1559 on DECODE R1220)",
+        "date": "6 Aug 1559", "year": 1559, "place": "Constantinople",
+        "folio_note": "One despatch (Kt. 14 Konv. 3 fol. 26-32). Siblings, not part of this entry: the other Busbecq regests of Kt. 11-16 (53 in the sweep count, 51 interlinear), e.g. 44189 (17 Aug 1557, Kt. 13 Konv. 2 fol. 111-113). Not Busbecq's alone: 43971 (Amasya, 28 May 1555) is catalogue 501.",
+    },
+}
+
+# ---------------------------------------------------------------- Zay
+out["2678"] = {
+    "date": D, "by": BY, "verdict": "read",
+    "seen": {
+        "kind": "transcription",
+        "where": "Hungaricana regests BecsSeg/43677 (27 Nov 1553, Verancsics and Zay to Ferdinand I, 'latin orig., sifrir, sorkozi feloldassal', MHHS IV. 142-149), 43684 (12 Dec 1553, MHHS IV. 159-160) and 43733 (27 Apr 1554, MHHS IV. 248-249), leaf pages opened in Chrome 14 Nov 2026. The printed pages themselves (Szalay, Verancsics Antal osszes munkai vol. 4, MHH Scriptores 1859) were not opened in this pass.",
+    },
+    "closed": "The letters are by Verancsics and Zay together and are printed in Szalay's edition of Verancsics's works (MHHS IV), with the archive's interlinear decipherment on the sheet: the regests give edition pages 142-149, 159-160 and 248-249 for the sampled letters, and all 24 regests of the run say 'sorkozi feloldassal'. A letter with a contemporary interlinear decipherment that the edition prints is a decipherment, not an open ciphertext. The printed pages were not opened here; the other regests of the run were not checked one by one for an edition page.",
+}
+
+# ---------------------------------------------------------------- Donellan: merge into 1232
+out["2683"] = {
+    "date": D, "by": BY, "verdict": "duplicate",
+    "seen": {"kind": "transcription", "where": HG % "146748 and 146727 (22 Jul 1670, 'orig. latin sifrir es kulon feloldasa')"},
+    "closed": "Same correspondence as lead 1232 (Donellan to Nadasdy, Fasc. 313 Konv. B, 1670). The run is merged into 1232, re-opened this session on the one letter of the run that has no decipherment (29 Aug 1670, Hungaricana 146748); the siblings with a separate decipherment are listed in 1232's folio_note.",
+}
+out["1232"] = {
+    "date": D, "by": BY,
+    "supersedes": "Closed 29 Oct 2026 as a lead whose 'no decipherment' premise could not be reproduced, because the date 29 Aug 1670 was not found. Hungaricana BecsSeg/146748 is that letter: Donellan to Nadasdy, 29 Aug 1670, Fasc. 313 Konv. B fol. 91-92, regest 'orig. latin, reszben sifrir, nincs feloldasa'. It is the one letter of the run without a decipherment.",
+    "seen": {
+        "kind": "not online",
+        "where": HG % "146748",
+        "extent": "Fasc. 313 Konv. B (1670 VI-VIII), fol. 91-92: one Latin letter, partly cipher.",
+        "cipher": "Regest, verbatim: 'Fr. Nicolaus Donellan O. Aug. - Nadasdy Ferenc (orig. latin, reszben sifrir, nincs feloldasa)' = original Latin, partly cipher, no decipherment. Leaf not seen: no image online.",
+    },
+    "prior_art": {
+        "decode": "decode_search.py 'Donellan' (14 Nov 2026): no record. 'Nadasdy' returns Nadasdy key sheets R686, R696, R697 (Ung. Akt. Specialia Verschwoererakten VII Fasc. 327 Konv. D, Chiffres 1664-68) and R648 (NAH P1238 Teleki, 1671), no Donellan letter.",
+        "tomokiyo": "Web search naming Donellan, Nadasdy and cipher (14 Nov 2026): Hungaricana regests only; no Cryptiana page.",
+        "lasry": "Same search: no Lasry or DECODE-project item on the Nadasdy correspondence; the Perwich 1670 decipherment surfaced as unrelated.",
+        "edition": "Lang's repertory text layer searched for Donellan (14 Nov 2026): no row, though 22 pages mention Nadasdy. No edition of Donellan's letters found.",
+        "literature": "Web search (14 Nov 2026): no study of Donellan's letters; the Mihalache 2026 Transylvanian-studies paper surfaced but was not opened.",
+    },
+    "searches": [
+        {"query": "decode_search.py Donellan; Nadasdy (de-crypt.org RecordsList)", "result": "Donellan: none. Nadasdy: key records R686, R696, R697 (Fasc. 327 Konv. D, 1664-68) and R648 (1671)."},
+        {"query": "Lang 2015 repertory text layer grep 'Donellan' (PyMuPDF)", "result": "No match in the 344 pages; Nadasdy appears on 22 pages in other contexts."},
+        {"query": "Donellan Nadasdy 1670 Latin cipher letter Augustinian friar Wesselenyi conspiracy titkosiras (web search)", "result": "Hungaricana regests of the run (146712-146769) only; nothing on the cipher system."},
+        {"query": "Hungaricana BecsSeg leaf pages 146748 and 146727 (Chrome fetch, 14 Nov 2026)", "result": "146748: 29 Aug 1670, partly cipher, 'nincs feloldasa'. 146727: 22 Jul 1670, original in cipher with a separate decipherment."},
+    ],
+    "key_check": "Nadasdy's cipher key sheets are on DECODE (R686, R696, R697 of 1664-68; R648 of 1671) and the run carries separate decipherments (e.g. 146727, 146728, 146739), so plaintext of the same writer's cipher exists in the volume. Whether Donellan used Nadasdy's keys is untested.",
+    "key_in_volume": "Separate decipherments ('kulon feloldasa') of the neighbouring Donellan letters in Fasc. 312-313 (regests 146727, 146728, 146739 and others); not online.",
+    "key_held": "DECODE R686, R696, R697 (Fasc. 327 Konv. D key sheets 1664-68) and R648 (1671); not tested.",
+    "duplicates": "known.py 'Donellan' (14 Nov 2026): lead 1232 itself and this sweep's rows (leads 2683, merged here); no other entry holds Fasc. 313 Konv. B fol. 91-92.",
+    "verdict": "open",
+    "lead_updates": {
+        "access": "archive",
+        "shelfmark": "OeStA HHStA Wien, Ungarische Akten, Specialia, Verschwoererakten IV (Nadasdysche Akten), Fasc. 313 Konv. B (1670 VI-VIII), fol. 91-92 (Hungaricana BecsSeg 146748)",
+        "title": "Fr. Nicolaus Donellan O.Aug. -> Ferenc Nadasdy, 29 Aug 1670, Latin letter partly in cipher, no decipherment",
+        "date": "29 Aug 1670",
+        "folio_note": "One letter (Fasc. 313 Konv. B fol. 91-92). Siblings, not part of this entry (lead 2683 merged here): Donellan letters 'orig. latin sifrir es kulon feloldasa' of Aug 1669 (146676, 146677) and Mar-Aug 1670 (146696, 146698, 146700, 146702, 146706, 146707, 146708, 146712, 146714, 146718, 146719, 146722, 146725-146728, 146732-146734, 146739); 146623 (24 May 1668).",
+    },
+}
+
+# ---------------------------------------------------------------- Gerendi
+out["2686"] = {
+    "date": D, "by": BY, "verdict": "read",
+    "seen": {
+        "kind": "transcription",
+        "where": "Hungaricana regests BecsSeg/142291 (Kolozsvar, 15 Feb 1529), 142482 (15 May 1529) and 142525 (Torda, 1 Jun 1529), leaf pages opened in Chrome 14 Nov 2026: 'Gerendi Miklos erdelyi puspok - I. Ferdinand (orig. latin, sifrir, sorkozben feloldva)' with the edition cited, Schuller, Archiv des Vereins fuer siebenbuergische Landeskunde NF 26 (1894) 639-640, 649-652 and 666-668. The printed pages were not opened.",
+    },
+    "closed": "The sender is Bishop Miklos Gerendi (the sweep row had left the name cut off). The regests give interlinear decipherments and a printed edition (Schuller 1894, with partial earlier prints in Veress, FRT IV) for the sampled letters, and Lang's repertory (pp. 235-236, text layer searched 14 Nov 2026) lists Gerendi's 1529 letters C.Jel.02, 04 and 05 as monoalphabetic graphic-sign ciphers 'a levelben feloldva', with the system of C.Jel.02 solved in the letter. The pieces are read; no open ciphertext in the run was found in the regests. The printed pages were not opened.",
+}
+
+# ---------------------------------------------------------------- Kossuth
+out["2693"] = {
+    "date": D, "by": BY, "verdict": "read",
+    "seen": {
+        "kind": "transcription",
+        "where": "Hungaricana library, Nyulaszine Straub Eva, A Kossuth-emigracio olaszorszagi kapcsolatai 1849-1866 (MOL kiadvanyai II/34, Budapest 1999), viewer MolDigiLib_MOLkiadv2_34 opened in Chrome 14 Nov 2026 at viewer pages 145-150 (documents of March-April 1851, text layer present); the Barics document of 25 Mar 1851 was not located on those pages, so its printed decipherment was not seen in this pass.",
+    },
+    "closed": "The sweep recorded from the Straub volume that the document is printed with Kossuth's own interlinear decipherment above the ciphered French (Dokumentumok p. 138ff, 25 Mar 1851); a printed edition with the decipherment is a decipherment, not an open ciphertext. Not verified here: the page was not found in the viewer, so the claim rests on the sweep's reading of the volume. The key sheet 'Kossuth and Mazzini, 1849-51' (HHStA Informationsbuero A-Akten 7657, regest 62045, 'allegedly' their correspondence) is a separate key-only item and is not covered by this closure.",
+}
+
+UNV = {
+    "2679": "Stoeckl: the two 'nincs feloldva' regests the row names (46230, 18 Sep 1569, 'latin orig. sifrir, de nincs feloldva, 3 duplikatum'; 46258, 24 Dec 1569, 'nincs feloldva, mert duplikatumnak minositettek', a copy at Kt. 26 Konv. 4 fol. 17-20) are copies marked as duplicates, so an original exists; the Fazekas-Fodor edition (2025) covers Stoeckl 1569-70 exactly and its full text is not online. DECODE and Lang's repertory have no Stoeckl. Needs the edition's coverage before any letter counts as open.",
+    "2680": "Provisionali: the only 'csupa sifrir' item (46702, 18 Jun 1572, Kt. 28 Konv. 4 fol. 218-219) is 'probably a copy of a letter of Ungnad and Provisionali' per the regest, so the sender is not established; Provisionali's key sheet is T.Gev.16 (Lang p. 191, 1570) and DECODE R388. The Fazekas-Fodor edition covers him 1569-70. Not narrowed to a letter.",
+    "2681": "Czernovich: 45249 (11 Jul 1565) is marked 'duplikatum, nincs feloldva'; the other ids (44093, 44098) were not opened; web search shows his 1562 reports as Italian with interlinear decipherment. DECODE and Lang's repertory have no Czernovich. Not narrowed to an original.",
+    "2682": "Malvezzi Kt. 8-9: the regests cite Nehring's Austro-Turcica 1541-1552 (pages 418-571) for 30 more pieces, which prints the despatches with their decipherment; leads 891/892 and targets/malvezzi1548 cover two groups. Needs one remaining piece with no Nehring page.",
+    "2684": "Nadasdy Fasc. 309-310 1658-66: senders cut off in the list view and the leaf pages were not opened for them (146425, 7 Feb 1659, Hungarian, 'nincs feloldva', is the candidate). Needs the leaf page for the sender; DECODE Nadasdy keys R686/696/697/648 are the key side.",
+    "2685": "Zrinyi/Gembicki 1669 (Fasc. 296 fol. 75-83): the regest is truncated and Lang's repertory lists the Zrinyi/Gembicki 1669 key at f. 77 as at hand (per the 9 Nov east-north sweep); the letter's status was not read. Needs the leaf page and Lang's row.",
+    "2687": "Nagyszeben 1530-31 Fasc. 15-19: the regests cite Schuller (printed), the senders are unnamed in the list view and the leaf pages were not opened. Needs one letter with no edition page.",
+    "2688": "Martinuzzi 1542: 154603 (6 Oct 1542, Nagyvarad, decipherment on a separate sheet) is printed in Karolyi, Frater Gyorgy levelezese, Torteneti Tar 1878, 501, per its regest; the other three were not opened. Check Karolyi 1878 before treating any as open.",
+    "2689": "Krakow/Olomouc files 1527, Fasc. 4-9 (key of 12 Aug 1527 in Fasc. 5 Konv. B, id 141560): leaf pages not opened; envoy and letters unnamed. Needs one letter and its sender.",
+    "2690": "Naples letter of 18 Sep 1530 (Kt. 1 Konv. 4, id 42325): sender cut off in the regest, 'titkosirassal es feloldas mellette' (decipherment beside it); not opened.",
+    "2691": "Hoffinanz Ungarn 1540 (FHKA RN 1 Konv., ids 3799 and 3803): regests cut off, sender unnamed, German text; not opened.",
+    "2692": "Questenberg letter 1621 (Fasc. 422 fol. 75-76, id 153758), with a 'Chiffrirschluessel' in the same fascicle: leaf page not opened; whether the ciphered part has a decipherment was not read.",
+}
+for k, v in UNV.items():
+    out[k] = {"unvetted": v}
+
+with open(os.path.join(HERE, "vetting.json"), "w", encoding="utf-8") as fh:
+    json.dump(out, fh, ensure_ascii=False, indent=1)
+    fh.write("\n")
+print(len(out))
