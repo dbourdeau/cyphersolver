@@ -236,6 +236,14 @@ pull request #587, which is open and not merged at the time of writing (14 Novem
 The images are federal records, free in the National Archives Catalog; references above are to its image numbers
 (`?objectPage=N` on the catalog pages). No crops are committed, as for the repository's other targets of this kind.
 
+## Reading review
+
+Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
+"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (18 entries) were
+written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
+Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
+maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+
 ## Limits
 
 - The Franklin Papers were checked only by reading the 1776 letters and the 14 Aug 1777 letter and by a few keyword
