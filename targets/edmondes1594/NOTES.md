@@ -216,6 +216,14 @@ Kept apart: what the clear text says, what the cipher adds, and what is inferenc
   from Poitou, the promise of port towns to the English, a royal governor's secret religion, and an unflattering
   account of Biron's hold on the King's army were exactly what could not be risked in an intercepted packet.
 
+## Reading review
+
+Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
+"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (1 entry) were
+written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
+Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
+maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+
 ## 9. Limits, and what would finish it
 
 - Read from the 1892 print; the manuscript in the Cecil Papers is not seen. The print may hide marks that separate the
