@@ -164,7 +164,7 @@ transcription.
   "Kimball" rests on the marriage record, not on the signs, and is marked doubtful (`evidence/R2_A_13R_l4_*`). The
   second Kimball's first name (13R l3) reads l, a or o, v, i, d or f: not settled.
 - **Invisible ink, 9 August 1779** (13R): every word settled, unchanged: "I wrote in my letter to my dear this, if I
-  send you a letter with the uper part plain rub it with your hot box iron and you may read writing where you could see
+  send you a letter with the upper part plain rub it with your hot box iron and you may read writing where you could see
   none." On 19 September (16L): "I sent her a letter [yesterday??] wrote with white [ink?]" (the interlined word is too
   small to read in full; "ink" ends in the probable k sign).
 - **10-15 September (16L)**: "I was on century [sentry] by the river", not "on sentinel of the river"; "the house &
@@ -195,19 +195,24 @@ doubtful; "she" before "went to bed" doubtful).
 
 The repository's rules (`CONTRIBUTING.md`): "A document counts as read only when 95% of its words read as sense (the
 README read bar); one that builds coherent sentences under that is marked "read in part"." and "A document that decodes
-but does not yet build sentences can still be sent, marked "decoded, not read"". The journal stays **read in part**: many
-cipher passages build sentences (the ink recipe of 9 August, the dreams of 16 August, 6 and 8 September, the 8 October
-leave-taking), and it is far under the read bar (513 of 1,041 cipher words confident; `read_share` 0.752 by
-`research/reading_audit/v2_score.py`, probable words counted as holes). "Decoded, not read" would understate those
-passages; "read" is ruled out by the bar.
+but does not yet build sentences can still be sent, marked "decoded, not read"". After Daniel Bourdeau's review of PR
+#670 (15 Nov 2026, his first option), `outcome.texts` has two entries. The **ink recipe of 9 August 1779** (image 13
+right, lines 11-16; `ink_recipe_1779-08-09.md`) is its own entry, **read**: its 22 cipher words are all read with
+confidence and nothing in it is a hole, guess or supplied word (`read_share` 1.0); the review reports that all 22 agree
+on NARA image 13 read with the alphabet A key. The **rest of the journal** is **decoded, not read**: 491 of its 1,019
+cipher words are confident (48.2%); 513 of 1,041 (49.3%) for the whole journal. Our earlier `read_share` for the
+journal as one entry, 0.752 (`research/reading_audit/v2_score.py`, probable words counted as holes), included the plain
+text. The target stays read in part.
 
-"Read in part" requires a `reading_review` graded A or B, "recorded by the reviewer, not by the author of the reading".
-None is recorded. Our agents never wrote one for this journal, and none is added now: grade A ("coherent with scattered
+A "read" or "read in part" entry requires a `reading_review` graded A or B, "recorded by the reviewer, not by the
+author of the reading". None is recorded, for the recipe or the journal. Our agents never wrote one for this journal,
+and none is added now: grade A ("coherent with scattered
 holes") does not fit a text whose sentences mostly hold more than one hole in ten (`_check_reading.py` clean share 0.47
 on `journal_as_written.md`, 0.45 on `journal_modernized.md`), and grade B ("coherent but raw") would assert a coherence
 that the failed blind check (48% of a fixed sample of confident words reproduced, against a mark of 95%) does not let
-the author's agents vouch for. So the required Reading check fails on this folder with "no reading_review" until a
-maintainer reads the journal and records a grade, or decides it is "decoded, not read".
+the author's agents vouch for. With the split, the required Reading check reports one problem: the recipe entry has no
+`reading_review`. It passes once the reviewer records a grade for the recipe; the journal entry, decoded, not read,
+needs none.
 
 **Holes are counted by words.** `CONTRIBUTING.md`: "Holes are counted by words: `[...]` is one unread word, and a hole that
 covers more carries its size, `[... 4]` for four unread words; ... a mark whose extent you cannot tell stays bare and is
@@ -302,6 +307,7 @@ readings against the images is owed before a site page.
 ## Files
 
 `key_systemA_frozen.json`, `key_systemB_frozen.json`, `reconciled_source.txt` (the authority), `reconciled_transcription.tsv`,
-`ciphertext_systemA.txt`, `ciphertext_systemB.txt`, `journal_as_written.md`, `journal_modernized.md`, `validation.tsv`,
+`ciphertext_systemA.txt`, `ciphertext_systemB.txt`, `journal_as_written.md`, `journal_modernized.md`,
+`ink_recipe_1779-08-09.md` (the 9 August 1779 recipe, its own entry in `outcome.texts`), `validation.tsv`,
 `signs/`, `evidence/`, `pass_a/`, `pass_b/`, `second_reading/`, `scripts/` (`build_reconciled.py`, `build_journal.py`,
 `build_validation.py`, `heldout_passB.py`), `profile.json`.
