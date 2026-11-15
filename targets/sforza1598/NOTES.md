@@ -358,3 +358,16 @@ review against the images and no reader review yet. Remaining gaps are workable,
   letter.
 Status: family B read in part, measured 0.89 (below the 95 % bar); the gap is the R/rr4 and 5/S splits (need a token-by-token pass on
 the images to replace the emendations with readings), R5586's second half, and the two digit signs. All workable from the scans.
+
+## 15 Nov 2026 (later): family B emendations checked on the images
+Each of the 43 flagged signs was cropped from the DECODE image at its estimated position (line from an ink profile, x from the token's
+place in the line; `lines.json`) and judged by eye on contact sheets (`chk0-3.png`, git-ignored):
+- `R` -> o (16 places): the image shows the long underlined "rr4" sign, distinct from the plain "r4" (= m) standing nearby; confirmed.
+  Now its own sign `W` = o in `keyB2.json`. (Other `R` tokens not flagged were not re-checked; some may also be W.)
+- `5`/`8` -> S (h) in "che" (22 places): the image shows "ɔ S" (c + h-sign), not the digit 5; confirmed as transcription errors.
+- c->D, N->5, 9->5, Q->5 (5 places): not confirmed on the crops; dropped.
+38 corrections accepted (`v*.txt`). Strict-segmenter read share: R5562 0.905, R5576 0.932, R5572 0.897, R5577 0.910, R5575 0.882,
+R5586 0.828, R5573 0.916; all 0.886. (Lower than the 0.893 with the unconfirmed emendations; the measure under-counts chancery
+spellings, so these figures are a floor; by eye the letters read in sentences with a handful of open words each.)
+Remaining gaps (workable): R5586 second half (rough transcription), the two digit-like signs, unflagged `R`/`W` and other look-alike
+tokens, a reader review of the seven texts, and a proper read-share count by a reader rather than the segmenter.
