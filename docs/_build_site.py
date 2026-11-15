@@ -450,6 +450,7 @@ EXPLORE = [('highlights', 'Highlights', 'Twenty favourites: the funny, the histo
            ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked'),
            ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
            ('keys', 'Key web', 'Which key opened which letter'),
+           ('key-evolution', 'How keys changed', 'Kinds of key, their signs and their size, 1400 to 1950'),
            ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
@@ -963,7 +964,7 @@ def browse_html():
 # The larger of them keep their rules in a sheet of their own, docs/pg-<slug>.css, linked after style.css on that page
 # alone (slug -> a hash of the file); the rest, and pg-solve, stay in style.css.
 PAGE_CSS = {f.stem[3:]: hashlib.sha1(f.read_bytes().replace(b'\r\n', b'\n')).hexdigest()[:8] for f in sorted(HERE.glob('pg-*.css'))}
-PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
+PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'key-evolution', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
 def credit_figures(s):
@@ -1419,6 +1420,8 @@ if __name__ == '__main__':
     print('further: %d partial readings' % F.build_html(PAGES))
     import _archives_page as AR                 # archives.html: requests for archives and libraries, from archive_requests.json
     print('archives: %d open requests' % AR.build_html(PAGES))
+    import _key_evolution_page as KE            # key-evolution.html: the profiles' cipher systems counted by half-century
+    print('key evolution: %d systems' % KE.build_html())
     sys.path.insert(0, str(HERE.parent / 'tools')); import seed_archive_requests as SAR
     new, gone = SAR.main(dry=True, quiet=True)
     if new or gone: print(f'archives: {new} needs-physical-access gaps not in archive_requests.json, {gone} gone from NOTES; run python tools/seed_archive_requests.py')

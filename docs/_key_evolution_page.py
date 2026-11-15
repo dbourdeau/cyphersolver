@@ -1,19 +1,21 @@
-"""Draft: unpublished/key-evolution.html, how the cipher keys in the targets change from 1400 to 1950.
+"""Build docs/key-evolution.html: how the cipher keys in the targets change from 1400 to 1950.
 
-Run from anywhere:  python docs/_key_evolution_page.py          (writes the page)
-                    python docs/_key_evolution_page.py --table  (prints the per-period numbers only)
+Called from _build_site.py before the pages are processed (like archives.html), so it gets the nav and footer; or
+  python docs/_key_evolution_page.py           writes the page (and pg-key-evolution.css)
+  python docs/_key_evolution_page.py --table   prints the per-period numbers only
 
 Every number on the page is counted here from targets/*/profile.json (the `system` block and the documents' years and
 countries) and docs/keys.json (the key web: targets that share one key are counted as one cipher system). Nothing is
 typed in. A field that is "unknown" in a profile is left out of that measure, and each measure shows how many systems
-it rests on. The page is a draft: it is not in the PAGES manifest and lives in unpublished/, which Pages does not serve.
+it rests on. The page's rules are STYLE below, written to pg-key-evolution.css.
 """
-import collections, html, json, pathlib, statistics, sys
+import collections, html, json, pathlib, re, statistics, sys
 
 HERE = pathlib.Path(__file__).resolve().parent.parent
 # --root DIR counts from another checkout (a worktree at origin/main), so a stale working tree does not date the numbers
 ROOT = pathlib.Path(sys.argv[sys.argv.index('--root') + 1]).resolve() if '--root' in sys.argv else HERE
-OUT = HERE / 'unpublished' / 'key-evolution.html'
+OUT = HERE / 'docs' / 'key-evolution.html'
+CSS = HERE / 'docs' / 'pg-key-evolution.css'
 C = collections.Counter
 E = html.escape
 START, END, STEP = 1400, 1950, 50
@@ -23,19 +25,19 @@ MIN_N = 5            # a share resting on fewer known systems is drawn hollow an
 FAMILIES = [('mono', 'Simple substitution', 'one sign for each letter'),
             ('homo', 'Homophonic alphabet', 'several signs for a letter, or signs for syllables, and no word list'),
             ('nomen', 'Nomenclator', 'an alphabet together with a list of signs for names and words'),
-            ('code', 'Code', 'a list of groups for words and phrases, with no cipher alphabet at its centre'),
-            ('poly', 'Polyalphabetic, transposition, machine', 'the letters are shifted by a changing key, or reordered')]
+            ('code', 'Code', 'a list of groups for words and phrases; typed as a code in the profile and not as a nomenclator'),
+            ('poly', 'Polyalphabetic, transposition, polygraphic', 'the letters are shifted by a changing key, reordered, or taken in groups')]
 SIGNS = [('symbols', 'Invented signs', 'symbols, alone or with letters'),
          ('mixed', 'Digits with letters or signs', 'figures mixed with letters or symbols'),
          ('digits', 'Digits only', 'figures only'),
          ('letters', 'Letters', 'letters only')]
-POWERS = [('France', ('France',)), ('Spain', ('Spain',)), ('England and Britain', ('England', 'Great Britain')),
+POWERS = [('France', ('France',)), ('Spain', ('Spain',)), ('England and Britain', ('England', 'Great Britain', 'United Kingdom')),
           ('Italian states', ('Italy', 'Milan', 'Florence', 'Siena', 'Mantua', 'Ferrara', 'Naples', 'Venice', 'Savoy', 'Genoa',
-                              'Urbino', 'Modena', 'Lucca', 'Parma', 'Tuscany')),
-          ('Papacy', ('Papal', 'Papacy')),
+                              'Urbino', 'Modena', 'Lucca', 'Parma', 'Tuscany', 'Duchy of Milan', 'Kingdom of the Two Sicilies')),
+          ('Papacy', ('Papal', 'Papacy', 'Vatican')),
           ('German lands and the Empire', ('Germany', 'Holy Roman Empire', 'Austria', 'Prussia', 'Saxony', 'Bavaria', 'Hesse',
                                            'Brandenburg', 'Palatinate')),
-          ('Netherlands', ('Dutch Republic', 'Netherlands', 'Batavian Republic')),
+          ('Netherlands', ('Dutch Republic', 'Netherlands', 'The Netherlands', 'United Provinces', 'Batavian Republic', 'Kingdom of Holland')),
           ('United States', ('United States', 'Confederate States'))]
 
 
@@ -70,6 +72,9 @@ def flag(v):
     return v if isinstance(v, bool) else None
 
 
+SKIPPED = []          # profiles typed "not a cipher": not counted
+
+
 def load():
     """One row per cipher system: the targets joined by a shared key in the key web count once (the earliest)."""
     web = json.loads((ROOT / 'docs' / 'keys.json').read_text(encoding='utf-8'))
@@ -83,6 +88,7 @@ def load():
     for l in web['links']:
         if l['how'] in ('read unchanged', 'rebuilt from', 'partial'):
             parent[find('t:' + l['target'])] = find(l['key'])
+    del SKIPPED[:]
     groups, n_targets = collections.defaultdict(list), 0
     for f in sorted((ROOT / 'targets').glob('*/profile.json')):
         try:
@@ -92,6 +98,7 @@ def load():
         s = p.get('system') or {}
         fam = family(s)
         if fam is None:
+            SKIPPED.append(p['target'])
             continue
         n_targets += 1
         years = [x['year'] for x in p['documents'] if isinstance(x.get('year'), int)]
@@ -120,10 +127,10 @@ def load():
 
 FEATURES = [('homophones', 'Homophones', 'more than one sign for a letter'),
             ('nulls', 'Nulls', 'signs that mean nothing'),
-            ('syllables', 'Syllable signs', 'signs for syllables, in the alphabet or the list'),
+            ('syllables', 'Syllable signs', 'signs for syllables, in the alphabet or the list; a lower bound'),
             ('marks', 'Marks on the signs', 'dots, strokes or bars that change a sign’s value'),
-            ('disordered', 'Disordered key', 'values not in alphabetical order, so one known value does not give the next'),
-            ('wordbreaks', 'Word breaks kept', 'the gaps between words survive in the ciphertext')]
+            ('disordered', 'Disordered key', 'values in no alphabetical order; a partly alphabetical key counts as ordered'),
+            ('wordbreaks', 'Word breaks kept', 'the gaps between words survive, wholly or in part; a separator sign does not count')]
 
 
 def tabulate(rows):
@@ -184,11 +191,18 @@ def unit_tip(r):
 
 
 def short(r, n=64):
-    t = (r['title'] or r['target']).split(' (')[0]
+    t = r['title'] or r['target']
     for sep in (': ', '; '):
         if sep in t and len(t.split(sep)[0]) > 18:
             t = t.split(sep)[0]
-    return t if len(t) <= n else t[:n - 1].rsplit(' ', 1)[0] + '…'
+    if len(t.split(' (')[0]) > 30:
+        t = t.split(' (')[0]
+    return t if len(t) <= n else t[:n - 1].rsplit(' ', 1)[0] + '\u2026'
+
+
+def num(v):
+    """A median: whole when it is whole, one decimal when it falls between two values."""
+    return f'{v:,.0f}' if float(v).is_integer() else f'{v:,.1f}'
 
 
 def columns(rs):
@@ -405,9 +419,9 @@ def sizes(T):
             path.append(f'{xmid(i):.1f} {Y(med):.1f}')
         out.append(f'<text x="{xmid(i):.1f}" y="{base + 33}" text-anchor="middle" class="nn">{n} systems</text>'
                    f'<g class="pt"><rect class="iqr" x="{xmid(i) - 11:.1f}" y="{Y(q3):.1f}" width="22" height="{max(Y(q1) - Y(q3), 3):.1f}" rx="5"'
-                   f'{tip(f"{label(b)}\nmedian {med:,.0f} signs or groups\nmiddle half {q1:,} to {q3:,} · {n} systems")}/>'
+                   f'{tip(f"{label(b)}\nmedian {num(med)} signs or groups\nmiddle half {q1:,} to {q3:,} · {n} systems")}/>'
                    f'<circle class="s1{" hollow" if late or n < MIN_N else ""}" cx="{xmid(i):.1f}" cy="{Y(med):.1f}" r="5.5" pointer-events="none"/>'
-                   f'<text class="medv" x="{xmid(i):.1f}" y="{Y(q3) - 8:.1f}" text-anchor="middle">{med:,.0f}</text></g>')
+                   f'<text class="medv" x="{xmid(i):.1f}" y="{Y(q3) - 8:.1f}" text-anchor="middle">{num(med)}</text></g>')
     out.insert(3, f'<path class="line s1 trend" d="M{" L".join(path)}"/>')
     out.append('</svg>')
     return f'<div class="vfig">{"".join(out)}</div>'
@@ -428,8 +442,8 @@ def data_table(T):
         r = T[b]
         body.append(f'<tr><th>{label(b)}</th><td>{r["n"]}</td>' + ''.join(cell(r['fam'][k], r['det']) for k, _, _ in FAMILIES)
                     + cell(r['signs']['digits'], r['signs_n']) + ''.join(cell(*r[k]) for k, _, _ in FEATURES)
-                    + (f'<td>{r["size"][1]:,.0f}</td>' if r['size'] else '<td class="na">–</td>')
-                    + (f'<td>{r["entries"][1]:,.0f}<small> /{r["entries"][3]}</small></td>' if r['entries'] else '<td class="na">–</td>') + '</tr>')
+                    + (f'<td>{num(r["size"][1])}<small> /{r["size"][3]}</small></td>' if r['size'] else '<td class="na">–</td>')
+                    + (f'<td>{num(r["entries"][1])}<small> /{r["entries"][3]}</small></td>' if r['entries'] else '<td class="na">–</td>') + '</tr>')
     return f'<div class="vfig"><table class="ktable heat"><thead>{head}</thead><tbody>{"".join(body)}</tbody></table></div>'
 
 
@@ -452,16 +466,33 @@ def powers_table(dated):
             '<th>Last cipher in invented signs</th><th>First code</th><th>Largest key</th></tr></thead><tbody>' + ''.join(out) + '</tbody></table></div>')
 
 
+def credit_of(r):
+    """The credit the write-up gives the picture whose thumbnail is used, or None (then the card is not used)."""
+    page = ROOT / 'docs' / (r['target'] + '.html')
+    if not r.get('thumb') or not page.exists():
+        return None
+    base = re.sub(r'-480\.webp$', '', r['thumb'])
+    m = re.search(r'<figure[^>]*data-credit="([^"]+)"[^>]*>\s*<img src="' + re.escape(base) + r'\.', page.read_text(encoding='utf-8'))
+    return m.group(1) if m else None
+
+
 def era(dated, lo, hi, k=3):
     """An era block: what the counts say in one line, and up to k systems with a page (and a picture) on the site."""
     rs = [r for r in dated if lo <= r['year'] < hi]
     det = [r for r in rs if r['fam'] != 'undet']
-    fam, fn = C(r['fam'] for r in det).most_common(1)[0]
-    sg, sn = C(r['signs'] for r in rs if r['signs']).most_common(1)[0]
+    def tops(counter):
+        best = counter.most_common(1)[0][1]
+        return [k for k, v in counter.most_common() if v == best], best
+    fams, fn = tops(C(r['fam'] for r in det))
+    sgs, sn = tops(C(r['signs'] for r in rs if r['signs']))
     sn_all = sum(1 for r in rs if r['signs'])
-    top, tn = C(r['power'] for r in rs if r['power'] != 'Elsewhere').most_common(1)[0]
-    name = f'{tn} of them from {top if top.startswith(("France", "Spain", "England")) else "the " + top}'
-    cand = sorted((r for r in rs if r['page'] and r['thumb'] and r['fam'] != 'undet' and 40 < len(r['summary']) < 300),
+    pws, tn = tops(C(r['power'] for r in rs if r['power'] != 'Elsewhere'))
+    the = lambda t: t if t.startswith(('France', 'Spain', 'England')) else 'the ' + t
+    name = ' and '.join(f'{tn} from {the(t)}' for t in pws)
+    WORDS = {'nomen': ('nomenclator',), 'code': ('code',), 'homo': ('homophon',), 'mono': ('simple substitution', 'monoalphabetic', 'one sign'),
+             'poly': ('transposition', 'polyalphabetic', 'vigen', 'columnar')}
+    says = lambda r: any(w in r['summary'].lower() for w in WORDS[r['fam']]) and not (r['fam'] != 'code' and 'code' in r['summary'].lower()[:60] and r['fam'] == 'nomen')
+    cand = sorted((r for r in rs if r['page'] and r['thumb'] and r['fam'] != 'undet' and 40 < len(r['summary']) < 300 and says(r) and credit_of(r)),
                   key=lambda r: (r['year'], r['target']))
     seen, pick = set(), []
     for r in cand:                                    # one per kind of system first, then spread across the years
@@ -473,12 +504,15 @@ def era(dated, lo, hi, k=3):
             pick.append(r)
     pick.sort(key=lambda r: r['year'])
     cards = ''.join(
-        f'<a class="card hasthumb" href="../docs/{E(r["target"])}.html"><img class="thumb" src="../docs/thumbs/{E(r["thumb"])}" alt="" loading="lazy">'
+        f'<a class="card hasthumb" href="{E(r["target"])}.html"><img class="thumb" src="thumbs/{E(r["thumb"])}" alt="" loading="lazy">'
         f'<div class="eyebrow"><span>{E(FAM_NAME[r["fam"]])}</span><span class="when">{r["year"]}</span></div>'
         f'<h3>{E(short(r, 58))}</h3><p>{E(r["summary"])}</p><span class="go">Write-up &rarr;</span></a>' for r in pick)
     return (f'<section class="kera"><h3 class="tier">{lo} to {hi - 1} <small>{E(name)}</small></h3>'
-            f'<p class="eraline"><b>{len(rs)}</b> systems &middot; <b>{pct(fn, len(det))}%</b> {E(FAM_NAME[fam].lower())} &middot; '
-            f'<b>{pct(sn, sn_all)}%</b> in {E(SIGN_NAME[sg].lower())}</p><div class="cards">{cards}</div></section>')
+            f'<p class="eraline"><b>{len(rs)}</b> systems &middot; ' + ' and '.join(f'<b>{pct(fn, len(det))}%</b> {E(FAM_NAME[f].lower())}' for f in fams)
+            + f' (of the {len(det)} whose kind is determined) &middot; ' + ' and '.join(f'<b>{pct(sn, sn_all)}%</b> in {E(SIGN_NAME[g].lower())}' for g in sgs)
+            + f' (of {sn_all} recorded)</p>'
+            f'<div class="cards">{cards}</div>'
+            + '<p class="cap kcred">Images: ' + ' '.join(f'<b>{r["year"]}</b> {credit_of(r)}.' for r in pick) + '</p></section>')
 
 
 STYLE = '''
@@ -519,7 +553,7 @@ STYLE = '''
 .kfig .vchart{width:100%;height:auto;display:block}
 .kfig .vfig .vchart{min-width:600px}
 .khero .kfig .vfig .vchart{min-width:0}
-.kfig .cap,.cap{font-size:.84rem;color:var(--muted);margin:.7rem 0 0;line-height:1.45}
+.kfig .cap,.ksec .cap,.khero .cap{font-size:.84rem;color:var(--muted);margin:.7rem 0 0;line-height:1.45}
 .vchart rect.seg{stroke:none;transition:opacity .15s}
 .kstack .col.thin{opacity:.78}
 .kstack:hover .col{opacity:.5}.kstack .col:hover{opacity:1}
@@ -548,8 +582,6 @@ STYLE = '''
 .ktable.left td,.ktable.left th{text-align:left}
 .ktable small{color:var(--muted);font-size:.72rem}.ktable .thin,.ktable .na{color:var(--muted)}
 .ktable.heat td[style]{background:color-mix(in srgb,var(--gold) calc(var(--h) * .34%),transparent)}
-.kdraft{display:flex;gap:.8rem;align-items:baseline;border:1px dashed color-mix(in srgb,var(--gold) 55%,transparent);border-radius:999px;padding:.45rem 1.1rem;color:var(--muted);font-size:.84rem;margin:1.6rem 0 0}
-.kdraft b{color:var(--gold);font-family:var(--ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
 #ktip{position:fixed;z-index:80;pointer-events:none;max-width:300px;padding:.5rem .7rem;border-radius:9px;background:var(--panel3);border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);
  box-shadow:var(--shadow);color:var(--ink);font:400 .8rem/1.4 var(--ui);white-space:pre-line;opacity:0;transition:opacity .12s}
 #ktip.on{opacity:1}#ktip::first-line{color:var(--head);font-weight:600}
@@ -563,7 +595,6 @@ STYLE = '''
 .kfind:first-child{border-left:0;padding-left:0}.kfind::before{display:none}
 .kfind b{font-size:2.5rem;margin:.5rem 0 .55rem}.kfind b i{color:var(--gold);font-size:.6em;margin:0 .18em;vertical-align:.12em}
 .kfind p{font-size:.88rem;color:var(--muted)}
-.hero .kdraft{display:inline-flex;margin:1.2rem 0 0;padding:.3rem .9rem;font-size:.78rem}
 .ksec{margin:3.4rem 0 0;padding-top:2.4rem;border-top:1px solid var(--rule)}
 .ksec > h2{font-size:1.85rem;line-height:1.15;gap:.9rem}
 .ksec > h2 .num{font-family:var(--display);font-size:1rem;letter-spacing:.04em;color:var(--gold);opacity:.9}
@@ -595,13 +626,13 @@ STYLE = '''
 .kpanel .big{font-size:1.9rem}
 .ksize .trend{stroke:var(--gold);opacity:.8}
 .kera{margin:0 0 2rem}
+.kera .kcred{font-size:.74rem;line-height:1.5}.kera .kcred b{color:var(--ink2);font-weight:600;font-family:var(--mono)}
 @media (max-width:760px){.kfinds{grid-template-columns:1fr 1fr}.kfind{padding:1.1rem 1rem}.kfind:nth-child(odd){border-left:0;padding-left:0}.kfind:nth-child(n+3){border-top:1px solid var(--rule)}
  .krow{grid-template-columns:1fr;gap:.1rem}.krow .kl{padding-bottom:0}.krow.kaxis .kl{display:none}}
-@media (max-width:640px){.khero .kfig .vfig .vchart{min-width:560px}.kfig{padding:1rem .9rem .9rem}.kfind b{font-size:1.8rem}.kdraft{border-radius:var(--radius);flex-direction:column;gap:.2rem}}
+@media (max-width:640px){.khero .kfig .vfig .vchart{min-width:560px}.kfig{padding:1rem .9rem .9rem}.kfind b{font-size:1.8rem}}
 '''
 
 SCRIPT = '''<script>
-try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){}
 (function(){var tip=document.createElement('div');tip.id='ktip';document.body.appendChild(tip);
 function show(e){var el=e.target.closest&&e.target.closest('[data-tip]');if(!el){tip.classList.remove('on');return}
  tip.textContent=el.dataset.tip;tip.classList.add('on');var w=tip.offsetWidth,h=tip.offsetHeight,x=e.clientX+14,y=e.clientY+16;
@@ -630,6 +661,11 @@ def build():
     web = json.loads((ROOT / 'docs' / 'keys.json').read_text(encoding='utf-8'))
     kinds = C(k['kind'] for k in web['keys'])
     n_powers = len({r['country'] for r in dated if isinstance(r['country'], str) and r['country'] != 'unknown'})
+    und = C(r['method'] for r in dated if r['fam'] == 'undet')
+    lean = [n for n, _ in C(r['power'] for r in dated if r['power'] != 'Elsewhere').most_common(3)]
+    lean = [n if n.startswith(('France', 'Spain', 'England')) else 'the ' + n for n in lean]
+    late_letters = C(r['fam'] for r in dated if r['year'] >= 1850 and r['signs'] == 'letters')
+    mono_zero = [label(b) for b in BINS if T[b]['det'] and not T[b]['fam']['mono']]
 
     def share(b0, b1, field, key, nfield):        # pooled share over the bins b0..b1 (inclusive starts)
         bs = [b for b in BINS if b0 <= b <= b1]
@@ -654,18 +690,16 @@ def build():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How cipher keys changed, 1400 to 1950</title>
-<meta name="description" content="A count across {len(dated)} cipher systems worked on in this project: which kinds of key were in use in each half-century from 1400 to 1950, what they were written in, how large they were, and which devices came and went.">
-<link rel="stylesheet" href="../docs/style.css">
-<style>{STYLE}</style>
+<title>How cipher keys changed, 1400 to 1949</title>
+<meta name="description" content="A count across {len(dated)} cipher systems worked on in this project: which kinds of key the project's systems show in each half-century from 1400 to 1949, what they are written in, how large they are, and which devices come and go.">
+<link rel="stylesheet" href="style.css">
 </head>
-<body id="top">
-<header class="nav"><div class="in"><a class="brand" href="../docs/index.html"><span class="glyph">972</span><span>Unsolved Historical Ciphers</span></a></div></header>
+<body id="top" class="pg-key-evolution">
+<!-- site:nav -->
 <section class="hero">
   <p class="kicker">Five and a half centuries of keys</p>
   <h1>How cipher keys changed</h1>
   <p class="sub">{len(dated)} cipher systems from {START} to {END - 1}, counted from the project's own records: what kind of key each one was, what it was written in, how large it grew, and which devices came and went.</p>
-  <p class="kdraft"><b>Draft</b><span>Not published. Numbers counted from the profiles; commentary not yet claims-reviewed.</span></p>
 </section>
 <div class="khero">
 <figure class="kfig">
@@ -677,27 +711,27 @@ def build():
 </div>
 <main>
 <div class="kfinds">
-<div class="kfind"><span class="n">Kind</span><b>{nom_all}%</b><p>of the systems from 1400 to 1799 are nomenclators: an alphabet with a list of names and words.</p></div>
-<div class="kfind"><span class="n">Signs</span><b>{sym15}%{arrow}{sym18}%</b><p>in invented signs, fifteenth century against eighteenth. Figures take their place.</p></div>
-<div class="kfind"><span class="n">Size</span><b>{med(1400)}{arrow}{med(1750)}</b><p>distinct signs in the median key, 1400&ndash;49 against 1750&ndash;99.</p></div>
-<div class="kfind"><span class="n">Codes</span><b>{code_early}%{arrow}{code_1800}%</b><p>codes with no cipher alphabet, before 1750 against 1800&ndash;49.</p></div>
+<div class="kfind"><span class="n">Kind</span><b>{nom_all}%</b><p>of the systems from 1400 to 1799 whose kind is determined are nomenclators: an alphabet with a list of names and words.</p></div>
+<div class="kfind"><span class="n">Signs</span><b>{sym15}%{arrow}{sym18}%</b><p>in invented signs, fifteenth century against eighteenth, of the systems whose signs are recorded.</p></div>
+<div class="kfind"><span class="n">Size</span><b>{med(1400)}{arrow}{med(1750)}</b><p>distinct signs in the median key, 1400&ndash;49 ({T[1400]['size'][3]} systems) against 1750&ndash;99 ({T[1750]['size'][3]}).</p></div>
+<div class="kfind"><span class="n">Codes</span><b>{code_early}%{arrow}{code_1800}%</b><p>codes that are not nomenclators, before 1750 against 1800&ndash;49, of the systems whose kind is determined.</p></div>
 </div>
 <nav class="toc"><span>On this page</span><a href="#families">Kinds</a><a href="#signs">Signs</a><a href="#powers">Powers</a><a href="#devices">Devices</a><a href="#size">Size</a><a href="#periods">Examples</a><a href="#method">What is counted</a></nav>
 
 <section class="ksec" id="families">
 <h2><span class="num">01</span>The nomenclator holds for four centuries</h2>
-<p class="lede">From the first half-century counted to the end of the eighteenth, the nomenclator is never under {nom_min}% of the systems whose kind is determined. Codes with no cipher alphabet are {code_early}% before 1750, {code_1750}% in 1750&ndash;99 and {code_1800}% in 1800&ndash;49.</p>
+<p class="lede">From the first half-century counted to the end of the eighteenth, the nomenclator is never under {nom_min}% of the systems whose kind is determined. Systems typed as codes and not as nomenclators are {code_early}% before 1750, {code_1750}% in 1750&ndash;99 and {code_1800}% in 1800&ndash;49.</p>
 <figure class="kfig">
 <h4>Kinds of system: share of each half-century's systems</h4>
 {rows_chart(T, FAMILIES, 'fam', 'det', 'systems')}
-<p class="cap">Every row is on the same scale, so a bar twice as tall is twice the share. The gold bar is the kind's peak. A system that combines kinds is counted once, under the first it matches in this order: polyalphabetic or transposition, nomenclator, code, homophonic, simple. Paler bars rest on fewer than 25 systems.</p>
+<p class="cap">Every row is on the same scale, so a bar twice as tall is twice the share. The gold bar is the kind's peak. A system that combines kinds is counted once, under the first it matches in this order: polyalphabetic, transposition or polygraphic; nomenclator; code; homophonic; simple. A system with a word list beside its alphabet is a nomenclator even when the profile also calls it a code. Paler bars rest on fewer than 25 systems.</p>
 </figure>
-<p>Polyalphabetic and transposition systems are {share(1400, 1700, 'fam', 'poly', 'det')}% before 1750 and {share(1850, 1900, 'fam', 'poly', 'det')}% from 1850 on. Simple substitution never disappears: it is {share(1400, 1750, 'fam', 'mono', 'det')}% of the systems before 1800 and {share(1800, 1900, 'fam', 'mono', 'det')}% after.</p>
+<p>Polyalphabetic, transposition and polygraphic systems are {share(1400, 1700, 'fam', 'poly', 'det')}% before 1750 and {share(1850, 1900, 'fam', 'poly', 'det')}% from 1850 on. Simple substitution is {share(1400, 1750, 'fam', 'mono', 'det')}% of the systems before 1800 and {share(1800, 1900, 'fam', 'mono', 'det')}% after{(", with none in " + " or ".join(mono_zero)) if mono_zero else ""}.</p>
 </section>
 
 <section class="ksec" id="signs">
 <h2><span class="num">02</span>Invented signs give way to figures</h2>
-<p class="lede">Ciphers written in figures alone are {dig[0]}% of the fifteenth-century systems, {dig[1]}% of the sixteenth, {dig[2]}% of the seventeenth and {dig[3]}% of the eighteenth. After 1850 letters return ({share(1850, 1900, 'signs', 'letters', 'signs_n')}%), with the telegraph codes and the field ciphers.</p>
+<p class="lede">Ciphers written in figures alone are {dig[0]}% of the fifteenth-century systems, {dig[1]}% of the sixteenth, {dig[2]}% of the seventeenth and {dig[3]}% of the eighteenth. From 1850 letters are {share(1850, 1900, 'signs', 'letters', 'signs_n')}% of the systems; of those {sum(late_letters.values())} systems, {late_letters['poly']} are polyalphabetic, transposition or polygraphic and {late_letters['code']} are codes.</p>
 <figure class="kfig">
 <h4>What the ciphertext is written in, share by half-century</h4>
 {stacked(T, SIGNS, 'signs', 'signs_n', 'What the ciphertext is written in, by half-century', {k: SIGN_CLASS[k] for k in SIGN_CLASS if k})}
@@ -706,25 +740,26 @@ def build():
 </section>
 
 <section class="ksec" id="powers">
-<h2><span class="num">03</span>Each power makes the change in its own decades</h2>
-<p class="lede">The same squares, one lane per power. The move from invented signs to figures is not one date: read along a lane to see when the gold ends for that chancery in what the project holds.</p>
+<h2><span class="num">03</span>The change falls in different decades for each power</h2>
+<p class="lede">The same squares, one lane per power. The move from invented signs to figures is not one date: read along a lane to see when the gold ends for that power in what the project holds.</p>
 <figure class="kfig">
 <h4>The systems of each power, by year</h4>
 {sign_legend()}
 <div class="vfig">{lanes(dated)}</div>
-<p class="cap">The power is the one that owned the cipher. The dates are those of the systems counted here, not of first or last use anywhere.</p>
+<p class="cap">The power is the country the profile gives for most of a target's documents. It is usually the owner of the cipher, but not always: an envoy's letters can be filed under the court he wrote from, and a few lanes hold private manuscripts. The dates are those of the systems counted here, not of first or last use anywhere.</p>
 </figure>
 <details class="fold"><summary>First and last cases by power</summary>
 {powers_table(dated)}
+<p class="cap">Read these as pointers into the collection, with the same caution about the country label: several of the cases named are filed under a country that did not own the cipher, and some are unread or of undetermined kind.</p>
 </details>
 </section>
 
 <section class="ksec" id="devices">
 <h2><span class="num">04</span>Devices that come and go</h2>
-<p class="lede">Homophones are recorded in {feat(1400, 1600, 'homophones')}% of the systems from 1400 to 1649 and {feat(1800, 1900, 'homophones')}% of those from 1800 on. Nulls go the same way ({feat(1400, 1600, 'nulls')}% and {feat(1800, 1900, 'nulls')}%).</p>
+<p class="lede">Of the systems where the profile says either way, {feat(1400, 1600, 'homophones')}% have homophones from 1400 to 1649 and {feat(1800, 1900, 'homophones')}% from 1800 on. Nulls go the same way ({feat(1400, 1600, 'nulls')}% and {feat(1800, 1900, 'nulls')}%).</p>
 {multiples(T)}
-<p class="cap">Each panel is the share of systems that have the device, among those where the profile records it either way; the figure at the right is the last half-century. A hollow point rests on fewer than {MIN_N} systems.</p>
-<p>Marks that change a sign's value are {feat(1500, 1650, 'marks')}% of the systems from 1500 to 1699 against {feat(1700, 1900, 'marks')}% after. The disordered key is {feat(1400, 1650, 'disordered')}% before 1700 and {feat(1700, 1900, 'disordered')}% from 1700; it is recorded for fewer systems than the other devices, because the order of a key can only be judged once most of it is recovered.</p>
+<p class="cap">Each panel is the share of systems that have the device, among those where the profile records it either way; the figure at the right is the latest half-century with at least {MIN_N} such systems. A hollow point rests on fewer than {MIN_N}. Syllable signs are the exception: a system counts as without them whenever its kind is determined and the profile lists none, so that share is a lower bound. For the disordered key, keyword-derived keys and systems with no sign table are left out.</p>
+<p>Marks that change a sign's value are {feat(1500, 1650, 'marks')}% of the systems from 1500 to 1699 against {feat(1700, 1900, 'marks')}% after. The disordered key is {feat(1400, 1650, 'disordered')}% before 1700 and {feat(1700, 1900, 'disordered')}% from 1700; it is recorded for fewer systems than the other devices.</p>
 </section>
 
 <section class="ksec" id="size">
@@ -743,32 +778,23 @@ def build():
 {era(dated, 1500, 1650)}
 {era(dated, 1650, 1800)}
 {era(dated, 1800, 1950)}
-<p class="cap">Each picture is from the linked write-up, where its source is credited.</p>
 </section>
 
 <section class="ksec" id="method">
 <h2><span class="num">07</span>What is counted</h2>
 <div class="stats">
 <div class="stat"><b>{len(dated)}</b><span>systems, {START}&ndash;{END - 1}</span></div>
-<div class="stat"><b>{n_targets}</b><span>target profiles</span></div>
+<div class="stat"><b>{n_targets}</b><span>target profiles counted</span></div>
 <div class="stat"><b>{len(web["keys"])}</b><span>keys in the key web</span></div>
-<div class="stat"><b>{n_powers}</b><span>powers, as the profiles name them</span></div>
+<div class="stat"><b>{n_powers}</b><span>country labels in the profiles</span></div>
 </div>
-<p>The unit is a cipher system: one key, or one code, as recorded in a target's <code>profile.json</code>. Targets that the <a href="../docs/keys.html">key web</a> joins to the same key count once, at the earliest dated document. That gives {len(rows)} systems from {n_targets} targets; {len(dated)} are dated between {START} and {END - 1} ({out_of_range} fall outside those years and {undated} have no year). For {undet} of the {len(dated)} the kind of system is not determined, usually because the cipher is unread; they are left out of the first chart and stay in the others where the field in question is known.</p>
-<div class="callout amber"><p>This is a count of what the project has worked on, not a sample of what chanceries produced. It leans towards France, Spain, England and the Italian states, towards 1500 to 1650, and towards collections that are digitised. A key that survives without a letter, and a letter nobody has photographed, are both missing.</p></div>
-<p>The key web holds {kinds["rebuilt here"]} keys rebuilt here from ciphertext, {kinds["scholar's key"]} published by scholars, {kinds["DECODE key record"]} DECODE key records, {kinds["contemporary key"]} contemporary keys and {kinds["archive key"]} archive keys. Its entries carry a year and a description in prose, not the fixed fields used above, so this page counts from the profiles; keys in the web that no target uses yet are not counted.</p>
+<p>The unit is a cipher system: one key, or one code, as recorded in a target's <code>profile.json</code>. Targets that the <a href="keys.html">key web</a> joins to the same key count once, at the earliest dated document. That gives {len(rows)} systems from {n_targets} targets ({len(SKIPPED)} more profiles are not ciphers and are left out); {len(dated)} are dated between {START} and {END - 1} ({out_of_range} fall outside those years and {undated} have no year). For {undet} of the {len(dated)} the kind of system is not determined ({und['not solved']} of them not solved); they are left out of the first chart and stay in the others where the field in question is known.</p>
+<div class="callout amber"><p>This is a count of what the project has worked on, not a sample of what chanceries produced. It leans towards {lean[0]}, {lean[1]} and {lean[2]}, towards 1500 to 1650, and towards collections that are digitised. A key that survives without a letter, and a letter nobody has photographed, are both missing.</p></div>
+<p>The key web holds {kinds["rebuilt here"]} keys rebuilt here, {kinds["scholar's key"]} recovered by other scholars, {kinds["DECODE key record"]} DECODE key records, {kinds["contemporary key"]} contemporary keys and {kinds["archive key"]} archive keys. Its entries carry a year and a description in prose, not the fixed fields used above, so this page counts from the profiles; keys in the web that no target uses yet are not counted.</p>
 <details class="fold"><summary>The numbers behind every chart</summary>
 {data_table(T)}
-<p class="cap">Shares are of the systems where the field is recorded; hover a cell for the count. Shares on fewer than {MIN_N} systems are greyed. Median size is in distinct signs or groups; median list is the number of nomenclator or code entries, with the number of systems that record it.</p>
+<p class="cap">Shares are of the systems where the field is recorded; hover a cell for the count. Shares on fewer than {MIN_N} systems are greyed. Median size is in distinct signs or groups and median list is the number of nomenclator or code entries, each with the number of systems that record it. The commentary on this page states what the counts show and is not set against the literature on the nomenclator and the code.</p>
 </details>
-<h3>Open questions for this draft</h3>
-<ul>
-<li>A system is dated by its earliest document, so a key in use for decades is counted once, at its start.</li>
-<li>About half the profiles leave <code>key_order</code>, <code>nulls</code> or <code>homophones</code> as unknown. Filling them for the targets whose key is recovered would firm up the device panels.</li>
-<li>The keys that have no target (DECODE key records, printed keys) could be coded on the same fields and added, which would reduce the lean towards letters the project chose to attack.</li>
-<li>The commentary states only what the counts show. It is not yet set against the literature on the nomenclator and the code.</li>
-<li>The example pictures are the write-ups' own thumbnails; each needs its credit line here before the page is published.</li>
-</ul>
 </section>
 </main>
 {SCRIPT}
@@ -778,13 +804,21 @@ def build():
     return page, T, rows
 
 
-if __name__ == '__main__':
+def build_html():
     page, T, rows = build()
+    css = STYLE.strip() + '\n'
+    if not CSS.exists() or CSS.read_text(encoding='utf-8') != css:
+        CSS.write_text(css, encoding='utf-8', newline='\n')
+    OUT.write_text(page, encoding='utf-8', newline='\n')
+    return len(rows)
+
+
+if __name__ == '__main__':
     if '--table' in sys.argv:
+        page, T, rows = build()
         for b in BINS:
             r = T[b]
             print(label(b), 'n', r['n'], 'det', r['det'], dict(r['fam']), '| signs', dict(r['signs']), '|',
                   {k: r[k] for k, _, _ in FEATURES}, '| size', r['size'], '| entries', r['entries'])
     else:
-        OUT.write_text(page, encoding='utf-8')
-        print(f'wrote {OUT}: {len(rows)} systems, counted from {ROOT}')
+        print(f'wrote {OUT}: {build_html()} systems, counted from {ROOT}')
