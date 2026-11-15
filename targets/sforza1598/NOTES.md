@@ -270,3 +270,113 @@ E = t breaks "beneficio" (long-barred o read f on the crop), c = d contradicts t
 model's taste for common letters. Adopted only P = i (fits "regoai[i]", "per[i]", "racosi[i]"): `key_h5.json`.
 Conclusion: more text sharpens the solver signal but does not move the reading past about 0.47-0.48; the key is stable. The rest needs
 cleaner signs (ASMi images) or a contemporary key; family C is left read in part.
+
+## 15 Nov 2026: family B (id 2629), R5562 deciphered on the first pass, key from the ciphertext alone
+`famB/r5562_hand.txt`: R5562 (cart. 1598 no. 88, stamped 134), 14 lines, 686 signs, all cipher (no clear text), read from a 2/3-scale
+render and line crops; about 35 sign types (letters, digits, crossed tt/ff/pp/n/m ligatures, o with a cross, q with a cross).
+CTTS (period Italian, n-gram 5, 4 homophones, 240 s), two seeds agree: 24.09 M against 10.73 M shuffled (ratio 2.24). Dictionary
+cover of the decryption: 0.99 with words of 2+ letters (shuffled 0.93), 0.65 with 4+ letters (shuffled 0.26). The text reads as
+continuous Italian (`famB/oa.txt`), word division added here, spelling as decrypted:
+"Firensa de presimo et t'avisai Nicodemo de tutto quello che intesi per tenire al signore. Trovai Iovan Galeasmo in quela cita,
+venuto a cercare partiti cum Fiorentini facendo soldati, o cum lo signore; le dimande sue sono grande, e cum lui era uno [famiglio?]
+di l'arcivescovo mandato per sentire di qua ... desiderio et espectatione di cose nove. Ma se pur al signor parese di prendere
+alcun partito cum meser Ludovico, ma advertite che sua signoria el facio obligare per Tomasino, el quale intende temperare le cose de
+Corsica in li primi movimenti de importantia ... A Firensa trovai le cose molto in [?]; non ne scrivo altro ... Nicodemo como ... el
+quale ancho avisai de uno ambasiatore venitiano ... Iovan Galeasmo dove va venir a far pratiche a Firanse e poi andare a Roma.
+... die quinto decembris etcetera."
+Key (solver, `oa.txt`): a = 8 X p; c = D; d = 4; e = P m x; f = N; g = Q; i = F v; l = c; m = R; n = O; o = 7 k; p = H; r = 3; s = T;
+t = 9; u/v = 5 a; b = +; h = S; q = y; s = d g. Simple homophonic substitution, no code words seen.
+Context: Nicodemo (Tranchedini, Sforza agent in Florence?), Giovanni Galeazzo, messer Ludovico (il Moro?), Tomasino (Campofregoso?)
+and Corsica point to the 1470s-80s; not checked against dated sources. Status: R5562 read as sentences on a first-pass
+transcription; a few words open. Next: re-check the doubtful spots on the image, measure the read share, and decrypt the other six
+family B slips (R5572, R5573, R5575-R5577, R5586) with this key.
+
+## 15 Nov 2026 (later): family B, five more slips decrypted with the R5562 key unchanged
+Key `famB/keyB.json` (solved on R5562 only), applied without any re-solve. Dictionary cover with words of 4+ letters (same signs
+shuffled in brackets): R5562 0.65 (0.15), R5576 0.67 (0.15), R5572 0.64 (0.17), R5577 0.65 (0.10), R5575 0.60 (0.16), R5586 0.64 (0.16).
+Decryptions `famB/dec*.txt`; each reads as continuous Italian (cover below 1.0 because the measure skips short words and names):
+- R5576 (452 signs, complete): "Non vi ho scripto de la venuta de Iohan Galeasmo in questa terra perche non era al fine ... meser
+  Ludovico ha avuto da Firense ... del consiglio ducale ... uno doctore mio parente venuto ieri da Firense mi diceva aver inteso da uno
+  residente in quela cita per il duca di Modena che el conte Guido Rangone per venir presto di qua mandato dal suo duca ... Sarsane
+  die septe iunii etcetera."
+- R5572 (407 signs, complete): "Meser Ludovico ha mandato a Sena uno Bartolomeo Borella ... per intendere e praticare ... madona
+  duchessa gubernatore ... retenendo in lei castelleto ... per via de Piero de Cosmo ... Tomasino manda uno Marcelino in Corsica per
+  sulevare li Corsi ... cum madona qualche composicione honesta ... Sarsane tredese martii etcetera."
+- R5577 (577 signs, complete): "De qua non accade altro al presente se non che meser Ludovico e Tomasino sono in molte diferentie e
+  ogni volta piu cresce l'odio e la difidentia fra loro. El podesta de Ponsano ... io andero questo septembre a Volterra per observare
+  la fede ... finito lo oficio tornero ... io bisogno de ducati quaranta per espedire certi mei strecti bisogni ... pregare madona et el
+  signore ... bon servidore de le vostre illustrissime signorie. Sarsane die decimoseptimo iulii etcetera." (two digit-signs 6, 10 left
+  as written.)
+- R5575 (first 12 lines, 592 signs): "Respondo a la vostra ricevuta heri; Nicodemo va sempre confortato meser Ludovico circa la
+  specialita del signore ... la electione di la cancelaria di Volterra la quale acceptai non per voglia ... ogni sinistro ... el tempo
+  non comincia fino a octobre ... seguiro l'ordine nostro cum Nicodemo."
+- R5586 (first 6 lines, 348 signs): "... cum Fiorentini non e stata alcuna ... per parte de meser Ludovico ... dato al signore tale
+  aviso ... suspecto ... certi ... dato aviso a Nicodemo ... meser Ludovico a uscire."
+Setting: the writer is at Sarzana (dated "Sarsane", 5 Dec, 7 June, 13 March, 17 July), reports to the duchess and duke (madona e el
+signore) on messer Ludovico, Tomasino (Fregoso) and Corsica, Florence, Siena and Volterra; Nicodemo is his correspondent or channel.
+That fits the regency of Bona of Savoy and Gian Galeazzo (1476-80) with Ludovico in exile, but the dating is not checked.
+Status: family B read on a first-pass transcription (six letters, key from the ciphertext alone, confirmed on five letters it was not
+fitted on). Not yet done: R5573 (full page), the rest of R5575 and R5586, word-level review against the images, measured read share.
+
+## 15 Nov 2026 (later): family B complete, all seven letters decrypted
+Rest of R5575 (now complete, 1,004 signs) and R5586 (now complete, 974 signs) transcribed, and R5573 (a 7-line slip, 261 signs,
+not a full page as the triage thought). All decrypted with `keyB.json` unchanged. Total 4,363 cipher signs.
+4+ letter word cover (no shuffle in brackets this time; shuffles were 0.10-0.17 above): R5562 0.65, R5576 0.67, R5572 0.64,
+R5577 0.65, R5575 0.60, R5586 0.54, R5573 0.62; all 0.61.
+- R5575 end: "... me pare habiate a fare altra provisione, perche me pare haver tolta via ogni rasone et a meser Ludovico, e mi incresce
+  ch'io habia acceptato dicto oficio, nondimeno fate como vi pare meglio. Iovan Galeaso mi disse questi di a Firense haver havuto
+  letera da Iovan Coscia che volese mandare uno de li soi al duca Iovani per bona casone, e che gli voleva mandare uno Piero del
+  Cerreto, famiglio di l'arcivescovo ... intrinsico e pratico di la lingua e del paese. Sarsane die vigesimo februarii etcetera."
+- R5586 rest (rougher transcription): "... per la restitutione de ... [Fiorentini?] non entrerano in tel facende sensa consenso del signore;
+  il simil credo del duca de Modena ... meser Ludovico, el quale per le morte de meser Ieronimo ... in terre de Firentini ... Iovan
+  Galeaso cerca per mio meso havere le licentia da meser Ludovico ... sconforterò la cosa ... se pur meser Ludovico inclinase al denaro
+  infra quatro di ... Firentia die octavo febrarii."
+- R5573 (complete): "El messo de Tomasino e tornato de Corsica; diceva aver trovato e lasato quele cose in pacifico, ma che Tomasino era
+  in pensiero de moversi per sua specialita. Le cose ocorse di qua mi sono parute simile a quele di sè vala ... credo sero a Milano de poi
+  Pasqua e satisfaro piu a pieno. Sarsane die vinti tre marcii etcetera."
+Family B status: all seven letters decrypted with one key recovered from the ciphertext alone (outcome: key recovered from
+ciphertext-only), confirmed on six letters it was not fitted on, each reading as dated Italian sentences. Not yet at the read bar as
+measured: first-pass transcriptions, R5586 second half rough, two digit-like signs (6, 10) and a few words open; no word-by-word
+review against the images and no reader review yet. Remaining gaps are workable, not blocked.
+
+## 15 Nov 2026 (later): family B review
+- `flag.py`: every sign position re-scored with a 5-gram letter model (period Italian); 130 positions where one other sign would read
+  much better. Two systematic look-alike merges in the transcription explain most of them:
+  1. `R` covers two shapes, a plain "r4" ligature (= m) and a longer underlined "rr4" (seen on R5572 l.1); in "lvdovic[R]",
+     "bartol[R]meo", "servid[R]re", "tenend[R]", "molt[R]" the sign must be o.
+  2. `5` and `S` (5-like v sign and 5-like h sign) were merged: "c[5]e" must be "che" (S = h): 13 places.
+  Also c / D (l vs c) in a few places.
+- 43 emendations applied for these look-alike pairs only, with a model gain of 10+ (`emend.json`, emended tokens `e*.txt`). They are
+  editorial: each fits a known look-alike and the context, but they have not each been checked on the image.
+- Read share, strict segmenter (dictionary words of 4+ letters seen 5+ times in the corpus, a closed list of short function words, the
+  names; chancery spellings and u/v count against it), first pass / emended: R5562 0.897 / 0.915, R5576 0.921 / 0.932,
+  R5572 0.882 / 0.902, R5577 0.899 / 0.910, R5575 0.872 / 0.894, R5586 0.830 / 0.836, R5573 0.916 / 0.916; **all 0.893 emended**.
+  Segmented readings with unread pieces in brackets: `famB/read*.txt`.
+- What the unread 11 % is, read by eye: mostly words the segmenter cannot place but that read (spellings like "tvto", "cvi", "vebi",
+  "facio", "sarvane"; split words such as "lvdo vi cma"), a few names (Iovan Coscia, Piero del Cerreto, Marcelino), the two digit-like
+  signs (6, 10), and R5586's second half where the transcription is rough. Genuinely unread stretches by eye are a handful of words per
+  letter.
+Status: family B read in part, measured 0.89 (below the 95 % bar); the gap is the R/rr4 and 5/S splits (need a token-by-token pass on
+the images to replace the emendations with readings), R5586's second half, and the two digit signs. All workable from the scans.
+
+## 15 Nov 2026 (later): family B emendations checked on the images
+Each of the 43 flagged signs was cropped from the DECODE image at its estimated position (line from an ink profile, x from the token's
+place in the line; `lines.json`) and judged by eye on contact sheets (`chk0-3.png`, git-ignored):
+- `R` -> o (16 places): the image shows the long underlined "rr4" sign, distinct from the plain "r4" (= m) standing nearby; confirmed.
+  Now its own sign `W` = o in `keyB2.json`. (Other `R` tokens not flagged were not re-checked; some may also be W.)
+- `5`/`8` -> S (h) in "che" (22 places): the image shows "ɔ S" (c + h-sign), not the digit 5; confirmed as transcription errors.
+- c->D, N->5, 9->5, Q->5 (5 places): not confirmed on the crops; dropped.
+38 corrections accepted (`v*.txt`). Strict-segmenter read share: R5562 0.905, R5576 0.932, R5572 0.897, R5577 0.910, R5575 0.882,
+R5586 0.828, R5573 0.916; all 0.886. (Lower than the 0.893 with the unconfirmed emendations; the measure under-counts chancery
+spellings, so these figures are a floor; by eye the letters read in sentences with a handful of open words each.)
+Remaining gaps (workable): R5586 second half (rough transcription), the two digit-like signs, unflagged `R`/`W` and other look-alike
+tokens, a reader review of the seven texts, and a proper read-share count by a reader rather than the segmenter.
+
+## 15 Nov 2026 (later): R5586 lines 7-18 re-read on the image
+Lines 7-18 re-viewed at 2.5x (`h0-h5.png`, git-ignored). The earlier transcription was close: four corrections (three underlined
+"rr4" = W = o in ll. 7, 15, 16; l. 7 "H M G +" and l. 17 end). R5586 read share 0.828 -> 0.833; family B 0.887.
+What keeps R5586 low is not the transcription but the text: damaged and creased edges (end of ll. 9, 11, 12 lost in folds and
+holes), an erased word in l. 13, and the date line "dd o+ T o+ bb 6" in signs outside the letter key (numerals?). The decryption
+reads in sentences where the paper is whole (`famB/read86.txt`).
+Family B gaps now: physical damage in R5586 (outside blocker for those few words), the numeral-like signs (6, 10, dd, bb, o+), and
+the reader review. Measured 0.887 with a strict segmenter that counts chancery spellings as unread.
