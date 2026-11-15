@@ -50,3 +50,56 @@ All letters unread; no key matched yet. Blocker: none external; work not yet don
 
 ## Escalation
 Not started beyond triage (siblings: cart. 1597 keys; clear passages as cribs).
+
+## 14 Nov 2026: family C (id 2630), first solver pass, no signal
+Nine letters (R5502-R5506, R5514, R5515, R5517, R5518; 12 pages) extracted from the PDFs at native resolution (about 1,750 px wide) to `famC/`
+(git-ignored). Sign reader copied from sforza1597 (`signreader.py lines` + `extract2`, SR_SENSITIVE, block 41, C 12, big area 100): 16,055 glyphs on
+374 lines. `f2tokens2.py` Ward clustering, CTTS headless (period Italian corpus `lm_qc`, n-gram 5):
+- 60 clusters, 4 homophones, 300 s: 7.31 M against 6.48 M shuffled (ratio 1.13).
+- 35 clusters, 3 homophones, 240 s: 7.45 M against 6.86 M shuffled (ratio 1.09).
+Decryptions are letter salad. R5464 in cart. 1597 gave 1.67 with the same chain, so this is a failure of the reader, not evidence against Italian.
+Why: the letters interleave clear Italian/Latin (salutation "Illustrissime princeps", "quando", "sempre quella"), which the reader cuts into
+glyphs too; the signs are 12-18 px tall; and dotted signs (p with a raised o, o-dot-o, x with a dot) split into pieces.
+Seen by eye on R5518 at 2x: the alphabet is small and legible (o, inverted T, +, 6, 8, 1, 9, 2, z, 3, p, raised-o p, x, crossed stroke, f, v, T, t, d,
+long s, o-dot-o, / ), with some word spacing. A hand transcription is workable: R5518 (15 lines, about 500 signs) first, clear words marked
+as cribs, then extend to R5514/R5517.
+
+## 14 Nov 2026: R5518 transcribed by hand, family C key partly recovered (ciphertext only)
+`famC/hand/r5518_hand_v2.txt`: R5518 (cart. 1598 no. 44, 11 lines of cipher after the clear opening "Illustrissime princeps et ex.me domine";
+a clear phrase "quando ... la V.ra Ill.ma Sig.ria" in line 2), 563 signs, about 36 sign types, read from 3x crops of each line.
+v1 (`r5518_hand.txt`) merged three signs as one q and lost the line beginning with the crossed stroke (a comment filter); v2 splits
+q / h (hooked, like a turned y) / y (open reversed 9) and restores the line.
+CTTS headless (period Italian corpus, n-gram 5, up to 4 homophones, 300 s), shuffled-token control each time:
+- v1 (506 signs): 16.90 M vs 11.75 M shuffled (1.44).
+- v2 without the lost line (506): 19.02 M vs 12.72 M (1.50).
+- v2 full (563): 18.60 M vs 11.97 M (1.55); two seeds give the same key (`famC/hand/v3a.txt`).
+Key (homophonic, about 2 signs per vowel): + T = a; z w = a; 1 = c; v = d; 2 d f = e; e = f; 3 = g; h = m; u = m; q = n; S = n; 6 = o; l t = o;
+# = p; 7 = q; L = r; 8 R = s; P m = s; b = t; c = t; r = b; - 4 X Q = i; o y = u/v; p = l. The ct sign is a cipher sign here (t), not the clear "et".
+Readable stretches in the decryption (spelling of the chancery, u/v merged):
+- l. 9 "mente adoperarme in bene[f]icio del vostra stato ... subito"
+- l. 10 "de cio avisarme"
+- l. 8 "in ordine ... fornire de le cose necesvrae (necessarie) e acio ..."
+- l. 6 "... pericvla ... come poria ..."
+- l. 5 "... in qviesto paese per cvrestia (carestia?) ... de ogni [a]ltra cosa sia"
+- l. 3 "... la cosa ... conclusione ... aspecto"; l. 7 "... electione del ..."
+Lines 1, 2, 4 and 11 do not read yet. Known problems: the o sign takes u in "qviesto" but a in "ogni altra" and "carestia", so it is
+probably two signs (plain o and o with a top stroke, written "o -" in places) merged; + and t may be confused; e is f in "beneficio" and
+"fornire" but the solver flips it to d. Status: R5518 read in part (estimate: about half the text in words; not yet measured), key from the
+ciphertext alone. Next: re-check o / o-with-stroke and + / t on the image, fix the key by hand from the cribs above, then decrypt R5514
+and R5517 (same family) with this key as the check.
+
+## 14 Nov 2026 (later): R5514 transcribed, joint solve with R5518 reads in long stretches
+`famC/hand/r5514_hand.txt`: R5514 (cart. 1598 no. 40), 26 lines, 1,853 cipher signs, with long clear passages left out ("che merita
+possuto io fare cosa alcuna che fosse grata a la V.ra Ill.ma Sig.ria ...", "a qual cosa prego cum ogni instantia ...", "a qual cosa
+racordo", "prego La V.ra Ill.ma S.ria voglia"). New sign O (o with a top stroke) kept apart from o here (R5518 v2 still merges them).
+Joint CTTS run on R5518 + R5514 (`tj.txt`, 2,416 signs, 400 s, two seeds agree): 17.46 M against 8.67 M shuffled, **ratio 2.01**.
+Decryption with the solver key and r = b: `famC/hand/dec_joint.txt`. Share of letters in dictionary words of 4-12 letters (greedy, period
+corpus): R5518 0.39, R5514 0.51, shuffled-token control 0.23 (so roughly 15-30 points of real words; far from the read bar).
+R5514 stretches that read (u/v merged, chancery spelling): "la qual cosa grandemente me sto ... per adoperar ben del vostro stato",
+"... a roma ... castro ... el quale a posto", "la civita di ... a cremona", "... in questa ... nel paese ... per persone inteligenti",
+"... secreti ... ", "risposta ... scrito", "secreto ... seguire", "per le ... scrito ... scrivere", "a la cosa", "lo vostro stato".
+Key changes from R5518 alone: r = b (was c), the theta sign reads f in "beneficio"/"fornire" but t in "scrito"/"secreto": probably two
+signs (barred o and theta) that the transcription merges; same for o / O in R5518.
+Status: family C read in part (R5514 and R5518), key recovered from the ciphertext alone; not yet at the read bar.
+Next: (1) split theta and o/O on the images of both letters; (2) hand-fix the key from the word stretches; (3) transcribe R5517 and
+R5515 and decrypt them with the fixed key as an out-of-sample check; (4) then R5502-R5506 (two-page letters).

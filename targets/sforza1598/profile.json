@@ -4,14 +4,14 @@
  "title": "Sforza chancery letters in cipher, ASMi cart. 1598 and 1591 (catalogue 1311)",
  "documents": [
   {
-   "id": "R5482",
-   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 (DECODE R5482)",
+   "id": "R5518",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 44 (DECODE R5518)",
    "date": "unknown",
    "year": "unknown",
    "country": "Italy",
    "route": "unknown",
    "language": "Italian",
-   "cleartext_in_document": "none",
+   "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
      "none"
@@ -19,25 +19,56 @@
     "source": "unknown"
    },
    "length": {
-    "tokens": 0,
-    "distinct": 0,
+    "tokens": 563,
+    "distinct": 36,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "famC/hand/t2.txt"
    },
    "transcription": {
-    "by": "unknown",
-    "source": "not transcribed",
-    "image_quality": "good",
-    "notes": "Seen at 150 dpi only."
+    "by": "llm from images",
+    "source": "by eye from 3x crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "q/h/y split in v2; o vs o-with-stroke and + vs t still uncertain."
    },
-   "read": "not read"
+   "read": "read in part"
+  },
+  {
+   "id": "R5514",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 40 (DECODE R5514)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": 1853,
+    "distinct": 40,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famC/hand/t14.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from 3x crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "O kept apart from o; theta probably two signs."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
   "types": [
    "homophonic"
   ],
-  "summary": "Pool of many keys and hands. R5482: capital letter with superscript number (code groups) mixed with single signs, a code or nomenclator.",
+  "summary": "Pool of many keys. Family C (R5518 etc.): homophonic substitution, about 36 signs (numerals, crosses, letter shapes), about two signs per vowel, Italian. R5482: a code.",
   "symbol_kind": "symbols",
   "distinct_symbols": 60,
   "diacritics": {
@@ -95,11 +126,73 @@
    "kind": "statistics",
    "what": "Grouped all 110 letters by sign hand on 110-dpi strips; catalogue 1311 split into 18 entries (2628-2645: 17 families + 1 miscellany of 38 singletons); 9 clear leaves excluded.",
    "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Family C (R5502-R5506, R5514, R5515, R5517, R5518): automatic sign reader (sforza1597 signreader.py v2), 16,055 glyphs, clustered to 60 and to 35 signs.",
+   "result": "partial"
+  },
+  {
+   "kind": "solver",
+   "what": "CTTS headless, period Italian corpus: 60 clusters 7.31 M vs 6.48 M shuffled (1.13); 35 clusters 7.45 M vs 6.86 M (1.09). No words.",
+   "result": "failed",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ]
+  },
+  {
+   "kind": "control",
+   "what": "Shuffled-token control run alongside each solve; the real tokens barely beat it.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5518 transcribed by hand from 3x crops: 563 signs, about 36 types (v2 splits three q-like signs merged in v1).",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "CTTS on the hand transcription: v1 1.44, v2 1.55 against shuffled; two seeds agree on the key.",
+   "result": "partial"
+  },
+  {
+   "kind": "reading",
+   "what": "Italian phrases read: \"mente adoperarme in beneficio del vostra stato\", \"de cio avisarme\", \"in ordine ... fornire de le cose necessarie\", \"in questo paese per carestia\".",
+   "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5514 transcribed by hand from 3x crops: 1,853 cipher signs, clear passages left out.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Joint CTTS on R5518 + R5514 (2,416 signs): 17.46 M vs 8.67 M shuffled (2.01); two seeds agree.",
+   "result": "partial"
+  },
+  {
+   "kind": "control",
+   "what": "Dictionary-word share of the decryption (4-12 letters, greedy): R5514 0.51, R5518 0.39, shuffled 0.23.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "R5514 reads in stretches: \"la qual cosa grandemente ... per adoperar ben del vostro stato\", \"a roma\", \"a cremona\", \"per persone inteligenti\", \"risposta ... scrito\", \"secreto\".",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Triage only so far.",
+  "method_basis": "R5518 partly decrypted with a key recovered from the ciphertext alone (no external key); about half the text reads, not yet measured.",
   "contribution": [
    "none"
   ],
