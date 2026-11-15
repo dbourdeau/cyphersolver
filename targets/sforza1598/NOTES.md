@@ -50,3 +50,16 @@ All letters unread; no key matched yet. Blocker: none external; work not yet don
 
 ## Escalation
 Not started beyond triage (siblings: cart. 1597 keys; clear passages as cribs).
+
+## 14 Nov 2026: family C (id 2630), first solver pass, no signal
+Nine letters (R5502-R5506, R5514, R5515, R5517, R5518; 12 pages) extracted from the PDFs at native resolution (about 1,750 px wide) to `famC/`
+(git-ignored). Sign reader copied from sforza1597 (`signreader.py lines` + `extract2`, SR_SENSITIVE, block 41, C 12, big area 100): 16,055 glyphs on
+374 lines. `f2tokens2.py` Ward clustering, CTTS headless (period Italian corpus `lm_qc`, n-gram 5):
+- 60 clusters, 4 homophones, 300 s: 7.31 M against 6.48 M shuffled (ratio 1.13).
+- 35 clusters, 3 homophones, 240 s: 7.45 M against 6.86 M shuffled (ratio 1.09).
+Decryptions are letter salad. R5464 in cart. 1597 gave 1.67 with the same chain, so this is a failure of the reader, not evidence against Italian.
+Why: the letters interleave clear Italian/Latin (salutation "Illustrissime princeps", "quando", "sempre quella"), which the reader cuts into
+glyphs too; the signs are 12-18 px tall; and dotted signs (p with a raised o, o-dot-o, x with a dot) split into pieces.
+Seen by eye on R5518 at 2x: the alphabet is small and legible (o, inverted T, +, 6, 8, 1, 9, 2, z, 3, p, raised-o p, x, crossed stroke, f, v, T, t, d,
+long s, o-dot-o, / ), with some word spacing. A hand transcription is workable: R5518 (15 lines, about 500 signs) first, clear words marked
+as cribs, then extend to R5514/R5517.

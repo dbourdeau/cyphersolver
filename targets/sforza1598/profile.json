@@ -95,6 +95,25 @@
    "kind": "statistics",
    "what": "Grouped all 110 letters by sign hand on 110-dpi strips; catalogue 1311 split into 18 entries (2628-2645: 17 families + 1 miscellany of 38 singletons); 9 clear leaves excluded.",
    "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Family C (R5502-R5506, R5514, R5515, R5517, R5518): automatic sign reader (sforza1597 signreader.py v2), 16,055 glyphs, clustered to 60 and to 35 signs.",
+   "result": "partial"
+  },
+  {
+   "kind": "solver",
+   "what": "CTTS headless, period Italian corpus: 60 clusters 7.31 M vs 6.48 M shuffled (1.13); 35 clusters 7.45 M vs 6.86 M (1.09). No words.",
+   "result": "failed",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ]
+  },
+  {
+   "kind": "control",
+   "what": "Shuffled-token control run alongside each solve; the real tokens barely beat it.",
+   "result": "worked"
   }
  ],
  "outcome": {
