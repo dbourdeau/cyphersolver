@@ -1,4 +1,4 @@
-# Thomas Edmondes to [Lord Burghley], from the camp before Laon, 9 July 1594: the reading
+# Thomas Edmondes to an unnamed lord, from the camp before Laon, 9 July 1594: the reading
 
 The whole letter as the Historical Manuscripts Commission printed it (*Calendar of the Manuscripts of the Marquis of
 Salisbury*, part IV, 1892, pp. 559-560), with our reading of the cipher put in place of the printed cipher letters.

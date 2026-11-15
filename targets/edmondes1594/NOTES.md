@@ -1,4 +1,4 @@
-# Thomas Edmondes to [Lord Burghley], camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560
+# Thomas Edmondes to an unnamed lord, camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560
 
 Status: in progress (folder only, no page). Read in part: the cipher is read from the 1892 print, with the manuscript
 unseen. 636 of the 651 printed cipher letters are read (97.7%); by words, 130 of 135 cipher words, or 130 of 147 when the
@@ -15,8 +15,10 @@ volume or folio). Edmondes was the Queen's agent with Henri IV. The letter is in
 cipher letters, 651 letters in all, which the editor printed as letters and left undeciphered, and several signs for
 persons, which the editor printed as cuts (facsimiles) or figures. The volume's index has "Cipher letters
 undeciphered; 484, 559" and "Cipher used by Mr. Edmunds; 559". The letter speaks of "yor L." commandment, so it is
-addressed to a lord; The National Archives' catalogue lists the same day's despatch as "Edmondes to Burghley" (section
-6), so the addressee is very probably Burghley.
+addressed to a lord, who is not named. Lord Burghley remains possible (the letter is in the Cecil Papers, and its lord
+is to sound the Queen), but he is no longer "very probable": that rested on The National Archives' catalogue entry
+"Edmondes to Burghley" of the same day, which belongs to a different letter (section 6), and Edmondes's cipher passages
+to Burghley of 13 and 23 July 1594 (SP 78/33 ff. 349v and 366) are in signs and figures, not this letter cipher.
 
 Images: Internet Archive, item [11576077bsb](https://archive.org/details/11576077bsb) (Bayerische Staatsbibliothek
 copy), leaves 581-582. `images/p559_cipher.jpg` and `images/p560_cipher.jpg` are crops of the cipher passages from those
@@ -156,22 +158,26 @@ Kept apart: what the clear text says, what the cipher adds, and what is inferenc
 
 ## 6. Who read it before, and what we add
 
-- **1594.** The National Archives' catalogue (Discovery, record C7318548) lists **SP 78/33 item 170, folio 345:
-  "1594 July 9. Edmondes to Burghley, and copy."** Same writer, same day; very probably the same despatch, and the
-  "copy" very probably the clear copy or decipherment made in Burghley's office. So the text was read first by
-  Edmondes's correspondent's office in 1594. Not seen; not used.
+- **1594.** No decipherment of 1594 is known. The National Archives' catalogue (Discovery, record C7318548) lists
+  **SP 78/33 item 170, folio 345: "1594 July 9. Edmondes to Burghley, and copy."** An earlier state of these notes
+  called it "very probably the same despatch" and its copy a decipherment. It is neither. SP 78/33 ff. 345-346 is **a
+  different letter of the same day**, signed by Edmondes and addressed to Burghley, three pages wholly in clear (the
+  siege, Mayenne's peace terms, general news), with no cipher, no sentence in common with this letter and no mention
+  of it; ff. 347-348 is a clerk's copy of that clear letter, not a decipherment. So no word of this reading is
+  confirmed or contradicted by a parallel text.
+  How it was read: from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online,
+  by AI agents in two independent passes. No person has checked it. The images are licensed and are not included here.
 - **Later.** No later reading of this cipher found in: HMC Salisbury IV (the letter itself; index), V, XIII and XIV
   (Internet Archive texts); Birch, *Memoirs of the Reign of Queen Elizabeth* (1754); Birch, *Historical View of the
   Negotiations* (1749; checked upstream in Sept 2026); G. G. Butler, *The Edmondes Papers* (Roxburghe Club, 1913), which
   prints Edmondes's letters of 4, 20 and 30 June and 23 July 1594 but none of 9 July; Tomokiyo, *Cryptiana*
   (Elizabethan ciphers page); DECODE (only the Stowe 166 records).
-- **Not read, and it matters:** the *List and Analysis of State Papers, Foreign Series, Elizabeth I*, vol. 5 (July
-  1593 - December 1594, ed. R. B. Wernham, 1989) could not be read: it is in copyright, not on the Internet Archive or
-  British History Online, and HathiTrust holds it search-only. In-volume searches put Laon on pp. 239-241 and Bouillon,
-  Laon and Montpensier together on pp. 243 and 245. It may summarize this despatch from the State Papers copy, so **the
-  substance may already be in print** even though this cipher text was never read.
+- **Print summary: none found.** The *List and Analysis of State Papers, Foreign Series, Elizabeth I*, vol. 5 (July
+  1593 - December 1594, ed. R. B. Wernham, 1989) was read in part (the list entries for these letters and pp. 236-246,
+  from pages saved at the Library of Congress on 14 November 2026; by an AI agent, not checked by a person): it does
+  not summarize this letter. Its Brittany section was not seen.
 - **What we add:** the reading of the cipher as the Cecil Papers text prints it, and its key (the base shift and the
-  extra equivalents). This is a solution from the cipher alone, not with the help of the 1594 copy.
+  extra equivalents). This is a solution from the cipher alone; no decipherment or clear copy of this letter is known.
 
 ## 7. Corrections from the independent check (14 Nov 2026), applied here
 
@@ -230,25 +236,25 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
   homophones, and the editor misread some letters (g/q, n/u).
 - 15 letters unread; 67 words rest on a value chosen by sense and 5 are weak.
 - The person signs are not deciphered; their identifications are inference.
-- The two further witnesses are not seen: the State Papers copy (SP 78/33 f. 345) and its summary, if any, in the
-  *List and Analysis* vol. 5.
-- What would finish it: **State Papers Online** (Gale) for SP 78/33 ff. 345 and after, which would check the whole
-  reading at once and show who deciphered it in 1594 (or a copy ordered from The National Archives); the **Cecil Papers
-  images** (ProQuest's Cecil Papers collection) for the homophone marks and the 15 unread letters; and *List and
-  Analysis* vol. 5, pp. 239-246, in a library copy.
+- There is no second witness. SP 78/33 ff. 345-348 is a different letter of the same day, in clear, with its clerk's
+  copy (section 6), and the *List and Analysis* vol. 5 (list and pp. 236-246 read) does not summarize this letter; its
+  Brittany section was not seen.
+- What would finish it: **only the Hatfield manuscript can check the reading**: the **Cecil Papers images** (ProQuest's
+  Cecil Papers collection, or a copy ordered from Hatfield House) for the reading as a whole, the homophone marks and
+  the 15 unread letters.
 
 ## Remaining gaps
 
-- 15 printed cipher letters not read (A2 6, A11 6, B1 3) - blocker: needs-physical-access (manuscript or State Papers copy; the print may misread them)
+- 15 printed cipher letters not read (A2 6, A11 6, B1 3) - blocker: needs-physical-access (the Hatfield manuscript; the print may misread them)
 - person signs 55, the m-sign, ho-sign and oo-sign, and the figures 4s, 300, 26 (12 occurrences) - blocker: no-key-material (one letter, no key or decipherment seen)
-- values chosen by sense, the printed "to" as cipher, and the assumed g/q and n/u misreadings - blocker: needs-physical-access (only the manuscript or the 1594 copy can confirm them)
+- values chosen by sense, the printed "to" as cipher, and the assumed g/q and n/u misreadings - blocker: needs-physical-access (only the Hatfield manuscript can confirm them)
 
 ## Escalation
 
-- [x] siblings: the volume's other Edmondes letters (pp. 371, 620, 622) have no cipher; p. 484 is a different, French cipher letter with no cipher printed; SP 78/33 lists 13, 23 and 31 July 1594 despatches (not seen)
-- [n/a] clear-pages: the manuscript is not online; the clear copy in SP 78/33 is behind State Papers Online, not reachable here
+- [x] siblings: the volume's other Edmondes letters (pp. 371, 620, 622) have no cipher; p. 484 is a different, French cipher letter with no cipher printed; SP 78/33 has despatches of 13, 23 and 31 July 1594: the cipher passages of 13 and 23 July (ff. 349v, 366) were seen and are in signs and figures, a different cipher, so they are not siblings; 31 July not seen
+- [x] clear-pages: the manuscript is not online; SP 78/33 ff. 345-348 was read (copy saved at the Library of Congress, 14 Nov 2026): a different letter of the same day, in clear, with its clerk's copy; no clear copy of this letter is known
 - [x] known-keys: Stowe MS 166 (Edmondes's sign alphabet), Unton's 1591 cipher, and the upstream Maisse, Mornay, Champagne, Walsingham and Wotton keys compared; none fits (`keys/keys_tested.md`); the key is a shifted-alphabet letter cipher built here
-- [x] print: HMC Salisbury IV, V, XIII, XIV; Birch 1749 and 1754; Butler 1913; Tomokiyo; DECODE; List and Analysis vol. 5 searched (search-only, not read)
+- [x] print: HMC Salisbury IV, V, XIII, XIV; Birch 1749 and 1754; Butler 1913; Tomokiyo; DECODE; List and Analysis vol. 5, list and pp. 236-246 read (no summary of this letter; Brittany section not seen)
 - [x] key-rebuild: all 2,024 three-shift sets scored; fourth and fifth shifts tested; shifts 11 and 20 added from whole words
 - [x] retry: every unread span retried by two agents independently with the full key; the second agent's alternatives recorded (A11 "adhement")
 
@@ -268,10 +274,14 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
   Hatfield House*, part IV (London, 1892), pp. 559-560 and index; Internet Archive 11576077bsb. Part V (1894),
   pp. 1-2: Internet Archive calendarofmanusc05grea_0.
 - The National Archives, Discovery catalogue, SP 78/33/170 (record C7318548): "Folio 345: Edmondes to Burghley, and copy."
+- The National Archives, SP 78/33 ff. 345-346 (Edmondes to Burghley, camp before Laon, 9 July 1594, in clear) and
+  ff. 347-348 (clerk's copy of it): read in full from the copy saved on site at the Library of Congress on 14 November
+  2026 in State Papers Online (Gale), by AI agents in two independent passes; no person has checked it; licensed images,
+  not included. Ff. 349v and 366 (13 and 23 July 1594): the cipher passages looked at only, to identify the cipher.
 - G. G. Butler (ed.), *The Edmondes Papers* (Roxburghe Club, 1913), nos. LXIII-LXVI, pp. 141-151 (HathiTrust mdp.39015083993017).
 - J. Stevenson (ed.), *Correspondence of Sir Henry Unton* (Roxburghe Club, 1847), Internet Archive cu31924027964471 (language model only).
 - S. Tomokiyo, *Cryptiana*, "Ciphers during the Reign of Queen Elizabeth I" (web page, read 14 Nov 2026).
-- R. B. Wernham (ed.), *List and Analysis of State Papers, Foreign Series, Elizabeth I*, vol. 5 (1989): searched only (HathiTrust mdp.39015015172375).
+- R. B. Wernham (ed.), *List and Analysis of State Papers, Foreign Series, Elizabeth I*, vol. 5 (1989): searched (HathiTrust mdp.39015015172375); the list entries and pp. 236-246 read from pages saved at the Library of Congress on 14 November 2026; the Brittany section not seen.
 - G. Py-Patinec, *L'armée royale en Bretagne* (HAL dumas-02176647, 2019); French Wikipedia, "Liste des gouverneurs de
   Rennes" and "Laon"; English Wikipedia, "Henri, Duke of Montpensier", "Henri de La Tour d'Auvergne, Duke of Bouillon",
   "Charles de Gontaut, duc de Biron", "Jean VI d'Aumont", "John Norris (soldier)" (all read 14 Nov 2026).
@@ -281,3 +291,8 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
 - 2026-11-14: lead from a mining run over the Salisbury calendar; transcription, key, frozen held-out test and reading
   (first agent); independent blind transcription and solution, stricter test and content check (second agent);
   packaged here with the second agent's corrections, the governor of Rennes looked up, and both tests rerun.
+- 2026-11-15: SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on
+  14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images
+  not included): a different letter of the same day, in clear, with its clerk's copy. Addressee changed from
+  "[Lord Burghley]" to "an unnamed lord"; prior work and "not checked" corrected. No change to the reading, the key,
+  the counts, the tests or the date.

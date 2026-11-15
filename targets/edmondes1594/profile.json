@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "edmondes1594",
- "title": "Thomas Edmondes to [Lord Burghley], camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560, read from the print (English letter cipher, alphabet shifted 7 with extra equivalents)",
+ "title": "Thomas Edmondes to an unnamed lord, camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560, read from the print (English letter cipher, alphabet shifted 7 with extra equivalents)",
  "documents": [
   {
    "id": "HMC-Salisbury-IV-559",
@@ -10,7 +10,7 @@
    "date": "9 July 1594",
    "year": 1594,
    "country": "England",
-   "route": "Thomas Edmondes, the camp before Laon -> [Lord Burghley] (addressee not named in the calendar; the letter speaks of 'yor L.' commandment)",
+   "route": "Thomas Edmondes, the camp before Laon -> an unnamed lord (addressee not named in the calendar; the letter speaks of 'yor L.' commandment; Burghley is possible, not established)",
    "places": {
     "from": "Laon",
     "to": "London"
@@ -20,9 +20,9 @@
    "cleartext_in_document": "mostly clear",
    "plaintext": {
     "location": [
-     "separate collection"
+     "none"
     ],
-    "source": "Not seen. The National Archives, SP 78/33 item 170, folio 345, catalogued 'Edmondes to Burghley, and copy', 9 July 1594: very probably the same despatch, and the 'copy' probably the office's clear copy. Not used.",
+    "source": "None known. The National Archives, SP 78/33 ff. 345-348, catalogued 'Edmondes to Burghley, and copy', 9 July 1594, is a different letter of the same day, in clear, with its clerk's copy; no decipherment of 1594 is known. Read from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online, by AI agents in two independent passes; no person has checked it; licensed images not included.",
     "partial": false
    },
    "length": {
@@ -88,9 +88,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "in archive",
-   "where": "Probably: The National Archives SP 78/33/170, f. 345, 'Edmondes to Burghley, and copy' (9 July 1594), not seen; the copy is probably the decipherment made for Burghley in 1594. No printed or modern reading of this cipher text found (HMC Salisbury IV, V, XIII, XIV; Birch, Memoirs 1754; Butler, The Edmondes Papers 1913; Tomokiyo, Cryptiana; DECODE). The List and Analysis of State Papers Foreign, vol. 5 (pp. 239-245 by in-volume search) could not be read and may summarize the State Papers copy.",
-   "found": "during attempt",
+   "exists": "no",
+   "where": "None known. The National Archives SP 78/33 ff. 345-348, 'Edmondes to Burghley, and copy' (9 July 1594), is a different letter of the same day, in clear, with its clerk's copy (read from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online, by AI agents in two independent passes; no person has checked it; licensed images not included); no decipherment of 1594 is known. No printed or modern reading of this cipher text found (HMC Salisbury IV, V, XIII, XIV; Birch, Memoirs 1754; Butler, The Edmondes Papers 1913; Tomokiyo, Cryptiana; DECODE). The List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) was read and does not summarize this letter; its Brittany section was not seen.",
+   "found": "not found",
    "used": false
   },
   "inputs": [
@@ -105,10 +105,11 @@
    "held-out test (scripts/heldout.py) and the second agent's stricter variants (scripts/stricter_heldout.py)"
   ],
   "models": [
-   "Claude Opus 5.5 (Anthropic) agents, 14 Nov 2026"
+   "Claude Opus 5.5 (Anthropic) agents, 14 Nov 2026",
+   "Claude Fable 5.2 (Anthropic) agents, 15 Nov 2026 (collation of SP 78/33 ff. 345-348 only)"
   ],
   "first_date": "2026-11-14",
-  "last_date": "2026-11-14"
+  "last_date": "2026-11-15"
  },
  "solution": [
   {
@@ -190,14 +191,14 @@
    "what": "Packaging: governor of Rennes in 1594 looked up: René Marec de Montbarot (captain and governor of Rennes 1583-1605; lieutenant of the King for the bishopric of Rennes from 1593). No reference found on his religion.",
    "result": "partial"
   },
-  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"}
+  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
+  {"date": "2026-11-15", "kind": "literature search", "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.", "result": "ruled out"}
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The shift-set key was recovered from the printed cipher letters alone, with a 1590s English letter model; no decipherment, clear copy or outside key was used. The State Papers copy that probably exists was not seen.",
-  "first_break": "unpublished prior",
+  "method_basis": "The shift-set key was recovered from the printed cipher letters alone, with a 1590s English letter model; no decipherment, clear copy or outside key was used, and none is known: SP 78/33 ff. 345-348 is a different letter of the same day, in clear, with its clerk's copy.",
   "contribution": [
    "transcription",
    "key recovered",
@@ -215,7 +216,7 @@
    {
     "item": "15 printed cipher letters not read: A2 'a d m' and 'g k l', A11 one letter and five letters, B1 'goo'",
     "blocker": "needs-physical-access",
-    "detail": "Read from the 1892 print; the manuscript (Cecil Papers) would show whether the editor misread these letters and whether the homophones are marked. The State Papers copy would give the plain text."
+    "detail": "Read from the 1892 print; the manuscript (Cecil Papers) would show whether the editor misread these letters and whether the homophones are marked. No clear copy or decipherment is known."
    },
    {
     "item": "person signs 55, the m-sign, the ho-sign, the oo-sign, and the figures 4s, 300, 26 not deciphered",
@@ -225,7 +226,7 @@
    {
     "item": "values of the printed letters with two or three values, chosen by sense; the printed 'to' taken as cipher; assumed g/q and n/u misreadings",
     "blocker": "needs-physical-access",
-    "detail": "Only the manuscript or the State Papers copy can confirm them."
+    "detail": "Only the Hatfield manuscript can confirm them."
    }
   ],
   "validation": {"date": "2026-11-14", "model": "en-1640s", "file": "validation.tsv", "tokens": 636, "types": 25, "tokens_per_type": 25.44, "score": -2.986, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 12% of read tokens differ from their type's commonest value"},
@@ -235,18 +236,12 @@
     "role": "solution",
     "note": "Andrew Beling, with AI agents: lead, transcription from the print, key recovered from the cipher alone, held-out test, reading; a second agent's independent solution and check.",
     "date": "2026-11-14"
-   },
-   {
-    "who": "contemporary",
-    "role": "prior solution",
-    "note": "Probably the office of Edmondes's correspondent (Burghley) in 1594: The National Archives SP 78/33/170 lists 'Edmondes to Burghley, and copy'. Not seen; not used.",
-    "date": "1594"
    }
   ],
   "texts": [
    {
     "doc": "HMC-Salisbury-IV-559",
-    "label": "Edmondes to [Burghley], camp before Laon, 9 July 1594 (HMC Salisbury IV, pp. 559-560)",
+    "label": "Edmondes to an unnamed lord, camp before Laon, 9 July 1594 (HMC Salisbury IV, pp. 559-560)",
     "transcription": "transcription/calendar_entry.txt",
     "decryption": "reading/decryption.txt",
     "reading": "reading/reading.md",
@@ -268,6 +263,6 @@
    "keys/frozen_key.json",
    "keys/key_table.tsv"
   ],
-  "notes": "Read from print; the Cecil Papers manuscript and the State Papers copy (SP 78/33 f. 345) are not seen. Two AI agents, one blind to the other, solved and read it; no human check. The cipher letters and signs were printed from the manuscript by the editors of the Historical Manuscripts Commission's Salisbury calendar (1892), undeciphered; our transcription is of their print."
+  "notes": "Read from print; the Cecil Papers manuscript is not seen, and only it can check the reading. SP 78/33 ff. 345-348 is a different letter of the same day, in clear, with its clerk's copy (read from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online, by AI agents in two independent passes; no person has checked it; licensed images not included); no decipherment of 1594 is known. The addressee is an unnamed lord. Two AI agents, one blind to the other, solved and read it; no human check. The cipher letters and signs were printed from the manuscript by the editors of the Historical Manuscripts Commission's Salisbury calendar (1892), undeciphered; our transcription is of their print."
  }
 }
