@@ -10,7 +10,7 @@ choice; the transcription keeps what is written.
 |---|---|---|---|
 | f. 82r l. 8, code 107 | *il ne faut pas être [107] de voir sous trois mois des révolutions bien fâcheuses* | *surpris* / *étonné* ("one must not be surprised to see"); *sorcier*, *devin* ("no wizard needed to foresee") | **surpris** (or a synonym): only an adjective taking *de* + infinitive fits *être [107] de voir*; *sorcier* would need *pour voir*. The word itself stays a hole: [107 = surpris?]. |
 | f. 81v l. 7, code 209 | *si on se doutoit qu'il fût [port]eur de lettres de moi on les lui [209]teroient* | *ô* (*ôteroient*, "would take them from him"); *je* (*jetteroient*) | **ô**: *ôter qch à qn* is the idiom; *jeter* does not take *lui* this way. Marked [209 = ô?]. |
-| f. 81v l. 11, code 591 | *renvoyer les re[be]lles à son [591], mais pour être punis* | *retour* ("on its [the frigate's] return"), *bord* ("on board"), *gré* | **retour** or **bord**, undecided; both fit the frigate as subject; marked [591]. |
+| f. 81v l. 11, code 591 | *renvoyer les re[be]lles à son [591], mais pour être punis* | *retour* ("on its [the frigate's] return"), *bord* ("on board"), *gré* | Settled in the follow-up (14 Nov 2026): the clerk glosses 591 as *autorité* in no. 245 (C13A 42 f. 85r l. 7, "l'autorité du Roy sera bien vangée"); *les rebelles à son autorité*. One pair. |
 | f. 81v l. 1, code 577 | *que je citer/ai par [577] la première occasion* | Pusch 577 = *façon*, which does not fit; perhaps a slip for 277 (*par*) doubled, or a word such as *même* | left as a hole; the sentence reads without it. |
 
 ## The half-hidden group, no. 206 f. 81v l. 8
