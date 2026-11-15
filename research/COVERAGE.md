@@ -278,3 +278,9 @@ fr. 15566 f. 50 is solved by Lasry (GL.htm), fr. 15572 ff. 277-278 are deciphere
 Bellievre papers fr. 15890-15911 (the COVERAGE row "BnF, Bellievre papers not yet screened"): Omont's catalogue text (archive.org `cataloguegnrald00manugoog`) was read for the whole run, 15 Nov 2026. Its only cipher mentions are
 fr. 15906 "Memoires chiffres" of Entragues (ff. 759, 780: Lasry's, target `entragues1581`), Revol and Du Val de Stors "chiffrees, avec dechiffrement" (excluded) and key sheets; the images were not paged.
 ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new viewer shows "Fehler 500" for every DTL id tried; nothing viewed. Lead 2835 closed `read` (decipherment_filed: "Begleitmaterial: Transskription").
+
+## Chrome wave 7, 15 Nov 2026 (Catalan archives portal; folder `sweep_2026-11-15_chrome_wave7`)
+
+- **New source:** Arxius en linia (`arxiusenlinia.cultura.gencat.cat`, item-level, ANC and Catalan comarcal archives; backend JSON route in Chrome, see the sweep README). 38 Catalan and Spanish terms run; leads 2843-2853, 9 promoted (1873 Interior Ministry telegrams seen on image, Carlist letters, Saavedra Fajardo 'cartes xifrades', Castelldosrius, Carreras 1936). Key-only items in `key_leads.json`, including the 1487 'Instruccions per cartes xifrades a Antonio Ximeno' (ACPS211-95-T2-242).
+- **Still Cloudflare-blocked in Chrome:** Finna, Archives Hub, Library Hub Discover, National Library of Wales archives; Abhilekh Patal 403. PRONI's eCatalogue now answers at `apps.proni.gov.uk/eCatNI_IE/` (already swept: its 'Tried and blocked' row is out of date).
+- **Not done:** Arkivportalen Norway (908 'chiffer' hits, mostly 20th century; URL paging does not render), ANC Carlist collection unclassified units (723), 2852/2853.
