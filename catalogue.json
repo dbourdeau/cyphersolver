@@ -84902,6 +84902,283 @@
     "verdict": "open"
    },
    "repository": "unidentified"
+  },
+  {
+   "id": 2784,
+   "counted": true,
+   "language": "French",
+   "region": "Other",
+   "cls": "C",
+   "difficulty": 3,
+   "seen": "catalogue",
+   "source": "TNA Discovery API (item-level cipher sweep, 15 Nov 2026)",
+   "prior_art": "open as far as checked (15 Nov 2026: known.py and reference grep on shelfmark and correspondents; Discovery text only; no image seen; CSP, Tomokiyo, DECODE, Lasry and the literature not searched for this item)",
+   "needs_archive_scan": "yes",
+   "access_note": "TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+   "score_note": "Scored from the TNA Discovery catalogue description only (item sweep, 15 Nov 2026; research/sweep_2026-11-15_tna_discovery/); not viewed",
+   "folio_note": "\"Original lettre en chiffre\", numero un, deux, trois, ff. 521-522, 523-524, 525-526, each undated with an illegible signature; envelopes ff. 519-520",
+   "year": 1811,
+   "date": "1811 (letters undated; the ship left Batavia 7 Aug 1811)",
+   "period": "1801-1900",
+   "title": "Governor-General of the Dutch East Indies to the French Minister of Marine: three \"lettres en chiffre\" captured with the corvette Le Comte Reynaud, 1811",
+   "correspondents": "Governor-General of the Indies (Janssens, to be checked) -> Minister of Marine, Paris; captured by Justice Finley, HMS Rover",
+   "place": "Batavia / Portsmouth",
+   "shelfmark": "TNA ADM 1/1808/193 (ff. 517-526)",
+   "status": "Not online (Discovery record read 15 Nov 2026; no image). Three original numerical-cipher letters of the Governor-General of the Indies (Janssens) to the Minister of Marine, Batavia, c. Aug 1811, captured on the Comte Regnaud; no decipherment named. Needs Kew photographs.",
+   "why": "Captured original French ciphertext from the last months of French rule in Java. targets/batavia1800 notes that the 1811 Janssens despatches (NA 2.01.27.05 inv. 12) use a numeric code, a possible key family.",
+   "importance": 3,
+   "solvability": 2,
+   "verify": "View ADM 1/1808/193; read targets/batavia1800/NOTES.md on the numeric code and test it on these letters; check whether the Admiralty kept a decipher.",
+   "links": [
+    {
+     "label": "TNA Discovery ADM 1/1808/193",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C12759093"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), TNA Discovery sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery record ADM 1/1808/193 (C12759093), API details read 15 Nov 2026; digitised: false. TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+     "extent": "Folios 521-526: three original letters 'en chiffre' numbered un, deux, trois (two leaves each), undated, illegible signature; ff. 519-520 are the sealed envelope(s) addressed to the Ministre de la Marine et des Colonies, Paris, from the Governor-General of the Indies.",
+     "cipher": "Archive text: 'Original lettre en chiffre, numero un / deux / trois' (ff. 521-526), enclosures of Capt. Justice Finley's letter of 8 Dec 1811 (HMS Rover took the French corvette Comte Regnaud, which left Batavia on 7 Aug 1811). The description mentions no decipherment, translation or decode among the enclosures."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, DECODE views dumps, ledgers, targets, 15 Nov 2026): no DECODE record for this shelfmark; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site search for Kerguelen / Batavia 1811 / Stapleton returned nothing; no page on this item in the repo's holdings (known.py).",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "Not found: the Admiralty copies of the Governor-General's 1811 despatch are not printed in the Java-campaign literature seen (web search 15 Nov 2026: HMS Rover / Comte Regnaud / Batavia 1811 gave only ship histories).",
+     "literature": "Web search 15 Nov 2026 (HMS Rover Finley Comte Regnaud Batavia 1811 captured letters Janssens Minister of Marine cipher): the capture is confirmed in ship histories (HMS Rover 1808, ex-Vincejo corvette); nothing on a decipherment of the captured letters."
+    },
+    "searches": [
+     {
+      "query": "known.py ADM 1/1808, Batavia, Finley, Janssens, Rover",
+      "result": "this lead and sweep row only; Batavian-period targets (batavia1800, toulon1803, hogendorp) are different texts"
+     },
+     {
+      "query": "web: HMS Rover Finley 1811 Batavia Comte Reynaud captured letters cipher",
+      "result": "capture confirmed; nothing on the cipher"
+     },
+     {
+      "query": "Discovery API details C12759093",
+      "result": "description quoted above; no decipher named"
+     }
+    ],
+    "key_check": "No key for the 1811 Governor-General to Minister cipher is held here. targets/batavia1800 NOTES (siblings line) records that the 1811 Janssens despatches in Nationaal Archief 2.01.27.05 inv. 12 use another system (numeric code, French), not Smissaert's 1800 cipher; those are a possible key or clear-text source, not seen or tested.",
+    "duplicates": "known.py 'ADM 1/1808', 'Batavia', 'Finley', 'Janssens' (15 Nov 2026): only this lead; not the same as batavia1800 (Smissaert to Prediger, 1800).",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2788,
+   "counted": true,
+   "language": "French",
+   "region": "England",
+   "cls": "A",
+   "difficulty": 2,
+   "seen": "catalogue",
+   "source": "TNA Discovery API (item-level cipher sweep, 15 Nov 2026)",
+   "prior_art": "open as far as checked (15 Nov 2026: known.py and reference grep on shelfmark and correspondents; Discovery text only; no image seen; CSP, Tomokiyo, DECODE, Lasry and the literature not searched for this item)",
+   "needs_archive_scan": "yes",
+   "access_note": "TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+   "score_note": "Scored from the TNA Discovery catalogue description only (item sweep, 15 Nov 2026; research/sweep_2026-11-15_tna_discovery/); not viewed",
+   "folio_note": "SP 46/146/63-64 is \"deciphered between the lines in Kerguelen's hand\" (first page missing); /71-72 partially enciphered; /89-90 and 148/196-197 partially encoded; 148/99-100 an enciphered love letter. SP 46/146/214 (1780) concerns difficulty reading Benyovszky's hand and is not a cipher",
+   "year": 1778,
+   "date": "c. 1770-1786",
+   "period": "1701-1800",
+   "title": "Stapleton de Laurence ('Mimi') to Kerguelen at Saumur: enciphered and partly enciphered love letters, c. 1770-86 (SP 46/146 and 148; the interlinear 63-64 kept as the crib)",
+   "correspondents": "Stapleton de Laurence (\"Mimi\") -> Yves-Joseph de Kerguelen (Saumur)",
+   "place": "France",
+   "shelfmark": "TNA SP 46/146/65-66, 71-72, 89-90; SP 46/148/99-100, /196-197 (crib: SP 46/146/63-64)",
+   "status": "Not online (Discovery records read 15 Nov 2026; no image). Five or six enciphered or partly enciphered letters of one writer to one recipient; one other letter of hers (63-64) is deciphered between the lines by Kerguelen, a crib. Needs Kew photographs.",
+   "why": "A small private-correspondence cipher family in the Kerguelen papers (SP 46), with one interlinear decipher as a crib; one key for the set.",
+   "importance": 2,
+   "solvability": 4,
+   "verify": "Order SP 46/146 ff. 63-66, 71-72, 89-90 and SP 46/148; build the key from ff. 63-64 and test on the others; check SP 46/146 for a key leaf.",
+   "links": [
+    {
+     "label": "TNA Discovery SP 46/146/63-64",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C7712676"
+    },
+    {
+     "label": "TNA Discovery SP 46/146/71-72",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C7712680"
+    },
+    {
+     "label": "TNA Discovery SP 46/148/99-100",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C7713246"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), TNA Discovery sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery records SP 46/146/65-66 (C7712677), /71-72 (C7712680), /89-90 (C7712689), SP 46/148/99-100 (C7713246), API details read 15 Nov 2026; digitised: false. TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+     "extent": "five to six short love letters (two leaves each) with covers, c. 1770-86, plus SP 46/146/63-64 as the crib (see key_in_volume).",
+     "cipher": "Archive text: 'encoded' / 'enciphered' / 'partially encoded' letters from Stapleton de Laurence ('Mimi') to Yves-Joseph de Kerguelen at Saumur, c. 1770-86 (SP 46/146, 148), read in Discovery 15 Nov 2026: 65-66 ('Encoded letter'), 71-72 and 89-90 ('partially enciphered/encoded'), SP 46/148/99-100 ('enciphered love letter'); SP 46/148/196-197 is as given by the sweep and was not re-read here."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, DECODE views dumps, ledgers, targets, 15 Nov 2026): no DECODE record for this shelfmark; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site search for Kerguelen / Batavia 1811 / Stapleton returned nothing; no page on this item in the repo's holdings (known.py).",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "No edition: the Kerguelen papers (SP 46/146-148) are described only in the TNA catalogue; web search 15 Nov 2026 (Kerguelen Stapleton de Laurence Mimi cipher; French variant) found no mention of the ciphered letters in Kerguelen biographies or the catalogue pages indexed.",
+     "literature": "Web search 15 Nov 2026 (two queries, one Cryptiana-restricted): nothing on a cipher in the Kerguelen-Stapleton letters."
+    },
+    "searches": [
+     {
+      "query": "known.py Kerguelen, SP 46/146, Stapleton",
+      "result": "this lead only"
+     },
+     {
+      "query": "web: Kerguelen Stapleton de Laurence Mimi cipher SP 46 (EN and FR)",
+      "result": "nothing on the ciphered letters"
+     },
+     {
+      "query": "Discovery API SP 46/146/63-90, SP 46/148/99-103",
+      "result": "descriptions above; only 63-64 carries a decipher"
+     }
+    ],
+    "key_check": "No key held. SP 46/146/63-64 is an 'Encoded letter deciphered between the lines in Kerguelen's hand' (first page missing): a cipher/clear pair from the same writer, so a key can be rebuilt from it; it is excluded from the text to be read and kept as the crib.",
+    "key_in_volume": "SP 46/146/63-64: interlinear decipher in Kerguelen's hand (crib for the whole correspondence); not seen.",
+    "duplicates": "known.py 'Kerguelen', 'Stapleton de Laurence', 'SP 46/146' (15 Nov 2026): only this lead.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2792,
+   "counted": true,
+   "language": "English",
+   "region": "England",
+   "cls": "C",
+   "difficulty": 3,
+   "seen": "catalogue",
+   "source": "TNA Discovery API (item-level cipher sweep, 15 Nov 2026)",
+   "prior_art": "open as far as checked (15 Nov 2026: known.py and reference grep on shelfmark and correspondents; Discovery text only; no image seen; CSP, Tomokiyo, DECODE, Lasry and the literature not searched for this item)",
+   "needs_archive_scan": "yes",
+   "access_note": "TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+   "score_note": "Scored from the TNA Discovery catalogue description only (item sweep, 15 Nov 2026; research/sweep_2026-11-15_tna_discovery/); not viewed",
+   "folio_note": "f. 206 is the plain-language covering letter in the same hand",
+   "year": 1687,
+   "date": "5 Apr 1687",
+   "period": "1651-1700",
+   "title": "Letter in cipher from 'PD' to William Benson, London, 5 Apr 1687 (SP 31/3/117 f. 207)",
+   "correspondents": "PD -> William Benson, Strand",
+   "place": "London",
+   "shelfmark": "TNA SP 31/3/117 (f. 207)",
+   "status": "Not online (Discovery record read 15 Nov 2026; no image). One letter in cipher, f. 207; no decipherment named. Needs Kew photographs.",
+   "why": "A short cipher letter filed with a cryptic commercial letter, apparently a seized correspondence of 1687.",
+   "importance": 2,
+   "solvability": 1,
+   "verify": "View SP 31/3 ff. 206-207; check neighbours for the key.",
+   "links": [
+    {
+     "label": "TNA Discovery SP 31/3/117",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C18485520"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), TNA Discovery sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery record SP 31/3/117 (C18485520), API details read 15 Nov 2026; digitised: false. TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+     "extent": "Folio 207, one letter in cipher, same hand as the cryptic letter on f. 206, with a postscript 'Cut off this and deliver it to my friend'. Narrowed from the sweep row (ff. 206-207) to f. 207, because f. 206 is plain English in trade language.",
+     "cipher": "Archive text: 'Folio 207. A letter in cipher.' of April 1687, 'PD' to William Benson at the apothecary's in the Strand (SP 31, Domestic Entry Book-type series, James II). No decipherment mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, DECODE views dumps, ledgers, targets, 15 Nov 2026): no DECODE record for this shelfmark; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site search for Kerguelen / Batavia 1811 / Stapleton returned nothing; no page on this item in the repo's holdings (known.py).",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "The Calendar of State Papers Domestic, James II, 1686-87 was not searched item by item (no OCR of that volume held here); a grep of the repo ledgers on Benson / Bromwick finds nothing. A calendar entry that prints the clear text would be the first sign of a reading: not checked, so recorded as open.",
+     "literature": "No web search run for this item beyond the Discovery text; nothing found in repo holdings."
+    },
+    "searches": [
+     {
+      "query": "known.py SP 31/3, Benson, Bromwick",
+      "result": "this lead only"
+     }
+    ],
+    "key_check": "No key held or named.",
+    "duplicates": "known.py 'SP 31/3' (15 Nov 2026): only this lead.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2797,
+   "counted": true,
+   "language": "French",
+   "region": "Low Countries",
+   "cls": "C",
+   "difficulty": 2,
+   "seen": "catalogue",
+   "source": "TNA Discovery API (item-level cipher sweep, 15 Nov 2026)",
+   "prior_art": "open as far as checked (15 Nov 2026: known.py and reference grep on shelfmark and correspondents; Discovery text only; no image seen; CSP, Tomokiyo, DECODE, Lasry and the literature not searched for this item)",
+   "needs_archive_scan": "yes",
+   "access_note": "TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+   "score_note": "Scored from the TNA Discovery catalogue description only (item sweep, 15 Nov 2026; research/sweep_2026-11-15_tna_discovery/); not viewed",
+   "folio_note": "copy; f. 47-47d",
+   "year": 1653,
+   "date": "12 Aug 1653",
+   "period": "1651-1700",
+   "title": "Beverning at Westminster to Newport at The Hague: report of a conversation \"part in code\", copy",
+   "correspondents": "Hieronymus van Beverning -> Willem Nieupoort",
+   "place": "Westminster",
+   "shelfmark": "TNA SP 46/97/fo 47-47d",
+   "status": "Not online (Discovery record read 15 Nov 2026; no image). One contemporary copy with a coded part; no decipherment named. Short; sibling of targets/thurloe (different letter). Needs Kew photographs.",
+   "why": "A sibling of the Beverning/Vande Perre ciphers already worked in targets/thurloe (22 Aug 1653) and targets/colbert; the same Dutch envoy cipher may open it.",
+   "importance": 3,
+   "solvability": 3,
+   "verify": "View SP 46/97 f. 47; test the thurloe/colbert Beverning key.",
+   "links": [
+    {
+     "label": "TNA Discovery SP 46/97/fo47",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/C7709925"
+    }
+   ],
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), TNA Discovery sweep vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery record SP 46/97 fo. 47-47d (C7709925), API details read 15 Nov 2026; digitised: false. TNA Discovery record read through the API (details/C-id, 15 Nov 2026): 'digitised' false; no image on Discovery. State Papers Online (Gale) is a subscription product and not checked for images; ADM 1 is not on Gale SPO. Archive item: Kew reading room or a reproduction order.",
+     "extent": "one leaf with verso, a contemporary copy of part of Beverning's letter; the length of the coded part is not stated.",
+     "cipher": "Archive text: 'Beverning at Westminster to Newport at the Hague. Report of a conversation, part in code. Copy.', 12 Aug 1653. No decipherment named."
+    },
+    "prior_art": {
+     "decode": "known.py (Cryptoole/DECODE snapshot, DECODE views dumps, ledgers, targets, 15 Nov 2026): no DECODE record for this shelfmark; only this lead and its sweep row.",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site search for Kerguelen / Batavia 1811 / Stapleton returned nothing; no page on this item in the repo's holdings (known.py). (Beverning 1653 appears in the repo only for the Thurloe State Papers letter to Boreel, targets/thurloe).",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529; Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "Not found: Thurloe State Papers i. 435 prints Beverning and Vande Perre's letter to Boreel (22 Aug/1 Sept 1653), a different letter; the Newport letter of 12 Aug is not known printed.",
+     "literature": "Repo NOTES targets/thurloe, vandeperre1653, colbert and research/qa/key_split_audit.md checked (15 Nov 2026): the Beverning 1653 systems are unread."
+    },
+    "searches": [
+     {
+      "query": "known.py Beverning, SP 46/97",
+      "result": "targets/thurloe (Beverning 1653 to Boreel, unread), vandeperre1653, colbert; none cover this letter"
+     }
+    ],
+    "key_check": "No key held. targets/thurloe tried every 1653-60 period key on the Beverning/Vande Perre cipher without a fit; whether the Newport letter uses that system is not shown. A separate entry from thurloe (one key per entry).",
+    "duplicates": "known.py 'Beverning', 'SP 46/97', 'Nieupoort' (15 Nov 2026): the thurloe family is a different letter and recipient.",
+    "verdict": "open"
+   },
+   "repository": "tna"
   }
  ]
 }
