@@ -275,3 +275,6 @@ NAF I (no OCR). Gallica manifests answer curl at 3 s; ark check character is NOI
 Folder `sweep_2026-11-15_gallica_omont_wave6`; leads 2838-2842 merged and promoted (fr. 15567 f. 24 and ff. 158-164, fr. 15568 ff. 151-152 and 207-208, fr. 15571 f. 37; tables by Tomokiyo, texts unread).
 fr. 15566 f. 50 is solved by Lasry (GL.htm), fr. 15572 ff. 277-278 are deciphered in ff. 279-280 (matignon1586c3 notes): neither is a lead. Route: Gallica SRU
 `gallica all "Français N" and dc.type all "manuscrit"` from a gallica.bnf.fr tab, then openapi.bnf.fr IIIF by curl. Still open: fr. 15567 f. 54 and f. 71, 113, 162, 194 and fr. 15568 f. 68v (named by Tomokiyo, not viewed), fr. 15569-15570 (arks unknown).
+Bellievre papers fr. 15890-15911 (the COVERAGE row "BnF, Bellievre papers not yet screened"): Omont's catalogue text (archive.org `cataloguegnrald00manugoog`) was read for the whole run, 15 Nov 2026. Its only cipher mentions are
+fr. 15906 "Memoires chiffres" of Entragues (ff. 759, 780: Lasry's, target `entragues1581`), Revol and Du Val de Stors "chiffrees, avec dechiffrement" (excluded) and key sheets; the images were not paged.
+ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new viewer shows "Fehler 500" for every DTL id tried; nothing viewed. Lead 2835 closed `read` (decipherment_filed: "Begleitmaterial: Transskription").

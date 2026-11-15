@@ -16,3 +16,10 @@ Brief: find the arks for BnF fr. 15566-15568 and look at the Omont leftover ciph
 - **fr. 15572 ff. 277-279**: three pages of cipher, but Tomokiyo and the repo (`matignon1586/NOTES.md`, Cipher-3) record ff. 277-278 as deciphered in ff. 279-280 (the clear letter at view 289-290). Not a lead.
 - **fr. 15572 ff. 58, 115** (wave 5: clear text) and ff. 110, 123 (catalogue item 12): nothing new. fr. 15571 f. 34 is the Chasteauneuf letter deciphered in f. 36 (Tomokiyo).
 - Writers and dates of 2840, 2841, 2842 were not read from the leaves (Omont and Tomokiyo attributions only).
+
+## OeNB retry (leads 2832-2837), same day
+onb.digital, data.onb.ac.at/dtl and digital.onb.ac.at all end at onb.digital (504 to curl, browser error page); viewer.onb.ac.at/DTL_<id> loads but its manifest API
+(`api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id>`) answers 504 or "Fehler 500" for every id tried (4865249 and three others); iiif.onb.ac.at does not connect. Nothing was viewed.
+P.Vindob. A.P. 11016 (lead 2832) is not in the ONB list of published Arabic papyri and no description exists beyond Karabacek's 1894 guide; the record calls it "unpubliziert". Lead 2832 stays a lead (retry when the ONB API is back).
+Lead 2835 (Eugene of Savoy, Autogr. 14/61-15): the filed "Transskription" is taken as a decipherment, so the lead is closed `read` / decipherment_filed.
+Bellievre papers fr. 15890-15911: Omont text only (see COVERAGE).
