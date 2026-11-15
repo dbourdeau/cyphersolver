@@ -212,3 +212,18 @@ mio sigillo", "maravigliate". The setting (conte Iacomo, an army camped at Casti
 campaigns of the 1450s-60s; not checked against dated sources.
 Status: family C read in part on four letters (R5518, R5514, R5517, R5503), one key recovered from the ciphertext alone and
 confirmed on two letters it was not fitted on. Next: R5502, R5504-R5506 (two-page letters, sharp scans).
+
+## 15 Nov 2026 (later): R5502 transcribed; out of sample again
+`famC/hand/r5502_hand.txt`: R5502 (cart. 1598 no. 28), 42 lines, 2,011 cipher signs, clear passages left out ("Spero ...", "recordo a la
+V.ra Ill.ma S. Signoria", "senza fallo la V.ra Ill.ma Signoria ... deve rendere certissima", "non ... forsi la cosa como mi e stata
+porta ...", "Et sia como se voglia ...", "sinceramente a la V.ra Illustrissima Signoria"). Decrypted with `key_h4.json` (fitted on
+R5518 + R5514), no re-solve (`dec02.txt`): **word share 0.461 against 0.140 shuffled**. Phrases: "li vostri ... lo ... questo ...
+mandato", "a persuadermi", "lo mio ... certo", "per esser ... voluntade", "la compagnia ... la mostra", "quante volte e per quante vie
+... ho pensato", "e cercato ... tutto lo stato", "per la quale", "certo sera vincitore", "rispondendome presto", "questa intencione",
+"lo conte Iacomo pigliando ... sentendo", "risposta", "disputacione ... argumenti me pare", "mandare", "per la copia ... conclusa",
+"parlare ... Lodovico", "el quale ... la Mirandola ... a cercare", "proveditori", "questa impresa li fratelli", "la questione",
+"per la ritornata de ser Cristoforo", "el quale per intendere tutto fo mandato", "lo vostro", "de tutta Italia", "subito", "la spada",
+"el quale ... de corte", "a dare ... adaptare la trama", "mandando copie".
+Family C now: five letters (R5518, R5514, R5517, R5503, R5502; 7,676 cipher signs), one key recovered from the ciphertext alone and
+confirmed out of sample on three letters (0.42, 0.47, 0.46 word share; shuffled 0.14). Read in part, not at the read bar.
+Remaining in family C: R5504-R5506 (two-page letters), R5515 (scan too faint).

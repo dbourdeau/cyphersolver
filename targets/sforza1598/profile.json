@@ -122,6 +122,36 @@
     "notes": "Light ink; lower confidence than R5514."
    },
    "read": "read in part"
+  },
+  {
+   "id": "R5502",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 28 (DECODE R5502)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": 2011,
+    "distinct": 40,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famC/hand/t02.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "Same hand as R5503."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -318,6 +348,16 @@
   {
    "kind": "verification",
    "what": "R5503 decrypted out of sample with the key fitted on R5518 + R5514: word share 0.471 vs 0.143 shuffled; reads \"conte Iacomo\", \"acampo a Castiglione\", \"cinque milia persone\", \"sigillate le mie litere del mio sigillo\".",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5502 transcribed by hand: 2,011 cipher signs.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "R5502 decrypted out of sample with the key fitted on R5518 + R5514: word share 0.461 vs 0.140 shuffled; reads \"lo conte Iacomo\", \"Lodovico\", \"la Mirandola\", \"la ritornata de ser Cristoforo\", \"de tutta Italia\".",
    "result": "worked"
   }
  ],
