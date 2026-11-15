@@ -227,3 +227,16 @@ mandato", "a persuadermi", "lo mio ... certo", "per esser ... voluntade", "la co
 Family C now: five letters (R5518, R5514, R5517, R5503, R5502; 7,676 cipher signs), one key recovered from the ciphertext alone and
 confirmed out of sample on three letters (0.42, 0.47, 0.46 word share; shuffled 0.14). Read in part, not at the read bar.
 Remaining in family C: R5504-R5506 (two-page letters), R5515 (scan too faint).
+
+## 15 Nov 2026 (later): R5506 page 1 transcribed; out of sample again
+`famC/hand/r5506_hand.txt`: R5506 (cart. 1598 no. 32) page 1, 23 cipher lines, 1,034 signs (page 2 not transcribed). Clear passages
+left out ("Lo signor Cavalero a Bersana la Sig.a del duca de Modena voglia ...", "Questa matina ... risposta ... mandato", "Spero
+pure ...", "che sempre quella porta ... et copiosamente"). Decrypted with `key_h4.json` (fitted on R5518 + R5514), no re-solve
+(`dec06.txt`): **word share 0.470 against 0.164 shuffled**. Phrases: "per la mia ... per lo ... del conte Iacomo", "cerca fornirse de
+gente", "in questo ... de la ... far", "per esser possente a farlo", "star paciente a ogni ... voluntate", "esser fornito de gente
+per poterlo meglio", "fare stare", "soldati ... la Marca ... trova", "Baglione ... cerca de desviarme ... quatrocento cavalli ...
+potese desviare", "Baglione ... oltra lo pensero", "per la parentela ... esser piu forte de gente", "lo conte Carlo", "per derisione",
+"conte Iacomo questo ser Cristoforo suo cancellero", "altre ... poco importano". Names now across the family: conte Iacomo, ser
+Cristoforo (his cancelliere), conte Carlo, Baglione, the duke of Modena, la Marca, Urbino, Castiglione, la Mirandola, Lodovico.
+Family C: six letters, 8,710 cipher signs, one key from the ciphertext alone, out of sample on four (0.42, 0.47, 0.46, 0.47).
+Remaining: R5506 page 2, R5504, R5505 (two pages each), R5515 (faint).
