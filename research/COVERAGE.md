@@ -290,3 +290,11 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **DARA (`dara.aragon.es`):** new source, leads 2854-2863, promoted 2854-2857, 2860, 2861 (CRAR letters of 1477-78 and 1497 at AHP Zaragoza, Alcort cipher letters at Benasque). Route and gotchas in the sweep README. Searched: cifra, en cifra, carta cifrada. Not searched: other cipher terms; the CRAR letters after 1500; the Benasque 'Noticia' companions of the Gonzaga cipher sheets (lead 2862).
 - **DigitArq other archives (AHU, district archives):** all hits of 22 terms read (203 records); only the AHU 1897-98 files (lead 2863) and the Aquaviva 1587 cipher table (key lead) matter. AHU 'Telegramas cifrados' series of 1947-76 are out of period.
 - **Still unswept:** Euskadi, Navarra, Castilla y Leon, Andalucia, Valencia, Balearic, Galicia and Canarias portals (hosts not reachable by curl; try in Chrome), Lombardia Beni Culturali, Swiss, Belgian, Luxembourg and Dutch leftovers.
+
+## Chrome wave 9, 15 Nov 2026 (DARA retry, Navarra, Badator; folder `sweep_2026-11-15_chrome_wave9`)
+
+- **DARA:** the six wave 8 zero-hit terms were a stale session (cifrado/cifrada/cifras 126, 15 further terms run, all small ones paged); the 16 CRAR letters of 1500-1583 viewed on thumbnails. Leads 2864 (Alcort D/0086) and 2865 (Spinelli to Urrea, Venice 1512, CRAR 0055/0056), both promoted. The 'Mas informacion' fields (Alcance y contenido, Notas) are searchable and decide whether a decipherment is filed.
+- **Navarra Archivo Abierto** (`navarra.archivoabierto.es`): swept ('cifrada', 'cifra', 'en clave' ...); one record, lead 2866 (Fondo Rena 1521), not promoted.
+- **Badator** (`artxibo.euskadi.eus` ... `badator/maintSimple`): found to be the RAH Salazar y Castro index with item descriptions; 1,892 'cifra' records, 90 not covered by an existing target family; signatures not collected, nothing vetted. This is the best open route for 1520-29 and 1638-56 Spanish diplomatic ciphers: see the sweep README for the plan.
+- **No item-level route found:** Andalucia, Mallorca (Regne), Castilla y Leon (host dead), Lombardia Beni Culturali (fonds level).
+- **Still unswept:** Valencia (ARV), Galicia, Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers.
