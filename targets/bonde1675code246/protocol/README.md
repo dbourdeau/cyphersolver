@@ -14,7 +14,10 @@ They are kept as written, in French, so the hashes still hold.
 5. `METHODE-CLE.md`: before the key was built (training data, alignment, majority vote).
 6. `PREREG-CODE246-ADDENDUM-3.md`: before the third pass of the numbers (which positions, two blind readers and an
    arbiter, fixed abbreviation list, the scoring); thresholds unchanged.
-7. `CONVENTIONS-TRANSCRIPTION.md`: how the hand writes its figures, and the TSV format.
+7. `PREREG-CODE246-ADDENDUM-4.md`: before the second Fable run (15 Nov 2026, a key from the pass-4 numbers): Brice
+   Dudout's approval and a 5 USD cap for that one run; Fable sees no held-out numbers; a test only if Fable's key reaches
+   0.85 resubstitution on the training lines; thresholds unchanged.
+8. `CONVENTIONS-TRANSCRIPTION.md`: how the hand writes its figures, and the TSV format.
 
 `H-secret/H_final.tsv`, named in these files, is the frozen transcription of the held-out lines 113R L19-L33. It is
 not in this folder: the test was never run, the lines were never decoded, and they are kept aside for a future test.

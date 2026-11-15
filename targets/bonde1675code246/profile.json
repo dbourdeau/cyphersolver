@@ -1,13 +1,13 @@
 {
  "schema_version": 1,
  "target": "bonde1675code246",
- "title": "Carl Bonde to a Chancery Councillor (\"Herr Cantzlirådet\"), Paris, 13 Nov 1675: one letter in a second code (numbers 1-246, one number a letter) on images 113R-114L of the Bonde volume (Riksarkivet, Diplomatica Gallica; same volume as catalogue 2317), read in part from its period gloss; draft key at 0.65 resubstitution, not validated",
+ "title": "Carl Bonde to a Chancery Councillor (\"Herr Cantzlirådet\"), Paris, 13 Nov 1675: one letter in a second code (numbers 1-246, one number a letter) on images 113R-114L of the Bonde volume (Riksarkivet, Diplomatica Gallica; same volume as catalogue 2317), read in part from its period gloss; draft key at 0.66 resubstitution, not validated",
  "documents": [
   {
    "id": "letter_1675-11-13",
    "read": "read in part",
    "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), images 113R (33 cipher lines) and 114L (32 cipher lines)",
-   "date": "Paris d. 13 Novembris 1675 (gloss, 114L line 4; 13/23 in one reading); the cipher's own date reads 18/28 Novembris 1675 (open)",
+   "date": "Paris d. 13 Novembris 1675 (gloss, 114L line 4; 13/23 in one reading); the cipher's own date is 18/28 Novembris 1675 (upper number 18 on a blind digit check by Brice Dudout)",
    "year": 1675,
    "country": "Sweden",
    "route": "Carl Bonde, Swedish envoy (Paris) -> a Chancery Councillor (Herr Cantzlirådet) in Stockholm; perhaps H. Hoghusen (postscript of image 112R), not confirmed",
@@ -35,8 +35,8 @@
     "by": "llm from images",
     "source": "Riksarkivet IIIF, full-size images of 113 and 114 (lbiiif.riksarkivet.se, R0003797_00113 and _00114), line strips and zooms; no images published here",
     "image_quality": "fair",
-    "corrections": 45,
-    "notes": "Counted by our scripts, so measured is false: 390 numbers in 113R L01-L18 and 588 in 114L G01-G32 (pass 3), plus 301 in 113R L19-L33, which are kept aside (held out before any key, frozen by SHA-256, never decoded, not in this folder). Three passes by Claude Opus 5.5 sub-agents: pass 2 blind to pass 1 (367 of 392 numbers of 113R L01-L18 the same); pass 3 re-read 321 doubtful positions with two blind readers each (293 agreed) and an arbiter on the image for the other 28; 45 numbers changed and 18 positions dropped. Glosses crossing the numbers make some readings uncertain."
+    "corrections": 52,
+    "notes": "Counted by our scripts, so measured is false: 390 numbers in 113R L01-L18 and 588 in 114L G01-G32 (pass 3), plus 301 in 113R L19-L33, which are kept aside (held out before any key, frozen by SHA-256, never decoded, not in this folder). Three passes by Claude Opus 5.5 sub-agents: pass 2 blind to pass 1 (367 of 392 numbers of 113R L01-L18 the same); pass 3 re-read 321 doubtful positions with two blind readers each (293 agreed) and an arbiter on the image for the other 28; 45 numbers changed and 18 positions dropped. Glosses crossing the numbers make some readings uncertain. Pass 4 (15 Nov 2026): Brice Dudout corrected 7 numbers of 113R on a blind digit-form sheet (3 of 3 controls right)."
    }
   }
  ],
@@ -110,7 +110,7 @@
    "known plaintext"
   ],
   "attack": "archive decipherment",
-  "human_role": "Brice Dudout set the task and the rules (protocol frozen by SHA-256 before each step, a held-out portion, blind second readings) and approved each step (the Fable run, the third pass, the issue). Claude agents transcribed, read the gloss, checked it blind and built the key. No reading by a person without AI; no human palaeographer checked the gloss.",
+  "human_role": "Brice Dudout set the task and the rules (protocol frozen by SHA-256 before each step, a held-out portion, blind second readings) and approved each step (the Fable run, the third pass, the issue). Claude agents transcribed, read the gloss, checked it blind and built the key. He read 21 doubtful digits and 3 controls on a blind digit-form sheet (pass 4, the cipher date). No reading by a person without AI; no human palaeographer checked the gloss.",
   "tools": [
    "Riksarkivet IIIF images, line strips and zooms (PIL)",
    "semi-global alignment of decoded numbers against the concatenated gloss with majority vote (scripts/build_key3.py)",
@@ -119,7 +119,7 @@
   ],
   "models": [
    "claude-opus-5-5 (transcription passes, blind checks, key, this folder)",
-   "claude-fable-5-2 (palaeographic reading of the gloss G01-G20, one API run of 14 Nov 2026)"
+   "claude-fable-5-2 (palaeographic reading of the gloss G01-G20, API run of 14 Nov 2026; key proposal from the pass-4 numbers, API run of 15 Nov 2026)"
   ],
   "first_date": "2026-11-06",
   "last_date": "2026-11-15"
@@ -209,13 +209,29 @@
    "kind": "reading",
    "what": "Gloss G01-G20 normalised into Swedish sentences and translated: 16 of 161 words holes (read share 0.90). G21-G33 and 114L gloss left decoded, not read.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "Pass 4: blind digit-form sheet answered by Brice Dudout (21 doubtful numbers, 3 controls all right): 7 numbers of 113R corrected; the cipher date's upper number is 18 (18/28 Novembris against the gloss's d. 13).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "what": "Key re-voted on the pass-4 numbers (same 120 values): resubstitution 0.6605. Fable 5.2 key proposal (144 values, block table): 0.6544 by our scoring, under 0.85: no test, held-out lines not decoded. The block table (alternating runs of 9-10 cells a-h, i-q, r-z; å ä ö on 161-169) is confirmed against shuffled keys on the same key.",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read from existing decipherment",
-  "method_basis": "The text is the Swedish chancery's interlinear decipherment of 1675 written between the cipher lines of 113R (and 114L lines 1-4); G01-G20 are read here as sentences. A draft key rebuilt from that gloss agrees with it at 0.65 on its own training text (resubstitution), which is not a validation; the held-out lines 113R L19-L33 were not decoded.",
+  "method_basis": "The text is the Swedish chancery's interlinear decipherment of 1675 written between the cipher lines of 113R (and 114L lines 1-4); G01-G20 are read here as sentences. A draft key rebuilt from that gloss agrees with it at 0.66 on its own training text (resubstitution), which is not a validation; the held-out lines 113R L19-L33 were not decoded.",
   "parts": [
    {
     "label": "the letter's text",
@@ -229,7 +245,7 @@
     "records": "113R L01-L18, 114L G01-G32",
     "method": "key recovered based on adjacent plaintext",
     "extent": "partial",
-    "basis": "draft key of 120 values rebuilt from the interlinear gloss; 0.65 character agreement on its own training text, not validated on held-out lines"
+    "basis": "draft key of 120 values rebuilt from the interlinear gloss; 0.66 character agreement on its own training text after pass 4 (a Fable 5.2 proposal: 0.654), not validated on held-out lines"
    }
   ],
   "first_break": false,
@@ -302,9 +318,9 @@
     "detail": "kept aside as a held-out test for the draft key, never decoded"
    },
    {
-    "item": "the date: cipher 18/28 against gloss 13 (or 13/23) Novembris",
-    "blocker": "illegible",
-    "detail": "a flat-topped 3 reads like 8 in this hand; open"
+    "item": "why the cipher date (18/28) and the gloss date (13 Novembris) differ",
+    "blocker": "not-attempted",
+    "detail": "the cipher's upper number reads 18 on a blind digit check; drafting and enciphering dates may differ, or the gloss slipped"
    }
   ],
   "texts": [
@@ -314,7 +330,8 @@
     "transcription": [
      "transcriptions/113R_L01-L18_pass1.tsv",
      "transcriptions/113R_L01-L18_pass2_blind.tsv",
-     "transcriptions/113R_L01-L18_pass3_final.tsv"
+     "transcriptions/113R_L01-L18_pass3_final.tsv",
+     "transcriptions/113R_L01-L18_pass4_final.tsv"
     ],
     "contemporary": [
      "gloss/113R_G01-G20_fable.tsv",
@@ -355,6 +372,6 @@
    }
   ],
   "key_file": "key/key.tsv",
-  "notes": "A second key of the Bonde volume, filed as its own target at Daniel Bourdeau's request (issue #629). The 0.65 is a resubstitution figure, stated as such; no claim to a new reading."
+  "notes": "A second key of the Bonde volume, filed as its own target at Daniel Bourdeau's request (issue #629). The 0.66 is a resubstitution figure, stated as such; no claim to a new reading."
  }
 }

@@ -8,7 +8,7 @@ Same volume as `bonde1676` (catalogue 2317). No images or crops are published he
 **State: read in part, from the period decipherment.** The chancery's ink gloss deciphers the whole letter. Its first
 half (gloss lines G01-G20 of 113 right) is read here as sentences with scattered holes (about 90% of words). The rest
 of the gloss (G21-G33 and 114 left lines 1-4) is read only in part, with many holes, and stays "decoded, not read".
-The draft key built from the gloss is **not validated** (0.65 resubstitution, see below).
+The draft key built from the gloss is **not validated** (0.66 resubstitution after pass 4, see below).
 
 ## What the document is
 
@@ -69,12 +69,20 @@ Format of the TSV files: line id, numbers separated by dots, the gloss over that
 | transcriptions/113R_L01-L18_pass2_blind.tsv, 114L_G01-G32_pass2_blind.tsv | same | pass 2, Opus sub-agent blind to pass 1 |
 | transcriptions/113R_L01-L18_pass3_final.tsv, 114L_G01-G32_pass3_final.tsv | same | pass 3 with arbitration (final) |
 | transcriptions/pass3/ | 321 positions | pass 3 items, the two blind readers' answers per page, the arbitration |
+| transcriptions/113R_L01-L18_pass4_final.tsv, 113R_pass4_corrections.tsv | 113R L01-L18 | pass 4: pass 3 with 7 numbers corrected by a person (see below) |
 
 Passes 1 and 2 agreed on 367 of 392 numbers of 113 right L01-L18 (94%). Pass 3 re-read every position where the two
 passes differed, where pass 1 marked a doubt, or where the decode with the lot-13 key did not match the gloss (the
 decode only said where to look; no reader saw it): 321 positions, each read by two blind Opus readers who saw only the
 neighbouring numbers as landmarks; 293 agreed, 28 went to an arbiter on the image. 45 numbers changed from pass 1 and
 18 positions were dropped (binding, unreadable, no group). The readers' notes are in French.
+
+Pass 4 (15 Nov 2026): Brice Dudout answered a blind digit-form sheet of 21 doubtful numbers and 3 control numbers
+(one digit framed at a time, digit shapes to choose from, no letters, no key; the sheet's rules were frozen by SHA-256
+before it was built). He got the 3 controls right. Seven numbers of 113 right changed (L01 no. 6 28→23, L03 no. 2 27→77,
+L03 no. 12 28→23, L04 no. 4 37→27, L04 no. 13 49→40, L11 no. 15 28→23, L16 no. 21 28→23; the list is in
+transcriptions/113R_pass4_corrections.tsv). The seven doubtful `34` were all confirmed as 3, not 9, so the flat-topped 3
+is a 3 here. 114 left is unchanged from pass 3.
 
 **113 right lines L19-L33 (301 numbers) are kept aside** and are not in this folder: they were set apart as a held-out
 test portion before any key was built, transcribed by two blind sub-agents and an arbiter, frozen by SHA-256, and
@@ -113,14 +121,38 @@ medalzeleochefection ... finna [n]o[g]on occasion at viisa ... beredviligheet c[
 The figure stays low because the gloss abbreviates and does not always follow the cipher word for word, the later
 gloss is poorly read, and the numbers still carry errors (key/METHOD.md).
 
-## Open: the date, 18/28 against 13
+**Pass 4.** Re-voting the key on the pass-4 numbers (same method, same script with new paths) gives exactly the same
+120 values as key/key.tsv; the seven corrected numbers alone raise resubstitution to **0.6605** (113 right 0.754, 114
+left 0.599). Still under 0.85: no test.
+
+**A second Fable run (15 Nov 2026), for the key.** With Brice Dudout's approval and a 5 USD cap for the one run
+(protocol/PREREG-CODE246-ADDENDUM-4.md, frozen before the call), Claude Fable 5.2 was given the pass-4 training numbers,
+the training gloss as normalised words, the draft key and the scoring script, and asked for a better key with reasons
+for each value. It saw none of the held-out numbers. Its key (key/fable_lot14_proposal.json, 144 values, 24 of them for
+numbers never seen, taken from the table alone) scores **0.6544** by our own scoring, slightly *below* the draft key;
+Fable found the same and reported that even an unconstrained fit stops at 0.664, so the ceiling comes from the gloss
+(the later gloss above all) and the number readings, not from the key. The rule was a test only at 0.85 or more, so
+**no test was run and the held-out lines were again not decoded.** The run cost 2.93 USD.
+
+What the run adds is structure. The key is laid out as a regular table in blocks of nine or ten cells, running in
+alternate directions: a-h over 17→9, 38→46, 74→66, 94→102 (with a second `f` cell), i-q over 18→26, 55→47, 83→75,
+103→111 (with a second `l` cell), r-z over 65→56, 93→84, 112→121 and 27→37, and å ä ö on 161-169
+(key/fable_lot14_table.tsv). We checked it ourselves: in Fable's key, 94 of 127 pairs of consecutive numbers carry
+neighbouring letters, against at most 17 in 200 keys with the letters shuffled (the draft key: 55 of 86, at most 14).
+The table was read off the same key, so this is a strong pattern, not an independent proof. Fable also suggests that a
+few cells stand for doubled letters (11 = `ff`, perhaps 63 = `ss` and 30 = `tt`), which a one-letter-per-number key
+cannot express. Both are hypotheses for whoever takes the key further; the draft key in key/key.tsv is unchanged.
+
+## The date: the cipher says 18/28, the gloss 13
 
 The cipher's last line on 114 left begins with the date in figures, written as a fraction: `18` over `28` (read so by
 both pass-3 readers; one saw `18` above, separated by a stroke). The gloss signature on 114 left line 4 reads
 `Paris d. 13 Novembris` (pass 1), or `13/23 Novembris` (pass 2, which saw a `13` written over `23`). Both pairs are
-Old Style / New Style dates ten days apart. In this hand a flat-topped 3 is easily read as 8, so the cipher may say
-13/23 too; or the letter may have been written on the 13th and the cipher dated the 18th/28th. Not settled; it needs a
-look at the original or at a better image. Noted as open by Daniel Bourdeau (issue #629).
+Old Style / New Style dates ten days apart. In this hand a flat-topped 3 is easily read as 8, so we asked a person to
+look. On a blind digit-form check (Brice Dudout, 15 Nov 2026: one digit framed at a time, shapes to choose from, no
+context, 3 of 3 control digits right), the upper number of the fraction is `18`: the cipher is dated
+**18/28 Novembris**, while the gloss gives **d. 13 Novembris**. Either the letter was drafted on the 13th and enciphered
+or sent on the 18th, or the gloss writer slipped. We do not settle which. (Issue #629.)
 
 ## Prior art
 
@@ -140,5 +172,7 @@ found. The reading is the chancery's own decipherment of the time, so this is no
 - Gloss G21-G33 of 113 right and 114 left lines 1-4: read only in part (illegible in places for our readers); a careful
   palaeographic reading of these lines would give the second half of the letter.
 - The scattered holes of G01-G20 (listed in the reading).
-- The draft key is untested; 113 right L19-L33 are kept aside for one test.
-- The date (18/28 against 13 or 13/23) and the recipient (Hoghusen?) are open.
+- The draft key is untested; 113 right L19-L33 are kept aside for one test. Resubstitution is stuck near 0.66 with
+  the present gloss reading (Fable's key included); a better reading of G21-G33 would help more than a new key.
+- The block table and the doubled-letter cells (Fable's hypotheses) are unchecked against new text.
+- Why the cipher (18/28) and the gloss (13) differ, and the recipient (Hoghusen?), are open.
