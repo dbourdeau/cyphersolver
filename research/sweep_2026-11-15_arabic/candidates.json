@@ -1,0 +1,871 @@
+[
+ {
+  "year": 1400,
+  "date": "text composed about 1330-1370 (the compiler dates an anecdote on f. 86r to 'seven hundred and thirty-odd' AH and writes to the Ibn Fadl Allah chancery circle); this copy is dated by Penn to the 15th century ('14--')",
+  "title": "Ibn al-Qaysarani to the compiler of a Mamluk book of cipher correspondence: seven-line cipher note whose solution is lost with the end of the manuscript",
+  "correspondents": "Ibn al-Qaysarani -> the unnamed compiler",
+  "place": "Syria or Egypt (Mamluk chancery circle); Penn: Syria?",
+  "language": "Arabic (verse expected)",
+  "period": "15th century",
+  "shelfmark": "University of Pennsylvania, Kislak Center, LJS 51, f. 106v (OPenn image 0084_0217)",
+  "folio_note": "f. 106v, lines 6-12: seven lines of invented signs, about 20 signs a line (roughly 120-130 signs), words divided by a dotted vertical stroke; three or four small red letters stand over the first signs of line 1; line 13 begins the compiler's 'I solved it at once and found he had made lam-alif ...' and the manuscript breaks off",
+  "cls": "A",
+  "status": "Penn: 'encrypted correspondence between the compiler and various correspondents, in approximately 150 alphabets, accompanied by transcriptions of the letters in Arabic ... incomplete, lacking its beginning and end'. Page-by-page check of all 212 pages (15 Nov 2026): every other cipher passage is followed by its plaintext ('fa-halaltuhu ... wa-huwa' + the verses) or carries a red interlinear gloss; this last one lost its plaintext with the missing leaf. No study of the manuscript found. Not on DECODE.",
+  "why": "The one cipher in the oldest surviving book of real Arabic cipher correspondence (14th-century Mamluk secretaries) that has no reading; about 200 solved siblings in the same volume show the conventions.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 2,
+  "verify": "Transcribe the seven lines from the OPenn master TIFF (2339 x 2959 px); use the red letters over line 1, the lam-alif hint, the word dividers and Arabic verse metre; compare the signs with the solved alphabets in ff. 1r-106r.",
+  "links": [
+   {
+    "label": "OPenn LJS 51 (all images, TEI)",
+    "href": "https://openn.library.upenn.edu/Data/0001/html/ljs51.html"
+   },
+   {
+    "label": "f. 106v, web JPEG",
+    "href": "https://openn.library.upenn.edu/Data/0001/ljs51/data/web/0084_0217_web.jpg"
+   },
+   {
+    "label": "f. 106v, master TIFF",
+    "href": "https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0217.tif"
+   },
+   {
+    "label": "Digital Scriptorium DS738",
+    "href": "https://search.digital-scriptorium.org/catalog/DS738"
+   }
+  ],
+  "prior_art": "open (checked 15 Nov 2026: Penn/OPenn TEI, Digital Scriptorium, web searches in English and Arabic, Voynich Ninja thread 4685, Tomokiyo, Lasry key list, DECODE)",
+  "needs_archive_scan": "no",
+  "access_note": "OPenn, public domain, plain curl (fast on 15 Nov 2026); web JPEG 1422 x 1800 px, master TIFF 2339 x 2959 px (20 MB)",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part A",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0217.tif (f. 106v, master TIFF 2339 x 2959 px, viewed as two full-resolution halves); all 212 text pages (images 0084_0006 to 0084_0217) viewed as web JPEGs on contact sheets",
+    "extent": "seven lines of cipher on f. 106v, about 20 signs each, roughly 120-130 signs in about 30 word groups; it is the last text in the volume",
+    "cipher": "Monoalphabetic-looking invented signs (loops, crossed strokes, figure-like shapes) with a dotted vertical word divider, introduced by the Arabic words 'wa-kataba li Ibn al-Qaysarani'. Three or four small red Arabic letters are written over the first signs of line 1; nothing over the other six and a half lines. The line under the cipher starts the compiler's remark that he solved it at once and breaks off; the following leaf, which held the plaintext, is lost, so no decipherment is written on or with it."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: decode_search.py for Schoenberg, LJS and Pennsylvania returned 0 records.",
+    "tomokiyo": "Cryptiana unsolved.htm, crypto.htm and GL.htm fetched 15 Nov 2026 and searched for Arabic, Mamluk, Syria, Schoenberg, LJS: only unrelated uses of 'Arabic figures'; no entry for this manuscript.",
+    "lasry": "GL.htm lists no Arabic-script key; a web search for the manuscript with cipher/decipher found no Lasry or HistoCrypt paper.",
+    "edition": "No edition or study known. Penn's TEI record, Colenda and Digital Scriptorium DS738 cite none; Penn's 'Facsimile of LJS 51' (ScholarlyCommons sims_ebooks/13) is the images only.",
+    "literature": "Web search found only the catalogue records and Voynich Ninja thread 4685 (glyph comparisons, no reading). An Arabic-language search on the correspondents and 'hall al-mutarjam' found nothing on this text. The earlier project note (sweep_2026-11_arabic) cites Transformation of Knowledge (2006) p. 43, a catalogue entry, not opened here."
+   },
+   "key_check": "No key table for this alphabet is on the page. The volume uses a different alphabet for almost every message, so the solved alphabets on ff. 1r-106r are not known to read this one; none was tested in this sweep, which does not solve.",
+   "key_in_volume": "The same volume holds about 200 cipher passages each followed by its Arabic plaintext (and a few with red interlinear glosses, e.g. ff. 1v, 52v, 87r, 90r): solved siblings by the same circle of writers, and three or four red gloss letters over this cipher's first signs. Not tested.",
+   "duplicates": "known.py \"LJS 51\" and \"Qaysarani\": only the notes of sweep_2026-11_arabic and sweep_2026-11-11_us_uk_leftovers, which list the volume as a read key corpus and did not page it; not in catalogue.json or research/leads.json. DECODE: 0 records.",
+   "searches": [
+    {
+     "query": "WebSearch: \"LJS 51\" Schoenberg Arabic \"encoded correspondence\" OR \"encrypted correspondence\" alphabets manuscript study decipher",
+     "result": "Colenda, Penn catalogue, DS738, Penn facsimile and Voynich Ninja thread 4685 only; no published decipherment or study"
+    },
+    {
+     "query": "WebFetch: voynich.ninja printthread tid=4685",
+     "result": "opening post compares glyphs; replies behind a login; no transcription, reading or citation visible"
+    },
+    {
+     "query": "WebSearch: Mamluk cipher correspondence manuscript mutarjam verses \"Ibn Fadl Allah\" \"Shihab al-Din\" al-Jindi al-'Ala'i Burhan al-Din al-Qudsi cryptography treatise 14th century",
+     "result": "general pages on al-Qalqashandi and Ibn al-Durayhim; nothing on this text or its correspondents"
+    },
+    {
+     "query": "WebSearch (Arabic): makhtut murasalat mutarjama aqlam \"Ibn al-Qaysarani\" OR \"Ibn Fadl Allah\" hall al-mutarjam abyat \"fa-halaltuhu\" Ibn al-Durayhim",
+     "result": "no manuscript or edition matching; unrelated hadith and epistolography hits"
+    }
+   ],
+   "verdict": "open"
+  },
+  "region": "Other",
+  "source": "Arabic sweep 15 Nov 2026 (part A)",
+  "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+  "seen": "image"
+ },
+ {
+  "year": 1200,
+  "date": "undated Geniza letter (PGP gives no date; classical Geniza period, 11th-13th c., is plausible for a Qus-Fustat family letter but is not assessed)",
+  "title": "Son in Qus to his mother: Judaeo-Arabic letter with six lines in a secret language (nearly every word begins with alef)",
+  "correspondents": "a son in Qus -> his mother, presumably in Fustat",
+  "place": "Qus (Upper Egypt)",
+  "language": "Judaeo-Arabic (Hebrew script)",
+  "period": "unknown",
+  "shelfmark": "Jewish Theological Seminary Library, ENA 4100.7b (PGPID 11951)",
+  "folio_note": "recto, about 17 lines in Hebrew script; lines 7-12 (six lines, about 30 words) are the secret passage, written in ordinary Hebrew letters; verso is a second letter in Arabic script mixed with Hebrew script",
+  "cls": "C",
+  "status": "PGP: \"Written in Judaeo-Arabic and a cipher (lines 7-12; noticed by OZ; probably this is also in Judaeo-Arabic) ... Needs examination/decipherment\"; tags cipher, to examine. PGP shows no transcription. This is the letter Elbaum's 2022 Genizah blog describes (found by Oded Zinger; almost all words begin with alef, so not a plain substitution). Not on DECODE.",
+  "why": "The only Geniza family letter known with an unread secret-language passage; the clear lines around it give the context (regards, a complaint about Abu Mansur).",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 4,
+  "verify": "Transcribe lines 7-12 from the JTS image (5428 x 7230 px); test word-game hypotheses (alef prefixed to each word or syllable, letter shift after a dummy alef); ask O. Zinger / A. Elbaum (Princeton Geniza Project) whether a reading is in hand.",
+  "links": [
+   {
+    "label": "PGP 11951",
+    "href": "https://geniza.princeton.edu/en/documents/11951/"
+   },
+   {
+    "label": "JTS image, recto (IIIF)",
+    "href": "https://iiif-cloud.princeton.edu/iiif/2/9b%2Fdc%2Fd9%2F9bdcd9be1aed4b108412a7faffee4438%2Fintermediate_file/full/full/0/default.jpg"
+   },
+   {
+    "label": "Elbaum, Cambridge Genizah blog 2022",
+    "href": "https://genizahfragments.lib.cam.ac.uk/2022/06/22/qa-wednesday-secret-codes-and-erotic-prose-with-alan-elbaum/"
+   }
+  ],
+  "prior_art": "open (checked 15 Nov 2026: PGP record and scholarship tab, Cambridge Genizah blog 2022, web searches, Tomokiyo, Lasry key list, DECODE)",
+  "needs_archive_scan": "no",
+  "access_note": "JTS image served by Princeton IIIF (iiif-cloud.princeton.edu), plain curl, full size 5428 x 7230 px",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part A",
+   "seen": {
+    "kind": "scan",
+    "where": "https://iiif-cloud.princeton.edu/iiif/2/9b%2Fdc%2Fd9%2F9bdcd9be1aed4b108412a7faffee4438%2Fintermediate_file/full/full/0/default.jpg (recto, 5428 x 7230 px, viewed whole and lines 6-14 as a full-resolution crop); verso image 3b%2Fff%2Feb%2F3bffeb7e... also viewed",
+    "extent": "recto of one paper leaf, about 17 lines; the secret passage is lines 7-12 by the PGP count, six lines of roughly five words each",
+    "cipher": "Ordinary Hebrew square/semi-cursive letters, same hand and pen as the clear Judaeo-Arabic lines above and below, but the words are not Judaeo-Arabic words and most of them begin with alef. No interlinear or marginal gloss on the leaf; the verso (a second letter, Arabic and Hebrew script) carries no key or reading."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: decode_search.py for Geniza, Genizah, Judaeo-Arabic and Arabic each returned 0 records.",
+    "tomokiyo": "Cryptiana unsolved.htm, crypto.htm (index) and GL.htm fetched 15 Nov 2026 and searched for Geniza, Hebrew, Judaeo: no entry.",
+    "lasry": "GL.htm (Lasry's key list on Cryptiana) has no Hebrew-script or Geniza item; no Lasry or HistoCrypt paper on a Geniza letter found by web search.",
+    "edition": "No printed edition. PGP scholarship tab lists only \"Alan Elbaum's edition (2020)\", a PGP-internal record; the PGP page shows no transcription and its description ends \"Needs examination/decipherment\".",
+    "literature": "Elbaum, Cambridge Genizah Research Unit blog, 22 Jun 2022: Zinger's letter has \"a portion in an incomprehensible cipher. Almost all the words begin with alef\". Bohak 2010 (CSIC) treats a different cipher; T-S NS 70.1 (cracked by Bohak 2025, unpublished) was viewed and is a different system (dotted Hebrew-letter substitution)."
+   },
+   "key_check": "No key is known for this system. The Geniza keys on record (CUL Or.1080 J277: Coptic-numeral, atbash and pangram keys; T-S K2.4 atbash) are letter substitutions and do not produce alef-initial words; not tested by hand in this sweep, which does not solve.",
+   "duplicates": "known.py \"ENA 4100\" and \"Qus\": only the unmerged rows and notes of research/sweep_2026-11_hebrew and sweep_2026-11_arabic (this row carries that candidate forward); not in catalogue.json or research/leads.json. DECODE: 0 records.",
+   "searches": [
+    {
+     "query": "WebSearch: \"ENA 4100.7\" Geniza cipher letter Qus mother Zinger",
+     "result": "only the PGP record (EN/AR/HE); no decipherment and no publication found"
+    },
+    {
+     "query": "WebSearch: Zinger Geniza letter cipher \"begins with alef\" Judaeo-Arabic secret language deciphered",
+     "result": "Elbaum's 2022 blog only: letter called incomprehensible; no later reading"
+    },
+    {
+     "query": "PGP site search: cipher (39 hits), tag:\"cipher\" (13), \"cipher to examine\", cryptic (97), code (111), undeciphered (51)",
+     "result": "ENA 4100.7b is the only letter tagged cipher + to examine; no second fragment in the same alef system and no key"
+    },
+    {
+     "query": "PGP document page 11951 and its /scholarship/ tab, read 15 Nov 2026",
+     "result": "no transcription or translation shown; description says needs decipherment"
+    }
+   ],
+   "verdict": "open"
+  },
+  "region": "Other",
+  "source": "Arabic sweep 15 Nov 2026 (part A)",
+  "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+  "seen": "image"
+ },
+ {
+  "year": 1200,
+  "date": "undated Geniza fragment (PGP gives no date; paper)",
+  "title": "Paper fragment with eleven lines in an unidentified sign script; Arabic-script text on the other side",
+  "correspondents": "unknown",
+  "place": "Egypt (Cairo Geniza)",
+  "language": "unknown (Arabic or Judaeo-Arabic expected: the other side is in Arabic script)",
+  "period": "unknown",
+  "shelfmark": "Cambridge University Library, T-S K24.24 (PGPID 33913; the Arabic side is PGPID 32108)",
+  "folio_note": "one side: 11 lines of signs, roughly 20-25 signs a line (about 250 signs), with long slanted strokes and dots between groups; a narrow column of fainter signs down the right margin. Other side: 6-7 lines of large Arabic script (PGP: letter? 'al-mawla' mentioned)",
+  "cls": "C",
+  "status": "PGP 33913: 'Magical fragment, perhaps. Unidentified alphabet or cipher', tags cipher, magic; no scholarship record. Seen at native resolution: some signs resemble Hebrew bet, he, het and samekh, others are loops and crossed forms; it is running text in lines, not a row of charakteres. Not on DECODE. No vetting block: the T-S K box is the magic box, and the Schaefer-Shaked edition and Bohak's inventory of Geniza magical fragments were not opened.",
+  "why": "About 250 signs of continuous text with word dividers: the longest unread sign-script text found in the Geniza pass, long enough for a substitution attack if the language is Arabic.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 4,
+  "verify": "Check Schaefer and Shaked, Magische Texte aus der Kairoer Geniza I-III (index of T-S K fragments) and Bohak's catalogue of Geniza magical fragments for K24.24; ask the Princeton Geniza Project; rule out a known script (a cursive of Coptic, Syriac or a shorthand) before treating it as a cipher; read the Arabic side for a date or names.",
+  "links": [
+   {
+    "label": "PGP 33913",
+    "href": "https://geniza.princeton.edu/en/documents/33913/"
+   },
+   {
+    "label": "PGP 32108 (Arabic side)",
+    "href": "https://geniza.princeton.edu/en/documents/32108/"
+   },
+   {
+    "label": "CUDL image, sign side (IIIF)",
+    "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00024-000-00001.jp2/full/full/0/default.jpg"
+   }
+  ],
+  "prior_art": "none found, edition not checked (15 Nov 2026: PGP records, one web search on the shelfmark, DECODE; Schaefer-Shaked and Bohak's inventory not opened)",
+  "needs_archive_scan": "no",
+  "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 3806 x 3664 px by regions",
+  "region": "Other",
+  "source": "Arabic sweep 15 Nov 2026 (part A)",
+  "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+  "seen": "image"
+ },
+ {
+  "year": 1139,
+  "date": "after 1 Nisan 1139 (inferred, PGP / India Book IV)",
+  "title": "Yishaq b. Avraham Ibn Ezra to Halfon b. Netanel ha-Levi: Judaeo-Arabic letter with three words in a Coptic-numeral code",
+  "correspondents": "Yishaq b. Avraham Ibn Ezra (Spain) -> Halfon b. Netanel ha-Levi",
+  "place": "Spain (al-Andalus)",
+  "language": "Judaeo-Arabic (Hebrew script), code in Greek/Coptic numerals",
+  "period": "unknown",
+  "shelfmark": "Cambridge University Library, T-S 13J18.19 (India Book IV, 41 = H55; PGPID 9097)",
+  "folio_note": "recto line 11 (five numeral signs after 'wa-l-'), recto line 12 (three signs at the line start), verso line 5 (about 11 signs, readings doubtful); paper 16.9 x 25.1 cm",
+  "cls": "B",
+  "status": "Edited: Gil and Fleischer, Yehuda ha-Levi and his Circle (2001) pp. 282-285, who proposed readings for the first two code words by two different methods and none for the third; Goitein, Friedman and Ashur, India Book IV B (2013) no. 41 print the signs and judge the matter unresolved (PGP: \"substitution mechanism that has not yet been determined\"). Partial, disputed proposals in print: no vetting block. Not on DECODE.",
+  "why": "A dated 1139 Andalusi merchant-scholar letter (Halfon / Judah ha-Levi circle) hiding names or goods in a numeral code; the oldest dated unread Judaeo-Arabic code found.",
+  "importance": 3,
+  "solvability": 1,
+  "difficulty": 4,
+  "verify": "Read Gil-Fleischer pp. 282-285 and India Book IV B no. 41 note 1 for the proposed solutions; test the Coptic-numeral letter keys of CUL Or.1080 J277 verso, Bodl. MS heb. f 102/28 and JRL L 259 on the three groups; too short for anything but a key test.",
+  "links": [
+   {
+    "label": "PGP 9097",
+    "href": "https://geniza.princeton.edu/en/documents/9097/"
+   },
+   {
+    "label": "CUDL image, recto (IIIF)",
+    "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-00013-J-00018-00019-000-00001.jp2/full/full/0/default.jpg"
+   },
+   {
+    "label": "Key specimen: PGP 34004 (CUL Or.1080 J277)",
+    "href": "https://geniza.princeton.edu/en/documents/34004/"
+   }
+  ],
+  "prior_art": "partial proposals in print, disputed (Gil-Fleischer 2001 pp. 282-285; India Book IV B no. 41 leaves it open); checked 15 Nov 2026 on PGP only, the two books not opened",
+  "needs_archive_scan": "no",
+  "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 5685 x 8199 px by regions",
+  "region": "Other",
+  "source": "Arabic sweep 15 Nov 2026 (part A)",
+  "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+  "seen": "image"
+ },
+ {
+  "year": 1217,
+  "date": "21 Rabi' II 615 AH / 17 Jul 1217 (date of the copy; Sellheim dates the cipher lines '615/1217 ?')",
+  "title": "Two lines of cipher signs on the title page of a copy of ad-Dani's at-Taisir, by the scribe Abu Sa'id ibn Humaid (Hamid) ash-Shafi'i al-Muqri' (Berlin, Ms. or. oct. 3629)",
+  "correspondents": "scribe Abu Sa'id ibn Humaid (Hamid) ash-Shafi'i al-Muqri' (attribution by Sellheim: 'wohl'); no addressee",
+  "place": "unknown",
+  "language": "Arabic (presumed from the Arabic manuscript; not established)",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Staatsbibliothek zu Berlin, Orientabteilung, Ms. or. oct. 3629 (acc. 1933.30; 'Ahlwardt vor 579'), f. 1a and margin of f. 72b; Sellheim, VOHD XVII A 1 (1976) no. 12",
+  "folio_note": "f. 1a, between the title and the author's name: 2 lines, '43(?) Buchstaben in Geheimschrift', partly smudged; 7 of them repeated in the margin of f. 72b. Printed facsimile of the two lines: Sellheim, Tafel 55, Abb. 69.",
+  "cls": "B",
+  "status": "Sellheim (1976) p. 23: 'zwischen Titel und Verfasserangabe die beiden Zeilen mit 43(?) Buchstaben in Geheimschrift ... (zum Teil verwischt) und von denen sieben am Rande von Bl. 72b wiederholt sind (s. unten S. 177, sowie Abb. 69 u. 92)'; he gives no reading. Plate caption: '69. Geheimschrift, 615/1217 ? (s. S. 23 u. Abb. 92)'. Seen on the plate at full size: two lines of about 20 separate signs each, several looking like numerals with dots, bare, above the Arabic author line. Sellheim points for comparison to an abjad numeral cipher of c. 1800 in Ms. or. oct. 3938 (Abb. 92), which is written out in clear above its cipher. Not on DECODE.",
+  "why": "A dated 13th-century Arabic cryptogram by a named Qur'an-reading scholar's scribe, older than nearly every European cipher in the catalogue; probably a name, motto or ownership formula.",
+  "importance": 3,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from Sellheim's description and his plate, viewed at full size during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/); the manuscript itself not viewed (Qalamos unreachable from this network)",
+  "verify": "View f. 1a and f. 72b of Ms. or. oct. 3629 on Qalamos / SBB (not reachable from this network) to get a clean count of the signs; test the abjad numeral cipher of Sellheim Abb. 92 and Wuestenfeld, 'Ueber eine arabische Geheimschrift' (Nachrichten Goettingen 1879); check M. Ullmann, Natur- und Geheimwissenschaften im Islam (1972), the pages on secret alphabets that Sellheim cites.",
+  "links": [
+   {
+    "label": "Sellheim 1976, Tafel 55 (Abb. 69), SBB digital",
+    "href": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879946874&PHYSID=PHYS_0461"
+   },
+   {
+    "label": "Sellheim 1976, p. 23 (description of no. 12), SBB digital",
+    "href": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879946874&PHYSID=PHYS_0051"
+   },
+   {
+    "label": "Plate image, full size (IIIF)",
+    "href": "https://content.staatsbibliothek-berlin.de/dc/PPN1879946874-00000461/full/full/0/default.jpg"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part B)",
+  "prior_art": "open as far as checked (15 Nov 2026): Sellheim 1976 describes and reproduces it without a reading; web searches on the shelfmark and on Sellheim's plate found no decipherment; Cryptiana and Lasry's key list have no Arabic-script items; not on DECODE. Not opened: Ullmann 1972, Wuestenfeld 1879.",
+  "needs_archive_scan": "partly",
+  "access_note": "The two cipher lines are online as a printed halftone facsimile (Sellheim, Tafel 55, SBB digital, page image 2307 x 3264 px, the figure about 1,200 px wide). The manuscript leaf itself (f. 1a, f. 72b) is on Qalamos if digitised; qalamos.net and orient-digital reset the connection from this network, so that was not checked.",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part B",
+   "seen": {
+    "kind": "facsimile",
+    "where": "Sellheim, Materialien zur arabischen Literaturgeschichte I (VOHD XVII A 1, Wiesbaden 1976), Tafel 55, Abb. 69, on digital.staatsbibliothek-berlin.de (PPN1879946874, image 461), downloaded at the host's full size 2307 x 3264 px; the figure cropped and enlarged",
+    "extent": "2 lines on f. 1a, about 20 signs in each (Sellheim counts '43(?) Buchstaben'), the left part of line 1 and the middle of line 2 smudged; 7 signs repeated in the margin of f. 72b (not reproduced, not seen)",
+    "cipher": "Two lines of separate, unjoined signs, several resembling numerals or letters with one to three dots, each line closed by a group of dots; they stand above the Arabic author line 'ta'lif ash-shaikh al-imam al-hafiz Abi 'Amr 'Uthman ibn Sa'id ... ad-Dani'. No decipherment is written on the plate, and Sellheim's description (p. 23) calls them Geheimschrift and gives no reading."
+   },
+   "prior_art": {
+    "decode": "Not on DECODE: decode_search.py for 'Staatsbibliothek zu Berlin', 'Ms. or. oct.' and 'Taisir' returned no Berlin oriental manuscript (the 'Ms. or. oct.' hits are unrelated State Papers records).",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Arab, papyr, Berlin, Islam: no Arabic-script item on it; the snapshot unsolved.htm in the repository likewise.",
+    "lasry": "Lasry's key list cryptiana.web.fc2.com/code/GL.htm fetched 15 Nov 2026: no Arabic-script cipher and nothing from the Berlin Orientabteilung.",
+    "edition": "The only description is Sellheim's catalogue entry (VOHD XVII A 1 no. 12, pp. 22-24, read in full in the SBB OCR): it identifies the scribe, dates the copy to 17 July 1217 and reproduces the two lines, with no transcription or reading. Pretzl's 1930 edition of the Taisir (the text of the book, not of the cipher lines) was not opened.",
+    "literature": "Web searches 15 Nov 2026 for the shelfmark with Geheimschrift / cipher / cryptogram and for Sellheim's plate with Zahlenschrift / decipherment found the catalogue records only. Not opened: Ullmann, Natur- und Geheimwissenschaften im Islam (1972) p. 2-3, and Wuestenfeld 1879, which Sellheim cites for the cipher type, not for this text."
+   },
+   "key_check": "No key is given with it. Sellheim cross-refers to Abb. 92, an abjad numeral cipher that repeats an owner's note of c. 1800 in Ms. or. oct. 3938; whether the 1217 lines use the same system was not tested here (no solving in a sweep).",
+   "key_held": "In print: Sellheim Abb. 92 (Ms. or. oct. 3938 f. 1a, owner's note of Muhammad ash-Shanawani with the same words in an abjad numeral cipher beneath) and Wuestenfeld, 'Ueber eine arabische Geheimschrift', Nachrichten Goettingen 1879. Neither tested against this text.",
+   "duplicates": "known.py for 'or. oct. 3629', 'Sellheim', 'Taisir': no hits in the catalogue, leads, targets or solved lists (15 Nov 2026).",
+   "searches": [
+    {
+     "query": "web: \"or. oct. 3629\" Berlin Staatsbibliothek Dani Taisir Geheimschrift OR cipher OR cryptogram",
+     "result": "Only catalogue records (KOHD / mymssportal Leipzig, VOHD XVII A 1 no. 12); no mention of the cipher being read."
+    },
+    {
+     "query": "web: Sellheim \"Materialien zur arabischen Literaturgeschichte\" Geheimschrift Titelblatt Taisir 615/1217 Zahlenschrift entziffert",
+     "result": "Bibliographic records of the volume only; no decipherment."
+    },
+    {
+     "query": "SBB digital full text: Geheimschrift / Zahlenschrift in the VOHD volumes",
+     "result": "Sellheim I pp. 23 and 177 and II p. 65 only; p. 177 reads the c. 1800 numeral cipher of Ms. or. oct. 3938, not this one."
+    },
+    {
+     "query": "cryptiana.web.fc2.com/code/GL.htm and unsolved.htm, grep Arab|papyr|Islam|Berlin",
+     "result": "No Arabic-script items."
+    },
+    {
+     "query": "known.py \"or. oct. 3629\" \"Sellheim\" \"Taisir\"; decode_search.py \"Staatsbibliothek zu Berlin\" \"Ms. or. oct.\" \"Taisir\"",
+     "result": "No hits."
+    }
+   ],
+   "verdict": "open"
+  }
+ },
+ {
+  "year": 1705,
+  "date": "1117 AH / 1705 (autograph)",
+  "title": "Darwish Mustafa ibn Isma'il al-Khaza'ini as-Sukkari, autograph extracts from his diwans, with passages in a secret script and its key on f. 103a (Berlin, Wetzstein I 203)",
+  "correspondents": "Darwish Mustafa ibn Isma'il ibn Ahmad al-Khaza'ini as-Sukkari (author and scribe); no addressee",
+  "place": "unknown (Wetzstein collection, Damascus)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1701-1800",
+  "shelfmark": "Staatsbibliothek zu Berlin, Ms. or. Wetzstein I 203 (We. 203); Ahlwardt no. 8012",
+  "folio_note": "144 ff., 17 lines; 'an einigen Stellen' in Geheimschrift (folios not given); key on f. 103a",
+  "cls": "A",
+  "status": "Ahlwardt, Verzeichniss vol. 1 (1887) no. 13, note 1: 'In We. 203 ist eine Geheimschrift an einigen Stellen angewandt, wozu der Schluessel f. 103a mitgetheilt ist.' His description of the manuscript (no. 8012, vol. 7) does not mention the cipher or print any reading. Not viewed: Qalamos unreachable from this network. Not on DECODE.",
+  "why": "Cipher passages in a Damascene poet's own working copy of his secular love songs, with his key: a rare dated Arabic private cipher in a literary autograph.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 1,
+  "score_note": "Scored from Ahlwardt's catalogue during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/); not viewed",
+  "verify": "Open Wetzstein I 203 on Qalamos / SBB digital: find the cipher passages and f. 103a, check whether the plain text is written beside them, and whether any study of as-Sukkari's diwan reads them.",
+  "links": [
+   {
+    "label": "Ahlwardt vol. 1 (Handschriften-Verzeichnisse Bd. 7), full text",
+    "href": "https://archive.org/details/diehandschriften07preu"
+   },
+   {
+    "label": "Ahlwardt vol. 7 (Bd. 19), no. 8012",
+    "href": "https://archive.org/details/diehandschriften19preu"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part B)",
+  "prior_art": "not established (15 Nov 2026): only Ahlwardt read; no search for studies of the poet done beyond known.py and DECODE (no hits)",
+  "needs_archive_scan": "unknown",
+  "access_note": "Wetzstein manuscripts are largely digitised and shown through Qalamos (qalamos.net); that host and orient-digital.staatsbibliothek-berlin.de reset the connection from this network, and the SBB digital portal search does not return it."
+ },
+ {
+  "year": 1550,
+  "date": "undated note on f. 1a of a 16th-century autograph (the work written after 913 AH / 1507)",
+  "title": "One line of signs called 'Geheimschrift (?)' beside a 'ya kabikaj' invocation on f. 1a of al-Gharbi's Hashiya (Berlin, Ms. or. oct. 1474)",
+  "correspondents": "unknown",
+  "place": "unknown",
+  "language": "unknown",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Staatsbibliothek zu Berlin, Ms. or. oct. 1474 ('Ahlwardt nach 7207'), f. 1a; Sellheim, VOHD XVII A 2 (1987) no. 119",
+  "folio_note": "one line, about 16 signs (groups of 2 and 3 upright strokes, two looped signs, a hooked sign), with an underline; printed facsimile Sellheim II, Tafel 22, Abb. 37",
+  "cls": "C",
+  "status": "Sellheim II p. 65: 'Bl. 1a Ausruf: ya kabikag ..., daneben Geheimschrift (?; s. Abb. 37)'; plate caption '37. Geheimschrift (s. S. 65 u. Abb. 10, 34)'. Seen on the plate at full size: a single short line; it may be a tally or numerals. No reading given. Not on DECODE.",
+  "why": "A possible owner's or reader's cryptogram in a Maghribi scholar's autograph; very short.",
+  "importance": 1,
+  "solvability": 1,
+  "difficulty": 4,
+  "score_note": "Scored from Sellheim's plate, viewed at full size during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/)",
+  "verify": "View f. 1a on Qalamos; compare with Sellheim II Abb. 10 and 34, which the caption cites, and with Abb. 47 (Greek-Coptic numerals) to rule out numerals.",
+  "links": [
+   {
+    "label": "Sellheim 1987, Tafel 22 (Abb. 37), SBB digital",
+    "href": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879940027&PHYSID=PHYS_0462"
+   },
+   {
+    "label": "Sellheim 1987, p. 65, SBB digital",
+    "href": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879940027&PHYSID=PHYS_0094"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part B)",
+  "prior_art": "not established (15 Nov 2026): Sellheim gives no reading and himself queries whether it is cipher; no further search done",
+  "needs_archive_scan": "partly",
+  "access_note": "Printed facsimile online (SBB digital, page image 2184 x 3171 px; the figure is a strip about 1,000 px long). Manuscript on Qalamos if digitised (unreachable from this network)."
+ },
+ {
+  "year": 850,
+  "date": "undated papyrus (Arabic papyri from Egypt are mostly 8th-10th c.; the museum gives no date)",
+  "title": "Papyrus fragment, one side catalogued 'Arabic', the other 'Cipher (?)' (Penn Museum E16470)",
+  "correspondents": "unknown",
+  "place": "Egypt",
+  "language": "unknown",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Philadelphia, Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology), Egyptian Section, E16470 (collector's number Mueller 28a; purchased from Prof. Moritz, 1911)",
+  "folio_note": "8.2 x 6.6 cm. Side with the label E 16470: one cursive line and one line of about 9 separate signs (two pairs of strokes, a triangle, a b-like and a box-like sign), then '|| x' below. Other side: 4 lines of thick hooked and looped signs.",
+  "cls": "C",
+  "status": "Museum record: 'Fragment of document. Recto: Arabic. Verso: Cipher (?).' No bibliography, never exhibited. Both images viewed: neither side could be read as Arabic at the size served; the separate signs may be Greek-Coptic numerals or fraction signs (the 'Geheimschrift' of P.Vindob. A. P. 5584 turned out to be dinar-fraction signs, Tyche 34, 2019), and the looped side may be another script. Not established as cipher. Not on DECODE.",
+  "why": "If the museum's query is right, an early Islamic cipher note on papyrus; more likely numerals, so the first job is identification.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 5,
+  "score_note": "Scored from the museum record and its two images, viewed during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/); the fragment is only about 520 px across in the images",
+  "verify": "Ask the Penn Museum for a full-resolution scan; show it to an Arabic papyrologist (APD / ISAP) to settle script and whether the signs are numerals.",
+  "links": [
+   {
+    "label": "Penn Museum record E16470",
+    "href": "https://collections.penn.museum/collections/object/225579"
+   },
+   {
+    "label": "Image 1 (1600 px frame)",
+    "href": "https://collections.penn.museum/collections/assets/018T/185k/185653_1600.jpg"
+   },
+   {
+    "label": "Image 2 (1600 px frame)",
+    "href": "https://collections.penn.museum/collections/assets/018T/185k/185804_1600.jpg"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part B)",
+  "prior_art": "not established (15 Nov 2026): the museum lists no bibliography; APD translation search for cipher / secret / Geheim found no such papyrus; nothing further searched",
+  "needs_archive_scan": "partly",
+  "access_note": "Two images online, capped by the host at a 1600 x 1440 px frame in which the fragment is about 520 px wide: below the 1,500 px bar, so the leaf does not count as seen at full size."
+ },
+ {
+  "year": 1332,
+  "date": "after Jumada I 732 AH (Feb 1332); the cipher line is undated",
+  "title": "One line of numeral cipher under the colophon of a sira manuscript dated 732 AH (BnF Arabe 1966)",
+  "correspondents": "unknown (a reader's or owner's note)",
+  "place": "unknown (Mashriqi hand; Maghribi pieces bound in front)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Paris, BnF, Département des Manuscrits, Arabe 1966",
+  "folio_note": "Last written page (Gallica view 50, right-hand page, under the colophon): three or four Arabic letters, then about 28 Indian (Arabic-Indic) numerals in one line, in a paler ink than the colophon; two lines of ordinary cursive notes below it. No gloss.",
+  "cls": "C",
+  "status": "De Slane (1883-95), no. 1966: 'Ms. daté de l'an 732 de l'hégire (1332 de J. C.). A la fin du volume se trouve une ligne d'écriture secrète en chiffres indiens.' Seen on the Gallica microfilm scan 15 Nov 2026: the line is there and bare. The 6 Nov 2026 sweep listed the catalogue hit as 'incidental, not opened'. Not on DECODE. Whether the line is as old as the 1332 colophon is not established: the ink is paler and the hand may be a later owner's.",
+  "why": "If it is of the time of the copy it is one of the oldest unread Arabic numeral cryptograms with an image online; it probably hides a name, a date or an ownership note.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the image during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); viewed",
+  "verify": "Order or view the colour scan (the online images are a black-and-white microfilm) to settle the ink and the first letters; try abjad letter values (hisab al-jummal) on the numerals; compare the hand with the owners' notes below it.",
+  "links": [
+   {
+    "label": "Gallica, Arabe 1966 (view 50)",
+    "href": "https://gallica.bnf.fr/ark:/12148/btv1b11001551n/f50.item"
+   },
+   {
+    "label": "IIIF image, view 50, full width",
+    "href": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b11001551n/f50/full/max/0/default.jpg"
+   },
+   {
+    "label": "BnF Archives et manuscrits notice",
+    "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc29901c"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "open (checked 15 Nov 2026: DECODE search, cryptiana unsolved.htm and GL.htm, de Slane's catalogue notice, two web searches; no reading found)",
+  "needs_archive_scan": "no",
+  "access_note": "Microfilm scan free on Gallica; gallica.bnf.fr is 403 to scripts, the openapi.bnf.fr IIIF route works.",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part C",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b11001551n/f50/pct:52,74,40,12/max/0/default.jpg (native-resolution crop 2,329 x 533 px of the line; the whole opening is 5,824 x 4,448 px), also the lower half of the page at 2,000 px",
+    "extent": "one line: a short word group in Arabic letters followed by about 28 Arabic-Indic numerals, written under the colophon dated Jumada I 732 AH",
+    "cipher": "Numerals only (digits 1, 2, 3, 4, 7, 8, 9 and 0-dots seen), no separators visible on the microfilm, no decipherment written above, below or beside it; the two lines under it are ordinary Arabic notes in another hand, not a gloss."
+   },
+   "prior_art": {
+    "decode": "decode_search.py 'Arabe 1966', 'arabe', 'arabic': no Arabic-script record (the one row returned for 'Arabe 1966' is BnF Espagnol 132, unrelated)",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for arabic/arabe: no Arabic-language item",
+    "lasry": "cryptiana.web.fc2.com/code/GL.htm (list of Lasry's keys) fetched 15 Nov 2026: nothing Arabic; this is not diplomatic material",
+    "edition": "De Slane, Catalogue des manuscrits arabes (archive.org cataloguearabes00bibluoft), no. 1966, only notes the line as 'écriture secrète en chiffres indiens' and gives no reading; the BnF Archives et manuscrits notice repeats de Slane",
+    "literature": "Web searches for the shelfmark with cipher/écriture secrète and for numeral cryptograms in Arabic colophons found no study of this line; Gacek's Vademecum treats abjad-numeral cryptography in colophons in general, not this manuscript (not opened at the page)"
+   },
+   "key_check": "No key held. The likely system is letters written by their abjad values (hisab al-jummal), a known family; not tested, since the sweep does not solve.",
+   "duplicates": "known.py 'Arabe 1966': only the 6 Nov 2026 Arabic sweep README, which names the catalogue hit and did not open it; no catalogue entry, lead or target.",
+   "searches": [
+    {
+     "query": "decode_search.py \"Arabe 1966\" \"arabe\" \"arabic\"",
+     "result": "0 Arabic records on DECODE"
+    },
+    {
+     "query": "web: \"Arabe 1966\" BnF \"al-Durra al-muḍīʾa\" Maqdisī 732 colophon \"écriture secrète\" OR chiffres OR cipher",
+     "result": "no study or reading of the line; only catalogue pages"
+    },
+    {
+     "query": "web: colophon Arabic manuscript numerals cipher abjad numeric cryptogram scribe name encoded in Indian numerals",
+     "result": "general colophon studies only; nothing on this manuscript"
+    },
+    {
+     "query": "cryptiana unsolved.htm and GL.htm, grep arabic/arabe",
+     "result": "no Arabic-language cipher listed"
+    }
+   ],
+   "verdict": "open"
+  }
+ },
+ {
+  "year": 1550,
+  "date": "16th century (de Slane's dating of the manuscript); undated",
+  "title": "Recipes with the operative words in a numeral-and-letter cipher, two leaves in an Arabic miscellany (BnF Arabe 2562, ff. 54-55)",
+  "correspondents": "unknown",
+  "place": "unknown (Egypt likely: the volume opens with a Coptic-year calendar and Nile tables)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1497-1559",
+  "shelfmark": "Paris, BnF, Département des Manuscrits, Arabe 2562, ff. 54r-55v",
+  "folio_note": "Four pages (Gallica views 56-58; f. 54r is the left page of view 56, f. 54v-55r are view 57, f. 55v is the right page of view 58), 19-20 lines a page. Each recipe opens with a clear rubric (sifa ..., 'it is good for ...') and clear running words; the names and quantities are in strings of Arabic-Indic numerals (0, 1, 2, 5, 7, 8 most often) mixed with a few detached letters and signs. Roughly half of each page is cipher. Show-through from the other side of the leaf is heavy on the microfilm.",
+  "cls": "C",
+  "status": "De Slane, no. 2562, 3°: 'Feuillet qui paraît avoir appartenu à un recueil de recettes médicales. La plus grande partie du texte est écrite en chiffres et en caractères de convention.' Vajda's index files ff. 54-55 under al-Tibb. Seen on the Gallica microfilm scan 15 Nov 2026: bare cipher inside clear recipe text, no gloss, no key on the leaves. Not on DECODE. No reading found.",
+  "why": "A sizeable private Arabic cipher of the 16th century with clear context around every cipher string: the hidden words are drug names, quantities and the object of each operation (one recipe speaks of the sages of India and of commanding spirits), so it shows what a practitioner thought worth hiding.",
+  "importance": 2,
+  "solvability": 4,
+  "difficulty": 2,
+  "score_note": "Scored from the images during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); viewed",
+  "verify": "Transcribe the four pages from the microfilm scan (a colour scan would separate the show-through); test a simple substitution in which numerals and signs stand for letters, using the clear recipe formulas as cribs; check Vajda's notes on the manuscript (cited in the BnF notice) for any remark on the cipher.",
+  "links": [
+   {
+    "label": "Gallica, Arabe 2562 (view 56)",
+    "href": "https://gallica.bnf.fr/ark:/12148/btv1b100375395/f56.item"
+   },
+   {
+    "label": "IIIF image, view 56",
+    "href": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100375395/f56/full/max/0/default.jpg"
+   },
+   {
+    "label": "IIIF image, view 57",
+    "href": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100375395/f57/full/max/0/default.jpg"
+   },
+   {
+    "label": "BnF Archives et manuscrits notice",
+    "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc304761"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "open (checked 15 Nov 2026: DECODE search, cryptiana unsolved.htm and GL.htm, de Slane and the BnF notice, two web searches; no reading found)",
+  "needs_archive_scan": "no",
+  "access_note": "Microfilm scan free on Gallica (openings 3,418 x 2,587 px, so a page is about 1,450 px wide at full size); gallica.bnf.fr is 403 to scripts, openapi.bnf.fr IIIF works.",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part C",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b100375395/f56/pct:8,8,42,88/max/0/default.jpg (f. 54r, 1,435 x 2,276 px, the full resolution of the scan) and .../f57/pct:48,8,44,88/max/0/default.jpg (f. 54v, 1,503 x 2,276 px); views 55-60 also as a sheet at 800 px",
+    "extent": "four pages, ff. 54r-55v, 19-20 lines each, about half of every page in cipher (a few hundred cipher signs in all)",
+    "cipher": "Strings of Arabic-Indic numerals with a few detached letters and signs, set inside clear Arabic recipe text (rubrics 'sifa', 'yanfa' fi', 'dirhamayn' etc. are clear). No decipherment between the lines or in the margins on ff. 54r and 54v at full size, none seen on 55r-55v at 800 px; no key on the neighbouring leaves (ff. 53v and 56r are ordinary text)."
+   },
+   "prior_art": {
+    "decode": "decode_search.py 'Arabe 2562', 'recettes', 'arabe', 'arabic': no Arabic-script record (the row returned for 'Arabe 2562' is Vienna Cod. 2398, unrelated)",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026, searched for arabic/arabe: no Arabic-language item",
+    "lasry": "cryptiana.web.fc2.com/code/GL.htm fetched 15 Nov 2026: nothing Arabic; not diplomatic material",
+    "edition": "De Slane, Catalogue des manuscrits arabes, no. 2562 (archive.org cataloguearabes00bibluoft) describes the leaf as written 'en chiffres et en caractères de convention' and gives no reading; BnF Archives et manuscrits notice cc304761 repeats it; no edition of these leaves known",
+    "literature": "Web searches on the shelfmark with cipher terms and on enciphered ingredients in Arabic recipe manuscripts found nothing on these leaves. Vajda's 'Notes sur la Geschichte...' cited in the BnF notice was not opened."
+   },
+   "key_check": "No key held here, in the volume or in print. The system looks like a simple substitution of numerals and signs for letters; not tested, since the sweep does not solve.",
+   "duplicates": "known.py 'Arabe 2562', 'Colbert 6514': no hits. Not in the 6 Nov 2026 Arabic sweep.",
+   "searches": [
+    {
+     "query": "decode_search.py \"Arabe 2562\" \"recettes\"",
+     "result": "no relevant record"
+    },
+    {
+     "query": "web: \"Arabe 2562\" BnF manuscrit recettes médicales \"caractères de convention\" OR chiffres OR cipher OR cryptography",
+     "result": "only catalogue pages of other BnF Arabic manuscripts; nothing on the cipher"
+    },
+    {
+     "query": "web: Arabic manuscript medical magical recipes ingredients written in numerical cipher ... Journal of Islamic Manuscripts",
+     "result": "general studies of medical-magical manuscripts (Sijpesteijn 2022, Raggetti 2021); no study of enciphered recipes in this manuscript"
+    },
+    {
+     "query": "BnF Archives et manuscrits simple search: \"caractères de convention\"",
+     "result": "2 notices: Arabe 2357 f. 12 (treasure-hunting tract) and Arabe 2562 f. 54; no further literature in either notice"
+    }
+   ],
+   "verdict": "open"
+  }
+ },
+ {
+  "year": 1700,
+  "date": "17th-18th century (the manuscript is dated to the 17th century; the cryptogram is an undated owner's note)",
+  "title": "Numeral cryptogram on the first page of a copy of al-Qusuni's tested remedies (Wellcome MS Arabic 449, f. 1a)",
+  "correspondents": "unknown (an owner or physician who also wrote recipes and marginal notes in the volume)",
+  "place": "unknown (Syria or Egypt; Haddad collection, Beirut)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1651-1700",
+  "shelfmark": "London, Wellcome Collection, MS Arabic 449 (WMS Arabic 449), f. 1a",
+  "folio_note": "Image 2 of the digitised volume, left-hand page. Twelve lines at the top left: Arabic-Indic numerals, many carrying one to three diacritical dots as if they were letters, with a few letters (shin, ta, a theta-like sign) among them, about 150 signs. Lower on the page a recipe in clear with one more line of the same signs inside it. No gloss.",
+  "cls": "C",
+  "status": "The Wellcome/Fihrist description (Serikoff's WAMCP record): 'Fol. 1a. - recipes and a cryptogram', and notes in the same hand on ff. 2b, 21b, 22a, 48b. Seen at full size 15 Nov 2026: bare. Not on DECODE. No reading found; Serikoff's printed catalogue (Brill 2005) was not opened.",
+  "why": "A private cipher of an Ottoman-period Arab physician, next to his recipes: probably a recipe or a formula he wanted kept to himself. The dotted numerals point to a substitution of numerals for letter shapes.",
+  "importance": 2,
+  "solvability": 3,
+  "difficulty": 3,
+  "score_note": "Scored from the image during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); viewed",
+  "verify": "Check the entry for WMS Arabic 449 in Serikoff, Arabic Medical Manuscripts of the Wellcome Library (Leiden 2005), for any reading; transcribe from the IIIF image; test numerals-as-letter-skeletons with the dots as the letters' own dots, with the clear recipe below as a control.",
+  "links": [
+   {
+    "label": "Wellcome Collection, MS Arabic 449",
+    "href": "https://wellcomecollection.org/works/bdd7p9r7"
+   },
+   {
+    "label": "IIIF image 2 (f. 1a), full",
+    "href": "https://iiif.wellcomecollection.org/image/b20297191_WMS_Arabic_449_0002.jp2/full/max/0/default.jpg"
+   },
+   {
+    "label": "IIIF manifest",
+    "href": "https://iiif.wellcomecollection.org/presentation/v2/b20297191"
+   },
+   {
+    "label": "Fihrist TEI record",
+    "href": "https://github.com/fihristorg/fihrist-mss/blob/master/collections/wellcome%20trust/WMS_Arabic_449.xml"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "open (checked 15 Nov 2026: DECODE search, cryptiana unsolved.htm and GL.htm, the Wellcome/Fihrist record, two web searches; no reading found; Serikoff 2005 not opened)",
+  "needs_archive_scan": "no",
+  "access_note": "Free colour IIIF images at wellcomecollection.org (the site is 403 to curl; api.wellcomecollection.org and iiif.wellcomecollection.org answer scripts).",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part C",
+   "seen": {
+    "kind": "scan",
+    "where": "https://iiif.wellcomecollection.org/image/b20297191_WMS_Arabic_449_0002.jp2/pct:3,4,24,50/full/0/default.jpg (native-resolution crop 1,594 x 2,294 px of the upper part of f. 1a) and .../pct:3,50,24,46/full/0/default.jpg (lower part, 1,594 x 2,110 px); the opening is 6,640 x 4,586 px",
+    "extent": "twelve lines of cipher, about 150 signs, and one further cipher line inside a clear recipe lower on the same page",
+    "cipher": "Arabic-Indic numerals (0-9) bearing letter dots, mixed with a few letters and a theta-like sign, written continuously; nothing is written between the lines or beside them, and the notes around it (a title note, a French plant name, recipes) are separate clear texts, not a decipherment."
+   },
+   "prior_art": {
+    "decode": "decode_search.py 'Wellcome', 'arabic': no Arabic-script record and no Wellcome record",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026, searched for arabic/arabe: no Arabic-language item",
+    "lasry": "cryptiana.web.fc2.com/code/GL.htm fetched 15 Nov 2026: nothing Arabic; not diplomatic material",
+    "edition": "The Fihrist TEI record, which is Serikoff's catalogue data, says only 'recipes and a cryptogram' and gives no reading; the printed catalogue (Serikoff, Leiden 2005, Haddad collection WMS 401-487) was not opened",
+    "literature": "Web searches for the shelfmark and for the catalogue with 'cryptogram' found the Wellcome records and reviews of the catalogue, no study or reading of the cryptogram"
+   },
+   "key_check": "No key held here or found in the record. The dotted numerals suggest numerals used as letter skeletons; not tested, since the sweep does not solve.",
+   "duplicates": "known.py 'Arabic 449', 'Qusuni', 'Qūṣūnī': no hits. The 6 Nov 2026 Arabic sweep searched the Wellcome API (0 relevant) and did not list this item.",
+   "searches": [
+    {
+     "query": "grep of the fihrist-mss TEI (15,638 records) for cipher|cypher|cryptogra|secret script|coded",
+     "result": "WMS_Arabic_449: 'Fol. 1a. - recipes and a cryptogram'; no reading in the record"
+    },
+    {
+     "query": "web: Wellcome \"MS Arabic 449\" Qūṣūnī \"al-Durrah al-muntakhabah\" cryptogram recipes Serikoff catalogue",
+     "result": "Wellcome catalogue pages only; nothing on the cryptogram"
+    },
+    {
+     "query": "web: Serikoff \"Arabic Medical Manuscripts of the Wellcome Library\" Haddad collection cryptogram numerals deciphered",
+     "result": "bibliographic records and reviews; no mention of a decipherment"
+    },
+    {
+     "query": "api.wellcomecollection.org works search: cryptogram; cipher arabic manuscript; secret alphabet; cryptography arabic",
+     "result": "0, 0, 3 (none Arabic), 0"
+    }
+   ],
+   "verdict": "open"
+  }
+ },
+ {
+  "year": 1290,
+  "date": "before c. 1300 (Savage-Smith's dating of the copy from paper, ink and script); the passage itself is undated",
+  "title": "\"Curious letter forms and undeciphered writing\" between two sections of a 13th-century Arabic Galen commentary (Bodleian MS. Laud Or. 139, f. 101a)",
+  "correspondents": "unknown (scribe or early reader)",
+  "place": "Syria or Egypt (catalogue)",
+  "language": "unknown (the manuscript is Arabic)",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Oxford, Bodleian Library, MS. Laud Or. 139, f. 101a",
+  "folio_note": "Not seen. The catalogue places it on f. 101a between two sections of the text of Galen's commentary on the Hippocratic Prognostic (third maqala); length not stated.",
+  "cls": "C",
+  "status": "Savage-Smith, A New Catalogue of Arabic Manuscripts in the Bodleian Library, I: Medicine (2011), as given in the Fihrist record: 'On folio 101a, between two sections of text, there are some curious letter forms and undeciphered writing.' Copy 'unsigned and undated ... before the end of the seventh/thirteenth century, possibly in Syria or Egypt'. Only ff. 1a, 1b-2a and 170a are on Digital Bodleian, so the leaf was not seen and it is not established that this is a cipher rather than pen trials or another script.",
+  "why": "If it is enciphered text it would be among the oldest unread Arabic-script cryptograms in a dated context (13th century), found in a medical manuscript.",
+  "importance": 3,
+  "solvability": 1,
+  "difficulty": 4,
+  "score_note": "Scored from the catalogue description during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); not viewed",
+  "verify": "Ask the Bodleian for an image of f. 101a (or view it in the reading room); read Savage-Smith 2011, entry for MS. Laud Or. 139, for anything more on the passage.",
+  "links": [
+   {
+    "label": "Fihrist record (TEI)",
+    "href": "https://github.com/fihristorg/fihrist-mss/blob/master/collections/oxford%20university/MS_Laud_Or_139.xml"
+   },
+   {
+    "label": "Digital Bodleian (three openings only)",
+    "href": "https://digital.bodleian.ox.ac.uk/objects/bcc68154-303d-43cb-bee6-c5ddffcd8d39/"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "not established: the cataloguer (2011) calls it undeciphered; no search for a later study beyond the catalogue record (checked 15 Nov 2026: Fihrist TEI, known.py)",
+  "needs_archive_scan": "yes",
+  "access_note": "Only three openings are digitised; f. 101a needs an image order or a visit to the Weston Library."
+ },
+ {
+  "year": 1550,
+  "date": "16th century (date of the codex in the BAV record); the inscription is undated",
+  "title": "Cryptographic inscription in Arabic and Coptic numerals at the head of a leaf of a Copto-Arabic Genesis commentary (Vat. ar. 34, f. 288v)",
+  "correspondents": "unknown (a Coptic scribe or reader)",
+  "place": "Egypt",
+  "language": "unknown (Arabic or Coptic; the codex is Arabic with Coptic folio numerals)",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. ar. 34, f. 288v",
+  "folio_note": "Not seen. The BAV record places it at the top of f. 288v; length not stated (an inscription, so probably one or two lines).",
+  "cls": "B",
+  "status": "BAV manuscripts OPAC, record 117402 (Paléographie - Codicologie): 'In summo f. 288v inscriptio cryptographica e notis numericis arabicis et copticis composita', with no reading given, where the same record transcribes and translates the other notes of the volume. The codex is not digitised (DigiVatLib manifest 404 on 15 Nov 2026). Sibling practice with a key: Vat. ar. 28 (1271 CE) has a scribe's invocation in Coptic cryptography to which another hand added the key, and BnF Arabe 238 f. 384v holds a 'clef d'un chiffre dont se servaient les écrivains coptes'.",
+  "why": "Coptic scribes' numeral cryptography is a known but little-studied family; this inscription is recorded as unread by the cataloguer, and keys of the same milieu exist in Paris and in a sister Vatican codex.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 2,
+  "score_note": "Scored from the BAV OPAC description during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); not viewed",
+  "verify": "Order an image of f. 288v from the BAV; compare with the key in Vat. ar. 28 (digitised) and with BnF Arabe 238 f. 384v (digitised, Gallica btv1b11004021j); check Mai's and Graf's descriptions of Vat. ar. 34 for a reading.",
+  "links": [
+   {
+    "label": "BAV OPAC record (Paléographie - Codicologie)",
+    "href": "https://opac.vatlib.it/mss/detail/117402"
+   },
+   {
+    "label": "BAV OPAC, Vat. ar. 34",
+    "href": "https://opac.vatlib.it/mss/detail/Vat.ar.34"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "not established: the BAV record gives no reading (checked 15 Nov 2026: OPAC record, known.py); the literature on Coptic scribal cryptography was not searched",
+  "needs_archive_scan": "yes",
+  "access_note": "Not on DigiVatLib; needs a reproduction order or the reading room."
+ },
+ {
+  "year": 1890,
+  "date": "c. 1885-1896 (manuscripts written for or sent to E. G. Browne by Subh-i Azal in Cyprus; F. 16 is dated 31 May 1885)",
+  "title": "Unexplained \"cyphers\" of Subh-i Azal at the ends of Babi manuscripts (Cambridge, Browne F. 43 and F. 16)",
+  "correspondents": "Mirza Yahya Subh-i Azal (writer or scribe); sent to E. G. Browne",
+  "place": "Famagusta, Cyprus",
+  "language": "unknown (Arabic or Persian; the texts they close are Arabic)",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "Cambridge University Library, E. G. Browne Collection, F. 43 (BBF. 4), end of the Naghamat al-ruh and of item 3; F. 16 (BBF. 9), f. 261a",
+  "folio_note": "Not seen. Short groups of signs in the place of a scribe's name or signature, at the end of two items of F. 43 and in the colophon of F. 16; length not stated.",
+  "cls": "C",
+  "status": "Fihrist records, from Browne's own descriptions. F. 43: 'Cyphers appended at the end (repeated at the end of item 3) indicate, per Subh-i-Ezel's own oral statement to Browne, that the writing is his, though he declined to explain their meaning further; Browne speculates they relate to abjad notation.' F. 16: 'The scribe's name is not given, only \"cyphers\" which Browne could not get Subh-i-Ezel to explain.' Not seen: cudl.lib.cam.ac.uk is 403 to scripts here, and whether these volumes are digitised was not established.",
+  "why": "A deliberate, never-explained signature cipher of the head of the Azali Babis, attested in at least two manuscripts; small, but with a known writer and a likely content (a name or title).",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the catalogue description during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); not viewed",
+  "verify": "Open Browne F. 43 and F. 16 on Cambridge Digital Library in a browser (or order images); read Browne's Descriptive Catalogue (Nicholson 1932) and his JRAS 1892 catalogue of Babi manuscripts for the signs; search the Babi studies literature (MacEoin, Sources for Early Babi Doctrine and History) for an explanation.",
+  "links": [
+   {
+    "label": "Fihrist record F. 43 (TEI)",
+    "href": "https://github.com/fihristorg/fihrist-mss/blob/master/collections/cambridge%20university/F_43.xml"
+   },
+   {
+    "label": "Fihrist record F. 16 (TEI)",
+    "href": "https://github.com/fihristorg/fihrist-mss/blob/master/collections/cambridge%20university/F_16.xml"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "not established: Browne left them unexplained; the Babi studies literature was not searched (checked 15 Nov 2026: Fihrist TEI, known.py)",
+  "needs_archive_scan": "unknown",
+  "access_note": "Cambridge Digital Library answers 403 to scripts from this network; a browser is needed to see whether the volumes are online."
+ },
+ {
+  "year": 1870,
+  "date": "19th century (notebook kept c. 1817-1898; the cipher entries are by Muhammad 'Ali al-Hamdani, 1833-1898)",
+  "title": "Hamdani family scrapbook: notes in Muhammad 'Ali al-Hamdani's private cipher (fol. 83b) and a list of imams 'much of it in cipher' (fol. 29a-b)",
+  "correspondents": "Muhammad 'Ali al-Hamdani (compiler); private notes, no addressee",
+  "place": "India (Surat) and the Hejaz/Yemen journeys of the compiler; not stated in the record",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "London, Institute of Ismaili Studies, MS 1662 [Handlist 105] (Hamdani Collection)",
+  "folio_note": "104 ff., 19 x 14.5 cm. fol. 83b: 'Notes written in the same system of cipher that Muhammad 'Ali used in Ms. 1499'; fol. 29a-b: 'List of the imams down to al-Tayyib, with some biographical information, much of it in cipher'; fol. 21a: opening of a letter 'in cipher (not the usual secret script, but there is an indubitably correct decipherment above each letter)' (that one is read); fol. 23a: 'the letters of the usual secret script in alphabetical order' (a key)",
+  "cls": "B",
+  "status": "de Blois's catalogue (2011), as given on the IIS online record, reads the fol. 21a cipher line and quotes it, but gives no reading for the fol. 83b notes or the enciphered parts of fol. 29a-b. The system of fol. 83b is that of IIS MS 1499, a whole copy of Kanz al-walad in an 'invented script' which de Blois says is 'a straightforward cipher' crackable against the printed text (ed. Ghalib 1971): the key can be rebuilt from MS 1499, but no reading of fol. 83b is on record. Not on DECODE (searched 'Hamdani', 'Ismaili', 'Arabic': 0 records). Not viewed: no images online.",
+  "why": "Private notes of a 19th-century Tayyibi Ismaili scholar that he chose to hide even inside a family notebook; next to them the same notebook holds a rival list of hidden imams.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 2,
+  "score_note": "Scored from the catalogue description during the 15 Nov 2026 Arabic sweep, part D (research/sweep_2026-11-15_arabic/part_D.md); not viewed",
+  "verify": "Ask the IIS for images of MS 1662 fols 29a-b and 83b and of a few pages of MS 1499; check de Blois 2011 in print (entry for Ms. 1662 and the introduction on secret script) for any reading of fol. 83b; align MS 1499 with Ghalib's edition of Kanz al-walad for the key.",
+  "links": [
+   {
+    "label": "IIS record, MS 1662",
+    "href": "https://special-collections.iis.ac.uk/Details/manuscripts/154"
+   },
+   {
+    "label": "IIS record, MS 1499 (same cipher, known text)",
+    "href": "https://special-collections.iis.ac.uk/Details/manuscripts/45"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part D)",
+  "prior_art": "open as far as checked (15 Nov 2026): the IIS record (de Blois 2011) gives no reading of fol. 83b; web searches on the shelfmark and on de Blois / Hamdani / cipher found only the catalogue; de Blois 2011 in print not opened; cryptiana and HistoCrypt not searched for this item beyond a general Arabic-cipher query (nothing).",
+  "needs_archive_scan": "yes",
+  "access_note": "special-collections.iis.ac.uk shows the catalogue text only (no page images on the record); reading room of the Ismaili Special Collections Unit, Aga Khan Centre, London, or a scan request"
+ },
+ {
+  "year": 1890,
+  "date": "n.d., late 13th/19th century (Cortese)",
+  "title": "Tayyibi cosmological treatise 'Risalat [falak al-qamar?]' with part of the text in a cryptic alphabet",
+  "correspondents": "unknown (anonymous treatise; copyist unknown)",
+  "place": "unknown (Yemeni Tayyibi tradition; Indian Bohra copy)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1801-1900",
+  "shelfmark": "London, Institute of Ismaili Studies, MS 1291 (ArI, ZA)(b) (Zahid 'Ali Collection)",
+  "folio_note": "ff. 71r-86v, 12 lines a page; 'part of the text in cryptic alphabet; defective at the beginning' (amount not stated)",
+  "cls": "B",
+  "status": "Cortese's catalogue (2003), as given on the IIS online record, notes the cryptic alphabet and gives no reading; the title itself is the cataloguer's conjecture. Most cipher in Tayyibi manuscripts is the community's standard secret script, whose alphabet is in print (Strothmann 1943; de Blois 1984 and 2011; a table on fol. 1a of IIS MS 1455 and on fol. 23a of MS 1662), so this is probably a lookup once images exist; that it is the standard script is not stated in the record. Not on DECODE. Not viewed: no images online.",
+  "why": "An unidentified Tayyibi treatise whose hidden passages may name the persons or doctrines the copyist thought dangerous; reading them could identify the work.",
+  "importance": 2,
+  "solvability": 1,
+  "difficulty": 1,
+  "score_note": "Scored from the catalogue description during the 15 Nov 2026 Arabic sweep, part D (research/sweep_2026-11-15_arabic/part_D.md); not viewed",
+  "verify": "Ask the IIS for images of ff. 71r-86v; compare the signs with the secret-script table in de Blois 2011 / Strothmann, Gnosis-Texte der Ismailiten (1943); check Cortese 2003 in print for more on the cipher.",
+  "links": [
+   {
+    "label": "IIS record, MS 1291 (b)",
+    "href": "https://special-collections.iis.ac.uk/Details/manuscripts/832"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part D)",
+  "prior_art": "open as far as checked (15 Nov 2026): IIS record only; Cortese 2003 in print not opened; no edition of the text known (title conjectural).",
+  "needs_archive_scan": "yes",
+  "access_note": "special-collections.iis.ac.uk shows the catalogue text only (no page images on the record); reading room of the Ismaili Special Collections Unit, Aga Khan Centre, London, or a scan request"
+ },
+ {
+  "year": 1929,
+  "date": "copy dated 3 Jumada II 1348 / 5 Nov 1929",
+  "title": "'Arba' masa'il fi'l-haqa'iq' attributed to 'Ali b. Muhammad b. al-Walid, with cryptograms on p. 23",
+  "correspondents": "unknown (copyist unknown)",
+  "place": "unknown (India, Bohra copy)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "1901-1950",
+  "shelfmark": "London, Institute of Ismaili Studies, MS 1313 (ArI, ZA) (Zahid 'Ali Collection)",
+  "folio_note": "pp. 1-24, 16 lines a page; 'small diagram on p. 19; cryptograms on p. 23' (the last page of text; extent not stated)",
+  "cls": "C",
+  "status": "Cortese's catalogue (2003), as given on the IIS online record, says only 'cryptograms on p. 23', with no reading. Whether these are words in the Tayyibi secret script (alphabet in print), a colophon in cipher or diagrams of letters is not stated. Short. Not on DECODE. Not viewed: no images online.",
+  "why": "If the cryptograms are the colophon, they give the copyist or patron of a 1929 copy of a restricted Tayyibi text.",
+  "importance": 1,
+  "solvability": 1,
+  "difficulty": 1,
+  "score_note": "Scored from the catalogue description during the 15 Nov 2026 Arabic sweep, part D (research/sweep_2026-11-15_arabic/part_D.md); not viewed",
+  "verify": "Ask the IIS for an image of p. 23; if it is the standard secret script, read it from the printed table; if text length is under a line or two, close as too short.",
+  "links": [
+   {
+    "label": "IIS record, MS 1313",
+    "href": "https://special-collections.iis.ac.uk/Details/manuscripts/587"
+   }
+  ],
+  "seen": "catalogue",
+  "source": "Arabic sweep 15 Nov 2026 (part D)",
+  "prior_art": "open as far as checked (15 Nov 2026): IIS record only; Cortese 2003 and Poonawala 1977 (p. 324 no. 55) in print not opened.",
+  "needs_archive_scan": "yes",
+  "access_note": "special-collections.iis.ac.uk shows the catalogue text only (no page images on the record); reading room of the Ismaili Special Collections Unit, Aga Khan Centre, London, or a scan request"
+ }
+]
