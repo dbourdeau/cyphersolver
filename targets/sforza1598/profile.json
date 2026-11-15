@@ -409,6 +409,16 @@
    "kind": "verification",
    "what": "R5505 p.1 ll.1-16 (439 signs) decrypted out of sample: word share 0.417 vs 0.171 shuffled; reads \"de la Mirandola ... ser Cristoforo cancellero ... conte Iacomo\".",
    "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "crib testing"
+   ],
+   "what": "Joint CTTS on all eight family C letters (9,509 signs): 17.13 M vs 7.18 M shuffled (2.39), seeds agree; solver key 0.476 vs hand key 0.460 word share; only P = i adopted after context checks.",
+   "result": "partial"
   }
  ],
  "outcome": {

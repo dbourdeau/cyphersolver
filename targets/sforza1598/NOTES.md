@@ -258,3 +258,15 @@ impossibile a l'altro".
 Family C: eight letters (9,542 cipher signs), out of sample on six (0.42-0.47). Each new letter confirms the key and the setting
 (conte Iacomo, ser Cristoforo his cancelliere, the Mirandola) but none raises the share above about 0.47: the remaining gap is in the
 transcription and in signs the key does not yet place, not in missing text. Not transcribed: rest of R5504 and R5505, R5506 p.2, R5515.
+
+## 15 Nov 2026 (later): re-solve on all eight letters
+`famC/hand/tall.txt`: all transcribed family C text (9,509 signs). CTTS (period Italian, n-gram 5, 4 homophones, 540 s), two seeds
+agree: 17.13 M against 7.18 M shuffled, **ratio 2.39** (best so far; 2.08 on three letters). Solver key `key_s.json` vs hand key
+`key_h4.json`: word share over all text 0.476 vs 0.460, higher on every letter (R5518 0.47, R5514 0.50, R5517 0.44, R5503 0.48,
+R5502 0.48, R5506 0.48, R5504 0.47, R5505 0.46).
+The 12 differences tested one at a time against the hand key (letters inside words, of about 9,500): P v->i +46, E f->t +40,
+c i->d +25, q i->m +23, u c->s +21, D1 a->v +8, others within +-5, w i->v -12. Checked in context: q = m breaks "ordine in modo",
+E = t breaks "beneficio" (long-barred o read f on the crop), c = d contradicts the ct sign's place in the nulls; these come from the
+model's taste for common letters. Adopted only P = i (fits "regoai[i]", "per[i]", "racosi[i]"): `key_h5.json`.
+Conclusion: more text sharpens the solver signal but does not move the reading past about 0.47-0.48; the key is stable. The rest needs
+cleaner signs (ASMi images) or a contemporary key; family C is left read in part.
