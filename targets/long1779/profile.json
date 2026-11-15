@@ -41,7 +41,7 @@
   },
   {
    "id": "journal-system-B",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "NARA RG 15, Revolutionary War Pension and Bounty-Land Warrant Application File W. 16138 (Enoch Long, widow Molly), microfilm M804 roll 1580, catalog NAID 196199890, images 11-31",
    "date": "4 October - November 1779",
    "year": 1779,
@@ -205,7 +205,7 @@
    "what": "HathiTrust full text, Google Books, Internet Archive, NH Historical Society catalogue, Southern Campaigns pension statements, genealogy sites; NH State Papers rolls and Lord's Hopkinton history read for context: no prior transcription or mention of the cipher.",
    "result": "worked"
   },
-  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1494 tokens, 21 types, en-modern order 4: reading -1.743 per letter; random keys -7.027 (z 8.6); key annealed onto shuffled ciphertext best -4.779 (mean -4.824, z 55.4); annealer on the real text -1.743. Verdict: pass.", "result": "worked"},
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1494 tokens, 21 types, en-modern order 4: reading -1.743 per letter; random keys -7.027 (z 8.6); key annealed onto shuffled ciphertext best -4.779 (mean -4.824, z 55.4); annealer on the real text -1.743. Verdict: pass.", "result": "worked"},
   {
    "date": "2026-11-14",
    "kind": "verification",
@@ -222,7 +222,7 @@
   {"date": "2026-11-15", "kind": "verification", "technique": ["manual reconstruction", "contextual inference"], "what": "Every disagreement and every weak word (663 items) judged on the image by eight further Opus agents, shown the two readings in random order; the worker then checked the private passages and every name on the image. Rules: confident only if two readings agree sign for sign, or the signs are individually clear, and the word fits; otherwise probable, doubtful or unread. Result: 513 confident, 262 probable, 60 doubtful, 206 unread of 1,041. Changed: 'sentinel' is 'century' (sentry); 'mother' and 'married' (6 Oct) are not on the signs; 'whipt' (22 Aug) is not on the image, the man had to 'run the [gantlet??] through the company'; on 16R the name is not Polly on the signs; Kimball's first sign is the s sign; 'Hannah' read on 16L. A curl sign in 'ink' and 'silk' is probably the first alphabet's k.", "result": "partial"}
  ],
  "outcome": {
-  "validation": {"date": "2026-11-14", "model": "en-modern", "file": "validation.tsv", "tokens": 1494, "types": 21, "tokens_per_type": 71.14, "score": -1.743, "nulls": {"random keys": {"n": 200, "mean": -7.027, "sd": 0.613, "max": -5.175, "z": 8.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.824, "sd": 0.056, "max": -4.779, "z": 55.4, "p": 0.1429}}, "power": -1.743, "verdict": "pass", "notes": "claimed per-occurrence score -1.743; polyphony 0.0; 214 unread tokens left out; annealer on the real text from random keys reached -1.743"},
+  "validation": {"date": "2026-11-15", "model": "en-modern", "file": "validation.tsv", "tokens": 1494, "types": 21, "tokens_per_type": 71.14, "score": -1.743, "nulls": {"random keys": {"n": 200, "mean": -7.027, "sd": 0.613, "max": -5.175, "z": 8.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.824, "sd": 0.056, "max": -4.779, "z": 55.4, "p": 0.1429}}, "power": -1.743, "verdict": "pass", "notes": "claimed per-occurrence score -1.743; polyphony 0.0; 214 unread tokens left out; annealer on the real text from random keys reached -1.743"},
   "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
@@ -251,9 +251,9 @@
     "basis": "reconciled_transcription.tsv"
    }
   ],
-  "fraction_read": 0.744,
+  "fraction_read": 0.493,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reconciled_transcription.tsv after the blind second reading of 15 Nov 2026, cipher words: 513 confident (49.3%) + 262 probable (25.2%) of 1,041; 60 doubtful (counted as not read), 206 unread. Upper bound: unread stretches may hide more words; the margin column of image 11 (about 30 signs) is not counted. Before the second reading: 743 confident and 24 probable of 1,039.",
+  "fraction_read_source": "reconciled_transcription.tsv after the blind second reading of 15 Nov 2026, cipher words: 513 of 1,041 read with confidence (49.3%); 262 probable (25.2%), 60 doubtful and 206 unread counted as not read. Our earlier figure, confident and probable together: 775 of 1,041 (0.744). Upper bound: unread stretches may hide more words; the margin column of image 11 (about 30 signs) is not counted. Before the second reading: 743 confident and 24 probable of 1,039.",
   "verification": ["statistical test", "historical consistency", "independent verification"],
   "credits": [
    {
@@ -293,8 +293,20 @@
   ],
   "texts": [
    {
+    "doc": "journal-system-A",
+    "label": "Invisible-ink recipe, 9 Aug 1779 (image 13 right, lines 11-16)",
+    "transcription": "reconciled_transcription.tsv",
+    "decryption": "ink_recipe_1779-08-09.md",
+    "reading": "ink_recipe_1779-08-09.md",
+    "state": "read",
+    "language": "en",
+    "read_share": 1.0,
+    "summary": "Long notes what he wrote to his sweetheart: if he sends her a letter with the upper part plain, she should rub it with a hot box iron to bring up writing where none could be seen.",
+    "note": "22 cipher words, all read with confidence (reconciled_transcription.tsv, image 13 R lines 11-16), and his plain words; no hole, guess or supplied word. These six lines were kept out of the blind second reading as worked examples. Daniel Bourdeau's review of PR #670 reports that he read all 22 cipher words himself on NARA image 13 with the alphabet A key and that they agree. No reading_review is recorded by us; the grade is the reviewer's."
+   },
+   {
     "doc": "all",
-    "label": "Journal, 29 Jul 1779 - 22 Dec 1780, both alphabets",
+    "label": "Journal, 29 Jul 1779 - 22 Dec 1780, both alphabets, except the ink recipe of 9 Aug 1779",
     "transcription": [
      "ciphertext_systemA.txt",
      "ciphertext_systemB.txt",
@@ -302,10 +314,10 @@
     ],
     "decryption": "journal_as_written.md",
     "reading": "journal_modernized.md",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "en",
-    "read_share": 0.752,
-    "note": "read_share is 1 - the hole rate of research/reading_audit/v2_score.py on journal_modernized.md (0.248; journal_as_written.md 0.240), every probable [word?] and doubtful [word??] counted as a hole; the file's plain text is included. Holes are counted by words: [...] one unread cipher word, [... n] n in a row, from the '?' tokens of reconciled_source.txt (206 words under 156 marks); bare [...] in plain text, the struck heading of image 19 left and the margin column of image 11 are extent unknown. Of the cipher words alone, 513 of 1,041 (49.3%) are confident. No reading_review is recorded: no reviewer has graded this reading, and after the failed blind check (48% of a sample of confident words reproduced, mark 95%) the author's agents record no A or B grade of their own. All readings by AI agents; no person has checked them against the images."
+    "read_share": 0.482,
+    "note": "read_share: cipher words read with confidence outside the ink recipe, 491 of 1,019 (48.2%); for the whole journal, recipe included, 513 of 1,041 (49.3%). Our earlier read_share for the whole journal, 0.752, was 1 - the hole rate of research/reading_audit/v2_score.py on journal_modernized.md (0.248; journal_as_written.md 0.240), every probable [word?] and doubtful [word??] counted as a hole and the file's plain text included. Holes are counted by words: [...] one unread cipher word, [... n] n in a row, from the '?' tokens of reconciled_source.txt (206 words under 156 marks); bare [...] in plain text, the struck heading of image 19 left and the margin column of image 11 are extent unknown. The journal files include the recipe's lines, which are the separate entry above. Marked decoded, not read after Daniel Bourdeau's review of PR #670: the failed blind check (48% of a sample of confident words reproduced, mark 95%) leaves the reading short of sentences a reviewer can grade. All readings by AI agents; no person has checked them against the images."
    }
   ],
   "key_file": "key_systemA_frozen.json"
