@@ -1,0 +1,79 @@
+[
+ {
+  "year": 1332,
+  "date": "after Jumada I 732 AH (Feb 1332); the cipher line is undated",
+  "title": "One line of numeral cipher under the colophon of a sira manuscript dated 732 AH (BnF Arabe 1966)",
+  "correspondents": "unknown (a reader's or owner's note)",
+  "place": "unknown (Mashriqi hand; Maghribi pieces bound in front)",
+  "language": "Arabic",
+  "region": "Other",
+  "period": "unknown",
+  "shelfmark": "Paris, BnF, Département des Manuscrits, Arabe 1966",
+  "folio_note": "Last written page (Gallica view 50, right-hand page, under the colophon): three or four Arabic letters, then about 28 Indian (Arabic-Indic) numerals in one line, in a paler ink than the colophon; two lines of ordinary cursive notes below it. No gloss.",
+  "cls": "C",
+  "status": "De Slane (1883-95), no. 1966: 'Ms. daté de l'an 732 de l'hégire (1332 de J. C.). A la fin du volume se trouve une ligne d'écriture secrète en chiffres indiens.' Seen on the Gallica microfilm scan 15 Nov 2026: the line is there and bare. The 6 Nov 2026 sweep listed the catalogue hit as 'incidental, not opened'. Not on DECODE. Whether the line is as old as the 1332 colophon is not established: the ink is paler and the hand may be a later owner's.",
+  "why": "If it is of the time of the copy it is one of the oldest unread Arabic numeral cryptograms with an image online; it probably hides a name, a date or an ownership note.",
+  "importance": 2,
+  "solvability": 2,
+  "difficulty": 3,
+  "score_note": "Scored from the image during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); viewed",
+  "verify": "Order or view the colour scan (the online images are a black-and-white microfilm) to settle the ink and the first letters; try abjad letter values (hisab al-jummal) on the numerals; compare the hand with the owners' notes below it.",
+  "links": [
+   {
+    "label": "Gallica, Arabe 1966 (view 50)",
+    "href": "https://gallica.bnf.fr/ark:/12148/btv1b11001551n/f50.item"
+   },
+   {
+    "label": "IIIF image, view 50, full width",
+    "href": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b11001551n/f50/full/max/0/default.jpg"
+   },
+   {
+    "label": "BnF Archives et manuscrits notice",
+    "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc29901c"
+   }
+  ],
+  "seen": "image",
+  "source": "Arabic sweep 15 Nov 2026 (part C)",
+  "prior_art": "open (checked 15 Nov 2026: DECODE search, cryptiana unsolved.htm and GL.htm, de Slane's catalogue notice, two web searches; no reading found)",
+  "needs_archive_scan": "no",
+  "access_note": "Microfilm scan free on Gallica; gallica.bnf.fr is 403 to scripts, the openapi.bnf.fr IIIF route works.",
+  "vetting": {
+   "date": "2026-11-15",
+   "by": "claude session 15 Nov 2026, Arabic sweep part C",
+   "seen": {
+    "kind": "scan",
+    "where": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b11001551n/f50/pct:52,74,40,12/max/0/default.jpg (native-resolution crop 2,329 x 533 px of the line; the whole opening is 5,824 x 4,448 px), also the lower half of the page at 2,000 px",
+    "extent": "one line: a short word group in Arabic letters followed by about 28 Arabic-Indic numerals, written under the colophon dated Jumada I 732 AH",
+    "cipher": "Numerals only (digits 1, 2, 3, 4, 7, 8, 9 and 0-dots seen), no separators visible on the microfilm, no decipherment written above, below or beside it; the two lines under it are ordinary Arabic notes in another hand, not a gloss."
+   },
+   "prior_art": {
+    "decode": "decode_search.py 'Arabe 1966', 'arabe', 'arabic': no Arabic-script record (the one row returned for 'Arabe 1966' is BnF Espagnol 132, unrelated)",
+    "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for arabic/arabe: no Arabic-language item",
+    "lasry": "cryptiana.web.fc2.com/code/GL.htm (list of Lasry's keys) fetched 15 Nov 2026: nothing Arabic; this is not diplomatic material",
+    "edition": "De Slane, Catalogue des manuscrits arabes (archive.org cataloguearabes00bibluoft), no. 1966, only notes the line as 'écriture secrète en chiffres indiens' and gives no reading; the BnF Archives et manuscrits notice repeats de Slane",
+    "literature": "Web searches for the shelfmark with cipher/écriture secrète and for numeral cryptograms in Arabic colophons found no study of this line; Gacek's Vademecum treats abjad-numeral cryptography in colophons in general, not this manuscript (not opened at the page)"
+   },
+   "key_check": "No key held. The likely system is letters written by their abjad values (hisab al-jummal), a known family; not tested, since the sweep does not solve.",
+   "duplicates": "known.py 'Arabe 1966': only the 6 Nov 2026 Arabic sweep README, which names the catalogue hit and did not open it; no catalogue entry, lead or target.",
+   "searches": [
+    {
+     "query": "decode_search.py \"Arabe 1966\" \"arabe\" \"arabic\"",
+     "result": "0 Arabic records on DECODE"
+    },
+    {
+     "query": "web: \"Arabe 1966\" BnF \"al-Durra al-muḍīʾa\" Maqdisī 732 colophon \"écriture secrète\" OR chiffres OR cipher",
+     "result": "no study or reading of the line; only catalogue pages"
+    },
+    {
+     "query": "web: colophon Arabic manuscript numerals cipher abjad numeric cryptogram scribe name encoded in Indian numerals",
+     "result": "general colophon studies only; nothing on this manuscript"
+    },
+    {
+     "query": "cryptiana unsolved.htm and GL.htm, grep arabic/arabe",
+     "result": "no Arabic-language cipher listed"
+    }
+   ],
+   "verdict": "open"
+  }
+ }
+]
