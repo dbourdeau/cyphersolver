@@ -165,14 +165,17 @@ He also reports:
 ## The code book is Entick's New Spelling Dictionary (Andrew Beling, with AI agents, 15 Nov 2026)
 
 All of this section was done by AI agents (Opus) on 15 Nov 2026 for Andrew Beling. No person has checked any reading
-in it. It adds files and corrects values; no earlier file of this folder is changed.
+in it. It adds files, appends this dated section to NOTES.md, and appends seven solution steps, one credit and
+`outcome.provenance` to profile.json; no earlier line of any file is altered or removed. Where it corrects this
+folder's values, the old value, the new value and the evidence are in the added files.
 
 ### The book and the rule
 
 - **Book.** John Entick, *New Spelling Dictionary* (revised by William Crakelt), in the setting of the Internet
   Archive copy `bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795_0` (title page dated 1795). The
-  Internet Archive copy dated 1796 puts the same words on the same lines; the 1787-1791 settings do not. Which of
-  1795 and 1796 Jones had is not settled.
+  Internet Archive copy dated 1796 seems, from its machine-read text only, to be in the same setting. It was not
+  compared page by page, and no 1796 page image was looked at. Which of 1795 and 1796 Jones had is not settled. The
+  1787-1791 settings do not fit.
 - **Opening a page.** Printed page p is image p + 35 of the item: file
   `..._1795_0_jp2/..._1795_0_{p+35, four digits}.jp2` in its `_jp2.zip` (page 217 is image 0252). In the viewer this
   is normally `https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795_0/page/n{p+35}`
@@ -180,8 +183,17 @@ in it. It adds files and corrects values; no earlier file of this folder is chan
 - **Rule.** A group `p,n` is printed page p, printed line n. Column a is lines 1 to 39, column b lines 40 to 78
   (k + 1 onwards when column a has k lines; page 366 has 40). Continuation lines of an entry are counted. A third
   number k is the k-th word of that line, part-of-speech abbreviations not counted (`13,71,5` are, `13,71,7` is,
-  `177,14,2` had, `285,35,2` Political). Pages 442-443 are the list of proper names: `442,55` Daniel, `442,56` David,
-  `443,48` Joseph.
+  `177,14,2` had, `285,35,2` Political).
+- **Name pages 442-443: a separate rule, found after the fact.** These two pages are the list "The most usual
+  Christian names of men and women", set in five columns, with letter headings and blank rows between the letters.
+  The rule above does not apply there: a blind reader who applied it (an independent package check, below) read
+  Benjamin, Bennet and Jeffry. The numbers fit another count: the n-th name on the page, running down the five
+  columns in turn, letter headings and blank rows not counted. On page 442 column 1 ends at Anselm (18), column 2 at
+  Blase (35), column 3 at Cuthbert (52); then Cyprian 53, Cyril 54, **Daniel 55, David 56**. On page 443 column 1
+  ends at Hubert (32); then Hugh 33 ... Joscelin 47, **Joseph 48**. This count was found by the package checker and
+  confirmed by the packaging agent on the page images (both AI, neither blind); it was not set before any test. In
+  `entick_lines.tsv` these rows have column `n1`-`n5` (column of the names list) and the place of the name in that
+  column.
 - The letter codes are the first entry of each letter (`249,48` NAB for N, `213,8` KAlendar for K, `49,10` CAB for C),
   with exceptions listed under "Not explained".
 
@@ -189,10 +201,16 @@ in it. It adds files and corrects values; no earlier file of this folder is chan
 
 | file | what |
 |---|---|
-| `entick_lines.tsv` | the Entick lines the three letters use (page, line, column, line in column, entry or continuation, first word), each with the line before and after; whole-line text where a group has a third number. From blind counts of the page images: two AI counters per page, 186 pages, 0 disagreements in line count or line type. Public domain text; no page image is committed. |
+| `entick_lines.tsv` | the Entick lines the three letters use (page, line, column, line in column, entry or continuation, first word), each with the line before and after; whole-line text where a group has a third number. From blind counts of the page images: two AI counters per page, 186 pages, 0 disagreements in line count or line type. On pages 442-443 the "line" is the name count above. Public domain text; no page image is committed. |
 | `ct_49_reread.txt`, `reread_49.tsv` | /49 re-read blind (see below); the table lists every group that differs or stays doubtful, with each reader's figures. |
 | `ct_212_reread.txt`, `reread_212.tsv` | the same for /212. |
 | `entick.py` | applies the rule to `ct_49_reread.txt`, `ct_212_reread.txt` and `ct_217.txt` (as it stands); writes `entick_49.tsv`, `entick_212.tsv`, `entick_217.tsv` (group by group: dictionary line, value, this folder's value and grade, status), `reading_49_entick.txt`, `reading_212_entick.txt`, `reading_217_entick.txt` and `entick_217_suggest.tsv`. Standard library only; two runs give identical bytes. |
+
+The `folder_grade` column of `entick_*.tsv` names where this folder's value comes from: `H`, `M`, `L` are the grades
+of `proposals.tsv`; `1798w` a word value of `table_1798.tsv`; `1798l` a letter value of `table_1798.tsv`; `1802l` a
+letter fixed by the 1802 names (`apply.py`'s `LETTERS_1802`); `open` no value. For /49 the grade is the clear copy
+/51 (`clear copy /51` for a word, `letter (clear copy)` for a letter of a spelled name), and `skipc` is the one group
+(`230,1`) that `align.py` skipped. In `reread_*.tsv`, R1, R2 and R3 are the three AI readers of the digits (below).
 
 `python targets/jones1802/entick.py` rebuilds every output above from the committed files.
 
@@ -204,8 +222,8 @@ in it. It adds files and corrects values; no earlier file of this folder is chan
    setting against a mark of 20 (1791: 13, 1795: 14, 1798: 13).
 3. **Page test, pre-set: MISSED.** 122 fresh groups from `table_1798.tsv`: 51 of 122 (42%) on the page for 1787,
    against a mark of 80%; 1795_0 61 (50%). Controls (other editions rescaled, Bentick 1786) 10-29%.
-4. **Position test, pre-set: MISSED.** Rule R2 (printed lines) was chosen on 15 training groups (8 of 15 exact) and
-   frozen. Held-out image subset: 14 of 36 at the exact line against a mark of 60% within one line; shuffled 0 of 36.
+4. **Position test, pre-set: MISSED.** The printed-line rule was chosen among four counting rules on 15 training
+   groups (8 of 15 exact) and frozen. Held-out image subset: 14 of 36 at the exact line against a mark of 60% within one line; shuffled 0 of 36.
    17 of the 36 words were not on their page at all; of the 19 that were, 14 sat on the exact line.
 5. **After the fact:** reading a figure 2 in `table_1798.tsv` as 4 put 22 more groups on their exact line; reading
    4 as 2 put none.
@@ -217,6 +235,11 @@ in it. It adds files and corrects values; no earlier file of this folder is chan
    mark 60%). Shuffled control (1000 shuffles): 0.66% (mark under 10%), 95th percentile 3, max 5. Secondary figures,
    set beforehand and not used for the verdict: with the bare `p,2` groups 102 of 150 (68.0%); without the 22 groups
    of step 6, 83 of 117 (70.9%). The test was run once.
+8. **Independent check of this package, pre-set** (a further AI checker, 15 Nov 2026, blind readers): the dictionary
+   line table, 21 of 24 sampled rows read the same from the page images, against a mark of 22: MISSED, the three
+   misses being the name rows `442,55`, `442,56`, `443,48`, where the column rule does not apply (see the name-page
+   rule above); the re-read /49 digits, 20 of 20 sampled changed groups read the same, against a mark of 16: PASSED.
+   The script and the counts reproduce.
 
 Each plan was written and hashed before its test was run. The plans, the test items and the scoring scripts are in
 the contributor's files, not in this folder; what this folder rebuilds is the full look-up (`entick.py`).
@@ -224,17 +247,20 @@ the contributor's files, not in this folder; what this folder rebuilds is the fu
 ### Re-reading of the digits
 
 **/49.** Three AI readers read the Qatar Digital Library scan of /49 line by line (38 line crops in shuffled order,
-nothing else given): R1 and R2 read every crop, R3 read every crop with a disagreement and decided it. R1 and R2
-agreed on 520 of 660 number fields; R3 sided with R2 135 times and with R1 4 times; 1 field stayed doubtful.
+nothing else given): the first and second readers (R1, R2) read every crop, a third (R3) read every crop with a
+disagreement and decided it. R1 and R2 agreed on 520 of 660 number fields; R3 sided with R2 135 times and with R1 4 times; 1 field stayed doubtful.
 **98 of 326 groups differ from `ct_49.txt`, and 4 are doubtful** (137,1,5 perhaps 13,71,5; 20,2; 32,1; 187,3).
-The figure changes are 2 to 4 ×126, 5 to 6 ×2, 0 to 9, 1 to 4 and 2 to 8, plus 122,33 to 22,33, 179,7 to 179,70 (an
-ink blot) and 220,50 to 240,5. Most are a figure 4 typed as 2: the copyist's 4 is an open L-shaped figure. With the
+The figure changes are 2 to 4 ×125, 5 to 6 ×2, 0 to 9, 1 to 4 and 2 to 8, plus three structural changes: 122,33 to
+22,33, 179,7 to 179,70 (an ink blot) and 220,50 to 240,5 (which holds a further 2 to 4). Most are a figure 4 typed as 2: the copyist's 4 is an open L-shaped figure. With the
 re-reading the letter codes in /49 become C `49,10` and N `249,48`, the codes /212 uses.
 
 **/212.** Two AI readers read all 141 line crops; they disagreed on 3 of 1176 fields, and a third reader settled
 them. 9 of 580 groups differ from `ct_212.txt` (29,10 to 49,10 ×2; 236,23 to 436,23; 188,31 to 180,31; 265,63 to
 266,63; 205,2 to 295,2; 250,48 to 258,48; 113,50 to 115,50; 106,71 to 166,71 at its second place), 2 are doubtful.
-The 2-for-4 slip is a /49 problem.
+The 2-for-4 slip is a /49 problem. Two of the nine re-readings, `188,31` to `180,31` and `106,71` to `166,71`, turn
+this folder's sensible value (January, difficulty) into a word with no sense in place (Heresy, Glaver). They are
+doubtful re-readings, not corrections, and are flagged in `reread_212.tsv` for a person to look at; the blind
+readers' figures are kept as recorded.
 
 **/217 was not re-read**: its scan is not among the files used.
 
@@ -244,7 +270,7 @@ From `entick_212.tsv` (status per group; the grades are this folder's):
 
 | this folder's value | agrees | corrected | other |
 |---|---|---|---|
-| H (word) | 57 | 18 | |
+| H (word) | 57 | 18 | 1 does not fit (`87,63`, a proposal for the letter I, as `187,63`; line Cradle) |
 | M | 13 | 10 | 1 does not fit (bare 295,2) |
 | L | 2 | 16 | |
 | 1798 word value | 7 | 9 | |
@@ -255,7 +281,8 @@ Not all "corrected" values are corrections of sense:
 - the 9 corrected 1798 values are all `31,7`, which Entick spells Bashaw (this folder: bacha);
 - 6 of the 18 corrected H values are `50,66`, whose line is Can ("v. n. to be able" / "s. a vessel"): Khan by sound
   only; it is marked doubtful in the readings;
-- 9 corrections give words that make no sense in place (next section).
+- 10 corrections give words that make no sense in place (5 at grade H, 5 at grade M; listed under "Not explained").
+  Two of them come from doubtful re-readings (`180,31`, `166,71`).
 
 The corrections that give sense: `371,76` steward to Superintendent; `345,13` Shah to Silver; `239,69` (open) Mine,
 "superintendent of the silver mine"; `37,36` clergy to Bishop (×2); `40,20` corps to Body ("a body of 12000
@@ -306,18 +333,19 @@ as they were.
 
 ### Not explained
 
-- The bare `,2` groups: 19 in /49, 1 in /212 (`295,2`). Only 1 of 13 distinct ones has its word on line 2.
+- The bare `,2` groups: 19 in /49, 1 in /212 (`295,2`). Of the 13 different bare `,2` groups in /49, only one has its clear-copy word on line 2 of its page.
 - 12 function words in /49 coded with a small second number (`7,8` am, `8,5` of, `19,5` in, `24,4` of, `29,3` by,
   `30,4` of, `35,6` with, `41,4` of, `49,3` that, `49,6` of, `56,6` the, `67,5` the).
 - The letter codes for I and U: `187,63` is Hypothetically (the I entries start at line 68) and `398,16` is Tyro (one
   line before Vacancy); also `249,45` for N (three lines before NAB). They are used consistently (I 41 times in /212).
-- About 10 dictionary words in /212 and 4 in /217 that make no sense in place: `180,31` Heresy (January?), `166,71`
+- 10 dictionary words in /212 and 4 in /217 that make no sense in place: `180,31` Heresy (January?), `166,71`
   Glaver, `160,30` Fugitive (General?), `394,33` Trode, `387,24` Toad, `156,57` Fortunateness, `237,18` Mercifully,
   `221,25` Levigate, `433,25` Where, `160,73` Fun (Function is the next line); /217 as above. A figure or count
   problem is likely; not resolved.
 - 23 of the 137 test groups of /49 have their word nowhere on the page (`75,28` conversation on the Conference line,
   `138,32` French on Exigence, `154,12` force, `204,72` instant, `254,57` not, `433,62` which, `440,49` you, `127,86`
   embarrassed, whose line number is beyond the 78 lines of the page, and others in `entick_49.tsv`).
+- After the fact, not tested: the name-page count of pages 442-443 (above), which gives Daniel, David and Joseph.
 - After the fact, not tested: the four-number group `13,70,7,8` reads "I am" as words 7 and 8 of line 70 of page 13
   ("see. The present tense runs thus; I am,"); this folder's tokens split it in two.
 - Which claimant comes through Erzeroum: /212 has David (`442,56`) arriving at Erzeroum and Daniel paying the Khan;
@@ -327,9 +355,13 @@ as they were.
 ### Not done
 
 - The 1796 copy was not compared page by page with 1795_0 (the planned machine comparison was swamped by OCR noise);
-  no 1796 image was used.
+  no 1796 page image was looked at.
 - /217's digits were not re-read, and 15 of its word groups are on dictionary pages not yet counted.
-- No person has checked any re-read digit, any line count or any reading.
+- No person has checked any re-read digit, any line count or any reading. Places for a person's look first:
+  /212 `180,31` (read 188,31 before; January becomes Heresy) and `166,71` (106,71 before; difficulty becomes Glaver);
+  /49 `154,42` (f. 1r line 7), where the package checker's reader read 154,22 as `ct_49.txt` has it; the second
+  `249,48` on f. 1v line 18 (that reader gave 249,28 first); and `382,25`, `432,14`, `321,13`, where that reader saw
+  a 4 and the re-reading keeps a 2.
 - Prior identification: Tomokiyo's Cryptiana (code index, the Wellington dictionary-code page, the Drake-Nelson page,
   the book-code page; its blog searched for "Entick" and "Harford Jones") and three web searches found no earlier
   identification of Jones's book. Cryptiana's book-code page describes Entick used as a code book by John Jay, Arthur

@@ -292,13 +292,13 @@
         "statistical test",
         "plaintext matching"
       ],
-      "what": "Pre-set tests on 122 fresh groups of table_1798.tsv: on the page 51 of 122 (42%) for 1787 against a mark of 80%, a miss; rule chosen on 15 training groups (printed line, column b continuing at line 40) and frozen; held-out position test on page images of IA ..._1795_0, 14 of 36 exact against a mark of 60% within one line, a miss (shuffled 0 of 36). After the fact: reading a 2 as 4 puts 22 more groups on their exact line, 4 as 2 none.",
+      "what": "Pre-set tests on 122 fresh groups of table_1798.tsv: on the page 51 of 122 (42%) for 1787 against a mark of 80%, a miss; rule chosen on 15 training groups (printed line, column b continuing at line 40) and frozen; held-out position test on page images of Internet Archive item ..._1795_0, 14 of 36 exact against a mark of 60% within one line, a miss (shuffled 0 of 36). After the fact: reading a 2 as 4 puts 22 more groups on their exact line, 4 as 2 none.",
       "result": "failed"
     },
     {
       "date": "2026-11-15",
       "kind": "transcription",
-      "what": "Pre-set blind test of the 22 disputed groups on the Qatar Digital Library scan of /49: two AI readers read 20 and 22 of 22 as 4 (mark 16), controls 92-100%. Then all of /49 re-read blind by three AI readers (98 of 326 groups differ from ct_49.txt, 126 figures 2 are 4; 4 doubtful) and all of /212 (9 of 580 differ; 2 doubtful): ct_49_reread.txt, ct_212_reread.txt, reread_49.tsv, reread_212.tsv. /217 not re-read.",
+      "what": "Pre-set blind test of the 22 disputed groups on the Qatar Digital Library scan of /49: two AI readers read 20 and 22 of 22 as 4 (mark 16), controls 92-100%. Then all of /49 re-read blind by three AI readers (98 of 326 groups differ from ct_49.txt, 125 figures typed 2 are 4, plus one inside a structural change; 4 doubtful) and all of /212 (9 of 580 differ; 2 doubtful): ct_49_reread.txt, ct_212_reread.txt, reread_49.tsv, reread_212.tsv. /217 not re-read.",
       "result": "worked"
     },
     {
@@ -314,7 +314,7 @@
     {
       "date": "2026-11-15",
       "kind": "key from source",
-      "what": "entick.py looks up every group of /49, /212 (re-read digits) and /217 (as transcribed) in entick_lines.tsv (blind line counts of 186 pages). /212 against this folder's values: H 57 agree, 18 differ (6 of them 50,66 Can for Khan, 5 no sense); M 13 agree, 10 differ; L 2 agree, 16 differ (steward to Superintendent, Shah to Silver, clergy to Bishop, 442,55 Daniel and 442,56 David swapped); 6 open groups filled (443,48 Joseph x3, 239,69 Mine, 53,36 Carry, 48,75,3). /217 after the fact: 18 of 28 word groups on counted pages agree, 15 on pages not counted; 66 of 85 letter groups start their line. Third-number rule (k-th word, part-of-speech abbreviations not counted) fitted after the fact, 6 of 6. Not explained: bare ,2 groups, 12 small-number function words, the I and U letter codes, about 14 words with no sense in place.",
+      "what": "entick.py looks up every group of /49, /212 (re-read digits) and /217 (as transcribed) in entick_lines.tsv (blind line counts of 186 pages). /212 against this folder's values: H 57 agree, 18 differ (6 of them 50,66 Can for Khan, 5 no sense), 1 does not fit; M 13 agree, 10 differ (5 no sense), 1 does not fit; L 2 agree, 16 differ (steward to Superintendent, Shah to Silver, clergy to Bishop, 442,55 Daniel and 442,56 David swapped); 6 open groups filled (443,48 Joseph x3, 239,69 Mine, 53,36 Carry, 48,75,3). /217 after the fact: 18 of 28 word groups on counted pages agree, 15 on pages not counted; 66 of 85 letter groups start their line. Third-number rule (k-th word, part-of-speech abbreviations not counted) fitted after the fact, 6 of 6. After the fact: the name pages 442-443 count the n-th name on the page, not the printed line (a blind reader applying the line rule read Benjamin, Bennet, Jeffry). Not explained: bare ,2 groups, 12 small-number function words, the I and U letter codes, 14 words with no sense in place (two of them from doubtful re-readings, 180,31 and 166,71).",
       "result": "partial"
     },
     {
@@ -394,7 +394,7 @@
         "who": "ajbeling",
         "role": "identification",
         "date": "2026-11-15",
-        "note": "identified the code book as Entick's New Spelling Dictionary (setting of IA ..._1795_0; page + printed line), re-read the /49 and /212 digits blind, and looked up every group (entick.py, NOTES section of 15 Nov 2026); with AI agents; no person has checked the readings",
+        "note": "identified the code book as Entick's New Spelling Dictionary (setting of Internet Archive item ..._1795_0; page + printed line), re-read the /49 and /212 digits blind, and looked up every group (entick.py, NOTES section of 15 Nov 2026); with AI agents; no person has checked the readings",
         "source": "targets/jones1802/NOTES.md, section 'The code book is Entick's New Spelling Dictionary'"
       }
     ],
