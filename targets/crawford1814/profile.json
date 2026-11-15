@@ -35,7 +35,7 @@
     "source": "NARA M34 roll 18 frames 0064-0066 (full resolution, 4960 px wide)",
     "corrections": 1,
     "image_quality": "good",
-    "notes": "Two transcriptions made blind of each other by two AI agents (14-15 Nov 2026): 291 of 292 groups the same; the one difference (66L13 307/317) settled on the image as 307. Two groups struck through by Crawford are left out. Measured with docs/_check_profile.py --measure --digits --drop-first."
+    "notes": "Two transcriptions made blind of each other by two AI agents (14-15 Nov 2026): 291 of 292 groups the same; the one difference (66L13 307/317) settled on the image as 307. Two groups struck through by Crawford are left out. One mark was added on 15 Nov 2026 (the cross under 1116, 64R07); no group number changed. Measured with docs/_check_profile.py --measure --digits --drop-first."
    }
   }
  ],
@@ -44,7 +44,7 @@
    "code",
    "syllabic"
   ],
-  "summary": "The State Department's numerical code of about 1,600 words and syllables that Weber (1979) prints as WE025 (the = 1355, of = 1397, to = 1554), Poinsett's 'code 1355'; marks on the groups for -s, -ed, dropped and doubled letters.",
+  "summary": "The State Department's numerical code of about 1,600 words and syllables that Weber (1979) prints as WE025 (the = 1355, of = 1397, to = 1554), Poinsett's 'code 1355'; marks on the groups for -s, -ed, dropped and doubled letters, as the code's own directions give them (Weber p. 454).",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "2-4",
@@ -73,9 +73,9 @@
   "key_order": "random",
   "word_division": "none",
   "doubled_letters": "unknown",
-  "sibling_key": "WE025 as printed by Weber 1979 pp. 470-480, in the transcription frozen for ../poinsett1813/beling (sha256 26dad03e...); the 156 rows used here in key/we025_crawford1814.tsv",
+  "sibling_key": "WE025 as printed by Weber 1979 pp. 443-454, in the transcription frozen for ../poinsett1813/beling (sha256 26dad03e...); the 156 rows used here in key/we025_crawford1814.tsv",
   "distinct_symbols": 165,
-  "notes": "distinct_symbols = distinct numbers in crawford1814_transcription.txt (python docs/_check_profile.py --measure ... --digits --drop-first). Words in clear are written in among the groups. Marks: diamond above (-s), caret (-ed), r-strokes under (drop final letters), cross under (doubled letter)."
+  "notes": "distinct_symbols = distinct numbers in crawford1814_transcription.txt (python docs/_check_profile.py --measure ... --digits --drop-first). Words in clear are written in among the groups. Marks: diamond above (-s), caret (-ed), r-strokes or a hooked tail under (drop final letters), cross under (doubled letter)."
  },
  "conditions": {
   "prior_solution": {
@@ -97,9 +97,10 @@
    "docs/_validate.py"
   ],
   "models": [
-   "Claude (Anthropic), Opus: two independent transcriptions from the images, decoding, test, print checks"
+   "Claude (Anthropic), Opus: two independent transcriptions from the images, decoding, test, print checks",
+   "Claude (Anthropic), Fable 5.2: the September 1814 interlined pairs, the check of the marks and of Weber's pages 451 and 454"
   ],
-  "sessions": 2,
+  "sessions": 4,
   "first_date": "2026-11-14",
   "last_date": "2026-11-15"
  },
@@ -165,46 +166,55 @@
    "result": "worked"
   },
   {
-   "date": "2026-11-14",
+   "date": "2026-11-15",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "After the reading was made: two short coded passages by Crawford on the same roll (frames 0025R, 0031R, 0032L, September 1814) carry the State Department clerk's interlinear decipherment. 81 groups set against the tables (tests/crawford_sept1814_interlined_pairs.tsv): 13 of 13 agree with WE028 on 0025R; 66 of 68 agree with our WE025 transcription on 0031R-0032L, one miss being our own misreading of Weber's 1181 (pl, not Pi; not a group of this letter) and the other a blotted figure. The clerk reads a hooked tail under a group as a withdrawn last letter and a diamond as -s, as the code's printed directions say (Weber p. 454); the same marks on 64R06-07 turn the supplied [troops] into tr-oop-s read from the code, so 283 of 292 groups are read from the table and nine are supplied. A one-number slip by Crawford (248 for 249) is attested. Not a test fixed in advance.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
    "kind": "verification",
    "technique": [
     "statistical test",
     "language-model scoring"
    ],
-   "what": "Statistical validation (docs/_validate.py): 281 tokens, 155 types, en-modern order 4: reading -1.845 per letter; random keys -2.748 (z 6.3); key annealed onto shuffled ciphertext best -1.832 (mean -1.845, z -0.0); annealer on the real text -1.785. Verdict: underdetermined.",
+   "what": "Statistical validation (docs/_validate.py): 283 tokens, 157 types, en-modern order 4: reading -1.85 per letter; random keys -2.76 (z 6.6); key annealed onto shuffled ciphertext best -1.837 (mean -1.855, z 0.3); annealer on the real text -1.778. Verdict: underdetermined.",
    "result": "partial"
   }
  ],
  "outcome": {
   "validation": {
-   "date": "2026-11-14",
+   "date": "2026-11-15",
    "model": "en-modern",
    "file": "validation.tsv",
-   "tokens": 281,
-   "types": 155,
-   "tokens_per_type": 1.81,
-   "score": -1.845,
+   "tokens": 283,
+   "types": 157,
+   "tokens_per_type": 1.8,
+   "score": -1.85,
    "nulls": {
     "random keys": {
      "n": 200,
-     "mean": -2.748,
-     "sd": 0.144,
-     "max": -2.383,
-     "z": 6.3,
+     "mean": -2.76,
+     "sd": 0.137,
+     "max": -2.392,
+     "z": 6.6,
      "p": 0.005
     },
     "shuffled refit": {
      "n": 6,
-     "mean": -1.845,
-     "sd": 0.012,
-     "max": -1.832,
-     "z": -0.0,
+     "mean": -1.855,
+     "sd": 0.02,
+     "max": -1.837,
+     "z": 0.3,
      "p": 0.5714
     }
    },
-   "power": -1.785,
+   "power": -1.778,
    "verdict": "underdetermined",
-   "notes": "claimed per-occurrence score -1.845; polyphony 0.0; 11 unread tokens left out; annealer on the real text from random keys reached -1.785"
+   "notes": "claimed per-occurrence score -1.85; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -1.778"
   },
   "class": "read",
   "key": "recovered",
@@ -214,8 +224,8 @@
    "transcription"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "281 of 292 groups give the word read from the table value as written (decode.py; the eleven others are listed in NOTES.md section 3).",
-  "fraction_read": 0.962,
+  "fraction_read_source": "283 of 292 groups give the word read from the table value as written, with Crawford's marks applied (decode.py; the nine others are listed in NOTES.md section 3). It was 281 until the two groups of 'troops' were read from their marks on 15 Nov 2026 (NOTES.md section 7).",
+  "fraction_read": 0.969,
   "codes_open": {
    "open": 0,
    "total": 165,
@@ -224,6 +234,7 @@
   "verification": [
    "matched control",
    "independent verification",
+   "contemporary decipherment",
    "historical consistency"
   ],
   "provenance": "contributed",
@@ -243,8 +254,14 @@
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "note": "WE025, the code table as printed by Ralph E. Weber, United States Diplomatic Codes and Ciphers, 1775-1938 (1979), pp. 470-480, in the contributor's transcription; only the rows for groups in this letter are committed",
+    "note": "WE025, the code table as printed by Ralph E. Weber, United States Diplomatic Codes and Ciphers, 1775-1938 (1979), pp. 443-454, in the contributor's transcription; only the rows for groups in this letter are committed",
     "date": "1979"
+   },
+   {
+    "who": "contemporary",
+    "role": "verification",
+    "note": "The State Department clerk who deciphered Crawford's letters of September 1814 between the lines (M34 roll 18 frames 0025R, 0031R, 0032L): 81 groups with his words, used to check the table and the marks; not a decipherment of this letter",
+    "date": "1814"
    },
    {
     "who": "founders",
@@ -255,9 +272,9 @@
   ],
   "gaps": [
    {
-    "item": "eleven groups supplied from the sense (1512 x4, 1276, 556, 361, 1474, 812, 1244 1116)",
+    "item": "nine groups supplied from the sense (1512 x4, 1276, 556, 361, 1474, 812)",
     "blocker": "open-codes",
-    "detail": "the slips are inferred; 812 and the [troops] pair are not settled. Frame 0031 of the same roll has a short WE025 passage of Sept 1814 with an interlinear decipherment, a check on Crawford's own use, not done"
+    "detail": "the slips are inferred; 812 and the four groups written 1512 are not settled. The interlined September 1814 passages on the same roll (NOTES.md section 7) attest one slip of the same kind but do not contain 1512, 1215 or 812"
    },
    {
     "item": "a period decipherment or clear copy",
@@ -274,9 +291,9 @@
     "reading": "crawford1814_reading.md",
     "language": "en",
     "state": "read",
-    "read_share": 0.962,
+    "read_share": 0.969,
     "summary": "Crawford reports to Monroe, in code, his belief that the French government has resolved to sacrifice everything for England's friendship and that the King looks to British troops in Belgium for protection against his own people; a reported conspiracy headed by Savary, which opponents call a police fabrication to justify about thirty arrests; a coming crisis for the King, with many expecting the royal family to be expelled again; and three parties if there is a struggle: the army for the Emperor, part of the new nobility for the King of Rome with a regency or for the Duke of Orleans, and the republicans with either of the last two.",
-    "note": "read_share = 281 of 292 groups read from the table value as written.",
+    "note": "read_share = 283 of 292 groups read from the table value as written, with Crawford's marks applied.",
     "reading_review": {
      "grade": "A",
      "by": "Author's agents (Andrew Beling, with AI agents)",

@@ -4,7 +4,8 @@
     python decode.py --print         print the decryption only
 
 Each group is written number=element; the encoder's marks are applied as in ../poinsett1813/beling (' plural -s,
-^ -ed, _r/_rr/_rrr drop one to three final letters, + a doubled letter) to give the letters the group contributes.
+^ -ed, _r/_rr/_rrr drop one to three final letters, _y drop the final letter, + a doubled letter) to give the letters
+the group contributes.
 Groups whose reading in crawford1814_reading.md is a guess against or beyond the table are listed in GUESSED and go
 to validation.tsv as '?' (unread). Python standard library only."""
 import hashlib, os, re, sys
@@ -19,8 +20,9 @@ for i, l in enumerate(open(KEY, encoding='utf-8')):
         T[n] = el
 # (line, group) -> letters, where the mark rule does not give the word used in the reading
 SPECIAL = {('65R06', '720'): 'lost', ('66L06', '121'): 'parties', ('66L13', '121'): 'parties',
-           ('65R11', '456'): 'them', ('65R05', '372'): 'ggle', ('65R07', '372'): 'ggle', ('66L01', '1115'): 'all'}
-GUESSED = {('64R06', '1244'), ('64R07', '1116'), ('64R12', '1276'), ('65R02', '812'), ('66L12', '361'),
+           ('65R11', '456'): 'them', ('65R05', '372'): 'ggle', ('65R07', '372'): 'ggle', ('66L01', '1115'): 'all',
+           ('64R07', '1116'): 'oops'}
+GUESSED = {('64R12', '1276'), ('65R02', '812'), ('66L12', '361'),
            ('64R14', '1512'), ('65R02', '1512'), ('65R07', '1512'), ('66L09', '1512'), ('66L09', '556'),
            ('66L15', '1474')}
 
@@ -30,7 +32,7 @@ def contribution(line, num, marks):
     if (line, num) in SPECIAL:
         return SPECIAL[(line, num)]
     el = T[num]
-    m = re.search(r'_(r+)', marks)
+    m = re.search(r'_(r+|y)', marks)
     if m:
         el = el[:-len(m.group(1))]
     if "'" in marks:
