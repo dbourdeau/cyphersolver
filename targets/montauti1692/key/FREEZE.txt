@@ -1,0 +1,11 @@
+# Frozen keys and transcriptions, with the order of events (all 13-14 Nov 2026; recorded in the working notes at the time)
+8bedce853bb0d5d9d576117a6136c4024cb843e57302ef153ccff4c28686005f  key/key_v1.json             frozen 13 Nov, from Codex 534 f. 14r only, BEFORE the round-2 test on f. 15r (test/TEST_PLAN.md, round 2)
+64783ab82d6e35fe68db16badd5a882ee80d66ab2686f3b1f1f4bd81375b8c20  key/key_v2.json             frozen 14 Nov, from ff. 14r and 15r, BEFORE the round-3 test on f. 21r (test/TEST_PLAN.md, round 3)
+0727229d65547cd1910101579c30b2ddfc94fb0b4760ec7ee3fb3d52ce81b5a1  test/heldout_21r_cipher.tsv frozen BEFORE the f. 21r interline was read
+bdc8b174fa08ca22176f4c73c540108718cf5a64f037e94be6afddbb3b87bc21  key/key_v3.json             frozen 14 Nov (round 4): v2 + w6 = i (f. 396v) + 91 = u (f. 21r, read after the test). Not tested on held-out material.
+f5115d3872160fd5f714766a15a1c1538cc14cbe5a171c21ad742a17f33d8e72  key/key_v3_context.json     frozen 14 Nov (round 4): ww = o, 62 = q, context only
+d1ec7443c95bfbacbcf8319c9fbf3ba247e51279c875b5ec3ebb7bed1c51b942  transcriptions/reconciled_533.tsv     first reconciled Codex 533 transcription (pass B base, pass A variants beside it)
+d2866b78d2872b2711ad8751502f2b164515100949b98fb8b5241c23cac9e2c5  transcriptions/reconciled_533_v2.tsv  second: every one of 116 disagreement sites checked on the image (112 settled, 4 left open at 35v line 0.635) (transcriptions/disagreements_settled.tsv)
+3e37c4f02a8d49c6d4b5edaf057018db23b3662b0e462ab1f0285db3308bafa8  readings/verify/montauti_1r1v_PART1_blind.md  the verifier's blind reading of 1r-1v, frozen before it opened the first agent's notes
+# Note: key/pairs_534_f14r_f15r.tsv is the round-3 state of the pair file (sha256 78000228...). Key v1 was built from its earlier, f. 14r-only state (sha256 8e30541d...), which was overwritten when the round-3 pairs were appended. Checked 14 Nov 2026: the rows above the round-3 marker in the later file give every value of key v1 except 56 = m, whose round-2 source row is not in the later file (56 = m is attested in the round-3 rows, f. 14r l. 11 'mia' and l. 13 'documento').
+# Check: python scripts/run_tests.py
