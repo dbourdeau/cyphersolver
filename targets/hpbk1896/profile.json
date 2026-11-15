@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "target": "hpbk1896",
+ "title": "Hilmi Pasha telegrams, palace to Yemen 1896-1902 (Koc University HPBK): systems A and B",
+ "documents": [
+  {
+   "id": "systemA",
+   "shelfmark": "Koc University HPBK 542, 551, 560, 563, 565, 568, 569, 579, 581, 600, 656, 660",
+   "date": "1898-1902",
+   "year": "unknown",
+   "country": "Ottoman Empire",
+   "route": "Yildiz Palace -> Yemen vilayet",
+   "language": "Ottoman Turkish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "none found; the black-ink words over some groups are the receiving clerk's partial reading"
+   },
+   "length": {"tokens": 6, "distinct": 6, "unit": "code groups", "measured": true, "file": "tr/hpbk600_sample.txt"},
+   "transcription": {
+    "by": "llm from images",
+    "source": "HPBK 600 at 2054 px, first two lines only",
+    "image_quality": "good",
+    "notes": "6 of about 45 groups on one of 12 sheets; digits approximate."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "systemB",
+   "shelfmark": "Koc University HPBK 495, 498, 518, 524, 527, 536, 541, 546, 562, 575, 577, 580, 583, 585, 587, 602, 623, 644, 652, 675, 1761",
+   "date": "1896-1901",
+   "year": "unknown",
+   "country": "Ottoman Empire",
+   "route": "Yildiz Palace -> Yemen vilayet",
+   "language": "Ottoman Turkish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": ["none"],
+    "source": "none found; dark letters and words over some numerals are the receiving clerk's partial reading"
+   },
+   "length": {"tokens": "unknown", "distinct": "unknown", "unit": "mixed", "measured": false},
+   "transcription": {
+    "by": "llm from images",
+    "source": "unknown",
+    "image_quality": "poor",
+    "notes": "Pale pencil numerals; no transcription made."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": ["code"],
+  "summary": "Two numeric systems of Yemen telegrams: A five-digit groups with clear words and clerk glosses; B two- and three-digit numerals with clerk letters over them; both unverified.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {"used": false},
+  "homophones": {"used": "unknown"},
+  "nomenclator": {"present": "unknown"},
+  "nulls": {"present": "unknown"},
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "System B seems to mix two-digit single-letter numerals with three-digit word or suffix numerals (668 = -nde on 599 twice); not tested."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "Not on DECODE as far as known.py shows; Ben-Bassat (Turcica 46, 2015) treats Ottoman WWI ciphers, not these.",
+   "found": "unknown",
+   "used": false
+  },
+  "inputs": ["images"],
+  "attack": "ciphertext-only",
+  "human_role": "Task given by the project; no target-specific intervention recorded.",
+  "tools": ["PIL layer separation"],
+  "models": ["Claude Sonnet 5.5"],
+  "sessions": "unknown",
+  "first_date": "2026-11-14",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {"date": "2026-11-14", "kind": "access", "what": "Image route corrected: IIIF page id equals the item id (pixel comparison of 587); 2000-px pages fetched for 587, 602, 576, 578, 599, 600, 725.", "result": "worked"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Hand reading of the top of 599 and 578 (B) and two lines of 600 (A).", "result": "partial"},
+  {"date": "2026-11-14", "kind": "hypothesis", "technique": ["contextual inference", "repeat/pattern analysis"], "what": "B mixes two-digit letter numerals with three-digit word numerals: numeral 668 has the suffix -nde written over it twice on 599; A groups are not B regrouped (a six-letter word over a five-digit group).", "result": "partial"},
+  {"date": "2026-11-14", "kind": "statistics", "technique": ["automated search (unspecified)"], "what": "Colour separation of the pale pencil from the dark ink by grey threshold.", "result": "failed"}
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "No numeral table could be built: the pencil numerals were not transcribable by hand reading in this session.",
+  "contribution": ["none"],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": ["none"],
+  "notes": "Open: transcription of B (599, 578) against clear same-day sheets 725/748; A glosses."
+ }
+}
