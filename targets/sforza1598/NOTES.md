@@ -371,3 +371,12 @@ R5586 0.828, R5573 0.916; all 0.886. (Lower than the 0.893 with the unconfirmed 
 spellings, so these figures are a floor; by eye the letters read in sentences with a handful of open words each.)
 Remaining gaps (workable): R5586 second half (rough transcription), the two digit-like signs, unflagged `R`/`W` and other look-alike
 tokens, a reader review of the seven texts, and a proper read-share count by a reader rather than the segmenter.
+
+## 15 Nov 2026 (later): R5586 lines 7-18 re-read on the image
+Lines 7-18 re-viewed at 2.5x (`h0-h5.png`, git-ignored). The earlier transcription was close: four corrections (three underlined
+"rr4" = W = o in ll. 7, 15, 16; l. 7 "H M G +" and l. 17 end). R5586 read share 0.828 -> 0.833; family B 0.887.
+What keeps R5586 low is not the transcription but the text: damaged and creased edges (end of ll. 9, 11, 12 lost in folds and
+holes), an erased word in l. 13, and the date line "dd o+ T o+ bb 6" in signs outside the letter key (numerals?). The decryption
+reads in sentences where the paper is whole (`famB/read86.txt`).
+Family B gaps now: physical damage in R5586 (outside blocker for those few words), the numeral-like signs (6, 10, dd, bb, o+), and
+the reader review. Measured 0.887 with a strict segmenter that counts chancery spellings as unread.
