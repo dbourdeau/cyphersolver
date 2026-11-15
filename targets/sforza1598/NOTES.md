@@ -290,3 +290,30 @@ Context: Nicodemo (Tranchedini, Sforza agent in Florence?), Giovanni Galeazzo, m
 and Corsica point to the 1470s-80s; not checked against dated sources. Status: R5562 read as sentences on a first-pass
 transcription; a few words open. Next: re-check the doubtful spots on the image, measure the read share, and decrypt the other six
 family B slips (R5572, R5573, R5575-R5577, R5586) with this key.
+
+## 15 Nov 2026 (later): family B, five more slips decrypted with the R5562 key unchanged
+Key `famB/keyB.json` (solved on R5562 only), applied without any re-solve. Dictionary cover with words of 4+ letters (same signs
+shuffled in brackets): R5562 0.65 (0.15), R5576 0.67 (0.15), R5572 0.64 (0.17), R5577 0.65 (0.10), R5575 0.60 (0.16), R5586 0.64 (0.16).
+Decryptions `famB/dec*.txt`; each reads as continuous Italian (cover below 1.0 because the measure skips short words and names):
+- R5576 (452 signs, complete): "Non vi ho scripto de la venuta de Iohan Galeasmo in questa terra perche non era al fine ... meser
+  Ludovico ha avuto da Firense ... del consiglio ducale ... uno doctore mio parente venuto ieri da Firense mi diceva aver inteso da uno
+  residente in quela cita per il duca di Modena che el conte Guido Rangone per venir presto di qua mandato dal suo duca ... Sarsane
+  die septe iunii etcetera."
+- R5572 (407 signs, complete): "Meser Ludovico ha mandato a Sena uno Bartolomeo Borella ... per intendere e praticare ... madona
+  duchessa gubernatore ... retenendo in lei castelleto ... per via de Piero de Cosmo ... Tomasino manda uno Marcelino in Corsica per
+  sulevare li Corsi ... cum madona qualche composicione honesta ... Sarsane tredese martii etcetera."
+- R5577 (577 signs, complete): "De qua non accade altro al presente se non che meser Ludovico e Tomasino sono in molte diferentie e
+  ogni volta piu cresce l'odio e la difidentia fra loro. El podesta de Ponsano ... io andero questo septembre a Volterra per observare
+  la fede ... finito lo oficio tornero ... io bisogno de ducati quaranta per espedire certi mei strecti bisogni ... pregare madona et el
+  signore ... bon servidore de le vostre illustrissime signorie. Sarsane die decimoseptimo iulii etcetera." (two digit-signs 6, 10 left
+  as written.)
+- R5575 (first 12 lines, 592 signs): "Respondo a la vostra ricevuta heri; Nicodemo va sempre confortato meser Ludovico circa la
+  specialita del signore ... la electione di la cancelaria di Volterra la quale acceptai non per voglia ... ogni sinistro ... el tempo
+  non comincia fino a octobre ... seguiro l'ordine nostro cum Nicodemo."
+- R5586 (first 6 lines, 348 signs): "... cum Fiorentini non e stata alcuna ... per parte de meser Ludovico ... dato al signore tale
+  aviso ... suspecto ... certi ... dato aviso a Nicodemo ... meser Ludovico a uscire."
+Setting: the writer is at Sarzana (dated "Sarsane", 5 Dec, 7 June, 13 March, 17 July), reports to the duchess and duke (madona e el
+signore) on messer Ludovico, Tomasino (Fregoso) and Corsica, Florence, Siena and Volterra; Nicodemo is his correspondent or channel.
+That fits the regency of Bona of Savoy and Gian Galeazzo (1476-80) with Ludovico in exile, but the dating is not checked.
+Status: family B read on a first-pass transcription (six letters, key from the ciphertext alone, confirmed on five letters it was not
+fitted on). Not yet done: R5573 (full page), the rest of R5575 and R5586, word-level review against the images, measured read share.
