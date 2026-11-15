@@ -324,3 +324,8 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **JACAR:** the 2,122 body-text records are being scanned by `sweep_2026-11-15_jacar_retry/scan1.py rest_refs.txt` (first 73 empty); the three Waseda leads of the retry sweep are now merged through wave 13.
 - **Not reached:** Latin American national archive catalogues, South Africa, Sri Lanka, Ethiopia, Philippines.
 
+
+## Chrome wave 14 (15 Nov 2026, `sweep_2026-11-15_chrome_wave14`)
+- **OAC `cifrado`:** now behind a "confirm you are human" check; not clicked. Still the only OAC term not run.
+- **Memoria Chilena** re-run with cifra/cifrado/clave cifrada/en cifra/escritura secreta/criptografía: noise only. **eHive** cipher: royal cyphers only.
+- **Not reached, no open item search found:** AGN Colombia (host does not resolve), AGN Argentina/Peru/Uruguay/Venezuela/Cuba, Philippines, Macau, South Africa (NAAIRS, Cory), Sri Lanka, Ethiopia, Dar al-Kutub, BOA katalog, NLI. 0 leads.
