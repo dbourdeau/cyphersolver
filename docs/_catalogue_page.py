@@ -219,6 +219,51 @@ def progress(e):
     return _claims.in_progress(CLAIMS.get(e['id'], []))
 
 
+# ---------- pictures ----------
+# An open entry carries no image of its own. Where a target folder works on it, or a piece of it is written up, the site
+# already holds a crop from that work (docs/thumbs/<slug>_<name>-480.webp, made for the write-up): the catalogue borrows
+# it for the row and the "start with" strip. The credit stays on the write-up, which the entry's page links.
+def _thumbs():
+    by = {}
+    try: idx = json.loads((HERE / 'thumbs' / 'index.json').read_text(encoding='utf-8'))
+    except FileNotFoundError: return by
+    for src, rec in idx.items():
+        if 480 in rec.get('w', []) and '_' in src and '/' not in src:
+            by.setdefault(src.split('_', 1)[0], []).append(src)
+    return by
+
+
+THUMBS = _thumbs()
+IMG_PREF = ('snip', 'cipher', 'opening', 'head', 'lead')      # which of a folder's figures shows the cipher best
+
+
+def entry_image(e):
+    """(thumbnail path, folder it comes from) for an entry a folder or a write-up has a figure for, else None."""
+    slugs = ([c[0] for c in CLAIMS.get(e['id'], [])] + [x[3] for x in SOLVED.get(e['id'], []) if x[3]]
+             + [(e.get('writeup') or '').removesuffix('.html')])
+    for sl in slugs:
+        names = THUMBS.get(sl)
+        if not names: continue
+        n = min(names, key=lambda n: (next((i for i, w in enumerate(IMG_PREF) if w in n), len(IMG_PREF)), n))
+        return f'thumbs/{pathlib.PurePosixPath(n).with_suffix("").as_posix()}-480.webp', sl
+    return None
+
+
+def year_label(e):
+    """The short date a row shows: '1740', '1605–28', '1898–1900'. The full date is on the entry's page and in the tooltip."""
+    ys = re.findall(r'(?<!\d)(1[3-9]\d\d)(?!\d)', str(e.get('date') or ''))
+    if not ys: return str(e['year']) if e.get('year') else 'undated'
+    a, b = min(ys), max(ys)
+    return a if a == b else f'{a}–{b[2:]}' if a[:2] == b[:2] else f'{a}–{b}'
+
+
+def meter(e):
+    """Three small bars beside the priority: importance, solvability, difficulty (each 1 to 5)."""
+    return (f'<span class="mx" title="importance {e["importance"]} of 5 · solvability {e["solvability"]} of 5 · difficulty {e["difficulty"]} of 5">'
+            f'<i style="height:{e["importance"] * 20}%"></i><i style="height:{e["solvability"] * 20}%"></i>'
+            f'<i class="df" style="height:{e["difficulty"] * 20}%"></i></span>')
+
+
 def parts_html(e):
     """Links to the write-ups of pieces of an open entry that already have an outcome (README rows citing its number)."""
     L, seen = [], set()
@@ -232,6 +277,9 @@ def parts_html(e):
 # The table shows one thin row per cipher; everything else, with the instructions for an AI agent, is on the
 # cipher's own page, docs/solve/<id>.html, so a helper can hand an agent one URL (feedback of 26 Oct 2026).
 SITE = 'https://cyphersolver.com/'
+# the faint band behind the title: two lines of an open cipher, Höpken's despatch of 15/26 January 1740 from
+# Constantinople (catalogue no. 1771; targets/hopken1740/bare_332_336.txt, frame 332 right, lines 6 and 8)
+SIGNS = '1578 1633 1066 1450 1723 1332 1802 1392 1195 1455 1474 1749 1502 1602 1255 1230 1211 1251'
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 CLASS_TEXT = {
     'A': 'a sibling letter with a decipherment is in the same volume or series, so matching it is the first move',
@@ -320,19 +368,21 @@ def row(e):
     seen = '<span class="seen img" title="viewed on the image">●</span>' if seen_image(e) else '<span class="seen cat" title="catalogue description only">◇</span>'
     tip = f' title="being worked in targets/{", targets/".join(f for f, _, _ in progress(e))}/"' if progress(e) else ''
     hk = help_kind(e)
-    pill = (f'<span class="pill help-{hk}" title="{esc(HELP[hk][1])}">{HELP[hk][0]}</span>'
-            f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>')
+    # "Help solve" is the default and goes unmarked; the two other kinds of help keep their label
+    pill = ((f'<span class="pill help-{hk}" title="{esc(HELP[hk][1])}">{HELP[hk][0]}</span>' if hk != 'solve' else '')
+            + f'<span class="pill{" att" if e.get("outcome") or tip else ""}"{tip}>{esc(short_outcome(e))}</span>')
     pill += ''.join(f'<span class="pill {FLAG_PILLS[c][0]}" title="{FLAG_PILLS[c][1]}">{FLAG_PILLS[c][2]}</span>' for c in flags(e))
     link = ''.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)[:1])
     r = RP.info(RP.of(e))
+    g = entry_image(e)
+    th = f'<img class="th" src="{g[0]}" alt="" loading="lazy" title="from the work on {g[1]}">' if g else ''
     return (f'<tr class="e" data-id="{e["id"]}" data-href="{href}">'
-            f'<td class="prio"><b>{priority(e):.1f}</b></td>'
-            f'<td class="date">{esc(e["date"])}<span class="num">no. {e["id"]}</span></td>'
-            f'<td class="item"><a class="t" href="{href}">{seen} {esc(e["title"])}</a>{pill}<span class="sub">{esc(e["why"])}</span></td>'
+            f'<td class="prio"><b>{priority(e):.1f}</b>{meter(e)}</td>'
+            f'<td class="date" title="{html.escape(str(e["date"]))}"><b>{esc(year_label(e))}</b><span class="num">no. {e["id"]}</span></td>'
+            f'<td class="item">{th}<a class="t" href="{href}">{seen} {esc(e["title"])}</a>{pill}<span class="sub">{esc(e["why"])}</span></td>'
             f'<td class="shelf"><span class="ar" title="{html.escape(arch_place(r))}">{esc(r.get("short") or r["name"])}</span>'
             f'<span class="sm" title="{html.escape(e["shelfmark"])}">{esc(e["shelfmark"])}</span>{link}</td>'
-            f'<td class="sc">{dots(e["importance"])}</td><td class="sc">{dots(e["solvability"])}</td><td class="sc">{dots(e["difficulty"], "diff")}</td>'
-            f'<td class="cls"><span class="badge {e["cls"]}">{e["cls"]}</span></td></tr>')
+            f'<td class="cls"><span class="badge {e["cls"]}" title="{esc(CLASS_TEXT.get(e["cls"], ""))}">{e["cls"]}</span></td></tr>')
 
 
 def arch_place(r):
@@ -499,6 +549,45 @@ def summary_html(E, keys, n_gone, prs):
             f'Before starting, read the entry&rsquo;s page and the work still in review: {prl}</div>\n</div>')
 
 
+def featured_html(E, keys, n=10):
+    """The strip above the list: the highest-priority desk-ready ciphers that have a picture, each a card."""
+    pool = sorted(((e, entry_image(e)) for e, k in zip(E, keys) if in_view(k, 'try')), key=lambda x: (-priority(x[0]), x[0]['id']))
+    pick = [(e, g) for e, g in pool if g][:n]
+    if len(pick) < 4: return ''
+    def card(e, g):
+        r = RP.info(RP.of(e))
+        return (f'<a class="fc" href="{entry_href(e)}"><span class="fi"><img src="{g[0]}" alt="" loading="lazy"></span>'
+                f'<span class="fm"><b>{priority(e):.1f}</b><span>{esc(year_label(e))}</span><span class="badge {e["cls"]}">{e["cls"]}</span></span>'
+                f'<span class="ft">{esc(e["title"])}</span><span class="fa">{esc(r.get("short") or r["name"])} · no. {e["id"]}</span></a>')
+    return (f'<h2 id="start">{len(pick)} to start with</h2>\n'
+            f'<p class="vdesc">The highest-priority ciphers that can be tried from a desk and already have a page photographed here. '
+            f'Each picture is a crop from the work on that cipher or on a piece of the same series; its source is credited on the linked pages.</p>\n'
+            f'<div class="fstrip">{"".join(card(e, g) for e, g in pick)}</div>\n')
+
+
+# archive towns the gazetteer does not have, [lat, lon] (approximate, for a ring on the map)
+MAP_TOWNS = {'College Park, Maryland': [38.99, -76.94], 'Santiago': [-33.45, -70.67], 'Kraków': [50.06, 19.94], 'Nepomuk': [49.49, 13.58],
+             'Arnhem': [51.98, 5.91], 'Zámrsk': [50.00, 16.13], 'Cluj-Napoca': [46.77, 23.59], 'Aarau': [47.39, 8.05],
+             'Frankfurt': [50.11, 8.68], 'Marbach am Neckar': [48.94, 9.26], 'Nantes': [47.22, -1.55], 'Osnabrück': [52.28, 8.05],
+             'Fort Meade, Maryland': [39.11, -76.74], 'Cleveland': [41.50, -81.69], 'Astrakhan': [46.35, 48.04], 'Haverford': [40.01, -75.30],
+             'Jakarta': [-6.21, 106.85], 'Riverside, California': [33.95, -117.40], 'Newton, Massachusetts': [42.34, -71.21],
+             'Asunción': [-25.28, -57.64], 'Łódź': [51.76, 19.46], 'Richmond': [37.54, -77.44], 'Uppsala': [59.86, 17.64],
+             'Rochester, New York': [43.16, -77.61]}
+
+
+def towns_of(used):
+    """({repository id: town}, {town: [lat, lon]}) for the repositories whose town can be placed. The town is named
+    as repositories.json names it; the coordinates come from the atlas gazetteer the To the Archive map uses."""
+    import _archives_page as AR
+    names, _ = AR.gazetteer()
+    town, coords = {}, {}
+    for rid in used:
+        c = RP.info(rid).get('city') or ''
+        xy = MAP_TOWNS.get(c) or names.get(c) or names.get(c.split(',')[0].strip())
+        if c and xy: town[rid] = c; coords[c] = xy
+    return town, coords
+
+
 def gone_html(gone):
     """The numbers that have left, as compact links grouped by outcome method (the README section that holds them)."""
     by = {}
@@ -515,9 +604,10 @@ def gone_html(gone):
                    for m in sorted(by, key=lambda m: -len(by[m])))
 
 
-def sources_html(E):
-    """Where the open entries are held, by country, and how they were found."""
+def sources_html(E, town):
+    """Where the open entries are held: a map of the archive towns, the list by country folded under it, and how they were found."""
     n = collections.Counter(RP.of(e) for e in E)
+    n_placed = sum(k for rid, k in n.items() if rid in town)
     by = {}
     for rid, k in n.items(): by.setdefault(RP.info(rid).get('country') or '', []).append((rid, k))
     def a(rid, k):
@@ -536,8 +626,20 @@ def sources_html(E):
     labels = collections.Counter(e.get('source') or 'unknown' for e in E)
     every = ' · '.join(f'{esc(s)}&nbsp;<b>{k}</b>' for s, k in sorted(labels.items(), key=lambda x: (-x[1], x[0])))
     return f'''<h2 id="where">Where the ciphers are</h2>
-<p class="lede">The {len(E)} open entries are held by <b>{n_rep}</b> archives, libraries and collections in <b>{len(cs)}</b> countries; {sum(k for r, k in n.items() if RP.info(r)['kind'] == 'print')} are known only from a printed edition and {sum(k for r, k in n.items() if RP.info(r)['kind'] == 'unknown')} sit in an archive not yet identified. Click an archive to list its ciphers. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/repositories.json" rel="noopener">repositories.json</a>.</p>
+<p class="lede">The {len(E)} open entries are held by <b>{n_rep}</b> archives, libraries and collections in <b>{len(cs)}</b> countries; {sum(k for r, k in n.items() if RP.info(r)['kind'] == 'print')} are known only from a printed edition and {sum(k for r, k in n.items() if RP.info(r)['kind'] == 'unknown')} sit in an archive not yet identified. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/repositories.json" rel="noopener">repositories.json</a>.</p>
+<p class="am-lede jsonly">{n_placed} of the {len(E)} are drawn at the town of their archive, in {len(set(town.values()))} towns. A ring grows with the ciphers held there and follows the filters and the years chosen above; click one to list only its ciphers.</p>
+<div class="amap-wrap jsonly">
+  <div class="amap" id="cmap">
+    <span class="am-count" id="cmapn"></span>
+    <button type="button" class="am-world" id="cmworld" hidden></button>
+    <div class="am-zoom" role="group" aria-label="Zoom the map"><button type="button" id="cmzin" aria-label="Zoom in">+</button><button type="button" id="cmzout" aria-label="Zoom out">&minus;</button><button type="button" id="cmzreset" aria-label="Reset the map">&#8634;</button></div>
+  </div>
+  <aside class="am-side" id="cmapside" aria-live="polite"></aside>
+</div>
+<details class="archlist"><summary>All {n_rep} archives, by country</summary>
+<p class="d">Click an archive to list its ciphers.</p>
 <div class="archidx">{rows}</div>
+</details>
 <h3 class="fh">How they were found</h3>
 <ul class="found">{found}</ul>
 <details class="every"><summary>All {len(labels)} searches, with the entries each found</summary><p>{every}</p></details>
@@ -560,7 +662,7 @@ if(hm&&G[hm[1]]){var hn=document.getElementById('hashnote');hn.innerHTML='Catalo
 var PAGE=30,GROUPS=8,ROWS_PER_GROUP=3;
 var tb=document.querySelector('#cat tbody'),tw=document.getElementById('tw'),gp=document.getElementById('gonep'),more=document.getElementById('more'),bar=document.getElementById('cbar'),top=document.getElementById('list'),cf=document.querySelector('.cfilters'),lg=document.querySelector('.legend'),vd=document.getElementById('vdesc');
 var tabs=[].slice.call(document.querySelectorAll('.views [data-v]')),gli=[].slice.call(gp.querySelectorAll('li[data-q]')),gsec=[].slice.call(gp.querySelectorAll('section.gm'));
-var state={v:'try',q:'',sort:'prio',dir:-1,w:{imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease},f:{},n:PAGE,g:GROUPS};
+var state={v:'try',q:'',yr:null,sort:'prio',dir:-1,w:{imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease},f:{},n:PAGE,g:GROUPS};
 var chips=[].slice.call(document.querySelectorAll('.chip[data-facet]')),clr=document.getElementById('reset'),qi=document.getElementById('q'),dds=[].slice.call(document.querySelectorAll('.cfilters details.dd'));
 dds.forEach(function(d){d.addEventListener('toggle',function(){if(!d.open)return;dds.forEach(function(o){if(o!==d)o.open=false;});
  var p=d.querySelector('.pop');p.style.left='';p.style.right='';if(p.getBoundingClientRect().right>document.documentElement.clientWidth-8){p.style.left='auto';p.style.right='0';}});});
@@ -572,71 +674,104 @@ function inView(e,v){var a=e.f.access;if(v==='try')return a.indexOf('online')>=0
 function vals(e,k){var v=e.f[k];return v==null?[]:[].concat(v);}
 function hit(e,k){var s=state.f[k];if(!s||!s.length)return true;var v=vals(e,k);return s.some(function(x){return v.indexOf(x)>=0;});}
 function texthit(e){if(!state.q)return true;var a=A[e.r]||[];var h=e._h||(e._h=(e.id+' '+e.t+' '+e.w+' '+e.s+' '+e.d+' '+e.y+' '+a[3]+' '+a[1]+' '+(e.q||'')).toLowerCase());return h.indexOf(state.q)>=0;}
-function match(e,skip){if(!texthit(e))return false;for(var k in state.f)if(k!==skip&&!hit(e,k))return false;return true;}
+function yhit(e){var r=state.yr;return !r||(e.y&&e.y>=r[0]&&e.y<r[1]+10);}
+function match(e,skip){if(!texthit(e))return false;if(skip!=='yr'&&!yhit(e))return false;for(var k in state.f)if(k!==skip&&!hit(e,k))return false;return true;}
 // each chip's count: entries it would show in this view, given every other facet and the search
 function counts(){var c={},ks={};chips.forEach(function(b){c[b.dataset.facet+'|'+b.dataset.val]=0;ks[b.dataset.facet]=1;});
  Object.keys(ks).forEach(function(k){E.forEach(function(e){if(inView(e,state.v)&&match(e,k))vals(e,k).forEach(function(v){var x=k+'|'+v;if(x in c)c[x]++;});});});
  chips.forEach(function(b){var on=(state.f[b.dataset.facet]||[]).indexOf(b.dataset.val)>=0,n=c[b.dataset.facet+'|'+b.dataset.val];b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('.n').textContent=n;b.classList.toggle('z',!n&&!on);});}
 function labels(){dds.forEach(function(d){var ks=(d.dataset.dd||'').split(' '),on=[];ks.forEach(function(k){(state.f[k]||[]).forEach(function(v){var b=d.querySelector('.chip[data-facet="'+k+'"][data-val="'+v+'"]');if(b)on.push(b.firstChild.textContent);});});
  d.querySelector('.dv').textContent=on.length?(on.length>2?on.length+' chosen':on.join(', ')):'';d.classList.toggle('act',on.length>0);});}
-function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.q)p.push('q='+encodeURIComponent(state.q));if(p.length||state.v!=='try')p.unshift('v='+state.v);
+function save(){var p=[];for(var k in state.f)if(state.f[k].length)p.push(k+'='+state.f[k].map(encodeURIComponent).join(','));if(state.yr)p.push('yr='+state.yr[0]+'-'+(state.yr[1]+9));if(state.q)p.push('q='+encodeURIComponent(state.q));if(p.length||state.v!=='try')p.unshift('v='+state.v);
  try{history.replaceState(null,'',p.length?'#'+p.join('&'):location.pathname);}catch(x){}}
 // a link with filters and no view (writeups.html sends #lang=french) opens on all open entries, as before the views
 function load(){var h=location.hash.slice(1),sv=0;if(h==='gone'){state.v='gone';return;}if(h.indexOf('=')<0)return;h.split('&').forEach(function(kv){var i=kv.indexOf('=');if(i<1)return;var k=kv.slice(0,i),v=decodeURIComponent(kv.slice(i+1));
- if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else if(k==='v'){if(D.views[v]){state.v=v;sv=1;}}else state.f[k]=v.split(',').filter(Boolean);});if(!sv)state.v='all';}
+ if(k==='q'){state.q=v.toLowerCase();qi.value=v;}else if(k==='yr'){var ym=/^(\d{4})-(\d{4})$/.exec(v);if(ym)state.yr=[Math.floor(ym[1]/10)*10,Math.floor(ym[2]/10)*10];}else if(k==='v'){if(D.views[v]){state.v=v;sv=1;}}else state.f[k]=v.split(',').filter(Boolean);});if(!sv)state.v='all';}
 var SK={year:'y',title:'t',importance:'i',solvability:'so',difficulty:'df',cls:'c'};
 function key(e){var s=state.sort;if(s==='prio')return prio(e);if(s==='cls'||s==='title')return e[SK[s]];return +e[SK[s]];}
 function sorter(a,b){var x=key(a),y=key(b);if(x<y)return -1*state.dir;if(x>y)return 1*state.dir;return a.id-b.id;}
-function nf0(){var n=0;for(var k in state.f)n+=state.f[k].length;return n;}
+function nf0(){var n=state.yr?1:0;for(var k in state.f)n+=state.f[k].length;return n;}
+function wipe(){state.q='';state.f={};state.yr=null;qi.value='';}
 var HELP=D.help,FP=D.flags;
 function dots(v,c){var s='<span class="dots'+(c?' '+c:'')+'" title="'+v+' of 5">';for(var i=0;i<5;i++)s+='<i class="'+(i<v?'on':'')+'"></i>';return s+'</span>';}
 // the same markup as row() in _catalogue_page.py
 function row(e){var href=e.h||('solve/'+e.id+'.html'),a=A[e.r]||['','','',''];
- var p='<span class="pill help-'+e.k+'" title="'+esc(HELP[e.k][1])+'">'+HELP[e.k][0]+'</span><span class="pill'+(e.at?' att':'')+'"'+(e.pg?' title="being worked in targets/'+esc(e.pg)+'/"':'')+'>'+esc(e.o)+'</span>';
+ var p=(e.k==='solve'?'':'<span class="pill help-'+e.k+'" title="'+esc(HELP[e.k][1])+'">'+HELP[e.k][0]+'</span>')+'<span class="pill'+(e.at?' att':'')+'"'+(e.pg?' title="being worked in targets/'+esc(e.pg)+'/"':'')+'>'+esc(e.o)+'</span>';
  (e.x||'').split('').forEach(function(c){var f=FP[c];p+='<span class="pill '+f[0]+'" title="'+esc(f[1])+'">'+f[2]+'</span>';});
  var ln=e.l?(e.l[1]?'<a href="'+esc(e.l[1])+'" rel="noopener">'+esc(e.l[0])+'</a>':esc(e.l[0])):'';
  var seen=e.im?'<span class="seen img" title="viewed on the image">●</span>':'<span class="seen cat" title="catalogue description only">◇</span>';
- return '<tr class="e" data-id="'+e.id+'" data-href="'+href+'"><td class="prio"><b>'+prio(e).toFixed(1)+'</b></td><td class="date">'+esc(e.d)+'<span class="num">no. '+e.id+'</span></td>'
- +'<td class="item"><a class="t" href="'+href+'">'+seen+' '+esc(e.t)+'</a>'+p+'<span class="sub">'+esc(e.w)+'</span></td>'
+ return '<tr class="e" data-id="'+e.id+'" data-href="'+href+'"><td class="prio"><b>'+prio(e).toFixed(1)+'</b><span class="mx" title="importance '+e.i+' of 5 · solvability '+e.so+' of 5 · difficulty '+e.df+' of 5"><i style="height:'+e.i*20+'%"></i><i style="height:'+e.so*20+'%"></i><i class="df" style="height:'+e.df*20+'%"></i></span></td>'
+ +'<td class="date" title="'+esc(e.d)+'"><b>'+esc(e.yl)+'</b><span class="num">no. '+e.id+'</span></td>'
+ +'<td class="item">'+(e.g?'<img class="th" src="'+esc(e.g[0])+'" alt="" loading="lazy" title="from the work on '+esc(e.g[1])+'">':'')+'<a class="t" href="'+href+'">'+seen+' '+esc(e.t)+'</a>'+p+'<span class="sub">'+esc(e.w)+'</span></td>'
  +'<td class="shelf"><span class="ar" title="'+esc(a[4])+'">'+esc(a[0])+'</span><span class="sm" title="'+esc(e.s)+'">'+esc(e.s)+'</span>'+ln+'</td>'
- +'<td class="sc">'+dots(e.i)+'</td><td class="sc">'+dots(e.so)+'</td><td class="sc">'+dots(e.df,'diff')+'</td><td class="cls"><span class="badge '+e.c+'">'+e.c+'</span></td></tr>';}
+ +'<td class="cls"><span class="badge '+e.c+'" title="'+esc(D.cls[e.c]||'')+'">'+e.c+'</span></td></tr>';}
 function btn(act,label){return '<button type="button" class="chip" data-act="'+act+'">'+label+'</button>';}
 function render(keep){
  var v=state.v,nf=nf0();
  tabs.forEach(function(t){var tv=t.dataset.v,n=tv==='gone'?gli.filter(function(li){return !state.q||li.dataset.q.indexOf(state.q)>=0;}).length:E.filter(function(e){return inView(e,tv)&&match(e);}).length;
   t.setAttribute('aria-selected',tv===v?'true':'false');t.querySelector('.n').textContent=n;});
  vd.innerHTML=D.views[v];bar.classList.toggle('vgone',v==='gone');
- lg.hidden=v==='gone';
+ lg.hidden=v==='gone';tl.hidden=v==='gone';
  if(v==='gone'){tw.hidden=true;gp.hidden=false;more.innerHTML='';var n=0;
   gli.forEach(function(li){var ok=!state.q||li.dataset.q.indexOf(state.q)>=0;li.hidden=!ok;if(ok)n++;});gsec.forEach(function(s){s.hidden=!s.querySelector('li:not([hidden])');});
-  document.getElementById('count').textContent=(state.q?n+' of '+gli.length:gli.length)+' numbers';clr.hidden=!state.q;clr.textContent='clear search';if(!keep)save();return;}
+  document.getElementById('count').textContent=(state.q?n+' of '+gli.length:gli.length)+' numbers';clr.hidden=!state.q;clr.textContent='clear search';if(!keep)save();changed();return;}
  tw.hidden=false;gp.hidden=true;
  var L=E.filter(function(e){return inView(e,v)&&match(e);}).sort(sorter),base=E.filter(function(e){return inView(e,v);}).length,h='',m='';
  var ga=state.f.arch&&state.f.arch.length===1;
  if(v==='archive'&&!ga){var g={},order=[];L.forEach(function(e){if(!g[e.r]){g[e.r]=[];order.push(e.r);}g[e.r].push(e);});
   order.sort(function(a,b){return g[b].length-g[a].length||(A[a][0]<A[b][0]?-1:1);});
   order.slice(0,state.g).forEach(function(r){var rs=g[r],a=A[r];
-   h+='<tr class="grp"><td colspan="8"><b>'+esc(a[3])+'</b>'+(a[1]?' <span>'+esc(a[1]+(a[2]&&a[1].indexOf(a[2])<0?', '+a[2]:''))+'</span>':'')+' <span class="gn">'+rs.length+'</span></td></tr>';
+   h+='<tr class="grp"><td colspan="5"><b>'+esc(a[3])+'</b>'+(a[1]?' <span>'+esc(a[1]+(a[2]&&a[1].indexOf(a[2])<0?', '+a[2]:''))+'</span>':'')+' <span class="gn">'+rs.length+'</span></td></tr>';
    rs.slice(0,ROWS_PER_GROUP).forEach(function(e){h+=row(e);});
-   if(rs.length>ROWS_PER_GROUP)h+='<tr class="gmore"><td colspan="8"><button type="button" class="chip" data-arch="'+r+'">all '+rs.length+' at '+esc(a[0])+' &rarr;</button></td></tr>';});
+   if(rs.length>ROWS_PER_GROUP)h+='<tr class="gmore"><td colspan="5"><button type="button" class="chip" data-arch="'+r+'">all '+rs.length+' at '+esc(a[0])+' &rarr;</button></td></tr>';});
   if(order.length>state.g)m=btn('g','Show '+Math.min(GROUPS,order.length-state.g)+' more archives')+'<span class="d">'+(order.length-state.g)+' archives not shown</span>';}
  else{L.slice(0,state.n).forEach(function(e){h+=row(e);});
   if(L.length>state.n)m=btn('n','Show '+Math.min(PAGE,L.length-state.n)+' more')+btn('all','Show all '+L.length)+'<span class="d">'+state.n+' of '+L.length+' shown</span>';}
- tb.innerHTML=h||'<tr><td colspan="8" class="none">Nothing matches. <button type="button" class="chip" data-act="clear">clear the filters</button></td></tr>';more.innerHTML=m;
+ tb.innerHTML=h||'<tr><td colspan="5" class="none">Nothing matches. <button type="button" class="chip" data-act="clear">clear the filters</button></td></tr>';more.innerHTML=m;
  var msrt=document.getElementById('msort');if(msrt)msrt.value=state.sort;
  document.getElementById('count').textContent=(L.length===base?base:L.length+' of '+base)+' ciphers';
  clr.hidden=!(nf||state.q);clr.textContent=nf?'clear '+nf+' filter'+(nf>1?'s':''):'clear search';
- counts();labels();if(!keep)save();
+ counts();labels();timeline();if(!keep)save();changed();
  document.getElementById('v_imp').textContent=state.w.imp.toFixed(2);document.getElementById('v_sol').textContent=state.w.sol.toFixed(2);document.getElementById('v_eas').textContent=state.w.eas.toFixed(2);
  [].forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(th){th.setAttribute('aria-sort',th.dataset.sort===state.sort?(state.dir<0?'descending':'ascending'):'none');});}
 function reset(){state.n=PAGE;state.g=GROUPS;}
-function go(v,f,scroll){state.v=v;if(f){state.f=f;state.q='';qi.value='';}reset();render();if(scroll)top.scrollIntoView({block:'start'});}
+// the timeline: one bar per decade, stacked desk / archive / unchecked, counting what the view, the search and the other
+// filters leave; dragging across it keeps those years (state.yr, the first and the last decade)
+var tl=document.getElementById('tl'),tlb=document.getElementById('tlb'),tlx=document.getElementById('tlx'),tllab=document.getElementById('tllab'),tlclr=document.getElementById('tlclr');
+var YS=E.map(function(e){return e.y;}).filter(Boolean),Y0=Math.floor(Math.min.apply(null,YS)/10)*10,ND=Math.floor(Math.max.apply(null,YS)/10)-Y0/10+1,tbars=[],drag=null;
+(function(){var h='',x='';for(var i=0;i<ND;i++)h+='<span class="tb"><i class="u"></i><i class="a"></i><i class="d"></i></span>';tlb.innerHTML=h;tbars=[].slice.call(tlb.children);
+ for(var c=Math.ceil(Y0/100)*100;c<Y0+ND*10;c+=100)x+='<span style="left:'+((c-Y0)/10/ND*100)+'%">'+c+'</span>';tlx.innerHTML=x;})();
+function timeline(){var n=[],mx=1,tot=0,r=drag||(state.yr&&[(state.yr[0]-Y0)/10,(state.yr[1]-Y0)/10]);for(var i=0;i<ND;i++)n.push([0,0,0]);
+ E.forEach(function(e){if(!e.y||!inView(e,state.v)||!match(e,'yr'))return;var i=Math.floor(e.y/10)-Y0/10;n[i][inView(e,'try')?0:inView(e,'archive')?1:2]++;});
+ n.forEach(function(c){mx=Math.max(mx,c[0]+c[1]+c[2]);});
+ tbars.forEach(function(b,i){var c=n[i],k=b.children,on=!r||(i>=r[0]&&i<=r[1]);k[2].style.height=c[0]/mx*100+'%';k[1].style.height=c[1]/mx*100+'%';k[0].style.height=c[2]/mx*100+'%';
+  b.classList.toggle('off',!on);b.title=(Y0+i*10)+'s: '+(c[0]+c[1]+c[2])+' cipher'+(c[0]+c[1]+c[2]===1?'':'s');if(on)tot+=c[0]+c[1]+c[2];});
+ tllab.innerHTML=r?'<b>'+(Y0+r[0]*10)+'–'+(Y0+r[1]*10+9)+'</b> · '+tot+' dated cipher'+(tot===1?'':'s'):'<b>'+Math.min.apply(null,YS)+'–'+Math.max.apply(null,YS)+'</b> by decade · drag across the bars to keep only those years';
+ tlclr.hidden=!state.yr;}
+function tli(ev){var b=tlb.getBoundingClientRect();return Math.max(0,Math.min(ND-1,Math.floor((ev.clientX-b.left)/b.width*ND)));}
+tlb.addEventListener('pointerdown',function(ev){if(ev.button)return;var i=tli(ev);drag=[i,i];drag.a=i;try{tlb.setPointerCapture(ev.pointerId);}catch(x){}timeline();ev.preventDefault();});
+tlb.addEventListener('pointermove',function(ev){if(!drag)return;var i=tli(ev);drag[0]=Math.min(drag.a,i);drag[1]=Math.max(drag.a,i);timeline();});
+function tlend(ev){if(!drag)return;var a=Y0+drag[0]*10,b=Y0+drag[1]*10,same=state.yr&&state.yr[0]===a&&state.yr[1]===b;drag=null;state.yr=(ev.type==='pointercancel')?state.yr:same?null:[a,b];reset();render();}
+tlb.addEventListener('pointerup',tlend);tlb.addEventListener('pointercancel',tlend);
+tlclr.addEventListener('click',function(){state.yr=null;reset();render();});
+// the map (catmap.js) reads the list through this: ciphers per town under the search, the years and every filter but the
+// archive, the town the archive filter amounts to, and the archives of that town
+function townOf(r){return (A[r]||[])[5]||'';}
+function changed(){if(window.catList.onchange)window.catList.onchange();}
+window.catList={towns:D.towns,onchange:null,
+ counts:function(){var c={};E.forEach(function(e){if(match(e,'arch')){var t=townOf(e.r);c[t]=(c[t]||0)+1;}});return c;},
+ place:function(){var s=state.f.arch;if(!s||!s.length||state.v==='gone')return null;var t=townOf(s[0]);return t&&s.every(function(r){return townOf(r)===t;})?t:null;},
+ archives:function(t){var n={};E.forEach(function(e){if(townOf(e.r)===t&&match(e,'arch'))n[e.r]=(n[e.r]||0)+1;});return Object.keys(n).map(function(r){return {id:r,name:A[r][3],n:n[r]};}).sort(function(a,b){return b.n-a.n;});},
+ pick:function(t){if(t===null)delete state.f.arch;else state.f.arch=Object.keys(A).filter(function(r){return townOf(r)===t;});state.v='all';reset();render();},
+ only:function(r){state.f.arch=[r];state.v='all';reset();render();},
+ show:function(){top.scrollIntoView({block:'start'});}};
+function go(v,f,scroll){state.v=v;if(f){wipe();state.f=f;}reset();render();if(scroll)top.scrollIntoView({block:'start'});}
 tabs.forEach(function(t){t.addEventListener('click',function(ev){ev.preventDefault();go(t.dataset.v);});});
 [].forEach.call(document.querySelectorAll('a[data-go]'),function(a){a.addEventListener('click',function(ev){ev.preventDefault();go(a.dataset.go,a.dataset.status?{status:[a.dataset.status]}:{},true);});});
 [].forEach.call(document.querySelectorAll('.archidx a[data-arch]'),function(a){a.addEventListener('click',function(ev){ev.preventDefault();go('all',{arch:[a.dataset.arch]},true);});});
 [].forEach.call(document.querySelectorAll('.found a[data-src]'),function(a){a.addEventListener('click',function(ev){ev.preventDefault();go('all',{source:[a.dataset.src]},true);});});
 tb.addEventListener('click',function(ev){var b=ev.target.closest('button');
- if(b){if(b.dataset.arch){state.f.arch=[b.dataset.arch];reset();render();top.scrollIntoView({block:'start'});}else if(b.dataset.act==='clear'){state.q='';state.f={};qi.value='';reset();render();}return;}
+ if(b){if(b.dataset.arch){state.f.arch=[b.dataset.arch];reset();render();top.scrollIntoView({block:'start'});}else if(b.dataset.act==='clear'){wipe();reset();render();}return;}
  if(ev.target.closest('a'))return;var r=ev.target.closest('tr.e');if(!r)return;if(ev.ctrlKey||ev.metaKey)window.open(r.dataset.href);else location.href=r.dataset.href;});
 more.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b)return;var a=b.dataset.act;if(a==='n')state.n+=PAGE;else if(a==='all')state.n=1e9;else if(a==='g')state.g+=GROUPS;render(true);});
 [].forEach.call(document.querySelectorAll('#cat th[data-sort]'),function(th){th.addEventListener('click',function(){var s=th.dataset.sort;if(state.sort===s)state.dir=-state.dir;else{state.sort=s;state.dir=(s==='year'||s==='title'||s==='cls'||s==='difficulty')?1:-1;}render();});});
@@ -647,9 +782,13 @@ var qt;qi.addEventListener('input',function(ev){clearTimeout(qt);var v=ev.target
  var s=document.createElement('select');s.id='msort';s.setAttribute('aria-label','Sort by');[['prio','Sort: priority'],['year','Sort: date'],['title','Sort: name'],['importance','Sort: importance'],['solvability','Sort: solvability'],['difficulty','Sort: difficulty']].forEach(function(o){var x=document.createElement('option');x.value=o[0];x.textContent=o[1];s.appendChild(x);});
  s.addEventListener('change',function(){state.sort=s.value;state.dir=(s.value==='year'||s.value==='title'||s.value==='difficulty')?1:-1;render();});qi.after(s);})();
 [['w_imp','imp'],['w_sol','sol'],['w_eas','eas']].forEach(function(p){document.getElementById(p[0]).addEventListener('input',function(ev){state.w[p[1]]=ev.target.value/100;render();});});
-clr.addEventListener('click',function(){state.q='';state.f={};qi.value='';reset();render();});
+clr.addEventListener('click',function(){wipe();reset();render();});
 document.getElementById('wreset').addEventListener('click',function(){state.sort='prio';state.dir=-1;state.w={imp:D.weights.importance,sol:D.weights.solvability,eas:D.weights.ease};document.getElementById('w_imp').value=state.w.imp*100;document.getElementById('w_sol').value=state.w.sol*100;document.getElementById('w_eas').value=state.w.eas*100;render();});
 var qm=/[?&]q=([^&#]+)/.exec(location.search);if(qm){var qv=decodeURIComponent(qm[1].replace(/\+/g,' '));qi.value=qv;state.q=qv.trim().toLowerCase();}
+// the header: a random desk-ready cipher, and the tile numbers counting up once
+var deal=document.getElementById('deal');if(deal)deal.addEventListener('click',function(){var L=E.filter(function(e){return inView(e,'try');}),e=L[Math.floor(Math.random()*L.length)];if(e)location.href=e.h||'solve/'+e.id+'.html';});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)[].forEach.call(document.querySelectorAll('.tiles .tile b'),function(b){var n=+b.textContent;if(!n)return;
+ var t0=Date.now(),iv=setInterval(function(){var p=Math.min(1,(Date.now()-t0)/800);b.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p>=1)clearInterval(iv);},16);b.textContent='0';});
 if(hm&&G[hm[1]])state.v='gone';else load();
 render(!location.hash||hm||location.hash.indexOf('=')<0);
 if(hm&&G[hm[1]]){var gi=document.getElementById('e'+hm[1]+'g');if(gi)gi.classList.add('hit');document.getElementById('hashnote').scrollIntoView();}
@@ -661,12 +800,13 @@ else if(location.hash.indexOf('=')>0||location.hash==='#gone')top.scrollIntoView
 def data_entry(e, k):
     """What the page script reads of an entry, under short keys (the page embeds all of them)."""
     rid = RP.of(e)
-    d = {'id': e['id'], 't': e['title'], 'd': e['date'], 'y': e['year'], 'w': e['why'], 's': e['shelfmark'],
+    d = {'id': e['id'], 't': e['title'], 'd': e['date'], 'y': e['year'], 'yl': year_label(e), 'w': e['why'], 's': e['shelfmark'],
          'i': e['importance'], 'so': e['solvability'], 'df': e['difficulty'], 'c': e['cls'], 'r': rid, 'k': help_kind(e),
          'o': short_outcome(e), 'f': k,
          'q': ' '.join(str(x) for x in (e['correspondents'], e['place'], e['region'], e['language'], e.get('known') or '', e.get('open') or '') if x)}
     if flags(e): d['x'] = flags(e)
     if seen_image(e): d['im'] = 1
+    if entry_image(e): d['g'] = list(entry_image(e))
     if e.get('outcome') or progress(e): d['at'] = 1
     if progress(e): d['pg'] = ', targets/'.join(f for f, _, _ in progress(e))
     if entry_href(e) != solve_href(e): d['h'] = entry_href(e)
@@ -685,11 +825,12 @@ def build_html():
     counted = [e for e in E if e['counted'] and is_open(e)]
     langs = [(l.lower(), l) for l in CAT_LANGS] + [('other', 'other'), ('unknown', 'unknown')]
     used = sorted({RP.of(e) for e in E})
+    town, coords = towns_of(used)
     arch = {rid: [RP.info(rid).get('short') or RP.info(rid)['name'], RP.info(rid).get('city') or '', RP.info(rid).get('country') or '',
-                  RP.info(rid)['name'], arch_place(RP.info(rid))] for rid in used}
+                  RP.info(rid)['name'], arch_place(RP.info(rid)), town.get(rid, '')] for rid in used}
     n_arch = collections.Counter(k['arch'] for k in keys)
     arch_vals = [(rid, arch[rid][0]) for rid in sorted(used, key=lambda r: (-n_arch[r], arch[r][0]))]
-    data_js = json.dumps({'weights': W, 'arch': arch, 'help': HELP, 'flags': {c: list(v) for c, v in FLAG_PILLS.items()},
+    data_js = json.dumps({'weights': W, 'arch': arch, 'towns': coords, 'cls': CLASS_TEXT, 'help': HELP, 'flags': {c: list(v) for c, v in FLAG_PILLS.items()},
                           'views': {v: d for v, _, d in VIEWS},
                           'entries': [data_entry(e, k) for e, k in zip(E, fk)]},
                          ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
@@ -711,20 +852,25 @@ def build_html():
 <body id="top" class="nojs">
 <!-- site:nav -->
 
-<section class="hero">
+<section class="hero" data-signs="{SIGNS}">
   <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {len(gone)} moved out to <a href="writeups.html">write-ups</a> · entries last checked {fmt_day(AS_OF)}</p>
   <h1>The Unsolved <span class="stk">Catalogue<a class="sticker" href="#list" title="Pick a cipher below"><span><b>Help<br>Solve!</b><small>pick one below</small></span></a></span></h1>
   <p class="sub">Historical cipher letters that nobody has read. Pick one, open its page, and give that page&rsquo;s address to your AI agent: the page holds the sources, what has been tried and the instructions.</p>
-  <ol class="steps"><li><b>1</b>pick a row</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back what it finds</li></ol>
+  <ol class="steps"><li><b>1</b>pick a row</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back what it finds</li><li class="jsonly"><button type="button" class="deal" id="deal" title="Open one of the ciphers that can be tried from a desk, picked at random">Deal me a cipher</button></li></ol>
 {summary_html(E, keys, len(gone), prs)}
 </section>
 
 <main>
 <div id="hashnote" hidden></div>
-<h2 id="list">The ciphers</h2>
+{featured_html(E, keys)}<h2 id="list">The ciphers</h2>
 <div class="cbar" id="cbar">
 <nav class="views jsonly" role="tablist" aria-label="Which ciphers">{tabs}</nav>
 <p class="vdesc" id="vdesc">{VIEWS[0][2]}</p>
+<div class="tl jsonly" id="tl">
+  <div class="tlh"><span id="tllab"></span><button type="button" class="chip" id="tlclr" hidden>all years</button></div>
+  <div class="tlb" id="tlb" role="img" aria-label="The ciphers by decade. Drag across the bars to keep only those years; the Century filter does the same from the keyboard."></div>
+  <div class="tlx" id="tlx" aria-hidden="true"></div>
+</div>
 <div class="cfilters jsonly" role="search">
   <input type="search" id="q" placeholder="Search: name, place, archive, shelfmark, year…" aria-label="Search the catalogue">
   {dropdown('Archive', facet('country', 'Country', by_count(keys, 'country', last=('none',)), keys) + facet('arch', 'Archive', arch_vals, keys), 'country arch')}
@@ -748,17 +894,16 @@ def build_html():
 </div>
 
 <div class="tw" id="tw"><table class="cat" id="cat">
-<colgroup><col class="c-prio"><col class="c-date"><col class="c-item"><col class="c-shelf"><col class="c-sc"><col class="c-sc"><col class="c-sc"><col class="c-cls"></colgroup>
+<colgroup><col class="c-prio"><col class="c-date"><col class="c-item"><col class="c-shelf"><col class="c-cls"></colgroup>
 <thead><tr>
-<th class="prio" data-sort="prio" aria-sort="descending">Priority</th><th data-sort="year">Date</th><th data-sort="title">Cipher</th><th>Where</th>
-<th class="sc" data-sort="importance">Import.</th><th class="sc" data-sort="solvability">Solvab.</th><th class="sc" data-sort="difficulty">Difficulty</th><th class="cls" data-sort="cls">Class</th>
+<th class="prio" data-sort="prio" aria-sort="descending">Priority</th><th data-sort="year">Year</th><th data-sort="title">Cipher</th><th>Where</th><th class="cls" data-sort="cls">Class</th>
 </tr></thead>
 <tbody>
 {"".join(row(e) for e in first)}
 </tbody></table></div>
 <div class="more jsonly" id="more"></div>
 <noscript><p class="vdesc">Without JavaScript only the {len(first)} highest-priority entries that can be worked from a desk are listed. The whole catalogue is in <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md">CATALOGUE.md</a>, and every entry has its own page at solve/&lt;number&gt;.html.</p></noscript>
-<div class="legend"><span>click a row for its page</span><span>● viewed on the image</span><span>◇ catalogue description only</span><span>gold dots importance / solvability</span><span>red dots difficulty</span><span>class A sibling deciphered · B partial key in print · C no key</span></div>
+<div class="legend"><span>click a row for its page</span><span>● viewed on the image</span><span>◇ catalogue description only</span><span><span class="mx" aria-hidden="true"><i style="height:80%"></i><i style="height:100%"></i><i class="df" style="height:40%"></i></span> importance, solvability, difficulty (red), each 1 to 5</span><span>class A sibling deciphered · B partial key in print · C no key</span><span>no label: help solve</span></div>
 
 <div class="gonep" id="gonep">
 <h3 id="gone">Numbers that have left the catalogue <span class="n">{len(gone)}</span></h3>
@@ -766,7 +911,7 @@ def build_html():
 {gone_html(gone)}
 </div>
 
-{sources_html(E)}
+{sources_html(E, town)}
 
 <h2 id="about">About the catalogue</h2>
 <p>Historical cipher documents that nobody has read: ciphertext with no decipherment known in the document itself, in DECODE, in Tomokiyo&rsquo;s and Lasry&rsquo;s lists, in the edition or in the literature. It began with the French diplomatic volumes on Gallica and the records DECODE marks not decrypted, and grew through sweeps of archive portals, finding aids and printed calendars (<a href="#where">where the ciphers are</a>). Since the October 2026 sweeps a new find enters only after vetting: the ciphertext seen, prior art searched, keys recorded, duplicates checked; the rest wait as leads. {len(counted)} entries are counted targets, {len(E) - len(counted)} are noted only.</p>
@@ -781,6 +926,9 @@ def build_html():
 <!-- site:footer -->
 <script id="catdata" type="application/json">{data_js}</script>
 <script>{CAT_JS.replace('__GONE__', gone_js)}</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
+<script src="catmap.js" defer></script>
 </body>
 </html>
 '''
