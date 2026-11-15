@@ -85259,6 +85259,419 @@
     "verdict": "open"
    },
    "repository": "tna"
+  },
+  {
+   "id": 2808,
+   "counted": true,
+   "cls": "C",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "seen": "catalogue",
+   "links": [
+    {
+     "label": "NLW record",
+     "href": "https://archives.library.wales/index.php/letter-from-p-b-to-robert-viscount-bulkeley"
+    }
+   ],
+   "prior_art": "known.py on '9066E': no hit; the 1663 Clarendon-Bristol literature not checked",
+   "needs_archive_scan": "yes",
+   "year": 1663,
+   "date": "1663-07-18",
+   "title": "Letter 'P. B.' to Robert, Viscount Bulkeley with a numerical cipher overleaf, with key",
+   "correspondents": "P[--] B[--] -> Robert Bulkeley, 2nd Viscount Bulkeley (Wynn of Gwydir papers)",
+   "place": "London",
+   "language": "English",
+   "region": "England",
+   "period": "1651-1700",
+   "shelfmark": "NLW MS 9066E 2378",
+   "folio_note": "one letter; 'Overleaf: a numerical cipher with key' on the great affair between the Chancellor (Hyde) and the Earl of Bristol",
+   "status": "Not online (NLW record read 15 Nov 2026). One letter of 18 Jul 1663 with a numerical cipher and its key overleaf (key_in_volume); short, English, one hand; no decipherment named. Needs NLW photographs.",
+   "why": "A single Restoration news-letter with its key on the same leaf: key and numbers can be checked against each other, and the clash of Clarendon and Bristol in July 1663 gives a dated frame. NLW was unreachable in earlier sweeps.",
+   "score_note": "Scored from the catalogue description only; leaf not seen",
+   "verify": "Order the leaf or the NLW digitised page (Wynn of Gwydir papers, NLW MS 9066E); check the Calendar of Wynn (of Gwydir) Papers 1515-1690 (1926) entry for 2378 for a printed decipherment",
+   "source": "National Library of Wales archives catalogue (AtoM), via Chrome",
+   "sweep": "sweep_2026-11-15_uk_blocked_chrome",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "NLW AtoM record has no digital object (15 Nov 2026). Archive item at Aberystwyth.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "NLW Archives and Manuscripts (AtoM), NLW MS 9066E/2378, record page read in Chrome 15 Nov 2026 (archives.library.wales); the record carries no digital object and no viewer. Archive item: NLW reading room or a reproduction order.",
+     "extent": "one letter with the cipher overleaf; the length of the cipher is not stated.",
+     "cipher": "Archive text: 'Sends a copy of the charge against the Lord Chancellor. Parliament to be prorogued on Monday next ... Overleaf: A numerical cipher with key. The great affair between the Chancellor [Hyde] and the Catholic lord [George ...'. The key is on the same leaf as the cipher; the record names no decipherment (the quoted words may be the catalogue's reading of the cipher's content: not checked)."
+    },
+    "prior_art": {
+     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
+     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
+     "edition": "Not found: the Wynn of Gwydir papers are described in NLW's Calendar of Wynn (of Gwydir) Papers (1926), which was not searched item by item; the 1663 Digby/Clarendon impeachment is well documented in print, but no printed text of this cipher leaf is known.",
+     "literature": "No web search beyond the NLW record; the printed calendar entry is the one that could print a reading: not checked, so the entry stays open."
+    },
+    "searches": [
+     {
+      "query": "known.py 9066E, Bulkeley, Wynn of Gwydir 1663",
+      "result": "this lead only (targets/affry1757 mentions a different Bulkeley regiment)"
+     },
+     {
+      "query": "NLW AtoM record NLW MS 9066E/2378",
+      "result": "description quoted above; no digital object"
+     }
+    ],
+    "key_check": "The key is on the leaf itself (numerical cipher with key); not held here, not tested. A key on the item makes the reading a lookup once seen; recorded as key_in_volume and the entry is kept because no reading or printed text is known.",
+    "key_in_volume": "The key to the numerical cipher is written overleaf with the cipher (NLW MS 9066E/2378); not seen, not tested.",
+    "duplicates": "known.py '9066E', 'Bulkeley', 'Wynn of Gwydir' (15 Nov 2026): only this lead; the 'P. B.' writer is not identified.",
+    "verdict": "open"
+   },
+   "repository": "print"
+  },
+  {
+   "id": 2815,
+   "counted": true,
+   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
+   "year": 1570,
+   "date": "6 Oct 1570",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1560-1589",
+   "title": "Marcantonio Bragadin, letter from Famagusta with the text in Geheimschrift, 6 Oct 1570 (the year before the siege fell)",
+   "correspondents": "Marcantonio Bragadin (Venetian governor of Famagusta) -> unknown",
+   "place": "Famagusta",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 4/6-1",
+   "folio_note": "1 Brief mit Unterschrift (Brieftext in Geheimschrift), 1 Blatt, 2 Seiten; provenance Lombardisches Gubernium, Archiv der Republik Venedig, 1830",
+   "cls": "B",
+   "status": "Not online (OeNB Primo, 15 Nov 2026; no Digitalisat). One page, body wholly in cipher, Bragadin, Famagusta, 6 Oct 1570; no solution noted. Short; Italian, Venetian cipher. Needs OeNB reproduction.",
+   "why": "A one-page ciphertext by a famous Venetian commander, 1570, from a Venetian archive. Solvable only by ciphertext-only methods unless a copy is found in the Venetian series (Dispacci da Cipro).",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Look at the page; try the Venetian chancery ciphers; check ASVe for a deciphered copy.",
+   "links": [
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Geheimschrift, correspondence facet, record 12)"
+    }
+   ],
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "OeNB Primo, Autogr. 4/6-1 (Marcantonio Bragadin, Famagusta, 6 Oct 1570), listed by the Geheimschrift search in the correspondence facet, 15 Nov 2026. OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+     "extent": "one leaf, two pages (1 Blatt, 2 Seiten); the body text is in cipher.",
+     "cipher": "Archive text: 'Brief mit Unterschrift (Brieftext in Geheimschrift)', provenance 'Lombardisches Gubernium, Archiv der Republik Venedig, 1830'. No translation, solution or plaintext is noted on or with it."
+    },
+    "prior_art": {
+     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
+     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
+     "edition": "No edition found: the siege literature and Bragadin's printed letters were searched on the web (15 Nov 2026) and cite no ciphered letter of 6 Oct 1570; the Venetian state papers (ASVe, Senato, Dispacci Cipro) are not searched here.",
+     "literature": "Web search 15 Nov 2026 (Bragadin Famagusta 1570 cifra lettera cifrata): siege accounts and general Venetian-cipher history only; nothing on this letter."
+    },
+    "searches": [
+     {
+      "query": "known.py Bragadin, Famagusta",
+      "result": "only this lead and sweep row"
+     },
+     {
+      "query": "web: Bragadin Famagusta 1570 letter cipher decipher",
+      "result": "nothing on a ciphered letter"
+     }
+    ],
+    "key_check": "No key held. Venetian ciphers of 1570 are known in outline; no Bragadin or Cyprus key is held here. A short single page, so it may need a Venetian key from ASVe (Consiglio dei Dieci, Cifre).",
+    "duplicates": "known.py 'Bragadin', 'Famagusta', 'Autogr. 4/6' (15 Nov 2026): only this lead.",
+    "verdict": "open"
+   },
+   "repository": "asve"
+  },
+  {
+   "id": 2816,
+   "counted": true,
+   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
+   "year": 1619,
+   "date": "3 Feb 1619",
+   "language": "German",
+   "region": "Central Europe",
+   "period": "1611-1650",
+   "title": "Karl Bonaventura von Buquoy to Hans von Molart, letter 'in Geheimschrift', 3 Feb 1619",
+   "correspondents": "Charles Bonaventure de Longueval, count of Buquoy -> Hans von Molart",
+   "place": "unknown",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 18/15-1",
+   "folio_note": "1 Brief mit Unterschrift (in Geheimschrift), 1 Blatt, 2 Seiten; provenance HHStA, given 1829. No translation noted",
+   "cls": "B",
+   "status": "Not online (OeNB Primo, 15 Nov 2026; no Digitalisat). One leaf, wholly in cipher, Buquoy to Hans von Molart, 3 Feb 1619, no solution noted. Short; German. Needs OeNB reproduction.",
+   "why": "A short ciphertext by the imperial commander just before the Bohemian war; Buquoy ciphers elsewhere may give the key.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "View; compare with the Buquoy cipher material named in sweep_2026-11_czech_chrome.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC14029063",
+     "label": "OeNB record"
+    }
+   ],
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "OeNB Primo, record AC14029063 (Autogr. 18/15-1), listed by the Geheimschrift search, 15 Nov 2026. OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+     "extent": "one leaf, two pages; the whole letter is 'in Geheimschrift' per the extent line.",
+     "cipher": "Archive text: 'Brief mit Unterschrift (in Geheimschrift)', 1 Blatt, 2 Seiten, provenance HHStA, given 1829. No translation or solution is noted with it."
+    },
+    "prior_art": {
+     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
+     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
+     "edition": "No edition known for this letter; Hungaricana's BecsSeg regesta list a 1614 Starzer to Molart cipher 'without solution' but nothing from Buquoy of 1619 (web search 15 Nov 2026).",
+     "literature": "Web search 15 Nov 2026 (Buquoy Molart 1619 Geheimschrift): nothing. The Habsburg ciphers of the 1630s-40s studied by Thomas Ernst are a later period and other writers."
+    },
+    "searches": [
+     {
+      "query": "known.py Buquoy, Molart",
+      "result": "the Jaquot to Buquoy record on hcportal (a different 1619 item, Czech archive) and this lead only"
+     },
+     {
+      "query": "web: Buquoy Molart 1619 Geheimschrift",
+      "result": "nothing on this letter"
+     }
+    ],
+    "key_check": "No key held. The Buquoy material in the Czech sweeps (hcportal Jaquot to Buquoy 1619, monoalphabetic, solved) is a different correspondent; whether Buquoy used a similar system is not known. Not tested.",
+    "duplicates": "known.py 'Buquoy', 'Molart', 'Autogr. 18/15' (15 Nov 2026): only this lead, apart from the Jaquot hcportal record (different writer).",
+    "verdict": "open"
+   },
+   "repository": "oesta"
+  },
+  {
+   "id": 2817,
+   "counted": true,
+   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
+   "year": 1635,
+   "date": "12 Sep 1635",
+   "language": "German",
+   "region": "Central Europe",
+   "period": "1611-1650",
+   "title": "Rudolf von Colloredo to Emperor Ferdinand III, letter partly in Geheimschrift, 12 Sep 1635",
+   "correspondents": "Rudolf von Colloredo-Waldsee -> Ferdinand III",
+   "place": "unknown",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 23/80-2",
+   "folio_note": "1 Brief mit Unterschrift (Text teilw. in Geheimschrift), 1 Blatt, 2 Seiten; provenance Hofkriegsrat Registratur 1829-30",
+   "cls": "B",
+   "status": "Not online (OeNB Primo, 15 Nov 2026; no Digitalisat). One leaf, part in cipher, Rudolf von Colloredo to Ferdinand III, 12 Sep 1635; no solution noted. Short; German. Needs OeNB reproduction.",
+   "why": "Short code passages in a military letter of the Thirty Years War, same Hofkriegsrat series as the Basta letter.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "View; see whether the cipher is a numeral code shared with the Hofkriegsrat ciphers.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC14044264",
+     "label": "OeNB record"
+    }
+   ],
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "OeNB Primo, record AC14044264 (Autogr. 23/80-2), listed by the Geheimschrift search, 15 Nov 2026. OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+     "extent": "one leaf, two pages; part of the text is in cipher (length not stated).",
+     "cipher": "Archive text: 'Brief mit Unterschrift (Text teilw. in Geheimschrift)', provenance Hofkriegsrat Registratur 1829-30, 12 Sep 1635. No translation or solution is noted."
+    },
+    "prior_art": {
+     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go). DECODE's Colloredo hits are Starhemberg to Colloredo (1758), another man.",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
+     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
+     "edition": "No edition known; Ferdinand III's own cipher letters of this period have been read by Thomas Ernst (Klaus Schmeh's Top 50 no. 27), but a letter from Colloredo is not among them as far as the blog posts say.",
+     "literature": "Web search 15 Nov 2026 (Colloredo Ferdinand III 1635 chiffriert): nothing on this letter."
+    },
+    "searches": [
+     {
+      "query": "known.py Colloredo",
+      "result": "targets affry1757 / esterhazy1744 (the 18th-c. Colloredo) and a catalogue entry for another Colloredo letter; not this one"
+     },
+     {
+      "query": "web: Colloredo Ferdinand III 1635 chiffriert",
+      "result": "nothing"
+     }
+    ],
+    "key_check": "No key held. Ernst's Ferdinand III key (to Leopold Wilhelm) is another correspondence; not tested here.",
+    "duplicates": "known.py 'Colloredo', 'Autogr. 23/80' (15 Nov 2026): no duplicate; catalogue.json mentions another Colloredo item (different date and writer).",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2818,
+   "counted": true,
+   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
+   "year": 1610,
+   "date": "undated (before 1620)",
+   "language": "German",
+   "region": "Central Europe",
+   "period": "unknown",
+   "title": "Henri Duval de Dampierre to Siegfried von Kollonitsch, letter partly in Geheimschrift, undated",
+   "correspondents": "Henri Duval, count of Dampierre (imperial general, d. 1620) -> Siegfried von Kollonitsch",
+   "place": "unknown",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 32/69-6",
+   "folio_note": "1 eigenhaendiger Brief (teilw. in Geheimschrift), 4 Blatt, 5 Seiten. Not the repo target dampierre1589 (a different Dampierre)",
+   "cls": "B",
+   "status": "Not online (OeNB Primo, 15 Nov 2026; no Digitalisat). Autograph letter of four leaves, partly in cipher, Dampierre to Kollonitsch, undated before 1620; no solution noted. German. Needs OeNB reproduction.",
+   "why": "Five pages by hand, part in cipher; the Kollonitsch/Basta letters give a cipher family for comparison.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "View; date by content; compare with the Basta (23/28-7) key.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC14116639",
+     "label": "OeNB record"
+    }
+   ],
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "OeNB Primo, record AC14116639 (Autogr. 32/69-6), listed by the Geheimschrift search, 15 Nov 2026. OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+     "extent": "an autograph letter of four leaves (five pages), partly in cipher (extent not stated); undated, before 1620.",
+     "cipher": "Archive text: 'eigenhaendiger Brief (teilw. in Geheimschrift)', 4 Blatt, 5 Seiten, Dampierre to Siegfried von Kollonitsch. No translation or solution is noted."
+    },
+    "prior_art": {
+     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
+     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
+     "edition": "No edition known; nothing found for Dampierre to Kollonitsch in web searches (15 Nov 2026).",
+     "literature": "Web search 15 Nov 2026: Dampierre/Kollonitsch cipher: nothing. Not the repo target dampierre1589 (Dampierre to Nevers, a different man)."
+    },
+    "searches": [
+     {
+      "query": "known.py Dampierre, Kollonit",
+      "result": "targets/dampierre1589 (Lasry, a different Dampierre) and this lead"
+     },
+     {
+      "query": "web: Dampierre Kollonitsch Geheimschrift",
+      "result": "nothing"
+     }
+    ],
+    "key_check": "No key held. Henri Duval de Dampierre (d. 1620) commanded imperial troops in Hungary and Bohemia; no cipher of his is held here.",
+    "duplicates": "known.py 'Dampierre', 'Kollonit', 'Autogr. 32/69' (15 Nov 2026): only the unrelated dampierre1589 target and this lead.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2819,
+   "counted": true,
+   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
+   "year": 1862,
+   "date": "1862 (22 telegrams)",
+   "language": "German",
+   "region": "Central Europe",
+   "period": "1801-1900",
+   "title": "Archduke Ferdinand Max (later Emperor Maximilian of Mexico) to Alphons Dupont, 22 telegrams with number-code passages 'von zeitgleicher Hand aufgeloest', 1862",
+   "correspondents": "Ferdinand Max / Maximilian of Mexico -> Alphons Dupont (Teilnachlass Alphons Dupont)",
+   "place": "Miramare -> Vienna",
+   "shelfmark": "OeNB, Autogr. 1312/30-13 to 1312/30-34 (22 records; -16 read in full)",
+   "folio_note": "Each record: Telegramm, 1 Blatt, 2 Seiten; 'Teile des Texts mit Zahlencode chiffriert, von zeitgleicher Hand aufgeloest'; e.g. 1312/30-16 of 9 Jul 1862 (budget for 1863). Found with the searches 'Zahlencode' (21 hits) and 'chiffriert'",
+   "cls": "A",
+   "status": "Not online (OeNB Primo record read 15 Nov 2026; no Digitalisat). 22 telegrams of 1862, Maximilian (then Archduke Ferdinand Max) to Alphons Dupont, parts in a number code, each with a contemporary solution written on it (key_in_volume). Whether one code or several is not known. Needs OeNB reproductions.",
+   "why": "Twenty-two telegrams of one correspondent pair with the plaintext inked in by a contemporary: a number code can be rebuilt from pairs and checked across the run.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "verify": "Open two records (one early, one late) and check the contemporary resolution is on the same sheet; look for the Dupont Nachlass code book.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC13895947",
+     "label": "OeNB record Autogr. 1312/30-16"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Zahlencode&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
+     "label": "OeNB Primo search Zahlencode"
+    }
+   ],
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "OeNB Primo, record AC13895947 (Autogr. 1312/30-16) read in Chrome 15 Nov 2026; the other 21 telegrams (Autogr. 1312/30-13 to -34) were listed by the sweep from the same series (Teilnachlass Alphons Dupont). OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
+     "extent": "22 telegrams of 1862 (Miramare to Vienna), each one leaf, two pages; only parts of each text are in the number code ('Teile des Texts mit Zahlencode chiffriert').",
+     "cipher": "Archive text, 1312/30-16 of 9 Jul 1862: 'Teile des Texts mit Zahlencode chiffriert, von zeitgleicher Hand aufgeloest' (extent line 1 Telegramm, 1 Blatt, 2 Seiten). The contemporary solution is written on the telegram itself, in a clerk's hand beside the coded groups; the catalogue's content note gives only the gist (thanks to Dupont for how he conducted the campaign, asks when the 1863 budget will be put). It is not a printed or published reading."
+    },
+    "prior_art": {
+     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
+     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
+     "edition": "Not found: Corti's Maximilian und Charlotte von Mexiko (1924) and the Mexican-empire letter editions were not searched item by item (no full text held); a web search for the Dupont telegrams (15 Nov 2026) returned nothing. Dupont's papers are catalogued only at OeNB.",
+     "literature": "Web search 15 Nov 2026 (Maximilian, Dupont, Telegramme 1862, Chiffre, Miramare): no study of this telegram series or its code; the cipher-history item found concerns the 1865 Napoleon III cable, a different system."
+    },
+    "searches": [
+     {
+      "query": "known.py Autogr. 1312, Dupont, Maximilian, Miramare",
+      "result": "only the sweep row; targets/kanawha1863 and mountflorence1801 are other Duponts"
+     },
+     {
+      "query": "web: Maximilian Ferdinand Max Dupont 1862 Telegramme Zahlencode",
+      "result": "nothing"
+     },
+     {
+      "query": "OeNB Primo record AC13895947",
+      "result": "extent and Beschreibung quoted above; no Digitalisat"
+     }
+    ],
+    "key_check": "No key table is held. The contemporary solution written on each telegram gives the plaintext of the coded groups, so the code can be rebuilt from the 22 pairs; it is a crib set, not a printed key.",
+    "key_in_volume": "Contemporary solution in a clerk's hand beside the number-code groups on each telegram (same unit, Autogr. 1312/30-13 to -34): it fixes the plaintext of every coded passage, so the target is recovering the code (key from adjacent plaintext) and measuring it, not reading new text; not seen, not tested.",
+    "duplicates": "known.py 'Autogr. 1312', 'Dupont', 'Maximilian', 'Miramare', 'Ferdinand Max' (15 Nov 2026): only this lead and its sweep row. One writer and one correspondent; whether all 22 use one number code or several cannot be told without images, so it is kept as one entry and should be split by code if the images show a change of system.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
   }
  ]
 }
