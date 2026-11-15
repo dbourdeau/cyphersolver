@@ -162,7 +162,7 @@
     "statistical test",
     "language-model scoring"
    ],
-   "what": "Held-out test written before the run (tests/PREREGISTRATION.md): shifts chosen on the first 350 letters only, (7, 8, 10), key frozen (sha256 70077576...ce6f); on the last 301 letters -4.0950 against at most -4.6513 for 200 shuffled keys (0 of 200 as good); declare, profession, relligion, cause, assure, assistance, army, under, byron in the machine reading.",
+   "what": "Held-out test written before the run (tests/PREREGISTRATION.md): shifts chosen on the first 350 letters only, (7, 8, 10), key frozen (sha256 70077576...ce6f); on the last 301 letters -4.0950 against at most -4.6513 for 200 shuffled keys (0 of 200 as good); declare, profession, relligion, cause, assure, assistance, army, under, byron in the machine reading. 58 of the 636 read letters lie outside the tested key (shift 20: 35, shift 11: 18, values added by hand: 5; scripts/sure_words.py).",
    "result": "worked"
   },
   {
@@ -191,7 +191,7 @@
    "what": "Packaging: governor of Rennes in 1594 looked up: René Marec de Montbarot (captain and governor of Rennes 1583-1605; lieutenant of the King for the bishopric of Rennes from 1593). No reference found on his religion.",
    "result": "partial"
   },
-  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
   {"date": "2026-11-15", "kind": "literature search", "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.", "result": "ruled out"}
  ],
  "outcome": {
@@ -205,9 +205,9 @@
    "decipherment with ambiguous key"
   ],
   "verification": ["matched control", "independent verification", "historical consistency"],
-  "fraction_read": 0.884,
+  "fraction_read": 0.388,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Strict count by words of the cipher (14 Nov 2026, reading/decryption.txt): 130 words read of 147, where the 17 holes are 5 unread letter runs and the 12 occurrences of person signs and figures inside the letter (55 twice, the m-sign twice, the ho- and oo-signs, 4s, 300 twice, 26 three times), none deciphered. Without the signs, 130 of 135 cipher words (0.963); by letters, 636 of 651 printed cipher letters (0.977). 67 of the 130 words rest on a value chosen by sense and 4 are weak; they count as read.",
+  "fraction_read_source": "Sure words only (README Conventions; reading/sure_words.tsv, written by scripts/sure_words.py, 15 Nov 2026): 57 of 147 (38.8%). A word is sure when every letter is read and comes from the tested key, the shifts (7, 8, 10) frozen before the held-out test, with no value chosen by sense (the printed letter takes its commonest value, covering at least 70% of its uses) and no weak reading. Of the other 90: 38 words are allowed by the tested key but take a value chosen by sense, 29 need a letter outside it (shift 20, shift 11 or a value added by hand), 6 are weak, 5 are unread letter runs and 12 are the undeciphered person signs and figures (55 twice, the m-sign twice, the ho- and oo-signs, 4s, 300 twice, 26 three times). Daniel Bourdeau's review counts 63 of 147; the six words his count adds are gouuerment, the (A10), he (A10), the (A11), which need a letter outside the tested key, and h and ill, which take the printed roman 'to' as cipher. Our earlier figure, counting every word read: 130 of 147 (0.884); without the signs 130 of 135; by letters 636 of 651 printed cipher letters (0.977).",
   "codes_open": {
    "open": 7,
    "tokens_open": 12
@@ -229,7 +229,7 @@
     "detail": "Only the Hatfield manuscript can confirm them."
    }
   ],
-  "validation": {"date": "2026-11-14", "model": "en-1640s", "file": "validation.tsv", "tokens": 636, "types": 25, "tokens_per_type": 25.44, "score": -2.986, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 12% of read tokens differ from their type's commonest value"},
+  "validation": {"date": "2026-11-15", "model": "en-1640s", "file": "validation.tsv", "tokens": 636, "types": 25, "tokens_per_type": 25.44, "score": -2.986, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 12% of read tokens differ from their type's commonest value"},
   "credits": [
    {
     "who": "ajbeling",
@@ -248,9 +248,9 @@
     "translation": "reading/modernized.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.884,
+    "read_share": 0.388,
     "summary": "Montpensier presses the person shown by sign 55 (probably the duc de Bouillon, by content only) to go with him to Brittany; 55 argues that Brittany could hold correspondence with England, has the Protestants of Poitou beside it and port towns to give the English a footing, that the governor of Rennes will declare himself Protestant, and he hopes for assistance; he will not stay at court while Marshal Biron commands the army.",
-    "note": "Read from the 1892 print, manuscript unseen. 15 letters unread; person signs not deciphered (12 occurrences). Words resting on a value chosen by sense are marked ° and weak words † in reading.md and decryption.txt. 'Modernized' is a modern-English rendering of the cipher passages in context, not a translation.",
+    "note": "read_share: sure words only, 57 of 147 (reading/sure_words.tsv; rule in fraction_read_source); our earlier figure, every word read, was 130 of 147 (0.884). Read from the 1892 print, manuscript unseen. 15 letters unread; person signs not deciphered (12 occurrences). Words resting on a value chosen by sense are marked ° and weak words † in reading.md and decryption.txt. 'Modernized' is a modern-English rendering of the cipher passages in context, not a translation.",
     "reading_review": {
      "grade": "B",
      "by": "Author's agents (Andrew Beling, with AI agents)",
