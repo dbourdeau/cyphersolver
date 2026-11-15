@@ -116,3 +116,20 @@ R5514 0.48, R5517 0.42 (`dec3.txt`); the joint key changes a few rare signs (w, 
 Context from the text: Conte Iacomo (Jacopo Piccinino?) and an "impresa de Urbino", with the writer's cancelliere going back and forth:
 the 1460s Sforza-Piccinino-Montefeltro politics are a candidate setting; not checked against dated letters.
 Remaining: theta and o/O splits, + / t, the rare signs; R5515 and R5502-R5506 not transcribed; no clear-text decipherment checked.
+
+## 15 Nov 2026: key corrected by hand, with R5517 held out
+Objective: word-segmentation log-probability of the decryption (period Italian corpus, unknown letter -14), fitted on R5518 + R5514,
+checked on R5517, which no change was chosen on (`famC/hand/refine.py`, `try1.py`).
+- Blind coordinate ascent (`refine.py`) raised both scores but broke real words ("pigliato" -> "pidliato", "qvale" -> "ivale"): the
+  model penalises rare letters, so it pushes b, g, q signs to common letters. Rejected; every change below was checked in context.
+- Kept against the model: 7 = q (questo, quale, quanto), r = b (beneficio, subito, urbino), 3 = g (grandemente, pigliato).
+- Changed: o = a (was o; "la qual cosa", "ogni altra", "carestia", "impresa"; in R5518 the o-with-stroke sign O = u was merged into o),
+  - = e, w (o-dot-o) = i, t = o, c (ct sign) = i. theta stays t: e = f lowers both scores, so "beneficio" / "fornire" show a second,
+  not yet separated sign.
+Scores (train / holdout): solver key -8020 / -6760; hand key (`key_h2.json`) -7704 / -6335. Word share (4-12 letters): R5518 0.43,
+R5514 0.50, R5517 0.43 (was 0.40; shuffled 0.23). Decryption: `famC/hand/dec_h2.txt`.
+R5517 under the hand key, examples: "la impresa de urbino", "deliberato ... la vostro signoria", "lo mio cancelliero ... conte Iacomo",
+"per la via de ... pratica", "regimenti", "rispondermi", "mandato a dire", "provisionata". R5514: "la qual cosa grandemente me ...
+per adoperar ben del vostro stato", "in questa ... nel paese ... per persone inteligenti", "a roma", "castro", "a cremona".
+Limits: the gain is small (holdout share +3 points); what remains is in the transcription (theta / barred o, + / t, rare signs, merged
+o / O in R5518), which needs another pass on the images, not more key search.
