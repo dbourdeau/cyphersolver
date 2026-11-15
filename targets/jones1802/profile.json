@@ -274,6 +274,60 @@
       "kind": "verification",
       "what": "Existing text files registered in outcome.texts: /49 ct_49.txt with align_1798.tsv and the contemporary clear copy pt_51.txt; /212 and /217 ct_*.txt, decode_*.txt and reading_*.txt (apply.py output already in the folder). No new transcription or reading was made.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis",
+        "plaintext matching"
+      ],
+      "what": "Second contributor (Andrew Beling, with AI agents): the letter-start pages of the code (A 1 ... Z 440, second codes for C and N) fit Entick's New Spelling Dictionary, 1787-1795 settings, with no rescaling (21 of 21 letters within 3 pages). Pre-set word test (25 words, headword on Jones's page): 18 of 25 for 1787 against a mark of 20, a miss.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "plaintext matching"
+      ],
+      "what": "Pre-set tests on 122 fresh groups of table_1798.tsv: on the page 51 of 122 (42%) for 1787 against a mark of 80%, a miss; rule chosen on 15 training groups (printed line, column b continuing at line 40) and frozen; held-out position test on page images of IA ..._1795_0, 14 of 36 exact against a mark of 60% within one line, a miss (shuffled 0 of 36). After the fact: reading a 2 as 4 puts 22 more groups on their exact line, 4 as 2 none.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "transcription",
+      "what": "Pre-set blind test of the 22 disputed groups on the Qatar Digital Library scan of /49: two AI readers read 20 and 22 of 22 as 4 (mark 16), controls 92-100%. Then all of /49 re-read blind by three AI readers (98 of 326 groups differ from ct_49.txt, 126 figures 2 are 4; 4 doubtful) and all of /212 (9 of 580 differ; 2 doubtful): ct_49_reread.txt, ct_212_reread.txt, reread_49.tsv, reread_212.tsv. /217 not re-read.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "plaintext matching"
+      ],
+      "what": "Pre-set confirmation test with the re-read digits and the frozen rule: 101 of 137 /49 groups have their clear-copy word on the exact Entick line (73.7%, mark 60%); 1000 shuffles 0.66% (mark under 10%); secondary figures 68.0% (with bare p,2 groups) and 70.9% (without the 22 disputed groups). Run once.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "key from source",
+      "what": "entick.py looks up every group of /49, /212 (re-read digits) and /217 (as transcribed) in entick_lines.tsv (blind line counts of 186 pages). /212 against this folder's values: H 57 agree, 18 differ (6 of them 50,66 Can for Khan, 5 no sense); M 13 agree, 10 differ; L 2 agree, 16 differ (steward to Superintendent, Shah to Silver, clergy to Bishop, 442,55 Daniel and 442,56 David swapped); 6 open groups filled (443,48 Joseph x3, 239,69 Mine, 53,36 Carry, 48,75,3). /217 after the fact: 18 of 28 word groups on counted pages agree, 15 on pages not counted; 66 of 85 letter groups start their line. Third-number rule (k-th word, part-of-speech abbreviations not counted) fitted after the fact, 6 of 6. Not explained: bare ,2 groups, 12 small-number function words, the I and U letter codes, about 14 words with no sense in place.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "reading",
+      "what": "reading_49_entick.txt, reading_212_entick.txt, reading_217_entick.txt from the dictionary lines; read shares by sure words 0.984 (/212), 0.923 (/217), 0.769 (/49, the test letter). Preliminary: not entered in outcome.texts, no reading_review recorded (left to a reviewer other than the author).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "literature search",
+      "what": "Earlier identification of Jones's code book: none found in Tomokiyo's Cryptiana (code index; Wellington, Drake-Nelson and book-code pages; blog searched for Entick and Harford Jones) or three web searches. Entick is known as a code book of Jay, Arthur Lee, Dana, Burr and the British army (Cryptiana book-code page), not of Jones.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -335,8 +389,16 @@
         "date": "2026-10-29",
         "note": "held-out check of the 1798 table on this folder's files (ct_49, pt_51, align_1798.tsv): table rebuilt from /49 f. 1r only (129 rows), tested on f. 1v: letter groups 0.959 (70 of 73, none wrong) against shuffled-key witnesses max 0.329; word groups 0.179 (too few repeats in two pages to reach a word threshold). Checks this project's reading, which has priority",
         "source": "research/dudout_2026-10-29/CORRECTIONS-FOR-DANIEL-2026-10-29.txt"
+      },
+      {
+        "who": "ajbeling",
+        "role": "identification",
+        "date": "2026-11-15",
+        "note": "identified the code book as Entick's New Spelling Dictionary (setting of IA ..._1795_0; page + printed line), re-read the /49 and /212 digits blind, and looked up every group (entick.py, NOTES section of 15 Nov 2026); with AI agents; no person has checked the readings",
+        "source": "targets/jones1802/NOTES.md, section 'The code book is Entick's New Spelling Dictionary'"
       }
     ],
+    "provenance": "mixed",
     "gaps": [
       {
         "item": "groups with only an M or L value (57 tokens) and 6 open tokens (443,48 x3, 48,75,3, 239,69, 53,36)",
