@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "target": "grantham1778",
+ "title": "Lord Grantham to Lord Weymouth, No. 35, Aranjuez, 18 June 1778: deciphered by the office at the time (SP 94/205); preliminary partial table of the code",
+ "documents": [
+  {
+   "id": "N35",
+   "read": "read",
+   "shelfmark": "The National Archives, Kew, SP 94/205 ff. 268r-268v (received original, with the office decipherment between the lines); duplicate without decipherment: Houghton Library, Harvard, Autograph File G (urn-3:FHCL.HOUGH:38447771; catalogue 1285)",
+   "date": "18 June 1778",
+   "year": 1778,
+   "country": "Great Britain",
+   "route": "Lord Grantham, ambassador in Spain (Aranjuez) -> Lord Weymouth, Secretary of State (London)",
+   "places": {
+    "from": "Aranjuez",
+    "to": "London"
+   },
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "English written between the lines of numbers on the received original by a clerk of the Secretary of State's office on receipt (docket 'R 6 July' 1778): 54 words, the whole coded passage. It is running text, not word over number.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 62,
+    "distinct": 62,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcriptions/n35_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gale State Papers Online images of SP 94/205 saved on site at the Library of Congress by Andrew Beling on 14 Nov 2026 (licensed; not in the repository); read by AI agents on 15 Nov 2026, three readings made without sight of each other agreeing on all 62 numbers and 54 words; the Harvard duplicate read from Harvard's public images on 13 Nov 2026 (the same 62 numbers). No person has checked the readings.",
+    "image_quality": "good",
+    "notes": "Retouched figures on the original: 393, 381, 294 (2941 not excluded)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "code",
+   "nomenclator"
+  ],
+  "summary": "Two-part numerical code of the British Secretary of State's office, numbers 5 to about 4,000 separated by points, with many alternative numbers for common words, single numbers for some names, spelled names, and unmeaning numbers opening and closing passages; not identified with a named code.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-4",
+   "separation": "dots"
+  },
+  "distinct_symbols": 1223,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "word parts"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "notes": "distinct_symbols counts the numbers seen in sixteen despatches (1,209 in the fifteen used for the table, 14 more in No. 35), not the size of the code. 'word parts' and the nulls are inferred from the alignment and from the office rule of 1735 in SP 106/7 ('Begin and End every Sentence You write in Cypher with one or two Nulls at least'); which numbers are nulls or spell names is not established."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The office's decipherment of July 1778 is written between the lines of the received original, The National Archives SP 94/205 f. 268r. The duplicate at Harvard, from which catalogue 1285 was made, has none. No printed text of the despatch was found; Meijide Pardo, Correos maritimos entre Falmouth y La Coruna (1966), pp. 39-40, gives the substance from Simancas.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Andrew Beling found where the original should be, saved the State Papers Online documents on site at the Library of Congress on 14 Nov 2026, and directed the work. Reading, alignment, tests and the second check were done by AI agents. No person has checked any image reading.",
+  "tools": [
+   "image crops read at reading size",
+   "monotone alignment of numbers to the clerk's words across fifteen despatches (scripts/align2.py, scripts/build_table.py)",
+   "order-preserving match with shuffled-table control (scripts/lcs_test.py, scripts/run_test.py)"
+  ],
+  "models": [
+   "claude-fable-5-2",
+   "claude-opus-5-5"
+  ],
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-15"
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Transcribed the 62 numbers of the Harvard duplicate twice (same agent); no decipherment on it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "literature search",
+   "what": "Looked for a crib or key online: none reachable; the received original placed in The National Archives SP 94/205, reachable only through State Papers Online.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "Andrew Beling saved SP 94/205 ff. 267v-270 and seventeen neighbouring items from State Papers Online on site at the Library of Congress. The original of No. 35 carries the office's decipherment between the lines.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "Two AI readers, blind to each other, transcribed the original's numbers, the clerk's English and its place on the page: 62 of 62 numbers, 54 of 54 words; same numbers as Harvard.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "The clerk's English is written word over number, so the 4 first and 15 last numbers, with nothing over them, are unread text.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "Fifteen other deciphered Grantham despatches of January to July 1778 in SP 94/205 transcribed (2,314 numbers, about 2,170 words); flagged lines of numbers read a second time (629 of 650 agree; 30 control lines 239 of 239).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "crib",
+   "technique": [
+    "EM alignment",
+    "crib testing"
+   ],
+   "what": "Aligned each despatch's numbers with its clerk's words in order, sharing a number-to-word table across despatches (No. 35 left out): 263 firm entries of 1,209 numbers seen. Table frozen.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "prediction",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Test A, written beforehand: the frozen table's words for No. 35's numbers matched in order against the clerk's words; mark 60% of covered numbers and above all 200 shuffled tables. 11 of 16 (69%); shuffled highest 6.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Test B, written beforehand and expected to fail: the table's word against the words directly over each number. 0 of 13.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "prediction",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Test C, written beforehand: at least 2 firm entries among the last 15 numbers matched in the last 15 words. 2 covered, 1 matched: a miss.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "reading",
+   "what": "The 62 numbers accounted for against the clerk's 54 words in order: 11 firm, 9 with one or two supporting places, 31 placed by order only, 11 taken as nulls (4 opening, 7 closing).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "verification",
+   "what": "A second AI agent, not shown the work, transcribed No. 35 (62 of 62, 54 of 54) and three of the fifteen despatches (457 of 460 legible numbers, 427 of 427 words the same), re-ran the test (identical), and estimated that about two thirds of the firm entries are right. It could not pair numbers and words independently. Rebuilding the table gave the same best alignment but one different run of sixteen; six entries change grade.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "first_break": false,
+  "method_basis": "The text is the decipherment the Secretary of State's office wrote on the received original in July 1778 (SP 94/205 f. 268r), transcribed here; the partial table comes from the same office's decipherments of fifteen other despatches.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading/n35_reading.txt against transcriptions/n35_clerk_decipherment.txt: 54 of 54 words are the clerk's; no holes. This measures the clerk's text, not the table: by the table alone 11 of the 62 numbers are firm (reading/n35_account.tsv).",
+  "verification": [
+   "contemporary decipherment",
+   "statistical test"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "date": "1778",
+    "note": "A clerk of the Secretary of State's office deciphered the despatch on receipt and wrote the English on the original; the same office's decipherments of fifteen other despatches are the source of the table."
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "date": "2026-11-15",
+    "note": "Andrew Beling, with AI agents. Not an independent solution: the text is the office's decipherment of 1778. Added here: the received original located (SP 94/205 ff. 268r-268v) and transcribed with that decipherment, the comparison with the Harvard duplicate, the 62 numbers accounted for, and a preliminary partial table from fifteen despatches with a pre-stated test (one part missed). No person has checked the image readings."
+   }
+  ],
+  "validation": {"date": "2026-11-15", "verdict": "not applicable", "notes": "The text is the office clerk's decipherment of 1778, not a key applied to the numbers, and each of the 62 numbers occurs once, so a key fitted to shuffled numbers would read as well: the n-gram test of a key cannot run. The test that was run is the pre-stated one in tests/ (table from fifteen other despatches against No. 35: 11 of 16 in order, shuffled tables at most 6; the tail test missed its mark)."},
+  "texts": [
+   {
+    "doc": "N35",
+    "label": "No. 35, Aranjuez, 18 June 1778: the coded passage",
+    "transcription": "transcriptions/n35_cipher.txt",
+    "contemporary": "transcriptions/n35_clerk_decipherment.txt",
+    "decryption": "reading/n35_account.tsv",
+    "reading": "reading/n35_reading.txt",
+    "language": "en",
+    "state": "read",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "Author's agents (Andrew Beling, with AI agents)",
+     "date": "2026-11-15",
+     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. The sentences are the office clerk's of 1778, transcribed by three AI readings that agree on all 54 words; they read as plain English with no hole. The placing of words on numbers (reading/n35_account.tsv) is ours and half of it is by order only."
+    },
+    "summary": "Grantham has no reason to think the Spanish court's sentiments changed since his last letter; he expects Floridablanca to propose Santander for the establishment of the packet boats, in which case a vice-consul or agent should be appointed to reside there. Spain was then neutral between Britain and France; a Falmouth to Santander packet service was approved in September 1778.",
+    "note": "Deciphered at the time: the text is the clerk's. reading/n35_account.tsv sets each of the 62 numbers against it (firm, one-crib, placed by order, taken as null)."
+   }
+  ],
+  "key_file": "key/table_preliminary.tsv",
+  "notes": "Catalogue 1285 can be closed as read at the time. The table is preliminary: about two thirds of its 263 firm entries are estimated right; it is a working aid, not a key. The printed code itself (The National Archives lists codes K and L of 1759 at SP 106/38-39; not seen) would settle it."
+ }
+}
