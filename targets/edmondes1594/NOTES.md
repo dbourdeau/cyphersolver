@@ -1,8 +1,10 @@
 # Thomas Edmondes to an unnamed lord, camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560
 
 Status: in progress (folder only, no page). Read in part: the cipher is read from the 1892 print, with the manuscript
-unseen. 636 of the 651 printed cipher letters are read (97.7%); by words, 130 of 135 cipher words, or 130 of 147 when the
-12 occurrences of the undeciphered person signs and figures count as holes (0.884, the figure in profile.json). Key
+unseen. 636 of the 651 printed cipher letters are read (97.7%). Sure words only, by README Conventions: 57 of 147
+(38.8%, the figure in profile.json; `reading/sure_words.tsv`), a word being sure when every letter comes from the tested
+key (7, 8, 10) with no value chosen by sense. Our earlier figure, counting every word read: 130 of 147, the 12
+occurrences of the undeciphered person signs and figures counted as holes (0.884). Key
 recovered from the ciphertext alone, frozen and tested on held-out letters; a second agent solved it independently.
 Contributed by Andrew Beling, with AI agents (14 Nov 2026). Nothing has been checked by a person.
 
@@ -77,7 +79,8 @@ Written before the run: `tests/PREREGISTRATION.md`. Scripts in `scripts/`, outpu
    test. Result (`tests/heldout_test.txt`): held-out score **-4.0950** per letter; 200 keys made by shuffling the
    frozen key's value-sets among the cipher letters: maximum -4.6513, median -5.1542; **0 of 200 as good**. The
    held-out machine reading, with no hand help, has declare, profession, relligion, cause, assure, assistance,
-   army, under, byron.
+   army, under, byron. The test covers the tested key only: 58 of the 636 read letters lie outside it (shift 20 for 35,
+   shift 11 for 18, a value added by hand for 5; counted by `scripts/sure_words.py`).
 2. **The second agent's stricter variant** (`scripts/stricter_heldout.py`, `tests/stricter_heldout.txt`). The first
    test's controls destroy the shift-7 base, and that base was first noticed on the whole text. So all three shifts,
    base included, were chosen blind on one half: on the first 350 letters the choice is (7, 8, 10), which then **ranks
@@ -87,7 +90,10 @@ Written before the run: `tests/PREREGISTRATION.md`. Scripts in `scripts/`, outpu
 3. **Rerun at packaging** (`tests/rerun_packaging.txt`): both tests rerun from this folder give the same numbers to
    the last digit. The language model is rebuilt by `scripts/lm.py` from `corpus/` (Stevenson's *Correspondence of
    Sir Henry Unton*, Roxburghe Club 1847, Internet Archive `cu31924027964471`, and Edmondes's clear letters in Butler
-   1913, pp. 141-147); the rebuilt `lm4.json` is byte-identical to the one used (sha256 9513a2ab...cf26). Run
+   1913, pp. 141-147). Rebuilt here on 15 Nov 2026 (macOS, Python 3.12.15 and 3.9.6) `lm4.json` hashes
+   9513a2ab...cf26, the hash of the file used in the original runs, and the held-out test gives -4.0950 again; the
+   maintainer's rebuild hashed 4af3ace1... with the same scores. The scores reproduce; the file's hash may differ
+   between machines (cause not established), so it is not a check. Run
    `python3 -I scripts/lm.py` first (the model files are not committed), then `python3 -I scripts/heldout.py test`
    and `python3 -I scripts/stricter_heldout.py scripts`. Do not run `heldout.py freeze`: it rewrites the frozen key.
 4. The score cannot choose the occasional shifts 11 and 20 (a fourth or fifth shift helps any set about equally:
@@ -108,6 +114,14 @@ frozen with it, so it is kept as it was.
 `reading/reading_words.tsv` (the reading aligned letter for letter; checked by `scripts/check_hand.py`). Marks:
 ° the word rests on a value chosen by sense (67 of 130 words: the printed letter has more than one value and here takes
 a less common one, or has no dominant value); † weak (4 words and "he will"); ? a letter not read (15).
+
+**Sure words** (`scripts/sure_words.py`, `reading/sure_words.tsv`, 15 Nov 2026, after Daniel Bourdeau's review of PR
+#666). Rule: a word is sure when every letter is read and comes from the tested key (7, 8, 10) with no value chosen by
+sense (no °) and no weak reading. Result: 57 of 147 (38.8%). The rest: 38 words allowed by the tested key but with a
+value chosen by sense, 29 with a letter outside it (shift 20, shift 11 or a value added by hand), 6 weak, 5 unread
+runs, 12 person signs and figures. 95 of 147 have every letter allowed by the tested key (97 with h and ill).
+Daniel Bourdeau counts 63 and 96 (the source of the one-word difference in the second figure is not established); his 63 also takes gouuerment, the (A10), he (A10) and the (A11), which carry no ° but need a letter outside the
+tested key, and h and ill ("he will"), which take the printed roman "to" as cipher.
 
 **Unread**: A2 "a d m" and "g k l" (6 letters), A11 one letter and five letters (6), B1 "goo" (3). **Weak**: "by"
 (needs printed g to be q), "gouuernor" (printed q for g), the "relligion" of the governor's sentence (printed r = r),
@@ -263,8 +277,8 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
 - `transcription/`: `calendar_entry.txt` (whole entry), `pass1.txt`, `pass2.txt`, `verifier_blind.txt`, `cipher_letters.txt`.
 - `keys/`: `frozen_key.json` (the frozen held-out key), `key_table.tsv` (values per printed letter with counts and shifts), `keys_tested.md` (outside keys compared; its paths `../scan_triples.txt` and `sources/raw/...` refer to the working folder: here `tests/scan_triples.txt` and `corpus/`).
 - `tests/`: `PREREGISTRATION.md`, `heldout_freeze.txt`, `heldout_test.txt`, `stricter_heldout.txt`, `scan_*.txt`, `rerun_packaging.txt`.
-- `reading/`: `reading.md`, `decryption.txt`, `modernized.md`, `reading_hand.tsv`, `reading_words.tsv`.
-- `scripts/`: `lm.py`, `poly.py`, `multishift.py`, `scan_triples.py`, `heldout.py`, `stricter_heldout.py`, `check_hand.py`, `make_reading.py` (builds `key_table.tsv`, `decryption.txt`, `validation.tsv`).
+- `reading/`: `reading.md`, `decryption.txt`, `modernized.md`, `reading_hand.tsv`, `reading_words.tsv`, `sure_words.tsv`.
+- `scripts/`: `lm.py`, `poly.py`, `multishift.py`, `scan_triples.py`, `heldout.py`, `stricter_heldout.py`, `check_hand.py`, `make_reading.py` (builds `key_table.tsv`, `decryption.txt`, `validation.tsv`), `sure_words.py` (writes `reading/sure_words.tsv`).
 - `corpus/`: the two public-domain texts the language model is built from.
 - `images/`: crops of pp. 559 and 560 from the Internet Archive images (1892, public domain).
 
@@ -296,3 +310,6 @@ maintainer to confirm or replace.", followed by the agents' own reading note. No
   not included): a different letter of the same day, in clear, with its clerk's copy. Addressee changed from
   "[Lord Burghley]" to "an unnamed lord"; prior work and "not checked" corrected. No change to the reading, the key,
   the counts, the tests or the date.
+- 2026-11-15, after Daniel Bourdeau's review of PR #666: read_share and fraction_read set to the sure-words count, 57 of
+  147 (`scripts/sure_words.py`); our 130 of 147 kept beside it; 58 of 636 read letters outside the tested key stated next
+  to the test; the lm4.json hash note corrected. Reading, key and class unchanged.
