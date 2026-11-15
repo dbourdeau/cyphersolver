@@ -132,6 +132,8 @@ measurements with the same key family on other portions, without the atlas: 0.74
 recorded output and the SHA-256 values. `sh validation/rerun.sh` checks the hashes and regenerates the recorded
 output byte for byte (checked here, Python 3.9.6). No AGS image or crop is included (see `validation/README.md`).
 
+**Second held-out measurement (15 Nov 2026), cipher image 04**, the last intact 1547 portion, now spent: same frozen rule and three blind sub-agents; with K4 unchanged **0.887** (best within-class control 0.554, margin +0.333; 13.8 % outside the key). A shape-split candidate K5 scores 0.879, but only one of its 8 new labels (po) occurs often enough to be tested; it is not used in the readings. Files and `rerun.sh` (both measures, byte for byte): `validation/img04/`.
+
 **1553 letters: decoded, not read.** See the next section.
 
 ## Five 1553 letters transcribed and decoded (14 Nov 2026, Brice Dudout with Claude)
