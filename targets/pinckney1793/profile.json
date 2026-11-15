@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "pinckney1793",
- "title": "Jefferson's Code No. 16 (Thomas Pinckney's London code, Weber's '663' code): Pinckney to Jefferson 28 Aug 1793, Pinckney from Spain and Paris 1795, Eaton at Tunis 1801-02, Lear 1813",
+ "title": "Jefferson's Code No. 16 (Thomas Pinckney's London code, Weber's '663' code): Pinckney to Jefferson 28 Aug 1793, Pinckney from Spain and Paris 1795, Eaton at Tunis 1801-02, Lear 1807 and 1813",
  "documents": [
   {
    "id": "pinckney_17930828",
@@ -240,6 +240,74 @@
     "image_quality": "good",
     "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, PR #399) from the images. 354 groups on 30 lines (bundle README); 12 doubtful digits listed there. Recounted 11 Nov 2026: 355 tokens in ct/lear_181301.txt, the catchword 478 at the foot of image 981 being written again as the first group of 982 (354 groups)."
    }
+  },
+  {
+   "id": "lear_18071108",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Consuls in Algiers, M23 roll 9 frame 0182 (left page) and roll 10 frame 0072 (a clerk's copy)",
+   "date": "8 Nov 1807",
+   "year": 1807,
+   "country": "United States",
+   "route": "Algiers -> Washington",
+   "places": {
+    "from": "Algiers",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none known: Founders Online Early Access (Madison Papers, 99-01-02-2308) prints the groups as numbers, not decoded; no decipherment on the film",
+    "partial": false
+   },
+   "length": {
+    "tokens": 28,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ct/lear_18071108.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M23 roll 9 frame 0182; roll 10 frame 0072",
+    "image_quality": "good",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, 14 Nov 2026) from both copies on the film: one reader forward on copy 1 and from the end on copy 2, a second reader blind on copy 1 with doubtful groups checked on copy 2 (beling/round_2026-11-14_lear1807/transcriptions/). The two copies agree group for group (28 groups)."
+   }
+  },
+  {
+   "id": "lear_18071231",
+   "read": "read in part",
+   "shelfmark": "NARA RG 59, Despatches from US Consuls in Algiers, M23 roll 9 frames 0187-0199 (\"Triplicate\") and roll 10 frames 0075-0082 (\"(Copy)\")",
+   "date": "31 Dec 1807",
+   "year": 1807,
+   "country": "United States",
+   "route": "Algiers -> Washington",
+   "places": {
+    "from": "Algiers",
+    "to": "Washington"
+   },
+   "language": "English",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "only the postscript (18 groups): repeated in Lear's letter of [4] Jan 1808 (M23 roll 10 frame 0008) and deciphered there in pencil at the time; the five other passages have no decipherment known to us. Founders Online Early Access (99-01-02-2490) prints the groups as numbers, not decoded",
+    "partial": true
+   },
+   "length": {
+    "tokens": 253,
+    "unit": "code groups",
+    "measured": true,
+    "file": "ct/lear_18071231.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M23 roll 9 frames 0187-0199; roll 10 frames 0075-0082",
+    "image_quality": "good",
+    "notes": "Transcribed by the contributor (Andrew Beling, with AI agents, 14 Nov 2026) from both copies on the film: one reader forward on copy 1 and from the end on copy 2, a second reader blind on copy 1 with doubtful groups checked on copy 2 (beling/round_2026-11-14_lear1807/transcriptions/). The copies differ in two places: one group read 980 or 986 in copy 1 (980 in copy 2) and a 663 in copy 2 only (kept): 253 groups, 252 in copy 1. A small 3-shaped caret mark that Founders prints as a group \"3\" is not a group."
+   }
   }
  ],
  "system": {
@@ -283,7 +351,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "The Papers of Thomas Jefferson vol. 26 (1995), via Founders Online: the 28 Aug 1793 passage printed 'deciphered in part' from a partial reconstruction of Code No. 16, conjectures in brackets, one group undeciphered. The six later letters carry decipherments of the time; the Bey's letter of 1802 has a translation printed in 1802; the Madison Papers editors print Eaton's postscript and Lear's letter deciphered (per the contributor's notes).",
+   "where": "The Papers of Thomas Jefferson vol. 26 (1995), via Founders Online: the 28 Aug 1793 passage printed 'deciphered in part' from a partial reconstruction of Code No. 16, conjectures in brackets, one group undeciphered. The six later letters carry decipherments of the time; the Bey's letter of 1802 has a translation printed in 1802; the Madison Papers editors print Eaton's postscript and Lear's letter deciphered (per the contributor's notes). Lear's coded passages of 8 Nov and 31 Dec 1807 (added 14 Nov 2026): the postscript of 31 Dec was deciphered at the time (pencil interlinear on its repeat, M23 roll 10 frame 0008); for the other passages no decipherment was found on the film or in Naval Documents vol. 6, American State Papers, Foreign Relations vol. 3, or Irwin (1931); Founders Online Early Access prints their groups as numbers. The Madison Papers' printed Secretary of State Series ends at 30 Sep 1807 (vol. 14). The first reading known to us, not a claim that nobody read them.",
    "found": "before attempt",
    "used": true
   },
@@ -306,9 +374,9 @@
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 3,
+  "sessions": 4,
   "first_date": "2026-10-26",
-  "last_date": "2026-11-11"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -469,6 +537,51 @@
    "kind": "verification",
    "what": "Integration of the follow-up (PR #413) after an independent verification. Reproduced: key v5 549 rows and hash; K1 rebuilt byte for byte from key.tsv and frozen_key_v1.tsv; 290 of 299 certain groups of 0178 agree; declared score 0.724 (126/174, shuffled best 0.264) and post hoc 0.948 (165/174, shuffled best 0.287). The declared test on frame 0178 failed (bar 0.85) and is published as failed; cause found after the run: the ASP print (committed OCR extract) lacks the last paragraph of the clerk's Explication, seen on frame 0179; 39 of the 48 unmatched groups match once it is present. The 0.948 is post hoc, not a passed test. No key value changed on it. Conflicts between key.tsv, v4 and v5 recorded, not resolved: 640 (in / es / no value, and ju in 'prejudices'); 598 (the clerk's 'fourth' on M31 frame 0111, where the group was seen on the frame to read 598, against v5's 'es' from three words); 1160 n (16 in the frozen row, 14 in the changes file). 631: v5 'sixth' agrees with key.tsv '6th'; v4 'th' was a wrong import. Two stale targets/legation1788 paths annotated. Not checked: the 0196 and 0208 transcriptions against the images, the alignments, the ASP print.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Contributor (Andrew Beling, with AI agents): paging NARA M23 (Algiers) for Code No. 16 items found Lear's coded passages of 8 Nov and 31 Dec 1807 (281 groups, two copies each); Founders Online Early Access prints them as numbers only. Frames either side looked at, text layer of rolls 8-11 searched for 'decypher', 'explication', 'cypher'; only the postscript has a decipherment of the time (pencil, roll 10 frame 0008).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Contributor: two readers, two copies. Reader 1 forward on copy 1 (roll 9) and from the end on copy 2 (roll 10); reader 2 blind on copy 1 with every doubtful group and five passages checked on copy 2. Differences: 980/986 (980 kept, plain in copy 2) and one 663 only in copy 2 (kept). 281 groups (beling/round_2026-11-14_lear1807/transcriptions/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "what": "Contributor: decoded with key v5 as it stands (beling/round_2026-11-11/code16_key_v5.tsv, sha256 17e3a2ef..., unaltered): 222 of 281 groups have a value (0.790); seven more groups take local values kept apart from the key (five from the 1808 pencil decipherment of the postscript, two fixed by recurrence). The 13 key values in the postscript all agree with the pencil decipherment of the time.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "what": "Contributor, first reader: share of decoded letters covered by words of an OCR word list, real table 0.950 against a maximum of 0.947 of 200 shuffled tables. Withdrawn by the second reader: 77% of the table's values are themselves word-list entries, so the score measured how word-like each value is, which shuffling keeps; it could not have failed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Contributor, second reader: character 5-gram English model (en-gutenberg) over letters joined across group boundaries: real key v5 -0.856 per letter; 200 tables with the occurring values reshuffled: mean -1.037, maximum -0.950, real table rank 1 of 201, 5.9 standard deviations above the mean; whole-table shuffles: mean -1.030, maximum -0.907, 4.4 standard deviations; Lear's own clear text -0.722. Rerun from the repository (beling/round_2026-11-14_lear1807/scripts/control_char5.py): the same figures. Not declared before the numbers were seen in print.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Contributor: a second agent transcribed and decoded the passages on its own and corrected the first reading: 594 ends in t (hurt, not injure); no-[208]-b-t spells 'no doubt' (not 'nothing but'); 606 is not in the table (call is a guess); 1176 = cy (grade A) makes [pira]cy likelier than [depred]ation; dollars and presents are guesses; the Founders group '3' is a caret mark, not group 3 (Great Britain).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "Contributor: readings written with every word marked as key value, local value or guess (texts/lear_18071108_reading.txt, texts/lear_18071231_reading.txt): read_share 0.792 and 0.777, read in part. Lear's further coded passage of 9 Mar 1808 (113 groups, one stained copy) transcribed twice (second reader from the end), 106 of 113 agreeing; decoded preliminarily (0.717 with key v5); not counted (beling/round_2026-11-14_lear1807/lear_18080309/).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -482,8 +595,8 @@
   "class": "already solved",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "The seven reading files (texts/*_reading.txt), counted with research/reading_audit/v10_relabel.py share(): 1,384 words read and 51 holes or doubtful words, 1,384 of 1,435. For the 28 Aug 1793 passage alone, reading_pinckney_17930828.tsv: 58 groups, 56 with a reading (39 attested in another letter of the code, 17 the editors' only), 2 open.",
-  "fraction_read": 0.964,
+  "fraction_read_source": "The seven reading files (texts/*_reading.txt), counted with research/reading_audit/v10_relabel.py share(): 1,384 words read and 51 holes or doubtful words, 1,384 of 1,435. For the 28 Aug 1793 passage alone, reading_pinckney_17930828.tsv: 58 groups, 56 with a reading (39 attested in another letter of the code, 17 the editors' only), 2 open. Since 14 Nov 2026 also texts/lear_18071108_reading.txt and texts/lear_18071231_reading.txt: 169 words, 48 holes; nine files 1,553 of 1,652.",
+  "fraction_read": 0.94,
   "codes_open": {
    "open": 2,
    "total": "unknown",
@@ -539,6 +652,24 @@
     "note": "Eaton's postscript of 9 Oct 1802 and Lear's letter of [Jan] 1813 printed deciphered, 'using a key from the Lear family papers' (per the contributor's notes; the edition pages were not opened in the integration check)",
     "source": "The Papers of James Madison, via Founders Online (Madison/02-04-02-0007, 03-05-02-0448)",
     "published": true
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "an unnamed hand's pencil decipherment of Lear's repeated postscript ('the only real security we can have in this Sea is a naval force'), M23 roll 10 frame 0008; supplies 894 only, 1455 573 curity, 742 can, 1333 na (local values, not entered in the key)"
+   },
+   {
+    "who": "founders",
+    "role": "pointer",
+    "note": "Lear's letters of 8 Nov and 31 Dec 1807 printed in the Madison Papers' Early Access with the code groups as numbers (99-01-02-2308, 99-01-02-2490); not decoded there",
+    "source": "https://founders.archives.gov/documents/Madison/99-01-02-2490",
+    "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Lear's coded passages of 8 Nov and 31 Dec 1807 transcribed from both copies and read with key v5 (222 of 281 groups), with a control; the first reading known to us (beling/round_2026-11-14_lear1807/)",
+    "date": "2026-11-14"
    }
   ],
   "gaps": [
@@ -566,9 +697,19 @@
     "item": "Code No. 16 groups without a value (the code has about 1,600 elements; 537 are in the key, 125 of them grade A)",
     "blocker": "no-key-material",
     "detail": "the original key (Lear family papers) is unprinted and was sold in 2010 to an unnamed buyer, per the contributor's notes"
+   },
+   {
+    "item": "Lear 8 Nov and 31 Dec 1807: 48 groups with no key or local value (the readings mark guesses for most of them)",
+    "blocker": "no-key-material",
+    "detail": "the groups are not in key v5 and occur nowhere else with a decipherment; the Lear family key is unprinted; the Madison Papers' printed series has not reached late 1807"
+   },
+   {
+    "item": "Lear 9 Mar 1808 (M23 roll 10 frame 0014), 113 groups decoded preliminarily only",
+    "blocker": "illegible",
+    "detail": "one stained copy; two readings agree on 106 of 113 groups; 0.717 with key v5; not read and not in outcome.texts (beling/round_2026-11-14_lear1807/lear_18080309/)"
    }
   ],
-  "notes": "The 28 Aug 1793 passage was read before by the Jefferson Papers editors, and the six later letters by the clerks of the time. Added by the project: 447 for the printed 497; the 1793 groups checked against Taylor's decodings (30 of 58 attested); a full transcription of Pinckney's 15 coded frames on M30 roll 2. Added by Andrew Beling, with AI agents (PR #399, beling/): Code No. 16 identified as Weber's '663' code and found in six further letters (Pinckney 1795, Eaton 1801-02, Lear 1813), transcribed with their contemporary decipherments; a key of 537 graded groups (v4, the key behind the texts; v5 of the follow-up, PR #413, has 549 and changes 1366, 631 and 598 and drops 640; 598 and 640 carry conflicting values across key.tsv, v4 and v5, NOTES integration check of 12 Nov 2026); tests with a key frozen beforehand (Pinckney 1795 0.886 pass, Eaton 1801 0.80 below the 0.85 bar, Eaton 22 Oct 1802 0.898 on a repeated passage; a fourth, declared on Pinckney's frame 0178 of 25 Nov 1793, failed at 0.724 against the 0.85 bar: the printed text used as truth lacks the last paragraph of the clerk's Explication, and the 0.948 against the full Explication is post hoc); nine regrades in the 28 Aug 1793 passage (H 30 to 39). Pinckney's frames on M30 roll 2 without a contemporary decoding (1,982 groups) are decoded with that key in beling/decodes/, 81% of groups covered: decoded, not read, and not listed in texts. Until 11 Nov 2026 this was part of the record legation1788, which keeps Short's Code No. 10 and Carmichael's Code No. 13, different codes.",
+  "notes": "The 28 Aug 1793 passage was read before by the Jefferson Papers editors, and the six later letters by the clerks of the time. Added by the project: 447 for the printed 497; the 1793 groups checked against Taylor's decodings (30 of 58 attested); a full transcription of Pinckney's 15 coded frames on M30 roll 2. Added by Andrew Beling, with AI agents (PR #399, beling/): Code No. 16 identified as Weber's '663' code and found in six further letters (Pinckney 1795, Eaton 1801-02, Lear 1813), transcribed with their contemporary decipherments; a key of 537 graded groups (v4, the key behind the texts; v5 of the follow-up, PR #413, has 549 and changes 1366, 631 and 598 and drops 640; 598 and 640 carry conflicting values across key.tsv, v4 and v5, NOTES integration check of 12 Nov 2026); tests with a key frozen beforehand (Pinckney 1795 0.886 pass, Eaton 1801 0.80 below the 0.85 bar, Eaton 22 Oct 1802 0.898 on a repeated passage; a fourth, declared on Pinckney's frame 0178 of 25 Nov 1793, failed at 0.724 against the 0.85 bar: the printed text used as truth lacks the last paragraph of the clerk's Explication, and the 0.948 against the full Explication is post hoc); nine regrades in the 28 Aug 1793 passage (H 30 to 39). Pinckney's frames on M30 roll 2 without a contemporary decoding (1,982 groups) are decoded with that key in beling/decodes/, 81% of groups covered: decoded, not read, and not listed in texts. Until 11 Nov 2026 this was part of the record legation1788, which keeps Short's Code No. 10 and Carmichael's Code No. 13, different codes. Added 14 Nov 2026 by Andrew Beling, with AI agents (beling/round_2026-11-14_lear1807/): Tobias Lear's coded passages to Madison of 8 Nov and 31 Dec 1807 (281 groups, two copies each on M23 rolls 9 and 10), printed by the Madison Papers' Early Access as bare numbers, read with key v5 unaltered (222 of 281 groups); read in part (0.79, 0.78); the postscript agrees with the pencil decipherment of the time. Lear's 9 Mar 1808 passage is decoded preliminarily only and not counted.",
   "texts": [
    {
     "doc": "pinckney_17930828",
@@ -688,6 +829,40 @@
      "date": "2026-11-11",
      "note": "Reads straight through as three paragraphs; one illegible opening word and one doubtful placement."
     }
+   },
+   {
+    "doc": "lear_18071108",
+    "label": "Tobias Lear to James Madison, Algiers, 8 November 1807, the coded passage (Code No. 16)",
+    "transcription": "ct/lear_18071108.txt",
+    "decryption": "texts/lear_18071108_decryption.txt",
+    "reading": "texts/lear_18071108_reading.txt",
+    "summary": "In the middle of a clear sentence (\"you may be assured that the ...\"), Lear says in code that the English consul at Algiers has done all in his power to hurt the United States since their late difference; the end of the passage is not read.",
+    "language": "en",
+    "read_share": 0.792,
+    "state": "read in part",
+    "reading_review": {
+     "grade": "B",
+     "by": "contributor's second agent (independent transcription and decode), applied by the packaging agent",
+     "date": "2026-11-14",
+     "note": "Continues Lear's clear sentence. 'English consul here has done al(l) in his power to ...t us' is key values; the verb is a guess ending in t (hurt). The end, 'difference [511] with [7] his pro...sion to the [34]', is not read."
+    }
+   },
+   {
+    "doc": "lear_18071231",
+    "label": "Tobias Lear to James Madison, Algiers, 31 December 1807, six coded passages (Code No. 16)",
+    "transcription": "ct/lear_18071231.txt",
+    "decryption": "texts/lear_18071231_decryption.txt",
+    "reading": "texts/lear_18071231_reading.txt",
+    "summary": "In the despatch on the settlement of the Algerine seizure of three American vessels. Plain words are key v5 values; guesses in [?..] marks, as in the reading file: \"I was [?oblig]ed to [?make presents] of ten thousand [?dollar]s [?among] the [?principal] men which [1232] [180]ed the thing\" (\"ten\", group 1340, is a weak single fit in key v5, grade S1; the unit and the presents are guesses); the Algerines \"would be ur[?ged] on by the representa[?tions] of a nation at present not wel{+l} [?dis][?pos]ed toward us\" (Britain by context only; the passage does not name it); Lear thinks it \"im[?possib]le that this [?sy]stim of [?pi][?ra]cy can last long\": Tripoli will quit it first, Tunis will [?follow], \"but here there will be a strou[?ggle]\"; he found \"so much secret [?work]ing to involve us in war\"; \"he [?dre]ads the [?breach] of peace [?among] the powers of Europe, knowing that one nation at [?least] will [?call] him to an ac[?count]\" (\"he\" and \"him\" taken as the Dey from context), and there is \"no [?dou]bt a latent flame in this [?country]\"; and, in the postscript (deciphered at the time), the only real security in this sea is a naval force.",
+    "language": "en",
+    "read_share": 0.777,
+    "state": "read in part",
+    "reading_review": {
+     "grade": "B",
+     "by": "contributor's second agent (independent transcription and decode), applied by the packaging agent",
+     "date": "2026-11-14",
+     "note": "Each passage continues the clear sentence before it and makes sense with it. Key values carry the frame of every sentence; about a fifth of the words are guesses at unknown groups, marked [?word:group] (among them dollars, presents, follow, struggle, call, disposed). The postscript agrees with the pencil decipherment of 1808 in all 13 key values."
+    }
    }
   ],
   "key_file": [
@@ -695,6 +870,20 @@
    "beling/key/code16_key_v4.tsv",
    "beling/round_2026-11-11/code16_key_v5.tsv"
   ],
-  "provenance": "mixed"
+  "provenance": "mixed",
+  "parts": [
+   {
+    "label": "The seven documents of 1793-1813 with decipherments of the time or in print",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "the clerks' interlinears, the 1802 printed translation and the PTJ editors' partial decipherment of 1793"
+   },
+   {
+    "label": "Lear's coded passages of 8 Nov and 31 Dec 1807 (281 groups)",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "Code No. 16 key v5 (549 groups rebuilt from the other letters' decipherments), unaltered: 222 of 281 groups; the postscript was deciphered at the time and its 13 key values agree; read_share 0.79 and 0.78"
+   }
+  ]
  }
 }
