@@ -195,3 +195,20 @@ Family C test values (key_h4): + T = a, 2 = e, 6 = o, 4 X = i, L = r, S q = n, 8
   inside a word (70/80); Antonius M., Lancelotus de Figine, Petrus de Monteferrato and Ottone del Carretto keys are different alphabets.
 Conclusion: the family C key is not among the 208 key sheets of cart. 1597/1598. Many keys of the period start a = + (the chancery
 habit), so the style is shared, not the key. The reading rests on the key recovered from the ciphertext alone.
+
+## 15 Nov 2026 (later): R5503 transcribed; the key reads it out of sample
+R5515 (the next shortest) is too faint on the DECODE scan to read sign by sign; R5503 is sharp and was taken instead.
+`famC/hand/r5503_hand.txt`: R5503 (cart. 1598 no. 29), 34 lines, 1,551 cipher signs, clear passages left out ("bon cavalero ...",
+"Lo cardinal mio ...", "in verita me sforzaro", "cum ... certamente ...", "Como mio ...", "lo cardo ... la V.ra Ill.ma Signoria",
+"non mora ...", "Como commandamento lo dicto ...", "per bona informatione"). Lower confidence than R5514/R5517 (lighter ink).
+Decrypted with `key_h4.json` as fitted on R5518 + R5514, no re-solve (`dec03.txt`): **word share 0.471 against 0.143 for the same
+signs shuffled**: the best letter so far, and out of sample. Phrases: "grandisime", "bene", "a darlo", "quattrocento", "potese",
+"altri non veritate", "grandisima ingratitudine", "la mia compagnia", "per merito di boni servitori", "bisogna me dormire a provedere",
+"certamente", "servicio", "fortificarse de altre gente", "a fine de fare", "la vostra illustrissima signoria", "per lo diavolo",
+"terminato di pigliare bataglia", "lo tempo", "per servire", "pare se me bastaria l'animo de fare", "la risposta",
+"conte Iacomo", "sempre", "acampo a Castiglione", "cinque milia persone utile", "questi designi", "facendo", "la impresa",
+"debilitar", "bastie seria facilisima obtenere", "grandi benefici", "destruttione", "de ognia pensero", "sigillate le mie litere del
+mio sigillo", "maravigliate". The setting (conte Iacomo, an army camped at Castiglione, bastie, 5,000 men) fits Jacopo Piccinino's
+campaigns of the 1450s-60s; not checked against dated sources.
+Status: family C read in part on four letters (R5518, R5514, R5517, R5503), one key recovered from the ciphertext alone and
+confirmed on two letters it was not fitted on. Next: R5502, R5504-R5506 (two-page letters, sharp scans).

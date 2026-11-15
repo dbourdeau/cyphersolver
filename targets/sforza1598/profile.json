@@ -92,6 +92,36 @@
     "notes": "Same sign set as R5514."
    },
    "read": "read in part"
+  },
+  {
+   "id": "R5503",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 29 (DECODE R5503)",
+   "date": "unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "unknown"
+   },
+   "length": {
+    "tokens": 1551,
+    "distinct": 40,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famC/hand/t03.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from crops of the DECODE image",
+    "image_quality": "fair",
+    "notes": "Light ink; lower confidence than R5514."
+   },
+   "read": "read in part"
   }
  ],
  "system": {
@@ -279,6 +309,16 @@
    ],
    "what": "Compared the family C key with all 93 key sheets of cart. 1598 and 115 of cart. 1597; several share the a = + habit (R5245, R5255, R5346, R5475) but none fits e = 2, o = 6, i = 4.",
    "result": "ruled out"
+  },
+  {
+   "kind": "transcription",
+   "what": "R5503 transcribed by hand: 1,551 cipher signs (R5515 too faint to read).",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "R5503 decrypted out of sample with the key fitted on R5518 + R5514: word share 0.471 vs 0.143 shuffled; reads \"conte Iacomo\", \"acampo a Castiglione\", \"cinque milia persone\", \"sigillate le mie litere del mio sigillo\".",
+   "result": "worked"
   }
  ],
  "outcome": {
