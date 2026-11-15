@@ -193,6 +193,14 @@ Kept apart: **(L)** what the letters say; **(H)** established history, with its 
   Codex 534 deal with Savoy, Liège, Poland and the imperial court. That division of channels is our inference from what
   reads so far.
 
+## Reading review
+
+Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
+"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (13 entries) were
+written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
+Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
+maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+
 ## Limits
 
 - About 60% of Cosimo's groups read as Italian, **by estimate** (measured bounds above).
