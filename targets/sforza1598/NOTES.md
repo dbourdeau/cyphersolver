@@ -393,3 +393,12 @@ translation, for a second reader (the reading gate asks for a reader review and 
   regency of Bona of Savoy ("Madona", "el Signore"), Tommasino Campofregoso lord of Sarzana (governor of Corsica later), Milanese
   Corsica 1464-1481, Nicodemo Tranchedini writing from Genoa in 1478 (DBI), and "meser Ieronimo" (Girolamo Olgiati, d. Jan 1477?) all
   fit. Working date: June 1477 - March 1479; an informer at Sarzana near Ludovico. Not checked in archival registers.
+
+## 15 Nov 2026 (later): open words, doubling marks found
+- The sign o-with-cross (`o +`, 10 uses) and the digit-like 6 and 10 are **nulls between doubled letters** ("dupple" marks): "el
+  mes[o+]so", "Volter[6 10]ra", "Volter[o+]ra", "dis[o+]se", "podes[10 6]se". Removed (`w*.txt`). Resolves R5573 "messo", R5577
+  "Volterra"/"podesse", R5575 "disse", "Volterra". Read share: R5577 0.923, R5575 0.896, R5586 0.850, R5573 0.930; **all 0.897**.
+- Tried and not settled: "{mamiglio}", "si s'gain", "sarvane", "{mas}sano", "canteera", "sevala", "promqso", "Miser Andremto". A
+  look-alike search gives no strong single fix, and the image crops for these spots missed (position estimates from token counts are
+  too rough on these lines). They need a person, or a sign-by-sign box transcription, to read the exact shapes. R5586's 'dd', 'bb', 'e'
+  cluster (the date line and two spots) is also still unread.

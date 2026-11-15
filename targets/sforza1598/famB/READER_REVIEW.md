@@ -75,7 +75,7 @@ Open: "{Miser Andremto}".
 
 > De qua non acade altro al presente, se non che meser Ludovico e Tomasino sono in molte diferentie, et ogni volta piu cresce l'odio e
 > la difidentia fra loro. El podesta de Ponsano, el meso del quale io usava in mandare le letere al comisario, non le vole piu mandare,
-> si che, se non vi ho scripto, peso non vi miraviglate. Io andero questo septembre a Volter{ra} per observare la fede, ma finito l'oficio
+> si che, se non vi ho scripto, peso non vi miraviglate. Io andero questo septembre a Volterra per observare la fede, ma finito l'oficio
 > tornero; che cosi vo promesso a meser Ludovico. Io bisogno de ducati quaranta per espedire certi mei strecti bisogni; vogliate pregare
 > Madona et el Signore che io ne sia servito, e quando non se podesse, ad ogni modo intendo essere bon servidore de le vostre
 > illustrisime signorie. Sarsane, die decimoseptimo iulii, etcetera.
@@ -87,7 +87,7 @@ office is done I shall come back; for so I have promised messer Ludovico. I need
 please ask Madonna and the Lord that I be granted it, and if it cannot be, in any case I mean to be a good servant of your most
 illustrious lordships. Sarzana, 17 July, etc.*
 
-Open: two digit-like signs (6, 10) in "Volter{ra}"; "Ponsano" not identified.
+Resolved: the digit-like signs 6, 10 are null marks before a doubled letter ("Volterra", "podesse"). Open: "Ponsano" not identified.
 
 ---
 
@@ -150,7 +150,7 @@ is struck out, and the closing date is written in signs outside the letter key.
 
 ## R5573 (cart. 1598 no. 99), 23 March
 
-> El mes{so} de Tomasino e tornato de Corsica; diceva haver trovato e lasato quele cose in pacifico, ma che io {canteera} in pensiero de
+> El messo de Tomasino e tornato de Corsica; diceva haver trovato e lasato quele cose in pacifico, ma che io {canteera} in pensiero de
 > moversi per sua specialita. Le cose ocorse di qua mi sono parute simile a quele di [?]; {vala} gli credo; sero a Milano de poi Pasqua e
 > satisfaro piu a pieno. Sarsane, die vinti tre marcii, etcetera.
 
@@ -161,6 +161,10 @@ give fuller satisfaction. Sarzana, 23 March, etc.*
 Open: "{canteera}" (probably "Tomasino era" lost in the transcription), "{vala}".
 
 ---
+
+## Doubling marks (15 Nov 2026)
+The sign o-with-cross (written `o +`) and the digit-like signs 6 and 10 are nulls set between doubled letters, the "dupple" habit of
+Sforza keys: "el mes[o+]so", "Volter[6 10]ra", "Volter[o+]ra", "dis[o+]se", "podes[10 6]se". Removed from the decryption.
 
 ## Historical check (15 Nov 2026, not complete)
 - Ludovico Sforza (il Moro) was exiled to Pisa, in Florentine territory, after the failed coup of May 1477, and returned to Milan in
