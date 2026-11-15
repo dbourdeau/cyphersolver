@@ -170,3 +170,17 @@ Reading of the result: the look-alikes were not what holds the share near 45 %. 
 have unread stretches between them; the likelier causes now are word signs and syllable signs in a nomenclator part (the "-T" sign looks
 like one), misread rare signs, and the 1-in-10 transcription errors a by-eye reading leaves. Next options: list the frequent unread
 cipher strings and test them as nomenclator entries; or get the ASMi images and re-transcribe.
+
+## 15 Nov 2026 (later): nomenclator test, no signal
+`famC/hand/nom2.py`: decryption (`key_h4`, `t7`) masked by a maximal cover with dictionary words of 4-12 letters; per-sign unread rates
+and recurring unread cipher n-grams. Worst signs: c (ct sign) 70/80 unread, q 67/77, P 51/62, u 19/21, l 25/28, w 41/55, Q 23/30,
+D1 16/18, m 25/29. Recurring unread pairs are mostly doubled or vowel pairs ("2 o" 17/18, "o o" 14/16, "6 6" 11/14, "c X" 12/15).
+`nomtest.py`: each bad sign set to null or to each single letter, scored on train (R5518 + R5514) and holdout (R5517): null never helps;
+best single-letter moves are small (c = t +53 letters in words, r = t +33, of about 4,100).
+`nomtest2.py`: each sign set to word or syllable values (che, et, per, con, non, de, la ...): every sign gains with "non" / "con" (+50
+to +210), including r, which is b on sure words (beneficio, subito, urbino). The cover metric rewards any value that makes 4-letter
+words, so it cannot tell a code sign from a letter sign; no sign stands out above that baseline. Not adopted.
+So the nomenclator question stays open: it needs a test that compares against a frequency-matched control sign, or cribs from the
+clear text and the history (names: Iacomo, Urbino, Francesco, Roma, Cremona, Castro), or a contemporary key sheet. The 93 key
+sheets of cart. 1598 are still uncompared with family C; that is now the strongest lead: a sheet whose signs match family C would
+give the nomenclator directly.
