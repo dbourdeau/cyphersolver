@@ -298,3 +298,9 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **Badator** (`artxibo.euskadi.eus` ... `badator/maintSimple`): found to be the RAH Salazar y Castro index with item descriptions; 1,892 'cifra' records, 90 not covered by an existing target family; signatures not collected, nothing vetted. This is the best open route for 1520-29 and 1638-56 Spanish diplomatic ciphers: see the sweep README for the plan.
 - **No item-level route found:** Andalucia, Mallorca (Regne), Castilla y Leon (host dead), Lombardia Beni Culturali (fonds level).
 - **Still unswept:** Valencia (ARV), Galicia, Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers.
+
+## Chrome wave 10, 15 Nov 2026 (Badator export; folder `sweep_2026-11-15_chrome_wave10`)
+
+- **Badator / RAH Salazar y Castro index:** done for the term 'cifra' (1,892 records) through the portal's own 'Exportar Busqueda' CSV (all records with signatura and the index's remarks in one download). 9 new leads (2867-2875: Juan Perez, Marino Caracciolo, Herrera, Lannoy, Colonna, the Adornos, Adrian VI, Trivulzio, Leopold Wilhelm); none promotable (ciphertext not online). Wave 9's '90 rows' were mostly already leads 1085-1090. Not run: other cipher terms in Badator ('clave', 'cifra general', 'cifrado'); the export route makes them one click each.
+- **Galiciana ARPAD (Arquivo do Reino de Galicia and other Galician archives):** reached, search form found, search for 'cifra' hung the renderer (not retried).
+- **Still unswept:** Valencia (ARV; no online catalogue address found), Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers.
