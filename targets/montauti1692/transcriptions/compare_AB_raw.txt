@@ -1,0 +1,133 @@
+== 1r: A 139 signs, B 138 signs, matched 126
+   replace A[14:15]='6'                            B[14:15]='w'   ctxA ...4 1 6 4 | 4 6 0
+   replace A[30:33]='4 8 5'                        B[30:33]='w w 9'   ctxA ...w 6 5 w | 6 w 6
+   replace A[58:59]='w'                            B[58:59]='9'   ctxA ...9 2 1 1 | 1 2 1
+   replace A[70:71]='5'                            B[70:71]='9'   ctxA ...2 1 6 4 | 6 3 1
+   replace A[74:75]='0'                            B[74:75]='6'   ctxA ...5 6 3 1 | 6 w 6
+   replace A[79:82]='6 8 5'                        B[79:81]='w 9'   ctxA ...6 w 6 w | w w 2
+   replace A[92:93]='8'                            B[91:92]='w'   ctxA ...1 6 w w | 6 4 5
+   replace A[127:128]='9'                            B[126:127]='5'   ctxA ...6 6 3 1 | 6 1 1
+   replace A[138:139]='8'                            B[137:138]='w'   ctxA ...1 6 w w | 
+== 1v: A 32 signs, B 32 signs, matched 28
+   replace A[14:15]='9'                            B[14:15]='5'   ctxA ...4 6 w 6 | 6 3 1
+   replace A[21:23]='8 9'                          B[21:23]='w 3'   ctxA ...1 1 1 4 | 1 5 0
+   replace A[28:29]='6'                            B[28:29]='w'   ctxA ...5 0 5 5 | 4 w 2
+== 3r: A 18 signs, B 20 signs, matched 14
+   replace A[0:3]='? 9 9'                        B[0:2]='5 5'   ctxA ... | 1 1 1
+   replace A[7:8]='?'                            B[6:8]='6 1'   ctxA ...1 1 1 4 | 9 9 w
+   insert  A[9:9]=''                             B[9:11]='1 5'   ctxA ...1 4 ? 9 | 9 w 2
+== 21v: A 26 signs, B 24 signs, matched 20
+   delete  A[7:8]='9'                            B[7:7]=''   ctxA ...5 w 6 w | 2 1 4
+   replace A[15:16]='0'                            B[14:15]='6'   ctxA ...0 w 2 9 | 3 1 5
+   replace A[18:19]='5'                            B[17:18]='9'   ctxA ...9 0 3 1 | 5 6 w
+   replace A[23:26]='8 5 8'                        B[22:24]='9 w'   ctxA ...5 6 w w | 
+== 22r: A 59 signs, B 54 signs, matched 52
+   replace A[4:5]='5'                            B[4:5]='9'   ctxA ...6 6 w w | w 4 1
+   delete  A[8:9]='6'                            B[8:8]=''   ctxA ...5 w 4 1 | 6 6 w
+   delete  A[30:31]='6'                            B[29:29]=''   ctxA ...w 4 6 w | 4 9 5
+   replace A[36:37]='5'                            B[34:35]='9'   ctxA ...9 5 4 6 | 1 4 4
+   delete  A[38:40]='4 4'                          B[36:36]=''   ctxA ...4 6 5 1 | 4 1 1
+   delete  A[55:56]='w'                            B[51:51]=''   ctxA ...9 1 w w | 6 w 2
+== 25r: A 57 signs, B 52 signs, matched 49
+   delete  A[9:10]='5'                            B[9:9]=''   ctxA ...1 3 1 5 | 8 2 1
+   replace A[13:14]='6'                            B[12:13]='0'   ctxA ...5 8 2 1 | 6 6 2
+   replace A[17:18]='3'                            B[16:17]='9'   ctxA ...6 6 6 2 | 1 7 1
+   replace A[21:22]='4'                            B[20:21]='9'   ctxA ...3 1 7 1 | 0 w 0
+   delete  A[46:48]='4 6'                          B[45:45]=''   ctxA ...6 3 1 6 | w 6 6
+   delete  A[49:50]='6'                            B[46:46]=''   ctxA ...6 4 6 w | 6 6 6
+   delete  A[56:57]='0'                            B[52:52]=''   ctxA ...6 6 w 6 | 
+== 26r: A 119 signs, B 119 signs, matched 99
+   replace A[8:9]='7'                            B[8:9]='3'   ctxA ...6 4 9 1 | 1 w 1
+   replace A[10:11]='w'                            B[10:11]='9'   ctxA ...9 1 7 1 | 1 7 1
+   replace A[12:13]='7'                            B[12:13]='3'   ctxA ...7 1 w 1 | 1 8 9
+   delete  A[14:15]='8'                            B[14:14]=''   ctxA ...w 1 7 1 | 9 w 6
+   replace A[16:17]='w'                            B[15:23]='5 9 4 6 2 1 9 3'   ctxA ...7 1 8 9 | 6 4 2
+   replace A[31:32]='5'                            B[37:38]='9'   ctxA ...3 1 4 1 | 8 4 6
+   delete  A[38:39]='9'                            B[44:44]=''   ctxA ...6 2 1 5 | 5 1 7
+   replace A[41:42]='7'                            B[46:47]='3'   ctxA ...5 9 5 1 | 1 4 1
+   insert  A[45:45]=''                             B[50:52]='9 2'   ctxA ...7 1 4 1 | 5 2 9
+   replace A[46:49]='2 9 7'                        B[53:54]='3'   ctxA ...1 4 1 5 | 4 3 9
+   replace A[53:54]='0'                            B[58:59]='6'   ctxA ...4 3 9 3 | 3 7 6
+   delete  A[72:73]='6'                            B[77:77]=''   ctxA ...9 8 w 6 | 4 1 5
+   replace A[75:77]='5 8'                          B[79:81]='9 9'   ctxA ...6 6 4 1 | 2 1 w
+   delete  A[80:81]='4'                            B[84:84]=''   ctxA ...8 2 1 w | 4 6 w
+   delete  A[96:98]='5 1'                          B[99:99]=''   ctxA ...1 1 5 1 | 6 w 6
+   replace A[102:103]='7'                            B[103:104]='3'   ctxA ...6 w 6 4 | 1 ? w
+   delete  A[106:107]='6'                            B[107:107]=''   ctxA ...7 1 ? w | w 2 4
+== 28v: A 82 signs, B 74 signs, matched 65
+   replace A[2:3]='0'                            B[2:3]='6'   ctxA ...4 4 | 6 1 1
+   replace A[18:21]='2 9 9'                        B[18:21]='7 5 5'   ctxA ...1 1 9 6 | 6 w w
+   delete  A[24:25]='6'                            B[24:24]=''   ctxA ...9 6 w w | w 6 9
+   delete  A[26:27]='6'                            B[25:25]=''   ctxA ...w w 6 w | 9 w 6
+   replace A[29:30]='6'                            B[27:28]='7'   ctxA ...w 6 9 w | 9 6 w
+   replace A[40:42]='6 9'                          B[38:39]='5'   ctxA ...4 w w 6 | 0 5 5
+   replace A[49:51]='9 9'                          B[46:48]='5 5'   ctxA ...7 1 4 1 | 1 1 4
+   replace A[56:58]='6 w'                          B[53:54]='8'   ctxA ...1 4 4 w | 6 4 6
+   delete  A[67:68]='6'                            B[63:63]=''   ctxA ...4 6 w w | w 6 6
+   delete  A[69:70]='6'                            B[64:64]=''   ctxA ...w w 6 w | 6 6 4
+   delete  A[80:82]='w 6'                          B[74:74]=''   ctxA ...9 w w 6 | 
+== 35r: A 57 signs, B 56 signs, matched 47
+   replace A[1:2]='8'                            B[1:2]='w'   ctxA ...4 | 9 1 6
+   replace A[8:9]='3'                            B[8:9]='5'   ctxA ...6 6 6 6 | 1 4 6
+   replace A[12:13]='3'                            B[12:13]='7'   ctxA ...3 1 4 6 | 1 6 6
+   replace A[17:18]='0'                            B[17:18]='w'   ctxA ...1 6 6 3 | 9 1 6
+   replace A[26:27]='6'                            B[26:27]='0'   ctxA ...6 w w 2 | 8 4 0
+   replace A[29:30]='0'                            B[29:30]='6'   ctxA ...2 6 8 4 | w 4 5
+   replace A[37:38]='5'                            B[37:38]='9'   ctxA ...5 1 3 w | 4 6 2
+   replace A[42:43]='5'                            B[42:43]='9'   ctxA ...4 6 2 1 | 5 1 1
+   replace A[54:56]='6 8'                          B[54:55]='w'   ctxA ...6 4 6 w | 4
+== 35v: A 108 signs, B 102 signs, matched 87
+   replace A[10:11]='5'                            B[10:11]='9'   ctxA ...4 6 4 4 | w 5 5
+   replace A[12:14]='5 5'                          B[12:13]='9'   ctxA ...4 4 5 w | 8 4 6
+   replace A[38:39]='6'                            B[37:38]='8'   ctxA ...1 9 1 w | 6 4 w
+   delete  A[45:46]='4'                            B[44:44]=''   ctxA ...w 6 6 w | w 6 2
+   replace A[47:49]='6 2'                          B[45:46]='7'   ctxA ...6 w 4 w | 4 6 2
+   replace A[53:58]='5 5 5 5 5'                    B[50:54]='9 9 9 9'   ctxA ...4 6 2 1 | 1 4 5
+   insert  A[60:60]=''                             B[56:57]='1'   ctxA ...5 5 1 4 | 5 6 w
+   delete  A[73:74]='6'                            B[70:70]=''   ctxA ...1 6 4 w | 2 3 1
+   insert  A[78:78]=''                             B[74:76]='? 9'   ctxA ...2 3 1 9 | w 6 w
+   delete  A[79:80]='6'                            B[77:77]=''   ctxA ...3 1 9 w | w 6 6
+   insert  A[86:86]=''                             B[83:87]='2 5 5 5'   ctxA ...6 6 4 w | 6 2 9
+   delete  A[87:92]='2 9 9 9 w'                    B[88:88]=''   ctxA ...6 4 w 6 | 6 0 1
+   delete  A[93:94]='0'                            B[89:89]=''   ctxA ...9 9 w 6 | 1 1 6
+   delete  A[97:98]='w'                            B[92:92]=''   ctxA ...0 1 1 6 | w 6 9
+== 36r: A 17 signs, B 15 signs, matched 13
+   replace A[0:1]='4'                            B[0:1]='5'   ctxA ... | 6 9 1
+   replace A[4:5]='9'                            B[4:5]='5'   ctxA ...4 6 9 1 | 8 9 7
+   delete  A[6:7]='9'                            B[6:6]=''   ctxA ...9 1 9 8 | 7 1 6
+   delete  A[9:10]='6'                            B[8:8]=''   ctxA ...8 9 7 1 | 6 6 w
+== 53r: A 16 signs, B 14 signs, matched 13
+   delete  A[4:5]='8'                            B[4:4]=''   ctxA ...3 1 5 9 | 6 6 0
+   delete  A[11:12]='9'                            B[10:10]=''   ctxA ...0 w 2 9 | 0 9 8
+   replace A[14:15]='8'                            B[12:13]='w'   ctxA ...9 9 0 9 | 2
+== 56r: A 19 signs, B 18 signs, matched 17
+   delete  A[8:9]='6'                            B[8:8]=''   ctxA ...1 1 4 w | 3 1 5
+   replace A[14:15]='3'                            B[13:14]='5'   ctxA ...1 5 0 5 | w 6 w
+== 57r: A 17 signs, B 18 signs, matched 14
+   replace A[2:3]='3'                            B[2:3]='9'   ctxA ...4 6 | 1 6 6
+   insert  A[11:11]=''                             B[11:12]='6'   ctxA ...1 5 5 4 | 4 w 6
+   replace A[12:13]='w'                            B[13:14]='1'   ctxA ...5 5 4 4 | 6 4 4
+   replace A[16:17]='6'                            B[17:18]='w'   ctxA ...w 6 4 4 | 
+== 63r: A 71 signs, B 63 signs, matched 49
+   replace A[0:2]='9 9'                          B[0:3]='w 5 5'   ctxA ... | 7 1 0
+   delete  A[4:5]='0'                            B[5:5]=''   ctxA ...9 9 7 1 | 6 5 2
+   replace A[6:7]='5'                            B[6:7]='w'   ctxA ...7 1 0 6 | 2 1 5
+   replace A[14:17]='0 4 4'                        B[14:16]='6 9'   ctxA ...6 6 0 w | w 1 1
+   delete  A[20:21]='0'                            B[19:19]=''   ctxA ...4 w 1 1 | 6 7 7
+   replace A[22:23]='7'                            B[20:21]='3'   ctxA ...1 1 0 6 | 7 1 0
+   delete  A[25:26]='0'                            B[23:23]=''   ctxA ...6 7 7 1 | 6 2 5
+   replace A[36:37]='9'                            B[33:34]='5'   ctxA ...5 5 4 4 | 2 2 1
+   replace A[38:39]='2'                            B[35:36]='7'   ctxA ...4 4 9 2 | 1 w 6
+   insert  A[40:40]=''                             B[37:38]='4'   ctxA ...9 2 2 1 | w 6 w
+   delete  A[41:42]='6'                            B[39:39]=''   ctxA ...2 2 1 w | w 2 4
+   delete  A[46:47]='7'                            B[43:43]=''   ctxA ...w 2 4 4 | 3 1 5
+   delete  A[51:52]='9'                            B[47:47]=''   ctxA ...3 1 5 5 | w 6 6
+   replace A[55:59]='6 6 4 1'                      B[50:51]='w'   ctxA ...9 w 6 6 | 1 1 9
+   insert  A[62:62]=''                             B[54:56]='1 5'   ctxA ...1 1 1 9 | 5 6 w
+   replace A[65:66]='w'                            B[59:60]='9'   ctxA ...9 5 6 w | 6 w 6
+   delete  A[68:69]='6'                            B[62:62]=''   ctxA ...w w 6 w | w 6
+   delete  A[70:71]='6'                            B[63:63]=''   ctxA ...6 w 6 w | 
+== 70v: A 13 signs, B 12 signs, matched 11
+   delete  A[5:6]='8'                            B[5:5]=''   ctxA ...2 9 0 w | w 6 6
+   replace A[10:11]='8'                            B[9:10]='w'   ctxA ...w 6 6 6 | 4 1
+TOTAL A 850 B 811 matched 704 agreement 86.8% of B
