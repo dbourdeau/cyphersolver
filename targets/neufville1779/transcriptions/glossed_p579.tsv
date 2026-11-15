@@ -1,0 +1,26 @@
+# Baudouin ("Dun."), letter "Ce 25" [after the letter of 29 Dec 1780], second leaf p.579 (frame 0433a, fol. 180): every code group with
+# de Neufville's interlined gloss. The only glossed code in pp.487-515 and 549-590 (see survey_pp487-515_549-590.tsv). Kept apart from
+# glossed_pp516-548.tsv so that its effect can be measured (round 5, TEST_PLAN.md).
+# Read 14 Nov 2026 by an AI agent on full-resolution crops of the local NARA image, no person has checked it. Pass 1 on a crop of the
+# whole passage; pass 2 on a second crop of each gloss line enlarged (numbers and glosses agree in both passes).
+# Sentence: "M. dufresne [glossed Chaum.] me charge de vous prevenir ... qu'il est d'avis que vous laissiez a M. V. Vort
+#   [68 499 473 202 226], et que vous portiez toutes vos operations a remplir le meme objet [537 428 326]."
+# Gloss over the first group: "L'approvisionnement" over 68 499, then a sign and "La hollande" over 473 202 226. The sign is read as
+# "p" with a looped stroke, the writer's abbreviation of "par"; it could also be "&" or "de", so 473 is marked D. 226 under "hollande"
+# is clear on the image but disagrees with the one earlier vote for 226 ("me", p.606 gloss over "meme").
+# Gloss over the second group: "par les danois". 537 and 326 from this page were already in key/key_pairs_classB_glosses.tsv
+# (round 3); prior = yes marks them, and they are not part of the held-out set.
+# Corrected 15 Nov 2026 (after an independent verifier's check): four pairs of this page, 537 par, 428 les, 326 Danois and
+# 68 l', were already in key/key_additions_round2.tsv (round 2), which scripts/test_round4.py reads without a page filter, so
+# 68 and 428 were in key_full_r4 before T5 scored them. prior is now yes for 68 and 428. T5 as run scored them anyway; of the
+# pairs new to the key (499, 202, 226) it predicts 2 (see NOTES.md).
+# status as in glossed_pp516-548.tsv: G glossed and legible; D doubtful.
+page	line	number	gloss_as_written	unit	status	word	prior	note
+579	1	68	L'	l'	G	l'approvisionnement	yes	in key/key_additions_round2.tsv since round 2 (prior was wrongly 'no' when T5 was run)
+579	1	499	approvisionnemen[t]	approvisionnement	G	l'approvisionnement	no
+579	1	473	p[ar]?	par	D	par	no	sign read as the abbreviation p; & or de not excluded
+579	1	202	La	la	G	la	no
+579	1	226	hollande	Hollande	G	Hollande	no	disagrees with 226 = me (p.606)
+579	2	537	par	par	G	par	yes	in key_pairs_classB_glosses.tsv since round 3, and in key_additions_round2.tsv since round 2
+579	2	428	les	les	G	les	yes	in key/key_additions_round2.tsv since round 2 (prior was wrongly 'no' when T5 was run)
+579	2	326	danois	Danois	G	Danois	yes	in key_pairs_classB_glosses.tsv since round 3, and in key_additions_round2.tsv since round 2
