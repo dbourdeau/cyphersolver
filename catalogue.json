@@ -84490,6 +84490,78 @@
     "verdict": "open"
    },
    "repository": "bnf"
+  },
+  {
+   "id": 2746,
+   "counted": true,
+   "language": "French",
+   "region": "Scandinavia",
+   "period": "1560-1589",
+   "source": "Omont et al., Catalogue general des manuscrits francais (Paris, 1895-1918), OCR at archive.org (NAF II/III/IV, Ancien Saint-Germain III, Anciens petits fonds I-III), 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (15 Nov 2026): known.py and shelfmark grep against catalogue.json, leads.json, targets and sweeps; no web, Tomokiyo or Lasry search made in this sweep",
+   "links": [
+    {
+     "href": "https://gallica.bnf.fr/ark:/12148/btv1b52521512h",
+     "label": "Gallica btv1b52521512h"
+    },
+    {
+     "href": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc51725m",
+     "label": "archivesetmanuscrits cc51725m"
+    }
+   ],
+   "cls": "B",
+   "score_note": "Scored from the printed Omont entry (OCR) on 15 Nov 2026; the leaf itself not viewed. The OCR heading number was checked against Gallica's title where a Gallica record is named.",
+   "year": 1562,
+   "date": "1557-1567",
+   "title": "Charles de Danzay, ambassador in Denmark: correspondence 'originale et en partie chiffree', 1557-1567 (Francais 20140 f. 16)",
+   "correspondents": "Charles de Danzay (French envoy in Copenhagen) -> the French court",
+   "place": "Copenhagen",
+   "shelfmark": "BnF, Manuscrits, Francais 20140 (Recueil de pieces relatives a la Suede et au Danemark, 1557-1706), f. 16 ff.",
+   "folio_note": "fr. 20140 (Gaignieres 679): Danzay correspondence from f. 16 (view 31, letter of 10 Jan 1557); cipher pages ff. 20-23 and later; Omont's folio is correct here.",
+   "status": "Cipher pages seen on Gallica (openapi IIIF views 35-38, 51-54, 61-66 of fr. 20140; view 36 at full size): symbol cipher with plain words interleaved, no decipherment on the pages. Folios = views minus 15.",
+   "why": "Early Danzay cipher letters of the 1550s-60s; a sibling of the 1574 Danzay cipher on Tomokiyo's list, so the change of cipher can be dated and a key may carry over.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Open Gallica btv1b52521512h from f. 16; compare the nomenclator with the Danzay 1574 entry (Cryptoole cryptiana:Danzay to Henry III (1574)).",
+   "folio_gallica": "digitised: btv1b52521512h and btv1b10782904z (title checked: Recueil de pieces relatives a la Suede et au Danemark. (1557-1706))",
+   "region_note": "Denmark",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), Omont NAF sweep vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "openapi.bnf.fr IIIF images of Gallica ark btv1b52521512h (BnF fr. 20140, 'Recueil de pieces relatives a la Suede et au Danemark (1557-1706)'), views 1-68 as thumbnails, views 31 and 36 full size, 15 Nov 2026. The shelfmark is confirmed by the '20.140' label on the cover (view 2), and the Gallica title (SRU, Chrome tab, 15 Nov 2026) matches Omont. Omont's f. 16 is right here: view 31 is stamped 16, headed 'Danemark', dated 10 Jan 1557 (old style) on the left margin, a plain letter, so views = folios + 15.",
+     "extent": "Full pages of symbol cipher on views 35-38 (ff. 20-23), 51-54 and 61-66 on the thumbnails, with partly ciphered pages beside them (views 47-48, 60); about 15 cipher pages in all, from the Danzay letters of 1557 onwards. View 36 (f. 21) read at full size: about 20 lines of Greek-like and numeral-like symbols run together, with plain French words and names interleaved ('pour le grand', 'par plus amplement', 'Andreas'), written in one 16th-century hand.",
+     "cipher": "Monoalphabetic-looking symbol cipher with plain-text words left in the line, and no interlinear, marginal or facing decipherment on the pages seen (a few pages carry short marginal notes, not opened). The volume's other items are printed treaties, the 'Estat present de la Suede' and 17th-century Swedish despatches in plain French."
+    },
+    "prior_art": {
+     "decode": "known.py on the Cryptoole/DECODE snapshot, 15 Nov 2026: no DECODE record for fr. 20140 and none for Danzay except Tomokiyo's 'Danzay to Henry III (1574)' (cryptiana, status solved in the snapshot).",
+     "tomokiyo": "Tomokiyo's Cryptiana lists only the 1574 Danzay to Henry III cipher (code/unsolved.htm, i.e. no contemporary decipherment), a different letter and period; fr. 20140 is not named.",
+     "lasry": "Not named in the GL.htm copy held in targets/gramont1529 (no Danzay or fr. 20140 hit); Lasry's AI-assisted list (sect. 4) is not held locally, so a reading there is not excluded.",
+     "edition": "Danzay's correspondence is studied in a 2015 article (Un diplomate huguenot au service de la couronne de France: Charles de Danzay, ambassadeur au Danemark 1548-1589) said to rest on Danish archives; no decipherment of this volume found. Not read in full.",
+     "literature": "Web search 15 Nov 2026 (Danzay cipher, fr. 20140): nothing on a decipherment."
+    },
+    "searches": [
+     {
+      "query": "known.py Danzay / 20140",
+      "result": "only the 1574 Cryptiana record and this lead."
+     },
+     {
+      "query": "web: Danzay ambassador Denmark cipher 1557-1567 BnF francais 20140 Tomokiyo",
+      "result": "nothing on this volume"
+     }
+    ],
+    "key_check": "No key in the volume or held. Tomokiyo's Danzay 1574 cipher could be compared for shared signs; not tested.",
+    "duplicates": "known.py 'Danzay', '20140' (15 Nov 2026): this lead and its sweep row only.",
+    "verdict": "open"
+   },
+   "repository": "bnf"
   }
  ]
 }
