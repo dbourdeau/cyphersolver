@@ -1182,6 +1182,45 @@
       "kind": "verification",
       "what": "Independent verifier (AI) and a second blind helper transcribed the 9 March Levy and the first 11 April telegrams from the images before seeing the work (107/109 and 67/91 letters agreeing), decrypted their own transcriptions with every known key at every position and got the same words; re-ran the frozen test with identical results; classified the letter corrections against the image (GUAGE, OF, TRAINS) and as image-supported alternatives (COLUMBUS, RAIL).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "solver",
+      "technique": [
+        "hill climbing",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Second 11 April telegram on vol. 11 fr. 0046 (T11, 107 letters), after a frozen plan (blind_2026-11-15/rally_key/key_search/TEST_PLAN.md): known keys used other ways (Beaufort, reversed, restarted, tableau slip), a literature key list and crib dragging all missed; an unconstrained hill-climb over 15-letter Vigenere keys (30 restarts) returned RALLYTOTHEFRONT on reader B1's text (-4.857 against a best of -5.915 on 100 hill-climbed shuffles); on B2's it stopped at GQHAYTOTHEFRONT (11 of 15 letters). Its calibration missed its own mark: 12 of 15 key letters on 5 of 7 known telegrams was required; 3 of 7 for both readers, 5 of 7 for either.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "transcription",
+      "what": "Verification: two further blind transcriptions of T11 by AI helpers told nothing of the key (frozen before decryption): 107 letters, 22 dash-separated groups each; 104 of 107 letters agree, 98-101 with the earlier readers B1 and B2. Both read every one of the clerk's E/F as E, V as Y and the gutter M as D. Both, separately, found faint pencil numerals over cipher letters 30, 45, 60, 75, 90 and 105 (none over 15) and an unclear mark over letter 20.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "control",
+      "technique": [
+        "key matching",
+        "statistical test"
+      ],
+      "what": "Frozen verification test (rally_key/verification/TEST_PLAN_verify.md): RALLYTOTHEFRONT on each new helper's first choices, groups giving dictionary words, mark 15 of 22 and 17 of 25 on both, every control below. Miss: 11 of 22 and 12 of 25 on both; controls (400 random English-like keys; the four known keys at all offsets) at most 5 of 22. A second frozen test, a blind classifier on 14 shuffled E/F tiles (this clerk's E has a lower-right tick, his F not), sorted 12 of 14 as the key predicts (mark 12): pass.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "reading",
+      "what": "New: T11, 11 April 1865, Surget at Meridian to Maury at Mobile (v11-0046b-maury_*), key RALLYTOTHEFRONT from the first cipher letter: 'Let me know EXACTLY HOW LONG YOU WI[L]L HOLD THE CITY as the RUNNING OF THE TRAINS DEPENDS on that. If you can HOLD ON UNTIL NINE O CLOCK TOMORROW Can have four or five ADDITIONAL TRAINS THERE.' All 22 groups give words; one letter is a correction against the image (20, T read, J needed: a hole), ten are image-supported choices, two (the gutter M, a C under a blot) are possible but unsettled. Fits OR I/49/2 pp. 1225-1226 and 1255 (Mobile evacuated on the night of 11 April); not printed there. Not in profile.outcome.texts and no reading review recorded: left to the reviewers.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "literature search",
+      "what": "RALLY TO THE FRONT as a Confederate key or watchword: not in this folder, the repository, OR I/49 pts. 1-2, Friedman's Lecture No. 4 and Introduction to Cryptology IV (keys COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION, IN GOD WE TRUST), Plum (1882) vols. 1-2, Bates (1907) or an Internet Archive full-text search. Not opened: Gaddy's chapter in Masked Dispatches (download refused), Kahn's The Codebreakers, Gaddy's Cryptologia articles. The key on every other cipher stream of the folder at all phases: no English.",
+      "result": "failed"
     }
   ],
   "outcome": {

@@ -151,6 +151,13 @@ not checked. We know of no modern decipherment of these letter-book passages; th
   readers agree on 0.953 of its letters, so a new key or convention is needed - blocker: none outside); fr. 0046 upper
   telegram, nine middle cipher words (`v11-0046a-maury_*`; flowing capitals, readers agree on about two letters in
   three - blocker: legibility, a person's reading of the image would help).
+- 15 Nov 2026, later (Andrew Beling, with AI agents; `blind_2026-11-15/rally_key/README.md`): the fr. 0046 lower
+  telegram is decrypted with a new key, RALLY TO THE FRONT (`v11-0046b-maury_*`), verified on two further blind
+  transcriptions. Still open there: WI[L]L needs J where the image shows the clerk's T (a hole); the M of EXACTLY at
+  the gutter and the C of CLOCK under a blot are not settled; whether the key was used on any other telegram (none of
+  this folder's cipher streams gives English under it) and where it came from (not in Official Records ser. I vol. 49,
+  Friedman, Plum or Bates; Gaddy's chapter in *Masked Dispatches*, Kahn and Gaddy's *Cryptologia* articles not opened)
+  - blocker: none outside. The first-pass candidate in `v11-0046_working.txt` is superseded by the new files.
 
 None of these has an outside blocker, so this is not a stopping point: the folder stays "in progress" until the
 remaining passages are read (mechanical with the known key; vol. 10 probably COMPLETE VICTORY).
@@ -163,7 +170,8 @@ remaining passages are read (mechanical with the known key; vol. 10 probably COM
 - [x] print: OR I/49 pts. 1-2 searched; two telegrams printed, two not found.
 - [n/a] key-rebuild: the key is known.
 - [ ] retry: the remaining passages of vols. 10, 11 and 196 (PR #388 added seven alignments, 9-10 Nov 2026;
-  11 April fr. 0046 retried under five keys, Vigenere/Beaufort/variant and all shifts, no reading).
+  11 April fr. 0046 retried under five keys, Vigenere/Beaufort/variant and all shifts, no reading; 15 Nov 2026 the
+  lower telegram decrypted with a new key found by hill-climbing, RALLY TO THE FRONT, `blind_2026-11-15/rally_key/`).
 
 ## Files
 
@@ -629,3 +637,37 @@ Work by AI readers (Claude, Opus), not checked by a person. Details, figures and
   their own transcriptions with every known key at every position and got the same words.
 - **Not changed:** `profile.json` outcome, read shares and reading reviews. The two new telegrams are not yet entries
   in `outcome.texts`; their reading review is the reviewers' to record.
+
+## 15 November 2026 — the second 11 April telegram decrypted with a new key, RALLY TO THE FRONT (Andrew Beling, with AI agents)
+
+Work by AI agents (Claude, Opus), not checked by a person. Details, figures and files: `blind_2026-11-15/rally_key/README.md`.
+
+- **Telegram.** Vol. 11 fr. 0046, left page, lower telegram (`v11-0046b-maury_reading.md`): Meridian, 11 April 1865,
+  E. Surget, A.A.G., to Maj. Gen. D. H. Maury, Mobile; 107 cipher letters in 22 groups. It failed every known key in
+  the blind test above.
+- **Key.** RALLYTOTHEFRONT, standard Vigenère, key from the first cipher letter, over cipher letters only (the rule of
+  the rest of the folder). Found by an unconstrained hill-climb over 15-letter keys after a frozen plan; the key that
+  came out is an English phrase. The search's calibration missed its own mark (12 of 15 key letters on 5 of 7 known
+  telegrams: 3 of 7 for both readers, 5 of 7 for either), so the find rests on the decryption and its checks.
+- **Reading.** "Let me know EXACTLY HOW LONG YOU WI[L]L HOLD THE CITY as the RUNNING OF THE TRAINS DEPENDS on that. If
+  you can HOLD ON UNTIL NINE O CLOCK TOMORROW Can have four or five ADDITIONAL TRAINS THERE." All 22 groups give
+  words. WI[L]L needs J where every reader reads the clerk's T: a hole. Ten letters are readers' alternatives or
+  shape readings the image supports, two are possible but unsettled (`v11-0046b-maury_decryption.txt`).
+- **Verification.** Two new blind transcriptions (104 of 107 letters agree). Frozen test on their first choices:
+  11 of 22 groups give words, **a miss** against the mark of 15 (12 of 25 against 17); every control 5 or below
+  (400 random keys; the four known keys at all offsets). The misses come from three misreadings the image settles:
+  this clerk's F (his E without the lower-right tick, read E by both), V (read Y) and the gutter M (read D). A blind
+  shape test on 14 shuffled E/F letters sorted 12 as the key needs (mark 12).
+- **Pencil.** Faint numerals "15" stand over cipher letters 30, 45 (very faint), 60, 75, 90 and 105, none over 15,
+  and an unclear mark over letter 20 (the letter the reading cannot take from the image); seen by two blind helpers
+  separately and by the verifier.
+- **Other telegrams.** The key at all phases on every cipher stream of this folder, including the nine unread words of
+  the first 11 April telegram: no English.
+- **Literature.** The phrase is not a key in Official Records ser. I vol. 49 pts. 1-2, Friedman's Civil War lectures
+  (which list COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION and IN GOD WE TRUST), Plum or Bates, nor in an
+  Internet Archive full-text search. Not opened: Gaddy's chapter in *Masked Dispatches*, Kahn, Gaddy's articles.
+- **Fit.** OR I/49/2 pp. 1225-1226 (Gibson withdraws the Mobile infantry and artillery on the night of 11 April;
+  Bullock's clear telegram to Maury the same day) and p. 1255 (Taylor: "Mobile was evacuated by General Maury on night
+  of 11th"). Not printed there.
+- **Not changed:** `profile.json` outcome, read shares and reading reviews; the telegram is not an entry in
+  `outcome.texts` (its reading review is the reviewers'). `key.md` notes the second key.
