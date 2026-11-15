@@ -155,3 +155,18 @@ often for a token sequence to align to it, so the boxes cannot be used to relabe
 detector itself is the limit, as on R5464 (sforza1597).
 Routes left for the theta / + vs t / o vs O splits: (a) a second by-eye pass over the 3x crops with a strict legend for these shapes
 only; (b) a human CTTS session drawing boxes; (c) higher-resolution images from ASMi (`../sforza1597/asmi_request_draft.md`, unsent).
+
+## 15 Nov 2026 (later): second pass by eye on the look-alikes
+Note: R5514 has 27 transcription lines (its l. 15 is split around a clear passage), so the train / holdout cut is after line 38 of
+t3-t7, not 37 as in the earlier scores; scores below use the corrected cut and are not comparable with the earlier ones.
+- o with a right tail: on 4x crops of R5518 the "o -" pairs are one sign, the O of R5514/R5517 (o with a tail). Merged 7 times (`t5.txt`).
+  O = v stays best (-7920 / -6000 against -7954 / -6004 unmerged).
+- Barred o: two shapes, plain (bar inside the o, e) and long-barred (bar out both sides, E). Re-read R5514 ll. 4, 10, 15, 24, 25 on the
+  crops (`t6.txt`) and R5518 l. 9 ("beneficio": long-barred, `t7.txt`). E = f by context ("a haver fare", "spero ne faro seguire",
+  "beneficio") although the segmentation score prefers t or e by 20-30 (it under-rates f); plain e = t ("scrito", "aspetto", "civita").
+  "fornire" (R5518 l. 8) and "Francesco" (R5517) also need f; their shapes were not re-checked. Key `key_h4.json`, decryption `dec_h4.txt`.
+- Word share (4-12 letters): R5518 0.439, R5514 0.498, R5517 0.425; before this pass 0.430 / 0.501 / 0.427. Flat.
+Reading of the result: the look-alikes were not what holds the share near 45 %. The decryptions read in phrases but most lines still
+have unread stretches between them; the likelier causes now are word signs and syllable signs in a nomenclator part (the "-T" sign looks
+like one), misread rare signs, and the 1-in-10 transcription errors a by-eye reading leaves. Next options: list the frequent unread
+cipher strings and test them as nomenclator entries; or get the ASMi images and re-transcribe.
