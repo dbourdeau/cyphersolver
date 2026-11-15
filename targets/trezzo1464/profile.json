@@ -1,0 +1,243 @@
+{
+ "schema_version": 1,
+ "target": "trezzo1464",
+ "title": "Antonio da Trezzo, King Ferrante's camp, to Francesco Sforza: cipher slip of 8 Sept 1464 (BnF italien 1590, f. 392; catalogue 1320)",
+ "documents": [
+  {
+   "id": "bnf-ital1590-f392",
+   "read": "not read",
+   "shelfmark": "BnF, italien 1590, f. 392 (Gallica btv1b10037390v, view 393)",
+   "date": "8 Sept 1464",
+   "year": 1464,
+   "country": "Italy",
+   "route": "Antonio da Trezzo (Milanese ambassador with King Ferrante) -> Francesco Sforza / Cicco Simonetta",
+   "places": {
+    "from": "Kingdom of Naples, royal camp",
+    "to": "Milan"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none: no decipherment on or with the slip; f. 393 is the covering clear letter of the same day, not a translation (catalogue vetting of 11 Nov 2026)"
+   },
+   "length": {
+    "tokens": 411,
+    "distinct": 109,
+    "unit": "symbols",
+    "measured": true,
+    "file": "c392.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "openapi.bnf.fr IIIF full-size image of view 393, cut into line strips (lines.py)",
+    "image_quality": "good",
+    "notes": "One pass by one AI agent, made before any key; labels describe shapes, and one label can cover more than one sign of the key (declared in NOTES). The measured count includes the line marks '|' that the decoders drop (398 sign tokens)."
+   }
+  },
+  {
+   "id": "bnf-ital1590-ff283-284",
+   "read": "not read",
+   "shelfmark": "BnF, italien 1590, ff. 283r-284r (Gallica views 284-285); contemporary translation ff. 281r-282r (views 282-283)",
+   "date": "16 July 1464",
+   "year": 1464,
+   "country": "Italy",
+   "route": "Antonio da Trezzo, camp near Pena -> Francesco Sforza",
+   "places": {
+    "from": "Kingdom of Naples, royal camp near Pena",
+    "to": "Milan"
+   },
+   "language": "Italian",
+   "pages": 3,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary translation ff. 281r-282r, headed in a later hand '1464 16 Juillet, traduction des chiffres'; read here as t281_full.txt. Used as the key source, not counted as a reading of this target."
+   },
+   "length": {
+    "tokens": 3030,
+    "distinct": 221,
+    "unit": "symbols",
+    "measured": true,
+    "file": "c_full_aligned.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "openapi.bnf.fr IIIF full-size images of views 284-285, deskewed (-3.75, -2.5, -3.25 deg) and cut into line strips",
+    "image_quality": "good",
+    "notes": "One pass by one AI agent. The measured count includes line marks and superscript variants; 2,792 sign tokens go into the alignment."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Continuous signs, no word division, about 1.7 clear letters per sign: letter signs, syllable signs and common-word signs (aligner: qa et, t che, h' non, Lu per, 4π er, 4e es, ar en, 8 al, δπ in, z ad, hr ell, L^a sua, L^u la S.V.), vowel strokes written after or above a base sign.",
+  "symbol_kind": "letters and symbols",
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "word_division": "none",
+  "sibling_key": "rebuilt from the cipher letter ff. 283r-284r and its contemporary translation ff. 281r-282r in the same volume",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of f. 392 known: no DECODE record, nothing in Tomokiyo or Lasry, no printed Dispacci sforzeschi da Napoli volume for 1464 (catalogue vetting of 11 Nov 2026; re-checked 14 Nov 2026). The sibling letter of 16 July 1464 has its contemporary translation in the volume (ff. 281r-282r).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Arya Sanketbhai Patel ran the session, chose the route (rebuild the key from the sibling letter rather than wait for a DECODE login) and checked the DECODE listing. An AI agent transcribed, aligned, decoded and wrote the notes. No palaeographer checked the transcriptions.",
+  "models": [
+   "AI coding agent (model not named by the contributor)"
+  ],
+  "first_date": "2026-11-14",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Prior-art re-check (catalogue vetting re-read; repository searched for italien 1590 and Trezzo): no decipherment of f. 392 known.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "technique": [
+    "other"
+   ],
+   "what": "DECODE key sheets of ASMi Sforzesco cart. 1597 (one of R5329-R5344 is Antonio da Trezzo's): record pages are a login shell from this session; not reached.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "f. 392, 13 lines, 398 sign tokens in 68 base shapes (c392.txt), one pass before any key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Syllabic signs: f. 283r line 1 has 25 signs for about 48 letters of its translation; shapes pair a base sign with a written vowel (L^a / L^u / Lo, δa / δu / δo, 4e / 4o / 4a).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "The sibling cipher letter of 16 July 1464, ff. 283r (40 lines), 283v (39), 284r (11), deskewed and cut into strips (c283.txt, c284.txt), and its contemporary translation ff. 281r-282r expanded to 4,677 letters (t281_full.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Soft-EM aligner (targets/duben1764/fb.py) on f. 283r lines 1-26 against translation lines 1-22: top-share 0.335 (superscripts split 0.319, dropped 0.297; plaintext cut to 60-95 %: 0.32-0.35).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Same plaintext enciphered in a synthetic 70-sign syllabic code (control.py): clean 0.993, 20 % misread signs 0.789, 40 % 0.611; with the clear running 25 % past the cipher, 0.297; free-end and tail-cost variants of the aligner fail the noisy controls. The partial-letter run is therefore not decidable; both ends must be fixed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "solver",
+   "technique": [
+    "EM alignment"
+   ],
+   "what": "Whole letter, cipher 283r-284r.10 (2,792 tokens) against the translation to 'del tucto' (4,677 letters), both ends fixed: top-share 0.589 (controls at the same size: 20 % noise 0.787, 40 % noise 0.611). Key key_full_v1.json; frequent signs consistent (qa et 54/62, ot d 70/89, 4π er 67/83, h' non 15/16, hr ell 8/8), the commonest label p split between t, r and p.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "language-model scoring",
+    "key matching"
+   ],
+   "what": "f. 392 decoded with key_full_v1.json (top values, decode392_keytop.txt) and refined by it-cinquecento score with the key as prior (refine.py, lambda 3, decode392_refined.txt): Italian fragments that fit the context ('restitutione', 'quali hanno effecto', 'desiderio essere', 'alcuno che', 'la S.V.', 'amici', 'nella'), no sentence holds. Decoded, not read; no strict count made.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was rebuilt by aligning the sibling cipher letter of 16 July 1464 (ff. 283r-284r) with its contemporary translation in the same volume (ff. 281r-282r); f. 392 decodes with it into Italian fragments only.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "notes": "Status in progress. f. 392 decoded, not read (Italian fragments, no sentence). Key partial: the alignment fits at the level of a 40 %-noise control; the transcription labels lump shapes the key distinguishes. Open: re-transcription with finer sign distinctions; the DECODE Trezzo key sheet (R5329-R5344, login) and Cerioni 1970 untested.",
+  "credits": [
+   {
+    "who": "arya",
+    "role": "solution",
+    "date": "2026-11-14",
+    "note": "f. 392 and the sibling letter ff. 283r-284r transcribed; key rebuilt from the sibling and its contemporary translation; f. 392 decoded in fragments; targets/trezzo1464/"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "bnf-ital1590-f392",
+    "label": "f. 392, 8 Sept 1464: sign transcription and fragmentary decode with the key rebuilt from the 16 July letter",
+    "transcription": "c392.txt",
+    "decryption": [
+     "decode392_keytop.txt",
+     "decode392_refined.txt"
+    ],
+    "state": "decoded, not read",
+    "language": "it",
+    "note": "Italian fragments only ('restitutione', 'quali hanno effecto', 'desiderio essere', 'alcuno che', 'amici'); no sentence holds."
+   }
+  ],
+  "key_file": "key_full_v1.json"
+ }
+}
