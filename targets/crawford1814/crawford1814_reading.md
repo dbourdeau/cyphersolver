@@ -11,7 +11,7 @@
 I am inclined to believe that this government has come to a determination to sacrifice every thing for the
 friendship of England. The use of the Telegraphs has been granted to Lord Wellington, to enable him to ascertain with
 the greatest dispatch what passes in Belgium. The King, so far from viewing with an eye of jealousy the augmentation
-of British [troops] and others in British pay in that country, looks to that force for protection against his own
+of British troops and others in British pay in that country, looks to that force for protection against his own
 people. It is reported and believed that a conspiracy has been discovered, at the head of which they have placed
 Savary. Those opposed to the government [say] that this conspiracy is the creature of the police, fabricated to
 countenance the arrest of about thirty persons, of whom the court is afraid. [A] report also prevails to day that the
