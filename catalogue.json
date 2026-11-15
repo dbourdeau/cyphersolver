@@ -79588,7 +79588,7 @@
    "region": "Germany",
    "period": "1497-1559",
    "shelfmark": "Sächsisches Hauptstaatsarchiv Dresden, Geheimes Archiv, Loc. 8183, Friesländische Sachen 1510-1514 (e.g. fol. 203-206); microfilm and item descriptions at Tresoar (Leeuwarden), toegang 1 Bestuur van de Saksische hertogen over Friesland, nos. 1134-1136, 1141, 1148, 1171, 1174, 1178, 1179, 1368, 1369, 1371, 1372, 1380, 1393-1397, 1402-1405, 1407, 1412, 1420, 1421, 1430, 1432",
-   "folio_note": "29 letters described as in or partly in 'geheimschrift' (list in vetting.seen.extent). 14 have a contemporary clear copy or minute beside the despatch (9 headed 'afschrift (ontcijfering)': 1369, 1371, 1380, 1394-1397, 1404, 1412; plus 1134, 1148, 1171, 1174, 1178). 15 are despatch only (1135, 1136, 1179, 1368, 1372, 1402, 1403, 1405, 1407, 1420, 1421, 1430, 1432 and the two copies of 21 June, 1141/1393); of these 1432 (5 June), 1420 (10 July) and 1402 (6 Sept) carry almost no summary in the inventory.",
+   "folio_note": "OPEN PART (narrowed in the 15 Nov 2026 audit): the 15 despatch-only letters (1135, 1136, 1179, 1368, 1372, 1402, 1403, 1405, 1407, 1420, 1421, 1430, 1432 and the two copies of 21 June, 1141/1393); 1432 (5 June), 1420 (10 July) and 1402 (6 Sept) carry almost no summary in the inventory. The other 14 of the 29 letters have a contemporary clear copy or minute beside the despatch (9 headed 'afschrift (ontcijfering)': 1369, 1371, 1380, 1394-1397, 1404, 1412; plus 1134, 1148, 1171, 1174, 1178): those are read from existing decipherment, not open, and serve as the crib for the 15.",
    "cls": "A",
    "status": "Tresoar inventory (P. Baks) describes each letter; it summarises the contents of most of the despatches that have no clear copy, so the inventory maker could read at least part of them (clear passages, or the key rebuilt from the siblings). No printed decipherment found. Not on DECODE. Images: Tresoar holds microfilm only; nothing online.",
    "why": "The duke's own war despatches of 1514 (siege of Appingedam, money for the Black Band, the Guelders threat) in an early German princely cipher with 14 cipher/clear pairs in the same volume.",
@@ -79647,7 +79647,8 @@
     ],
     "key_check": "No key known. The Saxon HStA Dresden holds over 1,300 folded cipher keys (Rous 2022); one for George's 1514 correspondence with Pflug may be among them, not checked. The 14 despatch-plus-clear-copy pairs in the same volume give known plaintext. One key (George to Pflug), as in the lead.",
     "duplicates": "known.py on 'Pflug', 'Georg von Sachsen', 'Boner', 'Hasselaer' (14 Nov 2026): only this lead, sweep rows of 11 and 14 Nov (lead 2712 is the same bundle, closed as its duplicate) and the Dutch OAI README. No catalogue entry holds Loc. 8183 or Tresoar toegang 1.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A filed decipherment covers 14 of 29 letters only; the 15 despatch-only letters have none. Entry narrowed to those 15; the 14 pairs are the known plaintext."
    },
    "repository": "hstadd"
   },
@@ -79718,7 +79719,8 @@
     },
     "key_check": "No key held or known for a Brandenburg-Waldeck cipher of 1655 (known.py and DECODE: nothing). The target waldeck1744 is a different Waldeck and a different, three-digit code. None tried: no transcription yet.",
     "duplicates": "known.py \"Culemborg\", \"Georg Frederik\", \"Keurvorst\", \"Waldeck\": no entry for this volume; catalogue waldeck1744 (HStAM 118 a 3954) and the Hohenlohe \"Georg Friedrich\" entry are other people and archives.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). Already narrowed on 12 Nov 2026 to the pieces not read in the Friedrich Wilhelm target."
    },
    "source": "archieven.nl sweep (OAI-PMH and site search, 11 Nov 2026)",
    "ark": "",
@@ -80732,551 +80734,6 @@
    "repository": "unidentified"
   },
   {
-   "id": 2585,
-   "counted": true,
-   "year": 1705,
-   "date": "1705",
-   "language": "French and German (not stated)",
-   "region": "Other",
-   "period": "1701-1800",
-   "title": "Neuchatel succession: agents' reports of Jan-Jul 1705, 'teils chiffriert mit Entzifferung' (deciphered copies filed with the ciphertext), Rep. 64 Nr. 695",
-   "correspondents": "Count Ernst von Metternich (Prussian commissioner), Emer de Montmollin, the Bondeli brothers, Spanheim (London), Strunckede and others -> Frederick I of Prussia / the Prussian court",
-   "place": "Neuchatel / Berne / Regensburg / London",
-   "shelfmark": "GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 695",
-   "folio_note": "Nr. 695 only (Jan-Jul 1705). Sibling volumes with the same description, not part of this entry: Nr. 686, 696-706, 713, 750, 752, 969.",
-   "cls": "A",
-   "status": "Finding aid as quoted; no decipherment published that the sweep found. Each volume files the contemporary Entzifferung beside the ciphered letter, so the plaintext is in the same volume.",
-   "why": "Prussia took over the principality of Neuchatel in 1707 (the Orange succession); the agents' ciphered letters come with their contemporary deciphered copies, a large known-plaintext set from one chancery, with several correspondents and so several keys.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order Nr. 695, 699 and 701 (three correspondents); check whether each ciphertext has its Entzifferung on the facing sheet; if so, build the key per correspondent from the pairs.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++cfcfccc1-23f5-5ffe-bc20-9325009541e5",
-     "label": "Rep. 64 Nr. 695"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++ad3f89f4-4ba7-5f75-91d3-ca5d2676e4dc",
-     "label": "Rep. 64 Nr. 699"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++14b24e3f-3af5-5f80-9cba-0cc3454eff08",
-     "label": "Rep. 64 Nr. 701"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++b4a04072-bff8-5cbc-873c-92a1994670f2",
-     "label": "Rep. 64 Nr. 969"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), reachable-unlooked sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 sweep (research/sweep_2026-11-14_reachable_unlooked/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py on the fonds, number and correspondents (catalogue, leads, targets, DECODE and HCPortal dumps) finds nothing on this shelfmark; the Archivportal-D sweeps of 26 Oct and 2 Nov did not list it; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked (the record page shows digital objects when there are any); scans must be ordered from GStA PK, Berlin-Dahlem, or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), reachable-unlooked sweep follow-up",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 64 (Neuchatel) Nr. 695, fetched from a Chrome tab on that origin on 14 Nov 2026; no digital copy or image attached to the record.",
-     "extent": "One volume, Nr. 695, January to July 1705: reports of the Prussian and allied agents, Metternich at Regensburg, Dupuy at Berne, Schmettau at The Hague, Manget at Geneva, Aglionby at Zurich, Spanheim at London. Leaves not counted by the record.",
-     "cipher": "Archive description, verbatim: 'Berichterstattungen (teils chiffriert mit Entzifferung) und Denkschriften der preussischen oder allierten Agenten'; the same file holds instructions 'mit Mitteilung der Chiffrierung, 30. Januar 1705'. The ciphertext and its contemporary Entzifferung are in the file. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Neuchatel' and 'Neuchâtel' on 14 Nov 2026: one picture postcard (record 3490), no GStA PK material.",
-     "tomokiyo": "Web search naming Tomokiyo, Cryptiana and Neuchatel or Prussian ciphers of the 1700s (14 Nov 2026): no Cryptiana page on the Neuchatel succession ciphers.",
-     "lasry": "Same search for Lasry and Prussian diplomatic ciphers: only his papers on Mary Stuart, papal and Saxon ciphers; nothing on Prussian Neuchatel files.",
-     "edition": "HLS article on Metternich cites Piaget 1933, Stelling-Michaud 1935 and Bachmann 1993 (Die preussische Sukzession in Neuchatel); none opened, none known to print the cipher letters. Bourgeois 1887 stops at 1713 per the 11 Nov German sweep, not opened here.",
-     "literature": "Web search on the succession, Metternich, Bondeli, Dupuy and 'correspondance chiffree' (14 Nov 2026): background histories only, nothing on these ciphers or their decipherment."
-    },
-    "searches": [
-     {
-      "query": "decode_search.py Neuchatel; Neuchâtel (de-crypt.org RecordsList)",
-      "result": "One postcard, record 3490; no GStA PK holdings on DECODE."
-     },
-     {
-      "query": "Neuchâtel succession 1705 Metternich Bondeli Dupuy correspondance chiffrée déchiffrement édition (web search)",
-      "result": "HLS, BPUN and state-archive guides; no edition or decipherment of the ciphered reports."
-     },
-     {
-      "query": "Tomokiyo cryptiana Prussia Neuchâtel cipher 1700s OR Lasry Prussian diplomatic cipher 18th century (web search)",
-      "result": "No Cryptiana or Lasry item on Prussian Neuchatel ciphers."
-     }
-    ],
-    "key_check": "No Neuchatel key is held in the repository. The archive files a cipher table of 1703 in Rep. 64 Nr. 944 and Chiffrierung notes in Nr. 777; neither is online, so nothing was tried.",
-    "key_in_volume": "The contemporary Entzifferung is filed with the ciphered reports in the same volume (Nr. 695), per the archive description; not online, not tested.",
-    "key_held": "GStA PK I. HA Rep. 64 Nr. 944 (cipher table sent 8 Nov 1703) and Nr. 777 (Chiffrierung notes 1742-48); not online, not tested.",
-    "duplicates": "known.py 'Rep. 64', 'Neuchatel', 'Metternich' on 14 Nov 2026: catalogue 2494 (Nr. 828, 1758) and leads 2495-2497 and 2586-2587 are other volumes; no entry for Nr. 695.",
-    "verdict": "open"
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2599,
-   "counted": true,
-   "year": 1747,
-   "date": "1747",
-   "language": "German with French Aufloesung",
-   "region": "Germany",
-   "period": "1701-1800",
-   "title": "Frederick II's ciphered cabinet orders to his envoy Klinggraeffen at Dresden, 1747, 'mit Aufloesung in franzoesischer Sprache', Rep. 81 Dresden Nr. 782",
-   "correspondents": "Frederick II -> Joachim Wilhelm von Klinggraeffen (Prussian envoy at Dresden)",
-   "place": "Potsdam / Berlin / Dresden",
-   "shelfmark": "GStA PK, I. HA Rep. 81 (Gesandtschaft Dresden), Nr. 782",
-   "folio_note": "Nr. 782 only (1747, Bd. 2 of the series). Sibling volumes with the same description, not part of this entry (one correspondent and period each): Nr. 781 (1744/46, Klinggraeffen and orders to Buelow, Anhalt-Dessau, Rutowsky, Wallenrodt), Nr. 783 (1748, Klinggraeffen and Voss), 784 (1748, Voss), 785-786 (1749-50, Voss), 787-790 (1750-55, Maltzahn), 791 (1756, Maltzahn). The sweep row named only Klinggraeffen; the finding aid shows Voss and Maltzahn from Nr. 783 on.",
-   "cls": "A",
-   "status": "Finding aid as quoted: every order is filed with its contemporary deciphered (French) form, so the plaintext of a whole run of Frederick II's cabinet ciphers is in the same volume. No decipherment published that this sweep found.",
-   "why": "The largest paired cipher/plaintext set found in the Prussian foreign ministry's papers: eleven consecutive volumes of one king's orders to one envoy over twelve years, so a key can be rebuilt from pairs and checked across years (cipher changes show as breaks; the 1747 new cipher is in Rep. 41 Nr. 145). One key per correspondent, so the Anhalt-Dessau and Rutowsky pieces of Nr. 781 are separate sub-keys.",
-   "importance": 4,
-   "solvability": 5,
-   "difficulty": 1,
-   "verify": "Order Nr. 781 and 786 (two years apart); check whether the Aufloesung sits on the ciphered sheet; compare with catalogue 590 (Frederick II / Ulrike) and 593; look for Frederick's Dresden cipher in Rep. 41 Nr. 145 and the Rep. 81 Dresden key volumes.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++063a7477-5db7-428e-b071-86718eb0b8f4",
-     "label": "Rep. 81 Dresden Nr. 781"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++6a33a4e0-eec1-4400-a222-a44f65ee8a6e",
-     "label": "Nr. 782"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++2560e660-e486-453b-88bd-b3a79d2ac1e5",
-     "label": "Nr. 783"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++3168c8ec-b30f-4220-848a-5e7d5eeb9f00",
-     "label": "Nr. 784"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++3b8cb860-9412-42b4-8106-0a6e628eee8e",
-     "label": "Nr. 785"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++1b1842ac-4913-484b-b456-0eb6e35dc1a7",
-     "label": "Nr. 786"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++aadfe805-0b21-462b-960e-0714725f54c9",
-     "label": "Nr. 787"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++92bb85fe-0e9c-49f9-bef9-dbe158fa012f",
-     "label": "Nr. 788"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++9a567043-56d4-4956-a20b-046a8702b399",
-     "label": "Nr. 789"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++30d13ede-91d5-46c9-bf5b-4c42b9a0d5b1",
-     "label": "Nr. 790"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++d19342b9-2378-42a3-9a0c-f4ffcb5367b1",
-     "label": "Nr. 791"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 81 Dresden Nr. 782, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One volume of 1747; the record gives no leaf count (the neighbouring volumes are 1.5 to 4 cm).",
-     "cipher": "Archive description, verbatim: 'Kabinettsordern Friedrichs II. an den preußischen Gesandten Joachim Wilhelm von Klinggräf, Bd. 2'; 'Enthält v. a.: - chiffrierte Kabinettsordern mit Auflösung in französischer Sprache.' The ciphertext and its contemporary French Auflösung are in the file. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Klinggräff', 'Klinggraeffen', 'Maltzahn' and 'Voss' on 14 Nov 2026: 0 records; 'Friedrich II' returned two Saxon-envoy letters in the Hague royal house archive (records 1043-1044), no GStA PK material.",
-     "tomokiyo": "Web search naming Tomokiyo, Cryptiana, Frederick II's cabinet ciphers and Klinggraeffen (14 Nov 2026): no Cryptiana page on Prussian cabinet-order ciphers of the 1740s-50s.",
-     "lasry": "Same search for Lasry: his papers on Mary Stuart, papal and 1900-15 German diplomatic ciphers; none on Frederick II's Dresden ciphers.",
-     "edition": "Politische Correspondenz Friedrichs des Grossen vol. 5 (1746-47; Internet Archive politischecorres05fred, OCR searched 14 Nov 2026): no item is headed as an order to Klinggraeffen at Dresden; the volume only mentions orders to him 'en chiffres' (e.g. Podewils note of 16 Feb 1746) and prints Frederick's orders to Podewils and Hennicke. No printed decipherment of the 1747 Dresden orders was found; vol. 6 (1748) and later not searched.",
-     "literature": "Web search 'Maltzahn Voss Dresden 1750 Kabinettsordern chiffriert' (14 Nov 2026): only the Trier PC catalogue (orders to Voss 13 Jan 1750 are listed); no study of these ciphers. Carlyle's Frederick II (vol. 17) tells of Maltzahn and the Saxon copyist Menzel at Dresden 1752-56, the plaintext side of the Saxon file (catalogue 593)."
-    },
-    "key_check": "No key is held here. The contemporary Auflösung is filed in the volume; the archive also files Frederick's 1747 cipher change in Rep. 41 Nr. 145 (per the sweep); neither is online, nothing was tried.",
-    "duplicates": "known.py 'Klinggr', 'Dresden', 'Rep. 81' on 14 Nov 2026: catalogue 593 is the Saxon cabinet's copies of Klinggraeffen's ciphered reports (HStA Dresden), the other side of this correspondence, not this file; no entry for Nr. 782 or its siblings; lead 2599 only (Nr. 781-791 before narrowing).",
-    "searches": [
-     {
-      "query": "Politische Correspondenz Friedrichs des Grossen Klinggräffen Dresden 1748 Kabinettsordre chiffriert Dechiffrement (web search)",
-      "result": "Trier PC catalogue pages (instruction for Klinggraeffen 30 Jan 1746; letters to him at Hanover 1748); no word on ciphered orders at Dresden."
-     },
-     {
-      "query": "PC vol. 5 OCR (politischecorres05fred_djvu.txt): headings 'AN ... IN DRESDEN' and 'Klinggr*' near 'chiffr*'",
-      "result": "Two headings to Graf Hennicke in Dresden only; Klinggraeffen's name occurs 52 times in notes and instructions; 'en chiffres' mentioned once (16 Feb 1746); no order to him printed."
-     },
-     {
-      "query": "Maltzahn Voss Dresden 1750 Kabinettsordern Friedrich II. chiffriert Auflösung französisch Brühl Gesandter Chiffre Edition (web search)",
-      "result": "Only Trier PC catalogue metadata (Voss 13 Jan 1750, Maltzahn 1751-56); nothing on these ciphers."
-     },
-     {
-      "query": "Tomokiyo Cryptiana Prussian diplomatic cipher Frederick the Great deciphered cabinet orders Klinggräffen (web search)",
-      "result": "Cryptiana and Klaus Schmeh's blog items on Mary Stuart, Louis XIV and Frederick I of Prussia's transposition ciphers; nothing on Frederick II's cabinet ciphers or Klinggraeffen."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "Each order is filed 'mit Auflösung in französischer Sprache' in the same volume (per the archive description); not online, not tested.",
-    "key_held": "GStA PK I. HA Rep. 41 Nr. 145 (Klinggraeffen's cipher 1746-47, per the 14 Nov sweep) and Rep. 63 Nr. 1472 (1758 cipher system); not online, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2600,
-   "counted": true,
-   "year": 1748,
-   "date": "1747-1748",
-   "language": "German or French (not stated)",
-   "region": "Germany",
-   "period": "1701-1800",
-   "title": "Ciphered letter of an Austrian envoy at Berlin with its Aufloesung, filed in the Prussian Dresden legation papers, 1747-48",
-   "correspondents": "Joseph von ... (Austrian envoy at Berlin, name cut off in the listing seen) -> Vienna / Dresden",
-   "place": "Berlin / Dresden",
-   "shelfmark": "GStA PK, I. HA Rep. 81 (Gesandtschaft Dresden), Nr. 798",
-   "folio_note": "Nr. 798 (1747-48): two ciphered letters 'mit Auflösung' (Bernes to Maria Theresia 13 May 1747; Weingarten to Uhlefeldt 1748). The two senders may use different keys: they are one lead because only two letters survive and the record gives one volume.",
-   "cls": "A",
-   "status": "Finding aid as quoted; probably an intercept, deciphered by the Prussian cabinet. Neighbouring volumes 782-784 hold the same years.",
-   "why": "An Austrian diplomatic cipher in Prussian hands with the Prussian decipherment: a different key from the Prussian orders next door, and a small paired text from the 1747-48 diplomatic round.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Open the record for the envoy name; compare with the Austrian ciphers of the Haus-, Hof- und Staatsarchiv (Esterhazy 1744 target) and the Prussian intercept collections.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++275c0fd4-f995-4bad-bace-803aff6f7cff",
-     "label": "Rep. 81 Dresden Nr. 798"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 81 Dresden Nr. 798, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One volume of 1747-48, 0.5 cm: two ciphered letters with Auflösung among a rescript and a copied decree.",
-     "cipher": "Archive description, verbatim: 'Enthält auch: - chiffriertes Schreiben mit Auflösung von dem österreichischen Gesandten Joseph von Bernes an Maria Theresia, 13.5.1747 - chiffriertes Schreiben mit Auflösung von Weingarten an Graf [Anton Corfitz] Uhlefeldt, 1748'. Remark: the file's earlier title said these reports of the Saxon government 'wahrscheinlich durch Weingarten verraten wurden'. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Weingarten' and 'Bernes' on 14 Nov 2026: 0 hits for Weingarten; 'Bernes' returned five HHStA Staatskanzlei Interiora Chiffrenschluessel records (DECODE 1595-1612, Austrian keys 1740-49 for other envoys), not this file.",
-     "tomokiyo": "Web search naming Tomokiyo, Cryptiana, Prussian diplomatic ciphers and Frederick the Great (14 Nov 2026): nothing on Austrian ciphers of the 1740s or the Bernes and Weingarten letters.",
-     "lasry": "Same search naming Lasry: his Mary Stuart, papal and 1900-15 papers only; no item on Austrian ciphers of the 1740s.",
-     "edition": "No edition known: the Saxon-filed copies of these Austrian reports are not in the Politische Correspondenz (letters to Klinggraeffen are not printed there either, see lead 2599); Menzel's Dresden copies are described in Carlyle, History of Frederick II vol. 17, but his text does not print them.",
-     "literature": "Web search on Weingarten, Menzel and Bernes (14 Nov 2026): Carlyle tells that Weingarten, secretary of the Austrian embassy at Berlin, gave the Prussians the Austrian glosses for two or three years before June 1756; no study of the 1747 ciphers or a decipherment."
-    },
-    "key_check": "Austrian cipher keys of 1740-49 are on DECODE (HHStA Chiffrenschluessel fasc. 21-22, records 1595-1612) for other envoys; none is Bernes or Weingarten's, so none was tried.",
-    "duplicates": "known.py 'Weingarten', 'Bernes', 'Uhlefeldt' on 14 Nov 2026: no entry; catalogue 593 is the Prussian envoy's reports, not Austrian letters.",
-    "searches": [
-     {
-      "query": "Weingarten Bernes Austrian envoy Berlin 1747 cipher betrayed Saxon Menzel Prussian deciphered Maria Theresia Uhlefeld (web search)",
-      "result": "Carlyle's account of the 1756 Menzel-Weingarten affair; nothing on 1747 or on any decipherment."
-     },
-     {
-      "query": "decode_search.py Weingarten; Bernes (de-crypt.org RecordsList)",
-      "result": "Weingarten 0; Bernes five HHStA key-sheet records of other Austrian envoys 1740-49."
-     },
-     {
-      "query": "Tomokiyo Cryptiana Prussian diplomatic cipher Frederick the Great deciphered cabinet orders Klinggräffen (web search)",
-      "result": "Cryptiana and Klaus Schmeh's blog items on Mary Stuart, Louis XIV and Frederick I of Prussia's transposition ciphers; nothing on Frederick II's cabinet ciphers or Klinggraeffen."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "Both letters are filed 'mit Auflösung' in the volume (per the archive description); not online, not tested.",
-    "key_held": "DECODE HHStA Staatskanzlei Interiora Chiffrenschluessel fasc. 21-22 (records 1595-1612), Austrian keys 1740-49 for other envoys; none for Bernes or Weingarten, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2612,
-   "counted": true,
-   "year": 1709,
-   "date": "1709",
-   "language": "French and German (not stated)",
-   "region": "Other",
-   "period": "1701-1800",
-   "title": "Neuchatel succession: Frederick I's rescripts to Count Metternich, Jan-Oct 1709, 'teilsweise chiffriert mit gleichzeitiger Entschluesselung', Rep. 64 Nr. 952",
-   "correspondents": "Frederick I of Prussia -> Count Ernst von Metternich (plenipotentiary in Switzerland and Neuchatel)",
-   "place": "Neuchatel / Regensburg / Berne / Berlin",
-   "shelfmark": "GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 952",
-   "folio_note": "Nr. 952 only (rescripts nos. 268-307 of 13 Jan-29 June 1709 and no. 308 of 26 Oct 1709). Sibling volumes of the old row, not part of this entry: Nr. 953 (Metternich's 1708 drafts, one fragment 'teils chiffriert'), 962 (Dupuy's papers with notes 'Verschluesselungen fuer die Chiffrierung'), 967 (Montmollin's letters 1711-13 'teilweise chiffriert mit gleichzeitiger Entschluesselung'), 992, 994 (Bondeli cipher numbers 176/177), 714, 724, 690. Nr. 722 and the other rows of the old grouping are separate.",
-   "cls": "B",
-   "status": "Finding aid as quoted; these volumes hold cipher keys or cipher-name lists (690, 962, 992, 994) beside the ciphered reports.",
-   "why": "Completes the Neuchatel set of the reachable-unlooked sweep: the key notes (Dupuy, Nr. 962; the 1703 Verschluesselungsangaben, Nr. 690) are what the 21 volumes with Entzifferung (Nr. 686, 695-706) lacked as a table. One key per correspondent (Metternich, Montmollin, Dupuy).",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order Nr. 690, 962 and 994 together with Nr. 695 and 699 (reachable-unlooked row 1); check whether the key notes are the cipher of those reports.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++3ddb46a2-2c68-40b9-b6a4-52dc8a834ff8",
-     "label": "Rep. 64 Nr. 690"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++a22cd24f-c7e2-4ade-983d-7bcf5f482556",
-     "label": "Nr. 962"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++713010d5-9565-4045-a271-8a33494a51aa",
-     "label": "Nr. 967"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++3ba9514c-c5d9-4d2a-b049-a04e9ad52811",
-     "label": "Nr. 992"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++c477e3c4-7be4-4c87-8f5b-35f16323ccec",
-     "label": "Nr. 994"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++04f020ef-acf1-4399-8983-c93128aa4a67",
-     "label": "Nr. 714"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++f38bbd76-e042-43e6-ace1-1d79f96d7a7b",
-     "label": "Nr. 724"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++ba47c927-632f-4231-b19b-3d7db525ebda",
-     "label": "Nr. 952"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++1fc8a0c7-f76e-4fe3-ba28-84359e156c4a",
-     "label": "Nr. 953"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 64 Nr. 952, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One volume of 1709: about 41 signed rescripts (nos. 268-308), some partly ciphered, with enclosures; leaves not counted (the volume's size is not in the record).",
-     "cipher": "Archive description, verbatim: 'Reskripte (Ausfertigungen, vom König eigenhändig unterschrieben; teilsweise chiffriert mit gleichzeitiger Entschlüsselung) vom 13. Januar 1709 bis zum 29. Juni 1709 (Nr. 268-307) und vom 26. Oktober 1709 (Nr. 308)'. The ciphertext and its simultaneous Entschluesselung are in the volume. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Neuchatel' and 'Neuchâtel' on 14 Nov 2026 (this session and the earlier Rep. 64 vetting): one picture postcard (record 3490), no GStA PK material; 'Metternich' not on DECODE for this file.",
-     "tomokiyo": "Web search naming Cryptiana, Tomokiyo, Neuchatel and Metternich (14 Nov 2026): no Neuchatel item; the only Prussian Cryptiana item is Frederick I's transposition ciphertexts (DECODE), a different cipher system.",
-     "lasry": "Search naming Lasry, Prussian diplomatic ciphers, Neuchatel and Rep. 64 (14 Nov 2026): nothing on this succession.",
-     "edition": "Bachmann, Die preussische Sukzession in Neuchatel (1993) and Piaget 1933, cited by the HLS Metternich article, not opened; the 1709 rescripts are not known to be printed; Bourgeois 1887 stops at 1713 and was not opened.",
-     "literature": "Web search on Metternich, the 1709 rescripts, Heinsius and Schmettau (14 Nov 2026): HLS and DDB finding-aid pages only; no work on the ciphered rescripts or their decipherment."
-    },
-    "key_check": "No Neuchatel key is held here; the archive files a cipher table of 1703 in Rep. 64 Nr. 944 (lead 2495) and Bondeli cipher numbers in Nr. 994; nothing online, nothing tried.",
-    "duplicates": "known.py 'Rep. 64', 'Neuchatel', 'Metternich' on 14 Nov 2026, and a number grep of 690, 714, 722, 724, 749, 756, 777, 798, 840, 846, 855, 952, 953, 962, 967, 992, 994 over catalogue.json and leads.json: no entry for Nr. 952; catalogue 2494, 2585 and leads 2495-2497, 2586-2587 are other volumes.",
-    "searches": [
-     {
-      "query": "Metternich Neuchâtel 1709 Reskripte Friedrich I. chiffriert Entschlüsselung Heinsius Haager Friedenskonferenz Schmettau (web search)",
-      "result": "HLS Metternich article, DDB/Archivportal-D finding aids; no edition or decipherment."
-     },
-     {
-      "query": "Lasry Prussian diplomatic cipher eighteenth century Frederick II cipher key Neuchâtel Rep. 64 (web search)",
-      "result": "Lasry's German diplomatic messages 1900-15 (Cryptologia 2021), HistoCrypt papers; no Neuchatel, Rep. 64 or Frederick II item."
-     },
-     {
-      "query": "Cryptiana Tomokiyo Neuchâtel Prussia eighteenth century cipher Goltz OR Chambrier OR Metternich (web search)",
-      "result": "Nothing on Neuchatel; one Cryptiana item on Frederick I's transposition ciphers."
-     },
-     {
-      "query": "decode_search.py Neuchatel; Neuchâtel",
-      "result": "One postcard (record 3490); no GStA PK holdings."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "The Entschluesselung is written 'gleichzeitig' (at the same time) with the ciphered parts of the rescripts (per the archive description); not online, not tested.",
-    "key_held": "GStA PK I. HA Rep. 64 Nr. 944 (cipher table sent 8 Nov 1703) and Nr. 994 (cipher numbers of 1705); not online, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2614,
-   "counted": true,
-   "year": 1724,
-   "date": "1723-1724",
-   "language": "French and German (not stated)",
-   "region": "Other",
-   "period": "1701-1800",
-   "title": "Neuchatel administration 1723-24: unrest in Valangin, reports of Governor Froment and of Chambrier at Paris, 'gelegentlich chiffriert mit gleichzeitiger Entzifferung', Rep. 64 Nr. 749",
-   "correspondents": "Governor Froment and Prussian envoy Le Chambrier (Paris) -> the Berlin court (Ilgen, Knyphausen)",
-   "place": "Neuchatel / Paris / Berlin",
-   "shelfmark": "GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 749",
-   "folio_note": "Nr. 749 only (1723-24). Sibling volumes of the old row, not part of this entry: Nr. 798 (appointments 1719-24; one 'chiffrierter Teil ueber dominierende Familien' in Struenckede's report of July-Sept 1724), 756 (1726; one ciphered note of Desplasses to Bergeon), 777 (1742-48, Chiffrierung notes).",
-   "cls": "A",
-   "status": "Finding aid as quoted; Nr. 749 files its Entzifferung beside the ciphertext.",
-   "why": "Siblings of the reachable-unlooked Neuchatel rows (Nr. 725-787) for the 1720s-40s; Nr. 777 documents how the cipher was managed, which is where a key table would be.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order Nr. 749 and 777; pair the Entzifferung in Nr. 749 with its ciphertext.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++43857e65-fbf8-499c-acda-c82a631e4f8f",
-     "label": "Rep. 64 Nr. 749"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++b8e6e4d3-2f28-4b25-9863-c537dbeeebe4",
-     "label": "Nr. 756"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++cdc1a8a3-591a-4177-bcbd-a513b5d40d1c",
-     "label": "Nr. 777"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++128decc1-c400-4000-bc3c-514400b32721",
-     "label": "Nr. 798"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 64 Nr. 749, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One volume of 1723-24 (6.5 cm class; the exact size is cut off in the record); ciphered passages in two groups of documents.",
-     "cipher": "Archive description, verbatim: 'Bemühungen des preußischen Gesandten Le Chambrier zwecks deren Ausweisung aus Frankreich ab Januar 1724 (gelegentlich chiffriert mit gleichzeitiger Entzifferung)' and 'Berichterstattung des Gouverneurs Froment ... (auch chiffriert mit gleichzeitiger Entzifferung)'. The ciphertext and its simultaneous Entzifferung are in the volume. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Neuchatel' and 'Neuchâtel' on 14 Nov 2026: one postcard (record 3490); no Froment, Chambrier or GStA PK records.",
-     "tomokiyo": "Search for Cryptiana and Tomokiyo with Neuchatel, Chambrier and Prussian ciphers of the 1720s (14 Nov 2026): no item.",
-     "lasry": "Search for Lasry with Prussian diplomatic ciphers and Rep. 64 (14 Nov 2026): no item on the Neuchatel files of 1723-24.",
-     "edition": "No edition known: the HLS and BPUN searches (14 Nov 2026) returned local-history items on the Chambrier family and Lubieres; none prints the 1724 Paris reports.",
-     "literature": "Web search 'Neuchatel 1724 Struenckede Valangin Bergeon Merveilleux Le Chambrier Paris Chiffren Froment' (14 Nov 2026): Neuchatel genealogy and Chambrier-family items; nothing on the ciphers or a decipherment."
-    },
-    "key_check": "No Neuchatel or Froment key is held here; Rep. 64 Nr. 777 files Chiffrierung notes of 1742-48; not online, nothing tried.",
-    "duplicates": "Number grep of Rep. 64 volumes over catalogue.json and leads.json on 14 Nov 2026: no entry for Nr. 749; catalogue 2494, 2585 and leads 2495-2497, 2586-2587 are other volumes.",
-    "searches": [
-     {
-      "query": "Neuchâtel 1724 Strünckede Valangin Bergeon Merveilleux Le Chambrier Paris Chiffren Berichte Froment (web search)",
-      "result": "Genealogy bulletins, HLS, Dupeyrou page; nothing on these reports or ciphers."
-     },
-     {
-      "query": "Lasry Prussian diplomatic cipher eighteenth century Frederick II cipher key Neuchâtel Rep. 64 (web search)",
-      "result": "Lasry's German diplomatic messages 1900-15 (Cryptologia 2021), HistoCrypt papers; no Neuchatel, Rep. 64 or Frederick II item."
-     },
-     {
-      "query": "decode_search.py Neuchatel; Neuchâtel (second pass for Rep. 64 Nr. 749)",
-      "result": "One postcard only."
-     },
-     {
-      "query": "known.py 'Rep. 64' 'Neuchatel' 'Froment' 'Chambrier'",
-      "result": "Only the volumes already catalogued or listed as leads 2494-2497, 2585-2587; none is Nr. 749."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "Entzifferung written at the same time as the ciphered reports, in the same volume (per the archive description); not online, not tested.",
-    "key_held": "GStA PK I. HA Rep. 64 Nr. 777 (Chiffrierung notes 1742-48); not online, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2615,
-   "counted": true,
-   "year": 1780,
-   "date": "1776-1781",
-   "language": "French",
-   "region": "Other",
-   "period": "1701-1800",
-   "title": "Neuchatel: ciphered and deciphered reports of Bernhard Wilhelm von der Goltz from Paris, 1780-81",
-   "correspondents": "Bernhard Wilhelm von der Goltz (Prussian envoy at Paris) -> Frederick II",
-   "place": "Paris / Berlin",
-   "shelfmark": "GStA PK, I. HA Rep. 64 (Neuchatel), Nr. 855",
-   "folio_note": "Title 'Einschliessung des Fuerstentums als Bestandteil des ...'; contents 'mit chiffrierten und entzifferten Berichten von Bernhard Wilhelm von der Goltz, Paris, 1780 und ...'",
-   "cls": "A",
-   "status": "Finding aid as quoted; ciphered and deciphered reports both filed.",
-   "why": "The late-18th-century member of the Neuchatel set: a Prussian envoy's Paris cipher with the Entzifferung, on the eve of the French Revolution; one key (Goltz).",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order Nr. 855; compare with Goltz material in the Politische Correspondenz.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++5e599150-8a43-4363-85e4-9e3f07384aa3",
-     "label": "Rep. 64 Nr. 855"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 64 Nr. 855, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One volume (5.5 cm), 1776-81: ciphered and deciphered reports of the Prussian envoy at Paris within a collection on the Swiss alliance of 1777; leaves not counted. The record notes 'Sperrung aus erschliessungstechnischen Gruenden' until 30.04.2026, now past.",
-     "cipher": "Archive description, verbatim: 'Haltung der katholischen Kantonen und des französischen Hofes (mit chiffrierten und entzifferten Berichten von Bernhard Wilhelm von der Goltz, Paris, 1780 und 1781; ...)'. Both the ciphertext and a deciphered version of Goltz's reports are in the volume. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Goltz Paris' and 'Zegelin' and 'Wedel' on 14 Nov 2026: no Goltz, Paris or GStA PK record; the Wedel hits are British Library Rantzau copies, unrelated.",
-     "tomokiyo": "Search for Cryptiana and Tomokiyo with Goltz, Chambrier, Metternich and Neuchatel (14 Nov 2026): no item; only Frederick I's transposition ciphers.",
-     "lasry": "No Lasry item on Goltz's Paris ciphers of 1780-81 in the 14 Nov 2026 search on Prussian diplomatic ciphers.",
-     "edition": "The Politische Correspondenz (vols. 44-45, 1780-81, Trier edition) prints Frederick II's letters to Goltz at Paris, as the web search of 14 Nov 2026 shows by catalogue entries; Goltz's own reports to the king are not printed there (the PC prints the king's side, with notes). The Neuchatel file's reports were not matched against it.",
-     "literature": "Web search on Goltz, 1780, the 1777 Swiss alliance and the Neuchatel clause (14 Nov 2026): only PC catalogue pages; no study of these despatches' ciphers."
-    },
-    "key_check": "No Goltz key is held here; none was found online.",
-    "duplicates": "Number grep over catalogue.json and leads.json on 14 Nov 2026: no entry for Rep. 64 Nr. 855; the same volume family is lead 2616 (Nr. 846, Goltz at Paris 1772) and catalogue 2494 (Nr. 828).",
-    "searches": [
-     {
-      "query": "Goltz Paris 1780 Neuchâtel alliance Corps helvétique 1777 dépêches chiffrées déchiffrées Frédéric II (web search)",
-      "result": "Only Trier PC catalogue pages for Frederick II's letters to Goltz (1777, 1780); nothing on ciphered reports."
-     },
-     {
-      "query": "Cryptiana Tomokiyo Neuchâtel Prussia eighteenth century cipher Goltz OR Chambrier OR Metternich (web search)",
-      "result": "Nothing on Neuchatel or Goltz."
-     },
-     {
-      "query": "decode_search.py Goltz Paris; Zegelin; Wedel",
-      "result": "No relevant record."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "A deciphered version of Goltz's reports is filed with the ciphertext in the volume (per the archive description); not online, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
    "id": 2616,
    "counted": true,
    "year": 1772,
@@ -81347,241 +80804,8 @@
       "result": "One postcard (record 3490); no Goltz or GStA PK record."
      }
     ],
-    "verdict": "open"
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2617,
-   "counted": true,
-   "year": 1813,
-   "date": "1813",
-   "language": "German with French (not stated)",
-   "region": "Germany",
-   "period": "1801-1900",
-   "title": "Prussian legation at Frankfurt (Confederation of the Rhine): royal orders and reports Jan-July 1813, 'chiffrierte Schreiben mit Aufloesung', Rep. 81 Frankfurt Nr. 173",
-   "correspondents": "Frederick William III / Prussian foreign ministry <-> the Prussian envoy at Frankfurt (to the Prince Primate)",
-   "place": "Frankfurt a. M.",
-   "shelfmark": "GStA PK, I. HA Rep. 81 (Frankfurt a. M. / Rheinbund), Nr. 173",
-   "folio_note": "Nr. 173 only (Bd. 7, Jan-July 1813, 163 leaves; ff. 164-170 were moved in 1973 to Rep. 81 Kassel Lit. C Tit. I Nr. 1 Bd. 6). Siblings with the same kind of note, not part of this entry: Nr. 167 (1809, 'Chiffrierte Erlasse mit Aufloesungen durch die Gesandtschaft'), 171 (1811, 'Chiffren sind von der Gesandtschaft aufgeloest'); Nr. 168 (1810) carries no cipher note in the part read. Nr. 167, 171 and 173 are 'nicht vorlegbar' until 31.05.2029 (store repair).",
-   "cls": "A",
-   "status": "Finding aid as quoted; the legation wrote the deciphered form on or beside each order.",
-   "why": "A Napoleonic-era Prussian cipher with the decipherment filed with each order across four years: a clean pair set to rebuild the Prussian foreign-ministry cipher of 1809-13 (keys are III. HA MdA Chiffren files; see key_leads.json).",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order Nr. 168 (1810) and Nr. 173 (1813); look for a cipher change across the four years.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++9731eb68-f43d-4fab-898a-5b77f0aea808",
-     "label": "Rep. 81 Frankfurt Nr. 167"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++c60acd6d-867a-4a02-9353-5321cd377b5c",
-     "label": "Nr. 168"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++40a58edc-d2da-4782-8dd4-048245387bca",
-     "label": "Nr. 171"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++b57ac3a7-f822-4110-a0e9-fb2ae6aa1254",
-     "label": "Nr. 173"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of I. HA Rep. 81 Frankfurt a.M./R. Nr. 173, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One volume of 163 leaves, Jan-July 1813; the record does not say how many letters are ciphered.",
-     "cipher": "Archive description, verbatim: 'Akte nicht geheftet; chiffrierte Schreiben mit Auflösung; Folio 164 bis 170 wurden 1973 entnommen ...'. The ciphertext and the legation's Auflösung are in the file. Leaf not seen: not digitised and not orderable until 31.05.2029."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Frankfurt Rheinbund' and 'Zegelin' on 14 Nov 2026: 0 records; no GStA PK Frankfurt material.",
-     "tomokiyo": "Search naming Cryptiana, Tomokiyo and Prussian diplomatic ciphers of 1813 (14 Nov 2026): no Cryptiana item on Napoleonic-era Prussian ciphers.",
-     "lasry": "Same search for Lasry: his Cryptologia 2021 paper covers 1900-15 only; nothing on 1813.",
-     "edition": "No edition of the Frankfurt legation's orders found: the web search of 14 Nov 2026 turned up only archive finding aids and a Dalberg finance file; the Prussian foreign-ministry orders of 1813 may sit in Oncken or Ranke editions, which were not opened.",
-     "literature": "Web search on the Prussian envoy at Frankfurt 1813 and ciphered orders (14 Nov 2026): nothing on these ciphers or a decipherment."
-    },
-    "key_check": "No key is held here; the Prussian cipher keys of 1806-19 are listed in the 14 Nov key_leads.json (Rep. 11 Nr. 10696 and others), not online, none tried.",
-    "duplicates": "known.py 'Frankfurt' and 'Rheinbund' plus a number grep on 14 Nov 2026: no entry for Rep. 81 Frankfurt Nr. 167-173; the Mainz and Kassel files in leads 1672-1673 are other fonds.",
-    "searches": [
-     {
-      "query": "preußischer Gesandter Frankfurt Fürstprimas Dalberg 1813 chiffrierte Erlasse Gesandtschaft Rheinbund Immediatberichte Quellenedition (web search)",
-      "result": "Finding aids (Rep. 81 Darmstadt, DDB), a Dalberg finance file; no edition or decipherment."
-     },
-     {
-      "query": "Napoleonic era Prussian diplomatic cipher 1813 deciphered despatches Frankfurt legation Lasry OR Tomokiyo OR Cryptologia (web search)",
-      "result": "Lasry/Tomokiyo/Biermann 17th-century work, Scovell and Peninsular items; nothing on Prussian 1813."
-     },
-     {
-      "query": "decode_search.py Frankfurt Rheinbund; Zegelin",
-      "result": "0 records found on DECODE."
-     }
-    ],
     "verdict": "open",
-    "key_in_volume": "The legation's Auflösung is filed with the ciphered letters (per the archive description); not online, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2626,
-   "counted": true,
-   "year": 1520,
-   "date": "10 May 1520",
-   "language": "German",
-   "region": "Germany",
-   "period": "1497-1559",
-   "title": "Margrave Kasimir of Brandenburg-Ansbach to the Grand Master, 10 May 1520: original in cipher, with Aufloesung",
-   "correspondents": "Margrave Kasimir -> Grand Master Albrecht",
-   "place": "Zeitz / Koenigsberg",
-   "shelfmark": "GStA PK, XX. HA, OBA, Nr. 23682",
-   "folio_note": "'Original in Chiffern; mit Aufloesung. --- Zeitz 1520 Do...'; Kasimir's own cipher alphabet is requested in OBA 23213 (in the reachable-unlooked row)",
-   "cls": "A",
-   "status": "Finding aid as quoted. Not in catalogue 553-556 (those are Schoenberg, Joachim, Heydeck, Gundelfinger).",
-   "why": "A separate correspondent and so a separate key (Kasimir), with its Aufloesung on file; short.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order with OBA 23213 (the alphabet request) and compare with the Joachim cipher of catalogue 554.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++abd5ed71-91da-4c5d-9098-65160891facc",
-     "label": "OBA 23682"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of XX. HA, OBA, Nr. 23682, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "One letter of 10 May 1520 with its Aufloesung; leaf count not stated.",
-     "cipher": "Archive description, verbatim: 'Markgraf Kasimir an Hochmeister: seine Hülfe für diesen. Wolf v. Schönburg. Franz von Sickingen. D. v. Schönberg. Original in Chiffern; mit Auflösung. --- Zeitz 1520 Donnerstag nach Cantate.' Leaf not seen: not digitised in the record."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Kasimir Ansbach', 'Schoenberg' and 'Schönberg Albrecht' on 14 Nov 2026: 0 records.",
-     "tomokiyo": "Web search naming Hochmeister Albrecht, Kasimir, Schoenberg, Klingenbeck and Chiffrenbrief (14 Nov 2026): no Cryptiana item; one Neues Archiv fuer saechsische Geschichte article on a cipher of a Margrave Albrecht, not this letter.",
-     "lasry": "Search naming Lasry with the Teutonic Order's Grand Master Albrecht and ciphers (14 Nov 2026): no item.",
-     "edition": "Joachim, Die Politik des letzten Hochmeisters vol. 2 (Internet Archive diepolitikdeslet02joac, OCR searched 14 Nov 2026): no letter headed Zeitz with a 1520 date found, so this letter is not printed there as far as the OCR shows; Joachim's convention is that italics mark deciphered passages (vol. 1 p. 237, per catalogue 553).",
-     "literature": "Web search in German on Kasimir's cipher letter of 1520 (14 Nov 2026): ADB and Deutsche Biographie pages on Kasimir; nothing on ciphers."
-    },
-    "key_check": "Kasimir's own cipher alphabet is requested in OBA 23213 (lead 2595); the Auflösung filed with this letter is the key evidence. Nothing is online, nothing was tried.",
-    "duplicates": "known.py '23682', 'Kasimir', 'Joachim' on 14 Nov 2026 and number grep: no entry; catalogue 553-557 hold other OBA numbers (Schoenberg, Joachim I, Heydeck, Gundelfinger); leads 2505 and 2595 are other OBA letters.",
-    "searches": [
-     {
-      "query": "Hochmeister Albrecht von Brandenburg Chiffre Briefe 1520 Markgraf Kasimir Schönberg Klingenbeck Chiffrenbrief Entzifferung (web search)",
-      "result": "ADB/Deutsche Biographie on Kasimir; one Saxon-history journal article on a Margrave Albrecht's cipher; nothing on this letter."
-     },
-     {
-      "query": "Joachim vol. 2 OCR (diepolitikdeslet02joac_djvu.txt): 'Zeitz' with 1520 and 'Kasimir' headings",
-      "result": "Two 'Zeitz' hits, neither a letter of Kasimir of 10 May 1520."
-     },
-     {
-      "query": "decode_search.py Kasimir Ansbach; Schoenberg; Schönberg Albrecht",
-      "result": "0 records found on DECODE."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "'mit Auflösung': the Auflösung is filed with the ciphered original (per the archive description); not online, not tested.",
-    "key_held": "OBA Nr. 23213 (Kasimir's cipher alphabet requested; lead 2595) and Nr. 27584 (the chancery's Chiffrenbuch, key_leads.json); not online, not tested."
-   },
-   "repository": "gsta"
-  },
-  {
-   "id": 2627,
-   "counted": true,
-   "year": 1525,
-   "date": "1525",
-   "language": "German",
-   "region": "Germany",
-   "period": "1497-1559",
-   "title": "Georg Klingenbeck at the imperial court (Madrid) to Grand Master Albrecht, 19 Feb 1525: three letters, one 'in Chiffern mit Aufloesung', OBA 27533",
-   "correspondents": "Georg Klingenbeck (the Order's agent in Nuremberg / Italy) -> Grand Master Albrecht",
-   "place": "Nuremberg / Pavia",
-   "shelfmark": "GStA PK, XX. HA, OBA, Nr. 27533",
-   "folio_note": "OBA 27533 only (19 Feb 1525, Madrid; 3 letters and a note, one in cipher with Auflösung). OBA 27275 (9 Oct 1524, 'teilweise Chiffern') was already lead 2505 and is not part of this entry.",
-   "cls": "A",
-   "status": "Finding aid as quoted; not in catalogue 553-556.",
-   "why": "Another agent's cipher (Klingenbeck) in the Teutonic Order series with an Aufloesung in 27533: a small independent key beside the Schoenberg and Gundelfinger ones.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 2,
-   "verify": "Order both numbers; pair the Aufloesung in 27533.",
-   "links": [
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++2e507fa2-6c37-4e99-9b35-3d39409747d7",
-     "label": "OBA 27275"
-    },
-    {
-     "href": "https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++bbdf2f86-08fa-4d6d-9d4e-ababcd8cb69a",
-     "label": "OBA 27533"
-    }
-   ],
-   "source": "GStA PK own database (ACTApro, archive.spk-berlin.de/actaproweb), deep sweep, 14 Nov 2026",
-   "score_note": "Scored from the ACTApro finding-aid text during the 14 Nov 2026 deep GStA sweep (research/sweep_2026-11-14_gsta_deep/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), GStA deep-sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "GStA PK database ACTApro (archive.spk-berlin.de/actaproweb), full record of XX. HA, OBA, Nr. 27533, read in a Chrome tab on that origin on 14 Nov 2026 (same-origin fetch, 1.5 s apart); no digital copy or image is attached to the record.",
-     "extent": "Three letters and one slip of 19 Feb 1525; one letter is the cipher with its Aufloesung.",
-     "cipher": "Archive description, verbatim: '3 Briefe (einer in Chiffern mit Auflösung) und 1 Zettel. --- Madrid am kaiserl. Hoflager 19. Febr. 1525.' (head: Klingenbeck's observations at the imperial court, Hannart, the Polish embassy, Schoenberg). Leaf not seen: not digitised in the record."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Klingenbeck' on 14 Nov 2026: 0 records.",
-     "tomokiyo": "The Teutonic Order and Cryptiana/Cryptologia/HistoCrypt search (14 Nov 2026): no Cryptiana item on Klingenbeck or Albrecht's chancery.",
-     "lasry": "Same search for Lasry and HistoCrypt: only Wallenstein and 1637 Oxenstierna items; nothing on Albrecht's cipher letters.",
-     "edition": "Joachim, Politik des letzten Hochmeisters vol. 3 (Internet Archive diepolitikdeslet03joac, OCR searched 14 Nov 2026) lists 'Klingenbeck an HM. Madrid 19. Februar 1525. D. 534' among its sources; the passage seen is a source list, so a printed text or decipherment of the cipher letter is neither shown nor excluded.",
-     "literature": "Web search on Klingenbeck and the 1525 mission to Charles V (14 Nov 2026): no study of the cipher."
-    },
-    "key_check": "Klingenbeck's cipher is not held; the chancery's Chiffrenbuch OBA 27584 (key_leads.json) is the nearest key; nothing online, nothing tried.",
-    "duplicates": "Lead 2505 holds OBA 27275 of the same writer; catalogue 553-557 hold other OBA numbers; no entry for 27533 (known.py 'Klingenbeck', '27533' on 14 Nov 2026).",
-    "searches": [
-     {
-      "query": "Teutonic Order Grand Master Albrecht 1520s ciphered letters decipherment Cryptologia OR Cryptiana OR HistoCrypt (web search)",
-      "result": "Wallenstein, Oxenstierna 1637 and other items; nothing on Albrecht's ciphers."
-     },
-     {
-      "query": "Joachim vol. 3 OCR: 'Klingenbeck' with 1524/1525",
-      "result": "Source-list citations including Madrid 19 Feb 1525 (D. 534); no text of the cipher letter seen."
-     },
-     {
-      "query": "decode_search.py Klingenbeck",
-      "result": "0 records found on DECODE."
-     }
-    ],
-    "verdict": "open",
-    "key_in_volume": "'in Chiffern mit Auflösung': the Auflösung is filed with the cipher letter (per the archive description); not online, not tested.",
-    "key_held": "OBA Nr. 27584 (Chiffrenbuch of Dietrich v. Schoenberg and the chancery, key_leads.json); not online, not tested."
+    "audit_note": "15 Nov 2026 audit: kept. Unlike 2615 the archive description does not say a decipherment is filed; Nr. 840 excluded."
    },
    "repository": "gsta"
   },
@@ -83003,7 +82227,8 @@
       "result": "Titles and dates confirm Yemen telegrams (Mehmed Kamil as clerk on 518, 477, 583); image host libdigitalcollections.ku.edu.tr serves the pages the cdm21054 image route 502s on."
      }
     ],
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). The clerk's overwritten letters/words are a partial per-symbol reading, not a filed decipherment: no full plaintext is written out on the sheets (separate clear 'translations' exist only for a few days: cribs, not decipherments of these sheets). Open part: the full text and the system behind the groups."
    },
    "repository": "print"
   },
@@ -83122,7 +82347,8 @@
       "result": "Descriptions give subject and date (bandits and telegraph sabotage 9 Apr 1902; Italian ships 15 Oct 1902; 'encrypted document' for the clear 732 and 766); none says the cipher was solved."
      }
     ],
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). The clerk's overwritten letters/words are a partial per-symbol reading, not a filed decipherment: no full plaintext is written out on the sheets (separate clear 'translations' exist only for a few days: cribs, not decipherments of these sheets). Open part: the full text and the system behind the groups."
    },
    "repository": "print"
   },
@@ -83201,82 +82427,6 @@
    "repository": "bl"
   },
   {
-   "id": 2652,
-   "counted": true,
-   "year": 1845,
-   "date": "1845-1846",
-   "period": "1801-1900",
-   "cls": "A",
-   "title": "Reports of the Wuerttemberg envoy Degenfeld-Schomburg at Munich to the foreign minister, \"teilweise chiffriert, mit Dechiffrierung\" (2 volumes)",
-   "correspondents": "Ferdinand Christoph Graf von Degenfeld-Schomburg (Wuerttemberg envoy at Munich) -> Minister of foreign affairs, Stuttgart",
-   "place": "Munich / Stuttgart",
-   "shelfmark": "Landesarchiv Baden-Wuerttemberg, Hauptstaatsarchiv Stuttgart, E 50/05 Bue 124 (3 Jan - 22 Nov 1845) and Bue 129 (10 Jan - 19 Nov 1846)",
-   "folio_note": "Titles: '(z. T. chiffriert, mit Aufl.)' (Bue 124, 1845) and '(teilweise chiffriert, mit Dechiffrierung)' (Bue 129, 1846). Content note: Staendekammern, Minister Abel, dismissal of foreign minister Gise, church affairs. Other Bue of E 50/05 (other years) were not in the hit list.",
-   "status": "Finding aid (14 Nov 2026): some reports ciphered, with the legation's deciphering filed in each volume. Not online; no decipherment or edition found. Key books of the next years are in HStAS E 59.",
-   "why": "A paired cipher/plaintext set of a small German court's diplomatic reports of 1845-46, with the Wuerttemberg legation cipher books (E 59, 1847 onward) listed next door: a key can be rebuilt from the pairs and checked against the books.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Order Bue 124 and 129 (or ask HStAS for scans); check whether the Dechiffrierung is interlinear or a separate sheet; compare with E 59 Bd. 238-241 (Munich cipher books VII-X).",
-   "links": [
-    {
-     "href": "https://www.archivportal-d.de/item/DRBLDG3QGHEUTGM3LCBLFIHZE7WBGW7J",
-     "label": "E 50/05 Bue 124"
-    },
-    {
-     "href": "https://www.archivportal-d.de/item/DOIB6MTZ52VUABHDEWESISZNAEKFQH26",
-     "label": "E 50/05 Bue 129"
-    }
-   ],
-   "source": "Archivportal-D (DDB Solr), German state archives sweep, 14 Nov 2026",
-   "score_note": "Scored from the finding-aid text during the 14 Nov 2026 German state databases sweep (research/sweep_2026-11-14_german_state_dbs/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): the shelfmark, fonds series and correspondent were searched in catalogue.json, leads.json, every candidates.json / key_leads.json and the targets (known.py-style grep) and found nowhere; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "description only on Archivportal-D; no images found on the item page of the portal; order from the archive or use the reading room (digitisation not checked on the archive's own site)",
-   "language": "German",
-   "region": "Germany",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), German state databases sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "Archivportal-D / DDB Solr records of the Landesarchiv Baden-Wuerttemberg, Hauptstaatsarchiv Stuttgart (items DRBLDG3Q... for Bue 124 and DOIB6MTZ... for Bue 129), read in the 14 Nov 2026 sweep; no image or digital copy is attached to either record and the archive's own site was not checked for scans.",
-     "extent": "Two volumes of one correspondence: Bue 124 (3 Jan - 22 Nov 1845) and Bue 129 (10 Jan - 19 Nov 1846); the records give no leaf counts.",
-     "cipher": "Archive titles, verbatim: Bue 124 '(z. T. chiffriert, mit Aufl.)' and Bue 129 '(teilweise chiffriert, mit Dechiffrierung)'. Reports of the Wuerttemberg envoy Degenfeld-Schomburg at Munich; the legation's deciphering is filed in the same volumes. Leaf not seen: not digitised."
-    },
-    "prior_art": {
-     "decode": "known.py 'Degenfeld' and 'E 50/05' (14 Nov 2026): no DECODE record; the only earlier mention in the repo is a one-line note in research/archivportal_d/README.md and research/central_archives/README.md (no entry, no reading).",
-     "tomokiyo": "Web search naming Tomokiyo, Cryptiana and Wuerttemberg legation ciphers of the 1840s (14 Nov 2026): no Cryptiana page on 19th-century Wuerttemberg diplomatic ciphers.",
-     "lasry": "Same search for Lasry/HistoCrypt: nothing on Wuerttemberg legation ciphers of 1845-46; his German diplomatic work is 1900-15 (Kaiserreich), a different state and period.",
-     "edition": "No edition of the Munich reports of 1845-46 found; Degenfeld's posting 1844-68 is in the Bavarian envoy database (gesandtendatenbank.bavarikon.de), which lists sources and no printed reports.",
-     "literature": "Web search 'Degenfeld-Schomburg Gesandter Muenchen 1845 1846 Berichte chiffriert' (14 Nov 2026): Stuttgart E 50/05 finding-aid records for other years (Relationen 1855 Bue 173, Reskripte to Wintzingerode Bue 20) and no study of the cipher."
-    },
-    "key_check": "No key is held here. The deciphering is filed in each volume (the key_in_volume). The Wuerttemberg legation cipher books of 1847 to about 1870 are in HStAS E 59 Bd. 232-242 (research/sweep_2026-11-14_german_state_dbs/key_leads.json), a key family for the following years; none is online and nothing was tried.",
-    "key_in_volume": "The legation's contemporary deciphering ('Aufl.' / 'Dechiffrierung') is filed in the same volume per the archive titles; not seen, not tested.",
-    "duplicates": "known.py 'Degenfeld', 'E 50/05', 'Dechiffrierung' (14 Nov 2026): no entry or lead other than 2652 holds E 50/05 Bue 124 or 129; E 59 key volumes are only in key_leads.json (not an entry). Both volumes are kept in one entry because the volumes are one correspondence and one legation cipher period (1845-46).",
-    "searches": [
-     {
-      "query": "Degenfeld-Schomburg wuerttembergischer Gesandter Muenchen 1845 1846 Berichte chiffriert Chiffrierbuch Wuerttemberg Gesandtschaft Chiffre (web search)",
-      "result": "Bavarian envoy database (Degenfeld-Schonburg, Muenchen 1844-68); HStAS E 50/05 records for Bue 173 (1855) and Bue 20; nothing on cipher books or on these two volumes."
-     },
-     {
-      "query": "known.py 'Degenfeld' 'E 50/05' 'Dechiffrierung' against catalogue, leads, DECODE dumps, queue, READMEs (local)",
-      "result": "Only the sweep rows and one-line mentions in archivportal_d and central_archives READMEs; no DECODE id; no catalogue entry."
-     },
-     {
-      "query": "Tomokiyo Lasry cipher Wuerttemberg legation Munich 1840s Hauptstaatsarchiv Stuttgart E 50/05 (web search)",
-      "result": "No result on 1840s Wuerttemberg ciphers; Lasry/Tomokiyo hits are Mary Stuart and 17th-century letters."
-     }
-    ],
-    "verdict": "open"
-   },
-   "repository": "hstas"
-  },
-  {
    "id": 2661,
    "counted": true,
    "year": 1751,
@@ -83344,7 +82494,8 @@
       "result": "Mary Stuart and 2025 TNA decipherments; a paper on the Dresden court ciphers of Augustus II; no Hildburghausen or Meiningen item."
      }
     ],
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "duke"
   },
@@ -83416,7 +82567,8 @@
       "result": "Only the sweep rows; catalogue hits for 'Anton Ulrich' are Brunswick's (Anna Ivanovna), unrelated."
      }
     ],
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "unidentified"
   },
@@ -83496,7 +82648,8 @@
       "result": "Only the sweep rows and lead 2663; no DECODE id."
      }
     ],
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "unidentified"
   },
@@ -83714,81 +82867,6 @@
    "repository": "unidentified"
   },
   {
-   "id": 2670,
-   "counted": true,
-   "source": "US gaps sweep (PACSCL/Penn, Newberry, Columbia, CJH, Morgan CORSAIR), 14 Nov 2026",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a name/shelfmark grep over catalogue.json, leads.json and every candidates.json found nothing on this item; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "score_note": "Scored from the finding-aid text on 14 Nov 2026 (research/sweep_2026-11-14_us_gaps/); not viewed",
-   "links": [
-    {
-     "href": "https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.888",
-     "label": "PACSCL finding aid, Dundas papers"
-    }
-   ],
-   "year": 1800,
-   "date": "2 Dec 1798 (memorandum), copy in cypher sent 19 Aug 1800",
-   "language": "English",
-   "region": "England",
-   "period": "1701-1800",
-   "place": "India / London",
-   "title": "Dundas papers: Captain John Malcolm's memorandum on the late French corps in the Deccan (2 Dec 1798) with a second copy in cypher, enclosed in Dundas's letter of 19 Aug 1800",
-   "correspondents": "John Malcolm (Madras) -> Henry Dundas (Board of Control); enclosing letter by Dundas, 19 Aug 1800",
-   "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Coll. 888 (Henry Dundas papers), Box 11, Folder 26",
-   "folio_note": "Finding aid: memorandum \"also a second copy of the same in cypher with an enclosing letter by Henry Dundas, dated 19 August 1800\". A clear copy and a cypher copy of the same memorandum are in one folder.",
-   "cls": "A",
-   "status": "Finding aid (Penn, read 14 Nov 2026): a clear copy and a cypher copy of one memorandum in Box 11 Folder 26, with Dundas's enclosing letter of 19 Aug 1800. Not online; no edition or decipherment found; scan request to Kislak (rbml@pobox.upenn.edu) is the next step.",
-   "why": "A clear copy and a cypher copy of the same memorandum is a ready crib set for the Dundas / Board of Control cypher of 1800 (the repo holds the different Harford Jones Baghdad code of 1798). Short, but known plaintext.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Request folder 26 scans from Penn (Kislak); check whether the cypher copy is numerical or a nomenclator; compare Dundas-Wellesley cyphers in the BL and NRS GD51.",
-   "access_note": "description only; Penn Kislak reading room or scan request",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), US gaps sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "Penn finding aid, Henry Dundas papers, Ms. Coll. 888, Series I, Box 11 Folder 26 (findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.888, inventory text read 14 Nov 2026); the record has no digital object and Kislak holds the folder in the reading room only.",
-     "extent": "One folder: Malcolm's memorandum of 2 Dec 1798 (clear) and 'a second copy of the same in cypher' with Dundas's enclosing letter of 19 Aug 1800; no leaf count is given.",
-     "cipher": "Archive text, verbatim: 'Memorandum relative to the late French Corps in the Deccan, from Captain Malcolm, 2 December 1798; also a second copy of the same in cypher with an enclosing letter by Henry Dundas, dated 19 August 1800'. Leaf not seen: the cipher system (numerical or nomenclator) is not stated; the clear copy of the same text is in the same folder, which is a crib."
-    },
-    "prior_art": {
-     "decode": "known.py 'Dundas', 'Malcolm' (14 Nov 2026): no DECODE record; the only Dundas cipher entries are catalogue 1921 (Dundas of Dundas accounts, 1688) and the Harford Jones to Dundas code of 1798 (catalogue), both different items.",
-     "tomokiyo": "Web search naming Tomokiyo, Cryptiana, Dundas, Board of Control and Wellesley cyphers (14 Nov 2026): no Cryptiana page for this folder or for a Malcolm cypher of 1798-1800.",
-     "lasry": "Same search for Lasry and DECODE: nothing on Dundas/Malcolm cyphers; the hits are BL Wellesley despatches 'some in cipher' and Qatar Digital Library enclosures of 1808, none a decipherment.",
-     "edition": "Web search for the memorandum's title (14 Nov 2026) found no printed edition; Wellesley Despatches (Martin) and Kaye's Life of Malcolm were not searched in full text, so a print of the clear text is not excluded (it would give the plaintext, not the key).",
-     "literature": "Web searches (14 Nov 2026) returned DNB and history-of-India material on the disbandment of the French corps and no study of a Malcolm-Dundas cypher."
-    },
-    "key_check": "No key is held here. The cypher copy is a copy of the clear memorandum in the same folder, so the folder itself carries the crib; whether the code is the Board of Control's of 1800 (compare the Harford Jones code of 1798 in the catalogue) is unknown.",
-    "duplicates": "known.py 'Dundas', 'Malcolm', 'Deccan', shelfmark 'Ms. Coll. 888' (14 Nov 2026): no entry or lead holds Penn Ms. Coll. 888; the Harford Jones to Dundas code (catalogue) is a different writer, place and year.",
-    "searches": [
-     {
-      "query": "Malcolm memorandum French corps Deccan 1798 cypher Dundas papers Penn Ms. Coll. 888 (web search)",
-      "result": "Penn finding aid of the collection (no item level in the summary); DNB on Malcolm and the disbandment of the French corps; Huntington Dundas records of other collections; nothing on a cypher copy."
-     },
-     {
-      "query": "Tomokiyo cryptiana OR DECODE OR Lasry Henry Dundas Board of Control cypher 1800 Wellesley Malcolm cipher letter India (web search)",
-      "result": "BL Wellesley to Dundas despatches 'some in cipher', Qatar Digital Library Malcolm Persia enclosures of 1808; no Tomokiyo, DECODE or Lasry hit."
-     },
-     {
-      "query": "\"Memorandum relative to the late French Corps in the Deccan\" Malcolm 1798 printed (web search)",
-      "result": "No catalogue record or print of the memorandum; background on the disbandment (DNB) and Bengal Secret Letter enclosures at TNA."
-     },
-     {
-      "query": "known.py 'Dundas' 'Malcolm' 'Deccan' against catalogue, leads, DECODE dumps (local)",
-      "result": "Only the sweep row, catalogue 1921 and the Harford Jones code; no overlap."
-     }
-    ],
-    "verdict": "open"
-   },
-   "repository": "penn"
-  },
-  {
    "id": 2675,
    "counted": true,
    "year": 1564,
@@ -83954,87 +83032,6 @@
     "key_in_volume": "Interlinear decipherments of neighbouring Rym letters in Kt. 26-28 (e.g. regest 46348, 15 Jul 1570, 'sorkozben felig feloldva'); not online.",
     "key_held": "DECODE R389 and R390 (Gevay's copies of Rym cipher sheets, NSZL Quart. Lat 2254/19-20); not tested against the 1572 letter.",
     "duplicates": "known.py 'Rym' (14 Nov 2026): lead 1220 (Rym and Ungnad 1573-77) covers Kt. 29 onward; no entry holds Kt. 28 Konv. 5 fol. 87-96.",
-    "verdict": "open"
-   },
-   "repository": "oesta"
-  },
-  {
-   "id": 2677,
-   "counted": true,
-   "year": 1559,
-   "date": "6 Aug 1559",
-   "language": "Latin (some Italian, German)",
-   "region": "Other",
-   "period": "1497-1559",
-   "title": "Busbecq, Constantinople -> Ferdinand I, 6 Aug 1559: ciphered despatch with interlinear decipherment on the sheet (key sheet of 1559 on DECODE R1220)",
-   "correspondents": "Augerius (Ogier Ghiselin de) Busbecq -> Ferdinand I",
-   "place": "Constantinople",
-   "shelfmark": "OeStA HHStA Wien, Staatenabteilungen, Tuerkei I, Karton 14, Konv. 3 (1559 VII-XII), fol. 26-32 (Hungaricana BecsSeg 44414)",
-   "folio_note": "One despatch (Kt. 14 Konv. 3 fol. 26-32). Siblings, not part of this entry: the other Busbecq regests of Kt. 11-16 (53 in the sweep count, 51 interlinear), e.g. 44189 (17 Aug 1557, Kt. 13 Konv. 2 fol. 111-113). Not Busbecq's alone: 43971 (Amasya, 28 May 1555) is catalogue 501.",
-   "cls": "B",
-   "status": "Hungaricana regest wording: \"sifrir\" = a cipher text; \"sorkozben feloldva\" = contemporary interlinear decipherment on the same sheet; \"kulon lapon feloldva\" = decipherment on a separate sheet; \"nincs feloldva\" / \"feloldas nelkul\" = no decipherment filed. Catalogue 501 holds only the Amasya letter of 1555 (11-5-25); the Busbecq Paris reports 1581-88 (NLA Wolfenbuettel) are a different run. No row for the 1555-62 Constantinople series. The regests all report an interlinear decipherment, so the open question is the cipher itself, not the content.",
-   "why": "Fifty-one paired sheets from a famous correspondent; useful for the cipher history of the Habsburg embassy before Wyss.",
-   "importance": 4,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Compare with the Busbecq letters printed in his Epistolae and with Austro-Turcica for the earlier period; order Kt. 13 (1557) and Kt. 14 (1559).",
-   "links": [
-    {
-     "href": "https://archives.hungaricana.hu/hu/lear/BecsSeg/44414/",
-     "label": "Kt. 14 Konv. 3, 6 Aug 1559"
-    },
-    {
-     "href": "https://archives.hungaricana.hu/hu/lear/BecsSeg/44189/",
-     "label": "Kt. 13 Konv. 2, 17 Aug 1557"
-    },
-    {
-     "href": "https://archives.hungaricana.hu/hu/lear/BecsSeg/43971/",
-     "label": "Kt. 11, all cipher"
-    }
-   ],
-   "source": "Hungaricana (archives.hungaricana.hu/hu/lear/BecsSeg, Vienna inventory regests), sweep of 14 Nov 2026",
-   "score_note": "Scored from the Hungaricana regest text (Ugyleiras field) during the 14 Nov 2026 Hungaricana sweep (research/sweep_2026-11-14_hungaricana/); the leaf pages and images were not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), Hungaricana sweep vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "Hungaricana Becsi segedletek (archives.hungaricana.hu/hu/lear/BecsSeg/44414/), leaf page opened in a Chrome tab on 14 Nov 2026: regest only (shelfmark, date and place, one-line summary); the page has no image viewer and no scan.",
-     "extent": "Kt. 14 Konv. 3 (Jul-Dec 1559), fol. 26-32: the despatch of 6 Aug 1559 from Constantinople, Busbecq to Ferdinand I.",
-     "cipher": "Regest, verbatim: 'Busbeck - I. Ferdinand (sifrir, sorkozben feloldott jelentes)' = cipher, with an interlinear decipherment on the sheet. Leaf not seen: no image online."
-    },
-    "prior_art": {
-     "decode": "decode_search.py 'Busbecq' (14 Nov 2026): R1220, a Busbecq key sheet of 1559 in HHStA Staatskanzlei Interiora Chiffrenschluessel Kt. 13 Fasc. 20 f. 50-52 (French); no DECODE record for a Busbecq letter of 1559.",
-     "tomokiyo": "Web search naming Busbecq, 1559, Chiffrenschluessel and decipherment (14 Nov 2026): no Cryptiana page on Busbecq's Constantinople despatches.",
-     "lasry": "Same search: nothing by Lasry or DECODE authors on Busbecq's 1559 despatches.",
-     "edition": "Lang's repertory text layer searched for Busbecq (14 Nov 2026): no row for him. The Fazekas-Fodor edition starts in 1568; Nehring's Austro-Turcica ends in 1552. A scholarly article cites the Vienna despatch of 13 Aug 1559 (HHSA Turcica I 14) for the negotiations, without mentioning cipher; whether any edition prints the 6 Aug 1559 despatch was not found.",
-     "literature": "Web search (14 Nov 2026) returned Busbecq biographies, the Turkish Letters and the OAPEN book on Hungarian ciphers; nothing on this despatch's cipher or its decipherment."
-    },
-    "searches": [
-     {
-      "query": "decode_search.py Busbecq (de-crypt.org RecordsList)",
-      "result": "R1220 only: the 1559 Busbecq key sheet, no ciphertext."
-     },
-     {
-      "query": "Lang 2015 repertory text layer grep 'Busbec' (PyMuPDF)",
-      "result": "No match for Busbecq or Busbeck in the 344 pages."
-     },
-     {
-      "query": "Busbecq 1559 Constantinople cipher despatch Ferdinand I Chiffrenschluessel decipherment Turkish letters code (web search)",
-      "result": "Biographies and the Turkish Letters; a 1559 negotiations article citing the 13 Aug 1559 despatch; nothing on the cipher."
-     }
-    ],
-    "key_check": "DECODE R1220 is a Busbecq key sheet of 1559, the year of this despatch; it has not been tested because the despatch is not online. The interlinear decipherment on the sheet is the second source for the key.",
-    "key_in_volume": "The interlinear decipherment is on the sheet itself (regest 'sorkozben feloldott'); not online.",
-    "key_held": "DECODE R1220 (Busbecq key sheet 1559, Staatskanzlei Interiora Chiffrenschluessel Kt. 13 Fasc. 20 f. 50-52); not tested.",
-    "duplicates": "known.py 'Busbecq' (14 Nov 2026): catalogue 501 is the Amasya letter of 28 May 1555 by Vrancic, Zay and Busbecq (Kt. 11), a different despatch; lead rows for Busbecq's Paris reports are another run. Regest 43971, listed in this sweep's row as Busbecq's, is that Amasya letter (catalogue 501), so it is excluded.",
     "verdict": "open"
    },
    "repository": "oesta"
@@ -84547,7 +83544,8 @@
     "key_check": "Key recorded, not tested: AKT 13/153 (agreements on secret signs and ciphers 1568-1696) named by the archive; no ciphertext seen. No key is held here or on DECODE for the Luzern series.",
     "key_in_volume": "Key named by the archive in a separate unit, AKT 13/153 'Verabredungen der katholischen Orte ueber die geheimen Wortzeichen und Chiffren 1568-1696'; not seen, so not tested; it is a series of agreements, so whether it covers 1655 is open.",
     "duplicates": "known.py 'AKT 13', 'Solothurn', 'Fribourg', 'Catholic cantons' (15 Nov 2026): only this lead and its sweep row; the Zurich keys of 1653/1655 are a different series.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "unidentified"
   },
@@ -84615,7 +83613,8 @@
     "key_check": "Key recorded, not tested: COD 1100 (1708) and AEV AV 54/7; no ciphertext seen. No key is held here or on DECODE for the Luzern series.",
     "key_in_volume": "The 1708 Geheimschluessel (Luzern COD 1100, 9 fol.) and its copy 'Alphabet secret (code)' (Valais AEV AV 54/7, with the four allies' arms) are named in the finding aids; not seen, so not tested. Whether the 1708 code was in use in 1711-12 is open.",
     "duplicates": "known.py 'Valais', 'Solothurn', 'Lucerne' (15 Nov 2026): this lead only.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "unidentified"
   },
@@ -84683,7 +83682,8 @@
     "key_check": "Stencil key Nr. 203-003 recorded, not tested; no ciphertext seen. No Vorster/Mueller key is held here or on DECODE.",
     "key_in_volume": "Nr. 203-003 in the same Nachlass is 'Schablone fuer die Geheimschrift in einigen Briefen von Hofrat Peter Mueller an Fuerstabt Pankraz Vorster', i.e. a stencil key for Mueller's secret script (undated); not seen, so not tested. No key for Vorster's own outgoing letter (868-001) is named.",
     "duplicates": "known.py 'Vorster', 'Stiftsarchiv', 'St. Gallen' (15 Nov 2026): this lead and its sweep row only.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "unidentified"
   },
@@ -84755,7 +83755,8 @@
     "key_check": "No key sheet for the Havrincourt cipher is filed in series 267. The 'Decryptage' pieces (7 letters) are cipher/clear pairs from which a key can be rebuilt (the way the affry1757 key was); the fonds also holds two undated key sheets in 280 ('Chiffre avec Botteman', 280.209: numbers 1-60 with a letter each and code names on p. 2; 'Premier chiffre remis par le duc de Choiseul et le chancelier du Muy', 280.210), neither named for Havrincourt, not seen. Nothing tested.",
     "key_in_volume": "Cipher/clear pairs for 7 of the letters (267.8, .20, .28, .31, .48, .79, .82) are in the series; the two key sheets 280.209-210 are in the same fonds and are not shown to belong to this correspondent.",
     "duplicates": "known.py 'Havrincourt', 'Affry', 'Choiseul' (15 Nov 2026): this lead and the sweep row; the catalogue's d'Affry entry is R1071 (affry1757c) only.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). Already narrowed to the 20 letters with no 'Decryptage' piece; the seven letters with one are excluded."
    },
    "repository": "unidentified"
   },
@@ -85050,7 +84051,8 @@
     "key_check": "No key held. SP 46/146/63-64 is an 'Encoded letter deciphered between the lines in Kerguelen's hand' (first page missing): a cipher/clear pair from the same writer, so a key can be rebuilt from it; it is excluded from the text to be read and kept as the crib.",
     "key_in_volume": "SP 46/146/63-64: interlinear decipher in Kerguelen's hand (crib for the whole correspondence); not seen.",
     "duplicates": "known.py 'Kerguelen', 'Stapleton de Laurence', 'SP 46/146' (15 Nov 2026): only this lead.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). The one interlinear decipherment (SP 46/146/63-64) is excluded and kept as the crib; the other letters have none."
    },
    "repository": "tna"
   },
@@ -85245,7 +84247,8 @@
     "key_check": "The key is on the leaf itself (numerical cipher with key); not held here, not tested. A key on the item makes the reading a lookup once seen; recorded as key_in_volume and the entry is kept because no reading or printed text is known.",
     "key_in_volume": "The key to the numerical cipher is written overleaf with the cipher (NLW MS 9066E/2378); not seen, not tested.",
     "duplicates": "known.py '9066E', 'Bulkeley', 'Wynn of Gwydir' (15 Nov 2026): only this lead; the 'P. B.' writer is not identified.",
-    "verdict": "open"
+    "verdict": "open",
+    "audit_note": "15 Nov 2026 audit: kept (case b). A key is filed/held with the letters but no decipherment of the ciphertext is recorded; a key does not disqualify (3 Nov rule)."
    },
    "repository": "print"
   },
@@ -85513,82 +84516,6 @@
     ],
     "key_check": "No key held. Henri Duval de Dampierre (d. 1620) commanded imperial troops in Hungary and Bohemia; no cipher of his is held here.",
     "duplicates": "known.py 'Dampierre', 'Kollonit', 'Autogr. 32/69' (15 Nov 2026): only the unrelated dampierre1589 target and this lead.",
-    "verdict": "open"
-   },
-   "repository": "unidentified"
-  },
-  {
-   "id": 2819,
-   "counted": true,
-   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
-   "year": 1862,
-   "date": "1862 (22 telegrams)",
-   "language": "German",
-   "region": "Central Europe",
-   "period": "1801-1900",
-   "title": "Archduke Ferdinand Max (later Emperor Maximilian of Mexico) to Alphons Dupont, 22 telegrams with number-code passages 'von zeitgleicher Hand aufgeloest', 1862",
-   "correspondents": "Ferdinand Max / Maximilian of Mexico -> Alphons Dupont (Teilnachlass Alphons Dupont)",
-   "place": "Miramare -> Vienna",
-   "shelfmark": "OeNB, Autogr. 1312/30-13 to 1312/30-34 (22 records; -16 read in full)",
-   "folio_note": "Each record: Telegramm, 1 Blatt, 2 Seiten; 'Teile des Texts mit Zahlencode chiffriert, von zeitgleicher Hand aufgeloest'; e.g. 1312/30-16 of 9 Jul 1862 (budget for 1863). Found with the searches 'Zahlencode' (21 hits) and 'chiffriert'",
-   "cls": "A",
-   "status": "Not online (OeNB Primo record read 15 Nov 2026; no Digitalisat). 22 telegrams of 1862, Maximilian (then Archduke Ferdinand Max) to Alphons Dupont, parts in a number code, each with a contemporary solution written on it (key_in_volume). Whether one code or several is not known. Needs OeNB reproductions.",
-   "why": "Twenty-two telegrams of one correspondent pair with the plaintext inked in by a contemporary: a number code can be rebuilt from pairs and checked across the run.",
-   "importance": 3,
-   "solvability": 5,
-   "difficulty": 2,
-   "verify": "Open two records (one early, one late) and check the contemporary resolution is on the same sheet; look for the Dupont Nachlass code book.",
-   "links": [
-    {
-     "href": "http://data.onb.ac.at/rec/AC13895947",
-     "label": "OeNB record Autogr. 1312/30-16"
-    },
-    {
-     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Zahlencode&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
-     "label": "OeNB Primo search Zahlencode"
-    }
-   ],
-   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
-   "ark": "",
-   "access": "archive",
-   "scored": "vetted",
-   "access_note": "OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
-   "vetting": {
-    "date": "2026-11-15",
-    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), blocked-catalogue Chrome sweeps vetting",
-    "seen": {
-     "kind": "not online",
-     "where": "OeNB Primo, record AC13895947 (Autogr. 1312/30-16) read in Chrome 15 Nov 2026; the other 21 telegrams (Autogr. 1312/30-13 to -34) were listed by the sweep from the same series (Teilnachlass Alphons Dupont). OeNB Primo record read in Chrome 15 Nov 2026 (search.onb.ac.at, citation link data.onb.ac.at/rec/AC...): a 'Manuskript' held in the Sammlung von Handschriften und alten Drucken, 'in Sammlung benuetzbar', with no Digitalisat link on the record; so no facsimile to view. Archive item: a reproduction order or a visit to the Josefsplatz reading room.",
-     "extent": "22 telegrams of 1862 (Miramare to Vienna), each one leaf, two pages; only parts of each text are in the number code ('Teile des Texts mit Zahlencode chiffriert').",
-     "cipher": "Archive text, 1312/30-16 of 9 Jul 1862: 'Teile des Texts mit Zahlencode chiffriert, von zeitgleicher Hand aufgeloest' (extent line 1 Telegramm, 1 Blatt, 2 Seiten). The contemporary solution is written on the telegram itself, in a clerk's hand beside the coded groups; the catalogue's content note gives only the gist (thanks to Dupont for how he conducted the campaign, asks when the 1863 budget will be put). It is not a printed or published reading."
-    },
-    "prior_art": {
-     "decode": "known.py plus the DECODE dumps (research/catalogue_harvest/decode views.jsonl, views_b, views_c: about 2,450 records) and the Cryptoole snapshot, 15 Nov 2026: no record for this shelfmark, writer or correspondent pair (the dumps are partial, so 'not on DECODE' is as far as they go).",
-     "tomokiyo": "Tomokiyo's Cryptiana: a site-restricted web search for the names returned nothing (15 Nov 2026), and the live code/GL.htm (Lasry's AI-assisted list, fetched 15 Nov 2026) has no entry for it; no page on this item in the repo holdings (known.py).",
-     "lasry": "GL.htm (live copy, fetched 15 Nov 2026, about 123,000 characters of text): searched for this shelfmark and the names, no entry. Lasry's papers: nothing found.",
-     "edition": "Not found: Corti's Maximilian und Charlotte von Mexiko (1924) and the Mexican-empire letter editions were not searched item by item (no full text held); a web search for the Dupont telegrams (15 Nov 2026) returned nothing. Dupont's papers are catalogued only at OeNB.",
-     "literature": "Web search 15 Nov 2026 (Maximilian, Dupont, Telegramme 1862, Chiffre, Miramare): no study of this telegram series or its code; the cipher-history item found concerns the 1865 Napoleon III cable, a different system."
-    },
-    "searches": [
-     {
-      "query": "known.py Autogr. 1312, Dupont, Maximilian, Miramare",
-      "result": "only the sweep row; targets/kanawha1863 and mountflorence1801 are other Duponts"
-     },
-     {
-      "query": "web: Maximilian Ferdinand Max Dupont 1862 Telegramme Zahlencode",
-      "result": "nothing"
-     },
-     {
-      "query": "OeNB Primo record AC13895947",
-      "result": "extent and Beschreibung quoted above; no Digitalisat"
-     }
-    ],
-    "key_check": "No key table is held. The contemporary solution written on each telegram gives the plaintext of the coded groups, so the code can be rebuilt from the 22 pairs; it is a crib set, not a printed key.",
-    "key_in_volume": "Contemporary solution in a clerk's hand beside the number-code groups on each telegram (same unit, Autogr. 1312/30-13 to -34): it fixes the plaintext of every coded passage, so the target is recovering the code (key from adjacent plaintext) and measuring it, not reading new text; not seen, not tested.",
-    "duplicates": "known.py 'Autogr. 1312', 'Dupont', 'Maximilian', 'Miramare', 'Ferdinand Max' (15 Nov 2026): only this lead and its sweep row. One writer and one correspondent; whether all 22 use one number code or several cannot be told without images, so it is kept as one entry and should be split by code if the images show a change of system.",
     "verdict": "open"
    },
    "repository": "unidentified"
