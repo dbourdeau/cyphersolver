@@ -57,3 +57,9 @@ page is not counted as ours).
 Tried: image route, hand reading of 599/578 (B) and 600 (A), layer separation (failed). Not tried: a per-line hand
 transcription of 578 against 725/748; clustering numeral glyphs; the cipher book HPBK 1791 (needs a re-fetch); Ben-Bassat,
 Turcica 46 (2015), and BOA HR.SFR / DH.SFR for the Yildiz-Yemen code books; asking Koc whether 1791 is a code book.
+
+## Contribution: dudout/ (15 Nov 2026), partial
+
+Two blind transcriptions of ten system B sheets (541, 585, 562, 575, 577, 587, 602, 644, 652, 675) with the clerk's glosses,
+two gloss tables and two preregistered tests, see `dudout/NOTES.md`. Test 1: 0.787 (best control 0.420), partial; test 2:
+0.5625 (best control 0.450), failed. One table does not hold across all sheets; offered as a starting table only.
