@@ -248,3 +248,13 @@ vostro cavallaro", "lo fatto de tutta ... stato bene informato", "per maggior", 
 ... strattamente", "piaseria", "pare ... bono", "dubio", "conoscere questa vostra litera", "oltra questo ... intendeva".
 Family C: seven letters (9,103 cipher signs), one key from the ciphertext alone, read out of sample on five (0.42, 0.47, 0.46, 0.47,
 0.42; shuffled 0.10-0.16). Remaining: the rest of R5504, R5505, R5506 page 2, R5515 (faint).
+
+## 15 Nov 2026 (later): R5505 sample transcribed; out of sample again
+`famC/hand/r5505_hand.txt`: R5505 (cart. 1598 no. 31) page 1, lines 1-16, 439 cipher signs. Decrypted with `key_h4.json`, no re-solve
+(`dec05.txt`): **word share 0.417 against 0.171 shuffled**. Phrases: "la vostra signoria sia de tutto", "de la Mirandola dove ero trovato
+ser Cristoforo cancellero del mio [?] conte Iacomo", "el quale", "molte ... per modo alcuno", "facendo ... a mario", "per la ... altra
+trovara meglio", "farà per la via", "dicendome ... me pare ... la impresa de questi". Clear opening "quando ... senza fallo me pare
+impossibile a l'altro".
+Family C: eight letters (9,542 cipher signs), out of sample on six (0.42-0.47). Each new letter confirms the key and the setting
+(conte Iacomo, ser Cristoforo his cancelliere, the Mirandola) but none raises the share above about 0.47: the remaining gap is in the
+transcription and in signs the key does not yet place, not in missing text. Not transcribed: rest of R5504 and R5505, R5506 p.2, R5515.
