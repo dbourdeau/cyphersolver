@@ -411,3 +411,7 @@ Whole lines holding the open words cropped and read by eye (`L0-L6.png`, git-ign
 - R5562 "sarvane": the date line is torn at the left edge; the sign before "rvane" is lost (outside blocker; probably Sarsane).
 - "mamiglio", "mas…sano", "canteera", "sevala", "Miser Andremto": the line crops are legible but my token sequence for these spots
   does not align closely enough with the image to say which sign is wrong; a box-level transcription of these lines is the fix.
+
+## 15 Nov 2026: family B split off and written up
+Family B (catalogue 2629) has its own key, so it moved to `targets/sarzana1477` (one key, one entry) with its own NOTES, profile
+and write-up (`docs/sarzana1477.html`); catalogue 2629 removed. This folder keeps the work log and family C (still in progress).

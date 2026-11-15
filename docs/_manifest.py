@@ -32,6 +32,11 @@ PAGES = [
          blurb='A long Italian letter entirely in about 60 graphic signs from the Sforza chancery box in Milan. Shuffled-token controls give Italian, a sign reader and a key estimated from the ciphertext alone reach 24% dictionary-word coverage, and a hand correction of the sign boxes adds only a point: the DECODE scans are too small (signs 15&ndash;25 px) for a reading. The 115 key sheets in the box are 19th-century reconstructions and do not fit.',
          quote='shuffled-token ratio 1.65 for Italian, 1.38 for Latin &middot; 24% dictionary-word coverage &middot; limited by scan resolution',
          rights='Images: Archivio di Stato di Milano, via DECODE (not republished)'),
+    dict(slug='sarzana1477', label='Sforza informer at Sarzana', year='c. 1477&ndash;79', y=1478.0, place='Sarzana &rarr; Milan', st='partial', stt='key from the ciphertext',
+         title='A Sforza informer at Sarzana, seven cipher letters (c. 1477&ndash;1479)',
+         blurb='Seven undated cipher letters in the Sforza archive in Milan, written from Sarzana about messer Ludovico, Tomasino and Corsica. A homophonic key of about 35 signs was recovered here from one letter alone and read the other six unchanged; the letters read as Italian sentences with a few open words (0.897 measured).',
+         quote='&ldquo;meser Ludovico e Tomasino sono in molte diferentie&rdquo;',
+         rights='Letters: Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598, via DECODE (images not republished)'),
     dict(slug='mazzinghi1478', label='Mazzinghi to the Medici 1479', year='1478&ndash;79', y=1478.8, place='Rome &rarr; Florence', st='partial', stt='read in part',
          title='Giovanni Mazzinghi and an unsigned writer to the Medici, Rome, January 1478 (1479)',
          blurb='Two bare cipher letters from Rome to the Medici in the winter after the Pazzi conspiracy, the first of them warning of a bull annulling the Church&rsquo;s privileges and of a plot named by two Pistoiese. The key was fitted on the contemporary decipherment of a sibling letter and checked by an independent ciphertext-only break: 76.1% of 1,647 signs read, the key partial.',
@@ -3555,6 +3560,7 @@ IMAGES['setembrino1914'] = None
 IMAGES['roosevelt1903'] = None
 IMAGES['piccolomini1646'] = None
 IMAGES['mazzinghi1478'] = None
+IMAGES['sarzana1477'] = None
 IMAGES['majesty1624'] = None
 IMAGES['deboli1787'] = None
 IMAGES['deboli1786'] = None
