@@ -317,3 +317,24 @@ signore) on messer Ludovico, Tomasino (Fregoso) and Corsica, Florence, Siena and
 That fits the regency of Bona of Savoy and Gian Galeazzo (1476-80) with Ludovico in exile, but the dating is not checked.
 Status: family B read on a first-pass transcription (six letters, key from the ciphertext alone, confirmed on five letters it was not
 fitted on). Not yet done: R5573 (full page), the rest of R5575 and R5586, word-level review against the images, measured read share.
+
+## 15 Nov 2026 (later): family B complete, all seven letters decrypted
+Rest of R5575 (now complete, 1,004 signs) and R5586 (now complete, 974 signs) transcribed, and R5573 (a 7-line slip, 261 signs,
+not a full page as the triage thought). All decrypted with `keyB.json` unchanged. Total 4,363 cipher signs.
+4+ letter word cover (no shuffle in brackets this time; shuffles were 0.10-0.17 above): R5562 0.65, R5576 0.67, R5572 0.64,
+R5577 0.65, R5575 0.60, R5586 0.54, R5573 0.62; all 0.61.
+- R5575 end: "... me pare habiate a fare altra provisione, perche me pare haver tolta via ogni rasone et a meser Ludovico, e mi incresce
+  ch'io habia acceptato dicto oficio, nondimeno fate como vi pare meglio. Iovan Galeaso mi disse questi di a Firense haver havuto
+  letera da Iovan Coscia che volese mandare uno de li soi al duca Iovani per bona casone, e che gli voleva mandare uno Piero del
+  Cerreto, famiglio di l'arcivescovo ... intrinsico e pratico di la lingua e del paese. Sarsane die vigesimo februarii etcetera."
+- R5586 rest (rougher transcription): "... per la restitutione de ... [Fiorentini?] non entrerano in tel facende sensa consenso del signore;
+  il simil credo del duca de Modena ... meser Ludovico, el quale per le morte de meser Ieronimo ... in terre de Firentini ... Iovan
+  Galeaso cerca per mio meso havere le licentia da meser Ludovico ... sconforterò la cosa ... se pur meser Ludovico inclinase al denaro
+  infra quatro di ... Firentia die octavo febrarii."
+- R5573 (complete): "El messo de Tomasino e tornato de Corsica; diceva aver trovato e lasato quele cose in pacifico, ma che Tomasino era
+  in pensiero de moversi per sua specialita. Le cose ocorse di qua mi sono parute simile a quele di sè vala ... credo sero a Milano de poi
+  Pasqua e satisfaro piu a pieno. Sarsane die vinti tre marcii etcetera."
+Family B status: all seven letters decrypted with one key recovered from the ciphertext alone (outcome: key recovered from
+ciphertext-only), confirmed on six letters it was not fitted on, each reading as dated Italian sentences. Not yet at the read bar as
+measured: first-pass transcriptions, R5586 second half rough, two digit-like signs (6, 10) and a few words open; no word-by-word
+review against the images and no reader review yet. Remaining gaps are workable, not blocked.

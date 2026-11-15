@@ -319,7 +319,7 @@
     "source": "Decrypted here."
    },
    "length": {
-    "tokens": 592,
+    "tokens": 1004,
     "distinct": 35,
     "unit": "symbols",
     "measured": true,
@@ -329,7 +329,7 @@
     "by": "llm from images",
     "source": "by eye from crops of the DECODE image",
     "image_quality": "good",
-    "notes": "First pass; R5575 and R5586 partial."
+    "notes": "First pass, complete."
    },
    "read": "read in part"
   },
@@ -349,7 +349,7 @@
     "source": "Decrypted here."
    },
    "length": {
-    "tokens": 348,
+    "tokens": 974,
     "distinct": 35,
     "unit": "symbols",
     "measured": true,
@@ -359,7 +359,37 @@
     "by": "llm from images",
     "source": "by eye from crops of the DECODE image",
     "image_quality": "good",
-    "notes": "First pass; R5575 and R5586 partial."
+    "notes": "First pass, complete; second half rough."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "R5573",
+   "shelfmark": "Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, cart. 1598 no. 99 (DECODE R5573)",
+   "date": "23 March, year unknown",
+   "year": "unknown",
+   "country": "Italy",
+   "route": "unknown",
+   "language": "Italian",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Decrypted here."
+   },
+   "length": {
+    "tokens": 261,
+    "distinct": 30,
+    "unit": "symbols",
+    "measured": true,
+    "file": "famB/t73.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "by eye from a crop of the DECODE image",
+    "image_quality": "good",
+    "notes": "Complete."
    },
    "read": "read in part"
   }
@@ -623,6 +653,11 @@
    "kind": "verification",
    "what": "Family B key (fitted on R5562 only) applied unchanged to R5576, R5572, R5577, R5575 (part), R5586 (part): 4+ letter word cover 0.60-0.67 vs 0.10-0.17 shuffled; all read as continuous Italian, dated at Sarsane.",
    "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Family B complete: R5575 and R5586 finished, R5573 added; all seven letters (4,363 signs) decrypted with keyB.json unchanged, 4+ letter word cover 0.61 overall; reads as dated letters from Sarzana and Florence on messer Ludovico, Tomasino, Corsica, Volterra.",
+   "result": "partial"
   }
  ],
  "outcome": {
