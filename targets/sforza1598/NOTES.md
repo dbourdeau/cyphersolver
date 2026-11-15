@@ -133,3 +133,15 @@ R5517 under the hand key, examples: "la impresa de urbino", "deliberato ... la v
 per adoperar ben del vostro stato", "in questa ... nel paese ... per persone inteligenti", "a roma", "castro", "a cremona".
 Limits: the gain is small (holdout share +3 points); what remains is in the transcription (theta / barred o, + / t, rare signs, merged
 o / O in R5518), which needs another pass on the images, not more key search.
+
+## 15 Nov 2026 (later): sign re-check, ligature signs
+In the 3x crops, two things typed as two tokens are one sign: "- T" (a bracket sign with a lead stroke, 18 times) and "- e" / "e -"
+(a barred o whose bar runs out both sides, 8 times). `t4.txt` writes them as D1 and E.
+- Joint CTTS on t4 (480 s): 16.82 M vs 7.97 M shuffled (2.11; t3 gave 2.08). The solver gives D1 = x (a rare-letter slot, i.e. unplaced).
+- Hand test with the segmentation score (train / holdout; t3 hand key -7704 / -6335): D1 = a -7683 / -6275, D1 = la -7685 / -6314,
+  D1 = e -7679 / -6303; E = t, e or s about equal, E = f worse by about 30 on the holdout. Kept D1 = a, E = t (`key_h3.json`, `dec_h3.txt`).
+  Contexts favour a word sign ("per esser [D1] piu debile", "altra cosa sia [D1]"), so "la" stays possible.
+- The f in "beneficio" (R5518 l. 9) is, on the crop, the long-barred o; the plain theta reads t in "scrito", "secreto". The hand
+  transcription did not mark the two shapes consistently, so the split cannot be scored from it. Word share unchanged (0.43 / 0.50 / 0.43).
+What it needs: a box-level transcription (each sign with its position, CTTS-style) so the theta shapes, + / t and o / O can be
+relabelled from the image and re-scored; a by-eye re-read of whole letters is not precise enough for these look-alikes.
