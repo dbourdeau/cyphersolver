@@ -254,3 +254,9 @@ Folders `sweep_2026-11-15_tna_discovery`, `_jacar_retry`, `_vatican_venice`; vet
 - **TNA Discovery:** the API answers without a block and no State Papers piece is digitised, so every row rests on catalogue text. Not done: the calendar download of about 350 archive.org volumes stopped at 273 (about 80 not fetched); WO 1, WO 32, FO 27 and CO 5 are described by folio range with no cipher words, so they need a per-volume approach; British History Online search sits behind a challenge page; Gale State Papers Online not checked for images.
 - **JACAR:** 759 priority records scanned single-threaded at about 2.5 s (no 403): no cipher runs, only administrative items. 2,123 body-text-only records are not scanned (`scan1.py` does them). Three Waseda Okuma-papers leads (Motono cipher telegram 1874 and the Taiwan telegraph cipher tables) sit in `sweep_2026-11-15_jacar_retry/candidates.json`, unmerged: the Waseda site was down for maintenance. The JACAR region value has no Asia entry in `merge.py`.
 - **Vatican and Venice:** 0 rows. The Vatican Apostolic Archive has no item-level route (the "Indice dei Fondi" PDF names "Ufficio Cifra" only); BAV OPAC 16 new terms gave 0 new shelfmarks of 426 covered; Chig. A.I.35-60 are not digitised; the Dieci "Cifre, chiavi e scontri di cifra" series is restricted. Mapping Barb. lat. 6000-9800 needs about 3,800 manifest probes at 3 s.
+
+## Script wave 5, 15 Nov 2026 (Omont Saint-Germain, route probes)
+
+Folder `sweep_2026-11-15_script_wave5`; 0 leads. Omont Saint-Germain I/II are readable from archive.org (`cataloguegnrald00manugoog`, `cataloguegnrald01manugoog`):
+only key sheets, "avec dechiffrement" entries and Bellievre fr. 15566-15572 Matignon/Chasteauneuf cipher letters (unconfirmed folios). Still open: Gallica arks for fr. 15566-15568 (SRU needs Chrome),
+NAF I (no OCR). Gallica manifests answer curl at 3 s; ark check character is NOID (see README there).
