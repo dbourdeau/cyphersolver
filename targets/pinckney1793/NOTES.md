@@ -381,6 +381,15 @@ This is the first reading known to us.
   was not transcribed here; it could settle the doubtful digits in that transcription (for example 1058?, 1350?, 371?-1184?,
   1432?, 610-564?).
 
+### Reading review of the two Lear 1807 entries
+
+Preliminary. `CONTRIBUTING.md` (14 Nov 2026): a reading merges only with a `reading_review` graded A or B,
+"recorded by the reviewer, not by the author of the reading". The grades in `profile.json` (2 entries) were
+written by Andrew Beling's own AI agents and are kept as preliminary grades: `by` is "Author's agents (Andrew
+Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
+maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
+The seven other entries' reviews (integration review of PR #399) are upstream's and are not changed.
+
 ## Remaining gaps
 
 - Pinckney 28 Aug 1793, group 447 (first word of the passage, before "regiments") - blocker: too-short; single occurrence in all 15 coded Pinckney frames on M30 roll 2 and in none of the six other Code No. 16 letters, no decoding; Pinckney's own copy (PrC, Pinckney Family Papers, South Carolina Historical Society) not online
