@@ -269,6 +269,12 @@
       "kind": "verification",
       "what": "Integration check on merging PR #575: verify.py reproduced; a second script from key.tsv found all 216 groups (169 with a direct headword, 39 inferred, 8 unresolved); all 47 groups of No. 4 and about 45 groups of No. 3 compared with the LAC copy images without a disagreement; Entick 1781 p. 218 row 11 and p. 220 right row 30 confirmed on the scan. Word-by-word strict count: No. 1 63.5%, No. 2 69.4%, No. 3 63.4%, No. 4 67.2%. The gloss test stays failed (3 of 9).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "what": "Follow-up to the PR #575 notes by an AI agent: British Library catalogue gives Add MS 21836-21838 as not digitised (images ordered 12 Nov not arrived). Fryer 1980 and 1981 and Jackson 1958 (Internet Archive lending copies) and Wagner 2026 (full PDF text) searched for cipher, cypher, code, dictionary, Entick, Cossitt, Sumner, Hoyt: none reads or identifies this code. Text searches, not page readings; novelty still not proven; Hoyt citation unresolved.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -360,9 +366,9 @@
         "detail": "Still visible as copied; literal and nearby dictionary rows do not recover Sherwood closing sentence. Keep two holes."
       },
       {
-        "item": "Prior art: Fryer 1980 and 1981, the intended Hoyt citation, Jackson 1958, Wagner 2026",
+        "item": "Prior art: the intended Hoyt citation; page reading of Fryer 1981 pp. 176-182",
         "blocker": "needs-physical-access",
-        "detail": "Fryer's two books located in catalogues and libraries, but the relevant pages were not accessible online (lending-only or preview denied); Jackson 1958 unseen; Wagner 2026 thesis PDF returned 403; the intended Hoyt reference is still unresolved. Pemberton thesis (all 373 pages screened) and 1976 article checked: nothing found. Novelty not proven; the print escalation step stays unticked."
+        "detail": "Fryer 1980 and 1981 and Jackson 1958 text-searched in the Internet Archive lending copies and Wagner 2026 text-searched in full on 15 Nov 2026: no mention of the cipher, a code book or Entick; Fryer 1981 pp. 176-182 (the Cossitt and Sumner visit) not read page by page; the intended Hoyt reference is still unresolved. Pemberton thesis (all 373 pages screened) and 1976 article checked: nothing found. Novelty not proven; the print escalation step stays unticked."
       },
       {
         "item": "Original-hand attribution of glosses and comparison of original figures with the LAC copy",
@@ -384,9 +390,9 @@
         "note": "Strict read_share measures marked conjectures and supplied endings in Reading section using repository v 2_score, all words treated as known. It is not the fraction of direct dictionary look-ups. Coordinator AI prose/table review with source-page inspection is recorded; no human review or outside-project independent verification is claimed.",
         "reading_review": {
           "grade": "B",
-          "by": "Codex coordinator, one of the contributor’s own AI agents (not a human review)",
+          "by": "Author's agents (Andrew Beling, with AI agents)",
           "date": "2026-11-12",
-          "note": "The shipping and thunder clauses are interpretable in the normalized reading; the first source/account/council clause remains raw and uncertain. Approved only as read in part, not a complete grammatical restoration or verification of the logistics guesses. Read the prose and full decryption table and inspected the LAC source page; not a fresh validation of every Entick row."
+          "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Codex coordinator, one of the contributor’s own AI agents (not a human review) before the rule of 14 Nov 2026, and merged in #575. The shipping and thunder clauses are interpretable in the normalized reading; the first source/account/council clause remains raw and uncertain. Approved only as read in part, not a complete grammatical restoration or verification of the logistics guesses. Read the prose and full decryption table and inspected the LAC source page; not a fresh validation of every Entick row."
         }
       },
       {
@@ -402,9 +408,9 @@
         "note": "Strict read_share measures marked conjectures and supplied endings in Reading section using repository v 2_score, all words treated as known. It is not the fraction of direct dictionary look-ups. Read in part: the first half (the description) reads; the second half does not connect.",
         "reading_review": {
           "grade": "B",
-          "by": "Claude Opus 5.5, one of the contributor’s own AI agents (not a human review)",
+          "by": "Author's agents (Andrew Beling, with AI agents)",
           "date": "2026-11-13",
-          "note": "Reread the reading against decryption_no2.md. The description through \"belong[s] to New Haven\", with \"spy, rebel\" and \"name unknown\", is coherent; face, years and hair are inferred repairs, and 415 is unread. \"Slipped through ye [?]\" and the York/trade/hemp clause do not connect. Approved only as read in part. Not checked against the images in this review."
+          "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Claude Opus 5.5, one of the contributor’s own AI agents (not a human review) before the rule of 14 Nov 2026, and merged in #575. Reread the reading against decryption_no2.md. The description through \"belong[s] to New Haven\", with \"spy, rebel\" and \"name unknown\", is coherent; face, years and hair are inferred repairs, and 415 is unread. \"Slipped through ye [?]\" and the York/trade/hemp clause do not connect. Approved only as read in part. Not checked against the images in this review."
         }
       },
       {
@@ -432,9 +438,9 @@
         "note": "Strict read_share measures marked conjectures and supplied endings in Reading section using repository v 2_score, all words treated as known. It is not the fraction of direct dictionary look-ups. Coordinator AI prose/table review with source-page inspection is recorded; no human review or outside-project independent verification is claimed.",
         "reading_review": {
           "grade": "A",
-          "by": "Codex coordinator, one of the contributor’s own AI agents (not a human review)",
+          "by": "Author's agents (Andrew Beling, with AI agents)",
           "date": "2026-11-12",
-          "note": "Coherent partial account. Albany, Oswego, Vermont and numerical/lexical repairs remain bracketed; the final two groups are unresolved. Prose/table consistency review with LAC source-page inspection, not fresh validation of every Entick row."
+          "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Codex coordinator, one of the contributor’s own AI agents (not a human review) before the rule of 14 Nov 2026, and merged in #575. Coherent partial account. Albany, Oswego, Vermont and numerical/lexical repairs remain bracketed; the final two groups are unresolved. Prose/table consistency review with LAC source-page inspection, not fresh validation of every Entick row."
         }
       }
     ],

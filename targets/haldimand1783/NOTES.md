@@ -64,7 +64,7 @@ The 1888 calendar lists and summarises the documents without giving a full decip
 - Both instalments of "Sherwood's Journal", *Vermont History* 24 (April and July 1956): full text read; they cover 1780–81.
 - Mathews to Sherwood, 9 January 1783 (LAC transcript B.179-2 pp. 162–169): read on the images; it approves the private correspondence but names no book or rule.
 
-Not checked: Mary Beacock Fryer's *King's Men* (1980) and *Buckskin Pimpernel* (1981) were located in catalogues and libraries, but the relevant pages were not accessible; the intended Hoyt citation is unresolved; H. M. Jackson's 1958 Sherwood study was not seen; Ryan L. Wagner's 2026 thesis on Haldimand's intelligence operations was inaccessible (403). **Novelty is therefore not proven.** See [the follow-up](PRIOR_ART_2026-11-12.md). The contribution is the documented identification/testing of the dictionary setting, full transcriptions and transparent partial decodes, including portions Sherwood could not understand.
+Searched on 15 November (see "Follow-up on the PR #575 notes" below), with no reading of these messages and no identification of Entick found: Mary Beacock Fryer's *King's Men* (1980) and *Buckskin Pimpernel* (1981) and H. M. Jackson's *Justus Sherwood* (1958), by full-text search of the Internet Archive lending copies; Ryan L. Wagner's 2026 thesis, whole text searched. These were searches of a text layer, not page-by-page readings; the intended Hoyt citation is still unresolved. **Novelty is therefore not proven.** See [the follow-up](PRIOR_ART_2026-11-12.md). The contribution is the documented identification/testing of the dictionary setting, full transcriptions and transparent partial decodes, including portions Sherwood could not understand.
 
 ## Integration check (14 Nov 2026)
 
@@ -83,7 +83,7 @@ Verified from the files by the integrating reader (an AI reader, not a person) w
 - No. 1 repairs/source/logistics clauses and No. 2 415, 153-7, 237-31/sentence connections — blocker: needs-physical-access; dictionary and copy checked, original numeral images ordered to distinguish copying and encoder errors.
 - No. 3 middle (262-36, 6-26 and sign, 272-8, 90-28, 303-22, 417-9, 224-4, 402-25), continuation 203-19 and plain words — blocker: needs-physical-access; bounded image/dictionary retry unsuccessful except corrected 218-11; originals ordered.
 - No. 4 23-4-1 and 33-35 — blocker: needs-physical-access; copied figures do not yield Sherwood's closing clause; two holes retained.
-- Prior art in Fryer 1980 and 1981, Jackson 1958 and Wagner 2026, and the intended Hoyt citation — blocker: needs-physical-access; Fryer located but relevant pages not accessible online, Jackson unseen, Wagner returned 403, Hoyt citation unresolved. Pemberton thesis and 1976 article, the 1956 journal instalments and the 9 January 1783 letter were checked (nothing found). Novelty not proven; the print step below stays unticked.
+- Prior art: the intended Hoyt citation, and a page-by-page reading of Fryer 1981 pp. 176-182 (the Cossitt and Sumner visit) — blocker: needs-physical-access; Fryer 1980 and 1981, Jackson 1958 and Wagner 2026 were text-searched on 15 Nov 2026 (no mention of the cipher, a code book or Entick), but the lending copies were not read page by page and the Hoyt citation is unresolved. Pemberton thesis and 1976 article, the 1956 journal instalments and the 9 January 1783 letter were checked (nothing found). Novelty not proven; the print step below stays unticked.
 - Original authorship of glosses and comparison of original figures with the LAC copy — blocker: needs-physical-access; original images ordered. Coordinator AI prose reviews cover Nos. 1 and 4; no human_check or new inspection of every dictionary row is claimed.
 
 ## Escalation
@@ -91,8 +91,45 @@ Verified from the files by the integrating reader (an AI reader, not a person) w
 - [x] clear-pages: Sherwood sketch and covering letter used and distinguished from a verbatim decipherment; nearby clear intelligence consulted for context.
 - [x] siblings: research pass swept B.178 copy pp. 336–509 visually and additional B.177–178 material at thumbnail scale; no additional page of dictionary-code groups found; this was not an exhaustive archive sweep.
 - [x] known-keys: Entick 1781 setting tested; formal gloss result left open; no surviving instructional key tied securely to these pairs.
-- [ ] print: calendar, Pemberton's thesis and 1976 article, and the 1956 Sherwood journal checked; Fryer's two books, Jackson 1958, Wagner 2026 and the intended Hoyt citation remain unchecked.
+- [ ] print: calendar, Pemberton's thesis and 1976 article, and the 1956 Sherwood journal checked; Fryer's two books, Jackson 1958 and Wagner 2026 text-searched on 15 Nov 2026 (nothing on the cipher); the intended Hoyt citation remains unchecked.
 - [x] key-rebuild: occurrence table includes both-column evidence, proposed readings and every repair; incomplete semantic recovery recorded.
 - [x] retry: specified weak pairs inspected on copy/dictionary images with neighbouring rows and selected digit swaps; 218-11 corrected, other weak places remain.
 
-The source frames used here are later copies. Andrew ordered British Library images of the originals on 12 November 2026: Add MS 21838 folios 306 recto and verso, 307 recto and verso, 324 verso and 379 recto. None has arrived. When they do, every copied number will be checked against them and the readings revised; the first four folios hold the messages. Generated website and catalogue files are left for the repository's contribution workflow.
+The source frames used here are later copies. Andrew ordered British Library images of the originals on 12 November 2026: Add MS 21838 folios 306 recto and verso, 307 recto and verso, 324 verso and 379 recto. None has arrived (15 November 2026). They are not online: the British Library's catalogue (searcharchives.bl.uk, record 040-002034298) marks Add MS 21838 as not digitised. When they do, every copied number will be checked against them and the readings revised; the first four folios hold the messages. Generated website and catalogue files are left for the repository's contribution workflow.
+
+## Follow-up on the PR #575 notes (15 Nov 2026, Andrew Beling, with AI agents)
+
+Searched by an AI agent (Claude); no person has read these books for this note. Nothing below changes a reading, a
+number, a share or a class.
+
+- **British Library images.** Not online. The catalogue (https://searcharchives.bl.uk, record `040-002034298`, Add MS
+  21838, "Vol. III" of the Sherwood and Smyth letters, 1783-1784) gives "Digitised Content: No" for Add MS 21836-21838;
+  the old Digitised Manuscripts address for Add MS 21838 now redirects to a general page. Its item list names Ranna
+  Cossit to Sherwood, Grand Isle, 1 January 1783 (f. 2) and "B. Sumner; Jan. 1781 (?), f. 312" (letters to Sherwood and
+  S. Holland), but no item at ff. 306-307. The images ordered on 12 Nov 2026 have not arrived; no delivery message was
+  found on 15 Nov.
+- **Fryer, *Buckskin Pimpernel* (1981)**, Internet Archive `buckskinpimperne0000frye` (lending copy), full-text search for
+  cipher, cypher, code, dictionary, Entick, Cossit, Cossitt, Sumner, Hoyt, numbers, Claremont, Dartmouth. No hit for
+  cipher (spelled so), Entick, dictionary (only Grose's slang dictionary in the bibliography) or Hoyt. "Cypher" occurs
+  twice, for other papers: an extract of Haldimand to Clinton of 28 February 1781 "originally in cypher" (p. 132) and a
+  message in cypher found on the courier Joseph Bettys in 1782 (p. 166). "Code" occurs only as "code name" of agents
+  (Hudibras, Plain Truth). Pp. 176-182 tell of Cossitt and Sumner's visit to Sherwood on 30 December 1782 and of a later
+  letter from Cossitt about Sherwood's son and Dartmouth College; the snippets give no numbered messages. Note 26 of that
+  chapter cites "PAC Haldimand Papers B 175 pp. 185-186, Cossitt and Sumner to Haldimand, Dec. 30, 1782". In her notes
+  on sources (p. 263) Fryer says she cited both the British Museum originals and the Public Archives of Canada B series.
+- **Fryer, *King's Men* (1980)**, `kingsmensoldierf0000frye`, same terms: "cypher" once (a royal cypher on a uniform
+  plate), "code" only as agents' code names, no hit for Entick, Cossitt, Sumner or Hoyt.
+- **Jackson, *Justus Sherwood: Soldier, Loyalist and Negotiator* (1958)**, `justussherwoodso0000ltco`: no hit for cipher,
+  cypher, code, dictionary or Entick. P. 58 has the December 1782 visit of Cossitt and Sumner (notes 73-74, B.175 pp.
+  185-186).
+- **Wagner, *The Security and Defense of This Province* (Liberty University PhD, February 2026)**, opened in Chrome
+  from https://digitalcommons.liberty.edu/doctoral/7941/ (the PDF that curl had refused with 403), 262 pages, text layer
+  searched: no hit for cipher, cypher, decipher, Entick, Cossit, Sumner, Hoyt or Add MS 21838; "code" only in general
+  remarks on codes and invisible ink (pp. 228, 231, 238); Sherwood on ten pages. Wagner cites many Haldimand volumes by
+  Add MS number, without image links.
+- **What this changes.** The "not checked" literature is now searched, and none of it reads or identifies this code;
+  the claim stays "novelty not proven" because these were text searches of lending copies, not readings, and the Hoyt
+  citation is unresolved. The print step stays unticked.
+- **A mistake in the search.** A first script asked the Internet Archive's search service for the three lending copies
+  thirty times in a row and got 403 each time; it should have stopped at the first. The searches above were then made
+  one at a time from the ordinary book pages in Chrome.
