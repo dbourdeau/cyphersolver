@@ -653,6 +653,12 @@
       ],
       "what": "Integration check of PR #525 (R8, AI agent): despatches/scripts/build.py and compare_second.py re-run with python3 -I, all assertions pass and outputs byte-identical; own decoder from KEY_v10.tsv alone decodes the 17 first-pass pages of 12/22 Feb and 12/22 Aug 1676 identically; 375 groups compared with Riksarkivet images 279R and 163L, 373 agree (163L R2 89 for 59, R7 136 for 130, both as the blind second transcription b125 reads). Per-despatch strict figures stand (Aug 1676 494/705 = 70.07% read in part, not first; nine others decoded, not read). Wimarson prior art not re-checked (not on archive.org; HathiTrust bot check).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "what": "Issue #629 (Brice Dudout): images 113 right and 114 left are one letter of November 1675 in a second code (numbers 1-246, one number a letter), deciphered by the period gloss on 113 right and on lines 1-4 of 114 left, the bare lines of 114 left included. Checked on the Riksarkivet images by an AI agent: the last line of 114 left, 50.77.34.42.22.16.112.55.149, is 'Novembris' one number a letter (pencilled under it), where KEY_v10 gives d f o u f . i h .; the gloss carries about twice as many letters a line as the numbers and reaches the signature on line 4 of 114 left; the cipher's date is 18/28, the gloss has 13. His transcriptions, gloss reading and draft key (0.65 resubstitution agreement by his account, under his own floor) were not sent and not checked. No count, key or class of this target changes; the letter is outside this key.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -747,6 +753,13 @@
         "role": "transcription",
         "note": "ten bare despatches of 1676-1678 (64 page transcriptions, two second readings), decoded with key states v3-v10, with AI agents; despatches/",
         "date": "2026-11-12"
+      },
+      {
+        "who": "dudout",
+        "role": "identification",
+        "note": "images 113 right and 114 left identified as one letter of November 1675 in a second code (1-246), deciphered by its period gloss; with AI agents; not part of this key",
+        "date": "2026-11-14",
+        "source": "https://github.com/dbourdeau/cyphersolver/issues/629"
       }
     ],
     "gaps": [

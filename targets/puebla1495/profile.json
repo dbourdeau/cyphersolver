@@ -168,6 +168,21 @@
    "kind": "access",
    "what": "Issue #609 (Brice Dudout): a Spanish clear minute of the despatch is reported at AGS PTR leg. 52 doc. 129 (PARES 2207852, 20 images; 'fagamos ... guerra al Rey de Francia' said to match doc. 124 image 1 line 22). One request to the PARES record was answered HTTP 429 and not retried; the record was not seen and the minute is not transcribed. Recorded as a reported pointer, not verified.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "PR #623 (Brice Dudout, with Claude): the Spanish clear text AGS PTR leg. 52 doc. 129 (PARES 2207852) transcribed from the PARES images: pp. 1-2 and p. 15 settled, with the old mark T. c. Y. 2, the date line (Tortosa, 28 December, year word doubtful) and the endorsements ('faltale el principio', 'Descifrada'); two passes over all 15 pages, the second blind; pp. 3-14 not arbitrated. Files in dudout/. Doc. 124 was not decrypted or aligned by the contributor.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #623 (align_doc129.py, doc129_alignment.txt). Passes on pp. 1-2: pass 1 against the blind pass 136 of 165 words on p. 1 and 102 of 137 on p. 2; the settled p. 2 follows pass 1, which was not blind to the clear lines of doc. 124. The clear lines of doc. 124 p. 2 ll. 2-6 (103 words): 99 stand in order in the settled text of doc. 129, 75 in the blind pass alone. The eight cipher groups of doc. 124 p. 2 ll. 1-2 set beside doc. 129 image 1 ll. 15-16: the three with a key value (638 de, 1885 que, 855 dotor de puebla) stand against 'de', 'que', 'el dotor' (3 of 3; alignment moved by 1 or 2 words: 0; 10,000 shuffles of the key excerpt: 3 of 3 once). Candidates from the clear text, not seen on the key: 1813 porque, 1221 fin, 29 abril. 852 and 868 not settled (two groups against three words, two of them doubtful); 883, 1374, 1335 lie in the opening doc. 129 has lost. Doc. 124 is not transcribed beyond the sample and PARES answered HTTP 429, so nothing more was decoded.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -245,9 +260,16 @@
    {
     "who": "dudout",
     "role": "pointer",
-    "note": "reported a Spanish clear minute of the despatch, AGS PTR leg. 52 doc. 129 (PARES 2207852); not yet verified here (PARES HTTP 429)",
+    "note": "reported a Spanish clear text of the despatch, AGS PTR leg. 52 doc. 129 (PARES 2207852); the record was not opened here (PARES HTTP 429)",
     "date": "2026-11-14",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/609"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "transcription of the clear text doc. 129 (pp. 1-2 and 15 settled, two passes over all 15 pages, old marks and endorsements), files in dudout/",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/623"
    }
   ],
   "key_file": "key_excerpt.tsv",

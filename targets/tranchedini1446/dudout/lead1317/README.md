@@ -41,7 +41,7 @@ the second; otherwise **failed**.
 None reaches 0.85, so no letter is called read. Each key was frozen before the letter it was measured on was opened: K2 was built on
 R5318, ff. 28/30/35 and their clears; K3 on the same plus the burnt f. 353 and a blind review sheet of shape questions answered by
 Brice Dudout (3/3 controls right; decisions in `planche/DECISIONS-K3.md`, French). With f. 71 every public letter of lead 1317 is now
-used (ff. 28 and 30 in `targets/tranchedini1448/dudout/`); ital. 1583 ff. 126/132/133/162 have no public image.
+used (ff. 28 and 30 in `targets/tranchedini1446/dudout1448/`); ital. 1583 ff. 126/132/133/162 have no public image.
 
 ## Declared deviations
 - **f. 71, extra harmonisation pass (not in the PREREG).** The page was settled in two halves (L1-L21, L22-L41) by two blind
