@@ -15,7 +15,8 @@ table_1798.tsv, proposals.tsv and apply.py's LETTERS_1802 for this folder's valu
 
 Writes entick_49.tsv, entick_212.tsv, entick_217.tsv (group by group: the dictionary line, the value used, this
 folder's value and grade, the status), reading_49_entick.txt, reading_212_entick.txt, reading_217_entick.txt
-(running text), entick_217_suggest.tsv (/217 groups that fail as written and fit with one 2 read as 4) and
+(running text), cipher_words_49.tsv, cipher_words_212.tsv, cipher_words_217.tsv (read share by cipher words),
+entick_217_suggest.tsv (/217 groups that fail as written and fit with one 2 read as 4) and
 prints the counts. Standard library only; the output is the same byte for byte on every run.
 
     python targets/jones1802/entick.py
@@ -227,7 +228,7 @@ def positions_1802(name, reread):
 # ---------- look-up ----------
 
 def look_up(name, pos, pages, ltext, counted):
-    rows, run, words = [], [], []
+    rows, run, words, meta, rung = [], [], [], [], []
     stat = collections.Counter()
     letter_at = {}
     if name == '49':  # which letter of the spelled word each letter group stands for
@@ -244,11 +245,15 @@ def look_up(name, pos, pages, ltext, counted):
     def flush():
         if run:
             words.append(''.join(ch[0].lower() if ch.endswith('\0') else ch.upper() for ch in run))
+            meta.append(('name', P_at, ' '.join(g for g, _ in rung), sum(1 for _, x in rung if x)))
             run.clear()
+            rung.clear()
+    P_at = None
     for k, P in enumerate(pos):
         if P['kind'] == 'w':
             flush()
             words.append(P['word'])
+            meta.append(('clear', P, '', 0))
             continue
         g, suf, move, theirs = P['group'], P['suf'], P['move'], P['value']
         nums = [int(x) for x in g.split(',')]
@@ -298,12 +303,19 @@ def look_up(name, pos, pages, ltext, counted):
                      theirs, grade, status])
         # running text
         if status.startswith('letter agrees'):
+            if not run:
+                P_at = P
             run.append(tw)
+            rung.append((g, True))
             continue
         if status.startswith('letter does not fit'):
+            if not run:
+                P_at = P
             run.append((tw or '?').lower() + '\0')
+            rung.append((g, False))
             continue
         flush()
+        meta.append(('word', P, g + (f' {suf}' if suf else ''), 0))
         w = ''.join(c for c in unicodedata.normalize('NFKD', chosen or '') if not unicodedata.combining(c))
         w = w.replace("'", '').lower() + (f'+{suf}' if suf else '')
         if status.startswith(('does not fit', 'skipped', 'page not counted')) or not chosen:
@@ -313,7 +325,7 @@ def look_up(name, pos, pages, ltext, counted):
         else:
             words.append(w)
     flush()
-    return rows, words, stat
+    return rows, words, stat, meta
 
 
 GRADES = ('# folder_grade: H, M, L = grade in proposals.tsv; 1798w / 1798l = word / letter value of table_1798.tsv; '
@@ -330,11 +342,67 @@ NOTE = {
 }
 
 
+def cipher_words(name, words, meta):
+    """Read share by cipher words (16 Nov 2026 convention): clear words are left out. Each coded word group is one
+    word (a three-number group too; a bare ,2 group too); each run of letter groups between clear words is one
+    word (a spelled name or a spelled common word), and the parts of a name written with x, + or ~ between them
+    count as one word. A word is read when its reading is a plain word: [p,n] and [?word] are holes. A name is
+    read when every letter group has a value; the strict column also asks that every letter's dictionary line start
+    with that letter. Writes cipher_words_<n>.tsv and returns the counts."""
+    items = list(zip(words, meta))
+    merged = []  # a name written in parts with x, + or ~ between them (EECH x MIASIN) is one word
+    i = 0
+    while i < len(items):
+        w, m = items[i]
+        if m[0] == 'name':
+            while (i + 2 < len(items) and items[i + 1][1][0] == 'clear' and items[i + 1][0] in ('x', '+', '~')
+                   and items[i + 2][1][0] == 'name'):
+                w2, m2 = items[i + 2]
+                w = f'{w} {items[i + 1][0]} {w2}'
+                m = ('name', m[1], m[2] + ' ' + m2[2], m[3] + m2[3])
+                i += 2
+        merged.append((w, m))
+        i += 1
+    out, n, read, strict = [], 0, 0, 0
+    for w, (kind, P, groups, nexpl) in merged:
+        if kind == 'clear':
+            continue
+        n += 1
+        if kind == 'word':
+            ok = not w.startswith('[')
+            why = 'read' if ok else ('doubtful: ' + NOT_SENSE[groups.split()[0]] if groups.split()[0] in NOT_SENSE
+                                     else 'doubtful' if w.startswith('[?') else 'unread')
+            ok_strict = ok
+        else:
+            ng = len(groups.split())
+            ok = '?' not in w
+            ok_strict = ok and nexpl == ng
+            why = (f'{ng} letter group' + ('s' if ng > 1 else '') +
+                   ('' if nexpl == ng else f', {ng - nexpl} not on a line starting with its letter'))
+            if not ok:
+                why += ', a letter without value'
+        read += ok
+        strict += ok_strict
+        out.append([str(n), P['folio'] or '', str(P['line']), 'spelled' if kind == 'name' else kind, groups, w, 'yes' if ok else 'no',
+                    'yes' if ok_strict else 'no', why])
+    with open(HERE / f'cipher_words_{name}.tsv', 'w', encoding='utf-8', newline='\n') as o:
+        o.write(f'# /{name}: cipher words of reading_{name}_entick.txt (entick.py). Clear words are not counted. One row per '
+                'coded word group (three-number and bare ,2 groups included) and per spelled word (a run of letter groups '
+                'between clear words; name parts joined by x, + or ~ count as one).\n'
+                f'# read share: {read} of {n} = {read / n:.3f}; strict (every letter of a name explained by its dictionary '
+                f'line): {strict} of {n} = {strict / n:.3f}.\n')
+        o.write('n\tfolio\tms_line\tkind\tgroups\treading\tread\tread_strict\tnote\n')
+        for r in out:
+            o.write('\t'.join(r) + '\n')
+    print(f'/{name} cipher words: read {read} of {n} = {read / n:.3f}; strict {strict} of {n} = {strict / n:.3f}')
+
+
 def main():
     pages, ltext, counted = load_lines()
     sets = {'49': positions_49(), '212': positions_1802('212', True), '217': positions_1802('217', False)}
     for name, pos in sets.items():
-        rows, words, stat = look_up(name, pos, pages, ltext, counted)
+        rows, words, stat, meta = look_up(name, pos, pages, ltext, counted)
+        cipher_words(name, words, meta)
         with open(HERE / f'entick_{name}.tsv', 'w', encoding='utf-8', newline='\n') as o:
             o.write(f'# {NOTE[name]} Written by entick.py.\n' + GRADES + '\t'.join(HEAD) + '\n')
             for r in rows:
