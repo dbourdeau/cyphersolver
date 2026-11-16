@@ -192,6 +192,87 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 89 tokens, 22 types, ar-mamluk order 4: reading -2.537 per letter; random keys -4.901 (z 5.3); key annealed onto shuffled ciphertext best -2.745 (mean -2.881, z 3.4); annealer on the real text -2.799. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Transcribed the seven cipher lines independently from the master TIFF (90 signs, 25 labels, 22 words) and checked the segmentation on connected components of the ink. Compared by position on 16 Nov 2026 with this folder's transcription: sign counts agree on six of seven lines, and its labels coincide with this folder's signs at 77 of 85 aligned positions.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Annealing over one-to-one keys, both directions, with the new ar-classical-poetry 5-gram model (788,143 verses); with and without the red-gloss values fixed. No sense; fixing the gloss values (read ta and ghayn at two positions) made the score worse.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): With only the commonest sign fixed as alif, read the two words sharing six signs as wa-amthaluka / wa-amthaluha. Of the ten signs it called firm, the alif and waw and three more match this folder's key (37 of 63 aligned positions); five (mim, tha, lam, ya, kaf) are wrong.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Homophones for lam and ha, then an alif sign that also stands for lam (from the compiler's remark that the writer 'made the lam alif'). The accepted key is one-to-one over 22 signs; that sign is alif only.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Scanned both lines as tawil with a rhyme in -da, and showed bayt 1 scans in full under its skeleton; bayt 2 was a syllable too long. Metre and rhyme class agree with the accepted reading (which has r for its y before the rhyme letter).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "simulated annealing"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Tested lam-alif as one sign (the compiler's stock formula): no sign took it in the solver, because the one sign that is lam-alif (rubbed, line 1) had been read as alif. Divider moves and one null alif were also tried.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Metre-constrained search (scansearch.py): syllable weights from 87,421 vowelled forms joined against the tawil hemistich. It recovers 'huma kanu wa-ma kulluha ayda' for one half-line, a reading that is not the accepted one; over 100,000 readings of the opening half scan, so the metre cannot fix the single-use signs.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Read the whole volume (images 0006-0217) for the circle's tricks and the sender's other ciphers; re-read the sender's name at 5x as Ibn al-Qubabi (or al-Qabbani), not Ibn al-Qaysarani. Not reconciled with this folder, which took the name from the sweep.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Outcome of the attack: no reading, outcome not solved. Compared with the accepted key on 16 Nov 2026: same glyph inventory and the tawil metre found; letters of the common signs found; most mid-frequency signs and the sense wrong.",
+   "result": "failed"
   }
  ],
  "outcome": {

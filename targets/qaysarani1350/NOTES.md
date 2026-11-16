@@ -115,6 +115,52 @@ Scriptorium DS738, DECODE, Tomokiyo, Lasry's key list, web searches, Voynich Nin
 web searches for the exact phrases of the two verses found no match, so the verses were not identified in a diwan
 or an anthology. Whether they are Ibn al-Qaysarani's own is not known.
 
+## The ciphertext-only attempt on the same leaf (`ljs51_attack/`, folded in 16 Nov 2026)
+
+A separate session attacked f. 106v from the images alone on 15-16 Nov 2026 (PR #706, folder `ljs51`, never merged as a
+target) and did not read it. By the one-key-one-entry rule it is kept here, not as a second entry: `ljs51_attack/NOTES_ljs51.md`
+(its log), `profile_ljs51.json` (its profile), its transcription (`transcription.txt`, with `transcription_divshift.txt` for
+its divider hypothesis), `solve.py`, `wordsearch.py`, `scansearch.py` and `BRIEF_arabist.md`. The classical Arabic poetry
+model it needed is `ar-classical-poetry` in `lang/` (788,143 verses, scheme `arabic28`; build with
+`python -m lang.build_ar_poetry`). Its solution steps are in `profile.json` (marked "ljs51 attack"). Its transcription
+and values were compared with this folder's on 16 Nov 2026 by sign position (a script written for the comparison; the images were not
+opened for it):
+
+- **Transcription: agrees in the main.** Both read seven lines; the sign counts per line match in six (line 6: 13 against 12;
+  90 signs against 89). The attack used 25 labels, this folder 22. At 85 aligned positions (line 6 omitted from its
+  third word, where the divisions differ) the attack's label stands for one of this folder's signs in 77 (91%); the
+  other 8 are where its label covers a different sign of this folder (its Y covers ج, ح and خ; its D ه, ل and ص; its F, P and Q two
+  each), and it split some of this folder's signs in two or three (for example its H and L are both ا, and its C, R and Z are all م).
+  So the two sessions saw the same shapes in the main, but the shape classes are not identical; the images were not
+  compared again for this note.
+- **Values: the attack recovered few.** It named 10 signs "firm". At the 63 aligned positions where it had a firm value, 37
+  match this folder's key; 26 of those are its alif (17) and waw (9), the two commonest signs. For the other 8 signs
+  11 of 37 positions match (lam for its A, ha for D, dad for X); the rest are wrong (its Y = mim, K = tha, M = lam, P = ya,
+  F = kaf are in this folder ج, ف, ن, ر, ي/ق). Its red-gloss values for line 1 differ from this folder's in two of five letters (ta
+  and ghayn against nun and ayn); with its values I find no word for the first
+  group, with this folder's it is وناعسة.
+- **Key structure: the attack's hypotheses were wrong.** It needed homophones (two signs for lam, two for ha) and an alif
+  sign that also stands for lam; the accepted key is one-to-one over 22 signs and the sign it took as alif-and-lam is alif
+  at all 17 of its positions (18 alifs in the text). It tested "lam-alif is one sign" (the compiler's formula) and found no sign that takes it: this
+  folder's lam-alif is the rubbed single sign of line 1 (the attack's T, which it had read as alif). Its theme ("a reply on the
+  taṣḥīf of jim and ha") was not borne out: the verses are a love couplet.
+- **Metre and rhyme: agrees.** The attack established ṭawīl on its own and a rhyme in -ā, with the second-last letter ض;
+  it had ي where the accepted reading has ر (ايضا against ارضا). Both verses scan in this folder's reading as in its.
+- **Sense: not read.** Its best skeleton read about half of the signs as words (the closing half of its first bayt, هما
+  كانوا وما كلها ايضا), none of them the accepted words; a few short words coincide (الهوى, لها). Its own conclusion was a
+  scanning candidate, not a reading, and the metre could not choose among over 100,000 readings of the opening half
+  (`scansearch.py`). So the independent search **failed** to read the text; it found the metre, the rhyme class, the
+  glyph inventory and a handful of letters, and it is the ciphertext-only evidence for how far metre alone gets on an
+  89-sign, 22-sign cipher with six single-use signs.
+- **The accepted reading is not changed by it.** Nothing in the attack contradicts the key's checks above; its closest
+  claim (a different reading of the gloss, ta and ghayn) is not supported by the sense of the word.
+- **One point left open: the sender's name.** The attack re-read the name after "wa-kataba li" at 5x as Ibn al-Qubabi (or
+  al-Qabbani), the same man as "Ibn al-Qubabi al-Haysub" on images 0067-0068 of the volume, not Ibn al-Qaysarani. This folder
+  took the name from the sweep and did not re-read it. The two readings are not reconciled; the title keeps the sweep's
+  name until someone re-reads the leaf.
+- The attack's "brief for an Arabist reader" (`BRIEF_arabist.md`) was written for a reply on the taṣḥīf and for a reading that was not
+  established; it is kept as a record, not as a statement of the text.
+
 ## Remaining gaps
 
 None: every sign has a value and both verses read. The doubtful signs above are single signs inside words that
