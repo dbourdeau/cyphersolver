@@ -244,6 +244,32 @@ written by Andrew Beling's own AI agents and are kept as preliminary grades: `by
 Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
 maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
 
+## Integration check (15 and 16 Nov 2026, pull request #666)
+
+Checked when the pull request was reviewed; the contributor's commits are unchanged. An AI agent working for the
+maintainers did this; no person has checked the reading.
+
+- **Print.** The 651 cipher letters of `transcription/cipher_letters.txt` (the same as `pass1.txt`) were compared with
+  the printed page: p. 559 on leaf 581 of the Internet Archive copy fetched afresh and on the committed crop, p. 560
+  on the committed crop. All 16 runs agree, and both figures on p. 559 are 300. **This checks the print, not the
+  manuscript**: nobody here has seen the Hatfield letter, and a misreading by the 1892 editor cannot be found this way.
+- **Tests re-run** in a scratch copy: the frozen key's sha256 matches; held-out score -4.0950 per letter against at
+  most -4.6513 for 200 shuffled keys; the set (7, 8, 10) chosen on either half ranks first of 2,024 on the other. All
+  as recorded. The rebuilt `lm4.json` hashed 4af3ace1... here with the same scores (section 4).
+- **Sure words.** `scripts/sure_words.py` re-run: `reading/sure_words.tsv` comes out byte for byte, 57 of 147, and the
+  58 letters outside the tested key recount from its letters column (shift 20: 35, shift 11: 18, other: 5). The review
+  of 15 Nov 2026 had 63; the contributor's stricter 57 is the figure kept.
+- **Prior art and duplicates.** No target, catalogue entry or lead holds this letter. `targets/stowe166` named it as
+  outside its six letters (its note had "800" for the second 300; corrected there). Catalogue 1003 is the French
+  letter of p. 484, another cipher.
+- **Credit.** The contributor's role is now "new cipher with solution": the letter was in no ledger.
+- **Reading review.** Recorded by the reviewer (B, 16 Nov 2026), for the reading of the print: coherent English, raw
+  because the manuscript is unseen and most words are not sure by the rule above.
+- **Language model.** `scripts/lm.py` is local to this target, against the repository's rule to use `lang/`; it stays
+  because the test was frozen with it. A re-run on a `lang/` model of English of the period is an open item.
+- The folder stays `Status: in progress` with no page: the gaps are blocked from outside (the manuscript), so a
+  page is the owner's decision.
+
 ## 9. Limits, and what would finish it
 
 - Read from the 1892 print; the manuscript in the Cecil Papers is not seen. The print may hide marks that separate the

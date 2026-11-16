@@ -207,6 +207,42 @@ written by Andrew Beling's own AI agents and are kept as preliminary grades: `by
 Beling, with AI agents)" and each note begins "PRELIMINARY: author's self-check, not a reviewer's grade. For a
 maintainer to confirm or replace.", followed by the agents' own reading note. No grade letter was changed.
 
+## Integration check (15 and 16 Nov 2026, pull request #665)
+
+Checked when the pull request was reviewed; the contributor's commits are unchanged. An AI agent working for the
+maintainers did this; no person has checked the transcriptions or the readings.
+
+- **Tests re-run** (`scripts/run_tests.py`): the eight recorded hashes match; key v1 on f. 15r 39 of 39 (shuffled keys
+  at most 28.2%); key v2 on the held-out f. 21r 76 of 92, 82.6% (200 shuffled keys at most 35.9%, mean 23.9%). As
+  recorded. That each key and the f. 21r cipher were frozen before the interline was read is by the contributor's
+  record.
+- **Images.** Penn's Colenda manifest of Ms. Codex 533 answers without a bot check and carries the rights statement
+  NoC-US with the attribution to the University of Pennsylvania Libraries. Crops of f. 1r (runs a to f, 69 groups) and
+  f. 22r (run a, 28 groups) were fetched from Penn's IIIF server and compared sign by sign with
+  `transcriptions/reconciled_533_v2.tsv`: all 97 groups agree at 1900 px across the page; one 6 or 0 in run c of 1r is
+  not safe at that size. Not sampled: Codex 534 (the interlines that give the key, and f. 21r), the bare passages, the
+  other runs of Codex 533.
+- **Own decoder** from `key/key_v3.json` and the two context values gives the letters of `readings/runs_533.tsv` for
+  those runs and of the four bare passages (`bare/P1_decode.txt` to `P4_decode.txt`).
+- **Word count.** The review of 15 Nov 2026 counted 37 sure words of 87 (51 with the context-only values) and 11 of
+  16 in the first letter, admitting words with a supplied or replaced letter. README Conventions counts a letter
+  supplied where the cipher has nothing as a hole, and the one-digit rule does not apply to a key rebuilt here, so the
+  contributor's recount stands: 30 of 87, 42 with the context-only values, 9 of 16 in the first letter
+  (`readings/words_533_strict.tsv`, recounted here). The entries of ff. 21v-22r and 35r-35v now carry the count from
+  that list (2 of 10, 6 of 15) in place of the estimate by groups. The shares of the four bare passages are still the
+  reading agent's estimates.
+- **Reading reviews, recorded by the reviewer.** Graded B: ff. 1r-1v, the clause of f. 22r, the two clauses of
+  ff. 35r-35v, and bare passage P1. Graded A: bare passages P2, P3 and P4, each a whole sentence with only code
+  numbers open. **Marked decoded, not read:** ff. 25r, 26r, 28v, 56r-57r, 63r and 70v. Their cipher words stand as
+  the list gives them (f. 56r-57r *mia figlia* and *Dusseldorf*, all sure), but the clear text around the runs is not
+  transcribed, so no sentence is shown and a reviewer cannot grade one. Transcribing the clear sentences of those
+  leaves would let them be read in part.
+- **Prior art and duplicates.** No target, catalogue entry or lead uses this key or these leaves.
+  `research/medici_bia/README.md` looked at Codex 531 only and did not keep it; a cross-reference is added there.
+- **Credit.** The contributor's role is now "new cipher with solution": Codex 533 was in no ledger.
+- The folder stays `Status: in progress` with no page: the bare pages of Codex 534 are not attempted and Penn
+  Ms. Coll. 180 Folder 114 is not seen.
+
 ## Limits
 
 - By words, 30 of Cosimo's 87 cipher words are sure (34.5%), 42 with the context-only values (measured above).
