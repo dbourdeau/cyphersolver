@@ -22,11 +22,22 @@ catalogue 2368. Neither row carries a `vetting` block: both are already read in 
 
 | Shelfmark | Folios | Date | Who | Cipher | State |
 |---|---|---|---|---|---|
-| Vat. lat. 8214 | 68r | early 1524 | a "we", plausibly Federico II Gonzaga to Castiglione | 23 lines, almost all cipher | seen, bare (A); read in part in targets/mantua1524 |
+| Vat. lat. 8214 | 68r | by 29 Jan 1524 (covering letter, Vat. lat. 8211 fr. 36) | a "we", plausibly Federico II Gonzaga to Castiglione | 23 lines, almost all cipher | seen, bare (A); decoded, not read, in targets/mantua1524 |
 | Vat. lat. 8214 | 198r | 8 Apr 1524 | Capino de Capo, Robbio, to Federico II Gonzaga (extract) | 2 lines in 26 of clear text | seen, bare (A); read in part in targets/mantua1524 |
 
 No other page of the volume has cipher, a gloss, a clear copy or a key. f. 298r-v is catalogue 2368 and is not
 repeated here.
+
+Also found, in Vat. lat. 8211 (letters to Castiglione, 1523-24; DigiVatLib microfilm scan, 915 px, "Low Quality"),
+while looking for a clear copy of 68r. These belong to `targets/mantua1524` (same cipher, same key), where they are
+documents marked not read and the text of the held-out test; they are not separate rows here:
+
+| Shelfmark | Frames | Date | Who | Cipher | State |
+|---|---|---|---|---|---|
+| Vat. lat. 8211 | 36 (old f. 33) | endorsed 29 Jan 1524 | Gian Giacomo Calandra, Mantua, to Castiglione | none: the covering letter of 68r, clear text | context for 68r |
+| Vat. lat. 8211 | 72R, 73L, 74R | 30 Mar 1524 | Calandra to Castiglione | long runs within clear text | seen, bare; not read (held-out test, failed its bar) |
+| Vat. lat. 8211 | 76R, 78L | Apr 1524 | Calandra to Castiglione | runs within clear text | seen, bare; not read (held-out test) |
+| Vat. lat. 8211 | 77 (filmed upside down) | 1524, not read | Calandra? to Castiglione | runs within clear text | seen, bare; not read (held-out test) |
 
 ## Duplicates and prior art
 
@@ -43,7 +54,9 @@ repeated here.
 
 ## What is left
 
-- The sibling volumes of Castiglione's papers, Vat. lat. 8199-8213, were not paged; they may hold a decipherment or a
-  clear copy of 68r (the candidate source of Benzoni's quotation) or more letters in this cipher.
+- The sibling volumes of Castiglione's papers: Vat. lat. 8211 was checked, frames 1-166 (with the covering letter
+  of 68r at fr. 36 and the Calandra letters in this cipher above) and 190-209; its frames 167-189 and 210-575 were not.
+  Vat. lat. 8199-8201 and 8210 were sampled only; 8202 is not digitised; 8203-8209 and 8212-8213 were not paged. No
+  clear copy or decipherment of 68r was found.
 - The ASMn originals (Archivio Gonzaga, Carteggio estero: Spagna for Suardino, Milano for Capino; Copialettere for
   Federico's minutes) are not online and were not seen.
