@@ -51,3 +51,9 @@ overlay value graded and justified), `reading.md` (established text; English, so
 ## Method
 
 Method: (1) protocol written before any computation; Daniel Bourdeau’s table frozen (SHA-256); (2) validation on two portions of despatch no. 4 of 3 September 1813 (images 0031–0032), whose contemporary interlinear decipherment serves as the witness: 194/226 and 224/246 values agree, against a 99th percentile of 0.027 and 0.020 for the same table with shuffled values; (3) transcription of the 1,371 groups of the letter of 15 August, then reading; a few values added from the interlinear decipherments of the same volume (1264 = full stop, 1323 = been, 580 = was…), the others by sense and marked.
+
+## Crawford's second code (16 Nov 2026)
+
+Crawford's other 1813 numbering (the = 285, of = 76, Emperor = 1516; frames 0035, 0056, 0070) is the JQA code with its
+blocks of 100 reversed (morris1813's map), not WE025: see `second_code/README.md` (0.890 against the interlinear,
+shuffles at most 0.090; WE025 0.046).
