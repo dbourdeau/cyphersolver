@@ -141,6 +141,40 @@
    }
   },
   {
+   "id": "reply_oct1741_cont",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/27 (image series R0003636), image 50 right page and images 51-54",
+   "date": "15 July (year not given on the page); received 2 Oct 1741 according to the note on image 49",
+   "year": 1741,
+   "country": "Sweden",
+   "route": "Höpken and Carlson -> the comte de Castellane (copied in cipher for Stockholm)",
+   "places": {
+    "from": "Constantinople",
+    "to": "Stockholm"
+   },
+   "language": "French",
+   "cleartext_in_document": "interspersed",
+   "pages": 9,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the pages (no gloss). The key is the hopken1740 key plus values from the glossed Lit. A page of the preceding volume (Lit. A, in this folder)."
+   },
+   "length": {
+    "tokens": 1961,
+    "unit": "code groups",
+    "measured": true,
+    "file": "transcription_reply_oct1741_cont.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF images (lbiiif.riksarkivet.se), R0003636 images 50-54",
+    "image_quality": "good",
+    "notes": "Contributed by Tommy Marshment-Howell (lccompany). Two separate digit readings of each page by Claude agents, compared on the image; 15 doubtful groups keep their alternatives in the header; 54L-17 g7 corrected from 1457 to 1451. The 1,961 count is the group count at integration (the generic measure gives 2,225 tokens with punctuation). Closing lines 'Nous avons l'honneur &c', 'ce 15 de Juillet', 'a 3 heures du matin' are clear script."
+   }
+  },
+  {
    "id": "litB_ibrahim",
    "read": "read in part",
    "shelfmark": "Stockholm, Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/29 (R0003653), image 81 right page and image 82 left page (its verso)",
@@ -270,7 +304,7 @@
    "AI language-model agents (WAINUT), viewing the images"
   ],
   "first_date": "2026-11-10",
-  "last_date": "2026-11-13"
+  "last_date": "2026-11-16"
  },
  "solution": [
   {
@@ -570,6 +604,24 @@
    "kind": "verification",
    "what": "Integration check (13 Nov 2026) of PRs #503 and #506: the Khan's letter folded into this folder (key_frozen.tsv of hopken1742 = key_1741.tsv byte for byte; one key, one entry); check_marks (Khan: 256 words, 205 verbatim, 23 repaired, 28 gloss only; Lit. B: 169 words, 113 verbatim, 13 repaired, 40 guessed, 3 holes), held-out counts (487 of 602 against shuffled max 103; 419 of 494 against shuffled max 28) and the Khan validation re-run; own decoders written from the key reproduce the decryptions of both (60 rows and 30 rows). Images fetched from Riksarkivet IIIF: about 40 groups of rows on image 227 agree (looped 8 against looped 2 as noted) and 44 of 44 groups of B00, B01 and part of B02 on image 81 agree. Headline share unchanged by the strict rule: 301 of 386 words (78.0%) in the three bare documents; the Khan's letter is glossed and not counted. The 21 values of its gloss tried on the 1741 pages and Lit. B: three guessed places confirmed, four contradicted by 1286 Sa, not counted.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Contributor transcription of R0003636 image 50 right page and images 51-54: 1,961 groups in 157 rows, two separate readings of each page compared on the image, 15 doubtful groups with alternatives, interlinear and crossed-out groups recorded in the header.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "reading",
+   "what": "Key key_1741.tsv applied unchanged line by line; 1,894 of 1,961 groups in the key; 1605 = ou and 1083 = fle taken from a glossed page of R0003635, image 149 right (not Lit. A, which is image 147; the contributor's email calls it the Lit. A gloss); 29 further context values listed in notes_reply_oct1741_cont.md, 11 of them new guesses; French reading and English translation written with holes and guesses marked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Integration check: group counts recomputed from the transcription (157 rows, 1,961 groups, 1,894 in key_1741.tsv, 67 outside, 63 without value after the two gloss values); splice with reading_reply_oct1741.md checked ('es' to 'es{+t} tres'); gloss crop for 1083 on R0003635 image 149 right looked at (1262 1083 1741 1678 1177 1749 under 'du fleuve Don'); 1083 = fle holds only if 1678 is ve, and key_1741.tsv marks 1678 as mixed (ve 1, we 1). Not rerun on the images; no new transcription.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -742,6 +794,20 @@
     "role": "pointer",
     "note": "catalogue entry 2244 (Sweep D, Riksarkivet IIIF volume pass) and the images it names",
     "date": "2026-11"
+   },
+   {
+    "who": "lccompany",
+    "role": "transcription",
+    "note": "image 50 right page and images 51-54 of R0003636 (1,961 groups), two passes, 15 doubtful groups kept with alternatives",
+    "date": "2026-11-16",
+    "source": "email from Tommy Marshment-Howell, hopken1740_reply_continuation.zip"
+   },
+   {
+    "who": "lccompany",
+    "role": "solution",
+    "note": "continuation of the reply read in part with key_1741.tsv unchanged (1,894 of 1,961 groups in the key); gloss support for 1605 = ou and 1083 = fle from R0003635 image 149 right",
+    "date": "2026-11-16",
+    "source": "email from Tommy Marshment-Howell, hopken1740_reply_continuation.zip"
    }
   ],
   "key_file": [
@@ -846,6 +912,21 @@
     "item": "Group 1286 (gloss Sa, Khan's letter) against the guesses V[otre] (reply, three places) and ig (Lit. B)",
     "blocker": "open-codes",
     "detail": "the guesses stay guesses; not confirmed by the new gloss value"
+   },
+   {
+    "item": "Reply continuation (image 50 right to 54 right): 63 groups with no key value, most read as marked context guesses, 1194, 1096 (twice) and 1428 (in 'd[1428]s') unread; about 20 new guessed values (1000, 1047, 1168, 1223, 1383, 1456, 1519, 1586, 1634, 1746, 1791 and others)",
+    "blocker": "open-codes",
+    "detail": "From the sense only; 1083 = fle depends on 1678 being ve (key: mixed)."
+   },
+   {
+    "item": "Reply continuation: places that do not give the expected word (tecon, so, mal ha, insiconer, 'la l'accommodement') and two doubtful digits read by sense (51L-04 g1, 52L-03 g11); 15 doubtful groups",
+    "blocker": "open-codes",
+    "detail": "May be misread digits or slips of the encipherer."
+   },
+   {
+    "item": "Reply continuation: no human check of the digits or the French is recorded (the contributor left the line blank); not scored by check_marks.py or _check_reading.py",
+    "blocker": "needs-physical-access",
+    "detail": "Asked of the contributor 16 Nov 2026."
    }
   ],
   "texts": [
@@ -910,12 +991,30 @@
     "language": "fr",
     "state": "read in part",
     "summary": "The Swedes thank Castellane for his generous conduct toward the interests of their court, announce a visit next evening to set out their thoughts on Sweden's present interests with regard to Russia and Russia's differences with the Porte, and begin to say that in Sweden's critical situation with Russia any accommodation between the Porte and Russia is ... (breaks off at the foot of the page).",
-    "note": "123 cipher words to the foot of the left page of image 50: 109 verbatim (88.6%), 3 repaired, 10 guessed, 1 hole (1515). One clear sentence. Checker clean share 0.615. The text continues on images 50 (right page), 51 and 52, not transcribed.",
+    "note": "123 cipher words to the foot of the left page of image 50: 109 verbatim (88.6%), 3 repaired, 10 guessed, 1 hole (1515). One clear sentence. Checker clean share 0.615. The text continues on image 50 right and images 51-54 (reply_oct1741_cont).",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "Read as French sentences against the translation: the four sentences hold to the break at the foot of the page; one group is unread and 10 words rest on marked context values."
+    }
+   },
+   {
+    "doc": "reply_oct1741_cont",
+    "label": "Hopken and Carlson to Castellane, continued: image 50 right page to the closing on image 54 right",
+    "transcription": "transcription_reply_oct1741_cont.txt",
+    "decryption": "decryption_reply_oct1741_cont.txt",
+    "reading": "reading_reply_oct1741_cont.md",
+    "translation": "translation_reply_oct1741_cont.md",
+    "language": "fr",
+    "state": "read in part",
+    "summary": "The envoys argue that Sweden and the Porte should act together against Russia now: Sweden is ready to fight, Russia is stalling on its treaty with the Porte and trying to split it from Sweden, and France's guarantee can only work through Sweden. They ask Castellane to press the Porte's ministers, say that if the Russian envoy (Romanzof?) offers terms the Porte should be told a Swedish-Russian rupture is near, offer a memorandum to the grand vizier, and close 'ce 15 de Juillet, a 3 heures du matin'.",
+    "note": "1,961 groups, 1,894 in key_1741.tsv (unchanged); with the gloss-backed 1605 = ou and 1083 = fle, 63 groups have no value, most read as marked context guesses ([?word]) and three groups (1194, 1096 twice, 1428 once) left unread. Places that do not fit are listed in notes_reply_oct1741_cont.md (tecon, so, mal ha, insiconer). Not scored by check_marks.py or docs/_check_reading.py, so not in fraction_read. The contributor's note left the human-check line blank; no human check is recorded.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Anthropic), integration read",
+     "date": "2026-11-16",
+     "note": "Read as French against the translation: the sentences hold from the splice at 'es|t tres' to the closing; the guessed words are marked and group counts were recomputed from the transcription (1,961 groups, 1,894 in the key). Not an independent reader of the images."
     }
    },
    {
@@ -955,6 +1054,6 @@
     }
    }
   ],
-  "notes": "Not part of this target and not worked: the rest of the Castellane exchange (right page of image 50, images 51-52, about 1,500 groups), other glossed or first-code pages of the volumes, a three-digit code, catalogue 2241 and the rest of 2244 (volume I/9/28 beyond images 227-229; image 482 is in another code) (see NOTES). The Khan of Crimea's letter (images 227-229 of I/9/28) is a glossed page read from its contemporary gloss and tested on the frozen key (487 of 602 groups); like Lit. A it is not counted in fraction_read."
+  "notes": "Not part of this target and not worked: other glossed or first-code pages of the volumes, a three-digit code, catalogue 2241 and the rest of 2244 (volume I/9/28 beyond images 227-229; image 482 is in another code) (see NOTES). The Khan of Crimea's letter (images 227-229 of I/9/28) is a glossed page read from its contemporary gloss and tested on the frozen key (487 of 602 groups); like Lit. A it is not counted in fraction_read. The rest of the Castellane exchange (image 50 right page, images 51-54, 1,961 groups) was contributed on 16 Nov 2026 as reply_oct1741_cont and is not counted in fraction_read."
  }
 }
