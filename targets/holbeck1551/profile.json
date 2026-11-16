@@ -1,0 +1,202 @@
+{
+ "schema_version": 1,
+ "target": "holbeck1551",
+ "title": "H. Holbeck to Rowland Browne, merchant's letter of 10 March 1550/51, three pages in cipher (Hatfield House, Cecil Papers CP 150/143)",
+ "documents": [
+  {
+   "id": "cp150-143",
+   "shelfmark": "Hatfield House, Cecil Papers CP 150/143 (three pages; page 3 is f. 144); HMC Salisbury Part I (1883), p. 85, no. 349",
+   "date": "10 March 1550/51",
+   "year": 1551,
+   "country": "England",
+   "route": "H. Holbeck -> Rowland Browne",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "printed edition"
+    ],
+    "source": "HMC, Calendar of the Cecil Papers, Part I (1883), p. 85, no. 349, summarises the cipher part (28 pipes of oil, proceedings against Rowland Browne by merchants of Edinburgh, other mercantile matters); no decipherment printed.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 4332,
+    "distinct": 26,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Free PDF copy supplied by the Hatfield House archives, 16 Nov 2026, for private study; images not reproduced and not to be republished",
+    "image_quality": "good",
+    "notes": "Transcribed by shape (codes in NOTES.md). Pages 1-2: one blind pass by a sub-agent (pass 1 not made). Page 3: two independent passes (pass 1, and a blind pass 2 in frozen/transcription/), not yet reconciled on the image. Counts exclude sums in clear figures and [?]: 1,029 words, 4,332 signs, 26 shapes. Shape confusions 2/j/z, D/Q and the '10'-like sign are the main noise."
+   },
+   "read": "not read",
+   "places": {
+    "from": "unknown",
+    "to": "unknown"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution of English with words separated by points; many letters keep their own secretary-hand shape (t, h, e, o, b), the rest are signs, several shaped like digits (4 = a, 8 = w, 9 = g, 7 = p, 2 = i/y/k). Sums are written in clear figures.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 26,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "kept",
+  "notes": "26 distinct shapes over 4,332 signs as transcribed; some shapes cover two letters in the frozen key (D = s/d, Q = l/d, z = r/k, 2 = i/y/k), which may be transcription confusion rather than polyphony."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "HMC Salisbury Part I (1883), p. 85, no. 349: the editor summarises the cipher part, so he read at least its drift; no decipherment or key printed. Nothing on DECODE, Tomokiyo or Lasry (catalogue 1015 vetting, 29 Oct 2026); no PR or issue on this letter on origin/main, 16 Nov 2026.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "crib"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Brice Dudout asked Hatfield House for copies and chose the target; the rules were set before the key work (page 3 held out, HOLDOUT-DEF.md frozen; key, measure, lexicon and threshold frozen in PREREG.md; one measure). Claude Opus 5.5 agents transcribed, built the key on pages 1-2, measured once and wrote up. No human has read the decode.",
+  "tools": [
+   "Python (frozen/cle/mesure.py, decode_first.py)",
+   "macOS web2 word list (/usr/share/dict/words)"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, key, measure, write-up)"
+  ],
+  "sessions": "unknown",
+  "first_date": "2026-11-16",
+  "last_date": "2026-11-16"
+ },
+ "solution": [
+  {
+   "date": "2026-11-16",
+   "kind": "access",
+   "what": "Free PDF copy of CP 150/143 supplied by the Hatfield House archives for private study; shelfmark given in their reply (issue #712).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "literature search",
+   "what": "HMC Salisbury Part I p. 85 no. 349 read in the archive.org text: summary of the cipher part, no decipherment; origin/main catalogue, leads, PRs and issues checked.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "control",
+   "what": "Held-out portion fixed before any key work: the whole of page 3 (HOLDOUT-DEF.md, SHA-256 456e52f5...).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "transcription",
+   "what": "Transcribed by shape: pages 1-2 in one blind pass, page 3 in two independent passes (not reconciled on the image).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "frequency analysis",
+    "manual reconstruction",
+    "key-structure hypothesis"
+   ],
+   "what": "Key built on pages 1-2 only: simple substitution with many letters kept in their own shape; each sign given a small set of letters to absorb shape confusions; frozen (cle/key-FROZEN.json) with the measure and lexicon (PREREG.md).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measure on page 3 (pass 1): share of signs in words found in the lexicon after decoding, against 200 shuffled keys. 0.684, best null 0.501, mean 0.155; bar 0.85 and best null + 0.30. Secondary on pass 2: 0.676 (best null 0.450).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "statistics",
+   "what": "After the measure, not counted: the mechanical decode of page 3 is continuous English (ships stayed in Zealand, the exchange at 16s 8d usance, a ship for Berwick); the unrecognised words are names, 1551 spellings and shape confusions, so the lexicon and the transcription, not the key, look like the cause.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Key built from the ciphertext of pages 1-2 (the HMC summary gave the subject, not a parallel text) and frozen; the one pre-registered measure on held-out page 3 failed (0.684 against 0.85 and best shuffled key + 0.30), so the key is partial and the text is not read.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "class": "not read",
+  "key": "partial",
+  "key_file": "frozen/cle/key-FROZEN.json",
+  "fraction_read": 0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "transcription.txt: no reading file; the decode in decode_after_measure.txt is mechanical and not counted",
+  "verification": [
+   "none"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "copies obtained from Hatfield House; transcription, key on pages 1-2, one pre-registered measure on held-out page 3, which failed (0.684 against best shuffled key 0.501; bar 0.85): key partial, not read",
+    "date": "2026-11-16"
+   },
+   {
+    "who": "bourdeau",
+    "role": "pointer",
+    "note": "catalogue entry 1015 (Internet Archive pass-2 sweep and vetting, Oct 2026)",
+    "date": "2026-10-29"
+   },
+   {
+    "who": "hatfield",
+    "role": "pointer",
+    "note": "the shelfmarks CP 150/143 and CP 168/10 and a free study copy of CP 150/143, from which the letter was transcribed; with thanks to the staff; images not reproduced",
+    "date": "2026-11-16",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/712"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "a second held-out test",
+    "blocker": "too-short",
+    "detail": "page 3 is spent and no other letter in this system is known; another Holbeck or Browne cipher letter at Hatfield would give a new portion"
+   },
+   {
+    "item": "pass 1 of pages 1-2 and the reconciliation of the two passes of page 3",
+    "blocker": "not-attempted",
+    "detail": "to be done on the Hatfield PDF, which stays private"
+   },
+   {
+    "item": "a matched control for the measure's ceiling on 1550s English spelling",
+    "blocker": "not-attempted",
+    "detail": "the same measure on a clear English letter of about 1550 of the same length"
+   },
+   {
+    "item": "a reading in sentences, checked against the images",
+    "blocker": "not-attempted"
+   }
+  ],
+  "notes": "Hatfield House archives (credited as hatfield) supplied the images and the shelfmark (issue #712), with thanks to the staff; credit outside contributors.json: the HMC editor (Calendar of the Cecil Papers, Part I, 1883, p. 85, no. 349) summarised the cipher part first. Images are not to be republished."
+ }
+}
