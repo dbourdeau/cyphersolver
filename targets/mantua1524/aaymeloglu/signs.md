@@ -1,6 +1,6 @@
 # Sign inventory: Vat. lat. 8214 cipher, ff. 298r-298v, 68r, 198r
 
-Counts come from the cipher and raised rows of transcription-298.tsv (f. 298r-v: 480 signs, 38 labels, 69 segments), transcription-68r.tsv (907 signs, 34 labels, 145 segments) and transcription-198r.tsv (78 signs, 19 labels, 13 segments). Total 1465 signs, 43 labels (counts approximate to within a few signs). Points (`.`) between signs are not counted. A doubtful reading `x{y}?` is counted under x. Locations: r = 298r, v = 298v, then the line number (H1/H2 = heading).
+Counts come from the cipher and raised rows of transcription.tsv (f. 298r-v: 480 signs, 38 labels, 69 segments), transcription-68r.tsv (907 signs, 34 labels, 145 segments) and transcription-198r.tsv (78 signs, 19 labels, 13 segments). Total 1465 signs, 43 labels. Points (`.`) between signs are not counted. A doubtful reading `x{y}?` is counted under x. Locations: r = 298r, v = 298v, then the line number (H1/H2 = heading).
 
 Most cipher signs are written like the hand's own minuscules and digits. Sign pairs that look similar but are kept apart: `m` (3 minims) vs `n` (2) vs `i` (1, usually dotted). In this hand **`m i` is almost always written together** (4 minims, dot over the last), so read it as two signs.
 
@@ -69,3 +69,7 @@ Most cipher signs are written like the hand's own minuscules and digits. Sign pa
 - **c:** usually doubled (`c c`): 298 14 of 14; 68r 8 of 10; 198r 0 of 1 (`2 x c 8`).
 - **d:** usually doubled: 298 8 of 10; 68r 4 of 5.
 - **b:** paired `b b` occurs only on 68r (19, 20), 6 of 16.
+
+## Additions from Vat. lat. 8211 (held-out microfilm, not counted in the table above)
+- `e`: plain e with no crossbar (4-5 places on 8211). It may be `e+` with the bar lost to the bitonal scan.
+- A phi-shaped sign (an oval crossed by a straight stem) appears about 6 times on 8211. It is transcribed `q{9+}?` or `e+{q}?`. It has no separate label yet, pending better images.
