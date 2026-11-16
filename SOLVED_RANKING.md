@@ -520,6 +520,7 @@ Ranked by how firmly the negative is established and how prominent the item was.
 | 11 | W. Loeschner → unknown, ÖStA HHStA Chiffrenschlüssel Kt. 20 (DECODE R2227) | 1816 | Not a cipher: a clear German memorandum amending the Staatskanzlei cipher instruction; its number groups are worked examples with the plaintext above them | Catalogue 269; settled from the images |
 | 12 | Stojan (a Serb prisoner) → aghas, knezes and kin, ÖStA HHStA Verschwörerakten Fasc. 327 (DECODE R688) | 1664–68 | Not a cipher: DECODE's "graphic signs" are Cyrillic letters writing a Serbian prisoner's plea | Catalogue 270; settled from the images |
 | 13 | Andreae, *Chymische Hochzeit*, Strassburg 1616 (DECODE R4502) | 1616 | Not a letter: the printed novel's inscriptions, glossed by the text itself; sign lines are the dates 1378 and 1459 | Catalogue 210; settled from the images and the novel |
+| 14 | Numeral lines after the note of the reader Ioannes, Trinity College MS O.4.22 f. 248v | 11th-12th c. manuscript, addition undated | Not a cipher: a table of the Paschal full moon for the 19 years of the Byzantine lunar cycle, 19 of 19 values matching the computus (Brice Dudout, PR #690; reached separately by a project session the same day) | Catalogue 2902; the CUDL record calls it an unresolved cryptogram. Settled from the images and the computus |
 
 ## Third tier: found already solved by others
 
