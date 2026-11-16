@@ -133,6 +133,9 @@ Both tests were rerun by the verifier from these files: outputs byte-identical. 
 run from a working folder in which `key/`, `tests/` and the transcription files sat in subfolders `t187/`, `t231/`,
 `t243a/` (f243_p1-2), `t243b/` (f243_p3-5), `t264/`, `t294/`, `t306/`, `t313/`, `t315/`, `t317/`, with
 `key/reconciled_ff189_260.json` made from the reconciled key letters (`key/reconciled_ff189_260.txt` is its text form).
+16 Nov 2026: the two files the last two control lines need are now filed, `key/reconciled_ff189_260.json` and
+`transcriptions/f228_pass1.txt` (it sits in `t231/` in that layout); with them, Test B reruns byte-identical, all
+thirteen lines.
 
 ## 6. Readings
 
@@ -184,8 +187,9 @@ English is a gist):
   22 March: the league, the States General, and *"Luis Felis de Longas para consul de ... Mi[d]de[l]bo[r]g en
   Zelanda"* on conditions (a salary of not over fifty [...], no other occupation).
 - **ff. 317r-318v.** Fuente to the King, Paris, [May or June]: protests over a forcible act on the Flanders frontier and
-  an *arresto* (a French arrêt); the resident of Luxembourg; *"del [...]r de Linquen"* (Fort Linck, the subject of
-  ff. 264 and 294 in the catalogue); *"el conde de [?Bri]enne y su hijo"*; arbitration *"desde el de
+  an *arresto* (a French arrêt); the resident of Luxembourg; *"del [...]r de Linquen"* (Fort Linck by our inference;
+  the catalogue describes ff. 264 and 293 as about the "Governor of Lingen" and the "Governor of Linguem": SP 84/165/152
+  and /171, TNA Discovery records C7306744 and C7306764, seen 16 Nov 2026); *"el conde de [?Bri]enne y su hijo"*; arbitration *"desde el de
   Chateau-Cambresis"*; ends with a copy enclosed. Fort Linck and Brienne are identifications from syllables (inference).
 - **ff. 313r-314r.** [Gamarra] to the King: *"aora no se offrece cosa digna de la noticia de V. M."*; the league he has
   been ordered to further; *"los estados de la provincia de Holanda"*; *"el residente del elector de Brandeburgo"*;
