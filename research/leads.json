@@ -44599,11 +44599,33 @@
    "source": "Rigsarkivet Arkivalieronline paging (TKUA envoys' archives)",
    "prior_art": "not searched under Krag's name (the checks of 11 Nov 2026 for entry 2527 were for Vibe and Juel)",
    "needs_archive_scan": "no",
-   "access_note": "free on Arkivalieronline, no login; full-size JPEGs at api.rigsarkivet.dk/ao/v1/images/<id> (ao.py in this folder)",
+   "access_note": "Scans free on Arkivalieronline unit 261583 (images 57, 58, 60 = api.rigsarkivet.dk/ao/v1/images/48963814, 48963815, 48963817); the edition is a free PDF at https://www.ronlev.dk/bibliotek/3364.pdf.",
    "ark": "",
-   "scored": "sweep",
+   "scored": "vetted",
    "repository": "rigsarkivet",
-   "outcome": "attempted, open"
+   "outcome": "attempted, open",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Rigsarkivet Arkivalieronline unit 261583 (TKUA Sverige, Juel/Hoeg gesandtskabsarkiver, Ordrer og breve 1648-55), images 57, 58 and 60, full-size JPEGs fetched 16 Nov 2026 (bids 48963814, 48963815, 48963817), read at 2000 px; and the printed edition, Danske Magazin 5. raekke II pp. 362 ff. (ronlev.dk PDF 3364, text extracted 16 Nov 2026).",
+     "extent": "Three autograph letters signed by Otte Krag, Copenhagen 9 Mar 1648 (image 57), 16 Mar 1648 ('N. 288', image 58 left, with dorse) and 23 Mar 1648 ('N. 5, N. 291', image 60 right), each with a handful of short groups of dotted numbers (1-36) and a few bare code numbers (35, 192, 54, 87) between clear Danish lines.",
+     "cipher": "Number cipher: letters as numbers joined by dots, a leading index number per group, plus code numbers for words, exactly the 'three-row number system with index numbers and many-digit word codes' that Fridericia describes. No decipherment on the leaves, but the printed text resolves them: e.g. 16 Mar 1648 '1.18.6.21.16.4.21.25' prints as 'Kongens' (index 1, k-o-n-g-e-n-s, consistent with 6=o, 21=n, 4=e, 25=s elsewhere)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Krag' and '261583' (16 Nov 2026): only this lead and the catalogue/ledger rows for the Vibe targets of the same unit; no DECODE record for Krag.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Krag, Juel, Danish, Denmark: no entry.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Krag, Juel, Denmark: no Krag or Juel letter.",
+     "edition": "Fridericia, Danske Magazin 5. raekke II (1889-92), 'Breve ... til Peder Juel 1648-55', prints 'Fra Otte Krag' no. 1 (9 Mar 1648), no. 2 (16 Mar 1648) and no. 3 (23 Mar 1648); the introduction states that with three cipher keys in a key collection of the Rigsarkivet all cipher parts of the printed letters were resolved with certainty (one system used by Otte Krag, one by Peder Vibe to 1652, one by Juel and his correspondents from Dec 1652), deciphered words in italics; the originals were then Ny kgl. Saml. Fol. 1299 e, the stamp on these leaves.",
+     "literature": "Web search 'Krag Peder Juel 1648 breve chiffer resident Stockholm' (16 Nov 2026) found the ronlev.dk copy of Fridericia's edition; Fryxell, Handlingar I, 86 ff. prints extracts of Juel's own letters (cited by Fridericia)."
+    },
+    "key_check": "Fridericia used the Otte Krag key from a collection of cipher keys in the Rigsarkivet (not located in this pass); his printed text gives the letter values directly. Not needed for the verdict.",
+    "duplicates": "Same unit as the written-up targets vibejuel1649 and vibejuel1651 (Peder Vibe's letters), which Fridericia also prints deciphered; no other lead for the Krag letters.",
+    "verdict": "read",
+    "closed": "Fridericia printed all three Otte Krag letters of March 1648 in 1889-92 with every cipher part deciphered from the Krag key in the Rigsarkivet, so the passages are already read."
+   },
+   "access": "online"
   },
   {
    "id": 2529,
@@ -45179,9 +45201,31 @@
    "source": "Rigsarkivet Arkivalieronline paging (TKUA Gesandtskabsrelationer, 17th century)",
    "prior_art": "edition exists, not opened: Peder Galts depescher 1622-1624, ed. Ahnlund 1920 (checked 11 Nov 2026: DECODE search 'Galt' returned no record; archive.org and Google Books have no copy; known.py 'Peder Galt' finds only the third pass's note)",
    "needs_archive_scan": "no",
-   "access_note": "free on Arkivalieronline, no login; full-size JPEG at api.rigsarkivet.dk/ao/v1/images/48962330",
+   "access_note": "Free on Arkivalieronline, no login; full-size JPEGs by curl at https://api.rigsarkivet.dk/ao/v1/images/<id> (ids 48962266, 48962270, 48962308, 48962330).",
    "ark": "",
-   "scored": "sweep"
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Rigsarkivet Arkivalieronline unit 261574 (TKUA Sverige B.84, Peder Galt 1622-25), full-size JPEGs fetched by curl 16 Nov 2026 from api.rigsarkivet.dk/ao/v1/images/: 48962330 (image 609), 48962270 (image 549), 48962308 (image 587), 48962266 (image 545). All four read at 1600 px.",
+     "extent": "Image 609: a leaf of numbered points 6-11, about 20 lines almost wholly in signs with a few clear words (Latin 'contribuere', a numeral 400). Image 549: left leaf with a cipher passage of about 10 lines in the body (glossed in the left margin) and a postscript of about 8 cipher lines below the signature 'T. Galtius' with no gloss. Image 587: a slip of 7 lines of signs, no gloss.",
+     "cipher": "A sign alphabet of triangles and hooked strokes with a few numbers and a square sign, written as words separated by spaces; the same signs on all four images. On image 545 (letter 'No. 1', 5 March) and on the upper passage of image 549 the chancery wrote the Danish plaintext in the margin beside the signs; on 609, 587 and the 549 postscript nothing stands beside, over or under the signs."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Galt' and 'B.84' (16 Nov 2026): only this lead, the TKUA paging sweep READMEs and an unrelated mention in targets/petkum1665; the lead records a DECODE search 'Galt' with no record on 11 Nov 2026.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Galt, Danish, Denmark and Krag: no entry for Galt or the Danish embassy in Stockholm.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Galt and Denmark: one Denmark hit, a Tomokiyo article footnote on the 1624-25 Protestant coalition talks, not a Galt letter or reading.",
+     "edition": "Peder Galts depescher 1622-1624, ed. Nils Ahnlund (Historiska handlingar 26, Stockholm 1920; Libris 383507) prints the despatches; not online (archive.org advanced search 'Galt depescher' 0 hits, Google Books API no volume, 16 Nov 2026), so whether it resolves these passages was not checked. Not needed for the verdict: the key is on the glossed leaves of the same unit.",
+     "literature": "No further web search: the decisive fact (the same alphabet glossed in the same unit) is on the scans."
+    },
+    "key_check": "No separate key sheet found, but the chancery's marginal plaintexts beside the cipher on image 545 and the upper passage of image 549 (and, per the lead, on nearly every letter of 1622-25 in this unit) give the sign values of this simple sign alphabet. Not applied to the three passages in this pass.",
+    "duplicates": "known.py on 'Galt', 'B.84': no other lead or catalogue entry for Galt's despatches.",
+    "verdict": "key_lookup",
+    "closed": "The three unglossed passages use the same sign alphabet that the chancery deciphered in the margin of other letters in the same unit, so they read by key lookup from the glossed leaves; the edition of 1920 probably prints them as well."
+   },
+   "access": "online"
   },
   {
    "id": 2554,
@@ -49589,12 +49633,33 @@
    "prior_art": "open as far as checked (14 Nov 2026): the shelfmark, fonds series and correspondent were searched in catalogue.json, leads.json, every candidates.json / key_leads.json and the targets (known.py-style grep) and found nowhere; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only on Archivportal-D; no images found on the item page of the portal; order from the archive or use the reading room (digitisation not checked on the archive's own site)",
+   "access_note": "Saechsisches Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 03447/28 (Gliederung 039.303 Vela, de), 1758-1759; no digital copy (digitalisatExists false on archiv.sachsen.de).",
    "region": "Germany",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Saxon Loc. 03447/28 (de Vela): 'Dechiffrierte Briefe' of 1758-59, whether the cipher text is kept beside the plain copies is not stated; no digital copy found; not viewed. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Saxon Loc. 03447/28 (de Vela): 'Dechiffrierte Briefe' of 1758-59, whether the cipher text is kept beside the plain copies is not stated; no digital copy found; not viewed. (research/vetting_2026-11-14_german_state_dbs/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archive record https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=ac907a36-1640-4778-9e23-f5acc2b07e80 fetched by curl 16 Nov 2026 and the DDB Solr record id DSKEZ6L4SSQ7S7RLO7SBXAFZ5TMYRBUM (both saved in src/); no digital copy.",
+     "extent": "One file, 1758-1759, of several letters ('Briefe ... unter anderm vom Feldwachtmeister de Vela'); leaf count not given.",
+     "cipher": "Archive title, verbatim: 'Dechiffrierte Briefe, meist aus der Zeit des Siebenjaehrigen Krieges, unter anderm vom Feldwachtmeister de Vela an den saechsischen Kurprinzen'. The letters are described as deciphered; not seen."
+    },
+    "prior_art": {
+     "decode": "known.py on '03447/28' and 'Vela' (16 Nov 2026): only this lead and its sweep row; 'Vela' otherwise hits Velada/Velasco rows of other archives. No DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Vela, Saxon, Saxony: no entry.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Vela, Saxony (one 'Vela' hit is Velasco in a BnF list): no entry.",
+     "edition": "The decipherment is the file itself (contemporary deciphered copies), so no printed edition is needed to establish that the letters were read; no edition was searched.",
+     "literature": "No web search: the archive's title states the letters are deciphered, which decides the verdict."
+    },
+    "key_check": "No key for de Vela's correspondence with the Saxon Electoral Prince is held in the repo; the deciphered copies would give one if the cipher originals survive. Not tested.",
+    "duplicates": "known.py on the shelfmark: no other lead or catalogue entry.",
+    "verdict": "read",
+    "closed": "The archive titles the file 'Dechiffrierte Briefe': the letters are present as contemporary decipherments, so they were read at the time."
+   }
   },
   {
    "id": 2658,
@@ -49615,7 +49680,7 @@
    "difficulty": 2,
    "verify": "Open the digital copy link on archiv.sachsen.de for Loc. 694/10 and look for 694/08-09 scans; judge the 1893 resolutions.",
    "needs_archive_scan": "partly",
-   "access_note": "the Saxon archive page for Loc. 694/10 shows a digital copy link (\"digitalisat\"); the report volumes 694/08-09 were not checked",
+   "access_note": "Loc. 00694/10 is digitised (7 microfilm frames, archiv.sachsen.de viewer, seen in Chrome 14 Nov 2026); the report volumes Loc. 694/08 (digitised microfilm) and 694/09 were not paged for the ciphered passages.",
    "source": "Archivportal-D / Saechsisches Staatsarchiv sweep, 14 Nov 2026",
    "links": [
     {
@@ -49629,8 +49694,30 @@
    "language": "German",
    "region": "Germany",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Saxon Loc. 00694/10 viewed on archiv.sachsen.de (7 microfilm frames: a 1893 title sheet by Dr. Krauske and a table of code numbers with French words, e.g. a numbered list of persons and places): this is a key table (Krauske's reconstruction), not ciphertext. The ciphertext sits in Loc. 694/08 (1712, digitised microfilm, French letters) and 694/09; the first 12 frames of 694/08 showed clear French letters with no numerals located, and the film is too coarse to find the ciphered passages without a page-by-page pass. Not promoted until the ciphered passages are found and a key-state note written. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Saxon Loc. 00694/10 viewed on archiv.sachsen.de (7 microfilm frames: a 1893 title sheet by Dr. Krauske and a table of code numbers with French words, e.g. a numbered list of persons and places): this is a key table (Krauske's reconstruction), not ciphertext. The ciphertext sits in Loc. 694/08 (1712, digitised microfilm, French letters) and 694/09; the first 12 frames of 694/08 showed clear French letters with no numerals located, and the film is too coarse to find the ciphered passages without a page-by-page pass. Not promoted until the ciphered passages are found and a key-state note written. (research/vetting_2026-11-14_german_state_dbs/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Saxon digital copy of 10026 Geheimes Kabinett Loc. 00694/10 (archiv.sachsen.de, guid 96698908-5fa7-4fb6-ae66-bf4617f6e401), viewed 14 Nov 2026 in the German state databases vetting (research/vetting_2026-11-14_german_state_dbs/README.md); record re-read by curl and the DDB Solr record HJGLVTUASTOYY3PNBCB5D6WNXF3AIXO6 on 16 Nov 2026.",
+     "extent": "Seven microfilm frames: Krauske's 1893 title sheet and a table of code numbers with French words (persons and places). The reports themselves (Loc. 694/08, 1712, and 694/09, 1713) were not paged; the first 12 frames of 694/08 were clear French letters.",
+     "cipher": "Archive description, verbatim: 'Chiffren in Schreiben Manteuffels an Flemming (angefertigt von Dr. Krauske, 1893). Enthaelt u. a.: Einige Chiffre-Aufloesungen zu den Berichten Manteuffels an Flemming 1712 und 1713, (Loc. 694/08 und Loc. 694/09)'. A numerical code with French plaintext, reconstructed by Krauske."
+    },
+    "prior_art": {
+     "decode": "known.py on '694/08' and 'Manteuffel' (16 Nov 2026): only this lead, its sweep row and the vetting note of 14 Nov; research/archivportal_d lists Flemming key volumes, not this one. No DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Manteuffel, Flemming, Saxon, Saxony: no entry.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Manteuffel, Flemming, Saxony: no entry.",
+     "edition": "Krauske's 1893 resolutions are themselves the modern decipherment (manuscript, filed as Loc. 694/10); no printed edition of the 1712-13 reports was searched.",
+     "literature": "No web search: the archive record of the 1893 decipherment decides the verdict."
+    },
+    "key_check": "Krauske's 1893 reconstructed code table (numbers to French words) is Loc. 694/10 itself, digitised; it was not applied to the reports in 694/08-09, whose ciphered passages were not located.",
+    "duplicates": "known.py on the shelfmarks and Manteuffel: no catalogue entry; the 'Graefl. Flemmingsche Chiffres' key volumes in the Saxon sweeps are other files.",
+    "verdict": "partly_read",
+    "closed": "Krauske deciphered parts of Manteuffel's 1712-13 reports to Flemming in 1893 and reconstructed the code table, so the cipher is keyed and partly read; what remains is lookup, not an open cipher."
+   },
+   "access": "online"
   },
   {
    "id": 2659,
@@ -49651,7 +49738,7 @@
    "difficulty": 1,
    "verify": "Open the digital copy link; look for the cipher sheets and the police reading.",
    "needs_archive_scan": "no",
-   "access_note": "the Saxon archive page for this record shows a digital copy link (\"digitalisat\"); not opened",
+   "access_note": "Saechsisches Hauptstaatsarchiv Dresden, 10736 Ministerium des Innern, Nr. 00457/02 (09.02.06 Ueberwachung von Einzelpersonen), 1850; a partial digital copy of 6 frames on archiv.sachsen.de (cover and clear leaves only).",
    "source": "Archivportal-D / Saechsisches Staatsarchiv sweep, 14 Nov 2026",
    "links": [
     {
@@ -49665,8 +49752,30 @@
    "language": "German",
    "region": "Germany",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Saxon 10736 Nr. 00457/02 (Hitzschold, 1850) viewed on archiv.sachsen.de: the digital copy is 6 frames (cover and a few clear German leaves of the police file); no cipher sheet and no 'Entschluesselung' leaf is among them, so the cipher is not seen. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Saxon 10736 Nr. 00457/02 (Hitzschold, 1850) viewed on archiv.sachsen.de: the digital copy is 6 frames (cover and a few clear German leaves of the police file); no cipher sheet and no 'Entschluesselung' leaf is among them, so the cipher is not seen. (research/vetting_2026-11-14_german_state_dbs/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archive record https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=955476c9-0978-4861-b8a9-a274c7c13b53 fetched by curl 16 Nov 2026 and DDB Solr record NA6LUEJGWYPVG7662QNN5Z2QOWIXK447; its 6-frame digital copy was viewed in Chrome on 14 Nov 2026 (research/vetting_2026-11-14_german_state_dbs/README.md) and shows no cipher sheet.",
+     "extent": "One police surveillance file of 1850 on Carl Heinrich Hitzschold, former Justizamtmann at Wolkenstein; the number of ciphered letters is not given.",
+     "cipher": "Archive content note, verbatim: 'Enthaelt u. a.: Entschluesselung chiffrierter Schreiben' (contains, among other things, the decryption of ciphered letters). Neither the cipher nor the decryption leaf is in the 6 frames online."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Hitzschold' and '00457/02' (16 Nov 2026): only this lead, its sweep row and the 14 Nov vetting note. No DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Hitzschold, Saxon, Saxony: no entry.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Hitzschold, Saxony: no entry.",
+     "edition": "No edition; the decryption is filed in the police file itself per the archive, so no print was searched.",
+     "literature": "No web search: the archive's note that the file contains the decryption decides the verdict."
+    },
+    "key_check": "No key held; the police decryption in the file would give it. Not tested.",
+    "duplicates": "known.py on the shelfmark and name: no other lead or catalogue entry.",
+    "verdict": "read",
+    "closed": "The archive describes the file as containing the decryption of the ciphered letters, so the Saxon police read them in 1850."
+   },
+   "access": "archive"
   },
   {
    "id": 2660,
@@ -57261,40 +57370,6 @@
    ],
    "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
    "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2905,
-   "counted": true,
-   "year": 1692,
-   "date": "1692ff. (the finding aid's date for the bundle; the Lagnasco/Albani item is probably 18th century, not verified)",
-   "title": "Saxon cabinet cipher bundle with one undeciphered sheet: 'Chiffres avec Monseigneur le Cardinal Albani de S. Clement avec Lagnasco à Rome et Lomaca, avec une feuille non dechiffrée'",
-   "correspondents": "Cardinal Albani of S. Clemente, Count Lagnasco (Saxon-Polish envoy in Rome), Lomaca; Saxon cabinet",
-   "place": "Rome / Dresden / Warsaw",
-   "language": "unknown (French or Italian likely)",
-   "period": "1651-1700",
-   "shelfmark": "Sächsisches Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 03234/06",
-   "folio_note": "Finding aid: 'Chiffren (wahrscheinlich von der französischen Gesandtschaft zu Warschau und aus den Jahren 1692-1697 herrührend; Chiffres avec Monseigneur le Cardinal Albani de S. Clement avec Lagnasco à Rome et Lomaca, avec une feuille non dechiffrée; zwei Pakete Chiffen, von der Gesandtschaft zu Wien herrührend)'. No image seen; no scan icon on the record.",
-   "cls": "B",
-   "status": "15 Nov 2026: finding-aid line only. known.py 'Lagnasco', '03234/06': no hit (Loc. 03234/01-07 are listed in research/archivportal_d as bare key volumes, without this detail). No prior-art search was run for this sheet. Not checked: DECODE (it holds Flemming keys from Loc. 03233/02), the size of the sheet, whether the key in the same bundle reads it.",
-   "why": "An undeciphered cipher sheet lying in the bundle that holds the keys named with it: a likely key match once imaged. One sheet only.",
-   "region": "Germany",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "verify": "Order a scan of the undeciphered sheet and the keys in the same bundle; date the Lagnasco mission to Rome; test the bundle keys on the sheet.",
-   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
-   "links": [
-    {
-     "href": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=25276fcc-8d42-4969-86ed-8f6f1fcbd8f8",
-     "label": "Catalogue record / images"
-    }
-   ],
-   "source": "Wave 15 libraries sweep, 15 Nov 2026 (soeg.kb.dk Primo API; archiv.sachsen.de finding-aid search)",
-   "ark": "",
-   "access": "archive",
    "scored": "sweep"
   },
   {
