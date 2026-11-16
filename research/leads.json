@@ -57714,6 +57714,368 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "Leaf not seen. Routes tried 16 Nov 2026: K10plus SRU (sru.k10plus.de, pica.xsgb and pica.xsgn = 'Ms. orient. A 2507': 0 records; pica.xall 'orient A 2507': 5 unrelated records, so no K10plus record with a digitisation link was found); dhb.thulb.uni-jena.de and collections.thulb.uni-jena.de both redirected to a proof-of-work bot page (rep-pow-challenge), not passed; DDB API answered 403 (needs a key), stopped; qalamos.net did not connect; web search for 'Ms. orient. A 2507' Gotha found no record. Pertsch vol. 4 p. 373 re-read in the archive.org text: 'Das andere Blatt enthält eine Notiz in Geheimschrift und eine andere eines Lesers aus dem Jahre 1178' (shelfmark form Ms. orient. A 2507 still unconfirmed). known.py (orient. A 2507, Pertsch, Delhemma, Dhat al-Himma) only this lead; DECODE (Gotha, Forschungsbibliothek, Delhemma, Mujahidin) 0. Needs a person in a browser on the Gotha/Erfurt viewer, or a scan from the Forschungsbibliothek Gotha of the two leaves at the end of the volume. (research/vetting_2026-11-16_arabic_4/vetting.json)"
+  },
+  {
+   "id": 2944,
+   "counted": true,
+   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "score_note": "Scored after viewing the full image, 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "region": "Italy",
+   "year": 1438,
+   "date": "11 Aug 1438",
+   "language": "Italian",
+   "period": "before 1497",
+   "title": "Francesco Sforza to Cosimo de' Medici, camp, 11 Aug 1438: about 25 cipher lines with contemporary interlinear decipherment",
+   "correspondents": "Francesco Sforza (count, marquis) -> Cosimo de' Medici",
+   "place": "camp ('in castris apud ...') -> Florence",
+   "shelfmark": "ASF, Mediceo avanti il Principato, filza XI, c. 179 (old 181)",
+   "folio_note": "MAP viewer image(s) 357",
+   "cls": "C",
+   "status": "Deciphered at the time: the decipherment is written over the cipher lines.",
+   "why": "A rich early Sforza substitution with its plaintext over it; a key-rebuild exercise and crib source, not an open text.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Rebuild the key from the interlinear text; compare with MAP XI 635 and 1125.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000357.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 357"
+    }
+   ],
+   "prior_art": "vetted 15 Nov 2026, see vetting block",
+   "access_note": "full images online (ASF IIIF)",
+   "ark": "",
+   "access": "online",
+   "scored": "reviewed",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), vetting of the MAP V/XI side finds of the pucci1438 sibling scan",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF IIIF images https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000357.ptif/full/full/0/default.jpg (viewed at 1400 px, 15 Nov 2026)",
+     "extent": "one page, about 25 lines mostly cipher (digits 2-7, delta, +, q/9, o, x, :: separators) inside Italian clear text",
+     "cipher": "Letter-sign substitution with digits; a contemporary interlinear decipherment runs over nearly every cipher run (e.g. 'delle faccende', 'di firenze et di venegia')."
+    },
+    "prior_art": {
+     "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
+     "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
+    },
+    "key_check": "Key not held; recoverable from the interlinear decipherment, not attempted.",
+    "duplicates": "known.py run on 'Sforza 1438', 'Francesco Sforza', 'Cosimo', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "verdict": "read",
+    "closed": "Contemporary interlinear decipherment over the cipher lines (seen 15 Nov 2026): read from an existing decipherment; useful as a key source."
+   }
+  },
+  {
+   "id": 2947,
+   "counted": true,
+   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "score_note": "Scored after viewing the full image, 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "region": "Italy",
+   "year": 1439,
+   "date": "31 Dec 1439",
+   "language": "Italian",
+   "period": "before 1497",
+   "title": "Gianfrancesco Gonzaga to Cosimo de' Medici, 31 Dec 1439: four pages almost wholly in cipher with contemporary interlinear decipherment",
+   "correspondents": "Gianfrancesco Gonzaga -> Cosimo de' Medici",
+   "place": "? -> Florence",
+   "shelfmark": "ASF, Mediceo avanti il Principato, filza XI, cc. 346ff (old 351ff)",
+   "folio_note": "MAP viewer image(s) 691, 692, 693, 694",
+   "cls": "C",
+   "status": "Deciphered at the time: plaintext written over the cipher throughout.",
+   "why": "Key source for the Gonzaga letter of 24 Jan 1439 (lead 2946).",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Rebuild the key from the interlinear text.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000691.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 691"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000692.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 692"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000693.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 693"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000694.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 694"
+    }
+   ],
+   "prior_art": "vetted 15 Nov 2026, see vetting block",
+   "access_note": "full images online (ASF IIIF)",
+   "ark": "",
+   "access": "online",
+   "scored": "reviewed",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), vetting of the MAP V/XI side finds of the pucci1438 sibling scan",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF IIIF images https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000691.ptif/full/full/0/default.jpg, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000692.ptif/full/full/0/default.jpg, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000693.ptif/full/full/0/default.jpg, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100011/A0000694.ptif/full/full/0/default.jpg (viewed at 1400 px, 15 Nov 2026)",
+     "extent": "four pages, about 55 lines on c. 346 alone, almost all cipher",
+     "cipher": "Invented-sign substitution (+, upside-down T, double dagger, Pi, H, L, delta, infinity); contemporary interlinear decipherment over nearly every run ('del ducha di milano', 'al conte')."
+    },
+    "prior_art": {
+     "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
+     "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
+    },
+    "key_check": "Key recoverable from the interlinear decipherment, not attempted.",
+    "duplicates": "known.py run on 'Gonzaga 1439', 'Gianfrancesco Gonzaga', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "verdict": "read",
+    "closed": "Contemporary interlinear decipherment throughout (seen 15 Nov 2026): read from an existing decipherment; key source for lead 2946."
+   }
+  },
+  {
+   "id": 2951,
+   "counted": true,
+   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "score_note": "Scored after viewing the full image, 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "region": "Italy",
+   "year": 1431,
+   "date": "Nov 1431",
+   "language": "Italian",
+   "period": "before 1497",
+   "title": "Dieci di Balia to Averardo de' Medici, Nov 1431: two cipher letters with contemporary interlinear decipherment",
+   "correspondents": "Dieci di Balia (Florence) -> Averardo de' Medici",
+   "place": "Florence -> camp (Lucca war)",
+   "shelfmark": "ASF, Mediceo avanti il Principato, filza V, cc. 66 and 74",
+   "folio_note": "MAP viewer image(s) 131, 147",
+   "cls": "C",
+   "status": "Deciphered at the time over each line.",
+   "why": "Dieci key of 1431 recoverable; compare DECODE R5696 (Gabbrielli alphabet for 1431).",
+   "importance": 2,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Rebuild the key; compare with DECODE R5696.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000131.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 131"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000147.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 147"
+    }
+   ],
+   "prior_art": "vetted 15 Nov 2026, see vetting block",
+   "access_note": "full images online (ASF IIIF)",
+   "ark": "",
+   "access": "online",
+   "scored": "reviewed",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), vetting of the MAP V/XI side finds of the pucci1438 sibling scan",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF IIIF images https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000131.ptif/full/full/0/default.jpg, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000147.ptif/full/full/0/default.jpg (viewed at 1400 px, 15 Nov 2026)",
+     "extent": "c. 66: about 14 cipher lines; c. 74 similar, repeating much of 66",
+     "cipher": "Digit and sign substitution (+, division sign, =); contemporary interlinear decipherment over every run."
+    },
+    "prior_art": {
+     "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
+     "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
+    },
+    "key_check": "Key recoverable from the decipherment; DECODE R5696 (1431 Dieci alphabet) not seen.",
+    "duplicates": "known.py run on 'Dieci di Balia 1431', 'Averardo', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "verdict": "read",
+    "closed": "Contemporary interlinear decipherment over every cipher run (seen 15 Nov 2026): read from an existing decipherment."
+   }
+  },
+  {
+   "id": 2952,
+   "counted": true,
+   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "score_note": "Scored after viewing the full image, 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "region": "Italy",
+   "year": 1431,
+   "date": "17 [Nov or Dec] 1431",
+   "language": "Italian",
+   "period": "before 1497",
+   "title": "'N.' to Averardo de' Medici, 1431: two cipher lines with interlinear decipherment",
+   "correspondents": "'N.' -> Averardo de' Medici",
+   "place": "? -> camp",
+   "shelfmark": "ASF, Mediceo avanti il Principato, filza V, c. 65",
+   "folio_note": "MAP viewer image(s) 137",
+   "cls": "C",
+   "status": "Deciphered at the time.",
+   "why": "Short; no open text.",
+   "importance": 1,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "none needed: decipherment on the leaf",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000137.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 137"
+    }
+   ],
+   "prior_art": "vetted 15 Nov 2026, see vetting block",
+   "access_note": "full images online (ASF IIIF)",
+   "ark": "",
+   "access": "online",
+   "scored": "reviewed",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), vetting of the MAP V/XI side finds of the pucci1438 sibling scan",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF IIIF images https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000137.ptif/full/full/0/default.jpg (viewed at 1400 px, 15 Nov 2026)",
+     "extent": "2 lines",
+     "cipher": "Digit/sign substitution with + and =; interlinear decipherment over both lines."
+    },
+    "prior_art": {
+     "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
+     "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
+    },
+    "key_check": "Not needed: decipherment on the leaf.",
+    "duplicates": "known.py run on 'Averardo', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "verdict": "read",
+    "closed": "Interlinear decipherment over both cipher lines (seen 15 Nov 2026)."
+   }
+  },
+  {
+   "id": 2953,
+   "counted": true,
+   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "score_note": "Scored after viewing the full image, 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "region": "Italy",
+   "year": 1431,
+   "date": "Dec 1431",
+   "language": "Italian",
+   "period": "before 1497",
+   "title": "Bernardo d'Alamanno de' Medici to Averardo de' Medici, Lorenzana, Dec 1431: two letters with cipher runs deciphered interlinearly",
+   "correspondents": "Bernardo d'Alamanno de' Medici -> Averardo de' Medici",
+   "place": "Lorenzana -> camp",
+   "shelfmark": "ASF, Mediceo avanti il Principato, filza V, cc. 148 and 152",
+   "folio_note": "MAP viewer image(s) 295, 303",
+   "cls": "C",
+   "status": "Deciphered at the time over the cipher.",
+   "why": "Key source for the undeciphered Bernardo letter of 17 Apr 1432 (lead 2954).",
+   "importance": 2,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Rebuild the key.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000295.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 295"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000303.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 303"
+    }
+   ],
+   "prior_art": "vetted 15 Nov 2026, see vetting block",
+   "access_note": "full images online (ASF IIIF)",
+   "ark": "",
+   "access": "online",
+   "scored": "reviewed",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), vetting of the MAP V/XI side finds of the pucci1438 sibling scan",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF IIIF images https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000295.ptif/full/full/0/default.jpg, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000303.ptif/full/full/0/default.jpg (viewed at 1400 px, 15 Nov 2026)",
+     "extent": "c. 148: about 12 cipher runs; c. 152: 2 lines",
+     "cipher": "Digit-like substitution (7, 3, 6, 9, x, y, H, = and division sign); interlinear decipherment over the runs (names antonio, mariano, lanfratore ...)."
+    },
+    "prior_art": {
+     "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
+     "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
+    },
+    "key_check": "Key recoverable from the decipherment, not attempted.",
+    "duplicates": "known.py run on 'Bernardo d'Alamanno', 'Lorenzana', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "verdict": "read",
+    "closed": "Interlinear decipherment over the cipher runs (seen 15 Nov 2026); key source for lead 2954."
+   }
+  },
+  {
+   "id": 2955,
+   "counted": true,
+   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "score_note": "Scored after viewing the full image, 15 Nov 2026",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "region": "Italy",
+   "year": 1431,
+   "date": "Dec 1431",
+   "language": "Italian",
+   "period": "before 1497",
+   "title": "Niccolo Valori to Averardo de' Medici, Dec 1431: three cipher runs with interlinear decipherment",
+   "correspondents": "Niccolo Valori -> Averardo de' Medici",
+   "place": "? -> camp",
+   "shelfmark": "ASF, Mediceo avanti il Principato, filza V, c. 172 (old 168)",
+   "folio_note": "MAP viewer image(s) 343",
+   "cls": "C",
+   "status": "Deciphered at the time over all three runs.",
+   "why": "Short; no open text.",
+   "importance": 1,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "none needed: decipherment on the leaf",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000343.ptif/full/full/0/default.jpg",
+     "label": "ASF IIIF image 343"
+    }
+   ],
+   "prior_art": "vetted 15 Nov 2026, see vetting block",
+   "access_note": "full images online (ASF IIIF)",
+   "ark": "",
+   "access": "online",
+   "scored": "reviewed",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), vetting of the MAP V/XI side finds of the pucci1438 sibling scan",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF IIIF images https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100005/A0000343.ptif/full/full/0/default.jpg (viewed at 1400 px, 15 Nov 2026)",
+     "extent": "3 short runs (lines 5, 7, 9)",
+     "cipher": "Digit-like substitution (3, 8, o, b, #); small interlinear letters over each run."
+    },
+    "prior_art": {
+     "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
+     "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
+    },
+    "key_check": "Not needed: decipherment on the leaf.",
+    "duplicates": "known.py run on 'Valori', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "verdict": "read",
+    "closed": "Interlinear decipherment over all three runs (seen 15 Nov 2026)."
+   }
   }
  ]
 }
