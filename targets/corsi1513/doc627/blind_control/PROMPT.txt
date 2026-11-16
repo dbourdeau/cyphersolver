@@ -1,0 +1,20 @@
+You are a blind transcriber. Work ONLY in this folder (/tmp/corsi627_packet). Read no other file or folder, do not search the web, and use no key or outside source.
+
+Material: one block of cipher, 5 manuscript lines, cut from a single page.
+- block_overview.png: the whole block at original scale (lines 1-5; the blank area at lower right is masking, ignore it).
+- strip_L1_1x.png ... strip_L5_1x.png: one strip per line at original scale. Strips overlap slightly: count only the signs on that line's own baseline.
+- strip_Ln_part1_3x.png, strip_Ln_part2_3x.png: the same line enlarged 3x, left and right halves (they overlap in the middle; do not count signs twice).
+- SHEET.md: the neutral label sheet. Labels S01, S02 ... have no meaning.
+
+Task: transcribe the cipher sign by sign, line by line, with the labels from SHEET.md. Do NOT decipher, guess meanings, look for words, or "correct" a sign to make sense. Label what is written.
+
+Write /tmp/corsi627_packet/BLIND.tsv, tab-separated, header line:
+line<TAB>tokens
+- One row per manuscript line, L1 to L5, in order; tokens space-separated, left to right.
+- Token = label (S01 ...), with ^digit for a superscript digit as written (S07^3). Assign a superscript sitting between two signs to the sign below it, or else to the sign on its left; note such cases.
+- Numerals: #nn as written. A point between groups: '.'. Unlisted shape: NEW1, NEW2 ... Doubt: trailing '?'. Illegible sign: '?' on its own.
+- Do not leave out a sign because it is unclear: write your best label with '?'.
+
+Also write /tmp/corsi627_packet/BLIND_NOTES.md: token count per line, every NEWn shape described in words, doubtful superscript attributions, numeral splits, and any difficulty (stains, show-through, overlap between strips).
+
+Crops and zooms are allowed (python3 -I with PIL), saved only inside /tmp/corsi627_packet/crops/. When finished, report the sha256 of BLIND.tsv and change nothing afterwards.

@@ -165,7 +165,7 @@ Derived here (16 Nov): `transcription_620.txt`, `transcription_623.txt`, `decryp
 
 ## Remaining gaps
 
-- Doc 627 as a blind control (fresh reader, name-only sheet, one decode, scored against its decipherment) has not been run; the key's source itself is now documented in `doc627/`. Blocker: not-attempted.
+- Doc 627 blind control run 16 Nov (doc627/blind_control/): 77.5% strict, 89.0% of decoded letters against the page's decipherment. Not independent, since the key was built from this page. The codes #23 and #70 were misread by the blind reader; the decipherment word 'Intado[?]' may be 'Intendo'. Blocker: none for the control; an independent test still needs a second keyed letter with its own decipherment.
 - The prior-art sheet (Google Books / HathiTrust phrases, MAP inventory vol. 4, Spanish-side editions, DECODE) is not yet searched. Blocker: not-attempted. Needs Malcolm for the HathiTrust and Google Books phrases.
 - The code values 27 (re di Scotia?) and 24 (Inghilterra?) in 623 are unverified. The basis for 22 (Francia) is not recorded in the key note, and #161 in 623 has no value. Blocker: open-codes.
 - "dunhtare" occurs twice in 623 (dubitare?, with nh for bi), and "coiono" and "coioborato" occur in 620 (rr written as i?). Repeated misreadings like these point to a key value or sign-label error, not a slip. Blocker: not-attempted. To check on the images against the key.
@@ -175,7 +175,7 @@ Derived here (16 Nov): `transcription_620.txt`, `transcription_623.txt`, `decryp
 
 ## Escalation
 
-- [ ] siblings: 633 done (decoded, not read, 74.2% strict); 627 source documented (doc627/), blind control not run; copies 621, 622, 628 not collated
+- [ ] siblings: 633 done (decoded, not read, 74.2% strict); 627 source documented and blind control run (doc627/, 77.5% strict); copies 621, 622, 628 not collated
 - [x] clear-pages: versos A0001330 and A0001342 seen by the blind reader. Clear closings, dates and addresses; no decipherment on 620 or 623
 - [x] known-keys: compared with pandolfini1514 (the same family, a different table); the key comes from doc 627's contemporary decipherment
 - [ ] print: Desjardins II checked (clear extracts only); MAP inventory vol. 4, Spanish-side editions, Google Books / HathiTrust not reached
