@@ -41,6 +41,8 @@ def norm(text, scheme='modern', spaces=True):
              hamza dropped (alif with hamza or madda and alif wasla -> alif, waw/ya with hamza -> waw/ya, bare
              hamza removed); alif maqsura -> alif; ta marbuta kept. Alphabet: 29 letters (ARABIC).
     """
+    if scheme == 'arabic28':
+        return norm_arabic(text, spaces)
     if scheme == 'arabic':
         t = re.sub('[ً-ٰٟـ]', '', text)
         t = re.sub('[أإآٱ]', 'ا', t)
@@ -59,7 +61,23 @@ def norm(text, scheme='modern', spaces=True):
     t = re.sub(r'[^a-z]+', ' ', t).strip()
     return t if spaces else t.replace(' ', '')
 
+AR_LETTERS = 'ابتثجحخدذرزسشصضطظعغفقكلمنهوي'   # the 28 letters of the abjad, in alphabetical (hija'i) order
+_AR_FOLD = {'أ': 'ا', 'إ': 'ا', 'آ': 'ا', 'ٱ': 'ا', 'ؤ': 'و', 'ئ': 'ي', 'ى': 'ي', 'ة': 'ه', 'ک': 'ك', 'ی': 'ي'}
+
+
+def norm_arabic(text, spaces=True):
+    """Arabic reduced to the 28 consonant letters, as a medieval cipher alphabet writes them: vowel signs, shadda and
+    tatweel dropped; hamza seats folded to their carrier (أإآٱ->ا, ؤ->و, ئ->ي), bare hamza dropped; alif maqsura ى->ي;
+    ta marbuta ة->ه; Persian kaf/ya folded."""
+    t = ''.join(_AR_FOLD.get(c, c) for c in unicodedata.normalize('NFC', text))
+    t = ''.join(c if c in AR_LETTERS else ' ' for c in t)
+    t = re.sub(r' +', ' ', t).strip()
+    return t if spaces else t.replace(' ', '')
+
+
 def alphabet(scheme='modern', spaces=True):
+    if scheme == 'arabic28':
+        return (' ' if spaces else '') + AR_LETTERS
     if scheme == 'arabic':
         return (' ' if spaces else '') + ARABIC
     drop = {'early': 'jv', 'latin': 'jvkyw'}.get(scheme, '')
