@@ -300,7 +300,7 @@ but are not "solved" in the sense of the title.
 
 **Napoleon III / Empress Eugénie (both directions) to Empress Eugénie / Napoleon III (both directions)**, June 1859, BnF NAF 11355: deciphered by George Lasry (BnF cipher research, 10 Oct 2026; key recovered from the ciphertext alone, 370 of 440 elements identified). Reading audit 22 Oct 2026: only his token table of four pages and three excerpts are in the repository, about 0.31 of the text ([write-up](https://dbourdeau.github.io/cyphersolver/eugenie1859.html)).
 
-**Scipion de Gonzague (Français 4696); not established for Français 4698**, to the duc de Nevers, 1585–1590: deciphered in part by George Lasry (10 Oct 2026). Reading audit 22 Oct 2026: only an excerpt of three lines of f. 62v is in the repository, about 0.02 ([write-up](https://dbourdeau.github.io/cyphersolver/scipion1585.html)).
+**Scipion de Gonzague (Français 4696); not established for Français 4698**, to the duc de Nevers, 1585–1590: deciphered in part by George Lasry (10 Oct 2026). Reading audit 22 Oct 2026: only an excerpt of three lines of f. 62v is in the repository, about 0.02 ([write-up](https://dbourdeau.github.io/cyphersolver/scipion1585.html)). Earlier reading of the Français 4698 pages found 16 Nov 2026 (issue #708): Paolo Rosson, 3–4 Oct 2026 by his record, from the decipherments made for Nevers in 1590 (BnF fr. 4702); not re-measured here.
 
 **Nicodemo Tranchedini to Francesco Sforza**, 28 June 1452, BnF italien 2242: deciphered in part by George Lasry (10 Oct 2026; 852 elements). Reading audit 22 Oct 2026: his reading is not in the repository beyond an excerpt; decoded, not read here ([write-up](https://dbourdeau.github.io/cyphersolver/tranchedini1452.html)).
 

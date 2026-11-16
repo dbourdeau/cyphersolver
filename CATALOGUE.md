@@ -73,7 +73,7 @@ out the same day to the list of letters readable with keys in hand; the key for 
 - Charles de Gonzague-Clèves to Nevers (BnF fr. 3993 nos. 40 (f. 71), 174 (f. 254); fr. 3982 f. 51; catalogue 327): Nevers key no. 70.
 - Gramont to Villandry, Rome (BnF fr. 2980 nos. 21–22, ff. 29–30; catalogue 328): Gramont 1530 key held (gramont1530).
 - Cosimo I to Agnolo Niccolini (ASF (DECODE R4034–R4054); catalogue 330): cifrario R4033 in the same file.
-- Nevers–Mantua letters and Badalocchio to Nevers (BnF fr. 4698 nos. 2–5, 47, 92; fr. 4700 nos. 38–46; catalogue 331): Nevers key no. 35 (gonzaga1590).
+- Nevers–Mantua letters and Badalocchio to Nevers (BnF fr. 4698 nos. 2–5, 47, 92; fr. 4700 nos. 38–46; catalogue 331): Nevers key no. 35 (gonzaga1590). **Disputed, 16 Nov 2026 (issue #708):** Paolo Rosson reports that no. 35 does not fit the cipher of the Cardinal Scipione Gonzaga letters in fr. 4698 (it gives a value for 11 of 28 figures on f. 17r and no Italian; see scipion1585), and read Badalocchio's fr. 4700 letters (ff. 65r, 80r, 85r) with another key rebuilt from the texts (`badalocchio-1593` in pangoleen/cipher-readings, 11 Oct 2026 by his record). Which of fr. 4698 nos. 2–5, 47, 92 are Scipione's, and whether no. 35 fits any of them, was not checked here.
 
 **Archive scan of 23 Sept 2026 (entries 334–348): outside DECODE.** With DECODE exhausted, five sweeps searched
 archives and printed sources elsewhere, with two aims: an unread ciphertext older than the project's oldest reading

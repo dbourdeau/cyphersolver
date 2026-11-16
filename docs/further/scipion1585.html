@@ -50,7 +50,7 @@
     <dt>Read now</dt><dd>68.9% of the cipher tokens give sense</dd>
     <dt>Write-up</dt><dd><a href="scipion1585.html">scipion1585.html</a></dd>
     <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/scipion1585" rel="noopener">targets/scipion1585</a></dd>
-    <dt>Open gaps</dt><dd><span class="gap">no key known ×2</span></dd>
+    <dt>Open gaps</dt><dd><span class="gap w">code groups open ×2</span><span class="gap">no key known</span></dd>
   </dl>
 </section>
 
@@ -73,15 +73,16 @@ THE READING
   Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/scipion1585 (NOTES.md, key, transcription, reading, scripts)
 
 OPEN GAPS (from NOTES.md, "## Remaining gaps")
-  1. [no-key-material: needs a new source] Français 4696 ff5r, 62r-v; 4698 ff30r-31r, 104r: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one
-  2. [no-key-material: needs a new source] 5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known
+  1. [open-codes: doable now] Français 4698 ff30r-31r, 104r: Lasry's unread groups between his deciphered runs - blocker: open-codes; the plain text exists (the clerk's decipherments, fr. 4702 ff. 94r-95r and f. 97r-v, edited by Rosson), but no unit-by-unit comparison of Lasry's Readable text with Rosson's alignment tables has been made here, so which of Lasry's holes the clerk's text fills is not recorded; for ff. 30r-31r the fr. 4702 text is also an independent reading of the same cipher
+  2. [open-codes: doable now] Français 4696 ff5r, 62r-v: unread groups between Lasry's deciphered runs - blocker: open-codes; Rosson's glossed table of fr. 4696 (448 values, 14 lists) has not been run against Lasry's holes here, and whether Lasry's 24 nomenclature values are a subset of it is not checked
+  3. [no-key-material: needs a new source] 5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; the key sheet of the cipher is not known; Rosson's table is a reconstruction by a model, unchecked by a person, and his own README lists microfilm limits for fr. 4698
 
 ALREADY TRIED (from NOTES.md, "## Escalation")
-  [x] siblings: neighbours belong to George Lasry's BnF survey; no sibling key found here
-  [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; no further decipherment held
-  [x] known-keys: Lasry's reconstructed key is the only key; shown on the page
-  [x] print: no edition of the unread passages found
-  [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
+  [x] siblings: neighbours belong to George Lasry's BnF survey; the sibling letters of fr. 4698 (ff. 17r-v, 34r, 26v-27r, 36r-37r) and their period decipherments in fr. 4702 f. 108r and fr. 4698 f. 105r are Rosson's, listed in his README; not read here
+  [x] clear-pages: the report's pages and the manuscript on Gallica checked against his text; the period decipherments of fr. 4698 ff. 30r-31r and f. 104r are in fr. 4702 ff. 94r-95r, 97r-v (found 16 Nov 2026, issue #708); f. 94r seen on Gallica
+  [x] known-keys: Lasry's reconstructed key and Rosson's table of 448 values (a reconstruction by a model, not a period key sheet) are the keys known; Tomokiyo's Nevers key no. 35 (fr. 3995 f. 64) is the key the project's catalogue named for this volume, and Rosson reports it gives a value for 11 of 28 figures on fr. 4698 f. 17r and no Italian (his README, not re-tested here)
+  [x] print: DECODE list searched (no record, 24 Oct 2026); Rosson's README (3 Oct 2026) reports no printed edition of these letters and says the printed BnF catalogue lists the fr. 4702 decipherments as letters of "un agent du duc de Nevers" without linking them (not checked here)
+  [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them; not re-run against Rosson's tables
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
@@ -121,8 +122,8 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 <h2>Open gaps</h2>
 <p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
-<ul class="gaplist"><li><span class="gap">no key known</span> Français 4696 ff5r, 62r-v; 4698 ff30r-31r, 104r: unread groups between the deciphered runs - blocker: no-key-material; left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one</li><li><span class="gap">no key known</span> 5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; his report status says so; outside this project's work, no other key or plaintext known</li></ul>
-<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> neighbours belong to George Lasry's BnF survey; no sibling key found here</li><li>&#9745; <b>clear-pages</b> the report's pages and the manuscript on Gallica checked against his text; no further decipherment held</li><li>&#9745; <b>known-keys</b> Lasry's reconstructed key is the only key; shown on the page</li><li>&#9745; <b>print</b> no edition of the unread passages found</li><li>&#9745; <b>retry</b> his full Readable text (24 Oct 2026) read and measured; holes left as he marks them</li></ul>
+<ul class="gaplist"><li><span class="gap w">code groups open</span> Français 4698 ff30r-31r, 104r: Lasry's unread groups between his deciphered runs - blocker: open-codes; the plain text exists (the clerk's decipherments, fr. 4702 ff. 94r-95r and f. 97r-v, edited by Rosson), but no unit-by-unit comparison of Lasry's Readable text with Rosson's alignment tables has been made here, so which of Lasry's holes the clerk's text fills is not recorded; for ff. 30r-31r the fr. 4702 text is also an independent reading of the same cipher</li><li><span class="gap w">code groups open</span> Français 4696 ff5r, 62r-v: unread groups between Lasry's deciphered runs - blocker: open-codes; Rosson's glossed table of fr. 4696 (448 values, 14 lists) has not been run against Lasry's holes here, and whether Lasry's 24 nomenclature values are a subset of it is not checked</li><li><span class="gap">no key known</span> 5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; the key sheet of the cipher is not known; Rosson's table is a reconstruction by a model, unchecked by a person, and his own README lists microfilm limits for fr. 4698</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> neighbours belong to George Lasry's BnF survey; the sibling letters of fr. 4698 (ff. 17r-v, 34r, 26v-27r, 36r-37r) and their period decipherments in fr. 4702 f. 108r and fr. 4698 f. 105r are Rosson's, listed in his README; not read here</li><li>&#9745; <b>clear-pages</b> the report's pages and the manuscript on Gallica checked against his text; the period decipherments of fr. 4698 ff. 30r-31r and f. 104r are in fr. 4702 ff. 94r-95r, 97r-v (found 16 Nov 2026, issue #708); f. 94r seen on Gallica</li><li>&#9745; <b>known-keys</b> Lasry's reconstructed key and Rosson's table of 448 values (a reconstruction by a model, not a period key sheet) are the keys known; Tomokiyo's Nevers key no. 35 (fr. 3995 f. 64) is the key the project's catalogue named for this volume, and Rosson reports it gives a value for 11 of 28 figures on fr. 4698 f. 17r and no Italian (his README, not re-tested here)</li><li>&#9745; <b>print</b> DECODE list searched (no record, 24 Oct 2026); Rosson's README (3 Oct 2026) reports no printed edition of these letters and says the printed BnF catalogue lists the fr. 4702 decipherments as letters of "un agent du duc de Nevers" without linking them (not checked here)</li><li>&#9745; <b>retry</b> his full Readable text (24 Oct 2026) read and measured; holes left as he marks them; not re-run against Rosson's tables</li></ul>
 
 
 <h2>Send a result</h2>

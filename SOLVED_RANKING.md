@@ -454,7 +454,7 @@ Score = 0.25 D + 0.25 H + 0.20 N + 0.10 R + 0.10 F + 0.10 V. Equal scores share 
 
 ## Not ranked
 
-Not ranked, George Lasry's BnF readings with too little of the text in the repository to score (reading audit, 22 Oct 2026): **Napoleon III / Empress Eugénie (both directions) to Empress Eugénie / Napoleon III (both directions)** (June 1859, about 0.31 held), **Scipion de Gonzague (Français 4696); not established for Français 4698** (1585–1590, about 0.02 held) and **Nicodemo Tranchedini to Francesco Sforza** (28 June 1452, an excerpt only). See [SOLVED_CATALOGUE.md](SOLVED_CATALOGUE.md) §4.
+Not ranked, George Lasry's BnF readings with too little of the text in the repository to score (reading audit, 22 Oct 2026): **Napoleon III / Empress Eugénie (both directions) to Empress Eugénie / Napoleon III (both directions)** (June 1859, about 0.31 held), **Scipion de Gonzague (Français 4696); not established for Français 4698** (1585–1590, about 0.02 held; an earlier reading of its Français 4698 pages by Paolo Rosson, 3–4 Oct 2026 by his record, was found 16 Nov 2026) and **Nicodemo Tranchedini to Francesco Sforza** (28 June 1452, an excerpt only). See [SOLVED_CATALOGUE.md](SOLVED_CATALOGUE.md) §4.
 
 Not ranked: **Monsignor Giovanni Battista Pallotto (Vienna) → Barberini**, BAV Barb.lat. 6960, 1629 (catalogue 237). Its contents were
 identified in Kiewning's 1897 edition and confirmed against the register. The key was found by others: it is the
