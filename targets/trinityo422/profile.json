@@ -1,0 +1,169 @@
+{
+ "schema_version": 1,
+ "target": "trinityo422",
+ "title": "The 'numeral cryptogram' after the reader Ioannes' note in a Greek Gospel lectionary (Trinity College Cambridge O.4.22, f. 248v): not a cipher, a Paschal full-moon table",
+ "documents": [
+  {
+   "id": "O422",
+   "shelfmark": "Cambridge, Trinity College, MS O.4.22 (James 1253; Gregory-Aland l 186), f. 248v",
+   "date": "manuscript 11th-12th century; the note and the table are undated additions",
+   "year": 1100,
+   "country": "Byzantine Empire",
+   "route": "unknown",
+   "language": "Greek",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Not a cipher: the 38 letter-numerals are 19 (year, date) pairs of the Paschal computus; the reading is the computus table itself."
+   },
+   "length": {
+    "tokens": 38,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": true,
+    "file": "pairs.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CUDL IIIF full-resolution crops of page image 503 (4,797 x 7,350 px), read 16 Nov 2026 and collated with Christopher Wright's CUDL transcription",
+    "image_quality": "fair",
+    "notes": "Faint brown ink. 36 of 38 numerals agree with CUDL without doubt; two doubts (counts 5 and 18, and the count 14 'ΙΔ' that CUDL reads 'ΙΑ') are listed in pairs.tsv. The minuscule 'φον' and 'μου' at the right ends of lines 1 and 2, which CUDL leaves out, are the end of the clear note above ('ἐξάδελ|φον μου'), not part of the series."
+   },
+   "read": "not applicable"
+  }
+ ],
+ "system": {
+  "types": [
+   "not a cipher"
+  ],
+  "symbol_kind": "letters",
+  "distinct_symbols": 12,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "summary": "No cipher: Greek letter-numerals in 19 pairs, the year of the Byzantine 19-year lunar cycle (Α to ΙΘ) followed by the day of the Paschal full moon (legal Passover), in March for 21-30 and in April for 1-18.",
+  "notes": "The CUDL description calls it a numerical cryptogram not decipherable by the common Greek systems, and the catalogue guessed it hides the teacher's name. Counts 1-19 alternate with values; the values are exactly the Alexandrian-Dionysian Paschal full moons for golden numbers 4-19, 1-3, i.e. the Byzantine lunar cycle (golden number minus 3, from the era AM = AD + 5508)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "CUDL record (C. Wright): 'remains to be resolved'. Web searches 15 and 16 Nov 2026 found no published reading. Not searched: Pinakes bibliography, Gardthausen, Mioni.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription",
+   "cleartext context"
+  ],
+  "attack": "none",
+  "human_role": "Brice Dudout chose the target from Daniel Bourdeau's catalogue (entry 2902) and set the protocol; the work was done by a Claude agent.",
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-16",
+  "last_date": "2026-11-16",
+  "tools": [
+   "curl (CUDL IIIF region crops)",
+   "Pillow contrast enhancement",
+   "Python computus check"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-16",
+   "kind": "access",
+   "what": "Fetched f. 248v from the CUDL IIIF server as full-resolution region crops (page image 503, 4,797 x 7,350 px); images are CC BY-NC 4.0 for download and are not committed here.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "transcription",
+   "what": "Read the three lines on contrast-enhanced crops and collated with CUDL: same 38 numerals; doubts at counts 5, 14 and 18; the minuscule 'φον' and 'μου' at the line ends are the end of the clear note.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis",
+    "key-structure hypothesis"
+   ],
+   "what": "Split as Daniel suggested into a running count 1-19 and a value each. Values never exceed 30 and value + count repeats with period 3 (13, 34, 23) for counts 3-14, the signature of a sequence stepping by 11 or 19 modulo 30: the Paschal full moons of the 19-year cycle.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Measurement frozen by sha256 before running (results/measure.py): the 19 values against the Julian computus (21 March + (19(GN-1)+15) mod 30) with the historical Byzantine offset GN = n + 3: 19 of 19 agree. 200 shuffles of the values over the counts: at most 4 of 19 (mean 1.0); the 18 other offsets: 0 of 19 each. The hypothesis was found by looking at the values, so this confirms on the same 38 numerals; there is no other text to hold out.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not a cipher",
+  "key": "not applicable",
+  "method": "not applicable",
+  "first_break": false,
+  "method_basis": "The numerals are a computus table, not an encipherment: each of the 19 counts is followed by its Paschal full-moon date, 19 of 19 as the standard Byzantine reckoning gives them.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "matched control"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "date": "2026-11-16",
+    "note": "Brice Dudout, with a Claude agent (claude-opus-5-5): transcription from the CUDL images and identification of the series as the Paschal full-moon table of the Byzantine lunar cycle."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "O422",
+    "label": "O.4.22 f. 248v, the 19 pairs",
+    "transcription": "pairs.tsv",
+    "reading": "pairs.tsv",
+    "state": "not prose",
+    "language": "grc",
+    "summary": "Table of the legal Passover (Paschal full moon) for each year 1-19 of the Byzantine lunar cycle: 1: 2 April, 2: 22 March, 3: 10 April, ... 19: 13 April.",
+    "read_share": 1.0,
+    "note": "Preliminary: not yet reviewed by a second reader. No name or message is hidden in the numerals."
+   }
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "pairs.tsv: all 38 numerals form 19 pairs, each value equal to the computus date (results/measure_output.txt).",
+  "gaps": [
+   {
+    "item": "Three doubtful numerals (counts 5, 14, 18)",
+    "blocker": "illegible",
+    "detail": "The computus fixes their values; the doubt is on letter shapes in faint ink only."
+   }
+  ],
+  "notes": "Corrects the CUDL description and catalogue entry 2902: the series does not hide the teacher's name. The note of Ioannes the reader is a separate clear text; its last words 'φον μου' run on into the free space to the right of the table."
+ }
+}
