@@ -117,7 +117,7 @@ This is the part found without the published key. `check.md` grades it against t
 | `TRANSCRIPTION.md` | the transcription: what it is, its known challenges, its counts, and where the rows are |
 | `transcription/` | the digit rows: one file for each of the 35 cipher pages |
 
-`README.md`, `check.md`, the 22 record pages and the files of `key-and-key-free-read/` come from our repository, https://github.com/prabal-rje/branicki-1757/tree/main/francia-346-full (commit 9dea124). These changes adapt them to this folder or correct them:
+`README.md`, `check.md`, the 22 record pages and the files of `key-and-key-free-read/` come from our repository, https://github.com/prabal-rje/branicki-1757/tree/main/francia-346-full. These changes adapt them to this folder or correct them:
 
 - **A correction kept from our draft:** `r5653.md`, English translation, C01–C07: "I have seen" became "I have [?seen]", to keep the doubt of the Italian "Ho [?visto]". Its summary now says "Rome has [?seen]".
 - **The same correction in `r5648.md`:** English translation, f. 279v, C14–C17: "I have seen" became "I have [?seen]", for the Italian "Ho [?veduto]".
