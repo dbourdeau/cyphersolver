@@ -86514,6 +86514,68 @@
    "repository": "unidentified"
   },
   {
+   "id": 2836,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); not viewed on an image",
+   "seen": "image",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass",
+   "region": "Central Europe",
+   "year": 1784,
+   "date": "1783-1791",
+   "language": "German",
+   "period": "1701-1800",
+   "title": "Stammbuch with entries in Geheimschrift (fol. 24r, 28r, 31r dated 25 Sep 1784, 37r, 78v), Vienna 1783-91 (Cod. Ser. n. 4832)",
+   "correspondents": "friends of the album owner (Haschka, Epstein von Ankersberg and others)",
+   "place": "Vienna (probably)",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Cod. Ser. n. 4832",
+   "folio_note": "Entries 'in Geheimschrift' on fol. 24r, 28r, 78v (undated), fol. 31r (25.09.1784), fol. 37r (with a silhouette); fol. 51r a signature in Geheimschrift (Wentzel Tobias Franz Epstein, Edler von Ankersberg). AC14378542",
+   "cls": "C",
+   "status": "Catalogue only. Short album entries in a secret script, probably a simple substitution or Masonic alphabet.",
+   "why": "Several short ciphered album entries of the 1780s plus a signature in the same script that gives a known-plaintext name.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Look at the folios (OeNB digital copy if any); the Epstein signature is a name crib. Compare Masonic and Enlightenment-circle alphabets.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC14378542",
+     "label": "OeNB record"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=onb_hanna&search_scope=ONB_hanna&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Geheimschrift)"
+    }
+   ],
+   "access_note": "ONB digital copy: onb.digital/result/13219C69, IIIF manifest https://api.onb.ac.at/iiif/presentation/v3/manifest/1004802B (188 canvases, about 1050 px wide; the ONB IIIF route answered on 16 Nov 2026 after failing on 15 Nov). Canvas index 50 = fol. 21r; fol. 24r = index 56, fol. 28r = 64, fol. 31r = 70.",
+   "ark": "",
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ONB digital copy of Cod. Ser. n. 4832 (manifest api.onb.ac.at/iiif/presentation/v3/manifest/1004802B): fol. 24r (canvas 56), fol. 28r (canvas 64) and fol. 31r (canvas 70) viewed at full served size on 16 Nov 2026; fol. 21r (canvas 50) to fix the numbering; fol. 75v (register, canvas 165) glanced at. Fol. 37r, 51r and 78v were not located (silhouette inserts shift the canvas numbering) and not seen.",
+     "extent": "Fol. 28r: about 12 lines (roughly 80 words) of continuous text in an invented script, plus a two-line ciphered signature and a ciphered place/date. Fol. 24r: five short lines of pigpen-type signs. Fol. 31r: one name in pigpen. Further entries on fol. 37r, 51r (Epstein's signature) and 78v per the catalogue.",
+     "cipher": "Fol. 28r is a simple-substitution text in invented letter forms (word divisions and punctuation kept), not a known script; fol. 24r and 31r use the square-and-angle Masonic pigpen alphabet. No interlinear, marginal or facing decipherment on the pages seen; the rest of each entry is in clear German or Latin."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Ser. n. 4832', 'Stammbuch', 'Epstein', 'Ankersberg', 'Haschka' (DECODE dumps, ledgers, catalogue, leads): only this lead and its sweep row; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Kronauer, Stammbuch, Epstein, Ankersberg, Haschka and 4832: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+     "edition": "No edition of the whole album found. Paul Nettl, Mozart and Masonry (1957), ch. 'A Masonic album from Mozart's day' (archive.org full text read) describes the Kronauer album and quotes the clear entries of Mozart, Gemmingen, Born, Alxinger, Blumauer, Ratschky, Müller and Hoffmann, but says nothing of the cipher entries. The Mozart documents (Dokumente 253; mozartdocuments.org) print only Mozart's fol. 41r.",
+     "literature": "Web search (Kronauer Stammbuch Freimaurer Geheimschrift entziffert, Cod. Ser. n. 4832) found only Mozart-entry pages (mozartdocuments.org, DME Mozarteum) and Nettl; nothing on a reading of the cipher entries."
+    },
+    "key_check": "No key in the album was seen. The pigpen entries use the standard Masonic pigpen family and should give way to the usual grid; fol. 28r's invented alphabet has no key on the page. The album's own register (fol. 73v-77v) names the contributors by number and may give the writer of fol. 28r as a crib; not read for this.",
+    "duplicates": "known.py on shelfmark and names: no catalogue entry or other lead for the Kronauer album; Mozart's clear entry is printed, the cipher entries are not.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
    "id": 2838,
    "counted": true,
    "year": 1584,
