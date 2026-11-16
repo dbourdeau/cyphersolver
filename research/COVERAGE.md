@@ -84,7 +84,7 @@ permission (`chrome_pass_2026-11`).
 | BnF | Bellièvre papers not yet screened page by page: fr. 15892, 15893, 15895, 15896, 15899-15901, 15907-15910; fr. 15900 (2) has no Gallica ark (15906, 15900 (1), 15891 swept 5 Nov; 15902-15905 and 15911 on 11 Nov; 15890, 15894, 15897, 15898 on 15 Nov 2026, wave 15: no ciphertext) | `gallica_sweep`, `sweep_2026-11-15_wave15_bellievre` |
 | Dudout's BnF BAM list | The 675-article JSON, available from him on request | `dudout_2026-10-29` |
 | HHStA | Staatenabteilungen Spanien, Rom, Venedig beyond the term searches | `central_archives` |
-| Printed series | Hardwicke, Journals of the Continental Congress, Official Records, Home Office calendar after 1775 | `ia_pass2_b` |
+| Printed series | Wave 16 (16 Nov 2026, `sweep_2026-11-15_wave16_printed`) read about 1,200 archive.org texts and 34 BHO volumes: Hardwicke, Home Office calendar, Letters of Delegates, Wharton, HMC reports, CSP Domestic/Foreign/Spanish/Venetian (7-9, 11-15)/Milan, and the French and German editions (Louis XI, Catherine de Medicis, Henri IV, Mazarin, Teulet, Briefe und Acten). Left: HMC and Fontes rerum Austriacarum texts and CSP Venetian 16-38 fetched late (the README has the grep command), Journals of the Continental Congress, Official Records | `sweep_2026-11-15_wave16_printed` |
 
 ## Swept at catalogue level, ciphers hidden
 
@@ -353,4 +353,7 @@ ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new vie
 - **RAH digital library** (Chrome passes Anubis on its own; same-origin POST `busq_general` to `/es/consulta/resultados_busqueda.do`): cifra family 24 hits, all already in the repo; the OCR box searches the same index, not page text. About 10,000 Salazar item records are online (search `Salazar y Castro, <inventory no.>`) but none of the 16 inventory numbers of the repo's cipher items is digitised.
 - **Internet Culturale: WAF-blocked** (arithmetic CAPTCHA to curl; in Chrome `ERR_SOCKET_NOT_CONNECTED` then a 403 "Web Page Blocked" page). Not swept. Needs Daniel or another network.
 - **Vetting of 22 image-online leads** (`research/vetting_2026-11-15_wave17`): promoted 2574, 2385, 2568, 2567, 2570, 2858 (open); closed 2375, 2396, 2859 as not cipher; 2387 stays a lead (low confidence it is cipher). Twelve have no verdict, each with its blocker in that README: 2312 (date is 1459, handwriting needs a proper reading), 2379 and 2529 (edition not online), 1243, 1553, 1564, 1573, 2884, 2888, 2903, 1438, 1441 (Harvard 403). ASF Florence image server answers again as of 16 Nov. 2858 is printed in Villanueva Morte and Fernandez de Cordoba, El embajador Claver (CSIC 2025, Appendix doc. 10) with the cipher left unread.
+
+## Wave 16 printed series (16 Nov 2026, `sweep_2026-11-15_wave16_printed`)
+- Ten rows from editors' notes that a cipher was not read; four promoted: 2912 (Louis XI to Galeazzo Maria Sforza, Peronne, 13 Oct 1468, fourteen cipher lines, key not found), 2913 (about 14 Mazarin originals to Lumbres 1656-59, AAE Allemagne Supplement 16-18), 2914 (Mazarin to d'Avaugour 1655, AAE Suede 19 f. 384), 2916 (Jean de la Croix to Henri IV, 6 May 1607, BnF fr. 16913). Kept as leads: 2915, 2917-2921 (shelfmark garbled, ciphertext may not survive, or a few signs only). All promoted rows are archive items quoted from the printed editor; no image seen.
 
