@@ -22,8 +22,7 @@ YEAR_NOW = datetime.date.today().year
 import sys; sys.path.insert(0, str(HERE))
 import _methods as M
 SECTIONS = [(M.KEY[m], M.SECTION[m]) for m in M.METHODS] + [('active', '### In progress')]
-# Rows whose date carries no year but can be bracketed: counted at the latest possible year, so the
-# years-of-silence sum is never overstated. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
+# Rows whose date carries no year but can be bracketed: placed at the latest possible year. Egmond: to the grand maître (Montmorency, from 1526); Charles died June 1538.
 YEAR_BRACKET = {'Charles of Egmond': 1537}
 OFF_TIMELINE = ('Kaliningrad bottle post',)  # counted in the ledger, not drawn on the timeline (BC/BCE rows are left off by parse_year)
 OVERRIDE = {}  # README row text -> category, for rows filed in a table that does not match their outcome
@@ -54,6 +53,19 @@ _PROFILES = CR.load_all()
 def outside(folders):
     """True when an outside contributor produced the row's result (profile outcome.provenance contributed or mixed)."""
     return any(CR.provenance_of(_PROFILES.get(f.lower())) in ('contributed', 'mixed') for f in folders)
+
+def checked(folders):
+    """True when a person has checked the row's reading without a model: outcome.human_check (a passage read against
+    the image without AI help), or a reading_review whose reader is a person alone (docs/_reader_kind.py).
+    'independent verification' in outcome.verification is not counted: the records use it loosely (16 Nov 2026)."""
+    import _reader_kind as RK
+    for f in folders:
+        o = (_PROFILES.get(f.lower()) or {}).get('outcome') or {}
+        if o.get('human_check'):
+            return True
+        if any(isinstance(t.get('reading_review'), dict) and RK.kind_of(t['reading_review']) == 'person' for t in o.get('texts') or []):
+            return True
+    return False
 
 def strip_md(s):
     s = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', s)
@@ -214,7 +226,6 @@ def build(items):
     part = sum(1 for it in got if it['ext'].startswith('partial'))
     attacked = total - n['na'] - n['active']
     read = [it for it in got if it['ext'].startswith('complete') and it['year']]
-    silence = sum(YEAR_NOW - it['year'] for it in read)
     oldest = min(read, key=lambda d: d['year'])
     span = [it['year'] for it in items if it['year'] and not it['name'].startswith(OFF_TIMELINE)]
     order = ['ct', 'extpt', 'adjpt', 'extkey', 'known', 'deciph', 'notsolved', 'active', 'na']     # three families, then the rest
@@ -242,7 +253,14 @@ def build(items):
     lines.append(f'<div class="sb-big fam-key"><b>{broke}</b><em>{pc(broke, attacked)} of attempts</em><span>keys recovered by cryptanalysis</span><details><summary>breakdown</summary><span>{n["ct"]} from the ciphertext alone, {n["adjpt"]} from plaintext beside the ciphertext, {n["extpt"]} from plaintext found elsewhere.{who}' + (f' In {ko_b} of them the key was recovered but the text does not yet read.' if ko_b else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-ext"><b>{applied}</b><em>{pc(applied, attacked)} of attempts</em><span>obtained with a key or decipherment that already existed</span><details><summary>breakdown</summary><span>{n["known"]} with a known key, {n["extkey"]} with a key matched here from another document, {n["deciph"]} from a complete existing decipherment.' + (f' In {ko_a} of them the key was applied but the text does not yet read.' if ko_a else '') + '</span></details></div>')
     lines.append(f'<div class="sb-big fam-no"><b>{n["notsolved"]}</b><em>{pc(n["notsolved"], attacked)} of attempts</em><span>closed without recovering the text; each write-up says why</span></div>')
-    lines.append(f'<div class="sb-big"><b>{silence:,}</b><em>years of silence ended</em><span>summed over the {len(read)} dated texts obtained in full<i class="lg-only"> ({part} more partial), each counted from its date to {YEAR_NOW}. The oldest is {oldest["name"].split(",")[0].split(" (")[0]} ({oldest["date"]})</i>.</span></div>')
+    # 16 Nov 2026: this tile used to be "years of silence ended", the ages of the texts summed. It counted readings
+    # nobody had checked as finished facts (Pierrot and Desenclos, The Conversation, 10 Nov 2026). It now says how many
+    # texts are obtained and how many of those a person has checked.
+    texts = [it for it in got if it['ext'].startswith(('complete', 'partial'))]
+    n_checked = sum(1 for it in texts if checked(it['folders']))
+    import _reader_kind as RK
+    rk = RK.counts()
+    lines.append(f'<div class="sb-big"><b>{n_checked}</b><em>of {len(texts)} readings checked by a person</em><span>{len(texts) - part} texts are obtained in full and {part} in part. For {n_checked} of them a person, without a model, read a passage against the image or reviewed the reading<i class="lg-only">. Of {rk["reviews"]:,} reading reviews on record, {rk.get("model", 0):,} are by a model, {rk.get("person assisted by model", 0)} by a person with a model and {rk.get("person", 0)} by a person alone. The rest are proposals until someone confirms them: <a href="method.html#review">how readings are reviewed</a>, <a href="contributors.html#verify">check one</a></i>.</span></div>')
     lines.append('</div>')
     lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
