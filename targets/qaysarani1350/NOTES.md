@@ -9,8 +9,9 @@ Catalogue: Unsolved Catalogue no. 2882 (class A), from the Arabic sweep of 15 No
 
 University of Pennsylvania, Kislak Center, LJS 51, f. 106v (OPenn image 0084_0217), lines 6-12. The volume is a
 first-person account by an unnamed Mamluk secretary of the cipher verses he exchanged with colleagues; after each
-cipher he writes that he solved it and gives the verses. The sweep dates the text to about 1330-1370 and Penn dates
-this copy to the 15th century. This is the last text in the volume. It is introduced by "wa-kataba li Ibn
+cipher he writes that he solved it and gives the verses. The sweep dates the text to about 1330-1370 (an estimate from internal evidence: an anecdote dated 730-odd AH and the people
+named, one of a Damascus chancery family of that century) and Penn dates the manuscript "14--" ("possibly Syria, 15th century" for its origin) and gives
+no date for the text. This is the last text in the volume. It is introduced by "wa-kataba li Ibn
 al-Qaysarani" (so read by the sweep; the name is written small at the end of line 5 and I did not re-read it
 letter by letter). Under the cipher the compiler begins "fa-halaltuha fi l-hal ... wa-wajadtuhu ja'ala al-lam alif"
 (I solved it at once ... and found he had made the lam-alif) and the manuscript breaks off, so the plaintext that
@@ -88,12 +89,19 @@ awake, though my eyelids are sound, and did not sleep; she slept and was never w
 - The key is one-to-one: 22 signs, 22 different letters; no sign has two values.
 - The compiler's remark under the cipher says the writer "made the lam-alif ..."; the reading has exactly one
   lam-alif sign, in الاجفان.
-- Statistical validation (16 Nov 2026), `docs/_validate.py` with the new `lang/` model `ar-mamluk` (2.17 M letters: the
+- Statistical validation: **inconclusive at 89 signs** (Dudout's review, issue #714); it shows only that the text is Arabic-like under
+  the key, and the annealer on the real text (-2.799) cannot find the reading by itself. It does not carry the reading, which rests on the
+  metre, the rhyme, the grammar and the red gloss. Details (16 Nov 2026), `docs/_validate.py` with the new `lang/` model `ar-mamluk` (2.17 M letters: the
   diwans of Safi al-Din al-Hilli and Ibn Nubata, al-Safadi's Kashf al-hal and Alhan al-sawaji', al-Umari's al-Ta'rif; OpenITI),
   order 4, `validation.tsv`: reading -2.537 per letter; random keys -4.901 (z 5.3); keys refitted to the shuffled signs mean
   -2.881, best -2.745 (z 3.4): **pass**, narrowly. Seeds 2-4: weak (z 2.7), pass (5.7), pass (6.3); in all four runs the
   reading beats every refit. Negative control (`--control`): underdetermined (z 0.5). Short text: 89 signs, 4 tokens per type.
 - Not checked against the solved alphabets on ff. 1r-106r: no sibling alphabet was compared.
+- Uniqueness (issue #714): 7 of the 22 signs (8 of 89 tokens) rest on the sense of one word each (ح, ص, ث, خ, ق, ة, لا); 12 signs are forced (the five glossed signs and seven signs in several words: ج ف ه ل م ت ي); س ر ض are fixed by whole-verse sense and the rhyme pair, and no alternative competes. A word-list search over about 30 MB of OpenITI
+  found 21,037 one-to-one keys that keep the gloss and make all 21 words attested forms, but only 6 distinct assignments for the
+  multi-word signs, five differing only in ض. The words قد, مثوى, وخدّي and صحاح are chosen by sense (شحاح "stingy" scans too but breaks the
+  antithesis).
+- Reading review: grade B by an AI model's review for Brice Dudout (issue #714), replacing the authoring session's grade A. One word is read against the page and one is damaged (see `reading.md`); counted as read as one-digit slips, 19 of 21 words stand without them.
 
 ## Doubtful readings (grade M or I)
 
@@ -109,6 +117,10 @@ awake, though my eyelids are sound, and did not sleep; she slept and was never w
 - The red gloss: the mark over the first sign is small; و from the word.
 
 ## Prior work
+
+First modern reading; the compiler's own solution, which his remark says he made, is lost with the leaf that followed. Not "never solved
+before". Penn's record (OPenn TEI, "approximately 150 alphabets", authorities al-Jindi al-Ala'i, Burhan al-Din al-Qudsi, Taqi al-Din al-Husayni) does not mention
+Ibn al-Qaysarani and gives no reading of f. 106v.
 
 The catalogue entry's vetting (15 Nov 2026) found no study of the manuscript and no reading: Penn TEI, Digital
 Scriptorium DS738, DECODE, Tomokiyo, Lasry's key list, web searches, Voynich Ninja thread 4685. On 16 Nov 2026 two
@@ -170,8 +182,13 @@ transcription and values were compared with this folder's on 16 Nov 2026 by sign
 
 ## Remaining gaps
 
-None: every sign has a value and both verses read. The doubtful signs above are single signs inside words that
-read.
+Every sign has a value and both verses read. The doubtful signs above are single signs inside words that read. Three checks would
+strengthen the reading (Dudout, issue #714), none of them an outside blocker to the reading itself:
+
+1. The two marked signs (the last of صحاح, the first لها of line 2) again on the master TIFF; the review used the repository's crop.
+2. al-Qalqashandi, *Subh al-a'sha*, vol. 9 (the chapter on cipher), and *Arabic Origins of Cryptology* (Mrayati, Meer Alam, at-Tayyan; Ibn
+   Adlan, Ibn ad-Durayhim): the likeliest places for these verses to have been printed before. Not searched.
+3. The 22 signs against the solved alphabets on ff. 1r-106r: a shared alphabet would confirm A/Q and the one-word signs independently of the sense.
 
 ## Escalation
 
