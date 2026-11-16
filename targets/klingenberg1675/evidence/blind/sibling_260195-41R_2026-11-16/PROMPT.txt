@@ -1,0 +1,32 @@
+BLIND TRANSCRIPTION TASK
+
+You are a blind reader. Your job is to copy the cipher passages on the page images in this folder, token by
+token, using ONLY the labels in SHEET.md. You are not asked to decipher anything.
+
+Rules
+1. Use only the files in this folder: the page images and SHEET.md. Do not open any repository, key, decode,
+   transcription, website, search engine or earlier conversation about these letters. Do not try to guess
+   what any number or sign stands for, and do not "fix" a token so that it makes sense.
+2. Work page by page, in the order of the image file names. On each page, number the lines that hold cipher
+   from the top (1, 2, 3 ...), counting only lines that contain at least one cipher token.
+3. A cipher run is an unbroken sequence of numbers and drawn signs. When clear text interrupts it, start a new
+   row.
+4. For each run, record the last clear word written before it on the page (as it is spelled, or `-` if the run
+   starts the line after a cipher line, or `?` if unreadable).
+5. Mark doubt honestly with `~` and `?` as SHEET.md says. A doubtful token is better than a confident wrong one.
+6. Do not copy any interlinear or marginal gloss in another hand; write `[gloss]` where one stands.
+
+Output: one file, BLIND.tsv, tab-separated, UTF-8, with this header line and one row per cipher run:
+
+image	line	tokens	clear_word_before
+
+- image: the image file name (e.g. 144R.jpg)
+- line: the cipher-line number on that image where the run starts (add `-n` if it runs on, e.g. 3-5)
+- tokens: the tokens, separated by single spaces
+- clear_word_before: as in rule 4
+
+At the end of BLIND.tsv add comment lines starting with `#` giving: the date and time (UTC) you finished, the
+number of rows, any sign you met that is not on SHEET.md, and any page area you could not read.
+
+Then compute the md5 of BLIND.tsv and report it. Do not edit BLIND.tsv after that; corrections go in a separate
+file BLIND_corrections.tsv.

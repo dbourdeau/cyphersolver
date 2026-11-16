@@ -1,0 +1,47 @@
+JUDGE NOTES  -  Magdeburg 1647 cipher passages, strict one-pass judge (16 Nov 2026)
+
+Method
+- One pass per file, decode as given, no edits. Words segmented across rows where a word runs on
+  (e.g. fran|ckisofe, prin|cews, le|gato, stega|nographice, reter|uati); each half is marked against
+  the whole word, and the reading column shows the join.
+- Per letter: S = fits a 17th-c. German or Latin word (period spellings allowed: u/v, y for u-umlaut,
+  undt, hette, were, komen, desen, newe, uiel, -irte forms); E = wrong letter in an otherwise clear
+  word, plausibly a one-letter slip (substitution, extra letter or transposed pair); N = no sense.
+- A missing letter has no unit, so it is not penalised (gelegenh[e]it, erha[l]ten, mo[g]lich): these
+  are flagged in the reading column with [ ]. This is the one place the judge is lenient.
+- [S] and [blot] = 1 unit N each, as the brief says. '?' inside a token = 1 unit N.
+- <struck> rows (writer's deletion, no letters) = 0 units, listed but not counted (fr252: 1, no29: 9).
+- Words needing three or more slips, or with no clear target, are all N.
+- Names accepted as S: Axel Lil[l]ie (one E), Helm Wrangel, Georg Wilhelm, Rorte (Baron de Rorte),
+  Torgaw, Magdeburg, Brandenburg, Oldenburg (one E), Regenspurg (two E). Mylonius and Wurdenhagen
+  accepted as names, not verified. Steinacker taken as the name (one E).
+- Recurring slips (all scored E, not normalised): o for c (moohte, oontra, traotat-), c for o (scnst,
+  kcmen), f for n at word end (werdef, einef), q for d (qas, qiesen, wieqan), t for l (uielteicht,
+  helte), k for o (hiebeukrn = hiebevorn). Read as a system, much of the E would become S; the strict
+  judge does not do that.
+- Columns in judge_*.tsv: image, line, decode, marks (one letter per unit), S, E, N, reading. Last row
+  TOTAL with the strict share. specs_*.txt hold the per-token judgments the TSVs were built from.
+
+Totals (strict share = S/(S+E+N))
+- letter_fr186:   S 41,   E 4,   N 17   -> 41/62     = 66.1%
+- letter_fr203:   S 134,  E 17,  N 38   -> 134/189   = 70.9%   (3 [S] units)
+- letter_fr252:   S 57,   E 9,   N 40   -> 57/106    = 53.8%   (14 [S] units)
+- slip_fr281:     S 388,  E 22,  N 32   -> 388/442   = 87.8%   (4 [blot] units)
+- no29_fr244-245: S 5233, E 448, N 1084 -> 5233/6765 = 77.4%   (147 [S], 7 [blot], 28 '?')
+
+Gists
+- fr186: fragment. "diario ... ein ... fyrfallet; periodus post ... in beyden gesetzt": something that
+  came up in a diary; a period or post set in both. Too short to say more.
+- fr203: someone is to go "noch diesen winter" to make report (umb relation) and fetch a new instruction
+  on the treaties; this gives a good chance to recommend "dero negotia undt desideria" better.
+- fr252: mostly symbols. Names the Margrave of Brandenburg (Marchio Brandenburgensis), the Archbishopric
+  (Erzstift) of Magdeburg, something Franconian, a princeps; the rest unread.
+- slip fr281: a requeste concerning Obrist Steinacker; Mylonius strongly disapproved (per discursum) that
+  the Evangelical estates sometimes met at Frankfurt; Electoral Saxony had forbidden its legate to attend
+  such conventicles of the Evangelicals, which made him suspect to the Emperor; expressly forbidden at
+  Aachen; mention of the diary and of Baron de Rorte's former German secretary.
+- no29 fr244-245: long report of talks. Postulation of the administrator of the Archbishopric
+  (Georg Wilhelm named; capitulation, marriage terms, Augsburg Confession in Latin passages); Swedish
+  side (Axel Lillie, Helm Wrangel) on withdrawing troops, the garrison, Torgau; Regensburg, the Count of
+  Oldenburg, Gluckstadt, the Danube; how deputies should negotiate (per deputatos, coniunctim, by
+  memorial, even steganographically).
