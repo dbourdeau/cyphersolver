@@ -238,12 +238,25 @@ Brice Dudout's verification above was re-run here before it was merged.
 * **Count.** By the strict rule a probable value is a hole. On the contributor's own grades 12 of the 19 cipher units
   are sure (63%); his 17 of 19 (89.5%) counts the five probable ones as read. On the words of
   `texts/letters_reading.md` (clear text and cipher together, the figure the profile has carried since 24 Oct) the
-  count is now 121 words and 11 holes, **0.917**: *angry*, *with*, *letter[s]*, *the Lord Deputy* on 185 (three words),
+  count is now 121 words read and 11 holes, 132 in all, **0.917** (1 - 11/132, as `v10_relabel.measure` computes it): *angry*, *with*, *letter[s]*, *the Lord Deputy* on 185 (three words),
   149, *Secretary Coke* (two words), *Parliament* (221, graded probable in his table and now marked `[?PARLIAMENT]`)
   and 31. The figure of 24 Oct was 0.938 with 185 as one unread code: the share is lower although more is known,
   because a three-word probable name counts three holes. Read in part either way.
 * `outcome.key` is now recorded as partial (149 has no value, 1-6 and the vowel blocks are not fixed) and the gaps
   are listed below.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The cipher words are the 19
+cipher units of `texts/verification_20261114.md` section 5 (nulls left out; each code one word, each spelled word one
+word, 270 included as the code the letter assigns to Crosby); the clear text of HMC *Ormonde* I around them is left out.
+
+- Letters of 1634-35: 0.917 (121 words read and 11 holes of `texts/letters_reading.md`, 132 in all, clear and cipher together) -> **0.579** (11 of 19
+  units sure). Holes: the five probable values (*angry* on the slip 26, 113 *with*, 185 *the Lord Deputy*, 218
+  *Secretary Coke*, 221 *Parliament*), the unread 149 and 31, and *letter[s]*, whose last figure is not certainly s
+  (graded sure in the contributor's table, but the reading marks the letter as not sure). Whole letter, clear included,
+  not the measure: 0.917.
+- Class unchanged: **read in part**. The contributor's 17 of 19 (89.5%) counts the probable values as read.
 
 ## Remaining gaps
 

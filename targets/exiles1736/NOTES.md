@@ -16,6 +16,13 @@ France has agreed preliminary articles with Vienna and an armistice and says it 
 
 One number stands for one letter (30 signs: 0 ł, 1 e, 2 u, 3 a, 4 h, 5 m, 6 l, 7 c, 8 i, 9 b, 10 w, 11 ą, 12 x, 16 d, 18 g, 19 q, 20 k, 21 s, 22 ę, 33 æ, 37 f, 44 œ, 45 n, 53 j, 67 o, 79 y, 85 p, 100 r, 101 t, 120 z), with a dash between words; code groups written without dots stand for names (125 Stanisław, 455 Augustus III, 136 and 142 Warsaw, 675 [?Monti], 435 and 4345 the Khan, spelled in letters). It is not the key of letters 446 and 1398 to 1400.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher. The recorded figure already did:
+it was counted on the **bold** passages of `reading.md`. Recounted on the 52 bold passages with the `v2_score` hole rules:
+517 of 529 words read, 12 holes (the nine code groups, [?Monti] twice, cza[s]), 0.977, the same as the recorded 518 of
+530. The clear Polish and Latin are left out. No change; the letter stays read.
+
 ## Remaining gaps
 
 - Nine code groups unread (145, 156, 175, 195, 289, 505, 613, 715, 5455), "[?Monti]" for 675 a guess, and "cza[s]" written with 12 for 21 - blocker: open-codes; each occurs once or twice and no text fixes it (the contributor's table of what he tried is in `../branicki1757/numbers.md`)

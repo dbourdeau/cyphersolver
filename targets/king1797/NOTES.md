@@ -151,8 +151,8 @@ after PR #398: the frame shows a clear 769; across the interlined batches 769 is
 "and" and never "the" (155 of 157 single-group observations in `key.tsv`; 164 of 168 counting "&", on the recount of 12 Nov 2026; the contributor's "156 times" matches neither count, and the point holds). Only one copy of No. 29 is on the film, so whose slip it was cannot be told. 269 has a
 second occurrence, interlined "the", on M30 roll 6 frame 0013 left, 10 Jan 1799; see `key.tsv`. Neither changes the
 reading.) Read share over the page's reading
-(clear and decoded words, the project's rule, `research/reading_audit/v10_relabel.py`) is **0.994** over the whole despatch,
-now transcribed to frame 0096; on the decoded words alone it is 0.855 (65 of 76). The document is marked **read in part**
+(clear and decoded words, the project's rule, `research/reading_audit/v10_relabel.py`) is 0.994 over the whole despatch,
+now transcribed to frame 0096; on the decoded words alone it is **0.855** (65 of 76), the measure since 16 Nov 2026 (see below). The document is marked **read in part**
 because the coded part on its own is under the bar. Andrew Beling read it as sentences against frame 0092 on 11 Nov 2026 and
 signed it off, including the context-only words (`reading_review`).
 
@@ -167,6 +167,19 @@ Pickering's letter to King of 17 Sept 1796 and by "Mr. King's communications on 
 13th 1797, & June 5th following". Engeström's note of 1794 invited the United States to accede to the Danish-Swedish neutrality
 convention of 27 March 1794 (*Papers of Alexander Hamilton* 16:548-50, notes; Pickering dates the propositions "1793"). Pickering's
 instruction of 17 Sept 1796 was not read.
+
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. In `reading_no29.md` the
+decoded words are in *italics* (the italic heading *Note.* at the end is not code); the clear English of frames
+0092-0096 is left out.
+
+- No. 29: 0.994 (whole despatch, clear words included) -> **0.855** (65 of 76 decoded words). The 11 holes are the ten
+  `[?word]` (grade-I values from this letter's context, *[?and]* the supposed slip of 769 among them) and the supplied
+  letter of *overtur[e]*. Whole letter, clear included, not the measure: 0.994.
+- Class unchanged: **read in part**; the cipher-only figure already decided it. No. 59 (the held-out test) carries no
+  read share.
 
 ## 8. Prior work
 

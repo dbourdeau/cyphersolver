@@ -351,7 +351,8 @@
    ],
    "what": "Integration check of pull request #603 (Brice Dudout). Halphen 1889 could not be reached here: HathiTrust answers 403 to a script (not got round), archive.org has no copy, the Gallica search answers with its bot check; what it prints is by the contributor's record. The two measurements (0.507 and 0.535 against a declared bar of 0.85) could not be re-run and their hashes could not be recomputed, because the declarations, scripts and reference text are not in the repository: published as failed by the declared bar, with the margin over shuffled keys (best 0.291 and 0.319) stated separately. An own first-value decoder over ct_f33_v2.txt and ct_22nov.txt puts the eight code groups fixed from the print where the quoted phrases need them, next to spelled-out words that agree (r 44 ff g, x Cm r 4 g ff = '. Prince .. mirane' for du Prince de la Mirande; g, p t a ff x 28 = 'la voie . Espagne'; 26 x, B S 28 = 'France que l l Espagne'; 70 72 = 'partant vous'). On the Gallica image of f. 46r (canvas 99) the clear words read 'et pareillement' (l. 10) and 'que Je veux' (l. 24) as the print is quoted, and l. 4 reads 'que des com.ns que Je vous ay faict': reading_22nov.md corrected in these three places from the image. f. 31v (canvas 70) is dated 'le ix.me jour de Novembre': the leaf map's 8 Nov corrected to 9 Nov. Outcome kept at read in part: the printed text of the 9 and 22 Nov letters is not in the repository, the strict share the cipher alone confirms is 0.37 of the printed words on both letters (130 of 353; 136 of 371, the contributor's count), and bringing the text in is a workable gap.",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026) on reading_10nov.md: the *italic* enciphered passages inside the > blockquote counted, the roman clear text left out; holes by words with the v2_score rules: 186 words, 6 holes ([que], [car autrement], [seroit …], [faites semblant]). 0.993 (measured on the commentary outside the blockquote) -> 0.968; 10 Nov stays read; class read in part unchanged (9 and 22 Nov decoded, not read).", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -452,7 +453,8 @@
      "note": "The four cipher passages read from the clear minute f. 36r-v, which gives their full text; continuous French."
     },
     "translation": "10nov_en.md",
-    "read_share": 0.993
+    "read_share": 0.968,
+    "note": "16 Nov 2026: read share over cipher words only 0.968: 180 of 186 words in the italic (enciphered) passages of the > blockquote in reading_10nov.md. Holes: [que], [car autrement] (2), [seroit …] (1, extent unknown), [faites semblant] (2; the sent text, which differs from the minute; with it read, 182 of 186, 0.978). [Sillery's brother] stands for 'mon frere', which the cipher has, and counts as two words read. The roman clear text of the sent letter is left out. The recorded 0.993 was measured on the commentary below the blockquote, which v10 scored because it skips > lines. Whole letter (blockquote, clear included), not the measure: 0.980."
    },
    {
     "doc": "9nov",

@@ -169,7 +169,8 @@
     "plaintext matching"
    ]
   },
-  {"date": "2026-11-06", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 225 tokens, 41 types, it-cinquecento order 4: reading -1.865 per letter; random keys -4.044 (z 5.6); key annealed onto shuffled ciphertext best -2.462 (mean -2.495, z 18.0); annealer on the real text -2.238. Verdict: pass.", "result": "worked"}
+  {"date": "2026-11-06", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 225 tokens, 41 types, it-cinquecento order 4: reading -1.865 per letter; random keys -4.044 (z 5.6); key annealed onto shuffled ciphertext best -2.462 (mean -2.495, z 18.0); annealer on the real text -2.238. Verdict: pass.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share measured over cipher words only (README Conventions, 16 Nov 2026) on reading.md: the **bold** cipher passages of the three Italian excerpts counted, the clear Italian and the English blocks left out; holes by words with the v2_score rules. 65 cipher words, 3 holes ([utinam]; Ragona[?] and parve[?], uncertain sign shapes). read_share 0.9956 (the token share) -> 0.954; stays read, class unchanged. fraction_read (tokens) unchanged.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-11-06", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 225, "types": 41, "tokens_per_type": 5.49, "score": -1.865, "nulls": {"random keys": {"n": 200, "mean": -4.044, "sd": 0.392, "max": -3.263, "z": 5.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.495, "sd": 0.035, "max": -2.462, "z": 18.0, "p": 0.1429}}, "power": -2.238, "verdict": "pass", "notes": "claimed per-occurrence score -1.865; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.238"}, 
   "class": "read",
@@ -201,14 +202,15 @@
     "translation": "en.md",
     "language": "it",
     "state": "read",
-    "read_share": 0.9956,
+    "read_share": 0.954,
     "summary": "Contucio reports his embassy to the Venetian Signoria in the war of 1446 against Filippo Maria Visconti. The cipher says what Venice and Florence want to settle with Sforza (the destruction of the Duke of Milan, Sforza's losses and their compensation, a peace with a power named by a code word, and Sforza present in person at the Duke's ruin), and twice that Cosimo de' Medici advised what to offer and say.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (session)",
      "date": "2026-11-06",
      "note": "Every cipher clause read as a sentence with the clear text around it; one code word open; the verso agrees with the contemporary interlinear decipherment."
-    }
+    },
+    "note": "16 Nov 2026: read share over cipher words only 0.954: 62 of the 65 words in the seven bold cipher passages of reading.md read (d'essi one word). Holes: the code word [utinam], and Ragona[?] and parve[?], each a word with one sign of uncertain shape that the sense fixes (sure words only; with the two shapes accepted, 64 of 65, 0.985). The clear Italian around the passages and the English blocks are left out. The recorded 0.9956 was the token figure (225 of 226 signs), not a word share. Whole letter not measured: reading.md gives the clear text only in excerpts."
    }
   ],
   "gaps": [

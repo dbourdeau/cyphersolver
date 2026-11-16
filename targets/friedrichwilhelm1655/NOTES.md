@@ -169,6 +169,29 @@ By a second AI language-model reader that is not the contributor, and with no hu
 - Method: key recovered based on adjacent plaintext (see above).
 - Statistical validation added (`validation.tsv`).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The marked reading of each
+document was aligned line by line with its transcription, where the clear words stand in double quotes: those words
+are left out (holes in them too: the binding losses of 794.01, 794.20 and 798.09 fall in clear words); clear letters
+joined to a run (*hier*, *angelanget*, *nachrichtung*) make a cipher word; a word broken across a line is counted once
+(the earlier count took each half as a word). Read = verbatim from the signs; a repair, a context fill, a guess, a hole
+`[...]` or `[51]` is not read; a line end in the binding where nothing is lost (`{[...]/}`) is read, as it supplies
+nothing. The repairs are the writer's slips against a rebuilt key: no key of the time survives, so the one-digit-slip
+rule does not make them read.
+
+| doc | before (clear words included) | cipher words | verbatim | share | class |
+|---|---|---|---|---|---|
+| c793 | 260/286 (0.909) | 167 | 142 | **0.850** | read in part |
+| ps797 | 151/161 (0.938) | 84 | 72 | **0.857** | read in part |
+| ps717 | 68/71 (0.958) | 66 | 63 | **0.955** | read |
+| l819 | 62/64 (0.969) | 36 | 34 | **0.944** | **read -> read in part** (the slips *lanctag*, *würcde*) |
+| w787 | 99/106 (0.934) | 46 | 35 | **0.761** | read in part |
+| w813 | 64/72 (0.889) | 57 | 50 | **0.877** | read in part |
+| all six | 704/760 (0.926) | 456 | 396 | **0.868** | read in part (unchanged) |
+
+Whole letter, clear included, not the measure: the "before" column. A gap line for the repairs is added below.
+
 ## Remaining gaps
 
 - Line ends of scans 794 and 798 - blocker: needs-physical-access; letters lost in the binding of the left-hand pages
@@ -177,6 +200,10 @@ By a second AI language-model reader that is not the contributor, and with no hu
 - 788.20-788.24 and the line ends of scan 788 - blocker: needs-physical-access; four holes, letters lost in the binding.
 - The clear word before "etwa" on 797.20 - blocker: illegible; not read from the viewer image.
 - 787.a "S{i/c}hweden" - blocker: illegible; 2 or 12 not settled on the image.
+- The marked repairs in cipher words (15 words) - blocker: no-key-material; the writer's one-digit slips (bald, also,
+  gestatten, landtag, würde ...), one added letter and one dropped stray group, read from the sense against the
+  rebuilt key; no key of the time survives to show the slip, so they count as not read (16 Nov 2026). l819 falls under
+  95% on its two.
 - Number 51 (813.a, 814.12) - blocker: open-codes; not a letter, from context a person, perhaps the Elector (a guess).
 - Scans 723-724 (17 Aug 1655, another code) - blocker: no-key-material; numbers up to four digits mixed with letters, no
   key of that code is known; the catalogue item stays open for it.

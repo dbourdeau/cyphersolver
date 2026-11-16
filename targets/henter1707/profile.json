@@ -108,17 +108,23 @@
     {"date": "2026-10-23", "kind": "verification", "what": "Re-read brief b28, step 1: DECODE R496, R533, R534 re-fetched with the cookie (b28_fetch.py): no DOC_ attachment or comment; the text of paragraphs 3-4 is the contemporary interlinear on the leaf, legible at 2-3x on IMG_R496_I3689_P1.", "result": "worked"},
     {"date": "2026-10-23", "kind": "transcription", "what": "Paragraphs 3-4 (and the end of paragraph 2): interlinear transcribed as written and the cipher under it decoded sign by sign with the alphabet fixed by the interlinear of paragraphs 1-2 (texts/mnl-g15-d80-f38_p3-4_cipher.tsv, 9 rows, 51 words). Figures correct the interlinear: 'Magyar' -> jancsarsag, 'twrbabo' -> turbatio, 'naltatnak' -> componalodnak, 'zenenkedem' -> remenkedem; 'Felsegednek' -> Felsegedet.", "result": "worked"},
     {"date": "2026-10-23", "kind": "verification", "what": "Reading of paragraphs 3-4 aligned word by word with the decode (every word carried; 4 [?]; 6 look-alike letters); score 0.000 on the modern Hungarian list (unaccented 1700s spelling), 0.833 explicit holes; sentences hold. Entry set read, grade A.", "result": "worked", "technique": ["language-model scoring"]},
-    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+    {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. The letter is wholly in cipher. Paragraphs 1-2 (texts/mnl-g15-d80-f38_decryption.md, to 'melyre ígérte magát'; the next sentence belongs to the paragraphs 3-4 reading): 50 of 53 words, the bracketed description of an unread sentence counted as one word (extent unknown) and the bracketed alternative as two; 0.98 -> 0.943, read -> read in part. Paragraphs 3-4 unchanged at 0.939 (62 of 66). Both parts under the bar: class already solved -> read in part (extent partial), fraction_read 1.0 -> 0.941 (112 of 119 words). cipher_markup '>' declared on paragraphs 1-2; the tool gives 0.912 because it measures the whole blockquote.", "result": "partial"}
   ],
   "outcome": {
     "method": "read from existing decipherment",
     "method_basis": "A contemporary interlinear Hungarian decipherment covers the cipher on the target folio itself (MNL OL G 15, fol. 38), unflagged by DECODE R496; it was read and checked against the sibling R533 closing formula.",
     "contribution": ["sender or date identified", "catalogue correction"],
-    "class": "already solved",
-    "fraction_read": 1.0,
+    "class": "read in part",
+    "key": "recovered",
+    "fraction_read": 0.941,
     "fraction_read_method": "measured",
-    "fraction_read_source": "Reading audit 22 Oct 2026: share of the interlinear that reads as sentences, paragraphs 1-2, about 9 of 17 lines of the normalized text (no cipher transcription, so no token count; estimated). Withdrawn: 0.8, the share of the interlinear read at all, words between holes included. 23 Oct 2026 (b28): paragraphs 3-4 now read from the interlinear checked against the figures, so both parts of the letter read (1.0).",
+    "fraction_read_source": "Reading audit 22 Oct 2026: share of the interlinear that reads as sentences, paragraphs 1-2, about 9 of 17 lines of the normalized text (no cipher transcription, so no token count; estimated). Withdrawn: 0.8, the share of the interlinear read at all, words between holes included. 23 Oct 2026 (b28): paragraphs 3-4 now read from the interlinear checked against the figures, so both parts of the letter read (1.0). 16 Nov 2026, read share over cipher words only (the whole letter is cipher): paragraphs 1-2 50 of 53 words, paragraphs 3-4 62 of 66 words, so 112 of 119 = 0.941, and both parts are read in part (under 95%).",
     "verification": ["contemporary decipherment", "key confirms", "historical consistency"],
+    "gaps": [
+      {"item": "paragraph 2: the short sentence on the kuruc envoys and the phrase [kihallgatást nyerjen / bővebben meghallgattassék]", "blocker": "illegible", "detail": "the interlinear hand overlaps the cipher there; paragraphs 1-2 were not decoded sign by sign under it"},
+      {"item": "paragraphs 3-4: four words [?] on look-alike signs (tiszteket, valtoztatni, uram, pedig)", "blocker": "illegible", "detail": "read on the DECODE image at 2-3x; the signs do not settle"}
+    ],
     "notes": "The historical decipherment covers the full cipher and makes the message's substance clear. About one fifth of a publication-quality diplomatic transcription remains uncertain because the interlinear hand overlaps the cipher, not because the cryptographic values are unknown.",
     "credits": [
       {"who": "contemporary", "role": "key or decipherment used", "note": "interlinear Hungarian decipherment on fol. 38"}
@@ -129,7 +135,7 @@
         "label": "R496, Hentér to Rákóczi, Constantinople 8 July 1707: paragraphs 1-2",
         "decryption": "texts/mnl-g15-d80-f38_decryption.md",
         "summary": "Mihály Hentér, Rákóczi's envoy at Constantinople, to Ferenc Rákóczi II, 8 July 1707: the pasha of Belgrade received Rákóczi's gift favourably and offered troops, gunpowder and grain if Rákóczi sent six or seven thousand men against the Serbs; Hentér pressed for the deputation to be heard by the grand vizier, whose audience was delayed amid confusion in the capital; he closes with a request about the liberation of a captive.",
-        "note": "Decryption = the interlinear Hungarian, normalized, copied from NOTES.md; some middle clauses are uncertain or unread (need a Hungarian palaeographer). No transcription of the cipher signs (project work); the archive does not allow the scans to be republished. This entry: paragraphs 1-2 (the Belgrade pasha's offer, the audience sought for the deputation), which read.",
+        "note": "Decryption = the interlinear Hungarian, normalized, copied from NOTES.md; some middle clauses are uncertain or unread (need a Hungarian palaeographer). No transcription of the cipher signs (project work); the archive does not allow the scans to be republished. This entry: paragraphs 1-2 (the Belgrade pasha's offer, the audience sought for the deputation). 16 Nov 2026, read share over cipher words only (README Conventions): the whole letter is in cipher and the blockquote is the normalized interlinear, so all its words count. This entry is paragraphs 1-2 up to 'melyre ígérte magát'; the sentence after it ('[Közvetítője] azt izené ... de a magyar […]') is the start of the paragraphs 3-4 reading, which re-reads it from the figures. 53 words, 50 read; holes: the unread sentence on the kuruc envoys, given only as a bracketed description (one word, extent unknown), and '[kihallgatást nyerjen / bővebben meghallgattassék]' (two words, the least the alternatives show). 0.98 -> 0.943 (50 of 53), under 95%: read in part. With the overlapping sentence in its old normalized form it would be 0.922 (59 of 64). cipher_markup '>' declared; v10_relabel.py measures the whole blockquote, paragraphs 3-4 in their old normalized form included, and gives 0.912: it cannot take paragraphs 1-2 alone.",
         "language": "hu",
         "reading_review": {
           "grade": "B",
@@ -138,7 +144,9 @@
           "note": "Paragraphs 1-2 of the normalized interlinear read as Hungarian sentences (the pasha received the gift and offers help with troops, powder and grain; Hentér sought an audience for the deputation before the grand vizier) with two bracketed uncertain phrases. Paragraphs 3-4 are mostly [...] and are split off as decoded, not read."
         },
         "translation": "texts/mnl-g15-d80-f38_p1-2_en.md",
-        "read_share": 0.98
+        "read_share": 0.943,
+        "state": "read in part",
+        "cipher_markup": ">"
       },
       {
         "doc": "mnl-g15-d80-f38",

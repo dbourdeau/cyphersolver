@@ -583,7 +583,8 @@
    "result": "worked"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1842 tokens, 73 types, fr-1600-letters order 4: reading -1.997 per letter; random keys -4.815 (z 8.3); key annealed onto shuffled ciphertext best -2.912 (mean -2.947, z 46.2); annealer on the real text -2.06. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 124 (ct_f124.txt, reading.txt), ff. 154r-v (ct_f154/ct_f154v, read_f154.md), ff. 156-157 (ct_f156/ct_f156v, read_f156.md), ff. 160/164/174 (ct_*, read_f160_f174.md); key key.tsv.", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): f. 124 (ct_f124.txt, reading.txt), ff. 154r-v (ct_f154/ct_f154v, read_f154.md), ff. 156-157 (ct_f156/ct_f156v, read_f156.md), ff. 160/164/174 (ct_*, read_f160_f174.md); key key.tsv.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Read share recounted over cipher words only, sure words only (README Conventions, 16 Nov 2026): the cipher passages of each reading with the clear (in [clear: ...] or brackets) left out; holes the unread groups (one word each, the least), (?)-marked words, words inside braces and words with supplied letters. Result: f. 124 0.987 -> 0.917 (22/24), ff. 154r-v 0.988 -> 0.947 (162/171), ff. 156r-v 0.986 -> 0.884 (220/249), ff. 160-174 1.0 -> 0.981 (106/108); three documents read -> read in part, target read -> read in part; the sign figure 2,094/2,159 (97.0%) is unchanged and is not the read share; gap added for the doubtful and supplied words.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "fr-1600-letters", "file": "validation.tsv", "tokens": 1842, "types": 73, "tokens_per_type": 25.23, "score": -1.997, "nulls": {"random keys": {"n": 200, "mean": -4.815, "sd": 0.34, "max": -3.84, "z": 8.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.947, "sd": 0.021, "max": -2.912, "z": 46.2, "p": 0.1429}}, "power": -2.06, "verdict": "pass", "notes": "claimed per-occurrence score -1.931; polyphony 0.038; 217 unread tokens left out; annealer on the real text from random keys reached -2.06"}, 
   "method": "key recovered based on adjacent plaintext",
@@ -593,14 +594,14 @@
    "key extended or corrected",
    "catalogue correction"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.97,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Measured on 3 Oct 2026 (measure.py --letters): ff. 154-174 1,998/2,059 = 97.0%; with f. 124 (96/100), 2,094/2,159 = 97.0%. The letter to Catherine (ff. 156r-v) is 921/961 = 95.8%, the letter to Anjou 660/677 = 97.5%, the four pages of 24 April 1,581/1,638 = 96.5%. The earlier count of 2 Oct 2026 (1617/1739 = 0.930; Catherine 876/961 = 91.2%) is superseded.",
+  "fraction_read_source": "Cipher signs giving sense (a sign count, not the read share). Measured on 3 Oct 2026 (measure.py --letters): ff. 154-174 1,998/2,059 = 97.0%; with f. 124 (96/100), 2,094/2,159 = 97.0%. The letter to Catherine (ff. 156r-v) is 921/961 = 95.8%, the letter to Anjou 660/677 = 97.5%, the four pages of 24 April 1,581/1,638 = 96.5%. The earlier count of 2 Oct 2026 (1617/1739 = 0.930; Catherine 876/961 = 91.2%) is superseded.",
   "key": "recovered",
   "grades": "unknown",
   "verification": ["contemporary decipherment", "matched control", "historical consistency", "statistical test"],
-  "notes": "Measured per letter (measure.py --letters, 3 Oct 2026): f. 124 96/100; to Anjou 24 Apr ff. 154r-v 660/677 = 97.5%; to Catherine 24 Apr ff. 156r-v 921/961 = 95.8%; f. 160 91/91; f. 164 203/207 = 98.1%; f. 174 123/123; all 2094/2159 = 97.0%. 65 open tokens: gutter-cut line ends, single signs, one unkeyed word sign (f. 164). ff. 182-189 (9 May) are clear.",
+  "notes": "Read in part since 16 Nov 2026: counted by cipher words, sure words only, f. 124 22/24 (0.917), to Anjou 162/171 (0.947), to Catherine 220/249 (0.884), ff. 160-174 106/108 (0.981); only the May letters meet the bar. Signs measured per letter (measure.py --letters, 3 Oct 2026): f. 124 96/100; to Anjou 24 Apr ff. 154r-v 660/677 = 97.5%; to Catherine 24 Apr ff. 156r-v 921/961 = 95.8%; f. 160 91/91; f. 164 203/207 = 98.1%; f. 174 123/123; all 2094/2159 = 97.0%. 65 open tokens: gutter-cut line ends, single signs, one unkeyed word sign (f. 164). ff. 182-189 (9 May) are clear.",
   "gaps": [
    {
     "item": "f. 154r ll. 1-2, 15, 18 (15 tokens)",
@@ -633,6 +634,11 @@
     "detail": "single signs, no value fits"
    },
    {
+    "item": "Doubtful and supplied words at the gutter (f. 124 despuis?; f. 154r qui(?), est(?); f. 154v e[sc]us, [par], le[s]; f. 156v querez(?), [so]nt, Ca[r], con[tr]e, l[e], veule[nt Monseigneur])",
+    "blocker": "illegible",
+    "detail": "letters lost in the microfilm gutter or under the decipherer's overwriting, supplied from the sense or the cut gloss; counted as holes since 16 Nov 2026 (supplied letters and doubtful words are not sure words); one microfilm digitisation only"
+   },
+   {
     "item": "f. 124 l. 3 (4 tokens)",
     "blocker": "illegible",
     "detail": "gloss cut by the gutter"
@@ -651,7 +657,9 @@
     "summary": "Lanssac tells Charles IX that the obstacles in Thuringia, Meissen and the Mark of Brandenburg delayed him so that he reached Poland (Mezeritz) only on 25 February, and that without the escort of the King's pensioners Alexander von Miltitz and George Luelz he would at the least have been detained; the ciphered passages hide the dangers Frenchmen met in Germany. The rest, in clear, refers to his recueil on Polish affairs.",
     "translation": "reading_en.md",
     "language": "fr",
-    "read_share": 0.987
+    "read_share": 0.917,
+    "state": "read in part",
+    "note": "Read share over cipher words only, sure words only (16 Nov 2026): 22 of 24 cipher words: the two bracketed passages of reading.txt; holes despuis? (doubtful) and ser{o r h e}. Before: 0.987 (whole letter, clear included, not the measure)."
    },
    {
     "doc": [
@@ -667,7 +675,9 @@
     "summary": "On the eve of the Polish election, Lanssac reports to Anjou that the Lithuanian chiefs have promised their vote to him, which with the party already won should put the crown on his head, unless the Grand Seigneur's recommendation of him, made with ruse through the voivode of Wallachia, brings some unexpected change.",
     "translation": "read_f154_en.md",
     "language": "fr",
-    "read_share": 0.988
+    "read_share": 0.947,
+    "state": "read in part",
+    "note": "Read share over cipher words only, sure words only (16 Nov 2026): 162 of 171 cipher words of the blockquotes of read_f154.md, [clear: ...] left out; holes the four unread groups (one word each, the least), qui(?), est(?), and the supplied e[sc]us, [par], le[s] (letters lost in the gutter; 0.959 if the two the cut gloss attests counted as read). Before: 0.988 (whole letter, clear included, not the measure)."
    },
    {
     "doc": [
@@ -684,7 +694,9 @@
     "summary": "Lanssac tells Catherine that matters stand so that by next Monday she should be mother of the two greatest kings in the world, barring a change of minds, and fears that the Emperor might surprise them and that the King of Denmark, bending to his will, might give them much trouble on that side because of the strait, not half a league wide. The end of the letter (f. 157r) is in clear.",
     "translation": "read_f156_en.md",
     "language": "fr",
-    "read_share": 0.986
+    "read_share": 0.884,
+    "state": "read in part",
+    "note": "Read share over cipher words only, sure words only (16 Nov 2026): 220 of 249 cipher words (recto 73/77, verso 147/172) of read_f156.md, the bracketed clear left out; holes the unread groups (one word each), every word inside braces (the gloss supplies them; 0.936 if they counted as read), querez(?) and the supplied [so]nt, Ca[r], con[tr]e, l[e], veule[nt Monseigneur]. Before: 0.986 (whole letter, clear included, not the measure)."
    },
    {
     "doc": [
@@ -702,7 +714,9 @@
     "summary": "f. 160: the Polish nation is as venal as its German neighbours. f. 164: the Emperor has spent more than 300,000 écus in the negotiation against 30,000 on the other side and achieves nothing but to trouble Anjou's design. f. 174 (Płock, 9 May), announcing the election: it succeeded against the will of the Grand Seigneur, the Emperor, the princes of the Empire, the King of Spain, the Muscovite and the King of Sweden.",
     "translation": "read_f160_f174_en.md",
     "language": "fr",
-    "read_share": 1.0
+    "read_share": 0.981,
+    "state": "read",
+    "note": "Read share over cipher words only, sure words only (16 Nov 2026): 106 of 108 cipher words of read_f160_f174.md (f. 160 23/23, f. 164 52/54, f. 174 31/31), the bracketed clear left out; holes the word sign Mc and l[e]; the stray c is not a word. Before: 1.0 (whole letter, clear included, not the measure)."
    }
   ],
   "key_file": "key.tsv"

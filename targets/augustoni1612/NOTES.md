@@ -1,6 +1,6 @@
 # Girolamo Augustoni (as catalogued), 9 Oct 1612 (Biblioteca Estense, Autografoteca Campori, Lettera A, Augustoni c. 1; catalogue row 1569)
 
-Status: read in part (contributed, PR #452, issue #427). Key recovered from the ciphertext alone. By the README word rule 0.849 of the page is read (clear text and cipher together, 56 hole words); by cipher units 537 of 587 = 91.5% by the reviewer's strict rule on the transcription frozen on 11 Nov 2026. The 94.0% of the issue is withdrawn.
+Status: read in part (contributed, PR #452, issue #427). Key recovered from the ciphertext alone. Over the cipher words only (the measure since 16 Nov 2026), 82 of 113 are read: 0.726. Whole letter, clear included, not the measure: 0.849 by the README word rule (56 hole words). By cipher units 537 of 587 = 91.5% by the reviewer's strict rule on the transcription frozen on 11 Nov 2026. The 94.0% of the issue is withdrawn.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic). Sent as issue #427; checked by Daniel Bourdeau on 12 Nov 2026, who asked for these files and raised the points answered under "Answers to the check on issue #427". Integrated on 12 Nov 2026 (see "Integration check").
 
@@ -122,6 +122,26 @@ None found; priority not established. Checked on 11 Nov 2026: this repository (r
 - `&` has no key value; four "per" are from context and two places are unread.
 - The repository's checker scripts were not run by us (see the pull request text).
 - The RFC 3161 tokens' hash and time were read; the signature chain and the OpenTimestamps proofs were not verified.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The cipher words are the
+braced words of the T lines of `decryption.txt` (the capitals of its R lines): 111 words, *scr[i]tura* across L17-18
+counted once (the 112 of the decoder check counts its two halves). Each is scored on its R line, sure words only.
+
+- c. 1r: 0.849 (whole letter, clear and cipher together) -> **0.726** (82 of 113 cipher words: the 111 braced words
+  and the two codes `.50.`). The 31 holes: the codes I. (5), PP., 25. and `.50.` (2); the `&` sign (6: *per* from context at four places is not a key value, and two not
+  read); the gutter sign of L10 (*?e*); *reco*, every letter literal but the sense not clear; and 14 words with a
+  letter supplied, emended or restored at the torn edge (*prevost[o]*, *co[si]*, *[a]cordo*, *[q]uassi*,
+  *consce[n]so*, *[A.V.]*, *[in]gano*, *scr[i]tura*, *a[s]t[u]tia*, *prevos[to]*, *[f]eudi*, *hone[s]tare*,
+  *habb[i]no*, *[f]ar*; the key was recovered here, so no slip rule applies). The two restorations at the torn edge
+  are the softest of these: counted as read, 84 of 113 = 0.743.
+- The two codes `.50.` stand in the clear lines of the transcription and are outside the unit count, but they are
+  code groups for a person with no value (the README row lists `.50.` among the codes with no value), so they are
+  cipher words and holes (decided in the round 23 review, 16 Nov 2026; without them 82 of 111 = 0.739).
+- Left out: the clear text and its doubtful words.
+- Class unchanged: **read in part**. The unit figures (537 of 587 by the reviewer's rule) are sign counts and stay as
+  they are, beside the word figure.
 
 ## Remaining gaps
 

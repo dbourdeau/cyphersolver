@@ -391,6 +391,15 @@
    "kind": "literature search",
    "what": "Integration: Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869), fetched as text from archive.org (grafgeorgfriedri00erdmuoft and bub_gb_-E06AAAAcAAJ, Fraktur OCR with long-s errors) and searched with OCR-tolerant patterns for Krockow, Cöslin, Radziwill, Danzig, Marienwerder, Culemborg and Chiffre/Ziffer: no hit; the OCR is too poor to exclude a quotation of the letters.",
    "result": "partial"
+  },
+  {
+    "date": "2026-11-16",
+    "kind": "verification",
+    "technique": [
+      "manual reconstruction"
+    ],
+    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the marked reading of each document aligned line by line with its transcription (clear words in double quotes left out; clear letters joined to a run counted as a cipher word; a word broken across a line counted once); repairs, fills, guesses and holes not read, an empty binding mark read. Result: c793 0.909 -> 0.850 (142/167), ps797 0.938 -> 0.857 (72/84), ps717 0.958 -> 0.955 (63/66, stays read), l819 0.969 -> 0.944 (34/36, read -> read in part: its two slips have no period key), w787 0.934 -> 0.761 (35/46), w813 0.889 -> 0.877 (50/57); all six 704/760 (0.926, clear included) -> 396/456 (0.868); class read in part unchanged; gap added for the slips.",
+    "result": "worked"
   }
  ],
  "outcome": {
@@ -432,9 +441,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.926,
+  "fraction_read": 0.868,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Six documents, words as counted by scripts/reading.py (clear words included): 704 of 760 verbatim; repairs, context fills and holes count as not read (strict README rule). Scans 723-724 (another code) not treated. The clear text of Waldeck's letters, scan 819 lines 1-3 and the clear opening lines of 793 are not cipher and are not transcribed in full.",
+  "fraction_read_source": "Cipher words only (16 Nov 2026): six documents, 396 of 456 cipher words verbatim (0.868): the marked readings aligned with the transcriptions (clear words, in double quotes there, left out; clear letters joined to a run make a cipher word), a word broken across a line counted once; c793 142/167, ps797 72/84, ps717 63/66, l819 34/36, w787 35/46, w813 50/57. Whole letter, clear included, not the measure: words as counted by scripts/reading.py (clear words included): 704 of 760 verbatim; repairs, context fills and holes count as not read (strict README rule). Scans 723-724 (another code) not treated. The clear text of Waldeck's letters, scan 819 lines 1-3 and the clear opening lines of 793 are not cipher and are not transcribed in full.",
   "verification": [
    "contemporary decipherment",
    "independent verification",
@@ -486,14 +495,14 @@
     "language": "de",
     "state": "read in part",
     "summary": "The army will be on the Vistula within ten days and Waldeck's troops are to be there; ships ready in the Königsberg Haff; 24,000 lb of bread a day, as much beer, forage for 6,000 horses; Gerhard Roggen at Danzig and Christoph Melchior to help; the artillery pieces to be left behind but the horses brought; Danzig refuses passage, von Krockow sent to treat with the city and the voivodes.",
-    "note": "286 words (about 104 of them clear), 260 verbatim (90.9%), 4 marked repairs, 21 context fills (letters lost in the binding of scan 794), 4 holes; checker clean share 0.70.",
+    "note": "Read share over cipher words only (16 Nov 2026): 142 of 167 cipher words verbatim (0.850); clear words out of the count, a word broken across a line counted once, repairs (the writer's one-digit slips; no key of the time survives), context fills, guesses and holes not read, a line end in the binding where nothing is lost read. Whole letter, clear included, not the measure: 0.909. Before: 286 words (about 104 of them clear), 260 verbatim (90.9%), 4 marked repairs, 21 context fills (letters lost in the binding of scan 794), 4 holes; checker clean share 0.70.",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "The prose holds throughout; 21 context fills, mostly evident letters lost at the binding, and 4 holes. 'Nebro' is not identified, and the clear word at 795.06 was checked on the image at integration: 'auß', not 'auch'."
     },
-    "read_share": 0.909
+    "read_share": 0.85
    },
    {
     "doc": "ps797",
@@ -505,14 +514,14 @@
     "language": "de",
     "state": "read in part",
     "summary": "Send out fifty horsemen to find the Elector's march and report; small parties of five or six; build an entrenchment for about 500 foot on this side of the Vistula; ships ready to put the troops across if danger arises.",
-    "note": "161 words (about 75 clear), 151 verbatim (93.8%), 3 repairs, 6 fills (binding of scan 798), 4 holes; clean share 0.765.",
+    "note": "Read share over cipher words only (16 Nov 2026): 72 of 84 cipher words verbatim (0.857); clear words out of the count, a word broken across a line counted once, repairs (the writer's one-digit slips; no key of the time survives), context fills, guesses and holes not read, a line end in the binding where nothing is lost read. Whole letter, clear included, not the measure: 0.938. Before: 161 words (about 75 clear), 151 verbatim (93.8%), 3 repairs, 6 fills (binding of scan 798), 4 holes; clean share 0.765.",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "The orders for patrols and the entrenchment read cleanly. The last two sentences (798.06-08) have 3 holes and are thin, and one clear word (797.20) is not read."
     },
-    "read_share": 0.938
+    "read_share": 0.857
    },
    {
     "doc": "ps717",
@@ -524,14 +533,14 @@
     "language": "de",
     "state": "read",
     "summary": "Kept in suspense; treaties with the local people, especially the Weihers, to stay non-binding; proceed with Ermland; no other protection allowed; Elbing subject to ratification; tell the Oberräte with caution; the troops are marching.",
-    "note": "71 words, 68 verbatim (95.8%), 3 marked repairs, no holes; clean share 0.714.",
+    "note": "Read share over cipher words only (16 Nov 2026): 63 of 66 cipher words verbatim (0.955); clear words out of the count, a word broken across a line counted once, repairs (the writer's one-digit slips; no key of the time survives), context fills, guesses and holes not read, a line end in the binding where nothing is lost read. Whole letter, clear included, not the measure: 0.958. Before: 71 words, 68 verbatim (95.8%), 3 marked repairs, no holes; clean share 0.714.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "95.8% verbatim, 3 marked writer's slips, no holes; the sentences hold."
     },
-    "read_share": 0.958
+    "read_share": 0.955
    },
    {
     "doc": "l819",
@@ -541,16 +550,16 @@
     "reading": "reading_l819.md",
     "translation": "translation_l819.md",
     "language": "de",
-    "state": "read",
+    "state": "read in part",
     "summary": "Radziwill gives to understand that they see no course but to place themselves under the Elector's protection; a general Prussian diet should be called by the Bishop of Ermland and the Elector should bring it about.",
-    "note": "64 words, 62 verbatim (96.9%), 2 repairs, no holes; clean share 1.00. A summary decipherment of the time stands in the margin. Integration check: the last group of 819.11 is 12 (c), not 13; the slip reads lanctag.",
+    "note": "Read share over cipher words only (16 Nov 2026): 34 of 36 cipher words verbatim (0.944); clear words out of the count, a word broken across a line counted once, repairs (the writer's one-digit slips; no key of the time survives), context fills, guesses and holes not read, a line end in the binding where nothing is lost read. Whole letter, clear included, not the measure: 0.969. Before: 64 words, 62 verbatim (96.9%), 2 repairs, no holes; clean share 1.00. A summary decipherment of the time stands in the margin. Integration check: the last group of 819.11 is 12 (c), not 13; the slip reads lanctag.",
     "reading_review": {
      "grade": "A",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "96.9% verbatim; the summary decipherment of the time in the margin confirms it independently."
     },
-    "read_share": 0.969
+    "read_share": 0.944
    },
    {
     "doc": "w787",
@@ -562,14 +571,14 @@
     "language": "de",
     "state": "read in part",
     "summary": "Conditions with Sweden could hardly be worse; letters sent to Jacob Weiher, Elbing and Danzig; will speak to the Bishop of Ermland; Danzig offers ships; vivres against cartage money or security; news to General Sparr.",
-    "note": "Passages only. 106 words (about 63 clear), 99 verbatim (93.4%), 1 repair, 6 fills, 4 holes; clean share 0.889.",
+    "note": "Read share over cipher words only (16 Nov 2026): 35 of 46 cipher words verbatim (0.761); clear words out of the count, a word broken across a line counted once, repairs (the writer's one-digit slips; no key of the time survives), context fills, guesses and holes not read, a line end in the binding where nothing is lost read. Whole letter, clear included, not the measure: 0.934. Before: Passages only. 106 words (about 63 clear), 99 verbatim (93.4%), 1 repair, 6 fills, 4 holes; clean share 0.889.",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "Only the cipher passages are edited and the clear text between them is left out, so several passages are fragments; 788.20-24 has 4 holes."
     },
-    "read_share": 0.934
+    "read_share": 0.761
    },
    {
     "doc": "w813",
@@ -581,14 +590,14 @@
     "language": "de",
     "state": "read in part",
     "summary": "Weiher offers help; Vistula boats ordered at Marienwerder; Magnus reports that Thorn resolves to defend itself and plans a meeting with Danzig, Elbing and the three voivodes on the Vistula, and is not unwilling to help [51].",
-    "note": "72 words, 64 verbatim (88.9%), 5 marked repairs (four of them line ends in the binding where nothing is lost, marked {[...]/}), 3 fills, 2 holes ([51] twice); checker clean share 0.833 on the sentence text.",
+    "note": "Read share over cipher words only (16 Nov 2026): 50 of 57 cipher words verbatim (0.877); clear words out of the count, a word broken across a line counted once, repairs (the writer's one-digit slips; no key of the time survives), context fills, guesses and holes not read, a line end in the binding where nothing is lost read. Whole letter, clear included, not the measure: 0.889. Before: 72 words, 64 verbatim (88.9%), 5 marked repairs (four of them line ends in the binding where nothing is lost, marked {[...]/}), 3 fills, 2 holes ([51] twice); checker clean share 0.833 on the sentence text.",
     "reading_review": {
      "grade": "B",
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-12",
      "note": "The sentences hold. [51] (twice) is unresolved; reading it as the Elector is a guess."
     },
-    "read_share": 0.889
+    "read_share": 0.877
    }
   ],
   "key_file": [
@@ -615,6 +624,11 @@
     "item": "Erdmannsdörffer, Graf Georg Friedrich von Waldeck (1869)",
     "blocker": "illegible",
     "detail": "Named in the catalogue's verify field. Searched at integration in the two online Fraktur OCR copies (archive.org): no hit for Krockow, Cöslin, Radziwill, Danzig, Marienwerder, Culemborg or Chiffre, but the OCR is too poor to exclude a quotation; the book draws on the Arolsen archive."
+   },
+   {
+    "item": "The marked repairs in cipher words (15 words: the writer's one-digit slips such as bald, also, gestatten, landtag and wurde, one added letter and one dropped stray group)",
+    "blocker": "no-key-material",
+    "detail": "Read from the sense against the rebuilt key; no key of the time survives to show what the writer meant, so under the README rule on one-digit slips they count as not read (16 Nov 2026). They are why l819 (34 of 36 cipher words) falls under 95%."
    },
    {
     "item": "Number 51 (813.a, 814.12)",

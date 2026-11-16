@@ -211,6 +211,30 @@ Integration check (14 Nov 2026, PR #559):
 - `calib_v023r.txt`, `calib.py`, `calib.txt` — calibration against the contemporary decipherment.
 - `profile.json`. Images are not kept; crops for the site are `docs/fiesque1567_*.jpg`.
 
+## Read share over cipher words only (16 Nov 2026): 11 Oct 1567
+
+README Conventions now measure the read bar over the words written in cipher only. The 11 Oct 1567 letter
+(`read/1567-10_reading.md`) marks its opening clear text in ⟨ ⟩. Its recorded 0.953 had been measured over the whole
+file, and that count took in the header comment and the five view markers `[v006r]` ... `[v008r]`; v2_score scores
+each marker as two holes. Counted over the cipher words of the reading body only, with the markers set aside: 886
+words, 40 holes, **0.957**. The letter stays read. The R23 scan had listed it at 0.947, under the bar by the existing
+measure, because it counted the markers. Bracketed letters (`[con]`, `[e]`, `[a]`) still count as holes. The other
+letters of this target were not part of this recount (batch 3 took only the 11 Oct 1567 entry).
+
+## Read share over cipher words only (16 Nov 2026): 2 Mar 1569
+
+The fixed measuring tool (research/reading_audit/v10_relabel.py, 16 Nov 2026) listed the 2 Mar 1569 letter under the
+bar. `read/1569-03-02_reading.md` is all cipher up to "de trois"; the clear continuation is marked ⟨…⟩ and carries no
+words. The 14 Nov figure (0.951, 15 holes against 294 words) took in the header comment. Recounted by hand over the
+reading body: 186 words read and 10 holes by words, [il], [con]me twice, [a] twice, [… 3] as three words (an estimate,
+from the three decode fragments), [?pourrons] and [?vous]. [∞ L'Empereur] is a code sign given with its value and the
+view marker [v146r] is a line marker; neither is a hole. 0.951 -> **0.949** (186 of 196): **read -> read in part**.
+`clear_markup: ⟨⟩` is declared on the entry, and the tool reproduces 0.949 with it. As for the other letters, the
+reading's resolution of the contributed transcription's known look-alike pairs (y-shape s/p, oe = ss, a/o = e) counts
+as read; no sign-by-sign alignment with `contributed/data/decoded_v146r.txt` was made in this recount. Letters read
+15 -> 14, read in part 7 -> 8; the class (read in part) and fraction_read (0.872, words in the letters that build
+sentences) do not change.
+
 ## Remaining gaps
 - View 6 right (11 Oct 1567) c05-c06, two words, and about ten [?] words on that page - blocker: no-key-material; transcribed and checked sign by sign on native crops 23 Oct; the groups give no word under the key and no decipherment or print of this letter exists
 - View 23 left (15 Nov 1567): the bearer's name (9 signs) and about 17 signs before "court" - blocker: no-key-material; decoded 23 Oct; a name not in the key, and the contemporary decipherment abridges and is cramped there

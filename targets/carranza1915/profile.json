@@ -419,6 +419,12 @@
    "kind": "control",
    "what": "Project check: the number telegrams decrypted again with the contributor's start letters agree with his decryption file on 98.2% of 1,056 letters (a check that the file follows the key); a word-list test over 1,001 letters (the second page of 1.22.1 left out) puts 62.8% in listed words against a mean of 4.2% and a best of 22.5% for 300 random start-letter sets; the swapped coded letters of 1.29.1, 1.39.1 and 1.40.1 agree with his decryption file on all 244 coded letters (VERIFICATION.md). No scan compared.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only: the capitals of reading.md taken as the cipher words (273, single-letter words included), each word aligned with decryption.txt; a word is a hole where the reading brackets a repair or a guess (25) or repairs a letter the decryption gives otherwise without a bracket (15), the keys being rebuilt so the slip rule does not apply. 0.965 (number tokens giving the letter as typed) -> 0.853 (233 of 273 words); by the brackets alone 0.908. The one document goes read -> read in part, and the target with it. cipher_markup CAPS declared; v10_relabel.py gives 0.906 with it, because it cannot see the unbracketed repairs and skips one-letter words.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -427,7 +433,7 @@
    "verdict": "not applicable",
    "notes": "The project's n-gram test needs a Spanish model of the period (lang/) and a controlled key family; a word-list test against 300 random start-letter sets was used instead (VERIFICATION.md); it is not the n-gram validation."
   },
-  "class": "read",
+  "class": "read in part",
   "verification": [
    "key confirms"
   ],
@@ -464,6 +470,11 @@
     "detail": "21 letters give no second occurrence to confirm it"
    },
    {
+    "item": "15 cipher words the reading repairs without a bracket (decryption.txt gives other letters: gralen, ricauf, pertrechoi, dispocion, dollores and others), counted as holes in the cipher-word share",
+    "blocker": "needs-physical-access",
+    "detail": "only the CEHM scans can show whether each is the clerk's slip (a hole under the read bar, the keys being rebuilt) or a typing slip in the transcription (to be corrected there); cehm.org.mx is not reachable from the project"
+   },
+   {
     "item": "a human check of the transcription against the CEHM scans",
     "blocker": "needs-physical-access",
     "detail": "cehm.org.mx is not reachable from the project and the images may not be redistributed"
@@ -477,7 +488,7 @@
   "notes": "Keys, transcription and reading by Prabal Gupta; checked by the project against his files and a word-list control, not against the scans. Priority open: the key family may be in print.",
   "fraction_read": 0.965,
   "fraction_read_method": "measured",
-  "fraction_read_source": "The contributor's count: 1,013 of 1,050 number tokens (96.5%) give the reading's letter as typed; the others are mostly the clerk's slips and overstruck digits repaired by sense and are counted as read here. The guessed name in 1.42.1 and the unsettled run in 1.22.1 are small; the project's own sequence match is 98.2% of 1,056 letters.",
+  "fraction_read_source": "The contributor's count: 1,013 of 1,050 number tokens (96.5%) give the reading's letter as typed; the others are mostly the clerk's slips and overstruck digits repaired by sense and are counted as read here. The guessed name in 1.42.1 and the unsettled run in 1.22.1 are small; the project's own sequence match is 98.2% of 1,056 letters. A share of letters, not of words: counted over the cipher words with every repaired word a hole (16 Nov 2026), the telegrams read at 0.853 (233 of 273 words), under the read bar.",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -499,15 +510,17 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read",
-    "read_share": 0.965,
+    "state": "read in part",
+    "read_share": 0.853,
     "summary": "Orders of Carranza's headquarters at Veracruz, which the contributor places in the war against Villa: to Obregón, the line is being reinforced as far as Apam and the convoy there is to go on; to Pablo González, a general brings a million pesos in small bills; to Nuevo Laredo, ten thousand dollars go to the customs administrator for General Dávila and 200,000 cartridges of two calibres leave New York; to Elías in New York, buy 915 Lee rifles for the next day's steamer; to Arredondo in Washington, ask whether the American government will allow repairs to the steamer Progreso in New York and place 425 dollars with the consul in Havana.",
     "reading_review": {
      "grade": "B",
      "by": "Claude (for the project)",
      "date": "2026-11-08",
      "note": "Read the decryption as Spanish telegram sentences: the coded stretches build coherent orders that join the clear words around them; the repairs of clerk's slips and the name Cosío Rovelo are the contributor's, and 1.32.1 is a weak reading of 21 letters."
-    }
+    },
+    "cipher_markup": "CAPS",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 233 of the 273 cipher words read as sense (0.853), the coded words being those reading.md writes in capitals (clear words in lower case, the signature V. C. and the heads left out). Holes (40): the 25 words the reading brackets (supplied or repaired letters, the guessed name in 1.42.1 as two words, the unsettled run [...] in 1.22.1 as one word, an estimate) and 15 words the reading repairs without a bracket where decryption.txt gives other letters (for example gralen, ricauf, pertrechoi, dispocion, milimetror, tresnta in 1.22.1; dollores in 1.17.1; dispisicion, atencines, nencesita in 1.23.1; the two swapped letters of 'con el' in 1.42.1; the missing 'que' and an 'e' in 1.40.1 and 1.39.1; the sign like ñ in 1.32.1). The keys are rebuilt, so the one-digit-slip rule does not apply and a repaired letter is a hole; spelling variants that still read as words (solisitando, dollars, i for y) are counted read. Before: 0.965, the contributor's share of number tokens giving the letter as typed (slips counted read). By the brackets alone the figure is 0.908 (248 of 273). Under 95%: read in part."
    }
   ]
  }

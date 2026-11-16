@@ -44,6 +44,31 @@ nulls; 67 unread, all in the glossed body: groups with no legible gloss (faint, 
 the glosser outside the null range). The opening: 264 of 264.
 Statistical validation on these pairs: `python docs/_validate.py laigue1649` (result in profile.json).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher.
+
+| document | before | after | state |
+|---|---|---|---|
+| no. 43, ff. 117r-120r (`READING43.md`, the edition) | 0.991 | 0.966 (about 1,022 of 1,058 cipher words) | read, unchanged |
+
+- Measure defect: the edition is a > blockquote, which `v10_relabel` skips, so the recorded 0.991 was measured on the
+  commentary around it. Over the whole edition, clear included, the mémoire is at 0.984.
+- How the cipher was separated: the edition does not mark the clear words. `n43/body_assembled.txt` does (`<angle>`,
+  418 words from f. 117r l. 12 on), and the "Text" section gives the opening's clear words in roman. These runs were
+  found in the edition and masked (`python research/reading_audit/r23_angle_split.py laigue1649`). Twenty short runs
+  (47 words) differ in spelling between the clerk's lines and the edition and could not be placed; they were removed
+  by their word count, so the last digit is approximate.
+- Holes, by words: the supplied letters and words ([le], a[vons données], esblou[ir], encor[e], [b]ien, [c]onvoys,
+  cardin[al]), the […] gaps (one word each, extent unknown) and the 4 words marked (?). The supplied [et] in "disposé
+  [et] fort pressé" stands in the clear text and is not counted.
+- Inferred values (coordinator's decision, 16 Nov 2026: sure words only). The ten context values of the opening never
+  glossed elsewhere (277, 314, 321, 358, 390, 398, 400, 407, 439, 442; Remaining gaps) fall in 13 words, counted as
+  holes: *Legue* (321), five *que* (398), *donne* (277), *ses* (439), *actions* (442), *sujet* (314), *mesmes* (358),
+  *puisse* (400), *paroles* (407); 390 does not occur in `n43/opening_c245.txt`. The first count of the day had them
+  as read (0.978). The values later confirmed by the glosses (279, 354, 364, 443, 445 and the structural ones) count as
+  read.
+
 ## Remaining gaps
 
 - 67 groups without a legible gloss, chiefly four short places (f. 117v l. 18, f. 118v ll. 5–8, f. 119v l. 14,

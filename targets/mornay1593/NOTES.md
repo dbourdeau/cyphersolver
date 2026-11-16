@@ -137,13 +137,38 @@ Context cribs:
 - Overlap: no other target holds vols. 7-12 figures; catalogue 365 (Mornay family, Archives nationales 402AP/13) and
   371 (this target) are separate leads.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher. Neither 1593 entry had a read
+share; `beling/reading_1593.md` has no "## Reading" heading, so a whole-file score (0.994) counts its notes and the
+printed clear text, and gave one figure for both letters.
+
+| document | before | after | state |
+|---|---|---|---|
+| Du Maurier, July 1593, P1-P6 | none (whole file 0.994) | 0.931 (27 of 29 cipher words) | read -> read in part |
+| Serviez, 6 July 1593, S1-S2 | none (whole file 0.994) | 0.857 (6 of 7) | read -> read in part |
+
+- How the cipher was separated: the reading gives each passage in the printed sentence around it, the deciphered words
+  in **bold**; each letter's section was counted on its bold words only.
+- Du Maurier: the two holes are the two words that use sign 44 (x/y), whose value is probable (Remaining gaps):
+  *Tour[ay]ne* (P2) and *chevaux* (P1). The x of *chevaux* is not marked in the reading, and x is the only value of the
+  sign that gives a word there, but the sign's value is probable, not attested, so the word is not a sure word (the
+  coordinator's decision, 16 Nov 2026; the first count of the day had it as read, 0.966). *l'arrest* (P1) counts as read: the figures give *larest*, a spelling of
+  the period, which the reading normalises.
+- Serviez: the hole is *l'entreprinse* (S1). The figures give *lenteprinse*, and no group is missing (step 6, settled
+  27 Oct 2026), so the *r* is a letter supplied where the cipher has nothing; the key is rebuilt, so the one-digit-slip
+  rule does not apply. The reading prints the normalised spelling unmarked. On 7 words this one hole takes the letter
+  under the bar: read in part.
+- Both 1593 letters are now read in part. The class stays read in part (`fraction_read` 0.182 of all groups; the 1595-99 figures are open).
+
 ## Remaining gaps
 
 - Loménie 1595 (95 groups): unread; neither the Rohan 1594 key nor Dudout's folded 1593 key fits (steps 5, 7). Cribs from the editors' note and the king's cipher letter CVI (step 8) give "de Camor" and probably "de Bretagne" - blocker: no-key-material; the original of CVI or of Loménie's letter would give the key
 - Duplessis's own figures, 1595-99 (to his wife and to Cargroy; about 240 groups incl. the name codes 81 63, 153 63, 33): unread, few x10 codes, probably a different table from Loménie's - blocker: no-key-material
 - Rohan 1597 (vol. 7 LXXXII, CXLI; 50 groups): the 1594 key fits; 672, 134, 160 inferred and not seen again; 38 seen once more (1599) and not supported by the pre-registered test; runs R1 and R18 not read - blocker: too-short
 - Rohan 1611-12 (vol. 11; 84 groups) and the unsigned 1612 letter (9 groups): a different table, unread - blocker: no-key-material
-- 1593 sign 44 (x/y, end of P1 and P2) - blocker: too-short; 44 occurs twice, b never (the two possible dropped groups in P1 and S1 were settled by step 6)
+- Serviez S1, *l'entreprinse*: a letter the writer left out of the cipher (the figures give *lenteprinse*: no r, and no group missing, step 6) - blocker: needs-physical-access; every sign that is there is read, and the missing letter cannot be recovered from any file here. The checker offers no blocker type for letters left out; this is the nearest.
+- 1593 sign 44 (x/y, end of P1 and P2; *chevaux* and *Touraine*, two holes in the read share since 16 Nov 2026) - blocker: too-short; 44 occurs twice, b never (the two possible dropped groups in P1 and S1 were settled by step 6)
 
 ## Escalation
 

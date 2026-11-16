@@ -123,6 +123,20 @@ Read share (`v10_relabel.share` on `reading.md`, by letter): f. 28 0.989 before,
 f. 30 0.997 (295 words, 1 hole). `read_share` now carries these in place of the whole-file 0.992. Both letters stay
 read. Nothing on the image settles `ƥ`. f. 28r was not re-read on the image by him or here.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only, and a read code sign is
+read, not a hole. The cipher items are in **bold** in `reading.md` with their readings in brackets, and listed unit by
+unit in `reading.tsv`. The earlier figures were over the whole letters (468 and 295 words), and the v2 score had
+counted the bracketed readings of the codes (`**94,** [le marquis]`) as holes; the four holes of f. 28 and the one of
+f. 30 are doubtful clear words.
+
+- f. 28: 0.991 (whole letter) -> **1.0** (5 cipher words: codes 94, 6, 23, one word each, and the dateline *de
+  Randan*; the null and the struck false start are not words).
+- f. 30: 0.997 (whole letter) -> **1.0** (5 cipher words: code 45 and *Lyon et ce pais*; the two nulls, one of them
+  doubtful, are not words).
+- Class unchanged: **read**. The unit figure (27 cipher units, 26 accounted for as sense) is unchanged.
+
 ## Remaining gaps
 - f. 30 run, sign 6 (ƥ, after the null ∞) - blocker: too-short; key value a gives no sense, taken as a null; one occurrence, nothing to test it against
 

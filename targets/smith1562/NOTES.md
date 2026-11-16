@@ -120,14 +120,51 @@ the image) and CSP Foreign vii 650 gives their setting. fraction_read 0.78 uncha
 
 **23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: fourteen readings said 'Spelling modernised'. Nos. 01, 03, 04, 05, 19, 20 now follow Forbes's print (A Full View ii, 1741, which keeps the originals' spelling), restored word by word from the OCR in forbes2.txt (main checkout) with v6_align.py --ocr (long s, recurrence check, OCR slips refused by hand; a word whose OCR is garbled keeps its earlier form). Nos. 06, 08, 11, 15, 16, 17, 22 follow the figures' spellings recorded in no01-no23_reread_log.md, decipher_*.md and the corrections tsv (kepe, terme, sonnes, hote, bel awaye, hir, ernest, congratulacion and condoleaunce, intervewe, forain realmes, dispach, unserched, lokes, Scotish, speake, Secretarie, feate, somwhat, tyme, necessarie); code signs keep their gloss. No. 18 had nothing to restore. Explicit-hole shares unchanged; states unchanged (no. 15 stays decoded, not read).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. The
+fixed measuring tool (16 Nov 2026) cut the readings' header comments, which quote the calendar and had been scored as
+reading (no. 08 went from 391 words to 114), and listed nos. 08, 11, 13, 16, 17 and 22 under the bar. Every letter
+marked read was recounted by hand:
+
+- How cipher was separated: nos. 01, 03, 04, 05, 19 and 20 mark the clear text Forbes prints in ⟨ ⟩
+  (`clear_markup: ⟨⟩` declared); no. 02 puts the cipher in italics (`cipher_markup: *`); the other readings are all
+  cipher, because Forbes copied only the cipher stretches. No. 21 is the plaintext column of `decipher_E.md` section 3.
+- **Read -> read in part:** no. 08 0.965 -> 0.912 (114 of 125; [?The Earl of] stands for one sign, the key's Earl
+  with a doubt, and counts as one hole; the tool sizes it as three and gives 0.905); no. 11 0.971 -> 0.900 (45 of 50;
+  [?Dieppe], whose sign is Calais in the key, and [?sea], the key's "doubt" sign, among the holes); no. 13 0.981 ->
+  0.889 (8 of 9 by the tool's word split; one [?there]); no. 16 0.984 -> 0.900 (27 of 30); no. 17 0.966 -> 0.904
+  (103 of 114); no. 22 0.988 -> 0.944 (68 of 72); no. 21 0.972 -> 0.935 (58 of 62: treason[?], their trust [?] as two
+  words, the b[?] sign of "as soon as ever"; the 0.972 had been measured over the whole of `decipher_E.md`, five
+  letters and their commentary). All four of no. 21's doubtful words stand in Forbes's print of the letter (ii 238);
+  they are counted as holes because the reading marks them uncertain, and the letter would read in full if the print
+  were taken to settle them.
+- No. 21 and Forbes's print, checked 16 Nov 2026 (coordinator: a word confirmed by an independent text of the same
+  letter is a sure word). Forbes, *A Full View of the Public Transactions in the Reign of Q. Elizabeth*, vol. II
+  (London 1741), p. 238 (archive.org item 10622892bsb, OCR) prints Smith to Cecil, St Denis, 15 Dec 1562, with "take
+  marvelous hid of treason, for in that is all their trust" and "as sone as ever they be able". But that print is not
+  an independent text: Add MS 4136 is Forbes's own deciphering file, the passages were copied into it from the
+  originals and deciphered by him with the key he filed there (R9261), and the volume's prefatory testimonial
+  (Glasgow, 2 Apr 1735) praises his "dexterity in decyphering a great many original letters". His italic words are
+  therefore an earlier decipherment of the same cipher with the same key, not the contemporary decipherment on the
+  SP 70 original, which was not seen. The four words stay holes and no. 21 stays read in part (0.935). The codes for
+  reason and trust are on the key sheet (KEY.md) and count as read.
+- **Stay read:** no. 06 0.994 -> 0.958, no. 18 0.982 -> 0.958, no. 03 0.998 -> 0.990; nos. 01, 02, 04, 05, 19 and 20
+  unchanged at 1.0.
+- Letters read 16 -> 9, read in part 2 -> 9. The class (read in part) and fraction_read (0.78, passages in letters that
+  build sentences) do not change.
+- The tool reproduces every figure except no. 08 (see above) and no. 21, whose reading is a table in a file that holds
+  four other letters; the tool does not measure tables, so no declaration can make it count no. 21.
+
 ## Remaining gaps
 
-Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b03, read). What stays open:
+Nos. 01, 03-06, 08, 09, 11, 13, 15-20 and 22 were closed on 22 Oct 2026 (batch b03, read); nos. 08, 11, 13, 16, 17, 21 and 22 are read in part since the cipher-word recount of 16 Nov 2026. What stays open:
 
 - single unread signs in nos. 08, 11, 15, 16, 17, 18 - blocker: no-key-material; the signs (08: (2), (11), ẓ, ï;
   11: m̄10., the underlined sign in (5); 15: ʒ:, P̄, Γ̈⊓, Ꮚbo, ξ̣; 16: first five signs of (1); 17: ξ, ꝏ̇, the sign
   before Lennox, ωLξ⊓4:, ċ; 18: T̈ ċ) are not on the key sheet R9261 and occur once each, and the clear text of these
   letters (SP 70 originals) is not in print (CSP Foreign gives summaries only)
+- words partly carried or supplied in nos. 08, 11, 13, 16, 17, 21 and 22 ([?some], [?he], [?Dieppe], [?sea], [bear], [?there], [the], Spain['s], [?do], [?sent], treason[?], their trust [?] and others; listed in the 16 Nov 2026 section) - blocker: no-key-material; the signs give only part of the word or a value the key does not confirm, and the clear text of these letters (SP 70 originals) is not in print (CSP Foreign gives summaries only; for no. 21 Forbes prints the text, which fits the words but does not fix the signs)
 - no. 23 (advertisements from France, 31 Jan 1562/3, R9236 f. 140) decoded, not read - blocker: too-short; no clear or
   printed text (not in Forbes, not found in CSP Foreign vi), and its unknown signs (ſ., ξ̤, L8T̈, ξ‡⊓2ξ) occur once
 - nos. 07 and 10 decoded, not read (v3 check 23 Oct 2026: 0.4; 0.345 by run) - blocker: needs-physical-access; the originals in TNA SP 70 carry the contemporary decipherment ('portions in cipher deciphered', CSP Foreign vii 103, 714); Forbes copied the cipher only; State Papers Online not reached
