@@ -36,7 +36,7 @@
   },
   {
    "id": "fr15568-f207-209",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "BnF fr. 15568 ff. 207r-209r (Gallica btv1b9063927n, views 215-217; Source gallica.bnf.fr / BnF)",
    "date": "1584",
    "year": 1584,
@@ -44,7 +44,7 @@
    "route": "unknown (Hautefort side per Tomokiyo) -> Pomponne de Bellièvre",
    "language": "French",
    "pages": 5,
-   "cleartext_in_document": "none",
+   "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
      "none"
@@ -53,16 +53,16 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 318,
     "unit": "symbols",
-    "measured": false,
-    "file": "unknown"
+    "measured": true,
+    "file": "f207v/read_final.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "f. 207r ll. 1-18 one pass (kept in the contributor's working folder)",
+    "source": "ff. 207r, 208r, 208v, 209r: Claude Fable 5.2 (API run for Brice Dudout, 16 Nov 2026), one pass from Gallica crops (f207-209/transcription_fable.txt, sign codes f207-209/GLYPHS-hand2.md); f. 207v ll. 1-11: Claude (Opus 5.5), two passes after the key was frozen (f207v/).",
     "image_quality": "good",
-    "notes": "Another hand with different sign usage; f. 207v kept blind and unread."
+    "notes": "f. 207v was kept blind (never sent to Fable) and measured once. The training transcription is a single LLM pass (≈ 3,000 signs, 67 doubtful readings listed by the model)."
    }
   }
  ],
@@ -96,7 +96,7 @@
   "word_division": "none",
   "doubled_letters": "unknown",
   "sibling_key": "Tomokiyo, cryptiana henryiii.htm, table henryiii_Hautefort.png",
-  "notes": "The hand of fr. 15568 f. 207 uses the signs differently (+ = e, not g)."
+  "notes": "Same cipher as the first hand (about 40 signs keep their value: Fable's sign map f207-209/SIGN-MAP.tsv), with hand-specific usage or corrections: c = l, G = a, th = i, v = qui; + mostly g (some e/m by sense); new signs ^! = g, O2 = m."
  },
  "conditions": {
   "prior_solution": {
@@ -110,12 +110,14 @@
    "published key"
   ],
   "attack": "published key",
-  "human_role": "Brice Dudout directed; transcription, key correction and reading by Claude under a preregistered single measurement.",
+  "human_role": "Brice Dudout directed; transcription, key correction and reading by Claude under a preregistered single measurement. Second hand: key proposed by Claude Fable 5.2 (one API run), frozen and measured by Claude Opus.",
   "tools": [
-   "measure.py (lexical coverage, 200 shuffled-key controls)"
+   "measure.py (lexical coverage, 200 shuffled-key controls)",
+   "measure_main2.py (measure_v4 generalised to x|y values; 200 shuffled-key controls)"
   ],
   "models": [
-   "Claude Opus 5.5"
+   "Claude Opus 5.5",
+   "Claude Fable 5.2"
   ],
   "sessions": 1,
   "first_date": "2026-11-16",
@@ -151,6 +153,18 @@
    "kind": "verification",
    "what": "Last fresh leaf f. 161v: PREREG v4 frozen (∂ = m|s resolved by the lexicon, same rule for controls), but only 287 measurable signs (< 300): not measured. No fresh portion of >= 300 signs is left in this hand.",
    "result": "ruled out"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "what": "Second hand (fr. 15568 ff. 207r, 208r, 208v, 209r): Opus failed (one pass of 18 lines, degenerate annealing); one Claude Fable 5.2 run transcribed the four pages and proposed key_hand2.json (first-hand table plus corrections). f. 207v never sent.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Blind f. 207v ll. 1-11 (318 signs), PREREG-main2.md at the programme's standard bar (>= 0.85 and >= best of 200 shuffled + 0.30), key and metric frozen by SHA-256 before the leaf was cropped: 0.879 vs 0.536. Passed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -170,6 +184,13 @@
     "method": "read with known key",
     "extent": "partial",
     "basis": "key_hand1_v3.json, preregistered measurement MESURE-C-f160v.json (failed the standard bar)"
+   },
+   {
+    "label": "f. 207v ll. 1-11",
+    "records": "BnF fr. 15568 f. 207v",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "key_hand2.json (Claude Fable 5.2), preregistered measurement MESURE-main2-f207v.json (passed the standard bar)"
    }
   ],
   "contribution": [
@@ -197,9 +218,9 @@
     "detail": "The two ∂ forms (m, s) are not reliably separable at Gallica resolution; most probable words on f. 160v are m read for s."
    },
    {
-    "item": "fr. 15568 ff. 207-209",
+    "item": "fr. 15568 ff. 207-209: signs 14, 16, 7o, DD, g, &, *, line-1 nomenclator; + (g/e/m)",
     "blocker": "no-key-material",
-    "detail": "another hand; needs a full transcription and its own key."
+    "detail": "Fable's conjecture * & = roi de Navarre does not fit f. 207v l. 8 (before 'Alexandre'); the crosses may be two or three shapes."
    }
   ],
   "grades": "unknown",
@@ -207,7 +228,7 @@
    "matched control"
   ],
   "provenance": "contributed",
-  "notes": "Draft by Brice Dudout's session (Claude), 16 Nov 2026; reading review is the contributor's own, preliminary. Three blind tests: B 0.519 vs 0.246 (contributor's thresholds), C 0.787 vs 0.505 (fails standard bar), D not measurable (287 signs). Not validated at the standard bar; partial submission by documented exception (DEROGATION.md). Images: Source gallica.bnf.fr / BnF.",
+  "notes": "Draft by Brice Dudout's session (Claude), 16 Nov 2026; reading review is the contributor's own, preliminary. Three blind tests: B 0.519 vs 0.246 (contributor's thresholds), C 0.787 vs 0.505 (fails standard bar), D not measurable (287 signs). Not validated at the standard bar; partial submission by documented exception (DEROGATION.md). Images: Source gallica.bnf.fr / BnF. Second hand: f. 207v passes the standard bar (0.879 vs 0.536, PREREG-main2.md); ff. 207r, 208r-209r are training material (single LLM pass), read only in Fable's unvalidated draft.",
   "texts": [
    {
     "doc": "f158-161",
@@ -254,11 +275,35 @@
     },
     "read_share": 0.88,
     "state": "read in part"
+   },
+   {
+    "doc": "fr15568-f207-209",
+    "label": "fr. 15568 f. 207v ll. 1-11, 1584 (second hand)",
+    "transcription": [
+     "f207v/read1.txt",
+     "f207v/read2.txt"
+    ],
+    "decryption": [
+     "f207v/read_final.txt"
+    ],
+    "summary": "An envoy of 'son Altesse' (Savoy), the sieur Alexandre, spends a day with Lesdiguières and, after promises and adjurations, delivers a charge from the Duke.",
+    "language": "fr",
+    "reading": "f207v/reading_en.md",
+    "translation": "f207v/reading_en.md",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-16",
+     "note": "Preliminary: contributor's own review; not a second reader."
+    },
+    "read_share": 0.85,
+    "state": "read in part"
    }
   ],
   "key_file": [
    "key_hand1.json",
-   "key_hand1_v3.json"
+   "key_hand1_v3.json",
+   "key_hand2.json"
   ],
   "credits": [
    {
@@ -271,7 +316,7 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "Key corrected on f. 158r; blind tests on f. 161r (passed own thresholds) and f. 160v (failed standard bar); readings of ff. 158r, 160v, 161r (Claude for Brice Dudout).",
+    "note": "Key corrected on f. 158r; blind tests on f. 161r (passed own thresholds) and f. 160v (failed standard bar); readings of ff. 158r, 160v, 161r (Claude for Brice Dudout). Second hand: key proposed by Claude Fable 5.2, blind test on f. 207v passed (0.879 vs 0.536).",
     "date": "2026-11-16",
     "source": "this folder"
    }

@@ -9,7 +9,7 @@ programme's standard bar** (f. 160v: 0.787 < 0.85): partial submission by docume
 * Tomokiyo assigns f. 162 and f. 194 to another cipher ("Maygnieulx's Cipher"): the Hautefort letter is ff. 158-161.
 * 2841 runs beyond f. 208: view 215 = f. 207r, view 216 = f. 207v + f. 208r, view 217 = f. 208v + f. 209r, all cipher.
 * ff. 207-209 are in **another hand** with different usage (+ = e there, = g on f. 158; small ʌ for both i and g; nomenclator
-  signs at the head). Not read: Tomokiyo's table does not decode it as it stands and 13 transcribed lines are too few to solve it.
+  signs at the head). Tomokiyo's table does not decode it as it stands; see "Second hand" below.
 
 ## Prior art
 Tomokiyo (cryptiana, *French ciphers during the Reigns of Charles IX and Henry III*, henryiii.htm) reconstructs a partial
@@ -42,4 +42,22 @@ f. 160v ll. 1-15: "il n'avoit poinct de responce du duc de Savoye … ne tasche 
 de retour" (f160/reading_en.md); sure 0.65, sure + probable 0.88. Most probables are ∂ read m where sense wants s.
 
 ## Remaining
-Second reader; a rule for the two ∂ forms (m/s); values of codes 15, 17, 14 and of the signs C2, f2; then the second hand (ff. 207-209).
+Second reader; a rule for the two ∂ forms (m/s); values of codes 15, 17, 14 and of the signs C2, f2; second hand: the cross
+shapes (+ = g/e/m), signs &, *, 14, 16, 7o and the head-of-letter nomenclator, and a checked transcription of ff. 207r, 208r-209r.
+
+## Second hand (fr. 15568 ff. 207-209, catalogue 2841) — blind test passed at the standard bar
+* Opus failed on this hand (18 lines, degenerate annealing). One run of Claude Fable 5.2 (API, 16 Nov 2026) received the Gallica
+  crops of ff. 207r, 208r, 208v, 209r — **never f. 207v** — and returned a sign-by-sign transcription (≈ 3,000 signs,
+  f207-209/transcription_fable.txt), sign codes (f207-209/GLYPHS-hand2.md), a sign map to the first hand (f207-209/SIGN-MAP.tsv)
+  and a key with a confidence per value (key_hand2.json, f207-209/KEY-JUSTIFICATION.tsv).
+* Finding: **same cipher as the first hand**, not a second alphabet: about 40 signs keep their value; this hand (or the first-hand
+  key) differs on c = l, G = a, th = i, v = qui; + is mostly g (some e/m by sense); new signs ^! = g, O2 = m.
+* PREREG-main2.md froze key_hand2.json, the sign codes and measure_main2.py (measure_v4 generalised to x|y values) by SHA-256
+  before f. 207v (chosen by position on 16 Nov, CHOIX-PORTION) was cropped. The leaf was then transcribed in two passes
+  (f207v/read1.txt, read2.txt; 4 doubtful shapes decided on enlarged crops; clear "Je vous diray …" excluded).
+* One measurement, ll. 1-11, 318 signs: **0.879 vs best of 200 shuffled keys 0.536 (mean 0.362) → passes** (≥ 0.85 and ≥ +0.30).
+  Calibration on the training pages: 0.922 vs 0.497.
+* Reading (f207v/reading_en.md): an envoy of "son Altesse" (Savoy), the sieur Alexandre (governor of Villeneuve d'Asti on f. 207r),
+  spends a day with Lesdiguières and, "apres plusieurs promesses et adiurations", delivers a charge from the Duke. Sure 53,
+  probable 9, supplied 3, unread 8 (73 words): sure + probable 0.85 → **read in part**. Fable's reading of the training pages
+  (Calignon, Ségur's journey to Germany, the Infanta of Spain) is unvalidated and not claimed here.
