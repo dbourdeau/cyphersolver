@@ -115,6 +115,15 @@
    ],
    "what": "Measurement frozen by sha256 before running (results/measure.py): the 19 values against the Julian computus (21 March + (19(GN-1)+15) mod 30) with the historical Byzantine offset GN = n + 3: 19 of 19 agree. 200 shuffles of the values over the counts: at most 4 of 19 (mean 1.0); the 18 other offsets: 0 of 19 each. The hypothesis was found by looking at the values, so this confirms on the same 38 numerals; there is no other text to hold out.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Independent check by a project session (claude-fable-5-2), which reached the same identification from the CUDL transcription before seeing PR #690: grouping checked on full-resolution crops by the overlines; independent_check.py computes the table from the AD year and matches 19 of 19 values in pairs.tsv.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -130,7 +139,8 @@
   "verification": [
    "key confirms",
    "historical consistency",
-   "matched control"
+   "matched control",
+   "independent verification"
   ],
   "provenance": "contributed",
   "credits": [
