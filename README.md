@@ -987,6 +987,11 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
 
 ## Conventions
 
+- **Scope** (owner's decision, 16 Nov 2026). The project's focus is classic-modern ciphers, about 1400 to 1950, but that range is
+  not a limit. Coded writing of any date that is cipher-like or adjacent (invented sign alphabets, enigmatic or substitution
+  writing, numeral tables, nomenclators, codes, secret scripts) is accepted as a target, with the same conventions: a profile, a
+  matched control for a negative result, the read bar. Whether something is a cipher at all is recorded, not assumed: a text
+  found to be no cipher is listed under "Read or resolved here, and removed" in `CATALOGUE.md`.
 - **Priorities** (George Lasry's advice, 24 Sept 2026). Time goes first to original solutions, attempts to recover a key
   from the ciphertext alone with the strongest model available; second to solutions that match the ciphertext with a key
   or plaintext found elsewhere (a printed edition, a calendar, a key filed in another collection). Targets whose work
