@@ -38,7 +38,7 @@ Sign list (labels of `transcription.txt`; shapes as seen on the TIFF):
 | M | ل | 6 | loop at the lower left, second loop above, tail to the right |
 | Y | ج | 5 | cup over a stem that ends in a closed loop |
 | G | ت | 4 | slanted stroke into a bowl with a loop at its end, like a 6 |
-| S | د | 4 | hook and wave on the baseline |
+| S | د | 3 | hook and wave on the baseline |
 | R | ر | 3 | triangle, bar, small loop |
 | E | س | 3 | figure 8 (round in line 1, flat-topped in lines 4 and 6) |
 | F | ي | 3 | loop or lozenge on a vertical stem |
@@ -59,9 +59,9 @@ Sign list (labels of `transcription.txt`; shapes as seen on the TIFF):
    first word is وناعسة ("and many a drowsy-eyed woman"), a common opening of love verse.
 2. The group Y B K T (..ان) follows J in line 1, وا in lines 4-5 and وا in line 7, the last time with H K after
    it. الاجفان / واجفان. / واجفانها: Y = ج, B = ف, H = ه, and J is the lam-alif sign the compiler mentions.
-3. Line 1 then scans as a ṭawīl hemistich if the two-sign word is قد: "wa-nāʿisati l-ajfāni qad jaʿala l-hawā".
+3. Line 1 and the first two words of line 2 then scan as a ṭawīl hemistich if the two-sign word is قد: "wa-nāʿisati l-ajfāni qad jaʿala l-hawā".
    جعل gives M = ل, الهوا confirms K M = ال.
-4. ولم انم / ولم تسهد / ونامت (lines 5-6) give Z = م, G = ت, S = د; سهرت and تسهد share E H.
+4. ولم انم / ولم تسهد / ونامت (lines 5-6) give Z = م, G = ت and confirm S = د; سهرت and تسهد share E H.
 5. The rhyme words ا.ضا (line 4) and م.ضا (line 7) with the same middle sign as in سه.ت: ارضا, مرضا, سهرت.
    R = ر, W = ض. The rhyme is -ḍā.
 6. The second hemistich must scan faʿūlun mafāʿīlun faʿūlun mafāʿīlun and end in لها ارضا: لها مهجتي مثوا وخدي
