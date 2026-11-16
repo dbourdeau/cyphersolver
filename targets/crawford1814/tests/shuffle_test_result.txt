@@ -1,0 +1,16 @@
+# Test written before the run by the first reader (14-15 Nov 2026), table and transcription frozen by sha256 first.
+# Statistic: mean log10 probability per letter of the decoded string under an add-one letter-trigram model trained on
+# Manning, Diplomatic Correspondence of the United States concerning the Independence of the Latin-American Nations,
+# vol. 2 (Internet Archive text; not in this repository). Control: 200 tables made by permuting WE025's elements over its
+# numbers (seed 1814+k). Pass mark fixed before the run: beat every shuffled table and lie at least 5 sd above their mean.
+# Marks were ignored and the first alternative of a doubtful digit used.
+letter	groups	with_value	trigram_real	shuffled_mean	shuffled_sd	shuffled_max	z	word_cover_real	word_cover_shuffled_max	result
+Crawford 5 Nov 1814	292	292	-0.909	-1.191	0.049	-1.067	5.7	0.980	0.939	PASS
+# The first scored run had a parsing bug (the table element of 1140 is a double quote, and the csv reader's quote handling
+# swallowed 452 rows, so about half the groups had no value: coverage 0.514, z 2.0). The bug was fixed (quoting off) with
+# table, transcription and plan unchanged, and the test was run once more. Both outputs were kept.
+# Re-run by the second reader on 15 Nov 2026 from copies of the frozen inputs (same sha256), with only the project-root
+# path in the script changed: the numbers above reproduce exactly. A complete table of 1,592 rows read with the first
+# run's settings gives 1,140 rows: the first run did not use the table it was meant to, so rerunning it was a repair,
+# not a second try at the result.
+# docs/_validate.py (this repository's own test on validation.tsv) is recorded in profile.json outcome.validation.

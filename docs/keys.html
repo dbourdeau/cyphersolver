@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Key Web — which key opened which letter</title>
 <meta name="description" content="Every cipher key behind this site's decipherments: keys of the period, scholars' tables and keys rebuilt here, drawn as a network linking each key to the letters it was used on, and to the letters&hellip;" data-full="Every cipher key behind this site's decipherments: keys of the period, scholars' tables and keys rebuilt here, drawn as a network linking each key to the letters it was used on, and to the letters it was tried on and failed.">
-<link rel="stylesheet" href="style.css?v=3c751bab">
-<link rel="stylesheet" href="pg-keys.css?v=f42af7da">
+<link rel="stylesheet" href="style.css?v=ccff5c9e">
+<link rel="stylesheet" href="pg-keys.css?v=bd88a700">
 <meta name="date" content="2026-09-21">
-<meta name="last-modified" content="2026-11-05">
+<meta name="last-modified" content="2026-11-15">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -32,7 +32,7 @@
     <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
       <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
     <details class="menu"><summary class="active">Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
-      <div class="panel ex"><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="keys.html" aria-current="page"><b>Key web</b><span class="d">Which key opened which letter</span></a></li><li><a href="secret.html"><b>Secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li></ul><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+      <div class="panel ex"><div class="grp"><h4>Start here</h4><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li></ul></div><div class="grp"><h4>Maps and patterns</h4><ul><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="key-evolution.html"><b>How keys changed</b><span class="d">Kinds of key, their signs and their size, 1400 to 1950</span></a></li><li><a href="keys.html" aria-current="page"><b>Key web</b><span class="d">Which key opened which letter</span></a></li></ul></div><div class="grp"><h4>Try and take part</h4><ul><li><a href="secret.html"><b>Write a secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li><li><a href="contribute.html"><b>Contribute</b><span class="d">Send a solution, a new cipher or a check of a reading</span></a></li></ul></div><div class="grp"><h4>Reference</h4><ul><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li></ul></div><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
     <span class="navlab">Help</span>
     <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
     <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
@@ -63,7 +63,7 @@
   on, and where it failed.</p>
   <div class="kw-stats" id="kwstats"></div>
   <div class="jump"><a href="#web">The web</a><a href="#tried">Tried, did not fit</a><a href="#about">About the data</a></div>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-11-05">5 November 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-21">21 September 2026</time> &middot; updated <time datetime="2026-11-15">15 November 2026</time></p>
 </section>
 
 <main>
@@ -71,6 +71,7 @@
   <div class="kw-main">
     <div class="kw-bar" role="search">
       <input type="search" id="kwq" placeholder="Search a key, a scholar, a letter, an R-number&hellip;" aria-label="Search keys" autocomplete="off">
+      <button type="button" class="kw-chip kw-ftoggle" id="kwftoggle" aria-expanded="false">Filters</button>
       <div class="kw-chips" id="kwband" aria-label="Who made or found the key"></div>
       <div class="kw-chips" id="kwedge" aria-label="Kind of link"></div>
       <div class="kw-chips" id="kwsrc" aria-label="Who holds or published the key"></div>
@@ -80,7 +81,8 @@
     <div class="kw-start" id="kwstart"><span class="kw-lab">Start with</span></div>
 
     <div class="kw" id="kw">
-      <div class="kw-tools"><button type="button" class="kw-chip" id="kwfit" aria-label="Fit the whole web">Fit</button><button type="button" class="kw-chip" id="kwlabels" aria-pressed="false">All labels</button></div>
+      <div class="kw-tools"><button type="button" class="kw-chip" id="kwzout" aria-label="Zoom out">&minus;</button><button type="button" class="kw-chip" id="kwzin" aria-label="Zoom in">+</button><button type="button" class="kw-chip" id="kwfit" aria-label="Fit the whole web">Fit</button><button type="button" class="kw-chip" id="kwlabels" aria-pressed="false">All labels</button><button type="button" class="kw-chip" id="kwfull" aria-pressed="false" aria-label="Show the web on the whole screen">Expand</button></div>
+      <div class="kw-hint" id="kwhint" aria-hidden="true">Two fingers move the web. One finger works after <b>Expand</b>.</div>
       <div class="kw-legend" aria-hidden="true"><b>Keys</b><span><i class="kd b-period"></i>key of the period</span><span><i class="kd b-scholar"></i>scholar's key</span><span><i class="kd b-here"></i>rebuilt here</span>
         <b>Letters</b><span><i class="ld solved"></i>deciphered</span><span><i class="ld partial"></i>partial</span><span><i class="ld found"></i>not applicable</span><span><i class="ld stuck"></i>not solved</span>
         <b>Links</b><span><i class="ll rb"></i>rebuilt from</span><span><i class="ll"></i>used unchanged</span><span><i class="ll ad"></i>adapted or partial</span><span><i class="ll tr"></i>tried, did not fit</span></div>
@@ -89,8 +91,9 @@
       <p class="kw-striphead"><b>One key, one letter.</b> <span id="kwstripn"></span> keys used on a single letter that no other key touches. Each mark is one pair at its date: the key on the left, the letter on the right.</p>
       <div class="kw-stripbox" id="kwstripbox"><div class="kw-tip" id="kwtip" role="status" hidden></div></div>
     </div>
-    <p class="kw-help">Letters sit roughly by date, left to right. Scroll or pinch to zoom, drag to pan or to move a node. Hover a key to trace
-    it; click to pin it and open its card. Turn on <em>tried, did not fit</em> to add the keys that were tested and rejected: the web
+    <p class="kw-help">Letters sit roughly by date, <span class="kw-dir">left to right</span>. <span class="kw-mouse">Scroll or pinch to zoom, drag to pan or to move a node. Hover a key to trace
+    it; click to pin it and open its card.</span><span class="kw-touch">Tap a key or a letter to open its card and trace its links. Pinch to zoom and
+    move the web with two fingers, or press <em>Expand</em> to give it the whole screen and move it with one.</span> Turn on <em>tried, did not fit</em> to add the keys that were tested and rejected: the web
     redraws, and any key and letter joined by a failed test move up from the strip.</p>
 
     <h2 id="tried">Keys tried and ruled out</h2>
@@ -99,7 +102,7 @@
     <ul class="tried-list" id="triedlist"></ul>
   </div>
 
-  <aside class="kw-side" id="kwside" aria-live="polite" aria-label="Key card"><button class="x" type="button" aria-label="Close the key card">&times;</button>
+  <aside class="kw-side" id="kwside" aria-live="polite" aria-label="Key card"><button class="grab" type="button" aria-label="Make the card taller or shorter"></button><button class="x" type="button" aria-label="Close the key card">&times;</button>
     <div id="kwcard"><p class="k">The key web</p><h3>Pick a key</h3>
     <p class="hint">Click a key to see where it came from, the letters it was used on and those it failed on; click a letter to see
     which keys were used on it. The biggest keys did the most work: made for one letter, they went on to open the rest of its series.
@@ -123,7 +126,7 @@ nothing else sit in the date strip under the web. The file is
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="keyweb.js?v=20261105a" defer></script>
-<script src="site.js?v=3c751bab"></script>
+<script src="keyweb.js?v=20261115a" defer></script>
+<script src="site.js?v=ccff5c9e"></script>
 </body>
 </html>

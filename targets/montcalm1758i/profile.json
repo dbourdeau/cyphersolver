@@ -264,7 +264,9 @@
       "result": "ruled out"
     },
     {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Integration check of PR #583 (round 13). The four sha256 values of key/FREEZE.txt match the files. decode_letters.py re-run: all four similarities and shuffle figures identical (0.938, 0.921, 0.939, 0.935). An own decoder from the frozen table gives the same four decode files. Strict word count, table alone, a word of Casgrain's text counted only when every letter of it comes from cells marked clear: I1 82 of 122 (67.2%), I2 23 of 31 (74.2%), I3 169 of 233 (72.5%), I4 265 of 371 (71.4%); with doubtful cells also counted 79.5, 83.9, 82.0 and 82.7%. Table against the LAC image e001295272 (same sha256 as recorded), 80 cells of blocks 301-394 and 401-494 read at five times enlargement: 71 agree; 8 of the 9 differences are on cells the table marks doubtful (one, 474 t, is the contributor's own post-freeze correction), 1 on a clear cell (492). Outcome method changed from 'read after matching with key from external sources' to 'read from existing decipherment': the text is Casgrain's printed clear text.", "result": "worked"},
-    {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1292 tokens, 273 types, fr-1750-nospace order 4: reading -2.13 per letter; random keys -3.164 (z 11.4); key annealed onto shuffled ciphertext best -2.198 (mean -2.212, z 8.4); annealer on the real text -2.167. Verdict: pass.", "result": "worked"}
+    {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1292 tokens, 273 types, fr-1750-nospace order 4: reading -2.13 per letter; random keys -3.164 (z 11.4); key annealed onto shuffled ciphertext best -2.198 (mean -2.212, z 8.4); annealer on the real text -2.167. Verdict: pass.", "result": "worked"},
+    {"date": "2026-11-14", "kind": "verification", "technique": ["key matching", "beam/DP decoding", "contextual inference"], "what": "Follow-up to #583: the 69 cells of sheet e001295272 that Casgrain's four letters use and that are doubtful, off the photograph (1-20), or shown misread were settled from Casgrain's clear text aligned with his figures (settle_from_casgrain.py; every occurrence in results/casgrain_implied_values.tsv) and looked at again on the LAC image. Separate table key/table_settled_from_casgrain.tsv; frozen table unchanged. Status: 34 confirmed on image, 23 image permits (including clear cells 564 er->cr and 688 eu->cu), 4 image contradicts (151, 355, 437, 591), 8 off the photograph. Daniel's whole-word measure (clear cells only), frozen -> after settling (confirmed and permits only): I1 67.2 -> 91.8%, I2 74.2 -> 90.3%, I3 72.5 -> 91.4%, I4 71.4 -> 90.0%; letter similarity 0.938/0.921/0.939/0.935 -> 0.973/0.937/0.974/0.961. Circular: values are read from the same letters they are measured on.", "result": "worked"},
+    {"date": "2026-11-14", "kind": "access", "technique": ["other"], "what": "Clear text of Montcalm to the minister, Carillon, 1 Sep 1758 (ANOM COL F3 15 f.194, 'Lettre chiffree') transcribed from LAC's handwritten transcript, Heritage reel C-10528 frames 1188-1189 (186 words). The transcript has no figures; the enciphered original at ANOM is not digitised (ANOM online search and FranceArchives checked again). Recorded in NOTES as known plaintext of a letter whose cipher is unseen; nothing encoded.", "result": "partial"}
    ],
   "outcome": {"validation": {"date": "2026-11-13", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 1292, "types": 273, "tokens_per_type": 4.73, "score": -2.13, "nulls": {"random keys": {"n": 200, "mean": -3.164, "sd": 0.091, "max": -2.929, "z": 11.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.212, "sd": 0.01, "max": -2.198, "z": 8.4, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.13; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
     "class": "already solved",
@@ -287,7 +289,7 @@
         "who": "ajbeling",
         "role": "solution",
         "date": "2026-11-13",
-        "note": "Andrew Beling, with AI agents: identification of sheet e001295272 as the Marine's 1758 table for Montcalm (code I), its transcription in two blind passes and the test against Casgrain's letters; no new reading. Not rechecked by a second agent."
+        "note": "Andrew Beling, with AI agents: identification of sheet e001295272 as the Marine's 1758 table for Montcalm (code I), its transcription in two blind passes and the test against Casgrain's letters; no new reading. Settled cells of 14 Nov: a second AI agent re-ran the figures and compared ten cells with the image on 15 Nov 2026 (five agree, five cannot be told apart at 775 px, none disagrees)."
       },
       {
         "who": "contemporary",
@@ -320,10 +322,10 @@
         "read_share": 1.0,
         "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
         "reading_review": {
-          "grade": "B",
-          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-          "date": "2026-11-14",
-          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+          "grade": "A",
+          "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+          "date": "2026-11-15",
+          "note": "Casgrain's printed decipherment (LIV) read as French sentences against the English: complete, coherent, translation faithful. Compared with the page image (archive.org collectiondesman03lv, p. 122): the first sentence 'Les nouvelles d'Angleterre ... sur ce fâcheux événement' and its figures 215 297 457 ... agree with I1_casgrain_fr.txt and I1_groups.txt. The reading is the period decipherment as printed; the frozen table alone reproduces 67-74% of it."
         }
       },
       {
@@ -340,10 +342,10 @@
         "read_share": 1.0,
         "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
         "reading_review": {
-          "grade": "B",
-          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-          "date": "2026-11-14",
-          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+          "grade": "A",
+          "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+          "date": "2026-11-15",
+          "note": "Casgrain's printed decipherment (LV, end) read against the English: one sentence, coherent, translation faithful. Compared with the page image (p. 125): 'à Sa Majesté de votre retour, au sujet duquel je vous écris séparément' agrees. The reading is the period decipherment as printed; the frozen table alone reproduces 67-74% of it."
         }
       },
       {
@@ -360,10 +362,10 @@
         "read_share": 1.0,
         "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
         "reading_review": {
-          "grade": "B",
-          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-          "date": "2026-11-14",
-          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+          "grade": "A",
+          "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+          "date": "2026-11-15",
+          "note": "Casgrain's printed decipherment (LVI) read as French sentences against the English: complete, coherent, translation faithful. Compared with the page image (p. 125): 'C'est avec une vraie peine ... moins connus' and its figures 479 474 671 ... agree. The reading is the period decipherment as printed; the frozen table alone reproduces 67-74% of it."
         }
       },
       {
@@ -380,10 +382,10 @@
         "read_share": 1.0,
         "note": "The reading is the period decipherment as Casgrain printed it, complete for every paragraph. The decryption file is our decode with the frozen table alone, kept to show how far the table reproduces it (results/letters_test.json); it is not the reading.",
         "reading_review": {
-          "grade": "B",
-          "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-          "date": "2026-11-14",
-          "note": "Casgrain's French read whole against our English; the table-only decode compared with it by script (92-94% similarity, no shuffled table above 35%). No new reading: the clerks and Casgrain read these letters first."
+          "grade": "A",
+          "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+          "date": "2026-11-15",
+          "note": "Casgrain's printed decipherment (LXXII) read as French sentences against the English: complete, coherent, translation faithful. Compared with the page image (p. 162): 'J'ai écrit une lettre particulière ... zélé que vous' agrees. The reading is the period decipherment as printed; the frozen table alone reproduces 67-74% of it."
         }
       }
     ],

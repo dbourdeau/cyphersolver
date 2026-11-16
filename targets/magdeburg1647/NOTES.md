@@ -117,13 +117,14 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 - Clear drafts for f.102, f.104 and f.204 - blocker: not-attempted; Nr. 529 searched only in the frames listed in `nr529/README.md`; Nr. 543 (Krull's draft reports), 537, 538, 540, 546 not checked.
 - Frame 278 of Nr. 530 ("Signatura catalogi sive clavis": a sign table and a long cipher passage with interlinear glosses) and frames 5, 6 - blocker: not-attempted; 23 gloss pairs of frame 278 now agree with the worksheet key (146/153 letters, PR #578, not blind), but its cipher passage is not read as a text and its signs are not used for the name signs; frames 5, 6 not compared.
 - The 1645 annexes Nos. 31 and 32 (f.210-212): delta lines, the Elbe clause, zeta, the 27/72 year, the secretary's surname - blocker: not-attempted; 16 items in `nr540/f210_gaps.tsv`, the clear copies are in Nr. 540 Bd. 1.
-- Nos. 20, 21, 22, 23 gamma (frames 250-259) and Nos. 3, 20 (frames 161-162): holes and marked repairs in most lines, strict 54-57% on the three with a word ledger - blocker: not-attempted; the hand again, and clear copies in Nr. 540 or drafts in Nr. 529 not yet searched for them. No. 29 (frames 244-245) and the cipher in the letters of frames 15-28, 186, 203, 252, 281, 283 are not filed.
+- Nos. 20, 21, 22, 23 gamma (frames 250-259) and Nos. 3, 20 (frames 161-162): holes and marked repairs in most lines, strict 54-57% on the three with a word ledger - blocker: not-attempted; the hand again, and clear copies in Nr. 540 or drafts in Nr. 529 not yet searched for them. No. 29 (frames 244-245) and the cipher in the letters of frames 186, 203, 252, 281 are filed as blind decodes of 16 Nov 2026 (below); frames 15-28 and 283 are not filed.
 - Name signs (Catalogus, frames 3 and 278) left as holes ('|') - blocker: not-attempted.
 - f.101 is short (35 cipher words, one reader) - blocker: too-short for its own control; its clear draft is in Nr. 529 frame 532.
+- Blind sibling decodes of 16 Nov 2026 (`blind16/`): No. 29 (77.4%), frame 281 (87.8%), frame 203 (70.9%) and frame 186 (66.1%, 62 letters) pass the strict letter judge and the shuffle control but read as sentences only in part (`_check_reading`: not readable), so all four are 'decoded, not read'; frame 252 fails at 53.8% (recorded only) - blocker: not-attempted; the hand (recurring o/c, f/n, q/d, t/l, k/o slips, `blind16/JUDGE_NOTES.txt`) and 147 drawn name signs in No. 29; a second blind transcription, the Catalogus name signs and a search of Nr. 529 / Nr. 540 for clear copies are workable.
 
 ## Escalation
 
-- [x] siblings: the five bare slips and the two training slips of Nr. 530 found and decoded; frame 278: 23 gloss pairs checked against the key (PR #578), passage unread; eight more annexes (frames 161-162, 240-243, 250-259) decoded by Andrew Beling, 14 Nov 2026 (open)
+- [x] siblings: the five bare slips and the two training slips of Nr. 530 found and decoded; frame 278: 23 gloss pairs checked against the key (PR #578), passage unread; eight more annexes (frames 161-162, 240-243, 250-259) decoded by Andrew Beling, 14 Nov 2026; No. 29 and the letters of frames 186, 203, 252, 281 transcribed blind and decoded 16 Nov 2026 (`blind16/`), crediting Beling's hold (open)
 - [x] clear-pages: Nr. 529 clear drafts found for f.5, f.6, f.7 and f.101 (frames 875, 881-882, 532); not for f.102, f.104, f.204 in the frames searched; Nr. 540 Bd. 1 holds the clear copies of the 1645 annexes Nos. 31 and 32 (frames 633-634, 648-650; PR #578), not yet searched for the other annexes (open)
 - [x] known-keys: the envoys' own key (frame 168, AMPHICTYONES) equals KEY_v2 in all 12 pairs; decoding the slips with it gives the same letters
 - [ ] print: Acta Pacis Westphalicae and older Magdeburg histories not searched page by page
@@ -422,4 +423,45 @@ Checked by an AI agent at integration; the contributor's section above is left a
 - **Credit.** Andrew Beling, with AI agents (`ajbeling` in `outcome.credits`: transcription, identification of the
   Nr. 540 copies). The key and the first readings are Malcolm McBratney's. Two parts overlap work Malcolm McBratney has
   announced (frames 226-259 against the Nr. 529 diary; frame 278); both contributors' files stay side by side.
+
+## Addition of 16 Nov 2026 (Malcolm McBratney, with Claude): blind sibling decodes, crediting Beling's hold
+
+**Credit first.** Andrew Beling's addition (PR #578, "Not added (held)" above) held No. 29 (frames 244-245) and the
+cipher in the letters of frames 15-28, 186, 203, 252, 281 and 283. These files are filed with that hold credited: the
+texts were identified in his addition, and his notes (77 of 118 No. 29 records low-confidence; the letters fragmentary)
+are the earlier look at them. Nothing below uses his transcriptions or readings; they were not opened for this work.
+
+**What was done** (`blind16/`, one folder per text, everything frozen before the decode):
+- Key frozen first: `blind16/FREEZE/key_upstream.tsv` = upstream `key.tsv` of commit 89e25ef, sha256 c734821e... (`blind16/FREEZE.txt`).
+- Blind transcription: one AI reader (Claude) per text, given only the image crops (`blind16/IMAGES_SHA256.txt`,
+  `blind16/FETCH_LOG.txt`; LASA viewer, no bot check) and a shape-label sheet (`<doc>/blind_packet/`): no key, no earlier
+  transcription, no web. Each `BLIND.tsv` hashed before the decode (`<doc>/FREEZE_blind.txt`; the path in that file is
+  where it was made).
+- One mechanical decode (`blind16/decode_once.py`, upstream `decode.py` dec_word unchanged): `<doc>/decode_once.txt`,
+  `<doc>/DECODE_RUN.txt`. Copies under `transcriptions/*_blind16.tsv` and `decryptions/*_blind16.txt`.
+- A strict one-pass judge per letter unit, no edits (`blind16/JUDGE_NOTES.txt`, `<doc>/judge.tsv`).
+- Shuffled-key control (`blind16/shuffle.py`, `blind16/shuffle_out.txt`): key values permuted among the cipher signs,
+  5,000 per seed, scored with `lang` model de-1640s (mean log-prob per character). Pass bar fixed before the run:
+  fewer than 5 of 5,000 at or above the real score at both seeds.
+- Readings: the judge's segmented text unchanged, holes marked (`blind16/build_reading.py`, `readings/*_blind16.md`);
+  English by Claude, unchecked (`translations/*_blind16.md`).
+
+| text | cipher words / letters | strict judge (letters) | shuffle, seed 20261112 / 7: >= real of 5,000 (real; max) | _check_reading | filed as |
+|---|---|---|---|---|---|
+| No. 29, frames 244-245 | 1,065 / 6,611 | 5233/6765 = 77.4% | 0 / 0 (-3.4806; -6.7911, -6.7034) | 0.094 not a reading | decoded, not read |
+| slip, frame 281 | 60 / 438 | 388/442 = 87.8% | 0 / 0 (-3.0187; -6.8349, -6.6625) | 0.391 not a reading | decoded, not read |
+| letter, frame 203 | 30 / 186 | 134/189 = 70.9% | 0 / 0 (-4.2821; -6.1099, -6.1810) | 0.455 marginal | decoded, not read |
+| letter, frame 186 | 11 / 62 | 41/62 = 66.1% (short) | 0 / 0 (-4.0527; -6.2476, -6.2979) | 0.533 marginal | decoded, not read |
+| letter, frame 252 | 14 / 92 | 57/106 = 53.8% | 0 / 0 (-5.2187; -6.5033, -6.7975) | not run | failed our 65% line: recorded only, no reading |
+
+Counts of words and letters are from `DECODE_RUN.txt` (script-written). The judge unit is a cipher letter (plus [S],
+[blot] and '?' units as N), not a cipher word, so these shares are not comparable with `fraction_read` (cipher words)
+and do not enter it. Missing letters are not penalised (the one lenient rule, listed in the judge notes).
+
+**Class.** With all entries "decoded, not read" (the four above and every earlier one), `outcome.class` is set to
+"not read", as `docs/_texts.py` reading_problems requires; the method stays "read with known key".
+
+**Not claimed.** No text here is read: the strict letter shares pass our own 65% line for four texts, but none builds
+sentences with few holes. No content is claimed first: Nr. 529 and Nr. 540 were not searched for clear copies of these
+texts, and the contemporaries had the key.
 

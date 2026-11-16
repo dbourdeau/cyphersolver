@@ -32,7 +32,7 @@ Follow-up done on 13 November 2026 by one of our AI agents (not yet rechecked by
 
 - The period French decipherment is written between the lines of the archival copy. The anonymous decipherers are credited; their identity and the date of the decipherment are not asserted beyond the source.
 - *Documents relative to the Colonial History of the State of New-York* (NYCD), X (1858), pp. 669–671 prints an English translation of the covering letter and omits the cipher paragraphs (“a paragraph in cipher, which is omitted”); the attached cipher sheet is also absent from that edition (`support/NYCD_omission_check.md`). We say only that this edition omits them.
-- Phrase searches of the OCR of Casgrain’s Lévis collection (I–XII), Chapais 1911 and the available years of the *Rapport de l’archiviste de la province de Québec* (RAPQ, 1920–1942) found none of these passages. OCR negatives do not establish a first publication, and the 1924–1927 RAPQ volumes were not available to us.
+- Phrase searches of the OCR of Casgrain’s Lévis collection (I–XII), Chapais 1911 and the available years of the *Rapport de l’archiviste de la province de Québec* (RAPQ, 1920–1942) found none of these passages. OCR negatives do not establish a first publication. The 1924–1927 RAPQ volumes were searched on 14 November 2026 (see the follow-up below).
 - Casgrain’s edition (vol. III, 1890) also prints cipher/plain pairs of two other Montcalm codes (B and I); those tables are different systems and are not used for W.
 - *Collection de manuscrits … relatifs à la Nouvelle-France* (CMNF), IV (1885), p. 153 already prints the memoir’s French prose. Its residual groups 583 878 110 103 83 give «peuples» with the 1757 values, the last word of its preceding clear sentence; that identifies a word, it does not reveal a new passage. Its 31-group footnote remains only partly resolved. [CMNF scan](https://archive.org/details/collectiondemanu04blan).
 
@@ -41,18 +41,34 @@ Follow-up done on 13 November 2026 by one of our AI agents (not yet rechecked by
 ## Remaining gaps
 
 - Unsettled 1757 numerals, p. 506 6?0 (670 or 690, read “rt”) and p. 518 2?5 (read “em”) - blocker: needs-physical-access; the LAC copy is ambiguous and the readers disagree, so both are withheld from the key; the French originals at Vincennes would settle them.
-- Conflicting 1757 values, chiefly 63 written over “s” where the usual reading is “vivres” - blocker: open-codes; copy slip or enciphering slip cannot be told apart without the original key or the original letters.
+- Conflicting 1757 values, chiefly 63 written over “s” where the usual reading is “vivres”: the sibling letters now show 63 = vivres and 83 = s throughout 1758, so this is a slip; whether the encipherer's or the copyist's - blocker: needs-physical-access (the original at Vincennes).
 
-Outside the declared units, and not counted as gaps in them: the clear text of the covering letter, the full Lévis 1759 sequence, and a fuller prior-publication check (the RAPQ volumes for 1924–1927 were not available to us).
+Outside the declared units, and not counted as gaps in them: the clear text of the covering letter, the full Lévis 1759 sequence, and a fuller prior-publication check (RAPQ 1924–1927 searched on 14 November 2026; other printed collections not exhausted).
 
 ## Escalation
 
 - [x] clear-pages: the period interlinear decipherments of both declared units located on LAC C-12578 and transcribed.
-- [ ] siblings: 1756–1759 supporting pages sampled (`support/`); the complete Lévis 1759 sequence and the French originals not yet inspected.
-- [ ] known-keys: Casgrain’s codes B and I and the Vaudreuil table e001295274 compared, none is W; sheet e001295276 tried on 13 November 2026 and found to be a second copy of the Vaudreuil table, not W; no original W key located.
-- [ ] print: NYCD X, Casgrain I–XII, CMNF IV, Chapais and RAPQ 1920–1942 screened; RAPQ 1924–1927 not checked; no claim that the text is unpublished everywhere.
+- [x] siblings (14 Nov 2026): the War ministry copies on reels C-12577 to C-12579 (1756-1759) searched again in full by
+  their OCR (every frame; figure-line scan loosened to three groups a line, and a search for "chiffr", "déchiff" and
+  "sic pro"), hits checked by eye. No code W letter beyond the four already in `support/` (1756, May 1758, Sept 1758;
+  Lévis 1759 is on the F3 reel) and no bare W passage was found. The four were aligned with their period decipherment
+  using the 1757 index: same value on 502 of 526 indexed groups (9 May 1758), 19 of 20 (1756) and 36 of 37 (September
+  1758), but only 65 of 93 on Lévis's copy of 10 Nov 1759 p. 307, whose decipherment drifts against the figure lines;
+  52 groups not in the 1757 index get values in a separate table, `key/W_sibling_values.tsv`.
+  Two new pieces of context: d'Argenson's minute of March 1756 sending Montcalm "un chiffre", and Montcalm's letter
+  of 12 Apr 1759 whose copy gives the cipher passages in clear between brackets (no figures). See "Follow-up of
+  14 November 2026".
+- [x] known-keys (14 Nov 2026): W (1757 index plus sibling values) compared with every French code table of 1755-1760
+  held in the repository and with sheets e001295272 and e001295274: no table agrees above chance (largest: 1 exact
+  agreement, against shuffled maxima of 2-3). No original W key located.
+- [x] print (14 Nov 2026): RAPQ 1924-25, 1925-26 and 1926-27 found on the Internet Archive and searched, with Casgrain's
+  Lévis collection I-XII and his *Montcalm et Lévis* (1891), whitespace-normalised: none prints the 4 Nov 1757 cipher
+  passages or the defence-of-Québec sheet. No claim that the text is unpublished everywhere.
 - [x] key-rebuild: 318 clearly numbered values indexed from the period plaintext; conflicting values and uncertain digits withheld or qualified.
-- [ ] retry: the doubtful digits retried with a second AI reader on fresh crops; a comparison with the French originals and a retry of every source slip not done.
+- [x] retry (14 Nov 2026): both unsettled numerals looked at again on the full-size frames; neither is settled, and no
+  sibling uses 670, 690 or an "em" group. The sibling letters settle the 63 conflict (63 = vivres five times in 1758,
+  s = 83 eight times), so the 63 for "s" on p. 517 is a slip, not a homophone. A comparison with the French originals
+  was not possible (not online).
 
 The LAC copies supplied adjacent plaintext, so this was source alignment, not ciphertext-only cryptanalysis. Further key recovery should use the untranscribed Lévis cipher pages and the French originals.
 
@@ -80,3 +96,94 @@ Checked when pull request #574 was integrated (round 13).
 - Outcome method set to "read from existing decipherment": the clerks' decipherment between the lines is complete for both declared units, and the work here is transcribing the figures and checking the decipherment against them. The 318-group index is a by-product of the same pairs (`outcome.parts` keeps "key recovered based on adjacent plaintext" for it). No held-out test exists, and none is claimed.
 - Not the Vaudreuil table: 0 of 242 numbers shared with `targets/vaudreuil1760/key/key274.json` agree (the contributor counted 243). Not code I either: `targets/montcalm1758i/results/compare_codeW.tsv`, 0 agreements. One key, one entry holds: W, I and the Vaudreuil table are three codes.
 - Not rechecked here: the e001295276 comparison (its files are not in the folder), the OCR searches of the printed collections, the `support/` transcriptions.
+
+## Follow-up of 14 November 2026 (Daniel's four open Escalation steps)
+
+Done by our own AI agent. On 15 Nov 2026 a second AI agent of ours, not shown the conclusions, re-ran the figures
+(identical) and compared ten sibling values with the reel images (all ten agree, two with the flags already recorded).
+Scripts: `siblings_align.py`, `known_keys_compare.py`.
+
+### Siblings
+
+The earlier search (12 Nov) had run Apple Vision OCR on every frame of C-12576 to C-12580 and C-10523 and scanned for
+lines of figures. That OCR was searched again: figure lines with three or more 2-3-digit groups (instead of four), two
+such lines a frame, and the words "chiffr", "déchiff", "sic pro". All hits on C-12577 to C-12579 were looked at:
+
+| Frame | Date, piece | Groups | Decipherment between the lines | Code |
+|---|---|---|---|---|
+| C-12577 0934 | Montcalm to d'Argenson, Montréal, 3 Nov 1756 (duplicata), cipher postscript, copy p. 779 | 27 | yes, group by group under the figures | W |
+| C-12577 0869-0870 | [Doreil] to [d'Argenson], 1756, copy pp. 715-716 | (transcribed in `support/`) | yes | D, not W |
+| C-12578 0525-0538 | Montcalm to Paulmy, 4 Nov 1757, pieces 179-180 (the declared units) | 916 | yes | W |
+| C-12578 1022-1027 | Montcalm to Belle-Isle, Montréal, 9 May 1758, pieces 80 and 80bis | 650 | yes, word by word | W |
+| C-12578 1330 | Doreil, July 1758, one line | - | yes | D |
+| C-12579 0172 | Montcalm to Belle-Isle, Montréal, 9 Sep 1758, piece 65, cipher end | 46 | yes, word by word | W |
+| C-12577 0276 | d'Argenson [minute] to Montcalm, Versailles, [blank] March 1756, piece 62, copy p. 124 | none | - | sends Montcalm his commission "et un chiffre dont vous pourrés vous servir lorsque vous aurés quelque chose de secret à me mander" |
+| C-12579 0861 | Montcalm to [Belle-Isle], Montréal, 12 Apr 1759, A1 3540 piece 40, copy p. 75 | none | the copy writes the cipher passages in clear between brackets: margin "Les passages entre crochets sont chiffrés" | W probable, not shown |
+
+Other hits were tables, accounts or the word "chiffre" meaning a number. So no new W cipher text and no bare W
+passage on these reels; the 12 Apr 1759 letter is a known plaintext whose figures are not in the copy (original:
+SHD GR A1 3540, piece 40). The March 1756 minute is the first trace of the key itself: a cipher sent by d'Argenson with
+Montcalm's commission, which fits W being in use in Montcalm's postscript of November 1756 (our inference).
+
+The 1757 index tested on the four sibling texts (`results/siblings_alignment.tsv`, `results/siblings_summary.json`;
+each text aligned as a whole with its period decipherment, since these copies write it word by word):
+
+| Text | Groups | In the 1757 index | Same value as 1757 | Not in the index |
+|---|---|---|---|---|
+| 3 Nov 1756 | 27 | 20 | 19 | 6 (1 uncertain digit) |
+| 9 May 1758 | 650 | 526 | 502 (95.4%) | 122 (2 uncertain) |
+| 9 Sep 1758 | 46 | 37 | 36 | 8 (1 uncertain) |
+| Lévis, 10 Nov 1759, p. 307 only | 120 | 93 | 65 (70%) | 25 (2 uncertain) |
+
+Most of the 1758 differences are spelling (envoy/envoi, ennemy/ennemi, u/v) or the aligner's boundaries. The lower
+Lévis figure is expected from his copy, whose decipherment drifts against the figure lines (`support/`); it is not
+taken as evidence for or against W there.
+
+`key/W_sibling_values.tsv` (separate from the 1757 index) lists 52 groups the index lacks, with the value the period
+decipherment gives them: accepted only when every occurrence aligns with the same stretch and the group occurs twice
+or more (9 groups: 89 paix, 244 cinq, 262 projet, 294 nous, 400 h, 527 pi, 592 s, 664 dernier, 671 tre) or once
+between two neighbours that agree with 1757. Some single values carry a neighbour's letters (20 "sleshollando" is
+probably Hollandois, 24 "causedes", 112 "sdemandent", 274 "le Bat de la Rei[ne]", 587 "xnouvelles"); check before
+use. These are the clerks' values, not a decipherment of ours.
+
+### Known keys
+
+`results/known_keys_compare.tsv`: W (1757 index and sibling values, 370 groups) against each French numerical table of
+1755-1760 in the repository, exact agreement on shared numbers, with 200 shuffles of the other table:
+
+| Table | Shared numbers | Exact | Shuffled mean / max |
+|---|---|---|---|
+| `montcalm1758i`, Marine table for Montcalm 1758, sheet e001295272 | 281 | 0 | 0.36 / 3 |
+| `vaudreuil1760` (and 1759a-c), Vaudreuil table 1757, sheet e001295274 | 286 | 0 | 0.38 / 3 |
+| `kerlerec1759`, Louisiana Marine code (clerks' values) | 69 | 0 | 0.15 / 2 |
+| `orvilliers1759`, Guiana Navy code, keys K3 and K4 | 113, 116 | 0, 0 | 0.32 / 2-3 |
+| `affry1757`, Foreign Affairs codes M, X, B, U | 197, 41, 20, 20 | 1, 0, 1, 1 (196 = M, from a single sibling value) | 0.06-0.33 / 2-3 |
+
+None of these is W, nor a relative of it. Sheet e001295276 (a copy of e001295274) was compared on 13 Nov. The other
+1755-1760 targets in the repository are not French codes (papal, Polish, Prussian, Austrian) and were not compared.
+
+### Print
+
+The Rapport de l'archiviste de la province de Québec for 1924-25, 1925-26 and 1926-27 are on the Internet Archive
+(`rapport02queb_0`, `rapport03queb_0`, `rapport04queb_0`; 1923-24 is `rapport04queb`). Their OCR, Casgrain's
+*Collection des manuscrits du maréchal de Lévis* I-XII and *Guerre du Canada 1756-1760: Montcalm et Lévis* (1891,
+`guerreducanada01casgrich`, `...02casgrich`) were searched with whitespace normalised (the earlier search used OCR with
+double spaces) for phrases of both units ("trois mille six cents", "six cents toises", "saut de Montmorency", "entre le
+saut", "ne vaut rien", "de vous à moi", "comme à Prague", "quart de livre de pain", "neuf lieux", "4 novembre 1757",
+Pontleroy). Every hit was read: none is from the 4 Nov 1757 letter or its sheet. Near misses, recorded so nobody
+chases them: Lévis IV prints a memoir on the defence of Québec (date not checked) ("Dans le bassin de Beauport, depuis le Sault de
+Montmorency jusqu'à la rivière Saint-Charles"), a different text; Lévis VI has "comme à Prague" about horse broth in
+another letter; RAPQ 1923-24 notes a memoir "en chiffre" by Montcalm carried by Bougainville (1758-59), not this one.
+HathiTrust and BAnQ were not needed. Downloads: `sources/raw/montcalm_followups_2026-11-14/` (local, hashed).
+
+### Retry
+
+- p. 506, the group after 654 (frame 0526, full size 4016 px): the middle digit has the long straight descender of
+  this copyist's 7s ("770" in the same line) and a small closed head that his 7s lack and his 9s have. Still 670 or
+  690; withheld. Neither number occurs in the 1757 index or the siblings.
+- p. 518, the group read 2?5 (frame 0538): the middle digit is a z-shaped figure with a tail below the line, unlike the
+  3s of "341" and "361" in the same line. This reader would say 235, but 235 = "com" on p. 511, not "em"; still
+  withheld.
+- 63 for "s" (p. 517): settled as a slip by the siblings (above). 139/159 at p. 510: 159 = une three times and
+  139 = toujours once in May 1758, which supports the copyist's "sic pro 159".
+

@@ -1,0 +1,31 @@
+# Rerun at packaging, 14 Nov 2026, from this folder (python3 -I; lm4.json rebuilt by scripts/lm.py, sha256 9513a2ab419219896678eae58311e8fa4ec0c7492b1e1f3f677054058704cf26, byte-identical to the model used in the original runs)
+## python3 -I scripts/heldout.py test
+train letters 350 test letters 301
+using [7, 8, 10] sha256 70077576e3a9d501cb088b07203d26ccdb9e45f1136fb64d8c107a61fab3ce6f
+held-out score -4.0950; controls: max -4.6513 median -5.1542 min -5.6898; controls >= real: 0 of 200
+A10.0 thath
+A10.1 illdeclarehimstourstitaromigionwitrouitintilongsinormadesecesetprofestionthattonofthe
+A11.0 ogeiuenofhosedehementtothecauseofrelligionthathecanassurehimstourstitsupportorsomptouinnomtororssitit
+A12.0 eateofthenteofesalsoursonassistancetowxucathin
+B1.1 thetheparethalofbyron
+B1.2 owwhouuerningethearmyunder
+B2.1 urmandingethearmy
+## python3 -I scripts/stricter_heldout.py scripts
+first part 350 second part 301
+== choose on first 350, score last 301
+ base 7 alone: train -5.7259 test -6.2876
+ extra pair chosen on train: (8, 10) train -4.0820; on test -4.0950, rank 1 of 231 pairs; test best (8, 10) -4.0950; test median -4.7047
+  top 5 train: [(8, 10), (4, 10), (10, 17), (8, 11), (10, 19)]
+  top 5 test : [(8, 10), (10, 12), (10, 20), (4, 10), (8, 20)]
+ triple chosen blind on train: (7, 8, 10); test score -4.0950, rank 1 of 2024; best test triple (7, 8, 10)
+== choose on last 301, score first 350
+ base 7 alone: train -6.2876 test -5.7259
+ extra pair chosen on train: (8, 10) train -4.0950; on test -4.0820, rank 1 of 231 pairs; test best (8, 10) -4.0820; test median -4.4512
+  top 5 train: [(8, 10), (10, 12), (10, 20), (4, 10), (8, 20)]
+  top 5 test : [(8, 10), (4, 10), (10, 17), (8, 11), (10, 19)]
+ triple chosen blind on train: (7, 8, 10); test score -4.0820, rank 1 of 2024; best test triple (7, 8, 10)
+## python3 -I scripts/check_hand.py
+read 636 of 651 printed letters = 97.7%
+shift use: [(7, 490), (10, 49), (8, 39), (20, 35), (11, 18), (0, 2), (9, 1), (16, 1), (22, 1)]
+per printed letter: {'a': {7: 47}, 'b': {7: 45}, 'c': {7: 1, 9: 1}, 'd': {7: 25}, 'e': {7: 16, 0: 1, 20: 3}, 'f': {7: 48, 20: 1}, 'g': {7: 64, 20: 7, 16: 1}, 'h': {7: 10, 20: 2}, 'i': {20: 17}, 'k': {7: 38, 8: 1, 20: 5}, 'l': {7: 37}, 'm': {7: 60}, 'n': {7: 18}, 'o': {7: 4, 11: 4}, 'p': {10: 10, 11: 2, 7: 1}, 'q': {7: 5, 11: 1, 22: 1}, 'r': {10: 7, 8: 8, 11: 3, 0: 1}, 's': {10: 6, 7: 6, 11: 7}, 't': {10: 24, 11: 1, 7: 3, 8: 1}, 'u': {7: 8}, 'v': {7: 3, 10: 2, 8: 2}, 'w': {7: 4, 8: 21}, 'x': {7: 27, 8: 6}, 'y': {7: 3}, 'z': {7: 17}}
+letters outside 7/8/10/11/20: [('A7.0', 'c', 'm', 9), ('A7.0', 'e', 'e', 0), ('A9.0', 'g', 'y', 16), ('A9.0', 'q', 'o', 22), ('A10.1', 'r', 'r', 0)]

@@ -158,6 +158,120 @@ Done for the project at integration of pull request #587; the contributor's text
   (the glossed letters pp.516-548 in full, the rest of Baudouin's letters pp.487-590 for the numbers 3, 58, 143, 162,
   227, 501 and 507, and the value of 30 in Baudouin's own use), so no page is written yet.
 
+## Follow-up to the integration check (14 Nov 2026)
+
+Andrew Beling, with AI agents, answering the seven points of the review of pull request #587. Images are the local copies
+of the National Archives Catalog frames; "on the image" below means read on a full-resolution crop by an AI agent, not by
+a person.
+
+| Point | What was done | Result |
+|---|---|---|
+| Read shares | retry of every open number with the enlarged key | B573 13 of 18 (unchanged), B491 10 of 16 (unchanged), B492 2 of 4 (was 1 of 4); together 25 of 38 = 66% |
+| 30 | p.599 and p.605 seen on the image | 30 = "re" ("encore" = 47 30, on p.599 and in the fair copy p.605 line 4); that is its only source, a draft, not a gloss. No gloss of 30 in pp.516-548. "ar{g}ent" and "{G}rand" stay holes |
+| p.608 truth | whole leaf re-read, two passes | key/p608_truth_complete.tsv: 92 groups, 23 more than the 69 of T3 (list below) |
+| 136 | four more glosses | "au" on pp.516, 527, 530 and 535 against "à" once (p.599, "à Mr v. Berkel"); the key now holds "au" |
+| "Lundy 7 mars" | heading of p.498 seen on the image | it reads "A Paris le Lundy 7. mars 1779" (see below); not emended |
+| Dunoyer is Baudouin | Founders Online in Chrome | Baudouin as Sartine's secretary is in print; Dunoyer = Baudouin is not (below) |
+| Glossed letters | pp.516-548 transcribed in full | transcriptions/glossed_pp516-548.tsv, 386 rows (310 G, 25 D after the p.529 correction of 15 Nov); held-out test 64 of 66 |
+
+**The glossed letters in full.** Code groups occur on pp.516, 526-531, 534-535 and 547-548 only; the other pages of
+516-548 were checked on the images and carry none. transcriptions/glossed_pp516-548.tsv gives every group in order, the
+gloss as written, the unit, a status (G glossed, D doubtful, U unglossed, X struck) and the word. Pass 1 top-down; pass 2
+on a second, larger crop of every doubtful gloss. Only G rows enter the key.
+- Corrections to key/key_pairs_classB_glosses.tsv (kept unchanged as the round-3 source): the number glossed "Declaré" on
+  p.516 is 474, not 574; 271 on p.526 is glossed "le" ("et le Pens."), not "la".
+- New or confirmed by the glosses: 400 = oi ("d-oi[t] ordonner", "de v-oir", "l'écri-r-oi[t]-il"; three clear glosses);
+  143 = vaisseau(x) (p.534, faint; read the same in both passes, and "aux vaisseaux et troupes qu'ils ont envoyés à la
+  Martinique" fits); 98 = en (p.528; p.526 has "en" or "est"); 237 = y; 39 = le Roi d'Espagne; 6 = the numeral 3
+  (p.529, "que dans [?] ou 3 mois": the gloss "3" stands over the figure 6; corrected on the image on 15 Nov 2026 after an
+  independent verifier's check, the first transcription had "3 ou 6"; the figure before 488, first read as 3, is a tall sign
+  like a long-tailed z with a small similar sign above it, not a clear 3, and is left doubtful); 43 = à; 188 = d/de; 55 = é in "l'écriroit"; 5 = M. de Chaumont.
+- Unglossed groups inside glossed letters (status U): p.526 "soit [17 399 444 74]"; p.527 "[327 441 19 54 60 133] sucre
+  brut" (B527 line 1), "la cause commune [204 91 133 327]" and B527 line 2; p.529 "[22 18 92 501 531] sur trois
+  bâtiments"; p.530 "[100 36 85]". 501 is unglossed here too; 507 occurs only struck through (p.527).
+- p.516: "si [207 66 158] & Compagnie sont chargés en tout ou en partie de cette affaire" (the supply business), glossed
+  "fo/fi se aux & Compagnie". Reading it as Fizeaux & Cie of Amsterdam is inference. Papers of Benjamin Franklin 28:354 n.8
+  says Georges Grand was a partner in Horneca, Fizeaux & Cie, then handling the commissioners' attempted loan. That makes
+  "Grands" a natural reading of "[58]rands" in B573 ("[3] a retiré aux [58]rands l'affaire de l'emprunt"), but it is
+  context, not a gloss, and 58 stays open.
+
+**Held-out test T4** (plan in TEST_PLAN.md, written before the run; keys in key/FREEZE.txt): all glossed groups of the
+letter of 10 April 1779 (pp.529-531) held out, fixed by page before any key was built. The transcriber had read those
+glosses while transcribing. K4 (205 numbers) predicts 64 of the 66 covered groups (97%); 200 shuffled keys: mean 0.6,
+maximum 6, none reaches 64. The two misses are word forms (474 déclaré/déclarer, 384 passe/passez). Not covered: 3, 6, 100.
+After the p.529 correction (15 Nov) the held-out set is 68 glossed groups, not 69 (the doubtful sign drops out); K4 is
+unchanged and still predicts 64 of 66 covered; not covered: 6 (= 3) and 100 (`results/test_round4_output_p529corrected.txt`).
+
+**Retry of the open numbers** with the full key key_full_r4.json (208 numbers, frozen first):
+- B492: 143 = vaisseau. "On a déjà proposé plusieurs fois à ma tante d'acheter son vaisseau". New word read.
+- 136 = au in B573 is now the key's value, not a choice.
+- No change for 3 (no gloss: the "numeral 3" of p.529 was a misplaced reading, corrected 15 Nov; it stays a hole in
+  "Il y a longtemps que [3] a retiré"), 58, 227,
+  369/349, 30 as "g", 162, 507, 501 and the B527 lines. The retry read nothing else new.
+
+**p.608 truth file.** Groups on the leaf missing from heldout_p608_truth.tsv: 313 (no, "connoisse"), 60 (s, "dessous"),
+11 38 141 over "écrit" (not aligned; 38 is "ru" elsewhere), 138 355 537 and 455 ("soit par vous Monsieur"), 32 290 85 60
+("fermerons", partly aligned), 204 ("l'envie"), 261 310 133 ("préviendrez"), 88 74 61 230 248 164 ("je me trouve"). The
+old file is kept, since it is what T3 scored. Re-scored on the whole leaf, the frozen K2 gets 81 of 83 covered groups; the
+misses are 106 (Chaumont for "M. de Ch.") and 204 = "le" for "l'".
+
+**"Lundy 7 mars 1779"** (p.498, frame 0368). On the image the heading reads "A Paris le Lundy 7. mars 1779": the day
+word begins with this hand's L; the numeral has the form of the 7s in "1779"; "mars" is clear. 7 March 1779 was a
+Sunday and the Monday was the 8th. The same writer's postscript of 30 March 1779 ("aujourd'huy mardy", p.516) is correct
+for its date. So either the writer slipped in the day or the weekday; the image does not decide which.
+
+**Dunoyer and Baudouin.** Checked in Founders Online (Chrome, 14 Nov 2026): Papers of Benjamin Franklin 28:353-354,
+nn.8-9 (Dumas to Franklin, 5 January 1779) names "Sartine's associate Chaumont and secretary Baudouin" and cites this
+file's 23 February 1779 letter; 25:366-367 n.9 calls Baudouin "Sartine's agent". A search for "Dunoyer" finds nothing on
+this correspondence. So Baudouin's post is checked in print, and that "Dunoyer" is Baudouin rests on the file alone (the
+index, the signatures "Baudouin" on pp.497 and 499 and the announced change of name, the same hand). Not checked: what
+would settle it is a person comparing the Dunoyer hand with Baudouin's signed notes to Franklin (American Philosophical
+Society, 25 December 1777, 5 and 25 May 1779) or with his office papers in the Archives nationales, Marine series B4 and B7.
+
+## Second pass: Baudouin's other letters, pp.487-515 and 549-590 (14 Nov 2026)
+
+Andrew Beling, with AI agents. Every page was looked at on the local images by an AI agent, not by a person; the page list
+is transcriptions/survey_pp487-515_549-590.tsv.
+
+- **What the pages hold.** 34 letters and covers from Baudouin ("Baudouin", later "Dunoyer" or a flourish), 23 February
+  1779 to 13 November 1781, in clear French, plus de Neufville's drafts of 22 March 1779 (p.503) and two short drafts
+  (pp.514-515), his list of signal numbers (p.504) and blank versos. Code numbers stand on three pages only: the bare
+  passages already transcribed (pp.491-492, 573) and p.579, the only glossed page.
+- **p.579** (letter "Ce 25", after 29 December 1780): two groups, both glossed by de Neufville, "L'approvisionnement
+  [p.] la Hollande" over 68 499 473 202 226, and "par les Danois" over 537 428 326. All eight groups are in
+  transcriptions/glossed_p579.tsv, a file of their own. Four of them (537, 428, 326, 68) were already in the key, from round 2
+  (`key_additions_round2.tsv`) and round 3.
+- **Neighbours.** The leaves before and after each bare passage (pp.487-490 and 493-494; 569-572 and 574-578) are in
+  clear and carry no decipherment, draft or fair copy of the bare groups. pp.491-492 and 573 stay bare.
+- **Other finds on these pages** (clear text, not readings of code):
+  - p.502, 15 March 1779, same hand: "je vous adresseray ces jours cy par Dunkerque le chiffre que je vous ay promis", and
+    p.507, 21 March: "lorsque vous aurez reçu le paquet que je vous ay envoyé par Dunkerque vous pourrez m'écrire plus
+    librement". Baudouin says he sent a cipher by Dunkirk. Whether it is the numeric code is still not shown (it would
+    point to Baudouin as its maker; see "Who made which table").
+  - p.510, 28 March 1779: de Neufville glossed cover names written in clear, not numbers: "No. 14" as "de la paix
+    générale" (the signal list of p.504), "la maison de commerce" as "l'Amérique", and "les parents du bon ami" as what
+    looks like "l'Angl[eterre]" (doubtful).
+  - p.487 (30 September 1779): "M. V. Vort ... la sortie du navire ... le vaisseau pourrira où il est". This is context for
+    143 = vaisseau in B492, which rests on the p.534 gloss.
+  - p.498 ("le Sr grand, qui ... sortoit de chez le ministre") and p.551 ("le Seigneur grand d'Amsterdam") name Grand in
+    clear. That is context for "[58]rands" in B573, not a value for 58.
+- **Held-out test T5** (plan in TEST_PLAN.md, round 5, written before the run; output results/test_round5_output.txt). The
+  frozen key_full_r4.json (sha256 146207b0...f460, checked by the script) was scored on the five p.579 groups never used to
+  build it (glossed and legible; 473 is doubtful and left out). It predicts 4 of 5: 68 l', 499 approvisionnement, 202 la,
+  428 les. The miss is 226, glossed "Hollande" here and "même" once on p.606. 200 shuffled keys: mean 0.04, at most 1.
+  Five groups are too few for a pass bar; the result is reported as it came out. **Correction (15 Nov 2026):** two of the five
+  (68, 428) were already in the key from round 2 (`key_additions_round2.tsv`), so the plan's held-out set was wrong. Of the
+  three pairs new to the key (499, 202, 226) it predicts 2 (226 missed); re-scored on those three, shuffles mean 0.03, at most 1
+  (`results/test_round5_output_rerun_2026-11-15.txt`). Three pairs are too few to carry weight either way.
+- **Rebuild and retry.** Adding the p.579 pairs left the key unchanged on 14 Nov: key_full_r5.json was byte for byte
+  key_full_r4.json, because 226 ties (me 1, Hollande 1) and the tie keeps "me". That run added 68 and 428 a second time (they
+  already voted through key_additions_round2.tsv; no value changed). Rebuilt on 15 Nov with the corrected files (68 and 428
+  counted once, p.529 corrected): 207 numbers, sha256 ee29e9f7...2e87, differing from key_full_r4 only in 6 = 3 and no value
+  for 3. None of the p.579 numbers occurs in the bare passages.
+  Read shares (strict rule, as before) are unchanged: B573 13 of 18, B491 10 of 16, B492 2 of 4, together 25 of 38. No open
+  number is settled: 3, 58, 227, 369/349, 162, 507, 501, 30 as "g" and the two lines of p.527 stay open. "Grands" for
+  [58]rands and "Congrès" for [369/349] remain guesses from context and are not counted.
+
 ## The bare passages
 
 Decoded with key/key_full_r3.json (204 numbers). In the readings, [n] marks a hole and {x} a unit settled by the word, not
@@ -177,7 +291,8 @@ cela ne peut que faire beaucoup de tort **au crédit du [369/349]**." He then ad
   - That "the loan" is the American loan de Neufville was trying to raise is inference; the letter says only "l'affaire
     de l'emprunt".
 - Open numbers and candidates (holes in the text):
-  - 3: a person. The only gloss of 3 is the numeral 3 (p.529), which does not parse here.
+  - 3: a person. 3 has no gloss: the "numeral 3" once taken for its gloss (p.529) stands over the figure 6 (corrected
+    15 Nov 2026).
   - 58: an initial. "Grands" fits if 58 = G, and so does 30 = g in B492 "{G}rand". The Grand family of bankers is
     meant if so; Dumas calls Georges Grand "le ch—— G——" (PBF 29:5-7 n.4).
   - 227: "plac-", "hasard-" or "risqu-".
@@ -199,7 +314,8 @@ Amsterdammois**."
 **B492, second page of the same letter (p.492).** 7 numbers, 5 read (71%; one unit by the word only).
 "On a déjà proposé plusieurs fois à ma tante d'acheter son [143] ... il y a certainement du tripotage au sujet de **ce**
 [162] entre V. Vort et **{G}rand**."
-- The gloss over 143 on p.534 may read "vaisseau(x)", but it is too faint to enter in the key; 143 stays a hole.
+- The gloss over 143 on p.534 reads "vaisseau(x)". It was first judged too faint to enter; in the follow-up of 14 Nov 2026
+  it was read the same way in two passes and entered (see above), so 143 = vaisseau: "d'acheter son vaisseau".
 - "Ma tante", "le saint homme", "V. Vort", "le patriarche", "l'ami du cœur" and "M. du Fresne" are covers used in clear.
   Du Fresne is Chaumont: de Neufville glossed "Mr de Fresne" with "Chaumont" on p.579. The others are not identified.
 
@@ -218,8 +334,8 @@ Code numbers occur only on pp.487-609. Classes:
 What this folder contains of each:
 - the (a) items as aligned pairs: transcriptions/p604-606_cipher_with_p599_draft.tsv, key/heldout_p608_truth.tsv,
   key/key_source_pairs_pp600-603_609.tsv;
-- the (b) glosses as pairs: key/key_pairs_classB_glosses.tsv. The glossed letters are not transcribed in full, and
-  doubtful glosses were left out;
+- the (b) glosses as pairs: key/key_pairs_classB_glosses.tsv (round 3); from 14 Nov 2026 the glossed letters pp.516-548
+  in full, every group with its gloss and a status: transcriptions/glossed_pp516-548.tsv;
 - every (c) passage in full: letters/B*.
 
 p.504 is de Neufville's list of four signal numbers. 7, 8, 14 and 15 mean "Spain will declare the independence of America",
@@ -292,9 +408,9 @@ Searches made:
 
 ## Remaining gaps
 
-- Numbers 3, 58, 227, 369/349, 507, 501, 143 and 162, the two lines of p.527, and the likely nulls 405, 387, 390 and 447 - blocker: open-codes; not glossed or drafted in the pairs taken so far.
-- The glossed letters pp.516-548 are transcribed as pairs only - blocker: not-attempted; workable, and the place to look for the open numbers.
-- Baudouin's letters of February 1779 to November 1781 (pp.487-590) contain more clear intelligence that is not summarised here - blocker: not-attempted.
+- Numbers 3, 58, 227, 369/349, 30 as "g", 507, 501 and 162, the two lines of p.527, and the likely nulls 405, 387, 390 and 447 - blocker: open-codes; retried on 14 Nov 2026 with the glossed letters pp.516-548 transcribed in full: none is glossed with a value that fits (3 has no gloss, the p.529 "numeral 3" being the gloss of 6; 501 and 507 only unglossed or struck).
+- A glossed or deciphered copy of the bare groups (pp.491-492, 573) - blocker: needs-physical-access; none is in this file (all 808 images paged; Baudouin's letters pp.487-515 and 549-590 surveyed page by page on 14 Nov 2026, the neighbours of the bare pages read, p.579 transcribed in full); Baudouin's office copies or de Neufville's sent letters may survive in the Archives nationales, Marine B4/B7, not seen. The clear text of pp.487-515 and 549-590 is not transcribed; it carries no code.
+- That "Dunoyer" is Baudouin is not confirmed outside the file - blocker: needs a comparison of hands with Baudouin's signed notes (American Philosophical Society) or his office papers (Archives nationales, Marine B4, B7).
 
 ## Escalation
 
@@ -304,7 +420,7 @@ Checklist added at integration (14 Nov 2026), from the contributor's list below:
 - [x] known-keys: neither table survives as a table; no other key of this correspondence is known
 - [x] print: Founders Online, HathiTrust full text, Cryptiana (see "In print")
 - [x] key-rebuild: three rounds (K1, K2, full key), each from more drafts and glosses
-- [ ] retry: the glossed letters in full and the rest of Baudouin's letters have not been worked for the open numbers
+- [x] retry: the glossed letters pp.516-548 transcribed in full and every open number retried with key_full_r4 (14 Nov 2026); one new word (143 = vaisseau); second pass the same day: pp.487-515 and 549-590 surveyed, p.579 transcribed in full, held-out test T5 4 of 5, key unchanged, no open number settled
 
 Tried for the open numbers:
 - every glossed letter and draft in the file (all 808 images paged);

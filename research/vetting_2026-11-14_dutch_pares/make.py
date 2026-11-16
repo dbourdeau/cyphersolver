@@ -1,0 +1,62 @@
+import json, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+BY = "claude session 14 Nov 2026 (Claude Sonnet 5.5), Dutch OAI sweep vetting"
+D = "2026-11-14"
+DEC = "decode_search.py (de-crypt.org RecordsList) for %s, 14 Nov 2026: 0 records."
+TOMO = "Web search naming Tomokiyo, Cryptiana and Dutch cipher letters (Groningen, Dordrecht, Patriot period, 14 Nov 2026): no Cryptiana page on this material; hits were generic cipher pages."
+LAS = "Web search for Lasry and HistoCrypt with Dutch archives and the Patriot period (14 Nov 2026): only Lasry's d'Avaux 1684 paper (KHA, French diplomats in Holland) and unrelated papers; nothing on this item."
+out = {}
+SRCH_T = {"query": "Tomokiyo cryptiana Dutch Republic cipher letters 16th century Groningen OR Dordrecht Patriot 1780s cipher (web search)", "result": "Nothing relevant; generic cipher pages."}
+SRCH_L = {"query": "Lasry HistoCrypt Dutch historical ciphers Netherlands archives 18th century Patriottentijd cipher letter decipherment (web search)", "result": "Only Lasry's d'Avaux 1684 KHA paper and unrelated papers."}
+
+out["2694"] = {
+    "date": D, "by": BY,
+    "seen": {"kind": "not online",
+        "where": "Regionaal Archief Dordrecht, toegang 325 inv. 44, item page opened in Chrome 14 Nov 2026 via proxy.archieven.nl/46/58DC86DE54B6408EBF519E8F665150D8 (regionaalarchiefdordrecht.nl, inventory view): description only, no scan link; the OAI EAD record has no digital object.",
+        "extent": "One letter, 1 stuk, J. van Meeteren (Dinther), 14 Oct 1783.",
+        "cipher": "Inventory note verbatim: 'De brief is gedeeltelijk in geheimschrift' (partly in cipher); no decipherment mentioned. Letter not seen: no image online."},
+    "prior_art": {
+        "decode": DEC % "Meeteren, Van Beest, Dordrecht",
+        "tomokiyo": TOMO, "lasry": LAS,
+        "edition": "Web search on the society, Pieter van Beest, Van Meeteren and Dinther (14 Nov 2026): no edition or study of this letter; only general Patriot-period literature (Kleijn, Patriots republicanisme on dbnl).",
+        "literature": "Same search: nothing on a cipher in the papers of 'De Vrijheid'."},
+    "searches": [
+        {"query": "decode_search.py Meeteren; Van Beest; Dordrecht (de-crypt.org)", "result": "0 records for each."},
+        SRCH_T, SRCH_L,
+        {"query": "Patriottisch Exercitiegenootschap De Vrijheid Dordrecht Pieter van Beest brief geheimschrift van Meeteren Dinther 1783 (web search)", "result": "No page on the letter or its cipher."}],
+    "key_check": "No key known or in the finding aid; neighbours inv. 43-47 carry no cipher note (inventory view, 14 Nov 2026).",
+    "duplicates": "known.py 'Meeteren' (14 Nov 2026): only this sweep's own row; no entry or lead holds toegang 325.",
+    "verdict": "open",
+    "lead_updates": {"access": "archive"}}
+
+out["2695"] = {
+    "date": D, "by": BY,
+    "seen": {"kind": "not online",
+        "where": "Groninger Archieven, toegang 1032 (Catalogus 'Verzameling van afschriften') inv. 735, EAD record from the archieven.nl OAI feed (harvest.archieven.nl) read 14 Nov 2026; description only, no digital object.",
+        "extent": "One copy (afschrift) of a report of 25 May 1594, p. 53 of vol. 62 of the Verzameling van stukken.",
+        "cipher": "Inventory note verbatim: 'Deze mededeeling is gedeeltelijk in cijfers' (partly in cipher). Whether the copy carries the cipher groups or a decipherment is not said. Not seen: no image online."},
+    "prior_art": {
+        "decode": DEC % "Buerenston, ten Bure, Groningen",
+        "tomokiyo": TOMO, "lasry": LAS,
+        "edition": "Web search on Buerenston and Plouch (14 Nov 2026): nothing names Plouch. Formsma's BMGN article on the 1592-94 Groningen plans (bmgn-lchr.nl) names Johan ten Bure carrying messages and one letter 'in cijfers'; that may be the same affair, so the printed source for the report was not identified and not read.",
+        "literature": "Van den Broek and Formsma on the 1594 Reductie turned up; neither was opened for this item."},
+    "searches": [
+        {"query": "decode_search.py Buerenston; ten Bure; Groningen (de-crypt.org)", "result": "0 records for each."},
+        SRCH_T, SRCH_L,
+        {"query": "Jan ten Buerenston Laurens Plouch 1594 Groningen Reductie cijfers mededeling (web search)", "result": "Nothing on Plouch; Formsma BMGN article on Johan ten Bure and a letter in cijfers (same affair possible, unchecked)."}],
+    "key_check": "No key known or recorded; the original behind the copy is unidentified.",
+    "duplicates": "known.py Buerenston, Plouch (14 Nov 2026): only this sweep's own row and lead.",
+    "verdict": "open",
+    "lead_updates": {"access": "archive"}}
+
+out["2696"] = {
+    "date": D, "by": BY, "verdict": "read",
+    "seen": {"kind": "transcription",
+        "where": "Groninger Archieven toegang 835 inv. 256 EAD record (OAI feed, 14 Nov 2026): the manuscript has a deciphered copy by W.B.S. Boeles bound in; web search 14 Nov 2026 found the edition J. van den Broek, Het geheime dagboek van de Groninger stadssecretaris Johan Julsing 1589-1594 (Groninger Bronnen Reeks 2, 2006), reviewed in BMGN, and a Boeles selection of 1866. The edition itself was not opened."},
+    "closed": "The diary has a decipherment bound with it (Boeles) and is printed in full in Van den Broek's 2006 edition (Groninger Bronnen Reeks 2, found by web search and a BMGN review). The 'geheim' text is a private multilingual diary with Hebrew-letter words per the inventory, so it is read, not an open ciphertext. The edition was not opened to check the nature of the script."}
+
+out["2697"] = {"unvetted": "Two undated Masonic items (toegang 383 inv. 803 and 847) known only from the inventory line; no scan found, no date, the type (probably the Masonic alphabet) unseen. Needs the Regionaal Archief Dordrecht reading room or a scan."}
+out["2698"] = {"unvetted": "A key tableau of 1871 (Nanninga inv. 439, Sijtsma) with no message in the entry; neighbouring inventory numbers not checked and nothing viewed. Out of the oldest-cipher priority."}
+for i in range(2699, 2712):
+    out[str(i)] = {"unvetted": "PARES (pares.cultura.gob.es) answered HTTP 429 from about 18:20 and again at a single probe at the start of vetting on 14 Nov 2026 (curl, home page); not retried. Dates, legajo, images and filed decipherments of this AHNOB record were not opened; the row is from the hit list description only. Re-vet when PARES answers (one request at a time)."}
+json.dump(out, open(os.path.join(HERE, 'vetting.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

@@ -81,7 +81,7 @@ permission (`chrome_pass_2026-11`).
 | KB The Hague | Catalogue covered through SRU + OAI (4,040 manuscript records, ~200 read in full); `kb.on.worldcat.org` shows Cloudflare and was not tried in Chrome (adds nothing the SRU route lacks); Delpher full text of the KB annual reports and the Literatuurmuseum catalogue not reached. No KB cipher item has scans online | `sweep_2026-11_kb_netherlands` |
 | NARA M1194 | No search for "decipher" across all 261 rolls; only cards the bulk scan flagged were read | `nara_triage_c` |
 | QDL | No Arabic or Persian terms; 23,753 hit pages not screened as images | `qdl` |
-| BnF | Bellièvre papers not yet screened: fr. 15890, 15892-15905, 15907-15911; fr. 15900 (2) has no Gallica ark (15906, 15900 (1) and 15891 swept 5 Nov 2026) | `gallica_sweep` |
+| BnF | Bellièvre papers not yet screened page by page: fr. 15892, 15893, 15895, 15896, 15899-15901, 15907-15910; fr. 15900 (2) has no Gallica ark (15906, 15900 (1), 15891 swept 5 Nov; 15902-15905 and 15911 on 11 Nov; 15890, 15894, 15897, 15898 on 15 Nov 2026, wave 15: no ciphertext) | `gallica_sweep`, `sweep_2026-11-15_wave15_bellievre` |
 | Dudout's BnF BAM list | The 675-article JSON, available from him on request | `dudout_2026-10-29` |
 | HHStA | Staatenabteilungen Spanien, Rom, Venedig beyond the term searches | `central_archives` |
 | Printed series | Hardwicke, Journals of the Continental Congress, Official Records, Home Office calendar after 1775 | `ia_pass2_b` |
@@ -228,3 +228,123 @@ reaches some hosts the earlier one did not and the reverse; each README has its 
 - **Riksarkivet Skrivelser till konungen 1133.07** (`..._nordic_paging`): top-64 screen per volume; 5 bare leads (Grubbe, Horn, Banér, De la Gardie, "Chemnitz"), unvetted for lack of an online edition. Not reached: 1133.07/26-35, 1133.01-05, second windows, Danske Kancelli, Kongehuset.
 - **JACAR** (`..._jacar`): 403 after parallel threads at about 4 requests a second; retry at one request per 2-3 s. 2,474 selected records unscanned; two 1879 Japanese rows unvetted.
 - **New sources** (`..._new_sources`): BSB/MDZ search API, Polona, Memoria Digital de Catalunya reachable and swept (0 rows); Internet Culturale CAPTCHA, e-rara, e-manuscripta, SLUB, Heidelberg blocked. Best route left: Omont's BnF catalogue (about 150 "avec chiffre" pieces), blocked only by finding Gallica arks (needs Chrome).
+
+## Sweeps of 14 Nov 2026 (never-swept areas, GStA, Koç, Hungaricana, Dutch)
+
+Folders `sweep_2026-11-14_*`; vetting in `research/vetting_2026-11-14_*`. Leads 2575-2723 merged; 32 promoted.
+
+- **Productive routes:** GStA PK ACTApro (`archive.spk-berlin.de/actaproweb`, Chrome same-origin POST, `resultsForPage` 500, wildcards; record opens only through a hit link from a search in the same session; no images online); Koç CONTENTdm HPBK/MHC (Hilmi Paşa Yemen telegrams; images via `libdigitalcollections.ku.edu.tr/iiif/2/HPBK:<item id>`; target `hpbk1896`, 0% read, transcription is the blocker); Hungaricana LEAR regests (`?list=<base64 {"query":...}>&page=N`, same-origin fetch in Chrome, 20 hits a page); Tresoar open JSON API (`archieven.tresoar.nl/api/search`); Stadsarchief Amsterdam `POST id.archief.amsterdam/search/records` (one recordType per call); Thüringen/Saxon finding aids.
+- **Closed with 0 rows:** Malta, Dubrovnik/Croatia/Serbia/Bulgaria/Greece, Romania (hosts down or no item-level catalogue; Europeana API only noise); Riksarkivet Reuterholm, Tessin, De la Gardie, Stedingk, Oxenstierna, Kanslikollegium (5,636 images sampled, all clear); Dutch OAI sets complete to the end (Noord-Hollands, Groninger, Haags, Westfries, Rivierenland and others); Archivportal-D (already paged in full through the DDB Solr endpoint; the "first 200 slots" row was stale and is removed).
+- **Still blocked:** BOA (arithmetic CAPTCHA login), RGADA, GARF (DDoS-Guard), vHMML Malta (Turnstile), NYPL Archives (Imperva), Hispanic Society, NEHGS (names only), Open Jerusalem, Drents Archief, Erfgoed Leiden, Leiden University Libraries, Radboud repository, British History Online (401), SALT Research (Cloudflare). PARES returned 429 from about 18:20: leads 2699-2711 (Osuna/Frías) are merged unvetted until it answers.
+- **Not done:** the 20 GStA deep-sweep leads and 8 German-database leads left unvetted (no images online: need the reading rooms or an edition); Hungaricana leads 2679-2692 (the 2025 Fazekas-Fodor-Gluck edition of the Constantinople envoys' reports 1568-74 is not online); Ericsberg `B 1/13-15` and the Ericsberg C. G. Tessin papers at Riksarkivet; De la Gardie E 1649 (401); HPBK sheets that did not load; Tresoar 323 inv. 5592.52 scan request (possible key for `casimir1618`); Tirol and Salzburg archives; Tilburg, BHIC, Utrecht UB, UvA, Delpher manuscripts; Morgan CORSAIR "cifra" and "in cipher"; the Palermo `wbpa4.py` run over 245 excluded PDFs.
+
+## Sweeps of 15 Nov 2026 (Omont NAF, Austria and Switzerland, French-Swiss, Ericsberg)
+
+Folders `sweep_2026-11-15_*`; vetting in `research/vetting_2026-11-15_*`. Leads 2745-2782 merged; 7 promoted (2746, 2753, 2754, 2758, 2773, 2774, 2775).
+
+- **Omont NAF and petits fonds** (`sweep_2026-11-15_omont_naf`): NAF II-IV, Saint-Germain III and the Anciens petits fonds swept from archive.org (the djvu file name differs from the item id). Still unswept: Saint-Germain I (Gallica `.texteBrut` behind a security check), Saint-Germain II and NAF I (no archive.org item). Omont shelfmarks and folios are OCR readings: confirm each on Gallica before a lead is trusted (the 14 Nov Omont rows had five wrong shelfmarks).
+- **Austria and Switzerland** (`sweep_2026-11-15_austria_swiss`, `_swiss_french`): routes are archives-online.org (drive the form from the console; results arrive over SignalR), findbuch front ends (`do_rech_start_with_words('term')`), friXplore (Fribourg, plain curl), DAVEL (Vaud, opens in Chrome only), BGE archives (Anubis clears itself). The Affry (de Boccard) fonds at Fribourg files d'Affry's clear drafts beside the numbered dispatches (AEF Affry 225, 226): a route to plaintext for `affry1757`, not digitised; series 257 is the other half of the R1071 correspondence. Not reached: Tirol, Salzburg, Südtirol (no public item-level database), Kärnten (host resets), Archives de l'État de Neuchâtel and Archives de la Ville de Genève (hosts do not resolve), Steiermark (bot-defence on scripted POST).
+- **Riksarkivet Ericsberg and Stedingk** (`sweep_2026-11-15_riksarkivet_ericsberg`): 4,257 images sampled (every 3rd) over 32 volumes, 0 rows. Next step: B 1/14 images 1-30 and 540-582 page by page (catalogued "Med chiffernycklar"). De la Gardie E 1649 is behind a Riksarkivet login (GDPR, material under 110 years): needs the user's account.
+- **Still waiting on PARES:** leads 2699-2711 (429 since 14 Nov, still 429 on 15 Nov).
+
+## Sweeps of 15 Nov 2026, wave 3 (TNA Discovery, JACAR retry, Vatican and Venice)
+
+Folders `sweep_2026-11-15_tna_discovery`, `_jacar_retry`, `_vatican_venice`; vetting in `research/vetting_2026-11-15_tna_discovery`. Leads 2783-2807 merged; 4 promoted (2784, 2788, 2792, 2797).
+
+- **TNA Discovery:** the API answers without a block and no State Papers piece is digitised, so every row rests on catalogue text. Not done: the calendar download of about 350 archive.org volumes stopped at 273 (about 80 not fetched); WO 1, WO 32, FO 27 and CO 5 are described by folio range with no cipher words, so they need a per-volume approach; British History Online search sits behind a challenge page; Gale State Papers Online not checked for images.
+- **JACAR:** 759 priority records scanned single-threaded at about 2.5 s (no 403): no cipher runs, only administrative items. 2,123 body-text-only records are not scanned (`scan1.py` does them). Three Waseda Okuma-papers leads (Motono cipher telegram 1874 and the Taiwan telegraph cipher tables) sit in `sweep_2026-11-15_jacar_retry/candidates.json`, unmerged: the Waseda site was down for maintenance. The JACAR region value has no Asia entry in `merge.py`.
+- **Vatican and Venice:** 0 rows. The Vatican Apostolic Archive has no item-level route (the "Indice dei Fondi" PDF names "Ufficio Cifra" only); BAV OPAC 16 new terms gave 0 new shelfmarks of 426 covered; Chig. A.I.35-60 are not digitised; the Dieci "Cifre, chiavi e scontri di cifra" series is restricted. Mapping Barb. lat. 6000-9800 needs about 3,800 manifest probes at 3 s.
+
+## Sweeps of 15 Nov 2026, wave 4 (blocked sources in Chrome; OeNB Primo first and deep pass)
+
+Folders `sweep_2026-11-15_uk_blocked_chrome`, `_continental_blocked_chrome`, `_oenb_deep`. Leads 2808-2831 (waves 4a: UK and continental blocked sources, OeNB first pass) and 2832-2837 (OeNB deep pass) merged; the 15 Nov audit (`research/vetting_audit_2026-11-15`) demoted 13 earlier promotions that had a decipherment filed with the text, so a filed decipherment, not a key, is what blocks promotion.
+
+- **UK blocked via Chrome:** NLS (Cloudflare clears itself in about 20 s), NLW (AtoM opens now), Bodleian (Anubis passes) swept by same-origin `fetch()` from the page; 6 rows, almost everything else already in the ledgers. Nothing viewed, nothing promoted.
+- **Continental blocked via Chrome:** OeNB Primo (opens), Biblissima portal (opens), Alvin (Anubis passes), CCFr and Delpher (opened, nothing to sweep); HathiTrust full text still stops at a Cloudflare checkbox (not clicked), manuscripta.at still 403 in Chrome.
+- **OeNB Primo (first pass and deep pass):** routes and terms in `sweep_2026-11-15_oenb_deep/README.md`. Use `tab=onb_hanna&search_scope=ONB_hanna` for the whole manuscript holdings and `facet=rtype,include,Papyrus` for the papyri. The autograph catalogue states cipher in the extent line, so searches for Geheimschrift, chiffriert, Chiffern, Zahlencode cover it; "Chiffre" there means a monogram signature (noise). The Korrespondenz facet is now exhausted for 22 cipher terms: the real hits are the Schlik volumes, the Dupont telegrams, the Adelgunde letters, Zane, five early autographs, and 6 new rows (the 9th-c. Arabic papyrus P.Vindob. A. P. 11016, Ferdinand II 1607, Maximilian I 1517, Eugene of Savoy 1701, a Stammbuch, a cryptography tract). **Not done:** the ONB digital viewer did not load in Chrome, so no OeNB item has been seen on an image and none meets the vetting bar; the papyrus is the one worth a look from another network.
+- **Tirol, Salzburg, Kaernten:** still no route (no item-level database for Tirol and Salzburg; Kaernten KLAIS does not load in Chrome either). Upper Austria and Vorarlberg are covered through findbuch (`sweep_2026-11-15_austria_swiss`).
+
+## Script wave 5, 15 Nov 2026 (Omont Saint-Germain, route probes)
+
+Folder `sweep_2026-11-15_script_wave5`; 0 leads. Omont Saint-Germain I/II are readable from archive.org (`cataloguegnrald00manugoog`, `cataloguegnrald01manugoog`):
+only key sheets, "avec dechiffrement" entries and Bellievre fr. 15566-15572 Matignon/Chasteauneuf cipher letters (unconfirmed folios). Still open: Gallica arks for fr. 15566-15568 (SRU needs Chrome),
+NAF I (no OCR). Gallica manifests answer curl at 3 s; ark check character is NOID (see README there).
+
+## Omont wave 6, 15 Nov 2026 (Gallica SRU in Chrome, Bellievre recueil)
+
+Folder `sweep_2026-11-15_gallica_omont_wave6`; leads 2838-2842 merged and promoted (fr. 15567 f. 24 and ff. 158-164, fr. 15568 ff. 151-152 and 207-208, fr. 15571 f. 37; tables by Tomokiyo, texts unread).
+fr. 15566 f. 50 is solved by Lasry (GL.htm), fr. 15572 ff. 277-278 are deciphered in ff. 279-280 (matignon1586c3 notes): neither is a lead. Route: Gallica SRU
+`gallica all "Français N" and dc.type all "manuscrit"` from a gallica.bnf.fr tab, then openapi.bnf.fr IIIF by curl. Still open: fr. 15567 f. 54 and f. 71, 113, 162, 194 and fr. 15568 f. 68v (named by Tomokiyo, not viewed), fr. 15569-15570 (arks unknown).
+Bellievre papers fr. 15890-15911 (the COVERAGE row "BnF, Bellievre papers not yet screened"): Omont's catalogue text (archive.org `cataloguegnrald00manugoog`) was read for the whole run, 15 Nov 2026. Its only cipher mentions are
+fr. 15906 "Memoires chiffres" of Entragues (ff. 759, 780: Lasry's, target `entragues1581`), Revol and Du Val de Stors "chiffrees, avec dechiffrement" (excluded) and key sheets; the images were not paged.
+ONB (leads 2832-2837), retry 15 Nov: api.onb.ac.at manifests 504 and the new viewer shows "Fehler 500" for every DTL id tried; nothing viewed. Lead 2835 closed `read` (decipherment_filed: "Begleitmaterial: Transskription").
+
+## Chrome wave 7, 15 Nov 2026 (Catalan archives portal; folder `sweep_2026-11-15_chrome_wave7`)
+
+- **New source:** Arxius en linia (`arxiusenlinia.cultura.gencat.cat`, item-level, ANC and Catalan comarcal archives; backend JSON route in Chrome, see the sweep README). 38 Catalan and Spanish terms run; leads 2843-2853, 9 promoted (1873 Interior Ministry telegrams seen on image, Carlist letters, Saavedra Fajardo 'cartes xifrades', Castelldosrius, Carreras 1936). Key-only items in `key_leads.json`, including the 1487 'Instruccions per cartes xifrades a Antonio Ximeno' (ACPS211-95-T2-242).
+- **Still Cloudflare-blocked in Chrome:** Finna, Archives Hub, Library Hub Discover, National Library of Wales archives; Abhilekh Patal 403. PRONI's eCatalogue now answers at `apps.proni.gov.uk/eCatNI_IE/` (already swept: its 'Tried and blocked' row is out of date).
+- **Not done:** Arkivportalen Norway (908 'chiffer' hits, mostly 20th century; URL paging does not render), ANC Carlist collection unclassified units (723), 2852/2853.
+
+## Chrome wave 8, 15 Nov 2026 (DARA Aragon and DigitArq non-ANTT; folder `sweep_2026-11-15_chrome_wave8`)
+
+- **DARA (`dara.aragon.es`):** new source, leads 2854-2863, promoted 2854-2857, 2860, 2861 (CRAR letters of 1477-78 and 1497 at AHP Zaragoza, Alcort cipher letters at Benasque). Route and gotchas in the sweep README. Searched: cifra, en cifra, carta cifrada. Not searched: other cipher terms; the CRAR letters after 1500; the Benasque 'Noticia' companions of the Gonzaga cipher sheets (lead 2862).
+- **DigitArq other archives (AHU, district archives):** all hits of 22 terms read (203 records); only the AHU 1897-98 files (lead 2863) and the Aquaviva 1587 cipher table (key lead) matter. AHU 'Telegramas cifrados' series of 1947-76 are out of period.
+- **Still unswept:** Euskadi, Navarra, Castilla y Leon, Andalucia, Valencia, Balearic, Galicia and Canarias portals (hosts not reachable by curl; try in Chrome), Lombardia Beni Culturali, Swiss, Belgian, Luxembourg and Dutch leftovers.
+
+## Chrome wave 9, 15 Nov 2026 (DARA retry, Navarra, Badator; folder `sweep_2026-11-15_chrome_wave9`)
+
+- **DARA:** the six wave 8 zero-hit terms were a stale session (cifrado/cifrada/cifras 126, 15 further terms run, all small ones paged); the 16 CRAR letters of 1500-1583 viewed on thumbnails. Leads 2864 (Alcort D/0086) and 2865 (Spinelli to Urrea, Venice 1512, CRAR 0055/0056), both promoted. The 'Mas informacion' fields (Alcance y contenido, Notas) are searchable and decide whether a decipherment is filed.
+- **Navarra Archivo Abierto** (`navarra.archivoabierto.es`): swept ('cifrada', 'cifra', 'en clave' ...); one record, lead 2866 (Fondo Rena 1521), not promoted.
+- **Badator** (`artxibo.euskadi.eus` ... `badator/maintSimple`): found to be the RAH Salazar y Castro index with item descriptions; 1,892 'cifra' records, 90 not covered by an existing target family; signatures not collected, nothing vetted. This is the best open route for 1520-29 and 1638-56 Spanish diplomatic ciphers: see the sweep README for the plan.
+- **No item-level route found:** Andalucia, Mallorca (Regne), Castilla y Leon (host dead), Lombardia Beni Culturali (fonds level).
+- **Still unswept:** Valencia (ARV), Galicia, Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers.
+
+## Chrome wave 10, 15 Nov 2026 (Badator export; folder `sweep_2026-11-15_chrome_wave10`)
+
+- **Badator / RAH Salazar y Castro index:** done for the term 'cifra' (1,892 records) through the portal's own 'Exportar Busqueda' CSV (all records with signatura and the index's remarks in one download). 9 new leads (2867-2875: Juan Perez, Marino Caracciolo, Herrera, Lannoy, Colonna, the Adornos, Adrian VI, Trivulzio, Leopold Wilhelm); none promotable (ciphertext not online). Wave 9's '90 rows' were mostly already leads 1085-1090. Not run: other cipher terms in Badator ('clave', 'cifra general', 'cifrado'); the export route makes them one click each.
+- **Galiciana ARPAD (Arquivo do Reino de Galicia and other Galician archives):** reached, search form found, search for 'cifra' hung the renderer (not retried).
+- **Still unswept:** Valencia (ARV; no online catalogue address found), Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers.
+
+## Chrome wave 11, 15 Nov 2026 (Badator promotions and more terms; folder `sweep_2026-11-15_chrome_wave11`)
+
+- **Wave 10's Badator leads 2867-2875 promoted** (with a new 2876, Fernando Marin): "ciphertext not online" is not a bar failure (`access: "archive"`, quote the archive description); the bar is a filed decipherment of the same text. Each was narrowed to letters with no filed decipherment and no Calendar of State Papers Spain entry (CSP harvested from British History Online, vols 2-4, cross-matched by volume and folio). Rule and method in the sweep README.
+- **Badator terms run:** cifrado, cifrada, cifradas, cifras, clave, descifrado, descifrar, abecedario. Chrome allows one download per tab: a fresh tab per export. San Sebastian Marqueses de San Millan y Villalegre series (Philip II and Zayas to Frances de Alava, 1560-69) found and closed read (printed 1991 edition). Not run: criptograma, zifra, cifrar, cartilla de cifra, numeros (low yield expected).
+- **Galiciana ARPAD:** behind a JavaScript bot-challenge page (the search returns a challenge shell, not results); not solved.
+- **Still unswept:** Valencia (ARV), Canarias, Madrid regional, SIUSA/SAN, Veneto, Sardinia, Sicily, Swiss/Belgian/Luxembourg/Dutch leftovers; the CSP harvest for 1522-24 is thin (vol. 2 pages carry few Salazar references), so a pass over Bergenroth's 1522-24 entries against 2870-2873 and 2876 would tighten them.
+
+## Chrome wave 12 (15 Nov 2026, `sweep_2026-11-15_chrome_wave12`)
+- **CSP Spain re-matched by sender and date** (vol. 2 1522-24, vol. 3 1525-29): the folio match of wave 11 missed printed letters. 2873 and 2869 closed `read` (moved back to leads), 2867 narrowed to 9 letters, 2868 to 29; 2870-2872 and 2876 unchanged. Vols 4 (1529-30) not re-matched: 2868 and others reach 1529 only through vol. 3.
+- **Probed, no yield:** Archivi Nazionali portal (search parameter ignored, script-drawn; already swept), AGATHA Belgium (inventory-level hits only, reCAPTCHA; `belgium_lux` has the EAD grep), Lombardia Beni Culturali (fonds-level), Archives Quickaccess (staff login).
+- **Blocked:** Valencia SAVEX (`savex.gva.es`) loads an error page in Chrome.
+- **Still unswept:** Canarias, Madrid regional, Veneto, Sardinia, Sicily regional portals, Dutch regional leftovers; Valencia needs another route.
+
+## Chrome wave 13 (15 Nov 2026, `sweep_2026-11-15_chrome_wave13`)
+- **Online Archive of California** swept by same-origin paging (`/search?q=<term>&group=false&per_page=100`): cipher 483, cypher 102, cryptogram, "secret writing", "in cipher", "in code", cifra, chiffre; cifrado not run (HTTP 405 after about 10 fast requests). Only new item: Stanford Montauti papers, 'Ciphers' folder (lead, contents unseen). Duke Archives answers (`/catalog?q=`): no lead. TARO's search API ignores the query (10,000 finding aids returned whatever the term).
+- **Blocked in Chrome again:** LAC Collection Search and Archives Hub (Cloudflare), natlib.govt.nz and Archives NZ (blank), NYPL Archives (Incapsula), UConn (403), UVA and Hagley (redirect loop), Waseda kotenseki (maintenance).
+- **JACAR:** the 2,122 body-text records are being scanned by `sweep_2026-11-15_jacar_retry/scan1.py rest_refs.txt` (first 73 empty); the three Waseda leads of the retry sweep are now merged through wave 13.
+- **Not reached:** Latin American national archive catalogues, South Africa, Sri Lanka, Ethiopia, Philippines.
+
+
+## Chrome wave 14 (15 Nov 2026, `sweep_2026-11-15_chrome_wave14`)
+- **OAC `cifrado`:** now behind a "confirm you are human" check; not clicked. Still the only OAC term not run.
+- **Memoria Chilena** re-run with cifra/cifrado/clave cifrada/en cifra/escritura secreta/criptografía: noise only. **eHive** cipher: royal cyphers only.
+- **Not reached, no open item search found:** AGN Colombia (host does not resolve), AGN Argentina/Peru/Uruguay/Venezuela/Cuba, Philippines, Macau, South Africa (NAAIRS, Cory), Sri Lanka, Ethiopia, Dar al-Kutub, BOA katalog, NLI. 0 leads.
+
+## Arabic sweep (15 Nov 2026, `sweep_2026-11-15_arabic`)
+- **Swept:** Penn LJS 51 paged whole (212 pages: only f. 106v bare); Princeton Geniza Project cipher/cryptic/code tags with CUDL images; Ahlwardt (Berlin) and the Gotha, Munich, Vienna, Leipzig, Hamburg, Strasbourg, Copenhagen and Leiden printed Arabic catalogues; VOHD full text on SBB digital (sample); Karabacek PERF, Grohmann CPR III and Arabic Papyri in the Egyptian Library; ONB papyrus catalogue (Primo guest REST); BnF Arabe via De Slane and the openapi.bnf.fr IIIF route; Wellcome; Vatican ar. records; Durham Abbas Hilmi II coded-telegram files HIL/274 and HIL/23 (decodes only); IIS catalogues by citation. 17 leads (2882-2898); 2882, 2883, 2886, 2890, 2891, 2892 promoted.
+- **Blocked from a cloud network, no Chrome:** Qalamos/orient-digital and ONB image hosts (connection reset); PARES (429) and BNE (403), so Spain is unswept for Arabic; QDL, EAP, CUDL search, Chester Beatty viewer, Fihrist live site, NLI, Juma al-Majid, vHMML, LoC, HathiTrust, Michigan, Harvard, Yale, Columbia, Princeton catalogue (bot checks or 403); YEK, Majlis, Darah (no connection).
+- **Still unswept:** Moroccan Makhzen and Saadian cipher letters (Tazi; Azizi & Azizi); Durham HIL/64 and HIL/65 ("Arabic and code", about 2,100 frames, digitised); Escorial; Süleymaniye; Egyptian, Israeli and Zanzibar archives; al-Azhar; ZMT. Image orders wanted: Bodleian Laud Or. 139 f. 101a, Vat. ar. 34 f. 288v, Berlin Ms. or. oct. 3629 f. 1a and f. 72b.
+
+## Wave 15 (15 Nov 2026, `sweep_2026-11-15_wave15_arabic2`, `sweep_2026-11-15_wave15_libraries`)
+- **Durham HIL/64 and HIL/65** ("Arabic and code"): British Sudan Government and Egyptian Coastguard telegrams of 1907-1914, not Arabic cipher. About 265 of 546 frames screened, only 8 of the 264 six-form frames. One bare cipher telegram promoted (2899); two cipher telegrams with clear copies in the file (lead 2900, key lookup); dictionary code words (lead 2901). Route: `iiif.durham.ac.uk` by curl, region requests stitch past the 1,024 px cap. **Left:** the six-form frames.
+- **CUDL search** (20 terms, in Chrome; AWS WAF stops curl after three requests): Trinity O.4.22 f. 248v Greek numeral cryptogram promoted (2902); CUL Add. 2255 f. 19v Jain colophon name (lead 2903).
+- **Royal Danish Library** (Primo API on `soeg.kb.dk`, about 60 terms, manuscripts facet; Gigas I-II grepped): NKS 775 kvart, Tautte's 570-page volume in cipher, promoted (2904). **HStA Dresden** (29 more terms): Loc. 03234/06 undeciphered sheet with its keys (lead 2905), Loc. 10922/01 cipher slips (lead 2906). **BnL Luxembourg:** no manuscript-letter records. **Veneto SIAR**, **Tilburg:** nothing.
+- **Blocked:** Qalamos and its sister hosts reset the connection in curl and in Chrome (network refusal; try another line). Fihrist live, Chester Beatty (Anubis) and vHMML (Turnstile) need Daniel at the keyboard. KBR (`opac.kbr.be`, `belgica.kbr.be`) resets scripts; Memoria digital de Canarias (Anubis), Comunidad de Madrid AtoM and memoriademadrid (403), Sardinia and Sicily `cultura.gov.it` hosts, Nijmegen (403): not swept, Chrome not tried.
+- **Morocco:** no cipher letter with an online image; Colin 1927 (Hespéris 7) prints a key, not a letter.
+- The rows above for KBR/BnL, Danish KB manuscripts and HStA Dresden under "Not looked at, though reachable" were already part-swept on 3, 9 and 11 Nov; this wave filled the rest except KBR.
+- **Bellièvre fr. 15890, 15894, 15897, 15898** (`sweep_2026-11-15_wave15_bellievre`): all 3,570 canvases fetched at 800 px from `openapi.bnf.fr` and read on contact sheets (240-320 px a page, so a lone code group inside a cursive line could be missed). No ciphertext. One undated key sheet at fr. 15890 f. 326r (view 659; names of the Netherlands affairs of about 1577-78 by inference), in `key_leads.json`; no letter in that key seen. fr. 15898 has two arks (btv1b9064324n ff. 1-400, btv1b90643252 ff. 401-810).
+
+## Wave 16 (15-16 Nov 2026, `sweep_2026-11-15_wave16_durham`, `sweep_2026-11-15_wave16_chrome`)
+- **Durham HIL/64 and HIL/65 finished:** all 546 frames looked at (the six-form frames at about 350 px a form, suspects at full resolution). Clear copy of the 1912 Coastguard telegram found at HIL/64/739-737, so 2899 went back to the leads as a key lookup. Five more cipher/clear pairs (1907 Arabic; 1908, 1909 and 1912 English simple substitution) recorded in the README as key material. Three bare cipher telegrams promoted: 2907 (HIL/64/400, 1909), 2908 (HIL/65/273-272, Siwa 1913), 2909 (HIL/65/1122, 1914). About 133 telegrams carry dictionary code words. **Left:** HIL/66 onwards not opened.
+- **Chrome pass on blocked portals:** KBR (`opac.kbr.be` search page, then POST JSON to `/Library/Portal/Recherche/Search.svc/Search` from the page; 55 terms), Memoria digital de Canarias (Omeka S `mdc.ulpgc.es/s/mdc/busqueda?q=`), Memoria de Madrid (`/browse?q=must,any_exclude_fulltext,contains,<term>`) and the Biblioteca Historica Municipal catalogue: no new item; only the Anover cedulas (entry 1988). **Needs Daniel:** Comunidad de Madrid AtoM (ALTCHA box). **Needs another network line:** Sardinia and Sicily state-archive hosts, Nijmegen studiezaal (403), Qalamos (connection reset in Chrome too; suspected VPN exit). PARES 429 on the first request.
+

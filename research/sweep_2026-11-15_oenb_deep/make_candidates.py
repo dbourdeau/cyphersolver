@@ -1,0 +1,96 @@
+"""Builds candidates.json for the OeNB Primo deep pass of 15 Nov 2026 (Chrome; see README.md)."""
+import json, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = 'OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026'
+NOTE = ('Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); '
+        'not viewed on an image')
+
+
+def SEARCH(term, scope):
+    tab, sc = ('onb_hanna', 'ONB_hanna') if scope == 'hanna' else ('default_tab', 'ONB_gesamtbestand')
+    return {'href': f'https://search.onb.ac.at/primo-explore/search?query=any,contains,{term}&tab={tab}&search_scope={sc}&vid=ONB&lang=de_DE&offset=0',
+            'label': f'OeNB Primo search ({term})'}
+
+
+PRIOR = ('open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every '
+         'candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass')
+
+
+def row(**k):
+    b = dict(source=SRC, score_note=NOTE, seen='catalogue', needs_archive_scan='yes', prior_art=PRIOR, region='Central Europe')
+    b.update(k)
+    return b
+
+
+C = []
+C.append(row(
+    year=850, date='3rd c. AH / 9th c. AD', language='Arabic', region='Other', period='unknown',
+    title="Arabic letter written in a secret script ('Brief in Geheimschrift') with a second letter and a contract, Ihnas, Egypt, 9th c. (P.Vindob. A. P. 11016)",
+    correspondents='unknown writers (documentary papyrus from Ihnas / Herakleopolis, Archduke Rainer papyrus collection)', place='Ihnas, Egypt',
+    shelfmark='OeNB, Papyrussammlung, P.Vindob. A. P. 11016 (digital object data.onb.ac.at/dtl/4865249)',
+    folio_note="2 fragments, 30.7 x 8.3 cm and 7.3 x 8.7 cm, papyrus, written on both sides. Record title 'Brief in Geheimschrift, ein zweiter Brief und Vertrag, unpubliziert'; keywords Brief, Geheimschrift, Vertrag, Beglaubigung, Iqrar, Unterschrift. 'Digitalisierung und online Beschreibung: Mellon-Projekt (U. Bsees 2015, A. Kaplony 2016)'. Literature: Karabacek, Papyrus Erzherzog Rainer. Fuehrer durch die Ausstellung, Wien 1894, p. 226 no. 8 ('Brief in Geheimschrift')",
+    cls='A',
+    status="Catalogue: a letter in a secret script, unpublished. Karabacek's 1894 exhibition guide lists it; no decipherment found in the catalogue record. The ONB digital object did not open in Chrome (error page), so the script was not seen.",
+    why="Possibly the oldest cipher text in the lead list (9th c. Egypt): a documentary Arabic papyrus with a letter in a secret script and a second letter and contract in ordinary script (a possible crib). Online-digitised per the record.",
+    importance=5, solvability=2, difficulty=4,
+    verify="Open the digital object (data.onb.ac.at/dtl/4865249 or the papyrus portal) in a browser that loads it; check that the secret script is legible and long enough; search Karabacek 1894, Kaplony, Bsees and the Mellon Arabic papyri publications for a reading.",
+    links=[{'href': 'http://data.onb.ac.at/dtl/4865249', 'label': 'OeNB digital object'}, SEARCH('Geheimschrift', 'all')],
+    access_note='Record says digitised and online (Mellon project); the viewer URL gave an error page in Claude in Chrome'))
+C.append(row(
+    year=1607, date='7 Jan 1607', language='German / Latin', period='1598-1610',
+    title="Archduke Ferdinand (II) at Graz to Rudolf II, 7 Jan 1607: letter with 3 letters 'in Geheimschrift' filed as accompanying material",
+    correspondents='Ferdinand II, later Holy Roman Emperor (Archduke of Inner Austria) -> Rudolf II, with 3 further cipher letters',
+    place='Graz', shelfmark='OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 15/1-3',
+    folio_note="1 Brief mit Unterschrift und Anschrift, 2 Blatt, 2 Seiten. 'Begleitmaterial: Brief an Ferdinand II. v. e. unbek. Schr.; 3 Briefe in Geheimschrift; 3 latein. Schriftbl.' Source: Alter Autographenkatalog",
+    cls='B',
+    status='Catalogue: three letters in a secret script filed with the letter. Whether the 3 Latin sheets are decipherments is not stated in the record; nothing published found.',
+    why="Three cipher letters from the Inner Austrian court; the 3 Latin sheets may be plaintext renderings, which would give a crib or a filed decipherment (to be checked).",
+    importance=3, solvability=3, difficulty=3,
+    verify='Order Autogr. 15/1-3; see whether the Latin sheets decipher the three letters (then the lead is closed as a decipherment filed with it); compare Habsburg Inner Austrian ciphers of 1600-10.',
+    links=[SEARCH('Geheimschrift', 'all')], access_note='description only (OeNB Autographensammlung catalogue); no image route found'))
+C.append(row(
+    year=1517, date='7 Aug 1517', language='German', period='1497-1559',
+    title="Emperor Maximilian I, letter marked 'Chiffern' (cipher), 7 Aug 1517, from the Tiroler Gubernium (Autogr. 15/28-1)",
+    correspondents='Maximilian I (writer; recipient not given in the list view)', place='unknown (Tyrol chancery)',
+    shelfmark='OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 15/28-1 (series 15/28(1-11))',
+    folio_note="1 Brief mit Unterschrift (Chiffern), mit Anschrift, 1 Blatt, 1 Seite. Provenance: Tiroler Gubernium, abgegeben 1831. AC15074034. Other items of the 15/28 series (15/28-6, Traunstein 1508) carry 'Chiffre' meaning a monogram signature, so check that -1 is a cipher letter and not signed in monogram",
+    cls='B', status="Catalogue: the extent line says 'Chiffern'. Could be a ciphered text or a monogram; not opened.",
+    why='A 1517 letter of Maximilian I flagged as in cipher, held with Tyrolean chancery papers; one leaf, an early imperial cipher if it is one.',
+    importance=3, solvability=3, difficulty=3,
+    verify="Open the record and any image; read the extent line in full; look for Maximilian cipher keys of 1500-1519 (the Innsbruck chancery), compare the Tyrolean Gubernium files.",
+    links=[{'href': 'http://data.onb.ac.at/rec/AC15074034', 'label': 'OeNB record'}, SEARCH('Chiffern', 'hanna')], access_note='description only'))
+C.append(row(
+    year=1701, date='30 Sep 1701', language='German / French', period='1701-1800',
+    title="Prince Eugene of Savoy, letter 'in Chiffern' to a count, 30 Sep 1701, with a transcription filed (Autogr. 14/61-15)",
+    correspondents='Eugen von Savoyen-Carignan -> an unnamed count', place='unknown (Italian campaign, 1701)',
+    shelfmark='OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 14/61-15 (series 14/61(1-32))',
+    folio_note="1 Brief mit Unterschrift (in Chiffern), 2 Blatt, 3 Seiten. Provenance: Alter Bestand (Kuppitsch). 'Begleitmaterial: Transskription'. AC17356463",
+    cls='C', status="Catalogue: a ciphered letter with a transcription filed with it; the transcription is probably a decipherment, in which case nothing is open here.",
+    why='Eugene of Savoy ciphered letter of 1701; listed as a weak lead because the filed transcription may already decipher it.',
+    importance=2, solvability=3, difficulty=3,
+    verify='Open the record; check what the Transskription is (plaintext of the cipher or a transcription of the cipher signs). If a decipherment is filed, close as decipherment_filed.',
+    links=[{'href': 'http://data.onb.ac.at/rec/AC17356463', 'label': 'OeNB record'}, SEARCH('Chiffern', 'hanna')], access_note='description only'))
+C.append(row(
+    year=1784, date='1783-1791', language='German', period='1701-1800',
+    title="Stammbuch with entries in Geheimschrift (fol. 24r, 28r, 31r dated 25 Sep 1784, 37r, 78v), Vienna 1783-91 (Cod. Ser. n. 4832)",
+    correspondents='friends of the album owner (Haschka, Epstein von Ankersberg and others)', place='Vienna (probably)',
+    shelfmark='OeNB, Sammlung von Handschriften und alten Drucken, Cod. Ser. n. 4832',
+    folio_note="Entries 'in Geheimschrift' on fol. 24r, 28r, 78v (undated), fol. 31r (25.09.1784), fol. 37r (with a silhouette); fol. 51r a signature in Geheimschrift (Wentzel Tobias Franz Epstein, Edler von Ankersberg). AC14378542",
+    cls='C', status='Catalogue only. Short album entries in a secret script, probably a simple substitution or Masonic alphabet.',
+    why='Several short ciphered album entries of the 1780s plus a signature in the same script that gives a known-plaintext name.',
+    importance=2, solvability=4, difficulty=2,
+    verify='Look at the folios (OeNB digital copy if any); the Epstein signature is a name crib. Compare Masonic and Enlightenment-circle alphabets.',
+    links=[{'href': 'http://data.onb.ac.at/rec/AC14378542', 'label': 'OeNB record'}, SEARCH('Geheimschrift', 'hanna')], access_note='description only'))
+C.append(row(
+    year=1650, date='17th century', language='Italian', region='Italy', period='1611-1650',
+    title="Fedele Piccolomini Fedeli, 'Copia d'una cifra manifesta con la sententia contenuta in essa', a tract on cryptography, 7 leaves (Cod. 9521)",
+    correspondents='Fedeli, Fedele Piccolomini (author)', place='unknown',
+    shelfmark='OeNB, Sammlung von Handschriften und alten Drucken, Cod. 9521',
+    folio_note="Handschrift, 7 Bll., quarto, paper, Italian, 1600-1699. Incipit 'Ogni lettera significa ...', explicit '... se stessi condannerano'. Content details taken from Tabulae codicum. AC13952749",
+    cls='C', status="A short cryptography tract that gives a cipher with the sentence it contains; a worked example rather than a letter.",
+    why='A tract with an example cipher and its plaintext sentence (a control text, not a historical letter); weak lead.',
+    importance=1, solvability=4, difficulty=2,
+    verify='View the leaves; check whether the cipher sample is given with its key (the title says the sentence is stated).',
+    links=[{'href': 'http://data.onb.ac.at/rec/AC13952749', 'label': 'OeNB record'}, SEARCH('cifra', 'hanna')], access_note='description only'))
+json.dump(C, open(os.path.join(HERE, 'candidates.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print(len(C), 'rows')

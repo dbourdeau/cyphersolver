@@ -7,7 +7,7 @@ from kcommon import parse
 key = {}
 for l in open(sys.argv[1], encoding='utf-8'):
     if l.startswith('#') or l.startswith('code') or not l.strip(): continue
-    c, v, s, _ = l.rstrip('\n').split('\t'); key[int(c)] = (v, s)
+    c, v, s = l.rstrip('\n').split('\t')[:3]; key[int(c)] = (v, s)
 nm = np_ = nn = 0
 for p in parse(sys.argv[2]):
     print('==', p['page'], p['folio'])

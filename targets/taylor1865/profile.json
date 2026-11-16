@@ -1147,6 +1147,80 @@
       "kind": "verification",
       "what": "Integration check (PR #577) by an AI reader of the project: check.py passes, the two image hashes match on re-download, ODYXXRO and GJS confirmed on the crops. On the 10 April crop two further groups read LYWVEW (SHOUKD for SHOULD) and MF (TO) against the transcription's LVWVEW and NF; recorded in NOTES for the next pass, files not edited.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "what": "Follow-up to the PR #577 notes: one AI reader re-read the three disputed groups of 10 April on the full NARA frame 0045, two passes (enlarged grayscale crops; whole line in colour and grayscale) against letter forms on the same telegram. LYWVEW (Y as in XCYKG) and MF (M as in MRU and JMNH) are supported; EIEX leans to E (foot stroke as in EX) and stays open. v11-0045b_transcription.txt updated; decrypts TQOOPS SHOUKD NOT BE SENT TO DEMO POLIS AND PORTIRN OF THE ST ORDS BLTO. No person has checked it; no reading or share changes.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "transcription",
+      "what": "Open frames of entry 681 (vol. 196 fr. 0053, 0056, 0064, 0065, 0071; vol. 11 fr. 0044-0046, 0078-0081; vol. 10 fr. 0056) transcribed twice blind by four AI readers (two per volume), each with a seed telegram first (all passed the 90% mark). Agreement 1230/1317 letters over 12 telegrams; weakest the flowing-capital 11 April telegram on fr. 0046 (60/94). Frames 0078-0081 hold no cipher. blind_2026-11-15/.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "control",
+      "technique": [
+        "key matching",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Pre-registered test (TEST_PLAN.md, frozen by sha256 before any key was applied): four known keys at all 15 positions on each reader's transcription, quadgram score, one-slip model; 200 shuffles and 200 random keys under the same maximisation; pass above the maximum of all 400. Positive controls pass. 11 of 12 telegrams yield for both readers; the second 11 April telegram on fr. 0046 fails under every key and both models (a miss).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "reading",
+      "what": "New: 9 March 1865 to Lt Col W. M. Levy (fr. 0056 lower telegram), COMPLETE VICTORY from position 0, 20 of 21 cipher words read, GUAGE needs I for J twice (hole): 155 Mobile and Montgomery cars to be moved on trucks to the wide gauge at Columbus, Ga., under pretense of assisting roads in Georgia. New in part: 11 April 1865 to Maury (fr. 0046 upper telegram), COME RETRIBUTION, 10 of 21 words read, 2 doubtful, 9 unread. Earlier provisional readings of 8, 9, 13, 17 March, 10 April and 18 January confirmed on the blind transcriptions; not applied to their files. Not in profile.outcome.texts and no reading review recorded: left to the reviewers.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "what": "Independent verifier (AI) and a second blind helper transcribed the 9 March Levy and the first 11 April telegrams from the images before seeing the work (107/109 and 67/91 letters agreeing), decrypted their own transcriptions with every known key at every position and got the same words; re-ran the frozen test with identical results; classified the letter corrections against the image (GUAGE, OF, TRAINS) and as image-supported alternatives (COLUMBUS, RAIL).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "solver",
+      "technique": [
+        "hill climbing",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Second 11 April telegram on vol. 11 fr. 0046 (T11, 107 letters), after a frozen plan (blind_2026-11-15/rally_key/key_search/TEST_PLAN.md): known keys used other ways (Beaufort, reversed, restarted, tableau slip), a literature key list and crib dragging all missed; an unconstrained hill-climb over 15-letter Vigenere keys (30 restarts) returned RALLYTOTHEFRONT on reader B1's text (-4.857 against a best of -5.915 on 100 hill-climbed shuffles); on B2's it stopped at GQHAYTOTHEFRONT (11 of 15 letters). Its calibration missed its own mark: 12 of 15 key letters on 5 of 7 known telegrams was required; 3 of 7 for both readers, 5 of 7 for either.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "transcription",
+      "what": "Verification: two further blind transcriptions of T11 by AI helpers told nothing of the key (frozen before decryption): 107 letters, 22 dash-separated groups each; 104 of 107 letters agree, 98-101 with the earlier readers B1 and B2. Both read every one of the clerk's E/F as E, V as Y and the gutter M as D. Both, separately, found faint pencil numerals over cipher letters 30, 45, 60, 75, 90 and 105 (none over 15) and an unclear mark over letter 20.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "control",
+      "technique": [
+        "key matching",
+        "statistical test"
+      ],
+      "what": "Frozen verification test (rally_key/verification/TEST_PLAN_verify.md): RALLYTOTHEFRONT on each new helper's first choices, groups giving dictionary words, mark 15 of 22 and 17 of 25 on both, every control below. Miss: 11 of 22 and 12 of 25 on both; controls (400 random English-like keys; the four known keys at all offsets) at most 5 of 22. A second frozen test, a blind classifier on 14 shuffled E/F tiles (this clerk's E has a lower-right tick, his F not), sorted 12 of 14 as the key predicts (mark 12): pass.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "reading",
+      "what": "New: T11, 11 April 1865, Surget at Meridian to Maury at Mobile (v11-0046b-maury_*), key RALLYTOTHEFRONT from the first cipher letter: 'Let me know EXACTLY HOW LONG YOU WI[L]L HOLD THE CITY as the RUNNING OF THE TRAINS DEPENDS on that. If you can HOLD ON UNTIL NINE O CLOCK TOMORROW Can have four or five ADDITIONAL TRAINS THERE.' All 22 groups give words; one letter is a correction against the image (20, T read, J needed: a hole), ten are image-supported choices, two (the gutter M, a C under a blot) are possible but unsettled. Fits OR I/49/2 pp. 1225-1226 and 1255 (Mobile evacuated on the night of 11 April); not printed there. Not in profile.outcome.texts and no reading review recorded: left to the reviewers.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "literature search",
+      "what": "RALLY TO THE FRONT as a Confederate key or watchword: not in this folder, the repository, OR I/49 pts. 1-2, Friedman's Lecture No. 4 and Introduction to Cryptology IV (keys COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION, IN GOD WE TRUST), Plum (1882) vols. 1-2, Bates (1907) or an Internet Archive full-text search. Not opened: Gaddy's chapter in Masked Dispatches (download refused), Kahn's The Codebreakers, Gaddy's Cryptologia articles. The key on every other cipher stream of the folder at all phases: no English.",
+      "result": "failed"
     }
   ],
   "outcome": {

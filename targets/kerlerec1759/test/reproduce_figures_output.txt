@@ -1,0 +1,42 @@
+== hashes
+OK   0bae19f6d954 test/TEST_PLAN.md
+OK   ae4bea1a1e4b key/key_clerks_only_frozen.tsv
+OK   b4aac5da54a4 key/key_clerks_enlarged_frozen.tsv
+OK   4999f4a679d9 key/pairs_more.tsv
+OK   1bb72331a1d5 key/clerks_values.tsv
+OK   b80c5df79856 test/TEST_PLAN_followup.md
+== held-out test, 200 shuffles
+a. clerks key of the first test
+   key key_manuscript_frozen.tsv: 198/253 = 0.783
+   shuffled keys (200): mean 0.164, median 0.162, max 0.241
+   groups scored 253 | lost/numeral groups not scored 14
+b. committed keys together
+   key union_committed_keys.tsv: 232/253 = 0.917
+   shuffled keys (200): mean 0.145, median 0.142, max 0.233
+   groups scored 253 | lost/numeral groups not scored 14
+c. follow-up clerks-only key
+   key key_clerks_only_frozen.tsv: 237/253 = 0.937
+   shuffled keys (200): mean 0.127, median 0.126, max 0.186
+   groups scored 253 | lost/numeral groups not scored 14
+d. follow-up enlarged clerks key
+   key key_clerks_enlarged_frozen.tsv: 238/253 = 0.941
+   shuffled keys (200): mean 0.122, median 0.119, max 0.182
+   groups scored 253 | lost/numeral groups not scored 14
+== nos. 206, 207, 215
+groups: {'206': 555, '207': 191, '215': 322} total 1068
+groups resting on Pusch alone in the committed key: {'206': 101, '207': 56, '215': 63} total 220
+  no. 206 {'a': 93, 'b': 4, 'still Pusch only': 4}
+  no. 207 {'a': 46, 'b': 5, 'still Pusch only': 5}
+  no. 215 {'a': 58, 'still Pusch only': 2, 'b': 3}
+  all three: {'a': 197, 'b': 12, 'still Pusch only': 11}
+decoded value changes (9):
+  206 f81v l.1 g.3 code 577: faeon -> facon (a)
+  206 f81v l.9 g.1 code 138: troupe -> troupes (a)
+  206 f81v l.11 g.5 code 591: None -> autorite (a)
+  206 f81v l.13 g.6 code 593: incessamment -> incessament (a)
+  206 f81v l.15 g.3 code 378: monsieur -> m (a)
+  207 f97r l.3 g.3 code 594: temps -> tems (a)
+  207 f97r l.8 g.9 code 47: cha -> chat (a)
+  207 f97r l.14 g.1 code 293: betiment -> batiment (b)
+  215 f111r l.14 g.11 code 33: guerrier -> sguerrier (a)
+
