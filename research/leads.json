@@ -46719,7 +46719,7 @@
      "label": "Hungaricana regest, Türkei I. Karton 34. Konv.2. 1576.XI-XII. fol. 178."
     }
    ],
-   "access_note": "regest only on Hungaricana (Vienna inventory, content provider Bécsi Magyar Levéltári Kirendeltség); no images online; HHStA reproduction order needed",
+   "access_note": "Regest only on Hungaricana; HHStA Türkei I Kt. 34 Konv. 2 fol. 178-184 (cipher page and key) needs a copy order.",
    "source": "Rome / HAB / Africa / Hungary sweep (Hungaricana Vienna inventory), 14 Nov 2026",
    "score_note": "Scored from the one-line regest; not viewed",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on 'Karton 34', 'BecsSeg/47910', 'Türkei I. Karton' finds no row for this folio (other Türkei I Karton items are in the catalogue); Lang 2015 not read, so a decipherment in his list is possible; Lasry and DECODE not searched for this folio",
@@ -46727,7 +46727,28 @@
    "needs_archive_scan": "yes",
    "ark": "",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests 47880-47915 (Türkei I Kt. 34 Konv. 2, 1576 XI-XII, fol. 52-193) read in full by script on 16 Nov 2026 (raw/kt34.txt), including archives.hungaricana.hu/en/lear/BecsSeg/47910/ (fol. 178) and 47912/ (fol. 180-184). No images.",
+     "extent": "One page (fol. 178), undated ('1576?'), sender and language not stated.",
+     "cipher": "Regest 47910: 'egy oldal csupa rejtjel' (one page entirely in cipher), no decipherment mentioned. 47912, fol. 180-184: 'Egy darab rejtjelkulcs' (one cipher key). The same Konvolut holds Ungnad's despatches of 2, 5, 8 and 19 Dec 1576, all ciphered with interlinear or separate decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Karton 34', 'Kt. 34', 'Ungnad', '47910' finds catalogue 342 (Ungnad 12 Mar 1576, key R392 transcribed in targets/ungnad1576/KEY.md) and lead 1220 (Türkei I Kt. 29-36); no row for fol. 178 or the fol. 180-184 key.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Karton 34', 'Kt. 34', 'Ungnad', '47910': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Karton 34', 'Kt. 34', 'Ungnad', '47910': no entry for this item.",
+     "edition": "Not printed as far as the regests show (no edition cited for 47910 or 47912); the Lang 2015 repertory list of Ungnad pieces (C.Ung.*) was not re-read here.",
+     "literature": "No web search for a one-line undated folio; the regest context is the deciding evidence."
+    },
+    "key_check": "Two keys at hand: the 'rejtjelkulcs' at fol. 180-184 of the same Konvolut (Hungaricana 47912) and Ungnad's key R392 (OSZK Quart. Lat. 2254 f. 23, transcribed in targets/ungnad1576/KEY.md). Either would decipher the page if it is Ungnad's.",
+    "duplicates": "A single folio within lead 1220 (Türkei I Kt. 29-36); possibly a duplicate of a deciphered Dec 1576 Ungnad despatch in the same Konvolut (not checkable without the image).",
+    "verdict": "key_lookup",
+    "closed": "A one-page undated cipher filed beside a cipher key (fol. 180-184) in a Konvolut of deciphered Ungnad despatches, with Ungnad's key also on DECODE (R392): a key lookup and part of lead 1220, not a separate open target."
+   }
   },
   {
    "id": 2585,
@@ -50604,11 +50625,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regests only on Hungaricana; 46230 is HHStA Türkei I Kt. 25 Konv. 3 fol. 151-152 (copy order).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Stoeckl: the two 'nincs feloldva' regests the row names (46230, 18 Sep 1569, 'latin orig. sifrir, de nincs feloldva, 3 duplikatum'; 46258, 24 Dec 1569, 'nincs feloldva, mert duplikatumnak minositettek', a copy at Kt. 26 Konv. 4 fol. 17-20) are copies marked as duplicates, so an original exists; the Fazekas-Fodor edition (2025) covers Stoeckl 1569-70 exactly and its full text is not online. DECODE and Lang's repertory have no Stoeckl. Needs the edition's coverage before any letter counts as open. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Stoeckl: the two 'nincs feloldva' regests the row names (46230, 18 Sep 1569, 'latin orig. sifrir, de nincs feloldva, 3 duplikatum'; 46258, 24 Dec 1569, 'nincs feloldva, mert duplikatumnak minositettek', a copy at Kt. 26 Konv. 4 fol. 17-20) are copies marked as duplicates, so an original exists; the Fazekas-Fodor edition (2025) covers Stoeckl 1569-70 exactly and its full text is not online. DECODE and Lang's repertory have no Stoeckl. Needs the edition's coverage before any letter counts as open. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana searches 'Stöckl', 'Stöckel', 'Stoeckl', 'Anselm', 'Anselmus' and 43 Stöckl regests read in full by script on 16 Nov 2026 (raw/st_full.txt): archives.hungaricana.hu/en/lear/BecsSeg/46195/, 46196/, 46230/, 46240/, 46241/, 46246/, 46253/, 46258/, 46266/, 46271/, 46277/, 46293/, 46297/, 46298/, 46301/, 46304/, 46314/, 46361/-46378/, 46884/. No images.",
+     "extent": "About 18 cipher-bearing Stöckl letters to Maximilian II and Zasius, May 1569 - Apr 1570 (Kt. 25-26), plus one of 28 Jul 1573 (46884), and a run of 18 clear Latin copies of his letters 26 Nov 1569 - 12 Jul 1570 (46361-46378).",
+     "cipher": "Originals 'sifrír, sorközben feloldva' (46240, 46241, 46246, 46253, 46266, 46271, 46277, 46297, 46298, 46304, 46314, 46884), 'külön papíron feloldva' (46195; 46196 is the decipherment of two letters of 29 May and 3 Jun), 'külön egy feloldott másolat' (46301). Undeciphered: duplicates beside deciphered originals (46246, 46293, 46304), 46258 (clear copy 46363), and 46230 alone with no decipherment or clear copy found."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Stöckl', 'Stoeckl', 'Stockl', 'Zasius' finds only this lead; the 14 Nov vetting found no Stöckl record in DECODE or Lang's repertory.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Stöckl', 'Stoeckl', 'Stockl', 'Zasius': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Stöckl', 'Stoeckl', 'Stockl', 'Zasius': no entry for this item.",
+     "edition": "The Fazekas-Fodor edition of the Constantinople embassy reports (2025) covers Stöckl 1569-70 (per the 14 Nov vetting); its text is not online and was not seen, so whether it prints 46230 is unchecked.",
+     "literature": "The archive's regests settle the status of every piece but 46230; no further literature search."
+    },
+    "key_check": "The interlinear pairs and clear copies give Stöckl's 1569-70 cipher (inherited from ambassador Wyss, per 46240); 46230 is a key lookup against them.",
+    "duplicates": "known.py: no other row. 46258's clear copy 46363 and the duplicates 46246/46293/46304 are internal duplicates resolved here.",
+    "verdict": "partly_read",
+    "closed": "All Stöckl ciphers of 1569-70 are deciphered on file or have clear copies except the short letter 46230 of 18 Sep 1569, a key lookup against the many pairs."
+   }
   },
   {
    "id": 2680,
@@ -50645,11 +50687,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regests only on Hungaricana; no images.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Provisionali: the only 'csupa sifrir' item (46702, 18 Jun 1572, Kt. 28 Konv. 4 fol. 218-219) is 'probably a copy of a letter of Ungnad and Provisionali' per the regest, so the sender is not established; Provisionali's key sheet is T.Gev.16 (Lang p. 191, 1570) and DECODE R388. The Fazekas-Fodor edition covers him 1569-70. Not narrowed to a letter. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Provisionali: the only 'csupa sifrir' item (46702, 18 Jun 1572, Kt. 28 Konv. 4 fol. 218-219) is 'probably a copy of a letter of Ungnad and Provisionali' per the regest, so the sender is not established; Provisionali's key sheet is T.Gev.16 (Lang p. 191, 1570) and DECODE R388. The Fazekas-Fodor edition covers him 1569-70. Not narrowed to a letter. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana search 'Provisionali' (75 regests) read in full by script on 16 Nov 2026 (raw/prov_full.txt), plus 46700-46704 and 46345 around the all-cipher piece: archives.hungaricana.hu/en/lear/BecsSeg/46702/, 46703/, 46337/, 46346/, 46347/, 46711/, 46712/. No images.",
+     "extent": "About 25 Provisionali cipher pieces, Jan 1570 - Jun 1572 (Kt. 26-28): his own reports, joint letters with Stöckl (1570) and with David Ungnad (1572).",
+     "cipher": "Wording 'olasz orig., sifrír, sorközben feloldva' throughout (46269, 46278 'külön feloldása', 46294-46296, 46302-46306, 46316-46318, 46323, 46327-46328, 46334, 46337, 46344, 46692, 46703, 46711, 46712). 46702 'csupa sifrír' is a second exemplar of 46703. 46346 and 46347 (14 Jul 1570) are duplicates 'nincs feloldva' filed with a copy each."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Provisionali', 'Karton 28', 'Kt. 28' finds only this lead; Provisionali's key sheet is DECODE R388 / Lang T.Gev.16 (per the 14 Nov vetting).",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Provisionali', 'Karton 28', 'Kt. 28': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Provisionali', 'Karton 28', 'Kt. 28': no entry for this item.",
+     "edition": "The Fazekas-Fodor edition (2025) covers Provisionali 1569-70 (per the 14 Nov vetting); not seen. 46345 (Selim to Tsar Ivan, ciphered Italian translation, interlinear decipherment) is printed in Petritsch I no. 614.",
+     "literature": "The archive's regests settle the status; no further search."
+    },
+    "key_check": "Key on DECODE as R388 (Lang T.Gev.16, 1570); the interlinear decipherments also give it. Not applied because nothing is left unread.",
+    "duplicates": "46702 duplicates 46703; 46346/46347 duplicate a letter of 14 Jul 1570 with copies filed. Joint Provisionali-Stöckl letters overlap lead 2679.",
+    "verdict": "read",
+    "closed": "Every Provisionali cipher piece of 1570-72 is deciphered on file or is a duplicate of a deciphered letter; the all-cipher 46702 is a second exemplar of the deciphered 46703 of the same day."
+   }
   },
   {
    "id": 2681,
@@ -50682,11 +50745,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regests only on Hungaricana; HHStA Türkei I Kt. 16 Konv. 1 fol. 49-50 and Kt. 19 Konv. 3 fol. 29-30 would need a copy order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Czernovich: 45249 (11 Jul 1565) is marked 'duplikatum, nincs feloldva'; the other ids (44093, 44098) were not opened; web search shows his 1562 reports as Italian with interlinear decipherment. DECODE and Lang's repertory have no Czernovich. Not narrowed to an original. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Czernovich: 45249 (11 Jul 1565) is marked 'duplikatum, nincs feloldva'; the other ids (44093, 44098) were not opened; web search shows his 1562 reports as Italian with interlinear decipherment. DECODE and Lang's repertory have no Czernovich. Not narrowed to an original. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana Vienna-inventory search 'Czernovich' (218 regests), 'Csernovics' (8), 'Cernovich' (1); every regest read in full by script on 16 Nov 2026 (raw/cz_full.txt), e.g. archives.hungaricana.hu/en/lear/BecsSeg/44093/, 44098/, 44170/, 44171/, 44618/, 44619/, 45148/, 45249/, 45250/. No images.",
+     "extent": "About 153 cipher-bearing regests 1556-66 (Kt. 12: 8, Kt. 13: 60, Kt. 14: 39, Kt. 15-21: 46), mostly Italian reports of Michael Czernovich as secret informant, then as envoy to Maximilian II (1565).",
+     "cipher": "Typical wording 'olasz orig. sorközi feloldással' (interlinear decipherment), 'sifrír, mellette feloldva', 'külön feloldás'. Without decipherment: 44170 and 45249 (duplicates, deciphered twins 44171 and 45250 of the same date), 44618 (16 Aug 1562, duplicate, 'feloldás nélkül'), and 45148 (14 Feb 1565, 'sifrír, csak részben feloldva')."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Czernovich', 'Cernovic', 'Csernovics', 'Czernović' finds only this lead; no DECODE record named for Czernovich (the 14 Nov Hungaricana vetting also found none in DECODE or Lang's repertory).",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Czernovich', 'Cernovic', 'Csernovics', 'Czernović': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Czernovich', 'Cernovic', 'Csernovics', 'Czernović': no entry for this item.",
+     "edition": "No edition checked for the residue; the 14 Nov vetting noted a web source describing his 1562 reports as Italian with interlinear decipherment, consistent with the regests. The two residual pieces are not shown to be printed.",
+     "literature": "The regests themselves settle the status of the series; no separate literature search on the two residual pieces."
+    },
+    "key_check": "The ~149 interlinear pairs give Czernovich's key(s) over 1556-65; the residual partly deciphered 45148 and the duplicate 44618 would be key lookups against them. No key sheet named.",
+    "duplicates": "The row's count (10 regests) is far too small; no overlap with other leads or catalogue entries (known.py).",
+    "verdict": "partly_read",
+    "closed": "Nearly all of Czernovich's ciphered reports 1556-65 carry a contemporary decipherment; only the undeciphered part of 45148 (14 Feb 1565) and the duplicate 44618 (16 Aug 1562) remain, both key lookups against the many interlinear pairs."
+   }
   },
   {
    "id": 2682,
@@ -50723,11 +50807,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regests only on Hungaricana; the texts are printed in Nehring, Austro-Turcica 1541-1552 (Munich 1995).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Malvezzi Kt. 8-9: the regests cite Nehring's Austro-Turcica 1541-1552 (pages 418-571) for 30 more pieces, which prints the despatches with their decipherment; leads 891/892 and targets/malvezzi1548 cover two groups. Needs one remaining piece with no Nehring page. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Malvezzi Kt. 8-9: the regests cite Nehring's Austro-Turcica 1541-1552 (pages 418-571) for 30 more pieces, which prints the despatches with their decipherment; leads 891/892 and targets/malvezzi1548 cover two groups. Needs one remaining piece with no Nehring page. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana search 'Malvezzi' (249 regests) and the full regest of each of the 78 Türkei I Kt. 8-9 hits read by script on 16 Nov 2026 (raw/malv_full.txt in this folder), e.g. archives.hungaricana.hu/en/lear/BecsSeg/43471/, 43461/, 43483/, 43485/, 43498/, 43394/. No images online.",
+     "extent": "30 regests mention cipher (sifrír, dechiffrirung): Malvezzi to Ferdinand I, Charles V and Jordanus 1549-51, Ferdinand to Malvezzi (43408, 43449, 43476, 43495), and two ciphered enclosures (43404 János Zsigmond, 43407 Sigismund of Poland to Süleyman).",
+     "cipher": "Every one of the 30 is described with its decipherment: 'sorközi feloldással' / 'sorközben feloldva' (interlinear), 'XIX. századi feloldással' or 'desifrír a XIX. századból' (a 19th-century solution, 43346, 43358, 43362, 43363, 43408, 43476, 43495), or a later desifrírung (43443); 43449 has its clear Latin draft."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Malvezzi', 'Türkei I', 'Karton 8', 'Kt. 8' finds leads 891/892, catalogue 885 and targets/malvezzi1548 for the 1548 and 1550 groups; no other row for these pieces and no DECODE record for the remainder.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Malvezzi', 'Türkei I', 'Karton 8', 'Kt. 8': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Malvezzi', 'Türkei I', 'Karton 8', 'Kt. 8': no entry for this item.",
+     "edition": "Nehring, Austro-Turcica 1541-1552 (Munich 1995): the regests cite its page for 27 of the 30 cipher pieces (e.g. 43471 pp. 509-510, 43461 pp. 504-509, 43483 pp. 525-529, 43498 pp. 568-571, 43511 pp. 613-615); the edition prints the despatches from the deciphered text. The three without a Nehring page are the enclosures 43404 and 43407 (interlinear decipherment) and the duplicate set 43443 (later desifrírung of the Venetian enclosure).",
+     "literature": "No further search needed: the archive's own regests and the edition settle the status of each piece."
+    },
+    "key_check": "The interlinear decipherments give the Malvezzi key; targets/malvezzi1548 already works it. Nothing remains to apply it to in Kt. 8-9.",
+    "duplicates": "Overlaps leads 891/892 and targets/malvezzi1548 (1548 and spring-autumn 1550); the row is the remainder of the same boxes, all deciphered.",
+    "verdict": "read",
+    "closed": "Every ciphered Malvezzi piece in Türkei I Kt. 8-9 carries a contemporary or 19th-century decipherment on file and is printed in Nehring's Austro-Turcica, so nothing is left unread."
+   }
   },
   {
    "id": 2683,
@@ -50814,11 +50919,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regests only on Hungaricana; no images.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Nadasdy Fasc. 309-310 1658-66: senders cut off in the list view and the leaf pages were not opened for them (146425, 7 Feb 1659, Hungarian, 'nincs feloldva', is the candidate). Needs the leaf page for the sender; DECODE Nadasdy keys R686/696/697/648 are the key side. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Nadasdy Fasc. 309-310 1658-66: senders cut off in the list view and the leaf pages were not opened for them (146425, 7 Feb 1659, Hungarian, 'nincs feloldva', is the candidate). Needs the leaf page for the sender; DECODE Nadasdy keys R686/696/697/648 are the key side. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests 146415-146510 (HHStA Ungarische Akten, Specialia, Verschwörerakten IV, Nádasdysche Akten Fasc. 309 Konv. A-C and Fasc. 310 Konv. A-B) read in full by script on 16 Nov 2026 (raw/nad.txt), including archives.hungaricana.hu/en/lear/BecsSeg/146425/, 146454/, 146455/, 146457/, 146458/, 146461/-146464/, 146487/, 146488/, 146500/, 146504/. No images.",
+     "extent": "13 cipher-bearing letters 1658-66 in the Nádasdy papers.",
+     "cipher": "Donellanus to Nádasdy (146454, 146457, 146458, 146461, 146462, 146463, 146464, 146500, 146504): 'orig. latin, (részben) sifrír, amely külön lapon került feloldásra' (deciphered on a separate sheet). Mednyánszky to Nádasdy 27 Nov 1658 (146455): 'orig. magyar, sifrír sorközben feloldva'. Without decipherment: 146425 (Count ? György to unknown, 7 Feb 1659?) and 146487/146488 (Wesselényi to unknown, 10 Oct and 20 Nov 1663)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Nádasdy', 'Nadasdy', 'Fasc. 309', 'Fasc. 310' finds catalogue 2455 (Fasc. 309 Konv. A fol. 1-2 = regest 146425) and catalogue 1231 (Fasc. 310 Konv. A fol. 32-37 = 146487/146488); DECODE Nádasdy keys R686/696/697/648 are the key side (per the 14 Nov vetting).",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Nádasdy', 'Nadasdy', 'Fasc. 309', 'Fasc. 310': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Nádasdy', 'Nadasdy', 'Fasc. 309', 'Fasc. 310': no entry for this item.",
+     "edition": "No edition cited in the regests; the Donellanus and Mednyánszky letters carry their contemporary decipherments, so print is not needed to settle them.",
+     "literature": "Not searched further; the regests settle the status."
+    },
+    "key_check": "Contemporary decipherments of the Donellanus and Mednyánszky letters give their keys; DECODE R686/696/697/648 hold Nádasdy keys. The open pieces are handled in catalogue 2455 and 1231.",
+    "duplicates": "The undeciphered residue duplicates catalogue 2455 (146425) and catalogue 1231 (146487, 146488); no other lead overlaps.",
+    "verdict": "duplicate",
+    "closed": "All new pieces in this row (Donellanus 1658-66, Mednyánszky 1658) carry contemporary decipherments, and the undeciphered ones are already catalogue 2455 and 1231."
+   }
   },
   {
    "id": 2685,
@@ -50851,11 +50977,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regest only on Hungaricana; HHStA Ungarische Akten, Specialia, Verschwörerakten III, Fasc. 296 Konv. B fol. 75-83 (copy order) for the keys.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Zrinyi/Gembicki 1669 (Fasc. 296 fol. 75-83): the regest is truncated and Lang's repertory lists the Zrinyi/Gembicki 1669 key at f. 77 as at hand (per the 9 Nov east-north sweep); the letter's status was not read. Needs the leaf page and Lang's row. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Zrinyi/Gembicki 1669 (Fasc. 296 fol. 75-83): the regest is truncated and Lang's repertory lists the Zrinyi/Gembicki 1669 key at f. 77 as at hand (per the 9 Nov east-north sweep); the letter's status was not read. Needs the leaf page and Lang's row. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests 145338-145350 (Zrínyische Akten Fasc. 296 Konv. B-C) and 145842 (Fasc. 301 Konv. A) read in full by script on 16 Nov 2026: archives.hungaricana.hu/en/lear/BecsSeg/145344/ and 145842/. No images.",
+     "extent": "One Latin letter with enclosures, fol. 75-83 (9 leaves).",
+     "cipher": "Regest 145344: 'Andreas Gembicki ... – Zrínyi Péter gróf (orig. latin, mellékelve hozzá titkosíráskulcs is, legalább három különböző)': the letter is described as Latin original, with cipher keys (at least three different ones) enclosed; no ciphertext is mentioned. The neighbouring Palmerini/Bargilio pieces (145340-145343) are Italian originals and copies, not ciphered."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Zrínyi', 'Zrinyi', 'Gembicki', 'Fasc. 296' finds only this lead (catalogue 1230 is the Fasc. 327 key set, a different file); no DECODE record found for the Gembicki keys.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Zrínyi', 'Zrinyi', 'Gembicki', 'Fasc. 296': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Zrínyi', 'Zrinyi', 'Gembicki', 'Fasc. 296': no entry for this item.",
+     "edition": "No edition cited in the regest; Lang 2015 lists the Zrínyi/Gembicki 1669 key at f. 77 (per the 9 Nov east-north sweep), i.e. it is known to the literature as a key.",
+     "literature": "Not searched further; the regest settles that the item is a clear letter with keys."
+    },
+    "key_check": "The item is itself key material: at least three cipher keys enclosed with Gembicki's letter (fol. 75-83; Lang: key at f. 77). Worth a DECODE key-record entry (decode_updates/queue.json) with this metadata.",
+    "duplicates": "known.py: no other row for Fasc. 296; distinct from catalogue 1230 (Fasc. 327 keys).",
+    "verdict": "not_cipher",
+    "closed": "Gembicki's letter of 4 Oct 1669 to Péter Zrínyi is a Latin original with cipher keys enclosed, not a ciphertext; it is key material for DECODE, not an open cipher."
+   }
   },
   {
    "id": 2686,
@@ -51004,11 +51151,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "Regests only on Hungaricana (Vienna inventory); no images; the text is printed in Történelmi Tár 1878.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Martinuzzi 1542: 154603 (6 Oct 1542, Nagyvarad, decipherment on a separate sheet) is printed in Karolyi, Frater Gyorgy levelezese, Torteneti Tar 1878, 501, per its regest; the other three were not opened. Check Karolyi 1878 before treating any as open. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Martinuzzi 1542: 154603 (6 Oct 1542, Nagyvarad, decipherment on a separate sheet) is printed in Karolyi, Frater Gyorgy levelezese, Torteneti Tar 1878, 501, per its regest; the other three were not opened. Check Karolyi 1878 before treating any as open. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana Vienna-inventory regests read in full by script on 16 Nov 2026: archives.hungaricana.hu/en/lear/BecsSeg/154594/, 154600/, 154603/, 154606/ (HHStA Ungarische Akten, Miscellanea Fasc. 431.A Konv. B, fol. 193-196, 205-207, 210-215, 218). No images online.",
+     "extent": "Four letters of Frater Georgius (Martinuzzi) of 29 May, 17 Sep, 6 Oct and 12 Oct 1542; the ciphered share is not stated.",
+     "cipher": "The regests call each 'orig. latin, sifrír/chiffrir' with 'sorközben feloldva' (154594, 154606: interlinear decipherment) or 'külön lapon feloldva' (154600, 154603: decipherment on a separate sheet)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Martinuzzi', 'Fráter György', 'Frater Georg' and 'Fasc. 431' finds catalogue 503 (1543 enclosure) and 885 (1548 copies to Ibrahim Pasha) and leads 2462 (Gerendi 1529, same fascicle) but no row for these 1542 letters; no DECODE record found for them.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Martinuzzi', 'Fráter György', 'Frater Georg', 'Fasc. 431': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Martinuzzi', 'Fráter György', 'Frater Georg', 'Fasc. 431': no entry for this item.",
+     "edition": "Each regest cites its printed text: Károlyi Árpád, Fráter György levelezése, Történelmi Tár 1878, pp. 260-264 (154594), 268-269 (154600), 501 (154603), 504-505 (154606). The edition prints the letters, so the 1542 texts have been read in print as well as at the time.",
+     "literature": "A Hungaricana search for 'Fráter György sifrír' returns only these three Fasc. 431 regests plus 43464 (1550 credentials to Salm, also interlinear decipherment); no 1542 piece without a decipherment exists in the inventory."
+    },
+    "key_check": "Each piece carries its own contemporary decipherment (interlinear or separate sheet), which gives the 1542 key; catalogue 885 / targets/ibrahim1548 hold a later Martinuzzi key. Not compared here because nothing is left to read.",
+    "duplicates": "known.py on shelfmark and names: catalogue 503 and 885 are other years; no duplicate row for these four letters.",
+    "verdict": "read",
+    "closed": "All four 1542 Martinuzzi letters carry a contemporary decipherment on file and are printed in Károlyi, Történelmi Tár 1878, so nothing is left unread."
+   }
   },
   {
    "id": 2689,
@@ -54718,7 +54886,7 @@
    "source": "TNA Discovery API (item-level cipher sweep, 15 Nov 2026)",
    "prior_art": "open as far as checked (15 Nov 2026: known.py and reference grep on shelfmark and correspondents; Discovery text only; no image seen; CSP, Tomokiyo, DECODE, Lasry and the literature not searched for this item)",
    "needs_archive_scan": "yes",
-   "access_note": "not digitised on Discovery; State Papers Online (Gale, subscription) or a Kew visit",
+   "access_note": "Not digitised on Discovery (digitised: false); ADM 1 is a Kew item.",
    "score_note": "Scored from the TNA Discovery catalogue description only (item sweep, 15 Nov 2026; research/sweep_2026-11-15_tna_discovery/); not viewed",
    "folio_note": "Cover letter ff. 249-250; the enciphered report and its Admiralty decipher are on ff. 251-252",
    "year": 1813,
@@ -54741,8 +54909,29 @@
    ],
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (TNA Discovery sweep): ADM 1/1948/97 (C12820601, read 15 Nov 2026): ff. 251-254 are two enciphered reports 'which has been deciphered at the Admiralty'; the description paraphrases the decoded text at length. Decipher on file: fails the bar. Crib pair only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (TNA Discovery sweep): ADM 1/1948/97 (C12820601, read 15 Nov 2026): ff. 251-254 are two enciphered reports 'which has been deciphered at the Admiralty'; the description paraphrases the decoded text at length. Decipher on file: fails the bar. Crib pair only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery API record C12820601 (ADM 1/1948/97), read by script 16 Nov 2026 (raw/tna_C12820601.json): scope note for ff. 249-263.",
+     "extent": "Two enciphered reports of Captain James Hillyar, HMS Phoebe: ff. 251-252 (entries 16 Jul - 14 Oct 1813) and ff. 253-254 (Guayaquil and Lima, late 1813), enclosures to his letter of 12 Jun 1813 (ff. 249-250).",
+     "cipher": "The catalogue calls each an 'Enciphered report ... which has been deciphered at the Admiralty' and summarises the decipherment in detail (rendezvous at Juan Fernandez, Cocos Island; the Essex seen off Lima)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Hillyar', 'ADM 1/1948', 'Phoebe', 'Essex' finds only this lead; no DECODE record for these reports.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Hillyar', 'ADM 1/1948', 'Phoebe', 'Essex': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Hillyar', 'ADM 1/1948', 'Phoebe', 'Essex': no entry for this item.",
+     "edition": "No printed edition sought: the Admiralty decipherment on file, summarised in the TNA catalogue, already gives the plaintext.",
+     "literature": "Not searched further; the decipherment filed with the piece settles the status."
+    },
+    "key_check": "The cipher key is not named; the Admiralty decipher pairs with the ciphertext and would let a key be rebuilt, but nothing is left unread.",
+    "duplicates": "known.py: no other row; ADM 1/1665/176 (lead 2786) is a separate 1813 Admiralty cipher letter.",
+    "verdict": "read",
+    "closed": "Both enciphered Hillyar reports in ADM 1/1948/97 were deciphered at the Admiralty and the decipherment is filed and summarised in TNA's catalogue, so the text is read."
+   }
   },
   {
    "id": 2786,
@@ -54755,7 +54944,7 @@
    "source": "TNA Discovery API (item-level cipher sweep, 15 Nov 2026)",
    "prior_art": "open as far as checked (15 Nov 2026: known.py and reference grep on shelfmark and correspondents; Discovery text only; no image seen; CSP, Tomokiyo, DECODE, Lasry and the literature not searched for this item)",
    "needs_archive_scan": "yes",
-   "access_note": "not digitised on Discovery; State Papers Online (Gale, subscription) or a Kew visit",
+   "access_note": "Not digitised on Discovery (digitised: false); Kew item.",
    "score_note": "Scored from the TNA Discovery catalogue description only (item sweep, 15 Nov 2026; research/sweep_2026-11-15_tna_discovery/); not viewed",
    "folio_note": "ff. 518-519",
    "year": 1813,
@@ -54778,8 +54967,29 @@
    ],
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (TNA Discovery sweep): ADM 1/1665/176 (C18550506): 'Written in cypher code and decrypted', one line; decipher on file: fails the bar."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (TNA Discovery sweep): ADM 1/1665/176 (C18550506): 'Written in cypher code and decrypted', one line; decipher on file: fails the bar.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery API record C18550506 (ADM 1/1665/176, 4 Nov 1813), read by script 16 Nov 2026 (raw/tna_C18550506.json).",
+     "extent": "Two folios (ff. 518-519): a letter of Captain Philip Carteret, HMS Pomone, off Cape Finisterre.",
+     "cipher": "Catalogue: 'Written in cypher code and decrypted'. The ciphertext and its decryption are described together on these two folios."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Carteret', 'ADM 1/1665', 'Pomone' finds only this lead; no DECODE record.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Carteret', 'ADM 1/1665', 'Pomone': no entry for this item.",
+     "lasry": "Lasry's list of BnF and other readings (cryptiana.web.fc2.com/code/GL.htm, the copy fetched 15 Nov 2026) was searched with tags stripped for 'Carteret', 'ADM 1/1665', 'Pomone': no entry for this item.",
+     "edition": "No printed text sought: the archive describes the letter as decrypted on file.",
+     "literature": "Not searched further; the filed decryption settles the status."
+    },
+    "key_check": "No key named; the decryption on the leaves would give it.",
+    "duplicates": "known.py: no duplicate; ADM 1/1948/97 (lead 2785) is a separate 1813 cipher.",
+    "verdict": "read",
+    "closed": "TNA describes ADM 1/1665/176 as written in cipher and decrypted, so the decryption is filed with the letter."
+   }
   },
   {
    "id": 2787,

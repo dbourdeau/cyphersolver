@@ -1,0 +1,14 @@
+import sys, os; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from common import *
+put(1632, {"verdict": None, "confidence": "low",
+ "note": "Not assessed to a verdict. The full LABW record (read through the DDB Solr API, provider item labw-2-2522007, 16 Nov 2026) says only 'Transumpte von drei chiffrierten Briefen des letzteren [Albrecht]' inside a Reichstag file (10 Jan 1556 - 25 Jan 1557) of the Limpurg envoy; it does not say whether the transumpts give ciphertext or the deciphered text. Transumpts circulated at a Reichstag in the Riga feud were most likely made to show the content, i.e. deciphered, which argues against 'open'. Blocker unchanged: no scan; needs the Ludwigsburg item or the Deutsche Reichstagsakten volume 'Der Reichstag zu Regensburg 1556/57' (ed. Leeb), which may print or calendar these transumpts; Hartmann's Regesten 1551-57 also not online.",
+ "access": "archive", "access_note": "Catalogue record only (StA Ludwigsburg B 113 I Bü 64); Archivportal-D bot check, DDB API gives the same text; no digitisation."})
+put(2878, {"verdict": None, "confidence": "low",
+ "note": "Not assessed to a verdict. The OAC guide (read by curl 16 Nov 2026) gives only a folder title 'Ciphers' (Box 1, Folder 1, identifier 156369) and the collection note 'Ciphers, letters, official patents, documents ... collected by Montauti while special envoy' (Tuscan envoy at Vienna 1670-1723); nothing says whether these are cipher keys (most likely for an envoy's own papers, which would make them key material for his Mediceo despatches) or enciphered letters. Needs Stanford Special Collections to describe or scan the folder; SearchWorks did not answer curl.",
+ "access": "archive", "access_note": "Stanford M0320 Box 1 Folder 1; not digitised; request through Stanford Special Collections."})
+put(2154, {"verdict": None, "confidence": "low",
+ "note": "Not assessed. The recorded blocker stands: the only description (ArchiveGrid 762850010, SLWA ACC 2670A: 'diary in code kept by M.E. Read (8-31 May 1886)', photocopies, originals privately owned) does not show whether 'code' is a cipher or shorthand, and ArchiveGrid is behind a bot check today; no new route tried beyond the 9-15 Nov checks. Needs SLWA to look at the photocopy.",
+ "access": "archive", "access_note": "SLWA reading-room photocopy; no scan online."})
+put(2095, {"verdict": None, "confidence": "low",
+ "note": "Not assessed. The Southwest Collection finding aid on TARO (txarchives.org) now answers curl with an Anubis proof-of-work bot check (16 Nov 2026), and ArchiveGrid is blocked; the only wording ('Some materials are in code') may be copied from the Mackenzie papers description, and no item or leaf is named. Needs the TARO finding aid in a browser, then a page from Texas Tech.",
+ "access": "archive", "access_note": "Texas Tech Southwest Collection reading room; TARO and ArchiveGrid behind bot checks."})
