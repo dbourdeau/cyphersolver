@@ -179,7 +179,7 @@ The cipher writes no double letters, so "sarebe" stands for "sarebbe". The readi
 - **The archive:** Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346.
 - **The key:** George Lasry, Beáta Megyesi and Nils Kopal (2020). The ledger's values for three-digit codes and two pairs: the cipher ledger at https://github.com/dbourdeau/cyphersolver.
 
-DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is in this folder. I copy no row of cipher digits: each decode line gives its record, folio and row. `TRANSCRIPTION.md` says where the rows are.
+DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is in this folder. The digit rows of my own transcription are in `transcription/`, one file for each cipher page. Each decode line gives its record, folio and row.
 
 ## Files
 
@@ -187,4 +187,5 @@ DECODE's images are for research use only. They may not be redistributed or publ
 - `check.md`: the grade of the frozen read against the published key, and the checks of 13 November
 - `r5626.md` to `r5659.md`: one page for each of the first 22 records, with the reading, the translation, the names and the decode row by row
 - `key-and-key-free-read/`: the key table of the decode, and the frozen key-free read with its key
-- `TRANSCRIPTION.md`: what the transcription is, its known challenges and its counts
+- `TRANSCRIPTION.md`: what the transcription is, its known challenges, its marks and its counts
+- `transcription/`: the digit rows, one file for each of the 35 cipher pages

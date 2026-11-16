@@ -114,6 +114,7 @@ This is the part found without the published key. `check.md` grades it against t
 | `r5626.md` to `r5659.md` | one page for each of the 22 records |
 | `key-and-key-free-read/` | `key.tsv` (the key of the decode), `key-free-key.tsv`, `DECLARE.md` and `READ-digit.md` (the frozen key-free read), and a note |
 | `TRANSCRIPTION.md` | the transcription: what it is, its known challenges, its counts, and where the rows are |
+| `transcription/` | the digit rows: one file for each of the 35 cipher pages |
 
 `README.md`, `check.md`, the 22 record pages and the files of `key-and-key-free-read/` come from our repository, https://github.com/prabal-rje/branicki-1757/tree/main/francia-346-full (commit 9dea124). These changes adapt them to this folder or correct them:
 

@@ -19,11 +19,31 @@ The files keep the reconciled reading in each case below.
 
 ## Where the rows are
 
-The digit rows are not in this pull request, because DECODE marks the ciphertext of these records as private. If you need the rows to integrate this folder, say so in the pull request, and I will add them.
+The digit rows are in `transcription/`: one file for each of the 35 cipher pages. They are my own transcription. No DECODE image and no DECODE transcription file is in this folder.
+
+- File name: `<record>_f<folio>_digits.txt`, the file form of the digit files in `research/dudout_2026-10-29/`.
+- Four header lines start with `#`. Then each cipher row is one line, `C01 <body>`, in page order.
+- The decode lines of the record pages use the same row labels. So each decode line points to one row.
+- The decode, the key-free read and `check.md` used these rows. Each row body is unchanged. Only the header lines and the form of the row label are new.
+
+| Token | Meaning |
+| --- | --- |
+| a digit | one cipher digit |
+| `[d?]` | one doubtful digit |
+| `[a\|b?]` | one sign with two or more readings; the first is the reconciled reading |
+| `[?]` | one unread sign |
+| `[overwritten glyph]`, `[X-shaped sign]`, `[V-shaped sign]` | one sign that the transcription does not read as a digit |
+| `[unresolved cipher run]`, `[illegible]`, `[overwritten cipher signs: illegible]`, `[glyph count disputed]` | an unread span of unknown length |
+| `[gap: cleartext dropped]` | clear text stood here; the file does not copy it |
+| another note in brackets, such as `[rule to the right]` | a mark with no position |
+| `⟦...⟧` around a whole row | the transcription marks the whole row as tentative |
+
+- The decode reads a doubtful digit with its first reading, and marks the code `⟨a⟩`.
+- Clear text never enters a row.
 
 ## The counts
 
-Counted from the page files. "Digits" are digits read without doubt. "Doubtful" counts doubtful digits, unread signs and signs that the transcription does not read as digits. "Gaps" are unread spans of unknown length. "Breaks" mark clear text inside or next to the cipher.
+Counted from the files in `transcription/`. "Digits" are digits read without doubt. "Doubtful" counts doubtful digits, unread signs and signs that the transcription does not read as digits. "Gaps" are unread spans of unknown length. "Breaks" mark clear text inside or next to the cipher.
 
 | Record | Cipher pages | Rows | Digits | Doubtful | Gaps | Breaks |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
