@@ -204,6 +204,8 @@ folder's values, the old value, the new value and the evidence are in the added 
 | `entick_lines.tsv` | the Entick lines the three letters use (page, line, column, line in column, entry or continuation, first word), each with the line before and after; whole-line text where a group has a third number. From blind counts of the page images: two AI counters per page, 186 pages, 0 disagreements in line count or line type. On pages 442-443 the "line" is the name count above. Public domain text; no page image is committed. |
 | `ct_49_reread.txt`, `reread_49.tsv` | /49 re-read blind (see below); the table lists every group that differs or stays doubtful, with each reader's figures. |
 | `ct_212_reread.txt`, `reread_212.tsv` | the same for /212. |
+| `cipher_words_*.tsv` | the read share by cipher words, one row per cipher word (see "Readings"); written by `entick.py`. |
+| `test_plans/` | the plans of the pre-set tests with their sha256 files, the test items, the blind readers' readings and the score outputs, copied unchanged from the contributor's working folders (no images; see "How it was found and tested"). |
 | `entick.py` | applies the rule to `ct_49_reread.txt`, `ct_212_reread.txt` and `ct_217.txt` (as it stands); writes `entick_49.tsv`, `entick_212.tsv`, `entick_217.tsv` (group by group: dictionary line, value, this folder's value and grade, status), `reading_49_entick.txt`, `reading_212_entick.txt`, `reading_217_entick.txt` and `entick_217_suggest.tsv`. Standard library only; two runs give identical bytes. |
 
 The `folder_grade` column of `entick_*.tsv` names where this folder's value comes from: `H`, `M`, `L` are the grades
@@ -241,8 +243,15 @@ letter fixed by the 1802 names (`apply.py`'s `LETTERS_1802`); `open` no value. F
    rule above); the re-read /49 digits, 20 of 20 sampled changed groups read the same, against a mark of 16: PASSED.
    The script and the counts reproduce.
 
-Each plan was written and hashed before its test was run. The plans, the test items and the scoring scripts are in
-the contributor's files, not in this folder; what this folder rebuilds is the full look-up (`entick.py`).
+Each plan was written and hashed before its test was run. They are in `test_plans/` (one subfolder per step 2, 3-4,
+6, 7 and 8 above), with the test items, the blind readers' readings and the score outputs; `test_plans/SHA256SUMS`
+lists every file. Three hash files there do not match on purpose: `2_page_and_position_tests/TEST_PLAN.sha256` is
+the plan before its amendment A, which was appended to the same file before any held-out position was read
+(`TEST_PLAN_amendA.sha256` matches the file as it stands; the text before the amendment was not kept separately);
+in `4_confirmation_test/work/score_inputs.sha256` the line counts and `score.py` are not included (the lines used are
+in `entick_lines.tsv`); `5_package_check/TEST_PLAN.sha256` holds two hashes of `sample.py`, before and after a
+recorded fix. `4_confirmation_test/work/line_text.tsv` is the file as scored (a row added later for `48,75` is in
+`entick_lines.tsv`). The scoring scripts are not included; this folder rebuilds the full look-up (`entick.py`).
 
 ### Re-reading of the digits
 
@@ -319,10 +328,20 @@ Entick line. `[p,n]` is a group that does not fit (one unread word); `[?word]` i
 doubtful (within one line of the clear word in /49, no sense in place, `50,66` Can, or doubtful digits). A lowercase
 letter inside a capitalised name is a letter code whose line does not start with that letter.
 
-Read shares, sure words only (`research/reading_audit/v10_relabel.py`'s count, every `[...]` and `[?word]` a hole):
-- /212: 0.984 (1014 words, 17 holes). Counting every name with a letter not explained by the book as a hole: 0.937.
-- /217: 0.923 (264 words, 22 holes); 0.888 the strict way.
-- /49: 0.769 (250 words, 75 holes); 0.742 the strict way. /49 stays read from its clear copy /51; this is the test.
+**Read share, by cipher words** (the convention since 16 Nov 2026: clear words are neither read nor unread). Each
+coded word group is one word, a three-number group and a bare `,2` group included; each run of letter groups between
+clear words is one word (a spelled name, or a spelled common word such as `1,1` for "a"), and the parts of a name
+written with x, + or ~ between them (EECH x MIASIN) count as one word. A word is read when the reading gives it plainly:
+every `[p,n]` and `[?word]` is a hole (so the 10 no-sense words, `50,66` Can and the doubtful re-readings are holes),
+and a name is read when every letter group has a value. `entick.py` writes the count word by word in
+`cipher_words_49.tsv`, `cipher_words_212.tsv`, `cipher_words_217.tsv`.
+- /212: **193 of 210 (0.919)**.
+- /217: **38 of 59 (0.644)**.
+- /49: **160 of 232 (0.690)**. /49 stays read from its clear copy /51; this is the test.
+
+Stricter, counting a name as a hole when any of its letter codes is not on a line starting with that letter (the I
+and U codes): /212 143 of 210 (0.681), /217 26 of 59 (0.441), /49 151 of 232 (0.651). Counting the clear words too
+(`research/reading_audit/v10_relabel.py`), the shares were 0.984 (/212), 0.923 (/217) and 0.769 (/49).
 
 `docs/_check_reading.py`'s sentence score (share of clean sentences): 0.60 (/212), 0.48 (/217), 0.20 (/49). The
 running texts carry no punctuation, so its sentences are long.
