@@ -2,6 +2,8 @@ Source, prior work and the solver are in `stomoniakov1921/NOTES.md`; the rest of
 
 # Voikov to Stomoniakov, Nr 1883/1188/S, 1 June 1921 (M316-042-1273)
 
+Status: read in part (16 Nov 2026, recounted over cipher words: 63 of 105 words, 60.0%; was read, 0.987 counted over letters)
+
 Moscow to Berlin, addressed "Polpred Lutovinov Berlin Delsovpra Stomoniakov", numbers 01135-26205, discriminant RAION,
 intercepted 7 June 1921. Columnar transposition of transliterated Russian, 24 columns, key recovered from the ciphertext
 alone (`keyA3.json`, score -3.21 per character; held-out Russian -2.14, shuffled letters -4.96).
@@ -93,3 +95,33 @@ flat paring chisels from a half to one and a quarter inches; half-round from a h
 A buying order from Moscow's foreign-trade side to B. S. Stomoniakov in Berlin. Secondary notes to Lenin's collected works
 tie the Politburo's decision on "Comrade Kopp's proposal" of 16 April 1921 to goods exchange and to Stomoniakov, but the
 decision's text has not been seen, so the link is by subject only.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only, and a
+letter corrected in a key rebuilt here is a hole (the one-digit rule needs a surviving period key). The telegram is
+wholly cipher (the heading in clear is not in `reading.txt`), so nothing had to be separated. By hand, word by word,
+`decryption.txt` against `reading.txt` (the table above): 105 reading words ("zpt", "dvoetochie" and "prod sled"
+counted as words), **63 read as the decryption stands** and **42 holes**: 11 words with letters supplied in brackets or
+marked [...] (the missing "s" and "i" particles, the letters of tovaroobmennogo, odinnadtsat', "po[l]"), 5 words with a
+lost letter filled in (dvoetochie, de?iat, plotnichnye, trekh, tri) and 26 words whose decrypted letters differ from the
+reading (neobqhodimo, ivuch for dvukh, podkovochnoe, srednich, nomeroe, lopatj, zemlianwch, odinnalzatq, chetvertqiu, ostrokonefhnye, grabpi,
+dlir, sehana, poperecdnye, kieszi, odlsiati, pel, dolbetnye, triehetverti, iloskie, udnogo, chetpertzi, vt, diuinw, slid,
+and the unexplained "ce" for kvadratnye). **0.987 -> 0.600**, class **read -> read in part**; the key stays recovered.
+The old 0.987 counted letters (8 of 615 unread). Taking the 26 slipped words as read, 89 of 105 (84.8%) would still be
+under the bar. `v10_relabel.py` gives 0.88 for the file: it counts only the bracketed words and the [...], because the
+slipped words are not marked in the reading, so its figure does not reproduce this hand count.
+
+## Remaining gaps
+
+- the 26 words whose decrypted letters differ from the reading, the 5 words with a lost letter filled in, the word after "four" (`chetyre shjima`) and the unexplained `ce` - blocker: too-short; one 615-letter telegram in a key recovered here, no second copy of it to check the slipped letters against; the omitted particles are not in the cipher
+
+## Escalation
+
+- [x] siblings: the other letters of the file were split off per key (`kopp1921/NOTES.md`: lejava1921, voikov1921b, stomoniakov1921); `voikov1921b` is the continuation of this order, not a second copy of it
+- [n/a] clear-pages: only the heading of this telegram is in clear; no clear copy of its text is recorded here
+- [n/a] known-keys: the key was recovered from this text (its source is unknown, see above)
+- [n/a] print: not searched for a printed text in this recount; none is recorded in the notes
+- [x] key-rebuild: the 24-column key was found by annealing against a Russian model with shuffled controls at widths 22 to 26, then polished to -3.21 per letter (held-out Russian -2.14); the column order is the whole key of a transposition
+- [n/a] retry: nothing to retry the slipped letters against without a second copy of the telegram
+

@@ -1,6 +1,6 @@
 # Charles XII to the Council of the Realm and to his envoys, Bender, 26 April 1710 (catalogue 599)
 
-Status: read (Brice Dudout, 27 Oct 2026; 639 of 640 cipher groups read in their sense, 628 certain (by difference), 6 probable, 5 clerk's slips read from the sense, 1 unresolved (group 212); counted in groups, not words; Daniel Bourdeau's 95% rule).
+Status: read in part (16 Nov 2026, recounted over cipher words: 278 of 303, 91.7%). Was read (Brice Dudout, 27 Oct 2026; 639 of 640 cipher groups read in their sense, 628 certain (by difference), 6 probable, 5 clerk's slips read from the sense, 1 unresolved (group 212); counted in groups, not words).
 
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#stade-1710
@@ -53,7 +53,35 @@ Method: (1) the key was rebuilt by crib. A ciphered troop list in the file (fols
 
 Prior work, checked on 27 October 2026: Daniel Bourdeau’s catalogue lists no. 599 as open, not attempted. We found no edition of this letter: not in Konung Karl XII:s egenhändiga bref (Carlson, 1893, autograph letters only), nor in the Handlingar rörande Skandinaviens historia, nor by web search (Swedish, English, German). The Historiska handlingar volumes and the Riksarkivet registers are not searchable online. What we present is a reading of the Stade cipher copies. The Rådet’s clear copy is probably kept in the Riksarkivet; we have not consulted it.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. The
+reading marks the words that are clear in the copy with square brackets (`Conventions: [..] clear in the copy`), and
+`decryption.txt` shows the same split (`[clear]` against number groups), so the cipher words are the words outside the
+brackets. Counted by hand on `reading.md`: the copy for the envoys 134 cipher words, the copy for the Rådet 169, **303**
+in all; **25 holes**: the words with a probable {x} value or a probable letter ({ge(r)na} twice, {sig}, {det} twice,
+{Dansk}e three times, {andra} twice, nöj{ak}tig, satisfa{c}tion, {fort}, {emot}, {allt}så, {gärna}, Statä{r}herrorna,
+dan{a}, {wilkor}, {slut}es, be{s}tämma), the clerk's slips read from the sense (att ‹att›, Konung‹se›en, ‹slores›; three of the five slips listed in the notes above, sig, the c of satisfa-tion and the r of Statä-herrorna, are already among the 21 probable-value words, so they are counted once) and
+the unread group 212 in bo‹s-tag-are-i-212›t. **278 of 303 read: 91.7%.** The old figure was 639 of 640 cipher groups
+(0.998), counted in groups, so the 6 probable values and 5 slips weighed little there. Class **read -> read in part**; the key stays recovered.
+The words in square brackets (clear in the copy, including the unreadable bits of the fast hand) are neither read nor
+unread and stay out of both counts. Whole letter, clear included, not the measure: the tool's 0.823 over the whole
+reading. Taking the probable and slipped words as read, only the 212 word and `slores` are holes (301 of 303, 99.3%):
+the probable readings are what holds the figure under the bar. `v10_relabel.py` cannot reproduce the count: square
+brackets are not among the markups it can declare, so it measures the whole reading (0.823, "not split").
+
 ## Remaining gaps
 
-- One group unresolved; six probable readings and five clerk's slips flagged on the write-up.
-- The rest of the Stade file (Rep. 5a Nr. 670) holds further cipher letters not covered here.
+- group 212 in `bo-s-tag-are-i-212-t` (Rådet copy) and the garbled `slores` - blocker: no-key-material; no table of this cipher survives in the file, 212 is the first ending of the table and the clear text before it is poorly read
+- the probable values set from the table's alphabetical order and the sense (andra, allt, wilkor, Dansk, det, ge(r)na, sig and others) and five clerk's slips read from the sense - blocker: no-key-material; no table of this cipher survives; the Rådet's clear copy, probably in the Riksarkivet, was not consulted and its registers are not searchable online (27 Oct 2026)
+
+The rest of the Stade file (Rep. 5a Nr. 670) holds further cipher letters not covered here; they are outside this target (catalogue 599, narrowed).
+
+## Escalation
+
+- [n/a] siblings: the rest of the file holds other letters, not covered here; the two copies of this letter were read against each other and cross-checked
+- [n/a] clear-pages: no clear copy is online; the Rådet's clear copy is probably in the Riksarkivet, not consulted, registers not searchable online (27 Oct 2026); not done in this recount
+- [x] known-keys: K1710 was applied to the troop list and to other letters of the same file (fol. 100, fols. 78v-79r)
+- [x] print: 27 Oct 2026, Carlson's autograph letters, Handlingar rörande Skandinaviens historia and a web search in Swedish, English and German found no edition; not repeated in this recount
+- [x] key-rebuild: the key was rebuilt from the ciphered troop list and its clear draft, then the alphabetical order of the table
+- [n/a] retry: the probable values rest on the table's alphabetical position and the sense, with no further text to test them on; not rerun in this recount

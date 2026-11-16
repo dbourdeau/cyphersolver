@@ -226,6 +226,12 @@
    "kind": "verification",
    "what": "Claude Opus 5.5 (PR review on merge): places Lisbon -> Estremoz for the 13 and 15 May letters; word division none (editorial); the partial transcription of the long 15 May letter recorded; all four letters graded A. Repository slips noted for the contributor: key_K2.tsv and key_K3.tsv identical; 13 May L02 and L08 put the date numerals on the wrong symbol; 15a L01 4=z F=h should be 4=a F={z}.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand: cipher words are the body of each reading between the clear greeting and closing (the decryption starts at 'A ultima carta' and ends at the last body word); the reading aligned to its decryption with difflib to find the words whose letters differ. 13 May 132/147 (0.898, 15 holes, numerals left out) -> read in part; 15 May 106/111 (0.955); 26 May 136/139 (0.978); 15 May long letter not split (clear and cipher not marked, 174 symbols transcribed). Target class read -> read in part. v10_relabel.py cannot reproduce these (greeting and closing not marked, abbreviation expansions and corrected letters not told apart).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -259,7 +265,7 @@
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.36; polyphony 0.002; 6 unread tokens left out; annealer on the real text from random keys reached -2.503"
   },
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Substitution key recovered from the cipher, checked on a held-out letter, duplicate copies and a clear/cipher sentence pair.",
@@ -268,9 +274,9 @@
    "key recovered",
    "catalogue correction"
   ],
-  "fraction_read": 0.999,
+  "fraction_read": 0.942,
   "fraction_read_method": "measured",
-  "fraction_read_source": "texts/*_decryption.txt: 1,952 of the 1,953 signs transcribed in the repository carry a value (the long letter of 15 May is transcribed only for its 174-symbol crib passage) (one sign unresolved, 13 May L06); about fifteen signs in the 13 May letter are the encipherer's slips, corrected from the sense and marked {x} in the reading. Measured on review, 27 Oct 2026.",
+  "fraction_read_source": "Cipher words only (16 Nov 2026), sure words only, counted by hand over the three letters whose reading can be set against its decryption (the greeting, the closing and the written numerals are clear and not counted): 13 May 132 of 147 words, 15 May 106 of 111, 26 May 136 of 139, 374 of 397 (94.2%). The long letter of 15 May (the other letter) is not split: its cipher and clear passages are not marked in the files and only 174 symbols of it are transcribed here, so it is left out of this figure. Before 0.999, 1,952 of 1,953 transcribed signs counted in signs.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -288,7 +294,12 @@
   ],
   "gaps": [
    {
-    "item": "a few doubtful signs per letter",
+    "item": "13 May: the 15 words whose letters are supplied, corrected or probable (hav{e}r, pod[e]ria, t{o}mar-se, {es}te with the one-off sign, Manoe[l], d{e}, q[u]e, Be{i}ra, pod{e}reis, fazer, {c}hegar, cav[a]los, Lo[bo], the struck-out name, {c}oreio)",
+    "blocker": "too-short",
+    "detail": "one copy only of the 13 May letter, so no second enciphered copy to settle the slips; the sign used once and the struck-out name are not checkable on the 1060 px DigitArq images"
+   },
+   {
+    "item": "a few doubtful signs in the other letters (15 May five slips settled by the second copy only on the contributor's record, 26 May [p]ara and parec{e}r)",
     "blocker": "illegible",
     "detail": "DigitArq serves 1060 px images only"
    }
@@ -302,14 +313,16 @@
     "reading": "texts/1663-05-13_reading.md",
     "translation": "texts/1663-05-13_translation.md",
     "language": "pt",
-    "state": "read",
+    "state": "read in part",
     "summary": "Written two days after Don John appeared before Estremoz and the day before Évora was invested, the letter first worries about the general’s silence: the courier may have been taken. Then it announces, company by company, the cavalry leaving for the Alentejo.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read the decryption line by line against the reading and the translation: coherent Portuguese throughout, the date and troop numbers (10, 9, 203, 56, 55) written in clear. About fifteen slips corrected from the sense on a single copy; weak spots are the one-off ʒ ('{es}te') and 'Lo[bo] ‹aal› de Agalega'."
-    }
+    },
+    "read_share": 0.898,
+    "note": "16 Nov 2026, cipher words only: 132 of 147 cipher words read (89.8%); the greeting, the closing and the five written numerals (10, 9, 203, 56, 55) are clear and left out. 15 holes (words with a supplied, corrected or probable letter, the sign used once, the struck-out name); the q[ue] abbreviations expanded from a q in the decryption are not holes. Before: about 97% counted in signs. The whole file, clear included, is 0.943 by the tool, not the measure; v10_relabel.py cannot reproduce the count (the greeting and closing are not marked)."
    },
    {
     "doc": "lmp2-1663-05-15a",
@@ -326,7 +339,8 @@
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "The repository decryption is the 174-symbol passage only (copy 2, image 57, ll. 20-26): it reads as one sentence and matches copy 1's clear text (164 of 166 characters). The rest of the long letter reads coherently in reading.md and translation.md but rests on the contributor's transcriptions of both copies, which are not in the repository, so it was not checked symbol by symbol."
-    }
+    },
+    "note": "16 Nov 2026, not split: the reading mixes clear and cipher passages that the files do not mark (the summary names the greeting, the doctrine and the request for a daily courier as clear), and only 174 symbols of the cipher are transcribed here, so the cipher words cannot be separated or checked against a decryption. No read_share is recorded; the tool's 0.991 is over the whole reading, clear included, and is not the measure. By the summary's paragraph-level split, no hole stands in the cipher paragraphs, on the contributor's record only."
    },
    {
     "doc": "lmp2-1663-05-15",
@@ -343,7 +357,9 @@
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Decryption read line by line against the reading: every line forms Portuguese sentences; the five slips of this copy (espera{i}s, a[o], conse[q]uencias, d{o}, q{ue}) are settled by the second copy."
-    }
+    },
+    "read_share": 0.955,
+    "note": "16 Nov 2026, cipher words only: 106 of 111 words read (95.5%), the greeting and the date being clear; the five slips (espera{i}s, a[o], conse[q]uencias, d{o}, q{ue}) counted as holes although the second copy settles them, because that copy is not transcribed here. Counting them as read, 1.0. Stays read. v10_relabel.py gives 0.973 (whole file, clear included), not the measure."
    },
    {
     "doc": "lmp2-1663-05-26",
@@ -360,7 +376,9 @@
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "All 26 lines decode with K1 into the reading's Portuguese, checked symbol by symbol against key_K1.tsv; the only departures are the symbol lost in the tear ([p]ara) and 'parecor' for parecer."
-    }
+    },
+    "read_share": 0.978,
+    "note": "16 Nov 2026, cipher words only: 136 of 139 words read (97.8%), the greeting and the closing being clear; holes parec{e}r (the encipherer wrote parecor), q[u]e (u omitted) and the restored [p]ara. Stays read. v10_relabel.py gives 0.966 (whole file, clear included), not the measure."
    }
   ],
   "key_file": [
