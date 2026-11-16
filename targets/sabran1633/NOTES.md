@@ -117,6 +117,42 @@ explicit holes and 0.712 plain. The 212 tentative name-code readings count as ho
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: rescored the 18 French sections of lasry2022/READING.md: plain 0.519, explicit 0.715, hole rate 0.088. The writer spells by ear (secretere, trete, afaire, eloignemant) and the tentatively read name codes count as holes; the rest builds sentences. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. `lasry2022/READING.md`
+marks the cipher in **bold** and the clear in roman; the count takes the bold words of the 18 "### French" sections
+(image markers cut), a bracketed code reading counting as one word. Holes, sure words only: the 209 tentative code
+readings (`[Savoie?]`, `[France?]`, `[Republique?]`, `[Name1?]` ...), 3 doubtful readings (`dessein[?]`, `[r?]`,
+`pie[r?]`), the blotted `se[blot]s`, and 13 words with a supplied letter (`Ros[s]y`, `re[s]idant`, `[d]e` ...: the key
+is rebuilt, so no slip rule applies). Firm code readings count as read.
+
+- The 43-image entry: 0.929 (24 Oct, v2_score over clear and cipher together) -> **0.790** (850 of 1,076 cipher words).
+  Whole letter, clear included, not the measure: 0.929.
+- Class unchanged: **read in part**. Only letter 1 (the King's letter, Baluze 155) is over the bar on its own.
+  `outcome.fraction_read` (0.9609) is the share of cipher signs that carry a value and is left as it is.
+
+| Letter | cipher words | holes | share |
+|---|---|---|---|
+| Letter 1 — Baluze 155, f. 79r–v | 144 | 2 | 0.986 |
+| Letter 2 — fr. 4134, f. 46v–47 | 25 | 2 | 0.920 |
+| Letter 3 — fr. 4134, f. 50v | 78 | 19 | 0.756 |
+| Letter 4 — fr. 4134, f. 52 | 32 | 6 | 0.812 |
+| Letter 5 — fr. 4134, f. 54 | 28 | 19 | 0.321 |
+| Letter 6 — fr. 4134, f. 57r–v | 56 | 8 | 0.857 |
+| Letter 7 — fr. 4134, f. 66r–v | 53 | 6 | 0.887 |
+| Letter 8 — fr. 4134, f. 69v | 15 | 2 | 0.867 |
+| Letter 9 — fr. 4134, f. 73v | 5 | 0 | 1.000 |
+| Letter 10 — fr. 4135, f. 132r–v | 36 | 8 | 0.778 |
+| Letter 11 — fr. 4135, ff. 215v–216r | 96 | 13 | 0.865 |
+| Letter 12 — fr. 4135, ff. 218r–220r | 154 | 38 | 0.753 |
+| Letter 13 — fr. 4135, f. 224v | 12 | 3 | 0.750 |
+| Letter 14 — fr. 4135, ff. 227–229v | 127 | 36 | 0.717 |
+| Letter 15 — fr. 4135, ff. 232r–233r | 124 | 49 | 0.605 |
+| Letter 16 — fr. 4135, ff. 241r–242v | 31 | 6 | 0.806 |
+| Letter 17 — fr. 4135, f. 245v | 25 | 3 | 0.880 |
+| Letter 18 — fr. 4135, ff. 251v–252r | 35 | 6 | 0.829 |
+| **All 18** | **1,076** | **226** | **0.790** |
+
 ## Remaining gaps
 - code 46 (fr. 4135 f. 219, once) - blocker: no-key-material; "d'une [46] de l'armée navale", context does not fix it
 - 212 tentative name-sign readings - blocker: no-key-material; read from context only; o- and o-- may be confused in the ff. 215v–216 hand

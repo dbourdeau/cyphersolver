@@ -3,7 +3,7 @@
 Gallica btv1b9060724s canvases 294 (f. 154r), 297 (f. 154v). Session 3, 2 Oct 2026. Transcription: ct_f154.txt (recto),
 ct_f154v.txt (verso). Measured with `python measure.py ct_f154.txt` (measure.log).
 
-**Status: read** (README read bar: over 95 %, every open piece blocked by the gutter). Recto 439 of 454 cipher tokens
+**Status: read in part** (16 Nov 2026: 162 of 171 cipher words sure, 0.947, with supplied and doubtful words as holes; NOTES). Signs, 3 Oct 2026: Recto 439 of 454 cipher tokens
 read as sense (96.7 %); verso 221 of 223 (99.1 %, pass 3, 3 Oct 2026); the letter 660 of 677 (97.5 %). Key: key.tsv (session 1 key plus the session 3 rows). Control (control3.py): the raw first-value
 decode scores -2.25 / -2.20 per char under `fr-1600-letters` (no spaces) against -4.4 to -4.7 for the same tokens shuffled.
 

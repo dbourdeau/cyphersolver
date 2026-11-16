@@ -263,6 +263,15 @@
    "technique": ["key-structure hypothesis"],
    "what": "R1893 decoded with Van Reede's 1789-92 marked code to Wilhelmina (target reede1789, rebuilt from KHA A32-545-547 interlinear glosses): 40% coverage at chance level, French values in a Dutch letter; R1893 marks sit above digits. Not this code.",
    "result": "failed"
+  },
+  {
+    "date": "2026-11-16",
+    "kind": "verification",
+    "technique": [
+      "manual reconstruction"
+    ],
+    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the ciphered paragraphs of R1026_reading.md and R1027_reading.md, with the clear head, the clear R1026 paragraph and the clear closes (marked [clear: ...] in the decodes) left out. Result: R1026 0.986 -> 0.990 (283/286; the three faint [?word]s are clear), R1027 0.994 -> 0.992 (122/123); both stay read; class read unchanged.",
+    "result": "worked"
   }
  ],
  "outcome": {
@@ -329,7 +338,8 @@
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b24) on the figures under the Grand Chiffre R1024: DECODE's 'J+' sign is the writer's hooked 1 (J=1 gives a fitting key word at all 77 occurrences, the 21 Sept LM-chosen digits and J=3 do not); the key's null blocks ('Nonvaleurs' 1-50, 331-370, 1201-1250, 2751-2800, 3131-3160, 3621-3660, read on the key images) explain the 'open codes' 1250, 331, 2800, 3160, and 2637 = cependant was mis-numbered 3637 in the key transcription; four key slips read on the key images (54 est, 2142 paroit, 2143 paroitre, 4910 que); five labels corrected on the letter image. Bar marks read as the code's inflection signs. Word check (b24_vr_align.py): every word of the cipher part carried by its groups or their marks; 403 of 1,388 decoded letters rest on the hooked-1 identification, 24 on the five corrected labels. Body 0.735 clean (25/34), explicit holes 0.971. Open: [?soit], [?fournit], [?énonçoit] (writer's slips or bar marks) and three faint words of the clear passage."
     },
-    "read_share": 0.986
+    "read_share": 0.99,
+    "note": "Read share over cipher words only (16 Nov 2026): 283 of 286 cipher words: the two ciphered paragraphs of R1026_reading.md (Avant hier ... vous envoyer; J'apprens ... m'a êté dit), the clear head, the clear paragraph Depuis que ceci a été chiffré ... and the clear close left out (the decode marks them [clear: ...]); holes [?soit], [?fournit], [?énonçoit]; the three faint [?word]s are in the clear and do not count. A code group read as several words (Monsieur de Herzberg) is counted by its words; as one word the share is the same to three places. Whole letter, clear included, not the measure: 0.986."
    },
    {
     "doc": "DECODE R1027",
@@ -351,7 +361,8 @@
      "date": "2026-10-22",
      "note": "Read 23 Oct 2026 (b24) as R1026: J+ = 1 at all 24 occurrences, three labels corrected on the image (3089, 1021, 1969), 4910 = que from the key image; names spelt in key syllables (Segur, Cobentzel, Keller). 118 of 601 decoded letters rest on the hooked 1, 15 on the corrected labels. Body 0.867 clean (13/15), explicit holes 0.933. Open: [?decidement] (spelt de-ci-demi-ent)."
     },
-    "read_share": 0.994
+    "read_share": 0.992,
+    "note": "Read share over cipher words only (16 Nov 2026): 122 of 123 cipher words: the ciphered paragraph of R1027_reading.md, the clear head and close left out; the hole is [?decidement]. Whole letter, clear included, not the measure: 0.994."
    }
   ]
  }

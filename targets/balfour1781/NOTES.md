@@ -108,6 +108,12 @@ such as `[Hightown?]`, `[Pedee?]`, `[the next?]` is a hole): A 0.988 (668 words,
 C 0.970 (226, 7). The profile had 1.0, 0.994 and 1.0, which were the table's letter shares above, not word shares;
 `read_share` now carries the measured values. All three stay above 0.95: read.
 
+Read share over cipher words only (16 Nov 2026, README Conventions). A and B are wholly in cipher (the lone numerals
+between dashes are figures in clear and are not words); C's reading holds only the cipher runs, with `...` where the
+clear text of the C lines stands. Recounted with the `v2_score` hole rules, on the reading body without the Notes
+paragraph that the 14 Nov count had included: A 0.988 -> 0.992 (604 of 609 words), B 0.990 -> 0.989 (358 of 362),
+C 0.970 -> 0.964 (186 of 193; holes Tuesday[?], two [?], rent[?], [the next?] as two words, [it]). All three stay read.
+
 p. 725, L09 `15 - 18 -` (NARA image 570). Dudout reads the mark over 15 as an *f*, the end of "loss of" (a=16), not
 the "4" of the transcription note, and the small struck word over 18 as ending "-teen", first letters unclear
 ("fifteen" or "eighteen"). Looked at here on the same microfilm scan: the mark over 15 does look like an f, and the

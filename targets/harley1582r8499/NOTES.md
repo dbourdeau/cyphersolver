@@ -323,6 +323,16 @@ Quotation for the Lasry list (30 Sept 2026): "… the Constable comenid with him
 - The BL does not give quotes; payment details come with the order. Download the images within 14 days of the
   delivery link. When they arrive, check the open stretches listed under Remaining gaps against ff. 5r-7v.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. Checked here because the
+"whole letter" counts above were listed as possibly mixing clear and cipher. They do not: every figure in this file
+(71.7%, 74.8%, 68.9% ...) is over the non-null **cipher signs** of the transcription, and "whole letter" means all
+four pages, not the clear connectives with the cipher. The document is classed decoded, not read, and carries no
+read share, so there is nothing to recount and no class change. A cipher-word count would need the cipher runs
+separated from the clear connectives in `final_v9.txt` word by word; with holes in most sentences it would stay far
+under the bar.
+
 ## Remaining gaps
 - the whole letter decoded, not read (3,152 tokens) - blocker: needs-physical-access; holes in most sentences after eight key/transcription passes (reading audit 22 Oct 2026); the contemporary clear copy, Harley 1582 art. 2 (ff. 5r-7v), is digitised by the BL but its images are unavailable (ark:/81055/vdc_100162940894.0x000001, checked 23 Oct 2026); it would settle it
 

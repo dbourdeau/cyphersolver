@@ -4,8 +4,8 @@ Status: in progress. Lasry's reading; the f. 43r cipher block decoded here 23 Oc
 
 **24 Oct 2026, DECODE check** (Claude Opus 5.5): George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Dupuy 61 — Méry de Vic, f43r): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.
 
-**23 Oct 2026, re-reading (REREAD_BRIEF, batch b30)**: Gallica views 85-100 opened (IIIF, openapi.bnf.fr): the letter is
-ff. 40r-43v, all clear except one 16-line cipher block on f. 43r (view 95); no decipherment, gloss or clear copy nearby;
+**23 Oct 2026, re-reading (REREAD_BRIEF, batch b30; its class superseded on 24 Oct by Lasry's full readable text: read in part, see "Read share over cipher words only")**: Gallica views 85-100 opened (IIIF, openapi.bnf.fr): the letter is
+ff. 40r-43v (Lasry's readable text runs to f. 44v), all clear except one 16-line cipher block on f. 43r (view 95); no decipherment, gloss or clear copy nearby;
 no DECODE record. The block decoded sign by sign with Lasry's table (`texts/f43r_cipher_decode.tsv`): both of his
 excerpts reproduced; new: "qui a tousiours parle en … servit[e]ur de roy se change", "plusieurs qui soient ennemis de
 la [?ligue] changent, qui prenent [?le] pretexte de la religion", "Ie [?les] contiens ce que ie puis", "… servira
@@ -93,6 +93,20 @@ Translation
 ## Notes and corrections
 
 One excerpt line disagrees with the manuscript. Lasry gives "s'est déclaré comme plusieurs du ? m'ont asseuré"; the clear words on f43r read "… roy q2 change come on ma asseure". The other clear words and the cipher block match. That line should be checked again.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The cipher words are the
+**bold** (deciphered) runs of f43r in Lasry's Readable text (`lasry/report/readable.md`); the clear French of
+ff. 40r-44v is left out.
+
+- f43r: 0.998 (whole letter, mostly clear) -> **0.793** (111 of 140 cipher words). Holes: 16 bare `?` (one word each,
+  the least the decode shows), 10 words Lasry marks doubtful (*faire?*, *hommes?*, *pied?*, *Ligue?* ...) and 3 with a
+  supplied letter (*servit[e]ur*, *d[e]* twice). The 24 Oct figure, 0.826, counted 133 words by the v10 measure and did
+  not count the doubtful-marked words and supplied letters the same way. Whole letter, clear included, not the
+  measure: 0.998.
+- Class unchanged: **read in part** (the cipher-only figure already decided it). The README row, which still said
+  "none" from the 22 Oct excerpt state, now gives the partial extent.
 
 ## Remaining gaps
 

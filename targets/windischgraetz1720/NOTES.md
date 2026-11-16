@@ -73,3 +73,18 @@ nomenclator cells do not touch any passage except 446 (N) and 638 (X), which sta
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letter is German (not French): explicit-hole bar. The 26 cipher passages, each with the clear words before it: plain 0.923, explicit 0.962. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher.
+
+| document | before | after | state |
+|---|---|---|---|
+| No. 1, 3 Feb 1720 (`No1_reading.md`) | 0.985 (whole letter, clear included) | 0.955 (127 of 133 cipher words) | read, unchanged |
+
+- How the cipher was separated: `No1_reading.md` puts the 26 cipher passages (A-Z of `dec_R5017_letter.md`) in ⟦ ⟧
+  inside the clear text of the register copy; only the ⟦ ⟧ spans were counted.
+- Holes, one word each: the three [zu] (key cell 31 reads *el*, the sense needs *zu*), [?ein]ichn (cell 268 *em*),
+  and the cells [446] and [638]. These are the surviving key's own values, and none is a one-digit slip, so they stay
+  holes. With cell 31 accepted as *zu*, 130 of 133 (0.977).
+- The group figure (221 of 223) on the page and in the README is unchanged.

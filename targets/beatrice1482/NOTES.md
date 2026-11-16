@@ -172,6 +172,23 @@ confirmed (9 = d, 2 = g, which Brice Dudout proposed to re-check on R1156) are B
 agents). The Vestigia pair 2626/2627, the sign transcription of R1156 and this check are the project's (14 Nov
 2026).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only, and a read code sign (or
+its spelled-out value, `[sign = Venetorum]`) is read, not a hole. R1140 and R1141 are read from the 1877 print, whose
+italics (the cipher) the OCR lost, so the cipher runs were taken from `vestigia/`: the run list with the print's words
+for R1140 (`train_refs_R1140.txt`, built from the blind sign transcription) and for R1141 (`ref_R1141_MDE.txt`, plus
+the run *Venetiani da sua offesa* the print leaves out). In R1156 the cipher is set in ⟨ ⟩ with the code signs as
+`[sign = ...]`.
+
+- R1140: 0.998 (whole letter) -> **1.0** (194 cipher words in 32 runs, a code sign one word; the reading's one `[?]`
+  is in the clear).
+- R1141: 0.984 (whole letter) -> **0.980** (147 of 150; holes `[?aiutare]`, `[?emuli]`, `[?balla]`, words the OCR
+  does not fix in the print; `[?me]`, `[?scrive]`, `[?Hor]`, `[?spazare]` are in the clear).
+- R1156: no figure before (the v2 score counted the ten read code signs as holes) -> **0.986** (58 run words and 10
+  code signs, 68 of 69; the hole is the unread `[2 signs]`).
+- Class unchanged: all three documents read.
+
 ## Remaining gaps
 
 - R1156, the two large signs after *regina* (line 10) - blocker: open-codes; they occur once and the clear copy leaves them out

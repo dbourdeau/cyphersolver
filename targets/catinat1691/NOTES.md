@@ -209,3 +209,29 @@ sense are marked [?] (L2: homme, parti, batails/Montcas, reisson, sepaoit, povaz
 `letters/L2_reading.md`, `L5_reading.md`, `L6_reading.md`: plain 0.833, 0.906, 0.724; explicit 0.939, 0.938, 0.862.
 All three keep read. The doubtful groups are a pointer for an image check of the 1819 print (OCR or printer's slips).
 
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher.
+
+How the cipher was separated: the 1819 print gives some passages in clear, and `letters/L*.txt` ("Groups as printed")
+marks every clear word in `<angle>` brackets. Each run of clear words was found in the reading (letters compared without
+spaces, accents or punctuation, so that the word division of the reading does not matter) and left out. The L5 and L6
+readings also mark the clear passages in ⟨ ⟩, which give the same split. The holes in the clear text, the dates
+[1er!] (L1), [?g] (L3) and [28?] (L6), are not counted. Holes by words with the `v2_score` rules; a word with an
+apostrophe is one word. Script: `python research/reading_audit/r23_angle_split.py catinat1691`. One run is removed
+by hand: L3's clear "Vous me parlez dans une de vos lettres du 13" (9 words), which the script misses because the
+reading has [?e] after *13*; that [?e] stays a cipher hole.
+
+| letter | before (whole letter) | after (cipher words) | state |
+|---|---|---|---|
+| L1, 8 July | 0.983 | 0.982 (532 of 542) | read, unchanged |
+| L2, 9 July | 0.982 | 0.981 (757 of 772) | read, unchanged |
+| L3, 19 Aug | 0.981 | 0.979 (608 of 621) | read, unchanged |
+| L4, 24 Aug | 0.979 | 0.966 (564 of 584) | read, unchanged |
+| L5, 29 Aug | 0.985 | 0.973 (249 of 256) | read, unchanged |
+| L6, 6 Sept | 0.973 | 0.963 (184 of 191) | read, unchanged |
+| L7, 14 Sept | 0.968 | 0.966 (2,926 of 3,030) | read, unchanged |
+
+All seven stay over the bar; the class is unchanged. The group figures (Bazeries' controls, 98.1% and 99.1%) are
+unchanged.

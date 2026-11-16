@@ -5,7 +5,7 @@
   "documents": [
     {
       "id": "DuMaurier-1593-06",
-      "read": "read",
+      "read": "read in part",
       "shelfmark": "Mémoires et correspondance de Duplessis-Mornay (Paris 1824-25) vol. 5 p. 471-475; original not located",
       "date": "mardi [20 juillet] 1593 (printed \"mardi .. juin\"; date per Dudout 2026)",
       "year": 1593,
@@ -35,7 +35,7 @@
     },
     {
       "id": "Serviez-1593-07-06",
-      "read": "read",
+      "read": "read in part",
       "shelfmark": "Mémoires et correspondance de Duplessis-Mornay (Paris 1824-25) vol. 5 p. 487-488; original not located",
       "date": "6 Jul 1593",
       "year": 1593,
@@ -501,7 +501,9 @@
       ],
       "what": "Integration check of PR #449: test_folded.py and test_round2.py re-run on the archive.org vol. 6 OCR (sha256 204906c7... matches): T1 folded 1593 key on Lomenie 1595 + Duplessis 1597 coverage 0.655 against best 0.616 (inconclusive; no words), T2 Rohan 1594 key on Rohan 1597 coverage 0.78 and language beats 197/200 (fits, 50 groups), T3 Rohan key on 1599-1612 does not fit, T4 inferred values not supported; all identical. Strictly, only 4 of the 50 Rohan 1597 groups read without an inferred value or a name-code letter; read share recounted 0.182, not 0.247. No second decoder and no image check at the integration check.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-11-16", "kind": "verification", "what": "Read share measured over cipher words only (README Conventions, 16 Nov 2026) on beling/reading_1593.md, per letter section: the **bold** deciphered passages counted, the printed clear words around them left out; holes by words with the v2_score rules (apostrophe words as one). Du Maurier P1-P6: 28 of 29 (Tour[ay]ne a hole), 0.966; Serviez S1-S2: 6 of 7, 0.857 (l'entreprinse a hole: the figures give 'lenteprinse', the r supplied; l'arrest for 'larest' a period spelling, read). Neither had a read share (the file scored whole, notes included, gives 0.994). Du Maurier stays read; Serviez read -> read in part; Rohan 1597 (not prose) not measured; class read in part unchanged (fraction_read 0.182 of groups).", "result": "worked"},
+    {"date": "2026-11-16", "kind": "verification", "what": "Coordinator's decisions (16 Nov 2026): l'arrest stays read (period spelling 'larest'), l'entreprinse stays a hole (the writer's omission, gap reworded); words resting on a probable value count as holes, so chevaux (sign 44 = x/y, probable) joins Tour[ay]ne. Du Maurier 0.966 -> 0.931, read -> read in part; Serviez 0.857 unchanged. Class read in part unchanged.", "result": "partial"}
   ],
   "outcome": {
     "class": "read in part",
@@ -533,6 +535,11 @@
         "item": "Rohan 1611-12 and unsigned 1612 figures (93 groups)",
         "blocker": "no-key-material",
         "detail": "Another table; the 1594 key does not fit (pre-registered, 12 Nov 2026)."
+      },
+      {
+        "item": "Serviez S1, l'entreprinse: the cipher has no r (the figures give 'lenteprinse', no group missing, NOTES step 6)",
+        "blocker": "needs-physical-access",
+        "detail": "A letter the writer left out of the cipher: every sign that is there is read, and the missing letter cannot be recovered from any file here. Counted as a hole (16 Nov 2026). The checker offers no blocker type for letters left out; this is the nearest."
       },
       {
         "item": "1593 sign 44 (x/y) and the unattested b",
@@ -567,14 +574,15 @@
         "language": "fr",
         "reading": "beling/reading_1593.md",
         "translation": "beling/translation_1593.md",
-        "state": "read",
-        "note": "Brice Dudout's key applied to this project's transcription; 93/93 groups read. Word-divided reading and English translation added 12 Nov 2026 (beling/reading_1593.md, translation_1593.md); P1 corrected there to 'estoit ia dressé' (the figures), against 'estoit adressé' in NOTES step 6.",
+        "state": "read in part",
+        "note": "Brice Dudout's key applied to this project's transcription; 93/93 groups read. Word-divided reading and English translation added 12 Nov 2026 (beling/reading_1593.md, translation_1593.md); P1 corrected there to 'estoit ia dressé' (the figures), against 'estoit adressé' in NOTES step 6. 16 Nov 2026: read share over cipher words only 0.931: 27 of the 29 words in the six **bold** passages (P1-P6) of the Du Maurier section of beling/reading_1593.md. The two holes are the two words that use sign 44 (x/y), whose value is probable: Tour[ay]ne and chevaux (the x is unmarked in the reading and the only value that gives a word, but the sign's value is not attested; sure words only, coordinator's decision of 16 Nov 2026). l'arrest counts as read: the figures give 'larest', a spelling of the period, which the reading normalises. The printed clear words around the passages are left out. No read share had been recorded; the whole file, clear text and notes included, scores 0.994, not the measure. Read -> read in part.",
         "reading_review": {
           "grade": "A",
           "by": "Andrew Beling, with two independent AI-agent readings (Claude)",
           "date": "2026-11-12",
           "note": "Read as sentences inside the printed letters, 12 Nov 2026. P1 and P6 are full clauses and read cleanly; P2-P5 are names that fit their sentences."
-        }
+        },
+        "read_share": 0.931
       },
       {
         "doc": "Serviez-1593-07-06",
@@ -584,14 +592,15 @@
         "language": "fr",
         "reading": "beling/reading_1593.md",
         "translation": "beling/translation_1593.md",
-        "state": "read",
-        "note": "Brice Dudout's key applied to this project's transcription; 93/93 groups read. Word-divided reading and English translation added 12 Nov 2026 (beling/reading_1593.md, translation_1593.md); P1 corrected there to 'estoit ia dressé' (the figures), against 'estoit adressé' in NOTES step 6.",
+        "state": "read in part",
+        "note": "Brice Dudout's key applied to this project's transcription; 93/93 groups read. Word-divided reading and English translation added 12 Nov 2026 (beling/reading_1593.md, translation_1593.md); P1 corrected there to 'estoit ia dressé' (the figures), against 'estoit adressé' in NOTES step 6. 16 Nov 2026: read share over cipher words only 0.857: 6 of the 7 words of the two **bold** passages (S1 'le chancelier et Sourdis font l'entreprinse', S2 'trahi') of the Serviez section of beling/reading_1593.md; the printed clear words left out. The hole is l'entreprinse: the figures give 'lenteprinse' with no r and no group missing (NOTES step 6, settled 27 Oct 2026), so the r is a letter supplied where the cipher has nothing (README Conventions; the key is rebuilt, so the slip rule does not apply). The reading prints the normalised spelling unmarked. Read -> read in part.",
         "reading_review": {
           "grade": "A",
           "by": "Andrew Beling, with two independent AI-agent readings (Claude)",
           "date": "2026-11-12",
           "note": "Read as sentences inside the printed letters, 12 Nov 2026. S1 is a full clause and S2 completes 'que le roy est trahi'; both fit their sentences exactly."
-        }
+        },
+        "read_share": 0.857
       },
       {
         "doc": "Rohan-1597",

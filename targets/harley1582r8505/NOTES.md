@@ -161,6 +161,22 @@ them. They are recorded as open codes.
   unchanged. `evalct.py` in this checkout gives 0.911 over all four sides both before and after the change (f. 264v
   0.905 -> 0.906); the 95.1% above was measured in the main checkout with its vocabulary build.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only, sure words only. Brice
+Dudout's `dudout/reading.md` (fols. 264r-264v) already holds the cipher passages alone, 666 words with the code numbers
+left out, so the split from the clear French is his. Counted from its line-by-line reading: 533 certain, 100 tokens in
+braces (his 96 probable words; a few braced words also carry a restored letter), 2 more with a restored letter only,
+31 unresolved.
+
+- Dudout entry (fols. 264r-264v): 0.944 -> **0.800** (533 of 666). The 0.944 of 5 Nov counted the probable words as
+  read (and his 95.3% the restored ones too); by the owner's rule a probable word is a hole. f. 264r 201/263 (0.764),
+  f. 264v 332/403 (0.824).
+- Class: the Dudout entry is **read in part**. The target's `outcome.class` still said "not read" (fraction_read 0.0)
+  from the 22-23 Oct audit, before Dudout's reading of 29 Oct; it now follows the entries: read in part, fraction_read
+  0.800 (fols. 264r-264v only). The first R8505 entry (all four sides, the b28 reading) stays decoded, not read, with
+  no read share; fols. 263r-263v were not re-read.
+
 ## Remaining gaps
 
 - the cipher clauses of f. 264r (2.5-2.7, 2.16-2.25) and f. 264v (3.1-3.5, 3.39-3.47) that do not build - blocker: no-key-material; tokens confirmed on the R8010 images, the key (rebuilt from this text alone) gives no French there, and no second text in the same key is known
