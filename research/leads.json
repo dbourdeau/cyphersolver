@@ -7091,8 +7091,31 @@
    ],
    "prior_art": "open (checked 28 Oct 2026: known.py; Schäfer edition not consulted)",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Cipher is confined to a few page headings (earlier pass saw all 221 SLUB images); Schaefer, Das Silbermann-Archiv (1994) pp. 433-470, which edits this volume, is not online and was not found on archive.org. Not otherwise retried on 11 Nov. Needs Schaefer opened and a decision whether heading-only cipher is a lead."
+   "scored": "vetted",
+   "vetting_note": "Cipher is confined to a few page headings (earlier pass saw all 221 SLUB images); Schaefer, Das Silbermann-Archiv (1994) pp. 433-470, which edits this volume, is not online and was not found on archive.org. Not otherwise retried on 11 Nov. Needs Schaefer opened and a decision whether heading-only cipher is a lead.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "SLUB Dresden Mscr.Dresd.App.3165 Bd. 6, all 221 images from the IIIF manifest https://iiif.slub-dresden.de/iiif/2/1696251605/manifest.json at 300 px (twelve contact sheets), and images 4 (flyleaf key of the wage marks), 5 (Silbermann's note of 28 Feb 1753, clear German), 68 (p. 64, cipher headings with the clear gloss 'Marbach') and 147 (p. 143, clear notes) at 1000 px, 16 Nov 2026.",
+     "extent": "A few dozen cipher words at most, all in section titles and table headings (place names and work terms such as the 'Windladen' section title on image 87); the body of every page (tables of wood, metal, wages and prices, notes on organs) is in clear German with numerals.",
+     "cipher": "Private monoalphabetic substitution of letters by letters, digits and barred signs for single words (M=Ā, a=1, r=5, ch=z from the glossed 'Marbach'); the wage symbols P with dots are a notation explained by the author's own key on the flyleaf. Clear glosses are written above at least the p. 64 headings."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Silbermann' and 'App.3165': only this lead and its sweep and access rows; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Silbermann: no hit.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for Silbermann: no hit.",
+     "edition": "Schäfer, Das Silbermann-Archiv (1994), pp. 433-470, edits this volume (cited page by page in the Kalliope record DE-611-HS-3576380); it is not online and was not opened, so whether he resolves the cipher headings is not checked. The glosses in the manuscript already give part of the alphabet.",
+     "literature": "Earlier web searches (recorded on the lead, Oct-Nov 2026) on Silbermann and Geheimschrift found nothing on the cipher; none repeated."
+    },
+    "key_check": "Partial key in the volume: the clear gloss 'Marbach' over 'Ā15b1z' on p. 64, and the flyleaf key to the wage marks; not extended to the other headings in this pass.",
+    "duplicates": "known.py: no catalogue entry, target or other lead on the Silbermann-Archiv.",
+    "verdict": "partly_read",
+    "closed": "The cipher is confined to a few headings of single words, glossed in clear in places by the author, so it is too small and too nearly resolved to stand as a cipher lead."
+   },
+   "access": "online",
+   "access_note": "SLUB IIIF manifest https://iiif.slub-dresden.de/iiif/2/1696251605/manifest.json and images (images.iiif.slub-dresden.de) answer curl, 16 Nov 2026; digital.slub-dresden.de itself had shown a 403 earlier."
   },
   {
    "id": 1163,
@@ -18154,11 +18177,32 @@
    ],
    "prior_art": "Not searched (2 Nov 2026)",
    "needs_archive_scan": "yes",
-   "access_note": "SOAS Special Collections",
+   "access_note": "SOAS Special Collections, PP MS 1 (Mackinnon papers); catalogue records read by script (soas.py) on 16 Nov 2026; items not digitised.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "No ciphertext leaf seen and the catalogue entries could not be re-read. Retested from the cloud on 11 Nov 2026: archiveshub.jisc.ac.uk returns the Cloudflare 'Just a moment' page (HTTP 403), archives.soas.ac.uk CalmView returns 202 with an empty body, library.soas.ac.uk resets, digital.soas.ac.uk 403. Earlier snippets ('Telegram in code. No translation', PP MS 1/EPRE/1/56/284) point to a commercial code. Needs the SOAS entries or the items."
+   "scored": "vetted",
+   "vetting_note": "No ciphertext leaf seen and the catalogue entries could not be re-read. Retested from the cloud on 11 Nov 2026: archiveshub.jisc.ac.uk returns the Cloudflare 'Just a moment' page (HTTP 403), archives.soas.ac.uk CalmView returns 202 with an empty body, library.soas.ac.uk resets, digital.soas.ac.uk 403. Earlier snippets ('Telegram in code. No translation', PP MS 1/EPRE/1/56/284) point to a commercial code. Needs the SOAS entries or the items.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "SOAS archive catalogue records PP_MS_1/EPRE/1/56/64, 67, 77, 89, 90, 283, 284, 285, 404-407; PP_MS_1/EPRE/1/22/26-28; PP_MS_1/IBEA/1/23/3; PP_MS_1/EPRE/1/12/44, read at archives.soas.ac.uk/records/<ref> on 16 Nov 2026.",
+     "extent": "About twelve short telegrams of 1889-1891 in a commercial code, most as letter-book copies with their gist, one actual telegram with code, translation and cost, one decyphered telegram.",
+     "cipher": "Commercial telegraph code (code book mentioned at Balinakill). The catalogue gives the plaintext gist for most items, '56/405 Actual telegram with code, translation & cost', '22/27 Decyphered telegram'; only 56/284 says 'No translation', and the next page (56/285) records the sending of its plaintext draft."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Mackinnon' and 'Emin Pasha': only this lead and the Africa literature sweep note that file 56 p. 261 (Tippoo Tib telegram) is summarised, so read; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Mackinnon and Zanzibar: no hit.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for Mackinnon and Zanzibar: no hit.",
+     "edition": "The archive's own catalogue is the decisive source: it records the content or translation of the telegrams. No printed edition of the EPRE letter books was searched.",
+     "literature": "No literature search beyond the earlier sweep note; not needed once the catalogue showed the translations and gists."
+    },
+    "key_check": "The commercial code book itself is not identified (12/44 says only that a code book was left at Balinakill); not needed, since the translations are recorded.",
+    "duplicates": "known.py: no catalogue entry or other lead for these Mackinnon items.",
+    "verdict": "partly_read",
+    "closed": "The telegrams are short commercial-code messages whose content, translation or plaintext draft is recorded in the same papers; at most one telegram (56/284) lacks a translation on its own page, and its draft is noted on the next."
+   }
   },
   {
    "id": 1617,
@@ -50898,11 +50942,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "HHStA Wien, not digitised; Hungaricana regests read in full by script on 16 Nov 2026; Schuller 1898 cited by the regests, not opened.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Nagyszeben 1530-31 Fasc. 15-19: the regests cite Schuller (printed), the senders are unnamed in the list view and the leaf pages were not opened. Needs one letter with no edition page. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Nagyszeben 1530-31 Fasc. 15-19: the regests cite Schuller (printed), the senders are unnamed in the list view and the leaf pages were not opened. Needs one letter with no edition page. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests of the Vienna inventory, HHStA Ungarische Akten, Allgemeine Akten Fasc. 15-19: ids 143145, 143189, 161156, 164516, 164660, 164749, 164752, 164962, 164963, 165031, 165115, 165211, read at archives.hungaricana.hu/en/lear/BecsSeg/<id>/ on 16 Nov 2026.",
+     "extent": "Twelve Latin cipher reports from Nagyszeben and elsewhere, May 1530 to Nov 1531, one leaf or two each.",
+     "cipher": "Numeric cipher ('feloldással a számok fölött', decipherment above the numbers); every regest records the contemporary Latin decipherment on the sheet (interlinear or above the figures), one with a separate copy as well."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps, catalogue, leads, targets) on 'Gerendi', 'Horváth Gáspár', 'Schuller': only the 1529 Gerendi leads of Fasc. 10-12 (closed read earlier, Lang C.Jel.02-06) and lead 2462; no record of the 1530-31 pieces of Fasc. 15-19.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Szeben, Hermannstadt, Gerendi: no hit.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for the same names: no hit.",
+     "edition": "Schuller, 'Urkundliche Beiträge zur Geschichte Siebenbürgens 1527-1533', Archiv des Vereins für siebenbürgische Landeskunde NF 28 (1898), prints 143145, 143189, 161156, 164963 and 164962 (pp. 472-473, 485-486, 493-494, 542-546, cited in the regests); Veress, Fontes Rerum Transylvanicarum IV pp. 211-212 prints part of 143189. The printed pages were not opened.",
+     "literature": "Láng's repertory of early Habsburg ciphers lists Gerendi's 1529 letters as monoalphabetic ciphers deciphered in-letter (recorded on the 1529 leads); no further search needed for 1530-31 once the archive's own description showed every piece deciphered."
+    },
+    "key_check": "No key needed: each piece carries its contemporary decipherment. The 1529 Gerendi system is reconstructible from the deciphered letters (recorded on the 1529 leads).",
+    "duplicates": "known.py: the 1529 Gerendi leads (Fasc. 10-12) are different letters; catalogue 2459-2461 are other single items of Fasc. 10 and 16 not among these ids.",
+    "verdict": "read",
+    "closed": "Every cipher report of Fasc. 15-19 in the lead carries its contemporary Latin decipherment on the sheet, and six are printed in Schuller 1898."
+   }
   },
   {
    "id": 2688,
@@ -50980,11 +51045,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "HHStA Wien, not digitised; Hungaricana regests 141269, 141270, 141352-141358, 141560, 141595, 141675, 141833, 141936, 142153 read in full by script on 16 Nov 2026.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Krakow/Olomouc files 1527, Fasc. 4-9 (key of 12 Aug 1527 in Fasc. 5 Konv. B, id 141560): leaf pages not opened; envoy and letters unnamed. Needs one letter and its sender. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Krakow/Olomouc files 1527, Fasc. 4-9 (key of 12 Aug 1527 in Fasc. 5 Konv. B, id 141560): leaf pages not opened; envoy and letters unnamed. Needs one letter and its sender. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests of the Vienna inventory, HHStA Ungarische Akten, Allgemeine Akten Fasc. 4-9: ids 141269, 141270 (Fasc. 4 Konv. B fol. 22-28), 141352-141358 (Fasc. 4 Konv. C fol. 29-57), 141560 (Fasc. 5 Konv. B fol. 82), 141595 (Fasc. 5 Konv. B fol. 133/2-4), 141675 (Fasc. 6 Konv. A fol. 82-84), 141833 (Fasc. 7 Konv. B fol. 10-14), 141936 (Fasc. 8 Konv. A fol. 98-99), 142153 (Fasc. 9 Konv. B fol. 26), read at archives.hungaricana.hu/en/lear/BecsSeg/<id>/ on 16 Nov 2026.",
+     "extent": "Eight cipher pieces of May 1527 to Oct 1528 (a full Latin cipher letter, a cipher letter to Zuccarini, a page of cipher in a German letter, cipher additions on a separate leaf, a cipher letter of King John, a few-line cipher note, a German cipher postscript, Hofmann's cipher letter) and one enclosed key.",
+     "cipher": "The regests mark six pieces as deciphered at the time ('latin feloldás és sifrír', 'sorközi feloldással', 'külön fel is oldották', 'egy másik lapon másolata'); Hofmann's letter has no decipherment but its key is enclosed (catalogue 1234); Harrach's postscript is 'sifrírban írt utószó' with no decipherment noted, though its content is summarised."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps, catalogue, leads, targets) on 'Harrach', 'Logschan', 'Lokschau', 'Zuccarini' and the Fasc. numbers: catalogue 1234 is Hofmann's letter (141595); the Harrach hits are 17th-century Madrid embassy entries, unrelated; no DECODE record of these pieces.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Laski, Zuccarini, Harrach, Logschan and 1527: no entry for these pieces.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for the same names: no hit.",
+     "edition": "The archive's own regests record the contemporary decipherments filed with six of the pieces. Gévay's hand is noted on one neighbouring piece (141357), so the files were used for Gévay's Urkunden und Actenstücke; that edition was not opened for the Harrach postscript.",
+     "literature": "No further literature search: the decisive facts (decipherments on the sheets, key enclosed for Hofmann) come from the archive's description."
+    },
+    "key_check": "Logschan's key of 12 Aug 1527 (141560, Fasc. 5 Konv. B fol. 82) is in the same files and is presumably the key of his later deciphered letters (141675, 141833); Hofmann's key is at fol. 133/3 (catalogue 1234). Neither was needed to close the lead.",
+    "duplicates": "141595 (Hofmann to the Lower Austrian government, 22 Aug 1527) is catalogue 1234; no other catalogue entry or lead covers these pieces.",
+    "verdict": "partly_read",
+    "closed": "Six of the eight cipher pieces were deciphered at the time on the sheet or a separate leaf, one is already catalogue 1234 and one is a key; only Harrach's short postscript of 5 Jun 1527 lacks a recorded decipherment, and its content is summarised by the archivist."
+   }
   },
   {
    "id": 2690,
@@ -51021,11 +51107,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "HHStA Wien, not digitised; Hungaricana regests 42320-42330 read in full by script on 16 Nov 2026.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Naples letter of 18 Sep 1530 (Kt. 1 Konv. 4, id 42325): sender cut off in the regest, 'titkosirassal es feloldas mellette' (decipherment beside it); not opened. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Naples letter of 18 Sep 1530 (Kt. 1 Konv. 4, id 42325): sender cut off in the regest, 'titkosirassal es feloldas mellette' (decipherment beside it); not opened. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests of the Vienna inventory, HHStA Türkei I Karton 1 Konv. 4 (1530), ids 42320-42330 (fol. 48-105), read at archives.hungaricana.hu/en/lear/BecsSeg/<id>/ on 16 Nov 2026.",
+     "extent": "Two cipher pieces: Carafa's letter of 18 Sep 1530 (fol. 64-67) and a cipher of 4 Oct 1530 (fol. 68-69) with a probable decipherment on fol. 70-71; the neighbouring letter to Rizzi of 17 Sep 1530 has only a coded signature.",
+     "cipher": "Regest 42325: 'titkosírással és feloldás mellette' (cipher with the decipherment beside it); regest 42326: 'Titkosírás, (fol. 70-71. ehhez készült feloldás?)' (cipher, fol. 70-71 the decipherment made for it, queried)."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps, catalogue, leads, targets) on 'Caraphus', 'Carafa', 'Rizzi' and 'Türkei I, Kt. 1': the Carafa hits are unrelated 1550s Florentine and Swiss entries; no record of these pieces.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Carafa, Rizzi, Naples and 1530: the Naples hit is Moncada's 1524 letter, unrelated; nothing on these pieces.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for the same terms: Naples hits concern the 1413 Ladislaus letters, unrelated; nothing on these pieces.",
+     "edition": "The regest cites Gévay on the false date of 42325, so the piece was used for Gévay's Urkunden und Actenstücke zur Geschichte der Verhältnisse zwischen Österreich, Ungern und der Pforte (1530 volume); whether Gévay prints the deciphered text was not checked. The decipherments filed beside the cipher settle the verdict on their own.",
+     "literature": "No further literature search; not needed once the archive's description showed the decipherments filed with both pieces."
+    },
+    "key_check": "No key needed: the decipherments are filed with the pieces. No Carafa or Rizzi key was found by known.py.",
+    "duplicates": "known.py on the names and the Karton: no catalogue entry, target or other lead for Türkei I Kt. 1 Konv. 4.",
+    "verdict": "read",
+    "closed": "Both 1530 cipher pieces of Türkei I Kt. 1 Konv. 4 have their contemporary decipherment filed beside them (the second with the cataloguer's query), so there is nothing unread to vet."
+   }
   },
   {
    "id": 2691,
@@ -51062,11 +51169,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the correspondent names and shelfmark finds no catalogue or lead row for this run (overlaps named in \"status\"); no web, Tomokiyo, DECODE or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "regest only on Hungaricana (content provider Becsi Magyar Levéltári Kirendeltség); no images online; reproduction order from HHStA Wien (Haus-, Hof- und Staatsarchiv) needed, or a reading-room visit",
+   "access_note": "ÖStA FHKA Wien, not digitised; Hungaricana regests 3797-3805, 156600, 179729 read in full by script on 16 Nov 2026 (archives.hungaricana.hu/en/lear/BecsSeg/<id>/).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Hoffinanz Ungarn 1540 (FHKA RN 1 Konv., ids 3799 and 3803): regests cut off, sender unnamed, German text; not opened. (research/vetting_2026-11-14_hungaricana/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Hoffinanz Ungarn 1540 (FHKA RN 1 Konv., ids 3799 and 3803): regests cut off, sender unnamed, German text; not opened. (research/vetting_2026-11-14_hungaricana/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Hungaricana regests of the Vienna inventory (Bécsi Magyar Levéltári Kirendeltség) 3797-3805 (FHKA Hoffinanz Ungarn RN 1, Konv. 1539-1540), 156600 (Hoffinanz Ungarn 1654.08.14, Kt. 449 fol. 38-55) and 179729 (Hoffinanz Ungarn 1670.12.07, Kt. 528 fol. 21-22), read in full on 16 Nov 2026 at archives.hungaricana.hu/en/lear/BecsSeg/<id>/.",
+     "extent": "Two partly ciphered German reports of Leonhard von Fels of Oct and Nov 1540 (fol. 21-24 and 33-38); a six-line cipher writing of 1654 (fol. 48-49); the 1670 regest is only an order to send news in cipher in future.",
+     "cipher": "The archive's regests say of both 1540 reports 'részben sifrírozva, sorközi feloldással': partly in cipher with a contemporary interlinear decipherment on the same sheets. The 1654 piece is described only as '6 soros sifrír írás és pecsét', with no decipherment mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps, catalogue, leads, targets) on 'Leonhard von Fels', 'Hoffinanz Ungarn' and 'Reniger': only this lead and its sweep rows; no DECODE record of these pieces.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Fels, Reniger, Hoffinanz and Szentandras: no hit.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for the same terms: no hit.",
+     "edition": "The decisive fact is in the archive itself: the regests record a contemporary interlinear decipherment on both 1540 reports, so they were read when received. No printed edition of Fels's 1540 reports was searched further, since the decipherment on the sheets already settles the verdict.",
+     "literature": "No literature search beyond the lists above; not needed once the interlinear decipherment was established from the archive's description."
+    },
+    "key_check": "No key is needed for the 1540 reports (deciphered interlinear). No key for the 1654 six-line piece is recorded in the regest or found by known.py.",
+    "duplicates": "known.py on the sender, the series and Reniger: no catalogue entry, target or other lead for these pieces.",
+    "verdict": "read",
+    "closed": "Both 1540 cipher reports of Leonhard von Fels carry a contemporary interlinear decipherment, per the archive's own regests; the 1654 six-line piece is a minor residue and the 1670 item is not a cipher."
+   }
   },
   {
    "id": 2692,
@@ -51890,10 +52018,32 @@
    ],
    "source": "Stadsarchief Amsterdam search API (id.archief.amsterdam /search/records, behind beta.archief.amsterdam), 14 Nov 2026",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on Vogelesangh, Vogelsangh, Hasselaer finds nothing; no DECODE, Tomokiyo or Lasry search; identity and date of the Pensionary not verified",
-   "access_note": "digitised; images open through the Stadsarchief IIIF service",
+   "access_note": "Stadsarchief Amsterdam IIIF, scan 1 https://id.archief.amsterdam/resources/iiif/3/efd6ea45-2eae-4c3c-b40d-077498f16617/full/1400,/0/default.jpg, fetched by curl 16 Nov 2026.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Key book or key sheet only; no ciphertext in the entry, so there is nothing to read until a letter in this cipher turns up. Viewed on the Amsterdam IIIF images on 14 Nov 2026 (two scans, one table of plain letters against numerals and signs). Hasselaer fonds 292 inv. 156; Pieter Vogelesangh (1616-63) and the date of the sheet not verified; DECODE 0 for Vogelesangh and Hasselaer. Kept as a lead for a matching ciphertext."
+   "scored": "vetted",
+   "vetting_note": "Key book or key sheet only; no ciphertext in the entry, so there is nothing to read until a letter in this cipher turns up. Viewed on the Amsterdam IIIF images on 14 Nov 2026 (two scans, one table of plain letters against numerals and signs). Hasselaer fonds 292 inv. 156; Pieter Vogelesangh (1616-63) and the date of the sheet not verified; DECODE 0 for Vogelesangh and Hasselaer. Kept as a lead for a matching ciphertext.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Stadsarchief Amsterdam 292 (Hasselaer) inv. 156, scan 1 (IIIF efd6ea45-2eae-4c3c-b40d-077498f16617) fetched at 1400 px on 16 Nov 2026 and read in full; scan 2 (ce90beee-643b-4083-a0df-dface472f9db) recorded as blank but for a docket on 14 Nov 2026.",
+     "extent": "One page: a two-line heading and a two-row substitution table of 24 plain letters; no text written in the cipher anywhere on the sheet.",
+     "cipher": "Simple monoalphabetic substitution alphabet: a=7, b=6, c=5, d=4, e=2, f=1, g=9, h=b, i=c, k=d, l=e, m=10, n=l, o=r, p=g, q=t, r=u, s=a, t=n, u=m, w=f, x=q, y=o, z=h (readings of a few flourished forms approximate). A key only; no ciphertext."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Vogelesangh', 'Vogelsangh', 'Hasselaer': only this lead and its sweep rows; DECODE searched for Vogelesangh and Hasselaer on 14 Nov 2026 with no record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (copy fetched 15 Nov 2026) grepped for Vogelsang and Hasselaer: no hit.",
+     "lasry": "Lasry's GL.htm (copy fetched 15 Nov 2026) grepped for Vogelsang and Hasselaer: no hit.",
+     "edition": "No edition applies: the item is a bare key sheet with no letter to print; no printed Vogelsangh correspondence in cipher was found in the earlier sweep notes.",
+     "literature": "No literature on this key found in the sweep (14 Nov 2026) or this pass; Pieter Vogelesangh's identity and the sheet's date remain unverified, which does not affect the verdict."
+    },
+    "key_check": "The item is itself the key (a 24-letter substitution table, transcribed above); no ciphertext to test it on has been found in the Hasselaer fonds.",
+    "duplicates": "known.py on the names and the shelfmark: no catalogue entry, target or other lead.",
+    "verdict": "not_cipher",
+    "closed": "The item is a key sheet with no ciphertext on it, so there is no cipher text to read; it belongs with the held keys, not the leads."
+   },
+   "access": "online"
   },
   {
    "id": 2715,
