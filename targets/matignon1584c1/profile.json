@@ -1,0 +1,150 @@
+{
+ "schema_version": 1,
+ "target": "matignon1584c1",
+ "title": "Matignon's Cipher-1, 1584: letter of BnF fr. 15568 ff. 151r-152r (catalogue 2840), read in part with Tomokiyo's table",
+ "documents": [
+  {
+   "id": "ff151-152",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 15568 ff. 151r-152r (Gallica btv1b9063927n; view = folio + 8: f. 151r = view 159 right, f. 151v = view 160 left, f. 152r = view 160 right, endorsement f. 153 = view 161). Images: Source gallica.bnf.fr / BnF",
+   "date": "1584",
+   "year": 1584,
+   "country": "France",
+   "route": "Matignon side (endorsement f. 153 'M. le mareschal de Matignon ... 1584') -> unknown",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on or beside the leaves (views 157-164 checked); Tomokiyo names f. 151 under Matignon's Cipher-1 and gives no reading."
+   },
+   "length": {
+    "tokens": 2998,
+    "unit": "symbols",
+    "measured": true,
+    "file": "texts/transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Brice Dudout with Claude Opus 5.5 (Claude Code), from deskewed line crops of the Gallica full-size images (Source gallica.bnf.fr / BnF). Every line in two independent passes (one blind sub-agent per pass); the two held-out portions arbitrated on the image without a key, the development lines arbitrated by sense.",
+    "image_quality": "good",
+    "notes": "Folio numbers follow Daniel Bourdeau's correction: Gallica view = folio + 8. Agreement of the two passes before arbitration: 88.6% (f. 151v), 88.8% (f. 151r). Hard shapes: 6/6^, st/long s, rho/looped f, e/z-like 3."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Matignon's Cipher-1 (Tomokiyo's table): homophonic substitution of graphic signs and figures for French letters, with code signs (barred theta = le roy, diamond with tail = que) and nulls.",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names",
+    "common words"
+   ],
+   "unread_groups": 3
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "Tomokiyo's Matignon's Cipher-1 table (cryptiana henryiii.htm), reconstructed from fr. 15567 ff. 24, 54",
+  "notes": "Different system from the Mayenne-Forget Cipher-1 (matignon1586) and from Matignon's Cipher-3 (matignon1586c3) and tuple cipher (matignon1586tuple)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Tomokiyo publishes the table and says f. 151 uses it, without a reading; no issue, PR or lead on fr. 15568 in this repository (checked 16 Nov 2026)",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key"
+  ],
+  "attack": "published key",
+  "human_role": "Brice Dudout directed the work; Claude Opus 5.5 transcribed, extended the key and ran the pre-registered test.",
+  "tools": [
+   "scripts/decode.py",
+   "scripts/dec2.py",
+   "scripts/arb_dev.py",
+   "targets/matignon1586c3/f276/scripts/measure.py (fr-1600-letters)"
+  ],
+  "models": [
+   "Claude Opus 5.5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-16",
+  "last_date": "2026-11-16"
+ },
+ "solution": [
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Tomokiyo's table extended on f. 151r, frozen, and measured once on a held-out portion (f. 152r + last line of f. 151v, 302 signs) chosen before transcription: 262/299 signs (87.6%) in sense runs; 200 shuffled keys max 32.1%; pre-set bar 0.85 and max+0.30 met.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Single re-test on a new held-out portion (f. 151v ll. 1-9, 377 signs) chosen and frozen before transcription (PREREG-C), key corrected on development lines only and frozen (PREREG-C2): 287/374 signs (76.7%) in sense runs; 200 shuffled keys max 34.5%. The pre-set bar 0.85 is NOT met (the second bar, max + 0.30, is). A clerical slip left sign 6 without a value in the frozen key; a post-hoc, non-probative rerun with 6 = p gives 73.0%.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "read with known key",
+  "method_basis": "Tomokiyo's Matignon's Cipher-1 table, extended on development lines; first held-out test passed (87.6%), second held-out test below the 0.85 bar (76.7%).",
+  "class": "read in part",
+  "verification": [
+   "matched control"
+  ],
+  "key": "partial",
+  "credits": [
+   {
+    "who": "tomokiyo",
+    "role": "key or decipherment used",
+    "note": "Matignon's Cipher-1 table (reconstructed from fr. 15567 ff. 24, 54), and the attribution of fr. 15568 f. 151 to it",
+    "source": "https://cryptiana.web.fc2.com/code/henryiii.htm"
+   }
+  ],
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "texts": [
+   {
+    "doc": "ff151-152",
+    "transcription": "texts/transcription.txt",
+    "decryption": "texts/decryption.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "state": "read in part",
+    "language": "fr",
+    "read_share": 0.666,
+    "summary": "Report to Marshal Matignon (1584) on Huguenot moves in Guyenne: the king of Navarre's men gaining a foothold in the province and refusing to give back the towns of surety, the writer's loyalty to the king alone, La Rochefoucauld's arrival beside the king of Navarre, and the king of Navarre's claim that Henri III allowed him to build at Le Boucau, at the mouth of the Adour below Bayonne.",
+    "reading_review": {
+     "grade": "B",
+     "by": "contributor's own (Claude Opus 5.5 for Brice Dudout)",
+     "date": "2026-11-16",
+     "note": "Preliminary review by the contributor's own reader, not independent; 66.6% of words read by sense (395 sure, 61 probable, 3 restored, 230 unresolved)."
+    }
+   }
+  ]
+ }
+}
