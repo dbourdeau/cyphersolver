@@ -671,3 +671,46 @@ Work by AI agents (Claude, Opus), not checked by a person. Details, figures and 
   of 11th"). Not printed there.
 - **Not changed:** `profile.json` outcome, read shares and reading reviews; the telegram is not an entry in
   `outcome.texts` (its reading review is the reviewers'). `key.md` notes the second key.
+
+### Integration check (15 Nov 2026, PR #676)
+
+Done by an AI reviewer for the maintainers. The contributor's files are unchanged. One person has since looked at the
+disputed letters of the 11 April lower telegram (last point below); nothing else here was checked by a person.
+
+- **The key stands; its frozen word test does not.** RALLYTOTHEFRONT was applied with a separate decoder to the filed
+  letters and to each blind transcription of the 11 April lower telegram. Against the plaintext given, 1 letter differs
+  on the filed letters (20), 6 on B1, 9 on B2, 12 on helper A and 11 on helper B: 15 places in all. Five of them have no
+  reader's first choice (20, 34, 64, 76, 77). The frozen test on the two later transcriptions (11 of 22 groups as words
+  against a mark of 15, controls at most 5) is a miss and stays recorded as failed.
+- **Why the key is accepted all the same.** (1) With the fixed key the two later blind transcriptions, which had no part
+  in the search, give HXACTLP HOW LNNG YNU WIVL HOLD THE CITY RTNNING OF THE TRAINS DEPENDS HOLD ON TNTIL NINE O CLNQK
+  TOLARROW ADDITIONAL TRAINS THERE. (2) Own control with the shared English quadgram model (`lang`, en-modern): those
+  texts score -3.66 and -3.71 per letter and the filed letters -2.25, against -4.10 for the best of 40 shuffles of the
+  telegram, each hill-climbed over all 15-letter keys (median -4.44). A free 15-letter key on 107 letters does not reach
+  this on shuffled text. (3) The search was not asked for a phrase and returned one. (4) Pencil "15" marks stand over
+  every fifteenth letter from the 30th (seen again on the frame). The control is small (40 shuffles, one model).
+- **On the image** (NARA frame 0046 fetched again; sha256 as recorded in `source_audit_2026-11-12/SOURCES.json`): the
+  six letters the key needs as F (12, 16, 34, 64, 76, 81) lack the lower-right tick that the clerk's E carries in the
+  same words (VXLNRE, HTTE, FLMWE, PEFQV, EMFC...); letter 1 has no descender (V); letter 20 is T; letter 77 has a
+  tail or blot at its foot and is not settled; letter 7 is cut by the gutter.
+- **Strict count.** 11 April lower telegram: 23 words in 22 groups, 21 sure; WILL and CLOCK are holes (0.913; the
+  contributor counts one hole, 22 of 23): read in part. 9 March to Levy: 20 of 21 cipher words (0.952), GUAGE a hole:
+  read. 11 April upper telegram: 10 of 21 cipher words, nine unread in the middle: decoded, not read, no entry in
+  `outcome.texts`.
+- **Recorded in `profile.json`:** documents and `outcome.texts` entries for the Levy telegram and the 11 April lower
+  telegram, each with a reading review (grade A, by the reviewer, a model, not a person); `*_cipher.txt` and
+  `*_read_measure.txt` for both; credits for Andrew Beling; one verification step. For the 11 April lower telegram the
+  method is "key recovered from ciphertext-only"; the folder's method is unchanged.
+- **Check by a person (15 Nov 2026).** Daniel Bourdeau was shown eight words cut from the frame at full resolution
+  (`review_2026-11-15/taylor1865_review_sheet.jpg`), the
+  letter in question boxed and a sure E boxed beside it, and agrees with the reviewer on each: F, not E, at 12, 16, 34,
+  64, 76 and 81 (64 less sure: ink specks under the letter); V at letter 1; T at letter 20 (WILL stays a hole); Q at
+  letter 77, the tail being a blot in darker ink (CLOCK stays a hole); letter 7 at the gutter not settled. It was not a
+  blind check: he had the reviewer's reading and what the key needs in front of him. The count is unchanged: 21 of 23
+  words, read in part. The Levy letter of 9 March has not been looked at by a person.
+- **Prior art.** A web search and an Internet Archive full-text search for the phrase with "cipher" or "Confederate"
+  found nothing. Gaddy (*Masked Dispatches*, *Cryptologia*) and Kahn are still not opened: the key is "not found in
+  any key list opened", not "unknown".
+- **Not re-run:** `rally_key/verification/run_verify.py` needs `/usr/share/dict/words`, absent here (its printed
+  plaintexts equal ours); the key-search scripts need the Official Records text. The frozen hashes of the two helper
+  transcriptions and of the test plan match the files; the order of events is by the contributor's record.
