@@ -41,8 +41,8 @@ as expected, since wave 17 changed no existing value.
 - This is **not an independent control**. The key was built from this page, so agreement here is expected. It shows the
   key's source exists and says what the method claims; it does not test the key. The test of the key remains its
   unchanged use on 620, 623 and 633 (strict 74.7%, 55.4%, 74.2%, shuffles 0 of 5,000) [sourced: ../NOTES.md].
-- A blind control on 627 (a fresh reader, name-only sheet, one decode, scored against the decipherment) has still not
-  been run.
+- A blind control on 627 (a fresh reader, name-only sheet, one decode, scored against the decipherment) had not been
+  run when this section was written; it was run later the same day (next section).
 
 Method label stays "key recovered based on adjacent plaintext" (Lasry): the plaintext is the contemporary decipherment of
 a sibling letter in the same filza, in another hand.
