@@ -7985,10 +7985,32 @@
    "difficulty": 3,
    "verify": "Compare with canada_lac lead; request the item.",
    "ark": "",
-   "scored": "sweep",
+   "scored": "vetted",
    "access": "archive",
-   "access_note": "not online (backfilled 28 Oct 2026 from the entry: ...la perte de la colonie' (1760, Moreau de Saint-Méry F3 16); no viewer, and 'en chiffres' may mean figures, not cipher. Possibly t...)",
-   "vetting_note": "cipher confirmed by Brymner's 1899 calendar but the leaf (ANOM COL F3 16 f. 115, microfilm 247 MIOM 13) is not online; the Héritage frames once linked to this lead are a different letter (F3 16 ff. 12-19, 15 April 1760) (research/vetting_2026-11-14_ajbeling/vetting.json)"
+   "access_note": "ANOM COL F3 16 f. 115, microfilm 247 MIOM 13; not on LAC reel C-10523.",
+   "vetting_note": "cipher confirmed by Brymner's 1899 calendar but the leaf (ANOM COL F3 16 f. 115, microfilm 247 MIOM 13) is not online; the Héritage frames once linked to this lead are a different letter (F3 16 ff. 12-19, 15 April 1760) (research/vetting_2026-11-14_ajbeling/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "ANOM notice ark:/61561/3072359 (read in Chrome 13 Nov 2026); Brymner, Report on Canadian Archives 1899, Supplement (Ottawa 1901), calendar of F3 vol. 16 (archive.org cihm_97295), as read and quoted in research/vetting_2026-11-14_ajbeling/vetting.json; LAC reel C-10523 frames 360-392 (the 15 April 1760 letter, F3 16 ff. 12-19, whose short cipher passages are copied with their decipherment).",
+     "extent": "One despatch, f. 115, 8 1/2 pages per Brymner; leaf not seen.",
+     "cipher": "Brymner: 'M. de Vaudreuil à M. de Berryer. A dû recevoir ses lettres chiffrées du 23 avril, 26 et 28 juin et du 13 de ce mois ... (Cette dépêche est chiffrée.) Folio 115', followed by a summary of its content; ANOM title 'annonçant en chiffres la perte de la colonie'."
+    },
+    "prior_art": {
+     "decode": "decode_search.py 'Vaudreuil' and 'Moreau' (14 Nov 2026): 0 records; known.py 'F3 16': only this lead and the Vaudreuil targets. Not on DECODE.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Vaudreuil and Berryer: no entry.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Vaudreuil and Berryer: no entry.",
+     "edition": "Brymner's calendar (1901) summarises the content of the ciphered despatch, so a reading existed in the Paris copy; Collection de manuscrits relatifs à la Nouvelle-France IV (1884) does not print it (searched 14 Nov 2026).",
+     "literature": "Internet Archive full-text searches on the calendar summary and on 'Vaudreuil Berryer 29 août 1760 chiffre' (14 Nov 2026) found no printed text; no further study known."
+    },
+    "key_check": "Vaudreuil's 1757 numerical table (ANOM COL C11E 10 f. 289; targets/vaudreuil1760/key/key274.json) reads his 1759-60 cipher letters and is very likely the key; untested on this letter because the leaf is not online.",
+    "key_held": "targets/vaudreuil1760/key/key274.json with overrides.json (C11E 10 sheet 274 table); not tested on F3 16 f. 115.",
+    "duplicates": "known.py 'F3 16', 'Vaudreuil', 'C11A 105': different date and volume from catalogue 1391 (13 Aug 1760, C11A 105), which this despatch acknowledges. The original of 29 Aug 1760 may also be in C11A 105; not checked.",
+    "verdict": "read",
+    "closed": "Brymner calendared the content of this wholly ciphered despatch from the Moreau de Saint-Méry copy, which (like ff. 12-19 of the same volume) carries the decipherment; the letter was read, and the Vaudreuil table held here would read the cipher if it were seen."
+   }
   },
   {
    "id": 1211,
@@ -8029,10 +8051,31 @@
    "difficulty": 3,
    "verify": "View.",
    "ark": "",
-   "scored": "sweep",
+   "scored": "vetted",
    "access": "archive",
-   "access_note": "FranceArchives record has no viewer and no \"numérisé\" note; check the AN/ANOM site before ordering (checked 28 Oct 2026)",
-   "vetting_note": "ANOM notices read in Chrome: COL B 7 f.143 (27 Dec 1677, in two copies), f.153 (8 Mar 1678), f.188 (13 Jun 1678), each marked only 'chiffrée', no viewer, no COL B image path found. The notices summarise the subject, and COL B is an outgoing register, so the entries may be clear minutes. Needs COL B 7 images. Dessalles, Histoire générale des Antilles (manioc ADG18237.pdf) may print the 27 Dec 1677 letter: not read, 68 MB at about 25 KB/s."
+   "access_note": "ANOM COL B 7 (microfilm 201 MIOM 3), no viewer; a confirming look at f. 143 would settle it.",
+   "vetting_note": "ANOM notices read in Chrome: COL B 7 f.143 (27 Dec 1677, in two copies), f.153 (8 Mar 1678), f.188 (13 Jun 1678), each marked only 'chiffrée', no viewer, no COL B image path found. The notices summarise the subject, and COL B is an outgoing register, so the entries may be clear minutes. Needs COL B 7 images. Dessalles, Histoire générale des Antilles (manioc ADG18237.pdf) may print the 27 Dec 1677 letter: not read, 68 MB at about 25 KB/s.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "ANOM notices for COL B 7 f. 143 (27 Dec 1677, two copies), f. 153 (8 Mar 1678), f. 188 (13 Jun 1678), read in Chrome on 3-5 Nov 2026 (research/vetting_2026-11/out_c09.json, research/vetting_2026-11-04/vet_arch35.json); FranceArchives cd618db0..., 233f5f66..., 917e40e8.... The register leaves were not seen.",
+     "extent": "Three despatches (one in two copies), each a register copy of a few pages.",
+     "cipher": "ANOM notices mark each entry 'Chiffrée' and give a content summary (e.g. the king to Blénac on the entry of the English into the islands). COL B is the register of outgoing despatches, so the entries are the clear copies of letters sent in cipher."
+    },
+    "prior_art": {
+     "decode": "known.py 'COL B' and 'Blénac': nothing for these entries. Not on DECODE.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Blénac, Antilles and Colbert: the Colbert hits are BnF Mélanges/Cinq Cents de Colbert volumes, nothing on COL B or Blénac.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Blénac and Colbert: no entry for these despatches.",
+     "edition": "Dessalles, Histoire générale des Antilles, may print the 27 Dec 1677 letter (noted 3 Nov 2026, not read). No printing is needed to close the lead, because the register copy is clear.",
+     "literature": "Web searches on Blénac/Colbert 1677-78 cipher (29 Oct and 3 Nov 2026) found only biographies."
+    },
+    "key_check": "No key needed: the register holds the clear text. The ciphertext as sent, if any survives, would be in Blénac's papers (COL C8A, Martinique), not traced.",
+    "duplicates": "known.py 'COL B', 'Blénac', '201 MIOM': no other lead or entry.",
+    "verdict": "read",
+    "closed": "COL B 7 is the clear outgoing register; the entries marked 'chiffrée' are the clear copies of the ciphered despatches to Blénac, whose content ANOM summarises, so there is no unread ciphertext here."
+   }
   },
   {
    "id": 1214,
@@ -8255,8 +8298,31 @@
    "difficulty": 3,
    "verify": "View.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "'Feuille volante chiffrée' in a merchant's ledger may be a sheet of figures; no scan. Not retried from the cloud on 11 Nov. Needs AD Haute-Marne scans of 129 J 23, 35, 37."
+   "scored": "vetted",
+   "vetting_note": "'Feuille volante chiffrée' in a merchant's ledger may be a sheet of figures; no scan. Not retried from the cloud on 11 Nov. Needs AD Haute-Marne scans of 129 J 23, 35, 37.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "FranceArchives facomponent c14aa27cc52796fc251f6cab4d7a6efdfdd341da (129 J 23) and the AD Haute-Marne finding aid, read in Chrome on 3-5 Nov 2026 (research/vetting_2026-11/out_c09.json, research/vetting_2026-11-04/vet_arch41.json); 129 J 35 and 37 not re-opened.",
+     "extent": "One loose sheet at the end of a 400-page journal (129 J 23, 1931-34); five loose sheets in the cash book 129 J 35 (1909-13); 129 J 37 (1920-21).",
+     "cipher": "Archive description: 'Toutes les pages ne sont pas remplies de la même façon; à la fin, présence d'une feuille volante chiffrée' (129 J 23); '5 feuilles volantes chiffrées' (129 J 35). In an account book 'chiffrée' reads as 'covered with figures'."
+    },
+    "prior_art": {
+     "decode": "known.py '129 J' and 'Landanger': only this lead and the sweep files. Not on DECODE.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Landanger and Haute-Marne: no entry.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Landanger: no entry.",
+     "edition": "No edition: private business records of 1909-34, unpublished.",
+     "literature": "Web search for Landanger / 129 J (29 Oct 2026) found nothing."
+    },
+    "key_check": "No key applies: the sheets are taken to be figures, not cipher.",
+    "duplicates": "known.py 'Landanger', '129 J': no other lead or entry.",
+    "verdict": "not_cipher",
+    "closed": "The 'feuilles volantes chiffrées' of the Landanger journal and cash books are, on the archive's own wording, loose sheets of figures in account books, not ciphertext."
+   },
+   "access": "archive",
+   "access_note": "AD Haute-Marne reading room; FranceArchives returns an empty JavaScript page to curl (16 Nov 2026)."
   },
   {
    "id": 1220,
@@ -12794,10 +12860,32 @@
     }
    ],
    "needs_archive_scan": "unknown",
-   "access_note": "IMH archive system (archivesonline.mh.sinica.edu.tw) needs a reader account; whether this item is imaged online not determined",
+   "access_note": "archivesonline.mh.sinica.edu.tw still unreachable from script on 16 Nov 2026 (https: curl exit 35, connection reset; http: exit 56). catalog.digitalarchives.tw answers and carries one first-page image per record (image.digitalarchives.tw/ImageCache/...). First page: https://image.digitalarchives.tw/ImageCache/00/17/6a/a4.jpg (img/1377_03-33-162-04-001.jpg).",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Reader site still down: archivesonline.mh.sinica.edu.tw resets on https and returns HTTP 503 on http from the cloud (11 Nov). The cover image image.digitalarchives.tw/ImageCache/00/17/6a/a4.jpg now downloads by curl; it is the page already seen (typed English plaintext telegram). The other 46 pages are unseen, so neither not_cipher nor open can be given."
+   "scored": "vetted",
+   "vetting_note": "Reader site still down: archivesonline.mh.sinica.edu.tw resets on https and returns HTTP 503 on http from the cloud (11 Nov). The cover image image.digitalarchives.tw/ImageCache/00/17/6a/a4.jpg now downloads by curl; it is the page already seen (typed English plaintext telegram). The other 46 pages are unseen, so neither not_cipher nor open can be given.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Union-catalogue record https://catalog.digitalarchives.tw/item/00/0a/ff/0b.html (館藏號 03-33-162-04-001, 47 pp., 抄檔, 外文) and its first-page image https://image.digitalarchives.tw/ImageCache/00/17/6a/a4.jpg, read 16 Nov 2026.",
+     "extent": "1 of 47 pages seen: one complete telegram of about 230 words, typed in English.",
+     "cipher": "No cipher on the page seen: it is the plaintext of a telegram from Paul Reinsch to the President, Premier and Waijiaobu on the Shantung railway question, numbered 'Twenty', docket 1921-3756. The file title 魯案密電（洋文） means these are the clear copies of secret telegrams."
+    },
+    "prior_art": {
+     "decode": "known.py on '03-33-162' and the IMH series numbers (16 Nov 2026): only the IMH leads themselves. Not on DECODE.",
+     "tomokiyo": "Tomokiyo, cryptiana unsolved.htm (fetched 15 Nov 2026) searched, tags stripped, for Shandong, Shantung, Waijiaobu, Academia Sinica, Chinese: no entry for this item. His Chinese items are the 1916 Sun Yat-sen telegrams only.",
+     "lasry": "Lasry, cryptiana GL.htm (fetched 15 Nov 2026) searched, tags stripped, for Shandong, Waijiaobu, Chinese: no entry for this item.",
+     "edition": "Not looked for in print; the decision rests on the file itself, which is a clear copy file.",
+     "literature": "Prior web search of 28 Oct 2026 (lead record) found no study of this file; not repeated."
+    },
+    "key_check": "No key needed or held: the telegrams are in clear in this copy file; the code used for transmission is not named.",
+    "duplicates": "No catalogue entry or target for IMH Waijiaobu 03-33; sibling IMH leads 1372-1380 are other files.",
+    "verdict": "read",
+    "closed": "The 47-page file is the ministry's copy file of the Shandong-question telegrams in clear (first page a plaintext Reinsch telegram of 1921), so the texts were read at the time; the remaining 46 pages are unseen but the file type and title point the same way."
+   },
+   "access": "online"
   },
   {
    "id": 1378,
@@ -12919,10 +13007,32 @@
     }
    ],
    "needs_archive_scan": "unknown",
-   "access_note": "IMH archive system (archivesonline.mh.sinica.edu.tw) needs a reader account; whether this item is imaged online not determined",
+   "access_note": "archivesonline.mh.sinica.edu.tw still unreachable from script on 16 Nov 2026 (https: curl exit 35, connection reset; http: exit 56). catalog.digitalarchives.tw answers and carries one first-page image per record (image.digitalarchives.tw/ImageCache/...). First pages: ImageCache/00/17/27/08.jpg (02-016) and 00/18/36/f0.jpg (02-020), saved in img/.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Academia Sinica IMH Waijiaobu 03-32 telegrams: images need the IMH archivesonline service (account), catalogue records give no description of ciphertext. Not reachable from the cloud on 11 Nov. Needs IMH image access to 03-32-498-02-016 and -020."
+   "scored": "vetted",
+   "vetting_note": "Academia Sinica IMH Waijiaobu 03-32 telegrams: images need the IMH archivesonline service (account), catalogue records give no description of ciphertext. Not reachable from the cloud on 11 Nov. Needs IMH image access to 03-32-498-02-016 and -020.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Union-catalogue records https://catalog.digitalarchives.tw/item/00/0a/c3/c5.html (03-32-498-02-016) and https://catalog.digitalarchives.tw/item/00/0a/c3/c9.html (03-32-498-02-020), and their first-page images, read 16 Nov 2026.",
+     "extent": "2 of 16 pages seen (the first page of each file).",
+     "cipher": "No cipher on either page: 02-016 p.1 is an outgoing draft cover (電稿, 由: 駐莫李代表 密件, approved by the 政務/通商/交際/條約 heads); 02-020 p.1 is the telegraph section's receipt cover 收 駐俄李代表密電 第十號 13年8月11日. The Waijiaobu files hold its own drafts and decoded copies."
+    },
+    "prior_art": {
+     "decode": "known.py on '03-32-498' and the IMH series numbers (16 Nov 2026): only the IMH leads. Not on DECODE.",
+     "tomokiyo": "Tomokiyo, cryptiana unsolved.htm (fetched 15 Nov 2026) searched, tags stripped, for Li Jia, Moscow, Waijiaobu, Chinese, Academia Sinica: no entry for this item.",
+     "lasry": "Lasry, cryptiana GL.htm (fetched 15 Nov 2026) searched, tags stripped, for Waijiaobu, Chinese, Moscow: no entry for this item.",
+     "edition": "Not looked for in print (the 1924 Sino-Soviet negotiation telegrams are partly printed in Chinese documentary collections); the files themselves are clear working copies.",
+     "literature": "Prior web search of 28 Oct 2026 (lead record) found no study of these files; not repeated."
+    },
+    "key_check": "The Waijiaobu's own telegraph codes would apply; none needed because the files carry the ministry's drafts and decoded copies.",
+    "duplicates": "No catalogue entry or target for IMH 03-32-498; sibling IMH leads 1372-1379 are other files.",
+    "verdict": "read",
+    "closed": "These are the Waijiaobu's own outgoing drafts and telegraph-section decoded copies of its correspondence with Li Jiaao in Moscow (1924), read at the time by the ministry that held the code; no ciphertext is shown."
+   },
+   "access": "online"
   },
   {
    "id": 1382,
@@ -31115,12 +31225,33 @@
    "source": "American Philosophical Society sweep",
    "prior_art": "open as far as checked (3 Nov 2026: known.py on names and shelfmark; archive description says nothing of a decipherment; no edition compared)",
    "needs_archive_scan": "yes",
-   "access_note": "Reading-room item; no scan found online",
+   "access_note": "APS finding aid behind Cloudflare (403 to curl, 16 Nov 2026); reading-room item, no scan.",
    "decode_ids": [],
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Cipher not seen and the edition (Thomas and Peach, Correspondence of Richard Price, 1983-94) not opened. search.amphilsoc.org retested from the cloud on 11 Nov 2026: 403 to curl and a Cloudflare 'Performing security verification' page in headless Chromium (not passed). Needs the APS finding aid text for Mss.B.P93 and the edition; 'code' in Price papers may be his shorthand."
+   "scored": "vetted",
+   "vetting_note": "Cipher not seen and the edition (Thomas and Peach, Correspondence of Richard Price, 1983-94) not opened. search.amphilsoc.org retested from the cloud on 11 Nov 2026: 403 to curl and a Cloudflare 'Performing security verification' page in headless Chromium (not passed). Needs the APS finding aid text for Mss.B.P93 and the edition; 'code' in Price papers may be his shorthand.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "APS Mss.B.P93 finding aid as read in Chrome on 4 Nov 2026 (research/vetting_2026-11-04/vet_arch19.json: 'several letters that are written in code'; undated folder 'four papers written by Price (2 identical and one written in cipher)'; dated items endorsed 'in shorthand'); as.amphilsoc.org and search.amphilsoc.org gave Cloudflare 'Just a moment' to curl on 16 Nov 2026. Edition searched in the archive.org full-text index (items correspondenceof11pric, correspondenceof21pric, correspondenceof32pric) on 16 Nov 2026.",
+     "extent": "Undated folder of four or five papers, one described as in cipher; several dated letters described as 'in code'.",
+     "cipher": "Finding aid: 'several letters that are written in code' and 'one written in cipher'. The edition shows that Price wrote drafts and endorsements in shorthand on the APS letters, which is what the finding aid's 'code' and 'cipher' describe."
+    },
+    "prior_art": {
+     "decode": "known.py 'Mss.B.P93' and 'Richard Price': only this lead and the US blocked-sources sweep files. Not on DECODE.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Price: no entry.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Price: only the English word 'price' in unrelated French summaries; no Richard Price item.",
+     "edition": "Thomas and Peach, The Correspondence of Richard Price, vols I-III, archive.org full-text search 16 Nov 2026: 'cipher' 0 hits in all three volumes, 'cypher' 2 hits (thermometer scales 'below cypher'), 'shorthand' about 25 hits, many on APS manuscripts (vol. I p. 259 APS letter with shorthand passages; vol. II pp. 272, 307, 337; vol. III pp. 50, 72, 78, 80, 150, 153), most transcribed by the editors, one noted 'undeciphered'.",
+     "literature": "Letters to and from Richard Price (MHS 1903) has no cipher, cypher or 'in code' (checked 3 Nov 2026 per vetting_2026-11/out_c15.json); web searches found no study of a Price cipher."
+    },
+    "key_check": "No cipher key applies: the material is Price's shorthand (most of it transcribed in the edition). A shorthand system is not a cipher for this catalogue.",
+    "duplicates": "known.py 'Richard Price', 'Mss.B.P93': no other lead or entry.",
+    "verdict": "not_cipher",
+    "closed": "The 'code' and 'cipher' of the APS Price papers are Price's shorthand drafts and endorsements, which the Thomas and Peach edition records and mostly transcribes; the edition never speaks of a cipher."
+   }
   },
   {
    "id": 2056,
@@ -50189,42 +50320,6 @@
    "vetting_note": "PARES (pares.cultura.gob.es) answered HTTP 429 from about 18:20 and again at a single probe at the start of vetting on 14 Nov 2026 (curl, home page); not retried. Dates, legajo, images and filed decipherments of this AHNOB record were not opened; the row is from the hit list description only. Re-vet when PARES answers (one request at a time). (research/vetting_2026-11-14_dutch_pares/vetting.json)"
   },
   {
-   "id": 2708,
-   "counted": true,
-   "year": 1670,
-   "date": "26 Sep-24 Oct 1670",
-   "language": "Spanish",
-   "region": "Spain",
-   "period": "1651-1700",
-   "title": "Prince of Ligne (Claude Lamoral I) to the conde de Oropesa, correspondence in cipher: AHNOB Frias C.1887 D.93-98",
-   "correspondents": "Claude Lamoral I, prince of Ligne -> Duarte Fernando Alvarez de Toledo, conde de Oropesa",
-   "place": "Brussels -> Madrid",
-   "shelfmark": "AHNOB, FRIAS,C.1887,D.93-98",
-   "folio_note": "Six documents, 1670; PARES 13187073",
-   "cls": "B",
-   "status": "Description only (\"Correspondencia cifrada\"); no image flag. Listed unscreened in the 9 Nov spain_nobility_aca README (\"cipher letters, no images; not screened further\"), never made a row.",
-   "why": "Dated, signed, named correspondents, a clear cipher label; AHNOB can be asked for images.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "Request images from AHNOB or reopen the PARES record.",
-   "links": [
-    {
-     "href": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/show/13187073",
-     "label": "PARES 13187073"
-    }
-   ],
-   "source": "PARES (hit list research/pares_ags/hits.jsonl, 27 Oct 2026; records not reopened: PARES returned 429 to curl and to Chrome from 14 Nov 2026 18:20 on), 14 Nov 2026",
-   "score_note": "Scored from the PARES hit-list row (signatura, dates, title, hit term, image flag) on 14 Nov 2026; the record and images were not opened this sweep",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json / sweep README and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "unknown",
-   "access_note": "PARES description only in the hit list (no image flag); digitisation not confirmed",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "PARES (pares.cultura.gob.es) answered HTTP 429 from about 18:20 and again at a single probe at the start of vetting on 14 Nov 2026 (curl, home page); not retried. Dates, legajo, images and filed decipherments of this AHNOB record were not opened; the row is from the hit list description only. Re-vet when PARES answers (one request at a time). (research/vetting_2026-11-14_dutch_pares/vetting.json)"
-  },
-  {
    "id": 2709,
    "counted": true,
    "year": 1647,
@@ -50303,7 +50398,7 @@
   {
    "id": 2711,
    "counted": true,
-   "year": 1800,
+   "year": 1906,
    "date": "undated",
    "language": "unknown",
    "region": "Spain",
@@ -50331,10 +50426,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json / sweep README and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "no",
-   "access_note": "PARES shows images for this unit (hit-list flag); not viewed",
+   "access_note": "PARES flags images for MICHELENA,C.18,D.142-143 (record 4025233); not viewable on 16 Nov 2026 (HTTP 429).",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "PARES (pares.cultura.gob.es) answered HTTP 429 from about 18:20 and again at a single probe at the start of vetting on 14 Nov 2026 (curl, home page); not retried. Dates, legajo, images and filed decipherments of this AHNOB record were not opened; the row is from the hit list description only. Re-vet when PARES answers (one request at a time). (research/vetting_2026-11-14_dutch_pares/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "PARES (pares.cultura.gob.es) answered HTTP 429 from about 18:20 and again at a single probe at the start of vetting on 14 Nov 2026 (curl, home page); not retried. Dates, legajo, images and filed decipherments of this AHNOB record were not opened; the row is from the hit list description only. Re-vet when PARES answers (one request at a time). (research/vetting_2026-11-14_dutch_pares/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "PARES record 4025233 (AHNOB, MICHELENA,C.18,D.142-143), description text as saved in research/pares_ags/hits.jsonl on 27 Oct 2026; PARES (pares.cultura.gob.es) still answered HTTP 429 on 16 Nov 2026 to curl from this machine and to WebFetch from a different network, so the full record, its notes and any images were not reopened; the record text used is the one saved in research/pares_ags/hits.jsonl and research/sweep_2026-11_spain_nobility_aca/screen.json (27 Oct and 9 Nov 2026).",
+     "extent": "Two undated documents; the first is described as mainly a series of figures with a marginal note, the second as a list of dates of plenary sessions held in 1906.",
+     "cipher": "Archive description, verbatim: 'El primero se compone fundamentalmente de una serie de cifras y, en el margen del mismo, aparece una nota que dice: \"Dos copias para Sánchez Román y otra para la demanda (¿)\". El segundo es una lista de fechas en que se celebraron unos plenos (en 1906)'. Read in context this is a numeric list for a lawsuit (Felipe Sánchez Román was a Madrid jurist of that time), not ciphertext; no cipher system is described."
+    },
+    "prior_art": {
+     "decode": "known.py on 'MICHELENA,C.18', 'Sánchez Román' and 'Sanchez Roman': no DECODE record, ledger, catalogue or target hit beyond this lead.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped, tags stripped, for Michelena and Sánchez Román: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Michelena and Sánchez Román: no hit on this item.",
+     "edition": "No edition: an anonymous undated working paper of a late-modern family fonds; nothing printed was looked for beyond the web search.",
+     "literature": "One web search (Michelena, Archivo Histórico de la Nobleza, Sánchez Román) found other MICHELENA records (papers of Pedro José Moreno Rodríguez, notes on public-debt securities, C.8 and C.10), consistent with a 19th-20th-century family and business fonds; nothing on this document."
+    },
+    "key_check": "No key concerned: the document is described as figures, not a cipher; no key in the fonds was looked for.",
+    "duplicates": "known.py on the shelfmark and names found nothing; no other lead or catalogue entry cites MICHELENA,C.18.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not a cipher: the archive's own description makes the 'cifras' a numeric list copied for a lawyer and a lawsuit in a 1906-era family fonds; reopen only if the PARES images show symbol or code groups."
+   },
+   "access": "online"
   },
   {
    "id": 2712,
@@ -51882,48 +51999,33 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): de Courten, Cn B 5/11, Choiseul searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "access_note": "descriptions only; images not checked",
+   "access_note": "AEV catalogue answered plain script access on 16 Nov 2026: SRU https://scopequery.vs.ch/SRU/?operation=searchRetrieve&version=1.2&query=isad.reference=\"...\" and the unit pages https://scopequery.vs.ch/detail.aspx?Id=N (saved in src/aev_N.html). No images are attached to any of these units. Fonds de Courten is a private deposit: 'Consultation restreinte', owner's permission needed.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Same fonds and catalogue (no images, restricted). Cn B 5/11/6 is 'en partie dechiffree par le comte Maurice de Courten': a contemporary partial decipherment is on the unit, so not promotable. HLS and Vaudroz 1979 (Annales valaisannes, Courten's Vienna mission of 1757) not checked for the cipher."
-  },
-  {
-   "id": 2757,
-   "counted": true,
-   "source": "archives-online.org federated search (Chrome), Austria/Swiss sweep, 15 Nov 2026",
-   "score_note": "Scored from the finding-aid text during the 15 Nov 2026 Austria/Swiss sweep (research/sweep_2026-11-15_austria_swiss/); not viewed",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "region": "France",
-   "year": 1704,
-   "date": "9 Jan 1704",
-   "language": "French",
-   "period": "1701-1800",
-   "title": "Marquis de Torcy to Jean Etienne de Courten: letter 'en partie chiffree' about Colonel Reding's proposals from the Duke of Savoy, 1704",
-   "correspondents": "Jean-Baptiste Colbert, marquis de Torcy -> Jean Etienne de Courten (1653-1723, Swiss colonel in French service)",
-   "place": "Versailles -> Valais",
-   "shelfmark": "AEV, fonds de Courten, Cn B 10/1/8",
-   "folio_note": "One letter, partly ciphered; no key or cleartext mentioned in the finding aid",
-   "cls": "B",
-   "status": "Single partial-cipher letter.",
-   "why": "A second French ministry hand (Torcy) in the Courten fonds; weak alone, useful with the 1745 and 1757 pairs for French cipher habits.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 3,
-   "verify": "View the letter; check whether a decipherment is written between the lines.",
-   "links": [
-    {
-     "href": "https://www.archives-online.org/Search",
-     "label": "archives-online.org (search the shelfmark)"
-    }
-   ],
-   "prior_art": "open as far as checked (15 Nov 2026): Cn B 10/1/8, Torcy Courten searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "access_note": "description only",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Same fonds (Cn B 10/1/8, Torcy 1704): single partly ciphered letter, no images, restricted; nothing says whether a decipherment is on it. Not promoted: one short letter, not seen."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Same fonds and catalogue (no images, restricted). Cn B 5/11/6 is 'en partie dechiffree par le comte Maurice de Courten': a contemporary partial decipherment is on the unit, so not promotable. HLS and Vaudroz 1979 (Annales valaisannes, Courten's Vienna mission of 1757) not checked for the cipher.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "AEV unit pages https://scopequery.vs.ch/detail.aspx?Id=126500 (Cn B 5/11/6) and Id=126501 (Cn B 5/11/7), read by script 16 Nov 2026; SRU lookups of Cn B 5/11/8 (Id=126502) and 5/11/8bis (Id=126503).",
+     "extent": "Cn B 5/11/6: 6 pages, Vienna 4 Dec 1757. Cn B 5/11/7: 2 pages, undated (18th c.), first part missing. Neither image is online.",
+     "cipher": "Archive titles: 5/11/6 'Depeche chiffree du duc de Choiseul et en partie dechiffree par le comte Maurice de Courten'; 5/11/7 'Depeche chiffree du duc de Choiseul, dont la premiere partie manque, et dechiffree par le comte de Courten'. Both summaries give the content (Bevern's capture, loss of Breslau, 16,000 and 7,000 men), i.e. read by the recipient."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Cn B 5/11', 'Choiseul', 'Stainville' (16 Nov 2026): only this lead and its sweep row for the shelfmark; Choiseul hits are other channels (Affry 1757, Kau 1760). Not on DECODE.",
+     "tomokiyo": "Tomokiyo, cryptiana unsolved.htm (fetched 15 Nov 2026) searched, tags stripped, for Courten, Choiseul, Stainville, Valais, Wallis: no entry for this item.",
+     "lasry": "Lasry, cryptiana GL.htm (fetched 15 Nov 2026) searched, tags stripped, for Courten, Choiseul, Stainville, Valais: no entry for this item.",
+     "edition": "No edition of the Choiseul-Courten 1757 dispatches found; the contemporary decipherment by the recipient recorded on the units is the reading that decides this lead.",
+     "literature": "Web search 16 Nov 2026 ('Courten Choiseul Stainville Vienne 1757 depeche chiffree Valais'): HLS article on Maurice de Courten (021356) and the 1954 Annales valaisannes article only, nothing on the cipher; HLS cites C. Vaudroz, 'La mission du comte Maurice de Courten a Vienne en 1757', Annales valaisannes 1979, 3-43, not opened."
+    },
+    "key_check": "Key in the dossier: Cn B 5/11/8 'Codes de chiffrage de Monsieur le comte de Stainville (duc de Choiseul)' and 5/11/8bis 'Codes de dechiffrage', not seen, not tested.",
+    "key_in_volume": "Cn B 5/11/8 (cipher table) and 5/11/8bis (decipher table) of Stainville, same dossier Cn B 5/11; not seen, not tested.",
+    "duplicates": "known.py on shelfmark and names: no catalogue entry or target for the Courten-Choiseul channel; leads 2755 (d'Argenson 1745, Cn B 5/3) and 2757 (Torcy 1704, Cn B 10/1/8) are other channels in the same fonds.",
+    "verdict": "partly_read",
+    "closed": "Both dispatches are catalogued by the archive as deciphered by the recipient (5/11/7 wholly, 5/11/6 in part), with Stainville's decipher table filed beside them; only the undeciphered remainder of 5/11/6 could be a lead, once seen."
+   }
   },
   {
    "id": 2759,
@@ -52418,11 +52520,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF reading room or reproduction order; friXplore lists no digital objects for the Affry fonds.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 257 (d'Affry <-> Stainville/Choiseul, Vienna, Apr 1757 - Oct 1758, 29 units): every ciphered dispatch has its 'Transcription' next to it (257.6/.7 23 Sep 1757, .10/.11 5 Nov 1757, .14/.15, .18/.19, .21/.22, .23/.24, .28/.29) and d'Affry's own clear 'Brouillon' letters to Stainville are filed too (257.1, .5 of 4 Sep 1757, .13, .17, .20, .25). 259.12 (17 Mar 1760, partly ciphered) has no transcription listed. Not promotable (transcription filed). Source for affry1757c. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 257 (d'Affry <-> Stainville/Choiseul, Vienna, Apr 1757 - Oct 1758, 29 units): every ciphered dispatch has its 'Transcription' next to it (257.6/.7 23 Sep 1757, .10/.11 5 Nov 1757, .14/.15, .18/.19, .21/.22, .23/.24, .28/.29) and d'Affry's own clear 'Brouillon' letters to Stainville are filed too (257.1, .5 of 4 Sep 1757, .13, .17, .20, .25). 259.12 (17 Mar 1760, partly ciphered) has no transcription listed. Not promotable (transcription filed). Source for affry1757c. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archives de l'Etat de Fribourg, friXplore (archives.fr.ch) unit records for Affry (de Boccard) 257.1-257.29 and 259.12, read by the French-Swiss vetting pass on 15 Nov 2026 (research/vetting_2026-11-15_swiss_french/vetting.json); not re-opened in this script-only pass.",
+     "extent": "Series 257, 29 units (Apr 1757 - Oct 1758), seven ciphered dispatches each with a transcription; series 259 (1759-60), of which 259.12 (17 Mar 1760) is partly ciphered with no transcription listed.",
+     "cipher": "Archive description: 257.6 'Depeche chiffree' 23 Sep 1757 with 257.7 'Transcription', 257.10 'en partie chiffree' 5 Nov 1757 with 257.11 'Transcription', the same for .14/.15, .18/.19, .21/.22, .23/.24, .28/.29; 259.12 'en partie chiffree', no transcription unit listed."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Affry' and 'Stainville': catalogue 213 (d'Affry to Stainville, R1071 intercept, the reverse direction), targets affry1757 and affry1757c, and lead 1805-1807 (Stainville to Richelieu); no DECODE record for AEF Affry 257/259.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Affry, Stainville and Choiseul in this context: no mention.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Affry and Stainville: no mention.",
+     "edition": "No edition of Stainville's Vienna dispatches to d'Affry found; the filed transcriptions are the reading of series 257.",
+     "literature": "No study found; the Affry fonds was first swept on 15 Nov 2026."
+    },
+    "key_check": "No key tried: nothing was seen. The 257 cipher/transcription pairs would give the Stainville-d'Affry code, which may read 259.12 and bears on the unread R1071 intercept (affry1757c, catalogue 213).",
+    "duplicates": "known.py 'Affry', 'Stainville': not a duplicate of catalogue 213/affry1757c (the d'Affry to Stainville direction, Nationaal Archief) nor of the Havrincourt series 267 already in the catalogue.",
+    "verdict": "partly_read",
+    "closed": "Every ciphered dispatch of AEF Affry 257 has its contemporary transcription filed beside it; only 259.12 (17 Mar 1760) has none listed and would need its own look."
+   }
   },
   {
    "id": 2770,
@@ -52513,11 +52636,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF reading room or reproduction order; friXplore lists no digital objects for the Affry fonds.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 244 (Conflans d'Armentieres, 1759): 244.13 'Lettre chiffree' with 244.14 'Transcription du chiffre', same pattern for the others. Transcription filed: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 244 (Conflans d'Armentieres, 1759): 244.13 'Lettre chiffree' with 244.14 'Transcription du chiffre', same pattern for the others. Transcription filed: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archives de l'Etat de Fribourg, friXplore (archives.fr.ch) unit records for Affry (de Boccard) 244.x, read by the French-Swiss vetting pass on 15 Nov 2026 (research/vetting_2026-11-15_swiss_french/vetting.json); not re-opened in this pass because friXplore was reached only through Chrome and this pass is script-only.",
+     "extent": "Series 244, 19 units, 1759: letters of Louis de Conflans, marquis d'Armentieres, to d'Affry at The Hague, each cipher letter with a transcription unit beside it.",
+     "cipher": "Archive description: 'Transcription du chiffre de la lettre de Louis de Conflans d'Armentieres ...' and, for 244.13, 'Lettre chiffree' with 244.14 'Transcription du chiffre'. A contemporary decipherment is filed with the cipher pieces."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Conflans' and 'Armentieres': only this lead, the sweep files and the catalogue entry naming the Affry siblings; no DECODE record for AEF Affry 244.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Affry, Conflans and Armentieres: no mention.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Affry, Conflans and Armentieres: no mention.",
+     "edition": "No edition of d'Affry's incoming correspondence is known; none needed to close this lead, because the transcription filed with each letter is the reading.",
+     "literature": "No study of these letters found; the decisive fact is the archive's own 'Transcription du chiffre' units."
+    },
+    "key_check": "No key sought: the filed transcriptions read the letters. A key could be rebuilt from the cipher/transcription pairs if the code is wanted for the other Affry series.",
+    "duplicates": "known.py 'Affry', 'Conflans', 'Armentieres': this lead only; distinct from the Affry siblings 257/259 (Stainville, lead 2769), 266 (Ogier, lead 2772), 267 (Havrincourt, in the catalogue) and the Nationaal Archief d'Affry targets affry1757/affry1757c.",
+    "verdict": "read",
+    "closed": "Each cipher letter of AEF Affry 244 has a contemporary 'Transcription du chiffre' filed beside it, so the series was read at the time."
+   }
   },
   {
    "id": 2772,
@@ -52550,11 +52694,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF reading room or reproduction order; friXplore lists no digital objects for the Affry fonds.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 266 (Ogier, ambassador at Copenhagen, 1758-60): the whole series was read on friXplore 15 Nov 2026 (84 units); each ciphered or partly ciphered letter has a 'Dechiffrement' piece next to it (266.1/.2, .6/.7, .14/.15, .23/.24, .28/.29, .30/.31, .40/.41, .42/.43, .47/.48, .49/.50, .73-.75, .77/.78); 266.13, .22 and .68 have none listed. Decipherment filed: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 266 (Ogier, ambassador at Copenhagen, 1758-60): the whole series was read on friXplore 15 Nov 2026 (84 units); each ciphered or partly ciphered letter has a 'Dechiffrement' piece next to it (266.1/.2, .6/.7, .14/.15, .23/.24, .28/.29, .30/.31, .40/.41, .42/.43, .47/.48, .49/.50, .73-.75, .77/.78); 266.13, .22 and .68 have none listed. Decipherment filed: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archives de l'Etat de Fribourg, friXplore (archives.fr.ch) records for Affry (de Boccard) 266.1-266.84, read by the French-Swiss vetting pass on 15 Nov 2026 (research/vetting_2026-11-15_swiss_french/vetting.json); not re-opened in this script-only pass.",
+     "extent": "Series 266, 84 units (1758-60), with partly ciphered letters and decipherments at 266.1/.2, .6/.7, .14/.15, .23/.24, .28/.29, .30/.31, .40/.41, .42/.43, .47/.48, .49/.50, .73-.75, .77/.78; 266.13, .22 and .68 have no decipherment listed.",
+     "cipher": "Archive description: 'Lettre partiellement chiffree de M. Ogier a Louis-Auguste Augustin d'Affry', each followed by a 'Dechiffrement' unit except 266.13, .22 and .68."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Ogier' and 'Affry': only this lead, the catalogue entry naming the Affry siblings, and unrelated Busbecq records; no DECODE record for AEF Affry 266.",
+     "tomokiyo": "unsolved.htm (fetched 15 Nov 2026) grepped for Ogier and Affry: no mention.",
+     "lasry": "GL.htm (fetched 15 Nov 2026) grepped for Ogier and Affry: no mention.",
+     "edition": "No edition of Ogier's Copenhagen letters to d'Affry found; the filed decipherments are the reading for most of the series.",
+     "literature": "No study found of this correspondence pair."
+    },
+    "key_check": "No key tried: nothing seen. The twelve cipher/decipherment pairs would give the Ogier-d'Affry key, which should read 266.13, .22 and .68 if they share it.",
+    "duplicates": "known.py 'Ogier', 'Affry': no duplicate; distinct from the other Affry series (244, 257/259, 267).",
+    "verdict": "partly_read",
+    "closed": "Twelve of the fifteen partly ciphered Ogier letters in AEF Affry 266 have a contemporary 'Dechiffrement' filed beside them; 266.13, .22 and .68 have none listed and are the only possible open pieces."
+   }
   },
   {
    "id": 2776,
@@ -52592,80 +52757,6 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): ACV P de Mestral II D 4 / D 6/1: not promoted yet. The D 6/1 record (ID 726266) is a series of per-correspondent cipher sheets (18 envelopes, 'Chiffres' on each sub-unit); Wrisberg's letters of 19 Dec 1720 and 6 Jun - 10 Sep 1724 are flagged 'Crypte', but which sub-unit holds Wrisberg's key was not read (the entry must be narrowed to one correspondent and one key under the one-key rule: the Wrisberg letters with their key, or Robethon 1717 with its key). Catalogue lead 1663 (Robethon papers, Flemming letters deciphered at the time by Robethon) is a different series. Not opened beyond the inventory text; no images."
-  },
-  {
-   "id": 2777,
-   "counted": true,
-   "score_note": "Scored from finding-aid text during the 15 Nov 2026 French Swiss pass (research/sweep_2026-11-15_swiss_french/); not viewed",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "region": "Central Europe",
-   "source": "archives-online.org (Chrome), French Swiss pass, 15 Nov 2026",
-   "year": 1510,
-   "date": "c. 1510",
-   "language": "unknown",
-   "period": "1497-1559",
-   "title": "Letter in cipher addressed to Matthieu Schiner, count and prefect of the Valais and papal nuncio, c. 1510",
-   "correspondents": "unknown -> Matthieu Schiner (bishop of Sion, later cardinal)",
-   "place": "unknown",
-   "shelfmark": "Archives de l'Etat du Valais (AEV), Supersaxo II, P 74 (via archives-online.org; native AEV database not searched)",
-   "folio_note": "One document, \"Lettre (en chiffres) adressee a [Matthieu Schiner], comte et prefet du Valais et nonce apostolique\", dated approx. 1510 by the finding aid; sender not named",
-   "cls": "B",
-   "status": "Finding aid names the cipher letter only; no key. No publication found",
-   "why": "An early (c. 1510) ciphered letter to the best-known Swiss cardinal-diplomat; the Supersaxo family papers may hold more",
-   "importance": 3,
-   "solvability": 2,
-   "difficulty": 4,
-   "verify": "View P 74; check the writer (Supersaxo, or a Milanese or imperial correspondent); look for sibling ciphered pieces in the Supersaxo fonds",
-   "links": [
-    {
-     "href": "https://www.archives-online.org/Search",
-     "label": "archives-online.org (search the shelfmark)"
-    }
-   ],
-   "prior_art": "open as far as checked (15 Nov 2026): \"Supersaxo\" searched with known.py in the ledgers, leads, sweeps and targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "access_note": "AEV photography on request; images not seen",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): Not vetted (Valais, outside this pass): Supersaxo II P 74, cipher letter to Schiner c. 1510; finding-aid text only."
-  },
-  {
-   "id": 2778,
-   "counted": true,
-   "score_note": "Scored from finding-aid text during the 15 Nov 2026 French Swiss pass (research/sweep_2026-11-15_swiss_french/); not viewed",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "region": "France",
-   "source": "archives-online.org (Chrome), French Swiss pass, 15 Nov 2026",
-   "year": 1630,
-   "date": "c. 1630",
-   "language": "French",
-   "period": "1611-1650",
-   "title": "Letter partly in cipher from the court at Chambery, c. 1630 (FQ 238), and a letter of Silvio di Savoia to Antoine Quartery \"contenu a dechiffrer\", 22 Oct 163? (FQ 372)",
-   "correspondents": "N.N. -> N.N. (FQ 238); Silvio di Savoia -> Antoine Quartery (FQ 372)",
-   "place": "Chambery",
-   "shelfmark": "AEV, fonds Jean Marclay, FQ 238 (c. 1630) and FQ 372 (22 Oct 163?, last digit not read)",
-   "folio_note": "FQ 238 \"Lettre (en partie chiffree)\"; FQ 372 \"contenu a dechiffrer\". Two separate letters, two keys probable",
-   "cls": "C",
-   "status": "Finding-aid titles only; no key named",
-   "why": "Savoyard letters of the Thirty Years War era in the Valais; weak until viewed",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 3,
-   "verify": "View both; decide whether FQ 372 is a cipher or an illegible hand (\"a dechiffrer\" is ambiguous)",
-   "links": [
-    {
-     "href": "https://www.archives-online.org/Search",
-     "label": "archives-online.org (search the shelfmark)"
-    }
-   ],
-   "prior_art": "open as far as checked (15 Nov 2026): \"Marclay\", \"Silvio di Savoia\" searched with known.py in the ledgers, leads, sweeps and targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "access_note": "AEV; images not seen",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): Not vetted (weak, class C)."
   },
   {
    "id": 2779,
