@@ -17,11 +17,11 @@ Credits: DECODE (DECRYPT project), records R5626 to R5659; Archivio Apostolico V
 - **Two pair values** come from the cipher ledger's re-read of 22 to 23 October 2026: 88 is del (the published key has quel), and 33 is gli. The first check used the same two values.
 - **The truth:** the key applied to the same digits that my read used. The cut into codes is a reconstruction from the key, made with the same method and settings as the first check ([`francia-346-leaves/check.md`](https://github.com/prabal-rje/branicki-1757/blob/main/francia-346-leaves/check.md) in our repository).
 - **The rebuild:** I rebuilt the frozen read with its own code. All 539 rows equal the frozen rows.
-- **The times:** the read was fixed at 17:00. The key was opened after that, at about 17:05. Nothing in the read changed.
+- **The times (12 November 2026, UTC−3):** my key was fixed at 01:27. The published key was first opened from 01:40 to 02:00, for a comparison with that key. The read of these records, with my key unchanged, was fixed at 17:00. The published key was applied to these records at about 17:05. Nothing in the read changed.
 
 ## 2. The letters
 
-Precision is the share right of the true letters that my read shows. Recovery is the share right of all true letter tokens. The groups come from a key-free check of code counts, made before the key was opened.
+Precision is the share right of the true letters that my read shows. Recovery is the share right of all true letter tokens. The groups come from a key-free check of code counts, made without the published key.
 
 | Records | True letter tokens | Shown | Right, of shown | Recovery | Shown tokens that are letter codes |
 | --- | ---: | --- | --- | --- | --- |

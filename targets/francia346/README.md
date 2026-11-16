@@ -29,7 +29,7 @@ The order of events is part of the result.
    - Those 13 records include an earlier transcription of 8 records here: R5626, R5635, R5636, R5637, R5640, R5643, R5647 and R5648.
    - The other 14 records here were not in that fit.
 2. **A read of the new pages, frozen.** I applied that key to the 22 records here, with no new fit. I fixed that read at 17:00 the same day.
-3. **The published key, then.** After that, I opened the published key. I graded the frozen read against it and made the full decode.
+3. **The published key.** I first opened it from 01:40 to 02:00 on 12 November, after my key was fixed, to compare the two. For the 22 records here, I applied it at about 17:05, after the read of step 2 was fixed. Then I graded that read against it and made the full decode.
 
 ## The numbers
 
@@ -66,7 +66,7 @@ On the 8 records inside the key's fit, 99.0% of the shown true letters are right
 
 - **Code tokens** are the two- and three-digit codes, without word spaces and nulls. **With a value** counts letters, syllables and the three-digit codes that have a ledger value.
 - **Bits per letter** measure how Italian the decoded letters look, under a letter model of 17th- and 18th-century Italian prose. Lower is more Italian. The same letters in a shuffled order give 9.4 on average.
-- **The key-free check** compared the code counts of each record with those of the earlier letters, before I opened the key. "Too small" means that no page of the record passed its page test with read digits.
+- **The key-free check** compared the code counts of each record with those of the earlier letters, without the published key. "Too small" means that no page of the record passed its page test with read digits.
 - **A check against the decipherment leaves** of three records: 58% to 79% of the decoded letters align with equal letters of the leaf. Other leaves give 32% to 49%. `check.md`, section 7, gives the method and its limits.
 
 ## The grades of the code values (second pass)

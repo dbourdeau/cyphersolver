@@ -706,7 +706,7 @@
    "technique": [
     "statistical test"
    ],
-   "what": "Key-free check of the code counts of each record against the earlier letters, with control twins, before the published key was opened: 12 records fit, 6 differ, 4 too small to judge (key-and-key-free-read/READ-digit.md).",
+   "what": "Key-free check of the code counts of each record against the earlier letters, with control twins, with no use of the published key: 12 records fit, 6 differ, 4 too small to judge (key-and-key-free-read/READ-digit.md).",
    "result": "worked"
   },
   {
@@ -792,7 +792,7 @@
   "method": "read with known key",
   "parts": [
    {
-    "label": "Key-free read, frozen before the published key was opened",
+    "label": "Key-free read: the key was fixed before the published key was first opened; the read uses it unchanged",
     "records": "R5626, R5635 to R5637, R5640, R5642, R5643 and R5645 to R5659",
     "method": "key recovered from ciphertext-only",
     "extent": "none",
