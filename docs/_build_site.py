@@ -938,7 +938,7 @@ FEATURED = ['qaysarani1350', 'burr1804', 'siena12', 'stade1710', 'lejava1921', '
 BROWSE_LANGS = 6        # languages listed under "Browse the write-ups"; the filter on writeups.html has the rest
 
 def press_html():
-    """The home page hero's "As seen in" line, from press.json: one link per published piece, oldest first. A piece with
+    """The home page hero's "As seen in" line, from press.json: one link per published piece, newest first (press.json lists them oldest first). A piece with
     no url (announced, not yet out) is not shown."""
     items = [x for x in json.loads((HERE.parent / 'press.json').read_text(encoding='utf-8'))['items'] if x.get('url')]
     if not items:
@@ -955,7 +955,7 @@ def press_html():
             return (f'<a class="haslogo" href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>'
                     f'<img class="{cls}" src="{html.escape(logo, quote=True)}" alt="{name}" loading="lazy"></a>')
         return f'<a href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>{name}</a>'
-    return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in items)
+    return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in reversed(items))
             + '</p>\n<!-- press:end -->')
 
 
