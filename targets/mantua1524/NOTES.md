@@ -9,7 +9,7 @@ Catalogue 2368 is f. 298r-v. Ff. 68r and 198r are new finds (the contributor pag
 Biblioteca Apostolica Vaticana, Vat. lat. 8214, a volume of letters and extracts sent to Federico II Gonzaga, marquis of Mantua, in 1523-24. It belongs with Castiglione's papers in the BAV: catalogue 2368's vetting gives them as Vat. lat. 8204-8214; the contributor counts Vat. lat. 8199-8213 as the same bequest as 8214. Images on DigiVatLib (IIIF, 1962 px full size); `aaymeloglu/images.tsv` lists the IIIF URL and SHA-256 of each leaf used. None is copied here.
 
 - f. 298r-v: "Ex litteris Suardini datis Victorie? 26 Februarii", an extract of a letter of Giovan Battista Suardino at the Imperial court; heading and 23 lines on the recto, 8 on the verso; clear Italian with cipher runs in nearly every line. Catalogue 2368.
-- f. 68r: a letter almost all in cipher, no heading, among the Milan items of January 1524; 23 lines, first person plural. Its covering letter is in Vat. lat. 8211 (letters to Castiglione, 1523-24), frame 36R (old f. 33): Gian Giacomo Calandra, Federico's secretary, to Castiglione, endorsed "2[9] Jan.rii 1524", says Castiglione will see "what the S. Ill.mo writes in the letter sent to him" and that the Viceroy presses the Marquis by every means to go to Milan. That fits 68r ("che non se sapesse a Milano", the feigned illness), makes Castiglione its likely addressee, and dates it to about 20-25 January 1524. The clear text of the covering letter says nothing of orine, sangue or gagliardo.
+- f. 68r: a letter almost all in cipher, no heading, among the Milan items of January 1524; 23 lines, first person plural. Its covering letter is in Vat. lat. 8211 (letters to Castiglione, 1523-24), frame 36 (old f. 33; endorsement on 36L): Gian Giacomo Calandra, Federico's secretary, to Castiglione, endorsed 29 January 1524, says Castiglione will see "what the S. Ill.mo writes in the letter sent to him" and that the Viceroy presses the Marquis by every means to go to Milan. That fits 68r ("che non se sapesse a Milano", the feigned illness), makes Castiglione its likely addressee, and dates it by 29 January 1524. The clear text of the covering letter says nothing of orine, sangue or gagliardo.
 - f. 198r: "Ex litteris D. Cappini dat. in Robio 8 Aprilis 1524" (Capino de Capo); 26 lines of clear Italian with two cipher lines (17-18).
 
 No other page of the volume has cipher, a gloss, a clear copy or a key (the contributor's page-by-page pass).
@@ -66,7 +66,7 @@ Calandra's letters to Castiglione of February-April 1524 in Vat. lat. 8211 use t
 
 ## Counts
 
-The project's rule (issue #697): only sure words count. Strict segments are read; forced, lenient, doubtful and unread ones are holes. That gives **50% of the 284 cipher words: 298r-v 38%, 68r 55%, 198r 79%**, the figures used in `profile.json`. Parts of 298r (lines 1-17) and 68r (lines 01-10) are close to "decoded, not read", and the reviewer is asked to look at them.
+The project's rule (issue #697): only sure words count. Strict segments are read; forced, lenient, doubtful and unread ones are holes. That gives **50% of the 284 cipher words: 298r-v 38%, 68r 55%, 198r 79%**, the figures used in `profile.json`. On the project's reading review (PR #716) f. 68r is "decoded, not read": five of its six sentences have more than one hole in ten words, so its 55% of strict words stands as decoded words, not a reading; f. 298r-v is graded B and f. 198r A. The class stays "read in part".
 
 The contributor's segment counts (`verify.py`):
 
