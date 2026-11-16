@@ -10,8 +10,8 @@ letter substitution with words separated; many letters keep their own shape, so 
 ## The document
 
 - **Shelfmark.** Hatfield House, Cecil Papers CP 150/143 (three pages; page 3 is f. 144). The reference was given by
-  Sarah Whale (Hatfield House), see issue #712, which also covers CP 231/83 (catalogue 1017).
-- **Images.** A free PDF copy supplied by Sarah Whale (Hatfield House) on 16 Nov 2026, for private study only.
+  the Hatfield House archives, see issue #712, which also covers CP 231/83 (catalogue 1017).
+- **Images.** A free PDF copy supplied by the Hatfield House archives on 16 Nov 2026, for private study only.
   **No image, crop or derivative is in this repository, and none may be republished without Hatfield House's
   permission.** Only transcriptions and measures are here. To see the letter, ask the Hatfield House archives.
 - **Printed calendar.** HMC, *Calendar of the Manuscripts of the Marquis of Salisbury at Hatfield House*, Part I
@@ -107,7 +107,7 @@ read.
 
 ## Credits and tools
 
-- Sarah Whale (Hatfield House) supplied the images and the shelfmarks (issue #712).
+- Hatfield House archives supplied the images and the shelfmarks (issue #712), with thanks to the staff.
 - HMC, Calendar of the Cecil Papers, Part I (1883), p. 85, no. 349: summary of the cipher part (prior art).
 - Brice Dudout chose the target and set the rule (held-out page named before the key work, one measure);
   Claude Opus 5.5 agents transcribed, built the key, measured and wrote this up. No human has read the decode.
