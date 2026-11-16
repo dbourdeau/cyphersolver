@@ -46,3 +46,27 @@ as expected, since wave 17 changed no existing value.
 
 Method label stays "key recovered based on adjacent plaintext" (Lasry): the plaintext is the contemporary decipherment of
 a sibling letter in the same filza, in another hand.
+
+## Blind control on doc 627 (16 Nov 2026, after review of #685)
+
+`blind_control/`: a fresh AI reader saw only a crop of the cipher block (no clear text, no decipherment) and a sheet with
+neutral labels S01-S42 (`SHEET.md`, `PROMPT.txt`; label-to-key map `LABELS_TO_KEY.tsv` kept out of the packet). Its
+`BLIND.tsv` was hashed (`FREEZE_blind.txt`, sha256 f9d31abe...) and decoded once with the frozen key (`decode_once.py`,
+`decode_once.txt`: 188 tokens; 155 valued, 14 numbers, 15 holes, 4 nulls) [measured].
+
+A separate strict judge aligned the decode to `../decipherment_627.txt` letter by letter (`judge.tsv`, `judge_count.py`,
+`JUDGE_NOTES.md`) [measured]:
+
+| Line | Match | Wrong | Hole | Omitted | Strict M/(M+X+H+O) | Accuracy M/(M+X) |
+|---|---|---|---|---|---|---|
+| 1 | 47 | 7 | 6 | 2 | 47/62 = 75.8% | 47/54 = 87.0% |
+| 2 | 45 | 7 | 3 | 1 | 45/56 = 80.4% | 45/52 = 86.5% |
+| 3 | 60 | 5 | 2 | 4 | 60/71 = 84.5% | 60/65 = 92.3% |
+| 4 | 46 | 6 | 7 | 9 | 46/68 = 67.6% | 46/52 = 88.5% |
+| 5 | 5 | 0 | 0 | 0 | 5/5 = 100% | 5/5 = 100% |
+| Block | 203 | 25 | 18 | 16 | 203/262 = 77.5% | 203/228 = 89.0% |
+
+- Codes: "questo Re" (#23) was read as a point (hole); Firenze (#70) was misread as two bare signs (wrong); 65 was read #63 (hole).
+- Dictionary-cover shuffle (as `../../blind633/shuffle.py`): real 0.617; seed 20261112 0 of 5,000 as good (max 0.6082); seed 7 1 of 5,000 (max 0.625) (`shuffle_out.txt`). This passes our bar (under 5 of 5,000) by a thin margin on a short block; the letter-by-letter match against the page's decipherment is the stronger evidence.
+- The decode reads "intendo" where our 16 Nov transcription of the decipherment has "Intado[?]"; our reading of the decipherment there may be wrong. Not emended.
+- Still not independent: the key was built from this page. What it shows is that a blind reading of the cipher, through the frozen key, reproduces the decipherment written on the page.
