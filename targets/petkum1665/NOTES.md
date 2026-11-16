@@ -271,5 +271,10 @@ An AI reader (Claude) read the chancery's interlinear glosses on the 119 images 
 - Nothing was decoded with key v7 and no count of record changes.
 - Brice Dudout's T2 was not used to find or choose any value. Remark only: T2 had 151 = françois as a rank probable. The
   context guesses of `holes.md` (248 homme, 181 bruit, DB = g), never applied, agree with the glosses.
+- **No person has checked the gloss readings.** Every gloss in `gloss/KEY_v7_glosses_261294.tsv` was read by an AI
+  reader (Claude) only; the maintainer checked images 27, 113 and 141 for 181, 248 and 346 in review of #699.
+- Maintainer's review of #699 (16 Nov 2026): on 541 left the figure under 'bruit' is a clear 248, so explanation (b) of
+  `gloss/KEY_v7_DIFF.md` is ruled out. For our values: Petkum, 23 Nov 1665 (`readings/petkum_1665-11-23.md`), "courir
+  un faux 181 d'une levee de cinq ou six mille 248s", and "mille 248s" twice in the bare letters. Both rows stay doubtful.
 - Limit: images 29-141 were triaged on contact sheets and read at 1560 px, lower than v5's 2400 px copies; 151 rests on
   one such reading.
