@@ -14,7 +14,7 @@ import _methods as M
 
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec')
-KIND = {'credit': 'key corrected or extended', 'check': 'image check: corrected'}
+KIND = {'credit': 'key corrected or extended', 'check': 'sign shapes checked blind on the image'}
 
 
 def esc(t):
@@ -94,8 +94,8 @@ def build_html(here, pages, profiles, contrib, version):
         f'  <p class="kicker">Reference &middot; {len(E)} entries</p>\n'
         '  <h1>Corrections log</h1>\n'
         '  <p class="sub">Read from each target&rsquo;s <code>profile.json</code> at every build: the credits with the '
-        'role &ldquo;key corrected&rdquo; (a key corrected or extended) and the checks of a passage against the image '
-        'whose recorded result is &ldquo;corrected&rdquo;. Newest first.</p>\n'
+        'role &ldquo;key corrected&rdquo; (a key corrected or extended) and the blind checks of sign shapes against the image '
+        '(<code>human_check</code>) whose recorded result is &ldquo;corrected&rdquo;. Newest first.</p>\n'
         '  <p class="meta">Daniel Bourdeau and contributors</p>\n</section>\n\n<main>\n\n'
         '<h2 id="log">Newest first</h2>\n'
         '<div class="tw"><table>\n<thead><tr><th>Date</th><th>Target</th><th>Kind</th><th>Note in the profile</th>'
