@@ -1,6 +1,6 @@
 # Francia 346: the key table and the frozen key-free read
 
-This folder holds two things. One is the key that the decode uses, with the source of each value. The other is the read that I made without that key, frozen before I opened it. Every number here is real.
+This folder holds two things. One is the key that the decode uses, with the source of each value. The other is the read that I made with my own key. I fixed that key before I first opened the published key, and no value of the published key entered the read. Every number here is real.
 
 Credit: DECODE, the database of historical ciphers of the DECRYPT project, records of Francia 346. Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346.
 
@@ -27,10 +27,10 @@ Credit: DECODE, the database of historical ciphers of the DECRYPT project, recor
 All times are UTC−3, on 12 November 2026.
 
 1. **01:27:** the key-free key was fixed. Its fit used 13 records: R74 to R78, and earlier transcriptions of R5626, R5635, R5636, R5637, R5640, R5643, R5647 and R5648.
-2. **Before the read:** that key and a check of it were published in our repository ([`francia-346-leaves/`](https://github.com/prabal-rje/branicki-1757/tree/main/francia-346-leaves)).
+2. **01:40 to 02:00:** I opened the published key for the first time, to compare my fixed key with it. The key and that check are in our repository. My key did not change after it.
 3. **16:12:** the declaration of the method of the read.
 4. **17:00:** the read of the 22 records was fixed.
-5. **About 17:05:** I opened the published key for these records. The grade and the full decode came after it.
+5. **About 17:05:** I applied the published key to these 22 records. The grade and the full decode came after it.
 
 These times rest on my own record. This folder adds no hash table and no other record of provenance.
 

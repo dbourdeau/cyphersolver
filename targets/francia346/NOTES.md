@@ -49,8 +49,9 @@ It is the cipher of `targets/ceva1632`.
 The order of events is part of the result. `key-and-key-free-read/README.md` gives it in full.
 
 1. A key found from the ciphertext alone, on 13 records, fixed at 01:27 on 12 November 2026 (UTC−3). The 13 records are R74 to R78 and earlier transcriptions of 8 records here: R5626, R5635, R5636, R5637, R5640, R5643, R5647 and R5648.
-2. A read of the 22 records with that key and no new fit, fixed at 17:00 the same day.
-3. The published key, opened at about 17:05. The grade and the full decode came after it.
+2. The published key, first opened from 01:40 to 02:00 the same day, to compare my fixed key with it. The comparison is in `francia-346-leaves/check.md` in our repository. I changed no value of my key after it: code 07 still reads l, where the published key has h.
+3. A read of the 22 records with that unchanged key and no new fit, fixed at 17:00 the same day.
+4. The published key applied to the 22 records, at about 17:05. The grade and the full decode came after it.
 
 ## The frozen key-free read
 
