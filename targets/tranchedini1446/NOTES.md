@@ -1,6 +1,6 @@
-# Nicodemo Tranchedini and Boccaccino Alamanni, Florence, to Francesco Sforza, 27-29 Nov 1446 (BnF italien 1583 ff. 134, 139; DECODE R7905, R7908), catalogue 1308
+# Nicodemo Tranchedini (and Boccaccino Alamanni), Florence, to Francesco Sforza, 27-29 Nov 1446 and 19-22 Feb 1448 (BnF italien 1583 ff. 134, 139; DECODE R7905, R7908; italien 1585 ff. 28, 30), catalogue 1308 and lead 1317
 
-Status: in progress. Leaves identified, the cipher located (two of the five leaves of the lead) and f. 139 transcribed once (778 signs, rough); no reading yet. Opened 4 Nov 2026 (Claude Sonnet 5.5).
+Status: in progress. Leaves identified, the cipher located (two of the five leaves of the lead) and f. 139 transcribed once (778 signs, rough); no reading yet. Opened 4 Nov 2026 (Claude Sonnet 5.5). Since 14 Nov 2026: the key sheet DECODE R5318 ("Nicodemus") is this key by the contributor's record (Brice Dudout, PR #630), and the two letters of Feb 1448 (lead 1317, reserved for Brice Dudout; PR #625) are kept here as the same key in a later state (`dudout1448/`). f. 139 is decoded in part, not read.
 
 ## What the five DECODE records of the lead really are (images seen 4 Nov 2026)
 
@@ -23,7 +23,7 @@ Mazzatinti's inventory (`../visconti1446/mazzatinti_ff.txt`) lists f. 133 (Nicod
   1452 reconstruction (`../tranchedini1452/lasry/report/images/key_2.png`; `key_1.jpg` is Domnina's figure). The alphabet of f. 139 looks the same on a first
   look: + = e, 8 = i, an inverted T = r, an inverted V = to, a dotted slash = u/v.
 - Domnina notes the code "was evolving over time" and the same sign sometimes has another value in 1453 than in 1454: a 1446 key can differ in
-  many values and in the nomenclator. Her key (81 signs) and Lasry's (55) are both later than these letters. No 1446 key sheet is known.
+  many values and in the nomenclator. Her key (81 signs) and Lasry's (55) are both later than these letters. No 1446 key sheet was known on 4 Nov; see the sections of 14 Nov 2026 (DECODE R5318).
 - Word signs in 1446 that are not in either later table: one sign for *stantie* and one for *Fiorentini* (glosses, f. 134). So the nomenclator has to be
   recovered here, not read off.
 - Tranchedini's key of 1471-78 (Francesco Tranchedino's codex, Cerioni 1970; 253 signs) does not match the later letter that Domnina studied; not compared with f. 139.
@@ -133,10 +133,124 @@ one key, one entry applies and the letters join one folder; if not, the table is
 and 1317 gets its own target. Brice Dudout offers to build the table with the sign labels of `texts/f134_signs.md`,
 learning on f. 28 and keeping f. 30 held out. Not attempted here.
 
+## 14 Nov 2026 (night): PR #625 (Brice Dudout), the 1448 table and its held-out test, checked
+
+Files, filed as `targets/tranchedini1448/dudout/` and since moved to `dudout1448/` (table learnt on BnF ital. 1585 f. 28 against the later copy f. 27; one
+held-out measurement on f. 30 against f. 29; the two tests on this target that issue #616 asked for). Checked here:
+
+| claim | filed | re-run here | how |
+|---|---|---|---|
+| SHA-256 of PREREG, pass A, table, settled f. 28, two scripts, reference, f. 30 text | 8 values | 8 of 8 match | `sha256sum -c HASHES.txt` |
+| table from the settled f. 28 text | 65 labels | 65; file byte-identical | `build_table.py` |
+| f. 30: signs / runs / signs with a value | 846 / 13 / 655 (77.4%) | same | `measure_f30.py`; own decoder |
+| f. 30: character agreement with f. 29 | 0.650 | 0.650 | his script; a second decoder written here gives 0.650 |
+| 200 within-class shuffles | mean 0.201, best 0.283, z 10.9 | same; 200 shuffles over all labels (own decoder): best 0.256 | both |
+| verdict by his thresholds | partial | partial (0.650 is above 0.283 + 0.30 and below 0.85) | |
+| f. 139 with the 1448 values (order-4 model) | coverage 62.1%, -2.209, z 4.3; his rescoring of the table used here: 61.6%, -2.320, z 3.6 | same | `test_1446.py` |
+| label types valued by both tables | 34 of 40 the same | same | |
+
+- **Images** (openapi.bnf.fr IIIF, no bot check; views 54, 56, 58): 36 signs of f. 28 (runs R1 to R3, lines 4 to 7) and
+  61 signs of f. 30 (run R1, lines 5 and 6) compared with his transcriptions: 35 of 36 and 60 of 61 agree, the two others
+  are shapes that the crop does not settle (the gamma sign on f. 28 line 4; the loop-with-dot on f. 30 line 6). The f. 29
+  reference words for R1 to R4 match the copy (view 56), dashes included.
+- **Order of events:** the hashes match the files; that the table was frozen before f. 30 was looked at, and that the two
+  blind passes were blind, is by the contributor's record (one commit, no outside time stamp).
+- **What the test shows.** The held-out figure is real and far from chance, and by his own pre-set thresholds it is
+  "partial", not "read": 191 of 846 signs of f. 30 have no value because the training slip (about 240 signs) does not
+  hold them. Nothing is read anew: ff. 27 and 29 already give the text of both letters (existing decipherment in later
+  copies, with dashes for a few word signs).
+- **His joining rule, as written, is not met** and is recorded as not met: *stantie* has no witness on ff. 28 or 30, and
+  the f. 139 score (-2.209, order-4 model) is below the -2.149 he took as the bar (an order-5 figure; with one model for
+  both tables the 1448 values score better than the table used here, -2.209 against -2.320). Two of the three failing
+  conditions are therefore about the size of the training slip and about the model, not about the key. The question
+  whether 1448 is this target's key is settled with the key sheet of PR #630, in the next section.
+- **Signs:** Fiorentini (V with a circle on each top corner) has the same value in 1448 (f. 28 once, f. 30 once). The
+  bar-o-bar-o sign, glossed *duca* on f. 134, stands seven times where the copies have *Venetiani* (f. 28 once, f. 30 six times).
+- No reading is added by this pull request, so no `reading_review` is recorded for it.
+
+## 14 Nov 2026 (night): PR #630 (Brice Dudout), the key sheet DECODE R5318 "Nicodemus", checked
+
+Files: `r5318/` (two transcriptions of the sheet, the second blind by the contributor's record; the settled key given
+against the 1448 shape labels; `compare.py` and its results). This answers the escalation item "cart. 1597 headings not
+searched for Nicodemo".
+
+**What could and could not be checked.** The DECODE record page opens without a login (ID 5318,
+"Carteggio_Sforzesco_scat._n.1597_18", Milan State Archives, record dates 1450-1555, no names) but its image is
+"Authentication required": the sheet was not seen here. Its heading "Nicodemus", the pencil note "Chiave della cifra di
+Nicodemo del gennaio ... 1451", that it is a later copy, and every shape on it are **by the contributor's record**. The
+SHA-256 he gives for the settled key (04c8ae96...) is of a working file that is not in the pull request; the filed
+`key_R5318_by_1448_label.tsv` hashes e78881b96a84..., so the freeze cannot be checked. Cerioni 1970 (the Sforza cipher
+keys), which may print this key, is **not checked**, by him or here.
+
+| claim | filed | re-run here | how |
+|---|---|---|---|
+| 1448 labels with an R5318 sign of the same shape: same value | 54 of 58 | 54 of 58 | `compare.py`, output identical to `results_R5318.json` |
+| the same with the labels of his blind pass B | 42 of 49 | 42 of 49 | same |
+| f. 28 valued tokens that R5318 decodes as settled | 194 of 222 = 0.874 | same | same |
+| 200 within-class shuffles of the R5318 values | mean 0.028, best 0.126, z 31.7 | same | same |
+| coverage of f. 28 / f. 139 tokens | 94.6% / 62.1% | same | same |
+| the five glossed word signs of f. 134 are on R5318 with the glossed value | stantie, duca, gente d'arme, Toscana, Fiorentini | the shapes he records for these five entries, in both passes, are the shapes of `texts/f134_signs.md` (runs 2, 3, 4, 4, 7: bent F with a foot; bar-o-bar-o; M; o-dot-o; V with a circle on each top corner); pass B saw the circle on one corner only for Fiorentini | files compared; sheet not seen |
+
+**What it gives this target.**
+- The reading of the bar-o-bar-o sign as *duca* (5 Nov, from one gloss and the contexts) is confirmed by a key sheet, by
+  the contributor's record: R5318 has Duca on that sign and Venetiani on another (o-bar-theta-bar).
+- *stantie*, *Fiorentini*, *gente d'arme* and *Toscana* of the f. 134 glosses are nomenclator entries of the same sheet,
+  and *compagnie* is spelled with its syllables (le, co, m, pa, g).
+- For f. 139 R5318 gives values, not a reading: through the crosswalk of `dudout1448/test_1446.py` it values the same
+  62.1% of the 778 transcribed signs as the 1448 table; the 301 signs without a value are shapes that the transcription
+  of 4-5 Nov did not match to any table (`@NN` labels), and they have to be matched against the sheet's 180 or so entries
+  from the image. No word share is claimed: **f. 139 is decoded in part, not read.**
+- No held-out measurement of R5318 exists (his statement, and right: f. 30 was spent on the 1448 table, f. 139 has no
+  clear text, f. 28 and the glosses are short and were used to build the crosswalk).
+
+## 14 Nov 2026 (night): is the key of Feb 1448 this key? One key in two states; one entry
+
+Brice Dudout's own pre-set rule in PR #625 says "neighbour's key" (previous section: not met as written). His PR #630,
+filed a few hours later, says "one family, one key with small changes". Weighed here:
+
+For one key:
+1. 54 of 58 shared shapes carry the same value on a sheet that was not learnt from the 1448 letters (42 of 49 with his
+   blind labels), and R5318 decodes 0.874 of the valued tokens of f. 28 against 0.126 for the best shuffle.
+2. **R5318 on the held-out f. 30** (`r5318/f30_check.py`, written here; a comparison after the fact, f. 30 being spent):
+   with his crosswalk R5318 gives a value to 687 of 846 signs (81.2%) and scores 0.598 against the copy f. 29, 0.630 with
+   the bar-o-bar-o sign read *Venetiani*; the table learnt on f. 28, a letter three days older, scores 0.650. Shuffles
+   stay under 0.25. A sheet in the 1446 state reads the 1448 letter about as well as a table made from its neighbour.
+3. **R5318 holds the signs that f. 30 has and the 1448 table lacks.** Seventeen shapes of f. 30 without a 1448 value
+   match an R5318 entry by the written shape descriptions alone (his "New shapes" list against his two passes of the
+   sheet): among them *Re de Ragona* (an angle with a circle and a dot; six uses on f. 30, and the copy has "Re de
+   Ragona/Raghona" six times in those runs), *Fiorini* (a capital R, where the copy has "docento milia fiorini"), *non*
+   (the comb, eight uses), and the syllables pe, me, le, lu, su, pu, ga, ge. With these 17 values R5318 scores 0.698
+   (0.729 with *Venetiani*) on 751 valued signs, and the 1448 table 0.778 on 727. The matching was done here from the
+   descriptions, with the reference text in view, and not on the image of the sheet: it is an indication, not a test.
+4. The other differences he lists (na/bo, bi/ri, sa/cc, te/ti on the A) are inside the shape families that his notes
+   call hard to separate in this hand; none is shown to be a change of the key.
+5. His joining rule failed on *stantie* having no witness in two letters of 1448 and on a score bar taken from another
+   language-model order. Neither measures whether the key is the same; R5318 does hold *stantie*.
+
+Against:
+- **One nomenclator sign changed.** Bar-o-bar-o is *Duca* on f. 134 (gloss) and on R5318, and *Venetiani* seven times in
+  Feb 1448 where the later copies have the word. The Duke, Filippo Maria Visconti, died in August 1447. R5318's own sign
+  for Venetiani has not been looked for on ff. 28 and 30.
+- The joining rule was his, written before the test, and it was not met. That stays on record as a failed joining test.
+
+**Decision: the same key, in a state of Nov 1446 (R5318, f. 134, f. 139) and a state of Feb 1448 with at least one
+nomenclator sign reassigned.** One key, one entry: the 1448 letters stay in this folder (`dudout1448/`, moved from the
+`targets/tranchedini1448/dudout/` he proposed, path references updated, his files otherwise as filed) and get no target
+of their own. The change of state is recorded, not smoothed over: a reading of 1448 takes bar-o-bar-o as *Venetiani*, a
+reading of 1446 as *Duca*. Lead 1317 stays in `research/leads.json` with its reservation for Brice Dudout (verdict
+"partly_read": its letters have later clear copies); its note now points here.
+
+Not decided here: the later tables (Lasry 1452, Domnina 1454; `../tranchedini1452/`) also have *Veneziani* on
+bar-o-bar-o, so the 1448 state may simply be theirs. Whether `tranchedini1452` is this same key again has not been
+tested (R5318 against Lasry's table sign by sign) and is left to the maintainers.
+
 ## Remaining gaps
 
-- f. 139: every cipher run (863 narrow signs in 73 clustered types, no key values) - blocker: none outside; needs one common sign inventory, a 1446 key table from the glosses of f. 134 and the clear words around the runs, and the f. 147 reply as external plaintext for the sense
-- A 1448 table from BnF ital. 1585 f. 28 with its later clear copy f. 27, tested on f. 30 with f. 29 (lead 1317; issue #616), then applied to f. 139: not built - blocker: none outside; the images are public on Gallica and the pairs are confirmed
+- f. 139: every cipher run (778 signs transcribed, 62.1% with a value through R5318 or the tables, 301 unmatched shapes; decoded in part, not read) - blocker: none outside for a holder of a DECODE login; the unmatched shapes have to be matched against the R5318 sheet on its image (authentication required; seen by Brice Dudout only), then the runs decoded and counted by words
+- ff. 28 and 30 of Feb 1448 (`dudout1448/`): the text is known from the later copies ff. 27 and 29; the 191 signs of f. 30 without a 1448 value, and the word signs the copyist left as dashes (two on f. 27, about six on f. 29), are not yet read from R5318 - blocker: none outside; the 17 matches of `r5318/f30_check.py` were made from shape descriptions and need the image of the sheet
+- A held-out measurement of R5318: none exists - blocker: none outside; the other letters of lead 1317 (ital. 1584 f. 353; ital. 1585 ff. 35, 71, each with a clear copy or a 15th-century decipherment) are untranscribed and would serve
+- R5318 itself: not seen here (DECODE login); heading, pencil date 1451 and shapes by the contributor's record; Cerioni 1970 not checked for a printed copy of the key - blocker: needs a DECODE account or the ASMi original (cart. 1597, no. 176)
+- Whether `tranchedini1452` (Lasry's table, 1452) is this key in its later state: not tested - blocker: none outside
 - f. 134: seven short runs transcribed sign by sign (texts/f134_signs.md) but only partly aligned to the glosses (span marks approximate) - blocker: none outside
 - f. 145 (R7909, Duke's slip, key R5323): not read; belongs to visconti1446 - blocker: none outside (Gallica ital. 1597 canvas 160 holds a 19th-c. copy)
 
@@ -144,11 +258,12 @@ learning on f. 28 and keeping f. 30 held out. Not attempted here.
 
 - [x] siblings: the five records of the lead identified; f. 145 moved to visconti1446; f. 135 and f. 147 are clear; f. 133/132/126/162 not on the lead's records
 - [x] clear-pages: f. 147 read at the top (dinaro, stantie, Montevarchi: the topic, no wording to match); f. 135 clear news, not matched
-- [x] known-keys: Domnina's key and Lasry's table applied to f. 139 (table_test.py, corrected: z 3.9 with the no-space model); no 1446 key sheet found; cart. 1597 headings not searched for Nicodemo
+- [x] known-keys: Domnina's key and Lasry's table applied to f. 139 (table_test.py, corrected: z 3.9 with the no-space model); cart. 1597 searched on 14 Nov 2026 by Brice Dudout (PR #630): the key sheet DECODE R5318, headed "Nicodemus", is this key by the contributor's record (image behind a DECODE login, not seen here); it values 62.1% of the f. 139 signs as transcribed
 - [x] print: web search; no edition found
 - [x] key-rebuild: attempted; solvers fail held-out controls (solver.py, solver2.py, heldout.py); content words are nomenclator signs (cribs.py)
-- [ ] siblings and clear-pages, 14 Nov 2026 (issue #616, Brice Dudout): the same envoy's letters of 19 and 22 Feb 1448 (BnF ital. 1585 ff. 28, 30; lead 1317) have later clear copies beside them (ff. 27, 29) with a few word signs left blank; confirmed on Gallica; the 1448 table is not built yet
-- [x] retry: f. 134 transcribed (duca, Fiorentini, compagnie), f. 139 relabelled with them and l (z 4.0, 62% of signs valued); 301 signs open
+- [x] siblings and clear-pages, 14 Nov 2026 (issue #616, PR #625, Brice Dudout): the same envoy's letters of 19 and 22 Feb 1448 (BnF ital. 1585 ff. 28, 30; lead 1317) have later clear copies beside them (ff. 27, 29) with a few word signs left blank; table built on f. 28, held-out f. 30 at 0.650 (partial by his thresholds); the table does not read f. 139 (joining rule not met)
+- [ ] retry, open since 14 Nov 2026: match the 301 unmatched f. 139 shapes and the f. 30 shapes against R5318 on its image, decode, count by words; measure R5318 on a fresh letter of lead 1317
+- [x] retry (5 Nov): f. 134 transcribed (duca, Fiorentini, compagnie), f. 139 relabelled with them and l (z 4.0, 62% of signs valued); 301 signs open
 
 ## For visconti1446 (not edited there)
 

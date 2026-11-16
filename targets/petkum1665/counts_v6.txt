@@ -1,0 +1,47 @@
+counts_v6.txt: written by scripts/count_v6.py (python3 -I). Strict = S/(S+E+N), the rule of scripts/count_twelve.py.
+v6 = key_v5.tsv + 9 values of key T2 (101, 114, 130, 133, 134, 150, 192, 212, 358) and 88 corrected to le Roy d'Espagne. Code words count E, never S,
+so a new code value can move a unit from N to E and cannot raise a strict share.
+
+letter	reader	S v5	E v5	N v5	S v6	E v6	N v6	units	strict v5	strict v6	units moved N to E (token: value)
+petkum_1665-01-06	first	16	7	2	16	7	2	25	64.00%	64.00%	-	[one of the twelve]
+petkum_1665-01-06	blind	17	7	1	17	7	1	25	68.00%	68.00%	-	[one of the twelve]
+petkum_1665-01-13	first	7	9	4	7	10	3	20	35.00%	35.00%	N>E 133: Coppenhague	[one of the twelve]
+petkum_1665-01-13	blind	7	10	3	7	11	2	20	35.00%	35.00%	N>E 133: Coppenhague	[one of the twelve]
+petkum_1665-01-27	first	7	4	2	7	5	1	13	53.85%	53.85%	N>E 114: Dannemarck	[one of the twelve]
+petkum_1665-01-27	blind	6	4	3	6	5	2	13	46.15%	46.15%	N>E 114: Dannemarck	[one of the twelve]
+petkum_1665-03-03	first	16	8	3	16	8	3	27	59.26%	59.26%	-	[one of the twelve]
+petkum_1665-03-03	blind	17	8	2	17	8	2	27	62.96%	62.96%	-	[one of the twelve]
+petkum_1665-03-24	first	42	12	4	42	12	4	58	72.41%	72.41%	-
+petkum_1665-04-28	first	19	3	4	19	3	4	26	73.08%	73.08%	-
+petkum_1665-04-28	blind	18	3	5	18	3	5	26	69.23%	69.23%	-
+petkum_1665-05-12	first	14	3	2	14	3	2	19	73.68%	73.68%	-	[one of the twelve]
+petkum_1665-05-12	blind	14	3	2	14	3	2	19	73.68%	73.68%	-	[one of the twelve]
+petkum_1665-06-23	first	18	7	4	18	8	3	29	62.07%	62.07%	N>E 134: Stockholm
+petkum_1665-06-23	blind	18	7	4	18	8	3	29	62.07%	62.07%	N>E 134: Stockholm
+petkum_1665-09-17	first	16	8	2	16	8	2	26	61.54%	61.54%	-
+petkum_1665-09-17	blind	17	8	1	17	8	1	26	65.38%	65.38%	-
+petkum_1665-11-23	first	69	18	9	69	18	9	96	71.88%	71.88%	-
+petkum_1665-12-10	first	54	14	7	54	14	7	75	72.00%	72.00%	-
+petkum_1666-01-18	first	37	9	4	37	10	3	50	74.00%	74.00%	N>E 134: Stockholm
+petkum_1666-01-18	blind	34	9	7	34	10	6	50	68.00%	68.00%	N>E 134: Stockholm
+petkum_1666-03-02	first	14	2	4	14	2	4	20	70.00%	70.00%	-	[one of the twelve]
+petkum_1666-03-02	blind	14	2	4	14	2	4	20	70.00%	70.00%	-	[one of the twelve]
+petkum_1666-03-16	first	16	0	1	16	0	1	17	94.12%	94.12%	-	[one of the twelve]
+petkum_1666-03-16	blind	16	0	1	16	0	1	17	94.12%	94.12%	-	[one of the twelve]
+petkum_1666-03-23	first	5	2	0	5	2	0	7	71.43%	71.43%	-	[one of the twelve]
+petkum_1666-03-23	blind	5	2	0	5	2	0	7	71.43%	71.43%	-	[one of the twelve]
+petkum_1666-03-30	first	7	5	2	7	5	2	14	50.00%	50.00%	-	[one of the twelve]
+petkum_1666-03-30	blind	7	5	2	7	5	2	14	50.00%	50.00%	-	[one of the twelve]
+petkum_1666-04-06	first	15	6	5	15	6	5	26	57.69%	57.69%	-
+petkum_1666-04-06_biermann	first	0	1	0	0	1	0	1	0.00%	0.00%	-	[one of the twelve]
+petkum_1666-04-06_biermann	blind	0	1	0	0	1	0	1	0.00%	0.00%	-	[one of the twelve]
+petkum_1666-04-06	blind	15	6	5	15	6	5	26	57.69%	57.69%	-
+petkum_1666-04-06_king_p2	first	22	1	2	22	1	2	25	88.00%	88.00%	-	[one of the twelve]
+petkum_1666-04-06_king_p2	blind	23	1	1	23	1	1	25	92.00%	92.00%	-	[one of the twelve]
+petkum_1666-04-13	first	59	23	12	59	23	12	94	62.77%	62.77%	-
+petkum_1666-04-27	first	0	1	1	0	1	1	2	0.00%	0.00%	-	[one of the twelve]
+petkum_1666-04-27	blind	0	1	1	0	1	1	2	0.00%	0.00%	-	[one of the twelve]
+
+T2 values met in these word divisions: 114 x2, 133 x2, 134 x4
+
+Code numbers with no value in key_v6.tsv, over the first-reader transcriptions (occurrences): 6 x1, 40 x3, 54 x1, 70 x1, 73 x4, 108 x1, 127 x1, 135 x1, 136 x1, 151 x5, 154 x2, 181 x1, 197 x3, 198 x2, 235 x1, 248 x3, 292 x1, 330 x1, 344 x1, 346 x4, 351 x1, 370 x2, 374 x1, 376 x1, 388 x1, 390 x5, 391 x1, 394 x1, 399 x1, 400 x3
