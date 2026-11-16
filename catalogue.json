@@ -84277,6 +84277,64 @@
    "repository": "bnf"
   },
   {
+   "id": 2728,
+   "counted": true,
+   "year": 1589,
+   "date": "8 Apr - 27 Jun 1589",
+   "title": "Anonymous and initialled ciphered letters to the duke of Nevers during the war of the League, spring 1589 (6 pieces)",
+   "correspondents": "signed \"M...\", \"DE...\" and unsigned -> Louis de Gonzague, duke of Nevers",
+   "place": "France",
+   "language": "French",
+   "region": "France",
+   "period": "1560-1589",
+   "shelfmark": "BnF Manuscrits, fr. 3422",
+   "folio_note": "fr. 3422 nos. 27 (f. 38 bis), 60 (f. 106), 62 (f. 108), 68 (f. 117), 69 (f. 118) and 70 (f. 119, Tours, 27 June)",
+   "cls": "C",
+   "status": "Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed. Tomokiyo nevers.htm covers fr. 4702, 4712, 4715 only (README of research/gallica_sweep).",
+   "why": "Ciphered news to Nevers from correspondents the catalogue could not name; a decipherment would identify them and the 1589 intelligence network.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
+   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "links": [
+    {
+     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
+     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Omont BnF catalogue sweep",
+   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "needs_archive_scan": "yes",
+   "access_note": "fr. 3422 has no Gallica link in its BnF notice (curl, 16 Nov 2026). Reading room or microfilm.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmark unconfirmed. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "seen": {
+     "kind": "not online",
+     "where": "BnF Archives et manuscrits notice ark:/12148/cc498940 (Francais 3422, Anc. 8923, 'Recueil de lettres et de pieces originales'), fetched by curl on 16 Nov 2026; no images online.",
+     "extent": "Six single letters (one folio each as foliated): no. 27 f. 38bis 'Lettre, avec chiffre, signee: M... Ce samedy, 8 apvril'; no. 60 f. 106 'signee: DE... Ce 12 apvril 1589'; no. 62 f. 108 'Ce 19 apvril 1589'; no. 68 f. 117 'a monseigneur le duc de Nevers... Ce 7 juing, a midy'; no. 69 f. 118 'Le 18 juing 1589'; no. 70 f. 119 'Ce 27 juing, a Tours'. How much of each is in cipher is not stated.",
+     "cipher": "Archive description 'Lettre, avec chiffre' for each piece, with no decipherment recorded. The volume's other letters to Nevers (Henri III, Potier de Gesvres, Gondi, Longueville) are described without cipher. Not seen; the system is unknown."
+    },
+    "prior_art": {
+     "decode": "known.py on fr. 3422 (16 Nov 2026): no DECODE record and no repo entry other than this lead. The repo's Nevers 1588-89 targets (nevers1588 = fr. 3976 f. 62 / R3705; nevers1589 = fr. 3977 no. 96) are other volumes.",
+     "tomokiyo": "Tomokiyo's list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for 3422: no hit; His Nevers page (cryptiana nevers.htm, fetched 16 Nov 2026) catalogues the key collection fr. 3995 and ciphers in fr. 3251, 3315, 3413, 3416, 3612, 3616, 3633, 3641, 3974-3994, 4702, 4712 and 4715; it does not cite this volume.",
+     "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) searched for 3422: no hit.",
+     "edition": "No edition prints these letters as far as found: the notice gives no printed reference, and the letters are anonymous or initialled, so they are not in the Henri III or Nevers editions by name. Not checked against Gomberville's Memoires de Nevers (1665) page by page.",
+     "literature": "No web search was made for this row (anonymous letters give no searchable name); the repo's Nevers work (nevers1587, nevers1588, nevers1589, revol1593) does not cite this volume."
+    },
+    "key_check": "No key is noted in fr. 3422. The Nevers court-correspondent keys of 1587-88 rebuilt here (targets/nevers1587, nevers1588) are candidates, untested since the leaves are not seen. A key does not block the lead. A sibling with a decipherment exists: fr. 3614 no. 60, court news to Nevers from Tours, 1 June 1589, 'avec chiffre et dechiffrement' (BnF notice cc50064v), probably the same correspondent and key as nos. 68-70 here; fr. 3614 no. 61 (8 June 1589, 'avec chiffre') belongs to the same series (lead 2729).",
+    "duplicates": "known.py on fr. 3422 and on the Nevers 1589 terms found no catalogue entry or target for these six letters; nevers1589 (fr. 3977) and nevers1588 (fr. 3976) are other volumes.",
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "verdict": "open"
+   },
+   "repository": "bnf"
+  },
+  {
    "id": 2732,
    "counted": true,
    "year": 1530,
@@ -84347,6 +84405,130 @@
     ],
     "key_check": "No key known. Neighbouring volumes of the Montmorency papers (fr. 3015, 3022) carry deciphered ciphers of the same years that could be tried; not tested.",
     "duplicates": "known.py 'fr. 3027', 'Bonnivet' (14 Nov 2026): only this lead and its sweep row.",
+    "verdict": "open"
+   },
+   "repository": "bnf"
+  },
+  {
+   "id": 2737,
+   "counted": true,
+   "year": 1617,
+   "date": "18 Oct 1617",
+   "title": "Duke of Monteleon (Spanish embassy, Paris), letter \"avec chiffre\" to Pedro de Toledo, copy",
+   "correspondents": "Duque de Monteleon -> Pedro de Toledo",
+   "place": "Paris",
+   "language": "Spanish",
+   "region": "France",
+   "period": "1611-1650",
+   "shelfmark": "BnF Manuscrits, fr. 3659 (Bethune, Italian embassy 1617), no. 24 (f. 48)",
+   "folio_note": "fr. 3659 no. 24 (f. 48): Monteleon to Pedro de Toledo, Paris, 18 Oct 1617, in Spanish, a copy, \"avec chiffre\", no decipherment noted (its French royal neighbours are marked with decipherment). Corrected 16 Nov 2026: the lead cited fr. 3638, which is a different volume.",
+   "cls": "C",
+   "status": "SHELFMARK CORRECTION (audit 16 Nov 2026): BnF fr. 3659 (Anc. 9153), no. 24. fr. 3638 is Marguerite de Valois. \"24 Lettre, avec chiffre, du duque de Monteleon... a don Pedro de Toledo... De Paris, 18 de ottobre 1617. En espagnol. Copie.\" is fr. 3659 (a Bethune embassy volume with Louis XIII and Puysieulx letters \"avec chiffre et dechiffrement\", nos. 8, 36, 41, 73-74). No decipherment noted for no. 24. Not on Gallica. Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed.",
+   "why": "A Spanish ambassador's cipher letter in a French volume.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
+   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "links": [
+    {
+     "label": "Gallica, fr. 3638",
+     "href": "https://gallica.bnf.fr/ark:/12148/btv1b9059321p"
+    },
+    {
+     "label": "BnF Archives et manuscrits, fr. 3638",
+     "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc500887"
+    },
+    {
+     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
+     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Omont BnF catalogue sweep",
+   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "needs_archive_scan": "no",
+   "access_note": "fr. 3659 has no Gallica link (notice cc501101, curl 16 Nov 2026). Reading room or microfilm, f. 48.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): SHELFMARK WRONG. Gallica fr. 3638 (btv1b9059321p) opens with Marguerite de Valois to Montmorency (1530s), not Monteleon 1617. Probably a nearby number; no ark known. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "seen": {
+     "kind": "not online",
+     "where": "BnF Archives et manuscrits notice ark:/12148/cc501101 (Francais 3659, Anc. 9153), fetched by curl on 16 Nov 2026; the lead's Gallica volume btv1b9059321p is fr. 3638, a different manuscript (14 Nov vetting note).",
+     "extent": "One letter, f. 48 (the next item starts at f. 50, so one or two leaves), in Spanish, a copy, dated Paris 18 October 1617; how much is in cipher is not stated.",
+     "cipher": "Archive description 'Lettre, avec chiffre ... Copie', with no decipherment noted. The cipher passages of a Spanish ambassador of 1617 would be in the Spanish nomenclator of the period. Not seen."
+    },
+    "prior_art": {
+     "decode": "known.py on fr. 3659 and Monteleon/Monteleón (16 Nov 2026): no DECODE record of this letter; the only Monteleón hits are 18th-century Spanish codes in targets/duran1718 (R10194, R10196), unrelated.",
+     "tomokiyo": "Tomokiyo's list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for 3659 and Montele: no hit.",
+     "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) searched for 3659 and Montele: no hit.",
+     "edition": "No printed text found. Bethune's 1617 Italian embassy papers have no edition known to me; the notice gives no printed reference for no. 24.",
+     "literature": "One web search (duque de Monteleon embajador Paris 1617 carta cifra Pedro de Toledo descifrada) found nothing on this letter; it surfaced Real Biblioteca (Avisos) articles on deciphering Spanish ambassadors' letters of 1614 with the general cipher of 1614."
+    },
+    "key_check": "No key is filed with the letter. The Spanish general cipher of 1614 is published (Real Biblioteca, Avisos, per the web search) and is a natural candidate for a 1617 ambassador-to-governor letter; Tomokiyo's Spanish cipher pages may hold the Monteleón embassy cipher. Not tested, since the leaf is not seen.",
+    "duplicates": "known.py on the shelfmark and names found no catalogue entry or target for this letter; the bethune target covers other Bethune embassy letters (Rome 1601), not fr. 3659.",
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "verdict": "open"
+   },
+   "access": "archive",
+   "repository": "bnf"
+  },
+  {
+   "id": 2740,
+   "counted": true,
+   "year": 1618,
+   "date": "28 Dec 1618",
+   "title": "Louis XIII to the duke of Nevers, letter \"avec chiffre\"",
+   "correspondents": "Louis XIII -> Charles de Gonzague, duke of Nevers",
+   "place": "Paris",
+   "language": "French",
+   "region": "France",
+   "period": "1611-1650",
+   "shelfmark": "BnF Manuscrits, fr. 3796",
+   "folio_note": "fr. 3796 no. 38 (f. 61)",
+   "cls": "C",
+   "status": "Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed.",
+   "why": "A royal cipher letter to Nevers in the year of the Mantua negotiations.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
+   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "links": [
+    {
+     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
+     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Omont BnF catalogue sweep",
+   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "needs_archive_scan": "yes",
+   "access_note": "fr. 3796 has no Gallica link (notice cc502323, curl 16 Nov 2026). Reading room or microfilm, ff. 61-62.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmark unconfirmed. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "seen": {
+     "kind": "not online",
+     "where": "BnF Archives et manuscrits notice ark:/12148/cc502323 (Francais 3796, Anc. 9291, 'Recueil de lettres originales'), fetched by curl on 16 Nov 2026; no images online.",
+     "extent": "One original royal letter, f. 61 (the next item starts at f. 63, so at most two leaves); how much is in cipher is not stated.",
+     "cipher": "Archive description 'Lettre, avec chiffre', no decipherment noted; the royal letter of 9 Nov 1618 to the same recipient (no. 36) is not marked cipher. Not seen; presumably the royal nomenclator of 1618."
+    },
+    "prior_art": {
+     "decode": "known.py on fr. 3796 (16 Nov 2026): no DECODE record and no repo entry other than this lead.",
+     "tomokiyo": "Tomokiyo's list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for 3796: no hit (his Louis XIII items are other volumes, e.g. fr. 3675, fr. 3758).",
+     "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) searched for 3796: no hit.",
+     "edition": "No edition of Louis XIII's letters to Charles de Gonzague is known to me, and the notice gives no printed reference. The Liege library holds Nevers's letters to Louis XIII (the other direction), per the web search.",
+     "literature": "One web search (Louis XIII, duc de Nevers, December 1618, lettre chiffre, mission) found only biographical pages and Boltanski's study of Nevers's lawsuits (1614-17); nothing on this letter."
+    },
+    "key_check": "No key is filed with the letter. Louis XIII's royal ciphers of 1617-18 used with ambassadors (for example in the Bethune 1617 volume fr. 3659, where letters carry decipherments) are candidates; not tested since the leaf is not seen.",
+    "duplicates": "known.py found no catalogue entry or target for fr. 3796 no. 38.",
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
     "verdict": "open"
    },
    "repository": "bnf"
