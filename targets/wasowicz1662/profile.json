@@ -303,10 +303,16 @@
    "kind": "verification",
    "what": "Claude Opus 5.5 (PR review on merge): shelfmark (Krzeszowickie, not Krakowskie), system (simple substitution, not homophonic), gaps, fraction_read measured over all eight letters (0.984), token counts (numbers only), summaries and routes corrected; every letter graded A.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand, letter by letter: the cipher words are the groups of each decryption.txt, the clear context of the readings is left out; a word with a slip, a supplied letter, a blotted or ambiguous number or an unvalued number counts as a hole. R7503 0.50, R7504 0.909, R7505 0.947, R7506 0.897, R7507 0.862, R7508 0.75, R7509 1.0, R7510 0.944: seven letters move read -> read in part, R7509 stays read; 251 of 281 words (0.893); outcome class read -> read in part. v10_relabel.py gives 0.87-0.97 over the whole reading and cannot reproduce these.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "Key sheet R7501 in the same file, transcribed and checked blind on R7508.",
@@ -314,9 +320,9 @@
    "transcription",
    "sender or date identified"
   ],
-  "fraction_read": 0.984,
+  "fraction_read": 0.893,
   "fraction_read_method": "measured",
-  "fraction_read_source": "All eight transcriptions, numbers only (page labels and separators left out): 1,561 of 1,587 numbers transcribed without doubt and in the table; per letter 13/13, 163/164, 113/113, 173/174, 162/166, 219/234, 27/27, 691/696. Measured on review, 27 Oct 2026.",
+  "fraction_read_source": "Cipher words only (16 Nov 2026), sure words only, counted by hand from each letter's decryption.txt (the cipher groups) against its reading (the clear words around them are not counted); a word with a slip, a supplied letter, a blotted or ambiguous digit or an unvalued number is a hole (the table is rebuilt, so the one-digit-slip rule does not apply). Per letter, sure of cipher words: R7503 1/2, R7504 20/22, R7505 18/19, R7506 26/29, R7507 25/29, R7508 36/48 (counted by reading words), R7509 6/6, R7510 119/126 (counted by cipher groups, the least number of words); 251 of 281 (89.3%). Before 0.984, 1,561 of 1,587 numbers transcribed without doubt and in the table, counted over numbers.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -338,8 +344,23 @@
   ],
   "gaps": [
    {
-    "item": "R7507: one word (‹przezęidą›, two digits uncertain) and the end of komendyrowani‹e›",
+    "item": "R7508 (5 May 1663): 12 of 48 cipher words carry a blotted or ambiguous number (a flat-topped 3 read as 5, overwritten digits): {ze}by, {p}ilniey, cho{d}ził, {około}, Marszał{ek}, dworowi, rozumienia, marszałka, iesli, {oderwie}, {iak}‹ł›, od",
+    "blocker": "illegible",
+    "detail": "DECODE images restricted and not in the checkout; the transcription was frozen for the blind test and its errors were identified only afterwards"
+   },
+   {
+    "item": "R7510 (9 Dec 1663): numbers lost in the tear of the right edge or cut off at line end (list[u], upo[do]bał, teraźnie[y]szych), the slips a{n}i, ‹d›ytności, d{a}no and the overwritten ‹z›",
+    "blocker": "illegible",
+    "detail": "tear of the right edge; DECODE images restricted"
+   },
+   {
+    "item": "R7507 (19 Mar 1663): oderwac (blotted number), z{a}wiązku, ‹przezęidą› and the end of komendyrowani‹e›",
     "blocker": "illegible"
+   },
+   {
+    "item": "R7506: ‹z›udiencyach, kon‹36›idencyą (36 not in the table), {n}ie; R7504: p[a]nem and Tekiel‹e›mu; R7503: ru‹y›ki; R7505: [do]syc",
+    "blocker": "too-short",
+    "detail": "one copy of each letter and a table with no value for these numbers or the slipped digits, so nothing to check them against"
    }
   ],
   "texts": [
@@ -351,14 +372,16 @@
     "reading": "texts/R7503_reading.md",
     "translation": "texts/R7503_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "Wąsowicz reports that the Voivode of Ruthenia, Stefan Czarniecki, has himself subscribed to something; only his title is in cipher. Written as the Crown army's confederation pressed the court for its pay.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 0.5,
+    "note": "16 Nov 2026, cipher words only: 1 of 2 cipher words sure (woiewoda; ru‹y›ki is a slip, 69 for 96) = 0.500; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7504",
@@ -368,14 +391,16 @@
     "reading": "texts/R7504_reading.md",
     "translation": "texts/R7504_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "Undated letter of winter 1662-1663: the Marshal Jerzy Sebastian Lubomirski leaves for the army's circle at Wolbórz; the rest concerns the estate of Błażejowa, held in pledge for 300,000 by a Tekieli who lacked indigenate, and how to secure a donation of it on the palatine's death. The names are in cipher.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 0.909,
+    "note": "16 Nov 2026, cipher words only: 20 of 22 cipher words sure (holes p[a]nem, Tekiel‹e›mu; if pnem is the writer's contraction, 21 of 22 = 0.955) = 0.909; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7505",
@@ -385,14 +410,16 @@
     "reading": "texts/R7505_reading.md",
     "translation": "texts/R7505_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "The court strives to keep the agreement with the confederated army; the circle of Wolbórz must be satisfied, and the whole point is that the money be brought in. Wąsowicz watches the Marshal's manoeuvres.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 0.947,
+    "note": "16 Nov 2026, cipher words only: 18 of 19 cipher words sure (hole [do]syc; one word decides the bar) = 0.947; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7506",
@@ -402,14 +429,16 @@
     "reading": "texts/R7506_reading.md",
     "translation": "texts/R7506_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "The Marshal is well received by the King and Queen at the audiences; someone was told to negotiate nothing further, only to serve the King after the confederation and to watch whether the army plots harm against the fatherland.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 0.897,
+    "note": "16 Nov 2026, cipher words only: 26 of 29 cipher words sure (holes ‹z›udiencyach, kon‹36›idencyą, {n}ie) = 0.897; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7507",
@@ -419,14 +448,16 @@
     "reading": "texts/R7507_reading.md",
     "translation": "texts/R7507_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "The Marshal has obliged the royal couple by sending Tatar [prisoners?]; he will not detach the better banners from the confederation before the circle, but promises that many will leave it afterwards; Czarniecki will not set out again.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes. The last clause of R7507 (‹przezęidą›) does not form a sentence."
-    }
+    },
+    "read_share": 0.862,
+    "note": "16 Nov 2026, cipher words only: 25 of 29 cipher words sure (holes oderwac, z{a}wiązku, ‹przezęidą›, komendyrowani‹e›) = 0.862; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7508",
@@ -436,14 +467,16 @@
     "reading": "texts/R7508_reading.md",
     "translation": "texts/R7508_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "The Marshal stays at Łańcut without a word to the court; when the King moves from Cracow with the camp, the plan is to see whether the Marshal detaches the banners from the confederation as he promised and brings them to the King.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 0.75,
+    "note": "16 Nov 2026, cipher words only: 36 of 48 cipher words sure, counted by reading words (12 holes with blotted or ambiguous numbers) = 0.750; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7509",
@@ -460,7 +493,9 @@
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 1.0,
+    "note": "16 Nov 2026, cipher words only: 6 of 6 cipher words sure = 1.000; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    },
    {
     "doc": "r7510",
@@ -470,14 +505,16 @@
     "reading": "texts/R7510_reading.md",
     "translation": "texts/R7510_translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "End of the Jarosław letter of 9 December 1663, after the funeral of the Cupbearer (probably Konstanty Jacek Lubomirski): Born's grievances and his taking of Połonne; the Marshal refuses the King's Ukrainian campaign ('iam ani hetman ani żołnierz do wiosny'); the army's deputies paid in debased szelągi; gossip about the Cupbearer's death.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read as Polish sentences against the English translation: coherent throughout with scattered marked holes."
-    }
+    },
+    "read_share": 0.944,
+    "note": "16 Nov 2026, cipher words only: 119 of 126 cipher words sure, counted by cipher groups, the least number of words (holes list[u], d{a}no, teraźnie[y]szych, a{n}i, ‹d›ytności, upo[do]bał, ‹z›) = 0.944; the clear Polish text around the cipher passages (marked […] or left as context in the reading) is not counted. Before: counted over numbers, about 0.95 to 1.0. v10_relabel.py cannot reproduce the count: it scores the whole reading, clear context included, and counts the […] elisions of clear text as holes."
    }
   ],
   "key_file": "key.tsv",

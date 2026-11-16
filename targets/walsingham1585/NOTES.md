@@ -113,6 +113,31 @@ with numbers glossed. R4838 and R4839 are left to CSP nos. 40 and 65, checked ag
 
 **23 Oct 2026, v6 spelling check (research/reading_audit/v6_spelling_files.txt; REREAD_BRIEF step 3-4: no modern spelling in a reading)**: reading_R4840.txt and reading_R4844_r2.txt said 'spelling modernised (in part)'. There is no diplomatic transcription, so the DECODE images were fetched again with the project cookie (research/reading_audit/v6_fetch.py; scratchpad only, BL images) and re-read in strips; the words whose letters are clear in the secretary hand are now as written (dothe, complayne, wrytten, frende, knowe, countenaunce, towardes, yf, woold, ioyne, wyll, realme, iudge, therof, alwayes, then for than, Coorte; hathe bread, lykinge, doe bothe allowe of yt, untill, ben unmindfull, commyssion, Jesuites ...). Words not certain on the scan keep the earlier form, which the headers say; no hole was filled and no word changed. The R4840 marginal postscript (f. 163v) was not re-read. Explicit holes R4840 0.614 -> 0.667, R4844_r2 0.705 -> 0.736 (new header lines; no '## Reading' heading). States unchanged: R4840 read, R4844 decoded, not read.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only (probable
+and grade-M words are holes; a word confirmed by an independent contemporary text is sure). The letters are clear
+English; the cipher words are the two-digit name codes written in the line, and in R4844 the sign words. Recounted by
+hand; the files do not mark them, so `v10_relabel.py` cannot reproduce these counts.
+
+- **R4840** (21 Aug): 20 code occurrences, **15 sure**: 39, 40, 10, 24 (twice each), 20 and 19 on the calendar's glosses
+  (grade H), and 27 (twice), 36 (twice) and 3 on the contemporary glosses of the deciphered pairs
+  (`dudout/name_codes.md`: "the Secret[ary]", "Eng.", "the Q."), which are independent of this reading; **5 holes**:
+  11 three times (grade C; its gloss in the pairs, "S. Fr.?", is uncertain), 28 and 29 (grade M, no gloss).
+  **15 of 20 = 0.75**, from 0.957 (a figure over the whole letter, clear included, taken from `clear_gaps_pass2.md`).
+  On the `texts/key.md` grades alone, without the pairs' glosses, it is 10 of 20 = 0.50. **State read -> read in part.**
+  The clear words and their `[..]` gaps are not cipher and are not counted.
+- **R4844 sign words** (Dudout): 19 sign groups, **11 graded S (certain)**, 5 graded P (probable, one with a restored
+  letter; holes) and 3 unresolved: **11 of 19 = 0.579**, from 0.86, which counted the sign letters with the probable
+  and restored ones as read (certain letters about 69 of 116 = 0.59). Stays read in part. The reading file
+  `dudout/reading_R4844_signs.md` is Dudout's and still carries its own 86% line.
+- **R4844** (the whole letter) stays decoded, not read; **R4838, R4839** are in print as calendar abstracts and have no
+  entry here.
+- **Outcome fraction_read** 0.43 -> **0.36** (25 of 69 units: R4840 15, R4838/R4839 10 as before, R4844 none, as
+  before); the 0.43 counted R4840's 20 whole. The 10 units of R4838/R4839 were not recounted.
+- The class stays **read in part**; the part counts "34 of 46 name-code occurrences" and "12 of 18 numbers identified"
+  count identified numbers, not sure occurrences, and are not recounted here.
+
 ## Remaining gaps
 - R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
 - R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out

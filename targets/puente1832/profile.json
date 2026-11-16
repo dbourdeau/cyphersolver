@@ -122,6 +122,15 @@
    "kind": "literature search",
    "what": "One web search on the item and Plan of Veracruz 1832: no cipher literature found.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026). The dateline is in clear and is marked in reading.txt (markup only; no word changed); the 22 cipher lines hold 124 words read and 25 holes: 124 of 149 = 0.832 (was 0.86, 127 of 147 in the transcription). Under the 95% bar, so the entry is read in part, as the class already was. v10_relabel.py with clear_markup reproduces 0.832.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -140,9 +149,9 @@
   "contribution": [
    "key recovered"
   ],
-  "fraction_read": 0.86,
+  "fraction_read": 0.832,
   "fraction_read_method": "measured",
-  "fraction_read_source": "transcription.txt, cipher words of lines 1-22: 127 of 147 without a [?]",
+  "fraction_read_source": "Cipher words only (16 Nov 2026): reading.txt without its clear dateline, 124 words read and 25 holes (each [?] one word, part-words and supplied letters holes): 124 of 149 = 0.832, reproduced by v10_relabel.py with clear_markup. Before: 0.86, 127 of 147 words of the transcription without a [?].",
   "gaps": [
    {
     "item": "line 4 (about five words) and the words after 'que oc' in line 3",
@@ -164,14 +173,17 @@
     "decryption": "decode_out.txt",
     "reading": "reading.txt",
     "translation": "translation.txt",
-    "state": "read",
+    "state": "read in part",
     "summary": "A report sent from Puente Nacional, Veracruz, on the evening of 6 June 1832, to an officer styled V.E. (the text names Jalapa): a section was to leave at dawn, no movement has been made or planned in that direction, the writer hopes for a combination of these forces with those leaving Jalapa, and resources last five or six days. Setting in the 1832 civil conflict is the editor's inference.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Sonnet 5.5",
      "date": "2026-11-09",
      "note": "Read as sentences with holes: lines 1-2, 6-7, 9, 11-13, 15-16 and 20-21 read cleanly; lines 3-5, 8, 10, 14, 17-19 and 22 carry gaps. Self-review by the model, not an independent Spanish reader."
-    }
+    },
+    "read_share": 0.832,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, cipher words only: 124 of 149 cipher words read (83.2%); the dateline, written in clear, is marked ⟨⟩ in reading.txt and stays out (before 0.86 from the transcription, which counted 127 of 147 words without a [?]). Holes: 15 bare [?] words, five part-words (oc[?], c[?], pr[?], [?]s, and c[?]m[?] with two holes) and four supplied letters (S[r], dificulta[d], d[a], r[ecurs]os) = 25, counted as v10_relabel.py counts them."
    }
   ],
   "notes": "Partly read; the gaps are words the cursive does not settle at this scan resolution.",

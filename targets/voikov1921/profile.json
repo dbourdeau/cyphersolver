@@ -161,9 +161,20 @@
       "technique": [
         "plaintext matching"
       ]
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand, word by word, decryption.txt against reading.txt; sure words only, a letter corrected in a key rebuilt here a hole. The telegram is wholly cipher, so nothing was separated. 105 reading words: 63 read as decrypted, 42 holes (11 bracketed or [...], 5 lost-letter words, 26 slipped words). 0.987 -> 0.600; class read -> read in part. v10_relabel.py gives 0.88 because the slipped words are not marked in the reading, so the dry run does not reproduce the figure.",
+      "result": "partial"
     }
   ],
-  "outcome": {"validation": {"date": "2026-11-02", "verdict": "not applicable", "notes": "Transposition: letters are unchanged, so the token-key test does not apply; shuffled-letter controls are in the notes."}, 
+  "outcome": {
+    "validation": {
+      "date": "2026-11-02",
+      "verdict": "not applicable",
+      "notes": "Transposition: letters are unchanged, so the token-key test does not apply; shuffled-letter controls are in the notes."
+    },
     "method": "key recovered from ciphertext-only",
     "method_basis": "The 24-column key came from annealing against a Russian model with no crib, and gives a coherent purchase list.",
     "contribution": [
@@ -171,10 +182,10 @@
       "key recovered",
       "sender or date identified"
     ],
-    "class": "read",
-    "fraction_read": 0.987,
+    "class": "read in part",
+    "fraction_read": 0.6,
     "fraction_read_method": "measured",
-    "fraction_read_source": "decryption.txt, letters; 8 of 615 unread (chetyre shjima, ce)",
+    "fraction_read_source": "Cipher words only (16 Nov 2026), sure words only, counted by hand from decryption.txt against reading.txt: the telegram is wholly cipher (the heading in clear is not in the reading); 105 reading words (the 'zpt', 'dvoetochie' and 'prod sled' words included), 63 read as the decryption gives them and 42 holes: 11 words with letters supplied in brackets or marked [...], 5 words with a lost letter (?) filled in, and 26 words whose decrypted letters differ from the reading (radio or copying slips emended in a key recovered here). Before 0.987, counted over letters (8 of 615 unread).",
     "key": "recovered",
     "verification": [
       "historical consistency"
@@ -189,17 +200,25 @@
         "reading": "reading.txt",
         "translation": "translation.md",
         "language": "ru",
-        "state": "read",
+        "state": "read in part",
         "reading_review": {
           "grade": "B",
           "by": "claude-opus-5-5",
           "date": "2026-11-02",
           "note": "Read by the model as sentences item by item; no independent reader yet."
         },
-        "read_share": 0.987,
-        "summary": "A buying order to Stomoniakov in Berlin: hardware for the goods-exchange fund with the countryside, listed with sizes (iron, nails, shovels, rakes, forks, axes, saws, chisels). It ends \"continuation follows\". The goods-exchange subject fits the Politburo decision on Kopp's proposal of 16 April 1921, by subject only."
+        "read_share": 0.6,
+        "summary": "A buying order to Stomoniakov in Berlin: hardware for the goods-exchange fund with the countryside, listed with sizes (iron, nails, shovels, rakes, forks, axes, saws, chisels). It ends \"continuation follows\". The goods-exchange subject fits the Politburo decision on Kopp's proposal of 16 April 1921, by subject only.",
+        "note": "16 Nov 2026, cipher words only: 63 of 105 words read as the decryption stands (60.0%); 42 holes (11 supplied or unread, 5 lost letters filled, 26 slipped words emended in a rebuilt key); before 0.987, counted over letters. The reading holds the cipher only, so nothing was split. v10_relabel.py gives 0.88 (it counts the bracketed words and the [...] only; the slipped and lost-letter words are not marked in the reading), so its figure does not reproduce this count."
       }
     ],
-    "key_file": "keyA3.json"
+    "key_file": "keyA3.json",
+    "gaps": [
+      {
+        "item": "the 26 words whose decrypted letters differ from the reading, the 5 words with a lost letter filled in, the unread word after 'four' (chetyre shjima) and the unexplained 'ce'",
+        "blocker": "too-short",
+        "detail": "one 615-letter telegram in a key recovered here, no second copy of it to check the slipped letters against; the omitted prepositions are not in the cipher"
+      }
+    ]
   }
 }

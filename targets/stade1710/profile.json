@@ -140,6 +140,12 @@
    "kind": "verification",
    "what": "Claude Opus 5.5 (PR review on merge): the not-attempted gap for the other letters of Nr. 670 moved to notes (outside this target); probable values counted (ten, not six); graded A. Repository slips noted for the contributor: key.tsv lacks 238, 473, 345 and 25 used by the reading, lists 1049 as wis? (reading wilkor), and has 160 = qi where decryption.txt writes qui.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand on reading.md: the words outside square brackets (clear in the copy) are the cipher words. 303 cipher words (both copies), 25 holes (probable {x} words, clerk's slips, group 212, slores): 278 read, 0.917, class read -> read in part. The old 0.998 counted cipher groups, not words. v10_relabel.py cannot reproduce it (square brackets are not a declarable clear markup; it gives 0.823 over the whole reading, not split).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -173,7 +179,7 @@
    "verdict": "underdetermined",
    "notes": "claimed per-occurrence score -2.596; polyphony 0.002; 2 unread tokens left out; annealer on the real text from random keys reached -2.24"
   },
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "Key rebuilt from a ciphered troop list in the same file whose clear draft survives, then frozen and validated on unseen letters.",
@@ -181,9 +187,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.998,
+  "fraction_read": 0.917,
   "fraction_read_method": "measured",
-  "fraction_read_source": "639 of 640 cipher groups read; six probable readings marked on the write-up.",
+  "fraction_read_source": "Cipher words only (16 Nov 2026), sure words only, counted by hand from reading.md: the words outside the square brackets (clear in the copy) are the cipher words, 303 in the two copies (134 for the envoys, 169 for the Rådet); 25 are holes (21 words with a probable {x} value or letter, 3 clerk's slips read from the sense (att, Konung, slores) and the word with the unread group 212), 278 read (91.7%). Before 0.998, 639 of 640 cipher groups, counted in groups.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -212,8 +218,14 @@
   ],
   "gaps": [
    {
-    "item": "one unresolved group (212); ten word values set from the table's order and the sense; five clerk's slips",
-    "blocker": "open-codes"
+    "item": "group 212 (bo-s-tag-are-i-212-t, Rådet copy) and the garbled 'slores'",
+    "blocker": "no-key-material",
+    "detail": "no table of this cipher survives in the file; 212 is the first ending of the table and the clear text before it is poorly read"
+   },
+   {
+    "item": "the probable values set from the table's alphabetical order and the sense (andra, allt, wilkor, Dansk, det, ge(r)na, sig, fort, emot, gärna, slut, ak, c, r, a, s) and five clerk's slips read from the sense",
+    "blocker": "no-key-material",
+    "detail": "no table of this cipher survives; the Rådet's clear copy, probably in the Riksarkivet, was not consulted and its registers are not searchable online (notes of 27 Oct 2026)"
    }
   ],
   "texts": [
@@ -225,14 +237,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "sv",
-    "state": "read",
+    "state": "read in part",
     "summary": "A refugee at Bender, on Ottoman soil, since Poltava, Charles XII learns of the rout of the Danish army at Helsingborg. In a chancery letter whose sensitive passages are in cipher, he declares himself ready to make peace with Denmark under the mediation of England and the United Provinces, and gives the Council a “free hand” to negotiate and to conclude an armistice, “even for a whole year”. Two ciphered copies, received by the Swedish government of Bremen-Verden, are kept at Stade.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read both copies' group-by-group decryption against reading.md and translation.md: the number runs build Swedish sentences that join the clear text throughout. Weak passages: the Rådet copy's 'bo‹s-tag-are-i-212›t' (the one unread group, the clear before it poorly made out) and '‹slores› på ‹…› heelt års tid'; the (…) holes are in the fast clear hand, not in the cipher."
-    }
+    },
+    "read_share": 0.917,
+    "note": "16 Nov 2026, cipher words only: 278 of 303 cipher words read (91.7%), 25 holes (probable {x} values, clerk's slips read from the sense, the unread group 212, 'slores'); the bracketed words (clear in the copy) are neither read nor unread. Before: 639 of 640 cipher groups, counted in groups (0.998). v10_relabel.py cannot reproduce this: square brackets mark the clear words here, which is not a declarable markup, so it measures the whole reading (0.823, 'not split'). Whole letter, clear included, not the measure: the same tool, 0.823."
    }
   ],
   "key_file": "key.tsv",

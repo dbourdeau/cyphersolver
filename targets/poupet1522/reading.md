@@ -3,6 +3,8 @@
 Transcribed from DECODE image 9 (right page). Grade M: diplomatic reading of a 1024-px scan, abbreviations
 expanded, doubtful words in [brackets].
 
+## Reading
+
 **A.** Combien que je vouldroie mectre mon ame en gaige que vous estes la personne de ce monde quil ayme le
 plus, mais ne doubtez que luy estre a Rome il sera sollicite et practique de tant de costez que lon luy
 pourroit [desmouvoir] quelque chose dont il ne se [retireroit] jusques [a] ce quil ne sen scauroit bien retirer.
@@ -23,5 +25,7 @@ dessus. Et dit que pour ce le nombre de gens quil a entreprins de mener, que son
 lesse de venir apres luy, ce que ne pourroit mener davantage; mais aussy, comme le vous ay escript, il fait
 courre le bruit quil emmenera vingt mille, et le fault ainsy dire sur les bailles. Je ne vois point que, si
 vous ne faites que vous ne veyez le pape avant quil parte, car sans doubte ce sera le [...] de tant [...].
+
+## Notes
 
 Sections C, D and E (images 10-11): not transcribed here; content summarised in NOTES.md.

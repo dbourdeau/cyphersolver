@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "rah-2ms-caja8-n4",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "RAH, 2/Ms Caja 8 no. 4 (Fernández San Román collection)",
    "date": "19 August 1578",
    "year": 1578,
@@ -128,10 +128,20 @@
    ],
    "what": "70 words read: 60 certain, 9 probable, 1 unresolved.",
    "result": "worked"
-  }
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), sure words only, by hand from reading.md: 70 cipher words (18 + 35 + 17); 60 certain, 9 probable and 1 unresolved are holes: 60 of 70 = 0.857, under the 95% bar, so the letter is read in part (was 0.986 with the probable words counted as read). The plain Spanish marked <...> is outside the count. v10_relabel.py with clear_markup <> cannot reproduce it (it does not treat {x} as a hole).",
+   "result": "partial"
+  },
+  {"date": "2026-11-16", "kind": "verification", "technique": ["other"], "what": "Retry of the probable words on the RAH images attempted: curl to bibliotecadigital.rah.es (catalogo_imagenes/grupo.do?path=1000503) answered HTTP 403 (bot check); no browser tool was available in the session, so no image was opened and no word was retried. The gaps for {ir}, {esso}, {manera}, {pueda}, {estragar} and ningun are recorded as not-attempted (workable).", "result": "failed"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "Key of a sibling cipher (1577 Genoa embassy table, rebuilt from contemporary decipherments), adapted to Pérez's variant and validated on a fresh held-out cipher / decipherment pair.",
@@ -139,9 +149,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.986,
+  "fraction_read": 0.857,
   "fraction_read_method": "measured",
-  "fraction_read_source": "69/70 words read in their sense; 60 certain, 9 probable, 0 restored, 1 unresolved.",
+  "fraction_read_source": "Cipher words only, sure words only (16 Nov 2026): 60 of 70 cipher words certain; the 9 probable {x} and the 1 unresolved word are holes. Before: 0.986 (69/70), probable words counted as read.",
   "first_break": true,
   "verification": [
    "contemporary decipherment",
@@ -165,17 +175,42 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read",
+    "state": "read in part",
     "summary": "The Council of Finance has \"not a single real\"; supplying what is needed is impossible; the asiento was accepted under protest that no other will be honoured.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Sonnet 5.5",
      "date": "2026-10-30",
      "note": "Read as sentences from Brice Dudout's reading.md and translation.md (not re-deciphered, not re-checked against the images): three of the four passages build Spanish sentences once Perez's clear text is added; one word (ningun) is left unresolved and one verb (estragar) is uncertain in sense."
-    }
+    },
+    "read_share": 0.857,
+    "clear_markup": "<>",
+    "note": "16 Nov 2026, cipher words only: 60 of 70 cipher words sure (85.7%); 9 probable and 1 unresolved are holes (before 0.986, probable counted as read). Pérez's own plain text is marked <...> in reading.md and is not counted. v10_relabel.py with clear_markup <> counts 70 words and no holes (it does not read {x} or ‹x› as holes), so it does not reproduce 0.857."
    }
   ],
   "key_file": "key.tsv",
-  "provenance": "contributed"
+  "provenance": "contributed",
+  "gaps": [
+   {
+    "item": "{ir}, {esso}, {manera}, {pueda}, {estragar}: five probable words (passages A and b)",
+    "blocker": "not-attempted",
+    "detail": "RAH images are online but curl got HTTP 403 (bot check) on 16 Nov 2026 and no browser tool was available; not re-opened, not retried; {ir} sits on a blotted sign"
+   },
+   {
+    "item": "{estrecho}, {dicho}: barred 7 + hook read as cho",
+    "blocker": "no-key-material",
+    "detail": "sign attested nowhere else"
+   },
+   {
+    "item": "{imposible} (sign 14 read as i) and {cunplira} (oblique stroke read as n)",
+    "blocker": "too-short",
+    "detail": "one occurrence each in 153 symbols"
+   },
+   {
+    "item": "‹ningun›",
+    "blocker": "not-attempted",
+    "detail": "signs give u-cin-gan, which contradicts the expected word; not looked at again on the images (HTTP 403, 16 Nov 2026)"
+   }
+  ]
  }
 }

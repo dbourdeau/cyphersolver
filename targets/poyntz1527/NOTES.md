@@ -1,7 +1,7 @@
 # Lee, Ghinucci and Poyntz to Wolsey, Valladolid, July 1527 (BL Cotton MS Vespasian C IV ff. 174-177 and 182-185; DECODE R8565, R8567)
 
 
-Status: in progress. R8567 read at the time; R8565 read 23 Oct 2026 from its contemporary decipherment (texts/R8565_reading.md); site page and ledgers not yet updated.
+Status: read at the time (R8567, R8565); R8565 transcribed 23 Oct 2026 from its contemporary decipherment (texts/R8565_reading.md), four of its five cipher places; recounted over cipher words 16 Nov 2026.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): R8567's three runs (plaintext.txt) read. Nothing of R8565's decipherment is in the repository, only the calendar paraphrases below, so R8565 is *decoded, not read*, with an excerpt note: the full decipherment is Tuke's, on the DECODE images and in L&P IV 3271 (British History Online). Class already solved kept; fraction_read 1 -> about 0.38 (by runs, estimated).
 
@@ -83,10 +83,21 @@ marry the Princess Mary, and the offer of the daughter of Portugal for Richmond 
 Cipher: the Lee-Worcester sign cipher, S. Tomokiyo's reconstruction (document on R8566). DECODE corrections queued
 under poyntz1527 in decode_updates/queue.json (R8565 and R8567). Removed from the catalogue 21 Sept 2026.
 
+## Read share over cipher words only (16 Nov 2026)
+
+R8567: `plaintext.txt` holds only the three deciphered runs (44 words, no hole): 1.0, unchanged. R8565: `texts/R8565_reading.md`
+holds the decipherment, but the decipherer also copied 18 clear words of the letter into it (*aswell in thair presence
+as oute*; *And therfor it is better that the Emperour bestowe it upon some*, clear per the Notes of that file); they are now
+marked with angle brackets (markup only, entry declares `clear_markup` as ⟨⟩) and stay out of the count. 231 words and 10 holes
+([?bere], [and], [?Wher], [?fearith], the four `[?yf] [?he] [?wolde] [?geve]`, [?how], [?is]): **0.961 -> 0.959**, still read.
+`fraction_read` 1.0 (by runs, 8 of 8, estimated) -> **0.965** (R8567 44 of 44 plus R8565 231 of 241 = 275 of 285, measured). The one
+cipher word on f. 174r (*intimacion*, glossed) is not in the reading file and is not counted. Class unchanged.
+
 ## Remaining gaps
 
 - R8565: closed 23 Oct 2026 (decipherment transcribed and checked, texts/R8565_reading.md)
 - R8565: [?bere] (f. 174v) and four words before 'the doughter of Portugalo' (f. 176v) - blocker: illegible; written over each other, signs faint at DECODE's resolution
+- R8565: five single doubtful or supplied words, [and] (f. 175r), [?Wher] and [?fearith] (f. 175r), [?how] (f. 176v), [?is] (f. 177r) - blocker: illegible; the decipherment's word there is partly carried or not clear at DECODE's resolution (reading file Notes)
 
 ## Escalation
 
