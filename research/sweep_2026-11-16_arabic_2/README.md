@@ -22,8 +22,8 @@ passed them.
 |---|---|---|---|
 | 0 | Sacromonte Lead Book 17, the "Libro mudo" (Granada) | c. 1595-97 | vetted open; plate fol. 3b seen at 1,313 x 1,317 px from the open-access edition (van Koningsveld & Wiegers 2024), which calls it undeciphered and possibly meaningless; the other cipher plates are not online |
 | 1 | Durham, Sudan Archive SAD.250/1/550: Gordon to Mustafa Yawar, Mudir of Dongola, about 120 Eastern Arabic two-digit numerals | 1884 | seen; not vetted, because a possible decode (TNA PRO 30/57/4/26) could not be opened |
-| 2 | Gotha, Pertsch no. 2507: an end leaf with "eine Notiz in Geheimschrift" | copy 1727, note 1764/65? | catalogue only (Gotha viewer behind a bot check) |
-| 3 | Berlin, Sachau 218, f. 231a: four lines of cipher after a Karshuni prayer | 19th c. | catalogue only; counts only if the plaintext is Arabic |
+| 2 | Gotha, Pertsch no. 2507: an end leaf with "eine Notiz in Geheimschrift" | copy 1727, note 1764/65? | lead 2942, unvetted (Gotha viewer behind a bot check) |
+| 3 | Berlin, Sachau 218, f. 231a: four lines of cipher after a Karshuni prayer | 19th c. | vetted open and promoted as catalogue 2943 (scan seen; Dudout's attempt: 59 signs, an abjad key fails, may be a reckoning table; counts only if the plaintext is Arabic) |
 
 ## Negative results
 

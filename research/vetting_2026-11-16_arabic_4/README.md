@@ -47,5 +47,5 @@ requests searched for each id and for Gordon, Sachau and Gotha before starting.
 - 2932: a person in a browser on the Gotha/Erfurt viewer, or a scan order to the Forschungsbibliothek Gotha for the
   two leaves at the end of the volume.
 - 2931: close as a duplicate when #591 merges.
-- 2933: compare the Sachau secret alphabets (pp. 338 ff.) and Sachau 221 f. 20b; decide whether the plaintext is
+- 2943 (was 2933): compare the Sachau secret alphabets (pp. 338 ff.) and Sachau 221 f. 20b; decide whether the plaintext is
   Syriac or Karshuni.
