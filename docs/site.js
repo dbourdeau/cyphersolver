@@ -217,6 +217,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
         count=document.getElementById('wcount')||{}, reset=document.getElementById('wreset'),
         dds=[...document.querySelectorAll('.cfilters details.dd')];
   const state={f:{}, q:''};
+  const text=li=>li._q??(li._q=((li.dataset.q||'')+' '+li.textContent).toLowerCase());   // data-q: label and place, not shown in the row
   const vals=(li,k)=>(li.dataset[k]||'').split(' ').filter(Boolean);   // lang and by hold several space-separated ids
   dds.forEach(d=>d.addEventListener('toggle',()=>{ if(!d.open) return; dds.forEach(o=>{ if(o!==d) o.open=false; });
     const p=d.querySelector('.pop'); p.style.left=''; p.style.right='';
@@ -229,7 +230,7 @@ document.querySelectorAll('.showmore').forEach(b=>b.dataset.label=b.textContent)
       if(k==='q') state.q=v; else if(k) state.f[k]=v.split(',').filter(Boolean); });
   }
   function match(li,needle,skip){
-    if(needle && !(li.dataset.q||'').includes(needle)) return false;
+    if(needle && !text(li).includes(needle)) return false;
     for(const k in state.f){ const vs=state.f[k]; if(k===skip || !vs.length) continue; const d=vals(li,k); if(!vs.some(v=>d.includes(v))) return false; }
     return true;
   }

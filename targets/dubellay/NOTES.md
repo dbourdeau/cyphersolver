@@ -295,3 +295,26 @@ this reading.) Still open on those lines: v30 after "ont mais", w2 after "ce que
   dubellay1528.
 - Bourrilly's note (1905, p. 432) says the first cipher was also used in a letter of 28 May 1529; no document of
   this entry is of that date, so no 1529 letter here is assumed to be in the first cipher.
+
+## 14 Nov 2026, full-texts audit: transcriptions of 22 June and 30 June 1529
+
+The audit asks for the cipher as written beside each decryption.
+
+- **22 June 1529** (fr. 3078, Gallica views 25-27 of btv1b9060311s; the leaves are numbered 23-25, which is DECODE R3689's
+  "pp. 23-25"; the profile's "pp. 25-27" are the Gallica view numbers). No transcription existed (the signs had only been
+  aligned with the interlinear to derive the key). Views 25-27 were fetched from `openapi.bnf.fr` and the cipher passages
+  of the **first two pages** transcribed sign by sign: `texts/22jun1529_transcription.txt`, 16 lines, 252 signs. It is a
+  single AI transcription, not checked by a person, and it was made with the decipherer's interlinear in view: signs of
+  the diamond-and-cross family (m, n, t) and some cross signs follow the letter written above where the shape did not
+  decide. Every line decodes with `key_p21.tsv` and the section 2 table to the word above it. Seen on the way, not in the
+  section 2 table: one-sign words glossed *mais* and *c'est*; a sign of two uprights crossed twice glossed *duc de
+  suffort* (twice); the boxed cross glossed *le cardinal d'Yort*; an o with a stroke for g (*charge*); the leaf writes
+  *viendra il*, *aporter*, *noueles*, *honestes*, *demesler* and "c'est ce qu'il me semble" with *qu'il* in clear.
+  **Not done:** the nine cipher lines of the third page (view 27, "ilz sont icy assez bien ... la medecine") are not
+  transcribed; the image is reachable, the pass was not finished in this session.
+- **30 June 1529** (fr. 3040 f. 68, DECODE R4229): no transcription, and the image was not reached. DECODE gives only
+  thumbnails without a login; the Gallica ark of fr. 3040 is not recorded in the repository, Gallica's search answers
+  403 to scripts and a web search did not give it. `transcription_missing` records this. The ark of fr. 3040 (then the
+  IIIF route) or a logged-in fetch of R4229 unblocks it.
+- No change to class, method, states or fraction_read.
+

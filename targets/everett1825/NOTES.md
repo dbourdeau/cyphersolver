@@ -153,3 +153,29 @@ compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
 ## The eight enciphered pages read by Brice Dudout (27-28 Oct 2026)
 
 Frames 0112-0115 (pp. 1-6) and pp. 17-18: 1111 of 1127 groups read with the jqa table and a graded overlay. See `dudout/README.md`. This answers the "next step" above.
+
+## 14 Nov 2026: reading review recorded
+
+All nine `outcome.texts` entries were read as sentences against their decryptions (Claude, session of 14 Nov 2026) and a
+`reading_review` grade A recorded on each in `profile.json`:
+
+- `everett1825_reading.md` (passages A, B, C): coherent, holes marked; read in part, read_share 0.904, unchanged.
+- `dudout/texts/p01`-`p06`, `p17`, `p18` `_reading.md`: the deciphered passages run on from the clear text as coherent
+  sentences. Word-level `read_share` measured on the passages in «guillemets», a word with an unresolved group ‹n› being
+  a hole: p. 1 1.0 (59 words), p. 2 1.0 (36), p. 3 0.969 (96), p. 4 0.969 (162), p. 5 0.988 (173), p. 6 0.958 (72),
+  p. 17 0.991 (113), p. 18 1.0 (92). If the words given whole from sense ([x], overlay grade S: many, me, I, of, Russia,
+  soon, above, enable, is, Russian) are counted as holes too, pp. 1, 2, 3 and 6 come to 0.949, 0.917, 0.948 and 0.944,
+  just under the 95% bar; the state was left `read` because those values rest on a group, most with a slot or a repeat
+  (overlay.tsv). Both figures are in each entry's `note`.
+
+Not done: the two readings of pp. 17-18 still differ in two places (WAINUT `[?cause]` and `[125]`, Dudout `{measure}`
+and `{contrary}`); the comparison in Remaining gaps stays open. No reading file was changed; frames not re-opened.
+
+## 14 Nov 2026: pp. 1, 2, 3 and 6 of Brice Dudout's reading set to read in part
+
+The reading review of today recorded two word counts for his eight pages: one counting only words with an unresolved
+group as holes, one counting also the words given whole from sense. The second is the one the read bar means (a value
+proposed from context alone is not a word read, REREAD_BRIEF "The iterative loop"). By it pp. 1, 2, 3 and 6 are under
+95% (0.949, 0.917, 0.948, 0.944) and are now `read in part` in `outcome.texts`; pp. 4, 5, 17 and 18 stay `read`
+(0.969, 0.988, 0.973, 0.967). The sense-only words were not checked group by group on the film here, apart from the
+overlay rows for "me", "soon" and "of". The target's class was and stays read in part.

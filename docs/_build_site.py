@@ -666,13 +666,15 @@ def readme_glance():
     return len(counts)
 
 def writeups_html():
+    # data-q carries only what the row does not show (the menu label and the place): site.js searches the row's own
+    # text as well, so the title and blurb are not written twice (355 kB of the page before 14 Nov 2026)
     def q(*parts): return html.escape(plain(' '.join(parts)).lower(), quote=True)
     rows = []
     for p in sorted(PAGES, key=lambda p: p['y']):
         by = ' '.join(sorted({c['who'] for c in p.get('credits') or [] if c.get('who') in CONTRIB}))
         rows.append(f'<li data-kind="{kind_of(p)}" data-extent="{p.get("extent") or ""}" data-century="{century_of(p["y"])}" data-src="page" data-by="{by}" '
                     f'data-lang="{langs_of(p.get("folders") or [])}" '
-                    f'data-q="{q(p["label"], p["title"], p["place"], p["year"], p["blurb"], p["stt"])}">'
+                    f'data-q="{q(p["label"], p["place"])}">'
                     f'<a href="{p["slug"]}.html"><span class="st {p["st"]}">{p["stt"]}</span>'
                     f'<span class="t">{avatars_html(p["slug"])}{p["title"]}</span>{when_html(p, cls="dt")}<span class="yr">{p["year"]}</span>'
                     f'<span class="b">{p["blurb"]}</span></a></li>')
@@ -680,7 +682,7 @@ def writeups_html():
     nrows = []
     for n in sorted(notes, key=lambda n: n['y']):
         nrows.append(f'<li data-kind="{n["kind"]}" data-extent="{n["extent"]}" data-century="{century_of(n["y"])}" data-src="notes" data-lang="{n.get("lang", "")}" '
-                     f'data-q="{q(n["target"], n["result"], n["date"], n["stt"])}">'
+                     f'>'
                      f'<a href="{n["url"]}" rel="noopener"><span class="st {n["st"]}">{n["stt"]}</span>'
                      f'<span class="t">{n["target"]}</span><span class="dt">notes &#8599;</span><span class="yr">{n["date"]}</span>'
                      f'<span class="b">{n["result"]}</span></a></li>')
@@ -1238,7 +1240,7 @@ def process(path):
     s = re.sub(r'<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', s)
     s = s.replace('</head>', ICONS + '</head>', 1)
     # page scripts carry a hash of their own content, so an edit reaches browsers without a VERSION bump
-    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid)\.js(?:\?[^"]*)?"',
+    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid|catalogue-data)\.js(?:\?[^"]*)?"',
                lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes().replace(b"\r\n", b"\n")).hexdigest()[:8]}"', s)
     s = re.sub(r'<script src="site.js[^"]*"></script>\s*', '', s)
     s = s.replace('</body>', f'<script src="site.js?v={VERSION}"></script>\n</body>', 1)

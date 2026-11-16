@@ -211,3 +211,15 @@ Work by AI language-model agents for WAINUT (credit lccompany), from the images.
   them 169 of 183). Of the whole cipher about 26 of 130 lines are transcribed (fraction 0.19). No page until images 3-6 are read.
 - Images not compared: PARES returned 429 to the checking session. The reviewer's 64 of 68 signs is the contributor's.
 - One key, one entry: K_P2 is `targets/perez1578`'s key; this is a different document, cross-referenced, no second key page.
+
+## 14 Nov 2026 full-texts audit
+
+- **1410,135** is now listed in `outcome.texts`: `donjuan/transcription_1410_135.txt`, `donjuan/decryption_1410_135.txt`
+  and the 1577 decipherment `donjuan/plaintext_1410_110.txt` were in the folder but not listed. Added
+  `donjuan/reading_1410_135.md` (the unspaced decode divided into words, no letter changed, with a table of the decoded
+  words against 1410,110) and `donjuan/translation_1410_135.md`. Count: 110 words, 95 read as decoded, 14 read with
+  1410,110 or the sense beside them, 1 hole in the decode (*tres*, from 1410,110). The image was not seen (PARES 429).
+- **1410,77** stays without texts. Its transcription (84 lines, 1,713 units, by the contributor's record) and the
+  decipherment 1410,111 are not in the folder, and PARES (records 3576845 and 3577649) answered HTTP 429 three times
+  in this session, so neither could be fetched or transcribed here. Blocker: the PARES images (rate limit on this
+  session), or the contributor's transcription files of 1410,77 and 1410,111.

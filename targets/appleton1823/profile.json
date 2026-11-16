@@ -149,6 +149,12 @@
    "kind": "reading",
    "what": "WAINUT contribution: read in part (appleton1823_reading.md, read_share 0.8): 3 holes (seven?, dollars?, 192).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Reading review: appleton1823_reading.md read as a sentence against the group-by-group decryption; coherent, three marked holes in 15 words (seven?, dollars?, 192); grade A recorded, state stays read in part. The frame was not re-opened.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -219,7 +225,13 @@
     "state": "read in part",
     "read_share": 0.8,
     "summary": "The Spanish constitutional government's secret plan, told to the US charge by the finance minister Yandiola in the last weeks of the Cortes at Cadiz: liquidating an account in England would produce [?seven] millions of [?dollars]; Lafitte (probably the Paris banker Jacques Laffitte) was [192] and had a part in England.",
-    "note": "read_share counted on the 15 words of the cipher: 3 holes (seven?, dollars?, 192)."
+    "note": "read_share counted on the 15 words of the cipher: 3 holes (seven?, dollars?, 192).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read appleton1823_reading.md against appleton1823_decryption.txt, group by group. The 18 groups make one clause that continues the clear sentence: \"[?seven] millions of [?dollars]; that Lafitte was [192], and that he had a part in England.\" 14 groups give their word from the table unchanged (la-fit-te joined), 648 millions rests on the clerk decode and slot recorded in NOTES section 3, not on the table value April; seven and dollars are slot-only and marked [?], 192 is open. Three holes in 15 words, so read in part (read_share 0.8). The frame was not re-opened in this pass."
+    }
    }
   ],
   "key_file": "../jqa/code_table.tsv",

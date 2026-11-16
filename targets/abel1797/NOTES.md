@@ -48,3 +48,18 @@ Verified for the maintainer before merging PR #563 (Brice Dudout). The PR carrie
 - **Prior art and duplicates.** The PR says the correspondence is not in leads.json: it is lead 2037 (Landesarchiv BW sweep, A 16 a Bü 696, 699, 701, 706), closed "read" on 3 Nov 2026 because every passage opened there had its decipherment written over it. The unglossed passages found here go beyond that vetting; the lead's status now points to this folder (the lead stays closed: its verdict is the glossed bulk; the unglossed passages are worked here).
 - **Outcome method.** "Key recovered based on adjacent plaintext" kept (K3 rebuilt from the glosses in the same file).
 - **Checkers.** `_check_profile.py abel1797`: valid. `_check_catalogue.py`: valid.
+
+## 14 Nov 2026: full-texts pass, bu702 and bu696 listed
+
+- **bu702.** Its material was in the folder but not listed: the 30 words of Bild 16 that trained K3
+  (`frozen/train_k3_b702_16_v2.tsv`) and the 24 held-out words (`transcription.txt`), each a ciphered word with its
+  gloss of the time. `decode_k3.py` decodes them with `key.tsv` (8 = σ, 8d = 0d as in PROTOCOLE-v3; doubles not
+  collapsed in the output) and writes `bu702_decryption.txt` (tokens, decode, gloss) and `bu702_gloss.txt`. 38 of 54
+  words agree with the gloss letter for letter once doubles are collapsed, with no other normalisation; this is a
+  stricter comparison than the protocol's score and over both sets, so it is not the 0.792 of the held-out test.
+  Listed as `not prose`: a list of ciphered words, the reports themselves are in clear and not transcribed. Bild 19
+  (named in documents[]) is not in the folder.
+- **bu696.** Nothing of its text is in the folder: the contributor's transcription files are present only as hashes
+  (`frozen/GEL-CLE.sha256`). Listed with `transcription_missing`; `bu696_held.md` says what the folder records.
+  Blocker: the contributor's files, or the images (the request rebuilt from the abbreviated address above returned
+  "Es konnte keine Verbindung zum Datenbankserver hergestellt werden" today).

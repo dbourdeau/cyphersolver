@@ -179,3 +179,11 @@ text and the reading here are the same wherever both give a value. Not yet check
 ## Independent reading by Brice Dudout (27 Oct 2026)
 
 Same letters, read separately the same day; the three word codes are identified (31 Administration, 137 and 168 Minister). See `dudout/README.md`.
+
+## 14 Nov 2026: reading review recorded
+
+Both readings of No. 23 were read as sentences against their decryptions (Claude, session of 14 Nov 2026): `reading.md`
+(read in part, read_share 0.855, four code groups open) and `dudout/reading.md` (word codes filled from Dana's table as
+Brice Dudout reports). Each is four coherent sentences with its completions marked; `reading_review` grade A recorded on
+each in `profile.json`. States unchanged. Dana's table sheet (PCC 89 vol. II p. 656) was not viewed here, so the first
+gap in Remaining gaps stays as it is.

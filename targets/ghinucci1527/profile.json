@@ -279,7 +279,8 @@
   {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 804 tokens, 200 types, la order 4: reading -2.135 per letter; random keys -3.26 (z 11.7); key annealed onto shuffled ciphertext best -2.365 (mean -2.397, z 14.9); annealer on the real text -2.342. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R8613 transcription and reading; R8589 and R8476 token-value alignments; key.tsv, key.md, r8476_key.tsv. R8590 (key source, first cipher line read against the interlinear) has no transcription file in the folder", "result": "partial"},
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): R8613 reads (A); the R8589 and R8476 files are key-building worksheets, relabelled not prose. Claim unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.", "result": "worked", "technique": ["statistical test"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.", "result": "worked", "technique": ["statistical test"]},
+  {"date": "2026-11-14", "kind": "verification", "what": "Full-texts pass: R8590 had no outcome.texts entry. No file of its cipher exists in the folder (9 Oct: first line read against the interlinear, values only kept in key.tsv). Tried the DECODE image anonymously: the full image is refused ('Insufficient permissions to see the full image'), only a 200x287 thumbnail is served. Opened L&P iv 5300 on British History Online and saved its entry, which quotes the deciphered Latin, as r8590_lp5300.md with the ten key.tsv rows citing R8590; entry listed as 'not prose' with transcription_missing.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "la", "file": "validation.tsv", "tokens": 804, "types": 200, "tokens_per_type": 4.02, "score": -2.135, "nulls": {"random keys": {"n": 200, "mean": -3.26, "sd": 0.096, "max": -3.049, "z": 11.7, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.397, "sd": 0.018, "max": -2.365, "z": 14.9, "p": 0.1429}}, "power": -2.342, "verdict": "pass", "notes": "claimed per-occurrence score -2.135; polyphony 0.0; 10 unread tokens left out; annealer on the real text from random keys reached -2.342"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -382,6 +383,17 @@
     "language": "la",
     "state": "not prose",
     "note": "A glyph transcription with token=value alignments and a glyph legend, used as key source; its decipherment is printed in State Papers VI 552 (reading audit, 22 Oct 2026)."
+   },
+   {
+    "doc": "worcester-R8590",
+    "label": "R8590, Ghinucci to [Wolsey], Valladolid, 15 Feb 1529 (key source)",
+    "transcription_missing": "Only the first cipher line was read token by token against the interlinear decipherment (9 Oct 2026); its values went into key.tsv and the token line was not saved. The DECODE full image (IMG_R8590_I39633_P1.jpg) is behind the DECODE login: an anonymous request on 14 Nov 2026 returns the placeholder 'Insufficient permissions to see the full image', and the earlier copy in img/ is git-ignored and not in this checkout. A logged-in fetch of the image, then a token transcription in the glyph names of key.md, would supply it.",
+    "decryption": "r8590_lp5300.md",
+    "contemporary": "r8590_lp5300.md",
+    "summary": "Sibling letter with an interlinear decipherment of the time on the page; L&P iv 5300 quotes its ciphered Latin ('non discederem ex Hispania quousque singula ab Urbe mihi et nuncio pontificis huc mittenda perbecta essent'). The file gives the calendar entry and the ten key.tsv rows that cite this letter as evidence.",
+    "language": "la",
+    "state": "not prose",
+    "note": "Key source, not a reading of ours: the calendar entry of L&P iv 5300 (the ciphered words in italics there) and the list of key values taken from the page; no token transcription of the letter is held."
    }
   ],
   "key_file": ["key.tsv", "key.md", "r8476_key.tsv"]

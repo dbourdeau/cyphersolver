@@ -55,3 +55,14 @@ transcription of ~1,500 signs from 1024-px scans, and the letter is read already
 
 Printed? Gachard, *Correspondance de Charles-Quint et d'Adrien VI* (1859), prints letters of this mission, but
 from Brussels/Vienna copies; not checked whether this letter is among them. Not found online.
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: `reading.md` is the contemporary decipherment (39/2). The only cipher typed anywhere is the first line
+  of passage A in the Check section above, with look-alike signs typed alike; it is not a transcription.
+- DECODE R1187, public record page: eleven images, no text attachment; full-size images need a login.
+- BNE: a search of bdh.bne.es for MSS/20212/39 returned a Cloudflare bot-check page (HTTP 403). Not pursued further
+  (no browser in this session). `decode/img/` is git-ignored and not in this checkout.
+- `outcome.texts[0].transcription_missing` records this. Unblocks it: the DECODE images or the BNE scans through a
+  browser, then a sign inventory for this hand (graphic signs and figures, about 1,500 by the Sept estimate) and a
+  transcription checked against 39/2.

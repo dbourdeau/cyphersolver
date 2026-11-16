@@ -184,7 +184,8 @@
   {"date": "2026-10-22", "kind": "transcription", "what": "Figures checked on the images where decode and sense disagreed: R785 'pertectly' is the writer's 10; R923 126 is 127 (7 over 6: the Queen); R923 554 your (4 over 5); R923 341 r a 382 497 = 'forrain [succour]', not Lasry's 'Lorrain support'. Other one-figure slips listed, not checked (texts/hm1645_corrections.tsv).", "result": "worked"},
   {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Readings written (texts/R785/R790/R923_reading.md, _en.md), aligned letter by letter with the decode (0.978, 0.980, 0.959 carried; b14_align.py); clean-sentence share on the bodies 0.841, 0.792, 0.84 (0.73, 0.54, 0.56 with the figures' own spellings, which the lexicon does not know). All three set read.", "result": "worked"},
   {"date": "2026-10-22", "kind": "reading", "technique": ["language-model scoring"], "what": "Coordinator's correction: the three readings rewritten in the figures' own spelling (one-figure slips as written), the modern-spelling text kept only as the _en.md files. Re-aligned with the decode: 0.992, 0.995, 0.984 of each reading carried; clean-sentence share on the bodies 0.645, 0.542, 0.52 (modern spelling 0.841, 0.792, 0.84): the drop is the modern word list's artefact on period spellings; all three kept read.", "result": "worked"},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "what": "Full-texts pass: outcome.key_file was not set although the contribution includes 'key extended or corrected'. Listed texts/hm1645_codes.tsv, the project's own key work of 22 Oct 2026 (the two corrected values 292 = by and 435 = next, and the nomenclator values proposed from the codebook's alphabetical bands). George Lasry's base key 'TNA SP 106' is a DECODE record file (DOC_R785_D3059) and is not copied into the repository.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -291,6 +292,7 @@
     "read_share": 0.938,
     "note": "24 Oct 2026: 93.8% of the words of texts/R923_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
-  ]
+  ],
+  "key_file": "texts/hm1645_codes.tsv"
  }
 }

@@ -66,3 +66,14 @@ transcribed in full.
   1584-11-15; place Madrid; status Decrypted (interlinear); cipher type simple substitution with nomenclator.
 
 Removed from the catalogue 21 Sept 2026 (id 247).
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: `plaintext.txt` is the contemporary interlinear decipherment, not the cipher. No file holds the figures.
+- DECODE R119, public record page: four images (I880-I883) and two attached images (D284 `211r.jpg`, D1354), no text
+  attachment. The file server gives a logged-out user a placeholder ("Insufficient permissions to see the full image").
+- The Vatican archive does not publish Segr. Stato, Spagna 31 online. The `img/` folder named above is git-ignored and
+  is not in this checkout.
+- So the cipher could not be transcribed in this session. `outcome.texts[0].transcription_missing` says so and what
+  unblocks it: the four images (DECODE login or the main checkout's `img/`). The cipher is in figures and the key sheet
+  is f. 211, so a transcription made then can be checked by decoding against the interlinear decipherment.

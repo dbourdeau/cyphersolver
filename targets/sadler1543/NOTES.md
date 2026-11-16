@@ -31,3 +31,11 @@ The DECODE images were not viewed and no key was rebuilt. The reading, the conte
 already exist, so nothing would be added. If the cipher system is wanted later, the letter together with the fol. 218
 decipher is a complete crib for Sadler's 1543 cipher. Bain vol. II has other decipherments of Sadler's letters from
 the same embassy.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R4924 was listed without a transcription. In order: (1) nothing in the folder; (2) the DECODE record
+(public API and record page) carries six images and no transcription; Clifford and Bain print the decipherment
+only; (3) the images could not be fetched: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. So `transcription_missing` is recorded, and the cipher is still
+unseen by the project. What unblocks it: the six images through a DECODE account; the f. 218 decipherment is then a
+full crib for the sign inventory. Nothing else changed.

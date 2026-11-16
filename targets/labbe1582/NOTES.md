@@ -123,3 +123,11 @@ Earlier claim that the writeup skill was absent: corrected. The attempted/unread
 ## George Lasry's report PDF (24 Oct 2026)
 
 Lasry sent his own report on Français 3198 as a PDF, extracted with `research/reading_audit/lasry_pdf_extract.py` into `lasry/report/`. It is an independent reading beside Angus Robinson's (PR #20), which stays the reading of record and keeps the method. Measured: whole text 0.994 (v10_relabel.measure), deciphered passages 0.982. His status: 7/7 pages transcribed; 6/6 cipher pages deciphered. Added as a second outcome.texts entry, state read.
+
+## 14 Nov 2026: decryption listed in outcome.texts
+
+The full-texts check (`docs/_texts.py`) reported "no decryption file" for George Lasry's entry: his Readable text by folio
+(`lasry/report/readable.md`, extracted unedited from his report PDF of 24 Oct 2026; see `lasry/report/ATTRIBUTION.md`) was listed
+only as the reading. It is now also listed as the entry's decryption. No text was changed and nothing was re-deciphered here.
+His report status: 7/7 pages transcribed; 6/6 cipher pages deciphered. Still open: the transcription of the cipher itself, which is not in the
+PDF or in this folder; it has been requested from George Lasry (`research/reading_audit/TRANSCRIPTIONS_WANTED.md`).

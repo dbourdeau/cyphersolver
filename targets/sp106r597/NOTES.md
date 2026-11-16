@@ -39,3 +39,8 @@ SP 106. Not part of this target.
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: transcription.txt is a clear instruction sheet; its prose without the digit tables: plain 0.706, explicit 0.882 (failures: the French example sentence, the digit run). Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+**14 Nov 2026, full-texts pass.** `outcome.texts` listed `transcription.txt` as transcription and as reading. Split:
+`cipher_groups.txt` now holds the cipher as written, i.e. only the code groups of the worked example (28 of Key A,
+13 of Key B with the 371 change-of-key group, and the run-on line), extracted from `transcription.txt` without
+change; `transcription.txt`, the whole clear sheet with the writer's syllables over the groups, stays the decryption
+and reading. Nothing was re-read on the image (DECODE full images need the login); doubtful groups keep their [?].

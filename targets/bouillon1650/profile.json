@@ -112,6 +112,12 @@
       "kind": "reading",
       "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.969 (whole), 0.955 (deciphered passages); state read.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-14",
+      "kind": "verification",
+      "what": "outcome.texts: George Lasry's Readable text by folio from his report PDF of 24 Oct 2026 (lasry/report/readable.md, extracted unedited; attribution in lasry/report/ATTRIBUTION.md) is now listed as the entry's decryption as well as its reading; it was listed only as the reading, so the full-texts check reported no decryption file. No text changed, nothing re-deciphered. His report status: 3/3 pages transcribed; 3/3 pages deciphered. The transcription of the cipher is not in the PDF or the folder (requested from him, research/reading_audit/TRANSCRIPTIONS_WANTED.md); that message stays open.",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -153,6 +159,8 @@
         "doc": "bouillon1650",
         "summary": "Spanish financial and military support for Bouillon: promised payments, eight armed frigates, and an advance toward Paris.",
         "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 3/3 pages transcribed; 3/3 pages deciphered. Measured 24 Oct 2026: whole text 0.969 (v10_relabel.measure, 442 words); deciphered passages alone 0.955 (239 words, 6 unread groups, 5 doubtful words; a bare ? counted as unread). State: read.",
+        "label": "George Lasry's decipherment (report PDF, 24 Oct 2026)",
+        "decryption": "lasry/report/readable.md",
         "reading": "lasry/report/readable.md",
         "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",

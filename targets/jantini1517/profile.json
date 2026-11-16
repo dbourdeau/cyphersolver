@@ -49,13 +49,17 @@
     ]
    },
    "length": {
-    "tokens": "unknown",
-    "unit": "symbols"
+    "tokens": 46,
+    "unit": "symbols",
+    "file": "t1127_cols.txt",
+    "measured": true,
+    "distinct": 39
    },
    "transcription": {
     "by": "llm from images",
-    "source": "not transcribed",
-    "image_quality": "poor"
+    "source": "DECODE images; the five cipher lines read once by an agent (t1127.txt, columns only in t1127_cols.txt), 21-22 Sept 2026",
+    "image_quality": "poor",
+    "notes": "Faded and torn leaf: the left halves of lines 1, 4 and 5 are nearly gone and several columns are marked doubtful; one reading, not adjudicated."
    },
    "read": "not read"
   }
@@ -202,6 +206,12 @@
    "kind": "sibling key",
    "what": "Rebuilt the Caprile 1519 key by seeded EM alignment of R1133 with its 1882 decipherment 7c: the alignment collapses (purity 0.33); the firm Caprile values pinned on Fantini give no Italian.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "what": "Full-texts pass: R1127 had no outcome.texts entry although its transcription (t1127.txt, 46 columns in t1127_cols.txt, measured) was in the folder. Applied Dudout's reading key (dudout/key_K3v2_reading.json) to it with a decoder written for the purpose (apply_key.py; it reproduces 40 of the 43 lines of dudout/R1126_decryption.txt exactly): the five lines give syllable strings that do not join into Italian words (R1127_decryption.txt). Listed as 'decoded, not read'.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -258,6 +268,16 @@
      "date": "2026-11-08",
      "note": "Read the marked decryption as Italian sentences: the lines build coherent, well-formed clauses about the Hungarian diet of 1518, the eight lords appointed to govern and the Cardinal of Esztergom and the palatine keeping power; sure, probable and restored words are marked in the reading (84.3% read), so it is raw and normalised only by the marks, and a few words at the ends of lines stay unresolved."
     }
+   },
+   {
+    "doc": "R1127",
+    "label": "R1127 p. 1, five cipher lines (Eger, 6 Mar 1518)",
+    "transcription": ["t1127.txt", "t1127_cols.txt"],
+    "decryption": "R1127_decryption.txt",
+    "language": "it",
+    "state": "decoded, not read",
+    "summary": "Five short cipher lines in a mostly clear letter on a faded, torn leaf. Under the key of R1126 they give syllable strings that do not join into Italian words.",
+    "note": "The 46 surviving columns decoded with dudout/key_K3v2_reading.json (apply_key.py, 14 Nov 2026) give 'bo da ro a … de qua n to e', 'ti a ‹k/7› mae ∅ ‹-/g› he g li de', '… i l pa re a ta do rep', '… la a mi ci pa n': no sentence. Blockers: too short (46 columns), the leaf is faded and torn with the left halves of three lines lost, the transcription is a single unadjudicated reading, and the DECODE and Vestigia images are not in the checkout to re-read it (DECODE full images need the login)."
    }
   ],
   "provenance": "mixed"

@@ -160,3 +160,12 @@ their users.
 
 The Berlin part of catalogue 564 (GStA PK, I. HA GR Rep. 39 Nr. 289 and Nr. 58) is not online. He has written to the
 archive for a quote.
+
+## 14 Nov 2026 full-texts audit
+
+The profile had no `outcome.texts`. Added, from what the folder holds:
+
+- **ff. 307r-v** (`read in part`): transcription `f307_runs.txt` (shape labels, pass 1) and `f307_keyA.md` (sign-level table against key A), decryption `f307_reading.tsv`. New: `f307_reading.md`, the word table set in order as running text with the clear context that `f307_runs.txt` notes (no letter changed; tentative words `[?..]`, open groups in brackets), and `f307_en.md`, its English with the same holes. Word count from the table: 68 cipher words, 41 firm (60.3%), 15 tentative, 12 open; the sign count stays 381 / 64.0% firm / 86.1% firm and tentative. The clear German between the runs is still only roughly noted, not transcribed.
+- **f. 304r** (`decoded, not read`): transcription `f304r_transcription.txt`. New: `f304r_decode_cribcore.txt`, the 14 values of the hand-crib core listed above (6=u S=n G=d V=e P=m 8=a Z=a L=c 3=h Y=s H=k T=t F=r C=p) applied to the transcription, every other sign a dot. It is shown for checking only: the crib words come out by construction, the rest does not read, and there is still no key.
+
+No change to `outcome.class`, `method` or `fraction_read`.

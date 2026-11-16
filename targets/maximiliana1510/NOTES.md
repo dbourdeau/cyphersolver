@@ -74,3 +74,16 @@ glosses; Penn Libraries (colenda 81431-p35718d9c) holds 1512 letters incl. 13 fr
 - [ ] print: web searches (27 Oct) found no edition of these reports or their cipher; Regesta Imperii XIV printed volumes stop before 1510 and the online database was not searched; Tomokiyo has no Maximilian 1510 page found.
 - [x] key-rebuild: de Burgo/de Laude table 43 rows (control 15/17 letters, 88%), Gattinara 31 signs (control 8/9 then 5/8), Fürst 15 signs; Latin LM used to rank consonant skeletons only.
 - [ ] retry: unread groups retried after each pass (five passes on the Δ. paragraph); a retry after the remaining glossed lines are aligned is still to do.
+
+## 14 Nov 2026 full-texts audit
+
+The profile had no `outcome.texts`. The folder holds no full transcription of any report: the work so far is the page survey, the keys, and worksheets on the unglossed residue. What exists is now listed, each file standing as both transcription and decode because each holds the signs and their values side by side:
+
+- de Burgo: `bt_alignment.md`, state `not prose` (alignment worksheet for the key);
+- de Laude: `reading_delaude.md`, state `decoded, not read` (26-4-10 l. 29 read by alignment with the gloss; the closing paragraph of 26-4-9 not read);
+- Fürst: `reading_veit.md`, state `not prose` (table of the 59 unglossed groups);
+- Gattinara: `reading_gattinara.md`, state `decoded, not read`.
+
+Not listed, and still documents without texts: **Colla (26-5-10)** and **the Modena letter (26-5-7)**. Neither has a line of signs or of gloss transcribed in the folder (the survey quotes a few gloss words only). They were not transcribed in this pass: both are graphic-sign ciphers in alphabets of their own with no sign inventory here (Colla about 66 lines, Modena about 14), and the AIS images were not fetched in this session.
+
+The target is classed "read in part" by "read from existing decipherment" with `fraction_read` 0.99, an estimate from line counts: the text that is "read" is the contemporary interlinear gloss on the images, and none of it is transcribed here. That is stated in `outcome.notes`; it means the full-texts list cannot show the reading itself until the glosses are typed.

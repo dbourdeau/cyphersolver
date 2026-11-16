@@ -335,6 +335,13 @@
    "kind": "control",
    "what": "Second integration check (PR #521, which adds KEY-1555.json, lexicon_1555.txt and HASHES-1555.md): SHA-256 of KEY-1555.json = 76ab7684...955e and of lexicon_1555.txt = 328049d3...d533, as stated in HASHES-1555.md (the PR text's e59da4f9... is the hash of the uncommitted source corpus). The lexicon yields 6,463 words after the script's filter, as stated. measure_1555.py re-run with python3 -I on transcription_05r.txt: M 0.7962, controls max 0.175 mean 0.0181, PASS, byte-identical to MESURE-1555-H.txt. Own longest-code-first decoder from KEY-1555.json reproduces decryption.txt exactly on all seven Y folios (0 differing characters); the 1-2 digit entries equal key.txt. Freeze order and corpus-to-lexicon derivation remain by the contributor's record (no external timestamp; corpus not committed).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "what": "Full-texts audit: the frozen system Y key (dudout/KEY-1555.json, longest code first) applied to the system X transcriptions of 03r and 09r with the marks dropped: no Italian word run on either page (e.g. 03r line 1 'rrmenidlisdagl ama', 09r line 1 'pelrrsnuioa euo oinaisr'). System X is not system Y with marks. No decryption of 03r or 09r exists or can be produced: no key.",
+   "result": "ruled out",
+   "technique": ["key matching"]
   }
  ],
  "outcome": {

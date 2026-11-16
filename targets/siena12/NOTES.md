@@ -104,3 +104,11 @@ the letter Naples -> Perugia on that basis.
 2. Could you send the CTTS transcription of no. 12 (sign sequence)? With it we can measure the share read,
    validate the key statistically and show the "watch it decipher" replay on the page.
 3. Which Claude model ran the annealing and the transcription (for the paper's profile)?
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: the report's reading, translation and key figure; not the CTTS transcription.
+- DECODE R4790, public record page: three images, no text attachment; full-size images need a login. No other online
+  copy of Concistoro 2308 is known here.
+- `outcome.texts[0].transcription_missing` replaces the empty `transcription` list. Unblocks it: George Lasry's CTTS
+  transcription (question 2 above), or image P2 at full size to transcribe against `key_lasry.jpg`.

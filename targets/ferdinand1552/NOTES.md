@@ -235,3 +235,10 @@ with NNNN = 2*(folio-10)+21 for a recto, +1 for a verso. Native size about 1434x
 - `scripts/check_marks.py` and `scripts/decode.py` need only the files here. `scripts/step_heldout_10r.py` and
   `scripts/step_machine_check.py` run from this folder and need numpy. `scripts/em.py` needs numpy. `fetch.sh`, `seg2.py`, `cluster.py`,
   `classify.py`, `strips.py` and `crop.py` need the images and are a record of the method.
+
+## 14 Nov 2026 full-texts audit
+
+The three sister letters had no entry in `outcome.texts`.
+
+- **13 Oct, ff. 9r-15v.** The folder already held machine labels for the cipher at the foot of f. 9r, on f. 9v and on f. 10r (`pass_A_machine.txt`, 57 lines) and the gloss of those pages (`marginal_gloss_9r_9v.txt`). The labels are copied unchanged to `transcription_13oct_ff9r-10r_machine.txt` and decoded with `key.tsv` to `decryption_13oct_ff9r-10r.txt`. The decode is Latin with scattered wrong letters and follows the gloss (9v.10-12 `istandemadidcompulsumiri quodhostesnuncuampotuihsent nempedetuaissiussalutecog`). Listed as `decoded, not read`: uncorrected machine labels, and these are the pages the key was built and tested on. ff. 10v-15v are not transcribed.
+- **18 Oct (ff. 37r-42v) and 22 Oct (ff. 43r-48v).** Nothing in the folder: no sign transcription, no typed gloss. Not done in this pass: 24 pages of graphic signs, each needing the segment, cluster and label pass of `scripts/` on fresh scans and then an eye check against the gloss; a transcription typed in one pass without that would not be faithful. Both stay as documents without texts. What would close them: the scans of ff. 37r-48v (Ambrosiana IIIF, `scripts/fetch.sh`), the label pass, and the margins typed as the contemporary decipherment.

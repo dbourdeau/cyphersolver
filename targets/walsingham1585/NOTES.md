@@ -183,3 +183,20 @@ groups (plot, judgment, her selfe, violent course, absent, attempt, traine, Stir
 plot, secrecy), 3 unresolved (`dudout/reading_R4844_signs.md`). Name code from the pairs' glosses
 (`dudout/name_codes.md`): **3 = the Queen / England** (texts/key.md has "France", M), 14 = Earl of Leicester, 27 = the
 Secretary, 37 = Scotland.
+
+## 14 Nov 2026: full-texts pass, R4838-R4839 listed
+
+`outcome.texts` had no entry for R4838-R4839. The folder holds no text of either letter: they were viewed on the
+DECODE images on 21 Sept and compared with CSP Scotland viii nos. 40 and 65, and nothing was saved. Tried today:
+the DECODE full images (refused without the login: "Insufficient permissions to see the full image"), and the
+calendar (British History Online: premium content; HathiTrust: Cloudflare bot check; archive.org
+`calendarofstatep0008vari`: lending only, HTTP 401). None reachable, so neither a transcription nor the calendar
+abstracts could be added.
+
+Done: `texts/R4838-R4839.md` lists the name numbers recorded for the two letters (section 1 above) with their values
+from `texts/key.md` and `dudout/name_codes.md`; the entry is `not prose` with `transcription_missing`. Open: the
+text of the two letters (blocker: needs the DECODE login, or a reachable copy of CSP Scotland viii).
+
+Note on the count: `fraction_read_source` counts "R4838/R4839 10" name-code units as read, while section 1 lists
+nine numbers for the two letters (3 and 6), two of them (13, 30) open in the key and 37 open until 9 Nov. The
+count could not be re-made without the pages; it is left as it stands and flagged here.

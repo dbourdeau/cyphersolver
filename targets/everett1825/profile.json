@@ -165,6 +165,12 @@
    "kind": "verification",
    "what": "Brice Dudout's parallel, independent reading published (https://bdudout.github.io/europe-chiffree/en/documents.html#everett-1825): same table frozen, checked first on the despatch of 8 Sept 1825 against Manning doc. 1133 (288/304 = 0.947, permuted p99 0.023); six lines 72 of 74 groups; pp. 1-6 and 17-18, 1,111 of 1,127 (0.986), with an Everett overlay (727 rather, 1201 g, 557 thro, 948 Russia; ../jqa/overlay_dudout.tsv). Passage A agrees (\"a language imposed upon him at present by particular circumstances\"); not compared group by group.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Reading review of the nine outcome.texts entries: WAINUT's three passages (everett1825_reading.md) and Brice Dudout's eight pages (dudout/texts/*_reading.md) read as sentences against their group-by-group decryptions; all coherent with scattered marked holes, grade A recorded on each. Word-level read_share measured on the deciphered passages of the eight pages (unresolved groups as holes): 1.0, 1.0, 0.969, 0.969, 0.988, 0.958, 0.991, 1.0; counting words given whole from sense as holes too, pp. 1, 2, 3 and 6 fall to 0.949, 0.917, 0.948, 0.944. The two readings of pp. 17-18 were not reconciled (WAINUT [?cause] / [125] against Dudout {measure} / {contrary}). Frames not re-opened.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -249,7 +255,13 @@
     "language": "en",
     "state": "read in part",
     "read_share": 0.904,
-    "summary": "Everett's notes of a conversation with the foreign minister Zea Bermudez on recognising the new American states: Zea's refusal is a language imposed on him by circumstances; the foreign ministers think him privately favourable but unable to risk his place against his rivals; the influence of Emperor Alexander is directed against recognition, and Russia's policy is put down to opposition to England rather than to legitimacy."
+    "summary": "Everett's notes of a conversation with the foreign minister Zea Bermudez on recognising the new American states: Zea's refusal is a language imposed on him by circumstances; the foreign ministers think him privately favourable but unable to risk his place against his rivals; the influence of Emperor Alexander is directed against recognition, and Russia's policy is put down to opposition to England rather than to legitimacy.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read everett1825_reading.md (passages A, B, C) against everett1825_decryption.txt. Every sentence is coherent English; syllables are joined as the decode gives them; words that rest on context or go against the table value are marked [?word], open groups [125], [126 in passage A], [258], and the three supplied endings [is], [ing], [ion] are bracketed. Holes are scattered, about one or two a sentence. read_share 0.904, so read in part. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0112-p1",
@@ -258,8 +270,16 @@
     "decryption": "dudout/texts/p01_0112_decryption.txt",
     "reading": "dudout/texts/p01_0112_reading.md",
     "language": "en",
-    "state": "read",
-    "summary": "Zea’s frankness may be natural to him, but he told Everett many things he could not believe himself – dissimulation, which public men must practise to some extent."
+    "state": "read in part",
+    "summary": "Zea’s frankness may be natural to him, but he told Everett many things he could not believe himself – dissimulation, which public men must practise to some extent.",
+    "note": "State set to read in part on 14 Nov 2026 by the strict count (a word given whole from sense is a hole, as REREAD_BRIEF rules for values proposed from context): read_share is that count, under the 95% bar. read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 59 words, 0 with an unresolved group ‹n›. 3 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.949.",
+    "read_share": 0.949,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 1 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 0 of 59 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0113-p2",
@@ -268,8 +288,16 @@
     "decryption": "dudout/texts/p02_0113_decryption.txt",
     "reading": "dudout/texts/p02_0113_reading.md",
     "language": "en",
-    "state": "read",
-    "summary": "Zea is said to have entered the cabinet through Ugarte, himself a creature of Russia; he soon broke with his patron and had him removed…"
+    "state": "read in part",
+    "summary": "Zea is said to have entered the cabinet through Ugarte, himself a creature of Russia; he soon broke with his patron and had him removed…",
+    "note": "State set to read in part on 14 Nov 2026 by the strict count (a word given whole from sense is a hole, as REREAD_BRIEF rules for values proposed from context): read_share is that count, under the 95% bar. read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 36 words, 0 with an unresolved group ‹n›. 3 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.917.",
+    "read_share": 0.917,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 2 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 0 of 36 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0113-p3",
@@ -278,8 +306,16 @@
     "decryption": "dudout/texts/p03_0113_decryption.txt",
     "reading": "dudout/texts/p03_0113_reading.md",
     "language": "en",
-    "state": "read",
-    "summary": "… on a mission to Turin, though Zea himself is thought to be committed to Russian policy. Portrait: prepossessing, rather above middle height, robust but inelegant, bald, clear complexion, good teeth – rare in Spain, where most men, the King first, ruin theirs by smoking."
+    "state": "read in part",
+    "summary": "… on a mission to Turin, though Zea himself is thought to be committed to Russian policy. Portrait: prepossessing, rather above middle height, robust but inelegant, bald, clear complexion, good teeth – rare in Spain, where most men, the King first, ruin theirs by smoking.",
+    "note": "State set to read in part on 14 Nov 2026 by the strict count (a word given whole from sense is a hole, as REREAD_BRIEF rules for values proposed from context): read_share is that count, under the 95% bar. read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 96 words, 3 with an unresolved group ‹n›. 2 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.948.",
+    "read_share": 0.948,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 3 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 3 of 96 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0114-p4",
@@ -289,7 +325,15 @@
     "reading": "dudout/texts/p04_0114_reading.md",
     "language": "en",
     "state": "read",
-    "summary": "He rolls his eyes so as to show the whites; tame face in silence, warm and frank in speech; a polished gentleman, fluent in French, at ease in English, less Spanish in air than any Spaniard Everett has met; liberal in conversation and abreast of the age, so that any illiberal notion he voices…"
+    "summary": "He rolls his eyes so as to show the whites; tame face in silence, warm and frank in speech; a polished gentleman, fluent in French, at ease in English, less Spanish in air than any Spaniard Everett has met; liberal in conversation and abreast of the age, so that any illiberal notion he voices…",
+    "note": "read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 162 words, 5 with an unresolved group ‹n›. 0 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.969.",
+    "read_share": 0.969,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 4 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 5 of 162 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0114-p5",
@@ -299,7 +343,15 @@
     "reading": "dudout/texts/p05_0114_reading.md",
     "language": "en",
     "state": "read",
-    "summary": "… must be held for a purpose, against his real principles. Said to share the anticlerical prejudices of liberals; works days and several nights a week, rare among the King’s servants; a remarkable man among the prime ministers of Spain and Europe – if he is not soon overthrown…"
+    "summary": "… must be held for a purpose, against his real principles. Said to share the anticlerical prejudices of liberals; works days and several nights a week, rare among the King’s servants; a remarkable man among the prime ministers of Spain and Europe – if he is not soon overthrown…",
+    "note": "read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 173 words, 2 with an unresolved group ‹n›. 0 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.988.",
+    "read_share": 0.988,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 5 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 2 of 173 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0115-p6",
@@ -308,8 +360,16 @@
     "decryption": "dudout/texts/p06_0115_decryption.txt",
     "reading": "dudout/texts/p06_0115_reading.md",
     "language": "en",
-    "state": "read",
-    "summary": "… by the strong rival party, he will vanish; if he lasts some years, his ministry will mark an epoch."
+    "state": "read in part",
+    "summary": "… by the strong rival party, he will vanish; if he lasts some years, his ministry will mark an epoch.",
+    "note": "State set to read in part on 14 Nov 2026 by the strict count (a word given whole from sense is a hole, as REREAD_BRIEF rules for values proposed from context): read_share is that count, under the 95% bar. read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 72 words, 3 with an unresolved group ‹n›. 1 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.944.",
+    "read_share": 0.944,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 6 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 3 of 72 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0120-p17",
@@ -319,7 +379,15 @@
     "reading": "dudout/texts/p17_0120_reading.md",
     "language": "en",
     "state": "read",
-    "summary": "The foreign ministers agree that Zea is personally favourable to recognition; a strong power must therefore act against it. He probably dares not risk his place, and if declaring for recognition would let his rivals…"
+    "summary": "The foreign ministers agree that Zea is personally favourable to recognition; a strong power must therefore act against it. He probably dares not risk his place, and if declaring for recognition would let his rivals…",
+    "note": "read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 113 words, 1 with an unresolved group ‹n›. 2 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.973.",
+    "read_share": 0.991,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 17 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 1 of 113 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    },
    {
     "doc": "m31-027-0121-p18",
@@ -329,7 +397,15 @@
     "reading": "dudout/texts/p18_0121_reading.md",
     "language": "en",
     "state": "read",
-    "summary": "… overthrow him, he may think it wise to dissemble. Alexander I is said to oppose recognition; Everett has not yet spoken to d’Oubril. Some ministers ascribe Russia’s policy to opposition to England rather than to the legitimacy the Emperor professes."
+    "summary": "… overthrow him, he may think it wise to dissemble. Alexander I is said to oppose recognition; Everett has not yet spoken to d’Oubril. Some ministers ascribe Russia’s policy to opposition to England rather than to the legitimacy the Emperor professes.",
+    "note": "read_share measured on 14 Nov 2026 on the deciphered passages of the reading («...»): 92 words, 0 with an unresolved group ‹n›. 3 more words are given whole from sense ([x], overlay grade S); counting those as holes too the share is 0.967.",
+    "read_share": 1.0,
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the established text of p. 18 against its group-by-group decryption (jqa table plus dudout/overlay.tsv). The deciphered passages run on from Everett's clear text as coherent English sentences; probable values are in braces, values from sense in square brackets, unresolved groups in ‹›, all inside the words, so the text is marked up but reads. 0 of 92 words carry an unresolved group. Frames not re-opened in this pass."
+    }
    }
   ],
   "key_file": "../jqa/code_table.tsv",

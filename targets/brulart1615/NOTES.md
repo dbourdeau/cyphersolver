@@ -157,3 +157,18 @@ cipher runs; the recorded 0.971 and 0.961 were measured on the whole reading wit
 
 Closed: R2785 and R2786 had no plaintext in the repository; closed 22 Oct 2026 (b17), both read, texts/.
 Closed 23 Oct 2026 (siblings): R2785 f. 83v rows 17-18 and f. 84r row 2, judged nulls (see the siblings block); the clear name "[?Manjeaux]" = Manseau; R2786 "[?Padavin]" = Padavin.
+
+## 14 Nov 2026: full-texts pass, transcription split from the reading, key file
+
+- `outcome.texts` listed `texts/R278x_reading.md` as the transcription. The reading files are the plaintext (clear
+  text plus the decipherment of each run). The cipher as written was already in the `figures_as_read` column of the
+  align files; it is now also in `texts/R2785_transcription.txt` (26 runs) and `texts/R2786_transcription.txt`
+  (14 runs), extracted without change, one line per run with folio and row. These are the cipher runs only (the
+  letters are otherwise clear); run 8 of R2785 was "not checked sign by sign" and runs with `...` carry signs not
+  transcribed, as in the align files. A single AI transcription of 22 Oct 2026, not checked by a person.
+- `outcome.key_file` was missing: `texts/key_checked.tsv` lists the key values stated in the `key_check` column of
+  the two align files, with the runs where each is stated, and the project's one addition (θ = null). It is not the
+  whole key: Tomokiyo's table (DECODE DOC_2785, cryptiana louisxiii.htm) is not in the folder. Two statements of the
+  align files do not agree and are kept as made: "est" is given for both 30 and 31, and 6 appears as "a" (R2786
+  run 3) and as "autre" (R2785 run 4, citing the key).
+- No reading, state or figure changed.

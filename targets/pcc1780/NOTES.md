@@ -78,3 +78,13 @@ Franklin, Jay).
 
 DECODE: not on DECODE (no record for PCC item 59). Nothing to correct; a new-record suggestion is not queued,
 since the pieces have no unread text.
+
+## 14 Nov 2026 full-texts audit
+
+The check asks for a transcription of the Livingston worksheet and for texts of the other three pieces.
+
+- **Access.** The NARA images are public: `https://catalog.archives.gov/medialz/partners/dc-metro/rg-360/M247/pcc_172591_0001/<172593+index>.jp2` answered 200 for images 100, 133, 134, 135, 313-316 (one request at a time).
+- **Livingston to Franklin, p. 171 (image 134): transcribed.** `transcription_livingston1781_p171.txt` holds the 14 lines of number groups of that page; `worksheet_english_livingston1781_p171.txt` the English written under them, line for line. One AI transcription from full-size crops, not checked by a person; doubtful digits marked `?`, struck groups `[x]`. The groups quoted above for the variant (149 397 194 338 / 190 19 250.50.416.631 606 19 658 / 495 456.250 597, "is less than one Month's continuance of the War will cost France") are confirmed on the image.
+- **Livingston, the other five pages** (pp. 325-328 = images 313-316; p. 172 = image 135; image 133 is the docket "Letter to Doct. Frankling in Cypher"): fetched, legible, about 14 lines each with many strike-outs; **not transcribed** in this pass. Open; nothing blocks it but the work.
+- **Thomson, 19 May 1780 (image 100): not transcribed.** On the microfilm image the ink of this note is so blotted that the digits of most of the 17 groups cannot be told apart at full size (e.g. the first three groups could be read 16428 / 16509 / 1125 or otherwise). A transcription from this image would be guesses. Blocker: illegible on this scan; Columbia's copy in Jay's hand (ldpd:500107, not online) or a better image would give it.
+- **Committee to Jay, 16 June 1780 (images 101-103) and the resolves of 1781-82 (16 pages):** not attempted in this pass. They stay documents without texts.

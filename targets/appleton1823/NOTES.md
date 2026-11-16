@@ -102,3 +102,10 @@ Queued as a `jqa` follow-up for the maintainer (not applied here). The most impo
 - `appleton1823_transcription.txt`, `appleton1823_decryption.txt`, `appleton1823_reading.md`
 - `decode.py`: applies `../jqa/code_table.tsv` to any of the four letters in this code; `--controls` runs the
   wrong-key controls (standard library)
+
+## 14 Nov 2026: reading review recorded
+
+The reading was read as a sentence against `appleton1823_decryption.txt`, group by group (Claude, session of 14 Nov 2026).
+It is one coherent clause continuing the clear text; the three holes (seven?, dollars?, 192) are marked. `reading_review` grade A
+recorded in `profile.json`; the state stays read in part (read_share 0.8). No file of the reading was changed and the
+frame was not re-opened.

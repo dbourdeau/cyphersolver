@@ -231,6 +231,12 @@
    ],
    "what": "Pass 2: gein = sein, Leuchtenburg, name sign = Herzog Johann Wilhelm; reading file measured: 381 signs, 86.1% give sense (64.0% firm).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "Full-texts audit: outcome.texts added. f. 307: shape transcription, key-A table and word table listed; the word table set out as running text with the noted clear context (f307_reading.md) and translated with the same holes (f307_en.md); 68 cipher words, 41 firm, 15 tentative, 12 open. f. 304r: transcription listed with f304r_decode_cribcore.txt, the 14 crib-core values of NOTES applied mechanically (not a reading; no key).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -254,6 +260,37 @@
     "note": "key A, the alphabet Duke Johann Friedrich II, Grumbach and Matthes Ditmarsch 'miteinander genommen' (Loc. 4414/04 ff. 279r-280r, copies ff. 287r-288r, 305r-306r)",
     "date": "1566",
     "source": "HStA Dresden 10024 Loc. 04414/04 ff. 279-306"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "f307",
+    "label": "ff. 307r-v, Ernst von Mandelslo, '... 64': the cipher runs, read with key A",
+    "transcription": ["f307_runs.txt", "f307_keyA.md"],
+    "decryption": "f307_reading.tsv",
+    "reading": "f307_reading.md",
+    "translation": "f307_en.md",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.603,
+    "summary": "The writer has received the sealed articles of the appointment (Bestallung) in which the cavalry captains are all named, and sealed articles for the foot soldiers; the colonels' names are to be named; Johann von Holle's appointment; Dornburg and probably Leuchtenburg; something sent by Duke Johann Wilhelm.",
+    "note": "Cipher runs inside a clear German letter. f307_runs.txt is the shape transcription (pass 1); f307_keyA.md the sign-level table against key A; f307_reading.tsv the word-by-word decryption. 68 cipher words: 41 firm (read_share), 15 tentative, 12 open; by signs 381, firm 64.0%, firm and tentative 86.1% (measure307.py). The clear text between the runs is only roughly noted, so the sentences are carried by the runs and those notes together.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "The word table read in order as running text with the noted clear context (f307_reading.md): the runs of the first half of 307r build clauses (versiegelte Artikel der Bestallung; die Rittmeister ... irer aller Namen darin benennt; der Obersten Namen benennt sein mügt); from R8 on the runs are short and holed. Rests on f307_reading.tsv; the scans were not reopened in this session."
+    }
+   },
+   {
+    "doc": "f304r",
+    "label": "f. 304r, fully enciphered letter, 3 March 1553: not solved",
+    "transcription": "f304r_transcription.txt",
+    "decryption": "f304r_decode_cribcore.txt",
+    "language": "de",
+    "state": "decoded, not read",
+    "summary": "Not read. A fully enciphered letter dated in clear 'Datum 3. Martij Anno 1553', with a postscript; a few Latin-script words (antworten, mir) stand between the signs.",
+    "note": "No key. The decryption file is the hand-crib core of NOTES (14 sign values from und, -en, machen, sachen, knecht, ersparen) applied to the transcription, shown for checking: the crib words come out by construction and most other words do not read. The annealing runs have not converged (best -2.9 per character; NOTES). Not counted as read."
    }
   ]
  }

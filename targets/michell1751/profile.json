@@ -95,7 +95,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-09-19",
-  "last_date": "2026-10-12"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -209,6 +209,12 @@
     "language-model scoring",
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "The printed text of PC 8 no. 5263 (pp. 576-577) copied into texts/R1957_pc5263.md from the archive.org text, corrected against the page images, and translated into English (texts/R1957_en.md). The translation is of the printed concept; the cipher decode is unchanged (decoded, not read).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -274,8 +280,8 @@
     "doc": "R1957",
     "label": "R1957, Frederick II to Michell, Berlin, 28 Dec 1751 (PC 8 no. 5263)",
     "reading_review": {"grade": "B", "by": "Claude (reading audit)", "date": "2026-10-22", "note": "Graded on the print, not the decode: PC 8 no. 5263 is a continuous French letter, summarised in NOTES (\"What the letter says (from the print)\") at the 19 Sept 2026 session; the alignment shows the dispatched cipher follows the concept with minor deviations. The cipher decode itself does not read (0% clean sentences in the blind decode, docs/_check_reading.py)."},
-    "note": "The reading is the printed text, Politische Correspondenz 8 (1882) no. 5263, pp. 576-577, edited from the concept; it is not transcribed in the repository. The project's own decode of the cipher is decoded, not read: the blind decode with the frozen cabinet key covers about a third of the groups and does not build sentences, and align_R1957.txt is the print aligned group by group with \"?\" in the unresolved blocks.",
-    "reading": "https://archive.org/details/politischecorres08freduoft",
+    "note": "The reading is the printed text, Politische Correspondenz 8 (1882) no. 5263, pp. 576-577, edited from the concept; copied into texts/R1957_pc5263.md on 14 Nov 2026 (archive.org text corrected against the page images) and translated in texts/R1957_en.md. The project's own decode of the cipher is decoded, not read: the blind decode with the frozen cabinet key covers about a third of the groups and does not build sentences, and align_R1957.txt is the print aligned group by group with \"?\" in the unresolved blocks.",
+    "reading": ["texts/R1957_pc5263.md", "https://archive.org/details/politischecorres08freduoft"],
     "language": "fr",
     "transcription": [
      "transcription.txt",
@@ -288,7 +294,8 @@
      "key1751/align_R1957.txt",
      "https://archive.org/details/politischecorres08freduoft"
     ],
-    "summary": "Frederick II to his secretary Louis Michell in London: he agrees that the King of Sardinia will join the Austro-Spanish treaty, has learned that Vienna and St Petersburg plan to make Prince Charles of Lorraine King of Poland, and asks Michell to find out what London knows, how long the English ministry's pacific system will last, and to report to the King alone. The text is printed from the minute in the Politische Correspondenz, vol. 8 (1882), no. 5263."
+    "summary": "Frederick II to his secretary Louis Michell in London: he agrees that the King of Sardinia will join the Austro-Spanish treaty, has learned that Vienna and St Petersburg plan to make Prince Charles of Lorraine King of Poland, and asks Michell to find out what London knows, how long the English ministry's pacific system will last, and to report to the King alone. The text is printed from the minute in the Politische Correspondenz, vol. 8 (1882), no. 5263.",
+    "translation": "texts/R1957_en.md"
    }
   ],
   "key_file": ["key1751/key_cabinet_v2_final.tsv", "key1751/key_cabinet_v2_curated.tsv"]

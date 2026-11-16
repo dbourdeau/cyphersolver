@@ -22,16 +22,16 @@
     "partial": false
    },
    "length": {
-    "tokens": 20,
+    "tokens": 712,
     "unit": "symbols",
-    "measured": false,
-    "file": "R4248.md"
+    "measured": true,
+    "file": "R4248_transcription.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "DECODE page-crops",
     "image_quality": "fair",
-    "notes": "About 20 cipher lines (2 on P2, ~11 on P3, ~9 on P5) in a second fr. 3053 cipher, not Mâcon's. The cipher was not transcribed sign by sign; the contemporary clear decipherment on f. 86 (P8-P9) was transcribed (about 85 % of words secure, a few [?])."
+    "notes": "14 Nov 2026: the cipher transcribed sign by sign from the Gallica scans (ark btv1b90601432, views 157-158) into R4248_transcription.txt: 26 lines (12 on f. 85r, 14 on f. 85v), 712 signs measured, 8 marked doubtful; a single AI transcription, not checked by a person, checked by decoding (R4248_decode.md). Sept 2026: about 20 cipher lines (2 on P2, ~11 on P3, ~9 on P5) in a second fr. 3053 cipher, not Mâcon's; then the contemporary clear decipherment on f. 86 (P8-P9) was transcribed (about 85 % of words secure, a few [?])."
    }
   }
  ],
@@ -125,7 +125,10 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R4248.md (clear-text summary and the transcription of the f. 86 contemporary decipherment); no sign-level transcription of the f. 85 cipher exists in the folder",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-14", "kind": "access", "what": "Looked for a transcription of the f. 85 cipher (audit section I): none in the folder, none on DECODE R4248 (nine images, no text; full-size DECODE images need a login). Fetched BnF fr. 3053 from Gallica through openapi.bnf.fr IIIF (ark btv1b90601432): f. 85r = view 157, f. 85v = view 158, f. 86 = view 159. The server answered HTTP 500 and dropped connections for a while (views above 162 do not exist: the first guess of the view numbers was wrong), then served the views at full size.", "result": "worked"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Transcribed the cipher sign by sign from the full-size scans with shape labels (R4248_transcription.txt): 26 lines, 712 signs, 8 doubtful. By Claude (session of 14 Nov 2026), not checked by a person.", "result": "worked"},
+  {"date": "2026-11-14", "kind": "verification", "what": "Checked the transcription by decoding it with one value per label, values from Tomokiyo's second fr. 3053 table where a sign matched it and from the f. 86 decipherment otherwise (R4248_decode.md): all 26 lines come out as French and follow the decipherment. Holes: one word of L16 ('aaiette'), the ringed x where x and 'pape' are expected, two pairs of look-alike signs not told apart (barred oval r/h; reversed c for c and o), a sign with no letter value standing for the cardinal de Lorraine. The decode differs from the September transcription of f. 86 in nine places (e.g. 'dessus vous, qu'est et le scavoir et le pouvoir'; 'par vostre moien reordonner les conditions'; 'toute capitulation de qui ilz vouloient entierement dependre'; 'ung seur fondement'); f. 86 itself was not re-read. No key file written: the values are Tomokiyo's table and the contemporary decipherment, the method stays 'read from existing decipherment'.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -159,8 +162,9 @@
    {
     "doc": "R4248",
     "label": "Unsigned letter to Montmorency, [1536], BnF fr. 3053 ff. 85-87, decipherment on f. 86 (DECODE R4248)",
-    "decryption": "R4248.md",
-    "summary": "The writer, after a day in the country with 'monsieur le cardinal Carafe(?)', urged him that everything, above all the conduct of the war, should pass through Montmorency's hands and that anything else was 'fumee et vent'; the cardinal seemed persuaded, and said that the cardinal of Lorraine, in his capitulation with the Pope, had conceded things never thought of before, which they meant to undo. The decryption is the transcription of the contemporary clear decipherment on f. 86; the cipher of f. 85 was not transcribed sign by sign.",
+    "transcription": "R4248_transcription.txt",
+    "decryption": ["R4248.md", "R4248_decode.md"],
+    "summary": "The writer, after a day in the country with 'monsieur le cardinal Carafe(?)', urged him that everything, above all the conduct of the war, should pass through Montmorency's hands and that anything else was 'fumee et vent'; the cardinal seemed persuaded, and said that the cardinal of Lorraine, in his capitulation with the Pope, had conceded things never thought of before, which they meant to undo (so the transcription of f. 86; the decode of the cipher has 'reordonner'). The decryption is the transcription of the contemporary clear decipherment on f. 86 (R4248.md); since 14 Nov 2026 the cipher of f. 85 is transcribed sign by sign and decoded (R4248_decode.md), which differs from that transcription in nine places listed there.",
     "translation": "R4248_en.md",
     "language": "fr",
     "read_share": 0.983

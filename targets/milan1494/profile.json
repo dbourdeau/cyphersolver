@@ -195,6 +195,15 @@
    ],
    "what": "Check of the contributor's held-out test and revision (AI agent): SHA-256 of transcription-frozen.tsv, score.py and key-46dec7b.json as in PREREGISTRATION.md, the key equal to key.json at his commit 46dec7b; score.py read and re-run: 0.8382, 0.7745, shuffles best 0.3790 mean 0.2859; an own scorer written from the protocol gives 0.8382 and 0.7745 (0.8855 against his gloss reading; best of 300 own shuffles 0.362); own_decode.py on the revised files gives the key output of reading.txt for all 283 and 91 cipher words and the revised tier counts. Not checked: the reference against a copy of Desjardins, and the transcription of doc. 114, the shape sorts and the gloss reading against the images (the ASF server reset the connection on the evening of 14 Nov).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Audit section J: both reading files read as sentences and a reading review recorded for each entry (grade A for coherence; state stays read in part, read_share 0.367 and 0.407). The contributor's English of Alamanni's letter abridges the clear text, so the whole Italian letter was translated sentence for sentence with the same holes (alamanni_en.md). No image looked at in this pass.",
+   "result": "worked",
+   "technique": [
+    "contextual inference"
+   ]
   }
  ],
  "outcome": {
@@ -288,6 +297,51 @@
     "read_share": 0.56,
     "summary": "Alamanni privately urges Piero de' Medici that the King of Naples's plan to turn Genoa is the one remedy, must not be delayed and must be entered only with enough preparation, that name 22 will never trust the King, and that Piero must tell no one; on the last leaf, Lodovico's three threats, the second unread.",
     "note": "Reading review, 2026-11-14 (project (maintainer session for Daniel Bourdeau, at the integration of issue #589), not the author of the reading): decoded, not read; no grade. Read as Italian against the English, sentence by sentence. Of about seventeen clauses that carry cipher words, about half hold (voltare Genova; farlo a tempo; a manifesta vittoria; sotto mantello; si fidi mai del re; volessi la guerra per mettere la città in travaglio; di serrarci la via) and the rest break: '[22] [?] [?] [?] et consigli buono in bocha'; 'tu qui(?) tu havessi(?) a schoprire', whose sense runs against the 'sotto mantello' that follows; 'vedessi di ferla(?) netta(?)'; 'vuol tanta grandeza(?) sua' between two gaps; 'con l'armata [?] Genova'; and on c. 221v the three threats, where the verb of the list and the second threat are unread ('da poter [?] [?] [?]', 'assai tenuto [?] ce la calerà(?) [?]'). The clear hand around the cipher has open gaps in most sentences of cc. 220r-221r, so the cipher clauses cannot be closed from their context. The English is not a translation of the whole: c. 220r and the end of c. 221v are summarised in brackets, sentences are cut with [...], and words are supplied that the Italian does not carry ('[I do not hold]', 'the sense wants something like harm us'). 51 of 91 cipher words (56.0%) are free of a choice between sign values; 9 are unread, 2 doubtful, 17 chosen by sense. To become a reading: a collated clear text, the nine unread words, and a full English. Earlier reader's note: Read the Italian and the English as sentences: the cipher passages fit the clear text around them, with 9 of 91 cipher words unread, 2 doubtful (ce la calerà) and 17 chosen by sense; 51 words are free of a choice between sign values. 'sotto mantello' now comes from the ll sign."
+   },
+   {
+    "doc": [
+     "map74-112-115"
+    ],
+    "label": "Ridolfi to Piero de' Medici, Milan, 16, 21 and 30 October 1494",
+    "transcription": "aaymeloglu/ridolfi-transcription.tsv",
+    "decryption": "aaymeloglu/reading.txt",
+    "reading": "aaymeloglu/ridolfi-reading.md",
+    "translation": "aaymeloglu/ridolfi-reading.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.367,
+    "summary": "Ridolfi reports from Milan as Charles VIII comes through Lombardy: the King received at Pavia castle by the Duchess Bona; the Pavia citizens' protest against the milling duty; on the day the death of Gian Galeazzo was announced, the King's night visit to Bona and Duchess Isabella's refusal to appear; opinion in Milan that Florence cannot resist the French.",
+    "note": "Reader's note (the project, 14 Nov 2026): Read the Italian and the English of the three letters as sentences: they hold together and fit the dated events. But only 104 of 283 cipher words are free of a choice between sign values, 85 were chosen by sense, and the contributor's own blind calibration got 74% of glossed words right; A connected proposal with a small secure part.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the Italian and the English of the three letters (aaymeloglu/ridolfi-reading.md) as sentences against the word list of reading.txt. Every sentence with cipher in it holds and translates; the holes are two unread groups in doc. 113 and a handful of words marked (?), most of them in the clear hand. The grade is for coherence only: 104 of 283 cipher words are free of a choice between sign values and 85 were chosen by sense, so the state is read in part (read_share 0.367), and the connected text is the contributor's proposal with a small secure part."
+    }
+   },
+   {
+    "doc": [
+     "map74-96"
+    ],
+    "label": "Alamanni to Piero de' Medici, Vigevano, 26 April 1494",
+    "transcription": "aaymeloglu/alamanni-transcription.tsv",
+    "decryption": "aaymeloglu/reading.txt",
+    "reading": "aaymeloglu/alamanni-reading.md",
+    "translation": [
+     "aaymeloglu/alamanni-reading.md",
+     "alamanni_en.md"
+    ],
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.407,
+    "summary": "Alamanni privately urges Piero de' Medici that the King of Naples's plan to turn Genoa is the one remedy, must not be delayed and must be entered only with enough preparation, that name 22 will never trust the King, and that Piero must tell no one; on the last leaf, Lodovico's three threats, the second unread.",
+    "note": "Reader's note (the project, 14 Nov 2026): Read the Italian and the English as sentences: the cipher passages fit the clear text around them, with 11 of 91 cipher words unread and 19 chosen by sense; 37 words are free of a choice between sign values.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the Italian whole letter (aaymeloglu/alamanni-reading.md) as sentences and translated all of it (alamanni_en.md). The cipher passages are short runs inside clear sentences and fit them (voltare Genova; tutto questo male; volessi la guerra per mettere la citta in travaglio; di serrarci la via); the unread cipher is in three runs (11 of 91 words: after name 22 on c. 220v, and two of Lodovico's three threats on c. 221v), so most sentences hold. The clear hand has its own gaps, more than the cipher. The grade is for coherence only: 37 of 91 cipher words are free of a choice between sign values, state read in part (read_share 0.407)."
+    }
    }
   ],
   "key_file": [

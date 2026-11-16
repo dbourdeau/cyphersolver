@@ -47,3 +47,17 @@ None in the text: Parisi prints the whole letter. Not re-checked sign by sign he
 
 - No. 5 is its own entry because its key (Escrivà no. 1) is not the key of any other letter in the volume. No credit
   of yours applies to it.
+
+## 14 Nov 2026: translation, and the transcription question (audit sections I and J)
+
+- `texts/no5_en.md`: English translation of Parisi's printed text (2020, Appendice, pp. 173-174), sentence for
+  sentence, with a header listing his emendations of the cipher. The Italian text stays in his article (linked by
+  DOI, not copied). The cipher part is marked from the leaf: clear from the opening to "me havea declarato", cipher
+  from "del matrimonio" to "qual mio bene proprio", clear again from "Et perché longamente ho parlato".
+- Ciphertext transcription: not made. f. 5r was opened again (`targets/esp318/full/f005r.jpg`): about 22 lines of
+  graphic signs with Latin-letter nomenclator groups, and a stain down the middle that covers part of every line.
+  The sign table (Parisi 2004, appendix II, "Alfabeto n. 1") is in the repository only as extracted text
+  (`targets/garcilaso1498/lit/parisi2004.txt`), in which the glyphs are lost. Recorded in `profile.json` as
+  `transcription_missing`. To unblock: the printed alphabet table of Parisi 2004 (the PDF or the pages), then a
+  line-by-line transcription checked on Parisi's 2020 text.
+- "Remaining gaps" above stands: none in the text; the sign-by-sign check is still not done, for the reason just given.

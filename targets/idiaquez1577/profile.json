@@ -253,6 +253,18 @@
    "kind": "verification",
    "what": "Integration check of PR #593 and fold of targets/donjuan1577 into this folder as donjuan/ (one key, one entry): heldout.py rerun (0.802 words, 0.892 characters; 200 controls at most 0.189 / 0.478); both SHA-256 values match; own second decoder from donjuan/key_frozen.json identical to the contributor's decryption; the key agrees with this folder's key_frozen.tsv on 30 of 31 shared syllabary signs (26 differs) and with perez1578/key.tsv on 64 of 69. PARES returned 429, so no image comparison; the pairing 1410,77 / 1410,111 is by the contributor's record.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "Full-texts audit: 1410,135 listed in outcome.texts (transcription, decryption, contemporary decipherment 1410,110, all already in donjuan/); the unspaced decode divided into words (donjuan/reading_1410_135.md, no letter changed) and translated (donjuan/translation_1410_135.md). 110 words: 95 as decoded, 14 with 1410,110 or the sense beside them, 1 hole.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "Full-texts audit: 1410,77 and its decipherment 1410,111 are not in the folder; PARES records 3576845 and 3577649 requested three times in this session, HTTP 429 each time. Neither a transcription nor a decryption of 1410,77 could be made; the document stays without texts.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -322,6 +334,26 @@
      "by": "independent AI language-model agent (blind review)",
      "date": "2026-11-13",
      "note": "The five sentences build sense in 16th-century chancery Spanish, with one or two marked holes or guesses each; 4 lines of image 2 (68 signs) were read by shape before opening the transcription and 64 signs agree. Only 26 of about 130 cipher lines are read, and acá llaman is the weakest guess."
+    }
+   },
+   {
+    "doc": "ags_est_1410_135",
+    "label": "AGS Estado 1410,135, Don John of Austria to the ambassadors in Genoa, Namur, 7 Aug 1577 (cipher copy; decipherment 1410,110)",
+    "transcription": "donjuan/transcription_1410_135.txt",
+    "decryption": "donjuan/decryption_1410_135.txt",
+    "reading": "donjuan/reading_1410_135.md",
+    "translation": "donjuan/translation_1410_135.md",
+    "contemporary": "donjuan/plaintext_1410_110.txt",
+    "language": "es",
+    "state": "read",
+    "read_share": 0.99,
+    "summary": "Don John expects Charlemont, an important stronghold on the French frontier with much powder and artillery, to fall to the States; he is negotiating to take it by agreement within three days and will then go there, leaving a German garrison at Namur, unless Luxembourg calls him elsewhere.",
+    "note": "Read from the contemporary decipherment 1410,110 (transcribed in the folder); the decryption is the frozen key applied to the 15 cipher lines. 110 words in the word-divided reading: 95 read as decoded, 14 read with the 1577 decipherment or the sense beside them, 1 hole in the decode (tres, from 1410,110). read_share counts caba[?]da (cada, not in 1410,110) as the one word not carried by either. The 4-line cipher heading is not transcribed.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "The decode was divided into words and read as one long sentence against the 1577 decipherment 1410,110: same letter clause by clause, raw in spelling (nnmaco, toudarla, vrme), with 'que cada dia' in the cipher only. Rests on the contributor's transcription; the image was not reachable (PARES 429)."
     }
    }
   ],

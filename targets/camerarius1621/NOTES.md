@@ -168,3 +168,11 @@ and the survey script (IIIF, one request at a time, ~1 s apart, User-Agent WAINU
 
 The Hague letters of 1630 (targets/camerarius1630, Riksarkivet) use a different code: six group numbers occur in both lists and all six
 differ in value (487, 722, 2095, 2472, 2503, 3143). Separate entries.
+
+## 14 Nov 2026: full-texts pass, the series listed
+
+The document `series` (n.129-210 other than n.194) had no entry in `outcome.texts`. Nothing of those letters is
+transcribed in this folder. It is now listed as `not prose` with `transcription_missing`; `series_survey.md` sets
+out what is recorded about the series (the survey above and the `key.tsv` rows taken from n.129, n.133, n.149,
+n.152, n.172, n.193, n.196). Open, as before: the letters themselves are transcription jobs (images public; not
+undertaken). n.194 is unchanged.

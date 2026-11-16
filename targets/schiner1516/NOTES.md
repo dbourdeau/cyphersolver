@@ -109,6 +109,12 @@ England". L&P adds only the monogram for *Vestrae Majestati*. In other letters o
 signs, e.g. no. 585 "Chiffer, bedeutet Ch." (Chièvres) and "Chiffer, bedeutet E." (Eboracensis). That suggests a
 nomenclator of name signs alongside a letter cipher, but it is not established for this letter.
 
+## 14 Nov 2026: no transcription of the cipher is possible from here
+
+The audit asked for a transcription file. The folder holds Büchi's printed text and the 14 deciphered stretches, not
+the cipher; neither Büchi nor L&P prints the signs; the Cotton volume is not digitised (above, "Shelfmark"). The
+profile records `transcription_missing` with this reason; the gap is the one already listed below (a BL imaging order).
+
 ## Remaining gaps
 
 - the 88-word reading is Büchi's and cannot be checked sign by sign against the cipher - blocker: needs-physical-access; the leaf (now f. 129, old f. 131) is not digitised, a BL imaging order is needed
