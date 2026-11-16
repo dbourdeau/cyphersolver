@@ -283,6 +283,15 @@
       ],
       "what": "Doc. 633: the dictionary-cover control (blind633/shuffle.py, as blind/shuffle.py): real 0.6507; seed 20261112 0/5,000 as good (max 0.5943); seed 7 0/5,000 (max 0.5787) (blind633/shuffle_out.txt).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "control",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Doc 627 (c. 635r, IIIF A0001353), the key's source, documented after review of PR #685: image re-fetched (md5 d54b593a...), the contemporary decipherment at the foot of the page transcribed as written (doc627/decipherment_627.txt), and the frozen key_corsi_w17 run once on the 10 Nov (not blind) transcription of the cipher block (doc627/decode_627_w17.txt): 179 tokens, 2 not in the key; output identical to the 10 Nov decode. Not an independent control: the key was built from this page.",
+      "result": "worked"
     }
   ],
   "outcome": {
