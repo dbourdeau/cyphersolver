@@ -22,7 +22,7 @@ def build_html(version=''):
         return ', '.join(out)
     items = ''.join(
         f'<article class="corr" id="c{i}">\n<h3><time datetime="{c["date"]}">{when(c["date"])}</time></h3>\n'
-        f'<p>{e(c["what"])}</p>\n<dl class="gloss">\n<dt>Pages</dt><dd>{pages(c["pages"])}</dd>\n'
+        f'<p>{e(c["what"])}</p>\n<dl class="gloss">\n' + (f'<dt>Pages</dt><dd>{pages(c["pages"])}</dd>\n' if c["pages"] else '') +
         f'<dt>Reported by</dt><dd>{e(c["reported_by"])}</dd>\n<dt>Why it was wrong</dt><dd>{e(c["why"])}</dd>\n</dl>\n</article>\n'
         for i, c in enumerate(rows, 1))
     page = (

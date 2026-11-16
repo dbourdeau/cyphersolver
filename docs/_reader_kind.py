@@ -25,6 +25,7 @@ KINDS = ('model', 'person assisted by model', 'person')
 MODEL = re.compile(r'claude|opus|sonnet|fable|haiku|codex|gpt|gemini|openai|anthropic|\bllm\b|\bai\b|\bmodel\b|agents?\b', re.I)
 # a personal name at the start: "Brice Dudout", "B. Dudout", "Andrew Beling"
 NAME = re.compile(r"^(?:[A-Z][a-zà-ÿ]+|[A-Z]\.)\s+(?:(?:de|van|von|da|di)\s+)?[A-Z][a-zà-ÿ]+(?![a-z])")
+BARE_MODEL = re.compile(r'^(Claude|GPT|Gemini)([ -](Opus|Sonnet|Fable|Haiku))?( [\d.]+)?$', re.I)
 NOT_A_NAME = re.compile(r'^(Claude|Open\s?AI|AI|Author)\b', re.I)
 
 
@@ -82,6 +83,12 @@ def counts():
         ind = r['independent'] if 'independent' in r else classify(r.get('by'), r.get('note'))[1]
         if ind is False:
             c['not independent'] += 1
+        elif ind is True:
+            c['independent'] += 1                 # the review's own text says so; nothing shows it was checked
+        else:
+            c['independence not stated'] += 1
+        if BARE_MODEL.match((r.get('by') or '').strip()):
+            c['bare model name'] += 1             # "Claude Opus 5.5" and nothing else
     for f in (ROOT / 'targets').glob('*/profile.json'):
         try:
             if (json.loads(f.read_text(encoding='utf-8')).get('outcome') or {}).get('human_check'):

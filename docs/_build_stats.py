@@ -55,8 +55,9 @@ def outside(folders):
     return any(CR.provenance_of(_PROFILES.get(f.lower())) in ('contributed', 'mixed') for f in folders)
 
 def checked(folders):
-    """True when a person has checked the row's reading without a model: outcome.human_check (a passage read against
-    the image without AI help), or a reading_review whose reader is a person alone (docs/_reader_kind.py).
+    """True when a person is on record as having checked a passage of the row's reading: outcome.human_check (a passage
+    read against the image without AI help), or a reading_review whose reader is only a person's name (docs/_reader_kind.py;
+    the record does not always say whether a model helped). The checks cover single signs, digits or lines, not whole readings.
     'independent verification' in outcome.verification is not counted: the records use it loosely (16 Nov 2026)."""
     import _reader_kind as RK
     for f in folders:
@@ -260,7 +261,8 @@ def build(items):
     n_checked = sum(1 for it in texts if checked(it['folders']))
     import _reader_kind as RK
     rk = RK.counts()
-    lines.append(f'<div class="sb-big"><b>{n_checked}</b><em>of {len(texts)} readings checked by a person</em><span>{len(texts) - part} texts are obtained in full and {part} in part. For {n_checked} of them a person, without a model, read a passage against the image or reviewed the reading<i class="lg-only">. Of {rk["reviews"]:,} reading reviews on record, {rk.get("model", 0):,} are by a model, {rk.get("person assisted by model", 0)} by a person with a model and {rk.get("person", 0)} by a person alone. The rest are proposals until someone confirms them: <a href="method.html#review">how readings are reviewed</a>, <a href="contributors.html#verify">check one</a></i>.</span></div>')
+    n_targets = len({f for it in texts if checked(it['folders']) for f in it['folders'] if checked([f])})
+    lines.append(f'<div class="sb-big"><b>{n_checked}</b><em>of {len(texts)} readings have a passage checked by a person</em><span>{len(texts) - part} texts are obtained in full and {part} in part. The {n_checked} rows are {n_targets} targets in which a person looked at one or more passages on the images or reviewed one text; the checks cover single signs, digits or lines, not whole readings<i class="lg-only">. Of {rk["reviews"]:,} reading reviews on record, {rk.get("model", 0):,} are by a model, {rk.get("person assisted by model", 0)} by a person with a model and {rk.get("person", 0)} carry only a person&rsquo;s name. The other rows have been checked only by models or by their author: <a href="method.html#review">how readings are reviewed</a>, <a href="contributors.html#verify">check one</a></i>.</span></div>')
     lines.append('</div>')
     lines.append(f'<p class="sb-lede">{total} entries<span class="lg-only">, one per row of the results tables</span>, each classed by <a href="glossary.html">how its text was obtained</a>. <span class="lg-only">{n["na"]} turned out not to be ciphers or could not be reached and {n["active"]} are in progress, which leaves {attacked} attempted; every percentage here is of those {attacked}.</span><span class="sm-only">Percentages are of the {attacked} attempted.</span></p>')
     lines.append(f'<p class="sb-foot">Counted from the results tables in the <a href="https://github.com/dbourdeau/cyphersolver#results">repository README</a> by <code>_build_stats.py</code>; regenerated {datetime.date.today():%d %B %Y}. Rows are documents, not correspondents.</p>')
