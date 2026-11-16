@@ -2,7 +2,7 @@
 
 Contributed by Andrew Beling, with AI agents, 15 November 2026. Status: read, with nine groups supplied from the
 sense (section 3). No printed text or period decipherment of the coded part was found (section 5).
-The site page and the ledger rows are left to the maintainer.
+Written up: docs/crawford1814.html.
 
 ## 1. The document
 
