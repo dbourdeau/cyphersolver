@@ -1,6 +1,6 @@
 # Biermann to Lindenow in Sweden, 1675: the Lindenow cipher of the Biermann copybook (Unsolved Catalogue no. 465)
 
-Status: read in part. Key rebuilt on one letter from the clear letter beside it (no key sheet, no decipherment). Contributed by Tomáš Pavuk, working with OpenAI GPT-6 (Codex) and Claude (Anthropic); issue #679. Folder prepared 16 Nov 2026.
+Status: in progress (22 February read in part; 11 and 18 January and 12 April decoded, not read). Key rebuilt on one letter from the clear letter beside it (no key sheet, no decipherment). Contributed by Tomáš Pavuk, working with OpenAI GPT-6 (Codex) and Claude (Anthropic); issue #679. Folder prepared 16 Nov 2026.
 
 ## What this folder is, and what it is not
 
