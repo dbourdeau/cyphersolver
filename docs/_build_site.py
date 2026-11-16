@@ -14,6 +14,7 @@ It also stamps the dates: the hero dateline, the head meta tags, the index cards
 of findings.html all carry the day the finding landed, from _dates.json, which this script maintains.
 """
 import os, re, sys, pathlib, html, json, hashlib, datetime
+from urllib.parse import urlencode
 import _images as IMG
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
@@ -123,9 +124,12 @@ DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read(?:
                      r'\s*(?:\d{1,2}\s+)?(?:' + '|'.join(MONTHS) + r'|Sept?)?\s*\d{4}$', re.I)
 
 SHARED_PAGES = ('index', 'findings', 'contributors', 'contribute', 'corrections')      # pages of the ledger as a whole, not of one write-up
+SHARED_AUTHOR = 'Daniel Bourdeau, Brice Dudout, George Lasry and contributors'
+def shared_author(slug):
+    return SHARED_AUTHOR if slug in SHARED_PAGES else 'Daniel Bourdeau'
 def meta_html(p, rec, old, slug=None):
     """Rebuild the hero dateline, keeping whatever else the page put on that line."""
-    author = (p.get('author') if p else None) or ('Daniel Bourdeau and contributors' if slug in SHARED_PAGES else 'Daniel Bourdeau')
+    author = (p.get('author') if p else None) or shared_author(slug)
     keep = []
     for part in re.split(r'\s*(?:&middot;|·)\s*', old or '')[1:]:
         flat = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', part))).strip()
@@ -757,6 +761,12 @@ def glossary_html():
         f'<h2 id="terms">Terms</h2>\n<dl class="gloss">\n{terms}</dl>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
 
 
+def contest_url(slug):
+    """The Verification issue form (.github/ISSUE_TEMPLATE/verification.yml) with its title and Write-up field filled
+    in for this page: a GitHub issue form takes a field's value from the query parameter named after the field id."""
+    return f'{REPO}/issues/new?' + urlencode({'template': 'verification.yml', 'title': f'Verification: {slug}',
+                                              'page': f'{BASE_URL}{slug}.html'})
+
 def footer_html(current):
     order = sorted([p for p in PAGES if p['slug'] not in ('solved', 'top25')], key=lambda p: p['y'])
     prev = nxt = None
@@ -768,11 +778,13 @@ def footer_html(current):
     links = ['<a href="index.html">Overview</a>']
     if prev: links.append(f'<a href="{prev["slug"]}.html" rel="prev">&larr; {prev["label"]} {prev["year"]}</a>')
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
+    if cur and current not in SURVEYS:
+        links.append(f'<a href="{html.escape(contest_url(current))}" rel="noopener">Contest or verify this reading &#8599;</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
-    author = cur.get('author', 'Daniel Bourdeau') if cur else 'Daniel Bourdeau and contributors' if current in SHARED_PAGES else 'Daniel Bourdeau'
+    author = cur.get('author', 'Daniel Bourdeau') if cur else shared_author(current)
     footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')

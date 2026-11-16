@@ -88511,6 +88511,154 @@
     "verdict": "open"
    },
    "repository": "mnl"
+  },
+  {
+   "id": 2937,
+   "counted": true,
+   "year": 1884,
+   "date": "20 Aug 1884 (heading 'Cairo, August 20th, 10.30 P.M.' as printed in Hake; the sweep's first reading '30 Aug' was a misread of the OCR)",
+   "title": "Egerton (Cairo) → Gordon (Khartoum), numeric cipher telegram that Gordon could not read: 23 six-digit groups printed in Hake's edition",
+   "correspondents": "Egerton at Cairo (sender per Gordon's journal; the telegram itself is unsigned in the print) → General C. G. Gordon, Khartoum",
+   "place": "Cairo",
+   "language": "English",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Printed: A. E. Hake (ed.), The Journals of Major-Gen. C. G. Gordon, C.B., at Kartoum (London 1885), Book I, p. 50, footnote 67 (archive.org journalsmajorge00hakegoog; Gutenberg 49224). Original: Gordon's journal MS with the telegram pasted in, location not verified (British Library, unconfirmed)",
+   "folio_note": "23 groups of 6 digits, headed 'Cairo, August 20th, 10.30 P.M.', printed in full in the footnote; Gordon: 'Egerton's cipher telegram, which I cannot decipher'; a clear note written on its back is also printed",
+   "cls": "C",
+   "status": "Seen on the printed page (page image of the archive.org scan, 14 Nov 2026) and in the OCR of two editions. Digits: 445737 905309 185115 417291 552676 792996 271381 511906 689363 945242 226739 648255 102037 626054 535222 672318 277535 134971 467430 203151 804960 483289 681510. No decipherment in the book: Gordon says Stewart took the cipher books. Plaintext may survive in the Foreign Office / Egypt papers (not searched). Not in the repo (known.py 445737, Khartoum, Egerton: no match). Not on DECODE (2 searches). Related and distinct: PRO 30/57/4/119 (Wolseley, 19 Oct 1884) is already in the catalogue; Durham SAD.250/1/550 (Gordon's Arabic-numeral note) is a lead of the north-east literature sweep.",
+   "why": "A British Foreign Office numeric code of 1884 in use on the Khartoum line; Gordon's journal names two more such telegrams (Wolseley's and Nubar/Baring's) that he also could not read, so the code groups could be compared if the originals are found.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from the printed edition during the 14 Nov 2026 British and South African sweep (research/sweep_2026-11-14_africa_british_southafrica/); printed page viewed, original not seen",
+   "verify": "Find the plaintext (FO 78 Egypt / FO 141 Cairo telegrams of 30 Aug 1884, Egypt No. 12-25 (1884) blue books, Kitchener papers PRO 30/57/4); locate Gordon's journal volumes and the pasted telegrams; try other printed FO numeric groups of 1884.",
+   "links": [
+    {
+     "label": "Hake edition, archive.org",
+     "href": "https://archive.org/details/journalsmajorge00hakegoog"
+    },
+    {
+     "label": "Gutenberg 49224",
+     "href": "https://www.gutenberg.org/ebooks/49224"
+    }
+   ],
+   "seen": "image",
+   "source": "archive.org printed-source grep (British and South African sweep)",
+   "prior_art": "open (checked 14 Nov 2026: Hake edition text, repo known.py, DECODE keyword search, one web search; Tomokiyo, Lasry and the Blue Books not searched)",
+   "needs_archive_scan": "no",
+   "access_note": "ciphertext is in print and open on archive.org and Gutenberg; the code is not published",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-14",
+    "by": "dbourdeau, claude (main session)",
+    "seen": {
+     "kind": "scan",
+     "where": "archive.org journalsmajorge00hakegoog (Hake, Journals of Major-Gen. C. G. Gordon at Kartoum, 1885), page image of printed p. 50 (leaf n105 of the scan) and the footnote text beside it on p. 51 (leaf n106), viewed 14 Nov 2026; Gutenberg 49224 text compared",
+     "extent": "One telegram: 23 groups of six digits in three printed lines, headed 'To General Gordon, Cairo, August 20th, 10.30 P.M.'",
+     "cipher": "Printed in full in footnote 67 on p. 50: 445737-905309-185115-417291-552676-792996-271381-511906-689363-945242-226739-648255-102037-626054-535222-672318-277535-134971-467430-203151-804960-483289-681510. Read off the page image (first 14 groups at 3x magnification) and matches the Gutenberg text; the archive.org OCR garbles several digits. Gordon writes beside it that he cannot decipher it because Stewart took the cipher book. A clear note on its back, signed by Kitchener at Debbeh, 29 Aug 1884, is printed under it and is a separate message, not a decipherment."
+    },
+    "prior_art": {
+     "decode": "decode_search.py: Egerton (hits are only BL Egerton MSS of 1646-58), Gordon, Kitchener, Debbeh, Soudan, Sudan: no relevant record.",
+     "tomokiyo": "All cryptiana pages fetched and searched by the north-east sweep for Gordon, Khartoum, Sudan, Mahdi, Egypt, and GL.htm (Lasry's keys) searched again 14 Nov 2026 for the same words: no entry.",
+     "lasry": "Web searches 14 Nov 2026 (Lasry, HistoCrypt, Cryptologia with Gordon, Khartoum, Foreign Office code): only unrelated Lasry papers; nothing on the 1884 Khartoum telegrams.",
+     "edition": "Hake (first edition p. 50-51 and Gutenberg text, whole book searched for cipher): prints the ciphertext and no plaintext; Gordon says he could not read it. Hake's footnote 66 prints a clear relay of an Egerton message of 30 Aug via Kitchener (Debbeh, 31 Aug) with a different text. TNA PRO 30/57/4 (Kitchener papers, item-level catalogue, 4/54-123 read) lists decodes only for Kitchener's own telegrams and says decodes are filed 'in a separate cover'; no item for this Egerton to Gordon telegram. The government Blue Books of 1884 were not opened.",
+     "literature": "Web searches for the 20 August 1884 Egerton to Gordon telegram, its Blue Book and any decipherment (Hansard Aug-Sept 1884, TNA Discovery, Spectator Sept 1884): nothing that prints or deciphers it."
+    },
+    "key_check": "No key is known. Gordon says the Foreign Office cipher book went with Stewart; the six-digit groups suggest a numeric code book, which is not in this repository or in print as far as searched. The Nile Expedition table SAD.250/1/81 at Durham is a different system (two-digit) and was not tried.",
+    "duplicates": "known.py '445737', 'Egerton', 'Debbeh': hits are only unrelated Egerton MSS entries and the Durham Gordon lead 2939; DECODE 0; catalogue 356 (Wolseley to Gordon, 19 Oct 1884, PRO 30/57/4/119) is a different telegram.",
+    "searches": [
+     {
+      "query": "Hake Journals Gordon first edition p. 50-51 and Gutenberg 49224: Egerton cipher telegram 445737, whole text searched for cipher and decipher",
+      "result": "Telegram printed in footnote 67 with no decipherment; the nearby clear message on the back is a separate Kitchener note of 29 Aug 1884."
+     },
+     {
+      "query": "TNA Discovery PRO 30/57/4 items 54-123 (Kitchener papers, Aug-Oct 1884), item descriptions read",
+      "result": "Describes Kitchener's telegrams and says decodes sit in a separate cover; no item matches an Egerton to Gordon cipher of 20 Aug."
+     },
+     {
+      "query": "web: Egerton Gordon 20 August 1884 cipher telegram deciphered Blue Book Egypt No.",
+      "result": "Nothing prints or deciphers it; Blue Book number not found."
+     },
+     {
+      "query": "decode_search.py Egerton Gordon Kitchener Debbeh Soudan Sudan",
+      "result": "No relevant DECODE record."
+     }
+    ],
+    "verdict": "open"
+   },
+   "repository": "bl"
+  },
+  {
+   "id": 2939,
+   "counted": true,
+   "year": 1884,
+   "date": "1884 (Hijri year digits at the foot not clearly legible at native size: read as 1302 by the sweep, 1300-1302 possible; day read as 16). Covering letter Palmer to Grenfell, 15 Nov 1886",
+   "title": "Gordon at Khartoum, note in two-digit Arabic-numeral cipher addressed to the Mudir of Dongola (found 1886 among papers from Dongola)",
+   "correspondents": "Charles G. Gordon, Khartoum → the Mudir of Dongola (addressee line read from the image as 'to His Excellency Mustafa Pasha, Mudir of Dongola'; name not checked elsewhere)",
+   "place": "Khartoum (siege of Khartoum, Mar 1884 - Jan 1885)",
+   "language": "Arabic (plaintext presumed; a few Arabic words are written in clear between the groups)",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Durham University Library, Archives and Special Collections, Sudan Archive, Wingate Papers, SAD.250/1/550 (covering letter SAD.250/1/549)",
+   "folio_note": "One leaf (SAD.250/1/550): about 14 lines of two-digit Arabic-Indic number groups, roughly 80-95 groups (not counted exactly), a few groups stacked or overwritten as corrections, the addressee and a few words in Arabic script in clear, a date and signature at the foot. The covering letter 549 is a clear English letter",
+   "cls": "B",
+   "status": "Attempted 14 Nov 2026 and closed from the evidence (write-up: gordonmudir1884.html, targets/gordonmudir1884/): transcribed (119 groups, 26 distinct values, digits 1-9 in a 7 x 6 grid); the two Arabic columns of the Durham table SAD.250/1/81, as read, do not read it; a letter-substitution attack with controls and crib dragging on the closing groups find nothing. Palmer's covering letter (SAD.250/1/549, 15 Nov 1886) says a Dongola employee, Khalil Ibrahim, 'has the key'. No decipherment is written on the leaf or known; not on DECODE. Left: comparison material that is not digitised (TNA PRO 30/57/4/75-109 at Kew, Durham SAD.101/15), an Arabic reader to check the groups and clear words, a better image of SAD.250/1/81.",
+   "why": "A cipher in Gordon's own hand from the Khartoum siege, in a two-digit numeric code with plain words mixed in (cribs), plus a candidate key table in the same collection; Hansard 14 Nov 1884 records 'four Arabic cipher letters' reaching Debbeh from Gordon.",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored 14 Nov 2026 in the north-east Africa sweep (research/sweep_2026-11-14_africa_north_east_literature/); leaf viewed on Durham's IIIF images (one request returns at most 1024 px per side; region requests give native detail)",
+   "verify": "Transcribe the groups from the IIIF image; read the Arabic words and date at the foot; test the SAD.250/1/81 table and the Palmer letter's key remark; compare the four 'Arabic cipher letters' of Nov 1884 and the Kitchener telegrams TNA PRO 30/57/4/77-78 ('use Arabic cipher'), 4/89-109 (Arabic script)",
+   "links": [
+    {
+     "label": "Durham finding aid, Wingate Papers (SAD.250/1/549-550 in the range 528-606)",
+     "href": "https://reed.dur.ac.uk/xtf/view?docId=ark/32150_s1f4752g79m.xml"
+    },
+    {
+     "label": "Digitised SAD.250/1/528-606 (Mirador viewer; leaves 549, 550)",
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t2mqj72p714z.html"
+    },
+    {
+     "label": "IIIF manifest",
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mq/j7/t2mqj72p714z/manifest"
+    },
+    {
+     "label": "Hansard 14 Nov 1884, Gordon's messenger with four Arabic cipher letters",
+     "href": "https://api.parliament.uk/historic-hansard/commons/1884/nov/14/egypt-events-in-the-soudan-general-gordon"
+    }
+   ],
+   "seen": "image",
+   "source": "Durham Sudan Archive sweep",
+   "prior_art": "open (checked 14 Nov 2026: DECODE keyword search for Gordon, Khartoum, Dongola, Wingate, Hicks, Sudan Archive: 0 records; Tomokiyo: all 295 cryptiana pages fetched and searched, no Gordon, Sudan or Khartoum cipher page; Lasry/HistoCrypt: web search found only the Biafran ciphers paper, nothing on Sudan; Durham catalogue entry gives no decipherment; Hake's printed edition of Gordon's Khartoum journals mentions undecipherable cipher telegrams but was only searched by text, not for this leaf; repo known.py: no hit for SAD.250, Mudir, Dongola cipher other than the Kitchener leads 1159 and 356)",
+   "needs_archive_scan": "no",
+   "access_note": "Images are free on Durham's IIIF server (no login, plain curl works); the Mirador link above shows all 96 leaves of SAD.250/1/528-606",
+   "vetting": {
+    "date": "2026-11-14",
+    "by": "claude sweep agent (sweep_2026-11-14_africa_north_east_literature), then re-viewed and checked against Hake by the main session, 14 Nov 2026; contributor not named",
+    "seen": {
+     "kind": "scan",
+     "where": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mq/j7/t2mqj72p714z/manifest, canvases SAD.250/1/549 and SAD.250/1/550, viewed 14 Nov 2026; native-resolution region of the upper left of 550 also viewed",
+     "extent": "One leaf, 13 rows of 7 two-digit groups (about 90 groups) plus a last short numeric row and a few groups inside the closing lines",
+     "cipher": "Re-viewed 14 Nov 2026 at 1000 px (whole leaf) and 1024 px crops of the upper, middle and lower thirds, and the date at native size. Two-digit Arabic-Indic numeral groups in 13 rows of 7, several groups overwritten or stacked under a fraction-style bar (corrections); an addressee line in Arabic script in clear ('To His Excellency Mustafa Pasha, Mudir of Dongola'); a few clear Arabic words between the rows; the closing lines are clear Arabic with a few number groups inside them; date at the foot and Gordon's signature. No plaintext or decipherment is written on the leaf; covering letter 549 does not decipher it. The Hijri year digits are not clearly legible (1300-1302)."
+    },
+    "prior_art": {
+     "decode": "decode_search.py: Wingate, Dongola, Hicks, Gordon, Khartoum, Sudan Archive, Egypt, Abyssinia, Ethiopia, Morocco: 0 records.",
+     "tomokiyo": "All 295 pages linked from cryptiana.web.fc2.com/code/crypto.htm fetched and searched for Gordon, Khartoum, Sudan, Mahdi, Egypt: nothing on this note.",
+     "lasry": "Web search (HistoCrypt, Lasry, Africa, Sudan): only 'The Biafran Ciphers' (1960s); nothing on Gordon.",
+     "edition": "Durham finding aid prints no text. Hake, Journals of Major-Gen. C. G. Gordon at Kartoum (Gutenberg 49224) read at Appendix U (Mahdi's letter, 'letters from General Gordon to the Mudir of Dongola'): it prints Gordon's plain-Arabic notes to the Mudir of 8 Aug and 28 Sep 1884 and says the Mahdi seized a cipher to Mustafa Jawer dated 22 Sep 1884 (contents not printed). No numeric cipher to the Mudir and no decipherment of this leaf is printed there; the leaf is not that seized item (it was found at Dongola, per Palmer 1886) but is the same correspondent and period. Calendars of Sudan telegrams and Wingate's Mahdiism not searched.",
+     "literature": "Web searches for a Gordon numeral cipher, Mudir of Dongola and Khalil Ibrahim found nothing; Hansard 14 Nov 1884 notes four Arabic cipher letters from Gordon via Kitchener's messenger."
+    },
+    "key_check": "SAD.250/1/81 (Nile Expedition cipher table with Arabic-numeral columns) is a candidate key and was seen but not tested; Palmer's letter says Khalil Ibrahim had the key.",
+    "key_in_volume": "SAD.250/1/81 (digitised in unit SAD.250/1/59-96): viewed 14 Nov 2026 at 1000 px: a pencil table of the 26 Latin letters against two-digit numbers (first number column starts A=34, B=68, C=82) with Arabic-letter columns and further letter columns headed by officers' names (Wolseley and Kitchener among them). A candidate key family for a two-digit Arabic-numeral cipher; NOT tested against the leaf. Palmer's covering letter says Khalil Ibrahim of Dongola 'has the key'.",
+    "duplicates": "known.py: SAD.250, SAD.600, Mudir, Dongola, Mustafa Yawer, Khalil Ibrahim, Gordon; hits only lead 1159 (Kitchener telegrams, TNA) and catalogue 356/Wolseley to Gordon 19 Oct 1884 (TNA PRO 30/57/4/119), which are different items.",
+    "verdict": "open"
+   },
+   "ark": "",
+   "scored": "vetted",
+   "repository": "tna",
+   "outcome": "attempted, open"
   }
  ]
 }
