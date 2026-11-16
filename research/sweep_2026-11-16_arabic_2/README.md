@@ -1,0 +1,43 @@
+# Arabic cipher sweep 2 (16 Nov 2026)
+
+This sweep was run by a Claude Code session (Claude Opus 5.5) for Daniel Bourdeau, in three parallel passes. It continues
+`research/sweep_2026-11-15_arabic/` on the gaps that sweep left open.
+
+**State: not merged.** `candidates.json` holds 4 rows, and `merge.py` (dry run) reports 4 new. Nothing is in
+`research/leads.json` or `catalogue.json` yet; the merge waits for the owner's go-ahead.
+
+| Notes | Area | Rows | Vetted |
+|---|---|---|---|
+| [`part_A.md`](part_A.md) | Spain, Portugal, Maghreb | 1 | 1 |
+| [`part_B.md`](part_B.md) | Durham (Abbas Hilmi II HIL/64-65, Sudan Archive), Egypt-Sudan | 1 | 0 |
+| [`part_C.md`](part_C.md) | Printed catalogues of Arabic manuscripts (about 60 volumes) | 2 | 0 |
+
+## Rows
+
+| Row | Item | Date | State |
+|---|---|---|---|
+| 0 | Sacromonte Lead Book 17, the "Libro mudo" (Granada) | c. 1595-97 | vetted open; plate fol. 3b seen at 1,313 x 1,317 px from the open-access edition (van Koningsveld & Wiegers 2024), which calls it undeciphered and possibly meaningless; the other cipher plates are not online |
+| 1 | Durham, Sudan Archive SAD.250/1/550: Gordon to Mustafa Yawar, Mudir of Dongola, about 120 Eastern Arabic two-digit numerals | 1884 | seen; not vetted, because a possible decode (TNA PRO 30/57/4/26) could not be opened |
+| 2 | Gotha, Pertsch no. 2507: an end leaf with "eine Notiz in Geheimschrift" | copy 1727, note 1764/65? | catalogue only (Gotha viewer behind a bot check) |
+| 3 | Berlin, Sachau 218, f. 231a: four lines of cipher after a Karshuni prayer | 19th c. | catalogue only; counts only if the plaintext is Arabic |
+
+## Negative results
+
+- **Durham HIL/64 and HIL/65:** all 546 canvases paged; no Arabic cipher.
+- **Torre do Tombo:** all 74 units of the sixteenth-century Moroccan Arabic letters checked; all in clear.
+- **BNE catalogue:** the Arabic and aljamiado manuscripts searched, through the catalogue's guest JSON API.
+- ***Hespéris*:** every volume 1921-1959 read.
+- **Printed catalogues:** about 60 volumes grepped.
+
+Method note: join hyphenated line ends before grepping the djvu text of a catalogue. The Gotha hit was missed on
+15 Nov for that reason.
+
+## What is left
+
+- **Spain:** PARES (Simancas, ACA, AHN) returned 429 and then reset the connection.
+- **Blocked by bot checks or the network:** BDH, RAH, CCBAE, Hispana, BVPB, ANOM, the Moroccan national library (BNRM)
+  and CSIC Simurg.
+- **Other unopened items:** the TNA catalogue (Gordon's decode); the viewers at Gotha, DDB, Leiden and Qalamos; and
+  Decourdemanche, Journal asiatique 1899, on the cipher of the Barbary Turks (key lead).
+
+**Merged 16 Nov 2026 under renumbered ids:** Sacromonte Lead Book 17 = catalogue 2941; Gotha Pertsch 2507 = lead 2942 (unvetted); Sachau 218 = catalogue 2943; the Gordon note was not merged (duplicate of catalogue 2939).
