@@ -28,7 +28,7 @@ def write_feed(pages, dates, plain):
             '<title>Cyphersolver: new write-ups</title>\n'
             '<subtitle>Historical ciphers: what has been deciphered, by whom and how.</subtitle>\n'
             f'<link href="{BASE}feed.xml" rel="self"/>\n<link href="{BASE}"/>\n<id>{BASE}</id>\n<updated>{newest}</updated>\n'
-            '<author><name>Daniel Bourdeau and contributors</name></author>\n' + '\n'.join(entries) + '\n</feed>\n')
+            '<author><name>Daniel Bourdeau, Brice Dudout, George Lasry and contributors</name></author>\n' + '\n'.join(entries) + '\n</feed>\n')
     (HERE / 'feed.xml').write_text(feed, encoding='utf-8', newline='\n')
     return len(entries)
 
