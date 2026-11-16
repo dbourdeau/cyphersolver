@@ -83744,6 +83744,65 @@
    "repository": "nl-04-0041"
   },
   {
+   "id": 2726,
+   "counted": true,
+   "year": 1612,
+   "date": "Nov 1611 - Nov 1613",
+   "title": "Marie de Medicis, Villeroy and Puysieulx to Savary de Breves (Rome), 11 letters of Nov 1611 - Nov 1613 \"avec chiffre\" without a decipherment noted",
+   "correspondents": "Henri IV; Marie de Medicis; Nicolas de Neufville de Villeroy; Pierre Brulart de Puysieulx -> Francois Savary de Breves",
+   "place": "Paris / Fontainebleau",
+   "language": "French",
+   "region": "France",
+   "period": "1611-1650",
+   "shelfmark": "BnF Manuscrits, fr. 3654 (Anc. 9021 (2)), nos. 6, 8, 11-19 (ff. 12, 16, 22, 26, 28, 32, 34, 37-47)",
+   "folio_note": "BnF Archives et manuscrits notice cc501068: 11 letters \"avec chiffre\" (nos. 6, 8, 11 Marie de Medicis; 12, 14 Villeroy; 13, 15 Puysieulx; 16-19 Marie de Medicis); nos. 21-23 carry a decipherment and are left out. Lead rescoped 16 Nov 2026: the earlier shelfmarks fr. 3652 and fr. 3339 held no cipher, and the fr. 3541 pieces are catalogue 23.",
+   "cls": "B",
+   "status": "Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed. Catalogue 25 (Marie de Medicis to Breves, 1610) and targets/breves1603 are the neighbouring items; the 1611-13 letters are not in either.",
+   "why": "Royal and secretary-of-state despatches to one ambassador across ten years; Breves nomenclators are already worked in this repo (breves1603, catalogue 25), so keys exist for the early ones.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
+   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "links": [
+    {
+     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
+     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Omont BnF catalogue sweep",
+   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "needs_archive_scan": "yes",
+   "access_note": "fr. 3654 notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc501068 has no Gallica link (not digitised); fr. 3541 (cc49988x) not digitised either. Reading room or reproduction order.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online (no ark found for fr. 3652/3339). Shelfmarks unconfirmed: other rows of this sweep proved OCR numbers wrong. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc501068 (Francais 3654, Anc. 9021(2)) read 16 Nov 2026; the Omont OCR (archive.org p1cataloguegnr02bibluoft, heading \"3654\" after \"(Anc. 10344.)\") gives the same list. Also read: cc50104s (fr. 3652, Perez letters, no cipher) and cc49802 (fr. 3339, copies on the Etats de Blois, no cipher), which shows the lead's shelfmarks are wrong.",
+     "extent": "11 letters \"avec chiffre\", Nov 1611 - Nov 1613: nos. 6 (f. 12), 8 (f. 16), 11 (f. 22) Marie de Medicis; 12 (f. 26) and 14 (f. 32) Villeroy; 13 (f. 28) and 15 (f. 34) Puysieulx; 16-19 (ff. 37-47) Marie de Medicis. Nos. 21-23 (Dec 1613) are \"avec chiffre et dechiffrement\" and are left out. Amount of cipher per letter not stated.",
+     "cipher": "BnF description: \"Lettre, avec chiffre, de MARIE [DE MEDICIS]... a monseigneur de Breves\" etc.; no decipherment noted for nos. 6-19, while the cataloguer notes one for nos. 21-23 in the same volume. No image seen, so a decipherment on the leaf cannot be excluded."
+    },
+    "prior_art": {
+     "decode": "known.py \"3654\", \"Anc. 9021\": no DECODE record or repo row for fr. 3654; DECODE holds fr. 3541 (R2230-2231, Henri IV 1603/1610), which is catalogue 23 / breves1610.",
+     "tomokiyo": "Tomokiyo, cryptiana unsolved.htm fetched 16 Nov 2026 and searched for the shelfmark, the correspondents and the related names: no hit on fr. 3654; his \"Marie de Medici's Cipher (1610)\" entry covers short cipher passages in Marie de Medicis letters to Breves, solved by Brice Dudout (Oct 2026) for fr. 3789; the 1611-13 letters are not named.",
+     "lasry": "Lasry, cryptiana GL.htm fetched 16 Nov 2026 and searched for the shelfmark and the correspondents: no hit on fr. 3654, Breves 1611-13 or Puysieulx to Breves.",
+     "edition": "No edition of the regent's 1611-13 letters to Breves found; Breves's own despatches are registered in fr. 3655-3656 (outgoing, not these letters); web search 16 Nov 2026 found no printed text.",
+     "literature": "Web search 16 Nov 2026 (\"Marie de Medicis\" Breves lettres 1612 1613 chiffre): nothing on these letters; Dubost's biography of Marie de Medicis cites the period only."
+    },
+    "key_check": "Key held: the Henri IV-Breves key (BnF fr. 3462 f. 103, \"Chiffre reforme pour Levant\", 1604) that Dudout used for Marie de Medicis to Breves 1610 (catalogue 25, breves1610); not tested on fr. 3654 (no image).",
+    "duplicates": "known.py: fr. 3541 pieces of this lead duplicate catalogue 23 (breves1603); fr. 3654 has no row anywhere; catalogue 25 (fr. 3789, 1610) is a different letter. fr. 3541 no. 12 (Puysieulx to Breves, \"avec chiffre, incomplete\", f. 39) is a possible sibling not in any ledger.",
+    "verdict": "open",
+    "key_held": "Henri IV-Breves key, BnF fr. 3462 f. 103 (targets/breves1603, breves1610); not tested on fr. 3654."
+   },
+   "repository": "bnf"
+  },
+  {
    "id": 2732,
    "counted": true,
    "year": 1530,
