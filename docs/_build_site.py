@@ -794,7 +794,7 @@ def footer_html(current):
     links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
     author = cur.get('author', 'Daniel Bourdeau') if cur else shared_author(current)
-    footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'
+    footer_date = cur.get('footer_date', 'September 2026') if cur else ('November 2026' if current in ('method', 'methode', 'corrections') else 'September 2026')
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')
 
