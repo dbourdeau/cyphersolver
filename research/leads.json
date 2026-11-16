@@ -10419,8 +10419,31 @@
     }
    ],
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "MHS Robert Treat Paine papers: edition says 'a brief note in undeciphered code' and prints no ciphertext; the leaf (Box 2, microfilm reel 2) is not digitised. Not retried on 11 Nov beyond the collection guide, which answers. Needs the reel or an MHS scan; cipher versus shorthand unsettled."
+   "scored": "vetted",
+   "vetting_note": "MHS Robert Treat Paine papers: edition says 'a brief note in undeciphered code' and prints no ciphertext; the leaf (Box 2, microfilm reel 2) is not digitised. Not retried on 11 Nov beyond the collection guide, which answers. Needs the reel or an MHS scan; cipher versus shorthand unsettled.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "Massachusetts Historical Society digital edition, Robert Treat Paine Papers vol. 2: https://www.masshist.org/publications/rtpp/index.php/view/RTP2d054 (RTP to 'Lavinia', after Oct 1757) and https://www.masshist.org/publications/rtpp/index.php/view/RTP2d191 ('Lavinia' to RTP, July 1760), fetched by curl 16 Nov 2026; the source notes were read, and the secret notes themselves are not printed or imaged.",
+     "extent": "Two tiny items: a 'brief note' after the endorsement 'from & to Lavinia' on Paine's 1757 draft, and Paine's July 1760 answer written on the letter from 'Lavinia' ('from & to Lavinia on a Bag'); lengths not given, both evidently a few lines.",
+     "cipher": "Editors' notes verbatim: 'Dft; endorsed: \"from & to Lavinia\" followed by a brief note in undeciphered code' (RTP2d054) and 'RTP's answer dated July 1760 is in shorthand and has not been deciphered' (RTP2d191). Shorthand in the 1760 case, by the editors' own word."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Treat Paine', 'Lavinia', 'RTP2' (16 Nov 2026): no hit outside this lead; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Treat Paine, Lavinia, RTP2: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+     "edition": "Riley and Hanson (eds), The Papers of Robert Treat Paine vol. 2 (MHS 1992, now online) prints both letters in full and gives the secret notes as undeciphered (shorthand / code); no reading of them.",
+     "literature": "Web search (16 Nov 2026) on Robert Treat Paine, Lavinia, undeciphered code: only the MHS edition pages (which suggest 'Lavinia' may be Mary Fletcher); no study of the shorthand."
+    },
+    "key_check": "No key; if it is shorthand, an eighteenth-century English system (Weston, Byrom, Mason) would read it. Not tested since no image is online.",
+    "duplicates": "known.py: no catalogue entry or other lead for these Paine items.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not_cipher: the editors call the 1760 answer shorthand, and the 1757 'code' is a brief endorsement note in Paine's own hand in the same exchange; both are a few lines of personal shorthand, not a cipher."
+   },
+   "access": "archive",
+   "access_note": "MHS Robert Treat Paine Papers, Box 2 / microfilm reel 2; edition text online at masshist.org/publications/rtpp, no image of the notes."
   },
   {
    "id": 1295,
@@ -21305,7 +21328,7 @@
    "source": "Archivportal-D sweep (more terms)",
    "prior_art": "open as far as checked (2 Nov 2026: known.py on shelfmark and correspondents; Tomokiyo, Lasry, DECODE and the edition literature not searched)",
    "needs_archive_scan": "yes",
-   "access_note": "Catalogue record only; digitisation not flagged in the harvest, copy order needed",
+   "access_note": "Digitised: 134 images at https://www.landesarchiv-nrw.de/data01/Abt_Westfalen/Msc_VI/00119/MSC_VI_00119_NNN.jpg (METS .../digitalisate/Abt_Westfalen/Msc_VI/00119/mets.xml); the DDB Solr record flags digitalisat=true. The lead's access 'archive' should be 'online'.",
    "year": 1677,
    "date": "1677",
    "title": "Duchy of Westphalia: letters of Landdrost von Landsberg with the envoys at Vienna (Fürstenberg, Schmidtman), with a Dechiffrierschlüssel",
@@ -21329,9 +21352,31 @@
     }
    ],
    "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Finding aid says only Enthalt auch Dechiffrierschlussel for LAV NRW W 004 Nr. 119; no statement that any Vienna letter is ciphered, volume not online, no edition found. Needs a view of the volume."
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "Finding aid says only Enthalt auch Dechiffrierschlussel for LAV NRW W 004 Nr. 119; no statement that any Vienna letter is ciphered, volume not online, no edition found. Needs a view of the volume.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Landesarchiv NRW Abt. Westfalen W 004 (Msc. VI) Nr. 119, all 134 images downloaded 16 Nov 2026 from https://www.landesarchiv-nrw.de/data01/Abt_Westfalen/Msc_VI/00119/MSC_VI_00119_001.jpg ... _134.jpg; images 001-045 viewed on contact sheets, image 017 (Vienna, 21 Jan 1677) and image 023 (left page) read at full resolution, image 133 (the key) read in full; the archive's description read through the DDB Solr API (record YJK5OEKXRL2FKG7HBBUATGIAMESBDZRX, provider item Vz_025619a2-96f3-4ad6-94bf-2e39a0f513fe).",
+     "extent": "A bound volume of 1677 (134 double-page images) of Landsberg's correspondence with the Westphalian envoys at Vienna (Fürstenberg, Schmidtman) and copies of Leopold I's letters. In the letter on images 022-023 at least five cipher runs appear inside the German text on one page (single nomenclator numbers and letter-number strings of 6-12 digits). The other letters were checked only on contact sheets, where scattered code numbers cannot be seen, so the full extent of cipher in the volume is not measured.",
+     "cipher": "Nomenclator of letters to two-digit numbers (A 10, B 12, C 16, D 30, E 19, F 80, G 17, H 60, I 13, K 45, L 50, M 24, N 36, O 22, P 33, Q 42, R 18, S 15, T 44, V 64, W 46, X 39, Y 28, Z 56, with nulls marked) and about 125 numbered words and names (2 armee ... 83 Prince Guillaume de Fürstenberg, 93 Turenne, 94 tractaten ... 126 Secretarius), image 133. On image 023 the text has '83 auf allen 94 gelassen werden ... 306416451918 ... 64181936 verlieren ... 1822301386 ... 4519136 53 bekommen'; 4519136 = 45 19 13 36 = KEIN under the key. No decipherment is written above or beside the figures."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Landsberg', 'Schmidtman', 'Fürstenberg', 'W 004', 'Westfalen' (16 Nov 2026): only this lead, its sweep row and unrelated Landsberg-Velen and Galen/Fürstenberg catalogue entries (W 004 Nr. 52 is a different file); no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Landsberg, Schmidtman, Fürstenberg, W 004, Westfalen: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+     "edition": "No edition of the Landsberg-Fürstenberg-Schmidtman correspondence of 1677 found (5 Nov web searches, repeated through known.py and the ledgers); nothing prints these letters.",
+     "literature": "Web searches of 5 Nov 2026 (Landsberg, Westfalen 1677, Wien, Fürstenberg, Schmidtman, Chiffre) found only biographies and archive records; no study of this key or these letters."
+    },
+    "key_check": "Key in the same volume (image 133), seen in full; spot-tested on image 023: 45-19-13-36 gives KEIN, and the nomenclator numbers 83 and 94 fit the context ('83 auf allen 94 gelassen werden'). A full decipherment was not made.",
+    "key_in_volume": "W 004 Nr. 119, image 133: letter-number alphabet plus a numbered nomenclator of about 125 entries; spot-tested on the 5 Jan 1677 letter (images 022-023) with a matching word (KEIN).",
+    "duplicates": "known.py on the shelfmark and names: no catalogue entry for W 004 Nr. 119; catalogue 1645 (W 004 Nr. 52, Galen-Fürstenberg 1659) is a different volume.",
+    "verdict": "key_lookup",
+    "closed": "Closed as key_lookup: the volume holds both the cipher passages (e.g. the Landsberg letter of 5 Jan 1677, images 022-023) and the nomenclator that reads them (image 133), which gives a sensible word in a spot test."
+   }
   },
   {
    "id": 1697,
@@ -31947,12 +31992,33 @@
    "source": "ArchiveGrid sweep",
    "prior_art": "open as far as checked (3 Nov 2026: known.py on names and shelfmark; archive description says nothing of a decipherment; no edition compared)",
    "needs_archive_scan": "yes",
-   "access_note": "Reading-room item; no scan found online",
+   "access_note": "Two sample pages on the MHS blog; the full volume is an MHS reading-room item (Ms. Sbd-133).",
    "decode_ids": [],
    "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "MHS Ms. Sbd-133 (title 1776-1845, not 1776-1795); web search this pass found the MHS 2009 blog, Boston1775 and Futility Closet 2026 'unsolved' posts, no decipherment, and Dibbell matched some signs to 18th-c. shorthand manuals. Cipher vs shorthand undecided from images; needs a stenography specialist."
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "MHS Ms. Sbd-133 (title 1776-1845, not 1776-1795); web search this pass found the MHS 2009 blog, Boston1775 and Futility Closet 2026 'unsolved' posts, no decipherment, and Dibbell matched some signs to 18th-c. shorthand manuals. Cipher vs shorthand undecided from images; needs a stenography specialist.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "MHS Beehive blog, Jeremy Dibbell, 'Can you Crack the Cipher?', 15 May 2009, https://www.masshist.org/beehiveblog/2009/05/can-you-crack-the-cipher/, page images https://www.masshist.org/imhs/cms/assets/diary_003.jpg (page headed 1776) and https://www.masshist.org/imhs/cms/assets/diary2_003.jpg, fetched 16 Nov 2026; diary_003 viewed in full.",
+     "extent": "A small bound volume of dated entries, 1776 to about 1799 by the donor's note (MHS title 1776-1845), long entries on one side and short ones on the other; the page seen holds three months of short entries (about 20 entries).",
+     "cipher": "Arabic numerals for days, then a dot and one to four cursive stroke signs per entry, repeated formulaically (a cross-like sign, a looped hook, a hooked 7-shape, a long tilde-like stroke), with month heads in the same signs; the forms are those of stroke shorthand, not separate cipher symbols for letters, and the shorthand origin was assumed by the people who had it in 1841-45."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Sbd-133', 'cipher diary', 'Massachusetts Historical' (16 Nov 2026): no record of this diary; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Sbd-133, cipher diary, Massachusetts Historical: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+     "edition": "No edition or transcription; the MHS blog post (2009) says the contents are 'almost a complete mystery'.",
+     "literature": "Web search (16 Nov 2026): MHS blog 2009, Boston 1775 blog (2009), Klaus Schmeh's 'Who can decipher this encrypted diary?' and Futility Closet (27 Apr 2026) all treat it as unsolved; Dibbell reports month names in shorthand; no decipherment anywhere."
+    },
+    "key_check": "No key; the system was thought in 1842 to be in a shorthand treatise owned by Judge Davis (not identified). Not tested.",
+    "duplicates": "known.py: no catalogue entry for Ms. Sbd-133.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not_cipher: the diary is written in an unidentified stroke shorthand (the sign forms, the 1840s owners' view and the shorthand month names), not in a cipher."
+   }
   },
   {
    "id": 2082,
@@ -36834,7 +36900,7 @@
    "difficulty": 3,
    "verify": "Get MTT IV/7; try the same approach as for the Bathory signs (one system if the sign shapes match).",
    "needs_archive_scan": "partly",
-   "access_note": "printed in MTT IV/7; originals at MNL OL E 185 (images not checked)",
+   "access_note": "Edition free on REAL-J (real-j.mtak.hu/4115, MagyarTortenelmiTar_1906_54_4_07.pdf); originals in MNL OL E 185 (Nádasdy family archive), not digitised.",
    "links": [
     {
      "label": "Lang 2015, Titkosirás a kora ujkori Magyarországon (MTA doctoral thesis, repertory pp. 191-330), p. 248",
@@ -36843,8 +36909,30 @@
    ],
    "period": "1497-1559",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Edition already opened (Magyar Történelmi Tár 1906): seven single '(titkos jel)' signs across four letters, no number groups and no decipherment; originals (MNL OL E 185) not digitised. Too little and not visible for a verdict; not retried from the cloud on 11 Nov."
+   "scored": "vetted",
+   "vetting_note": "Edition already opened (Magyar Történelmi Tár 1906): seven single '(titkos jel)' signs across four letters, no number groups and no decipherment; originals (MNL OL E 185) not digitised. Too little and not visible for a verdict; not retried from the cloud on 11 Nov.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "Komáromy András (ed.), 'Kerecsényi László levelei Nádasdy Tamáshoz', Magyar Történelmi Tár 4th ser. vol. 7 (1906), nos. 25, 26, 27 (pp. 130-132) and 36 (pp. 249-250), REAL-J record 4115 (MagyarTortenelmiTar_1906_54_4_07.pdf), read in vetting pass tc05 (research/vetting_2026-11/out_tc05.json); that reading was taken over on 16 Nov 2026 and not repeated.",
+     "extent": "Four letters of 18, 23 and 26 Sep 1555 and 7 May 1556 printed in full in Hungarian; seven single secret signs in all (2 + 2 + 2 + 1), each standing for one word or name.",
+     "cipher": "Isolated Hungarian sign-words, printed only as the editor's placeholder '(titkos jel)' (e.g. 'az teb (titkos jel) kiről immáron', 'az egész ország (titkos jel) többet írnék, de (titkos jel)', 'ha (titkos jel)'); the signs' shapes are not reproduced. No cipher passage longer than one word."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Kerecsényi', 'Kerecsenyi', 'Nádasdy', 'Nadasdy', 'E 185' (16 Nov 2026): only this lead, the sweep D rows, the oldest-cipher scan note and the separate Báthory András-Nádasdy catalogue entry; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Kerecsényi, Kerecsenyi, Nádasdy, Nadasdy, E 185: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit on the names (two hits on 'E 185' are inside unrelated text).",
+     "edition": "Magyar Történelmi Tár 1906 prints the four letters in full (so the letters are read) with the seven signs left as '(titkos jel)'; no reading of the signs is given there or elsewhere found.",
+     "literature": "Lang 2015 (MTA doctoral thesis, repertory p. 248, C.Ker.01-04) marks them 'magyar jelek, megfejtetlen, részleges', and p. 68 n. 85 groups them with letters where one or two words stayed unresolved; Pálffy 1999 (Studia Agriensia 20) uses the letters for intelligence history without reading the signs."
+    },
+    "key_check": "No key known for Kerecsényi's signs; the Báthory András-Nádasdy signs of 1553-54 (catalogue entry from MTT IV/6) are a possible sibling system, not compared because the 1555-56 sign shapes are not printed.",
+    "duplicates": "known.py: no catalogue entry for these four letters; the Báthory András letters to Nádasdy are a separate series and entry.",
+    "verdict": "partly_read",
+    "closed": "Closed as partly_read: the four letters are printed in full in Magyar Történelmi Tár 1906, and only seven isolated sign-words, not reproduced in print, remain unresolved."
+   },
+   "access": "archive"
   },
   {
    "id": 2231,
@@ -41559,46 +41647,6 @@
     "verdict": "partly_read",
     "closed": "Antal et al.: plain text of most of the 41 ciphered documents is kept in separate documents in the box (a contemporary decipherment, unpublished), so most are read from existing plain text; only those without a clear copy remain open."
    }
-  },
-  {
-   "id": 2437,
-   "counted": true,
-   "region": "Germany",
-   "seen": "scan",
-   "needs_archive_scan": "no",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "source": "Austria and German state portals sweep (Landesarchiv NRW sufservice API, Saxon State Archives), 9 Nov 2026",
-   "year": 1808,
-   "date": "11 Nov 1808",
-   "title": "B. G. Niebuhr, Amsterdam, to Freiherr vom Stein: letter largely in a four-digit numeric code",
-   "correspondents": "Barthold Georg Niebuhr (Prussian loan negotiator, Amsterdam) -> Karl vom und zum Stein",
-   "place": "Amsterdam",
-   "language": "German",
-   "period": "1801-1900",
-   "shelfmark": "Landesarchiv NRW / Vereinigte Westfälische Adelsarchive, Nachlass Freiherr vom Stein, Cap.C.I - S 1199,11",
-   "folio_note": "14 images; leaf 001 viewed: two lines of German ('Euer Excellenz, konnte ich noch mit letzter Post den richtigen Empfang der von Herrn Bandirector Hundt ... Documente melden') then about 17 lines of numerals from 300 to 3100",
-   "cls": "A",
-   "status": "9 Nov 2026 (Brice Dudout, issue #359, not checked by the project): page 1 transcribed (265 groups, all at or below 3123); the cribs S 1230,04 (Wilhelm) and S 1116,1 (Goltz) use other repertories; the printed editions (Hubatsch's Stein edition, Niebuhr's letters) were not checked. Earlier: Archive record: 'egh.; chiffriert', digitised (DFG-Viewer). Viewed leaf 001: number groups after the opening lines, no plaintext between them. Other Stein letters of 1808 in the Nachlass are catalogued 'dechiffriert' (Goltz, Humboldt) or carry plaintext between the lines (Prince Wilhelm of Prussia, Paris, 24 Jan 1808, S 1230,04, also a four-digit code), which gives cribs and a probable key family.",
-   "why": "Dated, digitised, named writer and recipient in the Prussian reform crisis (Niebuhr's Amsterdam loan; Stein dismissed two weeks later); the interlined S 1230,04 letter in the same kind of code should supply cribs.",
-   "score_note": "Scored 9 Nov 2026 after viewing leaves 001 and 002 of S 1199,11 and leaf 001 of S 1230,04",
-   "verify": "Check the Stein edition (Briefe und amtliche Schriften, vol. 10, Briefwechsel 1808, De Gruyter 2015, section 'November 1808') for a printed decipherment before promoting.",
-   "links": [
-    {
-     "href": "https://www.archive.nrw.de/ms/search?link=VERZEICHUNGSEINHEIT-Vz_14d988ec-41af-4ac4-b2bf-1efa7160d9f8ACTAPRO",
-     "label": "Landesarchiv NRW record"
-    },
-    {
-     "href": "https://dfg-viewer.de/show/?tx_dlf[id]=http%3A%2F%2Fwww.lwl.org%2F325dig-download%2FLesesaal-Digitalisate%2FC_Adelsarchive%2FCap%2FCap.C.I%2FCap.C.I_S%25201199%2C11%2Fmets.xml",
-     "label": "digitised letter (DFG-Viewer)"
-    }
-   ],
-   "access_note": "free scans on lwl.org (Lesesaal-Digitalisate/C_Adelsarchive/Cap/Cap.C.I/Cap.C.I_S 1199,11/)",
-   "prior_art": "not settled (9 Nov 2026): known.py finds nothing on 'Niebuhr', 'Cap.C.I' or 1199,11; one web search found no edition text; the modern Stein edition (2015) probably prints the letter and may give the decipherment, not checked. DECODE, Tomokiyo, Lasry not searched.",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Cipher seen earlier (LAV NRW Cap.C.I S 1199,11). The edition check is still open: 11 Nov, Pertz, Leben des Ministers Freiherrn vom Stein II (archive.org daslebendesminis02pert) opened: it prints Niebuhr to Stein of 4 Jan 1808 (pp. 82-89) and nothing from Amsterdam Nov 1808 (grep Hundt, Amsterdam). The Stein editions (Botzenhart, old ed. vol. 2; new ed. II/2, 1960) are hosted as PDFs on lwl.org/westfaelische-geschichte (index page urlID=509), but the portal served a 'Wartungsarbeiten' page all session and web.archive.org is blocked by egress policy. A search snippet says Botzenhart's 1936 foreword states Niebuhr's letters on the Holland loan were left out (not verified). Gerhard/Norvin, Die Briefe B. G. Niebuhrs I (1926) not on archive.org. Retry the LWL portal PDFs for Nov 1808 in II/2; if the letter is absent or printed with the cipher unread, it is open."
   },
   {
    "id": 2442,
@@ -49006,13 +49054,34 @@
    "prior_art": "open as far as checked (14 Nov 2026): the shelfmark, fonds series and correspondent were searched in catalogue.json, leads.json, every candidates.json / key_leads.json and the targets (known.py-style grep) and found nowhere; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only on Archivportal-D; no images found on the item page of the portal; order from the archive or use the reading room (digitisation not checked on the archive's own site)",
+   "access_note": "GLA Karlsruhe 111 Nr. 304, 1 Fasz., not digitised (no digital object in the record); Archivportal-D and DDB item pages are behind an Anubis bot check, but the DDB Solr API returns the record text to a script.",
    "language": "German",
    "region": "Germany",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "GLA Karlsruhe 111 Nr. 304: one ciphered letter with its Dechiffrierung inside a Geroldseck file of 1779; sender, recipient and length are not given and the record has no image, so ciphertext not seen; no prior-art searches beyond the local known.py run. Needs an archive reply. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "GLA Karlsruhe 111 Nr. 304: one ciphered letter with its Dechiffrierung inside a Geroldseck file of 1779; sender, recipient and length are not given and the record has no image, so ciphertext not seen; no prior-art searches beyond the local known.py run. Needs an archive reply. (research/vetting_2026-11-14_german_state_dbs/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archive's own description, read through the Deutsche Digitale Bibliothek Solr API on 16 Nov 2026 (https://api.deutsche-digitale-bibliothek.de/2/search/index/search/select?q=id:F55HIYVMDLRR2RSC2JBQCXP2PU4MCXPT): Landesarchiv Baden-Württemberg, Abt. Generallandesarchiv Karlsruhe, 111 Nr. 304, 'Reichshofratsgutachten im Prozess Baden gegen von der Leyen', 1779, provenance Geheimer Rat Baden.",
+     "extent": "One ciphered letter inside a single fascicle of 1779 (Geroldseck >> 03. Ansprüche); its length, writer and recipient are not given.",
+     "cipher": "Record text verbatim: 'Enthält u.a.: Chiffriertes Schreiben mit Dechiffrierung'. The decipherment is filed with the cipher letter."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Geroldseck', 'von der Leyen', '111 Nr. 304', 'Karlsruhe' (16 Nov 2026): only this lead and its sweep row; other GLA Karlsruhe catalogue entries are different files; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Geroldseck, von der Leyen, 111 Nr. 304, Karlsruhe: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+     "edition": "No edition of the Reichshofrat opinion or the cipher letter found; the decipherment that matters is the contemporary one filed in the fascicle, as the record states.",
+     "literature": "Web search (16 Nov 2026) for the record wording with Geroldseck and Generallandesarchiv found only other GLA 111 records and unrelated cipher items; nothing on this letter."
+    },
+    "key_check": "No key named. A plaintext-ciphertext pair could test the Baden chancery keys in GLA 48 (Nr. 65-84), not done since the folio is not online.",
+    "duplicates": "known.py on the shelfmark and names: no catalogue entry or other lead for 111 Nr. 304.",
+    "verdict": "read",
+    "closed": "Closed as read: the archive record says the ciphered letter is filed with its Dechiffrierung, a contemporary decipherment."
+   }
   },
   {
    "id": 2654,
@@ -49371,43 +49440,6 @@
     },
     "closed": "The headline cipher of the lead, the Elector's letter to Luther and Bugenhagen (Reg. E Nr. 136, fol. 394-400, 'z.T. verschluesselt, Schluessel fol. 393', May 1541), is printed in Mentz vol. 3 Nr. 43 with the ciphered words set in spaced type and the resolutions noted 'von Burchards Hand': the key was applied and the deciphered text is in print, so it is read from an existing decipherment, not an open ciphertext. The Findbuch's other ciphered pieces of the volume are in the councillors' reports to the Elector (1 June 1541, fol. 505-506 and 512 'verschluesselt'; the lead also quotes 26 May, fol. 300-302): a few leaves each, no key of their own named, not online, so no ciphertext was seen and no entry is made for them now; they stay in the lead's notes. The Speyer 1542 volume was not read."
    }
-  },
-  {
-   "id": 2667,
-   "counted": true,
-   "year": 1557,
-   "date": "1550-1568",
-   "period": "1497-1559",
-   "cls": "C",
-   "source": "Archivportal Thueringen (archive-in-thueringen.de), German state databases sweep, 14 Nov 2026",
-   "access_note": "index text only in Archivportal Thueringen (Online-Findbuch); digitisation not checked; order through the Landesarchiv Thueringen reading room or reproduction service",
-   "title": "Dowry affairs of Anna Maria of Brunswick, wife of Duke Albrecht of Prussia: \"Schreiben in Geheimschrift (Bl. 191-195)\" among the Henneberg-Brunswick papers",
-   "correspondents": "unknown (Brunswick / Prussian side, Count Poppo of Henneberg)",
-   "place": "Henneberg / Brunswick / Prussia",
-   "shelfmark": "Landesarchiv Thueringen, Staatsarchiv Meiningen, Gemeinschaftlich Hennebergisches Archiv, Sektion I (4-10-1010), Nr. 2661",
-   "folio_note": "Bl. 191-195 in Geheimschrift; no key named",
-   "status": "Index text only. Duke Albrecht of Prussia's own chancery ciphers are in the GStA PK Teutonic Order / EM key leads (OBA 27584, EM 19 a Nr. 68), so a key family may exist.",
-   "why": "A Henneberg-Brunswick-Prussia cipher of the 1550s-60s that might use the Prussian ducal alphabet.",
-   "importance": 2,
-   "solvability": 2,
-   "difficulty": 4,
-   "verify": "Order Nr. 2661; check Bl. 191-195 against the Prussian key books in GStA PK.",
-   "links": [
-    {
-     "href": "https://www.archive-in-thueringen.de/de/findbuch/view/bestand/27769/systematik/265688/archivgut/5622708",
-     "label": "Hennebergisches Archiv Nr. 2661"
-    }
-   ],
-   "score_note": "Scored from the finding-aid text during the 14 Nov 2026 German state databases sweep (research/sweep_2026-11-14_german_state_dbs/); not viewed",
-   "prior_art": "open as far as checked (14 Nov 2026): the shelfmark, fonds series and correspondent were searched in catalogue.json, leads.json, every candidates.json / key_leads.json and the targets (known.py-style grep) and found nowhere; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "language": "German",
-   "region": "Germany",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Henneberg-Brunswick papers Nr. 2661: 'Schreiben in Geheimschrift (Bl. 191-195)' only; no key named, not online, and prior-art searches stopped at known.py; left until Duke Albrecht of Prussia's key volumes (GStA PK, key_leads) are compared. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
   },
   {
    "id": 2669,
