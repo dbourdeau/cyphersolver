@@ -2,6 +2,8 @@
 
 Status: doc 620 (27 Oct 1513) decoded, not read: 74.7% of letter units read as sense (strict judge, first pass of record, above our own 65% line) but only 3 of 16 sentences clean by docs/_check_reading.py, so it is filed as decoded, not read; doc 623 (16 Nov 1513) decoded, not read, 55.4% strict; doc 633 (April 1514, a copy) decoded, not read: 74.2% strict (457/616) but 1 of 13 sentences clean by docs/_check_reading.py (0.077). Contributed, not yet written up.
 
+Status: in progress
+
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic).
 
 Giovanni Corsi was the Florentine orator at the court of Ferdinand the Catholic [stated: the contributor]. Catalogue entry 2391 covers Corsi's cipher letters to Lorenzo de' Medici in MAP CXXXVII. This folder holds three of them. The key comes from a fourth (doc 627), which carries a decipherment written at the foot of the page at the time.
@@ -159,21 +161,21 @@ Derived here (16 Nov): `transcription_620.txt`, `transcription_623.txt`, `decryp
 - Model sessions did all the work: key, transcription, judge and translation. No person read the signs or the text without AI.
 - One blind transcription per letter. No second reader, and no check of doubtful signs on the images after the decode.
 - The judge was a model session, scoring sense by its own lights. E and N calls are its own.
-- The key rests on the decipherment of doc 627. That decipherment is not transcribed in this folder, and 627 was not decoded as a control in this pipeline.
+- The key rests on the decipherment of doc 627 (c. 635r, IIIF A0001353). Since 16 Nov it is in `doc627/`: the image id and md5, the decipherment as written, the 10 Nov cipher-block transcription and the frozen key's decode of it. That transcription is not blind and the key was built from it, so it documents the source but is not a control. Catalogue 2391's 6 Nov vetting note (no decipherment on any leaf) missed it because it sits at the foot of the page, below the signature, not between the lines or in the margin.
 
 ## Remaining gaps
 
-- Doc 627 as a control (blind transcription and one decode, against its decipherment on the page) has not been run. Blocker: not-attempted.
+- Doc 627 as a blind control (fresh reader, name-only sheet, one decode, scored against its decipherment) has not been run; the key's source itself is now documented in `doc627/`. Blocker: not-attempted.
 - The prior-art sheet (Google Books / HathiTrust phrases, MAP inventory vol. 4, Spanish-side editions, DECODE) is not yet searched. Blocker: not-attempted. Needs Malcolm for the HathiTrust and Google Books phrases.
 - The code values 27 (re di Scotia?) and 24 (Inghilterra?) in 623 are unverified. The basis for 22 (Francia) is not recorded in the key note, and #161 in 623 has no value. Blocker: open-codes.
 - "dunhtare" occurs twice in 623 (dubitare?, with nh for bi), and "coiono" and "coioborato" occur in 620 (rr written as i?). Repeated misreadings like these point to a key value or sign-label error, not a slip. Blocker: not-attempted. To check on the images against the key.
 - By `docs/_check_reading.py`, reading_620.md is "not a reading" (3 of 16 sentences clean), and reading_633.md 1 of 13, so the target is classed "not read" (outcome.class), with the key method unchanged. Blocker: not-attempted. It would be settled by fixing the key or label errors above, then a new frozen pass.
 - Doc 633: the shapes NEW1 (a flat 2-like sign, frequent) and NEW2 and the bare sign z have no key value, and superscript attribution was the blind reader's hardest point. 21 of 95 N units are holes. Blocker: not-attempted. To check against doc 627's decipherment and the images, then a new frozen pass.
-- Copies 621, 622 and 628 are not collated. 621 gives clear equivalents for part of 620, and 622 is a copy of 623. Blocker: not-attempted.
+- Copies 621, 622 and 628 are not collated. 621 gives clear equivalents for part of 620. 622 repeats at least one cipher block of 623 (one block compared, 10 Nov: "tra 51 et 52"); the catalogue calls 622 a copy of a letter of 29 Jan 1514. Which is right is not settled. Blocker: not-attempted.
 
 ## Escalation
 
-- [ ] siblings: 633 done (decoded, not read, 74.2% strict); 627 control not run; copies 621, 622, 628 not collated
+- [ ] siblings: 633 done (decoded, not read, 74.2% strict); 627 source documented (doc627/), blind control not run; copies 621, 622, 628 not collated
 - [x] clear-pages: versos A0001330 and A0001342 seen by the blind reader. Clear closings, dates and addresses; no decipherment on 620 or 623
 - [x] known-keys: compared with pandolfini1514 (the same family, a different table); the key comes from doc 627's contemporary decipherment
 - [ ] print: Desjardins II checked (clear extracts only); MAP inventory vol. 4, Spanish-side editions, Google Books / HathiTrust not reached
