@@ -171,7 +171,7 @@
     "by": "llm from images",
     "source": "Riksarkivet IIIF images (lbiiif.riksarkivet.se), R0003636 images 50-54",
     "image_quality": "good",
-    "notes": "Contributed by Tommy Marshment-Howell (lccompany). Two separate digit readings of each page by Claude agents, compared on the image; 15 doubtful groups keep their alternatives in the header; 54L-17 g7 corrected from 1457 to 1451. The 1,961 count is the group count at integration (the generic measure gives 2,225 tokens with punctuation). Closing lines 'Nous avons l'honneur &c', 'ce 15 de Juillet', 'a 3 heures du matin' are clear script."
+    "notes": "Contributed by Tommy Marshment-Howell (lccompany). Two separate digit readings of each page by Claude agents, compared on the image; 16 doubtful groups keep their alternatives in the header; 54L-17 g7 corrected from 1457 to 1451; 51R-07 g3 changed from 1300 to 1500? at integration (a 5 written over a 3, read on the full-size image); the two 54R-04 lines merged for check_marks.py. The 1,961 count is the group count at integration (the generic measure gives 2,225 tokens with punctuation). Closing lines 'Nous avons l'honneur &c', 'ce 15 de Juillet', 'a 3 heures du matin' are clear script."
    }
   },
   {
@@ -614,13 +614,25 @@
   {
    "date": "2026-11-13",
    "kind": "reading",
-   "what": "Key key_1741.tsv applied unchanged line by line; 1,894 of 1,961 groups in the key; 1605 = ou and 1083 = fle taken from a glossed page of R0003635, image 149 right (not Lit. A, which is image 147; the contributor's email calls it the Lit. A gloss); 29 further context values listed in notes_reply_oct1741_cont.md, 11 of them new guesses; French reading and English translation written with holes and guesses marked.",
+   "what": "Key key_1741.tsv applied unchanged line by line; 1,894 of 1,961 groups in the key; 1605 = ou and 1083 = fle taken from the glossed continuation of Lit. A, R0003635 image 149 right; 29 further context values listed in notes_reply_oct1741_cont.md, 11 of them new guesses; French reading and English translation written with holes and guesses marked.",
    "result": "partial"
   },
   {
    "date": "2026-11-16",
    "kind": "verification",
    "what": "Integration check: group counts recomputed from the transcription (157 rows, 1,961 groups, 1,894 in key_1741.tsv, 67 outside, 63 without value after the two gloss values); splice with reading_reply_oct1741.md checked ('es' to 'es{+t} tres'); gloss crop for 1083 on R0003635 image 149 right looked at (1262 1083 1741 1678 1177 1749 under 'du fleuve Don'); 1083 = fle holds only if 1678 is ve, and key_1741.tsv marks 1678 as mixed (ve 1, we 1). Not rerun on the images; no new transcription.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "reading",
+   "what": "Contributor follow-up: marked file for the continuation, a corrected reading (seven spellings made to follow the cipher) and a recheck of the four places that do not fit. scripts/check_marks.py with key_1741.tsv (54R-04 lines merged, 51R-07 g3 1500?): 874 cipher words, 791 verbatim (90.5%), 19 repaired, 60 guessed, 4 holes, 15 with a doubtful digit; no unmarked departure.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "R0003636 image 51 row 7 read on the full-size image: third group is a 5 written over a 3, read 1500 (a), so 'le tems a la Russie' (was 1300 so); R0003635 images 148-149 fetched: image 149 is the glossed continuation of Lit. A (same French gloss on the same treaty), 1083 1741 1678 stands under 'fleuve Miuss' and 'fleuve Don'. Not a blind second reading.",
    "result": "worked"
   }
  ],
@@ -673,9 +685,9 @@
    "historical consistency",
    "statistical test"
   ],
-  "fraction_read": 0.78,
+  "fraction_read": 0.867,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Strict count by the README read bar over the three bare documents (scripts/check_marks.py with key_1741.tsv; scripts/check_marks_litB.py for Lit. B): words read verbatim from the signs, 79 of 94 (the Castellane letter), 109 of 123 (the reply to the foot of image 50 left) and 113 of 169 (Lit. B of vol. I/9/29), 301 of 386 = 0.780; guesses, repairs and holes are not counted. The glossed documents are the key source and are not counted: the despatch of 1740 (3,411 of 3,450 groups, 98.9%, in confident words) and Lit. A (84 of 122 words from the frozen key, 35 from its gloss, 3 repaired).",
+  "fraction_read_source": "Strict count by the README read bar over the three bare documents (scripts/check_marks.py with key_1741.tsv; scripts/check_marks_litB.py for Lit. B): words read verbatim from the signs, 79 of 94 (the Castellane letter), 109 of 123 (the reply to the foot of image 50 left) and 113 of 169 (Lit. B of vol. I/9/29), 301 of 386 = 0.780 before the reply's continuation; with the continuation (791 of 874 words, scripts/check_marks.py with marked_reply_oct1741_cont.txt) 1,092 of 1,260 = 0.867; guesses, repairs and holes are not counted. The glossed documents are the key source and are not counted: the despatch of 1740 (3,411 of 3,450 groups, 98.9%, in confident words) and Lit. A (84 of 122 words from the frozen key, 35 from its gloss, 3 repaired).",
   "credits": [
    {
     "who": "contemporary",
@@ -916,17 +928,16 @@
    {
     "item": "Reply continuation (image 50 right to 54 right): 63 groups with no key value, most read as marked context guesses, 1194, 1096 (twice) and 1428 (in 'd[1428]s') unread; about 20 new guessed values (1000, 1047, 1168, 1223, 1383, 1456, 1519, 1586, 1634, 1746, 1791 and others)",
     "blocker": "open-codes",
-    "detail": "From the sense only; 1083 = fle depends on 1678 being ve (key: mixed)."
+    "detail": "From the sense only; 1083 = fle and 1605 = ou come from the glossed continuation of Lit. A (R0003635 image 149 right), 1083 with 1678 = ve at two places there; key_1741.tsv still marks 1678 as mixed."
    },
    {
-    "item": "Reply continuation: places that do not give the expected word (tecon, so, mal ha, insiconer, 'la l'accommodement') and two doubtful digits read by sense (51L-04 g1, 52L-03 g11); 15 doubtful groups",
+    "item": "Reply continuation: la l'accommodement; tecon and insiconer (1778 con where tenue and insinuer need 1774 nu, digits clear, twice); two doubtful digits read by sense; 16 doubtful groups",
     "blocker": "open-codes",
-    "detail": "May be misread digits or slips of the encipherer."
+    "detail": "Misread digits are unlikely at tecon and insiconer (rechecked on 2x-3x crops); perhaps a habit of the encipherer. mal ha now reads malgre with 1496 = gre."
    },
    {
-    "item": "Reply continuation: no human check of the digits or the French is recorded (the contributor left the line blank); not scored by check_marks.py or _check_reading.py",
-    "blocker": "needs-physical-access",
-    "detail": "Asked of the contributor 16 Nov 2026."
+    "item": "Reply continuation: the human check covers eight rows of 157 and is self-reported; no second reader of the rest",
+    "blocker": "needs-physical-access"
    }
   ],
   "texts": [
@@ -1009,12 +1020,12 @@
     "language": "fr",
     "state": "read in part",
     "summary": "The envoys argue that Sweden and the Porte should act together against Russia now: Sweden is ready to fight, Russia is stalling on its treaty with the Porte and trying to split it from Sweden, and France's guarantee can only work through Sweden. They ask Castellane to press the Porte's ministers, say that if the Russian envoy (Romanzof?) offers terms the Porte should be told a Swedish-Russian rupture is near, offer a memorandum to the grand vizier, and close 'ce 15 de Juillet, a 3 heures du matin'.",
-    "note": "1,961 groups, 1,894 in key_1741.tsv (unchanged); with the gloss-backed 1605 = ou and 1083 = fle, 63 groups have no value, most read as marked context guesses ([?word]) and three groups (1194, 1096 twice, 1428 once) left unread. Places that do not fit are listed in notes_reply_oct1741_cont.md (tecon, so, mal ha, insiconer). Not scored by check_marks.py or docs/_check_reading.py, so not in fraction_read. The contributor's note left the human-check line blank; no human check is recorded.",
+    "note": "874 cipher words (scripts/check_marks.py with key_1741.tsv and marked_reply_oct1741_cont.txt, no unmarked departure): 791 verbatim (90.5%), 19 repaired, 60 guessed, 4 holes; 15 words contain a doubtful digit. With the first part the reply is 900 of 997 (90.3%). 1,961 groups, 1,894 in key_1741.tsv (unchanged); places that do not fit are listed in notes_reply_oct1741_cont.md (tecon and insiconer both need 1774 where 1778 stands). Checker share 0.56 (shape reading, earlier file).",
     "reading_review": {
      "grade": "B",
      "by": "Claude (Anthropic), integration read",
      "date": "2026-11-16",
-     "note": "Read as French against the translation: the sentences hold from the splice at 'es|t tres' to the closing; the guessed words are marked and group counts were recomputed from the transcription (1,961 groups, 1,894 in the key). Not an independent reader of the images."
+     "note": "Read as French against the translation: the sentences hold from the splice at 'es|t tres' to the closing; the guessed words are marked and group counts were recomputed from the transcription (1,961 groups, 1,894 in the key). Not an independent reader of the images. Re-read 16 Nov 2026 against the corrected reading sent by the contributor; 51R-07 g3 checked on the full-size image."
     }
    },
    {
@@ -1054,6 +1065,13 @@
     }
    }
   ],
-  "notes": "Not part of this target and not worked: other glossed or first-code pages of the volumes, a three-digit code, catalogue 2241 and the rest of 2244 (volume I/9/28 beyond images 227-229; image 482 is in another code) (see NOTES). The Khan of Crimea's letter (images 227-229 of I/9/28) is a glossed page read from its contemporary gloss and tested on the frozen key (487 of 602 groups); like Lit. A it is not counted in fraction_read. The rest of the Castellane exchange (image 50 right page, images 51-54, 1,961 groups) was contributed on 16 Nov 2026 as reply_oct1741_cont and is not counted in fraction_read."
+  "notes": "Not part of this target and not worked: other glossed or first-code pages of the volumes, a three-digit code, catalogue 2241 and the rest of 2244 (volume I/9/28 beyond images 227-229; image 482 is in another code) (see NOTES). The Khan of Crimea's letter (images 227-229 of I/9/28) is a glossed page read from its contemporary gloss and tested on the frozen key (487 of 602 groups); like Lit. A it is not counted in fraction_read. The rest of the Castellane exchange (image 50 right page, images 51-54, 1,961 groups) was contributed on 16 Nov 2026 as reply_oct1741_cont and is not counted in fraction_read.",
+  "human_check": {
+   "date": "2026-11-16",
+   "by": "Tommy Marshment-Howell (contributor, self-reported)",
+   "passage": "reply_oct1741_cont rows 50R-05, 51L-03, 51R-07, 52L-03, 52R-13, 53L-11, 54L-17, 54R-04 against R0003636 images 50-54",
+   "result": "confirmed",
+   "note": "Eight of 157 rows, digit by digit; reported in an email, not repeated here."
+  }
  }
 }
