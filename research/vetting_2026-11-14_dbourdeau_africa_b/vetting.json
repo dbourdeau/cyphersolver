@@ -1,0 +1,43 @@
+{
+ "2937": {
+  "date": "2026-11-14",
+  "by": "dbourdeau, claude (main session)",
+  "seen": {
+   "kind": "scan",
+   "where": "archive.org journalsmajorge00hakegoog (Hake, Journals of Major-Gen. C. G. Gordon at Kartoum, 1885), page image of printed p. 50 (leaf n105 of the scan) and the footnote text beside it on p. 51 (leaf n106), viewed 14 Nov 2026; Gutenberg 49224 text compared",
+   "extent": "One telegram: 23 groups of six digits in three printed lines, headed 'To General Gordon, Cairo, August 20th, 10.30 P.M.'",
+   "cipher": "Printed in full in footnote 67 on p. 50: 445737-905309-185115-417291-552676-792996-271381-511906-689363-945242-226739-648255-102037-626054-535222-672318-277535-134971-467430-203151-804960-483289-681510. Read off the page image (first 14 groups at 3x magnification) and matches the Gutenberg text; the archive.org OCR garbles several digits. Gordon writes beside it that he cannot decipher it because Stewart took the cipher book. A clear note on its back, signed by Kitchener at Debbeh, 29 Aug 1884, is printed under it and is a separate message, not a decipherment."
+  },
+  "prior_art": {
+   "decode": "decode_search.py: Egerton (hits are only BL Egerton MSS of 1646-58), Gordon, Kitchener, Debbeh, Soudan, Sudan: no relevant record.",
+   "tomokiyo": "All cryptiana pages fetched and searched by the north-east sweep for Gordon, Khartoum, Sudan, Mahdi, Egypt, and GL.htm (Lasry's keys) searched again 14 Nov 2026 for the same words: no entry.",
+   "lasry": "Web searches 14 Nov 2026 (Lasry, HistoCrypt, Cryptologia with Gordon, Khartoum, Foreign Office code): only unrelated Lasry papers; nothing on the 1884 Khartoum telegrams.",
+   "edition": "Hake (first edition p. 50-51 and Gutenberg text, whole book searched for cipher): prints the ciphertext and no plaintext; Gordon says he could not read it. Hake's footnote 66 prints a clear relay of an Egerton message of 30 Aug via Kitchener (Debbeh, 31 Aug) with a different text. TNA PRO 30/57/4 (Kitchener papers, item-level catalogue, 4/54-123 read) lists decodes only for Kitchener's own telegrams and says decodes are filed 'in a separate cover'; no item for this Egerton to Gordon telegram. The government Blue Books of 1884 were not opened.",
+   "literature": "Web searches for the 20 August 1884 Egerton to Gordon telegram, its Blue Book and any decipherment (Hansard Aug-Sept 1884, TNA Discovery, Spectator Sept 1884): nothing that prints or deciphers it."
+  },
+  "key_check": "No key is known. Gordon says the Foreign Office cipher book went with Stewart; the six-digit groups suggest a numeric code book, which is not in this repository or in print as far as searched. The Nile Expedition table SAD.250/1/81 at Durham is a different system (two-digit) and was not tried.",
+  "duplicates": "known.py '445737', 'Egerton', 'Debbeh': hits are only unrelated Egerton MSS entries and the Durham Gordon lead 2939; DECODE 0; catalogue 356 (Wolseley to Gordon, 19 Oct 1884, PRO 30/57/4/119) is a different telegram.",
+  "searches": [
+   {
+    "query": "Hake Journals Gordon first edition p. 50-51 and Gutenberg 49224: Egerton cipher telegram 445737, whole text searched for cipher and decipher",
+    "result": "Telegram printed in footnote 67 with no decipherment; the nearby clear message on the back is a separate Kitchener note of 29 Aug 1884."
+   },
+   {
+    "query": "TNA Discovery PRO 30/57/4 items 54-123 (Kitchener papers, Aug-Oct 1884), item descriptions read",
+    "result": "Describes Kitchener's telegrams and says decodes sit in a separate cover; no item matches an Egerton to Gordon cipher of 20 Aug."
+   },
+   {
+    "query": "web: Egerton Gordon 20 August 1884 cipher telegram deciphered Blue Book Egypt No.",
+    "result": "Nothing prints or deciphers it; Blue Book number not found."
+   },
+   {
+    "query": "decode_search.py Egerton Gordon Kitchener Debbeh Soudan Sudan",
+    "result": "No relevant DECODE record."
+   }
+  ],
+  "verdict": "open"
+ },
+ "2938": {
+  "unvetted": "Ciphertext not located: Theal, Records of the Cape Colony III p. 387 (Yonge to Dundas, 6 Jan 1801) only says in an editor's bracket that the enclosures 'excepting a long letter in cypher' are not now to be found, so a cypher letter survives in the Cape despatches but is not printed, no TNA CO 48 item describes it (Discovery searches 14 Nov 2026 returned nothing) and no image exists online. Dundas's reply (p. 483) says the papers were examined after Prediger died on passage and nothing in them implicated others, so a contemporary reading may exist in London. Next step: identify the CO 48 volume or the Cape Archives copy, get an image, and compare with targets/batavia1800."
+ }
+}
