@@ -27182,11 +27182,32 @@
    "source": "Russia sweep, RGAVMF (rgavmf.ru)",
    "prior_art": "open as far as checked (2 Nov 2026: known.py on fonds and names, no hit; archive description only; Tomokiyo, Lasry, DECODE not searched for these Russian files)",
    "needs_archive_scan": "yes",
-   "access_note": "catalogue record on rgavmf.ru; digital copy by order from the archive",
+   "access_note": "RGAVMF electronic copy by order; record https://rgavmf.ru/fond/417/opis-1/edhr-3109 opens by curl. No scans online.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "rgavmf.ru record fetched by curl 9 Nov: 'Шифрованные телеграммы расшифровки и письма на французском языке агента ... A.Cromariot' (ciphered telegrams, decipherments and French letters filed together, so a decipherment likely sits with the ciphertext). known.py Cromariot: only this lead and the sweep README. No scan, no foliation; needs the file from RGAVMF to see cipher and whether decipherments are attached."
+   "scored": "vetted",
+   "vetting_note": "rgavmf.ru record fetched by curl 9 Nov: 'Шифрованные телеграммы расшифровки и письма на французском языке агента ... A.Cromariot' (ciphered telegrams, decipherments and French letters filed together, so a decipherment likely sits with the ciphertext). known.py Cromariot: only this lead and the sweep README. No scan, no foliation; needs the file from RGAVMF to see cipher and whether decipherments are attached.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Archive description only: RGAVMF record https://rgavmf.ru/fond/417/opis-1/edhr-3109 (fetched by curl 16 Nov 2026): fond 417 Главный морской штаб, опись 1 (Военно-морской ученый отдел), ед. хр. 3109, делопр. № 26577, раздел 1904, начальная и конечная дата 1904.",
+     "extent": "One file of ciphered telegrams, their decipherments and French letters of the agent A. Cromariot; the record gives no leaf count.",
+     "cipher": "The record names ciphered telegrams ('Шифрованные телеграммы') and their decipherments ('расшифровки') together in one file; the cipher type is not stated and was not seen."
+    },
+    "prior_art": {
+     "decode": "known.py on Cromariot and 'Ф. 417': only this lead and the Nov 2026 Russia sweep files; no DECODE record.",
+     "tomokiyo": "cryptiana unsolved.htm (fetched 15 Nov 2026) grepped for Cromariot, Russia/Russian, RGAVMF and Petersburg: no entry for this file.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Cromariot and Russian material: only an unrelated 1725-1730 dossier.",
+     "edition": "The archive record itself lists decipherments ('расшифровки') filed with the telegrams, which is a contemporary reading of them; no printed edition was found.",
+     "literature": "Web search on Cromariot with Russian naval intelligence, Spain, Portugal and 1904 found nothing on him; Russian naval intelligence of the Russo-Japanese war is studied (Gurinov 2021) without this name."
+    },
+    "key_check": "No key is named in the record; the Main Naval Staff fond 417 may hold the 1904 naval cipher, not searched. A key does not change the verdict.",
+    "duplicates": "known.py on Cromariot, fond 417 and the date found no other lead or catalogue entry.",
+    "verdict": "read",
+    "closed": "Closed as read: the RGAVMF record files the decipherments ('расшифровки') with Cromariot's ciphered telegrams of 1904, so the texts were read at the time; whether every telegram has its decipherment is not shown."
+   }
   },
   {
    "id": 1884,
