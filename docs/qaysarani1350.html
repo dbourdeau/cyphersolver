@@ -82,7 +82,7 @@ introduced by &ldquo;so-and-so wrote to me&rdquo;, the cipher follows in an alph
 compiler writes that he worked it out and gives the verses. The manuscript has lost its beginning and its end. On the last
 page, f. 106v, a message from Ibn al-Qaysarani stands in seven lines of signs. Under it the compiler begins &ldquo;I unravelled
 it at once &hellip; and found that he had made the lam-alif &hellip;&rdquo;, and there the manuscript breaks off. The leaf
-with his solution is gone. The sender&rsquo;s name was read as Ibn al-Qaysarani in the project&rsquo;s survey of the volume and was not re-read letter by letter here.</p>
+with his solution is gone. The sender&rsquo;s name was read as Ibn al-Qaysarani in the project&rsquo;s survey of the volume and was not re-read letter by letter here. A separate attempt on the same leaf (see section 04) re-read the name at 5x as Ibn al-Qubabi (or al-Qabbani); the two readings are not reconciled.</p>
 <figure data-credit="University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217)"><img src="qaysarani1350_cipher.jpg" width="1100" height="938" decoding="async" alt="Seven lines of invented cipher signs between two lines of Arabic script, with small red letters over the first signs of the first line" loading="lazy"><figcaption>F. 106v, lines 5&ndash;13: the name of the sender, the seven cipher lines, and the compiler&rsquo;s remark that breaks off. The page reads from right to left. <span class="credit">Image: University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217).</span></figcaption></figure>
 <p>The transcription has 89 signs of 22 kinds in 21 words. A word runs over the end of a line twice. Two signs of line 1
 are rubbed, and three signs of line 2 stand in a damaged patch.</p>
@@ -167,6 +167,13 @@ standard deviations) and two passes, and in all four runs the reading scored abo
 the shuffled signs, run as a control, does not pass. The signs were not
 compared with the other alphabets of the volume. Two searches for the exact wording of the verses found no other copy,
 so it is not known whether they are Ibn al-Qaysarani&rsquo;s own.</p>
+<p>A separate attempt on the same leaf, made from the images alone, did not read it and is kept in
+<code translate="no">targets/qaysarani1350/ljs51_attack/</code>. Compared with this key on 16 November 2026, it saw the same signs at 77 of 85
+aligned positions, found the ṭawīl metre and a rhyme in <em>-ā</em> after ض, and had the two commonest signs (ا and و) right. Of its
+values for other signs, 11 of 37 positions agree; it gave the alif sign a second value as lam, which this key does not have, and its
+words are not these. It is a failed search, run with a letter model whose normaliser split vowelled words (fixed since; not rerun): with the metre alone, more than 100,000 readings of the opening half-verse scanned, and it
+ended with a scanning candidate, not a reading. It read the second and fourth red letters over the first five signs as ta and
+ghayn, where this page reads nun and ayn.</p>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
@@ -222,6 +229,7 @@ the sound-eyed sleepless lover against the sick-eyed sleeper.)</pre></details>
 <ul>
 <li>University of Pennsylvania, Kislak Center, LJS 51, f. 106v: <a href="https://openn.library.upenn.edu/Data/0001/html/ljs51.html">OPenn</a>, image 0084_0217 (<a href="https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0217.tif">master TIFF</a>).</li>
 <li><a href="https://search.digital-scriptorium.org/catalog/DS738">Digital Scriptorium DS738</a>, the catalogue record of the manuscript.</li>
+<li>The earlier ciphertext-only attempt on the same leaf, with its transcription, solvers and log: <code translate="no">targets/qaysarani1350/ljs51_attack/</code> in the repository.</li>
 <li>The survey of the volume that found this cipher without its solution (it checked the layout of every page, not each plaintext): <code translate="no">research/sweep_2026-11-15_arabic/part_A.md</code> in the repository.</li>
 </ul>
 <p class="muted">The transcription, key, decoder and notes are in the repository (<code translate="no">targets/qaysarani1350/</code>). Manuscript images: University of Pennsylvania Libraries, public domain, via OPenn.</p>

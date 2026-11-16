@@ -3,8 +3,12 @@
 This sweep was run by a Claude Code session (Claude Opus 5.5) for Daniel Bourdeau, in three parallel passes. It continues
 `research/sweep_2026-11-15_arabic/` on the gaps that sweep left open.
 
-**State: not merged.** `candidates.json` holds 4 rows, and `merge.py` (dry run) reports 4 new. Nothing is in
-`research/leads.json` or `catalogue.json` yet; the merge waits for the owner's go-ahead.
+**State: merged 16 Nov 2026** (owner's go-ahead) into `research/leads.json` as **2941** (row 0, Sacromonte Lead Book 17), **2942**
+(row 2, Gotha) and **2943** (row 3, Sachau 218). Row 1 (Gordon's note, Durham SAD.250/1/550) was not merged: it is the same
+document as catalogue 2939 and `targets/gordonmudir1884` (14 Nov 2026), so `archive_sweep_2026-10/exclude.json` leaves it out.
+2941 and 2943 were vetted open (`research/vetting_2026-11-16_arabic_4/`) and promoted to the catalogue; 2942 stays a lead, unvetted
+(the Gotha leaf has not been seen). The ids first given on the branch (2930-2933) were replaced by these when main's own lead ids
+passed them.
 
 | Notes | Area | Rows | Vetted |
 |---|---|---|---|

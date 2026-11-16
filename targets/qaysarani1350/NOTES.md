@@ -152,6 +152,11 @@ opened for it):
   (`scansearch.py`). So the independent search **failed** to read the text; it found the metre, the rhyme class, the
   glyph inventory and a handful of letters, and it is the ciphertext-only evidence for how far metre alone gets on an
   89-sign, 22-sign cipher with six single-use signs.
+- **A fault in the attack's language model, found on integration.** `lm.norm(..., 'arabic28')` turned vowel signs into spaces instead of
+  dropping them, so a vowelled verse of the corpus (the build keeps the signs) was cut into letter fragments. It is fixed in
+  `lang/lm.py`. The attack's runs (annealing scores, `wordsearch.py`, the syllable table of `scansearch.py`) predate the fix and
+  were not rerun here (the corpus is not in the checkout, and was not rebuilt), so the failure is that of the search as run; it
+  is not shown that the fixed model would also fail, and the scores in the attack's log should not be compared with `ar-mamluk`.
 - **The accepted reading is not changed by it.** Nothing in the attack contradicts the key's checks above; its closest
   claim (a different reading of the gloss, ta and ghayn) is not supported by the sense of the word.
 - **One point left open: the sender's name.** The attack re-read the name after "wa-kataba li" at 5x as Ibn al-Qubabi (or

@@ -1,5 +1,12 @@
 # Vetting, Daniel Bourdeau (2026-11-16)
 
+**Ids.** This vetting was written against the ids 2931-2933 that the branch gave the sweep's rows. When the sweep was merged
+into `research/leads.json` on current main (16 Nov 2026, after the merge of the Africa sweeps) the rows got fresh ids:
+**2933 is now 2943** (Sachau 218), **2932 is now 2942** (Gotha), the vetted Sacromonte row **2930 is now 2941**, and row 1
+(Gordon's note, **2931** below) was not merged at all: it is the same document as catalogue 2939 and `targets/gordonmudir1884`,
+which main now holds, so it is excluded in `archive_sweep_2026-10/exclude.json`. `vetting.json` is keyed by the new ids and no
+longer carries the 2931 note, which is kept below as written.
+
 Run by Daniel Bourdeau with a Claude Code session (Claude Opus 5.5), 16 Nov 2026, following `research/VET.md`. Leads
 from the Arabic sweep 2 of 16 Nov 2026 (`research/sweep_2026-11-16_arabic_2/`, parts B and C). Open issues and pull
 requests searched for each id and for Gordon, Sachau and Gotha before starting.

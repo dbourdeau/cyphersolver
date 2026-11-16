@@ -2,6 +2,8 @@
 
 Status: folded into `targets/qaysarani1350/` (16 Nov 2026); not a target of its own. This is the working log of the attack as it
 stood when it was closed; the comparison with the accepted reading is in `../NOTES.md`, section "The ciphertext-only attempt".
+The scores and searches below were run before `lm.norm(..., 'arabic28')` was fixed to drop vowel signs instead of turning them into spaces
+(16 Nov 2026, on integration); they were not rerun (see `../NOTES.md`).
 Paths below named `targets/ljs51/` are now `targets/qaysarani1350/ljs51_attack/`.
 
 **Superseded (16 Nov 2026): f. 106v was read by another session in `targets/qaysarani1350/` (one-to-one key from the red

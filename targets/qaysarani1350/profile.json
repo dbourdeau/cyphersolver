@@ -273,6 +273,15 @@
    "kind": "verification",
    "what": "ljs51 attack (separate ciphertext-only session, folded in; targets/qaysarani1350/ljs51_attack/): Outcome of the attack: no reading, outcome not solved. Compared with the accepted key on 16 Nov 2026: same glyph inventory and the tawil metre found; letters of the common signs found; most mid-frequency signs and the sense wrong.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "ljs51 attack (folded in): on integration, found that the attack's Arabic normaliser (lm.norm arabic28) turned vowel signs into spaces, splitting the vowelled verses of its corpus; fixed in lang/lm.py. The attack's runs predate the fix and were not rerun, so its failure is that of the search as run.",
+   "result": "partial"
   }
  ],
  "outcome": {
