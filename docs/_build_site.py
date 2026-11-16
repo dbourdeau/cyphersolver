@@ -922,7 +922,7 @@ def mirror_findings(s, n=RECENT_VISIBLE):
             f'<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups &rarr;</a></p>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
-FEATURED = ['burr1804', 'siena12', 'lannoy1527', 'stade1710', 'lejava1921', 'army1902']   # three of the project's, three contributed (Lasry, Dudout, Harumi-Matsuba); refreshed 14 Nov 2026
+FEATURED = ['qaysarani1350', 'burr1804', 'siena12', 'stade1710', 'lejava1921', 'army1902']   # three of the project's, three contributed (Lasry, Dudout, Harumi-Matsuba); qaysarani1350 (oldest key recovered here) replaced lannoy1527 on 16 Nov 2026
 BROWSE_LANGS = 6        # languages listed under "Browse the write-ups"; the filter on writeups.html has the rest
 
 def press_html():
