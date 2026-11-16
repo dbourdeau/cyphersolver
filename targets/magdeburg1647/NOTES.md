@@ -119,7 +119,8 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 - The 1645 annexes Nos. 31 and 32 (f.210-212): delta lines, the Elbe clause, zeta, the 27/72 year, the secretary's surname - blocker: not-attempted; 16 items in `nr540/f210_gaps.tsv`, the clear copies are in Nr. 540 Bd. 1.
 - Nos. 20, 21, 22, 23 gamma (frames 250-259) and Nos. 3, 20 (frames 161-162): holes and marked repairs in most lines, strict 54-57% on the three with a word ledger - blocker: not-attempted; the hand again, and clear copies in Nr. 540 or drafts in Nr. 529 not yet searched for them. No. 29 (frames 244-245) and the cipher in the letters of frames 186, 203, 252, 281 are filed as blind decodes of 16 Nov 2026 (below); frames 15-28 and 283 are not filed.
 - Name signs (Catalogus, frames 3 and 278) left as holes ('|') - blocker: not-attempted.
-- f.101 is short (35 cipher words, one reader) - blocker: too-short for its own control; its clear draft is in Nr. 529 frame 532.
+- f.101 is short (35 cipher words) - blocker: too-short for its own control. Read on 14 Nov 2026 with its clear draft (Nr. 529 frame 532, transcribed in `readings/f101_R5.md`); the R5 transcription and the draft reading are one AI reader's, not checked by a person - blocker: not-attempted (a second reader).
+- f.5 and f.7 (= f.6 verso) are read in part, f.6 recto is decoded, not read (14 Nov 2026 section at the end): 2, 4 and 4 cipher words unread, 6, 8 and 15 repairs the Nr. 529 drafts do not carry, and the name signs unvalued (5, 9 and 19) - blocker: not-attempted; the letters R5 could not settle need a second reader on the image, the clear German of the slips between the cipher runs is only partly transcribed, and the name signs wait on the Catalogus (line below).
 - Blind sibling decodes of 16 Nov 2026 (`blind16/`): No. 29 (77.4%), frame 281 (87.8%), frame 203 (70.9%) and frame 186 (66.1%, 62 letters) pass the strict letter judge and the shuffle control but read as sentences only in part (`_check_reading`: not readable), so all four are 'decoded, not read'; frame 252 fails at 53.8% (recorded only) - blocker: not-attempted; the hand (recurring o/c, f/n, q/d, t/l, k/o slips, `blind16/JUDGE_NOTES.txt`) and 147 drawn name signs in No. 29; a second blind transcription, the Catalogus name signs and a search of Nr. 529 / Nr. 540 for clear copies are workable.
 
 ## Escalation
@@ -129,6 +130,7 @@ German with Latin phrases, reports from the envoys at Osnabrück in 1647. Holes 
 - [x] known-keys: the envoys' own key (frame 168, AMPHICTYONES) equals KEY_v2 in all 12 pairs; decoding the slips with it gives the same letters
 - [ ] print: Acta Pacis Westphalicae and older Magdeburg histories not searched page by page
 - [x] key-rebuild: not needed (the key is complete)
+- [x] retry on the four slips with a clear draft (14 Nov 2026): f.5, f.6 recto and f.101 transcribed again from the image (R5, not blind) and read against the Nr. 529 drafts, f.7 read from R3 and its draft: f.101 read, f.5 and f.7 read in part, f.6 recto still decoded, not read
 - [ ] retry: f.102, f.104 and f.204 re-transcribed by a third reader (R3, non-blind, 13 Nov 2026, `NOTES_R3.md`); f.7 also, as a check against its draft; f.101 not; blind fourth reader b198 (13 Nov 2026, `blind4_b198/`) on f.102, f.104, f.204: 26-42% strict, now the figures of record; still below 65% (open)
 
 ## How to reproduce (standard-library Python, no network)
@@ -499,3 +501,38 @@ transcriptions, the readings or the English of these five texts.
   clears the reading check, which was failing on main for this folder. A pull request that files a text as read or
   read in part (PR #635: f.101, f.5, f.7) has to set the class back when it merges; the two do not touch the same texts.
 - **No reading review** is recorded: nothing here is offered as a reading.
+
+**Class after the merge with the 14 Nov readings (16 Nov 2026).** This addition and the section below were made on
+separate branches. With f.101 read and f.5 and f.7 read in part (next section), not every entry is "decoded, not read",
+so `outcome.class` is "read in part" again; the four blind decodes above stay "decoded, not read".
+
+## 14 Nov 2026: full texts and readings of the four slips with a clear draft (audit sections I and J)
+
+By Claude (session of 14 Nov 2026). No existing file was changed except `profile.json` and this file; every figure of record above stays as filed.
+
+**Section I.** `outcome.texts` had no entry for f.5 and f.6, although their transcriptions and decodes were in the folder (the training files). Both are now listed. `outcome.key_file` was missing: now `key.tsv`, `gloss/KEY_lasa_v2.txt`, `gloss/worksheet_frame168.txt`. The f.7 entry now also lists the R3 transcription and decode, which were in the folder and not listed.
+
+**Section J: what was tried.** Every entry was "decoded, not read". The four slips whose text survives in clear in Nr. 529 were taken through the re-reading loop (a contemporary clear text exists, so the reading follows the figures and the draft together); f.102, f.104, f.204 and the eight Beling annexes were not touched.
+
+- Images fetched from the LASA viewer (max jpg, one at a time): Nr. 530 frames 8, 10, 11, 117 and Nr. 529 frame 532. Frame 11 was fetched and not used.
+- New transcriptions R5 of f.5, f.6 recto and f.101 (`transcriptions/*_R5.txt`): one AI reader, **not blind** (key, earlier transcriptions, decodes and the Nr. 529 draft pairs known), not checked by a person. Where the image at 2x-3x did not settle a letter, the earlier reader's letter is kept and the word is marked `?`. They carry the clear text of the slip in braces as far as it could be read. Decodes `decryptions/*_R5.txt` (the frame-168 table, cipher=plain per word).
+- Found on the images: on f.6 the letter R1 wrote y in `udydf` (twice) is a double i, so the word is `udiidf` = herren; f.5 `sdk-dodi` = "beyeger" is one word over a line end, read "bey Eger"; f.5 `wir-nzl` (R1 took `wir` for clear text and has `nzl` = fat) = prifat; f.101 `hdifgxdf` = vernomen, `rfbodbzxsl` = insgesambt, `qgfbrtrz` = consilia.
+- The clear draft of f.101, Nr. 529 frame 532 right (fol. 484r), was opened and transcribed (it was only located before): it gives the whole passage and names the three signs of the slip (Schweden, H. Salvius, die Cathol.). The cipher has "vernomen" where the draft has "nachricht erlanget".
+- Readings and English: `readings/f5_R5.md`, `f6_R5.md`, `f101_R5.md`, `f7_R3_reading.md`; `translations/f5_R5.md`, `f6_R5.md`, `f101_R5.md`, `f7_R3_en.md`. In them a word is plain if the decode gives it as it stands or if the draft confirms a repaired word; `[?word]` if repaired without the draft; left as decoded in brackets if not read. f.7 was read from R3 (frozen before its decode and before its reader opened the draft) and `nr529/f7_R3_vs_frame882_pairs.tsv`, with no image.
+
+| slip | cipher words | stand as decoded | repairs the draft confirms | repairs it does not carry | not read | words read / words | with unvalued name signs as holes | `_check_reading`, reading body | state (was decoded, not read) |
+|---|---|---|---|---|---|---|---|---|---|
+| f.101 | 34 | 22 | 9 (+ the 3 signs named) | 1 (`ci`) | 0 | 33/34 = 0.971 | 36/37 = 0.973 | 1.000 | **read** |
+| f.5 | 54 | 29 | 17 | 6 | 2 | 46/54 = 0.852 | 46/59 = 0.780 | 0.714 | **read in part** |
+| f.7 = f.6v (R3) | 82 | 50 | 20 | 8 | 4 | 70/82 = 0.854 | 70/91 = 0.769 | 0.625 | **read in part** |
+| f.6 recto | 100 | 58 | 23 | 15 | 4 | 81/100 = 0.810 | 81/119 = 0.681 | 0.462 (0.591 with the signs taken as names) | decoded, not read (partial reading kept) |
+
+f.6 recto stays decoded, not read: its 19 unvalued name signs and 19 unconfirmed or unread words fall in nearly every sentence, and the body is under the bar of about 0.60 clean sentences.
+
+**What the three say.** f.101 (Dec 1646): in Sweden they were not altogether content that Salvius stayed so long at Münster, so "der Alte" began to grow quieter, the more so as intercepted letters showed what designs the Catholics and the Venetian had. f.5 (Aug 1647): letters lately sent over, among them Father Mulman's to his confessor, were communicated in the original as intercepted near Eger; something in them against the preliminaries; a letter of Schröder almost worse. f.7: it is not always good when two envoys of equal authority serve together; praise of the understanding and moderation of a man said to be coming out in another's place.
+
+**None of this is first for content** (all four are in clear in Nr. 529), and f.5 and f.6 are the key's training text, so they test nothing about the key.
+
+**Profile.** `outcome.class` stays read in part and `outcome.method` stays "read with known key" (owner's decision). `fraction_read` 0.3814 → 0.0432, re-measured as cipher words of the documents that read / all cipher words filed: (54 + 82 + 34) / 3,935 (f.5, f.6 100, f.7 82, f.101 34, f.102 84, f.104 100, f.204 52, Beling annexes 3,429). The old figure was the strict share of single words on the five held-out slips at first pass; those per-slip figures are unchanged in the table of counts above. `documents[]`: f101 read, f6 not read.
+
+**Not done.** f.102, f.104, f.204 (no clear draft found) and the Beling annexes were not re-read; f.210 and f.212 have clear copies in Nr. 540 and a source-assisted edition by the contributor, and were left at the state the integration check of 14 Nov set. The R5 transcriptions have no second reader.

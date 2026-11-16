@@ -70,3 +70,12 @@ The decipherer copied these through as signs. Readings are from context and Bain
 
 - [targets/throck1569/](../throck1569/): Throckmorton to Moray, 20 July 1569, ff. 79–80 of the same volume.
 - [targets/moray/NOTES.md](../moray/NOTES.md): the Add MS 33531 list and the unsolved Moray–Wood cipher.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R8347 was listed without a transcription of the cipher (ff. 73r-v). In order: (1) the folder holds
+only `reading.md`, the decipherment of the time; (2) the DECODE record (public API and record page) carries four
+images and Tomokiyo's key image, no transcription; cryptiana `mary.htm` has the key image only; (3) the images
+could not be fetched: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. So `transcription_missing` is recorded. What unblocks it: the images of ff. 73r-v through
+a DECODE account; the signs can then be labelled from Tomokiyo's Mary-Hamilton key and the transcription checked by
+decoding against `reading.md`. Nothing else changed.

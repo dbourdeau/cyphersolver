@@ -62,9 +62,23 @@ den der König von Preußen" (print p. 51), with 3061 3178 = "durch den" and 390
 The 1811 decipherer of f. 134 wrote "Julii" where the print has "Juny" (22 June) and the heading "B." = Berlin,
 not Dresden.
 
+## 14 Nov 2026: the P.S. (ff. 148-149v) transcribed
+
+The audit asked for a transcription file for the P.S. Images aufn_0165, 0166, 0167 fetched again by curl and the digits
+read in line crops: `transcription/f148-149v_digits.txt` (52 lines: f. 148r 16, f. 148v 16, f. 149r 16, f. 149v 4; 2,472
+digit places counted by script, one unread). A single AI transcription, not checked by a person. f. 148r is the weak
+page: the 1811 decipherment between the lines crosses the digits and the film is small. The P.S. ends on f. 149v l. 4
+with `24675.` and a closing stroke; nothing on f. 150 was transcribed (aufn_0167 shows only the folded outer leaf).
+
+Check, without a key: ff. 148v-149v hold 1,692 digits = 423 four-digit groups exactly; 98 of the 423 occur among the
+397 distinct groups of `f134_digits_draft.txt` and `aufn_0152_L.txt` (1697, 3178, 3061 among them). The phase at which
+groups match shifts from line to line, as on f. 134, so single miscounted digits, or groups that are not all four
+digits long, are not excluded. The transcription was not aligned with the printed no. 22.
+
 ## Remaining gaps
 
 None in the contents: the whole report and P.S. are in print. What was not done here:
+- (14 Nov 2026: the P.S., ff. 148-149v, is now transcribed too, `transcription/f148-149v_digits.txt`; ff. 135-147 are not)
 - the undeciphered sheets were not transcribed beyond aufn_0152 L (`transcription/aufn_0152_L.txt`, 17 lines,
   893 digits, by a transcription agent, unchecked);
 - f. 134 transcribed in draft (`transcription/f134_digits_draft.txt`, 907 digits); the running count is off by one

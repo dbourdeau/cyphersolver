@@ -107,3 +107,7 @@ cipher word on f. 174r (*intimacion*, glossed) is not in the reading file and is
 - [x] print: L&P IV 3271 and 3272
 - [n/a] key-rebuild: read at the time
 - [x] retry: 23 Oct 2026, R8565 decipherment transcribed from the full-resolution images and checked sign by sign
+
+## 14 Nov 2026, full-texts audit: no transcription of the cipher (R8567, R8565)
+
+The audit asks for the cipher as written beside each decryption. Looked in order: (1) no transcription in the folder under another name (R8567: The sign cipher of the three runs on f. 184v was never transcribed; plaintext.txt holds only the interlinear decipherment.; R8565: The sign cipher of the five passages was checked word by word against the decipherment on 23 Oct 2026 (the checked sign groups are quoted in texts/R8565_reading.md, Notes) but never transcribed in full.); (2) the DECODE record page and public API carry no transcription or attachment; (3) the image is not reachable from this session: without a login DECODE serves 200-px thumbnails only (a full-size request returns the placeholder "Insufficient permissions to see the full image"), and the British Library digitised-manuscripts page shows no online copy of Vespasian C IV. So `outcome.texts` carries `transcription_missing` with that reason. A logged-in fetch of the DECODE images unblocks it. No change to class, method, states or fraction_read.

@@ -55,3 +55,12 @@ the 1522 key: its decipherment, somewhere in Salazar A-26, is the text to seek (
 
 Catalogue entry 145 removed on 22 Sept 2026. DECODE correction queued (`decode_updates/queue.json`).
 Images (`img/`) and the record page (`decode/`) are RAH/DECODE material, git-ignored.
+
+## 14 Nov 2026: the cipher has no transcription, and why (audit section I, "no transcription file")
+
+- In the folder: `csp_510.txt` is the 1866 calendar abstract in English. No file holds the cipher.
+- DECODE R9658, public record page: six images, no text attachment; full-size images need a login.
+- RAH: bibliotecadigital.rah.es answered with a bot-check page ("Making sure you're not a bot!"). Not pursued further
+  (no browser in this session). `img/` and `decode/` are git-ignored and not in this checkout.
+- `outcome.texts[0].transcription_missing` records this. Unblocks it: the DECODE images or the RAH scans through a
+  browser; `../lopehurtado/` has the system's code groups, so a transcription could be checked by decoding.

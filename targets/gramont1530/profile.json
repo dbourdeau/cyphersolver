@@ -20,15 +20,16 @@
     "source": "No decipherment found. Lasry decoded the text in 2023, unpublished."
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 536,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "texts/gramont1530_transcription.txt"
    },
    "transcription": {
     "by": "llm from images",
     "source": "Gallica canvas 30",
     "image_quality": "good",
-    "notes": "14 cipher lines (NOTES); no glyph-alias file kept."
+    "notes": "14 Nov 2026: 13 cipher lines transcribed sign by sign (texts/gramont1530_transcription.txt), 536 signs = 552 tokens by --measure --drop-first less 16 separator marks; a single AI transcription, not checked by a person. The first reading (18 Sept) counted 14 lines and kept no alias file."
    },
    "read": "read in part"
   }
@@ -65,7 +66,7 @@
   "word_division": "none",
   "doubled_letters": "special sign",
   "sibling_key": "Lasry's 2023 table 'Gramont's cipher (1530)' (GL.htm, GL/BnF_fr3071_f17.png; copy img/BnF_fr3071_f17.png); Tomokiyo's table from fr. 3019 f. 20 (img/francisGramont.png).",
-  "notes": "Lasry's table lists five unknown signs; three identified here from context: 8Δ = pape, key-ring sign = roy, ʃʃ on a stem = word-initial null. g serves B, V and E. Homophone maxima counted from Lasry's table as transcribed in fr3071_no7_gramont.md (R has 7 forms incl. ligatures; O has 4)."
+  "notes": "Lasry's table lists five unknown signs; two identified here from context: 8Δ = pape, key-ring sign = roy; the 18 Sept reading of ʃʃ on a stem as a word-initial null is not confirmed by the 14 Nov 2026 sign transcription (it stands between 'le' and Z̄). g serves B, V and E. Homophone maxima counted from Lasry's table as transcribed in fr3071_no7_gramont.md (R has 7 forms incl. ligatures; O has 4)."
  },
  "conditions": {
   "prior_solution": {
@@ -139,7 +140,10 @@
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): gramont1530: reading fr3071_no7_gramont.md linked; key = Lasry's table image img/BnF_fr3071_f17.png and texts/key.md (copied verbatim from the reading file). No ciphertext transcription exists in the folder.",
    "result": "partial"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Full-texts audit (section I): no transcription of the cipher was in the folder and none exists elsewhere (no DECODE record named; Lasry's decipherment unpublished). Fetched the leaf from openapi.bnf.fr (IIIF, btv1b9060315f view 30, 4352 x 6081 px) and transcribed the cipher block sign by sign on native-resolution strips: 13 lines, 536 signs, shape labels matched to Lasry's table (texts/gramont1530_transcription.txt). Single AI transcription, not checked by a person; look-alike pairs listed in the file header.", "result": "worked"},
+  {"date": "2026-11-14", "kind": "key from source", "what": "Decoded the transcription mechanically with Lasry's table (texts/gramont1530_decode.md): continuous French over all 13 lines; 532 of 536 signs take a value. The sign 4t reads 'et' at its four places; the COM sign writes con- and com-. Gaps of the 18 Sept reading filled (line 2 'ie suis apres pour le faire mectre a dev[.]e execution'; lines 6-7 'seul pour scavoir quel il y faict et me semble qu'il n'i a que rien'), and 'recepvoir' corrected to 'concepvoir'. Without a value: ʃʃ, Z̄, #, ▣. The earlier note that ʃʃ is a word-initial null is not confirmed: it stands between 'le' and Z̄.", "result": "worked"},
+  {"date": "2026-11-14", "kind": "reading", "what": "Rewrote the cipher block of fr3071_no7_gramont_reading.md and fr3071_no7_gramont_en.md from the decode; read share 0.961 (245 words, 10 holes, v10 measure; 0.933 before). Entry state read in part -> read with a reading review (grade A); fraction_read 0.85 estimated -> 0.993 measured (532/536 signs). outcome.class left at 'read in part' for the maintainer to decide: the transcription has not been checked by a person.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -149,9 +153,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.85,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "fr3071_no7_gramont.md: 'about 85 % of the cipher is read' (ends of lines 1-2 and the middle of lines 5-7 lower confidence). No alias file kept, so not counted.",
+  "fraction_read": 0.993,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "texts/gramont1530_decode.md: 532 of the 536 transcribed cipher signs decode to a letter or word that reads in its sentence (4 signs without a value: ʃʃ, Z̄, #, ▣); 14 Nov 2026. The 18 Sept figure was an estimate of about 85 %.",
   "key": "partial",
   "codes_open": {
    "open": 2
@@ -163,17 +167,12 @@
   ],
   "gaps": [
    {
-    "item": "ends of cipher lines 1-2 and the middle of lines 5-7 (about 15 % of the cipher)",
+    "item": "four signs without a value: ʃʃ and Z̄ (line 1, between 'le' and 'vouloir'), # (line 2, between 'iamais' and 'ie suis'), ▣ (line 2, in 'dev[▣] execution')",
     "blocker": "no-key-material",
-    "detail": "the stretches carry signs Lasry's table leaves unknown (the grid sign, the crown) and the ambiguous g (B/V/E); no gloss, clear copy or decipherment of this letter exists"
-   },
-   {
-    "item": "two of Lasry's five unknown signs (crown, ꝛ-bar or ꟿ) without a value",
-    "blocker": "no-key-material",
-    "detail": "each occurs too rarely here to fix from context"
+    "detail": "each occurs once in this letter; ʃʃ, Z̄ and # are among the five signs Lasry's table leaves unknown, and ▣ is X in his table, which does not fit the word here; no gloss, clear copy or decipherment of this letter exists. The other letters in this key (fr. 3019 f. 20, fr. 3040 ff. 12, 18, fr. 2980 nos. 21-22) are the place to fix them."
    }
   ],
-  "notes": "About 85 % read: the Pope keeps Francisque on the mission instead of Gramont; Rodolfo Pio, bishop of Faenza, to congratulate the King on the return of the Queen and the princes.",
+  "notes": "14 Nov 2026: re-read from a sign-by-sign transcription, 532 of 536 signs. First reading (18 Sept), about 85 %: the Pope keeps Francisque on the mission instead of Gramont; Rodolfo Pio, bishop of Faenza, to congratulate the King on the return of the Queen and the princes.",
   "credits": [
    {
     "who": "lasry",
@@ -197,7 +196,7 @@
    }
   ],
   "texts": [
-   {"doc": "gramont1530", "label": "BnF fr. 3071 no. 7, f. 17, Rome, 21 July [1530]", "decryption": "fr3071_no7_gramont.md", "summary": "Gramont, cardinal, writes from Rome to Montmorency: the Pope keeps \"Francisque\" on the mission rather than Gramont, for fear of Imperial suspicion; Rodolfo Pio, bishop of Faenza and nephew of Carpi, is to leave in 3-4 days to congratulate the King on the return of the Queen and the princes (handed over at the Bidassoa, 1 July 1530).", "note": "No transcription of the 14 cipher lines was kept (read by eye against Lasry's table); the reading gives the deciphered text in capitals with gaps marked. Lasry's own 2023 decipherment is unpublished and not in the repository. 24 Oct 2026: 93.3% of the words of fr3071_no7_gramont_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.", "reading": "fr3071_no7_gramont_reading.md", "translation": "fr3071_no7_gramont_en.md", "language": "fr", "read_share": 0.933, "state": "read in part"}
+   {"doc": "gramont1530", "label": "BnF fr. 3071 no. 7, f. 17, Rome, 21 July [1530]", "decryption": ["texts/gramont1530_decode.md", "fr3071_no7_gramont.md"], "summary": "Gramont, cardinal, writes from Rome to Montmorency: the Pope keeps \"Francisque\" on the mission rather than Gramont, for fear of Imperial suspicion; Rodolfo Pio, bishop of Faenza and nephew of Carpi, is to leave in 3-4 days to congratulate the King on the return of the Queen and the princes (handed over at the Bidassoa, 1 July 1530).", "note": "14 Nov 2026: the 13 cipher lines transcribed sign by sign from the Gallica IIIF image (536 signs; a single AI transcription, not checked by a person) and decoded mechanically with Lasry's table (texts/gramont1530_decode.md); the reading and the English follow that decode. Four signs have no value ([ʃʃ], [Z̄], [#], [▣]); three signs are doubtful. fr3071_no7_gramont.md is the first reading by eye (18 Sept 2026, about 85%). Lasry's own 2023 decipherment is unpublished and not in the repository. Read share 0.961 of the words of fr3071_no7_gramont_reading.md (v10 measure: 245 words, 10 holes), the holes being the four signs, the two word signs in brackets and the clear close, transcribed only in fragments.", "reading": "fr3071_no7_gramont_reading.md", "translation": "fr3071_no7_gramont_en.md", "language": "fr", "read_share": 0.961, "state": "read", "transcription": "texts/gramont1530_transcription.txt", "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences after the re-decode: the cipher block is continuous French from 'vouloir est tousiours bon' to 'de messeigneurs', every letter carried by a transcribed sign and Lasry's table (g chosen between b, v and e by the word); holes are four signs without a value and the fragmentary clear close. Not checked against any other decipherment: none is available."}}
   ],
   "key_file": ["img/BnF_fr3071_f17.png", "texts/key.md"]
  }

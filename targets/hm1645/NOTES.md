@@ -118,3 +118,11 @@ They look like word dividers or nulls, against the "no nulls" of his key file; n
   there before your plaintext was compared (19 Sept 2026).
 - The low figures your key leaves without a value (78, 77, 16 ...) are treated as open, not as nulls, because they
   fall between words while your key file says "There are no nulls".
+
+## 14 Nov 2026: full-texts pass, key file listed
+
+`outcome.key_file` was missing although the contribution includes "key extended or corrected". It now points at
+`texts/hm1645_codes.tsv`: the project's own key work of 22 Oct 2026 (292 = by and 435 = next corrected, and the
+nomenclator values proposed from the codebook's alphabetical bands). This file is the extension only. George Lasry's
+base key "TNA SP 106" is his DECODE record file (DOC_R785_D3059), which stays out of the repository as before, so
+the folder still holds no complete key; nothing else changed.

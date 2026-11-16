@@ -211,6 +211,12 @@
    ],
    "what": "Integration check of PR #563: held-out score reproduced with an independent decoder from key.tsv (19/24 words = 0.792, characters about 0.963; the controls' 0.167 is the four 'und'; without them 15/20 = 0.75, the bar); key_K3.json SHA-256 matches the frozen value, order of events by the contributor's record; Landesarchiv BW images fetched with curl: Bü 702 Bild 17 about 55 groups agree (one extra 20 in 'angegriffen' in the transcription, score unchanged), Bü 699 Bild 75 both passages agree; unglossed reading reproduced, strict 14/24; lead 2037 found (the PR said none) and pointed here.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Full-texts pass: bu696 and bu702 had no outcome.texts entry. bu702: its ciphered words and glosses were in the folder (frozen/train_k3_b702_16_v2.tsv, held-out block of transcription.txt); decoded word by word with key.tsv by a decoder written for the purpose (decode_k3.py -> bu702_decryption.txt; 38 of 54 words agree with the gloss letter for letter with doubles collapsed), glosses set out in bu702_gloss.txt; listed as 'not prose' (a word list). bu696: neither tokens nor glosses are in the folder (only the hashes of the contributor's files); the Landesarchiv image request failed with a database-connection error; listed with transcription_missing and a note file bu696_held.md.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -287,6 +293,30 @@
      "date": "2026-11-14",
      "note": "14/24 words sure, 6 probable, 4 codes unresolved; passages glimpsed during triage before the protocol (declared)"
     }
+   },
+   {
+    "doc": "bu702",
+    "label": "Bue 702 (1799), Bild 16 and 17: the ciphered words of the glossed passages",
+    "transcription": [
+     "frozen/train_k3_b702_16_v2.tsv",
+     "transcription.txt"
+    ],
+    "decryption": "bu702_decryption.txt",
+    "contemporary": "bu702_gloss.txt",
+    "language": "de",
+    "state": "not prose",
+    "summary": "The 54 ciphered words of two glossed reports of 1799 (Swiss affairs: the Helvetic government and legation, its contingent, Austria), each with the gloss of the time: 30 words of Bild 16 that K3 was built on and the 24 held-out words of Bild 17 and the end of Bild 16.",
+    "note": "A list of ciphered words with their glosses, not a continuous text: the reports are otherwise in clear and are not transcribed. bu702_decryption.txt decodes each word with key.tsv beside its gloss (decode_k3.py, 14 Nov 2026): 38 of 54 agree letter for letter once doubles are collapsed; the others differ by a homophone, an umlaut or one sign. Bild 19, listed in documents[], is not in the folder."
+   },
+   {
+    "doc": "bu696",
+    "label": "Bue 696 (1797), Bild 7-9, 29-31, 44, 50: glossed passages (key source)",
+    "transcription_missing": "The contributor's token transcription of the 116 glossed words (transcription/train_pairs.tsv, train_codes.tsv, v0007.txt, holdout_v0029/0044/0050.tsv, hashed in frozen/GEL-CLE.sha256) was not delivered with PR #563; only the hashes are in the folder. A copy of those files from the contributor (verifiable against the hashes), or a new transcription from the Landesarchiv images, would supply it; the image request rebuilt from the abbreviated address in NOTES.md returned a database-connection error on 14 Nov 2026.",
+    "decryption": "bu696_held.md",
+    "language": "de",
+    "state": "not prose",
+    "summary": "Glossed passages of the 1797 reports (Talleyrand, Rastatt, Campo Formio) from which the first keys were built; the decipherment of the time stands over every cipher line.",
+    "note": "bu696_held.md is not a text of the passages: it lists what the folder records about them (the frozen file names and hashes, the two failed tests of the 1797 keys, the Georgi/albert remark on Bild 50). Neither the cipher tokens nor the glosses of Bue 696 are in the folder."
    }
   ],
   "key_file": "key.tsv",

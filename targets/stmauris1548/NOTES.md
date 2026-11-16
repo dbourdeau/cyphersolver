@@ -179,3 +179,7 @@ text; not opened.
 (`fetch.py`, `bands.py`, `lines.py`, `ruler.py`, `compare.py`, `merge.py`, `ngram.py`, `solve.py`, `read.py`,
 `show.py`, `heldout.py`, `check_marks.py`). `model/quad.npy` is rebuilt by `ngram.py` and is not in git. No images are
 included.
+
+## 14 Nov 2026 full-texts audit
+
+The full-texts check reports the letters of 1547 (cc. 1r-2r) and of 12 Mar 1548 (cc. 5r-8v) as documents without texts. That is true and stays so after this pass: neither has a sign transcription, so there is nothing to decode with `key.tsv`. The Estense manifest of cc. 1-2 was requested once and answers (HTTP 200), so the images are reachable with `scripts/fetch.py`; the blocker is the work, not access. The cipher is graphic signs (about 50 shape classes, `SIGNS.md`); the two letters that are read each took two blind passes and a merge (`merge_log.tsv`), and a single unchecked pass over 11 more pages would not be a faithful transcription. No entry was added to `outcome.texts` for them, so that the list does not point at files that do not exist. What closes it: two passes of cc. 1r-2r and of the cipher blocks of cc. 5r-8v with the names of `SIGNS.md`, then `scripts/read.py` with the frozen table; the glosses on 1r, 1v and 2r typed as the contemporary decipherment.

@@ -66,7 +66,7 @@
   },
   {
    "id": "K259-1764-10-05",
-   "read": "not read",
+   "read": "read",
    "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00118-00119; clear text image 120",
    "date": "1764-10-05",
    "year": 1764,
@@ -76,9 +76,9 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "The clear page on image 120 is the writer's draft of the same despatch (same opening 'Sire Votre Majesté', compositional corrections); tested as plaintext, it does not fit the cipher in order."
+    "source": "Contemporary clear text on image 120, a draft with struck and rewritten phrases. The earlier verdict here ('tested as plaintext, it does not fit the cipher in order') was withdrawn on 12 Nov 2026: a key rebuilt from it decodes 118-119R group by group and passed a held-out test (NOTES, 12 Nov section; dudout/). Corrected in this field on 14 Nov 2026."
    },
    "length": {
     "tokens": 821,
@@ -736,6 +736,12 @@
    ],
    "what": "Strict counts with research/reading_audit/v10_relabel.share: 6 Mar 1764 622 words, 1 doubtful, read share 0.998; 15 Nov 1765 610 words (gloss 367), no hole, 1.000. English translations and summaries in sysA_1616/reading_1764-03-06.md and reading_1765-11-15.md. Both read from the existing decipherment; reading_review left to a reviewer.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "what": "key_c01, unchanged, run on Payne's preliminary transcription of the 15/4 May 1764 letter (105R-108L): 615 of 838 groups of 100 or more get a value (0.734); French syllables and words come out but no sentence holds; not tested against a clear (106R-107L not transcribed). Kept as a raw decode (tx/d1764-05_key_c01.txt), state decoded, not read.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -814,10 +820,12 @@
   "texts": [
    {
     "doc": "K259-1764-05",
-    "label": "May1764 numeric transcription; no decryption",
+    "label": "Chiffer n:o 1, 15/4 May 1764 (105R-108L): preliminary transcription and raw key_c01 decode; not read",
     "transcription": "payne2026/may1764_cipher.txt",
-    "state": "not prose",
-    "note": "Ciphertext only, not a reading or worksheet plaintext."
+    "state": "decoded, not read",
+    "note": "Mechanical decode shown for checking, not a reading: key_c01 (built on letter 96 only), unchanged, run on Payne's preliminary one-pass transcription on 14 Nov 2026 gives a value to 615 of the 838 groups of 100 or more (0.734); French syllables and words come out (105R.01 'jai ra avoi ec ... con no is sama n', 105R.07 'quel jai ap pri s le ... s ap pa re on ce s', 106L.12 'se on ti ment s') but no sentence holds. Not tested against a clear: the contemporary clear on 106R-107L ('Till chifferbrevet av den 15/4 maj 1764') is not transcribed in the repository, and which of the two letters of 15 May (104R or 105R) it belongs to is not settled. Blocker: none outside; workable from the online images.",
+    "decryption": "tx/d1764-05_key_c01.txt",
+    "language": "fr"
    },
    {
     "doc": "Schuck-143-fragments",
@@ -840,14 +848,15 @@
     "state": "read",
     "language": "fr",
     "summary": "Düben reports to Adolf Fredrik from St Petersburg that the Empress, absorbed by Polish affairs and by news from Sweden, promises to support the King's interests at the coming Diet and will send Stachieff back to Sweden to explain her intentions.",
-    "note": "The clear on 120 is the contemporary plaintext of the letter, a draft with struck and rewritten phrases (NOTES' 'not a decipherment' verdict withdrawn: its words are the cipher's plaintext); the cipher also carries the closing formula that the clear omits.",
+    "note": "The clear on 120 is the contemporary plaintext of the letter, a draft with struck and rewritten phrases (NOTES' 'not a decipherment' verdict withdrawn: its words are the cipher's plaintext); the cipher also carries the closing formula that the clear omits. Strict count 14 Nov 2026: 365 word tokens in tx/p1764-10-05.final.txt, 5 marked doubtful, 360/365 = 0.986. English translation tx/p1764-10-05_en.md.",
     "reading_review": {
      "grade": "A",
      "by": "Brice Dudout (Claude Opus 5.5)",
      "date": "2026-11-12",
      "note": "120 read as French sentences (Daniel's transcription); the key decode of 118-119R follows it group by group (dudout/decode_1764-10-05.txt), 96% of groups known."
     },
-    "translation": "tx/p1764-10-05_en.md"
+    "translation": "tx/p1764-10-05_en.md",
+    "read_share": 0.986
    },
    {
     "doc": "K259-chiffer2-121-124",

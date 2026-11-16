@@ -114,7 +114,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the only text is a Google Books link that is blocked to scripts; nothing of the letter is in the repository. Relabelled decoded, not read; class already solved kept because the decipherment is in print.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "access", "what": "Google Books jscmd=click3 endpoint (signed page-image URLs) answered for Puig 1920 (CuOlkxWnk-EC); PA498-PA507 fetched at 1600 px (research/reading_audit/b26_gbooks_fetch.py), scratchpad only.", "result": "worked"},
   {"date": "2026-10-23", "kind": "transcription", "what": "Puig's app. LXIV (pp. 500-503) transcribed as printed, italics (his decipherment) marked; footnote numbers left out and his identifications listed in the header; misprints kept (fiuxit, redisivit, parisins, toletamum, cerificari, Aragoniat). English translation made. texts/exea1408_reading.md, _en.md, _reread_log.md.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Reading body scored (b17_score.py, la): 0.376 (76/202) on the classical Latin word list; explicit-hole share 1.0 (202/202). Reader's judgement: the sentences hold throughout. Not checkable against figures: no image of the cipher. Relabelled read (grade A).", "result": "worked", "technique": ["language-model scoring"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Reading body scored (b17_score.py, la): 0.376 (76/202) on the classical Latin word list; explicit-hole share 1.0 (202/202). Reader's judgement: the sentences hold throughout. Not checkable against figures: no image of the cipher. Relabelled read (grade A).", "result": "worked", "technique": ["language-model scoring"]},
+  {"date": "2026-11-14", "kind": "access", "what": "Full-texts audit (section I): looked for a transcription of the cipher. None in the folder; none in Puig 1920, who prints the decipherment in italics and no cipher signs; no image of the letter exists (NOTES: ACB Cisma d'Occident papers, not digitised). Recorded outcome.texts transcription_missing with the reason; nothing transcribed.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -144,6 +145,7 @@
   "texts": [
    {
     "doc": "exea1408",
+    "transcription_missing": "The cipher itself is not in hand and cannot be transcribed here: the letter is in the Arxiu Capitular de Barcelona (Cisma d'Occident papers), which the folder's NOTES record as not digitised; Puig y Puig 1920 (appendix LXIV, pp. 500-503) prints only the deciphered words, in italics, never the cipher signs, and his one cipher facsimile (p. 475) is of another letter. Unblocked by an image or an on-site transcription of the ACB original.",
     "label": "Exea to Climent, 23 Aug 1408",
     "decryption": "texts/exea1408_reading.md",
     "summary": "Alfonso de Exea, archbishop of Seville, to Francesc Climent, Perpignan, 23 Aug 1408, in Benedict XIII's circle during the Schism: the defection of Pedro de Frías, the 'Cardinal of Spain', the order to arrest his revenues in Castile, four candidates for the see of Osma, and the Infante Fernando's expulsion of the prelates and of Leonor López from the court. Entirely in cipher, the longest of these texts (2,339 words as printed); Puig y Puig printed it in 1920 (appendix LXIV, pp. 500-503) with the deciphered passages in italics.",

@@ -179,3 +179,11 @@ the film. The checker scores the whole of `reading.md` 0.586 of sentences clean.
 - `corrections.md`: every first-pass slip corrected in reading.md, group by group
 - `translation.md`: English translation
 - `key.txt`: the key with counts
+
+## 14 Nov 2026: reading review recorded
+
+`reading.md` was read as sentences against `decryption.txt` and `corrections.md`, and `translation.md` against the reading
+(Claude, session of 14 Nov 2026). The Spanish is coherent in all five fragments and the translation is complete with the
+same holes. `reading_review` grade B recorded in `profile.json` (coherent, but the mechanical decode is raw and the
+reading normalises about 110 words from the sense, listed in `corrections.md`, none checked on the film). State stays
+read in part (read_share 0.868). The second transcription pass on the four frames (Remaining gaps) was not done.

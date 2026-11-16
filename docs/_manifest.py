@@ -263,7 +263,7 @@ PAGES = [
          rights='Nationaal Archief, 3.01.14 (Oldenbarnevelt), inv. 2019, scans 57, 46 and 43 (CC0).'),
     dict(slug='brulart1615', label='Louis XIII to Br&ucirc;lart de L&eacute;on', year='1615&ndash;17', y=1615.71, place='Poitiers, Paris &rarr; Venice', st='found', stt='read by Tomokiyo',
          title='Louis XIII to Br&ucirc;lart de L&eacute;on in Venice, 1615 and 1617',
-         blurb='Two royal letters to the French ambassador in Venice (BnF fr. 18043 f. 83 and fr. 18044 f. 109, DECODE R2785 and R2786), partly in the Br&ucirc;lart de L&eacute;on cipher of 1615&ndash;18. Satoshi Tomokiyo reconstructed its key and read both letters in 2021; the 1615 letter also carries a contemporary decipherment between the lines. Nothing was deciphered here; a few symbols Tomokiyo left open are probably nulls.',
+         blurb='Two royal letters to the French ambassador in Venice (BnF fr. 18043 f. 83 and fr. 18044 f. 109, DECODE R2785 and R2786), partly in the Br&ucirc;lart de L&eacute;on cipher of 1615&ndash;18. Satoshi Tomokiyo reconstructed its key and read both letters in 2021; both letters carry a contemporary decipherment between the lines, transcribed here and checked against his key. No new decipherment was made here; a few symbols Tomokiyo left open are probably nulls.',
          quote='&ldquo;retirer a Gennes&rdquo; (interlinear decipherment, 15 Sept 1615)',
          rights='Biblioth&egrave;que nationale de France, via DECODE R2785'),
     dict(slug='andreae1616', label='Chymische Hochzeit inscriptions', year='1616', y=1616, place='Strassburg (printed book)', st='found', stt='already read',
@@ -670,7 +670,7 @@ PAGES = [
          rights='The National Archives, Kew, via DECODE R929'),
     dict(slug='rupert', label='Rupert and Digby-coach ciphers 1645&ndash;46', year='1645&ndash;46', y=1645.8, place='Worcester &rarr; Prince Rupert; intercepts to the King', st='partial', stt='read in part',
          title='Maurice to Rupert, 1645, and the Digby-coach intercepts, 1646: still unread',
-         blurb='Two royalist cipher letters that Cryptiana lists with no decipherment, Prince Maurice to Rupert (Worcester, 7 July 1645) and the intercepts of May 1646 in BL Add MS 72438 ff. 9&ndash;10, were transcribed and tried against all 73 keys taken in Lord Digby&rsquo;s coach (index f. 25r). None fits, and they stay unread, with f. 104 and a Trevor letter to Rupert. What was deciphered is another letter in the volume: f. 107, in graphic signs, 122 of its 128 words with the key sheet beside it (f. 106), a woman writing to a royalist officer who got safe to the King.',
+         blurb='Two royalist cipher letters that Cryptiana lists with no decipherment, Prince Maurice to Rupert (Worcester, 7 July 1645) and the intercepts of May 1646 in BL Add MS 72438 ff. 9&ndash;10, were transcribed and tried against all 73 keys taken in Lord Digby&rsquo;s coach (index f. 25r). None gave sense; the key of f. 10 was later identified as Digby key no. 129, of which one page survives, and they stay unread, with f. 104 and a Trevor letter to Rupert. What was deciphered is another letter in the volume: f. 107, in graphic signs, 122 of its 128 words with the key sheet beside it (f. 106), a woman writing to a royalist officer who got safe to the King.',
          quote='&ldquo;God knowes how ioyfull I was to heare you got safe to the King&rdquo;',
          rights='British Library, via DECODE'),
     dict(slug='forster', label='Forster', year='1644', y=1644.2, place='France', st='found', stt='read by others, verified',
@@ -1150,7 +1150,7 @@ PAGES = [
          rights='Manuscript rights: Biblioth&egrave;que nationale de France. Text: Scheurer 1969, Le Grand 1688'),
     dict(slug='langeac1529', label='Langeac 1529', year='1529', y=1529.04, place='Venice &rarr; the Court', st='solved', stt='key from the ciphertext',
          title='Langeac to Montmorency, Venice, 14 January 1529',
-         blurb='Eleven cipher lines in a despatch of Jean de Langeac, bishop of Avranches, ambassador at Venice, to Anne de Montmorency (BnF fr. 3083 no. 8). George Lasry recovered the key, &ldquo;Avranches&rsquo; cipher 1&rdquo;, in 2023 and deciphered the letter then, unpublished; his table was applied here and refined. All but about six signs are deciphered: Saint-Pol wants leave to quit the army in Lombardy, and the Signoria refuses.',
+         blurb='Eleven cipher lines in a despatch of Jean de Langeac, bishop of Avranches, ambassador at Venice, to Anne de Montmorency (BnF fr. 3083 no. 8). George Lasry recovered the key, &ldquo;Avranches&rsquo; cipher 1&rdquo;, in 2023 and deciphered the letter then, unpublished; his table was applied here and refined. All but nine of 437 signs are deciphered: Saint-Pol wants leave to quit the army in Lombardy, and the Signoria refuses.',
          quote='&ldquo;ce seroit la totalle ruine des emprinses&rdquo;',
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
     dict(slug='gramont1529', label='Gramont 1529', year='1529', y=1529.8, place='Rome &rarr; the Court', st='solved', stt='key from the ciphertext',
@@ -1160,7 +1160,7 @@ PAGES = [
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
     dict(slug='gramont1530', label='Gramont 1530', year='1530', y=1530.55, place='Rome &rarr; the Court', st='partial', stt='read in part',
          title='Gramont to Montmorency, Rome, 21 July 1530',
-         blurb='Fourteen cipher lines from Gabriel, cardinal de Gramont, to Anne de Montmorency (BnF fr. 3071 no. 7). George Lasry recovered the key, &ldquo;Gramont&rsquo;s cipher (1530)&rdquo;, in 2023 and deciphered the letter then, unpublished; his table was applied here and about 85% of the cipher deciphered. The Pope sends Francisque instead of Gramont, and a nuncio is to greet the King on the return of the Queen and the princes.',
+         blurb='Thirteen cipher lines from Gabriel, cardinal de Gramont, to Anne de Montmorency (BnF fr. 3071 no. 7). George Lasry recovered the key, &ldquo;Gramont&rsquo;s cipher (1530)&rdquo;, in 2023 and deciphered the letter then, unpublished; his table was applied here and 532 of 536 signs deciphered. The Pope sends Francisque instead of Gramont, and a nuncio is to greet the King on the return of the Queen and the princes.',
          quote='&ldquo;congratuler avec le roy de la venue de la royne et de messeigneurs&rdquo;',
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
     dict(slug='devil1539', label='The Devil&rsquo;s Handwriting 1539', year='1539', y=1539.15, place='Ludovico Spoletano &rarr; the demon Amon', st='found', stt='not a cipher',
@@ -1275,7 +1275,7 @@ PAGES = [
          rights='Uppsala University Library, C 513, via Alvin (public domain)'),
     dict(slug='jantini1517', label='Fantini 1517&ndash;18', year='1517&ndash;1518', y=1517.5, place='Buda, Eger &rarr; Ferrara', st='partial', stt='read in part',
          title='Benedetto Fantini, Buda and Eger, 1517&ndash;18',
-         blurb='Two letters of an Este agent in Hungary in a two-tier cipher of graphic signs (DECODE R1126, R1127, catalogued as &lsquo;Jantini&rsquo;). A first attempt, ciphertext-only, failed; Brice Dudout then matched the Caprile key of 1519 and deciphered the letters in part: 415 of 492 words.',
+         blurb='Two letters of an Este agent in Hungary in a two-tier cipher of graphic signs (DECODE R1126, R1127, catalogued as &lsquo;Jantini&rsquo;). A first attempt, ciphertext-only, failed; Brice Dudout then matched the Caprile key of 1519 and deciphered R1126 in part: 415 of 492 words; R1127 gives no Italian under the key.',
          quote='&ldquo;&hellip; per la mandata dil duca Lorezo in Franza&rdquo;, then two pages of signs',
          rights='Archivio di Stato di Modena, via DECODE R1126'),
     dict(slug='caprile1519', label='Caprile 1519', year='1519', y=1519.19, place='Eger &rarr; Ferrara', st='stuck', stt='not solved',
@@ -1988,7 +1988,7 @@ PAGES = [
          rights='Manuscript rights: Biblioth&egrave;que nationale de France'),
     dict(slug='nevers1574', label='Nevers 1574', year='1574', y=1574.74, place='Lyon &rarr; the duke of Nevers', st='partial', stt='read in part',
          title='Henriette de Cl&egrave;ves and Renato Birago to Nevers, 1574',
-         blurb='Two letters from Lyon to the Duke of Nevers in substitution ciphers of graphic signs, each with its own contemporary decipherment. Birago&rsquo;s cipher flap covers a complete clear copy, transcribed in full; the duchess&rsquo;s interlinear decipherment is faded and was transcribed only in part. No key was applied: the similar 1584 Nevers alphabet does not fit.',
+         blurb='A cipher letter of Henriette de Cl&egrave;ves and a cipher slip pasted on a clear Italian letter of Renato Birago, both in one substitution cipher of graphic signs with a contemporary French interlinear decipherment. An alphabet rebuilt from the decipherment decodes both; four overwritten lines of f. 15v stay open. The similar 1584 Nevers alphabet does not fit.',
          quote='&ldquo;lor Maest&agrave; sono di buonissima volont&agrave; di proveder l\'Eccellenza Vostra di governo&rdquo;',
          rights='Manuscript images: Biblioth&egrave;que nationale de France, via Gallica'),
     dict(slug='pelissier1592', label='Pelissier 1592', year='1592', y=1592.7, place='Burgos &rarr; France', st='partial', stt='read in part &mdash; 91% of words',
@@ -3317,7 +3317,7 @@ IMAGES['emery1636'] = None
 IMAGES['ferdinand1634'] = None
 IMAGES['andreae1616'] = ('andreae1616_lead.jpg', 'P. 97: the tablet behind Venus&rsquo;s bed, in the novel&rsquo;s invented alphabet: WAN DIE FRUCHT MEINES BAUMS WIRT VOLLENDS VERSCHMELZEN &hellip;', 'Embassy of the Free Mind (Ritman Library), via DECODE R4502')
 IMAGES['labbe1582'] = ('labbe1582_lead.jpg', 'The May cipher: <i>mais</i> plusieurs <i>ne pleureroient</i>, BnF fr. 3198 no. 37', 'Biblioth&egrave;que nationale de France, via Gallica btv1b9060073v view 77')
-IMAGES['nevers1574'] = ('nevers1574_lead.jpg', 'BnF fr. 3315 f. 21r: Birago\'s cipher flap with an Italian interlinear decipherment; the clear fair copy lies beneath it', 'Biblioth&egrave;que nationale de France, fr. 3315 f. 21r, via Gallica view 23')
+IMAGES['nevers1574'] = ('nevers1574_lead.jpg', 'BnF fr. 3315 f. 21r: the cipher slip with a French interlinear decipherment, pasted over Birago\'s clear Italian letter', 'Biblioth&egrave;que nationale de France, fr. 3315 f. 21r, via Gallica view 23')
 IMAGES['r688'] = ('r688_lead.jpg', 'HHStA Fasc. 327 Konv. D f. 30r, lines 2&ndash;10: the greetings to aghas and knezes and the names of Stojan&rsquo;s Vlachs, in Cyrillic', '&Ouml;sterreichisches Staatsarchiv, HHStA, via DECODE R688')
 IMAGES['visconti1529'] = ('visconti1529_lead.jpg', 'BnF fr. 3096 f. 91r, lines 1-5: Syre: Sapendo, then the cipher, il timore hano Venetiani di la pace; the code rr in line 3', 'Biblioth&egrave;que nationale de France, fr. 3096 f. 91r, via Gallica')
 IMAGES['selve1535'] = ('selve1535_lead.jpg', 'BnF fr. 3045 f. 43v: en tres grand danger, combien que le nombre des assiegeans fust sans comparaison moindre', 'Biblioth&egrave;que nationale de France, fr. 3045 f. 43v, via Gallica')

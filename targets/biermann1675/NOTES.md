@@ -147,3 +147,26 @@ gap), and a comparison of the twelve letters read on both sides. Catalogue 465 n
 `dudout/` holds 26 further letters read with the image-55 key (frozen independently on 26 Oct 2026):
 Høeg 13 Feb - 5 June 1675 (7) and Meyercrone 16 Feb - 21 June 1675 (19, including 23 March, which can be compared
 with `reading_1675-03-23_meyercron.md`). See `dudout/README.md`.
+
+## 14 Nov 2026: reading audit, sections I (full texts) and J (readability)
+
+- The 26 letters contributed by Brice Dudout (`dudout/texts/`) were read as sentences one by one. Each French
+  reading (`*_reading.md`) is coherent from end to end; what is open in them is a handful of name codes left as ‹n›
+  (‹261›, ‹94›, ‹543›, ‹514›, ‹163›, ‹254›, ‹37›, ‹349›, ‹53›, ‹4989›, ‹280›, ‹32›, ‹35›, ‹145›, ‹256›, ‹59›, ‹29›,
+  ‹266›), several with the contributor's gloss in braces. None breaks a sentence. `python decode.py` in `dudout/`
+  was rerun on every transcription and reproduces every `*_decryption.txt` byte for byte. Each entry of
+  `outcome.texts` now carries `reading_review` (grade A) and `read_share` (the decoder's own count, tokens with a
+  value over cipher tokens; lowest 0.976, the 42-token letter to Høeg of 5 June).
+- The decryption files are raw decoder output (unspaced, sign 9 printed as `{r|t|a}`); the sentences are in the
+  reading files, which settle spacing, accents and the r/t/a choice from context. The contributor's English
+  translations are complete in sense but lightly condensed in places (for example the 13 April letter drops
+  "il y a deja quelque temps"); they were left as contributed.
+- Document A (23 March 1675, Meyercron) had no `outcome.texts` entry of its own. Added: `transcription_p104-105.txt`,
+  `reading_1675-03-23_meyercron.md` (line-by-line decipherment and reading) and a new English translation,
+  `reading_1675-03-23_meyercron_en.md`. `decode.py` rerun: 263 cipher tokens, 262 resolved (99.6%).
+- Profile corrected: `outcome.notes` said "only one letter of the copybook read so far" and the
+  `fraction_read_source` said the other letters were not transcribed; both were out of date.
+- Not done: the eleven Høeg letters of 2 Jan - 9 Feb read in this folder (`reading_1675-01-02_hoeg.md` ...
+  `reading_1675-02-09_hoeg.md`) are still not in `documents[]` or `outcome.texts`, and the 26 Dudout entries use doc
+  ids that `documents[]` does not list. Each of the eleven needs a `documents[]` record, a review and a separate
+  English translation file (each reading file carries an English paragraph).

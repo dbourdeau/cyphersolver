@@ -185,6 +185,12 @@
    "kind": "literature search",
    "what": "Szilágyi 1873 Okmánytár (BSB copy) searched with the MDZ IIIF search service: no hit for eleven distinctive words; like clauses only in later French-alliance conditions (p. 27).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Full-texts audit: fol. 491v-492v listed in outcome.texts with what the folder holds, the 12 held-out words of fol. 491v (heldout_f491v.tsv), decoded group by group with key.tsv into decryption_f491v_heldout.tsv; state not prose (a word list). The three pages themselves were not transcribed in this pass.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -245,6 +251,16 @@
      "date": "2026-11-03",
      "note": "The Latin reads as coherent, continuous sense: travel orders, then the alliance conditions (an oath not to desert in good or bad fortune, aid in person, no separate peace, care of the heirs), and the English matches. Weak places: [?Itinere] [?a] se (the word boundary is unclear); [?agat] (41 = g from context only); [?substantiarumque] (the crop gives 86, so the key reads substantiasque); [?deserent] (actually glossed); [?de]fensionem (decodes 'ie'); the final [...] (decodes a-?-e-l-a-t-u-n-t, or a-?-e-l-a-b-u-n-t with 44 = b as on 491v); coniungamus where the cipher spells constr-g-amus; 10 words from the gloss only, including adveniant where the cipher has -ent. The page ends mid-sentence."
     }
+   },
+   {
+    "doc": "f491v_492v",
+    "label": "fol. 491v-492v: only the 12 held-out words at the head of fol. 491v",
+    "transcription": "heldout_f491v.tsv",
+    "decryption": "decryption_f491v_heldout.tsv",
+    "language": "la",
+    "state": "not prose",
+    "summary": "Twelve glossed words from the first lines of fol. 491v (bonorum, hereditatum, successione, dominio, viribus, contra omnes impetitores tuebuntur, damno, nemini, reconciliabuntur): the clause on defending the Prince's heirs in their goods and succession. The rest of the three pages is not transcribed.",
+    "note": "A word list, not a text: the 12 cipher words transcribed after the key was frozen, for the held-out test (column cipher of heldout_f491v.tsv; its gloss column is Camerarius's interlinear decipherment). decryption_f491v_heldout.tsv is key.tsv applied to those groups, one value per group. The cipher of fol. 491v-492v (three pages, interlinear gloss over nearly every word) is otherwise not transcribed: number groups with letter-like signs under a gloss on microfilm, and fol. 491r needed full-size crops and a second reader to settle. Not counted in fraction_read."
    }
   ],
   "key_file": "key.tsv",

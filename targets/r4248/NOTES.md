@@ -38,8 +38,38 @@ Doubtful words of the decipherment: *Carafe*, *[pouvoir?]*, *[Roy?]*, *partir [?
 ## Open
 
 - The key could be tabulated by aligning f. 85 against f. 86 (the plaintext is complete); not needed for the reading.
+  (14 Nov 2026: the values used to check the transcription are listed in `R4248_decode.md`.)
+- f. 86 (Gallica view 159) should be re-read against the cipher decode: nine differences, see the 14 Nov 2026 block.
 - The writer and the cardinal ("Carafe"?) are not identified.
 
 ## Assumptions for George's review
 
 - No Lasry credit on this entry: his Mascon's-cipher table does not apply to R4248, and no file of his covers it.
+
+## 14 Nov 2026: the cipher transcribed and decoded (audit section I, "no transcription file")
+
+- No transcription was in the folder and DECODE R4248 has none (nine images, no text; full-size images need a login).
+- Gallica has the volume: BnF Français 3053, ark `btv1b90601432`, 162 views. **f. 85r = view 157, f. 85v = view 158,
+  f. 86 (the decipherment) = view 159**, f. 87 = view 160. Fetched at full size through
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90601432/f157/full/max/0/default.jpg`. openapi.bnf.fr answered
+  HTTP 500 for view numbers that do not exist (169-173, my first guess) and dropped some connections; retries worked.
+- The cipher is longer than the September estimate: **26 lines** (12 on f. 85r, 14 on f. 85v), **712 signs** (measured
+  with `_check_profile.py --measure` on the sign labels), broken by clear words. `R4248_transcription.txt` gives every
+  sign with a shape label; 8 signs are marked doubtful. A single AI transcription, not checked by a person.
+- Check by decoding: `R4248_decode.md`. One value per label, taken from Tomokiyo's second table where the sign matches
+  it and from the f. 86 decipherment otherwise. All 26 lines come out as French and follow the decipherment, clear
+  links included. Nulls: 30, 22, 19, the three-barred cross, the 3 in a curve.
+- Not resolved: one word in line 16 (decoded "aaiette", where R4248.md has "partir [?]"); the ringed x, which is i/j
+  but also stands where x ("mieulx") and "pape" are expected (probably more than one sign typed alike); the barred oval
+  (r and h) and the reversed c (c and o), look-alike pairs not told apart; one sign with no letter value where the
+  decipherment names the cardinal de Lorraine (labelled CL).
+- **The decode differs from the transcription of f. 86 in R4248.md in nine places** (table in `R4248_decode.md`). The
+  ones that change the sense: "faire fondement dessus vous, qu'est et le scavoir et le pouvoir" (R4248.md: "de vous
+  seul, car c'est a scavoir le premier [pouvoir?]"); "qu'il debveroient totallement se remettre en vostre jugement"
+  (R4248.md: "qu'il cognoistroit totallement le [Roy?] en ce jugement"); "par vostre moien reordonner les conditions"
+  (R4248.md: "par leurs moyens [de] rompre [?]"); "toute capitulation de qui ilz vouloient entierement dependre"
+  (R4248.md: "toute l'application de qui vouldroient entierement se rendre"); "ung seur fondement" (R4248.md: "ung
+  seul fondement"). f. 86 was not re-read on the Gallica scan in this session, so R4248.md is left as it is and the
+  differences are recorded, not settled; `R4248_en.md` has a note pointing here.
+- The key is not written as a file: the values are Tomokiyo's table and the contemporary decipherment. Method and
+  class unchanged.

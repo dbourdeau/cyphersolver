@@ -652,7 +652,7 @@ def sources_html(E, town):
 CAT_JS = r'''
 (function(){
 document.body.classList.remove('nojs');
-var D=JSON.parse(document.getElementById('catdata').textContent),E=D.entries,A=D.arch,G=__GONE__,byId={};
+var D=window.CATDATA,E=D.entries,A=D.arch,G=__GONE__,byId={};
 E.forEach(function(e){byId[e.id]=e;var a=A[e.r]||['','','',''];e.f.cls=e.c;e.f.help=e.k;e.f.arch=e.r;e.f.country=a[2]||'none';});
 var hm=/^#e(\d+)$/.exec(location.hash);
 if(hm&&byId[hm[1]]){location.replace(byId[hm[1]].h||'solve/'+hm[1]+'.html');return;}
@@ -924,7 +924,7 @@ def build_html():
 </details>
 </main>
 <!-- site:footer -->
-<script id="catdata" type="application/json">{data_js}</script>
+<script src="catalogue-data.js"></script>
 <script>{CAT_JS.replace('__GONE__', gone_js)}</script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
@@ -932,6 +932,9 @@ def build_html():
 </body>
 </html>
 '''
+    # the entries are a file of their own (1.1 MB of the page before 14 Nov 2026): the page paints before it arrives,
+    # and it loads from a file:// copy too, which a fetch would not. _build_site.py stamps the src with its hash.
+    (HERE / 'catalogue-data.js').write_text('window.CATDATA=' + data_js + ';\n', encoding='utf-8')
     (HERE / 'catalogue.html').write_text(page, encoding='utf-8')
     print('wrote catalogue.html', len(page), 'entries', len(E))
 

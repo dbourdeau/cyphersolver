@@ -168,3 +168,9 @@ Changes made after it (the counts above are after them):
 - Prior art: Szilágyi 1873 searched (above); nothing found.
 - Line 4 group 28/25 in *perveniens* (verifier weakly 25) left as 28: both give i, the word is a gloss reading anyway.
 - Not changed: the key. The gloss of word 44 came after the freeze and was not added.
+
+## 14 Nov 2026 full-texts audit
+
+Fol. 491v-492v had no entry in `outcome.texts`. The folder holds only the 12 held-out words of fol. 491v (`heldout_f491v.tsv`: cipher groups and Camerarius's gloss). They are now listed as that document's texts, with `decryption_f491v_heldout.tsv` (new: `key.tsv` applied to the groups, one value per group, beside the gloss), state `not prose` because it is a word list and not a text. The decode shows the known disagreements of the held-out test (44 = b, {s} = c, 45 = h).
+
+Not done: the transcription of the three pages (scans 1200-1202). It is the transcription job already listed under Remaining gaps; the blocker is unchanged (not-attempted: number groups and letter-like signs under an interlinear gloss on microfilm, which on fol. 491r needed full-size crops and a second reader). `fraction_read` unchanged.

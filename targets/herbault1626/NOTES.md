@@ -133,3 +133,14 @@ uncertain proper names are flagged in the transcription.
 Plain-bar check (French 1626): `ct/letter_13feb1626.md` had been scored whole, header and cipher notes included (plain
 0.588). A `## Reading` heading now opens the letter; body plain 0.754, explicit 0.825. Keeps read.
 
+## 14 Nov 2026: transcription of the cipher runs not made
+
+The audit asked for a transcription file of the cipher of no. 25. Checked in order: nothing in the folder but the
+reading (`ct/`); no DECODE record; Gallica image f74 (f. 69r) fetched through `openapi.bnf.fr` (the `gallica.bnf.fr`
+route in `fetch.sh` gives 403 from here) and the first run inspected at full size. The run mixes figures (`92`, `17`,
+`43`, `68`, `93`, `98`), small letters (`to`, `x`, `y`, `e`, `b`, `u`), superscript letters and several drawn signs
+(a crossed z, a barred t, a double f, a crossed circle, a double-barred sign), written without division. The sign
+inventory and the cuts between tokens cannot be fixed by eye on this hand, and there is no key table to decode a
+transcription against (section 4: the key is not tabulated). So no transcription was written; the profile records
+`transcription_missing` with this reason. What unblocks it: build the sign table from the glossed runs of no. 26
+(group against glossed word), then transcribe no. 25 in that table's names and decode it as the check.

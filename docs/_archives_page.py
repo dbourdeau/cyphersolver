@@ -163,9 +163,10 @@ def pages_by_folder(pages):
 
 
 def issue_url(r):
-    q = {'template': 'archive-visit.yml', 'title': f'Archive request: {r["id"]} ({r["archive"]})', 'request': r['id'],
-         'archive': ', '.join(x for x in (r['archive'], r.get('shelfmark')) if x and x != 'unknown')}
-    return f'{REPO}/issues/new?' + urlencode(q)
+    """The short form of the "I can do this" link. The page script adds the title and the archive with its shelfmark
+    from the row when the link is used (983 prefilled links were 300 kB of the page, 14 Nov 2026); without script the
+    issue form still opens with the request id."""
+    return f'{REPO}/issues/new?' + urlencode({'template': 'archive-visit.yml', 'request': r['id']})
 
 
 def who(r):
@@ -206,12 +207,12 @@ def row(r, bypage):
     shelf = f'<span class="sm">{esc(r["shelfmark"])}</span>' if r.get('shelfmark') else ''
     src = 'cat' if is_cat(r) else 'gap'
     flag = '<span class="gapflag" title="A reading is already under way; this gap is what stops it">reading stalled here</span>' if src == 'gap' else ''
-    text = ' '.join(x for x in (r['id'], r.get('target') or '', str(r.get('catalogue') or ''), r['archive'], r.get('city', ''),
-                                r.get('shelfmark', ''), r['need'], r.get('why', ''), r.get('region') or '', r.get('_co') or '', KIND[k][0])).lower()
+    # no data-q: the script searches the row's own text, its data-* values and its archive's heading (qt in ARCH_JS)
+    tgt = f' data-t="{attr(r["target"])}"' if r.get('target') else ''
     cid = f' id="c{r["catalogue"]}"' if is_cat(r) else ''
     return (f'<li class="rq"{cid} data-kind="{k}" data-src="{src}" data-status="{r["status"]}" data-pl="{attr(r.get("_pl"))}" '
             f'data-co="{attr(r.get("_co"))}" data-rg="{attr(r.get("region"))}" data-ce="{attr(century_of(r))}" data-cl="{attr(r.get("cls"))}" '
-            f'data-pri="{pri(r)}" data-q="{attr(text)}">'
+            f'data-pri="{pri(r)}"{tgt}>'
             f'<div class="hd"><span class="id">{r["id"]}</span><span class="kd kd-{k}">{KIND[k][0]}</span>{target_link(r, bypage)}{flag}</div>'
             f'<p class="nd">{esc(r["need"])}</p>{shelf}{why}'
             f'<div class="ft">{act}{who(r)}{issue}</div></li>')
@@ -252,7 +253,8 @@ document.addEventListener('click',function(ev){if(!ev.target.closest('.cfilters 
 document.addEventListener('keydown',function(ev){if(ev.key==='Escape')dds.forEach(function(d){if(d.open){d.open=false;d.querySelector('summary').focus();}});});
 function fhit(r,k){var s=F[k];return !s||!s.length||s.indexOf(r.dataset[D[k]])>=0;}
 // a row passes the search and every facet but skip; the town picked on the map is separate (the map reads counts() without it)
-function others(r,s,skip){if(s&&r.dataset.q.indexOf(s)<0)return false;for(var k in F)if(k!==skip&&!fhit(r,k))return false;return true;}
+function qt(r){if(r._q==null){var g=r.closest('details.arch'),d=r.dataset;r._q=[r.textContent,d.t||'',d.rg,d.co,d.pl,g?g.dataset.name+' '+g.querySelector('h3').textContent:''].join(' ').toLowerCase();}return r._q;}
+function others(r,s,skip){if(s&&qt(r).indexOf(s)<0)return false;for(var k in F)if(k!==skip&&!fhit(r,k))return false;return true;}
 function nfil(){var n=0;for(var k in F)n+=F[k].length;return n;}
 function save(){var p=[];for(var k in F)if(F[k].length)p.push(k+'='+F[k].map(encodeURIComponent).join(','));
  if(pl!==null)p.push('place='+encodeURIComponent(pl));if(q.value.trim())p.push('q='+encodeURIComponent(q.value.trim()));if(sort!=='most')p.push('sort='+sort);
@@ -296,6 +298,13 @@ rst.addEventListener('click',clearAll);document.getElementById('aclear').addEven
 document.getElementById('openall').addEventListener('click',function(){secs.forEach(function(x){if(!x.hidden)x.open=true;});});
 document.getElementById('closeall').addEventListener('click',function(){secs.forEach(function(x){x.open=false;});});
 [].forEach.call(document.querySelectorAll('details.toc a'),function(a){a.addEventListener('click',function(){var d=document.querySelector(a.getAttribute('href'));if(d){d.hidden=false;d.open=true;}});});
+// the "I can do this" link is short in the page; complete it (title, archive and shelfmark) when it is about to be used
+function take(ev){var a=ev.target.closest&&ev.target.closest('a.take');if(!a||a.dataset.full)return;var r=a.closest('li.rq'),g=r&&r.closest('details.arch');if(!g)return;
+ var id=r.querySelector('.id').textContent,nm=g.dataset.name,sm=r.querySelector('.sm'),u=new URLSearchParams();
+ u.set('template','archive-visit.yml');u.set('title','Archive request: '+id+' ('+nm+')');u.set('request',id);
+ u.set('archive',[nm,sm?sm.textContent:''].filter(function(x){return x&&x!=='unknown';}).join(', '));
+ a.href=a.href.split('?')[0]+'?'+u.toString();a.dataset.full=1;}
+['pointerdown','focusin','click','auxclick','contextmenu'].forEach(function(e){wrap.addEventListener(e,take,true);});
 load();render(true);
 function hit(){
  var hm=/^#(c\d+)$/.exec(location.hash),he=hm&&document.getElementById(hm[1]);if(!he)return;

@@ -1,6 +1,6 @@
 # Duchess of Nevers and Renato Birago to the duke of Nevers, Lyon, September 1574
 
-Status: read in part. Birago's f. 21 is complete from its clear copy; the duchess's f. 15 (continued in cipher on f. 16r) is read from its interlinear decipherment and a rebuilt alphabet, except f. 15v ll. 2-5 (illegible).
+Status: read in part. Birago's f. 21 letter is in clear and complete, and the French cipher slip pasted on it is deciphered in full with the f. 15 alphabet (14 Nov 2026); the duchess's f. 15 (continued in cipher on f. 16r) is read from its interlinear decipherment and a rebuilt alphabet, except f. 15v ll. 2-5 (illegible).
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read**: f. 21 (Birago's
 clear fair copy, continuous Italian). **Decoded, not read**: f. 15, the duchess's two cipher pages; only the opening of
@@ -24,7 +24,7 @@ The statements below that the gloss is "too crowded to transcribe" and that f. 1
 
 ## Result
 
-The catalogue premise that these are two unread cipher letters is only half right. At f. 21 a ciphered flap is folded across the same recto that contains a complete fair copy in clear Italian. One image shows the flap over the text, the next shows it folded away. Renato Birago writes from Lyon on 28 September 1574. He had expected Nevers for the feast of St Michael; the bearer has arrived at the worst possible political moment and returns with an answer; Birago will discuss Piedmont orally; Their Majesties wish to provide Nevers with a government and whatever else he deserves.
+(Superseded in part by the 14 Nov 2026 block below: the f. 21 slip is a separate French cipher note, and Birago's Italian letter is a letter in clear, not a fair copy of it.) The catalogue premise that these are two unread cipher letters is only half right. At f. 21 a ciphered flap is folded across the same recto that contains a complete fair copy in clear Italian. One image shows the flap over the text, the next shows it folded away. Renato Birago writes from Lyon on 28 September 1574. He had expected Nevers for the feast of St Michael; the bearer has arrived at the worst possible political moment and returns with an answer; Birago will discuss Piedmont orally; Their Majesties wish to provide Nevers with a government and whatever else he deserves.
 
 The duchess's two-page letter at f. 15 is likewise not bare cipher. A contemporary or near-contemporary reader supplied a word-by-word French decipherment in the spaces between the lines. It begins “Monseigneur, je ne veulx faillir à vous donner …” and is addressed to “Monsieur le duc de Nevers, pair de France.” The cipher continues to the foot of f. 15v and is followed by a clear closing on f. 16r: it is midnight, the writer's eyes hurt from weeping, and she wishes herself in paradise rather than suffer as they are being made to suffer. The closing dates the letter Lyon, 16 September; 1574 is inferred from its archival context. Much of the gloss is individually legible, but it is too crowded for a defensible continuous transcription in this pass.
 
@@ -83,6 +83,34 @@ f. 15v ll. 2-5: he re-read them at full size and recovered nothing new; the gap 
 
 Read share `v10_relabel.measure` 0.941, as recorded; read in part stands. No change to a letter value.
 
+## 14 Nov 2026: the f. 21 cipher slip transcribed; it is not Birago's letter in cipher
+
+The audit asked for a transcription of the f. 21 cipher. Gallica image f23 fetched again (openapi.bnf.fr IIIF, full
+size) and the slip read in line crops.
+
+* The slip pasted over Birago's letter has 16 cipher lines with a small interlinear decipherment. The signs are those
+  of the duchess's letter on ff. 15-16 and the interlinear is **French**, not Italian. Transcribed sign by sign in
+  `f21_slip_signs.tsv` (notation of `f15_signs.tsv`; a single AI transcription, not checked by a person; 615 signs
+  in 149 cipher words, two words `sur tout` in clear on l. 4; six doubtful signs).
+* Decoded with `f15_key.md`: all 151 words agree with the interlinear (`f21_slip_decryption.md`; the decoder allows
+  f/m for `+` and q/s for `9`, as the key does). One spelling is the writer's: `082bFT2F+F29` = "gondernemens" letter
+  for letter, the same usage as gouvernement on f. 15.
+* Reading `f21_slip_reading.md`, English `f21_slip_en.md`. The sieur Camille Fera told the writer that the King had
+  heard that Nevers gave the Queen the warning of "ceste petite ligue", and does not want to be named; when the writer
+  told the Queen that Monsieur de Nemours would have the first government to fall vacant, she said no: the King and
+  she had resolved that Nevers should have the first vacant, whichever it was; they fear to displease him, he should
+  ask boldly. The surname is read from the signs `+FT1` (fera or mera) with the interlinear; not identified here.
+* The writer is not named on the slip. Cipher, interlinear hand and subject (the league near the King, the promise of
+  the next vacant government) are those of the duchess's letter of 16 Sept on ff. 15-16; that it is hers is an
+  inference, and why it is pasted on Birago's leaf was not established.
+* **Corrections to the earlier notes.** Birago's Italian letter is a letter in clear, not "a clear fair copy" of the
+  cipher flap, and the flap does not carry an Italian gloss. f. 21 was therefore not "read from its clear copy": the
+  clear letter is listed as a clear text and the slip as the cipher document. `fraction_read` is now counted on
+  cipher words only: (572 + 151) / (626 + 151) = 0.93 (was 0.94 with the 271 clear words counted as read).
+  The class stays read in part (f. 15v ll. 2-5).
+* The key was not changed. The slip gives further evidence for it and one more form: word-final s written as a 6
+  with a raised hook (vous, lors, pas, Nemours), noted in the header of `f21_slip_signs.tsv`.
+
 ## Remaining gaps
 
 - f. 15v ll. 2-5 and the gloss-only line at its head (about 70 words) - blocker: illegible; the decipherer wrote over the cipher signs and the gloss above is faded or struck on the native scan; the original or a multispectral image might recover them
@@ -91,18 +119,18 @@ Read share `v10_relabel.measure` 0.941, as recorded; read in part stands. No cha
 
 ## Escalation
 
-- [x] siblings: checked the neighbouring fr. 3315 leaves and Tomokiyo's description; ff. 12-13 have a different 1574 key, while the f. 21 cipher flap carries its own Italian interlinear reading.
-- [x] clear-pages: found the clear ending of the duchess's letter on f. 16r and Birago's complete clear copy on f. 21r beneath the flap; f. 21 was read in full.
+- [x] siblings: checked the neighbouring fr. 3315 leaves and Tomokiyo's description; ff. 12-13 have a different 1574 key, while the f. 21 cipher flap carries its own interlinear reading (French, not Italian: corrected 14 Nov 2026, see the block of that date).
+- [x] clear-pages: found the clear ending of the duchess's letter on f. 16r and Birago's complete clear copy on f. 21r beneath the flap; f. 21 was read in full. (14 Nov 2026: Birago's letter is in clear and is not a copy of the slip; the slip was deciphered separately, see the block of that date.)
 - [x] known-keys: inspected the 1584 Nevers no. 2 alphabet in fr. 3995 f. 16 and Tomokiyo's comparison; it differs at F=e and 9=q and is not an exact decoder.
 - [x] print: searched exact wording and historical editions; rejected the superficially similar Henri III appeal printed by Lavisse because it predates this letter and has a different sender. No published edition of f. 15 or 21 was found.
-- [x] key-rebuild: tested alignment of the enlarged f. 21 signs with its interlinear Italian gloss; crowded glyphs and uncertain word boundaries prevented a reliable complete table. No uncertain mapping was used to fill f. 15.
+- [x] key-rebuild: tested alignment of the enlarged f. 21 signs with its interlinear gloss (then taken for Italian; it is French, 14 Nov 2026); crowded glyphs and uncertain word boundaries prevented a reliable complete table. No uncertain mapping was used to fill f. 15.
 - [x] retry: revisited f. 15r-v in overlapping native-resolution crops after the clear ending and f. 21 parallel were found; the opening remained secure, but the ciphered middle still could not be transcribed continuously.
 - [x] retry (22 Oct 2026): gloss and cipher signs transcribed line by line, alphabet rebuilt from their alignment (`f15_key.md`); f. 15 and its f. 16r continuation read, only f. 15v ll. 2-5 and single groups open.
 - [x] key-rebuild (22 Oct 2026): the f. 15 alphabet rebuilt from gloss-sign alignment, every value attested in several words.
 
-The useful next escalation is palaeographic: edit the small interlinear French on f. 15 from the native Gallica scan, using the larger cipher only to check alignment. If a mechanical reading is required, first align the f. 21 signs with their own Italian gloss to rebuild the exact 1574 alphabet, then apply that table to f. 15. Do not use the 1584 no. 2 table unchanged.
+The useful next escalation is palaeographic: edit the small interlinear French on f. 15 from the native Gallica scan, using the larger cipher only to check alignment. If a mechanical reading is required, first align the f. 21 signs with their own Italian gloss to rebuild the exact 1574 alphabet, then apply that table to f. 15. (Superseded: the alphabet was rebuilt from f. 15 on 22 Oct 2026, the f. 21 gloss is French, and the slip was decoded with that alphabet on 14 Nov 2026.) Do not use the 1584 no. 2 table unchanged.
 
-The atlas has no edge for either letter: both originate in Lyon, but the duke's location when he received them is not established. The f. 21 cipher was not transcribed sign by sign, so a reveal animation would imply precision the work does not have.
+The atlas has no edge for either letter: both originate in Lyon, but the duke's location when he received them is not established. The f. 21 cipher slip was transcribed sign by sign on 14 Nov 2026 (`f21_slip_signs.tsv`).
 
 ## Sources
 

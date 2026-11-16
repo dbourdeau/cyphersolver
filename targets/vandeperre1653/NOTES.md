@@ -50,6 +50,13 @@ Checked here:
   as known (contributor; one web check here found nothing).
 - Outcome: key recovered from ciphertext-only, by the contributor's record (provenance contributed). Prior solution: in print (the glosses).
 
+## 14 Nov 2026: reading review (audit section J)
+
+`reading.md` read run by run against `aaymeloglu/reading.txt` and a `reading_review` recorded in `profile.json`, grade
+B: the cipher is short runs inside letters Birch printed in English, so the reading is a table of phrases and not
+continuous prose; each run that is read makes sense as Dutch, three stay literal strings (*diemnicvndament*,
+*tenprincipaln*, *ote*). State stays read in part (0.721).
+
 ## Remaining gaps
 - The 13 repaired groups (printer's or writer's slips such as 14 for t in *dispositie*, 17 for u): - blocker: needs-physical-access; only
   the manuscripts (Bodleian Rawlinson A, the Thurloe papers) can show the digits as written.

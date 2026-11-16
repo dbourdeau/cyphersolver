@@ -1,6 +1,6 @@
 # Walsingham's enclosure to John Somer, 21 July 1581 — TNA SP 53/11 no. 50
 
-Status: in progress. Only the published opening clause is in the repository (reading audit, 22 Oct 2026).
+Status: in progress. Not read (14 Nov 2026): the published key decodes the enclosure through a label concordance, three of thirteen sentences hold, the rest break on the key's unknown signs. Solved by Biermann and Lasry in 2023; their plaintext is unpublished.
 
 **22 Oct 2026, reading audit** (George Lasry's test: can sentences be built and translated?): the folder holds the numeric ciphertext and the one-clause opening Tomokiyo published; the Biermann-Lasry plaintext is unpublished. no. 50I is *decoded, not read* (excerpt only) in profile.json; class already solved is kept; fraction_read 0.09 marked estimated.
 
@@ -60,6 +60,18 @@ I tried to align the published opening and key against a segmented high-resoluti
 
 The case should leave the “still unread” queue. Its accurate status is **solved in part in 2023, published 2026; full plaintext not published or independently verified here**. The original tracker fields “Portugal → France” and “French” came from the unrelated L'Abbadia item and should be removed.
 
+## 14 Nov 2026: classed not read
+
+Audit section J: the target's only document is *decoded, not read*, so the target is not a reading. Tried first
+(`texts/no50I_reread_log.md`, section "14 Nov 2026"): cryptiana re-fetched (unchanged, opening clause only); the DECODE
+R3839 image is behind a login (the public API marks the ciphertext private), so no glyph was checked; three proposals
+from context (91 = WITH, 43 = WHICH, *vhtil I*) noted and not adopted. Nothing lifted.
+
+`profile.json`: class `not read` (was already solved), method `read with known key` (was read from existing
+decipherment: no full decipherment is in hand, only Tomokiyo's published key and opening clause; the key was applied
+through the concordance of 23 Oct), fraction_read 0 (was 0.09 estimated). That Biermann and Lasry solved it in 2023
+stays in the credits and in `method_basis`.
+
 ## Remaining gaps
 
 - no. 50I: 14 signs without a value (labels 07, 09, 39, 44, 46, 77, 79, 82, 86, 89, 91, 92, 97, 98) and the Γ-like sign at 13:9 - blocker: no-key-material; most are the unknown signs of the published key; all 14 lines now checked on the image (49, 58, 59, 72, 87, 95 settled 23 Oct 2026, r2k); the Biermann-Lasry plaintext is unpublished (ask Lasry)
@@ -73,4 +85,5 @@ The case should leave the “still unread” queue. Its accurate status is **sol
 - [x] print: Tomokiyo, cryptiana mary3.htm (16 Sept 2026)
 - [x] key-rebuild: glyph-to-label concordance built 23 Oct 2026 (b37), lines 1-10 checked; 20 signs open
 - [x] retry: 23 Oct 2026 (b37) all 562 tokens decoded through the concordance; partial reading 0.154
+- [x] retry: 14 Nov 2026 the decode re-read without the image (login); three context proposals, none adopted; classed not read
 - [x] retry: 23 Oct 2026 (r2k) lines 11-14 checked glyph by glyph on the full DECODE image; six labels settled, three position corrections; still 0.154

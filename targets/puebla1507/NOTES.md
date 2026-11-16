@@ -52,3 +52,11 @@ table (his reconstruction, cryptiana `Puebla1.jpg`, = Bergenroth's key no. 6) an
 (AGS PTR, leg. 52, doc. 33).
 
 DECODE: not on DECODE (no record for PR Tratados con Inglaterra leg. 5 ff. 31-32); nothing to correct.
+
+## 14 Nov 2026: PARES still refuses; no transcription
+
+The audit asked for a transcription file for f. 31 and f. 32. None exists in the folder and Bergenroth prints only the
+deciphered text. PARES was tried again (curl: `pares.cultura.gob.es/inicio.html` and `catalogo/show/2208061`, three
+tries with pauses): 429 Too Many Requests each time, as on 26-27 Oct 2026. No browser in this session. Both entries
+now carry `transcription_missing` with this reason. Open as before: confirm 2208061 = f. 31, transcribe, check against
+Supp. no. 14.

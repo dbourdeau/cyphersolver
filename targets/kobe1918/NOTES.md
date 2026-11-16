@@ -47,3 +47,7 @@ Verified for the maintainer before merging PR #561 (Brice Dudout). The PR carrie
 - **One key, one entry.** roosevelt1903 (Roosevelt to Hay, 1903) is read with the same codebook. The two are separate correspondences fifteen years apart sharing a printed departmental codebook; they are cross-referenced here and kept as separate folders for now. At write-up the owner decides whether the Red Code gets one entry. roosevelt1903's page says the codebook pages were not reachable: they are now (images listed above; 47372 Request checked on its page), so that page is owed a correction when it is next reviewed (not changed in this check).
 - **Prior art and duplicates.** Kobe, Frazer, Thyssen: nothing in catalogue.json, research/leads.json or targets (14 Nov 2026). Weber 1979 not seen.
 - **Checkers.** `_check_profile.py kobe1918`: valid. `_check_catalogue.py`: valid.
+
+## 14 Nov 2026 full-texts audit
+
+`outcome.texts` had one entry labelled "K1 to K5" but with `doc` set to `kobe-k1` only, so K2 to K5 showed as documents without texts. `transcription.txt`, `decryption.txt` and `reading.md` hold all five telegrams; `doc` now lists the five ids. No text file changed, no count changed.

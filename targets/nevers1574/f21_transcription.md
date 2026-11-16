@@ -1,6 +1,8 @@
 # Renato Birago to the duke of Nevers, Lyon, 28 September 1574
 
-BnF français 3315, f. 21r. Semi-diplomatic transcription of the clear fair copy revealed when the cipher flap is folded away. Abbreviations are expanded silently except where uncertainty matters; punctuation and word division are lightly editorial.
+BnF français 3315, f. 21r. Semi-diplomatic transcription of the clear letter seen when the cipher slip pasted over it is folded away. Abbreviations are expanded silently except where uncertainty matters; punctuation and word division are lightly editorial.
+
+Note, 14 Nov 2026: this letter is in clear. The cipher slip pasted over it is a different text, a French note in the cipher of ff. 15-16 (`f21_slip_signs.tsv`, `f21_slip_decryption.md`), not a ciphered copy of this letter.
 
 > Illustrissimo et eccellentissimo signore,
 >

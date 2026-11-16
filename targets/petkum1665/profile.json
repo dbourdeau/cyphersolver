@@ -1250,6 +1250,15 @@
    ],
    "what": "Review of PR #689 (Dan Bourdeau, 17 Nov): branch rebased onto main after #646, NOTES and profile kept on both sides. read_share of the three filed Paulmyer texts set to the share of cipher words read by the judge's segments, a word read only when every unit is S (18 Apr 1664 19/28, 26 Jun 1664 15/22, 14 Apr 1665 16/28; 31 Mar 1665, not filed, 2/5); the per-unit figures stay in the notes. Key v6 on main gives 114 = Dannemarck (18 Apr, 26 Jun 1664) and 134 = Stockholm (26 Jun 1664), numbers the frozen v5 decode leaves open; nothing decoded again.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Reading review of the eleven letters filed as read in part (audit section J): each reading file read as sentences against its decryption; all eleven build sentences with scattered holes (grade A recorded per entry; 6 Apr 1666 is the weakest, three open codes in one sentence). The eleven frozen transcriptions were decoded again with key_v5.tsv (scripts/decode.py; the key v3 decodes reproduce byte for byte first): 55 tokens gain a glossed value (on, nous, traitté, Roy, tant, bon, maistre, nostre, paix, alliance, Espagne, mariage, negociation, 82, f, b, qu'u). New files decryptions/*_v5.txt for these eleven, and a dated addendum in each reading file listing the changed tokens. One English sentence of the 18 Jan 1666 reading is shown wrong by 338 = qu'u ('n'aye este qu'une fainte': only a feint). No count of record, state or class changed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -1955,6 +1964,285 @@
     "read_share": 0.5714,
     "summary": "A notable sum of money; engaging His Most Christian Majesty; Chancellor Séguier (three times) and a man named des Fargues. Cipher runs only. English is Claude's, unchecked.",
     "note": "read_share = share of cipher words read, 16/28 (the judge's segments in blind16/paulmyer_1665-04-14/judge.tsv, a word counted read only when every unit is S). Per sign unit the strict one-pass judge gives S/(S+E+N) = 58/80 (blind16/paulmyer_1665-04-14/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt). Incomplete: 10 tokens of image 191 lie left of the crop and are not transcribed (NOTES, Remaining gaps)."
+   },
+   {
+    "doc": "petkum_1665-11-30",
+    "label": "Petkum, 30 Nov 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-11-30_p2-3_R1.txt",
+     "transcriptions/petkum_1665-11-30_p1-p4_R1_heldout.txt",
+     "transcriptions/petkum_1665-11-30_R2_blind.txt",
+     "transcriptions/petkum_1665-11-30_R2_blind_keynames.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-11-30_p2-3_R1.txt",
+     "decryptions/petkum_1665-11-30_p1-p4_R1_heldout.txt",
+     "decryptions/petkum_1665-11-30_R2_blind.txt",
+     "decryptions/petkum_1665-11-30_R2_blind_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-11-30.md",
+    "translation": "readings/petkum_1665-11-30.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.7051,
+    "summary": "Petkum reports from the court at Oxford: with the French ambassadors recalled he holds a [break] between France and England certain; England has no friend but the Bishop of Munster; one defeat could put the malcontents, chiefly the Scots, under arms. He asks to be withdrawn in good time if Denmark binds itself to France to England's harm. Context: the Second Anglo-Dutch War; Denmark between England and the France-Dutch alliance after the Bergen affair (Aug 1665).",
+    "note": "read_share = 220 of 312 word units (blind R2 adjudicated, KEY_v3; counts.txt A2). As filed in #443 (R1, keys v1/v2): 212 of 312. The reading file was written at the first decode.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Four pages, the longest text of the folder; most sentences have no hole or one. Key v5 now carries maistre, Espagne, alliance, nous, on, bon, traitté where the reading has [?guesses]; open after v5: 134, 151 (three times), 197 (twice), 344, 351, 370, 390, 399, 40, crossed d. The reading file is the first-decode text; its addendum lists the v5 changes."
+    }
+   },
+   {
+    "doc": "petkum_1665-03-24",
+    "label": "Petkum, 24 Mar 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-03-24.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-03-24.txt",
+     "decryptions/petkum_1665-03-24_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-03-24.md",
+    "translation": "readings/petkum_1665-03-24.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.6897,
+    "summary": "No need to rush into the English treaty; Denmark's terms will be no worse. England's malcontents have no leader; the [king] is armed and his parliament [sound].",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (40 of 58); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Two sentences. Key v5 carries nous, on (twice each), b, f, tant, Roy, bon; open: 198, 394 (the [blow] and [upper hand] of the English are guesses), crossed d, one unsure token."
+    }
+   },
+   {
+    "doc": "petkum_1665-11-23",
+    "label": "Petkum, 23 Nov 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-11-23.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-11-23.txt",
+     "decryptions/petkum_1665-11-23_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-11-23.md",
+    "translation": "readings/petkum_1665-11-23.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.7083,
+    "summary": "Sweden is less devoted to England than the English think. Petkum advises spreading a false [rumour] of a levy of five or six thousand [men] to get better terms ('Mundus vult decipi') and waits to see which side the King takes.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (68 of 96); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Three passages. Open after v5: 390 (twice), 374, 197, 181, 248 (the [you], [too], [rumour], [men] of the English are context guesses); 'fort·i·c·t' does not read."
+    }
+   },
+   {
+    "doc": "petkum_1665-12-10",
+    "label": "Petkum, 10 Dec 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-12-10.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-12-10.txt",
+     "decryptions/petkum_1665-12-10_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-12-10.md",
+    "translation": "readings/petkum_1665-12-10.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.68,
+    "summary": "Petkum is surprised that Frederik III will break with the States General by arresting their ships in Norway, France taking their side and England bare of friends; Sweden is playing for [time] and will pass the treaty of Clifford to the Dutch and the French.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (51 of 75); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Two passages, nearly whole. Open after v5: 370 ([time], a guess), crossed d (g by context in gaigner, grimaces), three unsure tokens."
+    }
+   },
+   {
+    "doc": "petkum_1666-04-13",
+    "label": "Petkum, 13 Apr 1666",
+    "transcription": [
+     "transcriptions/petkum_1666-04-13.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1666-04-13.txt",
+     "decryptions/petkum_1666-04-13_v5.txt"
+    ],
+    "reading": "readings/petkum_1666-04-13.md",
+    "translation": "readings/petkum_1666-04-13.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.6277,
+    "summary": "The Grand Treasurer (Hannibal Sehested) writes that Louis XIV wishes to see Petkum, who has no order to go; he proposes help to a [peace] between [108] and Muscovy to humble Sweden, and suspects Coventry and the Swedes of feeding Juel false reports.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (59 of 94); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Five passages. Key v5 carries bon, nostre, maistre, nous, paix and 82 (l'Electeur de Brandebourg, one attestation, missing from the English); open: 346, 135, 388, 330, 40, 108, 248. The sentence with 388/330/40 has three holes."
+    }
+   },
+   {
+    "doc": "petkum_1665-04-28",
+    "label": "Petkum, 28 Apr 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-04-28.txt",
+     "transcriptions/petkum_1665-04-28_blind.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-04-28.txt",
+     "decryptions/petkum_1665-04-28_blind.txt",
+     "decryptions/petkum_1665-04-28_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-04-28.md",
+    "translation": "readings/petkum_1665-04-28.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.7308,
+    "summary": "On the English treaty: if the King resolves to conclude, insert a most-favoured-nation clause; Petkum can put it into the [151] ambassadors' heads to ask for the same two points.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (19 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Short (two cipher runs and two single words). Open: 151 (twice), 376; key v5 changes nothing here."
+    }
+   },
+   {
+    "doc": "petkum_1665-06-23",
+    "label": "Petkum, 23 Jun 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-06-23.txt",
+     "transcriptions/petkum_1665-06-23_blind.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-06-23.txt",
+     "decryptions/petkum_1665-06-23_blind.txt",
+     "decryptions/petkum_1665-06-23_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-06-23.md",
+    "translation": "readings/petkum_1665-06-23.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.6207,
+    "summary": "The Swedish-English [treaty] has been communicated; Sweden plays the reluctant one, but England would engage with her as far as she wishes; all is negotiated at [134].",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (18 of 29); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Short. Under key v3 every sentence had a hole; key v5 carries traitté, Roy, on, tant, leaving 390 and 134, and the sentences then hold."
+    }
+   },
+   {
+    "doc": "petkum_1665-09-17",
+    "label": "Petkum, 17 Sep 1665",
+    "transcription": [
+     "transcriptions/petkum_1665-09-17.txt",
+     "transcriptions/petkum_1665-09-17_blind.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1665-09-17.txt",
+     "decryptions/petkum_1665-09-17_blind.txt",
+     "decryptions/petkum_1665-09-17_v5.txt"
+    ],
+    "reading": "readings/petkum_1665-09-17.md",
+    "translation": "readings/petkum_1665-09-17.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.6154,
+    "summary": "The Swedes will do nothing for the English and give fine words only so that they may take [Bremen]; instructions in case the Dutch ships are at [Bergen].",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (16 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Short. Key v5 carries 'du Roy nostre maistre'; no token is without a value. 'Premen' and 'Bebgen' do not read as written ([?Bremen], [?Bergen] in the reading are guesses)."
+    }
+   },
+   {
+    "doc": "petkum_1666-01-18",
+    "label": "Petkum, 18 Jan 1666",
+    "transcription": [
+     "transcriptions/petkum_1666-01-18.txt",
+     "transcriptions/petkum_1666-01-18_blind.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1666-01-18.txt",
+     "decryptions/petkum_1666-01-18_blind.txt",
+     "decryptions/petkum_1666-01-18_v5.txt"
+    ],
+    "reading": "readings/petkum_1666-01-18.md",
+    "translation": "readings/petkum_1666-01-18.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.72,
+    "summary": "Sweden will not engage further with England; on the 'walk' of Clifford (Talbot) and the recall of both, 'this nation cannot keep from tricks'.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (36 of 50); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. Key v5 carries f (Cliffort), negociation, on and 338 = qu'u: 'n'aye este qu'une fainte', so the English of the reading file ('was not [338] nor feigned') is wrong at that point; corrected in the file's addendum. Open: 134; 's'apstenir' and 'deutelle' do not read as written."
+    }
+   },
+   {
+    "doc": "petkum_1666-04-06",
+    "label": "Petkum, 6 Apr 1666",
+    "transcription": [
+     "transcriptions/petkum_1666-04-06.txt",
+     "transcriptions/petkum_1666-04-06_blind.txt"
+    ],
+    "decryption": [
+     "decryptions/petkum_1666-04-06.txt",
+     "decryptions/petkum_1666-04-06_blind.txt",
+     "decryptions/petkum_1666-04-06_v5.txt"
+    ],
+    "reading": "readings/petkum_1666-04-06.md",
+    "translation": "readings/petkum_1666-04-06.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.5385,
+    "summary": "To the King: Petkum does not know whether the States General have produced their [346] or whether the French king will [235] the [373], and wants to be sure before taking leave of the King of England.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (14 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. The weakest of the eleven: its main sentence has three open codes (346 twice, 235), so what the States were to produce and what the French king was to do to the treaty are not known; 373 = traitté now carried by key v5. The sentence is grammatical and its frame is clear; kept read in part on that."
+    }
+   },
+   {
+    "doc": "paulmyer_1664-04-25",
+    "label": "Paulmyer, 25 Apr 1664",
+    "transcription": [
+     "transcriptions/paulmyer_1664-04-25.txt"
+    ],
+    "decryption": [
+     "decryptions/paulmyer_1664-04-25.txt",
+     "decryptions/paulmyer_1664-04-25_v5.txt"
+    ],
+    "reading": "readings/paulmyer_1664-04-25.md",
+    "translation": "readings/paulmyer_1664-04-25.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.7778,
+    "summary": "The Marquis de Vandy assures Paulmyer that Mademoiselle de Montpensier despairs of the [match] of Savoy because Louis XIV refuses consent. Filed first as 2 May 1664; the passage ends the letter of 25 Apr.",
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (21 of 27); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read as sentences in the reading file (French with marked holes, and its English), against the decryption line by line: the cipher passages sit in the letter's clear French and the sentences hold. One sentence. Key v5 carries on and mariage (313, 285), the two code holes of the reading; open: two doubtful signs in 'c[?]e[?]', and 'Sivoye' written for Savoye."
+    }
    }
   ],
   "key_file": [

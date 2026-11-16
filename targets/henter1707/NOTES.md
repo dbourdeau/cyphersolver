@@ -124,10 +124,21 @@ letter is wholly in cipher, so every word of both readings counts; nothing had t
   paragraphs 3-4 in their old normalized form included, and gives 0.912; it has no way to take paragraphs 1-2 alone
   without a heading in the file. The hand count is the figure of record.
 
+## 14 Nov 2026: transcription of paragraphs 1-2 not possible without the DECODE login
+
+The audit asked for a transcription file for the first `outcome.texts` entry (paragraphs 1-2). Checked in order:
+no sign transcription of these paragraphs in the folder (`texts/mnl-g15-d80-f38_p3-4_cipher.tsv` holds paragraphs 3-4
+and the end of paragraph 2 only); the DECODE public API record R496 has no transcription (`private_ciphertext` true, no
+attachment); the image `IMG_R496_I3689_P1.png` asked from the file server without a login returns a placeholder reading
+"Insufficient permissions to see the full image". The session had no DECODE cookie and no browser, so the signs could not
+be transcribed. Recorded in the profile as `transcription_missing` with this reason. What unblocks it: a logged-in DECODE
+session, then the rows of paragraphs 1-2 transcribed in the sign names already used for paragraphs 3-4.
+
 ## Remaining gaps
 
 - paragraph 2: the short sentence on the kuruc envoys and the phrase [kihallgatást nyerjen / bővebben meghallgattassék] (3 words counted unread) - blocker: illegible; the interlinear hand overlaps the cipher there (a Hungarian palaeographer is needed); paragraphs 1-2 were not decoded sign by sign under the interlinear
 - paragraphs 3-4: closed 23 Oct 2026 (read, b28); four words stay [?] on look-alike signs (tiszteket, valtoztatni, uram, pedig) - blocker: illegible
+- cipher signs of paragraphs 1-2 not transcribed (the reading of these paragraphs rests on the interlinear) - blocker: needs access; the DECODE image of R496 is behind the login (14 Nov 2026)
 
 ## Escalation
 

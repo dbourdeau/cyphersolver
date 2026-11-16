@@ -3,7 +3,7 @@
 Status: in progress (integration check of 13 Nov 2026, PR #523: the gaps below are workable, chiefly the glossed pages of
 unit 262098 not yet transcribed into the key; folder only, no page and no ledger row). Contributor's status: key rebuilt from
 contemporary glosses; the one bare passage read in part, far below our own 65% line.
-Text state of 537L: **decoded, not read** (only short function words are read: 9/60 = 15.0%). Entry class: read in part.
+Text state of 537L: **decoded, not read** (only short function words are read: 9/60 = 15.0%). Entry class: **not read** since 14 Nov 2026 (was read in part; the only document is decoded, not read; see the section of 14 Nov 2026 at the end).
 New entry: no catalogue row, lead or target covers RA 262098 or this code (row 602, the Oldenburg parallel relations, is
 related but not digitised). No claim of a first reading (see PRIOR_ART.md).
 
@@ -138,6 +138,7 @@ our own log times only.
 
 ## Remaining gaps
 
+- 537L is not read: a context-assisted partial reading (14 Nov 2026, `readings/heespen_1676-04-17_537L_reread.md`) gives the frame of its one sentence, but 13 of 45 words are holes or marked and the codes for the parties and the first county (37, 411, 265, 504, 116; also 529, 22, ‖) have no value - blocker: not-attempted; they can only come from glossed pages not yet transcribed (next line). Three context values (ϙ = f, λ = e, 19 = o) contradict the gloss key and need the sign forms compared on the images of gloss pages 117, 118, 240, 241 - blocker: not-attempted.
 - Key too small for 537L: 52 of 158 tokens have no v1 value (36 under v2) - blocker: not-attempted; most glossed pages of unit 262098 (336, 340, 342, 389, 391, 401, 411, 455, 481, 526 and others) were not transcribed into gloss pairs, the key rests on images 96, 117, 118 (v1) plus 240, 241, 320 (v2). Transcribing them is the way to a bigger key. Workable, so the target stays in progress.
 - 537L has no blind second transcription - blocker: not-attempted; one reader, not blind. The integration check compared all 145 tokens of the 12 main lines with the image (below), so the transcription itself is sound.
 - No fresh bare text to test a bigger key on - blocker: no-key-material; 2,919 images screened in units 262098-262107, no other bare passage in this code; a bigger key can be tested only on further held-out glossed pages.
@@ -155,7 +156,7 @@ our own log times only.
 - [ ] print: Aarsberetninger VI and Danske Magazin only
 - [x] key-rebuild: v1 and v2 from the glosses, frozen, held-out tests on 342R and 413; a v3 from the untranscribed glossed
   pages is the next step (open)
-- [ ] retry: 537L to be decoded again with the bigger key (non-blind, since 537L has been seen; say so)
+- [ ] retry: 537L to be decoded again with the bigger key (non-blind, since 537L has been seen; say so). 14 Nov 2026: decoded again, non-blind, with the held-out glosses and context values, no bigger gloss key yet: partial reading, still not read (open)
 
 ## Integration check (13 Nov 2026, PR #523)
 
@@ -191,3 +192,12 @@ RA 262098; it is not added to `catalogue.json` (a worked target, not a lead).
   sehested1657).
 - **Correction**: the first gap in `profile.json` was marked `no-key-material`, but its own detail says the glossed pages
   were not transcribed: changed to `not-attempted`. `outcome.codes_open` filled (key v1, 537L: 30 of 70 distinct signs, 52 of 158 tokens without a value; `holes.md` section 2).
+
+## 14 Nov 2026: re-reading of 537L (audit section J); class set to not read
+
+By Claude (session of 14 Nov 2026). No contributor file was changed; `MANIFEST.sha256` does not list the new files.
+
+- **Tried.** (1) The held-out glossed pages 342R and 413 used as key material (T = s, 597 = nach, 9 = u, 402 = di, α = i); they are therefore no longer held out for anything decoded on that day. (2) Image 537 (id 49059236) opened: the writer divides the block himself, a point inside a word and a comma after it; `transcriptions/heespen_1676-04-17_537L_worddiv.txt` adds the commas to the frozen tokens (asserted equal). The small `#` before 265 and the `#` heading the marginal line are an insertion mark, not the sign n: the frozen file and the ledger count them as tokens (158 tokens, unit 60); the counts of record are left as filed. (3) 22 values proposed from the context of the page inside the writer's word boundaries (`gloss/context_values_537L_2026-11-14.tsv`); they are not gloss values and are not in `key.tsv`. Three contradict the gloss key (ϙ = f against t, λ = e against r, 19 = o against s), each holding at three or four words of the page. (4) Decode `decryptions/heespen_1676-04-17_537L_v2_context_NONBLIND.txt`, partial reading and English `readings/heespen_1676-04-17_537L_reread.md`.
+- **Result.** One sentence: "[?In] der Intention unt Hoffnung, wie [529] davor halte, das sie nachgehends von [37] [411] permutation [?die] Gravschafft [265] [unn] von den [504]en [116] die Grafschafft [?Ho[22]l] oder Diepholtz, [?oder] einen Theil davon [?erhandlen] und also [?ihren] Anpart mit dem Stift Münster [?immediate] [?combiniren] [?können]." The clear text before it speaks of partitioning "die beyde Hertzogthümer" and of the pieces next to the King's intended "anpart" and the Lüneburg portion. 13 of 45 words are holes or marked, and the open codes are the parties and the first county, so by the rule applied to every target (at most one hole in ten words) the document stays **decoded, not read**.
+- **Not tried.** No further glossed page of unit 262098 was transcribed; the sign forms of ϙ, λ and 19 were not compared on the gloss pages' images; no second reader.
+- **Class.** `outcome.class` read in part → not read (every entry is decoded, not read, so the entry is not a reading). `outcome.method` unchanged (key recovered based on adjacent plaintext: the glosses of the same unit). `fraction_read` 0.15 → 0.0 (tokens of documents that read / all); the strict 9/60 stays as the document's `read_share` and in the tables above. `documents[0].read` → not read.

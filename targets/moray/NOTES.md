@@ -188,6 +188,14 @@ Integration check (14 Nov 2026):
   18 Sept 2026.
 - Outcome: key recovered from ciphertext-only, by the contributor (provenance contributed). Credit: aaymeloglu, solution.
 
+## 14 Nov 2026: reading review (audit section J)
+
+`aaymeloglu/reading.md` read against `reading.txt` and a `reading_review` recorded in `profile.json`, grade A. The
+postscript is two sentences. The first holds entire but for the person sign. The second holds as far as *Gif the [Q2]
+cummis haom thair* and then has four holes in eleven words. State stays read in part (27 of 35 words). DECODE's public
+API was tried for R8345: the record answers and the ciphertext is marked private, so the five glyph splits are still
+unchecked (login needed).
+
 ## Remaining gaps
 - The five glyph splits (U/M, x/P, F/s, the z3 shapes, e/c): - blocker: not-attempted; check them on the DECODE R8345 image (login), which is workable.
 - The seven-sign last word (L4) and the hapax glyphs Zz, t, x3, Xs: - blocker: too-short; each occurs once or twice in 134 glyphs.

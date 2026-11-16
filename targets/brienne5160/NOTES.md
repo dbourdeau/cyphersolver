@@ -89,3 +89,11 @@ Lasry sent his report on this item as a PDF (`lasry/report/38_francais-5160.pdf`
 full Readable text by folio). The page now shows it at the top. Measured: whole text 0.981 (v10_relabel.measure),
 deciphered passages 0.993. His status: 14/14 pages transcribed; 13/13 cipher pages deciphered. Outcome: read. He translates the excerpt only
 (`lasry/report/translation_excerpt.md`).
+
+## 14 Nov 2026: decryption listed in outcome.texts
+
+The full-texts check (`docs/_texts.py`) reported "no decryption file" for George Lasry's entry: his Readable text by folio
+(`lasry/report/readable.md`, extracted unedited from his report PDF of 24 Oct 2026; see `lasry/report/ATTRIBUTION.md`) was listed
+only as the reading. It is now also listed as the entry's decryption. No text was changed and nothing was re-deciphered here.
+His report status: 14/14 pages transcribed; 13/13 cipher pages deciphered. Still open: the transcription of the cipher itself, which is not in the
+PDF or in this folder; it has been requested from George Lasry (`research/reading_audit/TRANSCRIPTIONS_WANTED.md`).

@@ -327,6 +327,12 @@
    ],
    "what": "Completed Fürst's June-July 1510 alphabet and read the 59 unglossed groups: 40 firm, 13 in part, 6 open; control 4/4 held-out glossed groups exact.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Full-texts audit: outcome.texts added from what the folder holds. De Burgo: the alignment worksheet (not prose). De Laude and Gattinara: the files that carry the sign transcription and the decode of the unglossed passages (decoded, not read). Fürst: the table of unglossed groups (not prose). Colla (26-5-10) and the Modena letter (26-5-7) have no transcription of signs or glosses in the folder and none was made; they stay documents without texts. The glossed bulk (about 2,100 lines) is not transcribed for any writer.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -380,6 +386,48 @@
     "item": "stain-lost glosses in 26-4-9, 26-4-10, 26-4-24, 26-4-25",
     "blocker": "not-attempted",
     "detail": "cipher survives; read with keys later"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "deburgo",
+    "label": "Andrea de Burgo: sign-by-sign alignment of three glossed pages (25-2-27 img 04, 22-3-18 img 08, 25-2-25 img 02)",
+    "transcription": "bt_alignment.md",
+    "decryption": "bt_alignment.md",
+    "language": "la",
+    "state": "not prose",
+    "summary": "A key-building worksheet: the cipher signs of sample lines set against the words of the contemporary interlinear decipherment. No connected text of the reports.",
+    "note": "Worksheet, not a text: one file holds the sign names line by line and the gloss word aligned to each group, with a confidence per word; it is the source of key_deburgo.md. The glossed bulk of this writer's cipher lines (read at the time, interlinear) is not transcribed: neither the signs nor the glosses; only the survey tables (survey_batch1.md, survey_batch2.md) quote words from them."
+   },
+   {
+    "doc": "delaude",
+    "label": "Paulus de Laude, Blois Feb 1512: the two unglossed passages (26-4-10 img 07 l. 29; 26-4-9 img 04, closing paragraph)",
+    "transcription": "reading_delaude.md",
+    "decryption": "reading_delaude.md",
+    "language": "la",
+    "state": "decoded, not read",
+    "summary": "26-4-10 l. 29 is the end of the sentence glossed over l. 28: 'sunt conformia suprascriptis'. The closing paragraph of 26-4-9 f. 14 (195 signs, in a water stain) is transcribed provisionally and not read.",
+    "note": "One file holds the sign transcription of both passages and their decode with key_delaude.md. Line 29 (16 signs) reads by alignment with the gloss; the closing paragraph is 17% firm after five passes (NOTES), not a reading. The glossed bulk of this writer's cipher lines (read at the time, interlinear) is not transcribed: neither the signs nor the glosses; only the survey tables (survey_batch1.md, survey_batch2.md) quote words from them."
+   },
+   {
+    "doc": "fuerst",
+    "label": "Veit von Fürst: the 59 unglossed groups, one by one",
+    "transcription": "reading_veit.md",
+    "decryption": "reading_veit.md",
+    "language": "la",
+    "state": "not prose",
+    "summary": "Single cipher words inside clear Latin reports: 40 read firmly (most are halves of words glossed at the time, e.g. comu-/-nem, peri-/-culo), 13 in part, 6 open.",
+    "note": "A word list, not a text: a table of group, sign transcription, letters with key_veit.md, reading and context. The clear Latin of the reports around the groups is not transcribed. The glossed bulk of this writer's cipher lines (read at the time, interlinear) is not transcribed: neither the signs nor the glosses; only the survey tables (survey_batch1.md, survey_batch2.md) quote words from them."
+   },
+   {
+    "doc": "gattinara",
+    "label": "Mercurino Gattinara, Seville Feb 1511: the unglossed places (23-5-47 img 04 postscript ll. 4-5; 23-5-4 img 07 l. 17)",
+    "transcription": "reading_gattinara.md",
+    "decryption": "reading_gattinara.md",
+    "language": "la",
+    "state": "decoded, not read",
+    "summary": "Attempted, not read: the postscript lines give 6 of 19 and 1 of 20 signs (l. 4 ends 'maiore [?]', l. 5 has Maiestas); l. 17 reads 'sit matrimonium principis Caroli' with one group open.",
+    "note": "One file holds the sign transcription with positions and the decode with key_gattinara.md (about 25 letter signs); the key is too thin for these lines. The glossed bulk of this writer's cipher lines (read at the time, interlinear) is not transcribed: neither the signs nor the glosses; only the survey tables (survey_batch1.md, survey_batch2.md) quote words from them."
    }
   ]
  }

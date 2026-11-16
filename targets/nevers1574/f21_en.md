@@ -1,7 +1,7 @@
 # Renato Birago to the duke of Nevers, Lyon, 28 September 1574 (BnF français 3315 f. 21r): English translation
 
-Translation (Claude Opus 5.5, 23 Oct 2026) of `f21_transcription.md`, the contemporary clear fair copy found under the
-cipher flap. One doubtful phrase, `[?Salvato] suo` (written *saluato suo*: a name, or the participle "saved"). Italian.
+Translation (Claude Opus 5.5, 23 Oct 2026) of `f21_transcription.md`, Birago's letter in clear, under the cipher slip pasted
+over it (the slip is a different text: `f21_slip_en.md`). One doubtful phrase, `[?Salvato] suo` (written *saluato suo*: a name, or the participle "saved"). Italian.
 
 ## Translation
 

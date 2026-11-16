@@ -208,3 +208,7 @@ We count system Y as read and the target as read in part, for two reasons:
 - system X is untouched.
 
 The 'mm' readings may hide a transcription error in one sign of the cursive hand; we have not yet gone back to the images for them. No image or crop is included.
+
+## 14 Nov 2026 full-texts audit: system X has no decryption
+
+The full-texts check asks for a decryption file for images 03r and 09r. None exists and none can be produced: system X has no key. One test was run so that the gap is not only "not attacked": the frozen system Y key (`dudout/KEY-1555.json`, longest code first) applied to `dudout/transcription_03r.txt` and `dudout/transcription_09r.txt`, marks (overline, stroke, superscripts) dropped, gives no Italian word run on either page (03r line 1 `rrmenidlisdagl ama`, 09r line 1 `pelrrsnuioa euo oinaisr`). X is not Y written with marks. Ruled out; recorded as a solution step. The two entries stay in `outcome.texts` with their transcriptions and no decryption, so the check keeps reporting "no decryption file" for them; that message is true. Blocker unchanged (Remaining gaps, system X): about 1,400 digits, partial glosses that do not align; a table or a clear copy would open it.

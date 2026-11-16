@@ -178,3 +178,7 @@ printed clear text, and gave one figure for both letters.
 - [ ] print: originals possibly AN 402AP/13 (requested 25 Oct 2026) and the Mornay papers (Nantes BM Dugast-Matifeux DM2/92-94, Institut / BnF); in particular Loménie's letter and the king's cipher letter CVI of 24 Feb 1595.
 - [ ] key-rebuild: structural look at the 1595-99 figures and two cribs (step 8); no key.
 - [ ] retry: after the print step.
+
+## 14 Nov 2026 full-texts audit
+
+Seven documents of `documents[]` had no entry in `outcome.texts`: Loménie 1595, Duplessis Jan 1597, Duplessis 1597-98, Duplessis 1599, Rohan 1599, Rohan 1611-12 and the unsigned letter of 1612. All are unread. Their transcriptions were in the folder (`lomenie1595.txt`, `duplessis1597.txt`, rows M of `beling/transcription/v7v8_figures.tsv`, rows D, R20-R62 and U of `beling/transcription/v9v12_figures.tsv`), and so were mechanical decodes with the two known keys (`beling/results/mechanical.txt`, `beling/results/round2_mechanical.txt`, the pre-registered tests of 11-12 Nov 2026). Each is now listed with those two files and state `decoded, not read`; each note names the section of the result file that holds its lines and says that neither key gives words. Nothing was decoded again and no count changed.

@@ -202,6 +202,18 @@
    "kind": "literature search",
    "what": "Brice Dudout's readings published (https://bdudout.github.io/europe-chiffree/en/documents.html#hoeg-1675, #meyercrone-1675): the image-55 key (his K55) reads the Høeg and Meyercrone letters of Jan-June 1675; the 2 Jan Meyercrone letter is in another key, as the survey here found. Scope here narrowed to Gioë, Schröder and the letters without a key.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Reading audit (sections I and J): the 26 letters contributed by Brice Dudout (dudout/texts/) read as sentences one by one; each French reading is coherent with at most a few open codes; dudout/decode.py rerun on each transcription reproduces each decryption file byte for byte (7,736 cipher tokens in all, 26 with no value, by its own count; see read_share per entry). reading_review grade A and read_share recorded on each entry.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Document A (23 March 1675, Meyercron) listed in outcome.texts with its own transcription (transcription_p104-105.txt), decipherment and reading (reading_1675-03-23_meyercron.md) and a new English translation (reading_1675-03-23_meyercron_en.md); decode.py rerun: 263 tokens, 262 resolved. The eleven Høeg letters of 2 Jan - 9 Feb read in this folder are still not in documents[] or outcome.texts.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -215,7 +227,7 @@
   "key": "partial",
   "fraction_read": 0.996,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading_1675-03-23_meyercron.md, cipher tokens of document A only (the other letters of the copybook are not yet transcribed)",
+  "fraction_read_source": "reading_1675-03-23_meyercron.md, cipher tokens of document A only (the other letters read in the folder are not in this figure)",
   "codes_open": {
    "open": 1,
    "total": 73,
@@ -241,7 +253,7 @@
     "blocker": "open-codes"
    }
   ],
-  "notes": "In progress: only one letter of the copybook read so far.",
+  "notes": "In progress. Read with the image-55 key: document A and eleven Høeg letters (2 Jan - 9 Feb 1675) in this folder, 26 further Høeg and Meyercrone letters by Brice Dudout (dudout/). fraction_read is measured on document A only. The eleven Høeg letters read here are not yet listed in documents[] or outcome.texts.",
   "credits": [
    {
     "who": "contemporary",
@@ -266,6 +278,18 @@
   "provenance": "mixed",
   "texts": [
    {
+    "doc": "A",
+    "label": "Copenhagen to Meyercron (Paris), 23 March 1675 (images 108-109, pp. [103]-105), read in this folder",
+    "transcription": "transcription_p104-105.txt",
+    "decryption": "reading_1675-03-23_meyercron.md",
+    "translation": "reading_1675-03-23_meyercron_en.md",
+    "language": "fr",
+    "state": "read",
+    "read_share": 0.996,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the file holds the line-by-line decipherment and, under 'Reading', one long coherent French sentence with a single hole (the open-square sign of p105.24, 'qui[?] propose'). decode.py rerun on transcription_p104-105.txt: 263 cipher tokens, 262 resolved by key.tsv (99.6%). The same letter read independently by Brice Dudout (entry kopibog-1675-03-23-meyercrone) gives the same sentence. English translation written 14 Nov 2026 from the French reading."},
+    "summary": "The King wants Meyercron to keep making the same arguments at the French court: that the Swedish ambassador's demands bear little relation to the advantages he had let it be rumoured his commission would bring, and that his eagerness to conclude a just and reasonable treaty in Copenhagen is hardly sincere, since the King could scarcely agree to the conditions he proposes."
+   },
+   {
     "doc": "kopibog-1675-02-13-hoeg",
     "label": "Copenhagen to Just Høeg (The Hague), 13 February 1675 (img 053–055 · pp. 49–50v), Brice Dudout",
     "transcription": "dudout/texts/1675-02-13_hoeg_transcription.txt",
@@ -274,6 +298,8 @@
     "translation": "dudout/texts/1675-02-13_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.999,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-02-13_hoeg_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 858 cipher tokens, 1 with no value, 7 corrected in the transcription (TOK=v). read_share is that token count (857/858), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "The movements of the Swedish troops in the Elector of Brandenburg’s lands are very considerable. There is no doubt that, if help follows promptly, the Elector will stop listening to the proposals made to him from the side of France and Sweden, and that this is the shortest and surest road to the general peace the States seem to desire so ardently. Had the States hedged or dragged the matter out, i"
    },
    {
@@ -285,6 +311,8 @@
     "translation": "dudout/texts/1675-03-02_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.996,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-02_hoeg_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 237 cipher tokens, 1 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (236/237), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "It plainly appears that Sweden only means to amuse the States and to keep them, as long as she can, from carrying out the resolutions they have taken in favour of Brandenburg, so as to have time to strengthen herself more and more in Germany and to finish her preparations at home. We hear that that court has sent several people to buy sailcloth and other things needed to fit out its fleet, and tha"
    },
    {
@@ -296,6 +324,8 @@
     "translation": "dudout/texts/1675-03-06_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.99,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-06_hoeg_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 199 cipher tokens, 2 with no value, 3 corrected in the transcription (TOK=v). read_share is that token count (197/199), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "His Majesty has seen in your report of the 8th what the States have intimated to you about the requisition they have resolved to address to him against Sweden. Don Juan Major, the Spanish minister here, had already done the same on his king’s behalf a few days earlier, stating that ‹94› (the Queen Regent?) had declared to the Swedish minister in Spain that she could regard the entry of Swedish tro"
    },
    {
@@ -307,6 +337,8 @@
     "translation": "dudout/texts/1675-03-30_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-30_hoeg_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 143 cipher tokens, 0 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (143/143), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "If I did not answer you sooner, it is because the Grand Chancellor (Griffenfeld) first wished to have the proposal you made to him carried out skilfully. It has succeeded as well as could be wished, and Mr Le Maire has no doubt already reported it over there. As for the “personal interview”, you will easily see that it is not only impracticable but also contrary to propriety, besides the uncertain"
    },
    {
@@ -318,6 +350,8 @@
     "translation": "dudout/texts/1675-04-10_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.989,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-04-10_hoeg_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 87 cipher tokens, 1 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (86/87), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[You may send the Spanish ratification by the ordinary post,] which is still thought safe enough for that. The Swedish ambassador is not content with talking to others about the design his master the King has for our ‹543›: he has even spoken of it to Griffenfeld in a conversation the day before yesterday."
    },
    {
@@ -329,6 +363,8 @@
     "translation": "dudout/texts/1675-05-15_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-05-15_hoeg_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 67 cipher tokens, 0 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (67/67), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "You will see from what I am writing by this post to Mr de Klingenberg that His Majesty is thinking of sending you to the Elector of Brandenburg to stay with him for some time. It is not yet fully decided; once it is, you will be sent the credentials and instructions needed for this post."
    },
    {
@@ -340,6 +376,8 @@
     "translation": "dudout/texts/1675-06-05_hoeg_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.976,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-05_hoeg_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 42 cipher tokens, 1 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (41/42), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[I refer you to my letter to Mr de Klingenberg,] particularly on the Swedish ambassador’s suit for our princess. It was foreseen long ago that it would come to that."
    },
    {
@@ -351,6 +389,8 @@
     "translation": "dudout/texts/1675-02-16_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-02-16_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 117 cipher tokens, 0 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (117/117), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[Pending new orders,] you need only continue with the method you have begun. His Majesty is well satisfied with all you said and answered to Pomponne, and wishes you to keep acting on that footing in the rest of your negotiation, in line with what your instructions set out more fully."
    },
    {
@@ -362,6 +402,8 @@
     "translation": "dudout/texts/1675-02-23_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-02-23_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 61 cipher tokens, 0 with no value, 2 corrected in the transcription (TOK=v). read_share is that token count (61/61), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "Mr de Terlon has again received letters from Mr de Pomponne detailing your second conversation with him, and saying that he is now seeking with you some compromise to remove the difficulty you made about agreeing to any signature at all."
    },
    {
@@ -373,6 +415,8 @@
     "translation": "dudout/texts/1675-03-06_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-06_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 67 cipher tokens, 0 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (67/67), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "Some articles for an alliance with France are now being drawn up; they will be given to Terlon to learn his opinion."
    },
    {
@@ -384,6 +428,8 @@
     "translation": "dudout/texts/1675-03-16_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-16_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 139 cipher tokens, 0 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (139/139), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "France must not doubt that His Majesty will do, in this juncture, everything his honour can allow in favour of the King [Louis XIV]; Terlon received all the assurances he could wish this very morning, when he came to the castle to tell His Majesty how pleased the King his master had been with your audience."
    },
    {
@@ -395,6 +441,8 @@
     "translation": "dudout/texts/1675-03-23_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.996,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-23_meyercrone_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 263 cipher tokens, 1 with no value, 4 corrected in the transcription (TOK=v). read_share is that token count (262/263), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[Terlon has been led to hope for articles of a future alliance with France.] His Majesty nonetheless wishes you to go on using the same arguments as hitherto at the court where you are, and above all to make it understood there how little the Swedish ambassador’s demands match the fine fruits he had first spread about from his mission, and the clear and solid reasons His Majesty has to believe tha"
    },
    {
@@ -406,6 +454,8 @@
     "translation": "dudout/texts/1675-03-30_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-03-30_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 53 cipher tokens, 0 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (53/53), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[The Swedish ambassador] has had letters from Baron Sparre in France, writing that you complained with much exaggeration to Mr de Pomponne of the conditions Sweden is proposing to us, as unjust and even insulting to His Majesty. It seems to me that Pomponne might have handled what you told him a little more discreetly, since the matter speaks for itself."
    },
    {
@@ -417,6 +467,8 @@
     "translation": "dudout/texts/1675-04-06_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.993,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-04-06_meyercrone_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 142 cipher tokens, 1 with no value, 2 corrected in the transcription (TOK=v). read_share is that token count (141/142), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "Spain and ‹163› (the province of Holland?) have paid their share of the money promised by the treaty concluded with His Majesty; but the other provinces are still behind, and the States are reluctant to break with Sweden themselves: you will see that things have hardly changed, and that you should therefore change nothing in your conduct where you are."
    },
    {
@@ -428,6 +480,8 @@
     "translation": "dudout/texts/1675-04-13_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.999,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-04-13_meyercrone_reading.md) builds coherent sentences from end to end; 3 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 1451 cipher tokens, 2 with no value, 4 corrected in the transcription (TOK=v). read_share is that token count (1449/1451), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[The King has seen Louis XIV’s views on the two articles of the counter-project.] On the first point, it is judged that this condition can only be most agreeable to the King of France, since it is assumed that he bound himself against his will to do nothing with His Majesty without Sweden’s consent — a clause of little advantage to France, which she should wish she had never made. [As for Sweden’s"
    },
    {
@@ -439,6 +493,8 @@
     "translation": "dudout/texts/1675-04-20_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-04-20_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 169 cipher tokens, 0 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (169/169), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "The project to be given to Mr de Terlon is fully ready and will be handed over in a few days, although the matter meets with opposition, which Griffenfeld, it is to be hoped, will overcome by the dexterity with which he handles minds and affairs. A new one will also be given to the Swedish ambassador extraordinary. As for the subsidies Spain and the States have just paid His Majesty, suffice it to"
    },
    {
@@ -450,6 +506,8 @@
     "translation": "dudout/texts/1675-04-24_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.996,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-04-24_meyercrone_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 259 cipher tokens, 1 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (258/259), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "I wrote to you that a project would soon be given to Terlon, and Griffenfeld had it quite ready; but when it was debated in the council not all its members were of one mind, so it has not yet been handed over. Griffenfeld nonetheless hopes soon to overcome the difficulties that have prevented it. Meanwhile he has given the ‹commissioners› negotiating with the Swedish ambassador another project to "
    },
    {
@@ -461,6 +519,8 @@
     "translation": "dudout/texts/1675-04-27_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.994,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-04-27_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 156 cipher tokens, 1 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (155/156), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "The King fully approves what you told Mr de Pomponne: the orders and instructions given to Høeg are entirely in keeping with it, as are the proposals he has made. You will have seen from my last why the project drawn up for Terlon has not yet been handed over, and Griffenfeld’s hope of overcoming the difficulties that delayed it."
    },
    {
@@ -472,6 +532,8 @@
     "translation": "dudout/texts/1675-05-04_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-05-04_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 47 cipher tokens, 0 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (47/47), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "The Grand Chancellor has also revised the project to be given to Mr de Terlon; you see that he neglects nothing to confirm France in the good feelings you have given her. He also spoke this afternoon to Mr von Stöcken to have you sent the money you need to follow the Most Christian King to the army."
    },
    {
@@ -483,6 +545,8 @@
     "translation": "dudout/texts/1675-05-11_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-05-11_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 289 cipher tokens, 0 with no value, 0 corrected in the transcription (TOK=v). read_share is that token count (289/289), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "We have news from Holland that our ministers there are said to have made an agreement with the allies about the war against Sweden. Since they have written nothing of it themselves and such a thing would be directly contrary to their orders, it is hard to believe, and for their own sake it is to be hoped it is not so; the next post will tell. If it has happened, however — which you may have learne"
    },
    {
@@ -494,6 +558,8 @@
     "translation": "dudout/texts/1675-05-22_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.994,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-05-22_meyercrone_reading.md) builds coherent sentences from end to end; 3 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 316 cipher tokens, 2 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (314/316), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "There was never any thought here of being content with the two hundred thousand écus a year for three years offered by Terlon. I have several times heard Griffenfeld tell him that, should His Majesty come to terms with Terlon, it was only fair that France treat her no less favourably than Sweden had been treated before taking action — as you yourself have several times represented to Mr de Pomponn"
    },
    {
@@ -505,6 +571,8 @@
     "translation": "dudout/texts/1675-06-01_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.997,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-01_meyercrone_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 293 cipher tokens, 1 with no value, 2 corrected in the transcription (TOK=v). read_share is that token count (292/293), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "After the news lately received of the agreement made at {The Hague}, His Majesty leaves it entirely to you whether to make this journey [to Louis XIV’s army], though it is to be feared you will not be looked on as kindly as before; it is for you to judge whether it would not be better to avoid the occasion altogether. Mr de Terlon, having received new orders by the last posts, is now drawing up a "
    },
    {
@@ -516,6 +584,8 @@
     "translation": "dudout/texts/1675-06-05_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.992,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-05_meyercrone_reading.md) builds coherent sentences from end to end; 6 code(s) left as ‹n› (3 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 785 cipher tokens, 6 with no value, 3 corrected in the transcription (TOK=v). read_share is that token count (779/785), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "The Swedish ambassador here has, since his last courier, made a formal suit for {the princess} and presses the matter with great eagerness, hardly speaking any more of the other negotiation, which he says he wishes to set aside. His Majesty let him know through ‹35› that this suit of the {King of Sweden} was not unwelcome to her — in which she considered the satisfaction of the King of France, who"
    },
    {
@@ -527,6 +597,8 @@
     "translation": "dudout/texts/1675-06-08_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.996,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-08_meyercrone_reading.md) builds coherent sentences from end to end; 5 code(s) left as ‹n› (2 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 1119 cipher tokens, 4 with no value, 2 corrected in the transcription (TOK=v). read_share is that token count (1115/1119), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "You are uncertain what to make of the news you had from Klingenberg and from me about what happened at The Hague during the Elector of Brandenburg’s stay there. You will have seen from my letters since then that it was wholly against His Majesty’s intention, and even against his orders, that his ministers gave their consent there. But the Swedish ambassador here showed at the same time, by refusin"
    },
    {
@@ -538,6 +610,8 @@
     "translation": "dudout/texts/1675-06-11_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 1.0,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-11_meyercrone_reading.md) builds coherent sentences from end to end; 1 code(s) left as ‹n› (0 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 90 cipher tokens, 0 with no value, 1 corrected in the transcription (TOK=v). read_share is that token count (90/90), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[As His Majesty leaves on Sunday for Holstein and the Grand Chancellor tomorrow,] a paper will be handed to Mr de Terlon this very day for a provisional engagement between His Majesty and the King of France, until a formal treaty can be concluded with all the necessary clauses and circumstances."
    },
    {
@@ -549,6 +623,8 @@
     "translation": "dudout/texts/1675-06-21_meyercrone_translation.md",
     "language": "fr",
     "state": "read",
+    "read_share": 0.997,
+    "reading_review": {"grade": "A", "by": "Claude (session of 14 Nov 2026)", "date": "2026-11-14", "note": "Read as sentences on 14 Nov 2026: the French reading (1675-06-21_meyercrone_reading.md) builds coherent sentences from end to end; 2 code(s) left as ‹n› (1 of them with a contributor's gloss in braces), none breaking a sentence. The decryption is the raw decoder output (unspaced, sign 9 printed as {r|t|a}); rerun here with dudout/decode.py it reproduces byte for byte: 287 cipher tokens, 1 with no value, 2 corrected in the transcription (TOK=v). read_share is that token count (286/287), not a word count. The reading normalises spacing, accents and the r/t/a choice from context; its letters were compared with the decryption by script (96-100% of the reading's letters found in sequence). The English translation is the contributor's, complete in sense but lightly condensed in places."},
     "summary": "[The Grand Chancellor] thinks that the news I have since given you of the marriage between our princess and the {King of Sweden}, together with the article handed at the same time to Terlon, of which I sent you a copy, will have removed at the court where you are any umbrage it may have taken at what happened at The Hague. That is still how things stand here, and I see little likelihood of any con"
    }
   ]

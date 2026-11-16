@@ -90,3 +90,12 @@ Checked 3 Nov 2026. Three web searches by the solver (Capilupi cipher and Worms 
 ## Cross-reference (13 Nov 2026)
 
 The digits of c. 48 and c. 49r are in the same system as system Y of `../capilupi1546/` (Ippolito Capilupi, cc. 80a-80h, catalogue 1555), whose key (`dudout/key.txt`) gives Italian runs on them (not an independent test: both pages were in its build set). The key is held in capilupi1546; one key, one entry.
+
+## 14 Nov 2026 full-texts audit: cc. 48 and 49r decoded with the system Y key
+
+c. 48 and c. 49r had transcriptions but no entry in `outcome.texts`. `scripts/decode_digits.py` applies the frozen key of system Y held in `../capilupi1546/` (`dudout/KEY-1555.json`, longest code first, the same parse as its `measure_1555.py`) to `transcription_c48.txt` and `transcription_c49r.txt`; the outputs are `decryption_c48.txt` and `decryption_c49r.txt`. No digit was changed.
+
+- c. 49r decodes to nearly continuous Italian. Divided into words, no letter changed: *l ambasciador di francia ha deto a ferars[?] che l imp il mando a dimandare tre di sono [?] il t[?]ene da due hore ragionando in dolcet[?]a mostrando di uoler ad ogni modo pace col re uoler che suo sfigliuolo pigli la figlia de orre che lo scriuess al re con [?] quali conditioni non*. Open: `ferars?` (a name), `limp` (l'Imp[eratore]?), `de orre`, the five doubtful digits. The passage breaks off at the foot of the page.
+- c. 48r decodes to Italian runs (*il qual mi ha deto hor basta*, *il cardinale ricercandoli io*, *che pore piu pensioni rispose hora non*) broken by the blot on line A3 and by strings that do not divide (*lcofe*, *socedatomoi*, *bamze lonasiare*).
+
+Both are listed with state `decoded, not read`. Reasons: the digits are one pass from enlarged crops; both pages were in the build set of the key (capilupi1546 NOTES), so the decode is no independent test of it; no second reader. The earlier line "the solver stopped there and called the text too short" is superseded for the system (the key exists), not for the reading. What would make c. 49r a reading: a second transcription from the Estense image (manifest id in the list at the top) and cc. 49v-50, where the passage continues. `documents[].read` for both stays "not read" and `fraction_read` is unchanged.

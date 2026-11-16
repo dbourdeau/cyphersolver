@@ -28,6 +28,13 @@ The work below was done in the benedict1399 sessions of 23 Sept 2026 and is carr
 - No image of this letter exists: Puig's only cipher facsimile (p. 475) is of Benedict XIII's letter of 22 June 1400.
   The key was therefore not checked on this letter.
 
+## 14 Nov 2026: no transcription of the cipher is possible from here
+
+The audit asked for a transcription file. There is none to copy or make: the folder holds only the clause of Puig's
+printed decipherment; Puig prints no cipher signs for this letter and his only facsimile is of another letter; the
+ACB original is not digitised (see "The document" above). The profile records `transcription_missing` with this
+reason. Nothing new was fetched today.
+
 ## Remaining gaps
 - The rest of the letter (doc. 1043), which Puig cites but does not print - blocker: needs-physical-access; Not printed; the ACB original is not digitised, and may be among the papers Puig did not return.
 

@@ -24,6 +24,30 @@ and the saved copies of GL.htm / francis.htm stay in `targets/gramont1529/`.
 * Table refinements from the leaf: ɓ = P and I; long-tailed 9 = A and V; 8∞ = LE; macron over ∞ = en; the block
   opens with two nulls.
 
+## 14 Nov 2026: the cipher lines transcribed sign by sign
+
+The audit asked for a transcription of the cipher (none had been kept). Gallica image f36 fetched at full size
+(openapi.bnf.fr IIIF) and the 11 lines read in line crops. Each sign is named by the cell of Lasry's table whose
+drawing it matches (column letter, 1 or 2 for the upper or lower drawing): `texts/fr3083_no8_cipher_signs.txt`,
+a single AI transcription, not checked by a person. 437 signs (counted by script; one struck sign in l. 6 left out).
+
+Check: decoding the labels (A1, A2 = A, and so on) gives the text of `fr3083_no8_langeac.md` line for line. What the
+signs show against that reading:
+
+* l. 1 opens with two signs of Lasry's "Unknown" row (the large C and the A-shape) before MONSEIGNEVR; l. 9 opens with
+  the same large C and a crossed c like SS (the "[E + crossed sign]" of the reading: the first is not an E).
+* l. 1-2: RECH | ER SON, so the page has "recher son conge", not "rechercher".
+* l. 2: the O of VOLV is a small 6-shaped sign, perhaps the fourth sign of Lasry's Unknown row (doubtful).
+* ll. 4, 5: the N of EMPRINSES, EMPRINSE is a 7-shaped sign (the M shape) after a short dash, both times. l. 4 has
+  RVIN DES EMPRINSES with no sign for the bracketed "[E]" or "[EN]" of the reading.
+* l. 7: CROY ends in the y-shaped C sign. The three signs before the clear "sans" stay unidentified.
+* l. 8: no clear S sign after TOV (two faint dots); the N of CONSENTEMENT is the ordinary N sign, not the b-shape
+  (the "N?" of the key notes is not needed).
+* l. 11: an extra T sign stands between TROP and DANGEREVSE.
+
+None of these changes the sense. `fraction_read` recounted on signs: 428 of 437 = 0.979 (was 0.987 on letters).
+The reading file itself was not edited.
+
 ## Remaining gaps
 - a group of 3-4 signs before *sans* (line 7) and 2 signs before VNG (line 9) - blocker: too-short; isolated groups with no gloss or decipherment of the letter, and the context admits several words
 
