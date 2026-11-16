@@ -1,0 +1,14 @@
+gerlach1252 pp.138, 139, 140, 150 blind packet index (16 Nov 2026); contents of the packet given to the blind reader:
+Images: Wellcome IIIF b19695561 scans 0131, 0132, 0133, 0143, full/2000,/0/default.jpg, plain curl GET, logged in key_v2/FETCH_LOG.txt (03:50:52Z-03:51:06Z).
+Pages chosen in key_v2/EVIDENCE.md ("Proposed fresh pages"): no upstream file and no upstream PR covers them (523 PR heads checked). Scan = page - 7 for pp.138-140; p.150 = scan 0143.
+Label sheet: SHEET_v2.md (no letter values), the same text as the sheet of pp.124-137 with the four slips' shapes sharpened and OAR, 4C added (SHEET_v1_to_v2.diff).
+sha256:
+e7b288fcd1ed3199e9fde7b102226bf6794e38edae9bfc0bc1c99d7a5ada1bd8  PROMPT.txt
+775ea445d5b4cfbb4e1c55bf59d4ba0478f8ec3eb38b3b4b35c424ea2f42e53a  SHEET_v2.md (as SHEET.md in the packet)
+47f5e7c53478be1166b05014ea26969887275b0ecf1bcad28022a6839002434a  scan0131.jpg (md5 95990d8d1e0478540d0ea0457b2c915b)
+ed778eab6c4f2603cb5ba2541d9c3971a3bec027dac21f94f176d27fae54d8bf  scan0132.jpg (md5 6ae0de85df291044af9eb02d3e59691c)
+98af6f1e5d6bd82647ccd25f65bd1ed17d1a4e5f1f265420a85ad3b8b08f9bf5  scan0133.jpg (md5 cefa7894e200d10ce4e981cc07351874)
+8de144ea476a0e3060ad84fe6ce71dfd50cf6157dd5712878273e38220a35663  scan0143.jpg (md5 1c62486c917012222e4438cee95319ed)
+Order of events (UTC): key_v2 and SHEET_v2 frozen 03:51:31Z (key_v2/FREEZE_v2.txt); BLIND.tsv handed over and frozen 03:57:39Z
+(FREEZE_blind.txt, md5 f9c60f62b69513ad2897705d65f0ca7a); key_frozen.tsv = key_v2.tsv byte for byte (FREEZE.txt); decode_once.py run once;
+judge given only judge/BRIEF.txt and judge/decode.txt (the decoded letters), one strict pass (judge.tsv, JUDGE_NOTES.txt); shuffle.py run after.

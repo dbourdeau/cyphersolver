@@ -1,0 +1,44 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.138, 139, 140, 150
+One strict pass, no second tries. Decode taken as given (no edits).
+
+UNIT RULES
+- Units = decoded letters. '?' (doubt mark), ';', '=', '.', spaces not counted. '[...1]' = 1 unknown sign (N).
+- Brace text {B AMD}, {B A.M.D.} and the 'clear:' margin labels on p.150 are clear text, not cipher: excluded.
+- Every row's letter string was checked by script against decode.txt: 90 rows, 0 mismatches.
+- A slip that shows as a two-letter group ('de' for g) counts both letters E.
+- A dropped letter (ach for auch) marks one adjacent letter E, since no letter is wrong as such.
+
+TOTALS (strict share = S/(S+E+N))
+p.138: S 430, E 18, N 3 = 451. Strict 430/451 = 95.3%
+p.139: S 358, E 24, N 5 = 387. Strict 358/387 = 92.5%
+p.140: S 398, E 12, N 3 = 413. Strict 398/413 = 96.4%
+p.150: S 387, E 14, N 0 = 401. Strict 387/401 = 96.5%
+All:   S 1573, E 68, N 11 = 1652. Strict 1573/1652 = 95.2%. (S+E)/total = 1641/1652 = 99.3%
+Check: 430+358+398+387 = 1573. 18+24+12+14 = 68. 3+5+3+0 = 11. 451+387+413+401 = 1652.
+
+RECURRING SLIPS (68 E letters, counted by script)
+- 'de' where g is meant: 15 times (30 letters). obdeemelten, itztdeemelten, deut, deolt, deantz, dear, deluhe,
+  deluen, redeis, undeerisch, furladee, anderu(ret), derofen, cdeer, hinwedeck. One cipher sign is coming out as
+  'de' instead of g. Fix it in the key and about 30 E letters become S. In uedet (leget) only d stands for g.
+- l and u (v) swapped: u for l 8 times (auso x4, goudes, uot, uedet, plus 1), l for u/v 8 times (lolben, spiritls,
+  felr, zlsamen, lon, darlon, ln, lermachet).
+- r for u/v/e: 5 (rom, srbtilen, strnde, ril, writen).
+- 'ck' after g (fertigck x2, hinwedeck) and c for u in acch: 5 c marked E. 'fertigk' may be a period spelling.
+  If so, 3 of these are S.
+- Odd ones: d for g (landen, uedet), d for a (aqud), m for n (meun), m in selm (selben), f for s (wufer, derofen),
+  s for r (fuslage), u for a (wufer), w for a (dws), e for p (precieitat), b for i (christb), a for e (ia).
+
+N (11): 'mi' + unknown sign (p.138 L17, before 'fehet'), 'dule' (p.139 L13), stray 'u' (p.139 L19),
+'uo' (p.140 L21), unknown sign after 'nem' (p.140 L19).
+
+GISTS (recipe level only)
+p.138: Continues a distilling recipe. The spirit is left to settle, the receiver taken off and the water drawn into
+  a flask under a still-head in a water bath. The watery part is driven off until the liquid shows sharpness, then
+  it goes into a long-necked flask.
+p.139: Ends the recipe. Sal ammoniac goes into the water, the glass is sealed and left to stand. The text says it
+  improves with age, and that this makes 'aqua regis'. A new heading follows: dissolving gold (Hungarian gold) in
+  aqua regis.
+p.140: Gold-refining recipe: purifying gold with lead on a cupel in the fire until the gold is clean and bright,
+  then taking it off the cupel. The text breaks off as the next step starts.
+p.150: Ends a recipe for a 'precipitate' made with spirit of wine, called a noble medicine. A new heading follows:
+  how to multiply this precipitate, by grinding it together with 'mercurius solis' (mercury of gold).
