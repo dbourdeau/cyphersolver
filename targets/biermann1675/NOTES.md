@@ -122,7 +122,7 @@ gap), and a comparison of the twelve letters read on both sides. Catalogue 465 n
 ## Remaining gaps
 
 - Letters under the image-55 key to Gioë in England and Schröder - blocker: not-attempted; every Høeg and Meyercron letter of this family is read (eleven here, 26 more in `dudout/`), so these are what is left of it.
-- Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden, Klingenberg (since read in part with a rebuilt key: `targets/klingenberg1675/`), Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
+- Letters without a surviving key (Lilienkron, Gioë in Moscow, Reetz in Spain, Lindenow in Sweden (the letter of 22 February since read in part with a key rebuilt from the Meyercron near-parallel: `targets/lindenow1675/`), Klingenberg (since read in part with a rebuilt key: `targets/klingenberg1675/`), Lincker, Meyercron 2 Jan, Høeg 21 June, Lente 21 June) - blocker: not-attempted; the whole key volume was swept and nothing fits (keyhunt.md), so the next move is a key rebuild from the ciphertext (large volumes per family) plus the cribs listed above.
 - 23 March letter to Meyercron, p105.24: one open-square sign, most likely "l" - blocker: open-codes; one occurrence; Dudout's reading of the same letter (`dudout/texts/1675-03-23_meyercrone_reading.md`) and his 19 Paris letters are the retry material.
 
 ## Escalation
