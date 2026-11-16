@@ -141,7 +141,7 @@ Derived here (16 Nov): `transcription_620.txt`, `transcription_623.txt`, `decryp
 - The prior-art sheet (Google Books / HathiTrust phrases, MAP inventory vol. 4, Spanish-side editions, DECODE) is not yet searched. Blocker: not-attempted. Needs Malcolm for the HathiTrust and Google Books phrases.
 - The code values 27 (re di Scotia?) and 24 (Inghilterra?) in 623 are unverified. The basis for 22 (Francia) is not recorded in the key note, and #161 in 623 has no value. Blocker: open-codes.
 - "dunhtare" occurs twice in 623 (dubitare?, with nh for bi), and "coiono" and "coioborato" occur in 620 (rr written as i?). Repeated misreadings like these point to a key value or sign-label error, not a slip. Blocker: not-attempted. To check on the images against the key.
-- By `docs/_check_reading.py`, reading_620.md is "not a reading" (3 of 16 sentences clean). The class "read in part" rests on the judge's 74.7% letter-unit figure. Blocker: not-attempted. It would be settled by fixing the key or label errors above, then a new frozen pass.
+- By `docs/_check_reading.py`, reading_620.md is "not a reading" (3 of 16 sentences clean), so the target is classed "not read" (outcome.class), with the key method unchanged. Blocker: not-attempted. It would be settled by fixing the key or label errors above, then a new frozen pass.
 - Copies 621, 622 and 628 are not collated. 621 gives clear equivalents for part of 620, and 622 is a copy of 623. Blocker: not-attempted.
 
 ## Escalation
