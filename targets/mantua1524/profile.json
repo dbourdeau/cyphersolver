@@ -1,0 +1,366 @@
+{
+ "schema_version": 1,
+ "target": "mantua1524",
+ "title": "Three cipher leaves sent to Federico II Gonzaga, 1524, in one homophonic cipher: Suardino from the Imperial court (f. 298r-v), a feigned-illness letter (f. 68r) and Capino de Capo at Robbio (f. 198r), BAV Vat. lat. 8214",
+ "documents": [
+  {
+   "id": "vatlat8214-298",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. lat. 8214, f. 298r-v (catalogue 2368)",
+   "date": "26 Feb [1524]",
+   "year": 1524,
+   "country": "Spain",
+   "route": "Giovan Battista Suardino (Imperial court, Vitoria?) -> Federico II Gonzaga, marquis of Mantua (extract)",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or filed with it; the contributor found none in print. The original letter, if it survives in ASMn, Archivio Gonzaga (Carteggio estero, Spagna), was not seen and may carry a chancery decipherment."
+   },
+   "length": {
+    "tokens": 398,
+    "unit": "symbols",
+    "measured": true,
+    "file": "aaymeloglu/transcription-298.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription sign by sign from the BAV IIIF images at 1962 px (full size), with alternatives for doubtful signs; a second model (Codex) checked signs on the images and two corrections on 298v were applied",
+    "image_quality": "good",
+    "notes": "Heading and 23 lines on 298r, 8 lines on 298v; clear Italian with cipher runs in nearly every line. Length: units after the letter-pair merges of key.json, as counted by aaymeloglu/verify.py; 69 cipher segments."
+   },
+   "places": {
+    "from": "Vitoria? (the heading place is in cipher and doubtful)",
+    "to": "Mantua"
+   }
+  },
+  {
+   "id": "vatlat8214-68r",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. lat. 8214, f. 68r (new find; enters as a lead through research/)",
+   "date": "early 1524 (among the Milan items of January 1524; not dated on the leaf)",
+   "year": 1524,
+   "country": "Italy",
+   "route": "a writer in the first person plural, plausibly Federico II Gonzaga -> plausibly Baldassarre Castiglione at Rome (inference from Benzoni's account; the leaf names neither)",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or filed with it. Benzoni, DBI 45 (1995), quotes 'orine' tinte di 'sangue' and 'sano et gagliardo' for this episode and lists Vat. lat. 8214 among his sources; the text he quotes from has not been found (a clear minute in Federico's copialettere, a decipherment in Castiglione's papers, or La Rocca's notes are the candidates; none was seen)."
+   },
+   "length": {
+    "tokens": 733,
+    "unit": "symbols",
+    "measured": true,
+    "file": "aaymeloglu/transcription-68r.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription sign by sign from the BAV IIIF image at 1962 px; second-checked on 5 of 23 lines plus targeted image checks of disputed signs; the Codex review corrected two signs on line 23",
+    "image_quality": "good",
+    "notes": "23 lines almost all in cipher; lines 01-02 blotted and partly clear. Length: units after the letter-pair merges of key.json, as counted by aaymeloglu/verify.py; 145 cipher segments, of which lines 20-23 (31 segments) are the reserved control lines."
+   },
+   "places": {
+    "from": "unknown (Mantua, if the writer is Federico)",
+    "to": "unknown (Rome, if the addressee is Castiglione)"
+   }
+  },
+  {
+   "id": "vatlat8214-198r",
+   "read": "read in part",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. lat. 8214, f. 198r (new find; enters as a lead through research/)",
+   "date": "8 Apr 1524",
+   "year": 1524,
+   "country": "Italy",
+   "route": "Capino de Capo (Robbio, Lomellina) -> Federico II Gonzaga (extract 'Ex litteris D. Cappini dat. in Robio 8 Aprilis 1524')",
+   "language": "Italian",
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf or filed with it; the contributor found none in print."
+   },
+   "length": {
+    "tokens": 66,
+    "unit": "symbols",
+    "measured": true,
+    "file": "aaymeloglu/transcription-198r.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "the contributor's transcription from the BAV IIIF image at 1962 px; the project compared the two cipher lines with the scan sign for sign (issue #697)",
+    "image_quality": "good",
+    "notes": "26 lines of clear Italian with two cipher lines (17-18). Length: units after the letter-pair merges of key.json, as counted by aaymeloglu/verify.py; 13 cipher segments on two lines."
+   },
+   "places": {
+    "from": "Robbio",
+    "to": "Mantua"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution over Latin letters, digits and signs, in which some letter pairs are single units (m i, o o, l o, n o, p a, c c, d d, b b, l a, b o, m o, g r, g 1, b u); a few code signs (a boxed sign, H, IZ, a cross, a looped che-shaped sign) have no value. 54 units, 38 with a value.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 54,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "partial",
+  "notes": "No key sheet, gloss or contemporary decipherment is known; every value is fitted from the text (grade S). The single o never stands alone, which is what showed the pair units. lo gives t in most words but l in five places with no graphic rule found."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment of any of the three leaves is known. For f. 68r, Benzoni (DBI 45, 1995) quotes three phrases of the episode ('orine' tinte di 'sangue', 'sano et gagliardo') and cites Vat. lat. 8214; the text he quotes from has not been found. His account was found by the Codex review after the reading (15 Nov 2026) and was not used to make it.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Contributed result (GitHub issue #697, Andrew Aymeloglu, 16 Nov 2026; work of 15 Nov): Claude Code agents (Claude Fable and Claude Opus) transcribed the three leaves, paged the volume for further cipher, annealed a key and refined it by hand word by word; Codex reviewed independently; the contributor reviewed the result. The project reran the files (issue #697).",
+  "tools": [
+   "cipherkit (the contributor's annealer and controls; not included here)",
+   "aaymeloglu/verify.py (recomputes the key output and the tiers)",
+   "aaymeloglu/running_text.py (running texts and word counts)"
+  ],
+  "models": [
+   "Claude Fable",
+   "Claude Opus",
+   "Codex"
+  ],
+  "first_date": "2026-11-15",
+  "last_date": "2026-11-16"
+ },
+ "solution": [
+  {
+   "date": "2026-11-15",
+   "kind": "access",
+   "what": "All 816 images of Vat. lat. 8214 paged on DigiVatLib for cipher, glosses, clear copies or keys: cipher only on ff. 68r, 198r and 298r-v; no gloss, clear copy or key in the volume.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "The three leaves transcribed sign by sign from the full-size IIIF images (1962 px), with alternatives x{y}? for doubtful signs; 68r second-checked on 5 of 23 lines.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "what": "Homophonic simulated annealing with a 4-gram Italian character model (cipherkit 'it' corpus) on the three leaves pooled; it did not converge until letter pairs were joined as single units (the single o never stands alone).",
+   "result": "partial",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "control",
+   "what": "Lines 68r 20-23 set aside before the hand refinement, with scoring rules written in advance. The starting key had been fitted on all lines including these and their decode had been printed once, so this is a fit-consistency check with leakage, not a held-out test.",
+   "result": "partial",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "reading",
+   "what": "Values fixed by hand only where several independent words agree (Prospero, Carpi, heredi, investitura, Cremona, fatto, fiume, Februarii); further pair units added where repeated words required them (b u after the reserved count). Segments graded strict, forced, lenient, doubt, unread: 141, 22, 35, 11, 18 of 227.",
+   "result": "partial",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "control",
+   "what": "Key shuffle on the fitted text (200 shuffles, reserved lines excluded): 4-gram z = 14.5; lexicon-string segments 81 of 191 against 19.0 +/- 5.9 (circular for a hand-tuned key). Reserved lines: 19 of 31 segments lexicon strings against 4.8 +/- 1.6; 10 of 20 fully keyed segments of 4+ letters against 0.06 (with the later b u unit and two image corrections, 22 of 31 and 13 of 20, reported apart). Leave-one-out: the 4-gram model returns the key value for most units but not for I, i, 6, b, pa, bu, bb, g1, o, S. Merges tested both ways: splitting l o or n o loses hits.",
+   "result": "partial",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "control",
+   "what": "Matched synthetic control: an unaided anneal of f. 298 alone (406 units) recovered 35-60% of synthetic homophonic Italian of the same shape; at about 1,200 units and 38 symbols it recovered 94% in one run of three and 45% in two (on an earlier unit scheme).",
+   "result": "partial",
+   "technique": [
+    "simulated annealing",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "verification",
+   "what": "Independent review by Codex: 174 signs in 19 key groups checked on the images, every key output and the control arithmetic reproduced, the historical claims checked (Benzoni's account of the urine deception found). Its corrections at 298v 04/6 and 68r 23/4, 23/5, the reading 've parira' and the historical corrections applied; 68r 19/2 kept against it (two signs visible on the image).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "The project (issue #697): verify.py reproduces every count; an own decoder from key.json gives the key output for all 227 segments (1,197 units); the 298r and 198r image hashes match the BAV copies; the two cipher lines of 198r agree with the scan sign for sign. Count by the project's rule (strict segments read, all others holes): 50% of 284 cipher words (298r-v 38%, 68r 55%, 198r 79%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "literature search",
+   "what": "Source of Benzoni's quotation from the 68r episode (DBI 45, 1995; his Fonti list Vat. lat. 8214, Castiglione's Lettere ed. Gorni 1969 and ed. La Rocca I 1978): neither edition found online (archive.org checked); one web search on the quoted phrases found nothing. Not found.",
+   "result": "failed",
+   "technique": [
+    "plaintext matching"
+   ]
+  }
+ ],
+ "outcome": {
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "No key sheet, gloss or decipherment is known; the key was fitted by annealing on the three leaves pooled and refined by hand from the words the text makes, with the clear text around the runs as context.",
+  "contribution": [
+   "key recovered",
+   "transcription"
+  ],
+  "class": "read in part",
+  "key": "partial",
+  "provenance": "contributed",
+  "fraction_read": 0.504,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "The project's count (issue #697 comment, 16 Nov 2026): only strict segments are read; forced, lenient, doubtful and unread segments are holes; 50% of 284 cipher words (298r-v 38%, 68r 55%, 198r 79%). Reproduced by aaymeloglu/running_text.py: 143 of 284 (37 of 98, 95 of 172, 11 of 14). With unread sign groups sized as one word each (the running texts' marks): 143 of 253 (56.5%). The contributor's segment counts: 141 of 227 strict.",
+  "verification": [
+   "matched control",
+   "historical consistency",
+   "independent verification"
+  ],
+  "notes": "Work by Claude Code agents (Claude Fable, Claude Opus) with a Codex review; Andrew Aymeloglu reviewed. Every value is fitted from the text (grade S). The secure core: 298v and the urine passage of 68r are nearly all strict; 198r reads Cremona sign for sign. The one outside check is Benzoni's quotation for 68r, whose source has not been found.",
+  "gaps": [
+   {
+    "item": "the source of Benzoni's quotation for 68r ('orine' tinte di 'sangue', 'sano et gagliardo'), which would test the key and may make 68r read from an existing text",
+    "blocker": "needs-physical-access",
+    "detail": "candidates: a clear minute in ASMn, Archivio Gonzaga, Copialettere of early 1524; a contemporary decipherment among Castiglione's papers (Vat. lat. 8199-8213, same bequest); La Rocca's notes to Castiglione, Le lettere I (1978); none online as far as checked"
+   },
+   {
+    "item": "the ASMn original of f. 298 (Suardino, Carteggio estero: Spagna) and of f. 198r (Capino, Milano) may carry chancery decipherments",
+    "blocker": "needs-physical-access",
+    "detail": "not online; would give the first C-grade values"
+   },
+   {
+    "item": "the heading place Victorie (key output uf[n]fctorie; the minim cluster after the crossed p shows three minims)",
+    "blocker": "illegible",
+    "detail": "the full-size image does not settle the cluster; the court's presence at Vitoria makes the place plausible"
+   },
+   {
+    "item": "lo reads t in most words but l in five (canceltere twice, lattro, caualto, alti)",
+    "blocker": "open-codes",
+    "detail": "no graphic rule found to separate them; those words are lenient"
+   },
+   {
+    "item": "code signs BOX, H, IZ, CROSS and C@, and the single-occurrence signs p@, b+, 8+, ) )",
+    "blocker": "open-codes",
+    "detail": "BOX is the Emperor as grantor, but more naturally the Marquis in one place; H would need incompatible values"
+   },
+   {
+    "item": "68r lines 01-02 blotted and partly clear; the name at 07-08 and the clear 'salve' unread",
+    "blocker": "illegible",
+    "detail": "lines 01-02 are blotted on the only image; the name and 'salve' have no second occurrence that reads"
+   },
+   {
+    "item": "68r second check partial: 5 of 23 lines plus targeted checks of disputed signs",
+    "blocker": "not-attempted",
+    "detail": "the other 18 lines can be second-checked from the images"
+   },
+   {
+    "item": "one-word values (q, o, bb, c, S, b, g1, p+) and the weak units mo, gr, bu",
+    "blocker": "too-short",
+    "detail": "each rests on one or two words in about 1,200 units; more text in this key would test them"
+   }
+  ],
+  "texts": [
+   {
+    "doc": [
+     "vatlat8214-298"
+    ],
+    "label": "Suardino from the Imperial court, [Vitoria?], 26 February [1524], f. 298r-v",
+    "transcription": "aaymeloglu/transcription-298.tsv",
+    "decryption": "aaymeloglu/decryption_298.tsv",
+    "reading": "aaymeloglu/reading_298.md",
+    "translation": "aaymeloglu/translation_298.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.378,
+    "summary": "Suardino reports from Charles V's court on Carpi, granted to Prospero Colonna, who died in late December 1523, without the investiture: the grant stands for his heirs, though the Emperor might draw money from it for his needs in Italy and compensate the heirs otherwise; whether Carpi had been taken from Alberto Pio by right was still undetermined."
+   },
+   {
+    "doc": [
+     "vatlat8214-68r"
+    ],
+    "label": "A letter in the first person plural [Federico II Gonzaga to Castiglione?], early 1524, f. 68r",
+    "transcription": "aaymeloglu/transcription-68r.tsv",
+    "decryption": "aaymeloglu/decryption_68r.tsv",
+    "reading": "aaymeloglu/reading_68r.md",
+    "translation": "aaymeloglu/translation_68r.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.552,
+    "summary": "A 'we' told not to ride out feigns illness: rode a horse and schooled a jennet and made a show of being hurt, then sent the physicians urine dyed with blood, letting it be known that he had passed blood, so that it could be shown to the Duke of Sessa; 'but in truth we are as sound and vigorous as we ever were'. Benzoni's life of Federico II tells the same deception, admitted to Castiglione."
+   },
+   {
+    "doc": [
+     "vatlat8214-198r"
+    ],
+    "label": "Capino de Capo, Robbio, 8 April 1524, f. 198r",
+    "transcription": "aaymeloglu/transcription-198r.tsv",
+    "decryption": "aaymeloglu/decryption_198r.tsv",
+    "reading": "aaymeloglu/reading_198r.md",
+    "translation": "aaymeloglu/translation_198r.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.786,
+    "summary": "News from the Lombard campaign: the enemy gone into Novara, skirmishes, Giovanni de' Medici's taking of a bridge; in cipher, if the Spanish truce does not come first, this army will withdraw from river to river, and then into Pavia, Cremona and Milan, according to Bourbon."
+   }
+  ],
+  "key_file": [
+   "aaymeloglu/key.json"
+  ],
+  "credits": [
+   {
+    "who": "aymeloglu",
+    "role": "solution",
+    "note": "key recovered from the three leaves, transcriptions, reading and translation, with Claude Code agents (Claude Fable, Claude Opus) and a Codex review (GitHub issue #697)",
+    "date": "2026-11-15",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/697",
+    "published": true
+   },
+   {
+    "who": "aymeloglu",
+    "role": "new cipher",
+    "note": "ff. 68r and 198r found by paging all 816 images of Vat. lat. 8214",
+    "date": "2026-11-15",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/697"
+   }
+  ]
+ }
+}
