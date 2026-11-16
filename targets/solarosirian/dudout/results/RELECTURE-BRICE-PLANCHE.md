@@ -1,0 +1,5 @@
+# Relecture aveugle de Brice — planche C13 (16/11, 22:46) — dépouillement
+Réponses : planche/reponses-c13-egypte.json ; clé planche/cle-PRIVEE-planche.json ; comparée à transcription-arbitree.json (déjà mesurée, portion grillée : rien n'est re-mesuré).
+- 12 signes douteux, 2 formes proposées chacun. **8/12 : aucune des deux** (« c'est une autre forme, sauf si les formes acceptent des variations ») : A2-01, B48-02, B57-01, C19-01, C19-02, C20-01, F2-21, F5-31.
+- 4 réponses : C19-03 = M23x2 (**accord** avec l'arbitrage) ; B56-01 = BLOB (arbitrage Aa1 : **désaccord**, remarque « ratures ? ») ; C18-03 et F1-09 = BARREFOURCHE (arbitrage BARRE : **désaccord**).
+- Bilan : sur les signes douteux, un lecteur humain confirme 1 classe de forme sur 12. Les classes de forme de la transcription (passes faites par des modèles) ne sont pas stables à cette résolution. Cela renforce la limite déjà déclarée dans la PR #732 (transcriptions par modèles, image insuffisante) et explique en partie l'échec de la mesure. À signaler dans #732 comme vérification humaine aveugle.

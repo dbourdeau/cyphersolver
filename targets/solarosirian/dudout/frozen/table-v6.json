@@ -1,0 +1,850 @@
+{
+ "_doc": "Table v6 (C14, 16/11/2026) — dérivée MÉCANIQUEMENT de table-v5.json (SHA f3ad6282…, C13) par cryptanalysis/c14/build_table_v6.py. Seuls ajouts : les 4 valeurs constatées APRÈS la mesure C13 sur N13 (portion grillée, donc matériel déjà utilisé) et la normalisation ꜥ/ʿ dans les équivalences. Aucune autre source, aucune valeur tirée d'une portion non encore utilisée.  forme -> valeur(s). GELÉE par SHA-256 dans PREREG-C13.md AVANT toute lecture de la portion neuve. Sources : C03 (E5, apprentissage), C05 (P-1/P-2), C06-C07 (Ramsès IX reg. 2), C11 (clé minimale), C12 (variante reg. 3, phase B informée = hypothèses à tester). 'subst' = substitutions énigmatiques ; 'ordinaire' = valeurs usuelles (liste de signes de Gardiner) pour tout code non listé dans 'subst'. Valeurs : translittération égyptologique ; 'PL' = pluriel/traits ; 'DET' = déterminatif (sans valeur phonétique). Plusieurs valeurs = ambiguïté assumée (toutes comptent).",
+ "subst": {
+  "FIG": {
+   "v": [
+    "n"
+   ],
+   "src": "C03 6/6 ; C06 Ramsès IX ; homme agenouillé bras levés (A30/A4 schématique)"
+  },
+  "A30": {
+   "v": [
+    "n"
+   ],
+   "src": "= FIG"
+  },
+  "A4": {
+   "v": [
+    "n"
+   ],
+   "src": "= FIG"
+  },
+  "S28": {
+   "v": [
+    "s"
+   ],
+   "src": "C03 4/4 ; C06-C07 ; C12"
+  },
+  "N25": {
+   "v": [
+    "ḫ"
+   ],
+   "src": "collines -> ḫ (acrophonie ḫꜣst) ; C05-C07"
+  },
+  "S26": {
+   "v": [
+    "ḫ"
+   ],
+   "src": "C03 (pagne = collines mal rendues ?)"
+  },
+  "TRAPEZE": {
+   "v": [
+    "ḫ"
+   ],
+   "src": "C12 phase B (reg. 3)"
+  },
+  "M23": {
+   "v": [
+    "i",
+    "y"
+   ],
+   "src": "C03 plante ψ"
+  },
+  "M23x2": {
+   "v": [
+    "y"
+   ],
+   "src": "double ψ ; C06"
+  },
+  "Z4": {
+   "v": [
+    "y"
+   ],
+   "src": "// ; C03 (une fois r en P2M)"
+  },
+  "V13": {
+   "v": [
+    "t",
+    "ṯ"
+   ],
+   "src": "C03 7/7 ; C07 ; C12"
+  },
+  "V28": {
+   "v": [
+    "ḥ"
+   ],
+   "src": "mèche / chaîne verticale (CHAINE) ; C03 P2M, C06"
+  },
+  "CHAINE": {
+   "v": [
+    "ḥ"
+   ],
+   "src": "= V28"
+  },
+  "N29": {
+   "v": [
+    "ḳ"
+   ],
+   "src": "pente ; C03 P2M, C06"
+  },
+  "PENTE": {
+   "v": [
+    "ḳ"
+   ],
+   "src": "= N29"
+  },
+  "BARRE": {
+   "v": [
+    "n"
+   ],
+   "src": "C12 (N35 réduit à un trait) — hypothèse vérifiée sur Darnell 1-8"
+  },
+  "TROISPOINTS": {
+   "v": [
+    "PL"
+   ],
+   "src": "C12 (3 points = pluriel)"
+  },
+  "BARREFOURCHE": {
+   "v": [
+    "w"
+   ],
+   "src": "C12 phase B (finale -w)"
+  },
+  "FLECHE": {
+   "v": [
+    "p"
+   ],
+   "src": "C12 phase B (pn ×2, ḥtp)"
+  },
+  "LCOUCHE": {
+   "v": [
+    "ʿ"
+   ],
+   "src": "C12 phase B (bras D36 schématique)"
+  },
+  "BASSIN": {
+   "v": [
+    "š"
+   ],
+   "src": "C12 phase B"
+  },
+  "OIE": {
+   "v": [
+    "m",
+    "w"
+   ],
+   "src": "C03 oiseau schématique de la chapelle (chouette/poussin mal rendus)"
+  },
+  "ONDE": {
+   "v": [
+    "ḏ",
+    "f"
+   ],
+   "src": "C03 signe ondulé de la chapelle ; C05 P-2"
+  },
+  "HACH": {
+   "v": [
+    "n",
+    "m"
+   ],
+   "src": "C03 eau hachurée"
+  },
+  "FIGOBJ": {
+   "v": [
+    "pn"
+   ],
+   "src": "C03 grand signe (FIGOBJ) = pn, confirmé P2M"
+  },
+  "PILET": {
+   "v": [
+    "w",
+    "m"
+   ],
+   "src": "C03 / C12 canard pilet G39 en emploi énigmatique"
+  },
+  "EQUERRE": {
+   "v": [
+    "DET"
+   ],
+   "src": "C12 phase B (dét. caverne)"
+  },
+  "O1": {
+   "v": [
+    "pr",
+    "DET"
+   ],
+   "src": "C03 caverne / maison ; C07 pr"
+  },
+  "Z2": {
+   "v": [
+    "PL"
+   ],
+   "src": "C03"
+  },
+  "Z3": {
+   "v": [
+    "PL"
+   ],
+   "src": "C03 / C12"
+  },
+  "Y1": {
+   "v": [
+    "DET"
+   ],
+   "src": "C03 rouleau"
+  },
+  "N5": {
+   "v": [
+    "rʿ",
+    "DET"
+   ],
+   "src": "C03 cercle = soleil"
+  },
+  "CERCLE": {
+   "v": [
+    "rʿ",
+    "DET"
+   ],
+   "src": "= N5"
+  },
+  "D4": {
+   "v": [
+    "ir",
+    "mꜣꜣ"
+   ],
+   "src": "C04 yeux = mꜣꜣ ; valeur ordinaire ir"
+  },
+  "L1": {
+   "v": [
+    "ḫpr"
+   ],
+   "src": "C12 (scarabée, valeur ordinaire)"
+  },
+  "Z9": {
+   "v": [
+    "swꜣ",
+    "DET"
+   ],
+   "src": "C12 phase B"
+  },
+  "P6": {
+   "v": [
+    "ʿḥʿ"
+   ],
+   "src": "C12 phase B"
+  },
+  "I9": {
+   "v": [
+    "f"
+   ],
+   "src": "C05 P-2 vipère"
+  },
+  "I10": {
+   "v": [
+    "ḏ"
+   ],
+   "src": "C05 P-2 cobra"
+  },
+  "D36": {
+   "v": [
+    "ʿ"
+   ],
+   "src": "C06 bras"
+  },
+  "G17": {
+   "v": [
+    "m"
+   ],
+   "src": "C06 chouette nette chez Guilmant"
+  },
+  "G43": {
+   "v": [
+    "w"
+   ],
+   "src": "C06 poussin"
+  },
+  "G29": {
+   "v": [
+    "bꜣ"
+   ],
+   "src": "C07 jabiru"
+  },
+  "N35": {
+   "v": [
+    "n"
+   ],
+   "src": "valeur ordinaire (C03 HACH2)"
+  },
+  "N35A": {
+   "v": [
+    "mw",
+    "m",
+    "n"
+   ],
+   "src": "C03 HACH3 / C06 ondes = mw"
+  },
+  "BOUTON": {
+   "v": [
+    "p"
+   ],
+   "src": "C14 ← C13 après mesure (N13 grillée) : bouton noir sur tige, 5 cas dans pn (F1, F3, F4 = pl. LXXVII col. 1–5) ; cf. FLECHE = p (C12)"
+  },
+  "OBLNOIR": {
+   "v": [
+    "nṯr"
+   ],
+   "src": "C14 ← C13 après mesure : mât-drapeau R8 tracé en oblique avec bloc noir (F1, F3 ; nṯr pn)"
+  },
+  "BOLCORNES": {
+   "v": [
+    "ḏw"
+   ],
+   "src": "C14 ← C13 après mesure : coupe plate à cornes = montagne N26 renversée ? (B54 ḏw-ḥr « Evil of Face »)"
+  },
+  "V6": {
+   "v": [
+    "š"
+   ],
+   "src": "C14 ← C13 après mesure : V6 lu š par acrophonie de šs (A3–A7 šsr.w ; Darnell 2018) ; remplace la valeur ordinaire šs"
+  }
+ },
+ "ordinaire": {
+  "G1": [
+   "ꜣ"
+  ],
+  "M17": [
+   "i"
+  ],
+  "M17x2": [
+   "y"
+  ],
+  "D21": [
+   "r"
+  ],
+  "D58": [
+   "b"
+  ],
+  "Q3": [
+   "p"
+  ],
+  "O4": [
+   "h"
+  ],
+  "Aa1": [
+   "ḫ"
+  ],
+  "F32": [
+   "ẖ"
+  ],
+  "O34": [
+   "s"
+  ],
+  "N37": [
+   "š"
+  ],
+  "V31": [
+   "k"
+  ],
+  "W11": [
+   "g"
+  ],
+  "X1": [
+   "t"
+  ],
+  "D46": [
+   "d"
+  ],
+  "D28": [
+   "kꜣ"
+  ],
+  "G39": [
+   "sꜣ"
+  ],
+  "G40": [
+   "pꜣ"
+  ],
+  "G36": [
+   "wr"
+  ],
+  "G14": [
+   "mwt"
+  ],
+  "G7": [
+   "DET"
+  ],
+  "G5": [
+   "ḥr"
+  ],
+  "G25": [
+   "ꜣḫ"
+  ],
+  "G21": [
+   "nḥ"
+  ],
+  "G50": [
+   "pꜣ"
+  ],
+  "G38": [
+   "gb"
+  ],
+  "G4": [
+   "tyw"
+  ],
+  "R8": [
+   "nṯr"
+  ],
+  "R4": [
+   "ḥtp"
+  ],
+  "R11": [
+   "ḏd"
+  ],
+  "S29": [
+   "s"
+  ],
+  "S34": [
+   "ʿnḫ"
+  ],
+  "S12": [
+   "nbw"
+  ],
+  "V30": [
+   "nb"
+  ],
+  "W24": [
+   "nw"
+  ],
+  "W25": [
+   "in"
+  ],
+  "W22": [
+   "DET"
+  ],
+  "W19": [
+   "mi"
+  ],
+  "W9": [
+   "ẖnm"
+  ],
+  "N1": [
+   "pt"
+  ],
+  "N14": [
+   "sbꜣ"
+  ],
+  "N16": [
+   "tꜣ"
+  ],
+  "N17": [
+   "tꜣ"
+  ],
+  "N23": [
+   "DET"
+  ],
+  "N26": [
+   "ḏw"
+  ],
+  "N31": [
+   "DET"
+  ],
+  "N33": [
+   "DET"
+  ],
+  "N41": [
+   "ḥm"
+  ],
+  "N42": [
+   "ḥm"
+  ],
+  "O28": [
+   "iwn"
+  ],
+  "O29": [
+   "ʿꜣ"
+  ],
+  "O49": [
+   "DET"
+  ],
+  "O50": [
+   "sp"
+  ],
+  "O39": [
+   "DET"
+  ],
+  "O3": [
+   "DET"
+  ],
+  "P1": [
+   "DET"
+  ],
+  "P8": [
+   "mꜣʿ"
+  ],
+  "T11": [
+   "sšr",
+   "swn"
+  ],
+  "T14": [
+   "DET"
+  ],
+  "T30": [
+   "DET"
+  ],
+  "U1": [
+   "mꜣ"
+  ],
+  "U7": [
+   "mr"
+  ],
+  "U15": [
+   "tm"
+  ],
+  "U33": [
+   "ti"
+  ],
+  "U36": [
+   "ḥm"
+  ],
+  "V1": [
+   "šn"
+  ],
+  "V4": [
+   "wꜣ"
+  ],
+  "V6": [
+   "šs"
+  ],
+  "V12": [
+   "DET"
+  ],
+  "V20": [
+   "mḏ"
+  ],
+  "V22": [
+   "mḥ"
+  ],
+  "Aa2": [
+   "DET"
+  ],
+  "Aa11": [
+   "mꜣʿ"
+  ],
+  "Aa15": [
+   "m"
+  ],
+  "Aa17": [
+   "sꜣ"
+  ],
+  "Aa27": [
+   "nḏ"
+  ],
+  "A1": [
+   "DET"
+  ],
+  "A2": [
+   "DET"
+  ],
+  "A40": [
+   "DET"
+  ],
+  "A17": [
+   "DET"
+  ],
+  "A55": [
+   "DET"
+  ],
+  "A53": [
+   "DET"
+  ],
+  "A14": [
+   "DET"
+  ],
+  "B1": [
+   "DET"
+  ],
+  "C1": [
+   "DET"
+  ],
+  "C2": [
+   "DET"
+  ],
+  "D1": [
+   "tp"
+  ],
+  "D2": [
+   "ḥr"
+  ],
+  "D10": [
+   "wḏꜣt"
+  ],
+  "D19": [
+   "DET"
+  ],
+  "D26": [
+   "DET"
+  ],
+  "D35": [
+   "n"
+  ],
+  "D37": [
+   "di"
+  ],
+  "D39": [
+   "DET"
+  ],
+  "D40": [
+   "DET"
+  ],
+  "D41": [
+   "DET"
+  ],
+  "D44": [
+   "DET"
+  ],
+  "D45": [
+   "ḏsr"
+  ],
+  "D52": [
+   "DET"
+  ],
+  "D54": [
+   "DET"
+  ],
+  "D56": [
+   "rd"
+  ],
+  "D60": [
+   "wꜥb"
+  ],
+  "E1": [
+   "DET"
+  ],
+  "E23": [
+   "rw",
+   "l"
+  ],
+  "E34": [
+   "wn"
+  ],
+  "F4": [
+   "ḥꜣt"
+  ],
+  "F12": [
+   "wsr"
+  ],
+  "F13": [
+   "wp"
+  ],
+  "F18": [
+   "bḥ"
+  ],
+  "F20": [
+   "ns"
+  ],
+  "F22": [
+   "pḥ"
+  ],
+  "F26": [
+   "ẖn"
+  ],
+  "F31": [
+   "ms"
+  ],
+  "F34": [
+   "ib"
+  ],
+  "F35": [
+   "nfr"
+  ],
+  "F39": [
+   "imꜣḫ"
+  ],
+  "F40": [
+   "ꜣw"
+  ],
+  "F51": [
+   "DET"
+  ],
+  "H6": [
+   "šw",
+   "mꜣʿt"
+  ],
+  "I1": [
+   "ʿšꜣ"
+  ],
+  "I3": [
+   "DET"
+  ],
+  "I12": [
+   "DET"
+  ],
+  "I14": [
+   "DET"
+  ],
+  "I6": [
+   "km"
+  ],
+  "K1": [
+   "in"
+  ],
+  "L2": [
+   "bit"
+  ],
+  "L7": [
+   "srḳ"
+  ],
+  "M1": [
+   "DET"
+  ],
+  "M3": [
+   "ḫt"
+  ],
+  "M8": [
+   "šꜣ"
+  ],
+  "M12": [
+   "ḫꜣ"
+  ],
+  "M16": [
+   "ḥꜣ"
+  ],
+  "M18": [
+   "ii"
+  ],
+  "M20": [
+   "sḫt"
+  ],
+  "M26": [
+   "šmʿ"
+  ],
+  "M29": [
+   "nḏm"
+  ],
+  "M42": [
+   "wn"
+  ],
+  "M44": [
+   "DET"
+  ],
+  "N2": [
+   "DET"
+  ],
+  "N8": [
+   "DET"
+  ],
+  "N9": [
+   "psḏ"
+  ],
+  "N18": [
+   "DET"
+  ],
+  "N21": [
+   "DET"
+  ],
+  "N36": [
+   "mr"
+  ],
+  "N39": [
+   "š"
+  ],
+  "Q1": [
+   "st",
+   "ws"
+  ],
+  "Q7": [
+   "DET"
+  ],
+  "R7": [
+   "DET"
+  ],
+  "R14": [
+   "imnt"
+  ],
+  "S3": [
+   "n"
+  ],
+  "S24": [
+   "ṯs"
+  ],
+  "S38": [
+   "ḥḳꜣ"
+  ],
+  "S40": [
+   "wꜣs"
+  ],
+  "S42": [
+   "sḫm"
+  ],
+  "T3": [
+   "ḥḏ"
+  ],
+  "T22": [
+   "sn"
+  ],
+  "T28": [
+   "ẖr"
+  ],
+  "X8": [
+   "di"
+  ],
+  "Y5": [
+   "mn"
+  ],
+  "Z1": [
+   "DET"
+  ],
+  "Z7": [
+   "w"
+  ],
+  "Z11": [
+   "imi"
+  ],
+  "Aa13": [
+   "im",
+   "m"
+  ]
+ },
+ "equivalences_mesure": [
+  [
+   "s",
+   "z",
+   "ś"
+  ],
+  [
+   "t",
+   "ṯ"
+  ],
+  [
+   "d",
+   "ḏ"
+  ],
+  [
+   "i",
+   "y",
+   "j",
+   "ỉ"
+  ],
+  [
+   "ꜣ",
+   "ʾ"
+  ],
+  [
+   "k",
+   "ḳ"
+  ],
+  [
+   "ʿ",
+   "ꜥ"
+  ]
+ ],
+ "regle": "Valeur d'un signe = subst[code] si présent, sinon ordinaire[code], sinon '?' (aucune valeur). Les codes de forme sont ceux de la transcription arbitrée (Gardiner ou classes ci-dessus). Table v6 : aucune valeur ne sera ajoutée après son gel (SHA consigné dans working/c14/TABLE-V6.sha256).",
+ "normalisation": "Avant comparaison, appliquer NFC puis remplacer ꜥ (U+A725) par ʿ (U+02BF) dans les valeurs de la table et de la référence (même lettre ʿayin, deux codages).",
+ "changements_v5_v6": [
+  "+ subst BOUTON = p",
+  "+ subst OBLNOIR = nṯr",
+  "+ subst BOLCORNES = ḏw",
+  "V6 : ordinaire šs → subst š (acrophonie)",
+  "+ équivalence ʿ/ꜥ et règle de normalisation"
+ ]
+}
