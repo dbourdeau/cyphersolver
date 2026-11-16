@@ -124,9 +124,12 @@ DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read(?:
                      r'\s*(?:\d{1,2}\s+)?(?:' + '|'.join(MONTHS) + r'|Sept?)?\s*\d{4}$', re.I)
 
 SHARED_PAGES = ('index', 'findings', 'contributors', 'contribute')      # pages of the ledger as a whole, not of one write-up
+SHARED_AUTHOR = 'Daniel Bourdeau, Brice Dudout, George Lasry and contributors'
+def shared_author(slug):
+    return SHARED_AUTHOR if slug in SHARED_PAGES else 'Daniel Bourdeau'
 def meta_html(p, rec, old, slug=None):
     """Rebuild the hero dateline, keeping whatever else the page put on that line."""
-    author = (p.get('author') if p else None) or ('Daniel Bourdeau and contributors' if slug in SHARED_PAGES else 'Daniel Bourdeau')
+    author = (p.get('author') if p else None) or shared_author(slug)
     keep = []
     for part in re.split(r'\s*(?:&middot;|·)\s*', old or '')[1:]:
         flat = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', part))).strip()
@@ -780,7 +783,7 @@ def footer_html(current):
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
-    author = cur.get('author', 'Daniel Bourdeau') if cur else 'Daniel Bourdeau and contributors' if current in SHARED_PAGES else 'Daniel Bourdeau'
+    author = cur.get('author', 'Daniel Bourdeau') if cur else shared_author(current)
     footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')
