@@ -16,8 +16,8 @@ Lit. A's gloss (`key_1741.tsv`). (4) Lit. B, volume I/9/29 images 81 right and 8
 (section "Lit. B of volume I/9/29" below). (5) The Khan of Crimea's letter to the King of Sweden, volume I/9/28 images 227-229
 (catalogue 2244, WAINUT, PR #503, filed first as `hopken1742` and folded in here at the integration of 13 Nov 2026: it applies
 `key_1741.tsv` byte for byte): a glossed French extract, read from its contemporary gloss and tested against the frozen key
-(section "The Khan of Crimea's letter" below); like Lit. A it is a glossed document and is not counted in the headline. **Headline share: the three bare documents only, 301 of 386 words (78.0%)**:
-188 of 217 (86.6%) for the two French documents of 1741 and 113 of 169 (66.9%) for Lit. B; the glossed pages are where
+(section "The Khan of Crimea's letter" below); like Lit. A it is a glossed document and is not counted in the headline. **Headline share: the three bare documents only, 1,092 of 1,260 words (86.7%)**:
+79 of 94 (84.0%) for the Castellane letter, 900 of 997 (90.3%) for the reply with its continuation and 113 of 169 (66.9%) for Lit. B; the glossed pages are where
 the key comes from and are not counted in it.
 
 Riksarkivet, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21 (R0003582). Two copies of the same despatch, both marked
@@ -170,6 +170,7 @@ original letter, and the reply as received, may survive in clear in the Nantes s
 | Lit. A (against the frozen key) | 122 | 84 (68.9%) | 3 | 35 from the gloss (not guesses) | 0 |
 | Castellane letter (key_1741.tsv) | 94 | 79 (84.0%) | 2 | 13 | 0 |
 | Reply, to foot of 50 left (key_1741.tsv) | 123 | 109 (88.6%) | 3 | 10 | 1 |
+| Reply, continued: 50 right to 54 right (key_1741.tsv, marked_reply_oct1741_cont.txt) | 874 | 791 (90.5%) | 19 | 60 | 4 |
 
 Word codes rendered in French (grefwen = comte, storviziren = Grand Vizir, ottporten = Porte, hof = Cour, swerige =
 Suède, ryssland = Russie, frankrike = France, fred = paix, tractat = traité) are counted as verbatim. Lit. A: all 122
@@ -504,9 +505,9 @@ were identical to this folder's). Rebuild from this folder (standard library onl
 - Khan's letter: 22 verbatim words rest on pass-3 re-reads of the looped 8 (key-assisted), which a reader could not always tell from a looped 2 - blocker: illegible
 - Khan's letter: one agent made both passes, every reader so far was an AI agent - blocker: needs-physical-access
 - Group 1286 (gloss Sa in the Khan's letter, one place) disagrees with the sense guess V[otre] at three places of the reply (M02, M08, M15, each before a point and 1465) and with the Lit. B guess [?ig] (C04): the guesses stay guesses and the 1286 of the reply is not confirmed - blocker: open-codes
-- Reply continuation (50 right to 54 right, contributed 16 Nov 2026): 63 groups with no key value, most read as marked context guesses, three groups unread (1194, 1096 twice, 1428 in "d[1428]s"), about 20 new guessed values (1000, 1047, 1168, 1223, 1383, 1456, 1519, 1586, 1634, 1746, 1791 and others) - blocker: open-codes; from the sense only; 1083 = fle (gloss on R0003635 image 149 right) holds only if 1678 is ve, and the key marks 1678 as mixed (ve 1, we 1)
-- Reply continuation: places that do not give the expected word (tecon, so, mal ha, insiconer, "la l'accommodement"), two doubtful digits read by sense (51L-04 g1, 52L-03 g11), 15 doubtful groups - blocker: open-codes; misread digits or slips of the encipherer
-- Reply continuation: no human check recorded (the contributor left the line blank), and not scored by check_marks.py or _check_reading.py, so its words are not in the headline share - blocker: needs-physical-access
+- Reply continuation (50 right to 54 right, contributed 16 Nov 2026): 63 groups with no key value, most read as marked context guesses, three groups unread (1194, 1096 twice, 1428 in "d[1428]s"), about 20 new guessed values (1000, 1047, 1168, 1223, 1383, 1456, 1519, 1586, 1634, 1746, 1791 and others) - blocker: open-codes; from the sense only; 1083 = fle and 1605 = ou are read from the glossed continuation of Lit. A (R0003635 image 149 right), 1083 and 1678 = ve at two places each, but key_1741.tsv still marks 1678 as mixed (ve 1, we 1)
+- Reply continuation: places that do not give the expected word (tecon and insiconer: 1778 con where tenue and insinuer need 1774 nu, digits clear, twice; la l'accommodement), two doubtful digits read by sense (51L-04 g1, 52L-03 g11), 16 doubtful groups (51R-07 g3 1500? over 1300) - blocker: open-codes; misread digits or slips of the encipherer; "mal ha" now reads malgre with 1496 = gre
+- Reply continuation: the human check is self-reported and covers eight rows of 157 (50R-05, 51L-03, 51R-07, 52L-03, 52R-13, 53L-11, 54L-17, 54R-04); no second reader of the rest, and not run through _check_reading.py (checker share 0.56 earlier, shape reading) - blocker: needs-physical-access
 
 ## Not part of this target (not worked)
 
@@ -599,7 +600,7 @@ Done by the integrating session after an independent verification (report R7_nor
 - **Lit. B (PR #506).** Reproduced: check_marks_litB (169 cipher words, 113 verbatim, 13 repaired, 40 guessed, 3 holes), the
   consistency figure (419 of 494, shuffled mean 2.0, maximum 28), own decoder identical on all 30 rows. 44 groups of rows B00,
   B01 and the start of B02 of image 81 compared with the image: 44 of 44 agree. Not compared: the rest of image 81 and image 82.
-- **Counts.** Headline share (strict, the contributor's own): the three bare documents, 301 of 386 words (78.0%): the Castellane
+- **Counts.** Headline share (strict, the contributor's own): the three bare documents, 1,092 of 1,260 words (86.7%; 301 of 386, 78.0%, before the reply's continuation was counted): the Castellane
   letter 79 of 94 (84.0%), the reply 109 of 123 (88.6%), Lit. B 113 of 169 (66.9%). The pooled figure mixes French and Latin and
   three documents of different quality: the page gives the three figures. The Khan's letter and Lit. A are glossed pages and
   are not counted in it. Class read in part (all three below 95%).
@@ -615,13 +616,32 @@ Done by the integrating session after an independent verification (report R7_nor
 Tommy Marshment-Howell (lccompany) sent by email a transcription and reading of R0003636 image 50 right page and images 51-54: 1,961 groups,
 running on from "cette dernière puissance es|t très ..." (the foot of image 50 left) to a clear closing on 54 right ("Nous avons l'honneur &c",
 "ce 15 de Juillet", "à 3 heures du matin"; no year or signature visible). The date fits the receipt note of 2 Oct 1741 on image 49
-(a July letter copied for Stockholm), not checked against an edition. Files: transcription_reply_oct1741_cont.txt (digits; 15 doubtful groups with
+(a July letter copied for Stockholm), not checked against an edition. Files: transcription_reply_oct1741_cont.txt (digits; 16 doubtful groups with
 alternatives in the header), decryption_reply_oct1741_cont.txt, reading_reply_oct1741_cont.md, translation_reply_oct1741_cont.md,
-about_reading_reply_oct1741_cont.txt, notes_reply_oct1741_cont.md (every value used beyond the key, two doubtful digits read by sense, the places that
+marked_reply_oct1741_cont.txt, about_reading_reply_oct1741_cont.txt, notes_reply_oct1741_cont.md (every value used beyond the key, two doubtful digits read by sense, the places that
 do not fit). The contributor's three crops (gloss evidence for 1605, 1083 and 1762) are not committed (*.png is git-ignored here).
 
-Checked at integration: 157 rows, 1,961 groups, 1,894 in key_1741.tsv (unchanged), 67 outside it; with 1605 = ou and 1083 = fle, 63 without value. The text
-reads as French sentences and the splice with reading_reply_oct1741.md is exact. What it says: Sweden and the Porte should act together against Russia now;
+A second email the same day sent the marked file, a corrected reading (seven places where the French followed the reading, not the cipher's spelling), an answer on the
+human check and on the gloss, and a recheck of the places that do not fit. At integration the two lines labelled 54R-04 were merged into one in the
+transcription and the decryption (check_marks.py keys rows by label), and 51R-07 g3 was changed from 1300 to 1500? (see below).
+
+Checked at integration: 157 rows, 1,961 groups, 1,894 in key_1741.tsv (unchanged), 67 outside it; with 1605 = ou and 1083 = fle, 63 without value.
+`python scripts/check_marks.py key_1741.tsv transcription_reply_oct1741_cont.txt marked_reply_oct1741_cont.txt`: 874 cipher words, 791 verbatim (90.5%), 19 repaired,
+60 guessed, 4 holes, 15 words with a doubtful digit; verbatim plus repaired 92.7%; no unmarked departure. Together with the first part of the reply the reply is 900 of 997 (90.3%).
+The text reads as French sentences and the splice with reading_reply_oct1741.md is exact. What it says: Sweden and the Porte should act together against Russia now;
 Russia stalls on its treaty with the Porte; France's guarantee can only work through Sweden; the envoys ask Castellane to press the Porte's ministers and offer
-the grand vizier a memorandum. Caveats: 1083 = fle needs 1678 = ve (key: mixed); about 20 values are new guesses; no human check is recorded; the continuation is not
-scored by check_marks.py or _check_reading.py and is not in the headline share (301 of 386 words).
+the grand vizier a memorandum.
+
+**The gloss.** 1605 = ou and 1083 = fle are read from R0003635 image 149 right. The contributor says image 149 is the glossed continuation of Lit. A (the gloss on image 147 ends
+"mais pour pouvoir", image 148 left begins "tromper la Porte", the treaty discussion runs on through 149 with no new heading); the page looked at here (images 148-149 fetched
+16 Nov 2026) is the same French gloss on the same treaty, so the wording is "the glossed continuation of Lit. A, R0003635 images 148-149"; the earlier note that Lit. A is image 147 only
+stands for the pages worked here. 1083 = fle stands at two glossed places on image 149 right (under "jusqu'au fleuve Miuss": 1083 1741 1678, and under "fleuve Don": 1083 1741 1678), so 1678 = ve holds there twice; the contributor
+adds 1778 1678 1749 = con+ve+n ("convention") on I/9/27 image 93 (a bare Swedish page, not sent, not seen here) and 1083 in "[1083]re andre" there. 1083 and 1678 are candidates for the next key rebuild (key_1741.tsv left unchanged).
+
+**Places that do not fit, rechecked by the contributor on 2x-3x crops.** 51L-03 "tecon" (1242 1778 1500) and 53L-11 "insiconer" (1254 1415 1778 1282): the digits are clear, and tenue and insinuer each need 1774 (nu) where 1778
+(con) stands, the same swap twice, perhaps a habit of the encipherer. 52R-13 "mal ha": 1013 1125 1496 with 1496 = gre (the value already changed for "congres") reads "malgre", a second place where 1496 = gre fits. 51R-07 g3: a 5 written over a 3;
+read here on the full-size image (R0003636 image 51, row 7: 1248 1227 1500 1408 ...) as 1500 (a), so "le tems a la Russie"; transcribed as 1500? with 1300 (so) kept as the alternative.
+
+**Human check.** The contributor reports having checked eight rows digit by digit against the images, all matching: 50R-05, 51L-03, 51R-07, 52L-03, 52R-13, 53L-11, 54L-17 and 54R-04 (self-reported; recorded as outcome.human_check).
+
+Caveats: about 20 values are new guesses; 1428 is [?ee], [?e] or [?e'] by context, so its value is not fixed by this text; the check_marks.py count is the contributor's marking run here, not an independent one.

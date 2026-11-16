@@ -7,11 +7,11 @@ meaning. Paragraph breaks are editorial. Swedish word codes are given in French 
 ryssland = Russie, ottporten = Porte, frankrike = France, minister = ministre, tractat = traité, fred = paix,
 storviziren = grand vizir).
 
-...es{+t} très [?pernicieuse] et ne sauroit pour ainsi dire que décider du sort entre nous et notre voisine.
+...es|t très [?pernicieuse] et ne sauroit pour ainsi dire que décider du sort entre nous et notre voisine.
 
 Si le sistème est solide et réel, comme il a été jusqu'ici trouvé et reconnu tant de notre Cour que de celle-ci, que
 la sûreté et le [?bonheur] de ces 2 puissances consistent dans l'abaissemen{+t} de la [?trop] formidable puissance
-moscovite, il est aussi incontestable que la situation présent est des plus favorable pour obtenir ce but et pour
+moscovite, il est aussi incontestable que la situation présent est de plus favorable pour obtenir ce but et pour
 parvenir à l'accomplissemen{+t} de ce sistème. La Suède, tranquile de tous côtés, est prête à faire les plus
 gra{+n}des efforts contre la Russie pour tirer raison des torts et des insultes que cette puissance lui a faite.
 
@@ -25,13 +25,13 @@ fait à la guarantje à laquelle elle s'est [?obligée], et qu'il est [?aujourd'
 la Suède pour forcer la Russie à exécuter ses promesses et ses engagemens.
 
 L'[?occasion] seroit irréparable si on [?donnoit] présentmen{+t} le tems so (= à) la Russie de profiter de la
-[?confusion] où se trouve l'[?Europe] pour augmenter sa puissance et l'affermir [?par] des alliances formidables,
+[?confusion] où se trouve l'[?Europe] pour augmen{+t}er sa puissance et l'affermir [?par] des alliances formidables,
 qui ne pourront pas lui manquer de la part de tous [?ceux] qui sont [?galoux] (= jaloux) de la grandeur de la
 France.
 
 Nous sommes seurs que [?V]. E. ne se trompe pas si elle fait insinuer aux ministres de la Porte que, sans montrer
-les dents, ils n'obtiendront rien de solide de la Russie, laquelle ne cherche qu'à gagner le tems ou qu'à amuser
-[?chacune] de [?deux] puissances à la fois pour éluder l'effet de notre alliance déf: avec la Porte.
+les dents, ils n'obtiendront rien de solide de la Russie, laquele ne cherche qu'à gagner le tems ou qu'à amuser
+[?cha{+c}une] de [?deux] puissances à la fois pour éluder l'effet de notre alliance déf: avec la Porte.
 
 On est si persuadé de la vérité de ceci à notre Cour qu'on nous a donné ordres d'assurer la Porte que, si elle
 veut prendre avec nous des messures convenables à l'[?heure] qu'il est, nous donnerons des assurances solemneles
@@ -67,10 +67,10 @@ peuvent attendre à présent de la Suède tout le secours [?nécessaire] pour me
 d'état de l'inquiéter d'auantage (= davantage).
 
 Nous pouvons, si [?V]. E. l'aprouve, faire présent{+e}r au grand vizir avant la [1096] un mémoire par lequel nous
-lui recommandons les intérêts de la Suède, en l'assurant que nous sommes aussi de notre côté prêts de prendre part
+lui recommendons les interests de la Suède, en l'assurant que nous sommes aussi de notre côté prêts de prendre part
 dans [?ceux] de la Porte.
 
-Nous supplions [?V]. E. d'être [?persuadée] que nous [?écrivons] ceci plus pour obéir à ses ordres que pour lui
+Nous suplions [?V]. E. d'être [?persuadée] que nous [?écrivons] ceci plus pour obéir à ses ordres que pour lui
 fournir des d[1428]s. Nous nous reposons entièremen{+t} sur son [?zèle] pour une Cour si étroitemen{+t} [?alliée]
 avec la sienne, sur son crédit à cette Cour-ci et sur ses lumières.
 
