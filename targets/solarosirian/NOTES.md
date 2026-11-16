@@ -1,8 +1,12 @@
-# solarosirian1325: Enigmatic Book of the Solar-Osirian Unity (Tutankhamun's second shrine; tomb of Ramesses IX)
+# solarosirian: Enigmatic Book of the Solar-Osirian Unity (Tutankhamun's second shrine; tomb of Ramesses IX)
 
-**Status: read in part (README read rule: under 95 % of words read as sense), and only in a small part; on the
-schema's sentence test our own output is "decoded, not read". The texts were read and published long before us
-(Darnell 2004; Darnell & Darnell 2018). Our one pre-registered measurement FAILED its threshold.**
+**Status: no write-up.** Reason: this project's attempt did not read the text. Its one pre-registered measurement
+FAILED its threshold, and by the current read rule (only sure words count) 1 of 37 units is read, about 3 %: both
+documents are "not read" by us. On the schema's sentence test our own output is "decoded, not read". The texts were
+read and published long before us (Darnell 2004; Darnell & Darnell 2018), so there is no new reading to write up.
+
+**Dates are BC.** The shrine is c. 1325 BC and the Ramesses IX tomb c. 1110 BC (profile years -1325 and -1110). The
+folder name carries no year, so that it is not read as AD 1325.
 
 ## What this is (and what it is not)
 
@@ -87,7 +91,20 @@ Classed after comparison with the publication. Units are the labels and column g
 | restored (known only from the publication) | 12 | e.g. the five snake legends ("One Who Is Shot" in Darnell & Darnell 2018) |
 | unresolved (neither read nor restored) | 21 | including all 6 shrine units |
 
-Read by sense: 4 of 37 units, about 11 %, far below 95 %: **read in part**, and only in a small part. One blind
+Read share by the current rule (only sure words count; probable and restored units are holes): **1 of 37 units,
+about 3 %**, far below 95 %. Both documents are therefore recorded as "not read" by this project. (Counting the 3
+probable units as read, as an earlier draft did, would give 4 of 37, about 11 %; that is not the rule.)
+
+Three figures appear in this folder, each with its own unit; they are not three estimates of the same thing:
+
+- **M = 27/65 = 0.415** (the pre-registered measure): share of the signs that the reference could check whose value
+  the table predicts. It decides pass or fail.
+- **fraction_read = 27/428 = 0.063** (profile.json): share of all held-out signs given a value that the reference
+  confirms. The 363 signs without a usable reference value count as unread.
+- **fraction_coherent = 1/37 = 0.027** (profile.json): the read share by the read rule, in units read as sure words.
+  This is the figure the read bar uses.
+
+One blind
 prediction came true at the level of structure: we predicted that snake legends 3–7 carry one repeated name, and they
 do; but the word itself was restored from the publication, not read from the table. Any translation quoted is
 Darnell & Darnell's.
@@ -119,9 +136,15 @@ method `not solved` (by us), as for other targets where the project's own attemp
   transcription passes were guesses there; no reading is claimed for the shrine part (0/7).
 - **Transcription by models, not by a person.** Sign shapes were transcribed by Claude models from the plates: a Claude
   Opus 5.5 sub-agent, and a second pass by Claude Opus 5.5 through the API, arbitrated on the image by the
-  sub-agent. The two passes are not independent in the way two human epigraphers would be. Fourteen disputed shapes
-  were put on a blind shape-choice sheet for Brice Dudout; it has not been answered. No Egyptologist checked the
-  transcription. Earlier sessions: Claude Opus (C01–C04, C06–C07, C10–C12), Claude Fable 5.1 (C05 re-reading, same
+  sub-agent. The two passes are not independent in the way two human epigraphers would be. No Egyptologist checked
+  the transcription.
+- **Blind human shape check (16 Nov 2026, after the measure).** Brice Dudout checked 12 doubtful signs of the measured
+  portion blind: each sign cut out of the image with two candidate shapes, without the expected reading or our
+  transcription. In 8 of the 12 he chose neither shape ("another shape, unless the classes allow variation"). Of the
+  other 4, one agrees with our arbitrated transcription (C19-03 = M23x2) and three do not (B56-01, C18-03, F1-09).
+  So, at this image resolution, the shape classes of our model-made transcription are not stable on the doubtful
+  signs; this is one reason the measure failed. Nothing was re-measured (the portion is spent). The record is
+  `RELECTURE-BRICE-PLANCHE.md` in our working files. Earlier sessions: Claude Opus (C01–C04, C06–C07, C10–C12), Claude Fable 5.1 (C05 re-reading, same
   session, partly dependent), and Codex (C08–C09 re-readings, as recorded in the project log). The C13 API runs cost
   1.19 USD.
 - **Burnt portions.** Every passage measured or read in C03–C13 is spent and cannot be used for a new test of this
