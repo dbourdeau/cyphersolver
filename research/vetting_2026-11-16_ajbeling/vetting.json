@@ -1,0 +1,39 @@
+{
+ "1637": {
+  "date": "2026-11-16",
+  "by": "Andrew Beling (ajbeling), with AI agents",
+  "seen": {
+   "kind": "scan",
+   "where": "Arcinsys Hessen image server, https://digitalisate-he.arcinsys.de/hstad/d_4/376--4/hstad_d_4_nr_376--4_000.jpg to _101.jpg (102 images, all fetched at 3500 x 2681 px on 16 Nov 2026); record https://www.archivportal-d.de/item/2I3LIWQ7W7F4EXHIEHZ4ZIL6SFUKHWBR",
+   "extent": "All 102 images viewed as contact sheets; images 039, 040 (both pages), 059, 068, 022, 023 and the key pages 100-101 at full size; 34 letter images screened half by half; images 043, 050 and 086 (a seeded random sample) read by a second, uninformed reader. About 25 letter images (039-059, 067-068, 080-081, 085-088) are the ones the earlier vetting took for a symbol script.",
+   "cipher": "None in the letters. The supposed symbol script is the ordinary German Kurrent hand of Landgravine Elisabeth Dorothea of Hessen-Darmstadt writing to Princess Dorothea Charlotte (Darmstadt 1687, Butzbach 1693-1698), about half of it photographed upside down and all of it with heavy show-through. Images 100-101 are a separate key: a reciprocal alphabet of 12 letter pairs written in roman letters, number signs, and a cover-name table for 15 persons and 5 places of the Württemberg court. No letter in the file has letter groups of that kind or any name from the table."
+  },
+  "prior_art": {
+   "decode": "Not searched again: the block of 2 Nov 2026 found no DECODE record for any Darmstadt D 4 shelfmark in the local dump of 30 Oct 2026; nothing in this note depends on DECODE.",
+   "tomokiyo": "One site search of Cryptiana and a grep of local copies of his pages (16 Nov 2026): no Darmstadt, Ansbach/Onolzbach or Dorothea Charlotte entry.",
+   "lasry": "Not searched again beyond the 2 Nov block (no Darmstadt item in local copies of his key list); a key with no ciphertext has nothing for a decipherment to cover.",
+   "edition": "No edition named by the Archivportal-D / Arcinsys record ('Enthält: Geheimalphabet und Personenverschlüsselung'); two web searches found no printing of this key or these letters.",
+   "literature": "In this repository: WAINUT's note of 3 Nov 2026 (research/wainut_leads_2026-11-03/README.md, 'Catalogue 1637') already reports the same result from a survey of all 102 images: key only, letters in German cursive filmed upside down, table pointing to about 1697-98. This block confirms it with a measured test; it was done before that note was read."
+  },
+  "key_check": "The file's own key (images 100-101) was transcribed in two passes, frozen (sha256 98b68164b40337e23e6cd78cb391766e7fbda58d2061b169d39f6d0fe982a789) and tested once on letter 040 under a plan hashed before the run (TEST_PLAN.md, sha256 8fd96dee34fd09c138f969f1da3c612ed19ab30a6270f57eb39dfe8a900a576d): 0 of 6 odd words in the letter decode to words with it (200 shuffled keys: at most 0.167); no pseudonym or place code from the table occurs.",
+  "key_in_volume": "Images 100-101: reciprocal alphabet a-k m-l o-n r-p e-q b-s c-t d-u f-w g-x h-y i-z, number signs 1-10 and 20 (8 doubtful), table of 15 persons and 5 places of the Württemberg court; about 1697-98, inferred from the persons listed. Transcription in 1637/key_transcription.md. Not shown in use in any letter of this file.",
+  "duplicates": "known.py on '376/4', 'Dorothea Charlotte', 'Elisabeth Dorothea', 'Lisander' (16 Nov 2026): only this catalogue entry, its sweep candidate (research/sweep_2026-11_archivportal_more) and WAINUT's note of 3 Nov 2026. Open pull requests searched for 1637, Darmstadt, 376: only #653 (D 4 Nr. 113/9, another file).",
+  "searches": [
+   {
+    "query": "gh pr list -R dbourdeau/cyphersolver --state open --search '1637 OR Darmstadt OR 376'",
+    "result": "Only #653 (georg1643, HStA Darmstadt D 4 Nr. 113/9); no work on Nr. 376/4."
+   },
+   {
+    "query": "web: Dorothea Charlotte Geheimalphabet; Ernst Ludwig Brautbriefe Chiffre",
+    "result": "No publication of this key or of these letters found."
+   },
+   {
+    "query": "known.py '376/4' 'Dorothea Charlotte' 'Elisabeth Dorothea' 'Lisander'",
+    "result": "This entry, its sweep row, and WAINUT's note of 3 Nov 2026 with the same result."
+   }
+  ],
+  "verdict": "not_cipher",
+  "closed": "A key with no ciphertext: the letters of the file are in clear German Kurrent (pre-set test on letter 040: 164 of 222 and 174 of 224 transcribed words are dictionary words, the shortfall being illegible words; 0 of 6 odd words decode with the key; a blind second reader judged 3 of 3 randomly drawn letter images alphabetic German with no cipher). The key (images 100-101) is a Württemberg court code of about 1697-98 (inferred) whose use is not shown here. First reported by WAINUT, 3 Nov 2026.",
+  "supersedes": "The block of 2 Nov 2026 (verdict open) took the letters for a 'continuous symbol script' from contact sheets. At full size and turned the right way up they are clear German Kurrent; the key's worked examples are roman letter groups that occur in no letter. Same finding as WAINUT's note of 3 Nov 2026."
+ }
+}
