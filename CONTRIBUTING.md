@@ -31,7 +31,7 @@ reading is accepted, it must show for each document (George Lasry, 22 Oct 2026):
    place (`[...]`, `[?word]`, `[47]` for an unidentified code). A few holes are fine; holes in almost every sentence
    are not, and mean the transcription or the key needs another pass against the images.
 2. **An English translation** of those sentences, with the same holes. Not needed if the plaintext is English.
-3. The decryption itself, line by line against the transcription, so the reading can be checked.
+3. The decryption itself, line by line against the transcription, so the reading can be checked. It is the unedited output of the key; anything the reading changes or supplies beyond it is marked in the reading (README Conventions, 16 Nov 2026).
 
 A document counts as read only when 95% of its words read as sense (the README read bar); one that builds coherent
 sentences under that is marked "read in part". Holes are counted by words: `[...]` is one unread word, and a hole that
