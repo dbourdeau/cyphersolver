@@ -27,6 +27,11 @@ PAGES = [
          blurb='Eighteen letters in gold wire on a medieval sword blade found in the River Witham near Lincoln in 1825 (British Museum 1858,1116.5). The vowel count fits initials or abbreviations, and about twenty readings have been proposed, Harald Winter&rsquo;s the most developed; none can be checked. Letters 10&ndash;11 re-read as N and C (Brice Dudout, 2026), and the letter order measured as a copy of the SDX invocation family of the Fyris and Marburg blades; no expansion is tested.',
          quote='+NDXOXCHWDNCHDXORVI+ &middot; 13 of 18 letters in order with the Fyris 74 blade &middot; no expansion tested',
          rights='Text only; no free image of the inlay found'),
+    dict(slug='qaysarani1350', label='Ibn al-Qaysarani, cipher verses', year='c. 1330&ndash;70', y=1350, place='Syria or Egypt', st='read', stt='read',
+         title='Ibn al-Qaysarani&rsquo;s cipher verses, about 1330&ndash;1370 (Penn LJS 51)',
+         blurb='The last cipher in a Mamluk secretary&rsquo;s book of cipher verses (University of Pennsylvania, LJS 51, f. 106v) lost its solution with the end of the manuscript. Its 22-sign alphabet was recovered from a red gloss over the first five signs, the word for eyelids repeated three times, and the &#7789;aw&#299;l metre. The seven lines are two Arabic love verses; all 89 signs have a value.',
+         quote='I lay awake, though my eyelids are sound, and did not sleep; she slept and was never wakeful, though her eyelids are sick',
+         rights='Images: University of Pennsylvania Libraries, LJS 51, public domain, via OPenn'),
     dict(slug='sforza1597', label='Sforza cipher, cart. 1597', year='1450s&ndash;60s', y=1460.0, place='Milan', st='stuck', stt='attempted, not read',
          title='A Sforza chancery letter in graphic signs (cart. 1597, R5464)',
          blurb='A long Italian letter entirely in about 60 graphic signs from the Sforza chancery box in Milan. Shuffled-token controls give Italian, a sign reader and a key estimated from the ciphertext alone reach 24% dictionary-word coverage, and a hand correction of the sign boxes adds only a point: the DECODE scans are too small (signs 15&ndash;25 px) for a reading. The 115 key sheets in the box are 19th-century reconstructions and do not fit.',
@@ -3655,3 +3660,4 @@ IMAGES['duhart1921'] = ('duhart1921_lead.jpg', 'Page 1 of the letter of 29 Augus
 IMAGES['sanchez1922'] = ('sanchez1922_lead.jpg', 'Page 2 of the letter of 12 January 1922: cipher words typed among the Spanish text, the greetings from friends', 'CEHM-Carso, Fondo DCXXI, DCXXI.3.323.1, image 0002, via visor.cehm.org.mx')
 IMAGES['murguia1914'] = ('murguia1914_lead.jpg', 'Page 4 of the typed copy: two-figure groups with the contemporary pencil decipherment above them', 'CEHM-Carso, Fondo LXVIII-1, LXVIII-1.14.1943.1, image 0004, via visor.cehm.org.mx')
 IMAGES['ewsum1535'] = ('ewsum1535_lead.jpg', 'Left page, top: the writer&rsquo;s key alphabet, his clear note on the null sign and the first lines of cipher', 'Groninger Archieven, 696 Familie van Ewsum, inv. nr. 595, scan 1, via archieven.nl')
+IMAGES['qaysarani1350'] = ('qaysarani1350_lead.jpg', 'F. 106v, the first two cipher lines, with red letters over the first five signs (at the right)', 'University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217)')

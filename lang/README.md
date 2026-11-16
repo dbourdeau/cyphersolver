@@ -37,6 +37,7 @@ are cached; `python -m lang.lm <model> --rebuild` rebuilds.
 | `early` | as modern, plus j→i, v→u | 15th–17th-c. vernacular: the cipher clerks did not distinguish them |
 | `latin` | as early, plus k→c, y→i, w→u | Latin |
 | `enigma` | umlauts ae/oe/ue, ß→sz, ch/ck→q | German Enigma/Wehrmacht traffic |
+| `arabic` | Arabic script: vowel signs, shadda, tatweel and hamza dropped, alif variants and alif maqṣūra → alif, ta marbūṭa kept; 29 letters | Arabic letter ciphers |
 
 Always normalise candidate plaintext with the same scheme as the model (`models.json` → `norm`).
 
@@ -68,6 +69,7 @@ Always normalise candidate plaintext with the same scheme as the model (`models.
 | `it-venezia` | Italian 1520–1620 | it-cinquecento + Albèri's *Relazioni degli ambasciatori veneti* (9 vols, double weight), 47 M | Venetian Senate letters and despatches (ottobon) |
 | `la` | Latin | 27 Gutenberg texts, 6.8 M | papal, imperial, humanist |
 | `la-letters` | Latin letters, classical-1520 | Latin Library (CLTK mirror on GitHub): Piccolomini, Poggio, Petrarch, Erasmus, Cicero letters, 1.9 M | 15th-c. diplomatic Latin; reachable when Gutenberg is not (buda1490) |
+| `ar-mamluk` | Arabic c. 1320–1370 | OpenITI: diwans of Ṣafī al-Dīn al-Ḥillī and Ibn Nubāta, al-Ṣafadī's *Kashf al-ḥāl* and *Alḥān al-sawājiʿ*, al-ʿUmarī's *al-Taʿrīf*, 2.2 M letters, norm `arabic` | Mamluk chancery and adab Arabic (qaysarani1350) |
 | `pt-`, `da-`, `sv-`, `pl-`, `hu-`, `cy-modern` | | ~1–6 M each | language ID, northern/eastern targets |
 
 ## Known gaps
