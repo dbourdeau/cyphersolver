@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "R674",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "MNL OL E 199 (Wesselényi family archive), 8. pallium 1. 01 (DECODE R674)",
    "date": "undated (c. 1663-64; DECODE 1 Jan 1664 is the start of a 1664-1670 span)",
    "year": 1664,
@@ -77,13 +77,14 @@
   {"date": "2026-09-22", "kind": "verification", "what": "Re-decoded every run with the final key; all Latin in context. Codes 60, 64 left unread.", "result": "worked"},
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 241 tokens, 25 types, la order 4: reading -2.164 per letter; random keys -5.101 (z 5.8); key annealed onto shuffled ciphertext best -2.866 (mean -2.98, z 10.0); annealer on the real text -2.573. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R674 linked to transcription.txt, reading.md (text, translation, notes) and decode_out.txt; key_file key.py", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): the draft is Latin (explicit-hole bar): reading.md blockquote explicit 0.778. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): the draft is Latin (explicit-hole bar): reading.md blockquote explicit 0.778. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the sixteen bold runs inside the blockquote of reading.md, 41 cipher words, 4 unread (code 60 once, code 64 twice, Spork with the writer's slip 9 for p, which the one-digit-slip rule does not cover with a key recovered here); clear Latin words left out. The recorded 0.977 had been measured on the commentary because the measure skipped > lines. Result: read share 0.977 -> 0.902 (37/41); R674 and the target move from read to read in part; fraction_read by letter tokens (241/244) unchanged.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "la", "file": "validation.tsv", "tokens": 241, "types": 25, "tokens_per_type": 9.64, "score": -2.164, "nulls": {"random keys": {"n": 200, "mean": -5.101, "sd": 0.51, "max": -3.728, "z": 5.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.98, "sd": 0.082, "max": -2.866, "z": 10.0, "p": 0.1429}}, "power": -2.573, "verdict": "pass", "notes": "claimed per-occurrence score -2.164; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.573"}, 
   "method": "key recovered from ciphertext-only",
   "method_basis": "The reversed-alphabet key was recovered by Latin annealing with at most two numbers per letter and fixed by hand from probable words; DECODE key R672 (Teleki collection), found afterwards, has the same alphabet but different codes.",
   "contribution": ["key recovered", "sender or date identified"],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "fraction_read": 0.988,
   "fraction_read_method": "measured",
@@ -93,14 +94,15 @@
   "verification": ["key confirms", "historical consistency", "statistical test"],
   "gaps": [
    {"item": "code 60 (Dominus Generalis [60])", "blocker": "no-key-material", "detail": "once; not in R672 or any Teleki / Fasc. 327 key"},
+   {"item": "Spork (7 9 11 8 15, the writer's slip 9 for 10 = p), unread in the cipher-word share", "blocker": "no-key-material", "detail": "the name is plain, but the one-digit-slip rule needs the surviving period key; the draft's own key does not survive (R672 is a relative)"},
    {"item": "code 64 (ad [64] in castris; videns [64])", "blocker": "no-key-material", "detail": "twice; a place that might take an imperial garrison"}
   ],
-  "notes": "Whole draft read ciphertext-only; alphabet later confirmed by DECODE key R672. Open: two code numbers.",
+  "notes": "Whole draft deciphered ciphertext-only; alphabet later confirmed by DECODE key R672. Read in part by the read bar over cipher words (37 of 41, 90.2%; 16 Nov 2026): the unread words are the two codes 60 and 64, with no key material, and the slipped Spork. Letter tokens 241 of 244 (98.8%).",
   "credits": [
     {"who": "contemporary", "role": "verification", "note": "Teleki collection key no. 12 (DECODE R672), found afterwards, has the same alphabet"}
   ],
   "texts": [
-   {"doc": "R674", "label": "R674, MNL OL E 199, Wesselényi's Latin draft, c. 1663-64", "transcription": "transcription.txt", "decryption": ["reading.md", "decode_out.txt"], "summary": "A Latin draft of Ferenc Wesselényi, probably to Leopold I, in the Turkish war of 1663-64: if the Lord General [60] joins the regiments of Heister, Schneidau and Sporck and 2,000 foot are added, 'we' can camp at [64], which would then more readily accept an imperial garrison; otherwise 'ista nux durissima ... frangi debet'.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Latin, not French: explicit-hole bar. reading.md blockquote (bold marks and struck words out): explicit holes 0.778 (7/9), plain 0.222 (the Latin word list is small); the holes are codes 60 and 64 and doubtful clear words. Keeps read."}, "reading": "reading.md", "language": "la", "state": "read", "translation": "R674_en.md", "read_share": 0.977}
+   {"doc": "R674", "label": "R674, MNL OL E 199, Wesselényi's Latin draft, c. 1663-64", "transcription": "transcription.txt", "decryption": ["reading.md", "decode_out.txt"], "summary": "A Latin draft of Ferenc Wesselényi, probably to Leopold I, in the Turkish war of 1663-64: if the Lord General [60] joins the regiments of Heister, Schneidau and Sporck and 2,000 foot are added, 'we' can camp at [64], which would then more readily accept an imperial garrison; otherwise 'ista nux durissima ... frangi debet'.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): Latin, not French: explicit-hole bar. reading.md blockquote (bold marks and struck words out): explicit holes 0.778 (7/9), plain 0.222 (the Latin word list is small); the holes are codes 60 and 64 and doubtful clear words. Keeps read."}, "reading": "reading.md", "language": "la", "state": "read in part", "translation": "R674_en.md", "read_share": 0.902, "note": "Read share over cipher words only (16 Nov 2026, README Conventions): 37 of 41 words in the sixteen bold cipher runs of reading.md read; the four holes are codes 60 (x1) and 64 (x2) and Spork, whose slipped 9 for p does not qualify under the one-digit-slip rule with a key recovered here. The earlier 0.977 was scored on the commentary (the measure skipped the > blockquote) and is withdrawn."}
   ],
   "key_file": "key.py"
  }

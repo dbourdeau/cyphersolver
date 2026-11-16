@@ -1,6 +1,6 @@
 # Lope Hurtado de Mendoza (Rome) to Charles V, 1523–24 — catalogue no. 148
 
-Status: in progress (read in part: R9846, R9866, R9868, R9869 read; R9867 and the 1523 letters open)
+Status: in progress (read in part: R9846 read from its clear; R9866, R9868, R9869 read in part over their cipher words, 16 Nov 2026; R9867 and the 1523 letters open)
 
 
 **22 Oct 2026, re-read (REREAD_BRIEF, batch b07; `R9667-R9869_reread_log.md`):**
@@ -84,13 +84,29 @@ Readings in `read_r*.md`. Where it stops: about 30 code groups (`xun`, `xor`, `z
 and look-alike signs (∂ vs barred ∂, two- vs three-bar crosses, barred m = f or c) needing better images than DECODE's.
 The unimaged f. 133v (rest of R9846's clear) would give more; RAH Biblioteca Digital, Salazar A-30.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. Each `R98xx_reading.md` sets
+the cipher in *italics* and the clear Spanish in roman; the count is taken over the italic words of the `## Reading`
+section. Holes: `[?word]` (partly carried by the figures), `[word]` supplied, bare `[…]` and `[?]` (one word each, extent
+unknown: the reread logs do not size them).
+
+| Letter | before | cipher words | unread | after | class |
+|---|---|---|---|---|---|
+| R9868 (20 Mar 1524) | 0.955 | 114 | 20 (11 [?word], 9 […]) | **0.825** | read -> **read in part** |
+| R9866 (28 Feb 1524) | 0.914 | 220 | 39 | **0.823** | read in part |
+| R9869 (28 Mar 1524) | 0.927 | 123 | 29 | **0.764** | read in part |
+
+The recorded figures were measured over each whole letter, clear text included. R9846 (read from its bound clear, 1.0)
+and the letters decoded, not read, are unchanged; the target stays read in part.
+
 ## Remaining gaps
 
 - R9667 (5 May 1523), cipher runs decoded, not read - blocker: no-key-material (1523 sign set, no crib); needs-physical-access for the contemporary decipherment CSP 548 used (RAH Salazar A-28)
 - R9683 (June 1523), cipher passage decoded, not read - blocker: no-key-material (1523 sign set, no crib)
 - R9695 (8 July 1523), decoded, not read - blocker: no-key-material; not attempted further on 22 Oct (struck autograph draft)
 - R9867 (4 Jan 1524), decoded, not read (0.389) - blocker: no-key-material (rub, ʃug, tol, xer, xal, xir, ʃal, co, ℮, ʃφ)
-- R9866, R9868, R9869: read 22 Oct 2026 (b07); scattered holes on open codes - blocker: no-key-material
+- R9866, R9868, R9869: read 22 Oct 2026 (b07), read in part over their cipher words since 16 Nov 2026 (0.823, 0.825, 0.764); holes on open codes and doubtful words - blocker: no-key-material
 - R9846 ff. 130v-132v beyond the crib third - blocker: needs-physical-access; f. 133v, the rest of the clerk's clear, is not imaged on DECODE; RAH Biblioteca Digital (bot check), Salazar A-30
 - About 20 code groups (rub, ʃug, zid, tol, tid, zib, xer, xir, xal, ʃal, yab, tas, toc, yic, co ...) - blocker: no-key-material; no crib
 - Look-alike signs - mostly resolved word by word on 22 Oct (`<doc>_corrections.tsv`); the rest blocker: illegible at DECODE resolution

@@ -63,7 +63,7 @@
     "image_quality": "fair",
     "notes": "333 sign tokens over ct_3625_10_blind.txt and ct_3625_10_rest.txt (cipher lines, gloss lines excluded; counted 14 Oct 2026). Used as a blind test of key no. 57 (check_3625_10.py), not counted in fraction_read."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "f3985_58",
@@ -372,7 +372,8 @@
    "what": "Verification 4: wrote texts/n55_reading.md and n55_en.md from reading_3625_55.txt (key no. 57), the eight runs as five sentences with their clear lead-in words. v2_score 0.714 on explicit holes (plain 0.429, period spelling), hole rate 0.067.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 3 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Read shares recounted over cipher words only (README Conventions, 16 Nov 2026). f. 58: the runs in ⟨ ⟩ of f3985_58_reading.md minus the italic clear words, 117 words, 8 unread. No. 10: the reading holds only the cipher runs, 167 words, 19 unread ([?] signs, gloss-supplied words, part-word holes, [le], and 'tout hault' for son). No. 55: n55_reading.md mixes unmarked clear lead-ins with the runs, so the runs were taken from the = lines of reading_3625_55.txt, 66 words, 2 unread (letters missing in the figures). Result: f3985_58 0.957 -> 0.932 (read in part); n10 0.904 -> 0.886 (read in part); n55 0.933 -> 0.970 (read in part -> read); the target stays read in part (f. 58 and no. 10 under 95%); fraction_read (tokens) unchanged.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -424,7 +425,7 @@
    "historical consistency",
    "statistical test"
   ],
-  "notes": "No. 55 read in full; no. 10 reproduces the office decipherment (blind test, 80% of gloss letters in matching runs vs shuffle max 30%); f. 58 94.8%, one token under the read bar (6 illegible, 7 with certain values and no sense). Split on 14 Oct 2026 from champagne1590.",
+  "notes": "No. 55 deciphered in full (64 of 66 cipher words, 97.0%, read); no. 10 reproduces the office decipherment (blind test, 80% of gloss letters in matching runs vs shuffle max 30%), 148 of 167 cipher words (88.6%); f. 58 94.8% of tokens (6 illegible, 7 with certain values and no sense), 109 of 117 cipher words (93.2%), under the read bar (16 Nov 2026). Split on 14 Oct 2026 from champagne1590.",
   "gaps": [
    {
     "item": "fr. 3985 f. 58: two signs in s..t (sait), three middle signs of c...e (ceste), the sign after 29-bar in B1 (6 tokens)",
@@ -481,9 +482,9 @@
     "reading": "texts/n55_reading.md",
     "translation": "texts/n55_en.md",
     "language": "fr",
-    "read_share": 0.933,
-    "state": "read in part",
-    "note": "24 Oct 2026: 93.3% of the words of texts/n55_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.97,
+    "state": "read",
+    "note": "24 Oct 2026: 93.3% of the words of texts/n55_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. Read share over cipher words only (16 Nov 2026): the five deciphered runs as reading_3625_55.txt gives them (= lines), with the gloss-word come (347) and the pour of '304 9P'; the clear lead-in words and the [...] marks of texts/n55_reading.md left out. 66 cipher words (each name sign one word), 2 unread: donne[r]ont and l'anpescheman[t], whose letters are missing in the figures (a letter the cipher does not have counts as a hole): 64/66. The recorded 0.933 had counted the clear lead-ins and the [...] marks for clear text not transcribed."
    },
    {
     "doc": "n10",
@@ -498,9 +499,9 @@
     "reading": "texts/n10_reading.md",
     "translation": "texts/n10_en.md",
     "language": "fr",
-    "read_share": 0.904,
+    "read_share": 0.886,
     "state": "read in part",
-    "note": "24 Oct 2026: 90.4% of the words of texts/n10_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "note": "24 Oct 2026: 90.4% of the words of texts/n10_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. Read share over cipher words only (16 Nov 2026): texts/n10_reading.md holds only the cipher runs; 167 words, 19 unread: the [?] signs not on the key (8), the gloss-supplied [?nous avons] (two words), [?Majesté], [?sa], the part-word holes pr[i]s, traiter[o]it, [?atend]re, ceu[x], the supplied [le], and 'tout hault' (344 234, which the sense wants as son; two words): 148/167. Recorded 0.904 before (v2_score, which did not count 'tout hault')."
    },
    {
     "doc": "f3985_58",
@@ -514,7 +515,9 @@
     "reading": "fr3985_f58/f3985_58_reading.md",
     "translation": "fr3985_f58/f3985_58_en.md",
     "language": "fr",
-    "read_share": 0.957
+    "read_share": 0.932,
+    "state": "read in part",
+    "note": "Read share over cipher words only (16 Nov 2026): the runs between ⟨ ⟩ in f3985_58_reading.md less Laverrière's clear words in italics inside run A; 117 cipher words (a code word of the key such as [prince de Conty] counted as one word), 8 unread: port[ée], [340], son[…], [?], [6 lam 340], [28 25 202] (one word each, extent unknown: three groups each), lettre[s], [du]: 109/117. 0.936 with the code words counted by their plaintext words; 0.901 if each unsized group mark is counted as three. The recorded 0.957 was measured over the whole letter, clear text included."
    }
   ],
   "key_file": [

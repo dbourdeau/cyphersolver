@@ -145,6 +145,26 @@ satisfied touching 500 ... *instructions* no man shall draw ..." (short runs, C)
 decode-access). No solver code: the key was built by hand from cribs (that bearer hath; instructions; under
 colour thereof; any money; preparations; companies of footmen; subject to interception).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. In `READING.md` the deciphered
+words are in *italics* and the clear English is plain. The count, per letter, took the italic words only. Counted as
+unread, one word each: a bare … inside the italics, the open codes .7. and 42, and the unglossed □ on f. 70r. A
+supplied *[word]* counts as one hole per word, and a word marked (?) as doubtful. The codes 15 and □ *[the States]*,
+fixed from context, count as read. The italic Latin tag on f. 71r (*Non semper temeritas est felix*) is clear text
+and is left out.
+
+| letter | recorded | cipher words only | read / unread / doubtful | state |
+|---|---|---|---|---|
+| 22 Mar (R8482-R8483) | 0.982 | 0.918 | 160 / 11 / 3 | read -> read in part |
+| Middelburg intelligence (R8484) | 0.982 | 0.902 | 46 / 5 / 0 | read -> read in part |
+| 20 Mar (R8485-R8487) | 0.982 | 0.949 | 113 / 4 / 2 | read -> read in part |
+
+The 0.982 was one figure for the whole file, clear text and headings included, copied to all three entries. On
+20 Mar, one of the four unread words is the bare … that ends the italic *The other …* on f. 72r; without it the letter
+would be at 0.957. The target was already read in part and stays so. The open words are the ones listed under
+Remaining gaps.
+
 ## Remaining gaps
 - code number 42, f. 70r ("15 will never yield to send 42 hither") - blocker: no-key-material; occurs once, context allows commissioners or forces
 - code sign .7. before "ships", f. 70r - blocker: no-key-material; read as the Queen from context (C), not confirmed by a second occurrence

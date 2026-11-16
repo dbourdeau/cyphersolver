@@ -3,7 +3,7 @@
 Catalogue entry: "Unknown sender (Roma) to unknown recipient", 4 pp., numerical, DECODE status "Non-decrypted",
 no transcription on the record.
 
-**Result: read.** The cipher is broken and the key rebuilt from a sibling's contemporary decipherment; 99.1% of
+**Result: read in part (cipher-word count, 16 Nov 2026: 497 of 545 cipher words, 91.2%; read before).** The cipher is broken and the key rebuilt from a sibling's contemporary decipherment; 99.1% of
 the 1,280 code groups have a value, and the letter reads continuously on all four pages except one line. Measured
 share reading as sense: **0.95** line by line against a period Italian model with neighbour context (`measure.py`),
 0.92 by a stricter 25-character window (`measure_tok.py`), 0.96 by a hand audit token by token. Twelve tokens of
@@ -113,10 +113,32 @@ commesso con cotesto Eccelso Conseglio, et di cavar anche qualche intimo partico
 volte nelle capele [papali] e avendomi ricercato con [più] instanza se Palma sarà ben fortificata, quanto presidio
 aveva, se il passo della Pontebba si era ben assicurato …"
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. `tx/R1862_reading.md` puts
+the passages written in clear between ⟨ ⟩ (the opening, the foot of p. 2 and top of p. 3, three passages on p. 4) and
+leaves the cipher unmarked; the clear passages were removed and the rest of the `## Reading` section counted.
+
+- R1862: 0.953 -> **0.912** (497 of 545 cipher words). Unread, 48: the twelve word-band codes with no value (ten
+  standing alone, two inside words: vo[51708]lari, [5370]i); eighteen `[?word]` readings; four words with a letter the
+  cipher does not have (co[n], [a]lcun, cardina[le], [g]loria: the clerk left it out, so the letter is supplied); the
+  eight words carrying the clerk's one-digit code slips (below, "The clerk's own slips": esprimersi, confidenza,
+  altrove, cosi, Mantova, considerati, piu, preparati), which the Conventions' one-digit-slip rule does not cover
+  because the key is rebuilt here, not the surviving period key; and the line P2 L22, 14 groups, sized at about 6 words from the letter's 2.4 groups per word (1,283 groups, about 545
+  words). The size of P2 L22 is an estimate: counted as one bare mark the share is 0.920 (497/540). Sp[agnuo]li (twice),
+  Sp[agna] and Spa[gna] expand the clerk's own abbreviation *sp* in the cipher and count as read; the final ellipsis
+  is where the despatch's cipher ends (P4 L31), not a gap. The 0.953 was measured over the whole reading with the
+  clear passages.
+- Class: read -> **read in part**. The group figure (99.1% of 1,280 groups valued) and the line measure (0.95) are
+  unchanged. Remaining gaps already covered the codes and P2 L22 and gains a line for the rest. The eighteen doubtful readings are
+  decoded letters whose word division or reading is unsure, and the four supplied letters and eight slipped groups are
+  written so on the image; there is no other copy of this despatch to check them against (Escalation, siblings).
+
 ## Remaining gaps
 
 - 12 code-group tokens (0.9%) of the word/name band: 6443 x2, 6279 x2, 6478 x2, 5349, 5370, 51708, 5378, 5379, 6241 - blocker: no-key-material; R1874's decipherment does not cover that band, no other letter in this cipher survives on DECODE, and the ASVe key registers that do (Codice Amadi reg. 1269, Busta 4 regs. 8/16/18) are a century older. Alphabetical brackets: 5370 is a "par-" word, 5349 "papal(i)" (I, 30 Sept 2026); 5378/5379 fall between "piu" and "qual"; 6279 between "molto" and "non"; 6443 after "suo"; 6478 between "poc" and "tio".
 - one line, P2 L22 (14 groups), image-true after four independent readings - blocker: no-key-material; every group in it is a structural grid value, so the fault is a clerk's slip or a word outside the corpus; exhaustive single- and double-substitution searches over the key's own value set returned nothing.
+- words counted unread in the cipher-word share (16 Nov 2026): eighteen [?word] readings, four letters the clerk left out (co[n], [a]lcun, cardina[le], [g]loria) and eight words with his one-digit code slips - blocker: no-key-material; written so on the image; the slips are read through with a key rebuilt here, which the one-digit-slip rule does not cover; settling them needs the chancery's own key or another copy of the despatch, neither of which survives
 - the ambassador's name - blocker: no-key-material; he does not name himself, and CSP Venice vol. 21 calendars no Rome despatch of 29 Apr 1628.
 
 ## The clerk's own slips

@@ -1,6 +1,6 @@
 # Lope de Soria (Genoa) to Charles de Lannoy, viceroy of Naples, 7 March 1527 — Estense, Autografoteca Campori (catalogue 1562)
 
-**Outcome (6 Nov 2026): key recovered from ciphertext-only; read, 95.5% of cipher tokens measured.** Letter key recovered by
+**Outcome (6 Nov 2026): key recovered from ciphertext-only; 95.5% of cipher tokens measured; read in part by the cipher-word count of 16 Nov 2026 (732 of 783 cipher words, 93.5%).** Letter key recovered by
 joint annealing with no crib; code groups valued by context; 14 single code groups (names, rare words) open.
 
 Catalogue entry 1562. Worked from 6 Nov 2026 (Claude Opus 5.5, in Daniel Bourdeau's session).
@@ -95,6 +95,22 @@ to join them: fifteen together would break the French galleys anywhere; that the
 bad elements talk of changing sides; that the King of France has sent money to fortify Savona, which has invited
 him, and orders Pedro Navarro with the galleys towards Naples; and that the King and the Venetians offered someone
 ([riz]) the kingdom of Naples, who wants Milan too. Bourbon's army, near Reggio, has "muy poco dinero".
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. `reading.md` sets the
+enciphered passages between ⟨ ⟩ inside the clear Spanish; the count is taken over the words between ⟨ ⟩ (text before
+`## Open`), the clear text and the `## Open` notes left out.
+
+- The letter: no read_share was recorded (the scan's whole-file 0.968 included the `## Open` notes) -> **0.935**
+  (732 of 783 cipher words). Unread, 51 words: the code groups with no value (`[lir]`, `[tmi]`, `[rez]`, `[lax pax]`
+  twice, `[zaz]`, `[giq]`, `[xup]`, `[fub]`, `[bel]`, `[lex]`, `[4]`, `[gas]s`, `[riz]`), the sign `{/}`, the bare `[?]`
+  marks, every word marked `word[?]`, the unmarked words inside two doubtful spots named under `## Open` (*es* in
+  "algd es", 9v L12-13; *comen* in the water-washed last line of 9v) and the ellipsis that ends that line (one word,
+  extent unknown). The valued code group `[zir = mas]` is read; the gloss `[= riberas]` after *rimeras* is not a word.
+- Class: read -> **read in part** (under 95%). The token measure (2332 of 2441 cipher tokens, 95.5%, `solve/measure.py`)
+  is unchanged: it counts signs, not words, and the code groups and doubtful words are short words in many signs'
+  company. Remaining gaps and Escalation already list every unread piece with its blocker.
 
 ## Remaining gaps
 - code groups lax pax, zaz, giq, xup, fub, gas, lex, tri, tmi, lir, rez, riz, bel, ten (14 types, 17 tokens; each once or twice: places, owners of galleys, rare words) - blocker: open-codes; each occurs once or twice, no repeat or sibling narrows them

@@ -186,7 +186,8 @@
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcriptions r59/r60/r61_digits.txt; the interlinear decipherments copied verbatim from NOTES.md into texts/R59-R61_decryption.md; R60's gloss is transcribed only in part (rest on the image) and R61's letter-sign line is untranscribed.", "result": "partial"},
   {"date": "2026-10-23", "kind": "control", "technique": ["statistical test"], "what": "v3 verification: R59 scored as Latin on its decryption file with figure strings (0.5). The three glossed passages written out in texts/R59_reading.md (Italian): 1.0 explicit-hole and plain. Language set to it; keeps read.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R60 and R61 were listed as Spanish/French and scored on copied NOTES paragraphs. Both are Italian. DECODE images IMG_R60_I463_P3 and IMG_R61_I464_P1 fetched with the project cookie: R60's two glossed cipher runs read in full (the '…' were clear text); R61's foot decipherment is tied by its + to the letter-sign line, whose word division agrees. Readings texts/R60_reading.md (plain 0.6, explicit 0.8) and texts/R61_reading.md (plain 0.667, explicit 1.0). Keep read.", "result": "worked", "technique": ["plaintext matching"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R60 and R61 were listed as Spanish/French and scored on copied NOTES paragraphs. Both are Italian. DECODE images IMG_R60_I463_P3 and IMG_R61_I464_P1 fetched with the project cookie: R60's two glossed cipher runs read in full (the '…' were clear text); R61's foot decipherment is tied by its + to the letter-sign line, whose word division agrees. Readings texts/R60_reading.md (plain 0.6, explicit 0.8) and texts/R61_reading.md (plain 0.667, explicit 1.0). Keep read.", "result": "worked", "technique": ["plaintext matching"]},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026). R60: texts/R60_reading.md marks the clear words of the letter in ⟨ ⟩; the cipher is the two glossed runs 'Il fratello dell'Arcivescovo [?di Livorni]' and 'Monsignore': 5 words read, 2 doubtful, 0.952 (whole letter) -> 0.714; R60 moves from read to read in part. R59 and R61 have no holes: 1.0 either way. The target class (already solved) is unchanged.", "result": "worked"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -229,7 +230,7 @@
     "transcription": "r60_digits.txt",
     "decryption": "texts/R60_decryption.md",
     "summary": "The nuncio Bernardino Spada, archbishop of Damiata, Paris 15 August 1625: clear Italian news (Fontainebleau, Richelieu, Mansfeld's officer, the English fleet, Vaudémont, Verdun) with three short cipher runs on f. 138r about a copy of a letter shown by the brother of an archbishop.",
-    "state": "read",
+    "state": "read in part",
     "reading": "texts/R60_reading.md",
     "language": "it",
     "reading_review": {
@@ -239,7 +240,8 @@
      "note": "v5 check 23 Oct 2026: listed as Spanish; the letter is Italian (1625), so the plain share is a bar too. The sweep scored texts/R60_decryption.md (copied NOTES paragraph with '…' gaps and key strings: plain 0.0, explicit 0.714). The DECODE image IMG_R60_I463_P3 (f. 138r) was fetched and read: the '…' were only the clear words of the letter; the two cipher runs are glossed 'Il fratello dell'Arcivescovo' + 'di Livorni' and 'Monsignore'. Reading texts/R60_reading.md (glosses with the clear sentence around them): plain 0.6 (3/5), explicit 0.8 (4/5); the see 'di Livorni' marked doubtful. Keeps read."
     },
     "translation": "texts/R60_en.md",
-    "read_share": 0.952
+    "read_share": 0.714,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher is the two glossed runs, 'Il fratello dell'Arcivescovo [?di Livorni]' and 'Monsignore'; the clear words of the letter are in ⟨ ⟩ in the reading and are left out. 5 words read, 2 doubtful ([?di Livorni]): 5/7 = 0.714, read in part. Whole letter, clear included, not the measure: 40/42 = 0.952."
    },
    {
     "doc": "R61",

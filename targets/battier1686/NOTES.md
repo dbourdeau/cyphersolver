@@ -1,6 +1,6 @@
 # Pieter Battier to Gaspar Fagel, Madrid, 1686–1688
 
-Status: in progress (21 Oct 2026; 23 Oct r2n: the located passages read on the scans, six decoded, not read): WAINUT's passages in seven 1687 letters (PR #65, #67; 67R lines 1-3 are in both) wait on an eye check of 158 machine-read key rows.
+Status: read in part (see the status line below and the 16 Nov 2026 section at the end). Still open from 21-23 Oct 2026: six located passages decoded, not read (23 Oct r2n), and WAINUT's passages in seven 1687 letters (PR #65, #67; 67R lines 1-3 are in both) wait on an eye check of 158 machine-read key rows.
 **22 Oct 2026, reading audit** (George Lasry's test): the 4 December 1687 (92L) and 12 February 1688 (100R) cipher blocks have holes in most sentences and are now *decoded, not read* in profile.json, as the strict screen already said. fraction_read 55% -> about 49% (estimated; the two letters' 482 tokens no longer count).
 
 
@@ -34,9 +34,10 @@ full-resolution NA scans (1,046 groups, `tokens/s*_r2n.txt`); about 150 codes lo
 (`research/reading_audit/r2n_keylook.py`, `r2n_allblocks.py`), new rows in `key/dict/r2n.tsv`. 2 Jan 1687 aligned with its
 interlinear decipherment of the time (30 codes agree; 10:703 rabat against the clerk's 'een'). Readings in
 `readings/r2n/` (`_reading.md`, `_en.md`, log `r2n_log.md`). Read (v2_score explicit holes): 2 Jan 1687 0.78, 13 Mar 1687
-54R 1.0 and 55R 1.0, July 1687 1.0, 11 Sept 1687 0.75, 18 Dec 1687 93R/94L 0.85, 1 Jan 1688 1.0, 11 Mar 1688 1.0 (Oropesa to
-speak for Cogolludo, Melgar and Balbases; the Grand Master's Vienna plans and the war-council presidency; Holstein
-desists). Decoded, not read: 67L, 73R, 80R, 94R after l. 5, 99L, 102L. fraction_read about 0.78 (estimated).
+54R 1.0 and 55R 1.0, July 1687 1.0, 11 Sept 1687 0.75, 18 Dec 1687 93R/94L 0.85, 1 Jan 1688 1.0, 11 Mar 1688 1.0 (13 Mar 1687, 54R: Oropesa to
+speak for Cogolludo, Melgar and Balbases; 18 Dec 1687: the Grand Master's Vienna plans and the war-council presidency;
+11 Mar 1688, 103R: the Grand Master affair off again, Melgar offering money, Holstein desists; corrected 16 Nov 2026,
+the summary had put all three under 103R). Decoded, not read: 67L, 73R, 80R, 94R after l. 5, 99L, 102L. fraction_read about 0.78 (estimated).
 
 Status: read in part; **read with known key**. Two letters pass the strict sense screen without a known contemporary decipherment:
 **24 April 1687, 230/235 = 97.9% conservatively**, and 8 April 1688,
@@ -413,3 +414,33 @@ search found no edition of these dispatches.
 Files: `wainut/r24_1687/tokens/s*.txt` (checked tokens with per-group notes), `readings_1687.txt`,
 `key_rows_machine.tsv`, `check_1687.py` (run `python3 targets/battier1686/wainut/r24_1687/check_1687.py`; it prints the
 decoded lines, the counts in the table and the inventory line for 2 Jan 1687).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only, holes by words. How the clear text
+was taken out: where the reading marks it in ⟨ ⟩, by that mark (also the opening "Myn Heer." of 26 Feb 1688, clear in
+`readings/s101R_text.txt`); for 4 Dec 1687 and 12 Feb 1688, whose readings mark nothing, from the `[ ]` clear blocks of
+`readings/s091R_text.txt`, `s092L_text.txt`, `s099R_text.txt`, `s100R_text.txt` (92R wholly clear; the two runs the
+12 Feb notes add counted as cipher); for the r2n passages, from the `# [ ]` clear lines of `tokens/s*_r2n.txt`.
+
+| entry | old (whole reading) | cipher words | class |
+|---|---|---|---|
+| 1688-01-29 | 0.965 | 33/38 = **0.868** | read -> read in part |
+| 1688-02-12 | 0.972 | 152/167 = **0.910** | read -> read in part |
+| 1688-02-26 | 0.970 | 43/47 = **0.915** | read -> read in part |
+| 1687-12-18 | 0.956 | 94/108 = **0.870** | read -> read in part |
+| 1688-01-01 | 0.962 | 7/8 = **0.875** | read -> read in part |
+| 1687-12-04 | 0.989 | 155/162 = **0.957** | read |
+| 1688-04-08 | 0.989 | 134/137 = **0.978** | read |
+| 1687-04-24 | 0.996 | 166/167 = **0.994** | read |
+| 1687-07 | 0.975 | 30/31 = **0.968** | read |
+| 1688-03-11 | 1.0 | 19/19 = **1.0** | read |
+| 1686-12-19 | 1.0 | 119/119 = **1.0** | read |
+| 1687-01-02 | 0.896 | 77/92 = **0.837** | read in part |
+| 1687-09-11 | 0.863 | 30/37 = **0.811** | read in part |
+
+Unchanged, the readings hold the cipher only: 1686-12-05 (1.0), 1687-01-30 (0.978, all-cipher letter), 1687-03-13a
+(0.966), 1687-03-13b (0.973). The six decoded, not read passages have no read_share. Entries read: 15 -> 10; read in
+part: 2 -> 7. The target stays read in part; the volume estimate (about 78%, tokens of the letters that build
+sentences) is not affected. Remaining gaps and Escalation are unchanged: the holes are the unread groups and doubtful
+values listed in the readings' notes.

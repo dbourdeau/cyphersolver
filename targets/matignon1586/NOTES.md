@@ -554,6 +554,35 @@ The sets are wide (wrong French still lands on half the letters), but the readin
 the second or third value of a set about as often as f. 143v does where the clear copy decides. The readings keep
 `read`; the grade drops from A to B on all three because no outside text checks them.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. Each reading was counted section
+by section with the v2_score rules (holes by words). Left out of the count: the clear text, which is in italics or in
+the files' "clear opening / close / end" sections; f. 201's variant wording in braces in `reading_f196_201.md`; headers
+and notes. Line markers (`[l. n]`, `[v. l. n]`, `[f. 201 l. n]`) were not scored as holes. The earlier figures were
+taken over each whole file, header, clear text and notes included.
+
+| leaf | recorded | cipher words only | holes / words read | state |
+|---|---|---|---|---|
+| ff. 196 / 201 (joint reading) | 0.954 | 0.957 | 12 / 267 | stays read |
+| f. 196v | 0.963 | 0.952 | 16 / 316 | stays read |
+| fr. 15571 f. 177 | 0.946 | 0.956 | 14 / 304 | read in part -> read |
+| f. 173 | 0.949 | 0.919 | 26 / 296 | stays read in part |
+| f. 123v | 0.942 | 0.935 | 23 / 330 | stays read in part |
+| f. 124v | 0.941 | 0.914 | 27 / 287 | stays read in part |
+| f. 110 (no clear text) | 0.944 | 0.919 | 46 / 519 | stays read in part |
+
+f. 177 goes up because the old whole-file figure counted its holes twice: once in the reading and again in the list
+under "What stays open". It also scored the eleven verso line markers `[v. l. n]` as two holes each. ff. 143r-v,
+149v-150v, 154r-v and f. 20r are read from clear copies of the cipher and hold no clear text, so their figures are
+unchanged.
+
+Code 47: #77 (22 Oct) reads it *tous/tout* from the clear copy of f. 154v; Remaining gaps list it as open
+on f. 110 only, and the page now says so (16 Nov 2026, claims review).
+
+The class stays read in part (ff. 123r and 124r are decoded, not read; f. 173, 123v, 124v and 110 are
+under the bar). Remaining gaps are unchanged.
+
 ## Remaining gaps
 
 - ff. 123r (0.41) and 124r (0.56) decoded, not read - blocker: no-key-material; three passes each on the images (labels re-cut figure by figure, a per-label atlas of the hand's 5,111 figures with cross-leaf classifiers, code values from other leaves tried): the remaining breaks fall on legible figures of their ordinary shapes, so they are the writer's omissions or slips and codes 16, 60, 66, 67, 101, 102 with no value anywhere; only a clear copy of the Marmande despatch or another letter in this hand using the same codes would settle them (none found on canvases 126-139)

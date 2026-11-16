@@ -33,7 +33,7 @@
     "image_quality": "good",
     "notes": "Transcribed by two Claude Opus 5.5 sub-agents (9r/9v/11r and 10r/10v) with a shared sign legend (transcription/LEGEND.md); two sign splits made during the reading (closed 4 = o vs open 4s = s; agent A's footed z = u vs agent B's crossed z = d). The 2494 tokens include 53 frame marks (11, g#, -o-, ny). No human has checked the transcription."
    },
-   "read": "read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -212,6 +212,15 @@
    "kind": "access",
    "what": "The five other Soria records in the Estense (Lettera L cc. 1-8, plus Ferrante Gonzaga's draft to Soria, sfasc. II cc. 10-13) opened from the library's own author search and viewed as 1000-px previews: Soria to Gonzaga 7 Jun 1534 and 31 Mar 1539 (Venice), 6 Apr 1541 (Milan), to Giovanni Mahona 30 Jul 1541 (Milan), and Gonzaga to Soria 10 Apr 1539. Outcome: no cipher on any leaf; the letters and their postscripts are in clear Italian and Spanish, so there is no sibling of the 1527 key there.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the enciphered passages between ⟨ ⟩ in reading.md (text before ## Open), clear Spanish left out; 783 words, 51 unread: 13 code-group types (lax pax twice, [4]), [?] marks, words marked word[?], {/}, the words of the doubtful spots named in ## Open (algd es; the water-washed last line of 9v with its closing ellipsis). [zir = mas] is a valued code group (read); [= riberas] is a gloss (not a word). Result: read share (none recorded; whole-file 0.968 in the scan) -> 0.935 (732/783); the letter and the target move from read to read in part; fraction_read by cipher tokens (2332/2441 = 0.955) unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -245,7 +254,7 @@
    "verdict": "pass",
    "notes": "claimed per-occurrence score -1.889; polyphony 0.008; 116 unread tokens left out; annealer on the real text from random keys reached -1.942"
   },
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "verification": [
@@ -274,14 +283,16 @@
     "decryption": "reading_raw.txt",
     "reading": "reading.md",
     "translation": "reading_en.md",
-    "state": "read",
+    "state": "read in part",
     "summary": "Soria reports that the Genoese commune and its duke, pressed by the French fleet at Savona, will arm galleys if Charles V pays half, and asks Lannoy to send the six imperial galleys at Naples to join the nine at Genoa; a few citizens are talking with the Pope of neutrality, and the League's draft treaty would leave Savona and the riviera to France. Written eight weeks before the Sack of Rome, while Lannoy was negotiating the truce with Clement VII.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-11-06",
      "note": "Sentences build through all five cipher stretches; holes are single code groups (names) and a few blotted signs."
-    }
+    },
+    "read_share": 0.935,
+    "note": "Read share over cipher words only (16 Nov 2026): the passages between ⟨ ⟩ in reading.md (the enciphered passages; the clear Spanish around them left out), 783 cipher words, 51 unread (the unvalued code groups, signs with no value, words marked [?], the unmarked words inside the doubtful spots named under Open (algd es, the water-washed line 9v L34), and the ellipsis ending that line): 732/783. The code group read as [zir = mas] counts as read; the gloss [= riberas] is not a word. The token figure 2332/2441 (95.5%) is a different measure, of cipher tokens, and stays as fraction_read; a whole-file figure of 0.968 (notes included) was never the measure."
    }
   ],
   "gaps": [

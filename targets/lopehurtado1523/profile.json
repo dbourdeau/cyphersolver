@@ -362,7 +362,8 @@
     {"date": "2026-10-22", "kind": "hypothesis", "what": "Code groups from new contexts (probable, key files unchanged): zm = como (R9867 l21, R9866 R14), ʃeg = tengo (R9866 R14 \"como tengo escrito\", R9869 R7), zub = alla (1522 value; R9866 R5 \"la costa de alla\", R9867 l23), zad probably a look-alike of zed = arçobispo (R9868 R7 after the clear \"partida del señor arçobispo de Capua\"). In R9683/R9667 the 1522 sign values & = o, H = e, ɭb = p, ∠ = v give \"Theodorico\", \"servi[ci]o\", \"pensava\", \"declare\", \"era del que mas se\".", "result": "partial", "technique": ["contextual inference", "key matching"]},
     {"date": "2026-10-22", "kind": "reading", "what": "Readings built sentence by sentence (<doc>_reading.md, English <doc>_en.md) and aligned word by word with the decodes (words fixed: R9869 bueno -> [?bueno], R9868 a -> [?a], R9866 como/tiene -> [?…]). Clean share of the reading bodies (b07_score.py): R9866 0.667, R9868 0.638, R9869 0.622 (read, grade B); R9867 0.389 (decoded, not read); R9683 0.636 and R9667 0.767 on the whole letter but kept decoded, not read because their cipher passages do not build sentences; R9695 not attempted further. English for R9846 (read since the audit) written: R9846_en.md.", "result": "partial", "technique": ["manual reconstruction", "contextual inference", "language-model scoring"]},
     {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.texts summary reworded for docs/_check_terms.py (outcome words 'read', 'undeciphered', 'unsolved' replaced by what happened: deciphered, given a value, transcribed, no decipherment known); facts unchanged.", "result": "worked", "technique": ["statistical test"]},
-    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+    {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Read shares recounted over cipher words only (README Conventions, 16 Nov 2026) for the three 1524 letters with readings: the cipher runs are the *italic* stretches of each R98xx_reading.md, the clear Spanish in roman left out. Holes: [?word] (partly carried by the figures), [word] supplied, bare […] and [?] (one word each, extent unknown). R9846 (read from its bound clear, 1.0) and the decoded-not-read letters not affected. Result: R9868 0.955 -> 0.825 (94/114; read -> read in part); R9866 0.914 -> 0.823 (181/220); R9869 0.927 -> 0.764 (94/123); the target stays read in part; fraction_read unchanged.", "result": "worked"}
    ],
   "outcome": {"validation": {"date": "2026-10-11", "model": "es-golden-age", "file": "validation.tsv", "tokens": 2868, "types": 150, "tokens_per_type": 19.12, "score": -2.148, "nulls": {"random keys": {"n": 200, "mean": -3.719, "sd": 0.257, "max": -3.176, "z": 6.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.517, "sd": 0.013, "max": -2.509, "z": 29.4, "p": 0.1429}}, "power": -2.196, "verdict": "pass", "notes": "claimed per-occurrence score -2.148; polyphony 0.0; 198 unread tokens left out; annealer on the real text from random keys reached -2.196"}, 
     "method": "key recovered based on adjacent plaintext",
@@ -478,7 +479,7 @@
         "label": "R9866, Rome, 28 Feb 1524, to Grand Chancellor Gattinara (9/30 ff. 285-286)",
         "transcription": "texts/R9866_transcription.md",
         "decryption": "read_r9866.md",
-        "summary": "To Gattinara: Beaurain's coming was timely; the French mean, by craft or force, to stay on this side of the Alps, and the Emperor must not lose the world's respect while he spends so much on the war; Hurtado asks Gattinara's help to be paid what he is owed. Read a quarter to a third.",
+        "summary": "To Gattinara: Beaurain's coming was timely; the French mean, by craft or force, to stay on this side of the Alps, and the Emperor must not lose the world's respect while he spends so much on the war; Hurtado asks Gattinara's help to be paid what he is owed. 181 of 220 cipher words read (82.3%).",
         "state": "read in part",
         "language": "es",
         "reading": "R9866_reading.md",
@@ -489,8 +490,8 @@
           "date": "2026-10-22",
           "note": "Clean share 0.667 (b07_score.py, reading body). The French mean to stay this side of the Alps; the Emperor must not grant peace or truce while they hold a palm of ground, must drive them out (\"si no son vencidos, quedan vencedores\"), and should have Naples pay the army; Beaurain will report. Holes: the codes xer, tas, yab, tol-type groups, R3 \"[?] por pocos\", R9 opening, R14 middle. Rests on the clear text checked on the full-resolution DECODE images and the cipher runs decoded with the merged 1523-24 key (key_merged.tsv, rebuilt from R9846's f. 133r clear), every run re-read sign by sign on the images with the look-alike signs resolved word by word (R9866_corrections.tsv: the ß-like a transcribed as ʇʇ, y ʇʇ = ɣ̶ g, m̶ = f or c, ʒ = p); aligned word by word with the decode, supplied words bracketed. No contemporary decipherment, clear copy or edition exists. Log: R9667-R9869_reread_log.md."
         },
-        "read_share": 0.914,
-        "note": "24 Oct 2026: 91.4% of the words of R9866_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+        "read_share": 0.823,
+        "note": "24 Oct 2026: 91.4% of the words of R9866_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. Read share over cipher words only (16 Nov 2026): the italic cipher runs of R9866_reading.md, 220 cipher words, 39 unread (bare […] and [?], one word each, extent unknown, and [?word] readings partly carried by the figures): 181/220. The recorded 0.914 was measured over the whole letter, clear text included."
       },
       {
         "doc": "R9867",
@@ -510,7 +511,7 @@
         "transcription": "texts/R9868_transcription.md",
         "decryption": "read_r9868.md",
         "summary": "Hurtado sends Gattinara a copy of his 11 March letter: the archbishop of Capua has left and all business hangs on the Datary [Giberti], who must be satisfied; benefices shared among the Cardinals; the Pope's servants should be rewarded and many Cardinals want to be Protector.",
-        "state": "read",
+        "state": "read in part",
         "language": "es",
         "reading": "R9868_reading.md",
         "translation": "R9868_en.md",
@@ -520,7 +521,8 @@
           "date": "2026-10-22",
           "note": "Clean share 0.638. The Datary must be rewarded; the archbishop of Capua's absence will not help; the Pope's servants who stayed are very mistrustful; naturalisations for two or three closest to the Pope; the protectorship better with Colonna, whom Vespasiano obeys as he did his father Prospero; he could complain with cause if forgotten. Holes: zid, ʃug, yic, toc, R14, the last word of R13. Rests on the clear text checked on the full-resolution DECODE images and the cipher runs decoded with the merged 1523-24 key (key_merged.tsv, rebuilt from R9846's f. 133r clear), every run re-read sign by sign on the images with the look-alike signs resolved word by word (R9868_corrections.tsv: the ß-like a transcribed as ʇʇ, y ʇʇ = ɣ̶ g, m̶ = f or c, ʒ = p); aligned word by word with the decode, supplied words bracketed. No contemporary decipherment, clear copy or edition exists. Log: R9667-R9869_reread_log.md."
         },
-        "read_share": 0.955
+        "read_share": 0.825,
+        "note": "Read share over cipher words only (16 Nov 2026): the italic cipher runs of R9868_reading.md (its 17 runs, split by clear words) (clear Spanish in roman left out), 114 cipher words, 20 unread (11 [?word] partly carried by the figures, 9 bare […], one word each, extent unknown): 94/114. The recorded 0.955 was measured over the whole letter, clear text included."
       },
       {
         "doc": "R9869",
@@ -538,8 +540,8 @@
           "date": "2026-10-22",
           "note": "Clean share 0.622. The Pope will fulfil the rest of the money offered to Beaurain but pleads need; Florence undecided; if the archbishop finds the army ready, the Pope's deeds will match what he offered when elected; any help with money is good; the clear (f. 444v transcribed in full): Easter news of Hungary and the Turk, the Legate at Nuremberg, too few letters from the Emperor. Holes: R1 (what Beaurain was sent), R5, parts of R9-R11. Rests on the clear text checked on the full-resolution DECODE images and the cipher runs decoded with the merged 1523-24 key (key_merged.tsv, rebuilt from R9846's f. 133r clear), every run re-read sign by sign on the images with the look-alike signs resolved word by word (R9869_corrections.tsv: the ß-like a transcribed as ʇʇ, y ʇʇ = ɣ̶ g, m̶ = f or c, ʒ = p); aligned word by word with the decode, supplied words bracketed. No contemporary decipherment, clear copy or edition exists. Log: R9667-R9869_reread_log.md."
         },
-        "read_share": 0.927,
-        "note": "24 Oct 2026: 92.7% of the words of R9869_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+        "read_share": 0.764,
+        "note": "24 Oct 2026: 92.7% of the words of R9869_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. Read share over cipher words only (16 Nov 2026): the italic cipher runs of R9869_reading.md, 123 cipher words, 29 unread (bare […], one word each, extent unknown, and [?word] readings): 94/123. The recorded 0.927 was measured over the whole letter, clear text included."
       }
     ],
     "key_file": [

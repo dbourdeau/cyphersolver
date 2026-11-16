@@ -77,3 +77,14 @@ R120 passage, the code identifications and the corrections are new here.
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the sweep had scored decrypt_output.txt, the raw group decode. READING.md is the reading; a '## Reading' heading now marks its body (clear text from MEG's transcription with the deciphered closing passage): plain 0.771, explicit 0.914. 8107 stays open; the sentence runs on to a leaf not imaged. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The cipher is the one
+passage set in *italics* in `READING.md` (the last sentence, *tumulti interni … in diversi*); the clear Italian of
+pp. 1-4 is left out.
+
+- R120: 0.99 -> **0.952** (20 of 21 cipher words). The one hole is code 8107. The `[…]` after the passage is the rest
+  of the sentence on the next leaf, which DECODE did not image: it is not on this document's pages and stays out of the
+  count (reading it would need the next leaf from the archive; see Result above). Whole letter, clear included, not the measure: 0.99.
+- Class unchanged: **read** (20/21 meets the 95% bar). The token figure, 81 of 82, is unchanged.
+
