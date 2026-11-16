@@ -45,7 +45,7 @@ def tdir(folder):
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'solved', 'highlights', 'top25'}
 INDEX_PAGES = {'siena1421'}   # a page that only lists the write-ups a split series became (Siena, Concistoro 2308)
-TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404'}   # interactive and reference pages, not write-ups
+TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404', 'method', 'methode', 'corrections'}   # interactive and reference pages, not write-ups
 # The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
 FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',

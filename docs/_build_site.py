@@ -461,7 +461,9 @@ EXPLORE_GROUPS = [
                            ('keys', 'Key web', 'Which key opened which letter')]),
     ('Try and take part', [('secret', 'Write a secret letter', 'Seal a message in a real historical cipher'),
                            ('contribute', 'Contribute', 'Send a solution, a new cipher or a check of a reading')]),
-    ('Reference', [('glossary', 'Glossary', 'How each cipher was solved, and the terms used')])]
+    ('Reference', [('method', 'Method and review', 'How readings are made, checked and corrected, and by whom'),
+                   ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
+                   ('corrections', 'Corrections', 'What was published and then corrected or withdrawn')])]
 EXPLORE = [e for _, items in EXPLORE_GROUPS for e in items]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
@@ -785,6 +787,8 @@ def footer_html(current):
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
     if cur and current not in SURVEYS:
         links.append(f'<a href="{html.escape(contest_url(current))}" rel="noopener">Contest or verify this reading &#8599;</a>')
+    links.append('<a href="method.html">Method</a>')
+    links.append('<a href="corrections.html">Corrections</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="feed.xml">Feed</a>')
@@ -1077,6 +1081,13 @@ def cite_authors(page):
     names = [n for n in dict.fromkeys(plain(CONTRIB[w]['name']) for w in order) if n not in own]
     return names + [own] if page.get('provenance') == 'contributed' else [own] + names
 
+def _commit():
+    """Short hash of the commit the site is built from, for 'Cite this page' (a page changes under one URL)."""
+    import subprocess
+    try: return subprocess.run(['git', '-C', str(HERE), 'rev-parse', '--short=10', 'HEAD'], capture_output=True, text=True, timeout=10).stdout.strip()
+    except Exception: return ''
+COMMIT = _commit()
+
 def cite_html(page, rec):
     """Cite this page: the words, and a button each for the words and for BibTeX (site.js copies them)."""
     title, slug = plain(page['title']), page['slug']
@@ -1084,7 +1095,7 @@ def cite_html(page, rec):
     author = names[0] if len(names) == 1 else ', '.join(names[:-1]) + ' and ' + names[-1]
     url = f'{BASE_URL}{slug}.html'
     posted, updated = fmt_date(rec['first']), fmt_date(rec['updated'])
-    when = f'posted {posted}' + (f', updated {updated}' if updated != posted else '')
+    when = f'posted {posted}' + (f', updated {updated}' if updated != posted else '') + (f', repository commit {COMMIT}' if COMMIT else '')
     text = f'{author}, \u201c{title}\u201d, Cyphersolver, {when}, {url}.'
     year = rec['first'][:4]
     bib = (f'@misc{{cyphersolver-{slug},\n  author = {{{" and ".join("{" + n + "}" if "," in n else n for n in names)}}},\n  title = {{{title}}},\n  year = {{{year}}},\n'
@@ -1451,6 +1462,8 @@ if __name__ == '__main__':
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
     (HERE / 'glossary.html').write_text(glossary_html(), encoding='utf-8')
+    import _method_page as MP, _corrections_page as CO      # method.html, methode.html, corrections.html (16 Nov 2026)
+    MP.build_html(VERSION); print('corrections:', CO.build_html(VERSION), 'entries')
     import _contributors_page as CP
     (HERE / 'contributors.html').write_text(CP.page(PAGES, PROFILES, CONTRIB, DATES['pages'], VERSION, TODAY), encoding='utf-8')
     done =[process(p) for p in sorted(HERE.glob('*.html'))]
