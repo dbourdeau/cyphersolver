@@ -82,20 +82,21 @@ THE CIPHER
     - TNA Discovery record: https://discovery.nationalarchives.gov.uk/details/r/C7306704
 
 WHAT IS KNOWN
-  Status: Catalogue says 'Undecoded cipher' for each. f. 187 has one decoded paragraph, a crib. Not digitised; not on DECODE. Chauran / de Bacquoy letters to Williamson in the same volume send ciphers (SP 84/165/36, /54, /75): key leads.
+  Status: Catalogue says 'Undecoded cipher' for each. f. 187 has one decoded paragraph, a crib. Not digitised; not on DECODE. Chauran / de Bacquoy letters to Williamson in the same volume send ciphers (SP 84/165/36, /54, /75): key leads. 15 Nov 2026: in progress in targets/chauran1662 (Andrew Beling, PR #677): seen on State Papers Online copies; a Spanish-vocabulary number cipher of Williamson's informants (probably Chauran's; Tomokiyo describes its decoding table, SP 106/6 no. 34, DECRYPT R510, not seen); key rebuilt from the period glosses of ff. 189 and 260; ff. 187, 231, 245, 313, 317 decoded, not read; ff. 243-244, 306, 315 not shown to be in the key; ff. 258 and 263 not seen; f. 228 is a French-vocabulary cipher.
   Outcome so far: not yet attempted by the project
   Prior-art check: open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found)
   Check first: Obtain f. 187 with its decoded paragraph; check CSP for a calendared reading.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/chauran1662/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/chauran1662/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/chauran1662/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +136,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/chauran1662/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+870&amp;target=catalogue+870
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -154,10 +155,10 @@ If you cannot open issues or pull requests, write this report for your human to 
 <h2>What is known</h2>
 
 
-<p><b>Status and prior art.</b> Catalogue says 'Undecoded cipher' for each. f. 187 has one decoded paragraph, a crib. Not digitised; not on DECODE. Chauran / de Bacquoy letters to Williamson in the same volume send ciphers (SP 84/165/36, /54, /75): key leads.</p>
+<p><b>Status and prior art.</b> Catalogue says 'Undecoded cipher' for each. f. 187 has one decoded paragraph, a crib. Not digitised; not on DECODE. Chauran / de Bacquoy letters to Williamson in the same volume send ciphers (SP 84/165/36, /54, /75): key leads. 15 Nov 2026: in progress in targets/chauran1662 (Andrew Beling, PR #677): seen on State Papers Online copies; a Spanish-vocabulary number cipher of Williamson's informants (probably Chauran's; Tomokiyo describes its decoding table, SP 106/6 no. 34, DECRYPT R510, not seen); key rebuilt from the period glosses of ff. 189 and 260; ff. 187, 231, 245, 313, 317 decoded, not read; ff. 243-244, 306, 315 not shown to be in the key; ff. 258 and 263 not seen; f. 228 is a French-vocabulary cipher.</p>
 <p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: known.py, Discovery catalogue text; no web decipherment found).</p>
 <p><b>Check first.</b> Obtain f. 187 with its decoded paragraph; check CSP for a calendared reading.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/chauran1662/NOTES.md" rel="noopener">targets/chauran1662/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/chauran1662" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
