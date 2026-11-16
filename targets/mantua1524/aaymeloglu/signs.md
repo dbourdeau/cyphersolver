@@ -1,6 +1,6 @@
 # Sign inventory: Vat. lat. 8214 cipher, ff. 298r-298v, 68r, 198r
 
-Counts come from the cipher and raised rows of transcription.tsv (f. 298r-v: 480 signs, 38 labels, 69 segments), transcription-68r.tsv (907 signs, 34 labels, 145 segments) and transcription-198r.tsv (78 signs, 19 labels, 13 segments). Total 1465 signs, 43 labels. Points (`.`) between signs are not counted. A doubtful reading `x{y}?` is counted under x. Locations: r = 298r, v = 298v, then the line number (H1/H2 = heading).
+Counts come from the cipher and raised rows of transcription-298.tsv (f. 298r-v: 480 signs, 38 labels, 69 segments), transcription-68r.tsv (907 signs, 34 labels, 145 segments) and transcription-198r.tsv (78 signs, 19 labels, 13 segments). Total 1465 signs, 43 labels. Points (`.`) between signs are not counted. A doubtful reading `x{y}?` is counted under x. Locations: r = 298r, v = 298v, then the line number (H1/H2 = heading).
 
 Most cipher signs are written like the hand's own minuscules and digits. Sign pairs that look similar but are kept apart: `m` (3 minims) vs `n` (2) vs `i` (1, usually dotted). In this hand **`m i` is almost always written together** (4 minims, dot over the last), so read it as two signs.
 
