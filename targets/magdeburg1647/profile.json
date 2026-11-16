@@ -833,6 +833,15 @@
    ],
    "what": "docs/_check_reading.py on the four readings (language de): none 'readable'; all four set to 'decoded, not read'. With every texts entry 'decoded, not read', outcome.class set to 'not read' as docs/_texts.py reading_problems requires (method unchanged).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Integration check of PR #688 (blind sibling decodes of 16 Nov 2026), by an AI agent; no person has checked the transcriptions or the readings. The frozen key equals key.tsv of 89e25ef and of main (sha256 c734821e...); the five BLIND.tsv hashes match their FREEZE_blind.txt; decode_once.py rerun on copies gives the five decodes byte for byte, and a decoder written here from key.tsv gives 0 differing rows of 1,354; the judge marks recount to 5233/6765, 388/442, 134/189, 41/62, 57/106; shuffle.py rerun gives shuffle_out.txt figure for figure (0 of 5,000 in all ten runs). Images (LASA viewer, max jpg): frame 281, all 60 cipher words, and frame 245 left lines 1-5, 49 rows (44 cipher words, 4 drawn signs, one struck word), agree with the blind transcriptions word for word (g/q and c/e not separable at that size). The image hashes of blind16/IMAGES_SHA256.txt cannot be rechecked: the viewer re-encodes each request. Order of events (key frozen, transcription, hash, decode) is by the contributor's record: one commit, no outside stamp. By cipher words with every letter S and nothing supplied (README, holes are counted by words): No. 29 531/1,212 rows = 0.438, frame 281 35/60 = 0.583, frame 203 10/33, frame 186 4/11; all four stay 'decoded, not read', frame 252 stays a failed result. docs/_check_reading.py on the filed readings gives 0.092, 0.346, 0.400 and 0.444 (NOTES table of the addition has 0.094, 0.391, 0.455, 0.533). 'Hold': the 'Not added (held)' line of PR #578 says what Andrew Beling left out of his own addition; it is not a reservation (catalogue 1639 has no reserved field, research/SWEEP.md).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -897,6 +906,18 @@
     "role": "verification",
     "note": "the envoys' clear copies of 1645 Nos. 31 and 32 in LASA A 1 Nr. 540 Bd. 1, used for the readings of f.210-212",
     "date": "1645"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "blind transcriptions of No. 29 (frames 244-245) and of the cipher in the letters of frames 186, 203, 252, 281, decoded with the folder's key (PR #688), with AI agents; decoded, not read; frame 252 a failed result",
+    "date": "2026-11-16"
+   },
+   {
+    "who": "ajbeling",
+    "role": "pointer",
+    "note": "first listed No. 29 (frames 244-245) and the cipher in the letters of frames 15-28, 186, 203, 252, 281, 283 as further texts in the same key (PR #578, 'Not added (held)'); his files for them are not in this folder and were not used for PR #688",
+    "date": "2026-11-12"
    }
   ],
   "gaps": [
