@@ -177,6 +177,36 @@
    "kind": "verification",
    "what": "Issue #203 (Andrew Beling): heading and four values checked on the NARA frames (M34 roll 17 frames 0027, 0031, 0032, with 0028 spot checks; key sheet M97 roll 13 frame 1057). The heading is 952 959 952 954, not 932 939 932 954, and the key sheet prints 951-960 = 0-9, so 952 = 1, 959 = 8: both transcriptions had read 5 as 3. On frame 0031 the groups under 'will', 'unless' and 'for' are 1186, 482 and 981 (tick-topped 8 read as 0 in the first transcription), so the overlay values 1106 = will, 402 = unless, 901 = for are withdrawn along with 932 = 1, 939 = 8 and 580 = was. Dudout's transcription and decryption corrected (1186 x2, 482 x1; 981? x3 and 500? x5 marked doubtful, not re-read one by one on frames 0028-0029; on frame 0032 the middle digit of the group under 'was' cannot be told from 0 at the size viewed). WAINUT's transcription not changed: it still has 932 939 932, 402 and 1106 x8. Counts (87.9%, 97.0%) not recomputed.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Brice Dudout (PR #704, dudout/second_code/): Crawford's second 1813 numbering (the = 285, of = 76, Emperor = 1516; M34 roll 17 frames 0035, 0056R, 0070, which carry a contemporary interlinear decipherment) tested against WE025, the rows public in this repository (419 numbers): 3 of 65 covered units agree with the interlinear (0.046), best of 200 shuffles 0.092. Not WE025.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "key-structure hypothesis",
+    "statistical test"
+   ],
+   "what": "Brice Dudout (PR #704): the same units tested against the JQA table read with morris1813's block reversal (Morris 100*i + r = JQA 100*(15-i) + r), anchors 285, 76, 1516 left out: 89 of 100 covered units agree (0.890; 89/106 = 0.840 over all units), best shuffle 0.090; bar 0.85 and best + 0.30 written before the run. Crawford used both numberings of the one code: the JQA order on 15 Aug 1813, the reversed-block copy from 8 Sept. The 41 unread groups of the 15 Aug letter give nothing under WE025 or the reversed order.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Integration check of PR #704 (AI agent, for the maintainers; not a person): both scores reproduced with score.py, interlinear_pairs.tsv hash as stated, block map checked by hand; NARA frame 0035 compared with about 100 interlinear units, agree (one group read 2?8 where 218 = before would fit, already named by the contributor).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -245,6 +275,18 @@
     "note": "heading is 952 959 952 954, not 932 939 932 954; 8/0 slips behind overlay values 580, 1106, 402, 901",
     "date": "2026-11-05",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/203"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "Crawford's second 1813 numbering (frames 0035, 0056R, 0070) identified as the JQA code with its blocks of 100 reversed, the copy Morris used; WE025 tested and ruled out (PR #704)",
+    "date": "2026-11-16"
+   },
+   {
+    "who": "ajbeling",
+    "role": "pointer",
+    "note": "suggested in peer review that Crawford's other 1813 code be tested against WE025, the code of his 1814 letter (crawford1814)",
+    "date": "2026-11-16"
    }
   ],
   "gaps": [
