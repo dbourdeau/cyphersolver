@@ -1,6 +1,6 @@
 # Giovanni Corsi to Lorenzo de' Medici, 27 Oct and 16 Nov 1513 (ASF, Mediceo avanti il Principato CXXXVII, docs 620 and 623; catalogue 2391)
 
-Status: doc 620 (27 Oct 1513) read in part, 74.7% strict, first pass of record; doc 623 (16 Nov 1513) decoded, not read, 55.4% strict. Doc 633 of the same set not yet done. Contributed, not yet written up.
+Status: doc 620 (27 Oct 1513) decoded, not read: 74.7% of letter units read as sense (strict judge, first pass of record, above our own 65% line) but only 3 of 16 sentences clean by docs/_check_reading.py, so it is filed as decoded, not read; doc 623 (16 Nov 1513) decoded, not read, 55.4% strict. Doc 633 of the same set not yet done. Contributed, not yet written up.
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic).
 
@@ -65,7 +65,7 @@ From `blind/judge.tsv` (row sums re-added, 16 Nov) [measured]:
 
 The units are decoded letters (a syllable sign gives two). Each bracketed code counts as 1 unit and each `_` as 1 N unit. The two letters are not pooled.
 
-Doc 620 is above the project's own 65% line and under the README 95% bar, so it is read in part. Doc 623 is under 65% and is filed as decoded, not read.
+Doc 620 is above our own 65% line on letter units, but the repository's sentence check (below) gives 3 of 16 clean sentences, under the 0.60 for 'read in part', so it is filed as decoded, not read. Doc 623 is under 65% and is filed as decoded, not read.
 
 Token classes of the decode by letter, from `blind/decode_once.py`'s rules [measured]: 620 has 567 tokens (524 with a letter value, 23 number entries, 13 holes, 7 nulls). 623 has 477 tokens (414 letter values, 35 number entries, 16 holes, 12 nulls).
 
