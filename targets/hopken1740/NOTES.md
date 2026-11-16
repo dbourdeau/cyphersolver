@@ -84,6 +84,7 @@ Riksarkivet volumes of Diplomatica Turcica were paged from the images the catalo
 |---|---|---|---|---|
 | I/9/26 (R0003635), catalogue 2247 | 147 | "Lit. A", French memorandum on the last Russo-Ottoman treaty, enclosure to the despatch of 24 Feb / 4 Mar 1741; glossed | 282 | read (contemporary gloss, checked against the frozen key) |
 | I/9/27 (R0003636), catalogue 2248 | 49, 50 (left page) | Cipher copy of a letter of the comte de Castellane, French ambassador, and the start of Höpken and Carlson's reply; received 2 Oct 1741; bare, no gloss | 205 + 269 | letter and reply: read in part |
+| I/9/27 (R0003636), catalogue 2248 | 50 (right page), 51-54 | Continuation of the reply to Castellane to its closing ("ce 15 de Juillet"); bare, no gloss; transcribed and read by Tommy Marshment-Howell (lccompany), integrated 16 Nov 2026 | 1,961 | read in part (not scored by check_marks.py) |
 
 Both are in the code of the despatch above (four-digit groups 1006-1915). These are the first French texts read in that code and
 the first bare passages read with it outside volume I/9/21.
@@ -123,7 +124,7 @@ original letter, and the reply as received, may survive in clear in the Nantes s
   runs (second code). Image 147: Lit. A, worked (Lit. A, below).
 - **I/9/27 (R0003636, Jul-Dec 1741, catalogue 2248).** Image 8: glossed Swedish runs. Images 49-52: the bare French
   copy of the exchange with Castellane, about 2,000 groups over seven pages; 49 and the left page of 50 worked
-  (the Castellane exchange, below). Image 93: bare pages. Image 135: partly glossed.
+  here, the right page of 50 and 51-54 contributed (the Castellane exchange, below). Image 93: bare pages. Image 135: partly glossed.
 - Catalogue 2241 and 2244 (volumes I/9/23, I/9/28) were not opened in this survey; 2242 (I/9/29) was opened later
   for Lit. B (section "Lit. B of volume I/9/29" below).
 
@@ -503,10 +504,13 @@ were identical to this folder's). Rebuild from this folder (standard library onl
 - Khan's letter: 22 verbatim words rest on pass-3 re-reads of the looped 8 (key-assisted), which a reader could not always tell from a looped 2 - blocker: illegible
 - Khan's letter: one agent made both passes, every reader so far was an AI agent - blocker: needs-physical-access
 - Group 1286 (gloss Sa in the Khan's letter, one place) disagrees with the sense guess V[otre] at three places of the reply (M02, M08, M15, each before a point and 1465) and with the Lit. B guess [?ig] (C04): the guesses stay guesses and the 1286 of the reply is not confirmed - blocker: open-codes
+- Reply continuation (50 right to 54 right, contributed 16 Nov 2026): 63 groups with no key value, most read as marked context guesses, three groups unread (1194, 1096 twice, 1428 in "d[1428]s"), about 20 new guessed values (1000, 1047, 1168, 1223, 1383, 1456, 1519, 1586, 1634, 1746, 1791 and others) - blocker: open-codes; from the sense only; 1083 = fle (gloss on R0003635 image 149 right) holds only if 1678 is ve, and the key marks 1678 as mixed (ve 1, we 1)
+- Reply continuation: places that do not give the expected word (tecon, so, mal ha, insiconer, "la l'accommodement"), two doubtful digits read by sense (51L-04 g1, 52L-03 g11), 15 doubtful groups - blocker: open-codes; misread digits or slips of the encipherer
+- Reply continuation: no human check recorded (the contributor left the line blank), and not scored by check_marks.py or _check_reading.py, so its words are not in the headline share - blocker: needs-physical-access
 
 ## Not part of this target (not worked)
 
-The following were surveyed or left aside and are not unread pieces of the documents above: the rest of the Castellane exchange (the right page of image 50, images 51 and 52, about 1,500 bare groups in the same code; the reply read here breaks off at the foot of the left page, and the remainder is a document of its own that is not transcribed); the first-code pages of I/9/24 (images 40, 106 glossed, 139 bare; image 40 would be a held-out page for the hopken1739 key) and the glossed second-code runs of I/9/25-27 (images 8, 54, 100, 240, 286, 329, 135), which are the material that would confirm the context values above; the three-digit number code of I/9/25 image 99 (a different system); the continuation of Lit. A beyond image 147; catalogue 2241 (volume I/9/23, not opened) and the rest of 2244 (volume I/9/28 beyond images 227-229: bare runs at 198, 246, 342 and others, glossed passages at 29, 86, 114, 397, 539, not opened; image 482 is in another code); in I/9/29 (catalogue 2242), the pages around Lit. B: images 78-80 (French cipher with clear words; image 79 right headed "2. Lit. [?]"), 82 right (headed "Doublette") and 83-85 (further bare pages), none transcribed, and image 56 (a small-number cipher with a Swedish gloss, another system), not worked. The original (non-duplicate) copy of Lit. B, and any Lit. A beside it, was not looked for beyond images 78-86 of I/9/29; a second copy would be a separate witness that could settle the doubtful digits of Lit. B.
+The following were surveyed or left aside and are not unread pieces of the documents above: (the rest of the Castellane exchange, image 50 right page and images 51-54, is no longer listed here: contributed and integrated on 16 Nov 2026, see the continuation below); the first-code pages of I/9/24 (images 40, 106 glossed, 139 bare; image 40 would be a held-out page for the hopken1739 key) and the glossed second-code runs of I/9/25-27 (images 8, 54, 100, 240, 286, 329, 135), which are the material that would confirm the context values above; the three-digit number code of I/9/25 image 99 (a different system); the continuation of Lit. A beyond image 147; catalogue 2241 (volume I/9/23, not opened) and the rest of 2244 (volume I/9/28 beyond images 227-229: bare runs at 198, 246, 342 and others, glossed passages at 29, 86, 114, 397, 539, not opened; image 482 is in another code); in I/9/29 (catalogue 2242), the pages around Lit. B: images 78-80 (French cipher with clear words; image 79 right headed "2. Lit. [?]"), 82 right (headed "Doublette") and 83-85 (further bare pages), none transcribed, and image 56 (a small-number cipher with a Swedish gloss, another system), not worked. The original (non-duplicate) copy of Lit. B, and any Lit. A beside it, was not looked for beyond images 78-86 of I/9/29; a second copy would be a separate witness that could settle the doubtful digits of Lit. B.
 
 ## Escalation
 
@@ -605,3 +609,19 @@ Done by the integrating session after an independent verification (report R7_nor
   blockers are the same kind as before, so `Status: in progress` was not set.
 - **Stale sentences** of docs/hopken1740.html fixed: headline share and extent, "two bare documents", "four documents",
   "catalogue 2241, 2242 and 2244 were not opened", the glance box, the counts section and the sources.
+
+## Reply continuation (contributed 16 Nov 2026)
+
+Tommy Marshment-Howell (lccompany) sent by email a transcription and reading of R0003636 image 50 right page and images 51-54: 1,961 groups,
+running on from "cette dernière puissance es|t très ..." (the foot of image 50 left) to a clear closing on 54 right ("Nous avons l'honneur &c",
+"ce 15 de Juillet", "à 3 heures du matin"; no year or signature visible). The date fits the receipt note of 2 Oct 1741 on image 49
+(a July letter copied for Stockholm), not checked against an edition. Files: transcription_reply_oct1741_cont.txt (digits; 15 doubtful groups with
+alternatives in the header), decryption_reply_oct1741_cont.txt, reading_reply_oct1741_cont.md, translation_reply_oct1741_cont.md,
+about_reading_reply_oct1741_cont.txt, notes_reply_oct1741_cont.md (every value used beyond the key, two doubtful digits read by sense, the places that
+do not fit). The contributor's three crops (gloss evidence for 1605, 1083 and 1762) are not committed (*.png is git-ignored here).
+
+Checked at integration: 157 rows, 1,961 groups, 1,894 in key_1741.tsv (unchanged), 67 outside it; with 1605 = ou and 1083 = fle, 63 without value. The text
+reads as French sentences and the splice with reading_reply_oct1741.md is exact. What it says: Sweden and the Porte should act together against Russia now;
+Russia stalls on its treaty with the Porte; France's guarantee can only work through Sweden; the envoys ask Castellane to press the Porte's ministers and offer
+the grand vizier a memorandum. Caveats: 1083 = fle needs 1678 = ve (key: mixed); about 20 values are new guesses; no human check is recorded; the continuation is not
+scored by check_marks.py or _check_reading.py and is not in the headline share (301 of 386 words).
