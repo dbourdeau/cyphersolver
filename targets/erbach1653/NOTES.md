@@ -86,12 +86,37 @@ Letter 004 is undated. No. 2 (27 Apr 1666) says Erbach has already sent "meine r
 will find them "relevant genug" and not accuse him of inconstancy; with the shared cipher and subject (the division
 of property) this makes 004 the reasons letter, written before 27 April 1666.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. In the readings the deciphered
+text is in plain type and the clear frame in *italics*. The plain words were counted and the italics left out. Holes
+were counted by words with the v2_score rules, one hole per word.
+
+| letter | recorded | cipher words only | holes / words read | state |
+|---|---|---|---|---|
+| 004 | none (state read) | 0.914 | 11 / 117 | read -> read in part |
+| No. 1 (003) | none | 1.0 | 0 / 3 | stays read |
+| No. 2 (006) | none | 1.0 | 0 / 2 | stays read |
+
+Letter 004 has 128 cipher words: 117 read and 11 holes. The eleven holes:
+
+- four letters the writer left out: *folgende[n]*, *nich[t]*, *statu[s]*, *[ru]m*
+- five places marked [X] (ink blot or deletion on the film): *co⟨n⟩[X]ventum*, *sche[X]rts[X]s*, *elector[X]um*, *fidelita[X]tis*, and the [X] after *fratribus*
+- one word with both: *urs[X]ache[n]*
+- the *[..]* before *itum* after *resolution*, where the reading supposes a lost syllable (ct_004.txt has no pair missing there)
+
+The neighbouring-cell slips marked ⟨x⟩ count as read, as before. Letter 004 carried state read with no read_share,
+and its whole reading body, clear frame included, was already 0.856. **The change of letter 004 to read in part,
+and of the class from read to read in part, therefore comes from the read bar as it stood before 16 Nov 2026, not
+from the cipher-words rule.** The pair count (591 of 610, 96.9%) is unchanged.
+
 ## Remaining gaps
 
-- words in the clear German frame of the three letters (not cipher), marked [?] and [..] in clear_text.md -
-  blocker: illegible; microfilm frame, Kurrent at about 25 px per line; the archive holds only this film
-- pair 11 of letter No. 2 (read 7,7, sense needs an s) and the clause p1.11 "nich wie sche[X]rts[X]s" (blots in
-  the manuscript) - blocker: illegible; ink blots over the cipher, same on both filmings
+- words in the clear German frame of the three letters (not cipher), marked [?] and [..] in clear_text.md - blocker: illegible; microfilm frame, Kurrent at about 25 px per line; the archive holds only this film
+- pair 11 of letter No. 2 (read 7,7, sense needs an s) and the clause p1.11 "nich wie sche[X]rts[X]s" (blots in the manuscript) - blocker: illegible; ink blots over the cipher, same on both filmings
+- letter 004: the places marked [X] in ct_004.txt inside the words co⟨n⟩[X]ventum (p1.05), urs[X]ache[n] (p1.10), elector[X]um (p1.19-20), fidelita[X]tis (p2.02) and after fratribus (p1.34): the transcription's mark for "ink blot or deliberate deletion covering one or more pairs" on the film (the overview of image 004 shows black blots on page 1); counted as holes in the read share - blocker: illegible; covered on the film from which ct_004.txt was transcribed
+
+Not listed as open pieces, though counted as holes in the read share by the README rule: in letter 004 the words folgende[n] (p1.10), urs[X]ache[n] (p1.10), nich[t] (p1.11), statu[s] (p1.17) and [ru]m (p. 2) carry a letter for which ct_004.txt has no pair. The pairs run on there with no gap, divider or [X], and the reading marks these letters as ones the writer dropped. That is the transcription's evidence for a writer's omission; it was not re-checked on the film for this purpose. The piece before *itum* (p1.14) follows the writer's word divider "|" directly in ct_004.txt, with no pair between, so the transcription shows nothing missing there; the reading's [..] is the editor's guess that a syllable is lost. These words are otherwise read from the cipher.
 
 ## Escalation
 

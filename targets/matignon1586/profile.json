@@ -1064,7 +1064,13 @@
    "technique": ["statistical test", "manual reconstruction"]
   },
   {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 5 of 14 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-  {"date": "2026-10-24", "kind": "crib", "technique": ["crib testing"], "what": "Michael Brackx posted the clear copy of f. 20r at the end of f. 19v as written (#87, reply of 23 Oct 2026); taken in as texts/f19v_copy.md with his English. It confirms code 14 = que at l. 5 (q[ue] [?ce] fust honte; the claimed wording difference does not exist), names four regiments, not two, and gives the day as vj. f. 20r added to outcome.texts as read in part from the contemporary copy (read_share 0.856 under v10, grade B).", "result": "partial"}
+  {"date": "2026-10-24", "kind": "crib", "technique": ["crib testing"], "what": "Michael Brackx posted the clear copy of f. 20r at the end of f. 19v as written (#87, reply of 23 Oct 2026); taken in as texts/f19v_copy.md with his English. It confirms code 14 = que at l. 5 (q[ue] [?ce] fust honte; the claimed wording difference does not exist), names four regiments, not two, and gives the day as vj. f. 20r added to outcome.texts as read in part from the contemporary copy (read_share 0.856 under v10, grade B).", "result": "partial"},
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), section by section of each reading file: clear text in italics or in the 'clear opening/close/end' sections left out, f. 201's variant wording in braces left out, line markers ([l. n], [v. l. n], [f. 201 l. n]) not scored as holes, notes and headers not counted. ff. 196/201 0.954 -> 0.957 (read); f. 196v 0.963 -> 0.952 (read); fr. 15571 f. 177 0.946 -> 0.956 (read in part -> read: the earlier figure counted the holes listed under 'What stays open' a second time and scored the verso line markers as holes); f. 173 0.949 -> 0.919, f. 123v 0.942 -> 0.935, f. 124v 0.941 -> 0.914, f. 110 0.944 -> 0.919 (all stay read in part). ff. 143r-v, 149v-150v, 154r-v and f. 20r are read from clear copies of the cipher and hold no clear text: unchanged. Class stays read in part.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "method": "read with known key",
@@ -1189,7 +1195,7 @@
   ],
   "parts": [
    {
-    "label": "Cipher-1 despatches read with the key on the images (ff. 110, 123v, 124v, 173, 196, 196v, 201); ff. 123r and 124r decoded, not read",
+    "label": "Cipher-1 despatches deciphered with the key on the images (ff. 110, 123v, 124v, 173, 196, 196v, 201); ff. 123r and 124r decoded, not read",
     "records": "BnF fr. 15572 ff. 110, 123-124, 173, 196r-v, 201",
     "method": "read with known key",
     "extent": "partial",
@@ -1347,8 +1353,8 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep's 0.535 counted the 33 line markers [l. n] and the English header as holes; the reading body alone (clear opening + cipher, markers and stop code 44 cut, v3b_body.py) scores 0.72 on explicit holes, 0.68 plain, hole rate 0.085. What it rests on: Brackx's figure transcription with 14 labels corrected here on full-resolution crops; the merged Cipher-1 key plus three leaf-only values (oob = ff, fe = r/rr, zu = u/uu); read by hand from the figures' letter sets. No clear copy, no contemporary decipherment, no second reader of the labels. Letter-set freedom (v3b_matignon_sets.py): 96.2% of the reading's letters carried by the figures against 47% for the same words shuffled and 48% for another leaf's text; 13.1% of carried letters rest on a value other than the figure's first, against 12.2% on f. 143v where a clear copy fixes the reading. Grade lowered A -> B: no outside text checks it."
     },
-    "read_share": 0.949,
-    "note": "24 Oct 2026: 94.9% of the words of texts/reading_f173.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.919,
+    "note": "24 Oct 2026: 94.9% of the words of texts/reading_f173.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: read share over cipher words only 0.919 (26 holes beside 296 words read of the section 'The cipher'; the clear opening left out). The 0.949 recorded before was taken over the whole file, header included. Stays read in part."
    },
    {
     "doc": "f196",
@@ -1369,7 +1375,8 @@
      "date": "2026-10-22",
      "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, transcribed and read the same day (reading_f196v.md). Verified word by word 22 Oct 2026 against both encipherments (ff. 196 and 201): 0 words bracketed, 0 replaced; 0.794 clean on the body."
     },
-    "read_share": 0.954
+    "read_share": 0.957,
+    "note": "16 Nov 2026: read share over cipher words only 0.957 (12 holes beside 267 words read of texts/reading_f196_201.md; the clear text in italics, f. 201's variant wording in braces and the f. 201 line markers left out). The 0.954 recorded before was taken over the whole file, header and clear text included. Stays read."
    },
    {
     "doc": "f201",
@@ -1390,7 +1397,8 @@
      "date": "2026-10-22",
      "note": "read as sentences against the English; the two copies aligned figure by figure (they are fair copies of one enciphered draft); 46 label corrections checked on the images (corrections/f196_201.tsv); code 37 and a few words open; f. 196v, the continuation, transcribed and read the same day (reading_f196v.md). Verified word by word 22 Oct 2026 against both encipherments (ff. 196 and 201): 0 words bracketed, 0 replaced; 0.794 clean on the body."
     },
-    "read_share": 0.954
+    "read_share": 0.957,
+    "note": "16 Nov 2026: read share over cipher words only 0.957, counted on the joint reading with f. 196 (see that entry). Stays read."
    },
    {
     "doc": "f196v",
@@ -1408,7 +1416,8 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep's 0.547 counted the line markers [l. n] and the header as holes; the cipher body (ll. 1-36, markers cut) scores 0.885 on explicit holes, 0.73 plain, hole rate 0.049 (with the clear close 0.867). What it rests on: 1,236 figures transcribed here for the first time (one transcriber, no second reader), four new labels and a leaf key key_cipher1_f196v.json; code 63 = apres from f. 201's clear tail; codes 65, 99 open. No clear copy or contemporary decipherment of f. 196v. Letter-set freedom (v3b_matignon_sets.py): 97.4% of letters carried against 47% / 45% for the controls; 16.5% of carried letters on a non-first value (12.2% on the clear-copy leaf f. 143v). Grade lowered A -> B: no outside text checks it."
     },
-    "read_share": 0.963
+    "read_share": 0.952,
+    "note": "16 Nov 2026: read share over cipher words only 0.952 (16 holes beside 316 words read of the three cipher sections of texts/reading_f196v.md; the clear close, in italics, left out). The 0.963 recorded before included the clear close and the header. Stays read."
    },
    {
     "doc": "f123r",
@@ -1445,8 +1454,8 @@
      "date": "2026-10-22",
      "note": "f. 123v section of reading_f123.md: 0.66 clean sentences by the scorer, about a third of the failures being period spellings the word list lacks (laquele, demourés, douse); read against the English; about 18 [?] words; 58 label corrections on the image. Verified word by word 22 Oct 2026 (f. 123v section): 0 words bracketed, 0 replaced; 0.656 clean on the section."
     },
-    "read_share": 0.942,
-    "note": "24 Oct 2026: 94.2% of the words of texts/reading_f123.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.935,
+    "note": "24 Oct 2026: 94.2% of the words of texts/reading_f123.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: read share over cipher words only 0.935 (23 holes beside 330 words read of the section 'The cipher, f. 123v' of texts/reading_f123.md). The 0.942 recorded before was taken over the whole file: the clear opening, f. 123r and the notes included. Stays read in part."
    },
    {
     "doc": "f124r",
@@ -1483,8 +1492,8 @@
      "date": "2026-10-23",
      "note": "v3 check 23 Oct 2026: the sweep scored the whole reading_f124.md (f. 124r, which is decoded, not read, and the header included) with the line markers as holes; the f. 124v section alone (markers cut) scores 0.667 on explicit holes, 0.63 plain, hole rate 0.086 (0.633 with the clear end). Above the bar but close to it. What it rests on: Brackx's transcription with 65 label corrections across ff. 124r-v checked on the image and seven leaf-only letter values (key_cipher1_f124.json); read by hand from the letter sets; codes 60 and 67 open; no clear copy, no contemporary decipherment, no second reader. Letter-set freedom (v3b_matignon_sets.py): 96.8% of letters carried against 49% / 49% for the controls; 15.3% of carried letters on a non-first value (12.2% on the clear-copy leaf f. 143v). Grade lowered A -> B."
     },
-    "read_share": 0.941,
-    "note": "24 Oct 2026: 94.1% of the words of texts/reading_f124.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.914,
+    "note": "24 Oct 2026: 94.1% of the words of texts/reading_f124.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: read share over cipher words only 0.914 (27 holes beside 287 words read of the section 'f. 124v' of texts/reading_f124.md). The 0.941 recorded before was taken over the whole file: f. 124r, the clear end and the notes included. Stays read in part."
    },
    {
     "doc": "f110",
@@ -1505,8 +1514,8 @@
      "date": "2026-10-22",
      "note": "after three passes on the image (f110_v2/v3 tsv: 131 label changes; leaf key Cl = l/r, sw = s) 0.70 of sentences clean, about 0.77 within the cipher; open: ll. 1-2 (damaged corner), 3-4, 8, 10, 14-16, 24-25, 36 and codes 45, 47. Read against the English. Verified word by word 22 Oct 2026: 1 word bracketed (partly: [?effects] l. 17, the ff not carried), 1 replaced (l. 25 recongnoistre -> congnoistre, the figures have no re-); 0.72 clean on the body (unchanged)."
     },
-    "read_share": 0.944,
-    "note": "24 Oct 2026: 94.4% of the words of texts/reading_f110.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.919,
+    "note": "24 Oct 2026: 94.4% of the words of texts/reading_f110.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: read share over the cipher section only 0.919 (46 holes beside 519 words read of 'The cipher' in texts/reading_f110.md; the leaf has no clear text). The 0.944 recorded before was taken over the whole file, header included. Stays read in part."
    },
    {
     "doc": "fr15571-f177",
@@ -1519,7 +1528,7 @@
     "decryption": "texts/fr15571-f177.txt",
     "summary": "Forget, 31 December 1585, on Mayenne's design for Gascony: a plan on Pons and Taillebourg, with Taillebourg's toll on the Charente and thirty thousand ecus to be raised from the country, given up when the vicomte de Turenne took the field with guns. The verso (11 lines) continues it.",
     "language": "fr",
-    "state": "read in part",
+    "state": "read",
     "reading": [
      "texts/reading_f177.md",
      "brackx2026/copies/f176_f177.txt"
@@ -1531,8 +1540,8 @@
      "date": "2026-10-22",
      "note": "read as sentences against the English; 12 label corrections on the image; checked word by word against the contemporary clear copy on fr. 15571 f. 176r-v (transcribed 22 Oct 2026, brackx2026/copies/f176_f177.txt; texts/reading_f177_vs_copy.md). Verified word by word 22 Oct 2026: 0 words bracketed, 0 replaced; 0.759 clean on the body."
     },
-    "read_share": 0.946,
-    "note": "24 Oct 2026: 94.6% of the words of texts/reading_f177.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.956,
+    "note": "24 Oct 2026: 94.6% of the words of texts/reading_f177.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: read share over cipher words only 0.956 (14 holes beside 304 words read of the section 'The cipher' of texts/reading_f177.md; the clear opening left out). The 0.946 recorded before was taken over the whole file, so the holes listed again under 'What stays open' were counted twice and the verso line markers [v. l. n] were scored as holes. At or above the 95% bar: read."
    },
    {
     "doc": "f20r",

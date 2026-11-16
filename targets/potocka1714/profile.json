@@ -29,7 +29,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "R7526",
@@ -114,7 +114,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "R7529",
@@ -142,7 +142,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "R7530",
@@ -170,7 +170,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read"
+   "read": "read in part"
   },
   {
    "id": "R7534",
@@ -226,7 +226,7 @@
     "image_quality": "fair",
     "notes": "Counts include isolated nomenclator figures and exclude clear text, dates and amounts. Literal values and editorial interpretations are separated."
    },
-   "read": "read",
+   "read": "read in part",
    "date": "18 January 1716"
   },
   {
@@ -464,7 +464,8 @@
    "technique": ["statistical test", "manual reconstruction"],
    "what": "Verification 5 (plain bar, 23 Oct 2026): each cipher insertion put into its clear anchor (v5b_potocka.py): sections plain 0.5-1.0, explicit 0.9-1.0. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words. The cipher words of each letter are the ⟦ ⟧ spans of its reading plus the unvalued person codes inventoried in standalone-codes.json (23 occurrences, which the readings set outside the spans or leave out); clear anchor words left out. Holes: [?Mscislawi], zaia<73>d, tegn, tombap, Kinnik and the 23 codes. R7525 1.0 -> 0.833, R7526 1.0, R7527 1.0 -> 0.804, R7528 0.962 -> 0.714, R7529 0.964 -> 0.857 (its [10] hole is clear text), R7530 1.0 -> 0.833, R7534 1.0 -> 0.545, R7535 1.0 -> 0.8, R7536 1.0 -> 0.944; all 150/178 = 0.843. Eight letters read in part, R7526 read; target class read in part unchanged; the token measure (844/886) kept as a separate unit.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -540,7 +541,7 @@
     "detail": "re-read at full resolution 5 Oct 2026; the figures are as transcribed (one surplus 25 removed from Kinisberk), the words remain unestablished; no parallel witness."
    }
   ],
-  "notes": "844/886 tokens read as sense (95.3%), measured word by word; 862/886 valued. Per letter: R7525 96.4, R7526 100, R7527 94.3, R7528 98.0, R7529 97.1, R7530 96.8, R7534 82.8, R7535 96.0, R7536 93.1. Read in part: the bar is judged per document and R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) fall below it. Open: four person codes (87, 94, 100, 270; 23 tokens), figure 73, and four words not established (19 tokens). Split on 14 Oct 2026: Mniszech R7524 is targets/mniszech1714.",
+  "notes": "844/886 tokens read as sense (95.3%), measured word by word; 862/886 valued. Per letter: R7525 96.4, R7526 100, R7527 94.3, R7528 98.0, R7529 97.1, R7530 96.8, R7534 82.8, R7535 96.0, R7536 93.1. Read in part: the bar is judged per document and R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) fall below it. Open: four person codes (87, 94, 100, 270; 23 tokens), figure 73, and four words not established (19 tokens). Split on 14 Oct 2026: Mniszech R7524 is targets/mniszech1714. Read share by cipher words (16 Nov 2026; the per-document bar): 150 of 178 cipher words (84.3%), the 23 person-code occurrences counted as unread words; per letter R7525 0.833, R7526 1.0, R7527 0.804, R7528 0.714, R7529 0.857, R7530 0.833, R7534 0.545, R7535 0.8, R7536 0.944; only R7526 is read. The token figures above count letter signs and are kept as such.",
   "texts": [
    {
     "doc": "R7525",
@@ -557,7 +558,9 @@
     "summary": "Horyhorki and court influence: code 94 wants to be alone in the credit of 100; a house causes the writer harm; justice and enemies.",
     "reading": "R7525_reading.md",
     "translation": "R7525_en.md",
-    "read_share": 1.0
+    "read_share": 0.833,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 10 letter-cipher words in the ⟦ ⟧ spans, all read, and 2 unvalued person codes (94, 100); holes by words: 10/12 = 0.833, read in part. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7526",
@@ -574,10 +577,12 @@
      "r7526-trial.txt"
     ],
     "decryption": "reading.md",
-    "summary": "the starosta is present; she asked whether he had arranged anything, and he has nothing; a journey to Lublin; a report that he was with the Dominicans at the time when Dunin danced with a woman in the field (*iakeś tańcował*, corrected 30 Sept 2026, item 7). The office/place name reads *serecki* and the reporting name *Stabrowski* (corrected from *p. Tabrowski*, item 8); the letters are clear, the persons unidentified. Do not silently replace them with Merecki, *serejski* or Dąbrowski.",
+    "summary": "the starosta is present; she asked whether he had arranged anything, and he has nothing; a journey to Lublin; a report that he was with the Dominicans at the time when Dunin danced with a woman in the field (*iakeś tańcował*, corrected 30 Sept 2026). The office/place name reads *serecki* and the reporting name *Stabrowski* (corrected from *p. Tabrowski*); the letters are clear, the persons unidentified. Do not silently replace them with Merecki, *serejski* or Dąbrowski.",
     "reading": "R7526_reading.md",
     "translation": "R7526_en.md",
-    "read_share": 1.0
+    "read_share": 1.0,
+    "state": "read",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the Polish postscript, wholly in cipher, 35 words, all read; holes by words: 35/35 = 1.000, read. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7527",
@@ -594,7 +599,9 @@
     "summary": "the palatine of Vilna's obligation for *sant mil fran* on Bychow; measures to take and distrust of 94's help. The reverse concerns an accusation against the marshal of Lithuania, Biegański's confession to his father, a letter to 100, a letter through the grand chancellor, and an oath. The allegation is the correspondent's account, not an independently verified event.",
     "reading": "R7527_reading.md",
     "translation": "R7527_en.md",
-    "read_share": 1.0
+    "read_share": 0.804,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 47 words in the ⟦ ⟧ spans, of which tegn and tombap do not read as words (sense.json), and 9 unvalued person codes (94 x6, 100 x3); holes by words: 45/56 = 0.804, read in part. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7528",
@@ -611,7 +618,9 @@
     "summary": "Rakiszki, the palatine of Mścisław, and property/reformation involving the first husband, Kroszyński. The second surname spelling is irregular (*Krodyznski*).",
     "reading": "R7528_reading.md",
     "translation": "R7528_en.md",
-    "read_share": 0.962
+    "read_share": 0.714,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 6 words in the ⟦ ⟧ spans, [?Mscislawi] doubtful, and 1 unvalued person code (100); holes by words: 5/7 = 0.714, read in part. Was 0.962, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7529",
@@ -628,7 +637,9 @@
     "summary": "clear French says that since 10 May the *clef* is *rompue* and there is no way to *loubrire*. Another passage says someone has the *clef* in *ceur*. These report trouble using the cipher; they do not establish interception or cryptanalytic compromise. Later cipher words are *rayne* and *maitresse*.",
     "reading": "R7529_reading.md",
     "translation": "R7529_en.md",
-    "read_share": 0.964
+    "read_share": 0.857,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 6 words in the ⟦ ⟧ spans, all read, and 1 unvalued person code (100); the [10] hole of the old figure is in a clear anchor and is left out; holes by words: 6/7 = 0.857, read in part. Was 0.964, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7530",
@@ -645,7 +656,9 @@
     "summary": "the grand treasurer, a confederation, the surrender of an army, and evidence concerning the arrival of a *morcowide* (probably Moscovite). Some number sequences yield corrupt spellings; the letter is not treated as a fluent verified transcript.",
     "reading": "R7530_reading.md",
     "translation": "R7530_en.md",
-    "read_share": 1.0
+    "read_share": 0.833,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 10 words in the ⟦ ⟧ spans, all read, and 2 unvalued person codes (94); holes by words: 10/12 = 0.833, read in part. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7534",
@@ -662,7 +675,9 @@
     "summary": "deputies, *libertation*, a doubtful *zaia[73]d* (possibly Polish *zajazd*), Bychowa, Białystok, Tykocin and Rybiński. Codes 87, 94 and 270 remain open.",
     "reading": "R7534_reading.md",
     "translation": "R7534_en.md",
-    "read_share": 1.0
+    "read_share": 0.545,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 7 words in the ⟦ ⟧ spans, zaia<73>d unread (figure 73 unvalued), and 4 unvalued person codes (87, 270 x2, 94); holes by words: 6/11 = 0.545, read in part. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7535",
@@ -679,7 +694,9 @@
     "summary": "children and a brother, being Saxon, Dunin's house, Chomiński and an ensign; court correspondence, the marshal and his father, *Menzykw* (possibly Menshikov), the queen and the prince of Courland.",
     "reading": "R7535_reading.md",
     "translation": "R7535_en.md",
-    "read_share": 1.0
+    "read_share": 0.8,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 16 words in the ⟦ ⟧ spans, all read, and 4 unvalued person codes (100, 94 x3); holes by words: 16/20 = 0.800, read in part. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    },
    {
     "doc": "R7536",
@@ -696,7 +713,9 @@
     "summary": "a disturbed seal and concern over correspondence; instructions to route letters via a name resembling Königsberg, followed by an unidentified *Kinnik*. The writer expects delay but greater safety. The reverse considers her security, lodging in case of war, keeping Dunin's wife company and a safeguard.",
     "reading": "R7536_reading.md",
     "translation": "R7536_en.md",
-    "read_share": 1.0
+    "read_share": 0.944,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): 18 words in the ⟦ ⟧ spans, Kinnik unidentified (sense.json); holes by words: 17/18 = 0.944, read in part. Was 1.0, measured on the reading file, which sets the insertions in clear anchor words and leaves out the person codes. The token figure of sense.json (letter signs and codes) is a different unit."
    }
   ],
   "key_file": "key-potocka.json"

@@ -84,3 +84,15 @@ with a superscript, two-sign "di"), so the decipherment is the reading of the + 
 (`texts/R61_reading.md`: plain 0.667, explicit 1.0). The figures under the decipherment decode only in part from
 the 21 Sept digit transcription (8/0, 9/4 confusions); their end gives "di loro natura". Both keep read.
 
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. `texts/R60_reading.md` marks the
+clear words of the letter in ⟨ ⟩, so the cipher is the two glossed runs: "Il fratello dell'Arcivescovo [?di Livorni]"
+and "Monsignore", 5 words read and 2 doubtful (the cramped gloss "di Livorni").
+
+- R60: 0.952 (whole letter, clear included, not the measure) -> **0.714** (5/7). R60 moves from read to **read in part**.
+- R59, R61: no holes in the readings, 1.0 either way; both stay read.
+
+The target stays "already solved" (no write-up): the reading is the Roman office's own decipherment, and the gloss
+"di Livorni" can only be settled on the leaf.

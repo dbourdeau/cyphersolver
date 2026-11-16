@@ -119,6 +119,24 @@ Dutch, with the line labels and the closing editorial-note lines cut, the body s
 sentences, hole rate 0.048); plain 0.0 because the Dutch word list is modern and does not know 1676 spelling. The
 entry now carries `language: nl` and `reading: june1676_reading.md` (the same text without line labels and notes) and keeps read.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. The reading puts spelled cipher
+words in UPPER CASE but leaves code readings in lower case, like the clear text, so case does not separate them. Each
+line of `reading.txt` was therefore aligned to its line in `transcription/june1676_tx.txt`, where the clear text is
+between ~tildes~. The reading words that match the clear segments are clear, and the rest are cipher
+(`research/reading_audit/r23_beuningen_split.py`, run from this folder). The clerk's interlinear insertions are text,
+not holes. By the contributor's record:
+
+- cipher words: 274 read; 3 unread (s439 `[...]`; t218 `[t218: som onzeker; tweehondert?]`; BR[U]GGE, a supplied
+  letter); 12 inferred words marked (?), the twelve I tokens of Remaining gaps
+- read share over cipher words: **0.946** (was 0.956, scored on `june1676_reading.md` whole, where the lower-case
+  insertions `[ins ...]` and the struck-through note were counted as holes)
+- whole letter with the clear text, not the measure: 0.973 on the same rules
+
+The letter goes from read to read in part. The target was already read in part, and the token measure (264/278,
+94.96%) is unchanged. Remaining gaps are unchanged.
+
 ## Remaining gaps
 - Twelve residual I tokens (c324, d210, e274, o211, p113, p122, s254, t218, v111, v274, w141, w204), plus g121 when gemelte is retained, and unread s439 - blocker: no-key-material; context and alphabetical position do not establish these readings, and s439 lies in the sup- range
 - Unglossed siblings: inv. 249 (1676) scans 118, 218–219; inv. 250 (1677) scan 86; inv. 248 (1675) scans 190, 238–239 - blocker: no-key-material; inventoried and still workable with the reconstructed key, without a complete reading claimed here

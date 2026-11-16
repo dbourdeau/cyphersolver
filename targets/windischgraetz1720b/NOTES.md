@@ -1,6 +1,6 @@
-# Charles VI → Count Leopold Viktorin Windischgrätz, 1720–22, in the Emperor's private key R5018 — **read**
+# Charles VI → Count Leopold Viktorin Windischgrätz, 1720–22, in the Emperor's private key R5018 — **read in part**
 
-Status: read. Three letters of the Emperor to his envoy, Nos. 2, 3 and 6 of the family register: R5021 and R5022
+Status: read in part (since 16 Nov 2026: No. 2 is under the read bar on its cipher words, 9 of 10; Nos. 3 and 6 read). Three letters of the Emperor to his envoy, Nos. 2, 3 and 6 of the family register: R5021 and R5022
 (13 Apr 1720, autograph and copy), R5023 (24 Jul 1720, copy only) and R5024 (11 Apr 1722, copy only). Every cipher
 passage reads directly from the private key R5018, which survives in the same family archive: 192 of 192 cipher
 signs (`dec_R5018_letters.md`).
@@ -58,3 +58,32 @@ Open: the clear text of Nos. 2, 3 and 6 is only summarised around the cipher pas
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the letters are German (not English): explicit-hole bar. The passages of Nos. 2, 3 and 6 in their quoted clear context: explicit 1.0 each. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. The readings mark the cipher in
+⟦ ⟧ and quote clear words around it, so the cipher was taken as the ⟦ ⟧ spans; holes counted by words.
+
+- No. 2: 0.964 (whole excerpt, clear included, not the measure) -> **0.900** (9 of 10 cipher words; versten[den]
+  supplies letters the copy's cipher does not have). Read -> **read in part**.
+- No. 3: 0.972 -> **0.963** (26 of 27; the word pieces "er" and "en" at the joins with the clear counted as words).
+  Pr[o]posi[t]ion is one word and one hole (the old figure counted it twice). Stays read.
+- No. 6: 1.0 (18 of 18), stays read.
+
+The target moves from read to **read in part**, because one of its three letters is under the bar. Over all three
+letters: 53 of 55 cipher words (0.964). By signs, all 192 are read: neither hole is an unread sign. Both are letters
+the reading supplies.
+
+## Remaining gaps
+
+- No. 2, "versten[den]": letters the writer left out of the cipher (it ends VERSTEN before the clear "werden") - blocker: needs-physical-access; every sign that is there is read, and the missing letters cannot be recovered from any file here. The checker offers no blocker type for letters left out; this is the nearest.
+- No. 3, "Pr[o]posi[t]ion": two letters written with the wrong sign (P for O, Z for T). The word is certain - blocker: needs-physical-access; the wrong signs are what the copy has, and no file here can change them (No. 3 survives only in the register copy). The checker offers no better type. One hole; the letter stays read.
+
+## Escalation
+
+- [x] siblings: No. 1 (3 Feb 1720, R5019/R5020, Chancellery key R5017, `../windischgraetz1720`) read; Nos. 4, 5 and 7 of the register are not on DECODE
+- [x] clear-pages: the clear text around each passage used for the sense
+- [x] known-keys: the Emperor's private key R5018, which survives in the same archive, applied to every sign
+- [x] print: Mírka 2012 describes the key and letters without a decryption; none found elsewhere (web search, 19 Sept 2026)
+- [n/a] key-rebuild: the period key survives and gives every sign; the two holes are not unread signs
+- [x] retry: the copyist's drifting signs (D/N, Z/G) settled by the numbered letters around them; nothing in the cipher is left unread

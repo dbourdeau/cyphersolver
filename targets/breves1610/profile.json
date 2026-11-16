@@ -260,7 +260,8 @@
    "what": "Verification 5 (plain-bar rows): 10 Nov reading is old-spelling French (explicit 1.0, plain 0.333 on period spellings): keeps read. The lasry-additional entries were scored on line-labelled files with notes (plain 0.31-0.46); running text written out as lasry2022/b1_reading.md, b2_reading.md and additional_reading.md: plain 0.70/0.727/0.71, explicit 0.8/0.909/0.839. Keep read (Lasry's reading).",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 6 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 6 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), the cipher taken as the words outside the {clear} braces of reading.txt, holes by words. 15 Sept (Dudout): 0.955 -> 0.867 (13/15; acompagne[?e], [?de]; 0.933 if the E3/Z2 look-alike counted as read), read -> read in part. 10 Nov (Dudout): 0.938 -> 0.900 (9/10; re[?c]ognoissant), read in part already. Lasry's 10 Nov excerpt (1.0) and the additional document (b1 0.953, b2 0.98, both 0.96; cipher only) unchanged. Target read in part unchanged.", "result": "worked"}
  ],
  "outcome": {
   "method": "read after matching with key from external sources",
@@ -360,10 +361,11 @@
      "note": "v3 verification 23 Oct 2026: the sweep scored reading.txt as a whole (both passages, clear text in braces, comment lines; 0.0 on 32 words), a false alarm. The 15 Sept sentence written out whole in 15sept1610_reading.md (clear words of the letter around the cipher, Brice Dudout's brackets kept as holes): 0.75 explicit-hole and plain (3/4 sentences, hole rate 0.045). Rests on Dudout's decipherment checked sign by sign (alignment.tsv)."
     },
     "reading": "15sept1610_reading.md",
-    "state": "read",
+    "state": "read in part",
     "translation": "15sept1610_en.md",
     "language": "fr",
-    "read_share": 0.955
+    "read_share": 0.867,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher is what reading.txt leaves outside its {clear} braces, 'ce sera trop manifester leurs malice et ambition que' and 'acompagne[z?] d'imprudence et [de?] foiblesse' (the reading's header omits 'que', which is the barred 72); the clear words of the letter are left out. 13 of 15 words read (d' counted as a word), acompagne[?e] (E3/Z2 look-alike) and [?de] holes: 0.867, read in part; 14/15 = 0.933 if the look-alike counted as read. Whole sentence, clear included, not the measure: 0.955."
    },
    {
     "doc": "10nov1610",
@@ -381,8 +383,8 @@
     "state": "read in part",
     "translation": "10nov1610_en.md",
     "language": "fr",
-    "read_share": 0.938,
-    "note": "24 Oct 2026: 93.8% of the words of 10nov1610_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.9,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher is 'que le pape re[c?]ognoi s[s?]ant leurs arogance et sentant sa timidite' (outside the {clear} braces of reading.txt; 4 = le pape counted as two words); the clear words, with the hole se[roit], are left out. 9 of 10 words read, re[?c]ognoissant a hole: 0.900, read in part. Whole sentence, clear included, not the measure: 0.938 (24 Oct 2026)."
    },
    {
     "doc": "10nov1610",

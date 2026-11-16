@@ -260,6 +260,18 @@
    "what": "Transcribed the clear German and Latin frame of the three letters from the microfilm (clear_text.md); No. 2 refers to a letter of 'rationes', dating the reasons letter before 27 Apr 1666.",
    "result": "worked",
    "date": "2026-10-27"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share measured over cipher words only (README Conventions, 16 Nov 2026): plain type of the readings counted and the italic clear frame left out, holes by words with the v2_score rules, one hole per word (a word with two blots counts once). L004 0.914 (117 words read, 11 holes, 128 cipher words: letters the writer left out, ink blots, one run); L003 and L006 1.0. L004 had been marked read with no read_share; its whole reading body was already 0.856. So the move of L004 to read in part, and of the class from read to read in part, comes from the existing read bar, not from the cipher-words rule. fraction_read (591 of 610 pairs) is unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Gap lines for letter 004 restated from what the files show. The [X] places are the transcription's mark for an ink blot or deliberate deletion on the film: blocker illegible. The five letters with no pair in ct_004.txt (the pairs run on with no gap, divider or [X]; the reading marks them as the writer's omissions, not re-checked on the film for this purpose) and the [..] before 'itum' (it follows the writer's divider directly, so nothing is missing in the transcription) are no longer listed as open pieces with a blocker; they still count as holes in the read share. The earlier needs-physical-access line is withdrawn.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -300,7 +312,7 @@
    "key recovered",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.969,
   "fraction_read_method": "measured",
   "fraction_read_source": "reading.tsv: 591 of 610 cipher pairs whose key value is the intended letter; the 19 others are writer's slips read from context",
@@ -329,14 +341,16 @@
     "reading": "reading_004.md",
     "translation": "en_004.md",
     "language": "la",
-    "state": "read",
+    "state": "read in part",
     "summary": "Erbach gives Ludwig VI eight reasons why he cannot leave his county: the troubled Empire, the electors' war nearby, his wife's illness, his brothers taking up government by connivance and a dispensation of age, their youthful counsels, his subjects' trust, the division of property, and disloyal councillors. He asks whether a lord may abandon church, subjects, house and wife and 'put his sheep under hirelings' (John 10:12). No. 2 (27 Apr 1666) refers to this letter of 'rationes', so it predates it.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Read as sentences: every cipher passage forms Latin or German sense with its clear frame (clear_text.md, transcribed from the microfilm); 15 neighbouring-cell slips corrected and listed; some frame words marked [?] or [..]. _check_reading.py (27 Oct) scores reading_004.md at 0.35 clean with a German word list: the passages are mostly Latin, and the edition's slip marks, blots and [?] frame words count as holes; read by eye, every cipher passage forms a sentence."
-    }
+    },
+    "read_share": 0.914,
+    "note": "16 Nov 2026: read share over cipher words only 0.914: 128 cipher words (plain type in reading_004.md, the clear frame in italics left out), 117 read and 11 holes counted by words. Four carry a letter the writer left out: folgende[n], nich[t], statu[s], [ru]m. Five have an ink blot: co⟨n⟩[X]ventum, sche[X]rts[X]s, elector[X]um, fidelita[X]tis, and the [X] after fratribus. One has both: urs[X]ache[n]. One is the run [..]itum. The neighbouring-cell slips marked ⟨x⟩ count as read, as before. The entry had no read_share, and the whole reading body (clear frame included) was already 0.856, under the bar. So the change from read to read in part comes from the read bar as it stood before 16 Nov, not from the cipher-words rule."
    },
    {
     "doc": "L003",
@@ -353,7 +367,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Both runs read as words fitting the clear frame (clear_text.md); two slips; a few frame words doubtful."
-    }
+    },
+    "read_share": 1.0,
+    "note": "16 Nov 2026: read share over cipher words only 1.0 (3 deciphered words: unsers vorhabens, mutationes; slips marked ⟨x⟩ count as read)."
    },
    {
     "doc": "L006",
@@ -370,7 +386,9 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Two Latin words in a German sentence; first pair and pair 11 doubtful on both films, read from sense."
-    }
+    },
+    "read_share": 1.0,
+    "note": "16 Nov 2026: read share over cipher words only 1.0 (2 deciphered words: bonorum divisio; slips marked ⟨x⟩ count as read)."
    }
   ],
   "gaps": [
@@ -383,6 +401,11 @@
     "item": "pair 11 of No. 2 and the blotted clause p1.11 of letter 004",
     "blocker": "illegible",
     "detail": "ink blots, the same on both filmings"
+   },
+   {
+    "item": "letter 004: places marked [X] (ink blot or deliberate deletion on the film) in co⟨n⟩[X]ventum, urs[X]ache[n], elector[X]um, fidelita[X]tis and after fratribus",
+    "blocker": "illegible",
+    "detail": "covered on the film from which ct_004.txt was transcribed; counted as holes in the read share (16 Nov 2026)"
    }
   ],
   "notes": "Only three letters of the 39 carry cipher. The verse key's author is not identified; row 8 is known only as 'p?x'.",

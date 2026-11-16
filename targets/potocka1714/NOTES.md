@@ -1,6 +1,6 @@
 # Barbara Potocka to Jakub Dunin
 
-Status: read in part — 844/886 cipher tokens (95.3%) read as sense in Potocka's nine letters (measured 5 Oct 2026, rerun 14 Oct 2026), but R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) are each below the read bar; four person codes open.
+Status: read in part — by cipher words (16 Nov 2026, the per-document read bar) 150 of 178 (84.3%), and only R7526 reaches 95%; by tokens (letter signs and codes) 844/886 (95.3%) read as sense in Potocka's nine letters (measured 5 Oct 2026, rerun 14 Oct 2026), with R7527 (94.3%), R7534 (82.8%) and R7536 (93.1%) below 95% on that count too; four person codes open.
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): the audit graded this C
 because outside R7526 the cipher forms no sentence of its own. Read through here: in eight letters the cipher is single
@@ -95,3 +95,31 @@ The archive catalogue unit 29/637/0/1.3/9477 (former teka 321/8) lists further l
 ## Reproduction and publication
 
 Run `python targets/potocka1714/prepare_reading.py` for readings/counts. Solver files are exploratory and their result files must not be mistaken for accepted plaintext. The shared language-model registry is used without adding a new corpus. Only safe metadata, text, scripts and small source crops are published; authenticated HTML/JWT and full source pages are not. Public DECODE files contain cipher-passage extracts with clear anchors and gaps, not a complete transcription of the letters; updates are queued locally, not sent.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only, with holes counted by words. The
+per-letter readings (`R75xx_reading.md`) set each decoded insertion, in ⟦ ⟧, inside its clear anchor words, and put the
+unvalued person codes outside the brackets as `<94>`, `<100>` or leave them out. So the cipher words of a letter were
+taken as the words inside ⟦ ⟧ plus every person-code occurrence in `standalone-codes.json` (23 in all); the clear
+anchors are left out. Holes: [?Mscislawi] (R7528, marked doubtful in the reading), the four words sense.json excludes (zaia<73>d in
+R7534, tegn and tombap in R7527, Kinnik in R7536), and the 23 code occurrences.
+
+| letter | old read_share (reading file) | cipher words read | class |
+|---|---|---|---|
+| R7525 | 1.0 | 10/12 = **0.833** (2 codes) | read -> read in part |
+| R7526 | 1.0 | 35/35 = **1.0** (the Polish postscript) | read |
+| R7527 | 1.0 | 45/56 = **0.804** (tegn, tombap, 9 codes) | read -> read in part |
+| R7528 | 0.962 | 5/7 = **0.714** ([?Mscislawi], 1 code) | read -> read in part |
+| R7529 | 0.964 | 6/7 = **0.857** (1 code; the [10] of the old figure is clear text) | read -> read in part |
+| R7530 | 1.0 | 10/12 = **0.833** (2 codes) | read -> read in part |
+| R7534 | 1.0 | 6/11 = **0.545** (zaia<73>d, 4 codes) | read -> read in part |
+| R7535 | 1.0 | 16/20 = **0.800** (4 codes) | read -> read in part |
+| R7536 | 1.0 | 17/18 = **0.944** (Kinnik) | read -> read in part |
+
+All nine letters: 150 of 178 cipher words (84.3%). The old per-letter figures were measured on the reading files with
+the clear anchors in and the codes left out. The cipher-word rule alone moves only R7528 (0.962 -> 0.833 without the
+code). The rest of the change comes from counting the person codes and the four words sense.json already excludes as
+holes by words. The token measure (844/886, letter signs and codes) is a different unit and is kept as such. The
+target stays read in part; the per-letter entries now carry state read in part, except R7526. Remaining gaps and
+Escalation are unchanged: the codes, the figure 73 and the four words are the open pieces listed there.

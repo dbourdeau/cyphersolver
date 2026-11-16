@@ -248,7 +248,8 @@
    "technique": ["statistical test"],
    "what": "Integration check of PR #480: both measure runs re-run unchanged (-2.4227 vs -2.4533; fixed run -2.5066 vs -2.5181; controls below), frozen hash prefixes match; count95 on the shipped reading file gives 2,656 sure + 190 probable of 3,587 (the committed count files say 2,634 + 188). Strict share (sure only, context-only values are holes) 69.7% -> 73.4%; the quote-bug fix was made after the first result. Images not re-fetched (login).",
    "result": "worked"
- }
+ },
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026). R9665 (entry R9661-R9666): the three ⟦ ⟧ cipher runs of R9665_reading.md, clear words left out: 16 of 17 words, [?los] doubtful: 0.96 (whole excerpt) -> 0.941; R9665 moves from read to read in part. R9660 stays decoded, not read. Target class read in part unchanged; no document of the seven now meets the read bar (four are calendared from the court's decipherments, one is clear).", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -296,7 +297,7 @@
    "historical consistency",
    "statistical test"
   ],
-  "notes": "R9665 read in full (glosses + key). R9660 transcribed in full, ~57% of its tokens read (estimate from the transcription files). Four letters (R9661-R9664) read at the time and calendared by Bergenroth; R9666 clear. 22 Oct 2026, reading audit: R9660 relabelled decoded, not read (holes in nearly every sentence); only R9665's three glossed runs count as read.",
+  "notes": "R9665 decrypted, 16 of 17 cipher words (0.941, 16 Nov 2026; earlier \"read in full\"). R9660 transcribed in full, ~57% of its tokens read (estimate from the transcription files). Four letters (R9661-R9664) read at the time and calendared by Bergenroth; R9666 clear. 22 Oct 2026, reading audit: R9660 relabelled decoded, not read (holes in nearly every sentence); only R9665's three glossed runs count as read.",
   "gaps": [
    {
     "item": "R9660 code groups (about 100 distinct, 472 occurrences after b34)",
@@ -311,7 +312,7 @@
    {
     "item": "R9660 spelled runs that do not form words, ff. 141v-146v",
     "blocker": "not-attempted",
-    "detail": "sign-by-sign re-transcription at full size, as done for f. 141r in b34"
+    "detail": "re-read sign by sign on 12 Nov 2026 (Brice Dudout); spelled runs without sense and 25 doubtful signs remain, and lines 143v l. 16, 145v l. 11 and 146r l. 8 were not re-checked"
    },
    {
     "item": "R9661-R9664 cipher text re-read",
@@ -367,7 +368,7 @@
     "label": "R9665, Rome, 26 Apr 1523 (ff. 437-438)",
     "transcription": "reading_r9665.txt",
     "decryption": "reading_r9665.txt",
-    "summary": "A mostly clear letter on the arrest of Cardinal Soderini of Volterra, with three short cipher runs, all read: 'Su Santidad por esta bula es declarado contra Francia' (confirmed by a contemporary margin note), the Cardinal of Ancona 'muy buen servidor de V. Mt.', and 'Su Sd. mejoro ayer'. The other records of this group (R9661-R9664) are duplicates of letters Bergenroth calendared from the court's decipherments (CSP Spain 2 nos. 534, 540, 541, 544); their ciphers are not transcribed here, and R9666 is clear.",
+    "summary": "A mostly clear letter on the arrest of Cardinal Soderini of Volterra, with three short cipher runs, decrypted (one word doubtful): 'Su Santidad por esta bula es declarado contra Francia' (confirmed by a contemporary margin note), the Cardinal of Ancona 'muy buen servidor de V. Mt.', and 'Su Sd. mejoro ayer'. The other records of this group (R9661-R9664) are duplicates of letters Bergenroth calendared from the court's decipherments (CSP Spain 2 nos. 534, 540, 541, 544); their ciphers are not transcribed here, and R9666 is clear.",
     "language": "es",
     "reading_review": {
      "grade": "B",
@@ -377,7 +378,9 @@
     },
     "reading": "R9665_reading.md",
     "translation": "R9665_en.md",
-    "read_share": 0.96
+    "read_share": 0.941,
+    "state": "read in part",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher is the three ⟦ ⟧ runs of R9665_reading.md (Su Santidad por esta bula es declarado contra Francia; [?los] al de Ancona; Su Santidad mejoro ayer), the clear words around them left out. 16 of 17 words read, [?los] doubtful (the clerk's gloss partly covered, the name's alignment tentative): 0.941, read in part. Whole excerpt, clear included, not the measure: 0.96."
    }
   ],
   "key_file": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/sessa1524/key_working.md",

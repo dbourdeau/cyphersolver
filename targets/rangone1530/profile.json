@@ -221,7 +221,8 @@
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 260 tokens, 51 types, it-cinquecento order 4: reading -2.162 per letter; random keys -3.88 (z 6.8); key annealed onto shuffled ciphertext best -2.433 (mean -2.464, z 17.2); annealer on the real text -2.404. Verdict: pass.", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher.txt (both letters, lines A1-A6 and B1-B5), reading.md (both, with translation), key key.json", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): reading.md read through. Both cipher insertions build Italian sentences with one-sign holes (A1-A5a; B1-B5); only A6 (12 signs) reads as a fragment. Audit grade C refined to B for both letters; class and fraction_read (0.928, signs in corpus words, both letters reading) unchanged.", "result": "worked", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, the cipher stretches as each reading's header names them. B (fr3082_f42): 0.952 -> 0.875 (28/32; [?]en, ruina[r], f[?], rovi[n]are), read -> read in part. A (fr3070_f81): 0.915 -> 0.778 (28/36), read in part already. Target read in part unchanged; fraction_read 0.928 (245/264 signs, measure.py) is a sign count and is kept.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 260, "types": 51, "tokens_per_type": 5.1, "score": -2.162, "nulls": {"random keys": {"n": 200, "mean": -3.88, "sd": 0.254, "max": -3.215, "z": 6.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.464, "sd": 0.018, "max": -2.433, "z": 17.2, "p": 0.1429}}, "power": -2.404, "verdict": "pass", "notes": "claimed per-occurrence score -2.079; polyphony 0.012; 4 unread tokens left out; annealer on the real text from random keys reached -2.404"}, 
   "method": "key recovered from ciphertext-only",
@@ -286,8 +287,8 @@
     "language": "it",
     "reading": "fr3070_f81_reading.md",
     "translation": "fr3070_f81_en.md",
-    "read_share": 0.915,
-    "note": "24 Oct 2026: 91.5% of the words of fr3070_f81_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.778,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the reading's header names the cipher, from \"'l fa instantia\" to \"oferte\" and from \"essendo\" to \"tenderui\"; the clear sentences around them are left out. 28 of 36 words read; holes [a m]e (2), ven[i]re, o[?], the unread stretch […] after 'le mie' (extent unknown, one word), [s]ignore, [?]icon[?]uorano (2): 0.778, read in part. Whole excerpt, clear included, not the measure: 86/94 = 0.915 (24 Oct 2026)."
    },
    {
     "doc": "fr3082_f42",
@@ -301,11 +302,12 @@
      "date": "2026-10-22",
      "note": "reading.md read through: B1-B5 build Italian sentences ('il Fregoso ... tolse fare la cosa de [?]en, mai piu volse ruina[r] le cose ben disposte in casa ... e ho una pratica di lei mi dispiacera') with two one-sign holes (de [?]en, il f[?]); 111 of 115 signs in corpus words. Audit grade C refined: the sense of the clause 'hara il f[?] da rovinare' stays approximate, the sentence frame holds."
     },
-    "state": "read",
+    "state": "read in part",
     "language": "it",
     "reading": "fr3082_f42_reading.md",
     "translation": "fr3082_f42_en.md",
-    "read_share": 0.952
+    "read_share": 0.875,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the reading's header names the cipher, 'il Fre[·]goso' and the stretch from 'tolse' to the end; the clear sentences around them are left out. 28 of 32 words read; holes [?]en, ruina[r], f[?], rovi[n]are: 0.875, read in part. Whole excerpt, clear included, not the measure: 80/84 = 0.952."
    }
   ],
   "key_file": "key.json"

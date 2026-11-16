@@ -1,6 +1,6 @@
 # Giuliano Caprile to Ferrara, 1520–1521: the 1520–21 sign cipher (catalogue 157) — NOTES
 
-Status: in progress (written up in docs/caprile1520.html; V1921 read 97.0 %; R1139 and R1136 decoded, not read: re-read 22-23 Oct 2026 (b18), partial readings 0.18 and 0.0 clean, blockers no-key-material and illegible)
+Status: in progress (written up in docs/caprile1520.html; V1921 161/166 signs (97.0 %), read in part by cipher words (37/43, 16 Nov 2026); R1139 and R1136 decoded, not read: re-read 22-23 Oct 2026 (b18), partial readings 0.18 and 0.0 clean, blockers no-key-material and illegible)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **read in part**.
 V1921 reads (six runs inside clear sentences, translated), and so do Somogyi's R1138 and V1920. **R1139 and R1136 are
@@ -157,6 +157,20 @@ episcopa[to]", "l'altro in titolo, et a questo modo excluderà …"). Details in
 - 2026-10-14: split from `caprile1519` (one key per entry). Moved here: the 1520–21 transcription, key, alignment,
   beam, regrade, look-alike, shape and V1921 files. `fraction_read` now measured over this key's letters only:
   992/1236 (80.3 %; R1139 453/505 and R1136 378/565 decoded letters inside phrases, V1921 161/166 signs).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. V1921 is the only entry
+affected. `read_v1921.md` sets the six cipher runs in **bold** inside the quoted clear sentences; the count is taken
+over the bold words only, the clear Italian and the notes and tables of the file left out.
+
+- V1921: 0.975 -> **0.860** (37 of 43 cipher words). Unread: *dicixe* and *revelta* (grade M, doubtful words; the
+  translation marks them [?]), the two minims `[..]` after *persuaso*, the sign `[.]` before *Agria* (one word each,
+  extent unknown), *e[t]* (letter supplied) and *reg[no?]* at the torn edge. The editorial gloss `[= disse?]` is not
+  a word. With *dicixe* and *revelta* counted as read: 39/43 (0.907). The 0.975 had been measured on the whole file
+  (no `## Reading` heading: notes and tables included). The sign figure, 161 of 166 (97.0%), is unchanged.
+- V1921 class: read -> **read in part**. R1138/V1920 (Somogyi's decipherment, 1.0) unchanged; R1139 and R1136 stay
+  decoded, not read. The target was already read in part; its class and fraction_read (0.117) do not change.
 
 ## Remaining gaps
 

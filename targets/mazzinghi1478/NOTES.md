@@ -116,6 +116,21 @@ MAP CXXXVII 63, an unsigned bare postscript of eight lines (catalogue 2321), is 
 "medesime nave", "a Genova", "di Genova", "francesi", "vescovo", "imbasciadori" (found 6 Nov 2026 while checking the
 key sheets). It is not transcribed or read here; its catalogue entry stays open.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now measure the read bar over the words written in cipher only. `measure.py` already counts only
+the cipher (kind C) words of `t252.tsv` and `t142.tsv`:
+
+| letter | recorded | cipher words only | state |
+|---|---|---|---|
+| 2320 (MAP CXXXVII 252) | none (state read) | 72 / 121 = 0.595 | read -> read in part |
+| 2307 (MAP LXXXIX 142) | none (state read) | 166 / 209 = 0.794 | read -> read in part |
+
+Words read with doubt count as read in `measure.py`, so both figures are upper bounds. Both entries carried state
+read with no read_share, although their own measure was far under 95%. **The change to read in part therefore comes
+from the read bar as it stood before 16 Nov 2026, not from the cipher-words rule.** The class was already read in
+part (76.1% of the signs, unchanged). Remaining gaps are unchanged.
+
 ## Remaining gaps
 
 - 92 cipher words (394 signs) that do not decode to sense, listed in `measure.py` (UNREAD) - blocker: illegible; signs

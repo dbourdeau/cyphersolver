@@ -33,7 +33,7 @@
     "image_quality": "good",
     "notes": "Made here from the four images, then checked line by line against them with the key in hand (five passes). Two rows of page 2 had been blended from two physical lines and one row was a phantom; found by tracking baselines."
    },
-   "read": "read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -217,7 +217,8 @@
    "date": "2026-09-30"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1268 tokens, 153 types, it-cinquecento order 4: reading -1.965 per letter; random keys -3.023 (z 12.3); key annealed onto shuffled ciphertext best -2.332 (mean -2.349, z 38.8); annealer on the real text -2.291. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription tx/groups.txt and decipherment tx/plain.txt; effective key written from decode.py to texts/key.tsv, with this letter's overrides key_over.json (base key ../r1874/key2.json)", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription tx/groups.txt and decipherment tx/plain.txt; effective key written from decode.py to texts/key.tsv, with this letter's overrides key_over.json (base key ../r1874/key2.json)", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): tx/R1862_reading.md marks the clear passages with ⟨ ⟩ and leaves the cipher unmarked; the clear passages were removed and the rest of the Reading section counted, 545 words. Holes: the twelve unvalued word-band codes (vo[51708]lari and [5370]i among them), eighteen [?word], co[n], [a]lcun, cardina[le], [g]loria (letters the cipher does not have), the eight words with the clerk's one-digit slips (key rebuilt here, so the slip rule does not apply), and the line P2 L22 (14 groups, sized as about 6 words, an estimate). Abbreviation expansions of the cipher's own sp (Sp[agnuo]li, Sp[agna], Spa[gna]) counted read. Result: read share 0.953 -> 0.912 (497/545; 0.920 with P2 L22 as one bare mark); R1862 and the target move from read to read in part; fraction_read (0.991 of groups valued) and fraction_coherent (0.95, line measure) unchanged.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 1268, "types": 153, "tokens_per_type": 8.29, "score": -1.965, "nulls": {"random keys": {"n": 200, "mean": -3.023, "sd": 0.086, "max": -2.789, "z": 12.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.349, "sd": 0.01, "max": -2.332, "z": 38.8, "p": 0.1429}}, "power": -2.291, "verdict": "pass", "notes": "claimed per-occurrence score -1.959; polyphony 0.005; 12 unread tokens left out; annealer on the real text from random keys reached -2.291"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -228,7 +229,7 @@
    "key extended or corrected",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.991,
   "grades": {
    "H": 0,
@@ -248,6 +249,11 @@
     "item": "one line, P2 L22 (14 groups), image-true after four independent readings and still giving no sense",
     "blocker": "no-key-material",
     "detail": "every group in it is a structural grid value, so it turns on a clerk's slip or a word outside the corpus; exhaustive single- and double-substitution searches returned nothing"
+   },
+   {
+    "item": "words counted unread in the cipher-word share (16 Nov 2026): eighteen [?word] readings, four letters the clerk left out (co[n], [a]lcun, cardina[le], [g]loria) and eight words with his one-digit code slips",
+    "blocker": "no-key-material",
+    "detail": "written so on the image (sixteen image passes); the slips are read through with a key rebuilt here, which the one-digit-slip rule does not cover; settling them needs the chancery's own key or another copy of the despatch, neither of which survives on DECODE or in the ASVe key records"
    },
    {
     "item": "the ambassador's name",
@@ -276,7 +282,9 @@
     "reading": "tx/R1862_reading.md",
     "translation": "tx/R1862_en.md",
     "language": "it",
-    "read_share": 0.953
+    "read_share": 0.912,
+    "state": "read in part",
+    "note": "Read share over cipher words only (16 Nov 2026): tx/R1862_reading.md, everything in the Reading section outside the ⟨ ⟩ clear passages, 545 cipher words, 48 unread: the twelve unvalued word-band codes (two inside words, vo[51708]lari and [5370]i), eighteen [?word] doubtful readings, four words with a letter the cipher does not have (co[n], [a]lcun, cardina[le], [g]loria), the eight words carrying the clerk's one-digit code slips (key_over.json _slips: esprimersi, confidenza, altrove, cosi, Mantova, considerati, piu, preparati; the key is rebuilt here, not the surviving period key, so README's one-digit-slip rule does not apply), and the unread line P2 L22 sized at about 6 words (14 groups at the letter's 2.4 groups per word; an estimate; 0.920 if it is counted as one bare mark). Sp[agnuo]li, Sp[agna] and Spa[gna] expand the clerk's abbreviation sp written in the cipher and count as read; the closing ellipsis is the end of the cipher, not a hole. Recorded 0.953 before (whole reading, clear passages included)."
    }
   ],
   "key_file": [

@@ -207,6 +207,12 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): READING.md for 20 March read. R8485 and R8486 build sentences; R8487 holds three short runs with holes. Per-document C overturned to B (the holes are on the short last page); claim unchanged (read in part).",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), per letter on the italic (deciphered) words of READING.md. Bare … inside the italics, the open codes .7. and 42 and an unglossed □ count as unread words; supplied [words] as holes; words marked (?) as doubtful; the italic Latin tag on f. 71r is clear text and is left out. 22 Mar (R8482-R8483) 0.982 -> 0.918; Middelburg intelligence (R8484) 0.982 -> 0.902; 20 Mar (R8485-R8487) 0.982 -> 0.949. The 0.982 was one whole-file figure, clear text and headings included, copied to all three. All three letters go from read to read in part; the class was already read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "verdict": "not applicable", "notes": "no sign-level transcription in the folder; the reading is word-level only"}, 
@@ -273,7 +279,9 @@
     "decryption": "READING.md",
     "summary": "Henry Brooke, Lord Cobham, one of Elizabeth's peace commissioners at Ostend in spring 1588, asks that ships be sent to attend on the coast, warns that the garrison is too weak and short of money and victuals, and reports Parma's new ditch from Ghent by Eeclo to Sluys, nearly navigable for his float-boats, and the threat to the town and haven. No sign-level transcription exists: the cipher runs were read word by word from crops of the DECODE images.",
     "language": "en",
-    "read_share": 0.982
+    "read_share": 0.918,
+    "state": "read in part",
+    "note": "16 Nov 2026: read share over cipher words only 0.918 (R8482-R8483: 160 cipher words read, 11 unread, 3 doubtful). Counted on the italic (deciphered) words of READING.md. A bare … inside the italics, the unread codes .7. and 42 and an unglossed □ count as one unread word each, a supplied [word] as one hole per word, and a word marked (?) as doubtful; the codes 15 and □ [the States], read from context, count as read. The 0.982 recorded before was one figure for the whole file, the clear text, headings and the Latin tag included, copied to all three entries. Under the 95% bar, so read in part."
    },
    {
     "doc": "middelburg",
@@ -282,7 +290,9 @@
     "decryption": "READING.md",
     "summary": "An enclosed intelligence report in another hand: Grenier's intrigue in clear, then in cipher advice that the ships be well guarded with two or three pinnaces in the channel, and news that a Jesuit (surname read Bastune?) has been sent post into Italy. No sign-level transcription exists.",
     "language": "en",
-    "read_share": 0.982
+    "read_share": 0.902,
+    "state": "read in part",
+    "note": "16 Nov 2026: read share over cipher words only 0.902 (R8484: 46 cipher words read, 5 unread; the italic Latin tag 'Non semper temeritas est felix' is clear text and is left out). Counted on the italic (deciphered) words of READING.md. A bare … inside the italics, the unread codes .7. and 42 and an unglossed □ count as one unread word each, a supplied [word] as one hole per word, and a word marked (?) as doubtful; the codes 15 and □ [the States], read from context, count as read. The 0.982 recorded before was one figure for the whole file, the clear text, headings and the Latin tag included, copied to all three entries. Under the 95% bar, so read in part."
    },
    {
     "doc": "20mar",
@@ -295,14 +305,15 @@
     "decryption": "READING.md",
     "summary": "Cobham reports new companies at Oudenburg and stone and fagots coming by water from Eeclo, suspects an attempt on Ostend and asks to be removed to a safer place; he would think himself unhappy to be a means to conclude an irreligious peace, and argues against handing the prisoners Pigot and Barney over to the States. No sign-level transcription exists.",
     "language": "en",
-    "state": "read",
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude (reading audit)",
      "date": "2026-10-22",
      "note": "Overturns the per-document C. R8485 and R8486, the two full pages of the letter, read as English sentences with a few ellipses; R8487 is the end of the letter with three short cipher runs and holes (\"hath assured means to a special service, ... being ... as I wrote unto you\"), a small share of the document; its holes are listed as gaps."
     },
-    "read_share": 0.982
+    "read_share": 0.949,
+    "note": "16 Nov 2026: read share over cipher words only 0.949 (R8485-R8487: 113 cipher words read, 4 unread, 2 doubtful; the bare … at the end of the italic 'The other …' on f. 72r is one of the four). Counted on the italic (deciphered) words of READING.md. A bare … inside the italics, the unread codes .7. and 42 and an unglossed □ count as one unread word each, a supplied [word] as one hole per word, and a word marked (?) as doubtful; the codes 15 and □ [the States], read from context, count as read. The 0.982 recorded before was one figure for the whole file, the clear text, headings and the Latin tag included, copied to all three entries. Under the 95% bar, so read in part."
    }
   ],
   "key_file": "key.tsv"

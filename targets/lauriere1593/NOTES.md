@@ -2,9 +2,10 @@
 
 Status: read in part. Three letters in La Verrière's own key, Tomokiyo's Nevers key no. 57 (BnF fr. 3995
 ff. 102–103, endorsed "Mons^r de La Verriere … Chartres 1593 fevrier"): fr. 3625 no. 55 (Châlons, 9 Jul 1593) read in
-full (85/86; identified by setsunaatto, issue 13); fr. 3625 no. 10 (Courgenay, 13 Jul 1593) reproduces the office's
-interlinear decipherment in a blind test (setsunaatto, PR 15); fr. 3985 f. 58 (Poissy, 12 Aug 1593) 235 of 248
-tokens (94.8%), one token under the read bar. Together 320 of 334 counted tokens (95.8%).
+full (85/86 groups; 64 of 66 cipher words, 97.0%; identified by setsunaatto, issue 13); fr. 3625 no. 10 (Courgenay,
+13 Jul 1593) reproduces the office's interlinear decipherment in a blind test (setsunaatto, PR 15), 148 of 167 cipher
+words (88.6%); fr. 3985 f. 58 (Poissy, 12 Aug 1593) 235 of 248 tokens (94.8%), 109 of 117 cipher words (93.2%), under
+the read bar, which counts cipher words (16 Nov 2026). Together 320 of 334 counted tokens (95.8%).
 
 Split on 14 Oct 2026 from `champagne1590` under the one-key rule (George Lasry, 14 Oct 2026). Until then these letters
 were filed with the Champagne news-letters of 1590–91 (catalogue item 30), which use other codes:
@@ -283,6 +284,28 @@ No. 55's entry pointed at `reading_3625_55.txt`, a commented sign-by-sign file t
 deciphered runs are now written out as sentences in `texts/n55_reading.md` (+ `n55_en.md`), each after the clear words
 that lead into it, spelling as key no. 57 gives it. v2_score: explicit holes 0.714 (5/7), hole rate 0.067; plain 0.429
 (1593 spelling: *ung*, *atandre*, *prandre*). The only holes are untranscribed clear text. Keeps read, grade B.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only.
+
+| Document | before | how cipher was separated | cipher words | unread | after |
+|---|---|---|---|---|---|
+| fr. 3985 f. 58 | 0.957 | the runs in ⟨ ⟩ of `fr3985_f58/f3985_58_reading.md`, less Laverrière's clear words in *italics* inside run A | 117 | 8 | **0.932** |
+| fr. 3625 no. 10 | 0.904 | `texts/n10_reading.md` holds only the cipher runs (the clear text is not transcribed) | 167 | 19 | **0.886** |
+| fr. 3625 no. 55 | 0.933 | `texts/n55_reading.md` sets unmarked clear lead-ins before each run, so the runs were taken from the `=` lines of `reading_3625_55.txt`, with *come* (347) and the *pour* of "304 9P" | 66 | 2 | **0.970** |
+
+- f. 58 unread: port[ée], [340], son[…], [?], [6 lam 340], [28 25 202], lettre[s], [du]. A code word of the key
+  ([prince de Conty], [Pape] ...) counts as one word (0.936 if counted by its plaintext words); the two unsized group
+  marks are counted as one word each, extent unknown (three groups each; 0.901 if each is counted as three).
+- No. 10 unread: eight [?] signs not on the key, the gloss-supplied [?nous avons] (two words), [?Majesté], [?sa], the
+  part-word holes pr[i]s, traiter[o]it, [?atend]re, ceu[x], the supplied [le], and *tout hault* (344 234, which the
+  sense wants as *son*; two words, not a one-digit slip).
+- No. 55 unread: donne[r]ont and l'anpescheman[t]: the letters are missing in the figures themselves, and a letter the
+  cipher does not have counts as a hole (README Conventions), though the reading's note calls them "not unread". The
+  0.933 had counted the clear lead-ins and the `[…]` marks for clear text not transcribed.
+- Classes: f. 58 stays read in part (it was already under the bar in `documents[]`); no. 10 stays read in part;
+  **no. 55 moves from read in part to read**. The target stays read in part. The token figure (320 of 334) is unchanged.
 
 ## Remaining gaps
 
