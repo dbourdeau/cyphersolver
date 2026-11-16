@@ -87,7 +87,7 @@ The contributor's own reading with notes per passage is `aaymeloglu/reading.md`;
 
 ## Remaining gaps
 
-- The source of Benzoni's quotation for 68r ("orine" tinte di "sangue", "sano et gagliardo") - blocker: needs-physical-access; the candidate texts (a clear minute in Federico's copialettere, ASMn, Archivio Gonzaga; a decipherment among Castiglione's papers in the BAV; La Rocca's notes) are not online as far as checked; Vat. lat. 8211 fr. 1-166 checked, no decipherment of 68r (Escalation, print)
+- The source of Benzoni's quotation for 68r ("orine" tinte di "sangue", "sano et gagliardo") - blocker: needs-physical-access; the candidate texts (a clear minute in Federico's copialettere, ASMn, Archivio Gonzaga; a decipherment among Castiglione's papers in the BAV; La Rocca's notes) are not online as far as checked; Vat. lat. 8211 frames 1-113 and 190-209 checked, no decipherment of 68r (Escalation, print)
 - The ASMn original of f. 298 (Suardino, Archivio Gonzaga, Carteggio estero: Spagna) may carry a chancery decipherment; likewise Capino's letter of 198r (Carteggio estero: Milano) - blocker: needs-physical-access; not online, not seen; it would give the first values above grade S
 - Victorie in the heading of 298r (key output `uf[n]fctorie`; the minim cluster after the crossed p shows three minims, not the four of `m i`) - blocker: illegible; the full-size image does not settle the cluster; the court's presence at Vitoria makes the place plausible
 - `l o` reads t in most words but l in five (canceltere twice, lattro, caualto, alti) - blocker: open-codes; no graphic rule found to separate the two; a doubling device is speculation; those words are lenient
