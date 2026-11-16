@@ -74,6 +74,23 @@ The texts are English, so there is no translation. Strict figures (`measure_stri
 - **The two copies** (`alignment.tsv`). Each has slips the other does not: p. 737 has *drectly*, *dince* (18.3 for 18.13, marked x on the page), *Sorl*; p. 227 has *rtports* (16.16 for 16.10). An ink blot on p. 227 covers three numbers of *sixteenth*, which p. 737 gives. Both copies share 14.21.
 - **Who read it before us.** Clinton's office, if a copy arrived; Haldimand's clerk wrote the clear letterbook copy. **James Lovell** read it during the war, by analysis, in April 1782: his signed letter to Robert R. Livingston of 19 April 1782, his rebuilt table of the title-page lines and his clear text are in item 51 vol. 2 pp. 221-225 (catalog images 185-186; `lovell_1782/LOVELL.md`, added 14 Nov 2026). His table agrees with our key in 147 of the 168 cells he lettered; it lacks the signature cells 6.11 and 11.1 (he conjectured the surname "F—"). The translation on vol. 1 p. 738 is right except for "any other" for "the least" (lines 12-13, used only there), "would" for "will", a dropped "the" and the signature guessed as "(perhaps) A. F.". These are the errors of Lovell's table (12.3-5 "any", 13.17-21 "other", 14.5/14.21/15.4 "would"), so p. 738 is his solution, copied with the signature guessed; its own hand is not identified (a rougher hand than his p. 223). Fold3's description says "with translation"; no printed text was found (two Founders Online searches found nothing; the 27 May 1781 intercept in James Clinton to Washington, 30 May 1781, is a different letter, to Haldimand).
 
+## An earlier letter: Clinton to Haldimand, 22 October 1779 (added 16 Nov 2026)
+
+`clinton_1779-10-22/` (Brice Dudout, with Claude, claude-opus-5-5, on Andrew Beling's identification of the page). The
+letter of #359: B.147 pp. 120-122 (frames 758-760), cipher of one letter in three pages, with its clear copy pp. 134-135.
+It is spelled throughout on the same title page: no word codes yet in 1779. Lines 1, 6 and 9 are counted one or two
+places short of the 1778 lineation (as if *Permision*, *OFICERS*); edition or clerk's count is not known.
+
+- **Test.** Key built on p. 120 only (1778 page, per-line variant with up to two letters dropped, observed cells), frozen,
+  then one pre-registered measurement on p. 122 with its P.S., 292 groups never scored: **0.979** of groups agree with the
+  clear copy, best of 200 within-line shuffled keys 0.257 (bar 0.85 and control + 0.30). Our 9 Nov table, learned without
+  the page, had reached 0.672. On the 55 held-out groups whose cells were never seen in training, the Army List variant
+  alone gives 50.
+- **Reading.** Both transcribed pages read as sentences against the clear copy; six key-miss letters marked. *Matross of
+  the Artillery* (our 9 Nov notes had misread the clear copy "Mohawk"). The cipher has *favored* for "honored", *I am
+  disappointed in my* for "disappointed as my", *move* for "movements". p. 121 (the middle) is not transcribed, so the
+  letter is read in part.
+
 ## Freeze disclosure
 
 - The order of events rests only on our own AI agents' files and file times: freeze 23:44 UTC on 12 Nov 2026 (`preclear/FREEZE.json`), the 25 Sep clear-copy images saved two to three minutes later. Nothing outside the machine dates it.
@@ -138,6 +155,7 @@ Worked after the merge of PR #579 by our AI agent (Andrew Beling, with AI agents
 - [x] known-keys: Army List title page key (Haldimand's key sheet, B.147 pp. 402-405) applied unchanged
 - [x] print: Brymner's 1885 and 1887 calendars (summaries), Michigan Pioneer and Historical Collections vols. 9-11, 19-20 (Clinton 22 Feb printed in full in vol. 20; the Carleton letters not found) and the HMC Royal Institution calendar vol. III (headings only) checked, 13 Nov 2026; on 14 Nov the other manuscript copies: B.45 pp. 57-61, B.148 p. 89, Q series vol. 20 pp. 384-385 read; CO 5/107 seen in part (Carleton's No. 37 of 15 Nov 1782, ff. 283-315, clear copies only; by AI agents from a copy saved at the Library of Congress on 14 Nov 2026, no person has checked it)
 - [x] key-rebuild: code table rebuilt from the clear copies and tested on a held-out letter (55 of 58); its layout found on 14 Nov (letter columns), books screened (`key/books_tried.tsv`)
+- [ ] Clinton 22 Oct 1779: p. 121 (frame 759) to transcribe; the middle of the letter, clear on p. 134
 - [n/a] retry: the open pieces need the British Library originals or the printed word list, not another pass over the same copies
 
 ## Log
@@ -149,3 +167,4 @@ Worked after the merge of PR #579 by our AI agent (Andrew Beling, with AI agents
 - 2026-11-14: James Lovell's 1782 solution of the 16 March letter found (PCC item 51 vol. 2 pp. 221-225) and compared cell by cell with our key; first-reader credit corrected (Andrew Beling, with AI agents).
 - 2026-11-14: follow-up on the three gaps: second cipher copy (fo. 125) transcribed and collated, other copies found (B.45, B.148 p. 89, Q 20), code layout found and books screened; held-out structure test written down but not runnable (Andrew Beling, with AI agents).
 - 2026-11-15: CO 5/107 seen in part, by AI agents from a copy saved on site at the Library of Congress on 14 Nov 2026 in Adam Matthew's *Colonial America*; licensed images, not included; no person has checked it: Carleton to Townshend, No. 37, 15 Nov 1782, with fourteen enclosures (ff. 283-315), wholly in clear; office copies of the cipher letters of 26 Oct (f. 310), 31 Oct (f. 314, Quebec's 1 Nov) and 12 Nov (f. 312) match the Quebec decodes with a few word differences; statements that CO 5/107 was not seen corrected; no reading, count or key value changed (Andrew Beling, with AI agents).
+- 2026-11-16: Clinton to Haldimand, 22 Oct 1779 (B.147 pp. 120-122) tested on the Army List page: key learned on p. 120, one held-out measurement on p. 122, 0.979 against 0.257 (Brice Dudout, with Claude, claude-opus-5-5).

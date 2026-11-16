@@ -127,6 +127,37 @@
         "image_quality": "good",
         "notes": "p. 227 read twice (top down, then bottom up on other crops) before any key or clear text; p. 737 read once afterwards. 296 line.place cells counted by test/parse.py (the generic measure gives 315 because it counts each written line number). An ink blot on p. 227 hides three numbers that p. 737 gives."
       }
+    },
+    {
+      "id": "clinton_1779-10-22",
+      "read": "read in part",
+      "shelfmark": "British Library Add MS 21807; witness LAC MG21 B.147 pp. 120-122 (fo. 105-106), clear copy pp. 134-135 (reel H-1649 frames 758-760, 772-773)",
+      "date": "22 Oct 1779",
+      "year": 1779,
+      "country": "Great Britain",
+      "route": "Sir Henry Clinton, New York -> Frederick Haldimand, Quebec (received by Halifax 18 Jan 1780; a second copy by Niagara, May 1780)",
+      "language": "English",
+      "pages": 3,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "Clear copy of the whole letter, B.147 pp. 134-135 (fo. 113-114v), margin 'See a cypher copy transcribed in p. 120 supra'",
+        "partial": false
+      },
+      "length": {
+        "tokens": 662,
+        "unit": "letters",
+        "measured": true,
+        "file": "clinton_1779-10-22/test/frozen/transcription_758.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/758",
+        "image_quality": "good",
+        "notes": "pp. 120 and 122 transcribed once each on crops on 9 Nov 2026, before the clear copy was read and before any key (hashes in test/SHA256SUMS); 370 + 292 written groups. p. 121 (frame 759, the middle of the letter, about 8 columns) not transcribed. tokens = groups written on pp. 120 and 122 (370 + 292); the file named is p. 120, p. 122 is transcription_760.txt beside it."
+      }
     }
   ],
   "system": {
@@ -379,6 +410,16 @@
       "kind": "literature search",
       "what": "James Lovell's working on the 16 March 1782 letter found in PCC item 51 vol. 2 (catalog images 185-186): signed letter to Livingston of 19 Apr 1782, his rebuilt table of 18 title-page lines and his clear text. His table agrees with our key in 147 of 168 lettered cells (118 of 134 cells the letter uses); his two wrong words come from his table; the vol. 1 p. 738 translation is his text. Our decode was made before these sheets were seen.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "hypothesis",
+      "what": "Clinton to Haldimand, 22 Oct 1779 (B.147 pp. 120-122): the line-place groups tested as the Army List title page of key/. The 1778 lineation gives 235 of 364 training letters on p. 120; lines 1, 6 and 9 are counted one or two places short. Per-line variants and observed cells learned on p. 120 only, key frozen (sha256 d7618ef8...7e37), then one pre-registered measurement on p. 122 with its P.S. (292 groups, never scored): 0.979 against 0.257 for the best of 200 keys shuffled within lines; bar 0.85 and control + 0.30 (clinton_1779-10-22/README.md). An earlier cell table learned without the page (9 Nov, issue #359) had reached 0.672.",
+      "result": "worked",
+      "technique": [
+        "key matching",
+        "crib testing"
+      ]
     }
   ],
   "outcome": {
@@ -458,6 +499,18 @@
         "role": "prior solution",
         "note": "Haldimand to Clinton, 16 Mar 1782: Haldimand's letterbook copy (B.148 p. 21), and James Lovell's solution by analysis, April 1782 (his letter to R. R. Livingston of 19 Apr 1782, rebuilt key table and clear text, PCC item 51 vol. 2 pp. 221-225; copied with the signature guessed on vol. 1 p. 738), right except for four small slips.",
         "date": "1782"
+      },
+      {
+        "who": "dudout",
+        "role": "solution",
+        "note": "Clinton to Haldimand, 22 Oct 1779: transcription of pp. 120 and 122, the 1779 count of the Army List page (lines 1, 6, 9) and the held-out test on p. 122 (0.979 against 0.257), with Claude (claude-opus-5-5); on Andrew Beling's identification of the page.",
+        "date": "2026-11-16"
+      },
+      {
+        "who": "contemporary",
+        "role": "prior solution",
+        "note": "Clinton to Haldimand, 22 Oct 1779: the clear copy kept with the cipher at Quebec, B.147 pp. 134-135.",
+        "date": "1779"
       }
     ],
     "gaps": [
@@ -480,6 +533,11 @@
         "item": "The printed word list behind the codes",
         "blocker": "no-key-material",
         "detail": "No candidate book found; DIFFERENCES.md lists the coordinates a candidate must fit."
+      },
+      {
+        "item": "Clinton 22 Oct 1779, p. 121 (frame 759)",
+        "blocker": "not-attempted",
+        "detail": "The middle of the letter (about 8 columns) is not transcribed; its clear text is on p. 134."
       }
     ],
     "texts": [
@@ -552,6 +610,24 @@
           "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
           "date": "2026-11-15",
           "note": "Read as English sentences: complete and coherent (65 of 66 words). Compared with the images: on NARA 408459 (PCC 51 vol. 2 p. 227, sha256 as in sources.json), the first column's groups agree with transcription_pcc51v2p227.txt, and the clear words in the cipher ('will I hope', 'I have not', 'make me', 'Pleasure', 'but by', 'the same') fall where the reading puts them. The American translation of 1782 (NARA 407691, p. 738) gives the same letter ('A few days ago I wrote more fully. This will I hope go directly to you ...'), with small wording differences (any other / the least; would / will)."
+        }
+      },
+      {
+        "doc": "clinton_1779-10-22",
+        "transcription": "clinton_1779-10-22/test/frozen/transcription_758.txt",
+        "decryption": "clinton_1779-10-22/decryption.tsv",
+        "reading": "clinton_1779-10-22/reading.md",
+        "contemporary": "clinton_1779-10-22/CLEAR_COPY.md",
+        "state": "read in part",
+        "language": "en",
+        "read_share": 1.0,
+        "summary": "Clinton to Haldimand: no exchange of the Convention Army; the West Indies reinforcement failed and the three regiments sent to Quebec were scattered; Georgia in danger, so a force will go against South Carolina; asks for Indian raids on the Virginia frontier while a fleet acts in the Chesapeake. P.S.: dispatches received by the Defiance.",
+        "note": "read_share over the two transcribed pages (p. 120: 82 words, p. 122: 60 words): every word reads; six letters inside words are key misses marked {x} (reading.md). 'read in part' because p. 121 is not transcribed. Strict held-out letter score on p. 122: 0.979.",
+        "reading_review": {
+          "grade": "B",
+          "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+          "date": "2026-11-16",
+          "note": "Read as English sentences against the clear copy pp. 134-135: coherent on both transcribed pages, six key-miss letters marked. B, not A: p. 121 is not transcribed, and p. 120 is read on a key partly learned from it. Images of pp. 120 and 122 not re-read for this review."
         }
       }
     ],
