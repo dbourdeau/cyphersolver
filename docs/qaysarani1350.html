@@ -155,8 +155,16 @@ damaged, I where it is inferred):</p>
 <p>The signs read ق and خ differ only at the top and come once each, in قد and وخدي. If they are one sign, the second
 word is وقدي, &ldquo;and my stature&rdquo;, which reads less well. The mark over the first sign of the gloss is small, and
 its و comes from the word.</p>
-<p>The key was not put through the project&rsquo;s statistical test: there is no Arabic language model in the repository,
-and six signs occur once. The check is the metre, the rhyme and a key in which no sign has two values. The signs were not
+<p>Besides the metre, the rhyme and a key in which no sign has two values, the reading was put through the project&rsquo;s
+statistical test (<code translate="no">docs/_validate.py</code>), with a letter model built for it from 2.17 million letters of
+writers of the compiler&rsquo;s own time and circle: the diwans of Ṣafī al-Dīn al-Ḥillī and Ibn Nubāta, two books of
+al-Ṣafadī (love verse and the letters he exchanged with other secretaries) and al-ʿUmarī&rsquo;s chancery manual, from the
+OpenITI corpus. The reading scores &minus;2.537 per letter. Keys of the same shape at random score &minus;4.901 on average
+(the reading is 5.3 standard deviations above them), and keys fitted by the same solver to the signs shuffled score
+&minus;2.881 at best on average and &minus;2.745 at their best (3.4 standard deviations below the reading). That is a pass,
+but a narrow one, and the text is short: run again with three other random seeds, the test gave one &ldquo;weak&rdquo; (2.7
+standard deviations) and two passes, and in all four runs the reading scored above every fitted key. A fake reading fitted to
+the shuffled signs, run as a control, does not pass. The signs were not
 compared with the other alphabets of the volume. Two searches for the exact wording of the verses found no other copy,
 so it is not known whether they are Ibn al-Qaysarani&rsquo;s own.</p>
 

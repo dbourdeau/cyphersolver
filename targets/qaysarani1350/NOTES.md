@@ -88,7 +88,11 @@ awake, though my eyelids are sound, and did not sleep; she slept and was never w
 - The key is one-to-one: 22 signs, 22 different letters; no sign has two values.
 - The compiler's remark under the cipher says the writer "made the lam-alif ..."; the reading has exactly one
   lam-alif sign, in الاجفان.
-- No statistical validation: `lang/` has no Arabic model, and six signs occur once.
+- Statistical validation (16 Nov 2026), `docs/_validate.py` with the new `lang/` model `ar-mamluk` (2.17 M letters: the
+  diwans of Safi al-Din al-Hilli and Ibn Nubata, al-Safadi's Kashf al-hal and Alhan al-sawaji', al-Umari's al-Ta'rif; OpenITI),
+  order 4, `validation.tsv`: reading -2.537 per letter; random keys -4.901 (z 5.3); keys refitted to the shuffled signs mean
+  -2.881, best -2.745 (z 3.4): **pass**, narrowly. Seeds 2-4: weak (z 2.7), pass (5.7), pass (6.3); in all four runs the
+  reading beats every refit. Negative control (`--control`): underdetermined (z 0.5). Short text: 89 signs, 4 tokens per type.
 - Not checked against the solved alphabets on ff. 1r-106r: no sibling alphabet was compared.
 
 ## Doubtful readings (grade M or I)

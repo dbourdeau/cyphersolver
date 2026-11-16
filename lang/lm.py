@@ -21,6 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 CACHE = os.path.join(HERE, 'cache')
 D = 0.75
+ARABIC = 'ابتثجحخدذرزسشصضطظعغفقكلمنهوية'   # the 28 letters and ta marbuta (norm scheme 'arabic')
 
 # ---------------------------------------------------------------- normalisation
 
@@ -36,7 +37,16 @@ def norm(text, scheme='modern', spaces=True):
     early    early-modern spelling merged as the cipher clerks wrote it: j->i, v->u (and w kept)
     latin    as early, plus k->c, y->i, w->u (classical/humanist Latin)
     enigma   German in Enigma conventions: umlauts ae/oe/ue, sz, ch/ck -> q, x for space
+    arabic   Arabic script, reduced to what a letter cipher writes: vowel signs, shadda, sukun and tatweel dropped;
+             hamza dropped (alif with hamza or madda and alif wasla -> alif, waw/ya with hamza -> waw/ya, bare
+             hamza removed); alif maqsura -> alif; ta marbuta kept. Alphabet: 29 letters (ARABIC).
     """
+    if scheme == 'arabic':
+        t = re.sub('[ً-ٰٟـ]', '', text)
+        t = re.sub('[أإآٱ]', 'ا', t)
+        t = t.replace('ى', 'ا').replace('ؤ', 'و').replace('ئ', 'ي').replace('ء', '')
+        t = re.sub('[^' + ARABIC + ']+', ' ', t).strip()
+        return t if spaces else t.replace(' ', '')
     t = text.lower()
     if scheme == 'enigma':
         t = t.replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue').replace('ß', 'sz')
@@ -50,6 +60,8 @@ def norm(text, scheme='modern', spaces=True):
     return t if spaces else t.replace(' ', '')
 
 def alphabet(scheme='modern', spaces=True):
+    if scheme == 'arabic':
+        return (' ' if spaces else '') + ARABIC
     drop = {'early': 'jv', 'latin': 'jvkyw'}.get(scheme, '')
     return (' ' if spaces else '') + ''.join(c for c in 'abcdefghijklmnopqrstuvwxyz' if c not in drop)
 

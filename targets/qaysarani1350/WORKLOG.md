@@ -11,3 +11,5 @@
 - 2026-11-16 reading: صحاح in line 5 from sense (sound against sick eyelids) and metre; key complete, 22 signs.
 - 2026-11-16 context: ff. 105r-106r viewed; f. 106r has the compiler's remark on another message that lam-alif was made one letter.
 - 2026-11-16 literature: two web searches for the verses (exact phrases); no match.
+- 2026-11-16 model: built lang/ model ar-mamluk (arabic normalisation added to lang/lm.py) from five OpenITI texts of 1320-1370; verses score -1.87 and -2.07 per char, gibberish -8.29.
+- 2026-11-16 validation: docs/_validate.py with ar-mamluk: pass (z 5.3 random keys, z 3.4 shuffled refit). Seeds 2-4: weak, pass, pass. Control: underdetermined.
