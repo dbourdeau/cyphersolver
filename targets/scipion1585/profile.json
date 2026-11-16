@@ -14,9 +14,10 @@
       "cleartext_in_document": "interspersed",
       "plaintext": {
         "location": [
-          "interlinear"
+          "interlinear",
+          "separate folio"
         ],
-        "source": "contemporary interlinear decipherment on the cipher pages (seen in our spot-check)",
+        "source": "interlinear decipherment on the cipher pages of fr. 4696 (seen in our spot-check and, on f. 5r, in issue #708); for fr. 4698, period decipherments by Nevers's clerk of 1590 in BnF fr. 4702 (Gallica btv1b530546654): ff. 94r-95r = fr. 4698 ff. 30r-31r, f. 97r-v = f. 104r (also f. 108r = f. 34r; fr. 4698 f. 105r = f. 17r-v), as linked, transcribed and edited by Paolo Rosson (pangoleen/cipher-readings, gonzaga-1590); f. 94r seen on Gallica 16 Nov 2026",
         "partial": true
       },
       "length": {
@@ -57,7 +58,7 @@
   "conditions": {
     "prior_solution": {
       "exists": "in archive",
-      "where": "contemporary interlinear decipherment on the cipher pages (seen in our spot-check)",
+      "where": "fr. 4696: contemporary interlinear decipherment on the cipher pages. fr. 4698 ff. 30r-31r, f. 104r: Nevers's clerk's decipherments of 1590 in BnF fr. 4702 ff. 94r-95r, 97r-v, and Paolo Rosson's modern reading and rebuilt code (github.com/pangoleen/cipher-readings, folder gonzaga-1590; commits dated 3-4 Oct 2026 by his own record, push dates not readable here; CC BY 4.0). Lasry's report (10 Oct 2026) does not cite Rosson or fr. 4702; whether his models had seen it is unknown. Found by this project: listed unmatched in the cryptoole harvest of 14 Oct 2026, recognised 16 Nov 2026 through issue #708 (Brice Dudout), after Lasry's report was presented here.",
       "found": "after reading"
     },
     "inputs": [
@@ -101,11 +102,53 @@
       "kind": "verification",
       "what": "Reading audit (George Lasry's sentence test, 22 Oct 2026): lasry_entry.md read. The three-line excerpt reads as Italian sentences with ? holes and has his translation (reviewed B); the rest of his partial decryption is not held here. fraction_read 0.373 (elements identified) -> ~0.02 (held text that reads, estimated); class already solved unchanged.",
       "result": "partial",
-      "technique": ["language-model scoring", "statistical test"]
+      "technique": [
+        "language-model scoring",
+        "statistical test"
+      ]
     },
-    {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-    {"date": "2026-10-24", "kind": "literature search", "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 4696 / 4698 — graphical cipher, ff5r/62r–v, ff30r–): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.", "result": "failed"},
-    {"date": "2026-10-24", "kind": "reading", "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.849 (whole), 0.689 (deciphered passages); state read in part.", "result": "partial"}
+    {
+      "date": "2026-10-24",
+      "kind": "verification",
+      "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "literature search",
+      "what": "George Lasry's permission of 24 Oct 2026 covers his decryptions on DECODE. Searched the full DECODE record list (10,606 records, fetched 24 Oct 2026 with the project cookie) for this shelfmark (Français 4696 / 4698 — graphical cipher, ff5r/62r–v, ff30r–): no record, so DECODE holds no decryption of it; his full text exists only in his BnF cipher research report files. The excerpt state is kept.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "reading",
+      "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.849 (whole), 0.689 (deciphered passages); state read in part.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "literature search",
+      "what": "Harvest of Cryptoole records (research/cryptoole/candidates.md) listed Paolo Rosson's gonzaga-1590 page (row FR1586-3) with 'Already here' left blank: the page was not matched to this folder, although it covers the same cipher and the fr. 4698 pages in Lasry's entry. Prior art missed.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "literature search",
+      "what": "Issue #708 (Brice Dudout) pointed to Rosson's folder gonzaga-1590 (pangoleen/cipher-readings; commits 3-4 Oct 2026 by his record): period decipherments of fr. 4698 ff. 30r-31r and f. 104r by Nevers's clerk in BnF fr. 4702 ff. 94r-95r and 97r-v, his editions and translations, a rebuilt word code (448 values in 14 lists) and symbol alphabet, a test on fr. 4696 (452 of 463 units, 97.6%). Read in a local clone; the GitHub API for his repository was not available, so push dates are not known.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Model checks of Rosson's folder (no person): tables/lists_v4.tsv holds 448 data rows in 14 lists; the fr. 4696 figure adds up (387 + 21 + 44 = 452 of 463); Gallica fr. 4702 f. 94r seen, a clear Italian decipherment in a clerk's hand, first lines matching his transcription; his edition of 21 Jan 1590 contains the run Lasry reads on f. 30v ('richiedermi ... prieghi'). Not checked: unit-by-unit alignments, symbol alphabet, shuffle test, whether Lasry's 24 nomenclature values are a subset of his lists, f. 104r against the clerk's text.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "reading",
+      "what": "Recorded the period decipherments of fr. 4698 ff. 30r-31r and f. 104r (fr. 4702 ff. 94r-95r, 97r-v), as edited by Rosson, as a second reading of those pages next to Lasry's; nothing was deciphered or re-measured here (no cipher-words-only share).",
+      "result": "partial"
+    }
   ],
   "outcome": {
     "class": "read in part",
@@ -117,6 +160,13 @@
         "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
         "basis": "George Lasry, BnF cipher research, 10 Oct 2026"
+      },
+      {
+        "label": "fr. 4698 ff. 30r-31r (21 Jan 1590) and f. 104r (sheet with the letter of 16 Feb 1590), read from the period decipherments",
+        "records": "fr. 4698 ff. 30r-31r, f. 104r",
+        "method": "read from existing decipherment",
+        "extent": "partial",
+        "basis": "Nevers's clerk of 1590 (BnF fr. 4702 ff. 94r-95r, 97r-v), edited and translated by Paolo Rosson (CC BY 4.0), by his record 3-4 Oct 2026; model checks here only (f. 94r seen, one run compared), no unit-by-unit comparison and no read share measured here, so extent is not set to complete; his editions are linked from NOTES.md and the page, not listed in outcome.texts (an entry there needs a translation and a reading_review by a reader, and none was made here)"
       }
     ],
     "method_basis": "Method category from our spot-check of Lasry's report (ciphertext-only: No).",
@@ -125,7 +175,7 @@
     ],
     "fraction_read": 0.689,
     "fraction_read_method": "measured",
-    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.689 (bare ? counted as unread); whole text 0.849 (v10_relabel.measure).",
+    "fraction_read_source": "24 Oct 2026: deciphered passages of George Lasry's Readable text (lasry/report/readable.md) 0.689 (bare ? counted as unread); whole text 0.849 (v10_relabel.measure). Not re-measured on 16 Nov 2026: Rosson's editions were not measured here (no cipher-words-only read share); the figure above is Lasry's text only.",
     "verification": [
       "contemporary decipherment"
     ],
@@ -137,9 +187,30 @@
         "note": "with ChatGPT Astra 6 and Anthropic Opus 5.5; BnF cipher research",
         "date": "2026-10-10",
         "source": "BnF cipher research (report sent to Daniel Bourdeau, 13 Oct 2026)"
+      },
+      {
+        "who": "rosson",
+        "role": "prior solution",
+        "note": "linked fr. 4698 ff. 30r-31r and f. 104r to the clerk's decipherments in fr. 4702, edited and translated them, rebuilt the cipher (448 values in 14 lists, symbol alphabet) and tested it on fr. 4696; made with Claude, by his own README; his editions of the clerk's decipherments are the basis of the added part for fr. 4698 ff. 30r-31r and f. 104r",
+        "date": "2026-10",
+        "source": "https://github.com/pangoleen/cipher-readings/tree/main/gonzaga-1590 (commits dated 3-4 Oct 2026 by his record)"
+      },
+      {
+        "who": "contemporary",
+        "role": "prior solution",
+        "note": "Nevers's clerk of 1590: the decipherments in BnF fr. 4702 ff. 94r-95r, 97r-v (also f. 108r, and fr. 4698 f. 105r)",
+        "date": "1590",
+        "source": "BnF fr. 4702, Gallica btv1b530546654"
+      },
+      {
+        "who": "dudout",
+        "role": "pointer",
+        "note": "found Rosson's folder as prior art for this target",
+        "date": "2026-11-16",
+        "source": "issue #708"
       }
     ],
-    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Only 1147/3078 groups identified (37%); 4698 letter mostly unread. Interlinear on f5r gave the key. Two volumes/senders bundled in one entry.",
+    "notes": "Result by George Lasry, not by this project. Spot-check 13 Oct 2026 (batch A): partly confirmed. Only 1147/3078 groups identified (37%); 4698 letter mostly unread. Interlinear on f5r gave the key. Two volumes/senders bundled in one entry. Prior art found 16 Nov 2026 (issue #708): Paolo Rosson's gonzaga-1590 (3-4 Oct 2026 by his record) reads fr. 4698 ff. 30r-31r and f. 104r from the clerk's decipherments in fr. 4702, names the sender as Cardinal Scipione Gonzaga and rebuilds a 448-value code; this folder claims no decipherment of its own, so nothing is withdrawn. Model checks only.",
     "texts": [
       {
         "doc": "scipion1585",
@@ -162,14 +233,19 @@
     ],
     "gaps": [
       {
-        "item": "Français 4696 ff5r, 62r-v; 4698 ff30r-31r, 104r: unread groups between the deciphered runs",
-        "blocker": "no-key-material",
-        "detail": "left as George Lasry marks them; no other key or plaintext known; his decipherment is the only one"
+        "item": "Français 4698 ff30r-31r, 104r: Lasry's unread groups between his deciphered runs",
+        "blocker": "open-codes",
+        "detail": "the plain text exists (the clerk's decipherments in fr. 4702, edited by Rosson), but Lasry's Readable text has not been compared unit by unit with Rosson's alignment tables, so which of Lasry's holes the clerk's text fills is not recorded"
+      },
+      {
+        "item": "Français 4696 ff5r, 62r-v: unread groups between Lasry's deciphered runs",
+        "blocker": "open-codes",
+        "detail": "Rosson's glossed table (448 values, 14 lists) has not been run against Lasry's holes here; whether Lasry's 24 nomenclature values are a subset of it is not checked"
       },
       {
         "item": "5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report",
         "blocker": "no-key-material",
-        "detail": "his report status says so; outside this project's work, no other key or plaintext known"
+        "detail": "no period key sheet is known; Rosson's table is a model's reconstruction unchecked by a person, and his README lists microfilm limits for fr. 4698"
       }
     ]
   }

@@ -2,6 +2,8 @@
 
 Status: read (878 of 923 cipher tokens, 95.1%, measured in reading.md; key complete from the archive)
 
+Not to be confused with Paolo Rosson's `gonzaga-1590` folder (pangoleen/cipher-readings): that is Cardinal Scipione Gonzaga's cipher to Nevers in BnF fr. 4698, a different letter and a different code (see `targets/scipion1585/`, issue #708, 16 Nov 2026). Only the name collides; nothing here changes.
+
 Session of 21 September 2026. Catalogue entry "Vincenzo Gonzaga, duke of Nevers → Louis Gonzaga". The sender is
 Vincenzo I Gonzaga, **Duke of Mantua** (DECODE's "duke of Nevers" for him is a slip), writing to his uncle Nevers.
 Italian clear letter with long passages in unseparated two-digit figures, 3 written pages (DECODE images P1–P14:
