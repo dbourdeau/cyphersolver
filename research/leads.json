@@ -55482,6 +55482,63 @@
    "vetting_note": "Ciphertext not seen: the IIS record (Cortese 2003) says only 'cryptograms on p.23', which may be words in the Tayyibi secret script, a ciphered colophon, or letter diagrams (the same entry notes a 'small diagram on p.19'); 'No image available for this record'. Poonawala 1977, p. 324 no. 55 (cited in the record) not opened. Needs an image of p. 23 from the IIS. (research/vetting_2026-11-15_arabic_3/vetting.json)"
   },
   {
+   "id": 2899,
+   "counted": true,
+   "year": 1912,
+   "date": "13 July 1912",
+   "title": "Partly enciphered Egyptian Coastguard telegram about seized bales of khaki uniforms at Railhead (Western Desert), copy in the Khedive's papers",
+   "correspondents": "an officer at Railhead (the sender's name is on a sheet not found) to Herbert, 'Sawahil' (Coastguard Administration), Alexandria",
+   "place": "Railhead (Western Desert railway, Egypt) to Alexandria",
+   "language": "English",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Archives and Special Collections, Abbas Hilmi II papers, HIL/64/890-891 (frame 174 of 234 of the digitised file HIL/64/1-1011, Telegrams Egypt and Sudan: I)",
+   "folio_note": "Seen as image (1,024 px frame and a 3,075 px stitch of nine region requests). Two Egyptian State Telegraphs forms G 13, telegram no. 30, 129 words, in a clerk's copying hand. Clear English with 17 five-letter cipher groups in three runs: 'the suits are bfefr ptqap rrvtw but have / acpfw msrrx wuuuu rtxsu vtupt vcxwq uzxtr urxrp dvasr rfouu stop uffkfz stswv claimed them but at first denied exact knowledge of contents he gave me the same name of person sending them from Alexandria as you mention namely pmsmp ktvvv who he says is a' (my reading from the image, not collated; the text breaks off, a third sheet was not found). The groups lean heavily on the letters p to x, with runs such as 'wuuuu' and 'ktvvv', so this is not Playfair; it looks like figure groups of a code turned into letters, or a substitution with padding. No decode on the forms.",
+   "cls": "A",
+   "status": "15 Nov 2026: ciphertext seen; no clear duplicate of this telegram in the frames screened (HIL/64/817-1007 all viewed as cropped contact sheets; HIL/64/1-816 only five frames sampled, so a clear copy may still sit there, as it does for the 1913 Khartoum telegrams in HIL/65). Durham catalogue describes the file only as 'Arabic and code'. known.py: no hit. No literature search beyond that; DECODE not searched (20th-century British traffic is outside it). Not checked: which cipher the Egyptian Coastguard Administration used in 1912, and whether a key survives (TNA FO 141, WO 33; Durham Sudan Archive). Wave 16: clear copy found at HIL/64/739-737; no third cipher sheet exists.",
+   "why": "A short British field cipher of the Italo-Turkish war period (arms and uniform smuggling to the Ottoman force in Cyrenaica) with rich clear context on both sides of every cipher run; a named sender is hidden in two groups. Small, but the surrounding clear text gives strong cribs.",
+   "region": "England",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "verify": "Find the third sheet and any clear copy in HIL/64/1-816; collate the 17 groups from a full-size stitch; test the system recovered from the HIL/65 cipher/clear pairs.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t2mks65hc530.html",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
+   "ark": "",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "Free IIIF images at iiif.durham.ac.uk (manifest ark t2mks65hc530, frame 174 of 234); region requests stitch to about 3,070 px.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Fable 5.2), wave 15 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Durham IIIF, HIL/64/1-1011 manifest ark t2mks65hc530, frame 174 (HIL/64/890-891), seen by the sweep agent as a 1,024 px frame and a 3,075 px stitch of nine region requests (research/sweep_2026-11-15_wave15_arabic2)",
+     "extent": "17 five-letter groups (about 85 letters) in three runs inside a clear English telegram of 129 words on two forms; the text breaks off, a third sheet was not found",
+     "cipher": "Five-letter groups leaning on the letters p to x with repeats such as wuuuu and ktvvv; no decode is written on the forms and no clear copy was found in the frames screened (HIL/64/817-1007 all, HIL/64/1-816 five frames only)."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps included) for HIL/64, Coastguard, Abbas Hilmi: no record; 20th-century British traffic is outside DECODE",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi: no match; outside his French and papal material",
+     "edition": "No edition of the Abbas Hilmi telegram files is known; the Durham catalogue describes the file only as Arabic and code and gives no reading",
+     "literature": "Web search 15 Nov 2026 (Egyptian Coastguard cipher telegram 1912 Railhead, Abbas Hilmi papers Durham): no study of this telegram or of the Coastguard cipher"
+    },
+    "key_check": "No key known. Two Sudan Government cipher telegrams of May 1913 in HIL/65 have clear copies beside them (lead 2900); whether that system is the same was not tested.",
+    "duplicates": "known.py HIL/64, HIL/65, Coastguard (15 Nov 2026): only the two Arabic sweeps of this day, which had not viewed the file before wave 15; no catalogue entry or lead.",
+    "verdict": "key_lookup",
+    "closed": "Wave 16 (15 Nov 2026) screened every frame of HIL/64 and HIL/65 and found the complete clear copy of this telegram at HIL/64/739 + 738 + 737 (same no. 30, 129 words, Railhead, 13.7.912, signed Armstrong); the plaintext is filed with it, so it is a known-plaintext pair and not an open text. Moved back from the catalogue the same day it was promoted."
+   },
+   "repository": "unidentified"
+  },
+  {
    "id": 2900,
    "counted": true,
    "year": 1913,
