@@ -25682,7 +25682,7 @@
    "prior_art": "open as far as checked (2 Nov 2026: known.py on volume, sender and place; the Calames notice only; no web search, Tomokiyo, Lasry and edition not searched)",
    "score_note": "Scored from the Calames description during the Nov 2026 sweep (research/sweep_2026-11_calames_rest/); not viewed",
    "needs_archive_scan": "yes",
-   "access_note": "Calames record only; no image link on the notice",
+   "access_note": "Calames MAZC13205 (re-read by curl 16 Nov 2026, HTTP 200); no digital copy of Mazarine Ms 4376; Mazarinum search URL returned 404.",
    "links": [
     {
      "label": "Calames notice Ms 4376",
@@ -25707,8 +25707,30 @@
    "verify": "Look at the volume to see whether it holds real cipher letters or a cipher teaching text.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Archive-only (Mazarine Ms 4376, Calames MAZC13205): miscellany whose cipher items (nos. 78-81, ff. 301-338: Du Fargis affair and keys) are probably copies of the published Du Fargis papers; no ciphertext shown. known.py (Mazarine 4376 Dubuisson): no duplicate. Web search (Dubuisson-Aubenay Mazarine 4376 Du Fargis chiffre): no digitisation, no mention of this manuscript or a decipherment. Missing: ff. 301-341 viewed at the Mazarine and a check against the printed Du Fargis letters."
+   "scored": "vetted",
+   "vetting_note": "Archive-only (Mazarine Ms 4376, Calames MAZC13205): miscellany whose cipher items (nos. 78-81, ff. 301-338: Du Fargis affair and keys) are probably copies of the published Du Fargis papers; no ciphertext shown. known.py (Mazarine 4376 Dubuisson): no duplicate. Web search (Dubuisson-Aubenay Mazarine 4376 Du Fargis chiffre): no digitisation, no mention of this manuscript or a decipherment. Missing: ff. 301-341 viewed at the Mazarine and a check against the printed Du Fargis letters.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Calames notice https://calames.abes.fr/pub/ms/MAZC13205 (Bibliothèque Mazarine Ms 4376, Dubuisson-Aubenay manuscripts), full item list re-read 16 Nov 2026; no image of the volume is online.",
+     "extent": "The notice itemises 366 ff. of memoirs, acts and letter formulas; the only cipher-related items are no. 78 (f. 301-333) 'Affaire de madame du Fargis et ses lettres', no. 79 (f. 334) 'En mars 1650. Clé pour compendre le document', no. 80 (f. 336) 'Clé pour compendre le roman', no. 81 (f. 338) 'Chiffre composat de noms differents' and no. 82 (f. 341) 'Index de noms'.",
+     "cipher": "Name keys (a 'chiffre' of substituted names) and copies of the Du Fargis letters of 1630; nothing in the notice shows a cipher text without its key, and the keys sit beside the letters."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Mazarine 4376', 'Dubuisson' and 'Fargis' (earlier passes 2 and 9 Nov 2026, repeated in substance here): only this lead's own rows; DECODE has no record of this volume.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026): no hit for Mazarine, Dubuisson, Fargis or Chemerault.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit for Mazarine, Dubuisson, Fargis or Chemerault.",
+     "edition": "The anonymous recueil 'Journal de M. le Cardinal duc de Richelieu, qu'il a faict durant le grand Orage de la Court en l'Année 1630 jusques à 1643 ... Avec diverses autres pieces' (s.l., 1650; Google Books id rPY_AAAAcAAJ) prints the 'Cabale de la Fargis' with Madame du Fargis's letters (pp. 97-119) and the letters of Mlle de Chemerault with the key of the encoded names (the 'jargon') at the head of the section; Cimber and Danjou reprinted most of it in 1838.",
+     "literature": "Fabula colloque article 'Paroles d'espionne. De quoi les lettres de Mlle de Chemerault ... sont-elles l'archive ?' (Fabula / Les Colloques, 2024, https://fabula.org/pdf/colloques-13269.pdf) describes the 1650 recueil, the Du Fargis letters and the printed name key; its date (1650) matches the 'En mars 1650' keys in Ms 4376. Web search on the Du Fargis cipher letters found no other study."
+    },
+    "key_check": "The keys are in the volume itself (nos. 79-81, name-substitution keys of March 1650) and the name key is printed in the 1650 recueil; not tested against the manuscript, which was not seen.",
+    "key_in_volume": "Mazarine Ms 4376 nos. 79-81 (ff. 334-338): two 'Clé pour comprendre' lists and a 'Chiffre composé de noms différents', with an index of names at f. 341; not seen, not tested.",
+    "duplicates": "No other lead or catalogue entry for Mazarine Ms 4376, Dubuisson-Aubenay or the Du Fargis letters in the repository ledgers.",
+    "verdict": "read",
+    "closed": "Closed as read: the cipher content is a name code whose keys are filed in the volume, and the Du Fargis and Chemerault letters were printed with their name key in 1650; nothing points to an unread cipher text. Reopen only if a look at ff. 301-341 shows enciphered text other than these keyed name codes."
+   }
   },
   {
    "id": 1851,
@@ -50818,10 +50840,33 @@
    "source": "Omont BnF catalogue sweep",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
    "needs_archive_scan": "no",
-   "access_note": "Gallica volume(s) online: fr. 3231, fr. 3232; openapi.bnf.fr IIIF works with curl",
+   "access_note": "Gallica btv1b9060248g (fr. 3251) and btv1b9060232m (fr. 3252), openapi.bnf.fr IIIF by curl.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): SHELFMARK DOUBTFUL. Gallica fr. 3231 (btv1b90602383) is a collection of letters of the cardinals of Guise to the duke of Nemours; views 36, 83, 88 checked at Omont's ff. 35, 82, 87 are plain French letters (f. 35 signed by a Gonzague/Nevers hand), no cipher and no Birago. Omont's heading number for the Birago volume is probably an OCR misreading; Birago letters of 1571 sit in fr. 3252 (catalogue 318 and Lasry's list). Re-identify the volume before vetting. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): SHELFMARK DOUBTFUL. Gallica fr. 3231 (btv1b90602383) is a collection of letters of the cardinals of Guise to the duke of Nemours; views 36, 83, 88 checked at Omont's ff. 35, 82, 87 are plain French letters (f. 35 signed by a Gonzague/Nevers hand), no cipher and no Birago. Omont's heading number for the Birago volume is probably an OCR misreading; Birago letters of 1571 sit in fr. 3252 (catalogue 318 and Lasry's list). Re-identify the volume before vetting. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Gallica btv1b9060248g (BnF fr. 3251) views 12 (f. 11, no. 6), 83 (f. 82, no. 42; zoom of the cipher lines) and 139 (f. 138, no. 71), fetched 16 Nov 2026 by openapi.bnf.fr IIIF; BnF notices https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49712p (fr. 3251) and cc49713x (fr. 3252), component displays for every 'chiffre' item read 16 Nov 2026.",
+     "extent": "Sixteen Italian letters (one French, fr. 3252 no. 77), each mostly clear with a few lines of symbol cipher. f. 82 has three lines of cipher in a clear letter. On f. 11 the cipher lines sit near the foot of a dense page. No. 63 (f. 119) has a paragraph of 482 digits.",
+     "cipher": "Homophonic symbol ciphers (Ceppo-Nevers 1570-71, Nevers-Birago 1572) and, for no. 63 only, a numerical cipher. The three cipher lines seen on f. 82 have no interlinear decipherment, but Tomokiyo notes decipherments with nos. 14, 20, 42 and 87."
+    },
+    "prior_art": {
+     "decode": "known.py on '3251', '3252' and 'Birago' (16 Nov 2026): targets/birago (fr. 3251 f. 119, numeric paragraph, attempted) and targets/birago1571 (fr. 3252 ff. 36-37, Lasry, deciphered in part, 87.2%); the latter's notes record that DECODE has no record for fr. 3252.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026): 'Some letters from Lodovico Birago to the Duke of Nevers from 1570-1572 preserved in BnF fr. 3251 can be deciphered by using keys reconstructed from already deciphered materials'; only the 13 Nov 1571 numeric paragraph is listed as unsolved. His nevers.htm (fetched 16 Nov 2026) lists ff. 11, 21v, 27, 35, 39, 82, 87 (Ceppo-Nevers, decipherments with nos. 14, 20, 42) and ff. 138-184 (Nevers-Birago 1572, rebuilt from no. 87's decipherment).",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): 'Français 3252 ff36r-37r' (Birago to Nevers, 5 April 1571; key from fr. 4702 f37 / fr. 3251, Cryptiana's Ceppo-Nevers key; interlinear plaintext noted), deciphered in part.",
+     "edition": "No printed edition of these letters was found; the keys are published on Cryptiana (nevers.htm), and Lasry's partial reading of fr. 3252 no. 24 is held in targets/birago1571.",
+     "literature": "Tomokiyo's Cryptiana pages (unsolved.htm, nevers.htm) and Lasry's 2026 BnF cipher report are the literature; no other study found."
+    },
+    "key_check": "Both keys are published by Tomokiyo on nevers.htm: the Ceppo-Nevers cipher (from BnF fr. 4702) for Sept 1570 - May 1571, and the Nevers-Birago cipher (1572) from the decipherment attached to fr. 3251 no. 87; Lasry applied the Ceppo-Nevers key to fr. 3252 no. 24 (87.2% identified). Not tested here on the other letters.",
+    "key_held": "Tomokiyo's reconstructed Ceppo-Nevers and Nevers-Birago (1572) keys, on Cryptiana nevers.htm and copied in targets/birago/keys/; untested here on nos. 6, 18, 42, 45, 71-90 and fr. 3252 nos. 30, 67, 77.",
+    "duplicates": "Overlaps targets/birago (fr. 3251 no. 63, f. 119) and targets/birago1571 (fr. 3252 no. 24); the lead's fr. 3231/3232 shelfmark was an Omont OCR error (those volumes are Guise letters to Nemours, no cipher).",
+    "verdict": "key_lookup",
+    "closed": "Closed as key_lookup: Tomokiyo has catalogued these Birago letters and published the two keys that read them, with decipherments filed with several. The only letter outside those keys (no. 63, numeric) is already the target 'birago'. Applying the keys to the remaining letters is routine work under the existing targets, not a new open lead."
+   },
+   "access": "online"
   },
   {
    "id": 2725,
@@ -51061,10 +51106,32 @@
    "source": "Omont BnF catalogue sweep",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
    "needs_archive_scan": "no",
-   "access_note": "Gallica volume(s) online: fr. 2986; openapi.bnf.fr IIIF works with curl",
+   "access_note": "Gallica btv1b9059908w (fr. 2988; also btv1b525240150), openapi.bnf.fr IIIF by curl.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): SHELFMARK DOUBTFUL. Gallica fr. 2986 item 1 is a letter of Berne (views 3-23 plain). DECODE has Ranzo ciphers at fr. 2988 f. 1, 2, 9-11 (R2323, R2294, R2295, mostly Non-decrypted) and fr. 3019 f. 73-74 (R2293), and Raince 1526 at fr. 3040 f. 21 (R4228, decrypted): the Ranzo/Raince items are almost certainly fr. 2988, already on DECODE. Check fr. 2988 and R2293-2323 before any entry. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): SHELFMARK DOUBTFUL. Gallica fr. 2986 item 1 is a letter of Berne (views 3-23 plain). DECODE has Ranzo ciphers at fr. 2988 f. 1, 2, 9-11 (R2323, R2294, R2295, mostly Non-decrypted) and fr. 3019 f. 73-74 (R2293), and Raince 1526 at fr. 3040 f. 21 (R4228, decrypted): the Ranzo/Raince items are almost certainly fr. 2988, already on DECODE. Check fr. 2988 and R2293-2323 before any entry. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Gallica btv1b9059908w (BnF fr. 2988), views 10 and 11 (f. 4v-5r, no. 2) fetched 16 Nov 2026 through openapi.bnf.fr IIIF; BnF notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49442s (Français 2988, Regius 8513) item list and component displays read 16 Nov 2026; the repository's ranzo1528 notes record views 6-7, 17-20 (Ranzo) and 56, 60 (pièces en chiffre) as seen.",
+     "extent": "Nos. 1 and 3 Ranzo letters (ff. 2r-v, 9r-10v, about 2,600 symbols); no. 2 Raince double, several pages of clear French; 26 'Pièce en chiffre' nos. 7-55 at ff. 21-130, alternating with clear copies and avvisi.",
+     "cipher": "Ranzo: symbol code with superscript digits. Nos. 7-55: dense symbol cipher. No. 2 (seen, f. 4v-5r) is in clear French throughout, a copy of letters Raince wrote in cipher, so it is itself the decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py on '2988', 'Ranzo' and 'Raince' (16 Nov 2026): DECODE R1894 (fr. 2988 ff. 9-11) and R4450 (copy, fr. 20506) are the Ranzo letter covered by targets/ranzo1528; the earlier Omont-sweep note lists R2293-2323 for Ranzo items, mostly 'non-decrypted' on DECODE although read since.",
+     "tomokiyo": "Tomokiyo (cryptiana code/unsolved.htm, fetched 15 Nov 2026): 'BnF fr.2988, f.21 ff., contains many undeciphered letters in symbol cipher' now marked Solved under 'Large Collections of Wholly Enciphered Letters of Mary, Queen of Scots (1578-1584)'; 'The cipher of BnF fr.2988, f.1, was broken by Torbjörn Andersson from Sweden in 2017' (Solved); the Ranzo letters f. 2 and f. 9 are listed as undeciphered there, which predates the 2026 solution.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no 'fr. 2988' or Ranzo entry; his Ranzo key is held in targets/ranzo1528/lasry (his 16 Oct 2026 email: 'the Ranzo ciphers are solved Fr 2988 and Fr 20506').",
+     "edition": "Lasry, Biermann and Tomokiyo, 'Deciphering Mary Stuart's Lost Letters from 1578-1584', Cryptologia (2023), prints the decipherment of the fr. 2988 pieces en chiffre; the Ranzo letters are read in targets/ranzo1528 (texts/, 96-97% of tokens).",
+     "literature": "Andersson's 2017 solution of f. 1 is reported on Klaus Schmeh's Cipherbrain blog; the Mary Stuart work was widely reported in 2023."
+    },
+    "key_check": "Keys exist for all three cipher families: Andersson's (f. 1), Lasry's and Rosson's Ranzo key (targets/ranzo1528), and the Mary Stuart keys reconstructed by Lasry, Biermann and Tomokiyo.",
+    "duplicates": "Duplicates targets/ranzo1528 (Ranzo letters, fr. 2988 ff. 2, 9-10; catalogue items 7 and 170) and the published Mary Stuart decipherment; the fr. 2986 shelfmark in the lead was an Omont OCR error (fr. 2986 has no cipher item).",
+    "verdict": "read",
+    "closed": "Every cipher piece of fr. 2988 is read: Ranzo by Lasry and Rosson (ranzo1528), f. 1 by Andersson (2017), nos. 7-55 by Lasry, Biermann and Tomokiyo (2023), and the Raince no. 2 is a clear copy."
+   },
+   "access": "online"
   },
   {
    "id": 2733,
@@ -51097,11 +51164,32 @@
    "source": "Omont BnF catalogue sweep",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
    "needs_archive_scan": "yes",
-   "access_note": "no Gallica ark found for fr. 2935 (Gallica SRU, dc.source \"Français N\"); microfilm or reading room, or a later digitisation",
+   "access_note": "Gallica btv1b90600674 (fr. 2933); view 55 = f. 54r, fetched by openapi.bnf.fr IIIF.",
    "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmark unconfirmed; DECODE 'Salviati' not searched. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use."
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmark unconfirmed; DECODE 'Salviati' not searched. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Gallica btv1b90600674 (BnF fr. 2933), view 55 (f. 54r), fetched 16 Nov 2026 through https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90600674/f55/full/1000,/0/default.jpg; the shelfmark correction to fr. 2933 no. 11 comes from the 16 Nov 2026 Omont audit (BnF Archives et manuscrits notice cc493855).",
+     "extent": "f. 54r is a full page of Italian letter text in which long runs of symbol cipher alternate with short clear phrases ('Tutto quello che S.S. desiderava', 'Pure a me pare', 'Stando ancora le cose'); the target notes give the letter as f. 54r-57v, 838 cipher elements.",
+     "cipher": "Symbol nomenclator (letters, syllables, a few words) mixed with clear Italian; no interlinear or marginal decipherment on f. 54r."
+    },
+    "prior_art": {
+     "decode": "known.py on 'fr. 2933' and 'Salviati' (16 Nov 2026): the hits are the repository target targets/salviati1525 (README results row, NOTES) and catalogue 1119 (a different Salviati letter of 1547); the target notes record that the full DECODE list (10,606 records, 24 Oct 2026) has no record for Français 2933.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026) names 'fr.2933' in its list of BnF cipher items with no decipherment noted; that list predates or ignores Lasry's 2026 work.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) has a full entry 'Français 2933': Salviati, 16 Oct 1525, key of 78 symbols recovered ciphertext-only, 838 elements of which 704 identified, 3/8 pages deciphered in part, with an excerpt of f54r and its translation.",
+     "edition": "No printed edition of this letter was found; the reading that exists is Lasry's 2026 report, held in the repository as targets/salviati1525 (lasry/report/), with a read share of about 0.76-0.81 of the deciphered passages.",
+     "literature": "The repository page docs/salviati1525.html presents Lasry's result; no other study of this letter was found in the repository ledgers."
+    },
+    "key_check": "The key is Lasry's reconstruction (78 symbols: 18 letters, 54 syllables, 3 doubled letters, 3 words), held with his report in targets/salviati1525; no contemporary key was found in the volume.",
+    "duplicates": "Duplicate of the existing target targets/salviati1525 (README results row 'Giovanni, cardinal Salviati ... 16 October 1525 (Français 2933)'); the lead's original shelfmark fr. 2935 was an Omont OCR error.",
+    "verdict": "partly_read",
+    "closed": "Already worked: Lasry recovered the key and deciphered this letter in part (targets/salviati1525), so it is not an open lead; the remaining work belongs to that target, not to a new catalogue entry."
+   }
   },
   {
    "id": 2734,
@@ -51198,10 +51286,32 @@
    "source": "Omont BnF catalogue sweep",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
    "needs_archive_scan": "no",
-   "access_note": "Gallica volume(s) online: fr. 3043; openapi.bnf.fr IIIF works with curl",
+   "access_note": "Gallica btv1b9060156p (fr. 3045), openapi.bnf.fr IIIF by curl; view 70 = f. 36r, view 74 = f. 38r (folio 38 read on the crop), view 75 = f. 38v.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Gallica fr. 3043 (btv1b90598808, Renee de France 1540, Montmorency papers) plausible; DECODE has Cenalis at fr. 20506 f. 96 (R4815, decrypted) and a Venice letter at fr. 3045 f. 36 (R4231, 1530-39, decrypted), which may be this letter under the number 3045 (OCR). Not viewed; likely duplicate. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Gallica fr. 3043 (btv1b90598808, Renee de France 1540, Montmorency papers) plausible; DECODE has Cenalis at fr. 20506 f. 96 (R4815, decrypted) and a Venice letter at fr. 3045 f. 36 (R4231, 1530-39, decrypted), which may be this letter under the number 3045 (OCR). Not viewed; likely duplicate. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Gallica btv1b9060156p (BnF fr. 3045), views 70, 71, 73, 74 (top crop, folio '38') and 75, fetched 16 Nov 2026 through https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060156p/f<view>/full/<w>,/0/default.jpg; BnF notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49504m component 29 ('Lettre, avec chiffre, de Robert Cenalis ... A Venyse, le XIIIe d'octobre', Fol. 36).",
+     "extent": "A letter of several leaves (f. 36r to at least f. 38v) mostly in clear French; f. 38v is a full page of mixed cipher and clear text.",
+     "cipher": "Symbol cipher on f. 38v with a contemporary interlinear decipherment in French above nearly every cipher group (e.g. heading 'de douze ou quinze cens ...', interlined names). The views seen show no cipher without its decipherment."
+    },
+    "prior_art": {
+     "decode": "DECODE R4231 (Cryptoole snapshot of DECODE, research/cryptoole/snapshot.json): 'Paris, BnF, Français 3045 fol. 36 · French', 1530-1539, status solved. known.py on '3045' and 'Cenalis': R4231 (this letter), R4230 (Visconti f. 28, catalogue 179, read) and R4232 (Selve f. 42, read in part in the repository); Cenalis also at fr. 20506 f. 96 (R4815, solved), a different letter.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026) names BnF fr. 3045 among the volumes for which 'In 2023, George Lasry provided solutions to many ciphers' (marked Solved); no Cenalis entry.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): fr. 3045 appears under Galeaz Vesconte's cipher (f. 28 no. 24), not for no. 29; no Cenalis hit.",
+     "edition": "The contemporary interlinear decipherment on f. 38v is the reading; no printed edition was checked.",
+     "literature": "No study of this letter beyond the DECODE record was found in the repository ledgers."
+    },
+    "key_check": "No key is filed in fr. 3045; the interlinear decipherment and DECODE's solved record give the plaintext. Cenalis's cipher also appears in fr. 20506 f. 96 (R4815, solved).",
+    "duplicates": "Duplicate of DECODE R4231 (solved). Siblings fr. 3045 no. 24 (Visconti, catalogue 179, read) and no. 31 (Georges de Selve, R4232, targets selve1535) are different letters. The lead's fr. 3043 shelfmark was an Omont OCR error.",
+    "verdict": "read",
+    "closed": "The cipher passage carries a contemporary interlinear decipherment (seen on f. 38v), and DECODE R4231 records the letter as solved, so it is read."
+   },
+   "access": "online"
   },
   {
    "id": 2736,
@@ -51485,11 +51595,32 @@
    "source": "Omont BnF catalogue sweep",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
    "needs_archive_scan": "yes",
-   "access_note": "no Gallica ark found for fr. 4733 (Gallica SRU, dc.source \"Français N\"); microfilm or reading room, or a later digitisation",
+   "access_note": "Gallica btv1b9060724s (fr. 4735, microfilm scan), canvas 242 = f. 124; openapi.bnf.fr IIIF by curl.",
    "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmark unconfirmed. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use."
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; shelfmark unconfirmed. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Gallica btv1b9060724s (BnF fr. 4735), canvas 242 (f. 124r, folio number legible), fetched 16 Nov 2026 by https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f242/full/700,/0/default.jpg; BnF group notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc57784f (Français 4734-4736), components d0e2544 (no. 51) and d0e4489 (no. 141) read 16 Nov 2026.",
+     "extent": "One page: Lanssac's letter to Charles IX, mostly clear French with about five lines of cipher (two at the opening, three in the body), signed 'Lanssac', dated Varsovie, 26 April 1573.",
+     "cipher": "Symbol cipher (homophonic with name codes) in a clear letter; no interlinear decipherment on f. 124 itself, but the sibling letters of 24 April-9 May 1573 (ff. 154-174) carry decipherments and the repository has read them all."
+    },
+    "prior_art": {
+     "decode": "known.py on '4735' and 'Lanssac' (16 Nov 2026): targets/lanssac ('Verdict: read. Every cipher letter of Lanssac's in fr. 4735 is over the read bar'; f. 124 at 96%), README results row, SOLVED_CATALOGUE no. 12 and SOLVED_RANKING; its notes record that fr. 4735 is not among DECODE's French records.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026): no hit for 4734, 4735 or Lanssac; the lanssac notes record his henryiii.htm page gives no reading of these leaves.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit for 4734, 4735 or Lanssac.",
+     "edition": "The reading is the repository's own (targets/lanssac, write-up on the site); no printed edition of the letter was found there.",
+     "literature": "The lanssac notes and page are the literature on this letter; nothing else was found."
+    },
+    "key_check": "The key was rebuilt in targets/lanssac from the deciphered siblings in fr. 4735 (nos. 60-61, 63, 65, 70, ff. 154-174) and context.",
+    "duplicates": "Duplicate of targets/lanssac (catalogue item 3, class A). The lead's fr. 4733 shelfmark (Omont OCR) and the audit's fr. 4734 (tome I) are both wrong: the component display gives Français 4735, tome II, f. 124. No. 141 (Courcelles, Edinburgh, 4 Oct 1586, fr. 4736 f. 363) carries its decipherment.",
+    "verdict": "duplicate",
+    "closed": "The Lanssac letter is already read in targets/lanssac, and the only other piece in the lead (Courcelles no. 141) has its decipherment filed with it."
+   }
   },
   {
    "id": 2743,
@@ -54429,8 +54560,30 @@
    "source": "Biblissima portal (portail.biblissima.fr) in Chrome, continental blocked-sources pass, 15 Nov 2026",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): BnF fr. 3645 (Biron, Vivonne, Quitry, Salagnac to Henri IV, Sep-Nov 1591): 'avec chiffre et dechiffrement' for Biron; item 52 'avec chiffre' only (the one possibly without a decipher); not seen on Gallica. Left; narrow to item 52 if the image shows no decipher."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): BnF fr. 3645 (Biron, Vivonne, Quitry, Salagnac to Henri IV, Sep-Nov 1591): 'avec chiffre et dechiffrement' for Biron; item 52 'avec chiffre' only (the one possibly without a decipher); not seen on Gallica. Left; narrow to item 52 if the image shows no decipher.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "BnF Archives et manuscrits notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50096z (Français 3645, Anc. 9134), notice page and the component displays from its full-text search for chiffre/chiffres/chiffrée/chiffrées, read 16 Nov 2026; no Gallica copy found.",
+     "extent": "Four cipher pieces in the volume: nos. 9 (f. 15), 20 (f. 33), 52 (f. 92) and 55 (f. 99), each a single letter to Henri IV from the Normandy campaign, Sep-Nov 1591.",
+     "cipher": "The notice gives 'Lettre chiffrée avec déchiffrement' (no. 9) and 'Lettre, avec chiffre et déchiffrement' (nos. 20 and 55): the decipherment is filed with three of the four; no. 52 'Lettre, avec chiffre' has none noted."
+    },
+    "prior_art": {
+     "decode": "known.py on '3645', 'Biron' and 'Quitry' (16 Nov 2026): the '3645' hits are unrelated number groups (Durham telegram, van Reede); no DECODE record or repository target for BnF fr. 3645.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026): no hit for 3645, Biron, Vivonne or Quitry.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit for 3645 or Biron.",
+     "edition": "The decipherments are contemporary and filed with the letters (BnF notice); a printed edition of Biron's 1591 letters to Henri IV was not checked for these pieces.",
+     "literature": "No study of these 1591 cipher letters was found in the repository ledgers; the notice is the decisive source."
+    },
+    "key_check": "No key is listed in fr. 3645; the three deciphered letters give plaintext for a key rebuild if no. 52 is ever pursued.",
+    "duplicates": "No other lead or catalogue entry for fr. 3645. No. 52 (11 Nov) and no. 55 (9 Nov) are by the same three writers from Herbonnières, two days apart; they are separate letters by date.",
+    "verdict": "read",
+    "closed": "The Biron letters this lead is about (nos. 9 and 20) and the Vivonne-Quitry-Salagnac letter no. 55 carry contemporary decipherments filed with them, so the lead is read. The one piece without a noted decipherment (no. 52, f. 92) is not online and could be listed separately."
+   },
+   "access_note": "fr. 3645 notice (cc50096z) carries no Gallica link; Gallica SRU answers 403 to scripts, so no digitisation could be confirmed."
   },
   {
    "id": 2830,
@@ -54465,8 +54618,31 @@
    "source": "Biblissima portal (portail.biblissima.fr) in Chrome, continental blocked-sources pass, 15 Nov 2026",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): BnF fr. 3362 (Sesso to Parma, 1592): item 10 'avec chiffre et dechiffrement' and item 16 'Dechiffrement d'une depeche, en italien', so a decipherment is filed; not seen on Gallica."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): BnF fr. 3362 (Sesso to Parma, 1592): item 10 'avec chiffre et dechiffrement' and item 16 'Dechiffrement d'une depeche, en italien', so a decipherment is filed; not seen on Gallica.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "BnF Archives et manuscrits notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc498278 (Français 3362, Anc. 8865), notice page and the component displays from its full-text search for chiffre/chiffres/chiffrée/chiffrées, read 16 Nov 2026; no Gallica copy found.",
+     "extent": "No. 10 (f. 14), one Spanish letter of Sesso to Alessandro Farnese; no. 16, an Italian decipherment; no. 37 (f. 57), an extract of a ciphered despatch; no. 56 (f. 85), a cipher table for Farnese's secretary.",
+     "cipher": "No. 10 is 'avec chiffre et déchiffrement' (decipherment filed with it); no. 16 is itself a decipherment; no. 56 is a key ('Chiffres nouveaux'). No piece is described as cipher without a decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py on '3362', 'Sesso' and 'Sessa' (16 Nov 2026): '3362' hits only DECODE record id 3362 (an unrelated 1914 item); Sessa hits are the repository targets sessa1593 (fr. 3983), sessa1523/1524 and ibarra1593, all different letters.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026): no hit for 3362, Sesso or Sessa.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit for 3362 or Sesso; its three 'Sessa' hits are other Sessa letters, not fr. 3362.",
+     "edition": "The decipherment is contemporary and filed with no. 10 (BnF notice); no printed edition was checked for this 1592 letter.",
+     "literature": "No study of fr. 3362's cipher pieces was found in the repository ledgers."
+    },
+    "key_check": "No. 56 (f. 85), 'Chiffres nouveaux pour le secretaire de monseigneur Alexandre', is a Farnese cipher key in the volume; not seen and not tested.",
+    "key_in_volume": "BnF fr. 3362 no. 56, f. 85: 'Chiffres nouveaux pour le secretaire de monseigneur Alexandre' (Alessandro Farnese's chancery key), not online, not tested; a possible key lead for other Farnese ciphers.",
+    "duplicates": "Not a duplicate of sessa1593 (fr. 3983 nos. 79 ff., Sessa to Ibarra 1593) or of any catalogue entry; no other lead names fr. 3362.",
+    "verdict": "read",
+    "closed": "Sesso's 1592 letter (no. 10) has its decipherment filed with it and no. 16 is a decipherment, so the lead is read; the volume's key (no. 56) is recorded for later key work."
+   },
+   "access_note": "fr. 3362 notice (cc498278) has no Gallica link; Gallica SRU 403 to scripts."
   },
   {
    "id": 2831,
@@ -56095,7 +56271,29 @@
    ],
    "source": "wave16 printed sweep: HMC Finch V introduction",
    "access": "archive",
-   "scored": "sweep"
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "HMC Finch V (2004) introduction pp. xlix-l, archive.org manuscriptsofall0005soni full text, read 16 Nov 2026; BL catalogue record for Add MS 32499 (https://searcharchives.bl.uk/catalog/032-002026538), item list read 16 Nov 2026. No image of the leaves is online.",
+     "extent": "Two short ciphertexts seized at Dover in late July 1691; the editor gives no length beyond Wallis's 'there is not inough of it to discover the key'. The BL item list gives ff. 285 and 285b for the two copied letters.",
+     "cipher": "A Vigenère-type 'Table-cipher, which changeth the Alphabet at every letter' (Wallis), key unknown; Wallis interlined conjectural plaintext."
+    },
+    "prior_art": {
+     "decode": "known.py on '32499', 'Blencowe' and 'Dover 1691' (16 Nov 2026): Add MS 32499 appears only for other Wallis items (d'Aumont cipher f. 1, catalogue entry; the 1693 Chateauneuf and La Haye intercepts ff. 341-347, a lead); nothing for ff. 274-285 and no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana code/unsolved.htm, fetched 15 Nov 2026): no hit for Wallis 1691, Dover, Nottingham or Add MS 32499.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit for Wallis, Dover or 32499.",
+     "edition": "HMC Finch III p. 188 calendars Wallis's letter; HMC Finch V pp. xlix-l quotes him: 'I send you my conjectures interlined, which I guess may be true, but am not sure of it' (Add. MS. 32499, ff. 274-5, 282). The BL catalogue lists the copies at ff. 285, 285b as 'partially deciphered'. Neither prints the plaintext.",
+     "literature": "The Finch V editor calls Wallis's attempt 'quite an achievement'. Kahn's and Singh's general Vigenère pages cited there do not treat these texts, and no modern study of them was found in the repository ledgers."
+    },
+    "key_check": "No key is known: a key sent to Wallis 'proved unconnected with the ciphertexts' (Finch V p. xlix); Wallis's conjectures imply partial key guesses, not recorded in print.",
+    "duplicates": "No other lead or catalogue entry for these 1691 Dover texts; Add MS 32499's other cipher items (ff. 1, 276-279, 289, 293-296, 341-347) are different letters.",
+    "verdict": "partly_read",
+    "closed": "A contemporary partial decipherment exists: Wallis's interlined conjectures, filed as 'partially deciphered' copies at Add MS 32499 ff. 285, 285b. Reopen only if a scan shows the conjectures are a few words and the texts are long enough to attack."
+   },
+   "access_note": "BL Add MS 32499 is not digitised (BL catalogue interim version after the cyber-attack); the originals sent back to Nottingham would be among the Finch papers (Leicestershire RO), also not online."
   },
   {
    "id": 2918,
