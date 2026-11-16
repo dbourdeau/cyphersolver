@@ -54955,43 +54955,6 @@
    }
   },
   {
-   "id": 2809,
-   "counted": true,
-   "cls": "C",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 2,
-   "seen": "catalogue",
-   "links": [
-    {
-     "label": "NLW record",
-     "href": "https://archives.library.wales/index.php/medical-recipes-and-astrology"
-    }
-   ],
-   "prior_art": "known.py on '9235A': no hit",
-   "needs_archive_scan": "yes",
-   "year": 1650,
-   "date": "17th century",
-   "title": "Medical recipes and astrology, some recipes and notes in cipher (monogram M. L.)",
-   "correspondents": "unknown scribe (monogram M. L.)",
-   "place": "unknown",
-   "language": "English",
-   "region": "England",
-   "period": "1611-1650",
-   "shelfmark": "NLW MS 9235A",
-   "folio_note": "file; extent not given",
-   "status": "Catalogue: 'Some of the recipes and notes are in cipher. The monogram M.L. occurs twice in the manuscript.' No decipherment noted.",
-   "why": "Private cipher notes in a recipe and astrology book: an own-hand cipher, probably a substitution of English.",
-   "score_note": "Scored from the catalogue description; date given only as '17 cent.', so the period field is a placeholder",
-   "verify": "See the NLW images or order; count the enciphered letters first, then try an English substitution",
-   "source": "National Library of Wales archives catalogue (AtoM), via Chrome",
-   "sweep": "sweep_2026-11-15_uk_blocked_chrome",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): NLW MS 9235A (17th-c. recipes and astrology with cipher notes, monogram M. L.): the NLW record was not re-read; recipe-book cipher notes are usually a few words in a substitution alphabet and the volume's other pages are plain, so there is little text. Not vetted further."
-  },
-  {
    "id": 2810,
    "counted": true,
    "cls": "C",
@@ -55140,8 +55103,30 @@
    "sweep": "sweep_2026-11-15_uk_blocked_chrome",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): NLS Adv.MS.72.1.33, 72.2.10 and 72.1.5 (Gaelic scribal cipher colophons): the cipher is a known scribal convention, 'Donnchadh's cipher' (cf. Adv.MS.73.1.22 f. 310r), described by the cataloguers; images of Adv.MS.72.1.33 are on Irish Script on Screen (isos.dias.ie). Colophons are a few words, and the cataloguer's note implies the cipher is understood. Left as a lead; closing needs Black's catalogue of Gaelic manuscripts checked."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): NLS Adv.MS.72.1.33, 72.2.10 and 72.1.5 (Gaelic scribal cipher colophons): the cipher is a known scribal convention, 'Donnchadh's cipher' (cf. Adv.MS.73.1.22 f. 310r), described by the cataloguers; images of Adv.MS.72.1.33 are on Irish Script on Screen (isos.dias.ie). Colophons are a few words, and the cataloguer's note implies the cipher is understood. Left as a lead; closing needs Black's catalogue of Gaelic manuscripts checked.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "NLS Archives and Manuscripts catalogue record of Adv.MS.72.2.10 (Black's description), Wayback copy https://web.archive.org/web/20250506071941id_/https://manuscripts.nls.uk/repositories/2/resources/20198 (saved as raw/nls20198.txt), read 16 Nov 2026; the record transcribes Angus Beaton's colophons and notes page by page.",
+     "extent": "Short scribal colophons: in Adv.MS.72.2.10 the name formula on pp. 16, 302, 333, 348 and 401 (one line or less each); Adv.MS.72.1.33 fol. 1v colophon and Adv.MS.72.1.5 'florid form of cipher' are of the same kind (described, not seen).",
+     "cipher": "The catalogue says Angus 'even uses Donnchadh's cipher (pages 302, 333, 348, 401; cf. Adv.MS.73.1.22, folio 310 recto)' and gives each cipher colophon with its reading in brackets, e.g. p. 401 'mngsng bhdlnghfts mbhc fsebhrcair' (misi Aonghus mac Fearcair): vowels are replaced by consonant groups (a = bh, o = dl, u = ft, e = s, i = ng), so the cipher is a known name-formula substitution, read in the catalogue itself."
+    },
+    "prior_art": {
+     "decode": "known.py on 72.1.33, 72.2.10, 72.1.5, Beaton, Fithcheallaigh and Donnchadh (DECODE dumps, catalogue, leads, targets) 16 Nov 2026: only this lead and its sweep rows; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched, tags stripped, for Gaelic, Beaton, Donnchadh: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched, tags stripped, for Gaelic and Beaton: no hit.",
+     "edition": "The cataloguer's description (Black's catalogue text as used on manuscripts.nls.uk) prints the colophons with readings; that is the published reading.",
+     "literature": "No further web search needed: the published catalogue reading decides the verdict. The device (vowels written as consonant groups) is the familiar Gaelic scribal name cipher."
+    },
+    "key_check": "No key needed: the substitution can be read off the catalogue's paired cipher and plain forms (a = bh, o = dl, u = ft, i = ng, e = s, consonants mostly kept).",
+    "duplicates": "known.py on the three shelfmarks and scribe names: no other lead or catalogue entry. Adv.MS.73.1.22 f. 310r (Donnchadh O Conchubhair) uses the same cipher and is not a lead.",
+    "verdict": "read",
+    "closed": "The NLS catalogue transcribes and reads the cipher colophons (the scribe's name formula in a vowel-substitution cipher), so the cipher was read in print."
+   },
+   "access_note": "NLS Advocates Gaelic manuscripts; manuscripts.nls.uk answers 403 to scripts (16 Nov 2026); the Adv.MS.72.2.10 record was read from web.archive.org/web/20250506071941id_/https://manuscripts.nls.uk/repositories/2/resources/20198; no Wayback copy of the 72.1.33 record (resources/21663). Adv.MS.72.1.33 images are said (15 Nov note) to be on Irish Script on Screen; not opened."
   },
   {
    "id": 2814,
@@ -55282,162 +55267,6 @@
    }
   },
   {
-   "id": 2820,
-   "counted": true,
-   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
-   "year": 1706,
-   "date": "1705-1707",
-   "language": "German",
-   "region": "Central Europe",
-   "period": "1701-1800",
-   "title": "Johann David von Palm to Count Leopold Schlik, partly ciphered letters, 1705-07 (Beilagen zur Oesterreichischen Staatsgeschichte, Bd. 13)",
-   "correspondents": "Johann David von Palm -> Leopold Schlik (imperial general in Hungary, Rakoczi war)",
-   "place": "Vienna / Grosswardein",
-   "shelfmark": "OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698) [Palm letters]",
-   "folio_note": "~22 letters of this writer found by the search 'chiffriert' (49 correspondence hits, 28 to Schlik); letters of 1707 from Vienna (e.g. 9 Apr 1707, fol. 97r-98v of Cod. Ser. n. 1698; 2 Mar and 5 Mar 1707 in 1697). The volume note says 'Viele Originale, darunter mehrere chiffriert'",
-   "cls": "B",
-   "status": "Catalogue: 'Schreiben teilweise chiffriert' (record text); no key or plaintext noted; no study found. Each writer is a separate key. Shelfmark made distinct for merge.py (one entry per writer); original: OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698).",
-   "why": "A run of original letters of the Rakoczi war with ciphered passages, many by one correspondent, in volumes the OeNB catalogue (Mazal/Unterkircher 1963) treats as documents; enough text to attack one writer's code.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "View two letters of this writer; check how long the ciphered passages are and whether a deciphering is pencilled in; check Rakoczi-war ciphers in HHStA Ungarische Akten.",
-   "links": [
-    {
-     "href": "http://data.onb.ac.at/rec/AC13932091",
-     "label": "OeNB record"
-    },
-    {
-     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,chiffriert&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
-     "label": "OeNB Primo search chiffriert"
-    }
-   ],
-   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): OeNB Cod. Ser. n. 1696-1698, Palm letters: per-letter OeNB records were not re-read; whether each ciphered letter carries a contemporary solution and which of the ~22 letters share one cipher is not known. Needs the per-letter records and an edition check (Rakoczi-war document editions). Left as a lead."
-  },
-  {
-   "id": 2821,
-   "counted": true,
-   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
-   "year": 1706,
-   "date": "1705-1707",
-   "language": "German",
-   "region": "Central Europe",
-   "period": "1701-1800",
-   "title": "Franz Colonna zu Fels to Count Leopold Schlik, partly ciphered letters, 1705-07 (Beilagen zur Oesterreichischen Staatsgeschichte, Bd. 13)",
-   "correspondents": "Franz Colonna zu Fels -> Leopold Schlik (imperial general in Hungary, Rakoczi war)",
-   "place": "Vienna / Grosswardein",
-   "shelfmark": "OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698) [Colonna zu Fels letters]",
-   "folio_note": "2+ letters of this writer found by the search 'chiffriert' (49 correspondence hits, 28 to Schlik); letters from Grosswardein of 5 and 11 Dec 1705 (Cod. Ser. n. 1696, fol. 31r-32v and 54r-55v), 'Schreiben teilweise chiffriert'. The volume note says 'Viele Originale, darunter mehrere chiffriert'",
-   "cls": "B",
-   "status": "Catalogue: 'Schreiben teilweise chiffriert' (record text); no key or plaintext noted; no study found. Each writer is a separate key. Shelfmark made distinct for merge.py (one entry per writer); original: OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698).",
-   "why": "A run of original letters of the Rakoczi war with ciphered passages, many by one correspondent, in volumes the OeNB catalogue (Mazal/Unterkircher 1963) treats as documents; enough text to attack one writer's code.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "View two letters of this writer; check how long the ciphered passages are and whether a deciphering is pencilled in; check Rakoczi-war ciphers in HHStA Ungarische Akten.",
-   "links": [
-    {
-     "href": "http://data.onb.ac.at/rec/AC13931662",
-     "label": "OeNB record"
-    },
-    {
-     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,chiffriert&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
-     "label": "OeNB Primo search chiffriert"
-    }
-   ],
-   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): OeNB Cod. Ser. n. 1696-1698, Colonna zu Fels letters: as 2820."
-  },
-  {
-   "id": 2822,
-   "counted": true,
-   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
-   "year": 1706,
-   "date": "1705-1707",
-   "language": "French",
-   "region": "Central Europe",
-   "period": "1701-1800",
-   "title": "R. de Pesme de Saint-Saphorin to Count Leopold Schlik, partly ciphered letters, 1705-07 (Beilagen zur Oesterreichischen Staatsgeschichte, Bd. 13)",
-   "correspondents": "R. de Pesme de Saint-Saphorin -> Leopold Schlik (imperial general in Hungary, Rakoczi war)",
-   "place": "Vienna / Grosswardein",
-   "shelfmark": "OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698) [Saint-Saphorin letters]",
-   "folio_note": "2+ letters of this writer found by the search 'chiffriert' (49 correspondence hits, 28 to Schlik); French letters of 1707 (Cod. Ser. n. 1698, fol. 270r-272v); the Swiss pass of 15 Nov holds other Saint-Saphorin rows. The volume note says 'Viele Originale, darunter mehrere chiffriert'",
-   "cls": "B",
-   "status": "Catalogue: 'Schreiben teilweise chiffriert' (record text); no key or plaintext noted; no study found. Each writer is a separate key. Shelfmark made distinct for merge.py (one entry per writer); original: OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698).",
-   "why": "A run of original letters of the Rakoczi war with ciphered passages, many by one correspondent, in volumes the OeNB catalogue (Mazal/Unterkircher 1963) treats as documents; enough text to attack one writer's code.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "View two letters of this writer; check how long the ciphered passages are and whether a deciphering is pencilled in; check Rakoczi-war ciphers in HHStA Ungarische Akten.",
-   "links": [
-    {
-     "href": "http://data.onb.ac.at/rec/AC13932311",
-     "label": "OeNB record"
-    },
-    {
-     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,chiffriert&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
-     "label": "OeNB Primo search chiffriert"
-    }
-   ],
-   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): OeNB Cod. Ser. n. 1696-1698, Saint-Saphorin letters: as 2820."
-  },
-  {
-   "id": 2823,
-   "counted": true,
-   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
-   "year": 1706,
-   "date": "1705-1707",
-   "language": "German",
-   "region": "Central Europe",
-   "period": "1701-1800",
-   "title": "Emperor Joseph I to Count Leopold Schlik, partly ciphered letters, 1705-07 (Beilagen zur Oesterreichischen Staatsgeschichte, Bd. 13)",
-   "correspondents": "Emperor Joseph I -> Leopold Schlik (imperial general in Hungary, Rakoczi war)",
-   "place": "Vienna / Grosswardein",
-   "shelfmark": "OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698) [Joseph I letters]",
-   "folio_note": "2+ letters of this writer found by the search 'chiffriert' (49 correspondence hits, 28 to Schlik); two imperial letters in Cod. Ser. n. 1696. The volume note says 'Viele Originale, darunter mehrere chiffriert'",
-   "cls": "B",
-   "status": "Catalogue: 'Schreiben teilweise chiffriert' (record text); no key or plaintext noted; no study found. Each writer is a separate key. Shelfmark made distinct for merge.py (one entry per writer); original: OeNB, Cod. Ser. n. 1696-1698 (documents of 1707; Beilagen Nr. 863-945 in Cod. Ser. n. 1698).",
-   "why": "A run of original letters of the Rakoczi war with ciphered passages, many by one correspondent, in volumes the OeNB catalogue (Mazal/Unterkircher 1963) treats as documents; enough text to attack one writer's code.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "verify": "View two letters of this writer; check how long the ciphered passages are and whether a deciphering is pencilled in; check Rakoczi-war ciphers in HHStA Ungarische Akten.",
-   "links": [
-    {
-     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,chiffriert&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
-     "label": "OeNB Primo search chiffriert"
-    }
-   ],
-   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): OeNB Cod. Ser. n. 1696-1698, Joseph I letters: as 2820; an imperial chancery cipher, likely solved in the hand of the recipient."
-  },
-  {
    "id": 2824,
    "counted": true,
    "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
@@ -55472,42 +55301,6 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): OeNB Cod. Ser. n. 25702 (Zane, 73 despatches, 'teilw. chiffriert'): Venetian despatches with ciphered passages; whether the ciphered parts are deciphered inline is not stated. Not vetted further."
-  },
-  {
-   "id": 2825,
-   "counted": true,
-   "score_note": "Scored from catalogue text during the 15 Nov 2026 continental blocked-sources Chrome pass (research/sweep_2026-11-15_continental_blocked_chrome/); not viewed on an image",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and correspondent names searched with known.py (see README); no web, Tomokiyo, Lasry or DECODE search",
-   "year": 1905,
-   "date": "1898-1912 (5 groups, about 43 letters)",
-   "language": "German",
-   "region": "Central Europe",
-   "period": "1901-1950",
-   "title": "Adelgunde, Duchess of Bardi, to her sister Archduchess Maria Teresa, letters 1898-1912: description ends 'teilweis...' (cipher not confirmed)",
-   "correspondents": "Adelgunde of Bavaria, Duchess of Bardi -> Maria Teresa of Austria",
-   "place": "various",
-   "shelfmark": "OeNB, Autogr. 1942/21 to 1942/25",
-   "folio_note": "Five record groups of 8-9 letters or postcards each, found by the search 'Geheimschrift'; the description reads 'Briefe von ihrer Schwester Adelgunde, teilweis[...]' and the word after it was cut off in my read",
-   "cls": "C",
-   "status": "Weak: the search term matched, but the matching text was not read, so a cipher is unconfirmed.",
-   "why": "If the family used a private cipher these are about 43 letters of one pair. Worth one record read.",
-   "importance": 1,
-   "solvability": 1,
-   "difficulty": 3,
-   "verify": "Open Autogr. 1942/25(1-8) and read the whole Beschreibung line.",
-   "links": [
-    {
-     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&facet=rtype,include,Korrespondenz&lang=de_DE&offset=0",
-     "label": "OeNB Primo search Geheimschrift (records 4-6, 9-10)"
-    }
-   ],
-   "source": "OeNB Primo (search.onb.ac.at) in Chrome, continental blocked-sources pass, 15 Nov 2026",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): OeNB Autogr. 1942/21-25 (Bardi, family letters, 20th century): weak class C; not vetted."
   },
   {
    "id": 2826,
@@ -55977,11 +55770,32 @@
      "label": "OeNB Primo search (Chiffern)"
     }
    ],
-   "access_note": "description only",
+   "access_note": "OeNB Autogr. 15/28-1; SRU record AC14166923 (parent AC15074034); card image https://katzoom.onb.ac.at/DB4/hnl/m001/z008/h092/g0079173.gif.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed."
+   "scored": "vetted",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "OeNB Alma SRU (https://obv-at-oenb.alma.exlibrisgroup.com/view/sru/43ACC_ONB, open to scripts 16 Nov 2026; script onbsru.py): record AC14166923 ('1 Brief mit Unterschrift (Chiffern), mit Anschrift, 1 Blatt, 1 Seite'; recipient Clesio, Bernardo; place Augsburg; provenance Tiroler Gubernium 1831) and the OeNB Autographenkatalog cards 79173-79174 (https://katzoom.onb.ac.at/cgi-bin/katadmin/hnlview.pl?katalog=7&kz=1&start=0079173, images img/kz79173.png and img/kz79174.png), read 16 Nov 2026. The letter itself was not seen.",
+     "extent": "One leaf, one page, with address.",
+     "cipher": "The card's formula 'L.s.(Chiffern)' puts 'Chiffern' in brackets after 'L.s.' (letter signed), describing the signature, as in item 6 'L.s.(Chiffre)'; no card or record says the text is in cipher."
+    },
+    "prior_art": {
+     "decode": "known.py on '15/28', Cles, Clesio and 'Maximilian I' 16 Nov 2026: no DECODE record for this letter; Maximilian I hits are other items (Moronus to Maximilian, catalogue).",
+     "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched, tags stripped, for Cles, 1517, Maximilian: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched, tags stripped, for Cles, 1517: no hit.",
+     "edition": "Not searched in the Regesta Imperii (Maximilian I) for 7 Aug 1517: not needed once the card shows the 'Chiffern' note belongs to the signature.",
+     "literature": "No web search: the archive's own card decides the question."
+    },
+    "key_check": "No key applies: no ciphertext is described.",
+    "duplicates": "known.py: no other lead; the series 15/28(1-11) holds other Maximilian letters, of which 15/28-6 carries the same '(Chiffre)' signature note.",
+    "verdict": "not_cipher",
+    "closed": "The OeNB card catalogue's 'L.s.(Chiffern)' describes the signature (a sign-manual or monogram), not an enciphered text; the letter is a signed chancery letter to Bernhard von Cles, Augsburg, 7 Aug 1517."
+   }
   },
   {
    "id": 2835,
