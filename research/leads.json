@@ -17261,13 +17261,35 @@
    "source": "Chrome pass, BNE Digital",
    "prior_art": "open as far as checked (2 Nov 2026: known.py, Cryptoole snapshot; one web search; Tomokiyo, Lasry, edition not searched)",
    "needs_archive_scan": "no",
-   "access_note": "BNE Digital viewer, free; CC BY 4.0",
+   "access_note": "BNE Digital (not used, per brief; 403/Cloudflare to scripts on earlier tries); DECODE R1172 full images need a login.",
    "ark": "",
-   "scored": "sweep",
+   "scored": "vetted",
    "decode_ids": [
     1172
    ],
-   "vetting_note": "Leaf still not seen at a readable size. Retested from the cloud on 11 Nov 2026: bnedigital.bne.es and bdh-rd.bne.es return 403 to curl and a Cloudflare 'Verificación de seguridad' page in headless Chromium (not passed); academia.edu/37751652 (Tomokiyo 2018) 403. de-crypt.org answers: RecordsView/1172 read live: 'Status: Non-decrypted', homophonic substitution, 2 pages, but also 'Inline Cleartext: Yes, Inline Plaintext: Yes', which would mean a decipherment written on the leaf; only the 200-px thumbnails are public (full images need a login), too small to tell. Cryptiana pages spanish.htm and eleanor1476.htm opened: neither names MSS/20211/123. Missing: one BNE or DECODE image of /123 to see whether the plaintext is interlined (then read), or Tomokiyo's paper."
+   "vetting_note": "Leaf still not seen at a readable size. Retested from the cloud on 11 Nov 2026: bnedigital.bne.es and bdh-rd.bne.es return 403 to curl and a Cloudflare 'Verificación de seguridad' page in headless Chromium (not passed); academia.edu/37751652 (Tomokiyo 2018) 403. de-crypt.org answers: RecordsView/1172 read live: 'Status: Non-decrypted', homophonic substitution, 2 pages, but also 'Inline Cleartext: Yes, Inline Plaintext: Yes', which would mean a decipherment written on the leaf; only the 200-px thumbnails are public (full images need a login), too small to tell. Cryptiana pages spanish.htm and eleanor1476.htm opened: neither names MSS/20211/123. Missing: one BNE or DECODE image of /123 to see whether the plaintext is interlined (then read), or Tomokiyo's paper.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Not viewed. DECODE R1172 record (local dump research/catalogue_harvest/decode/views*.jsonl, name NLS_MSS_20211_123): inline_cleartext True, inline_plaintext True, 2 pages, status 2, date 1478-11-04, receiver John II.",
+     "extent": "One letter, two pages (DECODE).",
+     "cipher": "Homophonic substitution (DECODE). DECODE's own flag says plaintext is written on the leaf (interlinear), as on the sibling MSS/20211/61 ('Notas interlineales', targets/ferdinand1473)."
+    },
+    "prior_art": {
+     "decode": "R1172: Non-decrypted status but Inline Plaintext: Yes; the other nine BNE 1476-79 letters (R1170-R1184) carry solved statuses.",
+     "tomokiyo": "Tomokiyo, 'Spanish Ciphers before Accession of King Ferdinand: 1470-1479' (Academia 37751652, 2018): 403 to WebFetch; a WebSearch extract of its text (16 Nov 2026) lists the Córdoba 4 Nov 1478 letter, MSS/20211/123, in the 1476-79 group whose cipher (simple substitution with homophones, like the 1473 one) the author reconstructed. The blog post cryptiana.blogspot.com/2018/11 gives no letter list. unsolved.htm has no entry.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "No printed edition of the letter found (targets/ferdinand1473 checked Galende 1994: none).",
+     "literature": "Two web searches (16 Nov 2026) found only Tomokiyo's paper for this letter."
+    },
+    "key_check": "Tomokiyo 2018 reconstructs the 1476-79 cipher; targets/ferdinand1473 holds key_1473 and key_1474 (earlier ciphers), not tested on this letter.",
+    "duplicates": "targets/ferdinand1473 lists /123 as unchecked; no catalogue entry; known.py on '20211' and 'R1172' finds only this lead and Ferdinand-series notes.",
+    "verdict": "read",
+    "closed": "DECODE R1172 records an inline plaintext on the leaf and Tomokiyo 2018 reconstructs the cipher of this letter's 1476-79 group naming MSS/20211/123; reopen only if an image shows no interlinear decipherment."
+   },
+   "access": "online"
   },
   {
    "id": 1600,
@@ -27761,11 +27783,32 @@
    "source": "Hungary/Czech sweep, MNL OL via Archives Portal Europe",
    "prior_art": "open as far as checked (2 Nov 2026: known.py on the names and the DF/P/R numbers, no hits; no web search by instruction: Tomokiyo, Lasry, the DECODE site search, editions and literature NOT searched)",
    "needs_archive_scan": "yes",
-   "access_note": "finding-aid text; DECODE/NAH access to be checked per record",
+   "access_note": "MNL AdatbazisokOnline G 15 item records (no images); originals in MNL OL, Budapest.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Series-level, no document or leaf seen. Ivanyi 1954 p.134 (Hungaricana, opened in Chrome) under 'Orosz kapcsolatok' says only Nedeczky Sandor's reports are 'nagyreszt rejtjeles'; Fogarasi Thalaba Mate's reports and copies of letters to the tsar are NOT called cipher, so the lead's pairing is too wide. Note 20 gives the units: G 15 Caps. A.1 Fasc. 2, 10; A.2 Fasc. 27; E Fasc. 111, 120; F Fasc. 149, 150, 156; H Fasc. 242. Earlier prior art stands: Zsemlye 2025 prints Nedeczky reports and a 1709 cipher letter copy (Ms. 4958/2/III), Lang 2018 pp.64, 94 on the clavis. Whether those reports were deciphered by the chancery needs the G 15 images or the reading room at MNL OL."
+   "scored": "vetted",
+   "vetting_note": "Series-level, no document or leaf seen. Ivanyi 1954 p.134 (Hungaricana, opened in Chrome) under 'Orosz kapcsolatok' says only Nedeczky Sandor's reports are 'nagyreszt rejtjeles'; Fogarasi Thalaba Mate's reports and copies of letters to the tsar are NOT called cipher, so the lead's pairing is too wide. Note 20 gives the units: G 15 Caps. A.1 Fasc. 2, 10; A.2 Fasc. 27; E Fasc. 111, 120; F Fasc. 149, 150, 156; H Fasc. 242. Earlier prior art stands: Zsemlye 2025 prints Nedeczky reports and a 1709 cipher letter copy (Ms. 4958/2/III), Lang 2018 pp.64, 94 on the clavis. Whether those reports were deciphered by the chancery needs the G 15 images or the reading room at MNL OL.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "MNL AdatbazisokOnline search 'Nedeczky' (807 hits) and 'Fogarasi' run 16 Nov 2026 (mnl_search.py; G 15 rows in raw/g15_nedeczky_fogarasi.json): G 15 E Fasc. 113 fol. 13, 29, 30, 40, 42, 73-76, 77, 88-93 'nagyrészt megfejtett számjelekkel' (adatlap 17424, 17430, 17431, 17436, 17438, 17460, 17461, 17466); A1 Fasc. 2 fol. 27-28 'részben megfejtett'; H Fasc. 229 fol. 46-48 'nagyrészt megfejtett titkos írással'; E Fasc. 113 fol. 14+17, 15-16, 70, 78, 79, 80-84 'nagyrészt / szinte végig megfejtetlen' and fol. 94 'néhol megfejtetlen'.",
+     "extent": "About 25 Nedeczky items 1707-1710 in G 15; about 7 of them marked mostly undeciphered.",
+     "cipher": "Number cipher with the signature group 441. Most reports carry the chancery's decipherment on the leaf; no Fogarasi item in G 15 carries a cipher note."
+    },
+    "prior_art": {
+     "decode": "Lead 2484's check stands (de-crypt.org 'Nedeczky', 11 Nov 2026): keys R613-R615 and R454-R455 only, no Nedeczky ciphertext.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Zsemlye 2025 (Belvedere Meridionale 37/3) quotes the 8 Apr, 24 Apr, 1 May and 8 May 1708 reports in clear from MTA Ms. 4958/2/II (recorded under lead 2484); Ivanyi 1954 p. 134-135 is the source of this row.",
+     "literature": "Lang 2018 pp. 64, 94 on the Rakoczi-Nedeczky clavis (earlier vetting); Révay 1974 on Rakoczi's ciphers not seen."
+    },
+    "key_check": "Nedeczky keys on DECODE R613-R615, R454-R455 (Lang T.Rad.13, T.Rad.81, T.Rak.79); not tested here.",
+    "duplicates": "The undeciphered Nedeczky items (E Fasc. 113 fol. 14+17, 15-16, 70, 78, 79, 80-84, 94) are lead 2484 exactly; known.py 'Fasc. 113', 'Nedeczky' finds only 2484, this row and the southeast sweep.",
+    "verdict": "partly_read",
+    "closed": "Series-level duplicate of lead 2484 for its only undeciphered items; the other Nedeczky reports in G 15 are marked deciphered on the leaf, and Fogarasi's reports are not described as cipher."
+   }
   },
   {
    "id": 1913,
@@ -42257,11 +42300,32 @@
    "source": "MNL AdatbazisokOnline sweep (G 15), 11 Nov 2026",
    "prior_art": "not vetted: editions not opened. DECODE 'Károlyi': no G 15 ciphertext record.",
    "needs_archive_scan": "yes",
-   "access_note": "No images in the MNL database (record text only); order scans of the folios from MNL OL, Budapest (G 15, II. Rakoczi Ferenc fejedelem leveltara, Emigracioba vitt resz).",
+   "access_note": "MNL AdatbazisokOnline item records (no images); Hungaricana returns 403 to scripts (16 Nov 2026).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Nine Karolyi letters across four fascicles (C 65, G 218, H 239, B 22), most with only a word or two lines in figures. Checked 11 Nov: DECODE 'Karolyi' 0 records; Archivum Rakoczianum (archive.org full texts) prints Rakoczi's and Bercsenyi's letters, not Karolyi's. NOT opened, and they would cover the January 1711 letters (H Fasc. 239 fol. 24, 25-26): Lukinich, A szatmari beke tortenete es okirattara (1925) and Pulay's Szatmari bekesseg; neither is on archive.org and hungaricana is 403 here. Open those two, then split: the one promising piece is B Fasc. 22 fol. 86-87 ('a külcímet kivéve végig megfejtetlen számjelekkel', writer only guessed as Karolyi)."
+   "scored": "vetted",
+   "vetting_note": "Nine Karolyi letters across four fascicles (C 65, G 218, H 239, B 22), most with only a word or two lines in figures. Checked 11 Nov: DECODE 'Karolyi' 0 records; Archivum Rakoczianum (archive.org full texts) prints Rakoczi's and Bercsenyi's letters, not Karolyi's. NOT opened, and they would cover the January 1711 letters (H Fasc. 239 fol. 24, 25-26): Lukinich, A szatmari beke tortenete es okirattara (1925) and Pulay's Szatmari bekesseg; neither is on archive.org and hungaricana is 403 here. Open those two, then split: the one promising piece is B Fasc. 22 fol. 86-87 ('a külcímet kivéve végig megfejtetlen számjelekkel', writer only guessed as Karolyi).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "MNL datasheets read 16 Nov 2026 (mnl_adatlap.py): https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/16263 (C 65 fol. 9-10, 9 Oct 1706, 'részben megfejtetlen'), 18145 (G 218 fol. 28-29, 'két sor'), 18146 (fol. 30-31, 'két sor'), 18149 (fol. 36-37, 'pár sor'), 18150 (fol. 38, 'egy-két szó'), 18163 (fol. 63-64, 'egy-két szó'), 18642 (H 239 fol. 24, 9 Jan 1711, Kiadási információk 'Bánkúti, Dok. 32. (No. 33.)'), 18643 (fol. 25-26, 13 Jan 1711, 'Bánkúti, Dok. 32. (No. 34.)'), 15393 (B 22 fol. 86-87, s.d., '[Károlyi Sándor?]', 'a külcímet kivéve végig megfejtetlen számjelekkel').",
+     "extent": "Nine letters; seven carry a word to a few lines of figures, one partly, one (B 22) wholly in figures.",
+     "cipher": "Number cipher in Károlyi's letters to Rakoczi; the archive marks the figures undeciphered, but two letters are printed and most of the others are plain letters with a few figure groups."
+    },
+    "prior_art": {
+     "decode": "Earlier check (11 Nov): DECODE 'Károlyi' has no G 15 ciphertext record; not repeated.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Lukinich, A szatmári béke története és okirattára (1925; MEK 23062, PDF text searched 16 Nov 2026): no cipher words; it summarises Károlyi's 13 Jan 1711 report from the Aspremont archive (MNM), not the G 15 copy, and prints Károlyi to Rakoczi 21 Feb 1711. Bánkúti 1991 (nos. 33-34) prints the 9 and 13 Jan 1711 letters per the MNL records; not seen here, so whether the figures are resolved there is not checked. Archivum Rakoczianum (earlier check): no Károlyi letters.",
+     "literature": "Lang 2015/2018 and the AETAS 2014 article treat the Károlyi-Bercsényi sign system (catalogue notes); no study of these letters found."
+    },
+    "key_check": "Károlyi key sheets MNL OL P 396 nos. 379, 11345, 10543 (lead record); not seen or tested.",
+    "duplicates": "known.py 'Károlyi', 'Fasc. 22, fol. 86': only this lead and the southeast sweep files; no catalogue entry for these folios.",
+    "verdict": "partly_read",
+    "closed": "Two of the nine letters are printed (Bánkúti nos. 33-34) and five have only a word to a few lines of figures; the row is closed and the one wholly ciphered piece, G 15 B Fasc. 22 fol. 86-87, is offered as its own lead."
+   }
   },
   {
    "id": 2487,
@@ -47795,11 +47859,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
+   "access_note": "ACTApro records are a JSF shell to curl (16 Nov 2026: the archive.xhtml permalinks return the page frame without the record); the sweep read them in Chrome. No images online.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "OBA, eleven Schoenberg to Albrecht letters 1519-23 'mit Auflösung': OBA 26245 (11 July 1523) is printed in Joachim, Politik des letzten Hochmeisters vol. 3 as Nr. 110 'Chiffrirter Beibrief' with its German text (OCR of 14 Nov 2026, so that letter is read in print); the 1522 letters of 16 Jan and 12 Feb are cited only in Joachim's source lists, and 3 Jan and 20 Jan 1520 only in vol. 2's. Check each of the other ten in Joachim vols. 2-3 (OCR in the session scratch) and split the rest by key year (1519-20, 1522, 1523) before an entry; catalogue 553 already holds Schoenberg letters without Auflösung. (research/vetting_2026-11-14_gsta_deep/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "OBA, eleven Schoenberg to Albrecht letters 1519-23 'mit Auflösung': OBA 26245 (11 July 1523) is printed in Joachim, Politik des letzten Hochmeisters vol. 3 as Nr. 110 'Chiffrirter Beibrief' with its German text (OCR of 14 Nov 2026, so that letter is read in print); the 1522 letters of 16 Jan and 12 Feb are cited only in Joachim's source lists, and 3 Jan and 20 Jan 1520 only in vol. 2's. Check each of the other ten in Joachim vols. 2-3 (OCR in the session scratch) and split the rest by key year (1519-20, 1522, 1523) before an entry; catalogue 553 already holds Schoenberg letters without Auflösung. (research/vetting_2026-11-14_gsta_deep/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro descriptions as quoted in the lead (14 Nov 2026 sweep): 22724 'Auflösung eines Chiffrebriefes', 22861 'Original in Chiffern; auch Auflösung', 22951 'Chiffernauflösungen', 22993 'wohl Auflösung eines Chiffrenbriefes', 23072 'Auflösung eines Chiffers', 25292 'Beibrief in Chiffern mit Erläuterungen', 25331 'In Chiffern; dabei Auflösung', 26268 the Grand Master's answer to a Chiffernbrief. Joachim, Politik des letzten Hochmeisters vol. 3 (IA diepolitikdeslet03joac, OCR) p. 246 no. 110 'Chiffrirter Beibrief' (11 Jul 1523).",
+     "extent": "Eleven OBA units 1519-23; cipher extent per unit not described.",
+     "cipher": "The archive's descriptions say a decipherment (Auflösung) is filed with the cipher for most units, and OBA 26245 is printed in clear by Joachim; this is the opposite of the bar's 'no decipherment on or with it'."
+    },
+    "prior_art": {
+     "decode": "known.py on the OBA numbers and Schönberg/Albrecht: only this lead, catalogue 553 and the GStA sweep files; no DECODE record.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Joachim vols. 2 and 3 (IA OCR, downloaded 16 Nov 2026) searched for Chiffr/Ziffer: vol. 3 prints OBA 26245 as no. 110 'Chiffrirter Beibrief' with its German text and a 1524 'Zettel in Chiffren' in clear (p. 322); the 1522 letters of 16 Jan and 12 Feb are cited in a source note (vol. 3 p. 23-24), and vol. 2 has a 1519 note on cipher instructions (no. 36).",
+     "literature": "No study of the Schönberg-Albrecht cipher found by the earlier GStA pass; not repeated."
+    },
+    "key_check": "The Chiffrenbuch of Schönberg and the chancery is OBA 27584 (key_leads.json, GStA sweep); not seen, not tested. The filed Auflösungen are themselves plaintext for the cipher.",
+    "duplicates": "Catalogue 553 holds the Schönberg-Albrecht letters 'in Chiffern' with no Auflösung noted; this lead is its complement. known.py finds no other entry on these OBA numbers.",
+    "verdict": "read",
+    "closed": "By the GStA finding aid the decipherment (Auflösung) is filed with 8 of the 11 units and OBA 26245 is printed by Joachim (vol. 3 no. 110); 25324 and 25459, whose descriptions were cut off, can be added to catalogue 553 if their records show no Auflösung."
+   }
   },
   {
    "id": 2626,
@@ -51733,11 +51818,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): de Courten, Cn B 5/3, Argenson searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "access_note": "descriptions on archives-online.org (AEV data); images not checked; the fonds is described on the AEV site",
+   "access_note": "AEV scopequery.vs.ch record pages (opened in Chrome on 15 Nov 2026); no images; owner's permission needed. Not re-fetched by script here.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Valais catalogue record Cn B 5/3/5 opened (scopequery.vs.ch, Chrome, 15 Nov 2026): 'Cahier de 12 pages', Versailles 13 Jan 1745, no images, 'Consultation restreinte', owner's permission required (private fonds). The neighbours 5/3/5bis (19 Jan 1745) and 5/3/5ter are 'mis en clair', so a clear version (a contemporary decipherment or a draft) is filed with the cipher: not promotable under the bar (decipherment with the text) until each unit is known. Web search 15 Nov 2026 (Courten, d'Argenson, mission to Berlin 1745): only a 1954 Valais article (doc.rero.ch I-N177-1954-005) on Courten's mission, not checked for the cipher; HLS names the 1745 mission. A cipher/clear pair is a good known-plaintext target for the French ministry cipher of 1745 if the clear text is an independent decipherment, so keep it for a reading-room photograph."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Valais catalogue record Cn B 5/3/5 opened (scopequery.vs.ch, Chrome, 15 Nov 2026): 'Cahier de 12 pages', Versailles 13 Jan 1745, no images, 'Consultation restreinte', owner's permission required (private fonds). The neighbours 5/3/5bis (19 Jan 1745) and 5/3/5ter are 'mis en clair', so a clear version (a contemporary decipherment or a draft) is filed with the cipher: not promotable under the bar (decipherment with the text) until each unit is known. Web search 15 Nov 2026 (Courten, d'Argenson, mission to Berlin 1745): only a 1954 Valais article (doc.rero.ch I-N177-1954-005) on Courten's mission, not checked for the cipher; HLS names the 1745 mission. A cipher/clear pair is a good known-plaintext target for the French ministry cipher of 1745 if the clear text is an independent decipherment, so keep it for a reading-room photograph.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "AEV, fonds de Courten, Cn B 5/3/5 ('Mémoire chiffré pour le comte de Courten', Versailles 13 Jan 1745, cahier de 12 pages), 5/3/5bis and 5/3/5ter ('mis en clair'), 5/3/6 and 6bis ('Mémoire militaire chiffré du ministre d'Argenson', 17 Jan), 5/3/8 and 5/3/10 ('en partie chiffrée', 28 Feb 1745): descriptions as recorded by the 15 Nov sweep and vetting pass.",
+     "extent": "Seven units; the memoir of 13 Jan is a 12-page cahier; the extent of cipher in the others is not described.",
+     "cipher": "French ministry cipher of 1745 (not seen). A clear version ('mis en clair') of the 13 Jan memoir is filed beside it, so that unit fails the bar."
+    },
+    "prior_art": {
+     "decode": "known.py 'Courten', 'Cn B 5/3': only the Austria/Swiss sweep files and this lead; no DECODE record found in the dumps.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Frederick II's Politische Correspondenz / Oeuvres print his reply to d'Argenson's memoir of 29 Jan 1745 (web search 16 Nov 2026), not the 13 Jan memoir to Courten; not compared. The 1954 Valais article on Courten (doc.rero.ch I-N177-1954-005) now resolves to the RERO DOC closure notice, not the text.",
+     "literature": "One web search (Courten, d'Argenson, 1745, mémoire chiffré): HLS article on Courten, nothing on the cipher."
+    },
+    "key_check": "No key held; the 'mis en clair' units are plaintext for the 1745 cipher. Not tested.",
+    "duplicates": "known.py on the shelfmark and names: no catalogue entry or target; the 1757 Choiseul-Courten units (Cn B 5/11/6-8) are a separate lead.",
+    "verdict": "partly_read",
+    "closed": "The ciphered memoir Cn B 5/3/5 has its clear version filed beside it (5/3/5bis, 5/3/5ter 'mis en clair'); the other units are undescribed and restricted, so only a reading-room look at 5/3/6, 5/3/8 and 5/3/10 could make a new lead."
+   }
   },
   {
    "id": 2756,
@@ -51848,11 +51954,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): Vettori, J1.58, 1977/70, Cynthius, Tricarico searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
-   "access_note": "description via archives-online.org; the Federal Archives site not checked for scans",
+   "access_note": "ASF Mediceo avanti il Principato filza CV, IIIF images by curl: https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100105/A0000NNN.ptif/full/1272,/0/default.jpg (positions 091-094 = doc. 27, 095-098 = doc. 28, 099-100 = c. 43 decipherment, 113-114 = c. 51 decipherments, 117-119 = doc. 31). The MAP filza listing page returned no image list on 16 Nov; the image folder 00100105 was found by trial.",
    "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Provenance settled (Federal Archives record opened in Chrome, 15 Nov 2026): J1.58 is the Emil Usteri-Hurlimann deposit (delivery 1977/70); its #06 is 'St.A. Florenz, Archivio Mediceo avanti il Principato, Filza 105', and the unit is a Mikroform (microfilm), orderable only after login. So these are microfilm copies of Florentine originals (letter dated 25 Feb 1515 [=1516], Lyon), not a separate collection. The original is in ASF MAP filza 105 (CV): check the Medici Archive Project / ASF images for it and for DECODE/Medici keys before promoting; the Vettori legation edition (Legazione in Francia) not checked. Not seen, so not promoted."
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (Austria/Swiss sweep): Provenance settled (Federal Archives record opened in Chrome, 15 Nov 2026): J1.58 is the Emil Usteri-Hurlimann deposit (delivery 1977/70); its #06 is 'St.A. Florenz, Archivio Mediceo avanti il Principato, Filza 105', and the unit is a Mikroform (microfilm), orderable only after login. So these are microfilm copies of Florentine originals (letter dated 25 Feb 1515 [=1516], Lyon), not a separate collection. The original is in ASF MAP filza 105 (CV): check the Medici Archive Project / ASF images for it and for DECODE/Medici keys before promoting; the Vettori legation edition (Legazione in Francia) not checked. Not seen, so not promoted.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza CV, IIIF positions 091-092 (doc. 27, c. 42, signed 'Franc.s Victorius', dated 'Lugduni die xxv februarii MDXV'), 094 (address to Lorenzo de' Medici), 095-097 (doc. 28, Vienne, Feb 1515 s.f.), 099 (c. 43), 113-114 (c. 51r 'Deciferato della lra de 27', c. 51v 'Deciferato della lra de 29'), 117-119 (doc. 31, signed Vettori, 'Lugduni die xxix Jan.'); inventory vol. 4 p. 27 (MAP site image 001A0004/A0000027) lists 'Franciscus Vectorius, orator. Lione, 1515 feb. 25, n. 27. Vienne, 1525 [sic] feb. 22, n. 28. Lugdunii, 1515 gen. 29, n. 31'.",
+     "extent": "Doc. 27: one full page of figure-and-sign cipher (c. 42r) and a few lines on c. 42v; doc. 31: about two pages of cipher after a few clear lines; doc. 28 (not in the lead): clear opening and about a page and a half of cipher.",
+     "cipher": "Florentine homophonic cipher with nomenclator (figure groups such as 568, 808, 3qq and signs). Doc. 27 is interlined line by line with the plaintext in a contemporary hand; doc. 31's plaintext is the slip at c. 51v ('Deciferato della lra de 29'); doc. 28's cipher continues in clear on the separate leaf c. 43 (it picks up mid-sentence where the clear part of doc. 28 breaks off into cipher)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Vettori', 'Vectorius', 'filza 105', 'MAP CV': only this lead and its sibling 2760; the DECODE dumps hold no MAP CV record.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Not needed for the verdict: the decipherments are on file in the filza itself. The edition of Vettori's 1515-16 legation letters was not checked.",
+     "literature": "No web search made beyond the sweep's; the decipherments on the leaves settle the verdict."
+    },
+    "key_check": "No key sought: both letters were deciphered at the time on or beside the leaf. The interlined doc. 27 and the c. 43 / c. 51 slips would rebuild the key if a sibling without decipherment turns up.",
+    "duplicates": "known.py on the shelfmark, the MAP filza and the names: no catalogue entry or target; lead 2760 (Tricarico/Cynthius, J1.58 #118) is the same microfilm deposit but a different letter.",
+    "verdict": "read",
+    "closed": "ASF MAP CV doc. 27 (Lyon 25 Feb 1516) is interlined with a contemporary decipherment and doc. 31 (Lyon 29 Jan 1516) has its decipherment on c. 51v; the sibling doc. 28 (Vienne, Feb 1516) is deciphered on c. 43."
+   }
   },
   {
    "id": 2760,
@@ -52111,11 +52238,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF Affry (de Boccard): no digital objects ('Multimedias: Sans'); reading room or reproduction order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 225 (Rouille to d'Affry, Dec 1755 - Jul 1757; d'Affry's numbered dispatches are also filed here as clear 'Brouillon d'une depeche n. N', about 70 of them). Series 225 lists 'Lettre de Rouille ... n. N' followed by 'Transcription de la depeche ...' for most numbers (225.83, .89, .99, .106 ... .316), so a transcription is filed with each dispatch and the word 'chiffree' is on only a few titles (225.83, .89, .254, .276): not promotable under the bar. Whether the Transcription is contemporary or modern is not stated; content notes (225.242) are summaries. Important for affry1757 (see the sweep report). Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 225 (Rouille to d'Affry, Dec 1755 - Jul 1757; d'Affry's numbered dispatches are also filed here as clear 'Brouillon d'une depeche n. N', about 70 of them). Series 225 lists 'Lettre de Rouille ... n. N' followed by 'Transcription de la depeche ...' for most numbers (225.83, .89, .99, .106 ... .316), so a transcription is filed with each dispatch and the word 'chiffree' is on only a few titles (225.83, .89, .254, .276): not promotable under the bar. Whether the Transcription is contemporary or modern is not stated; content notes (225.242) are summaries. Important for affry1757 (see the sweep report). Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "AEF friXplore (archives.fr.ch/search/results, server-rendered, curl) harvested 16 Nov 2026 for 'transcription chiffre', 'transcription dépêche', 'décryptage', 'lettre chiffrée', 'Rouillé Affry', 'Bernis Affry', 'Estrées', 'Choiseul Affry', 'chiffrée' (frixplore.py; 1,659 Affry pieces parsed to raw/affry_rows.json; pairing by affry_pairs.py, raw/affry_summary.json); series 225. Examples: 225.83 (1756.03.28) 'Transcription de la dépêche chiffrée d'Antoine-Louis Rouillé, secrétaire d'Etat des Affaires étrangè'; 225.89 (1756.04.04) 'Transcription de la dépêche chiffrée d'Antoine-Louis Rouillé, secrétaire d'Etat des Affaires étrangè'; 225.93 () 'a et b Traduction d'un projet de réponse au mémoire du chevalier Yorke, de la part des villes d'Amst'; 225.99 (1756.04.18) 'Transcription de la dépêche d'Antoine-Louis Rouillé, secrétaire d'Etat des Affaires étrangères, à Lo'.",
+     "extent": "33 transcription/décryptage pieces found in series 225 for the dispatches of Rouillé (1755-57); ciphered pieces are identified in the inventory almost only through the transcription filed beside them.",
+     "cipher": "French ministry cipher (not seen). Each dispatch the inventory marks as ciphered has a 'Transcription du chiffre' / 'Transcription de la dépêche chiffrée' / 'Décryptage' piece filed next to it with the same date or number, i.e. the decipherment is with the text. No piece in 225 is titled ciphered without a transcription."
+    },
+    "prior_art": {
+     "decode": "known.py 'Affry (de Boccard)', 'AEF Affry': only the French-Swiss sweep files and these leads. DECODE holds the Nationaal Archief intercepts of d'Affry's own letters (targets affry1757, affry1757c, R1064-R1076, R1071, R2067), not these incoming dispatches.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "No edition of the Rouillé/Bernis/Choiseul-to-d'Affry dispatches found; the transcriptions filed in the fonds are the decipherments. The ministry's own minutes are in AMAE Correspondance politique Hollande (not checked).",
+     "literature": "One web search in the sweep; no study of these Fribourg pieces. targets/affry1757 NOTES cite only the Nationaal Archief and Lyonet."
+    },
+    "key_check": "No key in the fonds identified for these series; AEF Affry 280.209 'Chiffre avec Botteman' and 280.210 'Premier chiffre remis par le duc de Choiseul et le chancelier du Muy' are key sheets (not seen, not tested). The filed transcriptions would rebuild any key.",
+    "duplicates": "known.py on the AEF shelfmarks and names: no catalogue entry; related targets affry1757/affry1757c are d'Affry's outgoing letters (Nationaal Archief, Lyonet), and lead 2773 (Havrincourt, Affry 267) is the promoted residue of another series.",
+    "verdict": "read",
+    "closed": "The AEF inventory files a contemporary transcription beside each ciphered Rouillé dispatch in series 225."
+   }
   },
   {
    "id": 2767,
@@ -52148,11 +52296,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF Affry (de Boccard): no digital objects ('Multimedias: Sans'); reading room or reproduction order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 226 (Bernis to d'Affry, Jul 1757 onward; d'Affry's clear drafts n. 198-400 are filed as 'Brouillon'). Transcription pieces sit beside the letters (226.11, .18/.19, .56, .92, .103, .110, .130). Transcription filed: not promotable. Source for affry1757. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 226 (Bernis to d'Affry, Jul 1757 onward; d'Affry's clear drafts n. 198-400 are filed as 'Brouillon'). Transcription pieces sit beside the letters (226.11, .18/.19, .56, .92, .103, .110, .130). Transcription filed: not promotable. Source for affry1757. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "AEF friXplore (archives.fr.ch/search/results, server-rendered, curl) harvested 16 Nov 2026 for 'transcription chiffre', 'transcription dépêche', 'décryptage', 'lettre chiffrée', 'Rouillé Affry', 'Bernis Affry', 'Estrées', 'Choiseul Affry', 'chiffrée' (frixplore.py; 1,659 Affry pieces parsed to raw/affry_rows.json; pairing by affry_pairs.py, raw/affry_summary.json); series 226. Examples: 226.11 (1757.07.03) 'Transcription de la dépêche de l'abbé de Bernis, secrétaire d'Etat des Affaires étrangères, à Louis-'; 226.18 (1757.07.10-1757.07.11) 'Transcription de la dépêche de l'abbé de Bernis, secrétaire d'Etat des Affaires étrangères, à Louis-'; 226.19 (1757.07.10-1757.07.11) 'Suite de la transcription de la dépêche de l'abbé de Bernis, secrétaire d'Etat des Affaires étrangèr'; 226.35 (1757.06.08) 'Traduction d'un passeport des Etats généraux des Provinces-Unies en faveur des frères de Neufville, '.",
+     "extent": "24 transcription/décryptage pieces found in series 226 for the dispatches of Bernis (1757-58); ciphered pieces are identified in the inventory almost only through the transcription filed beside them.",
+     "cipher": "French ministry cipher (not seen). Each dispatch the inventory marks as ciphered has a 'Transcription du chiffre' / 'Transcription de la dépêche chiffrée' / 'Décryptage' piece filed next to it with the same date or number, i.e. the decipherment is with the text. No piece in 226 is titled ciphered without a transcription."
+    },
+    "prior_art": {
+     "decode": "known.py 'Affry (de Boccard)', 'AEF Affry': only the French-Swiss sweep files and these leads. DECODE holds the Nationaal Archief intercepts of d'Affry's own letters (targets affry1757, affry1757c, R1064-R1076, R1071, R2067), not these incoming dispatches.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "No edition of the Rouillé/Bernis/Choiseul-to-d'Affry dispatches found; the transcriptions filed in the fonds are the decipherments. The ministry's own minutes are in AMAE Correspondance politique Hollande (not checked).",
+     "literature": "One web search in the sweep; no study of these Fribourg pieces. targets/affry1757 NOTES cite only the Nationaal Archief and Lyonet."
+    },
+    "key_check": "No key in the fonds identified for these series; AEF Affry 280.209 'Chiffre avec Botteman' and 280.210 'Premier chiffre remis par le duc de Choiseul et le chancelier du Muy' are key sheets (not seen, not tested). The filed transcriptions would rebuild any key.",
+    "duplicates": "known.py on the AEF shelfmarks and names: no catalogue entry; related targets affry1757/affry1757c are d'Affry's outgoing letters (Nationaal Archief, Lyonet), and lead 2773 (Havrincourt, Affry 267) is the promoted residue of another series.",
+    "verdict": "read",
+    "closed": "The AEF inventory files a transcription beside each ciphered Bernis dispatch in series 226."
+   }
   },
   {
    "id": 2768,
@@ -52185,11 +52354,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF Affry (de Boccard): no digital objects ('Multimedias: Sans'); reading room or reproduction order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 227-228 (Choiseul to d'Affry 1759-62): 227.213 'Lettre chiffree' 25 Nov 1759 with 227.214 'Transcription' and 227.215 'deuxieme version'; 228.50/.51 (Praslin n. 320, 27 May 1762) cipher and 'Transcription du chiffre'. Transcription filed with each: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 227-228 (Choiseul to d'Affry 1759-62): 227.213 'Lettre chiffree' 25 Nov 1759 with 227.214 'Transcription' and 227.215 'deuxieme version'; 228.50/.51 (Praslin n. 320, 27 May 1762) cipher and 'Transcription du chiffre'. Transcription filed with each: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "AEF friXplore (archives.fr.ch/search/results, server-rendered, curl) harvested 16 Nov 2026 for 'transcription chiffre', 'transcription dépêche', 'décryptage', 'lettre chiffrée', 'Rouillé Affry', 'Bernis Affry', 'Estrées', 'Choiseul Affry', 'chiffrée' (frixplore.py; 1,659 Affry pieces parsed to raw/affry_rows.json; pairing by affry_pairs.py, raw/affry_summary.json); series 227, 228. Examples: 227.36 (1759.01.26) 'Transcription de la lettre chiffrée du 26 janvier 1759'; 227.37 (1759.01.26-) 'Transcription de la lettre chiffrée du 26 janvier 1759 (copie de la cote précédente)'; 227.81 (1759.04.22) 'Transcription de la lettre chiffrée du 22 avril 1759'; 227.214 (1759.11.25-) 'Transcription de la lettre chiffrée du duc de Choiseul'.",
+     "extent": "27 transcription/décryptage pieces found in series 227, 228 for the dispatches of Choiseul and Choiseul-Praslin (1759-62); ciphered pieces are identified in the inventory almost only through the transcription filed beside them.",
+     "cipher": "French ministry cipher (not seen). Each dispatch the inventory marks as ciphered has a 'Transcription du chiffre' / 'Transcription de la dépêche chiffrée' / 'Décryptage' piece filed next to it with the same date or number, i.e. the decipherment is with the text. Residue without a transcription in the harvest: 227.287, 227.465, 227.516a, 227.618."
+    },
+    "prior_art": {
+     "decode": "known.py 'Affry (de Boccard)', 'AEF Affry': only the French-Swiss sweep files and these leads. DECODE holds the Nationaal Archief intercepts of d'Affry's own letters (targets affry1757, affry1757c, R1064-R1076, R1071, R2067), not these incoming dispatches.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "No edition of the Rouillé/Bernis/Choiseul-to-d'Affry dispatches found; the transcriptions filed in the fonds are the decipherments. The ministry's own minutes are in AMAE Correspondance politique Hollande (not checked).",
+     "literature": "One web search in the sweep; no study of these Fribourg pieces. targets/affry1757 NOTES cite only the Nationaal Archief and Lyonet."
+    },
+    "key_check": "No key in the fonds identified for these series; AEF Affry 280.209 'Chiffre avec Botteman' and 280.210 'Premier chiffre remis par le duc de Choiseul et le chancelier du Muy' are key sheets (not seen, not tested). The filed transcriptions would rebuild any key.",
+    "duplicates": "known.py on the AEF shelfmarks and names: no catalogue entry; related targets affry1757/affry1757c are d'Affry's outgoing letters (Nationaal Archief, Lyonet), and lead 2773 (Havrincourt, Affry 267) is the promoted residue of another series.",
+    "verdict": "partly_read",
+    "closed": "The ciphered Choiseul dispatches have transcriptions or décryptages filed beside them; at most four pieces (227.287, .465, .516a, .618) lack one in the inventory and could be re-proposed as a residue lead after a look."
+   }
   },
   {
    "id": 2769,
@@ -52259,11 +52449,32 @@
     }
    ],
    "prior_art": "open as far as checked (15 Nov 2026): \"Affry (de Boccard)\", \"archives.fr.ch\", \"friXplore\" and \"AEF Affry\" searched with known.py: no hit. Related targets affry1757 and affry1757c (d'Affry to Stainville, R1071) exist but cite only the Nationaal Archief and Lyonet decipherments; no web, Tomokiyo, Lasry or DECODE search made",
-   "access_note": "friXplore lists no digital images for the Affry pieces (Multimedias: none); needs the AEF reading room or a reproduction order",
+   "access_note": "AEF Affry (de Boccard): no digital objects ('Multimedias: Sans'); reading room or reproduction order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 238 (Marshal d'Estrees, May-Jun 1757): 238.10 and .14 a/b are 'Transcription du chiffre de la lettre ...' beside the letters. Transcription filed: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only."
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (French-Swiss sweep): AEF Affry 238 (Marshal d'Estrees, May-Jun 1757): 238.10 and .14 a/b are 'Transcription du chiffre de la lettre ...' beside the letters. Transcription filed: not promotable. Fribourg friXplore (archives.fr.ch, fetched 15 Nov 2026): the fonds has no digital objects ('Multimedias: Sans' for all 331 hits of the Affry set), so the pieces are not online; the unit records give cote, title, date and a short content note only.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "AEF friXplore (archives.fr.ch/search/results, server-rendered, curl) harvested 16 Nov 2026 for 'transcription chiffre', 'transcription dépêche', 'décryptage', 'lettre chiffrée', 'Rouillé Affry', 'Bernis Affry', 'Estrées', 'Choiseul Affry', 'chiffrée' (frixplore.py; 1,659 Affry pieces parsed to raw/affry_rows.json; pairing by affry_pairs.py, raw/affry_summary.json); series 238. Examples: 238.10 (1757.05.06) 'Transcription du chiffre de la lettre du maréchal d'Estrées du 6 mai 1757'; 238.14 (1757.05.12) 'a et b Transcription du chiffre de la lettre du maréchal d'Estrées du 12 mai 1757'; 238.17 (1757.05.15) 'Transcription du chiffre de la lettre du maréchal d'Estrées du 15 mai 1757'; 238.20 (1757.05.20) 'Transcription du chiffre de la lettre du maréchal d'Estrées du 20 mai 1757'.",
+     "extent": "9 transcription/décryptage pieces found in series 238 for the dispatches of Marshal d'Estrées (1757); ciphered pieces are identified in the inventory almost only through the transcription filed beside them.",
+     "cipher": "French ministry cipher (not seen). Each dispatch the inventory marks as ciphered has a 'Transcription du chiffre' / 'Transcription de la dépêche chiffrée' / 'Décryptage' piece filed next to it with the same date or number, i.e. the decipherment is with the text. Letters of 26 May, 17 and 26 Jun and later have no transcription and no cipher note in the inventory."
+    },
+    "prior_art": {
+     "decode": "known.py 'Affry (de Boccard)', 'AEF Affry': only the French-Swiss sweep files and these leads. DECODE holds the Nationaal Archief intercepts of d'Affry's own letters (targets affry1757, affry1757c, R1064-R1076, R1071, R2067), not these incoming dispatches.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "No edition of the Rouillé/Bernis/Choiseul-to-d'Affry dispatches found; the transcriptions filed in the fonds are the decipherments. The ministry's own minutes are in AMAE Correspondance politique Hollande (not checked).",
+     "literature": "One web search in the sweep; no study of these Fribourg pieces. targets/affry1757 NOTES cite only the Nationaal Archief and Lyonet."
+    },
+    "key_check": "No key in the fonds identified for these series; AEF Affry 280.209 'Chiffre avec Botteman' and 280.210 'Premier chiffre remis par le duc de Choiseul et le chancelier du Muy' are key sheets (not seen, not tested). The filed transcriptions would rebuild any key.",
+    "duplicates": "known.py on the AEF shelfmarks and names: no catalogue entry; related targets affry1757/affry1757c are d'Affry's outgoing letters (Nationaal Archief, Lyonet), and lead 2773 (Havrincourt, Affry 267) is the promoted residue of another series.",
+    "verdict": "read",
+    "closed": "Each Estrées letter the inventory shows as ciphered has its 'Transcription du chiffre' filed beside it (238.10 to 238.54)."
+   }
   },
   {
    "id": 2771,
