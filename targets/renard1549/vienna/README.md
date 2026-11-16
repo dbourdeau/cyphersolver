@@ -11,6 +11,8 @@ Konvolut Juli 1549, fol. 13-14 [sourced: HHStA letter GZ 2026-0.947.186, 13 Nov 
 wrote a French decipherment above, beside (left margin) and below the cipher on each page. The sender's clear text is only the closing
 prayer, date ("De Paris ce douzie[sme] de Juillet 1549") and the signature "Simon Renard"; address "A Lempereur" on 14v.
 
+**No person has checked these transcriptions.** The French and the cipher were transcribed by AI models (Claude) from the working scan; the scan is not online.
+
 **Files**
 - `FR_CLEAR.txt`: the French clear text, transcribed as written (zones T/M/B = decipherer, C = sender, N = later note), frozen before any alignment.
 - `CIPHER.tsv`, `SIGNS.tsv`: the cipher sign by sign with neutral labels S01-S69 (67 lines, 1,513 signs), frozen with FR_CLEAR (`FREEZE.txt`).

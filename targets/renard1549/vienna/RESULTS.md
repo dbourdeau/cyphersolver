@@ -2,14 +2,16 @@
 
 HHStA Wien, StAbt Frankreich, Diplomatische Korrespondenz 17, Konv. Juli 1549, fol. 13-14. Working scan supplied by HHStA to Malcolm McBratney, GZ 2026-0.947.186 (not to be committed or published). Worked 16 Nov 2026 (Brisbane).
 First reading of this dispatch: **Ivan Sourvillo** (Cyphersolver renard1549, catalogue 1560), from the Spanish copy at Modena. This file tests his reading against the French original; it does not replace it.
-Outcome method (Lasry categories): **key recovered from adjacent plaintext**. Cipher identified as Pich-Ponce's PP1, so a published key also exists (section 6).
+No person has checked the Vienna transcriptions (French or cipher): they were made by AI models (Claude) from the archive's working scan.
+
+Outcome method (Lasry categories): **key recovered from adjacent plaintext**. The cipher looks like Pich-Ponce's PP1 on structure (section 6); if so, a published key also exists. Not compared sign by sign.
 
 ## Bottom line
 
 - The French in the margin IS a contemporary decipherment of the cipher. [derived: the cipher decodes to the same French, line after line]
 - Key rebuilt: 127 distinct signs over 1,513 sign tokens; 1,201 of 1,513 tokens (79.4%) sit on their sign's majority value. [measured: sum of n_value / sum of n_total in key_renard1549_vienna.tsv]
 - Hold-out, first pass (figure of record): **73.8%** letters, 5,000-shuffle controls max 27.9% and 27.0%. Caveat: its seed was written with the whole letter in view. Two leak-free reruns gave **56.7%** and **64.8%**, both under our 65% line. [measured] So the line is met only by the first pass. Reported as is.
-- Sourvillo's reading holds on the plot, the people and the numbers, with five differences (section 5).
+- Sourvillo's reading holds on the plot, the people and the numbers, with four differences (the soldier count, the prior, the second plotter's name and office, the courier's day) and one addition (Figueroa) (section 5).
 
 ## 1. Layout [measured from the scan unless tagged]
 
@@ -76,11 +78,11 @@ Vienna wording below is the cipher decoded with the key, checked against hand D.
 | Close | asks how to deal with him; Paris 12 July 1549 | "me fere escripre come je me debvray conduire devers luy et le contenter"; "De Paris ce douzie[sme] de Juillet 1549" | agree |
 | Number 63 | read as the soldier count | on fol. 13v a sign "63" is a null | no conflict in Vienna; relevance to Modena [unverified] |
 
-The Modena images were not seen here, so whether the three differences are the translator's or the reader's is [unverified].
+The Modena images were not seen here, so whether the four differences are the translator's or the reader's is [unverified].
 
 ## 6. Which key is it, and what could it open
 
-- **It is PP1** (the Saint-Mauris / Granvelle cipher, 1544-1554) on structure: same five vowel-mark rules, same numerals for doubled letters (LL 10, MM 12, NN 13, PP 14, RR 15, SS 16, TT 17, UV 18, CC 3), nulls from 20 up. [derived from Pich-Ponce 2023b as summarised; her sign images were not compared shape by shape: unverified at sign level]
+- **It looks like PP1** (the Saint-Mauris / Granvelle cipher, 1544-1554) on structure: same five vowel-mark rules, same numerals for doubled letters (LL 10, MM 12, NN 13, PP 14, RR 15, SS 16, TT 17, UV 18, CC 3), nulls from 20 up. [derived from Pich-Ponce 2023b as summarised; her sign images were not compared shape by shape: unverified at sign level]
 - Renard took over the Paris embassy from Saint-Mauris in 1549, so he inherited the cipher [unverified as a statement of fact; consistent with Tomokiyo's user list].
 - renard1554 (AGS E 808 f. 184): Tomokiyo calls it PP1, so the same key; the repo holds no key or transcription to compare sign by sign. [sourced]
 - renard1556 (BnF fr. 20991, Lasry): a later letter-and-syllable system written in Latin letters ("que, fo, ma, ta"); **not** this key. [sourced]
