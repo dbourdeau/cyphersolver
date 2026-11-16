@@ -1,3 +1,8 @@
+> **Record only (16 Nov 2026).** This brief was written before the cipher was read. The accepted reading is in
+> `../qaysarani1350/reading.md` and `../qaysarani1350/NOTES.md`. The text recovered below and its theme (a reply on a jim/ha
+> misreading) did not hold up: the accepted verses are a love couplet in a different key. Kept as the attack's product, not as
+> a statement of the text.
+
 # LJS 51 f. 106v: a brief for a reader of Mamluk Arabic verse
 
 **What we need:** a reading of two lines of ṭawīl, recovered from a cipher. Most letters are known. The open
