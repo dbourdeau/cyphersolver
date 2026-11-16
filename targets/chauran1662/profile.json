@@ -469,6 +469,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py, model es-golden-age) of the frozen-table decode of the five items (pass 2; extension left out): 3,387 read tokens, 295 types; reading -1.891 per letter; random keys -2.809 (z 11.0); key annealed onto shuffled ciphertext best -2.011 (mean -2.041, z 9.2); annealer on the real text -2.028. Verdict: pass. It tests the frozen table's values on these items, not the words of a reading.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "verification",
+   "what": "Integration check of PR #677 (r20), without the licensed images. Key and verifier hashes match. Test A rerun: identical. Test B rerun: the nine items identical (five pass, four not shown); its two control lines not rerun (key/reconciled_ff189_260.json and the f. 228 transcription are not filed). A separate decoder from table_v1.tsv on f245 pass 2: 481 of 672 groups in the frozen table, same words as the filed decryption on lines 1-8. Dumont VI.2 p. 418 seen on the Internet Archive image: the frozen-table words alone follow its first clause. TNA Discovery item numbers of section 1 confirmed for ff. 189, 260, 264, 293.",
+   "result": "worked"
   }
  ],
  "outcome": {
