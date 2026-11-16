@@ -39984,13 +39984,35 @@
    ],
    "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
    "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "access_note": "ASF MAP IIIF by curl, 16 Nov 2026 (doc. 11 at 1272 x 821 px).",
    "seen": "image",
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Leaf could not be re-opened and the edition question (Lettere di Lorenzo II citing MAP XLVIII, 13 as ordinary prose) is unresolved. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: no answer (curl 000; headless Chromium 'upstream request failed'). Retry when the ASF MAP host answers."
+   "scored": "vetted",
+   "vetting_note": "Leaf could not be re-opened and the edition question (Lettere di Lorenzo II citing MAP XLVIII, 13 as ordinary prose) is unresolved. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: no answer (curl 000; headless Chromium 'upstream request failed'). Retry when the ASF MAP host answers.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XLVIII, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100048/A0000023.ptif (doc. 11 recto, 1272 x 821 px) and A0000027 (doc. 13, 1352 x 1240), full/max, downloaded 16 Nov 2026; earlier passes (n18) viewed docs 11-15 at the server maximum.",
+     "extent": "Doc. 11: one oblong page of 18 lines, date line 'in Milano a di 8 luglio 1477', signature 'Tomaso Soderini'; docs 12-15 are similar single pages.",
+     "cipher": "No signs or figures. Most words read as Italian when the hand is followed ('madonna', 'conforteranno', 'tutti loro', 'cavalli', 'al campo', 'domani'); the words struck through with heavy ink are cancellations in the flow of the text, not code groups. Earlier passes found ordinary Italian vowel patterns and no gloss."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search by curl (research/sweep_2026-11-11_german/decode_search.py), 16 Nov 2026: 'Pandolfini', 'Soderini', 'Sassetti', 'Lanfredini' 0 records; 'Mediceo' returns only the ASFi Cifrari serie II vol. 9 key records of 1601-1800 (R7455-R7459 and neighbours). No DECODE record of any Mediceo avanti il Principato letter.",
+     "tomokiyo": "Tomokiyo's cryptiana unsolved.htm (repo copy img/raw/unsolved.txt, fetched 15 Nov 2026) grepped for 'Soderini', 'Medici': no hit; its only Medici items are Catherine and Marie de Medici.",
+     "lasry": "cryptiana GL.htm (Lasry's decipherments; repo copy img/raw/GL.txt) grepped for 'Soderini', 'Medici': no hit; its Florentine items are Acciaiuoli 13 Jun 1478 (R4800) and a 1597 Guicciardini letter, not this document.",
+     "edition": "Lorenzo de' Medici, Lettere II (1474-1478, ed. Fubini; Google Books 1hpdAAAAMAAJ) p. 432 cites 'T. Soderini a Lorenzo, ... MAP, XLVIII, 13' and paraphrases it as ordinary content, with no mention of cipher (vetting_2026-11 batch c35).",
+     "literature": "Rochon, La jeunesse de Laurent (1963) uses Soderini's 1477 letters in MAP XLVIII without mention of cipher (noted in batch n18); no study treats them as disguised."
+    },
+    "key_check": "Not applicable: no cipher system seen.",
+    "duplicates": "known.py 'XLVIII' and 'Tommaso Soderini' (earlier passes): only this lead; Soderini's true sign cipher of August 1481 is a separate row.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not cipher: Soderini's June-July 1477 letters are ordinary Italian in a hard, much-corrected hand, and the editor of Lorenzo's Lettere read one of them as prose."
+   },
+   "access": "online"
   },
   {
    "id": 2376,
@@ -40383,46 +40405,6 @@
    }
   },
   {
-   "id": 2385,
-   "counted": true,
-   "year": 1494,
-   "date": "[June 1494] (doc. 15, unsigned \"Cosimo ...\"; docs 14 and 17 are Sassetti's of 8 and 20 June 1494)",
-   "title": "Cosimo Sassetti, June 1494: short note with two lines (about 25 signs) of sign cipher, bare; his glossed letters 14 and 17 beside it",
-   "correspondents": "Cosimo Sassetti -> Piero di Lorenzo de' Medici",
-   "place": "not stated (Lyon?)",
-   "language": "Italian (sign cipher: Greek-like letters, crosses, circles)",
-   "region": "Italy",
-   "period": "15th century",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXV, doc. 15",
-   "folio_note": "Short note; two lines of signs between clear words mid-page; signed \"Cosimo ...\".",
-   "cls": "C",
-   "status": "Bare (800 px). Docs 14 (8 June 1494) and 17 (20 June 1494), Sassetti's letters, carry the same kind of signs with interlinear glosses.",
-   "why": "Too short alone; readable from 14 and 17.",
-   "importance": 1,
-   "solvability": 4,
-   "difficulty": 2,
-   "verify": "Read 14 and 17 glosses; apply to 15.",
-   "links": [
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=75&d=15&c=",
-     "label": "MAP filza 75, doc. 15"
-    },
-    {
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81858",
-     "label": "image id 81858"
-    }
-   ],
-   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
-   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Leaf not re-viewed; signature, date and the scope of the entry still unread. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: connection reset on https (curl exit 35), HTTP 503 on http, so /map/riproduzione/?id=81858 could not be opened. Retry when the ASF host answers."
-  },
-  {
    "id": 2386,
    "counted": true,
    "year": 1494,
@@ -40566,13 +40548,34 @@
    ],
    "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
    "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/001000FF/A0000NNN.ptif (about 1272 px max); image id = first id of the filza + position - 1",
+   "access_note": "ASF MAP IIIF by curl, 16 Nov 2026 (1272 x 892 px, the server maximum).",
    "seen": "image",
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: does not connect (curl 000; the session proxy reports the tunnel closed mid-exchange; 502 in headless Chromium). MAP riproduzione id=80240/80241 could not be re-viewed, so whether Mediceo avanti il Principato LXXIII doc. 3 is a letter cipher or a hard hand is still not established."
+   "scored": "vetted",
+   "vetting_note": "archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: does not connect (curl 000; the session proxy reports the tunnel closed mid-exchange; 502 in headless Chromium). MAP riproduzione id=80240/80241 could not be re-viewed, so whether Mediceo avanti il Principato LXXIII doc. 3 is a letter cipher or a hard hand is still not established.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXIII, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100073/A0000005.ptif (doc. 3, 1272 x 892 px) and A0000006 (verso), full/max, downloaded 16 Nov 2026; the five text lines viewed in 2x crops.",
+     "extent": "One leaf: head '+ Ex urbe Rome 1494', five lines of about 15 dot-separated words each (about 70 words), signature 'Jacobi ...' with a second word not read; the verso has the address panel only.",
+     "cipher": "Every word is followed by a dot, in a regular mercantesca. A few words read as Italian ('perche', 'sono', 'tre', 'amor', 'spero') but most do not ('chazap...', 'zhezno', words with repeated z/zh/ch clusters and few vowels), which fits a letter substitution that keeps word division (vowels replaced by consonants) better than a hard hand. No gloss, no interlinear or marginal writing, no clear copy on the neighbouring position."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search by curl (research/sweep_2026-11-11_german/decode_search.py), 16 Nov 2026: 'Pandolfini', 'Soderini', 'Sassetti', 'Lanfredini' 0 records; 'Mediceo' returns only the ASFi Cifrari serie II vol. 9 key records of 1601-1800 (R7455-R7459 and neighbours). No DECODE record of any Mediceo avanti il Principato letter.",
+     "tomokiyo": "Tomokiyo's cryptiana unsolved.htm (repo copy img/raw/unsolved.txt, fetched 15 Nov 2026) grepped for 'Medici', 'Florence', 'Rome 1494': no hit; its only Medici items are Catherine and Marie de Medici.",
+     "lasry": "cryptiana GL.htm (Lasry's decipherments; repo copy img/raw/GL.txt) grepped for 'Medici', 'Florence': no hit; its Florentine items are Acciaiuoli 13 Jun 1478 (R4800) and a 1597 Guicciardini letter, not this document.",
+     "edition": "No edition: the writer is not identified, the MAP inventory (vol. 3, archive.org OCR) does not flag the item as cipher, and earlier passes found no print of a Rome letter of 1494 signed Iacobo.",
+     "literature": "Web search on the item (Rome 1494, Iacobo, MAP LXXIII, cifra) in earlier passes and known.py found nothing; no study of Latin-letter substitution disguises in MAP letters of 1494 turned up."
+    },
+    "key_check": "No key held or seen in the volume; a simple substitution test on a transcription is the first step (not done).",
+    "duplicates": "known.py 'LXXIII' (16 Nov 2026): only this lead and its sweep row.",
+    "verdict": "open"
+   },
+   "access": "online"
   },
   {
    "id": 2390,
@@ -40682,13 +40685,35 @@
    ],
    "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass 2 (CXXXVII docs 571-1058), Nov 2026",
    "score_note": "Scored from the images viewed during the second MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging_2/)",
-   "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A000NNNN.ptif (about 1272 px max); image id = 132517 + position - 1 for filza CXXXVII",
+   "access_note": "ASF MAP IIIF by curl, 16 Nov 2026 (1272 x 1789 px).",
    "seen": "image",
    "needs_archive_scan": "no",
    "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document or on the writer; no lead or catalogue entry names the writer; DECODE dumps in the repo have no ASF MAP CXXXVII record except leads 2320/2321; Tomokiyo, Lasry and the printed editions not searched in this run.",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Leaf could not be re-viewed, so it is still not shown to be cipher rather than a crude or dialect hand. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: no answer (curl 000; headless Chromium 'upstream request failed'). Retry when the ASF MAP host answers (riproduzione id=134235-134237)."
+   "scored": "vetted",
+   "vetting_note": "Leaf could not be re-viewed, so it is still not shown to be cipher rather than a crude or dialect hand. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: no answer (curl 000; headless Chromium 'upstream request failed'). Retry when the ASF MAP host answers (riproduzione id=134235-134237).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza CXXXVII, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A0001719.ptif (c. 756r, 1272 x 1789 px) and A0001720 (c. 756v), full/max, downloaded 16 Nov 2026; the 'alpobbo' passage viewed in a 1.6x crop.",
+     "extent": "Two full pages of a crude cursive, about 40 lines on the recto, every word followed by a dot; signature on the next leaf not checked.",
+     "cipher": "Reads as dialect Italian: 'medesimo', 'Calandria (?) ... fara alpobbo, farake ... al passo alpobbo ... bisogno e consumarle, che za N.S. absoluto ... el tempo ... non e terminato', 'dimostrazione', 'provare', 'anno', 'amico', 'molto'. The z-for-g spelling (za = gia, zenero = genero) is Venetian/Lombard phonetics. 'alpobbo' (three times) may be 'al populo' or a cover name; nothing shows a letter substitution, and there are no signs or figures. No gloss anywhere on the leaf."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search by curl (research/sweep_2026-11-11_german/decode_search.py), 16 Nov 2026: 'Pandolfini', 'Soderini', 'Sassetti', 'Lanfredini' 0 records; 'Mediceo' returns only the ASFi Cifrari serie II vol. 9 key records of 1601-1800 (R7455-R7459 and neighbours). No DECODE record of any Mediceo avanti il Principato letter.",
+     "tomokiyo": "Tomokiyo's cryptiana unsolved.htm (repo copy img/raw/unsolved.txt, fetched 15 Nov 2026) grepped for 'Medici', 'Florence': no hit; its only Medici items are Catherine and Marie de Medici.",
+     "lasry": "cryptiana GL.htm (Lasry's decipherments; repo copy img/raw/GL.txt) grepped for 'Medici', 'Florence': no hit; its Florentine items are Acciaiuoli 13 Jun 1478 (R4800) and a 1597 Guicciardini letter, not this document.",
+     "edition": "No edition known; the writer is not identified and the MAP inventory does not flag the item as cipher.",
+     "literature": "No literature found or expected for an unidentified dialect letter; earlier passes (n20, t01) already leaned towards dialect Italian."
+    },
+    "key_check": "Not applicable: no cipher system seen; no key in the volume relates to it.",
+    "duplicates": "known.py 'CXXXVII, doc. 747' (16 Nov 2026): only this lead.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not cipher: at full size the dot-separated words are northern Italian dialect written phonetically, not a letter substitution; a possible cover word 'alpobbo' is not a cipher."
+   },
+   "access": "online"
   },
   {
    "id": 2397,
@@ -45193,92 +45218,6 @@
    "scored": "sweep"
   },
   {
-   "id": 2567,
-   "counted": true,
-   "year": 1632,
-   "date": "26 Mar 1632",
-   "title": "Jakob De la Gardie to Gustav II Adolf: four number-cipher passages in a Swedish despatch, no decipherment on the leaf",
-   "correspondents": "Jakob De la Gardie (field marshal) -> King Gustav II Adolf",
-   "place": "not read (the place before 'den 26 Martij Ao 1632' is struck through / illegible at 2000 px)",
-   "language": "Swedish",
-   "region": "Scandinavia",
-   "period": "1611-1650",
-   "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/8 (De la Gardie, Jakob, band 1627-1632), image series R0000783, images 197-199",
-   "folio_note": "R0000783 image 198 (right page, printed fol. number 196): in the running Swedish text, three passages of dot-separated 2-4 digit groups (e.g. '0.2106.3185.229.82.73.77.26.31.98.17.82.72.47.92.26 / 26.2837.rr.97.ium / 20.33.50.44.51.83.91.66.72.22.57 / 26.31.3185.ll.26.1420.dg.3506.99.89.92 / 43.93.33.2090') and a fourth short group ('tt.26.24.73.26.80.86') at the foot of the page, continued at the head of image 199; nothing written between the lines or in the margin. Another letter of the same volume (image 195) has number groups with a small gloss written above them: glossed, not this row",
-   "cls": "A",
-   "status": "Viewed 13 Nov 2026: image 198 and 199 downloaded at 2000 px and images 196, 197, 200 at 1100 px, all opened. Bare numeric nomenclator (numbers with dots, a few doubled letters 'rr', 'll', 'tt' among them); no interlinear or marginal plaintext on this leaf. Not found in any of the earlier Riksarkivet sweeps (known.py on the shelfmark and R0000783: no hit). Lead, no vetting block: no printed edition of De la Gardie's letters to the king was found or opened (HSH Kronologiskt register, archive.org handlingarrrand03scangoog, was searched: no letter of De la Gardie of March 1632 is listed).",
-   "why": "A field marshal's despatch to the king in the last year of Gustav II Adolf, with number cipher in the same period and chancery as the glossed Oxenstierna cipher of 1633-35; the context sentences around each passage (Danish troops, 'Förstlandh', ammunition, defence) are readable in Swedish and give cribs.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed at native size",
-   "verify": "Look for the letter in a printed edition (AOSB part 2 for De la Gardie is Oxenstierna's letters, not the king's; try Gustaf II Adolfs skrifter, Styffe 1861, and Svenska riksarkivets pergamentsbref/Riksregistratur calendars); compare the number groups with the glossed Oxenstierna code (1133.08/7-13) and the Riksarkivet 'Chifferklaver' key sheets (DECODE lists records such as 4319-4329) for a De la Gardie key.",
-   "links": [
-    {
-     "label": "Riksarkivet viewer, image 198",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000783_00198"
-    },
-    {
-     "label": "image 199",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000783_00199"
-    },
-    {
-     "label": "NAD record, Skrivelser till konungen 1133.07/8",
-     "href": "https://sok.riksarkivet.se/?postid=ArkisRef%20SE/RA/1133/1133.07/8"
-    }
-   ],
-   "seen": "image",
-   "source": "Riksarkivet paging sweep 13 Nov",
-   "prior_art": "HSH Kronologiskt register (archive.org handlingarrrand03scangoog, full text grepped for 1632 and De la Gardie): no De la Gardie letter of March 1632; AOSB, Styffe and any De la Gardie edition not opened. DECODE RecordsList?search=Gardie lists only the Riksarkivet Chifferklaver key sheets (broad match), no record for this letter.",
-   "needs_archive_scan": "no",
-   "access_note": "open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
-   "id": 2568,
-   "counted": true,
-   "year": 1627,
-   "date": "6 Apr 1627 (read 'den 6 Aprilis 1627'; header 'Aprilis 627')",
-   "title": "Johan Banér to Gustav II Adolf: seven number-cipher passages in a Swedish letter of April 1627, no decipherment on the leaf",
-   "correspondents": "Johan Banér (colonel, later field marshal) -> King Gustav II Adolf",
-   "place": "not read",
-   "language": "Swedish",
-   "region": "Scandinavia",
-   "period": "1611-1650",
-   "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/3 (Banér), image series R0000623, images 356-357 (printed fol. 42-43)",
-   "folio_note": "R0000623 image 357, left page (the letter begins on the right page of image 356 and ends on the right page of image 357 with 'Datum ... den 6 Aprilis 1627'): about 25 lines of running Swedish carrying seven passages of colon-separated 1-3 digit groups (e.g. '85,26,3,15,32,96 / 111,51,60,86,52,20,53 / 100,17,66,8,20,26 / 116,33:96,72:35,45:85,52,70,24,29,56,98,31,10,35,40:71,116,37,3,18,58,29 / ...'), with a Roman 'III' and a possible 'anno 1559' written among them; no writing between the lines or in the margin. Image 358 (a postscript of 7 April) is in clear",
-   "cls": "C",
-   "status": "Viewed 13 Nov 2026: image 357 downloaded at 2000 px, images 356 and 358 at 1100 px. Bare numeric nomenclator in running text; nothing interlinear, marginal or on a separate sheet near it. The volume (R0000623) was only reached by the detector top-64 windows, so other leaves with cipher may remain unlooked at. Known.py on the shelfmark, R0000623 and 'Johan Banér': no hit. Lead, no vetting block: no edition of Banér's letters to the king found or opened.",
-   "why": "A letter of 1627 whose context (Prussian campaign, cavalry, 'Correspondentz', Danish and Polish affairs) is readable Swedish and gives cribs; the code is earlier than the glossed Oxenstierna nomenclator of 1633-35 and may be a Banér-specific one.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed at native size",
-   "verify": "Check whether the letter is printed (Banér's despatches of 1627 in Handlingar rörande Skandinaviens historia or in a Banér biography, e.g. Sjögren / Fryxell-type editions) and whether a Banér key is among the Riksarkivet Chifferklaver sheets or in 1133.07 volumes of the same fonds; look at the other Banér volumes for a glossed letter in the same code.",
-   "links": [
-    {
-     "label": "Riksarkivet viewer, image 357",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00357"
-    },
-    {
-     "label": "image 356",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00356"
-    },
-    {
-     "label": "image 358",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00358"
-    }
-   ],
-   "seen": "image",
-   "source": "Riksarkivet paging sweep 13 Nov",
-   "prior_art": "Not opened: any edition of Banér's letters of 1627. HSH Kronologiskt register (archive.org handlingarrrand03scangoog) full text not searched for Banér 1627 yet. DECODE: the key records R4122, R4123, R4325 (Banér keys, from decode_updates/queue.json via targets/baner1640) are known; the letter itself is not recorded there under this shelfmark (queue.json and known.py: no hit).",
-   "needs_archive_scan": "no",
-   "access_note": "open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts",
-   "ark": "",
-   "scored": "sweep"
-  },
-  {
    "id": 2569,
    "counted": true,
    "year": 1632,
@@ -45329,49 +45268,6 @@
     "closed": "Printed in clear: Arkiv till upplysning om svenska krigens och krigsinrättningarnes historia II (1854), archive.org arkivtillupplys01mankgoog, prints Lars Grubbe's letters to the King of Sept-Nov 1632 from the Riksarkivet originals, with the cipher passages in italics; checked 14 Nov 2026 on the page images of no. 847 (Dessau 21 Oct 1632, p. 629: italic passage 'ryttare, som vi hafva hos oss, äre effective Etttusende sexhundrade hästar') and no. 854 (Torgau 31 Oct 1632, p. 636, footnote 'Det med cursiv stil utmärkta är skrifvet i chiffre'), with nos. 838, 845, 850, 852, 855 of Grubbe in the same run. Reported by Brice Dudout (issue #540, 13 Nov 2026); the leaves carry the stamp 'Tryckt i Krigshist. Arkivet II'. Not checked leaf by leaf against the print (which printed number each of images 254-264 is).",
     "date": "2026-11-14"
    }
-  },
-  {
-   "id": 2570,
-   "counted": true,
-   "year": 1631,
-   "date": "5 Nov - 14 Dec 1631 (letters dated 5 Nov, 7 Dec and 14 Dec 1631)",
-   "title": "'Chemnitz' (Nuremberg) to Gustav II Adolf: German despatches of Nov-Dec 1631 with number-and-letter cipher, some passages without decipherment",
-   "correspondents": "signature read as '...Chemnitz' (first name not read; a Swedish agent writing from Nuremberg) -> King Gustav II Adolf",
-   "place": "Nuremberg ('Datum Nürnberg den 7 Xbris Ao 1631'); 55/57 letter from 'Mainz 14 Dec 1631' on the cover of image 59 (the cover's place not checked against the letter)",
-   "language": "German",
-   "region": "Scandinavia",
-   "period": "1611-1650",
-   "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/4 (C), image series R0000624, images 55-59",
-   "folio_note": "R0000624 image 55 (one leaf): a 6-line passage of dotted numbers with letters (m, pf, q, gl) at the foot of the German text, no gloss; image 56 left page: a 7-line passage, no gloss, under a letter of Wallenstein's movements ('Friedland', 'Würzburg'), dated Nuremberg 7 Dec 1631; image 58: 5 Nov 1631 letter with a passage that has small plaintext words above some groups, and a 7 Dec postscript in clear; image 57: a letter written almost wholly in number-and-letter groups with a German decipherment written between the lines (glossed). So the glossed sibling and the bare passages are in the same hand and volume",
-   "cls": "A",
-   "status": "Viewed 13 Nov 2026: images 54-59 at 700 px, 56 and 57 at 1700 px, 58 at 1800 px. Nomenclator of 2-digit numbers with letters m, pf and others, German context. Passages on 55 and 56 show no decipherment at that size; the top-64 window sheet of this volume was the only screening, so more passages may lie elsewhere in the volume. known.py on R0000624, 1133.07/4 and 'Chemnitz': no hit. Lead, no vetting block: no edition opened (Swedish despatches from Nuremberg of 1631 may be printed in the Gustav Adolf correspondence editions; not searched). Work in targets/chemnitz1631 (PR #539, Brice Dudout, 13 Nov 2026): writer Martin Chemnitz (contributor's identification), key rebuilt from the image 57 glosses, images 55-56 read in part (68 of 89 words sure); in progress, lead stays open.",
-   "why": "A 1631 German-language number cipher whose deciphered letter (image 57) sits in the same volume, which gives a crib for the bare passages on 55 and 56, about the movements of Wallenstein and the contributions of Nuremberg.",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed",
-   "verify": "Identify the writer (the signature after 'Undertänigster gehorsamer Diener' ends in '-mnitz'); look for a printed edition of his 1631 despatches; transcribe image 57's gloss to build the table and read 55 and 56.",
-   "links": [
-    {
-     "label": "Riksarkivet viewer, image 55",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00055"
-    },
-    {
-     "label": "image 56",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00056"
-    },
-    {
-     "label": "image 57 (glossed)",
-     "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00057"
-    }
-   ],
-   "seen": "image",
-   "source": "Riksarkivet paging sweep 13 Nov",
-   "prior_art": "known.py: no hit. DECODE, Tomokiyo, Lasry and editions not searched for this item.",
-   "needs_archive_scan": "no",
-   "access_note": "open scans at sok.riksarkivet.se; lbiiif images need the Referer https://sok.riksarkivet.se/ for scripts",
-   "ark": "",
-   "scored": "sweep"
   },
   {
    "id": 2571,
@@ -45500,53 +45396,6 @@
     "closed": "Read from the clerk's plaintext kana written beside the cipher on the draft (JACAR C10072242900, frame 0545), table no. 1 of the Army's 1877 kana tables; written up as targets/kagoshima1879 (PR #536, Brice Dudout; integration check 13 Nov 2026)",
     "date": "2026-11-13"
    }
-  },
-  {
-   "id": 2574,
-   "counted": true,
-   "year": 1482,
-   "date": "27 Mar 1482 (dating line 'Die xxvij Marty 1482'; endorsement 'ad xxvij di marzo')",
-   "title": "Pierfilippo Pandolfini, Florentine orator in Rome, to Lorenzo de' Medici, 27 Mar 1482: full page of symbol cipher with clear opening and closing, bare (MAP XXXVIII doc. 418)",
-   "correspondents": "Pierfilippo Pandolfini (orator at Rome) -> Lorenzo de' Medici",
-   "place": "Rome",
-   "language": "Italian (symbol-and-figure cipher, clear Italian around it)",
-   "region": "Italy",
-   "period": "15th century",
-   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XXXVIII, doc. 418 (old c. 428)",
-   "folio_note": "Image positions 913 (doc. 418 r, viewer id 51734, pencil number 428) and 914 (doc. 418 v: address 'Mco viro Laurentio de medicis Maiori', endorsement 'Da Pierfilippo pandolfini da Roma ad xxvij di marzo', show-through of the recto). Recto: 4 clear lines ('Mce vir etcetera. Hiersera ... vi scripsi una tra ... di che vi mandai copia'), then about 19 lines mostly in cipher with clear words between the cipher runs ('del papa', 'alla dieta', 'Hò altro per hora racchomandomi a voi'), signed 'Petrus philippus Padolfi Rome ora'.",
-   "cls": "A",
-   "status": "Bare on the leaf viewed 13 Nov 2026: no interlinear, marginal or foot decipherment on recto or verso; neighbouring leaves 912 and 915 are clear letters of other correspondents. A sibling of lead 2559 (MAP LIII doc. 13, Pandolfini, Apr 1483, same hand and cipher style).",
-   "why": "Roman news for Lorenzo in March 1482 (the pope, a diet, an 'impresa'), in what looks like the same sign cipher as Pandolfini's April 1483 letter; the clear words between cipher runs give cribs and a second sample of the system exists.",
-   "importance": 3,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the leaf at 1272 px: about 19 lines, roughly 1,000 symbols and figures, clear context words every few lines; with lead 2559 the pair gives two samples of one system.",
-   "verify": "Transcribe the cipher lines of c. 428r and compare with MAP LIII doc. 13 (lead 2559). NOT VETTED: the date lies inside the range of the Lettere di Lorenzo il Magnifico edition (notes not online) and this is an incoming letter, so no vetting block; check the Lettere notes for 1482 and DECODE by hand before promotion.",
-   "links": [
-    {
-     "label": "MAP filza XXXVIII doc. 418 (viewer)",
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=51734"
-    },
-    {
-     "label": "IIIF image pos 913",
-     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000913.ptif/full/1272,/0/default.jpg"
-    },
-    {
-     "label": "filza search",
-     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=38&d=418&c="
-    },
-    {
-     "label": "IIIF image pos 914 (doc. 418 v)",
-     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000914.ptif/full/1272,/0/default.jpg"
-    }
-   ],
-   "seen": "image",
-   "source": "ASF Mediceo avanti il Principato images (MAP filza XXXVIII paging), map_paging sweep, 13 Nov 2026",
-   "prior_art": "Not vetted. known.py (13 Nov 2026) shows only the sibling lead 2559 (LIII doc. 13); DECODE RecordsList search Pandolfini run 13 Nov 2026 (see README); the Lettere di Lorenzo il Magnifico notes, which could cover a 1482 incoming letter, are not online and were not opened.",
-   "needs_archive_scan": "no",
-   "access_note": "scans public on the ASF MAP site, no login, curl works; IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000913.ptif (1272 px max)",
-   "ark": "",
-   "scored": "sweep"
   },
   {
    "id": 2576,
@@ -54585,39 +54434,6 @@
    "vetting_note": "Vetting pass 15 Nov 2026 (Chrome wave 7): ANC1-1-T-7519 (Generalitat 1937 file, 96 images online): the images were not paged through, so no cipher telegram was seen and none is cited; not promoted."
   },
   {
-   "id": 2858,
-   "counted": true,
-   "year": 1497,
-   "date": "19 Jun 1497",
-   "period": "1497-1559",
-   "language": "Spanish",
-   "region": "Spain",
-   "cls": "B",
-   "title": "Juan Claver to the Catholic Monarchs, Milan, 19 Jun 1497: diplomatic news from France and Italy, cipher at the end",
-   "correspondents": "Juan Claver (ambassador) -> Catholic Monarchs",
-   "place": "Milan",
-   "shelfmark": "Archivo Historico Provincial de Zaragoza (Archivo del Reino de Aragon), Coleccion Zurita, C_CRAR/000001/0040",
-   "folio_note": "1 letter, incomplete (torn); cipher at the end",
-   "status": "Online (PDF on DARA). DARA summary: 'Escritura cifrada en la parte final del mensaje'. First-leaf image viewed 15 Nov 2026. Not vetted against lead 1048 (Claver to the Monarchs, Milan, 23 Jun 1497): the dates differ by four days, so it may be a draft, a duplicate or a different letter.",
-   "why": "Same writer and place as lead 1048, 1497; Parisi deciphered Claver's later letters, so the key may be in print.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the DARA record and the thumbnail of the first leaf (15 Nov 2026, wave 8); the vetting block says what was viewed",
-   "verify": "Compare with lead 1048 (23 Jun 1497, Milan) and Parisi 2019 before promoting; check the last leaf of the PDF.",
-   "links": [
-    {
-     "href": "https://dara.aragon.es/opac/app/item?i=1056537",
-     "label": "DARA record C_CRAR/000001/0040"
-    }
-   ],
-   "source": "DARA (dara.aragon.es) results and item pages, fetched same-origin in Chrome, wave 8, 15 Nov 2026",
-   "ark": "",
-   "needs_archive_scan": "no",
-   "seen": "image",
-   "scored": "sweep"
-  },
-  {
    "id": 2859,
    "counted": true,
    "year": 1479,
@@ -54648,7 +54464,30 @@
    "ark": "",
    "needs_archive_scan": "no",
    "seen": "image",
-   "scored": "sweep"
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "DARA record https://dara.aragon.es/opac/app/item?i=1055725 (C_CRAR/000001/0029), PDF attachment 79/f2/AHPZ_C_CRAR_000029.pdf (2 pages), images img/dara_0029_p0_0.jpeg (1617 x 2160 px) and dara_0029_p1_0.jpeg (1598 x 2157 px) viewed 16 Nov 2026.",
+     "extent": "One letter of 24 lines on the recto, dated 'Dada en Guadalupe a xxv de enero año MCCCCLXXIX', signed by Ferdinand and countersigned; the verso has the address 'A la real magestat del señor e padre muy [honor]able' and endorsements '1479, Del Sr. Rey de Castella'.",
+     "cipher": "No cipher: every line is clear Castilian. The text says 'quatro cartas juntas, dos en cifra e dos en llano, he recebido de vuestra magestat' and 'quanto a lo que scrive en cifra, por otro mensagero ... respondere'; the DARA summary's 'otro tema que queda en secreto (cifrado)' refers to that deferred answer."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList search 16 Nov 2026: 'Zurita' 0; no record of this letter (not expected, as it holds no cipher).",
+     "tomokiyo": "cryptiana unsolved.htm (repo copy) grepped for 'Zurita', 'Ferdinand': nothing on this letter.",
+     "lasry": "GL.htm (repo copy) grepped for 'Ferdinand', 'Fernando': nothing on this letter.",
+     "edition": "No edition looked for beyond the DARA summary, since the letter is wholly clear and readable on the scan.",
+     "literature": "None needed; the item's interest is as a dated mention of John II's cipher letters of January 1479, which are not in this file."
+    },
+    "key_check": "Not applicable: no cipher in the item. The two cipher letters of John II it answers are not in C_CRAR/000001.",
+    "duplicates": "known.py 'C_CRAR' (16 Nov 2026): the CRAR rows 2854-2857, 2865 and lead 2858 are other letters.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not cipher: Ferdinand's letter of 25 Jan 1479 is wholly in clear and only mentions that two of his father's letters were in cipher."
+   },
+   "access": "online",
+   "access_note": "DARA PDF AHPZ_C_CRAR_000029.pdf (two page images), fetched 15 Nov 2026."
   },
   {
    "id": 2862,
