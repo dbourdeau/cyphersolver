@@ -45,6 +45,16 @@ The repo listed cc.131-132 as unread; the contributor found no printed text of t
 - Five short holes in the reading and the plotters' names spelled letter by letter (Chaulve-F) - blocker: illegible; the contributor's crops leave them unread, and the project could not reach the images
 - Transcription not compared with the images by the project; Renard's original in Vienna and the Besançon decipherment - blocker: needs-physical-access; Estense host refused by this session's network, the Vienna and Besançon papers are not online
 
+## The Vienna original (16 Nov 2026)
+
+Malcolm McBratney (with Claude) obtained a working scan of Renard's French original from HHStA Wien (StAbt Frankreich, Diplomatische
+Korrespondenz 17, Konv. Juli 1549, fol. 13-14; HHStA GZ 2026-0.947.186). The body is in cipher with a contemporary French decipherment
+beside it. `vienna/` holds the French text, a neutral-label transcription of the cipher, a rebuilt key (not proven: leak-free held-out
+tests 56.7% and 64.8%) and the comparison with the reading above. It confirms the reading on the plot, the people and the force, and
+differs on four details: 62 or 63 soldiers, the prieur de Lombardie, the second plotter "Chauvey secretaire dudit duc" (so *amo* =
+secretary) and the courier's day ("mardi ou mercredi"); it names the ambassador at Genoa, Figueroa. See `vienna/README.md`. The reading
+above is the contributor's and is not changed here.
+
 ## Escalation
 
 - [x] siblings: c.40-42 (15 Jul 1549, same key, decipherment c.41) used for the key; the gonzaga1549 sign letters are another cipher

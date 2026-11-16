@@ -74154,6 +74154,69 @@
    "repository": "asf"
   },
   {
+   "id": 2385,
+   "counted": true,
+   "year": 1494,
+   "date": "[June 1494] (doc. 15, unsigned \"Cosimo ...\"; docs 14 and 17 are Sassetti's of 8 and 20 June 1494)",
+   "title": "Cosimo Sassetti, June 1494: short note with two lines (about 25 signs) of sign cipher, bare; his glossed letters 14 and 17 beside it",
+   "correspondents": "Cosimo Sassetti -> Piero di Lorenzo de' Medici",
+   "place": "not stated (Lyon?)",
+   "language": "Italian (sign cipher: Greek-like letters, crosses, circles)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXV, doc. 15",
+   "folio_note": "Short note; two lines of signs between clear words mid-page; signed \"Cosimo ...\".",
+   "cls": "C",
+   "status": "Bare (800 px). Docs 14 (8 June 1494) and 17 (20 June 1494), Sassetti's letters, carry the same kind of signs with interlinear glosses.",
+   "why": "Too short alone; readable from 14 and 17.",
+   "importance": 1,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Read 14 and 17 glosses; apply to 15.",
+   "links": [
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=75&d=15&c=",
+     "label": "MAP filza 75, doc. 15"
+    },
+    {
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=81858",
+     "label": "image id 81858"
+    }
+   ],
+   "source": "ASF Mediceo avanti il Principato (MAP) images, whole-filza paging pass, Nov 2026",
+   "score_note": "Scored from the images viewed during the MAP paging pass, 6 Nov 2026 (research/sweep_2026-11_asf_map_paging/)",
+   "access_note": "ASF MAP IIIF by curl, 16 Nov 2026 (doc. 15 recto 1465 x 812 px).",
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document; not flagged as cipher in the MAP inventory (vol. 3, archive.org OCR); DECODE dumps in the repo have no ASF MAP ciphertext record; Tomokiyo and Lasry not searched in this run. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md): check overlap.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "Leaf not re-viewed; signature, date and the scope of the entry still unread. archiviodistatofirenze.cultura.gov.it retested from the cloud on 11 Nov 2026: connection reset on https (curl exit 35), HTTP 503 on http, so /map/riproduzione/?id=81858 could not be opened. Retry when the ASF host answers.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza LXXV, https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100075/A0000034.ptif (doc. 15 recto, 1465 x 812 px), A0000035 (doc. 15 verso, 812 x 1465) and A0000033 (doc. 14, 1428 x 2001), full/max, downloaded and viewed 16 Nov 2026 with crops of the cipher lines and the signature.",
+     "extent": "One oblong note of 13 lines beginning 'Piero mio, io sono sano ...'; the cipher is one run of about 30 signs filling the second half of line 9 and the start of line 10, between clear words. Signed 'Cosimo suo salutem' with a date line ending '... 1494' (day and month only partly legible at this size).",
+     "cipher": "Sign cipher: circles, crosses, a square, Greek-like letters (phi, psi, sigma forms), digit-like signs; no word division visible. No gloss above or below the run and nothing in the margin; the verso has only the address. Doc. 14 (Sassetti's letter of 8 June 1494) carries the same kind of signs with small interlinear plaintext above them, so the system is glossed elsewhere in the filza but this run is not."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search by curl (research/sweep_2026-11-11_german/decode_search.py), 16 Nov 2026: 'Pandolfini', 'Soderini', 'Sassetti', 'Lanfredini' 0 records; 'Mediceo' returns only the ASFi Cifrari serie II vol. 9 key records of 1601-1800 (R7455-R7459 and neighbours). No DECODE record of any Mediceo avanti il Principato letter.",
+     "tomokiyo": "Tomokiyo's cryptiana unsolved.htm (repo copy img/raw/unsolved.txt, fetched 15 Nov 2026) grepped for 'Sassetti', 'Medici', 'Florence': no hit; its only Medici items are Catherine and Marie de Medici.",
+     "lasry": "cryptiana GL.htm (Lasry's decipherments; repo copy img/raw/GL.txt) grepped for 'Sassetti', 'Medici': no hit; its Florentine items are Acciaiuoli 13 Jun 1478 (R4800) and a 1597 Guicciardini letter, not this document.",
+     "edition": "No edition of Cosimo Sassetti's letters to Piero di Lorenzo found: earlier passes checked Desjardins, Négociations I (no Sassetti) and the MAP inventory vol. 3 (archive.org OCR), which does not flag the note as cipher; a web search on Cosimo Sassetti, June 1494, MAP LXXV found nothing printed.",
+     "literature": "Web search (Cosimo Sassetti 1494 cifra Piero de' Medici Lione) and the repo's research/medici_bia notes: no study of Sassetti's cipher; Marco Vito's work covers 1486-91 letters to Lorenzo, not 1494 letters to Piero."
+    },
+    "key_check": "No key held. Key in volume: docs 14 (8 Jun 1494) and 17 (20 Jun 1494) of the same filza carry interlinear glosses over the same sign set, enough to build a table; not tested in this pass.",
+    "key_in_volume": "MAP LXXV docs 14 and 17, Sassetti's glossed letters of 8 and 20 June 1494 (A0000033 and the following positions): interlinear plaintext over the signs; not yet transcribed or applied to doc. 15.",
+    "duplicates": "known.py 'LXXV' and 'Sassetti' (16 Nov 2026): only this lead and its sweep row; the glossed letters 14 and 17 are not entries. If the lead agent prefers, this note can be folded into one entry with 14 and 17.",
+    "verdict": "open"
+   },
+   "access": "online",
+   "repository": "asf"
+  },
+  {
    "id": 2388,
    "counted": true,
    "year": 1512,
@@ -80402,6 +80465,273 @@
    "repository": "asf"
   },
   {
+   "id": 2567,
+   "counted": true,
+   "year": 1632,
+   "date": "26 Mar 1632",
+   "title": "Jakob De la Gardie to Gustav II Adolf: four number-cipher passages in a Swedish despatch, no decipherment on the leaf",
+   "correspondents": "Jakob De la Gardie (field marshal) -> King Gustav II Adolf",
+   "place": "not read (the place before 'den 26 Martij Ao 1632' is struck through / illegible at 2000 px)",
+   "language": "Swedish",
+   "region": "Scandinavia",
+   "period": "1611-1650",
+   "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/8 (De la Gardie, Jakob, band 1627-1632), image series R0000783, images 197-199",
+   "folio_note": "R0000783 image 198 (right page, printed fol. number 196): in the running Swedish text, three passages of dot-separated 2-4 digit groups (e.g. '0.2106.3185.229.82.73.77.26.31.98.17.82.72.47.92.26 / 26.2837.rr.97.ium / 20.33.50.44.51.83.91.66.72.22.57 / 26.31.3185.ll.26.1420.dg.3506.99.89.92 / 43.93.33.2090') and a fourth short group ('tt.26.24.73.26.80.86') at the foot of the page, continued at the head of image 199; nothing written between the lines or in the margin. Another letter of the same volume (image 195) has number groups with a small gloss written above them: glossed, not this row",
+   "cls": "A",
+   "status": "Viewed 13 Nov 2026: image 198 and 199 downloaded at 2000 px and images 196, 197, 200 at 1100 px, all opened. Bare numeric nomenclator (numbers with dots, a few doubled letters 'rr', 'll', 'tt' among them); no interlinear or marginal plaintext on this leaf. Not found in any of the earlier Riksarkivet sweeps (known.py on the shelfmark and R0000783: no hit). Lead, no vetting block: no printed edition of De la Gardie's letters to the king was found or opened (HSH Kronologiskt register, archive.org handlingarrrand03scangoog, was searched: no letter of De la Gardie of March 1632 is listed).",
+   "why": "A field marshal's despatch to the king in the last year of Gustav II Adolf, with number cipher in the same period and chancery as the glossed Oxenstierna cipher of 1633-35; the context sentences around each passage (Danish troops, 'Förstlandh', ammunition, defence) are readable in Swedish and give cribs.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed at native size",
+   "verify": "Look for the letter in a printed edition (AOSB part 2 for De la Gardie is Oxenstierna's letters, not the king's; try Gustaf II Adolfs skrifter, Styffe 1861, and Svenska riksarkivets pergamentsbref/Riksregistratur calendars); compare the number groups with the glossed Oxenstierna code (1133.08/7-13) and the Riksarkivet 'Chifferklaver' key sheets (DECODE lists records such as 4319-4329) for a De la Gardie key.",
+   "links": [
+    {
+     "label": "Riksarkivet viewer, image 198",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000783_00198"
+    },
+    {
+     "label": "image 199",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000783_00199"
+    },
+    {
+     "label": "NAD record, Skrivelser till konungen 1133.07/8",
+     "href": "https://sok.riksarkivet.se/?postid=ArkisRef%20SE/RA/1133/1133.07/8"
+    }
+   ],
+   "seen": "image",
+   "source": "Riksarkivet paging sweep 13 Nov",
+   "prior_art": "HSH Kronologiskt register (archive.org handlingarrrand03scangoog, full text grepped for 1632 and De la Gardie): no De la Gardie letter of March 1632; AOSB, Styffe and any De la Gardie edition not opened. DECODE RecordsList?search=Gardie lists only the Riksarkivet Chifferklaver key sheets (broad match), no record for this letter.",
+   "needs_archive_scan": "no",
+   "access_note": "Riksarkivet IIIF with the Referer header; images fetched 15 Nov 2026.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Riksarkivet R0000783 images 198 and 199 (img/rik_R0000783_00198.jpg 2273762 bytes, 00199.jpg), Referer route, viewed 16 Nov 2026; the 13 Nov sweep also opened 196, 197 and 200.",
+     "extent": "Image 198 right page (fol. 196): three passages of dot-separated groups ('0.2106.3185.229.82.73.77.26.31.98.17.82.72.47.92.26', '26.2837.rr.97.ium', '20.33.50.44.51.83.91.66.72.22.57', '26.31.3185.ll.26.1420.dg.3506.99.89.92', '43.93.33.2090') and a short group 'tt.26.24.73.26.80.86' lower on the page; about 60 groups in all.",
+     "cipher": "Numeric nomenclator with 2-4 digit groups and a few letters (rr, ll, dg, tt) inside clear Swedish; no interlinear or marginal plaintext on the leaf."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search, 16 Nov 2026: 'Banér'/'Baner' and 'Gardie' 8 pages each, all the Riksarkivet Chifferklaver key sheets (R4325-R4329 and neighbours) plus a 1639 Trauttmansdorff record; 'Oxenstierna' 9 pages (Oxenstiernska samlingen and Rusdorff letters). No record of a letter from Skrivelser till konungen (SE/RA/1133).",
+     "tomokiyo": "cryptiana unsolved.htm (repo copy) grepped for 'Gardie', 'Swed': no De la Gardie item.",
+     "lasry": "GL.htm (repo copy) grepped for 'Gardie', 'Swed', 'Oxenstierna': only R4282 and the Rusdorff letters; not this despatch.",
+     "edition": "HSH Kronologiskt register grepped: Jakob De la Gardie's entries (vols 2, 8, 19, 32, 36) include no letter of March 1632 to the king. A web search found no printed edition of his 1632 despatches.",
+     "literature": "Web search (Jakob De la Gardie brev Gustav II Adolf 1632 chiffer) found no decipherment; it did find Tartu University Library (dspace.ut.ee) manuscript files 'Konzepte der Berichte Jakob De la Gardies an seinen König und an andere Personen' and the king's letters to him 1627-1632, which were not opened."
+    },
+    "key_check": "No key tested. A draft of this despatch among the De la Gardie papers in Tartu (dspace.ut.ee, 'Konzepte der Berichte') could give the plaintext; not opened. The DECODE Chifferklaver sheets returned for 'Gardie' (R4325-R4329) were not compared.",
+    "key_held": "DECODE Chifferklaver records R4325-R4329 (Riksarkivet key sheets matched by the search 'Gardie'): not compared with these groups.",
+    "duplicates": "known.py on '1133.07/8', 'R0000783' and 'De la Gardie' (13 Nov sweep): no other row; the glossed letter on image 195 of the same volume is a different letter.",
+    "verdict": "open"
+   },
+   "access": "online",
+   "repository": "riksarkivet"
+  },
+  {
+   "id": 2568,
+   "counted": true,
+   "year": 1627,
+   "date": "6 Apr 1627 (read 'den 6 Aprilis 1627'; header 'Aprilis 627')",
+   "title": "Johan Banér to Gustav II Adolf: seven number-cipher passages in a Swedish letter of April 1627, no decipherment on the leaf",
+   "correspondents": "Johan Banér (colonel, later field marshal) -> King Gustav II Adolf",
+   "place": "not read",
+   "language": "Swedish",
+   "region": "Scandinavia",
+   "period": "1611-1650",
+   "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/3 (Banér), image series R0000623, images 356-357 (printed fol. 42-43)",
+   "folio_note": "R0000623 image 357, left page (the letter begins on the right page of image 356 and ends on the right page of image 357 with 'Datum ... den 6 Aprilis 1627'): about 25 lines of running Swedish carrying seven passages of colon-separated 1-3 digit groups (e.g. '85,26,3,15,32,96 / 111,51,60,86,52,20,53 / 100,17,66,8,20,26 / 116,33:96,72:35,45:85,52,70,24,29,56,98,31,10,35,40:71,116,37,3,18,58,29 / ...'), with a Roman 'III' and a possible 'anno 1559' written among them; no writing between the lines or in the margin. Image 358 (a postscript of 7 April) is in clear",
+   "cls": "C",
+   "status": "Viewed 13 Nov 2026: image 357 downloaded at 2000 px, images 356 and 358 at 1100 px. Bare numeric nomenclator in running text; nothing interlinear, marginal or on a separate sheet near it. The volume (R0000623) was only reached by the detector top-64 windows, so other leaves with cipher may remain unlooked at. Known.py on the shelfmark, R0000623 and 'Johan Banér': no hit. Lead, no vetting block: no edition of Banér's letters to the king found or opened.",
+   "why": "A letter of 1627 whose context (Prussian campaign, cavalry, 'Correspondentz', Danish and Polish affairs) is readable Swedish and gives cribs; the code is earlier than the glossed Oxenstierna nomenclator of 1633-35 and may be a Banér-specific one.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed at native size",
+   "verify": "Check whether the letter is printed (Banér's despatches of 1627 in Handlingar rörande Skandinaviens historia or in a Banér biography, e.g. Sjögren / Fryxell-type editions) and whether a Banér key is among the Riksarkivet Chifferklaver sheets or in 1133.07 volumes of the same fonds; look at the other Banér volumes for a glossed letter in the same code.",
+   "links": [
+    {
+     "label": "Riksarkivet viewer, image 357",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00357"
+    },
+    {
+     "label": "image 356",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00356"
+    },
+    {
+     "label": "image 358",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000623_00358"
+    }
+   ],
+   "seen": "image",
+   "source": "Riksarkivet paging sweep 13 Nov",
+   "prior_art": "Not opened: any edition of Banér's letters of 1627. HSH Kronologiskt register (archive.org handlingarrrand03scangoog) full text not searched for Banér 1627 yet. DECODE: the key records R4122, R4123, R4325 (Banér keys, from decode_updates/queue.json via targets/baner1640) are known; the letter itself is not recorded there under this shelfmark (queue.json and known.py: no hit).",
+   "needs_archive_scan": "no",
+   "access_note": "Riksarkivet IIIF with the Referer header (lbiiif.riksarkivet.se); images fetched 15 Nov 2026 by the earlier wave-17 run.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Riksarkivet R0000623 images 356 and 357 (img/rik_R0000623_00356.jpg, 00357.jpg; crops 00357_a and 00357_b viewed 16 Nov 2026), from lbiiif.riksarkivet.se/arkis!R0000623_00357 with Referer https://sok.riksarkivet.se/; the 13 Nov sweep also opened image 358.",
+     "extent": "Image 357 left page, about 25 lines of running Swedish with seven passages of comma-separated 1-3 digit groups (e.g. '85,26,3,15,32,96,51', '100,17,66,8,20,26', '116,33: 96,72: 35,65,45: 85,52,70,24,29,56,91,31,10,35,40'), roughly 150 groups; the letter ends on folio 43 with 'Datum ... den 6. Aprilis 1627'.",
+     "cipher": "Numeric nomenclator of 1-3 digit groups with colons between words, inside clear Swedish ('Correspondera', 'Prowantroede'); a Roman 'III' and a year '1559' stand among them. Nothing is written between the lines or in the margin; image 358 (postscript) is clear."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search, 16 Nov 2026: 'Banér'/'Baner' and 'Gardie' 8 pages each, all the Riksarkivet Chifferklaver key sheets (R4325-R4329 and neighbours) plus a 1639 Trauttmansdorff record; 'Oxenstierna' 9 pages (Oxenstiernska samlingen and Rusdorff letters). No record of a letter from Skrivelser till konungen (SE/RA/1133).",
+     "tomokiyo": "cryptiana unsolved.htm (repo copy) grepped for 'Banér', 'Baner', 'Swed': no Banér item; the Swedish hits are Torbjörn Andersson's BnF fr. 2988 solution and HistoCrypt references.",
+     "lasry": "GL.htm (repo copy) grepped for 'Banér', 'Baner', 'Swed', 'Oxenstierna': the Swedish items are Lasry's 'Swedish Cipher in Latin' (R4282) and the Rusdorff letters to Oxenstierna of 1625 (R4336-R4337), not this letter.",
+     "edition": "Handlingar rörande Skandinaviens historia, Kronologiskt register (archive.org copy, img/raw/hsh_reg.txt) grepped: Johan Banér's entries (vols 25, 29, 32, 35, 36, 38) concern 1630s matters, none a letter of April 1627 to the king. A web search for printed Banér letters to Gustav II Adolf of 1627 found none.",
+     "literature": "Web search (Johan Banér brev 1627 Gustav II Adolf, chiffer) found no study or decipherment; the project's own baner1640 target is a different letter and key period."
+    },
+    "key_check": "No key tested. Banér key sheets are on DECODE (R4122, R4123, R4325 via decode_updates/queue.json and targets/baner1640), of later date; whether one matches the 1627 groups is untested. The glossed Oxenstierna code of 1633-35 (1133.08/7-13) is a later chancery system.",
+    "key_held": "DECODE Chifferklaver records R4122, R4123 and R4325 (Banér keys, from targets/baner1640): not tested against the 1627 groups.",
+    "duplicates": "known.py on '1133.07/3', 'R0000623' and 'Johan Banér' (13 Nov sweep) and the catalogue scan for R0000623 (16 Nov): no other row holds this letter.",
+    "verdict": "open"
+   },
+   "access": "online",
+   "repository": "riksarkivet"
+  },
+  {
+   "id": 2570,
+   "counted": true,
+   "year": 1631,
+   "date": "5 Nov - 14 Dec 1631 (letters dated 5 Nov, 7 Dec and 14 Dec 1631)",
+   "title": "'Chemnitz' (Nuremberg) to Gustav II Adolf: German despatches of Nov-Dec 1631 with number-and-letter cipher, some passages without decipherment",
+   "correspondents": "signature read as '...Chemnitz' (first name not read; a Swedish agent writing from Nuremberg) -> King Gustav II Adolf",
+   "place": "Nuremberg ('Datum Nürnberg den 7 Xbris Ao 1631'); 55/57 letter from 'Mainz 14 Dec 1631' on the cover of image 59 (the cover's place not checked against the letter)",
+   "language": "German",
+   "region": "Scandinavia",
+   "period": "1611-1650",
+   "shelfmark": "Riksarkivet, Skrivelser till konungen, SE/RA/1133/1133.07/4 (C), image series R0000624, images 55-59",
+   "folio_note": "R0000624 image 55 (one leaf): a 6-line passage of dotted numbers with letters (m, pf, q, gl) at the foot of the German text, no gloss; image 56 left page: a 7-line passage, no gloss, under a letter of Wallenstein's movements ('Friedland', 'Würzburg'), dated Nuremberg 7 Dec 1631; image 58: 5 Nov 1631 letter with a passage that has small plaintext words above some groups, and a 7 Dec postscript in clear; image 57: a letter written almost wholly in number-and-letter groups with a German decipherment written between the lines (glossed). So the glossed sibling and the bare passages are in the same hand and volume",
+   "cls": "A",
+   "status": "Viewed 13 Nov 2026: images 54-59 at 700 px, 56 and 57 at 1700 px, 58 at 1800 px. Nomenclator of 2-digit numbers with letters m, pf and others, German context. Passages on 55 and 56 show no decipherment at that size; the top-64 window sheet of this volume was the only screening, so more passages may lie elsewhere in the volume. known.py on R0000624, 1133.07/4 and 'Chemnitz': no hit. Lead, no vetting block: no edition opened (Swedish despatches from Nuremberg of 1631 may be printed in the Gustav Adolf correspondence editions; not searched). Work in targets/chemnitz1631 (PR #539, Brice Dudout, 13 Nov 2026): writer Martin Chemnitz (contributor's identification), key rebuilt from the image 57 glosses, images 55-56 read in part (68 of 89 words sure); in progress, lead stays open.",
+   "why": "A 1631 German-language number cipher whose deciphered letter (image 57) sits in the same volume, which gives a crib for the bare passages on 55 and 56, about the movements of Wallenstein and the contributions of Nuremberg.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the scan during the 13 Nov 2026 Nordic paging sweep (research/sweep_2026-11-13_nordic_paging/); viewed",
+   "verify": "Identify the writer (the signature after 'Undertänigster gehorsamer Diener' ends in '-mnitz'); look for a printed edition of his 1631 despatches; transcribe image 57's gloss to build the table and read 55 and 56.",
+   "links": [
+    {
+     "label": "Riksarkivet viewer, image 55",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00055"
+    },
+    {
+     "label": "image 56",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00056"
+    },
+    {
+     "label": "image 57 (glossed)",
+     "href": "https://sok.riksarkivet.se/bildvisning/R0000624_00057"
+    }
+   ],
+   "seen": "image",
+   "source": "Riksarkivet paging sweep 13 Nov",
+   "prior_art": "known.py: no hit. DECODE, Tomokiyo, Lasry and editions not searched for this item.",
+   "needs_archive_scan": "no",
+   "access_note": "Riksarkivet IIIF with the Referer header; images fetched 15 Nov 2026.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Riksarkivet R0000624 images 55, 56 and 57 (img/rik_R0000624_00055.jpg, 00056.jpg, 00057.jpg, Referer route), image 56 viewed 16 Nov 2026; the 13 Nov brief-test vetting (research/vetting_2026-11-13_brief_test/vetting.json) opened 55-57 at 1800 px.",
+     "extent": "Image 56 left page: one passage of about 8 lines of dotted numbers with letters (m, pf, st) inside a German letter dated 'Datum Nürnberg den 7. Xbris Ao 1631', signed '...Chemnitz'; image 55: a 7-line passage; image 57: a leaf almost wholly in cipher with an interlinear German decipherment.",
+     "cipher": "Dot-separated 1-2 digit numbers with letters; on 55 and 56 nothing between the lines or in the margin. Image 57 is glossed word by word, so the system is deciphered on a sibling leaf, not on these two."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList (brief-test vetting 13 Nov 2026): 'Chemnitz' 0, 'Skrivelser till konungen' 0, 'Gustav II Adolf' 0, 'Nürnberg' 1 (a 1908 postcard), 'Nuremberg' 2 unrelated; repeated 16 Nov for 'Oxenstierna' and 'Gardie': no record from SE/RA/1133.",
+     "tomokiyo": "cryptiana unsolved.htm (repo copy) grepped for 'Chemnitz', 'Swed': no item on this letter.",
+     "lasry": "GL.htm (repo copy) grepped for 'Chemnitz', 'Nürnberg', 'Swed': only the Swedish Latin cipher R4282 and the Rusdorff letters.",
+     "edition": "Arkiv till upplysning om svenska krigens historia II (archive.org) has no Chemnitz letter of 1631; Irmer, Verhandlungen Schwedens mit Wallenstein I cites only a Chemnitz report of March 1632 (brief-test vetting). Irmer II-III and Soden were not opened.",
+     "literature": "Web searches (Martin Chemnitz Nürnberg 1631 Gustav Adolf Chiffre) found biographies only. targets/chemnitz1631/NOTES.md (merged from PR #539, Brice Dudout) holds a reading in part (68 of 89 cipher words sure) made with the key rebuilt from image 57; this is the project's own work."
+    },
+    "key_check": "Key in volume: the interlinear decipherment of image 57 (same writer and file) gives 598 letter-group pairs; targets/chemnitz1631/key.tsv (79 values) was rebuilt from it and passed a held-out test on image 58.",
+    "key_in_volume": "Image 57 of R0000624, a Chemnitz letter deciphered between the lines; applied in targets/chemnitz1631 (read in part, in progress).",
+    "duplicates": "known.py '1133.07/4', 'R0000624', 'Chemnitz': only this lead, its sweep and targets/chemnitz1631; no catalogue entry.",
+    "verdict": "open"
+   },
+   "access": "online",
+   "repository": "riksarkivet"
+  },
+  {
+   "id": 2574,
+   "counted": true,
+   "year": 1482,
+   "date": "27 Mar 1482 (dating line 'Die xxvij Marty 1482'; endorsement 'ad xxvij di marzo')",
+   "title": "Pierfilippo Pandolfini, Florentine orator in Rome, to Lorenzo de' Medici, 27 Mar 1482: full page of symbol cipher with clear opening and closing, bare (MAP XXXVIII doc. 418)",
+   "correspondents": "Pierfilippo Pandolfini (orator at Rome) -> Lorenzo de' Medici",
+   "place": "Rome",
+   "language": "Italian (symbol-and-figure cipher, clear Italian around it)",
+   "region": "Italy",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza XXXVIII, doc. 418 (old c. 428)",
+   "folio_note": "Image positions 913 (doc. 418 r, viewer id 51734, pencil number 428) and 914 (doc. 418 v: address 'Mco viro Laurentio de medicis Maiori', endorsement 'Da Pierfilippo pandolfini da Roma ad xxvij di marzo', show-through of the recto). Recto: 4 clear lines ('Mce vir etcetera. Hiersera ... vi scripsi una tra ... di che vi mandai copia'), then about 19 lines mostly in cipher with clear words between the cipher runs ('del papa', 'alla dieta', 'Hò altro per hora racchomandomi a voi'), signed 'Petrus philippus Padolfi Rome ora'.",
+   "cls": "A",
+   "status": "Bare on the leaf viewed 13 Nov 2026: no interlinear, marginal or foot decipherment on recto or verso; neighbouring leaves 912 and 915 are clear letters of other correspondents. A sibling of lead 2559 (MAP LIII doc. 13, Pandolfini, Apr 1483, same hand and cipher style).",
+   "why": "Roman news for Lorenzo in March 1482 (the pope, a diet, an 'impresa'), in what looks like the same sign cipher as Pandolfini's April 1483 letter; the clear words between cipher runs give cribs and a second sample of the system exists.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 3,
+   "score_note": "Scored from the leaf at 1272 px: about 19 lines, roughly 1,000 symbols and figures, clear context words every few lines; with lead 2559 the pair gives two samples of one system.",
+   "verify": "Transcribe the cipher lines of c. 428r and compare with MAP LIII doc. 13 (lead 2559). NOT VETTED: the date lies inside the range of the Lettere di Lorenzo il Magnifico edition (notes not online) and this is an incoming letter, so no vetting block; check the Lettere notes for 1482 and DECODE by hand before promotion.",
+   "links": [
+    {
+     "label": "MAP filza XXXVIII doc. 418 (viewer)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/riproduzione/?id=51734"
+    },
+    {
+     "label": "IIIF image pos 913",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000913.ptif/full/1272,/0/default.jpg"
+    },
+    {
+     "label": "filza search",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=38&d=418&c="
+    },
+    {
+     "label": "IIIF image pos 914 (doc. 418 v)",
+     "href": "https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000914.ptif/full/1272,/0/default.jpg"
+    }
+   ],
+   "seen": "image",
+   "source": "ASF Mediceo avanti il Principato images (MAP filza XXXVIII paging), map_paging sweep, 13 Nov 2026",
+   "prior_art": "Not vetted. known.py (13 Nov 2026) shows only the sibling lead 2559 (LIII doc. 13); DECODE RecordsList search Pandolfini run 13 Nov 2026 (see README); the Lettere di Lorenzo il Magnifico notes, which could cover a 1482 incoming letter, are not online and were not opened.",
+   "needs_archive_scan": "no",
+   "access_note": "ASF MAP IIIF images by plain curl (server maximum 1272 px); the host answered again on 16 Nov 2026 after the outage of 6-11 Nov.",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "ASF MAP filza XXXVIII image positions 913 (doc. 418 recto) and 914 (verso), https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100038/A0000913.ptif and A0000914.ptif, full/max = 1272 x 1807 px each, downloaded 16 Nov 2026 and viewed whole and in crops; neighbours 912 (verso of doc. 417) and 915 (doc. 419) fetched at the same size and viewed.",
+     "extent": "One leaf: recto has 4 clear opening lines ('Mce vir etc. Hiersera, benche non mi sentissi bene, vi scripsi una lettera ...'), then about 19 lines in which cipher runs carry the text with clear words between them ('il fatto dell'arcivescovo', 'del papa', 'alla dieta', 'grandis'), a clear closing 'Ho altro per hora, racchomandomi a voi ... Die xxvij Martij 1482' and the signature 'Petrusphilippus Pandolfi Rome ora[tor]'. Roughly 1,000 signs.",
+     "cipher": "Symbol cipher of Latin-letter-like forms, digits and crossed or looped signs without word division. Nothing is written between the lines, in the margin (one short marginal note at the left of line 5, not a gloss) or at the foot. The verso holds the address 'Mco viro Laurentio de medicis Maiori' and the endorsement '1482 Da Pierphilippo pandolfini da Roma ad xxvij di marzo, recev. a di 31 detto'. Position 912 is the verso of doc. 417 (another Rome letter of 1482) and 915 is doc. 419, a clear letter in a different hand: no decipherment slip on either side."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList keyword search by curl (research/sweep_2026-11-11_german/decode_search.py), 16 Nov 2026: 'Pandolfini', 'Soderini', 'Sassetti', 'Lanfredini' 0 records; 'Mediceo' returns only the ASFi Cifrari serie II vol. 9 key records of 1601-1800 (R7455-R7459 and neighbours). No DECODE record of any Mediceo avanti il Principato letter.",
+     "tomokiyo": "Tomokiyo's cryptiana unsolved.htm (repo copy img/raw/unsolved.txt, fetched 15 Nov 2026) grepped for 'Pandolfini', 'Medici', 'Florence', 'Firenze': no hit; its only Medici items are Catherine and Marie de Medici.",
+     "lasry": "cryptiana GL.htm (Lasry's decipherments; repo copy img/raw/GL.txt) grepped for 'Pandolfini', 'Medici', 'Florence': no hit; its Florentine items are Acciaiuoli 13 Jun 1478 (R4800) and a 1597 Guicciardini letter, not this document.",
+     "edition": "Lorenzo de' Medici, Lettere VI (1481-1482, ed. Mallett) prints Lorenzo's letter no. 568 to Pandolfini of 27-28 Mar 1482 and its notes discuss Pandolfini's letters reaching Florence on the evening of 27 March (Google Books feed snippet, CSBdAAAAMAAJ, 16 Nov 2026). This letter of 27 March was received on the 31st, so it is a different one. Feed queries '\"XXXVIII, 418\"', '\"MAP, XXXVIII, 418\"', '\"XXXVIII, 418\" Pandolfini' and 'Pandolfini \"XXXVIII\" marzo' found no Lettere VI or VII page citing it. The archive.org copy of Lettere VI (bwb_KU-999-229_6) is a lending item whose full-text search answered 'Invalid filename', so the notes were not read in full. Lettere prints Lorenzo's own letters and only quotes incoming ones in notes.",
+     "literature": "Web search and the sibling lead 2559 (Pandolfini, Rome, Apr 1483; vetted open 13 Nov 2026) turned up no study or transcription of Pandolfini's Roman cipher letters of 1482-83. Marco Vito (Vienna) works on encrypted MAP letters of 1486-1491 (research/medici_bia/README.md); 1482 is before his range."
+    },
+    "key_check": "No key for 1482 held. The project rebuilt Pandolfini's January 1487 key from glossed letters in MAP (trackB, recorded in lead 2559's vetting) and it did not fit the 1483 letter; it was not tried on this one. The 1483 letter (lead 2559) looks like the same sign system, so the two give two samples of one system.",
+    "duplicates": "known.py 'XXXVIII' and 'Pandolfini' (16 Nov 2026): only this lead, the sibling 2559 (LIII 13, 1483), leads 1552/1553 (Lorenzo to Pandolfini, BNCF) and catalogue 2389 (Francesco Pandolfini, 1514-15); no row holds MAP XXXVIII 418.",
+    "verdict": "open"
+   },
+   "access": "online",
+   "repository": "asf"
+  },
+  {
    "id": 2575,
    "counted": true,
    "region": "Other",
@@ -83334,26 +83664,85 @@
    "repository": "nl-04-0041"
   },
   {
+   "id": 2726,
+   "counted": true,
+   "year": 1612,
+   "date": "Nov 1611 - Nov 1613",
+   "title": "Marie de Medicis, Villeroy and Puysieulx to Savary de Breves (Rome), 11 letters of Nov 1611 - Nov 1613 \"avec chiffre\" without a decipherment noted",
+   "correspondents": "Henri IV; Marie de Medicis; Nicolas de Neufville de Villeroy; Pierre Brulart de Puysieulx -> Francois Savary de Breves",
+   "place": "Paris / Fontainebleau",
+   "language": "French",
+   "region": "France",
+   "period": "1611-1650",
+   "shelfmark": "BnF Manuscrits, fr. 3654 (Anc. 9021 (2)), nos. 6, 8, 11-19 (ff. 10, 14, 20, 22, 26, 28, 32, 34, 37, 40, 43)",
+   "folio_note": "BnF Archives et manuscrits notice cc501068: 11 letters \"avec chiffre\" (nos. 6, 8, 11 Marie de Medicis; 12, 14 Villeroy; 13, 15 Puysieulx; 16-19 Marie de Medicis); nos. 21-23 carry a decipherment and are left out. Lead rescoped 16 Nov 2026: the earlier shelfmarks fr. 3652 and fr. 3339 held no cipher, and the fr. 3541 pieces are catalogue 23. Folios corrected 16 Nov 2026 (audit): the notice page prints each folio before its item.",
+   "cls": "B",
+   "status": "Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed. Catalogue 25 (Marie de Medicis to Breves, 1610) and targets/breves1603 are the neighbouring items; the 1611-13 letters are not in either.",
+   "why": "Royal and secretary-of-state despatches to one ambassador across ten years; Breves nomenclators are already worked in this repo (breves1603, catalogue 25), so keys exist for the early ones.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
+   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "links": [
+    {
+     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
+     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Omont BnF catalogue sweep",
+   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "needs_archive_scan": "yes",
+   "access_note": "fr. 3654 notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc501068 has no Gallica link (not digitised); fr. 3541 (cc49988x) not digitised either. Reading room or reproduction order.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online (no ark found for fr. 3652/3339). Shelfmarks unconfirmed: other rows of this sweep proved OCR numbers wrong. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc501068 (Francais 3654, Anc. 9021(2)) read 16 Nov 2026; the Omont OCR (archive.org p1cataloguegnr02bibluoft, heading \"3654\" after \"(Anc. 10344.)\") gives the same list. Also read: cc50104s (fr. 3652, Perez letters, no cipher) and cc49802 (fr. 3339, copies on the Etats de Blois, no cipher), which shows the lead's shelfmarks are wrong.",
+     "extent": "11 letters \"avec chiffre\", Nov 1611 - Nov 1613: nos. 6 (f. 12), 8 (f. 16), 11 (f. 22) Marie de Medicis; 12 (f. 26) and 14 (f. 32) Villeroy; 13 (f. 28) and 15 (f. 34) Puysieulx; 16-19 (ff. 37-47) Marie de Medicis. Nos. 21-23 (Dec 1613) are \"avec chiffre et dechiffrement\" and are left out. Amount of cipher per letter not stated.",
+     "cipher": "BnF description: \"Lettre, avec chiffre, de MARIE [DE MEDICIS]... a monseigneur de Breves\" etc.; no decipherment noted for nos. 6-19, while the cataloguer notes one for nos. 21-23 in the same volume. No image seen, so a decipherment on the leaf cannot be excluded."
+    },
+    "prior_art": {
+     "decode": "known.py \"3654\", \"Anc. 9021\": no DECODE record or repo row for fr. 3654; DECODE holds fr. 3541 (R2230-2231, Henri IV 1603/1610), which is catalogue 23 / breves1610.",
+     "tomokiyo": "Tomokiyo, cryptiana unsolved.htm fetched 16 Nov 2026 and searched for the shelfmark, the correspondents and the related names: no hit on fr. 3654; his \"Marie de Medici's Cipher (1610)\" entry covers short cipher passages in Marie de Medicis letters to Breves, solved by Brice Dudout (Oct 2026) for fr. 3789; the 1611-13 letters are not named.",
+     "lasry": "Lasry, cryptiana GL.htm fetched 16 Nov 2026 and searched for the shelfmark and the correspondents: no hit on fr. 3654, Breves 1611-13 or Puysieulx to Breves.",
+     "edition": "No edition of the regent's 1611-13 letters to Breves found; Breves's own despatches are registered in fr. 3655-3656 (outgoing, not these letters); web search 16 Nov 2026 found no printed text.",
+     "literature": "Web search 16 Nov 2026 (\"Marie de Medicis\" Breves lettres 1612 1613 chiffre): nothing on these letters; Dubost's biography of Marie de Medicis cites the period only."
+    },
+    "key_check": "Key held: the Henri IV-Breves key (BnF fr. 3462 f. 103, \"Chiffre reforme pour Levant\", 1604) that Dudout used for Marie de Medicis to Breves 1610 (catalogue 25, breves1610); not tested on fr. 3654 (no image).",
+    "duplicates": "known.py: fr. 3541 pieces of this lead duplicate catalogue 23 (breves1603); fr. 3654 has no row anywhere; catalogue 25 (fr. 3789, 1610) is a different letter. fr. 3541 no. 12 (Puysieulx to Breves, \"avec chiffre, incomplete\", f. 39) is a possible sibling not in any ledger.",
+    "verdict": "open",
+    "key_held": "Henri IV-Breves key, BnF fr. 3462 f. 103 (targets/breves1603, breves1610); not tested on fr. 3654."
+   },
+   "repository": "bnf"
+  },
+  {
    "id": 2732,
    "counted": true,
    "year": 1530,
    "date": "c. 1525-1535",
-   "title": "Ciphered letters in the Montmorency papers, Bonnivet volume: \"lettres en chiffre\" ff. 67-202 (about 12 letters)",
+   "title": "Cipher letter in the Montmorency papers, Bonnivet volume (BnF fr. 3027, Gallica view 69)",
    "correspondents": "unknown (volume opens with letters of admiral Bonnivet to the marshal of Montmorency)",
    "place": "unknown",
    "language": "French",
    "region": "France",
    "period": "1497-1559",
    "shelfmark": "BnF Manuscrits, fr. 3027",
-   "folio_note": "fr. 3027: Omont nos. 34, 49, 70, 72 (his ff. 67, 100-105, 182, 186-202); cipher letter seen at view 69.",
+   "folio_note": "fr. 3027: one letter in cipher seen at Gallica view 69 (about 20 lines of symbols, addressed to the marshal de Montmorency). Rescoped 16 Nov 2026: the Omont items first cited here (nos. 34, 49, 70, 72, ff. 67-202, about 12 letters) belong to a later volume, not fr. 3027; the amount of cipher in fr. 3027 itself is not known.",
    "cls": "C",
-   "status": "Cipher letter seen on Gallica (openapi IIIF view 69 of fr. 3027). Omont's folio numbers use the older foliation: find the ciphers by item, not folio.",
-   "why": "Eight leaves of one run (ff. 186-202) in a single hand, sender unnamed by the cataloguer; likely a dispatch series from Italy or Switzerland.",
+   "status": "Cipher letter seen on Gallica (openapi IIIF view 69 of fr. 3027). Audit of 16 Nov 2026: the Omont folio and item numbers do not belong to this volume, so only the leaf actually seen is claimed.",
+   "why": "A cipher letter in a 16th-century hand with plain-text passages interleaved, no decipherment on the leaf.",
    "importance": 2,
    "solvability": 3,
    "difficulty": 3,
    "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
-   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "verify": "Page through the rest of fr. 3027 on Gallica for further cipher leaves; check that none has a decipherment; compare Tomokiyo and DECODE for the same leaf.",
    "links": [
     {
      "label": "Gallica, fr. 3027",
@@ -83382,7 +83771,7 @@
     "seen": {
      "kind": "scan",
      "where": "openapi.bnf.fr IIIF images of Gallica ark btv1b9060066q (BnF fr. 3027, 123 views; the Gallica description opens with letters of admiral Bonnivet to the marshal de Montmorency, which confirms the shelfmark), 14 Nov 2026",
-     "extent": "One letter looked at: view 69 (Omont's no. 34, 'f. 67'; Omont's folio numbers are an older foliation and do not match the modern stamp, see the 2996 note) is a letter written in cipher signs (about 20 lines of symbols run together with a few plain words), addressed on a following view 'A monsr le mareschal de Montmorency'. The other places Omont names (nos. 49, 70, 72; ff. 100-202) were not opened.",
+     "extent": "One letter looked at: view 69, a letter written in cipher signs (about 20 lines of symbols run together with a few plain words), addressed on a following view A monsr le mareschal de Montmorency. The rest of the volume was not paged; the Omont items earlier cited (nos. 34, 49, 70, 72; ff. 67-202) were shown by the 16 Nov 2026 audit to belong to another volume.",
      "cipher": "Symbol cipher in a 16th-century cursive hand, the plain-text passages interleaved; no interlinear or marginal decipherment on the leaf and no clear copy on the facing view."
     },
     "prior_art": {
@@ -85622,6 +86011,63 @@
    "repository": "bne"
   },
   {
+   "id": 2858,
+   "counted": true,
+   "year": 1497,
+   "date": "19 Jun 1497",
+   "period": "1497-1559",
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "B",
+   "title": "Juan Claver to the Catholic Monarchs, Milan, 19 Jun 1497: diplomatic news from France and Italy, cipher at the end",
+   "correspondents": "Juan Claver (ambassador) -> Catholic Monarchs",
+   "place": "Milan",
+   "shelfmark": "Archivo Historico Provincial de Zaragoza (Archivo del Reino de Aragon), Coleccion Zurita, C_CRAR/000001/0040",
+   "folio_note": "1 letter, incomplete (torn); cipher at the end",
+   "status": "Online (PDF on DARA). DARA summary: 'Escritura cifrada en la parte final del mensaje'. First-leaf image viewed 15 Nov 2026. Not vetted against lead 1048 (Claver to the Monarchs, Milan, 23 Jun 1497): the dates differ by four days, so it may be a draft, a duplicate or a different letter.",
+   "why": "Same writer and place as lead 1048, 1497; Parisi deciphered Claver's later letters, so the key may be in print.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the DARA record and the thumbnail of the first leaf (15 Nov 2026, wave 8); the vetting block says what was viewed",
+   "verify": "Compare with lead 1048 (23 Jun 1497, Milan) and Parisi 2019 before promoting; check the last leaf of the PDF.",
+   "links": [
+    {
+     "href": "https://dara.aragon.es/opac/app/item?i=1056537",
+     "label": "DARA record C_CRAR/000001/0040"
+    }
+   ],
+   "source": "DARA (dara.aragon.es) results and item pages, fetched same-origin in Chrome, wave 8, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "seen": "image",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "DARA record https://dara.aragon.es/opac/app/item?i=1056537 (C_CRAR/000001/0040), PDF attachment b4/11/AHPZ_C_CRAR_000040.pdf, two images extracted (img/dara_0040_p0_0.jpeg 1578 x 2211 px, recto; dara_0040_p1_0.jpeg 2219 x 1575 px, verso) and viewed 16 Nov 2026.",
+     "extent": "One leaf, the end of the letter (the beginning is lost; DARA: 'Incompleta', torn at lower left): about 28 lines of clear Spanish, then about 13 lines of cipher, then the clear close 'y acreciente Dios las reales ... Fecha en Milán a XVIIII de junyo de 97' and the signature. Verso: address 'A los muy altos y muy poderosos principes ... el Rey y la Reyna de Spaña' and the endorsement 'De Claver xix de junio'.",
+     "cipher": "Sign cipher of letter-like forms, digits, dots and colons with spaces between groups (word-separated), about 13 lines and roughly 400 signs; nothing written between the lines, in the margin or on the verso."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList search 16 Nov 2026: 'Claver' 1 record, R9591 (RAH Salazar 9/8 ff. 20-21v, Claver, Naples 1500); 'Zurita' 0. No record of this Zaragoza letter.",
+     "tomokiyo": "cryptiana unsolved.htm (repo copy) grepped for 'Claver', 'Zurita', 'Ferdinand': no Claver item; its Ferdinand entries are Garcilaso 1498 (Parisi), Espagnol 318 and Catherine of Aragon.",
+     "lasry": "GL.htm (repo copy) grepped for 'Claver', 'Ferdinand', 'Fernando': no hit for Claver or this letter.",
+     "edition": "Printed: C. Villanueva Morte and Á. Fernández de Córdova Miralles, El embajador Claver. Diplomacia y conflicto en las «Guerras de Italia» (1495-1504), Anejos del Anuario de Estudios Medievales, CSIC 2025 (open PDF https://zaguan.unizar.es/record/151256/files/BOOK-2025-316.pdf, downloaded 16 Nov 2026), Apéndice documental, Documento 10 (pp. 178-179) transcribes this letter from 'DARA 003006/0040' and prints the cipher as '[diez líneas en cifra]'; the text discussion (p. 69 n. 182) uses only the clear part.",
+     "literature": "Same book, pp. 21-23: Ivan Parisi deciphered Claver's despatches from Milan and Naples and rebuilt his nomenclators 'casi por completo', and the decipherments printed in the appendix (docs of 1498-1502) are credited to him; Parisi, 'La decrittazione di cinque lettere cifrate di Juan Claver' (ASPN 137, 2019) covers 1500-02. Neither reads this 1497 passage. Web search (Juan Claver Milán 1497 carta cifrada) found nothing else."
+    },
+    "key_check": "No key tested. Key held in print: Parisi's reconstructed Claver nomenclators (1498 Ocaña despatches to the duke of Milan, and the Naples system of 1500-02, Parisi 2019 and the 2025 appendix) may cover the 1497 Milan system; not compared.",
+    "key_held": "Parisi's Claver tables (ASPN 2019; El embajador Claver 2025, appendix decipherments): not compared with this 1497 passage.",
+    "duplicates": "known.py 'Claver' and 'C_CRAR' (16 Nov 2026): the other Claver row is lead 1048 (RAH Salazar A-11 ff. 131-133, 23 Jun 1497), a different letter: the 2025 book cites 1048 separately (n. 183, report on the Gandía murder, printed by Suárez Fernández, Política internacional V docs 29-30). The CRAR catalogue entries 2854-2857 and 2865 are other letters.",
+    "verdict": "open"
+   },
+   "access": "online",
+   "access_note": "DARA PDF AHPZ_C_CRAR_000040.pdf (two page images), fetched 15 Nov 2026 by the earlier wave-17 run.",
+   "repository": "unidentified"
+  },
+  {
    "id": 2860,
    "counted": true,
    "year": 1600,
@@ -86951,62 +87397,6 @@
    "repository": "unidentified"
   },
   {
-   "id": 2899,
-   "counted": true,
-   "year": 1912,
-   "date": "13 July 1912",
-   "title": "Partly enciphered Egyptian Coastguard telegram about seized bales of khaki uniforms at Railhead (Western Desert), copy in the Khedive's papers",
-   "correspondents": "an officer at Railhead (the sender's name is on a sheet not found) to Herbert, 'Sawahil' (Coastguard Administration), Alexandria",
-   "place": "Railhead (Western Desert railway, Egypt) to Alexandria",
-   "language": "English",
-   "period": "1901-1950",
-   "shelfmark": "Durham University Library, Archives and Special Collections, Abbas Hilmi II papers, HIL/64/890-891 (frame 174 of 234 of the digitised file HIL/64/1-1011, Telegrams Egypt and Sudan: I)",
-   "folio_note": "Seen as image (1,024 px frame and a 3,075 px stitch of nine region requests). Two Egyptian State Telegraphs forms G 13, telegram no. 30, 129 words, in a clerk's copying hand. Clear English with 17 five-letter cipher groups in three runs: 'the suits are bfefr ptqap rrvtw but have / acpfw msrrx wuuuu rtxsu vtupt vcxwq uzxtr urxrp dvasr rfouu stop uffkfz stswv claimed them but at first denied exact knowledge of contents he gave me the same name of person sending them from Alexandria as you mention namely pmsmp ktvvv who he says is a' (my reading from the image, not collated; the text breaks off, a third sheet was not found). The groups lean heavily on the letters p to x, with runs such as 'wuuuu' and 'ktvvv', so this is not Playfair; it looks like figure groups of a code turned into letters, or a substitution with padding. No decode on the forms.",
-   "cls": "A",
-   "status": "15 Nov 2026: ciphertext seen; no clear duplicate of this telegram in the frames screened (HIL/64/817-1007 all viewed as cropped contact sheets; HIL/64/1-816 only five frames sampled, so a clear copy may still sit there, as it does for the 1913 Khartoum telegrams in HIL/65). Durham catalogue describes the file only as 'Arabic and code'. known.py: no hit. No literature search beyond that; DECODE not searched (20th-century British traffic is outside it). Not checked: which cipher the Egyptian Coastguard Administration used in 1912, and whether a key survives (TNA FO 141, WO 33; Durham Sudan Archive).",
-   "why": "A short British field cipher of the Italo-Turkish war period (arms and uniform smuggling to the Ottoman force in Cyrenaica) with rich clear context on both sides of every cipher run; a named sender is hidden in two groups. Small, but the surrounding clear text gives strong cribs.",
-   "region": "England",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 2,
-   "seen": "image",
-   "needs_archive_scan": "no",
-   "verify": "Find the third sheet and any clear copy in HIL/64/1-816; collate the 17 groups from a full-size stitch; test the system recovered from the HIL/65 cipher/clear pairs.",
-   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
-   "links": [
-    {
-     "href": "https://n2t.durham.ac.uk/ark:/32150/t2mks65hc530.html",
-     "label": "Catalogue record / images"
-    }
-   ],
-   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "access_note": "Free IIIF images at iiif.durham.ac.uk (manifest ark t2mks65hc530, frame 174 of 234); region requests stitch to about 3,070 px.",
-   "vetting": {
-    "date": "2026-11-15",
-    "by": "claude session 15 Nov 2026 (Claude Fable 5.2), wave 15 vetting",
-    "seen": {
-     "kind": "scan",
-     "where": "Durham IIIF, HIL/64/1-1011 manifest ark t2mks65hc530, frame 174 (HIL/64/890-891), seen by the sweep agent as a 1,024 px frame and a 3,075 px stitch of nine region requests (research/sweep_2026-11-15_wave15_arabic2)",
-     "extent": "17 five-letter groups (about 85 letters) in three runs inside a clear English telegram of 129 words on two forms; the text breaks off, a third sheet was not found",
-     "cipher": "Five-letter groups leaning on the letters p to x with repeats such as wuuuu and ktvvv; no decode is written on the forms and no clear copy was found in the frames screened (HIL/64/817-1007 all, HIL/64/1-816 five frames only)."
-    },
-    "prior_art": {
-     "decode": "known.py (DECODE dumps included) for HIL/64, Coastguard, Abbas Hilmi: no record; 20th-century British traffic is outside DECODE",
-     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi: no match",
-     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi: no match; outside his French and papal material",
-     "edition": "No edition of the Abbas Hilmi telegram files is known; the Durham catalogue describes the file only as Arabic and code and gives no reading",
-     "literature": "Web search 15 Nov 2026 (Egyptian Coastguard cipher telegram 1912 Railhead, Abbas Hilmi papers Durham): no study of this telegram or of the Coastguard cipher"
-    },
-    "key_check": "No key known. Two Sudan Government cipher telegrams of May 1913 in HIL/65 have clear copies beside them (lead 2900); whether that system is the same was not tested.",
-    "duplicates": "known.py HIL/64, HIL/65, Coastguard (15 Nov 2026): only the two Arabic sweeps of this day, which had not viewed the file before wave 15; no catalogue entry or lead.",
-    "verdict": "open"
-   },
-   "repository": "unidentified"
-  },
-  {
    "id": 2902,
    "counted": true,
    "year": 1100,
@@ -87117,6 +87507,1078 @@
     "verdict": "open"
    },
    "repository": "kb-dk"
+  },
+  {
+   "id": 2907,
+   "counted": true,
+   "year": 1909,
+   "date": "9 January 1909",
+   "title": "Sirdar (Khartoum) to Herbert (Cairo), telegram ending in eight five-letter cipher groups",
+   "correspondents": "Sirdar (Sir Reginald Wingate), Khartoum, to Herbert, Cairo",
+   "place": "Khartoum to Cairo",
+   "language": "English",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Abbas Hilmi II papers, HIL/64/400 (digitised unit HIL/64/1-1011, frame 68 of 234, label 395-400, bottom right form)",
+   "folio_note": "Egyptian State Telegraphs form G 14 (received), a clerk's copy. Original no. 408 (or 458), 57 words, 9-1-909, Khartoum to Herbert, Cairo, signed Sirdar. Clear English first: '74 I have received the following telegram begins the son of the late colonel Hassan bey Tewfik passed the medical examination and I beg you kindly to ask the Commandant to admit him to the Military school referring to your excellencies kind promise lady Bey Hassan Tewfiks ends', then 8 five-letter groups (40 letters), uncollated: Vdugk cesux ybypg eyybp xdwrt jbpef pzyot bpdjv (the hand writes b like a capital B; group 5 fourth letter r or e). No decode on the form.",
+   "cls": "A",
+   "status": "15 Nov 2026: cipher seen on the image (1,500-px IIIF region). All 546 frames of HIL/64 and HIL/65 looked at for a clear copy (same number, date, word count or wording): none found. Prior art not searched. HIL/66 onwards not opened.",
+   "why": "A bare cipher passage, the Sirdar's own comment on a quoted request. The same file holds cipher/clear pairs of the same traffic and weeks (HIL/64/402 = 403, 3 Jan 1909; HIL/64/239-240 = 118-119, 30 Nov 1908; HIL/64/214 = 61-62, 26 Sept 1908), simple substitution regrouped in fives, so the alphabet can probably be rebuilt from them and applied.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "40 letters, too short alone; solvable if the Jan 1909 alphabet is the one of the nearby pairs (not tested).",
+   "verify": "Collate the 8 groups from a full-resolution region; rebuild the alphabet from the 1908-09 pairs and test it; search the Sudan Archive (Wingate papers) for the telegram.",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t2mks65hc530.html",
+     "label": "Durham viewer, HIL/64/1-1011"
+    },
+    {
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mk/s6/t2mks65hc530/manifest",
+     "label": "IIIF manifest"
+    }
+   ],
+   "seen": "image",
+   "source": "research/sweep_2026-11-15_wave16_durham (notes_hil64_a.md)",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "Free IIIF images at iiif.durham.ac.uk; region requests give about 1,900 px a form.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Fable 5.2), wave 16 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Durham IIIF, manifest ark t2mks65hc530 (HIL/64), frame 68 of 234, bottom right form, seen by the sweep agent as a full-resolution IIIF region (research/sweep_2026-11-15_wave16_durham)",
+     "extent": "eight five-letter groups (40 letters) after a clear quoted telegram",
+     "cipher": "Five-letter groups inside a clear English telegram on an Egyptian State Telegraphs form, a clerk's copy; no decode is written on the form, and all 546 frames of HIL/64 and HIL/65 were looked at without finding a clear copy of this telegram."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps included) for HIL/64, HIL/65 and Abbas Hilmi: no record; 20th-century British traffic is outside DECODE",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi and Sudan: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for the same words: no match; outside his material",
+     "edition": "No edition of the Abbas Hilmi telegram files is known; the Durham catalogue describes the files only as Arabic and code and gives no reading",
+     "literature": "Web search 15 Nov 2026 (Abbas Hilmi papers Durham cipher telegram, Egyptian Coastguard cipher): no study of these telegrams or of the Sudan Government and Coastguard ciphers; no search specific to this telegram was made"
+    },
+    "key_check": "The cipher/clear pairs of 1908-09 in the same file (HIL/64/214 = 62-61, HIL/64/240-239 = 119-118, HIL/64/402 = 403) are simple substitution and are the likely key; not tested on this text.",
+    "duplicates": "known.py HIL/64, HIL/65 (15 Nov 2026): the wave 15 and wave 16 sweep records and leads 2899-2901 only, which are other telegrams.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2908,
+   "counted": true,
+   "year": 1913,
+   "date": "7 June 1913",
+   "title": "Siwa to the Director of the Coastguard, Alexandria: telegram with seven letter groups marked 'Secret ... code'",
+   "correspondents": "Coastguard officer at Siwa (unsigned on the copy) to Director Sawahil (Coastguard Administration), Alexandria",
+   "place": "Siwa to Alexandria",
+   "language": "English",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Abbas Hilmi II papers, HIL/65/273 and 272 (digitised unit HIL/65/1-1127, frame 63 of 312, label 272-277, top middle then top left)",
+   "folio_note": "Egyptian State Telegraphs form G 13, a clerk's copy in two sheets. No. 3, 65 words, Siwa, 7.6.913, to Director Sawahil, Alexandria. '80. Boxes and effects for Sidi Ahmed have been delivered at Jaghboub stop following obtained by Aisa Mayrof and Bash Chawish Farag who went with same Secret ( aBmbd - xwlmh - bggtc - Fudug - v.t.li - medwd midibi - ) code Jaghboub to receive many notables expected from Egypt one of deserters Mansood Said is not dead but is at Nakhaila between Salloom and Derna'. Seven groups, uncollated, the last of six letters as written; dots stand for two letters of the fifth, with an Arabic word above it (perhaps 'mafqud', missing). No decode on the form.",
+   "cls": "A",
+   "status": "15 Nov 2026: cipher seen on the image (834-px IIIF region of the form). All 546 frames of HIL/64 and HIL/65 looked at for a clear copy (same number, date, station or wording): none found. Prior art not searched. HIL/66 onwards not opened.",
+   "why": "Coastguard intelligence from the Senussi centre at Jaghbub with a short enciphered passage. The copyist's 'Secret ( ... ) code' may mark the Coastguard's own cipher or a code text obtained at Jaghbub; which is not settled. The 1912 Coastguard pair (HIL/64/890-891 = 737-739) gives a Coastguard alphabet to try.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "About 36 letters with two lost; nature of the passage unsettled; only an older Coastguard alphabet to test.",
+   "verify": "Collate from a full-resolution region; read the Arabic word over group 5; test the alphabet of HIL/64/890-891; look in HIL/66 onwards and in FO 141 / FO 371 for the Siwa report of 7 June 1913.",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t1mh128nf091.html",
+     "label": "Durham viewer, HIL/65/1-1127"
+    },
+    {
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t1/mh/12/t1mh128nf091/manifest",
+     "label": "IIIF manifest"
+    }
+   ],
+   "seen": "image",
+   "source": "research/sweep_2026-11-15_wave16_durham (notes_hil65_a.md)",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "Free IIIF images at iiif.durham.ac.uk; region requests give about 1,900 px a form.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Fable 5.2), wave 16 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Durham IIIF, manifest ark t1mh128nf091 (HIL/65), frame 63 of 312, top middle and top left forms, seen by the sweep agent as a full-resolution IIIF region (research/sweep_2026-11-15_wave16_durham)",
+     "extent": "seven groups (about 35 letters) between the words Secret and code, two letters dotted out with an Arabic word above",
+     "cipher": "Five-letter groups inside a clear English telegram on an Egyptian State Telegraphs form, a clerk's copy; no decode is written on the form, and all 546 frames of HIL/64 and HIL/65 were looked at without finding a clear copy of this telegram."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps included) for HIL/64, HIL/65 and Abbas Hilmi: no record; 20th-century British traffic is outside DECODE",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi and Sudan: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for the same words: no match; outside his material",
+     "edition": "No edition of the Abbas Hilmi telegram files is known; the Durham catalogue describes the files only as Arabic and code and gives no reading",
+     "literature": "Web search 15 Nov 2026 (Abbas Hilmi papers Durham cipher telegram, Egyptian Coastguard cipher): no study of these telegrams or of the Sudan Government and Coastguard ciphers; no search specific to this telegram was made"
+    },
+    "key_check": "No key known for the Coastguard traffic of 1913. The Coastguard pair of 1912 (HIL/64/890-891 = 739-737, lead 2899) is the nearest key material; not tested. Whether this is the Coastguard cipher or a code text obtained at Jaghbub is not settled.",
+    "duplicates": "known.py HIL/64, HIL/65 (15 Nov 2026): the wave 15 and wave 16 sweep records and leads 2899-2901 only, which are other telegrams.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2909,
+   "counted": true,
+   "year": 1914,
+   "date": "26 February 1914",
+   "title": "Malisudan (Khartoum) to Ferasudan (Cairo), telegram 672 with five five-letter cipher groups",
+   "correspondents": "Malisudan (Sudan Government, Khartoum) to Ferasudan (Sudan Agency), Cairo",
+   "place": "Khartoum to Cairo",
+   "language": "English",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Abbas Hilmi II papers, HIL/65/1122 (digitised unit HIL/65/1-1127, frame 310 of 312, label 1122-1123, left form)",
+   "folio_note": "Egyptian State Telegraphs form G 13, a clerk's copy. No. 1796, words 42/44, Khartoum, 26 Feb 1914, to Ferasudan, Cairo, signed Malisudan. '672. Aglossa fss 69 over 28 fistularia no objection wftzk ccuqk knpby xpoyt xuota perhaps not necessary refer question to Dawa as this is continuation of examination but if Kabbud Cairo considers this necessary he may obtain authority direct.' Five five-letter groups (25 letters), uncollated (group 2 fourth letter q or g; group 3 second letter n or u), after two dictionary code words (Aglossa, fistularia). No decode on the form.",
+   "cls": "A",
+   "status": "15 Nov 2026: cipher seen on the image (1,900-px IIIF region). All 546 frames of HIL/64 and HIL/65 looked at for a clear copy or the telegram it answers: none found. Prior art not searched. HIL/66 onwards not opened.",
+   "why": "A bare 25-letter passage in Sudan Government administrative traffic. The May 1913 pairs in the same file (HIL/65/157-158 = 159-160; HIL/65/148 = 153) are the nearest key material; whether that alphabet was still in use in Feb 1914 is not known.",
+   "importance": 1,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "25 letters; depends wholly on an alphabet rebuilt from the 1913 pairs.",
+   "verify": "Collate from a full-resolution region; rebuild the 1913 alphabet from the two pairs and test it; identify the code words from the Sudan Government code.",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t1mh128nf091.html",
+     "label": "Durham viewer, HIL/65/1-1127"
+    },
+    {
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t1/mh/12/t1mh128nf091/manifest",
+     "label": "IIIF manifest"
+    }
+   ],
+   "seen": "image",
+   "source": "research/sweep_2026-11-15_wave16_durham (notes_hil65_b.md)",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "Free IIIF images at iiif.durham.ac.uk; region requests give about 1,900 px a form.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Fable 5.2), wave 16 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Durham IIIF, manifest ark t1mh128nf091 (HIL/65), frame 310 of 312, left form, seen by the sweep agent as a full-resolution IIIF region (research/sweep_2026-11-15_wave16_durham)",
+     "extent": "five five-letter groups (25 letters) after two dictionary code words",
+     "cipher": "Five-letter groups inside a clear English telegram on an Egyptian State Telegraphs form, a clerk's copy; no decode is written on the form, and all 546 frames of HIL/64 and HIL/65 were looked at without finding a clear copy of this telegram."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps included) for HIL/64, HIL/65 and Abbas Hilmi: no record; 20th-century British traffic is outside DECODE",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Coastguard, Abbas Hilmi and Sudan: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for the same words: no match; outside his material",
+     "edition": "No edition of the Abbas Hilmi telegram files is known; the Durham catalogue describes the files only as Arabic and code and gives no reading",
+     "literature": "Web search 15 Nov 2026 (Abbas Hilmi papers Durham cipher telegram, Egyptian Coastguard cipher): no study of these telegrams or of the Sudan Government and Coastguard ciphers; no search specific to this telegram was made"
+    },
+    "key_check": "The Sudan Government pairs of May 1913 in the same file (lead 2900) are the nearest key material; whether that alphabet was still in use in February 1914 is not known, and it was not tested.",
+    "duplicates": "known.py HIL/64, HIL/65 (15 Nov 2026): the wave 15 and wave 16 sweep records and leads 2899-2901 only, which are other telegrams.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2910,
+   "counted": true,
+   "place": "Florence -> French court",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1497-1559",
+   "cls": "A",
+   "seen": "image",
+   "source": "Manus Online + BNCF Teca (wave 17 Chrome sweep)",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "year": 1510,
+   "date": "22 Aug 1510",
+   "title": "Dieci di Balìa -> Machiavelli at the French court: enclosed 'Summario di lettera de 18 di', entirely in cipher, not deciphered",
+   "correspondents": "Dieci di Balìa (Florence) -> Niccolò Machiavelli, mandatario at the court of Louis XII",
+   "shelfmark": "Firenze, BNCF, Autografi Palatini, Carte Machiavelli V/125",
+   "folio_note": "1 leaf, enclosure (Allegato) of V/124; about 25 lines of sign cipher under the clear heading 'Summario di l(ette)ra d(e) 18 di'; Teca folder BNCF0003856930",
+   "status": "16 Nov 2026: Manus: 'La lettera è interamente in cifra, tranne l'intestazione ... non è decifrata'; no content summary; bibliography only Tommasini, La vita e gli scritti II.2 p. 1356 (a list entry). Covering letter V/124 is printed (Passerini-Milanesi, Le opere VI pp. 76-78) but the summary is not cited as printed. Seen on the Teca image: no interlinear or slip decipherment. known.py: not in the repo; not on DECODE dumps. Not checked: Bertelli, Legazioni e commissarie (1964), the Edizione Nazionale Legazioni (Salerno), Machiavelli's own decipherments I/80 and I/81.",
+   "why": "A whole page of the 1510 Dieci cipher with no decipherment, enclosed with a letter whose clear text is printed: known-plaintext in the same sign repertoire is plentiful (V/124, V/126-131, V/135, V/138, V/150 printed; interlinear decipherments by Machiavelli in V/130, V/141-149, IV/111).",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "score_note": "Scored from the Teca image (about 900 px) and the Manus record; the key can be rebuilt from printed siblings",
+   "verify": "Check I/80-I/81 (Machiavelli's 'compendio' of 1510 cipher letters) and Bertelli 1964 / Edizione Nazionale Legazioni for a 'summario' of a letter of 18 Aug 1510; if absent, rebuild the key from V/124 + Opere VI 76-78 and read.",
+   "links": [
+    {
+     "href": "https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/598790",
+     "label": "Manus record V/125"
+    },
+    {
+     "href": "https://teca.bncf.firenze.sbn.it/ImageViewer/servlet/ImageViewer?idr=BNCF0003856930&azione=readBook",
+     "label": "BNCF Teca images V/124-133"
+    },
+    {
+     "href": "https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/598785",
+     "label": "Manus record V/124 (printed covering letter)"
+    }
+   ],
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "Free images on BNCF Teca (teca.bncf.firenze.sbn.it ImageViewer, idr BNCF0003856930).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "BNCF Teca ImageViewer idr=BNCF0003856930 (images of about 900 px), seen by the sweep agent 16 Nov 2026; Manus record read through manus.iccu.sbn.it",
+     "extent": "about 25 lines of sign cipher on one leaf, under the clear heading Summario di lettera de 18 di",
+     "cipher": "Manus: La lettera è interamente in cifra, tranne l'intestazione ... non è decifrata. On the Teca image the lines are sign cipher with no interlinear, marginal or slip decipherment."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Carte Machiavelli, V/125 and V/134, 16 Nov 2026: no record on DECODE and none in the repo before this sweep",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Machiavelli and Dieci: no match for this letter",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Machiavelli: no match",
+     "edition": "Printed only as a list entry in Tommasini, La vita e gli scritti di Niccolò Machiavelli II.2 p. 1356; its covering letter V/124 is printed (Passerini-Milanesi, Opere VI pp. 76-78) but the summary is not cited as printed. Not checked: Bertelli 1964, the Salerno Edizione Nazionale Legazioni, Machiavelli's own decipherments I/80 and I/81.",
+     "literature": "Two web searches 16 Nov 2026 (the August 1510 Dieci letters, the Carte Machiavelli shelfmarks, Tommasini, cifrario) found no study or decipherment of this letter; the critical edition Legazioni, Commissarie, Scritti di governo (Marchand, Guidi, Melera) was not opened"
+    },
+    "key_check": "The same Dieci cipher of 1510 is read elsewhere in the volume: V/124, V/126-131, V/135, V/138 and V/150 are printed in full, and Machiavelli wrote interlinear decipherments in V/130, V/141-149 and IV/111, so a key can be rebuilt; not tested.",
+    "duplicates": "known.py Carte Machiavelli, V/125, V/134 (16 Nov 2026): only this sweep; no catalogue entry or lead for these shelfmarks.",
+    "verdict": "open"
+   },
+   "repository": "bncf"
+  },
+  {
+   "id": 2911,
+   "counted": true,
+   "place": "Florence -> French court",
+   "language": "Italian",
+   "region": "Italy",
+   "period": "1497-1559",
+   "cls": "A",
+   "seen": "image",
+   "source": "Manus Online + BNCF Teca (wave 17 Chrome sweep)",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "year": 1510,
+   "date": "17 Aug 1510",
+   "title": "Dieci di Balìa -> Machiavelli at the French court, letter in cipher except the first two lines, not deciphered",
+   "correspondents": "Dieci di Balìa (Florence) -> Niccolò Machiavelli, mandatario at the court of Louis XII",
+   "shelfmark": "Firenze, BNCF, Autografi Palatini, Carte Machiavelli V/134",
+   "folio_note": "2 ff. (old foliation 230-231); about 14 lines of sign cipher on f. 1r, Dieci subscription, address on f. 2v; Teca folder BNCF0003856980",
+   "status": "16 Nov 2026: Manus: 'La lettera è interamente in cifra, ad eccezione delle prime due righe, e non decifrata'; the clear lines mention a Dieci letter sent by Francesco Pandolfini; bibliography only Tommasini II.2 p. 1356. Its folder neighbours V/135 (18 Aug, printed Opere VI pp. 72-74) and V/136 (copy to Pandolfini, partly deciphered on a modern slip) are different letters. Seen on the Teca image: no decipherment. known.py: not in the repo. Not checked: Bertelli 1964, the Edizione Nazionale Legazioni, the ASF Dieci di Balìa missive register for 17 Aug 1510 (a clear minute probably exists there), I/80-I/81.",
+   "why": "An official Dieci cipher letter left undeciphered on the sheet, in a system with abundant printed known plaintext; quick to read once the key is rebuilt, and the ASF register minute would then be a control.",
+   "importance": 3,
+   "solvability": 5,
+   "difficulty": 2,
+   "score_note": "Scored from the Teca image and the Manus record",
+   "verify": "Look for a Dieci letter of 17 Aug 1510 to Machiavelli in Bertelli 1964, the Edizione Nazionale and Opere VI; if printed, close as known plaintext (still a test text). Otherwise read with the key rebuilt from the printed 1510 siblings.",
+   "links": [
+    {
+     "href": "https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/598841",
+     "label": "Manus record V/134"
+    },
+    {
+     "href": "https://teca.bncf.firenze.sbn.it/ImageViewer/servlet/ImageViewer?idr=BNCF0003856980&azione=readBook",
+     "label": "BNCF Teca images V/134-136"
+    },
+    {
+     "href": "https://www.internetculturale.it/it/16/search/detail?instance=magindice&case=&id=oai%3Abncf.firenze.sbn.it%3A21%3AFI0098%3AAutografiPalatini%3AMachiavelli_V_134",
+     "label": "Internet Culturale record (guessed id pattern, not opened)"
+    }
+   ],
+   "scored": "vetted",
+   "access": "online",
+   "access_note": "Free images on BNCF Teca (teca.bncf.firenze.sbn.it ImageViewer, idr BNCF0003856980).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 17 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "BNCF Teca ImageViewer idr=BNCF0003856980 (images of about 900 px), seen by the sweep agent 16 Nov 2026; Manus record read through manus.iccu.sbn.it",
+     "extent": "about 14 lines of sign cipher on f. 1r after two clear lines, with the Dieci subscription, address on f. 2v",
+     "cipher": "Manus: La lettera è interamente in cifra, ad eccezione delle prime due righe, e non decifrata. On the Teca image no decipherment is written on or with the leaf."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Carte Machiavelli, V/125 and V/134, 16 Nov 2026: no record on DECODE and none in the repo before this sweep",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Machiavelli and Dieci: no match for this letter",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Machiavelli: no match",
+     "edition": "Cited only by Tommasini II.2 p. 1356; its folder neighbours V/135 (printed Opere VI pp. 72-74) and V/136 (copy to Pandolfini, partly deciphered on a modern slip) are different letters. Not checked: Bertelli 1964, the Edizione Nazionale, Machiavelli I/80-I/81 and the ASF Dieci di Balìa missive register for 17 Aug 1510, where a clear minute probably exists.",
+     "literature": "Two web searches 16 Nov 2026 (the August 1510 Dieci letters, the Carte Machiavelli shelfmarks, Tommasini, cifrario) found no study or decipherment of this letter; the critical edition Legazioni, Commissarie, Scritti di governo (Marchand, Guidi, Melera) was not opened"
+    },
+    "key_check": "The same Dieci cipher of 1510 is read elsewhere in the volume: V/124, V/126-131, V/135, V/138 and V/150 are printed in full, and Machiavelli wrote interlinear decipherments in V/130, V/141-149 and IV/111, so a key can be rebuilt; not tested.",
+    "duplicates": "known.py Carte Machiavelli, V/125, V/134 (16 Nov 2026): only this sweep; no catalogue entry or lead for these shelfmarks.",
+    "verdict": "open"
+   },
+   "repository": "bncf"
+  },
+  {
+   "id": 2912,
+   "counted": true,
+   "ark": "",
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1468,
+   "date": "13 Oct 1468",
+   "title": "Louis XI to Galeazzo Maria Sforza, duke of Milan, from Péronne: fourteen lines of cipher 'dont la clef n'a pu être retrouvée'",
+   "correspondents": "Louis XI, king of France -> Galeazzo Maria Sforza, duke of Milan (countersigned Albertus)",
+   "place": "Péronne",
+   "language": "Italian",
+   "region": "France",
+   "period": "15th century",
+   "shelfmark": "Archivio di Stato di Milano, Archivio Ducale Sforzesco, Potenze Estere, Francia (copy; carteggio of 1468, cartella not given by the edition); printed Vaesen & Charavay, Lettres de Louis XI, vol. III (1887), letter CCCXCVI, pp. 286-287, after Sickel in the Bulletin de la Société de l'histoire de France",
+   "folio_note": "Editor: '(Suivent quatorze lignes de chiffres dont la clef n'a pu être retrouvée.)' after the clear Italian text about Jean Philippe's mission; 14 lines of cipher, not printed.",
+   "cls": "B",
+   "status": "Checked 16 Nov 2026: known.py ('Perone', 'Péronne', 'Sickel', 'Louis XI'): no hit for this letter; Calendar of State Papers Milan (BHO, grepped) does not calendar it; one web search found no decipherment. Not checked: DECODE by date, Sickel's article, Cerioni's Cifrario sforzesco, Mandrot/Samaran Dépêches des ambassadeurs milanais.",
+   "why": "A royal cipher passage written at Péronne on 13 Oct 1468, the week Louis XI was held by Charles the Bold; the editor printed the clear part and says the key was not found.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Milanese chancery keys for France of 1463-70 survive (BnF italien 1591-1593 'Traduzioni', see research/venice_milan_print); 14 lines is enough for a nomenclator fit.",
+   "verify": "Find the copy in ASMi Sforzesco Potenze Estere Francia 1468 (cart. 535/536?) and check for a filed 'Traduzione'; read Sickel's printing for the cipher lines.",
+   "links": [
+    {
+     "href": "https://archive.org/details/louis-lettres-de-louis-xi-roi-de-france-v-3",
+     "label": "Lettres de Louis XI, vol. III (archive.org OCR)"
+    }
+   ],
+   "source": "wave16 printed sweep: Lettres de Louis XI (archive.org OCR, all volumes on archive.org grepped)",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "Archivio di Stato di Milano; not online. Accepted as an archive item on the printed editor's description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 16 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Vaesen and Charavay, Lettres de Louis XI III (1887), letter CCCXCVI pp. 286-287 (archive.org OCR, read by the sweep agent 16 Nov 2026); the original copy in the Archivio di Stato di Milano, Sforzesco Potenze Estere, Francia, is not online.",
+     "extent": "fourteen lines of cipher, not printed",
+     "cipher": "Editor's note after the clear Italian text: (Suivent quatorze lignes de chiffres dont la clef n'a pu être retrouvée.) No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Louis XI, Galeazzo Maria Sforza, Péronne on 16 Nov 2026: no DECODE record and nothing in the repo before this sweep",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Louis XI, Galeazzo Maria Sforza, Péronne: no match for this letter",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Louis XI, Galeazzo Maria Sforza, Péronne: no match for this letter",
+     "edition": "Printed only in part: Vaesen and Charavay give the clear text and say the key was not found; Sickel's earlier printing in the Bulletin de la Société de l'histoire de France was not opened. The Calendar of State Papers Milan (British History Online, grepped) does not calendar it.",
+     "literature": "One web search 16 Nov 2026 (Louis XI Péronne 13 octobre 1468 chiffre, lot description) found no decipherment. Not searched: Cerioni on the Sforza cipher chancery, the Mandrot and Samaran Dépêches des ambassadeurs milanais."
+    },
+    "key_check": "Milanese chancery keys for France of the 1460s survive in BnF italien 1591-1593 (the Traduzioni; see research/venice_milan_print); not tested against this letter, whose cipher lines are not printed.",
+    "duplicates": "known.py 'Perone', 'Péronne', 'Sickel', 'Louis XI' (16 Nov 2026): no catalogue entry or lead for this letter; the 1468 Milanese envoys' items in the repo are other letters.",
+    "verdict": "open"
+   },
+   "repository": "asmi"
+  },
+  {
+   "id": 2913,
+   "counted": true,
+   "ark": "",
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1657,
+   "date": "28 Apr 1656 - early 1659 (about 14 despatches)",
+   "title": "Mazarin to Antoine de Lumbres, French ambassador in Poland: signed originals 'en partie / presque entièrement chiffré, sans traduction'",
+   "correspondents": "Cardinal Mazarin -> Antoine de Lumbres (at Königsberg, then ambassador in Poland and at the Swedish-Polish talks)",
+   "place": "Paris, La Fère, Lyon, Dijon -> Königsberg / Poland",
+   "language": "French",
+   "region": "France",
+   "period": "1651-1700",
+   "shelfmark": "AAE, Correspondance politique, Allemagne, Supplément t. 16 (1656), t. 17 (1657-58), t. 18 (1659), unpaginated; printed (summaries) Chéruel & d'Avenel, Lettres du cardinal Mazarin pendant son ministère VII p. 620 (28 Apr 1656); VIII pp. 293 n. (1 Feb 1658), 613 (Aug 1657), 616 (28 Aug 1657), 655 (14 Dec 1657), 666 (11 Jan 1658), 668 (18 Jan 1658), c. 681, 686 (Mar 1658); IX p. 108 no. LXVI (3 Dec 1658), pp. 728, c. 735, 744, 756, 759 ('entièrement chiffrée', t. 18), 764 (1659)",
+   "folio_note": "Editor's source notes: 'original signé et en partie chiffré, sans traduction'; 'presque entièrement chiffré, sans traduction du chiffre'; 'Lettre presque entièrement en chiffres sans traduction' (14 Dec 1657); 'Lettre entièrement chiffrée sans traduction' (1659). Amount per letter not given.",
+   "cls": "B",
+   "status": "Checked 16 Nov 2026: known.py ('Lumbres', 'Allemagne Supplément', 'sans traduction'): no hit. For 1 Feb 1658 the edition prints the text from Mazarin's minute (BnF fr., Mélanges de Colbert) and notes that the AAE original is largely in cipher without decipherment, so clear minutes exist for some of these letters; the others are summarised from their clear parts. Not checked: DECODE, the AAE inventory (the Allemagne Supplément volumes may have been reclassed), Lasry/Tomokiyo.",
+   "why": "A run of signed Mazarin originals in the minister's cipher with no decipherment on them; where the minute survives in clear, each is a plaintext-ciphertext pair.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "One correspondent, one key; known plaintext from the Colbert minutes for at least one letter; the rest read with the rebuilt key.",
+   "verify": "Locate AAE CP Allemagne Supplément 16-18 (or their present cote); match each original against the BnF Mélanges de Colbert minutes; list which have no clear minute.",
+   "links": [
+    {
+     "href": "https://archive.org/details/lettresducardina08maza",
+     "label": "Lettres du cardinal Mazarin VIII"
+    },
+    {
+     "href": "https://archive.org/details/lettresducardina09maza",
+     "label": "Lettres du cardinal Mazarin IX"
+    },
+    {
+     "href": "https://archive.org/details/lettresducardina07maza",
+     "label": "Lettres du cardinal Mazarin VII"
+    }
+   ],
+   "source": "wave16 printed sweep: Lettres du cardinal Mazarin I-IX (archive.org OCR)",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "Archives du ministère des Affaires étrangères; not online. Accepted as an archive item on the printed editor's description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 16 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Chéruel and d'Avenel, Lettres du cardinal Mazarin VII-IX (archive.org OCR), source notes read by the sweep agent 16 Nov 2026; the originals at the Archives du ministère des Affaires étrangères, Correspondance politique, Allemagne Supplément 16-18, are not online.",
+     "extent": "about 14 signed originals of 1656-59, the amount of cipher per letter not given",
+     "cipher": "Editor's notes: original signé et en partie chiffré, sans traduction; presque entièrement chiffré, sans traduction du chiffre; Lettre entièrement chiffrée sans traduction (1659). No decipherment is mentioned for any of them."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Mazarin, Lumbres, Allemagne Supplément on 16 Nov 2026: no DECODE record and nothing in the repo before this sweep",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Mazarin, Lumbres, Allemagne Supplément: no match for this letter",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Mazarin, Lumbres, Allemagne Supplément: no match for this letter",
+     "edition": "Only the clear parts are summarised in the edition; for 1 Feb 1658 the edition prints Mazarin's clear minute from the BnF Mélanges de Colbert, so a clear minute exists for at least one letter.",
+     "literature": "No study found: one pass over the edition's notes only. Not searched: the present call numbers of Allemagne Supplément 16-18 (the volumes may have been reclassed), the literature on Mazarin's ciphers."
+    },
+    "key_check": "No key held. The minutes in the Mélanges de Colbert give plaintext for at least one letter, which makes a key rebuild possible; not tested.",
+    "duplicates": "known.py 'Lumbres', 'Allemagne Supplément', 'sans traduction' (16 Nov 2026): no catalogue entry or lead; other Mazarin items in the repo are different letters.",
+    "verdict": "open"
+   },
+   "repository": "bnf"
+  },
+  {
+   "id": 2914,
+   "counted": true,
+   "ark": "",
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1655,
+   "date": "15 Oct 1655",
+   "title": "Mazarin to d'Avaugour (French envoy with the King of Sweden): rest of the despatch 'presque entièrement chiffré sans traduction'",
+   "correspondents": "Cardinal Mazarin -> Charles Dubois, baron d'Avaugour",
+   "place": "Fontainebleau -> Stettin / Swedish army",
+   "language": "French",
+   "region": "France",
+   "period": "1651-1700",
+   "shelfmark": "AAE, Correspondance politique, Suède t. 19, f. 384; printed (summary) Lettres du cardinal Mazarin VII, p. 580",
+   "folio_note": "Editor: 'Le reste de la dépêche est presque entièrement chiffré sans traduction.'",
+   "cls": "B",
+   "status": "Checked 16 Nov 2026: known.py ('Avaugour'): only research/scandinavia (intercepted Avaugour letters of 1644 in Copenhagen, a different correspondence). No decipherment found; a clear minute was not looked for.",
+   "why": "Mazarin's instructions to his envoy to Charles X Gustav at the start of the First Northern War; most of the letter in cipher, not deciphered in the original.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Possibly the same ministerial key family as the Lumbres letters; a minute in clear may exist (Mélanges de Colbert).",
+   "verify": "View AAE CP Suède 19 f. 384; search the Colbert minutes for 15 Oct 1655.",
+   "links": [
+    {
+     "href": "https://archive.org/details/lettresducardina07maza",
+     "label": "Lettres du cardinal Mazarin VII"
+    }
+   ],
+   "source": "wave16 printed sweep: Lettres du cardinal Mazarin",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "Archives du ministère des Affaires étrangères; not online. Accepted as an archive item on the printed editor's description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 16 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Chéruel and d'Avenel, Lettres du cardinal Mazarin (archive.org OCR), note to the letter of 15 Oct 1655, read by the sweep agent 16 Nov 2026; the original, Archives du ministère des Affaires étrangères, Correspondance politique, Suède 19 f. 384, is not online.",
+     "extent": "the rest of the despatch after its clear opening",
+     "cipher": "Editor's note: presque entièrement chiffré sans traduction. No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Mazarin, d'Avaugour, Suède on 16 Nov 2026: no DECODE record and nothing in the repo before this sweep",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Mazarin, d'Avaugour, Suède: no match for this letter",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Mazarin, d'Avaugour, Suède: no match for this letter",
+     "edition": "Only a summary of the clear parts is printed in the edition.",
+     "literature": "No study found; one pass over the edition note only. The present call number of Suède 19 was not checked."
+    },
+    "key_check": "No key held; the same cipher may recur in other Mazarin despatches of 1655, but this was not tested.",
+    "duplicates": "known.py 'Avaugour', 'Suède' (16 Nov 2026): no catalogue entry or lead for this despatch.",
+    "verdict": "open"
+   },
+   "repository": "amae"
+  },
+  {
+   "id": 2916,
+   "counted": true,
+   "ark": "",
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1607,
+   "date": "6 May 1607",
+   "title": "Jean de la Croix (French ambassador in Savoy) to Henri IV: closing passage in cipher, not deciphered",
+   "correspondents": "Jean de la Croix -> Henri IV",
+   "place": "Turin",
+   "language": "French",
+   "region": "France",
+   "period": "1598-1610",
+   "shelfmark": "BnF fr. 16913 (original); printed (German summary) Briefe und Acten zur Geschichte des Dreissigjährigen Krieges, vol. V (Stieve), note to no. 294, pp. c. 554-555",
+   "folio_note": "Editor: '(Am Schluss des Briefes eine nicht aufgelöste chiffrirte Stelle. - P. Bibl. nat. Ms. fr. 16913.)' Length not given.",
+   "cls": "B",
+   "status": "Checked 16 Nov 2026: known.py ('16913', 'Jean de la Croix'): only research/sweep_2026-11-15_script_wave5, which reads Omont as listing 'chiffres des dépêches' (key sheets) in fr. 16913, so a key may be in the same volume. No decipherment found.",
+   "why": "Savoy-France negotiation of 1607 over the Bresse marriage and a Milan war; the ambassador's own cipher, apparently with key sheets in the same volume.",
+   "importance": 3,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Key in volume likely (Omont); siblings of 11 May and 7 June 1607 in the same volume.",
+   "verify": "View BnF fr. 16913 (Gallica if digitised) at the 6 May 1607 despatch; check the key sheets in the volume.",
+   "links": [
+    {
+     "href": "https://archive.org/details/briefeundactenz00kommgoog",
+     "label": "Briefe und Acten (archive.org OCR)"
+    }
+   ],
+   "source": "wave16 printed sweep: Briefe und Acten zur Geschichte des Dreissigjährigen Krieges",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "BnF manuscripts; not online as far as seen. Accepted as an archive item on the printed editor's description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 16 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Briefe und Acten zur Geschichte des Dreissigjährigen Krieges V (archive.org OCR), editor's note on the despatch of 6 May 1607, read by the sweep agent 16 Nov 2026; the original, BnF fr. 16913, is not seen online.",
+     "extent": "a closing passage in cipher",
+     "cipher": "Editor's note: a closing cipher passage nicht aufgelöst (not resolved). No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Jean de la Croix, fr. 16913 on 16 Nov 2026: no DECODE record and nothing in the repo before this sweep",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Jean de la Croix, fr. 16913: no match for this letter",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for Jean de la Croix, fr. 16913: no match for this letter",
+     "edition": "Only a German summary of the clear parts is printed in Briefe und Acten V; the cipher passage is not printed.",
+     "literature": "No study found: one pass over the editor note. Not searched: the BnF record of fr. 16913 and Omont, which an earlier sweep read as listing key sheets in the same volume."
+    },
+    "key_check": "Omont's catalogue, as an earlier sweep read it, lists key sheets in fr. 16913; not seen and not tested.",
+    "duplicates": "known.py 'Jean de la Croix', '16913' (16 Nov 2026): no catalogue entry or lead for this despatch.",
+    "verdict": "open"
+   },
+   "repository": "bnf"
+  },
+  {
+   "id": 2922,
+   "counted": true,
+   "year": 1912,
+   "date": "14 October [1912?] (received stamp '14 OCT 12'; preamble '14/10' with filing hour 18)",
+   "title": "Four-figure code telegram from 'Fouad' in Paris to the Khedive Abbas Hilmi II at the Hotel Imperial, Vienna, 143 groups on four sheets",
+   "correspondents": "'Fouad' (unidentified) to Abbas Hilmi II, Khedive of Egypt",
+   "place": "Paris to Vienna",
+   "language": "unknown (code; clear close 'HOMMAGES DEVOUES' is French)",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Abbas Hilmi II Papers, HIL/57/77-80 (Crowned Heads)",
+   "folio_note": "HIL/57/80 sheet I (header), 79 sheet II, 78 sheet III, 77 sheet IV; IIIF manifest frames 50, 49, 48, 47. Telegraph no. 27597, 153 words, received form D.S. Nr. 759 (1/1910), clerk stamp 'Teufelberger'.",
+   "cls": "A",
+   "status": "16 Nov 2026: groups read once from IIIF regions (~1,200 px), uncollated (research/sweep_2026-11-15_wave18_durham2/raw/hil57_77-80_groups.txt). Whole of HIL/57 (73 frames) screened: no clear copy or decode. Direct lookup in the Khedivial Cabinet code HIL/155 gives no text (0560 Arrive, 3063 S'etre entendu, 1316 Cessionnaire). HIL/150, 152, 154 not tried; no other file searched for a clear copy.",
+   "why": "A complete 143-group four-figure code telegram to the Khedive, with several code books from the same papers digitised alongside (HIL/150-155), so a key or the book may be in the collection.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Repeats (3063 x5, 0560 x5, 3645 x4) suggest a code, possibly enciphered; candidate books in the same collection: HIL/155 with an additive or shift, HIL/150 (Ottoman code no. 75), HIL/152/154 (Arabic numbered codes). Sender and year need confirming.",
+   "verify": "Collate the 143 groups at full resolution; read the stamp year; test HIL/155 with additives/offsets and the numbered Arabic and Ottoman codes HIL/152, 154, 150; identify 'Fouad' (Prince Ahmad Fuad? Kerim Fouad of HIL/51/122?); look for a clear copy in other HIL files of 1912 (e.g. HIL/21, 23-27, 67).",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t2m3f462569b.html",
+     "label": "Durham viewer, HIL/57/1-117"
+    },
+    {
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/m3/f4/t2m3f462569b/manifest",
+     "label": "IIIF manifest HIL/57"
+    },
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/s18049g504c.xml",
+     "label": "Abbas Hilmi II papers finding aid"
+    }
+   ],
+   "seen": "image",
+   "source": "research/sweep_2026-11-15_wave18_durham2",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "access": "online",
+   "scored": "vetted",
+   "access_note": "Free IIIF images at iiif.durham.ac.uk (Abbas Hilmi II papers HIL/57, frames of 77-80, about 1,200 px).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Durham IIIF, Abbas Hilmi II Papers HIL/57/77-80 (Crowned Heads), seen by the sweep agent as images of about 1,200 px; all groups transcribed in research/sweep_2026-11-15_wave18_durham2/raw/hil57_77-80_groups.txt",
+     "extent": "143 four-figure groups on four sheets of an Austrian receiving form, from Paris to the Khedive at the Hotel Imperial, Vienna, telegraph number 27597, signed in clear Hommages dévoués = Fouad; received stamp 14 Oct 12",
+     "cipher": "Typed four-figure groups, several repeating (3063 and 0560 five times each, 3645 four times); no decode is written on the forms and no clear copy was found in HIL/57, which was screened whole."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for HIL/57, Abbas Hilmi and Fouad on 16 Nov 2026: no DECODE record and nothing in the repo before this sweep; 20th-century telegrams are outside DECODE",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Abbas Hilmi, Khedive and Fouad: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for the same words: no match; outside his material",
+     "edition": "No edition of the Abbas Hilmi papers is known; the Durham finding aid lists the file as Crowned Heads and mentions code only in its description",
+     "literature": "No study found; no web search specific to this telegram was made. The sweep README records a failed direct lookup of the groups in the Khedive Cabinet code HIL/155 (0560 gives Arrivé, 3063 S'être entendu, 1316 Cessionnaire: nonsense in context)."
+    },
+    "key_check": "Codebooks of the Khedive's Cabinet are digitised in the same collection: HIL/155 (French one-part code 0001-9999), HIL/150, 152 and 154. A direct lookup in HIL/155 gives nonsense; an additive or offset on HIL/155 and the other codebooks were not tried.",
+    "duplicates": "known.py HIL/57, Abbas Hilmi, Fouad (16 Nov 2026): the wave 15 to 18 Durham records only (HIL/64 and HIL/65 telegrams, other items); not the same telegram.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2923,
+   "counted": true,
+   "ark": "",
+   "access": "archive",
+   "links": [
+    {
+     "href": "https://searcharchives.bl.uk/catalog/040-002025830",
+     "label": "BL catalogue, Add MS 32093"
+    },
+    {
+     "href": "https://archive.org/details/FifthReportHMC1876",
+     "label": "HMC Fifth Report (archive.org)"
+    }
+   ],
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "year": 1660,
+   "date": "1659-1660 (undated; the BL catalogue dates it by content)",
+   "title": "Unsigned letter partly in cipher, undeciphered, about General Monck's movements and the Restoration (Malet papers)",
+   "correspondents": "unknown -> unknown (Malet family papers; probably a royalist correspondent, recipient not stated)",
+   "place": "unknown",
+   "language": "English",
+   "region": "England",
+   "period": "1651-1700",
+   "shelfmark": "BL Add MS 32093 f. 423 (Malet Collection vol. III, item 113); HMC Fifth Report (1876), Appendix, MSS of Sir Alexander Malet, p. 314",
+   "folio_note": "BL catalogue: 'Letter partly in cipher, undeciphered, relating, apparently to Gen. Monck and his movements in 1659 and 1660. Imperfect. f. 423.' HMC Fifth Report: '(fragment, pages) partly in cypher about the landing of Charles II' (OCR damaged). Extent of cipher not stated; the letter is imperfect.",
+   "cls": "B",
+   "status": "Two independent descriptions (HMC 1876, BL Catalogue of Additions) say the cipher is not deciphered. known.py on '32093', 'f. 423', 'Malet', 'Monck': no repo entry for this letter (the only Monck hit is Hyde to Bennet, a different item). Not in the DECODE snapshot in the repo (research/cryptoole/snapshot.json lists Add MS 32091 only). Not on Tomokiyo's unsolved list (cryptiana code/unsolved.htm) nor on Lasry's GL.htm list: both pages fetched 16 Nov 2026 and grepped for the names, years and shelfmark, no hit. Checked 16 Nov 2026.",
+   "why": "A 1659-60 royalist/Restoration letter in cipher that neither the HMC editor nor the BL cataloguer read; the Malet volume has other Restoration papers (Hyde, Winchilsea) that may give the correspondent.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Writer, recipient and cipher type unknown; the letter is imperfect, so the cipher may be short. A royalist cipher of 1659-60 could match a key in Clarendon or Nicholas papers.",
+   "verify": "View Add MS 32093 f. 423 (BL, not digitised as far as checked); measure the cipher; compare with the Hyde/Mordaunt/Nicholas ciphers of 1659-60.",
+   "source": "wave-18 printed sweep: HMC Fifth Report (Malet MSS), then BL catalogue record",
+   "scored": "vetted",
+   "access_note": "British Library, not online. Accepted as an archive item on the catalogue's own description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "BL catalogue record for Add MS 32093 (searcharchives.bl.uk/catalog/040-002025830) and HMC Fifth Report p. 314, read by the sweep agent 16 Nov 2026; the leaf (f. 423) is in the British Library and not seen online.",
+     "extent": "an imperfect letter on f. 423, the amount of cipher not stated",
+     "cipher": "BL catalogue: Letter partly in cipher, undeciphered, relating, apparently to Gen. Monck and his movements in 1659 and 1660. Imperfect. No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Malet, Monck, Add MS 32093 on 16 Nov 2026: no DECODE record of this letter (see key_check for any key)",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched and searched by the sweep agent 16 Nov 2026 for Malet, Monck, Add MS 32093: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched and searched by the sweep agent 16 Nov 2026 for Malet, Monck, Add MS 32093: no match",
+     "edition": "HMC Fifth Report p. 314 calendars the fragment (partly in cypher about the landing of Charles II) without a reading; the cipher is not printed.",
+     "literature": "Not searched beyond the two catalogue sources: no study of this fragment is known to the sweep."
+    },
+    "key_check": "No key held. Royalist ciphers of 1659-60 in the same Malet papers and the Clarendon papers were not tested.",
+    "duplicates": "known.py 'Malet', 'Add MS 32093', 'Monck' (16 Nov 2026): no entry for this leaf; the Windebank to Hopton letter of 1634 in the same volume was dropped by the sweep because a deciphered duplicate is filed with it.",
+    "verdict": "open"
+   },
+   "repository": "bl"
+  },
+  {
+   "id": 2924,
+   "counted": true,
+   "ark": "",
+   "access": "archive",
+   "links": [
+    {
+     "href": "https://www.british-history.ac.uk/cal-state-papers/foreign/mary/pp260-273",
+     "label": "CSP Foreign Mary pp. 260-273 (BHO)"
+    }
+   ],
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1556,
+   "date": "18 Oct 1556",
+   "title": "Dr Nicholas Wotton to the Council: greater portion in cipher, undeciphered (Noailles leaving for England)",
+   "correspondents": "Nicholas Wotton (English ambassador in France) -> Privy Council",
+   "place": "Paris",
+   "language": "English",
+   "region": "England",
+   "period": "1497-1559",
+   "shelfmark": "TNA SP 69 (State Papers Foreign, Mary; piece for Oct 1556 not identified); CSP Foreign Mary (Turnbull 1861) no. 548, pp. 266-267",
+   "folio_note": "Turnbull: '[Three pages. The greater portion in cipher, undeciphered.]' The abstract gives only the clear opening (the Prothonotary de Noailles, now Bishop of Dax, to leave for England as ambassador; his brother the agent to return).",
+   "cls": "B",
+   "status": "Calendar says undeciphered; no decipher printed and no sibling 'decipher' entry follows. known.py on 'Wotton', 'Noailles', 'Prothonotary', 'Oct 1556', '18 Oct 1556', 'greater portion in cipher': the repo holds Wotton 1548 (no. 97 Ed. VI), Jan 1555 (Mary no. 316) and Mary no. 453, and the Wotton 1554 key (DECODE R354, R8499), but not this letter. Not on Tomokiyo's unsolved list (cryptiana code/unsolved.htm) nor on Lasry's GL.htm list: both pages fetched 16 Nov 2026 and grepped for the names, years and shelfmark, no hit. Checked 16 Nov 2026.",
+   "why": "Ambassador's despatch from the French court on the eve of the war of 1557, mostly cipher; the same writer's 1554 key is on DECODE.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "About two pages of cipher. Wotton's 1554 key (R354) may not be the 1556 cipher, but his other letters in this run give the family and possible cribs.",
+   "verify": "Locate the SP 69 piece and folio (State Papers Online or TNA); test R354 and the Mary no. 316 / 453 letters' cipher.",
+   "source": "wave-18 printed sweep: BHO CSP Foreign Mary",
+   "scored": "vetted",
+   "access_note": "The National Archives, SP 69; not online. Accepted as an archive item on the calendar's description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Turnbull, Calendar of State Papers Foreign, Mary, no. 548 (British History Online), read by the sweep agent 16 Nov 2026; the original in TNA SP 69 is not online and its piece was not identified.",
+     "extent": "three pages, the greater portion in cipher",
+     "cipher": "Calendar: [Three pages. The greater portion in cipher, undeciphered.] The abstract gives only the clear opening. No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Wotton, Noailles, SP 69 on 16 Nov 2026: no DECODE record of this letter (see key_check for any key)",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched and searched by the sweep agent 16 Nov 2026 for Wotton, Noailles, SP 69: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched and searched by the sweep agent 16 Nov 2026 for Wotton, Noailles, SP 69: no match",
+     "edition": "Turnbull's calendar prints only the clear abstract; no other edition is known.",
+     "literature": "Not searched beyond the calendar: no study of this despatch is known to the sweep."
+    },
+    "key_check": "Wotton's 1554 cipher key is on DECODE (R354) and his letter of Jan 1555 (CSP Foreign Mary no. 316) is a possible partner; neither was tested.",
+    "duplicates": "known.py 'Wotton', 'Noailles', 'SP 69' (16 Nov 2026): the DECODE R354 key only; no catalogue entry or lead for this despatch.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2925,
+   "counted": true,
+   "ark": "",
+   "access": "archive",
+   "links": [
+    {
+     "href": "https://www.british-history.ac.uk/cal-state-papers/foreign/vol3",
+     "label": "CSP Foreign Eliz. 1560-61 (BHO)"
+    },
+    {
+     "href": "https://archive.org/details/calendarstatepa00baingoog",
+     "label": "CSP Scotland I (archive.org)"
+    }
+   ],
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1561,
+   "date": "26 Feb 1561 (1560 old style)",
+   "title": "Thomas Randolph to Cecil: postscript of four lines of cipher, undeciphered",
+   "correspondents": "Thomas Randolph (English agent in Scotland) -> William Cecil",
+   "place": "Edinburgh",
+   "language": "English",
+   "region": "England",
+   "period": "1560-1589",
+   "shelfmark": "TNA SP 52/6 (State Papers Scotland, Elizabeth; item not verified); CSP Foreign Elizabeth 1560-61 (Stevenson 1865) no. 1034, pp. 583-584; CSP Scotland I (Bain 1898) no. 964, pp. 520-521",
+   "folio_note": "Stevenson: 'Orig. Hol., with a P.S. of four lines of cipher, undeciphered.' Bain: 'Attached is a slip of paper with [4?] lines' (the rest of the note lost in the OCR); neither prints a reading.",
+   "cls": "B",
+   "status": "Both calendars leave the four lines unread; no decipher entry follows. known.py on 'Randolph', '26 Feb 1561', 'wear a jack', 'four lines of cipher', 'no. 1034': the repo has Randolph to Sussex 1570 (targets/randolph1570, read with its contemporary decipher) but not this postscript. Not on Tomokiyo's unsolved list (cryptiana code/unsolved.htm) nor on Lasry's GL.htm list: both pages fetched 16 Nov 2026 and grepped for the names, years and shelfmark, no hit. Checked 16 Nov 2026.",
+   "why": "Early Randolph cipher from his first Scottish mission, on the eve of Mary's return; short but tied to a correspondent whose later cipher the repo has read.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Four lines only. Randolph's 1560-61 cipher with Cecil is earlier than the 1570 Sussex cipher; SP 106 or Cotton Caligula keys may hold it.",
+   "verify": "Find the slip in SP 52/6 (Bain's item 964); check SP 106 for a Randolph 1560-61 key.",
+   "source": "wave-18 printed sweep: BHO CSP Foreign vol. 3; checked against CSP Scotland I",
+   "scored": "vetted",
+   "access_note": "The National Archives, SP 52 (piece not verified); not online. Accepted as an archive item on the calendars' description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Stevenson, Calendar of State Papers Foreign Elizabeth 1560-61 no. 1034 and Bain, Calendar of State Papers Scotland I no. 964, read by the sweep agent 16 Nov 2026; the original, probably TNA SP 52/6, is not verified or online.",
+     "extent": "a postscript of about four lines of cipher on an attached slip",
+     "cipher": "Stevenson: Orig. Hol., with a P.S. of four lines of cipher, undeciphered. Bain notes the attached slip. Neither prints a reading."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Randolph, Cecil, SP 52 on 16 Nov 2026: no DECODE record of this letter (see key_check for any key)",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched and searched by the sweep agent 16 Nov 2026 for Randolph, Cecil, SP 52: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched and searched by the sweep agent 16 Nov 2026 for Randolph, Cecil, SP 52: no match",
+     "edition": "Neither calendar prints a reading of the postscript; no other edition is known.",
+     "literature": "Not searched beyond the two calendars: no study of this slip is known to the sweep."
+    },
+    "key_check": "No key held. A 1560-61 Randolph and Cecil key in SP 106 was not looked for.",
+    "duplicates": "known.py 'Randolph', 'SP 52/6' (16 Nov 2026): no entry for this slip.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2928,
+   "counted": true,
+   "year": 1710,
+   "date": "9 Oct 1706; Aug 1710 - 13 Jan 1711",
+   "title": "[Sándor Károlyi?] to Ferenc II Rákóczi, undated: letter wholly in undeciphered figures except the outer address",
+   "correspondents": "Sandor Karolyi → Francis II Rakoczi",
+   "place": "unknown",
+   "language": "Hungarian",
+   "region": "Central Europe",
+   "period": "1701-1800",
+   "shelfmark": "MNL OL, G 15 (Rákóczi szabadságharc levéltára), Caps. B, Fasc. 22, fol. 86-87",
+   "folio_note": "Archive's note verbatim: 'a külcímet kivéve végig megfejtetlen számjelekkel' (in undeciphered figures throughout except the outer address); no decipherment noted.",
+   "cls": "A",
+   "status": "16 Nov 2026 (wave 19 vetting, split from lead 2486): Proposed new lead split from 2486: G 15 Caps. B Fasc. 22 fol. 86-87, '[Károlyi Sándor?] -> Rákóczi Ferenc II', s.d., Hungarian, closing seal in red wax, 'a külcímet kivéve végig megfejtetlen számjelekkel'. No edition flag in the MNL record; but undated and the writer only guessed, so no edition can be searched by letter. Low confidence.",
+   "why": "The general who signed the peace of Szatmar, writing to the prince in the months before it.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the archive's item description during the 11 Nov 2026 MNL AdatbazisokOnline sweep (research/sweep_2026-11-11_southeast/); not viewed (no images online)",
+   "verify": "Lead only: check Archivum Rakoczianum and the Karolyi family editions for these dates; order scans; try the P 396 key sheets.",
+   "links": [
+    {
+     "label": "MNL AdatbazisokOnline, G 15 B Fasc. 22 fol. 86-87 (wholly cipher)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/15393"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 H Fasc. 239 fol. 25-26 (13 Jan 1711)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/18643"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 G Fasc. 218 fol. 28-29 (15 Aug 1710)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/18145"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 C Fasc. 65 fol. 9-10 (9 Oct 1706)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/16263"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "MNL AdatbazisokOnline sweep (G 15), 11 Nov 2026",
+   "prior_art": "not vetted: editions not opened. DECODE 'Károlyi': no G 15 ciphertext record.",
+   "needs_archive_scan": "yes",
+   "access_note": "MNL AdatbazisokOnline record https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/15393; no images; order a scan from MNL OL.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Nine Karolyi letters across four fascicles (C 65, G 218, H 239, B 22), most with only a word or two lines in figures. Checked 11 Nov: DECODE 'Karolyi' 0 records; Archivum Rakoczianum (archive.org full texts) prints Rakoczi's and Bercsenyi's letters, not Karolyi's. NOT opened, and they would cover the January 1711 letters (H Fasc. 239 fol. 24, 25-26): Lukinich, A szatmari beke tortenete es okirattara (1925) and Pulay's Szatmari bekesseg; neither is on archive.org and hungaricana is 403 here. Open those two, then split: the one promising piece is B Fasc. 22 fol. 86-87 ('a külcímet kivéve végig megfejtetlen számjelekkel', writer only guessed as Karolyi).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/15393 (read 16 Nov 2026): G 15 Caps. B Fasc. 22 fol. 86-87, s.d., s.l., Nyelv Magyar, Pecsét 1 zárópecsét gyűrűs vörös viasz.",
+     "extent": "One letter, two leaves, wholly in figures apart from the outer address.",
+     "cipher": "Archive's note verbatim: 'a külcímet kivéve végig megfejtetlen számjelekkel' (in undeciphered figures throughout except the outer address); no decipherment noted."
+    },
+    "prior_art": {
+     "decode": "DECODE 'Károlyi' (11 Nov check): no G 15 ciphertext record; known.py no hit on the folio.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "The MNL G 15 records give an edition field when a letter is printed (e.g. Bánkúti for H 239 fol. 24-26); this record has none. Archivum Rakoczianum (earlier check) prints no Károlyi letters; Lukinich 1925 searched (no cipher words).",
+     "literature": "No study found; Lang's repertory has no row for G 15 Caps. B (earlier check)."
+    },
+    "key_check": "Károlyi key sheets MNL OL P 396 nos. 379, 11345, 10543; not seen or tested. A key does not block the lead.",
+    "duplicates": "Split from lead 2486; no catalogue entry or other lead on G 15 B Fasc. 22.",
+    "verdict": "open"
+   },
+   "repository": "mnl"
+  },
+  {
+   "id": 2929,
+   "counted": true,
+   "year": 1711,
+   "date": "29 Apr and 14 May 1711; 18 Sep 1711; 1708-1710",
+   "title": "Ferenc II Rákóczi to Korbe and to Cantacuzino: letters wholly in cipher apart from the signatures",
+   "correspondents": "Janos Szent-Ivany → Rakoczi; J. M. Klement as 'Rosenau' → Rakoczi; Peter Daniel → Rakoczi; Fierville le Herissy → [Rakoczi?]; [Miklos Bercsenyi] → [Daniel Esterhazy?]; Rakoczi → Constantin Cantacuzino; Rakoczi → Theodor Korbe",
+   "place": "Munkacs; unknown",
+   "language": "Hungarian, Latin, French",
+   "region": "Central Europe",
+   "period": "1701-1800",
+   "shelfmark": "MNL OL, G 15, Caps. A2, Fasc. 2, fol. 80-83",
+   "folio_note": "Archive's notes verbatim: 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'; no decipherment noted; the sibling 17947 is noted as deciphered at the time ('végig egykorúlag megfejtett titkosírással, a dátum azonban feloldatlan').",
+   "cls": "B",
+   "status": "16 Nov 2026 (wave 19 vetting, split from lead 2488): Proposed new lead split from 2488: Rakoczi to Theodor Korbe (secretary of the Wallachian voivode) and to Count Constantin Cantacuzino, G 15 A2 Fasc. 2 fol. 80-81 and 82-83, Latin, s.d., each sealed, 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'. Cantacuzino to Rakoczi of 6 Dec 1709 (F Fasc. 189 fol. 47-48) is 'végig egykorúlag megfejtett' and may share the system. Undated, so no edition matched; low confidence.",
+   "why": "The end of the war of independence (the Munkacs garrison, Klement's mission, the Wallachian channel).",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the archive's item description during the 11 Nov 2026 MNL AdatbazisokOnline sweep (research/sweep_2026-11-11_southeast/); not viewed (no images online)",
+   "verify": "Lead only: check Bankuti-Meszaros (Szent-Ivany), Fiedler's Actenstuecke (Klement) and Archivum Rakoczianum; then split into rows by writer and order scans.",
+   "links": [
+    {
+     "label": "MNL AdatbazisokOnline, G 15 A2 Fasc. 2 fol. 82-83 (Rakoczi → Cantacuzino)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14812"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 A2 Fasc. 2 fol. 80-81 (Rakoczi → Korbe)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14811"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 H Fasc. 235 fol. 48-51 (Rosenau)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/19140"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 H Fasc. 240 fol. 78-83 (Szent-Ivany)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/18703"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 E Fasc. 111 fol. 125 (Daniel)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/17388"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "MNL AdatbazisokOnline sweep (G 15), 11 Nov 2026",
+   "prior_art": "not vetted: named editions not opened. DECODE 'Cantacuz', 'Korbe', 'Fierville', 'Klement': no G 15 ciphertext; 'Szentiványi': key R619 only.",
+   "needs_archive_scan": "yes",
+   "access_note": "MNL records https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14811, 14812 and 17947; no images.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Mixed row: nine items by seven writers in six fascicles, to be split before any verdict. Checked 11 Nov: DECODE 'Klement', 'Cantacuz', 'Fierville' 0 records; Archivum Rakoczianum full texts have no letter to Korbe or Cantacuzino matching A2 Fasc. 2 fol. 80-83 (one note that a letter to 'Cantacuzeno' was never entered in the letter book). Still unopened: Bankuti-Meszaros, 'Mar nem haboru...' (prints Szent-Ivany, H Fasc. 240 fol. 112-113, as no. 17, so that item is probably read) and Fiedler, Actenstuecke zur Geschichte Franz Rakoczys (not found on archive.org) for Klement. Best single candidates after a split: Rakoczi to Korbe and to Cantacuzino, 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14811 (fol. 80-81, to Korbe) and 14812 (fol. 82-83, to Cantacuzino), read 16 Nov 2026; sibling https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/17947.",
+     "extent": "Two letters of two leaves each, wholly in secret signs apart from the signature.",
+     "cipher": "Archive's notes verbatim: 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'; no decipherment noted; the sibling 17947 is noted as deciphered at the time ('végig egykorúlag megfejtett titkosírással, a dátum azonban feloldatlan')."
+    },
+    "prior_art": {
+     "decode": "Earlier check (11 Nov): DECODE 'Cantacuz', 'Korbe' 0 records; the Brâncoveanu/Cantacuzino key A of target sieniawski1708 is a different correspondence (not compared).",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Archivum Rakoczianum (earlier check): no letter to Korbe or Cantacuzino matching; a note that a letter to 'Cantacuzeno' was never entered in the letter book. No edition field in the MNL records.",
+     "literature": "No study found in the earlier web searches; Révay 1974 not seen."
+    },
+    "key_check": "No key held; the deciphered Cantacuzino letter (F 189 fol. 47-48) could supply plaintext for the system. A key does not block.",
+    "duplicates": "Split from lead 2488; target sieniawski1708 (Brâncoveanu and Cantacuzino) is a different sender pair and archive, not a duplicate as far as checked.",
+    "verdict": "open"
+   },
+   "repository": "mnl"
+  },
+  {
+   "id": 2937,
+   "counted": true,
+   "year": 1884,
+   "date": "20 Aug 1884 (heading 'Cairo, August 20th, 10.30 P.M.' as printed in Hake; the sweep's first reading '30 Aug' was a misread of the OCR)",
+   "title": "Egerton (Cairo) → Gordon (Khartoum), numeric cipher telegram that Gordon could not read: 23 six-digit groups printed in Hake's edition",
+   "correspondents": "Egerton at Cairo (sender per Gordon's journal; the telegram itself is unsigned in the print) → General C. G. Gordon, Khartoum",
+   "place": "Cairo",
+   "language": "English",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Printed: A. E. Hake (ed.), The Journals of Major-Gen. C. G. Gordon, C.B., at Kartoum (London 1885), Book I, p. 50, footnote 67 (archive.org journalsmajorge00hakegoog; Gutenberg 49224). Original: Gordon's journal MS with the telegram pasted in, location not verified (British Library, unconfirmed)",
+   "folio_note": "23 groups of 6 digits, headed 'Cairo, August 20th, 10.30 P.M.', printed in full in the footnote; Gordon: 'Egerton's cipher telegram, which I cannot decipher'; a clear note written on its back is also printed",
+   "cls": "C",
+   "status": "Seen on the printed page (page image of the archive.org scan, 14 Nov 2026) and in the OCR of two editions. Digits: 445737 905309 185115 417291 552676 792996 271381 511906 689363 945242 226739 648255 102037 626054 535222 672318 277535 134971 467430 203151 804960 483289 681510. No decipherment in the book: Gordon says Stewart took the cipher books. Plaintext may survive in the Foreign Office / Egypt papers (not searched). Not in the repo (known.py 445737, Khartoum, Egerton: no match). Not on DECODE (2 searches). Related and distinct: PRO 30/57/4/119 (Wolseley, 19 Oct 1884) is already in the catalogue; Durham SAD.250/1/550 (Gordon's Arabic-numeral note) is a lead of the north-east literature sweep.",
+   "why": "A British Foreign Office numeric code of 1884 in use on the Khartoum line; Gordon's journal names two more such telegrams (Wolseley's and Nubar/Baring's) that he also could not read, so the code groups could be compared if the originals are found.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from the printed edition during the 14 Nov 2026 British and South African sweep (research/sweep_2026-11-14_africa_british_southafrica/); printed page viewed, original not seen",
+   "verify": "Find the plaintext (FO 78 Egypt / FO 141 Cairo telegrams of 30 Aug 1884, Egypt No. 12-25 (1884) blue books, Kitchener papers PRO 30/57/4); locate Gordon's journal volumes and the pasted telegrams; try other printed FO numeric groups of 1884.",
+   "links": [
+    {
+     "label": "Hake edition, archive.org",
+     "href": "https://archive.org/details/journalsmajorge00hakegoog"
+    },
+    {
+     "label": "Gutenberg 49224",
+     "href": "https://www.gutenberg.org/ebooks/49224"
+    }
+   ],
+   "seen": "image",
+   "source": "archive.org printed-source grep (British and South African sweep)",
+   "prior_art": "open (checked 14 Nov 2026: Hake edition text, repo known.py, DECODE keyword search, one web search; Tomokiyo, Lasry and the Blue Books not searched)",
+   "needs_archive_scan": "no",
+   "access_note": "ciphertext is in print and open on archive.org and Gutenberg; the code is not published",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-14",
+    "by": "dbourdeau, claude (main session)",
+    "seen": {
+     "kind": "scan",
+     "where": "archive.org journalsmajorge00hakegoog (Hake, Journals of Major-Gen. C. G. Gordon at Kartoum, 1885), page image of printed p. 50 (leaf n105 of the scan) and the footnote text beside it on p. 51 (leaf n106), viewed 14 Nov 2026; Gutenberg 49224 text compared",
+     "extent": "One telegram: 23 groups of six digits in three printed lines, headed 'To General Gordon, Cairo, August 20th, 10.30 P.M.'",
+     "cipher": "Printed in full in footnote 67 on p. 50: 445737-905309-185115-417291-552676-792996-271381-511906-689363-945242-226739-648255-102037-626054-535222-672318-277535-134971-467430-203151-804960-483289-681510. Read off the page image (first 14 groups at 3x magnification) and matches the Gutenberg text; the archive.org OCR garbles several digits. Gordon writes beside it that he cannot decipher it because Stewart took the cipher book. A clear note on its back, signed by Kitchener at Debbeh, 29 Aug 1884, is printed under it and is a separate message, not a decipherment."
+    },
+    "prior_art": {
+     "decode": "decode_search.py: Egerton (hits are only BL Egerton MSS of 1646-58), Gordon, Kitchener, Debbeh, Soudan, Sudan: no relevant record.",
+     "tomokiyo": "All cryptiana pages fetched and searched by the north-east sweep for Gordon, Khartoum, Sudan, Mahdi, Egypt, and GL.htm (Lasry's keys) searched again 14 Nov 2026 for the same words: no entry.",
+     "lasry": "Web searches 14 Nov 2026 (Lasry, HistoCrypt, Cryptologia with Gordon, Khartoum, Foreign Office code): only unrelated Lasry papers; nothing on the 1884 Khartoum telegrams.",
+     "edition": "Hake (first edition p. 50-51 and Gutenberg text, whole book searched for cipher): prints the ciphertext and no plaintext; Gordon says he could not read it. Hake's footnote 66 prints a clear relay of an Egerton message of 30 Aug via Kitchener (Debbeh, 31 Aug) with a different text. TNA PRO 30/57/4 (Kitchener papers, item-level catalogue, 4/54-123 read) lists decodes only for Kitchener's own telegrams and says decodes are filed 'in a separate cover'; no item for this Egerton to Gordon telegram. The government Blue Books of 1884 were not opened.",
+     "literature": "Web searches for the 20 August 1884 Egerton to Gordon telegram, its Blue Book and any decipherment (Hansard Aug-Sept 1884, TNA Discovery, Spectator Sept 1884): nothing that prints or deciphers it."
+    },
+    "key_check": "No key is known. Gordon says the Foreign Office cipher book went with Stewart; the six-digit groups suggest a numeric code book, which is not in this repository or in print as far as searched. The Nile Expedition table SAD.250/1/81 at Durham is a different system (two-digit) and was not tried.",
+    "duplicates": "known.py '445737', 'Egerton', 'Debbeh': hits are only unrelated Egerton MSS entries and the Durham Gordon lead 2939; DECODE 0; catalogue 356 (Wolseley to Gordon, 19 Oct 1884, PRO 30/57/4/119) is a different telegram.",
+    "searches": [
+     {
+      "query": "Hake Journals Gordon first edition p. 50-51 and Gutenberg 49224: Egerton cipher telegram 445737, whole text searched for cipher and decipher",
+      "result": "Telegram printed in footnote 67 with no decipherment; the nearby clear message on the back is a separate Kitchener note of 29 Aug 1884."
+     },
+     {
+      "query": "TNA Discovery PRO 30/57/4 items 54-123 (Kitchener papers, Aug-Oct 1884), item descriptions read",
+      "result": "Describes Kitchener's telegrams and says decodes sit in a separate cover; no item matches an Egerton to Gordon cipher of 20 Aug."
+     },
+     {
+      "query": "web: Egerton Gordon 20 August 1884 cipher telegram deciphered Blue Book Egypt No.",
+      "result": "Nothing prints or deciphers it; Blue Book number not found."
+     },
+     {
+      "query": "decode_search.py Egerton Gordon Kitchener Debbeh Soudan Sudan",
+      "result": "No relevant DECODE record."
+     }
+    ],
+    "verdict": "open"
+   },
+   "repository": "bl"
+  },
+  {
+   "id": 2939,
+   "counted": true,
+   "year": 1884,
+   "date": "1884 (Hijri year digits at the foot not clearly legible at native size: read as 1302 by the sweep, 1300-1302 possible; day read as 16). Covering letter Palmer to Grenfell, 15 Nov 1886",
+   "title": "Gordon at Khartoum, note in two-digit Arabic-numeral cipher addressed to the Mudir of Dongola (found 1886 among papers from Dongola)",
+   "correspondents": "Charles G. Gordon, Khartoum → the Mudir of Dongola (addressee line read from the image as 'to His Excellency Mustafa Pasha, Mudir of Dongola'; name not checked elsewhere)",
+   "place": "Khartoum (siege of Khartoum, Mar 1884 - Jan 1885)",
+   "language": "Arabic (plaintext presumed; a few Arabic words are written in clear between the groups)",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Durham University Library, Archives and Special Collections, Sudan Archive, Wingate Papers, SAD.250/1/550 (covering letter SAD.250/1/549)",
+   "folio_note": "One leaf (SAD.250/1/550): about 14 lines of two-digit Arabic-Indic number groups, roughly 80-95 groups (not counted exactly), a few groups stacked or overwritten as corrections, the addressee and a few words in Arabic script in clear, a date and signature at the foot. The covering letter 549 is a clear English letter",
+   "cls": "B",
+   "status": "Attempted 14 Nov 2026 and closed from the evidence (write-up: gordonmudir1884.html, targets/gordonmudir1884/): transcribed (119 groups, 26 distinct values, digits 1-9 in a 7 x 6 grid); the two Arabic columns of the Durham table SAD.250/1/81, as read, do not read it; a letter-substitution attack with controls and crib dragging on the closing groups find nothing. Palmer's covering letter (SAD.250/1/549, 15 Nov 1886) says a Dongola employee, Khalil Ibrahim, 'has the key'. No decipherment is written on the leaf or known; not on DECODE. Left: comparison material that is not digitised (TNA PRO 30/57/4/75-109 at Kew, Durham SAD.101/15), an Arabic reader to check the groups and clear words, a better image of SAD.250/1/81.",
+   "why": "A cipher in Gordon's own hand from the Khartoum siege, in a two-digit numeric code with plain words mixed in (cribs), plus a candidate key table in the same collection; Hansard 14 Nov 1884 records 'four Arabic cipher letters' reaching Debbeh from Gordon.",
+   "importance": 4,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored 14 Nov 2026 in the north-east Africa sweep (research/sweep_2026-11-14_africa_north_east_literature/); leaf viewed on Durham's IIIF images (one request returns at most 1024 px per side; region requests give native detail)",
+   "verify": "Transcribe the groups from the IIIF image; read the Arabic words and date at the foot; test the SAD.250/1/81 table and the Palmer letter's key remark; compare the four 'Arabic cipher letters' of Nov 1884 and the Kitchener telegrams TNA PRO 30/57/4/77-78 ('use Arabic cipher'), 4/89-109 (Arabic script)",
+   "links": [
+    {
+     "label": "Durham finding aid, Wingate Papers (SAD.250/1/549-550 in the range 528-606)",
+     "href": "https://reed.dur.ac.uk/xtf/view?docId=ark/32150_s1f4752g79m.xml"
+    },
+    {
+     "label": "Digitised SAD.250/1/528-606 (Mirador viewer; leaves 549, 550)",
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t2mqj72p714z.html"
+    },
+    {
+     "label": "IIIF manifest",
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mq/j7/t2mqj72p714z/manifest"
+    },
+    {
+     "label": "Hansard 14 Nov 1884, Gordon's messenger with four Arabic cipher letters",
+     "href": "https://api.parliament.uk/historic-hansard/commons/1884/nov/14/egypt-events-in-the-soudan-general-gordon"
+    }
+   ],
+   "seen": "image",
+   "source": "Durham Sudan Archive sweep",
+   "prior_art": "open (checked 14 Nov 2026: DECODE keyword search for Gordon, Khartoum, Dongola, Wingate, Hicks, Sudan Archive: 0 records; Tomokiyo: all 295 cryptiana pages fetched and searched, no Gordon, Sudan or Khartoum cipher page; Lasry/HistoCrypt: web search found only the Biafran ciphers paper, nothing on Sudan; Durham catalogue entry gives no decipherment; Hake's printed edition of Gordon's Khartoum journals mentions undecipherable cipher telegrams but was only searched by text, not for this leaf; repo known.py: no hit for SAD.250, Mudir, Dongola cipher other than the Kitchener leads 1159 and 356)",
+   "needs_archive_scan": "no",
+   "access_note": "Images are free on Durham's IIIF server (no login, plain curl works); the Mirador link above shows all 96 leaves of SAD.250/1/528-606",
+   "vetting": {
+    "date": "2026-11-14",
+    "by": "claude sweep agent (sweep_2026-11-14_africa_north_east_literature), then re-viewed and checked against Hake by the main session, 14 Nov 2026; contributor not named",
+    "seen": {
+     "kind": "scan",
+     "where": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/mq/j7/t2mqj72p714z/manifest, canvases SAD.250/1/549 and SAD.250/1/550, viewed 14 Nov 2026; native-resolution region of the upper left of 550 also viewed",
+     "extent": "One leaf, 13 rows of 7 two-digit groups (about 90 groups) plus a last short numeric row and a few groups inside the closing lines",
+     "cipher": "Re-viewed 14 Nov 2026 at 1000 px (whole leaf) and 1024 px crops of the upper, middle and lower thirds, and the date at native size. Two-digit Arabic-Indic numeral groups in 13 rows of 7, several groups overwritten or stacked under a fraction-style bar (corrections); an addressee line in Arabic script in clear ('To His Excellency Mustafa Pasha, Mudir of Dongola'); a few clear Arabic words between the rows; the closing lines are clear Arabic with a few number groups inside them; date at the foot and Gordon's signature. No plaintext or decipherment is written on the leaf; covering letter 549 does not decipher it. The Hijri year digits are not clearly legible (1300-1302)."
+    },
+    "prior_art": {
+     "decode": "decode_search.py: Wingate, Dongola, Hicks, Gordon, Khartoum, Sudan Archive, Egypt, Abyssinia, Ethiopia, Morocco: 0 records.",
+     "tomokiyo": "All 295 pages linked from cryptiana.web.fc2.com/code/crypto.htm fetched and searched for Gordon, Khartoum, Sudan, Mahdi, Egypt: nothing on this note.",
+     "lasry": "Web search (HistoCrypt, Lasry, Africa, Sudan): only 'The Biafran Ciphers' (1960s); nothing on Gordon.",
+     "edition": "Durham finding aid prints no text. Hake, Journals of Major-Gen. C. G. Gordon at Kartoum (Gutenberg 49224) read at Appendix U (Mahdi's letter, 'letters from General Gordon to the Mudir of Dongola'): it prints Gordon's plain-Arabic notes to the Mudir of 8 Aug and 28 Sep 1884 and says the Mahdi seized a cipher to Mustafa Jawer dated 22 Sep 1884 (contents not printed). No numeric cipher to the Mudir and no decipherment of this leaf is printed there; the leaf is not that seized item (it was found at Dongola, per Palmer 1886) but is the same correspondent and period. Calendars of Sudan telegrams and Wingate's Mahdiism not searched.",
+     "literature": "Web searches for a Gordon numeral cipher, Mudir of Dongola and Khalil Ibrahim found nothing; Hansard 14 Nov 1884 notes four Arabic cipher letters from Gordon via Kitchener's messenger."
+    },
+    "key_check": "SAD.250/1/81 (Nile Expedition cipher table with Arabic-numeral columns) is a candidate key and was seen but not tested; Palmer's letter says Khalil Ibrahim had the key.",
+    "key_in_volume": "SAD.250/1/81 (digitised in unit SAD.250/1/59-96): viewed 14 Nov 2026 at 1000 px: a pencil table of the 26 Latin letters against two-digit numbers (first number column starts A=34, B=68, C=82) with Arabic-letter columns and further letter columns headed by officers' names (Wolseley and Kitchener among them). A candidate key family for a two-digit Arabic-numeral cipher; NOT tested against the leaf. Palmer's covering letter says Khalil Ibrahim of Dongola 'has the key'.",
+    "duplicates": "known.py: SAD.250, SAD.600, Mudir, Dongola, Mustafa Yawer, Khalil Ibrahim, Gordon; hits only lead 1159 (Kitchener telegrams, TNA) and catalogue 356/Wolseley to Gordon 19 Oct 1884 (TNA PRO 30/57/4/119), which are different items.",
+    "verdict": "open"
+   },
+   "ark": "",
+   "scored": "vetted",
+   "repository": "tna",
+   "outcome": "attempted, open"
   }
  ]
 }

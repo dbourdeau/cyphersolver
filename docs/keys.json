@@ -5198,6 +5198,14 @@
    "by": "cyphersolver",
    "year": null,
    "note": "22 invented signs for Arabic letters, one for lam-alif, rebuilt from a five-letter red gloss, repeated words and the metre. Text about 1330-1370; the year of use is not known."
+  },
+  {
+   "id": "k-durham-sad250-81",
+   "label": "Table of cypher codes for senior army personnel, Durham SAD.250/1/81 (Arabic-alphabet columns N1 and N2)",
+   "kind": "archive key",
+   "by": "Nile Expedition staff (Durham Sudan Archive, Wingate Papers)",
+   "year": 1884,
+   "note": "Pencil table of Latin letters against two-digit numbers in columns headed with officers' names, and two Arabic-alphabet columns of two-digit numbers; filed in the same unit as the Gordon note SAD.250/1/550."
   }
  ],
  "links": [
@@ -9902,7 +9910,8 @@
   "r2236": "not deciphered: another list from the R2237/R2239 one, no key found; nothing read",
   "waldeck1744": "not deciphered: no key known; a two-part nomenclator not rebuildable from one letter",
   "esterhazy1744": "not deciphered: no key known; only 176 groups of a code of about 2,000 values are online",
-  "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up)."
+  "urquhart": "No cipher key: a rule-based word puzzle, read by applying the stated rule (see the write-up).",
+  "gordonmudir1884": "Not read: no key reads the note. The one key tried, the Durham table SAD.250/1/81 (both Arabic columns, as read), does not fit and is recorded under tried."
  },
  "tried": [
   {
@@ -11149,6 +11158,11 @@
    "key": "k-extra3-murguia1914",
    "target": "gonzalez1913",
    "note": "the Clave Extra 3 key applied to the runs gives no Spanish; a different system"
+  },
+  {
+   "key": "k-durham-sad250-81",
+   "target": "gordonmudir1884",
+   "note": "Both Arabic columns, as read (27 of 28 letters, mostly low confidence), tried against the note in eight variants against 4000 random letter reassignments: N2 clearly does not fit (65 to 88 percent of random draws do as well), N1 gives one marginal hint (2.5 percent, one of eight variants) that disappears when 3=4 and 2=6 are allowed (14 Nov 2026)"
   }
  ]
 }
