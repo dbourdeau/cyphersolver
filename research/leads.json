@@ -54242,6 +54242,1417 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "Vetting pass 15 Nov 2026 (blocked-catalogue Chrome sweeps): BnF Clairambault 528 pp. 91, 101, 115 (Cardinal de Bouillon affair): weak class C and not identified as ciphertext; not vetted."
+  },
+  {
+   "id": 2832,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Viewed on the ONB IIIF images 15 Nov 2026 (api.onb.ac.at manifest DTL_4865249, three 636x2464 views: recto, verso, recto with colour chart)",
+   "seen": "image",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): not in the ONB Wiener Sammelliste of published Arabic papyri; Arabic Papyrology Database (Munich) inventory search gave nothing; web searches (A.P. 11016, Karabacek 1894, Arabic papyri secret script/cipher) found only Karabacek 1894 p. 226 no. 8 listing it; ONB says content unknown. DECODE, Tomokiyo and GL.htm hold no Arabic papyri.",
+   "region": "Other",
+   "year": 850,
+   "date": "3rd c. AH / 9th c. AD",
+   "language": "Arabic",
+   "period": "unknown",
+   "title": "Arabic letter written in a secret script ('Brief in Geheimschrift') with a second letter and a contract, Ihnas, Egypt, 9th c. (P.Vindob. A. P. 11016)",
+   "correspondents": "unknown writers (documentary papyrus from Ihnas / Herakleopolis, Archduke Rainer papyrus collection)",
+   "place": "Ihnas, Egypt",
+   "shelfmark": "OeNB, Papyrussammlung, P.Vindob. A. P. 11016 (digital object data.onb.ac.at/dtl/4865249)",
+   "folio_note": "2 fragments, 30.7 x 8.3 cm and 7.3 x 8.7 cm, papyrus, written on both sides. Record title 'Brief in Geheimschrift, ein zweiter Brief und Vertrag, unpubliziert'; keywords Brief, Geheimschrift, Vertrag, Beglaubigung, Iqrar, Unterschrift. 'Digitalisierung und online Beschreibung: Mellon-Projekt (U. Bsees 2015, A. Kaplony 2016)'. Literature: Karabacek, Papyrus Erzherzog Rainer. Fuehrer durch die Ausstellung, Wien 1894, p. 226 no. 8 ('Brief in Geheimschrift')",
+   "cls": "A",
+   "status": "Seen 15 Nov 2026: the recto opens with 11 lines in a secret script (about 8-12 signs a line, read right to left; Greek/Coptic-like letters, circles, Arabic letter forms, colon-like dividers), followed by an ordinary Arabic letter of about 20 lines naming Ihnas; the verso is an Iqrar (legal declaration) of one Shenute with witness signatures. ONB description: \"Brief (?) in Geheimschrift (arabische, griechische, koptische und andere Zeichen); Inhalt unbekannt\". Unpublished; no decipherment on or with it. Withheld from the catalogue and the website at the user's request (15 Nov 2026): kept off the site while a decipherment is attempted in targets/vindob11016 (Status: in progress). Do not promote without asking the user.",
+   "why": "Possibly the oldest cipher text in the lead list (9th c. Egypt): a documentary Arabic papyrus with a letter in a secret script and a second letter and contract in ordinary script (a possible crib). Online-digitised per the record.",
+   "importance": 5,
+   "solvability": 2,
+   "difficulty": 4,
+   "verify": "Open the digital object (data.onb.ac.at/dtl/4865249 or the papyrus portal) in a browser that loads it; check that the secret script is legible and long enough; search Karabacek 1894, Kaplony, Bsees and the Mellon Arabic papyri publications for a reading.",
+   "links": [
+    {
+     "href": "https://api.onb.ac.at/iiif/presentation/v3/manifest/DTL_4865249",
+     "label": "ONB IIIF manifest"
+    },
+    {
+     "href": "http://data.onb.ac.at/dtl/4865249",
+     "label": "OeNB digital object"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Geheimschrift)"
+    }
+   ],
+   "access_note": "Images open again (15 Nov 2026) at https://api.onb.ac.at/iiif/presentation/v3/manifest/DTL_4865249; viewer http://data.onb.ac.at/dtl/4865249. Maximum image width 636 px, so small signs are hard; a higher-resolution scan would need an ONB request.",
+   "ark": "",
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed. P.Vindob. A.P. 11016 is absent from the ONB 'Wiener Sammelliste' of published Arabic papyri (webarchiv copy, 2016) and from web search; the record says 'unpubliziert' and cites Karabacek 1894 (PERF Fuehrer p. 226 no. 8), so no published description or reading was found. The same Primo search lists a sibling 'Spiegelschrift und Brief' (P.Vindob. A.P. 9911, 9th c.), mirror writing and not a cipher.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), retry of the ONB image route",
+    "seen": {
+     "kind": "scan",
+     "where": "ONB IIIF manifest DTL_4865249, canvas 1 (recto) and 3 (recto with colour chart), 636x2464 px, viewed 15 Nov 2026; upscaled crops of the two fragments read",
+     "extent": "Recto lines 1-11 (fragment 1 lines 1-5, fragment 2 lines 6-11), about 100-120 signs",
+     "cipher": "Secret script of mixed signs (Greek/Coptic-like letters such as chi and beta, circles, Arabic letter forms, word dividers like colons), right to left; an ordinary Arabic letter follows on the same side, the verso is a legal declaration with witnesses. No decipherment, gloss or interlinear reading on either side; ONB: \"Inhalt unbekannt\"."
+    },
+    "prior_art": {
+     "decode": "DECODE holds no Arabic papyri; known.py over the DECODE dumps, catalogue, leads and targets: no hit for 11016, Ihnas or the shelfmark outside this lead (15 Nov 2026).",
+     "tomokiyo": "Tomokiyo (cryptiana) covers European ciphers; nothing on Arabic papyri.",
+     "lasry": "GL.htm has no Arabic or papyrus entries.",
+     "edition": "Unpublished (ONB record \"unpubliziert\"); absent from the ONB Wiener Sammelliste of published Arabic papyri (2016 webarchiv copy); the Arabic Papyrology Database (Munich) inventory search gave nothing (15 Nov 2026). Only Karabacek, Papyrus Erzherzog Rainer: Fuehrer durch die Ausstellung (Wien 1894) p. 226 no. 8 lists it, as \"Brief in Geheimschrift\".",
+     "literature": "Web searches 15 Nov 2026 (A.P. 11016 Geheimschrift; Arabic papyri secret script / cipher; Karabacek 1894 Geheimschrift): nothing on this papyrus. The ONB description (Mellon project, U. Bsees 2015 / A. Kaplony 2016) says the content is unknown."
+    },
+    "key_check": "No key is known: the ONB record and Karabacek 1894 give none, and no sign table for this script was found in the Arabic papyri literature searched; the ordinary Arabic letter on the same side and the verso declaration (names: Shenute, Ihnas) are possible cribs, untested.",
+    "duplicates": "known.py \"11016\", \"Geheimschrift\", \"Ihnas\", \"Vindob. A\" (15 Nov 2026): only this lead and the sweep READMEs that found it; the sibling P.Vindob. A.P. 9911 is mirror writing, not cipher.",
+    "verdict": "open"
+   },
+   "repository": "unidentified",
+   "withheld": "Withheld from the catalogue and the website at the user's request (15 Nov 2026): kept off the site while a decipherment is attempted in targets/vindob11016 (Status: in progress). Do not promote without asking the user."
+  },
+  {
+   "id": 2833,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass",
+   "region": "Central Europe",
+   "year": 1607,
+   "date": "7 Jan 1607",
+   "language": "German / Latin",
+   "period": "1598-1610",
+   "title": "Archduke Ferdinand (II) at Graz to Rudolf II, 7 Jan 1607: letter with 3 letters 'in Geheimschrift' filed as accompanying material",
+   "correspondents": "Ferdinand II, later Holy Roman Emperor (Archduke of Inner Austria) -> Rudolf II, with 3 further cipher letters",
+   "place": "Graz",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 15/1-3",
+   "folio_note": "1 Brief mit Unterschrift und Anschrift, 2 Blatt, 2 Seiten. 'Begleitmaterial: Brief an Ferdinand II. v. e. unbek. Schr.; 3 Briefe in Geheimschrift; 3 latein. Schriftbl.' Source: Alter Autographenkatalog",
+   "cls": "B",
+   "status": "Catalogue: three letters in a secret script filed with the letter. Whether the 3 Latin sheets are decipherments is not stated in the record; nothing published found.",
+   "why": "Three cipher letters from the Inner Austrian court; the 3 Latin sheets may be plaintext renderings, which would give a crib or a filed decipherment (to be checked).",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Order Autogr. 15/1-3; see whether the Latin sheets decipher the three letters (then the lead is closed as a decipherment filed with it); compare Habsburg Inner Austrian ciphers of 1600-10.",
+   "links": [
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Geheimschrift)"
+    }
+   ],
+   "access_note": "description only (OeNB Autographensammlung catalogue); no image route found",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed."
+  },
+  {
+   "id": 2834,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass",
+   "region": "Central Europe",
+   "year": 1517,
+   "date": "7 Aug 1517",
+   "language": "German",
+   "period": "1497-1559",
+   "title": "Emperor Maximilian I, letter marked 'Chiffern' (cipher), 7 Aug 1517, from the Tiroler Gubernium (Autogr. 15/28-1)",
+   "correspondents": "Maximilian I (writer; recipient not given in the list view)",
+   "place": "unknown (Tyrol chancery)",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 15/28-1 (series 15/28(1-11))",
+   "folio_note": "1 Brief mit Unterschrift (Chiffern), mit Anschrift, 1 Blatt, 1 Seite. Provenance: Tiroler Gubernium, abgegeben 1831. AC15074034. Other items of the 15/28 series (15/28-6, Traunstein 1508) carry 'Chiffre' meaning a monogram signature, so check that -1 is a cipher letter and not signed in monogram",
+   "cls": "B",
+   "status": "Catalogue: the extent line says 'Chiffern'. Could be a ciphered text or a monogram; not opened.",
+   "why": "A 1517 letter of Maximilian I flagged as in cipher, held with Tyrolean chancery papers; one leaf, an early imperial cipher if it is one.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Open the record and any image; read the extent line in full; look for Maximilian cipher keys of 1500-1519 (the Innsbruck chancery), compare the Tyrolean Gubernium files.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC15074034",
+     "label": "OeNB record"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Chiffern&tab=onb_hanna&search_scope=ONB_hanna&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Chiffern)"
+    }
+   ],
+   "access_note": "description only",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed."
+  },
+  {
+   "id": 2835,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass",
+   "region": "Central Europe",
+   "year": 1701,
+   "date": "30 Sep 1701",
+   "language": "German / French",
+   "period": "1701-1800",
+   "title": "Prince Eugene of Savoy, letter 'in Chiffern' to a count, 30 Sep 1701, with a transcription filed (Autogr. 14/61-15)",
+   "correspondents": "Eugen von Savoyen-Carignan -> an unnamed count",
+   "place": "unknown (Italian campaign, 1701)",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Autogr. 14/61-15 (series 14/61(1-32))",
+   "folio_note": "1 Brief mit Unterschrift (in Chiffern), 2 Blatt, 3 Seiten. Provenance: Alter Bestand (Kuppitsch). 'Begleitmaterial: Transskription'. AC17356463",
+   "cls": "C",
+   "status": "Catalogue: a ciphered letter with a transcription filed with it; the transcription is probably a decipherment, in which case nothing is open here.",
+   "why": "Eugene of Savoy ciphered letter of 1701; listed as a weak lead because the filed transcription may already decipher it.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "verify": "Open the record; check what the Transskription is (plaintext of the cipher or a transcription of the cipher signs). If a decipherment is filed, close as decipherment_filed.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC17356463",
+     "label": "OeNB record"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Chiffern&tab=onb_hanna&search_scope=ONB_hanna&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Chiffern)"
+    }
+   ],
+   "access_note": "description only",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "read",
+    "closed": "decipherment_filed: the Primo extent line says 'Begleitmaterial: Transskription' filed with the letter 'in Chiffern' (Autogr. 14/61-15, Eugene of Savoy 1701); a transcription of a ciphered letter is a decipherment (inferred from the catalogue; the leaf could not be viewed, ONB image services returned 504/500 on 15 Nov 2026). Not promotable under the 15 Nov bar.",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "id": 2836,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass",
+   "region": "Central Europe",
+   "year": 1784,
+   "date": "1783-1791",
+   "language": "German",
+   "period": "1701-1800",
+   "title": "Stammbuch with entries in Geheimschrift (fol. 24r, 28r, 31r dated 25 Sep 1784, 37r, 78v), Vienna 1783-91 (Cod. Ser. n. 4832)",
+   "correspondents": "friends of the album owner (Haschka, Epstein von Ankersberg and others)",
+   "place": "Vienna (probably)",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Cod. Ser. n. 4832",
+   "folio_note": "Entries 'in Geheimschrift' on fol. 24r, 28r, 78v (undated), fol. 31r (25.09.1784), fol. 37r (with a silhouette); fol. 51r a signature in Geheimschrift (Wentzel Tobias Franz Epstein, Edler von Ankersberg). AC14378542",
+   "cls": "C",
+   "status": "Catalogue only. Short album entries in a secret script, probably a simple substitution or Masonic alphabet.",
+   "why": "Several short ciphered album entries of the 1780s plus a signature in the same script that gives a known-plaintext name.",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "Look at the folios (OeNB digital copy if any); the Epstein signature is a name crib. Compare Masonic and Enlightenment-circle alphabets.",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC14378542",
+     "label": "OeNB record"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=onb_hanna&search_scope=ONB_hanna&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Geheimschrift)"
+    }
+   ],
+   "access_note": "description only",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed."
+  },
+  {
+   "id": 2837,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "Scored from the OeNB catalogue record during the 15 Nov 2026 OeNB deep pass (research/sweep_2026-11-15_oenb_deep/); not viewed on an image",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): shelfmark and names searched with known.py in catalogue.json, leads.json, decode_updates, every candidates.json / key_leads.json and the targets: not found; no web, Tomokiyo, Lasry or DECODE search made in this pass",
+   "region": "Italy",
+   "year": 1650,
+   "date": "17th century",
+   "language": "Italian",
+   "period": "1611-1650",
+   "title": "Fedele Piccolomini Fedeli, 'Copia d'una cifra manifesta con la sententia contenuta in essa', a tract on cryptography, 7 leaves (Cod. 9521)",
+   "correspondents": "Fedeli, Fedele Piccolomini (author)",
+   "place": "unknown",
+   "shelfmark": "OeNB, Sammlung von Handschriften und alten Drucken, Cod. 9521",
+   "folio_note": "Handschrift, 7 Bll., quarto, paper, Italian, 1600-1699. Incipit 'Ogni lettera significa ...', explicit '... se stessi condannerano'. Content details taken from Tabulae codicum. AC13952749",
+   "cls": "C",
+   "status": "A short cryptography tract that gives a cipher with the sentence it contains; a worked example rather than a letter.",
+   "why": "A tract with an example cipher and its plaintext sentence (a control text, not a historical letter); weak lead.",
+   "importance": 1,
+   "solvability": 4,
+   "difficulty": 2,
+   "verify": "View the leaves; check whether the cipher sample is given with its key (the title says the sentence is stated).",
+   "links": [
+    {
+     "href": "http://data.onb.ac.at/rec/AC13952749",
+     "label": "OeNB record"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,cifra&tab=onb_hanna&search_scope=ONB_hanna&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (cifra)"
+    }
+   ],
+   "access_note": "description only",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Retry 15 Nov 2026 (wave 6): all ONB image routes failed: onb.digital and data.onb.ac.at/dtl redirect to onb.digital (504 from curl, browser error page), viewer.onb.ac.at loads but api.onb.ac.at/iiif/presentation/v3/manifest/DTL_<id> returns 504 (curl) / the viewer shows 'Fehler 500', for every DTL id tried; iiif.onb.ac.at does not connect. Nothing viewed."
+  },
+  {
+   "id": 2852,
+   "counted": true,
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "C",
+   "score_note": "Scored from the Arxius en linia record (15 Nov 2026, wave 7); the vetting block says what was viewed",
+   "links": [
+    {
+     "href": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-408-T-1891",
+     "label": "Arxius en linia record ANC1-408-T-1891"
+    }
+   ],
+   "source": "Arxius en linia (arxiusenlinia.cultura.gencat.cat) JSON backend in Chrome, wave 7, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "year": 1937,
+   "date": "1937 (copies made 1940-1945)",
+   "period": "1901-1950",
+   "title": "Josep Andreu i Abello: about 150 copies of enciphered telegrams, cables and radiograms of the Spanish Embassy in Mexico, 1937",
+   "correspondents": "Spanish Embassy in Mexico (mostly Felix Gordon Ordas) -> members of the Republican government and Spanish consuls",
+   "place": "Mexico City",
+   "shelfmark": "Arxiu Nacional de Catalunya, ANC1-408 Josep Andreu i Abello, ANC1-408-T-1891",
+   "folio_note": "'Correspondencia xifrada escrita entre l'01.01.1937 i el 31.12.1937': about 150 documents, 4 subfolders, Spanish, typescript copies",
+   "status": "Not online (Arxius en linia, 15 Nov 2026; no digital object). Typescript copies of enciphered telegrams of 1937; whether the copies show the ciphertext or a clear text is not stated.",
+   "why": "Republican diplomatic cable traffic of 1937, a large body from one embassy.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Find out whether the copies are ciphertext; the Republican cipher keys are the open question.",
+   "seen": "catalogue",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Vetting pass 15 Nov 2026 (Chrome wave 7): ANC1-408-T-1891 (Andreu i Abello, about 150 'copies de telegrames, cablegrames i radiogrames xifrats', Spanish Embassy in Mexico 1937): the record says the unit holds copies, but not whether they show ciphertext or clear text; not promoted until that is known. Not online."
+  },
+  {
+   "id": 2853,
+   "counted": true,
+   "language": "Spanish / Catalan",
+   "region": "Spain",
+   "cls": "C",
+   "score_note": "Scored from the Arxius en linia record (15 Nov 2026, wave 7); the vetting block says what was viewed",
+   "links": [
+    {
+     "href": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-1-T-7519",
+     "label": "Arxius en linia record ANC1-1-T-7519"
+    }
+   ],
+   "source": "Arxius en linia (arxiusenlinia.cultura.gencat.cat) JSON backend in Chrome, wave 7, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "year": 1937,
+   "date": "09 Jun - 17 Dec 1937",
+   "period": "1901-1950",
+   "title": "Generalitat of Catalonia, file on competence conflicts with the Republican government 1937: enciphered telegrams among 30 documents (96 images online)",
+   "correspondents": "Generalitat of Catalonia and the Government of the Republic (and the Basque government)",
+   "place": "Barcelona / Valencia",
+   "shelfmark": "Arxiu Nacional de Catalunya, ANC1-1 Generalitat de Catalunya (Segona Republica), ANC1-1-T-7519",
+   "folio_note": "30 documents, 96 images online; 'telegrames xifrats, correspondencia, informes i resums de noticies'",
+   "status": "Online (96 images, not viewed in full 15 Nov 2026). The description lists enciphered telegrams among the documents. Spanish/Catalan.",
+   "why": "Civil War government telegrams with cipher among them; the 1938 sibling T-7499 has an agenda item on the use of a cipher key.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "verify": "Page through the 96 images for the cipher telegrams; check for a decipherment beside each.",
+   "seen": "catalogue",
+   "scored": "sweep",
+   "vetting_note": "Vetting pass 15 Nov 2026 (Chrome wave 7): ANC1-1-T-7519 (Generalitat 1937 file, 96 images online): the images were not paged through, so no cipher telegram was seen and none is cited; not promoted."
+  },
+  {
+   "id": 2858,
+   "counted": true,
+   "year": 1497,
+   "date": "19 Jun 1497",
+   "period": "1497-1559",
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "B",
+   "title": "Juan Claver to the Catholic Monarchs, Milan, 19 Jun 1497: diplomatic news from France and Italy, cipher at the end",
+   "correspondents": "Juan Claver (ambassador) -> Catholic Monarchs",
+   "place": "Milan",
+   "shelfmark": "Archivo Historico Provincial de Zaragoza (Archivo del Reino de Aragon), Coleccion Zurita, C_CRAR/000001/0040",
+   "folio_note": "1 letter, incomplete (torn); cipher at the end",
+   "status": "Online (PDF on DARA). DARA summary: 'Escritura cifrada en la parte final del mensaje'. First-leaf image viewed 15 Nov 2026. Not vetted against lead 1048 (Claver to the Monarchs, Milan, 23 Jun 1497): the dates differ by four days, so it may be a draft, a duplicate or a different letter.",
+   "why": "Same writer and place as lead 1048, 1497; Parisi deciphered Claver's later letters, so the key may be in print.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the DARA record and the thumbnail of the first leaf (15 Nov 2026, wave 8); the vetting block says what was viewed",
+   "verify": "Compare with lead 1048 (23 Jun 1497, Milan) and Parisi 2019 before promoting; check the last leaf of the PDF.",
+   "links": [
+    {
+     "href": "https://dara.aragon.es/opac/app/item?i=1056537",
+     "label": "DARA record C_CRAR/000001/0040"
+    }
+   ],
+   "source": "DARA (dara.aragon.es) results and item pages, fetched same-origin in Chrome, wave 8, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "seen": "image",
+   "scored": "sweep"
+  },
+  {
+   "id": 2859,
+   "counted": true,
+   "year": 1479,
+   "date": "25 Jan 1479",
+   "period": "15th century",
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "C",
+   "title": "Ferdinand to John II, Guadalupe, 25 Jan 1479: answers four letters of the king, two in cipher and two in clear; one topic 'kept secret (cifrado)'",
+   "correspondents": "King Ferdinand -> John II of Aragon",
+   "place": "Guadalupe",
+   "shelfmark": "Archivo Historico Provincial de Zaragoza (Archivo del Reino de Aragon), Coleccion Zurita, C_CRAR/000001/0029",
+   "folio_note": "1 letter; cipher leaf not located",
+   "status": "Online (PDF on DARA). The summary says it answers four letters, two ciphered, and that one subject stays secret (cipher); the first leaf seen 15 Nov 2026 is clear text, so the cipher passage (if any) is on a later leaf that was not viewed.",
+   "why": "Ferdinand's own mention of John II's cipher letters (the incoming ones are not in this volume) in 1479: the plain letter dates the ciphers of the 1476-79 system.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the DARA record and the thumbnail of the first leaf (15 Nov 2026, wave 8); the vetting block says what was viewed",
+   "verify": "Page through the PDF for a cipher passage; look for the two cipher letters of John II it answers.",
+   "links": [
+    {
+     "href": "https://dara.aragon.es/opac/app/item?i=1055725",
+     "label": "DARA record C_CRAR/000001/0029"
+    }
+   ],
+   "source": "DARA (dara.aragon.es) results and item pages, fetched same-origin in Chrome, wave 8, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "seen": "image",
+   "scored": "sweep"
+  },
+  {
+   "id": 2862,
+   "counted": true,
+   "year": 1683,
+   "date": "Jan-Nov 1683, Aug 1685",
+   "period": "1651-1700",
+   "language": "Italian",
+   "region": "Spain",
+   "cls": "C",
+   "title": "Vincenzo Gonzaga (Guastalla) to Vespasiano Gonzaga: letters with a cipher sheet, 1683-85 (Alcort papers, Benasque)",
+   "correspondents": "Vincenzo Gonzaga -> Vespasiano Gonzaga",
+   "place": "Guastalla",
+   "shelfmark": "Fundacion Hospital de Benasque, Fundacion Alcort, ES/FHB - CD/ALCORT/D/0040, 0043, 0047 and 0051",
+   "folio_note": "four letters of 3-4 leaves, each 'con una hoja cifrada'",
+   "status": "Online on DARA (images). Each record says the letter contains a cipher sheet. The same series holds D/0041, 0045 and 0048, 'Noticia' records whose summaries match the content of the cipher sheets (rumours of a Venetian incursion, French and Venetians near Mantua, affairs of Milan, Genoa and France): probably the clear text or decipherment filed beside them, which would close the leads under the 15 Nov audit bar. Not viewed leaf by leaf.",
+   "why": "Four cipher sheets of one correspondence in 1683-85.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the DARA records only (15 Nov 2026, wave 8)",
+   "verify": "Open D/0041, 0045 and 0048 and see whether they are the decipherments of 0040, 0043 and 0047.",
+   "links": [
+    {
+     "href": "https://dara.aragon.es/opac/app/item?i=764879",
+     "label": "DARA record D/0040"
+    }
+   ],
+   "source": "DARA (dara.aragon.es) results and item pages, fetched same-origin in Chrome, wave 8, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "seen": "catalogue",
+   "scored": "sweep"
+  },
+  {
+   "id": 2863,
+   "counted": true,
+   "year": 1897,
+   "date": "1897-1898",
+   "period": "1801-1900",
+   "language": "Portuguese",
+   "region": "Portugal",
+   "cls": "C",
+   "title": "AHU, Lourenco Marques railway arbitration of Berne 1897 (documentation in cipher) and the 1898 Cape railway conference (a cipher telegram)",
+   "correspondents": "Portuguese government and Lourenco Marques railway case",
+   "place": "Lisbon / Lourenco Marques / Cape",
+   "shelfmark": "Arquivo Historico Ultramarino, PT/AHU/ID-OP/OP16696 and PT/AHU/ID-OP/OP17197",
+   "folio_note": "OP16696: 'Contem relatorios, e documentacao cifrada'; OP17197: 'Correspondencia, contem telegrama cifrado'; no images on DigitArq",
+   "status": "Not online (DigitArq, 15 Nov 2026, filesCount 0). AHU descriptions quoted in the folio note; no decipherment is mentioned.",
+   "why": "Late-19th-century commercial and diplomatic cipher telegrams of a Portuguese colonial railway dispute; low priority.",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the DigitArq records (15 Nov 2026, wave 8)",
+   "verify": "AHU reading room or a scan request; the case files may hold the code book.",
+   "links": [
+    {
+     "href": "https://digitarq.arquivos.pt/documentDetails/0784fd2cc8f94abab559b8f14769abbe",
+     "label": "DigitArq OP16696"
+    },
+    {
+     "href": "https://digitarq.arquivos.pt/documentDetails/41745afa3bf64d2196a0f6cb0fe8054a",
+     "label": "DigitArq OP17197"
+    }
+   ],
+   "source": "DigitArq JSON API (digitarq.arquivos.pt/api/docs/search, all archives except ANTT), wave 8, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "seen": "catalogue",
+   "access": "archive",
+   "scored": "sweep"
+  },
+  {
+   "id": 2866,
+   "counted": true,
+   "year": 1521,
+   "date": "9 Jan 1521 (supposed)",
+   "period": "1497-1559",
+   "language": "French",
+   "region": "Spain",
+   "cls": "C",
+   "title": "Andre de Foix, lord of Lesparre -> Jacques de Saint Pol, 'partially in cipher', with a Castilian translation (Fondo Rena, Archivo Real y General de Navarra)",
+   "correspondents": "Andre de Foix, lord of Lesparre (Asparros) -> Jacques de Saint Pol",
+   "place": "Villeneuve (Pyrenees-Atlantiques)",
+   "shelfmark": "Archivo Real y General de Navarra, ES/NA/AGN/F004/AP_RENA, Caj. 103, N. 12-2 (Recibidor de bienes. Documentos confiscados)",
+   "folio_note": "2 leaves; note 'Parcialmente cifrada'; contents note 'Traduccion al castellano'",
+   "status": "Archive description only (Archivo Abierto de Navarra, 15 Nov 2026): 'Parcialmente cifrada. Fecha supuesta ... tambien pudiera tratarse del ano 1516'. A Castilian translation is filed with it; whether the translation covers the cipher is not stated. No image seen.",
+   "why": "A French diplomatic letter of the Navarrese war with part in cipher; the filed translation may be the decipherment, so it is not promoted.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the Archivo Abierto record (15 Nov 2026, wave 9)",
+   "verify": "Ask the archive whether the translation includes the cipher passage and whether images exist.",
+   "links": [
+    {
+     "href": "https://navarra.archivoabierto.es/portalArchivo/seleccionopac?action=inicio&OP=OP999&usr=consulta&PT=PT000001",
+     "label": "Archivo Abierto de Navarra (search 'cifrada')"
+    }
+   ],
+   "source": "Archivo Abierto de Navarra (navarra.archivoabierto.es), search form driven from Chrome, wave 9, 15 Nov 2026",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "seen": "catalogue",
+   "access": "archive",
+   "scored": "sweep"
+  },
+  {
+   "id": 2869,
+   "counted": true,
+   "year": 1526,
+   "date": "1525-1526",
+   "period": "1497-1559",
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "C",
+   "title": "Comendador Miguel de Herrera (Rome) -> Charles V, 3 cipher letters of 1525-26 without a filed decipherment or CSP entry",
+   "correspondents": "Miguel de Herrera, alcaide of Pamplona -> Charles V",
+   "place": "Rome",
+   "shelfmark": "Real Academia de la Historia (Madrid), Coleccion Salazar y Castro, A-36, A-37",
+   "folio_note": "After wave 11 narrowing: 3 letters with no filed decipherment in the index and no Calendar of State Papers entry: 1525-12-16 A-36 f.360-362; 1525-12-16 A-36 f.356-358; 1526-04-23 A-37 f.174. Left out: 2 index-open letters that the CSP prints (1525-12-16 A-36 f.352-354; 1526-05-24 A-37 f.289+290), the letters with a filed decipherment, and duplicate copies of those.",
+   "status": "Index description only (Badator export, 15 Nov 2026): archive item, not online; no image linked from the Badator record.",
+   "why": "A short one-writer run (December 1525 triplicate, March-June 1526) in the same volumes as the Perez and Caracciolo letters.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the index wording (15 Nov 2026, wave 10); no leaf seen",
+   "verify": "Ask the RAH (Madrid) for images of the volume's cipher letters; check whether the filed decipherment leaves give a key.",
+   "links": [
+    {
+     "href": "https://www.artxibo.euskadi.eus/webartxi00-container/es/ad53aArchivoHistoricoWar/badator/maintSimple?locale=es",
+     "label": "Badator simple search (term 'cifra', Coleccion Salazar y Castro)"
+    }
+   ],
+   "source": "Badator (artxibo.euskadi.eus, Archivo Historico de Euskadi) 'Exportar Busqueda' CSV of the search 'cifra' (1,892 records), run in Chrome 15 Nov 2026, wave 10; the records reproduce the Salazar y Castro index (RAH, 49 vols, 1949-79)",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "seen": "catalogue",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "RAH Salazar y Castro volumes (Madrid); Badator record read in Chrome 15 Nov 2026, no image linked. Rule applied 15 Nov 2026: the vetting bar accepts 'not online' for an archive item (access 'archive') that quotes the archive's description, provided no decipherment of the same text is filed with it; wave 10's 'ciphertext is in the RAH volumes' was not a bar failure. Narrowed to the letters whose index record has no decipherment (marginal, interlinear or a 'Texto descifrado' leaf) and, where a calendar exists, which the Calendar of State Papers Spain does not print.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), Chrome wave 11 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Badator (artxibo.euskadi.eus) 'Exportar Busqueda' CSV of the RAH Salazar y Castro index, run in Chrome 15 Nov 2026 (wave 10 export of 'cifra', wave 11 exports of cifrado, cifrada, cifradas, cifras, clave, descifrado, descifrar); each record quotes the index's own remark. Not online: the leaves are in the RAH volumes.",
+     "extent": "3 letters (index records), RAH Salazar y Castro",
+     "cipher": "Archive text: 'Original, en cifra'. No decipherment is filed on or with these records: the index would say 'texto descifrado', 'descifrado al margen' or 'entre renglones' otherwise (remarks like 'cuyo texto descifrado no sigue' count as not filed); records with one are excluded."
+    },
+    "prior_art": {
+     "decode": "known.py, the DECODE dumps and the Cryptoole snapshot searched for the sender and shelfmarks (15 Nov 2026): no DECODE record for the RAH letters (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana, web search 15 Nov 2026: nothing on these RAH letters under this sender.",
+     "lasry": "GL.htm (Lasry's list, repo copy and web search 15 Nov 2026): no entry for this sender or these shelfmarks. Lasry's papers: nothing found.",
+     "edition": "CSP Spain vol. 3 (1525-26): letters it prints are excluded from this lead (a calendar entry means the editor read the letter); letters it marks 'Contemporary deciphering on separate sheet' are filed decipherments and excluded.",
+     "literature": "web search 15 Nov 2026 (sender, 'cifra', Salazar y Castro): no study of these letters' cipher"
+    },
+    "searches": [
+     {
+      "query": "Calendar of State Papers Spain (British History Online): every 'Salazar, A. N, f. M' reference in vols 2-4 harvested and cross-matched by volume and folio",
+      "result": "5 index-open letters checked; those calendared are excluded (see folio_note)"
+     }
+    ],
+    "key_check": "No key known; the filed decipherments of the same sender's other letters are the plaintext pairs. Not tested.",
+    "duplicates": "known.py 'Herrera', 'A-37' (15 Nov 2026): only this lead and its wave 10/11 sweep records; the catalogue's Lannoy, Adrian VI and Salazar y Castro A-7/A-10 entries are different letters, and the targets lannoy1527, sanchez1522, soria1523 are other senders.",
+    "verdict": "read",
+    "closed": "decipherment_filed (wave 12 date match, 15 Nov 2026): Wave 12 (15 Nov 2026) date check: the wave 11 match was by folio and missed CSP entries whose folio is printed with an en dash or a typo, or differs from the index. Matching CSP Spain vol. 3 by sender and date drops 3 more letters (the CSP prints a letter of that sender and date within 10 folios; same letter or its copy; a calendar entry means the editor read it): 1525-12-16 A-36 f.360-362 (CSP A.36 f.352); 1525-12-16 A-36 f.356-358 (CSP A.36 f.352); 1526-04-23 A-37 f.174 (CSP A.37 f.174–6). Nothing left open; the printed calendar entries show Bergenroth read these letters. Volumes not seen."
+   },
+   "repository": "rah"
+  },
+  {
+   "id": 2873,
+   "counted": true,
+   "year": 1522,
+   "date": "1522-1523",
+   "period": "1497-1559",
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "C",
+   "title": "Pope Adrian VI -> Charles V, cipher letters of 1522-23 (A-26, A-27)",
+   "correspondents": "Adrian VI -> Charles V",
+   "place": "Rome (and on the journey)",
+   "shelfmark": "Real Academia de la Historia (Madrid), Coleccion Salazar y Castro, A-26 f.58, f.331, f.337; A-27 f.172",
+   "folio_note": "After wave 11 narrowing: 2 letters with no filed decipherment in the index and no Calendar of State Papers entry: 1522-09-30 A-26 f.58; 1523-03-02 A-27 f.172. Left out: 2 index-open letters that the CSP prints (1522-11-21 A-26 f.331; 1522-11-22 A-26 f.337), the letters with a filed decipherment, and duplicate copies of those.",
+   "status": "Index description only (Badator export, 15 Nov 2026): archive item, not online; no image linked from the Badator record.",
+   "why": "Four letters from the pope who had been Charles V's tutor and regent (targets/adrian1520 holds his earlier cipher as regent); the same secretary may use the same system.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the index wording (15 Nov 2026, wave 10); no leaf seen",
+   "verify": "Ask the RAH (Madrid) for images of the volume's cipher letters; check whether the filed decipherment leaves give a key.",
+   "links": [
+    {
+     "href": "https://www.artxibo.euskadi.eus/webartxi00-container/es/ad53aArchivoHistoricoWar/badator/maintSimple?locale=es",
+     "label": "Badator simple search (term 'cifra', Coleccion Salazar y Castro)"
+    }
+   ],
+   "source": "Badator (artxibo.euskadi.eus, Archivo Historico de Euskadi) 'Exportar Busqueda' CSV of the search 'cifra' (1,892 records), run in Chrome 15 Nov 2026, wave 10; the records reproduce the Salazar y Castro index (RAH, 49 vols, 1949-79)",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "seen": "catalogue",
+   "access": "archive",
+   "scored": "vetted",
+   "access_note": "RAH Salazar y Castro volumes (Madrid); Badator record read in Chrome 15 Nov 2026, no image linked. Rule applied 15 Nov 2026: the vetting bar accepts 'not online' for an archive item (access 'archive') that quotes the archive's description, provided no decipherment of the same text is filed with it; wave 10's 'ciphertext is in the RAH volumes' was not a bar failure. Narrowed to the letters whose index record has no decipherment (marginal, interlinear or a 'Texto descifrado' leaf) and, where a calendar exists, which the Calendar of State Papers Spain does not print.",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Sonnet 5.5), Chrome wave 11 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Badator (artxibo.euskadi.eus) 'Exportar Busqueda' CSV of the RAH Salazar y Castro index, run in Chrome 15 Nov 2026 (wave 10 export of 'cifra', wave 11 exports of cifrado, cifrada, cifradas, cifras, clave, descifrado, descifrar); each record quotes the index's own remark. Not online: the leaves are in the RAH volumes.",
+     "extent": "2 letters (index records), RAH Salazar y Castro",
+     "cipher": "Archive text: 'Original, en cifra'. No decipherment is filed on or with these records: the index would say 'texto descifrado', 'descifrado al margen' or 'entre renglones' otherwise (remarks like 'cuyo texto descifrado no sigue' count as not filed); records with one are excluded."
+    },
+    "prior_art": {
+     "decode": "known.py, the DECODE dumps and the Cryptoole snapshot searched for the sender and shelfmarks (15 Nov 2026): no DECODE record for the RAH letters (the dumps are partial, so 'not on DECODE' is as far as they go).",
+     "tomokiyo": "Tomokiyo's Cryptiana, web search 15 Nov 2026: nothing on these RAH letters under this sender.",
+     "lasry": "GL.htm (Lasry's list, repo copy and web search 15 Nov 2026): no entry for this sender or these shelfmarks. Lasry's papers: nothing found.",
+     "edition": "CSP Spain vol. 2 (1522-23): letters it prints are excluded from this lead (a calendar entry means the editor read the letter); letters it marks 'Contemporary deciphering on separate sheet' are filed decipherments and excluded.",
+     "literature": "web search 15 Nov 2026 (sender, 'cifra', Salazar y Castro): no study of these letters' cipher"
+    },
+    "searches": [
+     {
+      "query": "Calendar of State Papers Spain (British History Online): every 'Salazar, A. N, f. M' reference in vols 2-4 harvested and cross-matched by volume and folio",
+      "result": "4 index-open letters checked; those calendared are excluded (see folio_note)"
+     }
+    ],
+    "key_check": "Compare Kolosova's Adrian VI letter no. 31 (a different letter); no key tested.",
+    "duplicates": "known.py 'Adrian VI', 'A-26' (15 Nov 2026): only this lead and its wave 10/11 sweep records; the catalogue's Lannoy, Adrian VI and Salazar y Castro A-7/A-10 entries are different letters, and the targets lannoy1527, sanchez1522, soria1523 are other senders.",
+    "verdict": "read",
+    "key_held": "Compare Kolosova's Adrian VI letter no. 31 (a different letter); no key tested.",
+    "closed": "decipherment_filed (wave 12 date match, 15 Nov 2026): the two letters left after wave 11 are both printed by Bergenroth in CSP Spain vol. 2, which the index folios had missed because the folios differ: Adrian VI to Charles V, Rome 30 Sep 1522 (CSP no. 478, Salazar A.26 f.53; index f.58) and Rome 2 Mar 1523 (CSP no. 532, Salazar A.27 f.174, 'Autograph in cipher ... Deciphered by the Secretary Quintana'; index f.172). Same sender, same date: a calendar entry means the editor read the letter, and the 2 Mar letter has a contemporary decipherment filed. Nothing open to solve in this lead. The folio offsets (5 and 2) are not explained; the volumes were not seen."
+   },
+   "repository": "rah"
+  },
+  {
+   "id": 2877,
+   "counted": true,
+   "year": 1566,
+   "date": "31 Oct 1560 - 30 Dec 1569",
+   "period": "1560-1589",
+   "language": "Spanish",
+   "region": "Spain",
+   "cls": "C",
+   "title": "Philip II and Secretary Zayas -> Frances de Alava, ambassador in Paris: about 50 'cifrada' letters, 1560-69 (San Sebastian municipal archive)",
+   "correspondents": "Philip II; Gonzalo Perez de Zayas -> Frances de Alava y Beamonte",
+   "place": "Madrid / Paris",
+   "shelfmark": "Archivo Municipal de San Sebastian (Donostiako Udal Artxiboa), Archivo de los Marqueses de San Millan y Villalegre, vol. 2, legajo 2 (inventory records 68 ff.)",
+   "folio_note": "52 records in the Marqueses de San Millan y Villalegre inventory (1940), each a letter described as 'Cifrada', 'Toda cifrada', 'Cifrada casi toda' or 'Parte cifrada', Philip II autograph signature; no decipherment is mentioned in the descriptions. Dates from 31 Oct 1560 to 30 Dec 1569, mostly 1564-69.",
+   "status": "Index description only (Badator export, 15 Nov 2026). A 1991 edition exists (Rodriguez and Rodriguez, 'Don Frances de Alava y Beamonte: correspondencia inedita de Felipe II con su embajador en Paris, 1564-1570', Instituto Doctor Camino / Caja Gipuzkoa), not seen: it very probably prints the deciphered texts, which would make the series read.",
+   "why": "A one-writer, one-correspondent cipher run of Philip II's French embassy, held outside Simancas; Philip II's cipher for Paris is known to be a general cifra with changes (AGS Estado 1401 f.224, 1571).",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the index wording (15 Nov 2026, wave 11); edition not seen",
+   "verify": "Consult the 1991 edition: whether the cipher letters are printed deciphered.",
+   "links": [
+    {
+     "href": "https://www.artxibo.euskadi.eus/webartxi00-container/es/ad53aArchivoHistoricoWar/badator/maintSimple?locale=es",
+     "label": "Badator simple/advanced search (Coleccion Salazar y Castro; Archivo Municipal de San Sebastian)"
+    }
+   ],
+   "source": "Badator (artxibo.euskadi.eus) 'Exportar Busqueda' CSV exports of the terms cifrado, cifrada, cifradas, cifras, clave, descifrado, descifrar, abecedario (text records only), run in Chrome 15 Nov 2026, wave 11; one download per fresh tab",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "seen": "catalogue",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting": {
+    "verdict": "read",
+    "closed": "decipherment_filed: the 1991 edition of the Alava correspondence (Rodriguez and Rodriguez, 'Don Frances de Alava y Beamonte: correspondencia inedita de Felipe II con su embajador en Paris 1564-1570', 477 pp., from this same San Millan archive) prints the letters; edition not seen, so whether the cipher passages are printed deciphered is unconfirmed",
+    "date": "2026-11-15"
+   }
+  },
+  {
+   "id": 2878,
+   "counted": true,
+   "year": 1670,
+   "date": "ca. 1670-1723 (folder undated)",
+   "period": "1651-1700",
+   "language": "unknown",
+   "region": "Italy",
+   "cls": "B",
+   "title": "Anton Francesco Montauti papers, 'Ciphers' folder (Tuscan special envoy, ca. 1670-1723)",
+   "correspondents": "Anton Francesco Montauti (Tuscan envoy); other writers unknown",
+   "place": "unknown",
+   "shelfmark": "Stanford University, Department of Special Collections, M0320 (Anton Francesco Montauti Papers), Box 1, Folder 1 'Ciphers' (Identifier 156369)",
+   "folio_note": "1 folder; extent not stated",
+   "status": "Not online. OAC finding aid lists a folder 'Ciphers' (Box 1, Folder 1) in Series One; the collection description reads 'Ciphers, letters, official patents, documents, and one drawing collected by Montauti while special envoy' (1 linear foot). Whether the folder holds cipher keys, enciphered letters or both is not stated.",
+   "why": "Found in the OAC full-text pass (wave 13). A diplomat's own cipher folder from the Medici/Tuscan service; likely keys or tables, possibly ciphered letters. Not previously in the repo (known.py: Montauti only in the Medici Archive README as a Vienna envoy).",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Scored from the OAC finding aid only (15 Nov 2026); contents unseen.",
+   "verify": "Ask Stanford Special Collections for a scan or description of Box 1 Folder 1; compare with Montauti despatches in Mediceo del Principato (Vienna legation) and DECODE Mediceo keys.",
+   "links": [
+    {
+     "href": "https://oac.cdlib.org/findaid/ark:/13030/tf1199n4zr",
+     "label": "OAC finding aid, Montauti papers (M0320)"
+    },
+    {
+     "href": "https://oac.cdlib.org/findaid/ark:/13030/tf1199n4zr_aspace_ref16_a2w",
+     "label": "OAC item: Ciphers, Box 1 Folder 1"
+    }
+   ],
+   "source": "Online Archive of California search (same-origin fetch of /search?q=cipher, 483 hits paged at 100, Chrome, 15 Nov 2026)",
+   "ark": "",
+   "needs_archive_scan": "yes",
+   "seen": "no",
+   "access": "archive",
+   "scored": "sweep"
+  },
+  {
+   "id": 2879,
+   "counted": true,
+   "year": 1874,
+   "date": "7 Nov 1874",
+   "title": "Motono Moriyoshi (Japanese minister in London) to Tokyo: cipher telegram (暗号電報), Okuma papers, Taiwan expedition period",
+   "correspondents": "Motono Moriyoshi (駐英公使) -> Foreign Ministry / Okuma Shigenobu",
+   "place": "London / Tokyo",
+   "language": "Japanese (probably numeric or kana code)",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Waseda University Library, Okuma Papers (大隈文書) i14_a4582 (暗号電報: 大隈重信宛, 1 vol.); NDL manuscript copy hdl.handle.net/2065/27375",
+   "folio_note": "Size and form not seen. Sibling item 暗号電報訳文 (i14_a4670, hdl 2065/27248, undated) is probably a translation of the same kind of traffic",
+   "cls": "C",
+   "status": "Catalogue record only: 'cipher telegram', category 雑, dated 7 Nov 1874. A sibling item called 暗号電報訳文 suggests a contemporary plain translation exists, which would make this a known-plaintext pair, but that is inferred from the title.",
+   "why": "Earliest dated Japanese diplomatic cipher telegram found in this sweep, with a possible translation sibling; on Waseda's open kotenseki site. The code might be one of the tables of the 1874 Taiwan-affair cipher set (separate key entry).",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from NDL Search catalogue records only; the Waseda kotenseki pages returned a maintenance notice on 15 Nov 2026, so nothing was viewed",
+   "verify": "Open i14_a4582 and i14_a4670 when Waseda is back; check whether the telegram is numeric groups or kana, whether the 訳文 translates this text, and look in the Okuma papers for the key (台湾事件電信暗号表).",
+   "links": [
+    {
+     "href": "https://www.wul.waseda.ac.jp/kotenseki/html/i14/i14_a4582/",
+     "label": "Waseda i14_a4582"
+    },
+    {
+     "href": "https://www.wul.waseda.ac.jp/kotenseki/html/i14/i14_a4670/",
+     "label": "Waseda i14_a4670 (訳文)"
+    },
+    {
+     "href": "https://ndlsearch.ndl.go.jp/books/R000000050-I000022322",
+     "label": "NDL Search record"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NDL Search OpenSearch listing of Waseda University Library Okuma Papers manuscripts, 15 Nov 2026 (carried into wave 13 from sweep_2026-11-15_jacar_retry, which was never merged; Waseda site still in maintenance on 15 Nov 2026)",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2880,
+   "counted": true,
+   "year": 1875,
+   "date": "undated (Enomoto's term in Russia, about 1874-78)",
+   "title": "Enomoto Takeaki (Japanese minister in St Petersburg) to Foreign Minister Terashima: doubts about cipher telegrams, with a report on Russian finance and justice ministries (暗号電報ニ関スル疑問並露国大蔵・司法両省景況報告書)",
+   "correspondents": "Enomoto Takeaki (駐露公使) -> Terashima Munenori (外務卿)",
+   "place": "St Petersburg / Tokyo",
+   "language": "Japanese",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Waseda University Library, Okuma Papers i14_a3050 (2 vols, 1 bundle, category 交通-通信); NDL manuscript copy hdl.handle.net/2065/11025",
+   "folio_note": "Not seen. A related item 暗号表 [書写資料] (hdl 2065/11026, same category) may be the table concerned",
+   "cls": "C",
+   "status": "Catalogue record only. The title says it discusses doubts about cipher telegrams (a security or garbling complaint), so it may quote telegram groups; undated in the catalogue.",
+   "why": "A file about a failing Japanese legation cipher with a candidate table filed beside it; a possible small ciphertext-plus-key set from the 1870s.",
+   "importance": 1,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from NDL Search catalogue records only; the Waseda kotenseki pages returned a maintenance notice on 15 Nov 2026, so nothing was viewed",
+   "verify": "Open i14_a3050 and the 暗号表 item (hdl 2065/11026); check for quoted telegram groups and whether the table belongs to the same code; date from Enomoto's posting.",
+   "links": [
+    {
+     "href": "https://www.wul.waseda.ac.jp/kotenseki/html/i14/i14_a3050/",
+     "label": "Waseda i14_a3050"
+    },
+    {
+     "href": "http://hdl.handle.net/2065/11026",
+     "label": "暗号表 item"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NDL Search OpenSearch listing of Waseda University Library Okuma Papers manuscripts, 15 Nov 2026 (carried into wave 13 from sweep_2026-11-15_jacar_retry, which was never merged; Waseda site still in maintenance on 15 Nov 2026)",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2881,
+   "counted": true,
+   "year": 1874,
+   "date": "10 Apr 1874 - Aug 1874",
+   "title": "Taiwan expedition telegraph cipher tables: 台湾事件電信暗号表 (Yanagiwara), 電信暗号ニ関スル交渉書類 (Okuma to Saigo, 8 May 1874), 征蕃事件電報暗号表 (Aug 1874)",
+   "correspondents": "Yanagiwara Sakimitsu (全権公使); Okuma Shigenobu (蕃地事務局長官); Saigo Tsugumichi (台湾蕃地事務都督)",
+   "place": "Tokyo / Beijing / Taiwan",
+   "language": "Japanese",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "Waseda University Library, Okuma Papers i14_a0133 (10 Apr 1874), i14_a0147 (8 May 1874); NDL copies hdl 2065/6786, 2065/6800, 2065/6825 (Aug 1874)",
+   "folio_note": "Three catalogue records, not seen. A key-side entry: tables and correspondence about the telegraph code; no ciphertext identified",
+   "cls": "C",
+   "status": "Catalogue records only. Japanese telegraph code tables for the 1874 Taiwan expedition, in the Okuma papers. No published study searched beyond the catalogue.",
+   "why": "Keys that could read any 1874 Taiwan-affair cipher telegrams in the same papers (see the Motono entry), so a reading can be checked against the tables.",
+   "importance": 1,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from NDL Search catalogue records only; the Waseda kotenseki pages returned a maintenance notice on 15 Nov 2026, so nothing was viewed",
+   "verify": "Open the three items; check whether the tables are kana-to-number and whether any telegrams use them. Treat as key material for the Motono entry, not a stand-alone target.",
+   "links": [
+    {
+     "href": "https://www.wul.waseda.ac.jp/kotenseki/html/i14/i14_a0133/",
+     "label": "Waseda i14_a0133"
+    },
+    {
+     "href": "https://www.wul.waseda.ac.jp/kotenseki/html/i14/i14_a0147/",
+     "label": "Waseda i14_a0147"
+    },
+    {
+     "href": "http://hdl.handle.net/2065/6825",
+     "label": "征蕃事件電報暗号表"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "NDL Search OpenSearch listing of Waseda University Library Okuma Papers manuscripts, 15 Nov 2026 (carried into wave 13 from sweep_2026-11-15_jacar_retry, which was never merged; Waseda site still in maintenance on 15 Nov 2026)",
+   "needs_archive_scan": "no",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2884,
+   "counted": true,
+   "year": 1200,
+   "date": "undated Geniza fragment (PGP gives no date; paper)",
+   "title": "Paper fragment with eleven lines in an unidentified sign script; Arabic-script text on the other side",
+   "correspondents": "unknown",
+   "place": "Egypt (Cairo Geniza)",
+   "language": "unknown (Arabic or Judaeo-Arabic expected: the other side is in Arabic script)",
+   "period": "unknown",
+   "shelfmark": "Cambridge University Library, T-S K24.24 (PGPID 33913; the Arabic side is PGPID 32108)",
+   "folio_note": "one side: 11 lines of signs, roughly 20-25 signs a line (about 250 signs), with long slanted strokes and dots between groups; a narrow column of fainter signs down the right margin. Other side: 6-7 lines of large Arabic script (PGP: letter? 'al-mawla' mentioned)",
+   "cls": "C",
+   "status": "PGP 33913: 'Magical fragment, perhaps. Unidentified alphabet or cipher', tags cipher, magic; no scholarship record. Seen at native resolution: some signs resemble Hebrew bet, he, het and samekh, others are loops and crossed forms; it is running text in lines, not a row of charakteres. Not on DECODE. No vetting block: the T-S K box is the magic box, and the Schaefer-Shaked edition and Bohak's inventory of Geniza magical fragments were not opened.",
+   "why": "About 250 signs of continuous text with word dividers: the longest unread sign-script text found in the Geniza pass, long enough for a substitution attack if the language is Arabic.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 4,
+   "verify": "Check Schaefer and Shaked, Magische Texte aus der Kairoer Geniza I-III (index of T-S K fragments) and Bohak's catalogue of Geniza magical fragments for K24.24; ask the Princeton Geniza Project; rule out a known script (a cursive of Coptic, Syriac or a shorthand) before treating it as a cipher; read the Arabic side for a date or names.",
+   "links": [
+    {
+     "label": "PGP 33913",
+     "href": "https://geniza.princeton.edu/en/documents/33913/"
+    },
+    {
+     "label": "PGP 32108 (Arabic side)",
+     "href": "https://geniza.princeton.edu/en/documents/32108/"
+    },
+    {
+     "label": "CUDL image, sign side (IIIF)",
+     "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00024-000-00001.jp2/full/full/0/default.jpg"
+    }
+   ],
+   "prior_art": "none found, edition not checked (15 Nov 2026: PGP records, one web search on the shelfmark, DECODE; Schaefer-Shaked and Bohak's inventory not opened)",
+   "needs_archive_scan": "no",
+   "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 3806 x 3664 px by regions",
+   "region": "Other",
+   "source": "Arabic sweep 15 Nov 2026 (part A)",
+   "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+   "seen": "image",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "Not established as a cipher rather than an unidentified script. The sign side is real running text with no gloss, it is not edited in Schäfer-Shaked MTKG I-III (tables of contents of all three volumes read), and nothing published on it was found; but nobody has ruled out a known script (the Geniza holds Indian-script letters that were long unidentified: Bohak's Devanagari T-S AS 159.247-248, Fragment of the Month March 2008), and Bohak's inventory of Geniza magical fragments and the MTKG Geniza-Fragmente indices (Bd. I-III) were not opened. Next step: a palaeographer's identification (Bohak or Elbaum, Princeton Geniza Project) and the MTKG registers; if no script matches, the lead can be written open. (research/vetting_2026-11-15_arabic_1/vetting.json)"
+  },
+  {
+   "id": 2885,
+   "counted": true,
+   "year": 1139,
+   "date": "after 1 Nisan 1139 (inferred, PGP / India Book IV)",
+   "title": "Yishaq b. Avraham Ibn Ezra to Halfon b. Netanel ha-Levi: Judaeo-Arabic letter with three words in a Coptic-numeral code",
+   "correspondents": "Yishaq b. Avraham Ibn Ezra (Spain) -> Halfon b. Netanel ha-Levi",
+   "place": "Spain (al-Andalus)",
+   "language": "Judaeo-Arabic (Hebrew script), code in Greek/Coptic numerals",
+   "period": "unknown",
+   "shelfmark": "Cambridge University Library, T-S 13J18.19 (India Book IV, 41 = H55; PGPID 9097)",
+   "folio_note": "recto line 11 (five numeral signs after 'wa-l-'), recto line 12 (three signs at the line start), verso line 5 (about 11 signs, readings doubtful); paper 16.9 x 25.1 cm",
+   "cls": "B",
+   "status": "Edited: Gil and Fleischer, Yehuda ha-Levi and his Circle (2001) pp. 282-285, who proposed readings for the first two code words by two different methods and none for the third; Goitein, Friedman and Ashur, India Book IV B (2013) no. 41 print the signs and judge the matter unresolved (PGP: \"substitution mechanism that has not yet been determined\"). Partial, disputed proposals in print: no vetting block. Not on DECODE.",
+   "why": "A dated 1139 Andalusi merchant-scholar letter (Halfon / Judah ha-Levi circle) hiding names or goods in a numeral code; the oldest dated unread Judaeo-Arabic code found.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "verify": "Read Gil-Fleischer pp. 282-285 and India Book IV B no. 41 note 1 for the proposed solutions; test the Coptic-numeral letter keys of CUL Or.1080 J277 verso, Bodl. MS heb. f 102/28 and JRL L 259 on the three groups; too short for anything but a key test.",
+   "links": [
+    {
+     "label": "PGP 9097",
+     "href": "https://geniza.princeton.edu/en/documents/9097/"
+    },
+    {
+     "label": "CUDL image, recto (IIIF)",
+     "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-00013-J-00018-00019-000-00001.jp2/full/full/0/default.jpg"
+    },
+    {
+     "label": "Key specimen: PGP 34004 (CUL Or.1080 J277)",
+     "href": "https://geniza.princeton.edu/en/documents/34004/"
+    }
+   ],
+   "prior_art": "partial proposals in print, disputed (Gil-Fleischer 2001 pp. 282-285; India Book IV B no. 41 leaves it open); checked 15 Nov 2026 on PGP only, the two books not opened",
+   "needs_archive_scan": "no",
+   "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 5685 x 8199 px by regions",
+   "region": "Other",
+   "source": "Arabic sweep 15 Nov 2026 (part A)",
+   "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+   "seen": "image",
+   "ark": "",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "Daniel Bourdeau; Claude Code session (Claude Opus 5.5), 15 Nov 2026",
+    "verdict": "partly_read",
+    "seen": {
+     "kind": "scan",
+     "where": "CUDL IIIF MS-TS-00013-J-00018-00019-000-00001.jp2 (recto, native 5685 x 8199 px) at 1387 x 2000 px whole and native-resolution regions 800,3950,2000,650 and 2800,3950,2000,650 (lines 11-12); verso MS-TS-00013-J-00018-00019-000-00002.jp2 (native 5819 x 8513) at 1367 x 2000 px whole. Printed text: India Book IV B no. 41 (H55), Goitein, Friedman and Ashur 2013, as reproduced on PGP 9097 (Hebrew headnote, edition and Hebrew translation), read 15 Nov 2026.",
+     "extent": "Recto line 11: five Greek/Coptic numeral signs after 'wa-l-'; recto line 12: three signs at the line start; verso line 5: about 11 signs (PGP: MAF reads 1, 60, 100, 400, 40, 1, 100, 1, ?, 8, 8, with doubts). About 19 signs in three words inside a Judaeo-Arabic letter.",
+     "cipher": "Greek/Coptic (zimam) numeral signs standing for letters, written in the line of a Judaeo-Arabic letter of Yishaq Ibn Ezra to Halfon b. Netanel; seen at native resolution on the recto with nothing written above or beside them. The letter also uses code names ('the elephant', 'the letter nun')."
+    },
+    "prior_art": {
+     "decode": "decode_search.py on 'Halfon', 'Ibn Ezra' and 'Coptic': 0 records each. Not on DECODE.",
+     "tomokiyo": "No Cryptiana page found on Geniza numeral codes (site-restricted web search on Geniza / Coptic numerals / Hebrew letters returned none).",
+     "lasry": "GL.htm fetched 15 Nov 2026: no Geniza, Hebrew, Judaeo-Arabic or Coptic entry; no Lasry paper on this letter known.",
+     "edition": "Edited twice: Gil and Fleischer, Yehuda ha-Levi and his Circle (Jerusalem 2001) pp. 282-285, with proposed readings; Goitein, Friedman and Ashur, India Book IV B (2013) no. 41 (H55), whose headnote (on PGP 9097) reports those readings and prints the numeral values as Hebrew letters in its translation. Gil-Fleischer itself was not opened.",
+     "literature": "PGP 9097 (MR, PG): 'substitution mechanism that has not yet been determined'; PGP's verso note proposes corrections to the numeral values. Cambridge GRU note ''Coptic' numerals and Genizah studies' and Elbaum's NS J479 blog (Ashur: India Book merchants used Coptic numerals as an uncracked code) add no reading."
+    },
+    "key_check": "Candidate Coptic-numeral letter keys exist in the Geniza (CUL Or.1080 J277 verso, Bodl. MS heb. f 102/28, JRL L 259, per the Hebrew sweep and PGP 19549); none was tested here (vetting only). Gil-Fleischer's two methods are the readings on record.",
+    "key_held": "Coptic-numeral alphabets in CUL Or.1080 J277 verso (PGP 34004) and Bodl. MS heb. f 102/28 (PGP 19549): not tested on these three words.",
+    "duplicates": "known.py '13J18.19', '9097', 'Halfon', 'Ibn Ezra': only this lead and the Hebrew and Arabic sweep notes and candidates (the same letter, carried from sweep_2026-11_hebrew); no catalogue entry or target. decode_search.py as above, 0. Open issues and pull requests for 2885 and 13J18.19: none.",
+    "closed": "Partly read in print. Gil and Fleischer (2001) pp. 282-285 printed readings for the first two code words, ha-'marsha'at' ('the wicked woman', recto line 11) and 'tarakh' (recto line 12), by a different method for each, and none for the third (verso line 5); so reported by Friedman in India Book IV B no. 41 (H55), headnote on PGP 9097, who judges the whole matter unresolved ('tsarikh 'iyyun'). Two of three words therefore carry published, disputed proposals; the verso word has none. Gil-Fleischer's pages were not opened here, so the proposed methods are known only from Friedman's summary.",
+    "searches": [
+     {
+      "query": "PGP 9097 record and scholarship page (India Book IV B no. 41 headnote, edition, translation)",
+      "result": "Friedman's headnote: Gil-Fleischer identified word 1 as 'marsha'at' and word 2 as 'tarakh', methods differ, word 3 unsolved, matter open; IB IV prints the signs as letters (ta'ashgam, yima'ah, asqatam aq a.hh)."
+     },
+     {
+      "query": "Gil Fleischer \"Yehuda ha-Levi and his circle\" Coptic numerals code Ibn Ezra Halfon letter",
+      "result": "Book identified (Gil and Fleischer 2001); no online text of pp. 282-285 and no other discussion of this code found."
+     },
+     {
+      "query": "Geniza cipher Coptic numerals Hebrew letters (Cryptiana site search)",
+      "result": "No Cryptiana page; PGP records of Coptic-numeral alphabets (Bodl. heb. f 102/28) and the Cambridge NS J479 blog, neither reading this letter."
+     }
+    ]
+   }
+  },
+  {
+   "id": 2887,
+   "counted": true,
+   "year": 1705,
+   "date": "1117 AH / 1705 (autograph)",
+   "title": "Darwish Mustafa ibn Isma'il al-Khaza'ini as-Sukkari, autograph extracts from his diwans, with passages in a secret script and its key on f. 103a (Berlin, Wetzstein I 203)",
+   "correspondents": "Darwish Mustafa ibn Isma'il ibn Ahmad al-Khaza'ini as-Sukkari (author and scribe); no addressee",
+   "place": "unknown (Wetzstein collection, Damascus)",
+   "language": "Arabic",
+   "region": "Other",
+   "period": "1701-1800",
+   "shelfmark": "Staatsbibliothek zu Berlin, Ms. or. Wetzstein I 203 (We. 203); Ahlwardt no. 8012",
+   "folio_note": "144 ff., 17 lines; 'an einigen Stellen' in Geheimschrift (folios not given); key on f. 103a",
+   "cls": "A",
+   "status": "Ahlwardt, Verzeichniss vol. 1 (1887) no. 13, note 1: 'In We. 203 ist eine Geheimschrift an einigen Stellen angewandt, wozu der Schluessel f. 103a mitgetheilt ist.' His description of the manuscript (no. 8012, vol. 7) does not mention the cipher or print any reading. Not viewed: Qalamos unreachable from this network. Not on DECODE.",
+   "why": "Cipher passages in a Damascene poet's own working copy of his secular love songs, with his key: a rare dated Arabic private cipher in a literary autograph.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 1,
+   "score_note": "Scored from Ahlwardt's catalogue during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/); not viewed",
+   "verify": "Open Wetzstein I 203 on Qalamos / SBB digital: find the cipher passages and f. 103a, check whether the plain text is written beside them, and whether any study of as-Sukkari's diwan reads them.",
+   "links": [
+    {
+     "label": "Ahlwardt vol. 1 (Handschriften-Verzeichnisse Bd. 7), full text",
+     "href": "https://archive.org/details/diehandschriften07preu"
+    },
+    {
+     "label": "Ahlwardt vol. 7 (Bd. 19), no. 8012",
+     "href": "https://archive.org/details/diehandschriften19preu"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Arabic sweep 15 Nov 2026 (part B)",
+   "prior_art": "not established (15 Nov 2026): only Ahlwardt read; no search for studies of the poet done beyond known.py and DECODE (no hits)",
+   "needs_archive_scan": "unknown",
+   "access_note": "Wetzstein manuscripts are largely digitised and shown through Qalamos (qalamos.net); that host and orient-digital.staatsbibliothek-berlin.de reset the connection from this network, and the SBB digital portal search does not return it.",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "Leaf not seen. The volume is digitised, but only on Orient-Digital, which resets the connection from this network (as does Qalamos). Correct shelfmark: SBB Wetzstein II 203, not Wetzstein I 203. Ahlwardt's 'We.' is Wetzstein II, and K10plus PPN 1982423900 / Qalamos DE1Book_manuscript_00022629 give 'Wetzstein II 203', Diwan of ad-Darwish Mustafa al-Hazayini as-Sukkari, 1117 [1705], 145 Bl., digitised 2026 in 'Islamische Handschriften digital', Public Domain. Its resolver (SBB00048A9700000000) answers NOTFOUND on digital.staatsbibliothek-berlin.de, there is no METS on content.staatsbibliothek-berlin.de, and the Deutsche Digitale Bibliothek has a bot check (Anubis), which was not passed. Ahlwardt vol. 1 no. 13 note 1 (cipher 'an einigen Stellen', key on f. 103a) and no. 8012 (vol. 7) were read on archive.org: no folios for the cipher passages, no reading. known.py, DECODE ('Wetzstein', 'Sukkari') and a web search found nothing. Next: open the Orient-Digital/Qalamos copy from another network, find the cipher passages and f. 103a, and test the key. (research/vetting_2026-11-15_arabic_2/vetting.json)"
+  },
+  {
+   "id": 2888,
+   "counted": true,
+   "year": 1550,
+   "date": "undated note on f. 1a of a 16th-century autograph (the work written after 913 AH / 1507)",
+   "title": "One line of signs called 'Geheimschrift (?)' beside a 'ya kabikaj' invocation on f. 1a of al-Gharbi's Hashiya (Berlin, Ms. or. oct. 1474)",
+   "correspondents": "unknown",
+   "place": "unknown",
+   "language": "unknown",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "Staatsbibliothek zu Berlin, Ms. or. oct. 1474 ('Ahlwardt nach 7207'), f. 1a; Sellheim, VOHD XVII A 2 (1987) no. 119",
+   "folio_note": "one line, about 16 signs (groups of 2 and 3 upright strokes, two looped signs, a hooked sign), with an underline; printed facsimile Sellheim II, Tafel 22, Abb. 37",
+   "cls": "C",
+   "status": "Sellheim II p. 65: 'Bl. 1a Ausruf: ya kabikag ..., daneben Geheimschrift (?; s. Abb. 37)'; plate caption '37. Geheimschrift (s. S. 65 u. Abb. 10, 34)'. Seen on the plate at full size: a single short line; it may be a tally or numerals. No reading given. Not on DECODE.",
+   "why": "A possible owner's or reader's cryptogram in a Maghribi scholar's autograph; very short.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from Sellheim's plate, viewed at full size during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/)",
+   "verify": "View f. 1a on Qalamos; compare with Sellheim II Abb. 10 and 34, which the caption cites, and with Abb. 47 (Greek-Coptic numerals) to rule out numerals.",
+   "links": [
+    {
+     "label": "Sellheim 1987, Tafel 22 (Abb. 37), SBB digital",
+     "href": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879940027&PHYSID=PHYS_0462"
+    },
+    {
+     "label": "Sellheim 1987, p. 65, SBB digital",
+     "href": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1879940027&PHYSID=PHYS_0094"
+    }
+   ],
+   "seen": "image",
+   "source": "Arabic sweep 15 Nov 2026 (part B)",
+   "prior_art": "not established (15 Nov 2026): Sellheim gives no reading and himself queries whether it is cipher; no further search done",
+   "needs_archive_scan": "partly",
+   "access_note": "Printed facsimile online (SBB digital, page image 2184 x 3171 px; the figure is a strip about 1,000 px long). Manuscript on Qalamos if digitised (unreachable from this network).",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "Not established as cipher, and the leaf itself was not seen. Sellheim, VOHD XVII A 2 (1987), Tafel 22 Abb. 37 (SBB digital PPN1879940027, image 462, 2184 x 3171 px; the strip is about 990 x 240 px at full size) shows one underlined line of about 16 signs to the left of the 'ya kabikaj' invocation. They are groups of 2, 3 and 4 upright strokes, some crossed or joined at the top, two looped signs and a hooked sign. That looks like a stroke-group numeral notation (a rumi/Fasi- or zimam-type numeral sequence) as much as a cipher. The signs do not match the Greek-Coptic foliation numerals on Sellheim's Tafel 24 Abb. 46-47. Sellheim's own entry (printed p. 66, image 94, not p. 65) says 'daneben Geheimschrift (?; s. Abb. 37)' and gives no reading. His caption reads '37. Geheimschrift, nach 917/1511 (s. S. 66 u. Abb. 10, 34)', tying the hand to the scribe's siglum and to al-Gharbi's colophon. Ms. or. oct. 1474 is not found in the K10plus SBB catalogue by shelfmark, and Qalamos/Orient-Digital are unreachable here. Next: see f. 1a at full size, compare the signs with rumi/Fasi and zimam numeral tables, and decide numerals or not_cipher. (research/vetting_2026-11-15_arabic_2/vetting.json)"
+  },
+  {
+   "id": 2889,
+   "counted": true,
+   "year": 850,
+   "date": "undated papyrus (Arabic papyri from Egypt are mostly 8th-10th c.; the museum gives no date)",
+   "title": "Papyrus fragment, one side catalogued 'Arabic', the other 'Cipher (?)' (Penn Museum E16470)",
+   "correspondents": "unknown",
+   "place": "Egypt",
+   "language": "unknown",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "Philadelphia, Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology), Egyptian Section, E16470 (collector's number Mueller 28a; purchased from Prof. Moritz, 1911)",
+   "folio_note": "8.2 x 6.6 cm. Side with the label E 16470: one cursive line and one line of about 9 separate signs (two pairs of strokes, a triangle, a b-like and a box-like sign), then '|| x' below. Other side: 4 lines of thick hooked and looped signs.",
+   "cls": "C",
+   "status": "Museum record: 'Fragment of document. Recto: Arabic. Verso: Cipher (?).' No bibliography, never exhibited. Both images viewed: neither side could be read as Arabic at the size served; the separate signs may be Greek-Coptic numerals or fraction signs (the 'Geheimschrift' of P.Vindob. A. P. 5584 turned out to be dinar-fraction signs, Tyche 34, 2019), and the looped side may be another script. Not established as cipher. Not on DECODE.",
+   "why": "If the museum's query is right, an early Islamic cipher note on papyrus; more likely numerals, so the first job is identification.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 5,
+   "score_note": "Scored from the museum record and its two images, viewed during the Arabic sweep part B, 15 Nov 2026 (research/sweep_2026-11-15_arabic/); the fragment is only about 520 px across in the images",
+   "verify": "Ask the Penn Museum for a full-resolution scan; show it to an Arabic papyrologist (APD / ISAP) to settle script and whether the signs are numerals.",
+   "links": [
+    {
+     "label": "Penn Museum record E16470",
+     "href": "https://collections.penn.museum/collections/object/225579"
+    },
+    {
+     "label": "Image 1 (1600 px frame)",
+     "href": "https://collections.penn.museum/collections/assets/018T/185k/185653_1600.jpg"
+    },
+    {
+     "label": "Image 2 (1600 px frame)",
+     "href": "https://collections.penn.museum/collections/assets/018T/185k/185804_1600.jpg"
+    }
+   ],
+   "seen": "image",
+   "source": "Arabic sweep 15 Nov 2026 (part B)",
+   "prior_art": "not established (15 Nov 2026): the museum lists no bibliography; APD translation search for cipher / secret / Geheim found no such papyrus; nothing further searched",
+   "needs_archive_scan": "partly",
+   "access_note": "Two images online, capped by the host at a 1600 x 1440 px frame in which the fragment is about 520 px wide: below the 1,500 px bar, so the leaf does not count as seen at full size.",
+   "ark": "",
+   "scored": "sweep",
+   "vetting_note": "No adequate image. The Penn Museum serves only a 1600 x 1440 px frame (the EXIF shows a 5944 x 5348 px master that is not online; _2000, _2400, _3000 and other sizes return 404) in which the 8.2 cm fragment is about 520 px across, below the 1,500 px bar. At that size neither side is established as Arabic or as cipher: the labelled side has one cursive line, then a line of separate signs (strokes, a triangle, a b-like and a box-like sign) that may be Greek-Coptic numerals or fraction signs. Needs the master scan from the museum (digitalmedia@pennmuseum.org) and an Arabic papyrologist's identification; no bibliography exists. (research/vetting_2026-11-15_arabic_1/vetting.json)"
+  },
+  {
+   "id": 2893,
+   "counted": true,
+   "year": 1290,
+   "date": "before c. 1300 (Savage-Smith's dating of the copy from paper, ink and script); the passage itself is undated",
+   "title": "\"Curious letter forms and undeciphered writing\" between two sections of a 13th-century Arabic Galen commentary (Bodleian MS. Laud Or. 139, f. 101a)",
+   "correspondents": "unknown (scribe or early reader)",
+   "place": "Syria or Egypt (catalogue)",
+   "language": "unknown (the manuscript is Arabic)",
+   "region": "Other",
+   "period": "unknown",
+   "shelfmark": "Oxford, Bodleian Library, MS. Laud Or. 139, f. 101a",
+   "folio_note": "Not seen. The catalogue places it on f. 101a between two sections of the text of Galen's commentary on the Hippocratic Prognostic (third maqala); length not stated.",
+   "cls": "C",
+   "status": "Savage-Smith, A New Catalogue of Arabic Manuscripts in the Bodleian Library, I: Medicine (2011), as given in the Fihrist record: 'On folio 101a, between two sections of text, there are some curious letter forms and undeciphered writing.' Copy 'unsigned and undated ... before the end of the seventh/thirteenth century, possibly in Syria or Egypt'. Only ff. 1a, 1b-2a and 170a are on Digital Bodleian, so the leaf was not seen and it is not established that this is a cipher rather than pen trials or another script.",
+   "why": "If it is enciphered text it would be among the oldest unread Arabic-script cryptograms in a dated context (13th century), found in a medical manuscript.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from the catalogue description during the Arabic sweep of 15 Nov 2026, part C (research/sweep_2026-11-15_arabic/); not viewed",
+   "verify": "Ask the Bodleian for an image of f. 101a (or view it in the reading room); read Savage-Smith 2011, entry for MS. Laud Or. 139, for anything more on the passage.",
+   "links": [
+    {
+     "label": "Fihrist record (TEI)",
+     "href": "https://github.com/fihristorg/fihrist-mss/blob/master/collections/oxford%20university/MS_Laud_Or_139.xml"
+    },
+    {
+     "label": "Digital Bodleian (three openings only)",
+     "href": "https://digital.bodleian.ox.ac.uk/objects/bcc68154-303d-43cb-bee6-c5ddffcd8d39/"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Arabic sweep 15 Nov 2026 (part C)",
+   "prior_art": "not established: the cataloguer (2011) calls it undeciphered; no search for a later study beyond the catalogue record (checked 15 Nov 2026: Fihrist TEI, known.py)",
+   "needs_archive_scan": "yes",
+   "access_note": "Only three openings are digitised; f. 101a needs an image order or a visit to the Weston Library.",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Leaf not seen, and the description does not show that it is a cipher. Savage-Smith, New Catalogue of Arabic MSS in the Bodleian I: Medicine (2011), entry 8, as given in the Fihrist TEI (manuscript_11359), says only: 'On folio 101a, between two sections of text, there are some curious letter forms and undeciphered writing'. That could equally be pen trials, another script or charakteres. Both Digital Bodleian objects were checked through their IIIF manifests: bcc68154-303d-43cb-bee6-c5ddffcd8d39 has 3 canvases (fol. 1a, 1b-2a, 170a), and eacd31dd-5101-4cde-8e89-f285f3bb85d2 has 1 canvas (fol. 001v-002r). Neither shows f. 101a. Web searches on the shelfmark found no study of the passage, and known.py and DECODE ('Laud Or', 'Bodleian Arabic') found nothing. Next: an image order for f. 101a from the Bodleian, or a reading-room visit, then decide. (research/vetting_2026-11-15_arabic_2/vetting.json)"
+  },
+  {
+   "id": 2896,
+   "counted": true,
+   "year": 1870,
+   "date": "19th century (notebook kept c. 1817-1898; the cipher entries are by Muhammad 'Ali al-Hamdani, 1833-1898)",
+   "title": "Hamdani family scrapbook: notes in Muhammad 'Ali al-Hamdani's private cipher (fol. 83b) and a list of imams 'much of it in cipher' (fol. 29a-b)",
+   "correspondents": "Muhammad 'Ali al-Hamdani (compiler); private notes, no addressee",
+   "place": "India (Surat) and the Hejaz/Yemen journeys of the compiler; not stated in the record",
+   "language": "Arabic",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "London, Institute of Ismaili Studies, MS 1662 [Handlist 105] (Hamdani Collection)",
+   "folio_note": "104 ff., 19 x 14.5 cm. fol. 83b: 'Notes written in the same system of cipher that Muhammad 'Ali used in Ms. 1499'; fol. 29a-b: 'List of the imams down to al-Tayyib, with some biographical information, much of it in cipher'; fol. 21a: opening of a letter 'in cipher (not the usual secret script, but there is an indubitably correct decipherment above each letter)' (that one is read); fol. 23a: 'the letters of the usual secret script in alphabetical order' (a key)",
+   "cls": "B",
+   "status": "de Blois's catalogue (2011), as given on the IIS online record, reads the fol. 21a cipher line and quotes it, but gives no reading for the fol. 83b notes or the enciphered parts of fol. 29a-b. The system of fol. 83b is that of IIS MS 1499, a whole copy of Kanz al-walad in an 'invented script' which de Blois says is 'a straightforward cipher' crackable against the printed text (ed. Ghalib 1971): the key can be rebuilt from MS 1499, but no reading of fol. 83b is on record. Not on DECODE (searched 'Hamdani', 'Ismaili', 'Arabic': 0 records). Not viewed: no images online.",
+   "why": "Private notes of a 19th-century Tayyibi Ismaili scholar that he chose to hide even inside a family notebook; next to them the same notebook holds a rival list of hidden imams.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 2,
+   "score_note": "Scored from the catalogue description during the 15 Nov 2026 Arabic sweep, part D (research/sweep_2026-11-15_arabic/part_D.md); not viewed",
+   "verify": "Ask the IIS for images of MS 1662 fols 29a-b and 83b and of a few pages of MS 1499; check de Blois 2011 in print (entry for Ms. 1662 and the introduction on secret script) for any reading of fol. 83b; align MS 1499 with Ghalib's edition of Kanz al-walad for the key.",
+   "links": [
+    {
+     "label": "IIS record, MS 1662",
+     "href": "https://special-collections.iis.ac.uk/Details/manuscripts/154"
+    },
+    {
+     "label": "IIS record, MS 1499 (same cipher, known text)",
+     "href": "https://special-collections.iis.ac.uk/Details/manuscripts/45"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Arabic sweep 15 Nov 2026 (part D)",
+   "prior_art": "open as far as checked (15 Nov 2026): the IIS record (de Blois 2011) gives no reading of fol. 83b; web searches on the shelfmark and on de Blois / Hamdani / cipher found only the catalogue; de Blois 2011 in print not opened; cryptiana and HistoCrypt not searched for this item beyond a general Arabic-cipher query (nothing).",
+   "needs_archive_scan": "yes",
+   "access_note": "special-collections.iis.ac.uk shows the catalogue text only (no page images on the record); reading room of the Ismaili Special Collections Unit, Aga Khan Centre, London, or a scan request",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Prior art not settled: Verena Klemm, 'A Library in One Volume - The Notebook of the Nineteenth-Century Isma'ili Scholar Sayyidi Muhammad 'Ali al-Hamdani from Surat', Die Welt des Islams 65/4 (2025) 381-414, open access, is a study of IIS MS 1662 itself and was not opened (brill.com 403 to scripts; Klemm's blog post on globalcommentary.utoronto.ca sits behind a JavaScript bot check, not passed). Ciphertext not seen: the IIS record says 'No image available for this record'. The IIS online entry (de Blois 2011) does show cipher survives on fol. 83b ('Notes written in the same system of cipher that Muhammad 'Ali used in Ms. 1499') and fols 29a-b ('much of it in cipher') and gives no reading. Next: read Klemm 2025 in a browser for fols 29a-b and 83b, then ask the IIS for images. (research/vetting_2026-11-15_arabic_3/vetting.json)"
+  },
+  {
+   "id": 2897,
+   "counted": true,
+   "year": 1890,
+   "date": "n.d., late 13th/19th century (Cortese)",
+   "title": "Tayyibi cosmological treatise 'Risalat [falak al-qamar?]' with part of the text in a cryptic alphabet",
+   "correspondents": "unknown (anonymous treatise; copyist unknown)",
+   "place": "unknown (Yemeni Tayyibi tradition; Indian Bohra copy)",
+   "language": "Arabic",
+   "region": "Other",
+   "period": "1801-1900",
+   "shelfmark": "London, Institute of Ismaili Studies, MS 1291 (ArI, ZA)(b) (Zahid 'Ali Collection)",
+   "folio_note": "ff. 71r-86v, 12 lines a page; 'part of the text in cryptic alphabet; defective at the beginning' (amount not stated)",
+   "cls": "B",
+   "status": "Cortese's catalogue (2003), as given on the IIS online record, notes the cryptic alphabet and gives no reading; the title itself is the cataloguer's conjecture. Most cipher in Tayyibi manuscripts is the community's standard secret script, whose alphabet is in print (Strothmann 1943; de Blois 1984 and 2011; a table on fol. 1a of IIS MS 1455 and on fol. 23a of MS 1662), so this is probably a lookup once images exist; that it is the standard script is not stated in the record. Not on DECODE. Not viewed: no images online.",
+   "why": "An unidentified Tayyibi treatise whose hidden passages may name the persons or doctrines the copyist thought dangerous; reading them could identify the work.",
+   "importance": 2,
+   "solvability": 1,
+   "difficulty": 1,
+   "score_note": "Scored from the catalogue description during the 15 Nov 2026 Arabic sweep, part D (research/sweep_2026-11-15_arabic/part_D.md); not viewed",
+   "verify": "Ask the IIS for images of ff. 71r-86v; compare the signs with the secret-script table in de Blois 2011 / Strothmann, Gnosis-Texte der Ismailiten (1943); check Cortese 2003 in print for more on the cipher.",
+   "links": [
+    {
+     "label": "IIS record, MS 1291 (b)",
+     "href": "https://special-collections.iis.ac.uk/Details/manuscripts/832"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Arabic sweep 15 Nov 2026 (part D)",
+   "prior_art": "open as far as checked (15 Nov 2026): IIS record only; Cortese 2003 in print not opened; no edition of the text known (title conjectural).",
+   "needs_archive_scan": "yes",
+   "access_note": "special-collections.iis.ac.uk shows the catalogue text only (no page images on the record); reading room of the Ismaili Special Collections Unit, Aga Khan Centre, London, or a scan request",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Ciphertext not seen and its system unknown: the IIS record (Cortese 2003) says only 'part of the text in cryptic alphabet' for ff. 71r-86v, with 'No image available for this record'. If it is the standard Tayyibi secret script (al-kitaba al-sirriyya; alphabet in Strothmann, Gnosis-Texte der Ismailiten 1943, introduction, cited by Gacek 1984 nos 7B, 152C, 156; tables in IIS MS 1455 fol. 1a and MS 1662 fol. 23a), it is a lookup; nothing seen shows otherwise. Needs images of ff. 71r-86v from the IIS. (research/vetting_2026-11-15_arabic_3/vetting.json)"
+  },
+  {
+   "id": 2898,
+   "counted": true,
+   "year": 1929,
+   "date": "copy dated 3 Jumada II 1348 / 5 Nov 1929",
+   "title": "'Arba' masa'il fi'l-haqa'iq' attributed to 'Ali b. Muhammad b. al-Walid, with cryptograms on p. 23",
+   "correspondents": "unknown (copyist unknown)",
+   "place": "unknown (India, Bohra copy)",
+   "language": "Arabic",
+   "region": "Other",
+   "period": "1901-1950",
+   "shelfmark": "London, Institute of Ismaili Studies, MS 1313 (ArI, ZA) (Zahid 'Ali Collection)",
+   "folio_note": "pp. 1-24, 16 lines a page; 'small diagram on p. 19; cryptograms on p. 23' (the last page of text; extent not stated)",
+   "cls": "C",
+   "status": "Cortese's catalogue (2003), as given on the IIS online record, says only 'cryptograms on p. 23', with no reading. Whether these are words in the Tayyibi secret script (alphabet in print), a colophon in cipher or diagrams of letters is not stated. Short. Not on DECODE. Not viewed: no images online.",
+   "why": "If the cryptograms are the colophon, they give the copyist or patron of a 1929 copy of a restricted Tayyibi text.",
+   "importance": 1,
+   "solvability": 1,
+   "difficulty": 1,
+   "score_note": "Scored from the catalogue description during the 15 Nov 2026 Arabic sweep, part D (research/sweep_2026-11-15_arabic/part_D.md); not viewed",
+   "verify": "Ask the IIS for an image of p. 23; if it is the standard secret script, read it from the printed table; if text length is under a line or two, close as too short.",
+   "links": [
+    {
+     "label": "IIS record, MS 1313",
+     "href": "https://special-collections.iis.ac.uk/Details/manuscripts/587"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Arabic sweep 15 Nov 2026 (part D)",
+   "prior_art": "open as far as checked (15 Nov 2026): IIS record only; Cortese 2003 and Poonawala 1977 (p. 324 no. 55) in print not opened.",
+   "needs_archive_scan": "yes",
+   "access_note": "special-collections.iis.ac.uk shows the catalogue text only (no page images on the record); reading room of the Ismaili Special Collections Unit, Aga Khan Centre, London, or a scan request",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep",
+   "vetting_note": "Ciphertext not seen: the IIS record (Cortese 2003) says only 'cryptograms on p.23', which may be words in the Tayyibi secret script, a ciphered colophon, or letter diagrams (the same entry notes a 'small diagram on p.19'); 'No image available for this record'. Poonawala 1977, p. 324 no. 55 (cited in the record) not opened. Needs an image of p. 23 from the IIS. (research/vetting_2026-11-15_arabic_3/vetting.json)"
+  },
+  {
+   "id": 2900,
+   "counted": true,
+   "year": 1913,
+   "date": "12 and 16 May 1913",
+   "title": "Two partly enciphered Sudan Government telegrams (Phipps to Slatin, Khartoum; Erkowit to Stack), each with a clear copy of the same telegram in the same file",
+   "correspondents": "P. R. Phipps (Civil Secretary, Khartoum) to R. von Slatin (Inspector-General, then in Cairo); the Governor-General's office at Erkowit ('Hakimam') to L. O. F. Stack (Sudan Agent, Cairo)",
+   "place": "Khartoum and Erkowit (Sudan) to Cairo",
+   "language": "English",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Archives and Special Collections, Abbas Hilmi II papers, HIL/65/157-158 (cipher) with HIL/65/159-160 (the same telegram, no. 499, in clear); HIL/65/148 (cipher) with HIL/65/153 (the same telegram, no. 286, in clear). Frames 42-44 of 312 of the digitised file HIL/65/1-1127, Telegrams Egypt and Sudan II",
+   "folio_note": "Seen as image (3,074 px stitch of frame HIL/65/153-158; 2,049 px stitches of the frames before and after). No. 499, Khartoum 12 May 1913, 107 words: clear English with 24 five-letter groups in three runs, 'we cannot Tfwax fozzy xomsv fzwuv socht consequently hope you will agree cswfw zjdls jjzjs zwnwd lwgov durxd njdls vlvsz wsxns xobss as it would not be fair ...' and 'to send him Gwzvg wnjkd nxsoj grwdj degvp xwmrv lvsdx eznxp xfqxs if we cannot find another' (my reading, not collated). The clear copy HIL/65/159-160 gives the same passages as 'we cannot move Matthew from Tokar consequently hope you will agree promotion Wills to Dongola and sending Sagar to Red Sea as it would not be fair ...' and 'to send him to Talodi under Wilson in place of Sagar next December if we cannot find'. No. 286, Erkowit 16 May 1913, 221 words: one run of about 49 letters, 'cmuvl bgtmx blebn ltfuznugs gwuyt hutni xtgxn sxomlybngf', where the clear copy HIL/65/153 has 'Hewson has just inspected government land at Bagtir stop'. Cipher is about 5 to 25 per cent longer than the clear text.",
+   "cls": "B",
+   "status": "15 Nov 2026: NOT undeciphered in the strict sense: the file itself holds a clear copy of both telegrams, so the plaintext is known and only the key is missing. Recorded because it is ciphertext with adjacent plaintext (a key-recovery case) and because the recovered system may bear on HIL/64/890-891. Durham's catalogue names only 'partially encoded message from Phipps to Slatin (HIL/65/157-158)'; the pairing with the clear copies is this sweep's observation. System not identified: the first mapping tried by eye (o+m to 'wf', o+t to 'wz') fits a digraphic cipher such as Playfair but was not tested. known.py: no hit beyond the first Arabic sweep's note that the file was not viewed. No literature search.",
+   "why": "A clean cipher-with-crib pair from the Sudan Government's own traffic in 1913, copied for the Khedive's intelligence service: the names of officials being moved are what was hidden. Key recovery from the adjacent plaintext should be quick and would show which cipher Khartoum used a year before the war.",
+   "region": "England",
+   "importance": 2,
+   "solvability": 5,
+   "difficulty": 1,
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "verify": "Collate cipher against the clear copies and recover the system; plaintext is filed beside the cipher, so this is a key-recovery case, not an open text.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t1mh128nf091.html",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
+   "ark": "",
+   "scored": "sweep",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Fable 5.2), wave 15 vetting",
+    "verdict": "key_lookup",
+    "closed": "Clear copies of both telegrams are filed in the same file (HIL/65/159-160 and HIL/65/153), so the plaintext is known; kept as a lead for the key, which may bear on 2899."
+   }
+  },
+  {
+   "id": 2901,
+   "counted": true,
+   "year": 1913,
+   "date": "1913-1914 (code words also in HIL/64, 1910-1912)",
+   "title": "Sudan Government telegrams with dictionary code words (Aglossa, Agyllinos, Alantapfel, Flagitate ...) left undecoded in the Khedive's copies",
+   "correspondents": "Sudan Government departments in Khartoum (Intelligence 'Mukhabarat', Finance, Civil Secretary, the Governor-General 'Hakimam') and the Sudan Agency and Finance branch in Cairo",
+   "place": "Khartoum and Cairo",
+   "language": "English",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Archives and Special Collections, Abbas Hilmi II papers, HIL/65/1-1127, e.g. HIL/65/823-824, 849, 910, 928-929, 964, 966, 984, 1030-1031, 1092; also HIL/64 (not listed)",
+   "folio_note": "Seen as image (cropped contact sheets of 1,024 px frames: about half of each form's text lines). Otherwise clear English telegrams carry artificial code words of a multilingual dictionary code, all beginning A... or Fl...: 'Said Acacio agyllinos sheikh Mohammed Wadai academical agyllinos stop Nuba mountains Mekke Pedura and sheikh Musa el Aisa academical agyllinos' (HIL/65/928); 'ajustamos Yusef Kamel caponarom aginaverid 1913 agitrionne Sunduk Kassala ajelastris' (HIL/65/1030); 'Afrosponde Agazapada to next higher class flamle ... acquisto Hassan Badr ... acquitrino Yusef Kamel' (1031); 'Aglossa 114 flagitate repayment in London' (910); 'Aeruginis floorless to Sirdar' (966); 'all of Alantapfel' (1092). Seen in roughly one telegram in fifteen of the about 265 two-form frames viewed; no decode beside any of them.",
+   "cls": "B",
+   "status": "15 Nov 2026: code words seen, bare. This is a code book system, not a cipher: reading it needs the Sudan Government's telegraph code (not looked for; the Durham Sudan Archive, TNA FO 141 or WO 33 are the likely places) or a reconstruction from context (the words stand for stock phrases such as ranks, classes of decoration, 'with reference to my telegram'). The A... and Fl... words look like vocabulary of the Berne Official Vocabulary family used by private codes; not checked against any printed code. Count is an estimate from cropped sheets, not a tally. known.py: no hit.",
+   "why": "Explains what the Durham catalogue means by 'use of code' in HIL/64 and HIL/65. A weak cipher target on its own (stock phrases, partly guessable), listed so the code book can be looked for; with it every code word in the two files reads at once.",
+   "region": "England",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "verify": "Look for the Sudan Government telegraph code book (Durham Sudan Archive, TNA FO 141, WO 33); tally the code words over all frames.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t1mh128nf091.html",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2903,
+   "counted": true,
+   "year": 1593,
+   "date": "Vikrama samvat 1650 (1593/94)",
+   "title": "Coded scribe's or place name in the colophon of a Jain manuscript (Abhayadeva's Vipakasutravrtti, CUL Add. 2255, f. 19v)",
+   "correspondents": "an unnamed Jain scribe; later owner Pandit Vimalavijayagani",
+   "place": "Western India (Gujarat or Rajasthan); not stated",
+   "language": "Sanskrit and Prakrit; colophon note in Gujarati",
+   "period": "1589-1598",
+   "shelfmark": "Cambridge University Library, MS Add. 2255, f. 19v, line 14",
+   "folio_note": "Seen as image (CUDL IIIF, 2,000 px wide; page image 40). After 'samvat 1650 varse ... kalyanam astu' and before 'lasitam' (= likhitam) stand about a dozen signs in two or three groups divided by dandas, unlike the Jaina Devanagari of the text; they look like numeral forms. The owner's note follows in clear.",
+   "cls": "A",
+   "status": "15 Nov 2026: CUDL record: the name is 'written in what seems to be coded characters instead of ordinary Jaina Devanagari. Their meaning is yet to be deciphered'. known.py: no hit. No prior-art search (Indian numeral-syllable ciphers such as ankapalli and the scribal 'mula-deviya' substitutions are the obvious first tests). Outside the Arabic scope of this sweep; found through the CUDL search.",
+   "why": "Stated unread by the cataloguer and on a free image, but only about twelve signs: solvable only if it is a known Indian scribal cipher, which is likely.",
+   "region": "Other",
+   "importance": 1,
+   "solvability": 2,
+   "difficulty": 3,
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "verify": "Search prior art on Jain scribal ciphers; test the known Indian numeral-syllable substitutions on the dozen signs.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://cudl.lib.cam.ac.uk/view/MS-ADD-02255/40",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 Arabic leftovers sweep, 15 Nov 2026 (Durham IIIF by curl; CUDL search in Chrome)",
+   "ark": "",
+   "scored": "sweep"
+  },
+  {
+   "id": 2905,
+   "counted": true,
+   "year": 1692,
+   "date": "1692ff. (the finding aid's date for the bundle; the Lagnasco/Albani item is probably 18th century, not verified)",
+   "title": "Saxon cabinet cipher bundle with one undeciphered sheet: 'Chiffres avec Monseigneur le Cardinal Albani de S. Clement avec Lagnasco à Rome et Lomaca, avec une feuille non dechiffrée'",
+   "correspondents": "Cardinal Albani of S. Clemente, Count Lagnasco (Saxon-Polish envoy in Rome), Lomaca; Saxon cabinet",
+   "place": "Rome / Dresden / Warsaw",
+   "language": "unknown (French or Italian likely)",
+   "period": "1651-1700",
+   "shelfmark": "Sächsisches Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 03234/06",
+   "folio_note": "Finding aid: 'Chiffren (wahrscheinlich von der französischen Gesandtschaft zu Warschau und aus den Jahren 1692-1697 herrührend; Chiffres avec Monseigneur le Cardinal Albani de S. Clement avec Lagnasco à Rome et Lomaca, avec une feuille non dechiffrée; zwei Pakete Chiffen, von der Gesandtschaft zu Wien herrührend)'. No image seen; no scan icon on the record.",
+   "cls": "B",
+   "status": "15 Nov 2026: finding-aid line only. known.py 'Lagnasco', '03234/06': no hit (Loc. 03234/01-07 are listed in research/archivportal_d as bare key volumes, without this detail). No prior-art search was run for this sheet. Not checked: DECODE (it holds Flemming keys from Loc. 03233/02), the size of the sheet, whether the key in the same bundle reads it.",
+   "why": "An undeciphered cipher sheet lying in the bundle that holds the keys named with it: a likely key match once imaged. One sheet only.",
+   "region": "Germany",
+   "importance": 2,
+   "solvability": 4,
+   "difficulty": 2,
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "verify": "Order a scan of the undeciphered sheet and the keys in the same bundle; date the Lagnasco mission to Rome; test the bundle keys on the sheet.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=25276fcc-8d42-4969-86ed-8f6f1fcbd8f8",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 libraries sweep, 15 Nov 2026 (soeg.kb.dk Primo API; archiv.sachsen.de finding-aid search)",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep"
+  },
+  {
+   "id": 2906,
+   "counted": true,
+   "year": 1724,
+   "date": "1724-1725",
+   "title": "Arrest of Captain von Löwenburg at Naumburg for his ties to Stanisław Leszczyński: file with 'Zettel mit Chiffren'",
+   "correspondents": "Captain von Löwenburg; Stanisław Leszczyński's circle (not specified); Saxon Geheimes Kriegsratskollegium",
+   "place": "Naumburg / Sonnenstein (Saxony)",
+   "language": "unknown",
+   "period": "1701-1800",
+   "shelfmark": "Sächsisches Hauptstaatsarchiv Dresden, 11237 Geheimes Kriegsratskollegium, Loc. 10922/01",
+   "folio_note": "Finding aid: 'Verhaftung des Captains von Löwenburg in Naumburg wegen seiner Verbindung zu Stanislaus Leszinski und dessen Arrest auf der Festung Sonnenstein. Enthält u. a.: Haftbedingungen.- Verhörprotokoll.- Zettel mit Chiffren.' No image seen; no scan icon.",
+   "cls": "B",
+   "status": "15 Nov 2026: finding-aid line only. known.py 'Löwenburg', '10922/01': no hit. No decipherment mentioned. Not checked: whether the slips are ciphertext or a key list, their length, DECODE, literature on the Löwenburg case.",
+   "why": "Seized cipher slips in a 1724-25 espionage file, with the interrogation record beside them (possible cribs). Low weight until seen: 'Zettel mit Chiffren' may be a key or a few groups.",
+   "region": "Germany",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "verify": "Establish from a scan whether the slips are ciphertext or a key list and how long; read the interrogation record for cribs.",
+   "score_note": "Scored from the sweep record (15 Nov 2026, wave 15)",
+   "links": [
+    {
+     "href": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=c1cc025a-fc98-454f-a988-44b3ddd3ea33",
+     "label": "Catalogue record / images"
+    }
+   ],
+   "source": "Wave 15 libraries sweep, 15 Nov 2026 (soeg.kb.dk Primo API; archiv.sachsen.de finding-aid search)",
+   "ark": "",
+   "access": "archive",
+   "scored": "sweep"
   }
  ]
 }

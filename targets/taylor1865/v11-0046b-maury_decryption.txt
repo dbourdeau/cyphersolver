@@ -1,0 +1,47 @@
+# 11 April 1865, Surget to Maury (second telegram on vol. 11 fr. 0046): decryption
+# Key RALLYTOTHEFRONT (15 letters; RALLY TO THE FRONT), new to this folder and not found in any source we could open
+# (blind_2026-11-15/rally_key/README.md). Standard Vigenere, plain = cipher - key, key letter 1 on the first cipher
+# letter, advancing over cipher letters only (clear words do not advance it): the rule of the other telegrams here.
+# Found by an unconstrained hill-climb (rally_key/key_search/), verified on two new blind transcriptions
+# (rally_key/verification/). Status of each letter the reading needs that a reader's first choice does not give:
+#   S = image-supported: a reader's first choice or marked alternative, and the strokes allow it on comparison with
+#       the same clerk's letters (E/F also by a blind shape test);
+#   P = possible reading: the strokes allow it but it is not settled (gutter, blot);
+#   C = correction against the image (the strokes are another of the clerk's letters): a hole.
+# Cipher letter numbers count cipher letters only, 1-107.
+
+ # cipher as needed  key         plain        status
+ 1 VXLNREM           RALLYTO     exactly      S (1: V, B1/B2 first; helpers A/B read Y, which this clerk writes with a
+                                                 descender) P (7: M at the gutter; B1/B2 first, helper B alternative)
+ 2 AVA               THE         how
+ 3 QFBT              FRON        long         S (12: F, B1/B2 first; E with no tick)
+ 4 RFU               TRA         you          S (16: F, B1/B2 first; no tick)
+ 5 HTJE              LLYT        wi[l]l       C (20: every reader reads T; the form is this clerk's T, not his J)
+ 6 VHSH              OTHE        hold
+ 7 YYS               FRO         the
+ 8 PBKY              NTRA        city         (B2 read PBXY)
+ 9 CFLGWGN           LLYTOTH     running      S (34: F, helper A alternative; no tick, blind test F)
+10 SK                EF          of
+11 KVRMIATYQ         RONTRALLY   the trains   (one group across a line end; B1/B2 split KVRMIA TYQ)
+12 WSILRIJ           TOTHEFR     depends
+13 VBEU              ONTR        hold
+14 OY                AL          on           (B2 read QY, alternative O)
+15 FLMWE             LYTOT       until        S (64: F; no reader's choice; no tick seen by the verifier; blind test
+                                                 "unclear", letter F)
+16 UMSV              HEFR        nine         S (69: U, first of B1, B2, helper B; helper A read T)
+17 C                 O           o            S (73: C, first of B2 and helper B; B1, helper A read G)
+18 PEFCV             NTRAL       clock        S (76: F; no reader's choice; no tick, blind test F)
+                                              P (77: C for the Q all four read; a light open C with an ink blot at
+                                                 its foot, unlike this clerk's looped Q)
+19 EMFCKYSB          LYTOTHEF    tomorrow     S (81: F, B1 first, helper A alternative; no tick)
+                                              S (82: C, B1 and helper A first)
+20 RRQBKIZYYE        RONTRALLYT  additional
+21 HKHMSJ            OTHEFR      trains       (B1/B2 split HKHM SJ)
+22 HUXIE             ONTRA       there
+
+# 22 groups (21 English words and one group that holds two words, THE TRAINS): all give words; one letter is a
+# correction against the image (20, WI[L]L, a hole); two letters are possible but unsettled readings (7 at the gutter,
+# 77 under a blot); ten letters are image-supported choices (1, 12, 16, 34, 64, 69, 73, 76, 81, 82).
+# On the new blind helpers' first choices alone the key gives 11 of 22 groups as words (frozen test: a miss against a
+# mark of 15; every control 5 or fewer); on the earlier readers' first choices, 20 (B1) and 18 (B2) of 25.
+# The other telegrams of this folder, all phases: no hits (rally_key/verification/other_telegrams_results.txt).

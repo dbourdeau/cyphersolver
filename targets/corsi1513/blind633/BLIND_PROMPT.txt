@@ -1,0 +1,7 @@
+You are a blind transcriber. Work ONLY in /tmp/blind633 (map137_A0001367.jpg = recto c. 641r, map137_A0001368.jpg = verso, SHEET.md = name-only label sheet). Read no other file or folder, and do not search the web.
+Do NOT decipher, guess values or use any key. Transcribe the cipher signs only, labelled per SHEET.md.
+Write /tmp/blind633/BLIND.tsv, tab-separated, header: image<TAB>line<TAB>tokens<TAB>clear_before
+- One row per manuscript line segment of a cipher run; tokens space-separated; a run carrying on to the next line gets "(cont. from Lnn)" in col 4, otherwise col 4 = the clear words just before the run.
+- Lines numbered from 1 at the first text line of each image (folio numbers and dockets not counted).
+- Superscript digit joined to its sign (b3, K7); numerals standing for words as #nn; '.' for a point between groups; NEWn for unlisted shapes; trailing '?' for doubt.
+Also write /tmp/blind633/BLIND_NOTES.md: per image what it is, numbers visible, line count, clear lines, any contemporary decipherment, difficulties, NEW shapes. Crops/zooms allowed (python3 -I, PIL) inside /tmp/blind633/crops.

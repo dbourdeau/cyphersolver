@@ -1,0 +1,116 @@
+1	1r	0.505	a	sign15	replace	A=6	B=w	ctxB=1 6 4|4 6 0
+2	1r	0.550	a(cont.)	sign7	replace	A=4 8 5	B=w w 9	ctxB=6 5 w|6 w 6
+3	1r	0.645	b(cont.)	sign9	replace	A=w	B=9	ctxB=2 1 1|1 2 1
+4	1r	0.690	c	sign7	replace	A=5	B=9	ctxB=1 6 4|6 3 1
+5	1r	0.690	c	sign11	replace	A=0	B=6	ctxB=6 3 1|6 w 6
+6	1r	0.690	c	sign16	replace	A=6 8 5	B=w 9	ctxB=w 6 w|w w 2
+7	1r	0.728	d(cont.)	sign4	replace	A=8	B=w	ctxB=6 w w|6 4 5
+8	1r	0.765	f	sign1	replace	A=9	B=5	ctxB=6 3 1|6 1 1
+9	1r	0.765	f	sign12	replace	A=8	B=w	ctxB=6 w w|
+10	1v	0.415	a	sign15	replace	A=9	B=5	ctxB=6 w 6|6 3 1
+11	1v	0.415	a	sign22	replace	A=8 9	B=w 3	ctxB=1 1 4|1 5 0
+12	1v	0.415	a	sign29	replace	A=6	B=w	ctxB=0 5 5|4 w 2
+13	3r	0.505	a	sign1	replace	A=? 9 9	B=5 5	ctxB=|1 1 1
+14	3r	0.505	a	sign7	replace	A=?	B=6 1	ctxB=1 1 4|9 1 5
+15	3r	0.645	b	sign1	insert	A=-	B=1 5	ctxB=6 1 9|9 w 2
+16	21v	0.415	a	sign8	delete	A=9	B=-	ctxB=w 6 w|2 1 4
+17	21v	0.415	a	sign15	replace	A=0	B=6	ctxB=w 2 9|3 1 9
+18	21v	0.415	a	sign18	replace	A=5	B=9	ctxB=6 3 1|5 6 w
+19	21v	0.415	a	sign23	replace	A=8 5 8	B=9 w	ctxB=6 w w|
+20	22r	0.455	a	sign5	replace	A=5	B=9	ctxB=6 w w|w 4 1
+21	22r	0.455	a	sign9	delete	A=6	B=-	ctxB=w 4 1|6 6 w
+22	22r	0.490	a(cont.)	sign4	delete	A=6	B=-	ctxB=4 6 w|4 9 5
+23	22r	0.490	a(cont.)	sign9	replace	A=5	B=9	ctxB=5 4 6|1 4 1
+24	22r	0.490	a(cont.)	sign11	delete	A=4 4	B=-	ctxB=6 9 1|4 1 1
+25	22r	0.490	a(cont.)	sign26	delete	A=w	B=-	ctxB=1 w w|6 w 2
+26	25r	0.545	a	sign10	delete	A=5	B=-	ctxB=3 1 5|8 2 1
+27	25r	0.545	a	sign13	replace	A=6	B=0	ctxB=8 2 1|6 6 2
+28	25r	0.585	b	sign3	replace	A=3	B=9	ctxB=6 6 2|1 7 1
+29	25r	0.585	b	sign7	replace	A=4	B=9	ctxB=1 7 1|0 w 0
+30	25r	0.790	d	sign10	delete	A=4 6	B=-	ctxB=3 1 6|w 6 6
+31	25r	0.790	d	sign11	delete	A=6	B=-	ctxB=1 6 w|6 6 6
+32	25r	0.790	d	sign16	delete	A=0	B=-	ctxB=6 w 6|
+33	26r	0.635	a	sign9	replace	A=7	B=3	ctxB=4 9 1|1 9 1
+34	26r	0.635	a	sign11	replace	A=w	B=9	ctxB=1 3 1|1 3 1
+35	26r	0.635	a	sign13	replace	A=7	B=3	ctxB=1 9 1|1 9 5
+36	26r	0.635	a	sign15	delete	A=8	B=-	ctxB=1 3 1|9 5 9
+37	26r	0.635	a	sign16	replace	A=w	B=5 9 4 6 2 1 9 3	ctxB=3 1 9|6 4 2
+38	26r	0.765	c(cont.)	sign5	replace	A=5	B=9	ctxB=1 4 1|8 4 6
+39	26r	0.765	c(cont.)	sign12	delete	A=9	B=-	ctxB=2 1 5|5 1 3
+40	26r	0.765	c(cont.)	sign14	replace	A=7	B=3	ctxB=5 5 1|1 4 1
+41	26r	0.765	c(cont.)	sign18	insert	A=-	B=9 2	ctxB=1 4 1|5 3 4
+42	26r	0.765	c(cont.)	sign21	replace	A=2 9 7	B=3	ctxB=9 2 5|4 3 9
+43	26r	0.765	c(cont.)	sign26	replace	A=0	B=6	ctxB=3 9 3|3 7 6
+44	26r	0.810	c(cont.)	sign13	delete	A=6	B=-	ctxB=8 w 6|4 1 9
+45	26r	0.810	c(cont.)	sign15	replace	A=5 8	B=9 9	ctxB=6 4 1|2 1 w
+46	26r	0.810	c(cont.)	sign20	delete	A=4	B=-	ctxB=2 1 w|4 6 w
+47	26r	0.855	d	sign13	delete	A=5 1	B=-	ctxB=1 5 1|6 w 6
+48	26r	0.855	d	sign17	replace	A=7	B=3	ctxB=w 6 4|1 ? w
+49	26r	0.855	d	sign21	delete	A=6	B=-	ctxB=1 ? w|w 2 4
+50	28v	0.505	a	sign3	replace	A=0	B=6	ctxB=4 4|6 1 1
+51	28v	0.505	a	sign19	replace	A=2 9 9	B=7 5 5	ctxB=1 9 6|6 w w
+52	28v	0.545	a(cont.)	sign6	delete	A=6	B=-	ctxB=6 w w|w 9 w
+53	28v	0.545	a(cont.)	sign7	delete	A=6	B=-	ctxB=w w w|9 w 7
+54	28v	0.545	a(cont.)	sign9	replace	A=6	B=7	ctxB=w 9 w|9 6 w
+55	28v	0.545	b	sign11	replace	A=6 9	B=5	ctxB=w w 6|0 5 5
+56	28v	0.585	b(cont.)	sign1	replace	A=9 9	B=5 5	ctxB=1 4 1|1 1 4
+57	28v	0.585	c	sign4	replace	A=6 w	B=8	ctxB=4 4 w|6 4 6
+58	28v	0.620	d	sign4	delete	A=6	B=-	ctxB=6 w w|w 6 6
+59	28v	0.620	d	sign5	delete	A=6	B=-	ctxB=w w w|6 6 4
+60	28v	0.620	d	sign14	delete	A=w 6	B=-	ctxB=w w 6|
+61	35r	0.810	a	sign2	replace	A=8	B=w	ctxB=4|9 1 6
+62	35r	0.810	a	sign9	replace	A=3	B=5	ctxB=6 6 6|1 4 6
+63	35r	0.810	a	sign13	replace	A=3	B=7	ctxB=1 4 6|1 6 6
+64	35r	0.810	a	sign18	replace	A=0	B=w	ctxB=6 6 3|9 1 6
+65	35r	0.810	a	sign27	replace	A=6	B=0	ctxB=w w 2|8 4 6
+66	35r	0.810	a	sign30	replace	A=0	B=6	ctxB=0 8 4|w 4 5
+67	35r	0.850	a(cont.)	sign6	replace	A=5	B=9	ctxB=1 3 w|4 6 2
+68	35r	0.850	a(cont.)	sign11	replace	A=5	B=9	ctxB=6 2 1|5 1 1
+69	35r	0.850	a(cont.)	sign23	replace	A=6 8	B=w	ctxB=4 6 w|4
+70	35v	0.445	a	sign11	replace	A=5	B=9	ctxB=6 4 4|w 9 8
+71	35v	0.445	a	sign13	replace	A=5 5	B=9	ctxB=4 9 w|8 4 6
+72	35v	0.480	a(cont.)	sign8	replace	A=6	B=8	ctxB=9 1 w|6 4 w
+73	35v	0.480	a(cont.)	sign15	delete	A=4	B=-	ctxB=6 6 w|w 7 4
+74	35v	0.480	a(cont.)	sign16	replace	A=6 2	B=7	ctxB=6 w w|4 6 2
+75	35v	0.480	a(cont.)	sign21	replace	A=5 5 5 5 5	B=9 9 9 9	ctxB=6 2 1|1 4 1
+76	35v	0.595	b	sign1	insert	A=-	B=1	ctxB=9 1 4|5 6 w
+77	35v	0.635	b(cont.)	sign8	delete	A=6	B=-	ctxB=6 4 w|2 3 1
+78	35v	0.635	b(cont.)	sign11	replace	A=[struck]	B=9 ?	ctxB=2 3 1|9 w w
+79	35v	0.635	b(cont.)	sign15	delete	A=6	B=-	ctxB=? 9 w|w 6 6
+80	35v	0.635	b(cont.)	sign21	insert	A=-	B=2 5 5 5	ctxB=6 4 w|6 6 1
+81	35v	0.635	b(cont.)	sign26	delete	A=2 9 9 9 w	B=-	ctxB=5 5 6|6 1 1
+82	35v	0.635	b(cont.)	sign27	delete	A=0	B=-	ctxB=5 6 6|1 1 6
+83	35v	0.635	b(cont.)	sign30	delete	A=w	B=-	ctxB=1 1 6|w 6 9
+84	36r	0.530	a	sign1	replace	A=4	B=5	ctxB=|6 9 1
+85	36r	0.530	a	sign5	replace	A=9	B=5	ctxB=6 9 1|8 7 1
+86	36r	0.530	a	sign7	delete	A=9	B=-	ctxB=1 5 8|7 1 6
+87	36r	0.530	a	sign9	delete	A=6	B=-	ctxB=8 7 1|6 6 w
+88	53r	0.850	a	sign5	delete	A=8	B=-	ctxB=1 5 9|6 6 0
+89	53r	0.850	a	sign11	delete	A=9	B=-	ctxB=w 2 9|0 9 w
+90	53r	0.850	a	sign13	replace	A=8	B=w	ctxB=9 0 9|2
+91	56r	0.645	a	sign9	delete	A=6	B=-	ctxB=1 4 w|3 1 5
+92	56r	0.645	a	sign14	replace	A=3	B=5	ctxB=5 0 5|w 6 w
+93	57r	0.450	a	sign3	replace	A=3	B=9	ctxB=4 6|1 6 6
+94	57r	0.450	a	sign12	insert	A=-	B=6	ctxB=5 5 4|4 1 6
+95	57r	0.450	a	sign14	replace	A=w	B=1	ctxB=4 6 4|6 4 4
+96	57r	0.450	a	sign18	replace	A=6	B=w	ctxB=6 4 4|
+97	63r	0.455	a	sign1	replace	A=9 9	B=w 5 5	ctxB=|7 1 6
+98	63r	0.455	a	sign6	delete	A=0	B=-	ctxB=5 7 1|6 w 2
+99	63r	0.455	a	sign7	replace	A=5	B=w	ctxB=7 1 6|2 1 5
+100	63r	0.490	a(cont.)	sign4	replace	A=0 4 4	B=6 9	ctxB=6 0 w|w 1 1
+101	63r	0.490	b	sign5	delete	A=0	B=-	ctxB=w 1 1|6 3 7
+102	63r	0.490	b	sign6	replace	A=7	B=3	ctxB=1 1 6|7 1 6
+103	63r	0.490	b	sign9	delete	A=0	B=-	ctxB=3 7 1|6 2 5
+104	63r	0.530	b(cont.)	sign1	replace	A=9	B=5	ctxB=5 4 4|2 7 1
+105	63r	0.530	b(cont.)	sign3	replace	A=2	B=7	ctxB=4 5 2|1 4 w
+106	63r	0.530	b(cont.)	sign5	insert	A=-	B=4	ctxB=2 7 1|w w 2
+107	63r	0.530	b(cont.)	sign7	delete	A=6	B=-	ctxB=1 4 w|w 2 4
+108	63r	0.530	b(cont.)	sign11	delete	A=7	B=-	ctxB=2 4 4|3 1 5
+109	63r	0.530	b(cont.)	sign15	delete	A=9	B=-	ctxB=1 5 5|w 6 6
+110	63r	0.530	b(cont.)	sign18	replace	A=6 6 4 1	B=w	ctxB=w 6 6|1 1 9
+111	63r	0.565	c	sign2	insert	A=-	B=1 5	ctxB=1 1 9|5 6 w
+112	63r	0.565	c	sign7	replace	A=w	B=9	ctxB=5 6 w|6 w w
+113	63r	0.565	c	sign10	delete	A=6	B=-	ctxB=9 6 w|w
+114	63r	0.565	c	sign10	delete	A=6	B=-	ctxB=6 w w|
+115	70v	0.525	a	sign6	delete	A=8	B=-	ctxB=9 0 w|w 6 6
+116	70v	0.525	a	sign10	replace	A=8	B=w	ctxB=6 6 6|4 1

@@ -1,0 +1,9 @@
+# Doc 633 (ASF MAP CXXXVII, c. 641r) image fetch. All GETs from Malcolm's Mac (Italy VPN) via device_bash curl, one at a time, >=3 s apart.
+# Base: https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?FIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A000NNNN.ptif
+2026-11-16T02:27:21Z GET A0001343 WID=300 -> 200 44443 B  | folio read: 632 (recto, "CXXXVII" head)
+2026-11-16T02:27:44Z GET A0001361 WID=300 -> 200 37300 B  | folio read: 638 (recto)
+2026-11-16T02:27:58Z GET A0001369 WID=300 -> 200 50442 B  | folio read: 642 (recto)
+2026-11-16T02:28:12Z GET A0001367 WID=300 -> 200 37514 B  | folio read: 641 (recto, cipher present) = target
+2026-11-16T02:28:27Z GET A0001367 WID=1600 -> 200 533244 B | saved Mac ~/Downloads/codebreaking/corsi_img/map137_A0001367.jpg md5 d31b0ab052de907537b2a8817b9bc506
+2026-11-16T02:28:35Z GET A0001368 WID=1600 -> 200 418578 B | saved Mac ~/Downloads/codebreaking/corsi_img/map137_A0001368.jpg md5 eabca8f32a1f25e65cda9e7241e09258 (641v)
+# Thumbnails kept at Mac ~/Downloads/codebreaking/corsi_img/thumbs633/ (raw curl log: fetch.log). Staged copies md5-verified identical in blind633/.
