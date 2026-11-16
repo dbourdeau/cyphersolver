@@ -1,0 +1,26 @@
+JUDGE NOTES: 260195-41R.txt (Klingenberg letters, 41R-43R), strict judge, one pass, no second tries.
+
+Method
+- Units = decode tokens as given (syllable, letter or whole word). '<struck>' and '{...}' removed, not counted.
+- '[n]' and '[?n?]' code numbers with no value: 1 unit each, N.
+- Each row segmented into words (judge_260195-41R.tsv: image, line, row, word_no, word, unit, label, gloss).
+- Where a word is clearly identifiable and one unit is wrong: that unit E if a one-letter slip, N if worse; the other units of the word S.
+- Period spellings accepted as S (seind, ursach, anderst, wurcklich, Chron, Zel, hette, aufgenomme).
+- The final '.' in 42R 22-25 is a decoded token: counted as 1 unit, S.
+- Counts by script (/tmp/judge_k41_s/j.py); unit joins checked against the decode for every row (no mismatch).
+
+Totals
+S = 786, E = 11, N = 30, total = 786 + 11 + 30 = 827
+Strict share S/(S+E+N) = 786 / 827 = 0.9504 = 95.0%
+N breakdown: 18 valueless code numbers + 12 nonsense units = 30.
+
+E units (11): befu[c]t (befugt), eqip[re]ert (equipiert), [de] for die x3 (42L 1-7, 42L 11-14, 42R 15-17),
+wurc[l]licher (extra l), decla[re]tion x2 (43L 1-2, 43L 8-9), ar[fi]eren (armieren), genu[c] (genug), vorge[ra]ngen (vorgegangen).
+N non-code units (12): [cu]nck (danck?), we[mu]ge (wenige), [ge i] (42L 9-10), [er n o] (42L 11-14), ihrs [u] fugs,
+außge[i] (word cut off), propo[mu]eren (proponieren), [426][e n] stray ending.
+Note: mu standing for ni twice (wenige, proponieren) suggests a key-table error for one code, not random noise.
+
+Gist
+Reads as continuous sense: Klingenberg on the allies' distrust whether 'ihr' (the addressee's side) was in earnest against Sweden, the 16,000 men
+and the fleet, Sweden diverted to Schonen, and whether the declaration of war should be made jointly or separately (Zell advising
+against), with mostly code-number gaps (names) and a few slips (mu/ni, re/ra) left.
