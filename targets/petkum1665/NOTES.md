@@ -118,7 +118,8 @@ Not filed before, computed here from the same files: the eleven letters filed as
 - The four letters of #444 and the four Paulmyer letters have no blind second reading (the twelve of the 13 Nov filing have one, with exposure disclosed) - blocker: not-attempted.
 - The twelve filed letters (13 pages) have no French reading or English translation, so they stay decoded, not read - blocker: not-attempted (workable).
 - The other bare pages: the 12 letters (13 pages) are now filed per letter (13 Nov, PR #500); two bare pages (337L, 376L) of letters glossed on their first page are not among them; and 7 bare Paulmyer passages (18 Apr, 23 May, 26 Jun 1664, leaf 150 right, three of 1665; 6 of them tried only with the unadopted KEY_v4); of these, 18 Apr 1664, 26 Jun 1664 and 14 Apr 1665 are filed blind on 16 Nov 2026 as decoded, not read, and 31 Mar 1665 is recorded as failed (below); 23 May 1664, leaf 150 right and one of 1665 remain - blocker: not-attempted as far as this folder goes.
-- The pair 'T T' (two small crossed t's) decodes y y in three Paulmyer passages of 16 Nov 2026 (tryyis = trois?, _ambryytius, giyye) where one letter, probably o, is wanted: a suspected fault in key_v5 row T (= y, tier A from 401 cro-y-ent) or an unlisted tt sign - blocker: not-attempted; the 401 glosses and Paulmyer's glossed leaves can settle it.
+- The pair 'T T' in three Paulmyer passages of 16 Nov 2026 (tryyis, _ambryytius, giyye): settled after the decode as a transcription error, not a key fault. It is one sign, the cursive # (HSH), which looks like two crossed t's on one bar (image 144R, line 2); the chancery glosses it o (unit 261294, 113R "ou", 111L "obtenir") and `key_v5.tsv` already has HSH = o, so tryyis = trois; row T = y stands (a single small T is glossed y at least 11 times in unit 261294). The gloss rows are filed with the key v7 work (separate pull request). The blind files of 16 Nov stay frozen and their first-pass figures stand; a corrected transcription has not been made or decoded - blocker: not-attempted (a second, declared transcription of the three passages).
+- 14 Apr 1665, image 191: our crop of 191 right left out the part of the letter page that lies left of it, so the frozen transcription lacks 10 tokens (Dan Bourdeau, review of PR #689; not re-checked here): LAM 299 355 TH 277 before 301 (line 1); 364 Y m 18 after ct QX (line 2); 157 after "qu'un". The 80 tokens and 58/80 of the table below cover only what was transcribed; the frozen BLIND, decode and judge files are not re-scored or edited - blocker: not-attempted (a declared second transcription of image 191 from the full image).
 - The three Paulmyer passages of 16 Nov 2026 are cipher runs only: the clear French around them was not transcribed, so they cannot read as sentences yet - blocker: not-attempted.
 - A contemporary decipherment of these very letters may exist unfilmed (the chancery read the code) - blocker: needs-physical-access.
 
@@ -271,7 +272,7 @@ Four of the seven bare Paulmyer passages listed in Remaining gaps, unit 261294 (
 |---|---|---|---|---|---|
 | 18 Apr 1664, Paris, image 144R | 71 | 61/71 = 85.9% | 0 / 0 (-3.4411; -4.0497, -4.0876) | 0.614 marginal | decoded, not read |
 | 26 Jun 1664, Fontainebleau, image 162 | 54 | 36/54 = 66.7% | 0 / 0 (-3.2243; -4.0095, -4.1741) | 0.476 marginal | decoded, not read |
-| 14 Apr 1665, images 191R-192 | 80 | 58/80 = 72.5% | 0 / 0 (-3.0540; -4.0675, -4.2740) | 0.481 marginal | decoded, not read |
+| 14 Apr 1665, images 191R-192 | 80 | 58/80 = 72.5% | 0 / 0 (-3.0540; -4.0675, -4.2740) | 0.481 marginal (0.444 after the image-191 note was added to the reading file) | decoded, not read; 10 tokens of image 191 not transcribed |
 | 31 Mar 1665, images 189R-190L | 17 | 11/17 = 64.7% | 0 / 0 (-2.1851; -3.2812, -2.6398) | not run | failed our 65% line: recorded only |
 
 Token counts are from `DECODE_RUN.txt` (script-written). These entries are kept apart from the Paulmyer pool above and
@@ -281,8 +282,13 @@ What they touch (Claude's gist, unchecked): 18 Apr 1664, a maritime union of thr
 Austria, the Dutch, France and its navy, Louis XIV and the King of Denmark named; 26 Jun 1664, a new subsidy to the
 Swedes; 14 Apr 1665, a notable sum of money, engaging Louis XIV, Chancellor Séguier and a man named des Fargues.
 
-Suspected key fault: the recurring 'yy' (the pair 'T T') in three passages, listed in Remaining gaps. Nothing was
-changed in any key.
+The recurring 'yy' (the pair 'T T') in three passages was first taken for a suspected key fault. That is withdrawn: it
+is one cursive # sign (HSH = o) misread as two T's, a transcription error found after the decode (Remaining gaps).
+Nothing was changed in any key.
+
+14 Apr 1665 is incomplete: image 191 shows more of the letter page left of our crop, and 10 tokens are missing from the
+transcription (LAM 299 355 TH 277 before 301 (line 1); 364 Y m 18 after ct QX (line 2); 157 after "qu'un"; Dan Bourdeau's review of PR #689, not re-checked here). The 58/80 above is the first pass on
+the 80 tokens transcribed, not a figure for the passage; nothing frozen was edited or re-scored.
 
 Prior art: the folder's search (above) found printed Paulmyer letters of Sept-Nov 1666 only; DECODE, Cryptiana,
 Fridericia's Aktstykker and the Aarsberetninger in full were not reached for Paulmyer, and a web search of 16 Nov 2026
