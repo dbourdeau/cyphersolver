@@ -144,7 +144,7 @@ method `not solved` (by us), as for other targets where the project's own attemp
   other 4, one agrees with our arbitrated transcription (C19-03 = M23x2) and three do not (B56-01, C18-03, F1-09).
   So, at this image resolution, the shape classes of our model-made transcription are not stable on the doubtful
   signs; this is one reason the measure failed. Nothing was re-measured (the portion is spent). The record is
-  `RELECTURE-BRICE-PLANCHE.md` in our working files. Earlier sessions: Claude Opus (C01–C04, C06–C07, C10–C12), Claude Fable 5.1 (C05 re-reading, same
+  `dudout/results/RELECTURE-BRICE-PLANCHE.md`. Earlier sessions: Claude Opus (C01–C04, C06–C07, C10–C12), Claude Fable 5.1 (C05 re-reading, same
   session, partly dependent), and Codex (C08–C09 re-readings, as recorded in the project log). The C13 API runs cost
   1.19 USD.
 - **Burnt portions.** Every passage measured or read in C03–C13 is spent and cannot be used for a new test of this
@@ -187,5 +187,5 @@ This work builds on, and checks itself against, published Egyptology. It does no
 No image, crop or derivative of any plate is in this repository. The Piankoff plates are IFAO publications, in
 copyright until 2036; we used them for private study only. The Guilmant volume is on archive.org (`MIFAO15`); we have
 not checked its reuse status, so no crop is included either. Darnell & Darnell 2018 is © the authors and SBL Press;
-only a few words are quoted. Our working files (pre-registration, frozen table, transcription, measurement, unit
-sheet) are kept outside the repository and are available on request.
+only a few words are quoted. Our working files (pre-registration, frozen tables, transcription in sign codes, reference alignment, measuring
+script, measurement, unit sheet) are in `dudout/` (see its README); no image or crop is included.
