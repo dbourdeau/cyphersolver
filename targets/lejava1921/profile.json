@@ -133,19 +133,30 @@
       "kind": "verification",
       "what": "Reads as one payment instruction with slips explained letter by letter.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only, a letter corrected in a rebuilt key a hole. The telegram is wholly cipher. Of the 21 words of reading.txt (the three supplied prepositions included) 9 read as decryption.txt gives them; 9 words carry letters that differ from the decryption (n for s in Fedorovskii, m for s in rasporiazhenie, b for l in uplatu, e for a in otdela, and others) and are holes with the 3 supplied words: 9 of 21 (42.9%), under the 95% bar, so read in part. v10_relabel.py gives 0.864 because it marks only the three supplied words; the slipped words are unmarked in the reading.",
+      "result": "partial"
     }
   ],
-  "outcome": {"validation": {"date": "2026-11-02", "verdict": "not applicable", "notes": "Transposition: letters are unchanged, so the token-key test does not apply; shuffled-letter controls are in the notes."}, 
+  "outcome": {
+    "validation": {
+      "date": "2026-11-02",
+      "verdict": "not applicable",
+      "notes": "Transposition: letters are unchanged, so the token-key test does not apply; shuffled-letter controls are in the notes."
+    },
     "method": "key recovered from ciphertext-only",
     "method_basis": "The 11-column key came from annealing against a Russian model with no crib, and gives a coherent payment instruction.",
     "contribution": [
       "transcription",
       "key recovered"
     ],
-    "class": "read",
-    "fraction_read": 1.0,
+    "class": "read in part",
+    "fraction_read": 0.429,
     "fraction_read_method": "measured",
-    "fraction_read_source": "decryption.txt, letters",
+    "fraction_read_source": "Cipher words only (16 Nov 2026), sure words only, counted by hand from decryption.txt against reading.txt: the telegram is wholly cipher (the heading in clear is not in the reading); 21 reading words, 9 read as the decryption gives them (soobschite, dvoetochie, dano, perevode, Berlin, zakazam, nauchnotechnicheskogo, rublei, zolotom) and 12 holes: the 3 supplied prepositions [о] [в] [в] and 9 words whose decrypted letters differ from the reading (Fedorovskii n for s, odnovremenno, rasporiazhenie m for s, Litvinovu s for v, uplatu b for l, otdela e for a, kontrvaliuta, pyatdesyat, tysyach). Before: 1.0, letters of decryption.txt.",
     "key": "recovered",
     "verification": [
       "historical consistency"
@@ -160,17 +171,25 @@
         "reading": "reading.txt",
         "translation": "translation.md",
         "language": "ru",
-        "state": "read",
+        "state": "read in part",
         "reading_review": {
           "grade": "B",
           "by": "claude-opus-5-5",
           "date": "2026-11-02",
           "note": "Read by the model as sentences item by item; no independent reader yet."
         },
-        "read_share": 1.0,
-        "summary": "Moscow tells the Berlin trade office to inform Fedorovskii that an order has gone to Litvinov to transfer fifty thousand gold rubles to Berlin, to pay for the orders of the Scientific-Technical Department."
+        "read_share": 0.429,
+        "summary": "Moscow tells the Berlin trade office to inform Fedorovskii that an order has gone to Litvinov to transfer fifty thousand gold rubles to Berlin, to pay for the orders of the Scientific-Technical Department.",
+        "note": "16 Nov 2026, cipher words only: 9 of 21 words read (42.9%), counting as holes the 3 supplied prepositions and the 9 words whose decrypted letters differ from the reading (radio or copying slips emended in a rebuilt key); before 1.0, counted over letters. With the slipped words taken as read the tool figure is 0.864 (3 holes of 22). The reading holds the cipher only, so nothing was split."
       }
     ],
-    "key_file": "m0405.txt.key.json"
+    "key_file": "m0405.txt.key.json",
+    "gaps": [
+      {
+        "item": "the 9 words whose decrypted letters differ from the reading (Fedorovskii, odnovremenno, rasporiazhenie, Litvinovu, uplatu, otdela, kontrvaliuta, pyatdesyat, tysyach) and the 3 omitted prepositions",
+        "blocker": "too-short",
+        "detail": "one 167-letter telegram in a key recovered here; no second copy to check the slipped letters against, and the omitted words are not in the cipher"
+      }
+    ]
   }
 }

@@ -342,7 +342,8 @@
    "what": "All six read word by word on the figures from a first draft by the extended beam decoder (reread_b09_decode.py --rows), every word aligned with its figures (research/reading_audit/b09_align.py: R85 169/190, R86 155/164, R87 437/448, R88 326/361, R89 336/349, R90 45/48 words carried); words not carried bracketed. English translations written. _check_reading.py on the reading bodies: 1.00, 1.00, 1.00, 0.93, 0.92, 1.00 clean. Failed or open: R85 codes 3050 and 3020 (this use), a blotted group and a ticked run; R86 code 2020; R88 group 7 3 8. State decoded, not read -> read for all six; class not read -> read, method not solved -> read with known key.",
    "result": "worked",
    "technique": ["beam/DP decoding", "language-model scoring", "contextual inference", "manual reconstruction"]
-  }
+  },
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share checked over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. All six readings (texts/R85-R90_reading.md) hold the cipher text alone: the covering letters and the clear sentence of f. 302r are in separate files, and the notes sections are cut. Measured with v10_relabel.py over the body of each reading: R85 0.964, R86 0.970, R87 0.991, R88 0.986, R89 0.994, R90 0.959 (supplied articles [la], [il], [?word], [...] and unvalued codes as holes); no figure changes and all six stay read. Not counted as holes, because the readings do not mark them: words the alignment lists as not carried by the figures (one-letter clerk's slips and lost dotted zeros), which the notes say the figures still carry.", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",

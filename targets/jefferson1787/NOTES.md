@@ -1,5 +1,7 @@
 # jefferson1787 — Jefferson's Code No. 11 (the Barclay–Lamb code), 1786-1791
 
+Status: read in part (16 Nov 2026, recounted over cipher words: about 0.96 of the words of the readings; 8 of 17 documents with words at or above 95%; 5 moved from read to read in part)
+
 Catalogue no. 483 (Founders Online sweep, `research/founders_emlo/`). Worked 26 Oct 2026 from the solve-page brief.
 
 ## What it is
@@ -105,7 +107,47 @@ numbers back to him (3 Jun 1788) and groups struck out by the writers.
   468.623.1043) is not among the Founders "Code No. 11" hits.
 - TJ → Short, 6 Apr 1790, which the "Code No. 11" search also returns, is in Code No. 10 (editors' note), not 11.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions count the read share over the words written in cipher, holes by words, sure words only. The
+`texts/*_reading.txt` files hold the coded words alone (the clear text of each letter is not in them, except in
+`tj_17870704`, where the clear sentences sit between the coded words and the coded words are listed in
+`tj_17870704_decryption.txt`), so only that letter had to be separated. The old figures were counts of code groups
+(`make_texts.py`: groups with a reading over groups counted); the new ones are counts of words, with `?` after a word or
+alone (a doubtful or unread group), bracketed conjectural syllables (`[Bru]tes`), `[x?]` and the unread `[1531]`
+groups as holes. Counted by hand, word fragments joined; `make_texts.py` was not rerun (it would rewrite the files).
+
+| document | was | now | class |
+|---|---|---|---|
+| Barclay 10 Apr 1786 | 1.0 | 0.991 | read |
+| Barclay's footnotes, ca. 3 Jul 1787 | 0.857 | 0.500 (2 of 4 words) | read in part |
+| Jefferson to Barclay 4 Jul 1787 | 0.941 | 0.556 (5 of 9 cipher words: de x3, Montmorin x2 read; Rayneval x2, 495, trouble open) | read in part |
+| Jefferson to Carmichael 25 Sep 1787 | 1.0 | 0.993 | read |
+| Jefferson to Carmichael 15 Dec 1787, test line | 0.775 | 0.913 (21 of 23; the nine unread groups 5-13 are 2 words, an estimate) | read in part |
+| Carmichael 8 May 1788 | 1.0 | 0.971 | read |
+| Carmichael 29 May 1788 | 1.0 | 0.957 | read |
+| Jefferson 3 Jun 1788 | 1.0 | 1.0 | read |
+| Carmichael 5 Jun 1788 | 1.0 | **0.941** (16 of 17) | **read -> read in part** |
+| Carmichael 24 Jul 1788 | 1.0 | **0.920** (23 of 25; the doubtful full stop, group 1609, is punctuation, not a word, and is not counted) | **read -> read in part** |
+| Jefferson 25 Dec 1788 | 0.875 | 0.706 (12 of 17) | read in part |
+| Carmichael 26 Jan 1789 | 1.0 | **0.926** (about 112 of 121) | **read -> read in part** |
+| Jefferson 9 Aug 1789 | 1.0 | **0.765** (13 of 17; [beg]in, [Bru]tes, [Braban]t, com[motion] open) | **read -> read in part** |
+| Short 9 Oct 1789 | 1.0 | 1.0 | read |
+| Short 25 Oct 1789 | 1.0 | **0.943** (33 of 35; group 1612, Marquis twice, has no key value) | **read -> read in part** |
+| Short 28 Oct 1789 | 1.0 | 1.0 | read |
+| Jefferson 11 Apr 1791 | 1.0 | 1.0 | read |
+
+The 28 Sep 1787 postscript to Adams stays decoded, not read (no transcription). Class of the target unchanged (read in
+part). fraction_read 0.974 (groups) -> about 0.96 (words, estimated, the word count being approximate where the files
+split words into syllables). Grade M groups (216, the editors' reading with no second occurrence) are not marked in the
+files and are counted as read because they rest on the editors' printed decipherment (an external plaintext); the
+shares would be lower if that reading were not accepted: a stricter reading of "sure words only" would lower the figures further and is for
+the coordinator to decide. No measure declaration can be added: the files have no clear/cipher marks to declare (and
+`v10_relabel.py` does not read a bare `?` as a hole), so the hand count above is the figure of record.
+
 ## Remaining gaps
+
+- single unread or doubtful groups marked ? in Carmichael 5 Jun 1788, 24 Jul 1788, 26 Jan 1789 and Jefferson 25 Sep 1787, and the conjectural syllables of Jefferson 9 Aug 1789 ([beg], [Bru], [Braban], [motion]) - blocker: no-key-material; Jefferson's interlinear carries a ? for the group, or the group occurs once, and no other letter in this code fixes the value
 
 - TJ to Adams, 28 Sep 1787, coded P.S. (about 30 groups) - blocker: illegible; the LoC press copy is blotted, the RC is at the Massachusetts Historical Society (Adams Papers) and was not seen
 - Short to Jay, 25 Oct 1789 (No. 5), group 1612 for the Marquis (Lafayette), used twice - blocker: no-key-material; the State Department copy carries no decoding and no other letter has 1612
@@ -121,7 +163,7 @@ numbers back to him (3 Jun 1788) and groups struck out by the writers.
 - [x] clear-pages: TJ's clear-text sheets for 25 Sep 1787, 3 Jun 1788 and 11 Apr 1791 used; the 1791 "decyphered" sheet supplied 544 aligned groups
 - [x] known-keys: Code No. 8 (Adams) and Code No. 10 (foreign affairs) are different codes (editors); Carmichael's Franks copy is Code No. 13; none applies
 - [x] print: Founders Online (PTJ, Adams Papers), cryptiana and a general web search; no key table published
-- [x] key-rebuild: key.tsv rebuilt from interlinears and clear sheets (317 values); segmentation solver tried and set aside (wrong seeds propagate); every conjectured group checked against all occurrences
+- [x] key-rebuild: key.tsv rebuilt from interlinears and clear sheets (348 values); segmentation solver tried and set aside (wrong seeds propagate); every conjectured group checked against all occurrences
 - [x] retry: every bracketed group re-read on the images at 2x-4x (495, 1084/758/626, 1111, 1107, 537) and regraded
 
 ## Outcome

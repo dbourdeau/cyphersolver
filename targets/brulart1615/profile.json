@@ -204,6 +204,12 @@
     "contextual inference",
     "language-model scoring"
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Both documents recounted over cipher words only (README Conventions, 16 Nov 2026), by hand, sure words only, holes by words: cipher words taken from the runs of texts/R2785_align.tsv and R2786_align.tsv (figures column), the clear words inside a run and the clear letter around it left out, the cipher runs marked bold in the two reading files (markup only). R2785 0.971 -> 0.924 (122 of 132; 10 holes: [?autre], [et] supplied, [?ceste], [?m'est possible] two words, one [...] after it, [?l'Equidray], three [...] in the closing clause); R2786 0.961 -> 0.780 (46 of 59; 13 holes: [...] x4 with [16] [21] unvalued, three in the l'intention row, two after a me, two after Je / et vous, one before en son endroict). Both read -> read in part; class read in part unchanged; fraction_read 1.0 -> 0.88 (168 of 191 cipher words).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -216,7 +222,7 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read": 1.0,
+  "fraction_read": 0.88,
   "grades": "unknown",
   "verification": [
    "none"
@@ -247,7 +253,7 @@
      "https://de-crypt.org/decrypt-web/RecordsView/2785"
     ],
     "summary": "Louis XIII, countersigned by Brûlart de Sillery, to Léon Brûlart, his ambassador in Venice: clear French with cipher runs (contemporary decipherments above them mention 'Marini', 'retirer a Gennes', 'domestiques', 'aucun ombrage'); the King is still held in the town by his eldest sister's illness, which fits the court at Poitiers in September 1615. The reading is Satoshi Tomokiyo's, with his key, on DECODE R2785 and cryptiana louisxiii.htm.",
-    "state": "read",
+    "state": "read in part",
     "language": "fr",
     "transcription": [
      "texts/R2785_reading.md",
@@ -261,7 +267,9 @@
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b17): clear text and the contemporary interlinear decipherment transcribed from the DECODE images (ff. 83r-84r), every run checked against Tomokiyo's key (texts/R2785_align.tsv); _check_reading.py on the body 0.854 (35/41). Open: three spaced-sign lines with no decipherment that give no French under the key (probably nulls, as Tomokiyo noted) and three cramped glosses on f. 83v. Dated 16 (not 15) Sept 1615."
     },
-    "read_share": 0.971
+    "read_share": 0.924,
+    "cipher_markup": "**",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher runs are bold in texts/R2785_reading.md (markup only, the reading is unchanged), taken from the runs of texts/R2785_align.tsv; clear words inside a run (ce, la, du, et, envers les, tant, soyent, qui, a propos en, davantage apres, en la, affaires, tousiours) and the clear letter around the runs are left out. 122 of 132 cipher words read, 0.924, read in part. Holes (10): [?autre], [et] supplied, [?ceste], [?m'est possible] (2 words), the [...] after it, [?l'Equidray], and three [...] in the closing clause (one word each, an estimate); the spaced-sign lines at the foot of f. 83v and the head of f. 84r are judged nulls and are not words. The two doubtful clear words [?scaurions] [?presser] are in clear text and do not count. Whole letter, clear included, not the measure: 0.971 (the figure recorded until 16 Nov 2026). v10_relabel.py with the declaration gives 0.913 (126 words, 12 holes): it counts an apostrophe form as two words and [?m'est possible] as three holes; the hand count is the figure of record."
    },
    {
     "doc": "R2786",
@@ -271,7 +279,7 @@
      "https://de-crypt.org/decrypt-web/RecordsView/2786"
     ],
     "summary": "Louis XIII (countersigned Brûlart de Sillery) to Léon Brûlart, ambassador in Venice; read by Satoshi Tomokiyo with his reconstructed Brûlart de Léon key (1615-18). Its contents are not described in the repository; only the address leaf was fetched.",
-    "state": "read",
+    "state": "read in part",
     "language": "fr",
     "transcription": [
      "texts/R2786_reading.md",
@@ -285,7 +293,9 @@
      "date": "2026-10-22",
      "note": "Read 22 Oct 2026 (b17): clear text and the contemporary interlinear decipherment transcribed from the DECODE images (ff. 109r-110r), checked against Tomokiyo's key; 'incommoditez' corrected to the figures' 'inconvenients', and the unglossed 'en mesme temps' decoded with the key (texts/R2786_align.tsv); _check_reading.py on the body 0.863 (44/51). Open: most of f. 109v rows 9-11 and 110r row 1 (no decipherment, no French under the key) and the figures 16, 21 of row 8."
     },
-    "read_share": 0.961
+    "read_share": 0.780,
+    "cipher_markup": "**",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher runs are bold in texts/R2786_reading.md (markup only, the reading is unchanged), taken from the runs of texts/R2786_align.tsv; the clear letter around them and the clear words je vous asseure, Je and et vous are left out, and so are the doubtful words and the [...] in clear passages (ce [...] obtiennent, for which no align row exists). 46 of 59 cipher words read, 0.780, read in part. Holes (13): [...] x4 and the unvalued [16] [21] in the inconvenients row, three [...] in the l'intention row, two after a me and two after Je / et vous, and one before en son endroict (one word each, an estimate); en mesme temps was decoded here with the key without a gloss and counts as read. Whole letter, clear included, not the measure: 0.961 (the figure recorded until 16 Nov 2026). v10_relabel.py with the declaration gives 0.794 (50 words, 13 holes): it counts an apostrophe form as two words; the hand count is the figure of record."
    }
   ],
   "gaps": [
@@ -300,6 +310,6 @@
     "detail": "the decipherer's hand is small and blotted at the resolution of the DECODE photographs; the letter signs under them are partly ambiguous in the key (the circled sign is l or y); the Gallica full-resolution images (23 Oct 2026) are no clearer, and no sibling letter repeats these clauses"
    }
   ],
-  "fraction_read_source": "22 Oct 2026, re-read (b17): both documents of outcome.texts read (2 of 2). The unread pieces inside them (R2785's three spaced-sign lines, about 60 signs, probably nulls; parts of R2786 f. 109v rows 9-11) are named in gaps. 23 Oct 2026 (siblings pass): R2785's spaced-sign lines judged nulls and left out of the reading; read_share by v10_relabel.share 0.971 (R2785) and 0.961 (R2786). 23 Oct 2026 (cl): the 1.0 counts documents whose sentences read; it is not a share of signs: both documents stay read in part (documents[].read) because of those passages, so the class is read in part."
+  "fraction_read_source": "22 Oct 2026, re-read (b17): both documents of outcome.texts read (2 of 2). The unread pieces inside them (R2785's three spaced-sign lines, about 60 signs, probably nulls; parts of R2786 f. 109v rows 9-11) are named in gaps. 23 Oct 2026 (siblings pass): R2785's spaced-sign lines judged nulls and left out of the reading; read_share by v10_relabel.share 0.971 (R2785) and 0.961 (R2786). 23 Oct 2026 (cl): the 1.0 counts documents whose sentences read; it is not a share of signs: both documents stay read in part (documents[].read) because of those passages, so the class is read in part. 16 Nov 2026 (read share over cipher words only, README Conventions): fraction_read 1.0 -> 0.88, the share of cipher words read over both letters, 168 of 191 (R2785 122 of 132, R2786 46 of 59), counted by hand on the bold cipher runs of the two reading files; it is a word share, not a count of cipher signs (no transcription of the signs exists); both documents are read in part."
  }
 }

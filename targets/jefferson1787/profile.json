@@ -718,6 +718,12 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 1269 tokens, 509 types, en-modern order 4: reading -2.137 per letter; polyphonic: 25% of read tokens differ from their type's commonest value. Verdict: not applicable.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. The reading files hold the coded words alone (the letters' clear text is not in them), so nothing was split; the count is by hand because the files mark doubt with a bare ? and bracketed syllables, which v10_relabel.py does not read as holes (and the generator make_texts.py was not rerun). Moves: Carmichael 5 Jun 1788 1.0 -> 0.941, 24 Jul 1788 1.0 -> 0.920, 26 Jan 1789 1.0 -> 0.926, Jefferson 9 Aug 1789 1.0 -> 0.765 and Short 25 Oct 1789 1.0 -> 0.943 (group 1612, Marquis twice, no key value) go from read to read in part; read in part, figure changed: Barclay's footnotes 0.857 -> 0.500, Jefferson 4 Jul 1787 0.941 -> 0.556 (5 of 9 cipher words), 15 Dec 1787 0.775 -> 0.913, 25 Dec 1788 0.875 -> 0.706; still read: Barclay 10 Apr 1786 0.991, Jefferson 25 Sep 1787 0.993, Carmichael 8 May 1788 0.971 and 29 May 1788 0.957, Jefferson 3 Jun 1788 1.0, Short 9 Oct and 28 Oct 1789 1.0, Jefferson 11 Apr 1791 1.0. Grade M groups (216, the editors' reading with no second occurrence) are not marked in the files and are not counted as holes here.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -742,9 +748,9 @@
   ],
   "class": "read in part",
   "key": "partial",
-  "fraction_read_method": "measured",
-  "fraction_read_source": "reading.tsv: 1,917 counted code groups (37 quotations and struck groups excluded), 1,868 with a reading; groups with a '?' digit count as read only when a contemporary decoding or clear sheet fixes them",
-  "fraction_read": 0.974,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Cipher words only, hand count of the 17 reading files with words (16 Nov 2026): about 1,200 words (variant and syllable fragments joined), about 45 holes (doubtful ? marks, grade-I conjectures in brackets, the unread groups), so about 0.96 of the words of the readings. This is an estimate: fragments of words in the files make the word count approximate. The 1,868 of 1,917 counted groups (0.974) of reading.tsv are a count of groups, and the Adams postscript (about 30 groups, blotted) is outside both. Before: 0.974 (groups).",
+  "fraction_read": 0.96,
   "codes_open": {
    "open": "unknown",
    "total": "unknown",
@@ -810,6 +816,11 @@
     "item": "47 blotted groups of the 11 Apr 1791 press copy",
     "blocker": "illegible",
     "detail": "plaintext fixed by the decyphered sheet"
+   },
+   {
+    "item": "single unread or doubtful groups marked ? in Carmichael 5 Jun 1788, 24 Jul 1788, 26 Jan 1789 and Jefferson 25 Sep 1787, and the conjectural syllables of 9 Aug 1789 ([beg], [Bru], [Braban], [motion])",
+    "blocker": "no-key-material",
+    "detail": "Jefferson's interlinear carries a ? for the group, or the group occurs once; no other letter in this code fixes the value"
    }
   ],
   "notes": "Every coded passage already had a printed reading by the Jefferson Papers editors (prior solution, used for alignment); 216 groups rest only on it (grade M). The work adds the first value table of Code No. 11 and corrections: Barclay's footnote has six groups (The Pro-cur-e-r [General?]), [sea] at 495 is contradicted (495 = larg-), Kentuck[ians] splits as Ke-nt-u-[814], [tal]k is t-alk, and the printed 15 Dec 1787 test line has two misprints.",
@@ -822,14 +833,15 @@
     "reading": "texts/barclay_17860410_reading.txt",
     "summary": "Barclay reports from Madrid that Lamb's mission to Algiers has failed: no peace without a larger sum, and the Dey refuses to treat.",
     "language": "en",
-    "read_share": 1.0,
+    "read_share": 0.991,
     "state": "read",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "The coded paragraph reads through as sentences (no peace without a larger sum; the Dey refuses to treat); Jefferson's interlinear decoding throughout."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 111 words, 1 doubtful (think ?): 110 read; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "barclay_17870703",
@@ -839,14 +851,15 @@
     "reading": "texts/barclay_17870703_reading.txt",
     "summary": "Barclay's two coded footnotes name the Procureur général at Bordeaux (Dudon) as his adviser and Congress as the 'Particular Quarter' owing him money.",
     "language": "en",
-    "read_share": 0.857,
+    "read_share": 0.5,
     "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "the, e, r and Congress attested; three groups of Procurer General single occurrences."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 2 of 4 words read (the, Congress); Procurer (Pro-, -cur- grade I) and General? are holes; ? after a word or alone is a doubtful or unread group. Before 0.857 (the figure recorded 24-27 Oct 2026). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17870704",
@@ -856,14 +869,15 @@
     "reading": "texts/tj_17870704_reading.txt",
     "summary": "Jefferson reports a conference on Barclay's arrest at Bordeaux with Montmorin's first secretary (Rayneval, by the editors' conjecture); the word the editors read as 'sea' is a group that means 'larg-' elsewhere in the code.",
     "language": "en",
-    "read_share": 0.941,
+    "read_share": 0.556,
     "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "de and Montmorin attested elsewhere; Rayneval, trouble single occurrences; 495 contradicts the printed 'sea'."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 5 of 9 cipher words read (de x3, Montmorin x2); Rayneval x2 (grade I), the open group 495 and trouble (grade I) are holes; the clear sentences of the letter around them are not counted; ? after a word or alone is a doubtful or unread group. Before 0.941 (the figure recorded 24-27 Oct 2026). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17870925",
@@ -873,14 +887,15 @@
     "reading": "texts/tj_17870925_reading.txt",
     "summary": "Jefferson tells Carmichael of Smith's mission to Portugal, the failure to march into Holland, and a possible triple alliance of France, Austria and Russia.",
     "language": "en",
-    "read_share": 1.0,
+    "read_share": 0.993,
     "state": "read",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Coded phrases read as sense with Jefferson's clear sheet; the press copy digits are blotted but the sheet fixes the words."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 138 words, 1 doubtful (they?): 137 read; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17870928",
@@ -902,14 +917,15 @@
     "reading": "texts/tj_17871215_reading.txt",
     "summary": "A test line: the opening of Jefferson's letter of 14 June 1787 put into code so that Carmichael could check his copy of the code.",
     "language": "en",
-    "read_share": 0.775,
+    "read_share": 0.913,
     "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "The test line reads as the opening of the 14 June 1787 letter; nine groups of the heading not split."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 21 of 23 words read; the nine unread groups 5-13 (heading and Having) count as 2 words, the least the plaintext shows (an estimate); ? after a word or alone is a doubtful or unread group. Before 0.775 (the figure recorded 24-27 Oct 2026). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "carmichael_17880508",
@@ -919,14 +935,15 @@
     "reading": "texts/carmichael_17880508_reading.txt",
     "summary": "Carmichael explains that his cipher was wrong, has had no official news from America, and sketches Floridablanca's tactics against Eden.",
     "language": "en",
-    "read_share": 1.0,
+    "read_share": 0.971,
     "state": "read",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Coded runs read as sense between clear words; Carmichael's own garbling (official nature, 1081 nar) left as he wrote it."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 138 words, 4 doubtful (official?, nature?, nar?, t?): 134 read; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "carmichael_17880529",
@@ -936,14 +953,15 @@
     "reading": "texts/carmichael_17880529_reading.txt",
     "summary": "Carmichael on the Swedish armaments, the Russian minister's suspicion of England, and a British ship carrying war stores to the Turks.",
     "language": "en",
-    "read_share": 1.0,
+    "read_share": 0.957,
     "state": "read",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Coded words and phrases read as sense in the clear frame (Swedish armaments, a British ship for the Turks); a few groups Carmichael garbled."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 138 words, 6 doubtful or unread (politicians ?, prevent?, war ?, Eden?, he ?, how?): 132 read; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17880603",
@@ -960,7 +978,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Coded names and phrases (Littlepage, isthmus of Panama, the new French minister) read as sense from Jefferson's list."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 26 words, no hole; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "carmichael_17880605",
@@ -970,14 +989,15 @@
     "reading": "texts/carmichael_17880605_reading.txt",
     "summary": "Carmichael on a Spanish ordinance meant to force a custom house on Biscay.",
     "language": "en",
-    "read_share": 1.0,
-    "state": "read",
+    "read_share": 0.941,
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Two coded phrases (a bugbear to compel them to admit a custom house; long held in view) read as sense."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 16 of 17 words read; group 1001 (an unread ? between compel and them) is one hole; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "carmichael_17880724",
@@ -987,14 +1007,15 @@
     "reading": "texts/carmichael_17880724_reading.txt",
     "summary": "Carmichael on the 1360/1363 error in his cipher, Littlepage, and Campomanes and Ulloa on the Panama canal.",
     "language": "en",
-    "read_share": 1.0,
-    "state": "read",
+    "read_share": 0.92,
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Coded words are names and short phrases (Littlepage, Campomanes, Ulloa, a copy) that fit the clear text."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 23 of 25 words read (numerals 4 and 8 included); groups 842 and 1611 (?) are 2 holes (the doubtful full stop, group 1609, is punctuation, not a word, and is not counted); ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17881225",
@@ -1004,14 +1025,15 @@
     "reading": "texts/tj_17881225_reading.txt",
     "summary": "Jefferson asks Carmichael what is being concerted between the Spanish court and the Kentucky settlers.",
     "language": "en",
-    "read_share": 0.875,
+    "read_share": 0.706,
     "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "The coded question about the Spanish court and the Kentucky settlers reads; three groups after 'Eden will be' and 814 open."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 12 of 17 words read; Eden's three unread groups (counted as 1 word, an estimate), Kentuck[ians], the lone i?, mer[its] and in[vestig]ation are holes; ? after a word or alone is a doubtful or unread group. Before 0.875 (the figure recorded 24-27 Oct 2026). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "carmichael_17890126",
@@ -1021,14 +1043,15 @@
     "reading": "texts/carmichael_17890126_reading.txt",
     "summary": "Carmichael on a French agent sent to visit the American back settlements and on Gayoso, sent as governor of the Natchez.",
     "language": "en",
-    "read_share": 1.0,
-    "state": "read",
+    "read_share": 0.926,
+    "state": "read in part",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "A continuous coded passage that reads as sentences (the French agent, Gayoso); two groups for 'secret' miscoded as 'sm'."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 112 of 121 words read; received?, spoke? x2, packet ?, back ?, [secret?] x2, [We] and [communication] are holes; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17890809",
@@ -1038,14 +1061,15 @@
     "reading": "texts/tj_17890809_reading.txt",
     "summary": "Jefferson asks whether the provinces of Spain begin to talk of their rights, and reports Brabant in commotion.",
     "language": "en",
-    "read_share": 1.0,
-    "state": "read",
+    "read_share": 0.765,
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "The provinces of Spain begin to talk of their rights? Brabant in commotion: reads, with two groups conjectural."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 13 of 17 words read; [beg]in, [Bru]tes, [Braban]t and com[motion] (grade I) are holes; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "short_17891009",
@@ -1062,7 +1086,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Syllable-by-syllable decoding from the copy reads as the sentences printed by the editors; dashes are groups the clerk left blank."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 52 words, no hole; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "short_17891025",
@@ -1072,14 +1097,15 @@
     "reading": "texts/short_17891025_reading.txt",
     "summary": "Short on Mirabeau abandoning the Orleans party and seeking the ministry through Lafayette.",
     "language": "en",
-    "read_share": 1.0,
-    "state": "read",
+    "read_share": 0.943,
+    "state": "read in part",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "No decoding in the copy: coded words aligned with the editors' text read as sense; 1612 for the Marquis unattested."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 33 of 35 words read; group 1612, Marquis twice, has no value in the key and no decoding in the copy (it stands on the editors' reading) and is counted as 2 holes; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "short_17891028",
@@ -1096,7 +1122,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "Two coded words, ransom and prisoners, decoded in the copy."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): 2 words, no hole; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    },
    {
     "doc": "tj_17910411",
@@ -1113,7 +1140,8 @@
      "by": "Claude Opus 5.5",
      "date": "2026-10-27",
      "note": "The long coded paragraph on the navigation act and the Mississippi reads through as sentences with the decyphered sheet."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only, sure words only, counted by hand on the reading file (it holds the coded words alone; the clear text of the letter is not in it): about 328 words, no hole; ? after a word or alone is a doubtful or unread group. Before 1.0 (counted over code groups). The tool v10_relabel.py does not read a bare ? as a hole and cannot be given a declaration for these files, so its figure differs."
    }
   ],
   "key_file": "key.tsv"

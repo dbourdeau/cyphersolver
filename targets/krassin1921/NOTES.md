@@ -1,6 +1,6 @@
 # krassin1921: Krassin's Nr 451 and Lutowinoff's Nr 523, Berlin to Moscow, 1921 (NARA M316 roll 43; from catalogue 669)
 
-Status: read (10 Nov 2026). Contributed by Harumi-Matsuba (issue #370; repository `Harumi-Matsuba/soviet1921-public`,
+Status: read in part (16 Nov 2026, recounted over cipher words: both messages 87.2%; was read at 0.978 of digit pairs). First written 10 Nov 2026. Contributed by Harumi-Matsuba (issue #370; repository `Harumi-Matsuba/soviet1921-public`,
 commit 5aac683, documents and data CC BY 4.0 per its licence file), who worked with Anthropic Claude (Claude Fable 5.2)
 and used OpenAI Codex as a blind second transcriber and Claude Sonnet as a second judge. **No human has compared the
 transcription with the images**, and the project has not seen the images (the NARA catalogue is refused by this
@@ -92,6 +92,24 @@ pull requests, GitHub code search, Cryptiana, wenmi, Tiltman's "Experiences 1920
 web searches in Russian and English). Not read by him or here: Sovetsko-germanskie otnosheniya vol. 2 (1971), DVP SSSR
 vol. IV, Bol'shevistskoe rukovodstvo. Perepiska 1912-1927, TNA HW 12, NARA RG 457 6707N. The plaintext may be in print
 there. The project's own notes on the file (`kopp1921`) had not read any figure message.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over words, holes by words, sure words only, and a letter corrected in a
+rebuilt key is a hole. Both messages are wholly cipher, so nothing had to be separated. The old figures (0.982 for
+Nr 451, 0.969 for Nr 523, 0.978 together) were the contributor's counts of digit pairs, which are letters, not words.
+Counted by hand on the contributor's word breaks in `translation.md` (the Russian of each message; the [ ] marks are
+the holes):
+
+- Nr 451: 109 words, 14 holes, **95 read, 0.982 -> 0.872**. Holes: seven words on the off-table pairs ([28] three
+  times, [77] twice, [91], [14]) and seven with a wrong, empty or unknown letter (то[ф]гого, все[м], бога[]ыи,
+  ревизионо[з], ревизионо[н], высл[50]ть, до[54]лада).
+- Nr 523: 47 words, 6 holes, **41 read, 0.969 -> 0.872**. Holes: the numbers [16] and [76][53][18] (one word) and four
+  words with a wrong letter (опре[о]эленоэ, п[д]ложениэ, окон[ю]ания, ко[у]у).
+- Both documents are under 95%, so the class goes **read -> read in part** (extent partial); fraction_read 0.978 ->
+  0.872 (136 of 156 words). The key stays recovered; the text builds sentences throughout (grade A, unchanged).
+- Measure declaration: none possible. `translation.md` holds both messages and the English translation in one file, and
+  the tool counts it whole (0.913, not split); the hand count is the figure of record.
 
 ## Remaining gaps
 
