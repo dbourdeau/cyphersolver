@@ -23,6 +23,7 @@ The digit rows are in `transcription/`: one file for each of the 35 cipher pages
 
 - File name: `<record>_f<folio>_digits.txt`, the file form of the digit files in `research/dudout_2026-10-29/`.
 - Four header lines start with `#`. Then each cipher row is one line, `C01 <body>`, in page order.
+- That folder labels manuscript lines `L01`, `L02`, .... These files label cipher rows `C01`, `C02`, ..., the labels of the decode lines.
 - The decode lines of the record pages use the same row labels. So each decode line points to one row.
 - The decode, the key-free read and `check.md` used these rows. Each row body is unchanged. Only the header lines and the form of the row label are new.
 
@@ -35,7 +36,7 @@ The digit rows are in `transcription/`: one file for each of the 35 cipher pages
 | `[overwritten glyph]`, `[X-shaped sign]`, `[V-shaped sign]` | one sign that the transcription does not read as a digit |
 | `[unresolved cipher run]`, `[illegible]`, `[overwritten cipher signs: illegible]`, `[glyph count disputed]` | an unread span of unknown length |
 | `[gap: cleartext dropped]` | clear text stood here; the file does not copy it |
-| another note in brackets, such as `[rule to the right]` | a mark with no position |
+| a note that ends in `not a baseline digit` (a point, a dash, a margin mark, a space, a terminal trace), `[rule to the right]`, `[sublinear strokes: attachment indistinct]` | a mark that holds no position; it is not counted |
 | `⟦...⟧` around a whole row | the transcription marks the whole row as tentative |
 
 - The decode reads a doubtful digit with its first reading, and marks the code `⟨a⟩`.
