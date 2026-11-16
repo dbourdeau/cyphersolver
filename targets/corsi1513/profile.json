@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "target": "corsi1513",
-  "title": "Giovanni Corsi, Florentine orator at the court of Ferdinand the Catholic, to Lorenzo de' Medici, 27 Oct 1513 (doc. 620) and 16 Nov 1513 (doc. 623), both decoded, not read; catalogue 2391",
+  "title": "Giovanni Corsi, Florentine orator at the court of Ferdinand the Catholic, to Lorenzo de' Medici, 27 Oct 1513 (doc. 620), 16 Nov 1513 (doc. 623) and April 1514 (doc. 633), all decoded, not read; catalogue 2391",
   "documents": [
     {
       "id": "620",
@@ -71,6 +71,41 @@
         "source": "ASF iipsrv images A0001341 (cipher) and A0001342 (clear verso), fetched 2026-11-16T01:18Z, md5 10cd7211e6e8c420a237291b41aa4434 and ae67b27fdfa1cc1b3c0b625a2e9fc27f; images not in the repository (ASF terms)",
         "image_quality": "fair",
         "notes": "Same blind reader and freeze as doc. 620. Number groups written without separators in places (L2, L6, L7); a struck group on L12. No second transcription."
+      }
+    },
+    {
+      "id": "633",
+      "read": "not read",
+      "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 633 (c. 641r-v, folio 641 with 47 struck through; images A0001367, A0001368); a contemporary copy headed \"Copia\"",
+      "date": "April 1514 (\"In Madrid ... Aprilis MDXIIIJ\", blind reader; year reading not checked)",
+      "year": 1514,
+      "country": "Florence",
+      "route": "Spanish court -> Lorenzo de' Medici, Florence",
+      "places": {
+        "from": "Madrid (blind reader)",
+        "to": "Florence"
+      },
+      "language": "Italian",
+      "pages": 2,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the sheet (blind reader, blind633/BLIND_NOTES.md: faint marks between lines 10-13 are show-through of the verso address). Verso A0001368 is the address leaf only."
+      },
+      "length": {
+        "tokens": 446,
+        "distinct": 98,
+        "unit": "symbols",
+        "measured": true,
+        "file": "transcription_633.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "ASF iipsrv images A0001367 (recto, cipher) and A0001368 (verso, address only) at 1600 px (https://archiviodistatofirenze.cultura.gov.it/iipsrv/iipsrv.fcgi?FIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/<ID>.ptif&WID=1600&CVT=jpeg), fetched 2026-11-16T02:28Z, md5 d31b0ab052de907537b2a8817b9bc506 and eabca8f32a1f25e65cda9e7241e09258 (blind633/FETCH_LOG.txt); images not in the repository (ASF terms)",
+        "image_quality": "fair",
+        "notes": "Blind: a new reader with the two images and the same name-only label sheet (blind633/SHEET.md), no key and no values; 12 rows, 2 runs (L07-L16, L18-L19); frozen 2026-11-16T02:34:27Z (blind633/FREEZE_blind.txt). Two shapes not on the sheet (NEW1, NEW2). Measured with docs/_check_profile.py --measure --drop-first. No second transcription."
       }
     }
   ],
@@ -212,6 +247,42 @@
       ],
       "what": "The same control on doc. 623: real 0.573; seed 20261112 2/5,000 as good (max 0.6); seed 7 3/5,000 (max 0.581).",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "access",
+      "what": "Doc. 633 images: ASF iipsrv thumbnails A0001343, A0001361, A0001369, A0001367 (02:27-02:28Z) to find folio 641 (A0001367, cipher present); A0001367 and A0001368 fetched at 1600 px at 02:28Z, md5 d31b0ab052de907537b2a8817b9bc506 and eabca8f32a1f25e65cda9e7241e09258 (blind633/FETCH_LOG.txt).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "transcription",
+      "what": "Blind transcription of doc. 633 from the two images and the name-only label sheet (blind633/SHEET.md, the same as blind/SHEET.md), reader brief blind633/BLIND_PROMPT.txt: 2 cipher runs, 12 rows, 446 tokens; frozen 02:34:27Z with BLIND.tsv sha256 401dd386... and the key hash 5f56ad58... (blind633/FREEZE_blind.txt).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "reading",
+      "what": "Doc. 633: one decode with key_corsi_w17_frozen.json by blind633/decode_once.py, which refuses to run on a key or BLIND.tsv hash mismatch or over an existing output; no edits (blind633/decode_once.txt): 381 tokens with a letter value, 31 number entries, 23 holes, 11 nulls (446). No code number occurs.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Doc. 633: separate strict judge, one pass, from blind633/decode_once.txt only (blind633/JUDGE_BRIEF.txt): S 457, E 64, N 95 of 616 letter units; 457/616 = 74.2% S, S+E 521/616 = 84.6% (blind633/judge.tsv, blind633/JUDGE_NOTES.md). Each segmented row equals its decode row (12 of 12).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "control",
+      "technique": [
+        "statistical test"
+      ],
+      "what": "Doc. 633: the dictionary-cover control (blind633/shuffle.py, as blind/shuffle.py): real 0.6507; seed 20261112 0/5,000 as good (max 0.5943); seed 7 0/5,000 (max 0.5787) (blind633/shuffle_out.txt).",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -225,7 +296,7 @@
     ],
     "fraction_read_method": "measured",
     "fraction_read": 0.747,
-    "fraction_read_source": "Doc. 620 only: the strict judge's S units, 633 of 847 decoded letter units (S 633 + E 140 + N 74), blind/judge.tsv and blind/JUDGE_NOTES.md; first pass, no emendation. Doc. 623: 370 of 668 = 0.554. Not pooled.",
+    "fraction_read_source": "Doc. 620 only: the strict judge's S units, 633 of 847 decoded letter units (S 633 + E 140 + N 74), blind/judge.tsv and blind/JUDGE_NOTES.md; first pass, no emendation. Doc. 623: 370 of 668 = 0.554. Doc. 633: 457 of 616 = 0.742 (blind633/judge.tsv). Not pooled.",
     "codes_open": {
       "open": 3,
       "total": 5,
@@ -239,13 +310,13 @@
       {
         "who": "mcbratney",
         "role": "solution",
-        "note": "catalogue 2391, Corsi docs 620 and 623: blind transcription, one decode and strict judge, with Claude (Anthropic)",
+        "note": "catalogue 2391, Corsi docs 620, 623 and 633: blind transcription, one decode and strict judge, with Claude (Anthropic)",
         "date": "2026-11-16"
       },
       {
         "who": "mcbratney",
         "role": "transcription",
-        "note": "docs 620 and 623, blind, from the ASF images, with Claude (Anthropic)",
+        "note": "docs 620, 623 and 633, blind, from the ASF images, with Claude (Anthropic)",
         "date": "2026-11-16"
       },
       {
@@ -255,11 +326,6 @@
       }
     ],
     "gaps": [
-      {
-        "item": "Doc. 633 (c. 641r) not yet transcribed or decoded in this pipeline",
-        "blocker": "not-attempted",
-        "detail": "Next letter of the set; same key."
-      },
       {
         "item": "Doc. 627 as a control (blind decode against its on-page decipherment) not run",
         "blocker": "not-attempted",
@@ -281,14 +347,19 @@
         "detail": "Listed in PRIOR_ART.md for Malcolm."
       },
       {
-        "item": "docs/_check_reading.py scores both readings 'not a reading' (620: 3 of 16 sentences clean, 0.188; 623: 0 of 16), so the target is classed not read",
+        "item": "docs/_check_reading.py scores all three readings 'not a reading' (620: 3 of 16 sentences clean, 0.188; 623: 0 of 16; 633: 1 of 13, 0.077), so the target is classed not read",
         "blocker": "not-attempted",
-        "detail": "Fixing the key or label errors above and a new frozen pass would settle whether 620 reads."
+        "detail": "Fixing the key or label errors above and a new frozen pass would settle whether 620 and 633 read."
       },
       {
         "item": "Copies 621, 622 and 628 not collated",
         "blocker": "not-attempted",
         "detail": "621 gives clear equivalents for part of 620; 622 is a copy of 623."
+      },
+      {
+        "item": "Doc. 633: holes from the shapes NEW1 (a flat 2-like sign, frequent before z) and NEW2, and the bare sign z, which have no value in the key; doubtful superscript attribution",
+        "blocker": "not-attempted",
+        "detail": "21 of the 95 N units are holes; NEW1 is frequent. To check against doc. 627's decipherment and the images, then a new frozen pass."
       }
     ],
     "texts": [
@@ -323,9 +394,25 @@
         "read_share": 0.554,
         "summary": "Holes in most sentences. Recognisable: news from Rome that the state is not firm; His Majesty says he does not want to prolong the truce with France; the death of code 27 (King of Scots?) and code 24 (England?); the danger to the affairs of Italy.",
         "note": "read_share is the strict judge's S share (370/668), first pass; S+E 0.757. The identification of 27 and 24 is doubtful in the key itself."
+      },
+      {
+        "doc": "633",
+        "label": "Corsi to Lorenzo de' Medici, April 1514, doc. 633 (copy)",
+        "transcription": [
+          "transcription_633.txt",
+          "blind633/BLIND.tsv"
+        ],
+        "decryption": "decryption_633.txt",
+        "reading": "reading_633.md",
+        "translation": "translation_633.md",
+        "language": "it",
+        "state": "decoded, not read",
+        "read_share": 0.742,
+        "summary": "Recognisable: nuncios sent some days ago, offering every help and every possible favour to settle the differences; someone (the king?) has become suspicious and says these men want only to get [_] out of Italy quickly, and then the Florentines too; by nature most suspicious, the greatness and reputation [of a power not read] do not please him, and his doubts and suspicions can never be removed; the nuncios have had no orders from Rome since to make any demonstration.",
+        "note": "read_share is the strict judge's S share (457/616), first pass; S+E 0.846. Holes and slips left as decoded; no emendation. The subject of 'insospettito' is a hole."
       }
     ],
     "key_file": "key_corsi_w17_frozen.json",
-    "notes": "Both documents are decoded, not read: docs/_check_reading.py finds 3 of 16 sentences clean in reading_620.md (0.188) and 0 of 16 in reading_623.md. The strict judge's letter-unit figures (620: 633/847 = 74.7%; 623: 370/668 = 55.4%; first pass, no emendation) are evidence only. The repository's docs/_validate.py was not run; the controls are the dictionary-cover shuffles in blind/shuffle_out.txt. The 10 Nov working files are dated on Zenodo, DOI 10.5281/zenodo.24267269 (stated by the contributor; not checked here)."
+    "notes": "All three documents are decoded, not read: docs/_check_reading.py finds 3 of 16 sentences clean in reading_620.md (0.188), 0 of 16 in reading_623.md and 1 of 13 in reading_633.md (0.077). The strict judge's letter-unit figures (620: 633/847 = 74.7%; 623: 370/668 = 55.4%; 633: 457/616 = 74.2%; first pass, no emendation) are evidence only. The repository's docs/_validate.py was not run; the controls are the dictionary-cover shuffles in blind/shuffle_out.txt. The 10 Nov working files are dated on Zenodo, DOI 10.5281/zenodo.24267269 (stated by the contributor; not checked here)."
   }
 }
