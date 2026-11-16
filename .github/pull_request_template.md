@@ -11,6 +11,8 @@ A mechanical decryption is not a reading (George Lasry, 22 Oct 2026). For each d
 - [ ] An **English translation** of those sentences, with the same holes (not needed if the plaintext is English).
 - [ ] The **decryption**, line by line against the **transcription**, both listed in `profile.json` `outcome.texts`
       with the key file in `outcome.key_file`.
+- [ ] The decryption is the **unedited output of the key**; every letter or word of the reading that the key does not
+      give is marked in the reading (README Conventions, 16 Nov 2026), and every key value used is in a listed key file.
 - [ ] A document that decodes but does not yet read is marked `"state": "decoded, not read"`; key sheets, code lists
       and worksheets `"state": "not prose"`.
 - [ ] `python docs/_check_reading.py <folder>` run; paste its last line here:

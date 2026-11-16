@@ -888,6 +888,15 @@ The builder is idempotent. It also regenerates the "At a glance" counts at the t
 on the index page is generated separately from [`docs/_queue.json`](docs/_queue.json) by `python _build_queue.py`,
 and the catalogue page from `catalogue.json` by `_catalogue_page.py`. The catalogue's entries are written beside it as `docs/catalogue-data.js` (the page loads it as a script, so the HTML stays small); list rows on `writeups.html` and `archives.html` are searched by their own text, so do not copy a row's text into a `data-q` attribute. Each catalogue entry names its holding archive in `repository`, an id in `repositories.json` (name, city, country, match patterns); `python docs/_repositories.py --write` fills it for new entries (promotion does it too), and the page's "Where the ciphers are" index and Archive filter come from it. `findings.html` holds every finding, newest first, and the home page mirrors the newest five (add a line at the top of its list and rebuild). The hero's "As seen in" line is built from [`press.json`](press.json) (press and blog coverage): an entry shows once it has a `url`, so an announced piece waits there with `"url": null`. `archives.html` is built from `archive_requests.json` by `_archives_page.py`; a new `blocker: needs-physical-access` gap reaches it when `python tools/seed_archive_requests.py` is run.
 
+Three reference pages are generated at each build (16 Nov 2026): `method.html` and its French translation `methode.html`
+(how readings are made, checked and reviewed, with figures counted from the profiles; `docs/_method_page.py`),
+and `corrections.html`, the public log of corrections, from [`docs/corrections.json`](docs/corrections.json)
+(`docs/_corrections_page.py`). **When a published claim, count or reading is corrected or withdrawn, add an entry to
+`corrections.json`** (date, pages, what changed, who reported it, why). `docs/_reader_kind.py` classes each reading
+review as made by a model, a person with a model, or a person; the home-page tile and the method page use its counts.
+Every write-up footer carries "Contest or verify this reading", which opens the Verification issue form with the page
+filled in.
+
 Two checkers keep the ledgers in step. `python docs/_check_writeup.py <slug>` lists every surface a finished target
 must reach (page, manifest, README row, ledgers, catalogue, DECODE queue) and prints `result: complete` when it has;
 `--audit` lists finished targets with no write-up and the drift between README, manifest and pages.
@@ -1091,6 +1100,20 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   Dudout's recount of the 49 targets he contributed (#728), where 54 of 96 telegrams of 8 to 20 codes fell under the
   bar for one or two doubtful codes each. **Chinese telegraphic codes:** one code is one word, and so one character
   (the Wenmi tables count by character).
+- **The decryption is the unedited output of the key (16 Nov 2026).** For every document read with a key, two files
+  are kept apart. The *decryption* (`outcome.texts[].decryption`) is the key file applied to the transcription, sign
+  by sign, with nothing edited: a word the key gets wrong stays wrong in it. The *reading* is that text made into
+  sentences, and every letter or word in it that the key does not give for the signs as transcribed is marked in the
+  file's own convention (`[x]` unless its header states another): a letter corrected, a letter or word supplied, a
+  second value chosen for a sign, a code value taken from context. Marked letters are holes on the read bar above,
+  as supplied letters already were. Spelling conventions (u/v, i/j, accents, word division, a stated modernisation)
+  are stated once in the header and not marked word by word. A key value used by the reading must be in a key file
+  named in `outcome.key_file`, not only in a script or in NOTES. A text that is a decipherment of the time, a clear
+  copy, an edition or a contributor's reading kept as theirs is labelled as such in its header and is not listed as
+  the decryption. `research/decrypt_audit/` holds the audit that led to this rule (unmarked changes in 35 of 54
+  readings examined) and `python research/decrypt_audit/detail.py <folder>` shows where a reading departs from its
+  key; `targets/memoire1560/mark_emendations.py` is a model for marking them. Readings made before this date and
+  not yet examined may not meet it.
 - **Holes are counted by words (14 Nov 2026).** The read share counts unread words, not hole marks. A bare mark,
   `[...]`, `[?]` or `{?}`, is one unread word. A hole that covers more carries its size: `[... 4]` is four unread
   words. Count the unread cipher groups or words under the mark, from the decode or the transcription; where groups do

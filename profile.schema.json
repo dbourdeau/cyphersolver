@@ -241,8 +241,8 @@
       "doc": {"description": "documents[].id this entry covers, a list of ids, or 'all'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "label": {"type": "string", "description": "Heading for this entry when a profile document holds several letters (e.g. 'R1072, 6 Jan 1757'); else the document's id, shelfmark and date are used."},
       "transcription": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
-      "decryption": {"description": "The deciphered text (plaintext reading), with unread groups marked.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
-      "reading": {"description": "The reading as sentences: the decryption normalised (word division, spelling, punctuation, codes resolved), holes marked [...] . Optional when the decryption file already reads as sentences.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "decryption": {"description": "The unedited output of the key: the key file applied to the transcription sign by sign, nothing corrected, unread groups marked (README Conventions, 16 Nov 2026). Not a contemporary decipherment, a clear copy or an edition: those go under contemporary.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+      "reading": {"description": "The reading as sentences: the decryption normalised (word division, spelling, punctuation, codes resolved), holes marked [...], and every letter or word the key does not give marked in the file's stated convention (README Conventions, 16 Nov 2026). Optional when the decryption file already reads as sentences.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "contemporary": {"description": "The decipherment of the time, transcribed (shown as 'Decipherment of the time', never under transcription).", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
       "transcription_missing": {"description": "Why the cipher itself was never transcribed; replaces transcription. The transcription slot holds only the cipher as written, never a clear copy or a reading (24 Oct 2026).", "type": "string"},
       "translation": {"description": "An English translation of the reading, with the same holes marked (George Lasry, 22 Oct 2026). Required for every entry whose state is 'read' unless its language is 'en'.", "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
@@ -250,7 +250,15 @@
       "language": {"type": "string", "description": "Language of the plaintext, ISO 639-1 (fr, it, es, la, de, nl, hu, en ...). 'en' needs no translation."},
       "reading_review": {"type": "object", "additionalProperties": false, "required": ["grade", "by", "date"],
        "description": "Required for every entry whose state is 'read' (George Lasry, 22 Oct 2026): a reader (a person, or a model named as such) read the decryption as sentences and records it. grade A = coherent sentences with scattered holes; B = coherent but raw (unspaced, capitals, decoder lines) and normalised in the reading or translation. A text with holes in most sentences gets no review: it is state 'decoded, not read'. docs/_check_reading.py's sentence score is a pointer for the reader.",
-       "properties": {"grade": {"enum": ["A", "B"]}, "by": {"type": "string"}, "date": {"type": "string"}, "note": {"type": "string"}}},
+       "properties": {
+       "reader_kind": {
+        "enum": ["model", "person assisted by model", "person"],
+        "description": "Who read it (16 Nov 2026). Filled by rule from `by` (docs/_reader_kind.py) and corrected by hand where the rule is wrong; absent when the record does not say. A printed edition is not a reader."
+       },
+       "independent": {
+        "type": "boolean",
+        "description": "false when the reader was not independent of the work (same session, the model that made the reading); true when the record says independent or blind; absent when not stated (16 Nov 2026, docs/_reader_kind.py)."
+       },"grade": {"enum": ["A", "B"]}, "by": {"type": "string"}, "date": {"type": "string"}, "note": {"type": "string"}}},
       "summary": {"type": "string", "description": "What the document says, in one to three sentences, with its historical context."},
       "read_share": {"type": "number", "minimum": 0, "maximum": 1, "description": "Share of the reading's cipher words read as sense: 1 - hole rate on research/reading_audit/v2_score.py (every [?word], supplied [word], unread sign and unvalued code a hole), counted over the cipher words only where the entry declares cipher_markup or clear_markup (16 Nov 2026). 0.95 or more for state 'read'."},
       "cipher_markup": {"enum": ["⟦⟧", "⟨⟩", "«»", "‹›", "<>", "{}", "**", "*", "CAPS", ">"], "description": "How the reading file marks the words written in cipher, when it holds clear text too (16 Nov 2026, README Conventions: the read share counts cipher words only). research/reading_audit/v10_relabel.py then counts only the words inside the mark, and the hole marks that touch them. '**' bold, '*' italics (also _x_ and ***x***), 'CAPS' runs of capitals, '>' the blockquoted lines. Use this or clear_markup, not both; a <!-- measure: cipher_markup=X --> line in the reading file overrides it. Undeclared, the whole body is measured and reported as 'not split'."},
