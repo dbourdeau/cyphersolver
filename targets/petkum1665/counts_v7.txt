@@ -1,0 +1,57 @@
+counts_v7.txt: written by scripts/count_v7.py (python3 -I). Not a count of record: nothing was decoded with key v7.
+
+1. The 21 numbers open after key v5: 40, 108, 134, 135, 151, 181, 197, 198, 235, 248, 330, 344, 346, 351, 370, 374, 376, 388, 390, 394, 399
+   v6: filled 1 (134 = Stockholm [D]); no value 20 (40, 108, 135, 151, 181, 197, 198, 235, 248, 330, 344, 346, 351, 370, 374, 376, 388, 390, 394, 399)
+   v7: filled 5 (134 = Stockholm [D], 151 = François [G2], 181 = bruit [G2?], 248 = hommes [G?], 346 = ratification [G]); of these doubtful 2 (181, 248); no value 16 (40, 108, 135, 197, 198, 235, 330, 344, 351, 370, 374, 376, 388, 390, 394, 399)
+   arithmetic: 21 - 1 (#646: 134) - 4 (v7: 151, 181, 248, 346) = 16 with no value; 16 + 2 doubtful (181, 248) = 18 without a settled value
+
+2. Code numbers in the first-reader transcriptions (transcriptions/*.txt, not *_blind*) with no value (occurrences):
+   distinct code numbers in use: 175; occurrences: 1856
+   v5: 35 numbers, 68 occurrences with no value: 6 x1, 40 x3, 54 x1, 70 x1, 73 x4, 108 x1, 114 x1, 127 x1, 130 x1, 133 x4, 134 x4, 135 x1, 136 x1, 151 x5, 154 x2, 181 x1, 192 x3, 197 x3, 198 x2, 235 x1, 248 x3, 292 x1, 330 x1, 344 x1, 346 x4, 351 x1, 370 x2, 374 x1, 376 x1, 388 x1, 390 x5, 391 x1, 394 x1, 399 x1, 400 x3
+   v6: 30 numbers, 55 occurrences with no value: 6 x1, 40 x3, 54 x1, 70 x1, 73 x4, 108 x1, 127 x1, 135 x1, 136 x1, 151 x5, 154 x2, 181 x1, 197 x3, 198 x2, 235 x1, 248 x3, 292 x1, 330 x1, 344 x1, 346 x4, 351 x1, 370 x2, 374 x1, 376 x1, 388 x1, 390 x5, 391 x1, 394 x1, 399 x1, 400 x3
+      v6 against v5: 35 - 5 filled = 30 (114, 130, 133, 134, 192)
+   v7: 26 numbers, 42 occurrences with no value: 6 x1, 40 x3, 54 x1, 70 x1, 73 x4, 108 x1, 127 x1, 135 x1, 136 x1, 154 x2, 197 x3, 198 x2, 235 x1, 292 x1, 330 x1, 344 x1, 351 x1, 370 x2, 374 x1, 376 x1, 388 x1, 390 x5, 391 x1, 394 x1, 399 x1, 400 x3
+   v7: doubtful rows in use: 181 x1, 248 x3; numbers without a settled value: 26 + 2 = 28
+      v7 against v6: 30 - 4 filled = 26 (151, 181, 248, 346)
+
+3. Per letter, v6 (#646) against v7; rows new or changed in v7: 164, 151, 181, 248, 346, DB. Doubtful rows count N.
+letter	reader	S v6	E v6	N v6	S v7	E v7	N v7	units	strict v6	strict v7	units that move (token: value)
+petkum_1665-01-06	first	16	7	2	16	7	2	25	64.00%	64.00%	-
+petkum_1665-01-06	blind	17	7	1	17	7	1	25	68.00%	68.00%	-
+petkum_1665-01-13	first	7	10	3	7	10	3	20	35.00%	35.00%	-
+petkum_1665-01-13	blind	7	11	2	7	11	2	20	35.00%	35.00%	-
+petkum_1665-01-27	first	7	5	1	7	5	1	13	53.85%	53.85%	-
+petkum_1665-01-27	blind	6	5	2	6	5	2	13	46.15%	46.15%	-
+petkum_1665-03-03	first	16	8	3	16	8	3	27	59.26%	59.26%	-
+petkum_1665-03-03	blind	17	8	2	17	8	2	27	62.96%	62.96%	-
+petkum_1665-03-24	first	42	12	4	43	12	3	58	72.41%	74.14%	N>S DB: g
+petkum_1665-04-28	first	19	3	4	19	5	2	26	73.08%	73.08%	N>E 151: François; N>E 151: François
+petkum_1665-04-28	blind	18	3	5	18	5	3	26	69.23%	69.23%	N>E 151: François; N>E 151: François
+petkum_1665-05-12	first	14	3	2	14	3	2	19	73.68%	73.68%	-
+petkum_1665-05-12	blind	14	3	2	14	3	2	19	73.68%	73.68%	-
+petkum_1665-06-23	first	18	8	3	18	8	3	29	62.07%	62.07%	-
+petkum_1665-06-23	blind	18	8	3	18	8	3	29	62.07%	62.07%	-
+petkum_1665-09-17	first	16	8	2	16	8	2	26	61.54%	61.54%	-
+petkum_1665-09-17	blind	17	8	1	17	8	1	26	65.38%	65.38%	-
+petkum_1665-11-23	first	69	18	9	69	18	9	96	71.88%	71.88%	-
+petkum_1665-12-10	first	54	14	7	55	14	6	75	72.00%	73.33%	N>S DB: g
+petkum_1666-01-18	first	37	10	3	37	10	3	50	74.00%	74.00%	-
+petkum_1666-01-18	blind	34	10	6	34	10	6	50	68.00%	68.00%	-
+petkum_1666-03-02	first	14	2	4	14	2	4	20	70.00%	70.00%	-
+petkum_1666-03-02	blind	14	2	4	14	2	4	20	70.00%	70.00%	-
+petkum_1666-03-16	first	16	0	1	16	0	1	17	94.12%	94.12%	-
+petkum_1666-03-16	blind	16	0	1	16	0	1	17	94.12%	94.12%	-
+petkum_1666-03-23	first	5	2	0	5	2	0	7	71.43%	71.43%	-
+petkum_1666-03-23	blind	5	2	0	5	2	0	7	71.43%	71.43%	-
+petkum_1666-03-30	first	7	5	2	7	6	1	14	50.00%	50.00%	N>E 346: ratification
+petkum_1666-03-30	blind	7	5	2	7	6	1	14	50.00%	50.00%	N>E 346: ratification
+petkum_1666-04-06	first	15	6	5	15	8	3	26	57.69%	57.69%	N>E 346: ratification; N>E 346: ratification
+petkum_1666-04-06_biermann	first	0	1	0	0	1	0	1	0.00%	0.00%	-
+petkum_1666-04-06_biermann	blind	0	1	0	0	1	0	1	0.00%	0.00%	-
+petkum_1666-04-06	blind	15	6	5	15	8	3	26	57.69%	57.69%	N>E 346: ratification; N>E 346: ratification
+petkum_1666-04-06_king_p2	first	22	1	2	22	1	2	25	88.00%	88.00%	-
+petkum_1666-04-06_king_p2	blind	23	1	1	23	1	1	25	92.00%	92.00%	-
+petkum_1666-04-13	first	59	23	12	60	24	10	94	62.77%	63.83%	N>E 346: ratification; N>S DB: g
+petkum_1666-04-27	first	0	1	1	0	1	1	2	0.00%	0.00%	-
+petkum_1666-04-27	blind	0	1	1	0	1	1	2	0.00%	0.00%	-
+units that move: N>E x11, N>S x3; new or changed v7 rows met: 151 x4, 346 x7, DB x3
