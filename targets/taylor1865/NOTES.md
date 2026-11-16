@@ -116,6 +116,29 @@ An OCR search can miss a page, so "not found" means not found by that search. OR
 not checked. We know of no modern decipherment of these letter-book passages; the catalogue entry's own check
 (known.py, web search) found none.
 
+**16 Nov 2026, print check for the key RALLY TO THE FRONT (Andrew Beling, with AI agents; not checked by a
+person). Result: negative, as far as could be opened; Gaddy's own texts were not opened.**
+- Kahn, *The Codebreakers* (New York: Macmillan, 1967; revised edition 1996): on the Internet Archive for controlled
+  lending only, not borrowed; its search-inside refused us (403), so no page was seen. Its text is in the archive's
+  full-text index: a search for "Manchester Bluff" with "Complete Victory" returns nine copies of the book (for example
+  `codebreakerssto00kahn`, 1967, and `codebreakersstor0000kahn_k4s3`, 1996), snippet "the Navy the two known
+  keywords—MANCHESTER BLUFF and COMPLETE VICTORY". The search for "rally to the front" with "Manchester Bluff" returns
+  no copy of Kahn and nothing in any key list; its only hits are two copies of Karen Abbott, *Liar, Temptress, Soldier,
+  Spy* (2014), where the phrase was not seen in context. Page of Kahn's key passage: not given by the index, not seen.
+- The standard key lists in the same index (83 items with both known keys: Friedman's lectures, Plum 1882, the
+  Official Records of the Union and Confederate Navies, the *Century* 1882, Bauer's *Secret History*, Dooley 2022 and others) give
+  COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION and, in some, IN GOD WE TRUST, "Interest" or "My Old Kentucky
+  Home"; none of them also has "rally to the front". Two web searches found nothing either.
+- Gaddy, not opened: "Internal Struggle: The Civil War", in Ralph E. Weber, *Masked Dispatches* (National Security
+  Agency, 1993), pp. 88-103 (page range from the volume's contents and Holden, *The Mathematics of Secrets*, 2017): the
+  agency's PDF and the O'Reilly copy refused us (403), and the Internet Archive text file was not found under the name
+  tried (404); the archive's index of that volume does not match "Manchester Bluff" either, so it cannot say whether
+  the chapter lists keys. "Rochford's Cipher", *Cryptologia* 16 (1992), 347-362: the agency's PDF refused (403).
+  Tidwell, Hall and Gaddy, *Come Retribution* (1988), and *The Signal and Secret Service of the Confederate States*
+  (1986 reprint, Gaddy's introduction): lending only, not borrowed.
+- A full-text "not found" is not proof of absence (OCR can miss a phrase). Still open: Gaddy's chapter, read on paper
+  or on the agency's PDF in a browser.
+
 ## Proposed catalogue changes (entry 681)
 
 - status: four telegrams read in full from the images with COME RETRIBUTION (key over cipher letters only, offset 0
