@@ -1046,6 +1046,51 @@
    ],
    "what": "Reading review of the eleven readings of outcome.texts (ten Petkum letters and Paulmyer 25 Apr 1664), asked for by the reading check and by Brice Dudout's comment on PR #622: each read through as French against its English. All build sentences with their holes marked; all graded B (code words, guessed values and open numbers stand in most sentences; transcription by AI agents). The letter of 6 Apr 1666 is the weakest: its matter rests on three open numbers. The readings themselves were not changed and still print the values of the key they were written with.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "access",
+   "what": "Unit 261294 (Sehested's Paris relations): the 119 images not read for key v5 (11-16, 22, 26-141 except 30, 33, 50, 71) plus the unread halves of 17, 23, 24, 25, and 574R of unit 261267, fetched one at a time from the Rigsarkivet image API, all HTTP 200, no bot check (gloss/KEY_v7_FETCH_LOG_261294.txt). Images 26-28 read at full page with zooms; 29-141 triaged on contact sheets and read as 1560 px spreads (lower than v5's 2400 px: a small number may have been missed).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Key v7 rows read under the chancery's interlinear glosses (AI reader, Claude; gloss/KEY_v7_glosses_261294.tsv): 248 = hommes (3 glosses, 113L, 124R, 127R), 346 = ratification (2, 113R, 141L), 151 = François (single gloss, 1560 px spread, 23R), 181 = bruit (single gloss, 27L, over a clerk's slip for 185 contre), crossed d DB = g (4, 112L, 115L, 15L x2). First filed in PR #689 as key_v6.tsv on key v5; rebuilt as key_v7.tsv on #646's key_v6.tsv (md5 checked) after the maintainer's review. Brice Dudout's T2 not used.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "164 conflict settled: Sehested's glosses give amitie 21 times with 163 = alliance beside it (24R); 574R re-read: 'de l'alliance' over X.164, one chancery reading against 21. key_v7.tsv row 164 changed from alliance (A2) to amitie (G). Code word either way.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Conflict with #646 over 'bruit': #646 records Brice Dudout's reading of 541 left, 'un bruit sujet a caution' with 248 under 'bruit'; our glosses give 248 = hommes (3) and 181 = bruit (1, over a clerk's slip). Not resolved: both rows kept in key_v7.tsv with tiers G? and G2? (doubtful, counted N) and the evidence set out in gloss/KEY_v7_DIFF.md; 541 left not looked at again.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "key from source",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Failed or not adopted: 40 occurs only inside the gloss 'plus' (112L) with no word of its own; 235 (26L) and 399 (34R) occur only as clerk's slips corrected in the margin; no gloss found for 351 or the other open numbers. 88 = le Roy d'Espagne glossed three times (86R, 117R x2), agreeing with #646's correction; proposed, not applied: C -> A2 for 245 hu, 252 ja, 256 ju.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "statistics",
+   "what": "scripts/count_v7.py (counts_v7.txt), no decode: of the 21 numbers open after key v5, 21 - 1 (134, #646) - 4 (151, 181, 248, 346) = 16 with no value, 18 without a settled value counting the 2 doubtful rows. Over the first-reader transcriptions (175 distinct numbers, 1,856 occurrences): no value under v5 35, v6 30, v7 26 (+2 doubtful). Per letter, not a count of record: 14 word units would move (11 N to E, 3 N to S from DB = g).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -1077,7 +1122,7 @@
   "fraction_read_source": "counts.txt pool H: strict S/(S+E+N) per word unit over the eleven letters read in part, each at its count of record (30 Nov R2; the four of #444; the five by the first reader; Paulmyer 25 Apr): 562 of 819. Code words count as not read. Unit is the word, not the cipher token. With the blind reader's five: 559 of 819.",
   "fraction_read": 0.6862,
   "codes_open": {
-   "open": 20
+   "open": 16
   },
   "verification": [
    "key confirms",
@@ -1135,9 +1180,9 @@
   ],
   "gaps": [
    {
-    "item": "Code numbers with no value: 20 still open after key v6 (40, 108, 135, 151, 181, 197, 198, 235, 248, 330, 344, 346, 351, 370, 374, 376, 388, 390, 394, 399)",
+    "item": "Code numbers with no value: 16 after key v7 (40, 108, 135, 197, 198, 235, 330, 344, 351, 370, 374, 376, 388, 390, 394, 399), plus 181 and 248 whose v7 values are doubtful (18 without a settled value)",
     "blocker": "not-attempted",
-    "detail": "v4 settled 6 codes, v5 8 more from Sehested's glossed relations in unit 261294, v6 one more (134 Stockholm, from Brice Dudout's key T2); only 23 of images 5-141 of unit 261294 were read in full (gloss/KEY_v5_coverage_261294.tsv); 114 images, e.g. 26-28, are workable and unread. 164 conflict (amitie in Sehested's glosses and on T2's held-out leaf, alliance in v2 from 574R) not resolved. 248: glossed 'bruit' on 541 left by Brice Dudout's reading, against 'mille 248s' in three bare letters; to be looked at again. T2 values not taken: 207, 225, 376, 395 (glossed by his record, not seen again here); 151, 197, 344, 351 (alphabetical rank only; they give sense in all ten places met)."
+    "detail": "21 - 1 (134, key v6 of #646) - 4 (151, 181, 248, 346, key v7) = 16 (scripts/count_v7.py). Every image 5-141 of unit 261294 is now read except the right pages of 30, 33, 50 and 71, 29-141 at 1560 px spread resolution only; 235 and 399 appear there only as clerk's slips, 40 only inside a gloss. 248 = hommes (3 Sehested glosses) against 'bruit' over 248 on 541 left by Brice Dudout's reading, with 181 = bruit from one gloss over a slip: both doubtful, gloss/KEY_v7_DIFF.md; look at 541 left again. The 164 conflict is settled in v7 (amitie)."
    },
    {
     "item": "The twelve filed bare letters have no French reading or English translation (decoded, not read); no letter reaches 95% (best 16 Mar 1666, 94.12% on 17 units, shuffle control fails)",
@@ -1145,7 +1190,7 @@
     "detail": "Readings can be written from the decryptions and ledgers; the four #444 letters and the four Paulmyer letters also still have no blind second reading."
    },
    {
-    "item": "Signs not in the key: plain q, crossed d, PF, FF; Paulmyer's plain m and 8-like sign",
+    "item": "Signs not in key.tsv (v3): plain q, crossed d, PF, FF; Paulmyer's plain m and 8-like sign (Q = b and PF = f in key v4, crossed d = g in key v7; FF has no value)",
     "blocker": "open-codes"
    },
    {
@@ -1698,7 +1743,8 @@
    "gloss/KEY_v2.tsv",
    "key_v4.tsv",
    "key_v5.tsv",
-   "key_v6.tsv"
+   "key_v6.tsv",
+   "key_v7.tsv"
   ],
   "notes": "Repository scripts (docs/_check_reading.py, docs/_validate.py, docs/_check_profile.py) were not run by the contributor; checks were made with the folder's own scripts and by hand."
  }

@@ -1,6 +1,6 @@
 # Petkum 1665-66 and Paulmyer 1664: unglossed letters in the Danish chancery's French syllabary, read with a key rebuilt from the chancery's own glosses (catalogue 2530; issues #443, #444)
 
-Status: in progress (14 Nov 2026, PR #622: Brice Dudout's independent key T2 verified and nine of its values taken into `key_v6.tsv`, see the last section; 13 Nov 2026, round 6: key v5 from Sehested's glosses and the twelve bare letters filed per letter, see `NOTES_addition_2026-11-13.md` and Integration check, round 6; 13 Nov 2026 session: key v4 added from four unused glossed leaves, see Key v4 below; integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").
+Status: in progress (16 Nov 2026: key v7 = #646's key v6 + values read from Sehested's glosses on the rest of unit 261294, not yet used for any decode, see Key v7 at the end; 14 Nov 2026, PR #622: Brice Dudout's independent key T2 verified and nine of its values taken into `key_v6.tsv`, see the last section; 13 Nov 2026, round 6: key v5 from Sehested's glosses and the twelve bare letters filed per letter, see `NOTES_addition_2026-11-13.md` and Integration check, round 6; 13 Nov 2026 session: key v4 added from four unused glossed leaves, see Key v4 below; integration check, 12 Nov 2026: every letter is read in part, none reaches 95%; not written up yet because the gaps below that are not-attempted can still be worked, see Integration check). Key rebuilt from the interlinear decipherments of sister leaves (no key sheet). Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic); issues #443 and #444 and the comments on them. Folder prepared 12 Nov 2026 in answer to the maintainer's note on both issues ("held, not rejected: the issue gives the results but not the files").
 
 ## What this folder is, and why one folder
 
@@ -112,9 +112,9 @@ Not filed before, computed here from the same files: the eleven letters filed as
 
 ## Remaining gaps
 
-- Code numbers with no value: 20 after key v6 (40, 108, 135, 151, 181, 197, 198, 235, 248, 330, 344, 346, 351, 370, 374, 376, 388, 390, 394, 399; the 21 left by key v5 less 134 = Stockholm, taken from Brice Dudout's key T2 on 14 Nov 2026) - blocker: not-attempted: Sehested's glossed relations in unit 261294 were read in full on 23 of 137 images only (`gloss/KEY_v5_coverage_261294.tsv`); 114 images (e.g. 26-28, dense cipher) are workable and unread. Also workable: the 164 conflict (Sehested's glosses give amitie five times, v2 has alliance from 574R, and T2's held-out leaf has "l'amitie" over x.164: re-read 574R); 248 (glossed "bruit" on 541 left by Brice Dudout's reading, while three bare letters write "mille 248s" and "cet 248 la": look at 541 left again); and `counts_v6.txt` lists further numbers met once or twice with no value (54, 70, 73, 127, 136, 154, 292 and others).
-- Values of key T2 not taken into `key_v6.tsv` (PR #622, last section): 207 don, 225 fomenter, 376 traffic and 395 Sund are glossed by Brice Dudout's record and were not seen again here; 151 françois, 197 conduite, 344 raison and 351 rupture are placed by alphabetical rank only and give sense in all ten places where the folder's letters have them, which is context and not a gloss - blocker: not-attempted (the four glosses are on images 338, 421, 429 of unit 261267; a gloss for the rank values may be in the unread images of unit 261294).
-- Signs not in the key: plain q, crossed d, PF, FF; in Paulmyer's hand also plain m (= h) and an 8-like sign (= m) - blocker: open-codes.
+- Code numbers with no value: 16 after key v7 (40, 108, 135, 197, 198, 235, 330, 344, 351, 370, 374, 376, 388, 390, 394, 399; the 21 left by key v5 less 134 = Stockholm of key v6 and 151, 181, 248, 346 of key v7: 21 - 1 - 4 = 16, `counts_v7.txt`), and 2 more whose v7 value is doubtful (181 bruit, 248 hommes: 18 without a settled value) - blocker: not-attempted: Sehested's glossed relations in unit 261294 are now read on every image 5-141 except the right pages of 30, 33, 50 and 71 (`gloss/KEY_v5_coverage_261294.tsv`, `gloss/KEY_v7_coverage_261294.tsv`), but images 29-141 only as 1560 px spreads after contact-sheet triage, so a small number may have been missed; 235 and 399 occur there only as clerk's slips corrected in the margin and 40 only inside a gloss with no word for it alone (`gloss/KEY_v7_DIFF.md`). The 164 conflict is settled in v7 (amitie, 21 glosses; 574R's single 'alliance' kept in the source note). Workable: 248 against 181 for 'bruit' (541 left by Brice Dudout's reading has 'bruit' over 248; three Sehested glosses give 248 = hommes and one gloss over a clerk's slip gives 181 = bruit; both rows doubtful, `gloss/KEY_v7_DIFF.md`): look at 541 left again at full resolution. Over all first-reader transcriptions, 26 numbers in use have no value under v7 and 2 more are doubtful (`counts_v7.txt` section 2; 54, 70, 73, 127, 136, 154, 292 and others).
+- Values of key T2 not taken into `key_v6.tsv` (PR #622, last section): 207 don, 225 fomenter, 376 traffic and 395 Sund are glossed by Brice Dudout's record and were not seen again here; 151 françois (key v7 now has 151 = François from a Sehested gloss, found without T2), 197 conduite, 344 raison and 351 rupture are placed by alphabetical rank only and give sense in all ten places where the folder's letters have them, which is context and not a gloss - blocker: not-attempted (the four glosses are on images 338, 421, 429 of unit 261267; a gloss for the rank values may be in the unread images of unit 261294).
+- Signs not in `key.tsv` (v3): plain q, crossed d, PF, FF (Q = b and PF = f are in key v4, crossed d = g in key v7 from four glosses; FF has no value); in Paulmyer's hand also plain m (= h) and an 8-like sign (= m) - blocker: open-codes.
 - The four letters of #444 and the four Paulmyer letters have no blind second reading (the twelve of the 13 Nov filing have one, with exposure disclosed) - blocker: not-attempted.
 - The twelve filed letters (13 pages) have no French reading or English translation, so they stay decoded, not read - blocker: not-attempted (workable).
 - The other bare pages: the 12 letters (13 pages) are now filed per letter (13 Nov, PR #500); two bare pages (337L, 376L) of letters glossed on their first page are not among them; and 7 bare Paulmyer passages (18 Apr, 23 May, 26 Jun 1664, leaf 150 right, three of 1665; 6 of them tried only with the unadopted KEY_v4) - blocker: not-attempted as far as this folder goes.
@@ -245,3 +245,31 @@ Brice Dudout (with AI agents) sent the files asked for under issue #607: `dudout
 Credit: shared. Malcolm McBratney's key and readings; Brice Dudout's independent key T2, which agrees with this folder's key on 137 of the 139 numbers they share, corrects 88 and adds nine values.
 
 14 Nov 2026, second maintainer's review of PR #646 (Brice Dudout's side): petkum_1666-04-06 is set to "decoded, not read" and carries no reading review: its two sentences rest on the open numbers 346 (twice), 235 and 373. Ten readings keep grade B.
+
+## Key v7 (16 Nov 2026, Malcolm McBratney, with Claude): Sehested's glosses read to the end of unit 261294
+
+First filed with PR #689 as a key_v6.tsv built on key v5; renamed v7 and rebuilt on #646's key_v6.tsv after the
+maintainer's review, because the two files shared a name with different content.
+
+An AI reader (Claude) read the chancery's interlinear glosses on the 119 images of unit 261294 not read for v5 (11-16, 22,
+26-141 except 30, 33, 50, 71) and the unread halves of 17, 23, 24 and 25, and re-read 574R (unit 261267); every fetch is in
+`gloss/KEY_v7_FETCH_LOG_261294.txt` (Rigsarkivet image API, all HTTP 200, no bot check). Each gloss used is a row of
+`gloss/KEY_v7_glosses_261294.tsv`; the diff, the basis of each row and the dispute with #646 are in `gloss/KEY_v7_DIFF.md`.
+
+- `key_v7.tsv` (md5 d1ee7e3094e1643bfb0f58b39e9d0052) = `key_v6.tsv` of #646 + 151 = François (G2, single gloss, 1560 px
+  spread), 181 = bruit (G2?, single gloss over a clerk's slip for 185 contre; doubtful), 248 = hommes (G?, 3 glosses;
+  doubtful), 346 = ratification (G, 2), crossed d (DB) = g (A, 4); and 164 changed from alliance to amitie (21 glosses).
+- Disputed, not picked: #646 records 'bruit' over 248 on 541 left (Brice Dudout's reading, "un bruit sujet a caution");
+  our glosses give 248 = hommes three times and 181 = bruit once. Both rows are marked doubtful (tier ending '?') and
+  count N in `scripts/count_v7.py`; the evidence on both sides is set out in `gloss/KEY_v7_DIFF.md`.
+- Agreements: 88 = le Roy d'Espagne, corrected by #646 from 561R, is also glossed three times in unit 261294 (86R, 117R
+  twice); row T = y is confirmed by at least 11 glosses.
+- Not adopted: 40 (inside the gloss "plus", no word of its own), 235 and 399 (clerk's slips corrected in the margin).
+  Proposed only: three C -> A2 tier upgrades (245, 252, 256).
+- Open (`scripts/count_v7.py`, `counts_v7.txt`): 21 - 1 - 4 = 16 of the 21 numbers, plus 2 doubtful. Per letter, not a
+  count of record: 14 word units would move, 11 N to E (151, 346) and 3 N to S (DB = g).
+- Nothing was decoded with key v7 and no count of record changes.
+- Brice Dudout's T2 was not used to find or choose any value. Remark only: T2 had 151 = françois as a rank probable. The
+  context guesses of `holes.md` (248 homme, 181 bruit, DB = g), never applied, agree with the glosses.
+- Limit: images 29-141 were triaged on contact sheets and read at 1560 px, lower than v5's 2400 px copies; 151 rests on
+  one such reading.
