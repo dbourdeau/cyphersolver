@@ -1010,6 +1010,35 @@
         "image_quality": "fair",
         "notes": "Blind transcription by a Claude session given a sign sheet with no values (PROMPT.txt, SHEET.md in the evidence folder), frozen (sha256 d2b7137d...) before one decode. 556 tokens, 524 valued, 32 holes, 11 doubt-flagged, 28 struck groups not decoded (DECODE_RUN.txt; decode_once.py's count, not docs/_check_profile.py --measure). 136L is cut at the crop edge to leave out 136R. Not compared with the images after the decode. The first reader's earlier transcription of the same letter (b167, md5 dda629cc, parked) is not in the repository and was not used."
       }
+    },
+    {
+      "id": "260195-41R",
+      "read": "not read",
+      "shelfmark": "Rigsarkivet, Tyske Kancelli, Udenrigske Afdeling: Koncepter til skrivelser fra Conrad Biermann, 1675 (drafts unit 260195, Arkivalieronline), images 41R, 42L, 42R, 43L, 43R (opening pages of the draft whose pages 44L-46R are filed as 260195-44)",
+      "date": "c. July 1675 (estimated, as for 260195-44, which continues it)",
+      "year": 1675,
+      "country": "Denmark",
+      "route": "Conrad Biermann, German Chancery, Copenhagen, to Paul von Klingenberg, Danish plenipotentiary at The Hague (a draft; addressee by the docket 'An H. Klingenberg' on 46R of the same draft, as the first reader's file of 260195-44 gives it)",
+      "language": "German",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment in the copybook or the drafts; no key sheet found (the repository's sweep of TKUA Chiffer 1670-1709, keyhunt.md)."
+      },
+      "length": {
+        "tokens": 827,
+        "unit": "mixed",
+        "measured": false,
+        "file": "texts/260195-41R_klingenberg_transcription_blind.tsv"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Rigsarkivet Arkivalieronline images 48574249-48574251 (unit 260195, images 41-43), plain GET (evidence/blind/sibling_260195-41R_2026-11-16/FETCH_LOG.txt)",
+        "image_quality": "fair",
+        "notes": "Blind transcription by Claude Fable (Anthropic) given a sign sheet with no values (PROMPT.txt, SHEET.md in the evidence folder; the same sheet as for 134R), frozen (md5 b14ed0b0..., sha256 45eb74ea...) at 04:18:42Z before one decode. 43 runs; 827 decoded tokens, 809 valued, 18 holes, 26 doubt-flagged, 35 struck groups not decoded (DECODE_RUN.txt; decode_once.py's count, not docs/_check_profile.py --measure). Three fully struck lines after 42L line 24 not read. Not compared with the images after the decode."
+      }
     }
   ],
   "system": {
@@ -1311,6 +1340,40 @@
       ],
       "what": "docs/_check_reading.py: texts/260195-134R_klingenberg_reading.md clean share 0.675 (27/40 sentences, holes 0.146), 'marginal'; the decryption 0.028 (a syllable decode). docs/_texts.reading_problems counts 38% of sentences clean in the same file and refuses a 'read in part' entry without a reviewer's reading_review, so the entry is filed as 'decoded, not read' for a reviewer to raise.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "transcription",
+      "what": "Blind transcription of 260195 images 41R, 42L, 42R, 43L, 43R (the five pages before the filed draft 260195-44; images fetched by plain GET, 04:14Z) by Claude Fable with the 134R sign sheet and no values; BLIND.tsv frozen (md5 b14ed0b0879d6d492aa4b3f4f150074b, sha256 45eb74ea...) at 04:18:42Z. 43 runs.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "reading",
+      "technique": [
+        "key matching"
+      ],
+      "what": "One decode (decode_once.py, the dec1/SIGN code of scripts/count.py unchanged, hashes checked) with key.tsv, map v4 and table M3 frozen from upstream 89e25ef7d: 827 tokens, 809 valued, 18 holes. One strict judging pass, no emendation: S 786, E 11, N 30 of 827 units = 95.04% (N: 18 codes with no value in v4, 12 no-sense units). Code 485 (table M3 'mu') gives 'mu' where 'ni' is wanted twice (we-mu-ge, propo-mu-eren) and reads correctly once: a suspected key-table entry, not changed.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "control",
+      "technique": [
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Shuffled-key control, the 134R shuffle.py unchanged (docstring line only): values permuted among signs within each class (199 number codes, 29 letter signs), 5,000 shuffles at seeds 20261112 and 7, lang model de-1640s (order 5, letters only), mean log-prob per letter over 1,686 letters. Real -1.8354; shuffles >= real: 0 of 5,000 at both seeds (max -3.1813 and -3.0496). Pass (rule: fewer than 5).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "control",
+      "technique": [
+        "other"
+      ],
+      "what": "Collision re-check for 260195 images 41-43: upstream main 8c04af810 has no record of them (only 260195-44 onwards); the heads of the 25 pull requests with a merge ref (git ls-remote upstream refs/pull/*/merge) and of #687 were fetched and diffed against upstream main: only our own #687 touches targets/klingenberg1675 or names 260195. The join: 43R ends with the clear word 'welches', 44L begins 'dann Ihr Königl. Mayt.' (260195-44).",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -1417,6 +1480,11 @@
         "item": "Ten passages parked by the first reader (59R-60L, 70R, 254R, 263L, 274R, 72L-72R P.S., 112R-113, 134R-136L body, 151R P.S., 152L; 253R-254L not transcribed)",
         "blocker": "illegible",
         "detail": "112R-113 and 253R-254L are illegible (bleed-through, overwriting). For the others the transcriptions were not sent, only md5 values and logged figures (322 of 455 word units, 70.77%). 134R-136L body: blind sibling transcription and decode added 16 Nov 2026 (texts/260195-134R_*; 88.47% strict, shuffle 0/5,000 at two seeds). 253R-254L: blind attempt 16 Nov 2026 failed (59.2% strict), not filed."
+      },
+      {
+        "item": "260195 41R-43R (blind sibling decode, 16 Nov 2026): 18 codes with no value in v4, the 485 'mu'/'ni' entry, three struck lines after 42L line 24",
+        "blocker": "open-codes",
+        "detail": "Codes 327 (x3), 416 (x2), 25?, 395, 107, 19, 250, 251, 116, 100, 112, 16?, 426, 582, 41 have no value in map v4. Code 485 (table M3 'mu') gives 'mu' where 'ni' is wanted twice and is right once: a suspected key-table entry (or 485/488 confusion), not checked on the images. The struck lines were not transcribed."
       }
     ],
     "texts": [
@@ -2126,6 +2194,19 @@
         "language": "de",
         "state": "decoded, not read",
         "summary": "(Diplomatic, military) The suspicions [of collusion] have not ceased but grown with the troops sent by the lords of [?]; the States should not be charged with collusion; the lord's troops' march towards the Bremen lands seemed as strange to them as to the allies; the general imperial conclusion; Baulissen (Baudissin?), general of the cavalry, to strengthen [?] and form a corps to prevent the diversion; the Münster [troops]; a proposition to be reported; ships to sail out. English by Claude, unchecked. Strict judge 491/555 = 88.47%; docs/_check_reading.py clean share 0.675 for the reading file (at or above the 0.60 line for read in part), held at 'decoded, not read' because a reading_review must be recorded by a reviewer, not the contributor."
+      },
+      {
+        "doc": "260195-41R",
+        "label": "Biermann draft, c. July 1675, opening pages (unit 260195, images 41R-43R; continued by 260195-44): blind sibling decode (decoded, not read until a reviewer records a reading_review)",
+        "transcription": [
+          "texts/260195-41R_klingenberg_transcription_blind.tsv"
+        ],
+        "decryption": "texts/260195-41R_klingenberg_decryption_blind.txt",
+        "reading": "texts/260195-41R_klingenberg_reading.md",
+        "translation": "texts/260195-41R_klingenberg_translation.md",
+        "language": "de",
+        "state": "decoded, not read",
+        "summary": "(Diplomatic, military) The allies' distrust whether the King was in earnest to go into action against Sweden; the allies have least cause to complain, having met the treaties in no point, while the King raised the stipulated [16],000 men and equipped his fleet, drawing Swedish strength to Scania; whether the declaration of war should be made with actual rupture or in words, separately or jointly at The Hague (Zell advising against); refusing the other party's offers is declaration enough; a corps of troops and an important design to be communicated; subsidies paid and unpaid. Continues as 260195-44. English by Claude, unchecked. Strict judge 786/827 = 95.04%; blind transcription by Claude Fable; shuffle 0/5,000 at two seeds."
       }
     ],
     "key_file": [
