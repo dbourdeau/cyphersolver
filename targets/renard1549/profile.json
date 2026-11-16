@@ -151,9 +151,32 @@
    "technique": [
     "key matching"
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "The French original (HHStA Wien, StAbt Frankreich, Dipl. Korr. 17, Konv. Juli 1549, fol. 13-14; working scan from HHStA, GZ 2026-0.947.186) carries a contemporary decipherment beside the cipher. Its French text (vienna/FR_CLEAR.txt) was compared with this target's reading of the Modena copy: agrees on the informant, Tende, Nice, Cara, galleys, 300 soldiers, Antibes, val d'Oste; differs on 62 or 63 soldiers, prieur de Lombardie, Chauvey secretaire (amo = secretary) and Tuesday or Wednesday; names Figueroa (vienna/RESULTS.md section 5). By Malcolm McBratney with Claude.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Renard's own cipher (PP1 family on structure) rebuilt from the Vienna decipherment: 127 signs, 1,201 of 1,513 tokens on their majority value. Held-out last 13 of 67 lines: first pass 73.8% (seed leak disclosed), leak-free reruns 56.7% and 64.8%; shuffles max 27-29%, 0 of 10,000 (vienna/key_renard1549_vienna.tsv, HOLDOUT*.txt). Not proven by the contributor's 65% line.",
+   "result": "partial"
   }
  ],
- "outcome": {"validation": {"date": "2026-11-10", "verdict": "not applicable", "notes": "Contributed reading; the key is a syllabary with vowel marks and code words corrected on a sibling decipherment, and the project checked key consistency (95.6% token agreement on re-decoding) rather than fitting its own key; no n-gram test run."}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "not applicable",
+   "notes": "Contributed reading; the key is a syllabary with vowel marks and code words corrected on a sibling decipherment, and the project checked key consistency (95.6% token agreement on re-decoding) rather than fitting its own key; no n-gram test run."
+  },
   "class": "read in part",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "Tomokiyo's description of the 1548 syllabary did not fit as written; the contributor corrected it by aligning c.40r of the same file against its archival decipherment c.41, then applied it to c.131 and fitted further code words from context.",
