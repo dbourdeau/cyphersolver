@@ -6074,8 +6074,31 @@
    "source": "Internet Archive printed-sources sweep (non-English)",
    "prior_art": "open (checked 28 Oct 2026: known.py)",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Calendar line only (BRAH 98: 'En aleman y en parte indescifrable', HHStA Span. Varia Fasz. 39): nothing shows ciphertext rather than a bad hand. No HHStA scan route from the cloud on 11 Nov; not retried beyond the note. Needs the Vienna leaf or a finding aid saying 'Chiffre'."
+   "scored": "vetted",
+   "vetting_note": "Calendar line only (BRAH 98: 'En aleman y en parte indescifrable', HHStA Span. Varia Fasz. 39): nothing shows ciphertext rather than a bad hand. No HHStA scan route from the cloud on 11 Nov; not retried beyond the note. Needs the Vienna leaf or a finding aid saying 'Chiffre'.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "Boletin de la Real Academia de la Historia vol. 98, \"Documentos de la Casa de Austria en Espana\", Internet Archive boletindelareala98madr (OCR read 16 Nov 2026), entry Paris 6 Sep 1699 and the other uses of \"cifra\" and \"indescifrable\" in the same volume.",
+     "extent": "One calendared letter; the calendar gives a German summary of its content (visits to the Dukes of Anjou and Berry, Villars).",
+     "cipher": "No cipher is described: \"en parte indescifrable\" is the calendarist's phrase for a hand he could not read, used elsewhere in the volume of a Portuguese note."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Sinzendorf\", \"Harrach\", \"Span. Varia\": only catalogue 511 (Harrach/Trautson letters, other units) and this lead; no DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Sinzendorf\", \"Harrach\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Sinzendorf\", \"Harrach\": no entry for this item.",
+     "edition": "BRAH 98 calendars the letter with a content summary; the summary itself shows the calendarist read most of it.",
+     "literature": "Not searched further."
+    },
+    "key_check": "None needed.",
+    "duplicates": "Catalogue 511 covers other Harrach units of Spanien Varia; Fasz. 39 for 1699 is listed there only as 39-1 in catalogue 512 (Grana/Mansfeld). No duplicate of this letter.",
+    "closed": "Not cipher: the calendar's \"en parte indescifrable\" means partly illegible, as its own usage elsewhere shows, and no cipher is described.",
+    "verdict": "not_cipher"
+   },
+   "access": "archive",
+   "access_note": "HHStA Wien, Spanien Varia Fasz. 39; not digitised."
   },
   {
    "id": 1135,
@@ -6739,8 +6762,31 @@
    "source": "TNA Discovery sweep",
    "prior_art": "unknown (checked 28 Oct 2026: web search found nothing on cipher in 38M49)",
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "File-level only (Hampshire Archives 38M49/1/10/1-51 'some in cipher'); no item list online and no scan, not retried on 11 Nov. Needs the Hampshire item list or a visit to name one cipher letter."
+   "scored": "vetted",
+   "vetting_note": "File-level only (Hampshire Archives 38M49/1/10/1-51 'some in cipher'); no item list online and no scan, not retried on 11 Nov. Needs the Hampshire item list or a visit to name one cipher letter.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "TNA Discovery API details for 95a07122-3f60-46b7-8255-9f617e6db81a (38M49/1/10/1-51) and 8959aca6-3352-4d43-b0f3-79dc376e85b0 (38M49/1/141/4), fetched 16 Nov 2026 (raw/tna_*.json); The Correspondence of the Right Honourable William Wickham from the year 1794 (London 1870), vol. 1, Internet Archive correspondencew00wickgoog, OCR searched for cypher and Drake.",
+     "extent": "51 items of Drake letters 1795-97 with enclosures, some in cipher; the cipher share is not itemised. 38M49/1/3/1-9 was not re-read.",
+     "cipher": "Archive wording \"With enclosures, some in cipher\"; the edition prints Drake's Venice letter of 3 Aug 1796 marked \"(Cypher.)\" in clear text, and Wickham's own cipher drafts to Grenville marked \"(Cypher.)\" or \"To be decyphered by Mr. Canning\"."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Wickham\" and \"38M49\": only this lead and catalogue 1156 (Drake papers in Devon, a different deposit); no DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Wickham\", \"38M49\", \"Drake\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Wickham\", \"Drake\": no entry for this item.",
+     "edition": "The Correspondence of William Wickham (1870), vol. 1: about 20 Drake mentions, Drake's 3 Aug 1796 cipher letter printed in clear; vol. 2 (correspondencew01wickgoog) has Wickham deciphering a 1799 Pichegru letter. Not every Drake enclosure was matched.",
+     "literature": "Catalogue 1156 records that Drake's cipher letters in Devon have no printed decipherment; not this deposit."
+    },
+    "key_check": "38M49/1/141/4 \"Plan of a cypher\" (c1798) is a key in the same papers; recorded, not seen.",
+    "duplicates": "Catalogue 1156 is the Drake papers at Devon (1700m), the other side of a related correspondence, not the same documents.",
+    "closed": "Partly read: Drake's ciphered letters to Wickham are printed in clear in the 1870 Correspondence from these papers; the remaining cipher enclosures are not itemised and a key is filed in the same deposit.",
+    "verdict": "partly_read"
+   },
+   "access": "archive",
+   "access_note": "Hampshire Archives (Winchester), not digitised; no item list online. Wickham Correspondence (1870) on the Internet Archive."
   },
   {
    "id": 1158,
@@ -21400,43 +21446,6 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "AIS 4327122 opened in Chrome: 'Korrespondenzen an den Grafen Orsini-Rosenberg', 1757-1764, comment 'teilweise verschluesselt', no extent, no Reproduktion line, and getimage returns only the 100x50 placeholder, so no leaf exists online. A bundle with no identifiable cipher document. Edition identified: Juretschke and Kleinmann, Berichte der diplomatischen Vertreter des Wiener Hofes aus Spanien (Madrid 1970s; Rosenberg-Orsini is k.k. envoy in Madrid 1756-63 per its index), Google Books snippet view only, and it prints reports from Rosenberg while this unit is letters to him. Needs the HHStA unit and the Juretschke volume for 1757-63."
-  },
-  {
-   "id": 1725,
-   "counted": true,
-   "year": 1672,
-   "date": "1672",
-   "title": "Einsichtsakten der kaiserlichen Botschaft in Madrid: partly enciphered (HHStA Spanien Varia)",
-   "correspondents": "unknown (see title)",
-   "place": "Berlin, Wien u.a.",
-   "language": "German; Spanish",
-   "region": "Spain",
-   "period": "1651-1700",
-   "shelfmark": "HHStA StAbt Spanien Varia 28-3 (AIS ID 4172844)",
-   "folio_note": "fol 1-146; scans not flagged",
-   "cls": "C",
-   "status": "AIS: 'Einsichtsakten der kaiserlichen Botschaft in Madrid'; Bemerkungen: 'teilweise verschlüsselt'. No decipherment is mentioned in the record.",
-   "why": "Imperial correspondence in the Spanish series of the Staatenabteilung; the cataloguer marks it partly enciphered.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the AIS description (Bemerkungen / Titel) during the Nov 2026 HHStA AIS sweep (research/sweep_2026-11_hhsta_ais/); images not viewed",
-   "verify": "Order or open the volume; locate the ciphered passages, measure them, and look for a decipherment or key in the same series.",
-   "links": [
-    {
-     "label": "AIS 28-3",
-     "href": "https://www.archivinformationssystem.at/detail.aspx?ID=4172844"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "HHStA AIS sweep (Nov 2026)",
-   "prior_art": "open as far as checked (2 Nov 2026: known.py on the shelfmark and AIS id, the catalogue, leads and sweep files; AIS gives no decipherment; Tomokiyo, Lasry, the editions not searched)",
-   "needs_archive_scan": "yes",
-   "access_note": "AIS record only; whether a scan exists is not flagged on this record",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "AIS 4172844 opened in Chrome: 'Einsichtsakten der kaiserlichen Botschaft in Madrid', 1672, Berlin, Wien u.a., fol 1-146, comment 'teilweise verschluesselt', no Reproduktion line; getimage returns only the 100x50 placeholder. A 146-folio bundle that does not say which pieces are enciphered, so no cipher document is identifiable. A Google Books search on Poetting, Madrid 1672 and chiffriert found no edition. Needs the HHStA unit itself."
   },
   {
    "id": 1726,
@@ -43146,11 +43155,32 @@
    "source": "GStA PK database / German portals sweep",
    "prior_art": "not vetted: DECODE search \"Lusi\" gives only unrelated BL and KHA rows (11 Nov 2026)",
    "needs_archive_scan": "yes",
-   "access_note": "Not digitised. Description in the GStA PK database (archive.spk-berlin.de/actaproweb, search the Signatur); reading room in Berlin-Dahlem or a paid scan order.",
+   "access_note": "Not digitised; GStA PK reading room or scan order (FA Lusi Nr. 3, Rep. 96 Nr. 164 G, Rep. 11 Nr. 10691).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Full GStA record read 11 Nov: the file is Lusi's reports in Lombard's drafts (clear); the only cipher piece is 'Friedrich Wilhelm II. an Spiridion Graf von Lusi, Berlin, 1. Oktober 1790 (chiffriert)'. One received royal letter in the recipient's own papers: whether his decipherment is written on it is not stated, and the draft should be in the GStA Turkey files (Rep. 11). DECODE 'Lusi' has only unrelated rows; a web search found no edition of the 1790 mission. Needs a scan of that one leaf."
+   "scored": "vetted",
+   "vetting_note": "Full GStA record read 11 Nov: the file is Lusi's reports in Lombard's drafts (clear); the only cipher piece is 'Friedrich Wilhelm II. an Spiridion Graf von Lusi, Berlin, 1. Oktober 1790 (chiffriert)'. One received royal letter in the recipient's own papers: whether his decipherment is written on it is not stated, and the draft should be in the GStA Turkey files (Rep. 11). DECODE 'Lusi' has only unrelated rows; a web search found no edition of the 1790 mission. Needs a scan of that one leaf.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record fetched by plain HTTP on 16 Nov 2026 through https://archive.spk-berlin.de/actaproweb/document/Vz_<uuid> (actadoc.py in this folder; the archive.xhtml permalink returns only the page frame) or through a scripted POST of the search form (actapro.py): VI. HA FA Lusi Nr. 3 (Vz_cb052f2b-f43c-437c-ab3a-e49265e78b3b), I. HA Rep. 11 Akten Nr. 10691 (Vz_c1b02d23-bd30-48b5-8b72-525a434b65b1), I. HA Rep. 96 Nr. 164 G (Vz_391a833f-0510-4a27-80d0-b687ea59fea4); text in raw_actapro5.txt.",
+     "extent": "One ciphered royal letter of 1 Oct 1790 inside a file of Lusi's report drafts in Lombard's hand (clear), Aug-Nov 1790.",
+     "cipher": "Archive wording: \"enth. auch: Friedrich Wilhelm II. an Spiridion Graf von Lusi, Berlin, 1. Oktober 1790 (chiffriert)\". The government series Rep. 11 Nr. 10691 is titled \"Abschriften und Dechiffrierungen\" of the same 1790 correspondence."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Lusi\", \"Spiridion\", \"Lombard\": only this lead, its sweep files and unrelated catalogue words; no DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Lusi\", \"Spiridion\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Spiridion\"; \"Lusi\" gives only substring hits in unrelated French words: no entry for this item.",
+     "edition": "No edition of the 1790 Lusi mission found (11 Nov web search, recorded in the lead); the plaintext side is the archival copy series named above.",
+     "literature": "Not searched further."
+    },
+    "key_check": "No Prussian 1790 cipher held in this repo; not needed if the minute in Rep. 96 Nr. 164 G is confirmed.",
+    "duplicates": "No other entry; the 14 Nov GStA deep sweep already linked Rep. 11 Nr. 10691 as the plaintext side of FA Lusi Nr. 3.",
+    "closed": "Read on the sending side: the King's ciphered letter of 1 Oct 1790 belongs to a correspondence whose clear minutes and decipherments are filed in Berlin (Rep. 96 Nr. 164 G, Rep. 11 Nr. 10691); not confirmed leaf by leaf.",
+    "verdict": "read"
+   }
   },
   {
    "id": 2502,
@@ -43220,11 +43250,32 @@
    "source": "GStA PK database / German portals sweep",
    "prior_art": "not vetted: DECODE search \"Scharnhorst\" gives two postcards; Kunisch edition not opened",
    "needs_archive_scan": "yes",
-   "access_note": "Not digitised. Description in the GStA PK database (archive.spk-berlin.de/actaproweb, search the Signatur); reading room in Berlin-Dahlem or a paid scan order.",
+   "access_note": "Not digitised; GStA PK reading room or scan order. Kunisch et al. (Boehlau 2002-) is in print, not online.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Full GStA record read 11 Nov: 'Scharnhorst, 23 Schreiben an Boyen, vier an Scharnhorst (Konzepte), sieben chiffrierte Schreiben, vier masch. Transkriptionen' (1810-1813): four typed transcriptions lie in the file, and what they transcribe is not said. Scharnhorst, Private und dienstliche Schriften (ed. Kunisch), vols. 6-8, which should print the letters to Boyen, is not online and was not opened. DECODE 'Scharnhorst': two unrelated postcards. Open Kunisch first."
+   "scored": "vetted",
+   "vetting_note": "Full GStA record read 11 Nov: 'Scharnhorst, 23 Schreiben an Boyen, vier an Scharnhorst (Konzepte), sieben chiffrierte Schreiben, vier masch. Transkriptionen' (1810-1813): four typed transcriptions lie in the file, and what they transcribe is not said. Scharnhorst, Private und dienstliche Schriften (ed. Kunisch), vols. 6-8, which should print the letters to Boyen, is not online and was not opened. DECODE 'Scharnhorst': two unrelated postcards. Open Kunisch first.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record fetched by plain HTTP on 16 Nov 2026 through https://archive.spk-berlin.de/actaproweb/document/Vz_<uuid> (actadoc.py in this folder; the archive.xhtml permalink returns only the page frame) or through a scripted POST of the search form (actapro.py): VI. HA Nl Boyen d. Ae. Nr. 648 (Vz_2d6c0141-2f56-427a-8c9d-c95102a0eef1); raw_actapro5.txt.",
+     "extent": "23 letters of Scharnhorst to Boyen, four drafts to Scharnhorst, seven ciphered letters and four typed transcriptions, 1810-1813; leaf count not given.",
+     "cipher": "The archive names \"sieben chiffrierte Schreiben\" and, in the same unit, \"vier masch. Transkriptionen\"; the transcriptions may be of the ciphered letters."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Scharnhorst\" and \"Boyen\": only this lead, the sweep files and the unrelated SMS Scharnhorst entry (catalogue 1411); no DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Scharnhorst\", \"Boyen\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Scharnhorst\", \"Boyen\": no entry for this item.",
+     "edition": "Scharnhorst, Private und dienstliche Schriften, ed. Kunisch, Stieve and Sikora (Boehlau, 2002-): vol. 6 covers the crisis after 1809, the later volumes 1810-13; not online, not opened. Linnebach, Scharnhorsts Briefe I (1914, IA bub_gb_e8wrAQAAIAAJ) was downloaded but its Fraktur OCR is unreadable (no hit even for Boyen).",
+     "literature": "Two web searches (Kunisch volume contents, Boyen and Chiffre) found no description of these ciphered letters."
+    },
+    "key_check": "No Scharnhorst-Boyen key held or found.",
+    "duplicates": "No other entry or lead on Nl Boyen Nr. 648.",
+    "closed": "Partly read: typed transcriptions are filed with the ciphered letters in the same unit; which letters they cover, and whether Kunisch prints the rest, is not checked.",
+    "verdict": "partly_read"
+   }
   },
   {
    "id": 2504,
@@ -43315,11 +43366,32 @@
    "source": "GStA PK database / German portals sweep",
    "prior_art": "not vetted separately: same series and literature as catalogue 557",
    "needs_archive_scan": "yes",
-   "access_note": "Not digitised. Description in the GStA PK database (archive.spk-berlin.de/actaproweb, search the Signatur); reading room in Berlin-Dahlem or a paid scan order.",
+   "access_note": "Not digitised; GStA PK reading room or scan order. Joachim vol. 3 is on the Internet Archive (diepolitikdeslet03joac).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Probably read, not confirmed. Full GStA regest of OBA 27275 read 11 Nov (Klingenbeck to the Grand Master, 9 Oct 1524: Caspar Nützel, the union to protect the Gospel, the Landgrave of Hesse's letter, the falconer Caspar's horses, '... König Christiern; das evangelische Wesen (teilweise Chiffern) ...', the rumour of the Grand Master's marriage, Margrave Johann Albrecht's letter from Rome). Joachim, Die Politik des letzten Hochmeisters III (archive.org diepolitikdeslet03joac), no. 197, p. 339, is the same letter, printed from the clear 'Reinkonzept' (A.S.C. 252): first half summarised, second half in full. The summary does not mention King Christiern, so the ciphered passage itself is not in print, but its plaintext should stand in that draft. Needs the OBA leaf beside the draft; if they match, close as read."
+   "scored": "vetted",
+   "vetting_note": "Probably read, not confirmed. Full GStA regest of OBA 27275 read 11 Nov (Klingenbeck to the Grand Master, 9 Oct 1524: Caspar Nützel, the union to protect the Gospel, the Landgrave of Hesse's letter, the falconer Caspar's horses, '... König Christiern; das evangelische Wesen (teilweise Chiffern) ...', the rumour of the Grand Master's marriage, Margrave Johann Albrecht's letter from Rome). Joachim, Die Politik des letzten Hochmeisters III (archive.org diepolitikdeslet03joac), no. 197, p. 339, is the same letter, printed from the clear 'Reinkonzept' (A.S.C. 252): first half summarised, second half in full. The summary does not mention King Christiern, so the ciphered passage itself is not in print, but its plaintext should stand in that draft. Needs the OBA leaf beside the draft; if they match, close as read.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "Joachim, Die Politik des letzten Hochmeisters in Preussen, vol. 3 (Leipzig 1895), Internet Archive diepolitikdeslet03joac, no. 197 (OCR read 16 Nov 2026, p. 339-340); the OBA regest as quoted in the lead from the 11 Nov GStA read.",
+     "extent": "One letter, partly in cipher; length of the ciphered passage not stated.",
+     "cipher": "GStA regest \"(teilweise Chiffern)\" on the topics Koenig Christiern and das evangelische Wesen, with no Aufloesung noted; Joachim prints the clear Reinkonzept, so the plaintext exists for the whole letter, but the Christiern passage is only in the manuscript draft."
+    },
+    "prior_art": {
+     "decode": "known.py on \"27275\" and \"Klingenbeck\": only leads 2505 and 2627 and the GStA sweep files; no DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Klingenbeck\", \"27275\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Klingenbeck\": no entry for this item.",
+     "edition": "Joachim vol. 3 no. 197 prints the letter from the clear Reinkonzept A.S.C. 252, first half in German summary, second half verbatim (Pope and cardinals luring the Grand Master); footnote \"Nicht bei Tschackert\".",
+     "literature": "Tschackert's Urkundenbuch zur Reformationsgeschichte Preussens does not print it (Joachim's note); no study of the cipher found."
+    },
+    "key_check": "Klingenbeck's cipher is not held; the chancery's Chiffrenbuch OBA 27584 is the nearest key; not tried.",
+    "duplicates": "Lead 2627 is Klingenbeck's 1525 letter (OBA 27533) with its Aufloesung, closed read; no other entry on OBA 27275.",
+    "closed": "Partly read: the letter is printed from its clear draft, the evangelical passage verbatim, while the King Christiern passage survives in clear only in the unprinted part of that draft.",
+    "verdict": "partly_read"
+   }
   },
   {
    "id": 2506,
@@ -46501,11 +46573,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the fonds, number and correspondents (catalogue, leads, targets, DECODE and HCPortal dumps) finds nothing on this shelfmark; the Archivportal-D sweeps of 26 Oct and 2 Nov did not list it; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked (the record page shows digital objects when there are any); scans must be ordered from GStA PK, Berlin-Dahlem, or the file consulted in the reading room",
+   "access_note": "Not digitised; GStA PK reading room or scan order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "OBA Nr. 22687 (1 Oct 1519) is 'Chiffren, mit Uebertragung' (a decipherment filed with it); Nr. 22442 and 23213 not read and the OBA letters may be printed in Joachim's Politik des letzten Hochmeisters (catalogue 553 cites it). Check that edition and the existing OBA rows (553-557) before an entry; no images online. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "OBA Nr. 22687 (1 Oct 1519) is 'Chiffren, mit Uebertragung' (a decipherment filed with it); Nr. 22442 and 23213 not read and the OBA letters may be printed in Joachim's Politik des letzten Hochmeisters (catalogue 553 cites it). Check that edition and the existing OBA rows (553-557) before an entry; no images online. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record fetched by plain HTTP on 16 Nov 2026 through https://archive.spk-berlin.de/actaproweb/document/Vz_<uuid> (actadoc.py in this folder; the archive.xhtml permalink returns only the page frame) or through a scripted POST of the search form (actapro.py): search hits giving the Kopfregest of XX. HA OBA Nr. 22442 (Vz_ce2d626f-2e0e-43e6-9857-89106bc9b346), Nr. 22687 (Vz_c7803fae-25a3-42ef-8f78-e8d58fa2ff82) and Nr. 23213 (Vz_5dd3a8f0-d9e9-420e-a4a1-8b4aa309edc1); raw_actapro2.txt and raw_actapro3.txt.",
+     "extent": "Three single units of 1519-1520; Nr. 22687 adds a slip in cipher (news of Bishop Job).",
+     "cipher": "Verbatim: Nr. 22687 \"Chiffren, mit Uebertragung. Auch Entwurf u. Abschrift. 1 Zettel (Chiffren): Nachrichten d. Bischofs Job\"; Nr. 22442 \"Polen. Zeitungen aus Deutschland. Muenzen v. Geld. Georg Anger. Benutzung v. Chiffren\"; Nr. 23213 \"Markgraf Kasimir an Hochmeister: Bitte um ein Chiffern-Alphabet z. Entzifferung eines von ihm ...\"."
+    },
+    "prior_art": {
+     "decode": "known.py on 22442, 22687, 23213, Kasimir and Schoenberg: catalogue 553 already lists 22687 among the units \"with contemporary or modern Aufloesung\"; otherwise only leads 2595/2625/2626 and the GStA sweep files. No DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Kasimir\", \"Schoenberg\", the OBA numbers: no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Kasimir\", \"Schoenberg\": no entry for this item.",
+     "edition": "Joachim, Die Politik des letzten Hochmeisters vol. 2 (IA OCR, local copy) searched for Chiffr/Ziffer: only no. 36, cipher instructions of 1519 from Nikolaus von Schoenberg; 22687 was not found printed, which does not matter as its Uebertragung is filed with it.",
+     "literature": "As for lead 2625: no study of the Schoenberg-Albrecht cipher found."
+    },
+    "key_check": "The chancery's Chiffrenbuch OBA 27584 (key_leads.json) is the nearest key; Nr. 23213 is a request for an alphabet, not a key.",
+    "duplicates": "Catalogue 553 names 22687 in its side list of units with an Aufloesung; lead 2625 holds the other Schoenberg-Albrecht pieces with decipherments.",
+    "closed": "Read: the one ciphertext unit (OBA 22687) is filed with its Uebertragung, and the other two units are not ciphertext as described.",
+    "verdict": "read"
+   }
   },
   {
    "id": 2596,
@@ -46935,11 +47028,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
+   "access_note": "Not digitised; GStA PK reading room or scan order. The edition is on the Internet Archive.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Nl Wedel Nr. 3: record says '40 Kabinettsordres, fünf Abschriften (Dechiffrierungen) und zwei Einzelschreiben', 98 leaves; it does not say which orders are ciphered, and the 1759 orders to Wedel are in the Politische Correspondenz vol. 18 (not opened). Check the PC before an entry. (research/vetting_2026-11-14_gsta_deep/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Nl Wedel Nr. 3: record says '40 Kabinettsordres, fünf Abschriften (Dechiffrierungen) und zwei Einzelschreiben', 98 leaves; it does not say which orders are ciphered, and the 1759 orders to Wedel are in the Politische Correspondenz vol. 18 (not opened). Check the PC before an entry. (research/vetting_2026-11-14_gsta_deep/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "GStA PK ACTApro record fetched by plain HTTP on 16 Nov 2026 through https://archive.spk-berlin.de/actaproweb/document/Vz_<uuid> (actadoc.py in this folder; the archive.xhtml permalink returns only the page frame) or through a scripted POST of the search form (actapro.py): VI. HA Nl Wedel, K. H. v., Nr. 3 (Vz_46a81587-b29c-44fc-8b62-7d1f51d84cbd): \"40 Kabinettsordres, fuenf Abschriften (Dechiffrierungen) und zwei Einzelschreiben\", 98 Blatt. Printed texts read in Politische Correspondenz vol. 18, Internet Archive politischecorres181freduoft and politischecorres182freduoft (OCR searched for Wedel and dechiffr), e.g. no. 11314 on p. 469-470.",
+     "extent": "40 cabinet orders of 1759 with five deciphered copies, 98 leaves; how many orders were sent in cipher is not stated in the record.",
+     "cipher": "The record itself files five decipherments with the orders, and the edition prints the orders from the Wedel family archive, one of them from the deciphered copy, so the ciphered orders are read."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Wedel\", \"Nl Wedel\" and \"Kabinettsordre\": only this lead and its sweep files; the catalogue Wedel hits are other people. No DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Wedel\", \"Kabinettsordre\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Wedel\": no entry for this item.",
+     "edition": "Politische Correspondenz Friedrichs des Grossen, vol. 18 (Berlin 1890-91), both halves: about 28 orders to Wedel are printed with the source note \"Nach der Ausfertigung im Wedell'schen Familienarchiv zu Ludwigsdorf in Schlesien\"; no. 11314 to Generallieutenant von Wedell, Beeskow 3 Aug 1759, is printed \"Nach einer Abschrift der dechiffrirten Ausfertigung im Wedell'schen Familienarchiv\".",
+     "literature": "Not searched further: the edition settles the question."
+    },
+    "key_check": "Frederick II's field cipher with his generals is not held in this repo; not needed, since the decipherments are filed and printed.",
+    "duplicates": "No other entry or lead on Nl Wedel Nr. 3; catalogue 590 (Bevern/Schwerin) is a different recipient.",
+    "closed": "Read: the five Dechiffrierungen are filed with the orders and the Politische Correspondenz prints the 1759 orders to Wedel from these originals, one from the deciphered copy.",
+    "verdict": "read"
+   }
   },
   {
    "id": 2603,
@@ -47215,11 +47329,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
+   "access_note": "Not digitised; GStA PK reading room or scan order. A scan of Nr. 8 would settle the one doubtful leaf.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Nl Schlitz v. Goertz: four letters from four writers (Blumenthal 1786, Wilhelmine 1786, Thulemeier 1787, Goertz 1790); the records are summaries of mostly plain French letters that mention ciphers, and Nr. 8 says 'Der Rest ist nicht dechiffrierbar'. No single cipher; one lead per letter and key would be needed, and no ciphertext leaf is described. Left unvetted. (research/vetting_2026-11-14_gsta_deep/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Nl Schlitz v. Goertz: four letters from four writers (Blumenthal 1786, Wilhelmine 1786, Thulemeier 1787, Goertz 1790); the records are summaries of mostly plain French letters that mention ciphers, and Nr. 8 says 'Der Rest ist nicht dechiffrierbar'. No single cipher; one lead per letter and key would be needed, and no ciphertext leaf is described. Left unvetted. (research/vetting_2026-11-14_gsta_deep/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record fetched by plain HTTP on 16 Nov 2026 through https://archive.spk-berlin.de/actaproweb/document/Vz_<uuid> (actadoc.py in this folder; the archive.xhtml permalink returns only the page frame) or through a scripted POST of the search form (actapro.py): VI. HA Nl Schlitz v. Goertz Nr. 8 (Vz_dff887d8-ca15-4d71-bbe0-fe306b1f56fd), Nr. 48 a (Vz_713ccf60-183c-4e6a-86de-868acdd45919), Nr. 52 (Vz_8efe6403-447e-430c-8c7c-19fd91ff5168), Nr. 54 (Vz_4b488b32-f62e-424a-befe-d4449f3392d2); full summaries with long translated quotations in raw_actapro1.txt.",
+     "extent": "Four single letters of 1-2 leaves each (Nr. 8: 1 leaf, German; 48 a: 2 leaves, French; 52: 1 leaf, French; 54: 2 leaves, French).",
+     "cipher": "Nr. 48 a, 52 and 54 are summarised and translated at length from clear French text; their cipher words refer to other documents. Nr. 8 (Blumenthal, Berlin, July 1786) is summarised to mid-letter and ends \"(Der Rest ist nicht dechiffrierbar.)\": no cipher is described."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Goertz\", \"Thulemeier\", \"Blumenthal\", \"Wilhelmine\": hits only in unrelated catalogue entries (Goertz the Swedish minister, the Schoening/Thulemeier target); no DECODE record of these letters.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Goertz\", \"Thulemeier\", \"Blumenthal\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Goertz\", \"Thulemeier\": no entry for this item.",
+     "edition": "The archive summaries themselves translate the letters; no printed edition was needed to establish that three are clear.",
+     "literature": "Not searched further for these four letters."
+    },
+    "key_check": "None needed; no ciphertext is described.",
+    "duplicates": "No other entry or lead on Nl Schlitz v. Goertz Nr. 8, 48 a, 52 or 54.",
+    "closed": "Not cipher: three of the four letters are clear letters that only mention ciphers, and the fourth (Nr. 8) carries an archivist's note that the rest could not be read, with no cipher described.",
+    "verdict": "not_cipher"
+   }
   },
   {
    "id": 2609,
@@ -47935,11 +48070,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
+   "access_note": "Not digitised; GStA PK reading room or scan order.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Nl Miltitz II Nr. 26: 'Lord Strangford an von Miltitz (Briefe)' with '2 Schlüssel zu Chiffern'; no ciphered letter is named. Key lead. (research/vetting_2026-11-14_gsta_deep/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Nl Miltitz II Nr. 26: 'Lord Strangford an von Miltitz (Briefe)' with '2 Schlüssel zu Chiffern'; no ciphered letter is named. Key lead. (research/vetting_2026-11-14_gsta_deep/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record fetched by plain HTTP on 16 Nov 2026 through https://archive.spk-berlin.de/actaproweb/document/Vz_<uuid> (actadoc.py in this folder; the archive.xhtml permalink returns only the page frame) or through a scripted POST of the search form (actapro.py): VI. HA Nl Miltitz, A. v., II, Nr. 26 (Vz_23a83ffd-a0af-4302-ae60-4b3948f168ce); raw_actapro1.txt.",
+     "extent": "Letters of Strangford to Miltitz 1825-1828 with two cipher keys; count of letters and leaves not given.",
+     "cipher": "Archive wording, verbatim: \"Enthaelt auch: - 2 Schluessel zu Chiffern.\" No letter is described as ciphered."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Strangford\" and \"Miltitz\": only this lead and its sweep files (the catalogue Miltitz hits are the 16th-century Heinrich von Miltitz); no DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Strangford\", \"Miltitz\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Strangford\", \"Miltitz\": no entry for this item.",
+     "edition": "Not searched: no ciphertext is described, so there is nothing to find a reading of.",
+     "literature": "Not searched for the same reason."
+    },
+    "key_check": "The two keys are the content of the lead; they belong with key material, not with the catalogue of ciphertexts.",
+    "duplicates": "No other entry or lead on Nl Miltitz II Nr. 26.",
+    "closed": "Key lookup: the unit holds two cipher keys with Strangford's letters, and no ciphered letter is described.",
+    "verdict": "key_lookup"
+   }
   },
   {
    "id": 2623,
@@ -48580,13 +48736,34 @@
    "prior_art": "open as far as checked (14 Nov 2026): the shelfmark, fonds series and correspondent were searched in catalogue.json, leads.json, every candidates.json / key_leads.json and the targets (known.py-style grep) and found nowhere; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only on Archivportal-D; no images found on the item page of the portal; order from the archive or use the reading room (digitisation not checked on the archive's own site)",
+   "access_note": "Archivportal-D record only (proof-of-work page to curl); digitisation on Arcinsys Hessen not found; order from HStA Marburg.",
    "language": "German",
    "region": "Germany",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Hessian Marburg 3 Nr. 712: the finding aid says only 'Dabei: Chiffrenalphabet' (a key filed with the envoys' letters); it does not say the letters are ciphered. Archivportal-D shows no image. Prior art: web search and known.py run (no result), but no ciphertext is named, so it is left until Marburg is asked or an LAGIS image is found. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Hessian Marburg 3 Nr. 712: the finding aid says only 'Dabei: Chiffrenalphabet' (a key filed with the envoys' letters); it does not say the letters are ciphered. Archivportal-D shows no image. Prior art: web search and known.py run (no result), but no ciphertext is named, so it is left until Marburg is asked or an LAGIS image is found. (research/vetting_2026-11-14_german_state_dbs/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Finding-aid text as quoted in the lead (Archivportal-D item FOL5BKWF3YDLCF57K2LAKETHJPM2NOC2, read in the 14 Nov sweep); Archivportal-D now serves a proof-of-work page and was not re-read.",
+     "extent": "Letters of Guenterode and Keudel (and Rehlinger, and to Duke Moritz), Jul-Aug 1544, with one cipher alphabet; leaf count not known here.",
+     "cipher": "Archive wording \"Dabei: Chiffrenalphabet\". Whether any letter uses it is not said."
+    },
+    "prior_art": {
+     "decode": "known.py on \"Guenterode\", \"Keudel\", \"Nr. 712\", \"Politisches Archiv\": only this lead and its sweep file; other Philip of Hesse keys in the catalogue are different numbers. No DECODE record.",
+     "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for \"Guenterode\", \"Keudel\", \"Philipp\": no entry for this item (the only substring hits are unrelated words).",
+     "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for \"Guenterode\", \"Keudel\": no entry for this item.",
+     "edition": "Not searched in print beyond the web: a search for Chiffrenalphabet, Marburg Politisches Archiv, Guenterode, Keudel 1544 returned two other Marburg \"Chiffernschluessel\" records of Philip's archive (one dated 1536) and nothing on Nr. 712.",
+     "literature": "No study of the 1544 envoys' cipher found."
+    },
+    "key_check": "The cipher alphabet in Nr. 712 is itself the item; Marburg 3 also holds other Philip-era Chiffernschluessel records (web search), not compared.",
+    "duplicates": "No other entry or lead on Marburg 3 Nr. 712.",
+    "closed": "Key lookup: the finding aid describes a cipher alphabet filed with the letters and no ciphertext.",
+    "verdict": "key_lookup"
+   }
   },
   {
    "id": 2656,
