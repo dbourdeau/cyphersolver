@@ -83744,26 +83744,85 @@
    "repository": "nl-04-0041"
   },
   {
+   "id": 2726,
+   "counted": true,
+   "year": 1612,
+   "date": "Nov 1611 - Nov 1613",
+   "title": "Marie de Medicis, Villeroy and Puysieulx to Savary de Breves (Rome), 11 letters of Nov 1611 - Nov 1613 \"avec chiffre\" without a decipherment noted",
+   "correspondents": "Henri IV; Marie de Medicis; Nicolas de Neufville de Villeroy; Pierre Brulart de Puysieulx -> Francois Savary de Breves",
+   "place": "Paris / Fontainebleau",
+   "language": "French",
+   "region": "France",
+   "period": "1611-1650",
+   "shelfmark": "BnF Manuscrits, fr. 3654 (Anc. 9021 (2)), nos. 6, 8, 11-19 (ff. 10, 14, 20, 22, 26, 28, 32, 34, 37, 40, 43)",
+   "folio_note": "BnF Archives et manuscrits notice cc501068: 11 letters \"avec chiffre\" (nos. 6, 8, 11 Marie de Medicis; 12, 14 Villeroy; 13, 15 Puysieulx; 16-19 Marie de Medicis); nos. 21-23 carry a decipherment and are left out. Lead rescoped 16 Nov 2026: the earlier shelfmarks fr. 3652 and fr. 3339 held no cipher, and the fr. 3541 pieces are catalogue 23. Folios corrected 16 Nov 2026 (audit): the notice page prints each folio before its item.",
+   "cls": "B",
+   "status": "Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed. Catalogue 25 (Marie de Medicis to Breves, 1610) and targets/breves1603 are the neighbouring items; the 1611-13 letters are not in either.",
+   "why": "Royal and secretary-of-state despatches to one ambassador across ten years; Breves nomenclators are already worked in this repo (breves1603, catalogue 25), so keys exist for the early ones.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
+   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "links": [
+    {
+     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
+     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "Omont BnF catalogue sweep",
+   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "needs_archive_scan": "yes",
+   "access_note": "fr. 3654 notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc501068 has no Gallica link (not digitised); fr. 3541 (cc49988x) not digitised either. Reading room or reproduction order.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online (no ark found for fr. 3652/3339). Shelfmarks unconfirmed: other rows of this sweep proved OCR numbers wrong. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc501068 (Francais 3654, Anc. 9021(2)) read 16 Nov 2026; the Omont OCR (archive.org p1cataloguegnr02bibluoft, heading \"3654\" after \"(Anc. 10344.)\") gives the same list. Also read: cc50104s (fr. 3652, Perez letters, no cipher) and cc49802 (fr. 3339, copies on the Etats de Blois, no cipher), which shows the lead's shelfmarks are wrong.",
+     "extent": "11 letters \"avec chiffre\", Nov 1611 - Nov 1613: nos. 6 (f. 12), 8 (f. 16), 11 (f. 22) Marie de Medicis; 12 (f. 26) and 14 (f. 32) Villeroy; 13 (f. 28) and 15 (f. 34) Puysieulx; 16-19 (ff. 37-47) Marie de Medicis. Nos. 21-23 (Dec 1613) are \"avec chiffre et dechiffrement\" and are left out. Amount of cipher per letter not stated.",
+     "cipher": "BnF description: \"Lettre, avec chiffre, de MARIE [DE MEDICIS]... a monseigneur de Breves\" etc.; no decipherment noted for nos. 6-19, while the cataloguer notes one for nos. 21-23 in the same volume. No image seen, so a decipherment on the leaf cannot be excluded."
+    },
+    "prior_art": {
+     "decode": "known.py \"3654\", \"Anc. 9021\": no DECODE record or repo row for fr. 3654; DECODE holds fr. 3541 (R2230-2231, Henri IV 1603/1610), which is catalogue 23 / breves1610.",
+     "tomokiyo": "Tomokiyo, cryptiana unsolved.htm fetched 16 Nov 2026 and searched for the shelfmark, the correspondents and the related names: no hit on fr. 3654; his \"Marie de Medici's Cipher (1610)\" entry covers short cipher passages in Marie de Medicis letters to Breves, solved by Brice Dudout (Oct 2026) for fr. 3789; the 1611-13 letters are not named.",
+     "lasry": "Lasry, cryptiana GL.htm fetched 16 Nov 2026 and searched for the shelfmark and the correspondents: no hit on fr. 3654, Breves 1611-13 or Puysieulx to Breves.",
+     "edition": "No edition of the regent's 1611-13 letters to Breves found; Breves's own despatches are registered in fr. 3655-3656 (outgoing, not these letters); web search 16 Nov 2026 found no printed text.",
+     "literature": "Web search 16 Nov 2026 (\"Marie de Medicis\" Breves lettres 1612 1613 chiffre): nothing on these letters; Dubost's biography of Marie de Medicis cites the period only."
+    },
+    "key_check": "Key held: the Henri IV-Breves key (BnF fr. 3462 f. 103, \"Chiffre reforme pour Levant\", 1604) that Dudout used for Marie de Medicis to Breves 1610 (catalogue 25, breves1610); not tested on fr. 3654 (no image).",
+    "duplicates": "known.py: fr. 3541 pieces of this lead duplicate catalogue 23 (breves1603); fr. 3654 has no row anywhere; catalogue 25 (fr. 3789, 1610) is a different letter. fr. 3541 no. 12 (Puysieulx to Breves, \"avec chiffre, incomplete\", f. 39) is a possible sibling not in any ledger.",
+    "verdict": "open",
+    "key_held": "Henri IV-Breves key, BnF fr. 3462 f. 103 (targets/breves1603, breves1610); not tested on fr. 3654."
+   },
+   "repository": "bnf"
+  },
+  {
    "id": 2732,
    "counted": true,
    "year": 1530,
    "date": "c. 1525-1535",
-   "title": "Ciphered letters in the Montmorency papers, Bonnivet volume: \"lettres en chiffre\" ff. 67-202 (about 12 letters)",
+   "title": "Cipher letter in the Montmorency papers, Bonnivet volume (BnF fr. 3027, Gallica view 69)",
    "correspondents": "unknown (volume opens with letters of admiral Bonnivet to the marshal of Montmorency)",
    "place": "unknown",
    "language": "French",
    "region": "France",
    "period": "1497-1559",
    "shelfmark": "BnF Manuscrits, fr. 3027",
-   "folio_note": "fr. 3027: Omont nos. 34, 49, 70, 72 (his ff. 67, 100-105, 182, 186-202); cipher letter seen at view 69.",
+   "folio_note": "fr. 3027: one letter in cipher seen at Gallica view 69 (about 20 lines of symbols, addressed to the marshal de Montmorency). Rescoped 16 Nov 2026: the Omont items first cited here (nos. 34, 49, 70, 72, ff. 67-202, about 12 letters) belong to a later volume, not fr. 3027; the amount of cipher in fr. 3027 itself is not known.",
    "cls": "C",
-   "status": "Cipher letter seen on Gallica (openapi IIIF view 69 of fr. 3027). Omont's folio numbers use the older foliation: find the ciphers by item, not folio.",
-   "why": "Eight leaves of one run (ff. 186-202) in a single hand, sender unnamed by the cataloguer; likely a dispatch series from Italy or Switzerland.",
+   "status": "Cipher letter seen on Gallica (openapi IIIF view 69 of fr. 3027). Audit of 16 Nov 2026: the Omont folio and item numbers do not belong to this volume, so only the leaf actually seen is claimed.",
+   "why": "A cipher letter in a 16th-century hand with plain-text passages interleaved, no decipherment on the leaf.",
    "importance": 2,
    "solvability": 3,
    "difficulty": 3,
    "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
-   "verify": "Open the volume on Gallica at the folios named, check that the cipher leaf has no contemporary decipherment on it or next to it; compare Tomokiyo and DECODE for the same folios.",
+   "verify": "Page through the rest of fr. 3027 on Gallica for further cipher leaves; check that none has a decipherment; compare Tomokiyo and DECODE for the same leaf.",
    "links": [
     {
      "label": "Gallica, fr. 3027",
@@ -83792,7 +83851,7 @@
     "seen": {
      "kind": "scan",
      "where": "openapi.bnf.fr IIIF images of Gallica ark btv1b9060066q (BnF fr. 3027, 123 views; the Gallica description opens with letters of admiral Bonnivet to the marshal de Montmorency, which confirms the shelfmark), 14 Nov 2026",
-     "extent": "One letter looked at: view 69 (Omont's no. 34, 'f. 67'; Omont's folio numbers are an older foliation and do not match the modern stamp, see the 2996 note) is a letter written in cipher signs (about 20 lines of symbols run together with a few plain words), addressed on a following view 'A monsr le mareschal de Montmorency'. The other places Omont names (nos. 49, 70, 72; ff. 100-202) were not opened.",
+     "extent": "One letter looked at: view 69, a letter written in cipher signs (about 20 lines of symbols run together with a few plain words), addressed on a following view A monsr le mareschal de Montmorency. The rest of the volume was not paged; the Omont items earlier cited (nos. 34, 49, 70, 72; ff. 67-202) were shown by the 16 Nov 2026 audit to belong to another volume.",
      "cipher": "Symbol cipher in a 16th-century cursive hand, the plain-text passages interleaved; no interlinear or marginal decipherment on the leaf and no clear copy on the facing view."
     },
     "prior_art": {
@@ -88068,6 +88127,390 @@
     "verdict": "open"
    },
    "repository": "bnf"
+  },
+  {
+   "id": 2922,
+   "counted": true,
+   "year": 1912,
+   "date": "14 October [1912?] (received stamp '14 OCT 12'; preamble '14/10' with filing hour 18)",
+   "title": "Four-figure code telegram from 'Fouad' in Paris to the Khedive Abbas Hilmi II at the Hotel Imperial, Vienna, 143 groups on four sheets",
+   "correspondents": "'Fouad' (unidentified) to Abbas Hilmi II, Khedive of Egypt",
+   "place": "Paris to Vienna",
+   "language": "unknown (code; clear close 'HOMMAGES DEVOUES' is French)",
+   "region": "England",
+   "period": "1901-1950",
+   "shelfmark": "Durham University Library, Abbas Hilmi II Papers, HIL/57/77-80 (Crowned Heads)",
+   "folio_note": "HIL/57/80 sheet I (header), 79 sheet II, 78 sheet III, 77 sheet IV; IIIF manifest frames 50, 49, 48, 47. Telegraph no. 27597, 153 words, received form D.S. Nr. 759 (1/1910), clerk stamp 'Teufelberger'.",
+   "cls": "A",
+   "status": "16 Nov 2026: groups read once from IIIF regions (~1,200 px), uncollated (research/sweep_2026-11-15_wave18_durham2/raw/hil57_77-80_groups.txt). Whole of HIL/57 (73 frames) screened: no clear copy or decode. Direct lookup in the Khedivial Cabinet code HIL/155 gives no text (0560 Arrive, 3063 S'etre entendu, 1316 Cessionnaire). HIL/150, 152, 154 not tried; no other file searched for a clear copy.",
+   "why": "A complete 143-group four-figure code telegram to the Khedive, with several code books from the same papers digitised alongside (HIL/150-155), so a key or the book may be in the collection.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Repeats (3063 x5, 0560 x5, 3645 x4) suggest a code, possibly enciphered; candidate books in the same collection: HIL/155 with an additive or shift, HIL/150 (Ottoman code no. 75), HIL/152/154 (Arabic numbered codes). Sender and year need confirming.",
+   "verify": "Collate the 143 groups at full resolution; read the stamp year; test HIL/155 with additives/offsets and the numbered Arabic and Ottoman codes HIL/152, 154, 150; identify 'Fouad' (Prince Ahmad Fuad? Kerim Fouad of HIL/51/122?); look for a clear copy in other HIL files of 1912 (e.g. HIL/21, 23-27, 67).",
+   "links": [
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/t2m3f462569b.html",
+     "label": "Durham viewer, HIL/57/1-117"
+    },
+    {
+     "href": "https://iiif.durham.ac.uk/manifests/trifle/32150/t2/m3/f4/t2m3f462569b/manifest",
+     "label": "IIIF manifest HIL/57"
+    },
+    {
+     "href": "https://n2t.durham.ac.uk/ark:/32150/s18049g504c.xml",
+     "label": "Abbas Hilmi II papers finding aid"
+    }
+   ],
+   "seen": "image",
+   "source": "research/sweep_2026-11-15_wave18_durham2",
+   "ark": "",
+   "needs_archive_scan": "no",
+   "access": "online",
+   "scored": "vetted",
+   "access_note": "Free IIIF images at iiif.durham.ac.uk (Abbas Hilmi II papers HIL/57, frames of 77-80, about 1,200 px).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Durham IIIF, Abbas Hilmi II Papers HIL/57/77-80 (Crowned Heads), seen by the sweep agent as images of about 1,200 px; all groups transcribed in research/sweep_2026-11-15_wave18_durham2/raw/hil57_77-80_groups.txt",
+     "extent": "143 four-figure groups on four sheets of an Austrian receiving form, from Paris to the Khedive at the Hotel Imperial, Vienna, telegraph number 27597, signed in clear Hommages dévoués = Fouad; received stamp 14 Oct 12",
+     "cipher": "Typed four-figure groups, several repeating (3063 and 0560 five times each, 3645 four times); no decode is written on the forms and no clear copy was found in HIL/57, which was screened whole."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for HIL/57, Abbas Hilmi and Fouad on 16 Nov 2026: no DECODE record and nothing in the repo before this sweep; 20th-century telegrams are outside DECODE",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 15 Nov 2026 and searched for Durham, Abbas Hilmi, Khedive and Fouad: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched 15 Nov 2026 and searched for the same words: no match; outside his material",
+     "edition": "No edition of the Abbas Hilmi papers is known; the Durham finding aid lists the file as Crowned Heads and mentions code only in its description",
+     "literature": "No study found; no web search specific to this telegram was made. The sweep README records a failed direct lookup of the groups in the Khedive Cabinet code HIL/155 (0560 gives Arrivé, 3063 S'être entendu, 1316 Cessionnaire: nonsense in context)."
+    },
+    "key_check": "Codebooks of the Khedive's Cabinet are digitised in the same collection: HIL/155 (French one-part code 0001-9999), HIL/150, 152 and 154. A direct lookup in HIL/155 gives nonsense; an additive or offset on HIL/155 and the other codebooks were not tried.",
+    "duplicates": "known.py HIL/57, Abbas Hilmi, Fouad (16 Nov 2026): the wave 15 to 18 Durham records only (HIL/64 and HIL/65 telegrams, other items); not the same telegram.",
+    "verdict": "open"
+   },
+   "repository": "unidentified"
+  },
+  {
+   "id": 2923,
+   "counted": true,
+   "ark": "",
+   "access": "archive",
+   "links": [
+    {
+     "href": "https://searcharchives.bl.uk/catalog/040-002025830",
+     "label": "BL catalogue, Add MS 32093"
+    },
+    {
+     "href": "https://archive.org/details/FifthReportHMC1876",
+     "label": "HMC Fifth Report (archive.org)"
+    }
+   ],
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "year": 1660,
+   "date": "1659-1660 (undated; the BL catalogue dates it by content)",
+   "title": "Unsigned letter partly in cipher, undeciphered, about General Monck's movements and the Restoration (Malet papers)",
+   "correspondents": "unknown -> unknown (Malet family papers; probably a royalist correspondent, recipient not stated)",
+   "place": "unknown",
+   "language": "English",
+   "region": "England",
+   "period": "1651-1700",
+   "shelfmark": "BL Add MS 32093 f. 423 (Malet Collection vol. III, item 113); HMC Fifth Report (1876), Appendix, MSS of Sir Alexander Malet, p. 314",
+   "folio_note": "BL catalogue: 'Letter partly in cipher, undeciphered, relating, apparently to Gen. Monck and his movements in 1659 and 1660. Imperfect. f. 423.' HMC Fifth Report: '(fragment, pages) partly in cypher about the landing of Charles II' (OCR damaged). Extent of cipher not stated; the letter is imperfect.",
+   "cls": "B",
+   "status": "Two independent descriptions (HMC 1876, BL Catalogue of Additions) say the cipher is not deciphered. known.py on '32093', 'f. 423', 'Malet', 'Monck': no repo entry for this letter (the only Monck hit is Hyde to Bennet, a different item). Not in the DECODE snapshot in the repo (research/cryptoole/snapshot.json lists Add MS 32091 only). Not on Tomokiyo's unsolved list (cryptiana code/unsolved.htm) nor on Lasry's GL.htm list: both pages fetched 16 Nov 2026 and grepped for the names, years and shelfmark, no hit. Checked 16 Nov 2026.",
+   "why": "A 1659-60 royalist/Restoration letter in cipher that neither the HMC editor nor the BL cataloguer read; the Malet volume has other Restoration papers (Hyde, Winchilsea) that may give the correspondent.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Writer, recipient and cipher type unknown; the letter is imperfect, so the cipher may be short. A royalist cipher of 1659-60 could match a key in Clarendon or Nicholas papers.",
+   "verify": "View Add MS 32093 f. 423 (BL, not digitised as far as checked); measure the cipher; compare with the Hyde/Mordaunt/Nicholas ciphers of 1659-60.",
+   "source": "wave-18 printed sweep: HMC Fifth Report (Malet MSS), then BL catalogue record",
+   "scored": "vetted",
+   "access_note": "British Library, not online. Accepted as an archive item on the catalogue's own description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "BL catalogue record for Add MS 32093 (searcharchives.bl.uk/catalog/040-002025830) and HMC Fifth Report p. 314, read by the sweep agent 16 Nov 2026; the leaf (f. 423) is in the British Library and not seen online.",
+     "extent": "an imperfect letter on f. 423, the amount of cipher not stated",
+     "cipher": "BL catalogue: Letter partly in cipher, undeciphered, relating, apparently to Gen. Monck and his movements in 1659 and 1660. Imperfect. No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Malet, Monck, Add MS 32093 on 16 Nov 2026: no DECODE record of this letter (see key_check for any key)",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched and searched by the sweep agent 16 Nov 2026 for Malet, Monck, Add MS 32093: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched and searched by the sweep agent 16 Nov 2026 for Malet, Monck, Add MS 32093: no match",
+     "edition": "HMC Fifth Report p. 314 calendars the fragment (partly in cypher about the landing of Charles II) without a reading; the cipher is not printed.",
+     "literature": "Not searched beyond the two catalogue sources: no study of this fragment is known to the sweep."
+    },
+    "key_check": "No key held. Royalist ciphers of 1659-60 in the same Malet papers and the Clarendon papers were not tested.",
+    "duplicates": "known.py 'Malet', 'Add MS 32093', 'Monck' (16 Nov 2026): no entry for this leaf; the Windebank to Hopton letter of 1634 in the same volume was dropped by the sweep because a deciphered duplicate is filed with it.",
+    "verdict": "open"
+   },
+   "repository": "bl"
+  },
+  {
+   "id": 2924,
+   "counted": true,
+   "ark": "",
+   "access": "archive",
+   "links": [
+    {
+     "href": "https://www.british-history.ac.uk/cal-state-papers/foreign/mary/pp260-273",
+     "label": "CSP Foreign Mary pp. 260-273 (BHO)"
+    }
+   ],
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1556,
+   "date": "18 Oct 1556",
+   "title": "Dr Nicholas Wotton to the Council: greater portion in cipher, undeciphered (Noailles leaving for England)",
+   "correspondents": "Nicholas Wotton (English ambassador in France) -> Privy Council",
+   "place": "Paris",
+   "language": "English",
+   "region": "England",
+   "period": "1497-1559",
+   "shelfmark": "TNA SP 69 (State Papers Foreign, Mary; piece for Oct 1556 not identified); CSP Foreign Mary (Turnbull 1861) no. 548, pp. 266-267",
+   "folio_note": "Turnbull: '[Three pages. The greater portion in cipher, undeciphered.]' The abstract gives only the clear opening (the Prothonotary de Noailles, now Bishop of Dax, to leave for England as ambassador; his brother the agent to return).",
+   "cls": "B",
+   "status": "Calendar says undeciphered; no decipher printed and no sibling 'decipher' entry follows. known.py on 'Wotton', 'Noailles', 'Prothonotary', 'Oct 1556', '18 Oct 1556', 'greater portion in cipher': the repo holds Wotton 1548 (no. 97 Ed. VI), Jan 1555 (Mary no. 316) and Mary no. 453, and the Wotton 1554 key (DECODE R354, R8499), but not this letter. Not on Tomokiyo's unsolved list (cryptiana code/unsolved.htm) nor on Lasry's GL.htm list: both pages fetched 16 Nov 2026 and grepped for the names, years and shelfmark, no hit. Checked 16 Nov 2026.",
+   "why": "Ambassador's despatch from the French court on the eve of the war of 1557, mostly cipher; the same writer's 1554 key is on DECODE.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "About two pages of cipher. Wotton's 1554 key (R354) may not be the 1556 cipher, but his other letters in this run give the family and possible cribs.",
+   "verify": "Locate the SP 69 piece and folio (State Papers Online or TNA); test R354 and the Mary no. 316 / 453 letters' cipher.",
+   "source": "wave-18 printed sweep: BHO CSP Foreign Mary",
+   "scored": "vetted",
+   "access_note": "The National Archives, SP 69; not online. Accepted as an archive item on the calendar's description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Turnbull, Calendar of State Papers Foreign, Mary, no. 548 (British History Online), read by the sweep agent 16 Nov 2026; the original in TNA SP 69 is not online and its piece was not identified.",
+     "extent": "three pages, the greater portion in cipher",
+     "cipher": "Calendar: [Three pages. The greater portion in cipher, undeciphered.] The abstract gives only the clear opening. No decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Wotton, Noailles, SP 69 on 16 Nov 2026: no DECODE record of this letter (see key_check for any key)",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched and searched by the sweep agent 16 Nov 2026 for Wotton, Noailles, SP 69: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched and searched by the sweep agent 16 Nov 2026 for Wotton, Noailles, SP 69: no match",
+     "edition": "Turnbull's calendar prints only the clear abstract; no other edition is known.",
+     "literature": "Not searched beyond the calendar: no study of this despatch is known to the sweep."
+    },
+    "key_check": "Wotton's 1554 cipher key is on DECODE (R354) and his letter of Jan 1555 (CSP Foreign Mary no. 316) is a possible partner; neither was tested.",
+    "duplicates": "known.py 'Wotton', 'Noailles', 'SP 69' (16 Nov 2026): the DECODE R354 key only; no catalogue entry or lead for this despatch.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2925,
+   "counted": true,
+   "ark": "",
+   "access": "archive",
+   "links": [
+    {
+     "href": "https://www.british-history.ac.uk/cal-state-papers/foreign/vol3",
+     "label": "CSP Foreign Eliz. 1560-61 (BHO)"
+    },
+    {
+     "href": "https://archive.org/details/calendarstatepa00baingoog",
+     "label": "CSP Scotland I (archive.org)"
+    }
+   ],
+   "seen": "print",
+   "needs_archive_scan": "yes",
+   "year": 1561,
+   "date": "26 Feb 1561 (1560 old style)",
+   "title": "Thomas Randolph to Cecil: postscript of four lines of cipher, undeciphered",
+   "correspondents": "Thomas Randolph (English agent in Scotland) -> William Cecil",
+   "place": "Edinburgh",
+   "language": "English",
+   "region": "England",
+   "period": "1560-1589",
+   "shelfmark": "TNA SP 52/6 (State Papers Scotland, Elizabeth; item not verified); CSP Foreign Elizabeth 1560-61 (Stevenson 1865) no. 1034, pp. 583-584; CSP Scotland I (Bain 1898) no. 964, pp. 520-521",
+   "folio_note": "Stevenson: 'Orig. Hol., with a P.S. of four lines of cipher, undeciphered.' Bain: 'Attached is a slip of paper with [4?] lines' (the rest of the note lost in the OCR); neither prints a reading.",
+   "cls": "B",
+   "status": "Both calendars leave the four lines unread; no decipher entry follows. known.py on 'Randolph', '26 Feb 1561', 'wear a jack', 'four lines of cipher', 'no. 1034': the repo has Randolph to Sussex 1570 (targets/randolph1570, read with its contemporary decipher) but not this postscript. Not on Tomokiyo's unsolved list (cryptiana code/unsolved.htm) nor on Lasry's GL.htm list: both pages fetched 16 Nov 2026 and grepped for the names, years and shelfmark, no hit. Checked 16 Nov 2026.",
+   "why": "Early Randolph cipher from his first Scottish mission, on the eve of Mary's return; short but tied to a correspondent whose later cipher the repo has read.",
+   "importance": 2,
+   "solvability": 2,
+   "difficulty": 3,
+   "score_note": "Four lines only. Randolph's 1560-61 cipher with Cecil is earlier than the 1570 Sussex cipher; SP 106 or Cotton Caligula keys may hold it.",
+   "verify": "Find the slip in SP 52/6 (Bain's item 964); check SP 106 for a Randolph 1560-61 key.",
+   "source": "wave-18 printed sweep: BHO CSP Foreign vol. 3; checked against CSP Scotland I",
+   "scored": "vetted",
+   "access_note": "The National Archives, SP 52 (piece not verified); not online. Accepted as an archive item on the calendars' description, no decipherment being filed with it.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Sonnet 5.5), wave 18 printed-series vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Stevenson, Calendar of State Papers Foreign Elizabeth 1560-61 no. 1034 and Bain, Calendar of State Papers Scotland I no. 964, read by the sweep agent 16 Nov 2026; the original, probably TNA SP 52/6, is not verified or online.",
+     "extent": "a postscript of about four lines of cipher on an attached slip",
+     "cipher": "Stevenson: Orig. Hol., with a P.S. of four lines of cipher, undeciphered. Bain notes the attached slip. Neither prints a reading."
+    },
+    "prior_art": {
+     "decode": "known.py (DECODE dumps and ledgers) for Randolph, Cecil, SP 52 on 16 Nov 2026: no DECODE record of this letter (see key_check for any key)",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched and searched by the sweep agent 16 Nov 2026 for Randolph, Cecil, SP 52: no match",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's list) fetched and searched by the sweep agent 16 Nov 2026 for Randolph, Cecil, SP 52: no match",
+     "edition": "Neither calendar prints a reading of the postscript; no other edition is known.",
+     "literature": "Not searched beyond the two calendars: no study of this slip is known to the sweep."
+    },
+    "key_check": "No key held. A 1560-61 Randolph and Cecil key in SP 106 was not looked for.",
+    "duplicates": "known.py 'Randolph', 'SP 52/6' (16 Nov 2026): no entry for this slip.",
+    "verdict": "open"
+   },
+   "repository": "tna"
+  },
+  {
+   "id": 2928,
+   "counted": true,
+   "year": 1710,
+   "date": "9 Oct 1706; Aug 1710 - 13 Jan 1711",
+   "title": "[Sándor Károlyi?] to Ferenc II Rákóczi, undated: letter wholly in undeciphered figures except the outer address",
+   "correspondents": "Sandor Karolyi → Francis II Rakoczi",
+   "place": "unknown",
+   "language": "Hungarian",
+   "region": "Central Europe",
+   "period": "1701-1800",
+   "shelfmark": "MNL OL, G 15 (Rákóczi szabadságharc levéltára), Caps. B, Fasc. 22, fol. 86-87",
+   "folio_note": "Archive's note verbatim: 'a külcímet kivéve végig megfejtetlen számjelekkel' (in undeciphered figures throughout except the outer address); no decipherment noted.",
+   "cls": "A",
+   "status": "16 Nov 2026 (wave 19 vetting, split from lead 2486): Proposed new lead split from 2486: G 15 Caps. B Fasc. 22 fol. 86-87, '[Károlyi Sándor?] -> Rákóczi Ferenc II', s.d., Hungarian, closing seal in red wax, 'a külcímet kivéve végig megfejtetlen számjelekkel'. No edition flag in the MNL record; but undated and the writer only guessed, so no edition can be searched by letter. Low confidence.",
+   "why": "The general who signed the peace of Szatmar, writing to the prince in the months before it.",
+   "importance": 4,
+   "solvability": 4,
+   "difficulty": 2,
+   "score_note": "Scored from the archive's item description during the 11 Nov 2026 MNL AdatbazisokOnline sweep (research/sweep_2026-11-11_southeast/); not viewed (no images online)",
+   "verify": "Lead only: check Archivum Rakoczianum and the Karolyi family editions for these dates; order scans; try the P 396 key sheets.",
+   "links": [
+    {
+     "label": "MNL AdatbazisokOnline, G 15 B Fasc. 22 fol. 86-87 (wholly cipher)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/15393"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 H Fasc. 239 fol. 25-26 (13 Jan 1711)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/18643"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 G Fasc. 218 fol. 28-29 (15 Aug 1710)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/18145"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 C Fasc. 65 fol. 9-10 (9 Oct 1706)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/16263"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "MNL AdatbazisokOnline sweep (G 15), 11 Nov 2026",
+   "prior_art": "not vetted: editions not opened. DECODE 'Károlyi': no G 15 ciphertext record.",
+   "needs_archive_scan": "yes",
+   "access_note": "MNL AdatbazisokOnline record https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/15393; no images; order a scan from MNL OL.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Nine Karolyi letters across four fascicles (C 65, G 218, H 239, B 22), most with only a word or two lines in figures. Checked 11 Nov: DECODE 'Karolyi' 0 records; Archivum Rakoczianum (archive.org full texts) prints Rakoczi's and Bercsenyi's letters, not Karolyi's. NOT opened, and they would cover the January 1711 letters (H Fasc. 239 fol. 24, 25-26): Lukinich, A szatmari beke tortenete es okirattara (1925) and Pulay's Szatmari bekesseg; neither is on archive.org and hungaricana is 403 here. Open those two, then split: the one promising piece is B Fasc. 22 fol. 86-87 ('a külcímet kivéve végig megfejtetlen számjelekkel', writer only guessed as Karolyi).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/15393 (read 16 Nov 2026): G 15 Caps. B Fasc. 22 fol. 86-87, s.d., s.l., Nyelv Magyar, Pecsét 1 zárópecsét gyűrűs vörös viasz.",
+     "extent": "One letter, two leaves, wholly in figures apart from the outer address.",
+     "cipher": "Archive's note verbatim: 'a külcímet kivéve végig megfejtetlen számjelekkel' (in undeciphered figures throughout except the outer address); no decipherment noted."
+    },
+    "prior_art": {
+     "decode": "DECODE 'Károlyi' (11 Nov check): no G 15 ciphertext record; known.py no hit on the folio.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "The MNL G 15 records give an edition field when a letter is printed (e.g. Bánkúti for H 239 fol. 24-26); this record has none. Archivum Rakoczianum (earlier check) prints no Károlyi letters; Lukinich 1925 searched (no cipher words).",
+     "literature": "No study found; Lang's repertory has no row for G 15 Caps. B (earlier check)."
+    },
+    "key_check": "Károlyi key sheets MNL OL P 396 nos. 379, 11345, 10543; not seen or tested. A key does not block the lead.",
+    "duplicates": "Split from lead 2486; no catalogue entry or other lead on G 15 B Fasc. 22.",
+    "verdict": "open"
+   },
+   "repository": "mnl"
+  },
+  {
+   "id": 2929,
+   "counted": true,
+   "year": 1711,
+   "date": "29 Apr and 14 May 1711; 18 Sep 1711; 1708-1710",
+   "title": "Ferenc II Rákóczi to Korbe and to Cantacuzino: letters wholly in cipher apart from the signatures",
+   "correspondents": "Janos Szent-Ivany → Rakoczi; J. M. Klement as 'Rosenau' → Rakoczi; Peter Daniel → Rakoczi; Fierville le Herissy → [Rakoczi?]; [Miklos Bercsenyi] → [Daniel Esterhazy?]; Rakoczi → Constantin Cantacuzino; Rakoczi → Theodor Korbe",
+   "place": "Munkacs; unknown",
+   "language": "Hungarian, Latin, French",
+   "region": "Central Europe",
+   "period": "1701-1800",
+   "shelfmark": "MNL OL, G 15, Caps. A2, Fasc. 2, fol. 80-83",
+   "folio_note": "Archive's notes verbatim: 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'; no decipherment noted; the sibling 17947 is noted as deciphered at the time ('végig egykorúlag megfejtett titkosírással, a dátum azonban feloldatlan').",
+   "cls": "B",
+   "status": "16 Nov 2026 (wave 19 vetting, split from lead 2488): Proposed new lead split from 2488: Rakoczi to Theodor Korbe (secretary of the Wallachian voivode) and to Count Constantin Cantacuzino, G 15 A2 Fasc. 2 fol. 80-81 and 82-83, Latin, s.d., each sealed, 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'. Cantacuzino to Rakoczi of 6 Dec 1709 (F Fasc. 189 fol. 47-48) is 'végig egykorúlag megfejtett' and may share the system. Undated, so no edition matched; low confidence.",
+   "why": "The end of the war of independence (the Munkacs garrison, Klement's mission, the Wallachian channel).",
+   "importance": 4,
+   "solvability": 3,
+   "difficulty": 3,
+   "score_note": "Scored from the archive's item description during the 11 Nov 2026 MNL AdatbazisokOnline sweep (research/sweep_2026-11-11_southeast/); not viewed (no images online)",
+   "verify": "Lead only: check Bankuti-Meszaros (Szent-Ivany), Fiedler's Actenstuecke (Klement) and Archivum Rakoczianum; then split into rows by writer and order scans.",
+   "links": [
+    {
+     "label": "MNL AdatbazisokOnline, G 15 A2 Fasc. 2 fol. 82-83 (Rakoczi → Cantacuzino)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14812"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 A2 Fasc. 2 fol. 80-81 (Rakoczi → Korbe)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14811"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 H Fasc. 235 fol. 48-51 (Rosenau)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/19140"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 H Fasc. 240 fol. 78-83 (Szent-Ivany)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/18703"
+    },
+    {
+     "label": "MNL AdatbazisokOnline, G 15 E Fasc. 111 fol. 125 (Daniel)",
+     "href": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/17388"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "MNL AdatbazisokOnline sweep (G 15), 11 Nov 2026",
+   "prior_art": "not vetted: named editions not opened. DECODE 'Cantacuz', 'Korbe', 'Fierville', 'Klement': no G 15 ciphertext; 'Szentiványi': key R619 only.",
+   "needs_archive_scan": "yes",
+   "access_note": "MNL records https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14811, 14812 and 17947; no images.",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Mixed row: nine items by seven writers in six fascicles, to be split before any verdict. Checked 11 Nov: DECODE 'Klement', 'Cantacuz', 'Fierville' 0 records; Archivum Rakoczianum full texts have no letter to Korbe or Cantacuzino matching A2 Fasc. 2 fol. 80-83 (one note that a letter to 'Cantacuzeno' was never entered in the letter book). Still unopened: Bankuti-Meszaros, 'Mar nem haboru...' (prints Szent-Ivany, H Fasc. 240 fol. 112-113, as no. 17, so that item is probably read) and Fiedler, Actenstuecke zur Geschichte Franz Rakoczys (not found on archive.org) for Klement. Best single candidates after a split: Rakoczi to Korbe and to Cantacuzino, 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/14811 (fol. 80-81, to Korbe) and 14812 (fol. 82-83, to Cantacuzino), read 16 Nov 2026; sibling https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/17947.",
+     "extent": "Two letters of two leaves each, wholly in secret signs apart from the signature.",
+     "cipher": "Archive's notes verbatim: 'az aláíráson kívül végig megfejtetlen titkos jegyekkel'; no decipherment noted; the sibling 17947 is noted as deciphered at the time ('végig egykorúlag megfejtett titkosírással, a dátum azonban feloldatlan')."
+    },
+    "prior_art": {
+     "decode": "Earlier check (11 Nov): DECODE 'Cantacuz', 'Korbe' 0 records; the Brâncoveanu/Cantacuzino key A of target sieniawski1708 is a different correspondence (not compared).",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 16 Nov 2026 and grepped for the correspondents, places and shelfmark: no entry for this item.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's BnF and other readings) fetched 16 Nov 2026 and grepped for the same terms: no entry for this item.",
+     "edition": "Archivum Rakoczianum (earlier check): no letter to Korbe or Cantacuzino matching; a note that a letter to 'Cantacuzeno' was never entered in the letter book. No edition field in the MNL records.",
+     "literature": "No study found in the earlier web searches; Révay 1974 not seen."
+    },
+    "key_check": "No key held; the deciphered Cantacuzino letter (F 189 fol. 47-48) could supply plaintext for the system. A key does not block.",
+    "duplicates": "Split from lead 2488; target sieniawski1708 (Brâncoveanu and Cantacuzino) is a different sender pair and archive, not a duplicate as far as checked.",
+    "verdict": "open"
+   },
+   "repository": "mnl"
   }
  ]
 }
