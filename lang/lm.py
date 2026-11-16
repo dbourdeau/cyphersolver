@@ -40,6 +40,8 @@ def norm(text, scheme='modern', spaces=True):
     arabic   Arabic script, reduced to what a letter cipher writes: vowel signs, shadda, sukun and tatweel dropped;
              hamza dropped (alif with hamza or madda and alif wasla -> alif, waw/ya with hamza -> waw/ya, bare
              hamza removed); alif maqsura -> alif; ta marbuta kept. Alphabet: 29 letters (ARABIC).
+    arabic28 the 28 consonant letters (AR_LETTERS): vowel signs dropped, hamza seats folded to their carrier, ta marbuta -> ha;
+             see norm_arabic
     """
     if scheme == 'arabic28':
         return norm_arabic(text, spaces)
@@ -70,6 +72,7 @@ def norm_arabic(text, spaces=True):
     tatweel dropped; hamza seats folded to their carrier (أإآٱ->ا, ؤ->و, ئ->ي), bare hamza dropped; alif maqsura ى->ي;
     ta marbuta ة->ه; Persian kaf/ya folded."""
     t = ''.join(_AR_FOLD.get(c, c) for c in unicodedata.normalize('NFC', text))
+    t = re.sub('[\u064b-\u065f\u0670\u0640]', '', t)          # vowel signs, shadda, sukun, dagger alif, tatweel: dropped, not spaced
     t = ''.join(c if c in AR_LETTERS else ' ' for c in t)
     t = re.sub(r' +', ' ', t).strip()
     return t if spaces else t.replace(' ', '')

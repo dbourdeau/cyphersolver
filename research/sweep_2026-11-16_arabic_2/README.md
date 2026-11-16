@@ -3,8 +3,12 @@
 This sweep was run by a Claude Code session (Claude Opus 5.5) for Daniel Bourdeau, in three parallel passes. It continues
 `research/sweep_2026-11-15_arabic/` on the gaps that sweep left open.
 
-**State: not merged.** `candidates.json` holds 4 rows, and `merge.py` (dry run) reports 4 new. Nothing is in
-`research/leads.json` or `catalogue.json` yet; the merge waits for the owner's go-ahead.
+**State: merged 16 Nov 2026** (owner's go-ahead) into `research/leads.json` as **2941** (row 0, Sacromonte Lead Book 17), **2942**
+(row 2, Gotha) and **2943** (row 3, Sachau 218). Row 1 (Gordon's note, Durham SAD.250/1/550) was not merged: it is the same
+document as catalogue 2939 and `targets/gordonmudir1884` (14 Nov 2026), so `archive_sweep_2026-10/exclude.json` leaves it out.
+2941 and 2943 were vetted open (`research/vetting_2026-11-16_arabic_4/`) and promoted to the catalogue; 2942 stays a lead, unvetted
+(the Gotha leaf has not been seen). The ids first given on the branch (2930-2933) were replaced by these when main's own lead ids
+passed them.
 
 | Notes | Area | Rows | Vetted |
 |---|---|---|---|
@@ -18,8 +22,8 @@ This sweep was run by a Claude Code session (Claude Opus 5.5) for Daniel Bourdea
 |---|---|---|---|
 | 0 | Sacromonte Lead Book 17, the "Libro mudo" (Granada) | c. 1595-97 | vetted open; plate fol. 3b seen at 1,313 x 1,317 px from the open-access edition (van Koningsveld & Wiegers 2024), which calls it undeciphered and possibly meaningless; the other cipher plates are not online |
 | 1 | Durham, Sudan Archive SAD.250/1/550: Gordon to Mustafa Yawar, Mudir of Dongola, about 120 Eastern Arabic two-digit numerals | 1884 | seen; not vetted, because a possible decode (TNA PRO 30/57/4/26) could not be opened |
-| 2 | Gotha, Pertsch no. 2507: an end leaf with "eine Notiz in Geheimschrift" | copy 1727, note 1764/65? | catalogue only (Gotha viewer behind a bot check) |
-| 3 | Berlin, Sachau 218, f. 231a: four lines of cipher after a Karshuni prayer | 19th c. | catalogue only; counts only if the plaintext is Arabic |
+| 2 | Gotha, Pertsch no. 2507: an end leaf with "eine Notiz in Geheimschrift" | copy 1727, note 1764/65? | lead 2942, unvetted (Gotha viewer behind a bot check) |
+| 3 | Berlin, Sachau 218, f. 231a: four lines of cipher after a Karshuni prayer | 19th c. | vetted open and promoted as catalogue 2943 (scan seen; Dudout's attempt: 59 signs, an abjad key fails, may be a reckoning table; counts only if the plaintext is Arabic) |
 
 ## Negative results
 
@@ -39,5 +43,3 @@ Method note: join hyphenated line ends before grepping the djvu text of a catalo
   and CSIC Simurg.
 - **Other unopened items:** the TNA catalogue (Gordon's decode); the viewers at Gotha, DDB, Leiden and Qalamos; and
   Decourdemanche, Journal asiatique 1899, on the cipher of the Barbary Turks (key lead).
-
-**Merged 16 Nov 2026 under renumbered ids:** Sacromonte Lead Book 17 = catalogue 2941; Gotha Pertsch 2507 = lead 2942 (unvetted); Sachau 218 = catalogue 2943; the Gordon note was not merged (duplicate of catalogue 2939).

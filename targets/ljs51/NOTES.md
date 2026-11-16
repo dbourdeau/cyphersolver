@@ -21,7 +21,7 @@ Catalogue 2882 (promoted 15 Nov 2026 from the Arabic sweep, `research/sweep_2026
   and the plaintext. f. 106v is the last page and the only cipher without its plaintext: the manuscript breaks off.
 - Top of f. 106v: the plaintext of the cipher on f. 106r (a verse with "aflaja khasmi ... aflahtu fi hujjati wa-khaba
   l-muhtajj"), the compiler's correction ("the right reading is aflajtu with jim; he wrote falahtu with the undotted ha: it
-  was a tashif"), then "wa-kataba li Ibn al-Qubabi [?] fihi" (first read here as Ibn al-Qaysarani; corrected in step 13) and the cipher: seven lines, 90 signs, 25 distinct, 22 words
+  was a tashif"), then "wa-kataba li Ibn al-Qubabi [?] fihi" (first read here as Ibn al-Qaysarani; re-read in step 13, not reconciled) and the cipher: seven lines, 90 signs, 25 distinct, 22 words
   with dividers (a vertical stroke under three dots).
 - After the cipher: "fa-halaltuha fi l-hal ... wa-wajadtuhu ja'ala al-lam alif" and the page ends.
 - f. 106r (facing) shows how the compiler describes such ciphers: "wajadtuhu qad wada'a al-lam alif harfan wahidan, wa-kitabatuhu
@@ -36,7 +36,7 @@ Catalogue 2882 (promoted 15 Nov 2026 from the Arabic sweep, `research/sweep_2026
    the Z family splits into three by the end of the descender; A and B differ by the lower loop; T differs from U; the
    large angular 8 in line 6 is an alif H, not the round 8).
 2. A language model was added to `lang/` for this target: `ar-classical-poetry` (788,143 verses of pre-modern Arabic poetry,
-   Mamluk first, from the Ashaar dataset; `lang/build_ar_poetry.py`, norm scheme `arabic` = the 28 letters).
+   Mamluk first, from the Ashaar dataset; `lang/build_ar_poetry.py`, norm scheme `arabic28` = the 28 letters).
 3. `solve.py`: simulated annealing over sign -> letter keys, character 5-gram + word bonus. One-to-one keys in both
    directions gave no sense (runs of 15 Nov). Fixing the red-gloss values made the score worse.
 4. With only alif fixed (the commonest sign, 20%), the annealer found وامثالك / وامثالها for the two words that share
@@ -79,10 +79,10 @@ Catalogue 2882 (promoted 15 Nov 2026 from the Arabic sweep, `research/sweep_2026
     (N M H R U | N A C | M H D W S): the transcription stands.
 
 13. Sibling search through the whole volume (16 Nov, images 0006-0217; master TIFFs of 0067, 0068, 0215-0217):
-    - **The sender is Ibn al-Qubabi [or al-Qabbani], not Ibn al-Qaysarani**: at 5x the name after "wa-kataba li" has qaf,
+    - **The sender re-read as Ibn al-Qubabi [or al-Qabbani], not Ibn al-Qaysarani (not reconciled with the accepted page)**: at 5x the name after "wa-kataba li" has qaf,
       one dotted tooth, a long kashida and final ya, no sin/ra/nun. The same man is "Ibn al-Qubabi al-Haysub" (the
       calculator) on 0067-0068, author of a 7-line cipher with no dividers whose verses repeat words (qad qad qad ...).
-      Earlier notes here said Ibn al-Qaysarani: wrong.
+      Earlier notes here said Ibn al-Qaysarani; the re-read disagrees with them.
     - 0217 reads: "fa-halaltuhu ba'da ta'ab ... wa-huwa: aflaja khasmi wa-ihtajja bi-hujjati / aflahtu fi hujjati wa-khaba
       l-muhtajj. Wa-l-sawab aflajtu bi-jim wa-laysat aflahtu bi-l-ha' al-muhmala wa-innama tashaffa fa-zannaha aflahtu
       ... Wa-kataba li Ibn al-Qubabi fihi" -> cipher -> "fa-halaltuha fi l-hal bi-hudurihi wa-wajadtuhu ja'ala al-lam alif".
