@@ -61,17 +61,24 @@
   {"date": "2026-09-18", "kind": "verification", "what": "Clear text of nos. 25 and 26 compared: identical word for word; cipher runs fall after the same clear words; groups match at the two points checked (run 1 opening, run 3 ending). No group-for-group identity claimed.", "result": "worked"},
   {"date": "2026-09-18", "kind": "reading", "what": "Transcribed the letter with the interlinear decipherment of no. 26 for each cipher run (ct/letter_13feb1626.md); two proper names and 'Soubise' uncertain, a few glossed stretches left as '…'.", "result": "partial"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption ct/letter_13feb1626.md (the twin no. 26's interlinear decipherment with the clear text); the cipher groups were never transcribed (project work).", "result": "partial"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): ct/letter_13feb1626.md had no ## Reading heading (header and cipher notes scored, plain 0.588); heading added, body plain 0.754, explicit 0.825. Keeps read.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): ct/letter_13feb1626.md had no ## Reading heading (header and cipher notes scored, plain 0.588); heading added, body plain 0.754, explicit 0.825. Keeps read.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand on ct/letter_13feb1626.md: cipher words are the words inside the [chiffre: ...] runs (177, by words, an apostrophe form counted as one), the clear letter around them left out. Sure words only: Santriny, Montembelans and Soubise (marked uncertain) are holes, the four unread gaps are one hole each (extent unknown), and the words the decipherer supplies in round brackets (et que, les, quand les; five words) are holes. 169 of 181 read: 0.951 (whole letter, clear included) -> 0.934, read -> read in part; outcome.class already solved -> read in part. The tool v10_relabel.py cannot reproduce the figure (it scores [chiffre: ...] as a hole run or quoted text), so no cipher_markup is declared.", "result": "partial"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Escalation steps done (16 Nov 2026). Print: three web searches (the letter's content and date; the names Santriny and Montembelans; the phrases double guerre and relasche with Béthune, Rome and Avenel's Richelieu edition); no printed text or calendar entry of the letter and no hit for either name; HathiTrust and Gallica full text, Avenel and the Lettres de Louis XIII page by page, and Quernez's thesis were not searched. Retry: the twelve holes retried against sources only (the cipher groups were never transcribed and the images are not in the repository, so no group-level retry); none settled, a search on Soubise gave his flight to England in 1625 and return in 1627, nothing for February 1626, so the identification stays a hole. Share stays 0.934.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
   "method_basis": "No. 25 (fr. 3669 ff. 69-71) is the same letter as no. 26 (ff. 72-74), which carries a contemporary interlinear decipherment three folios away; the reading is that decipherment.",
   "contribution": ["catalogue correction"],
-  "class": "already solved",
+  "class": "read in part",
   "key": "none",
   "fraction_read": "unknown",
   "grades": "unknown",
   "verification": ["contemporary decipherment", "independent clear copy", "historical consistency"],
+  "gaps": [
+   {"item": "the unread cipher run after 'les Anglois et les autres' and the three ellipses (one inside the first passage, two inside the last run), 4 words counted unread, extent unknown", "blocker": "open-codes", "detail": "the files do not say why the decipherer's gloss is missing there; the groups of no. 25 and no. 26 were never transcribed or aligned to the glossed words"},
+   {"item": "the three items the decipherer supplies in round brackets ('et que', 'les', 'quand les'; five words)", "blocker": "open-codes", "detail": "no group is read behind them"},
+   {"item": "the names Santriny, Montembelans and Soubise, read only from the gloss", "blocker": "illegible", "detail": "the gloss is hard to read at this resolution and the names are uncertain in the palaeography"}
+  ],
   "notes": "Read at the time: the reading is the contemporary decipherment on the twin copy, not an independent decryption. Unread in ct/letter_13feb1626.md: one whole run after 'les Anglois et les autres' ([chiffre: …]), ellipses inside the first and last passages; uncertain: Santriny, Montembelans, Soubise. Whether the letter or the series is in print was not checked.",
   "provenance": "contributed",
   "credits": [
@@ -84,7 +91,7 @@
     "label": "fr. 3669 no. 25 (deciphered from its twin no. 26), 13 Feb 1626",
     "decryption": "ct/letter_13feb1626.md",
     "summary": "Raymond Phélypeaux d'Herbault, secretary of state, to Philippe de Béthune, ambassador at Rome, Paris 13 February 1626, on the eve of the Treaty of Monzón: the ciphered passages concern the Pope and the troops for the Valtelline, why the peace with the Huguenots was needed (the burden of a double war) and the withdrawal of the Dutch ships and the Huguenot fleet, and the prince of Piedmont's propositions pushing the King into war with Spain with Venice contributing.",
-    "state": "read",
+    "state": "read in part",
     "reading": "ct/letter_13feb1626.md",
     "language": "fr",
     "reading_review": {
@@ -93,9 +100,9 @@
      "date": "2026-10-23",
      "note": "v5 check 23 Oct 2026 (1626 French: plain share is a bar too): the sweep scored the whole file, header and the cipher description included (plain 0.588, explicit 0.825). A '## Reading' heading now opens the letter text; body alone: plain 0.754 (43/57), explicit 0.825 (47/57). The failing sentences hold the decipherer's unread stretches and the expanded abbreviations mons[ieu]r etc. (each counted a part-word by the scorer), with names (Bevilacqua, Giraldi, Contarini). Rests on the contemporary interlinear decipherment of the twin copy no. 26. Keeps read."
     },
-    "note": "Decryption = the contemporary interlinear decipherment of the twin copy no. 26, transcribed with the clear text (ct/letter_13feb1626.md). No transcription of the cipher groups of no. 25 or no. 26 (project work).",
+    "note": "Decryption = the contemporary interlinear decipherment of the twin copy no. 26, transcribed with the clear text (ct/letter_13feb1626.md). No transcription of the cipher groups of no. 25 or no. 26 (project work). 16 Nov 2026, read share over cipher words only (README Conventions): the cipher words are the fourteen runs marked [chiffre: ...] in the reading (177 words by hand, the clear letter around them left out), plus four unread gaps (the whole run after 'les Anglois et les autres', the ellipsis between the first two runs and the two inside the last run, one word each, extent unknown). Holes: Santriny, Montembelans and Soubise marked uncertain (3), the four gaps (4), and the words the decipherer supplies in round brackets, 'et que', 'les', 'quand les' (5): 169 of 181 words read, 0.934, read in part. The brackets of the reading file ([chiffre: ...] and (word)) are not read by v10_relabel.py as cipher markup, so no cipher_markup is declared and the tool cannot reproduce this figure; 'Valt(eline)' counts as read (0.928 if its supplied letters are a hole; 0.961 if the supplied words in round brackets were counted as read). Whole letter, clear included, not the measure: 0.951 (the figure recorded until 16 Nov 2026).",
     "translation": "ct/letter_13feb1626_en.md",
-    "read_share": 0.951
+    "read_share": 0.934
    }
   ]
  }

@@ -80,7 +80,40 @@ the Grisons, rejected for "d'autres longueurs et incommoditez, outre la despense
   who made a proposition, and the "prétendu comte de Montembelans" in whose name it was made.
 * "L'admiral Soubise" is an identification from context (a Huguenot admiral with a fleet in February 1626);
   the gloss itself is hard to read.
-* Whether either copy, or the series, is in print was not checked.
+* Whether either copy, or the series, is in print: not found by three web searches on 16 Nov 2026 (see Escalation); not searched page by page.
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. `ct/letter_13feb1626.md`:
+
+- Old 0.951 -> new **0.934** (169 of 181 cipher words). **Read -> read in part**; outcome.class already solved -> read in
+  part. The 0.951 was the whole letter, clear text included (whole letter, clear included, not the measure).
+- Separation: the reading marks each cipher passage as `[chiffre: ...]`, so the cipher words are the words inside those
+  fourteen runs (thirteen hold words), 177 words counted by hand (an apostrophe form is one word). Clear words around them are left out.
+- Holes (12 of 181): Santriny, Montembelans and Soubise, marked uncertain (3); four unread gaps, the whole run after
+  "les Anglois et les autres", the ellipsis inside the first passage (outside the brackets, between its second and third runs) and the two inside the last run, one word each
+  (extent unknown, no cipher transcription exists to size them) (4); and the words the decipherer supplies in round
+  brackets, "et que", "les", "quand les" (5; the translation's header names `(word)` a word the decipherer supplies).
+  "Valt(eline)" counts as read; if its supplied letters are a hole too the figure is 168 of 181 (0.928); if the three
+  bracketed supplied words were counted as read, 174 of 181 (0.961).
+- `research/reading_audit/v10_relabel.py` cannot reproduce this: it reads `[chiffre: ...]` as a run of holes or quoted
+  text, so no cipher_markup is declared. The reading file is unchanged.
+- fraction_read stays unknown (no token count of the cipher exists).
+
+## Remaining gaps
+
+- the unread cipher run after "les Anglois et les autres" and the three ellipses (one inside the first passage, two inside the last run), 4 words counted unread, extent unknown - blocker: open-codes; the files do not say why the decipherer's gloss is missing there, and the groups of no. 25 and no. 26 were never transcribed or aligned to the glossed words
+- the three items the decipherer supplies in round brackets ("et que", "les", "quand les"; five words) - blocker: open-codes; no group is read behind them
+- the names Santriny, Montembelans and Soubise, read only from the gloss - blocker: illegible; the gloss is hard to read at this resolution and the names are uncertain in the palaeography (section 4)
+
+## Escalation
+
+- [x] siblings: the twin no. 26 is the decipherment of this letter and pieces 24-27 of fr. 3669 are listed (section 1)
+- [x] clear-pages: the twin's interlinear decipherment is the clear page, and the reading is taken from it
+- [n/a] known-keys: no key was applied; the reading is the contemporary decipherment of the twin, not a key application
+- [x] print: 16 Nov 2026, three web searches (no catalogue or full-text archive was opened): (1) the letter's content and date (Herbault, Béthune, 13 Feb 1626, prince de Piémont, Valtelline, Soubise, Monzón); (2) the names Santriny and Montembelans with Béthune, Herbault, 1626; (3) the phrases "double guerre" and "relasche" with Béthune, Rome, Urbain VIII and Avenel's Richelieu edition. Not found: no printed text or calendar entry of this letter, and no hit for either name. Only background turned up (Valtellina war, Monzón of 5 March 1626, the Calendar of State Papers Venetian for 1626, a Swiss list naming Raymond Phélypeaux sieur d'Herbault). Not searched: the volumes of Avenel and of the Lettres de Louis XIII page by page, HathiTrust and Gallica full text, Quernez's thesis on Béthune.
+- [n/a] key-rebuild: the key table was not rebuilt (section 4: it needs the groups aligned to the glossed words)
+- [x] retry: 16 Nov 2026, the twelve holes retried against sources only; the cipher groups of nos. 25 and 26 were never transcribed and the page images are not in the repository, so no group-level retry with the key was possible here. Santriny, Montembelans: no source found (print search above), unsettled. Soubise: a web search on Soubise's movements gave his flight to England in 1625 and his return in 1627, nothing for February 1626, so the identification "the Huguenot admiral Soubise followed with the rest of his fleet" is not supported by what was found and stays a hole. The four unread gaps and the three round-bracket supplied words (et que, les, quand les): nothing in any source found, and no groups to test, unsettled. No hole is settled, so the share stays 0.934.
 
 ## 5. Files
 

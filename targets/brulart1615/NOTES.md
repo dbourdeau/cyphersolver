@@ -112,6 +112,35 @@ Tomokiyo's reading leaves some symbols undeciphered, probably nulls or cancelled
 made no transcription and did not apply his key, so it has no check of its own and no sign-level replay. The other
 two pages of each record were not fetched.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. Both letters are clear French with
+cipher runs; the recorded 0.971 and 0.961 were measured on the whole reading with its clear text.
+
+- **R2785: 0.971 -> 0.924** (122 of 132 cipher words). **Read -> read in part.**
+- **R2786: 0.961 -> 0.780** (46 of 59 cipher words). **Read -> read in part.**
+- Class: read in part, unchanged. `fraction_read` 1.0 (letters whose sentences read, never a share of signs or words)
+  -> 0.88, the cipher-word share over both letters (168 of 191), so the page chip no longer shows 100% of the cipher.
+- Separation: the cipher runs are those of `texts/R2785_align.tsv` and `texts/R2786_align.tsv` (the figures column
+  shows what is in cipher and, between bars, the clear words written inside a run). Each run's words were counted from
+  its reading column minus the clear words written inside it. The two reading files now mark the cipher runs in bold
+  (`cipher_markup: **`); this is a change of markup only, the readings are unchanged. Counted by words, an apostrophe
+  form as one word.
+- Judgement calls, each worth one word or two (the class does not change either way): in R2785 "du coste du duc de
+  Mantoue" is taken with "du" in clear; "la" in "la continuation" and "tousiours" are taken as clear because the
+  contemporary gloss omits them; "[exhorta]tions" at the line break is not a second word. In R2786 the [...] after
+  "ce" (ce [...] obtiennent) has no align row and is taken as a hole in clear text, so it is not counted.
+- Holes, sure words only: R2785 (10) [?autre], [et] supplied, [?ceste], [?m'est possible] (2 words) with the [...] after
+  it, [?l'Equidray], and three [...] in the closing clause; R2786 (13) [...] x4 and the unvalued [16] [21] in the
+  inconvenients row, three [...] in the l'intention row, two after "a me", two after "Je" and "et vous", one before
+  "en son endroict". Each [...] counts one word, an estimate: the files do not show how much each covers. The R2785
+  spaced-sign lines are judged nulls (23 Oct 2026) and are not counted as words. "en mesme temps" (R2786, no gloss,
+  decoded with the key) counts as read.
+- The two doubtful words [?scaurions] [?presser] (R2785, struck-through clear text) and the [?...] words in the clear
+  passages of R2786 are in clear text and are not counted.
+- `v10_relabel.py` with the declaration gives 0.913 (R2785) and 0.794 (R2786): it counts an apostrophe form as two
+  words, and [?m'est possible] as three holes. The hand count is the figure of record.
+
 ## Escalation (record)
 
 - [x] siblings: 23 Oct 2026, DECODE R2782-R2789 (unrelated) and the Gallica leaves next to both letters opened: Puysieux's clear companion letters (fr. 18043 ff. 85-86; fr. 18044 ff. 107-108, 111) confirm Manseau and Padavin; a further glossed Louis XIII letter in the same cipher (fr. 18043 f. 87, not on DECODE); no decipherment or key of the residue; R2785's spaced-sign lines judged nulls

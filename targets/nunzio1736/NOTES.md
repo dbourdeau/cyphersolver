@@ -156,3 +156,15 @@ Added by the reading audit (22 Oct 2026); worked through in the re-read of 22 Oc
 - [x] print: web search, no edition of the 1736 ciphers to Guiccioli; minutes in the Madrid nunciature archive, not online
 - [x] key-rebuild: four earlier nomenclator values replaced, about 65 groups valued from context (texts/b04_key_additions.txt)
 - [x] retry: 423/2 and 423/4-11 re-read 22 Oct; 23 Oct every attachment opened at full resolution, the clear copies found and aligned, 423/1, 5, 9, 11 read, every open group retried with the extended key (12 tokens left, each seen once)
+
+## Read share over cipher words only (16 Nov 2026)
+
+Checked, no change. Each reading (`texts/423-N_reading.md`) holds the deciphered text alone; the clear copies
+(`423-N_copy.txt`), the notes and the translations are separate files, so no clear words had to be separated.
+`research/reading_audit/v10_relabel.py` over the reading bodies gives the recorded figures (423/1, 5, 9, 11 1.0;
+423/2 and 3 0.970; 423/4 and 6 0.993; 423/7 0.926 read in part; 423/8 0.956; 423/10 0.964); class unchanged. No measure
+declaration is needed or possible: there is no clear text in the files to mark. Left for the coordinator, not
+changed: in 423/1, 5, 9 and 11 some words follow the contemporary clear copy where a single figure is a cipherer's
+slip (about 15, 2, 6 and 8 words, listed in each reading's notes); the readings do not mark them as holes, and they
+would count as holes only if the one-digit slip rule is read as needing a surviving period key even where a clear
+copy gives the word.

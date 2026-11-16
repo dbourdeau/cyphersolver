@@ -5,7 +5,7 @@
   "documents": [
     {
       "id": "mountflorence1801",
-      "read": "read",
+      "read": "read in part",
       "shelfmark": "NARA, RG 59, Despatches from US Consuls in Paris (T1), roll 1, frame 0097",
       "date": "18 March 1801",
       "year": 1801,
@@ -169,6 +169,12 @@
       ],
       "what": "Statistical validation (docs/_validate.py): 39 tokens, 25 types, en-modern order 4: reading -2.617 per letter; Verdict: too short.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. The coded part is 16 words (four names spelled letter by letter, 12 words from their alphabetical slots); the four words marked [?] (but, the, Mississippi, at) are holes: 12 of 16 read (75.0%), under the 95% bar, so the letter is read in part. Counted by hand from decryption.txt and reading.txt: the reading file sets the coded words in the clear text around them without marking either, so v10_relabel.py cannot reproduce the figure (it reports 0.918, not split).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -184,7 +190,7 @@
       "verdict": "too short",
       "notes": "claimed per-occurrence score -2.617; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached n/a"
     },
-    "class": "read",
+    "class": "read in part",
     "key": "recovered",
     "method": "key recovered from ciphertext-only",
     "method_basis": "Key rebuilt from four pattern words (Luneville, Parma, Tuscany, Dupont) and the alphabetical order of the one-part code; no plaintext of the letter or existing key used.",
@@ -192,9 +198,9 @@
       "key recovered",
       "transcription"
     ],
-    "fraction_read": 1.0,
+    "fraction_read": 0.75,
     "fraction_read_method": "measured",
-    "fraction_read_source": "validation.tsv: 39 of 39 cipher tokens given a value; 12 tokens are words inferred from the alphabetical slot, 5 of them marked [?] in reading.txt",
+    "fraction_read_source": "Cipher words only (16 Nov 2026): the coded sentences hold 16 words (DUPONT, LUNEVILLE, TUSCANY and PARMA spelled letter by letter, 12 words from the alphabetical slots); the four marked [?] in reading.txt (but, the, Mississippi, at) are holes, so 12 of 16 words read (75.0%), counted by hand. Before: 1.0, 39 of 39 cipher tokens (code groups) given a value.",
     "codes_open": {
       "open": 0,
       "total": 25,
@@ -229,17 +235,25 @@
         "reading": "reading.txt",
         "summary": "Mountflorence reports, on Dupont's authority, that Spain has ceded to France not Florida but the Mississippi (Louisiana) with its dependencies, by secret articles at Luneville, in compensation for Tuscany given by France to Parma.",
         "language": "en",
-        "read_share": 1.0,
-        "state": "read",
+        "read_share": 0.75,
+        "state": "read in part",
         "transcription": "ciphertext.txt",
         "reading_review": {
           "grade": "A",
           "by": "Claude Opus 5.5",
           "date": "2026-10-26",
           "note": "Two English sentences that build sense throughout and match the 1800-1801 treaties; four word values marked [?] rest on their alphabetical slot."
-        }
+        },
+        "note": "16 Nov 2026, cipher words only: 12 of 16 cipher words read (75.0%), the four marked [?] as holes (before 1.0, counted over code groups). The two coded sentences stand in the letter among clear words of the same sentences; the reading file sets the coded words in them without marking which are which, so the count was made by hand from decryption.txt (not split)."
       }
     ],
-    "key_file": "key.tsv"
+    "key_file": "key.tsv",
+    "gaps": [
+      {
+        "item": "521 (Mississippi), 249 (but), 228 (at), 688 (the)",
+        "blocker": "too-short",
+        "detail": "each occurs once in a 39-group message in a one-part code of some 600 numbers; only the alphabetical slot and the sense fix them, and no second message in this code has been found"
+      }
+    ]
   }
 }

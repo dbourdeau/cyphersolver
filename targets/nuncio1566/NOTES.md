@@ -110,3 +110,14 @@ digit streams used for the profile counts.
 - [x] print: Serrano 1914 not reached (HathiTrust 403, not on archive.org), as for alessandrino1568
 - [x] key-rebuild: 22 Oct 2026, code values fixed from the R87 decipherment and the copies (8010, 4010, 1020, 1040, 8030, 8070, 8080, 8090, 3 0^. 9); 3050, 3020 (R85 row 8), 2020 not resolved
 - [x] retry: 22 Oct 2026, all six re-read on the figures with the images checked at every break (texts/R85-R90_reread_log.md); all six build sentences
+
+## Read share over cipher words only (16 Nov 2026)
+
+Checked, no change. The six readings (`texts/R85-R90_reading.md`) hold only the deciphered cipher text; the covering
+letters in clear and the clear sentence of f. 302r (`texts/R90_clear_f302r.txt`) are in other files, so no clear words
+had to be separated. Figures by `research/reading_audit/v10_relabel.py` over the reading bodies (supplied `[la]`,
+`[il]`, `[?word]`, `[...]` and unvalued codes counted as holes): R85 0.964, R86 0.970, R87 0.991, R88 0.986,
+R89 0.994, R90 0.959, all unchanged and all still read. Not counted as holes because the readings do not mark them:
+words the alignment lists as not carried by the figures (clerk's one-letter slips, dotted zeros the transcription
+lost); the notes say the figures carry them. Class unchanged (read). No measure declaration is needed or possible:
+there is no clear text in the files to mark.

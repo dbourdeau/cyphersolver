@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "m316-043-0427",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 43 (NAID 604704577), frames 0427-0428",
    "date": "30 May 1921 (repeat sent 14 June 1921)",
    "year": 1921,
@@ -38,7 +38,7 @@
   },
   {
    "id": "m316-043-0432",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "NARA RG 59, 861.00, microfilm M316 roll 43 (NAID 604704577), frame 0432",
    "date": "14 June 1921",
    "year": 1921,
@@ -181,10 +181,16 @@
    "kind": "verification",
    "what": "Project check: an own decoder written from the issue's description (verify.py) gives both texts identical pair for pair to the contributor's reading files; the Russian read through as sentences. NARA images not reachable from the project; docs/_validate.py has no Russian model.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only, a letter corrected in a rebuilt key a hole. Both messages are wholly cipher. By hand on the contributor's word breaks in translation.md: Nr 451 95 of 109 words read (87.2%), 14 holes (seven words on the off-table pairs 28 x3, 77 x2, 91 and 14, and seven with a wrong, empty or unknown letter); Nr 523 41 of 47 (87.2%), 6 holes (numbers 16 and 76 53 18, four words with a wrong letter). Both under the 95% bar, so read in part; the earlier 0.982 and 0.969 counted digit pairs. translation.md carries both messages and the English, so v10_relabel.py (0.913, not split) cannot reproduce the figure.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "method": "key recovered from ciphertext-only",
   "key": "recovered",
   "method_basis": "Contributor's method: the table was recovered by annealing on the ciphertext of Nr 451 alone with no crib, and confirmed on Nr 523; the project re-ran the decryption with its own code but did not repeat the search or see the images.",
@@ -198,7 +204,11 @@
    "matched control",
    "key confirms"
   ],
-  "validation": {"date": "2026-11-10", "verdict": "not applicable", "notes": "no Russian model in lang/; the contributor's 1,000-shuffle control and the reading of Nr 523, not used to build the table, stand in for it"},
+  "validation": {
+   "date": "2026-11-10",
+   "verdict": "not applicable",
+   "notes": "no Russian model in lang/; the contributor's 1,000-shuffle control and the reading of Nr 523, not used to build the table, stand in for it"
+  },
   "credits": [
    {
     "who": "harumi-matsuba",
@@ -235,10 +245,10 @@
     "detail": "not online"
    }
   ],
-  "notes": "Table, transcriptions and reading by Harumi-Matsuba; checked by the project with its own decoder against his transcriptions, not against the images. 1,029 of 1,052 pairs read as sense.",
-  "fraction_read": 0.978,
+  "notes": "Table, transcriptions and reading by Harumi-Matsuba; checked by the project with its own decoder against his transcriptions, not against the images. 1,029 of 1,052 pairs read as sense. 16 Nov 2026: counted over cipher words (words, not digit pairs) the two messages read at 87.2% each, so the extent is partial.",
+  "fraction_read": 0.872,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Contributor's status column in reading_451.tsv (750 of 764 pairs read) and reading_523.tsv (279 of 288): 1,029 of 1,052 digit pairs, off-table pairs and wrong letters counted unread.",
+  "fraction_read_source": "Cipher words only (16 Nov 2026), sure words only, counted by hand on the contributor's word breaks in translation.md (both messages are wholly cipher): Nr 451 109 words, 14 holes (7 words on the off-table pairs 28 three times, 77 twice, 91 and 14, and 7 words with a wrong, empty or unknown letter); Nr 523 47 words, 6 holes (the numbers 16 and 76 53 18 and 4 words with a wrong letter); 136 of 156 words read. Before: 0.978, 1,029 of 1,052 digit pairs (the contributor's status column; pairs are not words).",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -251,15 +261,16 @@
     "reading": "translation.md",
     "translation": "translation.md",
     "language": "ru",
-    "state": "read",
-    "read_share": 0.982,
+    "state": "read in part",
+    "read_share": 0.872,
     "summary": "Krasin reports that the Berlin trade representation now works well, that the auditing commission has found damaging material on its previous period, asks for Kulyabko to be sent to Berlin and for no decisions to be taken before the commission reports.",
     "reading_review": {
      "grade": "A",
      "by": "Claude (for the project)",
      "date": "2026-11-10",
      "note": "Read the decryption as Russian sentences with the contributor's word breaks: telegraphic but coherent throughout; holes are the off-table pairs (комисс, раб) and seven single wrong letters, none blocking the sense."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only: 95 of 109 words read (87.2%), counting as holes the off-table pairs, the numbers and the words with a wrong or empty letter (before 0.982, counted over digit pairs). The message is wholly cipher, so nothing was split. Counted by hand on the contributor's word breaks in translation.md; v10_relabel.py cannot reproduce it, because translation.md also holds the other message and the English."
    },
    {
     "doc": [
@@ -271,15 +282,16 @@
     "reading": "translation.md",
     "translation": "translation.md",
     "language": "ru",
-    "state": "read",
-    "read_share": 0.969,
+    "state": "read in part",
+    "read_share": 0.872,
     "summary": "Lutovinov protests against Kopp being kept in Berlin as polpred before the audit ends, asks to whom he should hand over his duties and says he will hand over to Brodovsky within hours.",
     "reading_review": {
      "grade": "A",
      "by": "Claude (for the project)",
      "date": "2026-11-10",
      "note": "Read the decryption as Russian sentences: coherent throughout; two numbers unread and four single wrong letters of a 4/5 confusion shape."
-    }
+    },
+    "note": "16 Nov 2026, cipher words only: 41 of 47 words read (87.2%), counting as holes the off-table pairs, the numbers and the words with a wrong or empty letter (before 0.969, counted over digit pairs). The message is wholly cipher, so nothing was split. Counted by hand on the contributor's word breaks in translation.md; v10_relabel.py cannot reproduce it, because translation.md also holds the other message and the English."
    }
   ]
  }
