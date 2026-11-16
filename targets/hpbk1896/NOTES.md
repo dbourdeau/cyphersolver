@@ -63,3 +63,22 @@ Turcica 46 (2015), and BOA HR.SFR / DH.SFR for the Yildiz-Yemen code books; aski
 Two blind transcriptions of ten system B sheets (541, 585, 562, 575, 577, 587, 602, 644, 652, 675) with the clerk's glosses,
 two gloss tables and two preregistered tests, see `dudout/NOTES.md`. Test 1: 0.787 (best control 0.420), partial; test 2:
 0.5625 (best control 0.450), failed. One table does not hold across all sheets; offered as a starting table only.
+
+## Integration check (16 Nov 2026), PR #702
+
+Checked for the maintainers before merging PR #702 (Brice Dudout), by an AI agent; no person has checked these steps.
+
+- **Hashes and scores reproduced.** Every file in `dudout/prereg/SHA256SUMS.txt`, `dudout/prereg2/SHA256SUMS.txt` and
+  `SHA256SUMS-heldout.txt` hashes as listed. `scripts/score.py` gives test 1 0.7874 (174 tokens, best of 200 controls
+  0.4195) and test 2 0.5625 (160 tokens, best control 0.450), as stated: one partial, one failed, both kept as such.
+  `scripts/build_key2.py` rebuilds `key_systemB_v2.json` byte for byte (sha256 33e491fa...) and `key_v2_evidence.tsv`.
+  That the held-out passes were made after the freeze rests on the contributor's record.
+- **What the agreement figures count.** The A/B "numeral agreement" in `dudout/NOTES.md` counts every aligned row,
+  clear words included. Over numeral rows alone: 541 107/109, 585 156/185, 562 274/323, 575 169/176, 577 29/29,
+  587 122/195, 602 208/247, 644 114/127, 652 150/193, 675 56/93.
+- **Images.** HPBK 575 fetched from the Koc IIIF route (`libdigitalcollections.ku.edu.tr/iiif/2/HPBK:575/...`): the
+  first three columns from the right (about 40 numerals, 62 67 48 29 57 22 27 41 29 64 27 45 ...) agree with
+  `merged_575.tsv`, and so do the glosses where both passes agree. No other sheet was sampled.
+- **No reading.** 541 has a few words from the clerk's glosses, written out in `dudout/NOTES.md`, but no reading file;
+  the target stays "not read" and system B at 0%. 1070 is not matched to 575.
+- **Transcriptions.** Both passes are by separate AI agents working from the images; the files record no human check.

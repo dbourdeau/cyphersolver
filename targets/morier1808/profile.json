@@ -210,7 +210,8 @@
       "what": "Read the whole letter as sentences (reading_18.md) and the enclosure (reading_21.md); the enclosure agrees with the clear text in the margin of /19.",
       "result": "worked"
     },
-    {"date": "2026-11-16", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3844 tokens, 64 types, en-modern order 4: reading -2.21 per letter; random keys -6.693 (z 14.2); key annealed onto shuffled ciphertext best -4.428 (mean -4.462, z 91.2); annealer on the real text -2.472. Verdict: pass.", "result": "worked"}
+    {"date": "2026-11-16", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3844 tokens, 64 types, en-modern order 4: reading -2.21 per letter; random keys -6.693 (z 14.2); key annealed onto shuffled ciphertext best -4.428 (mean -4.462, z 91.2); annealer on the real text -2.472. Verdict: pass.", "result": "worked"},
+    {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Integration check of PR #705 (AI agent, for the maintainers; not a person): decode.py and an own decoder from key.json reproduce the four decryption files; docs/_validate.py reproduces -2.210 / -6.693 / -4.428, pass; key.json and transcription_21.txt hash as frozen in PREREG v2 and v1; the held-out text of PREREG v2 decodes as in mesure_H2.txt (91 of 94 words read by the v2 labels). The v1 and v2 metric scripts point to the contributor's local corpus and word list and were not re-run. Strict read share 646/654 = 0.988. QDL images not compared (Cloudflare 403 to curl).", "result": "worked"}
    ],
   "outcome": {"validation": {"date": "2026-11-16", "model": "en-modern", "file": "validation.tsv", "tokens": 3844, "types": 64, "tokens_per_type": 60.06, "score": -2.21, "nulls": {"random keys": {"n": 200, "mean": -6.693, "sd": 0.317, "max": -5.958, "z": 14.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.462, "sd": 0.025, "max": -4.428, "z": 91.2, "p": 0.1429}}, "power": -2.472, "verdict": "pass", "notes": "claimed per-occurrence score -2.21; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached -2.472"}, 
     "class": "read",
@@ -222,7 +223,7 @@
     ],
     "fraction_read": 0.99,
     "fraction_read_method": "measured",
-    "fraction_read_source": "reading_18.md: 676 words, 1 unread (‹to› Roads); code words read from context counted read; 16 Nov 2026",
+    "fraction_read_source": "reading_18.md, recounted by the strict rule in the PR #705 integration check: 646 of 654 cipher words read (0.988; probable code words, the probable signature and authori[z]ed counted as holes; the two clear lines left out). The contributor's figure: 676 words, 1 unread, code words read from context counted read; 16 Nov 2026",
     "verification": ["statistical test", "contemporary decipherment", "historical consistency"],
     "provenance": "contributed",
     "notes": "First held-out test failed (0.729 on /21 image 1, burned); second, pre-registered before the new text was transcribed, passed (0.968 vs 0.340 on /18 images 0012-0014).",
@@ -269,9 +270,9 @@
         "read_share": 0.99,
         "reading_review": {
           "grade": "A",
-          "by": "Claude Opus 5.5 (preliminary, contributor's own)",
+          "by": "integration review of PR #705 (AI agent, for the maintainers); not a person",
           "date": "2026-11-16",
-          "note": "Preliminary: read reading_18.md as sentences against the decryptions of /18 and /20: continuous English, one unread place name; to be re-graded by a reviewer."
+          "note": "Read reading_18.md as English sentences: continuous and coherent from the heading to the signature. Decoded again with a decoder written for the check from key.json (+88 z, 94 e): the decryptions of /18 and /20 come out as committed and carry every passage of the reading, the copyists' cuts and slips apart. Strict count over the cipher words (two clear lines left out): 646 of 654 read (0.988); holes are the unread place in 'from ‹to› Roads', the three {Bombay}, the one {French}, authori[z]ed (88 = z, added after the measure) and the two words of the figure signature. Images not compared (QDL answers curl with a Cloudflare 403). Replaces the contributor's preliminary grade A."
         },
         "summary": "Jones, just arrived at Bombay on the Sapphire, tells Minto that Malcolm has already gone into the Persian Gulf under Minto's authority; to avoid 'the appearance of clashing authorities in Persia' he suspends his own departure until Minto's orders, while noting that he holds the King's commission, that the French are at Tehran, and that only His Majesty's ministers can be accredited."
       },
@@ -285,9 +286,9 @@
         "state": "read",
         "reading_review": {
           "grade": "A",
-          "by": "Claude Opus 5.5 (preliminary, contributor's own)",
+          "by": "integration review of PR #705 (AI agent, for the maintainers); not a person",
           "date": "2026-11-16",
-          "note": "Preliminary: read decryption_20.txt as sentences; same letter as /18, the shared reading is reading_18.md; to be re-graded by a reviewer."
+          "note": "decryption_20.txt reproduced with an own decoder and read as sentences: the same letter as /18, whose shared reading is reading_18.md (grade A there). Images not compared (QDL Cloudflare 403). Replaces the contributor's preliminary grade A."
         }
       },
       {
@@ -300,9 +301,9 @@
         "state": "read",
         "reading_review": {
           "grade": "A",
-          "by": "Claude Opus 5.5 (preliminary, contributor's own)",
+          "by": "integration review of PR #705 (AI agent, for the maintainers); not a person",
           "date": "2026-11-16",
-          "note": "Preliminary: agrees word for word with the clear text in the margin of /19."
+          "note": "reading_21.md read as English sentences, complete (72 cipher words, no hole; [u] and [i] are in-word restorations); decryption_21.txt reproduced with an own decoder. The word-for-word agreement with the clear text in the margin of /19 is the contributor's record: /19 was not seen in this review (QDL Cloudflare 403). Replaces the contributor's preliminary grade A."
         }
       }
     ]

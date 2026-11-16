@@ -83,7 +83,11 @@
   {"date": "2026-11-14", "kind": "access", "what": "Image route corrected: IIIF page id equals the item id (pixel comparison of 587); 2000-px pages fetched for 587, 602, 576, 578, 599, 600, 725.", "result": "worked"},
   {"date": "2026-11-14", "kind": "transcription", "what": "Hand reading of the top of 599 and 578 (B) and two lines of 600 (A).", "result": "partial"},
   {"date": "2026-11-14", "kind": "hypothesis", "technique": ["contextual inference", "repeat/pattern analysis"], "what": "B mixes two-digit letter numerals with three-digit word numerals: numeral 668 has the suffix -nde written over it twice on 599; A groups are not B regrouped (a six-letter word over a five-digit group).", "result": "partial"},
-  {"date": "2026-11-14", "kind": "statistics", "technique": ["automated search (unspecified)"], "what": "Colour separation of the pale pencil from the dark ink by grey threshold.", "result": "failed"}
+  {"date": "2026-11-14", "kind": "statistics", "technique": ["automated search (unspecified)"], "what": "Colour separation of the pale pencil from the dark ink by grey threshold.", "result": "failed"},
+  {"date": "2026-11-15", "kind": "transcription", "what": "Brice Dudout (PR #702): two blind transcriptions by separate AI agents of system B sheets 541, 585, 562, 575, 577, 587, 602, 644, 652, 675 (numerals, clerk's glosses, coordinates), aligned by coordinates in dudout/transcription/merged_<id>.tsv; numeral rows agree from 29/29 (577) and 107/109 (541) down to 122/195 (587) and 56/93 (675). No person has checked them.", "result": "partial"},
+  {"date": "2026-11-15", "kind": "control", "technique": ["key matching", "statistical test"], "what": "Brice Dudout: gloss table v1 (24 numerals, from the clerk's glosses on 541 and 585) tested on the glosses of held-out 575 and 577 (174 tokens, pre-registered): 0.787 against a best of 200 within-class shuffles of 0.420; bar 0.85 and control + 0.30 not met.", "result": "partial"},
+  {"date": "2026-11-15", "kind": "control", "technique": ["key matching", "statistical test"], "what": "Brice Dudout: gloss table v2 (27 numerals, built mechanically from 541, 585, 562) tested on held-out 644, 652, 675 (pre-registered; 644 has no glosses; 160 tokens): 0.5625 against best control 0.450. Failed. Post hoc: 49 is glossed differently on 652/675 and 562, so one table may not hold over 1898-1900.", "result": "failed"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Integration check of PR #702 (AI agent, for the maintainers; not a person): hashes as listed, both scores and key v2 reproduced; about 40 numerals of HPBK 575 compared with the image, agree.", "result": "worked"}
  ],
  "outcome": {
   "method": "not solved",
@@ -92,6 +96,9 @@
   "class": "not read",
   "fraction_read": 0,
   "verification": ["none"],
-  "notes": "Open: transcription of B (599, 578) against clear same-day sheets 725/748; A glosses."
+  "notes": "Open: transcription of B (599, 578) against clear same-day sheets 725/748; A glosses.",
+  "credits": [
+   {"who": "dudout", "role": "transcription", "date": "2026-11-15", "note": "System B: two blind transcriptions of ten sheets, two gloss tables, two pre-registered tests (one partial, one failed); PR #702."}
+  ]
  }
 }
