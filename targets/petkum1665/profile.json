@@ -1226,6 +1226,21 @@
    ],
    "what": "docs/_check_reading.py on the three readings: clean share 0.61, 0.48, 0.48 (marginal, not readable); all three set to 'decoded, not read'.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Suspected 'T T' key fault withdrawn: row T = y confirmed (a single small T glossed y at least 11 times in unit 261294); the shape the blind reader labelled 'T T' (144R l.2) is one cursive # sign (HSH), glossed o by the chancery (113R 'ou', 111L 'obtenir'), and key_v5.tsv already has HSH = o: tryyis = trois. A transcription sign-class error found after the decode. The frozen blind files, judge and figures stay unchanged as the first pass of record; no corrected transcription made or decoded.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "transcription",
+   "what": "14 Apr 1665, image 191: the crop given to the blind reader left out the part of the letter page that lies left of it, so the frozen transcription lacks 10 tokens (LAM 299 355 TH 277 before 301; 364 Y m 18 after ct QX; 157 after \"qu'un\"), reported by Dan Bourdeau in his review of PR #689 and not re-checked here. The 58/80 strict judge covers the 80 tokens transcribed only; BLIND.tsv, decode and judge files left frozen and not re-scored.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -1341,9 +1356,14 @@
     "blocker": "needs-physical-access"
    },
    {
-    "item": "'T T' pair decodes y y in three Paulmyer passages (16 Nov 2026 blind decodes): suspected fault in key_v5 row T or an unlisted sign",
+    "item": "'T T' in three Paulmyer passages (16 Nov 2026 blind decodes) is one cursive # sign (HSH = o), a transcription error found after the decode, not a key fault; the frozen blind files stay unchanged and no corrected transcription has been made",
     "blocker": "not-attempted",
-    "detail": "check the T glosses on 401 and the Paulmyer glossed leaves (unit 261294) for a tt sign; the three passages also need the clear text around the runs transcribed before they can read as sentences"
+    "detail": "settled from the chancery glosses (113R 'ou', 111L 'obtenir'); a second, declared transcription of the three passages, and the clear text around the runs, are still to do"
+   },
+   {
+    "item": "14 Apr 1665: 10 tokens on image 191 lie left of our crop and are not in the frozen transcription (LAM 299 355 TH 277 before 301; 364 Y m 18 after ct QX; 157 after \"qu'un\"; Dan Bourdeau, review of PR #689)",
+    "blocker": "not-attempted",
+    "detail": "a declared second transcription of image 191 from the full image; the frozen first pass (58/80) stays as filed"
    }
   ],
   "texts": [
@@ -1925,7 +1945,7 @@
     "state": "decoded, not read",
     "read_share": 0.725,
     "summary": "A notable sum of money; engaging His Most Christian Majesty; Chancellor Séguier (three times) and a man named des Fargues. Cipher runs only. English is Claude's, unchecked.",
-    "note": "read_share = strict one-pass judge per sign unit S/(S+E+N) = 58/80 (blind16/paulmyer_1665-04-14/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt)."
+    "note": "read_share = strict one-pass judge per sign unit S/(S+E+N) = 58/80 (blind16/paulmyer_1665-04-14/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt). Incomplete: 10 tokens of image 191 lie left of the crop and are not transcribed (NOTES, Remaining gaps)."
    }
   ],
   "key_file": [
