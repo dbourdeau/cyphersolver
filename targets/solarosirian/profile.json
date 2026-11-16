@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "target": "solarosirian1325",
+  "target": "solarosirian",
   "title": "Enigmatic Book of the Solar-Osirian Unity: second gilded shrine of Tutankhamun (Carter 237) and tomb of Ramesses IX (KV 6). Egyptian enigmatic (cryptographic) writing, not a cipher in the usual sense; one pre-registered measured check of the convention, failed its threshold",
   "documents": [
     {
@@ -28,9 +28,9 @@
         "by": "llm from images",
         "source": "Guilmant 1907 line drawings (archive.org MIFAO15), page images at 300 dpi. Pass 1: Claude Opus 5.5 sub-agent; pass 2: Claude Opus 5.5 via the API; arbitrated on the image by the sub-agent. No human epigrapher checked it.",
         "image_quality": "good",
-        "notes": "Shape codes (Gardiner where possible, named classes otherwise). 14 disputed shapes put on a blind shape-choice sheet for the contributor; unanswered."
+        "notes": "Shape codes (Gardiner where possible, named classes otherwise). Blind human shape check (16 Nov 2026, after the measure): Brice Dudout checked 12 doubtful signs, each with two candidate shapes and without the expected reading or our transcription; 8 neither shape, 1 agrees with our arbitrated transcription (C19-03 = M23x2), 3 do not (B56-01, C18-03, F1-09). The shape classes are not stable on the doubtful signs at this resolution. Marked not read: by the read rule (only sure words count; probable and restored units are holes) 1 of the 31 Ramesses IX units is read (Khepri, xpr); the text is read in Darnell 2004 and Darnell & Darnell 2018, not by this project."
       },
-      "read": "read in part"
+      "read": "not read"
     },
     {
       "id": "shrine2-plII-lower",
@@ -98,7 +98,7 @@
       "published reading"
     ],
     "attack": "known plaintext",
-    "human_role": "Brice Dudout brought the target and set the protocol rules (pre-registration frozen by SHA-256, one held-out measurement, thresholds fixed in advance). He does not read hieroglyphs; a blind shape-choice sheet of 14 disputed shapes is unanswered. No Egyptologist checked the transcription or the reading.",
+    "human_role": "Brice Dudout brought the target and set the protocol rules (pre-registration frozen by SHA-256, one held-out measurement, thresholds fixed in advance). He does not read hieroglyphs. After the measure he checked 12 doubtful signs blind (two candidate shapes each, no reading shown): 8 neither shape, 1 agrees with our transcription (C19-03 = M23x2), 3 do not (B56-01, C18-03, F1-09). No Egyptologist checked the transcription or the reading.",
     "tools": [
       "pre-registration frozen by SHA-256",
       "permutation test (200 shuffled tables)",
@@ -163,12 +163,13 @@
       "none"
     ],
     "fraction_read_method": "measured",
-    "fraction_read_source": "C13 measurement (working files outside the repository): 27 of the 428 held-out signs were given a value that the reference confirms. The table gives some value to 301/428 (70 %), but only 65 could be checked against the reference and 27 were right. By units, 4 of 37 read by sense (about 11 %).",
+    "fraction_read_source": "C13 measurement (working files outside the repository): 27 of the 428 held-out signs were given a value that the reference confirms. The table gives some value to 301/428 (70 %), but only 65 could be checked against the reference and 27 were right. Three units: M = 27/65 (pre-registered measure, checkable signs only); fraction_read = 27/428 (all held-out signs, unchecked ones counted unread); fraction_coherent = 1/37 (read rule, sure words only, probable and restored units counted as holes). See NOTES.md, Reading.",
     "fraction_read": 0.063,
+    "fraction_coherent": 0.027,
     "verification": [
       "none"
     ],
-    "provenance": "project",
+    "provenance": "contributed",
     "credits": [
       {
         "who": "darnell",
@@ -201,7 +202,7 @@
       {
         "who": "drioton",
         "role": "prior solution",
-        "note": "La cryptographie de la chapelle de Toutankhamon, JEA 35 (1949): first published key to the shrine. Not opened by the contributor.",
+        "note": "La cryptographie de la chapelle de Toutankhamon, JEA 35 (1949): an early published study (not opened).",
         "date": "1949",
         "published": true
       },
@@ -214,7 +215,7 @@
       },
       {
         "who": "dudout",
-        "role": "transcription",
+        "role": "new cipher",
         "note": "Brought the target and set the protocol; Claude agents run by him transcribed the held-out signs, measured and read. The text itself was already solved (Darnell).",
         "date": "2026-11-16"
       }
