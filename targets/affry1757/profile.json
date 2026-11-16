@@ -393,6 +393,18 @@
    "kind": "reading",
    "what": "Re-measured with measure_sense.py on the image transcriptions: R1073 0.939 -> 0.962, R1076 0.873 -> 0.887, R1070 0.965 -> 0.955, R1054 0.968 -> 0.967; all groups 0.941 -> 0.942 (8,787/9,327).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the key files re-applied to transcr/R1072, R1074 and R2067 and compared with read/R*_reading.md: 323 of 956 words departed. Cause: the published readings follow the Fagel register clear copies (stated in each file's header), not the key; with every value of the folder applied, 142 places (264 of 1,030 words) still have the register's word where the figures give another (102 keyed groups with another value, 25 endings the code does not write, 15 at groups with no value), none marked inside the text. Second cause: the key was layered over key_X.tsv, key_M.json and the H/M rows of read/R*_new.tsv. Written key_merged.tsv (803 rows, source per row, no new value; 17 inferred-only groups on which the per-letter files disagree left out) and added it to outcome.key_file; the transcription of R1054, R1068, R1070, R1073, R1076 pointed at the image-checked transcr/ files. After: 288 of 1,028 on the same three texts, 505 of 1,983 on the eight the script now compares. No reading file changed; the places were classed by script, not each checked on the register scan.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair round: the ten read/R*_reading.md are the Fagel register's clear copies, so nothing is marked inside them; each now carries one header line saying that it is the register's copy, not the output of the key, and naming read/R<rec>.md as the keyed decode. No letter of a reading changed. Page: the R1074 loan corrected from 'two millions' / 'des gens si maladroits' (keyed decode) to 'twenty millions' / 'des Personnes si mal adroites' (published reading). The 142 key/register differences of R1072, R1074 and R2067 stay unmarked in the text.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -530,7 +542,7 @@
    {
     "doc": "codeAB",
     "label": "R1054, 19 Jul 1757",
-    "transcription": "decode/DOC_R1054_D2332_2332.txt",
+    "transcription": "transcr/R1054.txt",
     "decryption": "read/R1054.md",
     "summary": "The purpose of the Gouvernante's (Princess Anne's) journey to The Hague is not known. Some think she comes to push an augmentation of the land forces; her (pro-Orange / anti-French) party and even the ministers are starting to raise alarm; others say she wants a naval augmentation.",
     "language": "fr",
@@ -647,7 +659,7 @@
    {
     "doc": "codeAB",
     "label": "R1068, 26 Apr 1757, no. 172",
-    "transcription": "decode/DOC_R1068_D2335_2335.txt",
+    "transcription": "transcr/R1068.txt",
     "decryption": "read/R1068.md",
     "summary": "An Austrian courier passed through (The Hague) the evening before, on his way from Vienna to London. D'Affry says the minister will know better than he does what the courier carries.",
     "language": "fr",
@@ -681,7 +693,7 @@
    {
     "doc": "codeAB",
     "label": "R1070, 22 Jul 1757, no. 210",
-    "transcription": "decode/DOC_R1070_D1878_1878.txt",
+    "transcription": "transcr/R1070.txt",
     "decryption": "read/R1070.md",
     "summary": "It is said that the Gouvernante (Princess Anne, \"son Altesse Royale\") will go to the States of Holland to speak in favour of her father George II and urge the need to help [England/Hanover], invoking the danger to the Protestant religion. D'Affry doubts she will; if she does and proposes a land-forces augmentation, the other side will propose a naval augmentation instead.",
     "language": "fr",
@@ -717,7 +729,7 @@
    {
     "doc": "codeAB",
     "label": "R1073, 25 Jan 1757, no. 133",
-    "transcription": "decode/DOC_R1073_D1860_1860.txt",
+    "transcription": "transcr/R1073.txt",
     "decryption": "read/R1073.md",
     "summary": "A rumour had spread that d'Affry had given the States General a memorial saying the King would regard an increase of the Republic's land forces as a breach of neutrality. The rumour was killed at once, but d'Affry saw the Grand Pensionary: the King did not and never meant to meddle in their internal affairs, but out of friendship would regret to see them commit to heavy expenses whose consequences the Republic should fear.",
     "language": "fr",
@@ -769,7 +781,7 @@
    {
     "doc": "codeAB",
     "label": "R1076, 7 Jan 1757, no. 124",
-    "transcription": "decode/DOC_R1076_D2333_2333.txt",
+    "transcription": "transcr/R1076.txt",
     "decryption": "read/R1076.md",
     "summary": "The Dutch, after the alarm over the convoy (four warships were to escort it, two were disabled by the storm), are relieved that it has arrived. D'Affry expects the naval armament of [n] ships to go through without any increase of the land forces, and says the argument will be pressed harder now that people see that the English will respect Dutch navigation only in proportion to the protection it has, so convoys through the Channel must be strongly escorted.",
     "language": "fr",
@@ -805,7 +817,8 @@
   ],
   "key_file": [
    "key_M.json",
-   "key_X.tsv"
+   "key_X.tsv",
+   "key_merged.tsv"
   ]
  }
 }

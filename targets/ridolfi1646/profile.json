@@ -170,6 +170,18 @@
    "kind": "verification",
    "what": "Comparison with the independent recovery reported by Malcolm McBratney in issue #421 (own transcription, key, decryption and reading; texts in the issue, not copied). Key: all 71 two-digit letter and syllable values identical to key.tsv (47 = z, 64 = 97 = che, 98 = chi and the unattested 28, 30, 35 included); codes agree on 100, 101, 108, 114, 121, 126 and on the guesses 116 and 136; 107 differs (his Duca di Modena?, here Gran Duca). Transcription: 93 lines and 1,412 tokens in both, 1,393 agree with the first reading here (98.65%); of the 19 that differ 5 equal the b-alternative here and in 6 he emends back to the value here. A decoder written from his key reproduces his 93 decryption lines. At 7 of the 12 places confirmed by the blind sheet his transcription has the corrected digit; at 5 (atacatto 1.17, miglia 2.01, perche 2.13, al 4.04, Signor 4.04) it has the v1 digit. None of the 9 restored words or 5 open codes is settled; he reads confine (66) where the transcription here has confino (68) at 1.22. The independence timeline rests on his own file clocks and is not checkable from the repository.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): key.tsv re-applied to transcription.txt and compared group by group with reading.md. Audit figure 41 of 390 words departing, mostly artefacts (the description of X and of the unresolved codes taken for values; groups with the superscript dot ' dropped). Real: 12 words printed as certain follow the digits confirmed at the blind re-reading of 11 Nov 2026 while transcription.txt stays at the frozen v1, and they are not bracketed in the reading (listed in its table of confirmed corrections); 9 restored words bracketed; {spiagge} and {doppiar} differ from the decrypt (spiaggie, dopiar) by one letter inside braces. Elsewhere the reading is the decrypt letter for letter. No key value missing; no file changed but NOTES and this step.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: in reading.md the 12 words that follow a digit confirmed at the blind re-reading of 11 Nov 2026, and not the published transcription v1, are marked with square brackets round the letters concerned (12 places, no letter changed); header states the convention, that they stay counted as certain, and the decrypt forms of {spiagge} and {doppiar}. Page table row for the certain words qualified. Transcription, key and counts unchanged. v2_score hole rate 0.153 before, 0.177 after; decrypt audit 33 of 390 words departing (41 before).",
+   "result": "worked"
   }
  ],
  "outcome": {

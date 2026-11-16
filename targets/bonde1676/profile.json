@@ -659,6 +659,18 @@
       "kind": "verification",
       "what": "Issue #629 (Brice Dudout): images 113 right and 114 left are one letter of November 1675 in a second code (numbers 1-246, one number a letter), deciphered by the period gloss on 113 right and on lines 1-4 of 114 left, the bare lines of 114 left included. Checked on the Riksarkivet images by an AI agent: the last line of 114 left, 50.77.34.42.22.16.112.55.149, is 'Novembris' one number a letter (pencilled under it), where KEY_v10 gives d f o u f . i h .; the gloss carries about twice as many letters a line as the numbers and reaches the signature on line 4 of 114 left; the cipher's date is 18/28, the gloss has 13. His transcriptions, gloss reading and draft key (0.65 resubstitution agreement by his account, under his own floor) were not sent and not checked. No count, key or class of this target changes; the letter is outside this key.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Decrypt audit: the audit's 623 of 2,038 flagged words (memorial, Feb, 6 Oct and 13 Oct 1676) are mostly clear text printed between the cipher runs (541 of 623 outside the asterisks; 76 are the marker word 'clear' in the 6 Oct 1676 reading). Exact checks instead: own decoder from the manifest's key file reproduces units.tsv on 63 of 63 first-pass despatch pages; the 1,809 unbracketed cipher words of the ten despatch readings are the 1,809 class-S units letter for letter. Memorial, nine held-out pages: 5 words hold one unbracketed letter key v3 does not give (weak 103 read as a twice, 66 = å read as y twice, 169 = ä read as e), all in class-E units. Image 324: 31 of 145 cipher words hold a letter the v3 decode does not give, unbracketed, as the reading's header declares. outcome.key_file completed with the frozen states v4-v8 and v10 named in despatches/manifest.tsv; no key value changed.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Marks added to readings/memorial_1676-10-06.md after the decrypt audit: 5 letters that key v3 does not give put in brackets (lem[a][g]ne, prep[a]r[e], emp[lo][y]er, env[o][y]er, in[st][a]nces), no letter changed, all in class-E units, no count affected. The image-324 passage (31 words with unbracketed supplied letters against the v3 decode) left as declared in the reading's header.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -1115,7 +1127,13 @@
       "key.tsv",
       "overrides.tsv",
       "gloss/KEY_v2.tsv",
+      "despatch1677/gloss/key_history/KEY_v4.tsv",
+      "despatch1677/gloss/key_history/KEY_v5.tsv",
+      "despatch1677/gloss/key_history/KEY_v6.tsv",
+      "despatch1677/gloss/key_history/KEY_v7.tsv",
+      "despatch1677/gloss/key_history/KEY_v8.tsv",
       "despatch1677/key.tsv",
+      "despatches/keys/KEY_v10.tsv",
       "despatch1677/gloss/gloss_pairs.tsv"
     ],
     "notes": "No docs/_validate.py run by the contributor; the shuffled-key controls are the contributor's own (controls/shuffle.txt, despatch1677/controls/shuffle.txt). Folded from two pull requests (#486 memorial, #485 despatch) under one key, one entry."

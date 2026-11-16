@@ -153,6 +153,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 132 tokens, 21 types, en-modern order 4: reading -1.897 per letter; random keys -7.513 (z 8.0); key annealed onto shuffled ciphertext best -3.598 (mean -4.058, z 8.7); annealer on the real text -3.741. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the script flagged 14 of 39 words. All are clear words that stand in quotation marks in transcription.txt, or its tokeniser splitting the sign (-) and not knowing the starred signs of line 19. Re-applied by hand: the 132 signs of transcription.txt equal signs.txt, all 21 are in key.tsv, and they decode letter for letter to the cipher words of decryption.txt, reading.md and validation.tsv. No departure from the key; nothing changed. Noted: signs.txt and validation.tsv label the barred circle Ø, key.tsv (-). The image was not re-opened.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair round: nothing to mark (no word departs from the key). 'ten lines in cipher' corrected to seven in NOTES and in the At a glance box of the page, from transcription.txt (img3.15 to img3.21); not checked on the image; the page's description meta tags still say ten.",
+   "result": "worked"
   }
  ],
  "outcome": {

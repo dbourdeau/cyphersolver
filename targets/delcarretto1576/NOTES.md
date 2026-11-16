@@ -46,6 +46,40 @@ although it is awkward that the man was approved and sent to His Majesty as trus
 on their side, for the man is better known to His Majesty and his ministers than is believed, and neither he nor the one
 behind him will reach his aim. Beccaria, Signor Pietro and the man in question are not identified.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to `transcription.txt` and compared the letters with
+`reading.md`: 33 of 150 words departed (22%), 17 unmarked gaps, all "replaced" (il > o four times, il > u once, e > l twice).
+
+Causes, both artefacts of the audit script, none a defect of the reading:
+
+- Tokenisation (15 of the 17 gaps). `key.tsv` names the groups oPo, oP and oPo./oP. of the transcription as tokens 1, 2
+  and 3 (its header, and the header of `transcription.txt`). The script does not know that renaming and applied the key
+  sign by sign, so `koPok` gave n-i-l-i-n ("nilin") where the key gives n-o-n. Example: decrypt `chen[ili]nepersona`,
+  reading `chen[o]nepersona`.
+- Line labels (2 gaps shown, e > l). The script took the `L` of the labels `L06:`, `L08:` in the transcription for the
+  sign l (= e) and the `L` of `- L06:` in the reading for a letter. Example: decrypt `comein[e]seruitio`, reading
+  `comein[l]seruitio`.
+
+Checked by hand with a separate snippet using the documented tokenisation: `decryption.txt` is reproduced by `key.tsv` and
+`transcription.txt` word for word on L01-L11 and M1-M5 (two differences of presentation only: the sign E, which is not in
+the key, is printed `?` in `su?i`, and `p'ukxOkxC` is printed as one word `lintento`). The "key decryption" column of
+the word-by-word table of `reading.md` agrees with the key for every row (the row `hukna+^en^` was not recomputed). The
+149 words with status S have the letters the key gives (case, accents, u/v and the split of `ilconte` apart); the 33
+others all carry a mark ({ }, [ ] or the unresolved mark). The line-by-line reading and the table agree. Unmarked
+emendations: none found.
+
+Changed: `key_groups.tsv` added, the same key with the four groups written as in the transcription (`oPo.` and `oP.` = u,
+`oPo` = o, `oP` = o; source: `key.tsv` header and rows 1, 2, 3, and the `transcription.txt` header); no new value; and it
+is listed in `profile.json` `outcome.key_file` beside `key.tsv`. `key.tsv`, the frozen key, is unchanged. No reading,
+decryption or translation file was changed.
+
+After: 9 of 158 words depart (6%), 2 unmarked gaps, both the line-label artefact. With the line labels removed from
+in-memory copies of the two files the script gives 0 of 148 words departing, 25 marked letters. Nothing remains
+unexplained. Not checked: the transcription against the images (still a single pass), and the SHA-256 prefixes quoted
+for the frozen files (the repository copies of `key.tsv` and `transcription.txt` carry added headers and do not hash to
+them).
+
 ## Remaining gaps
 
 - 6 margin words lost or cut by the tear (M1, M2, M4, M5) - blocker: needs-physical-access; the left edge of c. 10r is torn and only the line ends survive
@@ -69,6 +103,7 @@ Not gaps of this reading (scope): the clear part of the letter is not transcribe
 |---|---|
 | `transcription.txt` | cipher lines L01-L11 and margin M1-M5, one character per sign shape |
 | `key.tsv` | the frozen key K_T, CC BY 4.0 |
+| `key_groups.tsv` | the same key with the groups oPo, oP, oPo., oP. written as in the transcription (16 Nov 2026) |
 | `decryption.txt` | mechanical decryption with K_T, no correction |
 | `reading.md` | the reading (Italian, spelling of the letter), marks, count, word-by-word notes |
 | `translation.md` | English translation |

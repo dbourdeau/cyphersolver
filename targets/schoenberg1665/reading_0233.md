@@ -2,6 +2,8 @@
 
 Key: `key.tsv` (simple substitution, regular). Conventions (Daniel's): plain = certain; {x} = probable; [x] = restored; ‹…› = unresolved. Transcription corrections made after the measurement are listed in `transcription_0233.txt`.
 
+Spelling: the key has 24 letters and no umlaut; the umlauts of the plain text (Churfürst, möchte, behüten, darüber) and its capitals are added in the reading, and u/v are printed by sense (cipher "uiel" = viel). Whether the manuscript marks the umlauts was not checked.
+
 | L | cipher (corrected) | plain |
 |---|---|---|
 | 1 | Agnsxakqw-qxbx Kuxt | Boyneburg - rede viel |

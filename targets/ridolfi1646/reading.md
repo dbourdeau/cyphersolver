@@ -1,16 +1,21 @@
 # ridolfi1646 - reading of the cipher (Italian, spelling of the letter)
 
-Marks: plain = certain (every group read directly with key.tsv); {x} = probable (encipherer's spelling or word division
+Marks: plain = certain (every group read directly with key.tsv, for 12 words after a corrected digit, see below); {x} = probable (encipherer's spelling or word division
 uncertain, or a nomenclator value given by the sense only: {value}⁽code⁾); [x] = restored (one group of transcription v1
 corrected, or a group supplied; list below); ‹nnn› = unresolved nomenclator group; / = the X sign (punctuation).
 Spelling of the cipher kept (u = u/v; consonants written single, the superscript dot marking some doubles: paso, socorso,
 acetti, coriero; n for m before p: senpre, tenpo). Reference = page.line where the clause starts.
+Brackets inside a word (i[l], ata[c]atto, 12 words; marked 16 Nov 2026): the letters come from a digit confirmed at the
+blind re-reading of 11 Nov 2026, not from transcription.txt, which stays the frozen v1 and gives another value there
+(table "Corrections confirmed on the images" below; the unedited output of the key is decryption.txt). These 12 words
+are counted as certain below. Two words in braces differ from the decryption by one letter: {spiagge} (decryption
+spiaggie, 2.21) and {doppiar} (decryption dopiar, 5.07).
 Pages 1-4: reading by the key proposer (Claude Fable 5.2), from its raw decryption, which our own decoder reproduces
 identically; page 5: reading by a Claude Opus 5.5 agent after the single held-out measurement (frozen/LECTURE-p5.txt).
 
 ## Reading, clause by clause
 
-- 1.01: Gia che questa mattina il Papa ha negato al Signor Don Antonio Ronchillo /
+- 1.01: Gia che questa mattina i[l] Papa ha negato al Signor Don Antonio Ronchillo /
 - 1.03: il paso per li {cinqueceto} caualli /
 - 1.05: che {V.E.}⁽126⁾ uol mandare in socorso del {Gran Duca}⁽107⁾ /
 - 1.06: ma ha detto che lo concederebbe per lo stato [di] Milano /
@@ -18,10 +23,10 @@ identically; page 5: reading by a Claude Opus 5.5 agent after the single held-ou
 - 1.10: che acetti il paso nella forma che {Sua Santita}⁽101⁾ uol concederlo /
 - 1.12: perche [quando] questa caualleria sara nella citta di Forli nella Romagna /
 - 1.15: per doue e il camino diritto uerso Bologna /
-- 1.16: se [il] {Gran Duca}⁽107⁾ sara stato atacatto dai {Francesi}⁽121⁾ /
+- 1.16: se [il] {Gran Duca}⁽107⁾ sara stato ata[c]atto dai {Francesi}⁽121⁾ /
 - 1.18: et hauera bisogno di questo socorso /
 - 1.20: potranno entrare nello stato del {Gran Duca}⁽107⁾ /
-- 1.21: non esendo il confino piu lontano di dodici miglia /
+- 1.21: non esendo il confino piu lontan[o] di dodici migl[i]a /
 - 2.01: ma quando il {Gran Duca}⁽107⁾ non habbia bisogno /
 - 2.03: seguiteranno il camino uerso [Bologna] e uerso lo stato di [Milano] /
 - 2.05: il partito e piaciuto a Don Antonio /
@@ -29,7 +34,7 @@ identically; page 5: reading by a Claude Opus 5.5 agent after the single held-ou
 - 2.08: che l ha lodato grandemente /
 - 2.09: e ne ha dispaciato coriero al {Gran Duca}⁽107⁾ /
 - 2.11: e credo ancora che in ogni caso sia per piacere a {Sua Santita}⁽101⁾ /
-- 2.13: perche non dubitera che li {Francesi}⁽121⁾ si dolghino che habbia fatta una nouita /
+- 2.13: [p]erche non dubitera che li {Francesi}⁽121⁾ si dolghino che habbia fatta una nouita /
 - 2.16: della armata {Francesi}⁽121⁾ non ci e altro auiso /
 - 2.17: dice bene una feluca ariuata in Roma di hauer sentito per queste {spiagge} che fuse giunta nel Golfo delle Spetie /
 - 2.22: ma quando l auiso fuse uero /
@@ -39,20 +44,20 @@ identically; page 5: reading by a Claude Opus 5.5 agent after the single held-ou
 - 3.08: e che pero [quando] debba andare nello stato di Milano pare piu uerisimile che sbarchi la soldatesca [al] fiume della {Lenza} /
 - 3.12: e che per la Ual di Taro si conduca nel Parmigiano /
 - 3.14: di che fa maggiormente sospettare che il ‹115› di {Soure} sia stato lungamente a negotiare con quel {Duca}⁽114⁾ in nome dei {Francesi}⁽121⁾ /
-- 3.19: il {Duca}⁽114⁾ di Uandomo mi scriue la risolutione delli Ugonotti di ‹103› di solleuarsi /
+- 3.19: il {Duca}⁽114⁾ di Uandomo mi scriue la ris[o]lutione delli Ugonotti di ‹103› di solleuarsi /
 - 4.01: e la sua di farsi capo [loro] /
-- 4.02: et io ho fatto uedere le lettere originali al Signor Amirante /
-- 4.04: il quale uorebbe dare al detto {Duca}⁽114⁾ /
+- 4.02: et io ho fatto uedere le lettere originali a[l] S[i]gnor Amirante /
+- 4.04: il quale uorebbe dare a[l] detto {Duca}⁽114⁾ /
 - 4.06: li dodici mila ducati che {Sua Maesta}⁽100⁾ comando gia che gli fusero pagati /
 - 4.08: poi che se ne uorebbe preualere per farli sborsare ai capi delli Ugonotti /
-- 4.11: quando io habbia un poco di tenpo mandero la copia della detta lettera di Uandomo a {V.E.}⁽126⁾ /
+- 4.11: quando io habbia un poco di tenpo ma[n]dero la copia della detta lettera di Uandomo a {V.E.}⁽126⁾ /
 - 4.15: alla quale non poso dir altro del negotio di Buglione /
-- 4.17: {stano} senpre nei medesimi termini /
+- 4.17: {stano} senpre nei medesimi termin[i] /
 - 4.19: ma con le medesime parole che mi sara data subito la
 - 5.01: scrittura richiesta /
 - 5.02: et io non uorei che con la [lunghezza] /
 - 5.03: disperato Buglione si acordase con li {Francesi}⁽121⁾ /
-- 5.05: poi che il {Cardinale}⁽108⁾ Mazarino senpre gli fara {doppiar} le oferte
+- 5.05: poi che il {Cardinale}⁽108⁾ Mazarino senpre gli fara {doppiar} le ofer[te]
 
 Then in clear: "Di Roma li 8 Maggio 1646".
 

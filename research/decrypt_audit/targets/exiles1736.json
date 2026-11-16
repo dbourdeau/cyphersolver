@@ -1,0 +1,81 @@
+{
+ "folder": "exiles1736",
+ "causes": {
+  "A": "key.tsv holds the 30 letter signs only; reading prints 16 uses of code groups 125 (12), 455 (2), 136, 142 as names without brackets, and 3 undotted letter groups (435 x2 'Ham', 4345 'Han'); values were only in NOTES, contributor_notes.md and ../branicki1757/numbers.md",
+  "B": "3 letter changes with no mark and no convention (repplika>replika, wo>W., z>ze), plus case endings supplied without mark on 9 of the 16 code names (Stanisława x5, Stanisławem, Augusta, Warszawy, Warszawie)",
+  "C": "unstated spelling normalisation: w>u/v in 9 Latin/French words (qwidem, conserwabit, awec ...), asz>aż x3, Polish diacritics added on 57 letters, j/y>i x12, æ/œ>ae/oe x10; word division (stated)",
+  "D": "the letter alternates clear and cipher; the reading interleaves the clear passages (plain) with the cipher (bold)",
+  "F": "the script drops the << >> clear passages from the decrypt, so each short clear passage counts as 'only in reading'; this is most of the 99 words"
+ },
+ "before": "99 of 552 words depart (texts compared: 1)",
+ "after": "99 of 552 words depart (texts compared: 1); unchanged, the script does not merge two key files and still drops clear passages. By hand: every letter sign decrypts as the reading prints it apart from the cases listed",
+ "files_changed": [
+  "targets/exiles1736/codes.tsv",
+  "targets/exiles1736/profile.json",
+  "targets/exiles1736/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "125",
+   "value": "Stanisław",
+   "source": "contributor_notes.md 'The cipher' table; NOTES.md 'The cipher'; targets/branicki1757/numbers.md:78"
+  },
+  {
+   "sign": "455",
+   "value": "August",
+   "source": "contributor_notes.md 'The cipher' table; NOTES.md 'The cipher'; targets/branicki1757/numbers.md:79"
+  },
+  {
+   "sign": "136",
+   "value": "Warszawa",
+   "source": "contributor_notes.md 'The cipher' table; targets/branicki1757/numbers.md:80"
+  },
+  {
+   "sign": "142",
+   "value": "Warszawa",
+   "source": "contributor_notes.md 'The cipher' table; targets/branicki1757/numbers.md:80"
+  },
+  {
+   "sign": "675",
+   "value": "[?Monti] (guess, status column says so)",
+   "source": "contributor_notes.md 'The cipher' table; targets/branicki1757/numbers.md:122"
+  },
+  {
+   "sign": "435",
+   "value": "ham (letters 4.3.5 without dots)",
+   "source": "contributor_notes.md 'The cipher', paragraph 'Two undotted groups are not code'"
+  },
+  {
+   "sign": "4345",
+   "value": "han (letters 4.3.45 without dots)",
+   "source": "contributor_notes.md 'The cipher', same paragraph"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 3,
+  "examples": [
+   {
+    "text": "letter of 4 Feb 1736",
+    "decrypt": "repplika",
+    "reading": "replika",
+    "where": "transcription.txt p3.21 / reading.md:29"
+   },
+   {
+    "text": "letter of 4 Feb 1736",
+    "decrypt": "y wo xa litt",
+    "reading": "y W. Xa Litt.",
+    "where": "transcription.txt p5.01 / reading.md:35"
+   },
+   {
+    "text": "letter of 4 Feb 1736",
+    "decrypt": "z [125]",
+    "reading": "ze Stanisławem",
+    "where": "transcription.txt p4.01 / reading.md:31"
+   }
+  ],
+  "note": "Not counted in the 3: case endings on 9 code names; the w>u/v, asz>aż, diacritic and j/y>i normalisations (cause C), which the reading's header does not state."
+ },
+ "page_statements_false": [],
+ "remaining": "docs/exiles1736.html states nothing false: 'About twenty more code groups are read as names from context and are not marked' matches the 19 found. It does not say the reading's spelling is normalised. Not checked: transcription against scans; clear passages of the reading against those of the transcription (e.g. transcription 'donoszę' vs reading 'donosząc' in clear text was seen but not surveyed).",
+ "confidence": "high"
+}

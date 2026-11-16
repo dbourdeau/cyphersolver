@@ -100,6 +100,57 @@ unknown: the reread logs do not size them).
 The recorded figures were measured over each whole letter, clear text included. R9846 (read from its bound clear, 1.0)
 and the letters decoded, not read, are unchanged; the target stays read in part.
 
+## Decrypt audit, 16 Nov 2026
+
+The audit script (`research/decrypt_audit/`) could compare one text, R9867: 20 of 159 words of `R9867_reading.md`
+depart from `key_merged.tsv` applied to `r9867_cipher.txt` (13%). The other texts were not compared by the script
+(clear text mixed with cipher, or transcription and reading too far apart). R9867 was then checked by hand, word by
+word, against a mechanical decode made with the rules of `decode_merged.py` (read-only copy, the script itself was
+not run). Causes:
+
+- **Audit artefact.** Seven annotations in the plain column held a comma or a slash inside the brackets, which the
+  audit parser read as part of the value: "c (letter, standing alone)" gave "cletter" (also for z and y), and
+  "a (letter; word a/ha)", "dinero (+r/c = dineros)", "Magestad (su xun = su Mt, the Emperor, ...)", "mu (syllable;
+  mui, mudado)". The values were right; the annotations are reworded (see below).
+- **Normalisation.** `rab` = "vuestra magestad" is printed "V. Mt." (six times in R9867); `yun` + e-s ("fran-" + es)
+  is printed "franceses"; "Mussiur" (twice) and "necessidad" are printed with ss where the figures give one s.
+- **Transcription older than the reading.** `r9867_cipher.txt` was not updated after the 22 Oct re-read on the
+  image; the changes are in `R9867_corrections.tsv` (8 rows) and the reading follows them without a mark: l07
+  `ʇʇ` re-read ß, "si se les [r > ha] de hazer"; l17 `ʇʇʇ ß` re-read ɣ̶, "alar[b > g]ar".
+- **Letters changed with no mark and no row in the corrections table: 9 words in R9867.** l02 "le r dicho" > "le
+  ha dicho"; l10 m-o-s-t-a-r > "mostrar"; l15-16 "de r-e-u-r-e" > "de Beure" (the note in the cipher file covers l01
+  and l13 only); l16 "r V. Mt." > "a V. Mt."; l17 "aqui es-cusado" > "aqui es escusado" (es printed twice); l19
+  `ye` "dizi-" + r > "dezir"; l20 "aqui r delante" > "aqui adelante"; l21 "me lo r mandado" > "me lo a mandado";
+  l24 "a l-uatro" > "a quatro" (the sign conflict is noted in the cipher file, not in the reading). Five of the
+  nine are the r/a look-alike (`ʇʇ` for the ß-like a) that the re-read log describes in general. The reading
+  file was not changed; whether these are bracketed is decided centrally.
+- **Values in use but in no key file.** `zm` = como, `ʃeg` = tengo, `zub` = alla (re-read log, probable; bracketed
+  `[?…]` in the readings), `m̶` = c beside f and `m̶ʒ` = ch (re-read log and corrections tables), `tef` = paz beside
+  nec- (source column of `key_retry.tsv`, row `ʃom`), and `yun` as the spelling of `ɣun` (handled in
+  `decode_merged.py`, not in the key).
+
+Changed: (1) the seven annotations reworded in `key_1524.tsv`, `key_retry.tsv` and `key_merged.tsv` (comma or slash
+inside the brackets replaced by ";", "or", "and"; no value changed, and `decode_merged.py` reads them as before);
+(2) new `key_reread_2026-10-22.tsv` with the seven values above, each with its source, listed in `profile.json`
+`outcome.key_file`. It is not merged into `key_merged.tsv`, which `decode_merged.py --build` writes.
+
+After: R9867 17 of 171 words depart (10%; the decrypt found in the reading rose from 85% to 94%). The script can now
+also compare R9866: 74 of 187 words depart (40%). R9866 was not checked word by word. Its sampled departures are
+clear text between the cipher runs, the look-alike re-reads of `R9866_corrections.tsv` (the transcription was not
+updated), `m̶` read c and `tef` read paz where the key file gives f and nec-, and at least one unmarked letter change
+with no row in the corrections table (R9 l6 p-e-n-c-i-d-o-s printed "vencidos"). R9868, R9869, R9683 and R9667
+were not checked. The fuller repair would be to write the 22 Oct re-reads into the transcription files.
+
+**Marked on 16 Nov 2026.** In `R9867_reading.md` the 9 words listed above were marked with `[ ]` round the letters the
+transcribed signs do not give ([ha] dicho, most[r]ar, [B]eure, [a] V. Mt., [es]cusado, d[e]zir, [a]delante, [a]
+mandado, [q]uatro); no letter was changed. Left unmarked: "les ha de hazer" and "alargar", which follow rows of
+`R9867_corrections.tsv`. The header gained a paragraph stating the marks and the conventions (V. Mt., franceses,
+ss in Mussiur and necessidad). Hole rate by `research/reading_audit/v2_score.py` (es): 0.170 before, 0.214 after,
+on 206 words; the state stays "decoded, not read". The other readings were not marked: R9866 has at least one
+unmarked change with no corrections row ("vencidos") and was not verified word by word, nor were R9868, R9869,
+R9683 and R9667. On the page, the sentence that the corrections are in the `<record>_corrections.tsv` tables now
+adds that the tables do not list every change.
+
 ## Remaining gaps
 
 - R9667 (5 May 1523), cipher runs decoded, not read - blocker: no-key-material (1523 sign set, no crib); needs-physical-access for the contemporary decipherment CSP 548 used (RAH Salazar A-28)

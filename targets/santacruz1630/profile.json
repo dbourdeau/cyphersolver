@@ -163,6 +163,18 @@
    ],
    "what": "D.213 transcribed in full (7 pages) and read; probable and restored words justified one by one.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key_K6A.tsv re-applied to transcription.txt and compared with reading.md. Audit figure 219 of 1,112 words departing. Own alignment of 1,169 words: 896 as the key file gives, 75 departing and marked, 57 departing by the stated spelling normalisation only, 141 departing otherwise unmarked (second homophone values and about ten codes that the frozen key file does not hold, abbreviations expanded). key_K6A_additions.tsv added with five values established by NOTES and by the held-out pair D.167/D.168 (hon, 155, X = t, fer = do, fri = di); fri = di would resolve 'se os ‹fri› z e' as 'dize', reading not changed. Audit figure unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: the 141 flagged words were verified one by one against decryption.txt and the key files; 122 [x] marks in 119 words added to reading.md (codes with no key row, homophone values not in the key files, letters and words supplied), no letter changed; 16 words follow the second values now in key_K6A_additions.tsv and are not marked; dropped or reordered letters have no mark. v2_score hole rate of reading.md 0.023 before, 0.115 after.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -225,7 +237,10 @@
     "note": "Test material, not a reading: the transcription of D.167 and its contemporary decipherment (image 6, shelfmark D.168), scored in validation/score.txt (0.752 of words, 0.857 of characters)."
    }
   ],
-  "key_file": "key_K6A.tsv",
+  "key_file": [
+   "key_K6A.tsv",
+   "key_K6A_additions.tsv"
+  ],
   "provenance": "contributed",
   "validation": {
    "date": "2026-10-28",

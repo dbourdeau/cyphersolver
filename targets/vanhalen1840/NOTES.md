@@ -126,6 +126,30 @@ Not done: **the transcription was not checked against the images.** PARES answer
 verification and again at integration on 12 Nov 2026 (one connection reset, one 429), and no browser was available to the integrating
 session. The three doubtful numbers remain unchecked. This source needs a browser session (Chrome).
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key.tsv` to `transcription.txt` and compared the letters with `reading.md`:
+29 of 57 words depart (51%), key cover 95%.
+
+Causes, checked with a read-only snippet (each run decoded with `key.tsv`, first reading of a|b, and compared with
+its line in "Reading, run by run"):
+
+- Clear text of the manuscript (nearly the whole of the flag). `reading.md` prints the plain words around each run
+  (in capitals in the run list, in lower case in "The cipher passage in its sentences"), and the audit took them
+  for deciphered text. Example: "SERIA DE DESEAR QUE V.S." before S3. These words are those of `frozen/clair.txt`.
+- Audit artefact. {custodiar} (key: *custbdiar*) and {dichosa} (key: *dicbosa*) are marked with braces, which the
+  audit does not count as a mark; ve[n]ir (key: *ueir*) is in square brackets and was counted as marked. The 5% of
+  tokens "not covered" is the token 13|18 of S8.
+- Stated convention: u printed as v in "ve[n]ir" in the sentence section (the run list keeps the key's letter in its
+  note, "u for v in ueir").
+
+Result of the check: S3, S4, S5, S6, S7 are letter for letter what the key gives; S1, S2 and S8 differ only in the
+three marked words. No unmarked emendation was found. All 24 numbers of the letter are in `key.tsv`.
+
+Changed: nothing. Figures after: the same, 29 of 57.
+
+Not checked: the transcription and the plain text against the images (PARES, as before).
+
 ## Remaining gaps
 
 - S8 no. 4 (13 in pass 1, 18 in pass 2, read 19 = h for "dichosa") - blocker: illegible; the sign was already doubtful on Brice Dudout's blind sheet of 9 Nov 2026 at 531x648 px; a re-reading on a better image would settle it; PARES refused scripted access (HTTP 429) on 12 Nov 2026

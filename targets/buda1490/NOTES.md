@@ -207,6 +207,67 @@ quoniam ... communem habere solet), in its reading position; none of the deleted
 ...", "bona habere"). The cipher writer added "et" three times and "non" in "amabat non mediocriter", where the minute
 has a doubtful word, and "quoniam" where the minute is illegible. `reading/clear_vs_cipher.md` lists the differences.
 
+## Decrypt audit, 16 Nov 2026
+
+The audit of `research/decrypt_audit/` applies the key file to the transcription and compares the letters with
+`reading/latin.md`. Its figure for this target: 172 of 536 compared words depart (32%), 90 unmarked gaps, key.md
+applied token by token (whitespace), 93% of the decrypt found in the reading. The cause was looked for in the
+files; nothing was run but read-only recounts, and no reading file was changed.
+
+What the 90 gaps are (sorted by a rough rule, so the split is approximate):
+
+- About 57 are pair units. The key is written in units (`oH` = q, `Ho` = p, `nq` = q, `ni` = i, `LL` = ll, `Om` = m,
+  and the codes `Ga`, `Gp`, `ve`) that are two tokens, or one token read by its neighbour, in the transcription. Token
+  by token `o H` gives "ep" where the reading has q (quemadmodum), `n` gives nothing, `6 gA` gives "co" for ll
+  (excellentia). Audit artefact; the rules were in `scripts/ext/em_align.py` and `transcription/signs.md`, not in a
+  key file.
+- About 27 touch a code sign. key.md writes "code: serenissimumdominumregemhungarie / ..." and the script took the
+  first form with the word "code" as letters, where the reading prints the case form the minute has at that place
+  (Serenissimus Dominus Rex, Serenissimo Domino Rege). Audit artefact, and a limit of any key table: the form comes
+  from the minute.
+- About 30 others: a sign with several values given its first one (`qB` u where the word has f or s: "uuit" for
+  fuit; `3` n for g: "ani" for agi; `qA` s for i or t: "csrca" for circa); and tokens that carry the doubt mark `?`
+  (67 of them, e.g. `p?` in cotraxerat), which the script did not look up, so their letter is missing.
+- The 12 words filled from the minute where a sign is lost stand in ⟨ ⟩; the script knows only [ ].
+
+The check that fits this cipher, done on 16 Nov 2026 with the unit rules and `key.json`:
+
+- The 3,199 tokens of `transcription/p1.txt`-`p4.txt`, joined by the unit rules, are token for token the 3,122
+  units of `scripts/data/alignment.json`.
+- 2,984 units take a value `key.json` holds; 9 take a value held only in `measure.py` (below); 14 are lost signs;
+  115 stand where the minute has a letter their key value does not give, or nothing. The words these 115 stand in
+  are printed as [?word] or [...], or, where the cipher's own wording was kept (uigesimam, extendet, debebit ...),
+  with the letters the key gives and not the minute's.
+- Of the 624 words of `reading/latin.md` (identical to what the recount gives), 63 are inside [ ] or ⟨ ⟩. The other
+  561 are the read words, and each is letter for letter what its signs give: 499 spelt by letter signs, 53 words of
+  code signs, 7 added words (three "et" from the sign `&`, non, quoniam and quod from code signs, uelit spelt out on
+  P3L04), and two words that cross a word boundary of the alignment and spell out on the page files (P2L22 neque =
+  P o o H qB w, P3L04 habere = s F tp o a w). **Unmarked emendations: none.**
+- What the key does not decide and the minute does: which value a sign with several values takes at each place, and
+  the case form of a code sign. That is stated above ("The minute as evidence: circularity").
+
+Defect of the records, repaired: the values the retry pass adopted, `qA` = i (4 places) and t (3), and `y` = ducenta
+milia / ducentorum milium (2), were in `measure.py` (lines 39-40) and in these notes but in neither key file, so 9
+units in 11 read words could not be regenerated from the key files; and the token-to-unit rules were in a script.
+Both are now in `key_supplement.md` (each row with its source), listed in `profile.json` `outcome.key_file`.
+`key.json` and `key.md` are unchanged: `scripts/build_key.py` writes them and `scripts/regrade.py` grades words by
+what key.json alone gives. The head of `reading/latin.md` says "The cipher text under key.json"; for those 11 words
+it is key.json with the extended values.
+
+Figures after: the audit script still gives 172 of 536 (it cannot apply a context rule or choose among values, and
+the supplement's tables do not cover enough tokens to be chosen). By the check above, 0 of 561 unmarked words depart.
+
+Not checked: the transcription against the images (not in the repository), and whether the alignment chose the
+right value where a sign has several; this audit only asks whether the printed text follows from the files.
+
+Marked on 16 Nov 2026 (second round): no place was marked, because the check above found no unmarked departure.
+One header line was corrected in five files: `reading/latin.md` ("The cipher text under key.json") and
+`reading/p1.md`-`p4.md` ("Decryption of DL 46150 under key.json") now read "under key.json and the extended values
+of key_supplement.md (qA = i/t, y = 200,000)". No letter of the text was changed. `measure.py` writes these five
+files and still carries the old header strings (lines in `build`), so a rerun would put the old wording back; the
+script was not edited. The page `docs/buda1490.html` shows the same headers inside its generated texts block and
+was not edited: it takes the corrected wording at the next site rebuild.
+
 ## Remaining gaps
 
 - 8 words on signs left ambiguous by the image check - blocker: illegible; P1L04 dominationem, P1L05 cepit, P1L20

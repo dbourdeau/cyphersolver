@@ -1,0 +1,87 @@
+{
+ "folder": "swieten1759",
+ "causes": {
+  "A": "none: key.json gives a value to all 553 groups; 6 stale entries (53, 114, 282, 479, 505, 662) occur in no text",
+  "B": "R956: 12 places inside the cipher runs differ from the decrypt with no mark; R957: 2 words (les, beaucoups) follow the contemporary decipherment against the figures, plus 'supposition' which is documented in the Notes but not bracketed",
+  "D": "R956, most of the 52 words: READING.md prints the clear French between the cipher runs, unread groups as numbers and an inline note on Crillon",
+  "F": "none (whitespace tokenising correct, coverage 100%)"
+ },
+ "before": "R957 3 of 76, R956 52 of 153 words depart (texts compared: 2)",
+ "after": "unchanged: R957 3 of 76, R956 52 of 153",
+ "files_changed": [
+  "targets/swieten1759/NOTES.md",
+  "targets/swieten1759/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 14,
+  "examples": [
+   {
+    "text": "R956 run 8",
+    "decrypt": "pendant du hiver (189 = du)",
+    "reading": "pendant l'hiver",
+    "where": "READING.md:21"
+   },
+   {
+    "text": "R956 run 9",
+    "decrypt": "le prance pense (348 375 = p ra)",
+    "reading": "Le prince pense",
+    "where": "READING.md:22"
+   },
+   {
+    "text": "R956 run 11",
+    "decrypt": "ne ch er e (315 160 210 194)",
+    "reading": "nécessaire",
+    "where": "READING.md:24"
+   },
+   {
+    "text": "R956 run 11",
+    "decrypt": "du de e broglio (189 180 194)",
+    "reading": "duc de Broglio",
+    "where": "READING.md:23"
+   },
+   {
+    "text": "R956 run 11",
+    "decrypt": "ignora ne t non (375 315 400 322)",
+    "reading": "ignorant, et non",
+    "where": "READING.md:24"
+   },
+   {
+    "text": "R956 run 11",
+    "decrypt": "oficier; arme e xcepte",
+    "reading": "officier; armée, excepté",
+    "where": "READING.md:23"
+   },
+   {
+    "text": "R956 runs 3, 16",
+    "decrypt": "q il, q on (366 = q)",
+    "reading": "qu'il, qu'on",
+    "where": "READING.md:17,28"
+   },
+   {
+    "text": "R956 runs 15, 18",
+    "decrypt": "le marechaux, le ordres (292, 291 = le)",
+    "reading": "les maréchaux, les ordres",
+    "where": "READING.md:27,29"
+   },
+   {
+    "text": "R956 run 17",
+    "decrypt": "plainttes (400 403 = t te)",
+    "reading": "plaintes",
+    "where": "READING.md:28"
+   },
+   {
+    "text": "R957",
+    "decrypt": "le revenus (292 = le); beaucoup de (423 180)",
+    "reading": "les Revenus; beaucoups de",
+    "where": "R957_reading.md:14,16"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Aligned group by group with the figures (23 October 2026), it agrees word for word once seven values of the table rebuilt here are corrected, each at every occurrence ... One group is the encipherer's slip\" — the figures also give 'le revenus' and 'beaucoup' where the decipherment has 'les' and 'beaucoups'",
+  "\"The figures and the decipherment agree word for word except at *supposition*\" (R957_reading.md embedded in the page) — same two words"
+ ],
+ "remaining": "Whether the 12 R956 places are encipherer's slips, wrong key values (e.g. 375, 189, 160, 315) or misread/mis-divided groups was not checked: no image access, no decipherment of R956. Origin of the 6 stale key entries not found.",
+ "confidence": "high"
+}

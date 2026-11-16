@@ -1,0 +1,111 @@
+{
+ "folder": "stade1710",
+ "causes": {
+  "A": "key.tsv lacked 5 groups the reading uses (25, 238, 345, 473, 891; 12 occurrences), had a placeholder '?54' for 88 (sk), ⟨wis?⟩ for 1049 (reading {wilkor}) and '1' for 183 (reading 'en'); 160 is qi in the key and qui in decryption.txt (left)",
+  "B": "9 words with a letter supplied or changed and no mark (herrorna x2 for ro-ra, Stater for sta-t-ä-r, fiendteligheter, uti, kommas, heelt, Ministri, wårt x2 for w-ä-r-t counted as 2); 4 clear words of the Rådet copy printed outside brackets; groups 'ra' in L31 replaced by ‹…›",
+  "C": "spelling normalised with no statement: 10 doubled consonants (os printed oss x5, oförrätt, förskaffa, upprätta, ett, bestämma), 7 vowel respellings (obetänksamhet x2, måst x2, lång x2, händer), about 22 words with diacritics added (giöra, på, nöjaktig)",
+  "D": "clear passages in [..] and 7 marked departures ({ge(r)na}, {sig}, satisfa{c}tion, Statä{r}, Konung‹se›en, be{s}tämma, dan{a}); no defect"
+ },
+ "before": "26 of 259 words depart (texts compared: 1; key covers 94% of groups)",
+ "after": "29 of 268 words depart (texts compared: 1; key covers 98%); more words compared, the remaining departures are in the reading",
+ "files_changed": [
+  "targets/stade1710/key.tsv",
+  "targets/stade1710/NOTES.md",
+  "targets/stade1710/profile.json"
+ ],
+ "key_values_added": [
+  {
+   "sign": "25",
+   "value": "⟨ak?⟩",
+   "source": "NOTES.md Notes ('25 = {ak}'); decryption.txt E06"
+  },
+  {
+   "sign": "238",
+   "value": "⟨det?⟩",
+   "source": "NOTES.md Notes ('Group 238'); decryption.txt E05, L06"
+  },
+  {
+   "sign": "345",
+   "value": "⟨andra?⟩",
+   "source": "NOTES.md Notes ('345 = {andra}'); decryption.txt E05, L08"
+  },
+  {
+   "sign": "473",
+   "value": "⟨Dansk?⟩",
+   "source": "NOTES.md Notes ('Group 473'); decryption.txt E05, L08, L12"
+  },
+  {
+   "sign": "891",
+   "value": "⟨såsom⟩",
+   "source": "decryption.txt E08, L33"
+  },
+  {
+   "sign": "88",
+   "value": "sk (was ?54)",
+   "source": "NOTES.md System (2nd series = 1st + 34; 54 sk); decryption.txt L34"
+  },
+  {
+   "sign": "1049",
+   "value": "⟨wilkor?⟩ (was ⟨wis?⟩)",
+   "source": "NOTES.md Notes ('1049 = {wilkor}'); decryption.txt L22"
+  },
+  {
+   "sign": "183",
+   "value": "en (1) (was 1)",
+   "source": "NOTES.md System ('183 = 1 (en)'); decryption.txt L21"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 9,
+  "examples": [
+   {
+    "text": "envoys' copy",
+    "decrypt": "sta-t-ä-r-he-r-ro-ra (statärherrora)",
+    "reading": "Staterherrorna",
+    "where": "decryption.txt E05 / reading.md:7"
+   },
+   {
+    "text": "Rådet copy",
+    "decrypt": "kan kom-ma öfwer-en-s",
+    "reading": "kan kommas öfwerens",
+    "where": "decryption.txt L27 / reading.md:11"
+   },
+   {
+    "text": "Rådet copy",
+    "decrypt": "ut 183=en fred-z-hand-l-ing",
+    "reading": "uti en fredzhandling",
+    "where": "decryption.txt L20-L21 / reading.md:11"
+   },
+   {
+    "text": "Rådet copy",
+    "decrypt": "Minist-i",
+    "reading": "Ministri",
+    "where": "decryption.txt L33 / reading.md:11"
+   },
+   {
+    "text": "both copies",
+    "decrypt": "w-ä-r-t (61 66 52 93)",
+    "reading": "wårt",
+    "where": "decryption.txt E09, L35 / reading.md:7, 11"
+   },
+   {
+    "text": "envoys' copy",
+    "decrypt": "fi-en-te-lig-heter",
+    "reading": "fiendteligheter",
+    "where": "decryption.txt E07 / reading.md:7"
+   },
+   {
+    "text": "Rådet copy",
+    "decrypt": "[sedan hwartill de låtit] [sig] (clear)",
+    "reading": "hwartill de låtit sig printed outside brackets",
+    "where": "decryption.txt L08 / reading.md:11"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"The key file in the repository holds 334 values.\" and \"the key (334 values)\" — 339 since the additions; before them the file lacked five values the reading uses",
+  "\"spelling of the copies kept\" — false before this audit: the reading doubles consonants and respells vowels the cipher writes otherwise (os/oss, long/lång, most/måst, obetenksamhet/obetänksamhet)"
+ ],
+ "remaining": "160 qi (key) against qui (decryption.txt) left unresolved; placeholders ?51/?56/?58 at 85, 90, 92 left (not used in the letter); profile system.distinct_symbols still 334; NOTES Status line counts not re-derived; clear passages not compared with images; whether the B cases are clerk's spellings worth a mark or errors of the reading is for the central decision",
+ "confidence": "high"
+}

@@ -1,0 +1,21 @@
+{
+ "folder": "carranza1914",
+ "causes": {
+  "F": "all 7 departing words: the audit skips the '>' lines of the reading file (the reading proper) and compares the 'Coded runs' section, taking the run labels C02 to C08 for text; each label gives one letter c",
+  "D": "the reading file interleaves clear text and carries the coded runs a second time with labels; nothing wrong"
+ },
+ "before": "7 of 60 words depart (texts compared: 1)",
+ "after": "7 of 60 by detail.py, unchanged (cause is in the script). With the labels 'C0n |' left out: 0 of 53; coded runs only on both sides: 0 of 59.",
+ "files_changed": [
+  "targets/carranza1914/NOTES.md",
+  "targets/carranza1914/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 0,
+  "examples": []
+ },
+ "page_statements_false": [],
+ "remaining": "Nothing unexplained. key_frozen.tsv has c (groups 18, 28) and 60 entries as the page says. audit.py would need to read blockquote lines or drop run labels; outside the folder. Groups were not checked against the image.",
+ "confidence": "high"
+}

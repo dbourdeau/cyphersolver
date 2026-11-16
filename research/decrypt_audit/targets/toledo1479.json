@@ -1,0 +1,31 @@
+{
+ "folder": "toledo1479",
+ "causes": {
+  "B": "1 letter: L24 'El legato che c'era' from elegatochecera (second l has no sign, no mark); same in decryption.txt reading column",
+  "C": "declared conventions: word division, accents, apostrophes; letters not written in round brackets (d(i) x8, no(n), franc(o))",
+  "D": "main cause: about 300 words of clear hand between the cipher runs, italics in reading.md, [ ] in transcription.txt; no code group is given a value anywhere (all 60 stay as ⟨..⟩)",
+  "E": "clear-hand text differs between transcription.txt and reading.md in 16 of 36 lines (e.g. L08 '10' vs '18?', L13, L30 '[clear]' vs 'ora ... Napole? ...', L31 'nischono?' vs 'ne sono?')",
+  "F": "key line for sign # (h) skipped as a comment; tokens split on + so the cross (d, 37 positions) is lost; digits 3 and 6 of code numbers decoded as letter signs r and s; symbol P decoded as sign p (z)"
+ },
+ "before": "93 of 201 words depart (texts compared: 1)",
+ "after": "93 of 201 words depart (texts compared: 1); unchanged, nothing to repair in the key",
+ "files_changed": [
+  "targets/toledo1479/NOTES.md",
+  "targets/toledo1479/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 1,
+  "examples": [
+   {
+    "text": "MAP LXXII 171, L24.4",
+    "decrypt": "elegatochecera",
+    "reading": "El legato che c'era",
+    "where": "reading.md:78 (**L24**); decryption.txt L24.4"
+   }
+  ]
+ },
+ "page_statements_false": [],
+ "remaining": "Own check: key.tsv reproduces the literal decode of 113 of 113 cipher items, and reading.md minus italics, codes, [ ] and ( ) equals the decode in 35 of 36 lines. docs/toledo1479.html states nothing found false; its 'the holes are marked in the reading' has the one exception above; it says 108 cipher words re-decrypted (true, from VERIFICATION.md). NOTES Escalation says 'the 19-sign key' while key.tsv has 20 signs (19 letters). The key file's '#<TAB>h' row is skipped by any parser that treats # as a comment; left as is (contributor's file). No sign compared with an image.",
+ "confidence": "high"
+}

@@ -11,7 +11,7 @@ of his letter to Count Palatine Frederick); f. 122 is King John's letter for Laz
 ## Reading
 
 Dici non potest, princeps illustrissime et domine mi obseruantissime, quam grata fuerint [D] consilia uestre
-illustrissime dominacionis, pro quibus magnas agit gracias uestre illustrissime dominacioni [F]; et in omnibus secuta
+illustriss[ime] dominacionis, pro quibus magnas agit gracias uestre illus[trissime] dominacioni [F]; et in omnibus secuta
 est maiestas sua consil[i]a uestre dominationis, nam scripsit sua maiestas ad ducem [?Fredericum] romani imperii
 capitaneum [?omnia] que [?suasit] uestra dominacio. Sciat autem illustrissima uestra dominacio quo[d] [F] est ad ea omnia
 propensus ac paratus quecunque [h]onorem et dignitatem ac commodum uestre dominacionis spectare [?possent], illamque
@@ -34,7 +34,7 @@ quingentesimo uigesimo nono. Hoc est exemplum literarum ad illustriss dominum Fr
 scripsit uestre illusstriss domi[?]acionis Hieronimus de Lasco.
 
 [?Ioannes] [?Dei] [?gracia] [?rex] Ungarie et cetera. Illustrissimo principi domino Ludouico duci [?Bauarie] [un]
-fratri et amico suo carissimo. Illustrissime princeps, frater et amice [?noster] carissime, [...] [?colloquium] cum
+fratri et amico suo carissimo. Illustrissime [?princeps], frater et amice [?noster] carissime, [...] [?colloquium] cum
 presencium [?]atore Lasaro iudeo nuncio dominacioni uestre, cui nonnulla ipsimet commisimus dominacioni uestre nostro
 nomine refferenda; [?itaque] rogamus uelit illi nostro nomine dicturo fidem omnem [?adhibere], et quidquid ad rem
 [?nostram] istic [?intellexerit] perti[?]ere [?nobis] per eundem ipsum nuncium quam[?] primum pro suo in nos amore

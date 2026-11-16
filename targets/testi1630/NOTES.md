@@ -270,6 +270,31 @@ We do not claim that any of this reading is new. Nothing found shows these lette
   https://www.filodiritto.com/la-parola-incognita-cifre-e-cifrari-alla-corte-estense . No link to these letters was found.
 - The later hand of c. 15 and c. 22 could read the cipher (above).
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py testi1630` compared six of the eight read texts (cc. 7r, 9, 11r, 13r, 16, 23r) and
+reported 116 of 719 words departing from the mechanical decrypt. The departures are not in the records. Causes:
+
+- Audit artefact (nearly all cases). The sign code for p in `key.tsv` is `#`, and the audit's key parser skips every
+  line that starts with `#` as a comment, so it had 19 of the 20 signs and no p. Every p of the reading counted as
+  a letter the key does not give (example, c. 7r l. 4: decrypt `rinci[]e`, reading `principe`). The folder's own
+  scripts read the row, because they skip only lines starting with `# ` (hash and a space).
+- Audit artefact. On cc. 11r and 16 the audit tokenised the line labels as signs (`c. 11r l. 7:` gave `d f z`),
+  which put stray letters before the first word of a line.
+- Clear text. Words in clear inside a cipher line, written `{..}` in the transcription and in italics in the
+  reading, counted as letters only in the reading (c. 9r l. 4, `Sin dal principio`; c. 13r, `Supponiamo che`).
+
+Check made here with a separate read-only snippet: `key.tsv` with all 20 rows, applied to the eight transcriptions,
+gives the eight decryption files letter for letter (4,870 letters; the only differences are the `[deleted signs]`
+marker and, on cc. 73-74, the caret notation for a doubled letter). The cipher text of the eight reading files was
+then aligned with that decrypt: every place where the reading has a letter the signs do not give is inside square
+brackets (23 places), and each is listed in the reading's Editorial notes. No unmarked change was found. The clear
+text in italics was not checked against the images.
+
+Nothing was changed in the key, the transcriptions or the readings. The audit figures are therefore the same after
+(116 of 719) and will stay so until the audit script reads the `#` row; renaming the sign code would mean rewriting
+every transcription and was not done. Nothing remains unexplained.
+
 ## Remaining gaps
 
 - Rest of c. 13r, c. 13v and the cipher of c. 14r - blocker: not-attempted; the images are good and c. 15 covers them, so this is a transcription job.

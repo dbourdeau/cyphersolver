@@ -146,6 +146,18 @@
    "kind": "verification",
    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand on reading.md: the words outside square brackets (clear in the copy) are the cipher words. 303 cipher words (both copies), 25 holes (probable {x} words, clerk's slips, group 212, slores): 278 read, 0.917, class read -> read in part. The old 0.998 counted cipher groups, not words. v10_relabel.py cannot reproduce it (square brackets are not a declarable clear markup; it gives 0.823 over the whole reading, not split).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.tsv re-applied to transcription.txt and compared with reading.md and, group by group, with decryption.txt. Before, 26 of 259 compared words departed (key covering 94% of groups); after completing the key file, 29 of 268 (98%). key.tsv lacked 25, 238, 345, 473 and 891, had a placeholder for 88 (sk), ⟨wis?⟩ for 1049 (reading: wilkor) and '1' for 183 (reading: en); these were added or corrected from NOTES and decryption.txt, 334 to 339 values. What remains is in the reading: spelling normalised without a statement (os printed oss, long printed lång, most printed måst, diacritics added) and nine words with a letter supplied or changed without a mark (herrora printed herrorna twice, wärt printed wårt twice, kommas, uti, Ministri, fiendteligheter, heelt), plus four clear words printed outside brackets. The reading was not changed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking round: reading.md is the contributor's established text and was not marked inside; its header now states that it is not the letter-for-letter output of the key (decryption.txt is), the spelling normalisation, the nine words with a letter the groups do not give and the four clear words printed outside brackets. Page: key count 334 to 339 (twice), 'spelling of the copies kept' corrected. No letter of the reading changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

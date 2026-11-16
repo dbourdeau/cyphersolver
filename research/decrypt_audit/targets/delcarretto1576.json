@@ -1,0 +1,42 @@
+{
+ "folder": "delcarretto1576",
+ "causes": {
+  "F": "all 17 unmarked gaps: 15 from tokenisation (key.tsv names the transcription groups oPo/oP/oPo./oP. as tokens 1/2/3; the script applied o=i, P=l sign by sign, giving il/ili for o/u), 2 from line labels (L of 'L06:' taken as sign l=e in the transcription and as a letter in the reading)"
+ },
+ "before": "33 of 150 words depart (texts compared: 1)",
+ "after": "9 of 158 words depart (texts compared: 1); all at line labels; 0 of 148 when labels are stripped in memory",
+ "files_changed": [
+  "targets/delcarretto1576/key_groups.tsv (new)",
+  "targets/delcarretto1576/profile.json",
+  "targets/delcarretto1576/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "oPo.",
+   "value": "u",
+   "source": "key.tsv header + row 3; transcription.txt:8"
+  },
+  {
+   "sign": "oP.",
+   "value": "u",
+   "source": "key.tsv header + row 3; transcription.txt:8"
+  },
+  {
+   "sign": "oPo",
+   "value": "o",
+   "source": "key.tsv header + row 1; transcription.txt:8"
+  },
+  {
+   "sign": "oP",
+   "value": "o",
+   "source": "key.tsv header + row 2; transcription.txt:8"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 0,
+  "examples": []
+ },
+ "page_statements_false": [],
+ "remaining": "Nothing unexplained. The four rows are a re-spelling of existing key rows in a second file (key_groups.tsv), not new values; key.tsv (frozen) untouched. Not checked: transcription against images; the SHA-256 prefixes quoted for frozen files (repo copies with added headers do not hash to them); the table row 'hukna+^en^' was not recomputed. Page docs/delcarretto1576.html: no false statement found (its link 'Key: key.tsv' does not list key_groups.tsv).",
+ "confidence": "high"
+}

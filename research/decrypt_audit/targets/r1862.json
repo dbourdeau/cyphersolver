@@ -1,0 +1,98 @@
+{
+ "folder": "r1862",
+ "causes": {
+  "B": "11 places where tx/R1862_reading.md changes a letter of tx/plain.txt with no mark (9 words with a letter/syllable added, 1 letter dropped, 1 moved into a clear passage), against the reading header 'Letters as the decipherment gives them'; plus 8 clerk's encipherment slips read through (key_over.json _slips, listed in NOTES) and not marked in the reading",
+  "D": "P2 L22 printed […] and clear passages in ⟨ ⟩: a few of the flagged gaps",
+  "F": "main cause: 49 of 1,280 groups carry ?/^ doubt marks in tx/groups.txt (622?, 6479^, 612?8); decode.py strips them, the audit does not, so they got no value (the 'missing syllables'); row labels 'P1 L02:' counted as tokens (coverage 79%)"
+ },
+ "before": "58 of 494 words depart (texts compared: 1)",
+ "after": "58 of 494 words depart (texts compared: 1); nothing to repair in the key: texts/key.tsv (487 groups) equals decode.py's effective key and regenerates tx/plain.txt exactly on all 125 rows once ?/^ are stripped and the 8 slips applied",
+ "files_changed": [
+  "targets/r1862/NOTES.md",
+  "targets/r1862/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 11,
+  "examples": [
+   {
+    "text": "R1862",
+    "decrypt": "ecelso",
+    "reading": "eccelso",
+    "where": "tx/plain.txt P1 L04; tx/R1862_reading.md:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "ponlebasi rabenasicurato",
+    "reading": "Ponleba si era ben asicurato",
+    "where": "P1 L10-11; reading:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "ocasione dirgli",
+    "reading": "ocasione di dirgli",
+    "where": "P1 L11-12; reading:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "spla parlavano",
+    "reading": "Spa[gna] parlavano (l dropped)",
+    "where": "P1 L15; reading:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "sprezo",
+    "reading": "sprezzo",
+    "where": "P1 L16; reading:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "sel instanze",
+    "reading": "se le instanze",
+    "where": "P1 L20; reading:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "segreteza",
+    "reading": "segretezza",
+    "where": "P2 L03; reading:9"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "unit o massime",
+    "reading": "uniti, o massime",
+    "where": "P2 L08; reading:11"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "disegni e [clear: Per che]",
+    "reading": "disegni. ⟨E perche",
+    "where": "P2 L28; reading:11-13"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "quest considerate",
+    "reading": "queste considerate",
+    "where": "P3 L13; reading:13"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "nel qual se ben",
+    "reading": "nel quale, se ben",
+    "where": "P3 L18; reading:13"
+   },
+   {
+    "text": "R1862",
+    "decrypt": "quest oportunita",
+    "reading": "questa oportunita",
+    "where": "P4 L22; reading:15"
+   }
+  ],
+  "note": "12 examples listed for 11 counted letter changes plus the moved 'e'; separately 8 slip corrections unmarked in the reading: P2 L04 con(fidenza), P2 L10 (conside)ra(ti), P2 L10 (pi)u, P2 L11 pa(rati), P2 L17 (es)pri(mersi), P2 L18 (altro)ve, P4 L10 co(si), P4 L16 (Manto)va"
+ },
+ "page_statements_false": [
+  "\"Letters as the decipherment gives them, the clerk's misspellings kept (negrotio, partcolare, sivoia ...); only word division, capitals and punctuation added\" (reading header embedded in docs/r1862.html line 423) — false in the 11 places above, and the 8 slip corrections are not mentioned there (the page body, lines 153-154, does describe the slips)"
+ ],
+ "remaining": "Transcription not checked against the images; English translation not checked; whether the added endings after stem codes (5388 quest, 5384 qual) should count as expansions rather than emendations is a convention to decide.",
+ "confidence": "high"
+}

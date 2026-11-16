@@ -1,0 +1,39 @@
+{
+ "folder": "noailles1558",
+ "causes": {
+  "B": "2 words: C5 'ritailles' (decode r-i-t-a-i-l-e-s, one l) and C3 'viennent' (decode v-u-i-e-n-n-e-n-t, W = u dropped); the second is invisible to the audit (letter only in the decrypt)",
+  "C": "2 words: C4 'ny ... ny' for decoded n-i (folded by the audit)",
+  "D": "unread stretches, tentative braces and supplied letters marked in the reading; B1 '[?5 signs...]' covers a decoded firm s; C4 '[?8 signs: e r o · a r d]' lists 7 signs",
+  "F": "4 of the 5 audit gaps: the key row of the sign labelled '#' (= i) skipped as a comment line, so nine i undecoded (maulvais, conduitte); line labels A2 and B2 of reading.md taken as text ('a', 'b'). The 25 flagged words follow from these breaks in the alignment"
+ },
+ "before": "25 of 71 words depart (texts compared: 1)",
+ "after": "25 of 71 words depart (nothing changed in key, transcription or reading); own line-by-line comparison: 2 words depart unmarked, 2 by i/y spelling",
+ "files_changed": [
+  "targets/noailles1558/NOTES.md",
+  "targets/noailles1558/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 2,
+  "examples": [
+   {
+    "text": "block C, line C5",
+    "decrypt": "ritailes",
+    "reading": "ritailles",
+    "where": "reading.md C5; brackx/decode_tvd_r5.txt C5; transcription C5 'Zo dag A t qx 5 q f'"
+   },
+   {
+    "text": "block C, line C3",
+    "decrypt": "vuiennent",
+    "reading": "viennent",
+    "where": "reading.md C3; brackx/decode_tvd_r5.txt C3; transcription C3 'y W dag q D ^ z Ab A'"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "mais ie doubt pour le singulier plaisir a prouffitt qu’ilz ont … es richesses ilz ne viennent … ny plus hardiz ny … ritailles qu’ilz ont … aux aultres … des passees — given as the reading; the key gives vuiennent, ritailes and ni",
+  "(not on the page; in brackx/reading_original.md) 'The spelling is the decode's' — not for viennent, ritailles, ny"
+ ],
+ "remaining": "Decision needed on marking ritai[l]les and v[u]iennent in a file kept as Brackx's text unchanged. Signs not checked on the images; key_r5.tsv not compared with key_r5.txt beyond the existing check_brackx.py note (script not run).",
+ "confidence": "high"
+}

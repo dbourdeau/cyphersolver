@@ -27,6 +27,29 @@ Catalogue 2350 and 2323 (ASF MAP LXXII 196, 200, 202, 206; and LXXII 211, which 
 ## Prior art
 No decipherment of 196, 200, 202, 206 or 211 found (catalogue vetting of 6 Nov 2026; repository searched 14 Nov 2026: no target, PR or issue on these letters except our status notes). Mallett's edition of Lorenzo's Lettere cites only 204-205.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit` flagged this target: 18 of 30 words depart (60%), one text compared (206). The flag is an
+artefact of the audit.
+
+- Check by hand: a decoder written for this check from `key/K_HP_v1.json` (pairs longest first, the two context rules,
+  singles) reproduces the six files of `decryption/` exactly, and the "raw decoding" column of the five reading cards
+  is the decryption file line for line (the three "(nulls only)" rows of 200 and 202 apart). All 101 words given as
+  sure in the cards of 196, 200, 202, 206 and 211 are the letters of the raw decoding, in order; every other unit is
+  in { }, [ ] or ‹ ›. Unmarked letter changes: 0.
+- Audit artefact 1: the audit applies `K_HP_v1.tsv` sign by sign. It cannot apply the pair rows (`o o` = i, `X o` = r,
+  `H P` = null ...) because the transcription separates signs with spaces, nor the context rows (`q before 7` = h,
+  `t before o` = ll), so its decrypt of 206 begins "aapdagaaenoua" where the key gives "dagienoua".
+- Audit artefact 2: the line labels `L00:` to `L06:` of `transcription/lxxii206.txt` are not stripped, and their L is
+  decoded as the sign L (= a); in the reading card the labels `L02` ... of the table are counted as words.
+- Audit artefact 3: the card has two columns, the raw decoding and the reading, and both are taken as published text;
+  ‹ › is not a bracket for the audit, so the unresolved stretches copied from the raw decoding count as unmarked.
+  The 18 departing "words" are 4 labels, 2 raw-decoding cells and 12 units of the rows L01-L04, each next to one
+  of these or to a `?` read [che].
+- Changed: nothing in the keys, the transcriptions or the cards. Figures after: the same, 18 of 30. The other four
+  letters stay outside the audit for the same reasons. Nothing remains unexplained; whether the key is right is a
+  separate question (not validated, see Status and limits).
+
 ## Remaining gaps
 - Key not validated - blocker: not-attempted; the one protocol test of the system failed (0.6018 against a 0.85 bar, earlier key K_T, 204 against 205), the second too (0.5088 on the glosses of 201); K_HP_v1 has no fresh test. The routes under Escalation are still open (a further HP letter with a clear or a gloss; Comanducci 1996, Appendix III).
 - Unresolved stretches - blocker: open-codes; 19, 12, 10, 10 and 17 in 196, 200, 202, 206, 211 (B, crossed equals, dotted o, "e d", l with small o) and doubtful shapes at 1272 px (b/6/t, d/b, o/Q, q/9).

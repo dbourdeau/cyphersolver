@@ -3,6 +3,7 @@
 plain word = certain; {x} = probable; [x] = restored from the sense; ‹segment|n› = unresolved, letters given by the key,
 n = number of words the segment is ESTIMATED to cover (counted as n words, not one). "Vre Mate" = Vostre Majesté (2 words).
 Passages grouped by sentence, not by manuscript line.
+# Note of 16 Nov 2026: this is the contributor's reading (Brice Dudout), kept as his; it is not the output of the key. The mechanical decrypt is `decryption.txt`; 12 places where a word given as certain differs from it are listed in NOTES.md (Decrypt audit, 16 Nov 2026), not marked here.
 
 ## f. 67r
 Auec ocasion que m'est {uenue} de ‹tuoier|1› a {Baionne} le {dupplicata} de ma derniere despeche i'ai {uoulu} entendre a Vre Mate ce qui {s'offre} ici {depuis} {que} i'en ‹afia|2› {acheminé} l'original

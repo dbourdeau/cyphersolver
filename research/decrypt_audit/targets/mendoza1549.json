@@ -1,0 +1,47 @@
+{
+ "folder": "mendoza1549",
+ "causes": {
+  "B": "28 words (38 sign places) of reading_44r.md print a repaired value with no mark in that file; all 38 are marked in the companion reading_44r_marked.md ({x/y}, {-x}), which with marks resolved gives the same letters as reading_44r.md. 35 places take a second value of a polyphonic (merged-shape) sign, each listed in key.tsv column 'all values' and in align_44r.txt (x de/no 6 places, q' ha/a 3, ...); 3 places drop an unexplained sign (o, p, S). No departure outside the marked set.",
+  "F": "the audit applies only the most frequent value of each sign and reads [ ] as the only mark; it does not know the companion marked file or the 'all values' column"
+ },
+ "before": "23 of 149 words depart (texts compared: 1)",
+ "after": "23 of 149 words depart (texts compared: 1)",
+ "files_changed": [
+  "targets/mendoza1549/NOTES.md",
+  "targets/mendoza1549/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 28,
+  "note": "unmarked only in reading_44r.md (the file the profile names as reading); every one is marked in reading_44r_marked.md. Words the files do not mark anywhere: 0.",
+  "examples": [
+   {
+    "text": "c. 44r",
+    "decrypt": "govierde",
+    "reading": "govierno",
+    "where": "reading_44r.md:4 (marked reading_44r_marked.md L03 {de/no})"
+   },
+   {
+    "text": "c. 44r",
+    "decrypt": "quamo",
+    "reading": "quatro",
+    "where": "reading_44r.md:6 (marked L10 {mo/tro})"
+   },
+   {
+    "text": "c. 44r",
+    "decrypt": "digahan",
+    "reading": "diran",
+    "where": "reading_44r.md:8 (marked L13 {ga/r}{ha/a})"
+   },
+   {
+    "text": "c. 44r",
+    "decrypt": "alorelncia",
+    "reading": "Florencia",
+    "where": "reading_44r.md:5 (marked L07 {a/f}, {-l})"
+   }
+  ]
+ },
+ "page_statements_false": [],
+ "remaining": "No docs page exists (Status: in progress). The folder's scripts were not run, so decryption_44r.txt was not regenerated; the check used align_44r.txt and key.tsv. Whether the second values are right was not checked (no images); they come from the alignment with c. 42r. Decision: whether reading_44r.md should carry the marks or the profile should name reading_44r_marked.md as the reading.",
+ "confidence": "high"
+}

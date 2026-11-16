@@ -153,7 +153,24 @@
    "what": "Statistical validation (docs/_validate.py): 405 tokens, 96 types, es-golden-age order 4: reading -2.078 per letter; random keys -3.587 (z 8.9); key annealed onto shuffled ciphertext best -2.218 (mean -2.264, z 5.2); annealer on the real text -2.13. Verdict: pass.",
    "result": "worked"
   },
-  {"date": "2026-11-13", "kind": "verification", "what": "Integration check (13 Nov 2026): check_marks.py and heldout.py re-run (122 of 154 words verbatim; frozen key 91 of 147 held-out signs, 79.1% of the 115 known); c. 44r re-fetched from the IIIF tiles and lines 1-3 compared with the transcription (line structure, word breaks and about 35 signs agree). Strict share 79.2% (code words count as holes); read in part. The held-out test is a within-page consistency test, not a test on a second text. Gaps (shape splits, struck passages on cc. 40v/41r/46v, key of mendoza1548 not tried) are workable, so the target stays in progress and has no page.", "result": "worked"}
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "what": "Integration check (13 Nov 2026): check_marks.py and heldout.py re-run (122 of 154 words verbatim; frozen key 91 of 147 held-out signs, 79.1% of the 115 known); c. 44r re-fetched from the IIIF tiles and lines 1-3 compared with the transcription (line structure, word breaks and about 35 signs agree). Strict share 79.2% (code words count as holes); read in part. The held-out test is a within-page consistency test, not a test on a second text. Gaps (shape splits, struck passages on cc. 40v/41r/46v, key of mendoza1548 not tried) are workable, so the target stays in progress and has no page.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): key.tsv applied to transcription_44r.txt and compared with reading_44r.md, 23 of 149 compared words depart, none marked in that file. Checked by hand: all departures are the 38 repairs in 28 words already marked in reading_44r_marked.md (35 second values of signs with more than one value, each listed in the 'all values' column of key.tsv and in align_44r.txt; 3 unexplained signs dropped); the marked file with its marks resolved gives the same letters as reading_44r.md. No unmarked change beyond those, no file changed besides NOTES.md and this step; figure after unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: outcome.texts[0].reading now names reading_44r_marked.md, which holds all 38 marks and with the marks resolved has the same letters as reading_44r.md; no mark added by hand, no wording changed. v2_score (es): reading_44r.md hole rate 0.0, reading_44r_marked.md 0.017.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
@@ -242,7 +259,7 @@
     "label": "c. 44r, cipher enclosure on the government of Siena",
     "transcription": "transcription_44r.txt",
     "decryption": "decryption_44r.txt",
-    "reading": "reading_44r.md",
+    "reading": "reading_44r_marked.md",
     "translation": "translation_44r.md",
     "language": "es",
     "state": "read in part",

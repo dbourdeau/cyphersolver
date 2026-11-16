@@ -1,0 +1,35 @@
+{
+ "folder": "geleen1633",
+ "marked": [
+  {
+   "file": "targets/geleen1633/reading.md",
+   "places": 11
+  }
+ ],
+ "left_unmarked": {
+  "count": 6,
+  "why": "spelling only (Hildesheim, dieselbe, Statt, Gewaldt, bisher, begriffenen); covered by a new header line that states the convention and gives the key's forms"
+ },
+ "headers_changed": [
+  "reading.md: added a line stating the spelling convention and naming decryption.txt as the unedited key output",
+  "reading.md: added a line listing the 11 words marked { } on 16 Nov 2026 and saying the count table of 4 Nov 2026 does not include them"
+ ],
+ "page_changes": [
+  "\"The held-out lines read: <em>zum besten ...\" -> \"Read with the spelling normalised, the held-out lines say (the key itself gives lasnen, dingegen, gewis, uolche ewere, cathol, sit wurcklich and soulen for the words lassen, hingegen, gewiss, solche eure, catholischen, mit würcklichem and sollen): <em>zum besten ...\""
+ ],
+ "page_counts_now_stale": [
+  "\"Of 221 cipher words, 151 are certain, 35 probable, 8 restored from the sense and 27 unresolved.\" (with the 11 counted probable: 140 certain, 46 probable; certain + probable stays 186 of 221 = 84.2%)",
+  "the same split in reading.md's count table, the NOTES Status line and profile fraction_read_source"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/geleen1633/reading.md",
+   "before": 0.096,
+   "after": 0.087,
+   "state_in_profile": "read in part"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "The file has no '## Reading' heading, so v2_score scores the whole file and the two added header lines lower its hole rate (408 to 506 words); the figure after is not comparable. Already read in part, so no bar is crossed. Decision: recompute the certain/probable split (151/35 to 140/46) in reading.md, NOTES, profile and page. The held-out sentence in NOTES 'System and key' and 'Method' was left; the audit section explains it. The page's generated copy of reading.md follows at the next build."
+}

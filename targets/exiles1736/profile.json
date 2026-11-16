@@ -117,7 +117,24 @@
    "what": "Project check: the 30-sign key is one-to-one; the 491 dotted words of the cipher, decrypted with it, are 31.2% in a word list built from the letter's own clear words and about 90 function words, against at most 5.7% for 300 shuffled keys (VERIFICATION.md). No scan compared.",
    "result": "worked"
   },
-  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026) on reading.md: the 52 **bold** cipher passages counted, the clear Polish and Latin left out; holes by words with the v2_score rules: 529 cipher words, 12 holes (nine code groups, [?Monti] twice, cza[s]). 0.977 confirmed (the recorded figure, 518 of 530, was already over the bold cipher words; the scan's 0.957 is not reproduced). No change to read_share or class.", "result": "worked"}
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026) on reading.md: the 52 **bold** cipher passages counted, the clear Polish and Latin left out; holes by words with the v2_score rules: 529 cipher words, 12 holes (nine code groups, [?Monti] twice, cza[s]). 0.977 confirmed (the recorded figure, 518 of 530, was already over the bold cipher words; the scan's 0.957 is not reproduced). No change to read_share or class.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.tsv was re-applied to transcription.txt and compared letter by letter with the cipher (bold) passages of reading.md. Every letter sign decrypts as the reading prints it apart from spelling: the reading writes Latin u/v where the key gives w (9 words: qwidem, conserwabit, awec ...), 'aż' for 'asz' (3), adds Polish diacritics (57 letters), i for j or y (12), 'replika' for 'repplika', 'W.' for 'wo', and 'ze' for 'z' before Stanisławem; none of this is marked or stated in the reading's header. The 16 uses of the code groups 125, 455, 136 and 142 are printed as inflected names without brackets, and their values were not in the key file: codes.tsv added with the values the notes state (125, 455, 136, 142, 675 as a guess, 435 and 4345 as undotted letter groups) and listed in outcome.key_file. The audit script's figure (99 of 552 words) is mostly the clear passages of the letter, which the script drops from the decrypt, and is unchanged by the new file because the script does not merge key files. No wording of the reading was changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking: 11 places marked in reading.md with no letter changed: the case endings supplied on code-group names (Stanisław[a] 5 times, Stanisław[em], August[a], Warszaw[y], Warszaw[ie]), z[e], and two whole words where the key gives other letters ([repliką] for reppliką, [W.] for wo). The header now states the spelling convention of the cipher passages (diacritics added, u and v for w, aż for asz) and names decryption.txt as the mechanical text. Hole rate by research/reading_audit/v2_score.py 0.018 before, 0.026 after; read_share, state and class left as they were.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
@@ -167,7 +184,10 @@
   "fraction_read": 0.977,
   "fraction_read_method": "measured",
   "fraction_read_source": "Counted from reading.md: 530 words in the cipher passages (the bold text), of which 12 are holes: 9 unread code groups, 2 uses of [?Monti] and the supplied letter in cza[s]: 518 of 530 = 97.7%. About 20 further code groups are read as names from context and are not marked.",
-  "key_file": "key.tsv",
+  "key_file": [
+   "key.tsv",
+   "codes.tsv"
+  ],
   "texts": [
    {
     "doc": [

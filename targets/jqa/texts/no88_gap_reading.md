@@ -1,14 +1,14 @@
-<!-- Reading of the nine lines of No. 88 (25 June 1812) that Ford left out, written out 23 Oct 2026 (Claude Opus 5.5, verification 5) from texts/no88_gap_decryption.md (NOTES.md section 3): syllable groups joined into words, header and group table cut. [?word] = a word resting on a grade-I (inferred) value. Revised 14 Nov 2026 with the State Department code sheet (NARA M97 roll 13, Weber WE028; ../we028_no88.tsv): 1434 journ and 168 ey are the sheet values, so journey is sure; the sheet gives 1398 = thirty (14 = thither, 1391 = there), so the word after arrival is restored, not read. {?word} = probable (a one-digit slip fixed by the sheet and the sense), marked at the integration of 14 Nov 2026. Image check of 14 Nov 2026 (frame 0206 fetched again): a syllable in {+ } inside a word is a group one digit away from the sheet value the word wants (README Conventions, one-digit rule of 14 Nov 2026), the word counts as read; [...] is a group cut by the gutter. -->
+<!-- Reading of the nine lines of No. 88 (25 June 1812) that Ford left out, written out 23 Oct 2026 (Claude Opus 5.5, verification 5) from texts/no88_gap_decryption.md (NOTES.md section 3): syllable groups joined into words, header and group table cut. [?word] = a word resting on a grade-I (inferred) value. Revised 14 Nov 2026 with the State Department code sheet (NARA M97 roll 13, Weber WE028; ../we028_no88.tsv): 1434 journ and 168 ey are the sheet values, so journey is sure; the sheet gives 1398 = thirty (14 = thither, 1391 = there), so the word after arrival is restored, not read. {?word} = probable (a one-digit slip fixed by the sheet and the sense), marked at the integration of 14 Nov 2026. Image check of 14 Nov 2026 (frame 0206 fetched again): a syllable in {+ } inside a word is a group one digit away from the sheet value the word wants (README Conventions, one-digit rule of 14 Nov 2026), the word counts as read; [...] is a group cut by the gutter. Decrypt audit of 16 Nov 2026: letters in [ ] inside a word, and [it], are not given by the groups as transcribed in ../gap88.txt with the sheet values (im-pas-ion-ed, one 1440 it, al, event, affair); whether a mark of the manuscript gives them was not checked on the film. Spelling is modern where the code spells otherwise (Wilna for will-na, illness for il-ness). The Count section below was made before these marks. -->
 
 # J. Q. Adams, No. 88, 25 June 1812: the lines Ford did not decipher
 
 ## Reading
 
 … and exp{+ect}ation. But the journey itself of the Emperor {?Alexander} to Wilna was in opposition to the Chancellor's [...] and
-{+adv}ice, and if his active influence had not been impaired before it, it can scarcely fail to have been affected by
+{+adv}ice, and if his active influence had not been impa[ir]ed before it, [it] can scarcely fail to have been affected by
 his illness immediately after his arrival [there], which was undoubtedly an apoplectic stroke. Since then he has had
 a second and a more severe one. In the German Gazettes even his death has been announced; but that was a mistake. At
-all events it is scarcely possible that he should remain much longer in the department of foreign affairs.
+al[l] event[s] it is scarcely possible that he should remain much longer in the department of foreign affair[s].
 
 ## Count (words, 14 Nov 2026, after the image check)
 

@@ -1,0 +1,57 @@
+{
+ "folder": "deboli1789",
+ "causes": {
+  "A": "none missing for the readings; key_pass.tsv is the aligner's table (commonest aligned string per group, alternatives in a 4th column, 644 of 1,736 rows seen once), so alone it cannot regenerate the clear copies: 81% of 22,171 aligned groups equal the key value in place",
+  "B": "c024 worded reading only: 5 places with letters supplied or changed without a mark (odprawie, iest, powiedzieć, przyszło że się, a doubled 'na')",
+  "C": "c024: 14 word endings taken from the key's alternatives column without a mark (listu, siebie, Hetman, WKMci x7, Rossyi x2, woyny, życzy)",
+  "D": "twelve texts (3,062 of 12,122 words) are compared with the archive's clear copies, key material and not a reading made here; in c042/c104 {group} unread markers (565 and 95 groups that have a key row but were marked unread by hand), bracketed context readings (5, 16), 38 clear passages in c104; '(context)' notes in c024",
+  "F": "c042/c104: folio labels 'k.138r.01:' / 'k.138v.01:' at the head of each line read as the letters 'kr'/'ku'; groups written with '?' (155, 19) and letter-suffixed groups valued from the base group (31, 11) dropped by the script's tokeniser"
+ },
+ "before": "3,704 of 13,121 words depart (texts compared: 15)",
+ "after": "3,704 of 13,121 words depart (texts compared: 15); with line labels stripped in memory c042 138 of 277 and c104 56 of 179",
+ "files_changed": [
+  "targets/deboli1789/NOTES.md",
+  "targets/deboli1789/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 5,
+  "examples": [
+   {
+    "text": "c024_1789-03-25",
+    "decrypt": "na pra wi (782 1105 1564)",
+    "reading": "na odprawie",
+    "where": "reading/c024_1789-03-25.txt:10"
+   },
+   {
+    "text": "c024_1789-03-25",
+    "decrypt": "to ie (1432 2407)",
+    "reading": "to iest",
+    "where": "reading/c024_1789-03-25.txt:6"
+   },
+   {
+    "text": "c024_1789-03-25",
+    "decrypt": "pow dzie c (1194b 87b 2076)",
+    "reading": "powiedzieć",
+    "where": "reading/c024_1789-03-25.txt:11"
+   },
+   {
+    "text": "c024_1789-03-25",
+    "decrypt": "przys o ze s sie (1221 948 1681 1317 1353)",
+    "reading": "przyszło, że się",
+    "where": "reading/c024_1789-03-25.txt:11"
+   },
+   {
+    "text": "c024_1789-03-25",
+    "decrypt": "es se n cy o na l na ktora",
+    "reading": "essencyonalna, na ktora",
+    "where": "reading/c024_1789-03-25.txt:12"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Old spelling is kept as the code gives it; {group} is unread, [?] a doubtful value.\" (docs/deboli1789.html) — true of the c042 and c104 decodes; in the 25 March reading 14 endings and 5 other places differ from the key's main value without a mark"
+ ],
+ "remaining": "Transcription digits and clear copies not checked against images. The reading uses 1/1 rows of key_pass.tsv (values aligned once), which the page's '630 anchored groups' does not cover; not counted per text here.",
+ "confidence": "high for c042/c104 and the pairs, medium for the c024 count (compared by eye against the token file)"
+}

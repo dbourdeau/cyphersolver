@@ -187,11 +187,72 @@
    "what": "Split from the R1854 entry under the one-key rule (Lasry, 14 Oct 2026): the record's four letters use four ciphers; images 4-5 (one key) are this entry. Re-count from the 5 Oct 2026 figures: P4 1,505/1,537, P5 199/199 = 1,704/1,736 (0.982).",
    "result": "worked"
   },
-  {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1734 tokens, 45 types, la order 4: reading -2.244 per letter; random keys -4.662 (z 6.5); key annealed onto shuffled ciphertext best -3.016 (mean -3.057, z 28.5); annealer on the real text -2.206. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass transcriptions p4v2.txt and p5v2.txt; reading_p4.md (both images, decipherment with doubtful words marked); key key4_v2.txt.", "result": "worked"},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-15",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1734 tokens, 45 types, la order 4: reading -2.244 per letter; random keys -4.662 (z 6.5); key annealed onto shuffled ciphertext best -3.016 (mean -3.057, z 28.5); annealer on the real text -2.206. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass transcriptions p4v2.txt and p5v2.txt; reading_p4.md (both images, decipherment with doubtful words marked); key key4_v2.txt.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 1 of 2 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit, 16 Nov 2026): the audit reported 103 of 272 words of the two readings departing from the decrypt, a t missing each time. Cause: the sign for t is named '=' (key line '==t') and the audit's key parser drops it; key4_v2.txt is complete and was not changed. With the key file parsed as ../r1854/show.py parses it, 9 of 273 words depart: three abbreviations expanded without the parentheses reading_p4.md has (nostrum, domini, dominorum), two changes named only in the reading's header comment (Aragonum for aeragono, producxerunt for producxerut), four letters changed with no mark (Sollicitabo for solicitabo, offerendum for offerenuum, dominus for domicus, the n of male[c]ontentus) and one dropped (sex for secx). Reading files not changed; listed in NOTES.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marks added after the decrypt audit (16 Nov 2026), no letter changed: in texts/R1854-P4_reading.md five places bracketed where the key does not give the letters (Sol[l]icitabo, Aragon[um], offeren[d]um, male[c]o[n]tentus, domi[n]us); 'sex' for the key's secx cannot be shown by a bracket and is stated in the header, with the expanded abbreviations (nostrum, domini; dominorum and producxerunt in the P5 reading). The header sentence 'spelling as the key gives it' was reworded in both files. Page: 'sollicitabo bullam' as the annealer's output corrected to 'solicitabo bullam' (run_p4la.txt).",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 1734, "types": 45, "tokens_per_type": 38.53, "score": -2.244, "nulls": {"random keys": {"n": 200, "mean": -4.662, "sd": 0.372, "max": -3.84, "z": 6.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.057, "sd": 0.028, "max": -3.016, "z": 28.5, "p": 0.1429}}, "power": -2.206, "verdict": "pass", "notes": "claimed per-occurrence score -2.244; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.206"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-15",
+   "model": "la",
+   "file": "validation.tsv",
+   "tokens": 1734,
+   "types": 45,
+   "tokens_per_type": 38.53,
+   "score": -2.244,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -4.662,
+     "sd": 0.372,
+     "max": -3.84,
+     "z": 6.5,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.057,
+     "sd": 0.028,
+     "max": -3.016,
+     "z": 28.5,
+     "p": 0.1429
+    }
+   },
+   "power": -2.206,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.244; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.206"
+  },
   "method": "key recovered from ciphertext-only",
   "method_basis": "A Latin anneal on image 4 gave readable Latin at once (post recessum, sollicitabo bullam, galeotam); a second pass checked every sign against the image with the key (209 edits, look-alikes split); the same key reads the verso, image 5.",
   "contribution": [
@@ -205,7 +266,11 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "reading_p4.md: P4 1,505 of 1,537 and P5 199 of 199 cipher signs (ct_p4.txt, ct_p5.txt, measured) read as sense = 1,704/1,736; re-counted 5 Oct 2026.",
   "grades": "unknown",
-  "verification": ["historical consistency", "key confirms", "statistical test"],
+  "verification": [
+   "historical consistency",
+   "key confirms",
+   "statistical test"
+  ],
   "gaps": [
    {
     "item": "P4 L04 'leonebi ... re[d]bs', L05 'aisignata pure st', L11 'uniei ... cille', L14 'a-mhi' (about 32 signs)",
@@ -216,8 +281,30 @@
   "notes": "Split 14 Oct 2026 from the four-letter R1854 entry.",
   "credits": [],
   "texts": [
-   {"doc": "R1854-P4", "label": "Image 4, Rome, 13 Feb 1430", "transcription": "p4v2.txt", "decryption": "reading_p4.md", "summary": "Francesco de' Cattanei's news from Rome to Gianfrancesco Gonzaga: Carlo (Malatesta?) on a marriage alliance with King Louis (of Anjou); a galley of a Giovanni de [?Orlandis] (surname uncertain) took a Catalan ship and lost it at Gaeta (5,000 ducats); Castile presses Aragon; the archbishop of Patras offered the temporal lordship to the Venetians with the pope's licence, and the cardinals answered it was better lost than given to Venice.", "reading": "texts/R1854-P4_reading.md", "translation": "texts/R1854-P4_en.md", "language": "la", "read_share": 0.906, "state": "read in part", "note": "24 Oct 2026: 90.6% of the words of texts/R1854-P4_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."},
-   {"doc": "R1854-P5", "label": "Image 5, Rome, 21 Feb 1430 (verso)", "transcription": "p5v2.txt", "decryption": "reading_p4.md", "summary": "The Rimini envoys Astorgio and Bartolomeo appeared before the commissaries with a mandate and authenticated copies of bulls; \"credo parum iuvabit\"; in clear, \"denarios non habeo pro expensis\".", "reading": "texts/R1854-P5_reading.md", "translation": "texts/R1854-P5_en.md", "language": "la", "read_share": 1.0}
+   {
+    "doc": "R1854-P4",
+    "label": "Image 4, Rome, 13 Feb 1430",
+    "transcription": "p4v2.txt",
+    "decryption": "reading_p4.md",
+    "summary": "Francesco de' Cattanei's news from Rome to Gianfrancesco Gonzaga: Carlo (Malatesta?) on a marriage alliance with King Louis (of Anjou); a galley of a Giovanni de [?Orlandis] (surname uncertain) took a Catalan ship and lost it at Gaeta (5,000 ducats); Castile presses Aragon; the archbishop of Patras offered the temporal lordship to the Venetians with the pope's licence, and the cardinals answered it was better lost than given to Venice.",
+    "reading": "texts/R1854-P4_reading.md",
+    "translation": "texts/R1854-P4_en.md",
+    "language": "la",
+    "read_share": 0.906,
+    "state": "read in part",
+    "note": "24 Oct 2026: 90.6% of the words of texts/R1854-P4_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+   },
+   {
+    "doc": "R1854-P5",
+    "label": "Image 5, Rome, 21 Feb 1430 (verso)",
+    "transcription": "p5v2.txt",
+    "decryption": "reading_p4.md",
+    "summary": "The Rimini envoys Astorgio and Bartolomeo appeared before the commissaries with a mandate and authenticated copies of bulls; \"credo parum iuvabit\"; in clear, \"denarios non habeo pro expensis\".",
+    "reading": "texts/R1854-P5_reading.md",
+    "translation": "texts/R1854-P5_en.md",
+    "language": "la",
+    "read_share": 1.0
+   }
   ],
   "key_file": "key4_v2.txt"
  }

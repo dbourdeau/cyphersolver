@@ -1,6 +1,6 @@
 # DL 46150: the Latin reading
 
-Maffeo da Treviglio to Tamás Bakócz, Milan, 30 November 1490. The cipher text under key.json, with word division and punctuation (taken from the minute where the cipher has the same words). [?word] = rests on a suspect or unvalued sign; [...] = not read; ⟨word⟩ = lost to damage, filled from the clear minute. Spelling and wording are the cipher's where they differ from the minute (afinitatem, suma, uigesimam). Line numbers: reading/p1-p4.md.
+Maffeo da Treviglio to Tamás Bakócz, Milan, 30 November 1490. The cipher text under key.json and the extended values of key_supplement.md (qA = i/t, y = 200,000), with word division and punctuation (taken from the minute where the cipher has the same words). [?word] = rests on a suspect or unvalued sign; [...] = not read; ⟨word⟩ = lost to damage, filled from the clear minute. Spelling and wording are the cipher's where they differ from the minute (afinitatem, suma, uigesimam). Line numbers: reading/p1-p4.md.
 
 In christo pater et domine pater honorande.
 

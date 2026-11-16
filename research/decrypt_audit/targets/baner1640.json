@@ -1,0 +1,73 @@
+{
+ "folder": "baner1640",
+ "causes": {
+  "A": "5 code values (766 w, 770 m, 772 f, 778 f, 783 g) established in NOTES and hard-coded in decode.py were in no key file; the readings do not apply them (they keep [nnn]), so this does not move the audit figure",
+  "B": "3 words in APUG568-239_reading.md, whose header says 'no letter changed': 'die in' (decrypt dein), 'Schlesien' (decrypt schlesiei), 'Marche' (decrypt arche)",
+  "D": "most of the 14 flagged words: clear context in ⟨ ⟩ around the seven cipher spans, and […] markers for the two unread runs",
+  "E": "both reading files print '?o[783]en' where key.json has 60 = m; reading.md shows '?' under S2's 12 though key.json has 12 = p, and prints figure rows older than ct_neal.txt (S4 '66 … 36', S5 '48 57')"
+ },
+ "before": "14 of 57 words depart (texts compared: 1)",
+ "after": "14 of 57 words depart (texts compared: 1); unchanged",
+ "files_changed": [
+  "targets/baner1640/key_codeletters.tsv (new)",
+  "targets/baner1640/profile.json",
+  "targets/baner1640/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "766",
+   "value": "w",
+   "source": "decode.py:19 (CODELETTERS); NOTES 'The 7xx codes are letters (22 Sept, third pass)'; validation.tsv"
+  },
+  {
+   "sign": "770",
+   "value": "m",
+   "source": "decode.py:19 (CODELETTERS); NOTES 'The 7xx codes are letters (22 Sept, third pass)'; validation.tsv"
+  },
+  {
+   "sign": "772",
+   "value": "f",
+   "source": "decode.py:19 (CODELETTERS); NOTES 'The 7xx codes are letters (22 Sept, third pass)'; validation.tsv"
+  },
+  {
+   "sign": "778",
+   "value": "f",
+   "source": "decode.py:19 (CODELETTERS); NOTES 'The 7xx codes are letters (22 Sept, third pass)'; validation.tsv"
+  },
+  {
+   "sign": "783",
+   "value": "g",
+   "source": "decode.py:19 (CODELETTERS); NOTES 'The 7xx codes are letters (22 Sept, third pass)'; validation.tsv"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 3,
+  "examples": [
+   {
+    "text": "Banér to Stålhandske, S4",
+    "decrypt": "dein",
+    "reading": "die in",
+    "where": "APUG568-239_reading.md:13"
+   },
+   {
+    "text": "Banér to Stålhandske, S4",
+    "decrypt": "schlesiei",
+    "reading": "Schlesien",
+    "where": "APUG568-239_reading.md:13"
+   },
+   {
+    "text": "Banér to Stålhandske, S7",
+    "decrypt": "seinenarche",
+    "reading": "seinen Marche",
+    "where": "APUG568-239_reading.md:18"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Word division and capitals only; no letter changed.\" (reading header shown on the page) — three words change or supply a letter (see unmarked_emendations); the page body does list them as slips",
+  "\"the copy also drops a 12 from Espionen, restored from the scan (12 = p)\" — NOTES and ct_neal.txt say the manuscript has the 12 and Neal's transcription dropped it",
+  "\"durch E(sp)ionen\" in the page's reading — the word decrypts complete (espionen) since 12 = p; the same passage prints 'mö[g]en' while the reading files below it print '?o[783]en'"
+ ],
+ "remaining": "Nothing unexplained. Decision needed: bracket the three words in APUG568-239_reading.md; bring both reading files up to key.json (60 = m, 12 = p) and decide whether they apply the five code letters, which NOTES grade C/M. Not checked: figures against the manuscript scans.",
+ "confidence": "high"
+}

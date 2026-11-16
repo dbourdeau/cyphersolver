@@ -1,5 +1,8 @@
 # R1072 - d'Affry to Rouillé, The Hague, 6 January 1757 (no. 123): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R1072.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186,
 scans 13R-14L (margin "No 123. Dat: 6. Janvier 1757. A: à R:"), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`) and checked line by line against the scans. The register is the deciphered text of the

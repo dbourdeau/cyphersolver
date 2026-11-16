@@ -79,6 +79,46 @@ The archive catalogue unit 29/637/0/1.3/9477 (former teka 321/8) lists further l
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the cipher is single words and short phrases inside clear French; each insertion put into its clear anchor (research/reading_audit/v5b_potocka.py) scores plain 0.5-1.0 and explicit 0.9-1.0 per letter section (R7529 0.5 on four phrases: the writer's spellings cete, na, loubrire). The insertions fit their anchors. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key-potocka.json` to the transcriptions and compared the letters with the
+published readings. It could compare one text, R7536: 17 of 31 words depart (55%).
+
+Cause, checked on all nine letters with a read-only snippet (each `R75xx-cipher.txt` decoded with `key-potocka.json`
+and compared with the text inside ⟦ ⟧ of `R75xx_reading.md`):
+
+- Clear text of the manuscript (the whole of the flag). The `R75xx_reading.md` files put each decoded insertion, in
+  ⟦ ⟧, into its clear French anchor. The audit took the anchors for deciphered text. Example, R7536: the figures give
+  *guere*, *companie*, *famme*; "en cas de la", "tenir la", "a vostre", "et pour le" are the clear anchors of segments
+  65-68. All 249 clear words of the eight French readings are in the `context` column of `potocka-segments.tsv` (one
+  exception, the label "margin" in R7535). The anchors were not checked against the images in this audit.
+- Inside ⟦ ⟧ the readings give the key's letters in all nine letters (862 valued tokens), with word division added and
+  u printed as v where it is a consonant (*vos* for 18 35 36), except for the two places below.
+- One unmarked letter: R7530, segment 18 25 34 21 37. The key gives *uenir* (`reading.md`: Literal **uenir**,
+  Interpretation "u venir"); `R7530_reading.md` line 15 prints ⟦u venir⟧, six letters for five figures, without a
+  mark, under a header that says "spelling as the figures give it". The source is the `reading_note` of
+  `potocka-segments.tsv` line 40. Not changed here (reading files are not edited by this audit); reported.
+- One marked departure: R7528 ⟦[?Mscislawi]⟧, in brackets; the key gives *mscislawi*.
+- The unvalued codes: each `R75xx-cipher.txt` ends with the standalone person codes of that letter (23 in all, from
+  `standalone-codes.json`); the reading files show five of them (R7525, R7527) because the anchors of the others are
+  not in `potocka-segments.tsv`. Nothing is read from them.
+
+Changed: nothing in the key, the transcriptions or the readings. `key-potocka.json` holds every value the readings
+use. Figures after: the same, 17 of 31 words depart, all of them clear anchors.
+
+Not explained or not checked: the anchors against the images. `docs/potocka1714.html` still prints "Keinisberk a
+Kinnik" twice (segment table and "What remains uncertain"); the surplus 25 was removed on 5 Oct 2026 (item 9b) and
+the files here read *Kinisberk*, except the superseded `segments-decoded.md`.
+Marked on 16 Nov 2026: one place, in `R7530_reading.md` line 15: ⟦u venir⟧ is now ⟦u [v]enir⟧ (the figures 18 25 34
+21 37 give *uenir*; the v is the letter no figure gives). No letter of the text was changed. The file had no mark for
+a supplied letter, so its header now says: "spelling as the figures give it, except that a letter in [ ] inside ⟦ ⟧
+is one no figure gives". Nothing was left unmarked: the ⟦ ⟧ text of all nine readings was compared with the key's
+output letter by letter. `reading.md` and `potocka-segments.tsv` were not touched (they keep Literal *uenir* and the
+interpretation "u venir" apart). `R7530_en.md` not touched. `research/reading_audit/v2_score.py` on the file: hole
+rate 0.0 before and 0.043 after (1 marked word in 23; plain 0.75 and explicit 1.0, 4/4, both times). On `docs/potocka1714.html` "Keinisberk a Kinnik" (and
+the literal "keinisberkakinnik") was corrected to *Kinisberk* in the R7536 table and in "What remains uncertain",
+after item 9b; the page's generated texts block still shows the old R7530 line until the site is rebuilt.
+
 ## Remaining gaps
 - Potocka codes 87, 94, 100, 270, 23 occurrences — blocker: no-key-material; context suggests roles but does not identify exact entries; no matching nomenclator.
 - R7534 exceptional figure 73 in zaia[73]d — blocker: too-short; one occurrence, no independent key, proposed zajazd does not justify assigning a value.

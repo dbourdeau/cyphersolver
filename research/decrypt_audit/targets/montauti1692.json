@@ -1,0 +1,72 @@
+{
+ "folder": "montauti1692",
+ "causes": {
+  "B": "14 places in the *_it.txt reading files with a letter changed, dropped or supplied and no bracket (P1: GRIMANI, D'ACCASARE, SÌ IN, POLONIA, LIEGI x2, LE S[UE] NOZZE with code [22] dropped, L'AUGUSTISSIMA CASA E; P2: CIRCOSPEZIONE; P3: S'OPPONGA; L01: L'EL[E]TTORE; L25: COSTÀ; L35: DELLA, D[O]N[N]A). Also 23 words of Codex 533 readings whose letter rests on a re-read digit, marked * in the decode files and runs_533.tsv but not in L*_it.txt. Also 12 clear words printed in CAPITALS as if cipher (P1 nine, P2 DURANTE LA, P4 DE of DEL)",
+  "C": "17 words with a consonant doubled without bracket (DELL'ABATE, L'ELETTOR, NOZZE, PROGETTI, DUSSELDORF ...); the header says only 'normalized'",
+  "D": "main cause of the audit figure: the clerk's clear text around the cipher runs of P1 and P2 ('che si supponeva fatta', 'non sono però a lungo andare'), braces in P*_decode.txt, lower case in P*_it.txt; no code number is given a value",
+  "F": "the script cannot use the capitals/braces convention; + (shared sign) and ? marks in the group files; only P1 and P2 of 17 texts were long enough to compare"
+ },
+ "before": "51 of 113 words depart (texts compared: 2; P1 23 of 63, P2 28 of 50)",
+ "after": "51 of 113 words depart (texts compared: 2); unchanged, nothing to repair in the key",
+ "files_changed": [
+  "targets/montauti1692/NOTES.md",
+  "targets/montauti1692/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 14,
+  "examples": [
+   {
+    "text": "P1",
+    "decrypt": "g r i m a n [..] [..] [..] o",
+    "reading": "GRIMANI [..]O",
+    "where": "bare/P1_it.txt:2; bare/P1_decode.txt line 2"
+   },
+   {
+    "text": "P1",
+    "decrypt": "l i e g e",
+    "reading": "LIEGI (twice)",
+    "where": "bare/P1_it.txt:7-8; P1_decode.txt lines 13, 16"
+   },
+   {
+    "text": "P1",
+    "decrypt": "l e s i [22] n o z e",
+    "reading": "LE S[UE] NOZZE (code group 22 not printed)",
+    "where": "bare/P1_it.txt:8; P1_decode.txt line 14"
+   },
+   {
+    "text": "P1",
+    "decrypt": "a u g u s t i s i m e c a c a s e a e",
+    "reading": "L'AUGUSTISSIMA CASA E",
+    "where": "bare/P1_it.txt:9; P1_decode.txt line 17"
+   },
+   {
+    "text": "P2",
+    "decrypt": "c i r c o s p e z t o+ n e (group ?6w)",
+    "reading": "CIRCOSPEZIONE",
+    "where": "bare/P2_it.txt:2; P2_decode.txt line 12"
+   },
+   {
+    "text": "L01",
+    "decrypt": "l e l t t* o r r",
+    "reading": "L'EL[E]TTORE (L01_decode.txt has l'El[e]ttor[e])",
+    "where": "readings/L01_it.txt:2"
+   },
+   {
+    "text": "L35",
+    "decrypt": "46 21 55 11 = d e l a; decode file prints d e l l a",
+    "reading": "DELLA CORTE",
+    "where": "readings/L35_decode.txt 35r a; readings/runs_533.tsv:31"
+   },
+   {
+    "text": "L35",
+    "decrypt": "e l l d c n ?",
+    "reading": "[D]ELL[A] D[O]N[N]A(?) (c dropped, final A on a group with no value)",
+    "where": "readings/L35_it.txt 35v a"
+   }
+  ]
+ },
+ "page_statements_false": [],
+ "remaining": "No page exists (Status: in progress). The key file is complete: 781 of 892 groups take the key's letter as printed, 77 have no value, 27 rest on re-read digits (transcription readings marked *, not key values, so not added). Two decode-file oddities: L19 group 55 printed '?' though the key gives l; L35 'della'. Decision needed on the Codex 533 reading files: whether a letter resting on a re-read digit must be marked in L*_it.txt as it is in the decode files, and on the clear words set in capitals in P1/P2/P4. profile.json was re-dumped with indent=1 as the brief says; it had two inline objects, so the diff is 57 lines for one added step. Not checked: any group against an image; readings/letter_1r1v.md and words_533_strict.tsv against these counts; the folder's scripts were not run.",
+ "confidence": "medium"
+}

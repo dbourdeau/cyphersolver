@@ -1,0 +1,57 @@
+{
+ "folder": "hopken1740",
+ "causes": {
+  "C": "despatch of 1740 (text 0): reading_sv.txt is the contemporary gloss, not the key output; of 1,387 confident cipher words 1,092 equal the key decode, 172 differ by the clerk's spelling with pieces = key (58 doubled letter only, e.g. ti-l/till; 11 a/e only; 103 other, e.g. alliance/alliancen), 7 by both. Texts 1-5: word codes rendered in French/Latin (ottporten/Porte, tractat/traité; marked in marked_*.txt) and about 28 words respelt without a mark in reading_*.md (Excellentia x6, intérêts x2, Castellane, accommodement)",
+  "D": "text 0: 224 clear-text units and 11 bracketed doubtful words interleaved in reading_sv.txt; texts 1-5: clear passages «…», sense guesses [?x] kept out of the keys on purpose, holes [1234]",
+  "F": "text 0: 116 words (176 group occurrences) where the pairing gives a variant piece listed in the 'other' column of key.tsv (1825 at/att 37 times), the audit reads the value column only; texts 1-5: the stroke ' after a group and punctuation tokens lower the audit's key coverage to 78-81% (real gaps: 0/282, 14/205, 11/269, 47/493 with key_1741.tsv, 7/614 with key_1742.tsv)",
+  "B": "none in the sense of an undocumented change; but reading_khan1742.md prints 18 repaired words (21 changed values) with no mark in the text, the marks being only in marked_khan1742.txt (7 explained in about_reading_khan1742.txt)"
+ },
+ "before": "770 of 2555 words depart (texts compared: 6): 621/1795, 17/128, 9/83, 19/109, 16/161, 88/279",
+ "after": "unchanged, 770 of 2555 (no key, transcription or reading file changed)",
+ "files_changed": [
+  "targets/hopken1740/NOTES.md",
+  "targets/hopken1740/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 18,
+  "examples": [
+   {
+    "text": "khan1742",
+    "decrypt": "el-che-us-e (1270 el)",
+    "reading": "fâcheuse",
+    "where": "marked_khan1742.txt {el/fâ}+che+us+e / reading_khan1742.md"
+   },
+   {
+    "text": "khan1742",
+    "decrypt": "ur-n-ti-ig-es",
+    "reading": "frontières",
+    "where": "marked_khan1742.txt {ur/fr}+{n/on}+ +ti+{ig/è}+{es/res}; about_reading_khan1742.txt note 3"
+   },
+   {
+    "text": "khan1742",
+    "decrypt": "do-ga",
+    "reading": "dont",
+    "where": "marked_khan1742.txt A12 do+{ga/nt}"
+   },
+   {
+    "text": "khan1742",
+    "decrypt": "cke",
+    "reading": "mai",
+    "where": "marked_khan1742.txt {cke/mai}"
+   },
+   {
+    "text": "khan1742",
+    "decrypt": "och-ca-negociation",
+    "reading": "occasion",
+    "where": "marked_khan1742.txt {och/oc}+ca+{negociation/sion}"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"23 carry a marked repair\" (Khan's letter) — the repairs are marked in marked_khan1742.txt only; the reading shown on the page (reading_khan1742.md) prints them without a mark",
+  "\"Against the frozen key 84 of its 122 words are verbatim and 3 have a marked repair\" (Lit. A) — the reading shown marks only {+t} and {+a}; the word-level marks are in marked_lita_1741.txt (counts not re-derived here)"
+ ],
+ "remaining": "Nothing to repair in the keys: every value the readings use beyond the key files is a marked sense guess. Not checked: digits and gloss against the images, scripts/check_marks.py counts (scripts not run; my own piece-by-piece comparison found no unmarked piece), the exact count of the 18 unmarked-in-reading words is from marked_khan1742.txt. At A11 marked file has {re/im}puter but reading_khan1742.md prints 'réputer' (inconsistent between the two files).",
+ "confidence": "high"
+}

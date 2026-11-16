@@ -130,6 +130,60 @@ Full Italian with holes in place: `readings/`. English: `translations/`.
 - The repository's checker scripts were not run by us (we treat downloaded repositories as data). The checks they make
   were verified by reading them; see the pull request text.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` compared two of the nine letters, the only ones where its generic tokeniser reached
+70% of the groups: 2 January [1722], 16 of 64 words with a letter the key does not give and no bracket; 19 February 1727,
+2 of 32. Together 18 of 96. The other seven letters were not compared by the script.
+
+Cause for nearly all of them: the script, not the records. It splits the transcription on spaces and looks each piece up
+in `key.tsv` as it stands, so every group written with a mark of this folder's notation has no value for it: the stroke
+(`62'` = lle, `61'`, `52_'`), the doubt (`23?`), the raised numeral (`261^3`), the x sign (`x1`), the link (`3_-50_`), a
+note in square brackets. Example: 2r.L04 `32 62'` is "de le'" in `decryptions/` and "delle" in the reading; the script
+had "de" alone and counted "lle" as supplied. `decryptions/` (written by `scripts/build.py` from `key.tsv`) already is the
+unedited output of the key, unit for unit.
+
+The nine readings were therefore compared with the values of `units.tsv` (classes SYL, WORD, and CODE where `key.tsv`
+has a value), letters folded as in the audit, by a snippet that changes nothing. Result over the nine letters: 124
+places where the reading differs inside brackets (marked); 119 doubled consonants and 11 endings after 10_ = MENT
+(-mente, -mento), both covered by the conventions line of each reading and by the key's source column. What is left,
+in units marked S (counted read) and with no bracket in the reading:
+
+- 3 times "impegnar-" where the key gives IN + pe ("i n pegnarsene": 10 Jun 21r.L12, 29 Jul 25r.L16, 8 Aug 35r.L20):
+  n printed as m.
+- 3 times "porterebbe" / "riporterebbe" where the key gives "po r ta re be'" (8 Aug 35v.L12, 36r.L01; 12 Aug 23r.L09):
+  a printed as e.
+- 8 Aug 35r.L11: "so fe' r te da STATO^3" is printed "sofferti dalli [?Stati]": e printed as i, "lli" supplied.
+- 20 Mar 1726 21r.L15: "ma n da r g li e li" is printed "mandargliele"; 21v.L01: "o n ra ri" is printed "onorari".
+- 2 Jan 2r.L11: "IN CON mo da to" is printed "incomodato" (n dropped); 29 Jul 25r.L12: "da la' ... a si" is printed
+  "dall'assistenza" (elision).
+- 8 Aug 36r.L07: the five units `53 71_ 93_ 4 83` = "gi ta zi o ni" after code 102 are marked S in `units.tsv` and do not
+  appear in the reading, which prints "le presenti [102] del [?Padrone]".
+- Marking of code 226 (QUEST in `key.tsv`; "code values are never counted as read"): printed without "[?" in the
+  8 August letter (12 times: questo 10, queste 1, questi 1) and in the 2 January letter ("quest'ordinario"), and as
+  "[?questo]" in the other letters. The counts are not affected (a code is mark E either way).
+- 12 Aug 23r.L14: "dormono." is clear text in the transcription and stands inside the asterisks in the reading.
+
+That is 11 words with a letter changed or supplied without a bracket in 2,175 units counted read, none of them in the
+1727 letter and one (incomodato, a letter dropped) in the 2 January letter. They were not bracketed here: no reading,
+decryption or key file was changed. Nothing was added to `key.tsv`: no value used in a reading is missing from it.
+Figures after: unchanged, 18 of 96, because the cause is the script's tokeniser. Not checked: the transcriptions against
+the images, and the English translations.
+
+Marked on 16 Nov 2026. Ten places bracketed in five reading files, no letter changed: `selvatico_1722-06-10.md` 1
+(i[m]pegnarsene), `selvatico_1722-07-29.md` 1 (i[m]pegnarlo), `selvatico_1722-08-08.md` 4 (soffert[i] da[lli],
+i[m]pegnarsi, port[e]rebbe, riport[e]rebbe; "sofferti" and "dalli" are two of the eleven words),
+`selvatico_1722-08-12.md` 1 (port[e]rebbe), `starhemberg_1726-03-20.md` 2 (mandargliel[e], on[o]rari). Left unmarked,
+1: "incomodato" (2 Jan 2r.L11, key "IN CON mo da to"), where a letter is dropped and there is none to bracket; also
+unmarked "dall'assistenza" (elision). The conventions line of the five files said that a bracketed letter's unit is
+counted not read in `units.tsv`; it now adds that the letters bracketed on 16 Nov 2026 are the exception, because
+`units.tsv`, `overrides.tsv` and `counts.txt` were not changed: the ten places sit in units still marked S, so the
+strict counts are about ten units too high until the overrides are added and `scripts/build.py` is run. The five units
+"gi ta zi o ni" (8 Aug 36r.L07, `53 71_ 93_ 4 83`, mark S) are still absent from the reading; they were not added. The
+marking of code 226 was not changed. Page `docs/riva1722.html`, section 05: the sentence "every group the reading had
+to emend or supply is not read" now names the eleven exceptions. `v2_score.py` hole rate before and after: 10 Jun 0.101
+and 0.106; 29 Jul 0.156 and 0.162; 8 Aug 0.155 and 0.165; 12 Aug 0.171 and 0.177; 20 Mar 1726 0.186 and 0.193.
+
 ## Remaining gaps
 
 - Codes: 201 units, 74 different numbers; none is counted read - blocker: open-codes; `holes.md` 2 lists each with the proposed value, if any (only 288 V.S. and 214 Olanda have a gloss of the time)

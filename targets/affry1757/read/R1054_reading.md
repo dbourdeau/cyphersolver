@@ -1,5 +1,8 @@
 # R1054 - d'Affry, The Hague, 19 July 1757 (to Bernis, "B."): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time except at the places listed under "Figures over the register", where the figures are followed. It is not the
+output of this folder's key; the keyed decode is `read/R1054.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 248R-249L (margin "Dat: 19. Juïllet 1757. A: à B:"), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`) and checked line by line against the NA IIIF scans 23 Oct 2026 (r2q). The register is the

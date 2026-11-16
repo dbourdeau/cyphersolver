@@ -1,0 +1,69 @@
+{
+ "folder": "branicki1757",
+ "marked": [
+  {
+   "file": "reading_446_marked.md (new companion; reading_446.md itself not marked)",
+   "places": 7
+  },
+  {
+   "file": "reading_1398_marked.md (new companion)",
+   "places": 136
+  },
+  {
+   "file": "reading_1399_marked.md (new companion)",
+   "places": 17
+  },
+  {
+   "file": "reading_1400_marked.md (new companion)",
+   "places": 8
+  }
+ ],
+ "left_unmarked": {
+  "count": 150,
+  "why": "The four reading_<n>.md files are the contributor's (Prabal Gupta's) readings kept as his, so by brief 2 item 2 nothing was marked inside them: the 150 words (168 places) are marked only in the generated companions reading_<n>_marked.md. outcome.texts[].reading was not re-pointed. In addition 138 letters of the decryptions that the readings drop cannot be marked without adding a letter; they are in emendations.tsv."
+ },
+ "headers_changed": [
+  "reading_446.md, reading_1398.md, reading_1399.md, reading_1400.md: one line added after the existing header paragraph: \"This is the contributor's reading, not the output of the key: where the decryption has a slip it prints the word meant, and it words the number groups, mostly without a mark. The output of the key is `decryption_<n>.txt`; `reading_<n>_marked.md` is this text with every letter the key does not give in square brackets (added by the project, 16 Nov 2026).\""
+ ],
+ "page_changes": [
+  "\"The number codes 195, 296, 367, 385, 386, 480, 496, 580, 775, 795 and 841 are not read; others (720 Stolnik, 350 France, 270 and 273 Czesnik) are guesses, shown as doubtful.\" -> \"The number codes 195, 296, 367, 480, 496, 775 and 795, the 385 of letter 1400 and one 841 of letter 1399 are not read; others (720 Stolnik, 596 Pologne, 643 Roi, 550 occasion, 245 Courlande, 495 Livonie, 345 la Famille) are guesses, shown as doubtful.\"",
+  "\"Eleven number codes\" -> \"Nine number codes\" (At a glance, Still open)"
+ ],
+ "page_counts_now_stale": [
+  "\"Letter 446 reads at 98.1% (7 holes in 369 cipher words), 1398 at 97.3% (16 in 584), 1399 at 99.2% and 1400 at 99.6%; over the four letters 2,119 of 2,150 cipher words are deciphered, 98.6%.\" — stale only if the marked copies become the published readings (150 more marked words, 119 of them in 1398)",
+  "\"Key: key.tsv\" inside the generated texts block: profile now lists key.tsv and key_with_numbers.tsv"
+ ],
+ "hole_rate": [
+  {
+   "file": "reading_446.md",
+   "before": 0.023,
+   "after": 0.026,
+   "state_in_profile": "read",
+   "marked_copy": 0.036
+  },
+  {
+   "file": "reading_1398.md",
+   "before": 0.035,
+   "after": 0.037,
+   "state_in_profile": "read",
+   "marked_copy": 0.183
+  },
+  {
+   "file": "reading_1399.md",
+   "before": 0.014,
+   "after": 0.017,
+   "state_in_profile": "read",
+   "marked_copy": 0.035
+  },
+  {
+   "file": "reading_1400.md",
+   "before": 0.008,
+   "after": 0.014,
+   "state_in_profile": "read",
+   "marked_copy": 0.028
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "The before/after difference on the contributor's files is only the added header line (these files have no '## Reading' heading, so v2_score reads the header too). If reading_1398_marked.md is adopted as the published reading, 1398 falls below the read bar (hole rate 0.183); the other three stay under 0.05. Decision needed: re-point outcome.texts[].reading to the marked copies or not; and the open/guess list in NOTES 'Remaining gaps' and profile outcome.gaps still disagrees with numbers.md (page corrected, records left). New files: mark_emendations.py, emendations.tsv, key_with_numbers.tsv (round 1). The script asserts each marked copy without brackets equals the reading without brackets."
+}

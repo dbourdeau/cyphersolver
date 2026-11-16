@@ -64,3 +64,64 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md` (Spanish), `translati
 - Criterion met narrowly. The frozen key reads 0.752 of the words and 0.857 of the characters of the test letter, against a threshold of 0.75 / 0.85. The starting key (K5, without the Infanta’s letter), measured outside the protocol on the same letter, gives 0.743 / 0.857: the gain is marginal.
 - A wrong PARES record. Image 6 of unit 12877137 bears the shelfmark D.168, which PARES describes as a cédula to the Marquis del Viso; it is in fact the contemporary decipherment of D.167 (“de que la república quería estar neutral…”), which served as our test letter.
 - A possible plain-text draft, not consulted. The chancery usually kept the plain-text draft (minuta) of the King’s letters to the governors of Milan in the Estado, Milán bundles at Simancas (AGS, legajos c. 3338–3340 for 1630). These bundles are neither described item by item nor digitised; we do not know whether the draft of this letter survives. If it does, it will check the probable and restored words.
+
+## Decrypt audit, 16 Nov 2026
+
+The audit (`research/decrypt_audit/`) applied `key_K6A.tsv` to `transcription.txt` and compared the letters with
+`reading.md`: 219 of 1,112 compared words depart from what the key gives, without a mark. A separate letter alignment
+of the mechanical decrypt with `reading.md` (1,169 words) gives: 896 words as the key file gives them, 75 departing
+and marked ({x}, [x], ‹x›), 57 departing by spelling only, 141 departing otherwise without a mark.
+
+Causes, with one example each:
+
+- Normalisation (C), stated. `reading.md` says "Spelling normalised": auer > haber (h added 38 times, u > b 20),
+  exercito > ejército (9), azer > hacer (8), assi > así, quenta > cuenta. 57 words depart in this way only, and many of
+  the 141 carry such a change too.
+- Key file incomplete (A). `key_K6A.tsv` keeps one value per token, the commonest in the aligned pairs (columns n and
+  total: `fer` de 121 of 183), and drops codes aligned fewer than twice. The reading uses other values, as the Reading
+  section says ("the choice between homophones ... is made by the shape of the word"), and they are in no file of the
+  folder: `fer` read do ("se na de r" printed "senador", 8 times), `X` read t ("r re gu as" printed "treguas", 8),
+  `q` read b or d ("o s li ga ro n" printed "obligaron", 8), `P` "caso" printed "Casal" (7), `C` "como" printed
+  "comi-", "comu-" (6), `J` "co" printed "ciudad" (2). Ten codes with no row in the key file are printed as words without
+  a mark, about 19 words: 104 "despacho" (3; twice more inside "mira a despedir", decryption line 203), `xol` "fo-"
+  (3), `tan` "-nar" (2), `fru` "diligencia" (2), `plo` "cuidado" (2), `hon` "Piamonte", 165 "-forme", `gli`
+  "buenas", 205 "importancia", 122 "esto". The pairs the key was learnt from, and the working keys named in
+  `validation/score.txt` (`working/K6A_frozen.tsv`), are not in the folder, so the statement that every such value is
+  attested in the pairs cannot be checked here.
+- Unmarked emendation (B). Abbreviations and letters supplied without a mark: "mi s r s" printed "ministros" (3),
+  final letters added ("copia" > "copias", "veni" > "venir"), and decrypted letters left out ("que se os ‹fri› z e e n
+  otra" printed "que se os ‹fri› en otro", decryption line 207). These are counted within the 141; they were not
+  separated one by one from the second homophone values.
+- Marked words and unresolved codes (D): 75 words, nothing wrong.
+
+Changed: `key_K6A_additions.tsv` added and listed in `profile.json` `outcome.key_file` beside the frozen
+`key_K6A.tsv`, which is untouched. It holds five values that files of this folder establish, each with its source:
+`hon` = Piamonte and 155 = franceses (this file, System and Justification), and from the held-out pair
+`validation/D167_cipher.txt` / `D168_plain.txt`: `X` = t (line 4, "neutral"), `fer` = do (line 11, "procurando"),
+`fri` = di (line 10, "ellos dicen"). No value was taken from what the reading needs.
+
+The pair gives `fri` = di, which bears on two places of D.213 that the reading leaves open or probable: decryption
+line 93 "‹fri› do" under "enten{di}do", and line 207 "se os ‹fri› z e", which would be "se os dize". The reading was
+not changed; this is for a decision.
+
+Figures after: unchanged, 219 of 1,112, because the audit applies one value per token. Not checked: the images; the
+141 words one by one (classified by pattern of replacement, not read singly); whether the transcription token 104 is
+one sign.
+
+Marked on 16 Nov 2026. The 141 words were checked one by one against the key output (`decryption.txt` lines and
+both key files). `reading.md` now carries 122 new [x] marks in 119 words: codes with no row in the key printed as
+words ([despacho] 4, [diligencia] 2, [cuidado] 2, ga[nar] 2, [fo]rtifica- 3, [importancia], con[forme], [buena]s,
+[mira a despedir]), letters from a homophone value the key files do not hold (o[b]ligaron, a[d]virtiendo, Cas[a]l 7,
+com[i]sario 4, c[iudad]ela 2, en[t]regar), and letters or words supplied ([minist]r[o]s 3, [necesidad] 3 where the key
+gives "e ma ne ra", [ninguna], [provisiones], [andando], [pueda]). No letter of the text was changed. Not marked: 16
+words that follow the second values `fer` = do and `X` = t now in `key_K6A_additions.tsv`; the 57 words that differ by
+the stated spelling normalisation, with "acción", "u", "exacciones", "vuelvan"; and places where decrypted letters are
+left out or reordered, which have no letter to mark ("no se a ue r" printed "no haberse", "franceses es ∅ a ga n"
+printed "{franceses} hagan", "se os ‹fri› z e" printed "se os ‹fri›", "uuestra" after "traído", "intentos" printed
+"intento", "se trata" printed "[se] ha de tratar"). Words the alignment did not flag were not re-read. Header changed:
+`reading.md` Conventions line extended. `v2_score.py` on `reading.md`: hole rate 0.023 before, 0.115 after (each word
+holding a bracket counts as a hole). On the page, the sentence "1,112 are certain ..." was reworded; its counts were
+not recomputed.
+
+
+Placement of the marks (same day): the reading is the contributor's (Brice Dudout), so `reading.md` was put back as he gave it, with corrected header lines, and the marked text is the companion file `reading_marked.md`. Where this section says the marks are in `reading.md`, read `reading_marked.md`.

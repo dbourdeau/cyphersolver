@@ -145,6 +145,81 @@ shares would be lower if that reading were not accepted: a stricter reading of "
 the coordinator to decide. No measure declaration can be added: the files have no clear/cipher marks to declare (and
 `v10_relabel.py` does not read a bare `?` as a hole), so the hand count above is the figure of record.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit` applied `key.tsv` to `ct/*.txt` and compared the letters with `texts/*_reading.txt`. Five
+letters could be compared (Barclay 10 Apr 1786, Carmichael 8 May and 29 May 1788 and 26 Jan 1789, Short 9 Oct 1789):
+124 of 508 words depart (24%).
+
+**Cause: the readings were never produced by `key.tsv`.** Each group's reading is the `plain` column of
+`transcription/*.tsv`, one row per occurrence: Jefferson's interlinear decoding or clear-text sheet, the clerk's
+decoding in Short's copies, or the editors' printed text, laid along the groups. `make_reading.py` copies that column
+to `reading.tsv` and grades it; `make_texts.py` joins it into `texts/*_reading.txt`. `key.tsv` is a by-product: the
+348 numbers whose value stands on one group in a contemporary decoding. Checked here: `reading.tsv` regenerates exactly
+from `transcription/*.tsv` and `key.tsv` (1,954 rows), and 16 of the 18 `texts/*_reading.txt` regenerate exactly from
+`reading.tsv` (the other two, 4 Jul 1787 and Barclay's footnotes, are hand-written, as `make_texts.py` says). So the
+records are in step; they do not pass through the key.
+
+Of the 1,904 groups that carry a reading (group by group, all 18 letters):
+
+| relation to `key.tsv` | groups |
+|---|---|
+| number in `key.tsv`, same value | 807 |
+| number not in `key.tsv` (273 of them with a doubtful digit) | 727 |
+| number in `key.tsv` with another value: the group is part of a longer word laid over several groups, a homophone, a sender's slip or an editors' correction | 301 |
+| number in `key.tsv`, but the value there is a transcriber's note or a mark, not a value | 44 |
+| punctuation or a mark on both sides | 25 |
+
+Example (the audit's "an" against "politicians"): in Carmichael 29 May 1788 Jefferson wrote "politicians" over 548,
+and the word runs over 548.882.1008, none of them in `key.tsv`; the next group 1237 is "an" in `key.tsv` (8 May) and
+has Jefferson's error mark here, so the reading prints "?".
+
+What is a defect:
+
+1. **`key.tsv` holds raw interlinear strings, some of which are not values.** Notes and marks stand as values for
+   1252 ("[struck-through word]"), 1399 ("[above: 1349 ks]"), 371 ("[below: c]"), 905 ("[below: k]"), 6, 1279, 1280
+   ("—"), and with a value beside them for 249, 508, 1362, 1538 and 186 ("816 con-"). Phrases stand for 1420 ("because
+   his de-"; = de, section 1 above), 270, 740. 1166 and 1390 both have "indispensibly" from one unsplit row of the 1791
+   sheet, while 1166 ends treat-y, superiorit-y, neutralit-y and ver-y in three other letters and 1390 is "ne" in
+   Jefferson's correction of 29 May 1788; 1190 has "ain" (= the, homophone list above); 1307 has "mr" (also r).
+   `key.tsv` was not edited: it is written by `attested_key.py`, and for several of these numbers the value is a
+   matter of judgement on the images.
+2. **Nineteen groups graded H print the editors' word where Jefferson's decoding over the group gives another, with
+   no bracket in the reading file** (16 words). Jefferson's decoding to the editors' word: 751 fused to refused,
+   1285 do to does, 887 that to what (Barclay 1786); 456 my to mine (the editors' bracket dropped), 1509.950.1509.694
+   ral fical ral owl to "official? nature?", 708 that? to their, 684 constitu to draw (8 May 1788); 1209 cor- to
+   at(tention), 1164.587 sea w to (L'Oiseau), 1206 des to (ad)ds, 146 President to Sweden, 329 now to how?
+   (29 May 1788); 1314 the to tho (5 Jun 1788); 1252 dis to (Ca)di(z) (24 Jul 1788); 1017 s to (Natche)z
+   (26 Jan 1789). Each is recorded in the note column of the transcription; the reading files print the word bare
+   ("official?", "nature?" and "how?" carry a query). The grade H ("a contemporary decoding") is wrong for these 19.
+3. A further 13 groups print Jefferson's own correction, written under the group with the right number, instead of
+   what the number as sent gives: 1360 blo to is (four times), 1190, 1538, 806, 378 (8 May 1788), 59, 1552, 1396
+   (29 May), 1098, 772 (24 Jul). These follow the manuscript; the reading files do not mark them.
+4. `make_texts.py` writes a word once when consecutive groups carry it, but not when the forms differ, so the reading
+   files repeat fragments: "information formation", "months s", "promoting promot promoting", "superiority superi
+   superiority", "discourse course", "assured assur assured".
+
+Changed: nothing in the key, the transcriptions or the readings. A second key file made from the `plain` column was
+considered and not written: it would be the reading in key form, and for the press copies with clear sheets it would
+give whole phrases to single groups. Figures after: the same, 124 of 508. Not checked: no image was re-read, and the
+124 words were not attributed one by one; the group counts above stand for them. For decision elsewhere: bracketing
+the words of point 2, regrading them, and whether `key.tsv` should carry cleaned values.
+
+Marked on 16 Nov 2026. The reading files are Jefferson's decodings and sheets and the editors' text, not the output
+of the key, so nothing was marked inside them: each of the 18 `texts/*_reading.txt` now opens with one `#` line saying
+so and naming its `_decryption.txt`. The 19 groups of point 2 were marked in the grading of the decryption files:
+grade H changed to M ("editors' reading only") in `texts/barclay_17860410_decryption.txt` (3 groups),
+`carmichael_17880508` (7), `carmichael_17880529` (6), `carmichael_17880605` (1), `carmichael_17880724` (1) and
+`carmichael_17890126` (1), with a `#` line in each saying so. No word was changed. Left unmarked: the 13 groups of
+point 3 (Jefferson's own corrections; they are a contemporary reading and stay H) and the repeated fragments of point 4.
+Out of step until decided: `reading.tsv`, `make_reading.py`, the profile and the page still count those 19 as H
+(H 1,519, M 216; with the regrade H 1,500, M 235), and `make_texts.py` would write the files again without the new
+header lines and with H. `key.tsv` was not touched. Page (`docs/jefferson1787.html`): "its value taken only from those
+decodings" now says the key was built only from the decodings and the readings also use the editors' text; "every
+value in key.tsv is a contemporary decoding" now says the key is built only from contemporary decodings and that about
+20 entries are notes, marks or phrases. Hole rate (`v2_score.py`, en) unchanged by the header line: 0.013 for
+8 May 1788 and 0.0 for Barclay 1786, before and after. Audit figures unchanged, 124 of 508.
+
 ## Remaining gaps
 
 - single unread or doubtful groups marked ? in Carmichael 5 Jun 1788, 24 Jul 1788, 26 Jan 1789 and Jefferson 25 Sep 1787, and the conjectural syllables of Jefferson 9 Aug 1789 ([beg], [Bru], [Braban], [motion]) - blocker: no-key-material; Jefferson's interlinear carries a ? for the group, or the group occurs once, and no other letter in this code fixes the value
