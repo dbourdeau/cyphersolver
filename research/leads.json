@@ -748,41 +748,6 @@
    }
   },
   {
-   "id": 868,
-   "counted": true,
-   "year": 1666,
-   "date": "Oct 1666 - 27 Feb 1667",
-   "title": "Arlington to Sandwich (Madrid), almost entirely in cypher on the Treaty with Spain",
-   "correspondents": "Lord Arlington to Earl of Sandwich",
-   "place": "Whitehall to Madrid",
-   "language": "English",
-   "region": "England",
-   "period": "1651-1700",
-   "shelfmark": "Bodleian Library, MS. Carte 75 fols. 493, 498-499",
-   "folio_note": "2 letters, mostly cipher",
-   "cls": "B",
-   "status": "The Bodleian summary gives the content, so a decipherment is probably attached; not confirmed. Likely already read.",
-   "why": "Anglo-Spanish treaty of 1667.",
-   "importance": 3,
-   "solvability": 3,
-   "difficulty": 2,
-   "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
-   "verify": "Check whether the volume has interlinear decipherment.",
-   "links": [
-    {
-     "label": "Discovery record (Bodleian)",
-     "href": "https://discovery.nationalarchives.gov.uk/details/r/e3f1f349-1d78-44e7-a01b-1ccc43ead567"
-    }
-   ],
-   "seen": "catalogue",
-   "source": "UK archives sweep (TNA Discovery)",
-   "prior_art": "unclear (the summary suggests it was read)",
-   "access": "archive",
-   "ark": "",
-   "scored": "sweep",
-   "vetting_note": "Arlington's two letters (Bodleian MS. Carte 75 ff. 493, 498-499) are not digitised; whether a decipherment is on the leaf, and whether Harris (1912) prints them, is open; the Sandwich side is printed deciphered in Original Letters (1724) vol. 2 (research/vetting_2026-11-14_ajbeling/vetting.json)"
-  },
-  {
    "id": 869,
    "counted": true,
    "year": 1795,
@@ -16010,14 +15975,35 @@
     }
    ],
    "score_note": "Scored from the archive description during the Oct 2026 CARLI/UIC Chicago sweep (research/chi_carli_uic/); not viewed",
-   "access_note": "Item is in the Chicago History Museum Research Center, mounted in 4 volumes; only the calendar entry is online. CHM says a 1976 microfilm copy of the Wilkinson material exists",
+   "access_note": "Chicago History Museum, James Wilkinson papers vol. 3 p. 66 item 91; only the calendar is online (CARLI CONTENTdm chm_fa/2106); a 1976 microfilm exists.",
    "cls": "C",
    "language": "English",
    "period": "1801-1900",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Re-checked 9 Nov 2026: the CHM finding aid PDF is downloadable (collections.carli.illinois.edu chm_fa/2106) but is only the calendar; item 91 reads 'receipt of ciphered message', most likely a clear acknowledgement, and the leaf (CHM vol. 3 p. 66, or the 1976 microfilm) is unseen, so ciphertext is not shown. Needs the CHM microfilm or a CHM reply."
+   "scored": "vetted",
+   "vetting_note": "Re-checked 9 Nov 2026: the CHM finding aid PDF is downloadable (collections.carli.illinois.edu chm_fa/2106) but is only the calendar; item 91 reads 'receipt of ciphered message', most likely a clear acknowledgement, and the leaf (CHM vol. 3 p. 66, or the 1976 microfilm) is unseen, so ciphertext is not shown. Needs the CHM microfilm or a CHM reply.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "CHM finding aid for the James Wilkinson papers, full-text calendar at https://collections.carli.illinois.edu/digital/collection/chm_fa/id/2106 (read 9 Nov 2026 and quoted in the lead); the companion entry is catalogue 1538 (item 93). The leaf was not seen.",
+     "extent": "One letter, Eustis to Wilkinson, 4 May 1809, vol. 3 p. 66 item 91.",
+     "cipher": "Calendar: 'Routine; receipt of ciphered message; most necessary for U.S. to maintain friendly relations with neighboring colonies.' The same calendar marks item 93 explicitly as 'part of message in cypher', so item 91 is described as an acknowledgement of a ciphered message, not as cipher."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Eustis' and 'Wilkinson' (16 Nov): catalogue 1538 (item 93, the companion cipher letter), catalogue entries on Eustis to Barlow 1812 and other Wilkinson items; no DECODE record of this letter.",
+     "tomokiyo": "Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026) grepped for Eustis and Wilkinson: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Eustis and Wilkinson: no hit.",
+     "edition": "No printed edition of the Eustis-Wilkinson letters of May 1809 found (28 Oct and 9 Nov searches); the CHM calendar is the only description.",
+     "literature": "Web search of 28 Oct 2026 (Wilkinson, Eustis, cipher, CHM) and the Chu-Valenti-Knight Wilkinson cipher work, which covers his Spanish codes only, found nothing on this letter."
+    },
+    "key_check": "No key involved: the letter is described as an acknowledgement in clear. The War Department cipher of item 93 is a separate question recorded under catalogue 1538.",
+    "duplicates": "Companion to catalogue 1538 (Eustis to Wilkinson, 10 May 1809, vol. 3 p. 67 item 93, part in cypher); no other duplicate.",
+    "verdict": "not_cipher",
+    "closed": "Closed as not a cipher text: the CHM calendar describes item 91 as Eustis's routine acknowledgement of a ciphered message, while it marks the next letter (item 93, catalogue 1538) as partly in cypher; a look at the microfilm could reopen it only if cipher groups turn up on the leaf."
+   }
   },
   {
    "id": 1542,
@@ -26944,12 +26930,33 @@
      "href": "https://discovery.nationalarchives.gov.uk/details/r/8b987ccd-95d2-424b-8125-7c84c77a8e7a"
     }
    ],
-   "access_note": "BL India Office Records; not seen online",
+   "access_note": "BL India Office Records IOR/G/17/5 ff. 228-232, not digitised (Discovery 'digitised': false). Discovery API https://discovery.nationalarchives.gov.uk/API/records/v1/details/8b987ccd-95d2-424b-8125-7c84c77a8e7a answers curl with JSON.",
    "score_note": "Scored from the archive description during the Ottoman/Turkish sweep (research/sweep_2026-11_ottoman_turkish/); not viewed",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "IOR/G/17/5 ff.228-232 not digitised; catalogue summarises content in full, so it is not shown whether ciphertext or the deciphered copy read to the Court survives. known.py Ainslie/Michell: only this lead and the 1787 Ainslie lead. No edition or scan to open; needs BL India Office reading room."
+   "scored": "vetted",
+   "vetting_note": "IOR/G/17/5 ff.228-232 not digitised; catalogue summarises content in full, so it is not shown whether ciphertext or the deciphered copy read to the Court survives. known.py Ainslie/Michell: only this lead and the 1787 Ainslie lead. No edition or scan to open; needs BL India Office reading room.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery record of the BL catalogue, read through the Discovery API (records/v1/details/8b987ccd-95d2-424b-8125-7c84c77a8e7a) on 16 Nov 2026. The leaves were not seen.",
+     "extent": "One item, IOR/G/17/5 ff. 228-232 (5 folios), dated Constantinople 17 June 1779, read in Court 17 Aug 1779.",
+     "cipher": "Scope note: 'Copy of cipher letter from Sir Robert Ainslie to Peter Michell. Traces developments in Anglo-Turkish relations, 1776 to 1779. Recommends that tributes be given to the Porte ... and that a proper agent be appointed at Cairo ... Read in Court 17 August 1779.' The content is summarised in full and the copy was read to the Court, which points to a deciphered copy."
+    },
+    "prior_art": {
+     "decode": "known.py on 'IOR/G/17' and 'Ainslie' (16 Nov): only this lead, lead 1886 and the uk_tna sweep README; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026) grepped for Ainslie: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Ainslie: no hit.",
+     "edition": "No printed edition of the letter found; the BL/TNA catalogue summary, made from the copy, gives its content, and the copy itself is the Company's reading of it (read in Court 17 Aug 1779).",
+     "literature": "Web searches of 6 Nov (Ainslie cipher India Office; Ainslie 1787 Carmarthen cipher) found no print or study; Bagis 1988 on Ainslie's embassy was not openable."
+    },
+    "key_check": "No key recorded in IOR/G/17; Ainslie's cipher with the East India Company is not held in the repo. Not needed if the copy is the decipherment, as the record indicates.",
+    "duplicates": "Lead 1886 is a second Ainslie cipher copy (IOR/G/17/6, 1787, to Carmarthen), a different letter; no other duplicate.",
+    "verdict": "read",
+    "closed": "Closed as read: the India Office item is a copy of Ainslie's cipher letter made for the Court of Directors and read in Court on 17 Aug 1779, with its content summarised in the catalogue, so it is the deciphered text."
+   }
   },
   {
    "id": 1886,
@@ -26981,12 +26988,33 @@
      "href": "https://discovery.nationalarchives.gov.uk/details/r/f9335f74-81dc-46c3-9462-c67472b6c47b"
     }
    ],
-   "access_note": "BL India Office Records; not seen online",
+   "access_note": "BL India Office Records IOR/G/17/6 Part 1 ff. 59-68, not digitised (Discovery 'digitised': false; BL searcharchives 041-000176650 has no images). Discovery API https://discovery.nationalarchives.gov.uk/API/records/v1/details/f9335f74-81dc-46c3-9462-c67472b6c47b.",
    "score_note": "Scored from the archive description during the Ottoman/Turkish sweep (research/sweep_2026-11_ottoman_turkish/); not viewed",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Blocker stands. Third pass (6 Nov): BL searcharchives record 041-000176650 (IOR/G/17/6 Part 1 ff.59-68, 'Copy of cipher letter ... Marked U.P.') has no digitised content (MDARK only, no images) and TNA Discovery f9335f74 says digitised: false. The catalogue summarises content (plague, Georgia, Cairo rebellion), so a readable text exists but nothing shows whether ten folios hold cipher groups or the clear copy. A TNA search for 'cipher letter' with Ainslie finds only this item and lead 1885. Web searches (Ainslie 1787 Carmarthen cipher; Ainslie cipher India Office) found no print or decipherment; Bagis 1988 on Ainslie's embassy not openable. Needs the India Office reading room or a BL image order."
+   "scored": "vetted",
+   "vetting_note": "Blocker stands. Third pass (6 Nov): BL searcharchives record 041-000176650 (IOR/G/17/6 Part 1 ff.59-68, 'Copy of cipher letter ... Marked U.P.') has no digitised content (MDARK only, no images) and TNA Discovery f9335f74 says digitised: false. The catalogue summarises content (plague, Georgia, Cairo rebellion), so a readable text exists but nothing shows whether ten folios hold cipher groups or the clear copy. A TNA search for 'cipher letter' with Ainslie finds only this item and lead 1885. Web searches (Ainslie 1787 Carmarthen cipher; Ainslie cipher India Office) found no print or decipherment; Bagis 1988 on Ainslie's embassy not openable. Needs the India Office reading room or a BL image order.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "TNA Discovery record of the BL catalogue, read through the Discovery API (records/v1/details/f9335f74-81dc-46c3-9462-c67472b6c47b) on 16 Nov 2026; BL searcharchives record 041-000176650 (6 Nov pass). The leaves were not seen.",
+     "extent": "One item, IOR/G/17/6 Part 1 ff. 59-68 (10 folios), dated Constantinople 24 Mar 1787.",
+     "cipher": "Scope note: 'Copy of cipher letter from Sir Robert Ainslie to the Marquis of Carmarthen. Reports on continuance of plague and current state of European relations with the Porte. Fears war between Turkey and Russia over a disputed claim to Georgia. Lack of contact with Cairo due to Egyptian rebellion. Marked U.P.' The full summary and the transmission to the Company point to a deciphered copy."
+    },
+    "prior_art": {
+     "decode": "known.py on 'IOR/G/17' and 'Ainslie' (16 Nov): only this lead, lead 1885 and the uk_tna sweep README; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026) grepped for Ainslie: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Ainslie: no hit.",
+     "edition": "No printed edition found; the original despatch to Carmarthen should be in TNA FO 78 (Turkey) with its contemporary decipherment, not checked; the India Office copy is itself summarised in full by the catalogue.",
+     "literature": "Web searches of 6 Nov (Ainslie 1787 Carmarthen cipher; Ainslie cipher India Office) found no print or decipherment study; Bagis 1988 not openable."
+    },
+    "key_check": "No key recorded with the copy; the Foreign Office cipher of Ainslie's embassy is not held in the repo. Not needed if the copy is the clear text, as the record indicates.",
+    "duplicates": "Lead 1885 is another Ainslie cipher copy (1779, to Michell), a different letter; the original despatch is presumably in TNA FO 78/8 or nearby, not a separate lead.",
+    "verdict": "read",
+    "closed": "Closed as read: the India Office item is a copy, passed to the East India Company, of Ainslie's cipher despatch to Carmarthen, with its content summarised in full in the catalogue, so it is the deciphered text."
+   }
   },
   {
    "id": 1887,
@@ -36180,13 +36208,34 @@
    ],
    "prior_art": "open as far as checked (4 Nov 2026: known.py 'Paolucci' and 'Marsili' only unrelated hits; no web search)",
    "needs_archive_scan": "yes",
-   "access_note": "no images linked from Manus; Bologna BU",
+   "access_note": "Bologna, Biblioteca Universitaria, Ms. Marsili 75/C; the Manus record has no image link (img null in the JSON). A BUB scan of cc. 91-92 would confirm the decipherment.",
    "source": "Sweep 2026-11 B unswept south (Manus Online / Wayback copies of Italian inventories)",
    "seen": "catalogue",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Blocker stands, and a decipherment on the leaf is likely. Manus 1846991 item 45 (re-read 6 Nov): 'Lettera in cifre c. 91rv. All'interno del bifoglio cifrato, forse allegata la sua decifrazione che riguarda la protezione di Roma e utilizzo di fondi economici'. The cataloguer summarised the content, which suggests a contemporary decipherment sheet inside the bifolio (that would make it read, not open); only the leaf can settle it, and Bologna BUB has no scan or image link. Searches run: BUB Marsili 75 digitised (no); Paolucci/Marsili 1708 cifra bifoglio decifrazione (nothing; only Lasry's 1721 papal cipher paper, unrelated); manus Marsili 75 Paolucci cifra (only Frati's 1928 catalogue and Marsili studies). known.py found no duplicate. Needs BUB scans of cc. 91-92."
+   "scored": "vetted",
+   "vetting_note": "Blocker stands, and a decipherment on the leaf is likely. Manus 1846991 item 45 (re-read 6 Nov): 'Lettera in cifre c. 91rv. All'interno del bifoglio cifrato, forse allegata la sua decifrazione che riguarda la protezione di Roma e utilizzo di fondi economici'. The cataloguer summarised the content, which suggests a contemporary decipherment sheet inside the bifolio (that would make it read, not open); only the leaf can settle it, and Bologna BUB has no scan or image link. Searches run: BUB Marsili 75 digitised (no); Paolucci/Marsili 1708 cifra bifoglio decifrazione (nothing; only Lasry's 1721 papal cipher paper, unrelated); manus Marsili 75 Paolucci cifra (only Frati's 1928 catalogue and Marsili studies). known.py found no duplicate. Needs BUB scans of cc. 91-92.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Manus Online record 1846991 (https://manus.iccu.sbn.it/o/manus-api/title?id=1846991), JSON fetched 16 Nov 2026: field 'Scrittura' = 'Corsive settecentesche, cifra'; contents list item 45. The leaves were not seen.",
+     "extent": "One letter of 10 Nov 1708 in cipher on c. 91r-v, with a further leaf of the bifolio (to c. 92r) inside; the other letters of the volume (items 1-96) are plain.",
+     "cipher": "Item 45: 'cc. 91r-92r: 10 novembre 1708. Lettera in cifre c. 91rv. All'interno del bifoglio cifrato, forse allegata la sua decifrazione che riguarda la protezione di Roma e utilizzo di fondi economici.' The item span to c. 92r and the content summary point to a decipherment filed inside the cipher bifolio."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Marsili 75' and 'Paolucci' (16 Nov): only the sweep READMEs that found this item and an unrelated Milan note on a 1712-13 Paolucci cipher instruction for Poland; no DECODE record of this letter.",
+     "tomokiyo": "Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026) grepped for Paolucci and Marsili: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Paolucci and Marsili: no hit; the 6 Nov search found only Lasry's 1721 papal cipher paper, unrelated.",
+     "edition": "No edition of the Paolucci-Marsili letters of 1708 found (6 Nov searches; Frati's 1928 Marsili catalogue only); the decipherment in question is the contemporary one filed in the bifolio, per Manus.",
+     "literature": "Web searches of 6 Nov (Paolucci Marsili 1708 cifra decifrazione; BUB Marsili 75 digitised) found nothing on this letter; the Manus cataloguer's content summary is the only reading on record."
+    },
+    "key_check": "No key recorded in the volume; the papal Secretariat's 1708 cipher is not held in the repo. Not needed if the filed decipherment is confirmed.",
+    "duplicates": "known.py found no other lead or catalogue entry for Marsili 75/C or this letter.",
+    "verdict": "read",
+    "closed": "Closed as read: Manus describes a decipherment filed inside the cipher bifolio (cc. 91r-92r) and summarises its content, so the letter was read at the time; a scan of c. 92r would confirm it."
+   }
   },
   {
    "id": 2212,
@@ -46474,13 +46523,34 @@
    "source": "BU ArchivesSpace (archivesspace.bu.edu, through Chrome), reachable-unlooked sweep, 14 Nov 2026",
    "score_note": "Scored from the BU ArchivesSpace finding aid during the 14 Nov 2026 sweep; not viewed",
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the fonds, number and correspondents (catalogue, leads, targets, DECODE and HCPortal dumps) finds nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep; Quadra's Spanish calendar printing and the 1981-82 paper not read",
-   "access_note": "description only on BU ArchivesSpace; the Simancas originals are on PARES (not checked here)",
+   "access_note": "BU School of Theology Archives, Gonzalez papers, Box 5 (reading room); the Simancas originals are on PARES, which was not tried (429 all day, 16 Nov). Hume vol. 1 read at archive.org calendarofletter01grea.",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "The BU folder (Gonzalez papers, Box 5 Folder 131 'Cuadra Cypher', read in Chrome 14 Nov) is a researcher's file with an undescribed content list of Simancas letters, several marked 'cifrado' and one 'Decifrado de Quadra' (AGS Estado 816:146); it does not show that cipher images are held at BU. Quadra's letters of 1558-67 are calendared in Hume's CSP Spanish vol. 1 (1892), so a decipherment exists in print; BHO pages were not openable (401). Close as read or key_lookup after checking e.g. the 7 and 27 Jan 1563 letters in Hume. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "The BU folder (Gonzalez papers, Box 5 Folder 131 'Cuadra Cypher', read in Chrome 14 Nov) is a researcher's file with an undescribed content list of Simancas letters, several marked 'cifrado' and one 'Decifrado de Quadra' (AGS Estado 816:146); it does not show that cipher images are held at BU. Quadra's letters of 1558-67 are calendared in Hume's CSP Spanish vol. 1 (1892), so a decipherment exists in print; BHO pages were not openable (401). Close as read or key_lookup after checking e.g. the 7 and 27 Jan 1563 letters in Hume. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "Hume, Calendar of Letters and State Papers relating to English Affairs preserved principally in the Archives of Simancas, vol. 1, Elizabeth 1558-1567 (London 1892), archive.org calendarofletter01grea, full text read 16 Nov 2026: 'Bishop Quadra to the King' ending 'London, 10th January 1562' (source note 'Simancas, B.M. MS. Add. 26,056a'), and the letter ending 'London, 27th January 1563' (no. 210, followed by 'The Same to the Same'). BU ArchivesSpace folder list (archival object 5201) as read in Chrome on 14 Nov 2026.",
+     "extent": "Quadra's correspondence of 1559-1563 with Philip II and Margaret of Parma, calendared letter by letter in Hume vol. 1; the BU folders 57-131 are one folder per Simancas letter of AGS Estado 812, 815 and 816.",
+     "cipher": "The BU folder titles mark several letters 'Cifrado' and one 'Decifrado de Quadra' (Estado 816:146), and Gonzalez's 1981-82 paper is titled 'The Quadra Cipher'; Hume prints the content of the same letters in English, so the ciphered passages were read at the time and in print."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Quadra', 'Cuadra' and 'Gonzalez' (16 Nov): only unrelated word hits and the 14 Nov sweep README for this BU file; no DECODE record of Quadra's cipher letters or key.",
+     "tomokiyo": "Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026) grepped for Quadra and Cuadra: no hit.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Quadra and Cuadra: no hit.",
+     "edition": "Hume, CSP Spanish, Elizabeth vol. 1 (1892) calendars Quadra's letters to the King and to Parma in full English, e.g. London 10 Jan 1562 and London 27 Jan 1563 (archive.org full text, 16 Nov); the calendar's rules say a contemporary decipher was treated as an ordinary document, so ciphered letters appear as read text.",
+     "literature": "Jorge Gonzalez, 'The Quadra Cipher', Sixteenth Century Studies Conference paper 1981-82 (BU Box 1 Folder 16), a modern study of the cipher; not read. BHO pages of the calendar were not openable (401) on 14 Nov."
+    },
+    "key_check": "No key held in the repo; a Quadra key may be among Gonzalez's working papers or at Simancas, and the 'Decifrado de Quadra' at Estado 816:146 is a contemporary decipherment. Not needed: the letters are read.",
+    "duplicates": "No other lead or catalogue entry for Quadra's letters or the Gonzalez papers.",
+    "verdict": "read",
+    "closed": "Closed as read: Quadra's ciphered letters to Philip II and Margaret of Parma of 1559-63 are calendared in full in Hume's CSP Spanish, Elizabeth vol. 1 (1892) from the Simancas texts, with contemporary decipherments at Simancas; the BU file is a modern researcher's working file."
+   }
   },
   {
    "id": 2599,
@@ -51658,38 +51728,6 @@
    "access": "archive",
    "scored": "sweep",
    "vetting_note": "Vetting pass 15 Nov 2026 (Omont NAF sweep): Not online: no Gallica record for NAF 22330 (SRU, 15 Nov 2026), unconfirmed. Few leaves."
-  },
-  {
-   "id": 2750,
-   "counted": true,
-   "language": "French",
-   "region": "France",
-   "period": "1701-1800",
-   "source": "Omont et al., Catalogue general des manuscrits francais (Paris, 1895-1918), OCR at archive.org (NAF II/III/IV, Ancien Saint-Germain III, Anciens petits fonds I-III), 15 Nov 2026",
-   "seen": "catalogue",
-   "needs_archive_scan": "yes",
-   "prior_art": "open as far as checked (15 Nov 2026): known.py and shelfmark grep against catalogue.json, leads.json, targets and sweeps; no web, Tomokiyo or Lasry search made in this sweep",
-   "links": [],
-   "cls": "C",
-   "score_note": "Scored from the printed Omont entry (OCR) on 15 Nov 2026; the leaf itself not viewed. The OCR heading number was checked against Gallica's title where a Gallica record is named.",
-   "year": 1768,
-   "date": "4 Aug 1768",
-   "title": "Abelard's epistle to Heloise 'transcrite en caracteres cryptographiques' by Villette, 15 ff. (NAF 11238)",
-   "correspondents": "Villette (copyist); a literary text copied in cipher",
-   "place": "France",
-   "shelfmark": "BnF, Manuscrits, Nouvelles acquisitions francaises 11238",
-   "folio_note": "Omont: 'Epitre d'Abailard a Heloise, transcrite en caracteres cryptographiques. A la fin: Fait par Villette, ce 4 aoust l'annee 1768.' 15 ff., 202 x 145 mm. research/sweep_2026-11_arabic mentions NAF 11238 only as a non-script item, not as a lead.",
-   "status": "A known text (an Abelard/Heloise epistle, in some French version) written in a substitution script; no decipherment noted.",
-   "why": "A crib-able plaintext (the epistle, in one of a few French versions) over 15 leaves with the copyist's own date: the easiest kind of cipher once the version is matched.",
-   "importance": 2,
-   "solvability": 5,
-   "difficulty": 1,
-   "verify": "Order NAF 11238; identify the version (18th-century French renderings of Pope's Eloisa and the Latin letters) and test.",
-   "region_note": "France",
-   "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Vetting pass 15 Nov 2026 (Omont NAF sweep): Not online: no Gallica record for NAF 11238 or for the Abelard epistle in cipher (SRU, 15 Nov 2026). A known text (Abelard to Heloise, some French version, 15 ff., Villette 4 Aug 1768); web search found no reading and no mention. Not seen, so not promotable; would be a quick read once photographed, because the plaintext can be cribbed."
   },
   {
    "id": 2751,

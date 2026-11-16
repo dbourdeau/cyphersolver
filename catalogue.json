@@ -26172,6 +26172,64 @@
    "repository": "tna"
   },
   {
+   "id": 868,
+   "counted": true,
+   "year": 1666,
+   "date": "Oct 1666 - 27 Feb 1667",
+   "title": "Arlington to Sandwich (Madrid), almost entirely in cypher on the Treaty with Spain",
+   "correspondents": "Lord Arlington to Earl of Sandwich",
+   "place": "Whitehall to Madrid",
+   "language": "English",
+   "region": "England",
+   "period": "1651-1700",
+   "shelfmark": "Bodleian Library, MS. Carte 75 fols. 493, 498-499",
+   "folio_note": "2 letters, mostly cipher",
+   "cls": "B",
+   "status": "The Bodleian summary gives the content, so a decipherment is probably attached; not confirmed. Likely already read.",
+   "why": "Anglo-Spanish treaty of 1667.",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "score_note": "Scored from the archive description during the Oct 2026 UK archives sweep (research/uk_tna/); not viewed",
+   "verify": "Check whether the volume has interlinear decipherment.",
+   "links": [
+    {
+     "label": "Discovery record (Bodleian)",
+     "href": "https://discovery.nationalarchives.gov.uk/details/r/e3f1f349-1d78-44e7-a01b-1ccc43ead567"
+    }
+   ],
+   "seen": "catalogue",
+   "source": "UK archives sweep (TNA Discovery)",
+   "prior_art": "unclear (the summary suggests it was read)",
+   "access": "archive",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "Arlington's two letters (Bodleian MS. Carte 75 ff. 493, 498-499) are not digitised; whether a decipherment is on the leaf, and whether Harris (1912) prints them, is open; the Sandwich side is printed deciphered in Original Letters (1724) vol. 2 (research/vetting_2026-11-14_ajbeling/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Bodleian calendar of the Carte papers via TNA Discovery record e3f1f349-1d78-44e7-a01b-1ccc43ead567, as read and quoted on 14 Nov 2026 (research/vetting_2026-11-14_ajbeling/vetting.json); the leaves themselves were not seen.",
+     "extent": "Two letters of Lord Arlington to the Earl of Sandwich at Madrid, Bodleian MS. Carte 75 f. 493 (October 1666) and ff. 498-499 (27 Feb 1667); the second 'at great length, and almost entirely in cypher'.",
+     "cipher": "Calendar for f. 498: 'Enters at great length, and almost entirely in cypher, into the questions relating to the provisions and form of the Treaty with Spain'; 'Original; in cypher'; Arlington himself writes 'At the end of this cursed cypher'. No interlinear or attached decipherment is mentioned."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Carte 75', 'Arlington' and 'Sandwich' (16 Nov): hits are this lead, the 14 Nov vetting, and a catalogue entry on Sandwich to Carlingford (a different channel); the 14 Nov DECODE search found only R499, a 1667 Spain key in TNA SP 106/6, and no record of these letters.",
+     "tomokiyo": "Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026) grepped for Arlington and Sandwich: the only hit is the Perwich to Arlington 1670 paragraph, a different cipher and already solved.",
+     "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Arlington and Sandwich: no hit.",
+     "edition": "Original Letters and Negotiations of Fanshaw, Sandwich, Sunderland and Godolphin (1724) vol. 2 prints the Madrid side deciphered but not Arlington's letters to Sandwich (14 Nov check); Arlington's Letters (1701) vol. 2 does not print them; Harris, Life of Edward Montagu, first Earl of Sandwich (1912) vol. 2, full text archive.org lifeofedwardmont02harruoft read 16 Nov: Carte 75 is cited many times but never ff. 493 or 498-499, and no Arlington cipher letter is printed.",
+     "literature": "Archive.org full-text search for 'cursed cypher' found no printing of the 27 Feb 1667 letter (14 Nov); Harris vol. 2 mentions cipher only for Fanshaw's mismanagement of the cipher and a Sandwich draft with cipher figures, not these letters."
+    },
+    "key_check": "No key on the leaves according to the calendar. DECODE R499 (TNA SP 106/6, a 1667 key for Spain) is probably the Arlington-Sandwich table and is recorded as a key held; the deciphered Madrid letters printed in 1724 give vocabulary of the same channel. Neither was tested, since the ciphertext has not been seen.",
+    "key_held": "DECODE R499, TNA SP 106/6, 1667, Spain: candidate key for the Arlington-Sandwich channel, untested.",
+    "duplicates": "No other lead or catalogue entry for Carte 75 ff. 493 or 498-499; the Sandwich to Carlingford catalogue entry and the 1724 printed Madrid letters are other letters of the same years.",
+    "verdict": "open"
+   },
+   "access_note": "Bodleian MS. Carte 75 is not digitised; needs a Bodleian image order for ff. 493 and 498-499. The TNA Discovery page returns empty to WebFetch, but the Discovery API (https://discovery.nationalarchives.gov.uk/API/records/v1/details/e3f1f349-1d78-44e7-a01b-1ccc43ead567, curl with Accept: application/json, 16 Nov) gives the record: 'MS. Carte 75, fol(s). 498-499', 27 February 1667, physical condition 'Original; in cypher'.",
+   "repository": "bodleian"
+  },
+  {
    "id": 870,
    "counted": true,
    "year": 1662,
@@ -84363,6 +84421,60 @@
     "duplicates": "known.py 'Danzay', '20140' (15 Nov 2026): this lead and its sweep row only.",
     "verdict": "open"
    },
+   "repository": "bnf"
+  },
+  {
+   "id": 2750,
+   "counted": true,
+   "language": "French",
+   "region": "France",
+   "period": "1701-1800",
+   "source": "Omont et al., Catalogue general des manuscrits francais (Paris, 1895-1918), OCR at archive.org (NAF II/III/IV, Ancien Saint-Germain III, Anciens petits fonds I-III), 15 Nov 2026",
+   "seen": "catalogue",
+   "needs_archive_scan": "yes",
+   "prior_art": "open as far as checked (15 Nov 2026): known.py and shelfmark grep against catalogue.json, leads.json, targets and sweeps; no web, Tomokiyo or Lasry search made in this sweep",
+   "links": [],
+   "cls": "C",
+   "score_note": "Scored from the printed Omont entry (OCR) on 15 Nov 2026; the leaf itself not viewed. The OCR heading number was checked against Gallica's title where a Gallica record is named.",
+   "year": 1768,
+   "date": "4 Aug 1768",
+   "title": "Abelard's epistle to Heloise 'transcrite en caracteres cryptographiques' by Villette, 15 ff. (NAF 11238)",
+   "correspondents": "Villette (copyist); a literary text copied in cipher",
+   "place": "France",
+   "shelfmark": "BnF, Manuscrits, Nouvelles acquisitions francaises 11238",
+   "folio_note": "Omont: 'Epitre d'Abailard a Heloise, transcrite en caracteres cryptographiques. A la fin: Fait par Villette, ce 4 aoust l'annee 1768.' 15 ff., 202 x 145 mm. research/sweep_2026-11_arabic mentions NAF 11238 only as a non-script item, not as a lead.",
+   "status": "A known text (an Abelard/Heloise epistle, in some French version) written in a substitution script; no decipherment noted.",
+   "why": "A crib-able plaintext (the epistle, in one of a few French versions) over 15 leaves with the copyist's own date: the easiest kind of cipher once the version is matched.",
+   "importance": 2,
+   "solvability": 5,
+   "difficulty": 1,
+   "verify": "Order NAF 11238; identify the version (18th-century French renderings of Pope's Eloisa and the Latin letters) and test.",
+   "region_note": "France",
+   "ark": "",
+   "access": "archive",
+   "scored": "vetted",
+   "vetting_note": "Vetting pass 15 Nov 2026 (Omont NAF sweep): Not online: no Gallica record for NAF 11238 or for the Abelard epistle in cipher (SRU, 15 Nov 2026). A known text (Abelard to Heloise, some French version, 15 ff., Villette 4 Aug 1768); web search found no reading and no mention. Not seen, so not promotable; would be a quick read once photographed, because the plaintext can be cribbed.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "BnF Archives et manuscrits notice https://archivesetmanuscrits.bnf.fr/ark:/12148/cc59029 (NAF 11238), as recorded in research/audit_2026-11-16_omont_shelfmarks/findings.json; Omont, Catalogue general, NAF entry for 11238 (OCR at archive.org), quoted in the lead. The leaves themselves were not seen.",
+     "extent": "The whole volume, 15 ff. (202 x 145 mm), per Omont; the notice gives no further extent.",
+     "cipher": "Omont: 'Epitre d'Abailard a Heloise, transcrite en caracteres cryptographiques. A la fin: Fait par Villette, ce 4 aoust l'annee 1768.' The BnF notice repeats the cryptographic-characters description and records no decipherment or key."
+    },
+    "prior_art": {
+     "decode": "known.py on 'NAF 11238', 'Abailard' and 'Villette': hits only in this lead and the Omont sweep, vetting and audit READMEs of 15-16 Nov 2026; no DECODE record, no catalogue entry, no target.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Abelard, Abailard, Heloise and Villette: no hit.",
+     "lasry": "Lasry's GL.htm list (cryptiana GL.htm, fetched 15 Nov 2026) grepped for Abelard, Abailard, Heloise and Villette: no hit.",
+     "edition": "No edition of the cipher copy: the text is one of the French verse epistles of Abelard to Heloise of the 1750s-60s (Dorat's 'Lettre d'Abailard a Heloise' of 1758, reworked to 1766, is a likely source), which are printed, but no transcription or reading of Villette's cipher copy was found.",
+     "literature": "Web search 16 Nov 2026 for Abailard, Heloise, 'caracteres cryptographiques', Villette and 1768 found only general Abelard and Heloise material and a 2009 article on Dorat's epistle; the earlier 15 Nov search also found no mention of the cipher copy."
+    },
+    "key_check": "No key is recorded in the notice or in Omont; a copyist's substitution script, to be recovered by aligning with the printed French epistle once the version is identified.",
+    "duplicates": "known.py on the shelfmark, the copyist and the text found no other lead or catalogue entry; the Arabic-script sweep mentions NAF 11238 only as a non-script item.",
+    "verdict": "open"
+   },
+   "access_note": "Not digitised: the BnF Archives et manuscrits notice cc59029 carries no Gallica link and Gallica SRU found no record (15 Nov 2026). Needs a BnF reproduction order for NAF 11238 (15 ff.).",
    "repository": "bnf"
   },
   {
