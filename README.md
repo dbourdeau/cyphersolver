@@ -1072,6 +1072,15 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   `targets/jqa` (PR #596, Brice Dudout's check with the State Department code sheet). Pending the image check:
   three places in `targets/morris1813` (510 for 516 and 146 for 140 in No. 13, 593 for 598 in No. 24), counted as
   holes until they are looked at on the frames.
+- **The read share counts cipher words only (16 Nov 2026, owner's decision).** In a letter that mixes clear text and
+  cipher, `read_share` and the read bar are measured over the words written in cipher; the clear words around them
+  are neither read nor unread and stay out of both numerator and denominator. A whole-letter figure with the clear text
+  may be given beside it once, labelled, but it never decides the class. Set on issue #679 (Lindenow, 1675), where the
+  four cipher blocks come to 64% by the strict count and the whole letter to about 96%. Readings measured over clear and
+  cipher together keep their figures until they are recounted; the first recounts were made on 16 Nov 2026 (round 23).
+  `research/reading_audit/v10_relabel.py` splits a reading only where its `outcome.texts` entry declares how the
+  cipher or the clear words are marked (`cipher_markup` or `clear_markup`, `profile.schema.json`); without a
+  declaration it measures the whole reading and reports it as "not split".
 - **Holes are counted by words (14 Nov 2026).** The read share counts unread words, not hole marks. A bare mark,
   `[...]`, `[?]` or `{?}`, is one unread word. A hole that covers more carries its size: `[... 4]` is four unread
   words. Count the unread cipher groups or words under the mark, from the decode or the transcription; where groups do

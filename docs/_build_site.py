@@ -194,6 +194,7 @@ def attach_methods():
             if len(out.get('parts') or []) > 1:           # a split entry: each part has its own method (README Conventions)
                 p['parts'] = [(x['label'], x['method'], x['extent']) for x in out['parts']]
             p['frac'] = out.get('fraction_coherent') if isinstance(out.get('fraction_coherent'), (int, float)) else                         out.get('fraction_read') if isinstance(out.get('fraction_read'), (int, float)) else None
+            p['frac_src'] = 'coherent' if isinstance(out.get('fraction_coherent'), (int, float)) else 'read'
         p['stt_hand'] = p['stt']
         p['st'] = M.status_class(p['method'], p['extent'])
         p['stt'] = M.badge(p['method'], p['extent'], cls)
@@ -208,7 +209,10 @@ def outcome_html(p):
         pct = 100 * p['frac']
         # a partial reading must not round up to the bar or to 100% (94.7% shown as 95%, 99.5% as 100%)
         shown = f'{pct:.1f}' if round(pct) != int(pct) and (round(pct) >= 95 > pct or round(pct) == 100 > pct) else str(round(pct))
-        ext += f' ({shown}% of the cipher)'
+        # the chip is a token, group or line measure (fraction_coherent / fraction_read), not the read share over
+        # cipher words that decides the class (README Conventions, 16 Nov 2026): say what it measures
+        ext += (f' ({shown}% of the cipher coherent by tokens or lines, not the word count)' if p.get('frac_src') == 'coherent'
+                else f' ({shown}% of cipher tokens valued, not the word count)')
     if M.key_only(m, p['extent']): ext = 'none (key obtained, text not read)'   # George Lasry, 24 Oct 2026
     if p.get('parts') and len({x[1] for x in p['parts']}) > 1:      # several targets, several methods
         bits = [f'{f}: <a href="glossary.html#{M.KEY[pm]}" title="{pm}">{M.LABEL[pm]}</a> ({pe})' for f, pm, pe in p['parts']]
@@ -402,7 +406,7 @@ def lasry_report_html(page):
         rt = (rd / 'readable.md').read_text(encoding='utf-8')
         body = ['<h3 id="lasry-readable">Readable text</h3>',
                 '<p class="muted">The full text, folio by folio, as in the report. Bold marks the passages deciphered from the '
-                'cipher; the rest is the clear text of the letter. Question marks are the report&rsquo;s: [?] or a bare ? for a sign or group left unread, a ? after a word for a doubtful reading.</p>', '<div class="lr-readable">']
+                'cipher; the rest is the clear text of the letter. Question marks are the report&rsquo;s: [?] or a bare ? for a sign or group left unread, a ? after a word for a doubtful reading; a letter in square brackets inside a word is one the report supplies where the sign is lost or unread.</p>', '<div class="lr-readable">']
         for blk in re.split(r'\n\s*\n', rt):
             blk = blk.strip()
             if not blk or blk.startswith('<!--'): continue
