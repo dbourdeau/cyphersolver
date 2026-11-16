@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "target": "morier1808",
+  "title": "Harford Jones to Lord Minto, Bombay 28 Apr 1808, in figure cipher, copied by James Morier (IOR/L/PS/9/67/18, second copy /20; enclosure /21 with copy /19)",
+  "documents": [
+    {
+      "id": "18",
+      "read": "read",
+      "shelfmark": "BL IOR/L/PS/9/67/18 (QDL vdc_100038378586.0x000016)",
+      "date": "28 Apr 1808",
+      "year": 1808,
+      "country": "British India (Bombay); British mission to Persia",
+      "route": "Bombay -> Calcutta (copy sent to London)",
+      "language": "English",
+      "pages": 20,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the leaves, in the BL/QDL records or in print (searched 14-16 Nov 2026)."
+      },
+      "length": {
+        "tokens": 1259,
+        "distinct": 61,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcription_18_part1.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "QDL IIIF images 0001-0020, full size and 1000-1500 px crops",
+        "image_quality": "good",
+        "notes": "Images 0002-0004, 0006, 0010-0011, 0015, 0017, 0020 here; images 0012-0014 in transcription_18_f6v-f7v.txt (the held-out portion of PREREG v2); the rest of the text read from /20. Doubtful figures marked '?'."
+      }
+    },
+    {
+      "id": "20",
+      "read": "read",
+      "shelfmark": "BL IOR/L/PS/9/67/20 (QDL vdc_100038378586.0x000018)",
+      "date": "28 Apr 1808 (received 6 June 1809)",
+      "year": 1808,
+      "country": "British India (Bombay); British mission to Persia",
+      "route": "Bombay -> Calcutta (copy sent to London)",
+      "language": "English",
+      "pages": 12,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "No decipherment on the leaves, in the BL/QDL records or in print (searched 14-16 Nov 2026)."
+      },
+      "length": {
+        "tokens": 1837,
+        "distinct": 65,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcription_20.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "QDL IIIF images 0001, 0003-0005, 0008-0009 and the margin of 0007",
+        "image_quality": "good",
+        "notes": "Second figure copy of /18; used to collate /18 and to read /18 images 0007-0009, 0016, 0018-0019. Ends 'I have the honor to be &c' in clear and a signature in figures with nulls."
+      }
+    },
+    {
+      "id": "21",
+      "read": "read",
+      "shelfmark": "BL IOR/L/PS/9/67/21 (QDL vdc_100038378586.0x000019); copy with clear text /19 (0x000017)",
+      "date": "[Apr 1808]",
+      "year": 1808,
+      "country": "British India (Bombay); British mission to Persia",
+      "route": "Bombay -> Calcutta (copy sent to London)",
+      "language": "English",
+      "pages": 4,
+      "cleartext_in_document": "none",
+      "plaintext": {
+        "location": [
+          "margin"
+        ],
+        "source": "IOR/L/PS/9/67/19, a second figure copy of the same paragraph, carries the clear text in its margin (written at the time)."
+      },
+      "length": {
+        "tokens": 316,
+        "distinct": 53,
+        "unit": "code groups",
+        "measured": true,
+        "file": "transcription_21.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "QDL IIIF image 0001, crops",
+        "image_quality": "good",
+        "notes": "Enclosure: ninth paragraph of Minto's instructions to Malcolm. Held-out portion of PREREG v1 (burned)."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "Homophonic substitution of letters by figures 2-99 (2-5 per letter, u/v and i/j merged), words ended by stops and figures joined by commas, with a few 3-4 figure code words (8674 Persia, 4040 French, 630 Bombay).",
+    "symbol_kind": "digits",
+    "digit_groups": {
+      "width": "variable",
+      "separation": "mixed"
+    },
+    "distinct_symbols": 64,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "places",
+        "names"
+      ]
+    },
+    "nulls": {
+      "present": true
+    },
+    "key_order": "random",
+    "word_division": "kept",
+    "doubled_letters": "written with two figures, often different homophones (inclosed: 98,90,80,93...; occurred, supersede)",
+    "sibling_key": "none; not the page,word code of targets/jones1802",
+    "notes": "Nulls 1 and 2 only in the figures of the date and in the signature. The copyists cut and join words freely."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "partial",
+      "where": "/19: the clear text of the ninth-paragraph enclosure written in its margin at the time; /18 ff. 7-8: a later reader's pencil letters over a few words. No decipherment of the /18 letter itself found.",
+      "found": "after reading",
+      "used": false
+    },
+    "inputs": [
+      "images"
+    ],
+    "attack": "ciphertext-only",
+    "human_role": "Brice Dudout chose Daniel Bourdeau's lead (catalogue 2649) and fetched the 40 QDL images in his Chrome; transcription, solve, held-out tests and reading by the agent. No hints on the content.",
+    "tools": [
+      "simulated annealing with an English 4-gram model (verification/common.py)",
+      "verification/measure.py, verification/v2.py, verification/measure_v2.py",
+      "decode.py"
+    ],
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "sessions": 1,
+    "first_date": "2026-11-16",
+    "last_date": "2026-11-16"
+  },
+  "solution": [
+    {
+      "date": "2026-11-14",
+      "kind": "access",
+      "what": "Daniel Bourdeau's Koç/Ottoman deep sweep logged IOR/L/PS/9/67/18 as catalogue 2649 (QDL, Cloudflare blocks scripts).",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "transcription",
+      "what": "Transcribed /18 (9 images), /20 (6 images) and /21 image 1 from QDL images saved in Chrome; /18 and /20 found to be two copies of one letter.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "sibling key",
+      "what": "Tested targets/jones1802: a page,word code book; no group of this kind here, so no value applies.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "solver",
+      "technique": [
+        "simulated annealing",
+        "language-model scoring"
+      ],
+      "what": "Annealed figure-to-letter maps on /18 + /20 (2640 figures, 600 words) against an English 4-gram model with word breaks kept; three restarts reached the same readable text; four values fixed by hand.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "statistical test"
+      ],
+      "what": "PREREG v1: held-out /21 image 1, lexical share 0.729 vs best of 200 shuffled keys 0.157; bar 0.85 not met (copyists' cuts, names, u/v spellings, not misreadings). Portion burned.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "statistical test"
+      ],
+      "what": "PREREG v2 frozen before transcribing new text: held-out /18 images 0012-0014 (444 figures, 94 words), same frozen key, u/v and i/j allowed, names and copyists' cuts counted apart: 0.968 vs best of 200 shuffles 0.340; passed.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "reading",
+      "what": "Read the whole letter as sentences (reading_18.md) and the enclosure (reading_21.md); the enclosure agrees with the clear text in the margin of /19.",
+      "result": "worked"
+    },
+    {"date": "2026-11-16", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 3844 tokens, 64 types, en-modern order 4: reading -2.21 per letter; random keys -6.693 (z 14.2); key annealed onto shuffled ciphertext best -4.428 (mean -4.462, z 91.2); annealer on the real text -2.472. Verdict: pass.", "result": "worked"}
+   ],
+  "outcome": {"validation": {"date": "2026-11-16", "model": "en-modern", "file": "validation.tsv", "tokens": 3844, "types": 64, "tokens_per_type": 60.06, "score": -2.21, "nulls": {"random keys": {"n": 200, "mean": -6.693, "sd": 0.317, "max": -5.958, "z": 14.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.462, "sd": 0.025, "max": -4.428, "z": 91.2, "p": 0.1429}}, "power": -2.472, "verdict": "pass", "notes": "claimed per-occurrence score -2.21; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached -2.472"}, 
+    "class": "read",
+    "key": "recovered",
+    "method": "key recovered from ciphertext-only",
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "fraction_read": 0.99,
+    "fraction_read_method": "measured",
+    "fraction_read_source": "reading_18.md: 676 words, 1 unread (‹to› Roads); code words read from context counted read; 16 Nov 2026",
+    "verification": ["statistical test", "contemporary decipherment", "historical consistency"],
+    "provenance": "contributed",
+    "notes": "First held-out test failed (0.729 on /21 image 1, burned); second, pre-registered before the new text was transcribed, passed (0.968 vs 0.340 on /18 images 0012-0014).",
+    "gaps": [
+      {
+        "item": "'from ‹to› Roads' in the opening",
+        "blocker": "illegible",
+        "detail": "both copies write 44,36 ('to'): a copying slip for a place name"
+      },
+      {
+        "item": "4040 French, 630 Bombay, figure signature",
+        "blocker": "open-codes",
+        "detail": "probable, from context, the heading and the docket"
+      }
+    ],
+    "credits": [
+      {
+        "who": "bourdeau",
+        "role": "pointer",
+        "note": "lead: catalogue 2649 from the Koç/Ottoman deep sweep, 14 Nov 2026"
+      },
+      {
+        "who": "dudout",
+        "role": "solution",
+        "date": "2026-11-16",
+        "note": "transcription, key, held-out tests and reading"
+      },
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "note": "clear text of the enclosure in the margin of IOR/L/PS/9/67/19; used only as a check after the reading"
+      }
+    ],
+    "key_file": "key.json",
+    "texts": [
+      {
+        "doc": "18",
+        "label": "IOR/L/PS/9/67/18 (+ /20), Harford Jones to Lord Minto, Bombay, 28 Apr 1808",
+        "transcription": "transcription_18_part1.txt",
+        "decryption": "decryption_18_part1.txt",
+        "reading": "reading_18.md",
+        "language": "en",
+        "state": "read",
+        "read_share": 0.99,
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5 (preliminary, contributor's own)",
+          "date": "2026-11-16",
+          "note": "Preliminary: read reading_18.md as sentences against the decryptions of /18 and /20: continuous English, one unread place name; to be re-graded by a reviewer."
+        },
+        "summary": "Jones, just arrived at Bombay on the Sapphire, tells Minto that Malcolm has already gone into the Persian Gulf under Minto's authority; to avoid 'the appearance of clashing authorities in Persia' he suspends his own departure until Minto's orders, while noting that he holds the King's commission, that the French are at Tehran, and that only His Majesty's ministers can be accredited."
+      },
+      {
+        "doc": "20",
+        "label": "IOR/L/PS/9/67/20, second figure copy of /18",
+        "transcription": "transcription_20.txt",
+        "decryption": "decryption_20.txt",
+        "reading": "reading_18.md",
+        "language": "en",
+        "state": "read"
+      },
+      {
+        "doc": "21",
+        "label": "IOR/L/PS/9/67/21, ninth paragraph of Minto's instructions to Malcolm (copy /19 with clear text)",
+        "transcription": "transcription_21.txt",
+        "decryption": "decryption_21.txt",
+        "reading": "reading_21.md",
+        "language": "en",
+        "state": "read",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude Opus 5.5 (preliminary, contributor's own)",
+          "date": "2026-11-16",
+          "note": "Preliminary: agrees word for word with the clear text in the margin of /19."
+        }
+      }
+    ]
+  }
+}
