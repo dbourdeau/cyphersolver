@@ -66,15 +66,31 @@ stays bracketed.
 Not re-read: the other pages. Doubtful figure-4 signs remain on pp.8, 9, 10, 13, 16, 107, 112, 115 and 177 (his list),
 and the same re-reading could be done there.
 
+## pp.124-137: blind sibling decode (16 Nov 2026), decoded, not read
+
+Malcolm McBratney (Brisbane), working with Claude (Anthropic). The margin of p.19 sends the reader to fol. 124 (sal armoniack), 125 (spiritus vini) and 137 (aqua regis); those 14 pages (scans 0117-0130, all cipher, p.129 three lines) were taken as a sibling test of the key. Files: `transcription_p124-137.tsv`, `decryption_p124-137.txt`, `reading_p124-137.md`, `translation_p124-137.md`, and `blind/p124-137/` (packet prompt and label sheet, both blind halves, FREEZE files, `key_frozen.tsv`, `decode_once.py` and its output, `judge/`, `shuffle.py`, `shuffle_out.txt`).
+
+- Key: `key.tsv` as on upstream main (commit 89e25ef7d), frozen byte for byte before the decode (sha256 7e6f0b8ad16f89e3b2ed29cfd469e143044dabcd19051b08f2801b24be02a9b3, `blind/p124-137/FREEZE.txt`). Unchanged.
+- Transcription: blind, by two Claude sessions given only a sheet of sign labels with shapes, no letter values, and told not to decipher (pp.124-130 `BLIND_a.tsv`, pp.131-137 `BLIND_b.tsv`; hashes frozen 01:46-01:49 UTC). 306 lines, 6,072 signs in the key, 143 doubt-marked, 7 `#`. Not compared with the images after the decode.
+- Decode: once, mechanically (`decode_once.py`, which refuses a second run). No emendation.
+- Judge: one strict pass by letter (`judge/JUDGE_NOTES.txt`): S 5,667, E 398, N 32 of 6,097 = **92.9%** strict; per page 90.8% (p.127) to 94.8% (pp.125, 130). The reading file is the judge's segmented text, unchanged, with its marks: `[x]` a wrong letter, `{x}` a hole.
+- Four systematic slips make 351 of the 398 wrong letters: l for u/v (195), r for u (72), g for d or k (57), f for long s (27). Reported as **suspected key-table errors** in `key.tsv` (u/v sharing signs with l and r, d/k with g, s with f) or label confusions in the blind transcription. Not fixed: with them fixed the share would be about 98.7%, which is untested.
+- Shuffle control (`blind/p124-137/shuffle.py`): the letter column of the key permuted among the sign labels, 5,000 shuffles at seeds 20261112 and 7, scored with `lang` model de-1500s (order 5, letters only), mean log-prob per letter. Real decode -3.0196; shuffles scoring at or above it: 0 of 5,000 at both seeds (max -6.0697, -5.9688). Pass.
+- Reading check: `docs/_check_reading.py` gives `reading_p124-137.md` 0.239 (43 of 180 sentences clean) and the decryption 0.241, "not a reading". The bracket marks split words into fragments and the run-on lines are left as written, so the figure understates the sense; by the checker's state the entry is **decoded, not read**.
+- Content (recipe level): the end of a mercury preparation and the sal armoniack (p.124); spirit of wine from strong wine (pp.125-127); the spirit sharpened with tartar and put to putrefaction in a sealed viola in an oak cask over a water kettle, furnace and apparatus described (pp.127-135), the "balneum roris" (p.136); aqua regis against aqua fortis, from saltpetre and Hungarian vitriol (p.137). The English is Claude's recipe-level summary, unchecked. It confirms the margin references of p.19.
+- Prior art: searched only in this repository (upstream NOTES list pp.20-178 as unread, catalogue 1252 narrowed); the literature was not searched again for these pages. Collision check 16 Nov 2026: no upstream file and no open pull request covers pp.124-137.
+
 ## Remaining gaps
 - 96 doubtful signs, mostly the three figure-4 shapes and the s-signs (143 until p.7 was re-read on the image, 14 Nov 2026: 54 there, now 7) - blocker: illegible; assigned partly from context
 - p.9 lines 21-25 and two lines of p.10 - blocker: illegible; stained or damaged in the scan
 - handwritten pp.11-12 (inserted narrow leaf) - blocker: needs-physical-access; no scan of its own
 - p.40 beyond line 9, p.112 beyond line 5, the rest of pp.107, 115, 156, 177 - blocker: needs-physical-access; only opening lines were transcribed, the rest of those pages is a separate piece (see catalogue 1252, narrowed to pp.20-178 and the unread pages)
+- pp.124-137: the four systematic slips (l/u, r/u, g/d-k, f/long s; 351 of 398 wrong letters), suspected key-table errors - blocker: not-attempted; the decode of record is the first pass, a corrected key would need a new freeze and a fresh control
+- pp.124-137: the sign-off B A M D (5 times) and 12 other N letters - blocker: too-short; clear initials or isolated signs with no value in the key
 - signs of Kohn's sheet not yet seen in the text (e GT, x 4X and LX, y II and UPA, z ZH) - blocker: too-short; they do not occur in the pages read
 
 ## Escalation
-- [x] siblings: the rest of MS.309 (pp.20-178, 179-207) is the unread remainder, kept as catalogue 1252 narrowed; no sibling manuscript seen
+- [x] siblings: pp.124-137 (the folios the margin of p.19 points to) decoded blind with the frozen key, 16 Nov 2026: 92.9% strict, shuffle 0/5,000 at two seeds; the rest of MS.309 (pp.20-178, 179-207) is the unread remainder, kept as catalogue 1252 narrowed; no sibling manuscript seen
 - [x] clear-pages: Kohn's key sheet (pp.260-261) is the only key or decipherment seen; no clear copy of the recipes was looked for beyond the contributor's searches
 - [x] known-keys: Kohn's key (1889) applied; no other key tried
 - [x] print: the contributor searched online 10-11 Nov 2026: no published reading found; German specialist literature, Kohn's papers and Wellcome files not checked

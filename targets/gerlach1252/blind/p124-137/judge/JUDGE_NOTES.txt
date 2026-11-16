@@ -1,0 +1,49 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), pp.124-137, one decode, one pass, strict
+Date: 16 Nov 2026
+
+Files: judge_src.txt (markup), count.py (counter), judge.tsv (output).
+Markup in judge.tsv column 3: plain letter = S; [x] = E (wrong, plausibly one-letter slip); {x} = N (no sense / unknown sign).
+'?' doubt marks dropped and the letter judged. '#' and '[...1]' (shown as '_') = 1 unit N. '<=?>' (p.124 L18) treated as a hyphen, not a letter.
+Check: per-line letter total S+E+N equals the decode's letter count on all 306 lines (count.py prints "mismatch []").
+Missing letters (e.g. "nich" for nicht, "nr" for nur, "ach" for auch) are not counted: only letters present are judged.
+Period spellings accepted as S: u for v (uini, uir, uor), tz, ck, doubled consonants (woll, mall, setzenn, oell), gilbe, stundan, itzunt.
+"mol", "domit" marked E (a for o) to stay strict.
+{BAMD} sign-off (5 times incl. B:A:M:D) counted N, 4 letters each = 20 N: an abbreviation or signature, not readable as words.
+
+TOTALS
+p.124: S 305 E 25 N 5  = 335; strict 305/335 = 91.0%
+p.125: S 457 E 24 N 1  = 482; strict 457/482 = 94.8%
+p.126: S 488 E 33 N 2  = 523; strict 488/523 = 93.3%
+p.127: S 475 E 47 N 1  = 523; strict 475/523 = 90.8%
+p.128: S 477 E 29 N 1  = 507; strict 477/507 = 94.1%
+p.129: S 77  E 5  N 0  = 82;  strict 77/82   = 93.9%
+p.130: S 436 E 24 N 0  = 460; strict 436/460 = 94.8%
+p.131: S 426 E 22 N 3  = 451; strict 426/451 = 94.5%
+p.132: S 411 E 38 N 0  = 449; strict 411/449 = 91.5%
+p.133: S 449 E 30 N 1  = 480; strict 449/480 = 93.5%
+p.134: S 438 E 34 N 3  = 475; strict 438/475 = 92.2%
+p.135: S 423 E 37 N 1  = 461; strict 423/461 = 91.8%
+p.136: S 397 E 25 N 10 = 432; strict 397/432 = 91.9%
+p.137: S 408 E 25 N 4  = 437; strict 408/437 = 93.4%
+ALL:   S 5667 E 398 N 32 = 6097; strict 5667/6097 = 92.9%; S+E 6065/6097 = 99.5%; N 32/6097 = 0.5%
+
+E BY TYPE (398): l 195 (mostly for u/v: lnd=und, lon=von, liola=viola, spiritlm), r 72 (for u: rnd, rnten), g 57 (for d/k: gn=den, gm=dem, golben=kolben), f 27 (for long s: wafer), b 13 (for i/a), other 34.
+l+r+g+f = 351/398 = 88% of E. These are systematic, not random: they look like key-table merges (u/v sharing signs with l and r, d/k with g, s with f). Fixing those four mappings in the key would lift the strict share toward ~98.7% ((5667+351)/6097), but that is a hypothesis, not tested here.
+
+Doubtful calls (judged strictly, could shift a few letters): p.128 L25 "pfeger gil" (taken as feder-kiel, p = N); p.131 L02 "clden" (c,l = N); p.134 L10 "#ao" (all N); p.136 L05 "meinn" for "ein" (m, n = N); p.130 L04 "cret" (breit/weit?); p.124 L10 "eroces" (proces); p.127 L25 "aclirens" (acuiren).
+
+GISTS (recipe level only)
+p.124: Close of a preceding mercury operation with thanks to God and "ewigkeit", BAMD sign-off. Then the "first process" on mercury of the sun, beginning with sal ammoniac. Refers to the "great book".
+p.125: Continues the sal ammoniac preparation for use in aqua regis and putrefaction. Then a recipe for spiritus vini (spirit of wine) by distillation. Mentions flask, helm and receiver.
+p.126: Continues the spirit of wine distillation: separating the true spirit from brandy-wine. Repeated distillations. Collecting the spirit.
+p.127: Spirit of wine finished. Then a recipe for sharpening spirit of wine with calcined tartar (weinstein). Preparing the calcined tartar.
+p.128: Tartar and spirit sealed in a long-necked viola and set to putrefy. Description of a furnace with holes in its base. Continues to p.129.
+p.129: Further furnace construction detail (holes in the corners). Short page. No new recipe.
+p.130: Construction of a kettle with a step, pipes and nested lids. Water-bath apparatus. Lids with finger-sized holes.
+p.131: An oak cask fitted over the kettle. Iron-bound, with a perforated bottom. Kettle filled with water.
+p.132: Cask seated on kettle; hay softened in warm water and packed in. A tripod set in the cask. Sealed viola placed on it.
+p.133: Viola packed round with wet hay, cask closed with copper lids. Seal-and-stand instruction. Furnace fired.
+p.134: Fire regime over days via the furnace holes. Cooling, opening the viola, pouring off the spirit. Fresh tartar added.
+p.135: Putrefaction repeated three times with fresh tartar. Spirit sealed in a clean glass. Kept for the work.
+p.136: The finished spirit is thick and brown "like oil"; the process is called balneum roris. Spent tartar discarded or turned into oil of tartar. BAMD sign-off.
+p.137: Definition of aqua regis (dissolves gold) and aqua fortis (dissolves silver). Recipe for aqua regis from saltpetre and calcined Hungarian vitriol. Distilled as in the great book.
