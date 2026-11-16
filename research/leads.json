@@ -42091,9 +42091,32 @@
    "seen": "catalogue",
    "source": "National Archives of India, Abhilekh Patal sweep (11 Nov 2026)",
    "needs_archive_scan": "no",
-   "access_note": "Page images are on Abhilekh Patal behind a free registered login (ReadContent); not used in this sweep. The record page shows title, file number, page count and OCR keywords only, no abstract.",
+   "access_note": "Abhilekh Patal answered HTTP 403 'Request blocked' (CloudFront) to curl on 16 Nov 2026 at the first request (item 76980e89-..., lead 2466); not retried around it, so no NAI record or page was opened in this batch. Contents known from targets/peking1912/frozen/PREREG.md (H2, H3) and profile.json notes.",
    "ark": "",
-   "scored": "sweep"
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "transcription",
+     "where": "Not opened in this batch (Abhilekh 403). Second-hand: targets/peking1912/frozen/PREREG.md, hypotheses H2-H3, and targets/peking1912/profile.json 'notes' (contributor Brice Dudout, 11 Nov 2026, who saw NAI Foreign Dept. 1907 File 45506 after login): 'Campbell's transparency key, the General Staff's column formula, Webster's dictionary, a 5-digit code'. Record title from research/sweep_2026-11-11_asia (PR_000006228785).",
+     "extent": "40 pp. (File 45506) plus 10 pp. sequel (PR_000004129545); number of telegrams not recorded.",
+     "cipher": "Chinese telegraph code disguised by a page/column shift ('transparency' relation, e.g. code 5391 sent for 5411, 0365 for 0025) and a General Staff column formula (+/-20..380 by column, sign by page parity); Campbell's key and example equivalences are filed in the same file, so a decipherment method and readings are with the piece."
+    },
+    "prior_art": {
+     "decode": "DECODE RecordsList searched 11 Nov 2026 (sweep) for Yatung, Tibet, Chinese telegram: 0 records; known.py on 45506, Chumbi, Yatung, Campbell 16 Nov 2026: only the lead itself and targets/peking1912.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Chinese, Tibet, Chumbi, Campbell: no entry; its only Chinese entries are unrelated later telegrams.",
+     "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) grepped for Chinese, Tibet, Chumbi, Campbell: no entry.",
+     "edition": "No edition of the telegrams known; the British Blue Books on Tibet (Cd. papers 1904-1910) were noted in the sweep as printing no cipher text. The reading is in the file itself (Campbell's key), not in print.",
+     "literature": "Web search 11 Nov 2026 (Campbell Yatung Chinese cypher telegrams Chumbi 1907 key) found only narrative histories of the Chumbi occupation; targets/peking1912 (1912 telegram, read 11-12 Nov 2026) used the file's methods as hypotheses and needed none of them."
+    },
+    "key_check": "Campbell's key is in the file (title and contributor's notes). It was not needed for the 1912 telegram (plain standard code read by rows), so it has not been tested on any text here.",
+    "key_in_volume": "Campbell's 'Key to the Chinese Cypher' and the General Staff column formula are filed in File 45506; not tested here (file not opened).",
+    "duplicates": "known.py on 45506, Chumbi, Yatung, Campbell, 19/45, Gyantse: duplicate record PR_000004256746 (dated 1908) is the same file; lead 2467 (1908-15 General Staff acquisitions) is a sibling series, not the same telegrams; lead 2465 / targets/peking1912 is a different 1912 telegram.",
+    "verdict": "partly_read",
+    "closed": "Campbell's key to the Chinese cypher, with worked equivalences and the General Staff formula, is filed in File 45506, so the 1907-08 Chumbi telegrams were read at the time; how many readings are written out was not seen (Abhilekh blocked)."
+   },
+   "access": "online"
   },
   {
    "id": 2467,
@@ -49020,13 +49043,34 @@
    "prior_art": "open as far as checked (14 Nov 2026): the shelfmark, fonds series and correspondent were searched in catalogue.json, leads.json, every candidates.json / key_leads.json and the targets (known.py-style grep) and found nowhere; no web, Tomokiyo, Lasry or DECODE search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only on Archivportal-D; no images found on the item page of the portal; order from the archive or use the reading room (digitisation not checked on the archive's own site)",
+   "access_note": "Digitised: https://www.arcinsys-digitalisate.niedersachsen.de/nla_os/rep_100/abschnitt_256_nr._4/m_os_rep_100_abschnitt_256_nr._4_aufn_0001.jpg ... _0115.jpg (full images about 37 s each by curl; thumbs under /thumbs/). Archivportal-D (the lead's link) is behind an Anubis proof-of-work check; Arcinsys answers by script.",
    "language": "German",
    "region": "Germany",
    "ark": "",
-   "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "NLA OS Rep 100 Abschnitt 256 Nr. 4: one ciphered report with its Aufloesung of 1630 inside a mixed volume; no image or length on the record; ciphertext not seen and prior art not searched beyond the local grep. (research/vetting_2026-11-14_german_state_dbs/vetting.json)"
+   "access": "online",
+   "scored": "vetted",
+   "vetting_note": "NLA OS Rep 100 Abschnitt 256 Nr. 4: one ciphered report with its Aufloesung of 1630 inside a mixed volume; no image or length on the record; ciphertext not seen and prior art not searched beyond the local grep. (research/vetting_2026-11-14_german_state_dbs/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Arcinsys Niedersachsen record 61404 (NLA OS, Rep 100, Abschnitt 256 Nr. 4), description read 16 Nov 2026; all 115 thumbnails fetched and viewed as contact sheets; full images aufn_0047 (f. 44, letter dated 15 Mar 1630), 0063 (f. 60, postscript), 0113 and the first image viewed at 1400-1600 px: all plain German.",
+     "extent": "One ciphered report in a volume of 1626-1632 (115 images); the cipher leaf was not located in the images viewed, so its length is not measured.",
+     "cipher": "Archive's description: 'Bericht ueber die Truppen des Rittmeisters Maudt vor Lemgo (1630, verschluesselt und Aufloesung)': a ciphered report filed with its Aufloesung (decipherment). The images looked at were all plain text."
+    },
+    "prior_art": {
+     "decode": "known.py on Rep 100, Maudt, Franz Wilhelm, Osnabrueck (16 Nov 2026): no DECODE record or ledger entry for this volume.",
+     "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Osnabr, Wartenberg, Lemgo, Maudt: no entry; its only Chinese entries are unrelated later telegrams.",
+     "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) grepped for Osnabr, Wartenberg, Lemgo, Maudt: no entry.",
+     "edition": "No edition of this volume known; the reading is the contemporary Aufloesung filed with the report, per the archive description.",
+     "literature": "Not searched beyond the repo: the decisive fact (decipherment filed with the piece) is in the finding aid. Franz Wilhelm von Wartenberg files elsewhere in catalogue.json are different volumes."
+    },
+    "key_check": "No key in the volume is described; a key is not needed, since the Aufloesung is filed with the report.",
+    "duplicates": "known.py on the shelfmark, Maudt, Franz Wilhelm and Osnabrueck: no catalogue or lead duplicate; other Franz Wilhelm files in catalogue.json are different units.",
+    "verdict": "read",
+    "closed": "The archive describes the 1630 Maudt report as 'verschluesselt und Aufloesung': the contemporary decipherment is filed with it in NLA OS Rep 100 Abschnitt 256 Nr. 4."
+   }
   },
   {
    "id": 2655,
