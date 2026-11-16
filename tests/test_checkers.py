@@ -336,6 +336,28 @@ class Links(unittest.TestCase):
         self.assertEqual(probs, ['links b.html#gone, but that page has no such anchor', 'links #none, but the page has no such id'])
 
 
+class Corrections(unittest.TestCase):
+    """corrections.html takes its rows from the profiles alone: key-corrected credits and corrected image checks."""
+
+    def test_entries_and_links(self):
+        import _corrections_page as CO
+        profiles = {
+            'a': {'outcome': {'credits': [
+                {'who': 'x', 'role': 'key corrected', 'date': '2026-11-05', 'note': 'code 12 = Rome',
+                 'source': 'https://github.com/dbourdeau/cyphersolver/issues/244'},
+                {'who': 'x', 'role': 'key corrected', 'date': '2026-11-06', 'published': False},
+                {'who': 'y', 'role': 'transcription', 'date': '2026-11-07'}]}},
+            'b': {'outcome': {'human_check': {'date': '2026-11-11', 'by': 'Z', 'passage': 'l. 3', 'result': 'corrected',
+                                              'note': '28 to 25 (pull request #601)'}}},
+            'c': {'outcome': {'human_check': {'date': '2026-11-12', 'by': 'Z', 'passage': 'l. 4', 'result': 'confirmed'}}}}
+        E = CO.entries(profiles)
+        self.assertEqual([(e['folder'], e['kind']) for e in E], [('b', 'check'), ('a', 'credit')])
+        self.assertIn('>issue #244<', CO.link_html(E[1]))
+        self.assertIn('/issues/601"', CO.link_html(E[0]))
+        self.assertEqual(CO.fmt('2026-11-05'), '5 Nov 2026')
+        self.assertEqual(CO.fmt('1903'), '1903')
+
+
 class SuppliedMarkers(unittest.TestCase):
     """research/reading_audit/v2_score.holes: a supplied word is a hole, a one-letter emendation is not."""
     def setUp(self):
