@@ -54,8 +54,9 @@ documents marked not read and the text of the held-out test; they are not separa
 
 ## What is left
 
-- The sibling volumes of Castiglione's papers: Vat. lat. 8211 was checked, frames 1-166 (with the covering letter
-  of 68r at fr. 36 and the Calandra letters in this cipher above) and 190-209; its frames 167-189 and 210-575 were not.
+- The sibling volumes of Castiglione's papers: Vat. lat. 8211 was checked at frames 1-113 (19-45 and 57-64 read
+  page by page, the rest as contact sheets; the covering letter of 68r at fr. 36 and the Calandra letters in this
+  cipher above) and 190-209; frames 114-189 and 210-575 were not.
   Vat. lat. 8199-8201 and 8210 were sampled only; 8202 is not digitised; 8203-8209 and 8212-8213 were not paged. No
   clear copy or decipherment of 68r was found.
 - The ASMn originals (Archivio Gonzaga, Carteggio estero: Spagna for Suardino, Milano for Capino; Copialettere for
