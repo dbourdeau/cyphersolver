@@ -205,14 +205,13 @@ journal as one entry, 0.752 (`research/reading_audit/v2_score.py`, probable word
 text. The target stays read in part.
 
 A "read" or "read in part" entry requires a `reading_review` graded A or B, "recorded by the reviewer, not by the
-author of the reading". None is recorded, for the recipe or the journal. Our agents never wrote one for this journal,
-and none is added now: grade A ("coherent with scattered
+author of the reading". For the recipe the reviewer gave grade A in the review of PR #670 (16 Nov 2026; a model
+reviewer, no person has checked it); it is entered in `profile.json` verbatim, at the reviewer's request. For the
+journal our agents never wrote one, and none is added now: grade A ("coherent with scattered
 holes") does not fit a text whose sentences mostly hold more than one hole in ten (`_check_reading.py` clean share 0.47
 on `journal_as_written.md`, 0.45 on `journal_modernized.md`), and grade B ("coherent but raw") would assert a coherence
 that the failed blind check (48% of a fixed sample of confident words reproduced, against a mark of 95%) does not let
-the author's agents vouch for. With the split, the required Reading check reports one problem: the recipe entry has no
-`reading_review`. It passes once the reviewer records a grade for the recipe; the journal entry, decoded, not read,
-needs none.
+the author's agents vouch for. The journal entry, decoded, not read, needs none.
 
 **Holes are counted by words.** `CONTRIBUTING.md`: "Holes are counted by words: `[...]` is one unread word, and a hole that
 covers more carries its size, `[... 4]` for four unread words; ... a mark whose extent you cannot tell stays bare and is
