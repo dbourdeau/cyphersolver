@@ -117,7 +117,9 @@ Not filed before, computed here from the same files: the eleven letters filed as
 - Signs not in the key: plain q, crossed d, PF, FF; in Paulmyer's hand also plain m (= h) and an 8-like sign (= m) - blocker: open-codes.
 - The four letters of #444 and the four Paulmyer letters have no blind second reading (the twelve of the 13 Nov filing have one, with exposure disclosed) - blocker: not-attempted.
 - The twelve filed letters (13 pages) have no French reading or English translation, so they stay decoded, not read - blocker: not-attempted (workable).
-- The other bare pages: the 12 letters (13 pages) are now filed per letter (13 Nov, PR #500); two bare pages (337L, 376L) of letters glossed on their first page are not among them; and 7 bare Paulmyer passages (18 Apr, 23 May, 26 Jun 1664, leaf 150 right, three of 1665; 6 of them tried only with the unadopted KEY_v4) - blocker: not-attempted as far as this folder goes.
+- The other bare pages: the 12 letters (13 pages) are now filed per letter (13 Nov, PR #500); two bare pages (337L, 376L) of letters glossed on their first page are not among them; and 7 bare Paulmyer passages (18 Apr, 23 May, 26 Jun 1664, leaf 150 right, three of 1665; 6 of them tried only with the unadopted KEY_v4); of these, 18 Apr 1664, 26 Jun 1664 and 14 Apr 1665 are filed blind on 16 Nov 2026 as decoded, not read, and 31 Mar 1665 is recorded as failed (below); 23 May 1664, leaf 150 right and one of 1665 remain - blocker: not-attempted as far as this folder goes.
+- The pair 'T T' (two small crossed t's) decodes y y in three Paulmyer passages of 16 Nov 2026 (tryyis = trois?, _ambryytius, giyye) where one letter, probably o, is wanted: a suspected fault in key_v5 row T (= y, tier A from 401 cro-y-ent) or an unlisted tt sign - blocker: not-attempted; the 401 glosses and Paulmyer's glossed leaves can settle it.
+- The three Paulmyer passages of 16 Nov 2026 are cipher runs only: the clear French around them was not transcribed, so they cannot read as sentences yet - blocker: not-attempted.
 - A contemporary decipherment of these very letters may exist unfilmed (the chancery read the code) - blocker: needs-physical-access.
 
 ## Escalation
@@ -245,3 +247,44 @@ Brice Dudout (with AI agents) sent the files asked for under issue #607: `dudout
 Credit: shared. Malcolm McBratney's key and readings; Brice Dudout's independent key T2, which agrees with this folder's key on 137 of the 139 numbers they share, corrects 88 and adds nine values.
 
 14 Nov 2026, second maintainer's review of PR #646 (Brice Dudout's side): petkum_1666-04-06 is set to "decoded, not read" and carries no reading review: its two sentences rest on the open numbers 346 (twice), 235 and 373. Ten readings keep grade B.
+
+## Addition of 16 Nov 2026 (Malcolm McBratney, with Claude): four bare Paulmyer passages, blind
+
+Four of the seven bare Paulmyer passages listed in Remaining gaps, unit 261294 (Rigsarkivet image API, no bot check;
+`blind16/<doc>/FETCH_LOG.txt`). Everything is in `blind16/`, one folder per letter, frozen before the decode:
+- Keys frozen first: `blind16/_key_frozen/` holds byte copies of `key.tsv` and `key_v5.tsv` of upstream 89e25ef (sha256 in
+  `FREEZE.txt`); decode key = `key_v5.tsv`, unchanged.
+- Blind transcription: one AI reader (Claude) per letter, given only the image crop and the label sheet
+  (`<doc>/blind_packet/`: sign names, no values), no earlier transcription, no web. `BLIND.tsv` hashed before the decode
+  (`<doc>/FREEZE_blind.txt`). An earlier, unfiled decode of most of these passages with the unadopted KEY_v4 exists in our
+  working files (pooled 51/95), so this is not the project's first sight of them.
+- One decode (`blind16/decode_once.py`, upstream `decode.py` dec_run marks unchanged): `<doc>/decode_once.txt`; copies in
+  `transcriptions/*_blind16.tsv`, `decryptions/*_blind16.txt`.
+- Strict one-pass judge per sign unit, no edits (`blind16/JUDGE_NOTES_paulmyer.txt`, `<doc>/judge.tsv`).
+- Shuffled-key control (`blind16/shuffle.py`, `blind16/shuffle_out.txt`): the values of the 1-3-letter key rows permuted
+  among the signs, spelled runs scored with `lang` model fr-1600-letters, 5,000 per seed. Bar fixed before the run:
+  fewer than 5 of 5,000 at or above the real score at both seeds.
+- Readings (`readings/paulmyer_<date>.md`): the judge's segmented text of each run unchanged, holes marked, each run after
+  the clear word before it; English by Claude, unchecked.
+
+| letter | tokens | strict judge | shuffle, seed 20261112 / 7: >= real of 5,000 (real; max) | _check_reading | filed as |
+|---|---|---|---|---|---|
+| 18 Apr 1664, Paris, image 144R | 71 | 61/71 = 85.9% | 0 / 0 (-3.4411; -4.0497, -4.0876) | 0.614 marginal | decoded, not read |
+| 26 Jun 1664, Fontainebleau, image 162 | 54 | 36/54 = 66.7% | 0 / 0 (-3.2243; -4.0095, -4.1741) | 0.476 marginal | decoded, not read |
+| 14 Apr 1665, images 191R-192 | 80 | 58/80 = 72.5% | 0 / 0 (-3.0540; -4.0675, -4.2740) | 0.481 marginal | decoded, not read |
+| 31 Mar 1665, images 189R-190L | 17 | 11/17 = 64.7% | 0 / 0 (-2.1851; -3.2812, -2.6398) | not run | failed our 65% line: recorded only |
+
+Token counts are from `DECODE_RUN.txt` (script-written). These entries are kept apart from the Paulmyer pool above and
+from every Petkum figure; they do not change any count of record.
+
+What they touch (Claude's gist, unchecked): 18 Apr 1664, a maritime union of three powers and the Rhine alliance, with
+Austria, the Dutch, France and its navy, Louis XIV and the King of Denmark named; 26 Jun 1664, a new subsidy to the
+Swedes; 14 Apr 1665, a notable sum of money, engaging Louis XIV, Chancellor Séguier and a man named des Fargues.
+
+Suspected key fault: the recurring 'yy' (the pair 'T T') in three passages, listed in Remaining gaps. Nothing was
+changed in any key.
+
+Prior art: the folder's search (above) found printed Paulmyer letters of Sept-Nov 1666 only; DECODE, Cryptiana,
+Fridericia's Aktstykker and the Aarsberetninger in full were not reached for Paulmyer, and a web search of 16 Nov 2026
+found nothing. No content is claimed first.
+
