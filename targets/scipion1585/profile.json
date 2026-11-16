@@ -17,7 +17,7 @@
           "interlinear",
           "separate folio"
         ],
-        "source": "interlinear decipherment on the cipher pages of fr. 4696 (seen in our spot-check and, on f. 5r, in issue #708); for fr. 4698, period decipherments by Nevers's clerk of 1590 in BnF fr. 4702 (Gallica btv1b530546654): ff. 94r-95r = fr. 4698 ff. 30r-31r, f. 97r-v = f. 104r (also f. 108r = f. 34r; fr. 4698 f. 105r = f. 17r-v), as linked, transcribed and edited by Paolo Rosson (pangoleen/cipher-readings, gonzaga-1590); f. 94r seen on Gallica 16 Nov 2026",
+        "source": "interlinear decipherment on the cipher pages of fr. 4696 (seen in our spot-check and, on f. 5r, in issue #708); for fr. 4698, period decipherments by Nevers's clerk of 1590 in BnF fr. 4702 (Gallica btv1b530546654): ff. 94r-95r = fr. 4698 ff. 30r-31r and f. 97r-v = f. 104r (transcribed and edited by Paolo Rosson, pangoleen/cipher-readings, gonzaga-1590), f. 108r = f. 34r (aligned only); a decipherment of f. 17r-v is on fr. 4698 f. 105r itself, author not named by Rosson; f. 94r seen on Gallica 16 Nov 2026",
         "partial": true
       },
       "length": {
@@ -134,13 +134,13 @@
     {
       "date": "2026-11-16",
       "kind": "literature search",
-      "what": "Issue #708 (Brice Dudout) pointed to Rosson's folder gonzaga-1590 (pangoleen/cipher-readings; commits 3-4 Oct 2026 by his record): period decipherments of fr. 4698 ff. 30r-31r and f. 104r by Nevers's clerk in BnF fr. 4702 ff. 94r-95r and 97r-v, his editions and translations, a rebuilt word code (448 values in 14 lists) and symbol alphabet, a test on fr. 4696 (452 of 463 units, 97.6%). Read in a local clone; the GitHub API for his repository was not available, so push dates are not known.",
+      "what": "Issue #708 (Brice Dudout) pointed to Rosson's folder gonzaga-1590 (pangoleen/cipher-readings; commits 3-4 Oct 2026 by his record): period decipherments of fr. 4698 ff. 30r-31r and f. 104r by Nevers's clerk in BnF fr. 4702 ff. 94r-95r and 97r-v, his editions and translations, a rebuilt word code (448 values in 14 lists) and symbol alphabet, a test on fr. 4696 with his earlier 378-value table (of 587 units transcribed, 463 have their word in the table; 452 of those, 97.6%, carry the table's word as gloss, 408 with the mark too). Read in a local clone; the GitHub API for his repository was not available, so push dates are not known.",
       "result": "worked"
     },
     {
       "date": "2026-11-16",
       "kind": "verification",
-      "what": "Model checks of Rosson's folder (no person): tables/lists_v4.tsv holds 448 data rows in 14 lists; the fr. 4696 figure adds up (387 + 21 + 44 = 452 of 463); Gallica fr. 4702 f. 94r seen, a clear Italian decipherment in a clerk's hand, first lines matching his transcription; his edition of 21 Jan 1590 contains the run Lasry reads on f. 30v ('richiedermi ... prieghi'). Not checked: unit-by-unit alignments, symbol alphabet, shuffle test, whether Lasry's 24 nomenclature values are a subset of his lists, f. 104r against the clerk's text.",
+      "what": "Model checks of Rosson's folder (no person): tables/lists_v4.tsv holds 448 data rows in 14 lists; the fr. 4696 figure adds up (387 + 21 + 44 = 452 of 463, run with the earlier 378-value table, not the 448-value one); Gallica fr. 4702 f. 94r seen, a clear Italian decipherment in a clerk's hand, first lines matching his transcription; his edition of 21 Jan 1590 contains the run Lasry reads on f. 30v ('richiedermi ... prieghi'). Not checked: unit-by-unit alignments, symbol alphabet, shuffle test, whether Lasry's 24 nomenclature values are a subset of his lists, f. 104r against the clerk's text.",
       "result": "partial"
     },
     {
@@ -191,14 +191,14 @@
       {
         "who": "rosson",
         "role": "prior solution",
-        "note": "linked fr. 4698 ff. 30r-31r and f. 104r to the clerk's decipherments in fr. 4702, edited and translated them, rebuilt the cipher (448 values in 14 lists, symbol alphabet) and tested it on fr. 4696; made with Claude, by his own README; his editions of the clerk's decipherments are the basis of the added part for fr. 4698 ff. 30r-31r and f. 104r",
+        "note": "by his README the plain text of the 21 Jan and 16 Feb letters is the clerk's, not a new decipherment; he added the link to fr. 4702, the editions and translations, the rebuilt code (448 values in 14 lists, symbol alphabet), a test on fr. 4696 and readings of the letters of 24 and 31 March 1590, which have no period decipherment; made with an AI model, by his own README; his editions are the basis of the added part for fr. 4698 ff. 30r-31r and f. 104r",
         "date": "2026-10",
         "source": "https://github.com/pangoleen/cipher-readings/tree/main/gonzaga-1590 (commits dated 3-4 Oct 2026 by his record)"
       },
       {
         "who": "contemporary",
         "role": "prior solution",
-        "note": "Nevers's clerk of 1590: the decipherments in BnF fr. 4702 ff. 94r-95r, 97r-v (also f. 108r, and fr. 4698 f. 105r)",
+        "note": "Nevers's clerk of 1590: the decipherments in BnF fr. 4702 ff. 94r-95r, 97r-v and f. 108r (Rosson's Credits name the clerk for these three letters); the decipherment on fr. 4698 f. 105r is not attributed to him",
         "date": "1590",
         "source": "BnF fr. 4702, Gallica btv1b530546654"
       },

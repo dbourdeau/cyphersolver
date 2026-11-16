@@ -17,16 +17,17 @@ Paolo Rosson's folder `gonzaga-1590` (<https://github.com/pangoleen/cipher-readi
 palaeographer has checked it, by his own README) covers the same cipher for the Français 4698 letters. Brice Dudout
 reported it in issue #708 on 16 Nov 2026. What it holds, as read in a clone here on 16 Nov 2026:
 
-- Period decipherments by Nevers's clerk of 1590, in BnF fr. 4702 (Gallica `btv1b530546654`): ff. 94r-95r are the
-  decipherment of fr. 4698 ff. 30r-31r (letter of 21 Jan 1590); f. 97r-v of f. 104r (the sheet sent with the letter of
-  16 Feb 1590); f. 108r of fr. 4698 f. 34r; fr. 4698 f. 105r of f. 17r-v. He links them (his record: first found 3 Oct
-  2026), transcribes them (`decipherments_1590/`), and edits and translates two of them
+- Period decipherments by Nevers's clerk of 1590, in BnF fr. 4702 (Gallica `btv1b530546654`; his Credits name the clerk
+  for three letters): ff. 94r-95r are the decipherment of fr. 4698 ff. 30r-31r (letter of 21 Jan 1590); f. 97r-v of
+  f. 104r (the sheet sent with the letter of 16 Feb 1590); f. 108r of fr. 4698 f. 34r (aligned only, not transcribed).
+  A further decipherment of f. 17r-v is on fr. 4698 f. 105r itself, in the same volume; his folder does not name its
+  author and it is not in fr. 4702. He links them (his record: first found 3 Oct 2026), transcribes ff. 94r-95r and
+  f. 97r-v (`decipherments_1590/`), and edits and translates two of them
   (`editions/edition_1590-01-21_f30.txt`, `editions/edition_1590-02-16_f104.txt`; 49 units where he preferred the
   cipher to the clerk's word, each needing a second reader).
 - A rebuilt code: a one-part word code of two-digit figures in 14 lists told apart by marks (448 glossed values,
   `tables/lists_v4.tsv`), a symbol alphabet of about 45 signs and a verb sign.
-- A test on fr. 4696 (the other volume of this folder, same cipher, Oct 1586 on): 452 of 463 units agree with the
-  gloss (97.6%); a shuffled table gives 2 of 572.
+- A test on fr. 4696 (the other volume of this folder, same cipher, Oct 1586 on), run with his earlier table of 378 values, built before that volume was seen: of 587 units transcribed, 463 have their word in the table, and for 452 of those (97.6%) the gloss on the page is the table's word (word and mark both agree for 408, 88.1%); a shuffled table gives 2 of 572. The 448-value table was built afterwards. "Agrees" here is agreement with the gloss written on the page, not independent confirmation of the reconstruction.
 - The sender of the fr. 4698 letters: Cardinal Scipione Gonzaga, Rome, to Nevers (21 Jan, 16 and 19 Feb, 24 and 31 Mar
   1590), by his record. Lasry's report says "not established" for fr. 4698.
 
@@ -34,15 +35,14 @@ Dates: his git commits are dated 3-4 Oct 2026 (first commit `79a4d26`, 3 Oct 13:
 own; the push dates could not be read (the GitHub API for his repository was not available to this session). The
 project's own harvest `research/cryptoole/candidates.md`, headed 14 Oct 2026, already lists his page (row FR1586-3)
 with "Already here" left blank: it was public by 14 Oct at the latest, and we did not match it to this folder then.
-Lasry's report (10 Oct, received 13 Oct) does not cite Rosson or fr. 4702, so his work is recorded as independent as far
-as the record shows; whether his models had seen Rosson's page is not known. His report itself names period material
+Lasry's report (10 Oct, received 13 Oct) does not cite Rosson or fr. 4702, so nothing in the record shows he used it; whether his models had seen Rosson's page is not known. His report itself names period material
 for fr. 4698 ("worksheets on f26r/f93r and the f17v/f105 comparison"); whether that is the fr. 4702 / f. 105r material
-Rosson aligns is not checked here.
+Rosson aligns is not checked here. Lasry's report thus uses the f. 17v / f. 105 comparison, the same fr. 4698 gloss material Rosson starts from; readers should weigh that when judging independence.
 
 Checked here, 16 Nov 2026 (model checks only, no person):
 
 - `tables/lists_v4.tsv` has 448 data rows in 14 lists (A, BR, C, E, G, I, M, N, O, P, PT, Q, S, T).
-- The fr. 4696 figure adds up: 452 = 387 agree + 21 same word in another form + 44 word agrees, mark differs, from his
+- The fr. 4696 figure (with the 378-value table) adds up: 452 = 387 agree + 21 same word in another form + 44 word agrees, mark differs, from his
   `fr4696/agreement_table.md`. The shuffle test was not rerun.
 - Gallica fr. 4702 f. 94r (IIIF via openapi.bnf.fr) is a clear Italian decipherment in a clerk's hand, with struck
   dictionary forms, and its first lines match his transcription.
@@ -139,7 +139,7 @@ Lasry sent his report on this item as a PDF, extracted with `research/reading_au
 ## Remaining gaps
 
 - Français 4698 ff30r-31r, 104r: Lasry's unread groups between his deciphered runs - blocker: open-codes; the plain text exists (the clerk's decipherments, fr. 4702 ff. 94r-95r and f. 97r-v, edited by Rosson), but no unit-by-unit comparison of Lasry's Readable text with Rosson's alignment tables has been made here, so which of Lasry's holes the clerk's text fills is not recorded; for ff. 30r-31r the fr. 4702 text is also an independent reading of the same cipher
-- Français 4696 ff5r, 62r-v: unread groups between Lasry's deciphered runs - blocker: open-codes; Rosson's glossed table of fr. 4696 (448 values, 14 lists) has not been run against Lasry's holes here, and whether Lasry's 24 nomenclature values are a subset of it is not checked
+- Français 4696 ff5r, 62r-v: unread groups between Lasry's deciphered runs - blocker: open-codes; Rosson's table (448 values, 14 lists, tested on fr. 4696) has not been run against Lasry's holes here, and whether Lasry's 24 nomenclature values are a subset of it is not checked
 - 5 of 7 pages transcribed in part, all 7 deciphered in part: not transcribed or deciphered in full in Lasry's report - blocker: no-key-material; the key sheet of the cipher is not known; Rosson's table is a reconstruction by a model, unchecked by a person, and his own README lists microfilm limits for fr. 4698
 
 ## Escalation
