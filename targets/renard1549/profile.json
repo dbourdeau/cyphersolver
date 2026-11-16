@@ -169,6 +169,15 @@
    ],
    "what": "Renard's own cipher (PP1 family on structure) rebuilt from the Vienna decipherment: 127 signs, 1,201 of 1,513 tokens on their majority value. Held-out last 13 of 67 lines: first pass 73.8% (seed leak disclosed), leak-free reruns 56.7% and 64.8%; shuffles max 27-29%, 0 of 10,000 (vienna/key_renard1549_vienna.tsv, HOLDOUT*.txt). Not proven by the contributor's 65% line.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Integration check of PR #707 (a model session for the maintainer; no person): FREEZE hashes match; pipeline.py regenerates the key, alignment and full decode byte for byte; held-out H1 0.7377, H2 0.5666, H3 0.6481, shuffles 0 of 10,000, as filed; an own decoder from the key file gives DECODE_fullkey.txt on 67 of 67 lines; the four differences from the Modena reading are in the cipher decode, not only in the margin. The Vienna scan was not seen (private, not online).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -218,13 +227,27 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "the imperial chancery's decipherment c.41 of the letter of 15 July 1549, used to correct the key"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "Vienna original (HHStA Frankreich Dipl. Korr. 17, Konv. Juli 1549, fol. 13-14): the contemporary French decipherment and the cipher, from a working scan HHStA supplied, with Claude (Anthropic); PR #707",
+    "date": "2026-11-16",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/707"
+   },
+   {
+    "who": "mcbratney",
+    "role": "verification",
+    "note": "compared this reading with the Vienna original and its decipherment (vienna/RESULTS.md section 5), with Claude (Anthropic); no person has checked the comparison",
+    "date": "2026-11-16",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/707"
    }
   ],
   "gaps": [
    {
     "item": "code word amo and the signs X, F, I, T°, 3^1, e^3",
     "blocker": "open-codes",
-    "detail": "each occurs once or twice and the context does not fix it"
+    "detail": "each occurs once or twice and the context does not fix it; the Vienna original has \"secretaire\" at both places (vienna/RESULTS.md section 5), not applied to the reading"
    },
    {
     "item": "context-only values of code words (den, bas, ne, mi, oria/ocia/ning, rac, apud, allo, bit)",
@@ -237,9 +260,9 @@
     "detail": "left unread on the contributor's crops; images not reachable from the project"
    },
    {
-    "item": "transcription not compared with the images by the project; Renard's original in Vienna and the Besançon decipherment",
+    "item": "transcription not compared with the images by the project; the Besançon decipherment",
     "blocker": "needs-physical-access",
-    "detail": "Estense host refused by the session network; the Vienna and Besançon papers are not online"
+    "detail": "Estense host refused by the session network on 10 Nov (16 Nov: manifest answers, image requests at 1528 px refused by the server size limit); the Besançon papers are not online; the Vienna original was obtained by the contributor as a private working scan (vienna/), not seen by the project"
    }
   ],
   "notes": "Contributed by Ivan Sourvillo; the project checked that the decryption follows the stated key, not the transcription against the images.",
