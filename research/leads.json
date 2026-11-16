@@ -31028,11 +31028,33 @@
    "source": "Gilder Lehrman sweep",
    "prior_art": "open as far as checked (3 Nov 2026: known.py on names and shelfmark; archive description says nothing of a decipherment; no edition compared)",
    "needs_archive_scan": "no",
-   "access_note": "Item page public; scan behind a free Gilder Lehrman collection login or PDF order",
+   "access_note": "Gilder Lehrman item pages give 400-px previews only (Cloudflare to scripts); full images via the Collection login or Adam Matthew 'American History, 1493-1945' (used by targets/kanawha1863).",
    "decode_ids": [],
    "ark": "",
-   "scored": "sweep",
-   "vetting_note": "The four telegrams are real route-cipher text, but only 400 px public previews are free: the full scans need a Gilder Lehrman Collection subscription (login) or a PDF order. A period decipherment of GLC02414.341 exists in the same collection (GLC02414.114), so the lead should be split: .341 read, .229, .339 and .344 with no decipherment found yet. (research/vetting_2026-11-13_ajbeling/vetting.json) 14 Nov 2026: these telegrams are being worked in targets/kanawha1863 (Andrew Beling, PR #585; in progress)."
+   "scored": "vetted",
+   "vetting_note": "The four telegrams are real route-cipher text, but only 400 px public previews are free: the full scans need a Gilder Lehrman Collection subscription (login) or a PDF order. A period decipherment of GLC02414.341 exists in the same collection (GLC02414.114), so the lead should be split: .341 read, .229, .339 and .344 with no decipherment found yet. (research/vetting_2026-11-13_ajbeling/vetting.json) 14 Nov 2026: these telegrams are being worked in targets/kanawha1863 (Andrew Beling, PR #585; in progress).",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "Not re-viewed in this batch: the images were read from Adam Matthew's 'American History, 1493-1945' edition of the Gilder Lehrman Collection by targets/kanawha1863 (13 Nov 2026), whose NOTES.md table 'Who read what, and when' was read here on 16 Nov 2026; Gilder Lehrman item pages glc02414341, glc02414229, glc02414344, glc02414339 and the clear copies glc02414114, glc02414137, glc02414138.",
+     "extent": "Four short route-cipher telegrams of 1-3 July 1863 (1-2 pp. each); the target counts 42 cells in .339.",
+     "cipher": "Union military-telegraph route cipher with local code words. Contemporary decipherments filed in GLC02414: .114 (grid) for .341, .137 for .229, .138 for .344; none for .339."
+    },
+    "prior_art": {
+     "decode": "known.py on GLC02414 and Scammon (DECODE and HCPortal dumps, catalogue, leads, targets): hits only in this lead and targets/kanawha1863/NOTES.md; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Scammon and Kanawha: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Scammon and Kanawha: no hit.",
+     "edition": "The contemporary clear copies in the same collection (.114, .137, .138) are the reading of three telegrams; the Official Records were not needed for the verdict. No reading of .339 of the time was found by the target.",
+     "literature": "targets/kanawha1863 (Andrew Beling with AI agents, PR #585, status in progress) recovers the route and code words from the three pairs, tests them on .185 and reads .339 in part; no other literature on these telegrams is known."
+    },
+    "key_check": "The route and code-word values are rebuilt in targets/kanawha1863 (codewords.tsv, freeze/) from the 1863 pairs and tested on GLC02414.185 (60 of 66 cells predicted).",
+    "duplicates": "Same telegrams as targets/kanawha1863; no catalogue entry. The sibling decoded telegrams GLC02414.108-.118 and .184-.185 are the clear copies and test pieces, not separate leads.",
+    "verdict": "partly_read",
+    "closed": "Three of the four telegrams (.341, .229, .344) have their 1863 decipherments in the same collection, and the fourth (.339) is being read in targets/kanawha1863, so the lead is closed as read in part and left to that target."
+   },
+   "access": "online"
   },
   {
    "id": 2052,
@@ -42830,11 +42852,32 @@
    "source": "GStA PK database / German portals sweep",
    "prior_art": "not vetted: Bourgeois 1887 (archive.org, opened) cites ciphered pieces of this series by content (e.g. \"Montmollin à Wartemberg, 23 mars 1705 (en chiffres)\"), so decipherments probably lie in the files; DECODE and Cryptiana searched 11 Nov 2026, nothing",
    "needs_archive_scan": "yes",
-   "access_note": "Not digitised. Description in the GStA PK database (archive.spk-berlin.de/actaproweb, search the Signatur); reading room in Berlin-Dahlem or a paid scan order.",
+   "access_note": "Not digitised. Reading room or scan order at GStA PK; sample Nr. 692 and Nr. 717 first if the series is reopened.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Eleven files with 'Berichterstattungen (teils chiffriert)' and no single document named. The siblings Nr. 695-706 are 'teils chiffriert mit Entzifferung', Nr. 995 has 'Dechiffrierung zwischen den Zeilen', the 1703 table is in Nr. 944, and Bourgeois 1887 cites ciphered pieces by content, so decipherments very probably lie in or beside these files. DECODE 'Montmollin' 0. Needs sample scans of Nr. 692 and 717 to find a piece with no decipherment; then one row per file."
+   "scored": "vetted",
+   "vetting_note": "Eleven files with 'Berichterstattungen (teils chiffriert)' and no single document named. The siblings Nr. 695-706 are 'teils chiffriert mit Entzifferung', Nr. 995 has 'Dechiffrierung zwischen den Zeilen', the 1703 table is in Nr. 944, and Bourgeois 1887 cites ciphered pieces by content, so decipherments very probably lie in or beside these files. DECODE 'Montmollin' 0. Needs sample scans of Nr. 692 and 717 to find a piece with no decipherment; then one row per file.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK, I. HA Rep. 64 Nr. 692, 693, 694, 707, 708, 709, 710, 715, 717, 944, 995: finding-aid texts as read on 11 Nov 2026 (research/vetting_2026-11-11/out_07.json, quoted in the lead); Bourgeois 1887, archive.org neuchteletlapol00bourgoog full text, searched for 'chiffr' on 16 Nov 2026. The leaves were not seen.",
+     "extent": "Eleven files of agents' reports, Jul 1703 - Dec 1708 ('Berichterstattungen (teils chiffriert)'); the amount of cipher is not given.",
+     "cipher": "Finding aid: 'teils chiffriert' for these files; 'teils chiffriert mit Entzifferung' for the siblings Nr. 695-706; Nr. 995 'chiffrierte Briefe mit Dechiffrierung zwischen den Zeilen' (Jul-Sep 1706) beside reports of Mar-Apr 1707 'teils chiffriert'; a key table of 1703 in Nr. 944."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Montmollin' and 'Bondeli': this lead, leads 2585, 2586 and 2612 (other Rep. 64 Neuchâtel files) and catalogue 2494 (Rep. 64 Nr. 828, Martinet 1758); DECODE 'Montmollin' 0 (11 Nov 2026).",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Neuchâtel, Montmollin and Bondeli: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Neuchâtel, Montmollin and Bondeli: no hit.",
+     "edition": "Bourgeois 1887, Appendice, cites 'Montmollin à Wartemberg, 23 mars 1705 (en chiffres), A. R. P., Acta neuch. success., t. IX' and gives its content (a proposal involving the Duke of Savoy and troops sent into Switzerland), which shows that ciphered pieces of the series were deciphered; no full edition of the Prussian agents' reports exists.",
+     "literature": "No further literature was needed for the verdict; the finding aid's own decipherment notes for the sibling files and Bourgeois's use of a ciphered piece decide it."
+    },
+    "key_check": "A key table of 1703 is in Nr. 944 (key in the series); it was not tested. With it, any piece left in cipher could be read.",
+    "duplicates": "No catalogue entry for these files. Lead 2586 (14 Nov GStA sweep) lists all eleven files among 25 Rep. 64 Neuchâtel files and should share this verdict; lead 2585 is the sibling Nr. 695 (with decipherment) and catalogue 2494 is Rep. 64 Nr. 828 (Martinet 1758), a later piece of the same Neuchâtel archive.",
+    "verdict": "partly_read",
+    "closed": "The Neuchâtel reports were deciphered at least in part (sibling files 'mit Entzifferung', interlinear decipherment in Nr. 995, a ciphered Montmollin letter of 1705 used by Bourgeois), and a key table is in Nr. 944, so the lead is closed as partly read."
+   }
   },
   {
    "id": 2496,
@@ -43016,11 +43059,32 @@
    "source": "GStA PK database / German portals sweep",
    "prior_art": "not vetted: DECODE search \"Ulrike\" 0 (11 Nov 2026); Arnheim 1909-10 could not be opened",
    "needs_archive_scan": "yes",
-   "access_note": "Not digitised. Description in the GStA PK database (archive.spk-berlin.de/actaproweb, search the Signatur); reading room in Berlin-Dahlem or a paid scan order.",
+   "access_note": "Not digitised at GStA PK. Arnheim vol. 2 is not on archive.org; Google Books gives snippets only (gdata feed by curl; books.google.com redirects scripts to the 'sorry' CAPTCHA page).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Full GStA record read 11 Nov: 'Enthält auch: Drei chiffrierte Briefe der Königin Ulrike von Schweden an ihren Bruder' (1756), no decipherment noted. DECODE 'Ulrike' 0. The edition that would cover them, Arnheim, Luise Ulrike, die schwedische Schwester Friedrichs des Grossen: ungedruckte Briefe, vol. 2 (Gotha 1910), is not on archive.org (three searches) and was not opened. Open Arnheim vol. 2 at 1756 first."
+   "scored": "vetted",
+   "vetting_note": "Full GStA record read 11 Nov: 'Enthält auch: Drei chiffrierte Briefe der Königin Ulrike von Schweden an ihren Bruder' (1756), no decipherment noted. DECODE 'Ulrike' 0. The edition that would cover them, Arnheim, Luise Ulrike, die schwedische Schwester Friedrichs des Grossen: ungedruckte Briefe, vol. 2 (Gotha 1910), is not on archive.org (three searches) and was not opened. Open Arnheim vol. 2 at 1756 first.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK, BPH Rep. 56 I, J, Nr. 23, finding-aid text as read on 11 Nov 2026 (research/vetting_2026-11-11/out_07.json); Fritz Arnheim, Luise Ulrike, die schwedische Schwester Friedrichs des Grossen: ungedruckte Briefe an Mitglieder des preussischen Königshauses, vol. 2, 1747-1758 (Gotha 1910), Google Books id iecH_VSLsWoC, seen as search snippets via https://www.google.com/books/feeds/volumes on 16 Nov 2026 (queries 'Ulrike chiffre August Wilhelm 1756', 'Chiffrebrief August Wilhelm 1756 Stockholm', 'Chiffrebrief nicht eigenhändig Ulrike'). The archive leaves were not seen.",
+     "extent": "Three ciphered letters of 1756 from Luise Ulrike to August Wilhelm, filed with his letters to her (finding aid). Arnheim's snippets show at least two letters of 1756 footnoted as cipher letters.",
+     "cipher": "Finding aid: 'Enthält auch: Drei chiffrierte Briefe der Königin Ulrike von Schweden an ihren Bruder.' Arnheim vol. 2 footnotes: '1) Chiffrebrief; nicht eigenhändig. 2) Chiffrebrief; nicht eigenhändig', under a letter to August Wilhelm '[Stockholm], 21 mai [1756]', printed in clear; another snippet has 'Chiffrebrief; nicht eigenhändig. Über die Abfassungszeit vgl. den Anhang.'"
+    },
+    "prior_art": {
+     "decode": "known.py on 'Luise Ulrike': only this lead and the 11 Nov German sweep candidates; DECODE 'Ulrike' 0 (11 Nov 2026).",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Ulrike and Ulrique: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Ulrike and Ulrique: no hit.",
+     "edition": "Arnheim, Luise Ulrike ... ungedruckte Briefe, vol. 2 (1910) prints the 1756 letters to August Wilhelm in clear, footnoting them as cipher letters not in her own hand (Google Books snippets, 16 Nov 2026).",
+     "literature": "The Google Books gdata feed search also lists Frederick II's 'Briefe an seine Schwester Ulrike' (1860), not relevant to her letters to August Wilhelm; no other literature was needed."
+    },
+    "key_check": "No key is named in the finding aid. Arnheim printed the texts in clear, so a contemporary decipherment (or a deciphered copy) was available to him.",
+    "duplicates": "No other lead or catalogue entry for BPH Rep. 56 I J Nr. 23; the related catalogue row for VI. HA Nl Schweden, U. v., Nr. 3 is Frederick to Ulrike, a different correspondence.",
+    "verdict": "read",
+    "closed": "Luise Ulrike's ciphered 1756 letters to August Wilhelm are printed in clear in Arnheim's edition (vol. 2, 1910), footnoted as cipher letters, so they were read and the lead is closed."
+   }
   },
   {
    "id": 2500,
@@ -43221,11 +43285,32 @@
    "source": "GStA PK database / German portals sweep",
    "prior_art": "not vetted: Stein edition not opened",
    "needs_archive_scan": "yes",
-   "access_note": "Not digitised. Description in the GStA PK database (archive.spk-berlin.de/actaproweb, search the Signatur); reading room in Berlin-Dahlem or a paid scan order.",
+   "access_note": "As lead 1675: not digitised; scans from GStA PK.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Two single pieces in two files ('... 2.3.1798 (chiffriert)'; 'Wittgenstein an Stein: chiffrierte Briefe, 22.10.1808'); the full records could not be reached by the script on 11 Nov. The Wittgenstein-Stein letters of autumn 1808 are the intercepted-letter affair and are expected in Botzenhart/Hubatsch, Freiherr vom Stein, Briefe und amtliche Schriften, vol. 2/2, which is not online and was not opened. DECODE 'Wittgenstein' 0. Open the Stein edition, then split the 1798 instruction from the 1808 letters."
+   "scored": "vetted",
+   "vetting_note": "Two single pieces in two files ('... 2.3.1798 (chiffriert)'; 'Wittgenstein an Stein: chiffrierte Briefe, 22.10.1808'); the full records could not be reached by the script on 11 Nov. The Wittgenstein-Stein letters of autumn 1808 are the intercepted-letter affair and are expected in Botzenhart/Hubatsch, Freiherr vom Stein, Briefe und amtliche Schriften, vol. 2/2, which is not online and was not opened. DECODE 'Wittgenstein' 0. Open the Stein edition, then split the 1798 instruction from the 1808 letters.",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK, BPH Rep. 192 Nl Wittgenstein, W. L. G. zu, VI Nr. 2,2 and I Nr. 1,16: finding-aid texts as quoted in this lead and in lead 1675 (Archivportal-D records EBLEDVYBRE3HNLVDAXB3KKCCV4PP5HFK and IYMV7ZFID5UJXWJ2LHLFWQU44FGL2PAW, opened in Chrome in an earlier pass). The leaves were not seen.",
+     "extent": "Two single pieces: one ciphered royal order of 2 Mar 1798 and ciphered letters of 22 Oct 1808, extent not stated.",
+     "cipher": "Finding aid: '... 2.3.1798 (chiffriert)' and 'Wittgenstein an Stein: chiffrierte Briefe, 22.10.1808'. No decipherment is mentioned in either record."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Nl Wittgenstein': hits only in leads 1675 and 2504 and their sweep files (11 Nov German sweep, Archivportal-D 'more terms' sweep, 14 Nov reachable-unlooked README); DECODE 'Wittgenstein' 0 (11 Nov 2026).",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Wittgenstein: no hit (the 'Stein' hits are Holstein and Wallenstein).",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Wittgenstein: no hit.",
+     "edition": "Not opened for this lead, which is closed as a duplicate; the edition question (Stein, Briefe und amtliche Schriften II/2; Nassauische Annalen 1929) is recorded under lead 1675.",
+     "literature": "Google Books gdata feed searches of 16 Nov 2026 (Wittgenstein, Stein, chiffriert, 1808) found the Stein edition and the Nassauische Annalen 1929 article; recorded under lead 1675."
+    },
+    "key_check": "No key is recorded for either piece; Stein's 1808 cipher is not held here.",
+    "duplicates": "Lead 1675 lists the same shelfmarks (VI Nr. 2,2 and I Nr. 1,16) and adds I Nr. 1,11; this lead is a subset of it, found by a different sweep (11 Nov German portals versus the Archivportal-D 'more terms' sweep).",
+    "verdict": "duplicate",
+    "closed": "Lead 2504 names the same two GStA pieces as lead 1675, so it is closed as a duplicate and the work continues under 1675."
+   }
   },
   {
    "id": 2505,
@@ -46032,11 +46117,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the fonds, number and correspondents (catalogue, leads, targets, DECODE and HCPortal dumps) finds nothing on this shelfmark; the Archivportal-D sweeps of 26 Oct and 2 Nov did not list it; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked (the record page shows digital objects when there are any); scans must be ordered from GStA PK, Berlin-Dahlem, or the file consulted in the reading room",
+   "access_note": "Not digitised; ACTApro record https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++6796cb74-ad20-5db8-bb85-22a807a03efc.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Derfflinger's relations of 1674 are printed in Urkunden und Actenstuecke vol. 13 pp. 793 ff. per the 11 Nov German sweep README (opened there); not reopened here. Close as read once that page is confirmed. The ACTApro record says only 'z. T. chiffriert'; no images. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Derfflinger's relations of 1674 are printed in Urkunden und Actenstuecke vol. 13 pp. 793 ff. per the 11 Nov German sweep README (opened there); not reopened here. Close as read once that page is confirmed. The ACTApro record says only 'z. T. chiffriert'; no images. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record I. HA Rep. 34 Nr. 5876 (old shelfmark Nr. 227 a 3, Fasz. 11), read 16 Nov 2026; Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm von Brandenburg vol. 13, section 'Die Gesandtschaft Derfflingers. 1674', pp. 793-798, from the archive.org text of urkundenundacten13berluoft. The leaves were not seen.",
+     "extent": "Derfflinger's reports of April-May 1674 in a file on his embassy; the edition speaks of 'die wenigen Relationen' and prints three letters (Bremen 21 Apr, The Hague 28 Apr/8 May, The Hague 2/12 May 1674).",
+     "cipher": "ACTApro: 'Berichte Derfflingers aus Den Haag (z. T. chiffriert), 1674'. The edition prints the relations in full and in clear, with no cipher gaps."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Derfflinger' and '5876': only this lead and the sweep and vetting READMEs of 11 and 14 Nov 2026 (the 11 Nov German sweep excluded it as printed); no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Derfflinger: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Derfflinger: no hit.",
+     "edition": "Urkunden und Actenstücke vol. 13 pp. 793-798: footnote 3 on p. 793, 'Die wenigen Relationen D.'s sind alle eigenhändig; sie folgen in unverkürztem Wortlaut unter Wahrung ihrer orthographischen Eigentümlichkeiten', followed by the three reports in clear and Romswinckel's parallel relations.",
+     "literature": "No further search needed: the official edition prints the reports in full, which decides the verdict."
+    },
+    "key_check": "No key is named in the record; none is needed, since the edition prints the reports in clear.",
+    "duplicates": "No other lead or catalogue entry for Rep. 34 Nr. 5876.",
+    "verdict": "read",
+    "closed": "Derfflinger's 1674 reports from The Hague, partly in cipher, are printed in full and in clear in Urkunden und Actenstücke vol. 13 pp. 793-798, so they are read and the lead is closed."
+   }
   },
   {
    "id": 2589,
@@ -46227,11 +46333,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the fonds, number and correspondents (catalogue, leads, targets, DECODE and HCPortal dumps) finds nothing on this shelfmark; the Archivportal-D sweeps of 26 Oct and 2 Nov did not list it; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked (the record page shows digital objects when there are any); scans must be ordered from GStA PK, Berlin-Dahlem, or the file consulted in the reading room",
+   "access_note": "ACTApro record pages fetch by curl (archive.spk-berlin.de/actaproweb/archive.xhtml?id=...); no digital object shown. Reading room or scan order at GStA PK.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Mary Stuart 1571, Rep. 11 Akten Nr. 10019: only the start of the record was read (title on Elizabeth's marriage to Anjou); Tomokiyo, Lasry and Biermann read many Mary Stuart letters, so prior art needs a proper search of Labanoff and the Cryptologia 2023 texts, not done. No images online. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Mary Stuart 1571, Rep. 11 Akten Nr. 10019: only the start of the record was read (title on Elizabeth's marriage to Anjou); Tomokiyo, Lasry and Biermann read many Mary Stuart letters, so prior art needs a proper search of Labanoff and the Cryptologia 2023 texts, not done. No images online. (research/vetting_2026-11-14_reachable_unlooked/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record I. HA Rep. 11 Akten, Nr. 10019, https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++4ae95c3b-604e-4c20-87d4-75240219c4a8, full record read 16 Nov 2026. The leaves were not seen.",
+     "extent": "6 leaves (Umfang: 6 Blatt), 1571.",
+     "cipher": "The record describes the file as 'Dechiffrierung und Übersetzung eines Geheimberichts': a deciphered text with its translation. It does not say that the ciphertext itself is in the file."
+    },
+    "prior_art": {
+     "decode": "known.py on the shelfmark, fonds and correspondents in the 14 Nov sweep found nothing on this file; DECODE has many Mary Stuart records (the 1578-1584 letters read by Lasry, Biermann and Tomokiyo), none matching this Berlin copy.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Stuart, Ridolfi and Norfolk: only the 1578-1584 Mary Stuart letters published in Cryptologia 2023, not this 1571 piece.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Stuart and Ridolfi: no hit.",
+     "edition": "No edition was opened; none is needed, because the file itself is a decipherment with a translation. The 1571 Mary-Norfolk-Ridolfi correspondence was deciphered at the time by Burghley's officers (Norfolk's trial, 1572) and is calendared in the Calendar of State Papers Scotland vol. 3 and printed in Labanoff, Lettres de Marie Stuart, vol. 3; whether this Berlin report matches one of those texts was not checked.",
+     "literature": "Not searched further: the archive's own title ('Dechiffrierung und Übersetzung') decides the verdict."
+    },
+    "key_check": "No key is mentioned in the record; Mary Stuart's 1571 ciphers with Norfolk and Ridolfi are known from the State Papers, but none is needed here.",
+    "duplicates": "No other lead or catalogue entry for Rep. 11 Akten Nr. 10019; the catalogue's Mary Stuart rows are other letters (1578-1584, BnF and TNA).",
+    "verdict": "read",
+    "closed": "The file is described by the archive as the decipherment and translation of a secret report, so the text was read at the time and the lead is closed as read."
+   }
   },
   {
    "id": 2593,
@@ -46951,11 +47078,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
+   "access_note": "Not digitised. Working permalink: https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++daa7ec62-4a2e-537d-a04d-9805d80d4a9b (the lead's link returns an empty page).",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "Rep. 34 Nr. 6676: 'Dechiffrierungen von Briefen des de Beziers, 1668', enclosed with Copes's reports from The Hague; the record names the decipherments only. Whether ciphertext is filed is not stated. (research/vetting_2026-11-14_gsta_deep/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "Rep. 34 Nr. 6676: 'Dechiffrierungen von Briefen des de Beziers, 1668', enclosed with Copes's reports from The Hague; the record names the decipherments only. Whether ciphertext is filed is not stated. (research/vetting_2026-11-14_gsta_deep/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record I. HA Rep. 34 Nr. 6676 (old shelfmark Nr. 227 n, Fasz. 3), read 16 Nov 2026 via https://archive.spk-berlin.de/actaproweb/document/Vz_52d93fe1-71cf-42a5-afb5-7bd01dd4b9e2. The leaves were not seen.",
+     "extent": "Enclosures to Johann Copes's reports from The Hague, 1668; the number of de Beziers letters is not stated.",
+     "cipher": "ACTApro: 'Dechiffrierungen von Briefen des de Beziers, 1668'. The record names the decipherments; it does not say whether the ciphertexts are also filed."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Beziers', 'Copes' and '6676': only this lead and the 14 Nov GStA sweep files (the 6676 hits in the catalogue are unrelated Hungaricana ids); no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Beziers and Copes: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Beziers and Copes: no hit.",
+     "edition": "Not needed for the verdict: the decipherments are in the file. Copes's 1668 Hague reports may be summarised in Urkunden und Actenstücke vol. 3 (Niederlande); not opened.",
+     "literature": "Not searched further: the archive's own description ('Dechiffrierungen') decides the verdict."
+    },
+    "key_check": "No key is named in the record; the 1668 decipherments themselves would give one if the ciphertexts are filed with them.",
+    "duplicates": "No other lead or catalogue entry for Rep. 34 Nr. 6676.",
+    "verdict": "read",
+    "closed": "The file is described by the archive as the decipherments of de Beziers's letters, so the texts were read at the time and the lead is closed as read."
+   }
   },
   {
    "id": 2606,
@@ -46988,11 +47136,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py and a shelfmark grep against catalogue.json, leads.json, every candidates.json / key_leads.json and the targets find nothing on this shelfmark; no web, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in ACTApro; digitisation not checked; scans must be ordered from GStA PK, Berlin-Dahlem (the ACTApro order button needs a login), or the file consulted in the reading room",
+   "access_note": "Working permalink: https://archive.spk-berlin.de/actaproweb/archive.xhtml?id=Vz++++++48816744-b529-587d-87cf-bc7a1de1ed37 (redirect from document/Vz_78e206df-531e-4be0-aa86-59c5a0c74567). The original letter is presumably under the old shelfmark I. HA Rep. 94 Nr. 1231 b.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "BPH Rep. 35 Nr. 15: the full record did not come back in the search lists this session (the header was not in the hit set); only the sweep's quoted line is known. Re-fetch and check Urkunden und Actenstuecke before an entry. (research/vetting_2026-11-14_gsta_deep/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "BPH Rep. 35 Nr. 15: the full record did not come back in the search lists this session (the header was not in the hit set); only the sweep's quoted line is known. Re-fetch and check Urkunden und Actenstuecke before an entry. (research/vetting_2026-11-14_gsta_deep/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "GStA PK ACTApro record BPH, Rep. 35, Nr. 15, read 16 Nov 2026 via https://archive.spk-berlin.de/actaproweb/document/Vz_78e206df-531e-4be0-aa86-59c5a0c74567. The facsimile was not seen.",
+     "extent": "One letter of 14 May 1673, as facsimile and photocopy with negatives.",
+     "cipher": "The record describes the letter's subject as an imperial letter 'eigenhändig chiffriert' received by the Prince of Anhalt; it does not describe any cipher in the Elector's letter, and the imperial letter itself is not in the file."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Rep. 35, Nr. 15': only this lead and the 14 Nov GStA sweep candidates; 'Schwerin' and 'Anhalt' hit only other, unrelated catalogue entries and leads; no DECODE record of this letter.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Anhalt and Schwerin: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Anhalt and Schwerin: no hit.",
+     "edition": "The Elector's letters to Otto von Schwerin are printed in part in the Urkunden und Actenstücke and older editions; not opened, because the record already shows the file holds no ciphertext.",
+     "literature": "Not searched further: the verdict rests on the archive's description of what the file contains."
+    },
+    "key_check": "No key concerned: the file holds no ciphertext.",
+    "duplicates": "No other lead or catalogue entry for BPH Rep. 35 Nr. 15.",
+    "verdict": "not_cipher",
+    "closed": "The file is a facsimile of the Elector's letter about an imperial cipher letter, not the cipher letter itself, so there is no ciphertext to read and the lead is closed."
+   }
   },
   {
    "id": 2607,
@@ -49884,11 +50053,32 @@
    "prior_art": "open as far as checked (14 Nov 2026): known.py on the fonds name and inventory number finds nothing in catalogue.json, leads.json, the targets or any sweep; no DECODE, Tomokiyo or Lasry search made in this sweep",
    "seen": "catalogue",
    "needs_archive_scan": "yes",
-   "access_note": "description only in the EAD; digitisation not checked",
+   "access_note": "Not digitised (no dao element in the EAD); handle https://hdl.handle.net/21.12105/C38E8228B44A45C39FB30C77263B13B1.",
    "ark": "",
    "access": "archive",
-   "scored": "sweep",
-   "vetting_note": "A key tableau of 1871 (Nanninga inv. 439, Sijtsma) with no message in the entry; neighbouring inventory numbers not checked and nothing viewed. Out of the oldest-cipher priority. (research/vetting_2026-11-14_dutch_pares/vetting.json)"
+   "scored": "vetted",
+   "vetting_note": "A key tableau of 1871 (Nanninga inv. 439, Sijtsma) with no message in the entry; neighbouring inventory numbers not checked and nothing viewed. Out of the oldest-cipher priority. (research/vetting_2026-11-14_dutch_pares/vetting.json)",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "not online",
+     "where": "Groninger Archieven, toegang 561 Familie Nanninga en aanverwante families, full EAD via harvest.archieven.nl OAI GetRecord B237FD7AA56C4E3E92E1C2D96BA94B13 (fetched 16 Nov 2026), entries 2.3.3 (Jene M. Sijtsma, inv. 436-441) and the photograph-album entry that notes the sheet's origin. The sheet itself was not seen.",
+     "extent": "One sheet ('1 stuk'), 1871.",
+     "cipher": "Inventory: '\"Geheimschrift\". Blad met matrix waarin het alfabet is geschreven. Per regel verspringen de letters één positie. Ondertekend door J.M. Sijtsma, 1871' — a Vigenère-type square (tabula recta). The album entry adds: 'een los papier Geheimschrift van Jene M. Sijtsma uit 1871 is in het archief geplaatst, resp. inv.nr. 439'. No message in cipher is described with it or elsewhere in the fonds."
+    },
+    "prior_art": {
+     "decode": "known.py on 'Sijtsma' and 'Nanninga': hits only in this lead and the 14 Nov Dutch OAI sweep files; no DECODE record.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Sijtsma: no hit.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Sijtsma: no hit.",
+     "edition": "No edition: a private family archive of a Groningen timber-trading family; the inventory by M. E. de Jonge is the only description.",
+     "literature": "No literature was searched beyond the inventory: the verdict rests on the inventory showing a key tableau and no ciphertext in the whole fonds."
+    },
+    "key_check": "The sheet is itself the key (a tabula recta); there is no text in the fonds to apply it to.",
+    "duplicates": "known.py on the fonds and names finds no other lead or catalogue entry.",
+    "verdict": "not_cipher",
+    "closed": "Inventory 439 is a key tableau with no enciphered message in it or anywhere else in toegang 561, so there is no cipher text to read and the lead is closed."
+   }
   },
   {
    "id": 2699,
@@ -55191,7 +55381,30 @@
    "ark": "",
    "needs_archive_scan": "no",
    "seen": "catalogue",
-   "scored": "sweep"
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-16",
+    "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+    "seen": {
+     "kind": "scan",
+     "where": "DARA PDFs of ES/FHB - CD/ALCORT/D/0040 (5 pp.), 0041 (2 pp.), 0043 (4 pp.), 0045 (2 pp.), 0047 (6 pp.), 0048 (2 pp.), 0051 (5 pp.), 0052, 0050 and 0054 (2 pp.), downloaded from opacaraimagenes.aragon.es and viewed page by page on 16 Nov 2026; contact sheets in research/vetting_2026-11-16_w20_b09/img/.",
+     "extent": "Four numeric cipher sheets: D/0040 one full page (about 40 lines of two- and three-digit numbers); D/0043 one full page plus one line; D/0047 about two and a half pages; D/0051 about one and a half pages. Each sheet is enclosed in a clear covering letter of Vincenzo Gonzaga to Vespasiano Gonzaga.",
+     "cipher": "Numbers separated by points, no interlinear decipherment on the sheets themselves. The decipherments are separate leaves filed next to them: D/0041 begins 'la voz que corria ai de que los venecianos entravan ha sido tan fija...' (Spanish), D/0045 is headed 'Guastalla julio 28 1683', D/0048 is dated 23 Aug 1685 like D/0047, and D/0054 is headed '9bre 168[3]' and is in Italian; all four are written letter by letter without word breaks, the typical look of a working decipherment, and their lengths match the cipher sheets. DARA dates D/0054 to 1684, but the leaf's own heading (November 168[3]) matches D/0051 (1683/11)."
+    },
+    "prior_art": {
+     "decode": "known.py on 'ALCORT', 'Vespasiano Gonzaga', 'Guastalla' and 'Benasque': only this lead, its wave 8 candidates.json and the catalogue entries 2860, 2861 and 2864 for other Alcort cipher documents (D/0055, 0056, 0086); no DECODE record for the Fundacion Alcort.",
+     "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) grepped for Gonzaga and Guastalla: only the 1428 Malatesta-Gonzaga letters, unrelated; nothing on the Guastalla-Benasque papers.",
+     "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Gonzaga and Guastalla: no hit.",
+     "edition": "No edition of the Alcort Gonzaga correspondence is known; none is needed for the verdict because the decipherments are filed in the series itself (D/0041, 0045, 0048, 0054), whose DARA records call them 'Noticia'.",
+     "literature": "No literature search beyond the DARA records was needed: the contemporary decipherments filed with the sheets decide the verdict. The DARA records themselves do not say that the Noticias are decipherments; that was established from the images."
+    },
+    "key_check": "No key sheet was found among D/0039-0054; none is needed for the verdict. The four cipher/plaintext pairs are enough to rebuild the numeric key, which could then be tried on catalogue entries 2860, 2861 and 2864 from the same papers.",
+    "duplicates": "known.py on shelfmark, fonds and correspondents finds no other lead for D/0040-0054. The catalogue's Alcort entries 2860 (D/0055), 2861 (D/0056) and 2864 (D/0086) are different items in the 'Documentos cifrados' series, not duplicates.",
+    "verdict": "read",
+    "closed": "Each of the four cipher sheets has its contemporary decipherment filed beside it in the series (D/0041, D/0045, D/0048, D/0054), so the letters were read at the time and the lead is closed as read."
+   },
+   "access": "online",
+   "access_note": "DARA item pages fetch by script (no Chrome needed); each record carries a PDF of the whole item at https://opacaraimagenes.aragon.es/<xx>/<yy>/FHB_CD_ALCORT_D_<nnnn>.pdf (path in the item page's attachment link). Item ids: D/0040 764879, 0041 764880, 0043 764881, 0045 764883, 0047 764885, 0048 764886, 0051 764889, 0054 764892."
   },
   {
    "id": 2863,
