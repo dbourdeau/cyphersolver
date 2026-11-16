@@ -11,7 +11,7 @@ Geacht vriend! Behalven de U bekende en vóór uw vertrek reeds *geprojecteerde 
 Indie, welke door veele tegenspoeden tot hiertoe opgehouden is geweest*, maar evenwel, zoo wij hopen, eerlang *voortgang
 zal hebben*, is de Asiatische Raad *geautoriseerd* en reeds bezig met *de arrangementen tot eene {andere} [s]oortgelyke
 expeditie te vertrekken naar Batavia uit eenen anderen oort van Eur[o]pa*, waardoor, indien deselve *reusseerd, eene
-aanzienlyke ver[ste]rking der militaire magt voor Java zal worden aangebragt*. Ik ben gelast U daar van deze
+aanzienlyke ver[ster]king der militaire magt voor Java zal worden aangebragt*. Ik ben gelast U daar van deze
 onderhandsche en voorlopige kennis te geven, met verzoek, dat Gij den *Heer Gouverneur Generaal zulks in {secretesse}
 {gelieft} te communiceren* tot deszelfs vertrek. Mijne bezigheden laten mij niet toe meer ...
 
@@ -35,7 +35,7 @@ occupations do not allow me more ...
 - restored [x]: 3
   - Eur[o]pa: top digit of the o illegible;
   - [s]oortgelyke: first column struck out;
-  - ver[ste]rking: the encipherer wrote "verking", omitting three letters.
+  - ver[ster]king: the encipherer wrote "verking", omitting four letters.
 - unresolved: 0
 - read share (certain + probable, restored excluded): 57/60 = **0.95**. With the restorations, which the clear minute
   confirms: 60/60.

@@ -618,6 +618,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 5056 tokens, 759 types, pl-1790 order 4: reading -2.329 per letter; random keys -3.084 (z 11.6); key annealed onto shuffled ciphertext best -2.307 (mean -2.322, z -0.6); annealer on the real text -2.296. Verdict: underdetermined.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): key_pass.tsv applied to the fifteen transcriptions; 3,704 of 13,121 compared words depart. Twelve texts are compared with the archive's clear copies, not with a reading made here: the figure there measures the aligner's table (commonest aligned string per group; 81% of 22,171 aligned groups equal the key value in place, 9% a longer or shorter form, 9% different). c042 and c104: the folio label at the head of each line ('k.138r.01:') was read as text; rebuilt from key_pass.tsv, fix.tsv and the transcriptions with read.py's rules, both decoded files and the three reading tsv files come out identical, the remaining departures being groups marked unread by hand, '?' groups, base-group fallbacks and bracketed context readings. c024 worded reading: 14 word endings taken from the key's alternatives column and 5 places with letters supplied without a mark (odprawie, iest, powiedzieć, przyszło że się, a second 'na'). No file changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marked the unmarked departures of the 25 March worded reading (reading/c024_1789-03-25.txt): 18 words with [ ] round letters the key's main value does not give (WKMc[i] x7, Rossy[i] x2, list[u], ie[st], sie[bie], [od]prawi[e], pow[ie]dzieć, przys[zł]o, [na], woyn[y], życ[z]y); 'Hetman' and 'że się' (letters left out) named in the header, not marked; no letter changed. The twelve clear/*.txt files got a header line saying they are the archive's clear copies and not the output of the key. Audit script for c024: 11 of 157 words depart. v2_score hole rate 0.063 before, 0.159 after; read_share not changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

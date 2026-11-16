@@ -60,6 +60,42 @@ Défense, ark 1016202); his post in 1759 is not verified. Lead, not applied: 232
 so by the same order it is filed under F, not G; "la France" fits both R957 contexts ("laisse les revenus à la
 [232] en réservant la souveraineté à l'Impératrice"; "de la part de la [232]").
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.json` to `cipher/R957.txt` and `cipher/R956.txt` and compared
+the letters with `R957_reading.md` and `READING.md`: R957 3 of 76 words depart, R956 52 of 153 (34%). `key.json` gives a value
+to every group of both files, and `cipher/*.txt` equals `runs.txt` group for group.
+
+- R956, clear text in the reading file (most of the figure): `READING.md` prints the clear French between the cipher runs
+  («…» marks the cipher), the two unread groups as numbers and an inline note on Crillon. Example: "Gu«eldre» avoient"
+  after run 5. Nothing wrong.
+- R956, letters changed or supplied inside «…» with no mark, 12 places: run 3 and run 16 "qu'il", "qu'on" (366 = q, no u);
+  run 8 "pendant l'hiver" (189 = du, decrypt "pendant du hiver"); run 9 "le prince" (348 375 = p ra, decrypt "prance"; run 4
+  has 348 378 = p ri); run 11 "officier" (330 267 = of ic, one f), "armée, excepté" (one e in the figures), "le duc de"
+  (189 180 194 = du de e), "ignorant, et non" (375 315 400 322 = ra ne t non), "nécessaire" (315 160 210 194 = ne ch er e);
+  run 15 "les maréchaux" and run 18 "les ordres" (292, 291 = le); run 17 "plaintes" (400 403 = t te). "Camille (?)" (decrypt
+  camilis) and "m[aréchal] (I)" are marked.
+- R957: the reading follows the contemporary decipherment, and says the figures agree with it word for word except at
+  "supposition". Two more words differ: "les Revenus" (292 = le) and "beaucoups" (423 180 = up de, no s). In both the
+  decipherer wrote an s the figures do not carry.
+- `key.json` holds six entries that occur in neither text (53, 114, 282, 479, 505, 662; four of them outside the table's
+  range 100-442), left from `key_auto.json`. Left in place: nothing in the folder says where they come from.
+
+Nothing was changed in the key, the transcriptions or the readings: no value the readings use is missing from `key.json`,
+and the wording is not edited here. The audit figures are the same after. Not checked: the groups against the DECODE
+images, and whether any of the 12 places is a misread or mis-divided group rather than a slip of the encipherer.
+
+Marked on 16 Nov 2026. `READING.md`, R956 section, 11 places inside «…», with [ ] round the letters or the word that `key.json`
+does not give: q[u]'il, [l']hiver, pr[i]nce, of[f]icier, [e]xcepté, du[c], ignoran[t], [nécessaire], le[s] maréchaux, q[u]'on,
+le[s] ordres. Two header lines added (what [ ] means; spelling inside «…» is modernised and the text between the runs is clear
+text). No letter of the text changed. Left unmarked, 2 places where the reading drops a letter the key gives, so there is
+nothing to bracket: "plaintes" (figures plainttes) and "duc de Broglio" (figures du de e broglio, the second e). Where the
+key's word differs ("du hiver", "prance", "ne ch er e") the reading was kept and only marked; which of the two is right is
+not settled. R957 is the decipherer's text, so nothing is marked inside it: the header of `R957_reading.md` and the R957 note
+in `READING.md` now say it is not the output of the key and name the three words where the figures differ (supposition, les,
+beaucoups). The same sentence on `docs/swieten1759.html` was corrected. `v2_score.py` hole rate: `READING.md` 0.076 before,
+0.096 after; `R957_reading.md` 0.012 before and after.
+
 ## Remaining gaps
 - codes 147 100 126 148 (R956), the prince's name - blocker: no-key-material; a name group, single occurrence, no decipherment of R956
 - codes 290 313 316 313 373 (R956), the one marshal "qu'on estime" - blocker: illegible; digit division uncertain in the scan

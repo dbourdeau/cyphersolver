@@ -1,0 +1,57 @@
+{
+ "folder": "dole1636",
+ "causes": {
+  "B": "4 words with a letter changed or added and no mark: pourez x2 (decrypt poures), soyez (soyes), affaires (afaires); plus R1 'pour' printed certain on a number transcribed as doubtful 15(1.5)",
+  "C": "none beyond the 4 spellings under B (s to z, doubled f), which read as normalisation but are not stated",
+  "D": "reading.md prints Longin's 1912 text in italics under each passage of fols. 191-183 and count tables; the audit takes them for reading",
+  "E": "decryption.txt (fol. 389 part) prints 52 as I in 6 places while key.tsv has 52 = y; A17 has a lost edge in the transcription not shown in the reading",
+  "F": "main cause: passage labels (A01..A71, P1.., H1..) are decrypted as numbers in transcription.txt (A19 -> g, A18 -> p) and read as the letter a in reading.md; all 3 texts share one transcription and one reading file, so the same pooled figure is printed three times"
+ },
+ "before": "136 of 493 words depart (texts compared: 3, all the same pooled files)",
+ "after": "136 of 493 (nothing to repair in the key; own line-by-line count: 5 of 437 words with an unmarked departure)",
+ "files_changed": [
+  "targets/dole1636/NOTES.md",
+  "targets/dole1636/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 5,
+  "examples": [
+   {
+    "text": "fol. 191 P1",
+    "decrypt": "poures",
+    "reading": "pourez",
+    "where": "reading.md:8"
+   },
+   {
+    "text": "fol. 191 P4",
+    "decrypt": "poures",
+    "reading": "pourez",
+    "where": "reading.md:17"
+   },
+   {
+    "text": "fol. 389 A01",
+    "decrypt": "afaires",
+    "reading": "affaires",
+    "where": "reading.md:96"
+   },
+   {
+    "text": "fol. 389 A02",
+    "decrypt": "soyes",
+    "reading": "soyez",
+    "where": "reading.md:97"
+   },
+   {
+    "text": "fol. 127v R1",
+    "decrypt": "15(1.5)ur = iur or pour",
+    "reading": "pour (unmarked, {piège} beside it is marked)",
+    "where": "reading.md:53"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"# Mechanical decryption of transcription.txt with key.tsv (unchanged).\" (decryption.txt as embedded in docs/dole1636.html) — the fol. 389 part prints 52 as I six times, key.tsv has 52 = y"
+ ],
+ "remaining": "Numbers not checked against the images. The audit figure cannot fall without per-text files or label-aware tokenising in audit.py (outside the folder). fol. 200 not compared (its reading is the period gloss).",
+ "confidence": "high"
+}

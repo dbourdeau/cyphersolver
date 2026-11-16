@@ -634,6 +634,18 @@
    "kind": "verification",
    "what": "R0003636 image 51 row 7 read on the full-size image: third group is a 5 written over a 3, read 1500 (a), so 'le tems a la Russie' (was 1300 so); R0003635 images 148-149 fetched: image 149 is the glossed continuation of Lit. A (same French gloss on the same treaty), 1083 1741 1678 stands under 'fleuve Miuss' and 'fleuve Don'. Not a blind second reading.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: the key files re-applied to the transcriptions and compared with the published texts (770 of 2,555 words depart over six texts; nothing changed, same after). Despatch of 1740: reading_sv.txt is the contemporary gloss, not the key output; of 1,387 confident cipher words 1,092 equal the key.tsv decode letter for letter, 172 differ by the clerk's spelling (till for ti-l, goda for go-de), 116 by a piece that is not the key's majority value (1825 at/att), 7 by both; the three text files rebuild byte for byte from the word pairs and key.tsv. Documents of 1741-1742: every piece of the marked_*.txt files is the key value or carries a mark; the departures are word codes rendered in French or Latin, sense guesses kept out of the keys, clear passages, about 28 words respelt without a mark in reading_*.md, and in reading_khan1742.md 18 repaired words whose marks are only in marked_khan1742.txt. No key value was missing from the key files.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking round: reading_khan1742.md marked at 28 places in 23 words (21 changed values in 16 words as {x/y}, 7 values of groups not in key_1742.tsv as [?y]), each checked against the transcription, key_1742.tsv and marked_khan1742.txt; no letter changed. Conventions stated in the headers of the five readings of 1741-1742 (word codes rendered in French or Latin, editorial accents, 28 respelt words named and left unmarked). reading_sv.txt header now says it is the contemporary decipherment, not the key output (decryption.txt). v2_score hole rate of reading_khan1742.md 0.003 before, 0.029 after. Page: two sentences on marked repairs now name the marked files.",
+   "result": "worked"
   }
  ],
  "outcome": {

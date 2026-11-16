@@ -113,6 +113,18 @@
    "kind": "reading",
    "what": "Key completed from its regular pattern and five transcription errors corrected after the measurement (declared); 32 words: 25 certain, 4 probable, 2 restored at the binding edge, 1 unresolved; 29/32 = 90.6% read by sense without the restored words.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit flag (32 of 61 words depart) checked by hand: key.tsv re-applied to transcription_0233.txt and compared with the plain column of reading_0233.md. The 32 departing words are the cipher column of the reading table (31 tokens) and the repeated 'ge' of ge[w]onnen, taken by the audit for published text; in the plain column every difference from the decrypt is marked ({Erfordensibus}, {seinen}, {ten}, {gen}, ge[w]onnen, ih[n], [T]eufel); 0 unmarked letter changes. Umlauts are printed in 4 words though the key has none (not checked on the image). No file changed except NOTES and this step.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Repair round of the decrypt audit: one header line added to reading_0233.md stating that umlauts and capitals are added in the reading and u/v printed by sense. Nothing to mark; no letter of the reading changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

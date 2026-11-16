@@ -47,6 +47,59 @@ Method: (1) transcription of the signs from the PARES images in a working notati
 
 Prior work, checked on 27 October 2026. Daniel Bourdeau’s catalogue counts the letter among the unsolved items, and his repository holds no reading of the 1520 letters (only 1522–1523). Danvila prints the letter of 23 September (deciphered) and the plain-text letter of 10 December, not this one. Searches in PARES and on the web find nothing. To our knowledge, this is the first published reading.
 
+## Decrypt audit, 16 Nov 2026
+
+The audit (`research/decrypt_audit/`) applied `key_K4.tsv` to `transcription.txt` and compared the letters with
+`reading.md`: 174 of 851 compared words depart from what the key gives, without a mark. The line readings of
+`decryption.txt` were then compared by hand-written snippet with the key, all values of each sign allowed (893 words):
+727 follow the key at its first value, 54 need the second or third value of a sign that `key_K4.tsv` declares
+polyphonic, 34 are marked ({x}, ‹x›, [x]), and 78 carry at least one unmarked letter that no value of the key gives
+(about 7 of these are sigla and clear words the snippet misaligned, so about 71).
+
+Causes, with one example each:
+
+- Audit artefact (F). The audit takes only the first value of a polyphonic sign (`b` e|h|p, `q` v|b, `X` e|p|x,
+  `F` a|l|h). 60 letters, 54 words: r26 `brwqsbr` is "proveer" with b = p, q = v, b = e; the audit reads "erouer".
+  The key file is right as it stands.
+- Unmarked emendation (B). About 59 words where the reading prints a letter that no value of the sign gives:
+  r20 `7wOg` is "cota" by the key and "cosa" in the reading (sign O = t read as s; same in r14 "dañosa", v16 "cosas");
+  r33 `7w∂` "con" printed "como"; r07 `cNdrdr` "quirir" printed "requerir"; v19 `tsZwrst` "sedores" printed "señores".
+  Most are near-identical sign shapes corrected by the word (Method, step 5), but the line readings do not mark them.
+  In addition, at 39 places 63 transcribed signs have no counterpart in the reading (r42 `Pw` "lo" in
+  "revolver lo todo" is left out; v09 `sOtZq`); two of the 39 are marked ‹…›.
+- Transcription and reading out of step (E). The transcription was not updated after the visual review of 28 Oct 2026:
+  r38 `wtSgZw` gives "osgado" (reading "holgado"), v27 `7grTs∂gP` "carzenal" ("cardenal"), v09 "necesidad", v18
+  "oficio". Lines v01-v10 are headed "first transcription, C02, sign labels of key K1"; K1 is not in the folder, and
+  there sign `U` is read o ("obispado", "oviere") while `U` is u in K4 (r03 `cUs` "que").
+- Key file incomplete (A), not repaired. Four signs of the transcription have no row in `key_K4.tsv`: `#` (r11 `g#n`
+  read "aun", r12 `7#srYF` "cuerda"), `z` (r33, r38 `Bstgzw` read "pesado"), `ı` (r32) and `'` (r12, v14). No file
+  states their values; they follow only from the reading, so nothing was added.
+- Normalisation (C). `reading.md` respells about 25 words of the line readings: h added (aze > haze, Izo > Hizo, aga >
+  haga, ara > hará, azienda > hazienda), Venavente > Benavente (3), deramase > derramase, coreo > correo, acetar >
+  aceptar (3), tenple > temple, preminencias > preeminencias. Neither file states this convention; the header of
+  `decryption.txt` says "spelling kept".
+- Clear text (D). The clear words of 1v 38-41 (<fynes>, <vra altza> ...) are in the reading and not in the cipher.
+
+Nothing was changed in the key, the transcription or the readings. The audit figure is unchanged (174 of 851) and
+would fall by roughly the 54 polyphonic words if the audit accepted every declared value. Not checked: the images, so
+whether each of the about 59 silent corrections is a transcription slip or a change to the text is not known; the
+values of `#`, `z`, `ı`, `'`; the labels of key K1.
+
+Marked on 16 Nov 2026. Each of the words listed by the alignment was checked by hand against the key output of its
+line. 59 words of `reading.md` now carry [x] round the letters the key does not give (61 brackets; whole word for
+"sostener", "algo", "necesidad"). No letter of the text was changed. Left unmarked: the 37 places where transcribed
+signs are left out of the text (there is no letter to mark); the dittography of r36-37, which `reading.md` omits;
+the respelt words (h added, Benavente, aceptar), now stated in the header; words the alignment did not flag were not
+re-read. Of the flags, "alla", "porque" (r26) and "junten" (v33) proved to follow the key and are not marked.
+Headers changed: `reading.md` (one paragraph added on the marks and the spelling), `decryption.txt` ("spelling kept"
+replaced by a statement that the line readings are not the unedited key output). The line readings of
+`decryption.txt` themselves are not marked. `v2_score.py` on `reading.md`: hole rate 0.024 before, 0.084 after (the
+score counts each word holding a bracket as a hole, and the added header paragraph is counted in the words).
+On the page, the legend "spelling of the letter kept" and the sentence on the certain words were corrected; the Spanish
+text printed on the page does not show the new marks.
+
+Placement of the marks (same day): the reading is the contributor's (Brice Dudout), so `reading.md` was put back as he gave it, with corrected header lines, and the marked text is the companion file `reading_marked.md`. Where this section says the marks are in `reading.md`, read `reading_marked.md`.
+
 ## Remaining gaps
 
 - About 21 unresolved words (marked ‹…›), one in r26 described in the notes.

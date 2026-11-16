@@ -158,6 +158,18 @@
    ],
    "what": "3598,44 transcribed and read with K4b; code words restored from the sense where noted.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key_K4b.tsv re-applied to transcription.txt and compared with reading.md by script (13 of 98 compared words depart) and by hand, line by line. Found: 200 = gen and 258 = tiempos in K4b against \"gente\" (twice) and \"tiempo\" in the reading, both settled by the held-out pair validation/291_cipher.txt / 290_plain.txt; two unmarked emendations (\"mandar\" where the key gives \"manalr\", \"negocio\" where it gives \"gocio\"); \"V. M.\" printed for 270 = vuestramagestad and b/v normalised; decryption.txt cuts valueless codes (130, 213, 149, 166, 224, 214, 210, 10) into shorter tokens. key_K4c.tsv added (K4b plus two corrected and six added values from that pair, sources in the file) and listed in outcome.key_file; no reading or decryption file changed. After: 12 of 108 words depart. The two emendations are left for a central decision.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marking round of the decrypt audit: in reading.md the two unmarked emendations bracketed without changing a letter (man[da]r, [ne]gocio), and the Conventions line extended (V. M. for code 270, b/v modernised). Hole rate (v2_score.py, text only) 0.094 before, 0.105 after. The count 115 certain / 16 restored was not redone.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -227,7 +239,10 @@
     "note": "Test material, not a reading: the transcription of 3598,291 p. 1 and the contemporary plain original 3598,290 it was scored against (0.881 of characters, 0.834 of words)."
    }
   ],
-  "key_file": "key_K4b.tsv",
+  "key_file": [
+   "key_K4b.tsv",
+   "key_K4c.tsv"
+  ],
   "provenance": "contributed",
   "validation": {
    "date": "2026-10-28",

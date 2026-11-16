@@ -39,6 +39,21 @@ Mainly Neapolitan estate business: the sequestration of San Paolo by Don Paolo R
 
 Checked 3 Nov 2026. One web search (Vittoria Gonzaga 1691 with Ruffo, San Paolo, Bisceglia) found no edition. That does not clear the letters. Nothing here is claimed as new, and `first_break` is left out of the profile. This repository has no target folder for them at head 3c777efd5; `catalogue.json` lists entry 1570 as an open lead.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py vittoria1686` re-applies `key.tsv` to `transcription_numbers.txt` and compares the letters with `reading_numbers.md`: 92 of 239 compared words depart (38%), key covering 78% of the tokens. Checked with an own read-only snippet (the folder's scripts were not run).
+
+- **The key gives the decryption.** `key.tsv` applied to `transcription_numbers.txt` gives `decryption_numbers.txt` in 37 of 37 lines.
+- **The reading is the marked source with the marks taken off.** The Italian part of `edit_numbers.txt`, with `<< >>` and the `=signs` notes removed, is `reading_numbers.md` word for word. Inside the `<< >>` number passages the 795 letters given (the printed word, or the `=signs` form where one is noted) are the 795 letters of the decrypt, in order.
+- **Cause D, clear text of the manuscript (most of the 92 words).** The phrases the key does not produce ("nessun modo", "suppl.to per Sua et amore", "Il Sig.or Marchese di Casale Nuovo", "Per amor di Dio ci compatisca, che non possiamo", "Io sono mal pensante V.E. lo sa, e cosi sto fermo" ...) are clear words of the letters, in [ ] in the transcription and outside `<< >>` in `edit_numbers.txt`. The audit drops them from the transcription and finds them only in the reading.
+- **Marked proposals and unread words, not cause B.** 26 places carry a note in `edit_numbers.txt`: 15 `[?word]` proposals (e.g. `[?sequestratore]` for `seculnorio`), 7 `[...]` (e.g. for `banatte`, `couolo`), and 4 spellings (vuole for `uuole`, S.o, S., D.). The 22 proposals and unread words are bracketed in the reading; the 4 spellings change no letter. The code words [che] (104) and [?per] (159) are in `key.tsv`. Unmarked emendations found: 0.
+- **Cause F.** The `[...]` and `[?..]` markers and the dropped clear text account for the script's "replaced" gaps (e.g. decrypt `couolo uoleua` against reading "[...] voleva").
+- **Cause E, small.** The reading prints clear words that the transcription file does not hold (c. 20r "attese a far partire Nicola che") and leaves out clear words that it does hold (11r.2, 20r.2, 21r.8 "e bene chiamo", 22v.2). The header of `reading_numbers.md` says only the nearest clear words are given.
+
+Nothing was changed in the key, the transcription or the reading. After: 92 of 239, unchanged. Not checked: any group against an image.
+
+**Marked on 16 Nov 2026.** Nothing: no unmarked departure was found and there is no page.
+
 ## Remaining gaps
 
 - Native-size re-read and a blind second pass of cc. 3v, 4r, 11r, 22r, 23r.

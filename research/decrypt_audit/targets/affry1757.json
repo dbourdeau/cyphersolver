@@ -1,0 +1,54 @@
+{
+ "folder": "affry1757",
+ "causes": {
+  "A": "key layered over three places, profile named two: key_X.tsv over key_M.json over H/M rows of read/R*_new.tsv (as measure_sense.py applies them); in R1072/R1074/R2067 59/41/36 groups take their value from key_X.tsv and 17/31/21 from inferred rows only; the audit applied key_M.json alone",
+  "D": "main cause: read/R*_reading.md are the Fagel register clear copies (contemporary decipherment, NA 1.10.29 inv. 5186/5187), stated in each file's header, not the keyed decode (kept as read/R*.md). With every value of the folder applied, 142 places / 264 of 1,030 words in the three texts still have the register's word where the figures give another: 102 keyed groups with a different value, 25 inflection endings the code does not write, 15 at valueless groups. Not marked inside the text, only summarised in the header",
+  "E": "profile listed the DECODE DOC file as transcription for R1054, R1068, R1070, R1073, R1076 although image-checked transcr/R*.txt replaced them on 27 Oct 2026",
+  "F": "key_M.json holds the literal string 'null' for 107 and 119, printed as letters; a|b doubtful groups dropped or doubled by the tokeniser; script picks one key table, never a union"
+ },
+ "before": "323 of 956 words depart (texts compared: 3)",
+ "after": "288 of 1028 on the same 3 texts; 505 of 1983 over the 8 texts now compared",
+ "files_changed": [
+  "targets/affry1757/key_merged.tsv (new)",
+  "targets/affry1757/profile.json",
+  "targets/affry1757/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "(none new)",
+   "value": "key_merged.tsv restates 803 existing values in one table: 620 key_M.json, 161 key_X.tsv, 20 inferred, nulls 105/107",
+   "source": "source column of key_merged.tsv gives file:line per row; 17 inferred-only groups with disagreeing per-letter values left out and listed at its foot"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 0,
+  "note": "no word supplied from context found; but 142 places in R1072/R1074/R2067 print the register's word against the figures with no in-text mark (declared only in the file header). Classed by script, not each checked on the scan.",
+  "examples": [
+   {
+    "text": "R1072",
+    "decrypt": "mois l italien",
+    "reading": "moi l'Angelo",
+    "where": "read/R1072_reading.md, first line of ## Reading; groups 727 582 147"
+   },
+   {
+    "text": "R1074",
+    "decrypt": "emprun... de deux (key_M) / vingt (key_X) millions; 'des gens agents si plus adroites'",
+    "reading": "des Personnes si mal adroites",
+    "where": "read/R1074_reading.md ## Reading, groups 800 160 1159 309"
+   },
+   {
+    "text": "R2067",
+    "decrypt": "cent angleterre places",
+    "reading": "les Anglois place[ront]",
+    "where": "read/R2067_reading.md; groups 388 414 765"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"A French loan of two millions had been tried in England by “des gens si maladroits”\" — the published reading (register) has \"un Emprunt de Vingt Millions\" and \"des Personnes si mal adroites\"; 675 = vingt in key_X.tsv since 21 Oct",
+  "\"The whole letter concerns “the Italian”\" — key value of group 147; the register, which the published reading follows, names him \"l'Angelo\" (not false, but the page does not say so)",
+  "\"Each letter was decrypted with the key, and the few groups missing from the key were inferred from context\" — true of read/R*.md only; the readings shown as 'Reading' are the register copies (the page lede does say clear copies were found)"
+ ],
+ "remaining": "Per place, whether a key/register difference is a wrong key value, a second value, an intercept-copy slip or a clerk's slip is not settled. The seven other register-based readings not gone through place by place. R1064 and R1067 still not compared by the script (reason not looked into). Register scans not re-opened (no network). Decision needed: profile method says letters were 'read with' the rebuilt key while the published readings are a contemporary decipherment; and whether figure/register differences should be marked in the reading text.",
+ "confidence": "high"
+}

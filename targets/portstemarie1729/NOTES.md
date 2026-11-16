@@ -66,6 +66,42 @@ glosses are not in this folder's pairs_*.tsv, so they are not counted here. If t
 are as newcastle1729 reads them, 119 of 141 would be valued (0.844); folding in 84, 816 and 666 as well would give about 122
 (0.865): not the bar either way.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` applies `texts/key.md` to `texts/p5_transcription.txt` and compares the letters with `texts/p5_reading.md`.
+First run: 13 of 81 compared words depart (16%). After the change below: 7 of 83 (8%).
+
+Causes found:
+
+- Audit artefact (6 of the 13 words). The value column of `texts/key.md` carried remarks on the 16 inferred rows
+  ("[?fe] (inferred, 0 attestations)", "[?separator] (position only, 0 glossed here)"), and the script took the remark for
+  letters of the value. Repair: `texts/key.md` now has a fourth column `note`; the value column holds the value only, and
+  1250 has the value "—" (nothing printed). No value was added or changed; the 364 glossed and 15 inferred values are as before.
+- Unmarked emendation, 4 words, all on glossed groups, none bracketed in the reading:
+  - "adresse": 21 945 1017 give ad-ri-ser (945 "ri" three times in pairs_B.tsv, 1017 "ser"/"se" in pairs_A.tsv); the reading prints "adresse".
+  - "[?fe]rez": 945 gives "ri"; the reading prints "rez".
+  - "sçavoir": 1038 is glossed "sçavoi" (pairs_A.tsv, 60907 l. 6) and the next group is 208 comme; the final r is supplied.
+  - "Mandez": 694 282 give man-des (282 is glossed "des" and "de"); the reading prints z.
+  943 "re" and 945 "ri" differ by one digit and pairs_B.tsv already carries "re (read 945?)" at 60920 l. 1, so the groups read 945 on
+  p. 5 may be 943, or the gloss "ri" may be a misreading of "re"; this was not checked on the image.
+- Not seen by the script: on line 7, group 1019 (glossed "se"/"sse") stands between 282 des and 711; the reading prints
+  "des [?maine]s" where the groups give "des se[?maine]s". Method step 4 above has it right ("se-maine-s"); the syllable "se" is missing from the reading file.
+- Normalisation, 2 words: "Keene" for 647 756 Ken-ne; "accommodement" for 46, whose two glosses are "accomodement" and
+  "accommodement" (the script takes the first).
+
+Not changed: the reading, decryption and translation files. The five cases above (four emended words and the dropped "se")
+are reported to the audit for a central decision. Nothing else in the 141 groups is unexplained.
+
+Marked on 16 Nov 2026. In `texts/p5_reading.md` four words now carry [ ] round the letters the glosses do not give:
+adr[es]se, [?fe]r[ez], sçavoi[r], Mande[z]. No letter of the text was changed. Left unmarked: the syllable "se" of group 1019
+before "[?maine]s", because marking it would mean adding letters; the header now says the group is not printed. Header: the
+sentence "Everything else carries a value glossed in the sibling letters" now names the four exceptions, the unprinted group
+and the two normalised spellings (Keene, accommodement). The copy of the reading in the `## Reading` section above was not
+changed. On the page (`docs/portstemarie1729.html`) the same four marks were put in the quoted reading and the sentence on
+brackets now mentions supplied letters; the file header shown lower on the page is in a generated block and follows the file
+at the next build. The audit script now gives 4 of 83 words. `v2_score.py` hole rate: whole file 0.199 before, 0.193 after
+(the header is scored with the text); the reading line alone 0.259 before, 0.286 after. The profile figures were not changed.
+
 ## Remaining gaps
 
 - 18 tokens (15 codes) filled from context only, counted as holes: 805 obligation, 585 ig (2), 275 dans (2), 222 conduite, 816 ordre (2), 666 lu, 1118 (trouver or tain, see above), 689 m, 460 fe, 84 apres, 1152 vos, 1210 six, 285 di, 711 maine, and 1250 as separator - blocker: open-codes; none is glossed in the siblings transcribed here; the duplicate folder finds glosses for 84 and 816 in other letters (not re-checked on the images), for 275 and 666 by reading a digit differently or from a blotted group, and none for the others

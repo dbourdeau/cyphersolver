@@ -359,7 +359,11 @@
    "result": "failed"
   },
   {
-   "kind": "statistics", "technique": ["frequency analysis", "repeat/pattern analysis"],
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
    "what": "Digit counts, successor table, 2- and 3-figure phase IC on the DECODE transcriptions: no fixed period; long exact repeats show a fixed code.",
    "result": "partial"
   },
@@ -369,22 +373,41 @@
    "result": "worked"
   },
   {
-   "kind": "hypothesis", "technique": ["EM alignment", "beam/DP decoding", "frequency analysis"],
+   "kind": "hypothesis",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding",
+    "frequency analysis"
+   ],
    "what": "Mixed 1/2/3-figure group rules by first digit scored by entropy; EM segmentation of 1-4-figure tokens.",
    "result": "failed"
   },
   {
-   "kind": "statistics", "technique": ["EM alignment", "beam/DP decoding", "frequency analysis"],
+   "kind": "statistics",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding",
+    "frequency analysis"
+   ],
    "what": "Removing 5 and 8 as single-figure nulls restores a clean 2-figure phase (IC 0.027 vs 0.021; 4-figure 0.155/0.161 vs 0.103); Viterbi realignment gives a table of about 60 two-figure codes.",
    "result": "worked"
   },
   {
-   "kind": "solver", "technique": ["hill climbing", "language-model scoring", "contextual inference"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring",
+    "contextual inference"
+   ],
    "what": "Homophonic letter solver (quadgram coordinate ascent, validated 98% on synthetic French through the same pipeline) in French, German, Dutch, Italian, word-reversed French, with nulls, syllable values or merged look-alike figures.",
    "result": "failed"
   },
   {
-   "kind": "crib", "technique": ["crib testing", "repeat/pattern analysis"],
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "repeat/pattern analysis"
+   ],
    "what": "Pattern cribs for long repeats (guerre, Angleterre) seeded into the solver.",
    "result": "failed"
   },
@@ -394,7 +417,10 @@
    "result": "worked"
   },
   {
-   "kind": "solver", "technique": ["simulated annealing"],
+   "kind": "solver",
+   "technique": [
+    "simulated annealing"
+   ],
    "what": "Simulated annealing over one-to-one assignments of the codes onto the 1761 vocabulary, char-4-gram score; seeds 22 and 24 converged to the same key (-3.85/letter).",
    "result": "worked"
   },
@@ -414,26 +440,139 @@
    "what": "Four slips of normalisation in the reading files and write-up, reported while quotations were pulled for Lasry's list, re-checked group by group in cipher/R*.txt with key.json and the machine decryptions, and corrected: R1043 'parce qu'on craint qu'il n'y ait des articles secrets qui aillent encore plus loin' (was 'croit qu'il y a ... qui vont') and 'l'on a fait aussi' (was 'dit'); R2080 'treize mille hommes' (29 03 14 77 16, confirmed on the image; was 'trente', so the augmentation of the verification step above is 13,000, not 30,000) and 'pour combatre' (66 = pour; was 'et combattre').",
    "result": "worked"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 8509 tokens, 60 types, fr-modern order 4: reading -2.364 per letter; random keys -5.279 (z 10.0); key annealed onto shuffled ciphertext best -3.522 (mean -3.531, z 107.9); annealer on the real text -2.403. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher/R*.txt with the hand readings read/R*.txt and the machine readings read/machine_R*.txt; key key.json.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the ten hand readings read; nine build French sentences (A); read/R1954.txt (about 65% read on a weak transcription) has holes in most sentences (D confirmed). R1954 relabelled decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81 (groups in letters that read).", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-23", "kind": "transcription", "technique": ["language-model scoring", "beam/DP decoding", "manual reconstruction"], "what": "Re-read (REREAD_BRIEF, b29): R1954 has four images and no attachment on DECODE. The 314 digits marked uncertain in trans/R1954.txt resolved by a French 5-gram beam over look-alike pairs (5/7, 8/9, 4/11, 1/7, 0/6), pair phase and stray digits (research/reading_audit/b29_kd_beam.py), the alternative taken at 137 places; seven places re-read on the rotated images and corrected (trans/R1954_b29_corrections.tsv: l'inpossible, Yorcke, egards, deux objets, six mille hommes, de la proteger). Working file trans/R1954_b29.txt.", "result": "partial"},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["manual reconstruction", "contextual inference"], "what": "Partial reading read/R1954_partial_reading.md and English read/R1954_en.md: 0.549 clean sentences (28/51), explicit holes 0.725; 195 letters rest on a look-alike alternative; key unchanged (21 = inte, 07 = au, 41 = on flagged as sense-only). The d'Affry clause on f. 2 and most of f. 4 do not build: stays decoded, not read.", "result": "failed"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Verification 5 (plain-bar rows): R2078, R1958, R2079, R1043 had been scored on read/R*.txt with headings, English summaries of the clear passages and key notes. French cipher texts written out alone (read/R*_reading.md): plain 0.618/0.647/0.75/0.6, explicit 0.794/0.882/0.938/0.68. All keep read; R1043 is at the bar (unread name codes).", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Consistency pass (cl): outcome.key was missing; set to recovered (the 1754-58 table was recovered by annealing, key.json; only 10, 20, 40, 90 guessed, 12 occurrences). The clear sigla are names, not key gaps.", "result": "worked", "technique": ["statistical test"]},
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 9 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 8509 tokens, 60 types, fr-modern order 4: reading -2.364 per letter; random keys -5.279 (z 10.0); key annealed onto shuffled ciphertext best -3.522 (mean -3.531, z 107.9); annealer on the real text -2.403. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): cipher/R*.txt with the hand readings read/R*.txt and the machine readings read/machine_R*.txt; key key.json.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): the ten hand readings read; nine build French sentences (A); read/R1954.txt (about 65% read on a weak transcription) has holes in most sentences (D confirmed). R1954 relabelled decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81 (groups in letters that read).",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "transcription",
+   "technique": [
+    "language-model scoring",
+    "beam/DP decoding",
+    "manual reconstruction"
+   ],
+   "what": "Re-read (REREAD_BRIEF, b29): R1954 has four images and no attachment on DECODE. The 314 digits marked uncertain in trans/R1954.txt resolved by a French 5-gram beam over look-alike pairs (5/7, 8/9, 4/11, 1/7, 0/6), pair phase and stray digits (research/reading_audit/b29_kd_beam.py), the alternative taken at 137 places; seven places re-read on the rotated images and corrected (trans/R1954_b29_corrections.tsv: l'inpossible, Yorcke, egards, deux objets, six mille hommes, de la proteger). Working file trans/R1954_b29.txt.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Partial reading read/R1954_partial_reading.md and English read/R1954_en.md: 0.549 clean sentences (28/51), explicit holes 0.725; 195 letters rest on a look-alike alternative; key unchanged (21 = inte, 07 = au, 41 = on flagged as sense-only). The d'Affry clause on f. 2 and most of f. 4 do not build: stays decoded, not read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Verification 5 (plain-bar rows): R2078, R1958, R2079, R1043 had been scored on read/R*.txt with headings, English summaries of the clear passages and key notes. French cipher texts written out alone (read/R*_reading.md): plain 0.618/0.647/0.75/0.6, explicit 0.794/0.882/0.938/0.68. All keep read; R1043 is at the bar (unread name codes).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "what": "Consistency pass (cl): outcome.key was missing; set to recovered (the 1754-58 table was recovered by annealing, key.json; only 10, 20, 40, 90 guessed, 12 occurrences). The clear sigla are names, not key gaps.",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 2 of 9 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.json applied to cipher/R*.txt reproduces read/machine_R*.txt exactly in all ten letters, so the key file is the key used. In the nine letters that read, 291 of 2,044 words of the hand readings differ from the machine decryption: about 240 are letters changed in the reading without a mark (garbled groups and look-alike figures of the transcription put right in the reading only), about 50 are normalised spellings (doubled consonants, in printed im, final z printed s). Code 49 (sa in key.json) is printed per at five of its ten uses and fits per at two more; code 13 (y) is also read re twice; key.json left unchanged. R1954: the partial reading follows trans/R1954_b29.txt while cipher/R1954.txt is the September transcription (121 of 533 words differ against the first, 37 against the second). No file changed except NOTES.md and this step.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marks for the decrypt audit: mark_emendations.py aligns the nine read/R*_reading.md with read/machine_R*.txt and brackets every letter the key does not give: 211 places in 202 of 2,044 words; no letter changed. 378 letters of the machine decryptions that the readings leave out are listed in emendations.tsv. R1954 and read/R*.txt not marked. Hole rates (v2_score) rise from 0.015-0.096 to 0.052-0.200: all nine letters are over 0.05; state, read_share and class left as they were.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "fr-modern", "file": "validation.tsv", "tokens": 8509, "types": 60, "tokens_per_type": 141.82, "score": -2.364, "nulls": {"random keys": {"n": 200, "mean": -5.279, "sd": 0.292, "max": -4.589, "z": 10.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.531, "sd": 0.011, "max": -3.522, "z": 107.9, "p": 0.1429}}, "power": -2.403, "verdict": "pass", "notes": "claimed per-occurrence score -2.286; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.403"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "fr-modern",
+   "file": "validation.tsv",
+   "tokens": 8509,
+   "types": 60,
+   "tokens_per_type": 141.82,
+   "score": -2.364,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -5.279,
+     "sd": 0.292,
+     "max": -4.589,
+     "z": 10.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.531,
+     "sd": 0.011,
+     "max": -3.522,
+     "z": 107.9,
+     "p": 0.1429
+    }
+   },
+   "power": -2.403,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.286; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.403"
+  },
   "method": "key recovered from ciphertext-only",
   "method_basis": "Nulls and the two-figure code table were found by statistics, and the code values were recovered by simulated annealing onto the plaintext vocabulary (letters and syllables) of Kauderbach's 1761 key (DECODE R936), whose numbers do not fit this 1754-58 table.",
-  "contribution": ["transcription", "key recovered"],
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
   "class": "read in part",
   "fraction_read": 0.81,
   "grades": "unknown",
-  "verification": ["historical consistency", "key confirms", "statistical test"],
+  "verification": [
+   "historical consistency",
+   "key confirms",
+   "statistical test"
+  ],
   "notes": "fraction_read = share of the 8,512 groups carrying a key value (only 10, 20, 40, 90 guessed, 12 occurrences). Readers estimate 65-97% of the text read in sense per letter; R1954 weakest; the clear sigla are read from context only. 22 Oct 2026, reading audit: R1954 decoded, not read; class read -> read in part; fraction_read 0.998 -> 0.81.",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "Kauderbach's 1761 key (HStAD, DECODE R936) used for its plaintext vocabulary; numbers do not fit"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Kauderbach's 1761 key (HStAD, DECODE R936) used for its plaintext vocabulary; numbers do not fit"
+   }
   ],
   "texts": [
    {
@@ -573,7 +712,10 @@
    {
     "doc": "R1954",
     "label": "R1954, March 1756 (with N.21 of 16 March 1756)",
-    "transcription": ["cipher/R1954.txt", "trans/R1954_b29.txt"],
+    "transcription": [
+     "cipher/R1954.txt",
+     "trans/R1954_b29.txt"
+    ],
     "decryption": [
      "read/R1954.txt",
      "read/machine_R1954.txt",

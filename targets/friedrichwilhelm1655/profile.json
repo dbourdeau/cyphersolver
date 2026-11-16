@@ -393,13 +393,19 @@
    "result": "partial"
   },
   {
-    "date": "2026-11-16",
-    "kind": "verification",
-    "technique": [
-      "manual reconstruction"
-    ],
-    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the marked reading of each document aligned line by line with its transcription (clear words in double quotes left out; clear letters joined to a run counted as a cipher word; a word broken across a line counted once); repairs, fills, guesses and holes not read, an empty binding mark read. Result: c793 0.909 -> 0.850 (142/167), ps797 0.938 -> 0.857 (72/84), ps717 0.958 -> 0.955 (63/66, stays read), l819 0.969 -> 0.944 (34/36, read -> read in part: its two slips have no period key), w787 0.934 -> 0.761 (35/46), w813 0.889 -> 0.877 (50/57); all six 704/760 (0.926, clear included) -> 396/456 (0.868); class read in part unchanged; gap added for the slips.",
-    "result": "worked"
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the marked reading of each document aligned line by line with its transcription (clear words in double quotes left out; clear letters joined to a run counted as a cipher word; a word broken across a line counted once); repairs, fills, guesses and holes not read, an empty binding mark read. Result: c793 0.909 -> 0.850 (142/167), ps797 0.938 -> 0.857 (72/84), ps717 0.958 -> 0.955 (63/66, stays read), l819 0.969 -> 0.944 (34/36, read -> read in part: its two slips have no period key), w787 0.934 -> 0.761 (35/46), w813 0.889 -> 0.877 (50/57); all six 704/760 (0.926, clear included) -> 396/456 (0.868); class read in part unchanged; gap added for the slips.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the script flagged 132 of 410 words in four texts. Causes: clear words quoted in the transcriptions and copied by scripts/decrypt.py but not produced by the key, the stated uu = w convention, the scan order 793/795/794 of transcription_c793.txt against 793/794/795 in the reading, and each reading file holding the text twice. Re-checked with a read-only snippet: the six decryption files rebuild identically from transcription and key.tsv; all 148 marked lines resolve to the mechanical decryption; the sentence text equals the reading side of the marked block. Unmarked departures: 0. Nothing changed. The scans were not re-opened.",
+   "result": "worked"
   }
  ],
  "outcome": {

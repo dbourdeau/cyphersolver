@@ -98,6 +98,27 @@ the First Chief; the key itself is not on the scan (Brice Dudout's note of 29 Oc
 named key is not known.
 Narváez 2019 and 2025 and M. W. González, *Con Carranza*, were not read (see `targets/murguia1914/NOTES.md`).
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key.tsv` to `transcription_LXVIII-1.7.890.1.txt` and compared the letters with
+`reading_LXVIII-1.7.890.1.md`. It reported 12 of 65 words departing, each time an m present in the reading and absent
+from the decrypt.
+
+- Cause, audit artefact (all 12): the reading file has no `## Reading` heading, so the audit takes the whole file,
+  and the run labels `M01` to `M16` of its section "Coded runs" are read as a letter m in front of each run
+  ("...al enemigo" + "M05" + "en lampazos" compared with the decrypt "alenemigoenlampazos"). No m is missing from
+  the key: 59 is m, and Lampazos, enemigo, próximo, debemos and domingo decrypt with it.
+- Checked here with an own decoder written from `key.tsv`: the sixteen runs decrypt to exactly the sixteen lines of
+  `decryption_LXVIII-1.7.890.1.txt`, and to the sixteen lines of "Coded runs" in the reading, accents folded, with
+  the two marked exceptions already recorded, `{eln/[?]}` in M01 and `l{o/a}s` in M15. The capitals of the prose
+  reading hold the same words. No unmarked change was found.
+- With the labels `M01 |` to `M16 |` removed from a scratch copy of the reading, the audit gives 0 of 54 words
+  departing. In the folder itself nothing was changed but this section and one step in `profile.json`; the audit's
+  own figure stays 12 of 65 until it skips such labels.
+- Noted, not changed: the `source` column of `key.tsv` says "fit" for 57 ll and 77 v with the fit's other value in
+  parentheses; "Key recovery" above says these two cells and 79 x were set by reading.
+- Not checked: the scan (the audit compares files only).
+
 ## Remaining gaps
 
 - M01, the three groups before A REUNIRSE ("eln") - blocker: too-short. The three typed groups are legible (45-55-52) and

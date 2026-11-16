@@ -68,6 +68,28 @@ came from the rule scorer. Place of printing: Strassburg (today France). Status 
 long inscriptions and the crcsite edition reads the sign lines. Cipher type is simple substitution (plus two symbolic
 date lines), not "unknown". Queued in `decode_updates/queue.json`.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit` re-applied `key.tsv` to `ciphertext.txt` and compared the letters with
+`texts/R4502_reading.md`: 8 of 42 words depart (19%), three gaps, all "only in reading".
+
+- Cause, clear text and labels (all 8 words): *Venus* and *hohen* are printed in Roman capitals over the cipher line on
+  p. 95 and are not enciphered (stated in `ciphertext.txt`, in the reading's header and above), and the reading file
+  carries the label "p. 97, the tablet behind Venus's bed:" between the two inscriptions. The audit counts these as
+  letters the key does not give.
+- Check made here: `key.tsv` applied to `ciphertext.txt` sign by sign gives `reading.txt` exactly (168 letters, 78 + 90),
+  and `texts/R4502_reading.md` differs from `reading.txt` only by the two clear words, word division, capitals and
+  punctuation. No letter is changed or supplied; no value is missing from the key (21 stand-in signs, all in `key.tsv`).
+- Nothing was changed in the key, the transcription or the readings. Figures after: the same, 8 of 42.
+- Not an audit matter, found on the way: `texts/R4502_decryption.md` says "copied verbatim from NOTES.md" but gives the
+  two inscriptions as 70 and 86 letters; the measured counts, and this file, are 78 and 90. The table above and that
+  file print VOLLENDS, VERSCHMELZEN and SCHON[E] where the key gives UOLLENDS, UERSCHMELZEN and SCHON (U and V share a
+  sign; the E is supplied and bracketed). Left as they are: the wording of reading files is not changed in this pass.
+
+Marked on 16 Nov 2026: nothing to mark (no departure from the key). `texts/R4502_decryption.md`: the two letter
+counts in its table corrected from 70 and 86 to 78 and 90, as measured and as in the table above; no word changed.
+The page's Full texts block is generated from that file and still shows the old counts until the next build.
+
 ## Remaining gaps
 
 - p. 73 and p. 116 sign lines, individual numeral signs - blocker: too-short; each is a one-off symbolic date of about 10 signs and fits the edition's reading (1378, 1459) as a whole, but no second example exists to fix the value of each sign

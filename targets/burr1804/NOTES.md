@@ -11,7 +11,7 @@ Status: read. Key recovered from the ciphertext alone (simple substitution, 132 
   so it was written between 18 and 21 July 1804, before Burr left New York on the 21st.
 - Images: Hamilton Education Program, https://hamilton.gilderlehrman.org/supporting-document/burrs-coded-letter-about-duel-1804
   (`GLC01523_Page_3.png` is this page, 1200x1400); Google Arts & Culture asset `_AHwqSQ7laubpw`. Images not committed.
-- The page is in clear except ten lines (lines 15-21 here) in a cipher of figures and hatched stroke signs, with
+- The page is in clear except seven lines (lines 15-21 here) in a cipher of figures and hatched stroke signs, with
   clear words between ("made of more", "The advice comes with double force", "being about 20,000", "To").
 - Gilder Lehrman's catalogue says "The second and third pages are in cypher" and the Hamilton page says "The cyphered
   part of the letter has not yet been decoded". The "second and third pages" are two sheets of number cipher filed
@@ -58,6 +58,35 @@ Measured: 132 cipher signs, 132 read (100%). One word is uncertain: "pleant" (V 
   indexed. Tomokiyo's cryptiana has Burr only for the 1806 Entick code. Not on DECODE.
 - So the reading is new unless Kline's volume 2 annotation quotes it; the July 1804 section of vol. 2 (pp. 876-889)
   was not read.
+
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` flagged the one text: 14 of 39 words depart from the mechanical decrypt, 5 places
+unmarked. All are artefacts of the script or clear text; the key and the reading stand.
+
+- Clear words. `transcription.txt` gives Burr's clear words in quotation marks between the cipher words ("made of
+  more", "The advice comes with double force", "The", "being about 20,000", "To", "To"); the reading prints them, the
+  key does not produce them. Example: decrypt "than m[...]self l-ittle band", reading "than myself. The advice comes
+  with double force. The little band".
+- Tokenising. The script splits the sign "(-)" (y) at the hyphen and does not know the starred signs "II*" and "VII*"
+  of line 19, so it loses the y of "you" (twice) and "myself" and reads "murder" as "ude".
+- `signs.txt` and `validation.tsv` write the barred circle as "Ø", `key.tsv` and `transcription.txt` as "(-)". One sign,
+  two labels; not changed.
+
+Checked by hand (own snippet, nothing rewritten): the 132 cipher signs of `transcription.txt` (clear words, the
+struck word and punctuation left out) are the 132 tokens of `signs.txt`, 21 distinct signs, all in `key.tsv`; decoded
+they give letter for letter the cipher words of `decryption.txt` and `reading.md`, and the 132 rows of
+`validation.tsv`. No letter of the reading departs from the key. "pl[e]ant" brackets the letter the key gives (the
+e-sign), not a supplied letter.
+
+Changed: nothing but this section and the profile step. The figures of the script are the same after (14 of 39).
+
+Not checked: the transcription against the image (not available in this session; no network).
+
+Marked on 16 Nov 2026: nothing marked, no reading or header changed (no word departs from the key). Corrected from
+`transcription.txt`, which has seven labelled cipher lines (img3.15 to img3.21): "ten lines" to "seven lines" in The
+document above and in the At a glance box of `docs/burr1804.html`. The page's two description meta tags in its head
+still say "ten lines"; the head was outside the limits of this repair. The count was not checked on the image.
 
 ## Remaining gaps
 

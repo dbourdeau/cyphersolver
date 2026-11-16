@@ -1,0 +1,125 @@
+{
+ "folder": "lopehurtado1523",
+ "causes": {
+  "A": "7 values used in the readings but in no key file: zm como, ʃeg tengo, zub alla, m̶ = c beside f, m̶ʒ = ch, tef = paz beside nec-, yun as spelling of ɣun (fran-)",
+  "B": "R9867: 9 words changed with no mark and no row in R9867_corrections.tsv (5 are r>a/ha, the ʇʇ/ß look-alike); R9866: at least 1 seen (vencidos), not counted",
+  "C": "R9867: rab 'vuestra magestad' printed 'V. Mt.' (6 times); fran-+es printed 'franceses'; Mussiur x2 and necessidad with doubled s",
+  "D": "R9866: clear text between the cipher runs accounts for many sampled gaps; […] hides decoded fragments in R9867",
+  "E": "transcriptions not updated after the 22 Oct re-read; the changes are only in <doc>_corrections.tsv (R9867: 8 rows, 2 of them letter changes followed unmarked in the reading: l07 ha, l17 alargar; R9866: 22 rows)",
+  "F": "7 key annotations with a comma or slash inside brackets parsed as value ('c (letter, standing alone)' > 'cletter', 'Magestad (su xun = su Mt, ...)', 'mu (syllable; mui, mudado)', 'dinero (+r/c = dineros)', 'a (letter; word a/ha)')"
+ },
+ "before": "20 of 159 words depart (texts compared: 1, R9867)",
+ "after": "R9867 17 of 171 words depart; R9866 newly comparable, 74 of 187 words depart (texts compared: 2; 91 of 358)",
+ "files_changed": [
+  "targets/lopehurtado1523/key_1524.tsv",
+  "targets/lopehurtado1523/key_retry.tsv",
+  "targets/lopehurtado1523/key_merged.tsv",
+  "targets/lopehurtado1523/key_reread_2026-10-22.tsv",
+  "targets/lopehurtado1523/NOTES.md",
+  "targets/lopehurtado1523/profile.json"
+ ],
+ "key_values_added": [
+  {
+   "sign": "zm",
+   "value": "como (probable)",
+   "source": "R9667-R9869_reread_log.md:43"
+  },
+  {
+   "sign": "ʃeg",
+   "value": "tengo (probable)",
+   "source": "R9667-R9869_reread_log.md:45"
+  },
+  {
+   "sign": "zub",
+   "value": "alla (probable)",
+   "source": "R9667-R9869_reread_log.md:46"
+  },
+  {
+   "sign": "yun",
+   "value": "fran- (franceses)",
+   "source": "key_merged.tsv row ɣun; decode_merged.py load_key y/ɣ alias"
+  },
+  {
+   "sign": "m̶",
+   "value": "c, second value beside f (probable)",
+   "source": "R9667-R9869_reread_log.md:35; read_r9866.md:164; R9866_corrections.tsv"
+  },
+  {
+   "sign": "m̶ʒ",
+   "value": "ch (probable)",
+   "source": "R9667-R9869_reread_log.md:35; R9866_corrections.tsv rows R5 l16, R11 l11"
+  },
+  {
+   "sign": "tef",
+   "value": "paz, second value beside nec- (probable)",
+   "source": "key_retry.tsv rows ʃom and ti; key_merged.tsv row tef conflicts column"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 9,
+  "examples": [
+   {
+    "text": "R9867",
+    "decrypt": "le r dicho",
+    "reading": "le ha dicho",
+    "where": "r9867_cipher.txt l02; R9867_reading.md:11"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "mostar",
+    "reading": "mostrar",
+    "where": "l10; R9867_reading.md:17"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "de reure",
+    "reading": "de Beure",
+    "where": "l15-16; R9867_reading.md:20"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "[xal] r V. Mt.",
+    "reading": "[…] a V. Mt.",
+    "where": "l16; R9867_reading.md:20"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "aqui es-cusado",
+    "reading": "aqui es escusado",
+    "where": "l17; R9867_reading.md:21"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "dizi-r",
+    "reading": "dezir",
+    "where": "l19; R9867_reading.md:22"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "aqui r delante",
+    "reading": "aqui adelante",
+    "where": "l20; R9867_reading.md:24"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "me lo r mandado",
+    "reading": "me lo a mandado",
+    "where": "l21; R9867_reading.md:24"
+   },
+   {
+    "text": "R9867",
+    "decrypt": "a l-uatro",
+    "reading": "a quatro",
+    "where": "l24 (sign conflict noted in the cipher file only); R9867_reading.md:27"
+   }
+  ],
+  "note": "count is for R9867 only; also followed without a mark but documented in R9867_corrections.tsv: l07 'les ha de hazer', l17 'alargar'. R9866: 'vencidos' from p-e-n-c-i-d-o-s (texts/R9866_transcription.md R9 l6) seen, rest not counted."
+ },
+ "page_statements_false": [
+  "\"look-alike signs resolved word by word, corrections in <code translate=\\\"no\\\">&lt;record&gt;_corrections.tsv</code>\" (docs/lopehurtado1523.html line 129) — R9867_corrections.tsv has 8 rows; 9 further letter changes in the R9867 reading have no row",
+  "\"Every word below is in cipher; `[?word]` partly carried by the figures, `[word]` supplied\" (embedded R9867 reading header, line 1590) — 9 words carry an unbracketed letter the figures as transcribed do not give",
+  "Not false: '105 values, 65 confirmed' and '175 entries' match key_1524.tsv and key_merged.tsv"
+ ],
+ "remaining": "R9866 not checked word by word (40% is a mix of clear text, corrections-table re-reads, m̶=c, tef=paz and some unmarked changes); R9868, R9869, R9683, R9667, R9695 not checked. The transcriptions were not brought up to the 22 Oct re-read (the brief does not allow rewriting them here); key_reread_2026-10-22.tsv is not merged into key_merged.tsv because that needs decode_merged.py --build. Whether the r>a look-alike re-reads are emendations or transcription corrections needs the images, not looked at.",
+ "confidence": "medium"
+}

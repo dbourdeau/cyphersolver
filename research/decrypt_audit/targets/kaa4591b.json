@@ -1,0 +1,64 @@
+{
+ "folder": "kaa4591b",
+ "causes": {
+  "A": "R9403: all 202 departing words (83 gaps) are e/r; the letter's table (AST = e, X = r) was only in the KEY dict of r9403/build.py, not in sysB/key_from_glosses.tsv (X = e, AST = r). Written out as r9403/key_r9403.tsv.",
+  "B": "R9322: 1 unmarked emendation (signs 'principis', reading 'princeps').",
+  "C": "R9322: 2 unmarked completions of words cut at a line end (signs 'illustriss' and 'illus', reading 'illustrissime' twice).",
+  "E": "R9403: r9403/transcription.tsv and signs.txt are not a transcription from the image; build.py generated the sign codes from the reading with the same table, so the comparison is circular (0 departures by construction).",
+  "F": "R9322: 3 of the 6 flagged words are audit artefacts (tokens 'M~' and 'U2=' dropped; a marked hole '[...] in')."
+ },
+ "before": "208 of 741 words depart (texts compared: 2; R9322 6 of 383, R9403 202 of 358)",
+ "after": "6 of 799 words depart (texts compared: 2; R9322 6 of 383, R9403 0 of 416)",
+ "files_changed": [
+  "targets/kaa4591b/r9403/key_r9403.tsv (new)",
+  "targets/kaa4591b/profile.json",
+  "targets/kaa4591b/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "AST",
+   "value": "e (R9403 table)",
+   "source": "r9403/build.py:6-7; NOTES 'The key (System B)'"
+  },
+  {
+   "sign": "X",
+   "value": "r (R9403 table)",
+   "source": "r9403/build.py:6-7; NOTES 'The key (System B)'"
+  },
+  {
+   "sign": "18 other signs (3 O+ U2 OD N O M HH W D EQ 9 B Z Q EQs H XH)",
+   "value": "same as key_from_glosses.tsv",
+   "source": "r9403/build.py:6-7"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 3,
+  "examples": [
+   {
+    "text": "R9322",
+    "decrypt": "illustriss / dominacionis",
+    "reading": "illustrissime dominacionis",
+    "where": "sysB/R9322_reading.md:13-14 (signs: R9322_p1.tsv l.2-3)"
+   },
+   {
+    "text": "R9322",
+    "decrypt": "illus / dominacioni",
+    "reading": "illustrissime dominacioni",
+    "where": "sysB/R9322_reading.md:14 (signs: R9322_p1.tsv l.3-4)"
+   },
+   {
+    "text": "R9322",
+    "decrypt": "principis frater",
+    "reading": "princeps, frater",
+    "where": "sysB/R9322_reading.md:37 (signs: R9322_p2.tsv l.3)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"In R9403 the starred x is e and the plain x is r, the reverse of the glossed letters\" — the folder's own 23 Oct re-reading (sysB/R9417-R9323_reread_log.md) says the gloss on R9417 fixes plain x = r, starred x = e, and R9323_reading.md says the same for R9323; so R9403 is not the reverse of 'the glossed letters', at most of R9322. Already inconsistent before this audit.",
+  "\"The key was recovered from the contemporary interlinear glosses on two of them and deciphers all four\" (meta description) — the published key file alone did not regenerate R9403; and the same sentence still says '1,184 of 1,243 words (95.3%) are deciphered', a figure NOTES withdrew on 22 Oct.",
+  "\"Full texts The transcription and the decryption of every document on this page, so that the reading can be used and checked\" — for R9403 the 'transcription' is generated from the reading (the page does reproduce the header line saying so), so it cannot check the reading."
+ ],
+ "remaining": "Whether R9322 really uses X = e / AST = r while R9417, R9323 and R9403 use the reverse, or R9322's two crosses were coded the other way round: not checked at the image (no network). R9417 and R9323 were not compared by the audit and were not examined here beyond their logs. No independent transcription of R9403 exists in the folder. profile.json was re-dumped with indent=1, which reflowed some inline arrays (115 insertions, 12 deletions, content otherwise unchanged apart from key_file and the new step).",
+ "confidence": "high for the cause and the repair; medium on the X/AST question across letters"
+}

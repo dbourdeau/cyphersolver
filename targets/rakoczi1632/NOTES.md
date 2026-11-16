@@ -82,6 +82,34 @@ person if needed, to make no peace without his knowledge and consent, and, shoul
 defence of his heirs. Context: George I Rákóczi's approaches to Gustavus Adolphus in 1631-32 (the mission of the
 Swedish envoy Paul Strassburg to Transylvania, 1631-33).
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key.tsv` to `transcription_f491r.txt` and compared the letters with
+`reading_f491r.md`: 49 of 93 words depart (53%), key cover 83%.
+
+Causes, checked with a read-only snippet that repeats the rules of `scripts/check_marks.py` without writing:
+
+- Clear Latin of the manuscript. The page has 78 clear words between the cipher words and the transcription carries
+  them; the audit's tokeniser dropped them and then found them "only in the reading". Example: "in pace ex Dei
+  providentia" (line 4). The 78 clear words of the transcription and the non-bold words of the reading are the same,
+  in the same order.
+- Audit artefacts. (a) 28 and 76 have two values in `key.tsv` (d/i, d/o); the audit took the first, so *perveniens*
+  came out "peruendenr" and *requisiverint* "reqisiuerdnt". (b) The 11 gloss readings are marked `<word>` in the
+  reading; the audit counts only square brackets as marks. Example: `<coniungamus>`, key *constrgamus*.
+  (c) The 17% of tokens "not covered" are the clear words and the three code groups, which the key file holds as
+  whole entries (217.11.99, 218.88, 307.38).
+- Stated convention: u after q is not written (System). *quo*, *requisiverint*, *substantiasque* have a u that no
+  group gives.
+
+Result of the check: of the 69 cipher words, the 54 printed plain are given by `key.tsv` (either value allowed for 28
+and 76); 11 are marked `<...>` and the key does not give them; 3 are marked `[?...]`; 1 is `[...]`. The bold words of
+`reading_f491r.md` are the `reading` column of `words_f491r.tsv` in order (case and the join `[?de]fensionem`
+apart). No unmarked emendation was found.
+
+Changed: nothing. The key file holds every value the reading uses. Figures after: the same, 49 of 93.
+
+Not checked: the transcription and the glosses against the images.
+
 ## Remaining gaps (fol. 491r)
 
 - [?Itinere] (word 2): decodes "itiner"; the following "a" is either its last letter or a preposition.

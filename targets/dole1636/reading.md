@@ -2,10 +2,11 @@
 
 plain word = certain; {x} = probable; [x] = restored from the sense; ‹…› = unresolved. After each line, in italics, the clear text
 printed by É. Longin (1912) from Brun's drafts (fols. 191, 127v, 181) or the period clear copy fol. 182 (fol. 183); it was found after the reading.
+Marked 16 Nov 2026 (decrypt audit): [ ] inside a word = letters the key does not give (the numbers give s where z is printed, and one f).
 
 ## fol. 191r-v (views 332-333), A. Brun, [Dole, 1 July 1636]
 
-P1 le plustost que vous pourez venir sera le meilleur  
+P1 le plustost que vous poure[z] venir sera le meilleur  
 *le plus tost que vous pourés venir sera le meilleur*
 
 P2 le secours de {cavalerie} {envoie} par son altesse Sme  
@@ -14,7 +15,7 @@ P2 le secours de {cavalerie} {envoie} par son altesse Sme
 P3 a vous aller ioindre a Salins  
 *à vous aller joindre à Salins*
 
-P4 de tarder le moins que vous pourez et de ne vous ‹biffé› attendre a aucune nouvelle aide hors celle dudict secours  
+P4 de tarder le moins que vous poure[z] et de ne vous ‹biffé› attendre a aucune nouvelle aide hors celle dudict secours  
 *de tarder le moins que vous pourés et de ne vous attendre à aucune nouvelle aide, hors celle du dict secours*
 
 P5 ‹…› beaucoup hasarder que de passer {quatre} ou cinq iours sans {vous} rendre a nos portes  
@@ -50,7 +51,7 @@ P14 au duché que Bassigni et Bresse
 
 ## fol. 127v (view 226), Archbishop and Parlement, Dole, 7 June 1636
 
-R1 c’est ‹o…› un {piège} pour l’ennemi  
+R1 c’est ‹o…› un {piège} {pour} l’ennemi  
 *c’estoit un piège pour l’ennemi*
 
 
@@ -93,8 +94,8 @@ fols. 181 + 183: fol. 183 alone (complete second copy) is 27 words, 21 certain, 
 
 Cipher draft (minute) with the marginal note "Minute de lettre de messieurs le marquis de Conflans et conseiller de Beauchemin à Mr le procureur général"; the period clear draft is on fol. 397r. Tags as above; `~x` probable, `[x]` restored from the clear draft and the sense (eaten edge), `?x` unresolved.
 
-A01 [l'estat] de toutes nos affaires  
-A02 que vous en soyez informés  
+A01 [l'estat] de toutes nos af[f]aires  
+A02 que vous en soye[z] informés  
 A03 selon cela attendre  
 A04 de vous en [termes] ~clairs et precis  
 A05 estes  

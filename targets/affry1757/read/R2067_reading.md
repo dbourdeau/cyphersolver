@@ -1,5 +1,8 @@
 # R2067 - d'Affry to "B", The Hague, 17 January 1758 (no. 283): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R2067.md`.
+
 Rests on: the contemporary clear copy in the Fagel register, Nationaal Archief 1.10.29 inv. 5187, scans 14R-15L
 (margin "Dat: 17. Janvier 1758. A: à B:"), transcribed by WAINUT (21 Oct 2026, `wainut/register_clear.txt`) and checked
 line by line against the scans. The register is the deciphered text of this letter: with this folder's key, 334 of the

@@ -1,5 +1,8 @@
 # R1067 - d'Affry, The Hague, 1 April 1757 (no. 161): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R1067.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 148R-150L (margin "No 161. Dat: 1. Avril 1757. A: à R:"), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`), 148R and 149L checked by WAINUT's reviewer (21 Oct 2026), 149R and 150L checked line by

@@ -249,7 +249,24 @@
     "statistical test"
    ]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {
+   "date": "2026-10-24",
+   "kind": "verification",
+   "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit, 14 of 57 words flagged): key.json re-applied to ct_neal.txt. Most flagged words are the clear context in ⟨ ⟩ and the […] markers of APUG568-239_reading.md. Three words of that file change or supply a letter without a mark although its header says no letter changed: 'die in' (decrypt dein), 'Schlesien' (decrypt schlesiei), 'Marche' (decrypt arche); reading.md and decode.py mark them. The five code letters 766 w, 770 m, 772 f, 778 f, 783 g, until now only in decode.py and validation.tsv, written to key_codeletters.tsv and listed in outcome.key_file. Both reading files print ?o[783]en where key.json has 60 = m, and reading.md shows figure rows older than ct_neal.txt. No reading file changed; audit figures unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair round: the three words of APUG568-239_reading.md that depart from the decrypt marked in [ ] (d[i]e in, Schlesie[n], [M]arche), no letter changed; its header line 'no letter changed' corrected to name them. Page sentence on Espionen corrected (Neal's transcription dropped the 12, the manuscript has it). Audit after: 0 of 45 compared words depart (was 14 of 57). v2_score hole rate 0.147 before, 0.171 after; read_share left as it was.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
@@ -343,6 +360,9 @@
     "note": "24 Oct 2026: 84.6% of the words of APUG568-239_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
    }
   ],
-  "key_file": "key.json"
+  "key_file": [
+   "key.json",
+   "key_codeletters.tsv"
+  ]
  }
 }

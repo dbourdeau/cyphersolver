@@ -1,0 +1,83 @@
+{
+ "folder": "genes1643",
+ "causes": {
+  "A": "2 code values of key_K4b.tsv shorter or other than the word printed: 200 = gen against 'gente' (2 words), 258 = tiempos against 'tiempo' (1 word); both settled by the held-out pair validation/291_cipher.txt / 290_plain.txt in the folder",
+  "B": "2 words: 'mandar' where the key gives 'ma n al r' (52 al for 57 da), 'negocio' where it gives 'gocio' (lic); not bracketed, both inside the 115 words counted certain",
+  "C": "'V. M.' printed for 270 = vuestramagestad (3 times); b/v modernised (escribí, reservándose, va: 3 words); stated in reading.md ('Spelling normalised')",
+  "D": "opening and closing of reading.md are clear text of the manuscript, in italics, not in transcription.txt",
+  "F": "codes with no key value (130, 213, 149, 166, 224, 214, 210, 10, pis, ble, tun) are cut into shorter keyed tokens by the audit's longest-match tokeniser; decryption.txt has the same defect ('g fo' for 130, 'g ji' for 149, 'g un' for 166) against its own header"
+ },
+ "before": "13 of 98 words depart (texts compared: 1)",
+ "after": "12 of 108 words depart (texts compared: 1), with key_K4c.tsv",
+ "files_changed": [
+  "targets/genes1643/key_K4c.tsv (new)",
+  "targets/genes1643/profile.json",
+  "targets/genes1643/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "200",
+   "value": "gente (K4b: gen)",
+   "source": "validation/291_cipher.txt file lines 5 and 16 against validation/290_plain.txt 'mucha gente en aquel sitio', 'de mucha mas gente de la que se'"
+  },
+  {
+   "sign": "258",
+   "value": "tiempo|tiempos (K4b: tiempos)",
+   "source": "validation/291_cipher.txt file line 20 against 290_plain.txt 'defender mas tiempo la placa'"
+  },
+  {
+   "sign": "pis",
+   "value": "carta",
+   "source": "291_cipher.txt file line 12 / 290_plain.txt 'por cartas del marques'; NOTES.md Notes"
+  },
+  {
+   "sign": "ble",
+   "value": "milan",
+   "source": "291_cipher.txt file line 24 / 290_plain.txt 'en el Estado de Milan'; NOTES.md Notes"
+  },
+  {
+   "sign": "158",
+   "value": "enemigo",
+   "source": "291_cipher.txt file line 11 / 'intente el enemigo otra'"
+  },
+  {
+   "sign": "169",
+   "value": "exercito",
+   "source": "291_cipher.txt file line 6 / 'los cavos del exercito'"
+  },
+  {
+   "sign": "231",
+   "value": "razon",
+   "source": "291_cipher.txt file line 9 / '(conforme a razon)'"
+  },
+  {
+   "sign": "198",
+   "value": "general",
+   "source": "291_cipher.txt file line 19 / 'causo generalmente'"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 2,
+  "examples": [
+   {
+    "text": "ags-3598-44",
+    "decrypt": "de ma n al r (58 ha c 52 22)",
+    "reading": "de mandar",
+    "where": "targets/genes1643/transcription.txt L06; reading.md paragraph 2"
+   },
+   {
+    "text": "ags-3598-44",
+    "decrypt": "es te gocio (38 33 lic)",
+    "reading": "este negocio",
+    "where": "targets/genes1643/transcription.txt L12; reading.md paragraph 3"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Of 137 enciphered words, 115 are certain\" — 5 of the 115 are not what K4b gives (gente twice, tiempo, mandar, negocio); 3 are settled by the held-out pair, 2 are unmarked emendations",
+  "The Decryption block (decryption.txt) prints \"de l g ran g fo de to s ca na\" — code 130 is shown as 'g fo' (1 + 30), not as a group without a value; same for 213, 149, 166, 224, 214, 210, 10",
+  "\"Most of the restored words are word codes seen nowhere else\" — true of most, but carta (pis, twice) and Milán (ble), counted among the 16 restored, are attested by the held-out pair 291/290 (NOTES says so)"
+ ],
+ "remaining": "K4b left as tested; K4c draws on the pair K4b was scored on, so it is not a tested key. lic = negocio and 52/57 in L06 cannot be settled from the folder (training pairs 38/37, 41/40 are not in it; the image was not looked at). decryption.txt's splitting of valueless codes was not corrected (wording of decryption files not to be changed). 258 stands once opposite 'enemigo' in 291 (probably a misread 158), left alone.",
+ "confidence": "high"
+}

@@ -1,0 +1,64 @@
+{
+ "folder": "riva1722",
+ "causes": {
+  "F": "nearly all 18 flagged words: the audit's whitespace tokeniser does not know the folder's notation (stroke ', doubt ?, raised ^n, x sign, link -, bracket notes), so marked groups had no value (e.g. 32 62' = 'de le'' printed 'delle'); the profile's key_file also lists overrides.tsv and gloss/gloss_pairs.tsv, which are not sign tables",
+  "C": "across the nine letters, 119 doubled consonants and 11 -mente/-mento endings after 10_ = MENT, covered by the conventions line of each reading and the key's source column; TUTTO^3 printed 'Tutti'",
+  "B": "11 words in units marked S (counted read) with a letter changed or supplied and no bracket: impegnar- for IN-pe (3), porterebbe/riporterebbe for po-r-ta-re-be (3), sofferti and dalli (8 Aug 35r.L11), mandargliele and onorari (20 Mar 1726), incomodato (2 Jan, n dropped); plus 'dall'assistenza' elision. Only 'incomodato' is in a flagged text",
+  "D": "clear text between the asterisk runs; 'dormono.' (12 Aug 23r.L14) is clear text printed inside the asterisks",
+  "E": "8 Aug 36r.L07: five S units 'gi ta zi o ni' after code 102 are absent from the reading ('le presenti [102] del [?Padrone]')"
+ },
+ "before": "18 of 96 words depart (texts compared: 2)",
+ "after": "18 of 96 words depart (texts compared: 2); unchanged, the cause is the script's tokeniser. Own comparison of all nine readings with units.tsv: 124 differences bracketed, 130 by stated convention, 11 words unmarked in 2,175 units counted read",
+ "files_changed": [
+  "targets/riva1722/NOTES.md",
+  "targets/riva1722/profile.json (one solution step; the file was re-dumped with indent=1 as the brief requires, so the diff is large)"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 11,
+  "examples": [
+   {
+    "text": "selvatico_1722-08-08",
+    "decrypt": "po r ta re be'",
+    "reading": "porterebbe",
+    "where": "decryptions/selvatico_1722-08-08.txt 35v.L12 (also 36r.L01; selvatico_1722-08-12 23r.L09)"
+   },
+   {
+    "text": "selvatico_1722-06-10",
+    "decrypt": "IN pe g na r se ne",
+    "reading": "impegnarsene",
+    "where": "21r.L12 (also 29 Jul 25r.L16, 8 Aug 35r.L20)"
+   },
+   {
+    "text": "selvatico_1722-08-08",
+    "decrypt": "so fe' r te da STATO^3",
+    "reading": "sofferti dalli [?Stati]",
+    "where": "35r.L11"
+   },
+   {
+    "text": "starhemberg_1726-03-20",
+    "decrypt": "ma n da r g li e li",
+    "reading": "mandargliele",
+    "where": "21r.L15"
+   },
+   {
+    "text": "starhemberg_1726-03-20",
+    "decrypt": "o n ra ri",
+    "reading": "onorari",
+    "where": "21v.L01"
+   },
+   {
+    "text": "selvatico_1722-01-02",
+    "decrypt": "IN CON mo da to",
+    "reading": "incomodato",
+    "where": "2r.L11"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"every code, every unkeyed group and every group the reading had to emend or supply is not read\" — 11 words in units counted read are printed with a letter changed or supplied (impegnar-, porterebbe, sofferti dalli, mandargliele, onorari, incomodato) and are not in overrides.tsv; five S units (gitazioni, 8 Aug 36r.L07) are not in the reading at all",
+  "The readings shown on the page print code 226 as 'questo/queste/questi' without [? in the 8 August letter (12 times) and 'quest'ordinario' on 2 January, against their own convention line (\"[?word] = a code value or word proposed from context, not read\") and the other seven letters"
+ ],
+ "remaining": "Nothing repaired in the key: no value used in a reading is missing from key.tsv. Decision needed on the 11 unbracketed words (bracket them and add overrides, which would lower the unit counts by about 11 of 2,175), on the 'gitazioni' units, and on the marking of code 226. Transcriptions were not compared with images; translations not checked; the seven letters the audit could not tokenise were checked only by my own snippet against units.tsv.",
+ "confidence": "high"
+}

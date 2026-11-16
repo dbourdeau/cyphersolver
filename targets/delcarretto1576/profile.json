@@ -112,6 +112,12 @@
    "kind": "reading",
    "what": "Decryption read by sense: 182 words, 149 certain, 25 probable, 2 restored, 6 unresolved (torn margin) = 95.6%.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.tsv re-applied to transcription.txt and compared with reading.md. The 33 of 150 departing words were artefacts of the audit script (it applied the key sign by sign to the groups oPo/oP/oPo./oP., which key.tsv names 1, 2, 3; and it took the line labels for signs). With the documented tokenisation decryption.txt is reproduced word for word, the 149 certain words have the key's letters and the 33 others are all marked; no unmarked emendation. key_groups.tsv added (same values, groups written as in the transcription) and listed in outcome.key_file; after: 9 of 158, all at line labels; 0 of 148 with labels removed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -183,7 +189,10 @@
     }
    }
   ],
-  "key_file": "key.tsv",
+  "key_file": [
+   "key.tsv",
+   "key_groups.tsv"
+  ],
   "notes": "The key is ours and reusable (key.tsv, CC BY 4.0). The validation reference is a machine break of the held-out lines, not a clear text of the time; it is reported as such."
  }
 }

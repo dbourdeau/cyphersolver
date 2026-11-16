@@ -365,6 +365,18 @@
    "kind": "verification",
    "what": "One-digit rule applied (owner's decision of 14 Nov 2026, README Conventions: surviving period key, one digit changed, inside a word whose other groups are read from the key). Key: the M97 roll 13 sheet. Read under the rule: certainly (1864), battle (588/568), directly (508), expectation (818), advice (1575). Not covered: to (669, a whole word), Alexander (1585, digit not legible and the word incomplete). Recount in words: remainder 164 of 177 = 0.927 (was 0.910), nine lines 97 of 100 = 0.970 (was 95 of 99 = 0.960). The remainder stays under 95%, held back by six words on gutter-cut groups: class read in part kept.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit of the two No. 88 texts: code_table.tsv re-applied to gap88.txt and rem88.txt and compared with the readings in texts/ (33 of 261 compared words depart), then by hand with the sheet values of we028_no88.tsv. Found: the readings follow the code sheet since 14 Nov 2026 while the profile named only the rebuilt table (428 neither, 143 moderate, 632 media, 1157 possib, 948 Russia ...); clear words inside the code lines are counted by the script as supplied; spellings are modernised; the transcriptions do not carry the plural and doubling marks that NOTES documents (1457 ll, 908 's, 1535 all); eight words stand in the readings without a bracket where the groups as transcribed give something else and no file says why (a second \"it\", events, all, affairs, disclosed, system, proposition for, making to), and \"impaired\" for im-pas-ion-ed is documented but not bracketed. key_we028_no88.tsv added (209 groups, sheet values copied from we028_no88.tsv, checked against the sheet transcription in morris1813) and listed in outcome.key_file. With the sheet key 29 of 260 words depart; the script's own figure stays 33 of 261 because it prefers the table. The film was not looked at.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marking round of the decrypt audit: ten places bracketed in the two No. 88 readings without changing a letter (nine lines: impa[ir]ed, [it], al[l], event[s], affair[s]; remainder: disclose[d], sy[st]em, proposi[tion], mak[ing], [to]), and a sentence added to each file's head comment. Hole rate (v2_score.py): nine lines 0.039 to 0.088, remainder 0.079 to 0.107. The word counts and read shares were not redone; whether any of the ten is a mark on the film was not checked.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -527,6 +539,9 @@
     "note": "14 Nov 2026, with the M97 code sheet: 177 words, 161 sure, 11 probable, 2 restored, 3 unresolved (1508, 1185, 570). Brice Dudout's count takes sure and probable as read: 172 of 177 = 0.972. By the strict rule of this project only the sure words count: 161 of 177 = 0.910 (the v10 tool gives 0.905, since it also counts the marker of the clear passage); under the 95% bar, so read in part. It was 0.938 on 24 Oct 2026, when the words on gutter-cut groups and one-digit slips were not marked. Image check and one-digit rule, 14 Nov 2026: certainly (1864 for 1364), battle (588 or 568) and directly (508 for 518) count as read; to (669 for 569) is a whole word and stays a hole. 164 of 177 = 0.927, still under 95%: read in part."
    }
   ],
-  "key_file": "code_table.tsv"
+  "key_file": [
+   "code_table.tsv",
+   "key_we028_no88.tsv"
+  ]
  }
 }

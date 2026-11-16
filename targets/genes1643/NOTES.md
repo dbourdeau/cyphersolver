@@ -51,6 +51,51 @@ Files: `transcription.txt`, `decryption.txt` (each line and its token values), `
 - [gozará]. The key gives g-u-o-ca-ra letter by letter; this is the verb that “del beneficio del tiempo” calls for.
 - ‹149› and ‹210›. Codes not attested elsewhere. 149 comes before “residente” (a title or rank of the resident). 210 stands between “llegue” and “antes este aviso” (perhaps “a manos de V. M.”). We leave them unresolved.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` re-applied `key_K4b.tsv` to `transcription.txt` and compared the letters with
+`reading.md`: 13 of 98 compared words held a letter the key does not give and no bracket. The 14 lines were then
+compared by hand, token by token. Causes:
+
+- Key value shorter than the word printed (key file incomplete). 200 is `gen` in K4b and the reading prints "gente"
+  twice (L04, L07) with no "te" token after it. The held-out pair in this folder settles it: in
+  `validation/291_cipher.txt` 200 stands opposite "mucha gente en aquel sitio" and "de mucha mas gente de la que se"
+  of `validation/290_plain.txt`. 258 is `tiempos` in K4b and the reading prints "del tiempo" (L11); in the same pair
+  258 stands opposite "defender mas tiempo la placa" (it also stands once opposite "el enemigo", which is 158
+  elsewhere in that letter: a doubt of that transcription, not followed).
+- Unmarked emendations, 2 words. L06 `58 ha c 52 22` gives "de ma n al r"; the reading prints "de mandar" (52 = al read
+  as 57 = da). L12 `38 33 lic` gives "es te gocio" (K4b: lic = gocio); the reading prints "este negocio". Nothing in
+  this folder gives lic = negocio, so it is not added to a key. Neither word is bracketed in `reading.md`, and both are
+  among the 115 words counted as certain.
+- Normalisation, stated in `reading.md` ("Spelling normalised"): 270 = vuestramagestad is printed "V. M." (3 times);
+  b/v follow modern spelling (key "es c ri vi" printed "escribí", "re se r ba n do se" printed "reservándose", "ba"
+  printed "va"; for `tes` and `tas` the key itself lists both values).
+- Clear text: the opening and the closing of `reading.md` (in italics) are in clear in the manuscript and not in
+  `transcription.txt`.
+- Tokenisation, in the audit and in `decryption.txt` alike: a code with no value in the key is cut into shorter
+  tokens that have one, so `decryption.txt` prints "g fo" for 130, "y g ‹3›" for 213, "g ji" for 149, "g un" for 166,
+  "r ‹4›" for 224, "y g ‹4›" for 214, "y g ‹0›" for 210, "g ‹0›" for 10 and letters for pis, ble, tun, against its
+  own header ("‹x› = token without a value"). `decryption.txt` was not changed. All these groups are bracketed or
+  marked in `reading.md`.
+
+Changed: `key_K4c.tsv` added (K4b with 200 = gente, 258 = tiempo|tiempos, and pis = carta, ble = milan, 158 = enemigo,
+169 = exercito, 231 = razon, 198 = general, each with the line of the 291/290 pair it comes from in its source column)
+and listed in `profile.json` `outcome.key_file` after `key_K4b.tsv`. K4b is left as tested; K4c is not a tested key,
+since it draws on the pair K4b was scored on. pis and ble were already attributed to that pair in the Notes above,
+although `reading.md` brackets them as restored from the sense.
+
+After, with K4c: 12 of 108 words depart. What is left is "V. M." for the code word, "mandar", and the b/v spellings;
+"negocio" falls outside the stretches the script compares. Not checked: the transcription against the image, so
+whether 52 in L06 is a misread 57 is not known.
+
+Marked on 16 Nov 2026. `reading.md`: 2 places bracketed, no letter changed: "man[da]r" (L06) and "[ne]gocio" (L12).
+The Conventions line now also says that 270 is printed "V. M.", that b and v follow modern spelling whatever the key
+gives, and what the two new brackets are. Left unmarked: "gente" (twice) and "tiempo", which `key_K4c.tsv` gives.
+The word count of the Reading section above (115 certain, 16 restored) counts as certain two words that are now
+bracketed; it was not redone here. `v2_score.py` hole rate of the text without its heading and Conventions
+line: 0.094 before, 0.105 after (whole file 0.093 and 0.092, the longer Conventions line adding words). `decryption.txt`
+was not touched.
+
 ## Remaining gaps
 
 - Codes 149 (before "residente") and 210 (between "llegue" and "antes este aviso") - blocker: open-codes; each occurs once, attested nowhere else

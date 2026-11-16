@@ -1,0 +1,61 @@
+{
+ "folder": "jefferson1787",
+ "marked": [
+  {
+   "file": "targets/jefferson1787/texts/barclay_17860410_decryption.txt",
+   "places": 3
+  },
+  {
+   "file": "targets/jefferson1787/texts/carmichael_17880508_decryption.txt",
+   "places": 7
+  },
+  {
+   "file": "targets/jefferson1787/texts/carmichael_17880529_decryption.txt",
+   "places": 6
+  },
+  {
+   "file": "targets/jefferson1787/texts/carmichael_17880605_decryption.txt",
+   "places": 1
+  },
+  {
+   "file": "targets/jefferson1787/texts/carmichael_17880724_decryption.txt",
+   "places": 1
+  },
+  {
+   "file": "targets/jefferson1787/texts/carmichael_17890126_decryption.txt",
+   "places": 1
+  }
+ ],
+ "left_unmarked": {
+  "count": 13,
+  "why": "the 13 groups that print Jefferson's own correction written under the group: a contemporary reading, kept at grade H. Nothing marked inside the reading files (rule 2: they are Jefferson's and the editors' text)."
+ },
+ "headers_changed": [
+  "all 18 texts/*_reading.txt: no header -> one '#' line: not the output of key.tsv; words from the manuscript decodings and, where there is none or it differs, the editors' printed text; names the _decryption.txt file",
+  "six texts/*_decryption.txt: added '#' line: N group(s) regraded H to M here, Jefferson's decoding gives another word, no word changed, reading.tsv still has H"
+ ],
+ "page_changes": [
+  "Every group was transcribed from the images and its value taken only from those decodings: 348 values (key.tsv). -> Every group was transcribed from the images. The key was built only from those decodings: 348 values (key.tsv). The readings also use the editors&rsquo; printed text where there is no decoding or it differs.",
+  "The check is that every value in key.tsv is a contemporary decoding. -> The check is that key.tsv is built only from contemporary decodings; about 20 of its 348 entries are transcription notes, marks or phrases, not clean values."
+ ],
+ "page_counts_now_stale": [
+  "\"1,519 are graded H (a contemporary decoding or clear sheet), 153 C (...), 216 M\" — with the 19 regraded: H 1,500, M 235; also outcome.grades in profile.json and the grade column of reading.tsv"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/jefferson1787/texts/carmichael_17880508_reading.txt",
+   "before": 0.013,
+   "after": 0.013,
+   "state_in_profile": "read"
+  },
+  {
+   "file": "targets/jefferson1787/texts/barclay_17860410_reading.txt",
+   "before": 0.0,
+   "after": 0.0,
+   "state_in_profile": "read"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "The regrade lives only in the six decryption files. reading.tsv and make_reading.py still give H, and make_texts.py would overwrite both the regrade and the new header lines on its next run: the scripts need the same change for it to last. Only two of the 18 reading files were scored (header-only change, same result). key.tsv untouched. 'About 20' key entries on the page is my count of values with brackets, marks or phrases, not verified on the images."
+}

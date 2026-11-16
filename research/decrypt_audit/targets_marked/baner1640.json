@@ -1,0 +1,34 @@
+{
+ "folder": "baner1640",
+ "marked": [
+  {
+   "file": "targets/baner1640/APUG568-239_reading.md",
+   "places": 3
+  }
+ ],
+ "left_unmarked": {
+  "count": 0,
+  "why": "all three reported places marked: d[i]e in, Schlesie[n], [M]arche"
+ },
+ "headers_changed": [
+  "APUG568-239_reading.md: 'Word division and capitals only; no letter changed.' -> 'Word division and capitals; three letters are changed or supplied against the decrypt of key.json on ct_neal.txt, each in [ ]: d[i]e in (decrypt \"dein\"), Schlesie[n] (decrypt \"schlesiei\", 93 = i), [M]arche (decrypt \"arche\").'"
+ ],
+ "page_changes": [
+  "the copy also drops a 12 from <em>Espionen</em>, restored from the scan (12 = p). -> Neal&rsquo;s transcription had dropped a 12 from <em>Espionen</em>; the manuscript has it, and it was restored from the scan (12 = p).",
+  "<em>durch E(sp)ionen sie ko</em> -> <em>durch Espionen sie ko</em>"
+ ],
+ "page_counts_now_stale": [
+  "the generated texts block still shows the old reading header ('no letter changed') and the unmarked words until the next build"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/baner1640/APUG568-239_reading.md",
+   "before": 0.147,
+   "after": 0.171,
+   "state_in_profile": "read in part"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "Already read in part, so the higher hole rate crosses no bar; read_share (0.846) left alone. Audit after: 0 of 45 compared words depart (was 14 of 57). Still open for decision: both reading files print '?o[783]en' where key.json has 60 = m; reading.md shows stale figure rows; whether the readings should apply the five code letters now in key_codeletters.tsv. The page's 'Slips of the copy' item still sits under that heading although the dropped 12 was Neal's."
+}

@@ -212,11 +212,59 @@
    "what": "Split under the one-key rule (George Lasry, 14 Oct 2026): R955 (1757 table, 202-586, read from the decipherment on its own page) stays in swieten1757; R956/R957 (the 1759 table, 100-442, rebuilt ciphertext-only) moved to swieten1759 with msolve.py, dec.py, key.json, overrides.json, runs.txt, validation.tsv.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R957 and R956 linked to cipher/R95x.txt (group transcriptions) and READING.md (both readings); key_file key.json", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): READING.md read per letter: R956 builds French sentences with scattered name groups open; R957 has holes or garbled clauses in two of its four sentences. R957 relabelled decoded, not read; class read -> read in part; fraction_read 0.962 -> 0.597 (estimated); excerpt notes added to both.", "result": "failed", "technique": ["language-model scoring", "statistical test"]},
-  {"date": "2026-10-23", "kind": "access", "what": "Re-read (REREAD_BRIEF, b36): DECODE R957 refetched logged in; all four images opened. Image 4 (IMG_R957_I4985_P4) is a contemporary decipherment of the cipher passage on a separate leaf, never opened in the September work; the decipherer wrote 232 above 'France'. Neighbours R954, R958 unrelated.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["plaintext matching", "key matching"], "what": "Decipherment transcribed (R957_decipherment.txt) and aligned group by group with the figures decoded by dec.py: word-for-word agreement once 232 France, 327 oc, 131 ay, 170 cr, 323 o, 440 y, 316 ni are corrected (each at every occurrence; 170 also gives R956 'Crillon', 316 'Dumenil'; 327 and 440 close two order breaks of the alphabetical table). One encipherer's slip (357 for -on in 'supposition'). key.json and overrides.json updated.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "reading", "technique": ["language-model scoring"], "what": "R957_reading.md and R957_en.md written in the decipherer's spelling; b17 0.857 plain (was 0.571), 1.0 explicit holes; look-alike share 0. Set read, grade A; class back to read (both documents read).", "result": "worked"}
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): R957 and R956 linked to cipher/R95x.txt (group transcriptions) and READING.md (both readings); key_file key.json",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Reading audit, per-document pass (George Lasry's sentence test): READING.md read per letter: R956 builds French sentences with scattered name groups open; R957 has holes or garbled clauses in two of its four sentences. R957 relabelled decoded, not read; class read -> read in part; fraction_read 0.962 -> 0.597 (estimated); excerpt notes added to both.",
+   "result": "failed",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "access",
+   "what": "Re-read (REREAD_BRIEF, b36): DECODE R957 refetched logged in; all four images opened. Image 4 (IMG_R957_I4985_P4) is a contemporary decipherment of the cipher passage on a separate leaf, never opened in the September work; the decipherer wrote 232 above 'France'. Neighbours R954, R958 unrelated.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "Decipherment transcribed (R957_decipherment.txt) and aligned group by group with the figures decoded by dec.py: word-for-word agreement once 232 France, 327 oc, 131 ay, 170 cr, 323 o, 440 y, 316 ni are corrected (each at every occurrence; 170 also gives R956 'Crillon', 316 'Dumenil'; 327 and 440 close two order breaks of the alphabetical table). One encipherer's slip (357 for -on in 'supposition'). key.json and overrides.json updated.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "reading",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "R957_reading.md and R957_en.md written in the decipherer's spelling; b17 0.857 plain (was 0.571), 1.0 explicit holes; look-alike share 0. Set read, grade A; class back to read (both documents read).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.json re-applied to cipher/R957.txt and cipher/R956.txt and set against the readings. key.json covers every group; cipher/*.txt equals runs.txt. R956: most departures are the clear text printed between the runs in READING.md; 12 places inside the cipher runs differ from the decrypt with no mark (qu'il, qu'on, l'hiver for 'du hiver', prince for 'prance', officier, armée excepté, duc de, ignorant et, nécessaire for 'ne ch er e', les maréchaux, les ordres, plaintes). R957: besides 'supposition', 'les' and 'beaucoups' follow the decipherment where the figures give 'le' and 'beaucoup'. No file of key, transcription or reading changed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking: 11 places bracketed in the R956 section of READING.md; 2 dropped letters (plaintes, duc de) left unmarked and listed in NOTES; R957 headers and the page sentence now name the three words where the figures differ from the decipherment (supposition, les, beaucoups). No letter changed. v2_score hole rate READING.md 0.076 -> 0.096, R957_reading.md 0.012 unchanged.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {
@@ -278,8 +326,39 @@
   "notes": "fraction_read = documents that read. 22 Oct 2026, reading audit: R957 decoded, not read; class read in part. 23 Oct 2026 (re-read b36): R957's fourth DECODE image is a contemporary decipherment of its cipher passage; aligned with the figures, it corrects seven table values (232 France, 327 oc, 131 ay, 170 cr, 323 o, 440 y, 316 ni; two of the seven order breaks of the table closed) and R957 reads; R956 gains Crillon and Dumenil. Class back to read. The key was rebuilt ciphertext-only before the decipherment was seen; R957's decipherment is a contemporary text found afterwards.",
   "credits": [],
   "texts": [
-   {"doc": "R957", "label": "R957, ff. 327-328, Bonn, 14 Jan 1759", "transcription": "cipher/R957.txt", "decryption": ["R957_reading.md", "R957_decipherment.txt", "READING.md"], "summary": "Gottfried van Swieten at Bonn to Count Cobenzl at Brussels: the new convention leaves the revenues to France while reserving sovereignty to the Empress; the French act on it without any order from the court, causing much ill feeling; on France's behalf the Prince de Croÿ, who has claims to it, has been put in possession of the principality of Moers without the Empress, its sovereign, being told.", "language": "fr", "state": "read", "reading": "R957_reading.md", "translation": "R957_en.md", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "Read from the contemporary decipherment of the cipher passage, a separate leaf filed with the letter (DECODE R957 image 4, never opened before; R957_decipherment.txt), aligned group by group with the figures: they agree word for word once seven values of the rebuilt table are corrected (232 France, 327 oc, 131 ay, 170 cr, 323 o, 440 y, 316 ni), each holding at every occurrence; one encipherer's slip at 'supposition'. b17 on the body 0.857 plain (was 0.571), 1.0 explicit holes. Excerpt: the cipher passage in full; the clear letter is on the DECODE images."}, "read_share": 1.0},
-   {"doc": "R956", "label": "R956, ff. 344-345, Bonn, 4 Feb 1759", "transcription": "cipher/R956.txt", "decryption": "READING.md", "summary": "On Soubise's army: no magazines are being made except at the expense of the exhausted Estates of the Empire, the principle being to keep the King's army without its costing a sou; the contributions of Guelders paid for his army and money was sent to Contades' army for winter quarters.", "language": "fr", "note": "Excerpt only: the cipher runs are given in full, the clear text around them in extract; the full letter is on the DECODE images (R956).", "translation": "R956_en.md", "read_share": 0.985}
+   {
+    "doc": "R957",
+    "label": "R957, ff. 327-328, Bonn, 14 Jan 1759",
+    "transcription": "cipher/R957.txt",
+    "decryption": [
+     "R957_reading.md",
+     "R957_decipherment.txt",
+     "READING.md"
+    ],
+    "summary": "Gottfried van Swieten at Bonn to Count Cobenzl at Brussels: the new convention leaves the revenues to France while reserving sovereignty to the Empress; the French act on it without any order from the court, causing much ill feeling; on France's behalf the Prince de Croÿ, who has claims to it, has been put in possession of the principality of Moers without the Empress, its sovereign, being told.",
+    "language": "fr",
+    "state": "read",
+    "reading": "R957_reading.md",
+    "translation": "R957_en.md",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5",
+     "date": "2026-10-23",
+     "note": "Read from the contemporary decipherment of the cipher passage, a separate leaf filed with the letter (DECODE R957 image 4, never opened before; R957_decipherment.txt), aligned group by group with the figures: they agree word for word once seven values of the rebuilt table are corrected (232 France, 327 oc, 131 ay, 170 cr, 323 o, 440 y, 316 ni), each holding at every occurrence; one encipherer's slip at 'supposition'. b17 on the body 0.857 plain (was 0.571), 1.0 explicit holes. Excerpt: the cipher passage in full; the clear letter is on the DECODE images."
+    },
+    "read_share": 1.0
+   },
+   {
+    "doc": "R956",
+    "label": "R956, ff. 344-345, Bonn, 4 Feb 1759",
+    "transcription": "cipher/R956.txt",
+    "decryption": "READING.md",
+    "summary": "On Soubise's army: no magazines are being made except at the expense of the exhausted Estates of the Empire, the principle being to keep the King's army without its costing a sou; the contributions of Guelders paid for his army and money was sent to Contades' army for winter quarters.",
+    "language": "fr",
+    "note": "Excerpt only: the cipher runs are given in full, the clear text around them in extract; the full letter is on the DECODE images (R956).",
+    "translation": "R956_en.md",
+    "read_share": 0.985
+   }
   ],
   "key_file": "key.json",
   "fraction_read_method": "measured",

@@ -104,6 +104,34 @@ All checked on full-size crops of the images.
 - Scripts that called a private model helper (the blind sign pass and the gloss reading) are not in this folder. Their
   outputs are in `validation/`.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to `transcription_c73.txt` and compared the letters
+with `reading_marked_c73.txt`: 18 of 60 words departed (30%), 6 unmarked gaps, 5 of them a letter u "only in the reading"
+(the first impression was that the decrypt lacks u).
+
+Cause: an artefact of the audit script, not a defect of the key or the reading. The key has 6 = u and the decrypt has
+every u of the reading (suo, sue, funzi-, listu, rinouati). The script strips line labels of the form `L01` but not
+`V01`-`V17`, and it folds v to u, so each label of the 73v lines in the reading file was counted as a letter u with no
+group under it. Example: decrypt `ranciapero[]compendobe`, reading `ranciapero[u]compendobe`, where the u is the label
+`V01`. The sixth gap is the marked `{+c}` of spi{+c}chi.
+
+Checked with a separate snippet, line by line: on all 27 lines the letters of `reading_marked_c73.txt` outside `[ ]` and
+`{+ }` are the key values of the two-digit letter groups of `transcription_c73.txt`, in order, and the code groups in
+brackets are the code groups of the transcription, in order. `decryption_c73.txt` agrees with both. Unmarked
+emendations: none found.
+
+Changed: nothing in the key, transcription, decryption or reading files. The figures of the script are therefore the
+same after as before (18 of 60). With the line labels removed from in-memory copies of the two files the script gives
+1 of 46 words departing; that one word was not identified from the script's output, and the line-by-line check above
+shows no difference.
+
+Seen in passing in `reading_c73.md` (the reading in context, not the file audited), not changed: on L07 "molto" is clear
+text in the transcription (`13 20 [TXT] 15 12 13 18? 12`) but stands inside the bold of "**pericoloso ne molto
+lon(g)o**"; on V09 "il" is in cipher (16 15) but stands outside the bold ("**che** il **defonto**"). That file marks
+supplied letters with ( ) where the marked reading uses {+ } and {? }. Not checked: the transcription against the
+images, and the gloss values of the codes.
+
 ## Remaining gaps
 
 - Open codes: 196 (twice), 193, 191, 130 (L06), 175, 91, 57, 55 (twice) and the V06 group. Proposed only: see above.

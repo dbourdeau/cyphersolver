@@ -461,11 +461,31 @@
   {
    "date": "2026-10-23",
    "kind": "verification",
-   "technique": ["statistical test", "manual reconstruction"],
+   "technique": [
+    "statistical test",
+    "manual reconstruction"
+   ],
    "what": "Verification 5 (plain bar, 23 Oct 2026): each cipher insertion put into its clear anchor (v5b_potocka.py): sections plain 0.5-1.0, explicit 0.9-1.0. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.",
    "result": "worked"
   },
-  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words. The cipher words of each letter are the ⟦ ⟧ spans of its reading plus the unvalued person codes inventoried in standalone-codes.json (23 occurrences, which the readings set outside the spans or leave out); clear anchor words left out. Holes: [?Mscislawi], zaia<73>d, tegn, tombap, Kinnik and the 23 codes. R7525 1.0 -> 0.833, R7526 1.0, R7527 1.0 -> 0.804, R7528 0.962 -> 0.714, R7529 0.964 -> 0.857 (its [10] hole is clear text), R7530 1.0 -> 0.833, R7534 1.0 -> 0.545, R7535 1.0 -> 0.8, R7536 1.0 -> 0.944; all 150/178 = 0.843. Eight letters read in part, R7526 read; target class read in part unchanged; the token measure (844/886) kept as a separate unit.", "result": "worked"}
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words. The cipher words of each letter are the ⟦ ⟧ spans of its reading plus the unvalued person codes inventoried in standalone-codes.json (23 occurrences, which the readings set outside the spans or leave out); clear anchor words left out. Holes: [?Mscislawi], zaia<73>d, tegn, tombap, Kinnik and the 23 codes. R7525 1.0 -> 0.833, R7526 1.0, R7527 1.0 -> 0.804, R7528 0.962 -> 0.714, R7529 0.964 -> 0.857 (its [10] hole is clear text), R7530 1.0 -> 0.833, R7534 1.0 -> 0.545, R7535 1.0 -> 0.8, R7536 1.0 -> 0.944; all 150/178 = 0.843. Eight letters read in part, R7526 read; target class read in part unchanged; the token measure (844/886) kept as a separate unit.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit, 16 Nov 2026): R7536 flagged, 17 of 31 words depart from the key's output. Checked on all nine letters: the departing words are the clear French anchors printed around the ⟦ ⟧ insertions (249 clear words, all from the context column of potocka-segments.tsv); inside ⟦ ⟧ the readings give the letters of key-potocka.json, except R7530 'u venir' (key: uenir; one letter added without a mark) and the bracketed [?Mscislawi] in R7528. No file changed besides NOTES and this step; the anchors were not checked on the images.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marking round of the decrypt audit: the one unmarked departure, R7530 'u venir' (key: uenir), is now printed u [v]enir in R7530_reading.md, with a header line for the mark; no letter changed. v2_score.py hole rate 0.0 before, 0.043 after (1 marked word in 23). docs/potocka1714.html: Keinisberk corrected to Kinisberk in two places, after the re-reading of 5 Oct 2026.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "validation": {

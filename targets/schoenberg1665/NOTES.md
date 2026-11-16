@@ -42,6 +42,30 @@ Nothing in this repository (catalogue, leads, key_leads, candidates, issues: no 
 No edition of the journal or the passage found (LATh and ThULB records cite none; web searches); the printed histories of the
 Erfurt affair were not checked volume by volume. No decipherment of the time.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit` flagged this target: 32 of 61 words depart (52%), one text compared. The flag is an artefact
+of the audit, not a defect of the reading.
+
+- Cause (audit artefact): `reading_0233.md` has no `## Reading` heading, so the audit took the whole file as the
+  published text, including the "cipher (corrected)" column of the line table. The 32 departing "words" are the 31
+  cipher tokens of that column (`buxswi,`, `bxq`, `ydkqckqip` ...) and `ge[w]onnen:`, where the reading repeats the
+  "ge" of the line-end `wx=` of L4. None of the 29 plain-column words it compared departs.
+- Check by hand: `key.tsv` (24 signs, identical in its values to `frozen/KEY-COMPLET.tsv`) applied to
+  `transcription_0233.txt` gives "boyneburg-rede uiel / diengs, der churfurst habe / dreysigtausend thaler pro / iuribus
+  erfordenisbus ge= / [?]onnen: gott mochte ih~ behu= / [t]en~, er habe den~ neinen~ bey / [t]eufel holen~ geschwohren~, /
+  und leute daruber zu zeu= / gen° an°gerufen°." Against the plain column of the reading, every difference is marked:
+  {Erfordensibus} (erfordenisbus), {seinen} (neinen), {ten} and {gen} (first sign at the binding edge), ge[w]onnen,
+  ih[n], [T]eufel. Unmarked letter changes: 0.
+- Normalisation, not stated in the reading: the key has no umlaut and the reading prints one in 4 words (Churfürst,
+  möchte, behü{ten}, darüber; the decrypt has churfurst, mochte, behu, daruber). Whether the manuscript marks them
+  was not checked (no image here). u/v and i/y follow the 24-letter alphabet (uiel = viel).
+- Changed: nothing in the key, the transcription or the reading. Figures after: the same, 32 of 61, because the cause
+  is in the audit's reading of the table. Nothing remains unexplained.
+
+Marked on 16 Nov 2026: nothing to mark (no unmarked departure). Header of `reading_0233.md`: one line added saying that
+the umlauts and capitals are added in the reading and that u/v are printed by sense; no letter of the text changed.
+
 ## Remaining gaps
 
 - ‹diengs› (cipher buxswi): letters certain, sense uncertain (Dings? dienst?) - blocker: open-codes; and two letters lost in the binding (ge[w]onnen, [T]eufel), which need the original volume

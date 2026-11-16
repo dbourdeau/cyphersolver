@@ -1,0 +1,21 @@
+{
+ "folder": "testi1630",
+ "causes": {
+  "D": "clear words inside cipher lines ({..} in the transcription, italics in the reading) counted as reading-only, about 4 gaps (e.g. 'Sin dal principio', 'Supponiamo che')",
+  "F": "nearly all of the 116 flagged words: the key.tsv row for p has the sign code '#', and audit.py line 109 skips lines starting with '#' as comments, so p was never decrypted; on cc. 11r and 16 ('longest match' scheme) line labels 'c. 11r l. 7:' were tokenised as signs (d f z)"
+ },
+ "before": "116 of 719 words depart (texts compared: 6)",
+ "after": "116 of 719 words depart (texts compared: 6); unchanged, the fix belongs in audit.py. Own check with the full 20-row key: 0 unmarked departures in 8 texts, 4,870 letters",
+ "files_changed": [
+  "targets/testi1630/NOTES.md",
+  "targets/testi1630/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 0,
+  "examples": []
+ },
+ "page_statements_false": [],
+ "remaining": "Nothing unexplained. No docs/testi1630.html exists (NOTES: not yet written up). Clear text in italics not checked against images. cc. 20 and 73-74 were not compared by the audit; my own check covered them. profile.json has CRLF line endings and no final newline in HEAD: the step was inserted textually to keep the diff to 8 lines (a final newline was added), not by a full json.dump.",
+ "confidence": "high"
+}

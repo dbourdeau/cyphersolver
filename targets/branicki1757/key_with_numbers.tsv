@@ -1,0 +1,135 @@
+# branicki1757: the alphabet of key.tsv and the number code of numbers.md in one table, so that the readings of
+# 446, 1398, 1399 and 1400 can be regenerated from a key file. Added 16 Nov 2026 (decrypt audit). Nothing here is new:
+# every row is copied from the file named in its source column. The letter rows are key.tsv unchanged.
+# A plain value "-" means the group gives no letter (punctuation or null). Only the punctuation and null numbers that
+# occur in the four transcriptions are listed; the rule is 830 to 850 punctuation, 851 and up nulls.
+# In the transcriptions of 446, 1399 and 1400 a number is followed by a dot (845.); the dot is not part of the group.
+# Number words: 824 is printed "mil" in the date of 1400 and 805 "premier" in "au premier d'août" (1399).
+# Not in this table, because numbers.md does not fix them:
+#   guesses, printed [?word] in the readings: 245 Courlande, 345 la Famille, 495 Livonie, 550 occasion, 596 Pologne,
+#     643 Roi, 720 Stolnik
+#   open, printed as [number]: 195, 296, 367, 480, 496, 775, 795, 385 in 1400, one 841 in 1399
+cipher	plain	status	source
+a	h	letter	key.tsv
+b	q	letter	key.tsv
+c	r	letter	key.tsv
+d	s	letter	key.tsv
+e	l	letter	key.tsv
+f	t	letter	key.tsv
+g	z	letter	key.tsv
+h	a	letter	key.tsv
+i	m	letter	key.tsv
+k	x	letter	key.tsv
+l	e	letter	key.tsv
+m	i	letter	key.tsv
+n	o	letter	key.tsv
+o	n	letter	key.tsv
+p	u	letter	key.tsv
+q	b	letter	key.tsv
+r	c	letter	key.tsv
+s	d	letter	key.tsv
+t	f	letter	key.tsv
+u	p	letter	key.tsv
+w	y	letter	key.tsv
+x	k	letter	key.tsv
+y	w	letter	key.tsv
+z	g	letter	key.tsv
+215	Castellan	fixed	numbers.md, The French table: fixed values
+270	Czesnik	fixed	numbers.md, The French table: fixed values
+273	Czesnik	fixed	numbers.md, The French table: fixed values
+280	Diète	fixed	numbers.md, The French table: fixed values
+281	Diète	fixed	numbers.md, The French table: fixed values
+320	événement	fixed	numbers.md, The French table: fixed values
+330	Excellence	fixed	numbers.md, The French table: fixed values
+332	Excellence	fixed	numbers.md, The French table: fixed values
+333	Excellence	fixed	numbers.md, The French table: fixed values
+350	France	fixed	numbers.md, The French table: fixed values
+365	général	fixed	numbers.md, The French table: fixed values
+366	général	fixed	numbers.md, The French table: fixed values
+380	Grand Général	fixed	numbers.md, The French table: fixed values
+381	Grand Général	fixed	numbers.md, The French table: fixed values
+385	Grand Maréchal	fixed (fixed for 1399 only; the 385 of 1400 is open and the reading keeps [385] (numbers.md, Open groups))	numbers.md, The French table: fixed values
+386	Grand Maréchal	fixed (fixed for 1399 only)	numbers.md, The French table: fixed values
+475	Kiovie	fixed	numbers.md, The French table: fixed values
+477	Kiovie	fixed	numbers.md, The French table: fixed values
+490	Lithuanie	fixed	numbers.md, The French table: fixed values
+491	Lithuanie	fixed	numbers.md, The French table: fixed values
+492	Lithuanie	fixed	numbers.md, The French table: fixed values
+493	Lithuanie	fixed	numbers.md, The French table: fixed values
+575	Palatin	fixed (Palatin or Palatine)	numbers.md, The French table: fixed values
+576	Palatin	fixed (Palatin or Palatine)	numbers.md, The French table: fixed values
+577	Palatin	fixed (Palatin or Palatine)	numbers.md, The French table: fixed values
+578	Palatin	fixed (Palatin or Palatine)	numbers.md, The French table: fixed values
+580	Pétersbourg	fixed	numbers.md, The French table: fixed values
+620	Prince	fixed	numbers.md, The French table: fixed values
+622	Princesse	fixed	numbers.md, The French table: fixed values
+623	Prince	fixed	numbers.md, The French table: fixed values
+625	Prusse	fixed	numbers.md, The French table: fixed values
+640	République	fixed	numbers.md, The French table: fixed values
+645	Roi	fixed	numbers.md, The French table: fixed values
+655	Russie	fixed	numbers.md, The French table: fixed values
+660	russienne	fixed (russienne or russiennes)	numbers.md, The French table: fixed values
+740	Tribunal	fixed	numbers.md, The French table: fixed values
+741	Tribunal	fixed	numbers.md, The French table: fixed values
+805	un	number word, used in the letters	numbers.md, Number words
+806	deux	number word, used in the letters	numbers.md, Number words
+807	trois	number word, used in the letters	numbers.md, Number words
+808	quatre	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+809	cinq	number word, used in the letters	numbers.md, Number words
+810	six	number word, used in the letters	numbers.md, Number words
+811	sept	number word, used in the letters	numbers.md, Number words
+812	huit	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+813	neuf	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+814	dix	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+815	vingt	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+816	trente	number word, used in the letters	numbers.md, Number words
+817	quarante	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+818	cinquante	number word, used in the letters	numbers.md, Number words
+819	soixante	number word, used in the letters	numbers.md, Number words
+820	soixante-dix	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+821	quatre-vingt	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+822	quatre-vingt-dix	number word, by its place in the series 805 to 824; not used in the four letters	numbers.md, Number words
+823	cent	number word, used in the letters	numbers.md, Number words
+824	mille	number word, used in the letters	numbers.md, Number words
+830	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+831	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+832	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+833	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+834	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+835	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+836	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+837	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+838	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+840	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+841	-	punctuation, left out of the readings (one of the two 841 of 1399 stands where a title is expected and the reading keeps it as [841])	numbers.md, Not words (series 830 to 850)
+842	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+843	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+845	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+846	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+847	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+848	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+849	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+850	-	punctuation, left out of the readings	numbers.md, Not words (series 830 to 850)
+859	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+860	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+861	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+865	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+867	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+871	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+873	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+874	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+875	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+899	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+900	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+901	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+913	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+914	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+920	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+921	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+971	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+993	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+994	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+995	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+997	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+998	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)
+999	-	null, left out of the readings	numbers.md, Not words (numbers from 851 up)

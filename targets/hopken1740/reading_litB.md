@@ -1,7 +1,7 @@
 # Reading: Lit. B (duplicate cipher copy), a Latin letter signed Ibrahim Effendi; Diplomatica Turcica I/9/29, images 81-82
 
 Marks: [?x] value guessed from sense for a group not in the key; {x/y} key value x read as y; {x/?y} key value x gives
-no sense here and y is guessed from sense; {+x} letters added with no group; [...] key value gives no sense here; [1463] group left unread. Everything else is the key value.
+no sense here and y is guessed from sense; {+x} letters added with no group; [...] key value gives no sense here; [1463] group left unread. Everything else is the key value, except (stated 16 Nov 2026, decrypt audit) the word code ottporten rendered Porta, capitals, word division and punctuation, which are editorial, and the six forms of "Excellent-", which the cipher writes ex-ce-l-en with one l. Piece by piece: marked_litB.txt.
 
 Excellentissime Domi[?ne].
 

@@ -80,6 +80,47 @@ nouvelles. Voire il promet de luy bailler ... jours". `reading_malen2_partial.md
 a reading. The Dutch cipher passages (lower on scan 5 and on scan 6) are not transcribed. A first look at them shows
 Dutch words (`dat`, `hem adviseren dat hy`), so the same key applies.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to the transcriptions and compared the result with
+the published texts. It reported 51 of 229 words departing (letter 1: 45 of 197; letter 2: 6 of 32), with the commonest
+replacement "the key gives a, the reading has l" (8 times in letter 1, 4 in letter 2).
+
+All the departures it lists come from how the audit script read the files, not from the key or the reading:
+
+- The line labels. Each transcription line starts with `L01:`, `L02:` ... and `L` is also the code of the sign valued
+  a. The script decrypted the label as a sign (a) and met the same label, folded to l, in the reading. Every one of the
+  "a for l" cases sits at the start of a line (example: `confederation[a]cestungabus` against `confederation[l]cestungabus`
+  at L07).
+- The clear script. The clear words kept in `<...>` in the transcription (`<quasi vero>`, `<de>`, `<60 ou 59.>`) were
+  run through the key tables letter by letter (example: `<de>` gives `en`, `<quasi vero>` gives `hbumrnie`). The longer
+  mismatches in the samples are all of this kind.
+
+Check made with a separate read-only decoder written for this audit (23 signs from `key.tsv`, labels and `<...>` left
+alone): it reproduces `decryption_malen1.txt` on 31 of 33 lines and `decryption_malen2.txt` on all 8 lines; the two
+differing lines (L22, L29) differ only in that the decryption file prints `?` for the `&` sign. With the marks of the
+marked block of `reading_malen1.md` undone ({x/y}, {+a}, {-a}, [?guess=mech], [...]), the block gives the same letters
+as the decrypt on all 33 lines. So no sign value is missing from `key.tsv` and no letter of the marked block departs
+from the key without a mark.
+
+One point outside the marked block: the running text of `reading_malen1.md` prints `d'Hollande` without a mark, where
+the signs give `diollande` and the marked block has `d'{i/h}ollande`. The other repairs are bracketed in the running
+text (`donnera[i]en[t]`, `fai[c]t`); the dropped letter of `{-m}aultres` is not shown there. Reading files were not
+changed.
+
+Nothing was changed in the key, the transcriptions or the profile's file list. The audit figures are therefore the
+same after as before (51 of 229), and they will stay so until the audit script skips line labels and `<...>` clear
+script. Not checked here: the signs against the images.
+
+Marked on 16 Nov 2026. One place in `reading_malen1.md`, running text: `d'Hollande` is now `d'[H]ollande` (the signs
+give `diollande`); no letter of the text was changed. One header line was added above the running text saying what
+`[x]` and `[...]` mean there and that the `m` dropped in L14 is not shown in it; that dropped letter is left unmarked
+in the running text because a bracket would have to print a letter the reading omits (it is marked `{-m}` in the
+marked block). The marked block was already complete and was not touched. `research/reading_audit/v2_score.py` (fr):
+hole rate 0.068 before, 0.070 after; explicit holes 0.833 (55/66) before, 0.843 (59/70) after (the added header line
+is counted as text). With the audit script's later change (line labels skipped) it reports 8 of 162 words departing
+for letter 1, one unmarked gap, which is clear script (`<sans>`, `<Et m'a>`) run through the key.
+
 ## Remaining gaps
 
 - Letter 2 Dutch passages (scans 5, 6) - blocker: not-attempted; to be transcribed in two passes and read with the

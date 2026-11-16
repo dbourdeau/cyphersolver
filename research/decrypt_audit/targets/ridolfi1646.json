@@ -1,0 +1,99 @@
+{
+ "folder": "ridolfi1646",
+ "causes": {
+  "B": "12 words printed as certain and unbracketed where the decrypt of the published transcription gives another letter; all 12 are listed in reading.md's table 'Corrections confirmed on the images' (digits confirmed at the blind re-reading of 11 Nov 2026), so documented but not marked inline. Also 2 words in braces differ by one letter without saying which: {spiagge} (decrypt spiaggie), {doppiar} (decrypt dopiar)",
+  "D": "9 restored words in square brackets, matching the table of restored words; nomenclator values in braces",
+  "E": "same 12 words: transcription.txt is the frozen v1, kept unchanged on purpose; the reading follows the corrected digits and no transcription file carries them",
+  "F": "most of the 39 audit gaps: X = 'punctuation (comma or full stop)' and the descriptions of unresolved codes taken for values; groups with trailing ' (superscript dot) not found in the key and dropped (the missing s, r, c, t)"
+ },
+ "before": "41 of 390 words depart (texts compared: 1)",
+ "after": "41 of 390 words depart (nothing changed in key, transcription or reading); own group-by-group comparison: 12 words depart unbracketed, 9 bracketed, 2 in braces, the rest letter for letter (1,853 positions)",
+ "files_changed": [
+  "targets/ridolfi1646/NOTES.md",
+  "targets/ridolfi1646/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 12,
+  "examples": [
+   {
+    "text": "D.107",
+    "decrypt": "i-du",
+    "reading": "il",
+    "where": "reading.md clause 1.01 (transcription 1.01, 74)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "ata-i-atto",
+    "reading": "atacatto",
+    "where": "reading.md clause 1.16 (transcription 1.17, 22/27)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "lontane",
+    "reading": "lontano",
+    "where": "reading.md clause 1.21 (transcription 2.01, 66)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "mig-lo-a",
+    "reading": "miglia",
+    "where": "reading.md clause 1.21 (transcription 2.01, 62)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "n-e-r-che",
+    "reading": "perche",
+    "where": "reading.md clause 2.13 (36)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "ris-[243]-lutione",
+    "reading": "risolutione",
+    "where": "reading.md clause 3.19 (transcription 3.20, 243/23)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "a-du",
+    "reading": "al",
+    "where": "reading.md clause 4.02 (transcription 4.04, 74)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "sognor",
+    "reading": "Signor",
+    "where": "reading.md clause 4.02 (transcription 4.04, 37)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "a-du",
+    "reading": "al",
+    "where": "reading.md clause 4.04 (transcription 4.05, 74)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "ma-f-dero",
+    "reading": "mandero",
+    "where": "reading.md clause 4.11 (transcription 4.13, 30)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "termino",
+    "reading": "termini",
+    "where": "reading.md clause 4.17 (transcription 4.19, 68/67)"
+   },
+   {
+    "text": "D.107",
+    "decrypt": "ofer-b",
+    "reading": "oferte",
+    "where": "reading.md clause 5.05 (transcription 5.07, 26)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "certain 390 every group read directly with the key — for 12 of the 390 the group printed in the transcription on the same page gives another letter; they read with the key only after the digit confirmed at the blind re-reading (the page says so further down: 'Twelve corrections were confirmed, and those words now count as certain'), and the published transcription was not updated",
+  "plain = certain (every group read directly with key.tsv) — same, in the reading.md text embedded in the page"
+ ],
+ "remaining": "Decision needed: bracket the 12 words or publish a transcription v2 with the 12 confirmed digits. Images not checked. key.tsv left as is (its X description trips the audit parser; not a defect of the key).",
+ "confidence": "high"
+}

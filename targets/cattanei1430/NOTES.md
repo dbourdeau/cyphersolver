@@ -48,6 +48,56 @@ Corrected in `reading_p4.md`, `p4v2_notes.md` and the page. No count changes.
   recedere" (Bertinoro; 12 signs). P4 L22 "domicus noster" = dominus noster (c for n, 7 signs).
 - P4 L04 "leonebi": the image shows `t +` (e b) clearly, so "Leonelli" (Leonello d'Este) is not forced; left open.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key4_v2.txt` to `p4v2.txt` and `p5v2.txt` and compared the letters with
+`texts/R1854-P4_reading.md` and `texts/R1854-P5_reading.md`. It reported 103 of 272 words departing (P4 91 of 240,
+P5 12 of 32), almost all of them a t present in the reading and absent from the decrypt.
+
+- Cause, audit artefact (nearly all): the sign for t is written `=` in the transcriptions, and its key line is `==t`.
+  The audit's key parser splits a line at the first `=` and also strips a leading `=` from a sign name, so the sign
+  `=` is lost and every t it stands for (115 occurrences in P4 and P5) drops out of the audit's decrypt. The key file
+  is complete: every token of the two transcriptions except the composite `?` of P4 L02 has a line in it (`d=?` is
+  the declared unknown). `../r1854/show.py` splits at the last `=` and reads the file correctly. A key file in
+  another layout does not help, because the audit strips the leading `=` in every layout; nothing was changed in the
+  key file.
+- With the key file parsed as `show.py` parses it (the audit's own comparison otherwise unchanged), 9 of 273 words
+  depart (P4 7 of 241, P5 2 of 32). A letter-by-letter comparison of the same decrypt with the two readings gives
+  these differences that carry no bracket in `texts/R1854-P4_reading.md` or `texts/R1854-P5_reading.md`:
+  - abbreviations expanded (3): P4 L01 `nrum` printed "nostrum" and L02 `dni` printed "domini", P5 L01 `dnorum`
+    printed "dominorum". `reading_p4.md` writes these n(ost)rum, d(omi)ni, d(omi)norum; the parentheses were dropped
+    when the sentence readings were made. `p4v2_notes.md` records a macron over the first.
+  - a stated but unbracketed change (2): P4 L11 `aeragono` printed "Aragonum", and P5 L02 `producxerut` printed
+    "producxerunt" (macron for n). Both are named in the header comment of the reading file, not marked in the text.
+  - letters changed with no mark (4): P4 L06 `solicitabo` printed "Sollicitabo" (the transcription has one `Z`; these
+    notes and `p4v2_notes.md` also quote the word with two l); L12-L13 `offerenu` + `um` printed "offerendum" (d
+    for u); L22 `domicus` printed "dominus" (the 5 Oct entry above records c for n, and `reading_p4.md` keeps
+    [domicus]); L13 `maleotentus` printed "male[c]ontentus", where the bracket covers the c and not the n.
+  - a letter dropped (1): P4 L26 `secx ciues` printed "sex ciues", while dicxit, reducxit and ducxerunt keep the cx.
+  Inside marks, so not counted above: `a` + `mhi` printed a[rchi]episcopus (mhi replaced), and L21 `demean becaris`
+  printed "[?Meana] [?becaris]" with an a the decrypt does not give.
+- The header comment of the P4 reading says "Latin spelling as the key gives it", and that of P5 "spelling as the key
+  gives it"; the cases above are exceptions to both. The wording of the reading files was not changed here.
+- Changed: nothing but this section and one step in `profile.json`. The audit's own figure stays 103 of 272 until its
+  parser accepts a sign named `=`.
+- Not checked: the images (the audit compares files only), so whether `solicitabo` and `offerenuum` are slips of the
+  writer or of the transcription is open. `outcome.texts[1].decryption` points at `reading_p4.md`, which holds lines
+  1-2 of image 5 only; line 3 is decoded in `texts/R1854-P5_reading.md`.
+
+Marked on 16 Nov 2026. In `texts/R1854-P4_reading.md` five places were bracketed where the key does not give the
+letters, in the file's own convention ([x] = letters supplied), with no letter changed: Sol[l]icitabo, Aragon[um],
+offeren[d]um, male[c]o[n]tentus, domi[n]us (L22). One place is left unmarked because a bracket cannot show a dropped
+letter without adding one: "sex ciues", where the key gives secx; the header now says so. The expansions are stated
+as a convention in the headers and not marked word by word: nostrum and domini (P4), dominorum and producxerunt
+(`texts/R1854-P5_reading.md`, where nothing was marked). Header lines changed: in P4 "Latin spelling as the key gives
+it" now lists these exceptions and the Aragonum note reads Aragon[um]; in P5 the sentence on spelling names the two
+expansions. In every one of these places the key's own word may be what the letter has; only the marks say so, the
+wording stands. Page `docs/cattanei1430.html`: the annealer's output quoted as "sollicitabo bullam" corrected to
+"solicitabo bullam" (`run_p4la.txt`); the same quotation in the Method section above is the reading's spelling, not
+the annealer's. `v2_score.py` (la) on the P4 reading: hole rate 0.095 before, 0.110 after
+(the new brackets count as holes; `read_share` 0.906 in the profile and the 90.6% on the page were not changed); P5 0.024
+before and after.
+
 ## Remaining gaps
 - P4 L04 "leonebi … re[∂]bs", L05 "aisignata pure st", L11 "uniei … cille", L14 "a-mhi" (~32 signs) - blocker: illegible; signs re-read at 10-13x, 786-px scan, values not fixable from single occurrences
 

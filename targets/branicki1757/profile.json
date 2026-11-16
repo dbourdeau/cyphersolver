@@ -235,6 +235,18 @@
    "kind": "control",
    "what": "Project re-check on the refreshed files: the decryption of 446 follows from the transcription and key on all 58 lines; the word-list test covers 0.54 to 0.60 of the letters of the four letters against at most 0.28 for any of 300 shuffled keys (VERIFICATION.md).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.tsv re-applied to the four transcriptions reproduces the four decryption files on every line. The readings differ from the decryptions in about 205 of 2,247 words: the number code was in numbers.md and not in a key file (now key_with_numbers.tsv, copied from key.tsv and numbers.md, listed in outcome.key_file); about 165 words are letters corrected in the reading without a mark (about 130 of them in 1398, where the header declares the correction of single slips), and about 20 are normalised spellings. Audit figure 282 of 2,076 words before, 183 of 2,093 after. No reading was changed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marks for the decrypt audit: mark_emendations.py aligns each of the contributor's four readings with its mechanical decryption (number code applied) and writes reading_<n>_marked.md with every letter the key does not give in square brackets: 168 places in 150 of 2,247 words (446: 7 words, 1398: 119, 1399: 17, 1400: 7); 138 letters the readings drop are listed in emendations.tsv. The contributor's reading files got one header line each and no mark; no letter of any reading changed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -280,7 +292,10 @@
   "fraction_read": 0.986,
   "fraction_read_method": "measured",
   "fraction_read_source": "Counted from the reading files: cipher words of the four letters, 369 (446) + 584 (1398) + 725 (1399) + 472 (1400) = 2,150, of which 31 are holes (unread code groups, [?...] stretches and [?word] doubtful readings: 7 + 16 + 6 + 2): 2,119 of 2,150 = 98.6%. Pages 2 to 4 of 1398 were reread with the key in view, so its share is not a blind reading.",
-  "key_file": "key.tsv",
+  "key_file": [
+   "key.tsv",
+   "key_with_numbers.tsv"
+  ],
   "texts": [
    {
     "doc": [

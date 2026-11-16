@@ -292,6 +292,58 @@ tested. The table still carries its rebuilt values for the slip groups (818 pect
 Credit: the check with the code sheet and the seven proposed corrections are Brice Dudout's (PR #596); the image
 check of the seven groups was done here.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` re-applied `code_table.tsv` (the only key file the profile named) to `gap88.txt` and
+`rem88.txt` and compared the letters with the two readings in `texts/`: nine lines 15 of 97 words, remainder 18 of 164,
+together 33 of 261 words with a letter the table does not give and no bracket. The two texts were then compared by
+hand, line by line, with the sheet values of `we028_no88.tsv`. Causes:
+
+- Key file not the key of the reading. Since 14 Nov 2026 the readings follow the State Department code sheet
+  (`we028_no88.tsv`, "sheet value"), not the rebuilt table, and the profile still named the table alone. Example:
+  rem l.2-3 `428` and `143` are "nei" and "mod" in `code_table.tsv` and "neither" and "moderate" on the sheet; the
+  reading prints "neither ... immoderate". Others: 632 media (im-media-te-ly), 1157 possib, 948 Russia, 193 honor,
+  728 ration, 1019 cent.
+- Clear words in the code lines (scarcely twice, undoubtedly, In the German Gazettes, troops, Prince Kurakin's) are
+  written out in `gap88.txt` and `rem88.txt`; the script, which keeps only keyed groups, counts them as supplied.
+- Spelling: the reading prints Wilna for will-na, illness for il-ness, meet for met, rigorously for rig-our-ous-ly,
+  dishonourable for dis-honor-able, negotiate and negotiation for negociat and negociation, success for suc-ces.
+- Marks of the manuscript that the two transcription files do not carry. Section 2 above describes them (a superscript
+  o adds -s; a mark under a group doubles a letter, adds -ed or changes the word), and two cases are documented:
+  gap l.2 `1457` with the doubling mark = ll and `908` with the plural mark (Chancellor's), rem l.11 `1535` with the
+  doubling mark = all. `gap88.txt` and `rem88.txt` hold the bare numbers, so the key gives "chan ce last or" and "al".
+- Words printed without a bracket where the groups as transcribed give something else, and no file of this folder says
+  why (8): gap l.4 a second "it" ("before it, it can": one 1440 in `gap88.txt`); gap l.9 "events" (283 event) and
+  "all" (1535 al); gap l.10 "affairs" (sheet 1517 affair); rem l.1 "disclosed" (674 983 dis-close); rem l.3 "system"
+  (399 539 sy-em); rem l.4 "proposition for" (219 1148 1098 981 pro-po-si for); rem l.12 "making to Russia"
+  (611 500 948 make was Russia: two words). Some may be marks of the kind above; the film was not looked at for this
+  audit, so that is not known.
+- Documented but not bracketed in the reading text: "impaired" for 1112 1433 im-pas-ion-ed (section 3 and the note
+  under the reading: Adams's slips for 1102 1435).
+
+Changed: `key_we028_no88.tsv` added, one row for each of the 209 different groups of the two texts with the sheet value
+copied from `we028_no88.tsv` (source line in the third column; 262 st and 649 min from its "read as" column, the two
+groups re-read on the image); each value was compared with `../morris1813/beling/key/codebook_M97_13_transcription.csv`
+and equals one of its readings. It is listed in `profile.json` `outcome.key_file` after `code_table.tsv`. Groups written
+with a slip keep the sheet value as it stands (818 del, 1575 oe, 1585 ok, 588 learn, 508 ear, 669 ang, 927 oud,
+1398 thirty). No reading, decryption or transcription file was changed, and nothing in `code_table.tsv`.
+
+After, with the sheet key alone: nine lines 13 of 96, remainder 16 of 164, together 29 of 260. `detail.py` itself still
+prints 33 of 261, because it keeps the key file whose output is nearest the reading, and that is the rebuilt table,
+which carries the values the reading wants at the slip groups (818 pect, 1575 adv, 1585 Alex, 1864 tain). What is left
+is the clear words, the spellings, the marks and the eight words listed above.
+
+Marked on 16 Nov 2026. `texts/no88_gap_reading.md`: 5 places bracketed, no letter changed: impa[ir]ed, [it] (the
+second "it" of l.4), al[l], event[s], affair[s]. `texts/no88_remainder_reading.md`: 5 places: disclose[d], sy[st]em,
+proposi[tion] (rem l.4), mak[ing], [to] (before Russia). Left unmarked: Chancellor's and "at all" of rem l.11 (marks
+documented above), the spellings, and the clear words. A sentence was added to the comment at the head of each file:
+what the new brackets are, that the film was not looked at for them, the spelling convention, and that the Count
+section of the file predates the marks. Those Count sections (97 of 100; 164 of 177) and the same figures in the
+Status line, the profile and the page were not redone: by the files' own convention a bracketed word is a hole, which
+would take the nine lines to 92 of 100 and the remainder to 159 of 177 if none of the ten is a mark on the film.
+`v2_score.py` hole rate: nine lines 0.039 before, 0.088 after; remainder 0.079 before, 0.107 after. The page was not
+changed: its "Key: code_table.tsv" line is inside the generated texts block.
+
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread

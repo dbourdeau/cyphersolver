@@ -329,6 +329,12 @@
    "kind": "reading",
    "what": "Full-texts audit: 207 listed in outcome.texts with its transcription, the K_HP_v1 decode, the word table and the contemporary decipherment 208 (all in the folder); 208 set out as sentences beside the decode (reading/lxxii207_reading.md) and translated in full (translation_207.md). Three places noted where the decode gives better sense than the typed 208 (fermo/fecene, uscissimo/uiscriueno, valere/uedere); not changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit flag (18 of 30 words depart, letter 206 only) checked by hand: a decoder written from key/K_HP_v1.json reproduces the six decryption files; the raw-decoding column of the five reading cards equals the decryption files; all 101 sure words are the letters of the raw decoding and every other unit is marked. The flag comes from the audit: it cannot apply the pair and context rows of the key, decodes the line labels L00-L06 as the sign L, and takes both columns of the card and the ‹ › stretches as unmarked text. 0 unmarked letter changes. No file changed except NOTES and this step.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -504,7 +510,10 @@
     "label": "ASF MAP LXXII 207, Rucellai to Spina, late Aug. or Sept. 1482, with its contemporary decipherment 208 (the key pair)",
     "transcription": "transcription/lxxii207.txt",
     "decryption": "decryption/lxxii207_v1.txt",
-    "reading": ["reading/lxxii207_reading.md", "reading/lxxii207.md"],
+    "reading": [
+     "reading/lxxii207_reading.md",
+     "reading/lxxii207.md"
+    ],
     "contemporary": "transcription/lxxii208_clear.txt",
     "translation": "translation_207.md",
     "language": "it",

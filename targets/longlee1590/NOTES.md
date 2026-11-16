@@ -44,6 +44,51 @@ count), `translation.md` (English summary), `key_K4.tsv`, `validation.txt`, `BLI
 
 Method: (1) protocol written and hashed (SHA-256) before any computation, at every stage; (2) starting key: Mousset’s table; key adjusted to the hand of these copies by calibration on the edited letters (3 March and the beginning of 1 April); atlas of sign shapes frozen; (3) keys K1 to K3 were not validated; key K4 is validated by a single measurement on a portion never looked at before the measurement (letter of 1 April 1590, f. 65r and f. 65v ll. 1–13: 45 lines, 1,561 letters), transcribed by shape and frozen, compared with the text edited by Mousset (pp. 394–396): character agreement 0.874 against at best 0.361 for 200 shuffled-key controls (mean 0.305); word agreement 0.647 (controls ≤ 0.154); criterion fixed in advance: ≥ 0.85 and ≥ best control + 0.30; (4) the letter read here was transcribed by shape, the transcription frozen before each decoding, then decoded mechanically with K4, never retouched; (5) sign-shape re-reading by Brice Dudout on two plates of 12 doubtful signs each (pick the shape seen, no value or gloss shown), with rules of application pre-registered and hashed before the answers; three signs turned out to be double, segmentation corrected and declared; on 11 Nov 2026 three more blind plates (FL2-L, TS/LS A+B covering all 76 looped long s, and the crossed o), all controls passed (2/2, 6/6, 2/2), see `BLIND-REREADING.md`; (6) reading and count under Daniel’s rule, each unresolved segment counted for the number of words it covers (estimated), not as one. All SHA-256 fingerprints are in the working folder.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key_K4.tsv` to `transcription.txt` and compared the letters
+with `reading.md`: 53 of 222 words compared depart, mostly a final s or e that the audit's decrypt lacks. Checked by
+hand; the figure is mostly an artefact of the script.
+
+- **Hesitation tokens (artefact).** 137 of the 2,045 tokens are written `{A|B}`, first label used for decoding
+  (transcription header). The script splits on white space, finds no key row for `{S1|B9}` and gives no letter; S1 is
+  s, so the s of "ces", "costes", "ils", "mois" seemed to be missing from the decrypt. `decryption.txt` has them.
+- **Order of the pages (artefact).** `transcription.txt` gives f. 67v first, `reading.md` f. 67r first; the script
+  aligned only 64% of its decrypt, 222 words.
+- **Labels absent from `key_K4.tsv` (key file incomplete).** A decoder written from `key_K4.tsv` alone, first label
+  of each hesitation, reproduces `decryption.txt` except at nine labels the key file does not hold: N_ROI (once,
+  printed "leroi"), N_PORTUGAL (once, "portugal"), DOT (30 times, always before TRI, prints nothing), MK (3), NEW_3PAR,
+  NEW_SIG, NEW_PCT (1 each, print nothing), ZG (first label twice, printed "?") and the five "?" tokens. This is also
+  why the key hash quoted in `decryption.txt` (b39635fe...) is not that of the file here. `key_K4.tsv` writes QB and
+  QBL as y; `decryption.txt` prints i (same letter under the folding of the audit).
+- **Marked departures.** The reading declares its convention: plain = certain, {x} = probable, [x] = restored,
+  ‹…› = unresolved. Compared in page order with `decryption.txt`, 335 words stand outside brackets and 8 of them
+  hold a letter the decrypt does not give (9 letters); 94 departing letters are inside {} or [].
+- **Unmarked departures in words given as certain, 12 places.** A letter changed: `partdeduc` printed "part du duc",
+  `quelieust` "qu'il i eust", `laigent` "l'argent", `dauentaige` "d'auantaige". A letter added: `aurematcequi`
+  "a Vre Mate ce qui". A letter left out: `roisieue` "Roisieu", `sattendeici` "s'attend ici", `chacung` "chacun",
+  `demandees` "demandes", `accorderhquant` "accorder quant", `uremateedepuis` "Vre Mate {depuis}",
+  `uoulueentendre` "{uoulu} entendre". Each should be {probable} under the file's own rule; left as they are, the
+  wording of the reading is not changed here.
+
+Changed: new file `key_K4_supplement.tsv` with the seven labels whose value `decryption.txt` shows (N_ROI = le roi,
+N_PORTUGAL = portugal, and DOT, MK, NEW_3PAR, NEW_SIG, NEW_PCT without a value), each with its line in
+`transcription.txt` and `decryption.txt` as source; listed in `profile.json` `outcome.key_file` after `key_K4.tsv`.
+`key_K4.tsv` is unchanged (SHA-256 8cfd785b...). The audit figure is the same after the change (53 of 222): the script
+does not read `{A|B}` tokens and does not merge two key files. The hand comparison above is the figure to use: 8 of
+335 words outside brackets, 12 places.
+
+Not checked: the images, and the 310 / 107 / 8 / 53 count. If the 12 words above move from certain to probable the
+sum certain + probable does not change.
+
+**Marked on 16 Nov 2026: nothing marked.** `reading.md` is the contributor's reading. Its only mark for a doubtful
+word is {x} = probable, which is also a class of his count (310 certain, 107 probable); putting the 12 places in
+braces would change that table and his classification, so they are listed above and left as he wrote them. One comment line
+(starting with #, so that the checkers do not count it as text) was added to the legend of `reading.md` (it is the contributor's reading, not the output of the key; the mechanical
+decrypt is `decryption.txt`; the 12 places are in this section), and one note line to the header of `decryption.txt`
+(the labels the repository `key_K4.tsv` lacks, and y printed i). No word of either file was changed.
+`research/reading_audit/v2_score.py` was not run: no reading file was marked.
+
 ## Remaining gaps
 - 53 words in unresolved segments, mostly f. 67v (f. 67v is 82.6% read, f. 67r 89.7%) - blocker: illegible; hesitant or look-alike sign shapes (Ω, 9 and ϱ; small attached loops) in the only images used, the DECODE study images R2253 views 4 and 5. The validated key is not at fault.
 

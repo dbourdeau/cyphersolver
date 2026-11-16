@@ -724,6 +724,18 @@
    "kind": "verification",
    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. The reading files hold the coded words alone (the letters' clear text is not in them), so nothing was split; the count is by hand because the files mark doubt with a bare ? and bracketed syllables, which v10_relabel.py does not read as holes (and the generator make_texts.py was not rerun). Moves: Carmichael 5 Jun 1788 1.0 -> 0.941, 24 Jul 1788 1.0 -> 0.920, 26 Jan 1789 1.0 -> 0.926, Jefferson 9 Aug 1789 1.0 -> 0.765 and Short 25 Oct 1789 1.0 -> 0.943 (group 1612, Marquis twice, no key value) go from read to read in part; read in part, figure changed: Barclay's footnotes 0.857 -> 0.500, Jefferson 4 Jul 1787 0.941 -> 0.556 (5 of 9 cipher words), 15 Dec 1787 0.775 -> 0.913, 25 Dec 1788 0.875 -> 0.706; still read: Barclay 10 Apr 1786 0.991, Jefferson 25 Sep 1787 0.993, Carmichael 8 May 1788 0.971 and 29 May 1788 0.957, Jefferson 3 Jun 1788 1.0, Short 9 Oct and 28 Oct 1789 1.0, Jefferson 11 Apr 1791 1.0. Grade M groups (216, the editors' reading with no second occurrence) are not marked in the files and are not counted as holes here.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit, 124 of 508 words flagged in 5 letters): the readings do not pass through key.tsv. Each group's reading is the plain column of transcription/*.tsv (Jefferson's interlinear or clear sheet, the clerk's decoding, or the editors' text), copied by make_reading.py and make_texts.py; reading.tsv and 16 of 18 reading files regenerate exactly from those tables. Of 1,904 groups with a reading, 807 have the value key.tsv gives, 727 are numbers not in key.tsv, 301 have another value there, 44 meet a note or mark standing as a value in key.tsv, 25 are punctuation. Found: 19 groups graded H (16 words) print the editors' word against Jefferson's decoding with no bracket; 13 more print Jefferson's own written correction; key.tsv carries notes and phrases as values for about 20 numbers (1420, 1166, 1390, 1252, 1399 and others). No file other than NOTES and this profile changed; audit figures unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair round: each of the 18 texts/*_reading.txt given a header line saying it is Jefferson's decodings and sheets and the editors' text, not the output of key.tsv. The 19 groups that print the editors' word against Jefferson's decoding regraded H to M in six texts/*_decryption.txt files, with a header line in each; no word changed. reading.tsv, the grade counts in this profile (H 1,519, M 216) and the page were not recomputed (H 1,500, M 235 with the regrade). key.tsv not touched. Two page sentences on the key corrected.",
+   "result": "partial"
   }
  ],
  "outcome": {

@@ -192,6 +192,31 @@ rule does not make them read.
 
 Whole letter, clear included, not the measure: the "before" column. A gap line for the repairs is added below.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` compared four of the six texts: 132 of 410 words depart from the mechanical decrypt
+(c793 89 of 219, ps797 37 of 85, ps717 2 of 61, w813 4 of 45). None of it is an unmarked change.
+
+- Clear words. The transcriptions give the clear German words of the page in double quotes between the number runs
+  (105 words in c793, 82 in ps797, 12 in w813, 2 in ps717); `scripts/decrypt.py` copies them, the audit script applies
+  the key only and so does not have them. Example, 793.02-03: decrypt "befinden ... ihren march", reading "befinden,
+  welche ihren march bis hier nach Cößlin fortgestellet".
+- Stated convention. 3.3 decrypts "uu" and the readings write "w" (head of each `reading_*.md`). Example: "uuider",
+  "wider".
+- Order and layout. `transcription_c793.txt` has the scans in the order 793, 795, 794 and the reading in the order
+  793, 794, 795; each reading file holds the text twice (sentence text, then the marked block), and the script takes
+  both. The marks `{x/y}` of the marked block are counted by it as marked (15 in c793).
+
+Checked with an own snippet that reads the files and writes nothing: the six `decryption_*.txt` are what
+`scripts/decrypt.py`'s functions give from `transcription_*.txt` and `key.tsv`, identical; all 148 lines of the six
+marked blocks, resolved to the mechanical side of their marks, equal the decryption line (case, punctuation, spacing,
+u/v, i/j and uu/w apart); the sentence text of each reading equals the reading side of its marked block (w787 and w813
+add the note "clear text not edited" between passages). Unmarked departures: 0.
+
+Changed: nothing but this section and the profile step. The figures of the script are the same after.
+
+Not checked: the transcriptions against the scans; `key.tsv` against anything but its use.
+
 ## Remaining gaps
 
 - Line ends of scans 794 and 798 - blocker: needs-physical-access; letters lost in the binding of the left-hand pages

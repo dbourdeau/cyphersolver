@@ -1,16 +1,16 @@
-<!-- Reading of the remainder of No. 88 (25 June 1812) that Ford printed as undecyphered. First written out 23 Oct 2026 (verification 5); revised 14 Nov 2026 with the State Department code sheet, NARA M97 roll 13 frames 1056-1057 (Weber WE028), group by group in ../we028_no88.tsv. Marks (changed at the integration of 14 Nov 2026 so that the strict count sees them): plain = sure (the sheet's value, or a digit re-read on the image); {?word} = probable (a gutter-cut group whose visible digits fit the sheet value, or a one-digit slip the sense fixes); [word] = restored (the written group does not give it); [1185] = unresolved group; [...] = the clear passage between the two cipher runs (Ford prints it). Image check of 14 Nov 2026 (frame 0207 fetched again): a syllable in {+ } inside a word is a group one digit away from the sheet value the word wants (README Conventions, one-digit rule of 14 Nov 2026); the word counts as read. -->
+<!-- Reading of the remainder of No. 88 (25 June 1812) that Ford printed as undecyphered. First written out 23 Oct 2026 (verification 5); revised 14 Nov 2026 with the State Department code sheet, NARA M97 roll 13 frames 1056-1057 (Weber WE028), group by group in ../we028_no88.tsv. Marks (changed at the integration of 14 Nov 2026 so that the strict count sees them): plain = sure (the sheet's value, or a digit re-read on the image); {?word} = probable (a gutter-cut group whose visible digits fit the sheet value, or a one-digit slip the sense fixes); [word] = restored (the written group does not give it); [1185] = unresolved group; [...] = the clear passage between the two cipher runs (Ford prints it). Image check of 14 Nov 2026 (frame 0207 fetched again): a syllable in {+ } inside a word is a group one digit away from the sheet value the word wants (README Conventions, one-digit rule of 14 Nov 2026); the word counts as read. Decrypt audit of 16 Nov 2026: letters in [ ] inside a word, and [to] before Russia, are not given by the groups as transcribed in ../rem88.txt with the sheet values (dis-close, sy-em, pro-po-si for, make was Russia); whether a mark of the manuscript gives them was not checked on the film. Spelling is modern where the code spells otherwise (meet for met, rigorously for rig-our-ous-ly, dishonourable for dis-honor-able, negotiate for negociat, success for suc-ces). The Count section below was made before these marks. -->
 
 # J. Q. Adams, No. 88, 25 June 1812: the remainder
 
 ## Reading
 
-If this proposition has in any form been disclosed to the Russian government, it was cer{+tain}ly neither unreasonable
-nor immoderate nor inconsistent with a system rigorously and {?inflexibly} defensive, to meet it with a proposition
+If this proposition has in any form been disclose[d] to the Russian government, it was cer{+tain}ly neither unreasonable
+nor immoderate nor inconsistent with a sy[st]em rigorously and {?inflexibly} defensive, to meet it with a proposi[tion]
 for the evacuation of Prussia by the French troops as [1508] {?preliminary} {?to} negotiation. But the very point upon
 which the {?ambassador} manifested the most sensibility in speaking of Prince Kurakin's last note was that it held out a
 {?proposition} with which it would be dishonourable in France to comply. He [1185] it as a demonstration that the Emperor
 Alexander had determined not to negotiate at all - it [570] he {?said} - such a proposal as France had never
-thought of making to Russia even after the bat{+tle} of Friedland. [...] An army of reserve is forming there, and it is
+thought of mak[ing] [to] Russia even after the bat{+tle} of Friedland. [...] An army of reserve is forming there, and it is
 [thus] probable that if great success on the, on the side of the French should mark the commencement of the war, the Emperor
 Napoleon will {?attempt} to penetrate dir{+ect}ly to that centre of the {?empire} [rather] than along the shores of the Baltic.
 

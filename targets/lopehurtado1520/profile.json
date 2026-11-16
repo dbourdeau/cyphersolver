@@ -126,6 +126,18 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 3432 tokens, 35 types, es-golden-age order 4: reading -2.139 per letter; random keys -5.439 (z 5.3); key annealed onto shuffled ciphertext best -3.118 (mean -3.141, z 43.3); annealer on the real text -2.091. Verdict: pass.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key_K4.tsv re-applied to transcription.txt and compared with the line readings of decryption.txt and with reading.md. Audit figure 174 of 851 words departing. Of 893 words of the line readings, 727 follow the key, 54 need a second or third value of a declared polyphonic sign (the audit takes the first only), 34 are marked, about 71 carry an unmarked letter no value of the key gives (about 59 silent corrections of near-identical signs, 4 words settled by the visual review with the transcription not updated, 6 words with the signs #, z, ı, ' that have no row in the key); reading.md respells about 25 words (h added, Benavente, aceptar) without saying so. Nothing changed in key, transcription or readings.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, repair: the unmarked departures were verified one by one against the key output and marked [x] in reading.md (59 words, 61 brackets), no letter changed; 37 places where transcribed signs are left out stay unmarked; headers of reading.md and decryption.txt corrected; two statements on the page corrected. v2_score hole rate of reading.md 0.024 before, 0.084 after.",
+   "result": "worked"
   }
  ],
  "outcome": {

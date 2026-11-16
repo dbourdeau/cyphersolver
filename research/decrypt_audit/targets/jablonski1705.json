@@ -1,0 +1,71 @@
+{
+ "folder": "jablonski1705",
+ "causes": {
+  "A": "3 words (Caesaris, Caesar x2): code group 225 serves imperator and Caesar (NOTES System and key; pairs.tsv 5 of 13 places under Caesar forms), key.tsv holds 'imperator' only",
+  "B": "2 words follow the draft's Latin with no italics: 'Dn.' (no group stands for it) and 'Gallos' (232.46 decodes 'galliam'); also 'ita' printed plain where the decode has 'ita?' (doubtful group), and the 3 Caesar words are not italicised although the file's closing lines say they are among the italic words",
+  "C": "'quae' for decode 'que' (1 word); 'Exc.' twice for decode 'excel' (letters dropped only)",
+  "D": "24 words are in italics, the file's stated mark for words that follow the Latin written under the groups (7 with a hole, 17 decode slips); the audit reads only [ ] as a mark",
+  "F": "italics not recognised as marks by the audit"
+ },
+ "before": "30 of 172 words depart (texts compared: 1)",
+ "after": "30 of 172 words depart (texts compared: 1)",
+ "files_changed": [
+  "targets/jablonski1705/key.tsv",
+  "targets/jablonski1705/NOTES.md",
+  "targets/jablonski1705/profile.json"
+ ],
+ "key_values_added": [
+  {
+   "sign": "225",
+   "value": "caesar (second value; recorded as header comment lines only, value column left 'imperator' because key.tsv is the frozen key frozen/03_KEY.json)",
+   "source": "NOTES.md 'System and key'; pairs.tsv:58,68,88,285,312"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 6,
+  "examples": [
+   {
+    "text": "11,2/16 no 44",
+    "decrypt": "excel ilgen",
+    "reading": "Exc. Dn. Ilgen",
+    "where": "reading.md:8"
+   },
+   {
+    "text": "11,2/16 no 44",
+    "decrypt": "galliam",
+    "reading": "Gallos",
+    "where": "reading.md:9"
+   },
+   {
+    "text": "11,2/16 no 44",
+    "decrypt": "imperatoris",
+    "reading": "Caesaris",
+    "where": "reading.md:9 (code 225, cause A)"
+   },
+   {
+    "text": "11,2/16 no 44",
+    "decrypt": "imperator",
+    "reading": "Caesar",
+    "where": "reading.md:10 (code 225)"
+   },
+   {
+    "text": "11,2/16 no 44",
+    "decrypt": "imperator",
+    "reading": "Caesar",
+    "where": "reading.md:13 (code 225)"
+   },
+   {
+    "text": "11,2/16 no 44",
+    "decrypt": "que",
+    "reading": "quae",
+    "where": "reading.md:16 (normalisation)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Of about 176 words in the enciphered runs, 8 hold a hole (the 9 groups illegible or outside the key) and 16 more carry a clerk's slip or a misread group (militaturut, paax, grandm, uile for vina, exse) or the code word 225, which gives imperator where the draft says Caesar.\" — the 24 italic words are 7 hole words and 17 slips; the 8th hole word (ita) and the three Caesar words are not among the 24, so words departing from the decode are 24 italic + 6 unmarked, plus ita",
+  "\"(italics where the decode slips and the Latin under the groups is followed)\" — in the quoted passage Dn., Gallos and Caesaris follow the Latin under the groups without italics"
+ ],
+ "remaining": "Why 232.46 stands over 'Gallos' in the draft (images not seen). The value column of key.tsv was not changed for 225: decision needed whether a frozen, hash-referenced key may carry a second value, and whether the 6 unmarked words get italics. Frozen scripts not run.",
+ "confidence": "high"
+}

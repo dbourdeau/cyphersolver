@@ -474,6 +474,78 @@ were identical to this folder's). Rebuild from this folder (standard library onl
     python scripts/check_marks.py key_1741.tsv transcription_khan1742.txt marked_khan1742.txt
     python scripts/heldout.py key_1741.tsv transcription_khan1742_blind.txt gloss_khan1742.tsv 300
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) applied the key files to each transcription and compared the letters
+with the published text (case, accents, u/v and i/j/y folded). Its figures, words departing of words compared: the
+despatch of 1740 621 of 1,795; Lit. A 17 of 128; the Castellane letter 9 of 83; the reply 19 of 109; Lit. B 16 of
+161; the Khan's letter 88 of 279; together 770 of 2,555. No key, transcription or reading file was changed, so the
+figures are the same after. The causes were checked file by file with read-only snippets (no script of this
+folder was run).
+
+**The despatch of 1740.** `reading_sv.txt` is not the key applied to the groups: it is the chancery decipherer's
+Swedish, the gloss column of the word pairs, and `key.tsv` holds one value per group, the most frequent piece
+(section "Key and tests"). Rebuilding `transcription.txt`, `decryption.txt` and `reading_sv.txt` from the
+`wordpairs_*.tsv` files and `key.tsv` gives the three files byte for byte (first line apart), so nothing in the
+reading was altered after the pairing. Of the 1,387 confident cipher words (K lines), 1,092 are letter for letter
+what `key.tsv` gives and 295 are not:
+
+- 172 where the pieces of the pairing are the key values and the clerk's spelling differs: 58 by a doubled letter
+  only (1372 1125 ti-l, gloss "till"), 11 by a/e only (1173 1251 go-de, gloss "goda"), 103 otherwise (1450 alliance,
+  gloss "alliancen"; 1251 1578 1633 1066 de-fe-ns-iv, gloss "defensive"). The code does not write doubled
+  consonants or separate a/ä/å/e, as the headers of the pairs say.
+- 116 where the piece paired at that place is not the key's majority value (176 group occurrences; the commonest:
+  1825 paired "at" 37 times, key "att"; 1441 "m", key "mm"; 1159 "gen", key "gon"). The `other` column of `key.tsv`
+  carries these variants; the audit reads the value column only.
+- 7 where both differ (326 r01 1415 1253 si-ste, gloss "sidsta").
+
+The rest of the audit's figure comes from the 224 clear-text units and the 11 bracketed doubtful words that
+`reading_sv.txt` interleaves with the cipher words, which its alignment cannot always set apart. Five group
+occurrences are not in the key, as already recorded. No letter was changed without a mark; the reading is the
+contemporary decipherment, as its first line says.
+
+**The five documents of 1741-1742.** Each has a `marked_*.txt` that gives every piece group by group. Compared here
+with the transcription and `key_1741.tsv` (`key.tsv` for Lit. A): every piece written plain is the key value of its
+group, every other piece is marked `{x/y}`, `[?y]`, `{+y}` or `[1234]`. The audit's departures are of these kinds:
+
+- Word codes rendered in the language of the text (`{ottporten/Porte}`, `{tractat/traité}`, `{grefwen/comte}`,
+  `{swerige/Suède}`): stated in "Word counts" above, marked in the `marked_*.txt` files, printed without a mark in
+  the `reading_*.md` files.
+- Values guessed from the sense (`[?eu]`, `[?qua]`), kept out of the key files on purpose and marked in the readings
+  of the three bare documents.
+- Clear passages («...») and the stroke `'` after a group, which the audit's tokeniser does not know (it reports the
+  key as covering 78-81% of the tokens; of the groups, `key_1741.tsv` lacks 0 of 282 in Lit. A, 14 of 205, 11 of 269
+  and 47 of 493 in the bare documents, and `key_1742.tsv` lacks 7 of 614 in the Khan's letter).
+- Spelling normalised in `reading_*.md` against the marked file, with no mark, about 28 words: a doubled consonant
+  (ex-ce-l-en-ti printed "Excellentia" six times in Lit. B; in-su-po-r-ta-ble-s "insupportables"; ca-ste-la-ne
+  "Castellane"; ac-co-mo-de "accommodement"; di-f-er-e-ns "différens"), a dropped one (att-ten-da-nt "attendant"),
+  in-te-re-st-s printed "intérêts" twice, che-s "chez", dro-gue-ma-n "drogman", pre-skrif-re "prescrire".
+  `about_reading_khan1742.txt` says "spelling as in the cipher, accents added", which these few words contradict
+  (vo-lo-nt'-s "volontés", pre-sse-s "pressées").
+- In `reading_khan1742.md` the repairs are not marked in the text: 18 words carry 21 changed values (`{el/fâ}`cheuse,
+  `{ur/fr}{n/on}`ti`{ig/è}{es/res}` "frontières", do`{ga/nt}`, no`{ra/tre}`, `{cke/mai}`) that only
+  `marked_khan1742.txt` shows; seven are in the notes of `about_reading_khan1742.txt`. At A11 the marked file has
+  `{re/im}`puter and the reading prints "réputer", the cipher's value. `reading_lita_1741.md` likewise prints the
+  35 gloss-valued words without a mark; those values are in `key_1741.tsv`.
+
+Changed: nothing but this section and one step in `profile.json`. Not checked: the digits against the images, the
+gloss column of the pairs against the images, and the word counts of `scripts/check_marks.py` (not run).
+**Marked on 16 Nov 2026.** `reading_khan1742.md`: 28 marks in 23 words, each checked against the transcription,
+`key_1742.tsv` and `marked_khan1742.txt`: 21 changed values in 16 words written `{x/y}` (the earlier count of 18 words
+took "frontières" twice and included "réputer", which the reading prints as the cipher has it) and 7 values of groups
+that are not in `key_1742.tsv` written `[?y]`, one word each (1122 ce, 1822 and 1224 x in "aux", 1826 com, 1226 V and
+comm, 1224 is). No letter changed (the file with the marks stripped equals the file before). A header paragraph was
+added to `reading_khan1742.md`, `reading_lita_1741.md`, `reading_castellane_oct1741.md` and `reading_reply_oct1741.md`
+and a sentence to the Marks line of `reading_litB.md`: each states the marks, the word codes rendered in French or
+Latin, the editorial accents and punctuation, and names the respelt words, which stay unmarked (6, 3, 6, 7 and 6
+words, 28 in all, each verified against the marked file). The first line of `reading_sv.txt` now says that it is the
+chancery decipherer's text and not the output of `key.tsv`, and names `decryption.txt`; nothing is marked inside it.
+`about_reading_khan1742.txt`: "spelling as in the cipher, accents added" now names the six exceptions. The five places
+where 1324 is read "et" are not marked: `key_1742.tsv` holds that value as a correction. `scripts/make_texts.py`
+rewrites the first line of `reading_sv.txt` if it is run again. Hole rate of `reading_khan1742.md`
+(`research/reading_audit/v2_score.py`, fr): 0.003 before, 0.029 after (the new header paragraph is scored with the
+text). On the page, "3 have a marked repair" and "23 carry a marked repair" now name the marked files.
+
 ## Remaining gaps
 
 - 7 words with a value conflict (322 r15 i, 324 l01 Ryska gränsen, 325 l14 bewijs, 326 l01 slutande, 328 r08 försäkra, 328 l09 aldrahögstes, 328 l18 allernådigst) - blocker: open-codes; both copies agree on the digits, the word reads from the gloss, probably slips of the encipherer or a homophone not separated

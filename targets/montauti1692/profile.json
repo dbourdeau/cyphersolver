@@ -739,10 +739,69 @@
    "what": "Recount by words after Daniel Bourdeau's review of PR #665 (readings/words_533_strict.tsv): of 87 cipher words in Cosimo's 35 runs, 30 sure, 42 with the context-only values; L01 9 of 16 and L70 0 of 1 sure, both now read in part.",
    "result": "partial"
   },
-  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 825 tokens, 40 types, it-modern order 4: reading -2.592 per letter; random keys -6.86 (z 6.0); key annealed onto shuffled ciphertext best -3.371 (mean -3.482, z 14.0); annealer on the real text -2.832. Verdict: pass.", "result": "worked"},
-  {"date": "2026-11-16", "kind": "verification", "technique": ["other"], "what": "Integration check of pull request #665 (15 and 16 Nov 2026). scripts/run_tests.py re-run: the eight recorded hashes match; key v1 on f. 15r 39 of 39 (shuffles at most 28.2%); key v2 on the held-out f. 21r 76 of 92 = 82.6% (200 shuffled keys at most 35.9%, mean 23.9%); as recorded. Images: Penn's Colenda manifest of Ms. Codex 533 answers and gives the rights statement NoC-US; crops of f. 1r (runs a-f, 69 groups) and f. 22r (run a, 28 groups) fetched from Penn's IIIF server and compared sign by sign with transcriptions/reconciled_533_v2.tsv: all 97 groups agree at 1900 px, one 6/0 place in 1r run c not safe at that size. A decoder written here from key_v3.json and the context values reproduces the letters of readings/runs_533.tsv for those runs and of the four bare passages (P1 273 of 296 groups on the key, P2 139 of 149, P3 50 of 55, P4 16 of 17). Word count: readings/words_533_strict.tsv recounted, 30 sure of 87 and 42 with the context-only values; the review of 15 Nov had counted 37 and 51 by admitting seven words with a supplied or replaced letter, which README Conventions counts as holes, so the contributor's lower figures stand. Reading reviews by the reviewer: L01, L21, L35 and P1 B; P2, P3, P4 A; L25, L26, L28, L56, L63 and L70 marked decoded, not read (isolated words, the clear sentence around them not transcribed). Credit role set to new cipher with solution. No earlier target, catalogue entry or lead uses this key. Not checked: Codex 534 (the interlines that give the key, and the held-out f. 21r) and the bare passages on the images, the other Codex 533 runs on the image. No person has checked any of it.", "result": "partial"}
+  {
+   "date": "2026-11-15",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 825 tokens, 40 types, it-modern order 4: reading -2.592 per letter; random keys -6.86 (z 6.0); key annealed onto shuffled ciphertext best -3.371 (mean -3.482, z 14.0); annealer on the real text -2.832. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check of pull request #665 (15 and 16 Nov 2026). scripts/run_tests.py re-run: the eight recorded hashes match; key v1 on f. 15r 39 of 39 (shuffles at most 28.2%); key v2 on the held-out f. 21r 76 of 92 = 82.6% (200 shuffled keys at most 35.9%, mean 23.9%); as recorded. Images: Penn's Colenda manifest of Ms. Codex 533 answers and gives the rights statement NoC-US; crops of f. 1r (runs a-f, 69 groups) and f. 22r (run a, 28 groups) fetched from Penn's IIIF server and compared sign by sign with transcriptions/reconciled_533_v2.tsv: all 97 groups agree at 1900 px, one 6/0 place in 1r run c not safe at that size. A decoder written here from key_v3.json and the context values reproduces the letters of readings/runs_533.tsv for those runs and of the four bare passages (P1 273 of 296 groups on the key, P2 139 of 149, P3 50 of 55, P4 16 of 17). Word count: readings/words_533_strict.tsv recounted, 30 sure of 87 and 42 with the context-only values; the review of 15 Nov had counted 37 and 51 by admitting seven words with a supplied or replaced letter, which README Conventions counts as holes, so the contributor's lower figures stand. Reading reviews by the reviewer: L01, L21, L35 and P1 B; P2, P3, P4 A; L25, L26, L28, L56, L63 and L70 marked decoded, not read (isolated words, the clear sentence around them not transcribed). Credit role set to new cipher with solution. No earlier target, catalogue entry or lead uses this key. Not checked: Codex 534 (the interlines that give the key, and the held-out f. 21r) and the bare passages on the images, the other Codex 533 runs on the image. No person has checked any of it.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the script compared P1 and P2 only and found 51 of 113 words of bare/P1_it.txt and P2_it.txt departing from key/key_entries.tsv applied to the group files. All 17 texts checked with an own read-only snippet: of 892 groups 781 take the key's letter as printed in the decode files, 77 have no value, 27 letters of Codex 533 rest on re-read digits marked * in the decode files (not key values), and two places do not follow (L19 group 55 printed ?, L35 'della' with five letters for four groups). The departing words of P1 and P2 are mostly the clerk's clear text. In the reading files: 12 clear words printed in capitals as cipher (P1, P2, P4), 17 words with a consonant doubled without a bracket, 14 places with a letter changed, dropped or supplied without a bracket, and 23 words of Codex 533 whose re-read digit is marked in the decode file but not in the reading. No key value was missing; no file but NOTES.md and this profile changed. No image compared.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking, no letter changed: 9 places bracketed in bare/P1_it.txt, P2_it.txt, readings/L01_it.txt and L35_it.txt; 27 re-read-digit stars carried from the decode files into 23 words of eight readings/L*_it.txt files; 12 clear words re-cased from capitals in P1, P2 and P4; 5 places where a decoded letter or code group is not printed are stated in header lines instead; a header line added to 13 files stating the marks and what 'normalized' covers. The generating scripts were not changed, so a re-run would remove the marks.",
+   "result": "partial"
+  }
  ],
- "outcome": {"validation": {"date": "2026-11-15", "model": "it-modern", "file": "validation.tsv", "tokens": 825, "types": 40, "tokens_per_type": 20.62, "score": -2.592, "nulls": {"random keys": {"n": 200, "mean": -6.86, "sd": 0.706, "max": -5.244, "z": 6.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.482, "sd": 0.064, "max": -3.371, "z": 14.0, "p": 0.1429}}, "power": -2.832, "verdict": "pass", "notes": "claimed per-occurrence score -2.521; polyphony 0.016; 64 unread tokens left out; annealer on the real text from random keys reached -2.832"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-11-15",
+   "model": "it-modern",
+   "file": "validation.tsv",
+   "tokens": 825,
+   "types": 40,
+   "tokens_per_type": 20.62,
+   "score": -2.592,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.86,
+     "sd": 0.706,
+     "max": -5.244,
+     "z": 6.0,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -3.482,
+     "sd": 0.064,
+     "max": -3.371,
+     "z": 14.0,
+     "p": 0.1429
+    }
+   },
+   "power": -2.832,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.521; polyphony 0.016; 64 unread tokens left out; annealer on the real text from random keys reached -2.832"
+  },
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -752,7 +811,11 @@
    "transcription",
    "key recovered"
   ],
-  "verification": ["contemporary decipherment", "independent verification", "statistical test"],
+  "verification": [
+   "contemporary decipherment",
+   "independent verification",
+   "statistical test"
+  ],
   "credits": [
    {
     "who": "ajbeling",
