@@ -25,8 +25,8 @@ and concluded that, if the King sent forces over here, they would put themselves
 would rather die arms in hand than have the King execute them by a hangman. Their troops and sects increase every day.
 Your Greatness could not believe the number of great lords and nobility [who] are in understanding with this rabble;
 it is true that they do not declare themselves, but [that they] give them all the favour and counsel they can. The
-brother of the Seigneur de Caumont is the Sieur Abbot of the said Clairac. The said de Caumont [have] lordship, place
-and castle [..] [..] have no ministers, and that no assembly of rebels be held there, of which I have heretofore
+brother of the Seigneur de Caumont is the Sieur Abbot of the said Clairac. The said de Caumont have no lordship, place
+or castle [..] [..] that has not ministers, and that no assembly of rebels be held there, of which I have heretofore
 advised Your Greatness. The judge of the said Seigneur de Caumont's lands, named Reclus, has left to
 
 **f. 153r.** go to court, who by the means of the said de Caumont and by the favour of the chief [has] been elected,

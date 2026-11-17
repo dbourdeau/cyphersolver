@@ -35,6 +35,7 @@ character per sign, words separated by a single space, one manuscript line per o
 | l | a tall straight vertical stroke (as the first sign of f.152r) |
 | a | a |
 | 4 | a 4-shape |
+| G | an X whose lower-left stroke runs down below the line and curls to the left (added 16 Nov 2026; earlier transcribed as `3x` or `x`) |
 | ? | an illegible sign |
 
 Struck-through signs: put them in square brackets, e.g. `[zox]`. A word that runs on to the next
