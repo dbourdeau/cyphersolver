@@ -225,8 +225,23 @@ Done on the files as submitted (three commits rebased on our integration of PR #
   and has ordered work "at Naples, Sicily" and wherever timber is to be had; Cardinal Madruzzo ("Madrusi"), brother of the Emperor's ambassador, asked about
   "the marriage of him and the daughter of Spain", had word that the business... (continues on f. 272 v). The match is most likely Savoy's with the
   Infanta Catalina Micaela (married March 1585): an inference, not on the page.
-- Open: f. 271 r, f. 272 v and f. 273 r of the same letter (images at full resolution on the contributor's disk, not transcribed); a blind shape sheet
-  on the = / // and o / o-with-stem signs of f. 272 r would turn several probable words into certain ones.
+- Open: f. 271 r and f. 273 r of the same letter (images at full resolution on the contributor's disk, not transcribed); a blind shape sheet
+  on the = / // and o / o-with-stem signs of f. 272 r would turn several probable words into certain ones. f. 272 v: see below.
+
+## BnF fr. 16041 f. 272 v: key K-C05 tested once on a new page, failed by 0.004 (17 Nov 2026, evening)
+
+- K-C05 = K-C04 + five values learned on f. 272 r after its test (g8 = e, new4 = l, new6 = u, ß = x, sdot = m; counts in validation.txt section 7),
+  frozen and pre-registered with the same metric and bars as section 6 before f. 272 v (view 553) was transcribed. f. 272 v was never transcribed
+  before, here or by anyone else in this repository; f. 273 r (mostly clear) was kept aside.
+- Interlinear glosses masked on every image used; two blind transcription passes (AI sub-agents), 60 differences settled by a third blind AI sub-agent
+  with written shape rules; 522 signs frozen before decoding. One measurement: **M5 0.391 vs 0.095 for the best control, gap 0.296: FAILED**
+  (bar 0.45 / +0.30 missed by 0.004 on the gap; R = 0.62 against 0.85). The key still ranks first of 201; the page decodes into French that reads in places.
+- Read **in part** (`reading-f16041-272v.md`, `translation-f16041-272v.md`): 120 words, **73 certain = 60.8% strict**, 19 probable, 1 restored,
+  27 unresolved (certain + probable 76.7%). After the test the reading found new3 = o here and, again, o transcribed for o-with-stem in about ten words.
+- Content: the business (the marriage of f. 272 r) "was cooling off"; asked whether the King had asked to be vicar of the Empire ("vicaire de l'Empire"),
+  he answered that he knew nothing, that it looked to the Emperor alone, but that the Electors would have to be dealt with, and that it could never succeed.
+  Which king is meant is not on the page.
+- Frozen files of this test (pre-registration in French, key, block, script, measurement, hashes) are in `kc05-frozen/`.
 
 ## Credits
 
@@ -236,4 +251,4 @@ Done on the files as submitted (three commits rebased on our integration of PR #
 
 ## Files
 
-`transcription.txt`, `decryption.txt`, `key.tsv`, `validation.txt`, `reading.md`, `translation.md`, `profile.json`; for p. 517: `transcription-p517.txt`, `decryption-p517.txt`, `key-p517.tsv`, `reading-p517.md`, `translation-p517.md`; for pp. 518 and 513: `transcription-p518.txt`, `decryption-p518.txt`, `reading-p518.md`, `translation-p518.md`, `transcription-p513.txt`, `decryption-p513.txt`, `reading-p513.md`, `translation-p513.md`, `key-p518-513.tsv` (probable values); for fr. 16041 f. 271: `transcription-f16041-271.txt`, `decryption-f16041-271.txt`, `key-f16041-271.tsv` (K-C03.1), `reading-f16041-271.md`, `translation-f16041-271.md`; for fr. 16041 f. 272 r: `transcription-f16041-272r.txt`, `decryption-f16041-272r.txt`, `key-f16041-272r.tsv` (K-C04), `reading-f16041-272r.md`, `translation-f16041-272r.md`.
+`transcription.txt`, `decryption.txt`, `key.tsv`, `validation.txt`, `reading.md`, `translation.md`, `profile.json`; for p. 517: `transcription-p517.txt`, `decryption-p517.txt`, `key-p517.tsv`, `reading-p517.md`, `translation-p517.md`; for pp. 518 and 513: `transcription-p518.txt`, `decryption-p518.txt`, `reading-p518.md`, `translation-p518.md`, `transcription-p513.txt`, `decryption-p513.txt`, `reading-p513.md`, `translation-p513.md`, `key-p518-513.tsv` (probable values); for fr. 16041 f. 271: `transcription-f16041-271.txt`, `decryption-f16041-271.txt`, `key-f16041-271.tsv` (K-C03.1), `reading-f16041-271.md`, `translation-f16041-271.md`; for fr. 16041 f. 272 r: `transcription-f16041-272r.txt`, `decryption-f16041-272r.txt`, `key-f16041-272r.tsv` (K-C04), `reading-f16041-272r.md`, `translation-f16041-272r.md`; for fr. 16041 f. 272 v: `transcription-f16041-272v.txt`, `decryption-f16041-272v.txt`, `key-f16041-272v.tsv` (K-C05), `reading-f16041-272v.md`, `translation-f16041-272v.md`, `kc05-frozen/`.

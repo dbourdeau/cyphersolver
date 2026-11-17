@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "este1585",
- "title": "Cardinal Luigi d'Este's cipher, 1584-85: BnF fr. 16041 ff. 271-272 r (April 1584) and four passages of Colbert 338 (pp. 513, 517-518 and 523), all read in part with Tomokiyo's key (strict: f. 271 85.0%, f. 272 r 63.7%, p. 517 87.9%, p. 518 80.6%, p. 513 83.0%, p. 523 73.0%)",
+ "title": "Cardinal Luigi d'Este's cipher, 1584-85: BnF fr. 16041 ff. 271-272 v (April 1584) and four passages of Colbert 338 (pp. 513, 517-518 and 523), all read in part with Tomokiyo's key (strict: f. 271 85.0%, f. 272 r 63.7%, f. 272 v 60.8%, p. 517 87.9%, p. 518 80.6%, p. 513 83.0%, p. 523 73.0%)",
  "documents": [
   {
    "id": "bnf-fr16041-f271",
@@ -71,6 +71,41 @@
     "source": "Gallica btv1b9060909s (source gallica.bnf.fr / BnF; not reproduced)",
     "image_quality": "fair",
     "notes": "Whole page, shape names, two blind passes by two AI sub-agents, 92 differences settled on the image by written rules, frozen before decoding; word separators kept in the file, removed for the measurement."
+   }
+  },
+  {
+   "id": "bnf-fr16041-f272v",
+   "read": "read in part",
+   "shelfmark": "Paris, BnF, fr. 16041, f. 272 v (Gallica btv1b9060909s, view 553)",
+   "date": "April 1584 (on f. 273 r of the same letter; day not settled)",
+   "year": 1584,
+   "country": "Italy",
+   "route": "Cardinal Luigi d'Este -> Nicolas de Neufville, seigneur de Villeroy (letter signed by the cardinal, ff. 271-273)",
+   "places": {
+    "from": "Rome or its neighbourhood (by the file)",
+    "to": "the French court (Villeroy)"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "About ten short contemporary interlinear glosses over the cipher, masked on every image used, not read and not used; clear lines at the foot of the page (the letter goes on in clear on f. 273 r), not used.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 522,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription-f16041-272v.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica btv1b9060909s (source gallica.bnf.fr / BnF; not reproduced)",
+    "image_quality": "fair",
+    "notes": "Cipher lines only (18), shape names, two blind passes by AI sub-agents, 60 differences settled on the image by a third blind AI sub-agent with written shape rules, frozen before decoding; glosses masked; word separators kept in the file, removed for the measurement."
    }
   },
   {
@@ -413,20 +448,35 @@
    "kind": "reading",
    "what": "fr. 16041 f. 272 r read by sense: 179 words, 114 certain, 44 probable, 21 unresolved (strict 63.7%, certain + probable 88.3%); g8 = e on this page.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement of key K-C05 (K-C04 + g8 = e, new4 = l, new6 = u, x, m, learned on f. 272 r) on held-out fr. 16041 f. 272 v (522 signs, glosses masked): M5 0.391 vs 0.095 for the best of 200 shuffled keys (gap 0.296); bars fixed before: 0.85 of the lexical ceiling (R = 0.62) and 0.45 / +0.30: failed (gap short by 0.004).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "fr. 16041 f. 272 v read by sense: 120 words, 73 certain, 19 probable, 1 restored, 27 unresolved (strict 60.8%, certain + probable 76.7%); new3 = o on this page.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read with known key",
-  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517 (bar 0.45, lowered from 0.60 before the test, by the contributor's record); two signs (Venus sign, barred dumbbell) stay open, and the code word y, a sense-only value at first, is attested as Espagne by the p. 513 margin and the p. 515 clear copy since the check of PR #557. pp. 518 and 513 (after PR #546) read with K-C02 unchanged plus probable values for new shapes (key-p518-513.tsv); the pre-registered test of these values (K-C03) could not run (p. 513 too short). K-C03.1 (K-C03 + one clerical fix) then passed a pre-registered test on a new document, BnF fr. 16041 f. 271 (M5 0.451 vs 0.077, bar 0.45: passed by 0.001 only, 14 Nov 2026). Integration check of PR #557 (14 Nov 2026): M5 0.451 on f. 271 re-implemented and reproduced (best control 0.08-0.11 across shuffling seeds, so the gap holds); the frozen files of the three pre-registrations are not in the repository, so the order of events is by the contributor's record. A contemporary clear copy of the letter pp. 517-518 was found on p. 515 at that check; it was not used by the reading and has not yet been compared word by word. K-C04 (K-C03.1 + two values learned on f. 271) was then pre-registered and measured once on fr. 16041 f. 272 r (17 Nov 2026): M5 0.414 vs 0.097, gap 0.317: partial by the 0.45 / +0.30 bar; the reading found g8 = e on that page.",
+  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517 (bar 0.45, lowered from 0.60 before the test, by the contributor's record); two signs (Venus sign, barred dumbbell) stay open, and the code word y, a sense-only value at first, is attested as Espagne by the p. 513 margin and the p. 515 clear copy since the check of PR #557. pp. 518 and 513 (after PR #546) read with K-C02 unchanged plus probable values for new shapes (key-p518-513.tsv); the pre-registered test of these values (K-C03) could not run (p. 513 too short). K-C03.1 (K-C03 + one clerical fix) then passed a pre-registered test on a new document, BnF fr. 16041 f. 271 (M5 0.451 vs 0.077, bar 0.45: passed by 0.001 only, 14 Nov 2026). Integration check of PR #557 (14 Nov 2026): M5 0.451 on f. 271 re-implemented and reproduced (best control 0.08-0.11 across shuffling seeds, so the gap holds); the frozen files of the three pre-registrations are not in the repository, so the order of events is by the contributor's record. A contemporary clear copy of the letter pp. 517-518 was found on p. 515 at that check; it was not used by the reading and has not yet been compared word by word. K-C04 (K-C03.1 + two values learned on f. 271) was then pre-registered and measured once on fr. 16041 f. 272 r (17 Nov 2026): M5 0.414 vs 0.097, gap 0.317: partial by the 0.45 / +0.30 bar; the reading found g8 = e on that page. K-C05 (K-C04 + five values learned on f. 272 r) was pre-registered and measured once on fr. 16041 f. 272 v (17 Nov 2026, evening): M5 0.391 vs 0.095, gap 0.296: failed by both bars (0.45 / +0.30 and 0.85 of the lexical ceiling), though first of 201.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
   "fraction_read": 0.73,
   "fraction_read_method": "measured",
-  "fraction_read_source": "README read bar applied strictly, per page, never pooled (certain words only; probable, restored and unresolved words are holes). fraction_read is p. 523, the page first written up: 146/200 = 73.0%. Other pages: p. 517 203/231 = 87.9% (201/231 = 87.0% at the check of 13 Nov; the two 'Espagne' words count as sure since the check of PR #557, 14 Nov 2026, y being attested at pp. 513 and 515), p. 518 87/108 = 80.6%, p. 513 39/47 = 83.0%, BnF fr. 16041 f. 271 136/160 = 85.0%. The contributor's figures (certain + probable): p. 523 177/200 = 88.5%, p. 517 223/231 = 96.5%, p. 518 103/108 = 95.4% (letter pp. 517-518 326/339 = 96.2%), p. 513 43/47 = 91.5%, f. 271 152/160 = 95.0%. BnF fr. 16041 f. 272 r (17 Nov 2026): strict 114/179 = 63.7%; contributor, certain + probable 158/179 = 88.3%.",
+  "fraction_read_source": "README read bar applied strictly, per page, never pooled (certain words only; probable, restored and unresolved words are holes). fraction_read is p. 523, the page first written up: 146/200 = 73.0%. Other pages: p. 517 203/231 = 87.9% (201/231 = 87.0% at the check of 13 Nov; the two 'Espagne' words count as sure since the check of PR #557, 14 Nov 2026, y being attested at pp. 513 and 515), p. 518 87/108 = 80.6%, p. 513 39/47 = 83.0%, BnF fr. 16041 f. 271 136/160 = 85.0%. The contributor's figures (certain + probable): p. 523 177/200 = 88.5%, p. 517 223/231 = 96.5%, p. 518 103/108 = 95.4% (letter pp. 517-518 326/339 = 96.2%), p. 513 43/47 = 91.5%, f. 271 152/160 = 95.0%. BnF fr. 16041 f. 272 r (17 Nov 2026): strict 114/179 = 63.7%; contributor, certain + probable 158/179 = 88.3%. BnF fr. 16041 f. 272 v (17 Nov 2026): strict 73/120 = 60.8%; certain + probable 92/120 = 76.7%.",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -435,7 +485,7 @@
    "date": "2026-11-17",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated. Integration check (13 Nov 2026): no M5 script in the PR; an own re-implementation from the description gives M5 0.509, best control 0.068, median 0.025 on p. 517 lines 4-29 (code words spelled out). The p. 517 bar (0.45) was lowered from p. 523's 0.60 before the test, by the contributor's record; the frozen pre-registration, key file and block are not in the repository (the committed key-p517.tsv is a later copy: it hashes to 98ef85f6, the frozen value is aa7d73db). fr. 16041 f. 271 (14 Nov 2026, after PR #546, key K-C03.1, same thresholds, French/Italian lexicons): M5 0.451 vs 0.077, validated at the bar (0.451 against 0.45: a margin of 0.001). Integration check of PR #557 (14 Nov 2026): own M5 implementation (fr and it lexicons, frequency >= 5, 5+ letters, separators removed, code words spelled out) gives 0.451 (fr) and 0.374 (it) on the frozen f. 271 transcription, as stated; best of 200 shuffled keys 0.110 with seed 271 in our shuffling (0.080-0.106 with other seeds; contributor 0.077), so the gap stays above 0.30. PREREG-KC03, PREREG-KC03b, AVENANT-1, the frozen K-C03/K-C03.1 key files, the frozen block and mlex2.py are not in the repository: the committed key-f16041-271.tsv and transcription-f16041-271.txt carry headers and do not hash to the stated values, so the pre-registration is by the contributor's record. The pass is at the bar by 0.001. fr. 16041 f. 272 r (17 Nov, key K-C04): M5 0.414 vs 0.097, partial (validation.txt section 6)."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated. Integration check (13 Nov 2026): no M5 script in the PR; an own re-implementation from the description gives M5 0.509, best control 0.068, median 0.025 on p. 517 lines 4-29 (code words spelled out). The p. 517 bar (0.45) was lowered from p. 523's 0.60 before the test, by the contributor's record; the frozen pre-registration, key file and block are not in the repository (the committed key-p517.tsv is a later copy: it hashes to 98ef85f6, the frozen value is aa7d73db). fr. 16041 f. 271 (14 Nov 2026, after PR #546, key K-C03.1, same thresholds, French/Italian lexicons): M5 0.451 vs 0.077, validated at the bar (0.451 against 0.45: a margin of 0.001). Integration check of PR #557 (14 Nov 2026): own M5 implementation (fr and it lexicons, frequency >= 5, 5+ letters, separators removed, code words spelled out) gives 0.451 (fr) and 0.374 (it) on the frozen f. 271 transcription, as stated; best of 200 shuffled keys 0.110 with seed 271 in our shuffling (0.080-0.106 with other seeds; contributor 0.077), so the gap stays above 0.30. PREREG-KC03, PREREG-KC03b, AVENANT-1, the frozen K-C03/K-C03.1 key files, the frozen block and mlex2.py are not in the repository: the committed key-f16041-271.tsv and transcription-f16041-271.txt carry headers and do not hash to the stated values, so the pre-registration is by the contributor's record. The pass is at the bar by 0.001. fr. 16041 f. 272 r (17 Nov, key K-C04): M5 0.414 vs 0.097, partial (validation.txt section 6). fr. 16041 f. 272 v (17 Nov evening, key K-C05, same bars): M5 0.391 vs 0.095, gap 0.296, failed (validation.txt section 7; frozen files in kc05-frozen/)."
   },
   "provenance": "mixed",
   "credits": [
@@ -493,7 +543,7 @@
     "detail": "not in the repository after PR #557 either; the committed key-p517.tsv is a later copy (98ef85f6 vs frozen aa7d73db), and key-f16041-271.tsv / transcription-f16041-271.txt carry headers and do not hash to the stated values"
    },
    {
-    "item": "fr. 16041 f. 271: 16 probable, 3 restored and 5 unresolved words (line 1, start of the page continuing f. 271 r, and two line ends); ff. 271 r, 272-273 of the same letter not transcribed",
+    "item": "fr. 16041 f. 271: 16 probable, 3 restored and 5 unresolved words (line 1, start of the page continuing f. 271 r, and two line ends); ff. 271 r and 273 r of the same letter not transcribed (f. 272 v read in part, 17 Nov)",
     "blocker": "not-attempted"
    },
    {
@@ -543,6 +593,25 @@
      "note": "Read as sentences 17 Nov 2026 by one AI reader after the measurement (partial): 114 certain, 44 probable, 21 unresolved of 179 words; every word needing a value learned after the test (g8 = e, new4 = l, x, the barred double long s = u) or a shape correction (= for //, o for dl) is counted probable and listed in reading-f16041-272r.md. No palaeographer checked the page."
     },
     "note": "read_share is the strict share: 114 certain of 179 words = 63.7%; certain + probable 158/179 = 88.3%."
+   },
+   {
+    "doc": "bnf-fr16041-f272v",
+    "label": "BnF fr. 16041 f. 272 v, cipher lines of the page (continuation of f. 272 r, April 1584)",
+    "transcription": "transcription-f16041-272v.txt",
+    "decryption": "decryption-f16041-272v.txt",
+    "reading": "reading-f16041-272v.md",
+    "translation": "translation-f16041-272v.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.608,
+    "summary": "The business (the marriage of f. 272 r) 'was cooling off'; asked whether the King had asked to be vicar of the Empire, the informant knew nothing, said it looked to the Emperor alone but the Electors would have to be dealt with, and believed it could never succeed; the writer reports it so that it may reach the King.",
+    "reading_review": {
+     "grade": "B",
+     "by": "an AI model (for Brice Dudout)",
+     "date": "2026-11-17",
+     "note": "Read as sentences 17 Nov 2026 by one AI reader after the measurement (failed by 0.004): 73 certain, 19 probable, 1 restored, 27 unresolved of 120 words; every word needing a correction found after the test (new3 = o, o for o-with-stem, shapes without value) is counted probable and listed in reading-f16041-272v.md. No palaeographer checked the page."
+    },
+    "note": "read_share is the strict share: 73 certain of 120 words = 60.8%; certain + probable 92/120 = 76.7%."
    },
    {
     "doc": "colbert338-p517",
