@@ -2,7 +2,7 @@
 
 ## Reading
 
-Egregie pater et domine mi. Questa mattina ho una da' nostri signori Dieci, della quale [?credo] siate informato. Nondimeno ve ne vo' avvisare quanto da loro m'è suto comandato, ch'è ch'io debba isfasciare e levare via ogni fortezza a tutte queste castella, cioè Parlascio, Castello Nuovo, Santa Luce, Santo Regolo e Lore[n]zano. E ch'io proceggha e tento tenere le mani addosso a Chianni.
+Egregie pater et domine mi. Questa mattina ho una da' nostri signori Dieci, della quale [?credo] siate informato. Nondimeno ve ne vo' avvisare quanto da loro m'è suto comandato, ch'è ch'io debba isfasciare e levare via ogni fortezza a tutte queste castella, cioè Parlascio, Castello Nuovo, Santa Luce, Santo Regolo e Lore[n]zano. E ch'io proceggha e [?tento] tenere le mani addosso a Chianni.
 
 E a quello mi bisogna, e torno al fatto ch'io ne richeggha el Pepe, perché a quest'ora gli ho scritto si metta a punto colle cose a ciò necessarie, e come da lui sarò fornito metteremo tutte esecuzione. Del fare tenere le mani addosso a Chianni non vi veggo in che modo essere bene dovessi esser sicuro, perché rimane in luogo che per niuna via si può poi soccorrere. Ché, come sapete, tra il bosco e quivi è in mezzo Laiatico, Orciatico e Pietracassa. E non rimanendo di qua nulla, mi pare si lasci nelle forbici. Pure seguirassene quanto a loro parrà.
 

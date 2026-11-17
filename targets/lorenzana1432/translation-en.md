@@ -1,6 +1,6 @@
 # Bernardo to Averardo, c. 208r
 
-My distinguished father and lord. This morning I received a letter from our lords the Ten, of which I [?believe] you have been informed. Nevertheless I want to tell you what they have commanded me to do. I am to dismantle and remove every fortification from all these castles, namely Parlascio, Castelnuovo, Santa Luce, San Regolo and Lore[n]zano. And I am to go ahead and make an attempt to get my hands on Chianni.
+My distinguished father and lord. This morning I received a letter from our lords the Ten, of which I [?believe] you have been informed. Nevertheless I want to tell you what they have commanded me to do. I am to dismantle and remove every fortification from all these castles, namely Parlascio, Castelnuovo, Santa Luce, San Regolo and Lore[n]zano. And I am to go ahead and [?try] to get my hands on Chianni.
 
 For what I need for that, I come back to asking Pepe for it. By now I have written asking him to get the necessary things ready. Once he has supplied me, we will put everything into effect. As for getting our hands on Chianni, I cannot see how I could be sure it would go well, because it stands in a place where afterwards it could receive relief by no route. As you know, Lajatico, Orciatico and Pietracassa lie between the wood and that place. With nothing left on this side, it seems to me that Chianni would be left in the pincers. Still, we shall do as they see fit.
 
