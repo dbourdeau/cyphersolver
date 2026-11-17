@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "este1585",
- "title": "Cardinal Luigi d'Este's cipher, 1584-85: BnF fr. 16041 f. 271 (April 1584) and four passages of Colbert 338 (pp. 513, 517-518 and 523), all read in part with Tomokiyo's key (strict: f. 271 85.0%, p. 517 87.9%, p. 518 80.6%, p. 513 83.0%, p. 523 73.0%)",
+ "title": "Cardinal Luigi d'Este's cipher, 1584-85: BnF fr. 16041 ff. 271-272 r (April 1584) and four passages of Colbert 338 (pp. 513, 517-518 and 523), all read in part with Tomokiyo's key (strict: f. 271 85.0%, f. 272 r 63.7%, p. 517 87.9%, p. 518 80.6%, p. 513 83.0%, p. 523 73.0%)",
  "documents": [
   {
    "id": "bnf-fr16041-f271",
@@ -39,6 +39,41 @@
    }
   },
   {
+   "id": "bnf-fr16041-f272r",
+   "read": "read in part",
+   "shelfmark": "Paris, BnF, fr. 16041, f. 272 r (Gallica btv1b9060909s, view 552)",
+   "date": "April 1584 (on f. 273 r of the same letter; day not settled)",
+   "year": 1584,
+   "country": "Italy",
+   "route": "Cardinal Luigi d'Este -> Nicolas de Neufville, seigneur de Villeroy (letter signed by the cardinal, ff. 271-273)",
+   "places": {
+    "from": "Rome or its neighbourhood (by the file)",
+    "to": "the French court (Villeroy)"
+   },
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A few short contemporary interlinear glosses over the cipher, not transcribed and not used (the measurement and the reading rest on the cipher alone).",
+    "partial": true
+   },
+   "length": {
+    "tokens": 752,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription-f16041-272r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica btv1b9060909s (source gallica.bnf.fr / BnF; not reproduced)",
+    "image_quality": "fair",
+    "notes": "Whole page, shape names, two blind passes by two AI sub-agents, 92 differences settled on the image by written rules, frozen before decoding; word separators kept in the file, removed for the measurement."
+   }
+  },
+  {
    "id": "colbert338-p517",
    "read": "read in part",
    "shelfmark": "Paris, BnF, Cinq Cents de Colbert 338, p. 517 (Gallica btv1b10033937d, view 272, right page)",
@@ -57,7 +92,7 @@
     "location": [
      "separate folio"
     ],
-    "source": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellevé qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'.",
+    "source": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellev\u00e9 qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'.",
     "partial": false
    },
    "length": {
@@ -92,7 +127,7 @@
     "location": [
      "separate folio"
     ],
-    "source": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellevé qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'.",
+    "source": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellev\u00e9 qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'.",
     "partial": false
    },
    "length": {
@@ -210,7 +245,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "online",
-   "where": "The key: S. Tomokiyo, Cryptiana, 'Cardinal d'Este's Cipher (1584-1586)' (henryiii.htm), built on BnF fr. 16041-16042; Colbert 338 not cited, no letter edited. The text of p. 523: no edition found; Favalli, CHMO 49/2 (2024), read, covers 1569-1580 and does not mention it; Favalli's thesis (HAL tel-03435435, 1559-1580) not read in full. Catalogue 1572 open on origin/main (GitHub API, e2315f8a, 5 Nov 2026). p. 517 (13 Nov 2026): no edition found; one web search on Poigny / Montmorency / Joyeuse / Clermont-de-Lodève 1584 found nothing printing this advice. pp. 513 and 518 (13 Nov 2026): p. 513's cipher block is deciphered in the margin by a contemporary hand (our reading agrees); no edition of either page found (three web searches: Luigi d'Este's letters to Henri III / Villeroy, Longlée, Desjardins' Négociations avec la Toscane - its tome IV prints the Florentine envoys' dispatches, not d'Este's French letters; not checked page by page). fr. 16041 f. 271 (14 Nov 2026): Tomokiyo cites only ff. 259 and 264 of fr. 16041 and prints no decipherment; nothing on fr. 16041-16042 in this repository; one web search on this letter (Montmorency, the pope's illness, April 1584) found no edition; three short contemporary interlinear glosses on the page. Contemporary decipherments in the same volume, Colbert 338: the margin of p. 513 (its own cipher block) and p. 515, a contemporary clear copy of the whole letter pp. 517-518, found at the integration check of PR #557 (14 Nov 2026), after the reading; nothing in the contributor's files mentions p. 515, and it was used only to attest y.",
+   "where": "The key: S. Tomokiyo, Cryptiana, 'Cardinal d'Este's Cipher (1584-1586)' (henryiii.htm), built on BnF fr. 16041-16042; Colbert 338 not cited, no letter edited. The text of p. 523: no edition found; Favalli, CHMO 49/2 (2024), read, covers 1569-1580 and does not mention it; Favalli's thesis (HAL tel-03435435, 1559-1580) not read in full. Catalogue 1572 open on origin/main (GitHub API, e2315f8a, 5 Nov 2026). p. 517 (13 Nov 2026): no edition found; one web search on Poigny / Montmorency / Joyeuse / Clermont-de-Lod\u00e8ve 1584 found nothing printing this advice. pp. 513 and 518 (13 Nov 2026): p. 513's cipher block is deciphered in the margin by a contemporary hand (our reading agrees); no edition of either page found (three web searches: Luigi d'Este's letters to Henri III / Villeroy, Longl\u00e9e, Desjardins' N\u00e9gociations avec la Toscane - its tome IV prints the Florentine envoys' dispatches, not d'Este's French letters; not checked page by page). fr. 16041 f. 271 (14 Nov 2026): Tomokiyo cites only ff. 259 and 264 of fr. 16041 and prints no decipherment; nothing on fr. 16041-16042 in this repository; one web search on this letter (Montmorency, the pope's illness, April 1584) found no edition; three short contemporary interlinear glosses on the page. Contemporary decipherments in the same volume, Colbert 338: the margin of p. 513 (its own cipher block) and p. 515, a contemporary clear copy of the whole letter pp. 517-518, found at the integration check of PR #557 (14 Nov 2026), after the reading; nothing in the contributor's files mentions p. 515, and it was used only to attest y. fr. 16041 f. 272 r (17 Nov 2026): no other target, PR or issue by any author on it; Tomokiyo cites ff. 259 and 264 only.",
    "found": "before attempt",
    "used": true
   },
@@ -221,7 +256,7 @@
   ],
   "attack": "published key",
   "first_date": "2026-10-29",
-  "last_date": "2026-11-14",
+  "last_date": "2026-11-17",
   "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement on a held-out page, thresholds fixed in advance) and answered the blind shape sheet (shapes only). AI agents transcribed, applied and adjusted the key, measured, read and wrote up. No palaeographer checked the page.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
@@ -355,13 +390,28 @@
   {
    "date": "2026-11-14",
    "kind": "verification",
-   "what": "Integration check of PR #557: own decoders from key-p517.tsv (pp. 518, 513) and key-f16041-271.tsv (f. 271) equal the committed decryptions on every line (490, 208 and 677 signs); M5 re-implemented on f. 271: 0.451 (fr), 0.374 (it), best shuffled 0.08-0.11; Gallica images (openapi.bnf.fr IIIF) compared: about 125 signs of p. 518 (L1, L2, L8, L9), 60 of p. 513 (L8, L9, with the code word y in place) and 80 of f. 271 (L1, L2, L10) agree; the p. 513 margin reads '...oy qu'en Espaig[ne] / de Longlée / ...dvise qu'ilz font / ...tiques si l'eglise / ...geoit de pasteur / ...tiffiant leurs / ...saings et / ...oiblissant ceulx / ...aultres, et / ...a esté envoyé / ordre exprès / ...pour ce que / ...chose tant / ...portant pour / ...ruice du Roy', as the reading. Strict recount with y attested: p. 517 203/231, p. 513 39/47, f. 271 136/160; p. 518 87/108 unchanged.",
+   "what": "Integration check of PR #557: own decoders from key-p517.tsv (pp. 518, 513) and key-f16041-271.tsv (f. 271) equal the committed decryptions on every line (490, 208 and 677 signs); M5 re-implemented on f. 271: 0.451 (fr), 0.374 (it), best shuffled 0.08-0.11; Gallica images (openapi.bnf.fr IIIF) compared: about 125 signs of p. 518 (L1, L2, L8, L9), 60 of p. 513 (L8, L9, with the code word y in place) and 80 of f. 271 (L1, L2, L10) agree; the p. 513 margin reads '...oy qu'en Espaig[ne] / de Longl\u00e9e / ...dvise qu'ilz font / ...tiques si l'eglise / ...geoit de pasteur / ...tiffiant leurs / ...saings et / ...oiblissant ceulx / ...aultres, et / ...a est\u00e9 envoy\u00e9 / ordre expr\u00e8s / ...pour ce que / ...chose tant / ...portant pour / ...ruice du Roy', as the reading. Strict recount with y attested: p. 517 203/231, p. 513 39/47, f. 271 136/160; p. 518 87/108 unchanged.",
    "result": "worked"
   },
   {
    "date": "2026-11-14",
    "kind": "verification",
-   "what": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellevé qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'. Spot checks against the reading of p. 518: 'suivant' where the cipher gives 'suldant', 'fermer' before 'mes letres', 'm'a donné de tant plus grand suspect' (cipher 'docue de tant'), 'en tel pays' at the end, '[Sa] Saincteté' as restored. Not yet compared word by word; not used for any count except to attest y.",
+   "what": "A contemporary clear copy of the whole letter pp. 517-518, postscript included (in French), is on p. 515 (Gallica view 271, right page), headed 'Ce memoire doit suivre apres la letre de Cardinal de Pellev\u00e9 qui est cy dessus pag. 425'; found at the integration check of PR #557 (14 Nov 2026), after the transcription, the test and the reading; not used by the reading. It reads 'la court de Savoye', 'du Roy d'Espaigne', 'escript en Espaigne'. Spot checks against the reading of p. 518: 'suivant' where the cipher gives 'suldant', 'fermer' before 'mes letres', 'm'a donn\u00e9 de tant plus grand suspect' (cipher 'docue de tant'), 'en tel pays' at the end, '[Sa] Sainctet\u00e9' as restored. Not yet compared word by word; not used for any count except to attest y.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "One pre-registered measurement of key K-C04 (K-C03.1 + g8 = m, new3 = u, learned on f. 271) on held-out fr. 16041 f. 272 r (752 signs): M5 0.414 vs 0.097 for the best of 200 shuffled keys (gap 0.317); bars 0.45 / +0.30 fixed before (and 0.85 of the lexical ceiling, R = 0.65).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "fr. 16041 f. 272 r read by sense: 179 words, 114 certain, 44 probable, 21 unresolved (strict 63.7%, certain + probable 88.3%); g8 = e on this page.",
    "result": "partial"
   }
  ],
@@ -369,23 +419,23 @@
   "class": "read in part",
   "key": "partial",
   "method": "read with known key",
-  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517 (bar 0.45, lowered from 0.60 before the test, by the contributor's record); two signs (Venus sign, barred dumbbell) stay open, and the code word y, a sense-only value at first, is attested as Espagne by the p. 513 margin and the p. 515 clear copy since the check of PR #557. pp. 518 and 513 (after PR #546) read with K-C02 unchanged plus probable values for new shapes (key-p518-513.tsv); the pre-registered test of these values (K-C03) could not run (p. 513 too short). K-C03.1 (K-C03 + one clerical fix) then passed a pre-registered test on a new document, BnF fr. 16041 f. 271 (M5 0.451 vs 0.077, bar 0.45: passed by 0.001 only, 14 Nov 2026). Integration check of PR #557 (14 Nov 2026): M5 0.451 on f. 271 re-implemented and reproduced (best control 0.08-0.11 across shuffling seeds, so the gap holds); the frozen files of the three pre-registrations are not in the repository, so the order of events is by the contributor's record. A contemporary clear copy of the letter pp. 517-518 was found on p. 515 at that check; it was not used by the reading and has not yet been compared word by word.",
+  "method_basis": "Read with Satoshi Tomokiyo's published d'Este table, adjusted on glossed and already-read pages of the same volume (keys K-C01, K-C02); K-C02 passed a pre-registered held-out test on p. 517 (bar 0.45, lowered from 0.60 before the test, by the contributor's record); two signs (Venus sign, barred dumbbell) stay open, and the code word y, a sense-only value at first, is attested as Espagne by the p. 513 margin and the p. 515 clear copy since the check of PR #557. pp. 518 and 513 (after PR #546) read with K-C02 unchanged plus probable values for new shapes (key-p518-513.tsv); the pre-registered test of these values (K-C03) could not run (p. 513 too short). K-C03.1 (K-C03 + one clerical fix) then passed a pre-registered test on a new document, BnF fr. 16041 f. 271 (M5 0.451 vs 0.077, bar 0.45: passed by 0.001 only, 14 Nov 2026). Integration check of PR #557 (14 Nov 2026): M5 0.451 on f. 271 re-implemented and reproduced (best control 0.08-0.11 across shuffling seeds, so the gap holds); the frozen files of the three pre-registrations are not in the repository, so the order of events is by the contributor's record. A contemporary clear copy of the letter pp. 517-518 was found on p. 515 at that check; it was not used by the reading and has not yet been compared word by word. K-C04 (K-C03.1 + two values learned on f. 271) was then pre-registered and measured once on fr. 16041 f. 272 r (17 Nov 2026): M5 0.414 vs 0.097, gap 0.317: partial by the 0.45 / +0.30 bar; the reading found g8 = e on that page.",
   "contribution": [
    "transcription",
    "key extended or corrected"
   ],
   "fraction_read": 0.73,
   "fraction_read_method": "measured",
-  "fraction_read_source": "README read bar applied strictly, per page, never pooled (certain words only; probable, restored and unresolved words are holes). fraction_read is p. 523, the page first written up: 146/200 = 73.0%. Other pages: p. 517 203/231 = 87.9% (201/231 = 87.0% at the check of 13 Nov; the two 'Espagne' words count as sure since the check of PR #557, 14 Nov 2026, y being attested at pp. 513 and 515), p. 518 87/108 = 80.6%, p. 513 39/47 = 83.0%, BnF fr. 16041 f. 271 136/160 = 85.0%. The contributor's figures (certain + probable): p. 523 177/200 = 88.5%, p. 517 223/231 = 96.5%, p. 518 103/108 = 95.4% (letter pp. 517-518 326/339 = 96.2%), p. 513 43/47 = 91.5%, f. 271 152/160 = 95.0%.",
+  "fraction_read_source": "README read bar applied strictly, per page, never pooled (certain words only; probable, restored and unresolved words are holes). fraction_read is p. 523, the page first written up: 146/200 = 73.0%. Other pages: p. 517 203/231 = 87.9% (201/231 = 87.0% at the check of 13 Nov; the two 'Espagne' words count as sure since the check of PR #557, 14 Nov 2026, y being attested at pp. 513 and 515), p. 518 87/108 = 80.6%, p. 513 39/47 = 83.0%, BnF fr. 16041 f. 271 136/160 = 85.0%. The contributor's figures (certain + probable): p. 523 177/200 = 88.5%, p. 517 223/231 = 96.5%, p. 518 103/108 = 95.4% (letter pp. 517-518 326/339 = 96.2%), p. 513 43/47 = 91.5%, f. 271 152/160 = 95.0%. BnF fr. 16041 f. 272 r (17 Nov 2026): strict 114/179 = 63.7%; contributor, certain + probable 158/179 = 88.3%.",
   "verification": [
    "statistical test",
    "historical consistency"
   ],
   "validation": {
-   "date": "2026-11-14",
+   "date": "2026-11-17",
    "verdict": "pass",
    "file": "validation.txt",
-   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated. Integration check (13 Nov 2026): no M5 script in the PR; an own re-implementation from the description gives M5 0.509, best control 0.068, median 0.025 on p. 517 lines 4-29 (code words spelled out). The p. 517 bar (0.45) was lowered from p. 523's 0.60 before the test, by the contributor's record; the frozen pre-registration, key file and block are not in the repository (the committed key-p517.tsv is a later copy: it hashes to 98ef85f6, the frozen value is aa7d73db). fr. 16041 f. 271 (14 Nov 2026, after PR #546, key K-C03.1, same thresholds, French/Italian lexicons): M5 0.451 vs 0.077, validated at the bar (0.451 against 0.45: a margin of 0.001). Integration check of PR #557 (14 Nov 2026): own M5 implementation (fr and it lexicons, frequency >= 5, 5+ letters, separators removed, code words spelled out) gives 0.451 (fr) and 0.374 (it) on the frozen f. 271 transcription, as stated; best of 200 shuffled keys 0.110 with seed 271 in our shuffling (0.080-0.106 with other seeds; contributor 0.077), so the gap stays above 0.30. PREREG-KC03, PREREG-KC03b, AVENANT-1, the frozen K-C03/K-C03.1 key files, the frozen block and mlex2.py are not in the repository: the committed key-f16041-271.tsv and transcription-f16041-271.txt carry headers and do not hash to the stated values, so the pre-registration is by the contributor's record. The pass is at the bar by 0.001."
+   "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py). p. 523 (5 Nov, key K-C01): M5 0.457 vs 0.078, partial (thresholds 0.60 / +0.30). p. 517 lines 4-29 (13 Nov, key K-C02, thresholds 0.45 / +0.30 fixed before from the clear texts of the volume): M5 0.509 vs 0.067, validated. Integration check (13 Nov 2026): no M5 script in the PR; an own re-implementation from the description gives M5 0.509, best control 0.068, median 0.025 on p. 517 lines 4-29 (code words spelled out). The p. 517 bar (0.45) was lowered from p. 523's 0.60 before the test, by the contributor's record; the frozen pre-registration, key file and block are not in the repository (the committed key-p517.tsv is a later copy: it hashes to 98ef85f6, the frozen value is aa7d73db). fr. 16041 f. 271 (14 Nov 2026, after PR #546, key K-C03.1, same thresholds, French/Italian lexicons): M5 0.451 vs 0.077, validated at the bar (0.451 against 0.45: a margin of 0.001). Integration check of PR #557 (14 Nov 2026): own M5 implementation (fr and it lexicons, frequency >= 5, 5+ letters, separators removed, code words spelled out) gives 0.451 (fr) and 0.374 (it) on the frozen f. 271 transcription, as stated; best of 200 shuffled keys 0.110 with seed 271 in our shuffling (0.080-0.106 with other seeds; contributor 0.077), so the gap stays above 0.30. PREREG-KC03, PREREG-KC03b, AVENANT-1, the frozen K-C03/K-C03.1 key files, the frozen block and mlex2.py are not in the repository: the committed key-f16041-271.tsv and transcription-f16041-271.txt carry headers and do not hash to the stated values, so the pre-registration is by the contributor's record. The pass is at the bar by 0.001. fr. 16041 f. 272 r (17 Nov, key K-C04): M5 0.414 vs 0.097, partial (validation.txt section 6)."
   },
   "provenance": "mixed",
   "credits": [
@@ -476,6 +526,25 @@
     "note": "read_share is the strict share (README read bar): 136 certain of 160 words = 85.0%; the 16 probable, 3 restored ([lettre], [Sa], [sera]) and 5 unresolved words are holes. The contributor's strict figure was 135/160 = 84.4% with 'd'Espagne' (code word y) probable; at the integration check of PR #557 it counts as sure (y attested at Colbert 338 pp. 513 and 515). The contributor's figure, certain + probable, is 152/160 = 95.0%."
    },
    {
+    "doc": "bnf-fr16041-f272r",
+    "label": "BnF fr. 16041 f. 272 r, whole page in cipher (continuation of the f. 271 letter, April 1584)",
+    "transcription": "transcription-f16041-272r.txt",
+    "decryption": "decryption-f16041-272r.txt",
+    "reading": "reading-f16041-272r.md",
+    "translation": "translation-f16041-272r.md",
+    "language": "fr",
+    "state": "read in part",
+    "read_share": 0.637,
+    "summary": "The writer fears his words to a man 'so cold' will be thrown to the wind; news that the King of Spain, beyond his eighty galleys, wants two hundred and has ordered work at Naples, Sicily and wherever timber is to be had; Cardinal Madruzzo, brother of the Emperor's ambassador, asked about 'the marriage of him and the daughter of Spain', had word that the business ... (continues on f. 272 v).",
+    "reading_review": {
+     "grade": "B",
+     "by": "an AI model (for Brice Dudout)",
+     "date": "2026-11-17",
+     "note": "Read as sentences 17 Nov 2026 by one AI reader after the measurement (partial): 114 certain, 44 probable, 21 unresolved of 179 words; every word needing a value learned after the test (g8 = e, new4 = l, x, the barred double long s = u) or a shape correction (= for //, o for dl) is counted probable and listed in reading-f16041-272r.md. No palaeographer checked the page."
+    },
+    "note": "read_share is the strict share: 114 certain of 179 words = 63.7%; certain + probable 158/179 = 88.3%."
+   },
+   {
     "doc": "colbert338-p517",
     "label": "Colbert 338 p. 517, whole page in cipher",
     "transcription": "transcription-p517.txt",
@@ -485,7 +554,7 @@
     "language": "fr",
     "state": "read in part",
     "read_share": 0.879,
-    "summary": "The writer hears that the pope was told, from the court of ‹T…› (Savoy in the clear copy on p. 515), that 'this duke' had letters from the King of Spain urging him to make war on the King and protect Marshal de Montmorency; he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lodève and his letters to Spain, and hopes Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away.",
+    "summary": "The writer hears that the pope was told, from the court of \u2039T\u2026\u203a (Savoy in the clear copy on p. 515), that 'this duke' had letters from the King of Spain urging him to make war on the King and protect Marshal de Montmorency; he doubts it, explains Montmorency's fears of Joyeuse around Clermont-de-Lod\u00e8ve and his letters to Spain, and hopes Poigny's mission has calmed him, as the levy of 4,000 foot in the State of Milan has melted away.",
     "reading_review": {
      "grade": "A",
      "by": "an AI model (for Brice Dudout)",
@@ -523,7 +592,7 @@
     "language": "fr",
     "state": "read in part",
     "read_share": 0.83,
-    "summary": "Luigi d'Este reports that, according to the sieur de Longlée, in Spain they are scheming in case the Church changes its shepherd (the pope dies), strengthening their designs and weakening those of others, and that express orders have been sent to Rome; a matter of great importance for the King's service. Already deciphered in the margin at the time.",
+    "summary": "Luigi d'Este reports that, according to the sieur de Longl\u00e9e, in Spain they are scheming in case the Church changes its shepherd (the pope dies), strengthening their designs and weakening those of others, and that express orders have been sent to Rome; a matter of great importance for the King's service. Already deciphered in the margin at the time.",
     "reading_review": {
      "grade": "B",
      "by": "an AI model (for Brice Dudout)",
