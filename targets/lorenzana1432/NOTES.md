@@ -24,7 +24,7 @@ Bold marks material carried by the cipher. Ordinary type supplies the immediate 
 
 | Recto lines | Reading |
 |---|---|
-| 2–5 | … ch’io **debba isfasciare e levare via ogni fortezza a tutte queste chastella, cioè Parlascio, Chastello Nuovo, Santa Luce, Santo Regholo e Lore[n]zano**. E ch’io proceggha e tento tenere le mani adosso **a Chianni**. |
+| 2–5 | … ch’io **debba isfasciare e levare via ogni fortezza a tutte queste chastella, cioè Parlascio, Chastello Nuovo, Santa Luce, Santo Regholo e Lore[n]zano**. E ch’io proceggha e [?tento] tenere le mani adosso **a Chianni**. |
 | 8–11 | … del fare tenere le mani adosso a **Chianni** non vi veggho … rimane in luogho che per niuna via si può poi **socchorere**, che, come sapete, tra il boscho e quivi è in mezzo **Laiaticho, Orciaticho** e **Pietrachassa**. E non rimanendo di qua **nulla, mi pare** si lasci nelle **forbici**. |
 | 13–14 | … che questi **soldati mettano a sacchomanno** la roba di **questi poveri huomini**, che mi pare una gran **crudeltà**. |
 | 18 | … non vorrei **perdendosi andasono a mio refe**. |
@@ -47,7 +47,9 @@ The **9 December 1431** check, doc. 143, uses the twenty December values alone. 
 - **Three spellings.** The April key yields *Lorezano*, *Mattaoni* and *lascire*. Lorenzana appears in the dateline and the archive inventory, and Mattaione signs his own letter. The unciphered *lasciando* just before *lascire* supports *lasci[a]re*. The named people and places are identifiable even where the literal spelling differs.
 - **Prior art.** Cyphersolver’s 15 November 2026 vetting records checks of DECODE, Tomokiyo, Lasry and the inventory. Searches by sender, date, place and distinctive wording on 17 November returned the inventory and related sources. I found no published decipherment of doc. 196. The claim here is a reproducible reading of the manuscript, with priority open to further evidence.
 
-The project’s explicit-hole scorer counts 381 words in the continuous Italian reading, with a hole rate of 0.021 (read share 0.979). That figure includes the surrounding clear Italian, its doubtful words, and bracketed editorial supplies. The 339-sign count above is confined to cipher.
+The project’s explicit-hole scorer counts 381 words in the continuous Italian reading, with a hole rate of 0.024 (read share 0.976). That figure includes the surrounding clear Italian, its doubtful words, and bracketed editorial supplies. The 339-sign count above is confined to cipher.
+
+A second Codex reader checked a sample of the handwriting, including the December *Antono* and *cassa* anchors and the April inventory clause *perdendosi andasono a mio refe*. On line 5 the reader questioned the clear-text verb *tento*. The transcription, Italian reading and English translation mark it as uncertain. [Side-by-side edition](https://aaymeloglu.github.io/unsolved-ciphers/lorenzana-reading.html) · [Evidence grades and review in the merged edition](https://github.com/aaymeloglu/unsolved-ciphers/tree/f0e4a6601037806c8a755f0771be15e934bccff8/lorenzana-1432)
 
 ## Reproduction
 
