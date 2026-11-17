@@ -29,3 +29,24 @@ DB = g (v7) agrees with the sign we call `d` (= g in T2, "besoing"), already cou
 
 Under 95% of sure words: the letter stays **read in part**. The last 0.04 point would need one more unit settled
 (197 conduite or 344/351 glossed somewhere, or 370).
+
+## 18 Nov 2026: blind sign-form check (Brice Dudout, sheet of 17 Nov evening)
+
+Two units of 573 were doubtful by the FORM of one sign; each was shown framed alone, with reference shapes from the same hand and three
+control signs whose value is sure (574R HB in "arrestez", 573R04 X in "qu'il", 573R20 LAM in "veut"). **Controls: 3 of 3 right.**
+
+| unit | line | token | sign shown | answer | was | now |
+|---|---|---|---|---|---|---|
+| 114 | R02-03 | 317.30.356.14.201.[hz] | last sign | HB (= z, v7 574R "arreste-z") | probable (persuadés) | **sure: persuadez** |
+| 238 | R28 | 367.[x].m7 | middle sign | X (= l) | probable (tous) | probable: decodes "tols", tous by sense only |
+
+| | 17 Nov (v5-v7) | 18 Nov (form check) |
+|---|---|---|
+| sure | 226 | **227** |
+| probable | 7 | 6 |
+| unresolved | 5 | 5 |
+| sure share (Daniel's 95% rule, sure words only) | 94.96% | **95.38%** (227/238) |
+| read by sense (sure + probable) | 97.90% | 97.90% |
+
+At or above 95% of sure words: on our units the letter of image 573 is **read**. The margin is one unit (95% of 238 = 226.1).
+The folder's S/E/N figures are not recomputed here. No frozen transcription or key was changed.
