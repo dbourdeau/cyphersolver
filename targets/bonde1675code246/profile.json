@@ -1,13 +1,13 @@
 {
  "schema_version": 1,
  "target": "bonde1675code246",
- "title": "Carl Bonde to a Chancery Councillor (\"Herr Cantzlirådet\"), Paris, 13 Nov 1675: one letter in a second code (numbers 1-246, one number a letter) on images 113R-114L of the Bonde volume (Riksarkivet, Diplomatica Gallica; same volume as catalogue 2317), read in part from its period gloss; draft key at 0.66 resubstitution, not validated",
+ "title": "Carl Bonde to a Chancery Councillor (\"Herr Cantzlirådet\"), Paris, 18/28 Nov 1675: one letter in a second code (numbers 1-246, one number a letter) on images 113R-114L of the Bonde volume (Riksarkivet, Diplomatica Gallica; same volume as catalogue 2317), read in part from its period gloss; draft key at 0.66 resubstitution, not validated",
  "documents": [
   {
    "id": "letter_1675-11-13",
    "read": "read in part",
    "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), images 113R (33 cipher lines) and 114L (32 cipher lines)",
-   "date": "Paris d. 13 Novembris 1675 (gloss, 114L line 4; 13/23 in one reading); the cipher's own date is 18/28 Novembris 1675 (upper number 18 on a blind digit check by Brice Dudout)",
+   "date": "Paris d. 18/28 Novembris 1675: the cipher (114L G32, 18/28 in figures) and the gloss (114L line 4, first read d. 13 or 13/23) agree; both upper numbers read 18 on blind digit-form checks by Brice Dudout (15 and 17 Nov 2026)",
    "year": 1675,
    "country": "Sweden",
    "route": "Carl Bonde, Swedish envoy (Paris) -> a Chancery Councillor (Herr Cantzlirådet) in Stockholm; perhaps H. Hoghusen (postscript of image 112R), not confirmed",
@@ -217,6 +217,12 @@
    "result": "worked"
   },
   {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "what": "Blind digit-form check answered by Brice Dudout (17 Nov evening; 1 control right): the second digit of the gloss date on 114L line 4 looks like the 8 of this page, not the 3: the gloss reads d. 18 (18/28), like the cipher. The date question raised in #647 is closed; the frozen pass transcriptions keep their first reading (13).",
+   "result": "worked"
+  },
+  {
    "date": "2026-11-15",
    "kind": "solver",
    "what": "Key re-voted on the pass-4 numbers (same 120 values): resubstitution 0.6605. Fable 5.2 key proposal (144 values, block table): 0.6544 by our scoring, under 0.85: no test, held-out lines not decoded. The block table (alternating runs of 9-10 cells a-h, i-q, r-z; å ä ö on 161-169) is confirmed against shuffled keys on the same key.",
@@ -316,11 +322,6 @@
     "item": "113R L19-L33 (301 numbers)",
     "blocker": "not-attempted",
     "detail": "kept aside as a held-out test for the draft key, never decoded"
-   },
-   {
-    "item": "why the cipher date (18/28) and the gloss date (13 Novembris) differ",
-    "blocker": "not-attempted",
-    "detail": "the cipher's upper number reads 18 on a blind digit check; drafting and enciphering dates may differ, or the gloss slipped"
    }
   ],
   "texts": [
@@ -367,7 +368,7 @@
     "decryption": "decryptions/114L_G01-G32_draftkey.txt",
     "language": "sv",
     "state": "decoded, not read",
-    "summary": "The end of the letter: Bonde's confidence in being helped, the King, serving with zeal and affection, seeking an occasion to show it, signed Carolus Bonde, Paris, 13 Nov 1675.",
+    "summary": "The end of the letter: Bonde's confidence in being helped, the King, serving with zeal and affection, seeking an occasion to show it, signed Carolus Bonde, Paris, 18 (Old Style) Nov 1675.",
     "note": "The gloss of these lines was read by Opus sub-agents with many holes, and the draft-key decode is a resubstitution (0.599 on these lines): words show through but no sentences are claimed."
    }
   ],

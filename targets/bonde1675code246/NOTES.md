@@ -1,4 +1,4 @@
-# bonde1675code246: Carl Bonde to a Chancery Councillor, Paris, 13 Nov 1675, in a second code (1-246)
+# bonde1675code246: Carl Bonde to a Chancery Councillor, Paris, 18/28 Nov 1675, in a second code (1-246)
 
 Status: in progress
 
@@ -16,7 +16,7 @@ The draft key built from the gloss is **not validated** (0.66 resubstitution aft
 
 One letter in cipher filling image 113 right (33 lines of numbers) and running on to image 114 left (32 lines). It
 opens `Herr Cantzlirådet` (pencil, letter by letter over the first numbers, and the ink gloss) and ends, in the gloss
-of 114 left line 4, `willigheet. Carolus Bonde Paris d. 13 Novembris` with `1675` on line 5. The last cipher line of
+of 114 left line 4, `willigheet. Carolus Bonde Paris d. 18 Novembris` (first read `13`; see The date) with `1675` on line 5. The last cipher line of
 114 left is `18/28` (in figures) and `50.77.34.42.22.16.112.55.149`, which a later pencil hand wrote out letter by
 letter as `Novembris`, followed by `1675` in clear.
 
@@ -157,7 +157,7 @@ does not follow the cipher) and the number readings, not from missing values. **
 held-out numbers stay unused** for a later attempt with a metric that allows for this, or a better key. The decode does
 beat the shuffled keys by some 0.4, which shows that the system is right; it does not validate the key.
 
-## The date: the cipher says 18/28, the gloss 13
+## The date: 18/28 November 1675 (cipher and gloss agree)
 
 The cipher's last line on 114 left begins with the date in figures, written as a fraction: `18` over `28` (read so by
 both pass-3 readers; one saw `18` above, separated by a stroke). The gloss signature on 114 left line 4 reads
@@ -167,6 +167,13 @@ look. On a blind digit-form check (Brice Dudout, 15 Nov 2026: one digit framed a
 context, 3 of 3 control digits right), the upper number of the fraction is `18`: the cipher is dated
 **18/28 Novembris**, while the gloss gives **d. 13 Novembris**. Either the letter was drafted on the 13th and enciphered
 or sent on the 18th, or the gloss writer slipped. We do not settle which. (Issue #629.)
+
+**18 Nov 2026: settled.** Daniel asked (#647) whether the gloss's upper second digit is 3 or 8. On a second blind digit-form check
+(Brice Dudout, 17 Nov 2026 evening: the digit framed alone, the neighbouring gloss masked, reference 3s and 8s taken from the cipher of
+the same page for want of other 3s or 8s by the gloss hand; 1 of 1 control right) the digit looks like the **8**. The gloss reads
+`d. 18 Novembris` (18/28 if the lower `23` is likewise `28`), like the cipher: there is no date disagreement, and the letter is dated
+**18/28 November 1675** (Old Style / New Style). The frozen pass transcriptions keep their first reading (`13`); only this note and the
+profile change.
 
 ## Prior art
 
@@ -189,4 +196,4 @@ found. The reading is the chancery's own decipherment of the time, so this is no
 - The draft key is untested; 113 right L19-L33 are kept aside for one test. Resubstitution is stuck near 0.66 with
   the present gloss reading (Fable's key included); a better reading of G21-G33 would help more than a new key.
 - The block table and the doubled-letter cells (Fable's hypotheses) are unchecked against new text.
-- Why the cipher (18/28) and the gloss (13) differ, and the recipient (Hoghusen?), are open.
+- The recipient (Hoghusen?) is open. (The date question is settled: 18/28 Nov 1675, see The date.)
