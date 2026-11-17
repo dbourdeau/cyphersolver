@@ -75,15 +75,18 @@ our own folders on D 4 Nr. 76/6.
 Images: Hessisches Staatsarchiv Darmstadt, D 4 Nr. 76/6, via Deutsche Digitale Bibliothek / Archivportal-D.
 Transcription, decoding and reading: Claude (Anthropic) for Brice Dudout (L'Europe chiffrée), 17 Nov 2026.
 
+Not done, and not an outside blocker (noted 17 Nov 2026 at the claims review of the write-up): the blind check of the digit in "entsetzung" and 18 other numbers, prepared for Brice Dudout and not yet answered; the other leaves of the file were not searched for a clear copy of the sheet. Brice Dudout is asked whether to close these or keep the target in progress.
+
 ## Remaining gaps
 - l. 7-8, the word "pas‹…›" / "‹…›rt" (a verb in -irt) - blocker: illegible; crossing-out and blot, microfilm only
-- l. 20, first word; l. 24 end of "gesch‹…›"; l. 26 fourth word and "all‹…›"; l. 27 last word; l. 28 "wer‹…›"; slip S1 second word - blocker: illegible; blot, hole and pasted slip on the microfilm, no other image
-- slip S2: the number 398 and "sammigerku…" - blocker: illegible; 398 is off the key and the decode gives no sense; the slip is cut and small on the microfilm
+- l. 20, first word; l. 24 end of "gesch‹…›"; l. 26 fourth word and "all‹…›"; l. 27 last word; l. 28 "wer‹…›"; slip S1 second word - blocker: illegible; blot, hole and cut slip on the microfilm, no other image
+- slip S2: the number 398 (off the key, three digits, read the same in both passes) - blocker: no-key-material; legible but no value known
+- slip S2: "sammigerku…" - blocker: no-key-material; legible, the decode gives no sense
 
 ## Escalation
 - [x] siblings: the 68 views of the file were fetched; the key strip is on view 11; the sheet lying above the cipher on view 13 is a different, vowel-sign key and does not fit
-- [n/a] clear-pages: no decipherment on the sheet (profile: plaintext none); other leaves of the file were not read for a clear copy
+- [n/a] clear-pages: no decipherment on the sheet (profile: plaintext none); the other leaves of the file were not read for a clear copy, which is not an outside blocker and is left to the contributor to decide (noted 17 Nov 2026 at the claims review of the write-up)
 - [x] known-keys: the strip on view 11 of the same file applied to the whole sheet (667 of 682 numbers in 11-34)
 - [x] print: no edition or reading found in the repository, own folders and a quick web search
 - [n/a] key-rebuild: the key is on the strip; only 38 = o and 39 = u were deduced from 14 contexts
-- [x] retry: two passes on different crops, arbitrated on the image; the unresolved places stay blotted or cut
+- [x] retry: two passes on different crops, arbitrated on the image; nine of the unresolved places stay blotted or cut; 398 and "sammigerku…" are legible and unexplained
