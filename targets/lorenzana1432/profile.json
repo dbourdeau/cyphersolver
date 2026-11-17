@@ -1,0 +1,161 @@
+{
+ "schema_version": 1,
+ "target": "lorenzana1432",
+ "title": "Bernardo d'Alamanno de' Medici to Averardo de' Medici on the order to dismantle five castles, Lorenzana, 17 April 1432 (catalogue 2954)",
+ "documents": [
+  {
+   "id": "map-v-196-208r",
+   "read": "read",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza V, doc. 196, c. 208r",
+   "date": "17 April 1432",
+   "year": 1432,
+   "country": "Florence",
+   "language": "Italian",
+   "route": "Bernardo d’Alamanno de’ Medici (Lorenzana) to Averardo de’ Medici",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No contemporary decipherment visible on the April leaf. The December letters carry interlinear glosses."
+   },
+   "length": {
+    "tokens": 339,
+    "distinct": 25,
+    "unit": "symbols",
+    "measured": true,
+    "file": "april.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Codex from ASF image 415. All 339 cipher positions transcribed and aligned to the manuscript lines.",
+    "image_quality": "good"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "One sign per letter, with multiple signs for several vowels. Names are spelled out.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": "unknown",
+   "note": "Shape and tail distinguish several signs."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "unknown",
+  "sibling_key": "Twenty values recovered by aligning the cipher with the interlinear gloss in MAP V, doc. 140, 8 December 1431."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "found": "not found",
+   "used": false,
+   "where": "Catalogue 2954 vetting and a follow-up search by sender, date and distinctive wording found no earlier decipherment of doc. 196."
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Andrew Aymeloglu requested the investigation and submission.",
+  "models": [
+   "OpenAI Codex (GPT-6)"
+  ],
+  "tools": [
+   "Python 3, verify.py",
+   "ASF digitized manuscript images",
+   "Grande dizionario della lingua italiana"
+  ],
+  "first_date": "2026-11-17",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "kind": "transcription",
+   "what": "Transcribe the April cipher runs and compare signs with the contemporary gloss on doc. 140.",
+   "result": "worked"
+  },
+  {
+   "kind": "key from source",
+   "what": "Align doc. 140 with its gloss to recover 20 values covering 294 April positions.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Use recurrent spellings, place names and surrounding Italian to assign the five remaining values and read the April lines.",
+   "result": "worked"
+  },
+  {
+   "kind": "control",
+   "what": "Apply the 20 values to two glossed passages of doc. 143. Word-aligned edit distance was 6 against 41 gloss letters. The best of 1,000 shuffled keys scored 23. The reader had seen this letter during selection.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Treating di on line 18 as cipher produced fi. The same di occurs in ordinary script on lines 13 and 15. The historical dictionary confirms the final word in a mio refe.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered based on plaintext from external sources",
+  "method_basis": "The interlinear plaintext is on a different letter in the filza. The April letter also supplied five sign values.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "verify.py on april.tsv and the two key tables: 339/339 cipher positions.",
+  "fraction_read": 1,
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "aymeloglu",
+    "role": "solution",
+    "date": "2026-11-17",
+    "note": "Decipherment, transcription and translation with OpenAI Codex."
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "Interlinear gloss in MAP V, doc. 140, used to reconstruct twenty sign values."
+   }
+  ],
+  "key_file": [
+   "december-key.tsv",
+   "april-key.tsv"
+  ],
+  "texts": [
+   {
+    "doc": "map-v-196-208r",
+    "transcription": "transcription.tsv",
+    "decryption": "literal.tsv",
+    "reading": "reading-it.md",
+    "translation": "translation-en.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.979,
+    "summary": "Bernardo reports the order to dismantle five castles, questions whether Chianni can be relieved, and asks if the Ten intend the soldiers to plunder the inhabitants.",
+    "note": "The literal decryption covers only material in cipher. The Italian and English include the surrounding clear text of c. 208r. Editorial supplies and doubtful plain words are marked."
+   }
+  ]
+ }
+}
