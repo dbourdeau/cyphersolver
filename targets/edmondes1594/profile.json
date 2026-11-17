@@ -192,7 +192,8 @@
    "result": "partial"
   },
   {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
-  {"date": "2026-11-15", "kind": "literature search", "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.", "result": "ruled out"}
+  {"date": "2026-11-15", "kind": "literature search", "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.", "result": "ruled out"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["other"], "what": "Integration check of pull request #666 (15 and 16 Nov 2026). The 651 cipher letters of transcription/cipher_letters.txt (equal to pass1.txt) compared with the print: p. 559 on leaf 581 of Internet Archive 11576077bsb fetched afresh and on the committed crop, p. 560 on the committed crop; all 16 runs agree. Scripts re-run in a scratch copy: frozen key sha256 matches; held-out score -4.0950, 200 shuffled keys at most -4.6513; (7, 8, 10) chosen on either half ranks 1 of 2,024 on the other; all as recorded. scripts/sure_words.py re-run: reading/sure_words.tsv reproduced byte for byte, 57 sure words of 147, 95 with every letter allowed by the tested key, 58 of 636 read letters outside it (shift 20: 35, shift 11: 18, other: 5; recounted here from the letters column). The review of 15 Nov had counted 63 by taking every word without a sense mark; the contributor's 57 leaves out four words with a letter outside the tested key and two weak ones, and is the stricter count kept. No earlier target, catalogue entry or lead for this letter; targets/stowe166 names it as outside its six letters. The manuscript was not seen by anyone here; no person has checked the reading.", "result": "worked"}
  ],
  "outcome": {
   "class": "read in part",
@@ -233,7 +234,7 @@
   "credits": [
    {
     "who": "ajbeling",
-    "role": "solution",
+    "role": "new cipher with solution",
     "note": "Andrew Beling, with AI agents: lead, transcription from the print, key recovered from the cipher alone, held-out test, reading; a second agent's independent solution and check.",
     "date": "2026-11-14"
    }
@@ -253,9 +254,9 @@
     "note": "read_share: sure words only, 57 of 147 (reading/sure_words.tsv; rule in fraction_read_source); our earlier figure, every word read, was 130 of 147 (0.884). Read from the 1892 print, manuscript unseen. 15 letters unread; person signs not deciphered (12 occurrences). Words resting on a value chosen by sense are marked ° and weak words † in reading.md and decryption.txt. 'Modernized' is a modern-English rendering of the cipher passages in context, not a translation.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by the packaging AI agent (Claude Opus 5.5), one of the contributor's own agents, not a human review. Read the decryption as sentences inside the calendar's clear text; it reads as English throughout except the unread runs; a second agent's blind reading agrees word for word outside the spans both mark weak."
+     "by": "integration review of PR #666 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "The reading read as sentences inside the calendar's clear text: coherent English, with five unread runs and the undeciphered person signs. Raw: it is a reading of the 1892 print, the manuscript was not seen, and 38 words take a value chosen by sense and 29 a letter outside the tested key, so by sure words it is 57 of 147. The 651 printed cipher letters were compared with the page images of the Internet Archive copy on 15 Nov 2026 (leaf 581 fetched afresh for p. 559; the committed crop for p. 560): all agree. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (also B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    }
   ],

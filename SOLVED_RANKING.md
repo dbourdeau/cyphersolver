@@ -455,7 +455,7 @@ Score = 0.25 D + 0.25 H + 0.20 N + 0.10 R + 0.10 F + 0.10 V. Equal scores share 
 
 ## Not ranked
 
-Not ranked, George Lasry's BnF readings with too little of the text in the repository to score (reading audit, 22 Oct 2026): **Napoleon III / Empress Eugénie (both directions) to Empress Eugénie / Napoleon III (both directions)** (June 1859, about 0.31 held), **Scipion de Gonzague (Français 4696); not established for Français 4698** (1585–1590, about 0.02 held) and **Nicodemo Tranchedini to Francesco Sforza** (28 June 1452, an excerpt only). See [SOLVED_CATALOGUE.md](SOLVED_CATALOGUE.md) §4.
+Not ranked, George Lasry's BnF readings with too little of the text in the repository to score (reading audit, 22 Oct 2026): **Napoleon III / Empress Eugénie (both directions) to Empress Eugénie / Napoleon III (both directions)** (June 1859, about 0.31 held), **Scipion de Gonzague (Français 4696); not established for Français 4698** (1585–1590, about 0.02 held; an earlier reading of its Français 4698 pages by Paolo Rosson, 3–4 Oct 2026 by his record, was found 16 Nov 2026) and **Nicodemo Tranchedini to Francesco Sforza** (28 June 1452, an excerpt only). See [SOLVED_CATALOGUE.md](SOLVED_CATALOGUE.md) §4.
 
 Not ranked: **Monsignor Giovanni Battista Pallotto (Vienna) → Barberini**, BAV Barb.lat. 6960, 1629 (catalogue 237). Its contents were
 identified in Kiewning's 1897 edition and confirmed against the register. The key was found by others: it is the
@@ -521,6 +521,7 @@ Ranked by how firmly the negative is established and how prominent the item was.
 | 11 | W. Loeschner → unknown, ÖStA HHStA Chiffrenschlüssel Kt. 20 (DECODE R2227) | 1816 | Not a cipher: a clear German memorandum amending the Staatskanzlei cipher instruction; its number groups are worked examples with the plaintext above them | Catalogue 269; settled from the images |
 | 12 | Stojan (a Serb prisoner) → aghas, knezes and kin, ÖStA HHStA Verschwörerakten Fasc. 327 (DECODE R688) | 1664–68 | Not a cipher: DECODE's "graphic signs" are Cyrillic letters writing a Serbian prisoner's plea | Catalogue 270; settled from the images |
 | 13 | Andreae, *Chymische Hochzeit*, Strassburg 1616 (DECODE R4502) | 1616 | Not a letter: the printed novel's inscriptions, glossed by the text itself; sign lines are the dates 1378 and 1459 | Catalogue 210; settled from the images and the novel |
+| 14 | Numeral lines after the note of the reader Ioannes, Trinity College MS O.4.22 f. 248v | 11th-12th c. manuscript, addition undated | Not a cipher: a table of the Paschal full moon for the 19 years of the Byzantine lunar cycle, 19 of 19 values matching the computus (Brice Dudout, PR #690; reached separately by a project session the same day) | Catalogue 2902; the CUDL record calls it an unresolved cryptogram. Settled from the images and the computus |
 
 ## Third tier: found already solved by others
 

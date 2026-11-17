@@ -1,5 +1,5 @@
 {
- "_note": "Press and blog coverage of the project, newest last. docs/_build_site.py prints the entries that have a url on the home page hero (\"As seen in\", between <!-- press:start/end -->). An announced piece stays here with \"url\": null and is not shown until it is published: add its url, title and date, then rebuild. \"checked\" is the day the link was opened and the title read; null means the title was not checked against the page. \"label\" replaces the outlet's name in the line. \"logo\" names a file in docs/ (press_<outlet>.svg) shown in place of the name; it is drawn in one colour unless \"logo_colours\" is true. Use a logo only with a source and the right to show it recorded in \"logo_source\".",
+ "_note": "Press and blog coverage of the project, newest last; the home page shows them newest first. docs/_build_site.py prints the entries that have a url on the home page hero (\"As seen in\", between <!-- press:start/end -->). An announced piece stays here with \"url\": null and is not shown until it is published: add its url, title and date, then rebuild. \"checked\" is the day the link was opened and the title read; null means the title was not checked against the page. \"label\" replaces the outlet's name in the line. \"logo\" names a file in docs/ (press_<outlet>.svg) shown in place of the name; it is drawn in one colour unless \"logo_colours\" is true. Use a logo only with a source and the right to show it recorded in \"logo_source\".",
  "items": [
   {
    "outlet": "Klaus Schmeh",
@@ -32,12 +32,13 @@
    "kind": "newspaper",
    "country": "France",
    "lang": "fr",
-   "title": null,
-   "url": null,
-   "date": null,
+   "title": "Quand l'IA prétend déchiffrer des documents historiques qui ont résisté aux cryptographes",
+   "url": "https://www.lemonde.fr/sciences/article/2026/11/16/quand-l-ia-pretend-dechiffrer-des-documents-historiques-qui-ont-resiste-aux-cryptographes_6812197_1650684.html",
+   "date": "2026-11-16",
    "checked": null,
-   "note": "Announced, not yet published.",
-   "logo": null
+   "note": "Title and date taken from the URL (16 Nov 2026); wording not checked against the page.",
+   "logo": "press_lemonde.svg",
+   "logo_source": "Wikimedia Commons, File:Le_Monde.svg (317 x 73), marked public domain (text logo); fetched 16 Nov 2026. Drawn in the hero ink. Shown only to name the outlet and link to its article."
   },
   {
    "outlet": "iX",

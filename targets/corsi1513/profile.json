@@ -301,6 +301,15 @@
       ],
       "what": "Doc 627 blind control: fresh reader, neutral labels S01-S42, cipher-block crop only; BLIND.tsv frozen (sha256 f9d31abe...) and decoded once with key_corsi_w17; separate strict judge against the page's decipherment: 203/262 = 77.5% strict, 203/228 = 89.0% of decoded letters; dictionary-cover shuffle 0/5,000 and 1/5,000 (doc627/blind_control/). Not independent: the key was built from this page.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "plaintext matching"
+      ],
+      "what": "Integration check of PR #698 (a model session for the maintainer; no person): ASF image A0001353 fetched from the review host (md5 d54b593a..., as stated); the five-line decipherment below the signature seen and found to agree with doc627/decipherment_627.txt; about 150 cipher groups compared by eye, identity and order agree; decode_627_w17.txt and the blind decode_once.txt reproduced with a decoder written for the check; judge counts re-added (203/262); shuffle with it-cinquecento 0 of 2,000. Doc 622 (A0001335) found to be a copy of 623 by its clear text.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -345,9 +354,9 @@
     ],
     "gaps": [
       {
-        "item": "Doc. 627 as a control (blind decode against its on-page decipherment) not run",
+        "item": "No independent test of the key on a second letter with its own decipherment",
         "blocker": "not-attempted",
-        "detail": "Would test the key on the letter it came from."
+        "detail": "The doc 627 blind control (16 Nov, doc627/blind_control/, 77.5% strict) was run but is not independent: the key was built from that page."
       },
       {
         "item": "Code values 27 (re di Scotia?) and 24 (Inghilterra?) in 623; 22 (Francia) basis not recorded in the key note; #161 in 623 has no value",
@@ -372,7 +381,7 @@
       {
         "item": "Copies 621, 622 and 628 not collated",
         "blocker": "not-attempted",
-        "detail": "621 gives clear equivalents for part of 620; 622 is a copy of 623."
+        "detail": "621 gives clear equivalents for part of 620; 622 is a copy of 623 (its clear text follows 623's, integration check of 16 Nov); not collated sign by sign."
       },
       {
         "item": "Doc. 633: holes from the shapes NEW1 (a flat 2-like sign, frequent before z) and NEW2, and the bare sign z, which have no value in the key; doubtful superscript attribution",

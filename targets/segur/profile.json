@@ -267,6 +267,15 @@
    "what": "Reading audit, per-document pass (George Lasry's sentence test): f. 288v re-read with the word-sign values given in reading.md's notes: the slip builds French sentences with scattered open name and date signs. Per-document C overturned to B. Claim unchanged.",
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Key replay (docs/_replay.py): key_v4.json applied to ct_233/239/288.txt and compared with the bold passages of reading.md: 126 of 146 words exact (86.3%), 14 differing with no letter-level mark. The reading now brackets each letter the key does not give; no letter changed. After: 129 of 147 words exact (87.8%), 16 emended and marked, 2 unread, 0 unmarked, 20 open word-signs.",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
   }
  ],
  "outcome": {

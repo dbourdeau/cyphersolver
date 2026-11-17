@@ -132,9 +132,16 @@ Then in clear: "The King hath a disposition to geue him the Gouernment of Prouen
   were not seen. So the originals in the State Papers carried a decipherment that Love could read.
 - HMC, *Calendar of the Salisbury MSS at Hatfield*, part IV (1892; archive.org `11576077bsb`). pp. 559–560 print a
   different Edmondes letter, "From the Camp before Laon, 9 July 1594" (unsigned, endorsed "Mr. Edmunds"). Its cipher is
-  printed undeciphered, as letter strings and numbers ("fxxw bfza blhk…", "4S", "300", "800", "26"). That is not
+  printed undeciphered, as letter strings and numbers ("fxxw bfza blhk…", "4S", "300" twice, "26"; an earlier state of
+  this note had "800" for the second 300, corrected 15 Nov 2026 on the page image). That is not
   the sign alphabet of Stowe 166, so it is not one of our six letters. p. 371 (Fontainebleau, 18 Sept 1593) and
-  pp. 620–622 (Sept 1594) are other Edmondes letters. None of our passages is in the volume.
+  pp. 620–622 (Sept 1594) are other Edmondes letters. None of our passages is in the volume. That letter is now
+  [`targets/edmondes1594/`](../edmondes1594/) (Andrew Beling, with AI agents, pull request #666): a letter cipher of shifted
+  alphabets, read in part from the print.
+- Pointer, not verified here (Andrew Beling, comment on pull request #666, 15 Nov 2026): TNA SP 78/33 f. 349v, the
+  received original of the despatch of 13 July 1594, carries a decipherment of 1594 between the lines of its cipher
+  passage (our R7774). Seen in passing by the contributor's AI agents in State Papers Online (licensed, saved at the
+  Library of Congress); not collated with our reading. It would be an outside check of R7774.
 - *List and Analysis of State Papers Foreign* (HMSO, vols 3-5, 1591-94) calendars SP 78, where Edmondes's originals may sit (Stowe 166 holds his own papers). It is in copyright, not on archive.org, and BHO carries it only as premium content. Not grepped.
 - No decipherment on the leaves: no interlinear readings and no key filed with the volume.
 

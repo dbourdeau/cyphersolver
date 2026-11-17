@@ -1,5 +1,17 @@
 # Vetting, Daniel Bourdeau (2026-11-16)
 
+**Ids.** This vetting was written against the ids 2931-2933 that the branch gave the sweep's rows. When the sweep was merged
+into `research/leads.json` on current main (16 Nov 2026, after the merge of the Africa sweeps) the rows got fresh ids:
+**2933 is now 2943** (Sachau 218), **2932 is now 2942** (Gotha), the vetted Sacromonte row **2930 is now 2941**, and row 1
+(Gordon's note, **2931** below) was not merged at all: it is the same document as catalogue 2939 and `targets/gordonmudir1884`,
+which main now holds, so it is excluded in `archive_sweep_2026-10/exclude.json`. `vetting.json` is keyed by the new ids and no
+longer carries the 2931 note, which is kept below as written.
+
+**2943's extent.** `vetting.json` for 2943 (and the promoted catalogue entry's `vetting.seen.extent`) still carries the vetting's
+estimate of 120-160 signs, counted from the crops. Brice Dudout's count on 16 Nov 2026 (comment on PR #706, with Claude Opus 5.5) is
+59 signs of 26 shapes in about 13 groups; the catalogue entry's status gives it. A promoted entry cannot be re-vetted through
+`vet.py --apply`, so the extent field is left as vetted.
+
 Run by Daniel Bourdeau with a Claude Code session (Claude Opus 5.5), 16 Nov 2026, following `research/VET.md`. Leads
 from the Arabic sweep 2 of 16 Nov 2026 (`research/sweep_2026-11-16_arabic_2/`, parts B and C). Open issues and pull
 requests searched for each id and for Gordon, Sachau and Gotha before starting.
@@ -40,8 +52,5 @@ requests searched for each id and for Gordon, Sachau and Gotha before starting.
 - 2932: a person in a browser on the Gotha/Erfurt viewer, or a scan order to the Forschungsbibliothek Gotha for the
   two leaves at the end of the volume.
 - 2931: close as a duplicate when #591 merges.
-- 2933: compare the Sachau secret alphabets (pp. 338 ff.) and Sachau 221 f. 20b; decide whether the plaintext is
+- 2943 (was 2933): compare the Sachau secret alphabets (pp. 338 ff.) and Sachau 221 f. 20b; decide whether the plaintext is
   Syriac or Karshuni.
-
-
-**Ids renumbered at merge (16 Nov 2026):** main had used 2930-2933 meanwhile. 2932 -> 2942 (Gotha), 2933 -> 2943 (Sachau 218); 2931 (Gordon) was not merged, as a duplicate of catalogue 2939; the Libro mudo is 2941.

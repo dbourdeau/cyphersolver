@@ -1,0 +1,314 @@
+{
+ "2667": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "The Online-Findbuch record, re-read by curl, lists 'Schreiben in Geheimschrift (Bl. 191-195)' inside Nr. 2661 (dowry of Anna Maria of Brunswick, 1550-1568) with no decipherment, key or clear copy named. Not digitised; nothing on it in DECODE, Tomokiyo, Lasry or print. The same file holds a 1553 credit assignment from Margrave Johann of Küstrin to Margrave Albrecht (Alcibiades?), so the writer of the cipher may come from that circle rather than from the Prussian court: not checked.",
+  "access": "archive",
+  "access_note": "Landesarchiv Thüringen, Staatsarchiv Meiningen, reading room or reproduction order; the Online-Findbuch record carries no digitisation link.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archive's own description: Archive in Thüringen Online-Findbuch, Staatsarchiv Meiningen, Gemeinschaftlich Hennebergisches Archiv Sektion I (4-10-1010), Archivalien-Signatur 2661, https://www.archive-in-thueringen.de/de/findbuch/view/bestand/27769/systematik/265688/archivgut/5622708, fetched by curl 16 Nov 2026.",
+    "extent": "Five leaves (Bl. 191-195) described as 'Schreiben in Geheimschrift' inside a file of 1550-1568; the date, writer and amount of cipher on those leaves are not given.",
+    "cipher": "Record text verbatim: 'Beschaffung und Absicherung der Mitgift der Anna Maria von Braunschweig bei deren Hochzeit mit Herzog Albrecht von Preußen ... Enthält u. a.: Vollmacht der Gräfin Elisabeth für ihren Ehemann Graf Poppo, 1550 (Bl. 19-21).- Abtretung des Kredits durch Markgraf Johann an Markgraf Albrecht, 1553 (Bl. 47-54).- ... Schreiben in Geheimschrift (Bl. 191-195).- Protokoll der Verhandlungen des Grafen Poppo mit braunschweigischen und preußischen Räten, 1567 bis 1568'. No decipherment or translation is listed beside the cipher leaves."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Henneberg', 'Meiningen', '2661', 'Anna Maria', 'Albrecht', 'Poppo' (16 Nov 2026) against the DECODE dumps, catalogue, leads and targets: only this lead and unrelated Henneberg/Meiningen catalogue entries (Hennebergica Altenburg Nr. 310, Hildburghausen Nr. 1006); no DECODE record of Nr. 2661.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Henneberg, Meiningen, 2661, Anna Maria, Albrecht, Poppo: the only hit is Wallenstein (Albrecht von Wallenstein), unrelated; nothing on Henneberg or the Prussian marriage.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "No edition of the Henneberg-Prussia dowry papers found; the Marburg database 'Dynastische Eheverträge' prints the 1549 Prussia-Brunswick-Calenberg marriage contract (no. 398), not the later correspondence, and no cipher letter.",
+    "literature": "Web search (16 Nov 2026) on Henneberg, Poppo, Mitgift, Anna Maria von Braunschweig, Albrecht von Preußen, Geheimschrift: only the marriage-contract database, archive records and a DHM letter of Poppo; no study or decipherment of the Bl. 191-195 cipher."
+   },
+   "key_check": "No key is named in the file. Duke Albrecht of Prussia's chancery ciphers survive in GStA PK (Ostpreußischer Folianten / EM key leads such as OBA 27584 and EM 19 a Nr. 68), and if the 1553 piece concerns Margrave Albrecht Alcibiades his cipher family is also a candidate. Neither was tested: the ciphertext is not online.",
+   "duplicates": "known.py on the shelfmark, fonds and names finds only this lead; Nr. 2661 is not in catalogue.json, and its siblings (Nr. 2658, 2662, 2678, 2681) carry no cipher note in the Findbuch.",
+   "verdict": "open"
+  }
+ },
+ "2653": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The archive's own record (DDB Solr API, provider item labw-4-14322) says the file 'Enthält u.a.: Chiffriertes Schreiben mit Dechiffrierung': the one ciphered letter is filed with its decipherment, so it was read at the time. Closed as read; the pair is still a possible crib for Baden's 1779 cipher if the folio is ever ordered.",
+  "access": "archive",
+  "access_note": "GLA Karlsruhe 111 Nr. 304, 1 Fasz., not digitised (no digital object in the record); Archivportal-D and DDB item pages are behind an Anubis bot check, but the DDB Solr API returns the record text to a script.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archive's own description, read through the Deutsche Digitale Bibliothek Solr API on 16 Nov 2026 (https://api.deutsche-digitale-bibliothek.de/2/search/index/search/select?q=id:F55HIYVMDLRR2RSC2JBQCXP2PU4MCXPT): Landesarchiv Baden-Württemberg, Abt. Generallandesarchiv Karlsruhe, 111 Nr. 304, 'Reichshofratsgutachten im Prozess Baden gegen von der Leyen', 1779, provenance Geheimer Rat Baden.",
+    "extent": "One ciphered letter inside a single fascicle of 1779 (Geroldseck >> 03. Ansprüche); its length, writer and recipient are not given.",
+    "cipher": "Record text verbatim: 'Enthält u.a.: Chiffriertes Schreiben mit Dechiffrierung'. The decipherment is filed with the cipher letter."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Geroldseck', 'von der Leyen', '111 Nr. 304', 'Karlsruhe' (16 Nov 2026): only this lead and its sweep row; other GLA Karlsruhe catalogue entries are different files; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Geroldseck, von der Leyen, 111 Nr. 304, Karlsruhe: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "No edition of the Reichshofrat opinion or the cipher letter found; the decipherment that matters is the contemporary one filed in the fascicle, as the record states.",
+    "literature": "Web search (16 Nov 2026) for the record wording with Geroldseck and Generallandesarchiv found only other GLA 111 records and unrelated cipher items; nothing on this letter."
+   },
+   "key_check": "No key named. A plaintext-ciphertext pair could test the Baden chancery keys in GLA 48 (Nr. 65-84), not done since the folio is not online.",
+   "duplicates": "known.py on the shelfmark and names: no catalogue entry or other lead for 111 Nr. 304.",
+   "verdict": "read",
+   "closed": "Closed as read: the archive record says the ciphered letter is filed with its Dechiffrierung, a contemporary decipherment."
+  }
+ },
+ "2437": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "All seven images of Cap.C.I S 1199,11 were re-fetched from lwl.org: three pages of four-digit groups after two clear German lines, closed 'Amsterdam, 11. Nov. 1808 ... Niebuhr', with no plaintext between the lines and no decipherment sheet in the unit. The settling check is the edition: the 'Verzeichnis der in Band II/2 abgedruckten Stücke' of Hubatsch's Stein edition (which also lists pieces printed only in Botzenhart's older edition) has no Niebuhr letter between 26 Oct and 16 Dec 1808, so neither Stein edition prints it. Gerhard/Norvin, Die Briefe B. G. Niebuhrs I (1926), and a clear draft in Niebuhr's own papers (GStA PK) were not checked: they are the remaining doubt.",
+  "access": "online",
+  "access_note": "Free scans on lwl.org (Lesesaal-Digitalisate/C_Adelsarchive/Cap/Cap.C.I/Cap.C.I_S 1199,11/, images _000-_006, METS mets.xml), still reachable by curl on 16 Nov 2026 although the rest of lwl.org shows a maintenance page.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "https://www.lwl.org/325dig-download/Lesesaal-Digitalisate/C_Adelsarchive/Cap/Cap.C.I/Cap.C.I_S%201199,11/Cap.C.I_S%201199,11_000.jpg to _006.jpg (all seven images, from the METS file in the same folder), viewed 16 Nov 2026 on a contact sheet; LAV NRW / Vereinigte Westfälische Adelsarchive, Nachlass Freiherr vom Stein, Cap.C.I S 1199,11.",
+    "extent": "Images 001, 003 and 005 are the three written pages (000 is a colour-scale duplicate of 001; 002, 004, 006 are blank versos with the 'Steinsches Archiv' stamp): about 17 lines of four-digit groups on p. 1 after the opening, about 30 on p. 2 and about 25 on p. 3, then one clear closing line, place, date and signature. Brice Dudout's transcription of p. 1 (issue #359) counts 265 groups, all at or below 3123.",
+    "cipher": "Numeric code of groups up to about 3100, separated by dots, written as continuous text; the opening ('Euer Excellenz, konnte ich noch mit letzter Post den richtigen Empfang der von Herrn Bandirector Hundt ... Documente melden') and the closing courtesy line are clear. No plaintext above the groups, nothing in the margins, no decipherment leaf in the unit."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Niebuhr', 'Stein', '1199', 'Cap.C.I' (16 Nov 2026): only this lead, the sweep README row and a sibling Wittgenstein lead of 22 Oct 1808; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Niebuhr, Cap.C.I, 1199: no hit ('Stein' hits are Holstein and Turenne items).",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit (the 'Stein' hits are Holstein in Clairambault 531).",
+    "edition": "Freiherr vom Stein, Briefe und amtliche Schriften (ed. Hubatsch), Bd. II/2, 'Verzeichnis der in Band II/2 abgedruckten Stücke' (lwl.org fs-11559.pdf, read from the Internet Archive copy of 23 Apr 2022, since lwl.org shows a maintenance page): entries 868-921 cover 26 Oct - 16 Dec 1808 and include the unnumbered pieces printed only in Botzenhart's old edition; no Niebuhr to Stein letter of November 1808 is listed (Niebuhr letters appear only for 1807 and Jan-Apr 1808). Pertz, Leben Steins II, was checked on 11 Nov with no Amsterdam letter. Gerhard/Norvin, Die Briefe B. G. Niebuhrs I (1926) not found online and not checked.",
+    "literature": "Web searches (16 Nov 2026) on Niebuhr, Stein, Amsterdam, 11 November 1808, Anleihe, chiffriert found only Stein-edition PDFs for other dates and loan background; no study or decipherment of this letter."
+   },
+   "key_check": "No key filed with the letter. The interlined Prince Wilhelm letter (Paris, 24 Jan 1808, S 1230,04) and the deciphered Goltz and Humboldt letters use other repertories (Dudout); Prussian ministerial code books of 1808 in GStA PK were not searched. Not tested.",
+   "duplicates": "known.py on the shelfmark and names: no catalogue entry for S 1199,11; the Stein-Wittgenstein cipher lead (22 Oct 1808) is a different letter.",
+   "verdict": "open"
+  }
+ },
+ "1696": {
+  "verdict": "key_lookup",
+  "confidence": "high",
+  "note": "The 5 Nov vetting found the key (image 133) but no ciphertext. A closer look found it: the letter on images 022-023 (Arnsberg, 5 Jan 1677, signed Landsberg) carries inline cipher in that key, e.g. '83 auf allen 94', '30641645 1918', '64181936', '4519136 53'. Spot test: 45-19-13-36 = K-E-I-N ('kein'), and 83 and 94 are nomenclator entries (Prince Guillaume of Fürstenberg, tractaten). No plaintext is written over the figures. Closed as key_lookup: the key in the same volume reads it. The other letters were looked at only on contact sheets, so the volume probably holds more scattered code numbers than this one sample.",
+  "access": "online",
+  "access_note": "Digitised: 134 images at https://www.landesarchiv-nrw.de/data01/Abt_Westfalen/Msc_VI/00119/MSC_VI_00119_NNN.jpg (METS .../digitalisate/Abt_Westfalen/Msc_VI/00119/mets.xml); the DDB Solr record flags digitalisat=true. The lead's access 'archive' should be 'online'.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "Landesarchiv NRW Abt. Westfalen W 004 (Msc. VI) Nr. 119, all 134 images downloaded 16 Nov 2026 from https://www.landesarchiv-nrw.de/data01/Abt_Westfalen/Msc_VI/00119/MSC_VI_00119_001.jpg ... _134.jpg; images 001-045 viewed on contact sheets, image 017 (Vienna, 21 Jan 1677) and image 023 (left page) read at full resolution, image 133 (the key) read in full; the archive's description read through the DDB Solr API (record YJK5OEKXRL2FKG7HBBUATGIAMESBDZRX, provider item Vz_025619a2-96f3-4ad6-94bf-2e39a0f513fe).",
+    "extent": "A bound volume of 1677 (134 double-page images) of Landsberg's correspondence with the Westphalian envoys at Vienna (Fürstenberg, Schmidtman) and copies of Leopold I's letters. In the letter on images 022-023 at least five cipher runs appear inside the German text on one page (single nomenclator numbers and letter-number strings of 6-12 digits). The other letters were checked only on contact sheets, where scattered code numbers cannot be seen, so the full extent of cipher in the volume is not measured.",
+    "cipher": "Nomenclator of letters to two-digit numbers (A 10, B 12, C 16, D 30, E 19, F 80, G 17, H 60, I 13, K 45, L 50, M 24, N 36, O 22, P 33, Q 42, R 18, S 15, T 44, V 64, W 46, X 39, Y 28, Z 56, with nulls marked) and about 125 numbered words and names (2 armee ... 83 Prince Guillaume de Fürstenberg, 93 Turenne, 94 tractaten ... 126 Secretarius), image 133. On image 023 the text has '83 auf allen 94 gelassen werden ... 306416451918 ... 64181936 verlieren ... 1822301386 ... 4519136 53 bekommen'; 4519136 = 45 19 13 36 = KEIN under the key. No decipherment is written above or beside the figures."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Landsberg', 'Schmidtman', 'Fürstenberg', 'W 004', 'Westfalen' (16 Nov 2026): only this lead, its sweep row and unrelated Landsberg-Velen and Galen/Fürstenberg catalogue entries (W 004 Nr. 52 is a different file); no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Landsberg, Schmidtman, Fürstenberg, W 004, Westfalen: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "No edition of the Landsberg-Fürstenberg-Schmidtman correspondence of 1677 found (5 Nov web searches, repeated through known.py and the ledgers); nothing prints these letters.",
+    "literature": "Web searches of 5 Nov 2026 (Landsberg, Westfalen 1677, Wien, Fürstenberg, Schmidtman, Chiffre) found only biographies and archive records; no study of this key or these letters."
+   },
+   "key_check": "Key in the same volume (image 133), seen in full; spot-tested on image 023: 45-19-13-36 gives KEIN, and the nomenclator numbers 83 and 94 fit the context ('83 auf allen 94 gelassen werden'). A full decipherment was not made.",
+   "key_in_volume": "W 004 Nr. 119, image 133: letter-number alphabet plus a numbered nomenclator of about 125 entries; spot-tested on the 5 Jan 1677 letter (images 022-023) with a matching word (KEIN).",
+   "duplicates": "known.py on the shelfmark and names: no catalogue entry for W 004 Nr. 119; catalogue 1645 (W 004 Nr. 52, Galen-Fürstenberg 1659) is a different volume.",
+   "verdict": "key_lookup",
+   "closed": "Closed as key_lookup: the volume holds both the cipher passages (e.g. the Landsberg letter of 5 Jan 1677, images 022-023) and the nomenclator that reads them (image 133), which gives a sensible word in a spot test."
+  }
+ },
+ "2896": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict. What blocks it is Klemm 2025 (Die Welt des Islams 65/4, 381-414, DOI 10.1163/15700607-20240025, CC BY), a study of IIS MS 1662 itself that may read or describe the cipher on fols 29a-b and 83b. Semantic Scholar and OpenAlex list it as open access but give only the DOI link; every Brill route (view and downloadpdf) answered 405 'Human Verification' to curl on 16 Nov 2026, and the SAW Leipzig page gives only the abstract, which says nothing on the cipher. The IIS catalogue host did not answer (curl time-out) on 16 Nov. Needs Klemm 2025 read in Chrome, then IIS images of fols 29a-b and 83b.",
+  "access": "archive",
+  "access_note": "Ismaili Special Collections Unit, Aga Khan Centre, London: no images on the record (record says 'No image available'); scan request needed."
+ },
+ "2897": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the 15 Nov blocker stands. The only description is Cortese's 'part of the text in cryptic alphabet' for ff. 71r-86v, with no image. If it is the standard Tayyibi secret script it is a lookup in a printed alphabet (Strothmann 1943; tables in IIS MS 1455 fol. 1a and MS 1662 fol. 23a), but nothing seen settles that. special-collections.iis.ac.uk timed out to curl on 16 Nov 2026, so the record could not be re-read. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) and known.py have nothing on MS 1291.",
+  "access": "archive",
+  "access_note": "IIS reading room or a scan request for MS 1291 ff. 71r-86v."
+ },
+ "2898": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the 15 Nov blocker stands. Cortese's 'cryptograms on p. 23' (the last page of text; the same entry has a 'small diagram on p. 19') may be words in the Tayyibi secret script, a cipher colophon or letter diagrams, and no image is online. special-collections.iis.ac.uk timed out on 16 Nov 2026. Poonawala 1977 p. 324 no. 55 not opened. Tomokiyo, Lasry and known.py: nothing on MS 1313. Needs an image of p. 23; if it is under two lines, close it as too short.",
+  "access": "archive",
+  "access_note": "IIS reading room or a scan request for MS 1313 p. 23."
+ },
+ "2224": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "Komáromy prints all four letters in Magyar Történelmi Tár 1906 (REAL-J 4115, opened in pass tc05). They are clear Hungarian with seven single secret signs in all, printed as '(titkos jel)': two each in nos. 25, 26 and 27, one in no. 36. There are no cipher runs and no number groups. Lang's own note (2015, p. 68 n. 85) says only one or two words per letter were left unresolved. This is a printed letter series with scattered sign-words, not an unread cipher, so it is closed as partly_read: the seven signs survive only in the MNL OL E 185 originals, which are not online.",
+  "access": "archive",
+  "access_note": "Edition free on REAL-J (real-j.mtak.hu/4115, MagyarTortenelmiTar_1906_54_4_07.pdf); originals in MNL OL E 185 (Nádasdy family archive), not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "Komáromy András (ed.), 'Kerecsényi László levelei Nádasdy Tamáshoz', Magyar Történelmi Tár 4th ser. vol. 7 (1906), nos. 25, 26, 27 (pp. 130-132) and 36 (pp. 249-250), REAL-J record 4115 (MagyarTortenelmiTar_1906_54_4_07.pdf), read in vetting pass tc05 (research/vetting_2026-11/out_tc05.json); that reading was taken over on 16 Nov 2026 and not repeated.",
+    "extent": "Four letters of 18, 23 and 26 Sep 1555 and 7 May 1556 printed in full in Hungarian; seven single secret signs in all (2 + 2 + 2 + 1), each standing for one word or name.",
+    "cipher": "Isolated Hungarian sign-words, printed only as the editor's placeholder '(titkos jel)' (e.g. 'az teb (titkos jel) kiről immáron', 'az egész ország (titkos jel) többet írnék, de (titkos jel)', 'ha (titkos jel)'); the signs' shapes are not reproduced. No cipher passage longer than one word."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Kerecsényi', 'Kerecsenyi', 'Nádasdy', 'Nadasdy', 'E 185' (16 Nov 2026): only this lead, the sweep D rows, the oldest-cipher scan note and the separate Báthory András-Nádasdy catalogue entry; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Kerecsényi, Kerecsenyi, Nádasdy, Nadasdy, E 185: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit on the names (two hits on 'E 185' are inside unrelated text).",
+    "edition": "Magyar Történelmi Tár 1906 prints the four letters in full (so the letters are read) with the seven signs left as '(titkos jel)'; no reading of the signs is given there or elsewhere found.",
+    "literature": "Lang 2015 (MTA doctoral thesis, repertory p. 248, C.Ker.01-04) marks them 'magyar jelek, megfejtetlen, részleges', and p. 68 n. 85 groups them with letters where one or two words stayed unresolved; Pálffy 1999 (Studia Agriensia 20) uses the letters for intelligence history without reading the signs."
+   },
+   "key_check": "No key known for Kerecsényi's signs; the Báthory András-Nádasdy signs of 1553-54 (catalogue entry from MTT IV/6) are a possible sibling system, not compared because the 1555-56 sign shapes are not printed.",
+   "duplicates": "known.py: no catalogue entry for these four letters; the Báthory András letters to Nádasdy are a separate series and entry.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly_read: the four letters are printed in full in Magyar Történelmi Tár 1906, and only seven isolated sign-words, not reproduced in print, remain unresolved."
+  }
+ },
+ "2082": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the earlier blocker stands. This is a cluster of three volumes with different holders and writers (Benjamin Webb diaries 1715-18, Thomas Danforth notebook 1662-66, Matthew Bridge sermon notes 1694-96, MHS Ms. SBd-116), each described only as 'in cipher' or 'short hand or a cipher', and the descriptions sit on ArchiveGrid, which is behind a bot check. No leaf seen. Tomokiyo, Lasry (lists fetched 15 Nov 2026) and known.py have nothing on Webb, Danforth or Bridge. Needs splitting into three leads and MHS samples, so that shorthand can be set apart.",
+  "access": "archive",
+  "access_note": "MHS reading room; no scans online."
+ },
+ "1293": {
+  "verdict": "not_cipher",
+  "confidence": "medium",
+  "note": "The MHS digital edition (Papers of Robert Treat Paine, vol. 2), re-read 16 Nov 2026, describes the 1760 reply as shorthand ('RTP's answer dated July 1760 is in shorthand and has not been deciphered', RTP2d191). The 1757 item is a 'brief note in undeciphered code' in the endorsement of Paine's own draft (RTP2d054): a few words in Paine's hand in the same correspondence, almost certainly the same shorthand. Closed as not_cipher (unread personal shorthand of a few lines). The 1757 note was not seen, so it is not strictly settled.",
+  "access": "archive",
+  "access_note": "MHS Robert Treat Paine Papers, Box 2 / microfilm reel 2; edition text online at masshist.org/publications/rtpp, no image of the notes.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "Massachusetts Historical Society digital edition, Robert Treat Paine Papers vol. 2: https://www.masshist.org/publications/rtpp/index.php/view/RTP2d054 (RTP to 'Lavinia', after Oct 1757) and https://www.masshist.org/publications/rtpp/index.php/view/RTP2d191 ('Lavinia' to RTP, July 1760), fetched by curl 16 Nov 2026; the source notes were read, and the secret notes themselves are not printed or imaged.",
+    "extent": "Two tiny items: a 'brief note' after the endorsement 'from & to Lavinia' on Paine's 1757 draft, and Paine's July 1760 answer written on the letter from 'Lavinia' ('from & to Lavinia on a Bag'); lengths not given, both evidently a few lines.",
+    "cipher": "Editors' notes verbatim: 'Dft; endorsed: \"from & to Lavinia\" followed by a brief note in undeciphered code' (RTP2d054) and 'RTP's answer dated July 1760 is in shorthand and has not been deciphered' (RTP2d191). Shorthand in the 1760 case, by the editors' own word."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Treat Paine', 'Lavinia', 'RTP2' (16 Nov 2026): no hit outside this lead; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Treat Paine, Lavinia, RTP2: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "Riley and Hanson (eds), The Papers of Robert Treat Paine vol. 2 (MHS 1992, now online) prints both letters in full and gives the secret notes as undeciphered (shorthand / code); no reading of them.",
+    "literature": "Web search (16 Nov 2026) on Robert Treat Paine, Lavinia, undeciphered code: only the MHS edition pages (which suggest 'Lavinia' may be Mary Fletcher); no study of the shorthand."
+   },
+   "key_check": "No key; if it is shorthand, an eighteenth-century English system (Weston, Byrom, Mason) would read it. Not tested since no image is online.",
+   "duplicates": "known.py: no catalogue entry or other lead for these Paine items.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not_cipher: the editors call the 1760 answer shorthand, and the 1757 'code' is a brief endorsement note in Paine's own hand in the same exchange; both are a few lines of personal shorthand, not a cipher."
+  }
+ },
+ "2081": {
+  "verdict": "not_cipher",
+  "confidence": "medium",
+  "note": "Two pages of MHS Ms. Sbd-133 are published on the MHS Beehive blog (Dibbell, 15 May 2009, images diary_003.jpg and diary2_003.jpg) and were viewed. Entries are Arabic day numbers followed by short stroke-sign groups in a stenographic script, and the month heads are written in the same signs. The donor's 1845 note calls it a case for 'skill in stenography', and B. L. Oliver (1842) borrowed Davis's 'treatise on shorthand, which is supposed to be the one used'. Closed as not_cipher: an unidentified shorthand diary, unread (Schmeh and Futility Closet 2026 list it as unsolved). Identifying the system is a job for a stenography specialist, not cryptanalysis.",
+  "access": "online",
+  "access_note": "Two sample pages on the MHS blog; the full volume is an MHS reading-room item (Ms. Sbd-133).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "MHS Beehive blog, Jeremy Dibbell, 'Can you Crack the Cipher?', 15 May 2009, https://www.masshist.org/beehiveblog/2009/05/can-you-crack-the-cipher/, page images https://www.masshist.org/imhs/cms/assets/diary_003.jpg (page headed 1776) and https://www.masshist.org/imhs/cms/assets/diary2_003.jpg, fetched 16 Nov 2026; diary_003 viewed in full.",
+    "extent": "A small bound volume of dated entries, 1776 to about 1799 by the donor's note (MHS title 1776-1845), long entries on one side and short ones on the other; the page seen holds three months of short entries (about 20 entries).",
+    "cipher": "Arabic numerals for days, then a dot and one to four cursive stroke signs per entry, repeated formulaically (a cross-like sign, a looped hook, a hooked 7-shape, a long tilde-like stroke), with month heads in the same signs; the forms are those of stroke shorthand, not separate cipher symbols for letters, and the shorthand origin was assumed by the people who had it in 1841-45."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Sbd-133', 'cipher diary', 'Massachusetts Historical' (16 Nov 2026): no record of this diary; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Sbd-133, cipher diary, Massachusetts Historical: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "No edition or transcription; the MHS blog post (2009) says the contents are 'almost a complete mystery'.",
+    "literature": "Web search (16 Nov 2026): MHS blog 2009, Boston 1775 blog (2009), Klaus Schmeh's 'Who can decipher this encrypted diary?' and Futility Closet (27 Apr 2026) all treat it as unsolved; Dibbell reports month names in shorthand; no decipherment anywhere."
+   },
+   "key_check": "No key; the system was thought in 1842 to be in a shorthand treatise owned by Judge Davis (not identified). Not tested.",
+   "duplicates": "known.py: no catalogue entry for Ms. Sbd-133.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not_cipher: the diary is written in an unidentified stroke shorthand (the sign forms, the 1840s owners' view and the shorthand month names), not in a cipher."
+  }
+ },
+ "1295": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the blocker stands. The MHS guide fa0549 says only 'Beginning in 1869, portions of the diary entries are written in code', with no scan and no word on whether it is cipher or shorthand. The Vodra edition of the John C. Kimball diaries, which would show it, was not found online (web search 16 Nov 2026). Tomokiyo, Lasry and known.py: nothing on Kimball or Griswold.",
+  "access": "archive",
+  "access_note": "MHS reading room; no digital copies listed."
+ },
+ "2089": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the blocker stands. The MSU finding aid (c.00044, Oliver A. Wilcox diary 1891-93, 1 folder) says only 'a number of entries in the diary are in code form'; no scan, transcription or description of the code was found, and ArchiveGrid is behind a bot check. Tomokiyo, Lasry and known.py: nothing on Wilcox. Needs a sample page from MSU Archives.",
+  "access": "archive",
+  "access_note": "MSU Archives reading room."
+ },
+ "1299": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict. The Ministère des Armées inventory host still refuses connections (curl TLS error, exit 35, 16 Nov 2026). A web-search snippet of the same record gives 'dépêches de Kerlérec, 23/8/1758 - 25/6/1759, dont quelques-unes chiffrées', filed with papers on the Lacouzinière affair and the Rochemore correspondence. The 23 Aug 1758 start date matches one of the despatches Pusch 2008 decoded from ANOM C13A 40 (ministry plaintext between the lines), and despatches went in duplicate, so this is probably another copy of read despatches. That cannot be proved without the cote and folios. Needs the inventory opened in Chrome, then a match against ANOM C13A 40-41.",
+  "access": "archive",
+  "access_note": "Service historique de la Défense (Marine); inventory at bibliotheques-numeriques.defense.gouv.fr, unreachable from this network."
+ },
+ "1910": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the blocker stands. These are series-level entries only: Vegyes iratok III, 134. cs., 21. t. 'Rejtjeles levelek' (16th-17th c.) and E 199 Archivum familiae Wesselényi, Wesselényi Ferenc fogalmazványai, 8. cs., 3. 'Rejtjeles fogalmazványok, másolatok' (Maksay 1975, pp. 238, 188). There is no writer, date, count or image, and for drafts and copies it is unknown whether ciphertext or clear text is filed. Hungaricana (where the finding aid is) is behind a 403 bot check. Tomokiyo and Lasry (fetched 15 Nov 2026) have nothing on Wesselényi, E 199 or Murány; known.py finds only the separate Wesselényi catalogue entries (1663 letters in the Nádasdy files, E 199 R674 read as target wesselenyi1664). Needs MNL OL reading room or scans.",
+  "access": "archive",
+  "access_note": "MNL OL, Budapest, E section boxes; finding-aid text on Hungaricana (bot check)."
+ },
+ "1908": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the blocker stands. MNL OL P 1238 item 102 'Aláíratlan vagy rejtjeles levelek' is a title-only unit of unsigned OR ciphered letters, which does not even show that cipher survives in it. Archives Portal Europe answered a Cloudflare 'Just a moment' page (403) to curl on 16 Nov 2026, and Hungaricana is bot-checked. The keys in the same fonds (II.1, nos. 1-15) are partly on DECODE (R647-R651, R665-R673). Tomokiyo and Lasry: nothing on Teleki or P 1238. Needs the unit in the MNL reading room.",
+  "access": "archive",
+  "access_note": "MNL OL P 1238; record text on Archives Portal Europe (Cloudflare) and Hungaricana (bot check)."
+ },
+ "2489": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "The MNL AdatbazisokOnline records, re-read by curl on 16 Nov 2026, are the archive's own descriptions: 'kis részben megfejtetlen titkosírással' (in small part in undeciphered cipher) for E Fasc. 112 fol. 1-4 (to 'Nathanael', i.e. Rákóczi, 27 Dec, year not given), and 'részben megfejtetlen titkosírással' for E Fasc. 113 fol. 39 (Warsaw, 6 Jun 1708), E Fasc. 112 fol. 38-39 (Warsaw, 31st, month not given) and D Fasc. 83 fol. 4 (s.d.). All are French, anonymous and without images. No decipherment is filed or printed. Promote only as the cluster it is: the cipher passages are short, and the same French Warsaw intelligence series of 1708 is already catalogue 2475 (A1 Fasc. 11, open), so the lead agent may prefer to merge these folios into 2475.",
+  "access": "archive",
+  "access_note": "MNL OL, G 15 (II. Rákóczi Ferenc fejedelem levéltára, Emigrációba vitt rész); record text only on adatbazisokonline.mnl.gov.hu, no images; order scans.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archive's own item descriptions, MNL AdatbazisokOnline, G 15 database, fetched by curl 16 Nov 2026: adatlap/17394 (Caps. E Fasc. 112 fol. 1-4), adatlap/17435 (E Fasc. 113 fol. 39), adatlap/17414 (E Fasc. 112 fol. 38-39), adatlap/16729 (D Fasc. 83 fol. 4), all at https://adatbazisokonline.mnl.gov.hu/adatbazis/ii_-rakoczi-ferenc-fejedelem-leveltara_-emigracioba-vitt-resz/adatlap/<id>. The A1 Fasc. 11 fol. 106, A1 Fasc. 12 fol. 31/a and H Fasc. 229 fol. 32-34 records were not re-read this pass.",
+    "extent": "Seven loose French (one Hungarian, one Polish) letters and scraps, each only partly in cipher ('kis részben' = a small part on E 112 fol. 1-4; on H 229 fol. 32-34 cipher only beside the address); the amount per item is not given.",
+    "cipher": "Record notes verbatim: 17394 'címzett megszólítása: Monseigneur; kis részben megfejtetlen titkosírással' (writer N. N., addressee 'Nathanael (Rákóczi álneve)', 17[..].12.27, French); 17435 'részben megfejtetlen titkosírással' (N. N. to N. N., Varsó, 1708.06.06, French); 17414 'részben megfejtetlen titkosírással' (Varsó, 17[..].[..].31, French); 16729 'részben megfejtetlen titkosírással' (s.d., French). 'Megfejtetlen' = undeciphered; no decipherment is recorded."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rákóczi', 'Rakoczi', 'Nathanael', 'G 15' (16 Nov 2026): other Rákóczi catalogue entries (Pápai 1710, Comenius 1655, Klement 1710, catalogue 2475 French letters to 'Nathanael Siluer' 1708); DECODE 'Nathanael' gives only the deciphered Caps. C Fasc. 39 set, not these fascicles.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Rákóczi, Rakoczi, Nathanael, G 15: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "The Archivum Rákóczianum and the Rákóczi correspondence editions were not found to print these anonymous Warsaw scraps; with no writer named they cannot be looked up by name, and the MNL records cite no edition. Not settled beyond that.",
+    "literature": "Lang 2015 repertory and the DECODE fascicle list (checked 11 Nov) do not cover these fascicles; no study of them found."
+   },
+   "key_check": "No key named. Rákóczi's envoy keys (e.g. R639, used for target rakoczi1704) and the 'Nathanael' set in Caps. C Fasc. 39 are candidates; not tested, no ciphertext online.",
+   "duplicates": "Not the same folios as catalogue 2475 (A1 Fasc. 11 fol. 111-136), but the same kind of French Warsaw intelligence letters to 'Nathanael' in 1708, probably one cipher system: a merge into 2475 should be considered. known.py finds no entry with these folios.",
+   "verdict": "open"
+  }
+ },
+ "1904": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "The MNL records (adatlap 9367-9369, re-read by curl 16 Nov 2026) give each of nos. 7950-7952 as an original 'titkosírással írt levél' from Újvár, July 1710, with no decipherment noted: 7950 Nagyszegi and Ordódy, 10 Jul 1710, 6 p.m.; 7951 an unsigned enclosure of it ('A. 41. Mell.', note 'Triplica (?)'); 7952 Szluha, 10 Jul. The one doubt is no. 8939 (adatlap 10341), a copy of the same writers' letter of 7 Aug 1710 noted 'előző titkos írással írt részeinek feloldását is tartalmazza'. Most naturally that means it carries the decipherment of its own preceding cipher parts, but it could mean those of an earlier letter, possibly no. 7950. Károlyi's chancery register (Extractus Literarum p. 974-975) also summarised these letters. If 8939 or the Extractus gives 7950's content, that letter is read; 7952 (Szluha) is untouched by either doubt.",
+  "access": "archive",
+  "access_note": "MNL OL P 396, 1. sorozat, raktári egység 20; no images online (the database notes digital images exist but are not published).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archive's own records, MNL AdatbazisokOnline 'A Károlyi levéltár Rákóczi-kori iratai' (P 396), fetched by curl 16 Nov 2026: https://adatbazisokonline.mnl.gov.hu/adatbazis/a-karolyi-leveltar-rakoczi-kori-iratai/adatlap/9367 (no. 7950), /9368 (no. 7951), /9369 (no. 7952) and /10341 (no. 8939).",
+    "extent": "Three letters (two originals with closing seals and one enclosure) of July 1710; length not given.",
+    "cipher": "Each record's Megjegyzés reads 'titkosírással írt levél' (letter written in cipher). 7950: Nagyszegi Gábor and Ordódy György to Károlyi Sándor, Újvár, 1710.07.10, 6 p.m., Ser. I. regestrata 1710 júl. Fasc. 1. A. 41, related Extractus 0974. 7951: no writer, 1710.07.nn, 'Ser. I. ... A. 41. Mell.', Leírás 'Triplica (?)'. 7952: Szluha Ferenc to Károlyi, Újvár, 1710.07.10, A. 42, Extractus 0975. No decipherment noted on any of the three."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Károlyi', 'Karolyi', 'Szluha', 'Ordody', 'Nagyszegi', 'P 396' (16 Nov 2026): other P 396 catalogue entries (no. 699 Károlyi to Barkóczy 1705, no. 9027 Pongrácz 1710) only; no DECODE record of nos. 7950-7952.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Károlyi, Karolyi, Szluha, Ordody, Nagyszegi, P 396: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "The MNL database (built from Laczlavik's Acta Rákócziana DVD-ROM, 2011) records no edition ('Kiadási információk' absent) for these numbers; no printed text of the Újvár letters of 10 July 1710 found. Károlyi's own register (Extractus Literarum, pp. 974-975) carries content summaries of the regestrata letters and was not seen: that is a contemporary summary, not a decipherment, but it may give the content.",
+    "literature": "Searches of the P 396 database: 'feloldását' finds only no. 8939; Láng's work on Károlyi's monoalphabetic signs (cited for catalogue 699) does not name these letters."
+   },
+   "key_check": "No key named for these letters. No. 8939 (copy of Nagyszegi and Ordódy, Érsekújvár, 7 Aug 1710) contains a decipherment of cipher parts by the same writers and would give a crib or key for their system; keys in the Károlyi fonds not checked. Not tested, no ciphertext online.",
+   "duplicates": "known.py: no catalogue entry for nos. 7950-7952; catalogue entries 699 and 9027 are other P 396 letters.",
+   "verdict": "open"
+  }
+ }
+}

@@ -1,0 +1,332 @@
+{
+ "1776": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: the TNA Discovery record (C7768715, API read 16 Nov 2026) carries the note 'missing.', so f. 17 of SP 36/65 is recorded as not in the volume; the description ('concerning the latter's intelligences, and submitting a reply in cipher') does not even make clear whether the reply in cipher is on the leaf. There is nothing to see or order until Kew confirms the folio exists.",
+  "access": "archive",
+  "access_note": "TNA SP 36/65/17 (f. 17), 7 Jan 1745; digitised=false; Discovery note 'missing.'. A Kew enquiry whether the folio has been found is the only route; State Papers Online would show the same gap.",
+  "blocker": "TNA records the folio as missing."
+ },
+ "2789": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "A plain intercepted letter with cant or code names, not a cipher, and the intercepting side filed its own identification of the names with it (27C, 'List of names thought to be given in code in the letter SP 54/41, no 27B'). The text was read in 1751 and the names were at least partly decoded on file.",
+  "access": "archive",
+  "access_note": "TNA SP 54/41/27A-C, not digitised (Discovery API C6820317 read 16 Nov 2026); Kew or State Papers Online.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API record C6820317 (SP 54/41/27C, '1751 [Sept 5]', digitised false), read 16 Nov 2026, with the lead's record of 27A (Churchill to Newcastle 5 Sep 1751) and 27B (the intercepted letter). The leaves were not seen.",
+    "extent": "One intercepted letter (27B) with a covering letter (27A) and a list of names (27C); length not stated by the catalogue.",
+    "cipher": "Catalogue: 27B is a letter 'thought to contain code names' about the money left behind by the Young Pretender; 27C is a 'List of names thought to be given in code in the letter SP 54/41, no 27B', drawn up by the intercepting side. The letter is in plain words with substituted names, not ciphertext."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 54/41', 'Gleneves', 'Glenevis', 'Andrew Clerck' and 'Cameron': only this lead and the 15 Nov TNA sweep README; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for SP 54/41, Gleneves, Glenevis, Clerck and Cameron: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "No printed edition of the letter was found; the identification list 27C filed with it is the contemporary decode of the names.",
+    "literature": "A web search on 15 Nov 2026 (recorded in the lead) found nothing on an Andrew Clerck letter; the Loch Arkaig money literature was not opened for this item."
+   },
+   "key_check": "The interceptors' list 27C is the key in effect (names identified); no cipher key is involved because the letter is not enciphered.",
+   "duplicates": "known.py on the shelfmark and correspondents: only this lead; no catalogue entry for SP 54/41.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: a plain letter with code names whose identification list (27C) was filed with it by the intercepting side in 1751; no ciphertext to recover."
+  }
+ },
+ "907": {
+  "verdict": "duplicate",
+  "confidence": "medium",
+  "note": "Aggregate row: the 1656 letters it describes (Ross/Nicholas series, CSP Dom. Commonwealth 1655-56) are already catalogue 978-987 one by one. The calendar OCR read today shows three further letters with 'cyphers undecyphered' that have no single row: CSP Dom. 1655 vol. C no. 99 (Sept 1655, Sec. Nicholas at Cologne to Joseph Jane, pp. 325-326), CSP Dom. 1656-57 vol. CXXIX no. 64 (22 July 1656, Wm. Grove [Dick Pile] to [T. Ross]) and vol. CXXIX no. 119 (Aug 1656, T. Ross at Paris to Nicholas, ending 'I think Blackman must mean Wildman'). Close the aggregate and file those three as single leads.",
+  "access": "archive",
+  "access_note": "SP 18 originals are not online; the calendar is on archive.org. Record error: the link labelled 'CSP Domestic Commonwealth 1655-56' (cu31924091770440) is the 1656-57 volume.",
+  "new_leads_suggested": [
+   "CSP Dom. 1655 (Green) vol. C no. 99, Sept 1655, Sec. Nicholas (Cologne) to Joseph Jane, pp. 325-326, '[2 1/2 pages. The italics are in cypher, undecyphered.]'",
+   "CSP Dom. 1656-57 vol. CXXIX no. 64, 22 July 1656, Wm. Grove [Dick Pile] to [T. Ross], '[1 page; the italics are cyphers undecyphered.]'",
+   "CSP Dom. 1656-57 vol. CXXIX no. 119, Aug 1656, T. Ross (Paris) to Nicholas, p. 67, '[2 pages; the italics are cyphers undecyphered.]'"
+  ],
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "Calendar OCR text read 16 Nov 2026: CSP Domestic Commonwealth 1655 (archive.org cu31924091770424, djvu.txt) and CSP Domestic 1656-57 (archive.org cu31924091770440, djvu.txt), searched for 'undecyphered' and 'Lamplugh'. Catalogue entries 978-987 (CSP Dom. 1655-56 nos. 67, 88, 13, 76, 89, 109, 55, 50, 62, 107) compared.",
+    "extent": "About eight letters of 1-3 pages each, calendared in English with the cipher passages printed in italics and noted as undecyphered.",
+    "cipher": "Calendar notes '[The italics are in cypher, undecyphered.]' and '[the italics are cyphers undecyphered.]'. The Lamplugh to Williamson letters in the 1655 volume (nos. 100, 32, 61, 75, 13, 75) carry no cipher note; Lamplugh is in the lead's title by mistake."
+   },
+   "prior_art": {
+    "decode": "known.py on Lamplugh, Pile, 'SP 18' and Whitley: hits are catalogue 978-987 (this same series) and an unrelated Rupert key list naming John Lamplugh; no DECODE record (SP 18 is not a DECODE series).",
+    "tomokiyo": "Tomokiyo's unsolved list (fetched 15 Nov 2026) searched for Lamplugh, Pile, SP 18 and Whitley: only an unrelated 'Nevers-Piles cipher' hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "Calendared by Green (CSP Dom. Commonwealth); the editor printed the cipher passages as undecyphered. The single letters are catalogued as 978-987 with their own vetting.",
+    "literature": "Not searched further for the aggregate; the single catalogue entries carry their own literature searches (Nicholas Papers vol. III, Thurloe)."
+   },
+   "key_check": "The Nicholas-Jane 'ordinary figure cypher' noted in the calendar preface (cited in catalogue 982) is the candidate key for the series; not tested here.",
+   "duplicates": "Catalogue 978-987 are the single letters of this series for Jan-Jun 1656; the 1655 and Jul-Aug 1656 letters named in the note have no row anywhere (catalogue and leads searched for Wildman, Blackman, Princess Royal, vol. CXXIX).",
+   "verdict": "duplicate",
+   "closed": "Closed as a duplicate aggregate: its 1656 letters are catalogue 978-987, and the three letters outside them should be filed as single leads."
+  }
+ },
+ "2790": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "TNA files a plaintext 'Extract (folio 99) from a ciphered letter (folios 100-101)' in front of the cipher, and the catalogue summarises the content from it (Ruvigny's silence on the peace overtures, Turenne's success, a Monsieur Sparr). At least part of the letter was deciphered on file; how much the extract covers is not stated.",
+  "access": "archive",
+  "access_note": "TNA SP 32/14/51, ff. 99-101, not digitised (Discovery API C17475303 read 16 Nov 2026); Kew or State Papers Online.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API record C17475303 (SP 32/14/51, ff. 99-101, dated 1689-1702, digitised false), read 16 Nov 2026. The leaves were not seen.",
+    "extent": "A ciphered letter on two folios (ff. 100-101) with a one-folio plaintext extract (f. 99).",
+    "cipher": "Catalogue: 'Extract (folio 99) from a ciphered letter (folios 100-101). Monsieur de Ruvigny [Earl of Galway] has not replied to the overtures for peace which your Highness told [the author] to make to the King...' The extract is a contemporary decipherment of at least part of the letter."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 32/14', 'Ruvigny' and 'Sparr': only this lead and the 15 Nov TNA sweep README (which already lists it among items with a decode beside them); no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for SP 32/14, Ruvigny and Sparr: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for SP 32/14, Ruvigny and Sparr: no hit.",
+    "edition": "No printed edition looked for beyond the catalogue; the extract on f. 99 is itself the contemporary reading.",
+    "literature": "No literature search beyond the catalogue: the filed extract settles that the letter was deciphered at the time."
+   },
+   "key_check": "No key sought; the extract could serve as a crib if the remainder of ff. 100-101 is ever found unread.",
+   "duplicates": "known.py on the shelfmark: only this lead; no catalogue entry for SP 32/14.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: a contemporary plaintext extract of the ciphered letter is filed in front of it (f. 99)."
+  }
+ },
+ "2795": {
+  "verdict": "partly_read",
+  "confidence": "high",
+  "note": "The item is a letter 'intercepted and translated', with only the names left in cypher in the translation: the text was read in 1722 and only the name code is unresolved.",
+  "access": "archive",
+  "access_note": "TNA SP 35/30/31, ff. 78-81, not digitised (Discovery API C17209745 read 16 Nov 2026).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API record C17209745 (SP 35/30/31, ff. 78-81, 12 Feb 1722, digitised false), read 16 Nov 2026. The leaves were not seen.",
+    "extent": "Four folios; whether the original cipher letter is among them besides the translation is not stated.",
+    "cipher": "Catalogue: 'Letter from R W to [Monsieur], intercepted and translated. All the names are still in cypher.' The content (Whigs, Tories, the Regent, Dubois, the Czar) is summarised from the translation."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 35/30', 'R W' and 'Atterbury': no record of this item; Atterbury-era hits are other catalogue entries (e.g. 860, SP 35/46).",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for SP 35/30, 'R W' (no relevant hit among the incidental matches of the two letters) and Atterbury: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for SP 35/30, 'R W' (no relevant hit among the incidental matches of the two letters) and Atterbury: no hit.",
+    "edition": "The filed translation is the contemporary reading; no printed edition was looked for beyond that.",
+    "literature": "Not searched further: the translation on file decides the verdict."
+   },
+   "key_check": "Only the name code remains; Atterbury-plot name keys (Willes's decipherments) would be the place to look, not tested.",
+   "duplicates": "known.py on the shelfmark: only this lead.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: the letter was translated at interception and only the coded names remain unresolved."
+  }
+ },
+ "2927": {
+  "verdict": "partly_read",
+  "confidence": "high",
+  "note": "The calendar's own preface says the three Pointis letters in the 1689 Irish bundle 'have been deciphered by Dr. John Wallis of Oxford'; the 17 June letter is calendared from that decipherment with 'Part of the letter is undeciphered.' It is a deciphered letter with a gap, not an unread one; Wallis's copy (BL Add MS 32499, PRONI T582/2) may fill the gap.",
+  "access": "archive",
+  "access_note": "TNA SP 63/352 no. 5, not online; calendar on archive.org (calendarofstatep01grea_2).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Domestic William and Mary 1689-90 (1895), archive.org calendarofstatep01grea_2 djvu.txt, read 16 Nov 2026: preface pp. ix-xii and the entries at pp. 147 (13 June), 154 (17 June) and 161 (22 June).",
+    "extent": "One long letter; the calendar gives a detailed summary and notes an undeciphered portion of unstated length.",
+    "cipher": "Preface: 'three very curious letters from Mons. Pointis ... which have been deciphered by Dr. John Wallis of Oxford.' Entry p. 154: 'The making of a second stockade is in hand. Part of the letter is undeciphered. [S.P. Dom., Ireland 352, No. 5.]'"
+   },
+   "prior_art": {
+    "decode": "known.py on Pointis, Londonderry, SP 63/352 and 32499: the wave-18 sweep README and the 11 Nov US/UK leftovers README (PRONI T582/2, Pointis 1689 deciphered from BL Add MS 32499); no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Pointis, Londonderry, SP 63/352 and 32499: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for Pointis, Londonderry, SP 63/352 and 32499: no hit.",
+    "edition": "Calendared in CSP Dom. W&M 1689-90 from Wallis's decipherment, with a passage noted as undeciphered.",
+    "literature": "Wallis's decipherments of the Pointis letters are in BL Add MS 32499 and copied in PRONI T582/2 (recorded in research/sweep_2026-11-11_us_uk_leftovers); not opened."
+   },
+   "key_check": "Wallis recovered the key in 1689; his letter-book Add MS 32499 is the place for it, not opened.",
+   "duplicates": "known.py: only this lead and the sweep notes; no catalogue entry for the Pointis letters.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: deciphered by Wallis in 1689, with a passage noted as undeciphered in the calendar."
+  }
+ },
+ "2921": {
+  "verdict": "partly_read",
+  "confidence": "high",
+  "note": "The letter is in plain English (calendared in full on BHO); only a handful of name numbers are coded and the editor notes there is no key. A clear letter with a few coded names, not a cipher text.",
+  "access": "online",
+  "access_note": "Calendar text on British History Online (CSP Foreign vol. 16, pp. 188-207, no. 189); original TNA SP 83/16 no. 79 not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Foreign Elizabeth vol. 16 (1581-82), no. 189, on British History Online https://www.british-history.ac.uk/cal-state-papers/foreign/vol16/pp188-207, read 16 Nov 2026.",
+    "extent": "One page; six number groups in an otherwise plain letter.",
+    "cipher": "Money 'furnished by 10 out of 27, and by 81 out of 25'; 'the process and depositions are sent to 12, and 30 vehemently suspected of the practice'. The rest of the letter is plain English."
+   },
+   "prior_art": {
+    "decode": "known.py on Danett, SP 83/16 and Salcedo: only the wave-16 sweep README; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Danett, SP 83/16 and Salcedo: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for Danett, SP 83/16 and Salcedo: no hit.",
+    "edition": "Printed in CSP Foreign 1581-82 no. 189; the editor's preface (p. xiii) says there is no key to Danett's numbers and offers guesses (12 = the French king, 30 = Guise?).",
+    "literature": "Not searched further: six name numbers with editorial guesses."
+   },
+   "key_check": "No key known (editor's preface); other Danett letters in SP 83/16-17 might use the same numbers, not checked.",
+   "duplicates": "known.py: no other row for Danett.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: a plain letter printed in the calendar, with only six coded name numbers left unexplained."
+  }
+ },
+ "1158": {
+  "verdict": "not_cipher",
+  "confidence": "medium",
+  "note": "Neither item is a cipher text: WO 1/923/115 is a plain report from Paris whose content TNA summarises in detail, only the signature being in cipher; WO 1/924/499 is Bouillon's plain letter to Cooke about an error in reading a cipher (troop figures at Brest reported at f. 495), i.e. a correction to a decipherment already made.",
+  "access": "archive",
+  "access_note": "TNA WO 1/923 ff. 115-118 and WO 1/924 ff. 499-502, not digitised (Discovery API C6240940 and C6241156 read 16 Nov 2026).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API records C6240940 (WO 1/923/115, 16 Jan 1800, Paris) and C6241156 (WO 1/924/499, 29 Nov 1804, Jersey), read 16 Nov 2026; a Discovery search of WO 1 for Bouillon with cipher/cypher returns only these two. The leaves were not seen.",
+    "extent": "Four folios each; no ciphertext described beyond a signature.",
+    "cipher": "WO 1/923/115: '[?Roznel] (signed in cipher) to Bouillon. Political events and expectations in Paris; Bonaparte's position...' (enclosed in ff. 111-114, French). WO 1/924/499: 'Bouillon to Cooke. An error in reading the cipher concerning previously reported numbers of troops embarked at Brest (See f.495).'"
+   },
+   "prior_art": {
+    "decode": "known.py on WO 1/923, WO 1/924, Bouillon and Roznel: only the access_uncertain list and unrelated La Fin/Bouillon 1593 entries; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for WO 1/923, WO 1/924, Bouillon (only unrelated 16th- and 17th-century hits) and Roznel: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for WO 1/923, WO 1/924, Bouillon (only unrelated 16th- and 17th-century hits) and Roznel: no hit.",
+    "edition": "No edition looked for: the content of both letters is given by the TNA description in plain terms.",
+    "literature": "Not searched further: the descriptions show the texts are plain."
+   },
+   "key_check": "No key needed; Bouillon's correspondence ciphers elsewhere in WO 1/921-924 were not searched for this lead.",
+   "duplicates": "known.py: no other row for these shelfmarks.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher text: a plain report signed with a cipher name, and a plain letter correcting a decipherment."
+  }
+ },
+ "2551": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "The Tresoar inventory gives the letter's content (an invitation from Sister Padentiana to the pastor to take tea with the mother superior in honour of St Clare), with the note 'De brief is gesteld in geheimschrift': the archivist read it. A trivial 19th-century convent piece filed under pastor J.J. Sletering (1872-1914).",
+  "access": "archive",
+  "access_note": "Tresoar 273-03 inv. 311, 1 piece, no scans (archieven.nl inventory text as harvested 11 Nov 2026 in research/sweep_2026-11-11_dutch_2/anl_det.jsonl).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "archieven.nl inventory of Tresoar 273-03 Rooms-Katholieke parochie Harlingen, section 09.2 (J.J. Sletering, pastoor 1872-1914), inv. 311, text as harvested 11 Nov 2026 (research/sweep_2026-11-11_dutch_2/anl_det.jsonl), re-read 16 Nov 2026. No scan.",
+    "extent": "One piece, undated (19th century).",
+    "cipher": "'Brief van zuster Padentiana, gericht aan de pastoor, met een uitnodiging om thee te komen drinken bij moeder (overste?), ter ere van St. Clara' with 'NB: De brief is gesteld in geheimschrift'."
+   },
+   "prior_art": {
+    "decode": "known.py on Padentiana, Harlingen and 273-03: only the sweep READMEs; DECODE search 'Harlingen' gave 0 on 11 Nov.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Padentiana, Harlingen and 273-03: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for Padentiana, Harlingen and 273-03: no hit.",
+    "edition": "No edition; the inventory summary is itself a reading of the letter.",
+    "literature": "Not searched: a private convent note whose content the archivist has stated."
+   },
+   "key_check": "No key needed; presumably a simple substitution read by the inventory maker.",
+   "duplicates": "known.py: only this lead.",
+   "verdict": "read",
+   "closed": "Closed as read: the archive's inventory gives the gist of the secret-script letter."
+  }
+ },
+ "2918": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "HMC Downshire IV calendars the Rebbe and Gail letters at length in English (e.g. Gail 2 Nov 1613, Rebbe 1 Feb 1614 from Breda, Gail 28 Feb 1614), so the letters are read; the 'cipher symbols and allusions' the editor could not interpret are cover names and a few name signs (Alexander, the compere, the Alastores, Woletius/Velletius, a number '485'), not enciphered passages.",
+  "access": "archive",
+  "access_note": "Trumbull papers (BL Add MS 72242-72620, volume not identified; HMC refs Misc. v, 146; Misc. vi, 16 and 20; xxxii, 39); HMC Downshire IV on archive.org.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "HMC Report on the Manuscripts of the Marquess of Downshire IV (1940), archive.org ReportOnTheManuscriptsOfTheMarquessOfDownshireV4, djvu.txt read 16 Nov 2026: introduction and the Rebbe/Gail entries at pp. 234-235, 288-290, 296-297 and about p. 303.",
+    "extent": "Several letters of 1613-1614, each calendared in a paragraph or more.",
+    "cipher": "Introduction: 'These are filled with cipher symbols and allusions to which there is no key. Their precise meaning is therefore obscure.' The calendared texts read as plain French letters (translated) using cover names; no undeciphered passage is marked in the entries read."
+   },
+   "prior_art": {
+    "decode": "known.py on Rebbe, Peter Gail, Trumbull and Downshire: only the wave-16 sweep README and unrelated Trumbull entries; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Rebbe, Peter Gail, Trumbull and Downshire: no hit.",
+    "lasry": "Lasry's list (GL.htm, fetched 15 Nov 2026) searched for Rebbe, Peter Gail, Trumbull and Downshire: no hit.",
+    "edition": "Calendared in HMC Downshire IV (1940) in English summary; the editor gives the sense of the letters but cannot interpret the cover names.",
+    "literature": "Not searched further: the calendar shows the letters were read."
+   },
+   "key_check": "No key for the cover names exists per the editor; not a cipher key question.",
+   "duplicates": "known.py: no other row for Rebbe or Gail.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: the letters are calendared in full sense; only cover names and name signs remain uninterpreted."
+  }
+ },
+ "879": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: TNA's own description is 'Folio 169: Letter in cipher (or shorthand.)', [1656] July 18, with no writer or addressee (Discovery API C7306137 re-read 16 Nov 2026). The archive does not decide cipher against shorthand, so the 'not online' route is not met, and the leaf is not digitised.",
+  "access": "archive",
+  "access_note": "TNA SP 84/161/66 (f. 169), digitised=false; Kew copy or State Papers Online (Gale, subscription).",
+  "blocker": "Image needed to tell cipher from shorthand; same for the sibling lead 1802 (f. 216 of the same volume)."
+ },
+ "1802": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: 'Folio 216: Letter in cipher or shorthand, mentioning Peter Refin of Middelburg', undated (Discovery API C7306165 re-read 16 Nov 2026). As for its sibling 879 (f. 169), the archive does not decide cipher against shorthand and the leaf is not digitised; known.py, Tomokiyo and Lasry have nothing on Refin or SP 84/161.",
+  "access": "archive",
+  "access_note": "TNA SP 84/161/83 (f. 216), digitised=false; Kew copy or State Papers Online.",
+  "blocker": "Image needed to tell cipher from shorthand."
+ },
+ "2798": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: the only description is 'with an account in code on fo. 60d' on a draft merchant account of Nov 1548 (Discovery API C7694233); the sibling SP 46/2 fos. 83-92 (C7691957) is a plain draft account with no code mentioned. A 1548 merchant's 'account in code' may be a private cost or price code or merchant's numerals rather than a cipher, and only an image can settle it.",
+  "access": "archive",
+  "access_note": "TNA SP 46/124 fo. 60d, not digitised.",
+  "blocker": "Image of fo. 60d needed to tell a cipher from a merchant's mark or price code."
+ },
+ "1146": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: an aggregate of seven unrelated State Papers items (SP 81/44/225, 81/46/273, 84/130/27, 77/28/643, 81/37/284, 81/38/250, 77/6/229) from 1600-1639. None is digitised, Tomokiyo and Lasry have none of the shelfmarks or names (Gerbier, Kendall, Stanning), and known.py finds no DECODE record. The 6 Nov blocker stands: Akkerman's edition of Elizabeth Stuart's correspondence is not online to say whether the Roe and Gerbier passages are printed deciphered. Recommend splitting into one lead per item before vetting.",
+  "access": "archive",
+  "access_note": "TNA, seven items in SP 77, 81 and 84; not digitised.",
+  "blocker": "Aggregate; split first, and Akkerman vols 1-2 (OUP 2011-15) needed for the Roe/Gerbier items."
+ },
+ "2546": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No new verdict: the 11 Nov held block (verdict open from the archive's description, with the DECODE, Tomokiyo, Lasry and Resolutiën checks done) still stands and nothing more is reachable today (no scans). The inventory text re-read from the 11 Nov harvest says only 'In de brieven komen soms enige woorden in cijfercode voor' for a whole pak of 1595-1597 letters. Whether occasional coded words in a bundle meet the bar is the lead agent's call; I would keep it held.",
+  "access": "archive",
+  "access_note": "Tresoar 7 inv. 808, no scans; reading room or scan order.",
+  "blocker": "Extent of cipher unknown (occasional words only); scans needed."
+ },
+ "1163": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: the cipher letter itself (Minna Werner to Kinkel, 11 Feb 1860) is not in the Nachlass. Kalliope DE-611-HS-2714700 (13 Feb, S 2667,1 (1)) 'Erwähnt die Geheimschrift in Minnas Brief [v. 11.02.1860]' and DE-611-HS-2714980 (17 Feb, Konrad Kinkel's copy S 2673 (16 S.184-193)) gives 'Zur Dechiffrierung von Minnas Geheimschrift' (both re-read 16 Nov 2026): Kinkel discusses deciphering it, so the recipient worked on it, but no ciphertext is known to survive. Without a located ciphertext there is nothing to vet; recommend dropping unless ULB Bonn's scans show a sample.",
+  "access": "archive",
+  "access_note": "ULB Bonn, Nachlass Kinkel; scans in the ULB Bildarchiv, not online.",
+  "blocker": "Ciphertext not located."
+ },
+ "1292": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: finding-aids.lib.unc.edu did not answer from this machine on 16 Nov 2026 (curl connection with no response; WebFetch ECONNRESET), as on 11 Nov from the cloud. A web search found nothing on the item. The lead's own description ('copy of a coded message from Charles George Gordon') does not show code groups survive in the copy.",
+  "access": "archive",
+  "access_note": "UNC Wilson Library, Southern Historical Collection #2769 (Battle Papers), item of 24 July 1877; not digitised.",
+  "blocker": "UNC finding aid unreachable by script; item not online."
+ },
+ "1426": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: historicpittsburgh.org still returns its 'Verifying that you're human' page to curl (16 Nov 2026) and api.dp.la needs a key. A web search shows the items are pages of the Henry Clay Frick Business Records (Frick's copybooks), each titled 'Frick wires Carnegie a coded message', with dates seen in the results of 19 Nov 1890, 9 Jul 1891, 6 May 1892, 25 Feb 1898 and 23 Apr 1898, and one 'with possession May first discernable'. These are Frick's outgoing copies; whether plain text is written with them is not visible. It is also an aggregate of 19 records.",
+  "access": "online",
+  "access_note": "Historic Pittsburgh / digital.library.pitt.edu (CAPTCHA to scripts); needs Chrome.",
+  "blocker": "Bot check on Historic Pittsburgh; aggregate of 19 records.",
+  "record_correction": "The lead's 'Homestead 1892 among them' is not confirmed by the dates found (1890-1898; 6 May 1892 is before Homestead); the records are Frick copybook pages."
+ }
+}

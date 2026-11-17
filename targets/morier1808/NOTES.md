@@ -83,3 +83,35 @@ Library (links only; the images are not in this repository):
 - The figure signature is probable.
 
 The scripts in `verification/` are kept as run (paths point to the contributor's local copies of the transcriptions and of the Lord Lyons corpus); `measure.py` is the v1 measure, `v2.py` + `measure_v2.py` the v2 measure.
+
+## Integration check (16 Nov 2026), PR #705
+
+Checked for the maintainers before merging PR #705 (Brice Dudout), by an AI agent; no person has checked these steps,
+and the files record no human check of the transcriptions (made by an AI agent from the QDL images).
+
+- **Decode reproduced.** `decode.py`, run on a copy of the folder, writes the four decryption files unchanged. A
+  decoder written for the check from `key.json` (+ 88 = z, 94 = e) gives the same words. `reading_18.md` is carried by
+  the decryptions of /18 and /20, apart from the copyists' cuts and slips that the reading joins or restores.
+- **Statistics reproduced.** `docs/_validate.py morier1808`: reading -2.210, random keys -6.693 (max -5.958), shuffled
+  refit max -4.428, annealer -2.472, verdict pass, as in profile.json.
+- **Held-out tests.** `key.json` hashes to the value frozen in PREREG v2 (270fb393...), and `transcription_21.txt` to the
+  v1 held-out hash (3e390916...). The held-out text of v2 (`transcription_18_f6v-f7v.txt`) decodes to the text in
+  `mesure_H2.txt` word for word (94 words; authori[z]ed then had no 88). The v1 and v2 metric scripts point to the
+  contributor's local copies of the Lord Lyons corpus and of a word list and were not re-run here; the label counts
+  (86 word, 2 name, 2 split, 1 join, 3 fail) agree with a reading of the decoded words. The v2 metric was written after
+  the v1 failure, with the v1 misses in view (u/v and names allowed, cuts counted); it was frozen before the v2 text was
+  transcribed, but the v2 transcription hash is not in the files, so that order rests on the contributor's record. The
+  first test failed and is published as failed.
+- **Read share, strict.** Over the cipher words of `reading_18.md` (the two clear lines left out): 646 of 654 read,
+  0.988. Holes: the place in "from ‹to› Roads", the three {Bombay} and the one {French} (probable code words), authori[z]ed
+  (88 = z, probable, added after the measure) and the two words of the figure signature. Words with an in-word restored
+  letter (relin[q]uish, thin[k], ...) count as read. Class "read" holds. The enclosure (`reading_21.md`) has no hole.
+- **Images.** Not compared: `iiif.qdl.qa` and `www.qdl.qa` answer curl with a Cloudflare 403, and no Chrome session was
+  available to this check. The transcription's soundness rests on the decode reading as continuous English over 3,844
+  tokens, which a misread figure would break locally; individual figures were not seen.
+- **Prior art.** The enclosure (/21) has a period decipherment, the clear text in the margin of /19; the reading of /21
+  was made from the key before /19 was seen, by the contributor's record. The letter itself (/18, /20) has none known.
+  The target's method stays "key recovered from ciphertext-only". No duplicate in `catalogue.json` (entry 2649 is this
+  item) or `research/leads.json`; not the code of `../jones1802`.
+- **Reading reviews.** The contributor's three preliminary grades are replaced in profile.json by the reviewer's: A for
+  /18, /20 and /21.

@@ -1,0 +1,3 @@
+# Audit files
+
+Research history for mantua-1524: the decisions log (`decisions.md`), the reserved-line protocol (`reserved-lines.md`), the independent Codex review (`codex-review.md`) and the control outputs (`controls6_*.json`, `merge_test.json`). Paths such as `solve/...` and `transcription.tsv` in these files refer to the working directory where the solve was done; the scripts there (annealer, controls, tier builder) are not part of this folder. `transcription.tsv` there is `transcription-298.tsv` here. `verify.py` in the parent folder reproduces the published reading from the transcriptions and key.
