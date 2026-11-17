@@ -437,6 +437,11 @@ PAGES = [
          blurb='A cipher letter of the Spanish ambassador at Genoa about a marquis who was stalling on money for munitions. Brice Dudout rebuilt the numerical cipher on neighbouring letters that survive with a contemporary clear copy, tested it on a held-out pair (0.896 of characters), and read this letter, which has no clear copy.',
          quote='&ldquo;que el marqu&eacute;s de Legan&eacute;s &hellip;&rdquo; (code 250, read here as Pallavicino)',
          rights='Letter: Archivo General de Simancas, Estado leg. 3594 no. 156, via PARES; reading by Brice Dudout, Europe chiffr&eacute;e'),
+    dict(slug='butzbach1641', label='Philippsburg relief sheet 1641', year='1641', y=1641.5, place='Unknown &rarr; unknown (Philippsburg relief)', st='partial', stt='read in part',
+         title='A numeric cipher sheet on the relief of Philippsburg, 1641',
+         blurb='A loose sheet of two-digit numbers in the papers of Landgrave Philipp of Hesse-Butzbach at Darmstadt, filed with the 1641 almanac and other cipher items. The key, a=11 to z=34, is on a small strip of the same file; applied to the sheet it gives continuous German. The writer has been at Zabern pressing the Imperial and Spanish commanders to relieve Philippsburg and promises regiments and money. Read in part: 95 of 124 words are sure (76.6%); the rest are blotted, cut by a hole or a pasted slip. Neither writer nor addressee is named, and the date (1633/34 or 1641) is not settled.',
+         quote='&ldquo;die entsetzung Philippsburg zu befurdern bin ich selbsten etliche tag zu Zabern gewesen&rdquo;',
+         rights='Hessisches Staatsarchiv Darmstadt, D 4 Nr. 76/6, via Deutsche Digitale Bibliothek / Archivportal-D; transcription and reading for Brice Dudout, Europe chiffr&eacute;e'),
     dict(slug='hatzfeldt1641', label='Ferdinand III to Hatzfeldt 1641', year='1641', y=1641.7, place='Regensburg &rarr; Hatzfeldt', st='partial', stt='read in part',
          title='Ferdinand III to Hatzfeldt, Regensburg, August&ndash;September 1641',
          blurb='Five cipher pieces of the Emperor Ferdinand III to Field Marshal Hatzfeldt in 1641, among them the ciphered copy of a bond of the city of Aachen. Hermann St&uuml;tzel printed the key in 1963 and no text; Brice Dudout transcribed and read the pieces, 94.1% of 859 cipher words.',
@@ -3677,3 +3682,4 @@ IMAGES['murguia1914'] = ('murguia1914_lead.jpg', 'Page 4 of the typed copy: two-
 IMAGES['ewsum1535'] = ('ewsum1535_lead.jpg', 'Left page, top: the writer&rsquo;s key alphabet, his clear note on the null sign and the first lines of cipher', 'Groninger Archieven, 696 Familie van Ewsum, inv. nr. 595, scan 1, via archieven.nl')
 IMAGES['qaysarani1350'] = ('qaysarani1350_lead.jpg', 'F. 106v, the first two cipher lines, with red letters over the first five signs (at the right)', 'University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217)')
 IMAGES['montcalm1757w'] = ('montcalm1757w_annex.jpg', 'The first lines of the annexed cipher sheet, p. 517: &ldquo;Quebec sera toujours quoique l&rsquo;on y fasse une mauvaise place&rdquo; above its groups', 'Service historique de la D&eacute;fense, GR A1 3457 pi&egrave;ce 180, copy p. 517, Library and Archives Canada, MG4 B1 reel C-12578, frame 0537, via Canadiana H&eacute;ritage')
+IMAGES['butzbach1641'] = None
