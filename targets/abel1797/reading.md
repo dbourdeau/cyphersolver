@@ -23,3 +23,25 @@ Translation: "According to what I know of ‹oi› ‹ut›, [one believes] that
 - Restored 0.
 - Unresolved 4 (16.7 %): oi (place s-, after oh "sich"), ut (place wi-, between up "wieder" and ux "Wirtemberg"), ps (place t-/u-, between po "Tractat" and py "ueber"), vf (place wo-, between ux and vg "worden"); several words possible, none forced by sense.
 - Strict count (sure words only): 14/24 = 58.3 %; sure + probable 20/24 = 83.3 %. Under 95 %: read in part.
+
+
+## Update, 17 Nov 2026: codes found glossed in Bue 700-701 (glossed_codes.tsv)
+
+The 1798-1799 files Bue 700 (all 42 images) and Bue 701 (Bild 35-173) were searched for the open codes. Every enciphered passage opened there has its decipherment of the time; no new unglossed passage was found, so no new held-out measurement was made and nothing was spent. But six of the ten open or probable items of Bild 75 now have a gloss of the time elsewhere in the file:
+
+- sw = von (Bue 701 Bild 152, 161, 165, 170), ka = man (Bild 147, 170), ld = nach (Bild 157 "nach Spanien"), 33 = s (Bild 157, "Spanien"), ps = Teutschland (Bue 700 Bild 13; Bue 701 Bild 152), vf = wollte (Bue 701 Bild 170 "Man wollte ihn").
+- oi = sicher- (Bue 701 Bild 106, "in sichern Verwahrung", written oi with a flexion mark); in Bild 75 oi has no mark, so the ending is not given: probable.
+- ut and hb: not found glossed.
+
+The alphabetical-order guesses of the first reading fit the glossed values (ps under t- = Teutschland, vf under wo- = wollte, oi under s- after oh "sich" = sicher).
+
+Revised reading:
+A: Nach dem was ich von {sicherer} ‹ut› weiss, [glaubt man ...]
+B: dass man von {hier} den Geist der Revolution in Teutschland wollte gehalten [...]
+Translation: "According to what I know from a sure ‹ut›, [one believes] that from here one wanted the spirit of the Revolution kept up in Germany"; "Talleyrand"; "on Barras's motion".
+
+Revised count (24 words):
+- Sure 21 (87.5 %): the 14 above + von x2, man, Nach, Geist (33 = s), Teutschland, wollte.
+- Probable 2: {sicherer} (oi, lexeme glossed, ending not marked), {hier} (hb, sense and place h- in the code list only).
+- Unresolved 1: ‹ut›.
+- Strict count 21/24 = 87.5 %; sure + probable 23/24 = 95.8 %. By the strict rule (sure words only): read in part.

@@ -102,7 +102,7 @@
     "by": "llm from images",
     "source": "Landesarchiv Baden-Wuerttemberg viewer, Public Domain Mark 1.0",
     "image_quality": "good",
-    "notes": "rows glimpsed during triage before the protocol (declared in AVENANT-C03.md)"
+    "notes": "rows glimpsed during triage before the protocol (declared in AVENANT-C03.md); codes checked against glosses of the time in Bue 700-701 on 17 Nov 2026 (glossed_codes.tsv)"
    }
   }
  ],
@@ -155,7 +155,7 @@
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ],
   "first_date": "2026-10-28",
-  "last_date": "2026-10-28"
+  "last_date": "2026-11-17"
  },
  "solution": [
   {
@@ -211,6 +211,21 @@
    ],
    "what": "Integration check of PR #563: held-out score reproduced with an independent decoder from key.tsv (19/24 words = 0.792, characters about 0.963; the controls' 0.167 is the four 'und'; without them 15/20 = 0.75, the bar); key_K3.json SHA-256 matches the frozen value, order of events by the contributor's record; Landesarchiv BW images fetched with curl: Bü 702 Bild 17 about 55 groups agree (one extra 20 in 'angegriffen' in the transcription, score unchanged), Bü 699 Bild 75 both passages agree; unglossed reading reproduced, strict 14/24; lead 2037 found (the PR said none) and pointed here.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "crib",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Search of Bue 700 (42 images) and Bue 701 Bild 35-173 for glossed occurrences of the open codes of Bue 699 Bild 75: sw = von, ka = man, ld = nach, 33 = s, ps = Teutschland, vf = wollte, oi = sicher- found with decipherments of the time (glossed_codes.tsv); ut and hb not found. Every enciphered passage opened there is glossed: no new unglossed passage, no new held-out measurement.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "Bue 699 Bild 75, 86, 90 re-read with the glossed codes: 24 words, 21 sure, 2 probable (sicherer, hier), 1 unresolved (ut); strict 21/24 = 87.5 %.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -233,9 +248,9 @@
    "contemporary decipherment",
    "statistical test"
   ],
-  "fraction_read": 0.583,
+  "fraction_read": 0.875,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: 24 words of the unglossed passages, strict count 14 sure (0.583); with 6 probable 20 (0.833); the glossed passages are read from their decipherments of the time.",
+  "fraction_read_source": "reading.md (update 17 Nov 2026): 24 words of the unglossed passages, strict count 21 sure (0.875); with 2 probable 23 (0.958); the glossed passages are read from their decipherments of the time.",
   "provenance": "project",
   "credits": [
    {
@@ -253,16 +268,16 @@
   ],
   "gaps": [
    {
-    "item": "codes oi, ut, ps, vf (Bü 699 Bild 75) unresolved; glossed occurrences in Bü 700-701 not searched",
+    "item": "code ut (Bue 699 Bild 75) not found glossed in Bue 699-702; hb ('hier') and the ending of oi ('sicher-') probable only",
     "blocker": "not-attempted"
    },
    {
-    "item": "six probable words (sw x2, ka, ld, hb, 33 = s) not confirmed by a gloss",
+    "item": "Bue 701 Bild 1-34 only partly examined at reading size (C03); Bue 706 (Normann 1801, another table) and the 1798 second system not read",
     "blocker": "not-attempted"
    },
    {
-    "item": "Bü 701 Bild 35-173, Bü 706 and the 1798 second system not examined",
-    "blocker": "not-attempted"
+    "item": "no unglossed passage of 300 signs or more found in Bue 696-702: no second held-out test of K3 possible on unglossed text",
+    "blocker": "no-key-material"
    },
    {
     "item": "the chancery's original keys (A 11 Bü 66, L 6 Bü 1392, A 74 i Bü 24) not online",
@@ -279,13 +294,13 @@
     "translation": "reading.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.583,
-    "summary": "Fragments of a report from Paris: according to what the writer knows, one believes that the spirit of the Revolution is kept ... in ...; Talleyrand; after Barras's motion.",
+    "read_share": 0.875,
+    "summary": "Fragments of a report from Paris: according to what the writer knows from a sure [source?], one believes that from here one wanted the spirit of the Revolution kept up in Germany; Talleyrand; after Barras's motion.",
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout (with Claude)",
-     "date": "2026-11-14",
-     "note": "14/24 words sure, 6 probable, 4 codes unresolved; passages glimpsed during triage before the protocol (declared)"
+     "date": "2026-11-17",
+     "note": "21/24 words sure (six codes now confirmed by glosses of the time in Bue 700-701, glossed_codes.tsv), 2 probable, 1 code (ut) unresolved; passages glimpsed during triage before the protocol (declared)"
     }
    }
   ],
