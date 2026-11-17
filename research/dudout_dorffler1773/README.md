@@ -17,6 +17,9 @@ Everything here is an **attempt**: three pre-registered measures, all FAILED. No
 
 Diagnostics written after each verdict (they do not change it): `c03/DIAG-POSTHOC-C03.txt`, `c04/DIAG-POSTHOC-C04.txt`. The gloss is not word for word and runs across the cipher's line ends; word boundaries are unmarked, which defeats a word-lexicon measure. 474, 476 and 277/304 are spent for us. A fair next test needs a fresh portion and a character-level measure.
 
+## Character-level test on fresh pages (Mike German, November 2026)
+`german2026/`: TABLE-C04, unchanged, on a new transcription of all 136 coded pages of 19/100-103. It reproduces 71.6% of the clerk's decryption letters on a held-out half against 10.5% for shuffled keys. A separate proposal adds 15 fills and 6 weaker values. No reading is claimed. The three pre-registered measures above stay on record as failed.
+
 ## Scripts
 `c03/measure.py` (gloss alignment, 200 permuted-value controls), `c04/galign.py`, `c05/run.py` (decode / measure; reads `TABLE.json` and `LEXICON.txt` from `INPUT_DIR`), `tools/` (the EM experiments that preceded the table).
 Several protocol files are in French (`TABLE-C04-CHANGES.md`, reconciliation notes); the PREREGs are in English.
