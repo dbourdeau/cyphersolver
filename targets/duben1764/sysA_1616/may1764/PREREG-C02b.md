@@ -75,3 +75,14 @@ the result, not a test). A pass is not assured.
 The portion (cipher 105R-108L line 1 and clear 106R-107L) is burnt for any later key test. Reading of the letter is from its
 contemporary clear (existing decipherment): strict count by Daniel's rule (">= 95 % of words SURE" = read; probable words
 and holes do not count as sure).
+
+## Amendment 1 — 17 Nov 2026, before the measure is run (no group has been decoded)
+- Transcriptions frozen (hashes in `SHA256SUMS-AMEND1`): `transcr/may1764_cipher_merged.txt` (52 number lines in the order of
+  this PREREG: 105R01-17, 106L01-17, 107R01-17, 108L01; 869 groups in each pass; 32 substantive differences and 41 doubt-mark
+  differences between pass 1 and the blind pass 2, settled on zooms of the full-size images, `transcr/disagreements_may.txt`);
+  `transcr/may1764_clear_106R-107L.txt` (106R.01-20, 107L.01-14, two passes, spelling and struck-word differences settled on the
+  image). Passes in `transcr/passes/`. Payne's file was not used.
+- Transcription convention fixed now: the one struck group (end of 106L01, [del:218]) is kept as a comment line, because the frozen
+  parser of `measure_may.py` (as `measure_aug.py`) does not skip [del:..] inside a number line.
+- Preconditions on counts only: cipher 835 groups >= 100 (58 marked doubtful); clear 1,900 normalised letters; r = 2.275, inside
+  1.8-2.8. Groups 3-741 with nulls below 100: system A. **All preconditions hold; the measure is run once**, with the command above.
