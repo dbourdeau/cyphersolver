@@ -88,7 +88,7 @@ great pleasure [and] contentment to the said rebels [..] [..] to continue their 
 
 **f. 155v.** If [so] it were, and thinking that Your Greatness would not find it [bad], for the preservation of my
 life, I would withdraw to the train of the court, there to employ myself in very humble obedience in all that it
-would please the King and Your Greatness to command [me]; for in any case, the said rebels [having] such authority
+would please the King and Your Greatness to command [me]; for in any case, the said rebels having such authority
 over here as they have, they have taken from me all means of being able to see to my affairs at all, except at the
 hazard of my life. The said rebels continue, and daily make new compositions which they [..] and send throughout this
 country to [..] the common people from their good way and make them s[ch]ismatic, as Your Greatness will be able to

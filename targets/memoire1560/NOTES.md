@@ -12,8 +12,8 @@ gentleman of the Agenais, a neighbour of the sieur de Fumel, dated 12 December 1
 François II. It is entirely in cipher, ten pages, 1,715 cipher words. It had no decipherment and no known key.
 The cipher was broken here from the ciphertext alone: a homophonic substitution with two-stroke units and four
 code words. The reading covers 1,700 of the 1,715 cipher words (99.1%; 98.9% before the retry resolved 3 more). By the key replay of
-16 Nov 2026, 1,196 of the 1,715 cipher words (69.7%) are the key's exact output, 130 more differ only by i/y or a declared
-second value, 366 are read with a marked emendation, and 16 are left unread (the earlier figure of 108 emended words
+16 Nov 2026, 1,201 of the 1,715 cipher words (70.0%) are the key's exact output, 130 more differ only by i/y or a declared
+second value, 354 are read with a marked emendation, and 16 are left unread (the earlier figure of 108 emended words
 counted only the marks then in the reading files).
 
 ## Where it is
@@ -155,27 +155,32 @@ The ten pages were fetched again (openapi.bnf.fr IIIF, full size) and the 75 pla
 another letter were looked at on 2x crops, line by line. The small bold n-sign (r) and the wide e-sign (x) can be told
 apart at that size, and so can the sign with a hanging loop (y).
 
-- **34 words corrected in the transcription** (`transcription/corrections_<fol>.tsv`, dated rows): 13 x → r (n), among
-  them ung (twice), predicant, grandeur, environ, disans, n'irriter, langaiges, quelcun, l'advenir, n'ause, signee; 10
-  x → y (i): Despuis, puis (twice), parti, cy devant (twice), suite, n'y, Guyenne, and the fourth sign of Clairac; one
-  transposition (152v.26, rx = ne); 152v.28 `+Hx…` is `+lz…`, the unit lz (d), so the word is adverti as the key gives it.
+- **48 words corrected in the transcription**, in two passes (`transcription/corrections_<fol>.tsv`, dated rows):
+  16 x → r (n), among them ung (twice), predicant, grandeur, personnes, environ, disans, n'irriter, langaiges (twice),
+  quelcun, l'advenir, n'ause, signee; 16 x → y (i): Despuis, puis (twice), parti, cy devant (twice), suite, n'y, Guyenne
+  (twice), royaulme, moyens, envoyent, voye, ayant, and the fourth sign of Clairac; x → i in qu'il (156r.21, a single
+  minim); two transpositions (152v.26 and 155v.02, rx = ne); 152v.28 `+Hx…` is `+lz…`, the unit lz (d), so the word is
+  adverti as the key gives it.
 - **A sign the transcription did not have.** An X whose lower-left stroke runs below the line and curls to the left stands
-  where the reading has o: ont (152v.19, 154v.04), ou, Caulmont, sont, moyen, versations, Lioux, journellement. It had
-  been transcribed `3x` or `x`. It is now code `G` (`SIGNS.md`), `G o` in `key.txt`. Nine places changed, each seen on the
-  image. `3x` elsewhere is not all this sign (in ce, executer it is s/x and e), so the other `3x` were left.
-- **One word of the reading changed.** 152v.25 `x:xQ` is `r:rQ`, both signs the n-sign: the key gives nont, and the
-  reading is now "Lesdicts de Caulmont n'ont seigneurie, place et chasteau [..] [..] n'ayent de ministres" (was [ont]).
-  `reading_en.md` follows ("have no lordship, place or castle [..] [..] that has not ministers").
+  where the reading has o: ont (152v.19, 154v.04), ou, Caulmont, sont, moyen, versations, Lioux, journellement, bonne,
+  fondement, consequance, occasions. It had been transcribed `3x` or `x`. It is now code `G` (`SIGNS.md`), `G o` in
+  `key.txt`. Thirteen places changed, each seen on the image. `3x` elsewhere is not all this sign (in ce, executer it is
+  s/x and e), so the other `3x` were left.
+- **Two words of the reading changed**, both to what the key now gives. 152v.25 `x:xQ` is `r:rQ`, both signs the n-sign:
+  "Lesdicts de Caulmont n'ont seigneurie, place et chasteau [..] [..] n'ayent de ministres" (was [ont]). 155v.09 `Dx+rQ`
+  is `Dy+rQ`: "ayant lesdicts rebelles l'auctorité" (was [estant]). `reading_en.md` follows both.
 - **Confirmed as written, emendation stands** (a plain wide x on the image): 152r.03 couru, 152r.06 and .07 il, 152r.08
-  qui, 152v.17 pourroit, 153r.24 discouru, 153r.26 solliciter, 154r.27 lictiere, 154r.28 cependant, 154v.12 ayants,
-  154v.20 and 155r.25 qui, among others.
-- **Not checked.** f. 155v (except line 26), f. 156r lines 1, 4, 9, 20 and 21, f. 156v line 2, 152v.05 and 154v.06: the
-  crops did not land on the word. About 20 of the 75 places. Doubtful and left: 152r.09 and 154v.01 (a tail that may be
-  the loop), 152r.19, 152v.10, 153r.28, 153v.21, 154v.02, 154v.23. The other emended signs (δ read as i, 3, z, f) were
-  not looked at.
-- **Result** (`replay.json`, `replay.tsv`): 1,196 of 1,715 cipher words exact (69.7%), 71.4% with i/y, 77.7% with the declared
-  second values; 366 words (21.3%) emended, all marked; 16 unread; no unmarked difference. By sign units
-  91.6% exact. x is still read with seven values three times or more.
+  qui, 152r.21 profit, 152v.17 pourroit, 153r.24 discouru, 153r.26 solliciter, 154r.27 lictiere, 154r.28 cependant,
+  154v.12 ayants, 154v.20 and 155r.25 qui.
+- **Seen and left, doubtful.** 152r.09 and 154v.01 (a tail that may be the loop), 152r.19, 152v.10, 153r.28, 153v.21,
+  154v.02, 154v.12 (susdicts), 154v.23, 155v.15 (a large X whose foot is not clear), 156r.20 (the line begins with the
+  sign 4 and a looped sign before `c+`; `D 7xi+` does not describe it, and Z is followed by signs the transcription
+  lacks), 156v.02 (`ff` there is two f, cc, not the unit ff). 155v.16: the first long word and the last word could not be
+  made out on the strip.
+- **Not looked at.** The other emended signs (δ read as i, and 3, z, f read as other letters).
+- **Result** (`replay.json`, `replay.tsv`): 1,201 of 1,715 cipher words exact (70.0%), 72.0% with i/y, 78.4% with the declared
+  second values; 354 words (20.6%) emended, all marked; 16 unread; no unmarked difference. By sign units 91.7% exact. x is
+  still read with more than one value in many places.
 
 Open after this: about one word in five still rests on an emendation. The 99.1% above is the share of cipher words given
 a reading, not the share the key produces.
