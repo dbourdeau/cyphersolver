@@ -1,0 +1,213 @@
+{
+ "schema_version": 1,
+ "target": "machiavelli1510v134",
+ "title": "Dieci di Balìa to Machiavelli at the French court, cipher letters of 17 and 22 August 1510 (BNCF Carte Machiavelli V/134, V/125; Unsolved Catalogue 2911, 2910)",
+ "documents": [
+  {
+   "id": "V134_1510-08-17",
+   "shelfmark": "BNCF, Autografi Palatini, Carte Machiavelli V/134, f. 1r (old f. 230)",
+   "date": "1510-08-17",
+   "year": 1510,
+   "country": "Italy",
+   "route": "Dieci di Balìa, Florence -> Niccolò Machiavelli at the court of Louis XII",
+   "language": "Italian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on or with the leaf; not printed in Opere VI (1877); ASF Dieci register not checked",
+    "partial": false
+   },
+   "length": {
+    "tokens": 640,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription/R1_V134.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "poor",
+    "notes": "Single pass from BNCF Teca images of about 900 px; several glyph pairs of the key cannot be told apart at that size."
+   },
+   "read": "read in part"
+  },
+  {
+   "id": "V125_1510-08-22",
+   "shelfmark": "BNCF, Autografi Palatini, Carte Machiavelli V/125 (old f. 252), enclosure of V/124",
+   "date": "1510-08-22",
+   "year": 1510,
+   "country": "Italy",
+   "route": "Dieci di Balìa, Florence -> Niccolò Machiavelli at the court of Louis XII",
+   "language": "Italian",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Hypothesis only: a ciphered summary of the Dieci letter of 18 Aug 1510 (Opere VI pp. 72-74); not tested",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1300,
+    "unit": "symbols",
+    "measured": false,
+    "file": "NOTES.md"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "image_quality": "poor",
+    "notes": "Not transcribed beyond a first look at line 1."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Florentine chancery cipher of 1510 for the orators in France and Rome: alphabet with homophones, nulls, syllable signs, double-letter signs and a few dictions (BNCF Carte Machiavelli VI/82 c. 2r).",
+  "symbol_kind": "symbols",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "alphabetical",
+  "word_division": "none",
+  "notes": "Several signs differ only by a small circle or dot (r / r with circle, q / q with circle), which the 900 px images do not always show.",
+  "distinct_symbols": 130
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The period key, BNCF Carte Machiavelli VI/82 c. 2r ('Roma & Francia da scrivere'); no decipherment of V/134 or V/125",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive",
+   "cleartext context"
+  ],
+  "attack": "key from archive",
+  "tools": [
+   "BNCF Teca",
+   "label decoder (key/decode.py)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-17",
+  "last_date": "2026-11-17",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key and pre-registration before the held-out test, two blind transcription passes, prior-work search); AI agents transcribed, decoded, measured and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "what": "Machiavelli's decipherments I/80-I/81 as the clear of V/134 or V/125: rejected on length and content.",
+   "result": "failed",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "access",
+   "what": "Period key VI/82 c. 2r found in the same collection and transcribed (key/KEY.tsv, frozen).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "what": "Pre-registered single test on V/131 lines 1-7 (333 signs, two blind passes) against Opere VI p. 89: 0.660 against a best of 0.303 for 200 permuted keys; the 0.85 threshold is not met.",
+   "result": "partial",
+   "technique": [
+    "plaintext matching"
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "V/134 decoded in part in a single pass: Giovanni Girolami, the Venetian galleys, Genoa, the fleet, Marcantonio.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-17",
+   "verdict": "not applicable",
+   "notes": "Pre-registered held-out test of the period key: 0.660 vs best control 0.303 (margin 0.356), below the 0.85 threshold, so the key is reported as partial. docs/_validate.py was not run."
+  },
+  "class": "read in part",
+  "key": "partial",
+  "method": "read with known key",
+  "method_basis": "Period key BNCF Carte Machiavelli VI/82 c. 2r applied to the undeciphered letters of August 1510.",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key"
+  ],
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "reading/V134_reading_in_part.md (single pass, decoded in part)",
+  "fraction_read": 0.3,
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "verification": [
+   "matched control"
+  ],
+  "key_file": "key/KEY.tsv",
+  "gaps": [
+   {
+    "item": "V/134: single transcription pass at 900 px; most lines read only in fragments",
+    "blocker": "illegible"
+   },
+   {
+    "item": "V/125: not decoded",
+    "blocker": "illegible"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "V134_1510-08-17",
+    "transcription": "transcription/R1_V134.txt",
+    "language": "it",
+    "decryption": "reading/V134_decoded_raw.txt",
+    "reading": "reading/V134_reading_in_part.md",
+    "translation": "reading/V134_reading_in_part.md",
+    "state": "read in part",
+    "read_share": 0.3,
+    "summary": "Giovanni Girolami has arrived; news of the Venetian galleys, of Genoa and the fleet, from Rome, of lances and Marcantonio's troops.",
+    "note": "Single pass, decoded in part; read_share is an estimate.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5 (for Brice Dudout)",
+     "date": "2026-11-17",
+     "note": "Fragments read as sense (Giovanni Girolami clean; 'in porto et da Genova', 'intendiamo che', Marcantonio); most of each line unread. Kept as read in part."
+    }
+   }
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Brice Dudout, Europe chiffrée (https://bdudout.github.io/europe-chiffree/): key identification, pre-registered test, partial reading",
+    "date": "2026-11-17"
+   }
+  ],
+  "provenance": "contributed"
+ }
+}
