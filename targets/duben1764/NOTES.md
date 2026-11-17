@@ -495,3 +495,20 @@ Files: `sysA_1616/keyc02/` (key, change log, scripts, README) and `sysA_1616/aug
   words (0.78): still "read in part". `sysA_1616/letter90/reading_90R-93L_key_c02_tagged.txt`, `decode_90R-93L_key_c02.txt`.
 Next: a test of key_c02 needs a new held-out letter with a clear (15 May 1764, 105R-108L / clear 106R-107L, Payne's
 preliminary transcription), with the reading order fixed in the PREREG.
+
+## 17 Nov 2026 (evening): key_c02, unchanged, passes a second pre-registered test on 15/4 May 1764 (Brice Dudout's session, Claude Opus 5.5)
+Files: `sysA_1616/may1764/` (PREREG-C02b, transcriptions, measure, reading, README).
+- **Reading order fixed first, from material evidence only** (the clear was not read): 105R has the date "ce 15/4 de May 1764"
+  and "Mon cher Comte"; that header shows through, mirrored, on 106L (same leaf); the first number line of 107R shows through on
+  108L (same leaf); 108L ends the letter (one number line, a clear paragraph, the subscription). Order 105R, 106L, 107R, 108L
+  line 1. PREREG-C02b pushed (62abb40f6) before any transcription; transcriptions frozen and pushed (c21ae6291) before the measure.
+- **Prior state**: Payne (PR #185) had transcribed this cipher once and compared it only with the tables 218-220; the clear
+  106R-107L had never been transcribed; no key had been applied to these pages. Two new passes (second blind; 32 substantive
+  differences settled on zooms); Payne's file not used.
+- **Result, run once**: 835 groups, key coverage 92.7 %, clear 1,900 letters (r 2.275, precondition 1.8-2.8 met).
+  **CA 0.916 against 200 permuted-key controls max 0.077: PASS** (bar 0.85 and controls + 0.30). M 0.803; page-wise CA 0.916.
+  Portion burnt. The August FAIL stands; key_c02 now has one failed and one passed held-out test.
+- **15/4 May 1764 read** through its contemporary decipherment: 418 words, 415 sure, 3 probable: 0.993 (method: existing
+  decipherment). English translation and summary in `sysA_1616/may1764/reading_1764-05-15.md` (Panin's assurances, Catherine held
+  back by Frederick II, Saldern and Stakejeff, pressing Panin if the Diet is called early).
+- Still open in Chiffer n:o 1: 104R-105L (another letter, not transcribed), 87-89, and 90R-93L (strict 0.78 with key_c02).
