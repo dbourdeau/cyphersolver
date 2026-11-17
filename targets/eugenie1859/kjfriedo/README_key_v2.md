@@ -42,6 +42,16 @@ Image n of a box = the microfilm frame given below. The frame can be fetched as 
 
 `~` marks a syllable fragment. `a | à` marks a homograph.
 
+## Update v3 (17 Nov 2026): f11r deciphered, dating corrected
+New source: **400AP/144 img 181** (`DAFANCH97_MIC032003596`, file `images/AN_400AP144_img181_f11r_received_deciphered.jpg`). This is the Florence telegraph office copy: "Firenze 4 giugno 1859, ore 4 pom. — Da Alessandria li 4, ore 11.45 ant. — L'Empereur au Prince Napoléon". It gives both the *ancien chiffre* and the *nouveau chiffre*, with the value written under every group.
+
+- **NAF f11r is the telegram of 4 June 1859, 11.45 a.m., from Alessandria.** It is not the 10 June dispatch ("Suivant toutes les probabilités…"), which reached Florence as a separate, partly enciphered form (img 185, `f11F`). Everything earlier that assumed "f11r = the d'Hauterive/Comandini text" is withdrawn: the 616 = à position test, the la/no-la discussion, and the 2774 = null idea.
+- Plaintext (the same in both keys): **"Ne comptez pas pour le moment sur la division d'Autemarre; je ne puis l'envoyer par mer; vous la recevrez plus tard par terre."**
+- The groups on the copy match the f11r rows of `prince_family_tokens_f7_f10_f11_f12.tsv` exactly, ancien 31 and nouveau 27 (checked by script). The only exception: nouveau position 24 is 2162 on the copy, and the decipherer noted "(1162 tard)"; the NAF has 1162.
+- **f11 nouveau = prince key.** It shares 11 codes with the f12 dictionary, and 10 agree: 135, 2079, 2218, 1308, 543, 1682, 1299, plus the newly confirmed **512 vous** (f12:19), **1040 compt-** (f12:48) and **2041 par** (f12:100). The one conflict is **1344 = pas** at f12:109 (v2 had guessed "ville"). f12:108–110 are reopened.
+- **f11 ancien is a separate codebook**: `f11r_ancien_key.tsv` (31 groups with values; 616 = par, 2774 = -re).
+- New files: `f12_alignment_v3.tsv` (SHA-256 `e013f548…d232`), `prince_key_dictionary_v3.tsv` (165 codes: A 88, B 42, C 31, X 4; SHA-256 `d15015be…8361`), `f11r_ancien_key.tsv` (`5f2d13b7…c4d0`). New occurrence tag: `f11N:n` = f11r nouveau group n, from the img 181 decipherment. The v2 files are kept for reference.
+
 ## Status
 - **Values not yet checked against the images by a second reader.** Tier A values from f7, f10, f11F and r11 are my reading of the interlinear decipherments in the images above.
 - f12 groups 87–97 (Lucques … littoral … Massa): uncertain. Groups 78 and 110: unexplained.
