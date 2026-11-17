@@ -1,6 +1,8 @@
 # AN 400AP/57, d. 1: Emperor ↔ Empress telegrams and Lasry's key (17 Nov 2026)
 
-Contributed by Jozef Krajčovič (kjfriedo) with an AI model (Claude). Images in `images/400AP57/` (greyscale, 1400 px; Archives nationales, 400AP/57). Groups and proposed values are in `400AP57_emperor_empress_tokens.tsv`. The groups were read from the images by one reader and not checked by a second.
+Contributed by Jozef Krajčovič (kjfriedo) with an AI model (Claude). Images in `images/400AP57/` (greyscale, 1400 px; Archives nationales, 400AP/57). Groups and proposed values are in `400AP57_emperor_empress_tokens.tsv`. The groups were read from the images by one reader and not checked by a second, except img 366, which Dan Bourdeau's check (PR #768) read independently and found in agreement.
+
+**Licence and credit:** CC BY 4.0 for the report and `400AP57_emperor_empress_tokens.tsv`. The images are reproductions of "Archives nationales, 400AP/57, dossier 1"; their reuse is subject to the Archives nationales terms.
 
 **Source:** AN 400AP/57, dossier 1 ("Dépêches télégraphiques", Apr–Jul 1859), 422 images. Frames `DAFANCH97_MIC014002331`–`2752`; image n = frame 2330+n. From img 177 on, the dossier is "Dépêches télégraphiques 13 mai – 18 juillet 1859": the Emperor's cabinet minutes and the telegraph copies, often partly in clear.
 Key: `lasry_key.csv` from the cyphersolver repository (242 values, codes 1–1396).
@@ -53,7 +55,7 @@ Clear at the end: "Dès que cela sera réglé" + `677 je · 1366 [ ] · 708 le �
 `203 cède=NEW · 1184 ses · 397 droits=NEW · 1252 [ ] · 773 me · 1040 que · 677 je · 1074 re · 789 mets=NEW · 114 au · 1132 roi · 323 de · 980 Piémont · 621 il · 278 conserve=NEW · 702 la · 1339 Vé-=NEW · 834 né · 1266 -tie=NEW · 753 mais · 422 elle=NEW · 510 fait`
 → "**[Il] cède ses droits [sur la Lombardie?] … que je remets au roi de Piémont; il conserve la Vénétie, mais elle fait partie intégrante de la confédération.**" These are the Villafranca terms. 834 "ne" is used as the syllable "-né-" here.
 
-**img 366, Emperor → Empress, Valeggio 11 July, 3.50 p.m.** (clear: "Je reviens de Villafranca" … "la décision prise")
+**img 366, Emperor → Empress, Valeggio 11 July, 3.50 p.m.** (clear: "Je reviens de Villafranca" … "la décision prise"). The header has "17 mots / 19 groupes", but this copy has **18 groups** in three lines of 6, 6 and 6, with nothing struck through or added. The count of 19 is either the clerk's miscount or refers to a group missing from this cabinet copy. Which one cannot be decided from this copy. The table gives the 18 groups as written.
 `1284 tout=NEW · 1162 se · 464 est · 760 [ ] · 927 passé · 853 nos=NEW · 834 né · 565 go=NEW · 237 ci · 889 ons · 199 ce · 1201 soir=NEW · 677 je · 1249 te · 84 an=NEW · 825 [non] · 210 cer=NEW · 59 ai`
 → "Je reviens de Villafranca. Tout s'est [ ] passé. Nos négociations … ce soir je t'annoncerai la décision prise."
 

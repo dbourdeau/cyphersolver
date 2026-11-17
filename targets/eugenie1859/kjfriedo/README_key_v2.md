@@ -43,6 +43,7 @@ Image n of a box = the microfilm frame given below. The frame can be fetched as 
 `~` marks a syllable fragment. `a | à` marks a homograph.
 
 ## Update v3 (17 Nov 2026): f11r deciphered, dating corrected
+Licence and credit for the v3 files: see `LICENCE_v3.md` (CC BY 4.0 for the tables; images credited "Archives nationales, 400AP/…").
 New source: **400AP/144 img 181** (`DAFANCH97_MIC032003596`, file `images/AN_400AP144_img181_f11r_received_deciphered.jpg`). This is the Florence telegraph office copy: "Firenze 4 giugno 1859, ore 4 pom. — Da Alessandria li 4, ore 11.45 ant. — L'Empereur au Prince Napoléon". It gives both the *ancien chiffre* and the *nouveau chiffre*, with the value written under every group.
 
 - **NAF f11r is the telegram of 4 June 1859, 11.45 a.m., from Alessandria.** It is not the 10 June dispatch ("Suivant toutes les probabilités…"), which reached Florence as a separate, partly enciphered form (img 185, `f11F`). Everything earlier that assumed "f11r = the d'Hauterive/Comandini text" is withdrawn: the 616 = à position test, the la/no-la discussion, and the 2774 = null idea.
@@ -50,11 +51,11 @@ New source: **400AP/144 img 181** (`DAFANCH97_MIC032003596`, file `images/AN_400
 - The groups on the copy match the f11r rows of `prince_family_tokens_f7_f10_f11_f12.tsv` exactly, ancien 31 and nouveau 27 (checked by script). The only exception: nouveau position 24 is 2162 on the copy, and the decipherer noted "(1162 tard)"; the NAF has 1162.
 - **f11 nouveau = prince key.** It shares 11 codes with the f12 dictionary, and 10 agree: 135, 2079, 2218, 1308, 543, 1682, 1299, plus the newly confirmed **512 vous** (f12:19), **1040 compt-** (f12:48) and **2041 par** (f12:100). The one conflict is **1344 = pas** at f12:109 (v2 had guessed "ville"). f12:108–110 are reopened.
 - **f11 ancien is a separate codebook**: `f11r_ancien_key.tsv` (31 groups with values; 616 = par, 2774 = -re).
-- New files: `f12_alignment_v3.tsv` (SHA-256 `e013f548…d232`), `prince_key_dictionary_v3.tsv` (165 codes: A 88, B 42, C 31, X 4; SHA-256 `d15015be…8361`), `f11r_ancien_key.tsv` (`5f2d13b7…c4d0`). New occurrence tag: `f11N:n` = f11r nouveau group n, from the img 181 decipherment. The v2 files are kept for reference.
+- New files: `f12_alignment_v3.tsv` (SHA-256 `e013f548…d232`), `prince_key_dictionary_v3.tsv` (165 codes: A 88, B 42, C 31, X 4; SHA-256 `5e2646f9fcea…0ce0`; changed in the scan-check commit, where the note on code 1150 was updated), `f11r_ancien_key.tsv` (`5f2d13b7…c4d0`). New occurrence tag: `f11N:n` = f11r nouveau group n, from the img 181 decipherment. The v2 files are kept for reference.
 
-## Status
-- **Values not yet checked against the images by a second reader.** Tier A values from f7, f10, f11F and r11 are my reading of the interlinear decipherments in the images above.
-- f12 groups 87–97 (Lucques … littoral … Massa): uncertain. Groups 78 and 110: unexplained.
-- Conflicts: 799 (Luc-/lit-) unresolved; 1149 (l'A-/al-) weak; 1150 at f12:24 read as 1150 or 1140.
-- 133 vs 135: the alignment needs all 135 groups.
-- f11r nouveau (27 groups) does not fit the text of no. 785 and probably belongs to another telegram. f11r ancien is a different codebook.
+## Status (updated 17 Nov 2026)
+- **Second reader.** Dan Bourdeau's project check (PR #768) read f11r on img 181 (all 58 groups) and img 366 independently, and found agreement. The other tier A values from f7, f10, f11F and r11 are still my reading of the interlinear decipherments in the images above.
+- **Gallica scan.** All 215 groups (f7r, f10r, f11r, f12r) were compared with the scan (`SCAN_CHECK_AND_HELDOUT.md`). The f12 readings 1150, 1255 and 1216 are now settled. **133 vs 135:** the scan has 135 groups, so the header "133 gro." is the clerk's miscount.
+- **f11r** is the telegram of 4 June 1859 from Alessandria. *Ancien* and *nouveau* carry the same text ("Ne comptez pas pour le moment sur la division d'Autemarre …", see the v3 section above). *Nouveau* is the prince key; *ancien* is a separate codebook.
+- **Held-out test** (`SCAN_CHECK_AND_HELDOUT.md` §2): 10 of the 11 overlapping codes are correct. Eight of the ten are tier A codes whose values come from other telegrams' decipherments, so they show that f11r nouveau uses this code. **The alignment itself is tested only by six codes** (1040, 1344, 1682, 1299, 2041, 512), and five of them are right. The script's matching is lenient: a value counts as correct if one string starts the other. The 1344 correction ("ville" → "pas") was made after the answer was seen.
+- **Still open in f12:** groups 87–97 (Lucques … littoral … Massa), 78, 108 and 110; the conflict at 799 (Luc-/lit-); and 1149 (l'A-/al-, weak).
