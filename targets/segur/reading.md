@@ -2,18 +2,20 @@
 
 Cipher passages in **bold**; clear text in roman; `{…}` = word-sign or glyph not yet identified; `[…]` = editorial.
 Spelling is the letter's own (u/v and i/j as the key writes them). Readings marked ? rest on a doubtful digit.
+Letters in [ ] inside a bold passage are not what the key gives for the figures there (marked 16 Nov 2026 after the key
+replay, `docs/_replay.py`; `replay.tsv` lists each); `[= …]` is editorial.
 
 ## f. 233 — [Sainte-Foy?], October 1585
 
 Monsieur de Segur. Je suis en peine de n'avoir point eu de vos nouvelles depuis vostre partement d'Angleterre; je vous en ay
 escrit quatre fois … Seulement je vous prieray, si de ça me l'avez fait, **{X} capituler et conclure promptement avec ceux
-que vous adviserez,** s'il est possible **avec[?] le duc Casimir ou par son consentement, et faire la levée la plus grande et
+que vous adviserez,** s'il est possible **av[ec] le duc Casimir ou par son consentement, et faire la levée la plus grande et
 la faire marcher** le plus tost que faire se pourra. Car pour que quelque **prompt secours** que **est necessaire**, j'escry à
-Mr de Clervant de faire **la levée de deux mille reistres** selon qu'il est **obligé {gla} la contracte[?] avec les Eglises[?]
-… et[?]** en l'an **1579[?]**, pour le moings quelque partie s'il ne peult le tout, et s'il n'a le moyen de ce faire, **qu'il
+Mr de Clervant de faire **la levée de deux mille reistres** selon qu'il est **obligé {gla} la contra[c]te avec les E[g]lises
+… et[?]** en l'an **e la** [= 1579?], pour le moings quelque partie s'il ne peult le tout, et s'il n'a le moyen de ce faire, **qu'i[l]
 s'aide des dix mil escus de {180}**, ainsy que ledit Sr de Clervant vous dira, a quoy je vous prie tenir la main et que je soye
 bien tost adverty de tout ce … du **chemin qu'il tiendra en ce cas**, evitant le danger de le[?] … **chemins le Vivarès ou
-Daulphiné** pourroient estre propres, en nous advertissant de bonne heure. Je vous prie mander de mes nouvelles à mon frere
+Daulphi[né]** pourroient estre propres, en nous advertissant de bonne heure. Je vous prie mander de mes nouvelles à mon frere
 Mons.r le Prince là part où il sera. Nos ennemis ont voullu triompher de la separation … [news of the war in Guyenne and
 Languedoc] … Vostre affectionné maistre et parfait amy, Henry.
 
@@ -25,8 +27,8 @@ stroke = *qu'il*; `180` a nomenclature entry, the source of ten thousand écus (
 
 ## f. 239 — Montauban, [January/February] 1586
 
-… Seulement je vous diray de **{900} n'espargner aucun moyen {gne} {gna} secourir en toute diligence, et remuez toutes
-pieces** pour ung si necessaire effect, **obligez-y tout**. Et au reste faictes tres certain estat de moy … De Montauban …
+… Seulement je vous diray de **{900} n'espargner aucun moyen {gne} {gna} secourir en toute diligence, et remue[z] toutes
+pie[c]es** pour ung si necessaire effect, **obligez-y tout**. Et au reste faictes tres certain estat de moy … De Montauban …
 1586. Vostre tres affectionné maistre et parfayt amy, Henry.
 
 Postscript in another hand, signed D.: **puis {e} on n'a eu de vou[s] {na}** Monsieur, je suis perpetuellement vostre
@@ -39,11 +41,11 @@ date or name sign; `{na}` = *affaires* or *nouvelles* (see f. 288v).
 
 ## f. 288v — slip attached to the letter of 1 April 1586
 
-**{gne} suis en extreme peine[?] de n'avoir eu de vos {na} depuis {e}; je ne sçay {pe} {pu} e[s]crire, ne à qui, ne en quel
-estat sont nos {na}.** Je vous prie me mander de vos nouvelles, et **{Ra} s'il {qu} est possible la plus grande levée qui ayt
-esté faite. Les deux mille reistres que Monsieur de Clervant est obligé fournir** nous seroient tres necessaires, **et mesmes
+**{gne} suis en extreme [pe]ine de n'avoir eu de vos {na} depuis {e}; j[e] ne sçay {pe} {pu} e[s]crire, ne à qui, ne en quel
+[estat] sont nos {na}.** Je vous prie me mander de vos nouvelles, et **{Ra} s'il {qu} est possible la plus grande levée qui ayt
+esté faite. Les deu[x] mi[lle] reistres que Monsieur de Clervant est obligé fournir** nous seroient tres necessaires, **et mesmes
 en {H} {L}**. Je vous prie en communiquer avec luy. Encores que nos ennemys n'ayent faict aucun effort contre nous et qu'il y
-ayt en eux plus de mauvaise volonté que d'execution, si est ce que **l'assistance et secours {qua} sont tres necessaires.
+ayt en eux plus de mauvaise volonté que d'execution, si est ce que **l'assist[a]nce et secours {qua} sont tres necessaires.
 Nos places son[t] bien fortifiées. {Ne}** avons envoyé **… en Valen[ce?]**, dont long temps a nous n'avons eu nouvelles …
 Vostre plus affectionné maistre et parfaict amy, Henry.
 
