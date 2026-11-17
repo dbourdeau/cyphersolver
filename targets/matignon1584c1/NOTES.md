@@ -1,7 +1,8 @@
 # Matignon's Cipher-1, 1584: BnF fr. 15568 ff. 151r-152r (catalogue 2840) and fr. 15567 f. 24 (catalogue 2838)
 
-Status: in progress. ff. 151r-152r are read in part (strict share 0.544). f. 24 is decoded, not read (0.409). Not
-yet transcribed: fr. 15567 f. 54 and fr. 3255 f. 85 (see Remaining gaps). **No person has checked this work.** The
+Status: in progress. ff. 151r-152r are read in part (strict share 0.544). f. 24 is decoded, not read (0.409). The
+siblings fr. 15567 f. 54 (decoded, not read, 0.530) and fr. 3255 f. 85 (already deciphered interlinearly in the
+period) were tested on 17 Nov 2026 and fail the bar (see Remaining gaps). **No person has checked this work.** The
 transcriptions, arbitrations, readings and reviews were made by Claude Opus 5.5 (Claude Code) for Brice Dudout.
 
 **17 Nov 2026, after Daniel's review of PR #709:**
@@ -89,7 +90,11 @@ Adour below Bayonne); the inhabitants of Bayonne; "soubz peine"; "faisant sembla
 - f. 24: ll. 1, 11 and 12 are pass 2 only. The glosses over ll. 3-8 are not transcribed. The clear paragraph and the
   facing address leaf are not transcribed. Blocker: not attempted.
 - fr. 15567 f. 54 (Tomokiyo: same cipher; last line all nulls) and fr. 3255 f. 85 ("la renprynse de Perigueux",
-  d'Aubeterre). Blocker: not attempted. They are siblings that may hold the open signs.
+  d'Aubeterre): single pre-registered measures on 17 Nov 2026 with key_D unchanged. f. 54r ll. 3-12, 432 signs:
+  0.743 (200 controls: max 0.347), decoded, not read (strict share 0.530, 44/83). Tomokiyo built his table partly
+  from f. 54, so this test is not fully independent. fr. 3255 f. 85r ll. 1-16, 456 signs: 0.450 (max 0.425). The
+  leaf carries a period interlinear decipherment (existing), and it is in another hand with sign forms absent from
+  the key. Blocker: no fresh portion is left. Details in #709.
 
 ## Escalation
 
@@ -99,9 +104,10 @@ Adour below Bayonne); the inhabitants of Bayonne; "soubz peine"; "faisant sembla
 - [x] clear-pages: interlinear glosses on f. 151r ll. 1, 3 and f. 24 l. 1 used as checks. There is no decipherment on
   the neighbouring leaves (fr. 15568 views 157-164).
 - [x] print: no printed decipherment found; Tomokiyo gives no reading.
-- [ ] siblings: fr. 15567 f. 54 and fr. 3255 f. 85 are not yet transcribed.
-- [x] retry: three single pre-registered tests. Test 1 passed (0.876). Tests 2 and 3 (0.767, 0.764) are below 0.85
-  and above max + 0.30.
+- [x] siblings: fr. 15567 f. 54 and fr. 3255 f. 85 transcribed (two blind passes, arbitrated) and measured on 17 Nov
+  2026: 0.743 and 0.450, both below 0.85.
+- [x] retry: five single pre-registered tests. Test 1 passed (0.876). Tests 2 and 3 (0.767, 0.764) are below 0.85
+  and above max + 0.30. Tests 4 and 5 (siblings, 0.743 and 0.450) are below 0.85.
 - [ ] second reader: no independent person has checked the transcription or the reading.
 
 ## Credits
