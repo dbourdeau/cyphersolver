@@ -7,8 +7,8 @@ Riksarkivet K 259, IIIF A0073297 (image numbers = scan numbers). "Clear" = conte
 | Images | Letter | Groups (est.) | Clear | Status |
 |---|---|---|---|---|
 | 85-86 | Swedish clear "Nyheter från Finland", headed "Chiffer n:o 1" | - | - | clear text |
-| 87L-89R | undated cipher letter, ~5 pages | ~1,500 | not identified (94-95?) | not transcribed; frequent groups 609, 302, 448, 552, 212, 330 differ from system A: system to be checked |
-| 90R-93L | cipher letter beginning 96.70.171 ("chiffer n:o 1" at the foot of 90R) | ~1,500 | not identified; 94-95 is a clear letter "Ecrit le 30me de Janv: arrivé le 13 de Fevr." (Empress, Orlov, Poniatowski, Panin) that may be its decipherment | not transcribed |
+| 87L-89R | undated cipher letter, ~5 pages | ~1,500 | not identified (94-95?) | not transcribed; frequent groups 609, 302, 448, 552, 212, 330 differ from system A. 17 Nov 2026: key_c01 gives no French on 87L (sysA_1616/letter90/): not system A |
+| 90R-93L | cipher letter beginning 96.70.171 ("chiffer n:o 1" at the foot of 90R) | ~1,500 | none found; 94-95 (30 Jan) does not follow the decode | 17 Nov 2026: system A, transcribed twice (1,585 groups), read in part with key_c01 (~44 %), sysA_1616/letter90/ |
 | 94-95 | clear, 30 Jan [1764]; signed "ce 30 de Janv." | - | - | candidate clear for 87-89 or 90-93 |
 | 96-97L | letter 15.73.100.347.503.401.107.536, early 1764 | 658 | 97R-99L | training letter of key_c01 (PR #566) |
 | 100R | cipher, 13 lines, pencil "6 Mars 1764"? at the head, ends 96 + flourish | ~240 | the part of 102R-103R after 103L.08? (NOTES candidate) | not transcribed |
