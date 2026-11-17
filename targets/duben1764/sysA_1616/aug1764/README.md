@@ -9,7 +9,7 @@ Text files only; images on the Riksarkivet IIIF server (`https://lbiiif.riksarki
 | (hash note) | the first `aug1764/PREREG.md` line of `SHA256SUMS-PREREG` is the text before the amendments, as committed in 75db2c7b1 (check from `sysA_1616/` on that commit); the last line (`PREREG.md`, run from `aug1764/`) is the text with Amendment 1; `SHA256SUMS-AMEND2` holds the final text |
 | `SHA256SUMS-AMEND2` | hashes of the PREREG with both amendments and of the two frozen transcriptions |
 | `scripts/measure_aug.py` | the one measure (frozen in the PREREG) |
-| `transcr/aug1764_cipher_merged.txt` | the cipher, 54 number lines (112L, 112R top, 114R, 115), 1,019 groups of 100 or above |
+| `transcr/aug1764_cipher_merged.txt` | the cipher, 51 number lines (112L 15, 112R top 6, 114R 15, 115 15), 1,019 groups of 100 or above (the figure "54" in Amendment 2 is wrong; the frozen file itself is unchanged) |
 | `transcr/aug1764_clear_116-117.txt` | the contemporary decipherment on 116-117 (40 lines, 2,279 letters) |
 | `transcr/passes/`, `transcr/disagreements_aug.txt` | pass 1 (this session) and pass 2 (blind sub-agent), and the 23 differences with their arbitration |
 | `outputs/measure_result.json`, `outputs/measure_result_full.txt` | the result as printed, and the decode string |
@@ -50,3 +50,14 @@ The verdict stands. The portion is burnt for any later key test.
 Transcriptions by AI agents (two passes, the second blind), not checked by a palaeographer. key_c02 includes about 48
 values read by sense in 90R-93L (see `../keyc02/`); the measure is the only independent check of them, and it is a fail at
 the pre-registered bar.
+
+## Corrections after review (17 Nov 2026, later)
+- Line count: the merged cipher has **51** number lines (112L 15, 112R 6, 114R 15, 115 15), not 54 as written in Amendment 2 and in an
+  earlier version of this README. Amendment 2 is hashed and is left as it was; this note corrects it.
+- Reading order: in effect the first PREREG (with its Amendment 1) bound the test to the binding order of the pages (112L, 112R, 114R,
+  115), and that order was wrong: the text runs 112L -> 114R -> 115 -> 112R. The FAIL above is the result under that wrong order and
+  stands. `../may1764/PREREG-C02b.md` is the **second** pre-registered test of the same, unchanged key_c02, on another letter, with the
+  reading order fixed first from material evidence; it passed (CA 0.916 vs controls max 0.077).
+- Normalisation: 90R-93L was normalised (370/420/580 -> 373/423/583) because in that letter the scribe's open 3 recurs in the same
+  frequent groups and was read as 0 in pass 1; the August and May files keep what was written (open 3 read as 3 at transcription, no
+  normalisation step), so that their frozen text is the raw reading.

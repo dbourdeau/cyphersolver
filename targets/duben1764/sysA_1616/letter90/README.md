@@ -69,3 +69,10 @@ python3 -I sysA_1616/letter90/decode_plain.py dudout/system_a/key_c01.json sysA_
 tagged reading: `reading_90R-93L_key_c02_tagged.txt`: 698 sure + 23 probable of about 895 words, strict share **0.78**
 (0.435 with key_c01). Still "read in part" under the 95 % rule. Caution: about 48 key_c02 values were read by sense in this
 letter, and key_c02 failed its pre-registered bar on 20/31 Aug 1764 (CA 0.831 < 0.85; `../aug1764/`).
+
+## Addendum, 17 Nov 2026 (latest): strict recount after key_c02 passed on 15/4 May 1764
+key_c02 unchanged (passed its second pre-registered test, `../may1764/`). Two groups re-read on the image (393 -> 323, 930 -> 233); the
+13 key_c02 values read by sense here and never met in a period clear now make a word probable; 30 conjectured values for missing groups
+are kept apart (`check_c02/`). Strict count: **651 sure + 81 probable of about 860 words (sure 0.757; sure + probable 0.851): read in part.**
+87L with key_c02 (39 of 46 groups known on the three transcribed lines) still gives no French ("autr man ... in ti sa t t so ac r"): 87-89
+is not system A, as found with key_c01; not pursued.
