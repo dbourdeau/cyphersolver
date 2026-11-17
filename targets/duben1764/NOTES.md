@@ -458,3 +458,24 @@ and the parallel reading files were not merged.
   clear. State: decoded, not read. No control was run; this is not a test of the key.
 - `documents[]`: the 5 Oct 1764 document still said "not read ... does not fit the cipher in order", withdrawn on
   12 Nov; corrected.
+
+## 17 Nov 2026 (Brice Dudout, Europe chiffrée; Claude agent): Chiffer n:o 1, the letter on 90R-93L
+
+Files in `sysA_1616/letter90/` (README there). Images: Riksarkivet IIIF A0073297_00087-00095, _00104-00107, _00112-00117
+at full size (fetched by curl on 27 Oct, re-read 17 Nov).
+
+- **90R-93L is a system A letter without a contemporary decipherment found.** Transcribed twice (1,585 groups of 100 or
+  above; 36 disagreements settled on the image; the scribe writes 3 open, so 370/420/580 are 373/423/583). key_c01,
+  unchanged, knows 80 % of the groups and the decode is French from the first line ("il seroit difficile, mon cher Comte,
+  de ..."). The 30 Jan clear on 94-95 is not its decipherment.
+- **Read in part** (Daniel's rule): 349 sure + 32 probable words of about 876, read share about 0.44. Content: Düben
+  defends his zeal for Her Majesty's service, says he gave the Empress the assurances of the King's friendship and pressed
+  her, that "the unhappy turn of affairs" prevented success ("it is assuredly not my fault"), that Panin doubts the
+  sincerity of the Swedish court and its predilection for one party, that the election of the Marshal of the Diet made the
+  same ideas useless, and the Empress acts in concert with the King [of Prussia]. Summary and limits in the README.
+  No new key value is frozen and no measure was run (no clear).
+- **87L-89R is not system A** (key_c01 gives no French on 87L; other hand). Whether 94-95 is its clear is open.
+- **No interlinear decipherment** on 87-93, 104-107 or 112-115; the decipherments of this file are separate clear pages.
+
+Next: complete the key on 90R-93L, freeze it, and test it once on a letter with a clear never used (20/31 Aug 1764,
+110R-115 with the clear 116-117), with the bar written down first.
