@@ -2,7 +2,7 @@
 
 Piero Alamanni, Florentine orator at Lodovico Sforza's court, to Piero di Lorenzo de' Medici, Archivio di Stato di Firenze, Mediceo avanti il Principato (MAP) LXXIV doc. 96, cc. 220-221. Clear letter with cipher passages on 220v, 221r and 221v. Key: the Milan embassy key sheet MAP LXXII 183, the same key Ridolfi used in October 1494 (see [README.md](README.md) and [key.json](key.json)).
 
-This is a partial reading: 80 of the 91 cipher words counted in [alamanni-transcription.tsv](alamanni-transcription.tsv) have a proposed reading, 11 are unread, and the word count is itself provisional where the word division of an unread run is unknown. Fewer than half the words are free of a choice between sign values. The secure parts are the words graded H or C in [reading.txt](reading.txt).
+This is a partial reading: 82 of the 91 cipher words counted in [alamanni-transcription.tsv](alamanni-transcription.tsv) have a proposed reading (two of them doubtful), 9 are unread, and the word count is itself provisional where the word division of an unread run is unknown. More than half the words are free of a choice between sign values, now that the ÷ sign is told apart as n or c by its dots (14 November 2026; see [held-out-114](held-out-114/README.md)). The best-supported parts are the words graded H or C in [reading.txt](reading.txt), whose sign values come from the key sheet or a contemporary gloss; a sign can still have been misread.
 
 How to read the text below:
 
@@ -38,7 +38,7 @@ sia unico et epso. Ma che uno fussi da *[in]dugarlo*, perché forse poi si vorr�
 vi siamo incorsi(?). Ma ben ti ricordarei con affectione, che lo intrare in una cosa di questa natura, richiede andarvi con tali
 preparationi: et antivederla in modo vinta, che si *andassi(?) a manifesta vittoria*: et molto mi piacerebbe, che *tu qui(?) tu havessi(?)
 a schoprire* per ogni buono rispecto, et anche si servirebbe più alla mente del re [di F...](?), *cioè di Napoli* in ogni evento. Ma
-*sotto mante[?]o* (sense: mantello) più tosto li porgessi di quelli aiuti potessi con quel supposto di cavarne qualche modo(?) ben particular: di
+*sotto mantello* più tosto li porgessi di quelli aiuti potessi con quel supposto di cavarne qualche modo(?) ben particular: di
 quelli che io non so se mai si possono sperar(?). *Mentre che Genova starà come è hora* **[221r]** et in somma se voi potessi essere a
 tempo, o *vedessi di ferla(?) netta(?)*, io credo, che la saria la salute *del re Alfonso(?) et n[ost]ra*. Et la speranza, che vogliono fare
 *a Napoli* di vedere ben la dispositione del *[22]* advenire(?) il vero mi par superfluo: perché digià sicuro delli effecti
@@ -54,7 +54,7 @@ me pare merchare con questo modo et la quiete e riposo: et dio sa, se io desider
 Io sono certo che tu interpreterrai benissimo tutte le interrogationi mi ha facte il S. Lodovico. Parmi sia uno epilogo di
 quello, che l'altro dì ne dixe in su la materia di Pisa et della [restitutione?] [...] **[221v]** [...] modo. Et in fine ha voluto
 mostrarci .iij. cose che stanno in lui *da poter [?] [?] [?]*, la prima *di Genova*. L'altra di Francia, che qui ci
-haveano(?) *assai tenuto [?] [?] [?] [?]*. La terza *di serrarci la via* de' mercatanti in Ponente, Francia, Spagna, et questi simili
+haveano(?) *assai tenuto [?] ce la calerà(?) [?]*. La terza *di serrarci la via* de' mercatanti in Ponente, Francia, Spagna, et questi simili
 luoghi, credendo con questi modi, o col metterci in sospecto, che [...] forse(?) ne nascha in la [città?] [mala] contentezza(?), che
 potessi fare qualche malo effecto. Et benché io mi sia assai ingegnato sbarbarlo(?) in questa parte: pur dubito, che anchora vi
 ha qualche appicho. Et parmi che ne' ragionari delle cose nostre, habbi chi li dice più e' particulari di costì che non so io
@@ -81,7 +81,7 @@ it* [I do not hold], because perhaps later one will want *to do it in time* and 
 affection that to enter upon a thing of this nature requires going into it with such preparations, and foreseeing it so far won,
 that one *went(?) to manifest victory*; and I should much like that *you [here?] should(?) have to come into the open* for every good
 reason - it would also better serve the mind of the King [clear word after 'del re' not read: begins 'Fe/Fr'], *that is, of Naples*, in any event - but rather that *under
-cover* (the cipher word is read mante[?]o, sense mantello) you should give them what help you could [...]. *While Genoa stays as it is now*, [...] and in sum, if you could be in time,
+cover* you should give them what help you could [...]. *While Genoa stays as it is now*, [...] and in sum, if you could be in time,
 or *saw a way to do it cleanly* (ferla and netta uncertain), I believe it would be the salvation *of King Alfonso and ours*. And the hope they have *at Naples*
 of seeing clearly the disposition of *[22]* [...] seems to me superfluous, [...]; and do not believe that *[22]*, even if he had more *security* than is possible, *will ever trust the King*, [...] [nor] wants *such greatness of his*,
 judging it not to his own purpose, nor to yours there. And there is no doubt that to arrive at this end he will try everything. And
@@ -90,6 +90,6 @@ judgment [...]. I do beg you earnestly not to speak of this opinion of mine to a
 laid to my charge that I *wanted war, to put the city in turmoil*, as you know happened to me once before [...].
 
 [...] And in the end he wanted to show us three things that lie in his power *to be able to* [three groups not read; the sense wants something like 'harm us']: the first, *of Genoa*;
-the other, of France, which [...] *long held* [four groups not read]; the third, *to close to us the road* of the merchants in the West,
+the other, of France, which [...] *long held* [one group not read] *will bring it down on us(?)* [one sign not read]; the third, *to close to us the road* of the merchants in the West,
 France, Spain and such places, believing by these means, or by making us suspect [...], that discontent may arise in the [city]
 that could have some bad effect. [...] Farewell. Vigevano, 26 April 1494. Piero Alamanni, knight etc.

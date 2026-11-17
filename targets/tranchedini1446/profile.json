@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "tranchedini1446",
- "title": "Nicodemo Tranchedini and Boccaccino Alamanni, Florence, to Francesco Sforza, 27-29 Nov 1446 (BnF italien 1583 ff. 134, 139; DECODE R7905, R7908)",
+ "title": "Nicodemo Tranchedini (and Boccaccino Alamanni), Florence, to Francesco Sforza, 27-29 Nov 1446 and 19-22 Feb 1448 (BnF italien 1583 ff. 134, 139; DECODE R7905, R7908; italien 1585 ff. 28, 30)",
  "documents": [
   {
    "id": "f134",
@@ -73,6 +73,78 @@
     "notes": "778 signs on about 40 cipher-bearing lines, 240 (31%) unmatched shapes; two agents' labels not unified, so 172 distinct is an over-split; L21 dropped as a duplicate row of L22; L31-L33 may double-count."
    },
    "read": "not read"
+  },
+  {
+   "id": "f28_1448",
+   "shelfmark": "BnF italien 1585 f. 28 (Gallica btv1b52525947w)",
+   "date": "19 Feb 1448",
+   "year": 1448,
+   "country": "Florence",
+   "route": "Nicodemo Tranchedini da Pontremoli (Florence) -> Francesco Sforza",
+   "places": {
+    "from": "Florence",
+    "to": "unknown"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "f. 27, a clear copy in an 18th- or 19th-century hand filed beside the letter; it leaves two word signs as dashes",
+    "partial": true
+   },
+   "length": {
+    "tokens": 242,
+    "distinct": 70,
+    "unit": "symbols",
+    "measured": false,
+    "file": "dudout1448/texts/f28_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF (openapi.bnf.fr)",
+    "image_quality": "good",
+    "notes": "Contributed by Brice Dudout (PR #625): two passes, the second blind by his record, settled on the image; counted from the label=value tokens of the file (docs/_check_profile.py --measure does not parse this format). 36 signs compared here on the image, 35 agree. The text is known from the copy f. 27; not read by this project."
+   },
+   "read": "not read"
+  },
+  {
+   "id": "f30_1448",
+   "shelfmark": "BnF italien 1585 f. 30 (Gallica btv1b52525947w)",
+   "date": "22 Feb 1448",
+   "year": 1448,
+   "country": "Florence",
+   "route": "Nicodemo Tranchedini da Pontremoli (Florence) -> Francesco Sforza",
+   "places": {
+    "from": "Florence",
+    "to": "unknown"
+   },
+   "language": "Italian",
+   "pages": 1,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "f. 29, a clear copy in an 18th- or 19th-century hand filed beside the letter; it leaves about six word signs as dashes",
+    "partial": true
+   },
+   "length": {
+    "tokens": 846,
+    "distinct": 97,
+    "unit": "symbols",
+    "measured": false,
+    "file": "dudout1448/texts/f30_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Gallica IIIF (openapi.bnf.fr)",
+    "image_quality": "good",
+    "notes": "Contributed by Brice Dudout (PR #625): one blind pass, recto and verso, 13 runs; counted by measure_f30.py and by a second decoder here (the file's own total says 847). 61 signs compared here on the image, 60 agree. 191 signs have no value in the 1448 table. The text is known from the copy f. 29; not read by this project."
+   },
+   "read": "not read"
   }
  ],
  "system": {
@@ -81,14 +153,14 @@
    "homophonic",
    "syllabic"
   ],
-  "summary": "Graphic signs for letters (several signs for some letters), syllables, double letters and word signs (non, che, stantie, Fiorentini ...), written among clear Italian words; the key family of the later Tranchedini ciphers (Domnina 2018, Lasry 2026) is likely but unconfirmed for 1446.",
+  "summary": "Graphic signs for letters (two to five signs per letter), syllables, double letters, nulls and word signs (non, che, stantie, Fiorentini, Duca ...), written among clear Italian words. The key sheet DECODE R5318, headed Nicodemus (ASMi Sforzesco cart. 1597; a later copy; seen by the contributor only), carries the five word signs glossed on f. 134. The letters of Feb 1448 use the same key with at least one word sign reassigned (bar-o-bar-o: Duca in 1446, Venetiani in 1448).",
   "symbol_kind": "symbols",
   "distinct_symbols": "unknown",
   "diacritics": {
    "used": "unknown"
   },
   "homophones": {
-   "used": "unknown"
+   "used": true
   },
   "nomenclator": {
    "present": true,
@@ -99,12 +171,12 @@
    ]
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "unknown",
   "word_division": "unknown",
   "doubled_letters": "unknown",
-  "sibling_key": "possible: Domnina 2018 Fig. 5 (1454) and Lasry's 1452 table share the sign for non (confirmed by a gloss on f. 134); no 1446 key sheet known",
+  "sibling_key": "DECODE R5318 'Nicodemus' is this key by the contributor's record (PR #630); Domnina 2018 Fig. 5 (1454) and Lasry's 1452 table are later tables of the same family, used for the first labels; whether they are the same key in a later state is not tested",
   "notes": "R7909, listed on the lead as f. 143, is the Duke's slip f. 145 (key R5323, see visconti1446), not Tranchedini's."
  },
  "conditions": {
@@ -117,7 +189,8 @@
   "inputs": [
    "images",
    "cleartext context",
-   "sibling key"
+   "sibling key",
+   "key from archive"
   ],
   "attack": "none",
   "human_role": "Posed the target from the catalogue page (pasted task, 4 Nov 2026); no target-specific intervention recorded.",
@@ -126,14 +199,16 @@
    "Domnina 2018 PDF",
    "Lasry 1452 key table",
    "table_test.py (shuffled-table score, it-cinquecento)",
-   "two Claude subagents for the sign transcription"
+   "two Claude subagents for the sign transcription",
+   "contributor's scripts re-run (build_table.py, measure_f30.py, test_1446.py, compare.py)",
+   "r5318/f30_check.py (second decoder)"
   ],
   "models": [
    "claude-sonnet-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-11-04",
-  "last_date": "2026-11-04"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -315,12 +390,59 @@
    "what": "f. 139 relabelled with duca, Fiorentini and the 9-shape sign (@12/@102 unified) and rescored (relabel.py): stretch score of the table letters -2.204 (353 letters) -> -2.149 (456 letters) with @12 = l and duca/fiorentini as words; z 4.0 against 100 shuffled assignments of the table values. Single-sign scans over 55 candidate values: @12 (32 uses) best l (z 2.3 among the 55; next i); @101 (18 uses) best e (z 1.8, weak); other shapes <= 9 uses show no clear best. Control (hide a table sign, scan): signs with >= 16 uses come back at rank 1-2 (u, a, e, i, o); rarer ones do not (re, te, p, c, n rank 2-26), so only @12 is accepted (tentative) and @101 is not. Decoded runs then show 'e lo duca' six times, 'duca in', 'cento mila hor.', 'hauete che'. 487 of 788 run signs carry a value (62%); 301 unmatched or ambiguous. Rotated V at L5 (first sign, left-pointing triangle with circles on its right edge) looks like the Fiorentini sign turned on its side; unconfirmed. No sign always follows the same clear function word (checked, none repeats twice).",
    "result": "partial"
   },
-  {"date": "2026-11-14", "kind": "access", "what": "Issue #616 (Brice Dudout): BnF ital. 1585 f. 28 (cipher) with f. 27 (clear), 19 Feb 1448, and f. 30 with f. 29, 22 Feb 1448, by the same envoy, proposed as the aligned pair needed for the word signs. Confirmed: the pairs are lead 1317 and were checked leaf by leaf on 29 Oct 2026 (research/venice_milan_print/ital1584_copies_B.md); canvases 52 and 54 fetched again from openapi.bnf.fr. The clear leaves are 18th- or 19th-century copies that leave some word signs blank with the sign drawn in the margin, not decipherments of 1448. No table built; whether the 1448 nomenclator is that of 1446 is not known.", "result": "worked"},
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "Issue #616 (Brice Dudout): BnF ital. 1585 f. 28 (cipher) with f. 27 (clear), 19 Feb 1448, and f. 30 with f. 29, 22 Feb 1448, by the same envoy, proposed as the aligned pair needed for the word signs. Confirmed: the pairs are lead 1317 and were checked leaf by leaf on 29 Oct 2026 (research/venice_milan_print/ital1584_copies_B.md); canvases 52 and 54 fetched again from openapi.bnf.fr. The clear leaves are 18th- or 19th-century copies that leave some word signs blank with the sign drawn in the margin, not decipherments of 1448. No table built; whether the 1448 nomenclator is that of 1446 is not known.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "PR #625 (Brice Dudout): a table of 65 labels learnt on BnF ital. 1585 f. 28 (19 Feb 1448) against its later clear copy f. 27, hashed, then one measurement on the held-out f. 30 (22 Feb 1448; 846 signs in 13 runs, transcribed without f. 29 or the table, by the contributor's record) against the copy f. 29: character agreement 0.650, 655 signs (77.4%) with a value, 200 within-class shuffles mean 0.201, best 0.283, z 10.9; verdict by his pre-set thresholds: partial (above best control + 0.30, below 0.85). Re-run here: hashes 8 of 8, table rebuilt identical, 0.650 from his script and from a second decoder written here; 97 signs compared on the Gallica images (35 of 36 on f. 28, 60 of 61 on f. 30). Nothing read anew: the copies already give the text.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "PR #625, the two tests on this target with the 1448 table. f. 134 gloss signs: Fiorentini same sign and value in 1448; stantie has no witness on ff. 28 or 30; the bar-o-bar-o sign (duca on f. 134) is Venetiani seven times in Feb 1448. f. 139 with the 1448 values (it-cinquecento order 4, no spaces): coverage 62.1%, -2.209 per letter, z 4.3, against 61.6%, -2.320, z 3.6 for the table used here under the same model; 34 of 40 label types valued by both tables agree. His pre-set joining rule (both gloss signs, z >= 3, score >= -2.149, coverage >= 62%) is not met as written: stantie unwitnessed and the score bar (an order-5 figure) missed. f. 139 is not read by the 1448 table.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "PR #630 (Brice Dudout): the key sheet DECODE R5318, headed Nicodemus (ASMi Archivio Sforzesco cart. 1597, no. 176; pencil date 1451; a later copy), transcribed twice by him (second pass blind, by his record) and given against the 1448 shape labels. The five word signs glossed on f. 134 (stantie, duca, gente d'arme, Toscana, Fiorentini) are entries of the sheet with the glossed value; against the 1448 table 54 of 58 shared shapes have the same value (42 of 49 with his blind labels); R5318 decodes 194 of 222 valued tokens of f. 28 (0.874; 200 within-class shuffles best 0.126). Re-run here: compare.py output identical. Not seen here: the image of the sheet needs a DECODE login, so heading, date and shapes are by the contributor's record; the hash he gives for the frozen key is of a file not in the pull request. No held-out measurement of R5318. On f. 139 it values 62.1% of the 778 transcribed signs: decoded in part, not read. Cerioni 1970 not checked.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Same-key question, checked here on f. 30 after the fact (r5318/f30_check.py; f. 30 was already spent on the 1448 table, so this is a comparison, not a held-out test). R5318 through his crosswalk: 687 of 846 signs valued, agreement with the copy f. 29 0.598 (0.630 with bar-o-bar-o as Venetiani) against 0.650 for the table learnt on f. 28; shuffles under 0.25. Seventeen f. 30 shapes without a 1448 value match R5318 entries by the written shape descriptions (Re de Ragona six times, Fiorini, non, and fourteen syllables or letters): with them R5318 scores 0.698 (0.729 with Venetiani) and the 1448 table 0.778. The matches were made from descriptions with the reference in view, not on the image of the sheet. Decision: one key in two states (Nov 1446; Feb 1448 with bar-o-bar-o reassigned from Duca to Venetiani); the 1448 letters stay in this target (dudout1448/), lead 1317 keeps its reservation.",
+   "result": "partial"
+  },
   {"date": "2026-11-14", "kind": "verification", "technique": ["key matching", "plaintext matching", "statistical test"], "what": "Lead 1317 (dudout/lead1317/, Brice Dudout): the R5318 key, then K2 and K3 (R5318 completed on burnt letters only, each frozen by SHA-256 before the next letter was opened), measured once each against period or later clear texts: BnF ital. 1585 f. 35r vs copy ff. 34-36, 0.550 (best of 200 within-class shuffles 0.271, failed); ital. 1584 f. 353r vs copy f. 352, 0.650 (best 0.190, partial); ital. 1585 f. 71 vs the 15th-century decipherment f. 70, 0.709 (best 0.206, partial). None reaches 0.85. Declared deviation: an extra blind harmonisation pass on f. 71, not in the PREREG, changed 71 signs before f. 70 was opened. Remaining errors: ss = s or p not separated, one sign valued ga where the sense wants h, htall valued bi where the sense wants ra. Key test only; the letters' contents are known from the clears; decoded, not read.", "result": "partial"}
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "Leaves identified and glosses read; no key value assigned and no text read yet; work in progress.",
+  "method_basis": "A key sheet for this cipher is identified on DECODE (R5318, by the contributor's record) and a table was learnt from the 1448 pair; they give values to 62.1% of the f. 139 signs as transcribed, but no document is read by this project: ff. 28 and 30 are known from later copies, f. 139 is decoded in part. Work in progress.",
   "contribution": [
    "catalogue correction"
   ],
@@ -330,11 +452,54 @@
    "none"
   ],
   "credits": [
-   {"who": "dudout", "role": "pointer", "note": "BnF ital. 1585 ff. 27-30 (Tranchedini, 19 and 22 Feb 1448, cipher with later clear copies) as an aligned pair for the 1446 word signs", "date": "2026-11-14", "source": "https://github.com/dbourdeau/cyphersolver/issues/616", "published": true}
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "note": "BnF ital. 1585 ff. 27-30 (Tranchedini, 19 and 22 Feb 1448, cipher with later clear copies) as an aligned pair for the 1446 word signs",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/616",
+    "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "BnF ital. 1585 ff. 28 and 30 sign by sign (two passes on f. 28, one blind pass on f. 30), the 1448 table and its held-out test (PR #625)",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/625",
+    "published": true
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "DECODE R5318 (ASMi Sforzesco cart. 1597, headed Nicodemus) identified as this key, transcribed twice and compared with the f. 134 glosses and the 1448 table (PR #630)",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/630",
+    "published": true
+   }
   ],
   "gaps": [
-   {"item": "A 1448 table from BnF ital. 1585 f. 28 against f. 27, tested on f. 30 against f. 29, then applied to f. 139", "blocker": "not-attempted", "detail": "lead 1317; pairs confirmed on Gallica (issue #616, Brice Dudout); the clear leaves are later copies with a few word signs blank"}
+   {
+    "item": "f. 139: 301 of 778 transcribed signs have no value; no run read as words",
+    "blocker": "not-attempted",
+    "detail": "the unmatched shapes must be matched against the R5318 sheet on its image (DECODE login; seen by Brice Dudout only), then decoded and counted by words"
+   },
+   {
+    "item": "ff. 28 and 30 (Feb 1448): 191 signs of f. 30 without a 1448 value and the word signs the copyist left as dashes",
+    "blocker": "not-attempted",
+    "detail": "17 shape matches with R5318 made from descriptions (r5318/f30_check.py) need the image of the sheet"
+   },
+   {
+    "item": "held-out measurement of R5318",
+    "blocker": "not-attempted",
+    "detail": "the other letters of lead 1317 (ital. 1584 f. 353; ital. 1585 ff. 35, 71) are untranscribed"
+   },
+   {
+    "item": "R5318 not seen by the project; Cerioni 1970 not checked for a printed copy of the key",
+    "blocker": "needs-physical-access",
+    "detail": "DECODE record 5318 is 'Authentication required'; original ASMi Sforzesco cart. 1597 no. 176"
+   }
   ],
-  "notes": "In progress: f. 139 transcribed twice; table letters fit (z 3.9, no-space model) and give readable fragments; f. 134 glosses give duca (bar-o-bar-o) and Fiorentini (V with two circles); with them the clear context of f. 139 reads as a letter urging Sforza to the Duke's side, but the cipher runs are still mostly unread (word signs and unmatched shapes). Relabelled with duca, Fiorentini and l (@12, 9-shape): z 4.0 on the table letters, 62% of run signs valued, 'e lo duca' six times; 301 run signs unmatched. Solvers fail held-out controls."
+  "notes": "In progress: f. 139 transcribed twice; table letters fit (z 3.9, no-space model) and give readable fragments; f. 134 glosses give duca (bar-o-bar-o) and Fiorentini (V with two circles); with them the clear context of f. 139 reads as a letter urging Sforza to the Duke's side, but the cipher runs are still mostly unread (word signs and unmatched shapes). Relabelled with duca, Fiorentini and l (@12, 9-shape): z 4.0 on the table letters, 62% of run signs valued, 'e lo duca' six times; 301 run signs unmatched. Solvers fail held-out controls. 14 Nov 2026: PR #625 (1448 table; held-out f. 30 at 0.650, partial by the contributor's thresholds; his joining rule not met as written) and PR #630 (key sheet R5318; confirms duca, stantie, Fiorentini, gente d'arme, Toscana of the f. 134 glosses, by the contributor's record). Judged one key in two states; the 1448 letters are kept in this target.",
+  "key": "partial"
  }
 }
