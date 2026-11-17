@@ -1,6 +1,6 @@
 # Scan check of the token streams and a held-out test of the frozen v2 dictionary (17 Nov 2026)
 
-By Jozef Krajčovič (kjfriedo), with an AI model (Claude). This answers the two conditions in `PROJECT_CHECK.md` §3.
+By Jozef Krajčovič (kjfriedo), with an AI model (Claude). Licence: CC BY 4.0 for the text, tables and script. Images: Archives nationales, 400AP/…; Gallica (BnF), NAF 11355. This answers the two conditions in `PROJECT_CHECK.md` §3.
 
 ## 1. Token streams compared with the Gallica scan
 Source: Gallica `btv1b52517729k`, full-size IIIF images (`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52517729k/f<n>/full/max/0/default.jpg`).
@@ -32,9 +32,10 @@ Note the offset: IIIF `f<n>` = Gallica PDF page n+2. The PDF pages used in `prin
   - By tier: A 8/8, B 1/1, C 1/2.
   - Codes whose v2 value came **only from the f12 alignment** (no external decipherment): 1040, 1344, 1682, 1299, 2041, 512. Of these, **5 of 6** are correct.
 - **Control:** v2 meanings shuffled among the 149 v2 codes, 10,000 times (seed 1859). On average 0.21 of the 11 overlaps match; the maximum is 3; never 10. p < 0.0001.
-- Script: `heldout_f11N.py`.
+- Script: `heldout_f11N.py`. Its matching is lenient: a value counts as correct if one string starts the other.
+- **What the test shows.** Eight of the ten correct codes are tier A, with values taken from other telegrams' decipherments (f7, f10, f11F, r11). They show that f11r nouveau uses this code. The f12 alignment itself is tested only by the six codes 1040, 1344, 1682, 1299, 2041 and 512, and five of them are right. The 1344 correction was made after the answer was seen.
 
 ## 3. What follows
-- The f12 alignment predicts an independent decipherment it was not built on. This is the held-out stretch `PROJECT_CHECK.md` asked for, with the dictionary frozen in the repository before the test.
+- The f12 alignment predicts, in part, an independent decipherment it was not built on: five of the six alignment-only codes are right. This is the held-out stretch `PROJECT_CHECK.md` asked for, with the dictionary frozen in the repository before the test. Six codes is a small test.
 - f12:109 = 1344 = **pas**. The sent text at f12:106–112 differs from the minute ("Parme, cette ville a fait son mouvement"). 108 and 110 stay open.
 - Still open in f12: groups 87–97, 78, 108 and 110; the 799 conflict; and the tier B and C values that no second text has tested.
