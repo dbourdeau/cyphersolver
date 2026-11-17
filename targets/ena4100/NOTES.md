@@ -113,6 +113,39 @@ would be very unusual, so the claim needs a Berberist and a Geniza palaeographer
 reading. Single-word matches were found for other languages in the first pass; what is different here is one connected clause
 that suits the letter (a son away from home, a mother keeping goods).
 
+### Third pass, same day: dictionary check of the Berber words, lines 7 to 10 retried
+
+Checked against sources (17 Nov 2026):
+
+| Word | Source | Result |
+|---|---|---|
+| uday "Jew", pl. udayn | en.wiktionary `uday` (Tashelhit, Kabyle) | confirmed |
+| azn "to send" | en.wiktionary `azn` (Tashelhit) | confirmed |
+| awi "to take, to bring" | en.wiktionary `awi` (Tarifit, Senhaja); Kabyle grammar (awi-d "bring") | confirmed |
+| ad, future particle | en.wiktionary `ad` (Tarifit) | confirmed |
+| aghul "to return" | Leiden study of Rif Berber, cited through a web search summary: "Moyen Atlas aɣul, kabyle uɣal", used for "revenir" | confirmed for the Middle Atlas; the source itself was not opened |
+| ghr "at, to, towards", al "until" | Wiktionary ⵖⵔ (Central Atlas Tamazight), with al as a synonym of "until", through a search summary | confirmed; page not opened directly |
+| -tn "them", ghr-k "at your place", ughulgh "I returned" (1 sg. -gh) | standard Berber morphology, from memory | not checked in a grammar |
+
+So every word of the proposed clause exists with the proposed meaning, and aghul and al together point to
+the Tamazight of central Morocco rather than to Tashelhit or Kabyle.
+
+Problems found:
+
+- **Gender.** ghr-k and ad ak are masculine "you". The letter addresses the writer's mother, where Berber would use
+  -m / am. Either the Berber lines speak to someone else (line 1 may mention a brother), or these two readings are
+  wrong. This is the strongest objection so far.
+- "al ughulgh" uses the past stem after "until"; whether that is the expected form was not checked.
+- The end of line 11 (..י ו after a hooked letter) may be a possessive "my" (-inu / -iw), not established.
+- Lines 7b to 10 were retried from enlarged crops with Berber in mind and are **not read**. Fragments that may
+  matter: אור in line 8 (ur, "not"?), בכור in line 8 (Hebrew "firstborn"?), אלמכרוב / אלמכתוב in line 10 (Arabic
+  al-maktub, "what is written"?), אלמ.לך in line 9 (al-malik / al-mulk?). None of these is more than a guess.
+- No Berber text in the Geniza turned up in a web search; not searched in PGP or in the Berber literature
+  (van den Boogert on medieval Berber; Chetrit on Judaeo-Berber).
+
+Standing: one clause of eight words that is lexically sound and fits the letter, a masculine-pronoun problem, and
+two thirds of the passage unread. Still a hypothesis.
+
 ## Remaining gaps
 
 - The whole passage (about 31 words, 127 letters) is unread. Blocker for this session: no reliable transcription.
