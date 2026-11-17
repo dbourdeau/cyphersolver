@@ -159,32 +159,33 @@
   },
   {
    "id": "K259-1764-05",
-   "read": "not read",
-   "shelfmark": "Riksarkivet K 259, A0073297 images 105R, 106L, 107R, 108L",
-   "date": "15 May 1764 (15/4 May notation to reconcile)",
+   "read": "read",
+   "shelfmark": "Riksarkivet, Kungliga arkiv, Drottning Lovisa Ulrika, Utgångna skrivelser, SE/RA/710003/02/008/b/K 259, images A0073297_00105 (right), _00106 (left), _00107 (right), _00108 (left, first line); clear _00106 (right), _00107 (left)",
+   "date": "1764-05-15",
    "year": 1764,
-   "country": "unknown",
-   "language": "unknown",
+   "country": "Russia",
+   "language": "French",
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "No validated decipherment; adjacent clear material not assumed identical."
+    "source": "Contemporary decipherment on 106R + 107L (archival note 'Till chifferbrevet av den 15/4 maj 1764'), 34 lines, 1,900 letters, bound between the two cipher leaves. Pre-registered second test of key_c02, unchanged (17 Nov 2026, sysA_1616/may1764/; reading order 105R, 106L, 107R, 108L fixed beforehand from show-through and the opening/subscription): CA 0.916 vs 200 permuted-key controls max 0.077; bar CA >= 0.85 and >= controls + 0.30: PASS. Read through this clear: 418 words, 415 sure (0.993); translation in sysA_1616/may1764/reading_1764-05-15.md."
    },
    "length": {
-    "tokens": 870,
-    "distinct": 327,
+    "tokens": 835,
     "unit": "code groups",
     "measured": true,
-    "file": "payne2026/may1764_cipher.txt"
+    "file": "sysA_1616/may1764/transcr/may1764_cipher_merged.txt"
    },
    "transcription": {
     "by": "llm from images",
-    "source": "Riksarkivet IIIF images 105–108",
-    "image_quality": "fair",
-    "notes": "Preliminary: 33 uncertain occurrences; 327 distinct spellings includes uncertainty marks; certain-only distinct labels 296. Measured with --drop-first. Clear portions not transcribed."
-   }
+    "source": "IIIF full-size images A0073297_00105-00108 cut into strips",
+    "image_quality": "good",
+    "notes": "Two new passes (second by a blind sub-agent; Payne's preliminary file not used); 32 substantive differences settled on zooms (transcr/disagreements_may.txt), 58 groups stay marked doubtful. Clear 106R-107L transcribed twice. Payne's one-pass transcription stays in payne2026/may1764_cipher.txt."
+   },
+   "route": "C.W. von Düben (St Petersburg, 'ce 15/4 de May 1764') -> 'Mon cher Comte' (Gyldenstolpe)",
+   "pages": 4
   },
   {
    "id": "Schuck-143-fragments",
@@ -838,7 +839,7 @@
    "none"
   ],
   "provenance": "mixed",
-  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations made 14 Nov 2026 (6 Mar 1764: 622 words, 0.998; 15 Nov 1765: 610 words, 1.000; sysA_1616/). The cipher of 6 Mar 1764 after 103L.08 is not in the volume as far as checked; 100R is the end of letter 96. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Chiffer n:o 1, 15 June 1764 (108R-110R): key_c01 passed a pre-registered held-out test against its contemporary clear 109R-110L (0.383 vs controls max 0.057, 14 Nov 2026); read through that clear (337 of 342 word tokens sure, 98.5 %; 341 by the contributor's count with probable words; order of events by the contributor's record). Open: the other Chiffer n:o 1 letters (87-89, 90R-93L, 104R-105L, 105R-108L, 20/31 Aug 1764 111R-115 with clear 116-117) and their clears; inventory in dudout/system_a/INVENTORY_chiffer1.md. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class. 17 Nov 2026: Chiffer n:o 1, letter 90R-93L (system A, no contemporary decipherment found): transcribed twice and read in part with key_c01 unchanged (about 44% of words by sense; sysA_1616/letter90/); 87L-89R is not system A; no interlinear decipherment on 87-93, 104-107, 112-115. 17 Nov 2026 (later): key_c02 (324 groups, sysA_1616/keyc02/) failed its one pre-registered held-out test on 20/31 Aug 1764 (CA 0.831 < 0.85; controls max 0.078; page order not fixed in the PREREG, post hoc 0.938); 114R-115 belongs to that letter; 90R-93L strict 0.78 with key_c02, still read in part.",
+  "notes": "In progress: two systems. System A (6 Mar 1764; 15 Nov 1765): both letters were deciphered at the time (clear 102R-103R; complete interlinear gloss that runs ahead of the cipher); key_c01 (PR #566, built on letter 96 and its clear 97R-99L only) decodes both against those decipherments (0.545 vs controls max 0.061; 0.261 vs 0.043) and passes a held-out check on 101R (0.767 of known groups; permuted keys 0.224-0.254; no threshold declared beforehand); key partial. Method for these letters: read from existing decipherment; strict counts and translations made 14 Nov 2026 (6 Mar 1764: 622 words, 0.998; 15 Nov 1765: 610 words, 1.000; sysA_1616/). The cipher of 6 Mar 1764 after 103L.08 is not in the volume as far as checked; 100R is the end of letter 96. System B (Chiffer n:o 2): key rebuilt from the 5 Oct 1764 clear on 120 and passed a pre-registered held-out test (0.563 vs controls max 0.083, 12 Nov 2026); re-tested once on the 31 Dec 1764 letter against its contemporary clear on 127-128 (0.535 vs controls max 0.059, 13 Nov 2026) and completed from that clear (key c04, 1,236 of 1,247 groups, partial). Both system B letters are read through their period clears. Chiffer n:o 1, 15 June 1764 (108R-110R): key_c01 passed a pre-registered held-out test against its contemporary clear 109R-110L (0.383 vs controls max 0.057, 14 Nov 2026); read through that clear (337 of 342 word tokens sure, 98.5 %; 341 by the contributor's count with probable words; order of events by the contributor's record). Open: the other Chiffer n:o 1 letters (87-89, 90R-93L, 104R-105L, 105R-108L, 20/31 Aug 1764 111R-115 with clear 116-117) and their clears; inventory in dudout/system_a/INVENTORY_chiffer1.md. Additional contribution in payne2026/NOTES.md; the 1771 fragment decode does not change the target class. 17 Nov 2026: Chiffer n:o 1, letter 90R-93L (system A, no contemporary decipherment found): transcribed twice and read in part with key_c01 unchanged (about 44% of words by sense; sysA_1616/letter90/); 87L-89R is not system A; no interlinear decipherment on 87-93, 104-107, 112-115. 17 Nov 2026 (later): key_c02 (324 groups, sysA_1616/keyc02/) failed its one pre-registered held-out test on 20/31 Aug 1764 (CA 0.831 < 0.85; controls max 0.078; page order not fixed in the PREREG, post hoc 0.938); 114R-115 belongs to that letter; 90R-93L strict 0.78 with key_c02, still read in part. 17 Nov 2026 (evening): key_c02, unchanged, passed a second pre-registered test on the 15/4 May 1764 letter (105R-108L, clear 106R-107L; reading order fixed beforehand): CA 0.916 vs controls max 0.077; that letter is read through its period clear (415 of 418 words sure); sysA_1616/may1764/.",
   "credits": [
    {
     "who": "dudout",
