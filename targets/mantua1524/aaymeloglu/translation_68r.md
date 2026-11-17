@@ -10,7 +10,7 @@ is left as it stands: a code name in clear or an abbreviation, not interpreted.
 
 [...] having [...] [?what you have written] to us by a [?note of yours] in [...], how salve [?would wish] that we
 should not [?ride out], [?even though], as far as the illness goes, we could ride, but that in [?Milan] it should not
-[?be known] [... 2]. On the other hand, being so much urged by [?...] passi by letters and by [... 3] sent by [?His
+[?be known] [... 2]. On the other hand, being so much urged by [?...] passi by letters and by [?Messer] [?Achille] [?Borromei] sent by [?His
 Lordship] and by the Duke of Milan by letters [?...] and lately by Grossino, [?who] we knew [?was to come], wishing
 [?nevertheless] to satisfy salve, we [?rode a horse the day before yesterday], [?showing] in the evening that it had
 tired us somewhat; and yesterday we [?schooled] a [?jennet] and made a show of having hurt (our) [...] back,
@@ -30,4 +30,4 @@ but in truth we are [?sound] and [?vigorous] as [?ever] we were. You will make a
   and "gagliardo" are lenient (`sa[8+]o`, `ga[H]liardo`: one sign each with no value), so they are holes here.
 - The Duke of Sessa, Luis Fernandez de Cordoba, was Charles V's ambassador at Rome in 1524.
 - Lines 20-23 ("fatto scrivere ... fareti inten-") are the reserved control lines (NOTES.md, Controls).
-- The name at lines 07-08 (key output `m`, `cchilte`, `borronei`) is unread; `[... 3]` counts its three segments.
+- At lines 07-08 the key gives *m cchilte borromei*. The surname fits the corrected transcription. The given name requires two substitutions. A letter from Bagnolo in the same volume names Achille Borromeo. [Manuscript comparisons](audit/recheck-2026-11-17.md)

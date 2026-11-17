@@ -1,6 +1,6 @@
 # mantua1524: three cipher leaves sent to Federico II Gonzaga in 1524, one homophonic key (BAV Vat. lat. 8214, ff. 298r-v, 68r, 198r)
 
-Status: in progress. Read in part with a key recovered from the text alone, contributed by Andrew Aymeloglu (work of 15 Nov 2026, issue #697 of 16 Nov 2026; repository `aaymeloglu/unsolved-ciphers`, folder `mantua-1524`, CC0, commit f0ffa76). By the project's count (only strict segments are read): 50% of 284 cipher words; 298r-v 38%, 68r 55%, 198r 79%. No page yet; a reviewer other than the contributor records the reading grade before it merges.
+Status: in progress. Read in part with a key recovered from the text alone, contributed by Andrew Aymeloglu (work of 15 Nov 2026, issue #697 of 16 Nov 2026; repository `aaymeloglu/unsolved-ciphers`, folder `mantua-1524`, CC0, commit f0ffa76). By the project's count (only strict segments are read): 52% of 281 cipher words; 298r-v 41%, 68r 55%, 198r 79%.
 
 Catalogue 2368 is f. 298r-v. Ff. 68r and 198r are new finds (the contributor paged all 816 images of the volume); they enter as leads through `research/sweep_2026-11-16_vat_lat_8214/`, not as catalogue entries. One key, one folder.
 
@@ -43,6 +43,10 @@ As the contributor states them (`aaymeloglu/README_aaymeloglu.md`, Controls; out
 
 A second model (Codex) reviewed the work independently (`aaymeloglu/audit/codex-review.md`): it checked 174 signs in 19 key groups on the images, reproduced every key output and the control arithmetic, and checked the historical claims, finding Benzoni's account of the urine deception (below). Its transcription corrections at 298v 04/6 and 68r 23/4, 23/5, its reading "ve parirà" and its historical corrections are applied. It could not locate the segment 68r 19/2; two loop-and-descender signs are visible there on the image and the segment is kept, unread.
 
+## Manuscript corrections, 17 Nov 2026
+
+Codex rechecked the box signs and both occurrences of *inteso* in the Carpi letter. The second occurrence gives *hora s’era inteso la morte*, explaining that news of Prospero’s death had reached the court. In f. 68r, line 8, three minims give *mo* and the surname *Borromei* under the published key. F. 324r names Achille Borromeo in clear. Two Codex readers checked the proposed readings against the images with the earlier solution in hand. [Folio details, readings and archival references](aaymeloglu/audit/recheck-2026-11-17.md)
+
 ## Check by the project (comment on issue #697, 16 Nov 2026)
 
 `verify.py` reproduces every count; a decoder written by the project from `key.json` gives the key output for all 227 segments (1,197 units); the 298r and 198r image hashes match the BAV copies; the two cipher lines of 198r agree with the scan sign for sign (the first sign of *Barbon* could be 6 or b; both give b). The key is fitted on all three leaves together, the pair merges were chosen after the fact, and nothing was held out (the later held-out test on Vat. lat. 8211 is below).
@@ -58,7 +62,7 @@ Calandra's letters to Castiglione of February-April 1524 in Vat. lat. 8211 use t
 
 ## What the letters say
 
-**f. 298r-v.** Suardino at Charles V's court (at Vitoria from 5 January to 6 March 1524, which fits the doubtful heading) on Carpi, confiscated from Alberto Pio and granted to Prospero Colonna, who died at Milan in late December 1523: he was told that [BOX] had given Carpi to Prospero for him and his heirs but had not made the investiture, and might draw a sum of money from it in this need of Italy and compensate the heirs otherwise. On the verso the Chancellor answers that the grant stands for the heirs despite the death, though the investiture was not made, and that it was not yet determined whether Carpi had been taken away by right. The grant without investiture is already in Petrucci's life of Colonna (DBI 27, 1982); the letter gives the state of the question at court in February 1524. BOX is a code sign: the Emperor where he is the grantor, more naturally the Marquis in "che [BOX] fosse preposto ad ogni altro".
+**f. 298r-v.** Suardino at Charles V's court (at Vitoria from 5 January to 6 March 1524, which fits the doubtful heading) on Carpi, confiscated from Alberto Pio and granted to Prospero Colonna, who died at Milan in late December 1523: he was told that [BOX] had given Carpi to Prospero for him and his heirs but had not made the investiture, and might draw a sum of money from it in this need of Italy and compensate the heirs otherwise. On the verso the Chancellor answers that the grant stands for the heirs despite the death, though the investiture was not made, and that it was not yet determined whether Carpi had been taken away by right. The grant without investiture is already in Petrucci's life of Colonna (DBI 27, 1982); the letter gives the state of the question at court in February 1524. The top-stem box (BOX) identifies the probable Emperor. The right-stem box (IZ) identifies the probable Marquis who should receive preference.
 
 **f. 68r.** A "we" told not to ride out feigns illness: rode a horse the day before yesterday and showed in the evening that it had tired him, schooled a jennet and made a show of hurting his back, and "havemo questa matina mandato fori alli medici ... orine fatte tingere a posta con sangue ... facendo uscire voce che havemo ... orinato sangue ... da poter mostrare al [..] Duca di Sessa et a chi ve parirà, ma per la verità siamo sano et gagliardo como mai fossimo". Benzoni's life of Federico II (DBI 45, 1995) tells the same deception and Federico's admission of it to Castiglione, so 68r is plausibly Federico to Castiglione, his ambassador at Rome; that is an inference from the match, as the leaf names neither. The Duke of Sessa was Charles V's ambassador at Rome in 1524.
 
@@ -66,18 +70,18 @@ Calandra's letters to Castiglione of February-April 1524 in Vat. lat. 8211 use t
 
 ## Counts
 
-The project's rule (issue #697): only sure words count. Strict segments are read; forced, lenient, doubtful and unread ones are holes. That gives **50% of the 284 cipher words: 298r-v 38%, 68r 55%, 198r 79%**, the figures used in `profile.json`. On the project's reading review (PR #716) f. 68r is "decoded, not read": five of its six sentences have more than one hole in ten words, so its 55% of strict words stands as decoded words, not a reading; f. 298r-v is graded B and f. 198r A. The class stays "read in part".
+The project's rule (issue #697): only sure words count. Strict segments are read; forced, lenient, doubtful and unread ones are holes. That gives **52% of the 281 cipher words: 298r-v 41%, 68r 55%, 198r 79%**, the figures used in `profile.json`. On the project's reading review (PR #716) f. 68r is "decoded, not read": five of its six sentences have more than one hole in ten words, so its 55% of strict words stands as decoded words, not a reading; f. 298r-v is graded B and f. 198r A. The class stays "read in part".
 
 The contributor's segment counts (`verify.py`):
 
 | Leaf | Segments | Strict | Forced | Lenient | Doubt | Unread |
 |---|---|---|---|---|---|---|
-| f. 298r-v | 69 | 36 | 9 | 13 | 4 | 7 |
-| f. 68r (incl. reserved lines 20-23) | 145 | 95 | 11 | 21 | 7 | 11 |
+| f. 298r-v | 69 | 37 | 9 | 12 | 4 | 7 |
+| f. 68r (incl. reserved lines 20-23) | 145 | 95 | 12 | 21 | 9 | 8 |
 | f. 198r | 13 | 10 | 2 | 1 | 0 | 0 |
-| all | 227 | 141 | 22 | 35 | 11 | 18 |
+| all | 227 | 142 | 23 | 34 | 13 | 15 |
 
-`aaymeloglu/running_text.py` reproduces the project's count: each whitespace-separated token of a segment's reading is a word (so an unread group such as `[H g o]` counts three, and the heading "26", a cipher row graded unread, counts one), a word split between segments is one word, read only if every segment in it is strict. It gives 143 of 284 (50.4%): 298r-v 37 of 98 (37.8%), 68r 95 of 172 (55.2%), 198r 11 of 14 (78.6%). The running texts mark holes by words instead: an unread segment with no reading is one word (the least the decode shows; an estimate), so the same 143 read words stand among 253 (56.5%); that figure is given for the reader and is not the one recorded.
+`aaymeloglu/running_text.py` reproduces the project's count: each whitespace-separated token of a segment's reading is a word (so an unread group with three whitespace tokens counts three, and the heading "26", a cipher row graded unread, counts one), a word split between segments is one word, read only if every segment in it is strict. It gives 145 of 281 (51.6%): 298r-v 39 of 95 (41.1%), 68r 95 of 172 (55.2%), 198r 11 of 14 (78.6%). The running texts mark holes by words instead: an unread segment with no reading is one word (the least the decode shows; an estimate), so the same 145 read words stand among 252 (57.5%); that figure is given for the reader and is not the one recorded.
 
 ## Reading and texts
 
@@ -91,8 +95,8 @@ The contributor's own reading with notes per passage is `aaymeloglu/reading.md`;
 - The ASMn original of f. 298 (Suardino, Archivio Gonzaga, Carteggio estero: Spagna) may carry a chancery decipherment; likewise Capino's letter of 198r (Carteggio estero: Milano) - blocker: needs-physical-access; not online, not seen; it would give the first values above grade S
 - Victorie in the heading of 298r (key output `uf[n]fctorie`; the minim cluster after the crossed p shows three minims, not the four of `m i`) - blocker: illegible; the full-size image does not settle the cluster; the court's presence at Vitoria makes the place plausible
 - `l o` reads t in most words but l in five (canceltere twice, lattro, caualto, alti) - blocker: open-codes; no graphic rule found to separate the two; a doubling device is speculation; those words are lenient
-- Code signs BOX, H and IZ (also CROSS and the looped C@), and the single-occurrence signs `p@`, `b+`, `8+`, `) )` - blocker: open-codes; BOX has no single referent (the Emperor as grantor, the Marquis in one place), H would need incompatible values
-- 68r lines 01-02 blotted and partly clear; the name at 07-08 (key output `cchilte`, `borronei`) and the clear "salve" (02, 10) unread - blocker: illegible; lines 01-02 are blotted on the only image, and the name and "salve" have no second occurrence that reads
+- Code signs BOX, H and IZ (also CROSS and the looped C@), and the single-occurrence signs `p@`, `b+`, `8+`, `) )` - blocker: open-codes; the box referents are inferred from context and their exact titles remain open. H would need incompatible values
+- 68r lines 01-02 blotted and partly clear; the given name at 07-08 (key output `cchilte`, probably Achille) and the clear "salve" (02, 10) remain uncertain - blocker: illegible; lines 01-02 are blotted on the only image, the given name requires two substitutions and "salve" has no secure interpretation
 - 68r second check partial: 5 of 23 lines plus targeted checks of disputed signs - blocker: not-attempted; the other 18 lines can be second-checked from the images
 - One-word values (q, o, bb, c, S, b, g1, p+) and the weak units mo, gr, bu - blocker: too-short; about 1,200 units in this key; any further letter in it would test them
 
