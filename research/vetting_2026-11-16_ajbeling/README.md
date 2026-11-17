@@ -35,14 +35,22 @@ approximate.
 
 ## Evidence that no letter is in cipher
 
+The `not_cipher` verdict rests on the look at the images at full size (039, 040 both pages, 059, 068, 022, 023 and
+the key pages 100-101), the screen of 34 letter images (2 below) and the three-image blind sample (3 below). The
+pre-set test on letter 040 (1 below) did not reach its own mark and does not by itself support the verdict.
+
 1. **Pre-set test on letter 040** (`1637/TEST_PLAN.md`, sha256 in `1637/TEST_PLAN.sha256`, written before any decode;
    output `1637/test_run_output.txt`, run once). Two transcriptions of the letter, turned the right way up.
    - Measure 1 (share of transcribed words that are German or French words, illegible words counted as misses):
-     164 of 222 (0.739) and 174 of 224 (0.777), **below the mark of 0.80 set in the plan**. The shortfall is illegible
-     words (show-through, cut margins: 53 and 47 holes), not non-words; of the legible words, 97% and 98% are words.
+     164 of 222 (73.9%) and 174 of 224 (77.7%). The plan's mark for "the letter is in clear" was at least 80% of words
+     in both passes: **it was not reached**, so the plan's own reporting rule ("If Measure 1 passes and Measure 2
+     finds no use, the result is: the letters are not in cipher") does not apply. The shortfall is illegible words
+     (show-through, cut margins: 53 and 47 holes). A figure worked out afterwards, not set in the plan: of the
+     legible words, 97% and 98% are words.
    - Measure 2 (is the key used?): 6 odd words flagged by either pass; 0 of 6 decode to words with the frozen key;
-     200 shuffled keys give at most 0.167 (mean 0.003). No pseudonym or place code from the table occurs. As set in the
-     plan: key not shown in use.
+     200 shuffled keys give at most 0.167 (mean 0.003). No pseudonym or place code from the table occurs. This
+     measure is not evidence either way: the six flagged words are misreadings of the clear hand, not cipher groups,
+     so that they do not decode with the key shows nothing.
    - Caveat: the lead transcription (`1637/i040_pass1_agentA.txt`) was finished after the helper's transcription
      (`1637/i040_pass2_helper.txt`) had arrived, so it is not fully blind to the helper's two flags; the file says so.
 2. **Screen of the other letters**: 34 images, both halves, for roman-letter groups, lone capitals or numbers used as
@@ -64,8 +72,11 @@ A transcription of a key page whose use in any letter is not shown: `1637/key_tr
 passes (`1637/key100_pass1_agentA.txt`, `1637/key_pass2_helper.txt`) reconciled in `1637/key_reconciliation.md` and
 frozen as `1637/key_frozen.json` (sha256 98b68164b40337e23e6cd78cb391766e7fbda58d2061b169d39f6d0fe982a789).
 
-- Reciprocal alphabet, 12 pairs: a-k m-l o-n r-p e-q b-s c-t d-u f-w g-x h-y i-z (22 cells agreed in both passes).
-- Number signs: 1 f, 2 h, 3 p, 4 l, 5 n, 6 o, 7 s, 9 m, 10 fx, 20 hx; 8 doubtful (g or q).
+- Reciprocal alphabet, 12 pairs: a-k m-l o-n r-p e-q b-s c-t d-u f-w g-x h-y i-z. Number signs: 1 f, 2 h, 3 p, 4 l,
+  5 n, 6 o, 7 s, 9 m, 10 fx, 20 hx; 8 doubtful (g or q). Count, as in `1637/key_reconciliation.md`: 23 cipher cells
+  (12 alphabet pairs and 11 number signs), 22 agreed in both passes and 1 doubtful (8). Of the 12 pairs, two were
+  agreed as shapes only: the upper-row signs for h and i are written like "3" and "1", and **h and i are inferred**
+  as the letters that complete the alphabet (the z under i, written like "2", rests on the same reasoning).
 - Name table: 15 persons, letter, number and first pseudonym agreed in both passes (45 of 45 cells), e.g. Regierender
   Herzog L 24 Lisander; Herzog F. Carl A 12 Apollo; Fürst v. Zollern H 30 Hector. 5 doubtful items: Denira/Derrira,
   Menkingen/Menzingen, Andrein/Andreä, Waldebug/Waldeburg (perhaps Waldenbuch), Cabada/Cadoda.
@@ -92,6 +103,14 @@ the row is kept anywhere, the proposed fields are:
 - `verify`: "Look for letters in this code in the Württemberg correspondence of the Darmstadt house archive (D 4) or in
   the Hauptstaatsarchiv Stuttgart."
 - `vetting`: the block in `vetting.json`.
+
+## Files the plan names that are not in this folder
+
+`1637/TEST_PLAN.md` refers to `NOTES_darmstadt1637.md` (working notes, where the plan's sha256 was also written; the
+hash is in `1637/TEST_PLAN.sha256` here), to a local copy of the German and French word lists, and to image strips of
+letter 040 (`helper_040/`). None of these is part of this folder. The word lists are the repository's own
+`lang/lexicons/de.json.gz` and `lang/lexicons/fr.json.gz` (same sha256 as given in the plan); the strips are crops of
+image 040 from the Arcinsys server.
 
 ## Routes
 
