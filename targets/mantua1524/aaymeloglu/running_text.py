@@ -167,7 +167,9 @@ def render(word):
     strict = cipher and all(p["strict"] for p in parts if p["cipher"]) and not codes and not hole
     text = word["text"].lstrip("-") if word["text"] != "-" else ""
     if codes:
-        shown = "[?" + "+".join(codes) + "]"
+        # The two boxes on f. 298 have probable referents. Both still count as holes.
+        names = {"BOX": "Imperatore", "IZ": "Marchese"} if word["parts"][0]["leaf"] in ("298r", "298v") else {}
+        shown = "[?" + "+".join(names.get(code, code) for code in codes) + "]"
     elif hole:
         shown = "[...]"
     elif not cipher:
@@ -241,7 +243,7 @@ def build():
                  f"{c['cipher words']} ({100 * c['read (strict)'] / c['cipher words']:.1f}%). "
                  f"English: `translation_{doc}.md`. Decryption line by line: `decryption_{doc}.tsv`.", ""]
         if doc == "298":
-            lines += ["The heading numerals 26 are probably clear: the issue #697 count takes them as one unread cipher word (the "
+            lines += ["The top-stem box is shown as [?Imperatore] and the right-stem box as [?Marchese], both inferred referents. The heading numerals 26 are probably clear: the issue #697 count takes them as one unread cipher word (the "
                       "transcription gives them as a cipher row), the sized count leaves them out. The word "
                       "Can-|celler is split between the two sides and is given at the end of 298r.", ""]
         for leaf, shown in by_leaf.items():

@@ -20,7 +20,7 @@
     "source": "No decipherment on the leaf or filed with it; the contributor found none in print. The original letter, if it survives in ASMn, Archivio Gonzaga (Carteggio estero, Spagna), was not seen and may carry a chancery decipherment."
    },
    "length": {
-    "tokens": 398,
+    "tokens": 395,
     "unit": "symbols",
     "measured": true,
     "file": "aaymeloglu/transcription-298.tsv"
@@ -206,7 +206,7 @@
   "types": [
    "homophonic"
   ],
-  "summary": "Homophonic substitution over Latin letters, digits and signs, in which some letter pairs are single units (m i, o o, l o, n o, p a, c c, d d, b b, l a, b o, m o, g r, g 1, b u); a few code signs (a boxed sign, H, IZ, a cross, a looped che-shaped sign) have no value. 54 units, 38 with a value.",
+  "summary": "Homophonic substitution over Latin letters, digits and signs, in which some letter pairs are single units (m i, o o, l o, n o, p a, c c, d d, b b, l a, b o, m o, g r, g 1, b u); BOX and IZ have distinct stem positions and probable referents inferred from context; other code signs remain open. 54 units, 38 with a value.",
   "symbol_kind": "letters and symbols",
   "distinct_symbols": 54,
   "diacritics": {
@@ -249,7 +249,7 @@
    "Codex"
   ],
   "first_date": "2026-11-15",
-  "last_date": "2026-11-16"
+  "last_date": "2026-11-17"
  },
  "solution": [
   {
@@ -343,6 +343,16 @@
    "technique": [
     "statistical test"
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "Codex rechecked ff. 298r-v and 68r against the images. Top- and right-stem boxes distinguish the likely Emperor and Marquis. Clear inteso occurs twice before la morte. On 68r.08 the corrected mo gives Borromei, corroborated by the August letter at f. 324r. The given name still yields cchilte. See aaymeloglu/audit/recheck-2026-11-17.md.",
+   "result": "partial",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ]
   }
  ],
  "outcome": {
@@ -355,15 +365,15 @@
   "class": "read in part",
   "key": "partial",
   "provenance": "contributed",
-  "fraction_read": 0.504,
+  "fraction_read": 0.516,
   "fraction_read_method": "measured",
-  "fraction_read_source": "The project's count (issue #697 comment, 16 Nov 2026): only strict segments are read; forced, lenient, doubtful and unread segments are holes; 50% of 284 cipher words (298r-v 38%, 68r 55%, 198r 79%). Reproduced by aaymeloglu/running_text.py: 143 of 284 (37 of 98, 95 of 172, 11 of 14). With unread sign groups sized as one word each (the running texts' marks): 143 of 253 (56.5%). The contributor's segment counts: 141 of 227 strict.",
+  "fraction_read_source": "Issue #697 rule applied to the 17 November transcriptions by aaymeloglu/running_text.py. Only strict segments count as read. 145 of 281 cipher words (298r-v 39/95, 68r 95/172, 198r 11/14). With holes sized as in the running texts, 145 of 252 (57.5%). Strict segments: 142 of 227.",
   "verification": [
    "matched control",
    "historical consistency",
    "independent verification"
   ],
-  "notes": "Work by Claude Code agents (Claude Fable, Claude Opus) with a Codex review; Andrew Aymeloglu reviewed. Every value is fitted from the text (grade S). The secure core: 298v and the urine passage of 68r are nearly all strict; 198r reads Cremona sign for sign. The one outside check is Benzoni's quotation for 68r, whose source has not been found.",
+  "notes": "Work by Claude Code agents (Claude Fable, Claude Opus) with a Codex review; Andrew Aymeloglu reviewed. Every value is fitted from the text (grade S). The secure core: 298v and the urine passage of 68r are nearly all strict; 198r reads Cremona sign for sign. Benzoni’s quotation supports the illness episode. F. 324r corroborates the name Achille Borromeo.",
   "gaps": [
    {
     "item": "the source of Benzoni's quotation for 68r ('orine' tinte di 'sangue', 'sano et gagliardo'), which would test the key and may make 68r read from an existing text",
@@ -388,12 +398,12 @@
    {
     "item": "code signs BOX, H, IZ, CROSS and C@, and the single-occurrence signs p@, b+, 8+, ) )",
     "blocker": "open-codes",
-    "detail": "BOX is the Emperor as grantor, but more naturally the Marquis in one place; H would need incompatible values"
+    "detail": "The top- and right-stem boxes probably denote the Emperor and Marquis respectively. Their exact titles remain open. H would need incompatible values."
    },
    {
-    "item": "68r lines 01-02 blotted and partly clear; the name at 07-08 and the clear 'salve' unread",
+    "item": "68r lines 01-02 blotted and partly clear, given name at 07-08 and clear 'salve' uncertain",
     "blocker": "illegible",
-    "detail": "lines 01-02 are blotted on the only image; the name and 'salve' have no second occurrence that reads"
+    "detail": "Borromei reads under the key. Achille requires two substitutions. The blots and 'salve' remain unresolved."
    },
    {
     "item": "68r second check partial: 5 of 23 lines plus targeted checks of disputed signs",
@@ -418,7 +428,7 @@
     "translation": "aaymeloglu/translation_298.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.378,
+    "read_share": 0.411,
     "summary": "Suardino reports from Charles V's court on Carpi, granted to Prospero Colonna, who died in late December 1523, without the investiture: the grant stands for his heirs, though the Emperor might draw money from it for his needs in Italy and compensate the heirs otherwise; whether Carpi had been taken from Alberto Pio by right was still undetermined.",
     "reading_review": {
      "grade": "B",
