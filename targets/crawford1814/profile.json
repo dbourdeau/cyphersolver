@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "crawford1814",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to France vol. 15, M34 roll 18 (naId 188673229), frames 0063R-0067L; code on 0064R, 0065R, 0066L",
    "date": "5 Nov 1814",
    "year": 1814,
@@ -183,6 +183,21 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 283 tokens, 157 types, en-modern order 4: reading -1.85 per letter; random keys -2.76 (z 6.6); key annealed onto shuffled ciphertext best -1.837 (mean -1.855, z 0.3); annealer on the real text -1.778. Verdict: underdetermined.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "transcription",
+   "what": "On the review of PR #735: frame 0065 (65R01) looked at again at full size; a small diamond stands over the last figure of 1025, as the maintainer reported. Added to the transcription as 1025' (things) and decode.py rerun; crawford1814_decryption.txt and validation.tsv change in that one group. The shuffle test and docs/_validate.py were run before this change and were not rerun.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Key replay (replay.py with docs/_replay.py): WE025 applied to the transcription with Crawford's marks, against crawford1814_reading.md, words counted over the words of the reading that the groups carry. First run: 224 of 241 the key's output, 5 differing without a mark (conspiracy, result, means, regency, speci[fied]), and 'and' (64R07) and 'of' (65R03) supplied where no group stands. These and 'family' were then bracketed in the reading ([conspiracy], re[s]ult, mean[s], regen[c]y, spec[ified], famil[y], [and], [of]); no word changed. Final run: 225 of 241 the key's output (93.4%), 14 marked, 2 i/y ([say], famil[y]), 0 unmarked: reproduces. Counted for the read bar with every word that is not the key's output a hole, plus Rom[e] and [conspiracy] (taken by the replay for the key's output) and the five words supplied with no group ([be brought by], [and], [of]): 223 of 246 words, 0.907, under the 95% bar: read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -216,7 +231,7 @@
    "verdict": "underdetermined",
    "notes": "claimed per-occurrence score -1.85; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -1.778"
   },
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "WE025, printed by Weber (1979) and transcribed and frozen for ../poinsett1813/beling, applied unchanged; Crawford's marks read as in that work.",
@@ -226,6 +241,7 @@
   "fraction_read_method": "measured",
   "fraction_read_source": "283 of 292 groups give the word read from the table value as written, with Crawford's marks applied (decode.py; the nine others are listed in NOTES.md section 3). It was 281 until the two groups of 'troops' were read from their marks on 15 Nov 2026 (NOTES.md section 7).",
   "fraction_read": 0.969,
+  "fraction_coherent": 0.907,
   "codes_open": {
    "open": 0,
    "total": 165,
@@ -277,6 +293,11 @@
     "detail": "the slips are inferred; 812 and the four groups written 1512 are not settled. The interlined September 1814 passages on the same roll (NOTES.md section 7) attest one slip of the same kind but do not contain 1512, 1215 or 812"
    },
    {
+    "item": "letters and words supplied where the groups as written give none: right[s], ma[de], la[s]t, spec[ified], [be brought by], [and] (64R07) and [of] (65R03), and the five mendings marked on 16 Nov 2026 ([conspiracy], re[s]ult, famil[y], mean[s], regen[c]y)",
+    "blocker": "needs-physical-access",
+    "detail": "the groups give no more; a clear copy of the time (the clerk's fair copy, of which only the last page, 0067R, is on the roll) could settle them"
+   },
+   {
     "item": "a period decipherment or clear copy",
     "blocker": "needs-physical-access",
     "detail": "the clerk's fair copy (last page on 0067R), the Crawford papers (Library of Congress), the Monroe papers (New York Public Library) and Green 1965 not seen"
@@ -290,10 +311,10 @@
     "decryption": "crawford1814_decryption.txt",
     "reading": "crawford1814_reading.md",
     "language": "en",
-    "state": "read",
-    "read_share": 0.969,
+    "state": "read in part",
+    "read_share": 0.907,
     "summary": "Crawford reports to Monroe, in code, his belief that the French government has resolved to sacrifice everything for England's friendship and that the King looks to British troops in Belgium for protection against his own people; a reported conspiracy headed by Savary, which opponents call a police fabrication to justify about thirty arrests; a coming crisis for the King, with many expecting the royal family to be expelled again; and three parties if there is a struggle: the army for the Emperor, part of the new nobility for the King of Rome with a regency or for the Duke of Orleans, and the republicans with either of the last two.",
-    "note": "read_share = 283 of 292 groups read from the table value as written, with Crawford's marks applied.",
+    "note": "read_share = 223 of 246 words of the coded passages read as the key gives them (key replay, replay.py with docs/_replay.py: 225 of the 241 words the groups carry are the key's output, every difference marked; Rom[e] and [conspiracy], which the replay takes for the key's output, and the five words the reading supplies with no group under them, [be brought by], [and] and [of], are counted as holes). Holes: the nine supplied groups, right[s], ma[de], la[s]t, spec[ified], the five mendings ([conspiracy], re[s]ult, famil[y], mean[s], regen[c]y) and the five supplied words. Before 16 Nov 2026 the share was given by groups (283 of 292, 0.969).",
     "reading_review": {
       "grade": "A",
       "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
