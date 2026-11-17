@@ -1,0 +1,39 @@
+{
+ "1001": {
+  "date": "2026-11-17",
+  "by": "Andrew Beling (ajbeling), with AI agents",
+  "seen": {
+   "kind": "scan",
+   "where": "The National Archives, SP 70/131 ff. 108-110, page images in State Papers Online (licensed; not reproduced here); Kervyn de Lettenhove, Relations politiques des Pays-Bas et de l'Angleterre vol. VII (1888) pp. 176-178, Internet Archive relationspolitiq07nethuoft, page images of pp. 177 and 178 (https://archive.org/details/relationspolitiq07nethuoft/page/177/mode/1up) viewed 17 Nov 2026.",
+   "extent": "Antonio de Guaras, London, 14 June 1574: f. 108r-v clear Spanish; ff. 109r-110r 59 lines of cipher with no word division (31 + 28 lines). All 59 lines transcribed in two blind passes; 20 lines drawn at random transcribed again by two further blind readers. Lettenhove's footnote read in full on the page images.",
+   "cipher": "One-to-one letter substitution in 21 signs (lower-case letters and the figures 6 and 8), commas and dots, two raised abbreviation marks; nothing written between the lines. Lettenhove prints the whole ciphered passage in plain Spanish, from 'Al Quiligre[u] he despues entendido' (p. 177) to 'Dios le de esfuerço y prospero sucesso!' (p. 178), with the source note '(Record office, Cal., n° 1452.)' on p. 178."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE (block of 29 Oct 2026); not searched again, as the print below settles the verdict.",
+   "tomokiyo": "No Cryptiana page on Guaras (block of 29 Oct 2026); not searched again, as the print below settles the verdict.",
+   "lasry": "No Lasry paper on Guaras (block of 29 Oct 2026); not searched again, as the print below settles the verdict.",
+   "edition": "Printed in plain Spanish, ciphered passage included: Kervyn de Lettenhove, Relations politiques des Pays-Bas et de l'Angleterre sous le règne de Philippe II, vol. VII (Brussels 1888), pp. 176-178, footnote to no. MMDCCLVI (Sweveghem to Requesens, London, 14 June 1574): 'Antonio de Guaras adressait de Londres, le 14 juin 1574, la lettre suivante à don Pedro Menendez'. Source note on p. 178: '(Record office, Cal., n° 1452.)', i.e. CSP Foreign 1572-74 no. 1452, p. 514 ('A considerable portion not deciphered'). The Spanish calendar (Hume, vol. 2) does not print this letter.",
+   "literature": "In this repository: SOLVED_CATALOGUE.md section 4 already lists the letter as catalogue 303, 'Antonio de Guaras, London (TNA SP 70 (CSP Foreign x no. 1452); catalogue 303): Read in part at the time (checked 22 Sept 2026)'. CSP Scotland (Thorpe) vol. 1 pp. 383-384 has Killigrew's mission to the Regent in May-June 1574, without naming the matter."
+  },
+  "key_check": "Key rebuilt from the ciphertext and matched to Lettenhove's text (1001/key.json): seven reciprocal neighbour swaps d/e f/g h/i m/n o/p q/r s/t; z=a, c=b, 6=c, k=l, x=u, 8=t forced by the text; l=y not forced (the sign occurs only in an abbreviation ending). On 20 random lines transcribed blind, a letter-trigram test without word division put the key above all 1,000 permuted tables (-2.194 per letter against a best of -3.339); a word-share test missed (31.6% against a mark of 65%).",
+  "duplicates": "Same letter as catalogue 303 (SOLVED_CATALOGUE.md section 4, removed 22 Sept 2026 as read in part at the time; no target folder). known.py 'Guaras' 'Guerras' 'SP 70/131' 'Menendez' (17 Nov 2026): this entry, catalogue 1272 (another Guaras, 1680s) and sweep notes; SP 70/131 and Menendez no hits. No pull request or issue names Guaras, Guerras or 1001.",
+  "searches": [
+   {
+    "query": "Internet Archive full text: Relations politiques vol. VII (relationspolitiq07nethuoft), 'Guaras', 'Quiligre'",
+    "result": "Footnote pp. 176-178 prints the letter to don Pedro Menendez with the ciphered passage in plain Spanish; source note no. 1452 confirmed on the page image of p. 178."
+   },
+   {
+    "query": "Internet Archive full text: CSP Foreign 1572-74 (calendarofstatep10grea) and CSP Spanish vol. 2 (calendarofletter02greauoft), Guerras / 14 June 1574",
+    "result": "CSP Foreign p. 514 no. 1452 '[Antonio Guerras] to ---', 'A considerable portion not deciphered'; CSP Spanish vol. 2 does not print the letter."
+   },
+   {
+    "query": "known.py 'Guaras' 'Guerras' 'SP 70/131' 'Menendez'; SOLVED_CATALOGUE.md 'Guaras'; gh pr/issue search 'Guaras OR Guerras OR 1001'",
+    "result": "SOLVED_CATALOGUE.md section 4 lists the same letter as catalogue 303; no other row, pull request or issue."
+   }
+  ],
+  "verdict": "duplicate",
+  "closed": "Duplicate of catalogue 303 (SOLVED_CATALOGUE.md section 4, Antonio de Guaras, London, CSP Foreign x no. 1452). The ciphered passage is also in print in plain Spanish: Kervyn de Lettenhove, Relations politiques vol. VII (1888) pp. 176-178, footnote to no. MMDCCLVI, from this Record Office letter (no. 1452). The key rebuilt here reproduces his text on the sample lines; no new reading is claimed.",
+  "supersedes": "The block of 29 Oct 2026 (verdict open) read only the calendar summary, found no edition, and took the title and correspondents from the neighbouring calendar item (the Irish declaration). The letter is Antonio de Guaras's to don Pedro Menendez, in Spanish, and its cipher was printed in 1888.",
+  "lead_updates": {"access": "archive"}
+ }
+}

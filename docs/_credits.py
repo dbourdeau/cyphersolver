@@ -58,8 +58,8 @@ def check(prof, reg=None):
         if c.get('who') == 'project':
             errs.append(f'outcome.credits[{i}].who: the project is not credited here (outcome.contribution says what it added)')
     prov = out.get('provenance')
-    if prov == 'contributed' and not any(c.get('role') in ('solution', 'new cipher with solution') for c in credits_of(prof)):
-        errs.append('outcome.provenance: "contributed" needs a credit with role "solution" or "new cipher with solution" naming the contributor')
+    if prov == 'contributed' and not any(c.get('role') in ('solution', 'new cipher', 'new cipher with solution') for c in credits_of(prof)):
+        errs.append('outcome.provenance: "contributed" needs a credit with role "solution", "new cipher" or "new cipher with solution" naming the contributor')
     if prov == 'mixed' and not any(reg.get(c.get('who'), {}).get('kind') == 'person' and c.get('role') not in ('pointer', 'prior solution')
                                    for c in credits_of(prof)):
         errs.append('outcome.provenance: "mixed" needs a credit naming the outside contributor whose work the result contains')
