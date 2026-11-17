@@ -1,0 +1,30 @@
+{
+ "_about": "Antonio de Guaras, London, 14 June 1574 (TNA SP 70/131 ff. 109r-110r; CSP Foreign 1572-74 no. 1452). One-to-one substitution, cipher sign -> plain letter, rebuilt by AI agents and matched against the plain text printed by Kervyn de Lettenhove (1888), vol. VII pp. 176-178. Sign names as in transcription_full_ai_reading.txt. 'status': swap = one of the seven reciprocal neighbour swaps; forced = fixed by the words of the text; not_forced = the value is arbitrary.",
+ "key": {
+  "d": {"plain": "e", "status": "swap"},
+  "e": {"plain": "d", "status": "swap"},
+  "f": {"plain": "g", "status": "swap"},
+  "g": {"plain": "f", "status": "swap"},
+  "h": {"plain": "i", "status": "swap"},
+  "i": {"plain": "h", "status": "swap"},
+  "m": {"plain": "n", "status": "swap"},
+  "n": {"plain": "m", "status": "swap"},
+  "o": {"plain": "p", "status": "swap"},
+  "p": {"plain": "o", "status": "swap"},
+  "q": {"plain": "r", "status": "swap"},
+  "r": {"plain": "q", "status": "swap"},
+  "s": {"plain": "t", "status": "swap"},
+  "t": {"plain": "s", "status": "swap"},
+  "z": {"plain": "a", "status": "forced", "words": "a, la, para"},
+  "c": {"plain": "b", "status": "forced", "words": "enbiaron, onbre"},
+  "6": {"plain": "c", "status": "forced", "words": "con, doce"},
+  "k": {"plain": "l", "status": "forced", "words": "los, el, facil"},
+  "x": {"plain": "u", "status": "forced", "words": "que, aunque"},
+  "8": {"plain": "t", "status": "forced", "words": "tanbien, parte (the only two sure places, both at a line start); the frozen key of the first test had z here, corrected after the test"},
+  "l": {"plain": "y", "status": "not_forced", "words": "occurs only as 'l' with a raised p before a dot, an abbreviation ending (her[man]o, seru[ici]o, neg[oci]o, prim[o]); 'y' is an arbitrary value"}
+ },
+ "marks": {
+  "^2": "raised sign like a small 2: abbreviation mark, no letter value",
+  "^p": "raised p after l: abbreviation ending, no letter value"
+ }
+}
