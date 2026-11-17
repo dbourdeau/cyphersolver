@@ -85,3 +85,22 @@ These are proposals for George Lasry to check. They were made by the same reader
 ## 4. What remains
 - Finish 235 and the second part of 244.
 - System B: a separate code. A key-recovery attempt with the clear passages is a separate task.
+
+## 5. External check of the system A readings against published texts (17 Nov 2026)
+Two of the system A telegrams were published at the time. These texts were not used to make the proposals in §3.
+- **7 July (img 305).** *Journal de Monaco*, 10 July 1859, after the *Moniteur*: "Une suspension d'armes est convenue entre l'empereur d'Autriche et moi. Des commissaires vont être nommés pour en assurer les dernières clauses."
+  - This confirms **1263 + 323 + 1283 = l'Empereur d'Autriche** and the "commissaires" in the second part (251 com · 799 mi · 1147 · 1074).
+  - The published wording is "convenue". The cipher has 38 · 208 · 1249, which I read as ac-cep-té. The *Moniteur* text was edited, so this is not a contradiction.
+- **11 July (img 362–363).** Read in the House of Lords on 12 July 1859, in English: "Peace is signed between the Emperor of Austria and me … Italian Confederation under the honorary Presidency of the Pope. The Emperor of Austria cedes his rights to Lombardy to the Emperor of the French, who transfers them to the King of Sardinia. The Emperor of Austria preserves Venetia, but she will form an integral part of the Italian Confederation."
+  - This confirms 909 paix, 1190 signée, 266-515-323-1059-1274 con-fé-dé-ra-tions, 1214 sous, 1002/600/62 pré-/hon-/-aire, 1873 = Pape (so 1873 is a real code, an addition above the alphabetical range), 203 cède, 397 droits, 789 (re)mets, 980 Piémont (= roi de Sardaigne), 278 conserve, 1339 834 1266 Vé-né-tie and 422 elle.
+  - 1252 is probably "sur la Lombardie" or "la Lombardie".
+
+## 6. System B: state of the attempt
+- **Material:** 8 telegrams to or from the Empress (13 May; 4, 8, 9 ×2, 10, 12 and 13 July), plus 2 to Walewski in the same code. 328 groups, 226 distinct codes, maximum 2243.
+- **Frequent codes:** 5 (9× and three times at the end of a message, so probably "." or a sign-off), 0, 7, 17, 18 (frequent low codes, probably letters, signs or punctuation), 835, 1802, 1253, 1972, 1960. The distribution fits a one-part code of about 2,200 entries.
+- **No cribs:**
+  - none of the system B telegrams appears in print as far as I could find (Journal de Monaco, Hansard);
+  - none is in NAF 11355 (the volume ends on 25 June);
+  - the minutes of the Council of Ministers under the regency (400AP/59) summarise the dispatches and do not copy them;
+  - the clear parts of the telegrams (e.g. 326 "Il faut mettre au Moniteur que, sachant qu'une suspension d'armes devait être proposée …", 405 "Je vais nommer le colonel Fénelon …") do not fix the cipher text.
+- **Conclusion:** key recovery for system B is blocked by the lack of plaintext, not by method. It would need a deciphered or received copy, for example from the Empress's side (St-Cloud), from the *Moniteur* in July 1859 (the published telegrams of 4, 9 and 12 July), or from Eugénie's papers elsewhere (Spain, Fondation Napoléon).
