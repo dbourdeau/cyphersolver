@@ -100,6 +100,7 @@ Alberto Garvía García (issue #499; report with AI assistance, ChatGPT/Codex as
 | `contributor/tokenization_211.txt` | the contributor's 211-token analytical layer (issue #499, 13 Nov 2026) |
 | `contributor/controls.tsv` | his sibling control windows A01-D06 and E01-E04 (issue #499, 13 Nov 2026) |
 | `contributor/i243_18_dudout_alignment.txt` | Brice Dudout's token-by-gloss alignment of I 243,18 (issue #499, 14 Nov 2026) |
+| `SUPPORTING_EVIDENCE.md` | the contributor's own summary of the supporting material (PR #627, 14 Nov 2026): the related letters I 242,35, 59 and 60, Brice Dudout's alignment of I 243,18, the open groups, links. Checked here on 14 Nov 2026 against this file, `profile.json` and the page: it states no share and no class other than read in part, and changes no reading, key or count. Its list of open groups (U01, 101, 114, 241, e) is the contributor's and is not the whole list: `fo` = so, the signs 28~ and 58~, *otraas*, the clu/du sign of line 4 and `bo`/60 in line 5 are open too (Remaining gaps). The three PDFs it points to (issue #499) return 403 to this session and were not seen by the project; that he examined those letters is his statement. Catalogue 1988, which it gives as the number of this letter, now stands for the three other cipher-only leaves |
 
 
 ## Documentary and transcription update (13 November 2026)

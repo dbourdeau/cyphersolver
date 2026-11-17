@@ -1,0 +1,23 @@
+test half        TABLE-C04.json               0.716 | shuffled mean 0.105, best of 200 0.141 | 415 lines, 14482 letters
+test half        + ADDITIONS.tsv              0.739 | shuffled mean 0.114, best of 200 0.148 | 415 lines, 14482 letters
+fit half         TABLE-C04.json               0.668 | shuffled mean 0.104, best of 200 0.135 | 828 lines, 30965 letters
+fit half         + ADDITIONS.tsv              0.689 | shuffled mean 0.111, best of 200 0.148 | 828 lines, 30965 letters
+fresh lines      TABLE-C04.json               0.730 | shuffled mean 0.104, best of 200 0.137 | 813 lines, 28847 letters
+fresh lines      + ADDITIONS.tsv              0.756 | shuffled mean 0.115, best of 200 0.146 | 813 lines, 28847 letters
+dorffler-19-100  TABLE-C04.json               0.717 | shuffled mean 0.103, best of 200 0.129 | 596 lines, 20730 letters
+dorffler-19-100  + ADDITIONS.tsv              0.751 | shuffled mean 0.112, best of 200 0.144 | 596 lines, 20730 letters
+dorffler-19-101  TABLE-C04.json               0.753 | shuffled mean 0.108, best of 200 0.133 | 186 lines, 6444 letters
+dorffler-19-101  + ADDITIONS.tsv              0.771 | shuffled mean 0.114, best of 200 0.145 | 186 lines, 6444 letters
+dorffler-19-102  TABLE-C04.json               0.603 | shuffled mean 0.103, best of 200 0.130 | 384 lines, 15396 letters
+dorffler-19-102  + ADDITIONS.tsv              0.613 | shuffled mean 0.110, best of 200 0.133 | 384 lines, 15396 letters
+dorffler-19-103  TABLE-C04.json               0.714 | shuffled mean 0.111, best of 200 0.159 | 77 lines, 2877 letters
+dorffler-19-103  + ADDITIONS.tsv              0.716 | shuffled mean 0.119, best of 200 0.158 | 77 lines, 2877 letters
+
+harder controls (200 draws each): mean, best
+test half    TABLE-C04.json               same-kind shuffle 0.070, 0.093 | wrong line, any 0.114, 0.127 | wrong line, same page-half 0.167, 0.255
+test half    + ADDITIONS.tsv              same-kind shuffle 0.073, 0.094 | wrong line, any 0.117, 0.127 | wrong line, same page-half 0.169, 0.253
+fresh lines  TABLE-C04.json               same-kind shuffle 0.072, 0.102 | wrong line, any 0.117, 0.126 | wrong line, same page-half 0.169, 0.228
+fresh lines  + ADDITIONS.tsv              same-kind shuffle 0.075, 0.095 | wrong line, any 0.119, 0.128 | wrong line, same page-half 0.172, 0.235
+
+whole-page reading (transcription/p5_lines.whole_page.jsonl in place of p5_lines.jsonl):
+test half        TABLE-C04.json               0.621 | shuffled mean 0.103, best of 200 0.139 | 422 lines, 14245 letters

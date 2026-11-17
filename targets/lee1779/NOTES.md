@@ -603,6 +603,81 @@ page images was frozen before the words above the groups were read.
   2; and "from[...]" in letter 5, letters lost at the edge after "from"). None covers more than one word; none is of
   unknown extent.
 
+## William Lee to Richard Henry Lee, Frankfurt, 15 October 1778 (13 groups; Andrew Beling, with AI agents, 17 November 2026)
+
+A letter of the Lees' brother William in the same code, read with the rule of this target (Entick, London 1776; the
+Nth headword entry of the column). Not added to the 166 groups or the counts above. Files: `william_lee_1778/`.
+
+**Source.** Lee Family Papers microfilm, roll 5, Internet Archive `per_lee-family-papers_the-lee-family-papers_1742-1795_5`,
+images n574-n575 (the film's own frame numbers not read). Thirteen code groups, twelve different, with no words written
+above them.
+
+**Reading.** All 13 groups give a word that fits the sentence:
+
+> ... for really at present a certain person, [Frankl-in] [169 b XXI in] seems to think that Congress is bound to
+> follow his Mandates ... I have no doubt that [Dean] [115 b XXXVIII] will [come] [92 b XXVII] — [off] [259 b XXXII]
+> with [eclat] [140 a XXVIII] — which wd. not have been the case had [you] [426 b XXVIII] taken care to [give]
+> [177 a XVI] [us] [415 a X] timely [advice] [39 b II] of his [recal] [305 b XXX]. ... one in particular [the]
+> [373 a XXXIV] [nephew] [253 b XXI] of [Frankl-in] [169 b XXI in], I am sure in the above time has made £40,000 Ster. ...
+
+Deane, recalled from Paris, will "come off with eclat" before Congress, which William Lee thinks would not have
+happened had Richard Henry Lee given the commissioners timely advice of the recall; Franklin acts as if Congress must
+follow his orders; Franklin's nephew (Jonathan Williams, as Ford's note has it) has made £40,000. The code hides
+charges against Franklin, his family and Deane in a letter sent by post. Group by group, with the controls and the
+earlier readings: `william_lee_1778/groups.tsv`.
+
+**What was known before, and what this adds.**
+
+- *Print.* Worthington C. Ford, *Letters of William Lee* (Brooklyn, 1891), II 491-493, prints the letter with every
+  group left as figures: "I have no doubt 115 b xxxviii will 92 b xxvii — 259 b xxxii with 110 a xxviii — which
+  would not have been the case had 426 b xxviii taken care to 177 a xvi, 415 a x timely 39 b ii of his 305 b xxx" (II
+  492, read on the page image, Internet Archive `letterswilliaml00leegoog`; the last i of "xxxii" carries a stray
+  mark). The first group, "169 b xxi in.", is on II 491, also read on the image. The last three groups ("373 a xxxiv,
+  253 b xxi of 169 b xxi in") are on II 493, whose image could not be had (two requests returned server errors); they
+  are from the text layer only. He supplies three names in footnotes from the sense: "Benjamin Franklin" (II 491),
+  "Deane" (II 492) and "Williams, nephew of Franklin" (II 493, text layer). In a note at II 417-418 (page images) he
+  says that the dictionary cipher "baffled all my efforts", gives "110 a xxviii" as his example, and says the only
+  edition of Entick he could find, of 1783, does not fit.
+- *The typed notes on cipher filmed on roll 1* (the material attributed above to Edmund C. Burnett; Internet Archive
+  roll 1 text layer) copy this passage from Ford's text and write a word over each group: Deane, come off, criticism?,
+  you, give, us, advice, recall, the nephew, Franklin. So **11 of the 12 different words (12 of the 13 groups) were
+  already written in, from the sense** and from Burnett's partial key, in an unpublished typescript.
+- *Added here.* (1) Each group is identified as the entry at that place in the 1776 dictionary, so the readings are
+  look-ups and not guesses from the sense. (2) **One word is new: 140 a XXVIII = "eclat"** ("come off with eclat").
+  Both blind readers read the manuscript figure as 140. Ford prints 110 (on his page image), and the typed notes,
+  which cite Ford II 492, write 110 a XXVIII with "criticism?" over it. 110 a XXVIII in 1776 is "Crinkle" (27 Crink,
+  29 Crinose), so "criticism?" is not the 1776 entry at the figure it stands over; with its query mark it reads as a
+  word supplied from the sense.
+
+**Evidence.** All the image readings and look-ups were made by AI agents; no person has checked them.
+
+- The test plan was written and hashed before any group was read or looked up (`william_lee_1778/frozen_2026-11-15/`:
+  `TEST_PLAN.md`, `PLAN_FREEZE.txt`; the plan names the model it intended to use).
+- Two blind readers, shown strips of the letter mixed with seed groups of known value (all seeds read right),
+  transcribed page, column and line of every group: **they agree on 13 of 13** (`frozen_2026-11-15/readerA/`,
+  `readerB/`). The headwords come from blind column lists of the 1776 page images, made by agents shown neither the
+  letter nor any earlier reading, each seeded with known entries from the Arthur Lee key (all found).
+- **Prior values** (the typed notes and Burnett's key, plus Deane, for 11 of the 12 different groups): the rule gives
+  the prior word in **9 of 11** (10 if Frankly + in for "frank[lin]" is counted), against a mark of 9 set in the plan.
+  The two misses are Frankly (strict wording) and eclat (where the prior figure was 110). **Controls** (the same
+  column and line on page + 1, page - 1, and the other column): **0 of 11** each.
+- **Fit**: a blind judge, given the clear text with numbered blanks and the four candidate words for each in shuffled
+  order, found the rule word fits **12 of 12** blanks and none of the 36 control words fits
+  (`frozen_2026-11-15/helperJ/judgments.tsv`, key `lookup/J_key.tsv`).
+- **Second look-up, 17 November 2026** (plan written and hashed before the agent started): a fresh agent, given only
+  page, column and a count for each of the 12 columns (and the seed 80 a XVI, expected Cavalier), numbered the entries
+  again from the 1776 page images. Seed right; **12 of 12 agree** with the first look-up
+  (`william_lee_1778/frozen_2026-11-17/`: `test_L_result.txt`, the column list `columns.tsv` with its freeze, and the
+  agent's notes, which name the model). Its job list holds local file paths and is not included; sha256
+  `aecf0a66fc95b336334047901bce79ee773f9b75373c0f73ab346917030b5ae1`. The plan itself (sha256
+  `1780c07397e988a979d685276d72a78c0758632be5ca23c6f5f7f6e1ed5fe4d6`) also covers an unrelated test and is not
+  included; its rule for this test: pass only if all 12 agree, misses reported as misses, one run.
+- Least sure in the column counts: p. 415 col. a, where the headwords lie in the gutter shadow and entry 10 ("oblique
+  case of we", headword hidden) is read as Us; if it were a run-over line the count would shift by one.
+
+**Open.** No received copy other than this one, and no letter-book copy, was looked for. The other numbered persons in
+William Lee's letters of 1778 (164, 113, 97, 50, 104) are not identified.
+
 ## Remaining gaps
 
 - Unread groups 331b6-d (letter 3), 250?12, 455a15, 293b13 (letter 5) (one occurrence each) - blocker: open-codes; no entry within a line fits in the 1776 setting and no 1777 printing has been seen; the received copy of letter 3 writes 331,b,VI-d as the letter book does, with nothing above; no received copy of letter 5 was found
@@ -616,6 +691,7 @@ page images was frozen before the words above the groups were read.
 - Who wrote the interlinings - blocker: needs-physical-access; ink and pencil cannot be told apart on the film, and hand samples of Richard Henry Lee and his grandson were not compared
 - The 1777 printing of Entick - blocker: needs-physical-access; no digitized copy found
 - Prior work: Weber (1979) p. 53 and Potts (1981) in full - blocker: needs-physical-access; lending-only, p. 53 not viewable
+- Francis Lightfoot Lee to Richard Henry Lee, Menokin, 12 August 1778 (36 groups in the same code, Lee Family Papers roll 5, image n238; not added here) - blocker: illegible; a test of its reading against the faint words written over the groups failed (5 of 9, mark 80%), the words being too faint and some figures probably misread
 
 ## Escalation
 
@@ -645,5 +721,7 @@ page images was frozen before the words above the groups were read.
 - `double_read/`: the double reading of every figure (plan and freeze, strip key, the readers' frozen batches and
   notes, three-way table, settled table, result); scripts `scripts/double_read_*.py` (they read local images and
   readers' folders not in the repository)
+- `william_lee_1778/`: William Lee's letter of 15 October 1778 (`groups.tsv`, the group-by-group table; `frozen_2026-11-15/`, the
+  plan, the two readers' frozen transcriptions and the fit judge's answers; `frozen_2026-11-17/`, the second look-up)
 - `profile.json`, `validation.tsv`
 - No page images and no dictionary scans are committed.

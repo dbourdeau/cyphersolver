@@ -3,8 +3,8 @@
    two crosswalks: A = key_R5318_by_1448_label.tsv (settled); B = labels given by the blind pass B (R5318_passB_blind.tsv, '?' dropped).
 2) f. 28 (1448 training slip): share of valued tokens whose R5318 value equals the settled f. 28 value; 200 within-class shuffles
    (letters/syllables, word signs), seed 5318.
-3) coverage: f. 28 and f. 139 tokens (f. 139 labels crosswalked as in tranchedini1448/dudout/test_1446.py) that have an R5318 sign.
-Usage: python3 -I compare.py <targets/tranchedini1448/dudout> <targets/tranchedini1446/texts/f139_signs.txt> > results_R5318.json"""
+3) coverage: f. 28 and f. 139 tokens (f. 139 labels crosswalked as in tranchedini1446/dudout1448/test_1446.py) that have an R5318 sign.
+Usage: python3 -I compare.py <targets/tranchedini1446/dudout1448> <targets/tranchedini1446/texts/f139_signs.txt> > results_R5318.json"""
 import sys, json, random, statistics as st, os
 here = os.path.dirname(os.path.abspath(__file__))
 dud, f139 = sys.argv[1], sys.argv[2]

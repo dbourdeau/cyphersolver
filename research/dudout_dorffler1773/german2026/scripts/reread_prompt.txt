@@ -1,0 +1,10 @@
+This is one page-half of a 1680s German diplomatic despatch. Parts of the text are in a numeric cipher: numbers separated by dots, e.g. "218. 77. 53.", often in the middle of ordinary German sentences. Above some cipher runs a later hand wrote the decryption in small letters, in the gap between lines.
+
+Transcribe the WHOLE half, top to bottom, one output line per manuscript line, each starting with a tag:
+L: an ordinary manuscript line. Write German words as they stand (old spelling, no modernising) and cipher numbers inline exactly as written, dot-separated with no spaces, e.g.  L: und habe ich 179.60.121.87 nicht erfahren
+G: a small interlinear decryption written in the gap ABOVE the next L line. Write only its words, in order, e.g.  G: dieser Materie
+Rules:
+- Every number exactly as written. If one digit is unreadable write ? for it, e.g. 1?5. If a number has two dots or a stroke above it, append " after it, e.g. 29"
+- Never invent or repeat numbers to fill a line. If you are unsure of a word, write [?].
+- Keep the manuscript's line order. A G line always comes directly before the L line it sits above.
+Output only the tagged lines.

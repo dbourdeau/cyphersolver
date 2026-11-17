@@ -168,6 +168,33 @@
    "technique": [
     "key matching"
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "The contributor's own held-out test on Ridolfi's glossed letter MAP LXXIV doc. 114 (issue #589, comment of 14 Nov, 21:44 UTC; aaymeloglu/held-out-114/). Declared beforehand: key.json at commit 46dec7b unchanged, a transcription of the gloss-masked cipher lines by an agent without gloss, values or print (865 signs), reference Desjardins I pp. 585-586, character agreement with any listed value of a two-valued sign counting, bar 0.85. Result 0.838 against 0.379 for the best of 1,000 shuffled keys: under the bar, failed. First value only 0.775. The promised count of exact words was not made. After the result, not pre-registered: 0.844 with two block ends corrected; 0.886 against the contributor's own gloss reading (partly cipher-assisted). Order of events and blinding by the contributor's record (one commit).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "technique": [
+    "key matching"
+   ],
+   "what": "The contributor, from the gloss of doc. 114 (no longer held out) and the key sheet enlarged: the sign ÷ split into n (dot or tick above) and c (dot below only); Ridolfi's d and l separated by the arm at the baseline; a sign for ll (barred d-shape) added; bb glossed four times; the person sign with raised c glossed Re five times, the other read [il Duca] by inference from two glosses. The four letters relabelled from one-pass shape sorts (agents with the labels, not the values) and re-read: strict tier 193 of 283 (68.2%) and 51 of 91 (56.0%), from 36.7% and 40.7%. Gabbrielli no. 25 reported to be this alphabet (supports nn and rr), no. 34 a different one.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Check of the contributor's held-out test and revision (AI agent): SHA-256 of transcription-frozen.tsv, score.py and key-46dec7b.json as in PREREGISTRATION.md, the key equal to key.json at his commit 46dec7b; score.py read and re-run: 0.8382, 0.7745, shuffles best 0.3790 mean 0.2859; an own scorer written from the protocol gives 0.8382 and 0.7745 (0.8855 against his gloss reading; best of 300 own shuffles 0.362); own_decode.py on the revised files gives the key output of reading.txt for all 283 and 91 cipher words and the revised tier counts. Not checked: the reference against a copy of Desjardins, and the transcription of doc. 114, the shape sorts and the gloss reading against the images (the ASF server reset the connection on the evening of 14 Nov).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -180,34 +207,44 @@
   "class": "read in part",
   "key": "partial",
   "provenance": "contributed",
-  "fraction_read": 0.377,
+  "fraction_read": 0.652,
   "fraction_read_method": "measured",
-  "fraction_read_source": "aaymeloglu/own_decode.py: cipher words with no ambiguous sign (the contributor's strict tier), 104 of 283 (Ridolfi) and 37 of 91 (Alamanni) = 141 of 374; with the forced words 255 of 374 (68.2%); the contributor's widest figure, every word with a proposed reading, is 98.6% and 87.9%.",
+  "fraction_read_source": "aaymeloglu/own_decode.py on the files of 14 Nov 2026 (commit 26378c7): cipher words with no ambiguous sign (the contributor's strict tier), 193 of 283 (Ridolfi) and 51 of 91 (Alamanni) = 244 of 374; as first filed 141 of 374 (37.7%); the rise comes from signs relabelled by shape (one-pass sorts, not blind). With the forced words 310 of 374 (82.9%); the contributor's widest figure, every word with a proposed reading, is 98.6% and 87.9%.",
   "verification": [
    "matched control",
    "historical consistency"
   ],
-  "notes": "Reading and key work by Andrew Aymeloglu with AI agents; the project re-ran the lookup and compared two images. The connected text is a proposal: about a third of the words are free of a choice between sign values.",
+  "notes": "Reading and key work by Andrew Aymeloglu with AI agents; the project re-ran the lookup and the held-out score and compared two images of the first filing. The connected text is a proposal: about two thirds of the words are free of a choice between sign values after the shape sorts of 14 Nov 2026, and the contributor's held-out test on doc. 114 failed its bar (0.838 against 0.85).",
   "gaps": [
    {
-    "item": "words that rest on ambiguous signs (the n/c sign, d and l alike, others at 1272 px): 175 forced or lenient in Ridolfi, 43 in Alamanni",
+    "item": "words that still rest on ambiguous signs (signs not sorted with confidence; others at 1272 px): 86 forced or lenient in Ridolfi, 29 in Alamanni",
     "blocker": "not-attempted",
-    "detail": "Ridolfi's glossed letters 101-110 and 114 have not been used to separate his letter forms; doc. 114 with Desjardins's text is a ready test"
+    "detail": "the shape sorts of the n/c and d/l signs were one pass each by agents that had the labels; no blind second sort; Ridolfi's glossed letters 101-110 not used; doc. 114 is used up as a test (failed, 0.838 against 0.85)"
    },
    {
-    "item": "two unread groups and two doubtful words in Ridolfi 113; 11 unread words in Alamanni 96",
+    "item": "two unread groups and two doubtful words in Ridolfi 113; 9 unread and 2 doubtful words in Alamanni 96",
     "blocker": "not-attempted",
-    "detail": "Gabbrielli's keys nos. 25 (Piero Alamanni, 1492) and 34 (de Rydolfis, 1495) not tried"
+    "detail": "Gabbrielli no. 25 is this alphabet by the contributor's report and was not scored separately on doc. 96; nos. 13, 26, 30 not looked at"
    },
    {
     "item": "name number 22 (sheet: S. di Pesaro; gloss in Ridolfi 107: S. Lodovico) and 15",
     "blocker": "not-attempted",
-    "detail": "other letters in this key not searched for 22 and 15"
+    "detail": "doc. 114 has neither; other letters in this key not searched for 22 and 15"
    },
    {
-    "item": "two person signs not on the sheet",
+    "item": "the second person sign of doc. 112, read [il Duca] by inference from two glosses in doc. 114",
     "blocker": "not-attempted",
-    "detail": "glossed siblings not searched for them"
+    "detail": "the raised letter is not clear at 1272 px; Lodovico is not excluded"
+   },
+   {
+    "item": "the fitted signs rr, nn and cc: Gabbrielli's support by the contributor's report, no gloss",
+    "blocker": "not-attempted",
+    "detail": "Ridolfi 101-110 and Niccolini's glossed letters not searched"
+   },
+   {
+    "item": "the transcription of doc. 114, the shape sorts and the gloss reading not compared with the images by the project",
+    "blocker": "not-attempted",
+    "detail": "the ASF server reset the connection on the evening of 14 Nov 2026; it answered in the morning"
    },
    {
     "item": "higher-resolution images",
@@ -226,10 +263,16 @@
     "reading": "aaymeloglu/ridolfi-reading.md",
     "translation": "aaymeloglu/ridolfi-reading.md",
     "language": "it",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of issue #589), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read the three letters end to end as Italian against the English, sentence by sentence: the cipher passages join the clear text into coherent sentences in all three (the King met by the Duchess Bona at Pavia castle; the Pavia citizens and the milling duty; the King's two hours at night with Bona and Isabella's refusal to appear; opinion in Milan that Florence cannot resist; Faenza promised to the Lady of Forlì), and the English follows the Italian clause for clause. Grade B, not A: 193 of 283 cipher words (68.2%) are free of a choice between sign values, 32 were chosen by sense, and the held-out test on doc. 114 came out at 0.838 under its 0.85 bar, so the connected text is a proposal. Weak passages: doc. 112 'lo edicto(?) ha fatto di fare ricomperare il dazio della macine' (rough syntax, no subject), 'non ne li strignerebbe(?)' and 'le poste siano legate in modo che ... da farne poco caso' (letters sound, sense proposed); the second person sign read [il Duca] by inference; doc. 113 'dice li quello intenderete [?] [?] da lui a bocca' (two groups unread, the clause does not close). Letters supplied in brackets (Pav[i]a, pr[efa]ta, M[aes]tà, a[p]resentarsi) are marked. The doubtful phrases of doc. 113 marked (?) outside the italics are in the clear hand, not the cipher. The sentence score of docs/_check_reading.py (31% clean) runs over the whole file, English and notes included, and is not a measure of the Italian."
+    },
     "state": "read in part",
-    "read_share": 0.367,
-    "summary": "Ridolfi reports from Milan as Charles VIII comes through Lombardy: the King received at Pavia castle by the Duchess Bona; the Pavia citizens' protest against the milling duty; on the day the death of Gian Galeazzo was announced, the King's night visit to Bona and Duchess Isabella's refusal to appear; opinion in Milan that Florence cannot resist the French.",
-    "note": "Reader's note (the project, 14 Nov 2026), not a review grade: Read the Italian and the English of the three letters as sentences: they hold together and fit the dated events. But only 104 of 283 cipher words are free of a choice between sign values, 85 were chosen by sense, and the contributor's own blind calibration got 74% of glossed words right; A connected proposal with a small secure part."
+    "read_share": 0.682,
+    "summary": "Ridolfi reports from Milan as Charles VIII comes through Lombardy: the King received at Pavia castle by the Duchess Bona; the Pavia citizens' protest against the milling duty; on the day the death of Gian Galeazzo was announced, the King's night visit to Bona and Duchess Isabella's refusal to appear; opinion in Milan that Florence cannot resist the French. The key did not pass its pre-registered held-out test on doc. 114 (0.838 against a bar of 0.85), so the connected text is a proposal, not a validated reading.",
+    "note": "Reader's note (the project, 14 Nov 2026, revised the same evening), not a review grade: Read the Italian and the English of the three letters as sentences, and again the lines changed by the revision (alla camera, nel letto, della macine, non volle, cavallaro, nella città, alla corte, [il Duca]): they hold together and fit the dated events. 193 of 283 cipher words are now free of a choice between sign values, 32 were chosen by sense; the held-out test on doc. 114 came out at 0.838, under its 0.85 bar, so wrong words are to be expected. A connected proposal."
    },
    {
     "doc": [
@@ -241,10 +284,10 @@
     "reading": "aaymeloglu/alamanni-reading.md",
     "translation": "aaymeloglu/alamanni-reading.md",
     "language": "it",
-    "state": "read in part",
-    "read_share": 0.407,
+    "state": "decoded, not read",
+    "read_share": 0.56,
     "summary": "Alamanni privately urges Piero de' Medici that the King of Naples's plan to turn Genoa is the one remedy, must not be delayed and must be entered only with enough preparation, that name 22 will never trust the King, and that Piero must tell no one; on the last leaf, Lodovico's three threats, the second unread.",
-    "note": "Reader's note (the project, 14 Nov 2026), not a review grade: Read the Italian and the English as sentences: the cipher passages fit the clear text around them, with 11 of 91 cipher words unread and 19 chosen by sense; 37 words are free of a choice between sign values."
+    "note": "Reading review, 2026-11-14 (project (maintainer session for Daniel Bourdeau, at the integration of issue #589), not the author of the reading): decoded, not read; no grade. Read as Italian against the English, sentence by sentence. Of about seventeen clauses that carry cipher words, about half hold (voltare Genova; farlo a tempo; a manifesta vittoria; sotto mantello; si fidi mai del re; volessi la guerra per mettere la città in travaglio; di serrarci la via) and the rest break: '[22] [?] [?] [?] et consigli buono in bocha'; 'tu qui(?) tu havessi(?) a schoprire', whose sense runs against the 'sotto mantello' that follows; 'vedessi di ferla(?) netta(?)'; 'vuol tanta grandeza(?) sua' between two gaps; 'con l'armata [?] Genova'; and on c. 221v the three threats, where the verb of the list and the second threat are unread ('da poter [?] [?] [?]', 'assai tenuto [?] ce la calerà(?) [?]'). The clear hand around the cipher has open gaps in most sentences of cc. 220r-221r, so the cipher clauses cannot be closed from their context. The English is not a translation of the whole: c. 220r and the end of c. 221v are summarised in brackets, sentences are cut with [...], and words are supplied that the Italian does not carry ('[I do not hold]', 'the sense wants something like harm us'). 51 of 91 cipher words (56.0%) are free of a choice between sign values; 9 are unread, 2 doubtful, 17 chosen by sense. To become a reading: a collated clear text, the nine unread words, and a full English. Earlier reader's note: Read the Italian and the English as sentences: the cipher passages fit the clear text around them, with 9 of 91 cipher words unread, 2 doubtful (ce la calerà) and 17 chosen by sense; 51 words are free of a choice between sign values. 'sotto mantello' now comes from the ll sign."
    }
   ],
   "key_file": [
@@ -254,7 +297,7 @@
    {
     "who": "aymeloglu",
     "role": "solution",
-    "note": "key sheet MAP LXXII 183 matched to Ridolfi's glossed letters and applied to four bare letters; transcriptions, reading and translation (GitHub issue #589)",
+    "note": "key sheet MAP LXXII 183 matched to Ridolfi's glossed letters and applied to four bare letters; transcriptions, reading and translation (GitHub issue #589); own held-out test on doc. 114 (failed, 0.838 against 0.85) and the n/c, d/l and ll signs separated from its gloss (comment of 14 Nov 2026)",
     "date": "2026-11-14",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/589",
     "published": true

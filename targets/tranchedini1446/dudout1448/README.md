@@ -1,5 +1,9 @@
 # Tranchedini 1448 table: learnt on BnF ital. 1585 f. 28 (with f. 27), held-out test on f. 30 (with f. 29) — issue #616
 
+> Integration note (14 Nov 2026, not by the contributor): filed in PR #625 as `targets/tranchedini1448/dudout/` and moved here unchanged except for
+> that path. The outcome below ("a neighbour's key") is the contributor's, by his pre-set rule; with the key sheet of PR #630 the two
+> letters were judged the same key in a later state and kept in this target: see `../NOTES.md`, sections of 14 Nov 2026 (night).
+
 Brice Dudout, with Claude Opus 5.5 (14 Nov 2026). Lead 1317 (Nicodemo Tranchedini to Francesco Sforza, Florence, 1447-49).
 Images: Gallica, BnF italien 1585, ark:/12148/btv1b52525947w, views 52 (f. 27), 54 (f. 28), 56-57 (f. 29), 58-59 (f. 30).
 Source gallica.bnf.fr / BnF. No image is included here.
@@ -86,7 +90,7 @@ is worth a look on the f. 139 side.
 - `texts/f28_passA.txt`, `texts/f28_passB.txt`, `texts/f28_signs.txt` — the two passes and the settled training text with values.
 - `texts/f30_signs.txt` — blind transcription of f. 30; `texts/f29_reference.txt` — reference words from f. 29.
 - `table_1448.json` (+ `build_table.py`), `measure_f30.py` → `results/results_f30.json`, `test_1446.py` → `results/results_f139.json`
-  (run `test_1446.py` from the repository root: `python3 targets/tranchedini1448/dudout/test_1446.py targets/tranchedini1448/dudout/table_1448.json`).
+  (run `test_1446.py` from the repository root: `python3 targets/tranchedini1446/dudout1448/test_1446.py targets/tranchedini1446/dudout1448/table_1448.json`).
 
 ## Limits
 - The training slip is short (about 240 signs): 65 labels valued, several only once; homophones and nomenclator signs of

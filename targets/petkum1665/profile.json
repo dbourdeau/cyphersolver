@@ -1010,6 +1010,42 @@
    ],
    "what": "Issue #607 (Brice Dudout) reports an independent key T2 from the glosses of images 338, 377, 401, 421, 429, 461 and 561, with a held-out agreement of 0.885 against 0.295 for shuffled keys and a reading of image 573. No files were sent, so the figures are not verified. Compared here with key_v5.tsv: of 29 shared attested values 28 agree and one differs (88: Roy d'Espagne in T2, l'Espagne here); eight attested and four rank-only values of T2 are not in the key (134 Stockholm among the open numbers). Recorded as reported; nothing added to the key or the counts.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Brice Dudout's pre-registered test of his key T (PR #622, dudout/): one measure on the glossed image 561 (654 groups), bar 0.85 character agreement and 0.30 above the best of 200 shuffled keys. Score 0.7976 (best shuffled 0.3066): under the bar. Re-run here with his script: 0.7976. Order of events by the contributor's record (no outside stamp).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "control",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Second measure, added after the first failed (addendum 2 of his protocol): key T2 = T + the values of the 561 glosses, on glossed leaves 553 left, 541 left, 638 right (554 groups in 200 passages). 0.8848; best of 200 shuffled keys 0.2946, mean 0.2704, none at or above. Reproduced here with his script and with a decoder written from key_T2.tsv (0.8848; 100 further shuffles, best 0.2841). All ten SHA-256 values match the files. The training glosses were transcribed on 14 Nov, after both measures, so that the key was built before the held-out leaves were seen is by the contributor's record; the files show that every value of T2 stands under a training or 561 gloss and that T2 lacks 11 numbers the held-out leaves gloss.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration of key T2 (PR #622). Images fetched from Rigsarkivet's API and compared with his transcriptions on 553 left, 561 right, 541 left (head) and 461 right, about 440 groups: one misreading (561 right has 348 under 'Roy', his file 248, which gave T2 a wrong 248 = roy). T2 against key_v5.tsv: 139 shared numbers, 137 the same value, 23 differs by the row rule only, 88 differs. 88 = le Roy d'Espagne seen twice on 561 right, with 118 = l'Espagne in the same line: corrected in key_v6.tsv. Nine T2 values seen under their gloss here and added (101, 114, 130, 133, 134, 150, 192, 212, 358). Prediction on the folder's letters, decoded before T2 was known here: the new values and 88 stand in 17 places, 16 give sense, one does not (134 in Paulmyer 16 May 1664, 'Cour des aydes a 134'). By the folder's counting rule code words are E, so no strict share changes: on the twelve letters of 13 Nov two units move from N to E (133 on 13 Jan 1665, 114 on 27 Jan 1665), counts_v6.txt. Two transcriptions of image 573 made apart agree on 552 of 558 tokens. His strict count for image 573, 173 of 238 (72.69%), reproduces with his script; the count of record here stays 169 of 238. Decryptions and readings not rewritten with v6.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Reading review of the eleven readings of outcome.texts (ten Petkum letters and Paulmyer 25 Apr 1664), asked for by the reading check and by Brice Dudout's comment on PR #622: each read through as French against its English. All build sentences with their holes marked; all graded B (code words, guessed values and open numbers stand in most sentences; transcription by AI agents). The letter of 6 Apr 1666 is the weakest: its matter rests on three open numbers. The readings themselves were not changed and still print the values of the key they were written with.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -1041,11 +1077,12 @@
   "fraction_read_source": "counts.txt pool H: strict S/(S+E+N) per word unit over the eleven letters read in part, each at its count of record (30 Nov R2; the four of #444; the five by the first reader; Paulmyer 25 Apr): 562 of 819. Code words count as not read. Unit is the word, not the cipher token. With the blind reader's five: 559 of 819.",
   "fraction_read": 0.6862,
   "codes_open": {
-   "open": 21
+   "open": 20
   },
   "verification": [
    "key confirms",
-   "statistical test"
+   "statistical test",
+   "independent verification"
   ],
   "validation": {
    "date": "2026-11-12",
@@ -1083,17 +1120,24 @@
    },
    {
     "who": "dudout",
-    "role": "pointer",
-    "note": "reported an independent key T2 and nomenclator values for image 573 (issue text only, no files): reported, not verified; a file pull request is asked for",
+    "role": "key corrected",
+    "note": "independent key T2 for the Petkum code, built from the chancery glosses of unit 261267 and measured on glossed leaves kept apart (first measure 0.7976, failed; second 0.8848 against 0.2946 for the best of 200 shuffled keys); it corrects 88 to le Roy d'Espagne and adds nine values to key_v6.tsv (101, 114, 130, 133, 134, 150, 192, 212, 358); with AI agents; issue #607, files in PR #622",
     "date": "2026-11-14",
-    "source": "https://github.com/dbourdeau/cyphersolver/issues/607"
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/622"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "his key agrees with this folder's on 137 of the 139 numbers they share, and his transcription of image 573 (30 Nov 1665, pp. 2-3), made apart, agrees with the folder's on 552 of 558 tokens; his own reading of those pages is in dudout/reading/",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/622"
    }
   ],
   "gaps": [
    {
-    "item": "Code numbers with no value: 21 still open after key v5 (40, 108, 134, 135, 151, 181, 197, 198, 235, 248, 330, 344, 346, 351, 370, 374, 376, 388, 390, 394, 399)",
+    "item": "Code numbers with no value: 20 still open after key v6 (40, 108, 135, 151, 181, 197, 198, 235, 248, 330, 344, 346, 351, 370, 374, 376, 388, 390, 394, 399)",
     "blocker": "not-attempted",
-    "detail": "v4 settled 6 codes and v5 8 more (82, 163, 281, 307, 309, 310, 338, 369) from Sehested's glossed relations in unit 261294, but only 23 of images 5-141 were read in full (gloss/KEY_v5_coverage_261294.tsv); 114 images, e.g. 26-28, are workable and unread. 164 conflict (amitie in Sehested's glosses, alliance in v2 from 574R) not resolved."
+    "detail": "v4 settled 6 codes, v5 8 more from Sehested's glossed relations in unit 261294, v6 one more (134 Stockholm, from Brice Dudout's key T2); only 23 of images 5-141 of unit 261294 were read in full (gloss/KEY_v5_coverage_261294.tsv); 114 images, e.g. 26-28, are workable and unread. 164 conflict (amitie in Sehested's glosses and on T2's held-out leaf, alliance in v2 from 574R) not resolved. 248: glossed 'bruit' on 541 left by Brice Dudout's reading, against 'mille 248s' in three bare letters; to be looked at again. T2 values not taken: 207, 225, 376, 395 (glossed by his record, not seen again here); 151, 197, 344, 351 (alphabetical rank only; they give sense in all ten places met)."
    },
    {
     "item": "The twelve filed bare letters have no French reading or English translation (decoded, not read); no letter reaches 95% (best 16 Mar 1666, 94.12% on 17 units, shuffle control fails)",
@@ -1138,7 +1182,13 @@
     "state": "read in part",
     "read_share": 0.7051,
     "summary": "Petkum reports from the court at Oxford: with the French ambassadors recalled he holds a [break] between France and England certain; England has no friend but the Bishop of Munster; one defeat could put the malcontents, chiefly the Scots, under arms. He asks to be withdrawn in good time if Denmark binds itself to France to England's harm. Context: the Second Anglo-Dutch War; Denmark between England and the France-Dutch alliance after the Bergen affair (Aug 1665).",
-    "note": "read_share = 220 of 312 word units (blind R2 adjudicated, KEY_v3; counts.txt A2). As filed in #443 (R1, keys v1/v2): 212 of 312. The reading file was written at the first decode."
+    "note": "read_share = 220 of 312 word units (blind R2 adjudicated, KEY_v3; counts.txt A2). As filed in #443 (R1, keys v1/v2): 212 of 312. The reading file was written at the first decode.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read end to end as French against the English: the cipher passages join the clear text into coherent sentences on all four pages (the French ambassadors leaving, the rupture expected between France and England, Sehested's journey, the alliance with the Emperor and Spain, the two feasts). Grade B: about three words in ten are code words, guesses in [?] or open numbers (151, 163, 197, 344, 351, 370, 399, 40), and the file still prints the values of keys v1 and v2. Brice Dudout's separate reading of pp. 2-3 (dudout/reading/573_reading.md) gives the same sentences."
+    }
    },
    {
     "doc": "petkum_1665-03-24",
@@ -1155,7 +1205,13 @@
     "state": "read in part",
     "read_share": 0.6897,
     "summary": "No need to rush into the English treaty; Denmark's terms will be no worse. England's malcontents have no leader; the [king] is armed and his parliament [sound].",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (40 of 58); code words count as not read. The reading file holds the French with holes and the English."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (40 of 58); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: two passages, both build sentences (no need to hurry the treaty; England's malcontents have no leader). Grade B: several words rest on guessed code values ([?nous], [198], [394], [348], [?bon]) and on supplied letters, each marked."
+    }
    },
    {
     "doc": "petkum_1665-11-23",
@@ -1172,7 +1228,13 @@
     "state": "read in part",
     "read_share": 0.7083,
     "summary": "Sweden is less devoted to England than the English think. Petkum advises spreading a false [rumour] of a levy of five or six thousand [men] to get better terms ('Mundus vult decipi') and waits to see which side the King takes.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (68 of 96); code words count as not read. The reading file holds the French with holes and the English."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (68 of 96); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: three passages that build sentences (Sweden less devoted to England than thought; a false report of a levy of five or six thousand; which side the King will take). Grade B: guessed code values marked ([?vous], [?tant], [374], [197], [?bruit], [?homme]), one word unresolved (fort·i·c·t)."
+    }
    },
    {
     "doc": "petkum_1665-12-10",
@@ -1189,7 +1251,13 @@
     "state": "read in part",
     "read_share": 0.68,
     "summary": "Petkum is surprised that Frederik III will break with the States General by arresting their ships in Norway, France taking their side and England bare of friends; Sweden is playing for [time] and will pass the treaty of Clifford to the Dutch and the French.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (51 of 75); code words count as not read. The reading file holds the French with holes and the English."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (51 of 75); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: two passages that build sentences (the arrest of the Dutch ships in Norway; Sweden playing for time and the treaty of Clifford). Grade B: supplied letters and three guessed values, each marked."
+    }
    },
    {
     "doc": "petkum_1666-04-13",
@@ -1206,7 +1274,13 @@
     "state": "read in part",
     "read_share": 0.6277,
     "summary": "The Grand Treasurer (Hannibal Sehested) writes that Louis XIV wishes to see Petkum, who has no order to go; he proposes help to a [peace] between [108] and Muscovy to humble Sweden, and suspects Coventry and the Swedes of feeding Juel false reports.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (59 of 94); code words count as not read. The reading file holds the French with holes and the English."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (59 of 94); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: the passages build sentences (the summons to the French court, a peace with the Muscovite to humble Sweden, six thousand men, Juel's reports). Grade B: open numbers 346, 135, 388, 330, 40, 108 and several guessed values stand in the sentences, each marked; 82 has a value since key v5 that the file does not yet print."
+    }
    },
    {
     "doc": "petkum_1665-04-28",
@@ -1225,7 +1299,13 @@
     "state": "read in part",
     "read_share": 0.7308,
     "summary": "On the English treaty: if the King resolves to conclude, insert a most-favoured-nation clause; Petkum can put it into the [151] ambassadors' heads to ask for the same two points.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (19 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's)."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (19 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: one passage of three sentences on the treaty (equality, the tribunal, most-favoured treatment). Grade B: 376 and 151 (three places) are open and carry part of the sense."
+    }
    },
    {
     "doc": "petkum_1665-06-23",
@@ -1244,7 +1324,13 @@
     "state": "read in part",
     "read_share": 0.6207,
     "summary": "The Swedish-English [treaty] has been communicated; Sweden plays the reluctant one, but England would engage with her as far as she wishes; all is negotiated at [134].",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (18 of 29); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's)."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (18 of 29); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: four short sentences on the Swedish-English treaty. Grade B: thin; 390, 373, 348, 313, 369 and 134 were open when it was written, so half the nouns are brackets (134 = Stockholm since key v6)."
+    }
    },
    {
     "doc": "petkum_1665-09-17",
@@ -1263,7 +1349,13 @@
     "state": "read in part",
     "read_share": 0.6154,
     "summary": "The Swedes will do nothing for the English and give fine words only so that they may take [Bremen]; instructions in case the Dutch ships are at [Bergen].",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (16 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's)."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (16 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: two passages that build sentences (the Swedes and Bremen; the Dutch ships at Bergen). Grade B: Premen and Bebgen do not spell as written, three code numbers together (348 309 281) were open when it was written."
+    }
    },
    {
     "doc": "petkum_1666-01-18",
@@ -1282,7 +1374,13 @@
     "state": "read in part",
     "read_share": 0.72,
     "summary": "Sweden will not engage further with England; on the 'walk' of Clifford (Talbot) and the recall of both, 'this nation cannot keep from tricks'.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (36 of 50); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's)."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (36 of 50); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's).",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: the passages build sentences (the reports from 134, Clifford and Talbot, the English way of acting). Grade B: 134, 307, 338 and 313 open in the file, two words that do not spell (apstenir, deutelle)."
+    }
    },
    {
     "doc": "petkum_1666-04-06",
@@ -1298,10 +1396,10 @@
     "reading": "readings/petkum_1666-04-06.md",
     "translation": "readings/petkum_1666-04-06.md",
     "language": "fr",
-    "state": "read in part",
+    "state": "decoded, not read",
     "read_share": 0.5385,
     "summary": "To the King: Petkum does not know whether the States General have produced their [346] or whether the French king will [235] the [373], and wants to be sure before taking leave of the King of England.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (14 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's)."
+    "note": "Decoded, not read (14 Nov 2026, at the second maintainer's review of PR #646): the two sentences have a coherent frame, but their matter sits in the open numbers 346 (twice), 235 and 373, so the sense is carried by holes; no reading_review until those numbers are found. read_share = strict S/(S+E+N) per word unit, counts.txt (14 of 26); code words count as not read. The reading file holds the French with holes and the English. Blind second reader: see counts.txt D (the share above is the first reader's)."
    },
    {
     "doc": "paulmyer_1664-04-25",
@@ -1318,7 +1416,13 @@
     "state": "read in part",
     "read_share": 0.7778,
     "summary": "The Marquis de Vandy assures Paulmyer that Mademoiselle de Montpensier despairs of the [match] of Savoy because Louis XIV refuses consent. Filed first as 2 May 1664; the passage ends the letter of 25 Apr.",
-    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (21 of 27); code words count as not read. The reading file holds the French with holes and the English."
+    "note": "read_share = strict S/(S+E+N) per word unit, counts.txt (21 of 27); code words count as not read. The reading file holds the French with holes and the English.",
+    "reading_review": {
+     "grade": "B",
+     "by": "project (maintainer session for Daniel Bourdeau, at the integration of PR #622), not the author of the reading",
+     "date": "2026-11-14",
+     "note": "Read as French against the English: one sentence of cipher inside clear text (Mademoiselle de Montpensier and the Savoy match). Grade B: 313 and 285 are open in the file (285 = mariage since key v5), two signs doubtful, one syllable off."
+    }
    },
    {
     "doc": "paulmyer_1664-05-02",
@@ -1593,7 +1697,8 @@
    "gloss/KEY_v1_gloss_377_401.tsv",
    "gloss/KEY_v2.tsv",
    "key_v4.tsv",
-   "key_v5.tsv"
+   "key_v5.tsv",
+   "key_v6.tsv"
   ],
   "notes": "Repository scripts (docs/_check_reading.py, docs/_validate.py, docs/_check_profile.py) were not run by the contributor; checks were made with the folder's own scripts and by hand."
  }

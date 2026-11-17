@@ -5206,6 +5206,14 @@
    "by": "Nile Expedition staff (Durham Sudan Archive, Wingate Papers)",
    "year": 1884,
    "note": "Pencil table of Latin letters against two-digit numbers in columns headed with officers' names, and two Arabic-alphabet columns of two-digit numbers; filed in the same unit as the Gordon note SAD.250/1/550."
+  },
+  {
+   "id": "k-montcalm-w1757",
+   "label": "Montcalm's War Department numerical code (code W): index of 318 values from the 1757 pages",
+   "kind": "rebuilt here",
+   "by": "Andrew Beling, with AI agents, from the decipherment of the time",
+   "year": 1757,
+   "note": "Numbers for letters, syllables, words and names, no alphabetical order. Indexed from the interlinear decipherment of the cipher passages of SHD GR A1 3457 pieces 179-180 (LAC copy, reel C-12578); conflicting values kept; two numbers with unsettled digits kept out; 52 further values from the 1756-1759 letters in the same code kept apart (key/W_sibling_values.tsv). Not the key sheet of the time."
   }
  ],
  "links": [
@@ -8424,6 +8432,12 @@
    "target": "qaysarani1350",
    "how": "rebuilt from",
    "note": "rebuilt from the message itself; all 89 signs have a value"
+  },
+  {
+   "key": "k-montcalm-w1757",
+   "target": "montcalm1757w",
+   "how": "rebuilt from",
+   "note": "indexed from the decipherment written between the lines of the same pages; the reading is that decipherment, not a decoding with the index"
   }
  ],
  "sources": [
@@ -9812,6 +9826,10 @@
   {
    "source": "s-cyphersolver",
    "key": "k-qaysarani1350"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-montcalm-w1757"
   }
  ],
  "unlinked": {
@@ -11164,6 +11182,16 @@
    "key": "k-durham-sad250-81",
    "target": "gordonmudir1884",
    "note": "Both Arabic columns, as read (27 of 28 letters, mostly low confidence), tried against the note in eight variants against 4000 random letter reassignments: N2 clearly does not fit (65 to 88 percent of random draws do as well), N1 gives one marginal hint (2.5 percent, one of eight variants) that disappears when 3=4 and 2=6 are allowed (14 Nov 2026)"
+  },
+  {
+   "key": "k-vaudreuil1757",
+   "target": "montcalm1757w",
+   "note": "a different code: none of the 243 numbers present in both has the same value (0 of 242 at the integration check); its second copy, sheet e001295276, agrees on 1 of 238, no better than shuffled tables"
+  },
+  {
+   "key": "k-vaudreuil1757-272",
+   "target": "montcalm1757w",
+   "note": "the Marine table for Montcalm of 1758 (sheet e001295272): 0 of 281 shared numbers agree, against shuffled maxima of 3"
   }
  ]
 }
