@@ -73,7 +73,10 @@
   "attack": "ciphertext-only",
   "human_role": "Gave the catalogue link and asked for a solution; no other intervention.",
   "tools": [
-   "image crops (PIL)"
+   "image crops (PIL)",
+   "Judaeo-Arabic word list from the Princeton Geniza Project text corpus (pgp-text, 4,443 files, 1.35 M words)",
+   "rule tests with shuffled controls (scratch script)",
+   "second independent transcription by a subagent"
   ],
   "models": [
    "claude-fable-5-2"
@@ -132,11 +135,43 @@
    ],
    "what": "Ordinary colloquial Judaeo-Arabic misread by the model: not excluded for single phrases, not confirmed.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Web searches for a later reading of the fragment, for the Bohak-Zinger-Elbaum Geniza cipher publication and for Arabic word games giving alef-initial words: nothing found. PGP 11951 is not in the public pgp-text corpus.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "statistical test"
+   ],
+   "what": "About 75 rules (reversal, rotations, alef stripped, alef as null, atbash, albam, 21 alphabet shifts with and without alef and lamed fixed) applied over a letter-confusion lattice of the first reading and scored against a 98,000-type Judaeo-Arabic word list, with shuffled-letter controls.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Second independent reading by a subagent (transcription_b.txt). It showed that the hooked letter read as gimel is also the final alef of the clear lines, that the short word read al is ar in lines 9 and 10, and that line 12 ends in clear Arabic, in sha Allah.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Berber (Tamazight) in Hebrew letters, with ayin and gimel for gh. Candidate reading of line 11 start and line 12: azn uday a(n) yawi ... / awi-tn ghr-k al ughulgh, in sha Allah (send a Jew to bring ... keep them with you until I return, God willing); also ad ak, ar, is. Not checked by a Berberist; about 12 of 31 words.",
+   "result": "partial"
   }
  ],
  "outcome": {
   "method": "not solved",
-  "method_basis": "One session from the image alone: a first transcription and hand tests of word-game and other-language hypotheses gave no reading.",
+  "method_basis": "One session from the image alone: two transcriptions, scripted word-game and shift tests against a Judaeo-Arabic word list (negative), and a Berber hypothesis that gives a candidate reading of about a third of the words, not verified.",
   "contribution": [
    "none"
   ],
@@ -146,6 +181,6 @@
   "verification": [
    "none"
   ],
-  "notes": "In progress. The transcription is the bottleneck; see NOTES.md, Escalation."
+  "notes": "In progress. Candidate identification as Berber in Hebrew letters is a hypothesis, not a reading; see NOTES.md."
  }
 }

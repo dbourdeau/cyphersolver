@@ -61,6 +61,58 @@ Known weak points of this reading:
 
 No test was run by script: the transcription is too uncertain for a wordlist test to mean anything.
 
+## Same day, second pass: tests on a word list, a second transcription, and a Berber hypothesis
+
+### Scripted tests (negative)
+
+A Judaeo-Arabic word list was built from the Princeton Geniza Project's public text corpus
+(`github.com/princetongenizalab/pgp-text`, 4,443 Judaeo-Arabic files, 1.35 M words, 98,000 types; PGP 11951 itself is
+not in it). In that corpus 22 % of words begin with א; in the passage about 70 % do. About 75 rules (reversal,
+rotations, alef stripped, alef as a null, atbash, albam, 21 alphabet shifts with and without א and ל fixed) were
+applied over a letter-confusion lattice of the first reading and scored against the list, with shuffled-letter
+controls. No rule scores above its control (best 13 hits of 21 against 8.5 by chance, with implausible words).
+Web searches for a later reading, for the Bohak-Zinger-Elbaum publication and for an Arabic word game of this
+shape found nothing.
+
+### Second transcription (`transcription_b.txt`)
+
+An independent reading by a subagent, with alternatives. What it changes:
+
+- The hooked S-shaped letter I read as ג is ג in אלגמע but is also the **word-final alef** of the clear lines
+  (סוא, נרא, שא). The surplus of ג in my first reading is therefore not real.
+- The short word I read אל in lines 9 and 10 has no ascender: it is **אר**.
+- Line 12 ends in plain Arabic: **אין שא אללה**, "God willing". The secret stretch ends just before it.
+- A horizontal stroke follows a letter four times (lines 8, 9, 10); kept as a possible divider.
+
+### Hypothesis: the passage is Berber written in Hebrew letters (NOT verified)
+
+With those corrections, and ע / ג standing for gh, the end of the passage gives a connected sentence in Berber
+(Tamazight of the Moroccan type):
+
+| Hebrew letters | Berber | Meaning |
+|---|---|---|
+| אזן (line 11; ז/ו and נ/ג uncertain) | azn | send (imperative) |
+| אודאי | uday | a Jew |
+| אן יאוי | a(n) yawi | who will bring / to bring |
+| פרגר... | ? | object, unread |
+| אויתן (line 12; the fourth letter is ר, ה or ת) | awi-tn | take them / keep them |
+| ערך | ghr-k | with you, at your place |
+| אל | al | until |
+| אועלג | ughulgh | I return |
+| אין שא אללה | in sha Allah | God willing (Arabic) |
+
+"Send a Jew to bring [...]; keep them with you until I return, God willing." Other words fit Berber particles: אדאך
+(line 7) = ad ak, future particle with "to you"; אר (lines 9, 10) = ar, the present-tense particle or "until";
+איס (line 8) = is, "that / is it that". This also explains the alef-initial words (Berber particles a(d), ar, is, al, verbs
+and nouns beginning with a vowel) without any cipher.
+
+Against it, and to be checked: it rests on about 12 of 31 words; lines 8 to 10 are not read; my Berber is from
+general knowledge, with no dictionary or grammar opened; Berber should show many t and n, which the transcriptions
+show only if several ר are ת (possible in this hand, not shown); a Jewish family letter in Berber of this period
+would be very unusual, so the claim needs a Berberist and a Geniza palaeographer before it is stated anywhere as a
+reading. Single-word matches were found for other languages in the first pass; what is different here is one connected clause
+that suits the letter (a son away from home, a mother keeping goods).
+
 ## Remaining gaps
 
 - The whole passage (about 31 words, 127 letters) is unread. Blocker for this session: no reliable transcription.
@@ -69,6 +121,10 @@ No test was run by script: the transcription is too uncertain for a wordlist tes
 ## Escalation
 
 Next steps, in order:
+
+0. Test the Berber hypothesis: a Berberist (Tashelhit / Tamazight, ideally with medieval Berber, e.g. the Arabic-script
+   Berber of the Almohad period) reads `transcription_b.txt` against the image; check each proposed word in a
+   dictionary (Taifi, Destaing); look in PGP for other Berber or Sijilmasa / Dar'a family letters.
 
 1. A transcription by a reader of Geniza hands (ask the Princeton Geniza Project: Zinger, Elbaum; the 15 Nov sweep
    notes also ask that PGP be written to before anything on this fragment is published).
