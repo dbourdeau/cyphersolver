@@ -276,7 +276,9 @@ Four of the seven bare Paulmyer passages listed in Remaining gaps, unit 261294 (
 | 31 Mar 1665, images 189R-190L | 17 | 11/17 = 64.7% | 0 / 0 (-2.1851; -3.2812, -2.6398) | not run | failed our 65% line: recorded only |
 
 Token counts are from `DECODE_RUN.txt` (script-written). These entries are kept apart from the Paulmyer pool above and
-from every Petkum figure; they do not change any count of record.
+from every Petkum figure; they do not change any count of record. By cipher word (the judge's segments in
+`<doc>/judge.tsv`, a word counted read only when every unit is S): 18 Apr 1664 19/28, 26 Jun 1664 15/22, 14 Apr 1665
+16/28, 31 Mar 1665 2/5. `profile.json` carries the word share as `read_share` and the unit figure in the note.
 
 What they touch (Claude's gist, unchecked): 18 Apr 1664, a maritime union of three powers and the Rhine alliance, with
 Austria, the Dutch, France and its navy, Louis XIV and the King of Denmark named; 26 Jun 1664, a new subsidy to the
@@ -285,6 +287,10 @@ Swedes; 14 Apr 1665, a notable sum of money, engaging Louis XIV, Chancellor Ség
 The recurring 'yy' (the pair 'T T') in three passages was first taken for a suspected key fault. That is withdrawn: it
 is one cursive # sign (HSH = o) misread as two T's, a transcription error found after the decode (Remaining gaps).
 Nothing was changed in any key.
+
+Key v6 (`key_v6.tsv`, PR #622 integration, now on main) gives values to numbers in these passages that the frozen v5
+decode leaves open: 114 = Dannemarck (18 Apr and 26 Jun 1664) and 134 = Stockholm (26 Jun 1664). Nothing was decoded
+again with v6: the decodes, judge counts and readings above are the frozen v5 pass.
 
 14 Apr 1665 is incomplete: image 191 shows more of the letter page left of our crop, and 10 tokens are missing from the
 transcription (LAM 299 355 TH 277 before 301 (line 1); 364 Y m 18 after ct QX (line 2); 157 after "qu'un"; Dan Bourdeau's review of PR #689, not re-checked here). The 58/80 above is the first pass on

@@ -1241,6 +1241,15 @@
    "kind": "transcription",
    "what": "14 Apr 1665, image 191: the crop given to the blind reader left out the part of the letter page that lies left of it, so the frozen transcription lacks 10 tokens (LAM 299 355 TH 277 before 301; 364 Y m 18 after ct QX; 157 after \"qu'un\"), reported by Dan Bourdeau in his review of PR #689 and not re-checked here. The 58/80 strict judge covers the 80 tokens transcribed only; BLIND.tsv, decode and judge files left frozen and not re-scored.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Review of PR #689 (Dan Bourdeau, 17 Nov): branch rebased onto main after #646, NOTES and profile kept on both sides. read_share of the three filed Paulmyer texts set to the share of cipher words read by the judge's segments, a word read only when every unit is S (18 Apr 1664 19/28, 26 Jun 1664 15/22, 14 Apr 1665 16/28; 31 Mar 1665, not filed, 2/5); the per-unit figures stay in the notes. Key v6 on main gives 114 = Dannemarck (18 Apr, 26 Jun 1664) and 134 = Stockholm (26 Jun 1664), numbers the frozen v5 decode leaves open; nothing decoded again.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -1909,9 +1918,9 @@
     "translation": "readings/paulmyer_1664-04-18.md",
     "language": "fr",
     "state": "decoded, not read",
-    "read_share": 0.8592,
+    "read_share": 0.6786,
     "summary": "Talk of a maritime union of three powers and of the Rhine alliance; Austria, the Dutch, France and its navy, Louis XIV and the King of Denmark named. Cipher runs only; the clear text around them is not transcribed. English is Claude's, unchecked.",
-    "note": "read_share = strict one-pass judge per sign unit S/(S+E+N) = 61/71 (blind16/paulmyer_1664-04-18/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt)."
+    "note": "read_share = share of cipher words read, 19/28 (the judge's segments in blind16/paulmyer_1664-04-18/judge.tsv, a word counted read only when every unit is S). Per sign unit the strict one-pass judge gives S/(S+E+N) = 61/71 (blind16/paulmyer_1664-04-18/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt)."
    },
    {
     "doc": "paulmyer_1664-06-26",
@@ -1926,9 +1935,9 @@
     "translation": "readings/paulmyer_1664-06-26.md",
     "language": "fr",
     "state": "decoded, not read",
-    "read_share": 0.6667,
+    "read_share": 0.6818,
     "summary": "A new subsidy to the Swedes; a brother of someone named by code [64]; the court of [134]; France and Sweden. Cipher runs only. English is Claude's, unchecked.",
-    "note": "read_share = strict one-pass judge per sign unit S/(S+E+N) = 36/54 (blind16/paulmyer_1664-06-26/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt)."
+    "note": "read_share = share of cipher words read, 15/22 (the judge's segments in blind16/paulmyer_1664-06-26/judge.tsv, a word counted read only when every unit is S). Per sign unit the strict one-pass judge gives S/(S+E+N) = 36/54 (blind16/paulmyer_1664-06-26/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt)."
    },
    {
     "doc": "paulmyer_1665-04-14",
@@ -1943,9 +1952,9 @@
     "translation": "readings/paulmyer_1665-04-14.md",
     "language": "fr",
     "state": "decoded, not read",
-    "read_share": 0.725,
+    "read_share": 0.5714,
     "summary": "A notable sum of money; engaging His Most Christian Majesty; Chancellor Séguier (three times) and a man named des Fargues. Cipher runs only. English is Claude's, unchecked.",
-    "note": "read_share = strict one-pass judge per sign unit S/(S+E+N) = 58/80 (blind16/paulmyer_1665-04-14/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt). Incomplete: 10 tokens of image 191 lie left of the crop and are not transcribed (NOTES, Remaining gaps)."
+    "note": "read_share = share of cipher words read, 16/28 (the judge's segments in blind16/paulmyer_1665-04-14/judge.tsv, a word counted read only when every unit is S). Per sign unit the strict one-pass judge gives S/(S+E+N) = 58/80 (blind16/paulmyer_1665-04-14/judge.tsv; '[n]' and '_' always N). State set by docs/_check_reading.py (marginal, not readable): the runs are phrases in uncopied clear text. Shuffled keys (values of the spelled key rows permuted among the signs, fr-1600-letters): 0 of 5,000 at seeds 20261112 and 7 (blind16/shuffle_out.txt). Incomplete: 10 tokens of image 191 lie left of the crop and are not transcribed (NOTES, Remaining gaps)."
    }
   ],
   "key_file": [
