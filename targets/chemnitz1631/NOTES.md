@@ -1,6 +1,6 @@
 # chemnitz1631: notes
 
-Status: in progress (integration check, 13 Nov 2026: read in part, 68 of 89 cipher words sure = 76.4% by the README rule, probable and restored words counted as holes; the contributor's figure is 79/89 = 88.8% with probable words counted. The gaps below can still be worked from the images in hand, so no page yet. Catalogue lead 2570 stays open.)
+Status: in progress (re-reading of 17 Nov 2026: read in part, 72 of 89 cipher words sure = 80.9% by the README rule, was 68 = 76.4%; 80/89 = 89.9% with probable words. Next step: test the restored values 46, 51 and 43 on their occurrences in the glossed page 58 as a key rebuild; the other gaps are clear figures that disagree with the key or two doubtful figures. Catalogue lead 2570 stays open.)
 
 **Contributor's status: partial reading** (the outcome class in profile.json says the same). 89 cipher words in the two bare passages of images 55
 and 56: 68 sure, 11 probable, 10 on values restored from the sense. Sure + probable = 79/89 = 88.8 %, under the
@@ -73,8 +73,9 @@ a decoder written for the check.
   literature; not checked here.
 
 ## Remaining gaps
-- image 55: 6 cipher words (3 probable, 3 restored) - blocker: not-attempted; re-read the doubtful figures on the image and test the restored values on their other occurrences
-- image 56: 15 cipher words (8 probable, 7 restored) - blocker: not-attempted; same
+- images 55-56: 9 words on restored values (46, 51, 43=l, ligatures Sd and Sf, 10=c) - blocker: not-attempted; key rebuild: test the values on their occurrences in the glossed page 58 (not done in the 17 Nov re-reading, which kept the key frozen)
+- images 55-56: 6 probable words with clear figures that the key values otherwise than the sense needs (unterweilen 21, gewohnt S2, Anspach 7, feind t, zweifel 58, dem 4) - blocker: no-key-material; likely encipherment slips, re-read on 17 Nov 2026; no other gloss of these words in the volume
+- image 56: 'sein' and 'aber', one doubtful figure each - blocker: illegible; re-read on 17 Nov 2026 at full resolution (a flourish crosses the 'aber' figure)
 - further Chemnitz letters in SE/RA/2106/F/XI/1392 - blocker: needs-physical-access; not digitised
 
 ## Escalation
@@ -83,4 +84,25 @@ a decoder written for the check.
 - [ ] known-keys: no other Swedish agents' keys of 1631 tried
 - [x] print: Arkiv till upplysning om svenska krigens historia I-II (contributor): nothing
 - [ ] key-rebuild: restored values not yet tested on their other occurrences
-- [ ] retry: probable words not yet re-read on the images
+- [x] retry: doubtful figures re-read on the images, 17 Nov 2026 (four groups corrected, see below)
+
+## Re-reading (17 Nov 2026, Brice Dudout with a Claude Opus 5.5 agent)
+
+Reading only, no new measurement (no fresh held-out portion exists) and **no change to key.tsv**.
+- The doubtful figures of images 55 and 56 were re-read on the full-resolution Riksarkivet IIIF images in two passes
+  (line crops, then the target groups set beside reference figures of the same hand). The hand writes 4 closed with a
+  cross-bar (4, 14, 40, 48 in 'vorkombt', 24 in 'aber' on 55) and 7 open like a y (17 = a throughout, 27 in 'vorath',
+  78 in 'aufschlagen').
+- Four groups first transcribed with a 4 carry the open 7: 55 line 2 **78** (not 48), 56 line 3 **27** (not 24) and
+  **79** (not 49), 56 line 6 **27** (not 24). The key then gives 'gewaltig', 'wird', 'hinweck' and 'regierung' letter
+  for letter: four probable words become sure. transcription.txt and decryption.txt are corrected; reading.md lists the
+  figures looked at and left unchanged.
+- 'aber' (56 line 4): the figure looks more like a closed 4 (24 = b) than 29, but a ligature flourish crosses it, so
+  the word goes from restored to probable, not to sure.
+- Count: 72/89 sure = 80.9% (image 55 35/40, image 56 37/49); sure + probable 80/89 = 89.9%.
+- Ceiling: the 9 words on restored values (46, 51, 43=l, Sd, Sf, 10=c) have clear figures that the glosses of 57 do not
+  value. The numbering supports 46 = w, 51 = r and 43 = l (rows of about 24: 22, 46, 69, 93 = w; 3, 27, 51, 74 = r;
+  19, 43, 66, 90 = l; key.tsv has 43 = m from the glosses), but that is a conjecture about the key and is not counted.
+  With the key as it stands, at most 80 of 89 words (89.9%) can be sure.
+- Prior work re-checked on 17 Nov 2026: no other pull request or target touches this letter.
+
