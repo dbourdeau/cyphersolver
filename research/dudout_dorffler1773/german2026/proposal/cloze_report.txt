@@ -1,0 +1,47 @@
+HIDDEN (validation): tested 62
+  A and B agree: 58/62 = 0.94
+  precision among agreeing: 53/58 = 0.91
+  recall (correct and agree / tested): 53/62 = 0.85
+  precision both high: 53/58 = 0.91 | otherwise: 0/0
+  wrong but agreeing:
+    178 true=ih got=ihr (A=ihr B=ihr)
+    210 true=wider got=viel (A=viel B=viel)
+    223 true=wi got=wie (A=wie B=wie)
+    226 true=wer got=wur (A=wur B=wur)
+    332 true=PREUSSI got=preussen (A=preussen B=preussen)
+
+UNKNOWN: tested 32, agreed 15
+  accepted: n, uses, value, a, b, confidences
+    148	6	an	an	an	Medium/high
+    175	6	heit	heit	heit	high/high
+    191	10	mich	mich	mich	high/high
+    201	17	ohn	ohne	ohn	high/high
+    213	20	uber	uber	uber	high/high
+    230	9	zwischen	zwischen	zwischen	high/high
+    233	4	zwey	zwey	zwey	high/high
+    234	4	drey	drey	drey	high/high
+    253	7	alliance	alliance	alliance	high/high
+    254	4	ambassade	ambassade	ambassade	high/high
+    269	21	churfurst	churfurst	churfurst	high/high
+    275	4	conjun	conjun	conjun	high/high
+    307	4	general	general	general	high/high
+    323	6	moscau	moscau	moscau	high/high
+    336	5	schwed	schwed	schwed	high/high
+  not agreed:
+    160	5	A=doch	B=diese
+    161	4	A=dies	B=UNKNOWN
+    168	5	A=eur	B=fried
+    172	9	A=UNKNOWN	B=re
+    182	6	A=key	B=UNKNOWN
+    186	6	A=lass	B=UNKNOWN
+    187	9	A=UNKNOWN	B=UNKNOWN
+    189	4	A=man	B=UNKNOWN
+    198	4	A=nur	B=nun
+    200	23	A=UNKNOWN	B=UNKNOWN
+    202	5	A=sch	B= UNKNOWN
+    217	6	A=uns	B=unters
+    229	4	A=ein	B=so
+    239	4	A=wol	B=acht
+    295	44	A=eure koenigliche majestaet	B=euer kayserlich majestaet
+    300	6	A=funfhundert	B=funfzig
+    312	6	A=herzog	B=hertzog
