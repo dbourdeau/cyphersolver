@@ -1,7 +1,7 @@
 # este1585 - reading of BnF, fr. 16041, f. 272 v (Gallica btv1b9060909s, view 553): the cipher part of the page, continuation of Cardinal Luigi d'Este's letter to Villeroy (ff. 271-273, April 1584)
 
 **Read in part** (17 Nov 2026, after the single pre-registered measurement of this page, which **failed** both bars fixed before, see validation.txt section 7):
-**120 words: 73 certain, 19 probable, 1 restored, 27 unresolved.** Strict (certain only, the README bar): **73/120 = 60.8%**; certain + probable: 92/120 = 76.7%. Read in part.
+**120 words: 79 certain, 13 probable, 1 restored, 27 unresolved** (18 Nov 2026, after a blind shape check, below; was 73 certain, 19 probable). Strict (certain only, the README bar): **79/120 = 65.8%** (was 60.8%); certain + probable: 92/120 = 76.7%. Read in part.
 The page continues f. 272 r ("... que ce negoce s'en") and runs on to f. 273 r. The clear lines at the foot of the page and the interlinear glosses were not read for this reading. Images: source gallica.bnf.fr / BnF (not reproduced here).
 
 Conventions as in `reading-f16041-272r.md`: bare word = certain (it comes out exactly from `decryption-f16041-272v.txt`, key K-C05 as frozen, up to u/v, i/j, apostrophes, doubled consonants and word spacing);
@@ -14,13 +14,16 @@ Corrections found while reading (after the measurement; not part of the test; ev
 
 ## Word list (as counted)
 
-{alloict} ‹re› {refroidissant} ‹n› qu'autrement et ne croire com il se {dict} ‹l› feust pour {conclud} ‹nei› que icele ‹ddn› passant par ‹l?› ‹fe[fait]sti› aler cest ‹a?ue› Alemaigne de plus ie le recherchai d'en dire {s'il} ne {lui} estoict rien escript ‹d?› et que ce Roy demandast des ‹tre[fait]› {vicaire} le empire en ‹?› ‹comaut?› {estois} ‹iai› ‹ldui› ‹d› {recherchoict} me respondict {de} ne scavoir {aucune} chose et le {plus} ‹l?› regardoict a {l'Empereur} seulement a ‹d?uer› ce tiltre mais ‹d› estoict [necessaire] ‹dentreuien› ‹en› encores avec ‹du??de› tous ‹d› eslecteurs a ‹adt› que ‹ste› ‹d› respect {il} croict que c'estoict chose iamais {pouvoict} {reussir} et le vous {ai} {bien} {voulu} escrire aussi afin que de ‹dics› au Roy ‹a›
+{alloict} ‹re› {refroidissant} ‹n› qu'autrement et ne croire com il se {dict} ‹l› feust pour conclud ‹nei› que icele ‹ddn› passant par ‹l?› ‹fe[fait]sti› aler cest ‹a?ue› Alemaigne de plus ie le recherchai d'en dire s'il ne lui estoict rien escript ‹d?› et que ce Roy demandast des ‹tre[fait]› {vicaire} le empire en ‹?› ‹comaut?› {estois} ‹iai› ‹ldui› ‹d› {recherchoict} me respondict {de} ne scavoir {aucune} chose et le plus ‹l?› regardoict a l'Empereur seulement a ‹d?uer› ce tiltre mais ‹d› estoict [necessaire] ‹dentreuien› ‹en› encores avec ‹du??de› tous ‹d› eslecteurs a ‹adt› que ‹ste› ‹d› respect {il} croict que c'estoict chose iamais {pouvoict} {reussir} et le vous {ai} {bien} voulu escrire aussi afin que de ‹dics› au Roy ‹a›
 
+## Made certain by a blind shape check (18 Nov 2026)
+Brice Dudout answered a blind sheet on 17 Nov 2026 (one sign boxed per question, two or three candidate shapes shown as crops of sure words of the same hand, no reading shown; control questions on sure words, all answered as expected). Where he chose the shape the reading needs, the word is now counted certain:
+- o with a stem (dl = l), not o: conclud (L03), s'il and lui (L06), plus (L10), l'Empereur (L11), voulu (L17).
 ## Probable words (why)
 - {alloict} "alu[qui]ct" (new3 = o, Z7 not [qui] here); {refroidissant} "refruidisant" (new3 = o); {dict} "di / ict" over the line break (one i too many);
-  {conclud} "concdud"; {s'il} "sid"; {lui} "dui"; {vicaire} "nvA2-icaire"; {estois} after an unresolved group; {recherchoict} "rscherchoict" (one s for e);
-  {de} "le" before "ne scavoir"; {aucune} "audcune"; {plus} "pdus"; {l'Empereur} "dempereur"; {il} "id"; {pouvoict} "pou-dlx-oict"; {reussir} "reuiir";
-  {ai} {bien} "li ien" (b missing); {voulu} "uoudu".
+  {vicaire} "nvA2-icaire"; {estois} after an unresolved group; {recherchoict} "rscherchoict" (one s for e);
+  {de} "le" before "ne scavoir"; {aucune} "audcune"; {il} "id"; {pouvoict} "pou-dlx-oict"; {reussir} "reuiir";
+  {ai} {bien} "li ien" (b missing).
 ## Restored
 [necessaire] "necesa" cut at the gutter.
 ## Unresolved

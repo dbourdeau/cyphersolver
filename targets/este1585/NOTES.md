@@ -218,15 +218,17 @@ Done on the files as submitted (three commits rebased on our integration of PR #
 - Key K-C04 (K-C03.1 + g8 = m and new3 = u, learned on f. 271 after its test) was pre-registered against this page and measured once:
   **M5 0.414 vs 0.097 (gap 0.317): partial** (bar 0.45 / +0.30; the stricter bar asked for in the brief, 0.85 of the lexical ceiling, was not met either:
   R = 0.65). Two blind transcription passes by AI sub-agents, 92 differences settled by written rules before decoding (validation.txt section 6).
-- Read **in part** (`reading-f16041-272r.md`, `translation-f16041-272r.md`): 179 words, **114 certain = 63.7% strict**, 44 probable, 21 unresolved
+- Read **in part** (`reading-f16041-272r.md`, `translation-f16041-272r.md`): 179 words, **125 certain = 69.8% strict** after the blind shape check of 18 Nov 2026 (114 = 63.7% before), 33 probable, 21 unresolved
   (certain + probable 88.3%). After the test the reading found g8 = e on this page (not m) and several = transcribed for // (t): these are reading
   values only, and every word that needs one is counted probable.
 - Content: the writer fears his words will be "thrown to the wind" with a man "so cold"; the King of Spain, beyond his eighty galleys, wants two hundred
   and has ordered work "at Naples, Sicily" and wherever timber is to be had; Cardinal Madruzzo ("Madrusi"), brother of the Emperor's ambassador, asked about
   "the marriage of him and the daughter of Spain", had word that the business... (continues on f. 272 v). The match is most likely Savoy's with the
   Infanta Catalina Micaela (married March 1585): an inference, not on the page.
-- Open: f. 271 r and f. 273 r of the same letter (images at full resolution on the contributor's disk, not transcribed); a blind shape sheet
-  on the = / // and o / o-with-stem signs of f. 272 r would turn several probable words into certain ones. f. 272 v: see below.
+- Blind shape check (18 Nov 2026): Brice Dudout answered a sheet of 25 boxed signs (4 controls on sure words, all as expected); // (t) and
+  o-with-stem (l) confirmed in 11 words of f. 272 r and 6 of f. 272 v, now certain; the small looped sign (g8) in maniere, repos, frere and "et" (L23)
+  matched neither candidate shape for him, so those words stay probable (`reading-f16041-272r.md`, `reading-f16041-272v.md`).
+- Open: f. 271 r and f. 273 r of the same letter (images at full resolution on the contributor's disk, not transcribed). f. 272 v: see below.
 
 ## BnF fr. 16041 f. 272 v: key K-C05 tested once on a new page, failed by 0.004 (17 Nov 2026, evening)
 
@@ -236,7 +238,7 @@ Done on the files as submitted (three commits rebased on our integration of PR #
 - Interlinear glosses masked on every image used; two blind transcription passes (AI sub-agents), 60 differences settled by a third blind AI sub-agent
   with written shape rules; 522 signs frozen before decoding. One measurement: **M5 0.391 vs 0.095 for the best control, gap 0.296: FAILED**
   (bar 0.45 / +0.30 missed by 0.004 on the gap; R = 0.62 against 0.85). The key still ranks first of 201; the page decodes into French that reads in places.
-- Read **in part** (`reading-f16041-272v.md`, `translation-f16041-272v.md`): 120 words, **73 certain = 60.8% strict**, 19 probable, 1 restored,
+- Read **in part** (`reading-f16041-272v.md`, `translation-f16041-272v.md`): 120 words, **79 certain = 65.8% strict** after the blind shape check of 18 Nov 2026 (73 = 60.8% before), 13 probable, 1 restored,
   27 unresolved (certain + probable 76.7%). After the test the reading found new3 = o here and, again, o transcribed for o-with-stem in about ten words.
 - Content: the business (the marriage of f. 272 r) "was cooling off"; asked whether the King had asked to be vicar of the Empire ("vicaire de l'Empire"),
   he answered that he knew nothing, that it looked to the Emperor alone, but that the Electors would have to be dealt with, and that it could never succeed.
