@@ -63,3 +63,9 @@ reader, so it is not fully independent. No measure was run (the letter has no cl
 ```
 python3 -I sysA_1616/letter90/decode_plain.py dudout/system_a/key_c01.json sysA_1616/letter90/c90R-93L_merged.txt
 ```
+
+## Addendum, 17 Nov 2026 (later): re-read with key_c02
+`../keyc02/key_c02.json` (324 groups) knows 1,492 of the 1,585 groups (94 %). Decode: `decode_90R-93L_key_c02.txt`;
+tagged reading: `reading_90R-93L_key_c02_tagged.txt`: 698 sure + 23 probable of about 895 words, strict share **0.78**
+(0.435 with key_c01). Still "read in part" under the 95 % rule. Caution: about 48 key_c02 values were read by sense in this
+letter, and key_c02 failed its pre-registered bar on 20/31 Aug 1764 (CA 0.831 < 0.85; `../aug1764/`).
