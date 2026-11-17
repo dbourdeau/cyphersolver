@@ -328,6 +328,10 @@ three are data files you edit by hand; each is a few lines, and skipping one lea
   `python docs/_check_profile.py <folder>` must print `result: valid`.
   If the project recovered the key, run `python docs/_validate.py <folder> --write` (or `--na "reason"`); the checker
   requires a validation verdict on every recovered key.
+  Then the key replay: write `targets/<folder>/replay.py` (the adapter described at the top of `docs/_replay.py`; `targets/memoire1560/replay.py` is the model for a divided cipher, `targets/navarre1586/replay.py` for figures run on) and run
+  `python docs/_replay.py <folder>`. It applies the key to the transcription and lists in `replay.tsv` every word where the reading is not the key's output. The
+  checker fails a folder that has a replay with unmarked differences: correct the key or the transcription, or mark the emendation in the reading with [ ].
+  Give the page the replay's exact rate, not a rate measured another way.
 - `decode_updates/queue.json` (targets read from DECODE records): queue the DECODE edits so they can be sent once
   the account has write access. `python decode_updates/queue.py add <folder>` pre-fills the records from the
   profile and their current DECODE status; fill each TODO: `proposed` status (Decrypted only if the whole letter

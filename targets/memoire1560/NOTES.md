@@ -11,8 +11,10 @@ Catalogue 276. BnF fr. 3157 ("Recueil de lettres et de pièces originales", Mont
 gentleman of the Agenais, a neighbour of the sieur de Fumel, dated 12 December 1560, a week after the death of
 François II. It is entirely in cipher, ten pages, 1,715 cipher words. It had no decipherment and no known key.
 The cipher was broken here from the ciphertext alone: a homophonic substitution with two-stroke units and four
-code words. The reading covers 1,700 of the 1,715 cipher words (99.1%; 98.9% before the retry resolved 3 more). 108 words are read with a marked
-emendation, and 15 scattered words are left unread.
+code words. The reading covers 1,700 of the 1,715 cipher words (99.1%; 98.9% before the retry resolved 3 more). By the key replay of
+16 Nov 2026, 1,201 of the 1,715 cipher words (70.0%) are the key's exact output, 130 more differ only by i/y or a declared
+second value, 354 are read with a marked emendation, and 16 are left unread (the earlier figure of 108 emended words
+counted only the marks then in the reading files).
 
 ## Where it is
 
@@ -32,8 +34,9 @@ emendation, and 15 scattered words are left unread.
 - **Homophonic.** e = x, ff; n = r (a smaller, rounder form of x: the main transcription trap); s = m, n, nn, 3;
   r = s, S, s3; i = i, D, y, e; u/v = zo, io, d; and so on.
 - **Two-stroke units.** zo = u, pp = m, io = u, s3 = r, ff = e, :. = o, nn = s, lz = d.
-- **Polyphonic signs.** δ (d) stands for u/v, b and g (gouvernement, bien, langaiges). ‡ (D) is i and sometimes a
-  (avecques, abus). c is l and sometimes a.
+- **Polyphonic signs.** δ (d) stands for g, b and u/v (langaiges, bien, gouvernement): g 93 times, b 62, u 5 in the
+  reading (key.txt listed it as u until 16 Nov 2026). ‡ (D) is i and sometimes a (avecques, abus). c is l and sometimes a.
+  3 is s, and x at the end of a word (deux, ceulx). These second values are in the third column of `key.txt`.
 - **Whole-word codes.** Z = pour (also used as the syllable, "y pourvoient"); 4 = roy; c+, i+, e+ = et;
   F, g = sieur. There are no name codes: every person and place is spelt out.
 - **Key.** `key.txt`, read by `decrypt.py`; the mechanical decrypt is in `decrypt_lines.txt`.
@@ -130,6 +133,57 @@ spelling the word list lacks), hole rate 0.073; the 108 bracketed emendations co
 Kept read (grade B); `outcome.texts[0]` now names the two files as its `reading`. It rests on the key broken here
 and the images, with no contemporary decipherment or copy. `READING.md` is a normalised editorial version, not
 the reading that is scored.
+
+## Key replay, 16 Nov 2026
+
+Cécile Pierrot (Le Monde, 16 Nov 2026) applied the posted key to the posted transcription and got 67% of the words of the
+reading, 77% allowing polyphony, with one sign carrying seven values and the adjustments not mentioned. `docs/_replay.py`
+(adapter `replay.py`) repeats the test: before any change, 1,106 of 1,715 cipher words exact (64.5%), 74.8% with the
+polyphony these notes declared, 76 words marked and 340 differing with no mark. Her finding stands.
+
+What was done:
+- **Key.** `key.txt` gave δ (d) as u; the reading has it as g 93 times, b 62, u 5. The row is now `d g`, with b and u
+  declared as second values; a for D, a for c and x for 3 are declared too (third column). `decrypt_lines.txt` regenerated.
+- **Reading.** `mark_emendations.py` bracketed every letter the key does not give and every word where a sign is left
+  out, and wrote the seven cipher words the reading leaves out in braces. No letter of the reading was changed.
+- **Result after marking** (before the image check): 1,175 of 1,715 cipher words exact (68.5%), 76.1% with i/y and the declared
+  second values, 394 emended and marked, 16 unread, no unmarked difference.
+
+### Image check of the x emendations, 16 Nov 2026
+
+The ten pages were fetched again (openapi.bnf.fr IIIF, full size) and the 75 places where the sign x (e) is read as
+another letter were looked at on 2x crops, line by line. The small bold n-sign (r) and the wide e-sign (x) can be told
+apart at that size, and so can the sign with a hanging loop (y).
+
+- **48 words corrected in the transcription**, in two passes (`transcription/corrections_<fol>.tsv`, dated rows):
+  16 x → r (n), among them ung (twice), predicant, grandeur, personnes, environ, disans, n'irriter, langaiges (twice),
+  quelcun, l'advenir, n'ause, signee; 16 x → y (i): Despuis, puis (twice), parti, cy devant (twice), suite, n'y, Guyenne
+  (twice), royaulme, moyens, envoyent, voye, ayant, and the fourth sign of Clairac; x → i in qu'il (156r.21, a single
+  minim); two transpositions (152v.26 and 155v.02, rx = ne); 152v.28 `+Hx…` is `+lz…`, the unit lz (d), so the word is
+  adverti as the key gives it.
+- **A sign the transcription did not have.** An X whose lower-left stroke runs below the line and curls to the left stands
+  where the reading has o: ont (152v.19, 154v.04), ou, Caulmont, sont, moyen, versations, Lioux, journellement, bonne,
+  fondement, consequance, occasions. It had been transcribed `3x` or `x`. It is now code `G` (`SIGNS.md`), `G o` in
+  `key.txt`. Thirteen places changed, each seen on the image. `3x` elsewhere is not all this sign (in ce, executer it is
+  s/x and e), so the other `3x` were left.
+- **Two words of the reading changed**, both to what the key now gives. 152v.25 `x:xQ` is `r:rQ`, both signs the n-sign:
+  "Lesdicts de Caulmont n'ont seigneurie, place et chasteau [..] [..] n'ayent de ministres" (was [ont]). 155v.09 `Dx+rQ`
+  is `Dy+rQ`: "ayant lesdicts rebelles l'auctorité" (was [estant]). `reading_en.md` follows both.
+- **Confirmed as written, emendation stands** (a plain wide x on the image): 152r.03 couru, 152r.06 and .07 il, 152r.08
+  qui, 152r.21 profit, 152v.17 pourroit, 153r.24 discouru, 153r.26 solliciter, 154r.27 lictiere, 154r.28 cependant,
+  154v.12 ayants, 154v.20 and 155r.25 qui.
+- **Seen and left, doubtful.** 152r.09 and 154v.01 (a tail that may be the loop), 152r.19, 152v.10, 153r.28, 153v.21,
+  154v.02, 154v.12 (susdicts), 154v.23, 155v.15 (a large X whose foot is not clear), 156r.20 (the line begins with the
+  sign 4 and a looped sign before `c+`; `D 7xi+` does not describe it, and Z is followed by signs the transcription
+  lacks), 156v.02 (`ff` there is two f, cc, not the unit ff). 155v.16: the first long word and the last word could not be
+  made out on the strip.
+- **Not looked at.** The other emended signs (δ read as i, and 3, z, f read as other letters).
+- **Result** (`replay.json`, `replay.tsv`): 1,201 of 1,715 cipher words exact (70.0%), 72.0% with i/y, 78.4% with the declared
+  second values; 354 words (20.6%) emended, all marked; 16 unread; no unmarked difference. By sign units 91.7% exact. x is
+  still read with more than one value in many places.
+
+Open after this: about one word in five still rests on an emendation. The 99.1% above is the share of cipher words given
+a reading, not the share the key produces.
 
 ## Remaining gaps
 

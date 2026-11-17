@@ -116,6 +116,41 @@ An OCR search can miss a page, so "not found" means not found by that search. OR
 not checked. We know of no modern decipherment of these letter-book passages; the catalogue entry's own check
 (known.py, web search) found none.
 
+**16 Nov 2026, print check for the key RALLY TO THE FRONT (Andrew Beling, with AI agents; not checked by a
+person). Result: negative in the two Gaddy works read in full on their Civil War pages; Kahn not seen.**
+- Kahn, *The Codebreakers* (New York: Macmillan, 1967; revised edition 1996): on the Internet Archive for controlled
+  lending only, not borrowed, so no page was seen. Its text is in the archive's
+  full-text index: a search for "Manchester Bluff" with "Complete Victory" returns nine copies of the book (for example
+  `codebreakerssto00kahn`, 1967, and `codebreakersstor0000kahn_k4s3`, 1996), snippet "the Navy the two known
+  keywords—MANCHESTER BLUFF and COMPLETE VICTORY". The search for "rally to the front" with "Manchester Bluff" returns
+  no copy of Kahn and nothing in any key list; its only hits are two copies of Karen Abbott, *Liar, Temptress, Soldier,
+  Spy* (2014), where the phrase was not seen in context. Page of Kahn's key passage: not given by the index, not seen.
+- The standard key lists in the same index (83 items with both known keys: Friedman's lectures, Plum 1882, the
+  Official Records of the Union and Confederate Navies, the *Century* 1882, Bauer's *Secret History*, Dooley 2022 and others) give
+  COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION and, in some, IN GOD WE TRUST, "Interest" or "My Old Kentucky
+  Home"; none of them also has "rally to the front". Two web searches found nothing either.
+- Gaddy, read: "Internal Struggle: The Civil War", in Ralph E.
+  Weber, *Masked Dispatches* (National Security Agency, Center for Cryptologic History, 2013 edition), pp. 88-103, read
+  in full, with Gaddy's foreword (pp. v-vii), his chapters 14 (pp. 78-82) and 23 (pp. 188-191), the introduction
+  (pp. ix-xv) and every other Civil War passage in the volume; the volume is typeset, so its text layer is the printed
+  text. "Rochford's Cipher" (agency reprint, pp. 57-70), read in full. Neither work names any Confederate Vigenère key:
+  not RALLY TO THE FRONT nor a near form, and not COMPLETE VICTORY, MANCHESTER BLUFF or COME RETRIBUTION either.
+  The only key words are VICKSBURGH (sample) and EMILY NORTH, the keywords of a rotating grille used by Confederate navy
+  agents in Britain in 1863 (Rochford pp. 60-61, 66). Gaddy says the Confederates adopted the Vigenère in 1862, kept
+  plaintext word length, mixed clear and cipher, and that Southern telegraphy garbled the cryptograms (pp. 90-91); he
+  says nothing on Taylor's department, on key changes or on April 1865 messages. Not seen: Tidwell, Hall and Gaddy,
+  *Come Retribution* (1988), and *The Signal and Secret Service of the Confederate States* (1986 reprint, Gaddy's
+  introduction), both lending only.
+- VICKSBURGH and EMILY NORTH were tried as Vigenère keys (standard, Beaufort and variant Beaufort, at every starting
+  place) on the nine unread words of the upper 11 April telegram and on every cipher stream of this folder: no English,
+  and no score above the best of 1,000 random keys of the same length. The Library of Congress folder Gaddy used is
+  online: Confederate States of America Records (the "Pickett Papers", MSS16550), Department of State, Box 9, microfilm
+  reel 9, "Keys to the Confederate ciphers, undated", images 496-507 of https://www.loc.gov/item/mss16550009. It holds
+  the Rochford grille instructions (key word VICKSBURGH), two grille dispatches whose key-letter lines use only the
+  letters of EMILY NORTH, and four printed blank Vigenère squares: no Vigenère key phrase and no Vigenère ciphertext,
+  so nothing there bears on the nine unread words.
+- A full-text "not found" is not proof of absence (OCR can miss a phrase). Still open: Kahn's pages, on paper.
+
 ## Proposed catalogue changes (entry 681)
 
 - status: four telegrams read in full from the images with COME RETRIBUTION (key over cipher letters only, offset 0

@@ -144,7 +144,8 @@ method `not solved` (by us), as for other targets where the project's own attemp
   other 4, one agrees with our arbitrated transcription (C19-03 = M23x2) and three do not (B56-01, C18-03, F1-09).
   So, at this image resolution, the shape classes of our model-made transcription are not stable on the doubtful
   signs; this is one reason the measure failed. Nothing was re-measured (the portion is spent). The record is
-  `dudout/results/RELECTURE-BRICE-PLANCHE.md`. Earlier sessions: Claude Opus (C01–C04, C06–C07, C10–C12), Claude Fable 5.1 (C05 re-reading, same
+  `dudout/results/RELECTURE-BRICE-PLANCHE.md`.
+- **Earlier sessions.** Claude Opus (C01–C04, C06–C07, C10–C12), Claude Fable 5.1 (C05 re-reading, same
   session, partly dependent), and Codex (C08–C09 re-readings, as recorded in the project log). The C13 API runs cost
   1.19 USD.
 - **Burnt portions.** Every passage measured or read in C03–C13 is spent and cannot be used for a new test of this
