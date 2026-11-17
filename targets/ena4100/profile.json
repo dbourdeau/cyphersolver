@@ -1,0 +1,151 @@
+{
+ "schema_version": 1,
+ "target": "ena4100",
+ "title": "Secret-language passage in a Judaeo-Arabic letter from Qus (JTS ENA 4100.7b, PGP 11951)",
+ "documents": [
+  {
+   "id": "ena4100_7b_recto",
+   "shelfmark": "Jewish Theological Seminary Library, ENA 4100.7b, recto (Princeton Geniza Project 11951)",
+   "date": "undated",
+   "year": 1200,
+   "country": "Egypt",
+   "route": "Qus -> Fustat (presumed)",
+   "language": "unknown",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No plaintext known; PGP shows no transcription."
+   },
+   "length": {
+    "tokens": 32,
+    "distinct": 28,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "JTS image via Princeton IIIF, 5428 x 7230 px, read from full-resolution crops on 17 Nov 2026",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Counts are words (32 words, 28 distinct, about 127 letters). First reading, not reliable: in this hand tav, he and resh, shin and ayin, and resh, dalet and final kaf are not safely separable, and the model could not read the clear lines fluently either. Year 1200 is the catalogue's placeholder for an undated fragment."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Six lines in ordinary Hebrew letters inside a clear Judaeo-Arabic letter; about 70% of the words begin with alef, and the Arabic article and the particle an appear to stand in clear around replaced content words.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "doubled_letters": "unknown",
+  "sibling_key": "None known; no second fragment in the same system was found in the 15 Nov 2026 sweep.",
+  "notes": "On the first reading lamed, resh and gimel are each near 10% of the letters and tav, shin, pe, tsade, qof are absent or single; this depends on the transcription."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "PGP 11951 says needs decipherment; Elbaum, Cambridge Genizah blog 2022, calls it incomprehensible; nothing in DECODE, Cryptiana or by web search (15 Nov 2026), PGP page re-read 17 Nov 2026",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Gave the catalogue link and asked for a solution; no other intervention.",
+  "tools": [
+   "image crops (PIL)"
+  ],
+  "models": [
+   "claude-fable-5-2"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-17",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Re-read the PGP record and the catalogue's prior-art block of 15 Nov 2026.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Read the secret lines (second half of line 7 to line 12) from full-resolution crops; calibrated letter shapes on the clear lines. Result is a first reading with many uncertain letters.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis"
+   ],
+   "what": "Initial letters (22 of 31 words begin with alef), recurring al and an in the positions of Arabic function words, five words of the shape alef-vav plus three letters plus one, letter counts unlike Arabic.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "manual reconstruction"
+   ],
+   "what": "Word games tried by hand: each word reversed, whole lines reversed, first letter replaced by alef and moved to the end, alef as a null.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Another language in Hebrew letters (Coptic, Berber, Nubian, Greek, Persian, Turkic, Romance, Tulu): single-word matches only, no phrase; the near absence of t, s, sh, p fits none.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Ordinary colloquial Judaeo-Arabic misread by the model: not excluded for single phrases, not confirmed.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "One session from the image alone: a first transcription and hand tests of word-game and other-language hypotheses gave no reading.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "grades": "unknown",
+  "verification": [
+   "none"
+  ],
+  "notes": "In progress. The transcription is the bottleneck; see NOTES.md, Escalation."
+ }
+}
