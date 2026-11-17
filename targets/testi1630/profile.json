@@ -250,6 +250,99 @@
     "notes": "One key-free reader; 17 corrections on enlarged strips, logged. A third hand. Read provisionally: B count 147 of 154, no margin."
    },
    "pages": 3
+  },
+  {
+   "id": "f53",
+   "read": "read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera F, Francesco I, duca di Modena, c. 53r",
+   "date": "22 July 1634",
+   "year": 1634,
+   "country": "Italy",
+   "route": "Modena -> Paolo Francesco Forni, Florence",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No clear copy in the file."
+   },
+   "length": {
+    "tokens": 566,
+    "unit": "symbols",
+    "measured": false,
+    "file": "dudout/forni/transcription_c53r_1634-07-22.txt",
+    "distinct": 29
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico IIIF images, full resolution",
+    "image_quality": "good",
+    "notes": "Two passes, the second without the first, arbitrated on the image (dudout/forni). Held-out text of the 17 Nov 2026 measure; counted by script, not by _check_profile --measure."
+   },
+   "pages": 1
+  },
+  {
+   "id": "f54",
+   "read": "read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera F, Francesco I, duca di Modena, c. 54r",
+   "date": "25 July 1634",
+   "year": 1634,
+   "country": "Italy",
+   "route": "Paolo Francesco Forni, Florence -> Modena",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate paragraph"
+    ],
+    "source": "A period clear rendering in another hand fills the head of c. 54r."
+   },
+   "length": {
+    "tokens": 435,
+    "unit": "symbols",
+    "measured": false,
+    "file": "dudout/forni/transcription_c54r_1634-07-25.txt",
+    "distinct": 44
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico IIIF images, full resolution",
+    "image_quality": "good",
+    "notes": "Two passes (dudout/forni). Training text of key_forni.tsv."
+   },
+   "pages": 1
+  },
+  {
+   "id": "f72",
+   "read": "read",
+   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori, Lettera F, Francesco I, duca di Modena, c. 72r",
+   "date": "1 February 1636",
+   "year": 1636,
+   "country": "Italy",
+   "route": "Modena -> Paolo Francesco Forni",
+   "language": "Italian",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No clear copy in the file."
+   },
+   "length": {
+    "tokens": 81,
+    "unit": "symbols",
+    "measured": false,
+    "file": "dudout/forni/transcription_c72r_1636-02-01.txt",
+    "distinct": 20
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Lodovico IIIF images, full resolution",
+    "image_quality": "good",
+    "notes": "Three-line cipher postscript with word gaps; one pass, after the measure."
+   },
+   "pages": 1
   }
  ],
  "system": {
@@ -373,6 +466,19 @@
    "kind": "literature search",
    "what": "Doglio, the Reggio inventory, the 1843 Memorie and Raviola 2014 identified but not opened.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "crib",
+   "technique": ["plaintext matching", "manual reconstruction"],
+   "what": "Forni's reply c. 54r aligned with the period clear rendering at the head of the page and the clear words between the cipher passages; key_forni.tsv (about 37 signs, homophonic, dots or caret double a letter) built from c. 54r alone and frozen by SHA-256 (dudout, dudout/forni).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Preregistered held-out test on all the cipher of c. 53r (566 signs, two blind passes): lexical coverage with Doglio's Testi letters as lexicon, car 0.884 against the best of 200 permuted keys 0.422 (margin 0.462); thresholds 0.85 and +0.30 met. c. 72r then decoded (dudout/forni/MEASURE.txt).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -414,6 +520,13 @@
     "note": "two independent AI readers; no human palaeographer",
     "date": "2026-11-03"
    }
+,
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Forni cipher (cc. 53, 54, 72): key from c. 54r, preregistered held-out test on c. 53r (0.884 vs 0.422), the three letters read; see dudout/forni/README.md",
+    "date": "2026-11-17"
+   }
   ],
   "gaps": [
    {
@@ -422,14 +535,9 @@
     "detail": "The images are good and c. 15 covers them, so this is a transcription job."
    },
    {
-    "item": "c. 53 (22 Jul 1634, to Paolo Francesco Forni), Lettera F, Francesco I, duca di Modena",
-    "blocker": "no-key-material",
-    "detail": "A separate key; annealing on a rough copy gave no Italian; a full-resolution copy is the next step."
-   },
-   {
-    "item": "c. 54 (25 Jul 1634, Forni to the duke) and c. 72 (1 Feb 1636, Forni), Lettera F, Francesco I, duca di Modena",
-    "blocker": "not-attempted",
-    "detail": "They may share the c. 53 table."
+    "item": "Forni letters c. 53r, c. 54r, c. 72r: words left open",
+    "blocker": "too-short",
+    "detail": "Read 17 Nov 2026 (dudout/forni). Open: [diuete] and the sign H at the end of c. 53r, [dimorato] and the name [qurequi] in c. 54r; each occurs once."
    },
    {
     "item": "c. 4 (25 Oct 1642) and cc. 5-6 (25 Oct 1647), to Francesco Ottonelli, Lettera F, Francesco I, duca di Modena",
@@ -559,6 +667,64 @@
     "read_share": 0.955,
     "summary": "French and Savoyard troops enter Modenese land while their envoys are still in the city. The duke will show his front and hold the main strongholds. Postscripts: His Majesty must attend to Italy; 200,000 scudi have reached the legate at Bologna, and Cardinal Antonio Barberini is expected there.",
     "note": "Words 154: A 153, B 147, C 136. Read, provisional: no margin on B, and C is 88.3%."
+   }
+,
+   {
+    "doc": "f53",
+    "label": "c. 53r, 22 Jul 1634",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for dudout; a model reading, not a person), independent of the solver: given only the raw decryptions, blind to the solver's reading",
+     "date": "2026-11-17",
+     "note": "Coherent instructions to Forni on the Cioli matter; 8 sign corrections, one doubtful verb ([diuete]) and a truncated end (sign H). Words 125: sure 115, probable 8, irresolved 2."
+    },
+    "transcription": "dudout/forni/transcription_c53r_1634-07-22.txt",
+    "decryption": "dudout/forni/decryption_c53r_1634-07-22.txt",
+    "reading": "dudout/forni/reading_c53r_1634-07-22.md",
+    "translation": "dudout/forni/translation_c53r_1634-07-22.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.984,
+    "summary": "Secretary Cioli sounded Forni on an unnamed matter. The duke approves Forni's answer that he had no instructions, tells him to say the same again and refer to Modena, and not to raise the subject himself.",
+    "note": "Held-out text of the measure. Words 125, 123 read by sense (blind reviewer's count)."
+   },
+   {
+    "doc": "f54",
+    "label": "c. 54r, 25 Jul 1634 (Forni)",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for dudout; a model reading, not a person), independent of the solver: given only the raw decryptions, blind to the solver's reading",
+     "date": "2026-11-17",
+     "note": "Coherent reply; 12 small corrections, a name ([qurequi]) and one doubtful verb ([dimorato]). Words 130: sure 116, probable 12, irresolved 2."
+    },
+    "transcription": "dudout/forni/transcription_c54r_1634-07-25.txt",
+    "decryption": "dudout/forni/decryption_c54r_1634-07-25.txt",
+    "reading": "dudout/forni/reading_c54r_1634-07-25.md",
+    "translation": "dudout/forni/translation_c54r_1634-07-25.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 0.985,
+    "summary": "Forni has told no one of the Cioli business and would not have entered it without orders; letters in his own hand are known only to him and the person he dealt with.",
+    "note": "Training text of key_forni.tsv; a period clear rendering is on the page. Words 130, 128 read by sense."
+   },
+   {
+    "doc": "f72",
+    "label": "c. 72r, 1 Feb 1636, postscript",
+    "reading_review": {
+     "grade": "B",
+     "by": "AI language-model agent (for dudout; a model reading, not a person), independent of the solver: given only the raw decryptions, blind to the solver's reading",
+     "date": "2026-11-17",
+     "note": "Short coherent fragment; 4 corrections in 16 words."
+    },
+    "transcription": "dudout/forni/transcription_c72r_1636-02-01.txt",
+    "decryption": "dudout/forni/decryption_c72r_1636-02-01.txt",
+    "reading": "dudout/forni/reading_c72r_1636-02-01.md",
+    "translation": "dudout/forni/reading_c72r_1636-02-01.md",
+    "language": "it",
+    "state": "read",
+    "read_share": 1.0,
+    "summary": "Forni is to report His Highness's mind in detail, using the cipher where needed.",
+    "note": "Decoded after the measure. Words 16. The translation is in the reading file."
    }
   ],
   "key_file": "key.tsv",
