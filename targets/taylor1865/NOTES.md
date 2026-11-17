@@ -143,9 +143,12 @@ person). Result: negative in the two Gaddy works read in full on their Civil War
   introduction), both lending only.
 - VICKSBURGH and EMILY NORTH were tried as Vigenère keys (standard, Beaufort and variant Beaufort, at every starting
   place) on the nine unread words of the upper 11 April telegram and on every cipher stream of this folder: no English,
-  and no score above the best of 1,000 random keys of the same length. The Library of Congress folder Gaddy used
-  (Confederate States of America Records, the "Pickett Papers") was not reached, so whether its Vigenère scraps are
-  online is not known.
+  and no score above the best of 1,000 random keys of the same length. The Library of Congress folder Gaddy used is
+  online: Confederate States of America Records (the "Pickett Papers", MSS16550), Department of State, Box 9, microfilm
+  reel 9, "Keys to the Confederate ciphers, undated", images 496-507 of https://www.loc.gov/item/mss16550009. It holds
+  the Rochford grille instructions (key word VICKSBURGH), two grille dispatches whose key-letter lines use only the
+  letters of EMILY NORTH, and four printed blank Vigenère squares: no Vigenère key phrase and no Vigenère ciphertext,
+  so nothing there bears on the nine unread words.
 - A full-text "not found" is not proof of absence (OCR can miss a phrase). Still open: Kahn's pages, on paper.
 
 ## Proposed catalogue changes (entry 681)
