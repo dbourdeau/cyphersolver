@@ -1,0 +1,342 @@
+{
+ "schema_version": 1,
+ "target": "juanmanuel1497",
+ "title": "Juan Manuel to the Catholic Monarchs, Genoa, 14 April 1497: the cipher passage, deciphered in part with George Lasry's key for BnF Espagnol 318 no. 95 (AHPZ, Colección Zurita, C_CRAR/000001/0039; catalogue 2857)",
+ "documents": [
+  {
+   "id": "2857",
+   "shelfmark": "Archivo Histórico Provincial de Zaragoza (Archivo del Reino de Aragón), Colección Zurita, C_CRAR/000001/0039; DARA item 1056536",
+   "date": "14 Apr 1497",
+   "year": 1497,
+   "country": "Spain",
+   "route": "Juan Manuel, Spanish envoy (Genoa) -> Ferdinand and Isabella",
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaf (nothing between the lines or in the margins) and none found in print (Suárez Fernández, Política internacional de Isabel la Católica IV-V, and Galende Díaz, Criptografía 1995, not seen): the 2025 Claver book cites the letter (note 166) for its clear part only."
+   },
+   "length": {
+    "tokens": 224,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_working.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Two rounds by AI agents on the archive's image of the recto (DARA PDF, 1550 x 2233 px): round 1, the agent that matched the key plus one blind reader, reconciled with three shape rules and eight adjudications (214 of 224 positions agree after the rules); round 2, an independent check by two fresh blind readers, reconciled mechanically (187 of 234 aligned positions agree, 79.9%); then two further blind readings closed holes of the strict text only where three of four, then four of six, blind readers agreed (22 positions). Sign names are Lasry's CTTS names.",
+    "corrections": 5,
+    "image_quality": "fair",
+    "notes": "transcription_working.txt (224 positions) is round 1 with five corrections the image supports (mostrar, les twice, guera, ala) and the dotted h written as its own sign [N02]; transcription_blind.txt (230 positions, 21 holes) is round 2 as reconciled with the closures of the third and fourth blind readings, in reading order. Counts measured with docs/_check_profile.py --measure --drop-first: 224 and 230 tokens. Its distinct count strips dots and colons (it merges .X. with X); counted directly, the working text uses 35 of Lasry's 44 alphabet signs, the code group dal, and three signs not in his table ([N02], [N03], [bnm])."
+   },
+   "read": "read in part"
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "George Lasry's key for BnF Espagnol 318 no. 95, applied unchanged: a homophonic alphabet of 44 invented signs for 21 letters (one to four each), three special signs and 11 code groups written in letters, with no word division.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 58,
+  "diacritics": {
+   "used": true,
+   "note": "Dotted variants are separate signs in Lasry's table (his O signs pi and pi:, his R sign T:). This letter has a dotted H (two dots before the o) that his table lacks: no value given."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 11,
+   "kinds": [
+    "names",
+    "titles",
+    "places"
+   ]
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "none",
+  "doubled_letters": "unknown",
+  "sibling_key": "BnF Espagnol 318 no. 95 (8 Jan 1497), George Lasry's key (targets/esp318no95/lasry2021/ctts/key.txt): this is the key used, unchanged. The same key reads Juan Manuel's letters from Genoa of 10 Nov and 18 Dec 1496 (targets/juanmanuel1496), where it passed planned tests on unseen text.",
+  "notes": "distinct_symbols counts Lasry's table: 44 alphabet signs, 3 special signs, 11 code groups. Two signs of this letter are not in it (a u/v shape with a bar, probably a cursive form of his O; the dotted H), and one group in Latin letters ([bnm]) is not in his list. The closed o joined to a 7 is his S sign 7o, as his own leaf shows (f. 122r, line 2)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: no decipherment on the leaf; the 2025 Claver book (Villanueva Morte and Fernández de Córdova, CSIC) cites the letter only for its clear part (note 166); Lasry's work on no. 95 (2022 alphabet, PRs 75 and 85) does not mention Zaragoza or Juan Manuel; not on DECODE (catalogue vetting). Galende Díaz 1994 prints other ciphers of Juan Manuel. Not seen: Suárez Fernández, Política internacional IV-V; Galende Díaz, Criptografía (1995).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "human_role": "Andrew Beling chose the catalogue entry and asked for the work and this package; AI agents did the transcription, the tests and the reading. No person checked any of it.",
+  "models": [
+   "claude-opus-5-5"
+  ],
+  "sessions": 3,
+  "first_date": "2026-11-16",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-11-16",
+   "kind": "literature search",
+   "what": "Duplicate and prior-work check before any work: catalogue row 2857 open with no reservation; no target, pull request or claim; the 2025 Claver book cites the letter only for its clear part (note 166).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "access",
+   "what": "Recto and verso viewed on the archive's image (DARA item 1056536): seven full cipher lines and two signs below seven clear lines; no decipherment on the leaf; the catalogue's 'about 15 lines' is an over-count.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "what": "Lead from earlier work on the 1497 Claver letters (16 Nov 2026): Lasry's no. 95 letter reads like Genoa, and this letter's sign set has the pi, division-sign, inverted-T and X forms of his no. 95 alphabet; noted then as untested, and taken up as the hypothesis that the key is his.",
+   "technique": [
+    "key matching"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "transcription",
+   "what": "Round 1: value-free sign sheet of Lasry's 58 signs (neutral ids); reader A (knew the key) and blind reader B; three shape rules settled on Lasry's leaf before decoding (T:, 7o = S, dotted h = H); 214 of 224 positions agree after the rules (about 195 before); eight disagreements adjudicated on zooms before decoding, two left as holes.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "control",
+   "what": "Calibration on Lasry's own letter only: the word-coverage measure (sandwich variant, Claver 2025 word list plus Pulgar 1780 forms of 4+ letters seen 5+ times) gives his key 72.7% on 225 signs (permuted control 95th percentile 19.3%); three earlier variants rejected for too easy controls.",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "key from source",
+   "what": "Test 1 under a plan hashed before decoding (sha256 6eb293fb...e52d): Lasry's key applied unchanged to the round 1 transcription scores 73.85% (mark 70%); 1,000 permuted tables mean 9.2%, 95th percentile 17.7%, maximum 29.6%, none as high. Pass by that plan.",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "reading",
+   "what": "Round 1 decode divided into 56 cipher words (each code group one word); 44 counted read; text about trouble-makers who tried to keep [bnm] out of the 1497 truce.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Round 2, independent check under its own plan hashed before any reader started (sha256 dd3d394f...dbc4): two fresh blind readers with the sheet and 51 line windows only; mechanical reconciliation, 187 of 234 aligned positions agree (79.9%), 47 holes; sheet cells relocated in Lasry's key image by template matching, all 58 values agree.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "T1: the first measure unchanged on the strict blind transcription scores 46.55% against the 70% mark (permuted tables: mean 5.2%, 95th percentile 11.0%, maximum 19.2%, none as high). A miss by the check's plan. The same script gives 73.85% on the round 1 text. On Lasry's own letter a correct key scores at most 48% with 20% holes, so the measure collapses with doubtful places; the miss stands as a result.",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "T2: letter-trigram score with no word division, on the strict blind transcription: -1.003 log10 per letter against 1,000 permuted tables (mean -1.619, best -1.352) and the 99.4th percentile of Zurita 1580 passages of the same run lengths. Pass.",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "what": "T3: the round 1 calibration reproduced (72.7% on the first 225 signs of Lasry's letter); its other five 225-sign windows score 84-91%.",
+   "technique": [
+    "statistical test"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Image check where both round 2 readers agreed against round 1: the S crossbar is on the 7 at mostrar, les dio and les hizo; L3 is R (guera, guerra); L6 is L (ala); escandalos and si stay as round 1 read them. Three of round 1's eight adjudications are contradicted by the blind readers, two also by the image. The o joined to a 7 is Lasry's S 7o (his leaf f. 122r, line 2); the barred u/v is probably his O (not proven); the dotted h has no secure value.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "Working transcription (round 1 with the five image-supported corrections) decoded and read: 45 of 56 cipher words; on the strict blind transcription 26 of 56. Normalised text and English translation by an AI agent.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Context from Zurita 1580 (Genoa in spring 1497; truce published in Italy 25 April 1497) and the 2025 Claver book (Genoa's unease after the truce of 25 Feb 1497); no printed decipherment; Suárez Fernández not seen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Third blind reading under a plan hashed before its readers started (sha256 d6b5d932...d9e0): two fresh readers re-transcribed all 51 windows; a hole of the strict text closed only where three of four blind readers agreed: 17 of 47 closed, one extra sign dropped, 29 left. One closure goes against the sense (L2 'so entrase'). Strict share 35 of 56 by that round's count.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "sibling key",
+   "what": "Juan Manuel's letters from Genoa of 10 Nov and 18 Dec 1496 (BNE MSS/20212/61/1-2) found to be in the same cipher and transcribed blind (targets/juanmanuel1496): Lasry's key, unchanged, passed planned tests on the letter of 18 Dec before anyone had decoded it (letter trigrams -1.043 per letter against a best permuted -1.336 and a Spanish mark -1.122; word share 0.338 against a mark of 0.255), and an independent check passed every mark on both letters. Proposed additions for this letter's open items (barred sign = o: miss; dal = el Rey, bnm: no result).",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Fourth blind reading: two more fresh readers with the sign sheet cut from the 1496 letters; each of the 29 open positions put to all six blind readers and closed where four of six agree: 5 closed (three 'o joined to a 7' places as Lasry's S 7o; L5 33 as p++, giving hazer); the dotted h read as Lasry's H by the two new readers only (two of six), left open.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "Recount on the strict text: 38 of 56 (procuran not counted: its barred sign has no tested value; so for no unread). An independent recount gave 37 because its conversion of the readers' sheet id K50 (Lasry's i..., l) gave a hole at L4 22, the l of les; the sheet map and both earlier blind texts give i... there. Working text unchanged at 45 of 56.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read after matching with key from external sources",
+  "method_basis": "George Lasry's key for BnF Espagnol 318 no. 95, made for another letter and not connected with this one before, was found to fit this letter (shared sign forms, then pre-set tests) and was applied unchanged.",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key"
+  ],
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "fraction_read": 0.804,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "words.tsv: 56 cipher words (each code group one word; word division ours), 45 read on the working transcription (0.804); 38 read on the strict blind transcription (0.679). A word counts only when every sign has a value from the key and no letter is supplied or changed by sense.",
+  "codes_open": {
+   "open": 2,
+   "total": 2,
+   "tokens_open": 2
+  },
+  "gaps": [
+   {
+    "item": "code group [bnm] (L2)",
+    "blocker": "open-codes",
+    "detail": "Latin-letter group not in Lasry's list (his nearest is bnh = rey); one occurrence; absent from the 1496 letters"
+   },
+   {
+    "item": "code group dal (L6)",
+    "blocker": "open-codes",
+    "detail": "one of Lasry's five unidentified names in no. 95; the value 'el Rey' gave no result on the unseen 1496 letter"
+   },
+   {
+    "item": "barred u/v sign [N03] in pr?curan and ync?nuiniente",
+    "blocker": "no-key-material",
+    "detail": "not in Lasry's table; the value o missed its planned test on the unseen 1496 letter (targets/juanmanuel1496); no further unseen text in this cipher is known"
+   },
+   {
+    "item": "dotted h sign [N02] in ?izo",
+    "blocker": "no-key-material",
+    "detail": "Lasry's table has no dotted H; dotted variants can be separate signs in it; two of six blind readers read it as his H"
+   },
+   {
+    "item": "aqyi (L1)",
+    "blocker": "illegible",
+    "detail": "closed or open bowl (Y or U) not settled on the archive's image"
+   },
+   {
+    "item": "daoruauan (L1-L2)",
+    "blocker": "needs-physical-access",
+    "detail": "both rounds read a plain 7 and an A sign where estorvavan wants s and t; only the original or a sharper image could show missing strokes"
+   },
+   {
+    "item": "ala uera (L6)",
+    "blocker": "needs-physical-access",
+    "detail": "every sign has a value but no sure sense; turns on fine strokes the archive's image does not settle"
+   },
+   {
+    "item": "damaged end of L4 (luga#)",
+    "blocker": "illegible",
+    "detail": "last sign lost at the edge"
+   },
+   {
+    "item": "damaged end of L5 (haze#)",
+    "blocker": "illegible",
+    "detail": "last sign lost at the edge"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "2857",
+    "label": "Juan Manuel to the Catholic Monarchs, Genoa, 14 April 1497 (AHPZ, Colección Zurita, C_CRAR/000001/0039), cipher passage",
+    "transcription": [
+     "transcription_working.txt",
+     "transcription_blind.txt"
+    ],
+    "decryption": [
+     "decode_working.txt",
+     "decode_blind.txt"
+    ],
+    "reading": "reading.md",
+    "translation": "translation_en.md",
+    "language": "es",
+    "state": "read in part",
+    "read_share": 0.804,
+    "summary": "Juan Manuel, the Spanish envoy at Genoa, reports that those there who were stirring up trouble had tried to keep someone (an unread code group) out of the truce, saying they had no war and need not show themselves a party, but were not given room for it and were made to do what another person (code dal, unidentified) [...] about the matter. Context: the Spanish-French truce of 25 February 1497, published in Italy on 25 April; the Italian allies joined it on 11 May 1497.",
+    "note": "read_share 45 of 56 cipher words on the working transcription; 38 of 56 (0.679) on the strict blind transcription (words.tsv). Holes in reading.md: [?] a sign without value or a lost letter, |...| letters that make no sure word, [?word] a word supplied by sense, two unread code groups."
+   }
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "lasry",
+    "role": "key or decipherment used",
+    "note": "his CTTS key and key image for BnF Espagnol 318 no. 95 (targets/esp318no95), applied unchanged",
+    "date": "2026-10",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/75; https://github.com/dbourdeau/cyphersolver/pull/85",
+    "published": true
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "Andrew Beling, with AI agents: matched this letter to Lasry's no. 95 key and read it in part (45 of 56 cipher words on the working transcription, 38 of 56 on the strict blind one); tests and records in records/",
+    "date": "2026-11-17"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: two transcriptions in Lasry's sign names, the second by blind readers who knew no values, with holes closed by four more blind readers",
+    "date": "2026-11-17"
+   }
+  ],
+  "notes": "The first planned test passed on the round 1 transcription (73.85%, mark 70%) and missed on the independent blind one (46.55%); the segmentation-free test passed on the blind one. The key is verified on unseen text in the sibling target juanmanuel1496 (letter of 18 Dec 1496). No reading_review yet: the reviewer's to give. The key state is partial because two signs of this letter and the group [bnm] are not in Lasry's table and dal is unidentified."
+ }
+}
