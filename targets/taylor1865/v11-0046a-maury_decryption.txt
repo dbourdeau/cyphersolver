@@ -1,0 +1,28 @@
+# 11 April 1865, Surget to Maury (first telegram on vol. 11 fr. 0046): decryption, read in part
+# Key COME RETRIBUTION, standard Vigenere, key over cipher letters only. Groups 1-4 decrypt at position 0 with the
+# first cipher letter; groups 14-21 at the positions that follow from 53 cipher letters before group 14 (B1's
+# transcription). The middle stretch (groups 5-13) does not give English at either phase, so the number of letters in
+# it is not settled. Status: R = a reader's preferred letters give the word; A = only a marked alternative of one or
+# more readers gives it (image-supported choice); C = a letter no reader saw is needed (correction against the image);
+# U = unread.
+
+ # cipher as needed  key       plain      status
+ 1 QBQ               COM       one        R  (all four readers)
+ 2 SW                ER        of         C1 (all four read S + an H/N form; W needed)
+ 3 XAV               ETR       the        R  (B1, H; V read XAAV, B2 XCV)
+ 4 BSUBVG            IBUTIO    trains     C1 (place 3: B1, V read H, B2, H read A; the clerk's U in UASUQ... differs)
+ 5-13                          [... 9]    U  nine cipher words between "brought" and "and quite a number of"
+14 JBFXA             IBUTI     bales      R  (all four)
+15 CS                ON        of         R  (all four)
+16 ECFXFR            COMERE    cotton     R  (B1; V with his G taken as a lead-in stroke; H needs C and F, his alternatives)
+17 YFZ               TRI       for        R
+18 UBX               BUT       the        R  (B1, V, H; B2 UBF)
+19 ZOVN              IONC      rail       A2 (Z: alternative of B1 and V; O: B2's reading, V's alternative)
+20 FAEU              OMER      road       R  (B1, B2, V)
+21 GHDXBHR           ETRIBUT   company    R  (B1 with his marked H; V without the 7-like lead stroke)
+
+# Candidates not taken (they need letters from different readers or a phase that does not join):
+# group 6 MC with N for M gives BY at the phase that follows from group 4; group 9 XFVXOFI gives PRIVATE at a phase one
+# place behind that run; group 13 with T gives GOODMAN. None is counted.
+# 21 cipher words: 12 give words (10 without a correction against the image), 9 unread.
+# Test: blind_2026-11-15/test_results_table.md, T10 (passes for both readers; narrow for B2).

@@ -35,6 +35,7 @@ leaf after the vol. 1 cipher copy. Hand not identified.
 Against the cipher: right in all but four places. "any other" for "the least" (lines 12 and 13 of the page,
 used only here; the vol. 1 copy has an x against 13.26 in "least"); "would" for "will"; "the" before 2d August
 left out; the signature guessed as "A. F." for F. H. "Sorel", "Robertson" and "sixteenth" are right. The errors
-are those of a decipherer working without the key, filling short gaps from sense; we take it that the letter was
-broken by analysis, not with a captured key. Nothing written on the cipher pages shows the method beyond the x and +
+are those of a decipherer working without the key, filling short gaps from sense; the letter was broken by analysis,
+not with a captured key. Added 14 Nov 2026: the decipherer was James Lovell, April 1782; his table and clear text
+are in item 51 vol. 2 pp. 223-225 (`lovell_1782/LOVELL.md`), and these errors are those of his table. Nothing written on the cipher pages shows the method beyond the x and +
 marks beside a few numbers.

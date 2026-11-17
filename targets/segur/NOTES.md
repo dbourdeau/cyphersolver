@@ -22,6 +22,24 @@ syllabary and the double-letter signs are fixed; a dozen word-signs written in l
 three nomenclature numbers (180, 215?, 900) are glossed from context or left open. The 1583 letter at f. 143 is in a different
 cipher and is not read. Tracker item #12; short-list candidate 4 of 2026-09-16.
 
+
+## Key replay, 16 Nov 2026
+
+`docs/_replay.py` (adapter `replay.py`) applies `key_v4.json` to `ct_233.txt`, `ct_239.txt` and `ct_288.txt` and compares
+the cipher runs of each leaf with the bold passages of its French section in `reading.md`. One rule is added to
+`decode.py`'s: the q row is read qua que qui quo qu (the decoder prints qa qe qi qo qu). Word-signs with no value or a
+guessed one ({X}, {gla}, {na}, {Ra}, {qu} ...) count as open codes.
+
+Before any change: 126 of 146 words of the reading exact (86.3%), 4 marked, 14 differing with no letter-level mark, 2
+unread. Most of the 14 were already flagged in `reading.md` with [?] or explained in its notes (avec, contracte, Eglises,
+peine, pieces), but the text did not show which letters differ; five were not flagged at all (remuez for remue-y, deux for
+deu-y, mille for mil, l'assistance for l'assist-i-nce, estat for es-t-tat), and the year 1579 stood for the figures 15 79
+(e la).
+
+Done: `reading.md` now brackets each letter the key does not give, and prints `e la [= 1579?]`. No letter of the reading
+changed. After: 129 of 147 words exact (87.8%), 16 emended and marked, 2 unread (87 = mo; 58 50 = bu y), none differing
+without a mark; 20 open word-signs. By figures 96.8% exact. The figures were not looked at again on the images in this pass.
+
 ## Corrections to the catalogue entry
 
 - **Sender.** Tomokiyo's page lists these as letters of *Henry III*. They are signed *Henry* at Montauban (f. 239, 1586) and

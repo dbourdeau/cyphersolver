@@ -1,0 +1,35 @@
+"""Write candidates.json for wave 17 (16 Nov 2026)."""
+import json, os
+HERE = os.path.dirname(os.path.abspath(__file__))
+TECA = "https://teca.bncf.firenze.sbn.it/ImageViewer/servlet/ImageViewer?idr=%s&azione=readBook"
+MANUS = "https://manus.iccu.sbn.it/risultati-ricerca-manoscritti/-/manus-search/detail/%s"
+IC = "https://www.internetculturale.it/it/16/search/detail?instance=magindice&case=&id=oai%%3Abncf.firenze.sbn.it%%3A21%%3AFI0098%%3AAutografiPalatini%%3AMachiavelli_%s"
+common = dict(place="Florence -> French court", language="Italian", region="Italy", period="1497-1559", cls="A",
+              seen="image", source="Manus Online + BNCF Teca (wave 17 Chrome sweep)", ark="", needs_archive_scan="no")
+rows = [
+ dict(year=1510, date="22 Aug 1510",
+      title="Dieci di Balìa -> Machiavelli at the French court: enclosed 'Summario di lettera de 18 di', entirely in cipher, not deciphered",
+      correspondents="Dieci di Balìa (Florence) -> Niccolò Machiavelli, mandatario at the court of Louis XII",
+      shelfmark="Firenze, BNCF, Autografi Palatini, Carte Machiavelli V/125",
+      folio_note="1 leaf, enclosure (Allegato) of V/124; about 25 lines of sign cipher under the clear heading 'Summario di l(ette)ra d(e) 18 di'; Teca folder BNCF0003856930",
+      status="16 Nov 2026: Manus: 'La lettera è interamente in cifra, tranne l'intestazione ... non è decifrata'; no content summary; bibliography only Tommasini, La vita e gli scritti II.2 p. 1356 (a list entry). Covering letter V/124 is printed (Passerini-Milanesi, Le opere VI pp. 76-78) but the summary is not cited as printed. Seen on the Teca image: no interlinear or slip decipherment. known.py: not in the repo; not on DECODE dumps. Not checked: Bertelli, Legazioni e commissarie (1964), the Edizione Nazionale Legazioni (Salerno), Machiavelli's own decipherments I/80 and I/81.",
+      why="A whole page of the 1510 Dieci cipher with no decipherment, enclosed with a letter whose clear text is printed: known-plaintext in the same sign repertoire is plentiful (V/124, V/126-131, V/135, V/138, V/150 printed; interlinear decipherments by Machiavelli in V/130, V/141-149, IV/111).",
+      importance=3, solvability=5, difficulty=2,
+      score_note="Scored from the Teca image (about 900 px) and the Manus record; the key can be rebuilt from printed siblings",
+      verify="Check I/80-I/81 (Machiavelli's 'compendio' of 1510 cipher letters) and Bertelli 1964 / Edizione Nazionale Legazioni for a 'summario' of a letter of 18 Aug 1510; if absent, rebuild the key from V/124 + Opere VI 76-78 and read.",
+      links=[{"href": MANUS % "598790", "label": "Manus record V/125"}, {"href": TECA % "BNCF0003856930", "label": "BNCF Teca images V/124-133"}, {"href": MANUS % "598785", "label": "Manus record V/124 (printed covering letter)"}]),
+ dict(year=1510, date="17 Aug 1510",
+      title="Dieci di Balìa -> Machiavelli at the French court, letter in cipher except the first two lines, not deciphered",
+      correspondents="Dieci di Balìa (Florence) -> Niccolò Machiavelli, mandatario at the court of Louis XII",
+      shelfmark="Firenze, BNCF, Autografi Palatini, Carte Machiavelli V/134",
+      folio_note="2 ff. (old foliation 230-231); about 14 lines of sign cipher on f. 1r, Dieci subscription, address on f. 2v; Teca folder BNCF0003856980",
+      status="16 Nov 2026: Manus: 'La lettera è interamente in cifra, ad eccezione delle prime due righe, e non decifrata'; the clear lines mention a Dieci letter sent by Francesco Pandolfini; bibliography only Tommasini II.2 p. 1356. Its folder neighbours V/135 (18 Aug, printed Opere VI pp. 72-74) and V/136 (copy to Pandolfini, partly deciphered on a modern slip) are different letters. Seen on the Teca image: no decipherment. known.py: not in the repo. Not checked: Bertelli 1964, the Edizione Nazionale Legazioni, the ASF Dieci di Balìa missive register for 17 Aug 1510 (a clear minute probably exists there), I/80-I/81.",
+      why="An official Dieci cipher letter left undeciphered on the sheet, in a system with abundant printed known plaintext; quick to read once the key is rebuilt, and the ASF register minute would then be a control.",
+      importance=3, solvability=5, difficulty=2,
+      score_note="Scored from the Teca image and the Manus record",
+      verify="Look for a Dieci letter of 17 Aug 1510 to Machiavelli in Bertelli 1964, the Edizione Nazionale and Opere VI; if printed, close as known plaintext (still a test text). Otherwise read with the key rebuilt from the printed 1510 siblings.",
+      links=[{"href": MANUS % "598841", "label": "Manus record V/134"}, {"href": TECA % "BNCF0003856980", "label": "BNCF Teca images V/134-136"}, {"href": IC % "V_134", "label": "Internet Culturale record (guessed id pattern, not opened)"}]),
+]
+out = [dict(common, **r) for r in rows]
+json.dump(out, open(os.path.join(HERE, "candidates.json"), "w", encoding="utf8"), ensure_ascii=False, indent=1)
+print(len(out), "rows")

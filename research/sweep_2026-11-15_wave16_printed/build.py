@@ -1,0 +1,163 @@
+# writes candidates.json for the wave 16 printed sweep (rows checked by hand, 16 Nov 2026)
+import json, os
+D = "16 Nov 2026"
+IA = "https://archive.org/details/"
+rows = []
+def row(**k):
+    base = dict(ark="", seen="print", needs_archive_scan="yes")
+    base.update(k); rows.append(base)
+
+row(year=1468, date="13 Oct 1468",
+    title="Louis XI to Galeazzo Maria Sforza, duke of Milan, from Péronne: fourteen lines of cipher 'dont la clef n'a pu être retrouvée'",
+    correspondents="Louis XI, king of France -> Galeazzo Maria Sforza, duke of Milan (countersigned Albertus)",
+    place="Péronne", language="Italian", region="France", period="15th century",
+    shelfmark="Archivio di Stato di Milano, Archivio Ducale Sforzesco, Potenze Estere, Francia (copy; carteggio of 1468, cartella not given by the edition); printed Vaesen & Charavay, Lettres de Louis XI, vol. III (1887), letter CCCXCVI, pp. 286-287, after Sickel in the Bulletin de la Société de l'histoire de France",
+    folio_note="Editor: '(Suivent quatorze lignes de chiffres dont la clef n'a pu être retrouvée.)' after the clear Italian text about Jean Philippe's mission; 14 lines of cipher, not printed.",
+    cls="B",
+    status="Checked " + D + ": known.py ('Perone', 'Péronne', 'Sickel', 'Louis XI'): no hit for this letter; Calendar of State Papers Milan (BHO, grepped) does not calendar it; one web search found no decipherment. Not checked: DECODE by date, Sickel's article, Cerioni's Cifrario sforzesco, Mandrot/Samaran Dépêches des ambassadeurs milanais.",
+    why="A royal cipher passage written at Péronne on 13 Oct 1468, the week Louis XI was held by Charles the Bold; the editor printed the clear part and says the key was not found.",
+    importance=4, solvability=4, difficulty=2,
+    score_note="Milanese chancery keys for France of 1463-70 survive (BnF italien 1591-1593 'Traduzioni', see research/venice_milan_print); 14 lines is enough for a nomenclator fit.",
+    verify="Find the copy in ASMi Sforzesco Potenze Estere Francia 1468 (cart. 535/536?) and check for a filed 'Traduzione'; read Sickel's printing for the cipher lines.",
+    links=[{"href": IA + "louis-lettres-de-louis-xi-roi-de-france-v-3", "label": "Lettres de Louis XI, vol. III (archive.org OCR)"}],
+    source="wave16 printed sweep: Lettres de Louis XI (archive.org OCR, all volumes on archive.org grepped)")
+
+row(year=1657, date="28 Apr 1656 - early 1659 (about 14 despatches)",
+    title="Mazarin to Antoine de Lumbres, French ambassador in Poland: signed originals 'en partie / presque entièrement chiffré, sans traduction'",
+    correspondents="Cardinal Mazarin -> Antoine de Lumbres (at Königsberg, then ambassador in Poland and at the Swedish-Polish talks)",
+    place="Paris, La Fère, Lyon, Dijon -> Königsberg / Poland", language="French", region="France", period="1651-1700",
+    shelfmark="AAE, Correspondance politique, Allemagne, Supplément t. 16 (1656), t. 17 (1657-58), t. 18 (1659), unpaginated; printed (summaries) Chéruel & d'Avenel, Lettres du cardinal Mazarin pendant son ministère VII p. 620 (28 Apr 1656); VIII pp. 293 n. (1 Feb 1658), 613 (Aug 1657), 616 (28 Aug 1657), 655 (14 Dec 1657), 666 (11 Jan 1658), 668 (18 Jan 1658), c. 681, 686 (Mar 1658); IX p. 108 no. LXVI (3 Dec 1658), pp. 728, c. 735, 744, 756, 759 ('entièrement chiffrée', t. 18), 764 (1659)",
+    folio_note="Editor's source notes: 'original signé et en partie chiffré, sans traduction'; 'presque entièrement chiffré, sans traduction du chiffre'; 'Lettre presque entièrement en chiffres sans traduction' (14 Dec 1657); 'Lettre entièrement chiffrée sans traduction' (1659). Amount per letter not given.",
+    cls="B",
+    status="Checked " + D + ": known.py ('Lumbres', 'Allemagne Supplément', 'sans traduction'): no hit. For 1 Feb 1658 the edition prints the text from Mazarin's minute (BnF fr., Mélanges de Colbert) and notes that the AAE original is largely in cipher without decipherment, so clear minutes exist for some of these letters; the others are summarised from their clear parts. Not checked: DECODE, the AAE inventory (the Allemagne Supplément volumes may have been reclassed), Lasry/Tomokiyo.",
+    why="A run of signed Mazarin originals in the minister's cipher with no decipherment on them; where the minute survives in clear, each is a plaintext-ciphertext pair.",
+    importance=3, solvability=4, difficulty=2,
+    score_note="One correspondent, one key; known plaintext from the Colbert minutes for at least one letter; the rest read with the rebuilt key.",
+    verify="Locate AAE CP Allemagne Supplément 16-18 (or their present cote); match each original against the BnF Mélanges de Colbert minutes; list which have no clear minute.",
+    links=[{"href": IA + "lettresducardina08maza", "label": "Lettres du cardinal Mazarin VIII"},
+           {"href": IA + "lettresducardina09maza", "label": "Lettres du cardinal Mazarin IX"},
+           {"href": IA + "lettresducardina07maza", "label": "Lettres du cardinal Mazarin VII"}],
+    source="wave16 printed sweep: Lettres du cardinal Mazarin I-IX (archive.org OCR)")
+
+row(year=1655, date="15 Oct 1655",
+    title="Mazarin to d'Avaugour (French envoy with the King of Sweden): rest of the despatch 'presque entièrement chiffré sans traduction'",
+    correspondents="Cardinal Mazarin -> Charles Dubois, baron d'Avaugour",
+    place="Fontainebleau -> Stettin / Swedish army", language="French", region="France", period="1651-1700",
+    shelfmark="AAE, Correspondance politique, Suède t. 19, f. 384; printed (summary) Lettres du cardinal Mazarin VII, p. 580",
+    folio_note="Editor: 'Le reste de la dépêche est presque entièrement chiffré sans traduction.'",
+    cls="B",
+    status="Checked " + D + ": known.py ('Avaugour'): only research/scandinavia (intercepted Avaugour letters of 1644 in Copenhagen, a different correspondence). No decipherment found; a clear minute was not looked for.",
+    why="Mazarin's instructions to his envoy to Charles X Gustav at the start of the First Northern War; most of the letter in cipher, not deciphered in the original.",
+    importance=3, solvability=3, difficulty=3,
+    score_note="Possibly the same ministerial key family as the Lumbres letters; a minute in clear may exist (Mélanges de Colbert).",
+    verify="View AAE CP Suède 19 f. 384; search the Colbert minutes for 15 Oct 1655.",
+    links=[{"href": IA + "lettresducardina07maza", "label": "Lettres du cardinal Mazarin VII"}],
+    source="wave16 printed sweep: Lettres du cardinal Mazarin")
+
+row(year=1651, date="Dec 1651 (no place or date on the letter)",
+    title="Mazarin to the abbé Basile Fouquet: original letter partly in cipher, 'sans traduction'",
+    correspondents="Cardinal Mazarin (in exile at Brühl / returning) -> abbé Basile Fouquet",
+    place="unknown (Germany or the frontier)", language="French", region="France", period="1651-1700",
+    shelfmark="BnF, manuscrits (fonds given in OCR as 'f. ... t. 23, 202, f. 23 r.', probably Baluze or fr.; reading to be checked); printed Lettres du cardinal Mazarin IV, letter CCXL, p. 591",
+    folio_note="Editor: 'Lettre originale, en partie chiffrée, sans traduction.' The extract printed is the clear part.",
+    cls="B",
+    status="Checked " + D + ": known.py ('abbé Fouquet'): no hit. Not checked: DECODE, other editions of the Mazarin-Fouquet letters of the Fronde.",
+    why="Mazarin's secret correspondence with his agent in Paris during the Fronde, cipher part never deciphered in print.",
+    importance=3, solvability=3, difficulty=3,
+    score_note="Mazarin's Fronde ciphers with the Fouquet brothers are known from other letters (names by numbers); length unknown.",
+    verify="Read the shelfmark in the printed book (p. 591) and view the leaf.",
+    links=[{"href": IA + "lettresducardina04maza", "label": "Lettres du cardinal Mazarin IV"}],
+    source="wave16 printed sweep: Lettres du cardinal Mazarin")
+
+row(year=1607, date="6 May 1607",
+    title="Jean de la Croix (French ambassador in Savoy) to Henri IV: closing passage in cipher, not deciphered",
+    correspondents="Jean de la Croix -> Henri IV",
+    place="Turin", language="French", region="France", period="1598-1610",
+    shelfmark="BnF fr. 16913 (original); printed (German summary) Briefe und Acten zur Geschichte des Dreissigjährigen Krieges, vol. V (Stieve), note to no. 294, pp. c. 554-555",
+    folio_note="Editor: '(Am Schluss des Briefes eine nicht aufgelöste chiffrirte Stelle. - P. Bibl. nat. Ms. fr. 16913.)' Length not given.",
+    cls="B",
+    status="Checked " + D + ": known.py ('16913', 'Jean de la Croix'): only research/sweep_2026-11-15_script_wave5, which reads Omont as listing 'chiffres des dépêches' (key sheets) in fr. 16913, so a key may be in the same volume. No decipherment found.",
+    why="Savoy-France negotiation of 1607 over the Bresse marriage and a Milan war; the ambassador's own cipher, apparently with key sheets in the same volume.",
+    importance=3, solvability=4, difficulty=2,
+    score_note="Key in volume likely (Omont); siblings of 11 May and 7 June 1607 in the same volume.",
+    verify="View BnF fr. 16913 (Gallica if digitised) at the 6 May 1607 despatch; check the key sheets in the volume.",
+    links=[{"href": IA + "briefeundactenz00kommgoog", "label": "Briefe und Acten (archive.org OCR)"}],
+    source="wave16 printed sweep: Briefe und Acten zur Geschichte des Dreissigjährigen Krieges")
+
+row(year=1691, date="late Jul 1691 (seized at Dover; Wallis's replies 9 Aug 1691 ff.)",
+    title="Two Vigenère ciphertexts seized at Dover, sent by Nottingham to John Wallis: 'not inough of it to discover the key'",
+    correspondents="unknown (intercepted at Dover); Nottingham -> John Wallis",
+    place="Dover", language="unknown", region="England", period="1651-1700",
+    shelfmark="BL Add MS 32499 ff. 274-275, 282-283 (Wallis letter-book); printed HMC Finch III p. 188; HMC Finch V (2004), introduction pp. xlix-l",
+    folio_note="Finch V quotes Wallis: the texts are in 'a Table-cipher, which changeth the Alphabet at every letter, and there is not inough of it to discover the key'; 'I send you my conjectures interlined, which I guess may be true, but am not sure of it'. A proposed key 'proved unconnected'.",
+    cls="B",
+    status="Checked " + D + ": known.py ('32499'): only other Wallis items (d'Aumont cipher f. 1, 1693 intercepts ff. 341-347); not these. Wallis's conjectural reading is all there is; no modern decipherment found (not web-searched).",
+    why="A rare 17th-century polyalphabetic intercept that Wallis himself could only guess at.",
+    importance=3, solvability=2, difficulty=4,
+    score_note="Short Vigenère texts, key unknown; whether the ciphertexts themselves are copied into Add MS 32499 is not stated.",
+    verify="View Add MS 32499 ff. 274-283; check whether the ciphertexts or only Wallis's letters survive (the originals may be in SP 32 or the Finch papers, Leicestershire RO).",
+    links=[{"href": IA + "manuscriptsofall0005soni", "label": "HMC Finch V (archive.org)"}],
+    source="wave16 printed sweep: HMC Finch V introduction")
+
+row(year=1613, date="1613-1614",
+    title="Nicholas de Rebbe, canon of Lille, and Peter Gail to William Trumbull: letters 'filled with cipher symbols and allusions to which there is no key'",
+    correspondents="Nicholas de Rebbe; Peter Gail -> William Trumbull (English agent at Brussels)",
+    place="Lille / Antwerp -> Brussels", language="French", region="Low Countries", period="1611-1650",
+    shelfmark="Trumbull papers (Downshire MSS), now BL Add MS 72242-72620 (volume not identified); printed HMC Downshire IV (1940), introduction and calendar (letters endorsed 'from M. de Rebbe', e.g. pp. 234-235)",
+    folio_note="HMC: 'These are filled with cipher symbols and allusions to which there is no key. Their precise meaning is therefore obscure.'",
+    cls="B",
+    status="Checked " + D + ": known.py ('Nicholas de Rebbe', 'Peter Gail'): no hit. The symbols may be name signs only; extent not stated.",
+    why="An informer's letters to James I's agent in Brussels with an unkeyed symbol code (a Jesuit plot alleged by Gail).",
+    importance=2, solvability=2, difficulty=3,
+    score_note="Probably a small name/symbol code across several letters; context may fix some values.",
+    verify="Read the Rebbe and Gail entries in Downshire IV in full and find their Add MS volume.",
+    links=[{"href": IA + "ReportOnTheManuscriptsOfTheMarquessOfDownshireV4", "label": "HMC Downshire IV"}],
+    source="wave16 printed sweep: HMC Downshire IV")
+
+row(year=1583, date="13 Jul 1583",
+    title="Letter of a Scottish lord to M. de Meyneville (Mainville), St Andrews: cipher line at the foot, 'je n'ai pas pu retrouver la clef de ce chiffre'",
+    correspondents="unnamed Scottish noble (writing for Dundee and Sir Robert Melville) -> François de Roncherolles, sieur de Mainville",
+    place="St Andrews", language="French", region="Other", period="1560-1589",
+    shelfmark="Archivo General de Simancas, Estado K (formerly Archives de l'Empire, fonds de Simancas, liasse B. 94, n. 117 or 417 as OCR'd), copy; printed Teulet, Relations politiques de la France et de l'Espagne avec l'Écosse, vol. IV (1862), 'Mission de J.-B. de Tassis', pp. 297-309",
+    folio_note="About 32 cipher characters printed (OCR: 'fKnmoc2oTmenkKfas3Sa SerynyxRoS69aoz'); Teulet: 'Je n'ai pas pu retrouver la clef de ce chiffre, mais j'ai cru devoir le reproduire, parce qu'il pourra peut-être servir à faire découvrir plus tard le nom de l'auteur de cette lettre.'",
+    cls="A",
+    status="Checked " + D + ": known.py ('Teulet'): only other Teulet uses; nothing on this letter. Characters seen in OCR only (garbled); the printed page was not viewed.",
+    why="A signature or subscription in cipher on a Scottish Catholic letter to the Guise agent just after James VI's escape from the Ruthven lords.",
+    importance=2, solvability=2, difficulty=3,
+    score_note="Very short (a name); the Mary Stuart / Guise nomenclators of 1583 might fit.",
+    verify="View the printed page (Teulet IV p. 309) for the true characters, then the Simancas copy.",
+    links=[{"href": IA + "relationspoliti04teulgoog", "label": "Teulet, Relations politiques IV"}],
+    source="wave16 printed sweep: Teulet, Relations politiques")
+
+row(year=1595, date="15 Jan 1595",
+    title="Henri IV to Balagny, marshal of France (Cambrai): 'Le reste de la lettre, écrit en chiffres, n'a pu être déchiffré'",
+    correspondents="Henri IV -> Jean de Monluc, seigneur de Balagny",
+    place="Paris -> Cambrai", language="French", region="France", period="1589-1598",
+    shelfmark="Archives municipales de Saint-Quentin (copy); printed Berger de Xivrey, Recueil des lettres missives de Henri IV, vol. IV, p. 297",
+    folio_note="Footnote at the foot of p. 297: 'Le reste de la lettre, écrit en chiffres, n'a pu être déchiffré.' The letter as printed reads complete to its close (p. 298), so which letter the note belongs to, and how much cipher there is, must be checked on the page.",
+    cls="C",
+    status="Checked " + D + ": known.py ('Saint-Quentin', 'Balagny'): Balagny appears only in the harley1582r8500 write-up and a Balagny-Nevers alphabet note; nothing on this letter. Not checked: the Saint-Quentin archives inventory.",
+    why="Royal letter to the governor of Cambrai in the year Cambrai fell, with an undeciphered cipher remainder per the editor.",
+    importance=2, solvability=2, difficulty=3,
+    score_note="Uncertain whether any cipher survives in the Saint-Quentin copy.",
+    verify="Look at p. 297 of the printed volume to see where the footnote mark sits.",
+    links=[{"href": IA + "recueildeslettre04henr", "label": "Lettres missives de Henri IV, IV"}],
+    source="wave16 printed sweep: Recueil des lettres missives de Henri IV")
+
+row(year=1582, date="26 Jul 1582",
+    title="Audley Danett to Walsingham, Bruges: name numbers 'by 10 out of 27, and by 81 out of 25', '12', '30' with no key",
+    correspondents="Audley Danett -> Sir Francis Walsingham",
+    place="Bruges", language="English", region="Low Countries", period="1560-1589",
+    shelfmark="TNA SP 83/16 no. 79 (Holland and Flanders XVI. 79); printed CSP Foreign 1581-82, no. 189, and preface p. xiii",
+    folio_note="Editor (preface): 'Unluckily there is no key to Danett's numerical cipher; and the papers do not contain specimens enough of it to enable any very certain inferences to be drawn.' Six number groups printed.",
+    cls="A",
+    status="Checked " + D + ": known.py ('Danett'): no hit. Name code only; the editor's guesses: 12 = the French king, 30 = Guise (?).",
+    why="Salcedo plot of 1582; small name code with no key.",
+    importance=1, solvability=2, difficulty=2,
+    score_note="Six groups; context gives some (Queen Mother, Queen). Only worth a row if other Danett letters carry more.",
+    verify="Check SP 83/16-17 for other Danett letters in the same numbers.",
+    links=[{"href": "https://www.british-history.ac.uk/cal-state-papers/foreign/vol16/pp188-207", "label": "CSP Foreign 1581-82, BHO"}],
+    source="wave16 printed sweep: CSP Foreign Elizabeth vol. 16 (BHO)", needs_archive_scan="unknown")
+
+json.dump(rows, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "candidates.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print(len(rows))

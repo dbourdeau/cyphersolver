@@ -45,7 +45,7 @@ def tdir(folder):
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'solved', 'highlights', 'top25'}
 INDEX_PAGES = {'siena1421'}   # a page that only lists the write-ups a split series became (Siena, Concistoro 2308)
-TOOL_PAGES = {'atlas', 'keys', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404'}   # interactive and reference pages, not write-ups
+TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404'}   # interactive and reference pages, not write-ups
 # The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
 FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',
@@ -645,6 +645,29 @@ def check_slug(slug):
             hc = out.get('human_check')
             item(bool(hc), f'{folder}: outcome.human_check records a person checking a passage against the image without AI'
                  + (f' ({hc.get("result")}, {hc.get("by")})' if hc else ''), warn=True)
+    # key replay (docs/_replay.py; Le Monde, 16 Nov 2026: reviewers applied posted keys and did not get the posted
+    # readings): where a folder has a replay.py adapter, the key applied to the transcription must give the reading,
+    # or the reading must mark each place where it does not
+    import _replay
+    for folder in sorted(folders):
+        if folder in FAMOUS: continue
+        if not _replay.has_adapter(folder):
+            try: p = json.loads(read(tdir(folder) / 'profile.json') or '{}')
+            except ValueError: continue
+            out = p.get('outcome') or {}
+            if out.get('method') in KEYED_METHODS and out.get('class') in ('read', 'read in part'):
+                item(False, f'{folder}: no key replay yet (add targets/{folder}/replay.py, see docs/_replay.py, so the key can be '
+                     f'applied to the transcription and compared with the reading)', warn=True)
+            continue
+        try: rs = _replay.run(folder, write=False)[0]
+        except Exception as e:
+            item(False, f'{folder}: key replay failed to run (python docs/_replay.py {folder}): {e!r}'); continue
+        item(_replay.unmarked(rs) == 0, f'{folder}: key replay: ' + _replay.line(rs)
+             + f' (python docs/_replay.py {folder}; every difference is listed in targets/{folder}/replay.tsv: correct the key or '
+               f'the transcription, or mark the emendation in the reading)')
+        sv = _replay.saved(folder)
+        item(bool(sv) and sv.get('words') == rs['words'], f'{folder}: replay.json and replay.tsv are current '
+             f'(rerun python docs/_replay.py {folder})', warn=True)
     # portraits and "watch it decipher" (skill steps 2 and 2a): required on every page, or a reason recorded in
     # docs/_explore_skip.json {"portrait": {slug: why}, "reveal": {slug: why}}
     try: skip = json.loads(read(HERE / '_explore_skip.json') or '{}')
@@ -878,6 +901,23 @@ def audit(brief=False):
     for e in fail:
         print(f'   #{e["id"]} {str(e.get("title", ""))[:50]}  (move to research/leads.json or vet it)')
     problems += len(fail)
+    # 13. key replay (docs/_replay.py): saved results only, so the audit stays fast; informational
+    import _replay
+    have, bad, none = [], [], 0
+    for d in dirs:
+        if d in FAMOUS: continue
+        if _replay.has_adapter(d):
+            sv = _replay.saved(d); have.append(d)
+            if not sv or _replay.unmarked(sv): bad.append((d, sv))
+            continue
+        try: out = (json.loads(read(tdir(d) / 'profile.json') or '{}').get('outcome') or {})
+        except ValueError: continue
+        if out.get('method') in KEYED_METHODS and out.get('class') in ('read', 'read in part'): none += 1
+    print(f'R. Key replay (docs/_replay.py: does the posted key give the posted reading?): {len(have)} targets with a replay, '
+          f'{len(bad)} of them with unmarked differences; {none} keyed readings with no replay yet')
+    if not brief:
+        for d, sv in bad:
+            print(f'   {d}/  (' + (_replay.line(sv) if sv else 'never run: python docs/_replay.py ' + d) + ')')
     return problems, gaps
 
 # ---------------------------------------------------------------------------

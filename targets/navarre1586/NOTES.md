@@ -53,7 +53,25 @@ systematically, and removing the stroke removes the digit cores, so a figure-lev
 interlinear reading is not obtainable from this image; one clean segment (`61 130 33 78 54 52` = *et si l fa u t*)
 confirms the key. Not re-transcribed; Tomokiyo's table is the ground truth for it.
 
+## Key replay, 16 Nov 2026
+
+Camille Desenclos (Le Monde, 16 Nov 2026) checked the page: in the two cipher passages one word is left out and five
+are not what the key gives, with no mark in the text, and the decipherment is 85% complete, not 95%. `docs/_replay.py`
+(adapter `replay.py`) repeats it on `key_321.json`, `ct_333.txt` and `texts/f333_reading.md`: before any change, 33 of
+40 words exact (82.5%), one marked ([qu'i]l), four differing with no mark (advis, a cheval, fault, marcher), figure 48
+(s) left out with no mark, and the run 61 120 31 126 given as one hole. Her count stands. The five figures were already
+named in these notes and in the page's prose; what was missing was a mark in the printed text.
+
+Done: the reading now brackets each letter the key does not give (advi[s], a [c]heva[l], [f]au[l]t, mar[c]her), writes
+figure 48 as `{s}`, and reads 61 as *et* before the hole, which is now 120 31 126 (qi i ro) only. No letter of the reading
+changed. After: 35 of 41 words of the reading in the cipher passages are the key's exact output (85.4%), 5 are emended
+and marked, 1 is unread, none differs without a mark; 5 name codes have no value. The 95% of the page is another
+measure: 103 of the 108 figures have a value in the table.
+
+Not done: the five figures were not looked at again on the image in this pass (they were re-read at 2x on 16 Sept 2026).
+
 ## Remaining gaps
+- figures 120 31 126 after [190] (qi i ro by the table), which make no word - blocker: no-key-material; once, between name codes; a slip, a name spelt out or values the table lacks
 - name codes 204, 189, 190, 166, 167 in f. 333 - blocker: no-key-material; Tomokiyo's table lists only 162, 302, 315, 317, 322, and each occurs once with no gloss
 - f. 321 figure-level transcription - blocker: needs-physical-access; the decipherer's strike-through runs through every figure on the scan; the leaf or a raking-light image would be needed
 

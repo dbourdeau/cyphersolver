@@ -1,0 +1,39 @@
+# doc. 129 against doc. 124 (align_doc129.py). Words compared after levelling spelling (u/v, i/y/j, rr, ç,
+# ct/t, hecho/fecho) and writing the numerals xx, xxi, xxij out; first alternative of {a|b}.
+
+## 1. The two passes over doc. 129, pp. 1-2 (words that agree, in order)
+pass 1 / pass 2 (blind)    img01: 136 of 165 words = 0.824
+pass 1 / pass 2 (blind)    img02: 102 of 137 words = 0.745
+settled / pass 1           img01: 148 of 164 words = 0.902
+settled / pass 1           img02: 133 of 136 words = 0.978
+settled / pass 2 (blind)   img01: 150 of 165 words = 0.909
+settled / pass 2 (blind)   img02: 102 of 137 words = 0.745
+
+## 2. The clear lines of doc. 124 (p. 2 ll. 2-6, from "partio de aca" to "cargo dello") in doc. 129
+doc. 124: 103 words (the unread word after "mayo" counted as one)
+doc. 129 settled text   : 99 of 103 words of doc. 124 found in order = 0.961
+    doc. 124 ~ i  |  doc. 129 siguiente e
+    doc. 124 que  |  doc. 129 porque
+    doc. 124 terna  |  doc. 129 ternan
+doc. 129 pass 1         : 99 of 103 words of doc. 124 found in order = 0.961
+doc. 129 pass 2 (blind) : 75 of 103 words of doc. 124 found in order = 0.728
+
+## 3. The cipher groups of doc. 124 p. 2 ll. 1-2 against doc. 129 img01.15-16
+doc. 124: dezia sea hecho . <1813> <852?> <868> <1221?> <638> <29?> <1885> <855> . partio de aca
+doc. 129: dezis sea fecho porque {desde|despues} {alli|aca} en fin de abril que el dotor partio de aca
+Eight groups, nine words or units; aligned from the right (the last group against "el dotor"):
+    855  key: dotor de puebla            doc. 129: el dotor
+   1885  key: que                        doc. 129: que
+     29  key: (not in key_excerpt.tsv)   doc. 129: abril
+    638  key: de                         doc. 129: de
+   1221  key: (not in key_excerpt.tsv)   doc. 129: fin
+    868  key: (not in key_excerpt.tsv)   doc. 129: en
+    852  key: (not in key_excerpt.tsv)   doc. 129: {alli|aca}
+   1813  key: (not in key_excerpt.tsv)   doc. 129: {desde|despues}
+  (left over at the head of doc. 129: "porque"; from the left, 1813 stands against it)
+groups with a value in the key excerpt: 3; agreeing with doc. 129: 3
+control, alignment moved by -2 word(s): 0 agree
+control, alignment moved by -1 word(s): 0 agree
+control, alignment moved by +1 word(s): 0 agree
+control, alignment moved by +2 word(s): 0 agree
+control, 10000 shuffles of the 16 values of the key excerpt over its 16 numbers (seed 1495): 0 agree 8185 times, 1 agree 1669 times, 2 agree 145 times, 3 agree 1 times

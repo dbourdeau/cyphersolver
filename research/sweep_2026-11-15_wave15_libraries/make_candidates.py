@@ -1,0 +1,56 @@
+"""Writes candidates.json for the wave 15 libraries sweep (15 Nov 2026). python -I -X utf8 make_candidates.py"""
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+ROWS = [
+    {
+        "year": 1750,
+        "date": "18th century, undated (author lived 1697-1777; the year is a placeholder)",
+        "title": "J. F. Tautte, 'Der Staat von dem Königreiche Dännemarck, oder Zuverlässiger und unpartheyischer Entwurf von dem Caracter verschiedener Generals, Ministers und anderer Königlichen Bedienten', autograph volume written in cipher, 570 pages and an index",
+        "correspondents": "Johann Friderich Tautte (colonel of infantry, Platz-Major of Copenhagen), own text; no addressee",
+        "place": "Copenhagen",
+        "language": "German (title); language of the ciphered text not verified",
+        "period": "1701-1800",
+        "shelfmark": "Copenhagen, Det Kgl. Bibliotek, NKS 775 kvart",
+        "folio_note": "Catalogue (soeg.kb.dk, alma99122771380305763): 'Autograf; skrevet i chiffre. Notits om forfatteren foran i manuskriptet.'; '1 bd. (570 s. + register) i æske. Papir.'; provenance Bolle Willum Luxdorph, P. F. Suhm (Kat. nr. 210), in KB 1798. Gigas, Katalog I (1903) p. 270-271 (archive.org OCR, corrected by eye): 'Autogr., skreven i Ciffre. Titelbl. lyder fuldstændig: «Der Staat von dem Königreiche Dännemarck, oder Zuverlässiger und unpartheyischer Entwurf von dem Caracter verschiedener Generals, Ministers und anderer Königlichen Bedienten». Har tilhørt B. W. Luxdorph.' with a note in the manuscript naming the author, 'Oberst af Infanteriet, og Platz-Major i Kjøbenhavn', born 21 May 1697, died 1 Sept 1777. No image seen.",
+        "cls": "B",
+        "status": "15 Nov 2026: catalogue record and Gigas I read; neither mentions a decipherment or a key; no digital copy is linked from the record. known.py 'Tautte', 'NKS 775': no hit. Two web searches (title with Tautte; Tautte Platzmajor) found no edition, study or decipherment. Not checked: DECODE, Tomokiyo, Danish literature (Dansk biografisk Lexikon, Danske Magazin, Fund og Forskning), whether the whole text or only the names are in cipher, the cipher type.",
+        "why": "A 570-page autograph book of character sketches of Danish generals, ministers and royal servants, written in cipher according to two catalogues, with no decipherment recorded. A long text in one hand, so a ciphertext-only attack is realistic once pages are imaged. Keys of the same decades in the same library: NKS 1416 4to, NKS 2003 g 4to (Erlund).",
+        "url": "https://soeg.kb.dk/discovery/fulldisplay?docid=alma99122771380305763&vid=45KBDK_KGL:KGL"
+    },
+    {
+        "year": 1692,
+        "date": "1692ff. (the finding aid's date for the bundle; the Lagnasco/Albani item is probably 18th century, not verified)",
+        "title": "Saxon cabinet cipher bundle with one undeciphered sheet: 'Chiffres avec Monseigneur le Cardinal Albani de S. Clement avec Lagnasco à Rome et Lomaca, avec une feuille non dechiffrée'",
+        "correspondents": "Cardinal Albani of S. Clemente, Count Lagnasco (Saxon-Polish envoy in Rome), Lomaca; Saxon cabinet",
+        "place": "Rome / Dresden / Warsaw",
+        "language": "unknown (French or Italian likely)",
+        "period": "1601-1800",
+        "shelfmark": "Sächsisches Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 03234/06",
+        "folio_note": "Finding aid: 'Chiffren (wahrscheinlich von der französischen Gesandtschaft zu Warschau und aus den Jahren 1692-1697 herrührend; Chiffres avec Monseigneur le Cardinal Albani de S. Clement avec Lagnasco à Rome et Lomaca, avec une feuille non dechiffrée; zwei Pakete Chiffen, von der Gesandtschaft zu Wien herrührend)'. No image seen; no scan icon on the record.",
+        "cls": "B",
+        "status": "15 Nov 2026: finding-aid line only. known.py 'Lagnasco', '03234/06': no hit (Loc. 03234/01-07 are listed in research/archivportal_d as bare key volumes, without this detail). No prior-art search was run for this sheet. Not checked: DECODE (it holds Flemming keys from Loc. 03233/02), the size of the sheet, whether the key in the same bundle reads it.",
+        "why": "An undeciphered cipher sheet lying in the bundle that holds the keys named with it: a likely key match once imaged. One sheet only.",
+        "url": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=25276fcc-8d42-4969-86ed-8f6f1fcbd8f8"
+    },
+    {
+        "year": 1724,
+        "date": "1724-1725",
+        "title": "Arrest of Captain von Löwenburg at Naumburg for his ties to Stanisław Leszczyński: file with 'Zettel mit Chiffren'",
+        "correspondents": "Captain von Löwenburg; Stanisław Leszczyński's circle (not specified); Saxon Geheimes Kriegsratskollegium",
+        "place": "Naumburg / Sonnenstein (Saxony)",
+        "language": "unknown",
+        "period": "1701-1800",
+        "shelfmark": "Sächsisches Hauptstaatsarchiv Dresden, 11237 Geheimes Kriegsratskollegium, Loc. 10922/01",
+        "folio_note": "Finding aid: 'Verhaftung des Captains von Löwenburg in Naumburg wegen seiner Verbindung zu Stanislaus Leszinski und dessen Arrest auf der Festung Sonnenstein. Enthält u. a.: Haftbedingungen.- Verhörprotokoll.- Zettel mit Chiffren.' No image seen; no scan icon.",
+        "cls": "B",
+        "status": "15 Nov 2026: finding-aid line only. known.py 'Löwenburg', '10922/01': no hit. No decipherment mentioned. Not checked: whether the slips are ciphertext or a key list, their length, DECODE, literature on the Löwenburg case.",
+        "why": "Seized cipher slips in a 1724-25 espionage file, with the interrogation record beside them (possible cribs). Low weight until seen: 'Zettel mit Chiffren' may be a key or a few groups.",
+        "url": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=c1cc025a-fc98-454f-a988-44b3ddd3ea33"
+    },
+]
+
+with open(os.path.join(HERE, 'candidates.json'), 'w', encoding='utf-8') as fh:
+    json.dump(ROWS, fh, ensure_ascii=False, indent=1)
+print(len(ROWS), 'rows')

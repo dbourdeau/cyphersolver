@@ -1,0 +1,371 @@
+{
+ "2833": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: the old Autographenkatalog card (katzoom Zettel 30758, read 16 Nov 2026) gives the piece as Autogr. 15/1-3, a letter signed with address, Graz 7 Jan 1607, to Rudolf II, 'mit 7 Beil. (Brief an Ferdinand II. v. e. unbek. Schr.; 3 Briefe in Geheimschrift; 3 latein. Schriftbl.)'. Three cipher letters filed with three Latin sheets look like ciphertext plus decipherment, but the card does not say so and the piece is not digitised, so neither open nor read can be established.",
+  "access": "archive",
+  "access_note": "OeNB Sammlung von Handschriften und alten Drucken, Autogr. 15/1-3. Not digitised: the Alma record AC14109257 (via the ONB SRU, open to scripts on 16 Nov 2026) has only the catalogue card link, no DTL or digital-object link. Needs a reading-room look or a scan order to see whether the 3 Latin sheets decipher the 3 cipher letters.",
+  "correct_shelfmark": "OeNB, Autogr. 15/1-3 (third piece under Ferdinand II on the old Autographenkatalog card; the lead's form 'Autogr. 15/1-3' is right, but it is one item number, not items 1 to 3)",
+  "blocker": "Not online; whether the three Latin sheets are decipherments of the three cipher letters decides read against open."
+ },
+ "2837": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "Not a historical cipher letter but a seven-leaf cryptography tract whose own title says it gives the cipher together with the sentence it contains ('Copia d'una cifra manifesta con la sententia contenuta in essa', Tabulae codicum VI p. 54: 'seu brevis tractatus de cryptographia', incipit 'Ogni lettera significa...'): the plaintext is stated in the item, so there is nothing to recover.",
+  "access": "archive",
+  "access_note": "OeNB Cod. 9521 (old shelfmark Nov. s. n.), 17th c., 7 ff.; not digitised (ONB SRU record AC13952749 has no digital-object link, only the Tabulae codicum page link). Description read from Tabulae codicum VI p. 54 (manuscripta-mediaevalia page HSK0751f_b0054).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Tabulae codicum manu scriptorum ... in Bibliotheca Palatina Vindobonensi VI (1873) p. 54, no. 9521, page image https://bilder.manuscripta-mediaevalia.de/bilder/hs-bilder/k/HSK0751f_b0054.jpg (read 16 Nov 2026); ONB Alma record AC13952749 via the SRU interface (MARC fields read). The leaves themselves were not seen.",
+    "extent": "7 paper leaves, 17th century, Italian; a short tract with one worked cipher example, length of the cipher not stated.",
+    "cipher": "Tabulae: 'Fedele Piccolomini Fedeli, Copia d'una cifra manifesta con la sententia contenuta in essa seu brevis tractatus de cryptographia. Incip.: Ogni lettera significa... Expl.: se stessi condannerano.' The title says the cipher is made plain ('manifesta') with its sentence, and the incipit begins by stating what each letter signifies, i.e. the key."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Cod. 9521', 'Fedeli', 'Piccolomini', 'cifra manifesta' (DECODE dumps, ledgers, catalogue, leads): only this lead and its sweep row; no DECODE record of this tract.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Fedeli, Piccolomini, 'cifra manifesta' and 9521: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "No edition known; the item states its own plaintext ('con la sententia contenuta in essa'), so the cipher is solved within the manuscript.",
+    "literature": "Only the Tabulae codicum entry and the ONB catalogue record were found; the item is a didactic tract, so there is no unread historical text to look for in the literature."
+   },
+   "key_check": "The incipit 'Ogni lettera significa...' opens with the letter values, so the key is given in the tract itself; nothing to rebuild.",
+   "duplicates": "known.py on the shelfmark and author: only this lead; no catalogue entry or other lead for Cod. 9521.",
+   "verdict": "read",
+   "closed": "Closed as read: the tract gives its example cipher together with the sentence and the letter values, so no unread ciphertext remains."
+  }
+ },
+ "2836": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "The album is the Masonic Stammbuch of Johann Georg Kronauer (Vienna 1783-91, the album with Mozart's entry of 30 Mar 1787 on fol. 41r) and is fully digitised. Fol. 28r carries a whole entry of about twelve lines in an invented alphabet, with a ciphered signature and place/date line; fol. 24r has five short lines of Masonic pigpen beside a drawing, and fol. 31r a pigpen name in an otherwise clear entry of 25 Sep 1784. No decipherment is written on the pages, and none was found in print.",
+  "access": "online",
+  "access_note": "ONB digital copy: onb.digital/result/13219C69, IIIF manifest https://api.onb.ac.at/iiif/presentation/v3/manifest/1004802B (188 canvases, about 1050 px wide; the ONB IIIF route answered on 16 Nov 2026 after failing on 15 Nov). Canvas index 50 = fol. 21r; fol. 24r = index 56, fol. 28r = 64, fol. 31r = 70.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "ONB digital copy of Cod. Ser. n. 4832 (manifest api.onb.ac.at/iiif/presentation/v3/manifest/1004802B): fol. 24r (canvas 56), fol. 28r (canvas 64) and fol. 31r (canvas 70) viewed at full served size on 16 Nov 2026; fol. 21r (canvas 50) to fix the numbering; fol. 75v (register, canvas 165) glanced at. Fol. 37r, 51r and 78v were not located (silhouette inserts shift the canvas numbering) and not seen.",
+    "extent": "Fol. 28r: about 12 lines (roughly 80 words) of continuous text in an invented script, plus a two-line ciphered signature and a ciphered place/date. Fol. 24r: five short lines of pigpen-type signs. Fol. 31r: one name in pigpen. Further entries on fol. 37r, 51r (Epstein's signature) and 78v per the catalogue.",
+    "cipher": "Fol. 28r is a simple-substitution text in invented letter forms (word divisions and punctuation kept), not a known script; fol. 24r and 31r use the square-and-angle Masonic pigpen alphabet. No interlinear, marginal or facing decipherment on the pages seen; the rest of each entry is in clear German or Latin."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Ser. n. 4832', 'Stammbuch', 'Epstein', 'Ankersberg', 'Haschka' (DECODE dumps, ledgers, catalogue, leads): only this lead and its sweep row; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Kronauer, Stammbuch, Epstein, Ankersberg, Haschka and 4832: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "No edition of the whole album found. Paul Nettl, Mozart and Masonry (1957), ch. 'A Masonic album from Mozart's day' (archive.org full text read) describes the Kronauer album and quotes the clear entries of Mozart, Gemmingen, Born, Alxinger, Blumauer, Ratschky, Müller and Hoffmann, but says nothing of the cipher entries. The Mozart documents (Dokumente 253; mozartdocuments.org) print only Mozart's fol. 41r.",
+    "literature": "Web search (Kronauer Stammbuch Freimaurer Geheimschrift entziffert, Cod. Ser. n. 4832) found only Mozart-entry pages (mozartdocuments.org, DME Mozarteum) and Nettl; nothing on a reading of the cipher entries."
+   },
+   "key_check": "No key in the album was seen. The pigpen entries use the standard Masonic pigpen family and should give way to the usual grid; fol. 28r's invented alphabet has no key on the page. The album's own register (fol. 73v-77v) names the contributors by number and may give the writer of fol. 28r as a crib; not read for this.",
+   "duplicates": "known.py on shelfmark and names: no catalogue entry or other lead for the Kronauer album; Mozart's clear entry is printed, the cipher entries are not.",
+   "verdict": "open"
+  }
+ },
+ "2109": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the recorded blocker stands. Only the OSU catalogue lines are known ('unsolved cryptogram on leaf 96a' in Hilandar 18; 'unresolved cryptogram ... lnirlf' on the cover of Hilandar 112). ArchiveGrid answers a bot check today, and a web search on 16 Nov 2026 found nothing on either cryptogram (Hilandar 18 appears in Turilov 2019 only as a codex copied by the scribe Martinian about 1322, which also makes the lead's year 1500 a placeholder). A six-letter litorea on a cover is likely below target length even if open.",
+  "access": "archive",
+  "access_note": "OSU Hilandar Research Library microfilm / the Hilandar monastery originals; no scan online. ArchiveGrid (the catalogue route) is behind a bot check today.",
+  "blocker": "No image of Hilandar 18 f. 96a or the Hilandar 112 cover, and ArchiveGrid blocked; needs the OSU film or the Bogdanović/Matejić Hilandar catalogue text."
+ },
+ "2650": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "The Open Jerusalem catalogue of Ali Ekrem Bey's collection (Israel State Archives, about 262 items described 2016-17, inventory and translation by Yasemin Avci) gives every 1907 cipher telegram a content title, e.g. 'Cipher to Grand Vizierate about not doing in Jaffa orange shipping as long as no order is given ... 1 November 1907', 'Cipher sent to governor of Jerusalem about negotiating of subject about rikanderos ... 29 May 1907', 'Encrypted telegram sent to governor of Jerusalem by Mezid, Gaza district governor, 11 July 1907'. The cataloguer summarised their content, so the file copies carry their clear text (governors' offices filed cipher telegrams deciphered, and outgoing ones as clear drafts); nothing here is an unread ciphertext as far as the catalogue shows.",
+  "access": "archive",
+  "access_note": "Israel State Archives, Ali Ekrem Bey collection (JM-ISA/AEB), catalogued on archives.openjerusalem.org; the collection is closed and consultation is 'subject to the authorization of Israel State Archives'. openjerusalem.org still refuses connections from this network (curl exit 35, WebFetch ECONNRESET, 16 Nov 2026); titles were read from web-search result listings.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Record titles of the Open Jerusalem catalogue (archives.openjerusalem.org informationobject pages, as returned by a web search on 16 Nov 2026): the 1 Nov 1907 cipher to the Grand Vizierate on Jaffa orange shipping, the 29 May 1907 cipher on the 'rikanderos' and sects, the 11 Jul 1907 encrypted telegram from Mezid of Gaza, the 26 Dec 1907 encrypted telegram to the governor, JM-ISA/AEB/83/108 (1 Nov 1907, Minister of Public Security, 1 page, Ottoman Turkish). The record pages themselves did not open from this network; no image exists online.",
+    "extent": "A number of one-page cipher telegrams of 1907 within a fonds of about 300 items (262 described), 1870-1918; exact count of cipher items not established.",
+    "cipher": "Catalogued as 'cipher' or 'encrypted telegram', each with a content summary (subject, sender, addressee, date), which shows the text was readable to the cataloguer: the items are deciphered or clear file copies of Ottoman cipher telegrams, not unread ciphertext."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Ali Ekrem', 'Open Jerusalem', 'Jerusalem', 'Ottoman': only this lead and the Koc/Ottoman sweep notes; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Ali Ekrem, Jerusalem and Open Jerusalem: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched: 'Ottoman' occurs only in an unrelated French despatch summary; no Jerusalem or Ali Ekrem item.",
+    "edition": "The Open Jerusalem catalogue (Yasemin Avci's inventory and English translation of the titles, 2016-17) is itself the reading: it gives the subject of each cipher telegram. No printed edition checked.",
+    "literature": "Web search ('Ali Ekrem' Jerusalem 1907 encrypted telegrams openjerusalem) returned only the Open Jerusalem catalogue records; no study treats the telegrams as unread."
+   },
+   "key_check": "No Ottoman Interior Ministry code book of 1907 was looked for; with the texts already summarised by the cataloguer, none is needed for vetting.",
+   "duplicates": "known.py: no catalogue entry or other lead for the Ali Ekrem Bey collection.",
+   "verdict": "read",
+   "closed": "Closed as read: the catalogue gives the content of each 1907 cipher telegram, so the file copies are deciphered or clear; the collection is also closed to readers without ISA authorisation."
+  }
+ },
+ "2087": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "The Archives West finding aid (OHS Mss 370, opened by curl on 16 Nov 2026 with no bot check) says the personal entries 'written in cipher' have 'a key to the cipher ... included in the collection', that Series B box 3/1 holds the 'Cipher key ... Includes explanation of cipher', and that Joseph A. Schiwek transcribed all the diaries in 1973 (uncorrected transcription vols. 1-4 for 1855-1896, plus corrected transcriptions). With the key, its explanation and a full transcription filed together, the cipher was read. The lead's 'restricted' (from ArchiveGrid) is out of date: Archives West says 'The collection is open to the public'.",
+  "access": "archive",
+  "access_note": "Oregon Historical Society Research Library, Portland, Mss 370 (2 card-file boxes, 3 document cases); not digitised. Finding aid https://archiveswest.orbiscascade.org/ark:80444/xv06162 now opens by script.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archives West finding aid for the Hiram Brown Diaries, OHS Mss 370 (https://archiveswest.orbiscascade.org/ark:80444/xv06162, full text read 16 Nov 2026): Content Description, Alternative Forms Available and the Series A/B container list. The diaries themselves are not digitised and were not seen.",
+    "extent": "39 diary volumes, 1855-1896 (no 1858 or 1874), mostly brief steamboat and tide entries; personal and family entries in cipher, scattered through the run; amount of cipher not stated.",
+    "cipher": "Finding aid: 'Personal information, such as family events, is written in cipher. A key to the cipher is included in the collection. In 1973 the diaries were transcribed by Joseph A. Schiwek.' Box 3/1: 'Cipher key and biographical materials. Includes explanation of cipher'. Boxes 3/2-4/1: uncorrected transcriptions for 1855-1896; 4/2-4: corrected transcriptions."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Hiram', 'Brown diar', 'Astoria', 'Oregon', 'Schiwek': only this lead and its US-blocked sweep row; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Hiram Brown, Astoria, Oregon and Schiwek: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "Not printed as far as found, but the collection itself holds Joseph A. Schiwek's complete 1973 transcription (uncorrected and corrected) of the diaries, made with the cipher key and an 'explanation of cipher' filed in the same series.",
+    "literature": "Only the Archives West finding aid and the ArchiveGrid summary were found; no study treats the cipher as unread."
+   },
+   "key_check": "Key held in the collection: OHS Mss 370, Series B, box 3/1 'Cipher key and biographical materials ... Includes explanation of cipher' (not seen, not tested).",
+   "key_in_volume": "OHS Mss 370 Series B box 3/1 holds the cipher key with an explanation of the cipher, filed with Schiwek's transcriptions; not seen or tested here.",
+   "duplicates": "known.py: no catalogue entry or other lead for the Brown diaries.",
+   "verdict": "read",
+   "closed": "Closed as read: the diarist's cipher key and an explanation of it are in the collection, and the whole run was transcribed by Joseph Schiwek in 1973."
+  }
+ },
+ "2893": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the recorded blocker stands. Savage-Smith (2011) only says 'curious letter forms and undeciphered writing' on f. 101a; both Digital Bodleian objects for MS. Laud Or. 139 lack that leaf (checked 15 Nov 2026), and the Bodleian is behind a bot check today, so nothing new could be tried. It is not established that the passage is a cipher rather than pen trials or another script.",
+  "access": "archive",
+  "access_note": "Bodleian, Weston Library; f. 101a not digitised; needs an image order.",
+  "blocker": "f. 101a not online; Bodleian blocked to scripts today."
+ },
+ "2517": {
+  "verdict": "partly_read",
+  "confidence": "low",
+  "note": "Mignet, Négociations relatives à la succession d'Espagne II (archive.org ngociationsrel01mignuoft, pp. 284-285) identifies the volume as AAE Correspondance politique Brandebourg vol. V and uses Millet's letter to Lionne of 24 Aug 1667 for news that is not in the clear part Simson printed (the Brandenburg court told Millet that the margrave of Baden had been refused and was leaving without troops). So the cipher part of the 24 Aug despatch was readable to Mignet from the AAE volume, i.e. a decipherment of it exists there or was made; Simson's 'Vgl. Mignet II p. 285' points to exactly that. For the 27 July despatch ('grösstentheils undechiffrirt') Mignet cites only the despatches of 10 and 20 July, so its state is not established. Not open as a pair; if split, 27 July 1667 needs a look at CP Brandebourg 5.",
+  "access": "archive",
+  "access_note": "Archives diplomatiques, La Courneuve, Correspondance politique Brandebourg (Prusse) vol. 5 (1667), per Mignet's footnotes; digitisation not established.",
+  "correct_shelfmark": "Paris, AAE, Correspondance politique, Brandebourg vol. 5 (Mignet II pp. 279-289 footnotes 'Correspondance de Brandebourg, vol. V'), Millet to Lionne, Berlin, 27 July and 24 Aug 1667",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm II (1865), archive.org urkundenundacten02berluoft full text: Millet an Lionne 27 Jul 1667 (note 'Grösstentheils undechiffrirt') and 24 Aug 1667 (note 'Zum grossen Theil nicht dechiffrirt. Vgl. Mignet II p. 285'), read 16 Nov 2026; Mignet, Négociations II, archive.org ngociationsrel01mignuoft full text pp. 279-289 read 16 Nov 2026. The AAE originals were not seen.",
+    "extent": "Two despatches, each in large part in cipher; Simson printed only the clear parts (the 24 Aug clear part is about a book on the king's claims in the Empire, the elector's journey and a Swedish resident).",
+    "cipher": "Editor's notes say both despatches are largely not deciphered in the AAE volume. Mignet II p. 285 nevertheless reports, citing 'Lettre de M. Millet à M. de Lionne du 24 août 1667, même volume', that the court 'lui donna aussi la nouvelle que le marquis de Baden avait été refusé par l'électeur', content absent from Simson's clear text: part of the cipher of 24 Aug was read. Mignet does not cite the 27 July despatch."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Millet', 'Lionne', 'Brandebourg', 'Jeurs': no record of these despatches; DECODE holds two Millet letters of 1665 from Poland (R2679, R2681, Mélanges de Colbert), a different mission (as the lead records).",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Millet, Lionne, Brandebourg, Jeurs: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "Simson (UA II, 1865) prints the clear parts only and marks the cipher undeciphered; Mignet II (1835-42) pp. 284-285 uses the 24 Aug despatch for content that lies outside the printed clear text, so that despatch's cipher was read at least in part.",
+    "literature": "No further literature searched beyond the two editions; the lead's record already notes that Lionne's office deciphered incoming despatches as a rule."
+   },
+   "key_check": "No key looked for; Millet's 1665 Polish letters on DECODE (R2679, R2681) may share his key and could be compared if the 27 July cipher is ever photographed.",
+   "duplicates": "known.py: no catalogue entry or other lead for Millet's Berlin despatches of 1667.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: Mignet used the cipher part of the 24 Aug 1667 despatch from the same AAE volume; the 27 July despatch is unproven either way and would need CP Brandebourg 5 to be reopened as its own lead."
+  }
+ },
+ "1915": {
+  "verdict": "read",
+  "confidence": "low",
+  "note": "The only cipher piece in the two volumes is Saint-Priest to Choiseul, 2 May 1769, CP Turquie 151 'fol. 11vo (rejtjelezett levél)', and the MNL abstractor gives its content ('Tott megérkezése Konstantinápolyba', Tott's arrival at Constantinople), so the passage was readable from the volume; vol. 153 fol. 32 is a clear letter about Tott's cipher correspondence, not a cipher piece (both found in the 2 Nov and 11 Nov MNL reads recorded on the lead). Nothing points to undeciphered ciphertext; one short passage at most.",
+  "access": "archive",
+  "access_note": "AAE La Courneuve, CP Turquie 151 and 153 (not digitised); MNL OL holds microfilm abstracts only (HK-MAE AD-133CP-151/-153).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "MNL OL abstracts of AAE CP Turquie 151 and 153 (HK-MAE AD-133CP-151, -153), read in Chrome in the earlier pass and recorded in the lead's vetting_note; Archives Portal Europe records C1137509516 and C1137509518. The AAE volumes themselves were not seen.",
+    "extent": "One cipher passage on fol. 11v of vol. 151 (Saint-Priest to Choiseul, 2 May 1769); length not stated, probably a short passage.",
+    "cipher": "MNL abstract: 'fol. 11vo (rejtjelezett levél) Tott megérkezése Konstantinápolyba' - a ciphered letter whose content (Tott's arrival at Constantinople) the abstractor states, which means the text was readable from the volume (interlinear decipherment or a filed clear). Vol. 153 fol. 32 'Tott rejtjeles levelezése krími konzulsága idején' is a subject heading (Tott's cipher correspondence as consul in the Crimea) inside Saint-Priest's clear letter of 19 Jan 1770."
+   },
+   "prior_art": {
+    "decode": "known.py on Saint-Priest, Saint Priest, Tott, Turquie, Choiseul and the MNL numbers: no record of these volumes; the repo holds only Saint-Priest 1773 and 1776 items from other sweeps.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Saint-Priest, Tott, Turquie and Choiseul: no entry for these despatches.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no entry for CP Turquie 151 or 153.",
+    "edition": "No edition of Saint-Priest's 1769-70 despatches found; Tóth's 2014 Tott edition covers Tott's Crimean consular letters, not these despatches (recorded on the lead). The MNL abstract gives the cipher letter's content.",
+    "literature": "No study of Saint-Priest's 1769 cipher found; the archive abstract is the only description."
+   },
+   "key_check": "Not looked for; the French Constantinople embassy keys of the 1760s-70s would be in the AAE Chiffre series. Not needed: the abstract shows the passage was read.",
+   "duplicates": "known.py: no catalogue entry or other lead for CP Turquie 151/153; Saint-Priest 1773/1776 leads are different volumes.",
+   "verdict": "read",
+   "closed": "Closed as read (low confidence): the archive's abstract states the content of the one cipher passage, so it was deciphered or accompanied by its clear; the other volume holds no cipher piece."
+  }
+ },
+ "2799": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The 'intercepted note in code from the Duke of York' in Braye MS. 3 ('Letters and State Papers 1648-1710') is the first item of that volume as calendared by HMC: with the Derby House Committee order of 21 Feb 1647/8 are '(1) a paper beginning: A cypher sent in a letter from the King to the Duke of York, signed Yorke; (2) a holograph letter from the Duke of York, with eight words in cipher, signed J. Parly; (3) a copy of the above deciphered. (All the above are printed in Lords' Journals, vol. x. p. 77.)' The cipher key, the decipherment and a printed text all exist. The lead's date is wrong: it is February 1648 (the 14-year-old James in Parliament's custody), not about 1670.",
+  "access": "archive",
+  "access_note": "Parliamentary Archives, Braye MS. 3. The two Discovery records are TNA image-library photographs (YPIC/P/301to399/374-375, 'digitised: true'); the Discovery page answered a 202 challenge to curl, so the photographs were not viewed.",
+  "correct_date": "21 Feb 1647/8 (Derby House Committee order; the Duke of York's letter is of the same weeks)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details for YPIC/P/301to399/374 and /375 (read 16 Nov 2026: 'Intercepted note in code from the Duke of York. First Page / Second Page. (Archives of Parliament, Braye MS.3, Letters and State Papers 1648-1710)'); HMC, Report on the manuscripts of ... Lord Braye (archive.org manuscriptsofmar00grea_0, full text, pp. 167-168) read 16 Nov 2026. The photographs themselves were not viewed.",
+    "extent": "A short holograph letter with eight words in cipher (two photographed pages, which may include the deciphered copy or the cipher paper).",
+    "cipher": "HMC: 'a holograph letter from the Duke of York, with eight words in cipher. Signed J. Parly' filed with 'A cypher sent in a letter from the King to the Duke of York' (the key) and 'a copy of the above deciphered', all printed in Lords' Journals x p. 77."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Braye', 'Duke of York', 'YPIC', 'Parliamentary Archives': only this lead and its TNA sweep row for the item; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Braye, Duke of York and Parly: no entry for this note.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no entry.",
+    "edition": "Printed with its decipherment in the Journal of the House of Lords vol. 10 p. 77 (Feb 1648), as HMC's calendar of the Braye MSS (Lord Braye's MSS, p. 167-168) states; the deciphered copy is filed with the letter.",
+    "literature": "HMC's Braye report is the decisive source; no further literature needed once the Lords' Journals print is known."
+   },
+   "key_check": "Key filed with the letter: 'A cypher sent in a letter from the King to the Duke of York', signed 'Yorke' (Braye MS. 3, with the Derby House order of 21 Feb 1647/8).",
+   "key_in_volume": "Braye MS. 3 holds Charles I's cipher sent to the Duke of York (signed 'Yorke') with the letter and a deciphered copy; not tested here, the reading being printed.",
+   "duplicates": "known.py: no catalogue entry or other lead for this note; the two Discovery records are two photographs of the same item.",
+   "verdict": "read",
+   "closed": "Closed as read: the eight cipher words were deciphered at the time (deciphered copy and key filed with the letter) and the whole is printed in Lords' Journals x p. 77."
+  }
+ },
+ "2889": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the recorded blocker stands. The museum's own label is 'Cipher (?)', and the only images (fragment about 520 px across in a 1600 px frame) do not establish cipher rather than Greek-Coptic numerals or fraction signs; nothing new is findable by script (no bibliography exists, APD searched 15 Nov 2026).",
+  "access": "online",
+  "access_note": "Penn Museum E16470, two low-resolution images online; full master scan needed.",
+  "blocker": "Needs the museum's master scan and a papyrologist's identification of the signs."
+ },
+ "2718": {
+  "verdict": "key_lookup",
+  "confidence": "medium",
+  "note": "The Tresoar node is not an item but a line in the introduction to access 2 'Bestuur van Friesland (originelen in Brussel)' (1498-1598), which lists the sections of the Brussels Audience inventory: '- Formulaires et chiffres (Inv.nrs. 646/2-646/6, 1199-1221)'. '1199-1221' are inventory numbers (old 646/2-6, new 1199-1221), not dates, so the lead's 'misprint' reading is wrong; Tresoar describes no items under it (the same line occurs twice, nodes 1009755 and 811112, 0 scans, no children). A 'formularies and ciphers' section of the Audience is form-books and cipher keys, not a ciphertext target; the fonds introduction (node 1008394) adds that the few pieces 'gesteld in geheimtaal' are 'vrijwel altijd inclusief de ontcijfering'.",
+  "access": "archive",
+  "access_note": "Brussels, Archives générales du Royaume, Audience inv. 1199-1221 (old 646/2-646/6); Tresoar holds only fiches/introduction text for the Friesland-related Audience files and lists no items for this section.",
+  "correct_shelfmark": "AGR Brussels, Audience, inv. nos. 1199-1221 (old nos. 646/2-646/6), 'Formulaires et chiffres', as cited in the introduction to Tresoar access 2",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Tresoar open JSON API, 16 Nov 2026: /api/nodes/1009755 and /api/nodes/811112 (both 'Inleiding' lines '- Formulaires et chiffres (Inv.nrs. 646/2-646/6, 1199-1221)', scan_count 0), parent 1009753 'Affaires diverses' (children: only this line and 'Pièces concernant la monnaie (Inv.nrs. 1359-1360)'), root 726207 'Bestuur van Friesland (originelen in Brussel)', and fonds introduction node 1008394; /api/search for chiffre*, formulaire*, geheimtaal, ontcijfering. Nothing at item level exists to view.",
+    "extent": "A section of 23 inventory numbers (1199-1221) in the Brussels Audience inventory; content per number not described anywhere reached.",
+    "cipher": "Only the section title 'Formulaires et chiffres' (form-books and cipher keys); no ciphertext is described. The fonds introduction says ciphered pieces in these files nearly always come with their decipherment."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Friesland', 'Frise', 'Tresoar', '646/2', 'Formulaires': only this lead and the Dutch sweep rows; no DECODE record of Audience 1199-1221.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Friesland, Frise, Audience and 646: no entry.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no entry.",
+    "edition": "No edition applies: the section is key and formulary material; the Tresoar introduction states that cipher pieces in the Friesland files are nearly always accompanied by their decipherment.",
+    "literature": "No study of these Audience 'chiffres' found by the Tresoar searches; not searched further because no ciphertext is described."
+   },
+   "key_check": "The section itself is (by its title) cipher keys and formularies of the Brussels government: a key source to record for Habsburg Netherlands ciphers of the 16th century, not a ciphertext.",
+   "key_held": "AGR Audience 1199-1221 (old 646/2-6), 'Formulaires et chiffres': cipher keys of the Brussels government listed in the Tresoar introduction; not seen or tested.",
+   "duplicates": "known.py: no catalogue entry for Audience 1199-1221; the Tresoar line appears twice in the same access (nodes 1009755 and 811112), one section.",
+   "verdict": "key_lookup",
+   "closed": "Closed as key lookup: the node names a section of cipher keys and formularies in the Brussels Audience, not ciphertext; ciphered pieces in the Friesland files nearly always carry their decipherment per the fonds introduction."
+  }
+ },
+ "1964": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the recorded blocker stands. AP Poznań, Akta Braci Czeskich unit 799 (O-77382), 'C.M.Berczeny poseł księcia Franciszka II Rakoczego', 1710-11, is described only as 'łaciński szyfr; 6 listów', with no scans (szukajwarchiwach 'brak skanów', 11 Nov) and no addressee; whether ciphertext or a key survives, and whether it is deciphered, cannot be told. A web search on 16 Nov 2026 (Rákóczi, Akta Braci Czeskich, szyfr, Bercsényi) found nothing on the unit.",
+  "access": "archive",
+  "access_note": "AP Poznań microfilm unit 53/892/0/2/799; no scans; needs an AP Poznań scan order.",
+  "blocker": "No scans and a one-word description; three earlier passes (4, 11 Nov) and this one found no other route."
+ },
+ "1965": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the recorded blocker stands. AP Poznań, Akta Braci Czeskich unit 987 (O-77570), Rákóczi, nine French and Latin letters 1713-17, is described only as '9 listów; szyfr', with no scans and no addressee; the Rákóczi keys at MNL P 396 are held but untested, and Tüskés/Kovács/Köpeczi 2004 (Rákóczi-Sieniawska correspondence) was not reachable by script. Nothing new found on 16 Nov 2026.",
+  "access": "archive",
+  "access_note": "AP Poznań microfilm unit 53/892/0/-/987; szukajwarchiwach answers scripts with an Incapsula page; needs an AP Poznań scan order.",
+  "blocker": "No scans and a one-word description; ciphertext not shown to survive."
+ },
+ "1966": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict; the recorded blocker stands. SOAS Dodwell papers MS 380667/03 'Cypher letter from Dupleix, 30 May 1752' names no addressee; Furber's typescript has three Dupleix cipher letters of that day, two printed with clear text (to Bussy and to Dugrez, Arch. Vers. 3754, read) and one to Dauteuil with the code left out. Which one SOAS holds decides read against open. On 16 Nov 2026 library.soas.ac.uk did not connect (curl 000) and Archives Hub returned 403.",
+  "access": "archive",
+  "access_note": "SOAS Library, Dodwell papers MS 380667/03; catalogue behind AWS WAF / Cloudflare today; no scans.",
+  "blocker": "Addressee of the SOAS cipher letter unknown; SOAS catalogue and Archives Hub blocked to scripts."
+ },
+ "2938": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "Theal (Records of the Cape Colony III p. 387-388) prints Yonge to Dundas, secret, 6 Jan 1801, sending Prediger's papers 'of which Some Is in Cypher, as the one Part throws Light on the rest', with an abstract; Theal's bracket: 'The Enclosures, excepting a long letter in cypher, are not now to be found.' So the cipher letter survived in the Cape despatches at the PRO when Theal copied them, while Yonge's abstract did not; no decipherment is printed or reported (Dundas, p. 482-483, says only that after Prediger died on passage nothing in the papers implicated his companions). Low confidence because the CO 48 volume is not identified and a London decipherment of 1801 cannot be excluded. Prediger was the Raad der Aziatische Bezittingen's emissary, and the repo's batavia1800 key (Smissaert to C. J. Prediger, 20 Nov 1800) is the first key to try.",
+  "access": "archive",
+  "access_note": "TNA CO 48 (Cape of Good Hope original correspondence), 1801 volume with Yonge's secret despatch of 6 Jan 1801; not described at item level on Discovery (API searches for Prediger, Yonge/Dundas 1801 and CO 48 1801 on 16 Nov 2026 found nothing) and not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "G. M. Theal, Records of the Cape Colony III (1898), archive.org recordsofcapecol00thea_17 full text read 16 Nov 2026: Yonge to Dundas 6 Jan 1801 (p. 387) with the editor's note on p. 388, Yonge to Dundas 12 Jan 1801, Yonge's later despatch on Prediger, and Dundas's reply (pp. 482-483). The cipher letter itself was not seen.",
+    "extent": "'A long letter in cypher' among Prediger's seized papers; length and system not stated.",
+    "cipher": "Editor's description: the enclosures of Yonge's 6 Jan 1801 despatch are lost 'excepting a long letter in cypher'. Yonge: some of the papers are 'in Cypher', found concealed in the baggage. No decipherment is printed by Theal and none is mentioned in Yonge's or Dundas's letters; Yonge's abstract of the papers is among the lost enclosures."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Prediger', 'Yonge', 'Cape of Good', 'Dundas', 'CO 48': only this lead, its sweep row and the batavia1800 target (a different letter, Nationaal Archief 2.01.27.02 inv. 209); DECODE searched earlier for Prediger, Yonge and Cape of Good Hope with no record (recorded on the lead).",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Prediger, Yonge, Cape of Good Hope, Dundas: no entry.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no entry.",
+    "edition": "Theal III prints Yonge's covering despatches but not the cipher letter, which he notes survives; no other edition of Prediger's papers found.",
+    "literature": "TNA Discovery API searches (Prediger; Yonge Dundas 1801; Cape original correspondence 1801) returned no description of the letter; no study of Prediger's mission papers found."
+   },
+   "key_check": "No key filed with it as far as known. Prediger was sent by the Raad der Aziatische Bezittingen; its letter cipher to C. J. Prediger of 20 Nov 1800 (simple substitution, letters as two-digit columns on a 7 x 4 grid) is rebuilt in targets/batavia1800/key.tsv and should be tried first.",
+   "key_held": "targets/batavia1800/key.tsv: the Raad der Aziatische Bezittingen's 1800 letter cipher to C. J. Prediger, rebuilt from a clear minute and validated; not tested on this letter, which has not been seen.",
+   "duplicates": "Not the batavia1800 letter: that one is in the Nationaal Archief with its minute; this one is in the British Cape despatches. known.py found no other lead or catalogue entry for it.",
+   "verdict": "open"
+  }
+ },
+ "2397": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "The Archivi Nazionali fonds record (ca_9568899, read 6 Nov 2026 and quoted on the lead) describes each of the three letters as partly in cipher 'con parziale decodificazione': a decipherment is filed with every piece. Under the project's rule a decipherment filed with the piece closes the lead as read or partly read; how much each decodification covers is not stated, and the letters are in private hands with no images.",
+  "access": "archive",
+  "access_note": "Private owner, under the Soprintendenza archivistica e bibliografica dell'Emilia-Romagna (Bologna); fonds-level record only, no units, no images.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivi Nazionali fonds record ca_9568899, 'Lettere autografe di Maria Carolina d'Asburgo Lorena' (14 letters, 1794-1814), read 6 Nov 2026 in the Naples/Palermo sweep and quoted on the lead: items 8 (6 Mar 1809), 9 (Palermo, 1 Jun 1810) and 10 (17 Apr and 25 May 1812). The letters themselves were not seen.",
+    "extent": "Three letters of 2 leaves each, partly in cipher (item 8: 'la seconda parte è in cifra'); amount of cipher not stated.",
+    "cipher": "Archive description: item 8 'la seconda parte è in cifra con parziale decodificazione'; item 9 'parte in cifra con parziale decodificazione'; item 10 partly in cipher with partial decodification and the draft reply. A partial decipherment accompanies each letter."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Maria Carolina', 'Carolina', 'ca_9568899', 'Naples': only this lead and its sweep row; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Maria Carolina and Carolina: no entry for these letters.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for Maria Carolina and Naples: no entry for these letters.",
+    "edition": "The archive's own description records a partial decodification filed with each letter; the 2020 edition of her letters ('Io, la Regina') was not checked for these privately held pieces.",
+    "literature": "Web search in the 6 Nov sweep for the fonds and its cipher passages found nothing beyond the Archivi Nazionali record; nothing further searched, the filed decodification being decisive for the verdict."
+   },
+   "key_check": "Items 1 and 2 (1794) announce a cipher sheet that is not present in the fonds; no key is known to be filed. The partial decodifications would act as cribs for a fuller reading if images are obtained.",
+   "duplicates": "known.py: no catalogue entry or other lead for this private fonds.",
+   "verdict": "partly_read",
+   "closed": "Closed as partly read: the archive records a partial decodification filed with each of the three cipher letters; the unread remainder, if any, cannot be measured without the owner's images."
+  }
+ },
+ "2519": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "Meets the bar on the archive's description: PRONI says 'Some letters in code' in a file of 15 letters from Ivy Neville-Rolfe to Dufferin 're linguistic matters, ciphers etc.', with no decoding or key mentioned, and nothing in print. The 11 Nov block (kept in vetting_held) answered every prior-art field; a further web search on 16 Nov 2026 found only unrelated Neville-Rolfe and Dufferin letters. Low confidence and low weight: a private pastime code of unknown extent, and Dufferin's replies (which might hold a key or answers) were not examined.",
+  "access": "archive",
+  "access_note": "PRONI, D1071/H/B/N/60; not digitised; reading room or copy order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "PRONI eCatalogue, D1071/H/B/N/60 (row '1890-1891 Letters from Miss Ivy NEVILLE-Rolfe' and its full description, read by the 11 Nov 2026 cloud vetting pass and its sweep; recorded in the lead's vetting_held). Not digitised; no letter seen.",
+    "extent": "15 letters of 1890-1891; how many are in code, and how much code each holds, is not stated.",
+    "cipher": "PRONI description: '15 letters from Miss Ivy NEVILLE-Rolfe, Naples, re linguistic matters, ciphers etc., and thanking Dufferin for cruises on the Lady Hermione. [Some letters in code].' No decoding or key is mentioned."
+   },
+   "prior_art": {
+    "decode": "DECODE RecordsList searched 11 Nov 2026 for 'Dufferin', 'Neville' and 'PRONI': no record of these letters; known.py on 'Neville-Rolfe', 'Rolfe', 'Dufferin', 'D1071' (16 Nov 2026): only this lead and its sweep rows.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Neville-Rolfe, Rolfe, Dufferin and D1071: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) searched for the same terms: no hit.",
+    "edition": "No edition of these private letters is known; Lyall, Life of the Marquis of Dufferin and Ava II (archive.org lifeofmarquisof02lyal, full text) has no mention of Neville-Rolfe or of a cipher (11 Nov 2026).",
+    "literature": "Web searches on 11 and 16 Nov 2026 (Neville-Rolfe, Dufferin, Naples, cipher/code, Lady Hermione, Ivy) found only catalogue entries for other Neville-Rolfe and Dufferin letters and Eustace Neville-Rolfe's Naples in the Nineties; nothing on the coded letters."
+   },
+   "key_check": "No key known. The sibling file D1071/H/B/N/59 (her father Eustace Neville-Rolfe to Dufferin, 1890-1902) and Dufferin's replies were not examined for one.",
+   "duplicates": "known.py on 'Neville-Rolfe' and 'D1071': only this lead and its sweep rows; no catalogue entry for this file.",
+   "verdict": "open"
+  }
+ }
+}

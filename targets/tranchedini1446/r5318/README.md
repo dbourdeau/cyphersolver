@@ -13,7 +13,7 @@ Collegati, Signore, Milano, Sua Sig.ia, Campo, dice, facto, Ambassadore, Fiorini
 Fiorenza (four more entries struck out). Two foot lines are almost all struck through.
 
 Transcribed twice: pass A (`R5318_passA.tsv`) and a blind pass B by a subagent (`R5318_passB_blind.tsv`); about 95% agree, the rest
-settled on the image at 4x. The settled key is given against the shape labels of `targets/tranchedini1448/dudout/texts/sign_legend.md`
+settled on the image at 4x. The settled key is given against the shape labels of `targets/tranchedini1446/dudout1448/texts/sign_legend.md`
 (`key_R5318_by_1448_label.tsv`) so that it applies directly to the labelled texts of both targets.
 
 ## It is the 1446 key, nomenclator included (f. 134 glosses)

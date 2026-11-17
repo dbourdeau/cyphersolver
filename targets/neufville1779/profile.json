@@ -246,16 +246,7 @@
    "what": "Searched Founders Online, HathiTrust full text (incl. search-only Schulte Nordholt and van Winter), Cryptiana and the repository: PBF 28:354 n.9 cites the 23 Feb 1779 Baudouin note (recipient unknown); nothing prints the letters' text, content or code.",
    "result": "worked"
   },
-  {
-   "date": "2026-11-13",
-   "kind": "verification",
-   "technique": [
-    "statistical test",
-    "language-model scoring"
-   ],
-   "what": "Statistical validation (docs/_validate.py): 305 tokens, 119 types, fr-1750-nospace order 4: reading -2.099 per letter; random keys -3.504 (z 9.1); key annealed onto shuffled ciphertext best -2.188 (mean -2.219, z 4.1); annealer on the real text -2.077. Verdict: pass.",
-   "result": "worked"
-  },
+  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 305 tokens, 119 types, fr-1750-nospace order 4: reading -2.099 per letter; random keys -3.504 (z 9.1); key annealed onto shuffled ciphertext best -2.188 (mean -2.219, z 4.1); annealer on the real text -2.077. Verdict: pass.", "result": "worked"},
   {
    "date": "2026-11-14",
    "kind": "control",
@@ -274,39 +265,69 @@
    ],
    "what": "Integration check of PR #587. The three tests rerun from the pair files: T1 139 of 146 (shuffles max 15 of 200), T2 8 of 10 (max 3), T3 64 of 65 (max 7); the three key hashes equal key/FREEZE.txt. Own T1 with 2,000 shuffles: mean 1.8, max 23; 139 is 77.7% of all 179 groups with a draft unit (33 are not covered by K1). An independent decoder built from the pair files gives the same 204-number key and the same decodes of B573, B491, B492 and B527; one difference: 136 has one vote each for 'a' (accented) and 'au', the frozen key holds the first, the decode file prints 'au'. Images fetched from the National Archives Catalog (frames 0428, 0363, 0364a, 0449, 0450, 0455b, 0365-0371, 0007): all 68 numbers of the three bare passages agree with the transcription (the last number of p.573 looks like 369); about 60 of the 69 p.608 pairs, 35 p.600 pairs and 40 p.599 pairs were compared and agree. The p.608 truth file leaves out at least 13 groups that stand on the page (313 in 'connoisse', 32 290 85 60, 204 before 'envie', 261 310 133, 88 74 61 230 248 164), so T3 scores the pairs the transcriber aligned, not the whole page. On p.599 the number 30 stands over 're' in 'encore', so 'g' for 30 in B573 and B492 is against the key and is counted as a hole. The index entry (p.3), the signatures 'Baudouin' of 23 February and 7 March 1779, the sentence about the 'petit chiffre' and the cover to 'Van Temmel' were seen on the images. Founders Online returned an empty response to scripted requests, so the Franklin Papers notes were not checked here. Strict word shares: B573 13 of 18, B491 10 of 16, B492 1 of 4.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Follow-up to the review of PR #587: transcribed every code group of Baudouin's glossed letters pp.516-548 (pp.516, 526-531, 534-535, 547-548; 386 rows) with de Neufville's gloss over each, two passes on doubtful glosses (transcriptions/glossed_pp516-548.tsv). The other pages in the range carry no code. Corrections to the earlier gloss pairs: 474 (not 574) is 'déclaré' on p.516; 271 is 'le', not 'la', on p.526. New pairs include 400 = oi (three clear glosses), 143 = vaisseau(x) (p.534, faint, read the same in both passes), 98 = en, 237 = y, 39 = le Roi d'Espagne, 136 = au four more times.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Completed the p.608 truth file on the image (key/p608_truth_complete.tsv): 92 groups, 23 more than the 69 of heldout_p608_truth.tsv (313, 60, 11 38 141, 138 355 537, 455, 32 290 85 60, 204, 261 310 133, 88 74 61 230 248 164). Re-score of the frozen K2 on the whole page: 81 of 83 covered groups (the T3 pairs alone: 64 of 65); the new miss is 204 = 'le' for \"l'\" in \"l'envie\".",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Round 4 test, plan written before the run (TEST_PLAN.md): every glossed group of the letter of 10 April 1779 (pp.529-531) held out; key K4 (205 numbers, sha256 3fa3b8ba...) frozen from all other sources; 64 of 66 covered held-out groups match the gloss (97%); 200 shuffled keys mean 0.6, max 6. The two misses are word forms (474 déclaré/déclarer, 384 passe/passez); 3 groups not covered (3, 6, 100).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Full key K5 (208 numbers, key/key_full_r4.json, sha256 146207b0...) frozen, then every open number of the bare passages retried. New: 143 = vaisseau in B492 ('d'acheter son vaisseau'); 136 settled as 'au' (5 votes to 1). Unchanged: 3 (taken at the time as glossed only as the numeral 3, p.529, which does not parse in B573; on 15 Nov 2026 that gloss was found to stand over the figure 6, so 3 has no gloss at all), 58, 227, 369/349, 30 (= re in de Neufville's draft; no gloss of 30 in Baudouin's letters), 162, 507, 501 (unglossed on p.529 too), and the B527 lines.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Founders Online in Chrome: Papers of Benjamin Franklin 28:353-354 nn.8-9 (Dumas to Franklin, 5 Jan 1779) names 'Sartine's associate Chaumont and secretary Baudouin' and cites the 23 Feb 1779 letter of this file; PBF 25:366-367 n.9 calls Baudouin 'Sartine's agent'. A search for 'Dunoyer' finds nothing on this correspondence. So Baudouin as Sartine's secretary is checked in print; 'Dunoyer' = Baudouin rests on the file itself (index, hand, signatures) and is not confirmed outside it.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "Re-read the heading of p.498 on the image: 'A Paris le Lundy 7. mars 1779' (the 7 has the form of the 7s in '1779'; 'mars' is clear). 7 March 1779 was a Sunday; Monday was the 8th. The same writer's 'aujourd'huy mardy' on 30 March 1779 (p.516) is right for that date. Recorded as written; not emended.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Second pass: surveyed Baudouin's letters pp.487-515 and 549-590 page by page (transcriptions/survey_pp487-515_549-590.tsv): code only on the bare pp.491-492 and 573 and on p.579, whose two glossed groups (8 numbers) were transcribed in full (transcriptions/glossed_p579.tsv). Read by an AI agent on the images; no person has checked it.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "T5: the frozen key_full_r4 (sha256 checked) scored on the five p.579 glossed groups never used to build it: 4 of 5 (miss 226, glossed 'Hollande' here and 'même' on p.606); 200 shuffled keys mean 0.04, at most 1. Correction of 15 Nov 2026: two of the five (68, 428) were already in the key through key_additions_round2.tsv (round 2), so the held-out set was wrong; of the three pairs new to the key (499, 202, 226) it predicts 2 (shuffles mean 0.03, at most 1); three pairs are too few to carry weight. Rebuilt key key_full_r5 was identical to key_full_r4 on 14 Nov (it counted 68 and 428 twice; rebuilt on 15 Nov after the p.529 correction it differs only in 6 = 3 and no value for 3); retry of the bare passages settles no open number (B573 13/18, B491 10/16, B492 2/4).",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "validation": {
-   "date": "2026-11-13",
-   "model": "fr-1750-nospace",
-   "file": "validation.tsv",
-   "tokens": 305,
-   "types": 119,
-   "tokens_per_type": 2.56,
-   "score": -2.099,
-   "nulls": {
-    "random keys": {
-     "n": 200,
-     "mean": -3.504,
-     "sd": 0.154,
-     "max": -3.109,
-     "z": 9.1,
-     "p": 0.005
-    },
-    "shuffled refit": {
-     "n": 6,
-     "mean": -2.219,
-     "sd": 0.029,
-     "max": -2.188,
-     "z": 4.1,
-     "p": 0.1429
-    }
-   },
-   "power": -2.077,
-   "verdict": "pass",
-   "notes": "claimed per-occurrence score -2.037; polyphony 0.036; 29 unread tokens left out; annealer on the real text from random keys reached -2.077"
-  },
+  "validation": {"date": "2026-11-14", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 305, "types": 119, "tokens_per_type": 2.56, "score": -2.099, "nulls": {"random keys": {"n": 200, "mean": -3.504, "sd": 0.154, "max": -3.109, "z": 9.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.219, "sd": 0.029, "max": -2.188, "z": 4.1, "p": 0.1429}}, "power": -2.077, "verdict": "pass", "notes": "claimed per-occurrence score -2.037; polyphony 0.036; 29 unread tokens left out; annealer on the real text from random keys reached -2.077"},
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -316,11 +337,7 @@
    "transcription",
    "key recovered"
   ],
-  "verification": [
-   "contemporary decipherment",
-   "key confirms",
-   "statistical test"
-  ],
+  "verification": ["contemporary decipherment", "key confirms", "statistical test"],
   "provenance": "contributed",
   "credits": [
    {
@@ -353,14 +370,14 @@
     "language": "fr",
     "summary": "The patriarch and the merry band will make [them] swallow the last pill, to the shame of the States General; [3] long ago took 'the loan business' away from the [?]rands and gave it up; a loan nobody will put money into can only harm the credit of [369/349]; speak to 'M. du Fresne' (Chaumont). That the loan is the American loan is inference.",
     "read_share": 0.72,
-    "note": "Strict count at integration (14 Nov 2026), in words carried by code numbers: 13 of 18 = 72%. Holes: [3], [58]rands, [227]er, ar{g}ent (30 is 're' in the key; 'g' is set by the word) and the last number (369 or 349). The contributor's figure, counted in numbers with a key value: 39 of 43 = 91%.",
+    "note": "Strict count at integration (14 Nov 2026), in words carried by code numbers: 13 of 18 = 72%. Holes: [3], [58]rands, [227]er, ar{g}ent (30 is 're' in the key; 'g' is set by the word) and the last number (369 or 349). The contributor's figure, counted in numbers with a key value: 39 of 43 = 91%. Follow-up (14 Nov 2026): no change after the retry with key_full_r4 (13 of 18); 136 is now 'au' in the key by 5 votes to 1.",
     "reading": "letters/B573_fr.txt",
     "translation": "letters/B573_en.txt",
     "reading_review": {
-     "grade": "B",
-     "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-     "date": "2026-11-14",
-     "note": "Code groups decoded with the frozen key and read in the clear French of the letter; holes kept; not rechecked by a second agent. A second AI agent of ours retranscribed p.573 and p.491 independently and agreed group for group except the last number of p.573."
+      "grade": "B",
+      "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+      "date": "2026-11-15",
+      "note": "Read as French against the English: coherent; the four holes ([3], [58], [227], [369/349]) are marked and {g} is flagged. Compared with the image M332 roll 4 frame 0428 (p. 573, fol. 178): the clear text ('Je reçois monsieur l'honneur de la vôtre du 17 ... d'opprobre et de ridicule', 'Il y a longtemps que ... l'affaire de ...') and the groups 3 69 229 149 310 158 / 58 36 85 188 133 and 141 53 369 agree with the reading and decode. B: four of eighteen coded words are open."
     }
    },
    {
@@ -372,14 +389,14 @@
     "language": "fr",
     "summary": "On the Stadholder and the 'merry band'; V. Vort parades his intimacy with Leerding and boasts at court of successes he owes to the Pensionary of Amsterdam.",
     "read_share": 0.62,
-    "note": "Strict count at integration (14 Nov 2026): 10 of 16 units = 62% (ten words read; 507, 501, 405, 387, 390 and 447 unread). The contributor's figures: 12 of 18 numbers = 67%, or 12 of 14 if 405, 387, 390 and 447 are nulls, which is not shown.",
+    "note": "Strict count at integration (14 Nov 2026): 10 of 16 units = 62% (ten words read; 507, 501, 405, 387, 390 and 447 unread). The contributor's figures: 12 of 18 numbers = 67%, or 12 of 14 if 405, 387, 390 and 447 are nulls, which is not shown. Follow-up (14 Nov 2026): no change after the retry with key_full_r4 (10 of 16).",
     "reading": "letters/B491_fr.txt",
     "translation": "letters/B491_en.txt",
     "reading_review": {
-     "grade": "B",
-     "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-     "date": "2026-11-14",
-     "note": "Code groups decoded with the frozen key and read in the clear French of the letter; holes kept; not rechecked by a second agent. A second AI agent of ours retranscribed p.573 and p.491 independently and agreed group for group except the last number of p.573."
+      "grade": "B",
+      "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+      "date": "2026-11-15",
+      "note": "Read as French against the English: the three paragraphs are coherent; the coded words mostly name people (Stadhouder, Pensionnaire des Amsterdammois); [507] [501] are open and four groups are taken as nulls (NOTES). Image not re-checked by this reviewer for this letter. B."
     }
    },
    {
@@ -389,16 +406,16 @@
     "decryption": "letters/B492_decode.txt",
     "state": "read in part",
     "language": "fr",
-    "summary": "Offers to buy 'my aunt's' [143] wait on 'the holy man'; jobbery over this [162] between V. Vort and [G]rand.",
-    "read_share": 0.25,
-    "note": "Strict count at integration (14 Nov 2026): 1 of 4 words = 25% ('ce'; [143] and [162] are holes and '{G}rand' is set by the word, 30 being 're' in the key). The contributor's figure: 5 of 7 numbers = 71%.",
+    "summary": "Offers to buy 'my aunt's' ship ('son vaisseau', 143) wait on 'the holy man'; jobbery over this [162] between V. Vort and [G]rand.",
+    "read_share": 0.5,
+    "note": "Strict count, follow-up of 14 Nov 2026: 2 of 4 words = 50% ('vaisseau', from the gloss of 143 on p.534, and 'ce'; [162] is a hole and '{G}rand' is set by the word, 30 being 're' in the key). At integration: 1 of 4. The contributor's first figure: 5 of 7 numbers = 71%.",
     "reading": "letters/B492_fr.txt",
     "translation": "letters/B492_en.txt",
     "reading_review": {
-     "grade": "B",
-     "by": "Andrew Beling's own AI agents (not a person, not an outside check)",
-     "date": "2026-11-14",
-     "note": "Code groups decoded with the frozen key and read in the clear French of the letter; holes kept; not rechecked by a second agent. A second AI agent of ours retranscribed p.573 and p.491 independently and agreed group for group except the last number of p.573."
+      "grade": "B",
+      "by": "B. Dudout (review assisted by Claude, claude-opus-5-5)",
+      "date": "2026-11-15",
+      "note": "Read as French against the English: two coherent sentences, carried by the clear text; of the four coded words, 143 = vaisseau (gloss p. 534) and {G}rand (30 = g by sense, against the draft's 're') are flagged and [162] stays open. Image not re-checked by this reviewer for this letter. B."
     }
    },
    {
@@ -413,19 +430,19 @@
     "note": ""
    }
   ],
-  "fraction_read": 0.63,
+  "fraction_read": 0.66,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Strict count at integration (14 Nov 2026), in words carried by code numbers, sure words only: B573 13 of 18, B491 10 of 16, B492 1 of 4, together 24 of 38 = 63%. A unit set by the word against the key ({g}), an open number and an unread number each count as a hole. The contributor's figure, in numbers with a key value: 56 of 68 = 83%. B527 (15 numbers) decoded, not read. The drafts and glossed letters were read by their writer and recipient and are not counted.",
+  "fraction_read_source": "Strict count, follow-up of 14 Nov 2026, in words carried by code numbers, sure words only: B573 13 of 18, B491 10 of 16, B492 2 of 4, together 25 of 38 = 66% (at integration 24 of 38 = 63%). A unit set by the word against the key ({g}), an open number and an unread number each count as a hole. The contributor's first figure, in numbers with a key value: 56 of 68 = 83%. B527 (15 numbers) decoded, not read. The drafts and glossed letters were read by their writer and recipient and are not counted.",
   "gaps": [
    {
-    "item": "Numbers 3, 58, 227, 369/349 (p.573), 507, 501, 143, 162 and the B527 lines",
+    "item": "Numbers 3, 58, 227, 369/349 (p.573), 30 as 'g' (pp.573, 492), 507, 501, 162 and the B527 lines",
     "blocker": "open-codes",
-    "detail": "Not glossed or drafted anywhere in the file; candidates in NOTES.md."
+    "detail": "Retried with the full transcription of the glossed letters pp.516-548 (key_full_r4) and again after the survey of pp.487-515 and 549-590 and the p.579 glosses (key_full_r5, identical): none of these numbers is glossed with a value that fits; 3 has no gloss (the 'numeral 3' of p.529 stands over the figure 6; corrected 15 Nov 2026), 501 and 507 occur only unglossed or struck. Candidates in NOTES.md."
    },
    {
-    "item": "Full transcription of the glossed letters pp.516-548",
-    "blocker": "not-attempted",
-    "detail": "Only the gloss pairs are transcribed (key/key_pairs_classB_glosses.tsv), not the whole letters."
+    "item": "A glossed or deciphered copy of the bare groups (pp.491-492, 573)",
+    "blocker": "needs-physical-access",
+    "detail": "None in this file: all 808 images paged; pp.487-515 and 549-590 surveyed page by page (14 Nov 2026), the neighbours of the bare pages read, p.579 transcribed in full. Baudouin's office copies or de Neufville's sent letters may survive in the Archives nationales, Marine B4/B7, not seen."
    }
   ],
   "notes": "Most coded text in the file was read at the time: de Neufville's drafts carry his plain French, and he glossed many of Baudouin's letters. The volume's own 19th-century index identifies Du Noyer as Baudouin. What is new is the reconstruction of the code from the drafts, the leaf evidence for that identification, and the reading of the bare passages. PBF 28:354 n.9 cites one Baudouin letter of the file."

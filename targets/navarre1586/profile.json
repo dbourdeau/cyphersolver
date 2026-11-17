@@ -64,7 +64,7 @@
    "unread_groups": 5
   },
   "nulls": {
-   "present": "unknown"
+   "present": true
   },
   "key_order": "alphabetical",
   "word_division": "none",
@@ -167,7 +167,16 @@
    "result": "worked",
    "technique": ["language-model scoring", "statistical test"]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Key replay (docs/_replay.py) after C. Desenclos's check reported in Le Monde, 16 Nov 2026: key_321.json applied to ct_333.txt gave 33 of 40 words of the reading exactly (82.5%), four words differing with no mark and figure 48 left out. The reading now marks each difference (advi[s], a [c]heva[l], [f]au[l]t, mar[c]her, {s}); no letter changed. After: 35 of 41 words exact (85.4%), 5 emended and marked, 1 unread (figures 120 31 126), 0 unmarked.",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  }
  ],
  "outcome": {
   "method": "read with known key",
@@ -178,6 +187,23 @@
    "sender or date identified"
   ],
   "class": "read in part",
+  "gaps": [
+   {
+    "item": "name codes 204, 189, 190, 166, 167 in f. 333",
+    "blocker": "no-key-material",
+    "detail": "Tomokiyo's table lists only 162, 302, 315, 317, 322; each occurs once with no gloss"
+   },
+   {
+    "item": "figures 120 31 126 after [190] (qi i ro by the table), which make no word",
+    "blocker": "no-key-material",
+    "detail": "once, between name codes"
+   },
+   {
+    "item": "f. 321 figure-level transcription",
+    "blocker": "needs-physical-access",
+    "detail": "the decipherer's strike-through runs through every figure on the scan"
+   }
+  ],
   "fraction_read": 0.954,
   "fraction_read_method": "measured",
   "fraction_read_source": "ct_333.txt with key_321.json (letters 12-62, syllables 63-142 in 16 rows, 162 = Le Roy de Navarre): 108 numeric tokens, 103 with a value; 5 open name codes (204, 189, 190, 166, 167). Five figures confirmed as written disagree with the French (slips).",

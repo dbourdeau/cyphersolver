@@ -175,3 +175,25 @@ differ from the table are listed in `../jqa/overlay_dudout.tsv`. Catalogue 652 w
 ## Independent reading by Brice Dudout (27 Oct 2026)
 
 1,330 of 1,371 groups read with the jqa table and a graded overlay; the legation register dates this letter 15 August 1813 (despatch no. 3, sent 19 August), not 3 September. See `dudout/README.md`.
+
+## Integration check (16 Nov 2026), PR #704: Crawford's second 1813 numbering
+
+Checked for the maintainers before merging PR #704 (Brice Dudout, `dudout/second_code/`), by an AI agent; no person
+has checked these steps.
+
+- **The finding.** Crawford's despatches of 8 Sept 1813 and after (M34 roll 17 frames 0035, 0056R, 0070) use the = 285,
+  of = 76, Emperor = 1516: the JQA table of `../jqa/code_table.tsv` with its sixteen blocks of 100 in reverse order,
+  the copy used by Morris (`../morris1813`). The 15 Aug 1813 letter read here uses the JQA order. One code, two
+  numberings: no new key file, and nothing in this folder's reading changes.
+- **Reproduced.** `python score.py reversed`: 106 units without the anchors 285, 76, 1516, 100 covered, 89 agree
+  (0.890; 89/106 = 0.840 over all units), best of 200 shuffles 0.090; `python score.py we025`: 3 of 65 covered
+  (0.046), best shuffle 0.092. Both outputs match the committed result files; `interlinear_pairs.tsv` hashes to the
+  stated 7aec7785.... The two protocol files whose hashes the README quotes (caf27d9d..., 03ed336b...) are not in the
+  pull request, so the order of events rests on the contributor's record. The block map was checked by hand: JQA
+  1385 the -> 285, 1576 of -> 76, 16 emperor -> 1516.
+- **Images.** NARA frame 0035 (public domain, `M34-017-0035.jpg`) compared line by line with the 0035 rows of
+  `interlinear_pairs.tsv` (about 100 units, lines 2-18): groups and interlinear words agree. Line 12 "before" sits
+  over a group that reads 2?8 at the size viewed (218 = before in the reversed table); the README already names 288 as
+  a possible slip. Frames 0056 and 0070 were not compared.
+- **Not done** (as the README says): sorting Crawford's other coded runs of 1813-14 on roll 17 by numbering, and a
+  second transcription pass of the pairs.

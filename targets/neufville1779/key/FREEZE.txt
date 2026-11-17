@@ -7,3 +7,25 @@ e7f5cff218e0f0cc4fd1249092add6ee85f011c00ed00c036a8acd76f94a0da4  key_K2.json   
 The test plans are in ../TEST_PLAN.md.
 key_entries.tsv lists the same 204 numbers with every vote and source (scripts/build_key_table.py).
 key_drafts_all.json (173 numbers, sha256 66e748b3...) is the intermediate all-drafts key of round 2, kept for the record.
+
+Round 4 (follow-up, 14 Nov 2026; plan in ../TEST_PLAN.md, written before the run; script scripts/test_round4.py, output results/test_round4_output.txt):
+3fa3b8badc3ee9a54c3b57bc552dc05701a860c4761fd054b129964a2dc7a7b4  key_K4.json        205 numbers: every source except the glossed letter of 10 April 1779 (pp.529-531), which is held out (T4)
+146207b09c866ee26c1b11c7ad0d4ab5f17a05fb241dc46e902beaab7325f460  key_full_r4.json   208 numbers: all sources, incl. transcriptions/glossed_pp516-548.tsv (G rows) and p608_truth_complete.tsv; frozen before the bare passages were decoded with it
+The same limit as before applies: the script builds and scores each key in one run, so file times cannot show the freeze; the plan and the source files were written first.
+Votes per number for key_full_r4: ../results/key_full_r4_votes.tsv. key_entries.tsv (round 3) is kept as the source list of the 204-number key.
+
+Round 5 (second pass, 14 Nov 2026; plan in ../TEST_PLAN.md, written before the run; script scripts/test_round5.py, output results/test_round5_output.txt):
+key_full_r4.json was checked against its sha256 above (146207b0...f460) before T5 scored it; it was not rebuilt.
+146207b09c866ee26c1b11c7ad0d4ab5f17a05fb241dc46e902beaab7325f460  key_full_r5.json   K6 = round 4 sources + the new p.579 pairs (transcriptions/glossed_p579.tsv); byte for byte the same as key_full_r4.json (the only new value, 226 = Hollande, ties with 226 = me and the tie keeps "me")
+
+Correction of 15 Nov 2026 (after an independent verifier's check; transcription re-read on the image of p.529):
+the gloss "3" on p.529 line 3 stands over the figure 6, and the figure before 488 is a tall sign like a long-tailed z, not a
+clear 3. transcriptions/glossed_pp516-548.tsv is corrected (6 = "3"; the sign is status D, number "3?"), and glossed_p579.tsv
+now marks 68 and 428 as already in the key (key_additions_round2.tsv). The frozen keys above are kept as tested:
+key_K4.json is unchanged by the correction (pp.529-531 were held out of it); key_full_r4.json (146207b0...) is the key T5
+scored. Re-running scripts/test_round4.py on the corrected transcription writes a different key_full_r4.json (207 numbers,
+6 = 3, no value for 3; sha256 ee29e9f7...2e87) and the output in ../results/test_round4_output_p529corrected.txt; restore
+the frozen file from git before running test_round5.py, which checks the 146207b0... hash.
+ee29e9f7026aee3551121edc5d1b77242a9e62b374254cc5ea39abd359472e87  key_full_r5.json   K6 rebuilt 15 Nov 2026 by scripts/test_round5.py with the corrected
+transcriptions (207 numbers; differs from key_full_r4 only in 6 = 3 and no value for 3); output ../results/test_round5_output_rerun_2026-11-15.txt.
+The run of 14 Nov (K6 = key_full_r4 byte for byte, 146207b0...) is kept in ../results/test_round5_output.txt.

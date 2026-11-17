@@ -1,0 +1,83 @@
+"""Builds candidates.json (same fields as sweep_2026-11-14_gsta_deep). All rows are scored from finding-aid text; none viewed."""
+import json
+
+SRC = 'US gaps sweep (PACSCL/Penn, Newberry, Columbia, CJH, Morgan CORSAIR), 14 Nov 2026'
+PA = ('open as far as checked (14 Nov 2026): known.py and a name/shelfmark grep over catalogue.json, leads.json and every candidates.json found nothing on this item; '
+      'no web, Tomokiyo, Lasry or DECODE search made in this sweep')
+
+
+def row(**k):
+    base = dict(source=SRC, prior_art=PA, seen='catalogue', needs_archive_scan='yes',
+                score_note='Scored from the finding-aid text on 14 Nov 2026 (research/sweep_2026-11-14_us_gaps/); not viewed', links=[])
+    base.update(k)
+    return base
+
+
+R = [
+    row(year=1780, date='9 Oct and 1 Dec 1780', language='English', region='Americas', period='1701-1800', place='Paris / Philadelphia',
+        title='Silas Deane to James Wilson, 1780: two deciphered letters on one sheet (recto 9 Oct, verso 1 Dec), with a modern transcription laid in',
+        correspondents='Silas Deane (Paris) -> James Wilson (Philadelphia); decipherment in a contemporary hand, per Julian P. Boyd 1937',
+        shelfmark='Free Library of Philadelphia, Rare Book Dept., Historical manuscripts collection (FLP RBD HISTMSS), Box 1, Deane items',
+        folio_note='Finding aid: "A deciphered letter (said to be in James Wilson\'s hand by Julian P. Boyd ... March 1937). This letter is on the recto; another deciphered letter, of 1 Dec 1780, begins on the verso. Modern transcription laid in." A second Deane autograph letter to Wilson (Paris, December 1780) is listed beside it. The finding aid says nothing about the original cipher sheets.',
+        cls='C', status='Finding aid as quoted: decipherments in hand exist; whether the ciphertext (Deane\'s numerical cipher to Wilson) survives in the folder is not stated.',
+        why='Deane wrote to Wilson and others in a numerical cipher while under suspicion in 1780; a decipherment on the sheet and a modern transcription give a paired text if the cipher groups sit with them, and Deane\'s cipher is not in the repo. Possibly already in the Deane Papers (N-YHS Collections, 1887-90) or Boyd\'s notes: unchecked.',
+        importance=3, solvability=3, difficulty=3,
+        verify='Ask FLP Rare Book Dept. whether the sheets carry cipher groups or only the deciphered text; compare the Deane Papers volumes and Boyd for the 9 Oct and 1 Dec 1780 letters; known.py "Deane".',
+        links=[{'href': 'https://findingaids.library.upenn.edu/records/FLP_FLP.RBD.HISTMSS', 'label': 'PACSCL finding aid, FLP historical manuscripts'}],
+        access_note='description only (PACSCL); Free Library Rare Book Department, Philadelphia'),
+    row(year=1800, date='2 Dec 1798 (memorandum), copy in cypher sent 19 Aug 1800', language='English', region='Asia / Britain', period='1701-1800', place='India / London',
+        title='Dundas papers: Captain John Malcolm\'s memorandum on the late French corps in the Deccan (2 Dec 1798) with a second copy in cypher, enclosed in Dundas\'s letter of 19 Aug 1800',
+        correspondents='John Malcolm (Madras) -> Henry Dundas (Board of Control); enclosing letter by Dundas, 19 Aug 1800',
+        shelfmark='University of Pennsylvania, Kislak Center, Ms. Coll. 888 (Henry Dundas papers), Box 11, Folder 26',
+        folio_note='Finding aid: memorandum "also a second copy of the same in cypher with an enclosing letter by Henry Dundas, dated 19 August 1800". A clear copy and a cypher copy of the same memorandum are in one folder.',
+        cls='A', status='Finding aid as quoted. No edition or decipherment seen.',
+        why='A clear copy and a cypher copy of the same memorandum is a ready crib set for the Dundas / Board of Control cypher of 1800 (the repo holds the different Harford Jones Baghdad code of 1798). Short, but known plaintext.',
+        importance=2, solvability=4, difficulty=2,
+        verify='Request folder 26 scans from Penn (Kislak); check whether the cypher copy is numerical or a nomenclator; compare Dundas-Wellesley cyphers in the BL and NRS GD51.',
+        links=[{'href': 'https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.888', 'label': 'PACSCL finding aid, Dundas papers'}],
+        access_note='description only; Penn Kislak reading room or scan request'),
+    row(year=1916, date='13 Apr - 12 Aug 1916', language='German (stenography); other language unknown', region='Europe', period='1901-1950', place='unknown',
+        title='Imre Forbath diary, Journal 8, 13 April - 12 August 1916: "written in German stenography and is not deciphered"',
+        correspondents='Imre Forbath (diarist)', shelfmark='Columbia RBML, Imre Forbath Diaries and Photographs, 1900-1943, Series I: Diaries, Box 1, Journal 8',
+        folio_note='Finding aid note on the journal: "The diary is written in German stenography and is not deciphered". Other journals of the series not checked for the same note.',
+        cls='C', status='Finding aid as quoted. Shorthand, not a cipher in the strict sense, but undeciphered by the library and no reading is known here.',
+        why='A WWI-year diary in a shorthand system the library does not read. German stenography (Gabelsberger or Stolze-Schrey) is a known system, so this tests a reader on a non-alphabetic script rather than a cipher break.',
+        importance=2, solvability=3, difficulty=3,
+        verify='Check the Columbia item page for scans (none seen) and which system it is; look at the other journals for the same note.',
+        links=[{'href': 'https://findingaids.library.columbia.edu/archives/cul-7269482_aspace_3a3fe00b72d8f7ffdf3264bd90cf9833', 'label': 'Columbia finding aid, Journal 8'}],
+        access_note='description only; Columbia RBML; no scan seen'),
+    row(year=1918, date='22 May - 27 Jul 1918 (Object Diary 9) and neighbours', language='unknown (Greek characters)', region='Europe', period='1901-1950', place='unknown',
+        title='Claud Lovat Fraser, wartime diary in Greek characters: "I resolve to keep my diary in cipher again" (May-July 1918; further volumes primarily in Greek)',
+        correspondents='Claud Lovat Fraser (diarist; died 1921)', shelfmark='Bryn Mawr College Special Collections, BMC M25 (Claud Lovat Fraser and Grace Crawford Lovat Fraser collections), Box 13, Object Diary 9; Diary 10 (28 Jul-14 Oct) and following also "primarily in Greek"',
+        folio_note='Finding aid for Diary 9: "Primarily in Greek. \'I resolve to keep my diary in cipher again [as there is no knowing what the clerks may see in my absence].\'" Whether the text is ancient Greek or English in Greek letters is not stated.',
+        cls='C', status='Finding aid as quoted. The diarist calls it a cipher; whether it is English transliterated into Greek letters is not stated.',
+        why='A soldier\'s private diary in a home-made script during WWI, with the diarist\'s own word for it. Probably a simple substitution (English in Greek letters), easy to read once seen: a clean personal cipher for the 1901-1950 band.',
+        importance=2, solvability=4, difficulty=1,
+        verify='Look at Box 13 diaries 8-10 (Bryn Mawr scan request); check Fraser biographies for the diary cipher.',
+        links=[{'href': 'https://findingaids.library.upenn.edu/records/BMC_BMC.M25', 'label': 'PACSCL finding aid, Lovat Fraser collections'}],
+        access_note='description only; Bryn Mawr College Special Collections'),
+    row(year=1850, date='1 Mar 1850 (covering letter); the coded Mary Queen of Scots letter is 16th century', language='English; the code letter is Mary\'s', region='Britain', period='1501-1600', place='Edinburgh',
+        title='Macdonald (General Register House) to Agnes Strickland, 1 Mar 1850: four original letters of Mary Queen of Scots, one "in code", with transcriptions',
+        correspondents='Alexander Macdonald (Register House) -> Agnes Strickland; the letters are Mary Queen of Scots\'',
+        shelfmark='Morgan Library & Museum, Strickland-Pope-Hennessy Collection, CORSAIR bib 190797 (Literary and Historical Manuscripts)',
+        folio_note='Record summary only: the Morgan holds Macdonald\'s covering letter (3 p.); the code letter and the transcriptions are not described. CORSAIR gives the date as 1950, evidently a typo for 1850.',
+        cls='C', status='Record as quoted. The record is the covering letter, not the ciphered letter.',
+        why='Weak: points to a coded Mary Queen of Scots letter with a 19th-century transcription, and so to Strickland\'s source for it. Mary Stuart ciphers are heavily worked, so probably no new text.',
+        importance=1, solvability=2, difficulty=3,
+        verify='Read Strickland, Letters of Mary Queen of Scots, for a code letter from Macdonald; check Lasry\'s Mary Stuart cipher work; find where the letters are now.',
+        links=[{'href': 'https://corsair.themorgan.org/vwebv/holdingsInfo?bibId=190797', 'label': 'CORSAIR record'}],
+        access_note='description only; Morgan'),
+    row(year=1920, date='1919-1920', language='unknown', region='Caucasus', period='1901-1950', place='Armenia / Azerbaijan',
+        title='Tigran Devoiants papers: telegrams (1919-20) between Azerbaijani diplomatic representatives in Armenia and Baku, deciphered by Armenian military intelligence',
+        correspondents='Azerbaijani representatives in Armenia <-> government at Baku; decipherment by Armenian military intelligence',
+        shelfmark='Columbia RBML, Tigran Devoiants Papers, 1912-1946, 15 items (1 box), Bakhmeteff Archive',
+        folio_note='Finding aid: "texts of telegrams (1919-20) ... deciphered by Armenian military intelligence". Whether cipher groups are kept next to the decipherments is not stated.',
+        cls='C', status='Finding aid as quoted. Decipherments only, as far as the abstract goes.',
+        why='Intercepted diplomatic telegrams of the Caucasus republics with the interceptor\'s decipherments: cipher-plus-plaintext pairs would give the Azerbaijani code of 1919-20. Marginal for the pre-1920 band; most likely clear text only.',
+        importance=2, solvability=2, difficulty=3,
+        verify='Ask Columbia RBML whether the ciphertexts are kept; check Hovannisian, Republic of Armenia vol. 3, for the intercepted telegrams.',
+        links=[{'href': 'https://findingaids.library.columbia.edu/archives/cul-4077451', 'label': 'Columbia finding aid'}],
+        access_note='description only; Columbia RBML'),
+]
+json.dump(R, open('candidates.json', 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+print(len(R))

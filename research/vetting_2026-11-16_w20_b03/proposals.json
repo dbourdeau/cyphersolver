@@ -1,0 +1,267 @@
+{
+ "2208": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Not assessable as one lead: it is an aggregate of many ASGe volumes, none digitised, and no single cipher document is named. The inventory text (sweep copy of the Wayback PDF, research/sweep_2026-11_B_unswept_south/_dl/wb_genova_hits.jsonl) shows that the lead's volume numbers are mis-read (the inventory runs box/volume pairs such as '2 18', '3 89') and that cipher volumes start in 1730-31, not 1746.",
+  "access": "archive",
+  "access_note": "No online images at ASGe; the Wayback copy of inventory 41bis now returns a Wayback bot block to curl (16 Nov 2026), so the earlier sweep's extracted text was used.",
+  "blocker": "aggregate with no named document; ASGe scans needed. Proposal: split into per-volume leads, first the decifrante (vol. 47 in box 2/3 numbering, c. 166, documents of 1757) and the cifrario (vol. 89, cc. 126-132, Jan 1793-May 1794), both keys, then the 'doc. in cifra/cifre' volumes (1730, 1731 x3, 1746, 1748, 1750 x2, 1751 x2, 1752, 1753, 1754, 1755, 1759, 1760 x2, 1763-64, 1764-65, 1768, 1792, 1794).",
+  "record_errors": "Shelfmark numbers (218 ... 390) are a mis-reading of the split-column OCR; date range should start 1730, not 1746."
+ },
+ "2398": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "The Palermo inventory itself (fetched directly from saassipa.cultura.gov.it on 16 Nov 2026) reads 'n. 262. Lettera in codice e in cifrato risalente al primo ventennio del XIX secolo', date 'Sec. XIX'. The next entry, n. 263, names an attached alphabet and typed transcription, so the describer records decipherments when they are present. The 1861 date belongs to n. 263, not to n. 262. Low confidence: the description is one line, the correspondents are unknown, and the Palermo digital library (DNS failure to curl and WebFetch) could not be checked for scans.",
+  "access": "archive",
+  "access_note": "ASPa reading room. digitalibrary-saassipa.cultura.gov.it does not resolve from this machine or from WebFetch (16 Nov 2026), so whether scans exist there is unchecked.",
+  "record_errors": "The date note 'the Misc. Arch. list gives 1861' is a column slip: in the PDF, 1861 is the date of n. 263 ('Documento crittografico, con relativo alfabeto, di sovversivi borbonici', extracted from Ministero Luogotenenziale, Polizia, b. 1679), and n. 262 is dated 'Sec. XIX'. n. 263 is therefore of 1861, not an 18th-century cipher.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivio di Stato di Palermo, inventory n. 152, Miscellanea archivistica II serie (ed. S. Falletta), PDF https://saassipa.cultura.gov.it/wp-content/uploads/2020/05/152-Miscellanea-archivistica-II-serie-REV-SeF.pdf, fetched 16 Nov 2026, entry n. 262.",
+    "extent": "One letter. The inventory gives no leaf count, and the length of the cipher is unknown.",
+    "cipher": "The archive's own description is 'Lettera in codice e in cifrato risalente al primo ventennio del XIX secolo', which points to a code-and-cipher letter. No transcription, alphabet or decipherment is listed with it, whereas the neighbouring n. 263 lists both an alphabet and a typed transcription."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Miscellanea archivistica' and 'Archivio di Stato di Palermo' finds only this lead and two other ASPa Misc. Arch. I leads of 1848-49 (b. 68, I.67), which are different units. No DECODE record matches.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Palermo and Sicil*. The only hit is an unrelated 1503 viceroy-of-Sicily letter, and nothing for this unit.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Palermo, Sicil* or Miscellanea archivistica.",
+    "edition": "No edition or calendar of the letter was found. The inventory entry is the only description, and it names no printed text.",
+    "literature": "A web search on 16 Nov 2026 for the exact inventory wording with Palermo found only the inventory PDF and an ASPa schools programme on 19th-century Prefettura/Questura cipher books, which does not cite this unit. The earlier sweep (6 Nov) found nothing either."
+   },
+   "key_check": "No key is listed with n. 262. ASPa holds other 19th-century cipher books (Prefettura, Questura; Misc. Arch. I n. 142 'cifrario dei Gesuiti'), but none is tied to this letter, and none was tested.",
+   "duplicates": "known.py on the shelfmark and the series finds no other lead or catalogue entry for Misc. Arch. II n. 262. n. 263 is a separate, transcribed item.",
+   "verdict": "open"
+  }
+ },
+ "2919": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "The printed page shows the subscription line at the foot of the letter, set in type as 33 characters on two lines: Greek letters, Latin letters, digits and triangle signs. The editor's note says he could not find the key. No identification of the writer or reading of the line was found. The text is very short (probably the writer's name), so it is a low-yield target, and the Simancas original is unseen.",
+  "access": "online",
+  "access_note": "The printed transcription is online (Internet Archive, Teulet IV leaf n325, printed p. 309). The Simancas original (AGS Estado K, formerly liasse B. 94) is not online and was not seen.",
+  "record_errors": "The OCR string in the folio note is garbled. The printed line reads roughly 'α Φ f K n m o c λ T m c n K f Δ ∂ Δ / ∂ e r y n y x Ω o 8 6 9 a o ζ' (33 signs; the triangle and ∂ forms are as printed).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "A. Teulet, Relations politiques de la France et de l'Espagne avec l'Écosse au XVIe siècle, vol. IV (Paris 1862), 'Mission de J.-B. de Tassis', letter of St Andrews, 13 July 1583, to M. de Meyneville, pp. 299-309. Internet Archive relationspoliti04teulgoog, page image https://archive.org/download/relationspoliti04teulgoog/page/n325_w1200.jpg (printed p. 309), viewed 16 Nov 2026, with the djvu text of pp. 299-309.",
+    "extent": "One line of 33 cipher characters, set on two printed lines at the foot of a long French letter that is otherwise in clear. The writer says he wrote it 'hors du chiffre' because the bearer was trusted.",
+    "cipher": "A symbol substitution: Greek letters (alpha, Phi, lambda, Omega, zeta), Latin letters, digits 8, 6, 9 and triangle and delta signs, standing as the writer's subscription. Teulet's note 2: 'Je n'ai pas pu retrouver la clef de ce chiffre, mais j'ai cru devoir le reproduire, parce qu'il pourra peut-être servir à faire découvrir plus tard le nom de l'auteur de cette lettre.' No decipherment is printed."
+   },
+   "prior_art": {
+    "decode": "known.py on Meyneville, Mainville, Roncherolles, Tassis and 'B. 94' finds only this lead and unrelated Mainville/Humières (fr. 3329) and Tassis-Farnese entries. No DECODE record of this letter.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Teulet, Mainville/Meyneville/Maineville or this letter.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Teulet, Mainville/Meyneville or St Andrews 1583.",
+    "edition": "The letter is printed in full by Teulet (1862) from the Simancas copy (Archives de l'Empire, fonds de Simancas, liasse B. 94), with the cipher line reproduced and stated to be unread. No later edition reading the line was found.",
+    "literature": "A web search on 16 Nov 2026 (Meyneville/Mainville 1583 St Andrews letter, cipher signature, Dundee, Melville) found only the 2023 Mary Stuart decipherment coverage, which mentions Mainville's 1583 mission but not this letter. No attribution of the cipher line was found."
+   },
+   "key_check": "No key is given in Teulet or known in the repo. The Mary Stuart / Guise / Mainville cipher tables of 1582-84 (BnF, TNA SP 53) are possible candidates, but none was tested.",
+   "duplicates": "known.py on the correspondents, the Simancas liasse and Teulet finds no other lead or catalogue entry for this letter.",
+   "verdict": "open"
+  }
+ },
+ "1941": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "The recorded blocker still stands. PARES unit FRIAS,C.1397,D.10 (catalogo/show/3964723) has 'No images associated to the unit of description' (Chrome pass, Nov 2026), and the description says only 'Original y cifrada'. AHNOB's equally bare 'Cifrada' on the sister unit FRIAS,C.81,D.101-103 (lead 1940) turned out to carry a contemporary marginal decipherment, so the catalogue note cannot rule one out here. This pass added searches of Tomokiyo's and Lasry's lists (fetched 15 Nov 2026; no Bayona, Peñaranda or Milazzo hit).",
+  "access": "archive",
+  "access_note": "AHNOB (Toledo) reproduction of the one letter needed. PARES answers curl with a 302 redirect, and the unit has no images.",
+  "blocker": "no images and a bare 'Cifrada' that a sister unit shows can hide a marginal decipherment; needs an AHNOB reproduction."
+ },
+ "1942": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "The recorded blocker still stands. AHNOB MONTEALEGRE DE LA RIVERA,C.1,D.22 has scope 'Cifrada.' only, PARES catalogo/show/4026142 has no images (Chrome pass, Nov 2026), and the number of letters is not given. The bare AHNOB 'Cifrada' can hide a marginal decipherment (lead 1940). Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Argenson or Silloy hit.",
+  "access": "archive",
+  "access_note": "AHNOB reproduction needed; no images on PARES.",
+  "blocker": "no images; the 'Cifrada' note does not exclude a decipherment on the leaf; needs an AHNOB reproduction."
+ },
+ "1301": {
+  "verdict": "key_lookup",
+  "confidence": "medium",
+  "note": "Narváez, EHMCM 38 (2009) pp. 139-143, says Torrens's reserved notes 2 (23 Jan 1826) and 3 (9 Apr 1826) are wholly in his 10 x 7 matrix cipher, and prints that cipher's full key and its method from the official instruction sheet, AHDSREM exp. 5-16-8615 ff. 27-29. Anyone holding scans can therefore decipher the notes directly. The 'Dos criptosistemas' article (2007-08) in which Narváez analysed the two notes is still not online, and it may already print their decipherment. The code materials he calls poorly preserved are separate documents, not identified here, and could become their own lead if located.",
+  "access": "archive",
+  "access_note": "AHDSREM (SRE, Mexico City) reading room; the notes are not online. EHMCM 38 is online at moderna.historicas.unam.mx (PDF read 16 Nov 2026).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Narváez, 'El \"Diario reservado No. 18\" (1829) de José Anastasio Torrens', Estudios de Historia Moderna y Contemporánea de México 38 (2009) 139-163, PDF https://moderna.historicas.unam.mx/index.php/ehm/article/download/17768/16948/25169, pp. 139-144 read 16 Nov 2026. The notes themselves (AHDSREM) were not seen.",
+    "extent": "Two reserved notes, 2 and 3 of 1826, said to be entirely in cipher. Their length is not given in the article read.",
+    "cipher": "A numeric syllabic cipher: words are split into one- or two-letter fractions, each enciphered as column digit + row digit(s) of a 10 x 7 matrix whose first five rows repeat the vowels ('Sa' = 871, 'n' = 57). The key is printed on p. 143 from the 1824 'Clave para descifrar las comunicaciones reservadas, remitida a Torrens' (AHDSREM 5-16-8615 ff. 27-29)."
+   },
+   "prior_art": {
+    "decode": "known.py was run earlier (Oct-Nov 2026) on Torrens, the AHGE/AHDSREM and Narváez, finding only this lead and the Obregón lead 1300 (closed read). The DECODE dumps hold no Mexican SRE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Torrens or for Mexico/Bogotá 1826.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Torrens.",
+    "edition": "Narváez, 'Dos criptosistemas empleados por el coronel José A. Torrens en Colombia (1825-1826)', Memorias de la Academia Mexicana de la Historia 49 (2007-08) 7-43, is devoted to notes 2 and 3 (EHMCM 38 p. 139). It was not seen, so whether it prints their plaintext is unchecked. Documenta & Instrumenta 6 (2008) n. 25 says several messages Torrens enciphered by this method have been published in clear.",
+    "literature": "Narváez, EHMCM 38 (2009) prints the key and the deciphered Diario reservado 18 (1829) in the same system. Historia Mexicana 231 (2009) n. 52 mentions only a 'decodificación precaria' of a manuscript presumed to be Torrens's in his code (from the earlier vetting, research/vetting_2026-11-13_ajbeling/vetting.json)."
+   },
+   "key_check": "The full key of the matrix cipher is printed in EHMCM 38 (2009) p. 143 from AHDSREM 5-16-8615 ff. 27-29, and Narváez states that notes 2 and 3 of 1826 are wholly in it. It was not tested here because the ciphertext is not online.",
+   "duplicates": "Lead 1300 (Obregón 1825, closed read) is a sibling Mexican system, not the same documents. No catalogue entry covers Torrens's notes.",
+   "verdict": "key_lookup",
+   "closed": "Closed as key lookup: the system's full key is printed (EHMCM 38, 2009, p. 143) and the two 1826 notes are stated to be wholly in it, so nothing remains to break. Narváez's 2007-08 study of the same notes may already give their plaintext. Torrens's code pieces, which are poorly preserved and unidentified here, would need their own lead."
+  }
+ },
+ "2866": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "The archive record (Archivo Abierto de Navarra, wave 9, 15 Nov 2026) describes a letter 'parcialmente cifrada' among confiscated papers and files a 'Traducción al castellano' with it. A clear Castilian translation filed beside a partly enciphered confiscated letter is, by this project's rule, a decipherment on file, so the lead is closed rather than promoted. Whether the translation covers every cipher passage is not stated, hence partly_read and not read. No image was seen.",
+  "access": "archive",
+  "access_note": "AGN Pamplona reading room. navarra.archivoabierto.es answers curl with HTTP 202 and an empty body (16 Nov 2026), and the record has no digital object.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Archivo Real y General de Navarra, ES/NA/AGN/F004/AP_RENA, Caj. 103, N. 12-2, record read in Chrome on 15 Nov 2026 through navarra.archivoabierto.es (research/sweep_2026-11-15_chrome_wave9/README.md). Not re-openable by script on 16 Nov 2026 (HTTP 202, empty body).",
+    "extent": "Two leaves: one letter partly in cipher, with a Castilian translation filed in the same unit.",
+    "cipher": "The archive's own note says 'Parcialmente cifrada', with the supposed date 9 Jan 1521 ('también pudiera tratarse del año 1516'). The contents note says 'Traducción al castellano', so a clear Castilian version of the letter is kept with it."
+   },
+   "prior_art": {
+    "decode": "known.py on Lesparre, Asparros, Rena and Saint Pol finds only this lead and its wave 9 candidate row. There is no DECODE record of AGN Navarra items.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Lesparre, Asparros, Saint Pol or Navarre 1521.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Lesparre, Asparros or Saint Pol.",
+    "edition": "No edition was found. The decisive fact is the archive's own note that a Castilian translation is filed with the letter, which is a contemporary rendering of the confiscated text.",
+    "literature": "No study of the cipher was found. The wave 9 sweep searched the AGN portal ('cifrada', 'cifra', 'en clave', 'nomenclator'), and this is the only cipher record there."
+   },
+   "key_check": "No key is listed in the unit. The André de Foix / French army cipher of 1521 is not held in the repo, and nothing was tested.",
+   "duplicates": "known.py on the correspondents and the Fondo Rena shelfmark finds no other lead or catalogue entry.",
+   "verdict": "partly_read",
+   "closed": "Closed: the archive files a Castilian translation with the partly enciphered letter (AGN, AP_RENA Caj. 103 N. 12-2), so a contemporary decipherment is on file. Whether it covers every cipher passage is unconfirmed, which needs an AGN reproduction."
+  }
+ },
+ "2863": {
+  "verdict": "duplicate",
+  "confidence": "high",
+  "note": "Both units of this lead are already leads of their own, each covering one file: OP16696 is lead 2930 and OP17197 is lead 2933, both from the 14 Nov 2026 Portuguese Africa sweep. Close 2863 as a duplicate and keep the per-unit leads. The DigitArq details (wave 8 pt_details.json) confirm hasImages false for both and give only 'Contém relatórios, e documentação cifrada' (OP16696, eng/por, 1897, maço 14) and 'Correspondência, contém telegrama cifrado' (OP17197, 1898, maço 87).",
+  "access": "archive",
+  "access_note": "AHU Lisbon; no images on DigitArq.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "DigitArq records PT/AHU/ID-OP/OP16696 (id 0784fd2cc8f94abab559b8f14769abbe) and OP17197 (id 41745afa3bf64d2196a0f6cb0fe8054a), full JSON held in research/sweep_2026-11-15_chrome_wave8/pt_details.json and re-read 16 Nov 2026. The DigitArq API returned an empty body to curl on 16 Nov.",
+    "extent": "OP16696: a 1897 folder of reports with enciphered documentation, extent not given. OP17197: a 1898 correspondence folder with one cipher telegram.",
+    "cipher": "The archive descriptions say 'Contém relatórios, e documentação cifrada' (OP16696) and 'Correspondência, contém telegrama cifrado' (OP17197). No decipherment is mentioned, and no images exist (hasImages false)."
+   },
+   "prior_art": {
+    "decode": "known.py on Lourenço Marques, 'arbitragem de Berne' and OP16696 finds leads 2930 and 2931 and this lead. The 14 Nov sweep's DECODE keyword search (Lourenço Marques, Delagoa, Angola) gave 0 records.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Lourenço, Delagoa or Berne. The single 'Portug*' hit is unrelated.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Lourenço, Delagoa or Berne.",
+    "edition": "No printed text of these AHU telegrams was found by this pass or by the 14 Nov sweep. The Delagoa Bay arbitration award (Berne 1900) is printed, but its cipher papers are not.",
+    "literature": "The 14 Nov sweep ran two web searches and found no study of these files. Nothing was added this pass, since the lead closes as a duplicate."
+   },
+   "key_check": "No Portuguese ministerial code of 1897-98 is held in the repo, and none was tested.",
+   "duplicates": "Exact duplicates: research/leads.json lead 2930 has shelfmark PT/AHU/ID-OP/OP16696 with the same DigitArq record, and lead 2933 has PT/AHU/ID-OP/OP17197 with the same DigitArq record. Neither is in catalogue.json.",
+   "verdict": "duplicate",
+   "closed": "Closed as a duplicate: OP16696 is lead 2930 and OP17197 is lead 2933, which are the per-unit leads to keep."
+  }
+ },
+ "2852": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Still undecided whether the 1940-45 typescript copies show ciphertext or clear text. The Arxius en línia backend (curl works for search and detail, 16 Nov 2026) gives only the truncated description: '150 unitats documentals (aprox.). 4 subcarpetes.- Ciutat de Mèxic.- Castellà.- Mecanoscrita.- Són còpies de telegrames, cablegrames i radiogrames xifr...', cronologia [1940 - 25.07.1945], and an empty object list (not digitised). The full description sits behind a reCAPTCHA-gated endpoint (/unitat/detail/full), which was not passed. Copies typed in exile years later are more likely clear texts of the decrypted telegrams. A web search found the Gordón Ordás embassy papers at the Fundación Universitaria Española (partly transcribed by A. Quirantes, including the 'Clave X' Mar Cantábrico cipher), but nothing on these copies.",
+  "access": "archive",
+  "access_note": "ANC Sant Cugat reading room. Not digitised (unitat/objects empty). Full record text needs a browser because of reCAPTCHA.",
+  "blocker": "whether the copies are ciphertext is unknown; needs the full ANC description (browser, reCAPTCHA) or an ANC answer or scan. Related source: Fundación Universitaria Española, Gordón Ordás papers, where the originals and the embassy keys may be."
+ },
+ "2853": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "All 96 images were paged through on 16 Nov 2026. The file holds a single enciphered telegram: images 003 and 005, D 109, Valencia Guerra no. 19072, 20/224, 16:40, from the President of the Council of Ministers and War Minister to the President of the Generalitat, strips of four-figure groups headed 'Clave general T en H'. Image 002 is its typed decipherment with the same header ('D 109 BAR VALENCIA GUERRA 19072 20/224 2 16/40'), noting 'CLAVE GENERAL T en H (Te en Hache)' and giving the full clear text on the Aragon front. The other cipher-labelled piece, images 066-068 ('(Telegrama cifrado)', Irujo/Basque President to Negrín, 17 Nov 1937), is itself a clear typed text. Everything else is clear letters, reports and telegrams.",
+  "access": "online",
+  "access_note": "Arxius en línia images, ANC1-1-T-7519, 96 images. The backend list https://backend.arxiusenlinia.cultura.gencat.cat/unitat/objects?codiReferencia=ANC1-1-T-7519 and the static image host both work by curl (16 Nov 2026).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "Arxiu Nacional de Catalunya, ANC1-1-T-7519, all 96 images from static.arxiusenlinia.cultura.gencat.cat/active/GANC/TEXTUAL/1/1/7/7519/ (569617_300864,0000.jpg onward), downloaded and viewed 16 Nov 2026 as contact sheets, with images 002 and 003 viewed at full width.",
+    "extent": "One cipher telegram on two Telégrafos strips (images 003 and 005), roughly a dozen lines of four-figure groups (about 180 groups, estimated from the images and not counted). The rest of the 96 images are clear text.",
+    "cipher": "A numeric four-figure-group telegram in the Republican War Ministry's 'Clave general T en H'. Its typed decipherment (image 002), with the identical telegraphic header, is filed immediately before it."
+   },
+   "prior_art": {
+    "decode": "known.py was not needed beyond the shelfmark: the lead's own wave 7 rows are the only hits for ANC1-1-T-7519. DECODE has no Arxius en línia records.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Generalitat, Companys or the 1937 Republican government.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Generalitat or 1937 Republican telegrams.",
+    "edition": "No printed edition was checked. The decipherment is on file in the same unit (image 002), which settles the question.",
+    "literature": "No study was searched, because the filed decipherment closes the lead."
+   },
+   "key_check": "The 'Clave general T en H' is named on both the ciphertext and the decipherment but is not in the file. With the plaintext on image 002, the code could be partly rebuilt from this pair, but that is not needed.",
+   "duplicates": "Lead 2853 is the only lead for ANC1-1-T-7519. The 1938 sibling T-7499 (agenda item on a cipher key) is a different unit.",
+   "verdict": "read",
+   "closed": "Closed as read: the only cipher telegram in the file (images 003/005, Valencia Guerra 19072, 1937) has its contemporary typed decipherment filed beside it (image 002, same header, full clear text). The other 'telegrama cifrado' (images 066-068) is a clear copy."
+  }
+ },
+ "1442": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "The recorded blocker stands. id.lib.harvard.edu/curiosity and api.lib.harvard.edu both return HTTP 403 to curl from this machine (16 Nov 2026), and Harvard also blocked Chrome in the earlier pass, so the symbol pages of the William Parker daybooks are unseen and shorthand versus cipher is undecided. Leads 1298 and 2151 were already closed as duplicates of this one.",
+  "access": "online",
+  "access_note": "Harvard Curiosity / Baker Library digital object exists but is blocked (403) to scripts and to Chrome.",
+  "blocker": "Harvard 403 (CloudFront 'Request blocked'); needs the owner's browser from another network or a Baker Library answer saying which of the four Mss:83 volumes holds the symbols."
+ },
+ "2373": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "The recorded blocker stands. The DigiVatLib manifest for MSS_Barb.lat.9863 still returns 404 (16 Nov 2026). The OPAC items were re-read: 179010 (f. 479r, Millanta to Borromeo, Madrid 1 Nov 1669, 'Copia', note 'Cifra') and 178981 (ff. 505r-507r, Borromeo to Millanta, 11 and 12 Nov 1669, note 'Cifre'). Both carry the same series summary ('Sugli affari della famiglia Barberini'), which is a cataloguer's series formula and not evidence of a clear text. The volume-level note 'Cifre e decifrati' leaves a decipherment filed in the volume possible. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Millanta or Borromeo hit.",
+  "access": "archive",
+  "access_note": "Not digitised; BAV reproduction order.",
+  "blocker": "volume not digitised; a decipherment in the same 'cifre e decifrati' volume cannot be excluded; needs BAV photos of ff. 479r, 505r-507r and their neighbours."
+ },
+ "2047": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Kasten blau 61/25 (Schröder, Vienna, 1664-73, 'Enthält u.a.: Chiffren'). BayHStA gda.bayern.de finding aid re-read 16 Nov 2026 (Kasten blau 61/30 page: 'Medium: A = Analoges Archivale', no digital object); the unit is still analogue only. Its wording is a bare 'Chiffren' in a mixed correspondence file, which the same describer uses differently from 'nicht aufgelöste Chiffren' (61/3) and 'entschlüsselte Chiffren' (62/9 II), so the pieces may be key sheets rather than ciphertext. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Pfalz-Neuburg, Kasten blau or correspondent hit. The recorded blocker stands.",
+  "access": "archive",
+  "access_note": "BayHStA Munich: analogue only, scan order or reading room.",
+  "blocker": "no scan online and the bare 'Chiffren' may mean keys; needs a BayHStA answer or scan. If the pieces prove to be key sheets, close as key material and queue them as key records."
+ },
+ "1997": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Kasten blau 61/32 a and b (Fürstenberg, Galen, Pomponne, 1670-76), two units to judge separately. BayHStA gda.bayern.de finding aid re-read 16 Nov 2026 (Kasten blau 61/30 page: 'Medium: A = Analoges Archivale', no digital object); the unit is still analogue only. Its wording is a bare 'Chiffren' in a mixed correspondence file, which the same describer uses differently from 'nicht aufgelöste Chiffren' (61/3) and 'entschlüsselte Chiffren' (62/9 II), so the pieces may be key sheets rather than ciphertext. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Pfalz-Neuburg, Kasten blau or correspondent hit. The recorded blocker stands.",
+  "access": "archive",
+  "access_note": "BayHStA Munich: analogue only, scan order or reading room.",
+  "blocker": "no scan online and the bare 'Chiffren' may mean keys; needs a BayHStA answer or scan. If the pieces prove to be key sheets, close as key material and queue them as key records."
+ },
+ "2048": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Kasten blau 61/30 (Gise, Verjus, 1671-74, 'verschiedene Chiffren', which fits a key set; already named in the catalogue as a possible key source). BayHStA gda.bayern.de finding aid re-read 16 Nov 2026 (Kasten blau 61/30 page: 'Medium: A = Analoges Archivale', no digital object); the unit is still analogue only. Its wording is a bare 'Chiffren' in a mixed correspondence file, which the same describer uses differently from 'nicht aufgelöste Chiffren' (61/3) and 'entschlüsselte Chiffren' (62/9 II), so the pieces may be key sheets rather than ciphertext. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Pfalz-Neuburg, Kasten blau or correspondent hit. The recorded blocker stands.",
+  "access": "archive",
+  "access_note": "BayHStA Munich: analogue only, scan order or reading room.",
+  "blocker": "no scan online and the bare 'Chiffren' may mean keys; needs a BayHStA answer or scan. If the pieces prove to be key sheets, close as key material and queue them as key records."
+ },
+ "2000": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Kasten blau 62/1 a (Heiss, Paris, 1673-88, 'Enthält u.a.: Chiffren, La Gazette'). BayHStA gda.bayern.de finding aid re-read 16 Nov 2026 (Kasten blau 61/30 page: 'Medium: A = Analoges Archivale', no digital object); the unit is still analogue only. Its wording is a bare 'Chiffren' in a mixed correspondence file, which the same describer uses differently from 'nicht aufgelöste Chiffren' (61/3) and 'entschlüsselte Chiffren' (62/9 II), so the pieces may be key sheets rather than ciphertext. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Pfalz-Neuburg, Kasten blau or correspondent hit. The recorded blocker stands.",
+  "access": "archive",
+  "access_note": "BayHStA Munich: analogue only, scan order or reading room.",
+  "blocker": "no scan online and the bare 'Chiffren' may mean keys; needs a BayHStA answer or scan. If the pieces prove to be key sheets, close as key material and queue them as key records."
+ },
+ "1998": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Kasten blau 61/42 (Schellerer, Vienna, 1677, 'Enthält auch: Chiffren'). BayHStA gda.bayern.de finding aid re-read 16 Nov 2026 (Kasten blau 61/30 page: 'Medium: A = Analoges Archivale', no digital object); the unit is still analogue only. Its wording is a bare 'Chiffren' in a mixed correspondence file, which the same describer uses differently from 'nicht aufgelöste Chiffren' (61/3) and 'entschlüsselte Chiffren' (62/9 II), so the pieces may be key sheets rather than ciphertext. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Pfalz-Neuburg, Kasten blau or correspondent hit. The recorded blocker stands.",
+  "access": "archive",
+  "access_note": "BayHStA Munich: analogue only, scan order or reading room.",
+  "blocker": "no scan online and the bare 'Chiffren' may mean keys; needs a BayHStA answer or scan. If the pieces prove to be key sheets, close as key material and queue them as key records."
+ },
+ "1999": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Kasten blau 59/3 (Louvignies, 1677-82) and 59/5 (Nesselrode, 1685-89), different correspondents to judge separately. BayHStA gda.bayern.de finding aid re-read 16 Nov 2026 (Kasten blau 61/30 page: 'Medium: A = Analoges Archivale', no digital object); the unit is still analogue only. Its wording is a bare 'Chiffren' in a mixed correspondence file, which the same describer uses differently from 'nicht aufgelöste Chiffren' (61/3) and 'entschlüsselte Chiffren' (62/9 II), so the pieces may be key sheets rather than ciphertext. Tomokiyo's and Lasry's lists (fetched 15 Nov 2026) have no Pfalz-Neuburg, Kasten blau or correspondent hit. The recorded blocker stands.",
+  "access": "archive",
+  "access_note": "BayHStA Munich: analogue only, scan order or reading room.",
+  "blocker": "no scan online and the bare 'Chiffren' may mean keys; needs a BayHStA answer or scan. If the pieces prove to be key sheets, close as key material and queue them as key records."
+ }
+}

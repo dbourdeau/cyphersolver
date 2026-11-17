@@ -427,7 +427,7 @@ def page(pages, profiles, reg, dates, version, today):
   <h1>Contributors</h1>
   <p class="sub">The ledger is a shared project. Anyone can add to it: a solution to a cipher already listed, a reading left partial taken further, a new unsolved cipher, a new cipher with its solution, or an independent check of a reading already here. Every write-up names who contributed and whose keys or decipherments it used; this page adds them up.</p>
   <div class="jump"><a href="contribute.html">How to contribute</a></div>
-  <p class="meta">Daniel Bourdeau and contributors</p>
+  <p class="meta">Daniel Bourdeau, Brice Dudout, George Lasry and contributors</p>
 </section>
 
 <main>

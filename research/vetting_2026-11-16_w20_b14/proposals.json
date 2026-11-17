@@ -1,0 +1,193 @@
+{
+ "1900": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "Vestigia (www.vestigia.hu/api/search, read by script 16 Nov 2026) maps every DF number of the lead to ASMo Ambasciatori Ungheria b. 2: each cipher piece outside catalogue 348 has its decipherment filed with it (interlinear, an attached slip, or a 'b' clear copy), and the rest are clear letters or catalogue 348's own DECODE letters. Images of DF 295943 and 295948 were viewed: both carry the decipherment written over the cipher.",
+  "access": "online",
+  "access_note": "Vestigia (www.vestigia.hu) serves the record JSON and the page photographs of the DF set by plain HTTP; MNL OL holds the DF photographs, ASMo the originals.",
+  "correction": "Catalogue 348 (DECODE R1162-R1168, Costabili 1491-92) should be rechecked: its letters are the same Vestigia items (b. 2/20 no. 6 = DF 295908, no. 7 = DF 295909, no. 16 = DF 295935, no. 44 = DF 295963 with its 44b clear copy, b. 2/21 no. 8 = DF 295974 printed by Berzeviczy 1914 no. CLV), and the first pages of DF 295908 and DF 295935 viewed here carry an interlinear decipherment over the cipher. The lead's 'zifara' quote comes from the 44b decipherment (DF 295963-a), not from DF 295812, which Vestigia tags plain Italian and which is printed in MDE IV pp. 395-396. The lead's 'catalogue 361' should read catalogue 348.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "Vestigia record JSON for each DF number via https://www.vestigia.hu/api/search?search=<DF> and the sub-records <DF>-a/-b (vdf.py, vsub.py, img/v_range.txt in this folder); photographs from the Vestigia document pages https://www.vestigia.hu/documents/2985 (DF 295943, 5 Oct 1491, recto and verso viewed), /2990 (DF 295948, 27 Oct 1491, recto viewed), /2949 (DF 295908, recto viewed) and /2977 (DF 295935, recto viewed).",
+    "extent": "About 21 DF records in the lead. Vestigia tags 14 as 'olasz, titkosírás' (Italian with cipher): 295908, 295909, 295935, 295943, 295948, 295960, 295961, 295963, 295978, 295980, 295991, 295992, 295997, 296003; the others (295812, 295962, 295981, 294210, 294211, 294212, 294226) are plain Italian. The cipher pieces are passages of a few lines in Costabili's sign cipher inside Italian letters to Eleonora d'Aragona.",
+    "cipher": "Every cipher piece outside catalogue 348 has a contemporary decipherment: interlinear over the cipher on DF 295943 and DF 295948 (seen here) and on DF 295991 and 295992 (Vestigia note 'A rejtjel megfejtése a sorok közé írva'); on a slip attached to DF 295978 ('feloldása külön papírszeleten'); as filed clear copies for DF 295960 (no. 41b), 295961 (42b), 295963 (44b), 295980 (14b), 295997 (31b) and 296003 (37b). DF 295908, 295909, 295935 and 295963 are catalogue 348's DECODE letters (R1162-R1167), and 295908 and 295935 also carry interlinear decipherments."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Costabili', the DF numbers and R1090-R1094/R1163: DECODE R1090-R1094 are Milan records, not Costabili; the Costabili records are R1095-R1097 (1493, shown clear in targets/costabili1493) and R1162-R1168 = ASMo Amb. Ung. b. 2/20 nos. 6, 7, 12, 16, 44 and b. 2/21 no. 8, i.e. catalogue 348. The lead's 1493 DF 294210 is DECODE R1096 (clear).",
+    "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for 'Costabil', 'Esztergom', 'Strigonia': no entry for this item.",
+    "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for 'Costabil': no entry for this item.",
+    "edition": "Berzeviczy, Aragoniai Beatrix életére vonatkozó okiratok (MHH Diplomataria 39, 1914; archive.org aragoniaibeatrix00berz, OCR read) prints Costabili's letters of 19 Mar, 20/22 Mar ('Titkos írásjegyekkel írva', printed in clear: DF 295974 = DECODE R1168) and 3 May 1492 (DF 295982, cipher, with its 16b copy), and the 4 May letter (DF 295987, 21b); MDE Mátyás IV (archive.org monumentahungari0004unse) prints DF 295812 (Vestigia: 'DEM: IV, pp. 395-396').",
+    "literature": "Vestigia cites Kuffart 2018 for DF 295908 and 295943 and Neumann 2016b for clear neighbours; neither was opened. IA full-text search '\"Costabili\" zifra' found only the editions above."
+   },
+   "key_check": "The contemporary decipherments filed with the letters (interlinear glosses and the b-copies) give the key of Costabili's 1491-92 cipher; it was not rebuilt here because nothing in the lead is left unread.",
+   "duplicates": "DF 295908, 295909, 295935, 295963 (and 295974, not in the lead) are catalogue 348's DECODE letters R1162-R1168; DF 294210 is DECODE R1096 (costabili1493, clear). The other cipher pieces are not on DECODE or in the catalogue.",
+   "verdict": "read",
+   "closed": "Closed as read: every cipher piece in the DF set outside catalogue 348 carries its contemporary decipherment (interlinear, attached slip or filed clear copy, per Vestigia and seen on DF 295943 and 295948), and the remaining records are catalogue 348's own letters or clear letters."
+  }
+ },
+ "2124": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: the recorded blocker stands. themorgan.org answers 403 to curl on 16 Nov 2026 (Cloudflare) and a web search returns only the Morgan record's line 'The letter may be written partially in cipher. From Archives de Villebon'; Tomokiyo and Lasry (fetched 15 Nov 2026) have no entry for it (their Throckmorton items are the 1559 Nicholas letters). Needs the Morgan record viewed in Chrome or a scan.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "2090": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: themorgan.org record 192925 (MA 4158) answers 403 to curl on 16 Nov 2026; the only description is 'entries written in code' in a schoolboy's journal, extent and any key unknown; nothing in Tomokiyo or Lasry (fetched 15 Nov 2026). Needs a Morgan image.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "2292": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: the recorded blocker stands. The Google Books feed (16 Nov 2026) confirms that DBBTI IV regests a piece of RA Collaltové 1698 as 'Postskriptum eines nicht erhalten gebliebenen chiffr. Schreibens' (a clear postscript of a lost ciphered letter) and another letter that mentions a duplicate 'in der Ziffer'; DBBTI is a selection, so whether the inventory's '1 kus šifrováno' is that clear postscript or an unprinted ciphered leaf is still open (it leans towards the clear postscript). Needs a scan of MZA Brno G 169 inv. 1698.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1409": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item' for both items; the titles do not say whether the intercepts are ciphertext or decrypts. Needs NAA copies.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1418": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; the title states no code. Needs an NAA copy of A3200 TEM78.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1419": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; title only, no cipher stated. Needs an NAA copy of B543 W389/3/125.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1408": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; the title 'Japanese messages in code [3 pages]' is the archive's description, but whether a translation is filed in the Investigation Branch file is unknown, so 'open' would be a guess. Needs an NAA copy of C439, 5.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1410": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item' for both items; the title states no code. Needs an NAA copy of CP506/1, 1.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1416": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; the title does not say the message is in code. Needs an NAA copy of C320 SAB2.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1417": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; title only. Needs an NAA copy of MP1049/1 1918/0291.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1422": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; the series also holds the Naval Board's own decypher logs, so it may be already read. Needs an NAA copy of MP1074/8, 44.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1421": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: NAA RecordSearch answers 403 to curl on 16 Nov 2026 and the 3 Nov Chrome pass found 'Images do not exist for this item'; title only. Needs an NAA copy of MP1049/5 2037/2/27.",
+  "access": "archive",
+  "access_note": "reading-room or copy-request item; not digitised or behind a bot check"
+ },
+ "1357": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: the Abhilekh Patal item page returns a 202 bot shell to curl on 16 Nov 2026, and no printed list or calendar of 1910 Commerce and Industry (Telegraphs A) proceedings was found online; the title ('Treatment of suspicious code and cipher telegrams passing between India and Europe') reads as a policy file. Needs the 7 pages viewed from a permitted session.",
+  "access": "online",
+  "access_note": "digitised on Abhilekh Patal; pages need a login and the host returns a bot shell to scripts"
+ },
+ "1363": {
+  "verdict": "not_cipher",
+  "confidence": "high",
+  "note": "The National Archives of India's own Descriptive List of Secret Department Records vol. II (1776-1780) describes 1 Nov 1779 No. 8 as a clear autograph letter of 26 Oct 1779 from Bhagalpur in which the Commander-in-Chief's secretary asks J. P. Auriol for the cypher to read a letter from Goddard; the List footnotes letters that are written in cypher and has no such note here.",
+  "access": "online",
+  "access_note": "Abhilekh Patal pages not viewed from this network (202 bot shell); the printed Descriptive List is on archive.org.",
+  "correction": "The lead's title (Governor-General and Council to Fort St George) is wrong: the piece is the Commander-in-Chief's secretary (W. Tierney in the List's OCR) to J. P. Auriol, Bhagalpur 26 Oct 1779, filed under 1 Nov 1779 No. 8.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "Descriptive List of Secret Department Records vol. II, 1776-1780 (National Archives of India), archive.org descriptivelisto030631mbp, OCR text read: entry '1 Nov., 1779, No. 8', p. 322. The Abhilekh Patal scan (NAIDLF00950238) was not viewed here; the 11 Nov viewing in vetting_held is not relied on.",
+    "extent": "A 2-page autograph letter signed (A.L.S.), per the Descriptive List.",
+    "cipher": "The List summarises the letter as a request for the cypher so that the Commander-in-Chief can read a letter from T. Goddard, plus a request about sepoys' pay at Benares; no cipher in the letter. The same volume footnotes cipher items ('Part of this letter is written in cypher', 'The letter was written in cypher') and has no such note for this one."
+   },
+   "prior_art": {
+    "decode": "known.py on the shelfmark in earlier passes: only this lead's row; no DECODE record.",
+    "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for 'India', 'Hastings', 'Goddard', 'Madras': no entry for this item.",
+    "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for 'India', 'Hastings': no entry for this item.",
+    "edition": "NAI Descriptive List of Secret Department Records vol. II, entry 1 Nov 1779 No. 8 (W. Tierney in the OCR; Turner in the earlier held block) to J. P. Auriol, Bhagalpur 26 Oct 1779: clear request for the cypher.",
+    "literature": "Not searched further: the archive's own list settles the content."
+   },
+   "key_check": "No key applies: the letter is clear and only asks for a cypher.",
+   "duplicates": "No other repo item for this consultation; the Goddard cipher letter it refers to is not in this file.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher: the NAI Descriptive List of Secret Department Records vol. II describes 1 Nov 1779 No. 8 as a clear 2-page letter asking J. P. Auriol for the cypher to read Goddard's letter, and flags no cipher in it."
+  }
+ },
+ "1356": {
+  "verdict": "not_cipher",
+  "confidence": "medium",
+  "note": "The Calendar of Persian Correspondence vol. VII calendars OR 483 as no. 1670, an ordinary news letter of Mir Muhammad Husain (allowance, Tipu back in Seringapatam, the Nizam's collections); the calendar marks cipher letters when there are any (nos. 727-728, 'in cypher in the English language'), and the 'secret code' of the portal title is a machine translation.",
+  "access": "online",
+  "access_note": "Abhilekh Patal item page answers 202 (bot shell) from this network on 16 Nov 2026; the pages were not seen. The calendar is on archive.org.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "Calendar of Persian Correspondence vol. VII (1785-87), archive.org calendarofpersia07indi, OCR text read: entry no. 1670 with the reference '(OR 483 ; AR 4, p 415, no 165)'. The Abhilekh Patal scan (NAIDLF02169924) was not viewed here; the 11 Nov viewing in vetting_held went round a bot check and is not relied on.",
+    "extent": "One letter of about 15 lines (per the record, 4 digitised pages with covers); the calendar summarises it in nine lines.",
+    "cipher": "No cipher in the calendar's summary: allowance and arrears, Tipu's return to Seringapatam, Sharfu'l-Mulk and Hashmat Jang back from the Kistna, deaths and desertions. The same volume flags letters sent 'in cypher' (nos. 727-728 and the entry on OR 37), so a cipher letter would have been noted."
+   },
+   "prior_art": {
+    "decode": "known.py on the shelfmark and 'Persian Original Letters' (earlier passes): only this lead's own row; no DECODE record.",
+    "tomokiyo": "Tomokiyo, cryptiana.web.fc2.com/code/unsolved.htm (fetched 15 Nov 2026), grepped as text for 'Persian', 'India', 'Cornwallis': no entry for this item.",
+    "lasry": "Lasry list cryptiana.web.fc2.com/code/GL.htm (fetched 15 Nov 2026), grepped as text for 'Persian', 'India': no entry for this item.",
+    "edition": "Calendar of Persian Correspondence vol. VII, no. 1670 (OR 483): a plain news letter, no mention of cipher or secret writing.",
+    "literature": "Not searched further: the calendar identifies the letter's content."
+   },
+   "key_check": "No key applies: the calendar shows a plain Persian letter.",
+   "duplicates": "known.py on the shelfmark: only this lead's row; no other repo item for Mir Muhammad Husain 1787.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher on the printed calendar: OR 483 is Calendar of Persian Correspondence VII no. 1670, an ordinary news letter, and the 'secret code' in the portal title comes from its machine translation; the scan itself was not viewed through a permitted route."
+  }
+ },
+ "1361": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: Abhilekh Patal returns a 202 bot shell on 16 Nov 2026. The NAI Descriptive List of Secret Department Records would settle it (it footnotes letters written in cypher), but only vols II (1776-80), III (1781-82), VI (1785-86) and VIII (1789-90) are on archive.org; vol. VII (1787-88) was not found online. Needs vol. VII or the 4 pages.",
+  "access": "online",
+  "access_note": "digitised on Abhilekh Patal; pages need a login and the host returns a bot shell to scripts"
+ },
+ "1362": {
+  "verdict": null,
+  "confidence": null,
+  "note": "Not assessed: Abhilekh Patal returns a 202 bot shell on 16 Nov 2026; the NAI Descriptive List of Secret Department Records vol. VII (1787-88), which would say whether 9 June 1788 No. 1 is written in cypher, was not found online (archive.org holds vols II, III, VI and VIII). Needs vol. VII or the 3 pages.",
+  "access": "online",
+  "access_note": "digitised on Abhilekh Patal; pages need a login and the host returns a bot shell to scripts"
+ }
+}

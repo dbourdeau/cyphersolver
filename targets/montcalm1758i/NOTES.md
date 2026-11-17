@@ -3,7 +3,7 @@
 Status: in progress (contribution folder only, no site page yet; Daniel is free to write, edit or replace one).
 
 Contributed by Andrew Beling, with AI agents, 13-14 November 2026. All transcription and testing below was done by
-our own AI agents; it has **not** been rechecked by a second, uninvolved agent.
+our own AI agents. The follow-up of 14 Nov (settled cells) was checked in part: on 15 Nov 2026 a second AI agent of ours, not shown the conclusions, re-ran the figures (identical) and compared ten settled cells with the LAC image: five agree, five cannot be told apart at the image's 775 px (all five are cells the table marks only "image permits"); none disagrees.
 
 ## What this is, in one paragraph
 
@@ -123,9 +123,9 @@ Paged or searched, with result:
   envoyer 2,000 hommes ... (Dépêche chiffrée traduite entre lignes.) Folio 194, 2 pages", dated in the margin, as far
   as the OCR layout shows, Camp de Carillon, 1 September 1758. ANOM's finding aid calls it "Lettre chiffrée de Montcalm
   au ministre réclamant deux mille hommes ou la paix". **This is the best candidate**: Montcalm to the Marine minister
-  in figures, with a period decipherment between the lines. Not seen: the F3 reels on Héritage Canadiana (C-10523 to
-  C-10533) film only the volumes LAC did not transcribe (vol. 50 onward); ANOM's own search sits behind a bot check;
-  the LAC transcript of vol. 15 is not online as far as we found.
+  in figures, with a period decipherment between the lines. (Corrected 14 Nov 2026: the F3 reels on Héritage
+  Canadiana, C-10523 to C-10533, are LAC's handwritten transcripts of F3 in volume order, and the clear text of this
+  letter is on reel C-10528; see "Known plaintext of a second letter" below. The figures are not in the transcript.)
 - **New York Colonial Documents vol. 10** (archive.org `documentsrelativ10brod`): Montcalm to Belle-Isle, Montréal,
   12 Apr 1759, "This despatch was in cipher" (from the War archives, now Service historique de la Défense, A1). Given
   I4, it may be in code I; the original is not online.
@@ -164,12 +164,119 @@ Checked when pull request #583 was integrated (round 13).
 The gaps are workable from here only in part: the doubtful cells can be settled from the four letters (the seven
 post-freeze corrections show how), so the folder stays `Status: in progress` and has no page.
 
+## Cells settled from Casgrain's text (14 Nov 2026, follow-up to #583)
+
+Done as Daniel suggested on #583: a separate, labelled table, `key/table_settled_from_casgrain.tsv`. **The frozen
+table is not changed** (its sha256 still matches `key/FREEZE.txt`), and the settled values are read from the same four
+letters they are then measured on, so the "after" figures below are circular: they show how far the sheet plus
+Casgrain's clear text account for his figures, not an independent test of the sheet. Work by our own AI agent;
+on 15 Nov 2026 a second AI agent of ours, not shown the conclusions, re-ran the figures (identical) and compared ten settled cells with the LAC image: five agree, five cannot be told apart at the image's 775 px (all five are cells the table marks only "image permits"); none disagrees.
+
+How. `settle_from_casgrain.py` aligns, letter by letter, Casgrain's printed figures (`letters/*.tr`) with his printed
+clear text by dynamic programming (a clear cell must match its reading or pay per edit; a doubtful, illegible or
+off-photograph cell may take any 1-10 letter stretch at a cost; skipped text letters cost). Every occurrence of every
+cell that is doubtful, illegible, off the photograph, in `key/corrections_post_freeze.tsv`, or clear but aligned with
+other text is listed in `results/casgrain_implied_values.tsv` (336 occurrences, with context). Each value was then
+checked by hand against the context, and each cell was looked at again on the LAC image (sha256 ac16ca78...,
+775 px, enlarged crops of the passes' band images).
+
+Result: 69 cells.
+
+| Status | Cells | Which |
+|---|---|---|
+| confirmed on image | 34 | the doubtful reading is what the letters need and the image shows it (35 em, 42 nu, 55 ro, 73 at, 75 voi, 82 peine, 147 che, 196 eux, 234 etre, 247 y, 261 sou, 281 nt, 284 ex, 313 p, 329 n, 361 isle, 381 l, 410 tre, 442 r, 448 lui, 489 deffen, 494 ont, 495 ite, 512 ti, 558 hi, 592 trou, 618 tout, 645 ne, 652 ve, 674 oc, 681 ils, 687 suite, 690 te), and 604 croi (frozen "envi") |
+| image permits | 23 | the letters need another value and the image allows it: 102 oit, 210 vrai, 220 su, 290 gi, 312 sen, 352 tant, 388 i, 407 tien, 428 va, 430 sa, 444 aussi, 452 lettre, 474 t, 479 ces, 536 ha, 621 si, 623 bou, 638 oient, 663 ri, 672 si→fi, 695 ressource; and two cells marked clear that the letters show misread: 564 er→cr (2 occurrences), 688 eu→cu (6) |
+| image contradicts | 4 | 355 (image honteuse/honte; letters need homme), 437 (image a six-letter word read combie; letters need comm, four times), 591 (image lors; letters need po; 571 = po, so Casgrain's or the clerk's 591 may be a slip), 151 (clear "penible"; letters need possib in "impossibilité") |
+| off the photograph | 8 | values for cells 1-20 from the letters only: 2 necessaire, 10 operation, 11 go, 12 facheux, 16 na, 17 vie, 18 ac, 19 avi |
+
+Of the seven post-freeze corrections, six are settled as listed there (428 va, 479 ces, 474 t, 604 croi, 621 si, 591
+po, the last contradicted by the image); for 210 the letters give "vrai" (cell 160 = e follows), not "vraie".
+
+Not counted as misread cells: spelling conventions of the code (133 v and 617 v used for u, 414 j for i, 457 s for z,
+589 Roy for roi, 507 envoy, 489 deffen) and clear cells the encipherer used for part of their value (99 circonstance,
+68 jour, 293 volonte, 440 prompt, 483 rempli, 580 vers, 631 terre, 646 effet: "al-terre-ca-tion", "rempli-or-te-r").
+Figure slips, where a neighbouring number on the sheet has the needed value: 677 loi for 678 ennemi (I1 "ses
+ennemis"), 548 négociant for 584 je (I2), 352 for 252 tant, 591 for 571 po, 320 coup for 220 su (I1 "de suite"; I4
+uses 320 as "cou" in "recouvrer"). Whether the slip is Casgrain's printer's or the 1758 clerk's cannot be told
+without the originals.
+
+Measures, before and after (`results/settled_measures.json`). The whole-word measure is Daniel's: a word of
+Casgrain's clear text (split on spaces) counts only when every letter of it is matched, in the alignment of decode and
+text, by letters from cells counted as clear. Our re-implementation gives exactly his frozen figures. "After" puts in
+the settled values with status confirmed or permits, counted as clear; cells the image contradicts stay as frozen.
+
+| Letter | Words | Whole words, frozen clear cells | with doubtful cells | Whole words, after settling | Letter similarity before / after |
+|---|---|---|---|---|---|
+| I1 | 122 | 82 (67.2%) | 97 (79.5%) | 112 (91.8%) | 0.938 / 0.973 |
+| I2 | 31 | 23 (74.2%) | 26 (83.9%) | 28 (90.3%) | 0.921 / 0.937 |
+| I3 | 233 | 169 (72.5%) | 191 (82.0%) | 213 (91.4%) | 0.939 / 0.974 |
+| I4 | 371 | 265 (71.4%) | 307 (82.7%) | 334 (90.0%) | 0.935 / 0.961 |
+
+With the four contradicted cells also put in: 93.4, 90.3, 91.8 and 94.1% of words. The letter similarity is the
+difflib ratio of `decode_letters.py`, a looser measure, labelled as such. The remaining word losses are mostly the
+slips above, the loose uses of clear cells, and words Casgrain prints in modern spelling (étoit for estoit).
+
+## Known plaintext of a second letter in this code (cipher unseen)
+
+Montcalm to the minister (Marine), Camp de Carillon, 1 September 1758: ANOM, Colonies F3 (Moreau de Saint-Méry
+collection) volume 15, folio 194 (duplicate), marked "Lettre chiffrée". The original, in figures with the decipherment
+between the lines (Richard 1899: "Dépêche chiffrée traduite entre lignes"), is at ANOM and not digitised. The clear
+text survives in Library and Archives Canada's handwritten transcript of F3 15, pages 224-225, on Héritage Canadiana
+reel C-10528, frames 1188-1189 (frame 1190 is a second exposure of page 225; frame 1191, page 226, is folio 204, a
+different document): https://heritage.canadiana.ca/view/oocihm.lac_reel_c10528/1188 . The transcriber copied only the
+decipherment; there are no figures. Transcribed by our AI agent from the frame images (1600 px), 14 Nov 2026,
+keeping the transcript's spelling:
+
+> [margin: Duplicata 194. B/que(?) Canada] Au Camp de Carillon le prem[ie]r 7bre [septembre struck through] 1758.
+> M. De Montcalm. Monseigneur, [margin: Lettre chiffrée]
+> La situation de la Colonie des plus critiques: La paix nécessaire. Les anglois ont eu, indépendament de leur armée
+> pour Louisbourg, trente mille hommes pour agir en Canada.
+> Nous n'avons que huit bataillons, douze cent soldats de la Colonie, le surplus dans les forts ou la Belle Rivière.
+> Les Canadiens pourroient fournir trois mille hommes toute la campagne, cependant nous n'en avons eu cette année que
+> douze cent en campagne. On en a mis un plus grand nombre, mais seulement pour un mois. Les Canadiens bons pour des
+> courses ne sçavent pas rester cinq mois en campagne, les Sauvages encore plus.
+> J'écris la verité comme citoyen, sans être découragé, résolu de m'ensevelir sous les ruines de la Colonie. Il
+> faudroit que la France put envoyer deux mille hommes de recrüe et six bataillons.
+> Peut-elle les envoyer et des recrües de la bonne espece.
+> [margin: 194v] Donc la paix nécessaire ou le Canada perdu; nos forces trop inférieures à celles des Anglois pour
+> resister à trois attaques. J'aprends dans le moment qu'ils sont à Frontenac. Il y a longtems que je le craignois.
+> La Colonie sera coupée en deux.
+> Je suis avec respect, Monseigneur, Votre très humble et très obeissant serviteur. Montcalm.
+> [note: Signature autographe. 195 en blanc. 196-203 copiés au Supplément pp. 119-127.]
+
+English (ours): "The situation of the colony most critical: peace necessary. The English have had, besides their army
+for Louisbourg, thirty thousand men to act in Canada. We have only eight battalions and twelve hundred colonial
+soldiers, the rest in the forts or on the Belle Rivière [the Ohio]. The Canadians could provide three thousand men for
+the whole campaign, yet this year we have had only twelve hundred in the field. A larger number was called out, but
+only for a month. The Canadians, good for raids, cannot stay five months in the field; the Indians still less. I write
+the truth as a citizen, not discouraged, resolved to bury myself under the ruins of the colony. France would have to
+send two thousand recruits and six battalions. Can she send them, and recruits of the right sort? So: peace necessary,
+or Canada lost; our forces are too inferior to the English to resist three attacks. I learn at this moment that they
+are at Frontenac. I have long feared it. The colony will be cut in two. I am with respect ... Montcalm."
+
+The enciphered body is 186 words, 874 letters; at the rate of Casgrain's letters (about 2.7 letters a group) that is
+some 320 groups. Nothing here is encoded or decoded: the cipher is unseen. Whether this letter is in code I is not
+known; it is likely (Montcalm writes on 12 Apr 1759 that he enciphers to the Marine "en me servant de celuy que Mons. de
+Moras m'a envoyé l'année dernière"), but not shown. What a scan of the original (ANOM reading room or reproduction
+service) would allow: (1) whether the figures are code I at all, by decoding them with the frozen table and comparing
+with this text, a test on a text the table has never seen, unlike Casgrain's four; (2) settling more of the 138
+doubtful cells and cells 1-20 from a second, independent text; (3) a check on the period decipherment between the
+lines against this later transcript.
+
+ANOM checked again, 14 Nov 2026, in the built-in browser (its bot check passed by itself): the free search of the
+finding aids returns 4 records for "Montcalm" (none in F3) and nothing for "COL F3 15"; F3 is not in its online
+inventories or its "Autres fonds numérisés". FranceArchives (record 03740afc...) still describes F3 15 as not
+digitised. So the cipher of f.194 is not online.
+
 ## Remaining gaps
 
 - Cells 1-20 of the table: off the LAC photograph. blocker: needs-physical-access (ANOM COL C11E 10 f.288).
-- 138 doubtful cells, chiefly short syllables, at 775 pixels. blocker: needs-physical-access (a better image) for the cells the four letters never use; the cells the letters use can be settled from Casgrain's clear text, not done yet (not-attempted beyond the seven in `key/corrections_post_freeze.tsv`).
-- No second text in the code read: the F3 15 f.194 and 12 Apr 1759 cipher pieces are not online. blocker:
-  needs-physical-access.
+- 138 doubtful cells, chiefly short syllables, at 775 pixels. The 57 doubtful cells the four letters use are settled in
+  `key/table_settled_from_casgrain.tsv` (14 Nov 2026); four values the letters need are contradicted by the image
+  (151, 355, 437, 591). blocker: needs-physical-access (a better image) for the doubtful cells the letters never use.
+- No second text in the code read: the clear text of F3 15 f.194 (1 Sep 1758) is now transcribed above, but its
+  figures, and the 12 Apr 1759 cipher piece, are not online. blocker: needs-physical-access (ANOM scan of COL F3 15
+  f.194).
 
 ## Sources
 

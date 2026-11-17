@@ -40,13 +40,14 @@ def parse(path):
                 elif t.startswith('#clear:'):
                     L['codes'].append({'kind': 'clear', 'code': None, 'top': None, 'raw': t, 'text': t[7:]})
                 else:
-                    unc = t.endswith('?')
-                    t2 = t.rstrip('?')
-                    if '/' in t2:
-                        a, b = t2.split('/')
-                        L['codes'].append({'kind': 'code', 'code': int(b), 'top': int(a), 'raw': t, 'unc': unc})
+                    unc = '?' in t
+                    parts = [x.rstrip('?').rstrip('.') for x in t.split('/')]
+                    nums = [int(x) if x.isdigit() else None for x in parts]
+                    if nums[-1] is None:
+                        L['codes'].append({'kind': 'lost', 'code': None, 'top': None, 'raw': t})
                     else:
-                        L['codes'].append({'kind': 'code', 'code': int(t2), 'top': None, 'raw': t, 'unc': unc})
+                        L['codes'].append({'kind': 'code', 'code': nums[-1], 'top': nums[0] if len(nums) > 1 else None,
+                                           'raw': t, 'unc': unc})
     for p in pages:
         p['lines'] = [p['lines'][k] for k in sorted(p['lines'])]
     return pages

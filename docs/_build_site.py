@@ -14,6 +14,7 @@ It also stamps the dates: the hero dateline, the head meta tags, the index cards
 of findings.html all carry the day the finding landed, from _dates.json, which this script maintains.
 """
 import os, re, sys, pathlib, html, json, hashlib, datetime
+from urllib.parse import urlencode
 import _images as IMG
 HERE = pathlib.Path(__file__).parent
 ICONS = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
@@ -123,9 +124,12 @@ DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read(?:
                      r'\s*(?:\d{1,2}\s+)?(?:' + '|'.join(MONTHS) + r'|Sept?)?\s*\d{4}$', re.I)
 
 SHARED_PAGES = ('index', 'findings', 'contributors', 'contribute')      # pages of the ledger as a whole, not of one write-up
+SHARED_AUTHOR = 'Daniel Bourdeau, Brice Dudout, George Lasry and contributors'
+def shared_author(slug):
+    return SHARED_AUTHOR if slug in SHARED_PAGES else 'Daniel Bourdeau'
 def meta_html(p, rec, old, slug=None):
     """Rebuild the hero dateline, keeping whatever else the page put on that line."""
-    author = (p.get('author') if p else None) or ('Daniel Bourdeau and contributors' if slug in SHARED_PAGES else 'Daniel Bourdeau')
+    author = (p.get('author') if p else None) or shared_author(slug)
     keep = []
     for part in re.split(r'\s*(?:&middot;|·)\s*', old or '')[1:]:
         flat = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', part))).strip()
@@ -445,12 +449,16 @@ GROUPS = [(M.KEY[m], M.LABEL[m][0].upper() + M.LABEL[m][1:], 'm-' + M.KEY[m], (l
           ('other', 'Not yet classified', 'todo', lambda p: not p.get('method') and p['slug'] not in SURVEYS),
           ('survey', 'Surveys', 'todo', lambda p: p['slug'] in SURVEYS)]
 # the Explore menu: the pages that are not write-ups (slug, label, one line)
-EXPLORE = [('highlights', 'Highlights', 'Twenty favourites: the funny, the historic, the ingenious, the hardest'),
-           ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
-           ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked'),
-           ('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
-           ('keys', 'Key web', 'Which key opened which letter'),
-           ('secret', 'Secret letter', 'Seal a message in a real historical cipher')]
+EXPLORE_GROUPS = [
+    ('Start here', [('highlights', 'Highlights', 'Twenty favourites: the funny, the historic, the ingenious, the hardest'),
+                    ('top25', 'Top 25 unsolved ciphers', 'Twenty-five ciphers with no accepted reading, ranked')]),
+    ('Maps and patterns', [('atlas', 'Atlas', 'Every letter drawn on the map, five centuries of it'),
+                           ('key-evolution', 'How keys changed', 'Kinds of key, their signs and their size, 1400 to 1950'),
+                           ('keys', 'Key web', 'Which key opened which letter')]),
+    ('Try and take part', [('secret', 'Write a secret letter', 'Seal a message in a real historical cipher'),
+                           ('contribute', 'Contribute', 'Send a solution, a new cipher or a check of a reading')]),
+    ('Reference', [('glossary', 'Glossary', 'How each cipher was solved, and the terms used')])]
+EXPLORE = [e for _, items in EXPLORE_GROUPS for e in items]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
 # the same groups named in a word or two, for the two-column outcome grid in the phone menu
@@ -490,8 +498,9 @@ def nav_html(current):
     panel = (f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All write-ups, with filters &rarr;</a>'
              f'<a href="findings.html"{cur("findings")}>All findings, newest first</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
-    explore = (''.join(f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
-                       for slug, name, desc in EXPLORE).join(('<ul>', '</ul>'))
+    explore = (''.join(f'<div class="grp"><h4>{head}</h4><ul>' + ''.join(
+                           f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
+                           for slug, name, desc in items) + '</ul></div>' for head, items in EXPLORE_GROUPS)
                + f'<div class="foot"><a href="{REPO}" rel="noopener">The code and the working notes on GitHub &#8599;</a></div>')
     return (
         f'<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">\n'
@@ -751,6 +760,12 @@ def glossary_html():
         f'<h2 id="terms">Terms</h2>\n<dl class="gloss">\n{terms}</dl>\n\n</main>\n<!-- site:footer -->\n</body>\n</html>\n')
 
 
+def contest_url(slug):
+    """The Verification issue form (.github/ISSUE_TEMPLATE/verification.yml) with its title and Write-up field filled
+    in for this page: a GitHub issue form takes a field's value from the query parameter named after the field id."""
+    return f'{REPO}/issues/new?' + urlencode({'template': 'verification.yml', 'title': f'Verification: {slug}',
+                                              'page': f'{BASE_URL}{slug}.html'})
+
 def footer_html(current):
     order = sorted([p for p in PAGES if p['slug'] not in ('solved', 'top25')], key=lambda p: p['y'])
     prev = nxt = None
@@ -762,11 +777,13 @@ def footer_html(current):
     links = ['<a href="index.html">Overview</a>']
     if prev: links.append(f'<a href="{prev["slug"]}.html" rel="prev">&larr; {prev["label"]} {prev["year"]}</a>')
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
+    if cur and current not in SURVEYS:
+        links.append(f'<a href="{html.escape(contest_url(current))}" rel="noopener">Contest or verify this reading &#8599;</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
-    author = cur.get('author', 'Daniel Bourdeau') if cur else 'Daniel Bourdeau and contributors' if current in SHARED_PAGES else 'Daniel Bourdeau'
+    author = cur.get('author', 'Daniel Bourdeau') if cur else shared_author(current)
     footer_date = cur.get('footer_date', 'September 2026') if cur else 'September 2026'
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')
@@ -917,11 +934,11 @@ def mirror_findings(s, n=RECENT_VISIBLE):
             f'<p class="allws"><a href="writeups.html">All {len(PAGES)} write-ups &rarr;</a></p>')
     return s[:m.start(2)] + head + s[m.end(2):]
 
-FEATURED = ['voynich', 'lucca', 'armstrong', 'sunyatsen', 'feuquieres', 'ormonde']
+FEATURED = ['qaysarani1350', 'burr1804', 'siena12', 'stade1710', 'lejava1921', 'army1902']   # three of the project's, three contributed (Lasry, Dudout, Harumi-Matsuba); qaysarani1350 (oldest key recovered here) replaced lannoy1527 on 16 Nov 2026
 BROWSE_LANGS = 6        # languages listed under "Browse the write-ups"; the filter on writeups.html has the rest
 
 def press_html():
-    """The home page hero's "As seen in" line, from press.json: one link per published piece, oldest first. A piece with
+    """The home page hero's "As seen in" line, from press.json: one link per published piece, newest first (press.json lists them oldest first). A piece with
     no url (announced, not yet out) is not shown."""
     items = [x for x in json.loads((HERE.parent / 'press.json').read_text(encoding='utf-8'))['items'] if x.get('url')]
     if not items:
@@ -938,7 +955,7 @@ def press_html():
             return (f'<a class="haslogo" href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>'
                     f'<img class="{cls}" src="{html.escape(logo, quote=True)}" alt="{name}" loading="lazy"></a>')
         return f'<a href="{html.escape(x["url"], quote=True)}" rel="noopener"{lang}{tip}>{name}</a>'
-    return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in items)
+    return ('<!-- press:start -->\n  <p class="seen"><span>As seen in</span> ' + ' &middot; '.join(link(x) for x in reversed(items))
             + '</p>\n<!-- press:end -->')
 
 
@@ -963,7 +980,7 @@ def browse_html():
 # The larger of them keep their rules in a sheet of their own, docs/pg-<slug>.css, linked after style.css on that page
 # alone (slug -> a hash of the file); the rest, and pg-solve, stay in style.css.
 PAGE_CSS = {f.stem[3:]: hashlib.sha1(f.read_bytes().replace(b'\r\n', b'\n')).hexdigest()[:8] for f in sorted(HERE.glob('pg-*.css'))}
-PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
+PAGE_STYLED = {'archives', 'atlas', 'catalogue', 'further', 'goldbar', 'highlights', 'huangxing', 'keys', 'key-evolution', 'roosevelt', 'secret', 'sunintercepts', 'sunyatsen'}
 SHARED_INLINE = ('.why', '.w-yes', '.w-no', '.w-lang', '.w-otp', '.w-short', '.w-fake', '.w-open', '.item', '.item h3', '.item .meta2', '.ct', '.callout', '.callout h3', '.tw')
 
 def credit_figures(s):
@@ -1217,7 +1234,7 @@ def process(path):
     s = re.sub(r'<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', s)
     s = s.replace('</head>', ICONS + '</head>', 1)
     # page scripts carry a hash of their own content, so an edit reaches browsers without a VERSION bump
-    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|herovid)\.js(?:\?[^"]*)?"',
+    s = re.sub(r'<script src="(secret|cipher-reveal|atlas|archmap|catmap|herovid)\.js(?:\?[^"]*)?"',
                lambda m: f'<script src="{m.group(1)}.js?v={hashlib.sha1((HERE / (m.group(1) + ".js")).read_bytes().replace(b"\r\n", b"\n")).hexdigest()[:8]}"', s)
     s = re.sub(r'<script src="site.js[^"]*"></script>\s*', '', s)
     s = s.replace('</body>', f'<script src="site.js?v={VERSION}"></script>\n</body>', 1)
@@ -1419,6 +1436,8 @@ if __name__ == '__main__':
     print('further: %d partial readings' % F.build_html(PAGES))
     import _archives_page as AR                 # archives.html: requests for archives and libraries, from archive_requests.json
     print('archives: %d open requests' % AR.build_html(PAGES))
+    import _key_evolution_page as KE            # key-evolution.html: the profiles' cipher systems counted by half-century
+    print('key evolution: %d systems' % KE.build_html())
     sys.path.insert(0, str(HERE.parent / 'tools')); import seed_archive_requests as SAR
     new, gone = SAR.main(dry=True, quiet=True)
     if new or gone: print(f'archives: {new} needs-physical-access gaps not in archive_requests.json, {gone} gone from NOTES; run python tools/seed_archive_requests.py')

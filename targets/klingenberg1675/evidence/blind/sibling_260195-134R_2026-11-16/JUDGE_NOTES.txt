@@ -1,0 +1,18 @@
+JUDGE NOTES (strict, one pass, no edits to the decodes)
+
+Units: each space-separated decoded token. Not counted: <struck>, insert-marks, {triple-barred hash}, [edge], '.'.
+Counted N: every [n], [??], [??24], [?nn?] and [?3??~]. Counted as 1 unit N: {small closed triangle} (254L 9-11, a cipher sign with no value).
+Coverage check: 134R source tokens 555 = 555 units judged; 253R 105 raw tokens = 103 units (the triangle's 3 words = 1 unit).
+
+Rules applied
+- c standing for g/d (unc, mucklich, unbecrundeten, rcwohn, anzuc, zeitunc, entheilunc) = E each time: no period spelling writes c for g.
+- Period forms accepted as S: verstercket, frembd, zusamen, dero/deroselbe, desfalls, eusserst, endtlich, conclusis, bremischen, dasige, Ombrage.
+- Proper names Baulissen (135R) and Le Mairi (254L) marked S as well-formed names; not checked against any source.
+- Fragments at line or page edges marked S only where the joined word reads (zu an|dern, münste|rische, wu r|de); otherwise N (sei b, unterlassen o, s so, l c h, re).
+- One-letter slips (E): Vöcker, de-er, ge-cu-ncken, trage-s, de(r) zeitung, E-n-theilung (2: n for r, c for g), kur-z-zem, ge-wa-chten, Hand-ru-ng, ver-o-tandni-o (2), gla-d~-ben.
+- 135R 5-7 "de u n so r" left N except "so": no reading found without more than one change.
+- 254L 1-2 and 6-8 (after "dasige") and 9-11 middle read as no sense: all N.
+
+Totals
+260195-134R: S 491, E 15, N 49, units 555. Strict share 491/555 = 0.8847 (88.5%).
+260195-253R: S 61, E 4, N 38, units 103. Strict share 61/103 = 0.5922 (59.2%).

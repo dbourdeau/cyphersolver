@@ -56,6 +56,10 @@ and R7397 does not (the candidate above).
   under the brief, but it is a good **key-rebuild source** for the 1690s Florence-Vienna cipher. That cipher may also
   appear among the DECODE Mediceo keys, and it would read any un-interlined Montauti despatches in MdP (Vienna
   legation files). Not in the repo (known.py: Montauti, Codex 531, Cosimo III: no hits).
+  Since 15 Nov 2026 the Montauti papers have a target, [`targets/montauti1692/`](../../targets/montauti1692/) (Andrew
+  Beling, with AI agents, pull request #665): Ms. Codex 533, Cosimo's autograph letters, in a different cipher of
+  two-sign groups, its key rebuilt from the interlined despatches of Oversize Ms. Codex 534. The dotted number
+  cipher of Codex 531 described here is not that key and is still not worked.
 - **Marco Vito (Vienna) project on the encrypted Medici documents of 1486-1491** (letters to Lorenzo il Magnifico,
   *Mediceo avanti il Principato*). The project describes them as not yet decrypted, but it is pre-1537 (outside this
   portal), active work by another researcher, and the paper PDF (dspace.ut.ee) timed out. Already noted in
