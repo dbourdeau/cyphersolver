@@ -150,6 +150,74 @@ the film. The checker scores the whole of `reading.md` 0.586 of sentences clean.
   Santander, in Blanco and Azpurúa, or in Zubieta, *Apuntaciones sobre las primeras misiones diplomáticas de Colombia*
   (1924). We claim only the decipherment of this intercepted NARA copy, not that the content is new.
 
+## 7. Second transcription pass (Andrew Beling, with AI agents; work of 12 November 2026, added 17 November 2026)
+
+This is the next step named at the head of these notes: a full second transcription of the cipher on frames
+0055-0058 and a test of the z sign. Files in `second_pass/` (its README lists them). The sections above, and
+`transcription.txt`, `reading.md`, `corrections.md`, `decryption.txt` and `key.txt`, are left as they were; where this
+pass disagrees with them, it is said here.
+
+**How it was done, and what is blind.** An AI agent transcribed all the cipher and the clear text from the four
+frames without sight of any key, decryption or earlier transcription; its files were hashed when it finished and are
+copied unchanged (`second_pass/blind/`). Then one AI agent, which could see both transcriptions and the key, went
+through every place where they differ and settled each on the frame. **The transcription was blind; the settling of
+the differences was not.** No person has checked any of it.
+
+**Result.**
+
+- The two transcriptions agree on 2,293 of 2,532 signs (0.906). There are 231 places to settle: 200 where they
+  differ and 31 where they agree only on a doubtful or alternative reading. 112 were settled on enlargements of 3 to
+  6 times, 119 on line strips at about 1.5 times (the weaker settlements, mostly 0056 left lines 5-17, 0056 right and
+  0055 right). By method: 171 by the letter shape, 45 from the sense, 15 left open. In 5 further places both
+  transcriptions read alike and the frame shows otherwise (a third l in costa, e not a in presentes, a third stroke
+  in ministros, n not m in porque, a tilde-marked sign read as ñ in sólo). Each place, with frame, line, both
+  readings and what the frame shows: `second_pass/collation.tsv`. The settled text: `second_pass/transcription_settled.tsv`.
+- **The 108 corrections of `corrections.md`, checked on the frames** (`second_pass/corrections_check.tsv`): **44
+  confirmed** (the frame has the corrected letter; the first pass misread it); **35 are the writer's own slips** (the
+  frame has what the first pass read, e.g. sangrienta written `blvesmgpelv`, sesión as `sasion`, secreta as `sireta`;
+  the correction stands as an emendation of the writer, not as a reading of the frame); **29 mixed** (about 14 partly
+  confirmed with a writer's slip left, about 11 other writer's slips, 4 now holes or open: al primero, bancarrota in
+  C34, cincuenta, sobre).
+- **The z sign** (`second_pass/z_sign_test.md`): plain z is written with `g`, the sign of plain i, in all four places
+  (Cádiz, pobreza, diez, forzoso); both transcriptions read g there and no other sign is used for z. So "cadii",
+  "diei", "pobreia" and "forioso" in `decryption.txt` are what the writer enciphered, not misreadings. **The j sign** is
+  a w-like double loop (read `w` by the blind transcription in Ejecutivo and mejor), close to u = f; it is not in
+  `key.txt`. A final z (often) and k (rarely) stand where a stop or comma belongs; inside words z is plain d. The
+  doubled g before -ción is on the frame (8 of the 10 places): the writer's habit, not a misreading.
+- **The fragments.** The last cipher run of 0057 right continues on the first line of 0058 left (B18 = C17 + C18):
+  fragments 1 and 2 of `reading.md` are one text, and its "[page ends; continuation not on film]" does not hold. The
+  end of 0058 left ("y concebimos ya esperanzas de que") runs on to the start of 0056 right ("se conseguirá que ...
+  definitivamente con nosotros"): the contemporary English translation (frame 0060 right) puts the two clauses together,
+  before the Apodaca paragraph. On that translation the order is 0057 right, 0058 left, 0056 right, 0055 right, then at
+  least the second paragraph of 0056 left, against the order 0057R, 0058L, 0056L, 0056R, 0055R given above. Where the
+  opening of 0056 left belongs is not settled. This order is the translator's; it is evidence, not proof of one
+  continuous original.
+- **The date.** The clear fragment on 0057 left (another, upright hand) has the Minister of State showing a letter of
+  Zea's "fecha en Bayona el 3o. del corriente" (blind reading). The numeral is not secure: one figure, then a small
+  raised circle and a dot; a second look read it as 5. Read it as "el [3/5?]º del corriente". It gives no month or
+  year, and that the fragment belongs to this letter is not shown (it is not in the English translation). It does not
+  date the letter.
+- **Readings that change** against `reading.md` (from the settled letters unless marked "from the sense"): "continúan
+  como antes" for "como an[...]" (from the sense; the end of B01 is ambiguous on the frame); B38 "se [?haga] la moción
+  sobre Cortes extraordinarias; si la perdiere, [struck] propondrá" for "[...]" (from the sense); B42 "Madame Orlof",
+  one f; B49 "una carta, en que [...]" for "una [...]" (`gvml` = carta with g for y; from the sense); B50 "obrará"
+  without the query (from the sense); B55-B56 "se está pagando aún [...] un millón y medio de duros, que costó
+  [?plantear] aquí el presente sistema" for "se está [?tratando] aún de [?preparar] ... que cos[...]"; in the clear
+  text "nos es de suma entidad" for "utilidad" (blind reading, not looked at again). Unchanged and still from the sense:
+  [?cuartel], [?Andalucía], the King's action in B23, B19 "de [...]", the holes in B54-B56.
+- **Open: 15 places** (`second_pass/open_places.tsv`): signs under ink blots in B24, B29, B33, B34, B47, B49 and
+  B55-B56; a struck-out passage in B42; signs that the shape does not decide, n or m (B23), c or e (B29), z or s
+  (B42), eg or gz (B49), z or r and v or u (B55-B56); and the sheet edge cutting the end of B54. A second look at
+  the full frames closed none of them; another exposure of the film or the original received in Bogotá would be
+  needed.
+
+**Prior print.** As section 6 says, Manning (1925) prints no text of the enclosure, and no printed decipherment is
+recorded; this pass changes no reading against a printed text. It was not searched again.
+
+**What this does not do.** It does not recompute `fraction_read`, the controls or the validation on the settled text,
+and it does not change `transcription.txt`, `reading.md` or `profile.json` outcome. The z and j signs are not added to
+`key.txt`.
+
 ## Remaining gaps
 
 - The transcription is a first pass (44 of the 56 groups read once; about a dozen words doubtful or open: an[...], cuartel, remoción, Andalucía, the end of C17, C18-C19, the King's action in C23, C36, C38, C43, C49, C50, the person addressed in C53, La Torre's verb in C54, C55-C56; about 110 slips corrected from the sense, listed in corrections.md) - blocker: not-attempted; the frames are public, and a full second pass on the four frames should settle most of them and confirm or undo the corrections.
@@ -179,6 +247,9 @@ the film. The checker scores the whole of `reading.md` 0.586 of sentences clean.
 - `corrections.md`: every first-pass slip corrected in reading.md, group by group
 - `translation.md`: English translation
 - `key.txt`: the key with counts
+- `second_pass/`: the second transcription pass of 17 November 2026 (section 7): the blind transcription, the
+  collation of every difference settled on the frames, the settled transcription and its decryption, the check of
+  corrections.md, the z-sign test and the open places
 
 ## 14 Nov 2026: reading review recorded
 
