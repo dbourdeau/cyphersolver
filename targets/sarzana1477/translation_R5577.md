@@ -1,0 +1,3 @@
+# R5577 (cart. 1598 no. 103), 17 July (English)
+
+Nothing else happens here at present, except that messer Ludovico and Tomasino are at great odds, and every time the hatred and distrust between them grows. The podestà of Ponsano, whose messenger I used to send the letters to the commissioner, will not send them any more, so if I have not written to you, do not be surprised. I shall go to Volterra this September to keep faith, but when the office is done I shall come back; for so I have promised messer Ludovico. I need forty ducats to settle certain pressing needs of mine; please ask Madonna and the Lord that I be granted it, and if it cannot be, in any case I mean to be a good servant of your most illustrious lordships. Sarzana, 17 July, etc.
