@@ -1304,6 +1304,16 @@
    "kind": "statistics",
    "what": "scripts/count_v7.py (counts_v7.txt), no decode: of the 21 numbers open after key v5, 21 - 1 (134, #646) - 4 (151, 181, 248, 346) = 16 with no value, 18 without a settled value counting the 2 doubtful rows. Over the first-reader transcriptions (175 distinct numbers, 1,856 occurrences): no value under v5 35, v6 30, v7 26 (+2 doubtful). Per letter, not a count of record: 14 word units would move (11 N to E, 3 N to S from DB = g).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Held-out test of key v7 (Malcolm McBratney, PR #699, used unchanged) by Brice Dudout's side: glossed relations to the king on images 505 left, 505 right and 501 right of unit 261267, never used before; key, script, portion and bar frozen by SHA-256 first; two blind AI transcriptions (311/315 tokens agree), adjudicated and frozen before one decode against the chancery glosses: 0.8808, best of 200 shuffled keys 0.3241, 0 of 200 at or above; bar 0.85 and best + 0.30 passed. Misses: the i-sign written 6 (v7 names it B) left without a value; 88 glossed 'l'Euesque de Munster' on 505R, against 88 = le Roy d'Espagne. Our image-573 reading recounted with v5-v7: 226/238 sure (94.96%), still read in part. dudout_v7heldout/.",
+   "result": "worked"
   }
  ],
  "outcome": {

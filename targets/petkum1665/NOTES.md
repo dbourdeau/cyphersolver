@@ -341,3 +341,13 @@ An AI reader (Claude) read the chancery's interlinear glosses on the 119 images 
   un faux 181 d'une levee de cinq ou six mille 248s", and "mille 248s" twice in the bare letters. Both rows stay doubtful.
 - Limit: images 29-141 were triaged on contact sheets and read at 1560 px, lower than v5's 2400 px copies; 151 rests on
   one such reading.
+
+## Key v7 tested on fresh glossed leaves (Brice Dudout, 17 Nov 2026; depends on PR #699)
+
+Files: `dudout_v7heldout/` (its `README.md` gives the order of events, the hashes and how to reproduce). Key v7 is Malcolm McBratney's (`key_v7.tsv` of PR #699, md5 d1ee7e3094e1643bfb0f58b39e9d0052), used unchanged and copied byte for byte into the folder.
+
+- Portion: the glossed relations to the king on images 505 left, 505 right and 501 right of unit 261267, never used by anyone for a key, a check or a measure (505 and 501 were the reserves of our protocol of 11 Nov). Chosen and frozen with the key, the script and the bar before any crop was made: 315 cipher tokens, 57 glossed runs.
+- Two blind transcriptions by separate AI readers with the label sheet only: 311 of 315 tokens agree; 4 token and 4 gloss differences adjudicated on the image (by an agent who knew v7, disclosed) and frozen before the decode.
+- One measure, decode against the chancery gloss: **0.8808** (1 - Levenshtein / length, a-z); 200 shuffled keys best 0.3241, mean 0.2778, 0 of 200 at or above. Bar fixed before: >= 0.85 and >= best + 0.30. **Passed.** Pass A alone 0.8637, pass B alone 0.8719 (not decisive). Strict: 26 of 57 runs decode the gloss letter for letter.
+- Seen in the misses, not changed: both readers wrote the i-sign as `6` (v7 names it `B`), which the frozen rule leaves without a value; on 505 right the gloss over `100 335 88` reads "et que l'Euesque de Munster", against 88 = le Roy d'Espagne in v6/v7; we misread one gloss ("emulitez", where the key gives civilitez). 151 = François (v7, single gloss) is glossed twice more here (505R, 501R). Glossed numbers with no value: 53 (S.A.R.), 94 (Duc d'York), 262, 347, 349 (observations, burned with the portion, not added).
+- Recount of our reading of image 573 (`dudout_v7heldout/573_recount_v7.md`): six rank-only probables now stand under a gloss in v5 or v7 (151 three times, 163, 281, 310): 226 of 238 units sure = 94.96%, under 95%, so it stays read in part. By this folder's rule the six move N to E (S 173, E 49, N 16); no count of record changes. No frozen transcription was touched.
