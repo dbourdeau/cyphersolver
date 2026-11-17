@@ -11,7 +11,8 @@ agree (equal, or one a prefix of the other with >= 3 shared letters) for a value
   python3 analysis/cloze.py run [KEY.json] [--evidence fit|all] [--limit K] [--only unknown|hidden]
   python3 analysis/cloze.py show N [KEY.json] [--evidence ..]   # print the full hidden prompt for N (set A), no model call
   python3 analysis/cloze.py report                              # -> data/cloze_report.txt
-Env: CLOZE_MAX_CALLS (default 60) aborts a run whose planned calls exceed it.
+Env: VERTEX_PROJECT_ID (required, your own project), VERTEX_LOCATION (default us-central1).
+CLOZE_MAX_CALLS (default 60) aborts a run whose planned calls exceed it.
 """
 import collections, concurrent.futures as cf, fcntl, json, os, re, subprocess, sys
 
@@ -22,8 +23,9 @@ from common import norm
 
 OUT = os.path.join(P.D, "cloze.jsonl")
 MODEL = "vertex/gemini-4-argon"
+# the Vertex project and region come from the caller's environment (VERTEX_PROJECT_ID is required, no default)
 ENV = dict(os.environ, PATH=os.path.expanduser("~/.local/bin") + ":" + os.environ["PATH"],
-           VERTEX_PROJECT_ID="ai-engineering-team-491520", VERTEX_LOCATION="us-central1")
+           VERTEX_LOCATION=os.environ.get("VERTEX_LOCATION", "us-central1"))
 THINK = ["-o", "thinking_budget", "4000"]
 MAXOUT = ["-o", "max_output_tokens", "16000"]  # 8000 thinking + answer overflowed the default cap (MAX_TOKENS, empty answer)
 CAP = 8
@@ -179,6 +181,8 @@ def setup(args):
 
 
 def run(args):
+    if not os.environ.get("VERTEX_PROJECT_ID"):
+        raise SystemExit("set VERTEX_PROJECT_ID to your own Vertex project (and optionally VERTEX_LOCATION)")
     key, rows, occ, ev = setup(args)
     only = args[args.index("--only") + 1] if "--only" in args else None
     lim = int(args[args.index("--limit") + 1]) if "--limit" in args else None
