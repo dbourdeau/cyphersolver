@@ -15,6 +15,7 @@ ATLAS = ROOT / 'docs' / 'atlas.json'
 
 # places added with the 25 Oct 2026 backfill (lat, lon); names are what the atlas shows
 NEW_PLACES = {
+    'Bombay': [18.975, 72.826], 'Calcutta': [22.573, 88.364],  # morier1808: Jones at Bombay to Minto, Governor General at Calcutta, 1808
     'Khartoum': [15.501, 32.560], 'Dongola': [19.165, 30.476],  # gordonmudir1884 (Gordon at Khartoum to the Mudir of Dongola, 1884)
     'Dublin': [53.349, -6.260],  # ormond1678: Ormond, Lord Lieutenant, at Dublin, 1678
     'Beijing': [39.904, 116.407],  # army1901: Fukushima in Peking, 1901

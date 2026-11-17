@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harford Jones to Lord Minto, Bombay, 28 April 1808</title>
+<meta name="description" content="Sir Harford Jones's letter to Lord Minto of 28 April 1808, written in a homophonic figure cipher and copied by James Morier (British Library IOR/L/PS/9/67/18-21). The key was recovered from the ciphertext alone and the whole letter reads as English.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- site:nav -->
+<section class="hero">
+  <div class="cipherstrip" translate="no">70,75,90,77,60. 55,9,85,37,95,85,54,78,5. 69,86.<br>n i n t h &middot; p a r a g r a p h &middot; o f<br>8674 = Persia &middot; 77 = t &middot; 60 = h</div>
+  <p class="kicker">Bombay &rarr; Lord Minto, Calcutta · homophonic cipher in figures 2&ndash;99 · 28 April 1808 · key recovered from the ciphertext alone</p>
+  <h1>Harford Jones to Lord Minto, Bombay, 28 April 1808</h1>
+  <p class="sub">A letter from the British envoy to Persia to the Governor General, copied in figures by his private secretary; the key came from the figures alone and the whole letter reads as English.</p>
+  <p class="meta">Daniel Bourdeau</p>
+</section>
+
+<main>
+<div class="callout glance" data-term-ok>
+<p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key recovered from ciphertext-only &middot; complete</span></p>
+<dl>
+<dt>The letter</dt><dd>Sir Harford Jones to the Governor General, Lord Minto, Bombay, 28 April 1808: a true copy in figures signed by Jas. Morier, private secretary. It was enclosed in Jones's letter of 30 April 1808 to the Secret Committee. A second figure copy of it carries the docket "Recd 6 June 09". Also on the volume: the ninth paragraph of Minto's instructions to Malcolm, in figures, in two copies.</dd>
+<dt>Where</dt><dd>British Library, India Office Records, Political and Secret, IOR/L/PS/9/67, items 18 to 21. The images are free on the Qatar Digital Library (links below, not copied here). Catalogue entry 2649, a lead from the Ko&ccedil;/Ottoman deep sweep.</dd>
+<dt>The cipher</dt><dd>A homophonic substitution of letters by figures 2&ndash;99, two to five figures for a letter, one letter each for u/v and i/j. A stop ends a word and a comma joins figures within a word. A few 3- and 4-figure groups stand for words (8674 is Persia).</dd>
+<dt>How it was read</dt><dd>An AI model transcribed the QDL images and solved the key by simulated annealing against an English 4-gram model, on the two copies of the letter only. The key was then tested on text it had not seen: the first test failed its bar, the second, pre-registered before the new text was transcribed, passed.</dd>
+<dt>What it says</dt><dd>Jones, just arrived at Bombay, finds that General Malcolm has already gone into the Persian Gulf under Minto's authority. To avoid "the appearance of clashing authorities in Persia" he suspends his own departure until Minto's orders.</dd>
+<dt>Still open</dt><dd>The place name in "from ... Roads"; the code words for Bombay and French and the figure signature are probable, not sure. No clear copy of the letter was found.</dd>
+<dt>Credit</dt><dd>Lead: Daniel Bourdeau. Images fetched in Chrome, and the solution contributed in pull request #705: Brice Dudout, with the AI model's work. The contemporary decipherment in the margin of /19 was used only as a check, after the reading.</dd>
+</dl>
+</div>
+
+<h2 id="document"><span class="num">01</span> The documents</h2>
+<p>Four items in one British Library file, all in figures:</p>
+<ul>
+<li><b>/18</b>: Jones to Minto, Bombay, 28 April 1808, 20 images, a "True Copy" in figures signed Jas. Morier, Priv. Sec.</li>
+<li><b>/20</b>: a second figure copy of the same letter, 12 images. It ends "I have the honor to be &amp;c" in clear and a signature in figures. Docket "Recd 6 June 09".</li>
+<li><b>/19</b> and <b>/21</b>: two figure copies of the ninth paragraph of Minto's instructions to Malcolm. /19 has the clear text written in its margin; /21 has none.</li>
+</ul>
+<p>The two copies of the letter served to collate each other. The figures are the project's own transcription by an AI model from the QDL images, made in Chrome by Brice Dudout. Nothing in the files records a person checking a transcription against the images.</p>
+
+<h2 id="cipher"><span class="num">02</span> The cipher</h2>
+<p>The letter is a homophonic substitution of letters by figures from 2 to 99. A letter has two to five figures: e is 2, 6, 8, 40, 74 (and 94), t is 7, 44, 50, 77, h is 5, 60. The cipher uses one letter for u and v and one for i and j. A stop ends a word and a comma joins figures within a word, but the copyists cut and join words freely.</p>
+<p>A few groups of three or four figures stand for words: 8674 is Persia and takes suffixes (8674,90,66 is Persians). 4040 is French and 630 is Bombay, both probable from context and the heading. The heading, "630. 9,63,79,98,68. 128. 218081.", reads Bombay April 28 1808; the figures 1 and 2 are nulls in the date and in the signature.</p>
+<p>It is not the code of Jones's page-and-word code book of 1798&ndash;1802 (<code>targets/jones1802</code>): there each group stands for a word at a page, here each group stands for a letter, and no value from that code applies. That is a different cipher, kept in its own folder.</p>
+
+<h2 id="method"><span class="num">03</span> How the key was found</h2>
+<p>The key (62 figures in <code>key.json</code>) was solved by simulated annealing over figure-to-letter maps, scored by an English 4-gram model with the stops kept as word boundaries. The model came from a 19th-century English diplomatic corpus. It was solved on /18 and /20 only (2,640 figures, 600 words). Every restart converged on the same readable English, beginning "the inclosed copy of a letter No. 2 addressed by me on the following day to the Hon. the Gov. here". Four values were then fixed by hand: 34 is k, 2 is e, 6 is e, and 24 is the numeral 24. Two more figures turned up after the tests: 88 is z (authori[z]ed) and 94 is e (therefor[e]); they are added in the decoder, not in the frozen key.</p>
+<p>No sibling key was used. The key of Jones's 1802 code book was tried and does not apply (see section 02).</p>
+
+<h2 id="check"><span class="num">04</span> The two held-out tests</h2>
+<p><b>First test, failed.</b> The enclosure /21 (316 figures, 72 words) was held out. The measure was the share of decoded words found in the corpus vocabulary: 0.729, against a best control of 0.157 over 200 within-class key shuffles. The bar was 0.85, so the test failed. No word was misread: the misses were the copyists' cuts (g en, instructi ons), names (Malcolms, Bagdad, Pashaw, Harford, Jones), u/v spellings (enuoy, euent) and two copy errors (cort, accreditted). That portion is burned.</p>
+<p><b>Second test, passed.</b> The second measure was frozen before the new text was transcribed. It held out /18 images 0012&ndash;0014 (444 figures, 94 words) with the key unchanged. It allows u/v and i/j and a fixed list of names, and counts cuts and joins separately. The score was 0.968 (86 words, 2 names, 2 splits, 1 join, 3 fails), against a best control of 0.340; the bar was the larger of 0.85 and 0.640. The strict share of plain dictionary words alone was 0.915. The second measure was written after the first failure, with its misses in view. That the text was transcribed after the measure was frozen rests on the contributor's record: the transcription's hash is not in the files.</p>
+<p>A statistical validation of the finished key (the project's <code>_validate.py</code>) gives a reading score of &minus;2.21 per letter over 3,844 tokens, against &minus;6.69 for random keys (best of 200: &minus;5.96) and a best of &minus;4.43 for a key annealed onto shuffled ciphertext. Verdict: pass. An agent re-ran the decode and this validation for the maintainers and obtained the same figures. The two measuring scripts were not re-run, because they point to the contributor's local corpus and word list.</p>
+
+<h2 id="reading-21"><span class="num">05</span> The reading</h2>
+<p>The whole letter reads from the heading to the signature, in the order of the pages (f. 2v&ndash;3r and ff. 8v and 9v&ndash;10r were deciphered from the second copy). Marks: {Bombay}, {French} and {Persia} are code words with values from context; [x] is a letter restored where both copies miswrite it (relin[q]uish, thin[k], o[cc]urred, [s]entiments, Tur[k]ey, a[d]vantage). The full text is under Full texts below.</p>
+<blockquote><p>I think it is to be lamented that Gen. Malcolm, as I must believe him aware that the Sapphire could not be long before she arrived at {Bombay}, had not thought it expedient to have suspended his departure hence for a few days ... for surely nothing could be more impolitic than to suffer even the appearance of clashing authorities in {Persia}, and nothing more unjustifiable than putting the public to the expence of separate missions to the same court.</p></blockquote>
+<p>Jones writes that he holds the King's commission and the instructions of His Majesty's Ministers and the Secret Committee. He says he would not relinquish his mission without the King's command, but suspends it in deference to Minto. He adds that since the French appeared at Tehran the Persians know that national ministers can only be accredited by His Majesty.</p>
+<p>The enclosure is the ninth paragraph of Minto's instructions to Malcolm: Malcolm is to carry credentials as envoy or ambassador to the court of Persia and to the Pashaw of Bagdad, to present if he finds it practicable and expedient, and if he finds neither Sir Harford Jones nor any other person accredited by His Majesty in Persia. The "watch it decipher" strip decodes it figure by figure.</p>
+<p>The reading was graded A (coherent, with scattered holes) for /18, /20 and /21 by an AI agent's review for the maintainers; this is a model's grade, and a person has not checked it.</p>
+
+<h2 id="residuals"><span class="num">06</span> What remains open</h2>
+<ul>
+<li>The opening "from ‹to› Roads": both copies write 44,36, which reads "to". A copying slip for a place name; the place is not read.</li>
+<li>630 is Bombay and 4040 is French: probable, from the heading, the docket and the context; no other copy gives a spelling.</li>
+<li>The figure signature, "Har(f)ord J(o)nes", is probable, with nulls 1 and 2.</li>
+<li>88 is z rests on one word.</li>
+<li>Strict read share over the cipher words of the letter: 646 of 654 (0.988). The enclosure has no hole.</li>
+<li>The QDL images were not seen by the integration check (Cloudflare 403 to curl); the transcription's soundness there rests on the decode reading as continuous English over 3,844 tokens. The images were not compared figure by figure by a person.</li>
+</ul>
+
+<h2 id="prior"><span class="num">07</span> Earlier work</h2>
+<p>No decipherment of the letter was found in the BL or QDL records or in print. For the enclosure, /19 carries in its margin the clear text of the ninth paragraph, written at the time. The reading of /21 was made from the key alone before /19 was seen, by the contributor's record, and agrees with it word for word. A later reader pencilled a few letters between the lines of /18 ff. 7&ndash;8 (for example "receiving"); that partial decipherment was not used. A clear copy of the letter itself may be among Minto's papers or the Bengal Secret enclosures; that was not checked. (Who James Morier and Harford Jones were, beyond what the letter shows, is not from the sources and was not checked here.)</p>
+
+<h2 id="sources"><span class="num">08</span> Sources</h2>
+<ul>
+<li>/18: <a href="https://www.qdl.qa/en/archive/81055/vdc_100038378586.0x000016">QDL vdc_100038378586.0x000016</a>, IOR/L/PS/9/67/18.</li>
+<li>/19: <a href="https://www.qdl.qa/en/archive/81055/vdc_100038378586.0x000017">QDL vdc_100038378586.0x000017</a>.</li>
+<li>/20: <a href="https://www.qdl.qa/en/archive/81055/vdc_100038378586.0x000018">QDL vdc_100038378586.0x000018</a>.</li>
+<li>/21: <a href="https://www.qdl.qa/en/archive/81055/vdc_100038378586.0x000019">QDL vdc_100038378586.0x000019</a>.</li>
+<li>Lead: catalogue 2649, Ko&ccedil;/Ottoman deep sweep, 14 November 2026. Pull request #705, Brice Dudout, 16 November 2026. QDL and its image server refuse scripted requests with a Cloudflare 403, so the images were fetched in a person's Chrome and are not copied here.</li>
+</ul>
+<p class="muted">Transcriptions, key, decoder, readings and the held-out test files: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/morier1808"><code>targets/morier1808/</code></a>.</p>
+</main>
+<!-- site:footer -->
+</body>
+</html>
