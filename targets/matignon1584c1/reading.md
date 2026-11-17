@@ -13,15 +13,22 @@ The full marked reading, line by line, is texts/reading_marked.txt.
 
 ## Strict counts (whole letter, 70 cipher lines, 2 998 signs)
 
+Recounted 17 Nov 2026 after review (PR #709). Sure words that differ from the decode are now marked {probable}: 23 of
+them, e.g. *lailer* -> {laisser}, *siuand* -> si {quand}, *paieste* -> {majesté}, *deus* -> {d'eux}. Token count by
+`scripts/count_marked.py` (one token per space-separated word; this gives 693 words where the first count gave 689).
+
 | | words |
 |---|---|
-| sure | 395 |
-| {probable} | 61 |
-| [restored] | 3 |
+| sure | 377 |
+| {probable} | 84 |
+| [restored] | 2 |
 | ‹unresolved› | 230 |
-| total | 689 |
+| total | 693 |
 
-Words read by sense (sure + probable + restored) = 459 / 689 = **66.6 %** → below Daniel's 95 % bar: **read in part**.
+- **Strict rule (sure words only; probable words count as holes): 377 / 693 = 0.544.** This is the `read_share` in profile.json.
+- Sure + probable + restored, given once and labelled as such: 463 / 693 = 0.668 (0.666 in the first count).
+- Both figures are below Daniel's 95% bar, so the letter is **read in part**.
+
 The unresolved words cluster in f. 151r ll. 1-4, 10-22 and f. 151v ll. 1-6, 10-27, where the transcription is weakest
 (signs 6/6^, ſt/ſ, ρ/ꝩ, e/ʒ often confused) and where 6 stands for both p and m.
 
