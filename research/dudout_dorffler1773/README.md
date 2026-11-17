@@ -14,8 +14,11 @@ Everything here is an **attempt**: three pre-registered measures, all FAILED. No
 | C03 (`c03/`) | 19/102 img. 476 | gloss alignment S | 0.735 vs controls max 0.264 | 0.75 | FAIL |
 | C04 (`c04/`) | 19/102 img. 474, two independent cipher passes (144/151 agree), two gloss readings | gloss alignment S | 0.660 vs max 0.250; only 112 scored groups of the 120 required | 0.75, +0.30 | FAIL |
 | C05 (`c05/`) | 19/100 img. 277 + 304 (1682), 619 groups | lexicon share W (`c05/run.py`, `c05/LEXICON.txt`) | 0.488 vs max 0.343 | 0.55, +0.25 | FAIL |
+| C06 (`c06/`) | none yet: no fresh glossed portion is digitised | clerk's letters (`c06/measure_c06.py`) | not run | 0.70, +0.30 | pre-registered, NOT measured |
 
 Diagnostics written after each verdict (they do not change it): `c03/DIAG-POSTHOC-C03.txt`, `c04/DIAG-POSTHOC-C04.txt`. The gloss is not word for word and runs across the cipher's line ends; word boundaries are unmarked, which defeats a word-lexicon measure. 474, 476 and 277/304 are spent for us. A fair next test needs a fresh portion and a character-level measure.
+
+**C06** (`c06/`, 17 Nov 2026): `c06/TABLE-C06.json` = TABLE-C04 unchanged + Mike German's additions (PR #742: 15 fills, 6 weaker values incl. 210 viel and 226 wur), with its single measure pre-registered in `c06/PREREG-C06.md`. Not measured: every coded page of 19/100-103 is already spent, and the best fresh candidate (Oxenstierna collection, letters from Dörffler 1681-91) is not digitised. See `c06/README.md`.
 
 ## Scripts
 `c03/measure.py` (gloss alignment, 200 permuted-value controls), `c04/galign.py`, `c05/run.py` (decode / measure; reads `TABLE.json` and `LEXICON.txt` from `INPUT_DIR`), `tools/` (the EM experiments that preceded the table).
