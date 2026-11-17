@@ -24,7 +24,8 @@ Classes, per word and per unit:
     exact      the reading has the key's output
     i/y        differs only by i written y or y written i
     polyphony  differs only by same-place substitutions inside POLYPHONY (and i/y)
-    marked     differs, and every differing letter of the reading is inside [ ]
+    marked     differs, and every differing letter of the reading is inside [ ]; a sign the reading leaves out is
+               marked when the reading is bracketed on either side of the gap
     silent     differs somewhere outside [ ]: an emendation the reading does not mark
     dropped    cipher with a key value that the reading leaves out
     unread     the reading has a hole there
@@ -129,6 +130,17 @@ def compare(label, words, text, poly, divided):
     def kind(mi):
         ri = m2r[mi]
         if ri is None:
+            if units[cu[mi]]['unit'] is not None and units[cu[mi]]['value'] is None:
+                return 'eq'                # a sign with no key value that the reading passes over: nothing to compare
+            # a sign left out counts as marked when the reading is bracketed on either side of the gap
+            a = mi - 1
+            while a >= 0 and m2r[a] is None:
+                a -= 1
+            b = mi + 1
+            while b < len(mech) and m2r[b] is None:
+                b += 1
+            if (a >= 0 and marked[m2r[a]]) or (b < len(mech) and marked[m2r[b]]):
+                return 'delm'
             return 'del'
         x, y = mech[mi], read[ri]
         if y == HOLE:
@@ -160,7 +172,7 @@ def compare(label, words, text, poly, divided):
             return 'i/y'
         if not rchars and set(diff) <= {'iy', 'poly'}:
             return 'polyphony'
-        if all(marked[r] for r in rchars) and (rchars or whole_marked) and ('del' not in diff or whole_marked):
+        if all(marked[r] for r in rchars) and (rchars or whole_marked or 'delm' in diff) and ('del' not in diff or whole_marked):
             return 'marked'
         return 'silent'
 

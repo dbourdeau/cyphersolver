@@ -1,7 +1,7 @@
 """Adapter for docs/_replay.py: key.txt applied to transcription/*.txt, against the two reading files.
 
 Segmentation is decrypt.py's (longest unit first; bracketed doubtful transcriptions dropped, as decrypt.py drops them).
-POLYPHONY is what NOTES.md declares ("Polyphonic signs" and the homophone line), nothing more.
+POLYPHONY is what key.txt declares in its third column, nothing more.
 """
 import os, re
 from decrypt import lines, load_key
@@ -10,7 +10,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DIVIDED = True
 SOURCES = {'key': 'key.txt', 'transcription': 'transcription/<fol>.txt',
            'reading': 'reading_152r-154r.txt + reading_154v-156v.txt'}
-POLYPHONY = {'d': ['b', 'g'], 'D': ['a'], 'c': ['a']}
+
+def _declared():
+    """Other values key.txt declares for a sign (its third column)."""
+    out = {}
+    for line in open(os.path.join(HERE, 'key.txt'), encoding='utf8'):
+        parts = line.split('#')[0].rstrip('\n').split('\t')
+        if len(parts) >= 3 and parts[2].strip():
+            out[parts[0].strip()] = parts[2].split()
+    return out
+
+
+POLYPHONY = _declared()
 
 
 def mechanical():

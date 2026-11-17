@@ -11,8 +11,10 @@ Catalogue 276. BnF fr. 3157 ("Recueil de lettres et de pièces originales", Mont
 gentleman of the Agenais, a neighbour of the sieur de Fumel, dated 12 December 1560, a week after the death of
 François II. It is entirely in cipher, ten pages, 1,715 cipher words. It had no decipherment and no known key.
 The cipher was broken here from the ciphertext alone: a homophonic substitution with two-stroke units and four
-code words. The reading covers 1,700 of the 1,715 cipher words (99.1%; 98.9% before the retry resolved 3 more). 108 words are read with a marked
-emendation, and 15 scattered words are left unread.
+code words. The reading covers 1,700 of the 1,715 cipher words (99.1%; 98.9% before the retry resolved 3 more). By the key replay of
+16 Nov 2026, 1,175 of the 1,715 cipher words (68.5%) are the key's exact output, 130 more differ only by i/y or a declared
+second value, 394 are read with a marked emendation, and 16 are left unread (the earlier figure of 108 emended words
+counted only the marks then in the reading files).
 
 ## Where it is
 
@@ -32,8 +34,9 @@ emendation, and 15 scattered words are left unread.
 - **Homophonic.** e = x, ff; n = r (a smaller, rounder form of x: the main transcription trap); s = m, n, nn, 3;
   r = s, S, s3; i = i, D, y, e; u/v = zo, io, d; and so on.
 - **Two-stroke units.** zo = u, pp = m, io = u, s3 = r, ff = e, :. = o, nn = s, lz = d.
-- **Polyphonic signs.** δ (d) stands for u/v, b and g (gouvernement, bien, langaiges). ‡ (D) is i and sometimes a
-  (avecques, abus). c is l and sometimes a.
+- **Polyphonic signs.** δ (d) stands for g, b and u/v (langaiges, bien, gouvernement): g 93 times, b 62, u 5 in the
+  reading (key.txt listed it as u until 16 Nov 2026). ‡ (D) is i and sometimes a (avecques, abus). c is l and sometimes a.
+  3 is s, and x at the end of a word (deux, ceulx). These second values are in the third column of `key.txt`.
 - **Whole-word codes.** Z = pour (also used as the syllable, "y pourvoient"); 4 = roy; c+, i+, e+ = et;
   F, g = sieur. There are no name codes: every person and place is spelt out.
 - **Key.** `key.txt`, read by `decrypt.py`; the mechanical decrypt is in `decrypt_lines.txt`.
@@ -130,6 +133,30 @@ spelling the word list lacks), hole rate 0.073; the 108 bracketed emendations co
 Kept read (grade B); `outcome.texts[0]` now names the two files as its `reading`. It rests on the key broken here
 and the images, with no contemporary decipherment or copy. `READING.md` is a normalised editorial version, not
 the reading that is scored.
+
+## Key replay, 16 Nov 2026
+
+Cécile Pierrot (Le Monde, 16 Nov 2026) applied the posted key to the posted transcription and got 67% of the words of the
+reading, 77% allowing polyphony, with one sign carrying seven values and the adjustments not mentioned. `docs/_replay.py`
+(adapter `replay.py`) repeats the test: before any change, 1,106 of 1,715 cipher words exact (64.5%), 74.8% with the
+polyphony these notes declared, 76 words marked and 340 differing with no mark. Her finding stands.
+
+What was done:
+- **Key.** `key.txt` gave δ (d) as u; the reading has it as g 93 times, b 62, u 5. The row is now `d g`, with b and u
+  declared as second values; a for D, a for c and x for 3 are declared too (third column). `decrypt_lines.txt` regenerated.
+- **Reading.** `mark_emendations.py` bracketed every letter the key does not give and every word where a sign is left
+  out, and wrote the seven cipher words the reading leaves out in braces. No letter of the reading was changed.
+- **Result** (`replay.json`, `replay.tsv`): 1,175 of 1,715 cipher words exact (68.5%), 69.9% with i/y, 76.1% with the declared
+  second values; 394 words (23.0%) emended, all marked; 16 unread; no unmarked difference. By sign units
+  91.2% exact.
+
+Not done, and open:
+- The emendations were not re-checked on the images in this pass. The commonest are x read as o, i, n or y (about 50
+  signs; x/r/y are look-alikes, so many are probably transcription errors that a correction would turn into exact
+  words), δ read as i (33) and 3, z, f read as other letters. `replay.json` lists the values read for each sign; x still
+  has seven read three times or more (e, n, o, i, y, r, l), which is the count Pierrot reports.
+- A rate of 76.1% from the key means about one word in four rests on the reader's emendation. The 99.1% above is the
+  share of cipher words given a reading, not the share the key produces.
 
 ## Remaining gaps
 
