@@ -29,6 +29,8 @@ origin/main 3c777efd5. We have not seen his files, and our work is independent o
 Q8 = Lippa at f. 45v; our value for Q8 comes from f. 39v, where the gloss has `illum Lippen.` against the sign. The target is called
 `ferdinand1552` so that his name stays free. He has not been contacted by us. How to handle the overlap is for you to decide.
 
+**Update, 17 Nov 2026 (issue #746).** Brice Dudout has asked for a credit line, and our own ledger agrees with the order of events he gives. By his record: independent reading of this letter, claimed 29 Oct 2026 (commit `bc65ae2a` on `bdudout/cyphersolver`, branch `dudout/castaldo1552`; we have not seen the files); key rebuilt from the contemporary marginal decipherments of the sister letters of 13 and 18 Oct; tested on held-out glossed passages of the letter of 22 Oct (f. 44v: 0.918 letters, 0.731 words; f. 45v: 0.932 letters, 0.778 words; 200 shuffled controls at most 0.31 and 0.03); 316 of 319 words read (273 sure, 41 probable, 2 restored, 3 unresolved code groups); code C8 = Lippa from the gloss of f. 45v, the same value as ours (Q8, from f. 39v). WAINUT's reading entered the repository first (3 Nov) and stays the target of record; the two readings have not been compared sign by sign. His files are to be placed unchanged under `targets/ferdinand1552/dudout/` if he sends them.
+
 His note that the other three letters are glossed holds on what we viewed. One point looks like an exception and is not: f. 46r has
 14 cipher lines with an empty margin, but the gloss runs at the foot of f. 45v and covers them.
 

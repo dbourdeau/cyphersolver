@@ -47,7 +47,7 @@ Values our readers proposed from context and did NOT apply (copied from the read
 - 30 Nov 1665, R1: `220` for 270 twice ('pfos' for plus) and `382` for 381 ('avic' for avec); G for plain Q in 'o[b]liger' (572R l.8). The blind R2 reading was adjudicated on crops for these (270, 270, 381, Q) and the R2 count uses them; the R1 count of record does not.
 - 30 Nov 1665, 573R l.9: an overwritten sign (HSH in R1, PSI in R2); not resolved on the image; the unit stays N.
 - 30 Nov 1665, catchword 573R l.34 `x.MT` ('to-ls') in both transcriptions; left N.
-- 17 Sep 1665: 'Bebgen' for Bergen: the first reader wrote 15 where the blind reader wrote BET; the image was adjudicated BET (r). The first reader's count keeps the frozen 15 (N).
+- 17 Sep 1665: 'Bebgen' for Bergen: the first reader wrote 15 where the blind reader wrote BET; the image was adjudicated BET (r). The first reader's count keeps the frozen 15 (N). Brice Dudout confirmed BET on the image on 17 Nov 2026 (image check of the B grades, PR #646): a single β glyph, like the β on 576R l. 7, so the cipher spells "a Bergen" and the reading's [?Bergen] is confirmed by the image; the transcription file stays as frozen.
 - 17 Sep and 18 Jan: two tokens G (first reader) / Q (blind reader); adjudicated Q, which is not in the key.
 - 25 Apr 1664 (Paulmyer): two doubtful signs (MT?, QX?), and 354 written where Savoye needs 352 (Si[v]oye); left N.
 - 2 May 1664 (Paulmyer): the a-sign written 'CT' for 'ct' (unit 23) and plain m written MT in 'Chevalier' (unit 2): reader's faults found after decoding, left as frozen (N).
