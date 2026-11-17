@@ -117,7 +117,7 @@ not checked. We know of no modern decipherment of these letter-book passages; th
 (known.py, web search) found none.
 
 **16 Nov 2026, print check for the key RALLY TO THE FRONT (Andrew Beling, with AI agents; not checked by a
-person). Result: negative, as far as could be opened; Gaddy's own texts were not opened.**
+person). Result: negative in the two Gaddy works read in full on their Civil War pages; Kahn not seen.**
 - Kahn, *The Codebreakers* (New York: Macmillan, 1967; revised edition 1996): on the Internet Archive for controlled
   lending only, not borrowed; its search-inside refused us (403), so no page was seen. Its text is in the archive's
   full-text index: a search for "Manchester Bluff" with "Complete Victory" returns nine copies of the book (for example
@@ -129,15 +129,19 @@ person). Result: negative, as far as could be opened; Gaddy's own texts were not
   Official Records of the Union and Confederate Navies, the *Century* 1882, Bauer's *Secret History*, Dooley 2022 and others) give
   COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION and, in some, IN GOD WE TRUST, "Interest" or "My Old Kentucky
   Home"; none of them also has "rally to the front". Two web searches found nothing either.
-- Gaddy, not opened: "Internal Struggle: The Civil War", in Ralph E. Weber, *Masked Dispatches* (National Security
-  Agency, 1993), pp. 88-103 (page range from the volume's contents and Holden, *The Mathematics of Secrets*, 2017): the
-  agency's PDF and the O'Reilly copy refused us (403), and the Internet Archive text file was not found under the name
-  tried (404); the archive's index of that volume does not match "Manchester Bluff" either, so it cannot say whether
-  the chapter lists keys. "Rochford's Cipher", *Cryptologia* 16 (1992), 347-362: the agency's PDF refused (403).
-  Tidwell, Hall and Gaddy, *Come Retribution* (1988), and *The Signal and Secret Service of the Confederate States*
-  (1986 reprint, Gaddy's introduction): lending only, not borrowed.
-- A full-text "not found" is not proof of absence (OCR can miss a phrase). Still open: Gaddy's chapter, read on paper
-  or on the agency's PDF in a browser.
+- Gaddy, read (the agency's PDFs, saved by Andrew Beling the same day): "Internal Struggle: The Civil War", in Ralph E.
+  Weber, *Masked Dispatches* (National Security Agency, Center for Cryptologic History, 2013 edition), pp. 88-103, read
+  in full, with Gaddy's foreword (pp. v-vii), his chapters 14 (pp. 78-82) and 23 (pp. 188-191), the introduction
+  (pp. ix-xv) and every other Civil War passage in the volume; the volume is typeset, so its text layer is the printed
+  text. "Rochford's Cipher" (agency reprint, pp. 57-70), read in full. Neither work names any Confederate Vigenère key:
+  not RALLY TO THE FRONT nor a near form, and not COMPLETE VICTORY, MANCHESTER BLUFF or COME RETRIBUTION either.
+  The only key words are VICKSBURGH (sample) and EMILY NORTH, the keywords of a rotating grille used by Confederate navy
+  agents in Britain in 1863 (Rochford pp. 60-61, 66). Gaddy says the Confederates adopted the Vigenère in 1862, kept
+  plaintext word length, mixed clear and cipher, and that Southern telegraphy garbled the cryptograms (pp. 90-91); he
+  says nothing on Taylor's department, on key changes or on April 1865 messages. Not seen: Tidwell, Hall and Gaddy,
+  *Come Retribution* (1988), and *The Signal and Secret Service of the Confederate States* (1986 reprint, Gaddy's
+  introduction), both lending only.
+- A full-text "not found" is not proof of absence (OCR can miss a phrase). Still open: Kahn's pages, on paper.
 
 ## Proposed catalogue changes (entry 681)
 
