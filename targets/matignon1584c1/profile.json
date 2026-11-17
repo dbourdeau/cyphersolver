@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "matignon1584c1",
- "title": "Matignon's Cipher-1, 1584: letter of BnF fr. 15568 ff. 151r-152r (catalogue 2840), read in part with Tomokiyo's table",
+ "title": "Matignon's Cipher-1, 1584: letter of BnF fr. 15568 ff. 151r-152r (catalogue 2840, read in part) and fr. 15567 f. 24 (catalogue 2838, decoded, not read), with Tomokiyo's table",
  "documents": [
   {
    "id": "ff151-152",
@@ -10,15 +10,16 @@
    "date": "1584",
    "year": 1584,
    "country": "France",
-   "route": "Matignon side (endorsement f. 153 'M. le mareschal de Matignon ... 1584') -> unknown",
+   "route": "Jacques de Matignon (docket f. 153 'M. le mareschal de Matignon ... 1584') -> unknown",
    "language": "French",
    "pages": 3,
    "cleartext_in_document": "none",
    "plaintext": {
     "location": [
-     "none"
+     "interlinear"
     ],
-    "source": "No decipherment on or beside the leaves (views 157-164 checked); Tomokiyo names f. 151 under Matignon's Cipher-1 and gives no reading."
+    "partial": true,
+    "source": "A few words glossed in letters between the lines of f. 151r by a period hand: l. 1 'f∴soi' over the decode 'fesoi', l. 3 '...o[m]iacen', a gloss beginning with the que sign, and 'a ue' (or 'a ne') over 4 □. No decipherment on the neighbouring leaves (views 157-164). Tomokiyo names f. 151 under Matignon's Cipher-1 and gives no reading."
    },
    "length": {
     "tokens": 2998,
@@ -31,6 +32,37 @@
     "source": "Brice Dudout with Claude Opus 5.5 (Claude Code), from deskewed line crops of the Gallica full-size images (Source gallica.bnf.fr / BnF). Every line in two independent passes (one blind sub-agent per pass); the two held-out portions arbitrated on the image without a key, the development lines arbitrated by sense.",
     "image_quality": "good",
     "notes": "Folio numbers follow Daniel Bourdeau's correction: Gallica view = folio + 8. Agreement of the two passes before arbitration: 88.6% (f. 151v), 88.8% (f. 151r). Hard shapes: 6/6^, st/long s, rho/looped f, e/z-like 3."
+   }
+  },
+  {
+   "id": "f24",
+   "read": "read in part",
+   "shelfmark": "BnF fr. 15567 f. 24r (Gallica btv1b90639282, view 29 right; folio label 30/24). Images: Source gallica.bnf.fr / BnF",
+   "date": "Jan-Mar 1584",
+   "year": 1584,
+   "country": "France",
+   "route": "Matignon side (Tomokiyo's Matignon's Cipher-1) -> unknown (facing address leaf: Villeroy, attribution to f. 24 uncertain)",
+   "language": "French",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "partial": true,
+    "source": "Period glosses in letters over l. 1 ('court', 'ung', 'bru...', 'beaucoup de gens') and a few short groups over ll. 3-8; they agree with the key's decode."
+   },
+   "length": {
+    "tokens": 506,
+    "unit": "symbols",
+    "measured": true,
+    "file": "f24/transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "Claude Opus 5.5 for Brice Dudout, 17 Nov 2026: two blind sub-agent passes from line crops of the Gallica full-size image; ll. 2-10 arbitrated on the image without a key; ll. 1, 11, 12 pass 2 only.",
+    "image_quality": "fair",
+    "notes": "12 cipher lines then a clear paragraph (not transcribed). Agreement of the two passes after convention normalisation 85.2%."
    }
   }
  ],
@@ -89,9 +121,9 @@
   "models": [
    "Claude Opus 5.5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-11-16",
-  "last_date": "2026-11-16"
+  "last_date": "2026-11-17"
  },
  "solution": [
   {
@@ -105,11 +137,17 @@
    "kind": "verification",
    "what": "Single re-test on a new held-out portion (f. 151v ll. 1-9, 377 signs) chosen and frozen before transcription (PREREG-C), key corrected on development lines only and frozen (PREREG-C2): 287/374 signs (76.7%) in sense runs; 200 shuffled keys max 34.5%. The pre-set bar 0.85 is NOT met (the second bar, max + 0.30, is). A clerical slip left sign 6 without a value in the frozen key; a post-hoc, non-probative rerun with 6 = p gives 73.0%.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "what": "Third single pre-registered test, on a new document (fr. 15567 f. 24, catalogue 2838, ll. 2-10, 387 labels, chosen and frozen before transcription, transcription frozen before decoding), key.tsv unchanged: 294/385 signs (76.4%) in sense runs; 200 shuffled keys median 2.6%, max 27.8%. The pre-set bar 0.85 is NOT met (max + 0.30 is). f24/test_D/.",
+   "result": "failed"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "Tomokiyo's Matignon's Cipher-1 table, extended on development lines; first held-out test passed (87.6%), second held-out test below the 0.85 bar (76.7%).",
+  "method_basis": "Tomokiyo's Matignon's Cipher-1 table, extended on development lines; first held-out test passed (87.6%), second and third held-out tests below the 0.85 bar (76.7%, 76.4% on fr. 15567 f. 24) and above max shuffled + 0.30.",
   "class": "read in part",
   "verification": [
    "matched control"
@@ -136,14 +174,26 @@
     "translation": "reading.md",
     "state": "read in part",
     "language": "fr",
-    "read_share": 0.666,
-    "summary": "Report to Marshal Matignon (1584) on Huguenot moves in Guyenne: the king of Navarre's men gaining a foothold in the province and refusing to give back the towns of surety, the writer's loyalty to the king alone, La Rochefoucauld's arrival beside the king of Navarre, and the king of Navarre's claim that Henri III allowed him to build at Le Boucau, at the mouth of the Adour below Bayonne.",
+    "read_share": 0.544,
+    "summary": "Report from Marshal Matignon's side (1584, docket f. 153) on Huguenot moves in Guyenne: the king of Navarre's men gaining a foothold in the province and refusing to give back the towns of surety, the writer's loyalty to the king alone, La Rochefoucauld's arrival beside the king of Navarre, and the king of Navarre's claim that Henri III allowed him to build at Le Boucau, at the mouth of the Adour below Bayonne.",
     "reading_review": {
      "grade": "B",
      "by": "contributor's own (Claude Opus 5.5 for Brice Dudout)",
-     "date": "2026-11-16",
-     "note": "Preliminary review by the contributor's own reader, not independent; 66.6% of words read by sense (395 sure, 61 probable, 3 restored, 230 unresolved)."
+     "date": "2026-11-17",
+     "note": "Not independent; no person has checked the work. Strict rule (sure words only): 377/693 = 0.544; sure + probable + restored 463/693 = 0.668 (given once). 23 sure words that differed from the decode re-marked probable."
     }
+   },
+   {
+    "doc": "f24",
+    "transcription": "f24/transcription.txt",
+    "decryption": "f24/decryption.txt",
+    "reading": "f24/reading.md",
+    "translation": "f24/reading.md",
+    "state": "decoded, not read",
+    "language": "fr",
+    "read_share": 0.409,
+    "summary": "Fragments: a rumour of which many people [speak], the King wants to do..., having a castle surprised, employing [men] in his provinces, 'prudence acoustumee', 'meschans bruictz contre l'honneur du roy'.",
+    "note": "Strict share 38/93 = 0.409 (sure + probable 0.570); held-out ll. 2-10 strict 0.480. Phrases hold, sentences do not."
    }
   ]
  }
