@@ -1,0 +1,264 @@
+{
+ "schema_version": 1,
+ "target": "ljs51",
+ "title": "Ibn al-Qubabi's cipher verse in a Mamluk secretary's book of cipher correspondence, Penn LJS 51 f. 106v",
+ "documents": [
+  {
+   "id": "f106v",
+   "shelfmark": "University of Pennsylvania, Kislak Center, LJS 51, f. 106v (OPenn image 0084_0217)",
+   "date": "unknown (text c. 1330-1370; copy 15th c.)",
+   "year": 1350,
+   "country": "Egypt/Syria (Mamluk)",
+   "route": "Ibn al-Qubabi [or al-Qabbani] -> the compiler",
+   "language": "Arabic",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The compiler's solution followed on the next leaf, which is lost; only three or four red letters over line 1 (a later reader's partial gloss, partly wrong). No edition or study found (15 Nov 2026)."
+   },
+   "length": {
+    "tokens": 90,
+    "distinct": 25,
+    "unit": "symbols",
+    "measured": true,
+    "file": "ciphertext.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "OPenn master TIFF 2339 x 2959 px, line crops at 1.5x and 2.2x, checked against connected components of the ink",
+    "image_quality": "good",
+    "notes": "22 words with dividers. Joined glyphs (E, P, Z family) and near-identical pairs (A/B, U/T, round 8 versus angular alif in line 6) were settled on the components; line 1 word 2 is abraded."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Invented signs for the Arabic letters, word dividers kept, read right to left, with more than one sign for the commonest letters.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol",
+  "notes": "The facing page describes the same circle's tricks: lam-alif as one sign, writing left to right, nulls added at the end. Homophones: two signs for lam (M, A) and for ha (D, Q); alif probably more than one (H, Z)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "The compiler solved it at once (\"fa-halaltuha fi l-hal bi-hudurihi\"), but his solution was on the next leaf, which is lost; a later reader glossed five signs in red, partly wrong. No modern reading found (Penn record, Digital Scriptorium, web searches in English and Arabic, Tomokiyo, Lasry, DECODE; 15 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: asked for an Arabic sweep, then set the goal 'solve LJS 51 f. 106v' with /goal. No target-specific intervention.",
+  "tools": [
+   "solve.py (annealing)",
+   "wordsearch.py (word-level beam search)",
+   "lang model ar-classical-poetry"
+  ],
+  "models": [
+   "claude-fable-5-2",
+   "claude-opus-5-5"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-15",
+  "last_date": "2026-11-16"
+ },
+ "solution": [
+  {
+   "date": "2026-11-15",
+   "kind": "access",
+   "what": "Found in the Arabic sweep; downloaded the OPenn master TIFF of f. 106v and the facing pages.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "Transcribed seven lines sign by sign (90 signs, 22 words) and checked the segmentation on connected components of the ink.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "One-to-one keys, both reading directions, with and without a lam=alif shared sign, scored by a new classical Arabic poetry 5-gram model.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "crib",
+   "technique": [
+    "crib testing"
+   ],
+   "what": "Fixed the red-gloss values over line 1 (waw, ta, alif, ghayn, sin).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "repeat/pattern analysis",
+    "language-model scoring"
+   ],
+   "what": "With alif fixed on the commonest sign, the annealer read the two words sharing NHYKHM as wa-amthaluka / wa-amthaluha, giving waw, alif, mim, tha, lam, ha; then humam, ayda, kun, himmatuk, wa-minka.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Homophones for the frequent letters (two lams, two has, extra alif signs), suggested by laha/mayl and huwa/wa-amthaluhu; supported by the compiler's own preface (f. 7v, image 0014: 'the letter is one, the shapes differ').",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "technique": [
+    "beam/DP decoding"
+   ],
+   "what": "Word-level beam search against the corpus vocabulary; real words but no single coherent key while eight signs occur once.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "statistics",
+   "what": "Metre: both line ends scan as tawil (rhyme -ayda); the second line's 'wa-amthaluhu humam' resists tawil.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Template-matched seven distinctive signs over the volume's other 210 pages to find the alphabet reused with a plaintext; no reuse.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "From the compiler's note 'ja'ala al-lam alifan': the alif sign also stands for lam. The annealer then reads wa-li-l-nasi amthalun, aqulu, li-l-hajri.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Tawil scansion by a second reader: wa-li-l-nasi amthalun scans; the skeleton still fails the metre at w3, w8-w9 and w20, so no complete reading is accepted.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Scored each bayt without the dividers: S read as alif, giving wa-ma kulluha ayda and wa-la li-l-hija' wa-amthaluha ayda.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "simulated annealing"
+   ],
+   "what": "Dividers placed one sign late after kaf (twice); with them moved, line 1 ends huma kanu wa-ma kulluha ayda.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Tawil scansion of the updated skeleton: bayt 1 scans in full (wa-li-l-husni amthalun ka-amyala li-l-hawa ... hawanun huma kanu wa-ma kulluha ayda), sense partly coherent; bayt 2's second half one syllable too long; w18-w20 re-checked on the image.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "sibling key",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Read the whole volume for the sender's other ciphers and the circle's tricks: sender re-read as Ibn al-Qubabi (not Ibn al-Qaysarani; not reconciled with qaysarani1350), author of the cipher on 0067-0068; the compiler names lam-alif as one sign, two shapes for one letter, waw+alif nulls at the end, missing dividers and a 'tashifi' type (one sign per letter shape).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "simulated annealing"
+   ],
+   "what": "Lam-alif as one sign (the compiler's stock formula) instead of the alif sign standing for lam: no sign takes the ligature, and the score is worse.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Tawil scansion with one null alif in bayt 2: both bayts scan, but only about half the text reads as sense; recorded as a candidate, not a reading.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "language-model scoring"
+   ],
+   "what": "Metre-constrained search (scansearch.py): corpus-derived syllable weights joined against tawil; recovers the second half of bayt 1 but over 100,000 readings of its first half scan, so the metre cannot fix the single-use signs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "literature search",
+   "what": "Found that another session had read the same cipher in targets/qaysarani1350 (one-to-one key, love verse in tawil); this attempt's homophone hypothesis was wrong. Folder closed as superseded.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "class": "not read",
+  "key": "partial",
+  "verification": [
+   "unknown"
+  ],
+  "notes": "Superseded: the cipher was read in targets/qaysarani1350. This parallel attempt failed (wrong homophone hypothesis); no reading here."
+ }
+}

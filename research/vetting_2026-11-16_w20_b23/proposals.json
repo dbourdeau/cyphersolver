@@ -1,0 +1,321 @@
+{
+ "1887": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Blocker stands: TNA Discovery API (C6794278, read 16 Nov 2026) still reads only 'Telegrams in cypher from Foreign Office and from the British embassy in Constantinople', digitised false, with no word on whether ciphertext, decodes or both survive. No new route; needs the file at Kew.",
+  "access": "archive",
+  "access_note": "TNA Kew FO 335/145/6; not digitised; no calendar."
+ },
+ "1888": {
+  "verdict": null,
+  "confidence": "high",
+  "note": "Blocker stands: TNA Discovery API (C6777006) gives only 'I.A. Turkey 200. Turkish ciphers. Volume 1', frames 824-866 of the GFM 10 film, digitised false; the 6 Nov pass already searched the literature. Whether the file holds ciphertext, tables or only correspondence about ciphers is not stated. Needs the film at Kew or the PA AA original.",
+  "access": "archive",
+  "access_note": "TNA microfilm GFM 10/476/1 (frames 824-866) or Politisches Archiv des Auswaertigen Amts, I.A. Tuerkei 200."
+ },
+ "2801": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable from the cloud: Discovery (C17045965) says only 'Cryptic letter partly in code from Pat McGuiness, Whitehaven, headed The moment is arrived', not digitised. 'Partly in code' in a Home Office disturbance file of 1803 may be cant or veiled language rather than a cipher; nothing quoted shows a cipher, and no edition or web mention was found. Needs a view of HO 42/73 f. 220.",
+  "access": "archive",
+  "access_note": "TNA Kew HO 42/73 f. 220; not digitised."
+ },
+ "2802": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable: Discovery (C9712187) describes a Returned Letter Office covering letter enclosing an unsigned letter that 'refers to places in code'. That reads as code names for places inside a plain letter (veiled language), not a cipher, but the leaf is not digitised and nothing more is said. Needs HO 33/2 ff. 74-77; likely to close as not_cipher.",
+  "access": "archive",
+  "access_note": "TNA Kew HO 33/2 ff. 74-77; not digitised."
+ },
+ "2800": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable: Discovery (C11805737) says the dead letter of 15 Jul 1789 'to my dear George from M' contains 'a section apparently in code'; the cataloguer was not sure it is code and gives nothing more; not digitised. Needs HO 42/15 ff. 123A-125.",
+  "access": "archive",
+  "access_note": "TNA Kew HO 42/15 ff. 123A-125; not digitised."
+ },
+ "2791": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable: Discovery (C6756450) gives 'Draft of letter from Lord Shaftesbury to Mr. Percivall, also of one to Mr. Perkins, and another to Captain Fisher, in cypher', endorsed for entry in the letter book; the other 157 items of PRO 30/24/7 (children listing) carry no cipher, key or decipher. 'Draft ... in cypher' does not say whether the leaf is ciphertext or a clear draft for enciphering, and the letter book entry of Nov 1682 would be a clear text. Needs PRO 30/24/7 no. 505 viewed.",
+  "access": "archive",
+  "access_note": "TNA Kew PRO 30/24/7/505; not digitised."
+ },
+ "1159": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "Umbrella of Kitchener's Nile telegrams (PRO 30/57/4); the full children listing (159 items, 38 with code/cipher words) shows most code telegrams filed with their translations or decodes (e.g. 4/29-30 'in code with translations', 4/43-50 'Decode', 4/67-68, 4/121, 4/133, 4/166, 4/208 'code and translation'). The one item described as unreadable at the time, 4/119 (Wolseley to Gordon, 'cipher unknown'), is already catalogue entry 871. Close the umbrella; split 4/6 ('Mostly indecipherable', Arabic script) only if wanted.",
+  "access": "archive",
+  "access_note": "TNA Kew PRO 30/57/4; not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API children listing of PRO 30/57/4 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C3302993, 159 items) and details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6686747 (4/36), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6686992 (11/25), read 16 Nov 2026; nothing digitised.",
+    "extent": "About 38 items of PRO 30/57/4 carry code, cipher, decode or translation in the description; 14 of them name a translation or decode filed with the telegram.",
+    "cipher": "Telegrams partly or wholly in the official code books of 1884-85 (Discovery: 'Part in code', 'Code corrections', 'Complications over code books'), plus Arabic-script cipher items (4/26-27, 4/77-78); PRO 30/57/11/25 'Six code cipher' is a later (1896-99) code."
+   },
+   "prior_art": {
+    "decode": "known.py on 'PRO 30/57/4' finds catalogue entry 871 (PRO 30/57/4/119, the Wolseley-Gordon telegram) and no DECODE record for the other telegrams.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Kitchener, Wolseley, Gordon or PRO 30/57.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Kitchener, Wolseley or PRO 30/57.",
+    "edition": "The TNA item descriptions themselves record decodes and translations filed with most code telegrams (4/26, 4/29-30, 4/35, 4/43, 4/44-48, 4/49, 4/50, 4/53, 4/67-68, 4/121, 4/133, 4/166, 4/208); the related Egerton telegram is printed in Hake (vetting 14 Nov, lead 2937).",
+    "literature": "Earlier passes (28 Oct, 11 Nov) web-searched the Kitchener code telegrams and found no study; not repeated."
+   },
+   "key_check": "PRO 30/57/11/25 'Six code cipher' (1896-99) is a later code, not the 1884 books; the 1884 code books themselves are not in the fonds as far as the listing shows ('Complications over code books', 4/61).",
+   "duplicates": "PRO 30/57/4/119 is catalogue entry 871 (same fonds, the one telegram not read at the time); lead 2937 (Egerton to Gordon, printed in Hake) is a related telegram.",
+   "closed": "Closed as partly read: the umbrella's telegrams are mostly filed with their decodes or translations, and the one item recorded as undeciphered (4/119) is already catalogue 871.",
+   "verdict": "partly_read"
+  }
+ },
+ "1137": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "Umbrella of 25 Carleton Papers items. Discovery shows PRO 30/55/16/147 is the 'Proposed Cypher' itself (Haldimand's key, 26 May 1779, sent with 16/146), and 30/55/24/76 (Clinton to Haldimand 1780) is summarised in full because it 'was found by comparison to be the same as one at British Museum' (the Haldimand Papers, which keep the clear copies made at Quebec). Dudout (#359) found the contemporary clear of 19/98 in BL Add MS 21807, and targets/carleton1782 reads three 1782 letters from those clear copies. Cornwallis-Clinton Yorktown letters are printed. Close; work the Clinton-Haldimand items inside targets/carleton1782.",
+  "access": "archive",
+  "access_note": "TNA Kew PRO 30/55 (not digitised); clear copies in BL Add MS 21807-21808 (LAC film B.146-148).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C16265257 (PRO 30/55/16/147), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C16265256 (16/146), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C16266110 (19/98), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C16304855 (24/76), read 16 Nov 2026; targets/carleton1782/NOTES.md and issue #359 as recorded in the lead.",
+    "extent": "Four of the 25 items read in the catalogue; the others not checked individually.",
+    "cipher": "Clinton-Haldimand cipher letters 1779-80 (19/98 'Letter in cypher'; 24/76 'Letter in cypher, no date or names') and the key itself (16/147 'Proposed Cypher', 16/146 Haldimand sending another copy of it)."
+   },
+   "prior_art": {
+    "decode": "known.py on 'PRO 30/55' finds only this lead and targets/carleton1782 (which attaches its 1782 letters to lead 1137); no DECODE record.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Clinton, Haldimand, Carleton or PRO 30/55.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Clinton, Haldimand or Carleton.",
+    "edition": "Discovery 24/76 gives the full content after comparison with the British Museum (Haldimand Papers) copy; the Haldimand Papers were calendared by Brymner (Report on Canadian Archives 1885-1889), and Dudout (#359) found the clear of 19/98 in Add MS 21807 pp. 134-135. The Cornwallis-Clinton letters of 1781 are printed in Stevens, The Campaign in Virginia 1781 (1888).",
+    "literature": "targets/carleton1782 (Andrew Beling, 13 Nov 2026) reads the 1782 Clinton and Carleton letters to Haldimand from the clear copies kept at Quebec; the 1779 Clinton-Haldimand item is pointed at in its notes."
+   },
+   "key_check": "The key is in the collection: PRO 30/55/16/147 'Proposed Cypher. Proposed by Haldimand, should future letters fall into enemy hands' (26 May 1779), with 16/146 sending another copy and 'alterations in the form of a code'. Not seen or tested.",
+   "duplicates": "The same letters exist at the receiving end in the Haldimand Papers (BL Add MS 21807-21808) with contemporary clear copies; targets/carleton1782 covers the 1782 letters; catalogue 781 and 783 are different Clinton-Cornwallis letters (Clements Library).",
+   "closed": "Closed as partly read: the key is in the collection, the receiving copies at Quebec carry contemporary clears (24/76 summarised from one, 19/98 per #359), and the remaining items belong with targets/carleton1782.",
+   "verdict": "partly_read"
+  }
+ },
+ "1136": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "Umbrella of 63 Cornwallis Papers items. The children listing of PRO 30/11/3 shows most cipher letters summarised in full, en clair duplicates filed beside cipher copies (3/314-315 'Duplicate of item at 3/312, en clair'; 3/52-53 a cipher duplicate of 3/42; 3/326-327 a cipher copy of 3/277), the Common cipher key rebuilt (JAR 2019) and Saberton's edition printing the papers. Close the umbrella. Two items deserve their own leads: 3/6-7 'Letters in number cipher taken from Baron de Kalb' (16 Aug 1780) and 3/207-209 'I. Money to Major Wemyss. In number cipher, not deciphered' (10 Oct 1780).",
+  "access": "archive",
+  "access_note": "TNA Kew PRO 30/11; not digitised; Saberton 2010 (6 vols) not online.",
+  "split_suggestions": [
+   "TNA PRO 30/11/3/6-7 (C6670987): 'Letters in number cipher taken from Baron de Kalb', 16 Aug 1780 (captured at Camden?)",
+   "TNA PRO 30/11/3/207-209 (C6671059): 'I. Money to Major Wemyss. In number cipher, not deciphered', Charlotte Town, 10 Oct 1780"
+  ],
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API children listing of PRO 30/11/3 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C3214338, 148 items) and details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6670987, https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6671015, https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6671036, read 16 Nov 2026; not digitised.",
+    "extent": "PRO 30/11/3 checked item by item in the catalogue (about 16 cipher items); PRO 30/11/4-6, 68-69, 81-87 not listed this pass.",
+    "cipher": "Number cipher passages ('Passage in number cipher', 'Most in number cipher', 'Cipher') in letters of Ferguson, Balfour, Turnbull, Wemyss and others to Cornwallis and Rawdon, 1780."
+   },
+   "prior_art": {
+    "decode": "known.py on 'PRO 30/11/3/6' finds only this lead and the Oct sweep candidates; no DECODE record.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Cornwallis, Rawdon, Balfour, Tarleton or de Kalb.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Cornwallis or the southern campaign.",
+    "edition": "Ross, Correspondence of Charles, First Marquis Cornwallis (1859) vol. I prints cipher passages deciphered (28 Oct check); Saberton, The Cornwallis Papers (2010, 6 vols) prints the 1780-81 papers; the TNA descriptions themselves summarise the content of most cipher items and note en clair duplicates.",
+    "literature": "Journal of the American Revolution, 'Decoding British ciphers used in the South, 1780-81' (allthingsliberty.com, 2019) rebuilds the Common cipher of these letters; a web search this pass for the de Kalb letters found no study of them."
+   },
+   "key_check": "The Common cipher used by Cornwallis's officers is rebuilt in the 2019 JAR article; an auction lot (Christie's) of a Cornwallis to Wemyss letter of 7 Oct 1780 came with a contemporary key. Not applied here.",
+   "duplicates": "En clair duplicates inside the series (3/314-315 for 3/312; 3/42 for 3/52-53; 3/277 for 3/326-327); targets/carleton1782 notes say 1136 is a different system from the Clinton-Haldimand code.",
+   "closed": "Closed as partly read: the umbrella is largely deciphered or duplicated en clair in the series and printed by Ross and Saberton; the de Kalb letters (3/6-7) and the undeciphered Money to Wemyss letter (3/207-209) should be split into their own leads.",
+   "verdict": "partly_read"
+  }
+ },
+ "1804": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Blocker stands: the full children listing of SP 94/8 (87 items) shows f. 197 'Cipher Marseilles. In Italian' undated and not digitised, and the only other cipher item is f. 39 'A. Pinson to [Cecil] with key to cipher' (7 Apr 1602). The title reads like a key or nomenclator label; nothing shows ciphertext. Needs a Kew or SPO view of f. 197.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 94/8 f. 197; not digitised; SPO (Gale) subscription."
+ },
+ "1154": {
+  "verdict": "key_lookup",
+  "confidence": "medium",
+  "note": "Chauran's letters to Williamson (SP 84/165/1-114) are in the Orangist cipher whose complete key survives as SP 106/6 nos. 32 (encoding) and 33 (decoding), described with sample values by Tomokiyo (cryptiana chauran.htm, 2012); the one item recorded as 'Partly in cipher' (/75, f. 122) is 'Missing at transfer', f. 35 is the decipherment of f. 34, and the Spanish-vocabulary letters of the same volume are catalogue 870 (targets/chauran1662). Close as key lookup.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 84/165 and SP 106/6; SPO (Gale) for images.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API children listing of SP 84/165 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C4482059, 190 items) and details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C7306667 (/75), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C7306628 (/36), read 16 Nov 2026; Tomokiyo, 'Some Orangist Ciphers (1662)', cryptiana.web.fc2.com/code/chauran.htm (fetched 16 Nov 2026).",
+    "extent": "About ten Chauran letters of Jan-May 1662 mention ciphers; /75 (f. 122), the only one catalogued as 'Partly in cipher', is missing at transfer.",
+    "cipher": "Chauran's French numerical code with diacritic marks over 1-100 (Tomokiyo: 29 'puis', 29m 's', 33 'faire'); /36 and /70 send 'Additions to the cipher'."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 84/165' finds catalogue 870 (the 'Undecoded cipher' leaves ff. 187-317 of this volume) and targets/chauran1662; no DECODE record for the French letters (Tomokiyo gives DECRYPT R510 for SP 106/6 no. 34).",
+    "tomokiyo": "Not on Tomokiyo's unsolved list (unsolved.htm, fetched 15 Nov 2026). His article 'Some Orangist Ciphers (1662)' (chauran.htm) describes Chauran's cipher from a letter of 12 Feb 1662 and states that a complete key is SP 106/6 nos. 32-33; Wickfort used the same cipher.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Chauran, Wickfort or Williamson 1662.",
+    "edition": "No print; the TNA calendar summarises the content of the Chauran letters, and f. 35 (SP 84/165/22) is catalogued as 'Decipherment of f.34' (Nicholas to Chauran).",
+    "literature": "targets/chauran1662/NOTES.md (Andrew Beling, 15 Nov 2026) works the Spanish letters of the volume and cites lead 1154 as related; Tomokiyo 2012 and 2024 (charlesii2.htm) on the Restoration ciphers."
+   },
+   "key_check": "Complete key held at Kew: SP 106/6 no. 32 (encoding table) and no. 33 (decoding table), per Tomokiyo; not seen. Chauran's 'Additions to the cipher' are on SP 84/165/36 and /70.",
+   "duplicates": "Same volume as catalogue 870 (SP 84/165/112-183, the Spanish-vocabulary cipher, targets/chauran1662); lead 1803 (f. 287) was closed as a duplicate of 870.",
+   "closed": "Closed as key lookup: the complete key of Chauran's cipher survives at Kew (SP 106/6 nos. 32-33, Tomokiyo), the one leaf catalogued as partly in cipher is missing, and the volume's undeciphered leaves are already catalogue 870.",
+   "verdict": "key_lookup"
+  }
+ },
+ "1795": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The lead's own shelfmark SP 89/12/73 (f. 123) carries the TNA note 'Deciphered copy. See f.124', and SP 89/12/74 (f. 124) is 'Original of f.123', partly in cipher: the contemporary decipherment is filed beside the cipher original. Close as read.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 89/12 ff. 123-124; not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6840693 (SP 89/12/73, note 'Deciphered copy. See f.124') and children listing of SP 89/12 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C3645032, 165 items: /74 'Original of f.123'), read 16 Nov 2026; leaves not digitised.",
+    "extent": "One letter: the partly ciphered original at f. 124 and its deciphered copy at f. 123.",
+    "cipher": "Parry to Arlington, Lisbon, 29 Jul/3 Aug 1672, sent in cipher by the Portuguese express; the deciphered copy gives the content (de Mello's powers, Ferreira Rebello and the Brazil Company)."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 89/12' finds only this lead and its sweep candidate; no DECODE record.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: the only Arlington entry is Perwich 1670 (solved); nothing on Parry or SP 89.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Parry, Arlington 1672 or SP 89.",
+    "edition": "The decipherment is filed in the volume (f. 123, 'Deciphered copy'); no printed calendar covers SP 89 for 1672.",
+    "literature": "The 6 Nov pass ran three web searches (Parry, de Mello, Ferreira Rebello, cryptiana) and found only the TNA records; not repeated."
+   },
+   "key_check": "Not needed: the decipherment is filed with the original. No Parry key located in SP 106 this pass.",
+   "duplicates": "None in the ledgers; SP 89/12/129 (f. 214, 3/13 Feb 1673) refers to a later Parry cipher letter that is wanting.",
+   "closed": "Closed as read: a contemporary deciphered copy (f. 123) is filed beside the partly ciphered original (f. 124).",
+   "verdict": "read"
+  }
+ },
+ "1884": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "SP 105/60 is Stepney's letter book (copies in Plantamour's hand); f. 168 is Stepney to Kinsky giving the contents of Paget's letter of 2 Oct 1693 from Pera that came 'entirely in cipher', and f. 173 gives a précis of the same despatch to Cresset. So Paget's cipher letter was deciphered by Stepney at the time and its content is on f. 168; the folio itself is a clear copy. Close as read.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 105/60; not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C6822068 (SP 105/60/168, note '[hand of Plantamour]') and children listing of SP 105/60 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C3609650, 310 items), read 16 Nov 2026; not digitised.",
+    "extent": "One letter-book entry (f. 168); a second précis of the same Paget despatch at f. 173 (SP 105/60/173, to Cresset).",
+    "cipher": "None on the folio as catalogued: the entry relays the content of Paget's cipher letter; the volume elsewhere records deciphers sent on (f. 6 'Adds a decipher of a letter from Paget', f. 120v 'Encloses decipher of last letter from the ambassador')."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 105/60' finds lead 1802 (SP 105/60/123 and f. 135, cipher passages, 'Key untraced in SP 106') and no DECODE record.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: the Stepney entry is Stepney to Manchester 1702 (Manchester Papers), not this volume; nothing on Paget 1693.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: one 'Paget?' entry (Genoa 1714) is unrelated; nothing on Stepney's 1693-94 letter book.",
+    "edition": "The letter-book entries themselves give Stepney's deciphered content of Paget's despatches (ff. 168, 173); no printed edition of SP 105/60 found.",
+    "literature": "Earlier passes (Oct, 14 Nov) found no study; the volume's handling of Paget's ciphers (deciphers forwarded, Wallis consulted on intercepts, ff. 7, 80, 82) is in the TNA calendar."
+   },
+   "key_check": "No key needed for f. 168. The volume notes the f. 135 PS key is 'untraced in SP 106'; that belongs to lead 1802.",
+   "duplicates": "Lead 1802 (SP 105/60/123, /135) is the same letter book's real cipher passages; targets/stepney (1702 key) is a later correspondence.",
+   "closed": "Closed as read: f. 168 is a letter-book copy in which Stepney gives the deciphered content of Paget's all-cipher letter of 2 Oct 1693; no ciphertext is recorded on the folio.",
+   "verdict": "read"
+  }
+ },
+ "2793": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessable from the cloud. Discovery (children of SP 90/2, 147 items) gives full summaries of the Raby despatches including the matter that would be in cipher (/262 'Explains cipher of f.266', /266 the elector's terms in full, /335 'Receipt of cipher', /337 'Use of ciphers', /356 'Additions to cipher', note 'Partly in cipher'), which points to decipherment in the volume; but no note says 'deciphered' and no leaf is digitised. Needs SP 90/2 ff. 262-266, 356 viewed; likely to close as read.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 90/2; not digitised."
+ },
+ "2794": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "SP 35/72/17 carries former reference E17: TNA's subseries description says the E papers (George Kelly) were not kept in SP 35/35-39 but were 'published in the report of the Committee' (the 1723 Commons secret committee on the Atterbury plot), arranged by those codes. The 'code' in the pocket-book is the plot's cant names (Mr Ca, Mr K, Mrs H), which the committee's report interpreted. Close as read (printed 1723).",
+  "access": "archive",
+  "access_note": "TNA Kew SP 35/72/17; not digitised; the 1723 Report is in print.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C15416206 (SP 35/72/17), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C15416469 (SP 35/39/21, cipher-key), https://discovery.nationalarchives.gov.uk/API/records/v1/details/C14896200 (subseries description) and children of SP 35/72 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C5509900, 95 items), read 16 Nov 2026; not digitised.",
+    "extent": "One copied pocket-book (three copies) with names, payments and meetings, 'some in code'.",
+    "cipher": "Abbreviated and cant names (Mrs H, Mr Ca, Mr K, Mr C, Mr D) in a list of payments and meetings; no cipher groups described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 35/72' finds only the 15 Nov sweep candidates; no DECODE record. Catalogue 860 covers the SP 35/45-53 Atterbury ciphers.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Kelly, Atterbury, Layer or SP 35.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Kelly or the Atterbury plot.",
+    "edition": "Report from the Committee appointed by the House of Commons to examine Christopher Layer and others (1723), appendix E (Kelly papers): TNA states papers with former references E were published in the report; the report's text was not opened this pass (Google Books quota exhausted).",
+    "literature": "Web search (Kelly pocket-book, Atterbury plot, 1723 report) found the TNA subseries note and Cambridge's Atterbury plot exhibition page, no separate study of the pocket-book."
+   },
+   "key_check": "SP 35/39/21 BY1 is a 'Cipher-key' among Layer's papers and BY10 a 'List of six codenames and their meanings'; the cant names of the plot were explained in the 1723 report. Not tested against the pocket-book.",
+   "duplicates": "Catalogue 860 (SP 35/45-53 Atterbury ciphers) is the same plot, different papers; no ledger record of SP 35/72/17.",
+   "closed": "Closed as read: the pocket-book (E17) was printed in the appendix of the 1723 Commons report, and its 'code' is the plot's cant names, which the report interpreted; no cipher is described.",
+   "verdict": "read"
+  }
+ },
+ "1780": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable, and probably not a cipher document: SP 78/181/29 (f. 38) is Walpole's covering letter saying St Saphorin 'has sent a piece in cypher for decoding'. The full children listing of SP 78/181 (134 items) has no separate record for the piece (only two later Robinson letters mention ciphers), so the cipher is probably not filed here or was sent on to the decipherers. Needs a view of f. 38 and its next leaf; if no ciphertext is there, close as not_cipher.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 78/181 f. 38; not digitised."
+ },
+ "2796": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "SP 36/60/365 (St Quentin to the Pretender, 31 May 1743, 'French Partly in cypher') is followed by SP 36/60/371, the same letter with the identical summary marked 'Copy which was intercepted by Admiral Matthews': a government copy filed beside the partly ciphered one, and the cataloguer summarised the cipher matter in full. Close as read.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 36/60 ff. 365-371; not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C7768166 (SP 36/60/365) and https://discovery.nationalarchives.gov.uk/API/records/v1/details/C7768167 (SP 36/60/371), and children of SP 36/60 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C5909865, 172 items), read 16 Nov 2026; not digitised.",
+    "extent": "One intercepted French letter, partly in cypher (f. 365), and a copy of it (f. 371).",
+    "cipher": "Cipher passages in St Quentin's report (M.W.'s assurances to Tencin and Amelot, 10-12,000 French troops, a 15-day restoration) as summarised by TNA from the clear content."
+   },
+   "prior_art": {
+    "decode": "known.py on 'SP 36/60' finds only this lead and its 15 Nov candidate; no DECODE record.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for St Quentin, the Pretender 1743 or SP 36.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for St Quentin or Jacobite letters of 1743.",
+    "edition": "Not checked in print; the copy at f. 371 and the full catalogue summary of the cipher matter show the government had the clear text. The Stuart Papers at Windsor would hold the received letter.",
+    "literature": "The 15 Nov sweep noted the full summary; no web search hit for this letter beyond TNA (not repeated beyond the catalogue)."
+   },
+   "key_check": "No key sought; the clear content is in the volume. The same volume records a letter 'which awaits deciphering' (f. 184), so the office deciphered such intercepts.",
+   "duplicates": "SP 36/60/371 is the same letter (copy intercepted by Admiral Matthews); no other ledger record.",
+   "closed": "Closed as read: a copy of the same letter (f. 371) is filed beside the partly ciphered one and the catalogue gives the cipher matter in full.",
+   "verdict": "read"
+  }
+ },
+ "1794": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "All eight items are read in the catalogue record itself: SP 87/16/12 and /13 are 'Duplicate (partly in cipher)' of /10 and /11, which are filed beside them; SP 87/17/58 and /122 are Harrington's office texts marked '[original partly in cipher]'; /21/45, /23/41, /23/51 are outgoing letters dated at Whitehall (the Secretary's side, where the clear text was written before enciphering) summarised in full; /23/70 (Cumberland to Chesterfield) is summarised in full (inference: deciphered on receipt). Close as read.",
+  "access": "archive",
+  "access_note": "TNA Kew SP 87/16, 17, 21, 23; not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "TNA Discovery API details https://discovery.nationalarchives.gov.uk/API/records/v1/details/C9189257, C9189258, C9233504, C9233568, C9067846, C9040584, C9040876, C9046270 and children of SP 87/16 (https://discovery.nationalarchives.gov.uk/API/records/v1/children/C3116454), SP 87/17 (C3116455), SP 87/21 (C3116459), SP 87/23 (C3116461), read 16 Nov 2026; not digitised.",
+    "extent": "Eight letters of 1745-47, each with a passage in cipher.",
+    "cipher": "Office cipher passages in Hanover/Flanders campaign letters of Harrington, Chesterfield, Ligonier and Cumberland; the descriptions give the cipher matter (Hessian treaty, winter quarters, the Waldeck command)."
+   },
+   "prior_art": {
+    "decode": "known.py (SP 87/2..., SP 87/17/58 Harrington in the 2 Nov pass) finds lead entries only; catalogue holds SP 87/22/92 (a different letter); no DECODE record of these eight.",
+    "tomokiyo": "Tomokiyo's list of unsolved ciphers (cryptiana.web.fc2.com/code/unsolved.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: the Chesterfield entry is the 2nd Earl's 1659 memoir passage (solved); nothing on Harrington, Cumberland or SP 87.",
+    "lasry": "Lasry's list (cryptiana.web.fc2.com/code/GL.htm, fetched 15 Nov 2026) was searched for the shelfmark, the series and the correspondents' names: no entry for Harrington, Chesterfield, Cumberland or SP 87.",
+    "edition": "The TNA descriptions give the clear content: two are cipher duplicates of letters filed beside them (/16/10, /16/11), two are noted as the office text of an 'original partly in cipher', three are outgoing letters dated at Whitehall (the sender's office side) and one incoming letter is summarised in full. The Camden Third Series volume on Cumberland's campaign (1745-46) was not opened.",
+    "literature": "The 2 Nov pass web-searched the items and found only catalogue entries; not repeated."
+   },
+   "key_check": "No key needed: the clear texts are filed in the series. Ligonier's 'Letters from Lord Sandwich for which he does not have a cipher' (SP 87/21/53) shows the office ciphers in use; not sought in SP 106.",
+   "duplicates": "SP 87/16/12 and /13 are duplicates of SP 87/16/10 and /11; catalogue entry for SP 87/22/92 is a different letter of the series.",
+   "closed": "Closed as read: each of the eight letters has its clear text in the series (clear originals filed beside cipher duplicates, the Secretary's own texts of outgoing letters, or office texts of originals sent partly in cipher); the leaves were not seen.",
+   "verdict": "read"
+  }
+ }
+}

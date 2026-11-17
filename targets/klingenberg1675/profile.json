@@ -1374,6 +1374,15 @@
       ],
       "what": "Collision re-check for 260195 images 41-43: upstream main 8c04af810 has no record of them (only 260195-44 onwards); the heads of the 25 pull requests with a merge ref (git ls-remote upstream refs/pull/*/merge) and of #687 were fetched and diffed against upstream main: only our own #687 touches targets/klingenberg1675 or names 260195. The join: 43R ends with the clear word 'welches', 44L begins 'dann Ihr Königl. Mayt.' (260195-44).",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "other"
+      ],
+      "what": "Project check of PR #695 (a model session, not a person): decode_once.py reproduces the filed decode byte for byte and a second decoder written from key.tsv agrees on all 43 runs; the frozen hashes match the files and the key files are those on main since 12 Nov 2026; shuffle.py re-run gives 0 of 5,000 at both seeds. Images fetched again (md5 as logged): 41R compared at reduced size (about 190 tokens) and about 45 tokens of 42L, 43L, 43R at full size, no difference; the join with 44L holds. Code 485 is written 485 at both places where 'ni' is wanted, so it is not a reader's slip. By words (README Conventions): 294 of 331 = 88.8%; the 95.04% is the share of decode units. Class stays decoded, not read; no reading_review recorded. The order of fetch, freeze and decode is by the contributor's record.",
+      "result": "worked"
     }
   ],
   "outcome": {

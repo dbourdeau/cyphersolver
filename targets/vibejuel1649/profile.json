@@ -104,9 +104,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "no",
-   "where": "No decipherment of the old-cipher letters is known. The only decipherment of the time in the unit is the partial gloss on N. 319 (image 78), a letter in the new alphabet. Catalogue 2527 vetting (Daniel Bourdeau, 11 Nov 2026): DECODE, Tomokiyo, Lasry nothing. Fryxell 1836 gives a Swedish abstract of Juel's register without the cipher passages. The contributor's web search of 11 Nov 2026 found no edition. Not searched again at verification or integration.",
-   "found": "not found",
+   "exists": "in print",
+   "where": "J. A. Fridericia, 'Breve fra Statsmænd i Danmark til den danske Resident i Stockholm, Peder Juel, fra Aarene 1648-55', Danske Magazin 5th series vol. II (1889-92), pp. 362-387 (scan https://ronlev.dk/bibliotek/3364.pdf), prints all nine letters of this target (his nos. 4, 5, 6, 8, 9, 10, 11, 13, 14; pp. 366-373) with every cipher word and code deciphered, from Vibe's key in a collection of cipher keys in the Rigsarkivet (key not located). Found 16 Nov 2026 by the backlog vetting of lead 2527, after the reading. Earlier searches had missed it: catalogue vetting of 11 Nov 2026 (DECODE, Tomokiyo, Lasry; Fridericia 1894 and Gigas 1883, no text), the contributor's web search of 11 Nov 2026, Fryxell 1836 (abstract without the cipher). Not given to the model and not used: the reading leaves every code as a number and has readings the print does not support; the contributor's language-model corpus (four Danske Magazin files, hashes re-verified 16 Nov 2026) does not contain these letters. The print is free online, so training-data exposure cannot be ruled out. Register p. 115 (Juel to Vibe, 1648) is not in the edition.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -120,7 +120,7 @@
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, system, protocols, measurements, reading, write-up)"
   ],
   "first_date": "2026-11-11",
-  "last_date": "2026-11-12"
+  "last_date": "2026-11-16"
  },
  "solution": [
   {
@@ -189,13 +189,19 @@
    "kind": "verification",
    "what": "Register p. 115 (Juel to Vibe, 2 Sep 1648; PR #457) added from juel1647: the rule applied unchanged reads 21 certain words of 25 (23 in the contributor's count), 15 code tokens open; an own decoder reproduces the decryption; image 61 compared at integration, no disagreement; three nomenclator numbers (212, 351, 401) also occur in the letters of 1649-51. Not a pre-registered test; counted apart from the headline of the ten letters.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "literature search",
+   "what": "Backlog vetting of lead 2527 (Krag letters, same unit) found Fridericia's edition in Danske Magazin 5th series II (1889-92), pp. 362-387; scan downloaded and grepped, italics read from the font data. All nine letters of this target are printed deciphered, codes included (nos. 4-6, 8-11, 13, 14; his dates put image 71 after 15 Apr 1651 and the slip of images 72-73 about 12 Sep 1651); his introduction describes the system as a three-row number alphabet chosen by one of three meaningless leading numbers, plus word codes, which fits the rule recovered here. Aligning his print with the reading gives a value for each of the 22 code numbers (not entered in the reading). Some readings differ from his (image 72). The LM corpus of the contributor's tests checked: it does not contain the edition. prior_solution set to in print / after reading / not used; first_break false; method unchanged (independent key recovery).",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "method_basis": "No letter in this cipher has a gloss. The shift-per-word system was found from the partial interlinear decipherment of the time on N. 319 (image 78, new alphabet) in the same unit; the old cipher's cyclic 23-letter alphabet and opener rule were then worked out on N. 330 and the letters of 1649-50, and the cipher is named in Vibe's clear text on image 62. The nomenclator is not recovered.",
+  "method_basis": "No letter in this cipher has a gloss. The shift-per-word system was found from the partial interlinear decipherment of the time on N. 319 (image 78, new alphabet) in the same unit; the old cipher's cyclic 23-letter alphabet and opener rule were then worked out on N. 330 and the letters of 1649-50, and the cipher is named in Vibe's clear text on image 62. The nomenclator is not recovered. The key recovery was independent of Fridericia's printed decipherment (Danske Magazin 5th series II, 1889-92), found on 16 Nov 2026 after the reading and not used.",
   "contribution": [
    "transcription",
    "key recovered"
@@ -246,13 +252,19 @@
     "role": "transcription",
     "note": "register p. 115, image 61, two passes",
     "date": "2026-11-12"
+   },
+   {
+    "who": "fridericia",
+    "role": "prior solution",
+    "note": "printed all nine letters deciphered, codes included, from Vibe's key in the Rigsarkivet: Danske Magazin 5th series vol. II (1889-92), pp. 366-373; found after the reading, not used",
+    "source": "https://ronlev.dk/bibliotek/3364.pdf"
    }
   ],
   "gaps": [
    {
     "item": "68 nomenclator code tokens (22 numbers: 211, 228, 257, 261, 422, 423 ...)",
-    "blocker": "no-key-material",
-    "detail": "no code list in the unit and no gloss on any letter in this cipher; Juel's replies, the rest of NKS 1299 e at the Royal Library or a code list in the Juel papers could give them"
+    "blocker": "open-codes",
+    "detail": "no code list in the unit and no gloss on any letter in this cipher; Fridericia (1889-92) prints the plaintext at these places from Vibe's key in a Rigsarkivet collection (key not located), and aligning his print with the reading gives a value for each of the 22 numbers (NOTES, 'Printed decipherment'); not entered in the reading, which would be reading from an existing decipherment"
    },
    {
     "item": "five unresolved cipher words (image 64: 24.1=7.5; image 69: 30.13.1.11.14 and 27.8.9.12; image 71: 31.?9.5.17.4.12.18; image 72: 32.9.3.6.11)",
@@ -267,12 +279,7 @@
    {
     "item": "no pre-registered held-out test of the old-cipher rule",
     "blocker": "no-key-material",
-    "detail": "every letter of the unit in this cipher has been opened and read; a blind test needs new material in the same cipher (p. 115 of Juel's register, catalogue 2553, is reported to be in it)"
-   },
-   {
-    "item": "prior art outside the repository not searched again at verification",
-    "blocker": "needs-physical-access",
-    "detail": "the Royal Library's NKS 1299 e fol. and the Danish printed collections are not online in full"
+    "detail": "every letter of the unit in this cipher has been opened and read; a blind test needs new material in the same cipher (p. 115 of Juel's register, catalogue 2553, is reported to be in it); Fridericia's print is an outside check the model never saw (word-by-word comparison with reading.md not yet made)"
    },
    {
     "item": "Register p. 115: 'fogte' (hole), '[?dragit]' (guess), nine nomenclator numbers",
@@ -296,7 +303,7 @@
     "language": "da",
     "state": "read in part",
     "read_share": 0.667,
-    "summary": "News of the Danish court from Copenhagen, January 1649 to September 1651: who obtains what from #211 and who is reconciled with whom; sailors and every man discontented while the Marselis and Friedrich Möller hold assignments on the best revenues of the realm; the High Steward kept at home by a pretended weakness; #228 asking satisfaction for an arrest and #211 a declaration about an alleged murder plot; the account of the Norwegian fleet; #422 to be judged; how to win #370 away from #422. The 22 code numbers that name the actors are not identified.",
+    "summary": "News of the Danish court from Copenhagen, January 1649 to September 1651: who obtains what from #211 and who is reconciled with whom; sailors and every man discontented while the Marselis and Friedrich Möller hold assignments on the best revenues of the realm; the High Steward kept at home by a pretended weakness; #228 asking satisfaction for an arrest and #211 a declaration about an alleged murder plot; the account of the Norwegian fleet; #422 to be judged; how to win #370 away from #422. The 22 code numbers that name the actors have no value in this reading; Fridericia's print of 1889-92 gives them.",
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout's AI agents; re-read at integration by an AI agent for the project",
@@ -325,11 +332,12 @@
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Split out of vibejuel1651 on 12 Nov 2026 (one key, one entry): the new alphabet of 1651-1655 is targets/vibejuel1651, with the frozen test files of both tests. The key (key.tsv, CC BY 4.0) was applied to p. 115 of Juel's register (catalogue 2553). Prior art was not searched again at verification or integration. Register p. 115 (Juel to Vibe, 2 Sep 1648) added 12 Nov 2026 from PR #457; the headline figures are those of the ten letters of 1649-51 and p. 115 is counted apart.",
+  "notes": "Split out of vibejuel1651 on 12 Nov 2026 (one key, one entry): the new alphabet of 1651-1655 is targets/vibejuel1651, with the frozen test files of both tests. The key (key.tsv, CC BY 4.0) was applied to p. 115 of Juel's register (catalogue 2553). A printed decipherment of all nine letters (Fridericia, Danske Magazin 5th series II, 1889-92) was found on 16 Nov 2026, after the reading; the key recovery here was independent of it. Register p. 115 (Juel to Vibe, 2 Sep 1648) added 12 Nov 2026 from PR #457; the headline figures are those of the ten letters of 1649-51 and p. 115 is counted apart.",
   "codes_open": {
    "open": 22,
    "total": 22,
    "tokens_open": 68
-  }
+  },
+  "first_break": false
  }
 }

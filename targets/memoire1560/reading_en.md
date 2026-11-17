@@ -25,8 +25,8 @@ and concluded that, if the King sent forces over here, they would put themselves
 would rather die arms in hand than have the King execute them by a hangman. Their troops and sects increase every day.
 Your Greatness could not believe the number of great lords and nobility [who] are in understanding with this rabble;
 it is true that they do not declare themselves, but [that they] give them all the favour and counsel they can. The
-brother of the Seigneur de Caumont is the Sieur Abbot of the said Clairac. The said de Caumont [have] lordship, place
-and castle [..] [..] have no ministers, and that no assembly of rebels be held there, of which I have heretofore
+brother of the Seigneur de Caumont is the Sieur Abbot of the said Clairac. The said de Caumont have no lordship, place
+or castle [..] [..] that has not ministers, and that no assembly of rebels be held there, of which I have heretofore
 advised Your Greatness. The judge of the said Seigneur de Caumont's lands, named Reclus, has left to
 
 **f. 153r.** go to court, who by the means of the said de Caumont and by the favour of the chief [has] been elected,
@@ -88,7 +88,7 @@ great pleasure [and] contentment to the said rebels [..] [..] to continue their 
 
 **f. 155v.** If [so] it were, and thinking that Your Greatness would not find it [bad], for the preservation of my
 life, I would withdraw to the train of the court, there to employ myself in very humble obedience in all that it
-would please the King and Your Greatness to command [me]; for in any case, the said rebels [having] such authority
+would please the King and Your Greatness to command [me]; for in any case, the said rebels having such authority
 over here as they have, they have taken from me all means of being able to see to my affairs at all, except at the
 hazard of my life. The said rebels continue, and daily make new compositions which they [..] and send throughout this
 country to [..] the common people from their good way and make them s[ch]ismatic, as Your Greatness will be able to

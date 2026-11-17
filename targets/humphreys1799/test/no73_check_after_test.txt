@@ -1,0 +1,17 @@
+# A further check made while packaging (14 Nov 2026), AFTER the held-out test. Not pre-registered; not part of the test.
+# No. 73, David Humphreys to Thomas Jefferson, Lisbon, 29 May 1793. M43 roll 2, frame 0285 (coded sentence) and frame
+# 0286 (the clerk's decipherment on a separate sheet); endorsement on 0288 ("Humphreys David Lisbon May 29.93 No 73").
+# Catalog record https://catalog.archives.gov/id/188790777. The Papers of Thomas Jefferson (26:140) print the sentence
+# from the clerk's sheet and say the editors verified it against their partially reconstructed Code No. 8, "with one
+# anomaly": the word "cause" is written as "a".
+# Not in the table build (no pair from M43-02-0285 or 0286 is in key/pairs_build_v1.tsv). Transcribed once, from one
+# crop of the catalog image; the third digit of the 10th group is not legible (63?).
+#
+# groups:       223   906  1367 1205 565 783     565 179  925 63?    925 365     994 69            240 435     1436
+# table:        spain pro  pos  ed   to  england to  make a   -      a   against the United States of  America .
+# clerk (0286): Spain proposed       to  England to  make a   common a   against the United States of  America .
+#
+# Result: 16 of the 17 groups decode with the frozen table to the clerk's text; the 17th (63?) has no table value
+# (clerk: "common"). The second 925 is "a" in the table and on the clerk's sheet: Humphreys's slip for "cause", as the
+# editors say. This also corrects the first session's inventory, which had listed the 1793 letters on M43 roll 2 as
+# all in Barclay's "Algerine" cipher: No. 73 is in this code; the Gibraltar letter on frames 0343-0345 is not.

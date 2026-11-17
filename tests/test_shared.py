@@ -33,6 +33,13 @@ class Lang(unittest.TestCase):
         self.assertEqual(lm.norm('Jé vous Kyrie w', 'latin'), 'ie uous cirie u')
         self.assertEqual(lm.norm('Jé Vous', 'modern', spaces=False), 'jevous')
 
+    def test_arabic28_drops_vowel_signs(self):
+        # vowel signs, shadda, sukun, dagger alif and tatweel are removed, not turned into spaces (a word was cut into letters)
+        self.assertEqual(lm.norm('\u0643\u064e\u062a\u064e\u0628\u064e', 'arabic28'), '\u0643\u062a\u0628')
+        self.assertEqual(lm.norm('\u0643\u064e\u062a\u064e\u0628\u064e', 'arabic28', spaces=False), '\u0643\u062a\u0628')
+        self.assertEqual(lm.norm('\u0645\u064f\u062d\u064e\u0645\u0651\u064e\u062f\u0652 \u0647\u0670\u0630\u0627 \u0643\u0640\u0640\u062a\u0628', 'arabic28'),
+                         '\u0645\u062d\u0645\u062f \u0647\u0630\u0627 \u0643\u062a\u0628')
+
     def test_alphabet(self):
         self.assertEqual(len(lm.alphabet('modern', False)), 26)
         self.assertEqual(len(lm.alphabet('modern', True)), 27)

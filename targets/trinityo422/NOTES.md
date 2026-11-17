@@ -53,6 +53,43 @@ the CUDL string was known beforehand. Differences and doubts:
   ΙΗ is uncertain.
 - CUDL's grouping "Δ ΛΕ", "ΙΚ Δ", "Κ· Β" is Δ | Λ, Ε | ..., Ι | ΚΔ, and ΚΒ (one value with a point).
 
+## Independent check by the project (16 Nov 2026)
+
+A project session (Claude, claude-fable-5-2) was given the catalogue page for entry 2902 on 16 Nov 2026 and reached
+the same identification from the CUDL transcription alone, before it saw PR #690 or this folder: the 19 pairs, the
+steps of 11 days back and 19 forward between the dates, and the Paschal full moons of the Byzantine lunar cycle. It then:
+
+- checked the grouping on full-resolution IIIF crops (regions 1150,5150,1700,620 and 2750,5000,1700,750, contrast
+  raised): each number has its own overline, and the overlines give Β | ΚΒ, Δ Λ | Ε ΙΗ, Ι | ΚΔ; the count of year 14
+  can be Α or Δ on the image. The doubts at counts 5 and 18 above were not re-examined;
+- ran `independent_check.py` on `pairs.tsv`, with the table computed from the AD year ((AD + 5508) mod 19 for the
+  cycle year, 21 March + ((19 x (AD mod 19) + 15) mod 30) days for the full moon): 19 of 19 values match and the
+  counts run 1 to 19. The saltus (a step of 12 days) falls between years 16 and 17;
+- made one web search (shelfmark, Lectionary 186, Ioannes anagnostes, paschal table): no published identification.
+
+The result is Brice Dudout's (PR #690, opened 02:32 UTC on 16 Nov 2026, before the project session). The project
+session adds an independent second derivation and the write-up. Not done by either: a comparison with a printed
+Byzantine Easter table (for example Grumel, La chronologie, 1958), and a palaeographic opinion on whether the table
+and the note are by one hand.
+
+What the CUDL record says (read by the project session from the CUDL IIIF manifest, 16 Nov 2026; record by
+Dr Christopher Wright): the manuscript is dated to the 11th century on its script, and was dated in the past to the
+12th (the Trinity catalogue, James 1253, says 12th). Another hand added an excerpt from Mark 16:9-10 after the last
+lection on f. 248v; then "an early user, perhaps an owner", the anagnostes Ioannes, added the note, printed as
+Ἐγὼ Ἰωάννης ἀναγνώστης χεριτιζω (!) τὸν διδάσκαλόν μου· ἀρχιερέα· καὶ ἐξαδελφόν μου, the last word glossed "cousin
+or nephew"; "following this he has added a cryptographic note", transcribed ΑΒ· Β· Κ· Β· Γ Ι· Δ ΛΕ ΙΗ· Ϛ ζ: Ζ ΚΖ·
+Η ΙΕ Θ Δ ΙΚ Δ. ΙΑ· ΙΒ ΙΒ· Α ΙΓ ΚΑ· ΙΑ Θ ΙΕ ΚΘ ΙϚ ΙΖ· ΙΖ Ε ΙΗ. ΚΕ· ΙΘ ΙΓ. The text "appears to have been encoded using
+a numerical cryptographic system", "may be surmised to include the name of the dedicatee", and "is not, however,
+decipherable by any of the more common Greek cryptographic systems, and remains to be resolved". The record thus
+assigns the numerals to Ioannes; neither derivation examined that. On the crops the doubtful letter of count 14 has
+a triangular body (Α or Δ). As written, the values fall by 11 or 12 or rise by 20 from year to year; as dates they
+come 11 days earlier (once 12, between years 16 and 17) or 19 days later.
+
+## Remaining gaps
+
+None in the table: all 19 values are accounted for. Open: the letter shapes at counts 5, 14 and 18 (faint ink; the
+computus fixes the values), and the hand and date of the table relative to the note.
+
 ## Prior art
 
 CUDL record: "remains to be resolved". Web searches on 15 and 16 Nov 2026 found no published solution.

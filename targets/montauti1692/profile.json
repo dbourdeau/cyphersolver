@@ -141,7 +141,7 @@
   },
   {
    "id": "L25",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 25r",
    "date": "Firenze li [1?] Luglio/Agosto, no year",
    "year": "unknown",
@@ -175,7 +175,7 @@
   },
   {
    "id": "L26",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 26r-27r",
    "date": "Firenze li 11 d'Aprile 1693 (year probable)",
    "year": 1693,
@@ -209,7 +209,7 @@
   },
   {
    "id": "L28",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 28r-29v",
    "date": "Firenze li 25 d'Ottobre, no year",
    "year": "unknown",
@@ -345,7 +345,7 @@
   },
   {
    "id": "L56",
-   "read": "read",
+   "read": "not read",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 56r-57r",
    "date": "Firenze li 19 d'Ottobre, no year",
    "year": "unknown",
@@ -379,7 +379,7 @@
   },
   {
    "id": "L63",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 62r-63v",
    "date": "Firenze li 23 Settembre, no year",
    "year": "unknown",
@@ -413,7 +413,7 @@
   },
   {
    "id": "L70",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "University of Pennsylvania, Kislak Center, Ms. Codex 533, ff. 70r-72r",
    "date": "Pisa li 17 Gennaio 169[3] (last digit retraced in later ink; Florentine style)",
    "year": 1693,
@@ -739,7 +739,8 @@
    "what": "Recount by words after Daniel Bourdeau's review of PR #665 (readings/words_533_strict.tsv): of 87 cipher words in Cosimo's 35 runs, 30 sure, 42 with the context-only values; L01 9 of 16 and L70 0 of 1 sure, both now read in part.",
    "result": "partial"
   },
-  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 825 tokens, 40 types, it-modern order 4: reading -2.592 per letter; random keys -6.86 (z 6.0); key annealed onto shuffled ciphertext best -3.371 (mean -3.482, z 14.0); annealer on the real text -2.832. Verdict: pass.", "result": "worked"}
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 825 tokens, 40 types, it-modern order 4: reading -2.592 per letter; random keys -6.86 (z 6.0); key annealed onto shuffled ciphertext best -3.371 (mean -3.482, z 14.0); annealer on the real text -2.832. Verdict: pass.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["other"], "what": "Integration check of pull request #665 (15 and 16 Nov 2026). scripts/run_tests.py re-run: the eight recorded hashes match; key v1 on f. 15r 39 of 39 (shuffles at most 28.2%); key v2 on the held-out f. 21r 76 of 92 = 82.6% (200 shuffled keys at most 35.9%, mean 23.9%); as recorded. Images: Penn's Colenda manifest of Ms. Codex 533 answers and gives the rights statement NoC-US; crops of f. 1r (runs a-f, 69 groups) and f. 22r (run a, 28 groups) fetched from Penn's IIIF server and compared sign by sign with transcriptions/reconciled_533_v2.tsv: all 97 groups agree at 1900 px, one 6/0 place in 1r run c not safe at that size. A decoder written here from key_v3.json and the context values reproduces the letters of readings/runs_533.tsv for those runs and of the four bare passages (P1 273 of 296 groups on the key, P2 139 of 149, P3 50 of 55, P4 16 of 17). Word count: readings/words_533_strict.tsv recounted, 30 sure of 87 and 42 with the context-only values; the review of 15 Nov had counted 37 and 51 by admitting seven words with a supplied or replaced letter, which README Conventions counts as holes, so the contributor's lower figures stand. Reading reviews by the reviewer: L01, L21, L35 and P1 B; P2, P3, P4 A; L25, L26, L28, L56, L63 and L70 marked decoded, not read (isolated words, the clear sentence around them not transcribed). Credit role set to new cipher with solution. No earlier target, catalogue entry or lead uses this key. Not checked: Codex 534 (the interlines that give the key, and the held-out f. 21r) and the bare passages on the images, the other Codex 533 runs on the image. No person has checked any of it.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-11-15", "model": "it-modern", "file": "validation.tsv", "tokens": 825, "types": 40, "tokens_per_type": 20.62, "score": -2.592, "nulls": {"random keys": {"n": 200, "mean": -6.86, "sd": 0.706, "max": -5.244, "z": 6.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.482, "sd": 0.064, "max": -3.371, "z": 14.0, "p": 0.1429}}, "power": -2.832, "verdict": "pass", "notes": "claimed per-occurrence score -2.521; polyphony 0.016; 64 unread tokens left out; annealer on the real text from random keys reached -2.832"}, 
   "class": "read in part",
@@ -755,7 +756,7 @@
   "credits": [
    {
     "who": "ajbeling",
-    "role": "solution",
+    "role": "new cipher with solution",
     "date": "2026-11-14",
     "note": "Andrew Beling, with AI agents: System B key rebuilt from the Codex 534 interlines and tested on a held-out letter; Codex 533 transcribed twice and its 116 disagreements checked on the image (112 settled); first reading of Cosimo's cipher runs and of the bare 1694 passages. Reading with a key rebuilt from a period decipherment, not an independent solution. Checked by a second AI agent of ours (1r-1v), not by a person."
    },
@@ -782,9 +783,9 @@
     "note": "Sure words only (README Conventions): 9 of 16 cipher words (56.3%), word by word in readings/words_533_strict.tsv. Not sure: Palatino, ritornare, qua and marito rest on the context-only values ww = o and 62 = q; permission[e] on ww = o and a letter not written; l'El[e]ttor[e] and figl[i]a on a letter supplied or replaced by sense. With the context-only values 13 of 16. Daniel Bourdeau's review counts 11 of 16, admitting the two words with a supplied letter. Our earlier figure was 1.0: all 85 cipher groups read as words (two single-letter slips; letters on context-only values and emended digits marked in readings/letter_1r1v.md). The clear text has gaps and needs a palaeographer.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Read twice: by the working agent and by a second AI agent of ours that transcribed and read 1r-1v blind from the images first (frozen, readings/verify/); its corrections are applied. The second agent had seen a key file note naming some words. Not a person."
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "Cipher runs in the contributor's transcription of the clear text: the letter builds sentences (the Elector Palatine reports that the daughter had written for permission to return and to separate from her husband; Cosimo calls it calumny and asks Montauti to act), with the clear text full of doubt marks. The six runs of f. 1r (69 groups) were compared sign by sign with Penn's IIIF image on 15 Nov 2026: all agree at 1900 px, one 6/0 place in run c not safe at that size. A decoder written here from key/key_v3.json gives the same letters. By sure words 9 of 16, as the contributor now records. The clear text between the runs was not reviewed and needs a palaeographer. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    },
    {
@@ -817,13 +818,13 @@
     "summary": "Count ...(a name, not established); 'sono sodisfatti del Duca di Savoia' (they are satisfied with the Duke of Savoy).",
     "reading": "readings/L21_it.txt",
     "translation": "readings/L21_en.txt",
-    "read_share": 0.72,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
+    "read_share": 0.2,
+    "note": "Sure words only, from the contributor's readings/words_533_strict.tsv: 2 of 10 (del, duca); sono and Savoia rest on ww = o, sodisfatt[i] and d[i] on a supplied letter, 21v a gives four doubtful or unread words. The contributor's figure was 0.72: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "Run 22r a reads as a clause after the clear 'come': sono sodisfatt[i] del duca d[i] Savoia; its 28 groups were compared with Penn's IIIF image on 15 Nov 2026 and all agree. Run 21v a gives no word that is safe. Raw: one clause, the sentence around it is not transcribed. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    },
    {
@@ -831,57 +832,36 @@
     "label": "L25, Codex 533 ff. 25r, Firenze li [1?] Luglio/Agosto, no year",
     "transcription": "readings/L25_groups.txt",
     "decryption": "readings/L25_decode.txt",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "'costà' and 'additassi(?)'; two runs not read.",
     "reading": "readings/L25_it.txt",
     "translation": "readings/L25_en.txt",
-    "read_share": 0.54,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
-    }
+    "note": "Words by the contributor's strict list: 0 of 4 sure (costà on ww = o, additassi(?) doubtful, two runs unread). Integration review, 16 Nov 2026: marked decoded, not read, because no sentence is shown: the clear text around the runs is not transcribed, and a reviewer cannot read isolated words as a sentence. It can be read in part once the clear sentences of the leaf are transcribed around the runs. Filed as \"read in part\" with read_share 0.54 and the author's preliminary grade B. The contributor's note: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv."
    },
    {
     "doc": "L26",
     "label": "L26, Codex 533 ff. 26r-27r, Firenze li 11 d'Aprile 1693 (year probable)",
     "transcription": "readings/L26_groups.txt",
     "decryption": "readings/L26_decode.txt",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "'servivi...', 'relatione del' followed by eight code-like groups in another table, 'havrà ... con l...'.",
     "reading": "readings/L26_it.txt",
     "translation": "readings/L26_en.txt",
-    "read_share": 0.34,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
-    }
+    "note": "Words by the contributor's strict list: 4 of 18 sure (del, et, havrà, con); relation[e] has a supplied letter, thirteen words are unread, eight of them the block of probable code numbers. Integration review, 16 Nov 2026: marked decoded, not read, because no sentence is shown: the clear text around the runs is not transcribed, and a reviewer cannot read isolated words as a sentence. It can be read in part once the clear sentences of the leaf are transcribed around the runs. Filed as \"read in part\" with read_share 0.34 and the author's preliminary grade B. The contributor's note: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv."
    },
    {
     "doc": "L28",
     "label": "L28, Codex 533 ff. 28r-29v, Firenze li 25 d'Ottobre, no year",
     "transcription": "readings/L28_groups.txt",
     "decryption": "readings/L28_decode.txt",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "'[mia?] figliola', 'corte', 'toscani': Cosimo's daughter and the Tuscans at her court.",
     "reading": "readings/L28_it.txt",
     "translation": "readings/L28_en.txt",
-    "read_share": 0.57,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
-    }
+    "note": "Words by the contributor's strict list: 1 of 5 sure (figliola); corte and toscani rest on ww = o, [mia?] is a guess, one run unread. Integration review, 16 Nov 2026: marked decoded, not read, because no sentence is shown: the clear text around the runs is not transcribed, and a reviewer cannot read isolated words as a sentence. It can be read in part once the clear sentences of the leaf are transcribed around the runs. Filed as \"read in part\" with read_share 0.57 and the author's preliminary grade B. The contributor's note: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv."
    },
    {
     "doc": "L35",
@@ -893,13 +873,13 @@
     "summary": "'fussi disgustato del [..] della corte'; 'per mezo della donna(?) di camera favorita della [14]': through the favourite lady of the bedchamber.",
     "reading": "readings/L35_it.txt",
     "translation": "readings/L35_en.txt",
-    "read_share": 0.73,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
+    "read_share": 0.4,
+    "note": "Sure words only, from the contributor's readings/words_533_strict.tsv: 6 of 15. The contributor's figure was 0.73: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "Two clauses stand with their clear words: 'V.S. fussi disgustat[o] del [...] della corte' and 'se per mezo [d]ell[a] d[o]n[n]a(?) di camera favorita dell[a] [14]'; the translation follows them. Raw: supplied letters, one conjecture (donna), a code number and an unread word; 35v b does not read. Not compared with the image by the reviewer. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    },
    {
@@ -927,57 +907,36 @@
     "label": "L56, Codex 533 ff. 56r-57r, Firenze li 19 d'Ottobre, no year",
     "transcription": "readings/L56_groups.txt",
     "decryption": "readings/L56_decode.txt",
-    "state": "read",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "'mia figlia'; 'viaggio a Dusseldorf': a journey to Düsseldorf.",
     "reading": "readings/L56_it.txt",
     "translation": "readings/L56_en.txt",
-    "read_share": 1.0,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
-    }
+    "note": "All three cipher words are sure (mia figlia; Dusseldorf), every letter from the frozen key. Integration review, 16 Nov 2026: marked decoded, not read, because no sentence is shown: the clear text around the runs is not transcribed, and a reviewer cannot read isolated words as a sentence. It can be read in part once the clear sentences of the leaf are transcribed around the runs. Filed as \"read\" with read_share 1.0 and the author's preliminary grade B. The contributor's note: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv."
    },
    {
     "doc": "L63",
     "label": "L63, Codex 533 ff. 62r-63v, Firenze li 23 Settembre, no year",
     "transcription": "readings/L63_groups.txt",
     "decryption": "readings/L63_decode.txt",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "'li tempi', 'qualche facilità', 'ultimo(?)'.",
     "reading": "readings/L63_it.txt",
     "translation": "readings/L63_en.txt",
-    "read_share": 0.87,
-    "note": "Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
-    }
+    "note": "Words by the contributor's strict list: 3 of 6 sure (li tempi, facilità); qualche rests on 62 = q, ult[i]mo(?) is doubtful, one word unread. Integration review, 16 Nov 2026: marked decoded, not read, because no sentence is shown: the clear text around the runs is not transcribed, and a reviewer cannot read isolated words as a sentence. It can be read in part once the clear sentences of the leaf are transcribed around the runs. Filed as \"read in part\" with read_share 0.87 and the author's preliminary grade B. The contributor's note: Share of cipher groups in runs that read as Italian words; an estimate from readings/runs_533.tsv."
    },
    {
     "doc": "L70",
     "label": "L70, Codex 533 ff. 70r-72r, Pisa li 17 Gennaio 169[3] (last digit retraced in later ink; Florentine style)",
     "transcription": "readings/L70_groups.txt",
     "decryption": "readings/L70_decode.txt",
-    "state": "read in part",
+    "state": "decoded, not read",
     "language": "it",
     "summary": "'agosto'.",
     "reading": "readings/L70_it.txt",
     "translation": "readings/L70_en.txt",
-    "read_share": 0.0,
-    "note": "Sure words only (README Conventions): 0 of 1; the one cipher word, agosto, rests on the context-only value ww = o (readings/words_533_strict.tsv). Our earlier figure was 1.0, an estimate from readings/runs_533.tsv.",
-    "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Cipher runs decoded with frozen key v3 (plus the two context values, marked) on the second reconciled transcription and read as Italian words next to the clear text; holes kept; the surrounding clear text is not transcribed, so most runs are phrases, not sentences."
-    }
+    "note": "The one cipher word, agosto, rests on the context-only value ww = o (0 of 1 sure). Integration review, 16 Nov 2026: marked decoded, not read, because no sentence is shown: the clear text around the runs is not transcribed, and a reviewer cannot read isolated words as a sentence. It can be read in part once the clear sentences of the leaf are transcribed around the runs. Filed as \"read in part\" with read_share 0.0 and the author's preliminary grade B. The contributor's note: Sure words only (README Conventions): 0 of 1; the one cipher word, agosto, rests on the context-only value ww = o (readings/words_533_strict.tsv). Our earlier figure was 1.0, an estimate from readings/runs_533.tsv."
    },
    {
     "doc": "P1",
@@ -993,9 +952,9 @@
     "note": "Read-as-Italian share is the reading agent's estimate (bare/bare_passages.md); code numbers unread.",
     "reading_review": {
      "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Decoded with key v2 (plus w6 = i and ww = o by context) and read as sentences with the clear text around each run; code numbers left as holes; one reading pass."
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "Sentences with many holes: Grimani's commissions at the court, the Savoy marriage, the bishopric of Liège and the Elector of Cologne come through and the translation follows; four lines are only partly read and seven code numbers are open. Decoded here with a decoder written from key/key_v3.json and the two context values: the same letters. The transcription of this passage was not compared with the image by the reviewer (Codex 534 and 531 were not opened); one reading pass by one of the contributor's agents. The read_share is the contributor's estimate, not a count. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    },
    {
@@ -1011,10 +970,10 @@
     "read_share": 0.95,
     "note": "Read-as-Italian share is the reading agent's estimate (bare/bare_passages.md); code numbers unread.",
     "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Decoded with key v2 (plus w6 = i and ww = o by context) and read as sentences with the clear text around each run; code numbers left as holes; one reading pass."
+     "grade": "A",
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "One long sentence, coherent in Italian and in the translation; open only the code numbers (110, 90, w0, 30, 104, 6, 39). Decoded here with a decoder written from key/key_v3.json and the two context values: the same letters. The transcription of this passage was not compared with the image by the reviewer (Codex 534 and 531 were not opened); one reading pass by one of the contributor's agents. The read_share is the contributor's estimate, not a count. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    },
    {
@@ -1030,10 +989,10 @@
     "read_share": 0.9,
     "note": "Read-as-Italian share is the reading agent's estimate (bare/bare_passages.md); code numbers unread.",
     "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Decoded with key v2 (plus w6 = i and ww = o by context) and read as sentences with the clear text around each run; code numbers left as holes; one reading pass."
+     "grade": "A",
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "One sentence, coherent; open the code numbers 27 and 116 and one supplied [A']. Decoded here with a decoder written from key/key_v3.json and the two context values: the same letters. The transcription of this passage was not compared with the image by the reviewer (Codex 534 and 531 were not opened); one reading pass by one of the contributor's agents. The read_share is the contributor's estimate, not a count. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    },
    {
@@ -1049,10 +1008,10 @@
     "read_share": 0.94,
     "note": "Read-as-Italian share is the reading agent's estimate (bare/bare_passages.md); code numbers unread.",
     "reading_review": {
-     "grade": "B",
-     "by": "Author's agents (Andrew Beling, with AI agents)",
-     "date": "2026-11-14",
-     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (not a person, not an outside check). Decoded with key v2 (plus w6 = i and ww = o by context) and read as sentences with the clear text around each run; code numbers left as holes; one reading pass."
+     "grade": "A",
+     "by": "integration review of PR #665 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "One sentence, coherent; open the code number 10. Decoded here with a decoder written from key/key_v3.json and the two context values: the same letters. The transcription of this passage was not compared with the image by the reviewer (Codex 534 and 531 were not opened); one reading pass by one of the contributor's agents. The read_share is the contributor's estimate, not a count. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (B, 14 Nov 2026). A model's reading: no person has checked it."
     }
    }
   ],

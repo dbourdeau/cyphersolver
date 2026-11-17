@@ -815,6 +815,68 @@
         "image_quality": "good",
         "notes": "Blind transcription frozen by SHA-256 before any key was tried. 11 one-glyph corrections (J for I x3, Y for V x2, E for F, I for L, G for C, G for Q, C for Q, T for F). See dudout/README.md."
       }
+    },
+    {
+      "id": "v196-0056-levy",
+      "read": "read",
+      "shelfmark": "NARA RG 109 ch. II vol. 196 (naId 45485022), frame 0056, MS p. 107, lower telegram",
+      "date": "9 March 1865",
+      "year": 1865,
+      "country": "Confederate States",
+      "route": "Meridian -> Montgomery",
+      "language": "English",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Not printed in OR I/49/1 (p. 1042 prints the clear telegram on the same frame) or I/49/2, by the contributor's search; not re-searched at integration."
+      },
+      "length": {
+        "tokens": 109,
+        "distinct": 25,
+        "unit": "letters",
+        "measured": true,
+        "file": "v196-0056-levy_cipher.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "https://catalog.archives.gov/id/45485022",
+        "image_quality": "fair",
+        "notes": "Four blind AI transcriptions (readers A1, A2, a verifier and a helper; blind_2026-11-15/). The cipher file gives the letters as the reading takes them; JJMVP is as on the image (GUAGE would need IIMVP). Not checked by a person."
+      }
+    },
+    {
+      "id": "v11-0046b-maury",
+      "read": "read in part",
+      "shelfmark": "NARA RG 109 ch. II vol. 11 (naId 12127054), frame 0046, MS p. 88, left page, lower telegram",
+      "date": "11 April 1865",
+      "year": 1865,
+      "country": "Confederate States",
+      "route": "Meridian -> Mobile",
+      "language": "English",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Not printed in OR I/49/2 (pp. 1223-1226 print clear telegrams of 10-11 April), by the contributor's search; not re-searched at integration."
+      },
+      "length": {
+        "tokens": 107,
+        "distinct": 25,
+        "unit": "letters",
+        "measured": true,
+        "file": "v11-0046b-maury_cipher.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "https://catalog.archives.gov/medialive/54/1270/12127054/content/arcmedia/dc-metro/596501-confederate-record-books/chapter-02-volume-011/rg-109-chapter-2-volume-11-0046.jpg",
+        "image_quality": "fair",
+        "notes": "Four blind AI transcriptions (B1, B2, helpers A and B). The cipher file gives the letters as the reading takes them from the image: F at letters 12, 16, 34, 64, 76, 81 (the clerk's E without the lower-right tick; the two later blind helpers read all six as E), T at letter 20 (WILL would need J) and Q at letter 77 (CLOCK would need C). Not checked by a person."
+      }
     }
   ],
   "system": {
@@ -1221,6 +1283,17 @@
       "kind": "literature search",
       "what": "RALLY TO THE FRONT as a Confederate key or watchword: not in this folder, the repository, OR I/49 pts. 1-2, Friedman's Lecture No. 4 and Introduction to Cryptology IV (keys COMPLETE VICTORY, MANCHESTER BLUFF, COME RETRIBUTION, IN GOD WE TRUST), Plum (1882) vols. 1-2, Bates (1907) or an Internet Archive full-text search. Not opened: Gaddy's chapter in Masked Dispatches (download refused), Kahn's The Codebreakers, Gaddy's Cryptologia articles. The key on every other cipher stream of the folder at all phases: no English.",
       "result": "failed"
+    },
+    {
+      "date": "2026-11-15",
+      "kind": "verification",
+      "technique": [
+        "hill climbing",
+        "language-model scoring",
+        "statistical test"
+      ],
+      "what": "Integration check of PR #676 (r20). RALLYTOTHEFRONT applied with a separate decoder to the filed letters and to each of the four blind transcriptions of the 11 April lower telegram: against the plaintext given, 1 letter differs on the filed letters (20), 6 on B1, 9 on B2, 12 on helper A, 11 on helper B; 15 places in all, of which five have no reader's first choice (20, 34, 64, 76, 77). NARA frame 0046 fetched again (sha256 d458c966..., as recorded): the six F the key needs lack the tick of the clerk's E; letter 20 is T; letter 77 is not settled; pencil 15s are visible. Own control with the shared English quadgram model: the fixed key on the two later blind transcriptions scores -3.66 and -3.71 per letter, the filed letters -2.25, against -4.10 for the best of 40 shuffles each hill-climbed over all 15-letter keys (median -4.44); an own short hill-climb recovers ...YTOTHEFRONT on B2 and ...TOTHEFRON. on B1. The contributor's frozen word test stays a miss (11 of 22 against 15). Levy telegram decrypted again with COMPLETE VICTORY: same words. The contributor's run_verify.py was not re-run (it needs /usr/share/dict/words, absent here); its printed plaintexts equal ours. Web and Internet Archive search for the phrase as a key: nothing found.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -1241,7 +1314,7 @@
       "historical consistency"
     ],
     "provenance": "contributed",
-    "notes": "23 documented telegrams, with different reading states and explicit raw/reconstructed distinctions. Includes existing printed and pencil decipherments, known-key contextual readings and earlier key recovery from external plaintext. New November 9 work covers seven further messages; see REPORT-2026-11-09.md and WORKLOG.md. March 8–9 recipient-specific evidence does not establish a universal key switch. Overall fraction unknown: remaining passages across three volumes are not exhaustively inventoried. No complete-target or novel-plaintext claim; model reviews are not independent handwriting verification.",
+    "notes": "23 documented telegrams, with different reading states and explicit raw/reconstructed distinctions. Includes existing printed and pencil decipherments, known-key contextual readings and earlier key recovery from external plaintext. New November 9 work covers seven further messages; see REPORT-2026-11-09.md and WORKLOG.md. March 8\u20139 recipient-specific evidence does not establish a universal key switch. Overall fraction unknown: remaining passages across three volumes are not exhaustively inventoried. No complete-target or novel-plaintext claim; model reviews are not independent handwriting verification. 15 Nov 2026 (PR #676): two further telegrams entered; the 11 April lower telegram uses a fifth key, RALLY TO THE FRONT, recovered from the ciphertext alone (method for that document: key recovered from ciphertext-only), not found in any key list opened.",
     "gaps": [
       {
         "item": "Remaining passages in all three volumes",
@@ -1353,6 +1426,27 @@
         "note": "vol. 196 fr. 0030 and 0031-0032 (21 Feb 1865) read; blind transcription, pre-registered measure (the Maury telegram failed it at offset 0), post hoc key break; order of events by the contributor's record",
         "date": "2026-11-12",
         "source": "https://github.com/dbourdeau/cyphersolver/pull/438"
+      },
+      {
+        "who": "ajbeling",
+        "role": "solution",
+        "date": "2026-11-15",
+        "note": "11 April 1865 lower telegram on vol. 11 fr. 0046: key RALLY TO THE FRONT recovered from the ciphertext by hill-climbing (with AI agents); 9 March 1865 telegram to Levy decrypted with COMPLETE VICTORY; 11 April upper telegram in part",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/676"
+      },
+      {
+        "who": "ajbeling",
+        "role": "transcription",
+        "date": "2026-11-15",
+        "note": "open frames of entry 681 transcribed twice blind by AI readers (1230 of 1317 letters agree); frozen test of the four known keys",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/676"
+      },
+      {
+        "who": "ajbeling",
+        "role": "verification",
+        "date": "2026-11-15",
+        "note": "the provisional readings of PR #388 (8, 9, 13, 17 March, 10 April, 18 January) come out with the same keys on the blind transcriptions; order of events by the contributor's record",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/676"
       }
     ],
     "texts": [
@@ -1792,6 +1886,42 @@
           "by": "Claude (Anthropic) model review for Brice Dudout; not an independent human review",
           "date": "2026-11-12",
           "note": "Reread as sentences with the printed clear parts (OR I/49/1 p. 1003): continuous English, every cipher word fits."
+        }
+      },
+      {
+        "doc": "v196-0056-levy",
+        "label": "9 Mar 1865, Bullock for Taylor to Lt. Col. Wm. M. Levy: the Mobile and Montgomery cars to go on trucks to the wide gauge at Columbus, Ga.",
+        "transcription": "v196-0056-levy_transcription.txt",
+        "decryption": "v196-0056-levy_decryption.txt",
+        "reading": "v196-0056-levy_reading.md",
+        "language": "en",
+        "state": "read",
+        "read_share": 0.952,
+        "summary": "Taylor understands there are 155 cars on the Mobile and Montgomery railroad; those not needed daily should go on trucks to the wide gauge at Columbus, Georgia; Levy is to confer confidentially with the superintendent; it might be done under pretense of assisting roads in Georgia.",
+        "note": "COMPLETE VICTORY from the first cipher letter. Counted in cipher words: 20 of 21; GUAGE is a hole (the image has J twice where I is needed). COLUMBUS takes F where two of four readers read E. v196-0056-levy_read_measure.txt. Decrypted again at integration with a separate decoder: same words.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Claude (Anthropic) model review for the maintainers at integration of PR #676; not an independent human review",
+          "date": "2026-11-15",
+          "note": "Reread as sentences with the clear words of the letter book: continuous English, one hole (GUAGE); agrees with the same day's telegram to D. W. Adams."
+        }
+      },
+      {
+        "doc": "v11-0046b-maury",
+        "label": "11 Apr 1865, Surget to Maury: how long Mobile will be held; the running of the trains (key RALLY TO THE FRONT).",
+        "transcription": "v11-0046b-maury_transcription.txt",
+        "decryption": "v11-0046b-maury_decryption.txt",
+        "reading": "v11-0046b-maury_reading.md",
+        "language": "en",
+        "state": "read in part",
+        "read_share": 0.913,
+        "summary": "Surget asks Maury exactly how long he will hold Mobile, as the running of the trains depends on it; if he can hold on until nine o'clock tomorrow, four or five additional trains can be there.",
+        "note": "Key RALLYTOTHEFRONT, recovered from the ciphertext alone by hill-climbing (not in any key list opened), standard Vigenere from the first cipher letter. Strict count at integration: 23 words in 22 groups, 21 sure; WILL (letter 20 is T on the image, J needed) and CLOCK (letter 77, read Q by all four readers, C needed) are holes; the contributor counts one hole (22 of 23). The contributor's frozen word test on two new blind transcriptions missed its mark (11 of 22 groups against 15; controls at most 5): recorded as failed. v11-0046b-maury_read_measure.txt.",
+        "reading_review": {
+          "grade": "A",
+          "by": "Daniel Bourdeau, on enlarged crops of NARA frame 0046, after a model review at integration of PR #676",
+          "date": "2026-11-15",
+          "note": "Model review: reread as sentences with the clear words, two continuous English sentences that fit the evacuation of Mobile on the night of 11 April; two holes. Check by a person, 15 Nov 2026: Daniel Bourdeau looked at eight boxed words cut from the frame (review_2026-11-15/taylor1865_review_sheet.jpg, cut from NARA frame 0046, public domain) and agrees with the model reviewer letter by letter: F, not E, in QFBT, RFU, CFLGWGN, FLMWE, PEFQV and EMFCKYSB (no lower-right tick, against the ticked E beside them; FLMWE less sure, ink specks under the letter); V, not Y, at letter 1 (no descender); T at letter 20, so WILL stays a hole; Q at letter 77 (the tail is a blot in darker ink; C possible, not read), so CLOCK stays a hole; letter 7 at the gutter not settled (M or N). Not a blind check: he saw the model's letter-by-letter reading and what the key needs before answering."
         }
       }
     ],

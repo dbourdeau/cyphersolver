@@ -2,6 +2,8 @@
 
 Status: doc 620 (27 Oct 1513) decoded, not read: 74.7% of letter units read as sense (strict judge, first pass of record, above our own 65% line) but only 3 of 16 sentences clean by docs/_check_reading.py, so it is filed as decoded, not read; doc 623 (16 Nov 1513) decoded, not read, 55.4% strict; doc 633 (April 1514, a copy) decoded, not read: 74.2% strict (457/616) but 1 of 13 sentences clean by docs/_check_reading.py (0.077). Contributed, not yet written up.
 
+Status: in progress
+
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic).
 
 Giovanni Corsi was the Florentine orator at the court of Ferdinand the Catholic [stated: the contributor]. Catalogue entry 2391 covers Corsi's cipher letters to Lorenzo de' Medici in MAP CXXXVII. This folder holds three of them. The key comes from a fourth (doc 627), which carries a decipherment written at the foot of the page at the time.
@@ -159,21 +161,36 @@ Derived here (16 Nov): `transcription_620.txt`, `transcription_623.txt`, `decryp
 - Model sessions did all the work: key, transcription, judge and translation. No person read the signs or the text without AI.
 - One blind transcription per letter. No second reader, and no check of doubtful signs on the images after the decode.
 - The judge was a model session, scoring sense by its own lights. E and N calls are its own.
-- The key rests on the decipherment of doc 627. That decipherment is not transcribed in this folder, and 627 was not decoded as a control in this pipeline.
+- The key rests on the decipherment of doc 627 (c. 635r, IIIF A0001353). Since 16 Nov it is in `doc627/`: the image id and md5, the decipherment as written, the 10 Nov cipher-block transcription and the frozen key's decode of it. That transcription is not blind and the key was built from it, so it documents the source but is not a control. Catalogue 2391's 6 Nov vetting note (no decipherment on any leaf) missed it because it sits at the foot of the page, below the signature, not between the lines or in the margin.
+
+## Integration check (16 Nov 2026)
+
+Verified for the maintainer before merging PR #698 (Malcolm McBratney), which answers the blocking point of the review of PR #685. A model session did these checks; no person has checked them.
+
+- **Image reached.** The ASF image server answered from the review host this time: `A0001353` at 1600 px, md5 `d54b593af4bf28749aed6947433988a8`, the same file as the contributor's fetch.
+- **The decipherment is on the page.** Below Corsi's signature, five lines in a different hand, as `doc627/decipherment_627.txt` says. Read here by eye, the five lines agree with that file word for word, including the struck "dello" in line 3 and the doubtful "Intado" in line 2 (the image is consistent with "Intado"; "Intendo" is not excluded). So the source of the key exists. The method "key recovered based on adjacent plaintext" (a deciphered letter in the same file) and the credit to the contemporary hand stand. Catalogue 2391's 6 Nov vetting ("no interlinear or marginal decipherment on any leaf") was wrong for 627; the entry's status and vetting note still say so, a correction for the maintainer.
+- **Cipher block against the image.** About 150 groups compared by eye at 1600 px (lines 1, 3, 4 and 5 in full, line 2 in part): the identity and order of the signs agree. A handful of superscripts and doubtful shapes read differently here (line 2 "y1" looks like y3; line 3 the last group looks like c7 b, not c7 K1; line 4 "b" near the end looks like k). These are the places the transcription already marks or that the key does not use for the decipherment's sense.
+- **Decodes reproduced.** A decoder written for the check from `key_corsi_w17_frozen.json` gives `doc627/decode_627_w17.txt` on 5 of 5 lines, and the blind control's `decode_once.txt` exactly (155 valued, 14 numbers, 15 holes, 4 nulls). The key, `BLIND.tsv` and `LABELS_TO_KEY.tsv` hash as stated. `judge_count.py` re-adds to 203/262 = 77.5% strict and 203/228 = 89.0%.
+- **Control.** The contributor's dictionary-cover shuffle cannot be rerun (its word list is not in the repository). With the shared model `it-cinquecento`, letters only, 2,000 shuffles of the bare, base and vowel tables: real -2.747 per letter, best shuffle -3.154, 0 of 2,000 as good.
+- **What the blind control is.** The blindness of the 627 reader rests on the contributor's record (the packet, the freeze time 08:04:55Z). Its target is the decipherment as transcribed by the contributor's session after the key existed. Both the decode and the decipherment come from the same page the key was built from, so it is not an independent test, as the files say.
+- **Doc 622.** Image `A0001335` (c. 630r): headed "Copia di l[ette]ra delli xvi di 9[bre?] ...". Its clear text follows 623's (c. 631r, `A0001339`) from the first line: the last letters of the 27th of the past month, the departure from Valladolid on 26 September, the "gran victoria" against the Venetians on the 7th of the past month, Jerusalem, "lo spinaro di Segobia", don Carlo and Madama Margherita, read by eye in the two hands. So 622 is a copy of 623 (16 Nov 1513), not of a letter of 29 Jan 1514. The catalogue's shelfmark and folio note still say 29 Jan 1514: a correction for the maintainer (no checker command edits an existing entry).
+- **Small asks of the #685 review.** `Status: in progress` is in the first lines of this file. The #685 description is out of date as the PR says; its merged files carry all three letters.
+- **Checkers.** `_check_profile.py corsi1513`: valid. The reading check: ok. `_check_reading.py`: three "decoded, not read", as filed. `_check_terms.py`: 0 hits. `_check_writeup.py --gate`: 0 new violations. `_check_catalogue.py`: valid.
+- **Catalogue 2391, still to correct.** The status ("bare ... no filed decipherment beside any of them"), `vetting.seen.cipher` ("No interlinear or marginal decipherment on any leaf") and, for 622, the shelfmark and folio note ("copy of a letter of 29 Jan 1514"). Verdict open is unchanged: 620, 621, 622, 623, 628 and 633 carry no decipherment.
 
 ## Remaining gaps
 
-- Doc 627 as a control (blind transcription and one decode, against its decipherment on the page) has not been run. Blocker: not-attempted.
+- Doc 627 blind control run 16 Nov (doc627/blind_control/): 77.5% strict, 89.0% of decoded letters against the page's decipherment. Not independent, since the key was built from this page. The codes #23 and #70 were misread by the blind reader; the decipherment word 'Intado[?]' may be 'Intendo'. Blocker: none for the control; an independent test still needs a second keyed letter with its own decipherment.
 - The prior-art sheet (Google Books / HathiTrust phrases, MAP inventory vol. 4, Spanish-side editions, DECODE) is not yet searched. Blocker: not-attempted. Needs Malcolm for the HathiTrust and Google Books phrases.
 - The code values 27 (re di Scotia?) and 24 (Inghilterra?) in 623 are unverified. The basis for 22 (Francia) is not recorded in the key note, and #161 in 623 has no value. Blocker: open-codes.
 - "dunhtare" occurs twice in 623 (dubitare?, with nh for bi), and "coiono" and "coioborato" occur in 620 (rr written as i?). Repeated misreadings like these point to a key value or sign-label error, not a slip. Blocker: not-attempted. To check on the images against the key.
 - By `docs/_check_reading.py`, reading_620.md is "not a reading" (3 of 16 sentences clean), and reading_633.md 1 of 13, so the target is classed "not read" (outcome.class), with the key method unchanged. Blocker: not-attempted. It would be settled by fixing the key or label errors above, then a new frozen pass.
 - Doc 633: the shapes NEW1 (a flat 2-like sign, frequent) and NEW2 and the bare sign z have no key value, and superscript attribution was the blind reader's hardest point. 21 of 95 N units are holes. Blocker: not-attempted. To check against doc 627's decipherment and the images, then a new frozen pass.
-- Copies 621, 622 and 628 are not collated. 621 gives clear equivalents for part of 620, and 622 is a copy of 623. Blocker: not-attempted.
+- Copies 621, 622 and 628 are not collated. 621 gives clear equivalents for part of 620. 622 repeats at least one cipher block of 623 (one block compared, 10 Nov: "tra 51 et 52"); the catalogue called 622 a copy of a letter of 29 Jan 1514. The integration check of 16 Nov (below) found the clear text of 622 following 623's from its first line, so 622 is taken as a copy of 623; its cipher has still not been collated sign by sign. Blocker: not-attempted.
 
 ## Escalation
 
-- [ ] siblings: 633 done (decoded, not read, 74.2% strict); 627 control not run; copies 621, 622, 628 not collated
+- [ ] siblings: 633 done (decoded, not read, 74.2% strict); 627 source documented and blind control run (doc627/, 77.5% strict); copies 621, 622, 628 not collated
 - [x] clear-pages: versos A0001330 and A0001342 seen by the blind reader. Clear closings, dates and addresses; no decipherment on 620 or 623
 - [x] known-keys: compared with pandolfini1514 (the same family, a different table); the key comes from doc 627's contemporary decipherment
 - [ ] print: Desjardins II checked (clear extracts only); MAP inventory vol. 4, Spanish-side editions, Google Books / HathiTrust not reached

@@ -1,0 +1,400 @@
+{
+ "903": {
+  "verdict": "duplicate",
+  "confidence": "high",
+  "note": "This is a bundle lead whose items have since been entered one by one. Earlier passes (vetting_2026-10 out_17, vetting_2026-11 out_b57 and out_t08, vetting_2026-11-04 vet_arch13) read the Green calendar text and located the real items. Each is now its own record: CSP Dom. Eliz. 1591-94 item 18 (Saint Main [Sterrell] to Fitzherbert, 19 Jan 1593) is catalogue 956; item 75 ('Written by J. to A.', Barnes to Paget, draft by Phelippes) is lead 957; the Andrada advertisement (no. 68, 5 Mar 1591) is lead 1007. No 'Allen letter of 28 Jan' and no 'Wicham/Sterrell to Derick, 1 June' appear under those names in the volume. The bundle's dates (1594) are wrong; the located items date from 1591 and 1593.",
+  "access": "archive",
+  "access_note": "TNA SP 12 (State Papers Online, Gale subscription, not used). The calendar is on archive.org (calendarofstatep03greauoft).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The printed calendar only: CSP Domestic Elizabeth 1591-94 (Green 1867), archive.org calendarofstatep03greauoft, full text read by the 4 Nov and 9 Nov passes (records in research/vetting_2026-11-04/vet_arch13.json and research/vetting_2026-11/out_t08.json). This pass compared those findings with catalogue.json and research/leads.json and did not re-read the calendar.",
+    "extent": "Three calendar items of 2-3 pp. each, as located by the earlier passes: item 18 (19 Jan 1593), item 75 (14 Mar 1593) and item 79 (16 Aug 1593, Harington? to Baxter), plus the Andrada no. 68 (5 Mar 1591). None of them matches the three items as the bundle names them.",
+    "cipher": "Green's notes: item 18 'italics are in cipher, undeciphered'; item 75 'The italics are in cipher, undeciphered; the passages marked by asterisks have proved undecipherable'; item 79 'asterisks represent passages as yet undeciphered'; no. 68 'a few words in cipher, undeciphered'. Each is a Phelippes draft that prints his partial decipherment."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Sterrell', 'Saint Main' and 'Barnes' (16 Nov 2026) hits catalogue 956 (Saint Main to Fitzherbert, item 18) and research/ia_pass2_a/README.md. That README notes that Saint Main, Bristowe, Barnes, Wicham, Allen and Mak were all taken in pass 1 of the calendar sweep. No DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Phelippes, Sterrell, Paget and SP 12. The two Phelippes hits are SP 53/16 nos. 78-79 (1585, letters to Tempest and Barret endorsed by Phelippes), which are unrelated; nothing else matched.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for Phelippes, Sterrell and Paget. The single Paget hit is a 1714 Genoa letter, which is unrelated; nothing on these calendar items.",
+    "edition": "Green's calendar (1867) prints English abstracts with Phelippes's partial decipherment and marks the undeciphered passages. No fuller edition is known.",
+    "literature": "Earlier passes ran web searches on Saint Main, Sterrell, Fitzherbert and Phelippes (29 Oct 2026) and found nothing specific. No further search was made this pass, since the decision rests on the duplicate records."
+   },
+   "key_check": "No Sterrell, Barnes or Paget key is held in the repo. Catalogue 956 records that other 'deciphered by Phelippes' items could supply one.",
+   "duplicates": "Item 18 duplicates catalogue 956 (vetted open). Item 75 duplicates lead 957. The Andrada no. 68 duplicates lead 1007. Item 79 (Harington? to Baxter, 16 Aug 1593) has no record of its own as far as a search of leads.json and catalogue.json for 'Baxter' shows: it could be split off as a new lead if wanted.",
+   "verdict": "duplicate",
+   "closed": "The bundle's real calendar items are already held as catalogue 956 and leads 957 and 1007. Its two remaining named items (an Allen letter of 28 Jan and Wicham/Sterrell to Derick of 1 June) do not exist in the volume under those names."
+  }
+ },
+ "1128": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "The editor's description, re-read in the archive.org full text on 16 Nov 2026, Klinckowström, Le comte de Fersen et la cour de France I (1877), p. 155 note to no. CXXXVII: the Empress's extract 'est ajouté comme apostille à la lettre en chiffre (non déchiffrée) du roi de Suède Gustave III au comte de Fersen, datée de Stockholm, le 28 février 1792'. The edition marks other Gustav III letters 'd'après la lettre originale, déchiffrée dans les papiers du comte de Fersen', so 'non déchiffrée' means no decipherment was found with this one. Fersen surely read it in 1792, and his diary or Proschwitz's 1986 edition of Gustav III's letters may give its sense. Neither could be checked, hence medium confidence. Note: the editor's note sits on p. 155, not p. 156.",
+  "access": "archive",
+  "access_note": "Riksarkivet, Fersen papers (Stafsundsarkivet), as used by Klinckowström; not known to be online. Needs a Riksarkivet finding aid or image, and Proschwitz, Gustave III par ses lettres (1986).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The original is not online. The editor's description was read in Klinckowström, Le comte de Fersen et la cour de France, vol. I (Paris 1877), archive.org lecomtedefersen01klingoog, djvu full text downloaded 16 Nov 2026: footnote to no. CXXXVII (Extrait d'une lettre de l'Impératrice de Russie au roi de Suède), pp. 155-156.",
+    "extent": "One letter in cipher of Gustav III to Fersen, Stockholm, 28 Feb 1792. Its length is not stated. The postscript, an extract of a letter from Catherine II, is printed by the editor in clear.",
+    "cipher": "Editor: 'Cet extrait est ajouté comme apostille à la lettre en chiffre (non déchiffrée) du roi de Suède Gustave III au comte de Fersen, datée de Stockholm, le 28 février 1792'. The same edition prints other letters 'd'après la lettre originale, déchiffrée dans les papiers du comte de Fersen', which shows that Fersen's papers normally carry his decipherments and that this letter has none."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Fersen' and 'Klinckow' (16 Nov 2026) finds only this lead, research/archive_sweep_2026-10/access_uncertain.md, and unrelated mentions (a Fersen name code in targets/duben1764, Marie-Antoinette search noise). No DECODE record for a Gustav III to Fersen letter. The Uppsala Gustav III cipher material on DECODE (F 474, R5156-R5168, 'green portfolio with chiffre-klaver') is noted in research/scandinavia/README.md.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Fersen and Gustav, with no hit.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for Fersen and Gustav. The single Gustav hit concerns Gustavus Adolphus and the Palatinate negotiations of 1624-25, which is unrelated.",
+    "edition": "Klinckowström prints only the clear postscript and states that the cipher letter is not deciphered. Proschwitz, Gustave III par ses lettres (1986), and Söderhjelm's edition of Fersen's diary (1925) might print or summarise the letter; neither is online and neither was checked.",
+    "literature": "A web search (Gustave III lettre à Fersen 28 février 1792 chiffre, 16 Nov 2026) found Fersen's Diary and Correspondence (English edition), Munro Price's 1999 article on Louis XVI and Gustav III's secret diplomacy, and the Proschwitz and Söderhjelm editions as references. None mentions a decipherment of this letter."
+   },
+   "key_check": "No Gustav III-Fersen key is held in the repo. The Uppsala DECODE records F 474 (R5156-R5168, Gustav III's chiffre-klaver) and the deciphered Gustav III letters among Fersen's papers would be the places to look; none was tested.",
+   "duplicates": "No other lead or catalogue entry covers this letter (known.py on Fersen and Klinckowström; a search of catalogue.json and leads.json for Fersen).",
+   "verdict": "open"
+  }
+ },
+ "1168": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "This is a whole sub-series (125 legation files, 1516-1751), not a single cipher document. The archive's own description, re-read on LBC on 16 Nov 2026, says the cipher passages in the 17th-century legates' letters sometimes carry a clear transcription made by the Milanese offices that received them ('delle quali a volte si ha il testo trascritto in chiaro'). Part of the series is therefore read, and no unit inventory is online that would show which letters are not. A single legation file with cipher and no clear copy could later be entered as a new lead.",
+  "access": "archive",
+  "access_note": "Archivio storico civico e Biblioteca Trivulziana, Milan (Comune di Milano, Dicasteri, Ambasciatori, agenti). LBC gives only the series description: the page's tree lists sibling series and no units. No images are online.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The LBC series record MIBA00359B (lombardiabeniculturali.it/archivi/complessi-archivistici/MIBA00359B/) was fetched by curl on 16 Nov 2026 and read in full. It names legation units by number (e.g. 183-186, 206-209, 224, 230-239, 243, 251-252, 263-269), but the page has no unit-level records, and the JavaScript tree lists only the sibling series of the Dicasteri fonds.",
+    "extent": "125 archival units, each holding the papers of one legation (from a single appointment order up to seven boxes, the marchese Giovanni Battista Airoldi). The cipher is described only for the 17th-century letters of the legates, with no count.",
+    "cipher": "The archive's description: in the 17th century the legate's letters often use 'un linguaggio cifrato, per parti limitate o ampie della lettera, delle quali a volte si ha il testo trascritto in chiaro dagli uffici destinatari di Milano'. So some cipher passages carry a contemporary clear transcription filed with them, and others may not."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Ambasciatori, agenti', 'MIBA00359B' and 'Comune di Milano' (earlier passes and this one) finds only this lead and its vetting files. No DECODE record for the Milanese civic legations is in the local dumps.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no entry for the civic legations of Milan to Madrid. The Milan hits there concern ducal and Spanish-governor correspondence.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no entry for the Comune di Milano legations.",
+    "edition": "No edition of the legates' letters is known. The contemporary clear transcriptions that the archive describes are the readings for the letters that have them.",
+    "literature": "A web search (LBC 'Ambasciatori, agenti', legazione, cifra, Madrid, Comune di Milano) found no unit inventory and no study of the legates' ciphers. The hits were general studies of diplomacy in Madrid and Archivio di Stato inventories of other fonds."
+   },
+   "key_check": "No key for the Milanese civic legations is known in the repo or on DECODE. Wherever the receiving offices' clear transcriptions survive they would give plaintext pairs, but that was not tested.",
+   "duplicates": "No other lead or catalogue entry covers the Comune di Milano Ambasciatori series. Milanese ducal and state ciphers in the Archivio di Stato are separate fonds.",
+   "verdict": "partly_read",
+   "closed": "A series-level lead whose own archive description says that cipher passages sometimes carry a contemporary clear transcription. It cannot enter the catalogue as one unread document; a specific legation file shown to lack the clear copy would have to come in as a new lead."
+  }
+ },
+ "1483": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "All six CPDOC Accessus summaries give the specific plaintext content of the telegram. JD c 1930.10.01 reads 'Telegrama cifrado informando que a Revolução eclodirá esta semana e que o Rio Grande está unido como um só homem', and JD c 1929.10.11 asks for 'certidão de contrato com o Banco do Brasil'. Most are a single folha, so the cataloguer worked from a decipherment on the sheet or from a key in the papers, and the content is known. Record error: the lead's link ends in a stray hyphen and 404s. The working URL is the same path without the final '-' (curl 200 on 16 Nov 2026).",
+  "access": "archive",
+  "access_note": "CPDOC/FGV, Rio de Janeiro, Arquivo João Daudt d'Oliveira. Accessus records are online and give descriptions only; there are no images.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "CPDOC Accessus record for JD c 1930.10.01, fetched by curl on 16 Nov 2026 at www18.fgv.br/cpdoc/acervo/arquivo-pessoal/JD/textual/telegrama-cifrado-informando-que-a-revolucao-eclodira-esta-semana-e-que-o-rio-grande-esta-unido-como-um-so-homem-cachoeira (no trailing hyphen). The six summaries were also read in research/latam_brazil/cpdoc_hits.tsv (JD c 1929.06.24, 1929.06.26, 1929.07.06/2, 1929.10.11, 1930.03.23/1, 1930.10.01).",
+    "extent": "Six telegrams: five of 1 folha each and JD c 1930.03.23/1 of 4 folhas. No microfilm frame is given for the JD records.",
+    "cipher": "The archive calls each one a 'telegrama cifrado' and summarises its plaintext content in specific detail: names, a bank contract, the outbreak of the revolution 'esta semana', Afrânio de Melo Franco's request to Getúlio Vargas. The summaries could not have been written without a reading."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Daudt', 'Klinger' and 'Paim Filho' (16 Nov 2026) finds only the Brazil sweep files (research/latam_brazil) and this lead. Catalogue 1472, the Aranha 354 untranslated telegrams, is a different fonds. Nothing is on DECODE.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no Brazilian entry for 1929-30, Daudt d'Oliveira or the Aliança Liberal.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no Brazilian 1929-30 entry.",
+    "edition": "No edition was found. The CPDOC summaries themselves state each telegram's content, which is the reading.",
+    "literature": "An earlier web search (28 Oct 2026) on the Daudt d'Oliveira cipher telegrams found no study. The lead itself already judged them 'probably read at the time' and useful only as cribs."
+   },
+   "key_check": "No Aliança Liberal or Rio Grande do Sul code of 1929-30 is known in the repo. The telegrams would serve as plaintext cribs for the related Aranha series, but no key was tested.",
+   "duplicates": "No other lead or catalogue entry covers the JD fonds. The Bertoldo Klinger telegrams (lead 1484) are a different fonds and a different movement (1932).",
+   "verdict": "read",
+   "closed": "Every one of the six telegrams has its plaintext content summarised by the archive, which shows a contemporary decipherment on the sheet or a reading by the cataloguer; nothing unread is shown."
+  }
+ },
+ "1484": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "This is a cluster of about 16 CPDOC items, not one document. The Accessus summaries give the plaintext content of most of them. BK ger 1933.04.28 is summarised as Taborda 'querendo dizer que poderá enviar recursos para comprar sua passagem de retorno', and BK ger 1933.04.30 as 'confirmando os termos da carta de José Carlos Pereira (BK 33.04.14)'. The same fonds holds 34 'telegramas cifrados e traduzidos' (BK ger 1932.08.27/1), so contemporary decipherments exist. Only the 11 radios of BK ger 1932.09.00/5 ('alguns cifrados', no content) are undescribed; they are too vague to promote on their own.",
+  "access": "archive",
+  "access_note": "CPDOC/FGV, Rio de Janeiro, Arquivo Bertoldo Klinger, microfilm rolo 1 (e.g. fot. 809-810, 825). Accessus descriptions are online, but the fonds is not among CPDOC's digitised archives.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The CPDOC Accessus record BK ger 1932.11.16 was fetched by curl on 16 Nov 2026 (redirects to www18.fgv.br/CPDOC/acervo/arquivo-pessoal/bk/textual/carta-cifrada-de-edgar-batista-pereira-...; 3 folhas, microfilm rolo 1 fot. 825). The summaries of BK ger 1931.06.30, 1932.04.07, 1932.09.00/5, 1932.11.16, 1933.04.28, 1933.04.30 and 1932.08.27/1 were read in research/latam_brazil/cpdoc_hits.tsv.",
+    "extent": "Six listed shelfmarks, about 16 documents including 11 radios on 5 folhas. The related BK ger 1932.08.27/1 holds 34 telegrams on 45 folhas, enciphered and translated.",
+    "cipher": "The archive calls them 'carta cifrada', 'telegrama cifrado' and 'rádios, alguns cifrados'. Most summaries state specific content: Klinger answering a telegram, the Coxim council on the Clube 3 de Outubro, the rearticulation of the movement in São Paulo and Rio Grande do Sul, Taborda's offer of fare money and his confirmation of Pereira's letter. That content shows a reading on the sheet or by the cataloguer."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Klinger' and 'Daudt' (16 Nov 2026) finds only the Brazil sweep files and catalogue 1472 (the Aranha telegrams, which cite the translated Klinger set for system type). Nothing is on DECODE.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Klinger, Brazil or Brasil.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Klinger, Brazil or Brasil.",
+    "edition": "No edition was found. The CPDOC summaries and the 34 contemporary translations in BK ger 1932.08.27/1 are the readings.",
+    "literature": "Three web searches in the 9 Nov pass (Klinger cifrados e traduzidos; Edgar Batista Pereira carta cifrada; 1932 cipher cryptanalysis) found no modern decipherment or study."
+   },
+   "key_check": "The 34 enciphered-and-translated telegrams in BK ger 1932.08.27/1 are contemporary plaintext pairs for the Klinger system, in the same fonds. No key sheet is described, and nothing was tested.",
+   "duplicates": "No other lead or catalogue entry covers the BK fonds. Catalogue 1472 (Aranha) and lead 1483 (Daudt d'Oliveira) are other fonds of 1929-30.",
+   "verdict": "partly_read",
+   "closed": "Most items in the cluster have their content summarised by the archive, and the fonds holds 34 contemporary translations of Klinger's cipher telegrams. The rest (some of 11 radios) is too vaguely described to stand as an unread document."
+  }
+ },
+ "2155": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "The blocker stands. The only description is Duke's: in his final two tours Elliot 'included language in code as part of several passages'. Whether that is a cipher, shorthand or a vernacular is not shown, and no leaf is online. This pass, Duke's archives catalogue (archives.lib.duke.edu) answered curl with an Anubis bot check, ArchiveGrid answered with a Cloudflare 403, and a web search found no other description. Tomokiyo and Lasry lists (fetched 15 Nov 2026) have no Elliot entry. Needs the Duke finding aid in Chrome, or a photograph of one coded passage.",
+  "access": "archive",
+  "access_note": "Duke University, Rubenstein Library, reading room. Duke archives catalogue behind Anubis and ArchiveGrid behind Cloudflare (16 Nov 2026): needs Chrome or the owner."
+ },
+ "2191": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "The only description is the editor's: Bierther, Briefe und Akten N.F. II/8 (1982), p. 405, says Menzel's letter of 23/13 Sept 1633 (fol. 83-84) is 'größtenteils in Chiffre, deren Auflösung jedoch fehlt'. A Google Books feed query this pass placed 'Menzels Chiffre Auflösung' on PA405 of the second Google copy (HPIVNCmjZHEC). 'Tom 221' is very probably the BayHStA Kurbayern Äußeres Archiv class 'Dreißigjähriger Krieg Tom.' (Pars numbers). Caveat: a contemporary résumé by Vice-Chancellor Richel (Geheimer Rat 195) shows that Munich read the letter in 1633, and Bierther may summarise its content. That is a summary, not a decipherment, but it should be checked before work starts.",
+  "access": "archive",
+  "access_note": "Bayerisches Hauptstaatsarchiv, Munich (Kurbayern Äußeres Archiv, Dreißigjähriger Krieg Tom. 221, fol. 83-84, as cited by Bierther; not online). DDB/Archivportal-D, which carries the BayHStA records, answered with a proof-of-work bot check on 16 Nov 2026 (needs Chrome).",
+  "correct_shelfmark": "München, Bayerisches Hauptstaatsarchiv, Kurbayern Äußeres Archiv, Dreißigjähriger Krieg Tom. 221, fol. 83-84 (Bierther's citation; the class name is inferred from DDB records carrying the Zusatzklassifikation 'Dreißigjähriger Krieg Tom.', not matched to the record for Tom. 221)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "No image and no archive record could be opened. The description is the editor's, in Bierther, Briefe und Akten zur Geschichte des Dreißigjährigen Krieges N.F. II/8 (1982), p. 405, in a note near Nr. 238. It was read in Google Books snippets in an earlier pass (id eEPWsb6K5vEC). On 16 Nov 2026 the Google Books gdata feed (google.com/books/feeds/volumes?q=Menzels+Chiffre+Auflösung) returned both Google copies of the volume, and copy HPIVNCmjZHEC links the hit to pg=PA405. That confirms the page, but the feed gave no snippet text.",
+    "extent": "fol. 83-84, a letter of Menzel from Hamburg, 23/13 Sept 1633, received 22 Oct. Per the editor it is mostly in cipher. Its enclosure (fol. 85-86, a list of peace conditions matched by Bierther to the Dresden points) is discussed by the editor and appears not to be in cipher. The number of cipher groups is unknown.",
+    "cipher": "The editor's description: 'A. ebenda fol. 83-84, größtenteils in Chiffre, deren Auflösung jedoch fehlt; ein Resümee Richels in Geheimer Rat 195'. So the original survives, mostly in cipher, and no decipherment is filed with it. The cipher system is not known."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Menzel', 'Tom 221' and 'Richel' (16 Nov 2026) finds only this lead and its earlier vetting files. Menzel hits elsewhere concern an unrelated Saxon copyist of 1752-56, and Richel hits are all Richelieu. No DECODE record for a Menzel or Hamburg 1633 letter to Maximilian is in the local DECODE dumps.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Menzel, Hamburg and 1633. Menzel and Hamburg have no hit; the two 1633 hits are Ferdinand III and Sabran, both unrelated.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for Menzel, Hamburg and 1633, with no hit for any of them.",
+    "edition": "Bierther's edition (Briefe und Akten N.F. II/8) is the only print. The editor states that the decipherment is missing and points to Richel's résumé in Geheimer Rat 195 (Kschw 5988/3 fol. 15). The edition does not print a decipherment. Whether it prints the résumé's content could not be read: the volume is snippet-only, and De Gruyter Brill sells it.",
+    "literature": "Earlier passes ran three web searches (Menzel Hamburg 1633 Maximilian Bierther; Chiffre Auflösung; 'Tom.' at the Hauptstaatsarchiv) and found nothing. This pass ran a web search on the BayHStA citation 'Dreißigjähriger Krieg Tom.', which showed DDB records of Kurbayern Äußeres Archiv carrying that Zusatzklassifikation with Pars numbers. It found no study or decipherment of the Menzel letter."
+   },
+   "key_check": "No key for Menzel's correspondence with Munich is known in the repo, on DECODE or in print. The ciphers of the Bavarian chancery of 1633 are not in the catalogue. Richel's contemporary résumé (BayHStA Geheimer Rat 195, Kschw 5988/3 fol. 15) can serve as a content crib, and it proves the court could read the letter in 1633.",
+   "duplicates": "known.py on the correspondents, the date and the shelfmark finds no other lead or catalogue entry. Lead 2183 is a different letter, dated the day this one arrived (22 Oct 1633); it is related in time but not a duplicate.",
+   "verdict": "open"
+  }
+ },
+ "2217": {
+  "verdict": null,
+  "confidence": "medium",
+  "duplicate_record_note": "Lead id 2217 occurs twice in research/leads.json. Both records describe the same item (BNCF Ginori Conti 29.137, c. 13r, Manus 611145) with the same fields. The second copy has a longer 'status' (it appends the 5 Nov vetting sentence) and carries the 11 Nov 'vetting_note'; the first has neither. It is one lead stored twice, not two leads under one id. Keep the second record and drop the first.",
+  "note": "The edition question is closed: no edition prints c. 13r. This pass searched Lorenzo de' Medici, Lettere V (1480-81), VI (1481-82) and VII (1482-84) inside the archive.org copies through the full-text search service (bwb_KU-999-230_5, bwb_KU-999-229_6, bwb_KU-999-231; query 'GC, 137'). These volumes cite eight GC 137 pieces, all letters to Niccolò Michelozzi: V cc. 32-33 and 47 (31 Jan 1481) and cc. 20-21 (3 Jul 1481); VI cc. 6-9 (5 Aug 1481), cc. 45-46 (5 Nov 1481) and c. 4 (28 Jan 1482); VII cc. 22-23, 26 and 35 (28 Aug 1482), cc. 48-51 (29 Oct 1483) and cc. 38-39 (7 Apr 1484). No 'c. 13' and no 'biglietto' appears in any of them. This confirms the 9 Nov Censimento check (research/vetting_2026-11/out_c32.json). What stops a verdict is the question left open on 9 Nov. The clear strip c. 12r (BNCF0003827893, re-fetched and read this pass) is the same size and layout as the cipher strip c. 13r (BNCF0003827895): four lines, about 261 letters against about 263 signs. Its text runs 'El conte Girolamo ha sollecitato l'andata di m. Ascanio a Roma ... el S. L[odovi]co et m. palavisino et strasoldano è sospecto assai parendo loro che lui sia di ghibellini'. It may be the decipherment or the draft of c. 13r. One observation this pass points that way. The cipher's near-repeat '5 g 5 3 n (m) π b t' comes once at the end of line 1 and once mid line 3. The clear has 'S. Lco et' twice ('opera del S. Lco et', 'tra S. Lco et'). In the second cipher occurrence the repeat is followed by 'm', and the clear has 'm. palavisino' at that point. With code signs for names compressing the early text, the positions fit. No sign table was rebuilt, so this is suggestive, not proof. If c. 12r is the plaintext, the verdict is read (contemporary clear). If a homophonic attack with c. 12r as crib fails, it is open.",
+  "access": "online",
+  "access_note": "BNCF Teca, curl route 'ImageViewer?idr=<id>&azione=showImg' (research/sweep_2026-11-15_wave17_chrome/teca_get.py). c. 12r is BNCF0003827893 (1036x576) and c. 13r is BNCF0003827895 (985x217); both were downloaded 16 Nov 2026 to img/ (git-ignored). The viewer serves no higher resolution.",
+  "next_step": "Transcribe c. 13r sign by sign (enlarged halves in img/c13_left.jpg and img/c13_right.jpg). Treat '5 g 5 3 n π b t' = 'S. Lco et' and the following 'm' = 'm.' as anchors and test c. 12r as its plaintext, allowing homophones, nulls and code signs for Girolamo, Ascanio and Palavisino. A consistent table closes it as read; a clear failure makes it open."
+ },
+ "2449": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "The archive's own title, re-read on AIS 16 Nov 2026, is 'Ajalugu. Ülestähend. M. Sild. 1905-1906 Avinurmes (salakirjas)', 19 leaves, dated 1907, with no digital object and no decipherment or transcription in the unit or the series. In Estonian 'salakiri' means secret writing or cipher. Shorthand would be 'kiirkiri' and a Gothic hand 'gooti kiri', so the earlier doubt (shorthand or Gothic) is weaker than recorded. The title still does not prove a cipher, and the item is a private 1907 account outside diplomatic scope, hence low confidence. The same series holds Sild's clear 'Seletus' on the breaking of the Tsar's portraits (AM.272.1.96) and the indictment (AM.272.1.95). These are not the same text (the cipher account covers 1905-1906), but they would give names and events as cribs.",
+  "access": "archive",
+  "access_note": "Rahvusarhiiv AIS, reading room Ajaloomuuseum (Estonian History Museum); no digital object on the record. Order scans.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Rahvusarhiiv AIS record AM.272.1.97 (https://ais.ra.ee/et/description-unit/view?id=126000102885), fetched by curl 16 Nov 2026. Read with the series tree of fonds AM.272 (Mihkel Sild, põllumees-käsitööline), series 5. No digital object is attached.",
+    "extent": "19 leaves (Lehtede arv 19), dated 1907: an account ('Ajalugu. Ülestähend') of the events of 1905-1906 at Avinurme. How much of it is in secret writing is not stated; the title implies all of it.",
+    "cipher": "The archive's title says the account is 'salakirjas' (in secret writing). The record mentions no key, transcription or decipherment, and none is listed in the series. The neighbours AM.272.1.95 (indictment of 31 Oct 1905) and AM.272.1.96 (Sild's 'Seletus' on the breaking of the Tsar's pictures) are clear documents on the same events, not copies of this account."
+   },
+   "prior_art": {
+    "decode": "known.py on the shelfmark, Sild and Avinurme (9 Nov pass) finds nothing but this lead. The local DECODE dumps hold no Estonian 1905 record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Avinurme and Estonia, with no hit.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for Avinurme and Estonia, with no hit.",
+    "edition": "No edition or transcription of Sild's account was found. The AIS record lists none, and the web search found none.",
+    "literature": "A web search (Mihkel Sild Avinurme 1905 salakiri, 16 Nov 2026) returned only Avinurme parish-court records in the Rahvusarhiiv village-court database, none naming Sild's account. An earlier search on 9 Nov found no study either."
+   },
+   "key_check": "No key is known in the fonds description or anywhere else. Series 10 (Sild's notebooks) and series 2 (diaries) might hold his alphabet, but their unit titles were not checked item by item. The clear neighbours AM.272.1.95-96 give names and events usable as cribs.",
+   "duplicates": "No other lead or catalogue entry covers fonds AM.272 or Sild (known.py and a search of catalogue.json and leads.json).",
+   "verdict": "open"
+  }
+ },
+ "2674": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "The Columbia finding aid (abstract, as returned by web search on 16 Nov 2026) describes the Russian-language papers as 'texts of telegrams (1919-20) ... deciphered by Armenian military intelligence'. What is filed is the interceptor's decipherments. If any cipher groups are kept, they come with their contemporary decipherment, so the lead fails the bar either way. The lead's language should read Russian, not 'unknown'.",
+  "access": "archive",
+  "access_note": "Columbia RBML, Bakhmeteff Archive, on-site only (appointment 7 days ahead, 5 items a day). The finding aid page answered curl with an Anubis proof-of-work bot check on 16 Nov 2026 (needs Chrome).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Columbia finding aid cul-4077451 (findingaids.library.columbia.edu). Curl on 16 Nov 2026 got an Anubis proof-of-work page. The abstract was read through a web search result: 15 items, 1 box, in Russian.",
+    "extent": "15 items in all. The telegram texts of 1919-20 are one part, beside 1919-20 reports on the Caucasus military situation and three printed books. How many telegrams there are is not stated.",
+    "cipher": "Per the archive's description the telegrams are 'deciphered by Armenian military intelligence'. These are decipherments, and the description does not say that the ciphertext is preserved with them."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Devoiants', 'Devoyants' and 'Azerbaijan' (16 Nov 2026) hits only the sweep and vetting READMEs of 14 Nov that created this lead. Nothing on DECODE in the local dumps.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Azerbaijan, Armenia, Baku and Devoi, with no hit.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for the same terms. The only hit is the French word 'devoit' in an unrelated BnF reading.",
+    "edition": "No edition of the telegrams was found. The contemporary decipherment by Armenian military intelligence is itself the reading, and the archive files it as such.",
+    "literature": "A web search (Devoiants papers, Azerbaijani telegrams, Armenian military intelligence) found the finding aid and Armenian/Russian studies of Devoyants's intelligence work. One of these notes that further deciphered reports by him to General Korganov are in an Armenian archive in Boston. None treats the telegrams as unread."
+   },
+   "key_check": "No Azerbaijani diplomatic code of 1919-20 is known in the repo or on DECODE. If ciphertexts survived beside the decipherments they would give the key, but that is not needed to close the lead.",
+   "duplicates": "No other lead or catalogue entry covers the Devoiants papers or the Azerbaijani-Armenian traffic of 1919-20 (known.py on names and shelfmark).",
+   "verdict": "read",
+   "closed": "The archive describes the items as telegram texts deciphered by Armenian military intelligence in 1919-20, so a contemporary decipherment is what is filed and nothing unread is shown."
+  }
+ },
+ "2803": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The calendar editor deciphered it and printed the reading. CSP Dom. Charles I, Addenda March 1625 - January 1649 (Hamilton and Lomas, 1897), p. 690, Vol. DXXXIX no. 343 prints the whole letter with the cipher words in italics rendered in English, a few marked '(?)'. The bracketed note says the cipher differs from Digby's earlier ones, that the King's, Queen's, Jermyn's and Nicholas's keys were tried in vain, and 'The editor has therefore had to construct a key.' The preface's 'apparently not deciphered' refers to Parliament in 1646, not to the editor. Record corrections: the date is Conway, 19 Jan 1645/6 with a postscript of 24 Jan, and the piece is SP 16/539 no. 343.",
+  "access": "archive",
+  "access_note": "TNA SP 16/539 no. 343 (State Papers Online, Gale, or Kew). The printed decipherment is on archive.org (cu31924091770341).",
+  "correct_shelfmark": "TNA SP 16/539 no. 343 (CSP Domestic Charles I, Addenda 1625-1649 (1897), p. 690; Vol. DXXXIX)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Domestic Charles I, Addenda March 1625 to January 1649 (ed. W. D. Hamilton and S. C. Lomas, 1897), archive.org cu31924091770341 (Cornell copy; the lead calls it the 1644 volume), djvu full text downloaded 16 Nov 2026. Read: the preface pp. xli-xlii ('On page 690 is a cipher letter from Archbishop Williams ...') and p. 690, Vol. DXXXIX, no. 343, with the editor's bracketed note.",
+    "extent": "One letter with a postscript, about 30 printed lines. Per the editor, each cipher symbol stands for a word. The Dorso reads 'Letter in cypher directed to the Lord Digby, Intercepted by Clarke and sent to the Committee of Lords and Commons for the Admiralty'.",
+    "cipher": "Editor's note: '[The words in italics are in cipher. This letter, being written after the capture of Digby's papers at Sherburn, is in a quite different cipher from any previously used in his correspondence. Those of the King and Queen, Jermyn and Nicholas, have also been tried in vain. The editor has therefore had to construct a key.]' The letter is printed in full, deciphered, with a few doubtful words queried."
+   },
+   "prior_art": {
+    "decode": "known.py was run on 'Williams', 'Digby' and 'Conway' for the 15 Nov sweep, which found the royalist Digby family heavily worked in the repo (targets/rupert, hm1645, sp106r931) but no record of this letter. No DECODE record for SP 16/539 no. 343 is in the local dumps.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Digby. The two hits are Prince Maurice to Lord Digby, 31 Aug 1645, listed as solved, a different letter.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Digby or Williams.",
+    "edition": "CSP Domestic Charles I, Addenda 1625-1649 (Hamilton and Lomas, 1897), p. 690. Hamilton calendared only to about 1631, so the editor of this letter is S. C. Lomas. The editor built a key and printed the decipherment in full, with the cipher words in italics. That is a published reading.",
+    "literature": "No further search was needed: the printed calendar itself carries the editor's decipherment and his account of how the key was built."
+   },
+   "key_check": "The editor's reconstructed key is implicit in his printed decipherment (a word-symbol code). He states that the King's, Queen's, Jermyn's and Nicholas's keys do not fit. The Digby/Nicholas/Goring keys of autumn 1645 held elsewhere (BL Add MS 32256) were not tested and are not needed.",
+   "duplicates": "No other lead or catalogue entry carries SP 16/539 no. 343 or the Williams to Digby letter of 19 Jan 1645/6. A search of catalogue.json and leads.json for 'Archbishop Williams' and 'Williams to Digby' found only this lead.",
+   "verdict": "read",
+   "closed": "The calendar editor constructed a key and printed the full decipherment of the letter (CSP Dom. Charles I Addenda 1625-49, p. 690, no. 343), so it is read in print."
+  }
+ },
+ "2804": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "CSP Dom. Eliz. 1598-1601, p. 495, Vol. CCLXXV, no. 132, '[— Rogers to ——]', early Dec 1600 (not Oct): 'The whole letter is in cipher; the passages in Italics were undeciphered, as well as the greater part of the love letters. 23 pages.' The calendar prints a long English abstract of the deciphered report (Weekes, Smith, Kendal, Cecil, Levinus Monck), so most of the 23 pages were read at the time. The open remainder is the italic passages and most of the inserted Donavillis-Feselaw love letter. Under the bar a filed decipherment closes the piece as partly_read. If the lead agent follows the catalogue 956 precedent (Phelippes drafts with undeciphered italics entered as open), the love-letter portion is the part to consider, and SP 12/275 would have to be seen first.",
+  "access": "archive",
+  "access_note": "TNA SP 12/275 no. 132 (State Papers Online, Gale, or Kew). The calendar is on archive.org.",
+  "correct_shelfmark": "TNA SP 12/275 no. 132 (CSP Dom. Eliz. 1598-1601, p. 495, Vol. CCLXXV; early Dec 1600, the writer arrived at Dover 1 Dec)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Domestic Elizabeth 1598-1601 (Green), archive.org sim_great-britain-public-record-mary-elizabeth-i-and-james-i_january-1598-february-1601, djvu full text downloaded 16 Nov 2026. Nos. 130-134 on pp. 494-495 (Vol. CCLXXV, Dec 1600) were read, and the index ('Feselaw, Mr., 495').",
+    "extent": "23 pages, all in cipher per the calendar: a report by '— Rogers' (an innkeeper's son of Canterbury) on the Weekes/Smith/George Kendal affair and his dealings with Cecil and Levinus Monck, with a love letter from Donavillis to Feselaw ('dear Bess') inserted between the last clauses.",
+    "cipher": "Calendar: '[Inserted between the two last clauses is a love letter from Donavillis to Feselaw, in reply to one to \"dear Bess\" on the subsequent page. The whole letter is in cipher; the passages in Italics were undeciphered, as well as the greater part of the love letters. 23 pages.]' The abstract of the report is printed as deciphered sense, which shows a decipherment of most of the piece."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Donavillis', 'Feselaw', 'Kendal' and 'Weekes' (16 Nov 2026) finds this lead, the 15 Nov sweep and lead 875 (George Kendall to Cecil, in cipher, SP 77/6/229, 21 Nov/1 Dec 1600, already closed as a duplicate). No DECODE record for SP 12/275 no. 132.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Donavillis, Feselaw, Kendal, Weekes and Rogers, with no hit.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for the same names, with no hit.",
+    "edition": "Green's calendar prints an abstract of the deciphered report and marks the italic passages and most of the love letters as undeciphered. No other edition is known.",
+    "literature": "No web search was made this pass: the decision rests on the calendar's statement that the letter was deciphered except for marked passages."
+   },
+   "key_check": "No key for the Weekes/Kendal/Rogers cipher of 1600 is held in the repo. The deciphered parts of this same piece would supply most of its key, and lead 875 (Kendall to Cecil, same affair) may share it; nothing was tested.",
+   "duplicates": "No other record carries SP 12/275 no. 132. Lead 875 (Kendall to Cecil, SP 77/6/229) belongs to the same affair but is a different letter.",
+   "verdict": "partly_read",
+   "closed": "The 23-page cipher report is calendared from a decipherment and only its italic passages and most of the inserted love letter stayed undeciphered, so it is partly read."
+  }
+ },
+ "2805": {
+  "verdict": "duplicate",
+  "confidence": "high",
+  "note": "The same calendar item as lead 1005, which was already closed as not_cipher on 29 Oct 2026. CSP Dom. Eliz. 1598-1601 shows 'Oct. 14. 79. Wm. Holt to Hugh Owen and Rich. Bayley, Brussels' (Rouen) under Vol. CCLXVIII, 1598. The cipher is two name-numbers ('letters from 444', 'Commend me to 1,000'). This lead's date (14 Oct 1600) and volume (CCLXXV, SP 12/275) are wrong: the item is 14 Oct 1598, SP 12/268 no. 79.",
+  "access": "archive",
+  "access_note": "TNA SP 12/268 no. 79 (State Papers Online, Gale, or Kew). The calendar is on archive.org.",
+  "correct_shelfmark": "TNA SP 12/268 no. 79 (CSP Dom. Eliz. 1598-1601, p. 105, Vol. CCLXVIII, 14 Oct 1598)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Domestic Elizabeth 1598-1601 (Green), archive.org sim_great-britain-public-record-mary-elizabeth-i-and-james-i_january-1598-february-1601, djvu full text downloaded 16 Nov 2026. Vol. CCLXVIII, 14 Oct 1598, no. 79 was read in context (nos. 76-79).",
+    "extent": "One page. The cipher consists of two numbers standing for persons, within a plain English letter.",
+    "cipher": "Calendar: 'Wm. Holt to Hugh Owen and Rich. Bayley, Brussels. I am surprised not to hear from you, as there are letters from 444 ... Commend me to 1,000. [1 page. The numbers are ciphers, undeciphered.]' (as also quoted in lead 1005's vetting)."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Holt' and 'Bayley' (16 Nov 2026) finds lead 1005 (the same item, closed not_cipher) and the wave 18 printed-sources README, which lists 'Holt to Owen and Bayley 1598 (name numbers; leads)'. No DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) was searched for Holt and Owen, with no hit.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) was searched for Holt and Owen, with no hit.",
+    "edition": "Green's calendar only. It prints the whole sense of the letter and leaves the two numbers unexplained.",
+    "literature": "Lead 1005's vetting (29 Oct 2026) ran web searches on Holt, Owen and Bayley in 1598 and found no key for the numbers. That search was not repeated."
+   },
+   "key_check": "No Holt/Owen name-number key is held. With only two numbers no key could be tested in any case.",
+   "duplicates": "A duplicate of lead 1005 (SP 12/268, CSP Dom. Eliz. 1598-1601 p. 105, no. 79), which was vetted not_cipher on 29 Oct 2026. This lead carries a wrong date and volume for the same item.",
+   "verdict": "duplicate",
+   "closed": "The same Holt to Owen and Bayley letter as lead 1005 (14 Oct 1598, SP 12/268 no. 79), already closed: a plain letter with two undeciphered name-numbers."
+  }
+ },
+ "2806": {
+  "verdict": "duplicate",
+  "confidence": "high",
+  "note": "The same calendar item as catalogue 960. CSP Dom. James I 1619-23, p. 171 (Vol. CXVI) gives no. 59, '[John Woodford to Sir Fras. Nethersole.]', 3 Aug 1620, ending 'M. Du Buisson arrived with letters from the Prince of Condé, offering the daughter of France in marriage to the Prince. Partly in cipher, undeciphered.' Catalogue 960 holds this text. Its own record is mis-set: year 1611, shelfmark 'CSP Domestic James I 1611-18' and verify 'SP 14/65', although its vetting block already notes that the page header gives 1620, Vol. CXVI. The catalogue entry should be corrected to 3 Aug 1620, SP 14/116 no. 59.",
+  "access": "archive",
+  "access_note": "TNA SP 14/116 no. 59 (State Papers Online, Gale, or Kew). The calendar is on archive.org.",
+  "correct_shelfmark": "TNA SP 14/116 no. 59 (CSP Dom. James I 1619-23, p. 171, Vol. CXVI, 3 Aug 1620)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Domestic James I 1619-23 (Green), archive.org sim_great-britain-public-record-mary-elizabeth-i-and-james-i_1619-1623, djvu full text downloaded 16 Nov 2026. Nos. 55-61 on pp. 170-171 were read. The index entry 'Buisson, M. du, 171' confirms the page.",
+    "extent": "One letter, no. 59 of Vol. CXVI, 3 Aug 1620. The calendar gives no page count for it.",
+    "cipher": "Calendar: '[John Woodford to Sir Fras. Nethersole.] Hopes to hear of his safe arrival at Prague ... M. Du Buisson arrived with letters from the Prince of Condé, offering the daughter of France in marriage to the Prince. Partly in cipher, undeciphered.'"
+   },
+   "prior_art": {
+    "decode": "known.py on 'Du Buisson' and 'SP 14/116' (16 Nov 2026) hits catalogue 960 (Woodford to Nethersole, the same text) and CATALOGUE.md. No DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Woodford, Nethersole or Du Buisson. This was searched as part of catalogue 960's vetting and rechecked here for Du Buisson.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for this item.",
+    "edition": "Green's calendar only. It marks the cipher part undeciphered and gives no decipherment.",
+    "literature": "Catalogue 960's vetting ran a web search (Woodford Nethersole 1620 cipher Prague Du Buisson Conde SP 14/116) and found no study. That search was not repeated."
+   },
+   "key_check": "No Woodford/Nethersole key is held in the repo. Catalogue 998, the Burlamachi/Woodford group of 12 July 1620 in the same volume, is a neighbouring item that might share the cipher; it was not tested.",
+   "duplicates": "A duplicate of catalogue 960 (Green: 'M. Du Buisson arrived with letters from the Prince of Conde ... Partly in cipher, undeciphered'), whose date and shelfmark fields wrongly give 1611 and the 1611-18 volume. Catalogue 998 is a different item of 12 July 1620.",
+   "verdict": "duplicate",
+   "closed": "The same Woodford to Nethersole letter of 3 Aug 1620 (SP 14/116 no. 59) is already catalogue 960."
+  }
+ },
+ "2807": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The calendar (CSP Dom. Charles II 1663-64, p. 266, Vol. LXXX) files the cipher letter as no. 17 and the decipherment as no. 18: 'Decypher of the preceding letter. Endorsed [by Bennet] \"Seize the armes in the Custom House, and in all ports.\" [Three pages.]' The contemporary decipherment is filed beside the cipher. Record corrections: the letter is dated 4 Sept 1663 at [Rotterdam], from Robt. Williams to John Thomson [alias Edw. Riggs], to Secretary Bennet. Its piece is SP 29/80 nos. 17-18.",
+  "access": "archive",
+  "access_note": "TNA SP 29/80 nos. 17-18 (State Papers Online, Gale subscription, or Kew). The calendar is on archive.org.",
+  "correct_shelfmark": "TNA SP 29/80 nos. 17-18 (CSP Dom. Charles II 1663-64, p. 266, Vol. LXXX)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "CSP Domestic Charles II 1663-64 (Green), archive.org sim_great-britain-public-record-papers-domestic-charles-ii_january-1663-august-1664, djvu full text downloaded 16 Nov 2026. Vol. LXXX, 4 Sept 1663, nos. 17-18 on p. 266 were read.",
+    "extent": "No. 17: one and a half pages, partly in cypher (Robt. Williams to John Thomson [alias Edw. Riggs], to Sec. Bennet, [Rotterdam], 4 Sept 1663). No. 18: the decypher, three pages.",
+    "cipher": "Calendar: no. 17 'Partly in cypher, undecyphered. [One and a half pages.]'; no. 18 'Decypher of the preceding letter. Endorsed [by Bennet] \"Seize the armes in the Custom House, and in all ports. Blackwall.\" [Three pages.]'. A contemporary decipherment is filed as the next piece."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Thorne', 'Lawrence', 'Riggs' and 'SP 29/80' finds only the TNA Discovery sweep (15 Nov 2026) and this lead. No DECODE record for this letter is in the local dumps.",
+    "tomokiyo": "Tomokiyo's unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) has no hit for Thorne, Riggs or this 1663 letter.",
+    "lasry": "Lasry's list (cryptiana GL.htm, fetched 15 Nov 2026) has no hit for Thorne or this letter.",
+    "edition": "The Green calendar prints the abstract and records the contemporary decypher (no. 18) filed with the letter. That decypher is the reading.",
+    "literature": "No web search was needed: the decision rests on the archive's own filing of a decipherment, as calendared."
+   },
+   "key_check": "No separate key sheet is calendared. The cipher and decypher pair (nos. 17-18) itself gives the informer's key.",
+   "duplicates": "No other lead or catalogue entry carries SP 29/80 nos. 17-18 or the Williams/Riggs letter of 4 Sept 1663 (search of catalogue.json and leads.json for Riggs, Thorne and Lawrence).",
+   "verdict": "read",
+   "closed": "The cipher letter (SP 29/80 no. 17) has its contemporary decypher filed as the next piece (no. 18), so it was read in 1663."
+  }
+ },
+ "2901": {
+  "verdict": null,
+  "confidence": "medium",
+  "recommendation": "keep as a low-priority lead (code-book search); do not promote",
+  "note": "My judgement is to keep this as a lead and not promote it. Waves 15-16 screened HIL/64 and HIL/65 completely and tallied about 133 Sudan Government telegrams carrying dictionary code words inside clear English (wave16_durham README, code-word tally). The words are bare, with no decode on any form. They belong to a code book, not a cipher: they come from several languages (Latin Aglossa, German Alantapfel, Spanish Agazapada, Italian Acquitrino), in the manner of the Berne Official Vocabulary (1894) on which private codes were built. They stand for stock items: months (64/136 'Fissurum (January) to Flaccidus (March)'), persons ('Adulterino (Khedive)', 64/296 and 65/961), offices, ranks, decoration classes and set phrases. The two meanings that the forms themselves give confirm this. There is nothing to cryptanalyse. With the Sudan Government's telegraph code every word reads at once; without it only a partial reconstruction from context is possible, and the payoff is stock phrases inside telegrams whose sense is already clear. No code book has been found: HIL/149-155 are Ottoman, Arabic and French codes of the Khedive's own circle (wave 18), HIL/149 is not digitised, and the Sudan Railway code SAD.969/15 dates from 1937. A web search for Agyllinos, Aginaverid and Alantapfel found no printed code listing them. The real cipher in these files is already handled: HIL/64/890-891 and HIL/65/148, 157-158 are leads 2899 and 2900 (key_lookup, clear copies on file), and HIL/64/400, HIL/65/273 and HIL/65/1122 are catalogue 2907-2909. Catalogue 2909 sits beside the code words 'Aglossa' and 'fistularia', so a found code book would also help there. Without a verdict I give no vetting block: the gate's 'open' is meant for an unread cipher, and this lead's reading depends on finding a book, not on solving.",
+  "access": "online",
+  "access_note": "Durham IIIF (HIL/64 ark t2mks65hc530, HIL/65 ark t1mh128nf091), by curl. Next step: look for the Sudan Government telegraph code of c. 1907-1914 in the Durham Sudan Archive (Wingate, Slatin papers; SAD.451/124/73 'cipher amendments' 1909), TNA FO 141 / WO 33 / FO 371 Egypt, and the printed private codes based on the Berne Vocabulary."
+ },
+ "2940": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "The blocker stands; this pass found nothing decisive. The Durham finding aid (reed.dur.ac.uk, re-fetched by curl 16 Nov 2026) still gives only 'Language: English, Arabic and cypher' for both registers, SAD.866/5/1-46 (25 Feb-30 Jun 1883) and SAD.600/2/1-35 (10-19 Mar and 4 Jul-6 Sep 1883). It has no digitised link, no count of cypher entries and no word on whether the clear text is entered beside them. The wave 18 Durham sweep confirms that neither register is digitised. In a register of telegrams the clerk often wrote the clear text with or instead of the groups, and the system is probably an Egyptian Army or War Office code book. An 'open' verdict would rest on one word in the catalogue, so I give none. Needs a few register leaves from Durham.",
+  "access": "archive",
+  "access_note": "Durham University Library, Sudan Archive, not digitised (no IIIF link in the Hicks finding aid; wave 18 Durham sweep). Request scans."
+ }
+}

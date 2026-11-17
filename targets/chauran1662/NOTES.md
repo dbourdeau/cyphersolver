@@ -133,6 +133,9 @@ Both tests were rerun by the verifier from these files: outputs byte-identical. 
 run from a working folder in which `key/`, `tests/` and the transcription files sat in subfolders `t187/`, `t231/`,
 `t243a/` (f243_p1-2), `t243b/` (f243_p3-5), `t264/`, `t294/`, `t306/`, `t313/`, `t315/`, `t317/`, with
 `key/reconciled_ff189_260.json` made from the reconciled key letters (`key/reconciled_ff189_260.txt` is its text form).
+16 Nov 2026: the two files the last two control lines need are now filed, `key/reconciled_ff189_260.json` and
+`transcriptions/f228_pass1.txt` (it sits in `t231/` in that layout); with them, Test B reruns byte-identical, all
+thirteen lines.
 
 ## 6. Readings
 
@@ -184,8 +187,9 @@ English is a gist):
   22 March: the league, the States General, and *"Luis Felis de Longas para consul de ... Mi[d]de[l]bo[r]g en
   Zelanda"* on conditions (a salary of not over fifty [...], no other occupation).
 - **ff. 317r-318v.** Fuente to the King, Paris, [May or June]: protests over a forcible act on the Flanders frontier and
-  an *arresto* (a French arrêt); the resident of Luxembourg; *"del [...]r de Linquen"* (Fort Linck, the subject of
-  ff. 264 and 294 in the catalogue); *"el conde de [?Bri]enne y su hijo"*; arbitration *"desde el de
+  an *arresto* (a French arrêt); the resident of Luxembourg; *"del [...]r de Linquen"* (Fort Linck by our inference;
+  the catalogue describes ff. 264 and 293 as about the "Governor of Lingen" and the "Governor of Linguem": SP 84/165/152
+  and /171, TNA Discovery records C7306744 and C7306764, seen 16 Nov 2026); *"el conde de [?Bri]enne y su hijo"*; arbitration *"desde el de
   Chateau-Cambresis"*; ends with a copy enclosed. Fort Linck and Brienne are identifications from syllables (inference).
 - **ff. 313r-314r.** [Gamarra] to the King: *"aora no se offrece cosa digna de la noticia de V. M."*; the league he has
   been ordered to further; *"los estados de la provincia de Holanda"*; *"el residente del elector de Brandeburgo"*;
@@ -261,3 +265,35 @@ the Library of Congress for SP 84); a DECRYPT login for record R510; a copy from
   not be opened); Tomokiyo.
 - [x] key-rebuild: 47 values added from gloss, crib and context, marked and frozen (`key/extension_v1.tsv`).
 - [ ] retry: the four "not shown" items and the unread groups not retried; waits for SP 106/6 no. 34.
+
+## Integration check (15 Nov 2026, PR #677)
+
+Done by an AI reviewer for the maintainers. The licensed images were not available to the reviewer: no transcription
+here was compared with an image, by the contributor's readers only.
+
+- **Hashes.** `key/table_v1.tsv`, `key/extension_v1.tsv` and `key/chauran1662_key.tsv` match `key/SHA256.txt`; the
+  four verifier files match `tests/verifier/FREEZE_A.sha256`. The order of events (plans before runs) is by the
+  contributor's record.
+- **Tests rerun** (scripts read first, run as data with `python3 -I` in the folder layout section 5 describes).
+  Test A: output identical (83.7%, shuffled maximum 26.5%). Test B: the nine items and the two reported lines identical
+  (five pass, four "not shown"); its last two control lines (ff. 189 + 260; f. 228) could not be rerun, because
+  `key/reconciled_ff189_260.json` and the f. 228 transcription are not in the folder.
+- **Own decoder** (written from `key/table_v1.tsv` alone) on `transcriptions/f245_pass2.txt`: 481 of 672 groups in
+  the frozen table (71.6%); every frozen-table word of lines 1-8 is the word in
+  `decryptions/chauran1662_f245_decryption.txt`.
+- **Dumont.** The separate article is on p. 418 (right column) of Internet Archive item `corpsuniverseldi06dumo`,
+  image n1029, seen: "Il a esté stipulé de la part du Roi tres-Chrêtien, & consenti par les Seigneurs Estats
+  Generaux ... que l'égalité, qui doit être precisement observée à l'égard des Subjects ... avec les Naturels en
+  matiere des Droits, charges, & impositions". The frozen table alone gives "ha estipulada por ... y con..tido ...
+  estados ... que la ..gualdad que deve o..servase ..cisamente ... a los su.di.. ... con los na..ra.. en materia de
+  dere..s cargas": the identification stands without the extension. In `chauran1662_f245_reading.md` every extension
+  or Dumont word sampled carries `[?word]`.
+- **Class.** All five items stay "decoded, not read"; no read share is claimed and none is recorded.
+- **Archive records** (TNA Discovery API): SP 84/165/113 is f. 189, /149 f. 260, /152 f. 264, /171 f. 293, as section
+  1 says. Catalogue entry 870 also lists /131 (f. 228, the French-vocabulary cipher used as a control here), /148
+  (f. 258) and /151 (f. 263), "Undecoded cipher": ff. 258 and 263 were not among the items saved and are untouched.
+  The catalogue describes ff. 264 and 293 as about the "Governor of Lingen" / "Linguem", not Fort Linck (section 6
+  marks Fort Linck as an inference).
+- **One key, one entry.** No other folder holds this cipher (`beuningen1676` and `stepney` name Williamson only).
+  Lead 1154 is Chauran's own letters in French (SP 84/165/1-114), another cipher: it stays open. Catalogue 870's
+  status now points here.

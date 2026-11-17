@@ -348,6 +348,16 @@
    ],
    "what": "docs/_check_reading.py --file reading_p138-150.md: clean share 0.294 (10 of 34 sentences; hole rate 0.208): 'not a reading' (below 0.60). Run-on line ends left as written and slips uncorrected; the text entry is recorded as 'decoded, not read', by the checker's state.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Project check of PR #686 (a model session; no person has checked): an own decoder from key.tsv and key_v2.tsv gives the contributor's letters on 306 of 306 lines (pp.124-137) and 90 of 90 (pp.138-150); key, blind files and label sheet match their FREEZE hashes (times by the contributor's record); judge counts re-added (5,667/6,097 = 92.9% and 1,573/1,652 = 95.2% of letters; by words, 1,094 of 1,485 unmarked = 73.7% on pp.124-137); both shuffle controls re-run with the same figures (0 of 5,000 at both seeds); p.124 lines 1-4 (79 signs) and p.138 lines 1-2 (40 signs) compared with the Wellcome images: they agree apart from the figure-4 and o+7 naming slips the contributor diagnosed. The label names 4L, 4R, 4U carry their letters, so the sheet is not wholly value-free.",
+   "result": "worked"
   }
  ],
  "outcome": {

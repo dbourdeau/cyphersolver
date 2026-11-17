@@ -1,0 +1,299 @@
+{
+ "2145": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable: a collection-level line only. The UA collection page (lib.arizona.edu/special-collections/collections/francisco-vazquez-gomez-collection, read by curl 16 Nov 2026) shows the 'telegrams, some in code' are clippings and copies compiled for Vázquez Gómez's Memorias políticas 1909-1913 (1933), with the originals at Southern Illinois University Carbondale (Francisco Vázquez Gómez Papers 1906-1940); no coded telegram is identified.",
+  "access": "archive",
+  "access_note": "UA ArchivesSpace (archives.library.arizona.edu) answers 403 to curl and Arizona Archives Online shows a Cloudflare challenge, so no box list was read; ArchiveGrid is bot-checked today. Unblock: the UA or SIU box list naming a coded telegram, then compare with Memorias políticas (1933), which may print the telegrams in clear.",
+  "record_correction": "The Arizona holding is a copy collection of clippings and photocopies (MS 450 per web index); the originals are at SIU Carbondale. The lead should name both."
+ },
+ "2115": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessable: the sentence that matched 'cipher' has never been read, and no document is identified. txarchives.org (TARO) now serves an Anubis proof-of-work bot check to curl (16 Nov 2026); a web search found SNAC records for the Benson's Degollado holdings (including a separate Santos Degollado Collection 1856-1907) with no mention of cipher, code or clave. Tomokiyo and Lasry lists (fetched 15 Nov 2026) and known.py have nothing on Degollado.",
+  "access": "archive",
+  "access_note": "Needs Chrome or the Benson: TARO finding aid behind Anubis, archives.lib.utexas.edu redirect loop (recorded 3 Nov), ArchiveGrid bot-checked. Check also whether the ArchiveGrid hit came from the Santos Degollado Collection rather than the Joaquín and Mariano Degollado Collection."
+ },
+ "2201": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Not assessable; the recorded blocker stands. The DigiVatLib IIIF manifest for Vat. lat. 14673 still answers 404 (curl, 16 Nov 2026), so the leaves are not online, and the only wording is the Rome BNC Manus note (re-read 16 Nov from manus-api id 596528): 'Copie di 8 lettere inviate in cifra tra il 16.6.1606 e il 12.11.1606', citing Piazzoni-Vian p. 7. 'Copie di lettere inviate in cifra' in a Borghese-era register more often means clear register copies of letters that went out in cipher (the digivatlib sweep also calls the sibling ff. 85v-104r, Gesualdo 1618, register copies), so the item may hold no cipher at all; an 'open' cannot be given on this.",
+  "access": "archive",
+  "access_note": "Needs the Vatican reading room, a scan order, or Piazzoni-Vian 1989 p. 7 (Google Books API answered 429 quota today). Tomokiyo and Lasry lists (fetched 15 Nov 2026) and known.py have nothing on Ubaldini.",
+  "record_correction": "Roberto Ubaldini was created cardinal in December 1615, not 1606; in 1606 he was not yet nuncio (France 1607-16). The Manus note's 'cardinale' is retrospective."
+ },
+ "2511": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Editor's note confirmed today in both OCR copies of Pribram 1887 (no. XXIX, note at p. 148): 'J Ein Bericht vom 3. Mürz ist nicht dechiffrirt [sic OCR for März]'. No decipherment printed or found anywhere; follows the catalogue precedent for editor-described undeciphered passages (e.g. entries 899, 1026, 1034). Not seen: the Karton is assigned from AIS date ranges, the leaf is not itemised.",
+  "access": "archive",
+  "access_note": "HHStA reading room or a scan order; AIS describes StAbt Polen I by Karton only (no scan); if not in the Polen I Karton, try Geheime Staatsregistratur 35-30 and Brandenburgica/Suecica of the same months.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Re-checked 16 Nov 2026: both archive.org OCR copies of Pribram, AÖG 70 (1887) downloaded (bub_gb_oIkJAAAAIAAJ_djvu.txt and bub_gb_tZ_NAAAAMAAJ_djvu.txt) and every 'dechiffrirt' note listed; the note for this report reads, in bub_gb_tZ_NAAAAMAAJ, 'J Ein Bericht vom 3. Mürz ist nicht dechiffrirt [sic OCR for März]' (no. XXIX, note at p. 148). Pribram, Die Berichte des kaiserlichen Gesandten Franz von Lisola 1655-1660, AÖG 70 (1887), no. XXIX (note), p. 148 (archive.org bub_gb_oIkJAAAAIAAJ and bub_gb_tZ_NAAAAMAAJ, OCR read 11 Nov 2026); original HHStA StAbt Polen I 66, not online",
+    "extent": "A whole report, length not given",
+    "cipher": "No item-level archive description exists (AIS lists the Karton only, no scan). The editor, who printed from the original in the Staatsarchiv, describes the cipher: 'J Ein Bericht vom 3. Mürz ist nicht dechiffrirt [sic OCR for März]'. In the same volume he prints the ciphered passages of sibling reports between asterisks ('Die zwischen Sternen stehenden Stellen sind im Original chiffrirt'), i.e. with their contemporary decipherment, so 'nicht dechiffrirt' means no decipherment was with this piece and he made none. Cipher system not stated."
+   },
+   "prior_art": {
+    "decode": "DECODE RecordsList searched 11 Nov 2026 for the Warsaw report of 3 March 1656 ('Warschau'; '1656'): Warschau: 0 records; 1656: five records (Florence, BL Add MS 4166 Cromwell, Beinecke), none from Vienna. The only Lisola records are R1915-R1918 and R2040 (1669-74).",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits. Earlier check (11 Nov): cryptiana index and variable3.htm name Lisola only inside a c. 1657-59 Porcia key; no page on Lisola reports of 1655-60.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits; no Lasry paper on Lisola in the web searches of 11 and 16 Nov 2026; known.py 'Lisola' shows no Lasry item in the repo.",
+    "edition": "Pribram 1887 is the edition and was opened at no. XXIX (note): it prints the readable text and states the passage is not deciphered. Urkunden und Actenstücke VIII (cited by Pribram for the same weeks) prints Brandenburg and French papers, not this report.",
+    "literature": "For the Warsaw report of 3 March 1656: Only citations of Pribram's edition (AÖG 70) and his 1894 biography; nothing on the report of 3 March 1656 or its cipher. / No relevant result (unrelated 1890s texts); no sign that Pribram's 1894 biography supplied the missing report. / cryptiana blog 2025 (Le Tellier 1657, Habsburg letters of 1711 and 1720), Maximilian II 1575, Ferdinand III; no Lisola or imperial envoy in Poland 1655-60."
+   },
+   "key_check": "No key for Lisola's 1655-60 cipher is held in the repo or named on DECODE. Nothing could be tested because no ciphertext is online.",
+   "key_held": "Imperial keys of the period exist on DECODE (HHStA Staatskanzlei Interiora Chiffrenschlüssel, e.g. R1280, undated homophonic key with nomenclator) and Lisola's own later ciphers (R1915-R1918, R2040); none identified as his 1655-60 key, none tested.",
+   "duplicates": "known.py 'Lisola' (16 Nov 2026): only catalogue entries for Lisola 1643 and 1667 (Spanien Varia / 20-4-10) and the DECODE 1669-74 records (R1915-R1918, R2040); no catalogue entry or other lead for this report. The other Lisola reports of 1655-60 that Pribram marks 'nicht dechiffrirt' are separate leads (2508-2512), each a different date; Pribram has two further 'nicht dechiffrirte Stelle' notes (after the Rangstreit report, cf. 24 July 1657, and at p. 543) that are not in this batch.",
+   "verdict": "open",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2508": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Editor's note confirmed today in both OCR copies of Pribram 1887 (no. LX, notes at pp. 284-285): 'Zum Theile nicht dechiffrirt ... Folgt eine halbe Seite nicht dechiffrirt ... Folgt ungefähr eine nicht dechiffrirte Seite ... Folgen zwei Zeilen nicht dechiffrirt'. No decipherment printed or found anywhere; follows the catalogue precedent for editor-described undeciphered passages (e.g. entries 899, 1026, 1034). Not seen: the Karton is assigned from AIS date ranges, the leaf is not itemised.",
+  "access": "archive",
+  "access_note": "HHStA reading room or a scan order; AIS describes StAbt Polen I by Karton only (no scan); if not in the Polen I Karton, try Geheime Staatsregistratur 35-30 and Brandenburgica/Suecica of the same months.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Re-checked 16 Nov 2026: both archive.org OCR copies of Pribram, AÖG 70 (1887) downloaded (bub_gb_oIkJAAAAIAAJ_djvu.txt and bub_gb_tZ_NAAAAMAAJ_djvu.txt) and every 'dechiffrirt' note listed; the note for this report reads, in bub_gb_tZ_NAAAAMAAJ, 'Zum Theile nicht dechiffrirt ... Folgt eine halbe Seite nicht dechiffrirt ... Folgt ungefähr eine nicht dechiffrirte Seite ... Folgen zwei Zeilen nicht dechiffrirt' (no. LX, notes at pp. 284-285). Pribram, Die Berichte des kaiserlichen Gesandten Franz von Lisola 1655-1660, AÖG 70 (1887), no. LX, p. 284-285 (archive.org bub_gb_oIkJAAAAIAAJ and bub_gb_tZ_NAAAAMAAJ, OCR read 11 Nov 2026); original HHStA StAbt Polen I 69, not online",
+    "extent": "About one and a half pages and two lines of cipher without decipherment, in three places of the report",
+    "cipher": "No item-level archive description exists (AIS lists the Karton only, no scan). The editor, who printed from the original in the Staatsarchiv, describes the cipher: 'Zum Theile nicht dechiffrirt ... Folgt eine halbe Seite nicht dechiffrirt ... Folgt ungefähr eine nicht dechiffrirte Seite ... Folgen zwei Zeilen nicht dechiffrirt'. In the same volume he prints the ciphered passages of sibling reports between asterisks ('Die zwischen Sternen stehenden Stellen sind im Original chiffrirt'), i.e. with their contemporary decipherment, so 'nicht dechiffrirt' means no decipherment was with this piece and he made none. Cipher system not stated."
+   },
+   "prior_art": {
+    "decode": "DECODE RecordsList searched 11 Nov 2026 for the Dankow report of 3 June 1657 ('Dankow'; 'Lisola'): Dankow: 0 records. Lisola: R1915-R1918 and R2040 only (Geheime Staatsregistratur 61 fasc. 46, 1669-74). The only Lisola records are R1915-R1918 and R2040 (1669-74).",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits. Earlier check (11 Nov): cryptiana index and variable3.htm name Lisola only inside a c. 1657-59 Porcia key; no page on Lisola reports of 1655-60.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits; no Lasry paper on Lisola in the web searches of 11 and 16 Nov 2026; known.py 'Lisola' shows no Lasry item in the repo.",
+    "edition": "Pribram 1887 is the edition and was opened at no. LX: it prints the readable text and states the passage is not deciphered. Urkunden und Actenstücke VIII (cited by Pribram for the same weeks) prints Brandenburg and French papers, not this report.",
+    "literature": "For the Dankow report of 3 June 1657: No Polish or other edition of the report found; pamphlets from Dankow of May 1657 and general Northern War pages only. / NDB entry and Pribram's 1887 edition only; HistoCrypt and Cryptologia hits concern other Habsburg ciphers (Ferdinand III, key instructions); no decipherment of a Lisola report."
+   },
+   "key_check": "No key for Lisola's 1655-60 cipher is held in the repo or named on DECODE. Nothing could be tested because no ciphertext is online.",
+   "key_held": "Imperial keys of the period exist on DECODE (HHStA Staatskanzlei Interiora Chiffrenschlüssel, e.g. R1280, undated homophonic key with nomenclator) and Lisola's own later ciphers (R1915-R1918, R2040); none identified as his 1655-60 key, none tested.",
+   "duplicates": "known.py 'Lisola' (16 Nov 2026): only catalogue entries for Lisola 1643 and 1667 (Spanien Varia / 20-4-10) and the DECODE 1669-74 records (R1915-R1918, R2040); no catalogue entry or other lead for this report. The other Lisola reports of 1655-60 that Pribram marks 'nicht dechiffrirt' are separate leads (2508-2512), each a different date; Pribram has two further 'nicht dechiffrirte Stelle' notes (after the Rangstreit report, cf. 24 July 1657, and at p. 543) that are not in this batch.",
+   "verdict": "open",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2509": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Editor's note confirmed today in both OCR copies of Pribram 1887 (no. LXXV, note at p. 316): '2 1/2 Seiten nicht dechiffrirt'. No decipherment printed or found anywhere; follows the catalogue precedent for editor-described undeciphered passages (e.g. entries 899, 1026, 1034). Not seen: the Karton is assigned from AIS date ranges, the leaf is not itemised.",
+  "access": "archive",
+  "access_note": "HHStA reading room or a scan order; AIS describes StAbt Polen I by Karton only (no scan); if not in the Polen I Karton, try Geheime Staatsregistratur 35-30 and Brandenburgica/Suecica of the same months.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Re-checked 16 Nov 2026: both archive.org OCR copies of Pribram, AÖG 70 (1887) downloaded (bub_gb_oIkJAAAAIAAJ_djvu.txt and bub_gb_tZ_NAAAAMAAJ_djvu.txt) and every 'dechiffrirt' note listed; the note for this report reads, in bub_gb_tZ_NAAAAMAAJ, '2 1/2 Seiten nicht dechiffrirt' (no. LXXV, note at p. 316). Pribram, Die Berichte des kaiserlichen Gesandten Franz von Lisola 1655-1660, AÖG 70 (1887), no. LXXV, p. 316 (archive.org bub_gb_oIkJAAAAIAAJ and bub_gb_tZ_NAAAAMAAJ, OCR read 11 Nov 2026); original HHStA StAbt Polen I 70, not online",
+    "extent": "Two and a half pages of cipher without decipherment",
+    "cipher": "No item-level archive description exists (AIS lists the Karton only, no scan). The editor, who printed from the original in the Staatsarchiv, describes the cipher: '2 1/2 Seiten nicht dechiffrirt'. In the same volume he prints the ciphered passages of sibling reports between asterisks ('Die zwischen Sternen stehenden Stellen sind im Original chiffrirt'), i.e. with their contemporary decipherment, so 'nicht dechiffrirt' means no decipherment was with this piece and he made none. Cipher system not stated."
+   },
+   "prior_art": {
+    "decode": "DECODE RecordsList searched 11 Nov 2026 for the Königsberg report of 4 Sept 1657 ('Königsberg'; 'Wehlau'): Königsberg: one 1911 postcard (R3282); Wehlau: 0 records. The only Lisola records are R1915-R1918 and R2040 (1669-74).",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits. Earlier check (11 Nov): cryptiana index and variable3.htm name Lisola only inside a c. 1657-59 Porcia key; no page on Lisola reports of 1655-60.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits; no Lasry paper on Lisola in the web searches of 11 and 16 Nov 2026; known.py 'Lisola' shows no Lasry item in the repo.",
+    "edition": "Pribram 1887 is the edition and was opened at no. LXXV: it prints the readable text and states the passage is not deciphered. Urkunden und Actenstücke VIII (cited by Pribram for the same weeks) prints Brandenburg and French papers, not this report.",
+    "literature": "For the Königsberg report of 4 Sept 1657: Nothing on the Königsberg reports of September 1657; the same Cryptologia citation of an unnamed 1657 HHStA key. / NDB entry and Pribram's 1887 edition only; HistoCrypt and Cryptologia hits concern other Habsburg ciphers (Ferdinand III, key instructions); no decipherment of a Lisola report. / cryptiana blog 2025 (Le Tellier 1657, Habsburg letters of 1711 and 1720), Maximilian II 1575, Ferdinand III; no Lisola or imperial envoy in Poland 1655-60."
+   },
+   "key_check": "No key for Lisola's 1655-60 cipher is held in the repo or named on DECODE. Nothing could be tested because no ciphertext is online.",
+   "key_held": "Imperial keys of the period exist on DECODE (HHStA Staatskanzlei Interiora Chiffrenschlüssel, e.g. R1280, undated homophonic key with nomenclator) and Lisola's own later ciphers (R1915-R1918, R2040); none identified as his 1655-60 key, none tested.",
+   "duplicates": "known.py 'Lisola' (16 Nov 2026): only catalogue entries for Lisola 1643 and 1667 (Spanien Varia / 20-4-10) and the DECODE 1669-74 records (R1915-R1918, R2040); no catalogue entry or other lead for this report. The other Lisola reports of 1655-60 that Pribram marks 'nicht dechiffrirt' are separate leads (2508-2512), each a different date; Pribram has two further 'nicht dechiffrirte Stelle' notes (after the Rangstreit report, cf. 24 July 1657, and at p. 543) that are not in this batch.",
+   "verdict": "open",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2510": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Editor's note confirmed today in both OCR copies of Pribram 1887 (no. LXXVI, note at p. 317): 'Folgt noch eine nicht dechiffrirte Seite'. No decipherment printed or found anywhere; follows the catalogue precedent for editor-described undeciphered passages (e.g. entries 899, 1026, 1034). Not seen: the Karton is assigned from AIS date ranges, the leaf is not itemised.",
+  "access": "archive",
+  "access_note": "HHStA reading room or a scan order; AIS describes StAbt Polen I by Karton only (no scan); if not in the Polen I Karton, try Geheime Staatsregistratur 35-30 and Brandenburgica/Suecica of the same months.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Re-checked 16 Nov 2026: both archive.org OCR copies of Pribram, AÖG 70 (1887) downloaded (bub_gb_oIkJAAAAIAAJ_djvu.txt and bub_gb_tZ_NAAAAMAAJ_djvu.txt) and every 'dechiffrirt' note listed; the note for this report reads, in bub_gb_tZ_NAAAAMAAJ, 'Folgt noch eine nicht dechiffrirte Seite' (no. LXXVI, note at p. 317). Pribram, Die Berichte des kaiserlichen Gesandten Franz von Lisola 1655-1660, AÖG 70 (1887), no. LXXVI, p. 317 (archive.org bub_gb_oIkJAAAAIAAJ and bub_gb_tZ_NAAAAMAAJ, OCR read 11 Nov 2026); original HHStA StAbt Polen I 70, not online",
+    "extent": "One further page of cipher without decipherment at the end of the report",
+    "cipher": "No item-level archive description exists (AIS lists the Karton only, no scan). The editor, who printed from the original in the Staatsarchiv, describes the cipher: 'Folgt noch eine nicht dechiffrirte Seite'. In the same volume he prints the ciphered passages of sibling reports between asterisks ('Die zwischen Sternen stehenden Stellen sind im Original chiffrirt'), i.e. with their contemporary decipherment, so 'nicht dechiffrirt' means no decipherment was with this piece and he made none. Cipher system not stated."
+   },
+   "prior_art": {
+    "decode": "DECODE RecordsList searched 11 Nov 2026 for the Königsberg report of 11 Sept 1657 ('Polen I'; 'Polonica'; 'Karl Gustav'): 0 records for each: no HHStA Polen I material on DECODE. The only Lisola records are R1915-R1918 and R2040 (1669-74).",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits. Earlier check (11 Nov): cryptiana index and variable3.htm name Lisola only inside a c. 1657-59 Porcia key; no page on Lisola reports of 1655-60.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits; no Lasry paper on Lisola in the web searches of 11 and 16 Nov 2026; known.py 'Lisola' shows no Lasry item in the repo.",
+    "edition": "Pribram 1887 is the edition and was opened at no. LXXVI: it prints the readable text and states the passage is not deciphered. Urkunden und Actenstücke VIII (cited by Pribram for the same weeks) prints Brandenburg and French papers, not this report.",
+    "literature": "For the Königsberg report of 11 Sept 1657: Treaty of Wehlau pages and a Polish article printing Gosiewski's own account of the Wehlau talks (ceeol 1214990); nothing on Lisola's report of 11 Sept or its cipher. / Nothing on Lisola; only Ernst's Zifra Piccolominea (1640-41) and a Cryptologia paper citing a 1657 HHStA key (DECODE R1280, no name on it)."
+   },
+   "key_check": "No key for Lisola's 1655-60 cipher is held in the repo or named on DECODE. Nothing could be tested because no ciphertext is online.",
+   "key_held": "Imperial keys of the period exist on DECODE (HHStA Staatskanzlei Interiora Chiffrenschlüssel, e.g. R1280, undated homophonic key with nomenclator) and Lisola's own later ciphers (R1915-R1918, R2040); none identified as his 1655-60 key, none tested.",
+   "duplicates": "known.py 'Lisola' (16 Nov 2026): only catalogue entries for Lisola 1643 and 1667 (Spanien Varia / 20-4-10) and the DECODE 1669-74 records (R1915-R1918, R2040); no catalogue entry or other lead for this report. The other Lisola reports of 1655-60 that Pribram marks 'nicht dechiffrirt' are separate leads (2508-2512), each a different date; Pribram has two further 'nicht dechiffrirte Stelle' notes (after the Rangstreit report, cf. 24 July 1657, and at p. 543) that are not in this batch.",
+   "verdict": "open",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2512": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Editor's note confirmed today in both OCR copies of Pribram 1887 (no. CLX, note at p. 547): 'Folgt eine nicht dechiffrirte Stelle'. No decipherment printed or found anywhere; follows the catalogue precedent for editor-described undeciphered passages (e.g. entries 899, 1026, 1034). Not seen: the Karton is assigned from AIS date ranges, the leaf is not itemised.",
+  "access": "archive",
+  "access_note": "HHStA reading room or a scan order; AIS describes StAbt Polen I by Karton only (no scan); if not in the Polen I Karton, try Geheime Staatsregistratur 35-30 and Brandenburgica/Suecica of the same months.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Re-checked 16 Nov 2026: both archive.org OCR copies of Pribram, AÖG 70 (1887) downloaded (bub_gb_oIkJAAAAIAAJ_djvu.txt and bub_gb_tZ_NAAAAMAAJ_djvu.txt) and every 'dechiffrirt' note listed; the note for this report reads, in bub_gb_tZ_NAAAAMAAJ, 'Folgt eine nicht dechiffrirte Stelle' (no. CLX, note at p. 547). Pribram, Die Berichte des kaiserlichen Gesandten Franz von Lisola 1655-1660, AÖG 70 (1887), no. CLX, p. 547 (archive.org bub_gb_oIkJAAAAIAAJ and bub_gb_tZ_NAAAAMAAJ OCR); original HHStA StAbt Polen I 74 (Karton assigned from the AIS date range 07.1659-02.1660), not online",
+    "extent": "One passage of cipher without decipherment; the editor gives no length",
+    "cipher": "No item-level archive description exists (AIS lists the Karton only, no scan). The editor, who printed from the original in the Staatsarchiv, describes the cipher: 'Folgt eine nicht dechiffrirte Stelle'. In the same volume he prints the ciphered passages of sibling reports between asterisks ('Die zwischen Sternen stehenden Stellen sind im Original chiffrirt'), i.e. with their contemporary decipherment, so 'nicht dechiffrirt' means no decipherment was with this piece and he made none. Cipher system not stated."
+   },
+   "prior_art": {
+    "decode": "DECODE RecordsList was searched on 11 Nov 2026 for the sibling Lisola reports ('Polen I', 'Polonica', 'Karl Gustav', 'Lisola'): no HHStA Polen I material on DECODE; the only Lisola records are R1915-R1918 and R2040 (1669-74). No separate DECODE search for Danzig 1660 was run today.",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits. Earlier check (11 Nov): cryptiana index and variable3.htm name Lisola only inside a c. 1657-59 Porcia key; no page on Lisola reports of 1655-60.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Lisola: 0 hits; no Lasry paper on Lisola in the web searches of 11 and 16 Nov 2026; known.py 'Lisola' shows no Lasry item in the repo.",
+    "edition": "Pribram 1887 is the edition and was opened at no. CLX (Danzig, 6 Feb 1660, p. 547): it prints the readable text and states that a passage is not deciphered. No other edition of the report was found.",
+    "literature": "Web searches for Lisola cipher reports 1656-60 (11 and 16 Nov 2026, including Lisola 1656 1657 1660 Berichte Chiffre entschlüsselt / deciphered Pribram) returned nothing on a decipherment of any Lisola report; Oliva congress literature not searched separately."
+   },
+   "key_check": "No key for Lisola's 1655-60 cipher is held in the repo or named on DECODE. Nothing could be tested because no ciphertext is online.",
+   "key_held": "Imperial keys of the period exist on DECODE (HHStA Staatskanzlei Interiora Chiffrenschlüssel, e.g. R1280, undated homophonic key with nomenclator) and Lisola's own later ciphers (R1915-R1918, R2040); none identified as his 1655-60 key, none tested.",
+   "duplicates": "known.py 'Lisola' (16 Nov 2026): only catalogue entries for Lisola 1643 and 1667 (Spanien Varia / 20-4-10) and the DECODE 1669-74 records (R1915-R1918, R2040); no catalogue entry or other lead for this report. The other Lisola reports of 1655-60 that Pribram marks 'nicht dechiffrirt' are separate leads (2508-2512), each a different date; Pribram has two further 'nicht dechiffrirte Stelle' notes (after the Rangstreit report, cf. 24 July 1657, and at p. 543) that are not in this batch.",
+   "verdict": "open",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2516": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Editor's footnote confirmed today in the archive.org OCR of Urkunden und Actenstücke XIV/2 (1891), p. 1186 n. 1, under 'Fridag an den Kaiser. Dat. Berlin 17. Sept. 1685. (Or.)': a longer passage not deciphered, on Brandenburg's position towards the European powers. No decipherment printed or found; follows the catalogue precedent for editor-described undeciphered passages. Not seen; HHStA Karton not identified.",
+  "access": "archive",
+  "access_note": "HHStA Vienna, StAbt Brandenburgica (described by Karton in the AIS; Karton for Sept 1685 not looked up today). Reading room or scan order.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm von Brandenburg XIV/2 (ed. A. F. Pribram, Berlin 1891), section 'Mission Franz Heinrichs von Fridag, Dec. 1684 - April 1688', p. 1186, entry 'Fridag an den Kaiser. Dat. Berlin 17. Sept. 1685. (Or.)' and its footnote; read 16 Nov 2026 in the archive.org OCR (pt2urkundenundac14berl_djvu.txt). Original in HHStA Vienna, StAbt Brandenburgica, not online.",
+    "extent": "One longer passage ('ein längerer Passus') of a single report; length in lines or pages not given by the editor.",
+    "cipher": "No archive description at item level. The editor, who worked from the original (marked Or.), writes in the footnote: 'Auf diese Stelle folgt ein längerer nicht dechiffrirter Passus, der - wie zu ersehen - von der Stellung Brandenburgs zu den verschiedenen Grossstaaten Europa's handelt.' The regest before it summarises only the readable part (Meinders on the Palatine testament and the Celle dispute). Elsewhere in the same volume (p. ~1404) the editor notes a ciphered instruction he took from the surviving draft, so he distinguished resolved and unresolved cipher. Cipher system not stated."
+   },
+   "prior_art": {
+    "decode": "known.py 'Fridag' (DECODE dumps, ledgers, catalogue, leads) on 16 Nov 2026: only this lead and its printed-series sweep candidate; the sweep's DECODE name search (11 Nov 2026) for Fridag returned 0 records. Not on DECODE.",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Fridag: 0 hits; no entry for an imperial report from Berlin in 1685.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Fridag: 0 hits; no Lasry paper on Fridag or the Berlin embassy found in the web search.",
+    "edition": "Urkunden und Actenstücke XIV/2 (1891) is the edition: it gives a regest of the report and states that the longer passage was not deciphered; it prints no decipherment. No other edition of Fridag's reports was found.",
+    "literature": "Web search 16 Nov 2026 (Fridag Berlin 1685 Bericht Kaiser Chiffre / chiffriert / entziffert) found only the UA XIV/2 edition and an unrelated Stützel article on 1630s-40s imperial ciphers; no study or decipherment of Fridag's cipher."
+   },
+   "key_check": "No key for Fridag's 1684-88 Berlin embassy is held in the repo or named on DECODE; nothing could be tested because no ciphertext is online.",
+   "duplicates": "known.py 'Fridag' (16 Nov 2026): only this lead and research/sweep_2026-11-11_printed_series; no catalogue entry for Fridag, Berlin 1685 or StAbt Brandenburgica of that year.",
+   "verdict": "open",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2765": {
+  "verdict": "not_cipher",
+  "confidence": "high",
+  "note": "The full regest of HoA 138,24 (read by script 16 Nov 2026) puts 'Geheimschrift' only in the closing remark '(Unterschrift auf einem Schreiben an Dr. Christoph Schalck in Geheimschrift)': only the signature of one letter in a 1618-22 file of about Graubünden affairs is in secret script. That is a disguised signature, not an enciphered text.",
+  "access": "archive",
+  "access_note": "VLA findbuch answers scripts (route in vla.sh: rech_start.php POST, rechergs.php POST with the result keys, props.php?kind=ve_e). Box (Schachtel) 220; not digitised.",
+  "vetting": {
+   "seen": {
+    "kind": "not online",
+    "where": "Vorarlberger Landesarchiv findbuch, full record of A.05 HoA 138,24 (ve_id 2340412, be_id 61216), fetched by script 16 Nov 2026 from https://www.vla.findbuch.net/php/props.php?kind=ve_e&ve_id=2340412&be_id=61216 after a search for 'Geheimschrift' (3 hits: HoA 138,24; VOKA AN 629 'Geheimschrift, Arkana, Chiffrierungsschlüssel', undated; the library copy of Meister 1902). Text saved as hoa138_24.txt in this folder.",
+    "extent": "One signature on one letter (to Dr. Christoph Schalck) inside a file (1 Akt, 5 June 1618 - 30 Aug 1622, Schachtel 220); no ciphered text body is described.",
+    "cipher": "Archive description, last clause of the regest: '(Unterschrift auf einem Schreiben an Dr.Christoph Schalck in Geheimschrift)'. The rest of the regest lists Graubünden meetings, disputes, the Strafgericht, correspondence of Ramschwag, Kaspar of Hohenems, the Three Leagues, Glarus, Zurich, Guler and Rudolf von Salis, with no cipher mentioned."
+   },
+   "prior_art": {
+    "decode": "known.py 'HoA 138', 'Hohenems', 'Ramschwag', 'Schalck' on 16 Nov 2026 (DECODE dumps, ledgers, catalogue, leads): only this lead and the 15 Nov Austria/Swiss sweep; nothing on DECODE.",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Hohenems and Ramschwag: 0 hits.",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Hohenems and Ramschwag: 0 hits.",
+    "edition": "No edition of the file is cited in the record; none was searched further because the record shows the item holds no ciphertext beyond a signature.",
+    "literature": "No literature search was run: the archive's own description settles that only a signature is in secret script."
+   },
+   "key_check": "No key was relevant: a single disguised signature is not a target. The separate VLA file VOKA AN 629 'Geheimschrift, Arkana, Chiffrierungsschlüssel' (undated) is a key file already listed among the sweep's key leads.",
+   "duplicates": "known.py on 'HoA 138', 'Hohenems', 'Ramschwag', 'Schalck': no catalogue entry or other lead for this file.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher target: the archive's full regest shows that only the signature of one letter to Dr. Christoph Schalck is written in secret script; there is no enciphered text to read.",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2879": {
+  "verdict": null,
+  "confidence": "medium",
+  "note": "Seen today (Waseda repository PDF i14_a4582, waseda.repo.nii.ac.jp/records/34552): a Government Telegraphs form, Motono to 'Okuma Sangi, Yedo', handed in at Nagasaki 7 Nov 1874 (London 6th, 1.38 pm), 'Reply to telegram 3rd instant', then 83 two-digit groups plus 5500 (x4) and 97110000, ending in clear 'above is not in England'. Every group has a red katakana note above it, and these notes match the 1874 table 電信秘號九九格 in i14_a0133 (2-digit = column,row of a 9x9 iroha grid: 14 ニ, 17 ト, 25 カ, 64 ゲ, 73 ブ, 87 君). But the resulting kana stream as I read it (氏 グ ヒ ヲ ブ ナ ヘ 了 ヤ ゴ / ニ ナリ フ グ バ ツ ト 了 ブ ...) does not read as Japanese, and runs like 44 63 71 repeat. So the red notes may be only the code-to-kana step, with a second layer still unread. No verdict until a reader of Japanese checks the red kana: if they make sense, close it as read; if not, it is a strong open lead with the table held.",
+  "access": "online",
+  "access_note": "Waseda kotenseki HTML pages are in maintenance (503), but the Waseda institutional repository serves the same scans as PDFs: GET https://waseda.repo.nii.ac.jp/api/records/<recid> gives the file URL (handle 2065/N redirects to the recid). i14_a4582 = recid 34552.",
+  "record_correction": "The record says '駐英公使本野盛亨', but the form was handed in at Nagasaki and relayed from London, addressed to Okuma as Sangi. The sibling 暗号電報訳文 (i14_a4670, recid 34425) is NOT a translation of this telegram: it is one page of katakana containing ン, which the 9x9 grid lacks, and it does not read as Japanese either (メナタンコテテゴクレユカトヤナモ ...)."
+ },
+ "2880": {
+  "verdict": "not_cipher",
+  "confidence": "high",
+  "note": "Both volumes of i14_a3050 (Waseda repository recid 32096, PDFs i14_a3050_0001 13 images and _0002 16 images, all seen today as contact sheets) are clear manuscript Japanese: Enomoto Takeaki's report, written out once on Ōkurashō paper and once on Gaimushō paper. The 'doubts about cipher telegrams' are discussed in clear prose. No numeric or kana groups appear on any page. The related 暗号表 (i14_a3051, recid 29861, 3 images) is a large code table (key material), not ciphertext.",
+  "access": "online",
+  "access_note": "Waseda institutional repository PDFs (waseda.repo.nii.ac.jp/records/32096 and 29861); kotenseki HTML pages are in maintenance.",
+  "vetting": {
+   "seen": {
+    "kind": "scan",
+    "where": "Waseda University Library, Okuma Papers i14_a3050: https://waseda.repo.nii.ac.jp/record/32096/files/i14_a3050_0001.pdf and i14_a3050_0002.pdf (handle 2065/11025), all 29 images rendered and read as contact sheets on 16 Nov 2026; related table i14_a3051 (https://waseda.repo.nii.ac.jp/record/29861/files/i14_a3051.pdf, handle 2065/11026), 3 images.",
+    "extent": "Two sewn volumes of clear manuscript text, about 12 written openings each; no cipher groups. The table i14_a3051 is three large ruled sheets of code entries.",
+    "cipher": "No cipher: every page is clear Japanese (kanji and katakana) on official ruled paper (大蔵省 / 外務省), signed by Enomoto Takeaki; the cipher-telegram question is discussed in clear text. Nothing to decipher."
+   },
+   "prior_art": {
+    "decode": "known.py 'Enomoto', 'Okuma', 'i14_a' on 16 Nov 2026: only this lead, its sibling leads 2879 and 2881, and the sweep files that produced them; nothing on DECODE.",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Enomoto and Okuma: 0 hits (Japanese items there are the 1916 Sun Yat-sen telegram and others, not this).",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Enomoto and Okuma: 0 hits.",
+    "edition": "No printed edition was checked; not needed, because the scans show the item is clear text throughout.",
+    "literature": "No literature search was run: the scans settle that the item contains no ciphertext."
+   },
+   "key_check": "Not applicable to this item. The neighbouring 暗号表 i14_a3051 is a code table and should be recorded as key material with the 1874 tables of lead 2881.",
+   "duplicates": "known.py on Enomoto, Okuma and i14_a: no catalogue entry; sibling leads 2879 (Motono telegram) and 2881 (1874 tables) are different items.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher: Enomoto's report on doubts about cipher telegrams is clear Japanese throughout in both copies, with no ciphertext; the related 暗号表 is key material.",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2881": {
+  "verdict": "not_cipher",
+  "confidence": "high",
+  "note": "Key material, not ciphertext. i14_a0133 (Waseda repository recid 30633, 5 images seen today) holds Yanagiwara's 10 Apr 1874 cover note (signed 全権公使柳原前光, 七年四月十日), the table 電信秘號九九格 (a 9x9 grid: column digit then row digit gives an iroha kana, with dakuten and a few words: 我 君 彼 有 無 ベシ ナリ 了 氏 ヨリ ニテ マデ), and a 増補改正暗号 table (lettered columns A-V of names and words added to the grid). This grid matches the red interlinear kana on the Motono telegram of 7 Nov 1874 (lead 2879). The other two items (i14_a0147, hdl 2065/6825) were not opened.",
+  "access": "online",
+  "access_note": "Waseda institutional repository PDF https://waseda.repo.nii.ac.jp/record/30633/files/i14_a0133.pdf; i14_a0147 and 2065/6825 are reachable the same way (not fetched).",
+  "vetting": {
+   "seen": {
+    "kind": "scan",
+    "where": "Waseda University Library, Okuma Papers i14_a0133 (handle 2065/6786): https://waseda.repo.nii.ac.jp/record/30633/files/i14_a0133.pdf, 5 images rendered and read on 16 Nov 2026 (wrapper titled 極機關鍵, the 電信秘號九九格 grid, Yanagiwara's covering note dated 七年四月十日, the 増補改正暗号 tables).",
+    "extent": "Two code tables (a 9x9 kana grid and an enlarged word list in columns A-V) with a one-page covering note; no telegram text.",
+    "cipher": "No ciphertext: these are code tables. The 電信秘號九九格 gives each iroha kana as a two-digit number, column first (e.g. 14 ニ, 17 ト, 25 カ, 64 ゲ, 73 ブ, 87 君). The 増補改正暗号 adds place names, officials and words under lettered columns."
+   },
+   "prior_art": {
+    "decode": "known.py 'Okuma', 'i14_a', 'Yanagiwara' on 16 Nov 2026: only the sibling leads 2879 and 2880 and their sweep files; not on DECODE.",
+    "tomokiyo": "Tomokiyo unsolved list (cryptiana unsolved.htm, fetched 15 Nov 2026) searched for Okuma (0 hits) and Japan (12 hits, none on an 1874 telegraph code or the Taiwan expedition).",
+    "lasry": "Lasry list (cryptiana GL.htm, fetched 15 Nov 2026) searched for Okuma: 0 hits.",
+    "edition": "No edition was checked; the item is a key, so no reading is in question.",
+    "literature": "No literature search was run on early Meiji telegraph codes; this would matter only for the Motono telegram (lead 2879)."
+   },
+   "key_check": "This is the key. It matches the red interlinear notes on the Motono telegram i14_a4582 (lead 2879), so it should be recorded as key material for that lead (key_held).",
+   "duplicates": "known.py on Okuma, i14_a and Yanagiwara: no catalogue entry for these tables.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher target: the items are the 1874 Taiwan-affair telegraph code tables (a 9x9 kana grid and an enlarged word list) with a covering note and no ciphertext. Keep them as key material for the Motono telegram, lead 2879.",
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+  }
+ },
+ "2065": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "The WVU record answers again (curl, 16 Nov 2026): collection A&M 1841, 'Draft of a telegram sent by Major General George B. McClelland from Clarksburg to General Morris on 30 June 1861, via the Baltimore & Ohio R. R. Telegraph. Part of the message appears to be in code.' One item, 0.01 lin. ft, no digital object. The archive's wording is hedged ('appears to be'), and McClellan's own draft may hold only Stager-style code words for names, so I give no verdict. No printed text was found: a web search and the spirit61.info calendar of McClellan's 1861 papers list a 20 June telegram to Morris and nothing for 30 June. The two archive.org items labelled 'v.2' in the Official Records collection proved to be Series II and III, so OR Ser. I vol. 2 was not checked.",
+  "access": "archive",
+  "access_note": "West Virginia & Regional History Center reading room or a scan request; finding aid https://archives.lib.wvu.edu/repositories/2/resources/5460 (A&M 1841) now loads by curl. Unblock: check OR Ser. I vol. 2 (western Virginia correspondence, June-July 1861) and Sears, Civil War Papers of McClellan, for 30 June, then order an image.",
+  "record_correction": "Collection number is A&M 1841 (resource 5460); the archive's own spelling is 'McClelland'."
+ },
+ "2107": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessable; the recorded blocker stands. The only evidence is the Winterthur catalogue line (via SNAC and ArchiveGrid) 'Some of the entries are written in code'. A web search on 16 Nov 2026 found that line and the separate Winterthur diary of 1845-1860 'partly in shorthand, possibly by Thomas Damon', and nothing on the system or a transcription. Shorthand rather than a cipher is quite possible, and no image is online.",
+  "access": "archive",
+  "access_note": "Winterthur Library (Andrews Shaker Collection, McKinstry no. 817). ArchiveGrid is bot-checked today and the Winterthur libraryhost search errored earlier. Unblock: an image of one coded entry, or the McKinstry 1987 catalogue note. Tomokiyo and Lasry lists (fetched 15 Nov 2026) and known.py have nothing on Damon or Enfield Shakers."
+ }
+}

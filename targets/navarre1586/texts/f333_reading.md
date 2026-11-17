@@ -8,13 +8,20 @@ marcher; the five slip figures). `[162]`, `[166]`, `[167]`, `[189]`, `[190]`, `[
 except 162 = le Roy de Navarre (Tomokiyo's table); `[…]` the run after [190] (etqiiro) that makes no word; `…` the
 clear text abridged in the decryption. French.
 
+Marks added 16 Nov 2026 after the key replay (`docs/_replay.py`; `replay.tsv`): a letter in [ ] is not what the key
+gives for the figure there (55 = u in advis, 19 = d and 31 = i in a cheval, 88 = ha in fault, 20 = e in marcher; the
+figures stand as written on the image); `{s}` is figure 48, which the key reads s and the reading leaves out, after
+the clear word *les*; `[…]` is now only figures 120 31 126 (qi i ro), the figure 61 before them being *et*; the clear
+*les* before *reistres* is outside ⟨ ⟩ as on the leaf, and the enciphered *de* (74) inside. No letter of the reading
+was changed.
+
 ## Reading
 
 L'armée du duc de Mayenne doit … assieger Castillon … Montauban a failly d'estre surprise par la trahison et
 conspiration du Sr de Claux … Drak a faict ravage en Espagnols. Il a ruiné et rasé l'isle de St Dominique. Il est allé
 a Cartagene et fait terreur a tous les Espagnols. [162 = le Roy de Navarre] desire fort d'avoir des nouvelles de
-[204] de [189] [190] ⟨[…] et leur advis sur le chemin [qu'i]l doit tenir et comment⟩. Il attend en bonne devotion ce
-qui luy sera mandé pour l'effectuer. [167] assurer qu'aussi tost que ⟨les reistres marcheront il montera a cheval;
-[166] et son frere sont de bonne volonte; il fault avancer la levee et la faire marcher⟩ le plustost qu'on pourra. Le
+[204] ⟨de⟩ [189] [190] ⟨et […] et leur advi[s] sur le chemin [qu'i]l doit tenir et comment⟩. Il attend en bonne devotion ce
+qui luy sera mandé pour l'effectuer. [167] assurer qu'aussi tost que les ⟨{s} reistres marcheront il montera a [c]heva[l];
+[166] et son frere sont de bonne volonte; il [f]au[l]t avancer la levee et la faire mar[c]her⟩ le plustost qu'on pourra. Le
 Roy de Navarre a envoyé, comme vous savez, le Sr de Vesin de la Marsilliere a Berne avec les ambassadeurs des quatre
 cantons de Suisse.

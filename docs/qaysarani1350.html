@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ibn al-Qaysarani&rsquo;s cipher verses, about 1330&ndash;1370 (Penn LJS 51) — Read</title>
 <meta name="description" content="The last cipher in a Mamluk secretary's book of cipher verses (University of Pennsylvania, LJS 51, f. 106v) lost its solution with the end of the manuscript." data-full="The last cipher in a Mamluk secretary's book of cipher verses (University of Pennsylvania, LJS 51, f. 106v) lost its solution with the end of the manuscript. Its key of 22 signs was recovered from a red gloss over the first word, repeated words and the metre: two Arabic love verses about a drowsy-eyed girl and a sleepless lover.">
-<link rel="stylesheet" href="style.css?v=ccff5c9e">
+<link rel="stylesheet" href="style.css?v=58705d93">
 <meta name="date" content="2026-11-16">
 <meta name="last-modified" content="2026-11-16">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -67,12 +67,12 @@
 <div class="callout glance">
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">Key from adjacent plaintext &middot; complete</span></p>
 <dl>
-  <dt>The document</dt><dd>Seven lines of invented signs that Ibn al-Qaysarani wrote to the unnamed compiler of a book of cipher verses. This project&rsquo;s survey dates the text of the book to about 1330&ndash;1370, from an anecdote dated 730-odd AH and the people named; Penn dates this copy to the 15th century.</dd>
+  <dt>The document</dt><dd>Seven lines of invented signs that Ibn al-Qaysarani wrote to the unnamed compiler of a book of cipher verses. This project&rsquo;s survey places the text of the book at about 1330&ndash;1370, an estimate from an anecdote dated 730-odd AH and the people named. Penn dates the manuscript &ldquo;14--&rdquo; and gives no date for the text.</dd>
   <dt>Where</dt><dd>University of Pennsylvania, Kislak Center, LJS 51, f. 106v, the last page of text. Not on DECODE. It was no. 2882 of this project&rsquo;s catalogue of open ciphers.</dd>
   <dt>The cipher</dt><dd>One sign for each Arabic letter, 22 signs in all, written right to left with a dotted stroke between words. Lam-alif has a sign of its own.</dd>
   <dt>How it was deciphered</dt><dd>Red letters over the first five signs give five of the six letters of the first word. The word for &ldquo;eyelids&rdquo; comes three times, and the metre and the rhyme fixed the rest.</dd>
   <dt>What it says</dt><dd>Two verses: love has made the poet&rsquo;s heart a drowsy-eyed girl&rsquo;s dwelling; he lies awake with sound eyelids while she sleeps with &ldquo;sick&rdquo; ones.</dd>
-  <dt>Still open</dt><dd>No sign is without a value. Seven signs are doubtful on the page and take their value from their words. The verses were not found in any other source.</dd>
+  <dt>Still open</dt><dd>No sign is without a value. Seven signs are doubtful on the page and take their value from their words, and one word is taken against the page (<em>ṣiḥāḥ</em> is written <em>ṣiḥāj</em>) and one is damaged (the first <em>lahā</em> of line 2). A model&rsquo;s review for the second maintainer (issue #714), not a person&rsquo;s, graded the reading B. This is the first modern reading; the compiler&rsquo;s own solution is lost. The verses were not found in the sources searched; al-Qalqashandī and <em>Arabic Origins of Cryptology</em> were not searched.</dd>
 </dl>
 </div>
 
@@ -82,7 +82,7 @@ introduced by &ldquo;so-and-so wrote to me&rdquo;, the cipher follows in an alph
 compiler writes that he worked it out and gives the verses. The manuscript has lost its beginning and its end. On the last
 page, f. 106v, a message from Ibn al-Qaysarani stands in seven lines of signs. Under it the compiler begins &ldquo;I unravelled
 it at once &hellip; and found that he had made the lam-alif &hellip;&rdquo;, and there the manuscript breaks off. The leaf
-with his solution is gone. The sender&rsquo;s name was read as Ibn al-Qaysarani in the project&rsquo;s survey of the volume and was not re-read letter by letter here.</p>
+with his solution is gone. The sender&rsquo;s name was read as Ibn al-Qaysarani in the project&rsquo;s survey of the volume and was not re-read letter by letter here. A separate attempt on the same leaf (see section 04) re-read the name at 5x as Ibn al-Qubabi (or al-Qabbani); the two readings are not reconciled.</p>
 <figure data-credit="University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217)"><img src="qaysarani1350_cipher.jpg" width="1100" height="938" decoding="async" alt="Seven lines of invented cipher signs between two lines of Arabic script, with small red letters over the first signs of the first line" loading="lazy"><figcaption>F. 106v, lines 5&ndash;13: the name of the sender, the seven cipher lines, and the compiler&rsquo;s remark that breaks off. The page reads from right to left. <span class="credit">Image: University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217).</span></figcaption></figure>
 <p>The transcription has 89 signs of 22 kinds in 21 words. A word runs over the end of a line twice. Two signs of line 1
 are rubbed, and three signs of line 2 stand in a damaged patch.</p>
@@ -162,11 +162,18 @@ al-Ṣafadī (love verse and the letters he exchanged with other secretaries) an
 OpenITI corpus. The reading scores &minus;2.537 per letter. Keys of the same shape at random score &minus;4.901 on average
 (the reading is 5.3 standard deviations above them), and keys fitted by the same solver to the signs shuffled score
 &minus;2.881 at best on average and &minus;2.745 at their best (3.4 standard deviations below the reading). That is a pass,
-but a narrow one, and the text is short: run again with three other random seeds, the test gave one &ldquo;weak&rdquo; (2.7
+but a narrow one, and the test is inconclusive at 89 signs: it shows that the text is Arabic-like under the key and does not carry the reading, which rests on the metre, the rhyme, the grammar and the red gloss. The text is short: run again with three other random seeds, the test gave one &ldquo;weak&rdquo; (2.7
 standard deviations) and two passes, and in all four runs the reading scored above every fitted key. A fake reading fitted to
-the shuffled signs, run as a control, does not pass. The signs were not
-compared with the other alphabets of the volume. Two searches for the exact wording of the verses found no other copy,
+the shuffled signs, run as a control, does not pass. Seven of the 22 signs rest on the sense of one word each (قد, مثوى, وخدّي, صحاح and two single signs, ة and لا), and the words are chosen by sense; none of the alternatives gives a verse that reads as well. The signs were not
+compared with the other alphabets of the volume (ff. 1r&ndash;106r), the last signs of <em>ṣiḥāḥ</em> and the first <em>lahā</em> of line 2 were not re-read on the master image, and al-Qalqashandī&rsquo;s <em>Ṣubḥ al-aʿshā</em> (vol. 9) and <em>Arabic Origins of Cryptology</em>, where such verses might have been printed, were not searched. Two searches for the exact wording of the verses found no other copy,
 so it is not known whether they are Ibn al-Qaysarani&rsquo;s own.</p>
+<p>A separate attempt on the same leaf, made from the images alone, did not read it and is kept in
+<code translate="no">targets/ljs51/</code>. Compared with this key on 16 November 2026, its sign labels, matched to this folder&rsquo;s signs by best fit, agree at 77 of 85
+aligned positions (eight of them labels used once), found the ṭawīl metre (its second verse scanned only with an added null alif) and a rhyme in <em>-ā</em> after ض, and had the two commonest signs (ا and و) right. Of its
+values for other signs, 11 of 37 positions agree; it gave the alif sign a second value as lam, which this key does not have, and its
+words are mostly not these. It is a failed search, run with a letter model whose normaliser split vowelled words (fixed since; not rerun, so it is not shown that the fixed model would fail): with the metre alone, more than 100,000 readings of the opening half-verse scanned, and it
+ended with a scanning candidate, not a reading. It read the second and fourth red letters over the first five signs as ta and
+ghayn, where this page reads nun and ayn.</p>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
@@ -205,7 +212,20 @@ Two verses in the ṭawīl metre, rhyme -ḍā. Every one of the 89 signs has a 
   lam-alif sign followed by جفان.
 - Doubtful signs, all read from sense and metre: the last sign of وناعسة (abraded; ة), the lam-alif sign (abraded),
   the three signs of the first لها in line 2 (in a damaged patch), and the last letter of صحاح, whose sign looks
-  nearer to the ج sign than to the ح sign before it.</pre></details>
+  nearer to the ج sign than to the ح sign before it.
+
+## Read against the shape on the page (marked in place)
+
+- **صحا{ح}** (line 5): the last sign is written like ج (a closed loop at the foot, as in lines 4 and 7), not like the
+  ح sign before it. As written the word is صحاج. It is read صحاح from the sense (the antithesis with مرضى); a slip of the
+  writer or the copyist is possible. This is the strongest emendation in the text.
+- **{ل}ها** (line 2, the first لها): three signs in a damaged patch. The ه is whole; before it only a small loop below the
+  baseline survives, and the divider after the group has lost its dots. The value comes from the parallel لها ارضا (line 4) and
+  from the metre; from the image alone the first sign could be any sign with a lower loop.
+
+Seven of the 22 signs rest on the sense of one word each (ح, ص, ث, خ, ق, ة, لا). The decision: both marked words are
+counted as read, as one-digit slips with the rest of the word fixed by the key (convention of 14 Nov 2026); 19 of 21 words
+stand without either.</pre></details>
 <details class="ftext"><summary>Translation</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/qaysarani1350/translation_en.md">translation_en.md</a></p><pre translate="no"># Translation: Penn LJS 51, f. 106v
 
 Many a girl with drowsy eyelids: love has made my heart her dwelling, and my cheek the ground beneath her.
@@ -222,6 +242,7 @@ the sound-eyed sleepless lover against the sick-eyed sleeper.)</pre></details>
 <ul>
 <li>University of Pennsylvania, Kislak Center, LJS 51, f. 106v: <a href="https://openn.library.upenn.edu/Data/0001/html/ljs51.html">OPenn</a>, image 0084_0217 (<a href="https://openn.library.upenn.edu/Data/0001/ljs51/data/master/0084_0217.tif">master TIFF</a>).</li>
 <li><a href="https://search.digital-scriptorium.org/catalog/DS738">Digital Scriptorium DS738</a>, the catalogue record of the manuscript.</li>
+<li>The earlier ciphertext-only attempt on the same leaf, with its transcription, solvers and log: <code translate="no">targets/ljs51/</code> in the repository.</li>
 <li>The survey of the volume that found this cipher without its solution (it checked the layout of every page, not each plaintext): <code translate="no">research/sweep_2026-11-15_arabic/part_A.md</code> in the repository.</li>
 </ul>
 <p class="muted">The transcription, key, decoder and notes are in the repository (<code translate="no">targets/qaysarani1350/</code>). Manuscript images: University of Pennsylvania Libraries, public domain, via OPenn.</p>
@@ -241,11 +262,11 @@ the sound-eyed sleepless lover against the sick-eyed sleeper.)</pre></details>
 </main>
 <footer><div class="in">
   <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0 &middot; Images: University of Pennsylvania Libraries, LJS 51, public domain, via OPenn</span>
-  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="witham1250.html" rel="prev">&larr; Witham sword inscription c. 1250-1330</a><a href="vico1398.html" rel="next">Vico to Carbonell 1398 1398 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="witham1250.html" rel="prev">&larr; Witham sword inscription c. 1250-1330</a><a href="vico1398.html" rel="next">Vico to Carbonell 1398 1398 &rarr;</a><a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml&amp;title=Verification%3A+qaysarani1350&amp;page=https%3A%2F%2Fcyphersolver.com%2Fqaysarani1350.html" rel="noopener">Contest or verify this reading &#8599;</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
 <script src="cipher-reveal.js?v=2ca93935" defer></script>
-<script src="solve-replay.js?v=ccff5c9e" defer></script>
-<script src="zoom.js?v=ccff5c9e" defer></script>
-<script src="site.js?v=ccff5c9e"></script>
+<script src="solve-replay.js?v=58705d93" defer></script>
+<script src="zoom.js?v=58705d93" defer></script>
+<script src="site.js?v=58705d93"></script>
 </body>
 </html>

@@ -94,6 +94,18 @@ Malcolm McBratney (Brisbane), working with Claude (Anthropic). Files: `key_v2/EV
 - **Content** (recipe level; English is Claude's summary, unchecked): the aqua regis recipe continued from p.137, the phlegm drawn off in a water bath and sal armoniack added (pp.138-139); dissolving gold in aqua regis and refining gold with lead on a cupel (pp.139-140); the end of a precipitate made with spirit of wine, and how to multiply it with mercurius solis (p.150).
 - Prior art: as for pp.124-137 (repository only; pp.20-178 listed as unread upstream).
 
+## Integration check of pp.124-137 and pp.138-150 (16 Nov 2026, PR #686)
+
+Checked by a model session for the project; no person has checked the transcriptions, the decodes or the English.
+
+- Decode: a decoder written here from `key.tsv` and from `key_v2.tsv` gives the contributor's letters on every line (306 of 306, pp.124-137; 90 of 90, pp.138-150): 6,072 and 1,650 signs in the key, 143 and 32 doubt-marked, 7 and 0 `#`, 1 and 0 labels not in the key. `transcription_p*.tsv` and `decryption_p*.txt` are byte for byte the blind files and `decode_once.txt`.
+- Hashes: `key.tsv` on main = `blind/p124-137/key_frozen.tsv` = sha256 7e6f0b8a...a9b3; `BLIND_a.tsv`, `BLIND_b.tsv`, `BLIND_all.tsv`, `key_v2.tsv`, `SHEET_v2.md` and `blind/p138-150/BLIND.tsv` match their FREEZE files. The times in the FREEZE files are the contributor's record; the pp.124-137 result was committed (02:11 UTC) before key_v2 and the pp.138-150 pass (04:04 UTC).
+- Judge counts re-added from `judge.tsv`: S 5,667, E 398, N 32 of 6,097 letters (92.9%), no line differs from its marks; S 1,573, E 68, N 11 of 1,652 (95.2%). These are shares of letters, the contributor's measure. By the README rule (words), 1,094 of the 1,485 words of the pp.124-137 judge text carry no mark = 73.7%; the pp.138-150 judge text marks no words, so no word share can be counted there. Both entries stay "decoded, not read".
+- Shuffle controls re-run with the scripts as sent (5,000 shuffles, seeds 20261112 and 7, `lang` de-1500s): the same figures, real -3.0196 and -2.4593, 0 of 5,000 at or above the real decode at both seeds on both sets.
+- Images (Wellcome IIIF, plain curl; scan 0117 has the sha256 of `PACKET_INDEX.txt`): p.124 lines 1-4 (79 signs) and p.138 lines 1-2 (40 signs) compared with the blind labels. Signs, word dividers and order agree; the differences seen on p.124 are of the kinds the contributor's diagnosis names (a closed figure 4 labelled 4L in L01 "drlcket" and L02 "clrium", and the two signs o-with-tail + 7 labelled as one ARW in L01), which supports "naming, not a wrong key value" on those lines. The other pages were not compared.
+- What "blind" covers: the readers had the label sheet and no letter values, by the prompts and sheets in `blind/`; that they saw nothing else is the contributor's record. The label names 4L, 4R and 4U are the names of `key.tsv` and end in the letter each sign stands for, so the sheet is not wholly free of values.
+- Kept apart: `key.tsv`, `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md` and the earlier credits are unchanged by PR #686. `key_v2.tsv` is a second table beside `key.tsv` (two signs of Kohn's sheet added, no value changed), not a second key.
+
 ## Remaining gaps
 - 96 doubtful signs, mostly the three figure-4 shapes and the s-signs (143 until p.7 was re-read on the image, 14 Nov 2026: 54 there, now 7) - blocker: illegible; assigned partly from context
 - p.9 lines 21-25 and two lines of p.10 - blocker: illegible; stained or damaged in the scan

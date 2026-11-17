@@ -465,3 +465,37 @@ and do not enter it. Missing letters are not penalised (the one lenient rule, li
 sentences with few holes. No content is claimed first: Nr. 529 and Nr. 540 were not searched for clear copies of these
 texts, and the contemporaries had the key.
 
+
+## Integration check, PR #688 (16 Nov 2026): the blind sibling decodes reproduce; all stay decoded, not read
+
+Checked by an AI agent at integration; the contributor's section above is left as filed. No person has checked the
+transcriptions, the readings or the English of these five texts.
+
+| claim | filed | here | how |
+|---|---|---|---|
+| key frozen = `key.tsv` | sha256 c734821e... | the same for `blind16/FREEZE/key_upstream.tsv`, `key.tsv` of 89e25ef and `key.tsv` on main | `git show`, sha256 |
+| five `BLIND.tsv` hashes | `FREEZE_blind.txt` | 5 of 5 match | sha256 |
+| one decode each | `decode_once.txt` | byte for byte on a rerun; a decoder written here from `key.tsv`: 0 differing rows of 1,354 | `decode_once.py` on copies; own script |
+| strict letter judge | 5233/6765, 388/442, 134/189, 41/62, 57/106 | the same, from the marks column | recount of `judge.tsv` |
+| shuffled keys | 0 of 5,000 in ten runs | the same, every figure of `shuffle_out.txt` | `shuffle.py` on a copy |
+| `_check_reading` clean share | 0.094, 0.391, 0.455, 0.533 | 0.092, 0.346, 0.400, 0.444 (No. 29, 281, 203, 186): all "not a reading" | `python docs/_check_reading.py magdeburg1647` on the filed readings |
+
+- **Images** (LASA viewer, max jpg, no bot check): frame 281, all 60 cipher words, and frame 245 left, lines 1-5 (49
+  rows: 44 cipher words, 4 drawn signs, one struck word), agree with the blind transcriptions word for word at the size seen here; g/q and c/e cannot
+  be told apart at that size, which is where the judge's E letters sit. The hashes in `blind16/IMAGES_SHA256.txt` cannot
+  be rechecked: the viewer re-encodes the jpg on each request (two fetches of frame 281 gave two hashes).
+- **Blind, by the contributor's record.** The packets (`blind_packet/PROMPT.txt`, `SHEET.md`) hold shape labels and no
+  values, and the hashes show the decoded files are the frozen ones. The order (key frozen 01:39 UTC, transcriptions
+  finished 01:44-01:50, hashed, decoded 01:51) is from the files' own times: one commit, no outside stamp.
+- **By words.** The filed shares count letters. By the README rule (holes are counted by words), cipher words with
+  every letter S and no letter supplied: No. 29 531 of 1,212 judged rows (0.438), frame 281 35 of 60 (0.583), frame 203
+  10 of 33, frame 186 4 of 11, frame 252 4 of 28. "Decoded, not read" is the right state for the four; frame 252 is a
+  failed result and has no reading. None enters `fraction_read`.
+- **"Beling's hold".** The line "Not added (held)" in the Beling section says which texts Andrew Beling left out of his
+  own addition (PR #578). It is not a reservation: catalogue 1639 has no `reserved` field, and `research/SWEEP.md`
+  ("Reserving a lead", "Claiming a catalogue entry you did not find") knows no other kind. His files for these texts
+  were never in this folder, so nothing of his was used or replaced; he is credited in `profile.json` for the pointer.
+- **Class.** `outcome.class` "not read" follows from the texts list on main (every entry "decoded, not read") and
+  clears the reading check, which was failing on main for this folder. A pull request that files a text as read or
+  read in part (PR #635: f.101, f.5, f.7) has to set the class back when it merges; the two do not touch the same texts.
+- **No reading review** is recorded: nothing here is offered as a reading.
