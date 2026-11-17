@@ -1,6 +1,6 @@
 # butzbach1641: numeric cipher sheet in HStAD D 4 Nr. 76/6 (Landgraf Philipp of Hesse-Butzbach, "Varia")
 
-Status: read in part, with the key found in the same file (read with known key). 95 of 124 words sure = 76.6 %.
+Status: read in part, with the key found in the same file (read with known key). 97 of 124 words sure = 78.2 % (95 = 76.6 % before the blind check of 18 Nov 2026).
 
 ## Source
 
@@ -54,13 +54,12 @@ the others it read as pass 1. Arbitration on the image. Details in `transcriptio
 
 Open point: in "entsetzung" (line 1) the arbitrated digits are 15 23 28 29 28 15 29 34 39 23 17 ("enstsetzung"). At high
 zoom the word seems to be 15 23 29 28 15 29 34 39 23 17, without the third number (pass 1 read it 32, pass 2 [3]2?).
-A blind check of this and 18 other numbers has been prepared for Brice Dudout and not yet answered. The word is counted
-probable either way.
+In the blind check of 18 Nov 2026 (reading.md) Brice Dudout saw the last number as 27, not 17. The word stays probable.
 
 ## Reading and count
 
-See `reading.md`. 124 words: 95 sure, 18 probable or restored, 11 unresolved. By the repository rule (sure words only)
-95 / 124 = 76.6 %, read in part. Our count with probable words was 113 / 124 = 91 % (letter body, lines 1-25: 96 %);
+See `reading.md`. 124 words: 97 sure, 16 probable or restored, 11 unresolved (after the blind check of 18 Nov 2026). By the repository rule (sure words only)
+97 / 124 = 78.2 %, read in part. Our count with probable words was 113 / 124 = 91 % (letter body, lines 1-25: 96 %);
 it is that, a count with probable words. In the letter body the writer has been at Zabern pressing the Imperial and
 Spanish commanders for the relief of Philippsburg; regiments are on the march; the addressee is to encourage the
 officers and soldiers to hold until New Year; the money for them is ready. Sender and addressee are not named.

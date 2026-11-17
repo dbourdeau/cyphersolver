@@ -26,14 +26,14 @@ an overbar on a number doubles its letter (Vilgeehrter, herr). Line breaks insid
 16 {Ligt} {also} zum hochsten, den her-
 17 rn officiern und soldaten ufs
 18 beste zuzusprechen, das sie
-19 ihre {dapffer}[keit] und standhafftigkeit
+19 ihre dapffer[keit] und standhafftigkeit
 20 ‹…› noch rhummlich wie bishero
 21 fortzusetzen und bis den neu-
 22 en Jharstag sich gedulden wol-
 23 len; das gelt vor sie ist be-
 24 reits gesch‹…›, welches
 25 gebracht werden sole,
-26 den die {gräfliche} ‹…› all‹…›      [hole and pasted slip]
+26 den die gräfliche ‹…› all‹…›      [hole and pasted slip]
 27 als an auc[h] ‹…›
 28 wer‹…›
 S1 (oblique slip) {zwantzigsten} ‹…›
@@ -47,13 +47,21 @@ Line 25 reads "gebracht" (17 15 12 27 11 13 18 29); the text posted in issue #74
 | | words |
 |---|---|
 | total (letter body and fragments, slips included) | 124 |
-| sure | 95 |
-| probable or restored | 18 |
+| sure | 97 |
+| probable or restored | 16 |
 | unresolved | 11 |
 
-Read share by the repository rule: 95 / 124 = 76.6 %, **read in part**, with the key found in the same file (read with known key).
+Read share by the repository rule: 97 / 124 = 78.2 % (95 / 124 = 76.6 % before the blind check of 18 Nov 2026, below), **read in part**, with the key found in the same file (read with known key).
 Our own count including probable words was 113 / 124 = 91 % (letter body, lines 1-25: 105 / 109 = 96 %); it is given
 here only as that, a count with probable words. "auc[h]" (line 27, one restored letter) is counted with the probable words.
+
+## Blind shape check (18 Nov 2026)
+
+Brice Dudout answered a blind sheet of 15 boxed numbers on view 13 (each option a crop of a sure number of the same hand, no letters or words shown; 3 controls on sure words, all answered as expected).
+
+- Now sure: "gräfliche" (l. 26, first number 17 confirmed) and "dapffer" (l. 19, 11 and 25 confirmed; the cipher has the seven numbers of "dapffer", "[keit]" is an editorial completion).
+- Against the reading: the last number of "entsetzung" (l. 1) was seen as 27 (r), not 17 (g): the word stays probable although its 29 was confirmed. The end of "gesch‹…›" (l. 24) was seen as 27 and 22 ("geschr…" … "m"), which gives no word: it stays unresolved.
+- Left open by his remarks: "tag" (11 confirmed, but with a mark or two dots above it), "mittwoch" (31 vs 34 not settled), "also" ("28?" instead of 21). "die" was confirmed as written 14 18 15 (dhe) and stays probable; the 11 written as two strokes in "Zabern" was confirmed (a place name, still probable).
 
 ## The 11 unresolved places
 
@@ -77,9 +85,7 @@ here only as that, a count with probable words. "auc[h]" (line 27, one restored 
 with one number too many (see NOTES.md, open point); "etliche" (l. 3) is underlined or struck; "tag" 29 11 17 (11 read
 as two strokes); "Zabern" 34 11 12 15 27 23, a place name (Saverne); "keyserischen" l. 5, first half faded; "keyserische"
 l. 9 likewise; "sollicitirt" and "alhero" rest on 38 = o; "im" stands alone after "alhero"; "geliebts" split over a
-line break; "mittwoch" 29 29 31 read 29 34 in one pass; "Ligt also" at a line start written over; "dapffer" 14 11 25 16
-16 15 27 read clearly only once (pass 1 had "defension"); "gräfliche" 17 27 11 16 21 19 13 18 15, start unclear;
-"zwantzigsten" on a slip with a doubtful number.
+line break; "mittwoch" 29 29 31 read 29 34 in one pass; "Ligt also" at a line start written over; "zwantzigsten" on a slip with a doubtful number.
 
 ## Translation (English)
 
