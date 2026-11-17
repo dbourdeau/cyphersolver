@@ -1,0 +1,162 @@
+{
+ "schema_version": 1,
+ "target": "castaldo1552",
+ "title": "Castaldo 1552 (catalogue 1332): Ferdinand I to G. B. Castaldo in a homophonic symbol cipher, read with a key rebuilt from the marginal decipherments of sister letters",
+ "documents": [
+  {
+   "id": "ambrosiana-g275inf-c34r-35v",
+   "read": "read",
+   "shelfmark": "Milan, Biblioteca Ambrosiana, G 275 inf., unit 9, ff. 34r-35v",
+   "date": "15 October 1552",
+   "year": 1552,
+   "country": "Austria",
+   "route": "Vienna -> Transylvania",
+   "places": {
+    "from": "Vienna",
+    "to": "Transylvania"
+   },
+   "language": "Latin",
+   "pages": 4,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on this letter; the sister letters of 13, 18 and 22 Oct carry marginal decipherments."
+   },
+   "length": {
+    "tokens": 1900,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Ambrosiana digital library (IIIF, max 1434 px)",
+    "image_quality": "good",
+    "notes": "Hash sign: one-bar (l) and two-bar (o) forms not separated; d and b forms sometimes confused."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "nomenclator"
+  ],
+  "summary": "Homophonic substitution with about 45 symbols, nulls and plain Latin decoy words; a few code signs for names and for the army",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 45,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No marginal decipherment on this letter (Carpentieri 2012); catalogue 1332 open (checked 29 Oct 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "sibling key"
+  ],
+  "attack": "sibling key",
+  "first_date": "2026-10-29",
+  "last_date": "2026-10-29",
+  "human_role": "Brice Dudout chose the target from the catalogue and set the rules (frozen key before validation, held-out checks, prior-work search the day of publication); AI agents transcribed, solved, checked and wrote up. Doubtful signs were settled by targeted visual review where stated.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-10-29",
+   "kind": "access",
+   "what": "Volume G 275 inf. paged through on the Ambrosiana digital library; glossed sister letters located.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "sibling key",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Key K1 rebuilt by automatic alignment of the glossed passages of the letters of 13 and 18 Oct with their contemporary marginal decipherments; frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "control",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Held-out glossed passages of the letter of 22 Oct: f. 44v (K1) 0.918 characters / 0.731 words; f. 45v (K2) 0.932 / 0.778; 200 permuted controls at most 0.31 / 0.03.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-29",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Ff. 34r-35v (about 82 lines) transcribed, decoded with K2 and read; code sign C8 = Lippa from the gloss of f. 45v.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Key rebuilt from contemporary marginal decipherments of sister letters in the same volume, validated on held-out glossed passages.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.991,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "316/319 words read in their sense; 273 certain (85.6%), 41 probable (12.9%), 2 restored (0.6%), 3 unresolved code groups (0.9%).",
+  "first_break": true,
+  "verification": [
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key rebuilt from the glosses of the sister letters, validated on held-out passages; ff. 34r-35v read, English translation",
+    "date": "2026-10-29"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ambrosiana-g275inf-c34r-35v",
+    "label": "Ferdinand I to Castaldo, Vienna, 15 Oct 1552, ciphered passages ff. 34r-35v",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read",
+    "summary": "Ferdinand regrets that Castaldo could not make a diversion towards Lippa to draw the Turks away from the siege of Eger and support Maurice of Saxony, accepts his excuses, announces money and cloth for the soldiers so that they do not leave, and expects the Turks to be driven from Eger by the army or the winter."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
