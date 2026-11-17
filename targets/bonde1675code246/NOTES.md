@@ -1,5 +1,7 @@
 # bonde1675code246: Carl Bonde to a Chancery Councillor, Paris, 13 Nov 1675, in a second code (1-246)
 
+Status: in progress
+
 Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t
 1674-1678; image series R0003797), images 113 right and 114 left
 (<https://sok.riksarkivet.se/bildvisning/R0003797_00113>, <https://sok.riksarkivet.se/bildvisning/R0003797_00114>).
@@ -142,6 +144,18 @@ neighbouring letters, against at most 17 in 200 keys with the letters shuffled (
 The table was read off the same key, so this is a strong pattern, not an independent proof. Fable also suggests that a
 few cells stand for doubled letters (11 = `ff`, perhaps 63 = `ss` and 30 = `tt`), which a one-letter-per-number key
 cannot express. Both are hypotheses for whoever takes the key further; the draft key in key/key.tsv is unchanged.
+
+**Held-out test not run: cross-validation on the training lines (17 Nov 2026).** Before freezing a key and a protocol
+for the one test on 113 right L19-L33, we estimated what a key of this code scores on lines it was not fitted on, using
+the training lines only (scripts/cv_estimate.py; same voting and metric as build_key3.py, pass-4 numbers; the held-out
+numbers and their gloss were not opened). Fitted on 113 right L01-L09 + 114 left and scored on L10-L18: **0.674**
+(0.707 with unseen values filled from Fable's table); the reverse fold: **0.650** (0.665). The best of 50 shuffled keys
+scores 0.27-0.28. These figures are optimistic (the starting draft key was itself fitted on all training lines), and
+even the resubstitution of 113 right, the part read from the better gloss, is 0.754. A held-out score of 0.85 is
+therefore out of reach for this key and these transcriptions: the gap comes from the gloss (abbreviation, wording that
+does not follow the cipher) and the number readings, not from missing values. **We did not run the test, so the 301
+held-out numbers stay unused** for a later attempt with a metric that allows for this, or a better key. The decode does
+beat the shuffled keys by some 0.4, which shows that the system is right; it does not validate the key.
 
 ## The date: the cipher says 18/28, the gloss 13
 
