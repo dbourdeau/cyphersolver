@@ -16,7 +16,7 @@
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
-     "none"
+     "interlinear"
     ],
     "source": "Contemporary interlined decipherment of a few words on ff. 158, 160, 161 (Tomokiyo used it for his table); no full decipherment.",
     "partial": true
@@ -119,9 +119,9 @@
    "Claude Opus 5.5",
    "Claude Fable 5.2"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-11-16",
-  "last_date": "2026-11-16"
+  "last_date": "2026-11-17"
  },
  "solution": [
   {
@@ -139,13 +139,13 @@
   {
    "date": "2026-11-16",
    "kind": "verification",
-   "what": "Blind f. 161r ll. 1-14 (325 signs), PREREG v2 with thresholds set by the contributor (0.40, +0.20): 0.519 vs best shuffled 0.246. Passes those thresholds, NOT the programme's standard bar.",
+   "what": "Blind f. 161r ll. 1-14 (325 signs), PREREG v2 with thresholds set by the contributor (0.40, +0.20): 0.519 vs best shuffled 0.246. Passes those thresholds, NOT the contributor's pre-registered bar.",
    "result": "partial"
   },
   {
    "date": "2026-11-16",
    "kind": "verification",
-   "what": "Blind f. 160v ll. 1-15 (330 signs), PREREG v3 at the programme's standard bar (>= 0.85 and >= best of 200 shuffled + 0.30): 0.787 vs 0.505. Failed.",
+   "what": "Blind f. 160v ll. 1-15 (330 signs), PREREG v3 at the contributor's pre-registered bar (>= 0.85 and >= best of 200 shuffled + 0.30): 0.787 vs 0.505. Failed.",
    "result": "failed"
   },
   {
@@ -163,13 +163,13 @@
   {
    "date": "2026-11-16",
    "kind": "verification",
-   "what": "Blind f. 207v ll. 1-11 (318 signs), PREREG-main2.md at the programme's standard bar (>= 0.85 and >= best of 200 shuffled + 0.30), key and metric frozen by SHA-256 before the leaf was cropped: 0.879 vs 0.536. Passed.",
+   "what": "Blind f. 207v ll. 1-11 (318 signs), PREREG-main2.md at the contributor's pre-registered bar (>= 0.85 and >= best of 200 shuffled + 0.30), key and metric frozen by SHA-256 before the leaf was cropped: 0.879 vs 0.536. Passed.",
    "result": "worked"
   }
  ],
  "outcome": {
   "method": "read with known key",
-  "method_basis": "Tomokiyo's published partial table, corrected on f. 158r; NOT validated at the programme's standard bar (f. 160v 0.787 < 0.85); submitted as read in part by documented exception (DEROGATION.md, Brice Dudout, 16 Nov 2026).",
+  "method_basis": "Tomokiyo's published partial table, corrected on f. 158r and f. 160r (first hand); the pre-registered test on f. 160v failed (0.787 < 0.85, the contributor's own bar), the one on f. 207v (second hand) passed it (0.879 vs 0.536). Read in part on the readings.",
   "parts": [
    {
     "label": "f. 161r ll. 1-14",
@@ -183,14 +183,14 @@
     "records": "BnF fr. 15567 f. 160v",
     "method": "read with known key",
     "extent": "partial",
-    "basis": "key_hand1_v3.json, preregistered measurement MESURE-C-f160v.json (failed the standard bar)"
+    "basis": "key_hand1_v3.json, preregistered measurement MESURE-C-f160v.json (failed the contributor's pre-registered bar)"
    },
    {
     "label": "f. 207v ll. 1-11",
     "records": "BnF fr. 15568 f. 207v",
-    "method": "read with known key",
+    "method": "key recovered based on adjacent plaintext",
     "extent": "partial",
-    "basis": "key_hand2.json (Claude Fable 5.2), preregistered measurement MESURE-main2-f207v.json (passed the standard bar)"
+    "basis": "key_hand2.json (Claude Fable 5.2, rebuilt from the adjacent cipher pages ff. 207r, 208r-209r and the first-hand key), preregistered measurement MESURE-main2-f207v.json (passed the contributor's bar)"
    }
   ],
   "contribution": [
@@ -208,19 +208,34 @@
   },
   "gaps": [
    {
-    "item": "codes 14, 15, 17 and signs C2, f2",
-    "blocker": "no-key-material",
-    "detail": "15 precedes 'esdiguieres' (Lesdiguières) and '-e intelligence'; values not fixed."
+    "item": "ff. 158v-161v beyond the measured lines (f. 158r ll. 21-24, f. 160r, f. 160v l. 16-end, f. 161r l. 15-end, f. 161v)",
+    "blocker": "not-attempted",
+    "detail": "Untranscribed or transcribed once; workable with the present key."
    },
    {
-    "item": "∂ m/s",
-    "blocker": "illegible",
-    "detail": "The two ∂ forms (m, s) are not reliably separable at Gallica resolution; most probable words on f. 160v are m read for s."
+    "item": "fr. 15568 ff. 207r, 208r, 208v, 209r (second hand)",
+    "blocker": "not-attempted",
+    "detail": "Only Fable's single training pass exists; a checked transcription and reading are workable."
    },
    {
-    "item": "fr. 15568 ff. 207-209: signs 14, 16, 7o, DD, g, &, *, line-1 nomenclator; + (g/e/m)",
-    "blocker": "no-key-material",
-    "detail": "Fable's conjecture * & = roi de Navarre does not fit f. 207v l. 8 (before 'Alexandre'); the crosses may be two or three shapes."
+    "item": "interlined glosses on ff. 158, 160, 161",
+    "blocker": "not-attempted",
+    "detail": "Masked in the measured portions; to be transcribed as partial plaintext."
+   },
+   {
+    "item": "codes 14, 15, 17, signs C2, f2 (first hand); 14, 16, 7o, DD, &, * and the head nomenclator (second hand)",
+    "blocker": "open-codes",
+    "detail": "15 precedes 'esdiguieres' and '-e intelligence' (perhaps l); to be tried against the glosses and the unread pages."
+   },
+   {
+    "item": "the two ∂ forms (m, s)",
+    "blocker": "not-attempted",
+    "detail": "A reading rule to be fixed on glossed occurrences, not an illegible scan; most probable words on f. 160v are m read for s."
+   },
+   {
+    "item": "the cross + in the second hand (g, sometimes e/m)",
+    "blocker": "not-attempted",
+    "detail": "May be two or three shapes; to be sorted on larger crops."
    }
   ],
   "grades": "unknown",
@@ -228,7 +243,7 @@
    "matched control"
   ],
   "provenance": "contributed",
-  "notes": "Draft by Brice Dudout's session (Claude), 16 Nov 2026; reading review is the contributor's own, preliminary. Three blind tests: B 0.519 vs 0.246 (contributor's thresholds), C 0.787 vs 0.505 (fails standard bar), D not measurable (287 signs). Not validated at the standard bar; partial submission by documented exception (DEROGATION.md). Images: Source gallica.bnf.fr / BnF. Second hand: f. 207v passes the standard bar (0.879 vs 0.536, PREREG-main2.md); ff. 207r, 208r-209r are training material (single LLM pass), read only in Fable's unvalidated draft.",
+  "notes": "Brice Dudout's session (Claude), 16-17 Nov 2026. Status: in progress. Reading review is the contributor's own, preliminary; no person has checked the work. Blind tests: B 0.519 vs 0.246 (contributor's earlier thresholds 0.40/+0.20), C 0.787 vs 0.505 (pre-registered test failed), D not measurable (287 signs), H (second hand, f. 207v) 0.879 vs 0.536 (passed). Strict read shares (sure words): 0.711, 0.649, 0.712. The freeze order rests on file times in the contributor's folder (protocol/README.md): by the contributor's record. Both transcription passes of each portion are by the same agent. Images: Source gallica.bnf.fr / BnF. ff. 207r, 208r-209r are training material (single LLM pass), read only in Fable's unvalidated draft.",
   "texts": [
    {
     "doc": "f158-161",
@@ -248,9 +263,9 @@
      "grade": "B",
      "by": "Claude (Opus 5.5), contributor's own",
      "date": "2026-11-16",
-     "note": "Preliminary: contributor's own review; not a second reader."
+     "note": "Preliminary: contributor's own review; not a second reader; no person has checked. Strict read share 64/90 sure words; sure + probable 0.81."
     },
-    "read_share": 0.81,
+    "read_share": 0.711,
     "state": "read in part"
    },
    {
@@ -271,9 +286,9 @@
      "grade": "B",
      "by": "Claude (Opus 5.5), contributor's own",
      "date": "2026-11-16",
-     "note": "Preliminary: contributor's own review; not a second reader."
+     "note": "Preliminary: contributor's own review; not a second reader; no person has checked. Strict read share 50/77 sure words; sure + probable 0.88."
     },
-    "read_share": 0.88,
+    "read_share": 0.649,
     "state": "read in part"
    },
    {
@@ -294,10 +309,29 @@
      "grade": "B",
      "by": "Claude (Opus 5.5), contributor's own",
      "date": "2026-11-16",
-     "note": "Preliminary: contributor's own review; not a second reader."
+     "note": "Preliminary: contributor's own review; not a second reader; no person has checked. Strict read share 52/73 sure words ('venir' marked as an emendation); sure + probable 0.85."
     },
-    "read_share": 0.85,
+    "read_share": 0.712,
     "state": "read in part"
+   },
+   {
+    "doc": "f158-161",
+    "label": "fr. 15567 f. 158r ll. 1-20, March 1584 (training material)",
+    "transcription": [
+     "f158/read1.txt"
+    ],
+    "decryption": [
+     "f158/decryption.txt"
+    ],
+    "summary": "Maugiron in good health; fear at the coming of Montpensier; someone has withdrawn from the château Dauphin not to return.",
+    "language": "fr",
+    "state": "decoded, not read",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-17",
+     "note": "Mechanical decode of a single-pass training transcription; only the phrases quoted in NOTES.md are claimed."
+    }
    }
   ],
   "key_file": [
@@ -316,7 +350,7 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "Key corrected on f. 158r; blind tests on f. 161r (passed own thresholds) and f. 160v (failed standard bar); readings of ff. 158r, 160v, 161r (Claude for Brice Dudout). Second hand: key proposed by Claude Fable 5.2, blind test on f. 207v passed (0.879 vs 0.536).",
+    "note": "Key corrected on f. 158r; blind tests on f. 161r (passed the earlier thresholds) and f. 160v (pre-registered test failed); readings of ff. 158r, 160v, 161r (Claude for Brice Dudout). Second hand: key proposed by Claude Fable 5.2, blind test on f. 207v passed (0.879 vs 0.536).",
     "date": "2026-11-16",
     "source": "this folder"
    }
