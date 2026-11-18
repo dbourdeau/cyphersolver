@@ -256,7 +256,8 @@ def review_counts(root=ROOT, audit=None, names=None):
     c['exists_answered'] = sum(n for k, n in exists.items() if k not in (None, 'unknown'))
     c['exists_earlier'] = sum(exists[k] for k in EARLIER)
     c['rc_fail'], c['rc_total'] = reading_check_failures(files, audit)
-    return dict(c)
+    # a count no target reached (a reduced tree: no timestamps/, no human_check ...) reads as 0, not a KeyError
+    return collections.defaultdict(int, c)
 
 
 def contributor_names(root=ROOT):
@@ -358,7 +359,7 @@ def figures(c, lang):
     return dict(n=n, k=k, st=c['states'], v=c['verdicts'], tr=c['transcr'], pv=c['prov'], hr=c['hc_result'],
                 fam=c['families'], model_pct=pct(k['model'], c['rr'], lang),
                 tr_other=c_sum(c['transcr'], TR_KEYS), tr_total=sum(c['transcr'].values()),
-                ts_all_contrib=bool(c['timestamped']) and c['ts_prov'].get('contributed', 0) == c['timestamped'])
+                ts_all_contrib=bool(c.get('timestamped', 0)) and c['ts_prov'].get('contributed', 0) == c.get('timestamped', 0))
 
 
 # --- English ---------------------------------------------------------------------------------------------------
@@ -367,9 +368,9 @@ def page_en(c, queue, names):
     F = figures(c, L)
     n, k, st, v, tr, pv, hr, fam = (F[x] for x in ('n', 'k', 'st', 'v', 'tr', 'pv', 'hr', 'fam'))
     hc_txt = join([f'{n(hr[x])} {x}' for x in ('confirmed', 'corrected', 'disagreed') if hr.get(x)], L)
-    ts_txt = (f"<p>In {n(c['timestamped'])} targets{', all contributed from outside,' if F['ts_all_contrib'] else ''} the "
+    ts_txt = (f"<p>In {n(c.get('timestamped', 0))} targets{', all contributed from outside,' if F['ts_all_contrib'] else ''} the "
               'work files were time-stamped: an RFC 3161 token and an OpenTimestamps proof over the SHA-256 of a list of files. '
-              'This can prove that the listed files existed at that date.</p>') if c['timestamped'] else ''
+              'This can prove that the listed files existed at that date.</p>') if c.get('timestamped', 0) else ''
     rc = ('' if c.get('rc_fail') is None else
           f"<p>Today {n(c['rc_fail'])} of the {n(c['rc_total'])} targets that present a reading would not pass the "
           'Reading check if a pull request changed them.</p>\n')
@@ -574,9 +575,9 @@ def page_fr(c, queue, names):
     F = figures(c, L)
     n, k, st, v, tr, pv, hr, fam = (F[x] for x in ('n', 'k', 'st', 'v', 'tr', 'pv', 'hr', 'fam'))
     hc_txt = join([f'{n(hr[x])} {FR_HC[x]}' for x in ('confirmed', 'corrected', 'disagreed') if hr.get(x)], L)
-    ts_txt = (f"<p>Pour {n(c['timestamped'])} cibles{', toutes des contributions extérieures,' if F['ts_all_contrib'] else ''} les "
+    ts_txt = (f"<p>Pour {n(c.get('timestamped', 0))} cibles{', toutes des contributions extérieures,' if F['ts_all_contrib'] else ''} les "
               'fichiers de travail ont été horodatés : un jeton RFC 3161 et une preuve OpenTimestamps sur l’empreinte '
-              'SHA-256 d’une liste de fichiers. Cela permet de prouver que les fichiers listés existaient à cette date.</p>') if c['timestamped'] else ''
+              'SHA-256 d’une liste de fichiers. Cela permet de prouver que les fichiers listés existaient à cette date.</p>') if c.get('timestamped', 0) else ''
     rc = ('' if c.get('rc_fail') is None else
           f"<p>Aujourd’hui, {n(c['rc_fail'])} des {n(c['rc_total'])} cibles qui présentent une lecture ne passeraient pas le "
           'Reading check si une demande de fusion les modifiait.</p>\n')
