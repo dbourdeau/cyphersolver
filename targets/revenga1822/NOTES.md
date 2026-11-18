@@ -5,6 +5,12 @@ deciphered in part on a first-pass transcription (a dozen holes and doubtful wor
 sense and listed in corrections.md). The next step is a full second transcription pass on the four frames and a test
 of the z sign. The site page and the ledger rows are left to the maintainer.
 
+**Reading status (17 Nov 2026).** The profile now records decoded, not read: no accepted
+`reading_review` exists for this document. The earlier 0.82 cipher-passage estimate and 0.868
+mixed-text estimate remain documented as unreviewed historical figures, not accepted sure-word
+read shares. No review stamp is added. The existing decode, proposed reading and frozen tests
+are unchanged; a maintainer must review the sentences before the result is counted as a reading.
+
 Catalogue 641. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the cipher was transcribed from the NARA frames with a vision-capable language model. An independent agent re-read
 seven passages on the film, decrypted them with its own code and ran the controls. A second pass for this
@@ -215,7 +221,8 @@ the differences was not.** No person has checked any of it.
 recorded; this pass changes no reading against a printed text. It was not searched again.
 
 **What this does not do.** It does not recompute `fraction_read`, the controls or the validation on the settled text,
-and it does not change `transcription.txt`, `reading.md` or `profile.json` outcome. The z and j signs are not added to
+and it does not change `transcription.txt` or `reading.md`. The later profile status correction above
+withdraws the unreviewed reading claim; it does not rerun or revise the decipherment. The z and j signs are not added to
 `key.txt`.
 
 ## Remaining gaps
