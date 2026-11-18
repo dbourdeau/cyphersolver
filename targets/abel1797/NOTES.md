@@ -1,6 +1,6 @@
 # abel1797: Christoph Konrad Abel (Wuerttemberg minister in Paris) to Duke Frederick II, 1797-1799: nomenclator rebuilt and validated
 
-Status: in progress (integration check, 14 Nov 2026: read in part, 14 of 24 words of the unglossed passages sure = 58.3% by the README rule, the contributor's own strict figure, reproduced; the four open codes can still be looked for in glossed passages of Bü 700-701, so no page yet. Catalogue lead 2037 (this correspondence, closed 'read' on 3 Nov 2026 because every passage seen there was glossed) now points to this folder.)
+Status: in progress (17 Nov 2026 update by the contributor: read in part, 21 of 24 words of the unglossed passages sure = 87.5 % by the strict rule, 23/24 with the probables; six codes found with glosses of the time in Bü 700-701, glossed_codes.tsv; one code, ut, still open. Integration check of 14 Nov 2026: 14/24 = 58.3 %, see below. Catalogue lead 2037 points to this folder.)
 
 Contributor's status: read in part (contributed by Brice Dudout, Europe chiffree, with Claude Opus 5.5 agents; 28 Oct 2026). Not in catalogue.json (only Wolzogen 1792-93 for Wuerttemberg: nos 525, 578, 579), not in leads.json, no target, no DECODE record.
 Every enciphered passage seen has a contemporary decipherment in the file, so the content is EXISTING. What is new: the key K3 as a validated table, 24 words read from passages with no clear text, and one correction of a later gloss.
@@ -15,27 +15,27 @@ Mixed nomenclator: (a) groups 1-99 = letters with homophones (a 3/9, n 70/67, f 
 K3 validated on a held-out piece (Bue 702 Bild 17): 0.963 characters / 0.792 words against 0.306 / 0.167 for 200 permuted keys. The 1797-only key (0.621 words) and K2 (0.367) were not validated: stated in validation.txt.
 
 ## Reading
-Passages without clear text (Bue 699 Bild 75, 86, 90): 24 words, 14 sure, 6 probable, 0 restored, 4 unresolved: strict count 14/24 = 58 %, with the probables 20/24 = 83 % (below 95 %: read in part). A later pencil gloss "Georgi" on Bue 696 Bild 50 is wrong: the key reads "albert" and the next clear paragraph is about Albert.
+Passages without clear text (Bue 699 Bild 75, 86, 90): 24 words. First reading (28 Oct): 14 sure, 6 probable, 4 unresolved (58 % strict). Update (17 Nov, reading.md, glossed_codes.tsv): sw von, ka man, ld nach, 33 s, ps Teutschland, vf wollte and oi sicher- found glossed in Bü 700-701; 21 sure, 2 probable ({sicherer}, {hier}), 1 unresolved (‹ut›): 21/24 = 87.5 % strict, 23/24 = 95.8 % with the probables. Read in part by the strict rule. Clear: "Nach dem was ich von {sicherer} ‹ut› weiss, [glaubt man,] dass man von {hier} den Geist der Revolution in Teutschland wollte gehalten [...]"; "Taleyrand"; "nach Baras Antrag". A later pencil gloss "Georgi" on Bue 696 Bild 50 is wrong: the key reads "albert" and the next clear paragraph is about Albert.
 
 ## Prior art
 Web search (Abel / Konradin Abel, Paris 1797, Chiffre; Cryptiana): no edition or study of the cipher. Obser, Politische Correspondenz Karl Friedrichs von Baden, vol. 3: Abel cited in passing only. Hoelzle, Wuerttemberg im Zeitalter Napoleons (1937): not seen. Nothing in this repository (checked 12 Nov 2026).
 
 ## Remaining gaps
 
-- Codes oi, ut, ps, vf in Bü 699 Bild 75 (4 words) - blocker: not-attempted; to be looked for glossed in Bü 700 and Bü 701 (Bild 35-173 not examined); the original keys (A 11 Bü 66, L 6 Bü 1392, A 74 i Bü 24) are not online
-- Six probable words (von x2 = sw, man = ka, Nach = ld, hier = hb, Geist with 33 = s) - blocker: not-attempted; same search for glossed occurrences
-- Bü 701, Bü 706 (Normann, another table) and the 1798 second system (Bü 699 Bild 20, 22, 53) - blocker: not-attempted
-- The "Georgi"/"albert" correction (Bü 696 Bild 50) not checked on the image in the integration check
+- Code ut in Bü 699 Bild 75 (1 word) - blocker: not-attempted; not found glossed in Bü 700 (42 images) or Bü 701 Bild 35-173 (17 Nov 2026); Bü 701 Bild 1-34 only partly examined at reading size
+- hb ("hier") probable by sense and its place in the code list; ending of oi ("sicher-") not marked in Bild 75 - blocker: not-attempted
+- No unglossed passage of 300 signs or more found in Bü 696-702 (every enciphered passage opened carries its decipherment of the time): K3 cannot be re-tested on new unglossed text - blocker: no-key-material
+- Bü 706 (Normann, another table) and the 1798 second system (Bü 699 Bild 20, 22, 53; also Bü 700 Bild 3, 10) - blocker: not-attempted
 - Hoelzle 1937 - blocker: not-attempted; not seen
 
 ## Escalation
 
-- [x] siblings: Bü 696, 699, 702 sorted piece by piece (contributor); Bü 700-701 partly, Bü 706 not
+- [x] siblings: Bü 696, 699, 702 sorted piece by piece (contributor); Bü 700 all and Bü 701 Bild 35-173 searched on 17 Nov 2026 (all glossed); Bü 706 not
 - [x] clear-pages: every glossed passage seen used to build K1-K3
 - [ ] known-keys: the chancery's own keys (A 11 Bü 66, L 6 Bü 1392, A 74 i Bü 24) not online, not seen
 - [ ] print: Obser only; Hoelzle 1937 not seen
 - [x] key-rebuild: K3 rebuilt from the glosses and tested on a held-out glossed piece
-- [ ] retry: the four codes and six probable words after the search of Bü 700-701
+- [x] retry: the four codes and six probable words searched in Bü 700-701 (17 Nov 2026): six confirmed by glosses of the time, oi made probable, hb still probable, ut open
 
 ## Integration check (14 Nov 2026)
 
