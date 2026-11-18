@@ -28,7 +28,7 @@
    "transcription": {
     "by": "llm from images",
     "image_quality": "good",
-    "notes": "From AGAD scans (images 0092-0094); 0/8 loop ambiguities marked ^ and resolved by the key."
+    "notes": "From AGAD scans (images 0092-0094); 0/8 loop ambiguities marked ^ and resolved by the key. 18 Nov 2026: k.75v.08/6 corrected 2065 -> 2085 after a blind check on the images; k.74v.10/8 and k.74v.27/2 1086^ -> 1886^, still open."
    },
    "read": "read in part"
   }
@@ -131,7 +131,7 @@
    ]
   }
  ],
- "outcome": {"validation": {"date": "2026-11-04", "verdict": "not applicable", "notes": "The key was validated in the target's own pre-registered held-out test on the pair of 11 Nov 1788 (341 groups): 0.862 of groups read as sense against a best of 0.199 for 200 shuffled keys; 0.750 of words and 0.882 of characters. docs/_validate.py was not run: the Polish letter model cannot judge a key that writes syllables and stems."}, 
+ "outcome": {"validation": {"date": "2026-11-04", "file": "validation/", "tokens": 341, "verdict": "not applicable", "notes": "Held-out measure of the KEY, not of the despatch read (18 Nov 2026: no longer used as fraction_read or read_share). The key was validated in the target's own pre-registered held-out test on the pair of 11 Nov 1788 (341 groups): 0.862 of groups read as sense against a best of 0.199 for 200 shuffled keys; 0.750 of words and 0.882 of characters. docs/_validate.py was not run: the Polish letter model cannot judge a key that writes syllables and stems."}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
@@ -142,8 +142,8 @@
    "catalogue correction"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "targets/deboli1788/reading/c038_1788-05-13.decoded.txt: 911 of 943 groups with a key value; held-out pair read as sense 0.862",
-  "fraction_read": 0.862,
+  "fraction_read_source": "reading/c038_1788-05-13.txt: words; sure or probable ({word}, or followed by [?]) counted read; [x] letters supplied or changed, {-x} letters dropped, {group} and [...] counted unread: 328 of 485 (18 Nov 2026, measured on our copy, to be recounted on the repository). 911 of 943 groups have a key value (decoded file).",
+  "fraction_read": 0.676,
   "codes_open": {
    "open": "unknown",
    "total": "unknown",
@@ -158,8 +158,24 @@
    {
     "item": "13 May 1788 no. 038: 32 groups without a value, alternatives unsettled",
     "blocker": "open-codes"
+   },
+   {
+    "item": "13 May 1788 no. 038: 12 lettered groups missing from key_K4.tsv, read as guesses and marked [ ]",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "13 May 1788 no. 038: 1886^ at k.74v.10/8 and k.74v.27/2, second digit 0 or 8 (wide lying loop); both words probable",
+    "blocker": "illegible",
+    "detail": "the blind check's reference sample for the closed 0 was itself ambiguous (1001^ at k.74v.28/4); a new check needs a clean 0"
    }
   ],
+  "human_check": {
+   "date": "2026-11-18",
+   "by": "Brice Dudout",
+   "passage": "c038_1788-05-13: 10 doubtful digits (k.74r-75v) and 2 known-answer controls, forced choice between sign shapes on the AGAD images, expected answers hidden",
+   "result": "corrected",
+   "note": "Controls 2/2. 7 digits as transcribed; k.75v.08/6 is 2085, not 2065; 1886^ at k.74v.10/8 and k.74v.27/2 left open (wide lying loop read as an elongated 8). One reviewer; one faulty reference sample (the closed 0 cut from 1001^); the check adds no sure word to the reading."
+  },
   "texts": [
    {
     "doc": "c038_1788-05-13",
@@ -169,14 +185,14 @@
     "reading": "reading/c038_1788-05-13.txt",
     "translation": "reading/c038_1788-05-13_en.md",
     "state": "read in part",
-    "read_share": 0.862,
+    "read_share": 0.676,
     "summary": "Dinner for the famous privateer lately taken into Russian service (very probably John Paul Jones); talk with Stackelberg on the King of Prussia's designs, the alliance project for the Diet ('to turn into a Confederation'), Russian aid 'when needed', Gdańsk.",
-    "note": "Key K4 = deboli1789 key_pass.tsv + 1788 additions; read_share is the held-out measure, not the 96.6% of groups with a value.",
+    "note": "Key K4 = deboli1789 key_pass.tsv + 1788 additions. read_share (18 Nov 2026) = sure or probable words of the marked reading, 328 of 485, measured on our copy; the 0.862 used before was the key's held-out measure (outcome.validation).",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
-     "note": "Read as sentences 31 Oct 2026 (Polish, read in part, read_share 0.862): the first two thirds build a coherent account (dinner, John Paul Jones, Stackelberg on the Prussian threat, the project to be finalised at the Sejm turned into a confederation, Osterman, the two impressions); the last part has unread groups and [...] in most sentences, which is why the entry stays read in part. Raw old spelling, normalised in the translation."
+     "note": "Read as sentences 31 Oct 2026 (Polish, read in part; read_share 0.676 since the decrypt audit of 18 Nov 2026, every letter supplied by the reader now marked): the first two thirds build a coherent account (dinner, John Paul Jones, Stackelberg on the Prussian threat, the project to be finalised at the Sejm turned into a confederation, Osterman, the two impressions); the last part has unread groups and [...] in most sentences, which is why the entry stays read in part. Raw old spelling, normalised in the translation."
     }
    }
   ],
@@ -192,6 +208,19 @@
     "role": "key or decipherment used",
     "note": "Daniel Bourdeau, deboli1789 key_pass.tsv (base of key_K4.tsv)",
     "date": "2026-10-28"
+   },
+   {
+    "who": "bourdeau",
+    "role": "verification",
+    "note": "Daniel Bourdeau, decrypt audit of the reading against the key (research/decrypt_audit/audit.py, 86 of 426 words departing without a mark)",
+    "date": "2026-11-18",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/710"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "Brice Dudout, blind check of 10 doubtful digits on the images: k.75v.08/6 corrected to 2085; departures marked in the reading",
+    "date": "2026-11-18"
    }
   ],
   "provenance": "contributed"
