@@ -1,6 +1,6 @@
 # Charles XII to Adam Ludvig Lewenhaupt, 2 Mar 1706 (F 470, images 310-311, single copy): the cipher passages in English
 
-Status: **read in part** (123 words: 94 sure, 7 probable, 22 unread; read share, sure words only, 76.4%; sure + probable 82.1%; counted 18 Nov 2026 with key K4).
+Status: **decoded, not read** (18 Nov 2026; measured on our copy: 123 words: 94 sure, 7 probable, 22 unread; read share, sure words only, 76.4%; sure + probable 82.1%; counted 18 Nov 2026 with key K4).
 Translation of `L4_2mar1706_reading_sv.txt`; marks as in L3. The clear opening of the letter reads "Wåre förre af den
 19 och 21 Feb. lära förmodeligen nu mehra sig hafwa infunnit" (our earlier letters of 19 and 21 Feb. have presumably
 arrived by now).
