@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "lewenhaupt1706",
- "title": "Charles XII to Adam Ludvig Lewenhaupt, Jan-Mar 1706 (Uppsala UB, F 470): three-figure Swedish nomenclator, key rebuilt from decipherments of the time, measured check passed with a reserve, two letters read in part",
+ "title": "Charles XII to Adam Ludvig Lewenhaupt, Jan-Mar 1706 (Uppsala UB, F 470): three-figure Swedish nomenclator, key rebuilt from decipherments of the time, not validated at the programme's bar (measured check passed a lowered threshold of 0.60, set after a failed first measurement), two letters read in part",
  "documents": [
   {
    "id": "f470-L1-21jan1706",
@@ -179,7 +179,7 @@
   "attack": "archive decipherment",
   "first_date": "2026-11-17",
   "last_date": "2026-11-18",
-  "human_role": "Brice Dudout chose the target and set the rules (held-out portion and key frozen by SHA-256 before one measurement, burned portions, strict word count); he decided to file the result as passed with a reserve. AI agents transcribed, rebuilt the key, measured, read and wrote up.",
+  "human_role": "Brice Dudout chose the target and set the rules (held-out portion and key frozen by SHA-256 before one measurement, burned portions, strict word count); he decided to file the v2 result with its lowered threshold stated (not validated at the programme's bar). AI agents transcribed, rebuilt the key, measured, read and wrote up.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
   ]
@@ -227,7 +227,7 @@
     "statistical test",
     "language-model scoring"
    ],
-   "what": "v2: one pre-registered measurement on the held-out L3 (780 groups), letter 5-gram score N: 0.695 against 200 permuted keys mean 0.057, max 0.294. Thresholds declared before: 0.60 (lowered from the default 0.85, with calibration) and max + 0.30. Passes the declared thresholds, not the default 0.85.",
+   "what": "v2: one pre-registered measurement on the held-out L3 (780 groups), letter 5-gram score N: 0.695 against 200 permuted keys mean 0.057, max 0.294. Thresholds declared before: 0.60 (lowered from the default 0.85, with calibration) and max + 0.30. Passes the declared thresholds, not the programme's 0.85: not validated at the programme's bar. The metric (letter 5-gram score) and the 0.60 threshold were chosen after the v1 measurement had failed and after K2's decodes of its own fitting letters (0.68-0.88) had been seen; they were then written into protocol/PREREG-v2.md, which was hashed before the one measurement on L3 (protocol/PREREG-v2.sha256, 16cd4155...).",
    "result": "partial"
   },
   {
@@ -283,6 +283,7 @@
    "transcription",
    "key recovered"
   ],
+  "provenance": "contributed",
   "fraction_read": 0.744,
   "fraction_read_method": "measured",
   "fraction_read_source": "readings/L3_21feb1706_reading_sv.txt and readings/L4_2mar1706_reading_sv.txt, counted mechanically on our copy (18 Nov 2026): sure words only, over cipher words (README rule of 16 Nov 2026, PR #728): 332 of 446 (L3 238 of 323, L4 94 of 123). Probable, supplied and unread words are holes. Sure + probable would be 373 of 446 (83.6%). Cipher groups given a value by K4: 1,031 of 1,072.",
@@ -308,7 +309,7 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "key rebuilt and frozen, pre-registered measurement passed with a reserve (threshold 0.60 instead of 0.85, declared before), L3 and L4 read in part",
+    "note": "key rebuilt and frozen, not validated at the programme's bar (pre-registered measurement passed a threshold of 0.60, not 0.85, set after a failed first measurement), L3 and L4 read in part",
     "date": "2026-11-17"
    },
    {
@@ -330,10 +331,6 @@
    {
     "item": "Riksregistraturet 1706 copies of 21 Feb and 2 Mar 1706, not checked",
     "blocker": "needs-physical-access"
-   },
-   {
-    "item": "class C letters, images 179-206 (two-figure table)",
-    "blocker": "not-attempted"
    }
   ],
   "texts": [
@@ -375,6 +372,6 @@
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Measured check passed with a reserve: absolute threshold 0.60 instead of 0.85, declared before the measurement; an earlier measurement (v1, another letter, another metric) failed. docs/_validate.py could not run on 17 Nov 2026 (sv-gutenberg download HTTP 503); validation.tsv is filed. 18 Nov 2026: the gloss of the time of letter 108 confirms 80 key values and gives 520, 544, 557, 629 (key K4); the pre-registered measurement on letter 119 failed (0.434 < 0.60)."
+  "notes": "Not validated at the programme's bar: the measured check (v2) passed an absolute threshold of 0.60, not the programme's 0.85. The metric (letter 5-gram score) and the 0.60 threshold were chosen after the v1 measurement had failed and after K2's decodes of its own fitting letters (0.68-0.88) had been seen; they were then written into protocol/PREREG-v2.md, which was hashed before the one measurement on L3 (protocol/PREREG-v2.sha256, 16cd4155...). protocol/PREREG-v2.part1.sha256 (4ed5060f...) covers an earlier text of that file, not the filed one. The earlier measurement (v1, another letter, another metric) failed. docs/_validate.py could not run on 17 Nov 2026 (sv-gutenberg download HTTP 503); validation.tsv is filed. 18 Nov 2026: the gloss of the time of letter 108 confirms 80 key values and gives 520, 544, 557, 629 (key K4); the pre-registered measurement on letter 119 failed (0.434 < 0.60)."
  }
 }
