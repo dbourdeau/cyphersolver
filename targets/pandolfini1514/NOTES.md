@@ -20,7 +20,7 @@ Mary Tudor, 9 Oct 1514), which dates the letter to 1514. Transcription: `transcr
 |---|---|---|---|---|---|
 | 307 | c. 369r | copy to the Otto di Pratica, 16 Feb 1515 | 291 (205 certain, 57 probable, 29 unresolved) | 90% | `transcription_307.txt`, `reading_307.md`, `translation_307.md` |
 | 309 | c. 378r | to Lorenzo de' Medici, 26 Feb 1515 | 83 (59, 16, 8) | 90% | `*_309.*` |
-| 310 | cc. 380r-381v | copy to the Otto, 26 Feb - 2 Mar 1515 | about 895 units (701, 109, 85 unresolved groups) | about 75% | `*_310.*` |
+| 310 | cc. 380r-381v | copy to the Otto, 26 Feb - 2 Mar 1515 | 897 units (705, 109, 83 unresolved groups; recounted 19 Nov 2026) | 76.6% (3 words per group) | `*_310.*` |
 | 311 | cc. 382r-v | continuation of 310, "Tenuta adi iiij" [4 Mar 1515] | about 534 units (424, 44, 1 restored, 65 groups) | about 80-85% | `*_311.*` |
 | 333 | c. 417r | to Lorenzo de' Medici, 27 Dec 1514 | 29 (28, 1, 0) | 100% | `*_333.*` |
 
@@ -90,3 +90,21 @@ la Toscane*, vol. II (1861): gap from 16 Aug 1514 to 25 May 1515. Catalogue 2389
 - [n/a] retry: a further measurement waits for HD images (the resolution is the ceiling)
 
 All six bare letters of 2389 are now read in part or read. No ASF image or derivative is included.
+
+## 19 Nov 2026: sign checks and corrections (sheets W, X2, x3, x4)
+
+Level: AI decipherment, human-checked on a sample of signs. Brice Dudout chose the shape of boxed signs on blind sheets
+(reference shapes cut from the same letters, no value shown, two controls per sheet). The sheets were prepared by AI agents.
+Sheets, rules and answers are not in the repository, and no image or derivative is included.
+
+- **310, transcription corrected** (sheet W, controls 2/2). The sign transcribed S is a 5 in B1 (domandono), C1 (ultimamente)
+  and C3 (mandato, simil): four tokens changed in `transcription_310.txt`, and the original stays in `frozen/`.
+  - Checked and kept: the S^2 of monstrono, and the t before 7^5 in "fra" (A9, C1, H1). Those gaps come from the key or the hand.
+- **J# = ss, probable.** "di J# e" (310 A8, D8): the J# is a long s crossed by two bars, and # marks doubling in this cipher.
+  Both groups now read {disse}. This value is by analogy and is not added to key v6.
+- **310 recounted**: 705 certain, 109 probable, 83 unresolved groups. That is 76.6% read by sense and 66.3% certain alone,
+  counting 3 words per group. Still read in part.
+- **Sign 2: proposal v6b** (`KEY_V6B_PROPOSAL.md`, `key_v6b_proposal.json`, `sign2_forms.tsv`): flat 2 = b, looped ʒ = c,
+  bare ʒ = o. On the three sheets that count, c-words were seen ʒ 24 times in 25 (exception: ricercare, 311 A7) and b-words flat
+  4 times in 4. key_v6.json is unchanged. Neither v6 nor v6b has been measured.
+

@@ -4,7 +4,9 @@ ASF Mediceo avanti il Principato LXXII, doc. 310 (cc. 380r-381v, pos. 759-762): 
 
 ## Status
 
-**Read in part: about 895 units (a word, or an unresolved group counted as one): 701 certain, 109 probable, 0 restored, 85 unresolved groups.** An unresolved group often covers 2-5 words: counting 3 words per group, about 1,065 words and **about 75% read by sense** (the mechanical 91% overstates it). By block: A about 80%, B 80%, C 65%, D 65%, E 70%, F 70%, G 80%, H 80%. Below the 95% rule.
+**Read in part: 897 units (a word, or an unresolved group counted as one): 705 certain, 109 probable, 0 restored, 83 unresolved groups** (recounted 19 Nov 2026 after the four S -> 5 corrections of the transcription and the reading {disse} for J# = ss; see the note below). An unresolved group often covers 2-5 words: counting 3 words per group, 1,063 words, **76.6% read by sense and 66.3% certain alone** (rule of #728) (the mechanical 91% overstates it). By block: A about 80%, B 80%, C 65%, D 65%, E 70%, F 70%, G 80%, H 80%. Below the 95% rule.
+
+Changes of 19 Nov 2026 (blind sign-shape sheet W, checked by Brice Dudout, controls 2/2): the sign transcribed S is a 5 in B1 (domandono), C1 (ultimamente), C3 (mandato, simil): domandono and mandato become certain, ultimamente and simil stay probable (their other signs are not settled). The S^2 of monstrono and the t before 7^5 in 'fra' (A9, C1, H1) were checked and are as transcribed: those gaps come from the key or the hand. The sign written J# in 'di J# e' (A8, D8) is a long s with two bars; # marks doubling in this cipher (t# tt, c# cc, 4# ll), so J# = ss by analogy and both groups read {disse}: probable, not in key v6. Raw lines B1, C1 and C3 above are re-decoded from the corrected transcription.
 
 Reservations (declared): (1) pos. 759 (block A) was transcribed by an agent that knew the key: NOT blind; (2) codes not resolved: .22. (probably lanzichenech, from the clear 316 of mid-March, not added to the key), 20./23., .uij.; (3) blocks C, D and E need re-reading on HD images.
 
@@ -23,7 +25,7 @@ Reservations (declared): (1) pos. 759 (block A) was transcribed by an agent that
     A11 fu o co ? qua e non li ri u s ci ra et mi di co to che i l fu o co non va da piu p re s to di o sa h a che n s t ra si
     A12 i l p re fa to du ca mo l to vo l to a ll e co se n ra n ve si si a o per na tu ra le di s po si ti o ne su a o
     A13 o ? i n t ra c te ni me n to de n ra n ve si  ? o
-    B1 li o ra to ri fi a mm i n g h i che si t ro va no qui a do qua n do no i l pa re n ta do di ma da ma re nu a et quo n s
+    B1 li o ra to ri fi a mm i n g h i che si t ro va no qui a do ma n do no i l pa re n ta do di ma da ma re nu a et quo n s
     B2 t ro no fa r ne i n s t a n ti a qua lo a do qua n do no r? i n te n do per ce r to con ta n te di s h o ne s te con di
     B3 ti o ni che non si mu ta n do non ne do ve rr a se g u i re con c lu si o ne a l cu na et ? pa r la n do i l con u n
     B4 per so na gg i o di qua li ta qua le per t ro va r si i n con si g li o ra gi o ne vo l qu fe t ne sa i l t cu to
@@ -31,9 +33,9 @@ Reservations (declared): (1) pos. 759 (block A) was transcribed by an agent that
     B6 et a l p re se n te so p ra i l pa re n ta do c h i e gg i o no ta n te di s h o ne s te do qua n de che se fu s si s ta d? me
     B7 i o li h a ve ri a li ce n ti a ti ?
     B8 re le do ma n de de p re de c ti si e no fa c t con a c ti fi ci o et con o r di ne ? ancora de l imperadore 
-    C1 i l cristianissimo h a h a vu to u l ti qua que n te et per ? du na vi a la co pi a de ll a le g h a con c lu sa n ra imperadore m ?
+    C1 i l cristianissimo h a h a vu to u l ti ma que n te et per ? du na vi a la co pi a de ll a le g h a con c lu sa n ra imperadore m ?
     C2 ? et ? ? et h a ve n do vi t ro va to u n ca pi tu lo per i l qua le si quo n s t ra va che l h o quo
-    C3 de l papa a p re s so li svizeri h a ve va re s po s to non h a ve re qua n da to di si qu l co sa et c c eta s ta to a papa p re
+    C3 de l papa a p re s so li svizeri h a ve va re s po s to non h a ve re ma n da to di si m l co sa et c c eta s ta to a papa p re
     C4 fi e o i l te r qui ne a h de c la ra re la su a vo lu n ta que s t maesta h a quo n s t ro re s ta re cu sa ti s
     C5 qu fa c t de l papa et i o lo c re do h a ve n do ? s ta ma c ? na vi s to le do m re vo li pa ro le che suamaesta
     C6 u so a ll o o ra to re de l papa et a que p re se n ta n do li i l p re fa to o ra to ? u n r re ve di papa ri n
@@ -86,13 +88,13 @@ presidente è restato là. La causa della venuta sua è stata, si ritrae, per ri
 [clear: Et oggi ultimamente il sopradetto si è partito per ritornarsene] in Angliterra, et per ancora ‹O›, io {ritraggo}, con li capituli
 {expediti}. Per ancora ‹O› si aspecta dal canto di questa Maestà. Il {duca} di {Suffort} et li altri oratori di Inghilterra che si trovono
 qui {usono} dire che lo accordo seguirà {ad} {ogni} modo, et costoro dal canto loro non ci fanno {dubitatione}.
-[clear: Il fine sen doveria vedere in brevi giorni. Mons.r] della {Ghiscia}, {venendo} di Angliterra, ‹3^3_J_Q› havere {rincontro} {ad}
+[clear: Il fine sen doveria vedere in brevi giorni. Mons.r] della {Ghiscia}, {venendo} di Angliterra, {disse} havere {rincontro} {ad}
 {Cales} il {frate} {vescovo} {spagnolo} ‹6^5_x^4_3_5^4_r^3_6_6^5_r^3_8^3› ‹6_8_4#_Q› qui, et {referendoli} ‹3_9^2› qui al duca di
 {Suffort}, il prefato duca li rispose : il prefato {frate} va in Angliterra per {mectere} fuoco ‹etc?›, {che} non li riuscirà ; et ‹5^3_3^3_2^2_8^2›
 che il fuoco non vada più presto ‹…›. Il prefato duca, molto volto alle cose {franzesi}, sia o per naturale dispositione sua o ‹?› {intractenimento}
 de' {Franzesi}.
 **Block B (p760, B1-B8)**
-Li oratori fiamminghi che si trovano qui {domandono} il parentado di madama {Renea} et {monstrono} {farne} {instantia} ; {la} {quale}
+Li oratori fiamminghi che si trovano qui domandono il parentado di madama {Renea} et {monstrono} {farne} {instantia} ; {la} {quale}
 {domandono}, {secondo} intendo per certo, con tante {dishoneste} {conditioni} che, non si mutando, non ne doverrà seguire conclusione alcuna.
 Et ‹[oggi?]› parlando ‹…› con un personaggio di qualità, quale per trovarsi in consiglio ‹ragionevol qu fe t› ne sa il ‹t_cu_to›, mi disse
 li oratori fiamminghi nel principio non {possecto} parlare {più} ‹…›, et al presente sopra il parentado {chieggiono} tante dishoneste
@@ -100,7 +102,7 @@ li oratori fiamminghi nel principio non {possecto} parlare {più} ‹…›, et 
 ‹7^4› le domande de' predecti {sieno} facte con {artificio} et con ordine ‹E› ancora del imperadore.
 **Block C (p760, C1-C9)** [clear: … per il ricatto suo.]
 Il Cristianissimo ha havuto {ultimamente} et per ‹au?› {d'una} via la copia della legha conclusa ‹t_7^5› imperadore ‹…› ‹20._F_23._etc?›
-et havendovi trovato un capitulo per il quale si {monstrava} che {l'homo} del papa appresso li Svizeri haveva resposto non havere {mandato}
+et havendovi trovato un capitulo per il quale si {monstrava} che {l'homo} del papa appresso li Svizeri haveva resposto non havere mandato
 di {simil} cosa ‹…› et ‹…› stato ‹…› ad declarare la sua voluntà, questa Maestà ha {monstro} restare {satisfacto} del papa, et io lo credo,
 havendo ‹?› {stamactina} visto le {amorevoli} parole che Sua Maestà {usò} allo oratore del papa ‹…›, presentandoli il prefato oratore un
 {breve} di papa {ringratiatorio} per conto di ‹ne_r_co_na› ; {monstrò} Sua Maestà nel {ultimo} del suo parlare dolersi che le cose al presente
@@ -112,7 +114,7 @@ tenere per certo che alla giunta di monsignore della {Ghiscia} in Angliterra si 
 felice memoria del re passato [clear: Et henbiunse (?)] et concluso ‹…› si potrà venire ‹…› a qualche nuovo tractato et capitulatione
 ‹n_ra_me_pa_ti_du_a_re›, né io so se il prefato oratore si voleva intendere per conto delle cose del Cattolico, al quale {questa} Maestà
 ‹r?›, che si ritrae dalle parole ‹…›, non ‹…›. Et andando io ‹ci per› in corte, il Cristianissimo, in un lungo discorso delle cose del papa
-‹di_f_e› allo oratore ‹ci_senza› et a me {come} haveva mandato la {Ghiscia} ‹…› in Angliterra ‹…› {expedito}, et che {teneva} la cosa per
+{disse} allo oratore ‹ci_senza› et a me {come} haveva mandato la {Ghiscia} ‹…› in Angliterra ‹…› {expedito}, et che {teneva} la cosa per
 conclusa, et che era il vero che restava qualche ‹?› di {difficultà} per conto di {Scotia}, ma che anche questa si {assecterebbe} ‹…›.
 [clear: Subitamente hauto notitia] della {legha} conclusa, et sapere che li Svizeri di {prossimo} ‹…› tenevano ‹…› una dieta per pensare
 di molestare Sua Maestà, {dicendo} che, composto con Inghilterra, ‹g› pensava, se Dio non fussi contro di lui, che nessuno di quelli collegati

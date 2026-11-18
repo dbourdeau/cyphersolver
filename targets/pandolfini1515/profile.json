@@ -147,6 +147,15 @@
    "kind": "verification",
    "what": "Integration check (round 7): reran decrypt/check_marks/heldout (0.820 vs 0.629-0.685, 592 of 771 verbatim), _check_reading (0.681) and _check_profile; own second decoder from key.tsv gives an identical decryption; frozen-key and transcription hashes match. ASF images unreachable from the checking session (connection reset), so no image comparison. Strict share 76.8% kept as the figure (94.6% with marked repairs is the contributor's looser figure). Known keys v3/v4 of pandolfini1514 differ from v6 only by token additions. Status set to in progress: no independent blind transcription is a workable gap.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Brice Dudout, on WAINUT's transcription: the sign 2 is two signs (looped ʒ = c, bare ʒ = o; flat 2 = b), checked on blind sheets X2, x3 and x4 (controls 2/2 each; 8 signs of 666, all ʒ as expected). With the proposal v6b (pandolfini1514/KEY_V6B_PROPOSAL.md), six {c/B} repairs become direct; on our copy certain-alone 74.3% -> 75.0%, read by sense unchanged (94.5%). reading_666.md and key.tsv unchanged.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -190,6 +199,12 @@
     "role": "transcription",
     "note": "cc. 674r-674 bis v from the ASF images, two passes",
     "date": "2026-11-12"
+   },
+   {
+    "who": "dudout",
+    "role": "key corrected",
+    "note": "the sign 2 is two signs (flat 2 = b, looped ʒ = c): shapes of the 70 2 of WAINUT's transcription listed, 8 checked on blind sheets; proposal v6b in a separate file of pandolfini1514, key v6 unchanged",
+    "date": "2026-11-19"
    }
   ],
   "texts": [
@@ -250,6 +265,13 @@
     "blocker": "illegible",
     "detail": "The decoded signs give no sense as they stand; [?novecento] stands against the clear 'un milione d'oro'."
    }
-  ]
+  ],
+  "human_check": {
+   "date": "2026-11-19",
+   "by": "Brice Dudout",
+   "passage": "the shape of the sign 2 in WAINUT's transcription_666.txt: c. 674r r05 (campo), r07 (bare 2 of \"quatro o\"), r14 (verificata), c. 674 bis r b04 (loco), b06 (-sco) on sheet X2; c. 674v v02 (cosa), v10 (pace) on sheet x3; c. 674 bis v bv08 (periculo) on sheet x4",
+   "result": "confirmed",
+   "note": "Blind choice of the sign shape on the ASF images among reference shapes cut from the same letter, no value or gloss shown; three sheets with controls 2/2 each, prepared by AI agents, the choices are his alone. All eight are the looped ʒ expected for c and for the bare 2 (o). The flat 2 of b-words was seen in 666 only on sheet X, which does not count (one control wrong). The tokens are not changed (sign2_forms.tsv lists the shape of each 2). Sheets, rules and answers are not in the repository; no image or derivative included."
+  }
  }
 }

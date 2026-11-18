@@ -171,3 +171,22 @@ Collision check 12 Nov 2026 (origin/main, live repository, open and recent PRs, 
   Dudout's v3 and v4 differ from v6 only by token additions (v6 is a superset), so no other known key of the series is left to try.
 - Images not compared: the ASF server reset every connection from the checking session. The reviewer's 150-sign spot check is the
   contributor's. No independent blind transcription exists (workable once the images are reachable): the target stays in progress.
+
+## 19 Nov 2026: the sign 2 is two signs (Brice Dudout, on WAINUT's transcription)
+
+The transcription and the reading are WAINUT's (lccompany). Our corrections bear on his transcription: we change no token.
+- On the ASF images, the `2` of the transcription is two signs: a looped ʒ (c + vowel; the bare 2 = o is also a ʒ) and a
+  flat 2 (b + vowel).
+- The shape of each of the 70 `2` is in `sign2_forms.tsv`. This is an AI survey: not blind, one observer.
+- Eight signs of 666 were checked by Brice Dudout on blind sheets with controls 2/2: campo, verificata, loco, -sco and the bare
+  2 of "quatro o" (X2), cosa v02 and pace v10 (x3), periculo bv08 (x4). All eight are ʒ, as expected.
+- The b side in 666 (Bufaloro, borgo, bastardo, bon, Binasco: flat 2) was seen only on sheet X, which does not count (one
+  control wrong). In 1514 it was confirmed on sheet x4.
+- With the proposal v6b (`../pandolfini1514/KEY_V6B_PROPOSAL.md`), six repairs of `reading_666.md` ({c/B}ufaloro ×2,
+  {co/bo}rgo, {c/b}astardo, {c/b}on, {ci/Bi}nasco) become direct readings. On our count of the reading (817 units),
+  certain alone goes from 74.3% to 75.0%, and read by sense stays 94.5%. This is measured on our copy: `reading_666.md`,
+  `decryption_666.txt` and `key.tsv` are not changed.
+- **The letter stays read in part.** Level: AI decipherment, human-checked on a sample of signs. Keys v6 and v6b have never
+  been measured.
+- No image or derivative is included (ASF MAP CXXXVII, doc. 666).
+
