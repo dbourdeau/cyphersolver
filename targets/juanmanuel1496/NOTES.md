@@ -308,3 +308,9 @@ This folder edits neither `catalogue.json` nor `research/leads.json`.
 - George Lasry: the key (his CTTS key for BnF Espagnol 318 no. 95, his target `esp318no95`).
 - Andrew Beling, with AI agents: the match of these letters to Lasry's key, the transcriptions, the tests and the
   reading.
+
+## Review status, 17 November 2026
+
+Both 1496 documents are marked decoded, not read, pending an independent reading review. No reading_review has been invented; the sure-word counts remain as reported.
+
+AI agents did this work; no person has checked it.
