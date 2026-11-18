@@ -1,0 +1,270 @@
+{
+ "schema_version": 1,
+ "target": "charlesv1554",
+ "title": "Charles V to his ambassadors in England (Simon Renard, \"lieutenant d'Amont\"), Brussels, 24 January 1554: the cipher passage on Besançon BM Ms 1582, f. 2, with its contemporary decipherment",
+ "documents": [
+  {
+   "id": "ms1582f2",
+   "read": "read in part",
+   "shelfmark": "Bibliothèque municipale de Besançon, Ms 1582, f. 2 (recto and verso)",
+   "date": "24 January 1554 (identified from the printed minute; the leaf carries \"1555\" in a later hand)",
+   "year": 1554,
+   "country": "Holy Roman Empire",
+   "route": "Charles V (Brussels) -> his ambassadors in England (Lalaing, Egmont, Courrières, Simon Renard)",
+   "places": {
+    "from": "Brussels",
+    "to": "London"
+   },
+   "language": "French",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "margin",
+     "separate paragraph",
+     "printed edition"
+    ],
+    "source": "Contemporary decipherment around the cipher (full-width lines above and below, and the margin); the minute printed by Gachard (1882) pp. 313-314 and calendared in CSP Spain XII pp. 46-47; Weiss IV pp. 188-192 prints the Besançon copy with a lacuna exactly at this passage.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1075,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription/cipher_reconciled_AB.tsv"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5) for Brice Dudout, 18 Nov 2026: two blind passes with the margin masked (1,074 and 1,075 signs, 91 % agreement after name mapping), reconciled sign by sign",
+    "image_quality": "good",
+    "notes": "Research scans sent by the Bibliothèque municipale de Besançon on 18 Nov 2026; not reproduced (library's consent needed). The last line of each page (r24, v26) was cut off in the crops and is not transcribed."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Charles V's French cipher to Simon Renard, 1549-1554, as published by Pich-Ponce (2024): numbers for letters (a..t = 20..2, a second series 21-39), syllables written as the letter preceding the consonant plus a vowel mark (+ a, bar above e, bar below i, two dots o, dot below u), 66 for et, code signs for persons, nulls.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": 64,
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "syllables",
+    "common words",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Key re-derived here independently (key.tsv) and found to match Pich-Ponce's published structure; her tables were not compared sign by sign. distinct_symbols = 64 base forms in transcription pass B (139 base+mark combinations)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in print",
+   "where": "Contemporary decipherment on the leaf; text: Gachard, Voyages des souverains des Pays-Bas IV (1882) pp. 313-314, Tyler, CSP Spain XII (1949) pp. 46-47; key: Pich-Ponce, Cuadernos de Historia Moderna 49 (2024) pp. 27-45; Tomokiyo, Cryptiana (March 2026)",
+   "found": "after reading",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout asked the Bibliothèque municipale de Besançon for the scans (04 Nov 2026), received them free on 18 Nov 2026, chose to send the result as a verification once the prior art was found; Claude transcribed, aligned, re-derived the key and searched the prior art.",
+  "tools": [
+   "EM alignment scripts",
+   "web search",
+   "Internet Archive",
+   "British History Online"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-18",
+  "last_date": "2026-11-18"
+ },
+ "solution": [
+  {
+   "date": "2026-11-04",
+   "kind": "access",
+   "what": "Scans of Ms 1580 f. 239 and Ms 1582 f. 2 requested from the Bibliothèque municipale de Besançon; received free for research on 18 Nov 2026.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "what": "Two blind transcriptions with the margin masked; reconciled sign by sign (transcription/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "key-structure hypothesis"
+   ],
+   "what": "Key re-derived by aligning the cipher with the contemporary decipherment on the page; rule base letter + vowel mark fitted; split-page hold-out 0.726 / 0.691 against shuffled keys at most 0.25 (seed alignment used both pages).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "literature search",
+   "what": "Weiss IV no. LXIII (lacuna at this passage), Gachard IV app. CLV (full minute), CSP Spain XII pp. 44-49, Pich-Ponce 2024 (the cipher, published), Cryptiana March 2026: the text and the key are in print.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "key matching"
+   ],
+   "what": "Decoded cipher compared with the contemporary decipherment and with the printed minute: the minute agrees with the cipher against the decipherment in 21 places, with the decipherment in 1 (divergences_vs_minute.tsv); key structure matches Pich-Ponce 2024.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "reading",
+   "what": "358 words: 210 sure, 125 probable, 4 restored, 19 in two lines not transcribed (reading.md).",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "read from existing decipherment",
+  "method_basis": "Contemporary decipherment on the leaf and the printed minute; the cipher read with a key re-derived from that decipherment, which matches the cipher published by Pich-Ponce (2024).",
+  "contribution": [
+   "transcription",
+   "sender or date identified",
+   "catalogue correction"
+  ],
+  "class": "already solved",
+  "fraction_read": 0.587,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 210 sure of 358 words (repository rule, sure words only); with probable words 335/358 = 0.936",
+  "key": "partial",
+  "first_break": false,
+  "gaps": [
+   {
+    "item": "r24 and v26 (last line of each page)",
+    "blocker": "not-attempted",
+    "detail": "cut off in the transcription crops; about 19 words, supplied from the minute only"
+   },
+   {
+    "item": "key gaps (no/po, nz d/i, w a/l, mt/nt n/p)",
+    "blocker": "not-attempted",
+    "detail": "Pich-Ponce's printed table not applied sign by sign"
+   },
+   {
+    "item": "physical link with Ms Granvelle 73 ff. 119-122",
+    "blocker": "needs-physical-access",
+    "detail": "hypothesis that f. 2 was detached from the copy Weiss printed with a lacuna; not checked"
+   }
+  ],
+  "verification": [
+   "contemporary decipherment",
+   "independent clear copy",
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "notes": "No image of the Bibliothèque municipale de Besançon is reproduced. The library dates the leaf 1555; the text is the letter of 24 Jan 1554.",
+  "texts": [
+   {
+    "doc": "ms1582f2",
+    "label": "Ms 1582, f. 2r-v: Charles V to his ambassadors in England, 24 Jan 1554 (cipher passage)",
+    "transcription": [
+     "transcription/cipher_reconciled_AB.tsv",
+     "transcription/pass_A.tsv",
+     "transcription/pass_B.tsv"
+    ],
+    "decryption": [
+     "decryption.tsv"
+    ],
+    "language": "fr",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "summary": "Charles V tells his ambassadors in London how to answer the French peace overtures: he has always wanted peace, the French broke the truce of their own will, his proposal of September 1553 made at the request of the Cardinal of Imola (Dandino) was never answered; he will negotiate through Mary Tudor once French terms for peace or truce are known; Renard is to learn from Paget what the French ambassador said about marriage matches.",
+    "state": "read in part",
+    "read_share": 0.587,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-18",
+     "note": "Read as sentences against the contemporary decipherment and Gachard's printed minute; not a second reader."
+    }
+   }
+  ],
+  "key_file": [
+   "key.tsv"
+  ],
+  "credits": [
+   {
+    "who": "pichponce",
+    "role": "prior solution",
+    "note": "Published this cipher (Charles V's French cipher to Simon Renard, 1549-1554) with its table, checked against two Simancas nomenclators",
+    "date": "2024",
+    "source": "E. Pich-Ponce, \"El lenguaje cifrado de Carlos V y el matrimonio de María Tudor\", Cuadernos de Historia Moderna 49 (1), 2024, pp. 27-45"
+   },
+   {
+    "who": "tomokiyo",
+    "role": "pointer",
+    "note": "Lists this cipher as the third cipher of the Granvelle-Renard correspondence, 1549-1554",
+    "date": "2026",
+    "source": "Cryptiana, \"Three ciphers used in correspondence\" (March 2026)"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "Decipherment written around the cipher on the leaf"
+   },
+   {
+    "who": "gachard",
+    "role": "key or decipherment used",
+    "note": "Prints the minute of the letter (full French text) used to settle the cipher-versus-decipherment differences",
+    "date": "1882",
+    "source": "Gachard, Collection des voyages des souverains des Pays-Bas IV, app. CLV, pp. 311-314"
+   },
+   {
+    "who": "tyler",
+    "role": "key or decipherment used",
+    "note": "Calendars the minute (Vienna E. 23) and notes the mutilated Besançon copy printed by Weiss",
+    "date": "1949",
+    "source": "R. Tyler (ed.), CSP Spain XII, pp. 44-49"
+   },
+   {
+    "who": "dudout",
+    "role": "new cipher",
+    "note": "Ms 1582 f. 2 brought into the ledger: scans obtained from the Bibliothèque municipale de Besançon, two blind transcriptions (Claude for Brice Dudout)",
+    "date": "2026-11-18",
+    "source": "this folder"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "Leaf identified as the cipher passage of the letter of 24 Jan 1554, the passage missing from the Besançon copy printed by Weiss (lacuna, IV p. 190); catalogue date 1555 corrected",
+    "date": "2026-11-18",
+    "source": "this folder"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "note": "Pich-Ponce's cipher checked on a new witness by an independent re-derivation; cipher-versus-decipherment differences settled with the printed minute",
+    "date": "2026-11-18",
+    "source": "this folder"
+   }
+  ]
+ }
+}
