@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "t33-3-enc4",
-   "read": "read in part",
+   "read": "not read",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Colombia vol. 3 (microfilm T33 roll 3), naId 189273979, frames T33-03-0055 to -0058; enclosure No. 4 to Anderson's No. 7, Bogota, 19 Jan 1824; '2o. duplicado', intercepted in France",
    "date": "Undated; May-June 1821 proposed by Brice in PR764; earlier May-June 1822 dating unconfirmed",
    "year": "unknown",
@@ -88,15 +88,15 @@
   {"date": "2026-11-12", "kind": "reading", "technique": ["contextual inference"], "what": "Fragment order from the contemporary English translation (frame 0060 right): 0058 left runs on to 0056 right; the last run of 0057 right continues on 0058 left (one group, B18). The Zea date on the 0057-left clear fragment is not secure ([3/5?]). 15 places left open (ink blots, a struck passage, the sheet edge).", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-27", "model": "es-modern", "file": "validation.tsv", "tokens": 2285, "types": 27, "tokens_per_type": 84.63, "score": -2.836, "nulls": {"random keys": {"n": 200, "mean": -7.61, "sd": 0.732, "max": -5.698, "z": 6.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.529, "sd": 0.03, "max": -4.498, "z": 56.2, "p": 0.1429}}, "power": -2.826, "verdict": "pass", "notes": "claimed per-occurrence score -2.836; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -2.826"}, 
-  "class": "read in part",
+  "class": "not read",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "method_basis": "The substitution key was recovered from the cipher groups alone by a hill-climb against Spanish statistics; no key or plaintext was available.",
   "contribution": ["transcription", "key recovered"],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Share of the deciphered words read as sense: the deciphered parts of reading.md (the text in guillemets, 356 words) score hole rate 0.18 on docs/_check_reading.py --file, hence 0.82 (counting words, 344 of 370 in guillemets are neither [?] nor [...], but about 110 of them are first-pass slips corrected in reading.md and listed in corrections.md, not yet checked on the film; the dropped tails of C17-C19, C38, C43, C49, C53-C56 are outside this count). For comparison: 2,282 of 2,294 sign places have a value (0.995, not a reading measure); 0.427 of the decrypted words are in the Spanish word list as transcribed; the checker scores reading.md 0.586 of sentences clean. The whole reading, clear text included, scores 0.132 (read_share 0.868).",
-  "fraction_read": 0.82,
-  "fraction_coherent": 0.82,
+  "fraction_read_source": "Historical unreviewed estimates retained for audit, not accepted sure-word reading shares: 0.82 for the cipher passages and 0.868 for the mixed clear/cipher reading. No reading_review is recorded; the document remains decoded, not read pending maintainer review. Earlier derivation: share of the deciphered words read as sense: the deciphered parts of reading.md (the text in guillemets, 356 words) score hole rate 0.18 on docs/_check_reading.py --file, hence 0.82 (counting words, 344 of 370 in guillemets are neither [?] nor [...], but about 110 of them are first-pass slips corrected in reading.md and listed in corrections.md, not yet checked on the film; the dropped tails of C17-C19, C38, C43, C49, C53-C56 are outside this count). For comparison: 2,282 of 2,294 sign places have a value (0.995, not a reading measure); 0.427 of the decrypted words are in the Spanish word list as transcribed; the checker scores reading.md 0.586 of sentences clean. The whole reading, clear text included, scores 0.132 (read_share 0.868).",
+  "fraction_read": "unknown",
+  "fraction_coherent": "unknown",
   "verification": ["independent verification", "historical consistency", "statistical test"],
   "provenance": "contributed",
   "credits": [
@@ -119,8 +119,7 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read in part",
-    "read_share": 0.868,
+    "state": "decoded, not read",
     "reading_review": {
      "grade": "B",
      "by": "Claude (session of 14 Nov 2026)",
