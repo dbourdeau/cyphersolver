@@ -1,6 +1,6 @@
 # Charles XII to Adam Ludvig Lewenhaupt, Saludek, 21 Feb 1706 (F 470, images 301-303; second copy 306-308): the cipher passages in English
 
-Status: **read in part** (323 words: 238 sure, 34 probable, 1 supplied, 50 unread; read share, sure words only, 73.7%; sure + probable 84.2%; counted 18 Nov 2026 with key K4).
+Status: **decoded, not read** (18 Nov 2026; measured on our copy: 323 words: 238 sure, 34 probable, 1 supplied, 50 unread; read share, sure words only, 73.7%; sure + probable 84.2%; counted 18 Nov 2026 with key K4).
 Translation of `L3_21feb1706_reading_sv.txt`. Marks as in the Swedish file: {word} = probable, [word] = supplied,
 ‹…› = unread (code number or undivided letters left as decoded). The clear text between the passages is not translated here.
 

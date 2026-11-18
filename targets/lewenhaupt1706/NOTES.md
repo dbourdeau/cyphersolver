@@ -2,13 +2,17 @@
 
 Contributed by Brice Dudout (agents: Claude Opus 5.5), 17 Nov 2026. New target, not in the catalogue.
 
-**Status: read in part.** The key was rebuilt from the decipherments of the time and frozen; it is **not validated at
+**Status: decoded, not read** (class "not read", 18 Nov 2026). L3 and L4 decode, but their readings have holes in most
+sentences (`docs/_check_reading.py`: 1 of 27 clean sentences in L3, 1 of 11 in L4) and no reader other than the author
+has graded them; Brice Dudout chose to file them as "decoded, not read" instead of seeking another reviewer (review
+point 4 of #747). The contributor's own grades B are withdrawn. The figures below are measurements, not a reading.
+The key was rebuilt from the decipherments of the time and frozen; it is **not validated at
 the programme's bar**. One pre-registered measurement on an unseen letter passed an absolute threshold of 0.60, not
 the programme's 0.85. Order: the first measurement (v1, another letter, another metric) failed; the metric and the
 0.60 threshold of v2 were then chosen, after K2's decodes of its own fitting letters had been seen, and written into
-`protocol/PREREG-v2.md`, hashed before the measurement (`protocol/PREREG-v2.sha256`). The two letters without a decipherment of the time are read at **73.7% and 76.4% of
-their words, sure words only** (cipher words; measured on our copy, 18 Nov 2026), below the 95% bar; with probable words
-84.2% and 82.1%. The gloss of the time of letter 108 (1707) confirms 80 values of the key and gives four more (section
+`protocol/PREREG-v2.md`, hashed before the measurement (`protocol/PREREG-v2.sha256`). In the two letters without a decipherment of the time, **73.7% and 76.4% of the
+words are sure** (cipher words; measured on our copy, 18 Nov 2026), below the 95% bar; with probable words 84.2% and
+82.1%. The gloss of the time of letter 108 (1707) confirms 80 values of the key and gives four more (section
 "Letters 108 and 119", 18 Nov 2026); a measurement on letter 119 failed.
 
 ## Source
@@ -107,6 +111,8 @@ were made, each on a different letter.
 - Key K4 (`key/key_K4_with_gloss108.json`, `key.tsv`, 256 codes, 18 Nov 2026) = K3 plus 12 sure values read in the
   gloss of the time of letter 108 (below). The decryption files and `validation.tsv` are regenerated with K4
   (`python3 -I tools/make_texts.py key/key_K4_with_gloss108.json`).
+- **Filed as "decoded, not read" (18 Nov 2026).** The reading and translation files below are shown for others to
+  improve; they are not counted as a reading. The word counts are kept as measurements.
 - Decryptions: `L3_21feb1706_decryption.txt`, `L4_2mar1706_decryption.txt` (`tools/make_texts.py`). Readings in Swedish
   (`readings/*_reading_sv.txt`) and English (`readings/*_translation_en.md`). Marks: plain = sure, {word} = probable,
   [word] = supplied, ‹…› = unread; a word with an unread part counts as unread.
@@ -117,9 +123,9 @@ were made, each on a different letter.
 
 | letter | words | sure | probable {x} | supplied [x] | unread ‹…› | **sure (read share)** | sure + probable (not the bar) | state |
 |---|---|---|---|---|---|---|---|---|
-| L3, 21 Feb 1706 | 323 | 238 | 34 | 1 | 50 | **73.7%** | 84.2% | read in part |
-| L4, 2 Mar 1706 | 123 | 94 | 7 | 0 | 22 | **76.4%** | 82.1% | read in part |
-| together | 446 | 332 | 41 | 1 | 72 | **74.4%** | 83.6% | read in part |
+| L3, 21 Feb 1706 | 323 | 238 | 34 | 1 | 50 | **73.7%** | 84.2% | decoded, not read |
+| L4, 2 Mar 1706 | 123 | 94 | 7 | 0 | 22 | **76.4%** | 82.1% | decoded, not read |
+| together | 446 | 332 | 41 | 1 | 72 | **74.4%** | 83.6% | decoded, not read |
 
   On 17 Nov (K3) the counts were L3 234 sure / 54 unread (72.4%), L4 90 / 26 (73.2%); the 8 new sure words are
   520 eller (twice) "eller och" = "or else", 557 han, 629 parti in L3, and 629 partiet (twice), 629 parti, 544 fram in L4.
