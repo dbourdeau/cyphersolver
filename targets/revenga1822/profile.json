@@ -1,14 +1,14 @@
 {
  "schema_version": 1,
  "target": "revenga1822",
- "title": "Revenga's intercepted letter from Madrid, 1822 (catalogue 641): 56 cipher passages in a monoalphabetic substitution with the word space enciphered",
+ "title": "Revenga's undated intercepted letter from Madrid (1821 proposed; catalogue 641): 56 cipher passages in a monoalphabetic substitution with the word space enciphered",
  "documents": [
   {
    "id": "t33-3-enc4",
    "read": "read in part",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Colombia vol. 3 (microfilm T33 roll 3), naId 189273979, frames T33-03-0055 to -0058; enclosure No. 4 to Anderson's No. 7, Bogota, 19 Jan 1824; '2o. duplicado', intercepted in France",
-   "date": "1822 (about May-June 1822 by internal evidence; not confirmed)",
-   "year": 1822,
+   "date": "Undated; May-June 1821 proposed by Brice in PR764; earlier May-June 1822 dating unconfirmed",
+   "year": "unknown",
    "country": "Colombia",
    "route": "Madrid -> Bogota (duplicate sent through France, intercepted there)",
    "places": {"from": "Madrid", "to": "Bogota"},
@@ -82,9 +82,9 @@
   {"date": "2026-10-27", "kind": "solver", "technique": ["simulated annealing", "language-model scoring"], "what": "Review: the solver rewritten as solve.py (swap annealing from random keys against es-modern 4-grams, word space and commas left out). Seed 641, 4 restarts: three reach -2.87 per char and agree with KEY on 97.5-97.7% of sign occurrences; they differ on the rare c, f, k, n, u. KEY itself scores -2.834, above the annealer.", "result": "worked"},
   {"date": "2026-10-27", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 2285 tokens, 27 types, es-modern order 4: reading -2.836 per letter; random keys -7.61 (z 6.5); key annealed onto shuffled ciphertext best -4.498 (mean -4.529, z 56.2); annealer on the real text -2.826. Verdict: pass.", "result": "worked"},
   {"date": "2026-11-14", "kind": "verification", "what": "Reading review: reading.md read as sentences against decryption.txt and corrections.md, translation.md against the reading; coherent Spanish in all five fragments with scattered holes, but the decode is raw and about 110 words are normalised from the sense without a check on the film; grade B recorded, state stays read in part. The second transcription pass was not done.", "result": "worked"},
-  {"date": "2026-11-12", "kind": "transcription", "what": "Second pass (Andrew Beling, with AI agents; added 17 Nov 2026): a blind second transcription of all 56 cipher groups and the clear text from frames 0055-0058, made without sight of any key, decryption or earlier transcription and hashed when finished (second_pass/blind/). Agreement with the first pass 2,293 of 2,532 signs (0.906).", "result": "worked"},
-  {"date": "2026-11-12", "kind": "verification", "what": "The 231 places where the two transcriptions differ (200) or agree only on a doubtful reading (31) settled on the frames by one AI agent that saw both readings and the key (not blind): 171 by shape, 45 from the sense, 15 open; 5 more places where both read alike and the frame differs (second_pass/collation.tsv). The 108 corrections of corrections.md checked against the settled text: 44 confirmed on the frame, 35 the writer's own slips, 29 mixed (second_pass/corrections_check.tsv).", "result": "partial"},
-  {"date": "2026-11-12", "kind": "hypothesis", "technique": ["key-structure hypothesis", "manual reconstruction"], "what": "z-sign test (second_pass/z_sign_test.md): in all four words with plain z (Cadiz, pobreza, diez, forzoso) both transcriptions read g, the sign of plain i; no separate z sign. The j sign is a w-like double loop (Ejecutivo, mejor); final z and k stand where stops belong.", "result": "worked"},
+  {"date": "2026-11-12", "kind": "transcription", "what": "Second pass (Andrew Beling, with AI agents; added 17 Nov 2026): a blind second transcription of all 56 cipher groups and the clear text from frames 0055-0058, made without sight of any key, decryption or earlier transcription and hashed when finished (second_pass/blind/). Sure agreement with the first pass 2,261 of 2,532 alignment columns (0.893), counted by second_pass/agreement_recount.py; the earlier 2,293/2,532 is withdrawn. Unknown-length struck spans each occupy one unresolved placeholder.", "result": "worked"},
+  {"date": "2026-11-12", "kind": "verification", "what": "The earlier collation lists 231 entries where the two transcriptions differ (200) or agree only on a doubtful reading (31) settled on the frames by one AI agent that saw both readings and the key (not blind): 171 by shape, 45 from the sense, 15 open; 5 more places where both read alike and the frame differs (second_pass/collation.tsv). The 108 corrections of corrections.md checked against the settled text: 44 confirmed on the frame, 35 the writer's own slips, 29 mixed (second_pass/corrections_check.tsv).", "result": "partial"},
+  {"date": "2026-11-12", "kind": "hypothesis", "technique": ["key-structure hypothesis", "manual reconstruction"], "what": "z-sign test (second_pass/z_sign_test.md): in all four words with plain z (Cadiz, pobreza, diez, forzoso) both transcriptions read g, the sign of plain i; no separate z sign. The j sign is a w-like double loop (Ejecutivo, mejor); final z and k stand where stops belong.", "result": "partial"},
   {"date": "2026-11-12", "kind": "reading", "technique": ["contextual inference"], "what": "Fragment order from the contemporary English translation (frame 0060 right): 0058 left runs on to 0056 right; the last run of 0057 right continues on 0058 left (one group, B18). The Zea date on the 0057-left clear fragment is not secure ([3/5?]). 15 places left open (ink blots, a struck passage, the sheet edge).", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-27", "model": "es-modern", "file": "validation.tsv", "tokens": 2285, "types": 27, "tokens_per_type": 84.63, "score": -2.836, "nulls": {"random keys": {"n": 200, "mean": -7.61, "sd": 0.732, "max": -5.698, "z": 6.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.529, "sd": 0.03, "max": -4.498, "z": 56.2, "p": 0.1429}}, "power": -2.826, "verdict": "pass", "notes": "claimed per-occurrence score -2.836; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -2.826"}, 
@@ -113,7 +113,7 @@
   "texts": [
    {
     "doc": "t33-3-enc4",
-    "label": "Revenga (with Echeverría?) to the Colombian Secretary of Foreign Affairs, Madrid 1822, duplicate intercepted in France (NARA T33 roll 3, frames 0055-0058)",
+    "label": "Revenga (with Echeverría?) to the Colombian Secretary of Foreign Affairs, Madrid, undated (1821 proposed), duplicate intercepted in France (NARA T33 roll 3, frames 0055-0058)",
     "transcription": "transcription.txt",
     "decryption": "decryption.txt",
     "reading": "reading.md",
@@ -127,7 +127,7 @@
      "date": "2026-11-14",
      "note": "Read reading.md (five fragments) against decryption.txt and corrections.md, and translation.md against reading.md. The Spanish builds coherent sentences in every fragment, the deciphered passages completing the clear text; holes are scattered ([...] and [?word], about a dozen places). Grade B, not A: the mechanical decode is raw (first-pass transcription slips, e.g. utangrionta for sangrienta), and the reading normalises about 110 words from the sense, each listed in corrections.md and none yet checked on the film. The English translation covers all five fragments with the same holes. read_share 0.868, so read in part. Frames not re-opened in this pass."
     },
-    "summary": "The Colombian commissioners in Madrid report on Spanish politics in 1822: republicans and constitutional royalists at odds, Riego, the fall of the ministers, an anti-constitutional plot, an empty treasury and talk of national bankruptcy. They try to unite the American deputies and get a motion on extraordinary Cortes, argue against fears that Russia, Austria and Prussia had divided America, hope the Cortes will authorise the Executive to treat with them, and report Apodaca's private pessimism and La Torre's request for men and money. The cipher carries the names and the sensitive judgements."
+    "summary": "The Colombian commissioners in Madrid report on Spanish politics (date unresolved, 1821 proposed): republicans and constitutional royalists at odds, Riego, the fall of the ministers, an anti-constitutional plot, an empty treasury and talk of national bankruptcy. They try to unite the American deputies and get a motion on extraordinary Cortes, argue against fears that Russia, Austria and Prussia had divided America, hope the Cortes will authorise the Executive to treat with them, and report Apodaca's private pessimism and La Torre's request for men and money. The cipher carries the names and the sensitive judgements."
    }
   ],
   "key_file": "key.txt",
