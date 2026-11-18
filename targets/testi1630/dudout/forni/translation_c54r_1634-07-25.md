@@ -1,0 +1,3 @@
+# c. 54r, 25 July 1634: English translation
+
+Because I judge that the business Cioli raised with me matters greatly to Your Highness, I have not mentioned it to the Balì. I myself have [held back?] his letter, and I have done the same with all the talks that passed between [name] and me. You may be sure that I would not have entered into the business of Cioli without Your Highness's express order. I think that, to serve you well, the best course is to avoid such talks. Let this serve as a notice for the future: when you see letters in my own hand, and I tell you nothing else, take it as certain that no one but I and the person I have dealt with knows what I write to you. With that, I bow humbly to Your Highness. Florence, 25 July 1634.
