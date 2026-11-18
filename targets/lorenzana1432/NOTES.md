@@ -47,9 +47,17 @@ The **9 December 1431** check, doc. 143, uses the twenty December values alone. 
 - **Three spellings.** The April key yields *Lorezano*, *Mattaoni* and *lascire*. Lorenzana appears in the dateline and the archive inventory, and Mattaione signs his own letter. The unciphered *lasciando* just before *lascire* supports *lasci[a]re*. The named people and places are identifiable even where the literal spelling differs.
 - **Prior art.** Cyphersolver’s 15 November 2026 vetting records checks of DECODE, Tomokiyo, Lasry and the inventory. Searches by sender, date, place and distinctive wording on 17 November returned the inventory and related sources. I found no published decipherment of doc. 196. The claim here is a reproducible reading of the manuscript, with priority open to further evidence.
 
-The project’s explicit-hole scorer counts 381 words in the continuous Italian reading, with a hole rate of 0.024 (read share 0.976). That figure includes the surrounding clear Italian, its doubtful words, and bracketed editorial supplies. The 339-sign count above is confined to cipher.
+Counted in cipher words, the letter has 58 (a word split across two lines counts once: *isfa-sciare*, *pietra-chassa*, *ra-chomandare*). All 58 are decoded. Fifty-six give the word sign for sign; two carry a one-letter slip, marked in place as *Lore[n]zano* and *lasci[a]re*. The profile records 56 of 58 (0.966) as the read share. The 339-sign count above measures key coverage, not words.
 
 A second Codex reader checked a sample of the handwriting, including the December *Antono* and *cassa* anchors and the April inventory clause *perdendosi andasono a mio refe*. On line 5 the reader questioned the clear-text verb *tento*. The transcription, Italian reading and English translation mark it as uncertain. [Side-by-side edition](https://aaymeloglu.github.io/unsolved-ciphers/lorenzana-reading.html) · [Evidence grades and review in the merged edition](https://github.com/aaymeloglu/unsolved-ciphers/tree/f0e4a6601037806c8a755f0771be15e934bccff8/lorenzana-1432)
+
+## Remaining gaps
+
+None of the holes is in cipher.
+
+- Doubtful clear words: *[?credo]* (line 1), *[?tento]* (line 5), *[?iscorio]* (lines 15-16) and *[?Cirioni]* (line 16). The readings fit the sense, but the letter forms do not settle them.
+- Two passages shown as [...] in the reading, where the transcription has *[?scotta]* (line 16) and *[?madasse]* (lines 23-24). Neither gives sense.
+- The *di* on line 18 is read as ordinary script. Read as cipher, its two signs would give *fi*.
 
 ## Reproduction
 
