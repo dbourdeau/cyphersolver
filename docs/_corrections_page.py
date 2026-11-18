@@ -35,7 +35,7 @@ def build_html(version=''):
         '<section class="hero">\n  <p class="kicker">Reference &middot; corrections</p>\n  <h1>Corrections</h1>\n'
         '  <p class="sub">What this site has published and then had to correct or withdraw: the date, the pages, what '
         'changed, who reported it and why it was wrong. Newest first. A reading here stays open to correction; '
-        '<a href="method.html#contest">how to contest one</a>.</p>\n'
+        'every page footer has a &ldquo;Contest or verify this reading&rdquo; link.</p>\n'
         '  <p class="meta">Daniel Bourdeau and contributors</p>\n</section>\n\n<main>\n\n'
         f'<p>{len(rows)} entries. The log starts on 16 November 2026; earlier entries were gathered from the dated notes '
         'already on the pages and in the repository, and are not complete before that date. The full history of every '
