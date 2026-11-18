@@ -2,7 +2,7 @@
 
 Status: in progress. Deciphered in part with George Lasry's key for BnF Espagnol 318 no. 95 (8 January 1497),
 applied unchanged: 45 of 56 cipher words read on the working transcription (80%), 38 of 56 (68%) on the strict
-blind transcription. Read in part, under the read bar. The reading awaits a reviewer's `reading_review`; no
+blind transcription. Decoded, not read, pending an independent reading review. The reading awaits a reviewer's `reading_review`; no
 write-up page yet. All of this was done by AI agents on 16-17 Nov 2026; no person has checked any of it.
 
 **The first planned test passed on the first transcription and missed on an independent blind one.** Lasry's key
@@ -365,3 +365,9 @@ cipher has none):
 - George Lasry: the key (his CTTS key and key image for BnF Espagnol 318 no. 95, his target `esp318no95`).
 - Andrew Beling, with AI agents: the match of this letter to Lasry's key, both transcriptions, the tests and the
   reading.
+
+## Review status, 17 November 2026
+
+This is a new target folder on main, not an update to an existing main-branch target. The headline fraction_read is 38/56 (0.679), from the strict blind transcription. The non-blind working result 45/56 remains separate.
+
+AI agents did this work; no person has checked it.
