@@ -1,5 +1,6 @@
 """Writes the group-by-group decryptions, key.tsv and validation.tsv from a key file and the transcriptions.
-usage (from the target folder): python3 -I tools/make_texts.py key/key_K3_after_measure.json
+usage (from the target folder): python3 -I tools/make_texts.py key/key_K4_with_gloss108.json
+(18 Nov 2026: K4 = K3 + 12 values glossed in letter 108; run with key/key_K3_after_measure.json for the 17 Nov files)
 Notation in decryption files: code=value ; code=? (no value in the key) ; {clear text of the document} kept as is ;
 [struck-out group] dropped, as in tools/score2.py."""
 import sys, re, json
@@ -24,10 +25,10 @@ for doc, files in DOCS.items():
             out.append(' '.join(toks))
     open(f'{doc}_decryption.txt', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 with open('key.tsv', 'w', encoding='utf-8') as k:
-    k.write('# code\tvalue (\'\' = null). Key K3 = frozen K2 + values fitted after the measurement (protocol/K2_changes.tsv, NOTES.md)\n')
+    k.write('# code\tvalue (\'\' = null). Key K4 = frozen K2 + values fitted after the measurement (K3, protocol/K2_changes.tsv) + 12 values from the gloss of the time of letter 108 (protocol/T108_gloss_letter108.tsv); see NOTES.md\n')
     for c in sorted(key, key=int): k.write(f'{c}\t{key[c]}\n')
 with open('validation.tsv', 'w', encoding='utf-8') as v:
-    v.write('# model: sv-modern\n# source: L3_21feb1706_decryption.txt, L4_2mar1706_decryption.txt (key/key_K3_after_measure.json)\n')
+    v.write('# model: sv-modern\n# source: L3_21feb1706_decryption.txt, L4_2mar1706_decryption.txt (' + sys.argv[1] + ')\n')
     v.write('# note: group values from the key fitted after the measurement; unknown groups as ?\n')
     for c, r in val: v.write(f'{c}\t{r}\n')
 print(len(val), 'tokens', sum(1 for _, r in val if r != '?'), 'with a value')
