@@ -5,8 +5,10 @@ Contributed by Brice Dudout (agents: Claude Opus 5.5), 17 Nov 2026. New target, 
 **Status: read in part.** The key was rebuilt from the decipherments of the time, frozen, and passed one
 pre-registered measurement on an unseen letter **with a reserve**: the absolute threshold was set at 0.60 instead of
 the default 0.85 (declared, with its calibration, before the measurement). An earlier measurement on another letter,
-with a different metric, failed. The two letters without a decipherment of the time are read at 83% and 79% of words
-(sure + probable), below the 95% bar.
+with a different metric, failed. The two letters without a decipherment of the time are read at **73.7% and 76.4% of
+their words, sure words only** (cipher words; measured on our copy, 18 Nov 2026), below the 95% bar; with probable words
+84.2% and 82.1%. The gloss of the time of letter 108 (1707) confirms 80 values of the key and gives four more (section
+"Letters 108 and 119", 18 Nov 2026); a measurement on letter 119 failed.
 
 ## Source
 
@@ -83,24 +85,34 @@ were made, each on a different letter.
   shuffles of the group order max 0.008; 10.6% of L3's groups unknown to K2; word coverage 0.50 against controls max
   0.56 (the lexical metric does not separate, as in v1).
 - `rerun.sh` reruns the v2 measurement from the files as filed here and gives the same figures (checked 17 Nov 2026).
-- No fresh portion of this cipher is left in F 470: L1-L4 are all used or burned.
+- No fresh portion of this series is left in F 470: L1-L4 are all used or burned. Letter 119 (1707), measured on
+  18 Nov 2026 with the table from letter 108 (v3, below), is burned too.
 
 ## Reading (after the measurement, outside the protocol)
 
-- Key K3 (`key/key_K3_after_measure.json`, `key.tsv`, 244 codes) = K2 plus about 30 values taken from L3 and the
+- Key K3 (`key/key_K3_after_measure.json`, 244 codes) = K2 plus about 30 values taken from L3 and the
   context (509 den, 680 wäl, 199 ne, 652 samma, 597 magasin, 721 Lifland, 744 Riga, 548 garnison, ...). Not validated
   by a measurement.
+- Key K4 (`key/key_K4_with_gloss108.json`, `key.tsv`, 256 codes, 18 Nov 2026) = K3 plus 12 sure values read in the
+  gloss of the time of letter 108 (below). The decryption files and `validation.tsv` are regenerated with K4
+  (`python3 -I tools/make_texts.py key/key_K4_with_gloss108.json`).
 - Decryptions: `L3_21feb1706_decryption.txt`, `L4_2mar1706_decryption.txt` (`tools/make_texts.py`). Readings in Swedish
   (`readings/*_reading_sv.txt`) and English (`readings/*_translation_en.md`). Marks: plain = sure, {word} = probable,
   [word] = supplied, ‹…› = unread; a word with an unread part counts as unread.
-- Word counts (counted mechanically from the reading files):
+- Word counts, measured on our copy (counted mechanically from the reading files, 18 Nov 2026, after the K4 values).
+  The read share follows the rule of 16 Nov 2026 (PR #728): cipher words only, and only sure words count as read;
+  probable, supplied and unread words are holes. A word counts as sure only when it reads as sense in its sentence
+  (read by the sense), not because its groups have values.
 
-| letter | words | sure | probable | supplied | unread | sure | sure + probable | state |
+| letter | words | sure | probable {x} | supplied [x] | unread ‹…› | **sure (read share)** | sure + probable (not the bar) | state |
 |---|---|---|---|---|---|---|---|---|
-| L3, 21 Feb 1706 | 323 | 234 | 34 | 1 | 54 | 72.4% | 83.0% | read in part |
-| L4, 2 Mar 1706 | 123 | 90 | 7 | 0 | 26 | 73.2% | 78.9% | read in part |
+| L3, 21 Feb 1706 | 323 | 238 | 34 | 1 | 50 | **73.7%** | 84.2% | read in part |
+| L4, 2 Mar 1706 | 123 | 94 | 7 | 0 | 22 | **76.4%** | 82.1% | read in part |
+| together | 446 | 332 | 41 | 1 | 72 | **74.4%** | 83.6% | read in part |
 
-- Cipher groups given a value by K3: L3 745 of 780, L4 278 of 292 (1,023 of 1,072, 95.4%); many valued groups still do
+  On 17 Nov (K3) the counts were L3 234 sure / 54 unread (72.4%), L4 90 / 26 (73.2%); the 8 new sure words are
+  520 eller (twice) "eller och" = "or else", 557 han, 629 parti in L3, and 629 partiet (twice), 629 parti, 544 fram in L4.
+- Cipher groups given a value by K4: L3 749 of 780, L4 282 of 292 (1,031 of 1,072); many valued groups still do
   not join into words, so the share of words read is the figure that counts.
 - Content: L3 answers Lewenhaupt's letters of 24 Nov, 7 Dec, 13 and 26 Jan on the disorder in Livonia: if the Muscovites
   withdraw from Courland and Samogitia, he is to march into Courland with his troops and battalions of the Riga and
@@ -109,20 +121,55 @@ were made, each on a different letter.
   push into Courland and a detachment into Samogitia to drive the enemy out. L4 reports a detachment sent towards Sadowa
   that found the enemy, Russian artillery with Wiśniowiecki and Ogiński and the Lithuanian troops, a march towards
   Vilna, and expects Lewenhaupt to be on the march towards Lithuania.
-- Doubtful values: 154 (le/lu), 96 (fe; L1 Grodno wants g), 174 (re/ra), 614, 629, 661, 520/522; names 721, 744, 738
-  set from the context and the alphabetical order.
+- Doubtful values: 154 (le/lu), 96 (fe; L1 Grodno wants g), 174 (re/ra), 614, 661, 522; names 721, 744, 738
+  set from the context and the alphabetical order. (629 and 520, doubtful on 17 Nov, are now glossed in letter 108.)
 - Copy variants in L3: 109/103, 45/75 (B's 75 = u, "undfått", is right), 676/776.
 - The standard statistical check (`docs/_validate.py`) could not run on 17 Nov 2026: the sv-gutenberg corpus download
   returned HTTP 503. `validation.tsv` (K3 values per group, L3 then L4) is filed for it.
 
+## Letters 108 and 119 (1707), 18 Nov 2026
+
+Two later letters of Charles XII to Lewenhaupt in F 470 use the same table. Files: `protocol/PREREG-v3-letter119.md`
+(written and hashed before any transcription, `protocol/PREREG-v3.sha256`; in French, like the v1 and v2 files),
+`protocol/FROZEN-v3.sha256` (the transcriptions, T108 and the result, under their working names), `tools/v3/`.
+
+- **Letter 108** (Altranstädt, 5 Jan 1707, images 366-367): every cipher group carries a word-by-word interlinear
+  gloss of the time. It is therefore **read from an existing decipherment** (EXISTING), not a new reading, and it is
+  not counted in the figures above. Groups and glosses: `transcription/L108_5jan1707_366_367_gloss.txt` (one passage
+  struck out by the encipherer, not counted). Table T108 (`protocol/T108_gloss_letter108.tsv`, `.json`), built from
+  the glosses alone, with no value taken from K2 or K3 (K2 was seen during the prior-art check; declared in the
+  PREREG): 101 codes, 94 sure, 7 doubtful.
+- **Confirmation of the key.** T108 shares 86 codes with K3: **80 have the same value**, and the 6 others differ in
+  spelling only: 23 m / mm, 36 s / ß, 225 wij / wi, 556 hafwe / hafwer, 669 til / till, 10 ch / x? (the gloss of 10 is
+  doubtful; "hemsöcht" in 108 wants ch). This is an independent check, by a decipherment of the time, of values K2 and
+  K3 had set from L1, L2 and the context.
+- **Four codes of K3 that were open** are glossed in 108, all sure: **520 = eller, 629 = parti, 544 = fram,
+  557 = han**. They read 8 more words in L3 and L4 (table above). Other new sure values, which do not occur in L3 or
+  L4: 38 str, 84 bu, 98 fö, 511 det, 543 först, 593 läger, 634 proviant, 668 straxt (all in K4).
+- **Doubtful, not used:** 10 (x?, ch by the sense), 90 (da / dä), 105 (ha / hå), 106 (glossed "fr", but "hemligit",
+  "hemsöcht" in 108 and "förnödenhet", "nödwändighet" in 119 want he; found after the measurement), 143 (hw?), and
+  85 (glossed la, once, against the alphabetical block c 85-89 where 87 is ci and 88 co; left out of K4). 160 (mi?)
+  and 575 (icke?) are doubtful glosses that agree with K3.
+- **Letter 119** (Altranstädt, 30 Apr 1707, images 397, 399, 400; addressed "Till Gen. och Gouverneuren Graf Adam
+  Lejonhufvud"), no gloss: held out, its 421 groups transcribed and frozen (SHA-256 9dbce6a8...) before T108 was
+  applied. **One pre-registered measurement (v3), failed:** T108 alone, words read by the sense in one pass,
+  152 words: 50 sure, 16 probable, 64 supplied, 22 unread; P = (sure + probable) / words = **0.434 against the
+  threshold 0.60** fixed beforehand (`protocol/MEASURE-v3-letter119.json`, `protocol/H119_reading_measure.tsv`).
+  Mechanical coverage 61.8%. Cause: 119 uses mostly the other homophones (39 a, 108 t, 59 n, 67 r, 47 e, 125 de,
+  53 i, 68 s), which do not occur in 108. The measurement does not test K3. **Letter 119 is burned.**
+- Letter 119 is therefore **not counted as read**: only a partial reading outside the measurement exists (the
+  measurement file above; with supplied words 85.5%, but the supplied values rest partly on the series A key). It is
+  not filed as a reading here and is not a document of this target.
+- No fresh portion of this cipher is left in F 470 for a further measurement.
+
 ## Remaining gaps
-- L3, 54 unread words (code groups 614, 616, 520, 522, 661, 571, 240, 262, 282, 405, 454, 557, 629, 638, 738 and undivided letter runs) - blocker: open-codes; most occur once or twice, no decipherment of the time for this letter
-- L4, 26 unread words (codes 629, 681, 544, 580, 233, 376 and undivided runs) - blocker: open-codes; single copy, no gloss
+- L3, 50 unread words (code groups 614, 616, 522, 661, 571, 240, 262, 282, 405, 454, 638, 738 and undivided letter runs) - blocker: open-codes; most occur once or twice, no decipherment of the time for this letter, and the gloss of letter 108 does not cover them
+- L4, 22 unread words (codes 681, 580, 233, 376 and undivided runs) - blocker: open-codes; single copy, no gloss, not covered by the gloss of letter 108
 - Riksregistraturet 1706 copies of 21 Feb and 2 Mar 1706 - blocker: needs-physical-access; the Riksarkivet search answers with an anti-robot check, which we do not pass
 - class C letters, images 179-206 (two-figure table, 1704-1705) - blocker: not-attempted; partial table only, 206 not reread
 
 ## Escalation
-- [x] siblings: all class A letters of F 470 used (L1-L4, both copies of L2 and L3); class C letters looked at (different table)
+- [x] siblings: all class A letters of F 470 used (L1-L4, both copies of L2 and L3); class C letters looked at (different table); 1707 letters 108 (glossed, used for the key) and 119 (measured, failed) added on 18 Nov 2026
 - [x] clear-pages: 293 right page is the decipherment of L1, 295-297 carry an interlinear gloss of L2; both used for the key
 - [x] known-keys: stade1710 (Charles XII, 1710) compared, 0 of 131 shared codes agree; no Swedish key of 1700-1730 is held in the repository (SE/RA/202/5 not online to us)
 - [x] print: Carlson 1893 (no letter to Lewenhaupt), Uddgren 1950 (orders of 21 Jan and 19 Feb 1706 quoted in clear from the Riksregistraturet; 21 Feb and 2 Mar not found there by keyword); Riksregistraturet itself not consulted
@@ -132,7 +179,8 @@ were made, each on a different letter.
 
 ## Credits
 - Decipherment of the time of L1 (image 293) and the gloss of L2 (295-297): the Swedish chancery or Lewenhaupt's
-  secretary, 1706 (key material).
+  secretary, 1706 (key material). Interlinear gloss of letter 108 (366-367), 1707: the same hand or office (key
+  material, 18 Nov 2026).
 - Images: Uppsala University Library (Alvin).
 - Pointers: Carlson 1893 (system description, corpus), Uddgren 1950 (Riksregistraturet).
-- Transcription, key, measurements and readings: Brice Dudout's agents (Claude Opus 5.5), 17 Nov 2026.
+- Transcription, key, measurements and readings: Brice Dudout's agents (Claude Opus 5.5), 17 and 18 Nov 2026.
