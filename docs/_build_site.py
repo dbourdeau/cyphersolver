@@ -461,8 +461,7 @@ EXPLORE_GROUPS = [
                            ('keys', 'Key web', 'Which key opened which letter')]),
     ('Try and take part', [('secret', 'Write a secret letter', 'Seal a message in a real historical cipher'),
                            ('contribute', 'Contribute', 'Send a solution, a new cipher or a check of a reading')]),
-    ('Reference', [('method', 'Method and review', 'How readings are made, checked and corrected, and by whom'),
-                   ('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
+    ('Reference', [('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
                    ('corrections', 'Corrections', 'What was published and then corrected or withdrawn')])]
 EXPLORE = [e for _, items in EXPLORE_GROUPS for e in items]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
@@ -787,14 +786,13 @@ def footer_html(current):
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
     if cur and current not in SURVEYS:
         links.append(f'<a href="{html.escape(contest_url(current))}" rel="noopener">Contest or verify this reading &#8599;</a>')
-    links.append('<a href="method.html">Method</a>')
     links.append('<a href="corrections.html">Corrections</a>')
     links.append(f'<a href="{REPO}" rel="noopener">Code &#8599;</a>')
     links.append('<a href="contribute.html#email">Contact &#9993;</a>')
     links.append('<a href="feed.xml">Feed</a>')
     links.append('<a href="#top">Top &uarr;</a>')
     author = cur.get('author', 'Daniel Bourdeau') if cur else shared_author(current)
-    footer_date = cur.get('footer_date', 'September 2026') if cur else ('November 2026' if current in ('method', 'methode', 'corrections') else 'September 2026')
+    footer_date = cur.get('footer_date', 'September 2026') if cur else ('November 2026' if current in ('corrections',) else 'September 2026')
     return (f'<footer><div class="in">\n  <span>{author}, {footer_date} &middot; Text released under CC BY 4.0{rights}</span>\n'
             f'  <nav aria-label="Footer">{"".join(links)}</nav>\n</div></footer>')
 
@@ -1462,8 +1460,8 @@ if __name__ == '__main__':
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
     (HERE / 'glossary.html').write_text(glossary_html(), encoding='utf-8')
-    import _method_page as MP, _corrections_page as CO      # method.html, methode.html, corrections.html (16 Nov 2026)
-    MP.build_html(VERSION); print('corrections:', CO.build_html(VERSION), 'entries')
+    import _corrections_page as CO      # corrections.html (16 Nov 2026)
+    print('corrections:', CO.build_html(VERSION), 'entries')
     import _contributors_page as CP
     (HERE / 'contributors.html').write_text(CP.page(PAGES, PROFILES, CONTRIB, DATES['pages'], VERSION, TODAY), encoding='utf-8')
     done =[process(p) for p in sorted(HERE.glob('*.html'))]
