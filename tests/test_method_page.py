@@ -57,7 +57,11 @@ class Counts(unittest.TestCase):
                           {'state': 'read', 'doc': 'd1'}, {'state': 'read', 'doc': 'd2'}],
                          method='key recovered from ciphertext-only', **{'class': 'read'},
                          validation={'date': 'x', 'verdict': 'pass'},
-                         human_check={'date': 'x', 'by': 'p', 'passage': 'l. 1', 'result': 'confirmed'}),
+                         human_check={'date': 'x', 'by': 'p', 'passage': 'l. 1', 'result': 'confirmed'},
+                         sign_check=[{'date': 'x', 'checker': 'p', 'checker_kind': 'project', 'model_roles': ['sheet'],
+                                      'signs_checked': 9, 'controls': 2, 'controls_passed': 2, 'rule': 'NOTES'},
+                                     {'date': 'y', 'checker': 'q', 'checker_kind': 'external', 'model_roles': [],
+                                      'signs_checked': 8, 'controls': 2, 'controls_passed': 1, 'rule': 'NOTES'}]),
             'b': profile([{'reading_review': rr('Someone Else')}, {'reading_review': rr('Claude (for Xavier Y)')},
                           {'state': 'read in part'}],
                          method='key recovered from ciphertext-only',
@@ -93,6 +97,9 @@ class Counts(unittest.TestCase):
         self.assertEqual(c['found']['after reading'], 1)
         self.assertEqual((c['timestamped'], dict(c['ts_prov'])), (1, {'contributed': 1}))
         self.assertEqual(c['hc'], 1)
+        # sign checks: one record, two sheets; the second misses a control, so it does not meet the level
+        self.assertEqual((c['sc_profiles'], c['sc'], c['sc_level']), (1, 2, 1))
+        self.assertEqual((c['sc_signs'], c['sc_external'], c['sc_model']), (17, 1, 1))
         self.assertEqual((c['crypt_read'], c['crypt_val'], c['crypt_unval']), (2, 1, 1))
         self.assertEqual(dict(c['unval_who']), {'x': 1})
 
@@ -108,6 +115,26 @@ class Counts(unittest.TestCase):
             # "human review" appears only to say that the model's grade is not one
             self.assertEqual(main.count('human review'), main.count('not a human review'))
             self.assertEqual(main.count('relecture humaine'), main.count('pas une relecture humaine'))
+        # the sign-check level: named for what it is, never "validated"
+        en, fr = MP.page_en(c, 7, {}), MP.page_fr(c, 7, {})
+        self.assertIn('AI decipherment, human-checked on a sample of signs', en)
+        self.assertIn('Déchiffrement par IA, vérifié par une personne sur un échantillon de signes', fr)
+        self.assertIn('id="sign-check"', en)
+        self.assertIn('id="signes"', fr)
+        for page in (en, fr):
+            sec = page.split('<h3 id="sign')[1].split('<h2')[0]
+            self.assertNotRegex(sec.lower(), r'\bvalidated?\b|\bvalidée?\b')
+            self.assertIn('<code>sign_check</code>', sec)
+
+
+class SignLevel(unittest.TestCase):
+    def test_meets_level(self):
+        ok = {'signs_checked': 8, 'controls': 2, 'controls_passed': 2}
+        self.assertTrue(MP.sign_level(ok))
+        self.assertFalse(MP.sign_level(dict(ok, controls_passed=1)))
+        self.assertFalse(MP.sign_level(dict(ok, signs_checked=7)))
+        self.assertFalse(MP.sign_level(dict(ok, controls=1, controls_passed=1)))
+        self.assertFalse(MP.sign_level({'signs_checked': 'unknown', 'controls': 2, 'controls_passed': 2}))
 
 
 if __name__ == '__main__':

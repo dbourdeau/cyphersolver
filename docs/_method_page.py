@@ -118,6 +118,17 @@ def reading_check_failures(files, audit):
     return bad, total
 
 
+SIGN_MIN_SIGNS, SIGN_MIN_CONTROLS = 8, 2      # the sign-check level's floor (method page, 18 Nov 2026)
+
+
+def sign_level(s):
+    """True when one outcome.sign_check sheet meets the level's floor: at least SIGN_MIN_CONTROLS controls, all
+    passed, and at least SIGN_MIN_SIGNS target signs counted. Anything not a number ("unknown") does not meet it."""
+    num_ = lambda k: s.get(k) if isinstance(s.get(k), int) and not isinstance(s.get(k), bool) else None
+    signs, ctl, ok = num_('signs_checked'), num_('controls'), num_('controls_passed')
+    return None not in (signs, ctl, ok) and ctl >= SIGN_MIN_CONTROLS and ok == ctl and signs >= SIGN_MIN_SIGNS
+
+
 def review_counts(root=ROOT, audit=None, names=None):
     """All the figures of the page, from root/targets/*/profile.json. Pure: reads files, writes nothing.
     audit: the reading audit's grades (default: root's reviews.json); names: contributor id -> name."""
@@ -125,6 +136,8 @@ def review_counts(root=ROOT, audit=None, names=None):
     audit = load_audit(root / 'research' / 'reading_audit' / 'reviews.json') if audit is None else audit
     names = contributor_names(root) if names is None else names
     c = collections.defaultdict(int)
+    for k in ('sc_profiles', 'sc', 'sc_level', 'sc_signs', 'sc_external', 'sc_model'):
+        c[k] = 0
     kinds, states, verdicts, transcr, prov = (collections.Counter() for _ in range(5))
     exists, found, hc_result, unval_prov, unval_who = (collections.Counter() for _ in range(5))
     families, ts_prov = collections.Counter(), collections.Counter()
@@ -192,6 +205,15 @@ def review_counts(root=ROOT, audit=None, names=None):
             c['hc_profiles'] += 1
             c['hc'] += len(hcs)
             hc_result.update(h.get('result') for h in hcs)
+        # sign checks (the level "AI decipherment, human-checked on a sample of signs")
+        scs = [x for x in as_list(o.get('sign_check')) if isinstance(x, dict)]
+        if scs:
+            c['sc_profiles'] += 1
+            c['sc'] += len(scs)
+            c['sc_level'] += sum(bool(sign_level(x)) for x in scs)
+            c['sc_signs'] += sum(x['signs_checked'] for x in scs if isinstance(x.get('signs_checked'), int))
+            c['sc_external'] += sum(x.get('checker_kind') == 'external' for x in scs)
+            c['sc_model'] += sum(bool(as_list(x.get('model_roles'))) for x in scs)
         # statistical validation
         v = o.get('validation')
         if isinstance(v, dict):
@@ -497,6 +519,18 @@ def page_en(c, queue, names):
 <p>{n(queue)} readings whose key was recovered or matched here are <a href="contributors.html#verify">waiting for an independent check</a>.</p>
 <p class="cmuted"><b>How these figures are counted.</b> One graded entry is one item of <code>outcome.texts</code> in a target&rsquo;s <code>profile.json</code> that carries a <code>reading_review</code>, whatever its state. Only the <code>targets/&lt;folder&gt;/profile.json</code> files are counted. The signer is classed from the <code>by</code> field: <i>model</i> when it names a model, an agent or an AI session and no person comes first; <i>person assisted by a model</i> when a person comes first and says a model assisted; <i>person</i> when no model is named; <i>cannot tell</i> when it names neither (&ldquo;project verification pass&rdquo;). &ldquo;Not independent&rdquo; and &ldquo;an agent working for the author&rdquo; are found by a word search in <code>by</code> and <code>note</code>, so they are lower bounds. Counting per document or per target gives other totals. The rule is in {gh('docs/_method_page.py')}.</p>
 
+<h3 id="sign-check">A verification level: AI decipherment, human-checked on a sample of signs</h3>
+<p>Between no check and a full proofreading against the images, a reading can carry the level <b>AI decipherment, human-checked on a sample of signs</b>. An AI model transcribed and deciphered the text. A person then picked, blind, the shape they see for a set of signs on a review sheet:</p>
+<ul>
+<li>a rule written before the sheet is built, and dated before any answer, picks the signs: doubtful shapes, signs that several words depend on, code groups;</li>
+<li>each question boxes one sign on its line. The options are shapes cut from the same document, plus &ldquo;none / other shape&rdquo;, &ldquo;illegible&rdquo; and &ldquo;not a sign&rdquo;, which leave the word marked. No gloss, reading, value or place is shown;</li>
+<li>at least two controls with a known answer are mixed in, taken from places as hard as the targets. The answer key stays private until the answers are exported.</li>
+</ul>
+<p>The record (<code>sign_check</code> in <code>profile.json</code>) gives the date; who answered, and whether that person is inside or outside the project; what a model did (wrote the rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks); how many signs were checked and how they were chosen (a section of the target&rsquo;s NOTES); how many controls passed; and the results: as transcribed, corrected, unresolved, not counted. A write-up shows it as one sentence, for example: &ldquo;9 doubtful signs checked blind by a project member, on a sheet an AI model built and scored; rule in NOTES; controls 2 of 2; 2 as transcribed, 7 corrected, 1 not counted (faulty thumbnail)&rdquo;.</p>
+<p>A sheet meets the level only with at least {SIGN_MIN_CONTROLS} controls, all passed, and at least {SIGN_MIN_SIGNS} target signs once the answers touched by a faulty thumbnail are removed. An answer &ldquo;none / other&rdquo; on a control counts as a failure. Whatever an answer contradicts is recoded or marked in the reading first.</p>
+<p><b>The level says how a reading was checked, not how much of the text counts as read.</b> It never changes the class, the state or the read share: a reading can carry it and keep the state <code>read in part</code>. It checks the shapes of signs, not the key, the value of a code or the reading as a whole. The signs are chosen because they are doubtful, so the check is a diagnostic, not a random sample, and it says nothing about the signs that were not shown. Two passed controls show little on their own: a checker who is right one time in two passes both one time in four. It is not a <code>human_check</code>, which the schema defines as a check without AI help.</p>
+<p>The first readings to carry it are those whose key was built on part of the material (the document or sister letters in the same cipher) and passed a test on a passage not used to build it, against a threshold written first; the write-up gives the history of attempts. {n(c['sc_profiles'])} records carry a <code>sign_check</code> ({n(c['sc'])} sheets, {n(c['sc_level'])} meeting the level, {n(c['sc_external'])} answered by someone outside the project).</p>
+
 <h2 id="checks"><span class="num">09</span> What the automated checks require</h2>
 <p>Two checks run on GitHub by themselves (continuous integration, CI).</p>
 {checks}
@@ -681,6 +715,18 @@ def page_fr(c, queue, names):
 <p>{n(c.get('indep_verif', 0))} fiches déclarent aussi une « independent verification » : quelqu’un d’extérieur au projet a vérifié la lecture sur les images ou avec sa propre clé. Ce champ ne dit pas si cette personne a utilisé un modèle.</p>
 <p>{n(queue)} lectures dont la clé a été reconstituée ou rapprochée ici <a href="contributors.html#verify">attendent une vérification indépendante</a>.</p>
 <p class="cmuted"><b>Comment ces chiffres sont comptés.</b> Une entrée notée est un élément de <code>outcome.texts</code> dans la fiche <code>profile.json</code> d’une cible qui porte un <code>reading_review</code>, quel que soit son état. Seuls les fichiers <code>targets/&lt;dossier&gt;/profile.json</code> sont comptés. Le signataire est classé d’après le champ <code>by</code> : <i>modèle</i> s’il nomme un modèle, un agent ou une session d’IA et qu’aucune personne n’est nommée d’abord ; <i>personne assistée d’un modèle</i> si une personne est nommée d’abord et dit qu’un modèle l’a assistée ; <i>personne</i> si aucun modèle n’est nommé ; <i>on ne sait pas</i> s’il ne nomme ni l’un ni l’autre (« project verification pass »). « Non indépendant » et « agent qui travaille pour l’auteur » sont repérés par une recherche de mots dans <code>by</code> et <code>note</code> : ce sont des bornes basses. Compter par document ou par cible donne d’autres totaux. La règle est dans {gh('docs/_method_page.py')}.</p>
+
+<h3 id="signes">Un niveau de vérification : déchiffrement par IA, vérifié par une personne sur un échantillon de signes</h3>
+<p>Entre aucune vérification et une relecture complète sur les images, une lecture peut porter le niveau <b>Déchiffrement par IA, vérifié par une personne sur un échantillon de signes</b>. Un modèle d’IA a transcrit et déchiffré le texte. Une personne a ensuite choisi, à l’aveugle, la forme qu’elle voit pour un ensemble de signes, sur une planche de relecture :</p>
+<ul>
+<li>une règle écrite avant la construction de la planche, et datée avant toute réponse, choisit les signes : formes douteuses, signes dont dépendent plusieurs mots, groupes de code ;</li>
+<li>chaque question encadre un seul signe sur sa ligne. Les options sont des formes découpées dans le même document, plus « aucune / autre forme », « illisible » et « pas un signe », qui laissent le mot marqué. Aucune glose, lecture, valeur ni aucun lieu n’est montré ;</li>
+<li>au moins deux contrôles à réponse connue sont mêlés aux questions, pris à des endroits aussi difficiles que les cibles. La correspondance reste privée jusqu’à l’export des réponses.</li>
+</ul>
+<p>La fiche (<code>sign_check</code> dans <code>profile.json</code>) donne la date ; qui a répondu, et si cette personne est du projet ou extérieure ; ce qu’un modèle a fait (écrit la règle, découpé les vignettes, construit la planche, dépouillé les réponses, interprété les remarques libres) ; combien de signes ont été vérifiés et comment ils ont été choisis (une section des NOTES de la cible) ; combien de contrôles ont réussi ; et les résultats : tels que transcrits, corrigés, non résolus, non comptés. La page d’une lecture le dit en une phrase, par exemple : « 9 signes douteux vérifiés à l’aveugle par un membre du projet, sur une planche construite et dépouillée par un modèle d’IA ; règle dans les NOTES ; contrôles 2 sur 2 ; 2 tels que transcrits, 7 corrigés, 1 non compté (vignette fautive) ».</p>
+<p>Une planche n’atteint le niveau qu’avec au moins {SIGN_MIN_CONTROLS} contrôles, tous réussis, et au moins {SIGN_MIN_SIGNS} signes cibles une fois retirées les réponses touchées par une vignette fautive. Une réponse « aucune / autre » à un contrôle compte comme un échec. Ce qu’une réponse contredit est d’abord recodé ou marqué dans la lecture.</p>
+<p><b>Le niveau dit comment une lecture a été vérifiée, pas quelle part en est lue.</b> Il ne change jamais la classe, l’état ni la part lue : une lecture peut le porter et garder l’état <code>read in part</code>. Il vérifie la forme des signes, pas la clé, la valeur d’un code ni la lecture dans son ensemble. Les signes sont choisis parce qu’ils sont douteux : c’est un diagnostic, pas un échantillon tiré au hasard, et il ne dit rien des signes qui n’ont pas été montrés. Deux contrôles réussis disent peu de chose à eux seuls : un vérificateur qui a raison une fois sur deux les réussit tous les deux une fois sur quatre. Ce n’est pas une <code>human_check</code>, que le schéma définit comme une vérification sans aide de l’IA.</p>
+<p>Les premières lectures à le porter sont celles dont la clé a été construite sur une partie du matériau (le document ou des lettres sœurs du même chiffre) et a réussi un test sur un passage qui n’a pas servi à la construire, contre un seuil écrit d’abord ; la page de la lecture donne l’historique des essais. {n(c['sc_profiles'])} fiches portent une <code>sign_check</code> ({n(c['sc'])} planches, dont {n(c['sc_level'])} au niveau et {n(c['sc_external'])} remplies par une personne extérieure au projet).</p>
 
 <h2 id="controles"><span class="num">09</span> Ce que les contrôles automatiques imposent</h2>
 <p>Deux contrôles tournent seuls sur GitHub (intégration continue, ou CI).</p>
