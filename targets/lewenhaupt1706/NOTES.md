@@ -2,10 +2,11 @@
 
 Contributed by Brice Dudout (agents: Claude Opus 5.5), 17 Nov 2026. New target, not in the catalogue.
 
-**Status: read in part.** The key was rebuilt from the decipherments of the time, frozen, and passed one
-pre-registered measurement on an unseen letter **with a reserve**: the absolute threshold was set at 0.60 instead of
-the default 0.85 (declared, with its calibration, before the measurement). An earlier measurement on another letter,
-with a different metric, failed. The two letters without a decipherment of the time are read at **73.7% and 76.4% of
+**Status: read in part.** The key was rebuilt from the decipherments of the time and frozen; it is **not validated at
+the programme's bar**. One pre-registered measurement on an unseen letter passed an absolute threshold of 0.60, not
+the programme's 0.85. Order: the first measurement (v1, another letter, another metric) failed; the metric and the
+0.60 threshold of v2 were then chosen, after K2's decodes of its own fitting letters had been seen, and written into
+`protocol/PREREG-v2.md`, hashed before the measurement (`protocol/PREREG-v2.sha256`). The two letters without a decipherment of the time are read at **73.7% and 76.4% of
 their words, sure words only** (cipher words; measured on our copy, 18 Nov 2026), below the 95% bar; with probable words
 84.2% and 82.1%. The gloss of the time of letter 108 (1707) confirms 80 values of the key and gives four more (section
 "Letters 108 and 119", 18 Nov 2026); a measurement on letter 119 failed.
@@ -26,7 +27,8 @@ their words, sure words only** (cipher words; measured on our copy, 18 Nov 2026)
 | L4 | 2 Mar 1706 (no. 89, "Prod. d. 13 marty 1706") | 310-311 | 1 | none |
 
 A second system ("class C", two-figure, Dec 1704-Jan 1705, images 179-206) is a different table; a partial table from
-the glosses on 182 and 188 is in `readings/classC_partial_table.md` (19 of about 22 codes; 206 not reread).
+the glosses on 182 and 188 is in `readings/classC_partial_table.md` (19 of about 22 codes; 206 not reread). The class C
+letters are not part of this target and are not listed among its gaps.
 
 ## System
 
@@ -65,7 +67,7 @@ were made, each on a different letter.
   strings at about 68%; also 18% of L4's groups were missing from K. L4 is burned and was used afterwards as key
   material only.
 
-### v2, held-out L3: passed with a reserve (`protocol/PREREG-v2.md`, `protocol/MEASURE-v2.json`)
+### v2, held-out L3: passed a lowered threshold, not validated at the programme's bar (`protocol/PREREG-v2.md`, `protocol/MEASURE-v2.json`)
 - L3 copy A (301-303, 780 groups) transcribed and frozen before any change to the key (SHA fd85444f...); copy B
   (306-308) read separately as the second pass; 5 differences settled on the TIFF (`transcription/L3_ARBITRAGE.md`).
 - Key K2 (`key/key_K2_frozen.json`, 218 codes, SHA faf24a30...) fitted on L1, L2 (with 297 and the glosses) and the
@@ -76,12 +78,21 @@ were made, each on a different letter.
 - Calibration (on L1, L2, L4, the corpus and random strings, never on L3): the clear decipherment of the time of L1 scores
   0.987; with 2% of its letters replaced at random 0.83; with 5% 0.65 (min 0.45); with 10% 0.36. K2's decodes of its own
   fitting letters score 0.68-0.88; 1,000 permuted keys never reached 0.37.
-- **Deviation from the default bar, declared before the measurement:** absolute threshold **0.60 instead of 0.85**. On
+- **Order of the steps.** The metric and the threshold of v2 were set **after** the v1 failure and **after** K2's decodes
+  of its own fitting letters (0.68-0.88, above) had been seen; they were not fixed before any result was known.
+- **Frozen before the measurement:** `protocol/PREREG-v2.sha256` = `16cd415569738998c5542d02acc211055165c686c5cdf8fdc672eb13e124dfa0`,
+  the SHA-256 of the filed `protocol/PREREG-v2.md` (which carries the SHA-256 of the L3 transcription, fd85444f..., and of
+  K2, faf24a30...). By the file times of our working copy it was written on 17 Nov 2026 at 00:49:19 UTC, 12 s before
+  `MEASURE-v2.json` (00:49:31 UTC); these are local file times, not a third-party timestamp, and no commit precedes the
+  measurement (the first commit is 3f62ef11c). `protocol/PREREG-v2.part1.sha256` (`4ed5060f...`, 00:37:48 UTC) is the
+  hash of an earlier text of the file, not of the filed one.
+- **Deviation from the programme's bar, declared before the measurement:** absolute threshold **0.60 instead of 0.85**. On
   this scale 0.85 means genuine text with at most about 2% wrong letters, which even K2's own fitting letters do not
   all reach (names, foreign words); 0.60 corresponds to about 5% wrong letters. The margin over the best control
   (+0.30) is the default one.
 - **Result: N(K2, L3) = 0.695; 200 permuted keys mean 0.057, max 0.294; thresholds 0.60 and 0.594: passed.** It clears
-  the lowered absolute threshold and the default margin; it does **not** reach the default 0.85. Informative only: 200
+  the lowered absolute threshold and the default margin; it does **not** reach the programme's 0.85, so the key is
+  **not validated at the programme's bar**. Informative only: 200
   shuffles of the group order max 0.008; 10.6% of L3's groups unknown to K2; word coverage 0.50 against controls max
   0.56 (the lexical metric does not separate, as in v1).
 - `rerun.sh` reruns the v2 measurement from the files as filed here and gives the same figures (checked 17 Nov 2026).
@@ -166,7 +177,6 @@ Two later letters of Charles XII to Lewenhaupt in F 470 use the same table. File
 - L3, 50 unread words (code groups 614, 616, 522, 661, 571, 240, 262, 282, 405, 454, 638, 738 and undivided letter runs) - blocker: open-codes; most occur once or twice, no decipherment of the time for this letter, and the gloss of letter 108 does not cover them
 - L4, 22 unread words (codes 681, 580, 233, 376 and undivided runs) - blocker: open-codes; single copy, no gloss, not covered by the gloss of letter 108
 - Riksregistraturet 1706 copies of 21 Feb and 2 Mar 1706 - blocker: needs-physical-access; the Riksarkivet search answers with an anti-robot check, which we do not pass
-- class C letters, images 179-206 (two-figure table, 1704-1705) - blocker: not-attempted; partial table only, 206 not reread
 
 ## Escalation
 - [x] siblings: all class A letters of F 470 used (L1-L4, both copies of L2 and L3); class C letters looked at (different table); 1707 letters 108 (glossed, used for the key) and 119 (measured, failed) added on 18 Nov 2026
