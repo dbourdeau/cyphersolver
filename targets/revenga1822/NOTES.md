@@ -1,4 +1,4 @@
-# Revenga's intercepted letter from Madrid, 1822: the cipher passages of the "paper in fragments" (catalogue 641)
+# Revenga's undated intercepted letter from Madrid (1821 proposed): the cipher passages of the "paper in fragments" (catalogue 641)
 
 Status: in progress. Contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is
 deciphered in part on a first-pass transcription (a dozen holes and doubtful words, about 110 slips corrected from the
@@ -165,7 +165,7 @@ the differences was not.** No person has checked any of it.
 
 **Result.**
 
-- The two transcriptions agree on 2,293 of 2,532 signs (0.906). There are 231 places to settle: 200 where they
+- The two transcriptions agree on 2,261 of 2,532 alignment columns (0.893; reproducible recount below). The earlier collation separately lists 231 entries: 200 where they
   differ and 31 where they agree only on a doubtful or alternative reading. 112 were settled on enlargements of 3 to
   6 times, 119 on line strips at about 1.5 times (the weaker settlements, mostly 0056 left lines 5-17, 0056 right and
   0055 right). By method: 171 by the letter shape, 45 from the sense, 15 left open. In 5 further places both
@@ -258,3 +258,19 @@ and it does not change `transcription.txt`, `reading.md` or `profile.json` outco
 same holes. `reading_review` grade B recorded in `profile.json` (coherent, but the mechanical decode is raw and the
 reading normalises about 110 words from the sense, listed in `corrections.md`, none checked on the film). State stays
 read in part (read_share 0.868). The second transcription pass on the four frames (Remaining gaps) was not done.
+
+## Reproducible agreement recount, 17 November 2026
+
+The earlier 2,293/2,532 (0.906) figure did not preserve an executable counting rule and is withdrawn as a sure-agreement measure. The reproducible recount is 2,261/2,532 = 0.893. Each ll is two characters. Join B10+B11 against C10, B18 against C17+C18, and B55+B56 against C55+C56; otherwise use the documented B/C group correspondence. Within each joined group use minimum unit-cost edit distance; ties take diagonal, then deletion from the second sequence, then insertion. Align first-choice letters, but count a match only if both letters are unmarked and identical. A question mark makes its preceding letter doubtful; x|y is one doubtful position; a bracketed annotation is one unresolved placeholder (x in [x?] is a doubtful first choice); periods and spaces are excluded, comma-like cipher signs retained. Insertions, deletions, doubtful agreements and unresolved placeholders remain in the denominator. Unknown-length struck spans represented by one placeholder make this an operational alignment denominator, not a certified count of manuscript signs. The first-choice recount including doubtful equal letters is 2,288/2,532, also not the old 2,293. No key, decode, or settled transcription enters this recount.
+
+The four words with expected z support the proposed g value; they are not an independent test. The z-sign hypothesis step is partial.
+
+AI agents did this work; no person has checked it.
+
+The earlier collation lists 231 entries (200 disagreements and 31 doubtful readings); that historical count is not the remainder of this new alignment. The new alignment has 271 non-sure columns: 244 unequal first choices and 27 doubtful equal choices.
+
+## Dating correction proposed after Brice’s review
+
+Brice’s comment on PR 764 (https://github.com/dbourdeau/cyphersolver/pull/764#issuecomment-6955975760) proposes May–June 1821 rather than 1822, citing the Madrid mission and the reference to Apodaca. The earlier May–June 1822 argument above is retained as the history of an unconfirmed inference, not an established date. The 1822 handover date does not itself date the intercepted letter. The profile now records the year as unknown and the 1821 proposal explicitly. No new archival dating evidence was obtained, and the historical target folder name is unchanged.
+
+AI agents did this work; no person has checked it.
