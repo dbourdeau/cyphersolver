@@ -123,7 +123,7 @@ def page_dates(slug, s):
 DATEISH = re.compile(r'^(?:solved(?: in part)?|resolved|attempted|posted|read(?: in part)?|published|first published|updated)?'
                      r'\s*(?:\d{1,2}\s+)?(?:' + '|'.join(MONTHS) + r'|Sept?)?\s*\d{4}$', re.I)
 
-SHARED_PAGES = ('index', 'findings', 'contributors', 'contribute')      # pages of the ledger as a whole, not of one write-up
+SHARED_PAGES = ('index', 'findings', 'contributors', 'contribute', 'corrections')      # pages of the ledger as a whole, not of one write-up
 SHARED_AUTHOR = 'Daniel Bourdeau, Brice Dudout, George Lasry and contributors'
 def shared_author(slug):
     return SHARED_AUTHOR if slug in SHARED_PAGES else 'Daniel Bourdeau'
@@ -497,6 +497,7 @@ def nav_html(current):
     # write-up no longer rewrites every page; without JavaScript the menu still has these links
     panel = (f'<div class="foot"><a class="all" href="writeups.html"{cur("writeups")}>All write-ups, with filters &rarr;</a>'
              f'<a href="findings.html"{cur("findings")}>All findings, newest first</a>'
+             f'<a href="corrections.html"{cur("corrections")}>Corrections log</a>'
              f'<a href="writeups.html#src=notes">Results only in the notes</a></div>')
     explore = (''.join(f'<div class="grp"><h4>{head}</h4><ul>' + ''.join(
                            f'<li><a href="{slug}.html"{cur(slug)}><b>{name}</b><span class="d">{desc}</span></a></li>'
@@ -1445,6 +1446,8 @@ if __name__ == '__main__':
         page_dates(f.stem, f.read_text(encoding='utf-8').lstrip('﻿'))
     (HERE / 'writeups.html').write_text(writeups_html(), encoding='utf-8')
     (HERE / 'glossary.html').write_text(glossary_html(), encoding='utf-8')
+    import _corrections_page as CO               # corrections.html: key corrections and corrected image checks, from the profiles
+    print('corrections: %d entries' % CO.build_html(HERE, PAGES, PROFILES, CONTRIB, VERSION))
     import _contributors_page as CP
     (HERE / 'contributors.html').write_text(CP.page(PAGES, PROFILES, CONTRIB, DATES['pages'], VERSION, TODAY), encoding='utf-8')
     done =[process(p) for p in sorted(HERE.glob('*.html'))]
