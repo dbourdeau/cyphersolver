@@ -1,6 +1,7 @@
 # vibejuel1651: Peder Vibe to Peder Juel, Danish resident in Stockholm, 1651-1655, cipher passages in the new alphabet ("ny Alphabet") of 11 letters or pages (part of catalogue 2527)
 
 Status: read in part (Brice Dudout, PR #410, 11 Nov 2026; integrated and split by key 12 Nov 2026). Key recovered based on adjacent plaintext, key state partial: the letter alphabet and its opener table are recovered, the nomenclator has no values. 146 of 149 cipher words given a value (98.0%; 132 certain, 14 probable, 1 restored, 2 unresolved); with the 73 nomenclator codes counted as holes the read share is 146/222 = 65.8%, under the 95% bar. The first pre-registered test failed; the second, with a rule changed after that result, passed (see Validation).
+**Printed decipherment found after the reading (16 Nov 2026):** J. A. Fridericia printed ten of these eleven pieces deciphered, codes included, in *Danske Magazin* 5th series vol. II (1889-92), pp. 375-386, from Juel's key in a Rigsarkivet collection of cipher keys; he left out only the letter of 6 May 1655 (image 93), for which he had no key. His print also dates the letters from after December 1652 (none in 1651) and gives image 87 to the chancellor Christian Thomesen Sehested, not to Vibe. Our key recovery was independent of it and did not use it; see "Printed decipherment" below.
 
 Contributed by Brice Dudout (Europe chiffrée), with AI agents (transcription, system, protocols, measurements, reading and
 write-up; the model is named in the pull request). Catalogue entry **2527**, found and vetted by Daniel Bourdeau on 11 Nov 2026
@@ -74,12 +75,73 @@ timestamps are self-declared.
 
 ## Prior art
 
-No decipherment of these letters is known. The only decipherment of the time is the partial interlinear one on N. 319 (image 78).
-Daniel Bourdeau's vetting of entry 2527 (11 Nov 2026) found nothing on DECODE, in Tomokiyo or in Lasry. Fryxell (1836) prints a
-Swedish abstract of Juel's register of outgoing letters (catalogue 2553), without the cipher passages. The contributor's web
-search (11 Nov 2026) found no edition of the cipher passages. The Royal Library (NKS 1299 e fol.) and the Danish printed
-collections were not searched at length, so an edition remains possible. No prior-art search was repeated at verification or at
-integration: this section rests on the contributor's and the catalogue vetting's record.
+**A printed decipherment of ten of the eleven pieces exists**, found on 16 Nov 2026, after the reading: J. A. Fridericia, "Breve
+fra Statsmænd i Danmark til den danske Resident i Stockholm, Peder Juel, fra Aarene 1648-55", *Danske Magazin*, 5th series,
+vol. II (1889-92), pp. 362-387 (free scan: https://ronlev.dk/bibliotek/3364.pdf). It prints every piece of this target except
+N. 167 / 337 (6 May 1655, image 93) with the cipher words deciphered (in italics) and the codes resolved; details below. It was
+found by the backlog vetting of lead 2527 (the Krag letters of 1648 in the same unit), by the web search recorded in
+`research/leads.json` id 2527. On the leaves themselves, the only decipherment of the time is the partial interlinear one on
+N. 319 (image 78).
+
+What the earlier searches had found: Daniel Bourdeau's vetting of entry 2527 (11 Nov 2026) found nothing on DECODE, in Tomokiyo
+or in Lasry, and opened Fridericia's *Adelsvældens sidste Dage* (1894) and Gigas (1883), which cite Vibe's letters but print no
+text of them. Fryxell (1836) prints a Swedish abstract of Juel's register of outgoing letters (catalogue 2553), without the
+cipher passages. The contributor's web search (11 Nov 2026) found no edition. None of these searches reached the *Danske
+Magazin* edition.
+
+## Printed decipherment: Fridericia 1889-92 (found 16 Nov 2026)
+
+Source and introduction as in `targets/vibejuel1649/NOTES.md` ("Printed decipherment"): three keys found in a collection of cipher
+keys in the Rigsarkivet; one used by Vibe up to and including 1652, one by Peder Juel and his correspondents from December 1652
+(this target); all cipher parts of the printed letters deciphered "with certainty"; Vibe's letter of 6 May 1655 left out, because
+by a remark in it, it uses a new system that Erik Krag had just sent Juel and no key to it was found. The key he used was not
+located. His note to no. 17 (p. 375) says that from December 1652, by Juel's letter of 4 December, a new cipher was used between
+the two writers, surely the one of no. 17 and the other letters of 1653 and 1654.
+
+Letter by letter (matched by date and content):
+
+| our images | Fridericia | his date | pages | note |
+|---|---|---|---|---|
+| 77 (N. 316, slip) | no. 17 | 1652-54, after Dec 1652 | 375 | our notes: undated, placed in 1651 by the contributor |
+| 78 and 79 left (N. 319) | no. 23 | about 21 May 1653 | 379-381 | dated by him from Vibe's letter to Charisius of 21 May 1653 on Spormand's flight; our notes: undated, placed in 1651 |
+| 79 right (N. 334) | no. 18 | 6 Jan 1653 | 376 | he prints the clear addition to the code list as "No. 344 Grentzer och No. 561 Grentze Møde" (our notes: 349 and 561, names probable) |
+| 81 (N. 332) | no. 19 | 3 Feb 1653 | 376-377 | |
+| 83 left (end of a letter) | no. 20 | about 10 Feb 1653 | 377-378 | he also supplies "hi[n]de", the word restored here as "hende" |
+| 83 right (N. 331) | no. 21 | 3 Mar 1653 | 378 | |
+| 84 right (N. 333) | no. 22 | 15 Apr 1653 | 379 | |
+| 87 right (N. 335, "Her besante") | no. 26 | 20 Apr 1654 | 383-384 | **from the chancellor Christian Thomesen Sehested**, opening "Her Gesante" and signed "Ch. Thomesen", not from Vibe |
+| 90 left (N. 336) | no. 29 | 13 Sep 1654 | 385-386 | he reads the place as Gierderud (Gjerdrup, Vibe's manor), where our notes have "Bierreds" |
+| 91 right (N. 143 / 321) | no. 30 | Sept 1654 | 386 | |
+| 93 right (N. 167 / 337) | not printed | 6 May 1655 | - | the letter he could not decipher; our reading of its cipher words with the same letter table is not anticipated by him |
+
+So the letters in this cipher run from after December 1652 to May 1655, not from 1651; the folder name and the page title keep
+the contributor's date until that is decided. Vibe's letters nos. 24, 25, 27, 28 and 31 are printed with no italics (no cipher).
+
+**The codes.** Set against his print, 29 of the 49 code numbers stand where he prints a name or word (alignment by sense, 16 Nov
+2026, against `translation.md` and `transcription.txt`, not checked on the images): 67 Ambassadeur; 73 Arrest; 95 Oluff
+Brochenhus; 217 Dannemarch; 222 Dronningen (the Queen of Sweden); 254 Enche Dronningen; 343 Hendrick Gerritz; 353 Mogens Høgh;
+355 Hermand Henrichsøn; 357 Gottorp; 376 Holsten; 397 Peder Juel; 454 Kongen; 462 and 463 Krig; 479 Schrøder Løffwenklow;
+485 Mickel Langemack; 545 Rigens Marsch; 583 Norge; 601 R. Cantz. Axel Oxenstierne; 620 and 623 Offuerste; 770 Swerrig;
+791 Sckib; 818 Ingenieur Spormand; 872 Hr. Corfitz Ulfeld; 873 Hr. Ebbe Ulfeld Jacobsen; 876 Hr. Ebbe Ulfeld Christophersen;
+879 Peder Wybe. The other 20 are the new list of image 93, which he does not print. The contributor's guesses 770 Sweden and
+222 Queen Christina agree with his print. None is entered in `reading.md` (that would be reading from an existing decipherment).
+
+**Some places where his print reads otherwise** (examples seen while matching, not a systematic comparison): N. 319, our "#818
+wrested it from him and carried it {away} {secretly}" against his "Der Ingenieur Spormand dett fornam, reiste hånd hiemmeligen
+bort" (when Spormand noticed it, he went away secretly); our "The impudent #485" where his print has the letters of Ebbe Ulfeldt
+Jacobsen and Løvenklau "møget uforschämete" (very impudent) and Mickel Langemack as a new sentence; our "the wedding, or the Diet
+... will give an occasion" against his "Hr. Corfitz Ulfelds Sag bliffuer veil iche dømt denne Herredag" (Ulfeldt's case will
+hardly be judged at this Diet); N. 331, our "#872 (sends) a {procurator}, #95, with a recommendation to #583" against his
+"H. Corfitz Ulfelds Procurator Oluff Brochenhus er forschicht til Norge" (Ulfeldt's procurator Oluf Brockenhuus has been sent to
+Norway). A word-by-word comparison of `reading.md` with his italics has not been made; it would be an outside check that the
+model never saw.
+
+**Contamination.** As for `vibejuel1649`: the edition existed in print from 1889-92 and is free online (date of the scan not
+established); it was not given to the contributor's agents, who report no edition found and left every code as a number; the
+four *Danske Magazin* files of the contributor's language model (re-fetched 16 Nov 2026, hashes match `frozen/`) are the first
+series and the 5th series vol. IV, not vol. II, and hold none of these letters. Training-data exposure cannot be ruled out. The key
+recovery from the gloss of N. 319 is recorded as independent: `prior_solution` exists "in print", found "after reading", `used`
+false; `first_break` false (image 93, which he did not decipher, is the one piece with no prior reading).
 
 ## Integration check (12 Nov 2026)
 
@@ -132,17 +194,16 @@ and 83 fetched from api.rigsarkivet.dk). What that found, and what was changed h
 
 ## Remaining gaps
 
-- the 73 nomenclator code tokens (49 numbers: 222, 353, 397, 770, 872, 876, 879 ...; the 1655 list up to 1771) - blocker: no-key-material; no code list is in the unit and the gloss of N. 319 covers letters only; two numbers are defined in clear (349 and 561, image 80) but their names are read as probable only; Juel's replies, the rest of NKS 1299 e at the Royal Library or a code list in the Juel papers could give them
+- the 73 nomenclator code tokens (49 numbers: 222, 353, 397, 770, 872, 876, 879 ...; the 1655 list up to 1771) - blocker: open-codes; no code list is in the unit and the gloss of N. 319 covers letters only, but Fridericia (1889-92) prints the plaintext at the places of 29 of the 49 numbers (listed under "Printed decipherment"; his key, in a Rigsarkivet collection, not located); they are not entered in the reading, which would be reading from an existing decipherment; the 20 numbers of the 1655 list (image 93) have no key in print either (blocker for those: no-key-material, Erik Krag's new system of 1655, no key found by Fridericia)
 - two unresolved cipher words (image 78: 31.34.26.13.20; image 93: 30.?.9.2.14=5.6.20) - blocker: illegible; a blot after the opener on image 93, and a word read clearly but glossed only "°m t" on image 78; the original could settle them
 - the 14 probable words not checked against the images at verification - blocker: illegible; each correction rests on a single number at the limit of the microfilm scans served online (listed with its reason in reading.md)
-- prior art outside the repository not searched again (no edition, DECODE or literature search at verification) - blocker: needs-physical-access; the Royal Library's NKS 1299 e fol. and the Danish printed collections are not online in full
 
 ## Escalation
 
 - [x] siblings: all images 57-95 of unit 261583 checked by the contributor; the old-cipher letters are read in targets/vibejuel1649; Juel's register (catalogue 2553, unit 261585) and his glossed originals (unit 261575) were opened by the contributor, nothing in the new alphabet reported
 - [x] clear-pages: the clear pages of the unit were read for their remarks on the cipher (image 62: old and new alphabet; image 80: codes 349 and 561 added; image 93: Krag's last cipher lacks the States General and the Øresund); none is a decipherment
-- [x] known-keys: the only key material is in the unit (the gloss of N. 319); the old cipher of the same correspondents shares no code number with these letters; the 1673-74 code of the same embassy archive is another system
-- [x] print: Fryxell 1836 (abstract without the cipher passages); the catalogue vetting (Fridericia 1894, Gigas 1883); the contributor's web search found no edition
+- [x] known-keys: the only key material in the unit is the gloss of N. 319; the old cipher of the same correspondents shares no code number with these letters; the 1673-74 code of the same embassy archive is another system; Fridericia (1889-92) says Juel's key of December 1652 is in a collection of cipher keys in the Rigsarkivet, not located by us (found 16 Nov 2026, after the reading)
+- [x] print: Fryxell 1836 (abstract without the cipher passages); the catalogue vetting (Fridericia 1894, Gigas 1883: no text); the contributor's web search found no edition; on 16 Nov 2026 Fridericia's edition in Danske Magazin 5th series II (1889-92), pp. 375-386, was found to print ten of the eleven pieces deciphered (all but image 93; see "Printed decipherment")
 - [x] key-rebuild: alphabet and opener table rebuilt and applied to every letter; w and ø added after the test; codes bracketed only by sense (not counted)
 - [x] retry: every unread word retried by the contributor at native zoom with the final table and regraded (set 2 from 71% to 98.0%; openers "out of table" shown to be division errors)
 

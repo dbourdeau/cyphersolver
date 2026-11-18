@@ -25,3 +25,7 @@
   (le Roy, or with its tail l'Empereur; the Emperor by sense here). c29 "que [∞] […] ung seul a rigueur": the group
   after ∞ ("t o ꝛ // ꝺ // h ʊ") not settled.
 - Left: c08 speaker, c29 verb, c22-c23 end.
+
+Holes counted by words (14 Nov 2026, README Conventions): the hole marks of this letter keep no size. This log does not
+record how many words stand under them (extent unknown), so each counts as one unread word; the letter is read in
+part either way (NOTES.md, head).

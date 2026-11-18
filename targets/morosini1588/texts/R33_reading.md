@@ -10,7 +10,8 @@ the four reservations; the legate's four arguments; the King's answer on the Gal
 the guardasigilli in three days); used to recognise sense only, never as a source of words.
 Spelling as the figures give it; punctuation, capitals and word division added; codes expanded (113 S. M.tà / il Re,
 111 N. S., 135 uescouo/i, 141 clero, 151 Francia, 161 quanto, 165/166 quello/questo, 167 V. S. Ill.ma, 213 ambasciatore,
-226 catolico/a, 221 lettere). Marks: [?word] partly carried, […] unread.
+226 catolico/a, 221 lettere). Marks: [?word] partly carried, […] one unread word, [… n] n unread words (README, "Holes are counted by words";
+the sizes are estimates, listed under "Hole sizes" below).
 
 ## Reading
 
@@ -26,7 +27,7 @@ tempo di comonicare questo negotio nela loro congregatione del clero, doue esend
 che io prima haueuo fati a parte et le promese che mi erano state fate, ci furono molti contrasti et molta diuisione;
 perché, se bene tuti in uniuersale lodauano la publicatione del concilio, nondimeno [f. 189v] ognuno, discendendo a
 considerare il suo particolare interese, truouaua dele dificoltà grandi et insoportabili. Et prima li capitoli
-diceuano di non uole[r] [?per]dere i loro priuilegi di esere [?esenti] da i loro uescoui; et perché questi sono in
+diceuano di non uole{+r} [?per]dere i loro priuilegi di esere esenti da i loro uescoui; et perché questi sono in
 numero di più di otanta et li uescoui non sono più che uenti, [et] per uedere di aquetarli molti di esi uescoui
 s'ofersero di dimandare unita[mente] con i capitoli a N. S. che li conseruase le loro esentioni. Altri non la uogliono
 intendere, dicendo che era cosa impertinente che 'l uescouo non potese coregere i uitii et gli abusi de i suoi
@@ -34,7 +35,7 @@ canon[i]ci, et che [?…]inouando [questo] disordine non si poteua aspetare frut
 grauauano per la pluralità et incompatibilità de' benefici che [?posedono]; altri per questa loro pretensa libertà
 […] dela chiesa galicana, che uogliono per pontiglio d'honore et per hauere questa superiorità [?fra] tute [l']altre
 nationi christiane [?mantenere] ostinatam[ente]. Onde, dopo longhe dispute et dopo hauere ridoto la nobiltà et il
-terzo stato nela loro uolontà, ritornarono dal Re et disero a S. M.tà che tuti insieme la ringratiauano di uole[r]
+terzo stato nela loro uolontà, ritornarono dal Re et disero a S. M.tà che tuti insieme la ringratiauano di uole{+r}
 publicare il concilio, ma perché ci uoria [f. 190r] il tempo almeno di [?dui anni] per dichiarare gli interesi del
 regno, la pregauano di publicarlo con riserua di quatro sole ecetioni: la prima, di riseruare l'autorità sua; la
 seconda, la libertà dela chiesa galicana; la terza, le esentioni dei capitoli; et l'ultima, i particolari priuilegi che
@@ -71,7 +72,7 @@ N. S. In che feci tuta quella più gagliarda [f. 191v] et eficace instanza che p
 dice che senza questa conditione non si uenga ad alcun acordo. S. M.tà mi dise che [?non] poteua sprezare l'autorità
 sua, né meno [?contra] il consenso di tuti li stati del suo regno fare una risolutione che potria causare qualche
 grande inconueniente con rouina et destrutione dele cose sue; che però mi pregaua di hauere un poco di pacientia,
-perché fra dui o tre giorni mi hauria fato chiamare, et dal suo guardasigilo fato[mi] intendere ala sua presenza tuto
+perché fra dui o tre giorni mi hauria fato chiamare, et dal suo guardasigilo fatomi intendere ala sua presenza tuto
 quello che ella hauese potuto fare, et che desideraua grandem[ente] di potermi dare sodisfatione, così per rispeto di
 N. S. come anco per mio particolare contento. Io disi a la maestà sua che non pretendeuo altro contento che l'honore
 del sig. Dio et il beneficio di questo regno; con che mi partii, et dopo non ho lasato di tratare il medesmo con tuti
@@ -84,14 +85,14 @@ molto bene quali fosero li miei ordini, et che però se il Re credese che questo
 [scr]iuere a N. S., perché quando io hauesi trapasato le mie comisioni haurei riceuto quella riprensione che meritauo.
 Questo è quello che sin qui si è fato, da che V. S. Ill.ma potrà uedere che sarà cosa molto dificile, et forse
 imposibile, di potere guadagnare questo punto che il concilio sia riceuto senza alcuna conditione, poiché né il Re né
-li stati lo uogliono sentire, et quelli che più lo douriano procurare, che sono quelli del clero, metono loro [?più]
+li stati lo uogliono sentire, et quelli che più lo douriano procurare, che sono quelli del clero, metono loro {+p}iù
 dificoltà de gli altri. Però prego V. S. Ill.ma farmi gratia di comandarmi distintam[ente] et risolutam[ente] quello
 che io dourò fare, senza rimetere alcuna cosa al mio giudicio, perché confeso che non saprei che partito pigliare,
 parendomi ragioneuole molto che il concilio sia publicato et liberam[ente] riceuto, et d'altra parte molto pericoloso
 quando continouasero nel primo proposito procedere a qualche […] [f. 192v] […] generale congregatione de li stati di tuto
 il regno. Però andarò continouando nei medesimi ofici, procurando con modi destr[i] di guadagnare più che […] in questo
 punto, et […] si potrà spontare, m'andrò tratenendo sino a tanto che posi hauere lume da V. S. Ill.ma di quello [che]
-dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S. […]
+dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S. [… 5]
 
 ## Notes on the figures
 
@@ -99,7 +100,20 @@ dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S
 - "sia riceuto […] liberam." (189r l. 7): "1 7 1 0 1 5 1" between riceuto and liberam. gives no word.
 - "di christiani, […] parue" (189r l. 8): "2 2 6" (226 catolici undotted? or a stray) left open.
 - "et […] et [?d]esiderio" (189r l. 12): DECODE has "? ? ?" (illegible to the transcriber); the d of desiderio missing.
-- "[?esenti]" (189v l. 4): 153 45 35 0 21 51 171, one stray 2.
+- "esenti" (189v l. 4): 153 45 35 01 15 171. DECODE gives "0 2 1 5 1 7 1"; on the image (DECODE R33, 14 Nov 2026) the
+  figure it reads as 2 has the same hooked form as the 1 that ends the line (171 = i), so 01 = n as in "esentioni"
+  (189v l. 8-9). Taken as a 2 it would be a one-digit slip for 01 (README, one-digit rule of 14 Nov 2026): read either
+  way.
+- One-digit slips (README, one-digit rule of 14 Nov 2026; the key is Meister no. 40, the key of the period sent to
+  Morosini in 1587), checked on the DECODE R33 images on 14 Nov 2026:
+  - uole{+r} (189v l. 4, "di non uole{+r} perdere"): 3 91 50 35 **2** 64 for 1 r. The figure is a hooked 2 (or the
+    clerk's final 1 with a flourish: then the r is as written); read either way.
+  - uole{+r} (189v l. 24, "di uole{+r} publicare"): 3 91 50 35 **2** 70 37 42 ... for 1 r; on the image a 2 with a flat
+    base before the 7 of 70. The encipherer's slip.
+  - {+p}iù (192r l. 16, "metono loro {+p}iù dificoltà"): **20** 17 173 for 70 p; on the image the first figure is a 2
+    of the same form as the 2 of 26 that follows, not a 7. The encipherer's slip.
+- "fatomi" (191v l. 11): 8 30 2 15 191 20 7, a lone null 8 before 30 f (the r2p parse took 8 3 for a null and left
+  "[mi]"); every figure carries the word.
 - "[?per]dere" (189v l. 4): "2 6 4 2 6 3 5 0 0 5": per = 64 written after a stray 2 6.
 - "[?…]inouando [questo]" (189v l. 12): the transcriber's "? 6 ? ?" and "? ? ? ?"; [questo] from the 6 of 166.
 - "[?posedono]" (189v l. 15): 70 91 45 35 26 9 8 8 19 8.
@@ -114,4 +128,38 @@ dourò [f]are per sodisfare compitam[ente] a […] uolontà et desiderio di N. S
   (m i n a … : perhaps a word for a forcible step); left open.
 - 192v l. 4–5: "4? 1 3? 1 0 3? 3 7 1 9 1" and "4 1 3 5 3 7 1 8" unread (transcriber's queries).
 - 192v l. 8: "a 1 5? ? ? ? ? 5 0 2 1 2": illegible to the transcriber.
-- Closing (192v l. 9): "8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4" (221 = lettere) not read.
+- Closing (192v l. 9), re-read on the DECODE R33 image of f. 192v (IMG_R33_I187_P8) on 15 Nov 2026: after 111 (N. S.)
+  the line carries 25 figures, "8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4", the dots over the second 2 of 221 and the
+  first 6 of 166 as DECODE has them. The image agrees with DECODE's figures except the two after 221 ("0 5"): two
+  slanted strokes blurred by spread ink, which could also be 1 1. Neither gives a word ("0 5 7 2 0 0": l i a r, n e
+  acciochè r; "1 1 7 2 0 0": r i a r). The twelve figures before 221 give no Italian under Meister no. 40 in any
+  segmentation (the best scored is "acciochè a qua come et e i"), and no one-digit change gives a word that could be
+  seen on the image. Not read. Sized [… 5], the least number of words the figures show: at least one word in the twelve
+  figures before 221, 221 lettere, at least one word in the six figures after it, 166 questo, and the final 4 (s; 8 is
+  the only null of Meister no. 40) at least one more. An estimate; lettere and questo are counted unread, since the
+  words around them are not read.
+
+## Hole sizes (README, "Holes are counted by words", 15 Nov 2026)
+
+Every […] of the reading, with the figures it covers (DECODE D1697, checked on the images where noted above) and the
+least number of words they show. Each is an estimate: a run of figures with no word parse counts one word.
+
+| Place | Figures under the mark | Words |
+|---|---|---|
+| 189r l. 1 (opening, before N. S.) | 9 7 5 2 4 7 0 | 1 |
+| 189r l. 7 (riceuto […] liberam.) | 1 7 1 0 1 5 1 | 1 |
+| 189r l. 8 (christiani, […] parue) | 2 2 6 (226 catolici undotted, or a stray) | 1 |
+| 189r l. 12 (et […] et) | three figures eaten through by the ink (DECODE "? ? ?") | 1 |
+| 189v l. 16 (libertà […] dela) | 2 0 5 2 | 1 |
+| 190r l. 12 (più […] che io potei) | "6? 9? ? 1 ? ? ? 2 1 5 2 5", holes in the paper | 1 |
+| 190v l. 21 (ma che […] considerasi) | "? ? ? 9" | 1 |
+| 192r l. 24 (a qualche […]) | 2 0 1 7 0 1 ("min…") | 1 |
+| 192v l. 1 ([…] generale) | 2 1 2 5 1 1? 2 1 7 7 0 3 0 1 2 1 2 | 1 |
+| 192v ll. 4-5 (più che […] in questo) | 4? 1 3? 1 0 3? 3 7 1 9 1 | 1 |
+| 192v l. 5 (et […] si potrà) | 4 1 3 5 3 7 1 8 | 1 |
+| 192v l. 8 (a […] uolontà) | "1 5? ? ? ? ? 5 0 2 1 2", a blot over five figures (seen on the image 15 Nov) | 1 |
+| 192v l. 9 (closing) | 8 7 2 2 9 5 7 9 6 9 5 7 221 0 5 7 2 0 0 166 4 | 5 |
+
+Partly carried words ([?…]inouando, [?posedono] …) and supplied words ([questo], [et] …) count one hole a word, as
+v2_score.holes counts them. Total: 77 holes in 1,510 words, read share 0.94901 (v10_relabel.share), under the 0.95
+bar: read in part.

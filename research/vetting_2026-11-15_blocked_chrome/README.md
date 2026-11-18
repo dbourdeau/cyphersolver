@@ -1,0 +1,9 @@
+# Vetting, blocked-catalogue Chrome sweeps, leads 2808-2831 (15 Nov 2026)
+
+Claude Code session (Claude Sonnet 5.5). `sweep_2026-11-15_uk_blocked_chrome` (6 rows) and `sweep_2026-11-15_continental_blocked_chrome` (18 rows) merged as 2808-2831 (both added to `SWEEPS` in merge.py). Regions and periods were all valid; the four Schlik rows shared one shelfmark, which merge.py's shelfmark dedupe rejected, so each got a writer tag in its shelfmark (original kept in the row's status). Evidence in `vetting.json` (built by `make.py`).
+
+- **Promoted (6):** 2808 (NLW MS 9066E/2378, 1663 numerical cipher with key overleaf; key_in_volume), 2815 (Bragadin, Famagusta, 6 Oct 1570, one page), 2816 (Buquoy to Molart 1619), 2817 (Colloredo to Ferdinand III 1635), 2818 (Dampierre to Kollonitsch, before 1620), 2819 (Maximilian to Dupont, 22 telegrams of 1862, contemporary solution on each telegram = key_in_volume; one code or several unknown without images).
+- **Not online:** every OeNB record (Primo, Chrome) is a manuscript with no Digitalisat link; NLW's AtoM record has no digital object. All six vetted from the archive's description, `access: archive`.
+- **Left, fails the bar or not seen:** 2814 (Basta: German translation filed with it); 2826-2830 (BnF fr. 3702, 3673, 3703, 3645, 3362, catalogued 'avec chiffre et dechiffrement', and not seen: the Gallica ark could not be found because Gallica SRU does not index the shelfmark, and it then showed a Cloudflare check, not solved); 2820-2823 (Schlik, per-letter records not read), 2824, 2825, 2831, 2809-2813 (see `vetting_note` on each).
+- Prior art: DECODE dumps, Cryptoole snapshot, live Tomokiyo GL.htm (no hit for any of these), site-restricted and open web searches: nothing on any item. Biblissima's fr. 3702 page was read (letters 10-17 of Apr-May 1625).
+- Not done: Gallica images for the BnF volumes; Primo per-letter records for Schlik; NLS Denmilne item list; HathiTrust editions.

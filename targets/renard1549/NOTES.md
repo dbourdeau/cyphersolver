@@ -36,14 +36,38 @@ The 1548 numeric syllabary (Doria-Figueroa family, Tomokiyo's description; `gonz
 
 ## Prior work
 
-The repo listed cc.131-132 as unread; the contributor found no printed text of this dispatch. The plot is known in outline from the Calendar extracts of Renard's letters of 14, 18 and 28 July 1549 (Vienna, F. 28), which have no entry for 12 July (contributor). Renard's original dispatch may survive in Vienna (HHStA, Frankreich) and Besançon holds Charles V's letter to Renard of 12/15 July 1549 with a decipherment (CCFr ark:/16871/004a80174782); neither was seen.
+The repo listed cc.131-132 as unread; the contributor found no printed text of this dispatch. The plot is known in outline from the Calendar extracts of Renard's letters of 14, 18 and 28 July 1549 (Vienna, F. 28), which have no entry for 12 July (contributor). Renard's original dispatch may survive in Vienna (HHStA, Frankreich) and Besançon holds Charles V's letter to Renard of 12/15 July 1549 with a decipherment (CCFr ark:/16871/004a80174782); neither was seen on 10 Nov. The Vienna original was obtained by Malcolm McBratney on 16 Nov ("The Vienna original", below); the Besançon letter is still not seen.
 
 ## Remaining gaps
 
 - Code word amo (an office of the Duke and of Tende) and the signs Q/∝ elsewhere, X, F, I, T°, 3^1, e^3 - blocker: open-codes; each occurs once or twice and the context does not fix it
 - Context-only values of code words (den, bas, ne, mi, oria/ocia/ning, rac, apud, allo, bit) - blocker: open-codes; not found in the c.40/41 alignment, no other text in this key in the file
 - Five short holes in the reading and the plotters' names spelled letter by letter (Chaulve-F) - blocker: illegible; the contributor's crops leave them unread, and the project could not reach the images
-- Transcription not compared with the images by the project; Renard's original in Vienna and the Besançon decipherment - blocker: needs-physical-access; Estense host refused by this session's network, the Vienna and Besançon papers are not online
+- Transcription not compared with the images by the project; the Besançon decipherment - blocker: needs-physical-access; Estense host refused by this session's network on 10 Nov (on 16 Nov its IIIF manifest answered but image requests at 1528 px were refused by the server's size limit); the Besançon papers are not online. Renard's Vienna original: a working scan was supplied to the contributor by HHStA (16 Nov, `vienna/`); it is not online and not in this repository, so the project has not seen it
+
+## The Vienna original (16 Nov 2026)
+
+Malcolm McBratney (with Claude) obtained a working scan of Renard's French original from HHStA Wien (StAbt Frankreich, Diplomatische
+Korrespondenz 17, Konv. Juli 1549, fol. 13-14; HHStA GZ 2026-0.947.186). The body is in cipher with a contemporary French decipherment
+beside it. `vienna/` holds the French text, a neutral-label transcription of the cipher, a rebuilt key (not proven: leak-free held-out
+tests 56.7% and 64.8%) and the comparison with the reading above. It confirms the reading on the plot, the people and the force, and
+differs on four details: 62 or 63 soldiers, the prieur de Lombardie, the second plotter "Chauvey secretaire dudit duc" (so *amo* =
+secretary) and the courier's day ("mardi ou mercredi"); it names the ambassador at Genoa, Figueroa. See `vienna/README.md`. The reading
+above is the contributor's and is not changed here.
+
+## Integration check (16 Nov 2026)
+
+Verified for the maintainer before merging PR #707 (Malcolm McBratney). A model session did these checks; no person has checked them. The Vienna transcriptions (`vienna/FR_CLEAR.txt`, `vienna/CIPHER.tsv`), the alignment and the comparison are a model session's work for the contributor (`vienna/LOG.md`); the files record no check by a person.
+
+- **Nothing of Ivan Sourvillo's changed.** The PR adds `vienna/`, one NOTES section and two profile steps; the earlier steps and the whole outcome block of `profile.json` are unchanged (one block reflowed, same content).
+- **Hashes.** `FR_CLEAR.txt`, `CIPHER.tsv` and `SIGNS.tsv` hash as `vienna/FREEZE.txt` states. The scan (md5 cb6ae0af...) is not in the repository and was not seen here: HHStA supplied it to the contributor on request; no online images are known. The transcription was not compared with any image.
+- **Reproduced.** `pipeline.py full` regenerates `key_renard1549_vienna.tsv`, `ALIGNMENT.tsv` and `DECODE_fullkey.txt` byte for byte (in-sample self-decode 0.8168). The held-out runs give H1 0.7377, H2 0.5666 and H3 0.6481, with shuffle maxima 0.2700-0.2897 and 0 of 10,000 shuffles as good, exactly as `vienna/HOLDOUT*.txt` and `vienna/RESULTS.md`. A decoder written for the check from the key file gives the KEY lines of `DECODE_fullkey.txt` on 67 of 67 lines. 127 signs, 1,201 of 1,513 tokens on their majority value (79.4%), 29 signs seen once.
+- **The four differences are in the cipher, not only the margin.** In `DECODE_fullkey.txt` the cipher decodes to "-hauvey se-reteire" (13r.09) where the decipherer wrote "chaulux prevost[?]"; "soi-que-ante deu-que ou trois" (13r.11, "soixante deux ou trois"); "prieur de lombardie"; "mardi ou me-redi" (13v.07); "fi-ha-ro-a" (13v.26, "figueroa" in the margin). Since the decipherer's margin says "chaulux prevost" at 13r.09, "Chauvey secretaire" there does not come from aligning that line.
+- **The key is not proven, as filed.** The leak-free held-out runs are under the contributor's 65% line, and the held-out truth is the decipherer's French, which shortens and rewords. No reading class is claimed for the Vienna witness; it is a control on the reading above.
+- **Read share of the reading of record.** By the cipher-words-only count (16 Nov rule) nothing changes: the Modena leaf is cipher throughout, its heading included, so the 28 holes in 531 words (0.947, read in part) stand. The Vienna text confirms several bracketed words ([?Rey], [?Consejo], [?Augusta], [?Saboya] for the bastard) and gives *amo* = secretaire, but the reading is not changed here and those words remain holes.
+- **Key family and one key, one entry.** The Vienna cipher is not the Modena copy's 1548 syllabary; it is close to PP1 (Saint-Mauris / Granvelle) on structure only, the family Tomokiyo gives for `renard1554`. It is filed here as a witness of the same letter. If a sign-by-sign comparison confirms PP1, it belongs with any PP1 entry as well.
+- **Small inconsistencies in `vienna/RESULTS.md`.** It speaks of five differences (bottom line), of three (end of section 5) and of four (README, this file); the four are 62 or 63, Lombardy, Chauvey secretaire, and Tuesday or Wednesday. Its header says "identified as PP1, so a published key also exists", where section 6 and README say PP1 on structure only. Its "Not done" line (no profile.json) predates the PR's profile steps.
+- **Checkers.** `_check_profile.py renard1549`: valid. The reading check: ok. `_check_reading.py`: unchanged (22 of 45 sentences clean, read in part). `_check_terms.py`: the 2 hits are on lines that are also on main. `_check_writeup.py --gate`: 0 new violations. `_check_catalogue.py`: valid.
 
 ## Escalation
 

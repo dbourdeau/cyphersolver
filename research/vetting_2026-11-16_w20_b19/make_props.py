@@ -1,0 +1,82 @@
+# Writes proposals.json for wave 20 batch b19. python -I -X utf8 make_props.py
+import json
+BY = "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting"
+CRYP = "cryptiana unsolved.htm (fetched 15 Nov 2026) grepped"
+P = {}
+P["2697"] = {
+ "verdict": "open", "confidence": "low",
+ "note": "The Regionaal Archief Dordrecht EAD (toegang 383) describes inv. 847 as 'Aantekeningen in geheimschrift, z.j' (1 stuk) and inv. 803 as 'Stukken betreffende het maconniek geheimschrift, z.j' (1 omslag); no scans are linked and no decipherment is named. Low confidence: inv. 803 may hold the lodge alphabet and even a clear text of 847, and the notes are probably the Masonic pigpen alphabet, read at sight once seen.",
+ "access": "archive",
+ "access_note": "Regionaal Archief Dordrecht reading room or a scan order. The EAD (harvest.archieven.nl OAI GetRecord E15A1476101948B49EC9DCBCCB34A252, fetched 16 Nov) has no <dao> element anywhere in the 383 inventory, so nothing is digitised.",
+ "vetting": {
+  "date": "2026-11-16", "by": BY,
+  "seen": {"kind": "not online",
+   "where": "Archive description only: EAD of toegang 383 (Vrijmetselaarsloge La Flamboyante) from harvest.archieven.nl OAI-PMH, GetRecord identifier E15A1476101948B49EC9DCBCCB34A252, read 16 Nov 2026: inv. 847 'Aantekeningen in geheimschrift, z.j', 1 stuk, normal date 1812/2000; inv. 803 'Stukken betreffende het maconniek geheimschrift, z.j', 1 omslag.",
+   "extent": "Inv. 847 is one piece of notes; inv. 803 is one folder of papers on the Masonic secret writing. Leaf counts are not given and no images exist online.",
+   "cipher": "The archive itself calls inv. 847 notes written in 'geheimschrift' (cipher, secret writing). The type is not described; in a lodge archive it is most probably the Masonic pigpen alphabet. Not seen here."},
+  "prior_art": {
+   "decode": "known.py on 'toegang 383' and 'Flamboyante' (DECODE view dumps, Cryptoole snapshot, HCPortal index, ledgers, targets, sweeps): only this lead and its Dutch OAI sweep records; no DECODE record.",
+   "tomokiyo": CRYP + " for Dordrecht, Flamboyante and mason/Masonic: no entry.",
+   "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Dordrecht, Flamboyante and Masonic: no entry.",
+   "edition": "No edition or transcription of the lodge's cipher notes was found; the items are undated and undescribed beyond the inventory line.",
+   "literature": "Web search on 'La Flamboyante' Dordrecht with 'loge' and 'geheimschrift' found only an 1815 lodge song in the Vrijmetselarij Museum catalogue and general Dutch Masonic history; nothing on these notes."},
+  "key_check": "Inv. 803 'Stukken betreffende het maconniek geheimschrift' in the same archive may hold the lodge's cipher alphabet (a key) and possibly explanations; it is recorded here as a probable key in the collection. A key does not block the lead, but if 803 also holds a clear text of 847 the lead should be closed as read.",
+  "duplicates": "known.py on the fonds, the inventory numbers and the lodge name finds no other lead or catalogue entry; the 11 Nov Dutch OAI sweep README had excluded the same two items as a lodge alphabet with no date, which is the same item, not a duplicate record.",
+  "verdict": "open"}}
+P["1883"] = {
+ "verdict": "read", "confidence": "medium",
+ "note": "The RGAVMF record (fetched by curl 16 Nov) reads 'Шифрованные телеграммы расшифровки и письма на французском языке агента в южных портах Испании и Португалии - A.Cromariot': the decipherments are filed with the ciphered telegrams. Record error: the record's dates are 1904-1904 (Военно-морской ученый отдел, раздел 1904, делопр. № 26577), not the First World War.",
+ "access": "archive",
+ "access_note": "RGAVMF electronic copy by order; record https://rgavmf.ru/fond/417/opis-1/edhr-3109 opens by curl. No scans online.",
+ "correct_date": "1904",
+ "vetting": {
+  "date": "2026-11-16", "by": BY,
+  "seen": {"kind": "not online",
+   "where": "Archive description only: RGAVMF record https://rgavmf.ru/fond/417/opis-1/edhr-3109 (fetched by curl 16 Nov 2026): fond 417 Главный морской штаб, опись 1 (Военно-морской ученый отдел), ед. хр. 3109, делопр. № 26577, раздел 1904, начальная и конечная дата 1904.",
+   "extent": "One file of ciphered telegrams, their decipherments and French letters of the agent A. Cromariot; the record gives no leaf count.",
+   "cipher": "The record names ciphered telegrams ('Шифрованные телеграммы') and their decipherments ('расшифровки') together in one file; the cipher type is not stated and was not seen."},
+  "prior_art": {
+   "decode": "known.py on Cromariot and 'Ф. 417': only this lead and the Nov 2026 Russia sweep files; no DECODE record.",
+   "tomokiyo": CRYP + " for Cromariot, Russia/Russian, RGAVMF and Petersburg: no entry for this file.",
+   "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) grepped for Cromariot and Russian material: only an unrelated 1725-1730 dossier.",
+   "edition": "The archive record itself lists decipherments ('расшифровки') filed with the telegrams, which is a contemporary reading of them; no printed edition was found.",
+   "literature": "Web search on Cromariot with Russian naval intelligence, Spain, Portugal and 1904 found nothing on him; Russian naval intelligence of the Russo-Japanese war is studied (Gurinov 2021) without this name."},
+  "key_check": "No key is named in the record; the Main Naval Staff fond 417 may hold the 1904 naval cipher, not searched. A key does not change the verdict.",
+  "duplicates": "known.py on Cromariot, fond 417 and the date found no other lead or catalogue entry.",
+  "verdict": "read",
+  "closed": "Closed as read: the RGAVMF record files the decipherments ('расшифровки') with Cromariot's ciphered telegrams of 1904, so the texts were read at the time; whether every telegram has its decipherment is not shown."}}
+
+
+def nov(lid, note, acc):
+    P[lid] = {"verdict": None, "confidence": "medium", "note": note, "access": "archive", "access_note": acc}
+
+
+nov("1882", "Not assessed. The RGAVMF record (curl, 16 Nov) reads 'Записка кн. Горчакова к графу Блудову 16 окт. ... ; 16 окт. - копия шифрованной депеши гр. Блудову с указанием плана действий в Греции. Лл. 2.' A 'copy' whose content the archivist summarises, sent on to the Navy Ministry, is most probably the clear text of a despatch sent in cipher (probably read or no ciphertext), but the 2 leaves are not online.",
+    "RGAVMF electronic copy by order; record https://rgavmf.ru/fond/315/opis-1-2/edhr-1121 opens by curl (section: papers found after the 1918 evacuation of the Navy Ministry chancery). No scans.")
+nov("1881", "Not assessed: blocker stands. The RGAVMF record now opens by curl (16 Nov): 'Письма и шифрованные телеграммы генерала Баранцова, Бруннера, Коцебу и Милютина Б. А. Глазенапу о продаже оружия сербскому правительству', 1867, 39 pages, no scans. Telegrams received in a recipient's papers are usually kept deciphered; the title does not show ciphertext.",
+    "RGAVMF electronic copy by order; record https://rgavmf.ru/fond/6/opis-1/edhr-61 (Glazenap fond, section 'Главный Командир Николаевского Порта'). No scans.")
+nov("1880", "Not assessed: blocker stands. The RGAVMF record now opens by curl (16 Nov): 'Журнал с подробной записью шифрованных депеш командующего Отдельным отрядом судов в греческих водах И. И. Бутакова и предписаний Управляющего Морским министерством', 1876, 40 pages. A journal recording the despatches in detail is most probably a clear register (probably read), but no scans show it.",
+    "RGAVMF electronic copy by order; record https://rgavmf.ru/fond/4/opis-1/edhr-102 (Butakov family fond). No scans.")
+RG = ("RGIA reading room or a paid copy. On 16 Nov the KAISA object API used by batch C (fgurgia.ru/ajax/obj/<id>/286525) "
+      "answered HTTP 500 for every id tried, including batch C's working id 3646513, and the object page is a JS shell; "
+      "the record text in the lead (read 11 Nov) was not re-read.")
+for lid, extra in [
+ ("1858", "Description-only record (Ф. 560 оп. 29 д. 52); no scan route recorded; ciphertext versus decoded copies unknown."),
+ ("1869", "Record read 11 Nov: Ф. 23 оп. 31 д. 27, 4 leaves, 1893?, 'Шифрованные телеграммы В. И. Тимирязева министру финансов', no scans; cipher groups versus decipherment not stated."),
+ ("1860", "Ф. 560 оп. 29 д. 66, 266 sheets, no scans; outgoing chancery telegrams are normally filed as clear drafts."),
+ ("1877", "Record read 11 Nov: Ф. 472 оп. 60 д. 1977, 1900, no scans; cipher groups versus decipherments not stated."),
+ ("1862", "Ф. 560 оп. 29 д. 37, 194 sheets, no scans; ciphertext versus decoded copies unknown."),
+ ("1876", "Record read 11 Nov: 'копии шифрованных циркулярных депеш министра' kept by the Peterhof palace office; copies of the minister's circulars are most probably deciphered texts (probably read), unseen."),
+ ("1867", "Record read 11 Nov: 'Копии шифрованных телеграмм о внутренних делах Персии', 1903-1904; copies in a ministry file are most probably deciphered (probably read), unseen. The lead's date 1903 should read 1903-1904."),
+ ("1863", "Ф. 560 оп. 29 д. 17, title only, no scans; ciphertext versus decoded copies unknown."),
+ ("1865", "Ф. 560 оп. 29 д. 260, title only, no scans; ciphertext versus decoded copies unknown."),
+ ("1866", "Ф. 560 оп. 29 д. 261, 147 leaves, no scans; only the case title says 'ciphered'."),
+ ("1870", "Record read 11 Nov: Ф. 95 оп. 18 д. 292, 3 leaves, 1912, 'Шифрованная телеграмма ... Гольцингера ... Копия' with its content (a five-day term for Greek ships to enter the Bosporus) in the title; the archive calls it a copy and summarises it, so it is most probably the deciphered office copy (probably read)."),
+ ("1879", "Record read 11 Nov: Ф. 468 оп. 43 д. 1641, 2 leaves, 11 Sep 1914, a ciphered telegram 'с распоряжением на случай эвакуации'; the title gives the content, so the decode is very probably on the leaves (probably read)."),
+ ("1871", "Records read 11 Nov: Ф. 23 оп. 27 д. 792 (73 leaves) and 793 (136 leaves), 'тексты шифрованных телеграмм' of the 1916 Paris economic conference; 'texts of ciphered telegrams' reads as decoded texts, unseen."),
+]:
+    nov(lid, "Not assessed: the recorded blocker (no scans; the title does not show ciphertext) stands. " + extra, RG)
+
+order = "2697 1882 1881 1880 1883 1858 1869 1860 1877 1862 1876 1867 1863 1865 1866 1870 1879 1871".split()
+json.dump({k: P[k] for k in order}, open("proposals.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
+print(len(P))

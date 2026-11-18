@@ -198,16 +198,7 @@
    "what": "Paged C13A 41 (1,010 images) and C13A 42 (638 images) at thumbnail crops for further cipher pages and duplicate copies: none of nos. 206, 207, 215; C13A 42 ff. 42-47 is the first copy of no. 228, already deciphered in its second copy.",
    "result": "failed"
   },
-  {
-   "date": "2026-11-13",
-   "kind": "verification",
-   "technique": [
-    "statistical test",
-    "language-model scoring"
-   ],
-   "what": "Statistical validation (docs/_validate.py): 1065 tokens, 247 types, fr-modern order 4: reading -1.976 per letter; random keys -3.377 (z 11.5); key annealed onto shuffled ciphertext best -2.3 (mean -2.322, z 18.3); annealer on the real text -2.283. Verdict: pass.",
-   "result": "worked"
-  },
+  {"date": "2026-11-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1065 tokens, 247 types, fr-modern order 4: reading -1.976 per letter; random keys -3.377 (z 11.5); key annealed onto shuffled ciphertext best -2.3 (mean -2.322, z 18.3); annealer on the real text -2.283. Verdict: pass.", "result": "worked"},
   {
    "date": "2026-11-14",
    "kind": "verification",
@@ -216,17 +207,41 @@
    ],
    "what": "Integration check of PR #586 (round 13). Counts reproduced by an own parser: 555, 191 and 322 legible groups (1,068), 3 without a value (107, 209, 591), 220 on Pusch's values alone (101, 56, 63), 27 gutter marks. decode.py with the union of key_manuscript.tsv and pusch_values_used.tsv resolves 552/555, 191/191, 322/322. Held-out test re-run: key from the clerks' glosses 198/253 = 78.3% (shuffles mean 16.4%, max 24.1%), identical; test plan and frozen key hashes match. The merged-key figure of 96.0% could not be re-run, the frozen merged key is not in the folder; the union of the two committed key files gives 232/253 = 91.7% (50 shuffles, max 20.2%). Strict word count over the coded text only: 206 278/295 (94.2%), 207 100/103 (97.1%), 215 179/187 (95.7%). ANOM images not sampled: the viewer answered with a bot check and no browser route was available in this session.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Ten glossed Kerlérec despatches transcribed from ANOM IIIF images (C13A 39 ff. 60-64, 69-70, 104-105, 146-148; C13A 40 ff. 27-28, 34-35; C13A 41 ff. 147-149; C13A 42 ff. 10-11, 83-85): 5,001 code groups with the clerk's gloss line above each, read blind to any key, one full pass plus a zoomed check of every 3, 5 and 7 (transcriptions/glossed_more/). No. 72 only ff. 104r-105r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "key from source",
+   "technique": [
+    "beam/DP decoding",
+    "SAT/constraint solving"
+   ],
+   "what": "Follow-up. Ten further despatches with the Marine clerks' interlinear decipherment transcribed from ANOM IIIF images (C13A 39-42: nos. 72 (part), 86, 87, 91, 103, 135, 145, 226, 236, 245; 5,001 code groups, blind to any key). Their running gloss cut into per-code pieces without Pusch's table: starting from the 164 clerks' values of nos. 194/228, a code is assigned when the clerk's text between two known groups is forced by tiling, iterated to a fixed point, with a consistency pass that withdrew 10 contested values (scripts/clerks_segment.py). 257 codes gained from clerks' evidence alone (basis a, 1,011 group pairs); 44 more cut with Pusch's table as dictionary (basis b, 61 pairs). Checked afterwards against Pusch: 213 of the 257 (a) values equal his entry (scripts/compare_a_with_pusch.py with a local copy of his table; 216 in the first draft of this step was not reproduced), most of the rest are plurals or spellings. Leave-one-out: 145 of the 164 seed values are re-derived from the new pages with the same value; 198 comes out as considerable (2 pairs) against the seed's single pre.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Keys frozen (sha256 in test/TEST_PLAN_followup.sha256) and plan written before scoring. Held-out no. 228 ff. 48v-49r, 253 groups, 200 shuffles: clerks-only key (seed + a, 421 codes) 237/253 = 93.7% (shuffles mean 12.7%, max 18.6%); enlarged clerks' key (+ b, 465 codes) 238/253 = 94.1% (mean 12.2%, max 18.2%). Re-run of earlier figures from folder files: 164-code clerks' key 78.3%; committed key files together 232/253 = 91.7% (200 shuffles, max 23.3%). The 96.0% of 13 Nov used Pusch's full printed table; that merged key is held locally because it reproduces his published table (sha256 b54686fb...cba89), re-runs at 243/253 from the local file, and scripts/rebuild_merged_key.py rebuilds and scores it from a table the user supplies. Of the 220 groups of nos. 206/207/215 that rested on Pusch alone, 197 now have a clerk's value from evidence alone and 12 a clerk's piece cut with Pusch's table; 11 still rest on Pusch alone. One reading changes: code 591 = autorite (no. 245 f. 85r l. 7), 'les rebelles a son autorite' in no. 206. scripts/reproduce_figures.py re-runs every figure.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read with known key",
-  "verification": [
-   "statistical test",
-   "contemporary decipherment",
-   "historical consistency"
-  ],
+  "verification": ["statistical test", "contemporary decipherment", "historical consistency"],
   "provenance": "contributed",
   "credits": [
    {
@@ -238,14 +253,14 @@
    {
     "who": "contemporary",
     "role": "key or decipherment used",
-    "date": "1759-1760",
-    "note": "Anonymous clerks of the Ministry of the Marine: interlinear decipherments of nos. 194 and 228, the source of every manuscript pair."
+    "date": "1755-1760",
+    "note": "Anonymous clerks of the Ministry of the Marine: interlinear decipherments of nos. 194 and 228 and, in the follow-up, of nos. 72, 86, 87, 91, 103, 135, 145, 226, 236 and 245, the source of every manuscript pair."
    },
    {
     "who": "pusch",
     "role": "key or decipherment used",
     "date": "2008",
-    "note": "Donald E. Pusch, 'Kerlérec's Cipher', Louisiana History 49 (2008) 463-480: rebuilt the code book (Table 2), says these three despatches could be decoded with it and summarises nos. 206 and 207 (pp. 474-475); his table was used to segment the clerks' glosses, and 124 of his values are used for codes with no clerk's pair (key/pusch_values_used.tsv)."
+    "note": "Donald E. Pusch, 'Kerlérec's Cipher', Louisiana History 49 (2008) 463-480: rebuilt the code book (Table 2), says these three despatches could be decoded with it and summarises nos. 206 and 207 (pp. 474-475); his table was used to segment the clerks' glosses of the first round, and 124 of his values were used for codes with no clerk's pair (key/pusch_values_used.tsv); after the follow-up of 14 Nov 2026 nine of them (11 groups) are still used, and his Table 1 guided the choice of further glossed despatches."
    }
   ],
   "contribution": [
@@ -266,9 +281,9 @@
     "summary": "Kerlérec denounces the cabal of the ordonnateur Rochemore and his officer allies, asks for a frigate and Swiss troops to send them to France, and warns that Indian trade goods have run out.",
     "reading_review": {
      "grade": "B",
-     "by": "Andrew Beling's own AI agents (the working agent; not a person)",
+     "by": "Author's agents (Andrew Beling, with AI agents)",
      "date": "2026-11-14",
-     "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
+     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent; not a person) before the rule of 14 Nov 2026, and merged in #586. Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
     },
     "read_share": 0.9424,
     "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage. Integration check, 14 Nov 2026: read_share is the strict count over the coded text only, 278 of 295 words; the clear opening and closing lines and editorial identifications are left out, and words restored over an encoding slip count as holes."
@@ -285,9 +300,9 @@
     "summary": "Kerlérec reports telling the officers that the Balize post no longer commands the river mouth, has two cannon left for signals, and is under orders to be evacuated at the sight of a certain number of enemies.",
     "reading_review": {
      "grade": "B",
-     "by": "Andrew Beling's own AI agents (the working agent; not a person)",
+     "by": "Author's agents (Andrew Beling, with AI agents)",
      "date": "2026-11-14",
-     "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
+     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent; not a person) before the rule of 14 Nov 2026, and merged in #586. Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
     },
     "read_share": 0.9709,
     "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage. Integration check, 14 Nov 2026: read_share is the strict count over the coded text only, 100 of 103 words; the clear opening and closing lines and editorial identifications are left out, and words restored over an encoding slip count as holes."
@@ -304,9 +319,9 @@
     "summary": "The Choctaw nation (\"nearly half\", in the clear opening) is resolved to receive English traders for want of French goods; war is feared, the garrison is about 900 men short of 2,000 and gunpowder nearly gone.",
     "reading_review": {
      "grade": "B",
-     "by": "Andrew Beling's own AI agents (the working agent; not a person)",
+     "by": "Author's agents (Andrew Beling, with AI agents)",
      "date": "2026-11-14",
-     "note": "Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
+     "note": "PRELIMINARY: author's self-check, not a reviewer's grade. For a maintainer to confirm or replace. Recorded by Andrew Beling's own AI agents (the working agent; not a person) before the rule of 14 Nov 2026, and merged in #586. Normalised French read against the English and the raw decode; doubtful groups rechecked on the image. A second AI agent of ours, not shown the readings, confirmed 30 of 30 key pairs and 42 of 42 sampled groups on the captures and reran the test; its corrections are applied. Not an outside check."
     },
     "read_share": 0.9572,
     "note": "Share of words in reading_fr carrying no uncertainty mark (reading_measurements.json); not cipher-group coverage. Integration check, 14 Nov 2026: read_share is the strict count over the coded text only, 179 of 187 words; the clear opening and closing lines and editorial identifications are left out, and words restored over an encoding slip count as holes."
@@ -319,9 +334,14 @@
     "detail": "No duplicate copy in C13A 41 or 42; the Library of Congress LCRP microfilm (reel 48) or the leaf itself would restore them."
    },
    {
-    "item": "Codes 107, 209 and 591 in no. 206 have no value in our pairs or in Pusch's table",
+    "item": "Codes 107 and 209 in no. 206 have no value in the clerks' pairs (12 glossed despatches) or in Pusch's table",
     "blocker": "open-codes",
-    "detail": "Context suggests surpris, ô(ter) and retour/bord (readings/DOUBTS.md); marked as holes."
+    "detail": "Context suggests surpris and o(ter) (readings/DOUBTS.md); marked as holes. 591 was settled in the follow-up of 14 Nov 2026 (autorite)."
+   },
+   {
+    "item": "11 groups of nos. 206/207/215 (9 codes: 61, 225, 253, 368, 486, 513, 540, 580, 666) still rest on Pusch's values alone",
+    "blocker": "not-attempted",
+    "detail": "None of the nine occurs in the ten glossed despatches transcribed so far; Pusch lists about 18 more glossed despatches in C13A 39-43 (key/clerks_followup.md)."
    }
   ],
   "first_break": "unpublished prior",
@@ -340,39 +360,10 @@
     "basis": "Clerks' values for about 80% of the groups, Pusch 2008 values alone for 220 of 1,068; gutter losses and three unknown codes."
    }
   ],
-  "notes": "Lead 1207. First full text and translation of three Kerlérec cipher despatches of 1759 that carry no period decipherment; Pusch 2008 summarised the content of nos. 206 and 207 but printed no text. About a fifth of the groups (220 of 1,068) rest on Pusch's values alone.",
-  "validation": {
-   "date": "2026-11-13",
-   "model": "fr-modern",
-   "file": "validation.tsv",
-   "tokens": 1065,
-   "types": 247,
-   "tokens_per_type": 4.31,
-   "score": -1.976,
-   "nulls": {
-    "random keys": {
-     "n": 200,
-     "mean": -3.377,
-     "sd": 0.122,
-     "max": -3.035,
-     "z": 11.5,
-     "p": 0.005
-    },
-    "shuffled refit": {
-     "n": 6,
-     "mean": -2.322,
-     "sd": 0.019,
-     "max": -2.3,
-     "z": 18.3,
-     "p": 0.1429
-    }
-   },
-   "power": -2.283,
-   "verdict": "pass",
-   "notes": "claimed per-occurrence score -1.976; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.283"
-  },
-  "fraction_read": 0.9521,
+  "notes": "Lead 1207. First full text and translation of three Kerlérec cipher despatches of 1759 that carry no period decipherment; Pusch 2008 summarised the content of nos. 206 and 207 but printed no text. After the follow-up of 14 Nov 2026 (ten more glossed despatches), 1,057 of 1,068 groups decode with values attested in the clerks' glosses; 11 rest on Pusch's values alone.",
+  "validation": {"date": "2026-11-14", "model": "fr-modern", "file": "validation.tsv", "tokens": 1065, "types": 247, "tokens_per_type": 4.31, "score": -1.976, "nulls": {"random keys": {"n": 200, "mean": -3.377, "sd": 0.122, "max": -3.035, "z": 11.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.322, "sd": 0.019, "max": -2.3, "z": 18.3, "p": 0.1429}}, "power": -2.283, "verdict": "pass", "notes": "claimed per-occurrence score -1.976; polyphony 0.0; 3 unread tokens left out; annealer on the real text from random keys reached -2.283"},
+  "fraction_read": 0.9538,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Integration check, 14 Nov 2026, strict count over the coded text of reading_fr_206/207/215.txt: 557 of 585 words (206: 278/295, 207: 100/103, 215: 179/187); a word in brackets, a word with a restored part and a word restored over an encoding slip (readings/DOUBTS.md) are holes; clear lines not counted. The contributor's count, measure_reading.py, is 717 of 744 words with the clear lines included."
+  "fraction_read_source": "Integration check, 14 Nov 2026, strict count over the coded text of reading_fr_206/207/215.txt: 557 of 585 words (206: 278/295, 207: 100/103, 215: 179/187); a word in brackets, a word with a restored part and a word restored over an encoding slip (readings/DOUBTS.md) are holes; clear lines not counted. The contributor's count, measure_reading.py, is 717 of 744 words with the clear lines included. Follow-up 14 Nov 2026: code 591 filled (autorite), one more word in no. 206: 558 of 585; measure_reading.py now 718 of 743."
  }
 }

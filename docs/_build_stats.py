@@ -30,9 +30,10 @@ OVERRIDE = {}  # README row text -> category, for rows filed in a table that doe
 LABEL = {M.KEY[m]: M.LABEL[m] for m in M.METHODS}
 LABEL.update(na='not a cipher or not reachable', active='in progress')
 COLOR = {  # CSS variables from style.css
-    'ct': 'var(--green)', 'extpt': 'color-mix(in srgb, var(--green) 65%, var(--blue))', 'adjpt': 'color-mix(in srgb, var(--green) 40%, var(--blue))',
-    'extkey': 'var(--violet)', 'known': 'color-mix(in srgb, var(--violet) 50%, var(--blue))', 'deciph': 'var(--amber)',
-    'notsolved': 'var(--red)', 'na': 'var(--muted)', 'active': 'var(--ink2)',
+    # one hue per family (key recovered, existing key or decipherment, not solved), a step of it per method: --m-* in style.css
+    'ct': 'var(--m-ct)', 'extpt': 'var(--m-extpt)', 'adjpt': 'var(--m-adjpt)',
+    'extkey': 'var(--m-extkey)', 'known': 'var(--m-known)', 'deciph': 'var(--m-deciph)',
+    'notsolved': 'var(--m-notsolved)', 'na': 'var(--m-na)', 'active': 'var(--m-active)',
 }
 
 def parse_year(s):
@@ -104,7 +105,9 @@ def timeline_svg(items):
     # sixteenth century is spread out and the empty fifteenth and nineteenth are compressed. Every 50-year line is
     # drawn, so the uneven spacing stays visible.
     edges = list(range(x0 // 50 * 50, x1 + 1, 50))
-    wts = [1 + sum(1 for it in dated if a <= it['year'] < a + 50) ** .85 for a in edges[:-1]]
+    # a floor of 8 per half-century keeps the sparse early centuries wide enough to show their few dots apart from the
+    # edge (the c. 1350 qaysarani1350 dot was pressed against the left end with the 13th-c. swords, 16 Nov 2026)
+    wts = [max(8, 1 + sum(1 for it in dated if a <= it['year'] < a + 50) ** .85) for a in edges[:-1]]
     acc = [0.0]
     for w in wts: acc.append(acc[-1] + w)
     def X(y):
@@ -148,7 +151,7 @@ def timeline_svg(items):
     for c in range(c0, 2001, 100):
         x = X(c)
         out.append(f'<line x1="{x:.1f}" y1="{base-4}" x2="{x:.1f}" y2="{base+4}" class="axis"/>')
-        if c == 2000 or X(c + 100) - x >= 26:              # a year that would run into the next one goes unlabelled
+        if c == 2000 or X(c + 100) - x >= 34:              # a year that would run into the next one goes unlabelled
             out.append(f'<text x="{x:.1f}" y="{base+18}" class="tick" text-anchor="middle">{c}</text>')
     out.append(f'<g class="cursor" aria-hidden="true"><line class="cur-line" x1="0" x2="0" y1="{top-2}" y2="{base}"/>'
                f'<rect class="cur-box" x="-19" y="{base+5}" width="38" height="17" rx="4"/><text class="cur-yr" x="0" y="{base+17.5}" text-anchor="middle"></text></g>')

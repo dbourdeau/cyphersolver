@@ -42,7 +42,7 @@ Small digits 6 and 4 written above some signs are the writer's; the decipherer c
 is open (code markers or nulls). Sample values: q a, m o, `o +` e, 3 c, T l, `o v` r, 4 n, ps h, A t, pi d, [] s, 8 o,
 y g, b t, x i/p. See `key_c42r.tsv`.
 
-The key does not match the Ferrante keys tested: `targets/ferrante1549` and `targets/ercole1544` (letter and syllable
+The key does not match the Ferrante keys tested: `targets/gonzaga1549/wainut` and `targets/ercole1544` (letter and syllable
 systems with other sign sets), the Bresegno 1548 key (consonant + vowel-digit) and Marignano 1546 (letter-shaped signs,
 other values: q, a, x, T differ).
 

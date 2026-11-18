@@ -1,0 +1,463 @@
+{
+ "2611": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The full ACTApro record (fetched by curl 16 Nov 2026) describes document 5 of the volume as Frederick II's cabinet order to Major von Zegelin at Constantinople, Potsdam 19 Nov 1775, 'zum größten Teil chiffriert (Dechiffrierung ist überschrieben)': the decipherment is written over the cipher on the leaf itself. Close as read. Record error: the piece is an order TO Zegelin from Frederick II, not a report from Zegelin.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 94 A, V, Nr. 26 (collection volume 'Auswärtiges', 1747-1775, five documents); no digital object; ACTApro says 'Unbestellbar bis 31.05.2029 (Magazininstandsetzung)'.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 94 A, V, Nr. 26, reached by a scripted search ('Zegelin') at https://archive.spk-berlin.de/actaproweb/search.xhtml and the hit's archive.xhtml?id= page, 16 Nov 2026 (research/vetting_2026-11-16_w20_b10/src/2611.txt). No image attached.",
+    "extent": "One document (Dokument 5) in a five-document collection volume: Frederick II to Zegelin, Potsdam, 19 November 1775, autograph signature (e. U.).",
+    "cipher": "Archive description, verbatim: 'In dem zum größten Teil chiffrierten Schreiben (Dechiffrierung ist überschrieben) äußert Friedrich II. seine Befriedigung darüber, dass es zum Frieden zwischen der Türkei und Persien kommen wird'. Not seen: not digitised."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 94 A' and 'Zegelin' (DECODE dumps, catalogue, leads, targets) 16 Nov 2026: only this lead; no DECODE record for Zegelin or this volume.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Zegelin, Prussia, Frederick: no hit for this letter (the only Prussia hit is the Frederick I transposition article).",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Zegelin and Prussia: no hit.",
+    "edition": "Not checked in the Politische Correspondenz (the 1775 volume was not opened); not needed, since the decipherment is written over the cipher on the original.",
+    "literature": "No web search made: the archive's own description records the interlinear decipherment, which decides the verdict."
+   },
+   "key_check": "No key for Frederick II's Constantinople cipher of 1775 is held in the repo; the overwritten decipherment would itself give one. Not tested.",
+   "duplicates": "known.py on the shelfmark and Zegelin: only this lead. Zegelin's own reports (Rep. 11 Akten Nr. 10653-10663, 1766-1775) are separate files, not leads.",
+   "verdict": "read",
+   "closed": "The archive records that the decipherment is written over the ciphered text of this single order, so the text was read at the time."
+  }
+ },
+ "2613": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The full ACTApro record of Rep. 64 Nr. 722 (fetched by curl 16 Nov 2026) lists 'Vermittlung durch Dunckel und Montmollin eines in Paris abgefangenen Briefes vom 11. Juli (entchiffrierte Abschrift), November 1710': the file holds a deciphered copy of the intercepted letter, and no ciphertext is named. Close as read. Record correction: the letter is of 11 July 1710 (not '1708/10'), on French pretensions and the intrigues of the Comte de Matignon's party in Neuchâtel.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 64, Nr. 722 (1708-1710); no digital object; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 64, Nr. 722, reached by a scripted search ('abgefangenen') at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (research/vetting_2026-11-16_w20_b10/src/2613.txt). No image attached.",
+    "extent": "One item in a large administrative file on the Valangin wine dispute and other Neuchâtel business, 1708-1710: a copy of a letter of 11 July 1710 intercepted at Paris, forwarded by Dunckel and Montmollin in November 1710.",
+    "cipher": "Archive description, verbatim: 'Französische Prätentionen und Intrigen ihrer Parteigänger (besonders die des Comte de Matignon) in Neuchâtel, Vermittlung durch Dunckel und Montmollin eines in Paris abgefangenen Briefes vom 11. Juli (entchiffrierte Abschrift), November 1710'. Only the deciphered copy is described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 64, Nr. 722' and 'Matignon' 16 Nov 2026: no hit for the shelfmark; the Matignon hits are the 1584 BnF fr. 15568 letter (another Matignon, another century).",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Neuchatel/Neuchâtel and Matignon: no hit for this letter.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Neuchatel and Matignon: no hit.",
+    "edition": "No edition searched: the archive itself records the deciphered copy as the piece filed.",
+    "literature": "Not searched beyond the archive record; the verdict rests on the 'entchiffrierte Abschrift' in the description."
+   },
+   "key_check": "No key for this intercepted French letter is held in the repo; none is needed to close it.",
+   "duplicates": "known.py and a grep of leads and catalogue: only this lead for Nr. 722. The Rep. 64 group leads 2495, 2496, 2497, 2586 are other volumes.",
+   "verdict": "read",
+   "closed": "The file holds the Prussian side's deciphered copy ('entchiffrierte Abschrift') of the intercepted letter, so its text was read in 1710; no ciphertext is described."
+  }
+ },
+ "2610": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "Rep. 400 Nr. 191 is a 1986 exhibition facsimile of HHStA Wien, StA Russland II Kart. 37 ff. 11-12; the report it reproduces, Esterhazy to Kaunitz, St Petersburg 6 April 1756, is printed in full in Volz and Küntzel, Preussische und österreichische Acten zur Vorgeschichte des Siebenjährigen Krieges (1899), Nr. 65, p. 304, 'Nach der Urschrift' (also Arneth IV 434 f.). Close as read.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 400, Nr. 191 (facsimile; original in HHStA Vienna); ACTApro: 'Unbestellbar bis 31.05.2029'. The printed text is online at archive.org (preussischeundst00volz).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "transcription",
+    "where": "Printed text: Volz and Küntzel (eds.), Preussische und österreichische Acten zur Vorgeschichte des Siebenjährigen Krieges, Leipzig 1899 (Publicationen aus den K. Preussischen Staatsarchiven 74), Nr. 65 'Esterhasy an Kaunitz. Petersburg, 6. April 1756. Nach der Urschrift', p. 304, read in the archive.org OCR (https://archive.org/download/preussischeundst00volz/preussischeundst00volz_djvu.txt) on 16 Nov 2026. ACTApro record of Rep. 400 Nr. 191 read the same day (src/2610.txt).",
+    "extent": "One dispatch of about a page and a half in print; the GStA item is a facsimile of HHStA StA Russland II Kart. 37 ff. 11-12.",
+    "cipher": "ACTApro: 'Bericht des österreichischen Botschafters Graf Esterhazy aus St. Petersburg, chiffriert, 6. April 1756 (Faksimile)'. The printed text gives the full German plaintext (the Tsarina's promise to take part in the war against Prussia with 80,000 men)."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 400' and 'Esterhazy' 16 Nov 2026: only catalogue esterhazy1744 (Moscow 1744 dispatches, a different text) and this lead.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Esterhazy: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Esterhazy: no hit.",
+    "edition": "Printed: Volz and Küntzel 1899, Nr. 65, p. 304, from the original (Urschrift), with references to Arneth, Geschichte Maria Theresias IV 434 f., Beer (HZ 27, 363) and Oncken II 31.",
+    "literature": "Web search (Esterhazy Bericht 6 April 1756, Volz Küntzel) found the edition and Khavanova's 2023 article on Esterházy in St Petersburg (Quaestio Rossica 11/4); the OCR of the edition confirmed the printed text."
+   },
+   "key_check": "The Vienna chancery cipher of 1756 for St Petersburg is not held in the repo; with a printed plaintext and the HHStA original the key could be rebuilt, but it is not needed to close the lead.",
+   "duplicates": "The GStA item is a facsimile of the HHStA original (StA Russland II Kart. 37 ff. 11-12), so it is a copy of a Vienna item, not a separate text. Not the same text as catalogue esterhazy1744.",
+   "verdict": "read",
+   "closed": "The dispatch reproduced in this facsimile is printed in full from the original in Volz and Küntzel 1899 (Nr. 65), so its text has long been read."
+  }
+ },
+ "2591": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Narrow to one letter: Frederick II to Lieutenant-General von Zieten, Lobendau, 27 Nov 1757 '(chiffriert)', in Rep. 94 Nr. 5745. The Politische Correspondenz vol. 16 (p. 34, note 3) says this letter (praes. 28 Nov at Gross-Osten) could not be printed because 'Der Chiffer ist nicht vorhanden, auch fehlen Dechiffré, Concept, Abschrift': no key, no decipherment, no draft. The other ciphered orders in the volume are read: Goltz 27 Nov 1760 is printed as PC Nr. 12548, and Goltz 10 Dec 1760 has its 'entschlüsselter Text' filed and is summarised in PC 20.",
+  "correct_shelfmark": "GStA PK, I. HA Rep. 94, Nr. 5745 (Frederick II to Zieten, Lobendau, 27 Nov 1757; old shelfmark Rep. 94 IV. L.c. Nr. 28)",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 94, Nr. 5745 (12 leaves); no digital object; ACTApro: 'Unbestellbar bis 31.05.2029 (Magazininstandsetzung)', so it cannot be ordered until then.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 94, Nr. 5745, reached by a scripted search ('Ziethen') at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (research/vetting_2026-11-16_w20_b10/src/2591.txt). No image attached. Edition: Politische Correspondenz Friedrichs des Großen vol. 16 (archive.org politischecorres16freduoft, OCR), p. 34 note 3, read the same day.",
+    "extent": "One letter in a 12-leaf collection of Frederick II's orders to commanders 1756-1763: 'An Generalleutnant von Ziethen. Lobendau, 27. Nov. 1757 (chiffriert)'. Length not stated.",
+    "cipher": "Archive description: '(chiffriert)', with no decipherment noted for this item, whereas the 10 Dec 1760 order in the same volume is marked 'z. T. chiffriert, dabei: entschlüsselter Text'. The PC editors (vol. 16, p. 34 n. 3) list 'ein Schreiben an Zieten, d. d. Lobendau 27. November' among letters left out because the cipher, the déchiffré, the draft and any copy were all missing."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 94, Nr. 5745', 'Ziethen', 'Zieten' and 'Lobendau' 16 Nov 2026: only this lead; no DECODE record. Catalogue 590 (Bevern/Schwerin ciphered orders, Nl Braunschweig-Bevern) is the nearest entry and does not include this letter.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Zieten/Ziethen, Frederick and Prussia: no hit for this letter.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Zieten/Ziethen and Prussia: no hit.",
+    "edition": "Politische Correspondenz vol. 16, p. 34, note 3 (to Nr. 9521, Frederick to Bevern, 15 Nov 1757): the Zieten letter of 27 Nov 1757 is not printed because no cipher key, decipherment, draft or copy was found. The Goltz orders in the same volume are printed or summarised (PC 20, Nr. 12548 and the note on 10 Dec 1760).",
+    "literature": "No later reading found: the PC note itself records the letter as unread by the editors; no web search turned up a decipherment of Frederick's November 1757 field cipher."
+   },
+   "key_check": "No key held. The same PC note names further letters of 15-25 Nov 1757 to Keith and Bevern in the same missing cipher (Nr. 9521, 9528), so the field cipher of the Leuthen campaign is the unknown; catalogue 590's Bevern material may share it. Not tested; nothing is online.",
+   "duplicates": "known.py on the shelfmark, correspondent and date: no other lead or entry holds this letter. The Ausfertigung the PC editors looked for (praes. 28 Nov at Gross-Osten) may be this very item; that is not checked.",
+   "verdict": "open"
+  }
+ },
+ "2601": {
+  "verdict": "key_lookup",
+  "confidence": "high",
+  "note": "Both ACTApro records (Rep. 96 Nr. 97 E 1, 212 leaves, Mar-Dec 1745; Nr. 97 F, Jan 1746-Mar 1747) list 'Dechiffrierungscodes, [1745]' among the topics of Leopold I of Anhalt-Dessau's correspondence and name no ciphered letter. A deciphering key without a named ciphertext: move to key_leads.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 96, Nr. 97 E 1 and Nr. 97 F; no digital objects; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full records of GStA PK, I. HA Rep. 96, Nr. 97 E 1 and Nr. 97 F, reached by a scripted search ('Dechiffrierungscode*', 2 hits) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (research/vetting_2026-11-16_w20_b10/src/2601.txt). No images.",
+    "extent": "Nr. 97 E 1: 212 leaves (regimental affairs, Magdeburg, fortresses, Saxon campaign Dec 1745); Nr. 97 F: 1 cm. Each lists 'Dechiffrierungscodes, [1745]' as one topic.",
+    "cipher": "Archive description, verbatim in both records: '- Dechiffrierungscodes, [1745].' No letter is described as ciphered and no ciphered passage is named."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 96, Nr. 97' and 'Anhalt-Dessau' 16 Nov 2026: no hit for the shelfmark; the only Anhalt-Dessau hit is the 1610 Johann Georg I key of targets/anhalt1610 (another prince, another century).",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Anhalt and Dessau: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Anhalt and Dessau: no hit.",
+    "edition": "Not searched in the Politische Correspondenz (vols. 4-5 print Frederick's letters to the Old Dessauer from the drafts); not needed, since no ciphertext is named in the file.",
+    "literature": "No web search made: the record names only the codes, which decides the classification."
+   },
+   "key_check": "The file itself holds the 1745 deciphering codes (key in the volume); they belong in key_leads.json and could serve Frederick II's 1745 ciphered orders elsewhere (Rep. 81 Dresden Nr. 781-791 with their French Auflösung, promoted lead 2599).",
+   "duplicates": "known.py and a grep of leads: only this lead for Nr. 97 E 1 / F; the sweep's key_leads.json Prussian foreign-service group does not list it.",
+   "verdict": "key_lookup",
+   "closed": "The two volumes are described as holding a deciphering code of 1745 and no ciphered letter, so they are a key record, not a cipher lead."
+  }
+ },
+ "2603": {
+  "verdict": "key_lookup",
+  "confidence": "high",
+  "note": "The ACTApro record of Rep. 96 Nr. 90 G (Schmettau, 1758-59) lists letters to Dohna and Wolffersdorff, Swedish prisoners, the capitulation of Dresden, Schmettau's Apologie and 'Geheimcodes (Chiffres) mit Schmettau, 1759': a code, no ciphered letter named. Key record.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 96, Nr. 90 G; no digital object; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 96, Nr. 90 G, reached by a scripted search ('Schmettau') at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (research/vetting_2026-11-16_w20_b10/src/2603.txt). No image.",
+    "extent": "One file 1758-1759 on Karl Christoph Graf von Schmettau, governor of Dresden; extent not stated.",
+    "cipher": "Archive description, verbatim: 'Geheimcodes (Chiffres) mit Schmettau, 1759.' No ciphered letter is described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 96, Nr. 90 G' and 'Schmettau' 16 Nov 2026: only this lead.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Schmettau: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Schmettau: no hit.",
+    "edition": "Not searched in the Politische Correspondenz vols. 17-18; not needed, since the file names only the code.",
+    "literature": "No web search made; the record decides the classification."
+   },
+   "key_check": "The 1759 cipher shared by Frederick II and Schmettau is in the file (key in the volume); belongs in key_leads.json, to be tried on Frederick's ciphered orders of 1759 to Dresden if any turn up.",
+   "duplicates": "known.py: only this lead. Not in the sweep's key_leads.json groups.",
+   "verdict": "key_lookup",
+   "closed": "The file holds the 1759 cipher codes for Schmettau and no ciphered letter is named, so it is a key record, not a cipher lead."
+  }
+ },
+ "2604": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "Rep. 96 Nr. 85 Oo (Dohna, 1756-59) lists only 'Kriegsberichte - Dechiffrierte Nachrichten': deciphered texts, no ciphertext named. EM 19 c3 Nr. 14 is 'Versiegeltes Paket mit Geheimschriften des Generalleutnant Graf von Dohna' (1757) in the Königsberg Etatsministerium deposit series beside Nr. 15 'Depositum der Gräfin von Lehndorff' and Nr. 17 'Versiegelte, geheime Schriften des Generalleutnant ...': a sealed deposit of secret papers, with no cipher described. Close: the cipher part is deciphered, the packet is not shown to be cipher.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 96, Nr. 85 Oo; XX. HA, EM, 19 c3, Nr. 14 (ACTApro: 'Vorlage nur als Mikrofilm/Digitalisat ... Archivale nicht vorlegbar (Magazininstandsetzung)'). No digital objects.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full records of GStA PK, I. HA Rep. 96, Nr. 85 Oo (search 'Dechiffrierte Nachrichten', 1 hit) and XX. HA, EM, 19 c3, Nr. 14 (search 'Geheimschriften', 2 hits), https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2604a.txt, src/2604b.txt). No images.",
+    "extent": "Rep. 96 Nr. 85 Oo: one file 1756-1759, war reports and deciphered news; extent not stated. EM 19 c3 Nr. 14: one sealed packet, 1757.",
+    "cipher": "Rep. 96 Nr. 85 Oo, verbatim: 'Enthält u. a.: - Kriegsberichte - Dechiffrierte Nachrichten.' EM 19 c3 Nr. 14, verbatim title: 'Versiegeltes Paket mit Geheimschriften des Generalleutnant Graf von Dohna'; no cipher, key or ciphertext is described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 96, Nr. 85' and 'Dohna' 16 Nov 2026: no hit for these files (the only Dohna hit is a 1658 Hungarian footnote in another entry).",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Dohna: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Dohna: no hit.",
+    "edition": "Not searched in the Politische Correspondenz; the file is described as holding deciphered news, which is the reading.",
+    "literature": "No web search made; the verdict rests on the archive's descriptions."
+   },
+   "key_check": "No key named in either file and none held in the repo for Dohna's 1756-59 correspondence.",
+   "duplicates": "known.py: only this lead. EM 19 c3 Nr. 17 ('Versiegelte, geheime Schriften des Generalleutnant ...', 1757-1763) is the sibling deposit and is not a lead.",
+   "verdict": "read",
+   "closed": "The Rep. 96 file holds deciphered news ('Dechiffrierte Nachrichten') with no ciphertext named, and the EM packet is a sealed deposit of secret papers with no cipher described, so neither is an open cipher."
+  }
+ },
+ "2607": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The ACTApro record of Rep. 11 Akten Nr. 10691 (1790; old shelfmark Rep. 11 Nr. 275 d Fasz. 64) is titled 'Schriftwechsel mit dem Oberst Graf [Spiridion] von Lusi (Abschriften und Dechiffrierungen)': copies and decipherments, no ciphertext named. Close as read. This also bears on lead 2501 (VI. HA FA Lusi Nr. 3, Lusi's ciphered reports of autumn 1790): the cabinet's decipherments of that correspondence are here.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 11 Akten, Nr. 10691; no digital object; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 11 Akten, Nr. 10691, reached by a scripted search ('Dechiffrierungen', 4 hits) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2607.txt). No image.",
+    "extent": "One file, 1790; extent not stated.",
+    "cipher": "Archive title, verbatim: 'Schriftwechsel mit dem Oberst Graf [Spiridion] von Lusi (Abschriften und Dechiffrierungen)'. Only copies and decipherments are described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Nr. 10691' and 'Lusi' 16 Nov 2026: no hit for the file; the Lusi hits are the Mniszech 1714 entry (another name) and lead 2501.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Lusi: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Lusi: the only hits are the substring in French 'plusieurs', none for the count.",
+    "edition": "No edition searched; the archive records the decipherments as the content of the file.",
+    "literature": "No web search made; the archive title decides the verdict."
+   },
+   "key_check": "No key named; with the ciphertexts in FA Lusi Nr. 3 (lead 2501) and these decipherments a key could be rebuilt, but it is not needed to close this file.",
+   "duplicates": "Plaintext side of lead 2501 (VI. HA FA Lusi Nr. 3, ciphered reports Aug-Nov 1790). Lead 2501 should be re-checked against this file before any promotion: a decipherment of the same reports exists.",
+   "verdict": "read",
+   "closed": "The file holds the cabinet's decipherments of the Lusi correspondence of 1790, so this text was read at the time."
+  }
+ },
+ "2620": {
+  "verdict": "duplicate",
+  "confidence": "high",
+  "note": "Nr. 3144 is the same file as lead 2506 (the 1798 'Versuch der Entzifferung eines in einem Ringe der revolutionären Polen stehenden Ralliementszeichens'); Nr. 3145 is 'Einige Schlüssel zu den im Schriftwechsel der revolutionären Polen verwendeten Chiffres', keys with no ciphertext named, which belongs in key_leads. Fold into 2506 and key_leads. Record error: Nr. 3144's old shelfmark is Rep. 7 C Nr. 14 m 1 a Fasz. 5; Fasz. 6 is Nr. 3145.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 7 C, Nr. 3144 and Nr. 3145; no digital objects; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full records of GStA PK, I. HA Rep. 7 C, Nr. 3144 (search 'Ringe') and Nr. 3145 (search 'Schlüssel zu'), https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2620.txt, src/2620b.txt). No images.",
+    "extent": "Two files of 1798, extent not stated; titles only, no contents notes.",
+    "cipher": "Nr. 3144 title: 'Versuch der Entzifferung eines in einem Ringe der revolutionären Polen stehenden Ralliementszeichens' (old Fasz. 5). Nr. 3145 title: 'Einige Schlüssel zu den im Schriftwechsel der revolutionären Polen verwendeten Chiffres' (old Fasz. 6). No ciphered letter is named in either."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 7 C' and 'revolution' 16 Nov 2026: only leads 2506 and 2620.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Polish revolutionaries / Poles 1798: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit for these files.",
+    "edition": "No edition searched; the records are titles only.",
+    "literature": "No web search made for the duplicate; see lead 2506 for the ring file."
+   },
+   "key_check": "Nr. 3145 holds 'some keys' to the ciphers in the revolutionary Poles' correspondence (key in the collection); record in key_leads.json, to be tried on Polish conspiratorial letters of 1797-98 in Rep. 7 C Nr. 3146-3158 if ciphered pieces are found there.",
+   "duplicates": "Nr. 3144 is lead 2506 (same file, same title); this lead adds only the key file Nr. 3145.",
+   "verdict": "duplicate",
+   "closed": "The ring-inscription file is already lead 2506 and the second file holds keys only, so this lead adds no new ciphertext."
+  }
+ },
+ "2506": {
+  "verdict": "not_cipher",
+  "confidence": "medium",
+  "note": "The ACTApro record of Rep. 7 C Nr. 3144 (1798; old Rep. 7 C Nr. 14 m 1 a Fasz. 5) gives the full title 'Versuch der Entzifferung eines in einem Ringe der revolutionären Polen stehenden Ralliementszeichens': an attempt to make out a rallying sign (a recognition emblem) engraved in a ring, not a ciphered letter or text. Close as not a cipher in the project's sense; the keys of the next file (Nr. 3145) go to key_leads.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 7 C, Nr. 3144; no digital object; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 7 C, Nr. 3144, reached by a scripted search ('Ringe') at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2620.txt). No image.",
+    "extent": "One file, 1798; extent not stated; title only.",
+    "cipher": "Archive title, verbatim: 'Versuch der Entzifferung eines in einem Ringe der revolutionären Polen stehenden Ralliementszeichens'. The object is a rallying sign in a ring; no ciphered letter is named."
+   },
+   "prior_art": {
+    "decode": "DECODE search noted 11 Nov 2026 found nothing; known.py on 'Rep. 7 C' and 'revolution' 16 Nov 2026: only leads 2506 and 2620.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Polish revolutionaries 1798 and ring: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026): no hit.",
+    "edition": "No edition searched: the record is a title only and describes an emblem.",
+    "literature": "No web search made; whether the 1798 attempt succeeded is not known, which does not change the classification."
+   },
+   "key_check": "The neighbouring file Nr. 3145 holds 'Einige Schlüssel' to the revolutionary Poles' ciphers (key in the collection; key_leads). Not tested.",
+   "duplicates": "Lead 2620 covers the same file plus Nr. 3145 and is proposed as a duplicate of this one.",
+   "verdict": "not_cipher",
+   "closed": "The file concerns a rallying sign engraved in a ring, an emblem rather than a ciphered text, so it is not a cipher lead; if the file shows otherwise it can be reopened."
+  }
+ },
+ "2609": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "The full ACTApro record of Rep. 96 Nr. 206 K (57 leaves, papers of Crown Prince Frederick William, 1770-1786) lists 'Verschlüsseltes Schreiben des Herrn Hohenfels, 15. Mai 1785 (Blatt 46-47)', two leaves, with no decipherment noted. Probably Christian von Hohenfels, the Palatinate-Zweibrücken privy councillor who corresponded with Hertzberg 1779-82 (Rep. 40 Nr. 520-523; Rep. 11 StV Nr. 642), in the Fürstenbund months; that identification is not checked. Low confidence because the leaves are not seen and a decipherment could be on them.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 96, Nr. 206 K, Bl. 46-47; no digital object; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 96, Nr. 206 K, reached by a scripted search ('Hohenfels', 87 hits) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (research/vetting_2026-11-16_w20_b10/src/2609.txt). No image.",
+    "extent": "One letter of two leaves (Blatt 46-47) in a 57-leaf file of the Crown Prince's correspondence and papers.",
+    "cipher": "Archive description, verbatim: '- Verschlüsseltes Schreiben des Herrn Hohenfels, 15. Mai 1785 (Blatt 46-47)'. No decipherment, translation or key is noted for it; neighbouring items are plain letters."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 96, Nr. 206 K' and 'Hohenfels' 16 Nov 2026: only this lead and its sweep row; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Hohenfels: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Hohenfels: no hit.",
+    "edition": "No printed text found: the Politische Correspondenz does not cover the Crown Prince's own papers, and no edition of Hohenfels's letters to Frederick William was found; Ranke's Die deutschen Mächte und der Fürstenbund was not opened.",
+    "literature": "Web search (Hohenfels Zweibrücken 1785 Kronprinz Friedrich Wilhelm chiffriert Fürstenbund) found only archive records of a Baron von Hohenfels in Saxon and Bavarian holdings, nothing on this letter or a decipherment."
+   },
+   "key_check": "No key named in the file and none held in the repo for Zweibrücken-Prussian correspondence of 1785. The Hertzberg-Hohenfels files (Rep. 40 Nr. 520-523, 1779-1782) might hold a shared cipher; not checked.",
+   "duplicates": "known.py on the shelfmark, Hohenfels and date: only this lead. Rep. 40 Nr. 520-523 (Hertzberg-Hohenfels correspondence 1779-82) are separate files with no cipher noted in the hit list.",
+   "verdict": "open"
+  }
+ },
+ "2498": {
+  "verdict": "read",
+  "confidence": "medium",
+  "note": "ACTApro re-read 16 Nov 2026: title only ('Chiffrierte Korrespondenz betr. den Gesandten [Gottfried Fabian] Haude unter dem Namen Karl Adolf von Rexin in Konstantinopel', 1761-62, old Rep. 11 Nr. 275 d Fasz. 20). The 11 Nov check of the Politische Correspondenz vols. 19-22 found Frederick's orders to Rexin printed from the drafts and Rexin's reports quoted from the contemporary déchiffrés ('das Déchiffré der Rexinschen ...'), so this correspondence was deciphered at the time and largely printed. Close as read; a single unprinted piece without its déchiffré cannot be excluded without the file.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 11 Akten, Nr. 10646; no digital object; reading room or scan order. The ordinary correspondence is Nr. 10647-10650.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 11 Akten, Nr. 10646, reached by a scripted search ('Rexin', 69 hits) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2498.txt); Politische Correspondenz vols. 19-22 (archive.org politischecorres19fred ... 22freduoft) as read on 11 Nov 2026 and recorded in the lead.",
+    "extent": "One file, 1761-1762; extent not stated; title only.",
+    "cipher": "Archive title: 'Chiffrierte Korrespondenz betr. den Gesandten ... Haude unter dem Namen Karl Adolf von Rexin in Konstantinopel'. The PC prints the king's orders to Rexin 'Nach dem Concept' (e.g. Nr. 13255, 26 Oct 1761) and cites Rexin's reports through their déchiffrés."
+   },
+   "prior_art": {
+    "decode": "DECODE search 'Rexin' 0 (11 Nov 2026); known.py on 'Rep. 11 Akten, Nr. 10646' and 'Rexin' 16 Nov 2026: only this lead.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Rexin and Haude: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Rexin and Haude: no hit.",
+    "edition": "Politische Correspondenz Friedrichs des Großen vols. 19-22 print the king's letters to Rexin from the drafts and quote his reports from the contemporary déchiffrés (checked 11 Nov 2026).",
+    "literature": "Not searched further: the edition shows the correspondence was deciphered and printed at the time; the Prussian-Ottoman negotiation of 1761-62 is a standard topic of the PC volumes."
+   },
+   "key_check": "No key held in the repo for the Rexin cipher of 1761-62; the PC's printed plaintexts against the ciphered originals would give it. Not tested.",
+   "duplicates": "known.py: only this lead. The ordinary correspondence with Haude/Rexin (Rep. 11 Akten Nr. 10647-10650) and Zegelin's reports (Nr. 10653 ff.) are separate files, not leads.",
+   "verdict": "read",
+   "closed": "The ciphered Rexin correspondence was deciphered at the time and its letters are printed or quoted in the Politische Correspondenz vols. 19-22 from the drafts and déchiffrés, so it is not an open cipher."
+  }
+ },
+ "2497": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict: the blocker recorded on 11 Nov stands. The ACTApro record of Rep. 64 Nr. 959 (re-fetched by curl 16 Nov 2026) still says only 'Reskripte an ... Adam Otto von Viereck und Berichterstattungen desselben (e.g. ff. 131, 167ff., 180, 185ff., 194-205, teils chiffriert; 212f.; 225f.), 1716 - 1717'. The volume is Sellentin's original legation collection, where ciphered rescripts are usually deciphered between the lines and reports are kept as clear drafts, so 'teils chiffriert' does not show an unread text. Needs ff. 194-205 seen.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 64, Nr. 959 (Sellentin's legation file 1714-1721); no digital object; reading room or scan order."
+ },
+ "2619": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No verdict. Both ACTApro records (re-fetched by curl 16 Nov 2026) are titles only: Rep. 77 Tit. 437 Nr. 6 'Dechiffrierung der von den Franzosen zu geheimen Korrespondenzen gebrauchten Chiffren', 1815-1833, no contents or extent; Nr. 6 Adh. (1810) is a printed book, 'Vollständiges System der Geheimlese und Geheim-Schreibekunst ... Trittheim', not a cipher. Whether Nr. 6 holds ciphertexts, keys or decipherments, and of which letters, is not stated; the title points to Prussian decipherments (read or partly read), but that needs the file. A web search found no description.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 77 (Ministerium des Innern), Tit. 437, Nr. 6 and Nr. 6 Adh.; no digital objects; reading room or scan order."
+ },
+ "2621": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "The ACTApro record of Rep. 81 Bern Nr. 93 (1833-34; old Rep. 81 Bern V Nr. 22) is titled 'Dechiffrierte Berichte des Geschäftsträgers von Olfers an den Staatsminister Ancillon': deciphered reports, with no ciphertext named. Close as read. Olfers's ordinary political reports are Nr. 96, 97, 99 (1834-35).",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 81 Bern, Nr. 93; no digital object; ACTApro: 'Unbestellbar bis 31.05.2029 (Magazininstandsetzung)'.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 81 Bern, Nr. 93, reached by a scripted search ('Dechiffrierte Berichte', 1 hit) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2621.txt). No image.",
+    "extent": "One file, 1833-1834; extent not stated; title only.",
+    "cipher": "Archive title, verbatim: 'Dechiffrierte Berichte des Geschäftsträgers von Olfers an den Staatsminister Ancillon'. Only the deciphered texts are described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 81' and 'Olfers' 16 Nov 2026: no hit for this file (the Rep. 81 hits are other legations: Dresden, Vatikan, Mainz).",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Olfers and Ancillon: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Olfers: no hit.",
+    "edition": "No edition searched: the file is the decipherment itself.",
+    "literature": "No web search made; the archive title decides the verdict."
+   },
+   "key_check": "The Bern legation key volume noted in the sweep's key_leads.json is not tested; not needed to close a file of decipherments.",
+   "duplicates": "known.py: only this lead. The ciphered originals, if they survive, would be in the ministry's Switzerland series (III. HA MdA), not checked.",
+   "verdict": "read",
+   "closed": "The file holds the deciphered texts of Olfers's reports, so they were read at the time; no ciphertext is described."
+  }
+ },
+ "2624": {
+  "verdict": "key_lookup",
+  "confidence": "high",
+  "note": "The full ACTApro record of Rep. 89 Nr. 666 ('Innen- und Außenpolitik, Bd. 1', 1890-1906) has, among some forty unrelated items, 'Regelung des geheimen Telegrammverkehrs und Chiffre zur geheimen Korrespondenz zwischen Wilhelm II. und Sultan Abdülhamid II. ... über dessen Ersten Sekretär des Palais, Tashin Bay, [nach dem Stand vom 26. November 1898]': the arrangement for the secret telegrams and the cipher, no ciphered telegram named. Key record.",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 89, Nr. 666; no digital object; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, I. HA Rep. 89, Nr. 666, reached by a scripted search ('Sultan', 97 hits) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2624.txt). No image.",
+    "extent": "One item in a miscellaneous volume of the Civil Cabinet, 1890-1906; extent of the cipher item not stated.",
+    "cipher": "Archive description, verbatim: 'Regelung des geheimen Telegrammverkehrs und Chiffre zur geheimen Korrespondenz zwischen Wilhelm II. und Sultan Abdülhamid II. (Yildiz-Palast / Konstantinopel ...) über dessen Ersten Sekretär des Palais, Tashin Bay, [nach dem Stand vom 26. November 1898]'. A cipher and its rules, no telegram text."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Rep. 89' and 'Sultan' 16 Nov 2026: no hit for this file; the Sultan hits are an Ottoman embassy entry and a Mabeyn telegram entry of other dates.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Sultan and Wilhelm II: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Sultan: no hit.",
+    "edition": "Not searched (Die Große Politik der europäischen Kabinette prints Wilhelm II-Abdülhamid exchanges in clear); not needed, since the file names only the cipher.",
+    "literature": "No web search made; the record decides the classification."
+   },
+   "key_check": "The cipher of 1898 for Wilhelm II's private telegrams to Abdülhamid via Tahsin Bey is in the volume (key in the volume); belongs in key_leads.json. It may serve ciphered telegrams in the Yıldız papers (BOA) or the Auswärtiges Amt files if any are found.",
+   "duplicates": "known.py: only this lead.",
+   "verdict": "key_lookup",
+   "closed": "The volume holds the 1898 cipher and the rules for the secret telegram traffic, with no ciphered telegram named, so it is a key record, not a cipher lead."
+  }
+ },
+ "2623": {
+  "verdict": "open",
+  "confidence": "low",
+  "note": "The full ACTApro record of V. HA Königreich Westphalen Nr. 461 (1810; old V. HA Rep. 1 B Russland Nr. 20) reads 'Postverkehr zwischen Russland und Westphalen. enth.: Postübermittlung durch den Gesandtschaftsangehörigen Lecaro von Berlin nach Petersburg; z.T. verschlüsselte Berichte', with no decipherment noted and the fonds' Chiffrierbuch (Nr. 541) as a held key. Low confidence: the finding aid is terse, these are reports received at Kassel where a decipherment is often interlined, and the file cannot be ordered until 31 May 2029. Best folded with lead 2502 (Westphalen Nr. 304 and 393, same key).",
+  "access": "archive",
+  "access_note": "GStA PK, V. HA, Königreich Westphalen, Nr. 461; no digital object; ACTApro: 'Unbestellbar bis 31.05.2029 (Magazininstandsetzung)'.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full record of GStA PK, V. HA, Königreich Westphalen, Nr. 461, reached by a scripted search ('verschlüsselte', 3 hits) at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2623.txt). No image.",
+    "extent": "One file of 1810 on the post between Russia and Westphalia; the number of ciphered reports and the folios are not stated.",
+    "cipher": "Archive description, verbatim: 'enth.: - Postübermittlung durch den Gesandtschaftsangehörigen Lecaro von Berlin nach Petersburg; - z.T. verschlüsselte Berichte.' No decipherment, translation or clear copy is noted."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Westphalen' 16 Nov 2026: no hit for Nr. 461 (the Westphalen hits are the Danish-Gottorp Westphalen/Holmer correspondence of 1713-44, another person); DECODE 'Westphalen' 0 (11 Nov 2026).",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Westphal/Westfal: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Westphal/Westfal: no hit.",
+    "edition": "No edition of the Westphalian legation reports from St Petersburg of 1810 is known to the project; none found.",
+    "literature": "No web search turned up these reports or a decipherment of them; the Kingdom of Westphalia's diplomatic ciphers have no published study known to the project."
+   },
+   "key_check": "Key in the collection: V. HA Königreich Westphalen Nr. 541, the Westphalian 'Chiffrierbuch (chiffre chiffrant et déchiffrant)', recorded in the sweep's key_leads.json; it does not block the lead. Not tested (nothing online).",
+   "key_held": "GStA PK, V. HA Königreich Westphalen Nr. 541 (Chiffrierbuch, chiffre chiffrant et déchiffrant), same fonds; not seen and not tested.",
+   "duplicates": "known.py and a grep of leads: lead 2502 (and its duplicate 2594) cover Westphalen Nr. 304 and 393, other files of the same fonds and probably the same key; Nr. 461 is not in them. Fold together before promotion.",
+   "verdict": "open"
+  }
+ },
+ "2586": {
+  "verdict": "duplicate",
+  "confidence": "medium",
+  "note": "All 22 volumes were checked: 14 are already in leads 2495 (Nr. 692-694, 707-710, 715, 717, 944, 995), 2496 (Nr. 935) and 2497 (Nr. 959). Of the other eight (records fetched by curl 16 Nov 2026), Nr. 945, 951 (Metternich's rescripts 1707-08) and 966 (Montmollin's letters 1709-11) are 'teilsweise chiffriert mit gleichzeitiger Entschlüsselung', so read; Nr. 732 has only 'chiffrierte Namen'. Close the group; the remaining pieces with no decipherment noted should become single-volume leads: Strünckede's partly ciphered reports of 1725 (Nr. 753 to the king; Nr. 799 to the General-Direktorium), J. L. Choupard's partly ciphered letters to Culeman (Nr. 760, 1727-28) and a partly ciphered memoir of 11 Feb 1709 (Nr. 718).",
+  "access": "archive",
+  "access_note": "GStA PK, I. HA Rep. 64, Nr. 692-995 as listed; no digital objects; reading room or scan order.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "ACTApro full records of GStA PK, I. HA Rep. 64, Nr. 718, 732, 753, 760, 799, 945, 951, 966, reached by a scripted search ('*chiffr*') at https://archive.spk-berlin.de/actaproweb/search.xhtml, 16 Nov 2026 (src/2586.txt); the other 14 volumes are recorded on leads 2495, 2496, 2497. No images.",
+    "extent": "22 volumes, 1690-1737. Cipher noted per volume: Nr. 945 and 951 royal rescripts 1707-08 'teilsweise chiffriert mit gleichzeitiger Entschlüsselung'; Nr. 966 Montmollin's letters 1709-11, same note; Nr. 718 one 'teils chiffrierte Denkschrift' of 11 Feb 1709; Nr. 732 'chiffrierte Namen, 16. Januar 1713'; Nr. 753 and 799 Strünckede's reports 1725 'teils chiffriert'; Nr. 760 Choupard 'teils chiffriert'.",
+    "cipher": "Archive descriptions as quoted in 'extent'. Three volumes record a contemporary decipherment ('mit gleichzeitiger Entschlüsselung'); four record cipher with no decipherment noted; one records only ciphered names."
+   },
+   "prior_art": {
+    "decode": "known.py on the fonds, numbers and correspondents (14 Nov 2026, repeated for Nr. 722 and names 16 Nov 2026): only leads 2494-2497 and this group; DECODE 'Montmollin' 0.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) searched for Neuchatel/Neuchâtel, Metternich-era Prussia and Strünckede: no hit.",
+    "lasry": "Lasry's GL.htm (fetched 15 Nov 2026) searched for Neuchatel and Prussia: no hit.",
+    "edition": "Not searched for the 1725 Strünckede reports; Bourgeois 1887 (cited on lead 2495) quotes the 1707-08 ciphered pieces by content, consistent with the contemporary decipherments noted in Nr. 945, 951 and 966.",
+    "literature": "No web search made for the group; the verdict rests on the overlaps and the archive's notes."
+   },
+   "key_check": "The 1703 key table in Nr. 944 (lead 2495) is the held key for the Metternich-era cipher; a new cipher for the secret correspondence is sent in Nr. 769 (1737). Neither tested; nothing online.",
+   "duplicates": "Nr. 692-694, 707-710, 715, 717, 944, 995 = lead 2495; Nr. 935 = lead 2496; Nr. 959 = lead 2497. The rest are split out in the note.",
+   "verdict": "duplicate",
+   "closed": "Most volumes of this group are already leads 2495-2497 and three of the rest carry contemporary decipherments; the four pieces with no decipherment noted are listed for single-volume leads instead of this group."
+  }
+ }
+}

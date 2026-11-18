@@ -16,7 +16,7 @@ prelates took time to communicate this business to their congregation of the cle
 notwithstanding the offices I had first made in private and the promises made to me — there were many disputes and
 much division; because, although all in general praised the publication of the Council, nevertheless [f. 189v] each
 one, coming down to consider his own particular interest, found great and unbearable difficulties. First, the chapters
-said they did not want to lose their privileges of being [exempt] from their bishops; and because these are more than
+said they did not want to lose their privileges of being exempt from their bishops; and because these are more than
 eighty in number and the bishops no more than twenty, [and] to try to appease them, many of those bishops offered to
 ask His Holiness, jointly with the chapters, to preserve their exemptions. Others will not hear of it, saying it was an
 impertinent thing that the bishop could not correct the vices and abuses of his canons, and that, [this] disorder
@@ -75,11 +75,11 @@ knew very well what my orders were, and that if the King believed this was my ow
 Holiness, because if I had exceeded my commission I would have received the reprimand I deserved. This is what has been
 done so far, from which Your Most Illustrious Lordship can see that it will be very difficult, and perhaps impossible,
 to win this point, that the Council be received without any condition, since neither the King nor the Estates will
-hear of it, and those who ought most to work for it, namely those of the clergy, make [more] difficulty than the
+hear of it, and those who ought most to work for it, namely those of the clergy, make more difficulty than the
 others. Therefore I beg Your Most Illustrious Lordship to do me the favour of ordering me distinctly and decisively what
 I am to do, without leaving anything to my judgment, because I confess I would not know what course to take, it seeming
 to me very reasonable that the Council be published and freely received, and on the other hand very dangerous if they
 persisted in their first intention to proceed to some […] [f. 192v] […] general congregation of the Estates of the whole
 kingdom. So I shall go on with the same offices, trying by skilful means to gain more than […] on this point, and […]
 can be carried, I shall temporise until I can have light from Your Most Illustrious Lordship on [what] I am to do to
-satisfy fully […] the will and desire of His Holiness. […]
+satisfy fully […] the will and desire of His Holiness. [… 5]

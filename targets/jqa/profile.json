@@ -353,6 +353,18 @@
    "kind": "verification",
    "what": "Integration check of PR #596: we028_measure.py re-run (1,742 pairs, 0.932, shuffled maximum 0.044; with exact matches only 1,528 of 1,742 = 0.877; 423 distinct codes); an own decoder from the sheet CSV gives every sheet value of we028_no88.tsv (390 rows: 369 sure, 15 probable, 3 restored, 3 unresolved); frame 0207 fetched from the National Archives Catalog and lines 8-12 and 14-17 of the remainder compared (about 95 groups agree with rem88.txt apart from the two corrections, 262 and 649, which are right on the image). Strict rule applied to the two readings: remainder 161 of 177 sure words = 0.910, nine lines 95 of 99 = 0.960. The class change to read proposed by the PR is not applied: the remainder is under 95% when probable and restored words are holes. rem88.txt, code_table.tsv and overrides.tsv still carry 252 and 549.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Image check of the seven groups one digit away from the sheet value the sense wants (proposed by Brice Dudout, PR #596). Frames 0206 and 0207 fetched again from the National Archives Catalog (NAID 188725601) and each group enlarged. 1864: the image reads 1864 (closed 8; wanted 1364 tain). 669: reads 669 (wanted 569 to). 588: 5, a one-loop digit that is 6 or 8, 8 (wanted 568 tle). 508: reads 508 (wanted 518 ect). 818: first digit with a closed lower loop, 8 likelier than a blotted 5 (wanted 518 ect). 1575: reads 1575 (wanted 1515 adv). 1585: third digit overwritten, not told (wanted 1535 al), and the word lacks ex. No misreading of ours among them; the slips are the writer's. New: the left leaf of 0206 runs into the gutter, and the stroke of a further group follows 908 (Chancellor's ... and advice); counted as one lost word. rem88.txt (262, 649), pairs_jqa.txt, overrides.tsv and code_table.tsv (252 str, 549 min, 927 pire, thither withdrawn) brought into line with the sheet.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "One-digit rule applied (owner's decision of 14 Nov 2026, README Conventions: surviving period key, one digit changed, inside a word whose other groups are read from the key). Key: the M97 roll 13 sheet. Read under the rule: certainly (1864), battle (588/568), directly (508), expectation (818), advice (1575). Not covered: to (669, a whole word), Alexander (1585, digit not legible and the word incomplete). Recount in words: remainder 164 of 177 = 0.927 (was 0.910), nine lines 97 of 100 = 0.970 (was 95 of 99 = 0.960). The remainder stays under 95%, held back by six words on gutter-cut groups: class read in part kept.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -395,7 +407,7 @@
   "class": "read in part",
   "key": "partial",
   "fraction_read_method": "measured",
-  "fraction_read_source": "python measure.py (22 Sept 2026, third pass): 380 of 390 code groups of No. 88 read as sense = 0.974 (gap88 133/133 = 1.000, rem88 247/257 = 0.961; the 7 gutter-cut groups counted unread); 382/390 valued; 362/390 = 0.928 without the grade-I values. JQA's copying slips 1112 1433 read as intended (im-pa-ir-ed) per his catchword 1102 and No. 83's un-im-pa-ir-ed (sense88.tsv header). Second pass: 355/390 = 0.910. 14 Nov 2026, with the M97 code sheet (we028_no88.tsv): 384 of 390 groups sure or probable (0.985); words: remainder 172/177 = 0.972, gap 98/99 = 0.990.",
+  "fraction_read_source": "python measure.py (22 Sept 2026, third pass): 380 of 390 code groups of No. 88 read as sense = 0.974 (gap88 133/133 = 1.000, rem88 247/257 = 0.961; the 7 gutter-cut groups counted unread); 382/390 valued; 362/390 = 0.928 without the grade-I values. JQA's copying slips 1112 1433 read as intended (im-pa-ir-ed) per his catchword 1102 and No. 83's un-im-pa-ir-ed (sense88.tsv header). Second pass: 355/390 = 0.910. 14 Nov 2026, with the M97 code sheet (we028_no88.tsv): 384 of 390 groups sure or probable (0.985); words: remainder 172/177 = 0.972, gap 98/99 = 0.990. Image check of 14 Nov 2026 with the one-digit rule (README Conventions): words, remainder 164/177 = 0.927, nine lines 97/100 = 0.970. python measure.py after the files were brought into line with the sheet: 379 of 390 groups (927 has no value).",
   "fraction_read": 0.974,
   "codes_open": {
    "open": 3,
@@ -416,6 +428,18 @@
   ],
   "gaps": [
    {
+    "item": "gap88 l.1 1585 (Alexander): third digit overwritten on the film; the word as written lacks ex (289) unless the stroke cut by the gutter after it is that group",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "gap88 l.2: a group cut by the gutter after 908 with the plural mark (Chancellor's ... and advice), not in gap88.txt",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "rem88 l.6 669 where 569 to is wanted: a one-digit slip on the image, but a whole word, not covered by the one-digit rule",
+    "blocker": "needs-physical-access"
+   },
+   {
     "item": "rem88 gutter-cut groups (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx): six read from their visible digits with the M97 sheet and the sense; 55x only restored ([thus], 558)",
     "blocker": "needs-physical-access"
    },
@@ -432,7 +456,7 @@
     "blocker": "no-key-material"
    }
   ],
-  "notes": "22 Sept 2026, third pass: the code table grew from 962 to 1,070 numbers with the clerk decodes on 0047, 0048, 0210-0211, 0247 and eight 1811-1812 despatches aligned with Ford (No. 95 against the Department's clear copy); No. 88 re-read against the image a third time (792, 1061, 588, 1384 corrected). 0.910 -> 0.974: meets the read bar; both parts of the letter (Ford's nine lines 0.970, the remainder 0.957) read. Grades counted over the 375 sense groups by measure.py. 22 Sept 2026: code rebuilt from eight more clerk-decoded frames and 39 Ford-aligned 1811 blocks; No. 88 re-read and measured for sense. Below the 95% read bar overall (0.910), so read in part; Ford's nine lines alone reach 0.955 counting grade-I values (0.895 without). More interlinear pages remain on reel 3 (0047, 0056-57, 0211, 0228-29, 0233, 0247) and Ford prints the 1812 decipherments; these are the route to the open groups. Model ids: claude-opus-5 (18 Sept), claude-opus-5-5 (22 Sept). outcome.grades counts the 355 No. 88 groups read as sense (gap 101 H 7 C 11 M 8 I; remainder 184 H 17 C 16 M 11 I).",
+  "notes": "14 Nov 2026, image check: the seven one-digit groups Brice Dudout proposed to correct were looked at on frames 0206-0207; by the one-digit rule (owner's decision of 14 Nov 2026, README Conventions) five count as read, 669 (a whole word) and 1585 (digit overwritten, word incomplete) stay holes. Remainder 0.927, nine lines 0.970: read in part kept, the remainder is under 95%. 22 Sept 2026, third pass: the code table grew from 962 to 1,070 numbers with the clerk decodes on 0047, 0048, 0210-0211, 0247 and eight 1811-1812 despatches aligned with Ford (No. 95 against the Department's clear copy); No. 88 re-read against the image a third time (792, 1061, 588, 1384 corrected). 0.910 -> 0.974: meets the read bar; both parts of the letter (Ford's nine lines 0.970, the remainder 0.957) read. Grades counted over the 375 sense groups by measure.py. 22 Sept 2026: code rebuilt from eight more clerk-decoded frames and 39 Ford-aligned 1811 blocks; No. 88 re-read and measured for sense. Below the 95% read bar overall (0.910), so read in part; Ford's nine lines alone reach 0.955 counting grade-I values (0.895 without). More interlinear pages remain on reel 3 (0047, 0056-57, 0211, 0228-29, 0233, 0247) and Ford prints the 1812 decipherments; these are the route to the open groups. Model ids: claude-opus-5 (18 Sept), claude-opus-5-5 (22 Sept). outcome.grades counts the 355 No. 88 groups read as sense (gap 101 H 7 C 11 M 8 I; remainder 184 H 17 C 16 M 11 I).",
   "credits": [
    {
     "who": "contemporary",
@@ -456,7 +480,7 @@
    {
     "who": "dudout",
     "role": "verification",
-    "note": "14 Nov 2026: the M97 roll 13 code sheet (WE028) checked against the clerk decodes (0.932, shuffled max 0.044) and applied to No. 88; two digits corrected on the image; remainder 0.938 -> 0.972 of words by his count (0.910 by the strict count)",
+    "note": "14 Nov 2026: the M97 roll 13 code sheet (WE028) checked against the clerk decodes (0.932, shuffled max 0.044) and applied to No. 88; two digits corrected on the image; remainder 0.938 -> 0.972 of words by his count (0.910 by the strict count); he proposed the seven one-digit corrections that were then checked on the film here (five count as read under the one-digit rule)",
     "date": "2026-11-14"
    },
    {
@@ -481,8 +505,8 @@
     "language": "en",
     "reading": "texts/no88_gap_reading.md",
     "state": "read",
-    "read_share": 0.96,
-    "note": "14 Nov 2026: with the M97 code sheet, 98 of 99 words by Brice Dudout's count (0.990); 'thither' (grade I) withdrawn, 1398 is thirty on the sheet, the word is restored as [there]. Strict count: the three words on one-digit slips (expectation, advice, Alexander) and [there] are holes, 95 of 99 = 0.960; impaired is kept as read on the evidence of the catchword 1102."
+    "read_share": 0.97,
+    "note": "14 Nov 2026: with the M97 code sheet, 98 of 99 words by Brice Dudout's count (0.990); 'thither' (grade I) withdrawn, 1398 is thirty on the sheet, the word is restored as [there]. Strict count: the three words on one-digit slips (expectation, advice, Alexander) and [there] are holes, 95 of 99 = 0.960; impaired is kept as read on the evidence of the catchword 1102. Image check and one-digit rule, 14 Nov 2026: 818 (exp-ect-ation) and 1575 (adv-ice) are one-digit slips inside words read from the surviving sheet and count as read; 1585 (Alexander) has an overwritten digit and lacks ex, a hole; a group cut by the gutter after Chancellor's is counted as one lost word. 97 of 100 words = 0.970 (97 of 99 = 0.980 without the lost word)."
    },
    {
     "doc": "no88-remainder",
@@ -499,8 +523,8 @@
     "language": "en",
     "reading": "texts/no88_remainder_reading.md",
     "state": "read in part",
-    "read_share": 0.91,
-    "note": "14 Nov 2026, with the M97 code sheet: 177 words, 161 sure, 11 probable, 2 restored, 3 unresolved (1508, 1185, 570). Brice Dudout's count takes sure and probable as read: 172 of 177 = 0.972. By the strict rule of this project only the sure words count: 161 of 177 = 0.910 (the v10 tool gives 0.905, since it also counts the marker of the clear passage); under the 95% bar, so read in part. It was 0.938 on 24 Oct 2026, when the words on gutter-cut groups and one-digit slips were not marked."
+    "read_share": 0.927,
+    "note": "14 Nov 2026, with the M97 code sheet: 177 words, 161 sure, 11 probable, 2 restored, 3 unresolved (1508, 1185, 570). Brice Dudout's count takes sure and probable as read: 172 of 177 = 0.972. By the strict rule of this project only the sure words count: 161 of 177 = 0.910 (the v10 tool gives 0.905, since it also counts the marker of the clear passage); under the 95% bar, so read in part. It was 0.938 on 24 Oct 2026, when the words on gutter-cut groups and one-digit slips were not marked. Image check and one-digit rule, 14 Nov 2026: certainly (1864 for 1364), battle (588 or 568) and directly (508 for 518) count as read; to (669 for 569) is a whole word and stays a hole. 164 of 177 = 0.927, still under 95%: read in part."
    }
   ],
   "key_file": "code_table.tsv"

@@ -30,3 +30,7 @@
   null ".bro" reads "de" (b o) in c24; 16 = vostre.
 - Left: c18 end (about 10 signs after "qu'il ne"), c24 one word after "luy", c25 the word before "l'alliance", c26
   the word before "amy". No contemporary text exists to settle them.
+
+Holes counted by words (14 Nov 2026, README Conventions): the hole marks of this letter keep no size. This log does not
+record how many words stand under them (extent unknown), so each counts as one unread word; the letter is read in
+part either way (NOTES.md, head).

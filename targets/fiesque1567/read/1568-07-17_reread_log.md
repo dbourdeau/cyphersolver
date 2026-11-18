@@ -18,3 +18,7 @@ Before: state read for f. 79r only (contributor's READING.en.md, audit grade B);
 - f. 79v c01-c03 checked: "jour" confirmed; "que ne me [?…] estimé en sorte [?…]" and "ce que j'en [?…]" not settled
   (sign groups "vd a ɥ ʊ", "t o ⊣ // ʒ" fit no word with the key's values).
 - f. 80 c01 "J'ay [?…]" ("o T t a 4 C o ɥ ʒ") and c08 "de [ϖ] [?…]" checked on the image, not settled.
+
+Holes counted by words (14 Nov 2026, README Conventions): the hole marks of this letter keep no size. This log does not
+record how many words stand under them (extent unknown), so each counts as one unread word; the letter is read in
+part either way (NOTES.md, head).

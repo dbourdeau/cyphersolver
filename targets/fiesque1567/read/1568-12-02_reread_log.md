@@ -34,3 +34,8 @@ codes, which an image check would not settle).
   withdrawn). c18 the "[?et]" stands where the null "Il ti ol" is written after [=ii]; the following groups ("△a ı8 v C
   ‖ ⊣ ϖ") are not resolved, left. v129r c10 "ce [?secours]": the figures are "T ꝑ a" (s u e), left. c06 v130l "ayde a
   autre […]": "4o7aTʊ‖ʒʊ" (b e ll e s t a n t), no word, left.
+
+## Holes counted by words (14 Nov 2026)
+
+Owner decision of 14 Nov 2026: the read share counts holes by words; a mark with a number is that many unread words
+(README Conventions). v130l c06 "ayde a autre [… 6]": the decode has six fragments there ("bellestant du m que du ii"), counted as six unread words (an estimate: the fragments are not settled words). Read share 0.953 by marks (466 words, 23 holes) -> 0.943 by words (28 holes): under the 95% bar, the letter is read in part.

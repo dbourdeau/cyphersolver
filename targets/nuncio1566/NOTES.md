@@ -26,7 +26,7 @@ Catalogue item 261 (class B), listed as "Unknown sender (Spain) to unknown recip
 ASV (AAV), Segreteria di Stato, Spagna 1 (DECODE: "i. 1025, Segretario di Stato, doss. I"), DECODE R85–R90.
 
 **Result (21 Sept 2026): read.** All six ciphertexts read end to end with George Lasry's reconstructed key, the
-same key that read Alessandrino's 1568–69 letters ([alessandrino1568](../alessandrino1568/NOTES.md)).
+same key that read Alessandrino's 1567–69 letters ([alessandrino1568](../alessandrino1568/NOTES.md)).
 
 ## Who, when
 

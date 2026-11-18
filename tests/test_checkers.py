@@ -354,6 +354,35 @@ class SuppliedMarkers(unittest.TestCase):
         self.assertEqual(self.h('actuellemen{+t} pro{-u}c {+s}se').split(), ['actuellement', 'proc', 'sse'])
 
 
+class SizedHoles(unittest.TestCase):
+    """README Conventions, "Holes are counted by words" (14 Nov 2026): a sized mark is n holes, a bare mark is one."""
+    def setUp(self):
+        sys.path.insert(0, str(ROOT / 'research' / 'reading_audit')); sys.path.insert(0, str(ROOT / 'docs'))
+        import v2_score, v10_relabel
+        self.n = lambda s: v2_score.holes(s).count('[?]')
+        self.share = v10_relabel.share
+
+    def test_bare_marks_are_one_hole(self):
+        for s in ('a [...] b', 'a [?] b', 'a {?} b', 'a […] b', 'a [..1] b', 'a [?100] b', 'a [..] b'):
+            self.assertEqual(self.n(s), 1, s)
+
+    def test_sized_marks_count_their_words(self):
+        for s, n in (('a [... 4] b', 4), ('a [… 4] b', 4), ('a {... 3} b', 3), ('a [... 1] b', 1), ('a [... 3 words] b', 3),
+                     ('a [3 groups] b', 3), ('a [2 unread] b', 2), ('a [?2 groups, 5 letters] b', 2),
+                     ('a [name, 9 groups unresolved] b', 9), ('a [... about 6] b', 6)):
+            self.assertEqual(self.n(s), n, s)
+
+    def test_letters_signs_and_markers_give_no_size(self):
+        for s, n in (('a [?4 letters] b', 1), ('a [2 signs] b', 1), ('a [... 16 figures] b', 1), ('a [l. 12] b', 0),
+                     ('a [f. 79v] b', 0), ('a [SUA MAESTA] b', 0)):
+            self.assertEqual(self.n(s), n, s)
+
+    def test_share_falls_with_the_size(self):
+        words = ' '.join(['mot'] * 95)
+        self.assertEqual(self.share(words + ' [...] [...] [...] [...] [...]'), (95, 5, 0))
+        self.assertEqual(self.share(words + ' [...] [...] [...] [...] [... 3]'), (95, 7, 0))
+
+
 class CatalogueClaims(unittest.TestCase):
     """research/SWEEP.md, "Claiming a catalogue entry you did not find": 14 days, 3 live, never over a finder's hold."""
     def setUp(self):

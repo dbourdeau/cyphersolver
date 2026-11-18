@@ -1,0 +1,26 @@
+BLIND TRANSCRIPTION BRIEF (letter_fr252)
+
+What you have: LASA A 1 Nr. 530, frame 252 (right page): a letter in clear German with cipher and symbols in its first paragraph.
+Images in this folder: fr0252_right.jpg. Open nothing else. Do not search the web, open any repository, key, earlier
+transcription or decode, and do not try to decipher, guess plaintext or use language knowledge to choose a label.
+You are a copyist of shapes, not a reader.
+
+Task: transcribe every cipher token on these images using ONLY the labels and conventions in SHEET.md.
+
+Write one file, BLIND.tsv, tab-separated, UTF-8, with this header line and one row per cipher token:
+
+image	line	tokens	clear_word_before
+
+- image: the file name the token is on.
+- line: the line number on that image, counting every written line from the top of the page (clear lines too), 1, 2, 3 ...
+  Lines in a margin: prefix M (M1, M2 ...).
+- tokens: one cipher word (a run of cipher signs between spaces) written in labels, e.g. `abcd`, `{S:triangle}`,
+  `ab[g|q]cd`. One cipher word per row, in reading order.
+- clear_word_before: the last clear (non-cipher) word that stands before this cipher word on the page, copied as you
+  see it; `-` if the cipher word directly follows another cipher word; `^` if it starts the page or an item.
+
+Then:
+- At the end add comment lines starting with `#`: `# symbols: ...` (see SHEET.md section 2), `# doubts: ...` (the
+  lines you are least sure of), and `# finished_utc: <time from date -u>`.
+- Do not revise BLIND.tsv after you have written the finished line. If you must, write BLIND_v2.tsv and keep v1.
+- Zoom into the images as far as you need; work line by line; count the signs of each word twice where the hand is cramped.

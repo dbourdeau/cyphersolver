@@ -1,0 +1,405 @@
+{
+ "2113": {
+  "verdict": null,
+  "confidence": "-",
+  "access": "archive",
+  "note": "Not assessable from here: the Beinecke finding aid (GEN MSS MISC, ead-pdfs.library.yale.edu/946.pdf, p. 1009, fetched by curl 16 Nov 2026) confirms 'b. 30, f. GROUP 577, F-47 Notes on works of Bible commentators 1 item ([2] leaves); 32 cm. Unidentified AM written in an unidentified hand, mostly in cipher. Accession: . n.d.', but no image is online and English notes on Bible commentators are far more often in shorthand than in cipher, so the description alone cannot carry an open verdict.",
+  "access_note": "Beinecke reading room, box 30 (the lead does not give the box). Yale Digital Collections answers curl with an empty HTTP 202 (bot challenge) on 16 Nov 2026, as recorded on 11 Nov; needs a Beinecke image of either leaf to tell shorthand from cipher.",
+  "correct_shelfmark": "Beinecke, GEN MSS MISC, box 30, folder GROUP 577, F-47"
+ },
+ "2106": {
+  "verdict": null,
+  "confidence": "-",
+  "access": "archive",
+  "note": "Not assessable from here: the ArchiveGrid record (702176381) returns a Cloudflare block page (HTTP 403) to curl on 16 Nov 2026, Yale Quicksearch and Digital Collections give 404 / empty 202 to scripts, and one web search (Streynsham Master Croston letterbook Osborn) found nothing on the letterbook. The only evidence remains the catalogue phrase 'some appear in code' (Osborn c491, per the 11 Nov check), which does not separate cipher from the shorthand common in English clerical letterbooks of the 1720s-30s.",
+  "access_note": "Beinecke Osborn c491 (Library Shelving Facility); no leaf online. Needs a Beinecke image of an 'in code' extract or the full Orbis record read in a browser."
+ },
+ "2513": {
+  "verdict": "open",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "The editor of Urkunden und Actenstücke XII (1892), working from the Berlin files, says the full relation of Brandt's audience of 8/18 Oct 1666 'ist fast ganz in Chiffern geschrieben und nicht dechiffriert' (p. 637 n. 1, verified in the archive.org full text 16 Nov 2026); no decipherment or later printing was found in DECODE, Tomokiyo, Lasry or a web search. The GStA unit is not identified, so a scan order still needs the unit number.",
+  "access_note": "GStA PK Berlin, I. HA Rep. 11 (England), Brandt's mission 1666; unit number not found (ACTApro search needs a browser). Not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm von Brandenburg XII (ed. F. Brode, 1892), p. 637 n. 1, read in the archive.org OCR (urkundenundacten12berluoft_djvu.txt, downloaded 16 Nov 2026). The GStA PK archive database (archive.spk-berlin.de, ACTApro) needs a browser session for its search (recorded in research/vetting_2026-11-14_gsta_deep/README.md) and was not searched; no image of any Brandenburg relation of this mission is online.",
+    "extent": "One relation of 8/18 October 1666 from London on Brandt's audience with Charles II, described as almost wholly in cipher; length in leaves not given. A short clear relation of the same day is printed in the volume.",
+    "cipher": "Editor's description, verbatim (p. 637 n. 1): 'Die ausführliche Relation über diese Audienz vom 8./18. October ist fast ganz in Chiffern geschrieben und nicht dechiffriert.' The editor saw the file and found no decipherment with it; the cipher system is not described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Brandt', 'Brandenburg', 'Frederick William', 'Friedrich Wilhelm': no DECODE record, catalogue entry or target for Brandt's 1666 London relation; the hits are unrelated (Hiltebrandt, Vosbergen and Brandt 1627-28, Brandenburg-Kulmbach 1631 and others).",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Brandt, Brandenburg, Frederick William and Friedrich Wilhelm: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Brandt, Brandenburg, Frederick William and Friedrich Wilhelm: no hit.",
+    "edition": "UA XII prints only the short clear relation of the same day and says the long one is not deciphered; Pufendorf X § 21 p. 659, which the editor cites, is a narrative of the audience, not a text of the relation. No later edition of the relation was found.",
+    "literature": "One web search (Christoph von Brandt 1666 Relation Audienz Karl II Chiffren dechiffriert) found the Deutsche Biographie entry for Brandt (1630-1691) and a list of his 1661-64 England letters, nothing on a decipherment of the 1666 relation."
+   },
+   "key_check": "No Brandenburg diplomatic cipher of the 1660s is held in this repository or found on DECODE; other relations in UA IX and XII are printed with the cipher resolved, so the chancery's key existed, but it is not known to survive. Not a key lookup.",
+   "duplicates": "known.py on Brandt, Brandenburg and the GStA Rep. 11 shelfmark: the other Rep. 11 lead (Nr. 10646, 18th century) is a different file; no catalogue entry, lead or DECODE record covers this relation. Sibling leads from the same printed sweep (2514 Hoverbeck 1662, 2515 Nassau/Weiman 1661) are different letters and files.",
+   "verdict": "open"
+  }
+ },
+ "2514": {
+  "verdict": "open",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "UA IX p. 352 (verified in the archive.org full text 16 Nov 2026) heads the Elector's answer of 28 May/7 Jun 1662 'Auf die Relation vom 26. Mai ... meist unaufgelöste Chiffern': the editor found Hoverbeck's relation mostly in cipher with no resolution in the file; nothing in DECODE, Tomokiyo, Lasry or a web search reads it. The GStA unit is not identified.",
+  "access_note": "GStA PK Berlin, I. HA Rep. 9 (Polen), Hoverbeck 1662; unit number not found (ACTApro search needs a browser). Not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Urkunden und Actenstücke IX (ed. T. Hirsch, 1879), p. 352, read in the archive.org OCR (urkundenundacten09berluoft_djvu.txt, downloaded 16 Nov 2026); also pp. 330-331 and 351 ('Mehrere Zeilen unaufgelöster Chiffern', '[unaufgelöste Chiffern]') in earlier Hoverbeck relations of spring 1662. The GStA PK archive database (archive.spk-berlin.de, ACTApro) needs a browser session for its search (recorded in research/vetting_2026-11-14_gsta_deep/README.md) and was not searched; no image of any Brandenburg relation of this mission is online.",
+    "extent": "One relation of 26 May 1662 from Warsaw, described as mostly cipher; length not given. Shorter unresolved passages of several lines sit in Hoverbeck's relations printed at pp. 330-331 and 351.",
+    "cipher": "Editor's description, verbatim (p. 352, heading of 'Der Kurfürst an v. Hoverbeck. Datum Cöln a./Spr. 28. Mai/7. Juni 1662'): '(Auf die Relation vom 26. Mai ... meist unaufgelöste Chiffern.)' The editor worked from the file and found the cipher unresolved; the system is not described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Hoverbeck' and 'Rep. 9': no DECODE record, catalogue entry or target; only this lead and the 11 Nov printed-series sweep rows.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Hoverbeck and Rep. 9: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Hoverbeck and Rep. 9: no hit.",
+    "edition": "UA IX prints Hoverbeck's other relations with the cipher resolved but not this one, of which it gives only the Elector's answer; no other edition of Hoverbeck's 1662 relations was found.",
+    "literature": "One web search (Hoverbeck Relation 1662 Chiffren Warschau Lauenburg Bütow) found the Wikipedia biography and a 1911 school programme on Lauenburg-Bütow, nothing on a decipherment."
+   },
+   "key_check": "Hoverbeck's cipher is resolved in other relations printed in UA IX, so a chancery key existed in 1662, but no Brandenburg-Poland key of the 1660s is held in this repository or on DECODE. The printed resolved passages are a possible source for rebuilding it. Not a key lookup.",
+   "duplicates": "known.py on Hoverbeck and the Rep. 9 shelfmark: no catalogue entry or other lead covers Hoverbeck 1662 (the Rep. 9 / Rep. 91 hits are 19th-century Werther files). The unresolved lines of pp. 330 and 351 belong to the same correspondence and should join this lead when the unit is found.",
+   "verdict": "open"
+  }
+ },
+ "2515": {
+  "verdict": "open",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "UA IX (verified in the archive.org full text 16 Nov 2026) heads the Elector's answer of Cleve 25 May 1661 'Auf die Relation vom 20. Mai: meist in unaufgelösten Chiffern'; no decipherment found anywhere. Record correction: the editor says the Weiman diaries enclosed with the London letters are missing and Weiman's autograph journal in the Staatsarchiv ends with 1659, so the lead's claim that his journals cover this embassy in clear is wrong for London (only his Hague diary of Feb 1661 is printed).",
+  "access_note": "GStA PK Berlin, I. HA Rep. 11 (England), embassy of 1661; unit number not found (ACTApro search needs a browser). Not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Urkunden und Actenstücke IX (ed. T. Hirsch, 1879), heading of 'Der Kurfürst an Nassau und Weiman. Datum Cleve 25. Mai 1661', and the editor's footnote just before p. 517 ('Erste Audienz der Brandenb. Gesandten in London') on the missing Weiman diaries, read in the archive.org OCR (urkundenundacten09berluoft_djvu.txt, downloaded 16 Nov 2026). The GStA PK archive database (archive.spk-berlin.de, ACTApro) needs a browser session for its search (recorded in research/vetting_2026-11-14_gsta_deep/README.md) and was not searched; no image of any Brandenburg relation of this mission is online.",
+    "extent": "One relation of 20 May 1661 from London by the two Brandenburg ambassadors, described as mostly cipher; length not given.",
+    "cipher": "Editor's description, verbatim: '(Auf die Relation vom 20. Mai: meist in unaufgelösten Chiffern).' The editor worked from the file and found the cipher unresolved; no system is described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Johann Moritz', 'Weiman', 'Nassau-Siegen', 'Rep. 11': no DECODE record or catalogue entry for this relation; the hits are this lead, the printed-series sweep, the unrelated nassau1620 target and an 18th-century Rep. 11 file.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Johann Moritz, Weiman, Nassau-Siegen and Rep. 11: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Johann Moritz, Weiman, Nassau-Siegen and Rep. 11: no hit.",
+    "edition": "UA IX prints the clear relations of the embassy and only the Elector's answer to this one; the editor notes that the Weiman diaries enclosed with these letters are missing and that Weiman's own journal ends with 1659, so no printed clear version of the 20 May relation exists.",
+    "literature": "One web search (Johann Moritz Nassau Daniel Weiman Gesandtschaft London 1661 Relation Chiffre) found the Deutsche Biographie entry for Weimann (1621-1661) and English calendars of 1661, nothing on the cipher."
+   },
+   "key_check": "No Brandenburg cipher of 1661 is held in this repository or found on DECODE. The UA V note of 1655 that for Johann Moritz's two ciphers 'die Schlüssel nicht aufzufinden' (recorded in the printed-series sweep README) suggests his keys were already lost to the editors. Not a key lookup.",
+   "duplicates": "known.py on the names and Rep. 11: no catalogue entry or other lead; the UA VII Weiman lines of Dec 1655 (The Hague) are a different letter noted in research/sweep_2026-11-11_printed_series/README.md.",
+   "verdict": "open"
+  }
+ },
+ "2782": {
+  "verdict": null,
+  "confidence": "-",
+  "access": "archive",
+  "note": "Not assessable: the BGE record (as quoted by the 15 Nov sweep) calls Rambaud's letter 'presque entierement chiffree' yet summarises its content (a criminal case brought against him since his conversion), so the cataloguer read it from clear passages or from a decipherment; the full record text was not saved and the BGE site is behind an Anubis proof-of-work check today. No hit for Rambaud in known.py, Tomokiyo or Lasry (fetched 15 Nov 2026), and one web search (BGE Ms. fr. 445 Rambaud lettre chiffrée) found nothing.",
+  "access_note": "BGE Ms. fr. 445 f. 116-117; whether views exist is not recorded. Needs the full BGE record (browser past Anubis) or the images, to see how the content summary was obtained and whether a decipherment is filed."
+ },
+ "2781": {
+  "verdict": "read",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "The only ciphertext the BGE records name, the Jacobi-Kloest letters to d'Ivernois of 1807-08 (Ms. suppl. 976 f. 270-272, 303-322), is filed 'avec dechiffrement de la main de d'Ivernois'; the other two items are keys with no ciphertext named (Kleiber's key, Ms. suppl. 1879 f. 147; the key to d'Ivernois's Congress of Vienna correspondence, Ms. suppl. 1004-1006 f. 113-114). Close as read; keep the two keys as key records (DECODE queue), and reopen only if undeciphered Vienna letters of d'Ivernois are found.",
+  "access_note": "BGE manuscripts; the records show views but the site is behind an Anubis proof-of-work check (not passed). Images not seen.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "BGE archive records for Ms. suppl. 976, Ms. suppl. 1879 and Ms. suppl. 1004-1006, as read in Chrome on 15 Nov 2026 by the French-Swiss sweep and quoted in the lead's shelfmark and vetting_note. archives.bge-geneve.ch answered curl on 16 Nov 2026 with its Anubis proof-of-work page ('Making sure you're not a bot!'), a bot check that was not passed; the record text used is the one read in Chrome by the 15 Nov 2026 French-Swiss sweep and vetting pass (research/sweep_2026-11-15_swiss_french/candidates.json, research/vetting_2026-11-15_swiss_french/vetting.json).",
+    "extent": "Ms. suppl. 976 f. 270-272 and 303-322: ciphered letters of 1807-08 with their decipherment; Ms. suppl. 1879 f. 147: one key; Ms. suppl. 1004-1006 f. 113-114: one key. No other ciphertext is named.",
+    "cipher": "Archive descriptions as quoted: Ms. suppl. 976 f. 270-272, 303-322 'lettres chiffrees avec dechiffrement de la main de d'Ivernois'; Ms. suppl. 1879 f. 147 'Cle du chiffre de la main de Kleiber'; Ms. suppl. 1004-1006 f. 113-114 'cle du chiffre de sa correspondance' (d'Ivernois at the Congress of Vienna, 3 Oct 1814 - 29 Mar 1815). The ciphered letters carry a contemporary decipherment filed with them."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Ivernois', 'Jacobi', 'Eynard', 'Kleiber', 'suppl. 976': no DECODE record, catalogue entry or target; 'Jacobi' hits are Jacobite entries only.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Ivernois, Jacobi, Eynard, Kleiber and suppl. 976: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: the two 'Ivernois' hits are the word 'Nivernois' in unrelated 16th-century letters and the 'Jacobi' hit is 'Jacobite'; nothing on these papers.",
+    "edition": "The decipherment in d'Ivernois's hand is filed with the Jacobi-Kloest letters themselves, which settles the reading for this lead; no printed edition of these letters was looked for beyond the archive records.",
+    "literature": "No web search added anything beyond the BGE records; the sweep found no publication of the d'Ivernois-Jacobi letters. Not checked: the diplomatic literature on d'Ivernois at the Congress of Vienna."
+   },
+   "key_check": "Two keys are named (Kleiber, Ms. suppl. 1879 f. 147; d'Ivernois's Vienna correspondence, Ms. suppl. 1004-1006 f. 113-114); no ciphertext for either is named in the records, so neither could be tested.",
+   "key_in_volume": "Ms. suppl. 1004-1006 f. 113-114 holds the key to d'Ivernois's Congress correspondence, and Ms. suppl. 1879 f. 147 Kleiber's key; neither was seen or tested, and they should go to the DECODE queue as key records.",
+   "duplicates": "known.py on Ivernois, Jacobi-Kloest, Eynard and Kleiber found no other lead or catalogue entry; the three BGE items are listed together in this one lead only.",
+   "verdict": "read",
+   "closed": "Closed as read: the only ciphertext named, the Jacobi-Kloest letters of 1807-08 (BGE Ms. suppl. 976), is filed with d'Ivernois's own decipherment; the Kleiber and Vienna items are keys without named ciphertext and belong to key records."
+  }
+ },
+ "2780": {
+  "verdict": "read",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "The BGE record of Arch. Tronchin 148/56 (read in Chrome 15 Nov 2026) describes key lists ('divers chiffres employes dans les guerres civiles', the clef at f. 150) and d'Aubigné letters in clear or as minutes, with the archivist noting that the copyist wrote numbers above the words to be replaced on the fair copy: every enciphered element described carries its clear, and the clear letters are printed (Réaume and de Caussade I; also Œuvres IV, Correspondance, Classiques Garnier). Close as read and keep the keys as a key lead for Huguenot ciphers of 1620-25.",
+  "access_note": "BGE Arch. Tronchin 148/56, digitised (48 views) on the BGE archive site, which is behind an Anubis proof-of-work check (not passed on 16 Nov 2026). Images not seen.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "BGE record of Arch. Tronchin 148/56 f. 138r-161r, read in Chrome on 15 Nov 2026 by the French-Swiss vetting pass (research/vetting_2026-11-15_swiss_french/vetting.json, quoted in the lead's vetting_note). archives.bge-geneve.ch answered curl on 16 Nov 2026 with its Anubis proof-of-work page ('Making sure you're not a bot!'), a bot check that was not passed; the record text used is the one read in Chrome by the 15 Nov 2026 French-Swiss sweep and vetting pass (research/sweep_2026-11-15_swiss_french/candidates.json, research/vetting_2026-11-15_swiss_french/vetting.json).",
+    "extent": "A 24-leaf notebook, 'No 56. 1620 a 1625. Chiffres employes dans les guerres civiles': key lists (clef at f. 150) and letters of d'Aubigné in clear or as minutes, one minute (f. 146v-147v) with code numbers written above the words.",
+    "cipher": "Archive description as quoted: 'divers chiffres employes dans les guerres civiles'; the archivist's note on f. 146v-147v says the copyist wrote numbers above words to be replaced on the fair copy and that the key at f. 150 corresponds. So the enciphered element is a minute with its clear words under the numbers; no ciphertext as sent without its plaintext is described."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Aubign' and 'Tronchin': no DECODE record or target; the only catalogue hits are search notes of the Fribourg/Affry entries that list this BGE notebook as context.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Aubign and Tronchin: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Aubign and Tronchin: no hit.",
+    "edition": "Three of the clear letters are the same as Tronchin 152 and printed in Réaume and de Caussade, Œuvres complètes I, pp. 135-136, 204, 212-214 (recorded 15 Nov 2026). A modern edition of the correspondence exists (d'Aubigné, Œuvres IV, Correspondance, Classiques Garnier, found by web search 16 Nov 2026, not opened).",
+    "literature": "One web search (Agrippa d'Aubigné chiffres Tronchin 148 clef correspondance chiffrée 1620 1625) found the Lemerre Œuvres complètes, Réaume's study, the Garnier Correspondance volume and Ertel-Perrier, Agrippa d'Aubigné épistolier (2008); nothing on an undeciphered d'Aubigné cipher text."
+   },
+   "key_check": "The notebook is itself a collection of keys (clef at f. 150 and others for the civil wars), not tested; they are the material for a key lead, not a ciphertext to read.",
+   "key_in_volume": "Key lists of 1620-25 in Tronchin 148/56, the clef at f. 150 matching the numbered minute at f. 146v-147v; not seen or tested.",
+   "duplicates": "known.py on Aubigné and Tronchin: no other lead or catalogue entry; Arch. Tronchin 152 (d'Aubigné correspondence) shares three clear letters with this notebook.",
+   "verdict": "read",
+   "closed": "Closed as read: the notebook holds keys, clear letters (some printed by Réaume and de Caussade) and a numbered minute whose plaintext is on the leaf; no undeciphered ciphertext is described. Keep the keys as a key lead for Huguenot ciphers of 1620-25."
+  }
+ },
+ "1239": {
+  "verdict": "open",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "BNP record 2083038 (MSS. 14, n. 4): original letter signed by João IV to the 1st marquês de Cascais, Lisbon 15 Dec 1643, [1, 1 br.] f., 'Carta em liguagem cifrada'; no decipherment noted, and nothing printed or on DECODE. Record correction: MSS. 14 n. 120 (record 2088805) is a later clear copy of a letter of 15 Dec 1644 that only announces a ciphered enclosure, so it is not cipher and should leave the lead.",
+  "access_note": "BNP Reservados, MSS. 14 n. 4; not digitised. Order a scan (catalogo@bnportugal.gov.pt).",
+  "correct_shelfmark": "Biblioteca Nacional de Portugal, MSS. 14, n. 4 (MSS. 14 n. 120 is a clear copy, not cipher)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The BNP full record was fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2083038); it lists no BND or purl.pt digital copy, and the BNP sweep (research/sweep_2026-11_bnp_portugal/README.md) found none of these cipher items digitised. MSS. 14 n. 120 was read in record 2088805 the same day.",
+    "extent": "One leaf written plus one blank: 'DESCR.FÍSICA: [1, 1 br.] f. ; 31 cm'; the whole letter is described as ciphered.",
+    "cipher": "Archive description, verbatim (NOTAS): 'Original assinado | Carta em liguagem cifrada | Perfurado por acção da tinta ferrogálica | Selo de chapa'. No decipherment, interlinear or separate, is noted. The companion record for MSS. 14 n. 120 says only 'Cópia', a clear copy of a letter announcing that 'envia cópia cifrada de documentos' about the French plenipotentiaries' instructions at Münster."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Cascais', 'Pires de Castro', 'MSS. 14', 'Pereira de Castro', 'João IV': no DECODE record or target; the only catalogue hit is a note in another entry suggesting comparison with 'Cascais, MSS. 14'; targets/joao1642 mentions Cascais only as Nisa's successor.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Cascais, Pires de Castro, MSS. 14, Pereira de Castro and João IV: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "The record cites Prestage, 'Ministros portugueses nas cortes estrangeiras...', Revista de História 15 (1915) p. 225, and Prestage, As relações diplomáticas de Portugal com a França, Inglaterra e Holanda de 1640 a 1668 (1928) p. 14, as references; neither is on archive.org (advanced search on creator Prestage, 16 Nov 2026) and neither was opened, so whether Prestage gives a reading is not checked. Laranjo Coelho's Cartas de D. João IV ao Conde da Vidigueira concern Vidigueira, not Cascais.",
+    "literature": "One web search (Marquês de Cascais embaixador França 1643 carta cifrada D. João IV) found work on the 2nd marquês (1695 embassy) and the Vidigueira correspondence, nothing on this letter or its cipher."
+   },
+   "key_check": "No key for João IV's 1643 cipher to Cascais is held here. The sibling pairs MSS. 13 nos. 19-23 (Luís Pereira de Castro, 1643, cipher with deciphered copies, per the Manuscriptorium records cited in the lead) and the Nisa/Vidigueira Restoration ciphers in the catalogue are possible keys; none was tested.",
+   "key_held": "Possible: MSS. 13 nos. 21 and 23 give ciphered and deciphered copies side by side (Luís Pereira de Castro, 1643); not seen or tested against this letter.",
+   "duplicates": "known.py on the names and MSS. 14: no other lead or catalogue entry for this letter; the catalogue Vidigueira entries (Nunes da Costa 1642, Mendes de Sampaio 1645-47) are other correspondents and archives (Torre do Tombo).",
+   "verdict": "open"
+  }
+ },
+ "1238": {
+  "verdict": "open",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "BNP records 2106516, 2106649, 2106824: three autograph 'Carta cifrada' letters of José Correia de Abreu to José Maria da Fonseca e Évora (MSS. 41 n. 7 docs 46a, 66, 84; Lisbon 15 Nov 1731, 18 Jun 1733, 14 Dec 1734, [2] f. each). Only doc. 46a has, 'com letra distinta', a [2] f. sketch of the topics of the letter, which may be a decipherment or summary; docs 66 and 84 have nothing beside them. Open on docs 66 and 84, with 46a as a possible crib. The BNP calls the recipient bishop of Porto, a see he held only from 1741 (web search), so the title is retrospective.",
+  "access_note": "BNP Reservados, MSS. 41 n. 7 (lot of 83 letters bought from Martinho da Fonseca); not digitised. Order scans of docs 46a (with its topic sheet), 66 and 84.",
+  "correct_shelfmark": "Biblioteca Nacional de Portugal, MSS. 41, n. 7, doc. 66 and doc. 84 (doc. 46a has a topic sketch in another hand)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The BNP full record was fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2106516 / 2106649 / 2106824); it lists no BND or purl.pt digital copy, and the BNP sweep (research/sweep_2026-11_bnp_portugal/README.md) found none of these cipher items digitised. Cotas read in the records: 'MSS. 41, n. 7, doc. 46a', 'doc. 66', 'doc. 84'.",
+    "extent": "Three letters of [2] f. each (doc. 46a [2, 2] f. with its topic sheet); the records do not say whether the whole text or part is in cipher.",
+    "cipher": "Archive descriptions, verbatim: titles '[Carta cifrada de José Correia de Abreu para Dom José Maria da Fonseca e Évora, bispo do Porto, sobre diversas matérias / sobre vários assuntos]', 'Original autógrafo'; for doc. 46a only: 'Tem junto, com letra distinta e ocupando [2] f., um esboço com os tópicos tratados na carta'. No decipherment is noted for docs 66 and 84, and the vague subject 'sobre vários assuntos' suggests the cataloguer could not read them."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Correia de Abreu', 'Fonseca e', 'MSS. 41': no DECODE record or target; the MSS. 41 catalogue hit is the Spinola entry (MSS. 41 n. 5), a different unit and century.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Correia de Abreu, Fonseca e (Évora) and MSS. 41: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "No edition of the Correia de Abreu letters was found; the BNP records cite none.",
+    "literature": "One web search (José Correia de Abreu bispo do Porto Fonseca e Évora cartas cifra) found only a Vinculum entail record naming a José Correia de Abreu and biographies of Fonseca e Évora (bishop of Porto 1741-1752); nothing on these letters."
+   },
+   "key_check": "No key for this correspondence is held here or on DECODE. The topic sketch with doc. 46a and Correia de Abreu's clear letters of 1728-29 in the same lot (BNP records found by the same search: political matters 1729, Mafra objects 1728) are cribs, not keys; nothing tested.",
+   "duplicates": "known.py on the names and MSS. 41 n. 7: no other lead or catalogue entry; the Spinola entry in MSS. 41 n. 5 is unrelated.",
+   "verdict": "open"
+  }
+ },
+ "1242": {
+  "verdict": "open",
+  "confidence": "low",
+  "access": "archive",
+  "note": "COD. 4417 (BNP 1954594) is a post-1742 apograph 'Copiado do Original' of the Azevedo Coutinho-Cunha correspondence of 7 Jan 1740 - 28 Dec 1742 with 'Algumas cartas com mensagem cifrada (p. 33-37)'; no decipherment noted. Record corrections: COD. 1750 (BNP 2093914) is a different correspondence, Cunha's letters from The Hague of 1728-36 probably to Diogo de Mendonça Corte-Real, 'Partes do texto em cifra', and should be split off; COD. 4419 and COD. 6441 decipher José da Cunha Brochado's London letters of 1712-13, not these, so they are no source for a decipherment here. Low confidence because a later fair copy may carry the clear beside the cipher, which the record would not necessarily say.",
+  "access_note": "BNP Reservados, COD. 4417 'Reservado, sob autorização'; not digitised. Order pp. 33-37.",
+  "correct_shelfmark": "Biblioteca Nacional de Portugal, COD. 4417, pp. 33-37 (COD. 1750 = Cunha at The Hague 1728-36, a separate lead)",
+  "split": "COD. 1750 (BNP record 2093914): '[Compilação de cartas de D. Luís da Cunha sobre assuntos diplomáticos redigidas em Haia enquanto ministro plenipotenciário na Holanda]', 1735, copy, [186] f., 'Partes do texto em cifra'; a separate correspondence and probably a separate key.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The BNP full record was fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/1954594); it lists no BND or purl.pt digital copy, and the BNP sweep (research/sweep_2026-11_bnp_portugal/README.md) found none of these cipher items digitised. COD. 1750 read in BNP record 2093914 and in its Manuscriptorium record (castor search, 16 Nov 2026); COD. 4419 (1956242) and COD. 6441 (1957012) read in Manuscriptorium the same day.",
+    "extent": "Some letters on pp. 33-37 of a 384-page copybook carry a ciphered message; how many lines is not stated.",
+    "cipher": "Archive description, verbatim (NOTAS): 'Apógrafo: \"Copiado do Original\" | Datas no original: 7 de Janeiro de 1740-28 de Dezembro de 1742 | Algumas cartas com mensagem cifrada (p. 33-37)'. No decipherment is noted. The decipherment sections in COD. 4419 f. 138-144 and COD. 6441 f. 128-140 ('Cartas em Cifra, e Passagens das mesmas, que se achão nesta Collecção decifradas') belong to Cunha Brochado's letters of 1712-13."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Luís da Cunha', 'Luis da Cunha', 'Azevedo Coutinho', 'COD. 4417': no DECODE record; the catalogue has other Cunha items (lead/entry 2280 Tarouca to Cunha, A.T. 165; the Barcelona 1706-11 copybook) but nothing for COD. 4417 or 1750.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Luís/Luis da Cunha, Azevedo Coutinho, COD. 4417 and Cunha: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "The record cites Isabel Cluny, D. Luís da Cunha e a ideia de diplomacia em Portugal (1999), not opened. The 1930 Instruções inéditas de D. Luís da Cunha a Marco António de Azevedo Coutinho (Azevedo and Baião) prints the 1736 Instructions, not this 1740-42 correspondence. No edition of the ciphered letters was found.",
+    "literature": "One web search (D. Luís da Cunha cartas cifradas Azevedo Coutinho 1740 1742 edição cifra) found studies of the Instruções and the Testamento político and a SNAC record of Azevedo Coutinho despatches 'partly in cipher' (truncated, not tied to this codex); nothing reads these letters."
+   },
+   "key_check": "No Portuguese diplomatic key of 1740-42 is held here or on DECODE. The Cunha Brochado decipherments of 1712-13 (COD. 4419, 6441) are thirty years earlier and of another mission; not tested and unlikely to share the key.",
+   "duplicates": "known.py on the names and codex numbers: no catalogue entry or other lead for COD. 4417; COD. 1750 is in no lead or entry except this one (proposed split); the Tarouca-Cunha entry (A.T. 165, 1726-36) is a different correspondence.",
+   "verdict": "open"
+  }
+ },
+ "1241": {
+  "verdict": "open",
+  "confidence": "low",
+  "access": "archive",
+  "note": "BNP record 2008066 (PBA. 636, f. 273-359, 'Motim de Madrid', 1766-69, Pombal's collection, copies with Pombal's autograph notes) lists 'Narração do motim, parte final cifrada (f. 320)' and 'Notícias da corte em Aranjuez, parte final cifrada (f. 326)', no decipherment noted; nothing printed found. Low confidence: these are copies made in Pombal's own office, which had the key, so a clear version may sit in the same Pombalina volumes. Record correction: the bundle is the dispatches of Aires de Sá e Melo, Portuguese ambassador in Madrid, with Grimaldi and Carlos III papers, dated 1766-1769, not anonymous.",
+  "access_note": "BNP Reservados, PBA. 636 (also on microfilm F. 3236 per the BNP sweep README); not digitised. Order f. 320-327.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "The BNP full record was fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2008066); it lists no BND or purl.pt digital copy, and the BNP sweep (research/sweep_2026-11_bnp_portugal/README.md) found none of these cipher items digitised. The record cites Moniz, Inventario. Secção XIII - Manuscriptos Collecção Pombalina (1889), not opened.",
+    "extent": "Two pieces, each with its final part in cipher: f. 320 (narrative of the riot) and f. 326 (court news from Aranjuez); length of the ciphered parts not given.",
+    "cipher": "Archive description, verbatim (CONTEM): 'Narração do motim, parte final cifrada (f. 320) . - Notícias da corte em Aranjuez, parte final cifrada (f. 326)'; NOTAS: 'Cópia com anotações autógrafas de Sebastião José de Carvalho e Melo'. No decipherment is noted."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Esquilache', 'PBA. 636', 'Motim', 'Ayres de S': no DECODE record; only targets/lucini1767 mentions the 1766 riot, in another context.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Esquilache, PBA. 636, Motim and Ayres de Sá: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "No edition of Aires de Sá e Melo's 1766 dispatches was found; the record cites only Moniz's 1889 inventory.",
+    "literature": "One web search (Aires de Sá e Melo embaixador Madrid 1766 motim Esquilache ofícios cifrados Pombal) found studies of the riot and of Sá e Melo's contacts with Grimaldi and Roda (Anales RSEAPV, uv.es), nothing on his ciphered dispatches. Not checked: a full Portuguese study of his Madrid embassy."
+   },
+   "key_check": "No Portuguese ambassadorial key of the 1760s (Aires de Sá e Melo in Madrid) is held here or on DECODE; not tested.",
+   "duplicates": "known.py on the names and PBA. 636: no other lead or catalogue entry.",
+   "verdict": "open"
+  }
+ },
+ "2275": {
+  "verdict": null,
+  "confidence": "-",
+  "access": "archive",
+  "note": "Blocker stands: BNP record 2231302 (re-read 16 Nov 2026) still says only 'Parte do texto em cifra' for the whole maço AP/Mc. 110 (136 documents, [761] f., [1750]-1826) and its CONTEM list ties the cipher to no document; there are no analytic records. Nothing to vet against until the BNP says which document is in cipher.",
+  "access_note": "BNP Reservados, Arquivo da Casa Pombal AP/Mc. 110 ('reservado, sob autorização'); not digitised. Ask catalogo@bnportugal.gov.pt which of the 136 documents carries the cipher."
+ },
+ "1237": {
+  "verdict": "open",
+  "confidence": "medium",
+  "access": "archive",
+  "note": "Narrowed to one letter wholly in cipher: BNP record 2202465, MSS. 99 n. 251, Joaquim Severino Gomes (Madrid, 17 Apr 1828) to António Ribeiro Saraiva in Paris, [1] f. dobr., 'Autógrafo | Em cifra', no decipherment noted and none printed. Siblings partly in cipher, same correspondence: MSS. 99 n. 71 (21 Apr 1827, signed 'Vale Ramon', 'Parcialmente cifrada'), n. 204 (31 Jan 1828, 'Com trechos em cifra', signed 'Ramon'), and the G.B.S.M. letters from Ciudad Rodrigo of 7 and 18 Jun 1827 (BNP 2189655, 2189661, in Spanish, 'Cifrada em parte' / 'Parcialmente cifrada').",
+  "access_note": "BNP Reservados, Arquivo António Ribeiro Saraiva, MSS. 99 n. 251 (and siblings); not digitised. Order a scan.",
+  "correct_shelfmark": "Biblioteca Nacional de Portugal, Arquivo António Ribeiro Saraiva, MSS. 99, n. 251 (siblings MSS. 99 n. 71, n. 204 and the G.B.S.M. letters of June 1827)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "BNP full record fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2202465); no BND or purl.pt copy is linked. Sibling records 2187621 (MSS. 99 n. 71), 2198444 (MSS. 99 n. 204), 2189655 and 2189661 (G.B.S.M., Ciudad Rodrigo) read the same day, found by a catalogue keyword search 'Saraiva cifr*' (records listed on pp. 1-2 of the results).",
+    "extent": "One letter, [1] folded leaf, described as in cipher throughout; the siblings are single leaves partly in cipher.",
+    "cipher": "Archive description, verbatim: '[Carta de Joaquim Severino Gomes a António Ribeiro Saraiva, Paris] [Manuscrito] | Madrid, 17 de Abril de 1828 | [1] f. dobr. ; 23 cm | NOTAS: Autógrafo | Em cifra'. The record gives no subject (unlike the clear letters of the series, which are summarised) and notes no decipherment."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Ribeiro Saraiva', 'Saraiva', 'MSS. 99', 'Cadaval', 'Beira': no DECODE record or target; hits are this lead, lead 2270 (the diary and its key) and the BNP sweep files.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Ribeiro Saraiva, Saraiva, MSS. 99, Cadaval and Beira: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "The records cite Maria Teresa Mónica, 'António Ribeiro Saraiva', Beira Alta XLIX (1990) p. 176, and Errâncias miguelistas (1834-1843) (1997), on the archive, not editions of these letters; Brito, A colecção de manuscritos de Ribeiro Saraiva (1914) is a catalogue. None was opened; no printed text of the 1827-28 letters was found.",
+    "literature": "One web search (António Ribeiro Saraiva arquivo cartas cifradas Joaquim Severino Gomes 'Vale Ramon' cifra miguelistas) found nothing on these letters or their cipher."
+   },
+   "key_check": "No key for the 1827-28 Miguelist correspondence is held here or on DECODE. The 'Cifra do diário' bound with Saraiva's diary (MSS. 169 n. 13, lead 2270) is his own later key (diary 1831-45) and may or may not be the one used with Severino Gomes; not seen or tested.",
+   "key_held": "Possible: Saraiva's 'Cifra do diário', BNP MSS. 169 n. 13 (lead 2270); not seen or tested against these letters.",
+   "duplicates": "known.py on the names and shelfmarks: no catalogue entry; lead 2270 is the diary (MSS. 169), not this correspondence. The other partly ciphered letters of MSS. 99-101 belong in this lead's folio_note as siblings, not separate entries, until their keys are known to differ.",
+   "verdict": "open"
+  }
+ },
+ "2270": {
+  "verdict": "read",
+  "confidence": "low",
+  "access": "archive",
+  "note": "The diary was printed: 'Diario de Ribeiro Saraiva', Lisboa, Imprensa Nacional, 1915-1917, 2 v. (BNP record 416080; an auction listing gives the span 1831-1888), and the key ('[Cifra do diário]', n. 13) is bound with the manuscript (BNP 2168524, 13 maços, 1831-38 and 1842-45), so any enciphered entry was open to the editor. No ciphertext is described in the record. Low confidence because the printed volumes were not searched (Google Books API 429, HathiTrust Cloudflare); reopen only if the print shows passages left in cipher.",
+  "access_note": "BNP Reservados, MSS. 169 n. 1-13; not digitised. The printed diary (1915-17) is the first thing to open.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "BNP full record fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2168524); no BND or purl.pt copy is linked. Printed edition found in BNP record 416080 ('Diario de Ribeiro Saraiva. Lisboa : Impr. Nacional, 1915-1917. 2 v. ; 29 cm') by a catalogue search the same day; the printed text was not reachable (Google Books API HTTP 429 on 16 Nov 2026; HathiTrust Cloudflare per the 11 Nov check).",
+    "extent": "Thirteen maços, [635] f.: diaries for 1831-1838 and 1842-1845 (n. 1-12) and the key of the diary (n. 13); the record does not say that any entry is in cipher.",
+    "cipher": "Archive description, verbatim (CONTEM, end): '[Diário de 1845] (Março e Dezembro, n. 12), [Cifra do diário] (n. 13).' Only the key is described; no ciphertext and no undeciphered passage is named."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Ribeiro Saraiva' and 'MSS. 169': no DECODE record or target; lead 1237 is his 1827-30 correspondence.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Ribeiro Saraiva and MSS. 169: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "Diario de Ribeiro Saraiva, Imprensa Nacional, Lisboa 1915-1917, 2 vols (BNP 416080); an auction description (eclecticaleiloes.com, found by web search 16 Nov 2026) gives it as the diary for 1831-1888. Not opened, so whether enciphered entries are printed in clear is not checked.",
+    "literature": "Two web searches (Ribeiro Saraiva diário cifra; Diário de António Ribeiro Saraiva) found only the auction listing of the 1915 print; nothing on a cipher in the diary."
+   },
+   "key_check": "The diary's own key is bound with it as n. 13; not seen. If any entry is enciphered, it is a key-held text and was printable by the 1915-17 editor.",
+   "key_in_volume": "'[Cifra do diário]', BNP MSS. 169 n. 13, the key of the diary itself; not seen or tested.",
+   "duplicates": "known.py on Ribeiro Saraiva: lead 1237 (letters to Saraiva 1827-30, MSS. 99-101) is a different unit; no catalogue entry.",
+   "verdict": "read",
+   "closed": "Closed as read: no ciphertext is described, the diary's key is bound with it, and the diary was printed (Imprensa Nacional 1915-17); reopen only if the printed volumes leave entries in cipher."
+  }
+ },
+ "2271": {
+  "verdict": "not_cipher",
+  "confidence": "low",
+  "access": "archive",
+  "note": "BNP record 2289236 (re-read 16 Nov 2026): an autograph letter signed by F. Manuel Rebelo, Elvas 29 Mar 1873, [2] f., to Fontes Pereira de Melo, catalogued as 'parcialmente cifrada' with the example 'amanhã vou a Z, e tambem vai commigo o enteado de O': the only concealment the record shows is single capitals standing for a place and a person inside clear Portuguese, a name code too thin to be a ciphertext. Low confidence because the leaf is not online and may hold more.",
+  "access_note": "BNP Reservados, Arquivo Fontes Pereira de Melo FPM-Cx. 01 n. 83 ('reservado, sob autorização'); not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "BNP full record fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2289236); no BND or purl.pt copy is linked.",
+    "extent": "A two-leaf letter; the record quotes one sentence with two single-letter name substitutions and does not describe any other ciphered passage.",
+    "cipher": "Archive description, verbatim (title): '[Carta, parcialmente cifrada, para Fontes Pereira de Melo: \"A pertexto de despedida, amanhã vou a Z, e tambem vai commigo o enteado de O, que já regressou\"]'; NOTAS: 'Original autógrafo assinado por F. Manuel Rebelo'. The 'cipher' shown is letters for names (Z, O) in clear text."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Fontes Pereira', 'FPM', 'Rebelo': no DECODE record, catalogue entry or target.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Fontes Pereira, FPM and Rebelo: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "The record cites only Maria Filomena Mónica's Dicionário biográfico parlamentar (2004-06) and her biography of Fontes (2009) for the recipient; no edition of the letter.",
+    "literature": "The 6 Nov 2026 check ran three web searches (Rebelo Elvas 1873 Fontes; Fontes Pereira de Melo cifra; enteado Elvas) with no result; not repeated."
+   },
+   "key_check": "No key concerned: single letters for names cannot be tested without the writer's list; none is known.",
+   "duplicates": "known.py on Fontes Pereira de Melo and FPM: no other lead or entry.",
+   "verdict": "not_cipher",
+   "closed": "Closed as not a cipher: the BNP record shows a clear 1873 letter in which single capitals (Z, O) stand for a place and a person, a name code with no ciphertext; reopen if the leaf shows real cipher groups."
+  }
+ },
+ "2274": {
+  "verdict": "read",
+  "confidence": "low",
+  "access": "archive",
+  "note": "BNP record 2259117 (re-read 16 Nov 2026) describes the 10-leaf notebook in an invented alphabet and summarises its content in three parts (technical notes; a reflection on form, gesture and process; a short essay on art and artistic creation): the cataloguer, or whoever supplied the note with the IPPC Musicology deposit, has read it. No transcription is cited and Alexandre Delgado's studies of his great-grandfather were not located (one more web search 16 Nov 2026, nothing). Close as read on the catalogue's own evidence; reopen if the BNP Music area says the summary was not made from a reading.",
+  "access_note": "BNP Área de Música, EMUS13 27 (access 'Normal'); not digitised.",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "BNP full record fetched by curl on 16 Nov 2026 from catalogo.bnportugal.gov.pt (Horizon full-record view; stable link http://id.bnportugal.gov.pt/bib/catbnp/2259117); no BND or purl.pt copy is linked.",
+    "extent": "10 leaves, 23 x 12 cm, the whole text in an invented alphabet.",
+    "cipher": "Archive description, verbatim: '[Texto em código utilizando um alfabeto inventado] | NOTAS: Caderno de artista em forma de manifesto escrito de forma a não ser decifrado. O conteúdo é de natureza mista: 1. apontamentos técnicos, 2. uma reflexão sobre a forma, o gesto e o processo, e 3. um pequeno ensaio sobre a Arte e a criação artística'. The content summary shows the text has been read."
+   },
+   "prior_art": {
+    "decode": "known.py on 'Tavares de Andrade', 'Carlos de Andrade', 'EMUS13': no DECODE record or target; DECODE (Andrade, Tavares, alfabeto inventado) gave 0 records on 11 Nov.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for Tavares de Andrade, Carlos de Andrade and EMUS13: no hit.",
+    "lasry": "Lasry's GL.htm list (cryptiana.web.fc2.com, fetched 15 Nov 2026), tags stripped and grepped for the same terms: no hit.",
+    "edition": "No edition or transcription is cited by the record or was found.",
+    "literature": "One web search (Carlos de Andrade 1884-1930 compositor caderno alfabeto inventado código Alexandre Delgado) returned only other Andrades; the 11 Nov check found that Alexandre Delgado has written studies of Carlos de Andrade, not located."
+   },
+   "key_check": "No key known; the content summary implies the alphabet was read by the cataloguer or the depositor.",
+   "duplicates": "known.py on the names and EMUS13: no other lead or entry.",
+   "verdict": "read",
+   "closed": "Closed as read: the BNP catalogue itself summarises the notebook's content in three parts, so the invented alphabet has been read by the cataloguer or the depositor; reopen if the BNP Music area confirms no reading exists."
+  }
+ },
+ "1847": {
+  "verdict": null,
+  "confidence": "-",
+  "access": "archive",
+  "note": "Blocker stands: Calames gives only a series-level description of Chantilly Ms 1888-1903 ('lettres, parfois chiffrées') with the 'table de déchiffrement' on the Ms 1888 notice (the 2 Nov check; the lead's 'Ms 1890' is wrong), no ciphered letter is itemised and no images are online. Useful for whoever picks it up: the Des Noyers-Boulliau keys are held here (targets/desnoyers1659/key.tsv, the 00-99 nomenclator of 1658-59, and the 1656 sign key of BnF Fr. 13020 f. 315), and the Berlin 1859 edition (archive.org lettresdepierre00noyegoog) prints Des Noyers's 1655-59 letters and gives their cipher passages of 1658-59 in clear (per targets/desnoyers1659/NOTES.md).",
+  "access_note": "Bibliothèque du château de Chantilly, Ms 1888-1903; not digitised. Needs the volumes (or Ms 1888 with its table) to pick one enciphered letter.",
+  "correct_shelfmark": "Chantilly, Cabinet des lettres, Ms 1888-1903 (table de déchiffrement at the end of Ms 1888, not Ms 1890)"
+ }
+}

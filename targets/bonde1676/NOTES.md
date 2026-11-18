@@ -242,6 +242,10 @@ All re-run for this folder with `python3 -I` (standard library):
 - Despatches of 6/16 and 13/23 Oct 1676: holes in most sentences under keys v4-v8 - blocker: no-key-material; every bare page of the volume has been decoded once and the sister volumes are not digitised (integration note, 13 Nov 2026: the volume's chancery glosses of Sep 1676-Jan 1678 were harvested only in part for v8-v10, about twenty glossed images; more gloss values could be taken, but any new decode of these pages would be a re-score, not a held-out test, so the frozen first pass stays the figure)
 - Höjer 1875, Trolle-Bonde D.1, Grauers 1926 and AAE Correspondance politique Suède 1676-78 for the despatches - blocker: needs-physical-access; the 12/22 Aug 1676 despatch is NOT FIRST (Wimarson II)
 
+Outside this key: images 113 right and 114 left are a letter of November 1675 in a second code (1-246), deciphered by its
+period gloss; neither the numbers nor the gloss are transcribed in this folder (Brice Dudout offers his files, issue #629;
+section below). Workable, and a separate target under one key, one entry.
+
 Not gaps in the unread cipher, but limits of the evidence: no person has compared any transcription with the images (the
 contributor's second transcriptions and the integration sample are by AI agents); image 324 is in-sample for v3 and its
 reading is the first-test reading under v2; the clear text of 488R-490L is transcribed only next to the cipher runs.
@@ -316,6 +320,38 @@ By an AI agent for the maintainer, not a person. PR #525 adds `despatches/` (134
   v10's word codes were read off glosses of January 1678 and applied eighteen months earlier, and 144 = b (1678 gloss) fits Aug 1676
   badly ("ansenbig"). Three page tests failed (165L, 493L, 515L), published as failed.
 - No change to the memorial's figure or to `fraction_read` (0.718); the despatches are not pooled with it.
+
+## Images 113 right and 114 left: a second code, with its period decipherment (issue #629, 14 Nov 2026)
+
+Brice Dudout (issue #629, 14 Nov 2026, with AI agents) reports that image 113 right and the whole of image 114 left are one
+letter in a separate code: numbers 1 to 246, one number a letter, many homophones, no syllables; addressed to "Herr
+Cantzlirådet", signed "Carolus Bonde Paris d. 13 Novembris 1675"; and that the ink gloss on 113 right and on the first four
+lines of 114 left is the chancery's decipherment of the whole letter, the bare lines of 114 left included, because each gloss
+line carries about twice as many letters as the number line under it. This folder had 114 left as "another code" and 113 as
+a glossed page, and had not put the two together or seen that the bare lines are already deciphered.
+
+Checked here on the Riksarkivet images (IIIF `full/max`, R0003797_00113 and _00114, 14 Nov 2026), by an AI agent, not a person:
+
+- 113 right (foliated 107, headed "Novembris 1675") is a page of dotted numbers with an interlinear gloss on every line, the
+  gloss opening "Herr Cantzlirådet på thet flijtwänligaste"; it ends "verte". 114 left carries four glossed lines, the gloss
+  ending "willigheet. Carolus Bonde Paris d. 13 Novembris", then some 28 lines of numbers with no gloss, each underlined, ending
+  `18/28 . 50.77.34.42.22.16.112.55.149 . 1675`, with "N o v e m b r i s" in pencil under the nine numbers (a later hand).
+- A second code: those nine numbers give n o v e m b r i s one for one, while KEY_v10 has 50 = d, 77 = f, 34 = o, 42 = u,
+  22 = f, 112 = i, 55 = h, which reads nothing. The pair `17.246` opens 114 left and recurs on both pages. No number above
+  246 was seen (a look at both pages at reduced size, not a transcription).
+- The gloss runs ahead of the cipher: line 1 of 113 right has about 21 numbers under some 45 gloss letters, and the gloss
+  reaches the signature on line 4 of 114 left, where the cipher reaches it only on the last line. So the bare lines are
+  covered by the gloss above them, as Dudout says.
+- The date: the cipher's last line has `18/28` in clear figures; the gloss has 13. Seen as he describes; not settled.
+
+Not checked: his transcriptions, his gloss reading and his draft key (not sent; offered), his figure of 0.65 character
+agreement on the key's own training text (by his account a resubstitution figure under his 0.85 floor, no held-out decode,
+no claim of a new reading), and whether this is the letter to Hoghusen "efter gamla chiffrer" named in the P.S. of 112 right.
+
+What follows for this target: nothing in its counts, key or class; KEY_v3 to v10 do not apply to these two pages. Under one
+key, one entry the letter of November 1675 is a separate target if it is filed, read from the existing (period) decipherment.
+Catalogue 2317 still lists 114 left as bare, "a different code, groups 1-246", and 113 as glossed: its text should say that
+114 left is deciphered by the gloss of 113 right (not changed here; catalogue text is the owner's to change).
 
 ## Escalation
 - [x] siblings: the neighbouring leaves of R0003797 opened; 107-109 are the cipher tail of the 1675 despatch (glossed on 105-106); the 1677 despatch of 17/27 Nov (479R-481R) decoded at 62%, and 327-330 (the Swedish letter with Lillieroot, 13/23 Oct 1676) decoded under keys v4-v6: both now in `despatches/` (13 Nov 2026), below our 65% line

@@ -1,0 +1,361 @@
+{
+ "1196": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed. Calames now answers curl (16 Nov 2026): Institut de France Ms 5892 F-Z, pièces 189-190, author 'Vaughan, H.', 4 May 1893, '1 lettre et 1 dépêche chiffrée de Louis Mizon pour l'Agence Dalziel refusée par le télégraphe de Porto-Novo'. The covering letter by H. Vaughan sent the refused telegram to the Comité de l'Afrique française and may give its text or meaning; a press-agency telegram of 1893 is most likely in a commercial code. No image online; reading-room access by accreditation only. A web search (Mizon, Dalziel, Porto-Novo 1893) found nothing on the telegram.",
+  "access": "archive",
+  "access_note": "Bibliothèque de l'Institut de France, reading room by accreditation; no images."
+ },
+ "1221": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "Hungaricana answers scripts from this machine (16 Nov 2026), so the whole cluster was re-checked regest by regest: 375 cipher regests in Kt 36-45; 79 say no decipherment, on 59 dates; 25 of those dates have a deciphered cipher regest of the same date; 22 more have a clear copy/extract/decipherment found by date search; 8 dates with none found: 1577.11.14, 1577.11.23, 1579.01.25, 1579.06.18, 1579.08.25, 1580.06.01, 1581.03.18, 1581.09.20. Spot checks show decipherments also hide under range-dated regests (e.g. Sinzendorff 23 Nov 1579, 48863, has Reisach's extracts 48862 and a Latin extract 48864 of the same report). As a cluster it is mostly read at the time; the eight residual dates are not proven unread and would each need the parallel Archduke letter checked before a single-letter lead could be split out.",
+  "access": "archive",
+  "access_note": "HHStA Wien, not digitised (AIS records stop at Konvolut level, checked by curl 16 Nov 2026); Hungaricana regests answer curl.",
+  "residual_dates": "1577.11.14 (48141, triplicate duplicates), 1577.11.23 (48170, 'német másolat és orig.': a German copy is with it, so read), 1579.01.25 (48506 duplicate), 1579.06.18 (48650), 1579.08.25 (48762 duplicate), 1580.06.01 (49073), 1581.03.18 (49330 triplicate to Ernst), 1581.09.20/10.04 (49483, 49484)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana Viennese-inventory regests (archives.hungaricana.hu/en/lear/BecsSeg/<id>/), harvested by script 16 Nov 2026: all 375 Türkei I cipher regests of Kt. 36-45 from the 'sifrír*' search, plus full regests of every same-date item for the 30 dates whose cipher regests all say 'feloldás nélkül'; neighbours read in full for 48858-48868 and 48646-48654, 49069-49077.",
+    "extent": "Kt. 36-45 (1577-1581): 79 regests say no decipherment, on 59 despatch dates; the despatches run from 2 to 30 folios.",
+    "cipher": "The regests describe the pieces as 'sifrír, feloldás nélkül' or 'nincs feloldva' (cipher, no decipherment), many as duplicates or triplicates sent by Venice or Buda; the same Konvoluts hold 'sorközben feloldva' copies and 'német feloldás' decipherments, often in the parallel letter to Archduke Ernst."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on the envoys' names (Ungnad, Sinzendorff, Breuner, Eizing, Pezzen, Kreckwitz, Starzer) and Türkei I: DECODE holds only keys for this embassy (Ungnad R392, Breuner R1384, R1590), no record of these despatches; the catalogue holds single letters of the series (342, 343, 2237, 2675, 2676) and the later clusters 1226-1229.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for the envoys' names and Türkei: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same names: no hit.",
+    "edition": "The decisive prior art is in the archive itself: the Hungaricana regests of the Viennese inventory (Bécsi Magyar Levéltári Kirendeltség) list, beside the cipher copies marked 'feloldás nélkül', the same despatches deciphered ('német feloldás', 'sifrír és külön feloldás'), mostly in the parallel letter to Archduke Ernst or Matthias, or as clear copies and extracts of the same day. Some deciphered pieces are printed in part in Hurmuzaki, Documente (cited in the regests). Lang 2015 (MTA doctoral thesis, repertory pp. 252-255, downloaded 16 Nov 2026) lists only Ungnad, Sinzendorff, Breuner and Starzer samples (C.Ung, C.Sin, C.Breu, C.Sta), none of Eizing, Pezzen or Kreckwitz.",
+    "literature": "Earlier web searches recorded on the lead (Láng, Real Life Cryptology 2018; Szabados 2023; ABTK envoy-report editions) found no printed decipherment; the Fazekas-Fodor-Gluck edition covers 1568-1574 only. No further literature search was needed once the archive's own decipherments were found."
+   },
+   "key_check": "Candidate keys held: Ungnad R392 and Breuner R1384 (DECODE, transcribed in targets/ungnad1576 and targets/sinzendorff1578); untested, no scans. The contemporary decipherments in the same Kartons are the stronger key source.",
+   "duplicates": "Catalogue 343 (Sinzendorff 3-7 Sept 1578, Kt. 37 Konv. 2) lies inside this range and is one of its letters; catalogue 342 (Ungnad 1576, Kt. 32) is just before it. No other duplicate.",
+   "verdict": "partly_read",
+   "closed": "Most of the despatches the cluster counts as undeciphered have a deciphered or clear copy of the same date in the same Kartons (25 dates by a deciphered cipher copy, 22 more by a clear copy, extract or decipherment found by date search); the eight residual dates are unproven and a cluster cannot enter the catalogue, so the lead is closed as read in part.",
+   "searches": [
+    {
+     "query": "Hungaricana archives search \"sifrír*\" (2,633 regests, all pages, per_page=100), filtered to Türkei I by Karton",
+     "result": "Cipher regests grouped by despatch date; dates whose only regests say 'feloldás nélkül' tested further."
+    },
+    {
+     "query": "Hungaricana search on each such date string (\"YYYY.MM.DD\"), every Türkei I regest of that date fetched in full",
+     "result": "Clear copies, extracts and decipherments of the same day found for most dates (see note)."
+    }
+   ]
+  }
+ },
+ "1222": {
+  "verdict": "read",
+  "confidence": "high",
+  "note": "Every regest in Kt. 46-49 marked 'feloldás nélkül' has a decipherment of the same despatch in the same Konvolut: Breuner 21-28 Apr 1582 (49599) by 49597 (to Ernst, 'német feloldás és sifrír'); the cipher extract of 24 Aug 1582 (49680) by the clear original 49681; the duplicate of 12 Oct 1582 (49717) by 49718-49719; 3 Dec 1582 (49751) by 49752; 12 May 1583 (49853) by 49856; 27 Jul 1583 (49905) by 49907; Pezzen 4 Sep 1583 (49930, 49932, 49933) by 49936. Also for the lead agent: catalogue 2237 (Breuner 12 May 1583, fol. 137-144, 147-151) is regest 49853, and 49856 is Breuner to Ernst of the same day 'feloldás és sifrír' sharing fol. 147-151, so 2237 looks read at the time and should be re-checked.",
+  "access": "archive",
+  "access_note": "HHStA Wien, not digitised; Hungaricana regests answer curl (16 Nov 2026).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana regests 49597, 49599, 49680, 49681, 49716-49719, 49751, 49752, 49853, 49856, 49905, 49907, 49926-49938 read in full (archives.hungaricana.hu/en/lear/BecsSeg/<id>/), 16 Nov 2026, after harvesting all 88 Türkei I cipher regests of Kt. 46-49 from the 'sifrír*' search.",
+    "extent": "Kt. 46-49 (1582-1583): 8 regests say no decipherment, on 7 despatch dates.",
+    "cipher": "Breuner and Pezzen despatches to Rudolf II in cipher ('sifrír, feloldás nélkül', some duplicates and triplicates); each has a same-date decipherment ('német feloldás', 'sifrír és külön feloldás') in the same Konvolut."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on the envoys' names (Ungnad, Sinzendorff, Breuner, Eizing, Pezzen, Kreckwitz, Starzer) and Türkei I: DECODE holds only keys for this embassy (Ungnad R392, Breuner R1384, R1590), no record of these despatches; the catalogue holds single letters of the series (342, 343, 2237, 2675, 2676) and the later clusters 1226-1229.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for the envoys' names and Türkei: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same names: no hit.",
+    "edition": "The decisive prior art is in the archive itself: the Hungaricana regests of the Viennese inventory (Bécsi Magyar Levéltári Kirendeltség) list, beside the cipher copies marked 'feloldás nélkül', the same despatches deciphered ('német feloldás', 'sifrír és külön feloldás'), mostly in the parallel letter to Archduke Ernst or Matthias, or as clear copies and extracts of the same day. Some deciphered pieces are printed in part in Hurmuzaki, Documente (cited in the regests). Lang 2015 (MTA doctoral thesis, repertory pp. 252-255, downloaded 16 Nov 2026) lists only Ungnad, Sinzendorff, Breuner and Starzer samples (C.Ung, C.Sin, C.Breu, C.Sta), none of Eizing, Pezzen or Kreckwitz.",
+    "literature": "Earlier web searches recorded on the lead (Láng, Real Life Cryptology 2018; Szabados 2023; ABTK envoy-report editions) found no printed decipherment; the Fazekas-Fodor-Gluck edition covers 1568-1574 only. No further literature search was needed once the archive's own decipherments were found."
+   },
+   "key_check": "Breuner's 1583 key is said to be DECODE R1590 (an 18th-century code per targets/sinzendorff1578, doubtful); R1384 is his 1575 key. Not needed: the decipherments are in the Kartons.",
+   "duplicates": "Catalogue 2237 (Breuner 12 May 1583, Kt. 48 Konv. 3 fol. 137-144, 147-151) is one of these letters (regest 49853); its same-day decipherment 49856 shares fol. 147-151.",
+   "verdict": "read",
+   "closed": "Every despatch of Kt. 46-49 marked as undeciphered has its contemporary decipherment filed with it (to Rudolf or in the parallel letter to Archduke Ernst), so nothing in the cluster is unread.",
+   "searches": [
+    {
+     "query": "Hungaricana archives search \"sifrír*\" (2,633 regests, all pages, per_page=100), filtered to Türkei I by Karton",
+     "result": "Cipher regests grouped by despatch date; dates whose only regests say 'feloldás nélkül' tested further."
+    },
+    {
+     "query": "Hungaricana search on each such date string (\"YYYY.MM.DD\"), every Türkei I regest of that date fetched in full",
+     "result": "Clear copies, extracts and decipherments of the same day found for most dates (see note)."
+    }
+   ]
+  }
+ },
+ "1223": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "233 cipher regests in Kt 51-63; 54 say no decipherment, on 41 dates; 20 of those dates have a deciphered cipher regest of the same date; 11 more have a clear copy/extract/decipherment found by date search; 5 dates with none found: 1586.02.18, 1586.04.14, 1586.10.01, 1587.02.03, 1587.02.23. The residue is weaker than it looks: Eizing to Rudolf 23 Feb 1587 (51049, cipher, no decipherment, with covering letters 51048, 51052) has its text deciphered in Eizing to Ernst of 18 and 23 Feb (51046, 'német feloldás'), and Eizing and Pezzen 31 Jul 1587 (51268) has a German copy 51266 of the same day. Closed as read in part; any single letter split out later must first be matched against the Archduke's deciphered parallel letters.",
+  "access": "archive",
+  "access_note": "HHStA Wien, not digitised; Hungaricana regests answer curl (16 Nov 2026).",
+  "residual_dates": "1586.02.18 (51043), 1586.04.14 (50801), 1586.10.01 (50900 duplicate), 1587.02.03 (51051 duplicate), 1587.02.23 (51049, deciphered via 51046)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana regests harvested by script 16 Nov 2026: all 233 Türkei I cipher regests of Kt. 51-63, full regests of every same-date item for the 16 clean dates, and neighbours 51044-51053 and 51265-51270 read in full.",
+    "extent": "Kt. 51-63 (1584-1587): 54 regests say no decipherment, on 41 despatch dates; many are duplicates sent per Venice.",
+    "cipher": "Eizing and Pezzen despatches in cipher ('sifrír, feloldás nélkül'), originals and duplicates; the same Konvoluts carry 'német feloldás' decipherments, mostly in Eizing's parallel letters to Archduke Ernst, and German copies."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on the envoys' names (Ungnad, Sinzendorff, Breuner, Eizing, Pezzen, Kreckwitz, Starzer) and Türkei I: DECODE holds only keys for this embassy (Ungnad R392, Breuner R1384, R1590), no record of these despatches; the catalogue holds single letters of the series (342, 343, 2237, 2675, 2676) and the later clusters 1226-1229.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for the envoys' names and Türkei: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same names: no hit.",
+    "edition": "The decisive prior art is in the archive itself: the Hungaricana regests of the Viennese inventory (Bécsi Magyar Levéltári Kirendeltség) list, beside the cipher copies marked 'feloldás nélkül', the same despatches deciphered ('német feloldás', 'sifrír és külön feloldás'), mostly in the parallel letter to Archduke Ernst or Matthias, or as clear copies and extracts of the same day. Some deciphered pieces are printed in part in Hurmuzaki, Documente (cited in the regests). Lang 2015 (MTA doctoral thesis, repertory pp. 252-255, downloaded 16 Nov 2026) lists only Ungnad, Sinzendorff, Breuner and Starzer samples (C.Ung, C.Sin, C.Breu, C.Sta), none of Eizing, Pezzen or Kreckwitz.",
+    "literature": "Earlier web searches recorded on the lead (Láng, Real Life Cryptology 2018; Szabados 2023; ABTK envoy-report editions) found no printed decipherment; the Fazekas-Fodor-Gluck edition covers 1568-1574 only. No further literature search was needed once the archive's own decipherments were found."
+   },
+   "key_check": "No Eizing or Pezzen key is held on DECODE or in the repo; the contemporary decipherments in the Kartons would give the key.",
+   "duplicates": "No catalogue entry for Eizing or Pezzen; leads 1222 and 1224 are the neighbouring Pezzen ranges.",
+   "verdict": "partly_read",
+   "closed": "Most dates of the cluster have a deciphered or clear copy of the same despatch in the same Kartons, and the spot-checked residue (51049) is deciphered in the parallel letter to Ernst; a cluster cannot be promoted, so the lead is closed as read in part.",
+   "searches": [
+    {
+     "query": "Hungaricana archives search \"sifrír*\" (2,633 regests, all pages, per_page=100), filtered to Türkei I by Karton",
+     "result": "Cipher regests grouped by despatch date; dates whose only regests say 'feloldás nélkül' tested further."
+    },
+    {
+     "query": "Hungaricana search on each such date string (\"YYYY.MM.DD\"), every Türkei I regest of that date fetched in full",
+     "result": "Clear copies, extracts and decipherments of the same day found for most dates (see note)."
+    }
+   ]
+  }
+ },
+ "1224": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "207 cipher regests in Kt 65-76; 59 say no decipherment, on 53 dates; 19 of those dates have a deciphered cipher regest of the same date; 15 more have a clear copy/extract/decipherment found by date search; 14 dates with none found: 1588.05.12, 1588.09.16, 1588.11.12, 1589.03.24, 1589.08.04, 1589.09.28, 1590.07.20, 1590.09.04, 1590.09.15, 1590.11.23, 1591.03.14, 1591.05.29, 1591.07.10, 1591.10.18. Of the residue, Pezzen 12 Nov 1588 (51863) sits beside 51864, the deciphered postscripts of 11, 12 and 14 Nov to the relation of 10 Nov, which the date search missed because the regest is dated as a range; the Ernst letters of 1589-91 (52148, 52189, 52466, 52526, 52529, 52562, 52653, 52725) are themselves the Archduke's copies and may have Rudolf twins deciphered. Closed as read in part.",
+  "access": "archive",
+  "access_note": "HHStA Wien, not digitised; Hungaricana regests answer curl (16 Nov 2026).",
+  "residual_dates": "1588.05.12 (51681, endorsed 'Aug. Busbecke'), 1588.09.16 (51773 duplicate), 1588.11.12 (51863, see 51864), 1589.03.24 (52028, orig., presented 25 Apr 1589), 1589.08.04, 1589.09.28, 1590.07.20, 1590.09.04, 1590.09.15, 1590.11.23, 1591.03.14, 1591.05.29, 1591.07.10, 1591.10.18",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana regests harvested by script 16 Nov 2026: all 207 Türkei I cipher regests of Kt. 65-76, full regests of every same-date item for the 29 clean dates, and neighbours 51860-51866 and 52024-52032 read in full.",
+    "extent": "Kt. 65-76 (1587-1591): 59 regests say no decipherment, on 53 despatch dates.",
+    "cipher": "Pezzen's despatches to Rudolf II and Archduke Ernst in cipher ('sifrír, feloldás nélkül', several 'csak sifrír'), with presentation dockets; the same Konvoluts carry 'német feloldás' decipherments and clear copies."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on the envoys' names (Ungnad, Sinzendorff, Breuner, Eizing, Pezzen, Kreckwitz, Starzer) and Türkei I: DECODE holds only keys for this embassy (Ungnad R392, Breuner R1384, R1590), no record of these despatches; the catalogue holds single letters of the series (342, 343, 2237, 2675, 2676) and the later clusters 1226-1229.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for the envoys' names and Türkei: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same names: no hit.",
+    "edition": "The decisive prior art is in the archive itself: the Hungaricana regests of the Viennese inventory (Bécsi Magyar Levéltári Kirendeltség) list, beside the cipher copies marked 'feloldás nélkül', the same despatches deciphered ('német feloldás', 'sifrír és külön feloldás'), mostly in the parallel letter to Archduke Ernst or Matthias, or as clear copies and extracts of the same day. Some deciphered pieces are printed in part in Hurmuzaki, Documente (cited in the regests). Lang 2015 (MTA doctoral thesis, repertory pp. 252-255, downloaded 16 Nov 2026) lists only Ungnad, Sinzendorff, Breuner and Starzer samples (C.Ung, C.Sin, C.Breu, C.Sta), none of Eizing, Pezzen or Kreckwitz.",
+    "literature": "Earlier web searches recorded on the lead (Láng, Real Life Cryptology 2018; Szabados 2023; ABTK envoy-report editions) found no printed decipherment; the Fazekas-Fodor-Gluck edition covers 1568-1574 only. No further literature search was needed once the archive's own decipherments were found."
+   },
+   "key_check": "No Pezzen key is held on DECODE or in the repo; the contemporary decipherments in the Kartons would give it.",
+   "duplicates": "No catalogue entry for Pezzen 1588-91; 51681 (12-21 May 1588) is endorsed 'Aug. Busbecke' and may belong to Busbecq's correspondence rather than Pezzen's.",
+   "verdict": "partly_read",
+   "closed": "Two thirds of the dates have a deciphered or clear copy of the despatch in the same Kartons, and spot checks of the residue find decipherments under range-dated regests; a cluster cannot be promoted, so the lead is closed as read in part.",
+   "searches": [
+    {
+     "query": "Hungaricana archives search \"sifrír*\" (2,633 regests, all pages, per_page=100), filtered to Türkei I by Karton",
+     "result": "Cipher regests grouped by despatch date; dates whose only regests say 'feloldás nélkül' tested further."
+    },
+    {
+     "query": "Hungaricana search on each such date string (\"YYYY.MM.DD\"), every Türkei I regest of that date fetched in full",
+     "result": "Clear copies, extracts and decipherments of the same day found for most dates (see note)."
+    }
+   ]
+  }
+ },
+ "1225": {
+  "verdict": "partly_read",
+  "confidence": "medium",
+  "note": "86 cipher regests in Kt 77-92; 26 say no decipherment, on 22 dates; 2 of those dates have a deciphered cipher regest of the same date; 10 more have a clear copy/extract/decipherment found by date search; 6 dates with none found: 1593.03.13, 1593.04.23, 1593.05.12, 1593.05.17, 1593.05.19, 1595.11.14. Kreckwitz wrote in cipher to Rudolf and in parallel to Archduke Matthias, and the Matthias letters are deciphered (e.g. 53268 of 26 Apr 1593, cipher, beside 53269 'német feloldás', which names his letter of the 23rd sent per Venice, i.e. 53267). Starzer 1610 (55874, 55875) has 'feloldása nincs' but Starzer's run continues in catalogue 1226. Closed as read in part.",
+  "access": "archive",
+  "access_note": "HHStA Wien, not digitised; Hungaricana regests answer curl (16 Nov 2026).",
+  "residual_dates": "1593.03.13 (53228), 1593.04.23 (53267), 1593.05.12 (53276), 1593.05.17 (53277), 1593.05.19 (53278), 1595.11.14 (53401 duplicate)",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Hungaricana regests harvested by script 16 Nov 2026: all 86 Türkei I cipher regests of Kt. 77-92, full regests of every same-date item for the 16 clean dates, and neighbours 53058-53063 and 53263-53271 read in full.",
+    "extent": "Kt. 77-92 (1592-1610): 26 regests say no decipherment, on 22 despatch dates, almost all Kreckwitz 1592-93.",
+    "cipher": "Kreckwitz despatches 'csak sifrír, feloldás nélkül' (cipher only), originals and duplicates; the same Konvoluts carry his deciphered parallel letters to Archduke Matthias ('német feloldás és sifrír')."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on the envoys' names (Ungnad, Sinzendorff, Breuner, Eizing, Pezzen, Kreckwitz, Starzer) and Türkei I: DECODE holds only keys for this embassy (Ungnad R392, Breuner R1384, R1590), no record of these despatches; the catalogue holds single letters of the series (342, 343, 2237, 2675, 2676) and the later clusters 1226-1229.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for the envoys' names and Türkei: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same names: no hit.",
+    "edition": "The decisive prior art is in the archive itself: the Hungaricana regests of the Viennese inventory (Bécsi Magyar Levéltári Kirendeltség) list, beside the cipher copies marked 'feloldás nélkül', the same despatches deciphered ('német feloldás', 'sifrír és külön feloldás'), mostly in the parallel letter to Archduke Ernst or Matthias, or as clear copies and extracts of the same day. Some deciphered pieces are printed in part in Hurmuzaki, Documente (cited in the regests). Lang 2015 (MTA doctoral thesis, repertory pp. 252-255, downloaded 16 Nov 2026) lists only Ungnad, Sinzendorff, Breuner and Starzer samples (C.Ung, C.Sin, C.Breu, C.Sta), none of Eizing, Pezzen or Kreckwitz.",
+    "literature": "Earlier web searches recorded on the lead (Láng, Real Life Cryptology 2018; Szabados 2023; ABTK envoy-report editions) found no printed decipherment; the Fazekas-Fodor-Gluck edition covers 1568-1574 only. No further literature search was needed once the archive's own decipherments were found."
+   },
+   "key_check": "No Kreckwitz key is held on DECODE or in the repo; Ungnad R392 is for 1576-77. The deciphered Matthias letters would give the key.",
+   "duplicates": "Catalogue 1226 (Starzer 1611-1619) continues the Starzer run; the two 1610 Starzer pieces of this lead belong with it.",
+   "verdict": "partly_read",
+   "closed": "Most dates have a deciphered copy or a deciphered parallel letter in the same Kartons; a cluster cannot be promoted, so the lead is closed as read in part.",
+   "searches": [
+    {
+     "query": "Hungaricana archives search \"sifrír*\" (2,633 regests, all pages, per_page=100), filtered to Türkei I by Karton",
+     "result": "Cipher regests grouped by despatch date; dates whose only regests say 'feloldás nélkül' tested further."
+    },
+    {
+     "query": "Hungaricana search on each such date string (\"YYYY.MM.DD\"), every Türkei I regest of that date fetched in full",
+     "result": "Clear copies, extracts and decipherments of the same day found for most dates (see note)."
+    }
+   ]
+  }
+ },
+ "1286": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: hollisarchives.lib.harvard.edu still answers 403 to curl from this machine (16 Nov 2026), as from the cloud on 11 Nov; the microfilm folders 'Letters in cipher' have no item description that shows ciphertext or a decipherment. Blocker unchanged: needs a HOLLIS view in a browser or the Houghton film.",
+  "access": "archive",
+  "access_note": "Houghton Library microform; HOLLIS 403 to scripts."
+ },
+ "1628": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: rechecked 16 Nov 2026 that the online images of HStAM 3 Nr. 2594 still end at 0376 (0377, 0380, 0400 answer 404), so the November-December 1541 leaves with 'Chiffren. Termin des Angriffes' and the 'Chiffrenalphabet' (a key, which would make the cipher a key lookup) are still not online. Blocker unchanged.",
+  "access": "archive",
+  "access_note": "Arcinsys Hessen images stop at f. 213 (October 1541)."
+ },
+ "1938": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: Lambeth CalmView Record.aspx still hangs (curl and Python, 60-110 s timeouts, 16 Nov 2026) although the CalmView home page answers in under a second. New context: MS 647 is volume 1 of the Papers of Anthony Bacon (Lambeth MSS 647-662; items of 1558-1590), digitised in Adam Matthew's Early Modern England (subscription, 403 to scripts) and indexed in E.G.W. Bill, Index to the papers of Anthony Bacon (1974); Bacon was in France with Navarre's court in the 1580s, so the letter to Henri (of Navarre in 1586) fits his papers. Bill's index and the AM images were not seen.",
+  "access": "archive",
+  "access_note": "Lambeth Palace Library; images in Adam Matthew Early Modern England (subscription)."
+ },
+ "1990": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: Lambeth CalmView record pages for MS 941 and an item-level id still hang (16 Nov 2026); only the catalogue line 'Latin and cypher. 1 f.' is known. MS 929-942 are Gibson papers; no edition or calendar of item 182 was found.",
+  "access": "archive",
+  "access_note": "Lambeth Palace Library; catalogue record pages time out."
+ },
+ "2032": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: Arcinsys HStAD E 1 M 54/1 and 54/2 re-fetched by curl 16 Nov 2026, unchanged: 'mit Schlüssel zur Entzifferung diplomatischer Geheimschriften', representation 'Original Akte' only, no Digitalisat. The description names a key, not ciphertext; if Drach's reports hold cipher passages, the key filed with them makes them a key lookup at best. Needs an HStAD scan of one annual file.",
+  "access": "archive",
+  "access_note": "HStAD E 1 M 54/1-4, no scans."
+ },
+ "2147": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed, but narrowed: the 1912 Kansas Cyclopedia article on the Danites (ksgenweb transcript, read 16 Nov 2026 via WebFetch) quotes the Lane dispatch of 27 Mar 1858 and the 27 May 1858 dispatch in clear (officers named by number), and says 'One of the despatches in the archives is wholly in figures, incapable of translation'. So most of the seven items are not cipher; the one figure-only dispatch is the only possible cipher. Mildfelt, The Secret Danites (2003) is still unopened and may solve it; Kansas Memory answered curl with an empty 202 (bot check).",
+  "access": "archive",
+  "access_note": "KSHS reading room; Kansas Memory blocks scripts."
+ },
+ "2456": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed to a verdict. Regest 153444 re-read in full (Hungaricana answers curl, 16 Nov 2026): 'Rusztem pasához intézett levél fogalmazványa, mellékelve hozzá két sifrírozott levél, feloldás nélkül', date s.d. '(1549.10.04.)' supplied by the cataloguer; its Konvolut neighbours (153440-153448) are unrelated undated pieces of 1527-1723, so nothing beside it explains the enclosures. All 1549-50 cipher regests of Türkei I Kt. 8-9 carry interlinear or 19th-century decipherments, and several are printed by Nehring (Austro-Turcica 1541-1552, 1995), e.g. Sigismund Augustus's ciphered letters of 10 Oct 1549 to Rüstem Pasha's wife and to Roxelana (43374, 43375, Nehring 377-379, deciphered): the two unnamed enclosures could be copies of such letters. Not decidable without the HHStA images or Nehring's volume.",
+  "access": "archive",
+  "access_note": "HHStA Ungarische Akten Miscellanea Fasc. 418 Konv. B fol. 188-191, not digitised; Nehring 1995 not online."
+ },
+ "2507": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: all 414 microfilm images of HStAD D 4 Nr. 185/3 were downloaded (16 Nov 2026) and images 000-014 were read at full resolution or near it (letters of 1640-1655, a Spanish royal letter 'Yo el Rey' 1640 at 010-011, accounts at 013, a draft mentioning Madrid at 009): no cipher there. The Arcinsys 'Enthält u.a.' list puts the cipher letter between the Ochs money business and the Spanish negotiations, which the images place around 002-011, but none of those leaves shows cipher, so the list order does not locate it. The rest of the unit was not read at a size where cipher could be told from Kurrent. Next: page images 015-413 at about 1500 px per opening.",
+  "access": "online",
+  "access_note": "digitalisate-he.arcinsys.de/hstad/d_4/185--3/hstad_d_4_nr_185--3_000.jpg to _413.jpg, about 1 MB each, answer curl."
+ },
+ "2522": {
+  "verdict": "key_lookup",
+  "confidence": "medium",
+  "note": "Topelius's own youthful cipher is solved and published: the SLS edition Zacharias Topelius Skrifter (Dagböcker, introduction) says his 'chifferskrift' of Jan 1833 - Feb 1837 is a 27-sign simple substitution (i=j, v=w), deciphered by Vasenius (Zachris Topelius I, p. 382 f.), and the edition prints every ciphered diary passage resolved. The 1832 diary already mentions writing and reading a 'chifferlapp'. The NB 244.182 file 'Chifferskrift 1832' itself was not seen and may be a key sheet or text in that cipher; either way it is a lookup with the published key, not an open cipher.",
+  "access": "archive",
+  "access_note": "National Library of Finland, Topelius collection Coll. 244.182, no images online; the Finna record and API now answer a Cloudflare challenge to scripts (16 Nov 2026). The SLS edition is open (topelius.sls.fi; its search backend api.sls.fi/digitaledition/topelius/search/elastic/topelius answers POST queries).",
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "not online",
+    "where": "Finna record fonte.168242480766500_172896282619400 as quoted in the lead (title 'Chifferskrift 1832', Coll. 244.182 Barndoms- och ungdomsproduktion); not re-read, Finna answers a Cloudflare challenge. SLS edition Zacharias Topelius Skrifter searched through its Elasticsearch backend (api.sls.fi/digitaledition/topelius/search/elastic/topelius) for chiffer*, chifferskrift and 244.182: the Dagböcker introduction (Swedish and Finnish), the diaries 1832-1839 and their commentaries were read in the returned passages.",
+    "extent": "One file in the childhood manuscripts, extent not stated; the file itself was not seen.",
+    "cipher": "The file is known only by its title. The SLS Dagböcker introduction describes Topelius's cipher: 27 sign combinations, one per letter, i/j and v/w sharing a sign, no case distinction, used for passages about Mathilda in the diaries of Jan 1833 to Sept 1836 and Feb 1837; the 1832 diary (Coll. 244.131) mentions reading 'chifferlappen' and writing a 'chifferlapp'."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on Topelius and Chifferskrift: only this lead; no DECODE record.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for Topelius and Chifferskrift: no hit.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for Topelius and Chifferskrift: no hit.",
+    "edition": "Zacharias Topelius Skrifter (SLS), Dagböcker: the introduction states the cipher was interpreted by Vasenius and that cipher passages are printed resolved (in lighter type) in the edition; Nyberg's older edition of the diaries (1918-22) also replaced the cipher with the corresponding words. Whether the 244.182 file itself is printed was not found: the edition cites 244.182 only for paper figures with pictograms and for drama drafts.",
+    "literature": "Vasenius, Zachris Topelius I, p. 382 f. (cited by the SLS edition) explains the cipher. A web search for 'Topelius chifferskrift 1832' found nothing more."
+   },
+   "key_check": "The key is published: Vasenius I p. 382 f. and the SLS edition's reading of every diary cipher passage, from which the 27-sign alphabet can be rebuilt. Not applied to this file, which is unseen.",
+   "duplicates": "known.py and the leads: no other Topelius entry. The diary cipher passages (Coll. 244.131-132) are a different, already edited, body of text.",
+   "verdict": "key_lookup",
+   "closed": "Topelius's cipher of 1833-37 is a simple substitution solved by Vasenius and printed resolved in the SLS edition; the 1832 file in Coll. 244.182 is most likely in it (or is its key), so it is a lookup with a published key, not an open cipher.",
+   "searches": [
+    {
+     "query": "api.sls.fi Topelius Elasticsearch: chiffer* OR chifferskrift",
+     "result": "Dagböcker introduction: cipher of 27 signs deciphered by Vasenius, passages printed resolved; diaries 1832 ('chifferlapp'), 1834-36 cipher mentions."
+    },
+    {
+     "query": "api.sls.fi Topelius Elasticsearch: 244.182",
+     "result": "Only pictogram paper figures and drama drafts cited from 244.182; the Chifferskrift 1832 file not cited."
+    },
+    {
+     "query": "Topelius \"chifferskrift\" 1832 (web)",
+     "result": "Nothing on the file."
+    }
+   ]
+  }
+ },
+ "2523": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "Not assessed: Finna (api.finna.fi and finna.fi) now answers a Cloudflare challenge to scripts (16 Nov 2026), so the record could not be re-read; the title 'santarmiston salakirjoitusta sisältävä kirje' (a letter containing the gendarmerie's cipher) reads more like a key sent to the Governor-General's deputies than a ciphertext, but that needs the unit (Astia order).",
+  "access": "archive",
+  "access_note": "Kansallisarkisto, Astia order; Finna behind Cloudflare to scripts."
+ },
+ "2548": {
+  "verdict": null,
+  "confidence": "low",
+  "note": "No new evidence: the archieven.nl inventory page loads its results by JavaScript and returned no text to curl (16 Nov 2026). The 11 Nov vetting_held block (verdict open from the archive's description) stands; its only doubt is that the inventory gives the letter's purport, so a reading may lie with the letter in the KHA file. That is a decision for the coordinator, not a new finding.",
+  "access": "archive",
+  "access_note": "Koninklijk Huisarchief, written request; no scans."
+ },
+ "2581": {
+  "verdict": "open",
+  "confidence": "medium",
+  "note": "Of the five MHC sheets only 3352 (Refet to Muzaffer, 25 Jun 1921) is ciphertext: about nine lines of four-digit groups in Arabic-Indic numerals on a telegram form, catalogued as not deciphered, nothing written over the groups. 1186 and 3874 are one and the same image, a clear 'suret' (copy) of cipher telegrams of 30-31 Mar 1921, and 1830 and 3284 are clear cover notes, so the lead should be narrowed to MHC 3352. The lead stays held by Daniel's 14 Nov rule that 1921 is outside the pre-1920 scope of this pass; the verdict is given for when that rule is lifted.",
+  "access": "online",
+  "access_note": "CONTENTdm (cdm21054.contentdm.oclc.org) and the Koc image host libdigitalcollections.ku.edu.tr reset the TLS connection from this machine and from WebFetch on 16 Nov 2026; the images were seen through Europeana's thumbnail cache (api.europeana.eu/thumbnail/v2/url.json?uri=...MHC/<id>/default.jpg&size=w400), 400 px wide only.",
+  "lead_updates": {
+   "title": "War of Independence telegram, 25 Jun 1921: Lt Col Refet (for the Chief of the Quartermaster Corps) to Muzaffer, four-digit code groups, catalogued 'not yet deciphered' (MHC 3352)",
+   "shelfmark": "Koc University, Askeri Tarih Koleksiyonu (Military History Collection, CONTENTdm MHC), item 3352 (Europeana 665/_providedCHO_MHC_EMC_07_ms_196_jpg)",
+   "folio_note": "1 telegram form, about 9 lines of up to 6 four-digit groups (about 50 groups), Arabic-Indic numerals; date line 25.6.(1)337. Not part of this entry: MHC 1186 and 3874 (one image, clear 'suret' copy of cipher telegrams of 30-31 Mar 1921), 1830 (14 Jun 1921) and 3284 (20 Jun 1921), clear cover notes about cipher telegrams."
+  },
+  "vetting": {
+   "date": "2026-11-16",
+   "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
+   "seen": {
+    "kind": "scan",
+    "where": "Europeana thumbnail cache of the Koc MHC images, 400 px: MHC 3352 (api.europeana.eu/thumbnail/v2/url.json?uri=https://cdm21054.contentdm.oclc.org/digital/api/singleitem/image/MHC/3352/default.jpg&type=IMAGE&size=w400), and the same route for 3284, 1830, 1186 and 3874; Europeana record JSON 665/_providedCHO_MHC_* (record/v2 API) for titles and descriptions. The full-size CONTENTdm images did not load from here.",
+    "extent": "MHC 3352: one printed telegram form with about nine lines of up to six four-digit numeral groups (roughly 50 groups), address line at the top and a short clear line and signature under the groups. The other four sheets hold no ciphertext.",
+    "cipher": "3352 is wholly in four-digit groups (Arabic-Indic numerals), a numerical code or enciphered code; no words or letters are written over or beside the groups at thumbnail size, and the Koc description calls it 'cozulmemis sifreli metin' (encoded text not yet deciphered). 1186 and 3874 are the same image, a clear handwritten 'Suret' (copy) of two cipher telegrams, and 1830 and 3284 are clear cover notes saying a cipher was sent or answered."
+   },
+   "prior_art": {
+    "decode": "known.py (DECODE dumps and the repo ledgers) on MHC, Koc, Koc University, Refet, Muzaffer and 1921: only this lead and its duplicate lead 2651; no DECODE record of a Turkish War of Independence cipher.",
+    "tomokiyo": "Tomokiyo's unsolved.htm (fetched 15 Nov 2026) grepped for MHC, Koc, Refet, Muzaffer and 1921: no hit, no Turkish 1921 item.",
+    "lasry": "Lasry's GL.htm list (fetched 15 Nov 2026) grepped for the same terms: no hit.",
+    "edition": "No edition of the MHC telegrams is known; the Koc catalogue itself records 3352 as not deciphered. The 1921 General Staff and Quartermaster correspondence is not printed with this telegram in any source found.",
+    "literature": "Web search (Turkish: Kurtulus Savasi sifreli telgraf cozulmemis 1921, Levazimat-i Umumiye Refet Muzaffer sifre anahtari) returned the Europeana record itself and general Belleten and DergiPark articles on cipher telegraph traffic in 1921; none names a key or reading of this telegram."
+   },
+   "key_check": "No key for the 1921 Ankara General Staff or Quartermaster code is held in the repo or on DECODE; the Hamidian HPBK systems A and B (catalogue 2646, 2647) are earlier and use five-digit or two-digit groups, so they are not obvious candidates. Untested.",
+   "duplicates": "Lead 2651 was closed on 14 Nov 2026 as a duplicate of this lead (same five MHC items). known.py finds no catalogue entry for MHC 3352; the HPBK entries 2575, 2577, 2646, 2647 are other collections and years.",
+   "verdict": "open",
+   "searches": [
+    {
+     "query": "Europeana record/v2 665/_providedCHO_MHC_* (5 records)",
+     "result": "Titles and descriptions: 3352 'cozulmemis sifreli metin'; 1186 and 3874 identical 'sifre sureti' (copy of a cipher) of 30-31 Mar 1921; 1830 copy of a Kastamonu cipher sent on; 3284 Fevzi's note that the answer was sent in cipher."
+    },
+    {
+     "query": "Europeana thumbnail cache, 400 px, of MHC 3352, 3284, 1830, 1186, 3874",
+     "result": "Only 3352 shows numeral groups; the others are clear Ottoman-script letters, and 1186 and 3874 are the same image."
+    },
+    {
+     "query": "Kurtulus Savasi sifreli telgraf cozulmemis sifre 1921 Levazimat-i Umumiye Refet Muzaffer sifre anahtari",
+     "result": "No reading or key; only the Europeana record and general articles on 1921 cipher telegrams."
+    }
+   ]
+  }
+ }
+}

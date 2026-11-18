@@ -1,0 +1,152 @@
+import json
+HP = 'https://cdm21054.contentdm.oclc.org/digital/collection/HPBK/id/'
+
+
+def lk(ids):
+    return [{'href': HP + str(i), 'label': 'HPBK item %d' % i} for i in ids]
+
+
+SRC = 'Koç/Ottoman deep sweep, 14 Nov 2026'
+ACC = ('Images online, open, CC BY-NC-ND 3.0 (Koç University); the image server answers 502 often, retry with '
+       'pauses (about a fifth of first requests failed, a few items failed repeatedly)')
+PA = ('open as far as checked (14 Nov 2026): known.py (HPBK, Hilmi Paşa, Mabeyn, cdm21054) and web search found no '
+      'study of these Mabeyn-Yemen telegrams; Tomokiyo, DECODE and HistoCrypt not searched beyond known.py. The '
+      'Cryptologia 2023 and Karabacak Yılmaz papers cover Ottoman diplomatic ciphers 1797-1877 from BOA, not this '
+      'palace-to-province traffic')
+base = dict(region='Other', seen='image', needs_archive_scan='no', access_note=ACC, source=SRC, prior_art=PA,
+            period='1801-1900', cls='A')
+R = []
+R.append(dict(
+    base,
+    language='Ottoman Turkish plaintext (Arabic script) under a two-digit-numeral cipher; telegram forms',
+    year=1899, date='Aug 1896 - Jun 1901 (items 587, 602, 562, 546, 577, 575, 578, 599, 576)',
+    title=("Mabeyn to Yemen, system B: two-digit numeral cipher (values about 44-49, 55-59, 64-71) with the clerk's "
+           "Arabic letters written above the numbers, nine or more telegrams 1896-1901, with same-day clear copies "
+           "for 28 Apr 1901 and 5 Jun 1901"),
+    correspondents='Mabeyn-i Hümayun cipher clerks (Mehmed Kamil, Asım) -> Yemen Province (Hüseyin Hilmi Paşa)',
+    place='Istanbul (Yıldız) -> Sanaa',
+    shelfmark=('Koç University, Hilmi Paşa Belgeleri Koleksiyonu (HPBK) items 587, 602, 562, 546, 577, 575, 578, 599, '
+               '576, 580, 585; clear copies 725, 748, 726, 764, 1070'),
+    folio_note=('Viewed on 14 Nov 2026 (contact sheets, 576/578 at full size): 576, 578, 575, 587, 602, 562, 546, 577, '
+                '580, 585, 599. All show a numeral stream on a Télégramme form with a single Arabic letter written '
+                'above most numbers, apparently the clerk\'s decipherment, i.e. a crib inside the ciphertext (not '
+                'yet checked letter by letter). 725 (28 Apr 1901, clear: a proposal to a bandit leader) and 726 '
+                '(5 Jun 1901, clear: to cipher clerk Asım on German agitation) are clear sheets of the same days as '
+                '578/599 and 576; 764 and 1070 look clear too.'),
+    status=('Catalogue calls 576 "content could not be deciphered"; the letters above the numbers are not mentioned. '
+            'No published decipherment found. The previous sweep (row 3) listed 576 and 578 only as undeciphered.'),
+    why=('A ciphertext that carries a letter-by-letter reading above it, in a small numeral alphabet (about 20 '
+         'values, homophones for frequent letters), plus clear copies of the same days, makes the key recoverable '
+         'from the page and checkable against the clear copies; a dozen telegrams give a corpus.'),
+    importance=3, solvability=5, difficulty=2,
+    verify=('Transcribe numerals and letters for 576 and 578, tabulate number->letter, test it on 587/602/562/546/'
+            '577/575/580/585/599, and compare the readings for 28 Apr 1901 and 5 Jun 1901 with 725/748 and 726; '
+            'then 1070 for 6 Feb 1900 (575).'),
+    links=lk([576, 578, 599, 725, 748, 726, 764, 575, 1070, 587, 602, 562, 546, 577, 580, 585]),
+    score_note='importance 3 (modest messages, new vein), solvability 5 (interlinear letters on the page), difficulty 2'))
+R.append(dict(
+    base,
+    language='Ottoman Turkish words over a five-digit code-group cipher; telegram forms',
+    year=1901, date='Feb 1900 - Oct 1902 (items 563, 595, 600, 560, 542, 579, 550, 568, 556, 551, 565, 581)',
+    title=("Mabeyn to Yemen / 7th Army, system A: five-digit code groups with the clerk's Turkish words written "
+           "over or between the groups, twelve telegrams 1900-1902, with clear sheets for 9 and 13 Apr 1902"),
+    correspondents='Mabeyn-i Hümayun cipher office (Asım, Osman) -> Yemen Province, 7th Army (Müşir)',
+    place='Istanbul (Yıldız) -> Sanaa',
+    shelfmark=('Koç University, HPBK items 563, 595, 600, 560, 542, 579, 550, 568, 556, 551, 565, 581; clear copies '
+               '732 and 766 (9 and 13 Apr 1902), 1070'),
+    folio_note=('Viewed on 14 Nov 2026 as contact sheets (600 at full size). Five-digit groups with Arabic-script '
+                'words written above or beside many of them. 595 and 600 are two telegrams of 21 Feb 1901. 732 and '
+                '766 are catalogued as encrypted documents dated 9 and 13 Apr 1902, the days of 542/579 and '
+                '550/568; their pages were not opened (a plain-text sheet is likely, as with 726 and 1070).'),
+    status=('Catalogue: "content could not be deciphered" for most. The words on the page are not mentioned in the '
+            'catalogue. Same code family as the previous sweep\'s row 1 (772, 688, 533, 18-19 Dec 1898, with one '
+            'clear translation 727); merge if one codebook reads all.'),
+    why=('The words over the groups give group->word pairs directly, the 1898 translation adds more; the code is the '
+         'Mabeyn-Yemen telegraphic code of 1898-1902, so one codebook may read this row and row 1 of the previous '
+         'sweep.'),
+    importance=4, solvability=4, difficulty=3,
+    verify=('Transcribe 600 and 595 (same day), build group->word from the words above the groups, test on 563, 560, '
+            '579, 542, 550, 568; open 732/766 and compare; then the Dec 1898 sheets (772, 688, 533 against 727).'),
+    links=lk([600, 595, 560, 563, 542, 579, 550, 568, 556, 551, 565, 581, 732, 766]),
+    score_note='importance 4 (the Hamidian palace code with a partial reading on the page), solvability 4, difficulty 3'))
+R.append(dict(
+    base,
+    language='Ottoman Turkish (clear), about a cipher book',
+    year=1900, date='undated (Hamidian period)', seen='catalogue',
+    title='HPBK 1791: "A document on special encryption book" (Hususi şifre kitabı hakkında belge)',
+    correspondents='Mabeyn-i Hümayun / Yemen Province (not stated in the catalogue)',
+    place='Istanbul / Sanaa',
+    shelfmark='Koç University, HPBK item 1791',
+    folio_note='NOT viewed: the image server returned 502 on every request (five tries).',
+    status='Catalogue only. A document about a cipher book may say which code was in use or carry its key.',
+    why='The only item in the collection about a cipher book itself; could name or hold the codebook for the family.',
+    importance=3, solvability=3, difficulty=2,
+    verify='Retry the image; read it; look for a codebook table, key numbers or the books issued to Yemen.',
+    links=lk([1791]),
+    score_note='importance 3, solvability 3 (unknown until seen), difficulty 2'))
+R.append(dict(
+    base,
+    language='numerical code (English cover letters; ciphertext language not stated)',
+    year=1808, date='28-30 Apr 1808', seen='catalogue',
+    title=('James Justinian Morier (secretary to Sir Harford Jones, Persia) to the Secret Committee: copies of '
+           'letters written in numerical code, IOR/L/PS/9/67/18-21'),
+    correspondents=('James Morier, Private Secretary to Sir Harford Jones, HM Envoy to Persia -> Secret Committee, '
+                    'East India Company'),
+    place='Persia -> London',
+    shelfmark=('British Library IOR/L/PS/9/67/18 (20 images), /19 (4 images), /20, /21; Qatar Digital Library '
+               'vdc_100038378586.0x000016 to .0x000019'),
+    folio_note=('NOT viewed: qdl.qa and iiif.qdl.qa answer 403 to scripts; the catalogue text was read in Chrome '
+                '(same-origin fetch).'),
+    status=('Catalogue: "a copy of a letter written in numerical code". Not covered by the QDL sweep (1900-1950) or '
+            'the jones1802 target (Baghdad informants, 1802). Whether a deciphered version is enclosed is not '
+            'stated.'),
+    why=('A Persian-mission numerical code of 1808 in copied form; the Company files may hold the plain reading '
+         'beside it (Franco-Persian rivalry, Gardane).'),
+    importance=3, solvability=3, difficulty=3,
+    access_note='Free IIIF images on QDL; qdl.qa blocks curl/WebFetch (Cloudflare 403) but opens in Chrome',
+    prior_art=('open as far as checked (14 Nov 2026): known.py on the IOR shelfmarks found nothing; Tomokiyo and '
+               'DECODE not searched'),
+    verify=('Open the four files in Chrome; see whether numerals or a plain reading are given; check the '
+            'neighbouring IOR/L/PS/9/67 items.'),
+    links=[{'href': 'https://www.qdl.qa/en/archive/81055/vdc_100038378586.0x000016', 'label': 'QDL IOR/L/PS/9/67/18'},
+           {'href': 'https://www.qdl.qa/en/archive/81055/vdc_100038378586.0x000017', 'label': 'QDL IOR/L/PS/9/67/19'}],
+    score_note='importance 3, solvability 3 (unseen), difficulty 3'))
+R.append(dict(
+    base,
+    language='unknown', seen='catalogue',
+    year=1907, date='1907', period='1901-1950',
+    title="Ali Ekrem Bey's Collection (Open Jerusalem): encrypted telegrams of 1907, Ottoman Turkish metadata",
+    correspondents='Ali Ekrem Bey, governor of Jerusalem, and Ottoman ministries (not checked)',
+    place='Jerusalem',
+    shelfmark=('Open Jerusalem (openjerusalem.org) ark:/58142/2ZV2N, /3DGLf, /9WlLC, /MGbhH, /2KDbX, /N4pcc (the six '
+               'records a web search returned)'),
+    folio_note=('NOT reached: openjerusalem.org and archives.openjerusalem.org gave no page to Python, WebFetch '
+                '(ECONNREFUSED) or Chrome (navigation did not complete). Only a search-engine snippet says '
+                '"encrypted telegrams, 1907".'),
+    status='Lead from a search engine only; nothing seen.',
+    why='A provincial governor\'s ciphered telegrams of 1907 would be a second Ottoman code family beside HPBK.',
+    importance=2, solvability=2, difficulty=3,
+    access_note='site unreachable from this network on 14 Nov 2026',
+    prior_art=('open: not seen; sweep_2026-11_D_east_north recorded Open Jerusalem as unreachable and noted '
+               '"Interior Ministry cipher items"'),
+    verify='Retry from another network or the user\'s browser; list the six records and see whether they show numerals.',
+    links=[{'href': 'https://www.openjerusalem.org/ark:/58142/2ZV2N', 'label': 'Open Jerusalem record'}],
+    score_note='importance 2, solvability 2 (unseen), difficulty 3'))
+R.append(dict(
+    base,
+    language='Ottoman Turkish (Arabic script), cipher sheets 1921',
+    year=1921, date='Jun-Dec 1921', period='1901-1950', seen='catalogue',
+    title='Koç MHC (Military History Collection): the 1921 War of Independence cipher sheets, MHC checked in full',
+    correspondents='Müdafaa-yı Milliye Vekaleti, Erkan-ı Harbiye, Sevkiyat ve Nakliyat, Levazımat (Ankara)',
+    place='Ankara',
+    shelfmark='Koç University, MHC items 1186, 3874, 3284, 1830, 3352',
+    folio_note='Not viewed here. 1921 is after the pre-1920 band: recorded separately.',
+    status=('All 558 MHC records enumerated (title and description) and searched for şifre/rumuz/cipher: the same '
+            'five hits only. Nothing new.'),
+    why='Recorded so the next pass does not search MHC again; the earlier sweep holds the row.',
+    importance=1, solvability=2, difficulty=3,
+    verify='n/a (see the previous sweep, row 7)',
+    links=lk([1186, 3874, 3284, 1830, 3352]),
+    score_note='1921, after the leads window; for completeness'))
+json.dump(R, open('candidates.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print(len(R))

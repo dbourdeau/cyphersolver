@@ -1,4 +1,4 @@
-# R115 — The papal secretariat (not Alessandrino) to the nuncio Castagna, cipher of [Rome, about the end of January 1572] (Spagna 6/II/13, f. 641r): reading
+# R115 — Not Alessandrino (writer not established) to the nuncio Castagna, cipher of [Rome, about the end of January 1572] (Spagna 6/II/13, f. 641r): reading
 
 Rests on: the contemporary decipherment on a half-sheet bound with the cipher (`R115_decifrato_f641bis.txt`, DECODE
 cleartext image DOC_R115_D1340), found 23 Oct 2026 (r2g), and on the figures, read word by word against it

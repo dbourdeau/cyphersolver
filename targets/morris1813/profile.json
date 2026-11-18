@@ -928,6 +928,15 @@
    ],
    "what": "Project check of PR #570 (Brice Dudout): his decoder re-run (1,707 of 1,712 groups equal line_by_line_decode.txt) and the twelve word_share.py figures reproduced. His point on 370 checked in the key file and transcriptions: 370 ends the punctuation run 361-370 and follows a full stop in 19 of 21 places (the other two stand at a line head: after a line ending in 364, and before the coded signature of No. 12). With 370 left out of the word count Nos. 13 and 19 would be 0.972 and 0.962, No. 17 0.941. Not applied: the rule of 12 Nov 2026 and every read_share are kept; the change is left to the repository owner. Frame 1057 of M97 roll 13 not viewed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "The sign 370 checked on the code sheet (project check, on the owner's decision; observation by Brice Dudout, PR #570). NARA M97 roll 13 frames 1056 and 1057 fetched from catalog.archives.gov (medialz/dc-metro/rg-059/603720/M97/M97-013/M97-013-1056.jpg and -1057.jpg, 4288 x 3728 and 4304 x 3744, bitonal) and the cells enlarged. Numerical sheet (1057), sheet numbers 1261-1270 = Morris 361-370: , ; : . ! ? a dash, ( ), a double quotation mark, and in 1270 a small upright S-like sign with a loop in the middle and a hooked foot, like a section sign; the d of 'down' in the cell below runs into its foot. No word or syllable in the ten cells. Alphabetical sheet (1056), last column: after the figures 0-9 the same eleven marks are printed in the same order, each with its number written beside it (1261 to 1269, then a faint 1270 beside a printed sign of the same shape, a 2-like curl over a second curl). So 370 is the last entry of the sheet's list of punctuation marks on both halves. Recount in the transcriptions (one count per place, copies not counted twice): 22 places in the thirteen texts (frame 0039 3, No. 12 2, No. 13 2, No. 17 1, No. 18 4, No. 19 2, Cevallos note 6, No. 24 1, 24 March 1815 1; none in Nos. 14, 25, 26, 28), every one directly after the full stop 364 (twice across a line break) and before a new sentence, the coded signature or the end of the coded text; copy B of No. 13 leaves the final one out. Verdict: punctuation, not a word; which mark exactly (a section or paragraph sign) is not settled on this film. word_share.py changed to leave [370] out of words and holes: No. 12 0.983, No. 13 0.972 (72 words, 2 holes), No. 17 0.941 (34, 2), No. 18 0.971, No. 19 0.962 (104, 4), Cevallos 0.980, No. 24 0.977, 24 March 1815 0.978, frame 0039 0.971 (350, 10); Nos. 14, 25, 26, 28 unchanged. Thirteen texts: 2,609 coded words, 65 holes, 0.975 (was 2,631, 87, 0.967). Nos. 13 and 19 pass to read; No. 17 stays under 95%, so the class stays read in part.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -940,8 +949,8 @@
    "key extended or corrected"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Over the thirteen texts worked: 2,631 coded words in the readings, 87 of them holes (word_share.py for the twelve letters in beling/letters/, and the same rule by hand for frame 0039: 353 words, 13 holes). A hole is an unread group, a guessed [?word] or a word with supplied letters. This is a share of words, not of groups, and it does not cover the other coded frames of the roll, which are further copies or carry a clerk's decipherment and were not worked here.",
-  "fraction_read": 0.967,
+  "fraction_read_source": "Over the thirteen texts worked: 2,609 coded words in the readings, 65 of them holes (word_share.py for the twelve letters in beling/letters/, 2,259 words and 55 holes, and the same rule by hand for frame 0039: 350 words, 10 holes). A hole is an unread group, a guessed [?word] or a word with supplied letters. Since 14 Nov 2026 the sign 370 is counted as punctuation, neither word nor hole (22 places; before that 2,631 words, 87 holes, 0.967). This is a share of words, not of groups, and it does not cover the other coded frames of the roll, which are further copies or carry a clerk's decipherment and were not worked here.",
+  "fraction_read": 0.975,
   "parts": [
    {
     "label": "Code identification: the JQA table with Morris's sixteen blocks of 100 in reverse order (block_map.tsv)",
@@ -953,31 +962,31 @@
     "label": "Frame 0039: end of the letter of 4 January 1814 and start of the enclosed proposal (554 groups)",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "morris1813_reading.md: 0.965 of the words read as sense (Andrew Beling's count, PR #200), with non-blind rereads and clear copies; beling/frame39/frame0039_rereads.md"
+    "basis": "morris1813_reading.md: 0.971 of the coded words read as sense (350 words, 10 holes, 370 not counted; Andrew Beling's count in PR #200 was 0.965), with non-blind rereads and clear copies; beling/frame39/frame0039_rereads.md"
    },
    {
     "label": "Letters of 4 and 11 April and 11 May 1814, 27 January and 24 March 1815 (PR #200)",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "beling/letters/: word shares 0.972, 0.946, 0.962, 0.957 and 0.977 (word_share.py); two readers on the first four, one on the last; Woolfley (2013) quotes the two April passages"
+    "basis": "beling/letters/: word shares 0.983, 0.972, 0.962, 0.957 and 0.978 (word_share.py); two readers on the first four, one on the last; Woolfley (2013) quotes the two April passages"
    },
    {
     "label": "Nos. 18, 19 and 28 (20 September and 27 October 1814, 12 May 1815): no decipherment on the frames",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "word shares 0.958, 0.943 and 0.986 (word_share.py); all groups reproduce with an independent decoder; one reader; Woolfley (2013) quotes parts of Nos. 18 and 19"
+    "basis": "word shares 0.971, 0.962 and 0.986 (word_share.py); all groups reproduce with an independent decoder; one reader; Woolfley (2013) quotes parts of Nos. 18 and 19"
    },
    {
     "label": "Nos. 24 and 25 (30 December 1814, 6 January 1815) and the Cevallos note of 20 November 1814: a clerk's decipherment on another copy",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "the readings confirm contemporary decipherments: key-only decode against the clerk's words 0.904 (No. 24, frame 0196) and 0.945 (No. 25, frame 0174), shuffled keys at most 0.343, neither test blind; word shares 0.977, 1.000 and 0.962; the Cevallos numerals were transcribed with the clerk's copy already seen"
+    "basis": "the readings confirm contemporary decipherments: key-only decode against the clerk's words 0.904 (No. 24, frame 0196) and 0.945 (No. 25, frame 0174), shuffled keys at most 0.343, neither test blind; word shares 0.977, 1.000 and 0.980; the Cevallos numerals were transcribed with the clerk's copy already seen"
    },
    {
     "label": "No. 17 (21 June 1814): the three coded lines on frame 0111",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "53 groups; one sentence, two words inferred (0.914)"
+    "basis": "53 groups; one sentence, two words inferred (0.941)"
    },
    {
     "label": "Claiborne to Madison, 24 Oct 1805, 13 Jan and 25 Nov 1806 (NARA T260 rolls 7-8; claiborne/): the same reversed-block numbering; in progress",
@@ -987,9 +996,9 @@
    }
   ],
   "codes_open": {
-   "open": 3,
+   "open": 2,
    "total": 512,
-   "tokens_open": 16
+   "tokens_open": 2
   },
   "verification": [
    "independent verification",
@@ -1114,15 +1123,15 @@
    {
     "who": "dudout",
     "role": "verification",
-    "note": "decoder re-run (1,707/1,712 groups); v10 gap explained (whole-file denominator); 370 shown to be a punctuation sign, which puts Nos. 13 and 19 over the read bar if not counted as a hole; VERIFY_dudout_20261114.md",
+    "note": "decoder re-run (1,707/1,712 groups); v10 gap explained (whole-file denominator); 370 shown to be a punctuation sign (adopted in the count on 14 Nov 2026 after the code sheet was seen, which puts Nos. 13 and 19 over the read bar); VERIFY_dudout_20261114.md",
     "date": "2026-11-14"
    }
   ],
   "gaps": [
    {
-    "item": "[370], the sign after full stops (22 times in the thirteen texts)",
-    "blocker": "open-codes",
-    "detail": "the cell of the code sheet has a z-like sign and no value"
+    "item": "the exact mark that 370 stands for (22 places in the thirteen texts, each directly after the full stop 364)",
+    "blocker": "illegible",
+    "detail": "its meaning as punctuation is settled: on both halves of the code sheet (NARA M97 roll 13 frames 1056 and 1057, seen 14 Nov 2026) it is the last entry of the list of punctuation marks, and it is not counted as a word. The mark itself, a small S-like sign with a second curl under it, like a section sign, cannot be named with certainty on the bitonal film; Weber's print of WE028 was not seen"
    },
    {
     "item": "575.1060 in No. 19 (an adverb before 'guards')",
@@ -1164,7 +1173,7 @@
     "reading": "morris1813_reading.md",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.965,
+    "read_share": 0.971,
     "reading_review": {
      "grade": "A",
      "by": "Andrew Beling",
@@ -1185,7 +1194,7 @@
     "reading": "beling/letters/1814-04-04_No12/reading.txt",
     "language": "en",
     "state": "read",
-    "read_share": 0.972,
+    "read_share": 0.983,
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
@@ -1201,13 +1210,13 @@
     "decryption": "beling/letters/1814-04-11_No13/first_reader_line_by_line_both_short_letters.md",
     "reading": "beling/letters/1814-04-11_No13/reading.txt",
     "language": "en",
-    "state": "read in part",
-    "read_share": 0.946,
+    "state": "read",
+    "read_share": 0.972,
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Two coherent sentences. Short: two word endings inferred and the unread sign twice put it under the 95% bar by the word count."
+     "note": "Two coherent sentences; two word endings inferred. Until 14 Nov 2026 the sign 370, which stands twice, was counted as two unread words (0.946, read in part); it is a punctuation sign of the code sheet and is no longer counted, so 70 of 72 coded words (0.972)."
     },
     "summary": "Morris means to go to Madrid shortly, to be nearer the source of authentic information; he has not heard from Monroe since reaching Europe and acts on his own discretion."
    },
@@ -1236,12 +1245,12 @@
     "reading": "beling/letters/1814-06-21_No17/reading.txt",
     "language": "en",
     "state": "read in part",
-    "read_share": 0.914,
+    "read_share": 0.941,
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "One sentence, coherent; two words inferred (a blotted group and a syllable that misfits). Transcribed and read by the same reviewer on 12 Nov 2026."
+     "note": "One sentence, coherent; two words inferred (a blotted group and a syllable that misfits). Transcribed and read by the same reviewer on 12 Nov 2026. With the sign 370 no longer counted (14 Nov 2026) two of 34 coded words are holes, 0.941: still under the 95% bar."
     },
     "summary": "After nine pages in clear on the king's return, Morris ends in code: in this unexpected state of things he thinks it best to stay quiet until he hears from Monroe."
    },
@@ -1256,7 +1265,7 @@
     "reading": "beling/letters/1814-09-20_No18/reading.txt",
     "language": "en",
     "state": "read",
-    "read_share": 0.958,
+    "read_share": 0.971,
     "summary": "The Inquisition restored in July against the wishes of all the ministers, through the king's confessor and the papal nuncio; the Cortes' decrees on the tobacco and other monopolies repealed; arrests, discontent and disturbances at Cadiz; benevolences and forced loans; the king in the arms of the nobility and clergy; no change on Florida and Louisiana; Casa Yrujo reported as the next secretary of state.",
     "reading_review": {
      "grade": "A",
@@ -1272,14 +1281,14 @@
     "decryption": "beling/letters/1814-10-27_No19/line_by_line_decode.txt",
     "reading": "beling/letters/1814-10-27_No19/reading.txt",
     "language": "en",
-    "state": "read in part",
-    "read_share": 0.943,
+    "state": "read",
+    "read_share": 0.962,
     "summary": "After calling on the Duke de San Carlos on the 13th (page 1, in clear), Morris reports in code that the duke received him without cordiality and has not answered, and that the press and the post office are guarded against anything unfavourable to the government or to Britain and against foreign papers.",
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Three coherent sentences, but six of 106 coded words are holes once 'approbation' (ap-pro-bat-ad) is marked as inferred: under the 95% bar, so read in part. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): three coherent sentences, three marked spots (actual, carefully, the unread adverb 575.1060); he added a note that 'office' in 'post office' is read by the stroke rule, with no clerk's check."
+     "note": "Three coherent sentences; four of 104 coded words are holes ('approbation', ap-pro-bat-ad, marked as inferred with them): 0.962. Until 14 Nov 2026 the sign 370, which stands twice, was counted as two more holes (six of 106, 0.943, read in part); it is a punctuation sign of the code sheet and is no longer counted. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): three coherent sentences, three marked spots (actual, carefully, the unread adverb 575.1060); he added a note that 'office' in 'post office' is read by the stroke rule, with no clerk's check."
     }
    },
    {
@@ -1290,7 +1299,7 @@
     "reading": "beling/letters/1814-11-20_Cevallos/reading.txt",
     "language": "es",
     "state": "read",
-    "read_share": 0.962,
+    "read_share": 0.98,
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
@@ -1309,7 +1318,7 @@
     "contemporary": "beling/letters/1814-12-30_No24/clerk_decipherment_0196.txt",
     "language": "en",
     "state": "read",
-    "read_share": 0.969,
+    "read_share": 0.977,
     "summary": "From a source he trusts: the Council of State is preparing a report to the king recommending a declaration of war on the United States over Louisiana and Florida; 47,000 soldiers and 5,000 officers back from France, at least 160,000 under arms, and two expeditions of ten thousand fitting out at Cadiz for Mexico and Buenos Aires, to sail early in January.",
     "reading_review": {
      "grade": "A",
@@ -1361,7 +1370,7 @@
     "reading": "beling/letters/1815-03-24/reading.txt",
     "language": "en",
     "state": "read",
-    "read_share": 0.977,
+    "read_share": 0.978,
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
@@ -1412,6 +1421,6 @@
    "block_map.tsv",
    "beling/key/codebook_M97_13_transcription.csv"
   ],
-  "notes": "Contributed by WAINUT (catalogue 650, PR #114: the block reversal and frame 0039) and Andrew Beling, with AI agents (PR #200: the WE028 key sheet, five letters and frame 0039 reread; PR #415: Nos. 18, 19, 24, 25, 28). Integrated 12 Nov 2026: read_share on every letter is the word share of word_share.py (README read bar: unread groups, guessed words and supplied letters are holes); the contributor's own figure for the five PR #415 letters is a share of groups (0.981, 0.955, 0.980, 1.000, 1.000; beling/scripts/read_share.py). On frame 0039 it is Andrew Beling's word count by the same rule (0.965; a recount at integration gives 0.963). The Cevallos note and the No. 17 lines were transcribed and read at integration by one reader. codes_open covers the seven letters in the decode650 format (1,709 groups, 512 distinct): the groups with no reading at all are 370, 575 and 1060. The order of the contributor's work (numerals frozen before decoding) is by the contributor's record: the pull request is a single commit. Same code as ../jqa; Morris's block order is in block_map.tsv. 14 Nov 2026: the former target claiborne1806 (Brice Dudout, PR #564 and PR #581) is folded in under claiborne/ (one key, one entry): Claiborne's 1805 copy has the same reversed blocks. That part is in progress (the letters of 18 and 19 Nov 1806 at the Library of Congress and the printed edition were not seen); its texts are Wagner's decipherments and its figures (295 of 328 words mechanically) are kept apart from fraction_read, which covers the thirteen Morris texts only."
+  "notes": "Contributed by WAINUT (catalogue 650, PR #114: the block reversal and frame 0039) and Andrew Beling, with AI agents (PR #200: the WE028 key sheet, five letters and frame 0039 reread; PR #415: Nos. 18, 19, 24, 25, 28). Integrated 12 Nov 2026: read_share on every letter is the word share of word_share.py (README read bar: unread groups, guessed words and supplied letters are holes); the contributor's own figure for the five PR #415 letters is a share of groups (0.981, 0.955, 0.980, 1.000, 1.000; beling/scripts/read_share.py). On frame 0039 it is the project's recount by the same rule (350 words, 10 holes, 0.971; Andrew Beling's count in PR #200 was 0.965, and the recount at integration, with 370 as a hole, 0.963). The Cevallos note and the No. 17 lines were transcribed and read at integration by one reader. codes_open covers the seven letters in the decode650 format (1,709 groups, 512 distinct): the groups with no reading at all are 575 and 1060. Rule of 12 Nov amended on 14 Nov 2026 (owner's decision, after Brice Dudout's observation in PR #570 and a look at the code sheet on NARA M97 roll 13 frames 1056-1057): the sign 370 is the eleventh and last entry of the sheet's list of punctuation marks and follows the full stop 364 at all 22 places, so it is punctuation, neither a word nor a hole; before that each [370] was one hole (2,631 words, 87 holes, 0.967; No. 13 0.946, No. 19 0.943, No. 17 0.914; codes_open 3 open, 16 tokens). Nos. 13 and 19 are now over the 95% bar; No. 17 (0.941) is not, so the class stays read in part. The order of the contributor's work (numerals frozen before decoding) is by the contributor's record: the pull request is a single commit. Same code as ../jqa; Morris's block order is in block_map.tsv. 14 Nov 2026: the former target claiborne1806 (Brice Dudout, PR #564 and PR #581) is folded in under claiborne/ (one key, one entry): Claiborne's 1805 copy has the same reversed blocks. That part is in progress (the letters of 18 and 19 Nov 1806 at the Library of Congress and the printed edition were not seen); its texts are Wagner's decipherments and its figures (295 of 328 words mechanically) are kept apart from fraction_read, which covers the thirteen Morris texts only."
  }
 }

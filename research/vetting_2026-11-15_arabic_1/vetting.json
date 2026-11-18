@@ -1,0 +1,79 @@
+{
+ "2884": {
+  "date": "2026-11-15",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Opus 5.5), 15 Nov 2026",
+  "unvetted": "Not established as a cipher rather than an unidentified script. The sign side is real running text with no gloss, it is not edited in Schäfer-Shaked MTKG I-III (tables of contents of all three volumes read), and nothing published on it was found; but nobody has ruled out a known script (the Geniza holds Indian-script letters that were long unidentified: Bohak's Devanagari T-S AS 159.247-248, Fragment of the Month March 2008), and Bohak's inventory of Geniza magical fragments and the MTKG Geniza-Fragmente indices (Bd. I-III) were not opened. Next step: a palaeographer's identification (Bohak or Elbaum, Princeton Geniza Project) and the MTKG registers; if no script matches, the lead can be written open.",
+  "seen": {
+   "kind": "scan",
+   "where": "CUDL IIIF, sign side MS-TS-K-00024-00024-000-00001.jp2 (native 3806 x 3664 px) viewed at 2000 x 1925 px whole, and a native-resolution region 1700,1300,1900,1500 (right half of lines 5-11 with the margin column); Arabic side MS-TS-K-00024-00024-000-00002.jp2 at 2000 x 1861 px. 15 Nov 2026.",
+   "extent": "One side: 11 full lines and a partial line at the torn foot, about 20-25 signs each, roughly 250 signs, with long rising strokes, dots above and below some signs and between groups; a narrow column of fainter, boxed signs down the right margin. Other side: 7 lines of large Arabic script and a row of strokes at the foot.",
+   "cipher": "An unidentified sign script in lines, not a row of charakteres: hooked and looped signs, some like Hebrew bet, he, het, tet, with dots. It is not the Bohak cipher of T-S K24.19 (that fragment viewed at 1600 px for comparison: a different, rounded alphabet). Nothing is written between the lines or beside them in another script, and no key or transcription is filed with it (PGP 33913: no transcription, no bibliography)."
+  },
+  "prior_art": {
+   "decode": "decode_search.py on 'Geniza', 'Taylor-Schechter' and 'Cambridge University Library': 0 records each (the script answers 55 pages for 'Vienna', so it works); DECODE holds no Geniza record found this way.",
+   "tomokiyo": "Cryptiana not expected to cover Geniza magic; a site-restricted web search (Geniza, cipher, Hebrew letters) returned no Cryptiana page.",
+   "lasry": "Cryptiana GL.htm (Lasry's solved list) fetched 15 Nov 2026: 0 hits for Geniza, Genizah, Hebrew, Arabic, Judaeo, Cambridge or Egypt.",
+   "edition": "Schäfer and Shaked, Magische Texte aus der Kairoer Geniza I (1994), II (1997), III (1999): front matter PDFs from mohrsiebeck.com (eBook ISBNs 978-3-16-158742-9, -158749-8, -158756-6) read; the edited items nos. 1-84 contain no T.-S. K 24.24. The Geniza-Fragmente registers (cross-references) were not opened. No other edition known; PGP lists no bibliography for 33913 or 32108.",
+   "literature": "Bohak, 'Cracking the Code and Finding the Gold' (2010; read for the Hebrew sweep, research/sweep_2026-11_hebrew/README.md) lists the fragments of his cipher (K24.19, K24.23, K5.7, Misc.10.60, Misc.11.91, Misc.22.218, ENA 3211.1-2): K24.24 is not among them. Web searches on the shelfmark found only the PGP records. Bohak's general inventory of Geniza magical texts not opened."
+  },
+  "key_check": "No key known for this script. The Bohak cipher key (T-S K24.19 group) does not apply: the alphabet differs on sight. Not tested further: identification comes first.",
+  "duplicates": "known.py 'K24.24', '33913', '32108': only this lead, its sweep notes (sweep_2026-11-15_arabic part_A, README, candidates) and the Hebrew sweep's table row (unchecked), plus a mention in targets/tsas187240/NOTES.md as a sibling glyph cipher; no catalogue entry or target for it. decode_search.py as above, 0. Open issues and pull requests searched for 2884 and K24.24: none (PR #682 is the sweep itself).",
+  "searches": [
+   {"query": "\"K24.24\" Geniza magical cipher", "result": "PGP 33913 ('Magical fragment, perhaps. Unidentified alphabet or cipher') and the K24.19 / K24.23 Bohak-cipher records; no publication on K24.24."},
+   {"query": "\"T.-S. K 24.24\" OR \"TS K 24.24\" OR \"T-S K 24.24\" Genizah", "result": "Only PGP 33913 and 32108 (and the unrelated T-S 24.24 deed); nothing in print."},
+   {"query": "Schäfer-Shaked MTKG I-III tables of contents (Mohr Siebeck front-matter PDFs)", "result": "Items 1-84 listed; K 24.24 not edited in any of the three volumes."},
+   {"query": "Bohak Geniza magical fragments unidentified alphabet cipher Cambridge Genizah blog \"K24\"", "result": "Bohak's FOTM March 2008 on T-S AS 159.247-248 (Devanagari, language unidentified); no post on K24.24."}
+  ]
+ },
+ "2885": {
+  "date": "2026-11-15",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Opus 5.5), 15 Nov 2026",
+  "verdict": "partly_read",
+  "seen": {
+   "kind": "scan",
+   "where": "CUDL IIIF MS-TS-00013-J-00018-00019-000-00001.jp2 (recto, native 5685 x 8199 px) at 1387 x 2000 px whole and native-resolution regions 800,3950,2000,650 and 2800,3950,2000,650 (lines 11-12); verso MS-TS-00013-J-00018-00019-000-00002.jp2 (native 5819 x 8513) at 1367 x 2000 px whole. Printed text: India Book IV B no. 41 (H55), Goitein, Friedman and Ashur 2013, as reproduced on PGP 9097 (Hebrew headnote, edition and Hebrew translation), read 15 Nov 2026.",
+   "extent": "Recto line 11: five Greek/Coptic numeral signs after 'wa-l-'; recto line 12: three signs at the line start; verso line 5: about 11 signs (PGP: MAF reads 1, 60, 100, 400, 40, 1, 100, 1, ?, 8, 8, with doubts). About 19 signs in three words inside a Judaeo-Arabic letter.",
+   "cipher": "Greek/Coptic (zimam) numeral signs standing for letters, written in the line of a Judaeo-Arabic letter of Yishaq Ibn Ezra to Halfon b. Netanel; seen at native resolution on the recto with nothing written above or beside them. The letter also uses code names ('the elephant', 'the letter nun')."
+  },
+  "prior_art": {
+   "decode": "decode_search.py on 'Halfon', 'Ibn Ezra' and 'Coptic': 0 records each. Not on DECODE.",
+   "tomokiyo": "No Cryptiana page found on Geniza numeral codes (site-restricted web search on Geniza / Coptic numerals / Hebrew letters returned none).",
+   "lasry": "GL.htm fetched 15 Nov 2026: no Geniza, Hebrew, Judaeo-Arabic or Coptic entry; no Lasry paper on this letter known.",
+   "edition": "Edited twice: Gil and Fleischer, Yehuda ha-Levi and his Circle (Jerusalem 2001) pp. 282-285, with proposed readings; Goitein, Friedman and Ashur, India Book IV B (2013) no. 41 (H55), whose headnote (on PGP 9097) reports those readings and prints the numeral values as Hebrew letters in its translation. Gil-Fleischer itself was not opened.",
+   "literature": "PGP 9097 (MR, PG): 'substitution mechanism that has not yet been determined'; PGP's verso note proposes corrections to the numeral values. Cambridge GRU note ''Coptic' numerals and Genizah studies' and Elbaum's NS J479 blog (Ashur: India Book merchants used Coptic numerals as an uncracked code) add no reading."
+  },
+  "key_check": "Candidate Coptic-numeral letter keys exist in the Geniza (CUL Or.1080 J277 verso, Bodl. MS heb. f 102/28, JRL L 259, per the Hebrew sweep and PGP 19549); none was tested here (vetting only). Gil-Fleischer's two methods are the readings on record.",
+  "key_held": "Coptic-numeral alphabets in CUL Or.1080 J277 verso (PGP 34004) and Bodl. MS heb. f 102/28 (PGP 19549): not tested on these three words.",
+  "duplicates": "known.py '13J18.19', '9097', 'Halfon', 'Ibn Ezra': only this lead and the Hebrew and Arabic sweep notes and candidates (the same letter, carried from sweep_2026-11_hebrew); no catalogue entry or target. decode_search.py as above, 0. Open issues and pull requests for 2885 and 13J18.19: none.",
+  "closed": "Partly read in print. Gil and Fleischer (2001) pp. 282-285 printed readings for the first two code words, ha-'marsha'at' ('the wicked woman', recto line 11) and 'tarakh' (recto line 12), by a different method for each, and none for the third (verso line 5); so reported by Friedman in India Book IV B no. 41 (H55), headnote on PGP 9097, who judges the whole matter unresolved ('tsarikh 'iyyun'). Two of three words therefore carry published, disputed proposals; the verso word has none. Gil-Fleischer's pages were not opened here, so the proposed methods are known only from Friedman's summary.",
+  "searches": [
+   {"query": "PGP 9097 record and scholarship page (India Book IV B no. 41 headnote, edition, translation)", "result": "Friedman's headnote: Gil-Fleischer identified word 1 as 'marsha'at' and word 2 as 'tarakh', methods differ, word 3 unsolved, matter open; IB IV prints the signs as letters (ta'ashgam, yima'ah, asqatam aq a.hh)."},
+   {"query": "Gil Fleischer \"Yehuda ha-Levi and his circle\" Coptic numerals code Ibn Ezra Halfon letter", "result": "Book identified (Gil and Fleischer 2001); no online text of pp. 282-285 and no other discussion of this code found."},
+   {"query": "Geniza cipher Coptic numerals Hebrew letters (Cryptiana site search)", "result": "No Cryptiana page; PGP records of Coptic-numeral alphabets (Bodl. heb. f 102/28) and the Cambridge NS J479 blog, neither reading this letter."}
+  ]
+ },
+ "2889": {
+  "date": "2026-11-15",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Opus 5.5), 15 Nov 2026",
+  "unvetted": "No adequate image. The Penn Museum serves only a 1600 x 1440 px frame (the EXIF shows a 5944 x 5348 px master that is not online; _2000, _2400, _3000 and other sizes return 404) in which the 8.2 cm fragment is about 520 px across, below the 1,500 px bar. At that size neither side is established as Arabic or as cipher: the labelled side has one cursive line, then a line of separate signs (strokes, a triangle, a b-like and a box-like sign) that may be Greek-Coptic numerals or fraction signs. Needs the master scan from the museum (digitalmedia@pennmuseum.org) and an Arabic papyrologist's identification; no bibliography exists.",
+  "seen": {
+   "kind": "scan",
+   "where": "Penn Museum record E16470 (collections.penn.museum/collections/object/225579) and its two images, assets/018T/185k/185653_1600.jpg and 185804_1600.jpg (1600 x 1440 px frames), 15 Nov 2026.",
+   "extent": "Papyrus fragment 8.2 x 6.6 cm. Side with the E 16470 label: one cursive line, one line of about 9 separate signs, '|| x' below. Other side: 3-4 lines of thick hooked and looped signs.",
+   "cipher": "Museum: 'Fragment of document. Recto: Arabic. Verso: Cipher (?).' Not confirmed at the size served."
+  },
+  "prior_art": {
+   "decode": "decode_search.py on 'Penn Museum', 'papyrus' and 'Philadelphia': 0 records each.",
+   "tomokiyo": "No Cryptiana page on Arabic papyri or the Penn Museum found (sweep part B searched Cryptiana; nothing).",
+   "lasry": "GL.htm fetched 15 Nov 2026: no papyrus, Arabic or Egypt entry.",
+   "edition": "None: the museum record says 'This object has no bibliography information'; APD translation full-text search for cipher / secret / Geheim (sweep part B) found no such papyrus.",
+   "literature": "Web search on 'E16470' found only the museum record; the closest parallel, P.Vindob. A. P. 5584 'Geheimschrift', is dinar-fraction numerals (Bogensperger and Reinfandt, Tyche 34, 2019)."
+  },
+  "key_check": "None applicable until the signs are identified; if they are fraction or Greek-Coptic numerals, no key is involved.",
+  "duplicates": "known.py 'E16470', 'Penn Museum', '225579': only this lead and its sweep notes. decode_search.py as above, 0. Open issues and pull requests for 2889, E16470 and papyrus: none.",
+  "searches": [
+   {"query": "\"E16470\" OR \"E 16470\" Penn Museum papyrus Arabic cipher Moritz", "result": "Only the museum record (purchased from Prof. Moritz 1911, Muller 28a); no publication."},
+   {"query": "collections.penn.museum asset sizes for 185653 (_2000, _2400, _3000, _orig, _full)", "result": "All 404; 1600 is the largest served."}
+  ]
+ }
+}

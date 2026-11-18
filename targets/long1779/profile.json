@@ -1,0 +1,331 @@
+{
+ "schema_version": 1,
+ "target": "long1779",
+ "title": "Enoch Long's pocket journal, Tiverton and Newport, July 1779 - December 1780 (pension file W. 16138): a New Hampshire soldier's private alphabet of altered letters, changed on 4 October 1779 to a second alphabet he wrote out in the notebook; read in part",
+ "documents": [
+  {
+   "id": "journal-system-A",
+   "read": "read in part",
+   "shelfmark": "NARA RG 15, Revolutionary War Pension and Bounty-Land Warrant Application File W. 16138 (Enoch Long, widow Molly), microfilm M804 roll 1580, catalog NAID 196199890, images 11-31",
+   "date": "29 July - 23 September 1779; 28 June - 22 December 1780",
+   "year": 1779,
+   "country": "United States",
+   "route": "private journal of Enoch Long, Capt. Samuel Runnels's company, Col. Hercules Mooney's New Hampshire regiment, Tiverton and Newport, Rhode Island",
+   "places": {
+    "from": "Tiverton",
+    "to": "Tiverton"
+   },
+   "language": "English",
+   "pages": 13,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment anywhere in the pension file; the clerk's wrapper (image 10) says only 'Journal partly written in Cipher'."
+   },
+   "length": {
+    "tokens": 2746,
+    "distinct": 26,
+    "unit": "symbols",
+    "measured": false,
+    "file": "ciphertext_systemA.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "National Archives Catalog full-size JPEGs (the largest the catalog serves; byte-identical to the 13 Nov download), line strips at 1.7-2.6x",
+    "corrections": "unknown",
+    "image_quality": "fair",
+    "notes": "Signs counted by scripts/build_reconciled.py over reconciled words (the measure tool counts words or Latin letters only; 888 word tokens including 185 unread placeholders). Two passes: pass A (first agent, readings and a sign transcription of 15L-16L) and pass B (blind, shape codes, frozen before pass A was opened); reconciled line by line with both open. Microfilm x-height about 15 pixels; look-alike signs settled by context where the image alone does not."
+   }
+  },
+  {
+   "id": "journal-system-B",
+   "read": "not read",
+   "shelfmark": "NARA RG 15, Revolutionary War Pension and Bounty-Land Warrant Application File W. 16138 (Enoch Long, widow Molly), microfilm M804 roll 1580, catalog NAID 196199890, images 11-31",
+   "date": "4 October - November 1779",
+   "year": 1779,
+   "country": "United States",
+   "route": "same journal, entries from 4 October 1779",
+   "places": {
+    "from": "Tiverton",
+    "to": "Tiverton"
+   },
+   "language": "English",
+   "pages": 5,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None. The 4 Oct 1779 entry opens with 25 signs in two rows and no letters; their letter values are inferred from alphabetical order (a-s, t-z, no j)."
+   },
+   "length": {
+    "tokens": 394,
+    "distinct": 20,
+    "unit": "symbols",
+    "measured": false,
+    "file": "ciphertext_systemB.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "as above",
+    "corrections": "unknown",
+    "image_quality": "fair",
+    "notes": "Images 16R, 17L (= 18R inverted), 24L, 25L, 26. 147 word tokens including 38 unread placeholders."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution with word division, one altered letter form per letter, mixed word by word with plain English; a second alphabet from 4 October 1779, whose 25 signs the writer set out in two rows at the head of that entry (letter values inferred from their order).",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "written twice",
+  "notes": "System A has 21 signs settled (j, k, q, x, z rare or unseen; o also stands for u in up, but, upper). System B key line: 18 signs for a-s and 7 for t-z; on the microfilm e, n and z are all dashes, m and w both m-shaped, r and s both ezh-shaped. distinct_symbols unknown because some look-alike signs cannot be told apart on the film."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No transcription or mention found: pension file (wrapper only), NH State Papers vols 15-16, C. C. Lord, Life and Times in Hopkinton (1890), HathiTrust full text, Google Books, Internet Archive, NH Historical Society collections catalogue, Southern Campaigns pension statements (no W16138 file), genealogy sites (13-14 Nov 2026).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context",
+   "crib"
+  ],
+  "attack": "crib",
+  "human_role": "Andrew Beling set the task and the rules (blind second pass before the first agent's files were opened; frozen keys and written-down tests; nothing posted). AI agents found the file in a Fold3 sweep, downloaded the images, transcribed, solved, compared and wrote. No human has checked the readings against the images yet.",
+  "tools": [
+   "scripts/heldout_passB.py: held-out test of the frozen key on the blind transcription with 200 shuffled keys",
+   "scripts/build_reconciled.py: builds reconciled_transcription.tsv and the read shares from reconciled_source.txt",
+   "pass_a/heldout_test.py: the first agent's held-out test"
+  ],
+  "models": [
+   "Claude Opus 5.5 subagents (Anthropic), run by Andrew Beling"
+  ],
+  "first_date": "2026-11-13",
+  "last_date": "2026-11-14"
+ },
+ "solution": [
+  {
+   "date": "2026-11-13",
+   "kind": "access",
+   "what": "Andrew Beling contribution, with AI agents: the Fold3 sweep flagged the wrapper note 'Journal partly written in Cipher' on file W. 16138; all 57 images downloaded from the National Archives Catalog.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference",
+    "frequency analysis"
+   ],
+   "what": "Pass A: system A key recovered from plain-cipher mixtures ('Last [night]', 'you may [read writing where] you could see none', 'countersign was Huntington') and word patterns; key frozen from images 11, 13R, 14L, 14R.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Pass A held-out test on 105 words of 15L-16L transcribed by the same agent: 84.8% dictionary words against a shuffled-key maximum of 26.7%. Caveat: the transcriber knew the key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "transcription",
+   "what": "Pass B, blind: every cipher word of 17 page-sides transcribed as shape codes and frozen (sha256 f76fbb51...) before pass A's folder was opened; shape codes merge some look-alike signs.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "crib",
+   "technique": [
+    "crib testing",
+    "contextual inference"
+   ],
+   "what": "Pass B blind key from the guard roster (plain 'Sergt Cate, Corpl Jonson', 'For Guard' above the same words in cipher) and plain-cipher mixtures: same letters as the frozen key for 15 letters once merges are split; f and v wrong.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Clean held-out test, written down first: frozen key on the blind pass B transcription of seven pages not used to build it, 409 words: 57.9% English against 200 shuffled keys (mean 11.4%, 99th percentile 23.0%, maximum 30.3%). Pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-13",
+   "kind": "key from source",
+   "technique": [
+    "key-structure hypothesis",
+    "plaintext matching"
+   ],
+   "what": "System B: the first two lines of the 4 October 1779 entry read as Long's own alphabet (a-s, t-z); checked against last night, I dreamed, that I was at home, thought, Kimballs, followed, furlough; key frozen (sha256 1a449ea4...).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Line-by-line reconciliation on line strips of the full-size catalog images with both keys and both passes open; every cipher word recorded with pass A, pass B, signs, decoded word and a confidence mark; nonsense left as nonsense. Settled: 'dreaming' and 'father was come to us' on 14R (pass A right), the invisible-ink passage word by word, the name read as Polly (p sign, not m), new readings on image 11, 15L, 16L ('white ink') and 22L.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "HathiTrust full text, Google Books, Internet Archive, NH Historical Society catalogue, Southern Campaigns pension statements, genealogy sites; NH State Papers rolls and Lord's Hopkinton history read for context: no prior transcription or mention of the cipher.",
+   "result": "worked"
+  },
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1494 tokens, 21 types, en-modern order 4: reading -1.743 per letter; random keys -7.027 (z 8.6); key annealed onto shuffled ciphertext best -4.779 (mean -4.824, z 55.4); annealer on the real text -1.743. Verdict: pass.", "result": "worked"},
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "frequency analysis",
+    "contextual inference",
+    "statistical test"
+   ],
+   "what": "A second AI agent solved system A from the images before seeing the key (all 21 letters agree), compared 45 words read by both (43 agree), and reran both held-out tests and _validate.py with identical results. Its corrections applied: eyes (not soul), again, dress'd up in a silk gown, yesterday, to bed; alphabet line described as signs with values inferred from order; Polly evidence restated.",
+   "result": "worked"
+  },
+  {"date": "2026-11-15", "kind": "access", "technique": ["other"], "what": "Better images sought: the National Archives Catalog IIIF service gives 2064 x 2689 pixels at full/max, pixel for pixel the same as the JPG already held (image 16 checked); Fold3's viewer shows the same scan, no sharper. Lower-case letters stay about 15 pixels high.", "result": "failed"},
+  {"date": "2026-11-15", "kind": "transcription", "technique": ["manual reconstruction"], "what": "Blind second reading: eight Opus agents, given only the sign chart and 235 line crops in shuffled order (no earlier reading), transcribed every cipher word sign by sign (plan written and hashed first: output/long1779_accuracy_2026-11-15/TEST_PLAN_blind.md). Sign for sign they agreed with 399 of 721 earlier confident words (55%); with 29 of a fixed sample of 60 (48%, against a pass mark of 95%); with 4 of 24 probable and 8 of 60 doubtful words. Where lengths matched, 86% of signs agreed in the first alphabet and 75% in the second.", "result": "partial"},
+  {"date": "2026-11-15", "kind": "verification", "technique": ["manual reconstruction", "contextual inference"], "what": "Every disagreement and every weak word (663 items) judged on the image by eight further Opus agents, shown the two readings in random order; the worker then checked the private passages and every name on the image. Rules: confident only if two readings agree sign for sign, or the signs are individually clear, and the word fits; otherwise probable, doubtful or unread. Result: 513 confident, 262 probable, 60 doubtful, 206 unread of 1,041. Changed: 'sentinel' is 'century' (sentry); 'mother' and 'married' (6 Oct) are not on the signs; 'whipt' (22 Aug) is not on the image, the man had to 'run the [gantlet??] through the company'; on 16R the name is not Polly on the signs; Kimball's first sign is the s sign; 'Hannah' read on 16L. A curl sign in 'ink' and 'silk' is probably the first alphabet's k.", "result": "partial"}
+ ],
+ "outcome": {
+  "validation": {"date": "2026-11-15", "model": "en-modern", "file": "validation.tsv", "tokens": 1494, "types": 21, "tokens_per_type": 71.14, "score": -1.743, "nulls": {"random keys": {"n": 200, "mean": -7.027, "sd": 0.613, "max": -5.175, "z": 8.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.824, "sd": 0.056, "max": -4.779, "z": 55.4, "p": 0.1429}}, "power": -1.743, "verdict": "pass", "notes": "claimed per-occurrence score -1.743; polyphony 0.0; 214 unread tokens left out; annealer on the real text from random keys reached -1.743"},
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "System A from the plain words and plain-cipher mixtures around the cipher (the guard roster gives 'Sergt' and 'Corpl' in both forms); system B from the alphabet line Long wrote at the head of the 4 October 1779 entry.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "parts": [
+   {
+    "label": "System A key (key_systemA_frozen.json)",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "complete",
+    "basis": "two held-out tests against shuffled keys; blind second key agrees"
+   },
+   {
+    "label": "System B key (key_systemB_frozen.json)",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "Long's alphabet line; e/n/z and m/w and r/s look alike on the film"
+   },
+   {
+    "label": "Journal text, 1,041 cipher words",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "reconciled_transcription.tsv"
+   }
+  ],
+  "fraction_read": 0.493,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reconciled_transcription.tsv after the blind second reading of 15 Nov 2026, cipher words: 513 of 1,041 read with confidence (49.3%); 262 probable (25.2%), 60 doubtful and 206 unread counted as not read. Our earlier figure, confident and probable together: 775 of 1,041 (0.744). Upper bound: unread stretches may hide more words; the margin column of image 11 (about 30 signs) is not counted. Before the second reading: 743 confident and 24 probable of 1,039.",
+  "verification": ["statistical test", "historical consistency", "independent verification"],
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "new cipher with solution",
+    "note": "Andrew Beling, with AI agents: Enoch Long's journal cipher found in pension file W. 16138, both alphabets recovered; after a blind second reading 49% of cipher words read with confidence and 25% probable",
+    "date": "2026-11-14"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "Andrew Beling, with AI agents: two transcription passes (one blind) and a line-by-line reconciliation",
+    "date": "2026-11-14"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "image 11, boxed lines and insertions of 3-8 Aug 1779, and the vertical margin column",
+    "blocker": "illegible",
+    "detail": "overwritten and boxed text on the microfilm; about 40 words unread"
+   },
+   {
+    "item": "words with look-alike signs in system B (4-22 Oct 1779) and the 12 Oct and Nov 1779 lines",
+    "blocker": "illegible",
+    "detail": "e/n/z, m/w and r/s collide on the film; about 60 words unread"
+   },
+   {
+    "item": "27 Jul 1780 (22L) second half and 22 Dec 1780",
+    "blocker": "illegible",
+    "detail": "faint and partly struck; about 40 words unread or doubtful"
+   },
+   {
+    "item": "single unread words through 13R-16L and the accounts (19L, 28)",
+    "blocker": "illegible",
+    "detail": "about 200 words unread and 320 probable or doubtful; no sharper image exists online (catalog full size and Fold3 checked 15 Nov 2026); the original at the National Archives in Washington may settle many"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "journal-system-A",
+    "label": "Invisible-ink recipe, 9 Aug 1779 (image 13 right, lines 11-16)",
+    "transcription": "reconciled_transcription.tsv",
+    "decryption": "ink_recipe_1779-08-09.md",
+    "reading": "ink_recipe_1779-08-09.md",
+    "state": "read",
+    "language": "en",
+    "read_share": 1.0,
+    "summary": "Long notes what he wrote to his sweetheart: if he sends her a letter with the upper part plain, she should rub it with a hot box iron to bring up writing where none could be seen.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #670 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "Grade given by the reviewer, not by the author of the reading: stated in the review of pull request #670 and entered here verbatim at the reviewer's request. The six lines were read on NARA image 13 (catalog 196199890, right page, lines 11-16) with the alphabet A key, on 15 Nov and again on 16 Nov 2026: one sentence, coherent, no hole: 'I wrote in my letter to my dear this, if I send you a letter with the upper part plain rub it with your hot box iron and you may read writing where you could see none'. The 21 cipher words on the lines agree sign for sign with reconciled_transcription.tsv; the interlined 'procuring' is too small on the film to confirm sign by sign. 'upper' is spelled oper in the cipher. A model's reading: no person has checked it."
+    },
+    "note": "22 cipher words, all read with confidence (reconciled_transcription.tsv, image 13 R lines 11-16), and his plain words; no hole, guess or supplied word. These six lines were kept out of the blind second reading as worked examples. Daniel Bourdeau's review of PR #670 reports that he read all 22 cipher words himself on NARA image 13 with the alphabet A key and that they agree."
+   },
+   {
+    "doc": "all",
+    "label": "Journal, 29 Jul 1779 - 22 Dec 1780, both alphabets, except the ink recipe of 9 Aug 1779",
+    "transcription": [
+     "ciphertext_systemA.txt",
+     "ciphertext_systemB.txt",
+     "reconciled_transcription.tsv"
+    ],
+    "decryption": "journal_as_written.md",
+    "reading": "journal_modernized.md",
+    "state": "decoded, not read",
+    "language": "en",
+    "read_share": 0.482,
+    "note": "read_share: cipher words read with confidence outside the ink recipe, 491 of 1,019 (48.2%); for the whole journal, recipe included, 513 of 1,041 (49.3%). Our earlier read_share for the whole journal, 0.752, was 1 - the hole rate of research/reading_audit/v2_score.py on journal_modernized.md (0.248; journal_as_written.md 0.240), every probable [word?] and doubtful [word??] counted as a hole and the file's plain text included. Holes are counted by words: [...] one unread cipher word, [... n] n in a row, from the '?' tokens of reconciled_source.txt (206 words under 156 marks); bare [...] in plain text, the struck heading of image 19 left and the margin column of image 11 are extent unknown. The journal files include the recipe's lines, which are the separate entry above. Marked decoded, not read after Daniel Bourdeau's review of PR #670: the failed blind check (48% of a sample of confident words reproduced, mark 95%) leaves the reading short of sentences a reviewer can grade. All readings by AI agents; no person has checked them against the images."
+   }
+  ],
+  "key_file": "key_systemA_frozen.json"
+ }
+}

@@ -4,25 +4,25 @@
 
 ## Reading
 
-⟨... con que me continuan los favores que V.S. me hace.⟩ [...] He visto con particular gusto los discursos de V.S. y
+⟨... con que me continuan los favores que V.S. me hace.⟩ [... 3] He visto con particular gusto los discursos de V.S. y
 lo que [...] caminando acia los pasos, que son muy propios de la prudencia, celo y actividad de V.S. Y pluguiera a
 Dios que nuestras desgracias no fueran tan superiores, o nos hallasemos en estado de poder atender a todas; pero
 siendo de la mala calidad que V.S. [?habra] entendido, es menester conformarnos con la voluntad de Dios y atribuir a sus
-justos juicios el que Flandes corra [...] a la ultima desesperacion, lo que, aseguro a V.S., nos tiene a todos tan
-atonitos y sorprendidos que hasta el gusto de discurir con los [...] nos falta, [...] el dolor y consideraciones de
+justos juicios el que Flandes corra [... 4] a la ultima desesperacion, lo que, aseguro a V.S., nos tiene a todos tan
+atonitos y sorprendidos que hasta el gusto de discurir con los [...] nos falta, [... 4] el dolor y consideraciones de
 nuestra infelicidad.
 
 La Inglaterra se mantiene todavia en la misma ambiguedad e irresolucion que experimentamos dos meses ha, como V.S.
-estara informado por el [...]; con que, reconociendo el punto critico [...] el estado presente de las cosas y el
+estara informado por el [... 3]; con que, reconociendo el punto critico [... 2] el estado presente de las cosas y el
 peligro y evidente riesgo en que se hallan los Paises Bajos, y por consiguiente los demas del Norte, despues [?de] la
 perdida de Gante, podemos esperar, si Dios por su misericordia no permite que experimentemos el ultimo castigo, que
 nuestros aliados, excusando sus particulares controversias, se apliquen enteramente a defendernos y a defenderse todos
-contra los progresos de Francia. Para lo cual, y para que los Brunswick no persistan en [...] de sus pretensiones,
+contra los progresos de Francia. Para lo cual, y para que los Brunswick no persistan en [... 4] de sus pretensiones,
 obligara tambien mucho las noticias que [?tenemos] de la entrada que ha hecho el conde de Konigsmarck en el
 Mequelemburg; juntandose a esta mala constitucion de cosas los discursos que, por otras correspondencias habra
 entendido V.S., hacen ya los [al]eses, que no pueden dejar de concevir pesimas consecuencias. Con que de todas
 maneras estamos muy mal puestos. Yo refiero a V.S. estas melancolicas reflexiones no solo por ser propias de [...]
-sino [...], porque, haviendose abrogado a las cortes de [...], La Haya y Bruselas la [...] de estas manos, no se
+sino [... 2], porque, haviendose abrogado a las cortes de [...], La Haya y Bruselas la [...] de estas manos, no se
 ofrece que decir a V.S. del congreso.
 
 ## Notes
@@ -51,4 +51,15 @@ ofrece que decir a V.S. del congreso.
   punto critico [...] el estado"; "persistan en [...]" (p-e-l-i-co-s-a-ni-en-a); "los [al]eses"; "propias de [...]
   sino [...]"; "cortes de [...]" (a capital C sign with a tail, DECODE lop); "la [...] de estas manos" (188 r xi 28,
   tr-y-ci-s). "[?de] la perdida": the cipher has 4 there; "de" is supplied.
+- Holes counted by words (14 Nov 2026; a mark with a number, `[... n]`, is n unread words: README Conventions). Seven
+  marks cover more than one word, the seven named at the integration check of PR #601. They are sized from the key
+  decode (read/R982.dec.txt) and the groups listed above; the cipher is syllabic, so the counts are estimates, taken at
+  the least number of words the decode shows: the opening groups (M 182 491), 3; after "corra" (six groups, "con por la
+  pesco": con, por, la and a noun), 4; before "el dolor" (nine groups, "y vando se le cr as de o si"), 4; after "por
+  el" (dul, de, Burgomayne), 3; between "critico" and "el estado" ("que", an unread sign, "en e"), 2; after
+  "persistan en" (ten groups, p-e-l-i-co-s-a-ni-en-a), 4; after "sino" ("esta de vien"), 2. The other five marks
+  ("lo que [...] caminando", "con los [...]", "propias de [...]", "cortes de [...]", "la [...] de estas manos") stay bare
+  and count as one word each. For "propias de [...]" no groups are recorded here: extent unknown. For the other four
+  the groups are listed above (xi 20 36; 25 B; the C sign; 188 r xi 28) and the decode shows no more than one word. 27 unread words under the marks, 31 holes with [al]eses and the three [?word]s, against
+  330 words read: read share 0.914 by words (0.954 by marks).
 - Context: Ghent fell to Louis XIV on 9-12 March 1678; Konigsmarck commanded the Swedish forces in Pomerania.

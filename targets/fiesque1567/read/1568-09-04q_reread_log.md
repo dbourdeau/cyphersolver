@@ -50,3 +50,8 @@ Reads; holes are scattered garbled stretches, each workable only by sign-level i
   c24 [?deussent]; v110l [?porter], [?pour], [?aux], "maintenir […]" ("sarten"); v110r line 5 (le seigneur Ernest ...)
   only partly read. Most of these rest on look-alikes inside a word the sense supplies; none is settled by the
   figures on this pass (no-key-material).
+
+## Holes counted by words (14 Nov 2026)
+
+Owner decision of 14 Nov 2026: the read share counts holes by words; a mark with a number is that many unread words
+(README Conventions). v109r c10-c11 "d'Espaigne [… 2] le mariaige": two unread groups ("cozanceca inconeinneasraceieicuer", thirty letters, so at least two words: an estimate). The other marks stand for one decode fragment each. Read share 0.943 by marks (647 words, 39 holes) -> 0.942 by words (40 holes): read in part as before.

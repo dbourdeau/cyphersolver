@@ -928,7 +928,8 @@
    ],
    "what": "Integration check of PR #559 (14 Nov 2026): own decoder from key.tsv over the 45 pages reproduces the contributed decodes (32,352 letters; every difference an unvalued sign: Dz 49, arrow 9, w 8, K 7, ? 6, pa 1, or the apostrophe of l'empereur shifting five lines). The 'missing' sign w is not missing: key.tsv already has =rr = rr, described as the W of the double-letters row, and the transcriptions write it =rr at 45 places; w at 8 places is a second label for the same sign (Gallica view 70 right c04 a plain W; view 43 right c05, labelled =rr, the same shape). Value rr stands, no key row added, readings unchanged. v10_relabel.share re-run: 11,615 words, 561 holes, 10,628 words in letters that read, 0.873.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-14", "kind": "verification", "what": "Read shares recounted by words (owner decision of 14 Nov 2026: holes are counted by words, a sized mark is n unread words). Five letters have a hole mark whose extent the re-reading logs show (read/<doc>_reread_log.md, 'Holes counted by words'): 2 Dec 1568 0.953 -> 0.943 (one mark = six decode fragments), now read in part; 11 Oct 1567 0.954 -> 0.953; 2 Mar 1569 0.958 -> 0.951; 20 Oct 1569 0.944 -> 0.926; 4 Sep 1568 (Queen) 0.943 -> 0.942. One mark of 11 Oct 1567 ('que [...] bien qu'il') has no recorded extent and keeps one hole. Sizes are counts of decode fragments, so estimates. The readings now hold 11,615 words and 574 holes (was 561); fraction_read 0.873 -> 0.872.", "result": "partial"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -938,10 +939,10 @@
    "sender or date identified"
   ],
   "class": "read in part",
-  "fraction_read": 0.873,
+  "fraction_read": 0.872,
   "fraction_coherent": 0.81,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Measured 14 Nov 2026 with research/reading_audit/v10_relabel.share on the 23 readings of outcome.texts: 11,615 words and 561 holes; the 22 letters that read hold 10,628 words read, so 10,628 / 12,176 = 0.873 (the 10 Sep 1569 letter, decoded, not read, counts as unread). The earlier estimate 0.91 was the letters' share of the words (measured 0.915) without the holes taken off. Earlier history: 22 Oct 2026, re-read (batch b02): all 23 letters build French sentences and are translated (read/<doc>_reading.md, _en.md; grades 4 A, 19 B). Signs of letters that read: the 29,707 transcribed signs, plus view 23 left (about 600 signs, untranscribed, read through its contemporary decipherment); not read: the first cipher page of the 11 Oct 1567 letter on view 6 right (about 800 signs, untranscribed). 30,300 / 31,100, so estimated. Holes remain inside the readings (Remaining gaps); docs/_check_reading.py clean share per reading 0.50-1.0 with header and notes counted. Earlier figures: 0.056 (audit, 22 Oct), 0.997 signs with a value (withdrawn as a reading figure). 23 Oct 2026 (round 2): every letter now reads, so every transcribed sign belongs to a letter that reads: 29,707 contributed signs + 816 (view 6 right, read/r2/transcription_v006r.txt) + 446 (view 23 left, read/r2/transcription_v023l.txt) = 30,969 of 30,969 (sign counts from the transcription files). Holes remain inside the readings (outcome.gaps); body clean share per reading 0.61-1.0 on docs/_check_reading.py's word list. Revised 23 Oct 2026 after round 2: 10 Sep 1569 kept decoded, not read on the look-alike limit; the letters that read hold about 91% of the reading files' words (estimated from word counts, not re-counted in signs).",
+  "fraction_read_source": "Measured 14 Nov 2026 with research/reading_audit/v10_relabel.share on the 23 readings of outcome.texts, holes counted by words (five letters have a sized hole mark): 11,615 words and 574 holes; the 22 letters that read hold 10,628 words read, so 10,628 / 12,189 = 0.872 (0.873 with 561 holes before the marks were sized) (the 10 Sep 1569 letter, decoded, not read, counts as unread). The earlier estimate 0.91 was the letters' share of the words (measured 0.915) without the holes taken off. Earlier history: 22 Oct 2026, re-read (batch b02): all 23 letters build French sentences and are translated (read/<doc>_reading.md, _en.md; grades 4 A, 19 B). Signs of letters that read: the 29,707 transcribed signs, plus view 23 left (about 600 signs, untranscribed, read through its contemporary decipherment); not read: the first cipher page of the 11 Oct 1567 letter on view 6 right (about 800 signs, untranscribed). 30,300 / 31,100, so estimated. Holes remain inside the readings (Remaining gaps); docs/_check_reading.py clean share per reading 0.50-1.0 with header and notes counted. Earlier figures: 0.056 (audit, 22 Oct), 0.997 signs with a value (withdrawn as a reading figure). 23 Oct 2026 (round 2): every letter now reads, so every transcribed sign belongs to a letter that reads: 29,707 contributed signs + 816 (view 6 right, read/r2/transcription_v006r.txt) + 446 (view 23 left, read/r2/transcription_v023l.txt) = 30,969 of 30,969 (sign counts from the transcription files). Holes remain inside the readings (outcome.gaps); body clean share per reading 0.61-1.0 on docs/_check_reading.py's word list. Revised 23 Oct 2026 after round 2: 10 Sep 1569 kept decoded, not read on the look-alike limit; the letters that read hold about 91% of the reading files' words (estimated from word counts, not re-counted in signs).",
   "key": "recovered",
   "codes_open": "unknown",
   "grades": "unknown",
@@ -1017,7 +1018,7 @@
    {
     "doc": "1567-10",
     "label": "11 Oct 1567 (docket \"11 octob. 1567\"), to the Queen Mother (v006r, transcribed here 23 Oct 2026; v007l, v007r, v008l, v008r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1567-10_reading.md, read/1567-10_en.md, log read/1567-10_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: view 6 right (the first cipher page, 23 lines, 816 signs) transcribed from the Gallica image and read (read/r2/transcription_v006r.txt, read/r2/v006r_reread_log.md); v007l c01 closed (\"et aveugles a leur interest\"). Body score 0.61 plain, 0.92 explicit holes only; look-alike alternates on view 6 right 3.3% (31/940 letters), at the limit, not confirmed by any other text.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1567-10_reading.md, read/1567-10_en.md, log read/1567-10_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Round 2, 23 Oct 2026: view 6 right (the first cipher page, 23 lines, 816 signs) transcribed from the Gallica image and read (read/r2/transcription_v006r.txt, read/r2/v006r_reread_log.md); v007l c01 closed (\"et aveugles a leur interest\"). Body score 0.61 plain, 0.92 explicit holes only; look-alike alternates on view 6 right 3.3% (31/940 letters), at the limit, not confirmed by any other text. Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'et que [... 2] bagues' is two unread groups by the log; 54 holes against 1,100 words, 0.954 -> 0.953; the mark in 'que [...] bien qu'il' has no recorded extent (one hole). Still read.",
     "language": "fr",
     "state": "read",
     "transcription": [
@@ -1042,7 +1043,7 @@
     },
     "translation": "read/1567-10_en.md",
     "reading": "read/1567-10_reading.md",
-    "read_share": 0.954
+    "read_share": 0.953
    },
    {
     "doc": "1567-11-15",
@@ -1330,7 +1331,7 @@
    {
     "doc": "1568-09-04q",
     "label": "4 Sep 1568, to the Queen Mother (v109r, v110l, v110r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04q_reading.md, read/1568-09-04q_en.md, log read/1568-09-04q_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.68 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.3% of the words of read/1568-09-04q_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-09-04q_reading.md, read/1568-09-04q_en.md, log read/1568-09-04q_reread_log.md. docs/_check_reading.py clean share before 0.0-0.09, after 0.68 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.3% of the words of read/1568-09-04q_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'd'Espaigne [... 2] le mariaige' is two unread groups by the log; 40 holes against 647 words, 0.943 -> 0.942.",
     "language": "fr",
     "state": "read in part",
     "transcription": [
@@ -1352,7 +1353,7 @@
     },
     "translation": "read/1568-09-04q_en.md",
     "reading": "read/1568-09-04q_reading.md",
-    "read_share": 0.943
+    "read_share": 0.942
    },
    {
     "doc": "1568-11-06",
@@ -1380,9 +1381,9 @@
    {
     "doc": "1568-12-02",
     "label": "2 Dec 1568 (Speyer), to the Queen Mother (v129r, v130l)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-12-02_reading.md, read/1568-12-02_en.md, log read/1568-12-02_reread_log.md. docs/_check_reading.py clean share before 0.0-0.10, after 0.63 (header comment counted; old spellings outside the word list count as holes).",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1568-12-02_reading.md, read/1568-12-02_en.md, log read/1568-12-02_reread_log.md. docs/_check_reading.py clean share before 0.0-0.10, after 0.63 (header comment counted; old spellings outside the word list count as holes). Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): the mark after 'ayde a autre' covers six decode fragments ('bellestant du m que du ii', read/1568-12-02_reread_log.md), counted as six words (an estimate); 28 holes against 466 words, read_share 0.953 by marks -> 0.943 by words: under the 95% bar, read in part.",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "transcription": [
      "contributed/data/transcription_v129r.txt",
      "contributed/data/transcription_v130l.txt"
@@ -1400,7 +1401,7 @@
     },
     "translation": "read/1568-12-02_en.md",
     "reading": "read/1568-12-02_reading.md",
-    "read_share": 0.953
+    "read_share": 0.943
    },
    {
     "doc": "1569-01-14",
@@ -1430,7 +1431,7 @@
    {
     "doc": "1569-03-02",
     "label": "2 Mar 1569, to the Queen Mother (v146r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-03-02_reading.md, read/1569-03-02_en.md, log read/1569-03-02_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes).",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-03-02_reading.md, read/1569-03-02_en.md, log read/1569-03-02_reread_log.md. docs/_check_reading.py clean share before 0.0, after 0.72 (header comment counted; old spellings outside the word list count as holes). Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'de [... 3] qui craignent' is three decode fragments by the log (an estimate); 15 holes against 294 words, 0.958 -> 0.951. Still read, by one word.",
     "language": "fr",
     "state": "read",
     "transcription": [
@@ -1448,7 +1449,7 @@
     },
     "translation": "read/1569-03-02_en.md",
     "reading": "read/1569-03-02_reading.md",
-    "read_share": 0.958
+    "read_share": 0.951
    },
    {
     "doc": "1569-09-10",
@@ -1519,7 +1520,7 @@
    {
     "doc": "1569-10-20",
     "label": "20 Oct 1569, to the King (v159r)",
-    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-20_reading.md, read/1569-10-20_en.md, log read/1569-10-20_reread_log.md. docs/_check_reading.py clean share before 0.17, after 0.60 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.4% of the words of read/1569-10-20_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
+    "note": "Re-read 22 Oct 2026 (batch b02): read/1569-10-20_reading.md, read/1569-10-20_en.md, log read/1569-10-20_reread_log.md. docs/_check_reading.py clean share before 0.17, after 0.60 (header comment counted; old spellings outside the word list count as holes). 24 Oct 2026: 94.4% of the words of read/1569-10-20_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. Recount by words, 14 Nov 2026 (owner decision: the read share counts holes by words; a mark with a number is that many unread words): 'par [... 2] le comte [... 4]' sized from the decode quoted in the log (estimates); 16 holes against 201 words, 0.944 -> 0.926.",
     "language": "fr",
     "state": "read in part",
     "transcription": [
@@ -1537,7 +1538,7 @@
     },
     "translation": "read/1569-10-20_en.md",
     "reading": "read/1569-10-20_reading.md",
-    "read_share": 0.944
+    "read_share": 0.926
    },
    {
     "doc": "1569-10-29",

@@ -114,8 +114,8 @@ def card_html(w, ent, reg, pages_by_folder, profiles):
         items.append(f'<li>{target_link(f, pages_by_folder, profiles)} &mdash; ' + '; '.join(roles) + '</li>')
     more = ''
     if len(items) > 8:
-        more = (f'<details class="cmore"><summary>{len(items) - 8} more</summary><ul>' + ''.join(items[8:]) + '</ul></details>')
-        items = items[:8]
+        more = (f'<details class="cmore"><summary>{len(items) - 5} more</summary><ul>' + ''.join(items[5:]) + '</ul></details>')
+        items = items[:5]
     return (f'<article class="ccard" id="{w}">\n<h3>{name_html(c)}{gh}</h3>\n'
             + (f'<p class="cnote">{e(c["note"])}</p>\n' if c.get('note') else '')
             + f'<p class="ckinds">{" &middot; ".join(bits)} &middot; <a href="writeups.html#by={w}">their write-ups &rarr;</a></p>\n'
@@ -426,8 +426,8 @@ def page(pages, profiles, reg, dates, version, today):
   <p class="kicker">Contributors &middot; {n_people} people &middot; {n_credits} credits</p>
   <h1>Contributors</h1>
   <p class="sub">The ledger is a shared project. Anyone can add to it: a solution to a cipher already listed, a reading left partial taken further, a new unsolved cipher, a new cipher with its solution, or an independent check of a reading already here. Every write-up names who contributed and whose keys or decipherments it used; this page adds them up.</p>
-  <div class="jump"><a href="contribute.html">How to contribute</a><a href="#progress">Progress</a><a href="#who">Who</a><a href="#people">Contributions in detail</a><a href="#builds-on">What the work builds on</a><a href="#verify">Waiting for a check</a><a href="#further">Readings to take further</a></div>
-  <p class="meta">Daniel Bourdeau and contributors</p>
+  <div class="jump"><a href="contribute.html">How to contribute</a></div>
+  <p class="meta">Daniel Bourdeau, Brice Dudout, George Lasry and contributors</p>
 </section>
 
 <main>
@@ -481,16 +481,17 @@ def helpband(pages, profiles):
     fn = sum(p.get('extent') == 'partial' and bool(p.get('folders')) for p in pages)
     na = sum(r['status'] in AR.LIVE for r in AR.load())
     q = len(queue(pages, profiles))
-    def way(href, sticker, cls, count, what, how):
+    # each card leads with what to do; the count follows in the text, since the hero strip already carries the headline numbers
+    def way(href, sticker, cls, verb, count, what, how):
         return (f'<a class="hb-way" href="{href}"><span class="sticker{cls}" aria-hidden="true"><span><b>{sticker}</b></span></span>'
-                f'<span class="hb-t"><b>{count:,}</b> {what}</span><span class="hb-d">{how}</span></a>')
+                f'<span class="hb-t"><b>{verb}</b> <span class="hb-n">{count:,} {what}</span></span><span class="hb-d">{how}</span></a>')
     return f'''<!-- help:start -->
 <section class="helpband" id="help" aria-labelledby="hb-h">
 <h2 id="hb-h">Three ways to help</h2>
 <div class="hb-grid">
-{way('catalogue.html', 'Help<br>Solve!', '', still_open, 'ciphers with no known decipherment', 'Pick one and try it, by hand or with an AI agent: each has instructions to hand over.')}
-{way('further.html', 'Finish<br>It!', ' alt', fn, 'readings left partial', 'A value for a code group, a better reading of a line, a key found in another volume.')}
-{way('archives.html', 'Go<br>Look!', ' arc', na, 'pieces that need an archive', 'A visit, a reproduction order or a library loan, listed by archive.')}
+{way('catalogue.html', 'Help<br>Solve!', '', 'Solve a cipher', still_open, 'ciphers with no known decipherment', 'Pick one and try it, by hand or with an AI agent: each has instructions to hand over.')}
+{way('further.html', 'Finish<br>It!', ' alt', 'Finish a reading', fn, 'readings left partial', 'A value for a code group, a better reading of a line, a key found in another volume.')}
+{way('archives.html', 'Go<br>Look!', ' arc', 'Visit an archive', na, 'pieces that need an archive', 'A visit, a reproduction order or a library loan, listed by archive.')}
 </div>
 <p class="hb-more">Or <a href="contributors.html#verify">check one of {q} readings</a> waiting for an independent check, or <a href="contribute.html#new">send a cipher that is not listed</a>. Every contribution is credited. <a class="btn" href="contribute.html">How to contribute &rarr;</a></p>
 </section>

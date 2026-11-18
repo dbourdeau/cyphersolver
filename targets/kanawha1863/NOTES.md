@@ -305,6 +305,13 @@ The round 1 notes gave Pack's Ferry as p. 1031; the mention is on p. 1032 (and p
 - `decryption/`: grids written by `verify.py`. `reading/`: the readings as sentences.
 - `verify.py`: checks the hashes, the crib, re-runs the held-out test and writes `decryption/`.
 
+## Transcriptions and the edition's terms (owner decision, 14 Nov 2026)
+
+The transcriptions in this folder were made by the contributor from the licensed Adam Matthew edition of the Gilder Lehrman
+Collection, whose terms mention only "brief excerpts". Decision: they stay in the repository. The telegrams are of 1863 and in
+the public domain, the transcriptions are the contributor's own work, and no image of the edition is included or shown. If the
+rights holder objects, they are to be replaced by the group counts and the readings alone.
+
 ## Remaining gaps
 
 - .339: code words Virginia, Missouri, gaol, bent, amore, away and the first nile have no value - blocker: open-codes;

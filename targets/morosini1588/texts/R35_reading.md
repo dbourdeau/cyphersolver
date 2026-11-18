@@ -25,14 +25,14 @@ Francia; la deta scritura è in lingua spagnola.
 […] lo que io dixe a su magiestad christianisima de la Reina Madre de parte del Rei mi señor, en respuesta de lo que [?] mando le
 escriuiese, de la suia, acerca del desear uer estas dos coronas en una mui estrecha amistad i buena inteligencia, lo que se
 [?sigue]: el Rei mi señor no puede dexar de loar i estimar mucho el deseo de [?su] magiestad c[h]ristianis., exortando a
-las dos coronas a maio[r] union i amistad, cosa bien digna de quien es madre de los dos Reies; i que, de mas de las
+las dos coronas a maio{+r} union i amistad, cosa bien digna de quien es madre de los dos Reies; i que, de mas de las
 pruebas pasadas, en que per las obras se uio la asistencia i aiudas que dio el Rei mi señor a esta corona, i el amor i
 laneza con que lo hizo, esto agora […] mas dispuesto a estrecharse mas que nunca, [?quanto] conoce meior que iuntos
 estos dos poderes nadie basta a enoiarlos, i que elos pueden asentar lo publico i particola[r] en gran seruicio de Dios
 i entera seguri[d]ad [f. 202v] suia. Mas, per hablar con la laneza que pide el trabaioso estado de las cosas de la
 christianitad, no conuendria que estas platicas parasen en buenas palabras i en fines [?particulares], que no hazen
 union durable ni [?corispondencia] segura, sino que, echando de uer que el uigor de las fuercas humanas depende del
-poder de Dios, i que si […] enemigos los hereies […] las dos coronas, i ha tomado el pretexto i colo[r] de la r[e]ligion
+poder de Dios, i que si […] enemigos los hereies […] las dos coronas, i ha tomado el pretexto i colo{+r} de la religion
 para […], consertan discordas en sus heradas opiniones su misma malicia lo […] en los intentos exteriores, i que no
 es particular negotio de cada una de las dos prouincias en que ua cundiendo, sino comun i general de toda la
 c[h]ristianitad, […] a este fuego, si uenga a […] o sea, pues se toca ia con la mano que, quando per la honra de Dios,
@@ -40,7 +40,7 @@ que es la maior obligation i ha de s[e]r la principal mira, no se mouiese por [�
 de cada uno para […] mui de ueras [f. 203r] a esto, en que tanto les ua a entrambos, i ofresce el Rei mi señor a sus
 magestades crestianis. que, si lo que se le dice para camina[r] con este pie, despidiendo toda difidentia i quitandole
 la causa de ela, i tomando los [?dos] este blanco del seruitio i gloria de Dios, i el de la causa catolica i obedientia
-de la iglesia romana, de que depende la entiera obedientia i seguritad i[u]ntamente de sus estados, i le responde[n]
+de la iglesia romana, de que depende la entiera obedientia i seguritad i[u]ntamente de sus estados, i le responde{+n}
 los dos Reies con efeto al nombre i [?atributos] de que se intitulan, i […] heredados, que en tal caso, oluidando el
 Rei mi señor [?otras] […] de que pudiera acordarse, […] quiere posponerle; halara a S. M.tà Christianissima tan buen
 amigo i hermano, i tan pronto para estrecharse i hazerse una mesma cosa con el, como […] N. S. […]
@@ -72,5 +72,16 @@ amigo i hermano, i tan pronto para estrecharse i hazerse una mesma cosa con el, 
 - "[?otras] […]" (203r l. 14): 2 9 4 9 2 1 4 5 2 1 4; "[…] quiere posponerle" (l. 15): 3 1 7 1 5 0 3 4 8 open.
 - "como […]" (203r l. 18–19): 3 3 5 0 0 2? 7 0 2 1 1 5 0 2 1 4 1 9 1 4 2 0 0 3 5 4 8 2 1 2 2 7 4 0 0, then 111 and
   2 7 9 6 2 1 2 1 0 2: the last line, on damaged paper, does not parse.
+- Checked on the DECODE R35 images, 14 Nov 2026 (README, one-digit rule of 14 Nov 2026; the key is Meister no. 40,
+  the key of the period sent to Morosini in 1587):
+  - maio{+r} (202r l. 13, "a maio{+r} union"): 20 21 17 91 **2** for 1 r, then 3 01 17 91 0 union; on the image a 2 of
+    the same form as the 2s of 212 at the head of the line. The encipherer's slip (the same word on 202v l. 20 is also
+    written maio + 2).
+  - colo{+r} (202v l. 10, "el pretexto i colo{+r} de la religion"): 25 91 50 91 **2** for 1 r, then 62 5 de, 50 212 la; a
+    hooked figure that DECODE reads 2; if it is the clerk's final 1 the r is as written; read either way.
+  - religion (202v l. 11): DECODE "1 3 (?) 0 5 1 7 4 0 1 7 9 1 0"; on the image the queried figure is a 5 (e):
+    13 5 05 17 40 17 91 0, a misreading corrected, no rule needed.
+  - responde{+n} (203r l. 12, "i le responde{+n} los dos Reies"): 13 5 44 91 01 26 35 **1** for 0 n (the subject is los
+    dos Reies); on the image a hooked 1, not a 0. The encipherer's slip.
 - Spurious dots: 559 (heading), none in the Spanish body except 226 (catolica, a real code). Codes written as words:
   "Rei" spelt in letters (13 5 171), "como" by the Italian word code 79 (come), "per" (Spanish por) by 64.

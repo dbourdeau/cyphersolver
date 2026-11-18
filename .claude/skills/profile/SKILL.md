@@ -43,7 +43,8 @@ reader could check against the folder. Rules:
    unit: cipher tokens, with unread marks such as [..] or ? counted as unread). Set `outcome.key` (recovered / partial
    / none), the state of the key apart from the text; `outcome.codes_open` ({open, total, tokens_open}) for code
    groups without a value; and `documents[].read` for each document. The class follows the read bar in README
-   Conventions. When a complete key over a noisy transcription gives values that do not read as sense, add
+   Conventions. A text entry's `read_share` counts holes by words: `[...]` is one unread word, `[... n]` is n (the least number the decode shows where it is an estimate)
+   (README Conventions, "Holes are counted by words", 14 Nov 2026). When a complete key over a noisy transcription gives values that do not read as sense, add
    `fraction_coherent` (share of text that reads) so `fraction_read` does not overstate the result. For `read in part`, `fraction_read` is required and `gaps` lists every unread piece with
    its blocker (`no-key-material`, `too-short`, `illegible`, `needs-physical-access`, `open-codes`), copied from
    the `## Remaining gaps` section of NOTES.md (writeup skill, section 0a). The write-up checker rejects a partial

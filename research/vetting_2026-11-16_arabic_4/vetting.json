@@ -1,0 +1,55 @@
+{
+ "2942": {
+  "unvetted": "Leaf not seen. Routes tried 16 Nov 2026: K10plus SRU (sru.k10plus.de, pica.xsgb and pica.xsgn = 'Ms. orient. A 2507': 0 records; pica.xall 'orient A 2507': 5 unrelated records, so no K10plus record with a digitisation link was found); dhb.thulb.uni-jena.de and collections.thulb.uni-jena.de both redirected to a proof-of-work bot page (rep-pow-challenge), not passed; DDB API answered 403 (needs a key), stopped; qalamos.net did not connect; web search for 'Ms. orient. A 2507' Gotha found no record. Pertsch vol. 4 p. 373 re-read in the archive.org text: 'Das andere Blatt enthält eine Notiz in Geheimschrift und eine andere eines Lesers aus dem Jahre 1178' (shelfmark form Ms. orient. A 2507 still unconfirmed). known.py (orient. A 2507, Pertsch, Delhemma, Dhat al-Himma) only this lead; DECODE (Gotha, Forschungsbibliothek, Delhemma, Mujahidin) 0. Needs a person in a browser on the Gotha/Erfurt viewer, or a scan from the Forschungsbibliothek Gotha of the two leaves at the end of the volume."
+ },
+ "2943": {
+  "date": "2026-11-16",
+  "by": "Daniel Bourdeau; Claude Code session (Claude Opus 5.5), 16 Nov 2026",
+  "seen": {
+   "kind": "scan",
+   "where": "Staatsbibliothek zu Berlin digital collections, Sachau 218 (PPN618589309; METS https://content.staatsbibliothek-berlin.de/dc/PPN618589309.mets.xml, which labels image 467 as f. 231r), full image https://content.staatsbibliothek-berlin.de/dc/PPN618589309-00000467/full/full/0/default.jpg at 2048 x 2853 px, the four lines cropped at native size and at 2x; images 466 (f. 230v) and 468 (f. 231v) viewed at 2014 x 2853 px",
+   "extent": "Four underlined lines at the top of f. 231r, each of about 7-10 word-like groups (roughly 30-35 groups and on the order of 120-160 signs in all; estimated from the crops, not counted sign by sign), written right to left above the large-script lines 5-9",
+   "cipher": "A cipher text in an altered Syriac script: word groups joined and spaced as in cursive Serto, in which forms of Syriac letters (vertical alaph or lamadh strokes, mim, waw and he loops) stand together with signs shaped like Eastern Arabic numerals (a 4-shape, a 9-shape, a 2/6-shape) and signs that belong to no script, some carrying red dots in the place of Syriac diacritic points. Sample, line 1 from the right, first group as read here: a dalath/rish-like hook, a 4-shaped sign with a red dot under it, a semkath-like sign; line 4 from the right begins with a mim-like sign, a 4-shaped sign and a vertical stroke. The end of line 4 at the left has forms like Syriac lamadh-alaph ligatures. Sachau's catalogue describes the same lines as 'vier Zeilen in einer Chiffreschrift, bestehend aus Ziffern, Buchstaben und willkürlich erfundenen Zeichen'. No decipherment, gloss or key is written on f. 231r, above or between the lines, and none on f. 230v (end of the Karshuni Prayer of Solomon) or f. 231v (Syriac/Karshuni text). The plaintext language (Syriac or Karshuni Arabic) cannot be judged without reading it."
+  },
+  "prior_art": {
+   "decode": "decode_search.py on Sachau, Syriac, Garshuni, Karshuni, Staatsbibliothek zu Berlin and Midyat: 0 records each (the tool answers: 'Berlin' gives 5 unrelated rows, so the search works); no DECODE record of this volume or of any Syriac-script cipher",
+   "tomokiyo": "cryptiana.web.fc2.com unsolved.htm and code/GL.htm fetched 16 Nov 2026 (Shift_JIS decoded) and searched for Syriac, Syria, Karshuni, Garshuni, Sachau, Berlin, Arabic: no entry for this manuscript or any Syriac cipher",
+   "lasry": "GL.htm (Lasry's key list on cryptiana) has no Syriac or Berlin Sachau item; web search on Lasry with Syriac cipher, HistoCrypt and Cryptologia found only his papal, syllabic-cipher and DECRYPT papers, nothing on a Syriac-script cipher",
+   "edition": "Sachau, Verzeichniss der syrischen Handschriften (Berlin 1899), vol. 2 pp. 614-615, no. 188, item 11, read in the archive.org text (SachauHandschriften23.2): 'Auf Bl. 231a vier Zeilen in einer Chiffreschrift, bestehend aus Ziffern, Buchstaben und willkürlich erfundenen Zeichen', with no reading or key. The text has never been edited as far as found; SBB METS dates the volume 17XX",
+   "literature": "Web searches on Sachau 218 with Midyat and cipher, on Syriac secret alphabets / Syriac cryptography / cryptographie syriaque, on Karshuni/Garshuni cryptograms from Tur Abdin, and on Sachau manuscripts with Chiffreschrift/Geheimschrift entziffert: no study of this leaf and no decipherment; only general Garshuni background, the Leipzig Cod. Mag. 65 alphabet list and UPenn LJS 51"
+  },
+  "key_check": "No key on the leaf or its neighbours. Sachau's catalogue lists Syriac secret alphabets in other Berlin volumes (index 'Geheimschrift-Arten' pp. 338, 552, 706, 717, 803, 807, 808; 'Chiffre-Schrift' of Bardesanes pp. 338, 706, 717, 794, 803, 807, of Simon pp. 338, 803, 807, of the abbot Narsai p. 338): none was opened or tested here, and none is held in this repository or on DECODE",
+  "key_held": "Possible key material, untested: the Syriac cipher alphabets attributed to Bardesanes, Simon and Narsai that Sachau describes in other Berlin manuscripts (catalogue pp. 338, 552, 706, 717, 794, 803, 807, 808); the related two lines of Geheimschrift in Sachau 221 f. 20b (Sachau no. 179) are a sibling to compare",
+  "duplicates": "known.py 'Sachau 218', 'Sachau', 'Midyat', 'Midjad', 'Karshuni': hits are only this lead (leads.json 2933) and its sweep files (research/sweep_2026-11-16_arabic_2); no catalogue entry or target. DECODE 0 (terms above). Sachau 221 f. 20b is a different volume and leaf, not a duplicate",
+  "searches": [
+   {
+    "query": "\"Sachau 218\" Berlin Syriac manuscript Midyat cipher",
+    "result": "nothing on Sachau 218 or its cipher; only neighbouring Sachau shelfmarks (216, 219, 220, 238)"
+   },
+   {
+    "query": "Syriac secret alphabets cryptography manuscripts Garshuni cipher numerals study",
+    "result": "no study of Syriac cipher alphabets found; Garshuni background and UPenn LJS 51 (Arabic) only"
+   },
+   {
+    "query": "Karshuni Garshuni cryptogram \"secret script\" Tur Abdin manuscript deciphered",
+    "result": "no Karshuni or Tur Abdin cryptogram reported deciphered"
+   },
+   {
+    "query": "\"cryptographie syriaque\" OR \"Syriac cryptography\" OR \"Syriac cryptograms\" alphabets manuscripts",
+    "result": "only a blog note on Leipzig Cod. Mag. 65 (lists a 'Syriac alphabet' among cipher alphabets) and LJS 51; nothing on this leaf"
+   },
+   {
+    "query": "Berlin Staatsbibliothek Sachau Handschrift Chiffreschrift OR Geheimschrift syrisch entziffert",
+    "result": "SBB and DDB catalogue pages for other Sachau volumes; no decipherment of any Sachau cipher"
+   },
+   {
+    "query": "Sachau 1899 catalogue text (archive.org SachauHandschriften23.2) grepped for Chiffre/Geheim",
+    "result": "entry no. 188 quoted above, no reading; index of secret alphabets found (key material, not a reading)"
+   }
+  ],
+  "verdict": "open",
+  "lead_updates": {
+   "access": "online"
+  }
+ }
+}

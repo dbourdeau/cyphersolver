@@ -3,6 +3,22 @@
 Status: in progress (23 Oct 2026). Contributed reading (issue #52, Harumi-Matsuba), checked here; all 23 letters read into sentences
 (round 2, 23 Oct), read in part: open codes and phrase holes remain inside the readings (see Remaining gaps).
 
+14 Nov 2026, holes counted by words (owner decision: the read share counts unread words, not hole marks; a mark with a
+number, `[… n]`, is n unread words). The re-reading logs record what stands under five multi-word marks; each log has
+a closing section "Holes counted by words". Sizes are counts of decode fragments or groups, so estimates.
+
+| letter | mark | size | read share by marks | by words | state |
+|---|---|---|---|---|---|
+| 2 Dec 1568 | "ayde a autre […]" ("bellestant du m que du ii") | 6 | 0.953 | 0.943 | read -> **read in part** |
+| 11 Oct 1567 | "et que [...] bagues" (two groups) | 2 | 0.954 | 0.953 | read |
+| 2 Mar 1569 | "de […] qui craignent" ("m lihngs odeccurd") | 3 | 0.958 | 0.951 | read |
+| 20 Oct 1569 | "par […] le comte […]" | 2 and 4 | 0.944 | 0.926 | read in part |
+| 4 Sep 1568 (Queen) | "d'Espaigne […] le mariaige" (two groups, thirty letters) | 2 | 0.943 | 0.942 | read in part |
+
+Extent unknown (not recorded in the logs), left as one hole each: "que […] bien qu'il" (11 Oct 1567), the marks of 17 Jul 1568, 4 Sep 1568 (King)
+and 6 Mar 1568 (all three letters already read in part). The readings now hold 11,615 words and 574 holes (561 before);
+`fraction_read` 0.873 -> 0.872.
+
 23 Oct 2026, r2m (Claude Opus 5.5): **the single-word holes of the 17 letters not re-checked in round 2 worked through
 on native-resolution crops** (openapi.bnf.fr IIIF, views 7-8, 34-35, 49, 65, 70-71, 99-100, 103, 109-110, 125, 129-130,
 140-141, 146, 155, 159, 161, 163, 168; images in the scratchpad only). Bracketed holes in the 17 readings 161 -> 90.

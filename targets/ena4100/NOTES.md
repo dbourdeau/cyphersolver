@@ -1,0 +1,230 @@
+# ENA 4100.7b: secret passage in a letter from Qus (catalogue 2883)
+
+Status: in progress
+
+Jewish Theological Seminary Library, ENA 4100.7b, recto (Princeton Geniza Project 11951). Letter of a son in Qus to
+his mother, Judaeo-Arabic in Hebrew script, undated. PGP: lines 7-12 are "a cipher ... probably this is also in
+Judaeo-Arabic ... Needs examination/decipherment" (noticed by Oded Zinger). No reading is known (prior-art check of
+15 Nov 2026 in the catalogue entry; PGP page re-read 17 Nov 2026, still no transcription).
+
+Image: `https://iiif-cloud.princeton.edu/iiif/2/9b%2Fdc%2Fd9%2F9bdcd9be1aed4b108412a7faffee4438%2Fintermediate_file/full/full/0/default.jpg`
+(5428 x 7230 px, plain curl). Images are not kept in the repository.
+
+## Session 17 Nov 2026: first attempt, not solved
+
+### Transcription (`transcription.txt`), a first reading, NOT reliable
+
+Read by the model from full-resolution crops. The hand is large and crude. The passage starts in the second half of
+my line 7 (after the stain) and ends with my line 12; line 13 onward is clear text again ("... and we have had no
+letter from you since the day Abu Mansur left ...").
+
+    7b  אדגך אתגלב
+    8   אים אוחעך ל אורכבר – תכור א
+    9   אלכררקאנך אל אדיר ( אן אלמרלד
+    10  אל סנאר אן אלמרדנה אולדן האגה
+    11  אזג אולגי אן יאני פרגרווג יו
+    12  אוירן ערך אל אועלג אי טג אלה
+
+Known weak points of this reading:
+
+- ת in this hand looks like ר plus a short stroke, or like ה (compare כתאבי in line 1 and כתאב in line 14). So
+  אתגלב may be ארוגלב or אולגלב, תכור may be הכור / הבור, אורכבר may be אתכבר, האגה may be תאגה.
+- ש looks like ע or like ין (the clear line 13 opens ואיש, which I first read ואין). So אוחעך may be אוחשך and
+  אועלג may be אושלג.
+- ר / ד / final ך, ב / כ, ו / ז / נ are often not separable. אלמרדנה may be אלמדינה.
+- I could not read the clear lines 1-6 and 13-16 fluently either, which is the measure of how far this
+  transcription can be trusted. A reader of Geniza semi-cursive must redo it before any test below counts.
+
+### What the reading shows, as far as it goes
+
+- 31 words, 22 of them beginning with א; the others begin with ה/ת, י, ע, ס, ט, פ.
+- אל (five or six times, both as the ligature joined to the next word and as a separate word) and אן (three or four
+  times) stand where the Arabic article and the particle "that" would stand. The frame looks like Arabic syntax with
+  the content words replaced.
+- Five words have the shape או + three letters + one more letter: אוחעך, אולגי, אולדן, אוירן, אועלג.
+- Letters: ל, ר and ג are each near 10 % of the passage, far above their share in Arabic; ת, ש, פ, צ, ק, ח, ס, ז, ט
+  are absent or occur once. If this holds on a better transcription, the content words are not Arabic words with
+  their letters rearranged.
+
+### Hypotheses tried (by hand, on the reading above)
+
+| Hypothesis | Result |
+|---|---|
+| Each word reversed | No Arabic. The או- words become words ending in -וא, like plural verbs, but the roots are not words. |
+| Whole lines reversed | No Arabic. |
+| First letter replaced by א and moved to the end (or last letter moved to the front) | No Arabic beyond chance hits (רדי, גד). |
+| א as a null, removed everywhere | No Arabic. |
+| Letter rearrangement of any kind | Unlikely on the letter counts (above). |
+| Monoalphabetic substitution | Unlikely: 70 % of words would begin with one plaintext letter (Elbaum's point). |
+| Another language in Hebrew letters: Coptic, Berber, Nubian, Greek, Persian, Turkic, Romance, Tulu | Single words can be matched in several of them (which shows how weak such matches are); none gives a phrase, and the near absence of t, s, sh and p/f fits no natural language I know. |
+| Ordinary colloquial Judaeo-Arabic, misread | Not excluded for parts: אים אוחשך could be a phrase of longing. Zinger and Elbaum, who read such hands daily, call it a cipher. |
+
+No test was run by script: the transcription is too uncertain for a wordlist test to mean anything.
+
+## Same day, second pass: tests on a word list, a second transcription, and a Berber hypothesis
+
+### Scripted tests (negative)
+
+A Judaeo-Arabic word list was built from the Princeton Geniza Project's public text corpus
+(`github.com/princetongenizalab/pgp-text`, 4,443 Judaeo-Arabic files, 1.35 M words, 98,000 types; PGP 11951 itself is
+not in it). In that corpus 22 % of words begin with א; in the passage about 70 % do. About 75 rules (reversal,
+rotations, alef stripped, alef as a null, atbash, albam, 21 alphabet shifts with and without א and ל fixed) were
+applied over a letter-confusion lattice of the first reading and scored against the list, with shuffled-letter
+controls. No rule scores above its control (best 13 hits of 21 against 8.5 by chance, with implausible words).
+Web searches for a later reading, for the Bohak-Zinger-Elbaum publication and for an Arabic word game of this
+shape found nothing.
+
+### Second transcription (`transcription_b.txt`)
+
+An independent reading by a subagent, with alternatives. What it changes:
+
+- The hooked S-shaped letter I read as ג is ג in אלגמע but is also the **word-final alef** of the clear lines
+  (סוא, נרא, שא). The surplus of ג in my first reading is therefore not real.
+- The short word I read אל in lines 9 and 10 has no ascender: it is **אר**.
+- Line 12 ends in plain Arabic: **אין שא אללה**, "God willing". The secret stretch ends just before it.
+- A horizontal stroke follows a letter four times (lines 8, 9, 10); kept as a possible divider.
+
+### Hypothesis: the passage is Berber written in Hebrew letters (NOT verified)
+
+With those corrections, and ע / ג standing for gh, the end of the passage gives a connected sentence in Berber
+(Tamazight of the Moroccan type):
+
+| Hebrew letters | Berber | Meaning |
+|---|---|---|
+| אזן (line 11; ז/ו and נ/ג uncertain) | azn | send (imperative) |
+| אודאי | uday | a Jew |
+| אן יאוי | a(n) yawi | who will bring / to bring |
+| פרגר... | ? | object, unread |
+| אויתן (line 12; the fourth letter is ר, ה or ת) | awi-tn | take them / keep them |
+| ערך | ghr-k | with you, at your place |
+| אל | al | until |
+| אועלג | ughulgh | I return |
+| אין שא אללה | in sha Allah | God willing (Arabic) |
+
+"Send a Jew to bring [...]; keep them with you until I return, God willing." Other words fit Berber particles: אדאך
+(line 7) = ad ak, future particle with "to you"; אר (lines 9, 10) = ar, the present-tense particle or "until";
+איס (line 8) = is, "that / is it that". This also explains the alef-initial words (Berber particles a(d), ar, is, al, verbs
+and nouns beginning with a vowel) without any cipher.
+
+Against it, and to be checked: it rests on about 12 of 31 words; lines 8 to 10 are not read; my Berber is from
+general knowledge, with no dictionary or grammar opened; Berber should show many t and n, which the transcriptions
+show only if several ר are ת (possible in this hand, not shown); a Jewish family letter in Berber of this period
+would be very unusual, so the claim needs a Berberist and a Geniza palaeographer before it is stated anywhere as a
+reading. Single-word matches were found for other languages in the first pass; what is different here is one connected clause
+that suits the letter (a son away from home, a mother keeping goods).
+
+### Third pass, same day: dictionary check of the Berber words, lines 7 to 10 retried
+
+Checked against sources (17 Nov 2026):
+
+| Word | Source | Result |
+|---|---|---|
+| uday "Jew", pl. udayn | en.wiktionary `uday` (Tashelhit, Kabyle) | confirmed |
+| azn "to send" | en.wiktionary `azn` (Tashelhit) | confirmed |
+| awi "to take, to bring" | en.wiktionary `awi` (Tarifit, Senhaja); Kabyle grammar (awi-d "bring") | confirmed |
+| ad, future particle | en.wiktionary `ad` (Tarifit) | confirmed |
+| aghul "to return" | Leiden study of Rif Berber, cited through a web search summary: "Moyen Atlas aɣul, kabyle uɣal", used for "revenir" | confirmed for the Middle Atlas; the source itself was not opened |
+| ghr "at, to, towards", al "until" | Wiktionary ⵖⵔ (Central Atlas Tamazight), with al as a synonym of "until", through a search summary | confirmed; page not opened directly |
+| -tn "them", ghr-k "at your place", ughulgh "I returned" (1 sg. -gh) | standard Berber morphology, from memory | not checked in a grammar |
+
+So every word of the proposed clause exists with the proposed meaning, and aghul and al together point to
+the Tamazight of central Morocco rather than to Tashelhit or Kabyle.
+
+Problems found:
+
+- **Gender.** ghr-k and ad ak are masculine "you". The letter addresses the writer's mother, where Berber would use
+  -m / am. Either the Berber lines speak to someone else (line 1 may mention a brother), or these two readings are
+  wrong. This is the strongest objection so far.
+- "al ughulgh" uses the past stem after "until"; whether that is the expected form was not checked.
+- The end of line 11 (..י ו after a hooked letter) may be a possessive "my" (-inu / -iw), not established.
+- Lines 7b to 10 were retried from enlarged crops with Berber in mind and are **not read**. Fragments that may
+  matter: אור in line 8 (ur, "not"?), בכור in line 8 (Hebrew "firstborn"?), אלמכרוב / אלמכתוב in line 10 (Arabic
+  al-maktub, "what is written"?), אלמ.לך in line 9 (al-malik / al-mulk?). None of these is more than a guess.
+- No Berber text in the Geniza turned up in a web search; not searched in PGP or in the Berber literature
+  (van den Boogert on medieval Berber; Chetrit on Judaeo-Berber).
+
+Standing: one clause of eight words that is lexically sound and fits the letter, a masculine-pronoun problem, and
+two thirds of the passage unread. Still a hypothesis.
+
+### Fourth pass, same day: the Berber hypothesis measured. It does not hold up.
+
+**Third transcription and consensus (`transcription_c.txt`).** Read from the red channel divided by a 40-px blur
+(the stains nearly vanish), then adjudicated against readings A and B. Changes that matter:
+
+- line 11, first word: the last letter is the gimel of אלגמע, not nun: **אזג**, not אזן. "azn, send" falls.
+- line 12, first word: the fourth letter is he (arc plus detached stroke), not tav: **אויהן**. "awi-tn" falls.
+- line 12, second word ends in a certain final kaf (ערך or טרך); fourth word ends in gimel or nun (אועלג / אועלן).
+- line 11, third word is אן or או; the long last group of line 11 is one word of about nine signs.
+- אר in lines 9 and 10 is confirmed (no ascender), with ד as an alternative to ר.
+- The hooked S-form is the clear lines' final alef; whether it is alef or gimel inside a word cannot be decided.
+
+**Measurement against control languages.** The 20 words of three or more letters were matched phonetically
+(full vowels written with א ו י as in medieval Berber spelling, one unwritten vowel allowed, ע or ג for gh) against
+the commonest word forms of four Berber varieties and seven unrelated languages (Tatoeba sentence sets), each with
+60 to 200 controls in which the letters after the initial alef are shuffled.
+
+| Word list | Language | Matched of 20 | Shuffled mean | z |
+|---|---|---|---|---|
+| 9,000 forms | Indonesian | 6 | 3.2 | 2.6 |
+| | Turkish | 8 | 5.8 | 1.8 |
+| | Tashelhit | 7 | 5.3 | 1.6 |
+| | Standard Moroccan Tamazight | 7 | 5.6 | 1.2 |
+| | Berber (mixed) | 6 | 4.9 | 1.0 |
+| | Italian | 5 | 4.3 | 0.7 |
+| | Kabyle | 6 | 5.2 | 0.6 |
+| | Hungarian, Hausa, Finnish, Spanish | 3 to 6 | | -0.9 to 0.5 |
+| 50,000 forms | Turkish | 10 | 7.0 | 2.1 |
+| | Kabyle | 8 | 9.1 | -0.7 |
+| | Berber (mixed) | 8 | 9.7 | -1.2 |
+
+Berber does not stand out from Turkish or Indonesian, which nobody proposes. The Berber forms that match are
+is, yawi, ghur-k, ughulgh / ughalgh and (large list only) uday; in lines 7b to 10 only is matches a common form.
+The word-game and shift rules, rerun on the consensus text against the Judaeo-Arabic list, again give nothing above
+their controls.
+
+**Spelling and grammar (van den Boogert 2000 and Brugnatelli 2011, both opened by a subagent).**
+
+- For: medieval Berber in Arabic script writes full vowels plene and initial a-, i-, u- as alif, alif-ya, alif-waw,
+  which is how אודאי, יאוי and the alef-initial words would be spelled. "al, until" is attested in medieval Eastern
+  Berber and in modern Central Atlas Tamazight.
+- Against: -k is masculine and the addressee is the mother (ולדתי, confirmed; nobody else is addressed); "an" before
+  y- is unattested (a or ay expected); the perfective after "until" is unexpected; "bring" needs the particle d;
+  gh would be written both ע and ג in one word; Berber prose should show many words beginning with ת and a free
+  נ "of", and this passage has almost none; the vocabulary is Moroccan while the Berber-area Jews known on the
+  India route are Nafusi; no Jewish writing in Berber is known before the 19th century (Chetrit).
+
+**Context (clear lines and verso, read by a subagent).** The secret stretch follows "may God bring the reunion
+near, soon, God willing" and is followed by "no letter has reached Qus since Abu Mansur travelled from you". The
+writer says "we" throughout. No goods, money, messenger or place of origin is mentioned. The verso is a separate
+Arabic-script note to several people ("since the day I left your town"), with no key. PGP: no document described as
+Berber; ENA 3907.9 (PGP 10025) is a letter of an Abu Mansur about leaving Qus; ENA 4100.7a (PGP 12433) is a small
+letter fragment whose hand was not compared.
+
+**Verdict.** The Berber reading is withdrawn as a working result. What survives is weaker: the passage is written
+plene and vowel-initial, in the manner of a spoken language set down by ear, and it ends inside an Arabic formula.
+Which language, or whether it is a word game after all, is open.
+
+## Remaining gaps
+
+- The whole passage (about 31 words, 127 letters) is unread. Blocker for this session: no reliable transcription.
+  Not an outside blocker; the image is good.
+
+## Escalation
+
+Next steps, in order:
+
+0a. Use `transcription_c.txt` from now on. Still to try: Coptic, Nubian and Beja with the same matcher (no word list
+   was at hand; a subagent listed the test words: Coptic auo, an, ebol, je; Nubian -ka, -lo, an-en; Beja baruuk,
+   batuuk); compare the hand of ENA 4100.7a and of ENA 3907.9; ask PGP what Elbaum's 2020 edition contains.
+0. (Done in the fourth pass by measurement; a specialist's view is still worth having.) A Berberist (Tashelhit / Tamazight, ideally with medieval Berber, e.g. the Arabic-script
+   Berber of the Almohad period) reads `transcription_b.txt` against the image; check each proposed word in a
+   dictionary (Taifi, Destaing); look in PGP for other Berber or Sijilmasa / Dar'a family letters.
+
+1. A transcription by a reader of Geniza hands (ask the Princeton Geniza Project: Zinger, Elbaum; the 15 Nov sweep
+   notes also ask that PGP be written to before anything on this fragment is published).
+2. Read the clear lines and the verso fully for names and subject (Abu Mansur; what the son could want hidden).
+3. With a firm text: test content words against a Judaeo-Arabic word list under each word-game rule, and check the
+   Hebrew-jargon reading (Hebrew words with the Arabic article, the "lashon" of Geniza merchants).
+4. Search the literature on medieval Arabic argots (Banu Sasan vocabulary, al-Jawbari) for a rule that yields
+   alef-initial words.
+5. Siblings: other letters by this hand or family in ENA 4100 and PGP (none found in the 15 Nov sweep).

@@ -1,0 +1,269 @@
+{
+ "schema_version": 1,
+ "target": "edmondes1594",
+ "title": "Thomas Edmondes to an unnamed lord, camp before Laon, 9 July 1594: the cipher printed undeciphered in HMC Salisbury IV, pp. 559-560, read from the print (English letter cipher, alphabet shifted 7 with extra equivalents)",
+ "documents": [
+  {
+   "id": "HMC-Salisbury-IV-559",
+   "read": "read in part",
+   "shelfmark": "Hatfield House, Cecil Papers (volume and folio not given in the calendar); printed in Historical Manuscripts Commission, Calendar of the Manuscripts of the Marquis of Salisbury, Part IV (1892), pp. 559-560",
+   "date": "9 July 1594",
+   "year": 1594,
+   "country": "England",
+   "route": "Thomas Edmondes, the camp before Laon -> an unnamed lord (addressee not named in the calendar; the letter speaks of 'yor L.' commandment; Burghley is possible, not established)",
+   "places": {
+    "from": "Laon",
+    "to": "London"
+   },
+   "language": "English",
+   "pages": 2,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None known. The National Archives, SP 78/33 ff. 345-348, catalogued 'Edmondes to Burghley, and copy', 9 July 1594, is a different letter of the same day, in clear, with its clerk's copy; no decipherment of 1594 is known. Read from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online, by AI agents in two independent passes; no person has checked it; licensed images not included.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 651,
+    "distinct": 25,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription/cipher_letters.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Internet Archive page images of the printed calendar (item 11576077bsb, leaves 581-582); the manuscript is not seen",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Two transcriptions by two AI agents, one of them blind to the other: identical on all 651 printed cipher letters. The roman 'to' between two cipher runs is read as two cipher letters and is not in the 651. Person signs (cuts) and figures recorded as printed, not counted."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "polyphonic",
+   "nomenclator"
+  ],
+  "summary": "English letter cipher on the 24-letter alphabet: base alphabet shifted 7 (cipher a = plain h), frequent plain letters with extra equivalents taken from the same alphabet shifted 8 and 10 (occasionally 11 and 20), so that several printed letters carry two or three values; persons written with signs (55 and other cuts) and figures.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 25,
+  "diacritics": {
+   "used": false,
+   "note": "None in the print. The manuscript may mark the homophones (the print cannot show it): unknown."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 6,
+   "max_per_consonant": 6,
+   "per_letter": {
+    "a": 5,
+    "b": 3,
+    "c": 6,
+    "d": 5,
+    "e": 6,
+    "f": 5,
+    "m": 2,
+    "o": 2,
+    "r": 2,
+    "s": 2,
+    "u": 2,
+    "y": 2
+   }
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 7,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None known. The National Archives SP 78/33 ff. 345-348, 'Edmondes to Burghley, and copy' (9 July 1594), is a different letter of the same day, in clear, with its clerk's copy (read from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online, by AI agents in two independent passes; no person has checked it; licensed images not included); no decipherment of 1594 is known. No printed or modern reading of this cipher text found (HMC Salisbury IV, V, XIII, XIV; Birch, Memoirs 1754; Butler, The Edmondes Papers 1913; Tomokiyo, Cryptiana; DECODE). The List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) was read and does not summarize this letter; its Brittany section was not seen.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Andrew Beling set the research direction and the posting restraint; AI agents found the lead, transcribed the print, recovered the key, froze it and ran the held-out test, and a second AI agent solved it independently and checked the first reading. No human reading check.",
+  "tools": [
+   "quadgram model of 1590s English (Unton correspondence, Roxburghe Club 1847, plus Edmondes's clear letters in Butler 1913; scripts/lm.py)",
+   "shift-set decoder with exact dynamic-programming reading (scripts/multishift.py, scripts/poly.py)",
+   "held-out test (scripts/heldout.py) and the second agent's stricter variants (scripts/stricter_heldout.py)"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic) agents, 14 Nov 2026",
+   "Claude Fable 5.2 (Anthropic) agents, 15 Nov 2026 (collation of SP 78/33 ff. 345-348 only)"
+  ],
+  "first_date": "2026-11-14",
+  "last_date": "2026-11-15"
+ },
+ "solution": [
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Lead found in a mining run over the printed Salisbury calendar: the index of part IV lists 'Cipher letters undeciphered; 484, 559' and 'Cipher used by Mr. Edmunds; 559'. Upstream checked: no target or lead for this letter (catalogue 1003 is the different p. 484 letter).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "651 printed cipher letters transcribed from the page images in two passes (top down and from the end), identical; person signs and figures recorded as printed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "hypothesis",
+   "technique": [
+    "repeat/pattern analysis",
+    "key-structure hypothesis"
+   ],
+   "what": "Repeated groups 'maw', 'max', 'mg' read as 'the', 'the', 'to': a Caesar base of 7 on the 24-letter alphabet (noticed on the whole text, before any split).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "General polyphonic annealer over free keys (scripts/poly.py): superseded by the shift-set model.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "statistics",
+   "technique": [
+    "exhaustive search",
+    "beam/DP decoding",
+    "language-model scoring"
+   ],
+   "what": "All 2,024 sets of three shifts scored on the printed letters: (7, 8, 10) first at -4.088 against -4.58 to -4.66 for the best set on three shuffles of the letters. Fourth and fifth shifts help any set about equally, so shifts 11 and 20 rest on whole-word readings, not the score.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "prediction",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Held-out test written before the run (tests/PREREGISTRATION.md): shifts chosen on the first 350 letters only, (7, 8, 10), key frozen (sha256 70077576...ce6f); on the last 301 letters -4.0950 against at most -4.6513 for 200 shuffled keys (0 of 200 as good); declare, profession, relligion, cause, assure, assistance, army, under, byron in the machine reading. 58 of the 636 read letters lie outside the tested key (shift 20: 35, shift 11: 18, values added by hand: 5; scripts/sure_words.py).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Hand reading word by word: 636 of 651 letters read; values chosen by sense where a printed letter carries more than one; g/q and n/u misreadings of the editor assumed in a few places.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction",
+    "statistical test"
+   ],
+   "what": "Independent check by a second AI agent: own blind transcription (identical, 651 letters) and own solution in about ten minutes before opening the first agent's files; same base shift and same multi-valued letters; reading agrees word for word outside the spans both mark weak. Held-out test rerun exactly. Stricter test: all three shifts chosen blind on either half, (7, 8, 10) ranks 1 of 2,024 on the other half; with base 7 fixed, (8, 10) ranks 1 of 231 pairs either way. Corrections: the second figure on p. 559 is 300, not 800; the Normandy reason is Montpensier's, not 55's; the request for assistance is 55's, not the governor of Rennes's; 55's identification is by content only.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "literature search",
+   "what": "Packaging: governor of Rennes in 1594 looked up: René Marec de Montbarot (captain and governor of Rennes 1583-1605; lieutenant of the King for the bishopric of Rennes from 1593). No reference found on his religion.",
+   "result": "partial"
+  },
+  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
+  {"date": "2026-11-15", "kind": "literature search", "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.", "result": "ruled out"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["other"], "what": "Integration check of pull request #666 (15 and 16 Nov 2026). The 651 cipher letters of transcription/cipher_letters.txt (equal to pass1.txt) compared with the print: p. 559 on leaf 581 of Internet Archive 11576077bsb fetched afresh and on the committed crop, p. 560 on the committed crop; all 16 runs agree. Scripts re-run in a scratch copy: frozen key sha256 matches; held-out score -4.0950, 200 shuffled keys at most -4.6513; (7, 8, 10) chosen on either half ranks 1 of 2,024 on the other; all as recorded. scripts/sure_words.py re-run: reading/sure_words.tsv reproduced byte for byte, 57 sure words of 147, 95 with every letter allowed by the tested key, 58 of 636 read letters outside it (shift 20: 35, shift 11: 18, other: 5; recounted here from the letters column). The review of 15 Nov had counted 63 by taking every word without a sense mark; the contributor's 57 leaves out four words with a letter outside the tested key and two weak ones, and is the stricter count kept. No earlier target, catalogue entry or lead for this letter; targets/stowe166 names it as outside its six letters. The manuscript was not seen by anyone here; no person has checked the reading.", "result": "worked"}
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The shift-set key was recovered from the printed cipher letters alone, with a 1590s English letter model; no decipherment, clear copy or outside key was used, and none is known: SP 78/33 ff. 345-348 is a different letter of the same day, in clear, with its clerk's copy.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "decipherment with ambiguous key"
+  ],
+  "verification": ["matched control", "independent verification", "historical consistency"],
+  "fraction_read": 0.388,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Sure words only (README Conventions; reading/sure_words.tsv, written by scripts/sure_words.py, 15 Nov 2026): 57 of 147 (38.8%). A word is sure when every letter is read and comes from the tested key, the shifts (7, 8, 10) frozen before the held-out test, with no value chosen by sense (the printed letter takes its commonest value, covering at least 70% of its uses) and no weak reading. Of the other 90: 38 words are allowed by the tested key but take a value chosen by sense, 29 need a letter outside it (shift 20, shift 11 or a value added by hand), 6 are weak, 5 are unread letter runs and 12 are the undeciphered person signs and figures (55 twice, the m-sign twice, the ho- and oo-signs, 4s, 300 twice, 26 three times). Daniel Bourdeau's review counts 63 of 147; the six words his count adds are gouuerment, the (A10), he (A10), the (A11), which need a letter outside the tested key, and h and ill, which take the printed roman 'to' as cipher. Our earlier figure, counting every word read: 130 of 147 (0.884); without the signs 130 of 135; by letters 636 of 651 printed cipher letters (0.977).",
+  "codes_open": {
+   "open": 7,
+   "tokens_open": 12
+  },
+  "gaps": [
+   {
+    "item": "15 printed cipher letters not read: A2 'a d m' and 'g k l', A11 one letter and five letters, B1 'goo'",
+    "blocker": "needs-physical-access",
+    "detail": "Read from the 1892 print; the manuscript (Cecil Papers) would show whether the editor misread these letters and whether the homophones are marked. No clear copy or decipherment is known."
+   },
+   {
+    "item": "person signs 55, the m-sign, the ho-sign, the oo-sign, and the figures 4s, 300, 26 not deciphered",
+    "blocker": "no-key-material",
+    "detail": "One letter only; no key or decipherment seen. Identifications (55 probably Bouillon; 26 probably the King; 300 England or the Queen) are inference from content."
+   },
+   {
+    "item": "values of the printed letters with two or three values, chosen by sense; the printed 'to' taken as cipher; assumed g/q and n/u misreadings",
+    "blocker": "needs-physical-access",
+    "detail": "Only the Hatfield manuscript can confirm them."
+   }
+  ],
+  "validation": {"date": "2026-11-15", "model": "en-1640s", "file": "validation.tsv", "tokens": 636, "types": 25, "tokens_per_type": 25.44, "score": -2.986, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 12% of read tokens differ from their type's commonest value"},
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "new cipher with solution",
+    "note": "Andrew Beling, with AI agents: lead, transcription from the print, key recovered from the cipher alone, held-out test, reading; a second agent's independent solution and check.",
+    "date": "2026-11-14"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "HMC-Salisbury-IV-559",
+    "label": "Edmondes to an unnamed lord, camp before Laon, 9 July 1594 (HMC Salisbury IV, pp. 559-560)",
+    "transcription": "transcription/calendar_entry.txt",
+    "decryption": "reading/decryption.txt",
+    "reading": "reading/reading.md",
+    "translation": "reading/modernized.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.388,
+    "summary": "Montpensier presses the person shown by sign 55 (probably the duc de Bouillon, by content only) to go with him to Brittany; 55 argues that Brittany could hold correspondence with England, has the Protestants of Poitou beside it and port towns to give the English a footing, that the governor of Rennes will declare himself Protestant, and he hopes for assistance; he will not stay at court while Marshal Biron commands the army.",
+    "note": "read_share: sure words only, 57 of 147 (reading/sure_words.tsv; rule in fraction_read_source); our earlier figure, every word read, was 130 of 147 (0.884). Read from the 1892 print, manuscript unseen. 15 letters unread; person signs not deciphered (12 occurrences). Words resting on a value chosen by sense are marked ° and weak words † in reading.md and decryption.txt. 'Modernized' is a modern-English rendering of the cipher passages in context, not a translation.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #666 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-16",
+     "note": "The reading read as sentences inside the calendar's clear text: coherent English, with five unread runs and the undeciphered person signs. Raw: it is a reading of the 1892 print, the manuscript was not seen, and 38 words take a value chosen by sense and 29 a letter outside the tested key, so by sure words it is 57 of 147. The 651 printed cipher letters were compared with the page images of the Internet Archive copy on 15 Nov 2026 (leaf 581 fetched afresh for p. 559; the committed crop for p. 560): all agree. Recorded by the reviewer, not by the author; replaces the author's preliminary grade (also B, 14 Nov 2026). A model's reading: no person has checked it."
+    }
+   }
+  ],
+  "key_file": [
+   "keys/frozen_key.json",
+   "keys/key_table.tsv"
+  ],
+  "notes": "Read from print; the Cecil Papers manuscript is not seen, and only it can check the reading. SP 78/33 ff. 345-348 is a different letter of the same day, in clear, with its clerk's copy (read from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online, by AI agents in two independent passes; no person has checked it; licensed images not included); no decipherment of 1594 is known. The addressee is an unnamed lord. Two AI agents, one blind to the other, solved and read it; no human check. The cipher letters and signs were printed from the manuscript by the editors of the Historical Manuscripts Commission's Salisbury calendar (1892), undeciphered; our transcription is of their print."
+ }
+}

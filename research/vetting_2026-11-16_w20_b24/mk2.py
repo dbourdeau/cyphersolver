@@ -1,0 +1,40 @@
+"""Write the no-verdict proposals (blockers) as p/<id>.json."""
+import json
+P = [
+ {"id": 879, "verdict": None, "confidence": "low",
+  "note": "No verdict: TNA's own description is 'Folio 169: Letter in cipher (or shorthand.)', [1656] July 18, with no writer or addressee (Discovery API C7306137 re-read 16 Nov 2026). The archive does not decide cipher against shorthand, so the 'not online' route is not met, and the leaf is not digitised.",
+  "access": "archive", "access_note": "TNA SP 84/161/66 (f. 169), digitised=false; Kew copy or State Papers Online (Gale, subscription).",
+  "blocker": "Image needed to tell cipher from shorthand; same for the sibling lead 1802 (f. 216 of the same volume)."},
+ {"id": 1802, "verdict": None, "confidence": "low",
+  "note": "No verdict: 'Folio 216: Letter in cipher or shorthand, mentioning Peter Refin of Middelburg', undated (Discovery API C7306165 re-read 16 Nov 2026). As for its sibling 879 (f. 169), the archive does not decide cipher against shorthand and the leaf is not digitised; known.py, Tomokiyo and Lasry have nothing on Refin or SP 84/161.",
+  "access": "archive", "access_note": "TNA SP 84/161/83 (f. 216), digitised=false; Kew copy or State Papers Online.",
+  "blocker": "Image needed to tell cipher from shorthand."},
+ {"id": 2798, "verdict": None, "confidence": "low",
+  "note": "No verdict: the only description is 'with an account in code on fo. 60d' on a draft merchant account of Nov 1548 (Discovery API C7694233); the sibling SP 46/2 fos. 83-92 (C7691957) is a plain draft account with no code mentioned. A 1548 merchant's 'account in code' may be a private cost or price code or merchant's numerals rather than a cipher, and only an image can settle it.",
+  "access": "archive", "access_note": "TNA SP 46/124 fo. 60d, not digitised.",
+  "blocker": "Image of fo. 60d needed to tell a cipher from a merchant's mark or price code."},
+ {"id": 1146, "verdict": None, "confidence": "low",
+  "note": "No verdict: an aggregate of seven unrelated State Papers items (SP 81/44/225, 81/46/273, 84/130/27, 77/28/643, 81/37/284, 81/38/250, 77/6/229) from 1600-1639. None is digitised, Tomokiyo and Lasry have none of the shelfmarks or names (Gerbier, Kendall, Stanning), and known.py finds no DECODE record. The 6 Nov blocker stands: Akkerman's edition of Elizabeth Stuart's correspondence is not online to say whether the Roe and Gerbier passages are printed deciphered. Recommend splitting into one lead per item before vetting.",
+  "access": "archive", "access_note": "TNA, seven items in SP 77, 81 and 84; not digitised.",
+  "blocker": "Aggregate; split first, and Akkerman vols 1-2 (OUP 2011-15) needed for the Roe/Gerbier items."},
+ {"id": 2546, "verdict": None, "confidence": "low",
+  "note": "No new verdict: the 11 Nov held block (verdict open from the archive's description, with the DECODE, Tomokiyo, Lasry and Resolutiën checks done) still stands and nothing more is reachable today (no scans). The inventory text re-read from the 11 Nov harvest says only 'In de brieven komen soms enige woorden in cijfercode voor' for a whole pak of 1595-1597 letters. Whether occasional coded words in a bundle meet the bar is the lead agent's call; I would keep it held.",
+  "access": "archive", "access_note": "Tresoar 7 inv. 808, no scans; reading room or scan order.",
+  "blocker": "Extent of cipher unknown (occasional words only); scans needed."},
+ {"id": 1163, "verdict": None, "confidence": "low",
+  "note": "No verdict: the cipher letter itself (Minna Werner to Kinkel, 11 Feb 1860) is not in the Nachlass. Kalliope DE-611-HS-2714700 (13 Feb, S 2667,1 (1)) 'Erwähnt die Geheimschrift in Minnas Brief [v. 11.02.1860]' and DE-611-HS-2714980 (17 Feb, Konrad Kinkel's copy S 2673 (16 S.184-193)) gives 'Zur Dechiffrierung von Minnas Geheimschrift' (both re-read 16 Nov 2026): Kinkel discusses deciphering it, so the recipient worked on it, but no ciphertext is known to survive. Without a located ciphertext there is nothing to vet; recommend dropping unless ULB Bonn's scans show a sample.",
+  "access": "archive", "access_note": "ULB Bonn, Nachlass Kinkel; scans in the ULB Bildarchiv, not online.",
+  "blocker": "Ciphertext not located."},
+ {"id": 1292, "verdict": None, "confidence": "low",
+  "note": "No verdict: finding-aids.lib.unc.edu did not answer from this machine on 16 Nov 2026 (curl connection with no response; WebFetch ECONNRESET), as on 11 Nov from the cloud. A web search found nothing on the item. The lead's own description ('copy of a coded message from Charles George Gordon') does not show code groups survive in the copy.",
+  "access": "archive", "access_note": "UNC Wilson Library, Southern Historical Collection #2769 (Battle Papers), item of 24 July 1877; not digitised.",
+  "blocker": "UNC finding aid unreachable by script; item not online."},
+ {"id": 1426, "verdict": None, "confidence": "low",
+  "note": "No verdict: historicpittsburgh.org still returns its 'Verifying that you're human' page to curl (16 Nov 2026) and api.dp.la needs a key. A web search shows the items are pages of the Henry Clay Frick Business Records (Frick's copybooks), each titled 'Frick wires Carnegie a coded message', with dates seen in the results of 19 Nov 1890, 9 Jul 1891, 6 May 1892, 25 Feb 1898 and 23 Apr 1898, and one 'with possession May first discernable'. These are Frick's outgoing copies; whether plain text is written with them is not visible. It is also an aggregate of 19 records.",
+  "access": "online", "access_note": "Historic Pittsburgh / digital.library.pitt.edu (CAPTCHA to scripts); needs Chrome.",
+  "blocker": "Bot check on Historic Pittsburgh; aggregate of 19 records.",
+  "record_correction": "The lead's 'Homestead 1892 among them' is not confirmed by the dates found (1890-1898; 6 May 1892 is before Homestead); the records are Frick copybook pages."},
+]
+for p in P:
+    json.dump(p, open(f"p/{p['id']}.json", 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+print(len(P))

@@ -176,7 +176,7 @@ search.
 
 ## Imperial keys tested and ruled out
 
-- `targets/ferrante1549` (Charles V and Prince Philip to Ferrante): a Spanish syllabary of consonant bases with vowel marks.
+- `targets/gonzaga1549/wainut` (Charles V and Prince Philip to Ferrante): a Spanish syllabary of consonant bases with vowel marks.
   On these pairs it does not fit (its `a` is m and `u` is c; here `a` is r and `u` is u). Ruled out.
 - `targets/ercole1544` (Ercole Gonzaga to Ferrante): a reciprocal half-alphabet of Latin letters (a<->n, c<->p ...). Here
   `c` is c and `n` is l. Ruled out.

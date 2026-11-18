@@ -1,0 +1,1038 @@
+# PRELIMINARY PARTIAL TABLE of the code of Grantham's despatches of 1778. A working aid, NOT a key. No printed or manuscript key was found.
+# How made: fifteen despatches in SP 94/205 (2,314 code numbers) carry the office clerk's English between the lines, but not word over
+#   number. Each despatch's numbers were aligned with its words in order by a script (scripts/build_table.py); a number takes the word it
+#   keeps company with across despatches. No. 35 was not used.
+# RELIABILITY (verifier's estimate, 15 Nov 2026): about two thirds of the 'firm' entries are right, so about one in three may be wrong.
+#   Evidence: on despatches left out of the count, 70% of firm content-word entries and 82% of firm function-word entries fall in order in
+#   the clerk's text, against 6.5% and 39.5% for tables with the words shuffled; on No. 35 itself 11 of 16 (shuffled: 3.6 on average).
+#   Entries for common words (the, of, to, that, I ...) can match by accident because those words are everywhere; three firm entries are
+#   already known not to fit No. 35 (717 'the', 423 'of', 1178 'should'). The reader's own estimate was 'about a quarter may be wrong'.
+#   'weak' entries were aligned once, or not stably: treat each as a guess. Nulls and the numbers that spell names are not identified.
+# confidence: firm = aligned to the same headword at least twice, in at least two thirds of its alignments, and stable across runs;
+#             weak = anything less. headword: stem as the script keeps it (endings dropped: 'shoul' = should, 'noth' = nothing).
+# forms: the clerk's words at the places aligned (a run of words means the number was matched to the last and the others had no number).
+number	confidence	headword	times_aligned_to_it	times_aligned	times_seen	stability	forms
+5	weak	opinion	1	1	1	0.71	opinion x1
+6	weak	not	1	1	1	1.0	not x1
+7	firm	noth	3	3	3	1.0	nothing x3
+11	firm	to	6	7	8	1.0	to x6; this x1
+15	weak	woul	1	1	1	1.0	would x1
+16	weak	war	1	1	1	1.0	war x1
+19	weak	kind	1	1	1	1.0	kind x1
+20	weak	the	2	2	2	0.67	that the x2
+22	weak	see	1	1	1	1.0	see x1
+30	weak	any	1	1	1	1.0	any x1
+33	weak	of	4	4	6	0.67	of x4
+34	weak	suspicion	1	1	1	1.0	suspicion x1
+37	weak	mention	1	1	1	1.0	mention x1
+41	firm	had	3	3	3	1.0	had x3
+44	weak	stopt	1	1	1	1.0	be stopt x1
+51	weak	gain	1	1	1	0.83	gain x1
+52	firm	have	3	3	3	0.83	have x2; i have x1
+53	weak	kingdom	1	1	2	0.67	kingdoms x1
+54	weak	considerable	2	4	5	1.0	considerable x2; consideration x1; have x1
+57	weak	eliott	1	1	1	0.83	eliott x1
+58	weak	near	1	2	2	1.0	said nearly x1; m de x1
+67	firm	lordship	2	2	3	0.96	lordship x2
+69	weak	several	1	1	1	1.0	several x1
+70	weak	if	1	2	2	1.0	if x1; cause in which x1
+71	weak	think	1	1	1	1.0	think x1
+75	weak	high	1	1	2	1.0	highly x1
+77	weak	report	1	1	2	0.92	report x1
+78	firm	of	2	2	2	1.0	of x2
+79	weak	strong	1	1	1	1.0	strong x1
+80	weak	upon	1	1	1	1.0	upon x1
+97	weak	woul	2	4	4	0.88	would x1; purely x1; wou'd x1; it would x1
+98	weak	and	1	1	1	0.96	and x1
+99	weak	your	1	4	6	0.96	your x1; imparted x1; how x1; saving x1
+101	firm	great	4	4	5	1.0	great x4
+109	weak	he	1	1	1	1.0	he x1
+112	weak	mediterranean	1	1	1	1.0	mediterranean x1
+113	firm	was	4	4	4	1.0	was x4
+120	weak	their	1	1	2	0.92	particularly of their x1
+123	weak	conferenc	1	1	1	1.0	conferences x1
+125	weak	probab	1	2	2	1.0	probably x1; i x1
+126	firm	that	6	6	6	1.0	that x6
+127	weak	the	1	2	2	1.0	the x1; has x1
+128	weak	little	1	1	1	0.96	foreigners little x1
+131	firm	of	2	2	2	0.88	of x2
+139	weak	up	1	1	1	0.83	up x1
+140	firm	he	3	3	3	1.0	he x3
+142	weak	offer	1	1	1	1.0	offered x1
+143	weak	alter	1	1	1	0.83	alter x1
+145	firm	set	3	4	5	1.0	set x3; out x1
+148	weak	observ	1	1	1	1.0	observed x1
+152	weak	that	1	1	1	0.83	his majesty moderation and that x1
+154	weak	have	3	5	5	1.0	have x3; be x1; having x1
+156	firm	took	2	2	3	1.0	took x2
+158	firm	person	4	4	4	1.0	persons x3; any person x1
+163	weak	him	1	1	1	0.29	him x1
+165	firm	whatever	2	2	2	1.0	whatever x2
+167	weak	will	1	1	1	0.71	will x1
+168	firm	the	2	2	2	0.92	that the x1; the x1
+169	weak	instea	1	1	1	1.0	instead x1
+170	weak	out	1	2	2	0.96	out x1; to x1
+175	weak	seem	1	1	1	1.0	seems x1
+176	weak	carri	1	2	2	1.0	carried x1; much x1
+183	firm	i	5	5	6	1.0	i x5
+184	weak	neither	1	1	1	1.0	neither x1
+187	weak	caus	1	2	4	1.0	causes x1; spain x1
+189	firm	wish	2	2	2	1.0	wished x1; wish x1
+191	weak	opportunity	1	1	1	1.0	opportunity x1
+192	weak	their	1	1	1	0.75	their x1
+195	weak	satisfaction	1	2	2	1.0	satisfaction x1; france x1
+201	firm	a	4	4	4	0.92	a x4
+203	weak	carry	1	1	2	0.83	carrying x1
+206	weak	governor	1	1	1	0.5	governors x1
+208	firm	is	3	4	4	1.0	is x3; made x1
+209	weak	activity	1	1	1	1.0	activity x1
+210	weak	prospect	1	1	1	1.0	prospect x1
+218	weak	fleet	2	3	3	0.46	russia x1; fleets x1; fleet x1
+220	firm	be	3	3	3	1.0	be x3
+223	firm	no	2	3	6	0.96	no x1; appeared x1; present no x1
+227	weak	acquaint	1	2	2	1.0	acquainting x1; upon x1
+232	firm	some	3	3	3	1.0	some x3
+234	weak	not	1	1	1	0.25	not x1
+241	weak	end	1	1	1	1.0	end x1
+242	weak	made	1	1	1	0.88	declarations which have been made x1
+246	weak	that	1	1	1	1.0	that x1
+251	weak	set	1	1	1	0.96	set x1
+255	weak	that	1	1	1	0.79	that x1
+259	weak	justice	1	1	1	1.0	justice x1
+261	firm	which	6	6	6	1.0	which x5; objection which x1
+263	weak	chang	1	2	2	1.0	changes x1; change x1
+264	weak	they	1	1	1	0.88	they x1
+272	firm	french	2	2	2	1.0	french x1; the french x1
+274	weak	to	1	1	1	0.67	to x1
+275	firm	occasion	3	3	3	1.0	occasion x3
+277	weak	line	1	1	1	1.0	line x1
+289	weak	i	1	1	1	1.0	whole my lord i x1
+292	firm	the	12	12	12	1.0	the x12
+296	firm	spain	2	3	4	1.0	spain x2; spanish x1
+298	weak	view	1	1	1	1.0	views x1
+304	weak	i	1	1	1	0.62	i x1
+305	firm	and	5	5	6	1.0	and x5
+306	firm	it	2	2	2	1.0	it x2
+307	weak	to	1	2	2	0.75	repeated to x1; what x1
+309	firm	this	6	6	6	1.0	this x5; a measure this x1
+311	firm	view	2	2	2	1.0	pacifick views x1; views x1
+313	weak	inform	1	1	1	0.83	informed x1
+314	firm	of	8	9	9	1.0	of x8; florida x1
+315	weak	some	1	1	1	0.92	some x1
+316	weak	american	1	1	1	1.0	americans x1
+317	firm	to	3	3	3	1.0	to x3
+318	weak	him	1	1	1	0.79	him x1
+321	firm	might	2	3	3	1.0	might x2; that x1
+324	weak	with	1	1	1	1.0	with x1
+330	firm	other	2	3	3	1.0	other x1; be x1; to other x1
+334	weak	though	1	1	1	1.0	though x1
+337	weak	who	2	2	2	0.54	florida blanca who x1; who x1
+339	firm	some	4	4	4	1.0	some x4
+342	weak	regar	1	2	2	1.0	regard x1; not x1
+343	weak	disapprov	1	1	1	0.67	disapproved x1
+344	weak	than	1	1	1	1.0	than x1
+349	weak	that	1	1	1	1.0	that x1
+352	weak	in	1	1	1	1.0	in x1
+357	weak	written	1	1	1	1.0	written x1
+359	weak	result	1	1	1	1.0	result x1
+362	weak	is	1	1	1	1.0	is x1
+370	weak	been	1	1	1	1.0	been x1
+371	weak	establish'	1	2	2	1.0	establish'd x1; the x1
+373	firm	find	2	2	2	1.0	find x1; not find x1
+376	weak	m	1	1	1	0.96	m x1
+379	weak	inclination	1	1	1	1.0	inclination x1
+381	weak	prince	1	1	1	1.0	succeed prince x1
+383	weak	that	1	1	1	1.0	that x1
+386	weak	influence	1	2	2	1.0	influence x1; he x1
+388	weak	are	1	1	1	1.0	are x1
+390	weak	foun	1	1	1	1.0	found x1
+391	firm	well	2	3	3	1.0	well x2; not natural x1
+393	weak	no	1	1	2	0.75	no x1
+401	firm	i	6	6	6	1.0	i x5; court i x1
+408	firm	offer	2	3	3	1.0	often x1; offered x1; offer x1
+410	firm	that	4	4	5	0.96	that x4
+411	firm	be	2	2	2	0.75	be x1; may be x1
+414	weak	on	1	1	1	1.0	on x1
+420	weak	the	1	1	1	1.0	the x1
+422	firm	more	3	3	3	1.0	more x2; tend more x1
+423	firm	of	4	4	12	0.88	of x4
+424	firm	with	4	4	4	1.0	with x4
+425	weak	dispatch	1	1	1	1.0	dispatches x1
+426	firm	by	5	5	5	1.0	by x5
+427	firm	be	2	2	3	1.0	be x2
+428	weak	proposal	1	1	1	1.0	proposals x1
+430	weak	has	1	1	1	0.96	has x1
+432	weak	to	3	3	3	0.29	to x3
+436	weak	omit	1	1	1	1.0	omit x1
+438	weak	force	1	1	1	1.0	force x1
+443	firm	this	2	2	2	1.0	this x2
+451	weak	king	1	2	5	0.75	king x1; their x1
+455	weak	asking	1	2	2	1.0	asking x1; aside x1
+458	weak	put	1	1	1	1.0	put x1
+460	weak	obstacle	1	1	1	1.0	obstacle x1
+462	firm	treaty	2	3	3	1.0	treaty x2; treatment x1
+469	weak	that	1	1	1	1.0	that x1
+470	firm	of	12	12	12	1.0	of x10; majesty liberty of x1; establishment of x1
+473	weak	since	1	1	1	1.0	since x1
+482	weak	told	1	1	1	1.0	told x1
+484	weak	of	1	1	1	1.0	of x1
+485	weak	establishment	1	1	1	0.79	place for the establishment x1
+490	firm	of	2	2	5	1.0	of x2
+493	weak	house	1	1	1	0.46	house x1
+497	weak	spain	1	1	1	0.71	spain x1
+501	weak	embassy	1	1	1	1.0	embassy x1
+502	weak	mean	1	1	2	0.62	meaning x1
+503	weak	it	1	1	2	1.0	not think it x1
+504	weak	expres	1	2	2	1.0	express x1; expressed x1
+505	weak	spanish	1	1	1	0.96	spanish x1
+507	firm	packet	4	4	4	0.96	packet x2; packets x2
+508	firm	not	2	2	3	1.0	not x2
+511	firm	thought	2	2	2	1.0	thought x2
+513	weak	held	1	1	1	1.0	held x1
+523	weak	worl	1	1	2	1.0	the world x1
+526	firm	but	7	7	7	1.0	but x7
+527	firm	on	5	5	5	1.0	on x5
+529	weak	these	1	1	2	0.96	these x1
+530	weak	armament	1	1	1	1.0	armament x1
+531	firm	is	3	3	3	1.0	is x3
+535	firm	his	2	2	3	1.0	his x2
+536	weak	be	1	1	1	1.0	might be x1
+546	firm	receiv	2	3	3	0.96	received x2; receipt x1
+548	weak	he	3	3	3	0.38	he x2; me that he x1
+555	firm	subject	2	3	3	1.0	subject x2; your lordship x1
+559	weak	own	1	1	1	1.0	own x1
+580	weak	countermand	1	1	1	0.79	countermanded x1
+581	weak	to	1	1	1	0.75	to x1
+582	weak	situation	1	1	1	1.0	situation x1
+584	weak	communicate	1	1	1	0.96	communicate x1
+585	weak	discover	1	1	1	0.5	discovered x1
+586	weak	order	1	1	1	1.0	orders x1
+592	weak	catholick	1	1	1	1.0	catholick x1
+598	weak	misunderstand	1	1	1	1.0	misunderstanding x1
+599	firm	in	5	6	6	1.0	in x5; convinced x1
+608	weak	adher	1	1	1	0.62	adheres x1
+609	weak	is	1	1	1	1.0	is x1
+613	weak	and	1	1	1	0.54	and x1
+614	weak	frequent	1	1	1	1.0	frequently x1
+626	weak	call	1	1	1	0.71	called x1
+630	firm	was	5	5	5	1.0	was x5
+636	weak	them	1	1	1	1.0	them x1
+644	weak	every	1	1	1	0.54	every x1
+646	weak	calamiti	1	1	2	1.0	calamities x1
+654	weak	groundles	1	1	1	0.75	groundless x1
+655	weak	circumstanc	1	2	2	0.96	circumstances x1; circumstance x1
+658	weak	the	1	1	1	1.0	by the x1
+668	firm	appearance	3	4	4	0.92	appearance x2; an appearance x1; having x1
+670	firm	be	4	4	4	0.96	be x4
+672	firm	and	3	3	3	0.92	and x3
+674	weak	secure	1	1	1	1.0	secure x1
+676	firm	direct	3	3	3	1.0	directed x2; direct x1
+679	firm	the	8	8	9	1.0	the x8
+683	weak	away	1	1	1	0.71	away x1
+685	weak	into	1	1	1	1.0	into x1
+687	weak	last	1	1	1	1.0	last x1
+689	weak	busines	1	1	1	1.0	business x1
+697	weak	subject	1	1	1	0.96	subject x1
+700	firm	consul	2	2	2	1.0	consuls x1; consul x1
+705	weak	from	1	2	3	0.92	for information from x1; informed m de florida x1
+708	weak	adding	1	1	1	1.0	adding x1
+710	weak	certainty	1	1	1	1.0	certainty x1
+713	weak	part	1	1	1	0.96	third part x1
+716	firm	on	3	3	3	0.92	on x3
+717	firm	the	8	9	11	1.0	the x8; see x1
+721	weak	only	3	3	3	0.67	only x3
+722	weak	acting	1	1	1	1.0	acting x1
+723	weak	in	2	2	2	0.5	in x2
+726	weak	yesterday	1	2	2	1.0	yesterday x1; years x1
+729	weak	in	1	1	1	1.0	in x1
+735	weak	making	2	4	4	1.0	making x2; much x2
+749	weak	same	1	1	1	0.42	same x1
+753	firm	expect	2	2	2	1.0	expected x1; expect x1
+755	firm	thought	3	3	3	1.0	thought x2; he thought x1
+757	weak	like	1	1	1	1.0	likely x1
+760	firm	i	2	2	2	1.0	i x2
+761	firm	majesty	2	2	2	0.71	his majesty x1; majesty x1
+774	weak	acte	1	1	1	1.0	acted x1
+776	weak	inconsistent	1	1	1	1.0	inconsistent x1
+778	weak	it	1	1	1	0.5	it x1
+779	weak	by	1	1	1	1.0	by x1
+780	weak	of	1	2	5	1.0	of x1; assurances x1
+781	weak	instea	1	1	1	1.0	instead x1
+782	weak	upon	1	1	1	0.67	upon x1
+791	weak	desire	1	3	4	1.0	desire x1; desirous x1; hurt x1
+794	weak	meet	1	1	1	1.0	meeting x1
+797	firm	strong	2	2	2	1.0	strong x2
+799	firm	d'almadovar	2	3	3	1.0	m d'almadovar x1; monsieur d'almadovar x1; the x1
+800	weak	thursday	1	1	1	1.0	thursday x1
+801	weak	instea	1	1	1	0.67	instead x1
+803	weak	subject	1	1	1	1.0	subject x1
+804	weak	go	1	2	2	1.0	go x1; that x1
+806	weak	event	1	1	1	1.0	event x1
+808	weak	your	1	1	1	0.79	your x1
+810	firm	france	3	3	4	1.0	france x2; thro france x1
+811	weak	pari	1	1	1	1.0	paris x1
+821	weak	impatience	1	2	2	0.96	impatience x1; his x1
+824	weak	activity	1	1	1	1.0	activity x1
+827	firm	without	3	3	4	1.0	without x3
+833	weak	settl	1	1	1	1.0	settled x1
+836	weak	to	1	1	1	0.83	to x1
+839	weak	language	1	1	1	1.0	language x1
+840	weak	general	1	1	1	0.83	general x1
+841	weak	account	1	1	1	1.0	accounted x1
+842	firm	very	5	5	5	1.0	very x5
+845	weak	offer	1	1	2	1.0	offer x1
+846	weak	very	1	1	1	1.0	very x1
+847	weak	course	1	1	1	1.0	course x1
+850	weak	at	1	1	1	0.83	at x1
+852	weak	are	1	1	1	1.0	are x1
+857	firm	for	3	3	3	1.0	for x3
+861	firm	affair	2	2	2	1.0	affairs x2
+864	weak	those	1	2	2	1.0	those x1; prevent x1
+866	weak	sentiment	1	1	2	0.75	sentiment x1
+867	weak	impression	1	1	1	1.0	impression x1
+869	weak	adde	3	5	5	1.0	added x3; adding x1; considered x1
+875	firm	seriou	2	2	2	1.0	serious x2
+879	weak	on	1	1	1	1.0	on x1
+881	weak	vice	1	1	1	1.0	vice x1
+884	firm	to	6	6	6	1.0	to x6
+885	weak	deal	1	1	1	1.0	deal x1
+889	firm	and	3	3	4	0.88	and x3
+892	weak	notice	1	1	1	0.67	notice x1
+894	weak	profession	1	1	1	1.0	professions x1
+899	weak	andero	1	1	1	1.0	andero x1
+900	weak	not	1	1	2	1.0	not x1
+902	firm	to	6	7	7	1.0	to x4; king of spain to x1; to communicate to x1; as x1
+903	weak	majesty	1	1	2	0.96	majesty x1
+905	weak	not	1	2	2	0.83	a measure could not x1; king x1
+906	firm	place	2	2	2	1.0	place x2
+907	firm	at	3	3	3	1.0	at x2; court at x1
+908	firm	is	2	2	2	1.0	is x2
+909	weak	to	1	2	3	0.88	to x1; canaries x1
+913	weak	broken	1	2	2	1.0	broken x1; been x1
+916	weak	give	1	1	1	1.0	give x1
+924	weak	court	1	1	1	0.62	the wishes of the court x1
+932	weak	american	3	3	4	0.54	american x2; americans x1
+937	weak	he	1	1	1	0.33	he x1
+938	firm	noth	2	2	2	0.83	nothing x2
+942	weak	concert	1	1	1	1.0	it must be in concert x1
+947	firm	this	2	2	2	0.79	on this x2
+954	weak	him	1	1	1	0.75	him x1
+958	weak	noth	1	1	1	1.0	nothing x1
+959	weak	altho	1	1	2	0.92	altho x1
+964	firm	entertain	2	2	2	1.0	entertained x2
+972	weak	of	1	1	4	0.71	of x1
+975	weak	i	1	1	1	0.83	i x1
+977	firm	as	2	2	2	0.88	in such a manner as x1; as x1
+980	weak	nomination	1	1	1	1.0	nomination x1
+981	weak	corunna	1	1	1	1.0	corunna x1
+987	weak	france	2	2	2	0.62	france x1; the court of france x1
+988	weak	part	3	5	5	1.0	part x3; anxious x1; the x1
+992	weak	ready	1	1	1	1.0	ready x1
+1005	weak	when	1	1	1	1.0	when x1
+1006	weak	such	1	1	1	1.0	such x1
+1012	firm	me	4	4	4	0.83	to me x2; me x2
+1017	weak	were	1	1	1	1.0	were x1
+1024	weak	was	2	2	2	0.42	was x2
+1030	weak	matter	1	1	1	1.0	matters x1
+1031	firm	from	6	6	6	1.0	from x6
+1032	weak	therefore	1	1	1	1.0	therefore x1
+1037	weak	till	1	1	1	0.96	till x1
+1041	weak	occasion	1	1	2	1.0	occasion x1
+1043	firm	a	5	5	5	1.0	a x5
+1045	weak	their	1	1	1	1.0	their x1
+1053	weak	avoid	1	1	1	1.0	avoiding x1
+1056	weak	two	1	1	1	1.0	two x1
+1057	weak	pretenc	1	1	2	1.0	pretences x1
+1058	weak	that	1	1	1	1.0	and that x1
+1061	weak	she	1	1	1	0.46	she x1
+1065	weak	the	2	3	3	0.46	england but x1; to the x1; the x1
+1068	weak	m	1	2	3	0.71	m x1; prince x1
+1070	firm	answer	2	2	3	0.79	answered x1; spain could not answer x1
+1074	weak	best	1	1	1	1.0	best x1
+1076	firm	remov	2	2	2	0.75	removed x2
+1082	weak	will	1	1	1	0.25	will x1
+1085	weak	confidential	1	1	1	1.0	confidentially x1
+1092	weak	for	1	1	2	1.0	agent for x1
+1100	weak	i	1	1	1	1.0	i x1
+1102	weak	might	1	2	2	1.0	might x1; might be x1
+1104	weak	death	1	1	1	1.0	death x1
+1108	firm	portugal	2	2	2	1.0	portugal x2
+1113	weak	i	1	1	1	0.83	i x1
+1118	weak	majesty	3	3	3	0.54	his catholick majesty x2; majesty x1
+1120	weak	under	1	1	1	1.0	under x1
+1128	firm	he	5	5	6	1.0	he x5
+1134	weak	you	1	2	3	0.96	you x1; dreads x1
+1136	weak	lordship	1	1	1	0.92	lordship x1
+1143	firm	with	6	6	8	1.0	with x6
+1144	weak	at	2	2	2	0.38	at x2
+1146	firm	however	2	2	2	1.0	however x2
+1147	firm	to	4	4	4	0.79	to x4
+1152	firm	if	2	2	3	1.0	if x2
+1153	weak	bavaria	1	1	1	1.0	bavaria x1
+1158	firm	has	2	2	2	1.0	has x1; king of spain has x1
+1163	weak	this	1	1	1	0.96	this x1
+1164	weak	exist	1	1	1	0.38	exist x1
+1168	weak	monsieur	1	1	3	1.0	monsieur x1
+1170	firm	being	2	2	2	1.0	being x2
+1177	weak	offer	2	3	3	0.58	offered x1; off x1; offers x1
+1178	firm	shoul	2	2	2	1.0	should x2
+1179	firm	in	2	2	3	1.0	in x2
+1181	weak	the	1	1	1	0.71	the x1
+1184	firm	this	2	2	3	1.0	this x2
+1190	firm	a	4	4	5	1.0	a x4
+1191	firm	march	2	2	2	1.0	march x2
+1193	firm	which	5	5	6	1.0	which x5
+1194	weak	though	1	1	1	1.0	though x1
+1196	weak	word	1	1	1	1.0	words x1
+1203	weak	else	1	1	1	1.0	else x1
+1206	weak	who	1	1	1	1.0	who x1
+1210	weak	cannot	1	1	1	1.0	i cannot x1
+1212	weak	this	1	1	2	0.54	upon this x1
+1215	firm	keep	3	3	4	1.0	keep x2; keeping x1
+1217	weak	affect	1	1	1	0.96	affected x1
+1218	weak	in	1	1	1	1.0	in x1
+1219	weak	me	2	3	3	0.5	me x2; trade x1
+1222	weak	sister	1	1	1	0.46	sister x1
+1232	firm	general	2	2	2	1.0	general x2
+1245	firm	mediation	2	2	2	1.0	mediation x2
+1246	weak	project	1	1	1	1.0	project x1
+1254	weak	with	1	1	1	1.0	with x1
+1256	weak	as	1	1	2	1.0	as x1
+1259	weak	measure	2	4	4	0.75	measures x2; measure x1; a measure x1
+1261	weak	eliott	1	1	1	1.0	eliott x1
+1265	weak	imagin	1	1	1	1.0	imagined x1
+1285	weak	all	1	1	1	0.92	plainly all x1
+1286	weak	frigat	1	1	1	1.0	frigates x1
+1288	firm	any	4	4	4	1.0	any x4
+1290	firm	since	2	2	2	1.0	since x2
+1293	weak	minister	1	1	1	1.0	minister x1
+1302	weak	lay	1	1	1	1.0	lay x1
+1305	firm	has	2	3	7	0.92	blanca has x1; has x1; musquiz x1
+1307	weak	the	1	1	1	1.0	the x1
+1309	weak	america	2	2	5	0.25	america x2
+1311	firm	the	8	8	9	1.0	the x7; to the x1
+1313	weak	make	1	2	2	1.0	make x1; making x1
+1316	weak	your	1	1	1	0.83	your x1
+1318	firm	i	2	2	2	1.0	i x2
+1324	weak	not	1	1	1	0.96	not x1
+1325	weak	his	1	1	1	0.96	his x1
+1326	firm	to	2	2	3	0.88	to x2
+1333	weak	the	1	1	1	0.71	he said the x1
+1336	weak	least	1	1	1	1.0	least x1
+1339	firm	which	3	3	3	1.0	which x3
+1341	weak	minister	1	1	1	0.67	ministers x1
+1343	weak	been	1	1	2	0.96	been x1
+1360	weak	them	1	2	4	1.0	them x1; though x1
+1361	weak	french	1	2	2	0.79	french x1; majesty x1
+1364	weak	am	1	1	2	1.0	i am x1
+1370	weak	next	1	1	1	1.0	next x1
+1371	weak	disregard	1	2	7	0.29	disregarded x1; gardoqui x1
+1372	weak	specify	1	1	1	1.0	specifying x1
+1373	weak	russian	1	1	3	0.38	russian x1
+1374	weak	boar	1	1	1	0.92	board x1
+1375	weak	impress	1	2	5	0.29	impressed x1; bavaria x1
+1376	weak	acknowledg	1	2	3	0.25	acknowledging x1; an x1
+1388	firm	said	2	2	2	1.0	said x2
+1391	weak	this	1	1	1	0.96	this x1
+1392	weak	his	2	3	6	0.67	his x2; blanca x1
+1395	weak	his	1	1	1	1.0	his x1
+1397	weak	with	1	1	2	0.96	with x1
+1400	weak	has	4	8	10	0.79	has x4; not x3; catholick x1
+1401	weak	your	1	1	1	0.92	your x1
+1404	firm	assur	3	4	4	0.96	assured x3; assurances x1
+1408	weak	unles	1	1	1	1.0	unless x1
+1418	firm	be	2	2	2	0.71	be x2
+1419	weak	good	1	1	1	0.92	good x1
+1428	weak	go	1	1	1	1.0	go x1
+1431	weak	fleet	2	2	3	0.62	fleet x2
+1432	weak	and	1	1	1	0.96	spain and x1
+1441	firm	as	5	5	5	1.0	as x5
+1458	weak	such	2	2	3	0.58	such x2
+1459	firm	alter	2	3	3	1.0	could alter x1; not alter x1; florida x1
+1460	weak	continu	1	1	1	0.96	continues x1
+1461	weak	himself	1	1	1	1.0	himself x1
+1472	firm	already	2	2	2	1.0	already x2
+1476	weak	least	1	1	1	1.0	at least x1
+1480	weak	florida	1	1	1	0.75	florida x1
+1484	weak	that	2	4	7	0.92	and that x1; imitated x1; prepared x1; that x1
+1485	weak	coul	2	2	2	0.29	could x2
+1487	weak	he	1	2	2	0.54	appointed but that he x1; no x1
+1491	weak	french	1	2	3	0.54	french x1; war x1
+1492	weak	which	2	2	2	0.67	which x2
+1503	weak	affair	1	1	2	1.0	affairs x1
+1507	weak	been	1	1	1	1.0	been x1
+1508	weak	through	1	2	2	1.0	through x1; inst x1
+1509	weak	great	1	1	1	1.0	great x1
+1510	weak	to	1	1	1	0.67	fall to x1
+1511	weak	the	1	1	1	0.83	the x1
+1512	weak	cadiz	1	1	1	0.38	cadiz x1
+1515	weak	will	1	1	1	1.0	will x1
+1516	weak	break	1	2	2	1.0	break x1; me x1
+1519	weak	tend	1	1	1	1.0	tending x1
+1521	weak	into	1	1	1	1.0	into x1
+1523	weak	aggressor	1	1	1	1.0	aggressor x1
+1530	weak	principl	1	1	1	1.0	principles x1
+1532	weak	great	1	1	1	1.0	great x1
+1539	weak	it	3	4	5	0.29	of it x2; it x1; of x1
+1544	weak	that	1	2	3	0.92	that x1; be x1
+1553	weak	his	1	1	1	0.71	his x1
+1555	weak	send	1	1	1	0.62	send x1
+1556	weak	shoul	1	1	1	1.0	should x1
+1559	weak	plan	1	1	1	1.0	plan x1
+1560	weak	reciprocal	1	1	1	0.88	reciprocal x1
+1562	weak	the	1	1	1	0.67	the x1
+1580	weak	woul	1	1	1	1.0	would x1
+1587	weak	complain	1	1	1	1.0	complained x1
+1589	weak	to	1	1	1	1.0	to x1
+1593	firm	term	2	2	2	1.0	terms x2
+1595	weak	be	1	1	1	0.92	it might be x1
+1601	weak	was	1	1	1	0.83	was x1
+1605	weak	to	1	1	1	1.0	to x1
+1606	weak	and	1	1	1	1.0	and x1
+1608	firm	to	4	5	5	0.96	to x3; certainly x1; have to x1
+1609	weak	of	1	2	2	1.0	of x1; variation x1
+1610	weak	our	1	1	1	1.0	our x1
+1611	weak	reason	1	1	1	0.96	reason x1
+1615	weak	present	1	1	1	0.83	present x1
+1618	weak	known	3	7	7	1.0	knowledge x3; known x2; been x1; was known x1
+1620	firm	than	2	2	2	1.0	than x2
+1621	weak	this	1	1	2	1.0	this x1
+1623	weak	desire	1	1	1	1.0	desire x1
+1629	weak	i	1	1	1	1.0	i x1
+1631	weak	who	1	1	2	1.0	who x1
+1633	firm	but	5	5	5	1.0	but x5
+1640	weak	have	1	1	1	0.92	have x1
+1647	weak	letter	1	1	1	0.92	letter x1
+1651	weak	believe	1	1	1	1.0	believe x1
+1656	weak	of	1	1	1	1.0	of x1
+1657	weak	twentieth	1	1	2	1.0	twentieth x1
+1658	weak	st	1	1	1	0.79	st x1
+1661	weak	of	1	1	1	0.79	of x1
+1667	weak	represent	1	1	1	0.75	represented x1
+1673	weak	drawn	1	1	1	1.0	drawn x1
+1679	weak	first	3	5	5	1.0	first x3; the x2
+1683	weak	communicat	2	5	5	0.92	communicated x2; france x2; your x1
+1687	weak	court	5	5	5	0.62	this court x4; court x1
+1699	firm	interest	2	2	2	1.0	interest x1; interested x1
+1701	firm	of	11	11	11	1.0	of x11
+1707	firm	to	5	5	5	1.0	to x5
+1712	weak	otherwise	1	1	1	1.0	otherwise x1
+1714	weak	possible	1	1	1	1.0	possible x1
+1715	firm	your	2	2	4	0.96	your x1; to your x1
+1716	firm	them	3	3	3	1.0	them x3
+1717	weak	cabinet	1	2	4	0.96	cabinet x1; cadiz in x1
+1723	weak	germany	1	1	1	1.0	germany x1
+1730	weak	opinion	1	1	1	1.0	opinion x1
+1733	weak	earnest	1	1	1	0.46	earnestly x1
+1744	weak	dispatch	1	1	1	1.0	dispatches x1
+1750	weak	confidence	1	1	1	1.0	confidence x1
+1754	firm	keep	2	3	3	1.0	keep x2; kept x1
+1756	weak	pretenc	1	2	2	1.0	pretences x1; in x1
+1758	weak	dignity	1	1	1	1.0	dignity x1
+1760	weak	to	1	1	1	1.0	to x1
+1766	weak	present	1	1	1	0.38	present x1
+1768	firm	it	2	2	2	1.0	if it x1; it x1
+1770	weak	destination	1	1	1	1.0	destination x1
+1775	firm	late	5	5	5	1.0	lately x4; late x1
+1778	firm	real	2	2	2	1.0	which speeches real x1; really x1
+1779	weak	order	1	1	1	1.0	order x1
+1783	firm	lordship	2	2	3	0.71	lordship x2
+1784	weak	line	1	1	1	1.0	line x1
+1786	weak	that	1	1	2	1.0	that x1
+1798	weak	freedom	1	1	1	1.0	freedom x1
+1802	firm	a	5	5	5	1.0	a x5
+1805	firm	that	3	4	4	1.0	that x2; france x1; voluntary that x1
+1806	firm	me	4	5	5	1.0	me x3; to me x1; declined x1
+1808	firm	being	2	2	2	0.83	being x1; its being x1
+1810	firm	agree	2	2	2	1.0	agree x2
+1811	firm	here	2	2	2	1.0	here x2
+1812	weak	or	1	1	2	1.0	or x1
+1813	weak	his	1	1	1	0.67	his x1
+1814	weak	a	1	1	1	1.0	a x1
+1820	weak	act	1	1	1	1.0	act x1
+1833	weak	not	1	1	2	0.71	not x1
+1837	firm	i	2	2	2	0.83	i x1; confirm what i x1
+1842	weak	good	1	1	2	0.62	good x1
+1847	weak	publick	1	1	1	0.96	not publick x1
+1851	weak	sent	1	2	8	0.88	sent x1; too x1
+1852	firm	of	2	3	4	1.0	of x2; case x1
+1853	weak	good	1	1	1	1.0	good x1
+1854	firm	the	2	2	2	1.0	the x2
+1855	weak	once	1	2	4	0.71	once x1; share x1
+1856	weak	manner	1	1	3	0.83	manner x1
+1860	weak	by	1	1	2	1.0	by x1
+1861	weak	aware	1	1	3	0.79	aware x1
+1862	firm	taken	2	2	2	1.0	taken x2
+1863	weak	they	1	2	4	1.0	they x1; no x1
+1864	weak	greater	1	2	3	0.88	greater x1; to x1
+1865	weak	pretence	1	1	2	0.54	pretence x1
+1866	weak	he	1	1	2	0.54	he x1
+1868	firm	i	2	2	2	0.96	i x2
+1869	weak	give	1	1	1	1.0	give x1
+1870	weak	his	1	2	3	0.96	his x1; could x1
+1873	weak	although	1	1	1	1.0	although x1
+1874	weak	de	1	1	1	0.67	porte m de x1
+1875	weak	now	1	2	2	1.0	now x1; when x1
+1898	weak	necessary	1	1	1	1.0	necessary x1
+1907	weak	repeat	1	1	1	0.75	repeat x1
+1909	weak	an	2	2	2	0.58	an x2
+1919	weak	was	2	4	4	1.0	was x2; the x2
+1921	weak	brought	1	1	1	1.0	brought x1
+1923	weak	receiv	1	1	1	0.92	received x1
+1927	weak	britain	1	1	1	1.0	britain x1
+1928	weak	uniform	1	1	1	0.88	uniform x1
+1929	weak	admiral	1	1	1	0.79	admiral x1
+1931	weak	word	1	1	1	1.0	words x1
+1944	firm	not	3	3	3	1.0	not x3
+1948	weak	execution	1	1	1	1.0	execution x1
+1949	weak	preferab	1	1	1	1.0	preferably x1
+1950	weak	troop	1	2	2	0.96	troops x1; did x1
+1951	weak	out	1	4	6	0.71	out x1; circulated x1; remained x1; dispatched x1
+1958	weak	ago	1	1	1	0.67	ago x1
+1959	firm	france	2	2	2	1.0	france x2
+1961	firm	to	2	3	3	0.88	confirmation of x1; confirmed to x1; to x1
+1962	firm	is	2	2	2	1.0	is x2
+1963	weak	r	1	2	2	1.0	r x1; this x1
+1967	weak	been	1	1	1	0.79	been x1
+1973	weak	the	1	1	2	1.0	than the x1
+1979	firm	them	3	3	4	1.0	them x3
+1990	firm	any	2	2	2	1.0	any x2
+1995	weak	drawn	1	1	1	1.0	drawn x1
+2001	firm	or	2	2	2	1.0	or x2
+2003	weak	acquaint	1	1	1	0.96	acquainted x1
+2005	weak	an	1	1	1	1.0	an x1
+2006	weak	there	1	1	1	0.38	there x1
+2009	weak	inform	1	1	2	1.0	informed x1
+2011	weak	i	1	1	1	1.0	and i x1
+2012	firm	that	3	3	3	1.0	that x3
+2015	firm	brest	2	2	2	1.0	brest x2
+2017	firm	having	3	3	3	1.0	having x2; florida blanca having x1
+2034	weak	my	1	1	1	1.0	my x1
+2035	firm	there	2	2	2	1.0	there x2
+2042	weak	anxiety	1	1	1	1.0	anxiety x1
+2044	weak	me	1	1	1	0.83	me x1
+2045	weak	not	1	1	1	0.71	not x1
+2052	weak	done	1	1	1	0.71	be previously done x1
+2055	firm	of	10	10	11	1.0	of x10
+2061	weak	of	1	1	1	1.0	of x1
+2063	weak	lordship	1	1	1	0.83	lordship x1
+2070	weak	mistrust	1	1	1	0.92	mistrust x1
+2071	firm	reach	2	2	2	1.0	reaches x1; reach x1
+2072	weak	say	1	1	1	0.83	say x1
+2074	weak	notion	1	1	1	1.0	notion x1
+2076	weak	order	1	1	1	1.0	order x1
+2080	weak	our	1	1	1	1.0	our x1
+2082	firm	have	2	2	2	1.0	have x2
+2084	firm	flota	2	2	2	1.0	flota x2
+2088	weak	improper	1	1	1	1.0	improper x1
+2094	weak	the	1	1	1	1.0	the x1
+2096	weak	honour	1	1	1	1.0	honour x1
+2099	weak	beyon	1	1	1	1.0	beyond x1
+2104	weak	of	1	1	1	1.0	the conduct of x1
+2106	weak	for	1	1	1	0.96	for x1
+2108	firm	to	5	5	6	1.0	to x4; florida blanca to x1
+2111	firm	and	4	4	5	1.0	and x3; of europe and x1
+2112	weak	my	1	2	2	0.5	my x1; had x1
+2119	firm	out	2	2	2	1.0	out x2
+2127	weak	noth	1	1	1	1.0	nothing x1
+2130	firm	will	3	4	4	1.0	will x3; rupture x1
+2131	weak	attention	1	1	1	0.67	attention x1
+2135	firm	have	2	2	2	0.71	would have x2
+2139	weak	dispatch	1	1	1	0.92	dispatch x1
+2146	weak	insidious	1	1	1	1.0	insidiously x1
+2148	firm	preparation	3	4	4	1.0	preparations x3; maritime x1
+2154	weak	some	1	1	1	1.0	some x1
+2156	weak	month	1	1	1	1.0	last month x1
+2159	weak	credit	1	1	1	0.79	credit x1
+2164	weak	mediation	1	1	1	0.29	mediation x1
+2168	weak	important	1	1	1	1.0	important x1
+2175	weak	charg	1	1	1	1.0	charg x1
+2177	weak	hostile	1	1	2	1.0	hostile x1
+2182	weak	indi	1	1	1	1.0	indies x1
+2195	weak	a	1	1	1	1.0	a suspicion of a x1
+2196	weak	of	1	1	1	1.0	return of x1
+2197	weak	understan	1	1	2	0.67	understand x1
+2199	firm	might	2	2	2	1.0	might x2
+2201	weak	it	1	2	7	0.58	it x1; he x1
+2205	weak	great	1	2	2	0.96	with a great x1; your x1
+2209	firm	upon	2	2	2	1.0	upon x1; out upon x1
+2213	weak	resolution	1	3	5	0.67	resolution x1; depended x1; been x1
+2214	weak	add	1	1	1	1.0	add x1
+2221	weak	pacifick	1	1	1	0.96	pacifick x1
+2226	weak	a	1	1	2	0.67	a x1
+2227	weak	against	1	1	1	1.0	against x1
+2231	weak	by	1	1	5	0.38	by x1
+2232	weak	line	1	1	1	1.0	none two ruled dashes drawn in the space above this line x1
+2236	weak	in	2	4	7	0.92	in x2; the x2
+2240	weak	and	1	1	5	0.67	and x1
+2241	weak	i	1	1	3	0.83	i x1
+2243	weak	establish	1	2	4	1.0	established x1; toulon x1
+2247	firm	which	2	2	2	1.0	which x2
+2250	weak	tranquility	1	1	2	1.0	tranquility x1
+2253	firm	of	2	2	3	0.96	part of x1; of x1
+2255	weak	therefore	1	1	1	1.0	therefore x1
+2257	weak	debat	1	1	1	1.0	debates x1
+2258	weak	credit	1	1	1	1.0	credit x1
+2259	weak	my	1	1	1	1.0	my x1
+2261	weak	provocation	1	1	1	0.83	provocations x1
+2265	firm	has	2	2	2	0.92	he has x1; has x1
+2268	weak	he	1	1	1	1.0	he x1
+2270	firm	upon	4	6	6	1.0	upon x4; up x2
+2273	firm	by	2	2	2	0.83	by x2
+2277	weak	may	1	3	4	0.58	may x1; am x1; instruction x1
+2278	weak	tend	1	1	2	1.0	tends x1
+2279	firm	strong	3	3	3	0.92	strongly x2; strong x1
+2281	weak	news	1	1	1	1.0	any news x1
+2284	weak	adopt	1	1	1	1.0	adopt x1
+2288	weak	elector	1	1	1	1.0	the elector x1
+2291	weak	had	3	4	4	0.5	had x3; there x1
+2293	weak	king	1	1	1	1.0	that the king x1
+2298	weak	will	1	1	1	1.0	will x1
+2310	weak	thrown	1	1	1	1.0	thrown x1
+2312	weak	as	1	1	1	1.0	as x1
+2313	weak	explanation	1	1	1	1.0	explanation x1
+2315	weak	unpopular	1	1	1	1.0	unpopular x1
+2319	weak	my	1	1	1	0.96	my x1
+2321	firm	a	2	2	2	1.0	a x2
+2324	weak	was	1	1	2	1.0	was x1
+2325	weak	on	1	1	1	0.46	on x1
+2326	weak	because	1	2	2	1.0	because x1; a becoming propriety x1
+2328	weak	rupture	1	1	1	1.0	rupture x1
+2330	firm	to	4	4	4	0.92	to x4
+2332	weak	observe	1	1	1	0.88	observe x1
+2334	weak	at	1	1	1	0.38	at x1
+2336	firm	that	2	2	2	1.0	that x1; added that x1
+2339	weak	ship	1	1	1	1.0	ships x1
+2340	weak	they	1	2	2	1.0	they x1; that x1
+2341	weak	since	1	1	1	0.79	since x1
+2342	firm	here	2	3	3	1.0	here x2; have x1
+2352	weak	hear	1	1	1	1.0	heard x1
+2357	firm	for	2	2	2	0.79	for x2
+2359	weak	in	1	1	1	1.0	in x1
+2361	weak	being	1	2	2	1.0	being x1; april x1
+2368	firm	and	3	3	3	1.0	and x2; purpose and x1
+2370	weak	weight	1	1	1	0.79	weight x1
+2373	weak	under	1	1	1	1.0	under x1
+2377	weak	to	1	1	1	1.0	to x1
+2378	weak	holyday	1	1	1	1.0	holydays x1
+2383	firm	the	6	6	6	1.0	the x5; would consider the x1
+2385	weak	possible	1	1	1	0.71	possible x1
+2394	weak	having	1	2	2	0.29	having x1; reception x1
+2398	weak	consequence	1	1	1	0.96	in consequence x1
+2399	weak	extent	1	1	1	1.0	extent x1
+2418	firm	of	8	8	9	1.0	of x8
+2421	weak	on	1	3	4	0.33	instructions on x1; to x1; instructed x1
+2422	weak	with	1	1	1	1.0	with x1
+2432	weak	spanish	1	1	1	0.46	spanish x1
+2436	weak	this	1	1	1	1.0	by this x1
+2444	weak	made	1	1	1	1.0	made x1
+2447	firm	ambassador	2	2	2	0.79	ambassador x2
+2450	weak	portugal	1	1	1	0.96	the court of portugal x1
+2451	weak	proportional	1	2	2	0.54	proportional x1; proposal x1
+2453	weak	oblig	1	1	1	1.0	obliged x1
+2455	weak	upon	3	5	5	1.0	up x2; upon x2; called upon x1
+2458	weak	this	2	2	2	0.54	this x2
+2474	weak	for	3	5	5	1.0	for x3; language x2
+2478	weak	it	1	1	1	1.0	it x1
+2483	weak	above	1	1	1	0.75	none two ruled dashes drawn in the space above x1
+2490	firm	between	4	4	4	1.0	between x4
+2491	weak	two	1	1	1	0.79	two x1
+2492	firm	degree	2	2	2	0.92	degree x2
+2493	weak	necessity	1	1	1	1.0	necessity x1
+2494	weak	m	1	1	1	0.96	m x1
+2501	firm	that	2	3	6	0.79	that x2; the x1
+2507	weak	his	1	2	5	1.0	his x1; is x1
+2508	weak	of	1	1	3	1.0	of x1
+2509	weak	done	1	1	1	0.96	done x1
+2510	weak	the	1	1	1	0.46	the x1
+2511	weak	of	3	3	5	0.46	of x3
+2512	weak	up	1	1	2	0.71	up x1
+2520	weak	no	1	1	1	1.0	no x1
+2530	weak	and	1	1	1	0.62	and x1
+2532	weak	measur	1	1	1	1.0	measures x1
+2536	weak	example	1	1	1	1.0	example x1
+2540	weak	lordship	1	1	1	0.79	lordship x1
+2541	weak	been	1	1	1	1.0	been x1
+2542	firm	of	2	3	6	0.92	of x2; none three ruled dashes x1
+2546	weak	lisbon	1	1	1	0.25	lisbon x1
+2555	weak	express	1	1	1	1.0	expressed x1
+2563	weak	coul	1	1	1	1.0	could x1
+2564	firm	is	3	3	4	0.96	is x3
+2580	weak	him	1	1	1	1.0	him x1
+2581	weak	a	1	1	1	0.96	a x1
+2588	firm	in	2	2	2	0.96	in x2
+2596	weak	do	1	1	1	1.0	do x1
+2598	firm	court	2	2	2	1.0	court x2
+2600	firm	groundles	2	2	2	1.0	groundless x2
+2603	firm	any	3	4	4	1.0	any x3; which x1
+2605	weak	employment	1	1	1	1.0	employment x1
+2618	weak	bare	1	1	1	1.0	barely x1
+2621	weak	candour	1	1	1	0.75	pretended candour x1
+2624	weak	day	1	1	1	1.0	day x1
+2633	firm	but	3	3	3	1.0	but x3
+2634	weak	contraban	1	1	1	0.92	contraband x1
+2636	weak	be	1	1	2	1.0	to be x1
+2637	weak	woul	1	1	1	1.0	would x1
+2638	weak	respective	1	2	2	0.5	respective x1; respectable x1
+2639	weak	king	2	4	4	0.71	king x2; it x1; that it x1
+2648	weak	hostile	1	1	1	1.0	hostile x1
+2652	weak	insult	1	1	1	1.0	insult x1
+2655	weak	justifi	1	3	4	0.96	justified x1; just x1; shews x1
+2656	weak	power	1	1	1	0.96	powers x1
+2659	firm	speak	2	2	3	1.0	speak x2
+2672	weak	fifteen	1	1	2	1.0	fifteen x1
+2679	firm	me	3	3	3	0.96	me x3
+2681	weak	as	1	1	1	0.71	particularly as x1
+2683	firm	last	2	2	2	1.0	last x2
+2695	weak	if	1	1	1	1.0	hoped if x1
+2698	weak	his	1	1	1	0.54	his x1
+2700	weak	intelligence	1	1	1	1.0	intelligence x1
+2703	firm	and	5	5	5	1.0	and x5
+2704	weak	design	1	1	1	1.0	designs x1
+2705	weak	fill	1	1	2	0.71	filled x1
+2724	weak	declaration	1	1	1	0.75	declaration x1
+2725	firm	from	2	2	2	1.0	from x2
+2726	weak	told	2	2	2	0.54	told x2
+2731	weak	only	1	1	1	0.75	can only x1
+2732	firm	treaty	2	2	2	0.92	a treaty x1; treaty x1
+2733	weak	cease	1	1	1	1.0	cease x1
+2738	firm	naval	2	3	4	0.79	naval x2; alarm x1
+2739	firm	europe	2	2	2	0.96	europe x2
+2740	weak	detail	1	1	1	1.0	detail x1
+2743	weak	positive	1	2	3	1.0	positive x1; unchanged x1
+2748	weak	if	1	1	1	0.5	case if x1
+2760	weak	de	1	1	1	0.75	de x1
+2762	weak	consul	1	1	1	1.0	consul x1
+2765	firm	at	3	3	3	1.0	at x3
+2775	weak	full	1	1	1	1.0	full x1
+2777	firm	renew	2	2	2	0.83	renewed x1; to renew x1
+2779	weak	notice	1	2	3	0.96	notice x1; assured x1
+2784	weak	disagreement	1	1	1	1.0	a disagreement x1
+2785	firm	all	3	3	3	1.0	all x3
+2789	weak	ought	1	1	1	1.0	ought x1
+2795	firm	d'almadovar	3	3	4	1.0	d'almadovar x2; m d'almadovar x1
+2799	weak	umbrage	1	1	1	1.0	umbrage x1
+2800	weak	that	1	1	1	1.0	and and that x1
+2803	weak	very	1	1	1	1.0	very x1
+2812	firm	coul	2	2	2	0.83	could x2
+2816	weak	strict	1	1	1	0.67	strict x1
+2825	firm	that	11	11	11	1.0	that x11
+2829	weak	allow	1	1	1	0.83	allow x1
+2830	weak	bring	1	1	1	1.0	bring x1
+2832	weak	thing	1	1	1	1.0	same thing x1
+2839	weak	portugal	1	1	1	1.0	portugal x1
+2846	firm	here	2	2	2	1.0	here x2
+2849	weak	as	1	1	2	0.75	as x1
+2850	weak	been	1	1	1	1.0	been x1
+2855	weak	appoint	1	1	1	1.0	appointed x1
+2864	firm	no	2	2	3	0.96	no x2
+2869	weak	that	1	1	1	1.0	that x1
+2873	weak	are	1	1	1	1.0	are x1
+2876	weak	troubl	1	1	2	0.96	troubled x1
+2882	weak	letter	1	1	1	1.0	letters x1
+2890	firm	had	2	2	2	0.92	had x2
+2894	weak	warmth	1	1	1	1.0	warmth x1
+2904	weak	yet	1	1	1	0.96	yet x1
+2907	weak	given	1	1	1	1.0	been given x1
+2911	firm	are	2	2	2	1.0	are x2
+2917	firm	this	3	3	3	1.0	this x3
+2923	weak	fulfill	1	1	1	0.88	fulfill x1
+2924	weak	reason	1	1	1	1.0	reason x1
+2930	firm	is	2	2	2	1.0	is x2
+2934	weak	with	1	1	1	0.96	with x1
+2941	weak	principle	1	2	2	0.96	principle x1; its x1
+2948	weak	again	2	2	2	0.46	again x2
+2951	firm	suppos	2	2	2	1.0	supposed x2
+2952	weak	yet	1	1	1	0.96	yet x1
+2953	weak	th	1	1	1	0.33	th x1
+2960	firm	as	2	2	2	1.0	the french court as x1; as x1
+2962	weak	instea	1	1	1	1.0	instead x1
+2963	weak	quiet	1	1	1	0.92	quietly x1
+2966	weak	my	1	1	1	0.67	of my x1
+2969	weak	vice	1	1	1	1.0	vice x1
+2975	weak	correspondence	1	1	1	1.0	correspondence x1
+2978	firm	intention	2	2	2	1.0	intention x1; the intention x1
+2983	firm	proper	2	2	2	1.0	proper x2
+2985	weak	allow	1	1	1	0.96	allowing x1
+2986	weak	his	1	1	1	1.0	his x1
+3005	weak	these	1	1	1	1.0	these x1
+3008	weak	de	1	1	2	0.96	de x1
+3012	weak	point	1	1	1	1.0	pointed x1
+3015	weak	of	1	1	1	0.29	spoke of x1
+3017	weak	venture	1	1	1	1.0	venture x1
+3019	weak	unles	1	1	1	1.0	unless x1
+3020	weak	different	1	1	1	1.0	differently x1
+3030	firm	most	2	2	2	1.0	most x2
+3034	firm	any	2	2	2	1.0	any x2
+3039	weak	dowager	1	1	1	1.0	the queen dowager x1
+3041	weak	real	3	6	6	1.0	but x2; really x2; real x1; by x1
+3047	weak	it	1	1	1	1.0	it x1
+3050	weak	with	1	1	1	0.71	a conversation with x1
+3055	weak	middle	1	1	1	1.0	middle x1
+3057	firm	that	5	5	5	1.0	that x5
+3060	weak	an	1	1	1	1.0	an x1
+3064	weak	for	1	2	2	0.96	for x1; have x1
+3068	weak	steadines	1	1	1	0.88	steadiness x1
+3072	weak	masserano	1	1	1	1.0	masserano x1
+3075	weak	conversation	1	1	1	1.0	a conversation x1
+3077	weak	of	1	1	1	0.67	of x1
+3083	weak	south	1	1	1	0.5	south x1
+3084	weak	of	1	1	2	0.67	of x1
+3085	weak	is	1	1	1	1.0	is x1
+3086	weak	thro	1	2	2	0.25	thro x1; confiscated x1
+3088	weak	lisbon	1	1	1	0.96	lisbon x1
+3090	firm	and	5	5	5	1.0	and x5
+3092	weak	the	1	1	1	1.0	the x1
+3094	weak	imagine	1	1	1	1.0	imagine x1
+3097	weak	has	1	3	3	0.33	has x1; blanca said that x1; said in x1
+3100	weak	apprehension	1	2	2	1.0	apprehension x1; apprehended x1
+3102	weak	these	1	1	1	0.96	these x1
+3106	weak	reason	1	1	1	1.0	good reason x1
+3127	weak	tranquillity	1	1	1	1.0	publick tranquillity x1
+3140	weak	he	1	1	1	1.0	he x1
+3148	firm	nor	2	2	2	1.0	nor x1; d'affaires nor x1
+3151	weak	said	1	1	1	0.29	said x1
+3152	weak	m	1	1	1	0.67	m x1
+3153	firm	he	4	4	4	1.0	he x4
+3155	weak	which	1	1	1	1.0	and which x1
+3157	weak	told	1	3	3	0.88	told x1; m x1; with x1
+3163	weak	pretension	1	1	1	1.0	pretensions x1
+3166	weak	journey	1	1	1	1.0	journey x1
+3170	weak	acquaint	1	1	1	0.96	not to acquaint x1
+3174	weak	nation	1	1	1	1.0	nation x1
+3182	firm	late	2	2	2	1.0	late x2
+3187	weak	arriv	1	2	2	0.96	arrives x1; arrival of x1
+3191	weak	order	1	1	1	1.0	been ordered x1
+3196	firm	lordship	2	2	2	1.0	lordship x2
+3199	firm	war	2	2	2	1.0	war x2
+3201	weak	st	1	1	1	1.0	st x1
+3202	weak	treaty	1	1	1	1.0	treaty x1
+3208	weak	i	1	1	1	0.25	i x1
+3211	weak	preparation	1	2	2	0.92	preparations x1; minister x1
+3220	weak	of	1	1	1	1.0	of x1
+3224	firm	held	2	2	2	1.0	held x2
+3233	weak	cannot	2	2	2	0.42	cannot x2
+3234	weak	where	1	1	1	1.0	where x1
+3235	firm	event	2	3	3	0.75	event x2; ever x1
+3236	firm	russian	2	3	3	1.0	russians x1; russian x1; russia x1
+3239	weak	st	1	1	1	1.0	st x1
+3240	weak	appear	1	1	1	1.0	appear x1
+3244	weak	asturia	1	2	2	0.67	asturias x1; by x1
+3253	weak	after	1	1	1	1.0	after x1
+3255	weak	flota	1	1	1	1.0	flota x1
+3260	weak	force	1	1	1	1.0	force x1
+3262	firm	to	3	3	3	1.0	to x3
+3268	weak	marqui	1	1	1	0.96	believe the marquis x1
+3270	firm	such	2	3	3	0.83	such x2; king x1
+3274	weak	former	1	2	2	1.0	formerly x1; had x1
+3279	weak	natural	1	1	1	1.0	natural x1
+3283	weak	it	1	1	1	1.0	it x1
+3287	weak	upon	1	1	1	0.54	upon x1
+3290	firm	debat	2	2	2	1.0	debates x2
+3291	weak	before	1	1	1	1.0	before x1
+3299	weak	have	1	1	1	1.0	have x1
+3303	firm	the	8	8	8	1.0	the x8
+3304	weak	ignorance	1	1	1	1.0	ignorance x1
+3306	weak	d'escarano	1	1	1	0.79	d'escarano x1
+3308	weak	them	1	1	1	1.0	them x1
+3316	weak	of	1	1	1	1.0	of x1
+3319	weak	earnestnes	1	3	3	1.0	earnestness x1; more x1; desired x1
+3320	weak	englan	2	4	4	1.0	england x2; english x2
+3325	weak	accept	1	1	1	1.0	be accepted x1
+3338	firm	of	4	4	4	1.0	of x3; that of x1
+3339	weak	the	4	4	4	0.62	the x4
+3343	firm	between	3	3	3	1.0	between x3
+3348	weak	he	1	1	2	1.0	he x1
+3350	weak	had	1	1	1	1.0	had x1
+3352	firm	the	9	9	9	1.0	the x8; operations nor the x1
+3354	weak	unhappy	1	1	1	1.0	unhappy x1
+3356	weak	as	1	1	1	0.75	as x1
+3359	weak	parliament	1	1	1	1.0	parliament x1
+3362	weak	drop	1	1	1	1.0	drop x1
+3376	weak	give	1	1	1	0.75	give x1
+3378	weak	of	1	2	2	1.0	cause of x1; cause x1
+3382	weak	requir	1	1	1	1.0	required x1
+3395	weak	fear	1	1	1	1.0	fear x1
+3402	firm	suspicion	2	3	3	1.0	suspicions x1; troops x1; the suspicion x1
+3408	firm	notion	2	2	2	1.0	notion x2
+3410	weak	are	1	1	1	1.0	are x1
+3411	weak	them	1	1	1	1.0	them x1
+3412	weak	support	1	1	2	0.58	support x1
+3413	weak	cabinet	1	2	3	1.0	cabinet x1; to x1
+3418	weak	land	1	1	1	1.0	land x1
+3429	weak	warmth	1	2	2	1.0	a warmth x1; already x1
+3432	weak	in	1	1	1	1.0	in x1
+3433	weak	affair	1	1	1	0.54	affairs x1
+3435	weak	great	1	2	3	0.96	great x1; at x1
+3436	weak	look	1	1	1	0.67	look x1
+3442	weak	rebellion	1	1	1	1.0	rebellion x1
+3449	weak	already	1	1	1	1.0	already x1
+3453	weak	preliminary	1	1	1	1.0	preliminary x1
+3454	firm	most	2	3	3	0.96	most x2; necessity x1
+3457	weak	time	1	2	2	0.46	time x1; a x1
+3460	weak	shoul	2	3	3	0.62	should x2; might x1
+3461	weak	that	1	1	1	0.83	that x1
+3465	firm	did	2	2	2	1.0	did x2
+3466	weak	most	1	1	1	1.0	most x1
+3475	weak	woul	1	1	1	1.0	it would x1
+3485	weak	nation	1	1	1	0.62	by other nations x1
+3486	weak	word	1	1	1	1.0	words x1
+3488	firm	that	5	5	5	1.0	that x5
+3491	weak	adde	1	1	1	1.0	added x1
+3500	weak	forwar	1	1	1	1.0	forward x1
+3506	weak	disapprov	1	1	1	0.67	disapproved x1
+3508	weak	their	1	1	2	0.88	their x1
+3511	firm	that	2	2	2	1.0	that x2
+3526	firm	repeat	4	4	4	0.92	repeated x4
+3530	weak	in	1	1	1	1.0	in x1
+3539	firm	and	3	3	3	1.0	and x3
+3551	weak	that	1	1	1	1.0	that x1
+3552	weak	for	1	1	1	1.0	for x1
+3559	weak	purpose	2	2	2	0.42	purpose x2
+3561	weak	delay	1	2	2	0.25	delay x1; concludes x1
+3562	weak	parti	1	1	1	1.0	parties x1
+3565	weak	speak	1	1	1	1.0	speaking x1
+3567	weak	confirmation	1	1	1	1.0	confirmation x1
+3577	firm	france	3	3	3	1.0	the court of france x2; that the court of france x1
+3583	weak	is	1	1	1	1.0	is x1
+3590	weak	were	1	3	3	1.0	were x1; of x1; your x1
+3595	weak	want	1	1	1	0.67	wanted x1
+3599	weak	minister	1	1	1	0.54	that minister x1
+3600	weak	acquaint	1	1	1	0.96	acquainted x1
+3604	firm	porte	2	2	2	1.0	porte x2
+3605	firm	he	2	2	2	0.71	that he x2
+3606	weak	have	1	1	1	1.0	have x1
+3613	firm	court	4	4	4	1.0	court x4
+3629	firm	the	9	9	9	1.0	the x8; france disturbed the x1
+3637	firm	boat	2	2	3	0.96	boats x1; boat x1
+3640	firm	he	2	2	2	1.0	he x2
+3645	weak	andero	1	1	1	0.79	andero x1
+3647	weak	disturb	1	1	1	1.0	be disturbed x1
+3651	firm	important	2	2	2	1.0	important x1; this important x1
+3652	weak	the	1	2	2	1.0	the x1; their sollicitations x1
+3653	weak	i	1	1	1	1.0	i x1
+3654	weak	uncertainty	1	2	2	1.0	the uncertainty x1; with x1
+3655	weak	above	1	1	1	1.0	above x1
+3662	weak	immediate	1	1	1	0.88	immediately x1
+3665	weak	mann	1	1	1	0.25	mann x1
+3667	weak	used	1	1	1	1.0	used x1
+3671	weak	me	1	1	1	1.0	me x1
+3674	weak	in	1	1	1	0.83	in x1
+3677	firm	lisbon	2	2	2	1.0	lisbon x2
+3682	weak	more	1	1	1	1.0	more x1
+3686	weak	mode	1	1	1	0.92	mode x1
+3691	weak	entrance	1	1	1	0.42	entrance x1
+3709	firm	blanca	5	5	7	0.75	blanca x3; m de florida blanca x1; do place confidence monsieur de florida blanca x1
+3719	firm	de	4	4	4	0.96	m de x2; de x2
+3727	weak	florida	2	3	3	0.67	florida x2; he x1
+3821	weak	mons	1	1	2	1.0	mons x1
+3831	weak	engagement	1	1	1	1.0	engagements x1
+3846	weak	to	1	2	2	0.79	to x1; mention x1
+3862	weak	receiv	1	1	1	1.0	received x1
+3866	weak	distance	1	2	2	1.0	distance x1; issued x1
+3883	weak	the	1	1	1	1.0	the x1
+3926	weak	to	1	1	1	1.0	to x1
+3951	weak	secur	1	1	1	0.96	secured x1
+3976	weak	threw	1	1	1	1.0	threw x1
+3987	weak	of	1	1	1	1.0	of x1
+4002	weak	constru	1	1	1	1.0	construed x1

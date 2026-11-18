@@ -784,7 +784,9 @@
      "sent": false,
      "fields": {
       "start_year": 1572,
-      "start_month": 1
+      "start_month": 1,
+      "sender": "not Cardinal Alessandrino; writer not established (the archive's description of ff. 584-674 names Cardinal Rusticucci and Ugolino Gualterucci beside him)",
+      "receiver": "Giovan Battista Castagna, nuncio in Spain"
      }
     }
    }
@@ -3420,9 +3422,9 @@
   "beatrice1482": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/beatrice1482.html",
    "key": {
-    "none": "the decipherments are in print; a partial key was rebuilt from the period clear copies (targets/beatrice1482/vestigia/K_V.json, Brice Dudout, PR #620), not yet offered as a DECODE key: three values differ from the key of R1156"
+    "none": "the decipherments are in print; a partial key was rebuilt from the period clear copies (targets/beatrice1482/vestigia/K_V.json, Brice Dudout, PR #620), not yet offered as a DECODE key. R1156 is in the same key (9 = d and 2 = g confirmed on its image, 14 Nov 2026)"
    },
-   "cite": "I. Nagy and A. Nyáry (eds.), Magyar Diplomácziai Emlékek Mátyás király korából III (Budapest 1877), nos. 10 and 12, pp. 13-14, 16-17",
+   "cite": "I. Nagy and A. Nyáry (eds.), Magyar Diplomácziai Emlékek Mátyás király korából III (Budapest 1877), nos. 10 and 12, pp. 13-14, 16-17; for R1156, V. Fraknói, Mátyás király levelei. Külügyi osztály II (Budapest 1895), no. 131, pp. 232-233",
    "fields": {},
    "records": {
     "R1140": {
@@ -3437,6 +3439,14 @@
      "decode_status": "Partially decrypted",
      "proposed": "Decrypted",
      "note": "Beatrice to Eleonora, Pozsony, 8 June 1482 (not July): printed deciphered in MDE III (1877) no. 12, pp. 16-17; matched to the images. Holder given as 'Cancelleria, 1523' while the record name says 1623. Vestigia documents 1960 (cipher) and 1961 (period clear copy); the copy's margin gives a cipher run the 1877 print leaves out: 'havia tolto Venetiani da sua offesa'.",
+     "reading": null,
+     "reading_not_needed": true,
+     "sent": false
+    },
+    "R1156": {
+     "decode_status": "Partially decrypted",
+     "proposed": "Decrypted",
+     "note": "Matthias to Ercole I d'Este, Pozsony, 1 June 1482. The letter is Latin, cipher runs included (the record says Italian). Printed deciphered by Fraknói, Mátyás király levelei II (1895), no. 131, after Magyar Diplomácziai Emlékek III (1877). Vestigia publishes the cipher original and a clear copy of the time with open images: documents 2626 (no. 2a) and 2627 (no. 2b). Same key as R1140 and R1141 (Beatrice to Eleonora, 31 May and 8 June 1482). The copy has 'quingentos electos equites', 'qui plus ceteris valent' and 'Speramus cito nos res nostras ita disposituros ut meliori postea modo vos iuvare possemus', where the 1895 print is faulty.",
      "reading": null,
      "reading_not_needed": true,
      "sent": false
@@ -12415,7 +12425,23 @@
     "R446": {
      "decode_status": "unknown (key record)",
      "proposed": "(no change)",
-     "note": "23 Oct 2026 (reading audit): DECODE's transcription of this key corrected on its image: 69 = al, 71-74 = an/ar/as/at, ö/ü distinguished, 35 = ly, 296 = Belgium (targets/vetesi1705/key/DOC_R446_D2629_2629.txt). It reads R473 (Vetési Kökényesdi to Rákóczi, 9 Jan 1706).",
+     "note": "23 Oct 2026 (reading audit): DECODE's transcription of this key corrected on its image: 69 = al, 71-74 = an/ar/as/at, ö/ü distinguished, 35 = ly, 296 = Belgium (targets/vetesi1705/key/DOC_R446_D2629_2629.txt). It reads R473 (Vetési Kökényesdi to Rákóczi, 9 Jan 1706). 15 Nov 2026: R582 and R583 (MNL OL G15 Caps. C Fasc. 43 nos 44 and 42) are copies of this key; mark them as duplicates.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R582": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "15 Nov 2026: a copy of R446 (Rákóczi's Hungarian syllabic key, Ráday Archives C64-4d2-25 no. 6, which reads R473); mark them as duplicates. DECODE's transcriptions of R446 and R582 share 364 codes: 270 agree, 94 differ, and the differences are mostly R446's transcription errors that R582 reads right (69 al, 71-74 an/ar/as/at, ö/ü, 35 ly, 296 Belgium). R446 agrees with no other key file in targets/bay1706/keys at more than 7 codes. Comparison: targets/vetesi1705/key/compare_R446_R582_R583.txt.",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true
+    },
+    "R583": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "15 Nov 2026: a copy of R446 (Rákóczi's Hungarian syllabic key, Ráday Archives C64-4d2-25 no. 6, which reads R473); mark them as duplicates. R582 and R583 agree at 341 of 359 shared codes; R446 and R583 at 265 of 359. Comparison: targets/vetesi1705/key/compare_R446_R582_R583.txt.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true
@@ -14155,7 +14181,7 @@
    "skip": "Not on DECODE: NARA M367 telegrams with no DECODE record, so nothing to correct there."
   },
   "gonzaga1549": {
-   "skip": "Not on DECODE: Estense Modena letters, no DECODE record to edit."
+   "skip": "Not on DECODE: Estense Modena letters (Charles V and, since the fold of 14 Nov 2026, Prince Philip to Ferrante Gonzaga; catalogue 1560 and 1561), no DECODE record to edit."
   },
   "cardona1517": {
    "skip": "No DECODE record for BNE MSS/20210/11/1-4 (catalogue 854 checked 28 Oct 2026, not on DECODE); nothing on DECODE to correct. R9815-R9820 (BRAH 9/15, Galende key) are a different volume, not compared. New records for these letters would be a separate proposal to George Lasry and Beáta Megyesi."
