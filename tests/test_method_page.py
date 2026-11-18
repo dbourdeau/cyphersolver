@@ -127,6 +127,25 @@ class Counts(unittest.TestCase):
             self.assertIn('<code>sign_check</code>', sec)
 
 
+class ReducedTree(unittest.TestCase):
+    def test_no_timestamps_folder(self):
+        # a tree where no target has timestamps/ (review of #718, point 7): figures() and both pages still build
+        with tempfile.TemporaryDirectory() as d:
+            (pathlib.Path(d) / 'targets' / 'a').mkdir(parents=True)
+            (pathlib.Path(d) / 'targets' / 'a' / 'profile.json').write_text(json.dumps(profile(
+                [{'reading_review': {'grade': 'A', 'by': 'Claude Opus 5.5', 'date': 'x'}}],
+                method='key recovered from ciphertext-only', **{'class': 'read'})), encoding='utf-8')
+            c = MP.review_counts(d, audit={}, names={})
+        self.assertNotIn('timestamped', c)
+        self.assertFalse(MP.figures(c, 'en')['ts_all_contrib'])
+        for page in (MP.page_en(c, 0, {}), MP.page_fr(c, 0, {})):
+            self.assertIn('<!-- site:nav -->', page)
+
+    def test_tool_pages(self):
+        import _check_writeup as CW
+        self.assertTrue({'method', 'method-fr'} <= CW.TOOL_PAGES)
+
+
 class SignLevel(unittest.TestCase):
     def test_meets_level(self):
         ok = {'signs_checked': 8, 'controls': 2, 'controls_passed': 2}
