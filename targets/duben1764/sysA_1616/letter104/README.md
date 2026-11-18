@@ -41,3 +41,10 @@ Princess is too slow to carry out her promises.
 ## Limits
 Transcriptions by AI agents, not checked by a palaeographer; 105L05-105L07 are blotted and overwritten (struck groups uncertain). The reading of
 the probable words depends on conjectured values that no period clear checks for this letter.
+
+## 18 Nov 2026: blind digit-form check (Brice Dudout, sheet of 17 Nov evening; 4 of 4 controls right)
+Applied in `reading_104R-105L_key_c02_tagged_plate1711.txt` (the tagged file above is kept): 104R01 g10 = 292 ("fortes") and 104R08 g7 = 668
+("vues") become sure. 104R02 g19 = 233 is confirmed, but g18 reads 562 (absent from key_c02), so "rendre" stays probable; 105L07 g5 = 585 is
+confirmed, but "soutien" also rests on the blotted 357/448, so it stays probable. Against the sense (words stay probable): 104R03 g9 534
+("favorable"), 104R05 g12 557 ("qu'il"), 104R17 g14 201 ("crainte"), 105L03 g11 212 ("de"); 105L07 g9 582 sits in an unresolved span.
+**Count: 235 sure + 41 probable of about 291 words: sure 0.808, sure + probable 0.948: read in part.**

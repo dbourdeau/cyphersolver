@@ -27,3 +27,12 @@ absent from it, and the unresolved spans (about 128 words) sit mostly on them.
 The letter opens 96.70 (nulls) 171.732.727.710 and 90R02 has "votre lettre du 732.727.703". Groups above 700 are numbers and months in this code
 (720 premier, 721 deux, 726 sept, 729 dix, 709 février, 713 juin, from the clears), so the letter is dated in cipher; the values of 727, 732,
 703 and 710 are not known, so the date stays unread.
+
+## 18 Nov 2026: blind digit-form check (Brice Dudout, sheet of 17 Nov evening)
+Nineteen groups doubtful by the form of one digit were shown framed alone, with reference digits of the same hand and four control digits of
+sure groups (**4 of 4 controls right**). Nine of the nineteen answers go against the sense: the scribe may have slipped or the key_c02 value
+may be wrong; this is not settled (no new measure, key unchanged). A word contradicted by the form is not made sure; it stays probable if it was.
+Applied in `reading_90R-93L_key_c02_strict_plate1711.txt` (the file above is kept): 90R09 357 "inutiles", 90R17 396 "l'", 92L02 374 "doit",
+92L15 538 "jusqu'ici" become sure; 92L12 606 (0, absent from key_c02) makes "peu" probable and 92R17 574 (4, absent) makes "sans" probable
+(each had been counted sure plus one unresolved word); 90R02 193 ("chagrin") and 91L03 616 ("forte") go against the sense and stay probable;
+91R13 218 ("devoirs") is confirmed. **Count: 654 sure + 80 probable of about 858 words: sure 0.762, sure + probable 0.855: read in part.**
