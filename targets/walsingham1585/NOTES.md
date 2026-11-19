@@ -127,7 +127,7 @@ hand; the files do not mark them, so `v10_relabel.py` cannot reproduce these cou
   **15 of 20 = 0.75**, from 0.957 (a figure over the whole letter, clear included, taken from `clear_gaps_pass2.md`).
   On the `texts/key.md` grades alone, without the pairs' glosses, it is 10 of 20 = 0.50. **State read -> read in part.**
   The clear words and their `[..]` gaps are not cipher and are not counted.
-- **R4844 sign words** (Dudout): 19 sign groups, **11 graded S (certain)**, 5 graded P (probable, one with a restored
+- **R4844 sign words** (Dudout; updated 19 Nov 2026 after blind sign sheet K, see Sign check K: groups 12 and 16 now S, **13 of 19 = 0.684**): 19 sign groups, **11 graded S (certain)**, 5 graded P (probable, one with a restored
   letter; holes) and 3 unresolved: **11 of 19 = 0.579**, from 0.86, which counted the sign letters with the probable
   and restored ones as read (certain letters about 69 of 116 = 0.59). Stays read in part. The reading file
   `dudout/reading_R4844_signs.md` is Dudout's and still carries its own 86% line.
@@ -200,3 +200,48 @@ text of the two letters (blocker: needs the DECODE login, or a reachable copy of
 Note on the count: `fraction_read_source` counts "R4838/R4839 10" name-code units as read, while section 1 lists
 nine numbers for the two letters (3 and 6), two of them (13, 30) open in the key and 37 open until 9 Nov. The
 count could not be re-made without the pages; it is left as it stands and flagged here.
+
+## Sign check K, 19 Nov 2026 (R4844 sign words)
+
+Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`, held in `sign_check_pending.json`
+until PR #789 adds the field to the schema; files in `sign_check/`). It checks how signs are written, not the key or the
+reading, and it changes neither the class nor the state.
+
+**Who did what.** The checker is Brice Dudout, the contributor of the sign-word reading (a project member, not an independent
+reader). He answered blind: one boxed sign per question, shapes cut only from certain sign words of R4844 (same hand, same
+letter), with "none / other shape", "illegible" and "not a sign"; no gloss (the struck interlinear masked), reading, place or
+date was shown. An AI model (Claude Opus 5.5) wrote the rule, chose the signs by it, cut the thumbnails, built the sheet,
+scored the answers and read the free-text remarks. The answer key stays private; its content for each question is in
+`sign_check/sheet-K-results.tsv`. No image, crop or thumbnail is committed: the images are the DECODE study images of R4844,
+not reproduced.
+
+**Rule.** `sign_check/sheet-K-rule.md` (in French, as written), SHA-256
+7d53c787b1a113a2e0ca586a66863c442b7cae534a1deba845adc5784a933ab5, written and hashed on 19 Nov 2026 before any thumbnail was
+cut and before any answer. On the certain words, the dotted trait (DIV, read r or s) splits by the place of its dot: above =
+r, below = s; dot after it on the line (TD) = t. Targets: ten dotted traits or barred signs in probable or unresolved groups
+(4, 14, 12, 16, 2, 9), one sign per question, with the shape that makes the word named for each. Controls: the r of "course"
+(group 8) and the k of "violent" (group 7). The rule was applied as written, with no change. **Declared deviation:** the
+rule has no written integration clause. It was applied in the strictest way, as on the other sheets of this folder: a group
+becomes certain only when every target in it gets the shape that makes it; "none / other shape" leaves the group at its
+grade. That application was written after the answers; it adds nothing to the rule.
+
+**Answers.** `sign_check/sheet-K-answers.json`, exported 2026-11-19T22:30:25Z (SHA-256
+dc436bb4cecec6c6c18380315e5da10a233fd19c52ef53b9d3c7022e4a500c9f). Controls 2 of 2. Ten target signs: 2 corrected, 5 as
+transcribed, 3 "none / other shape", each with a remark.
+- Group 12 **traine**: the first trait has its dot after it (t): P -> **S**.
+- Group 16 **Scroupe**: the barred sign is "=" (p): P -> **S**. Whether it names Lord Scrope is a separate question.
+- Group 4 (candidate "supp...t"): the first sign has its dot below (s) and the fourth is "=" (p; remark: with a stroke
+  through the middle), but the second is another shape ("a dot, then a trait"): stays unresolved.
+- Group 14 suspition: the third and fourth signs have their dot below (s); the fifth is another shape ("an L with a stroke
+  below"): stays probable.
+- Group 9 [a]bsent: the sign after e is another shape ("a trait with a dot above and below"): stays probable.
+- Group 2: the fifth sign has its dot below (s); the group stays unresolved.
+
+The three new shapes are leads, not values: one case each, to be found elsewhere before any value is given.
+
+**Effect.** `dudout/reading_R4844_signs.md`: grades of groups 12 and 16, and a paragraph on the sheet. Sure groups 11 -> 13
+of 19 (0.579 -> **0.684**); 3 probable, 3 unresolved. A text under 40 words with 6 holes: still read in part. `fraction_read`
+is unchanged (its units do not include the sign groups).
+
+**Limits.** One checker, inside the project. Two controls show little on their own. The signs were chosen because they were
+doubtful: a diagnostic, not a sample of the text. No person has audited the model's part. This is not a `human_check`.
