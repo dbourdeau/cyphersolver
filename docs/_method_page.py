@@ -35,9 +35,6 @@ EDITION = re.compile(r'\((?:[^)]*\b(?:university|universit\w*|thesaurus|edition|
 NOT_INDEPENDENT = re.compile(r'not independent|same session', re.I)
 # a review signed by an agent working for the author of the reading ("Author's agents (...)", "Claude (for <author>)")
 AUTHORS_AGENT = re.compile(r"\bauthor'?s\b", re.I)
-# model families for conditions.models (the ids are free text and not normalised)
-CLAUDE = re.compile(r'claude|anthropic|opus|sonnet|fable|haiku', re.I)
-OPENAI = re.compile(r'\bgpt|chatgpt|codex|openai', re.I)
 
 
 def kind_of(by):
@@ -140,7 +137,7 @@ def review_counts(root=ROOT, audit=None, names=None):
         c[k] = 0
     kinds, states, verdicts, transcr, prov = (collections.Counter() for _ in range(5))
     exists, found, hc_result, unval_prov, unval_who = (collections.Counter() for _ in range(5))
-    families, ts_prov = collections.Counter(), collections.Counter()
+    ts_prov = collections.Counter()
     files = sorted(root.glob('targets/*/profile.json'))
     for path in files:
         try:
@@ -239,19 +236,11 @@ def review_counts(root=ROOT, audit=None, names=None):
                 c['to_credit'] += 1
                 roles = {x.get('role') for x in as_list(o.get('credits')) if isinstance(x, dict)}
                 c['credited'] += bool(roles & {'prior solution', 'key or decipherment used'})
-        # models
-        ms = [str(m) for m in as_list(cond.get('models'))]
-        if not ms or any(m.strip().lower() == 'unknown' for m in ms):
-            families['unknown'] += 1
-        else:
-            if any(CLAUDE.search(m) for m in ms): families['claude'] += 1
-            if any(OPENAI.search(m) for m in ms): families['openai'] += 1
-            if any(not CLAUDE.search(m) and not OPENAI.search(m) for m in ms): families['other'] += 1
         if (root / 'targets' / path.parent.name / 'timestamps').is_dir():
             c['timestamped'] += 1
             ts_prov[provenance] += 1
     c.update(dict(kinds=kinds, states=states, verdicts=verdicts, transcr=transcr, prov=prov, exists=exists, found=found,
-                  hc_result=hc_result, unval_prov=unval_prov, unval_who=unval_who, families=families, ts_prov=ts_prov))
+                  hc_result=hc_result, unval_prov=unval_prov, unval_who=unval_who, ts_prov=ts_prov))
     c['verdicts_total'] = sum(verdicts.values())
     c['exists_answered'] = sum(n for k, n in exists.items() if k not in (None, 'unknown'))
     c['exists_earlier'] = sum(exists[k] for k in EARLIER)
@@ -357,7 +346,7 @@ def figures(c, lang):
     n = lambda x: num(x, lang)
     k = c['kinds']
     return dict(n=n, k=k, st=c['states'], v=c['verdicts'], tr=c['transcr'], pv=c['prov'], hr=c['hc_result'],
-                fam=c['families'], model_pct=pct(k['model'], c['rr'], lang),
+                model_pct=pct(k['model'], c['rr'], lang),
                 tr_other=c_sum(c['transcr'], TR_KEYS), tr_total=sum(c['transcr'].values()),
                 ts_all_contrib=bool(c.get('timestamped', 0)) and c['ts_prov'].get('contributed', 0) == c.get('timestamped', 0))
 
@@ -366,7 +355,7 @@ def figures(c, lang):
 def page_en(c, queue, names):
     L = 'en'
     F = figures(c, L)
-    n, k, st, v, tr, pv, hr, fam = (F[x] for x in ('n', 'k', 'st', 'v', 'tr', 'pv', 'hr', 'fam'))
+    n, k, st, v, tr, pv, hr = (F[x] for x in ('n', 'k', 'st', 'v', 'tr', 'pv', 'hr'))
     hc_txt = join([f'{n(hr[x])} {x}' for x in ('confirmed', 'corrected', 'disagreed') if hr.get(x)], L)
     ts_txt = (f"<p>In {n(c.get('timestamped', 0))} targets{', all contributed from outside,' if F['ts_all_contrib'] else ''} the "
               'work files were time-stamped: an RFC 3161 token and an OpenTimestamps proof over the SHA-256 of a list of files. '
@@ -376,10 +365,10 @@ def page_en(c, queue, names):
           'Reading check if a pull request changed them.</p>\n')
     steps = table(['Step', 'Usually done by', 'What is checked'], [
         ['1. Find the document and any earlier reading', 'an AI agent, run by a person', 'since 28 October 2026, a vetting list for the catalogue (&sect;&nbsp;03)'],
-        ['2. Transcribe the cipher', 'a model, from the images', 'no systematic double transcription (&sect;&nbsp;04)'],
-        ['3. Obtain the key', 'a model, or a key that already existed', 'the statistical test, where it applies (&sect;&nbsp;07)'],
-        ['4. Build the text and translate it', 'a model (the method is in CONTRIBUTING)', 'the share of words read, <code>read_share</code> (&sect;&nbsp;06)'],
-        ['5. Grade the reading A or B', f"a model, in {F['model_pct']} of entries", 'that a grade is there (&sect;&nbsp;08)'],
+        ['2. Transcribe the cipher', 'an AI model, from the images', 'no systematic double transcription (&sect;&nbsp;04)'],
+        ['3. Obtain the key', 'an AI model, or a key that already existed', 'the statistical test, where it applies (&sect;&nbsp;07)'],
+        ['4. Build the text and translate it', 'an AI model (the method is in CONTRIBUTING)', 'the share of words read, <code>read_share</code> (&sect;&nbsp;06)'],
+        ['5. Grade the reading A or B', f"an AI model, in {F['model_pct']} of entries", 'that a grade is there (&sect;&nbsp;08)'],
         ['6. Check a passage on the image without AI', f"a person, in {n(c['hc_profiles'])} records", 'nothing automatic (&sect;&nbsp;08)'],
         ['7. Merge into the repository', 'a maintainer; for a pull request, one who is not its author', 'the approval, for pull requests (&sect;&nbsp;09)']])
     methods = table(['How the key was obtained', 'Records'], [
@@ -388,7 +377,7 @@ def page_en(c, queue, names):
         ['neither key nor text obtained (<code>not solved</code>)', n(c['m_notsolved'])],
         ['not a cipher, or the document could not be reached', n(c['m_na'])]], total=['All records', n(c['profiles'])])
     trans = table(['Transcribed by', 'Documents'], [
-        ['a model, from the images', n(tr['llm from images'])], ['several sources combined', n(tr['mixed'])],
+        ['an AI model, from the images', n(tr['llm from images'])], ['several sources combined', n(tr['mixed'])],
         ['DECODE', n(tr['DECODE'])], ['a printed edition', n(tr['published'])],
         ['a person working for the project', n(tr['human (project)'])], ['other, or not stated', n(F['tr_other'])]],
         total=['All documents', n(F['tr_total'])])
@@ -405,8 +394,8 @@ def page_en(c, queue, names):
     verd = table(['Verdict', 'Meaning', 'Records'], [[f'<code>{x}</code>', vmean[x], n(v.get(x, 0))] for x in VERDICTS],
                  total=['All verdicts', '', n(c['verdicts_total'])])
     signers = table(['Who signed the grade', 'Entries'], [
-        ['a model', f"{n(k['model'])} ({F['model_pct']})"], ['a person assisted by a model', n(k['person+model'])],
-        ['a person, no model named', f"{n(k['person'])} ({n(c.get('rr_edition', 0))} of them name a published edition, not a reviewer)"],
+        ['an AI model', f"{n(k['model'])} ({F['model_pct']})"], ['a person assisted by an AI model', n(k['person+model'])],
+        ['a person, no AI model named', f"{n(k['person'])} ({n(c.get('rr_edition', 0))} of them name a published edition, not a reviewer)"],
         ['cannot tell', n(k['unclear'])]], total=['All graded entries', f"{n(c['rr'])}, in {n(c['rr_profiles'])} records"])
     checks = table(['Check', 'When it runs', 'What it checks', 'What it does not check'], [
         ['Check write-ups', 'every push to <code>main</code> and every pull request',
@@ -414,8 +403,6 @@ def page_en(c, queue, names):
         ['Reading check', 'every pull request, on the targets it changes only',
          'for each <code>read</code> or <code>read in part</code> document: a grade A or B (its own, or the audit&rsquo;s) and an English translation; <code>read_share</code> at 0.95 or more for a <code>read</code> document, when it is recorded; that the target&rsquo;s class matches its documents',
          'who gave the grade; the statistical test; the matched control; any comparison with the images; the targets the pull request does not touch']])
-    models = table(['Model named', 'Records'], [['a Claude model (Anthropic)', n(fam['claude'])], ['an OpenAI model', n(fam['openai'])],
-                                                ['another model or agent', n(fam['other'])], ['no model named', n(fam['unknown'])]])
     return head(L, 'Method and review &mdash; how a reading is made, checked and graded',
                 'How each reading on Cyphersolver is transcribed, deciphered, tested and graded, who does each step, '
                 'and what the checks do not cover. The figures are counted from the records at each build.') + f'''<section class="hero">
@@ -431,7 +418,7 @@ def page_en(c, queue, names):
 <div class="callout glance"><p><b>At a glance</b></p>
 <ul>
 <li>The work is done mostly by AI models, run by people.</li>
-<li>The reading grade (A or B) is given by a model in {F['model_pct']} of entries. It is not a human review.</li>
+<li>The reading grade (A or B) is given by an AI model in {F['model_pct']} of entries. It is not a human review.</li>
 <li>A check of a passage against the image by a person, without AI, is declared in {n(c['hc_profiles'])} records.</li>
 <li>The automated checks test the form of a reading. They do not test that it is right.</li>
 <li>Any reading can be challenged. Corrections stay in the repository&rsquo;s history.</li>
@@ -439,7 +426,7 @@ def page_en(c, queue, names):
 
 <h2 id="what-it-is"><span class="num">01</span> What this project is</h2>
 <p>Cyphersolver is an open ledger of historical ciphers. The ciphers are worked on with AI models. The ledger is also an informal benchmark of what those models can do with them.</p>
-<p>Most of the work is done with Anthropic&rsquo;s Claude models. People run them: the project&rsquo;s maintainers and outside contributors.</p>
+<p>People run the AI models: the project&rsquo;s maintainers and outside contributors.</p>
 <p>The ledger holds {n(c['profiles'])} target records. {n(pv['project'])} are the project&rsquo;s own work, {n(pv['contributed'])} were contributed from outside, and {n(pv['mixed'])} are mixed.</p>
 <p>The ledger is not a critical edition. Its results have not been peer-reviewed in the academic sense.</p>
 <p>Words used on this page:</p>
@@ -478,7 +465,7 @@ def page_en(c, queue, names):
 <p>A key that turns the cipher into words does not yet give a text. Each document in a record carries one of four states.</p>
 {state_t}
 <p><b>The share of words read</b> (<code>read_share</code>) counts cipher words only. In a letter that mixes clear text and cipher, it is measured over the words written in cipher; the clear words around them are neither read nor unread and stay out of both numerator and denominator.</p>
-<p>Only sure words count as read. A word is read when the key gives it, or the plain text beside it does, with nothing supplied. A probable word (<code>&#123;x&#125;</code>), an inferred or supplied word, a grade-M word and an unvalued code are holes, and so is a letter supplied inside a word. <code>read_share</code> is 1 minus the share of holes among the cipher words. By the README, a script counts it from the reading file.</p>
+<p>Only sure words count as read: a word counts as read when the key gives it, or the plain text beside it does, with nothing supplied. A probable word (<code>&#123;x&#125;</code>), an inferred or supplied word, a grade-M word and an unvalued code are holes, and so is a letter supplied inside a word. <code>read_share</code> is 1 minus the share of holes among the cipher words. By the README, a script counts it from the reading file.</p>
 <p>The 95% bar applies to the cipher words of each document. <b>Floor for short texts:</b> a document of fewer than 40 cipher words is <code>read</code> when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more. The floor never applies to a text of 40 words or more, and the page and the record state the number of holes and that the floor was used.</p>
 <p>This number counts the holes the reader marked. It does not say whether the words read are right.</p>
 <p>{n(c.get('read_no_share', 0))} documents in state <code>read</code> have no <code>read_share</code> recorded. For them, the 95% is not measured document by document.</p>
@@ -510,17 +497,17 @@ def page_en(c, queue, names):
 <li>B: coherent but raw (unspaced, in capitals, in decoder lines), and put into normal form in the reading or the translation.</li>
 </ul>
 <p>A and B are not grades of accuracy. They say the text builds sentences. They do not say it was compared with the images.</p>
-<p>A grade is needed for <code>read</code> and <code>read in part</code> documents. The schema allows a person or a model named as such. CONTRIBUTING wants the grade recorded by the reviewer, not by the author. No automated check looks at who gave it.</p>
-<p><b>Most A and B grades are given by a model.</b></p>
+<p>A grade is needed for <code>read</code> and <code>read in part</code> documents. The schema allows a person or an AI model named as such. CONTRIBUTING wants the grade recorded by the reviewer, not by the author. No automated check looks at who gave it.</p>
+<p><b>Most A and B grades are given by an AI model.</b></p>
 {signers}
 <p>In at least {n(c.get('rr_not_independent', 0))} entries the record itself says the reader was not independent of the work (for example, the same session). At least {n(c.get('rr_authors_agent', 0))} more are signed by an agent working for the author of the reading. These entries do not meet, or do not clearly meet, the rule of CONTRIBUTING.</p>
-<p>{n(c.get('graded_no_rr', 0))} <code>read</code> or <code>read in part</code> documents have no grade of their own. For {n(c.get('no_rr_audit_ab', 0))} of them, the check uses the grade of the reading audit of 22 October 2026, which a model gave. {n(c.get('no_rr_audit_other', 0))} have an audit grade that is neither A nor B, and {n(c.get('no_rr_none', 0))} have no grade at all. They are not counted in the table.</p>
-<p><b>The second review of a reading is therefore a model reader together with the automated checks. It is not a human review.</b></p>
+<p>{n(c.get('graded_no_rr', 0))} <code>read</code> or <code>read in part</code> documents have no grade of their own. For {n(c.get('no_rr_audit_ab', 0))} of them, the check uses the grade of the reading audit of 22 October 2026, which an AI model gave. {n(c.get('no_rr_audit_other', 0))} have an audit grade that is neither A nor B, and {n(c.get('no_rr_none', 0))} have no grade at all. They are not counted in the table.</p>
+<p><b>The second review of a reading is therefore an AI model reader together with the automated checks. It is not a human review.</b></p>
 <p>The <b>human check</b> (<code>human_check</code>) is something else. A person compares a passage with the image, without AI help, and records the result: confirmed, corrected or disagreed. It is declared in the record. It covers {n(c['hc_profiles'])} records ({hc_txt}).</p>
 <p>When a character or an alphabet is doubtful, a contributor can make <b>targeted blind re-readings</b>. A person sees only the doubtful sign, cut out of the image, next to two or three candidate shapes. They do not see the expected reading, the gloss or the context. They choose the shape they see. This confirms or refutes one value, one reading or a whole alphabet without the bias of knowing the answer. It is a check of sign shapes, not a re-reading of the text, and it is recorded as such.</p>
-<p>{n(c.get('indep_verif', 0))} records also declare an &ldquo;independent verification&rdquo;: someone outside the project checked the reading against the images or with their own key. The field does not say whether that person used a model.</p>
+<p>{n(c.get('indep_verif', 0))} records also declare an &ldquo;independent verification&rdquo;: someone outside the project checked the reading against the images or with their own key. The field does not say whether that person used an AI model.</p>
 <p>{n(queue)} readings whose key was recovered or matched here are <a href="contributors.html#verify">waiting for an independent check</a>.</p>
-<p class="cmuted"><b>How these figures are counted.</b> One graded entry is one item of <code>outcome.texts</code> in a target&rsquo;s <code>profile.json</code> that carries a <code>reading_review</code>, whatever its state. Only the <code>targets/&lt;folder&gt;/profile.json</code> files are counted. The signer is classed from the <code>by</code> field: <i>model</i> when it names a model, an agent or an AI session and no person comes first; <i>person assisted by a model</i> when a person comes first and says a model assisted; <i>person</i> when no model is named; <i>cannot tell</i> when it names neither (&ldquo;project verification pass&rdquo;). &ldquo;Not independent&rdquo; and &ldquo;an agent working for the author&rdquo; are found by a word search in <code>by</code> and <code>note</code>, so they are lower bounds. Counting per document or per target gives other totals. The rule is in {gh('docs/_method_page.py')}.</p>
+<p class="cmuted"><b>How these figures are counted.</b> One graded entry is one item of <code>outcome.texts</code> in a target&rsquo;s <code>profile.json</code> that carries a <code>reading_review</code>, whatever its state. Only the <code>targets/&lt;folder&gt;/profile.json</code> files are counted. The signer is classed from the <code>by</code> field: <i>model</i> when it names an AI model, an agent or an AI session and no person comes first; <i>person assisted by an AI model</i> when a person comes first and says an AI model assisted; <i>person</i> when no model is named; <i>cannot tell</i> when it names neither (&ldquo;project verification pass&rdquo;). &ldquo;Not independent&rdquo; and &ldquo;an agent working for the author&rdquo; are found by a word search in <code>by</code> and <code>note</code>, so they are lower bounds. Counting per document or per target gives other totals. The rule is in {gh('docs/_method_page.py')}.</p>
 
 <h3 id="sign-check">A verification level: AI decipherment, human-checked on a sample of signs</h3>
 <p>Between no check and a full proofreading against the images, a reading can carry the level <b>AI decipherment, human-checked on a sample of signs</b>. An AI model transcribed and deciphered the text. A person then picked, blind, the shape they see for a set of signs on a review sheet:</p>
@@ -529,7 +516,7 @@ def page_en(c, queue, names):
 <li>each question boxes one sign on its line. The options are shapes cut from the same document, plus &ldquo;none / other shape&rdquo;, &ldquo;illegible&rdquo; and &ldquo;not a sign&rdquo;, which leave the word marked. No gloss, reading, value or place is shown;</li>
 <li>at least two controls with a known answer are mixed in, taken from places as hard as the targets. The answer key stays private until the answers are exported.</li>
 </ul>
-<p>The record (<code>sign_check</code> in <code>profile.json</code>) gives the date; who answered, and whether that person is inside or outside the project; what a model did (wrote the rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks); how many signs were checked and how they were chosen (a section of the target&rsquo;s NOTES); how many controls passed; and the results: as transcribed, corrected, unresolved, not counted. A write-up shows it as one sentence, for example: &ldquo;9 doubtful signs checked blind by a project member, on a sheet an AI model built and scored; rule in NOTES; controls 2 of 2; 2 as transcribed, 7 corrected, 1 not counted (faulty thumbnail)&rdquo;.</p>
+<p>The record (<code>sign_check</code> in <code>profile.json</code>) gives the date; who answered, and whether that person is inside or outside the project; what an AI model did (wrote the rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks); how many signs were checked and how they were chosen (a section of the target&rsquo;s NOTES); how many controls passed; and the results: as transcribed, corrected, unresolved, not counted. A write-up shows it as one sentence, for example: &ldquo;9 doubtful signs checked blind by a project member, on a sheet an AI model built and scored; rule in NOTES; controls 2 of 2; 2 as transcribed, 7 corrected, 1 not counted (faulty thumbnail)&rdquo;.</p>
 <p>A sheet meets the level only with at least {SIGN_MIN_CONTROLS} controls, all passed, and at least {SIGN_MIN_SIGNS} target signs once the answers touched by a faulty thumbnail are removed. An answer &ldquo;none / other&rdquo; on a control counts as a failure. Whatever an answer contradicts is recoded or marked in the reading first.</p>
 <p><b>The level says how a reading was checked, not how much of the text counts as read.</b> It never changes the class, the state or the read share: a reading can carry it and keep the state <code>read in part</code>. It checks the shapes of signs, not the key, the value of a code or the reading as a whole. The signs are chosen because they are doubtful, so the check is a diagnostic, not a random sample, and it says nothing about the signs that were not shown. Two passed controls show little on their own: a checker who is right one time in two passes both one time in four. It is not a <code>human_check</code>, which the schema defines as a check without AI help.</p>
 <p>The first readings to carry it are those whose key was built on part of the material (the document or sister letters in the same cipher) and passed a test on a passage not used to build it, against a threshold written first; the write-up gives the history of attempts. {n(c['sc_profiles'])} records carry a <code>sign_check</code> ({n(c['sc'])} sheets, {n(c['sc_level'])} meeting the level, {n(c['sc_external'])} answered by someone outside the project).</p>
@@ -541,11 +528,9 @@ def page_en(c, queue, names):
 {rc}<p><b>Merging.</b> A change to a result enters the repository through a pull request approved by a maintainer who is not its author. The GitHub rules on <code>main</code> require this ({gh('.github/CODEOWNERS', 'CODEOWNERS')}). CONTRIBUTING also asks that the two checks pass. The repository owner&rsquo;s sessions also push to <code>main</code> directly: for them, these rules are a convention.</p>
 
 <h2 id="ai"><span class="num">10</span> The part played by AI</h2>
-<p>The records name the models that did the work (<code>conditions.models</code>). They say what the person did (<code>conditions.human_role</code>): supply images or logins, point to a source, correct a reading.</p>
-{models}
-<p>A record can name several models.</p>
+<p>The records name the AI models that did the work (<code>conditions.models</code>). They say what the person did (<code>conditions.human_role</code>): supply images or logins, point to a source, correct a reading.</p>
 <p>Scripts, keys and transcriptions are kept under version control. The README gives the commands that reproduce two results.</p>
-<p>A step done by a model cannot be replayed exactly: transcribing an image, proposing a code value from context. The models are proprietary.</p>
+<p>A step done by an AI model cannot be replayed exactly: transcribing an image, proposing a code value from context. The models are proprietary.</p>
 <p>The cost of each result (model use, money, human time) is not published.</p>
 
 <h2 id="corrections"><span class="num">11</span> Corrections and challenges</h2>
@@ -575,7 +560,7 @@ FR_VERDICT = {'pass': 'réussi', 'weak': 'faible', 'underdetermined': 'indécida
 def page_fr(c, queue, names):
     L = 'fr'
     F = figures(c, L)
-    n, k, st, v, tr, pv, hr, fam = (F[x] for x in ('n', 'k', 'st', 'v', 'tr', 'pv', 'hr', 'fam'))
+    n, k, st, v, tr, pv, hr = (F[x] for x in ('n', 'k', 'st', 'v', 'tr', 'pv', 'hr'))
     hc_txt = join([f'{n(hr[x])} {FR_HC[x]}' for x in ('confirmed', 'corrected', 'disagreed') if hr.get(x)], L)
     ts_txt = (f"<p>Pour {n(c.get('timestamped', 0))} cibles{', toutes des contributions extérieures,' if F['ts_all_contrib'] else ''} les "
               'fichiers de travail ont été horodatés : un jeton RFC 3161 et une preuve OpenTimestamps sur l’empreinte '
@@ -585,10 +570,10 @@ def page_fr(c, queue, names):
           'Reading check si une demande de fusion les modifiait.</p>\n')
     steps = table(['Étape', 'Faite le plus souvent par', 'Ce qui est contrôlé'], [
         ['1. Trouver le document et ses lectures antérieures', 'un agent d’IA, piloté par une personne', 'depuis le 28 octobre 2026, une grille pour le catalogue (§&nbsp;03)'],
-        ['2. Transcrire le chiffré', 'un modèle, à partir des images', 'pas de double transcription systématique (§&nbsp;04)'],
-        ['3. Obtenir la clé', 'un modèle, ou une clé qui existait déjà', 'le test statistique, quand il s’applique (§&nbsp;07)'],
-        ['4. Établir le texte et le traduire', 'un modèle (la méthode est dans CONTRIBUTING)', 'la part de mots lus, <code>read_share</code> (§&nbsp;06)'],
-        ['5. Noter la lecture A ou B', f"un modèle, pour {F['model_pct']} des entrées", 'la présence de la note (§&nbsp;08)'],
+        ['2. Transcrire le chiffré', 'un modèle d’IA, à partir des images', 'pas de double transcription systématique (§&nbsp;04)'],
+        ['3. Obtenir la clé', 'un modèle d’IA, ou une clé qui existait déjà', 'le test statistique, quand il s’applique (§&nbsp;07)'],
+        ['4. Établir le texte et le traduire', 'un modèle d’IA (la méthode est dans CONTRIBUTING)', 'la part de mots lus, <code>read_share</code> (§&nbsp;06)'],
+        ['5. Noter la lecture A ou B', f"un modèle d’IA, pour {F['model_pct']} des entrées", 'la présence de la note (§&nbsp;08)'],
         ['6. Vérifier un passage sur l’image, sans IA', f"une personne, dans {n(c['hc_profiles'])} fiches", 'rien d’automatique (§&nbsp;08)'],
         ['7. Intégrer au dépôt', 'un mainteneur ; pour une demande de fusion, celui qui n’en est pas l’auteur', 'l’approbation, pour les demandes de fusion (§&nbsp;09)']])
     methods = table(['Comment la clé a été obtenue', 'Fiches'], [
@@ -597,7 +582,7 @@ def page_fr(c, queue, names):
         ['ni clé ni texte obtenus (<code>not solved</code>)', n(c['m_notsolved'])],
         ['pas un chiffre, ou document inaccessible', n(c['m_na'])]], total=['Toutes les fiches', n(c['profiles'])])
     trans = table(['Transcrit par', 'Documents'], [
-        ['un modèle, à partir des images', n(tr['llm from images'])], ['plusieurs sources combinées', n(tr['mixed'])],
+        ['un modèle d’IA, à partir des images', n(tr['llm from images'])], ['plusieurs sources combinées', n(tr['mixed'])],
         ['DECODE', n(tr['DECODE'])], ['une édition imprimée', n(tr['published'])],
         ['une personne travaillant pour le projet', n(tr['human (project)'])], ['autre, ou non indiqué', n(F['tr_other'])]],
         total=['Tous les documents', n(F['tr_total'])])
@@ -614,7 +599,7 @@ def page_fr(c, queue, names):
     verd = table(['Verdict', 'Sens', 'Fiches'], [[f'<code>{x}</code> ({FR_VERDICT[x]})', vmean[x], n(v.get(x, 0))] for x in VERDICTS],
                  total=['Tous les verdicts', '', n(c['verdicts_total'])])
     signers = table(['Qui a signé la note', 'Entrées'], [
-        ['un modèle', f"{n(k['model'])} ({F['model_pct']})"], ['une personne assistée d’un modèle', n(k['person+model'])],
+        ['un modèle d’IA', f"{n(k['model'])} ({F['model_pct']})"], ['une personne assistée d’un modèle d’IA', n(k['person+model'])],
         ['une personne, sans modèle nommé', f"{n(k['person'])} (dont {n(c.get('rr_edition', 0))} désignent une édition publiée, pas un relecteur)"],
         ['on ne sait pas', n(k['unclear'])]], total=['Toutes les entrées notées', f"{n(c['rr'])}, dans {n(c['rr_profiles'])} fiches"])
     checks = table(['Contrôle', 'Quand il tourne', 'Ce qu’il vérifie', 'Ce qu’il ne vérifie pas'], [
@@ -623,14 +608,12 @@ def page_fr(c, queue, names):
         ['Reading check', 'à chaque demande de fusion, sur les seules cibles qu’elle modifie',
          'pour chaque document <code>read</code> ou <code>read in part</code> : une note A ou B (la sienne, ou celle de l’audit) et une traduction anglaise ; un <code>read_share</code> d’au moins 0,95 pour un document <code>read</code>, s’il est enregistré ; l’accord entre la classe de la cible et l’état de ses documents',
          'qui a donné la note ; le test statistique ; le témoin ; toute comparaison avec les images ; les cibles que la demande ne touche pas']])
-    models = table(['Modèle nommé', 'Fiches'], [['un modèle Claude (Anthropic)', n(fam['claude'])], ['un modèle d’OpenAI', n(fam['openai'])],
-                                                ['un autre modèle ou agent', n(fam['other'])], ['aucun modèle nommé', n(fam['unknown'])]])
     body = f'''<main>
 
 <div class="callout glance"><p><b>En bref</b></p>
 <ul>
 <li>Le travail est fait surtout par des modèles d’IA, pilotés par des personnes.</li>
-<li>La note de lecture (A ou B) est donnée par un modèle pour {F['model_pct']} des entrées. Ce n’est pas une relecture humaine.</li>
+<li>La note de lecture (A ou B) est donnée par un modèle d’IA pour {F['model_pct']} des entrées. Ce n’est pas une relecture humaine.</li>
 <li>Une vérification d’un passage sur l’image par une personne, sans IA, est déclarée dans {n(c['hc_profiles'])} fiches.</li>
 <li>Les contrôles automatiques vérifient la forme d’une lecture. Ils ne vérifient pas qu’elle est juste.</li>
 <li>Toute lecture peut être contestée. Les corrections restent dans l’historique du dépôt.</li>
@@ -638,7 +621,7 @@ def page_fr(c, queue, names):
 
 <h2 id="ce-qu-est-le-projet"><span class="num">01</span> Ce qu’est ce projet</h2>
 <p>Cyphersolver est un registre ouvert de chiffres historiques. Les chiffres y sont travaillés avec des modèles d’IA. Le registre sert aussi de banc d’essai informel de ce que ces modèles savent en faire.</p>
-<p>L’essentiel du travail est fait avec les modèles Claude d’Anthropic. Des personnes les pilotent : les mainteneurs du projet et des contributeurs extérieurs.</p>
+<p>Des personnes pilotent les modèles d’IA : les mainteneurs du projet et des contributeurs extérieurs.</p>
 <p>Le registre compte {n(c['profiles'])} fiches de cibles. {n(pv['project'])} relèvent du travail du projet, {n(pv['contributed'])} sont des contributions extérieures et {n(pv['mixed'])} sont mixtes.</p>
 <p>Ce registre n’est pas une édition critique. Ses résultats n’ont pas été évalués par des pairs au sens académique.</p>
 <p>Mots employés sur cette page :</p>
@@ -709,17 +692,17 @@ def page_fr(c, queue, names):
 <li>B : cohérent mais brut (sans espaces, en capitales, en lignes de décodeur), et remis en forme dans la lecture ou la traduction.</li>
 </ul>
 <p>A et B ne sont pas des notes d’exactitude. Elles disent que le texte forme des phrases. Elles ne disent pas qu’il a été comparé aux images.</p>
-<p>La note est exigée pour les documents <code>read</code> et <code>read in part</code>. Le schéma admet une personne ou un modèle désigné comme tel. CONTRIBUTING veut que la note soit enregistrée par le relecteur, pas par l’auteur. Aucun contrôle automatique ne regarde qui l’a donnée.</p>
-<p><b>La plupart des notes A et B sont attribuées par un modèle.</b></p>
+<p>La note est exigée pour les documents <code>read</code> et <code>read in part</code>. Le schéma admet une personne ou un modèle d’IA désigné comme tel. CONTRIBUTING veut que la note soit enregistrée par le relecteur, pas par l’auteur. Aucun contrôle automatique ne regarde qui l’a donnée.</p>
+<p><b>La plupart des notes A et B sont attribuées par un modèle d’IA.</b></p>
 {signers}
 <p>Pour au moins {n(c.get('rr_not_independent', 0))} entrées, la fiche dit elle-même que le lecteur n’était pas indépendant du travail (par exemple, la même session). Au moins {n(c.get('rr_authors_agent', 0))} autres sont signées par un agent qui travaille pour l’auteur de la lecture. Ces entrées ne remplissent pas, ou pas clairement, la règle de CONTRIBUTING.</p>
-<p>{n(c.get('graded_no_rr', 0))} documents <code>read</code> ou <code>read in part</code> n’ont pas de note propre. Pour {n(c.get('no_rr_audit_ab', 0))} d’entre eux, le contrôle reprend la note de l’audit des lectures du 22 octobre 2026, donnée par un modèle. {n(c.get('no_rr_audit_other', 0))} ont une note d’audit qui n’est ni A ni B, et {n(c.get('no_rr_none', 0))} n’ont aucune note. Ils ne sont pas comptés dans le tableau.</p>
+<p>{n(c.get('graded_no_rr', 0))} documents <code>read</code> ou <code>read in part</code> n’ont pas de note propre. Pour {n(c.get('no_rr_audit_ab', 0))} d’entre eux, le contrôle reprend la note de l’audit des lectures du 22 octobre 2026, donnée par un modèle d’IA. {n(c.get('no_rr_audit_other', 0))} ont une note d’audit qui n’est ni A ni B, et {n(c.get('no_rr_none', 0))} n’ont aucune note. Ils ne sont pas comptés dans le tableau.</p>
 <p><b>La seconde relecture d’une lecture est donc un lecteur-modèle, associé aux contrôles automatiques. Ce n’est pas une relecture humaine.</b></p>
 <p>La <b>vérification humaine</b> (<code>human_check</code>) est autre chose. Une personne compare un passage à l’image, sans aide de l’IA, et note le résultat : confirmé, corrigé ou en désaccord. C’est déclaré dans la fiche. Cela concerne {n(c['hc_profiles'])} fiches ({hc_txt}).</p>
 <p>Quand un caractère ou un alphabet est douteux, un contributeur peut faire des <b>relectures ciblées à l’aveugle</b>. Une personne voit seulement le signe douteux, découpé dans l’image, à côté de deux ou trois formes candidates. Elle ne voit ni la lecture attendue, ni la glose, ni le contexte. Elle choisit la forme qu’elle voit. Cela confirme ou infirme une valeur, une lecture ou un alphabet entier, sans le biais de connaître la réponse. C’est une vérification de la forme des signes, pas une relecture du texte, et elle est notée comme telle.</p>
-<p>{n(c.get('indep_verif', 0))} fiches déclarent aussi une « independent verification » : quelqu’un d’extérieur au projet a vérifié la lecture sur les images ou avec sa propre clé. Ce champ ne dit pas si cette personne a utilisé un modèle.</p>
+<p>{n(c.get('indep_verif', 0))} fiches déclarent aussi une « independent verification » : quelqu’un d’extérieur au projet a vérifié la lecture sur les images ou avec sa propre clé. Ce champ ne dit pas si cette personne a utilisé un modèle d’IA.</p>
 <p>{n(queue)} lectures dont la clé a été reconstituée ou rapprochée ici <a href="contributors.html#verify">attendent une vérification indépendante</a>.</p>
-<p class="cmuted"><b>Comment ces chiffres sont comptés.</b> Une entrée notée est un élément de <code>outcome.texts</code> dans la fiche <code>profile.json</code> d’une cible qui porte un <code>reading_review</code>, quel que soit son état. Seuls les fichiers <code>targets/&lt;dossier&gt;/profile.json</code> sont comptés. Le signataire est classé d’après le champ <code>by</code> : <i>modèle</i> s’il nomme un modèle, un agent ou une session d’IA et qu’aucune personne n’est nommée d’abord ; <i>personne assistée d’un modèle</i> si une personne est nommée d’abord et dit qu’un modèle l’a assistée ; <i>personne</i> si aucun modèle n’est nommé ; <i>on ne sait pas</i> s’il ne nomme ni l’un ni l’autre (« project verification pass »). « Non indépendant » et « agent qui travaille pour l’auteur » sont repérés par une recherche de mots dans <code>by</code> et <code>note</code> : ce sont des bornes basses. Compter par document ou par cible donne d’autres totaux. La règle est dans {gh('docs/_method_page.py')}.</p>
+<p class="cmuted"><b>Comment ces chiffres sont comptés.</b> Une entrée notée est un élément de <code>outcome.texts</code> dans la fiche <code>profile.json</code> d’une cible qui porte un <code>reading_review</code>, quel que soit son état. Seuls les fichiers <code>targets/&lt;dossier&gt;/profile.json</code> sont comptés. Le signataire est classé d’après le champ <code>by</code> : <i>modèle</i> s’il nomme un modèle d’IA, un agent ou une session d’IA et qu’aucune personne n’est nommée d’abord ; <i>personne assistée d’un modèle d’IA</i> si une personne est nommée d’abord et dit qu’un modèle d’IA l’a assistée ; <i>personne</i> si aucun modèle n’est nommé ; <i>on ne sait pas</i> s’il ne nomme ni l’un ni l’autre (« project verification pass »). « Non indépendant » et « agent qui travaille pour l’auteur » sont repérés par une recherche de mots dans <code>by</code> et <code>note</code> : ce sont des bornes basses. Compter par document ou par cible donne d’autres totaux. La règle est dans {gh('docs/_method_page.py')}.</p>
 
 <h3 id="signes">Un niveau de vérification : déchiffrement par IA, vérifié par une personne sur un échantillon de signes</h3>
 <p>Entre aucune vérification et une relecture complète sur les images, une lecture peut porter le niveau <b>Déchiffrement par IA, vérifié par une personne sur un échantillon de signes</b>. Un modèle d’IA a transcrit et déchiffré le texte. Une personne a ensuite choisi, à l’aveugle, la forme qu’elle voit pour un ensemble de signes, sur une planche de relecture :</p>
@@ -728,7 +711,7 @@ def page_fr(c, queue, names):
 <li>chaque question encadre un seul signe sur sa ligne. Les options sont des formes découpées dans le même document, plus « aucune / autre forme », « illisible » et « pas un signe », qui laissent le mot marqué. Aucune glose, lecture, valeur ni aucun lieu n’est montré ;</li>
 <li>au moins deux contrôles à réponse connue sont mêlés aux questions, pris à des endroits aussi difficiles que les cibles. La correspondance reste privée jusqu’à l’export des réponses.</li>
 </ul>
-<p>La fiche (<code>sign_check</code> dans <code>profile.json</code>) donne la date ; qui a répondu, et si cette personne est du projet ou extérieure ; ce qu’un modèle a fait (écrit la règle, découpé les vignettes, construit la planche, dépouillé les réponses, interprété les remarques libres) ; combien de signes ont été vérifiés et comment ils ont été choisis (une section des NOTES de la cible) ; combien de contrôles ont réussi ; et les résultats : tels que transcrits, corrigés, non résolus, non comptés. La page d’une lecture le dit en une phrase, par exemple : « 9 signes douteux vérifiés à l’aveugle par un membre du projet, sur une planche construite et dépouillée par un modèle d’IA ; règle dans les NOTES ; contrôles 2 sur 2 ; 2 tels que transcrits, 7 corrigés, 1 non compté (vignette fautive) ».</p>
+<p>La fiche (<code>sign_check</code> dans <code>profile.json</code>) donne la date ; qui a répondu, et si cette personne est du projet ou extérieure ; ce qu’un modèle d’IA a fait (écrit la règle, découpé les vignettes, construit la planche, dépouillé les réponses, interprété les remarques libres) ; combien de signes ont été vérifiés et comment ils ont été choisis (une section des NOTES de la cible) ; combien de contrôles ont réussi ; et les résultats : tels que transcrits, corrigés, non résolus, non comptés. La page d’une lecture le dit en une phrase, par exemple : « 9 signes douteux vérifiés à l’aveugle par un membre du projet, sur une planche construite et dépouillée par un modèle d’IA ; règle dans les NOTES ; contrôles 2 sur 2 ; 2 tels que transcrits, 7 corrigés, 1 non compté (vignette fautive) ».</p>
 <p>Une planche n’atteint le niveau qu’avec au moins {SIGN_MIN_CONTROLS} contrôles, tous réussis, et au moins {SIGN_MIN_SIGNS} signes cibles une fois retirées les réponses touchées par une vignette fautive. Une réponse « aucune / autre » à un contrôle compte comme un échec. Ce qu’une réponse contredit est d’abord recodé ou marqué dans la lecture.</p>
 <p><b>Le niveau dit comment une lecture a été vérifiée, pas quelle part en est lue.</b> Il ne change jamais la classe, l’état ni la part lue : une lecture peut le porter et garder l’état <code>read in part</code>. Il vérifie la forme des signes, pas la clé, la valeur d’un code ni la lecture dans son ensemble. Les signes sont choisis parce qu’ils sont douteux : c’est un diagnostic, pas un échantillon tiré au hasard, et il ne dit rien des signes qui n’ont pas été montrés. Deux contrôles réussis disent peu de chose à eux seuls : un vérificateur qui a raison une fois sur deux les réussit tous les deux une fois sur quatre. Ce n’est pas une <code>human_check</code>, que le schéma définit comme une vérification sans aide de l’IA.</p>
 <p>Les premières lectures à le porter sont celles dont la clé a été construite sur une partie du matériau (le document ou des lettres sœurs du même chiffre) et a réussi un test sur un passage qui n’a pas servi à la construire, contre un seuil écrit d’abord ; la page de la lecture donne l’historique des essais. {n(c['sc_profiles'])} fiches portent une <code>sign_check</code> ({n(c['sc'])} planches, dont {n(c['sc_level'])} au niveau et {n(c['sc_external'])} remplies par une personne extérieure au projet).</p>
@@ -740,11 +723,9 @@ def page_fr(c, queue, names):
 {rc}<p><b>L’intégration.</b> Une modification d’un résultat entre dans le dépôt par une demande de fusion approuvée par un mainteneur qui n’en est pas l’auteur. Les règles GitHub de la branche <code>main</code> l’imposent ({gh('.github/CODEOWNERS', 'CODEOWNERS')}). CONTRIBUTING demande aussi que les deux contrôles passent. Les sessions du propriétaire du dépôt envoient aussi directement sur <code>main</code> : pour elles, ces règles sont une convention.</p>
 
 <h2 id="ia"><span class="num">10</span> La part de l’IA</h2>
-<p>Les fiches nomment les modèles qui ont fait le travail (<code>conditions.models</code>). Elles disent ce qu’a fait la personne (<code>conditions.human_role</code>) : fournir des images ou des accès, indiquer une source, corriger une lecture.</p>
-{models}
-<p>Une fiche peut nommer plusieurs modèles.</p>
+<p>Les fiches nomment les modèles d’IA qui ont fait le travail (<code>conditions.models</code>). Elles disent ce qu’a fait la personne (<code>conditions.human_role</code>) : fournir des images ou des accès, indiquer une source, corriger une lecture.</p>
 <p>Les scripts, les clés et les transcriptions sont versionnés. Le README donne les commandes qui reproduisent deux résultats.</p>
-<p>Une étape faite par un modèle ne peut pas être rejouée à l’identique : transcrire une image, proposer une valeur de code d’après le contexte. Les modèles sont propriétaires.</p>
+<p>Une étape faite par un modèle d’IA ne peut pas être rejouée à l’identique : transcrire une image, proposer une valeur de code d’après le contexte. Les modèles sont propriétaires.</p>
 <p>Le coût de chaque résultat (usage des modèles, argent, temps humain) n’est pas publié.</p>
 
 <h2 id="corrections"><span class="num">11</span> Corrections et contestations</h2>

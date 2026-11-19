@@ -110,7 +110,7 @@ class Counts(unittest.TestCase):
             main = page.split('<main>')[1]
             self.assertNotIn('{', main.replace('{+...}', ''))
             self.assertEqual(main.count('<table>'), main.count('</table>'))
-            self.assertEqual(main.count('<table>'), 8)
+            self.assertEqual(main.count('<table>'), 7)  # the model-family table went (review of #789, point 2)
             self.assertIn('callout glance', main)
             # "human review" appears only to say that the model's grade is not one
             self.assertEqual(main.count('human review'), main.count('not a human review'))
