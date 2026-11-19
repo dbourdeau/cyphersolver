@@ -460,7 +460,12 @@ def review(work, n=40, seed=3):
              "<p>For each item: find the spot by its context and note whether the verdict is right.</p>"]
     for v in vs[:n]:
         it = items[v["id"]]
-        b64 = base64.b64encode(open(os.path.join(work, "crops", it["id"] + ".jpg"), "rb").read()).decode()
+        im = Image.open(os.path.join(work, "crops", it["id"] + ".jpg"))
+        im.thumbnail((1100, 1100))  # keep the sheet small enough to send and open on a phone
+        import io
+        buf = io.BytesIO()
+        im.convert("RGB").save(buf, "JPEG", quality=62)
+        b64 = base64.b64encode(buf.getvalue()).decode()
         parts.append(f"<div class=it><h3>{it['id']} &middot; {it['doc']} p{it['page']} line {it['line']}/"
                      f"{it['lines_on_page']} &middot; {it['kind']}</h3><p>before <code>{it['left']}</code> &nbsp; "
                      f"after <code>{it['right']}</code></p><p>human <code>{it['human'] or '(nothing)'}</code> &nbsp; "
@@ -470,14 +475,137 @@ def review(work, n=40, seed=3):
     print("wrote", os.path.join(work, "review.html"))
 
 
+APP_HTML = r"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Cipher spot-check</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1f;--mute:#6b6b70;--line:#d9d7d2;--acc:#2f5bd3;--ok:#1f8a4c;--warn:#b25b00}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--card:#1e1e21;--ink:#ececef;--mute:#9a9aa1;--line:#34343a;--acc:#7ea2ff;--ok:#4fc07f;--warn:#f0a050}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;z-index:2}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:6px}.bar>i{display:block;height:100%;background:var(--acc)}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.meta{color:var(--mute);font-size:14px}.ctx{font:20px/1.6 ui-monospace,Consolas,monospace;margin:10px 0;word-break:break-all}
+.ctx b{background:var(--acc);color:#fff;border-radius:4px;padding:0 6px}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:14px 0}
+button{font:inherit;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;text-align:left}
+button:hover{border-color:var(--acc)}button.sel{border:2px solid var(--acc);background:color-mix(in srgb,var(--acc) 12%,var(--card))}
+.read{font:22px ui-monospace,Consolas,monospace;display:block;margin-top:4px}.k{color:var(--mute);font-size:13px}
+img{width:100%;border-radius:8px;border:1px solid var(--line);margin-top:8px}
+nav{display:flex;gap:10px;justify-content:space-between;margin-top:12px}nav button{text-align:center;flex:1}
+textarea{width:100%;height:160px;font:13px ui-monospace,monospace;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px}
+.done{color:var(--ok)}.hint{color:var(--mute);font-size:14px;margin:6px 0 0}
+</style></head><body>
+<header><b>Cipher spot-check</b> <span class="meta" id="prog"></span><div class="bar"><i id="pbar"></i></div></header>
+<main>
+<div class="card" id="item"></div>
+<nav><button id="prev">&larr; Back</button><button id="next">Next &rarr;</button></nav>
+<div class="card" style="margin-top:16px"><b>Results</b>
+<p class="hint">Answers are kept in this browser as you go. When you are done, use Copy and paste the text into the chat, or Download the file.</p>
+<nav><button id="copy">Copy results</button><button id="dl">Download results</button></nav>
+<textarea id="out" readonly></textarea></div>
+</main>
+<script>
+const ITEMS = __ITEMS__;
+const KEY = "cipher-spotcheck-" + __STAMP__;
+let ans = {}; try { ans = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+let i = 0; { const f = ITEMS.findIndex(x => !(x.id in ans)); if (f >= 0) i = f; }
+const $ = id => document.getElementById(id);
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(ans)); } catch (e) {} render(); }
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function show(s){ return s === "" ? "(nothing)" : s; }
+function render(){
+  const it = ITEMS[i], a = ans[it.id];
+  const n = Object.keys(ans).length;
+  $("prog").textContent = `item ${i+1} of ${ITEMS.length} · ${n} answered`;
+  $("pbar").style.width = (100*n/ITEMS.length) + "%";
+  const opt = (k, label, read, key) => `<button data-v="${k}" class="${a===k?'sel':''}"><span class="k">${key} · ${label}</span>${read!==null?`<span class="read">${esc(show(read))}</span>`:''}</button>`;
+  $("item").innerHTML = `<div class="meta">${esc(it.doc)} · page ${it.page}, about line ${it.line} of ${it.lines}</div>
+    <div class="ctx">${esc(it.left)}<b>?</b>${esc(it.right)}</div>
+    <div class="hint">Find this spot in the crop by the signs around it. Which reading is written where the ? is?</div>
+    <div class="opts">${opt("A","Reading A",it.A,"1")}${opt("B","Reading B",it.B,"2")}${opt("neither","Neither",null,"3")}${opt("unclear","Can't tell",null,"4")}</div>
+    <img src="data:image/jpeg;base64,${it.img}" alt="page crop">`;
+  document.querySelectorAll("#item button").forEach(b => b.onclick = () => { ans[it.id] = b.dataset.v; save(); if (i < ITEMS.length-1) { i++; render(); window.scrollTo(0,0); } });
+  $("out").value = JSON.stringify({sheet: __STAMP__, answers: ITEMS.filter(x => x.id in ans).map(x => ({id: x.id, choice: ans[x.id]}))});
+  $("prev").disabled = i === 0; $("next").disabled = i === ITEMS.length-1;
+}
+$("prev").onclick = () => { if (i > 0) { i--; render(); } };
+$("next").onclick = () => { if (i < ITEMS.length-1) { i++; render(); } };
+$("copy").onclick = async () => { try { await navigator.clipboard.writeText($("out").value); $("copy").textContent = "Copied"; } catch (e) { $("out").select(); document.execCommand("copy"); $("copy").textContent = "Copied"; } };
+$("dl").onclick = () => { const b = new Blob([$("out").value], {type: "application/json"}); const u = URL.createObjectURL(b); const l = document.createElement("a"); l.href = u; l.download = "spotcheck_results.json"; l.click(); };
+document.addEventListener("keydown", e => { const m = {"1":"A","2":"B","3":"neither","4":"unclear"}[e.key];
+  if (m) { ans[ITEMS[i].id] = m; save(); if (i < ITEMS.length-1) { i++; render(); } }
+  if (e.key === "ArrowRight") $("next").click(); if (e.key === "ArrowLeft") $("prev").click(); });
+render();
+</script></body></html>"""
+
+
+def app(work, n=40, splits=30, seed=11, out=None):
+    """Interactive blind spot-check app (local HTML). The person sees the crop and the two readings as A and B, never
+    which is human, AI or the adjudicators' choice. Key for decoding is written to <out>.key.json next to it."""
+    import io
+    data = json.load(open(os.path.join(ADJ, "items.json"), encoding="utf-8"))
+    items = {it["id"]: it for it in data["items"]}
+    vs = {json.loads(l)["id"]: json.loads(l) for l in open(os.path.join(ADJ, "verdicts.jsonl"), encoding="utf-8")}
+    rng = random.Random(seed)
+    agreed = [k for k, v in vs.items() if v["side"] != "split"]
+    split = [k for k, v in vs.items() if v["side"] == "split" and items[k]["kind"] == "dispute"]
+    rng.shuffle(agreed)
+    rng.shuffle(split)
+    chosen = [(k, "random_agreed") for k in agreed[:n]] + [(k, "split") for k in split[:splits]]
+    rng.shuffle(chosen)
+    rows, key = [], {}
+    for k, why in chosen:
+        it = items[k]
+        im = Image.open(os.path.join(work, "crops", k + ".jpg"))
+        im.thumbnail((1100, 1100))
+        buf = io.BytesIO()
+        im.convert("RGB").save(buf, "JPEG", quality=62)
+        human_first = rng.random() < 0.5
+        A, B = (it["human"], it["ai"]) if human_first else (it["ai"], it["human"])
+        key[k] = {"A": "human" if human_first else "ai", "set": why, "adjudicated": vs[k]["side"]}
+        rows.append({"id": k, "doc": it["doc"], "page": it["page"], "line": it["line"], "lines": it["lines_on_page"],
+                     "left": it["left"], "right": it["right"], "A": A, "B": B,
+                     "img": base64.b64encode(buf.getvalue()).decode()})
+    stamp = json.dumps(f"s{seed}-{len(rows)}")
+    out = out or os.path.join(HERE, "review_local", "spotcheck.html")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    open(out, "w", encoding="utf-8").write(APP_HTML.replace("__ITEMS__", json.dumps(rows)).replace("__STAMP__", stamp))
+    json.dump(key, open(out + ".key.json", "w"), indent=1)
+    print("wrote", out, f"({len(rows)} items: {min(n, len(agreed))} agreed, {min(splits, len(split))} split)")
+
+
+def score_app(results_file, key_file=None):
+    """Compare the person's blind answers with the adjudicators (agreed items) and record their calls on splits."""
+    key_file = key_file or os.path.join(HERE, "review_local", "spotcheck.html.key.json")
+    key = json.load(open(key_file))
+    res = json.load(open(results_file, encoding="utf-8"))
+    agree = collections.Counter()
+    calls = {}
+    for a in res["answers"]:
+        k = key[a["id"]]
+        ch = a["choice"]
+        side = {"A": k["A"], "B": "ai" if k["A"] == "human" else "human"}.get(ch, ch)
+        calls[a["id"]] = side
+        if k["set"] == "random_agreed":
+            agree["agree" if side == k["adjudicated"] else ("person unsure" if side == "unclear" else "disagree")] += 1
+    split_calls = collections.Counter(calls[i] for i in calls if key[i]["set"] == "split")
+    print("agreed items, person vs adjudicators:", dict(agree))
+    print("split items, person's calls:", dict(split_calls))
+    json.dump({"agreement": dict(agree), "split_calls": dict(split_calls), "calls": calls},
+              open(os.path.join(ADJ, "person_check.json"), "w"), indent=1)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("step", choices=["extract", "batches", "apply", "review"])
+    ap.add_argument("step", choices=["extract", "batches", "apply", "review", "app", "score-app"])
     ap.add_argument("work")
     ap.add_argument("--threshold", type=int)
     ap.add_argument("--calib", type=int, default=60)
     ap.add_argument("--size", type=int, default=25)
     ap.add_argument("--n", type=int, default=40)
+    ap.add_argument("--splits", type=int, default=30)
     a = ap.parse_args()
     {"extract": lambda: extract(a.work, a.threshold, a.calib), "batches": lambda: batches(a.work, a.size),
-     "apply": lambda: apply(a.work), "review": lambda: review(a.work, a.n)}[a.step]()
+     "apply": lambda: apply(a.work), "review": lambda: review(a.work, a.n),
+     "app": lambda: app(a.work, a.n, a.splits), "score-app": lambda: score_app(a.work)}[a.step]()
