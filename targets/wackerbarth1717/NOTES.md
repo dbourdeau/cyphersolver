@@ -226,6 +226,27 @@ checks how digits are written, not key values.
   are shut up with him in Stralsund and should be destroyed now; Wackerbarth will write to General Dücker and ask Count Virmond,
   the Emperor's minister, to come, so that peace may be made under the Emperor's mediation.
 
+**Sign check W1 (letter of 20 November 1715), recorded 19 Nov 2026** (`outcome.sign_check`; files in `sign_check/`).
+Level: "AI decipherment, human-checked on a sample of signs". It checks how digits are written, not key values or the
+reading, and it changes neither the class nor the read share (the letter stays read in part, 741 of 922 under the strict rule).
+- **Who did what.** The checker is Brice Dudout, the contributor of this reading (a project member, not an independent
+  reader). He answered blind: one boxed digit per question, two or three digit shapes cut from sure words of the same copyist,
+  plus "none / other shape", "illegible" and "not a sign"; no value, gloss or word shown. An AI model (Claude Opus 5.5) wrote
+  the rule, chose the digits by it, cut the thumbnails, built the sheet and scored the answers. The answer key stays private;
+  its content for each question is in `sign_check/sheet-W1-results.tsv`. No scan or thumbnail is committed.
+- **Rule.** `sign_check/sheet-W1-rule.md` (in French, as written; SHA-256 463ae30674278151f9b0acee6fb8fb5fc541545c21862027ad12f3f7dcf16402),
+  written and hashed on 11 Nov 2026 before the sheet was built: only digits whose answer changes the class of a word (sure,
+  probable or restored), two controls in sure words on two pages. It dates the letter "20/10/1715", the first reading of the
+  month, corrected afterwards (above). The hash was not published before the answers, so that timing is by the contributor's record.
+- **Answers.** `sign_check/sheet-W1-answers.json`, exported 2026-11-11T21:50:19Z (SHA-256 4a81bc83a4919fc17c5a641c29c00643d2e07564981780086a60966e2a923510);
+  no remark. Controls 2 of 2. Nine target digits: three corrected (embrasser, mal, beaucoup now sure), six as transcribed.
+- **Moved from `human_check`.** Until 19 Nov 2026 the profile recorded this sheet as `outcome.human_check`. The schema
+  defines a human_check as a check without AI help, and an AI model built and scored this sheet, so it is now a `sign_check`.
+- **Threshold of the key test.** The letter's measurement (S = 0.945, threshold 0.77, best witness 0.730) passes by its own
+  threshold, written before the test, with the deviations declared above; its margin over the best witness (0.215) is under
+  the +0.30 applied elsewhere. By the owner's decision of 19 Nov 2026, a pre-registered threshold governs when it was written
+  before the test and its deviations are declared in NOTES; the +0.30 margin is the project's default only where none was set.
+
 ## Historical context (the contributor's check of 11 Nov 2026 against reference works; not re-checked at integration)
 
 A historical article on both letters, with sources, is published by the contributor at
