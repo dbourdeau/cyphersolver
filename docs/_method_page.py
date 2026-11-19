@@ -477,7 +477,9 @@ def page_en(c, queue, names):
 <h2 id="decoded-is-not-read"><span class="num">06</span> A decryption is not yet a reading</h2>
 <p>A key that turns the cipher into words does not yet give a text. Each document in a record carries one of four states.</p>
 {state_t}
-<p><b>The share of words read</b> (<code>read_share</code>) is 1 minus the share of holes. A hole is an unread word, a guessed word <code>[?word]</code> or a supplied word <code>[word]</code>. By the README, a script counts it from the reading file.</p>
+<p><b>The share of words read</b> (<code>read_share</code>) counts cipher words only. In a letter that mixes clear text and cipher, it is measured over the words written in cipher; the clear words around them are neither read nor unread and stay out of both numerator and denominator.</p>
+<p>Only sure words count as read. A word is read when the key gives it, or the plain text beside it does, with nothing supplied. A probable word (<code>&#123;x&#125;</code>), an inferred or supplied word, a grade-M word and an unvalued code are holes, and so is a letter supplied inside a word. <code>read_share</code> is 1 minus the share of holes among the cipher words. By the README, a script counts it from the reading file.</p>
+<p>The 95% bar applies to the cipher words of each document. <b>Floor for short texts:</b> a document of fewer than 40 cipher words is <code>read</code> when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more. The floor never applies to a text of 40 words or more, and the page and the record state the number of holes and that the floor was used.</p>
 <p>This number counts the holes the reader marked. It does not say whether the words read are right.</p>
 <p>{n(c.get('read_no_share', 0))} documents in state <code>read</code> have no <code>read_share</code> recorded. For them, the 95% is not measured document by document.</p>
 <p>The 95% bar is the project&rsquo;s own. No standard of the field sets one.</p>
@@ -674,7 +676,9 @@ def page_fr(c, queue, names):
 <h2 id="dechiffre-n-est-pas-lu"><span class="num">06</span> Un déchiffrement n’est pas encore une lecture</h2>
 <p>Une clé qui change le chiffré en mots ne donne pas encore un texte. Chaque document d’une fiche porte l’un de quatre états. Les noms sont ceux des fiches, en anglais.</p>
 {state_t}
-<p><b>La part de mots lus</b> (<code>read_share</code>) vaut 1 moins la part des trous. Un trou est un mot non lu, un mot conjecturé <code>[?mot]</code> ou un mot restitué <code>[mot]</code>. Selon le README, un script la compte sur le fichier de lecture.</p>
+<p><b>La part de mots lus</b> (<code>read_share</code>) ne compte que les mots chiffrés. Dans une lettre qui mêle texte clair et chiffre, elle se mesure sur les mots écrits en chiffre ; les mots en clair qui les entourent ne sont ni lus ni non lus et restent hors du numérateur comme du dénominateur.</p>
+<p>Seuls les mots sûrs comptent comme lus. Un mot est lu quand la clé le donne, ou le texte clair voisin, sans rien restituer. Un mot probable (<code>&#123;x&#125;</code>), un mot inféré ou restitué, un mot de note M et un code non valué sont des trous, de même qu’une lettre restituée à l’intérieur d’un mot. <code>read_share</code> vaut 1 moins la part des trous parmi les mots chiffrés. Selon le README, un script la compte sur le fichier de lecture.</p>
+<p>Le seuil de 95&nbsp;% s’applique aux mots chiffrés de chaque document. <b>Plancher des textes courts :</b> un document de moins de 40 mots chiffrés est <code>read</code> quand ses trous font au plus 5&nbsp;% de ses mots chiffrés ou au plus 2 mots, selon ce qui en permet le plus. Le plancher ne s’applique jamais à un texte de 40 mots ou plus, et la page et la fiche indiquent le nombre de trous et que le plancher a servi.</p>
 <p>Ce nombre compte les trous que le lecteur a marqués. Il ne dit pas si les mots lus sont justes.</p>
 <p>{n(c.get('read_no_share', 0))} documents à l’état <code>read</code> n’ont pas de <code>read_share</code> enregistré. Pour eux, les 95&nbsp;% ne sont pas mesurés document par document.</p>
 <p>Le seuil de 95&nbsp;% est propre au projet. Aucune norme du domaine n’en fixe un.</p>
