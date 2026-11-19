@@ -1,0 +1,178 @@
+{
+ "schema_version": 1,
+ "target": "baluze1709",
+ "title": "Baluze 1709: Étienne Baluze (Paris) to the cardinal de Bouillon, 10 May 1709 (Médiathèque Georges-Delaw, Sedan, fonds Gourjault, carton 199, piece 8): cipher transcribed, contemporary decipherment aligned, barred groups found to be nulls, partial key",
+ "documents": [
+  {
+   "id": "gourjault-199-8",
+   "read": "not read",
+   "shelfmark": "Médiathèque Georges-Delaw, Sedan, fonds Gourjault, carton 199, piece 8, ff. 24-26",
+   "date": "10 May 1709",
+   "year": 1709,
+   "country": "France",
+   "route": "Paris -> the cardinal de Bouillon",
+   "language": "French",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Contemporary interlinear decipherment, word by word, over every cipher passage except '66 + 95', 'J+' and the end of l. 8.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 122,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "photographs sent by the Médiathèque Georges-Delaw (not published)",
+    "image_quality": "good",
+    "notes": "doubtful shapes settled by a blind reading sheet answered by Brice Dudout (18 Nov 2026, two controls passed); tokens include barred groups and person signs"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "syllabic",
+   "homophonic"
+  ],
+  "summary": "Two-digit groups for letters and syllables with homophones, barred groups as nulls, and a small nomenclator of signs for persons (ɸ, +, J in combination)",
+  "symbol_kind": "digits and symbols",
+  "distinct_symbols": 60,
+  "diacritics": {
+   "used": true,
+   "note": "a bar over a group makes it a null (the decipherer writes nothing over it); possible exception 35 in 'vont'"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "names"
+   ]
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "random"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary interlinear decipherment on the letter (carton 199, piece 8), word by word. Nothing on Gourjault, Baluze, Bréant, Réveillon or Sedan in catalogue.json or research/leads.json (main 42068aa8, 19 Nov 2026), in targets/ or in the open pull requests (the only Baluze hits are BnF fonds Baluze shelfmarks of other targets); no printed edition of the decipherment found by web search (18 Nov 2026).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout obtained the photographs, chose the target and answered a blind reading sheet on doubtful shapes (two controls passed). AI agents transcribed, aligned the decipherment, inferred the partial key and wrote up.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-18",
+  "last_date": "2026-11-19"
+ },
+ "solution": [
+  {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "what": "Cipher of ff. 24-25 transcribed from the library's photographs (about 100 groups and signs); blind reading sheet: 67 (not 65) in 'perd', 57 and 46 confirmed, the 0 of '0 ɸ' a separate digit, the sign after + in '+J' not identified.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "Barred groups are nulls: the decipherer writes nothing over them and puts dashes in his clear at their places; with them removed, the words of the decipherment fit the groups (perd = 66 67, si viste = 82 92 86, franchement = 17 75 35 06 36 51). One possible exception (35 in 'vont').",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "manual reconstruction"
+   ],
+   "what": "Partial key inferred from the decipherment: 5 values sure (16 de, 34 n, 56 ne, 75 ra, 76 re), 31 probable from one word, 4 conflicts (95, 91, 57, 36); 4 person signs fixed by the gloss (Bignon, the chancellor, Bouillon, Baluze), J+ and '66 + 95' unglossed. The conflicts cannot be settled from one letter.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "literature search",
+   "what": "catalogue.json, research/leads.json, targets and open pull requests searched for Gourjault, Baluze, Bréant, Réveillon, Sedan: nothing; web search: no edition of the decipherment.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The partial key is inferred from the contemporary interlinear decipherment of the same letter, kept in two layers: what the decipherment fixes (which groups make which word; the person signs) and what is inferred (group values: 5 sure, 31 probable, 4 in conflict). The content is the decipherment's (existing); no reading of ours is claimed and none is counted.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "first_break": false,
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "mixed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the interlinear decipherment of the time over the cipher passages; the partial key was inferred from it",
+    "date": "1709"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "cipher of ff. 24-25 transcribed; the contemporary decipherment aligned on the groups; barred groups shown to behave as nulls; partial key in two layers (key.tsv). Content existing, not a solution. Images: Médiathèque Georges-Delaw, Sedan (fonds Gourjault, cartons 170 and 199), obtained through the Société d'histoire et d'archéologie du Sedanais (SHAS). The form of this credit has been asked of the SHAS and will be adjusted to its reply.",
+    "date": "2026-11-18"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "31 values from one word only and 4 conflicts (95, 91, 57, 36)",
+    "blocker": "too-short"
+   },
+   {
+    "item": "groups before the person signs (61, 64, 70, 96, 97, 99), J+ and 66 + 95",
+    "blocker": "too-short"
+   },
+   {
+    "item": "one group struck through (l. 10) and one under a blot (l. 8)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "clear text of ff. 24-26 not transcribed in full",
+    "blocker": "not-attempted"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "gourjault-199-8",
+    "label": "Baluze to the cardinal de Bouillon, Paris, 10 May 1709",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "language": "fr",
+    "state": "decoded, not read",
+    "summary": "Baluze has shown the cardinal's letter to the abbé Bignon, who will serve him with the chancellor; but things do not go so fast, and the chancellor must be brought back from his prejudices.",
+    "note": "decryption.txt is the contemporary decipherment set against the groups, not a decryption by this project: the key is partial. The summary is from the decipherment."
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "No image in the repository: the library's photographs are for research use only. Images: Médiathèque Georges-Delaw, Sedan (fonds Gourjault, cartons 170 and 199), obtained through the Société d'histoire et d'archéologie du Sedanais (SHAS). The form of this credit has been asked of the SHAS and will be adjusted to its reply."
+ }
+}
