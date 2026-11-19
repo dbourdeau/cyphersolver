@@ -8,7 +8,7 @@ Nos ambassadeurs ont besoin de sçavoir si avec *les trouppes que vous avez à K
 
 P.-S. Si *par hazard M. de Cologne s'accomodoit avec les Ennemys vous en* seriez *advertis* et je vous *prie de ne point faire d'esclat de ceci ; vous sçaurez tout ce qui se passera ici*.
 
-Notes. "une" (before "aproche") and "à" (before "tourner") are the decipherer's words with no cipher group under them; they are not cipher words. The passage "M. de Cologne avoit à tourner casaque" is the one the decipherer struck through ("tourner caza que"); his clear agrees with the key for "tourner", and {avoit} (a-o-i-t, the v not enciphered) and {casaque} (74 ca, 319 sa/za?, 236 que, both values inferred) are counted probable.
+Notes. "une" (before "aproche") and "à" (before "tourner") are the decipherer's words with no cipher group under them; they are not cipher words. The passage "M. de Cologne avoit à tourner casaque" is the one the decipherer struck through ("tourner caza que"); his clear agrees with the key for "tourner", and {avoit} (a-o-i-t, the v not enciphered) and {casaque} (74 ca, 319 sa/za?, 236 que; 74 and 319 inferred from the approximately alphabetical order) are counted probable.
 
 ## 8 January 1674 (carton 170, piece 4, ff. 28-29)
 
@@ -22,4 +22,4 @@ J'ay receu la lettre que vous m'avez fait l'honneur de m'escrire du 30 du mois p
 | 8 Jan 1674 | 67 | 149 | 67 | 0 | 0 | 0 | 1.000 |
 | both | 163 | 394 | 161 | 2 | 0 | 0 | 0.988 |
 
-A word is sure when the contemporary decipherer, the key and the context agree. Encipherer's slips that leave the word certain (one extra i in "veuille", one extra e in "sçaurez", the i of "faict" and the u of "j(u)ste", "j(u)sques" not enciphered) do not make it doubtful.
+A word is sure when the contemporary decipherer, the key and the context agree: "sure" means agreement with the contemporary gloss plus sense, not an independent test of the key (see NOTES.md). The cipher digits are an AI transcription, with a human blind check of the doubtful shapes only. Encipherer's slips that leave the word certain (one extra i in "veuille", one extra e in "sçaurez", the i of "faict" and the u of "j(u)ste", "j(u)sques" not enciphered) do not make it doubtful.
