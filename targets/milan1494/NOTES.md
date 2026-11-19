@@ -111,7 +111,7 @@ Both reading files were read as sentences and a `reading_review` recorded for ea
 
 ## Niccolini's bare passages, catalogue 2380 (19 Nov 2026, Malcolm McBratney with Claude): attempted, not read
 
-As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MAP LXXIV (docs 42 c. 90r, 49 c. 104r, 81 c. 177r, 90 c. 200r; Aug 1492 - Jan 1493) were transcribed blind with neutral labels, frozen and decoded once with `aaymeloglu/key.json` unchanged. Files and method in `niccolini/README.md`. No person has checked the transcriptions.
+As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MAP LXXIV (docs 42 c. 90r, 49 c. 104r, 81 c. 177r, 90 c. 200r; Aug 1492 - Jan 1493) were transcribed blind with neutral labels, frozen and decoded once with `aaymeloglu/key.json` unchanged. Files and method in `niccolini/README.md`. No person has checked the transcriptions. This blind pass supersedes our sighted working decode of 10 Nov 2026 (earlier record: Zenodo doi:10.5281/zenodo.24267269, unfiled), described on #589 as read: docs 42, 81 and 90 now score 61.5%, 50.0% and 33.3%, so those readings are withdrawn.
 
 - Strict judge (word units): doc 42 16/26 = 61.5%, doc 49 0/5, doc 81 4/8 = 50.0%, doc 90 2/6 = 33.3%. All below our 65% line: attempted, not read.
 - Shuffle control (5,000 at seeds 20261112 and 7): doc 42 0 and 0, doc 81 0 and 1; docs 49 and 90 fail (14/10, 158/139).
