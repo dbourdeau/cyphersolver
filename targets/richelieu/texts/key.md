@@ -32,3 +32,36 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 | 59 | la princesse Marie (de Mantoue) | 92 | la Lorraine |
 
   Cleartext jargon also used: *Castor* = le Roi, *Lysandre* = la Reine mère (Avenel).
+
+## Extension from fr. 3828, 3825, 3835 (Nov 2026)
+
+Added by Brice Dudout (with Claude Opus 5.5), 19 Nov 2026, when the key above was applied unchanged to the nine
+sibling letters that Avenel prints with their figures (t. III, nos. CXIX, CXXXV, CXLVI, CXLVII, CLIII, CLIV, CLV,
+CLVIII, CLXVII; `fr3828_reading.md`, `fr3828_method.md`). The letter values 10–38 and the word codes 39, 40, 42 are
+unchanged. The entries below are **taken from Avenel's footnotes**, each at a place where his note glosses the figure
+and the decoded runs next to it agree with the note; none comes from the two letters held out for the test (CLIV,
+CLV). Like the earlier nomenclator entries, they rest on Avenel, not on the ciphertext alone.
+
+| Code | Meaning | Source (Avenel t. III) |
+|---|---|---|
+| 41 | *que* (word code) | CLXVII n. 9: 39 41 59 … = "et que la princesse de Mantoue s'en allast" |
+| 55 | M. le Prince (Condé) | CLIII n. 5 |
+| 61 | le duc d'Épernon | CLIII n. 7 |
+| 62 | Montmorency | CLIII n. 10 (Avenel: the value is sure, though Ventadour made the *dégât* of Castres) |
+| 67 | Calori | CLXVII n. 2 |
+| 68 | le cardinal de Bérulle | CXIX n. 4; CLXVII n. 4 |
+| 69 | le garde des sceaux (Michel de Marillac) | CXIX n. 13; CXLVI n. 12 |
+| 95 | Nismes (Nîmes) | CLIII n. 9 |
+| 96 | Castres | CLIII n. 8 |
+| 97 | Montauban | CLIII n. 5 |
+
+Usages noted, not new values:
+
+- **40 = de** also stands for the syllable *de/dé* inside words: *bor-de-aus*, *ambassa-de*, *ambassa-de-eurs* (sic,
+  40 followed by 30 = e), *s'acommo-de*, *se dé-portast*, *dé-livrer*, *d'Elbeuf* (40 + lbeuf).
+- **20** (d) is used as the **number** in "le 20 mai" (CLIII, CLIV, CLV twice); Avenel, CLIII n. 12: "en traduisant
+  dans cette phrase 20 par d, il n'y a pas de sens". The key is not changed; the reading marks these places.
+- **59**: "princesse Marie" (Marie de Gonzague) in CXXXV and CLXVII, as in the table above; in CLVIII Avenel glosses
+  it "M. de Mantoue" twice and calls it a slip of the secretary. Not settled: the table keeps "princesse Marie"; the
+  reading of CLVIII follows the gloss and marks it.
+- **84** "l'Angleterre" also gives "les Anglois" / "Angleterre" by context (CLIV nn. 4, 10–12, test letter; not added).
