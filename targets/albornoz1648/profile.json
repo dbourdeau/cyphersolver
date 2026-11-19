@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "osuna-ct2-d32",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "AHNOB, OSUNA,CT.2,D.32(1-2) (PARES 3939398), copy A images 2-3, copy B image 5",
    "date": "24 July 1648",
    "year": 1648,
@@ -264,7 +264,8 @@
    "kind": "verification",
    "what": "Claude Opus 5.5 (PR review on merge): D.32 graded A; the three key documents listed as not-prose texts.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), on reading.md: 123 of 134 cipher words sure (0.918); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -297,7 +298,7 @@
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.038; polyphony 0.0; 7 unread tokens left out; annealer on the real text from random keys reached -2.246"
   },
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "Key K2 rebuilt from another document in the same cipher (OSUNA,CT.11,D.1, 1649) and its contemporary plain copy, validated on held-out lines, then applied to the 1648 letter.",
@@ -305,9 +306,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.983,
+  "fraction_read": 0.918,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Copy B: 353 of 359 groups with a value (98.3%), about 5 of them probable; 6 unresolved. 6 of 136 words of the cipher portion contain a hole.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 123 of 134 cipher words of reading.md (the italic clear formulas left out); holes: so{b}re, Ve{o}, {Be}atitud, [que], [de], ‹74›, ‹el›, ‹A›s, ‹124› twice, ‹✗11›. Before: 353 of 359 cipher groups (0.983), counted in groups with probable groups as read.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -343,14 +344,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read",
+    "state": "read in part",
     "summary": "In 1648 Innocent X was renewing his nuncios. Philip IV wanted to keep his own: Giulio Rospigliosi, Archbishop of Tarsus, nuncio at Madrid since 1644 – the future Pope Clement IX. He wrote so to his ambassador to the Pope, Cardinal Gil de Albornoz, in a cipher nobody had read: “there can be no instrument more suitable” for the service of both courts, so the ambassador must not desist “in any case”. The letter survives in two ciphered copies with no decipherment; the key came from another paper in the same family archive, a chapter of a letter by Luis de Haro enciphered for Albornoz in 1649, whose plain-text copy was kept.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "reading.md read against translation.md and the decryption lines of copy B: three coherent sentences of chancery Spanish (the request on the Archbishop of Tarsus and the Pope's answer; the King's insistence that the ambassador press for Rospigliosi's retention and not desist; the order to report). The holes are the four code signs (74, underlined A, 124 twice, cross-11) and the doubtful \"el\"; four of them fall in the first sentence, which still parses (Veo [que] pasastis los oficios con Su Santidad, y lo que [el] respondió ...). The rest is continuous; probable readings {b}, {o}, {Be} and restorations [que], [de] are marked. Lines B09-B13 of the transcription (the reveal passage) were compared with image 5 at the published resolution and agree."
-    }
+    },
+    "read_share": 0.918,
+    "note": "18 Nov 2026, cipher words only, sure words only: 123 of 134 cipher words sure (91.8%); 3 probable-letter words, 2 restored and 6 unresolved groups (4 of them code signs) are holes; the clear opening and closing formulas (italics) are not counted. Before: about 0.98 of the cipher groups, probable groups counted as read."
    },
    {
     "doc": "osuna-ct11-d1",

@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "ahn-dc-193-n99",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,193,N.99 (PARES 5928106), views 25-42 (reports 18-55) and 52-53 (telegram)",
    "date": "27 January - 7 March 1866",
    "year": 1866,
@@ -40,7 +40,7 @@
   },
   {
    "id": "ahn-dc-193-n94",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Madrid, Archivo Histórico Nacional, DIVERSOS-COLECCIONES,193,N.94 (PARES 5855640), views 26, 43, 78, 87",
    "date": "January 1866",
    "year": 1866,
@@ -167,10 +167,11 @@
    ],
    "what": "Integration review (pull request #376): SHA-256 sums of frozen/ and retest/ checked; both held-out measurements re-run with frozen/measure.py and lang/lexicons/es.json.gz (0.981 vs 0.704, margin 0.277; 0.960 vs 0.699, margin 0.261), identical to MESURE.txt; decryption.txt reproduced exactly by frozen/decode_T.py with key.tsv; extent reclassed 'read' by the read bar (144 of 144 cipher words read as sense, no gap open), key kept 'partial'.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728): N.99 71/76 (0.934), N.94 54/68 (0.794); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Key rebuilt here from the cipher, with the clear words of the reports as context; two pre-registered held-out measurements (S33 of N.99, then new material N.94) fell short of the contributor's margin rule (0.277 and 0.261 < 0.30), so the key is 'partial' although it reads every run.",
@@ -178,9 +179,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.868,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md and reading_n94.md, counted per cipher word: 144 words in all (N.99 76: 71 certain, 5 probable; N.94 68: 54 certain, 14 probable), 0 restored, 0 unresolved, so 144/144 read as sense (probable words, a number corrected by sense, count as read, as in the read bar); certain only 125/144 = 0.868. Extent classed 'read' at integration (10 Nov 2026) by the read bar; the key state is recorded apart as 'partial' because it failed the contributor's own margin rule twice.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): N.99 71 of 76 cipher words certain, N.94 54 of 68; 125 of 144 in all (the counts already in NOTES). Before: 144 of 144 (1.0), probable counted as read.",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -233,15 +234,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.934,
     "summary": "Taulet, hunting the rebels of the January 1866 rising in the Priorato, reports that the brother-in-law of the rebel Saguete has brought him a dispatch and that they have come to an understanding; most people say Sagueta has gone to Madrid or Barcelona to obtain a pardon. The end-of-report runs give the day of the week. A telegram of 7 Mar 1866 orders Taulet to march to Cambrils with his first battalion and report when quartered.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-10",
      "note": "Read as sentences 9 Nov 2026 by one AI reader and rechecked 10 Nov 2026 before publication: every cipher run construes as Spanish inside the clear reports; 71 certain, 5 probable (one number corrected by sense each), 0 restored, 0 unresolved of 76. Grade B, read in part, because the key is partial by our own protocol (margin 0.277 < 0.30)."
-    }
+    },
+    "note": "18 Nov 2026, cipher words only, sure words only: 71 of 76 cipher words certain (93.4%); 5 probable are holes."
    },
    {
     "doc": "ahn-dc-193-n94",
@@ -251,15 +253,16 @@
     "reading": "reading_n94.md",
     "translation": "translation_n94.md",
     "language": "es",
-    "state": "read",
-    "read_share": 1.0,
+    "state": "read in part",
+    "read_share": 0.794,
     "summary": "A letter from Albarca (28 Jan 1866) promises to carry out a superior order and report the result, in answer to a dispatch received at 9 in the evening. A telegram of the Minister of War, forwarded by the Captain General, orders that no concession be made to the rebel Escoda, that he be judged according to the laws if arrested, that the prisoners be judged too, and that not only Escoda and Sagueta but all the other scattered men be arrested. An acknowledgement of the 28th, and a strength of 242 men, drummers included, so that each of three columns can only have 81.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-10",
      "note": "Read as sentences 10 Nov 2026 by one AI reader after the single measurement: every cipher run construes as Spanish inside the clear letters; 54 certain, 14 probable (a number corrected by sense, or 12/78 absent from the key read by sense), 0 restored, 0 unresolved of 68. Grade B, read in part, because the key is partial by our own protocol (margin 0.261 < 0.30)."
-    }
+    },
+    "note": "18 Nov 2026, cipher words only, sure words only: 54 of 68 cipher words certain (79.4%); 14 probable are holes."
    }
   ],
   "key_file": "key.tsv",
