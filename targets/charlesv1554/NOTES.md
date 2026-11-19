@@ -111,7 +111,7 @@ and that Weiss printed from them.
 ## Remaining gaps
 
 - v26 ends with three signs (r, n?, va) that do not spell the last 8 words of the sentence (*regarder à quoi nous vouldrons resouldre selonc ce*, minute); they are restored from the minute. Whether the cipher went on on another leaf is not known without the manuscript.
-- Key: the *po* value (`n'.`), `nt` and the rare signs are left as re-derived; her table was compared (above), not applied.
+- Key: the *po* value (`n'.`), `nt` and the rare signs are left as re-derived; her table was compared (above), not applied. This is on purpose: the reconstruction is kept independent of her table so that it can serve as a check on it, and her values are not carried into `key.tsv` or the reading.
 - Whether Ms 1582 f. 2 was detached from Ms Granvelle 73 ff. 119-122 is not checked.
 
 ## Escalation
