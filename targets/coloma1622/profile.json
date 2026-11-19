@@ -108,7 +108,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "No decipherment on the letter. No edition found (two web searches); nothing on DECODE, at Cryptiana (Tomokiyo) or in Lasry's lists; catalogue 1601 open, no target, PR or issue on origin/main (GitHub API, 895f21c4, 5 Nov 2026). Not read: M. Á. Guill Ortega, Carlos Coloma (2007); Herrero García (Avisos, 2023) on MSS/18428; the Codoin index.",
+   "where": "No decipherment on the letter. No edition found (two web searches); nothing on DECODE, at Cryptiana (Tomokiyo) or in Lasry's lists; catalogue 1601 open, no target, PR or issue on origin/main (GitHub API, 895f21c4, 5 Nov 2026). Not read: M. Á. Guill Ortega, Carlos Coloma (2007); Herrero García (Avisos, 2023) on MSS/18428; the Codoin index. A researcher at the Real Biblioteca told us in November 2026 that he is also working on the ciphers of Coloma's embassy in London (1622-1624); we do not know whether this covers the letter or its key; we wrote to him on 18 Nov 2026 and await his reply.",
    "found": "not found",
    "used": false
   },
@@ -119,7 +119,7 @@
   ],
   "attack": "known plaintext",
   "first_date": "2026-11-02",
-  "last_date": "2026-11-14",
+  "last_date": "2026-11-18",
   "human_role": "Brice Dudout chose the target, set the rules (protocols and amendments hashed before each computation, one measurement per held-out passage, thresholds fixed in advance) and answered the three blind shape sheets (shapes only; M16, FL2-C, FS1). AI agents transcribed, rebuilt the key, measured, read and wrote up. No palaeographer checked the letter.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout",
@@ -269,6 +269,15 @@
    ],
    "what": "Integration of PR #560 (mirabel1622 folded in as the document mss18428-13-15, one key one entry: the same system, CLE_M02 = C04 + values of the clears of MSS/18428). Own decoder from mss18428/key.tsv reproduces decryption.txt; strict recount 182/250 = 72.8% (contributor 183/250 = 73.2% sure, 219/250 = 87.6% with probable). M01 failed and M02 partial: the extended key is not validated. The contributor's re-reading of the sign in the H5 passage (MSS/18428 image 44 right, 'ministros') as o with a cross = t, not Ð = n, explains the 'Ð (n? / t) conflict' recorded in H5; the H5 score is not recomputed. BNE Digital answered 403 to a script again; images not seen by the project.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Comparison with a Spanish nomenclator dated 1615 by the Real Biblioteca (Madrid, II/1850, f. 20; image sent by a researcher at the Real Biblioteca; neither the image nor the table's entries are in the repository), on the values of this system held by a contemporary clear: 1 of 45 letter and syllable signs and 1 of 40 code words (an effect of alphabetical order) agree; common words of the same initial 22 pairs in the same order, 19 reversed. Same family, different table, no sister table indicated; the cifra general of 1620 (Avisos 28 (98), 2022) shares no value either (13 syllable groups, 17 code words). Nothing carried into the key or the reading (RB-1615-COMPARISON.md).",
+   "result": "ruled out"
   }
  ],
  "outcome": {
