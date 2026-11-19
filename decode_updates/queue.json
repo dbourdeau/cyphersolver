@@ -14717,6 +14717,55 @@
   },
   "milan1494": {
    "skip": "Not on DECODE: ASF Mediceo avanti il Principato LXXIV docs. 96, 112, 113, 115 and the key sheet LXXII 183 have no DECODE record (catalogue 2381 and 2382 vetting, 6 Nov 2026: the DECODE dumps in the repository hold no ASF MAP ciphertext record); nothing to send while the target is in progress."
+  },
+  "lewenhaupt1706": {
+   "skip": "No DECODE record known for Uppsala UB F 470 (Charles XII to Lewenhaupt, 1706): the target's NOTES and profile cite none, and a DECODE keyword search of 19 Nov 2026 for Lewenhaupt returns 0 records (the Uppsala hits are Carolina Rediviva CR_R63, other material); the full record list was not searched. Decoded, not read (74.4% of cipher words sure, class not read), so no reading to attach; nothing to correct or attach until a record exists."
+  },
+  "juanmanuel1496": {
+   "skip": "No DECODE record for BNE MSS/20212/61/1 and /2 (Juan Manuel to the Catholic Monarchs, Genoa, 10 Nov and 18 Dec 1496): the profile records 'not on DECODE' (catalogue 1270 vetting: the local DECODE harvest greps 20212/61 with no hit), and a DECODE keyword search of 19 Nov 2026 for Juan Manuel finds only the 1521-22 BRAH 9/24 records (a different series). The key applied is George Lasry's for BnF Espagnol 318 no. 95, which has no DECODE record either (Gallica only). Decoded, not read; nothing to correct or attach."
+  },
+  "juanmanuel1497": {
+   "skip": "No DECODE record for AHPZ, Colección Zurita, C_CRAR/000001/0039 (Juan Manuel, Genoa, 14 Apr 1497): the profile records 'not on DECODE (catalogue vetting)'; the key applied is George Lasry's for BnF Espagnol 318 no. 95, with no DECODE record (Gallica only). Decoded, not read, pending a reading review; nothing to correct or attach."
+  },
+  "montcalm1758b": {
+   "skip": "No DECODE record known for Archives nationales 155AP/2 piece 25 (Montcalm to Bougainville, 21 Nov 1758, code B): the NOTES and profile cite none, and a DECODE keyword search of 19 Nov 2026 for Montcalm, Bougainville and Casgrain returns 0 records (the full record list was not searched). Decoded, not read (68.6% of cipher words), in progress with no page; no new record proposed until it reads."
+  },
+  "eugenie1859": {
+   "skip": "No DECODE record for BnF NAF 11355 (Emperor-Empress code, June 1859): the full DECODE record list (10,606 records, fetched 24 Oct 2026) holds none (NOTES). The result is George Lasry's, presented on the page; nothing was added here to attach or correct."
+  },
+  "breant1673": {
+   "skip": "No DECODE record known for Mediatheque Georges-Delaw, Sedan, fonds Gourjault carton 170 (Breant to Reveillon, 26 Dec 1673 and 8 Jan 1674): a DECODE keyword search of 19 Nov 2026 for Sedan, Gourjault, Breant and Reveillon returns 0 records (the full record list was not searched). The letters carry a contemporary interlinear decipherment; no transcription, image or crop is queued, because the images came through the SHAS and the reuse terms are awaiting the library's answer (NOTES). Revisit when it answers."
+  },
+  "lorenzana1432": {
+   "writeup": null,
+   "cite": "Andrew Aymeloglu, reading and side-by-side edition of ASF MAP V 196 (aaymeloglu/unsolved-ciphers), merged into targets/lorenzana1432/; the contemporary interlinear decipherment of doc. 140 (8 Dec 1431) supplied the key values.",
+   "new_records": [
+    {
+     "shelfmark": "ASF, Mediceo avanti il Principato, filza V, doc. 196, c. 208r (clear postscript on c. 209r)",
+     "what": "Bernardo d'Alamanno de' Medici (Lorenzana) to Averardo de' Medici, 17 Apr 1432; Italian, about 15 cipher runs in a letter-sign substitution among clear words, no decipherment on the leaf. Read: the 58 cipher words are all decoded, 56 sign for sign and 2 with a one-letter slip (56 of 58, 0.966); the key from the 20 values on the interlinear decipherment of doc. 140 (8 Dec 1431), five more from the April page (targets/lorenzana1432/april-key.tsv, december-key.tsv); doubtful clear words marked. No DECODE record exists (catalogue 2954 vetting, 15 Nov 2026: no Mediceo avanti il Principato record at all in the 10,106-record list); docs. 140 and 143 of the same filza, the siblings the key rests on, are not on DECODE either. No page yet for the target. Suggested as a new DECODE record, status Decrypted if the owner agrees that the cipher words are the whole of the cipher.",
+     "transcription": [
+      "targets/lorenzana1432/transcription.tsv",
+      "targets/lorenzana1432/reading-it.md"
+     ],
+     "sent": false
+    }
+   ]
+  },
+  "mantua1524": {
+   "writeup": null,
+   "cite": "Andrew Aymeloglu, issue #697 (16 Nov 2026), repository aaymeloglu/unsolved-ciphers, folder mantua-1524 (CC0), merged into targets/mantua1524/aaymeloglu/.",
+   "new_records": [
+    {
+     "shelfmark": "BAV, Vat. lat. 8214, ff. 298r-v, 68r, 198r",
+     "what": "Three leaves sent to Federico II Gonzaga, marquis of Mantua, in 1524 (f. 298r-v: extract of Suardino's letter, 26 Feb; f. 68r: a letter almost wholly in cipher, Milan, January; f. 198r: extract of Capino de Capo's letter from Robbio, 8 Apr), one homophonic key with letter-pair units recovered from the ciphertext alone. Read in part, by the project's sure-words count 52% of 281 cipher words (298r-v 41%, 68r 55%, decoded not read, 198r 79%); the pre-registered test of the key failed its bar (0.304 against 0.40), so the key is not confirmed. In progress. DECODE R7860 (Mantuan key of 1524-25, ASMn AG b. 423 f. 8) and R7865 (d'Atri, c. 1510) were compared by the contributor and do not fit. No DECODE record for Vat. lat. 8214 (catalogue 2368 and leads 2956, 2957 carry no decode_ids; a DECODE keyword search of 19 Nov 2026 finds none). No page yet. Suggested as a new DECODE record only once the target's status is settled; status Partially decrypted at most.",
+     "transcription": [
+      "targets/mantua1524/aaymeloglu/transcription-298.tsv",
+      "targets/mantua1524/aaymeloglu/transcription-68r.tsv",
+      "targets/mantua1524/aaymeloglu/transcription-198r.tsv"
+     ],
+     "sent": false
+    }
+   ]
   }
  }
 }
