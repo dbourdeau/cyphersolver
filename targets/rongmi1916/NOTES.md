@@ -128,3 +128,33 @@ concerned, 8012 in N25, read in neither case; the swap 8102 gives 一, so N25 no
 None known for these texts: they are not in Hsueh Chun-tu's edition of Huang Xing's 1916 drafts, which has nothing
 between 8 and 20 June, nor found online (Wenmi, Juin 1916 article). 黃興集 and Li Yuanhong's correspondence not yet
 checked. The key is a reconstruction: no historical copy of the 容密 book has been found.
+
+## Read share with sure codes only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): sure only; a probable, inferred or unread unit is a hole. A Chinese telegram is wholly in cipher, and its unit here is the code: one four-figure code is one character, so
+the share is counted in codes, not words (a word is one or two characters; no word count is made). Counted from the
+status column of `decryption.txt`: `ok` and `confirmé:…` are sure; `douteux` (doubtful, the `{x}` of `reading.md`) and
+`illisible` are holes.
+
+| telegram | codes | sure | share | holes | state |
+|---|---|---|---|---|---|
+| N11 | 58 | 57 | 0.983 | 1 douteux | read |
+| N12 | 82 | 78 | 0.951 | 4 douteux | read |
+| N14 | 47 | 47 | 1.000 | — | read |
+| N19b | 143 | 136 | 0.951 | 7 douteux | read |
+| N21 | 107 | 99 | 0.925 | 7 douteux, 1 illisible | read in part |
+| N28 | 18 | 18 | 1.000 | — | read |
+| N36 | 58 | 39 | 0.672 | 19 douteux | read in part |
+| V4B | 265 | 231 | 0.872 | 30 douteux, 4 illisible | read in part |
+| N02 | 93 | 85 | 0.914 | 8 douteux | read in part |
+| N08 | 46 | 45 | 0.978 | 1 douteux | read |
+| N19a | 17 | 17 | 1.000 | — | read |
+| N24 | 200 | 192 | 0.960 | 8 douteux | read |
+| N25 | 113 | 104 | 0.920 | 9 douteux | read in part |
+| V4D | 59 | 50 | 0.847 | 9 douteux | read in part |
+
+**1198 of 1306 codes sure (91.7%)**; 6 of 14 telegrams under the bar, so the target goes **read -> read
+in part**. Before, the doubtful codes were counted as read. Many telegrams are short: one doubtful code puts a
+telegram of under 20 codes below 95%. The codes marked `douteux` are counted as they stand; none was re-read on the
+scans for this count. Counted by a script on
+`decryption.txt`; `v10_relabel.py` does not measure Chinese readings.
