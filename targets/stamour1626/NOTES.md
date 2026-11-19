@@ -21,6 +21,14 @@ sign for Y or Z. A user's notes at the top left add a = 12 and e = 18 (and "puis
 (`transcription/f239_pass1.tsv`, `f239_pass2.tsv`): full agreement on the table; the only difference is a note at the
 top right, not used. The letter values come from the sheet itself: nothing here is recovered by us.
 
+**Small marks above letters, seen and not used.** At the top right of the sheet, the second pass
+(`transcription/f239_pass2.tsv`) saw small marks written above a few letter signs: a small *x* above the *k*
+(consistent with X = k), a *φ* above an *R* (in the table φ is the sign of S and R has a ρ-like sign, so this pairs φ
+with R against the table), an *N* above the *Λ* (lambda without bar; consistent with N = Λ), a small *c* (or *t*)
+above the *#* (consistent with C = #), and a *∝* above two strokes *═* (the signs of P and L; role unknown). The first
+pass noted the same group (x/k, ϙ over R, ═, N/Λ, c/#); the two passes differ only on the sign above R (ϙ or φ). They are recorded as seen; none is used in `key.tsv`
+or in the decode.
+
 Which letters it serves is already in the library's title ("pour les lettres du comte de Saint-Amour"). What we add is
 the match with a particular set of letters, Ms Granvelle 62 ff. 322-334, and the observation that their ciphered
 passages also carry code numbers (22, 75, 99, 101 ...) that the table does not cover.
@@ -63,7 +71,9 @@ and the passages are **EXISTING**: deciphered, at least in part, at the time and
 ## Remaining gaps
 
 - The code numbers (22, 75, 99, 101 ...) and the shapes off the table are not identified (blocker: open-codes).
-- No reading of the passages has been made; the interlinear decipherments cover only part of them.
+- No reading of the passages has been made (blocker: open-codes). 160 of the 474 signs are code numbers or shapes that the
+  table does not cover, and no list of these codes is known: the sheet carries none, and the period interlinear words gloss
+  only some passages (img379-381). A reading now would fill a third of the signs by sense alone.
 
 ## Escalation
 - [x] siblings: the five letters of Oct-Dec 1626 in Ms Granvelle 62 ff. 322-334 transcribed; other Saint-Amour letters (1624-1628) not searched for cipher
