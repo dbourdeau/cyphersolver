@@ -37,7 +37,7 @@
     "by": "llm from images",
     "source": "Claude (Opus 5.5) for Brice Dudout, 18 Nov 2026: two blind passes with the margin masked (1,074 and 1,075 signs, 91 % agreement after name mapping), reconciled sign by sign",
     "image_quality": "good",
-    "notes": "Research scans sent by the Bibliothèque municipale de Besançon on 18 Nov 2026; not reproduced (library's consent needed). The last line of each page (r24, v26) was cut off in the crops and is not transcribed."
+    "notes": "Research scans sent by the Bibliothèque municipale de Besançon on 18 Nov 2026; not reproduced (library's consent needed). The last line of each page (r24, v26), cut off in those crops, was transcribed on 19 Nov 2026 from the full scans in two more blind passes (23 + 23 signs, 42 of 46 in full agreement), arbitrated in transcription/cut_lines_r24_v26.tsv."
    }
   }
  ],
@@ -95,7 +95,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-11-18",
-  "last_date": "2026-11-18"
+  "last_date": "2026-11-19"
  },
  "solution": [
   {
@@ -141,6 +141,27 @@
    "kind": "reading",
    "what": "358 words: 210 sure, 125 probable, 4 restored, 19 in two lines not transcribed (reading.md).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "transcription",
+   "what": "Lines r24 and v26, cut off in the first crops, transcribed from the full scans in two new blind passes and arbitrated (46 signs, 42 in full agreement, 1 differing by a mark, 3 differing; transcription/cut_lines_r24_v26.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Re-derived key compared with Pich-Ponce 2024 (her text and printed tables; not reproduced): the 8 plain-digit entries (8, 7, 9, 6, 4, 2, 3 written z, 66; 185 occurrences) give her values; 10 two-figure entries (rr, u, w, r6, r8, ry, rs, r3, n, nz; 252 occurrences) give her values if their hooked first stroke is read 1 or 2 as her series requires (not checked shape by shape), w and nz each being two of her numerals (20 a / 10 l; 17 d / 12 i); 48 of 60 syllable entries (375 of 416 occurrences) follow her stated rule (preceding letter plus vowel mark), and for 3 of the other 12 (c: do, 6_ ci, mt na) her rule fits the minute where our alignment did not; m'. (our n) is her 'no'. Values not transferred into key.tsv or the reading.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "reading",
+   "what": "358 words: 215 sure, 131 probable, 12 restored (reading.md); r24 and v26 read from the cipher.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -152,21 +173,16 @@
    "catalogue correction"
   ],
   "class": "already solved",
-  "fraction_read": 0.587,
+  "fraction_read": 0.601,
   "fraction_read_method": "measured",
-  "fraction_read_source": "reading.md: 210 sure of 358 words (repository rule, sure words only); with probable words 335/358 = 0.936",
+  "fraction_read_source": "reading.md: 215 sure of 358 words (repository rule, sure words only); with probable words 346/358 = 0.966",
   "key": "partial",
   "first_break": false,
   "gaps": [
    {
-    "item": "r24 and v26 (last line of each page)",
-    "blocker": "not-attempted",
-    "detail": "the two lines are on the library's scans we hold but fell outside the crops used for the two blind passes; not transcribed in this folder (no outside blocker); about 19 words, known from the minute (Gachard IV pp. 313-314) and counted as not read"
-   },
-   {
-    "item": "key gaps (no/po, nz d/i, w a/l, mt/nt n/p)",
-    "blocker": "not-attempted",
-    "detail": "left open in the re-derived key.tsv; the cipher's own table is in print (Pich-Ponce 2024, tables printed as images), so these values are not unknown, only not transferred; matching her printed sign shapes to our sign names on the leaf was not done here (her article is not in our files)"
+    "item": "v26, the last three signs and the 8 words after 'pour'",
+    "blocker": "needs-physical-access",
+    "detail": "the line ends with three signs (r, n?, va) that do not spell 'regarder a quoi nous vouldrons resouldre selonc ce' (minute); the words are restored from the minute; whether the cipher went on on another leaf (Ms Granvelle 73 copy) is not known without the manuscript"
    },
    {
     "item": "physical link with Ms Granvelle 73 ff. 119-122",
@@ -187,6 +203,7 @@
     "label": "Ms 1582, f. 2r-v: Charles V to his ambassadors in England, 24 Jan 1554 (cipher passage)",
     "transcription": [
      "transcription/cipher_reconciled_AB.tsv",
+     "transcription/cut_lines_r24_v26.tsv",
      "transcription/pass_A.tsv",
      "transcription/pass_B.tsv"
     ],
@@ -198,7 +215,7 @@
     "translation": "reading.md",
     "summary": "Charles V tells his ambassadors in London how to answer the French peace overtures: he has always wanted peace, the French broke the truce of their own will, his proposal of September 1553 made at the request of the Cardinal of Imola (Dandino) was never answered; he will negotiate through Mary Tudor once French terms for peace or truce are known; Renard is to learn from Paget what the French ambassador said about marriage matches.",
     "state": "read in part",
-    "read_share": 0.587
+    "read_share": 0.601
    }
   ],
   "key_file": [

@@ -38,8 +38,8 @@ r20  -le} [le] roy {n'a} {jamais} {donné} responce {quelle} {quelle}
 r21  soit ny {declairé} plus avant a quoy
 r22  {il} {vouldroit} {pour} {retourner} {a} {paix}
 r23  {ce} {puisque} {nous} sumes et {continuons} en la
-r24  [... 7]
-v1   a negociation de {paix} si avant que
+r24  mesme volenté que dessus de {facillement} {condescen-
+v1   -dre} a negociation de {paix} si avant que
 v2   l'on offre conditions {convenables} vous
 v3   {pourrez} en certiffier de {nostre} {part} [ladi-
 v4   -cte] {dame} afin {qu'elle} le face entendre ou
@@ -64,23 +64,28 @@ v22  ce que l'on vous respondra cy dessus et que
 v23  avec le temps entendrez plus avant
 v24  de ce que l'on {vouldra} dire du {costel} de France
 v25  {il} sera {bien} que de temps {a} autre
-v26  [... 12]
+v26  {nous} {donnez} {advertissement} {pour} [regarder] [a] [quoy] [nous] [vouldrons] [resouldre] [selonc] [ce]
 ```
 
 ## Count (repository rule: sure words only)
 
-358 words: **210 sure (58.7 %)**, 125 probable, 4 restored, 19 in two lines not transcribed (r24 about 7 words,
-v26 about 12; sizes are estimates from the minute, as the last line of each page was cut off in the transcription
-crops). With probable words, 335 of 358 = 93.6 %. **Read in part.**
+358 words: **215 sure (60.1 %)**, 131 probable, 12 restored. With probable words, 346 of 358 = 96.6 %. **Read in
+part.** (Until 19 Nov 2026 the last line of each page, r24 and v26, was cut off in the transcription crops and counted
+as not read: 210 sure. Both lines were then transcribed from the full scans in two new blind passes and arbitrated,
+`transcription/cut_lines_r24_v26.tsv`: r24 adds 5 sure and 2 probable words; v26 adds 4 probable words, and its
+last 8 words, *regarder à quoi nous vouldrons resouldre selonc ce*, are restored from the minute: the line ends with
+three signs (r, n?, va) that do not spell them, and whether the cipher went on elsewhere is not known. *condescendre*
+runs from r24 (*conde*, then a sign cut by the paper edge) to v1 (*ndre*).)
 
 Most probable words are probable for one of three recurring reasons, all key-side: (1) the sign read `nus` for *nous*
 (and `pur` for *pour*), i.e. a syllable value for *no/po* missing from the re-derived key; (2) the two forms `nz` (d/i)
 and `w` (a/l) that the transcribers did not separate; (3) the a/n/p confusion of `mt`/`nt` (*cardipaa* = *cardinal*,
-*raisonpables*). Pich-Ponce's published table (2024) would settle most of them; it was not applied here (its tables
-are printed as images, not checked sign by sign).
+*raisonpables*). Pich-Ponce's published table (2024), compared on 19 Nov 2026 (NOTES.md), explains (1) for *no*
+(`m'.`, her o-syllable mark) and (2) and (3) for `w` (her 20 a and 10 l), `nz` (17 d and 12 i) and `mt` (na); her values
+are not transferred into `key.tsv` or this reading, which stay an independent re-derivation.
 
 Unresolved / open: r13 the cipher reads `c^ n u` (*deit*), the minute and the contemporary decipherment *mit*; the
-words at r23 *ce* (minute *Et*). The two cut lines r24 and v26 need the images again.
+words at r23 *ce* (minute *Et*); in v26 the sign after *advertisse-* (c or t) and the last three signs.
 
 ## Translation (English, by the contributor; not the CSP calendar text)
 
@@ -91,8 +96,8 @@ nevertheless, and notwithstanding all the things so notoriously ill done, we hav
 negotiation of peace, provided reasonable conditions were put forward; and we hold that if one weighs and judges
 without passion the proposal that we put forward at the request of the Cardinal of Imola in the month of September
 last, it will be found to carry every reason, although the King has never given any answer whatever upon it, nor
-declared further on what terms he would return to peace. And since we are and continue in the same will [... readily to
-come] to negotiation of peace provided suitable conditions are offered, you may assure the said Lady [Queen Mary] of it
+declared further on what terms he would return to peace. And since we are and continue in the same will as above, readily to
+come to negotiation of peace provided suitable conditions are offered, you may assure the said Lady [Queen Mary] of it
 on our part, so that she may make it understood wherever she pleases: that we shall be the more inclined to it because
 it is a thing negotiated by her and to which she sets her hand; but that it would first be necessary to hear what the
 French will say, not only on the peace but also on the truce, since by the conditions they will wish to put to it we
@@ -100,8 +105,8 @@ shall be able to judge on what foot they walk, and what likelihood there is of d
 forward for the public repose. And it will be well that you, the Lieutenant of Amont, find out from the said Paget
 whether the ambassador of France has since spoken to him further of the marriage matches that his letters to you
 mentioned; and of what you are answered on the above, and of what in time you learn further of what is said on the
-French side, it will be well that from time to time [... you give us notice, so that we may consider what we shall
-resolve accordingly].
+French side, it will be well that from time to time you give us notice, so that we may consider what we shall
+resolve accordingly (the last eight words restored from the minute).
 
 ## Summary
 

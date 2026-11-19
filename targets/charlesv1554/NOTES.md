@@ -1,6 +1,6 @@
 # charlesv1554: Besançon BM Ms 1582, f. 2, the cipher passage of Charles V's letter to his ambassadors in England, 24 January 1554
 
-Status: read in part (210 of 358 words sure = 58.7 %; with probable words 93.6 %). Already solved: deciphered at the time on the page, text in print (Gachard 1882; CSP Spain XII), key published (Pich-Ponce 2024). New here: the identification of the leaf, a check of the published cipher on a new witness, and the cipher-versus-decipherment differences.
+Status: read in part (215 of 358 words sure = 60.1 %; with probable words 96.6 %). Already solved: deciphered at the time on the page, text in print (Gachard 1882; CSP Spain XII), key published (Pich-Ponce 2024). New here: the identification of the leaf, a check of the published cipher on a new witness, and the cipher-versus-decipherment differences.
 
 ## Source
 
@@ -12,7 +12,7 @@ to publish its images, and its notices ask that any publication of unpublished d
 
 ## What the leaf is
 
-Two pages of cipher (about 1,075 signs in 48 transcribed lines, plus one cut line at the foot of each page), with the
+Two pages of cipher (about 1,121 signs in 50 lines: 48 in the first two blind passes, and the last line of each page, cut off in their crops, transcribed on 19 Nov 2026 in two more blind passes), with the
 contemporary decipherment written around it: three or four full-width lines above and below the cipher on each page,
 and a column in the margin. No address, signature or date: the text starts and ends in mid-sentence.
 
@@ -66,7 +66,19 @@ before the consonant (`c` for d, `k` for l, `q` for r, `m` for n, `t` for v, `b`
 with the contemporary decipherment 79 % of letters; split-page hold-out 0.726 (train recto, test verso) and 0.691
 (train verso, test recto) against 200 shuffled keys at most 0.25 (`holdout.txt`; the seed alignment used both pages,
 so this is not a strict validation). So this folder is a **verification of Pich-Ponce's cipher on a new witness**,
-not a key of our own. Her tables are printed as images and were not compared sign by sign.
+not a key of our own.
+
+**Comparison with her table (19 Nov 2026).** Her article (open access) was read with its printed tables; the tables
+are not reproduced here. Of our key entries: the 8 plain-digit entries (8, 7, 9, 6, 4, 2, 3 written `z`, 66; 185
+occurrences) give her values; 10 two-figure entries (`rr`, `u`, `w`, `r6`, `r8`, `ry`, `rs`, `r3`, `n`, `nz`; 252
+occurrences) give her values if their hooked first stroke is read 1 or 2 as her series requires (not checked shape by
+shape), and `w` and `nz` are each two of her numerals (20 a and 10 l; 17 d and 12 i), which is why the transcribers
+could not separate them; 48 of our 60 syllable entries (375 of 416 occurrences) follow her stated rule (the letter
+before the consonant plus a vowel mark), and for 3 of the other 12 her rule fits the minute where our alignment did
+not (`c:` do in *donnez*, `6_` ci in *facillement*, `mt` na in *cardinal*); `m'.` (our n) is her *no* (two dots above and
+below), the *nus* = *nous* of the reading. The remaining entries (`h` u, `s` n, `o` p, `t` r, `n'.` p, rare signs and the
+code for persons) were not matched in this short pass. Her values are not transferred into `key.tsv` or the reading,
+which stay an independent re-derivation.
 
 ## The cipher against the contemporary decipherment and the minute
 
@@ -86,6 +98,7 @@ and that Weiss printed from them.
 | file | content |
 |---|---|
 | `transcription/pass_A.tsv`, `pass_B.tsv` | two blind transcriptions, margin masked, made independently (Claude Opus 5.5), with their notes and sign lists (French, as written; image file names in the notes refer to local crops that are not published) |
+| `transcription/cut_lines_r24_v26.tsv` | lines r24 and v26 (19 Nov 2026): two more blind passes and the arbitrated sign, with its key value |
 | `transcription/cipher_reconciled_AB.tsv` | the two passes aligned sign by sign (91 % agreement after mapping the two naming schemes), with the key value of each sign |
 | `key.tsv` | the re-derived key (value, occurrences, agreement, rule base + mark), French column notes |
 | `decryption.tsv` | line-by-line decode of the cipher with the contemporary decipherment aligned beside it |
@@ -97,17 +110,17 @@ and that Weiss printed from them.
 
 ## Remaining gaps
 
-- The last line of each page (r24, v26) is on the library's scans but fell outside the crops used for the two blind passes; not transcribed here (no outside blocker); about 19 words, known from the minute and counted as not read.
-- Key gaps: the *no/po* syllable read as `nus`/`pur`; the two forms behind `nz` (d/i) and `w` (a/l), and `mt`/`nt` (n/p); the cipher's table is in print (Pich-Ponce 2024, as images), so these values are not unknown, only not transferred into `key.tsv`; matching her printed shapes to our sign names was not done here (her article is not in our files).
+- v26 ends with three signs (r, n?, va) that do not spell the last 8 words of the sentence (*regarder à quoi nous vouldrons resouldre selonc ce*, minute); they are restored from the minute. Whether the cipher went on on another leaf is not known without the manuscript.
+- Key: the *po* value (`n'.`), `nt` and the rare signs are left as re-derived; her table was compared (above), not applied.
 - Whether Ms 1582 f. 2 was detached from Ms Granvelle 73 ff. 119-122 is not checked.
 
 ## Escalation
 - [x] siblings: the Besançon copy (Ms Granvelle 73 ff. 119-122, printed by Weiss with a lacuna here) and the minute (Vienna E. 23, printed by Gachard) located in print; the manuscript copy itself not seen
 - [x] clear-pages: the contemporary decipherment on the leaf transcribed (period_plaintext_*)
-- [x] known-keys: Pich-Ponce 2024 found after the re-derivation; structure matches; her image tables not applied sign by sign
+- [x] known-keys: Pich-Ponce 2024 found after the re-derivation; compared with her table on 19 Nov 2026 (counts above); not applied
 - [x] print: Weiss IV, Gachard IV, CSP Spain XI-XII, Pich-Ponce 2024, Cryptiana: text and key in print
 - [x] key-rebuild: EM alignment on the contemporary decipherment, 79 % of letters
-- [n/a] retry: the text is in print; the two cut lines need a fresh crop of the library's scans, left for a later pass
+- [x] retry: the two cut lines (r24, v26) transcribed from the full scans in two more blind passes (19 Nov 2026)
 
 ## Method
 
