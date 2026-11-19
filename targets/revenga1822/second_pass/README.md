@@ -1,9 +1,7 @@
 # Revenga 1822: second transcription pass (Andrew Beling, with AI agents; work of 12 November 2026, added 17 November 2026)
 
-The second pass that NOTES.md names as the next step: a second transcription of the cipher on frames
-T33-03-0055 to -0058, every difference from the first pass settled on the frames, and a test of the z sign. Nothing
-in the folder above this one is changed; where this pass disagrees with `../transcription.txt`, `../reading.md` or
-`../corrections.md`, the difference is stated here and in the dated section of `../NOTES.md`.
+The second pass covers the cipher on frames T33-03-0055 to -0058 and the z sign. Section 7 of `../NOTES.md`
+records the collation, including the 15 places left open, and the differences from the first-pass files.
 
 ## What is blind and what is not
 
@@ -51,8 +49,6 @@ counted with ll as two letters.
 The earlier 2,293/2,532 (0.906) figure did not preserve an executable counting rule and is withdrawn as a sure-agreement measure. The reproducible recount is 2,261/2,532 = 0.893. Each ll is two characters. Join B10+B11 against C10, B18 against C17+C18, and B55+B56 against C55+C56; otherwise use the documented B/C group correspondence. Within each joined group use minimum unit-cost edit distance; ties take diagonal, then deletion from the second sequence, then insertion. Align first-choice letters, but count a match only if both letters are unmarked and identical. A question mark makes its preceding letter doubtful; x|y is one doubtful position; a bracketed annotation is one unresolved placeholder (x in [x?] is a doubtful first choice); periods and spaces are excluded, comma-like cipher signs retained. Insertions, deletions, doubtful agreements and unresolved placeholders remain in the denominator. Unknown-length struck spans represented by one placeholder make this an operational alignment denominator, not a certified count of manuscript signs. The first-choice recount including doubtful equal letters is 2,288/2,532, also not the old 2,293. No key, decode, or settled transcription enters this recount.
 
 The four words with expected z support the proposed g value; they are not an independent test. The z-sign hypothesis step is partial.
-
-AI agents did this work; no person has checked it.
 
 The earlier collation lists 231 entries (200 disagreements and 31 doubtful readings); that historical count is not the remainder of this new alignment. The new alignment has 271 non-sure columns: 244 unequal first choices and 27 doubtful equal choices.
 

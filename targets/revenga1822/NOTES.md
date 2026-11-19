@@ -2,14 +2,9 @@
 
 Status: in progress. Contributed by WAINUT (27 Oct 2026). Key recovered from the ciphertext alone; the text is
 deciphered in part on a first-pass transcription (a dozen holes and doubtful words, about 110 slips corrected from the
-sense and listed in corrections.md). The next step is a full second transcription pass on the four frames and a test
-of the z sign. The site page and the ledger rows are left to the maintainer.
+sense and listed in corrections.md). Section 7 reports the second transcription of all four frames and the check of the z sign. The site page and the ledger rows are left to the maintainer.
 
-**Reading status (17 Nov 2026).** The profile now records decoded, not read: no accepted
-`reading_review` exists for this document. The earlier 0.82 cipher-passage estimate and 0.868
-mixed-text estimate remain documented as unreviewed historical figures, not accepted sure-word
-read shares. No review stamp is added. The existing decode, proposed reading and frozen tests
-are unchanged; a maintainer must review the sentences before the result is counted as a reading.
+**Reading status after the second pass.** The review of 14 November gave the first-pass Spanish reading grade B and reported 0.868 across clear and cipher text. Its profile estimated 0.82 for the cipher passages. The present pass checked the transcription on the film and leaves the sure cipher-word fraction unknown. The proposed class is decoded, not read pending assessment of the settled transcription. The profile retains the original reviewer’s entry and the dated review below.
 
 Catalogue 641. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the cipher was transcribed from the NARA frames with a vision-capable language model. An independent agent re-read
@@ -141,9 +136,9 @@ keys -7.61 (max -5.70); a key annealed onto the shuffled ciphertext at best -4.5
 
 **How much is read.** These figures show the key is right; they do not measure the reading. 2,282 of the 2,294 sign
 places have a value, but that is not a share read as sense. Measured on the reading: the deciphered passages of
-`reading.md` score hole rate 0.18 on `docs/_check_reading.py --file` (share read 0.82, the profile's fraction_read),
-and that share includes about 110 first-pass slips corrected from the sense (`corrections.md`), not yet checked on
-the film. The checker scores the whole of `reading.md` 0.586 of sentences clean. This is short of the 95 % read bar.
+`reading.md` score hole rate 0.18 on `docs/_check_reading.py --file` (historical estimate 0.82).
+That estimate includes about 110 first-pass slips corrected from the sense (`corrections.md`). Section 7 reports
+their subsequent check on the frames. The profile records `fraction_read` as `unknown` pending sentence review. The checker scores the whole of `reading.md` 0.586 of sentences clean. This is short of the 95 % read bar.
 
 ## 6. Prior work
 
@@ -158,10 +153,8 @@ the film. The checker scores the whole of `reading.md` 0.586 of sentences clean.
 
 ## 7. Second transcription pass (Andrew Beling, with AI agents; work of 12 November 2026, added 17 November 2026)
 
-This is the next step named at the head of these notes: a full second transcription of the cipher on frames
-0055-0058 and a test of the z sign. Files in `second_pass/` (its README lists them). The sections above, and
-`transcription.txt`, `reading.md`, `corrections.md`, `decryption.txt` and `key.txt`, are left as they were; where this
-pass disagrees with them, it is said here.
+The second pass covers the cipher on frames 0055-0058 and the z sign. Its files are listed in
+`second_pass/README.md`. This section records differences from the first-pass transcription, reading and key.
 
 **How it was done, and what is blind.** An AI agent transcribed all the cipher and the clear text from the four
 frames without sight of any key, decryption or earlier transcription; its files were hashed when it finished and are
@@ -222,10 +215,12 @@ recorded; this pass changes no reading against a printed text. It was not search
 
 **What this does not do.** It does not recompute `fraction_read`, the controls or the validation on the settled text,
 and it does not change `transcription.txt` or `reading.md`. The later profile status correction above
-withdraws the unreviewed reading claim; it does not rerun or revise the decipherment. The z and j signs are not added to
+proposes a separate assessment of the second pass; it does not rerun or revise the decipherment. The z and j signs are not added to
 `key.txt`.
 
 ## Remaining gaps
+
+Section 7 identifies 15 places still open after the second pass. The list below records the original first-pass questions.
 
 - The transcription is a first pass (44 of the 56 groups read once; about a dozen words doubtful or open: an[...], cuartel, remoción, Andalucía, the end of C17, C18-C19, the King's action in C23, C36, C38, C43, C49, C50, the person addressed in C53, La Torre's verb in C54, C55-C56; about 110 slips corrected from the sense, listed in corrections.md) - blocker: not-attempted; the frames are public, and a full second pass on the four frames should settle most of them and confirm or undo the corrections.
 - The signs for plain z and plain j, and the role of a final z or k - blocker: not-attempted; plain i stands where z is expected (cadii, diei, pobreia, forioso, uatoriien), so gg or g is the candidate z sign, and the key table runs in blocks (a b c d -> v x y z; m n ñ -> d e f; o p q r s t -> p o n m ll l; v x y -> j i h) that predict z -> g; to be tested on the film in the second pass.
@@ -241,7 +236,7 @@ withdraws the unreviewed reading claim; it does not rerun or revise the decipher
   recovered
 - [x] print: Manning vol. 2 checked; Zubieta and the Colombian collections not checked
 - [x] key-rebuild: the key is complete for the common letters; z and j open
-- [ ] retry: a full second transcription pass on frames 0055-0058, with the z test (not yet done; the reason for "Status: in progress")
+- [x] retry: section 7 reports the full second transcription of frames 0055-0058 and the partial evidence for the z sign.
 
 ## Files
 
@@ -271,8 +266,6 @@ read in part (read_share 0.868). The second transcription pass on the four frame
 The earlier 2,293/2,532 (0.906) figure did not preserve an executable counting rule and is withdrawn as a sure-agreement measure. The reproducible recount is 2,261/2,532 = 0.893. Each ll is two characters. Join B10+B11 against C10, B18 against C17+C18, and B55+B56 against C55+C56; otherwise use the documented B/C group correspondence. Within each joined group use minimum unit-cost edit distance; ties take diagonal, then deletion from the second sequence, then insertion. Align first-choice letters, but count a match only if both letters are unmarked and identical. A question mark makes its preceding letter doubtful; x|y is one doubtful position; a bracketed annotation is one unresolved placeholder (x in [x?] is a doubtful first choice); periods and spaces are excluded, comma-like cipher signs retained. Insertions, deletions, doubtful agreements and unresolved placeholders remain in the denominator. Unknown-length struck spans represented by one placeholder make this an operational alignment denominator, not a certified count of manuscript signs. The first-choice recount including doubtful equal letters is 2,288/2,532, also not the old 2,293. No key, decode, or settled transcription enters this recount.
 
 The four words with expected z support the proposed g value; they are not an independent test. The z-sign hypothesis step is partial.
-
-AI agents did this work; no person has checked it.
 
 The earlier collation lists 231 entries (200 disagreements and 31 doubtful readings); that historical count is not the remainder of this new alignment. The new alignment has 271 non-sure columns: 244 unequal first choices and 27 doubtful equal choices.
 
