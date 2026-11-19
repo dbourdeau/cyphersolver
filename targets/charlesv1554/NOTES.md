@@ -97,8 +97,8 @@ and that Weiss printed from them.
 
 ## Remaining gaps
 
-- The last line of each page (r24, v26) was cut off in the transcription crops; about 19 words, supplied only from the minute.
-- Key gaps: the *no/po* syllable read as `nus`/`pur`; the two forms behind `nz` (d/i) and `w` (a/l), and `mt`/`nt` (n/p); applying Pich-Ponce's table sign by sign would settle most of them.
+- The last line of each page (r24, v26) is on the library's scans but fell outside the crops used for the two blind passes; not transcribed here (no outside blocker); about 19 words, known from the minute and counted as not read.
+- Key gaps: the *no/po* syllable read as `nus`/`pur`; the two forms behind `nz` (d/i) and `w` (a/l), and `mt`/`nt` (n/p); the cipher's table is in print (Pich-Ponce 2024, as images), so these values are not unknown, only not transferred into `key.tsv`; matching her printed shapes to our sign names was not done here (her article is not in our files).
 - Whether Ms 1582 f. 2 was detached from Ms Granvelle 73 ff. 119-122 is not checked.
 
 ## Escalation
@@ -115,3 +115,7 @@ Claude (Opus 5.5) agents for Brice Dudout, 18 Nov 2026: two blind transcriptions
 transcription of the contemporary decipherment by a third pass; key re-derived by alignment; prior-art check
 afterwards (Weiss IV and Gachard IV on the Internet Archive; CSP Spain XI-XII on British History Online; Pich-Ponce
 2024; Cryptiana; this repository's ledgers), which found the printed text and the published cipher.
+
+Outcome method (`profile.json`): *key recovered based on adjacent plaintext*. The cipher was decoded with a key
+re-derived from the leaf's own contemporary decipherment, and the decode was checked against the minute printed by
+Gachard; it is not a transcription of the existing decipherment alone.
