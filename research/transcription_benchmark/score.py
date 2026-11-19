@@ -23,8 +23,16 @@ REF = {
     "hellen_R1049": "targets/hellen1752/decode/DOC_R1049_D1890_1890.txt",
     "santacroce_R6": "targets/santacroce1552/decode/DOC_R6_D1624_1624.txt",
     "santacroce_R7": "targets/santacroce1552/decode/DOC_R7_D1625_1625.txt",
+    "hellen_R1953": "targets/hellen1752/decode/DOC_R1953_D3616_3616.txt",
+    "kauderbach_R2078": "targets/kauderbach1754/decode/DOC_R2078_D3618_3618.txt",
+    "carpio_R1009": "targets/carpio1677/decode/DOC_R1009_D2422_2422.txt",
+    "carpio_R1010": "targets/carpio1677/decode/DOC_R1010_D2421_2421.txt",
+    "ferdinand_R1889": "targets/ferdinand3/decode/DOC_R1889_D3605_3605.txt",
+    "ferdinand_R1890": "targets/ferdinand3/decode/DOC_R1890_D3604_3604.txt",
 }
-GROUP_DOCS = {"hellen_R1049"}  # reference separates groups with '.'
+# documents that mix letters and digits are scored on the alphanumeric stream (lower-cased); the rest on digits only
+ALNUM_DOCS = {"carpio_R1009", "carpio_R1010", "ferdinand_R1889", "ferdinand_R1890"}
+GROUP_DOCS = {"hellen_R1049", "hellen_R1953"}  # reference separates groups with '.'
 
 
 def ref_lines(path):
@@ -41,9 +49,11 @@ def hyp_lines(path):
     return out
 
 
-def digits(s, keep_q=False):
+def digits(s, keep_q=False, alnum=False):
     """Digit stream. Reference side drops '?' (the DECODE transcriber's own uncertainty mark); hypothesis side keeps
     it, so an illegible-digit mark counts as an error."""
+    if alnum:
+        return re.sub(r"[^0-9a-z?]" if keep_q else r"[^0-9a-z]", "", s.lower())
     return re.sub(r"[^0-9?]" if keep_q else r"[^0-9]", "", s)
 
 
@@ -103,8 +113,9 @@ def group_exact(ref_groups, hyp_groups):
 def score(doc, hyp_path):
     rl = ref_lines(REF[doc])
     hl = hyp_lines(hyp_path)
-    a = digits("".join(rl))
-    b = digits("".join(l.rstrip("! ") for l in hl), keep_q=True)
+    al = doc in ALNUM_DOCS
+    a = digits("".join(rl), alnum=al)
+    b = digits("".join(l.rstrip("! ") for l in hl), keep_q=True, alnum=al)
     s, ins, dl, d = lev_ops(a, b)
     row = {"doc": doc, "ref_digits": len(a), "hyp_digits": len(b), "edits": d, "subs": s, "ins": ins, "dels": dl,
            "cer": round(d / len(a), 4), "ref_lines": len(rl), "hyp_lines": len(hl),

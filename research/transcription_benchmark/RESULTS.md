@@ -43,15 +43,50 @@ Hellen, exact groups (dot-separated numbers): 60%, 82%, 74% by pass.
 5. **The reader's own "unsure" flags are not reliable.** In pass 1 it flagged every line; with a stricter
    instruction in passes 2 and 3 the flag counts varied from 2 to 28 lines per document. They were not scored.
 
+## Second round: letter and mixed documents (19 Nov 2026)
+Four documents whose cipher mixes letters with numbers: carpio1677 R1009 and R1010 (Spanish, 1677, a scan of a
+letter with small crossed numbers and letter pairs) and ferdinand3 R1889 and R1890 (Latin, 1635 and 1640, photographs,
+cipher lines between prose lines). Same method: three blind passes, scored against the DECODE transcription (D2422,
+D2421, D3605, D3604) on the lower-cased letter-and-digit stream; DECODE's cross marks ('+') and separators are not
+compared. Only the cipher lines were to be read; the prose was to be skipped.
+
+| Document | Pass 1 | Pass 2 | Pass 3 | Consensus of 3 |
+|---|---|---|---|---|
+| carpio R1009 (798 signs) | 17.7% | 17.8% | 18.7% | 18.1% |
+| carpio R1010 (609) | 15.9% | 16.4% | 16.9% | 15.4% |
+| ferdinand R1889 (684) | 3.7% | 2.9% | 2.9% | 2.9% |
+| ferdinand R1890 (1,443) | 2.3% | 3.0% | 2.7% | 2.5% |
+| **carpio, pooled** | 16.9% | 17.2% | 17.9% | 16.9% |
+| **ferdinand, pooled** | 2.7% | 3.0% | 2.8% | 2.6% |
+
+1. **Letters are not harder as such: the hand and the sign set decide.** Ferdinand, with letters and two-digit numbers
+   in a clear, upright italic hand, reads at about 97%. Carpio, at about 83%, is the worst result in the benchmark.
+2. **Carpio's errors are systematic and have two visible sources.** A crossed 1 is read as a 4 (62 times over the three
+   passes); the letters b and o are read as the digits 6 and 0 (47 and 50 times); and, as in the hellen hand, a 4 is read as
+   a 2 (82 times). About a third of carpio's substitutions swap a letter for a digit or the reverse. Ferdinand has
+   fewer swaps (0 and o, 9 and g, 1 and i, b and 6).
+3. **Voting does nothing for systematic errors.** The consensus is about equal to the single passes on carpio, and the
+   passes agree on their mistakes: disagreement flags only 19% to 24% of carpio's pass-1 errors, against 48% to 58%
+   on the digit documents, and 19% to 64% on ferdinand. Where all three passes agree on carpio, the error rate is still
+   about 11% to 13%. Disagreement finds random misreadings, not a consistent misreading of a glyph.
+4. **The comparison is convention-dependent here.** The DECODE reference records crossed numbers with '+' and writes
+   letter pairs separated by dots; the reader was told to ignore crosses. A convention mismatch may inflate carpio's
+   rate; it cannot explain a crossed 1 read as 4, which is a different digit.
+5. **Process notes.** The first ferdinand attempt used pages cut at the wrong rotation (90 degrees, upside down; the
+   transcriber rotated its own copies and returned reversed lines); it was discarded and all three ferdinand passes
+   were redone on pages cut at 270 degrees. The other session's guess of 90 degrees in `prep_tiles.py` was wrong for
+   ferdinand and was corrected there. R1889 page 2 is mostly show-through, so only 3 cipher lines were read on it.
+
 ## Limits (read before quoting any number)
 - **This is not the frozen 41-document sample.** The frozen sample (`sample.json`) was drawn from a frame that turned out
   too loose: for many documents `reference_file` was only a length-measuring script and "images in the folder" were
   article figures. A clean pairing of a human transcription with page images of the same record exists for about ten
   documents; these four digit-cipher documents were the ones run. They are a convenience subset chosen after the
   audit, not a random draw. The frozen sample stays in the repository as committed.
-- **Not run:** the letter and mixed-symbol documents (carpio1677, ferdinand3, r1873), hellen R1953, kauderbach R2078,
-  the Pillon telegram, and the downstream solver test (key recovery from AI vs human transcription). None of these
-  results says anything about letter ciphers or cleartext mixed with cipher.
+- **Not run:** r1873, hellen R1953, kauderbach R2078 (the last two were prepared for a second round but not
+  transcribed), the Pillon telegram, and the downstream solver test (key recovery from AI vs human transcription).
+  The digit-only results above say nothing about letter ciphers; see the next section for the two letter pairs that
+  were run, which is only four documents from two hands.
 - **One reference per document.** DECODE transcriptions carry their own errors and uncertainty marks (stripped here).
   The error rates are upper bounds on the AI's error where the reference is wrong, and unknown where it is right but
   the AI agrees with the same slip.
@@ -64,4 +99,5 @@ Hellen, exact groups (dot-separated numbers): 60%, 82%, 74% by pass.
 
 ## Files
 `PLAN.md`, `inventory.py`, `sample.py`, `audit_pairs.py`, `prep_tiles.py`, `score.py`, `analyze.py`, `runs/`,
-`scores.json`, `analysis.json`, `frame.json`, `sample.json`.
+`scores.json`, `analysis.json`, `frame.json`, `sample.json`; second round: `runs_letters/`, `scores_letters.json`,
+`analysis_letters.json`.

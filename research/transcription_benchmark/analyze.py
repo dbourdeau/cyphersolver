@@ -50,7 +50,9 @@ def align(a, b):
 def streams(doc, path):
     rl = score.ref_lines(score.REF[doc])
     hl = score.hyp_lines(path)
-    return score.digits("".join(rl)), score.digits("".join(l.rstrip("! ") for l in hl), keep_q=True)
+    al = doc in score.ALNUM_DOCS
+    return (score.digits("".join(rl), alnum=al),
+            score.digits("".join(l.rstrip("! ") for l in hl), keep_q=True, alnum=al))
 
 
 def cer(a, b):
@@ -87,7 +89,7 @@ def main(out_dir):
     res = {}
     confusion = collections.Counter()
     for doc, passes in sorted(files.items()):
-        ref = score.digits("".join(score.ref_lines(score.REF[doc])))
+        ref = score.digits("".join(score.ref_lines(score.REF[doc])), alnum=doc in score.ALNUM_DOCS)
         hyp = {p: streams(doc, f)[1] for p, f in passes.items()}
         entry = {"ref_digits": len(ref), "single": {f"pass{p}": round(cer(ref, h), 4) for p, h in sorted(hyp.items())}}
         for h in hyp.values():
