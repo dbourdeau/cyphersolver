@@ -1081,6 +1081,16 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   `research/reading_audit/v10_relabel.py` splits a reading only where its `outcome.texts` entry declares how the
   cipher or the clear words are marked (`cipher_markup` or `clear_markup`, `profile.schema.json`); without a
   declaration it measures the whole reading and reports it as "not split".
+- **Only sure words count as read, and a very short text has a small floor (19 Nov 2026, owner's decision).** A word
+  is read when the key gives it, or the plain text beside it does, with nothing supplied. A probable word (`{x}`), an
+  inferred or supplied word, a grade-M word and an unvalued code are holes, and so is a letter supplied inside a word.
+  The 95% bar applies to the cipher words of each document. **Floor for short texts:** a document of fewer than 40
+  cipher words is "read" when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more
+  (so a 9-code telegram can have 2 holes, a 30-word note 2, a 39-word note 2). The floor never applies to a text of 40
+  words or more, and the page and profile state the number of holes and that the floor was used. Set after Brice
+  Dudout's recount of the 49 targets he contributed (#728), where 54 of 96 telegrams of 8 to 20 codes fell under the
+  bar for one or two doubtful codes each. **Chinese telegraphic codes:** one code is one word, and so one character
+  (the Wenmi tables count by character).
 - **Holes are counted by words (14 Nov 2026).** The read share counts unread words, not hole marks. A bare mark,
   `[...]`, `[?]` or `{?}`, is one unread word. A hole that covers more carries its size: `[... 4]` is four unread
   words. Count the unread cipher groups or words under the mark, from the decode or the transcription; where groups do
