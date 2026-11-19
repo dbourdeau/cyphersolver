@@ -168,8 +168,8 @@ cipher words only; `results/read_share.json`):
 - if the emendations are accepted too: 0.986 (69 of 70).
 
 With the strict marks no sentence is clean (`docs/_check_reading.py`: 0 of 7), so the letter is recorded as "decoded,
-not read". The share of tokens with an attested value is 96 of 112 (0.857), `outcome.fraction_read`; it is not a share
-of words read.
+not read". The profile records 48 of 70 sure cipher words (0.686) in `outcome.fraction_read`. Only
+`outcome.fraction_read_source` reports the separate token coverage, 96 of 112 with an attested value (0.857).
 
 The clear text of the letter and the postscript on the second page are outside this reading. A working transcription
 by AI agents is in `transcriptions/full_page.txt`, unchecked, with its guesses marked.
