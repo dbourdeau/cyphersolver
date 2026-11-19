@@ -1,0 +1,39 @@
+[
+ {
+  "year": 1544,
+  "date": "22 Oct 1544 (Prague)",
+  "title": "Alcort D/0004: Ferdinand I (Prague) to Pedro Lasso de Castilla and Gamiz, cipher in most part, deciphered in the margins (DARA i=764847)",
+  "correspondents": "Ferdinand I (Prague) -> Pedro Lasso de Castilla and Gamiz",
+  "place": "Prague",
+  "language": "Spanish",
+  "region": "Central Europe",
+  "period": "1497-1559",
+  "shelfmark": "Fundacion Hospital de Benasque, Fundacion Alcort, ES/FHB - CD/ALCORT/D/0004",
+  "folio_note": "At least three pages (page 3: 499 cipher tokens; page 2: about 1,000 signs). DARA: 'Documento cifrado en su mayor parte, y descifrado posteriormente en los margenes'. The decipherment of the time is on the sheet.",
+  "cls": "A",
+  "status": "Online on DARA (images, CC BY-NC-SA 4.0). The marginal decipherment of the time is the crib for a key. Two pre-registered tests of the key sheet Alcort D/0042 against this letter, both reported as failed at their bar (Brice Dudout, with Claude, 18 Nov 2026, issue #779): page 1 letter accuracy 0.547 against 0.344 for the best of 200 shuffled keys; page 3 0.812 against 0.442 (bar 0.85 missed by 0.038). Pages 1 and 3 are spent as test portions; page 2 is untouched. No target folder, no reading.",
+  "why": "The letter has its own contemporary decipherment, so a key can be rebuilt from adjacent plaintext and tested on a held-out page. D/0042 (a homophonic alphabet with syllabic code words, names of Charles V's circle of c. 1547-1553) is a candidate key for it; its decode already reads as Spanish in places and reproduces the gloss on page 3 (\"y tanto sera mayor ... ni la calidad del negocio lo sufre\"), but it has not passed a test at the project's bar.",
+  "importance": 3,
+  "solvability": 4,
+  "difficulty": 3,
+  "score_note": "Scored from Brice Dudout's report on issue #779 (two tests, 18 Nov 2026); the DARA images were not re-read by the project",
+  "verify": "Rebuild the key from the margin decipherment on page 2, freeze it and its sign identifications with a hash before any scoring (S01 and S17 are not told apart in the letter, hooked n, beta and 66 are separators or nulls: post hoc, not counted), transcribe in two blind passes, and report the result whichever way it goes. A pass validates that corrected version, not the 0.812. Compare with the imperial cipher of gonzaga1549, vargas1552 and the Simancas sheet: D/0042 is a different table (Papa = Bam against pollo).",
+  "links": [
+   {
+    "label": "DARA record ES/FHB - CD/ALCORT/D/0004",
+    "href": "https://dara.aragon.es/opac/app/item?i=764847"
+   },
+   {
+    "label": "DARA record of the key sheet ES/FHB - CD/ALCORT/D/0042",
+    "href": "https://dara.aragon.es/opac/app/item?i=764904"
+   },
+   {
+    "label": "Issue #779: the key-sheet tests",
+    "href": "https://github.com/dbourdeau/cyphersolver/issues/779"
+   }
+  ],
+  "needs_archive_scan": "no",
+  "seen": "image",
+  "source": "Alcort series on DARA, found by the wave 9 sweep (research/sweep_2026-11-15_chrome_wave9/key_leads.json, excluded there because the decipherment is on the sheet); the tests are Brice Dudout's, issue #779, 18 Nov 2026"
+ }
+]
