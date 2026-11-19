@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "campori-delcarretto-c10",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Modena, Biblioteca Estense Universitaria, Autografoteca Campori, Lettera D, Del Carretto, Alfonso II (sec. XVI), c. 10",
    "date": "2 Sep 1576",
    "year": 1576,
@@ -118,10 +118,11 @@
    "kind": "verification",
    "what": "Decrypt audit: key.tsv re-applied to transcription.txt and compared with reading.md. The 33 of 150 departing words were artefacts of the audit script (it applied the key sign by sign to the groups oPo/oP/oPo./oP., which key.tsv names 1, 2, 3; and it took the line labels for signs). With the documented tokenisation decryption.txt is reproduced word for word, the 149 certain words have the key's letters and the 33 others are all marked; no unmarked emendation. key_groups.tsv added (same values, groups written as in the transcription) and listed in outcome.key_file; after: 9 of 158, all at line labels; 0 of 148 with labels removed.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), from the reading's own count: 149 of 182 (0.819); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Key broken by annealing on the first eight cipher lines and validated once on the last three against an independent machine break of those lines; no clear text of the time exists.",
@@ -129,9 +130,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.956,
+  "fraction_read": 0.819,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule (certain + probable; restored words not counted), counted on reading.md: 182 cipher words, 149 certain, 25 probable, 2 restored, 6 unresolved = 174/182 = 95.6% (block alone: 172/174 certain or probable, 2 restored).",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 149 of 182 cipher words certain (block L01-L11 174, margin M1-M5 8; the reading's own count); 25 probable (one sign departing from the key, settled by the sense), 2 restored, 6 unresolved are holes. Before: 0.956 (certain + probable).",
   "verification": [
    "statistical test",
    "historical consistency"
@@ -178,15 +179,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "it",
-    "state": "read",
-    "read_share": 0.956,
+    "state": "read in part",
+    "read_share": 0.819,
     "summary": "Beccaria has said that no one could carry out His Majesty's orders better than Count Espinula (Spinola); the marquis has not failed and will not fail to make the truth known, for his agents' honour and His Majesty's service, although it is awkward that the man was approved and sent to His Majesty as trustworthy; let the agents do their duty on their side, for the man is better known to His Majesty and his ministers than is believed, and neither he nor the one behind him will reach his aim.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-06",
      "note": "Read as sentences 4-6 Nov 2026 by AI agents only; no human reading. The block construes as Italian sentences throughout (172 of 174 words certain or probable), but 25 probable words rest on a one-sign departure and the transcription is a single pass, so grade B rather than A."
-    }
+    },
+    "note": "18 Nov 2026, cipher words only, sure words only: 149 of 182 cipher words certain (81.9%); 25 probable, 2 restored and 6 unresolved (torn margin) are holes. Before 0.956, probable counted as read."
    }
   ],
   "key_file": [

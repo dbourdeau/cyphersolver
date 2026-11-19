@@ -1,6 +1,6 @@
 # delcarretto1576: Alfonso II del Carretto, marquis of Finale, to his agents in Milan, Regensburg, 2 Sep 1576 (catalogue 2164)
 
-Status: read (Brice Dudout, 6 Nov 2026; 174 of 182 cipher words read by sense = 95.6% without restorations, 96.7% with them; the 6 unresolved words are in the torn margin; key validated by our pre-registered test, 0.961 vs 0.263).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 149 of 182, 81.9%). Was read (Brice Dudout, 6 Nov 2026; 174 of 182 cipher words read by sense = 95.6% without restorations, 96.7% with them; the 6 unresolved words are in the torn margin; key validated by our pre-registered test, 0.961 vs 0.263).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry **2164** ("Lettera parzialmente
 cifrata", no decipherment noted). No decipherment of the time on the leaf; no edition found (see profile.json).
@@ -108,3 +108,15 @@ Not gaps of this reading (scope): the clear part of the letter is not transcribe
 | `reading.md` | the reading (Italian, spelling of the letter), marks, count, word-by-word notes |
 | `translation.md` | English translation |
 | `validation.txt` | protocol order, the single measurement and its reservations |
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+From the reading's own count: 182 cipher words (block 174, margin 8), 149 certain, 25 probable, 2 restored, 6
+unresolved (all in the torn margin). Sure words only: **149 of 182 = 81.9%** (the block alone at most about 85%): class
+**read -> read in part** (was 95.6% with the probable words as read). Main cause: the 25 probable words, each with one
+sign departing from the frozen key and settled by the sense; the decrypt audit (#710) found no unmarked emendation, so
+the marks themselves stand. No image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
+
+Floor for short texts (README, 19 Nov 2026): does not apply, 182 cipher words (the floor is for fewer than 40).
