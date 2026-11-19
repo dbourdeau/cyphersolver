@@ -44,3 +44,12 @@ Files: f191_codeM_transcription.txt, f191_codeM_reading.txt ({x} probable, [x] r
 
 - Isologue. ANOM C8 A 76 fol. 191 (31 March 1779) is the same memorandum in another cipher (the minister's "chiffre de 1777"), read separately. It supplies seven words left open in our text: [placé]es de [manière] (445, 209), [Europe] (401), qui ser[oient] [attaqu]ées (540, 276), [vents] / [favor]ables (501, 258), [facil]es (51), [intelligence]s (375), [allié]s (363). The August tables are revised: 64-gun ships (fol. 191: 60), corvettes 195 men (200), storeships 300 (400), total 9,220 (9,330).
 - Tables, words restored [x]: Obu[si]ers (308), Af[fû]ts (90), [Cra]pauds (702), [car]touches x3 (441), [lan]ces (532), [bri]coles / [bri]sées (562), [Fer] (567), [Ob]us x2 (111), [fusil] x2 (559), gar[go]usses x2 (154), [Poudre] (686), [Bro]uettes (253), [bataillons] (714.389), [compagnie]s (521), [tonneaux] (9), trois [cent] septante (omitted; 260 + 110 = 370). Probable: {mortiers}, {signaux}, {livres}. Unresolved: 504 x3 (heading of the quantity column), 818, 410 x2, 410.358.50, 733.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+From the reading's own count for fol. 196 (Bouillé's code, text and tables): 1,266 cipher words, 1,194 certain, 12
+probable, 46 restored, 14 unresolved. Sure words only: **1,194 of 1,266 = 94.3%** (text 759 of 794, 95.6%; tables 435
+of 472, 92.2%): class **read -> read in part** (was 98.9%). Main cause: the 46 restored words, most in the tables.
+Fol. 191 (code M) is not counted here. No image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
