@@ -2,7 +2,7 @@
 
 Status: in progress. Deciphered in part with George Lasry's key for BnF Espagnol 318 no. 95 (8 January 1497), applied
 unchanged: **653 of 933 cipher words (70.0%) of the letter of 18 December and 253 of 388 (65.2%) of the letter of
-10 November read**, by the repository's word rule (below). Read in part, under the read bar; the code groups in Latin
+10 November read**, by the repository's word rule (below). Both documents are classified as decoded, not read. The code groups in Latin
 letters are all unread. The key passed planned tests on text that nobody had decoded before, and an independent check
 with its own readers passed on both letters; the misses on the way are listed in order below. The reading awaits a
 reviewer's `reading_review`; no write-up page yet. All of this was done by AI agents on 17 Nov 2026; no person has
