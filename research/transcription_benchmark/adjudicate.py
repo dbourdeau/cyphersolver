@@ -506,8 +506,8 @@ was right. This page lets you check those decisions yourself.</p>
 <ol>
 <li>Look at the run of signs at the top. The <b style="background:var(--acc);color:#fff;border-radius:4px;padding:0 5px">?</b>
 marks the one sign that is disputed.</li>
-<li>Find that same run in the photo below (the screen says roughly which line it is on).</li>
-<li>Look at what is really written at the <b>?</b> and tap the reading that matches: A or B. Tap
+<li>Look at the zoomed photo: the disputed sign is outlined in red. (If the outline looks wrong, open the wider area below it.)</li>
+<li>Tap the button that shows what is really written inside the red outline. Tap
 <i>Neither</i> if it is something else, or <i>Can't tell</i> if you cannot find or read it.</li>
 </ol>
 <p class="hint">You are not told which reading is the human's or the AI's, on purpose. Any number of answers helps:
@@ -538,10 +538,12 @@ function render(){
   const opt = (k, label, read, key) => `<button data-v="${k}" class="${a===k?'sel':''}"><span class="k">${key} · ${label}</span>${read!==null?`<span class="read">${esc(show(read))}</span>`:''}</button>`;
   $("item").innerHTML = `<div class="meta">${esc(it.doc)} · page ${it.page}, about line ${it.line} of ${it.lines}</div>
     <div class="ctx">${esc(it.left)}<b>?</b>${esc(it.right)}</div>
-    <div class="hint">The two transcriptions disagree about the sign at the <b>?</b>. Find this run of signs in the photo
-    (about line ${it.line} of ${it.lines}) and tap what is actually written there.</div>
-    <div class="opts">${opt("A","The page shows",it.A,"1")}${opt("B","The page shows",it.B,"2")}${opt("neither","Something else",null,"3")}${opt("unclear","Can't tell",null,"4")}</div>
-    <img src="data:image/jpeg;base64,${it.img}" alt="page crop">`;
+    <div class="hint">The two transcriptions disagree about the sign at the <b>?</b>. It is outlined in red in the photo.
+    What is written inside the outline?</div>
+${it.zoom ? `<div class="hint"><b>Zoomed to the spot</b> (outlined in red):</div><img src="data:image/jpeg;base64,${it.zoom}" alt="zoomed spot">
+    <details><summary class="hint">Show the wider area (if the outline looks wrong)</summary><img src="data:image/jpeg;base64,${it.img}" alt="page crop"></details>`
+    : `<div class="hint">This spot could not be located automatically; look for it in the area below.</div><img src="data:image/jpeg;base64,${it.img}" alt="page crop">`}
+    <div class="opts">${opt("A","The page shows",it.A,"1")}${opt("B","The page shows",it.B,"2")}${opt("neither","Something else",null,"3")}${opt("unclear","Can't tell",null,"4")}</div>`;
   document.querySelectorAll("#item button").forEach(b => b.onclick = () => { ans[it.id] = b.dataset.v; save(); if (i < ITEMS.length-1) { i++; render(); window.scrollTo(0,0); } });
   $("out").value = JSON.stringify({sheet: __STAMP__, answers: ITEMS.filter(x => x.id in ans).map(x => ({id: x.id, choice: ans[x.id]}))});
   $("prev").disabled = i === 0; $("next").disabled = i === ITEMS.length-1;
@@ -559,6 +561,35 @@ render();
 </script></body></html>"""
 
 
+def zoom_image(work, item_id, loc):
+    """Zoomed view of the located spot, outlined in red; None when the spot was not located."""
+    import io
+    from PIL import ImageDraw
+    if not loc:
+        return None
+    band = os.path.join(work, "tiles_all", os.path.basename(loc["band"]))
+    if not os.path.exists(band):
+        return None
+    im = Image.open(band).convert("RGB")
+    W, H = im.size
+    x0, y0, x1, y1 = (float(loc[k]) for k in ("x0", "y0", "x1", "y1"))
+    bx0, by0, bx1, by1 = int(x0 * W), int(y0 * H), int(x1 * W), int(y1 * H)
+    bw, bh = max(20, bx1 - bx0), max(20, by1 - by0)
+    cw, ch = max(700, 8 * bw), max(300, 4 * bh)
+    cx, cy = (bx0 + bx1) // 2, (by0 + by1) // 2
+    left = min(max(0, cx - cw // 2), max(0, W - cw))
+    top = min(max(0, cy - ch // 2), max(0, H - ch))
+    crop = im.crop((left, top, min(W, left + cw), min(H, top + ch)))
+    d = ImageDraw.Draw(crop)
+    pad = 6
+    d.rectangle((bx0 - left - pad, by0 - top - pad, bx1 - left + pad, by1 - top + pad), outline=(228, 30, 30), width=5)
+    scale = 1100 / crop.width
+    crop = crop.resize((1100, max(1, int(crop.height * scale))), Image.LANCZOS)
+    buf = io.BytesIO()
+    crop.save(buf, "JPEG", quality=78)
+    return base64.b64encode(buf.getvalue()).decode()
+
+
 def app(work, n=40, splits=30, seed=11, out=None):
     """Interactive blind spot-check app (local HTML). The person sees the crop and the two readings as A and B, never
     which is human, AI or the adjudicators' choice. Key for decoding is written to <out>.key.json next to it."""
@@ -567,6 +598,13 @@ def app(work, n=40, splits=30, seed=11, out=None):
     items = {it["id"]: it for it in data["items"]}
     vs = {json.loads(l)["id"]: json.loads(l) for l in open(os.path.join(ADJ, "verdicts.jsonl"), encoding="utf-8")}
     rng = random.Random(seed)
+    locs = {}
+    for f in glob.glob(os.path.join(work, "locate", "loc_*.jsonl")):
+        for l in open(f, encoding="utf-8"):
+            if l.strip():
+                r = json.loads(l)
+                if r.get("found"):
+                    locs[r["id"]] = r
     agreed = [k for k, v in vs.items() if v["side"] != "split"]
     split = [k for k, v in vs.items() if v["side"] == "split" and items[k]["kind"] == "dispute"]
     rng.shuffle(agreed)
@@ -580,12 +618,13 @@ def app(work, n=40, splits=30, seed=11, out=None):
         im.thumbnail((1100, 1100))
         buf = io.BytesIO()
         im.convert("RGB").save(buf, "JPEG", quality=62)
+        zoom = zoom_image(work, k, locs.get(k))
         human_first = rng.random() < 0.5
         A, B = (it["human"], it["ai"]) if human_first else (it["ai"], it["human"])
         key[k] = {"A": "human" if human_first else "ai", "set": why, "adjudicated": vs[k]["side"]}
         rows.append({"id": k, "doc": it["doc"], "page": it["page"], "line": it["line"], "lines": it["lines_on_page"],
                      "left": it["left"], "right": it["right"], "A": A, "B": B,
-                     "img": base64.b64encode(buf.getvalue()).decode()})
+                     "img": base64.b64encode(buf.getvalue()).decode(), "zoom": zoom})
     stamp = json.dumps(f"s{seed}-{len(rows)}")
     out = out or os.path.join(HERE, "review_local", "spotcheck.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
