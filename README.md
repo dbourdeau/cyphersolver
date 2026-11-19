@@ -1113,6 +1113,17 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   readings examined) and `python research/decrypt_audit/detail.py <folder>` shows where a reading departs from its
   key; `targets/memoire1560/mark_emendations.py` is a model for marking them. Readings made before this date and
   not yet examined may not meet it.
+- **AI decipherment, human-checked on a sample of signs (19 Nov 2026, owner's decision).** A reading can carry this
+  verification level when a person picked, blind, the shape they see for signs chosen by a rule written before the
+  review sheet was built and dated before any answer (`outcome.sign_check`, `profile.schema.json`; the method page,
+  section 08). A sheet meets the level only with **at least 2 controls with a known answer, all answered correctly**
+  (an answer "none / other" on a control is a failure), and **at least 8 target signs** once the answers a faulty
+  thumbnail touched are removed. **The checker is named**, with whether they are inside or outside the project, and
+  the record says what an AI model did (rule, thumbnails, sheet, scoring, remarks). **The label says nothing about the
+  key**: it checks sign shapes, not the key, a code value or the reading, and it never changes the class, the state or
+  the read share. It is not a `human_check`, which is a check of a passage against the image without AI help. A sheet
+  whose counts reach the floor but that falls short in another way (a rule written after the answers, controls that
+  cannot exclude an answer by position) is recorded with `below_level` saying why, and does not count at the level.
 - **Holes are counted by words (14 Nov 2026).** The read share counts unread words, not hole marks. A bare mark,
   `[...]`, `[?]` or `{?}`, is one unread word. A hole that covers more carries its size: `[... 4]` is four unread
   words. Count the unread cipher groups or words under the mark, from the decode or the transcription; where groups do
