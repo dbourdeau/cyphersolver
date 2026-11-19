@@ -158,6 +158,46 @@ class SignLevel(unittest.TestCase):
         self.assertFalse(MP.sign_level(dict(ok, controls=1, controls_passed=1)))
         self.assertFalse(MP.sign_level({'signs_checked': 'unknown', 'controls': 2, 'controls_passed': 2}))
 
+    def test_below_level(self):
+        # a sheet whose counts reach the floor but whose record says why it is below the level (review of #789,
+        # 19 Nov 2026: a rule written after the answers) does not meet it
+        ok = {'signs_checked': 13, 'controls': 2, 'controls_passed': 2}
+        self.assertTrue(MP.sign_level(ok))
+        self.assertFalse(MP.sign_level(dict(ok, below_level='integration rule written after the answers')))
+        self.assertTrue(MP.sign_level(dict(ok, below_level='')))
+
+    def test_schema_declares_below_level(self):
+        schema = json.loads((pathlib.Path(__file__).resolve().parent.parent / 'profile.schema.json').read_text(encoding='utf-8'))
+        item = schema['properties']['outcome']['properties']['sign_check']['items']
+        self.assertEqual(item['properties']['below_level']['type'], 'string')
+
+
+class Wording(unittest.TestCase):
+    def test_review_of_19_nov(self):
+        c = MP.review_counts(ROOT)
+        en, fr = MP.page_en(c, 7, {}), MP.page_fr(c, 7, {})
+        # point 4: the read share is counted by a script where the reading declares its markup
+        self.assertIn('counted by a script where the reading declares its markup', en)
+        self.assertNotIn('By the README, a script counts it', en)
+        self.assertNotIn('Selon le README, un script la compte', fr)
+        # point 3: corrections.html is on main; the citation carries the commit; no "version number yet"
+        self.assertNotIn('not yet a public list of corrections', en)
+        self.assertNotIn('pas encore de liste publique des corrections', fr)
+        self.assertIn('href="corrections.html"', en)
+        self.assertIn('href="corrections.html"', fr)
+        self.assertNotIn('version number yet', en)
+        self.assertNotIn('numéro de version', fr)
+        self.assertIn('repository commit', en)
+        # the unedited-decryption rule, the ruleset bypass and the sign-check rules as the project's own
+        self.assertIn('nothing edited', en)
+        self.assertIn('deploy key', en)
+        self.assertIn('clé de déploiement', fr)
+        self.assertIn('These are the project&rsquo;s rules', en)
+
+    def test_one_french_file_name(self):
+        import _check_writeup as CW
+        self.assertNotIn('methode', CW.TOOL_PAGES)
+
 
 if __name__ == '__main__':
     unittest.main()

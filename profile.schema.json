@@ -239,6 +239,7 @@
               "rule": {"type": "string", "description": "Where the selection rule is written (NOTES section), with its date."},
               "rule_hash": {"type": "string", "description": "SHA-256 of the rule, the targets and the controls, committed before the answers."},
               "sheet_faults": {"type": "string", "description": "Every thumbnail or sheet error found afterwards."},
+              "below_level": {"type": "string", "description": "Why this sheet does not meet the level although its counts reach the floor (for example a rule written after the answers, or a sheet whose controls cannot exclude an answer by position). Present and not empty: the sheet is counted below the level."},
               "note": {"type": "string"}
             }
           }
