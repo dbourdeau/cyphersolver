@@ -129,7 +129,7 @@ def main(out_dir):
         print(doc, json.dumps(entry))
     res["_confusions_top20"] = confusion.most_common(20)
     print("top confusions (ref>hyp):", confusion.most_common(12))
-    with open(os.path.join(HERE, "analysis.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(HERE, os.environ.get("ANALYSIS_OUT", "analysis.json")), "w", encoding="utf-8") as fh:
         json.dump(res, fh, indent=1)
 
 

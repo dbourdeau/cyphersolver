@@ -140,7 +140,7 @@ def main(out_dir, passes):
         r["pass"] = m.group(1)
         rows.append(r)
         print(json.dumps(r))
-    with open(os.path.join(HERE, "scores.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(HERE, os.environ.get("SCORES_OUT", "scores.json")), "w", encoding="utf-8") as fh:
         json.dump(rows, fh, indent=1)
     return 0
 
