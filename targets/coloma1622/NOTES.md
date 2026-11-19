@@ -70,7 +70,7 @@ describes Richelieu: "although he is not of this King's Council, it is he who go
    words stay restored. Ignoring the marks would have given 88.7% on the 5 Nov count.
 3. **About ten restorations correct a transcribed token from the sense**; the sheet confirmed the token in eight of them.
 4. **C01's held-out lines are part of the target letter** (measured with an earlier key, then read with the later one).
-5. **One reader**: an AI agent transcribed and read; Brice Dudout answered the shape sheets only (M16, FL2-C, FS1). No palaeographer checked.
+5. **One reader**: an AI agent transcribed and read; Brice Dudout answered the shape sheets only (M16, FL2-C, FS1), which AI agents prepared and scored (recorded under `outcome.sign_check` since 19 Nov 2026). No palaeographer checked.
 6. **Position bias on the sheet FS1.** After the shuffle, the six expected shapes (4 conjectures + 2 controls) all fell in
    position "shape 3" (chance about 0.14%), and all six answers are "shape 3", so on that sheet the controls cannot tell a
    reading of the shape from an answer by position. Brice Dudout confirmed afterwards that he chose each answer by the
@@ -288,3 +288,7 @@ files in `mss18428/` (the contributor's NOTES and profile kept as `NOTES_PR560.m
   this PR; Herrero García (*Avisos* 100, 2023) and the *Correspondencia oficial* of Gondomar (Documentos inéditos, 1936-1945) not read.
 - **Catalogue 1271** (MSS/18428) leaves the catalogue: six of its seven cipher letters carry a decipherment of the time and the seventh is
   read in part here.
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here the record itself said that AI agents prepared the sheets. The three sheets move to `outcome.sign_check`, none at the level "AI decipherment, human-checked on a sample of signs": M16 (5 Nov 2026, 16 signs) had no control; FL2-C (11 Nov 2026, 13 points, controls 2 of 2) reaches the counts, but its integration rule was written after the answers had been received, so it is recorded with `below_level`; FS1 (11 Nov 2026, 4 signs, controls 2 of 2) has fewer than 8 signs, and its controls cannot exclude an answer by position (deviation 6). The sheets, rules and answers are not in the repository. Nothing in the reading changes.
