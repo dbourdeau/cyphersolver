@@ -498,6 +498,22 @@ textarea{width:100%;height:160px;font:13px ui-monospace,monospace;background:var
 </style></head><body>
 <header><b>Cipher spot-check</b> <span class="meta" id="prog"></span><div class="bar"><i id="pbar"></i></div></header>
 <main>
+<div class="card" id="intro" style="margin-bottom:16px">
+<b>What this is</b>
+<p>An AI and a human transcribed the same cipher letters. Where they disagree about a sign, two AI judges decided who
+was right. This page lets you check those decisions yourself.</p>
+<b>What to do on each screen</b>
+<ol>
+<li>Look at the run of signs at the top. The <b style="background:var(--acc);color:#fff;border-radius:4px;padding:0 5px">?</b>
+marks the one sign that is disputed.</li>
+<li>Find that same run in the photo below (the screen says roughly which line it is on).</li>
+<li>Look at what is really written at the <b>?</b> and tap the reading that matches: A or B. Tap
+<i>Neither</i> if it is something else, or <i>Can't tell</i> if you cannot find or read it.</li>
+</ol>
+<p class="hint">You are not told which reading is the human's or the AI's, on purpose. Any number of answers helps:
+even 15 or 20. When you stop, press <b>Copy results</b> at the bottom and paste the text into the chat.</p>
+<nav><button id="start">Start</button></nav>
+</div>
 <div class="card" id="item"></div>
 <nav><button id="prev">&larr; Back</button><button id="next">Next &rarr;</button></nav>
 <div class="card" style="margin-top:16px"><b>Results</b>
@@ -522,13 +538,16 @@ function render(){
   const opt = (k, label, read, key) => `<button data-v="${k}" class="${a===k?'sel':''}"><span class="k">${key} · ${label}</span>${read!==null?`<span class="read">${esc(show(read))}</span>`:''}</button>`;
   $("item").innerHTML = `<div class="meta">${esc(it.doc)} · page ${it.page}, about line ${it.line} of ${it.lines}</div>
     <div class="ctx">${esc(it.left)}<b>?</b>${esc(it.right)}</div>
-    <div class="hint">Find this spot in the crop by the signs around it. Which reading is written where the ? is?</div>
-    <div class="opts">${opt("A","Reading A",it.A,"1")}${opt("B","Reading B",it.B,"2")}${opt("neither","Neither",null,"3")}${opt("unclear","Can't tell",null,"4")}</div>
+    <div class="hint">The two transcriptions disagree about the sign at the <b>?</b>. Find this run of signs in the photo
+    (about line ${it.line} of ${it.lines}) and tap what is actually written there.</div>
+    <div class="opts">${opt("A","The page shows",it.A,"1")}${opt("B","The page shows",it.B,"2")}${opt("neither","Something else",null,"3")}${opt("unclear","Can't tell",null,"4")}</div>
     <img src="data:image/jpeg;base64,${it.img}" alt="page crop">`;
   document.querySelectorAll("#item button").forEach(b => b.onclick = () => { ans[it.id] = b.dataset.v; save(); if (i < ITEMS.length-1) { i++; render(); window.scrollTo(0,0); } });
   $("out").value = JSON.stringify({sheet: __STAMP__, answers: ITEMS.filter(x => x.id in ans).map(x => ({id: x.id, choice: ans[x.id]}))});
   $("prev").disabled = i === 0; $("next").disabled = i === ITEMS.length-1;
 }
+$("start").onclick = () => { $("intro").style.display = "none"; window.scrollTo(0,0); };
+if (Object.keys(ans).length) $("intro").style.display = "none";
 $("prev").onclick = () => { if (i > 0) { i--; render(); } };
 $("next").onclick = () => { if (i < ITEMS.length-1) { i++; render(); } };
 $("copy").onclick = async () => { try { await navigator.clipboard.writeText($("out").value); $("copy").textContent = "Copied"; } catch (e) { $("out").select(); document.execCommand("copy"); $("copy").textContent = "Copied"; } };
