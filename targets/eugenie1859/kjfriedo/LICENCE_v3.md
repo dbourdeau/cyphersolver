@@ -11,10 +11,10 @@ Author: Jozef Krajčovič (kjfriedo), with an AI model (Claude).
 - `400AP57_emperor_empress.md`
 - `400AP57_emperor_empress_tokens.tsv`
 
-**Images.**
-- `images/AN_400AP144_img181_f11r_received_deciphered.jpg`: credit "Archives nationales, 400AP/144".
-- `images/400AP57/*`: credit "Archives nationales, 400AP/57, dossier 1".
+**Images.** No Archives nationales images are stored with these files. The reuse terms for the Fonds Napoléon (400AP, a private fonds) are not confirmed. The inventory record says "Reproduction autorisée, selon les modalités en vigueur aux Archives nationales", but it is not stated whether the 2017 free-reuse policy covers private fonds. Each page is cited by its AN microfilm frame and can be viewed in the [AN viewer](https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_053754):
+- 400AP/144 img 181 = frame `DAFANCH97_MIC032003596`;
+- 400AP/57, dossier 1, img n = frame `DAFANCH97_MIC014` + (2330 + n); the list of frames is in `400AP57_emperor_empress.md`.
 
-Reuse of the images is subject to the Archives nationales terms. The repository owner will check these terms for the Fonds Napoléon images.
+When citing these pages, use the credit "Archives nationales, 400AP/144" or "Archives nationales, 400AP/57, dossier 1". If the Archives nationales confirm the terms, the images can be added in a separate pull request.
 
 The cipher groups transcribed from Gallica (BnF, NAF 11355, `btv1b52517729k`) are facts read from the scan; credit "Bibliothèque nationale de France, NAF 11355".
