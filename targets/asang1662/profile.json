@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "asang-134-8",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Kraków, Archiwum Narodowe, Archiwum Sanguszków, teka 134/8 (DECODE R7513)",
    "date": "31 July 1662",
    "year": 1662,
@@ -122,7 +122,8 @@
    ],
    "what": "Statistical validation (docs/_validate.py): 320 tokens, 24 types, pl-1790 order 4: reading -2.575 per letter; random keys -5.447 (z 10.1); key annealed onto shuffled ciphertext best -3.785 (mean -3.887, z 13.3); annealer on the real text -2.865. Verdict: pass.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), from the reading's own count: 67 of 71 cipher words certain (0.944); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -155,7 +156,7 @@
    "verdict": "pass",
    "notes": "claimed per-occurrence score -2.575; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.865"
   },
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Simple substitution broken from the ciphertext of the front by annealing, validated on the held-out reverse against 200 + 200 controls.",
@@ -163,9 +164,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.944,
   "fraction_read_method": "measured",
-  "fraction_read_source": "71/71 words read in their sense; 67 certain (94.4%), 3 probable (4.2%), 1 restored (1.4%), 0 unresolved.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 67 of 71 cipher words certain (the reading's own count); 3 probable {x} and 1 restored [x] are holes. Before: 71 of 71 (1.0), probable and restored counted as read.",
   "first_break": true,
   "verification": [
    "key confirms",
@@ -190,14 +191,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "pl",
-    "state": "read",
+    "state": "read in part",
     "summary": "News from Riga and Hamburg that the Swedes are arming and have ordered prayers and a fast for the third time, a sure sign of war; advice not to leave the side towards the sea bare, since it is far from Lwów to Gdańsk; the Elector will surely come in August.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Sonnet 5.5",
      "date": "2026-10-30",
      "note": "Read as sentences from Brice Dudout's reading.md and translation.md (not re-deciphered, not re-checked against the images): three coherent Polish sentences in the spelling of the cipher, with one probable word and one restored letter; the English translation follows the Polish."
-    }
+    },
+    "read_share": 0.944,
+    "note": "18 Nov 2026, cipher words only, sure words only: 67 of 71 cipher words sure (94.4%); the 3 probable and 1 restored words are holes. Before 1.0, probable and restored counted as read."
    }
   ],
   "key_file": "key.tsv",
