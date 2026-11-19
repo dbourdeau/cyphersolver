@@ -53,3 +53,7 @@ Still below 95%: read in part.
   "{lassera}" and "{de} {me} {uoir}" rest on the proposal and the key only (no doubtful sign in them).
 - The identity of the crossed o was formed on the three unresolved words themselves; the only independent test is the
   one on L1 (42/44), and the plate settled the shape.
+
+## Sign sheet J, 19 Nov 2026
+
+A further blind sheet (9 signs, controls 2 of 2) is recorded in NOTES.md, Sign check J, 19 Nov 2026, with its rule, answers and results in `sign_check/`.

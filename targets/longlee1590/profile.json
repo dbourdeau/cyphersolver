@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "longlee1590",
- "title": "Longlée to Henri IV, duplicate of a dispatch from Madrid [Dec 1589 - Feb 1590]: unpublished, read in part (87.2%)",
+ "title": "Longlée to Henri IV, duplicate of a dispatch from Madrid [Dec 1589 - Feb 1590]: unpublished, read in part (64.3% certain words; 88.9% with probable)",
  "documents": [
   {
    "id": "bne-mss994-f67",
@@ -147,6 +147,12 @@
    "kind": "verification",
    "what": "Second round of the decrypt audit: the 12 places where a word given as certain differs from decryption.txt were not marked in reading.md, because the file's only mark, {x}, is a class of the contributor's count; they stay listed in NOTES. One legend line added to reading.md (contributor's reading, not the output of the key; decryption.txt is) and one note line to the header of decryption.txt (labels missing from the repository key_K4.tsv; y printed i). No word changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "what": "Blind sign sheet J on ff. 67r-67v (DECODE R2253): nine signs whose shape decides a word, chosen by a rule written and hashed before the sheet, plus two controls (2 of 2). Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet, scored it and read one free-text remark. Eight answers named a K4 shape that makes the word, one was 'none / other shape' (Vre Mate, f. 67v, now probable). Nine tokens of transcription.txt changed, key K4 unchanged. Then the places of the 16 Nov 2026 decrypt audit still unmarked were marked {x}: du, qu'il, quant, s'attend, d'auantaige, Mate (f. 67r), chacun, demandes. Sure words only: 310/478 = 0.649 -> 308/479 = 0.643 (316/479 = 0.660 before the marking); certain + probable 0.872 -> 0.889. Still read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -158,9 +164,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.872,
+  "fraction_read": 0.643,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Daniel's rule (reading.md): 478 cipher words, 310 certain, 107 probable, 8 restored, 53 unresolved (estimated words per segment); certain + probable = 417/478 (after the blind plates of 11 Nov 2026; 2 Nov 2026: 415/481 = 86.3%, same letter).",
+  "fraction_read_source": "Sure words only, over cipher words (rule of PR #728), counted on reading.md on 19 Nov 2026 after blind sign sheet J and after marking {x} the places of the decrypt audit (16 Nov 2026) where a word given as certain still differed from decryption.txt: 479 cipher words, 308 certain, 118 probable, 8 restored, 45 unresolved (estimated words per segment); 308/479 = 0.643. Certain + probable = 426/479 = 0.889. Before: 478 words, 310 certain, 107 probable, 8 restored, 53 unresolved; the profile then gave certain + probable, 417/478 = 0.872 (sure words only, as printed: 310/478 = 0.649; with the 12 audit places as holes about 298/478 = 0.623).",
   "verification": [
    "matched control",
    "historical consistency"
@@ -194,13 +200,13 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.872,
-    "summary": "Pierre de Ségusson, sieur de Longlée, the French resident at Madrid, wrote in cipher to Henry IV early in 1590. The packet was intercepted: its copy, “Dupp. d’une despesche”, is now in the Biblioteca Nacional de España, with two other letters of Longlée that the Spaniards had deciphered by Luis Valle de la Cerda. Those two letters (3 March and 1 April 1590) were edited by Albert Mousset in 1912 from the originals at the French Foreign Office; this one was not, and no contemporary decipherment accompanies the copy. We publish the reading as far as we could take it, gaps included: 87.2% of the words (11 Nov 2026), below the 95% threshold we hold ourselves to. It shows an envoy of the Duke of Mercœur at Madrid asking that Philip II declare openly against Henry IV and seize the goods of royalist Frenchmen.",
+    "read_share": 0.643,
+    "summary": "Pierre de Ségusson, sieur de Longlée, the French resident at Madrid, wrote in cipher to Henry IV early in 1590. The packet was intercepted: its copy, “Dupp. d’une despesche”, is now in the Biblioteca Nacional de España, with two other letters of Longlée that the Spaniards had deciphered by Luis Valle de la Cerda. Those two letters (3 March and 1 April 1590) were edited by Albert Mousset in 1912 from the originals at the French Foreign Office; this one was not, and no contemporary decipherment accompanies the copy. We publish the reading as far as we could take it, gaps included: 88.9% of the words certain or probable, 64.3% certain (19 Nov 2026), below the 95% threshold we hold ourselves to. It shows an envoy of the Duke of Mercœur at Madrid asking that Philip II declare openly against Henry IV and seize the goods of royalist Frenchmen.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-11",
-     "note": "Read as sentences 2 Nov 2026 (French, read in part): f. 67r is coherent throughout except a few segments (duplicate sent by Bayonne; no war preparations beyond the fleet of 60-80 ships; arrival on the 21st of Tornasoni, sent by the Duke of Mercoeur to ask Philip II to declare against Henri IV, ban trade with royalist Frenchmen and seize their goods and ships; Roissieu expected for Mayenne; money 'pour entretenir la guerre'); f. 67v is patchier (Duke of Sessa to Rome, Count of Olivares, no dispatch from the King since 3 November, 'la defence de l'eglise catholique'). Updated 2 Nov 2026 after a second plate of 12 doubtful signs (pre-registered rules): the fleet is to oppose the English ('aux anglois s'ils auroient quelque deseing'); f. 67v 'presse du ‹partitent›'. 481 words, 313 certain, 102 probable, 8 restored, 58 unresolved (estimated) = 86.3%. Updated 11 Nov 2026 after three blind plates (controls all passed): 's'offre', 'ce semblable', 'celui de Sauoie demande secours', 'dict par Lesdiguieres', 'n'obiectant', 'de me uoir ici'; 478 words, 310 certain, 107 probable, 8 restored, 53 unresolved = 87.2%, so grade B and read in part. Key K4 validated by one measurement on a held-out portion (characters 0.874 vs controls max 0.361)."
+     "note": "Read as sentences 2 Nov 2026 (French, read in part): f. 67r is coherent throughout except a few segments (duplicate sent by Bayonne; no war preparations beyond the fleet of 60-80 ships; arrival on the 21st of Tornasoni, sent by the Duke of Mercoeur to ask Philip II to declare against Henri IV, ban trade with royalist Frenchmen and seize their goods and ships; Roissieu expected for Mayenne; money 'pour entretenir la guerre'); f. 67v is patchier (Duke of Sessa to Rome, Count of Olivares, no dispatch from the King since 3 November, 'la defence de l'eglise catholique'). Updated 2 Nov 2026 after a second plate of 12 doubtful signs (pre-registered rules): the fleet is to oppose the English ('aux anglois s'ils auroient quelque deseing'); f. 67v 'presse du ‹partitent›'. 481 words, 313 certain, 102 probable, 8 restored, 58 unresolved (estimated) = 86.3%. Updated 11 Nov 2026 after three blind plates (controls all passed): 's'offre', 'ce semblable', 'celui de Sauoie demande secours', 'dict par Lesdiguieres', 'n'obiectant', 'de me uoir ici'; 478 words, 310 certain, 107 probable, 8 restored, 53 unresolved = 87.2%, so grade B and read in part. Key K4 validated by one measurement on a held-out portion (characters 0.874 vs controls max 0.361). Updated 19 Nov 2026 after blind sign sheet J (controls 2 of 2): 'Roisieux' and 'l'argent' now come from the key without emendation; '{leur} charge', 'leur', '{le} duc', 'charge' (f. 67v), 'prisse a ce qu'on dict par Lesdiguieres' read; 'Vre Mate' (f. 67v) marked probable; 8 audit places marked {x}. 479 words, 308 certain, 118 probable, 8 restored, 45 unresolved = 88.9% certain + probable, 64.3% certain; grade B, read in part."
     }
    }
   ],
