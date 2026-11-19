@@ -28,7 +28,9 @@ reading_problems() is that check, per entry:
                             by, date, note} (A coherent with scattered holes; B coherent but raw, normalised in the
                             reading or translation); and it carries an English translation unless language is "en".
                             docs/_check_reading.py's sentence score is printed as a pointer for the reader;
-                            and it meets the README read bar: 95% of its words read as sense (read_share)
+                            and it meets the README read bar: 95% of its words read as sense (read_share), or,
+                            for a text of fewer than 40 cipher words, the floor: at most 5% or 2 holes, recorded
+                            as floor_used, cipher_words and holes (19 Nov 2026)
   state "read in part"      (24 Oct 2026) builds coherent sentences, reviewed and translated as above, but under
                             95% of its words read as sense; read_share records the measure
   state "decoded, not read" a mechanical decode shown for checking, not counted as a reading; no translation needed
@@ -117,6 +119,27 @@ def audit_review(folder_path, entry=None):
     return rec
 
 
+FLOOR_WORDS, FLOOR_HOLES = 40, 2   # README Conventions, 19 Nov 2026: a text of fewer than 40 cipher words is "read" with at most 5% or 2 holes
+
+
+def floor_problem(t):
+    """None when the entry may be "read" under the short-text floor (it declares floor_used, cipher_words and holes, the
+    text has fewer than 40 cipher words, holes are at most 5% of them or at most 2, and read_share agrees with the
+    counts); else a string saying why not."""
+    if not t.get('floor_used'):
+        return 'not declared (floor_used, cipher_words, holes)'
+    cw, holes, rs = t.get('cipher_words'), t.get('holes'), t.get('read_share')
+    if not isinstance(cw, int) or not isinstance(holes, int) or cw <= 0 or holes < 0:
+        return 'cipher_words and holes must be whole numbers'
+    if cw >= FLOOR_WORDS:
+        return f'the floor does not apply to a text of {FLOOR_WORDS} or more cipher words ({cw})'
+    if holes > max(FLOOR_HOLES, 0.05 * cw):
+        return f'{holes} holes in {cw} cipher words is over the floor (at most {FLOOR_HOLES} or 5%)'
+    if isinstance(rs, (int, float)) and abs(rs - (cw - holes) / cw) > 0.01:
+        return f'read_share {rs:.3f} does not match {cw - holes} of {cw} cipher words'
+    return None
+
+
 def reading_problems(folder_path, profile, score=True):
     """Problems with the readability of a reading's texts (George Lasry, 22 Oct 2026): [] when fine.
     Returns (hard, soft): hard refuses the write-up, soft is a warning."""
@@ -141,7 +164,13 @@ def reading_problems(folder_path, profile, score=True):
         if st == 'decoded, not read': continue
         rs = t.get('read_share')
         if st == 'read' and isinstance(rs, (int, float)) and rs < 0.95:
-            hard.append(f'{label}: state "read" but read_share {rs:.3f} < 0.95 (mark it "read in part")')
+            fl = floor_problem(t)
+            if fl is None:
+                pass                                     # a very short text read under the floor (19 Nov 2026)
+            elif t.get('floor_used'):
+                hard.append(f'{label}: floor_used but {fl}')
+            else:
+                hard.append(f'{label}: state "read" but read_share {rs:.3f} < 0.95 (mark it "read in part", or, for a text of fewer than {FLOOR_WORDS} cipher words with at most {FLOOR_HOLES} holes or 5%, record floor_used, cipher_words and holes)')
         if not listify(t.get('translation')) and (t.get('language') or '').lower() != 'en':
             hard.append(f'{label}: no English translation (outcome.texts[].translation; or language "en")')
         # the test is a reader's: someone read the decryption as sentences and recorded it (Lasry: "the acceptance

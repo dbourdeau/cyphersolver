@@ -1095,7 +1095,8 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   The 95% bar applies to the cipher words of each document. **Floor for short texts:** a document of fewer than 40
   cipher words is "read" when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more
   (so a 9-code telegram can have 2 holes, a 30-word note 2, a 39-word note 2). The floor never applies to a text of 40
-  words or more, and the page and profile state the number of holes and that the floor was used. Set after Brice
+  words or more, and the page and profile state the number of holes and that the floor was used: in `outcome.texts[]`
+  as `floor_used: true`, `cipher_words` and `holes` (the checker refuses a floor that does not hold). Set after Brice
   Dudout's recount of the 49 targets he contributed (#728), where 54 of 96 telegrams of 8 to 20 codes fell under the
   bar for one or two doubtful codes each. **Chinese telegraphic codes:** one code is one word, and so one character
   (the Wenmi tables count by character).
