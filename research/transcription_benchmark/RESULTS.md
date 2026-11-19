@@ -77,16 +77,41 @@ compared. Only the cipher lines were to be read; the prose was to be skipped.
    were redone on pages cut at 270 degrees. The other session's guess of 90 degrees in `prep_tiles.py` was wrong for
    ferdinand and was corrected there. R1889 page 2 is mostly show-through, so only 3 cipher lines were read on it.
 
+## Extension and replication (a second session of this project, 19 Nov 2026)
+A forked session transcribed the six documents that had been prepared but not run in the first round: hellen R1953
+and kauderbach R2078 (digits), and its own three passes each of carpio R1009 and R1010 and ferdinand R1889 and
+R1890. Its 30 raw pass files are in `passes/` (the 12 passes on dandini, hellen R1049 and santacroce are identical to
+those in `runs/`). These numbers were re-scored here from the raw files and reproduce (`scores.json` and
+`analysis.json` now hold all 30 passes).
+
+| Document | Digit/sign error, three passes | Note |
+|---|---|---|
+| hellen R1953 (2,858 digits) | 1.4%, 1.5%, 1.5% | 94% to 95% of dot-separated groups exact |
+| kauderbach R2078 (2,522) | 4.0%, 3.7%, 4.4% | dense continuous digits, photographed sideways |
+| carpio R1009, second set of passes | 17.9%, 17.9%, 18.2% | mine: 17.7%, 17.8%, 18.7% |
+| carpio R1010, second set | 14.0%, 15.9%, 17.9% | mine: 15.9%, 16.4%, 16.9% |
+| ferdinand R1889, second set | 3.5%, 3.5%, 2.5% | mine: 3.7%, 2.9%, 2.9% |
+| ferdinand R1890, second set | 3.2%, 2.9%, 3.0% | mine: 2.3%, 3.0%, 2.7% |
+
+- **The letter results replicate.** Two independent sets of three passes land within about two points of each other on
+  carpio and one point on ferdinand, so the carpio-versus-ferdinand gap is not noise from one run.
+- **All 30 passes pooled: 5.1% error (94.9% accuracy);** digit-only documents (18 runs) 4.0%, alphanumeric documents
+  (12 runs) 8.7%.
+- **Accuracy varies widely inside one correspondence.** Hellen R1953 reads at about 98.5% while hellen R1049, from the
+  same target, reads at 89% to 93%; the 4-read-as-2 confusion that dominated R1049 does not dominate R1953. The cause is
+  not established here (page images, photographing, hand, or number layout are all untested explanations).
+- The top confusions over all 30 passes are 4 read as 2 (269), a crossed 1 read as 4 (89), 8 read as 0 (72), o read as 0
+  (51), 4 read as 9 (50) and b read as 6 (49).
+
 ## Limits (read before quoting any number)
 - **This is not the frozen 41-document sample.** The frozen sample (`sample.json`) was drawn from a frame that turned out
   too loose: for many documents `reference_file` was only a length-measuring script and "images in the folder" were
   article figures. A clean pairing of a human transcription with page images of the same record exists for about ten
   documents; these four digit-cipher documents were the ones run. They are a convenience subset chosen after the
   audit, not a random draw. The frozen sample stays in the repository as committed.
-- **Not run:** r1873, hellen R1953, kauderbach R2078 (the last two were prepared for a second round but not
-  transcribed), the Pillon telegram, and the downstream solver test (key recovery from AI vs human transcription).
-  The digit-only results above say nothing about letter ciphers; see the next section for the two letter pairs that
-  were run, which is only four documents from two hands.
+- **Not run:** r1873, the Pillon telegram, and the downstream solver test (key recovery from AI vs human
+  transcription). The letter pairs (carpio, ferdinand) and the two further digit documents (hellen R1953, kauderbach
+  R2078) are reported in the next two sections; that is ten documents from at least six hands in all.
 - **One reference per document.** DECODE transcriptions carry their own errors and uncertainty marks (stripped here).
   The error rates are upper bounds on the AI's error where the reference is wrong, and unknown where it is right but
   the AI agrees with the same slip.
