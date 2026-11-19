@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "turkei-i-7-2-18",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Österreichisches Staatsarchiv, Haus-, Hof- und Staatsarchiv (Vienna), Staatenabteilungen, Türkei I, box 7, file 2, fols. 143r–146r (“7-2-18”); 207 ciphered lines",
    "date": "1547 (copy sent with Malvezzi's letter of 8 March 1548)",
    "year": 1547,
@@ -129,10 +129,11 @@
    "kind": "verification",
    "what": "Claude Opus 5.5 (PR review on merge): route Constantinople -> Augsburg (Ferdinand at the Diet when Malvezzi sent the copy, 8 Mar 1548), gaps restated, novelty wording, human_check from NOTES, distinct_symbols set unknown (63 not measured); graded A.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), on reading.md h1-h6: 1,424 of 1,562 (0.912); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read after matching with key from external sources",
   "method_basis": "Malvezzi's alphabet from DECODE R367/R386, calibrated on a sibling letter with a contemporary decipherment, frozen, then applied.",
@@ -140,9 +141,9 @@
    "transcription",
    "key extended or corrected"
   ],
-  "fraction_read": 0.975,
+  "fraction_read": 0.912,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Counted group by group: 1,146 groups in the C14-C15 passes 98.1%; whole piece about 97.5%.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 1,424 of 1,562 words of reading.md sections h1-h6 (the whole copy is in cipher), every marked word a hole (h1 13/23, h2 87/98, h3 97/113, h4 991/1,078, h5 14/18, h6 222/232). Before: about 97.5% of about 1,550 cipher groups, partly estimated.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -183,14 +184,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "la",
-    "state": "read",
+    "state": "read in part",
     "summary": "In the autumn of 1547 Henry II, king for six months, sent his pantler, the sieur d’Huyson, to Constantinople with a letter of credence for Suleiman and instructions: join the truce that Charles V and Ferdinand had just made with the Porte, but have the king’s allies — the Swiss first — included in it, and expose imperial bad faith. Ferdinand’s resident in Constantinople, Giovanni Maria Malvezzi, got hold of the text, translated it back “from Turkish into Latin, word for word” and sent it to Vienna in cipher, together with a second, longer letter and a third, carried by a captain, about the Diet of Augsburg and asking for the Ottoman fleet. No earlier decipherment of the cipher is known; the archive's catalogue marks it not deciphered.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (PR review on merge)",
      "date": "2026-10-27",
      "note": "Read reading.md (Latin and Italian) against translation.md section by section: the credence, Malvezzi's note, the long letter and the third letter build coherent sentences throughout, with 27 scattered ‹…› holes and 86 probable readings in braces; the weakest passages are the Italian heading (143r ll. 1-2), the three groups after 'ne deceptione' (143v l. 30) and 'imo ‹…› cum ‹…›'. The Latin is a back-translation from Turkish, so its syntax wavers between persons."
-    }
+    },
+    "read_share": 0.912,
+    "note": "18 Nov 2026, cipher words only, sure words only: 1,424 of 1,562 words sure (91.2%) over sections h1-h6 of reading.md (the whole copy is in cipher); every word marked {x}, [x] or ‹…› is a hole. Before about 0.975 of the groups."
    }
   ],
   "key_file": "key_KC01.json",

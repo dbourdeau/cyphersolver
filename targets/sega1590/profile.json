@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "aav-francia32-f17",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, f. 17r-v",
    "date": "26 November 1590",
    "year": 1590,
@@ -39,7 +39,7 @@
   },
   {
    "id": "aav-francia32-f71",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 32, f. 71r-v",
    "date": "16 January 1591",
    "year": 1591,
@@ -156,10 +156,11 @@
    ],
    "what": "Letter of 16 Jan 1591, f. 71r-v: 18 enciphered groups transcribed, frozen, decoded with key 65 unchanged and read (52/52 words).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728): 26 Nov 1590 79/84 (0.940), 16 Jan 1591 46/52 (0.885); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "not applicable",
   "method": "read with known key",
   "method_basis": "Published historical key (Meister 1906, no. 65) applied unchanged, validated on a held-out letter with a contemporary decipherment.",
@@ -167,9 +168,9 @@
    "transcription",
    "catalogue correction"
   ],
-  "fraction_read": 0.985,
+  "fraction_read": 0.919,
   "fraction_read_method": "measured",
-  "fraction_read_source": "134/136 words read in their sense over two letters: 26 Nov 1590, 82/84 (79 certain, 3 probable, 0 restored, 2 unresolved); 16 Jan 1591, 52/52 (46 certain, 6 probable).",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 26 Nov 1590 79 of 84 enciphered words certain, 16 Jan 1591 46 of 52 (the contributor's counts); 125 of 136 in all. Before: 134 of 136 (0.985), probable counted as read.",
   "first_break": true,
   "verification": [
    "contemporary decipherment",
@@ -193,14 +194,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "it",
-    "state": "read",
+    "state": "read in part",
     "summary": "Sega reports the bishop's bad nature and leaning to the opposite party, out of limping religion rather than politics, and says he will temporise, showing feelings for and against him while stirring the parties to tell all they know.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Sonnet 5.5",
      "date": "2026-10-30",
      "note": "Read as sentences from Brice Dudout's reading.md and translation.md (not re-deciphered, not re-checked against the images): one coherent Italian sentence with two marked holes in the last clause; the final enciphered clause is left unresolved and untranslated."
-    }
+    },
+    "read_share": 0.94,
+    "note": "18 Nov 2026, cipher words only, sure words only: 79 of 84 enciphered words certain (94.0%); 3 probable and 2 unresolved are holes."
    },
    {
     "doc": "aav-francia32-f71",
@@ -210,14 +213,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "it",
-    "state": "read",
+    "state": "read in part",
     "summary": "Sega on Mayenne writing something good for him to Rome, the protection of the Duke of Bavaria, the long-awaited \"pomo\", and a cause misrepresented by both sides.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Sonnet 5.5",
      "date": "2026-10-30",
      "note": "Read as sentences from reading.md and translation.md (not re-deciphered): the enciphered words are set inside the clear text of the letter and read coherently, but the text is abridged and the translation is in fragments."
-    }
+    },
+    "read_share": 0.885,
+    "note": "18 Nov 2026, cipher words only, sure words only: 46 of 52 enciphered words certain (88.5%); 6 probable are holes."
    }
   ],
   "key_file": "key.tsv",

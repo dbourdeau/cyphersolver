@@ -1,6 +1,6 @@
 # Henry II to Suleiman the Magnificent, 1547: Malvezzi's enciphered Latin copy (catalogue 500, HHStA Türkei I 7-2-18)
 
-Status: read (Brice Dudout, 27 Oct 2026; about 97.5% of about 1,550 cipher groups read (counted group by group in part, estimated line by line elsewhere), 18 unresolved; certain, probable and restored groups not counted separately for the whole item; words not counted; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 1,424 of 1,562, 91.2%). Was read (Brice Dudout, 27 Oct 2026; about 97.5% of about 1,550 cipher groups read (counted group by group in part, estimated line by line elsewhere), 18 unresolved; certain, probable and restored groups not counted separately for the whole item; words not counted; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#huyson-1547
@@ -50,3 +50,14 @@ Method: (1) starting key = Malvezzi’s alphabet preserved with Ferdinand I’s 
 ## Remaining gaps
 
 - 18 groups left unresolved (4 in Malvezzi's Italian heading, 143r l. 2); {Bareo} and one group in 145v l. 17 not identified.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+Malvezzi's copy is wholly in cipher, so every word of `reading.md` (sections h1-h6, headings left out) counts.
+**1,562 words, 1,424 sure, 138 holes** (every word marked probable {x}, restored [x] or unresolved ‹…›):
+h1 13/23, h2 87/98, h3 97/113, h4 991/1,078, h5 14/18, h6 222/232. **91.2%**: class **read -> read in part**. The old
+figure (about 97.5% of about 1,550 groups) was counted in groups, partly estimated line by line, with probable groups as
+read. Counted by a script that takes every marked word as a hole (words split on spaces), not checked word by word
+against the decryption; one reviewer, no image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
