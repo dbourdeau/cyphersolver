@@ -121,6 +121,9 @@ class Counts(unittest.TestCase):
         self.assertIn('Déchiffrement par IA, vérifié par une personne sur un échantillon de signes', fr)
         self.assertIn('id="sign-check"', en)
         self.assertIn('id="signes"', fr)
+        # the first readings: the checker is the contributor (not independent), said on the page
+        self.assertIn('the checker is the contributor', en)
+        self.assertIn('le vérificateur est le contributeur', fr)
         for page in (en, fr):
             sec = page.split('<h3 id="sign')[1].split('<h2')[0]
             self.assertNotRegex(sec.lower(), r'\bvalidated?\b|\bvalidée?\b')
