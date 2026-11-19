@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "breant1673",
- "title": "Bréant 1673: Bréant (Cologne) to M. de Réveillon (Kaiserswerth), 26 Dec 1673 and 8 Jan 1674 (Médiathèque Georges-Delaw, Sedan, fonds Gourjault, carton 170, pieces 3-4): contemporary decipherment transcribed, alphabetical nomenclator rebuilt from it",
+ "title": "Bréant 1673: Bréant (Cologne) to M. de Réveillon (Kaiserswerth), 26 Dec 1673 and 8 Jan 1674 (Médiathèque Georges-Delaw, Sedan, fonds Gourjault, carton 170, pieces 3-4): contemporary decipherment transcribed, approximately alphabetical nomenclator rebuilt from it",
  "documents": [
   {
    "id": "gourjault-170-3",
@@ -30,7 +30,7 @@
     "by": "llm from images",
     "source": "photographs sent by the Médiathèque Georges-Delaw (not published)",
     "image_quality": "good",
-    "notes": "doubtful digit shapes settled by a blind reading sheet answered by Brice Dudout (18 Nov 2026, two controls passed)"
+    "notes": "AI transcription (Claude Opus 5.5 agents); human blind check of the doubtful digit shapes only, by a reading sheet answered by Brice Dudout (18 Nov 2026, two controls passed)"
    }
   },
   {
@@ -60,7 +60,7 @@
     "by": "llm from images",
     "source": "photographs sent by the Médiathèque Georges-Delaw (not published)",
     "image_quality": "good",
-    "notes": "doubtful digit shapes settled by a blind reading sheet answered by Brice Dudout (18 Nov 2026, two controls passed)"
+    "notes": "AI transcription (Claude Opus 5.5 agents); human blind check of the doubtful digit shapes only, by a reading sheet answered by Brice Dudout (18 Nov 2026, two controls passed)"
    }
   }
  ],
@@ -70,7 +70,7 @@
    "syllabic",
    "homophonic"
   ],
-  "summary": "Numerical syllabic nomenclator, groups 6-319 separated by colons, laid out alphabetically (a = 55 ... z = 316) with whole words filed in place, a few homophones and three name codes",
+  "summary": "Numerical syllabic nomenclator, groups 6-319 separated by colons, laid out approximately alphabetically (a = 55 ... z = 316, with inversions) with whole words filed in place, a few homophones and three name codes",
   "symbol_kind": "digits",
   "digit_groups": {
    "width": "1-3",
@@ -138,7 +138,7 @@
    "technique": [
     "key-structure hypothesis"
    ],
-   "what": "The table is alphabetical (a = 55 ... z = 316, whole words in place): this fixes 208 = o, 293 = vo and 74 = ca, and every discordant reading of the decipherer (153, 159, 99, 221, 228) is settled by the words.",
+   "what": "The table is approximately alphabetical (a = 55 ... z = 316, whole words filed by initial letter; inversions 103/104, 159/163, 106-108/109-113, 257): 208 = o, 293 = vo and 74 = ca are inferred from this order (208 counts the struck-through {avoit}; for 293 the decipherer wrote no). The six discordant readings of the decipherer (153, 159, 99, 221, 228, 293) are settled by the words.",
    "result": "worked"
   },
   {
@@ -161,14 +161,14 @@
   "class": "read",
   "key": "recovered",
   "method": "read from existing decipherment",
-  "method_basis": "Both letters carry a contemporary interlinear decipherment, which gives the text; the 90-group alphabetical nomenclator in key.tsv was rebuilt here from it and checked word by word against it. No new reading is claimed.",
+  "method_basis": "Both letters carry a contemporary interlinear decipherment, which gives the text; the 90-group approximately alphabetical nomenclator in key.tsv was rebuilt here from it and checked word by word against it. No new reading is claimed.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
   "fraction_read": 0.988,
   "fraction_read_method": "measured",
-  "fraction_read_source": "decryption files: 163 cipher words, 161 sure (decipherer, key and context agree), 2 probable, 0 restored, 0 unresolved; sure words only (rule #728).",
+  "fraction_read_source": "decryption files: 163 cipher words, 161 sure (decipherer, key and context agree: agreement with the contemporary gloss plus sense, not an independent test of the key), 2 probable, 0 restored, 0 unresolved; sure words only (rule #728).",
   "first_break": false,
   "verification": [
    "contemporary decipherment",
@@ -185,13 +185,13 @@
    {
     "who": "dudout",
     "role": "transcription",
-    "note": "cipher of both letters transcribed; the contemporary decipherment aligned word by word; the alphabetical nomenclator rebuilt from it (key.tsv); counts under rule #728. Content existing, not a solution. Images: Médiathèque Georges-Delaw, Sedan (fonds Gourjault, cartons 170 and 199), obtained through the Société d'histoire et d'archéologie du Sedanais (SHAS). The form of this credit has been asked of the SHAS and will be adjusted to its reply.",
+    "note": "cipher of both letters transcribed; the contemporary decipherment aligned word by word; the approximately alphabetical nomenclator rebuilt from it (key.tsv); counts under rule #728. Content existing, not a solution. Images: Médiathèque Georges-Delaw, Sedan (fonds Gourjault, cartons 170 and 199), obtained through the Société d'histoire et d'archéologie du Sedanais (SHAS). The form of this credit has been asked of the SHAS and will be adjusted to its reply.",
     "date": "2026-11-18"
    }
   ],
   "gaps": [
    {
-    "item": "{avoit} and {casaque} in the passage struck through by the decipherer: 74 and 319 inferred from the alphabetical order",
+    "item": "{avoit} and {casaque} in the passage struck through by the decipherer: 74 and 319 inferred from the approximately alphabetical order",
     "blocker": "too-short"
    }
   ],
