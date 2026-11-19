@@ -109,6 +109,14 @@ Both reading files were read as sentences and a `reading_review` recorded for ea
 - The grade says the sentences are coherent. It does not make the words secure: the state stays read in part and the
   read shares stay the strict tier (0.367 and 0.407). No image was looked at in this pass.
 
+## Niccolini's bare passages, catalogue 2380 (19 Nov 2026, Malcolm McBratney with Claude): attempted, not read
+
+As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MAP LXXIV (docs 42 c. 90r, 49 c. 104r, 81 c. 177r, 90 c. 200r; Aug 1492 - Jan 1493) were transcribed blind with neutral labels, frozen and decoded once with `aaymeloglu/key.json` unchanged. Files and method in `niccolini/README.md`. No person has checked the transcriptions.
+
+- Strict judge (word units): doc 42 16/26 = 61.5%, doc 49 0/5, doc 81 4/8 = 50.0%, doc 90 2/6 = 33.3%. All below our 65% line: attempted, not read.
+- Shuffle control (5,000 at seeds 20261112 and 7): doc 42 0 and 0, doc 81 0 and 1; docs 49 and 90 fail (14/10, 158/139).
+- Doc 42 decodes in part ("el re di Francia ... dal governo [22] ... e apto ad governare lui per non"), which suggests the 1494 sheet is close to the 1492-93 key but differs in some signs. A key from Niccolini's glossed letters was not built.
+
 ## Remaining gaps
 
 - 32 + 17 words chosen by sense and 54 + 12 forced words still rest on ambiguous signs (signs not sorted with confidence; b, 6 and others at 1272 px) - blocker: none yet; the shape sorts of ÷ and d/l were one pass each by agents that had the labels, and nobody has re-sorted them blind; doc. 114 is used up as a test (failed, 0.838 against 0.85) and Ridolfi's glossed letters 101-110 have not been used
@@ -119,6 +127,7 @@ Both reading files were read as sentences and a `reading_review` recorded for ea
 - The transcription of doc. 114, the shape sorts and the contributor's gloss reading were not compared with the images here - blocker: none yet; the ASF server reset the connection on the evening of 14 Nov 2026 (it answered in the morning)
 - The clear text of the four letters was read from the same images and not collated - blocker: none yet
 - Higher-resolution images - blocker: needs-physical-access; the ASF server serves 1272 px at most
+- Niccolini 2380 (docs 42, 49, 81, 90) attempted, not read with the 1494 key (`niccolini/README.md`) - blocker: not-attempted: a key from Niccolini's own glossed letters of 1492-93 in this filza (docs 6, 21, 32, 35-37, 59, 62, 72, 78, 81 c. 176r, 97), then a declared second pass on docs 42 and 81; docs 49 and 90 are too short for the shuffle control.
 
 ## Escalation
 
