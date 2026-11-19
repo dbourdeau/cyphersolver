@@ -103,14 +103,50 @@ those in `runs/`). These numbers were re-scored here from the raw files and repr
 - The top confusions over all 30 passes are 4 read as 2 (269), a crossed 1 read as 4 (89), 8 read as 0 (72), o read as 0
   (51), 4 read as 9 (50) and b read as 6 (49).
 
+## Downstream test: does the error change the plaintext? (santacroce R6 and R7 only, 19 Nov 2026)
+Santacroce is the one pair here with an established key (Lasry's reconstructed key) and a decoder that runs on a bare
+digit stream (`targets/santacroce1552/decode.py`: beam-search segmentation under the Italian language model). The same
+decoder was run on the human digit stream, each of the three AI passes, their three-pass vote, and a control: the human
+stream with random substitutions, insertions and deletions injected at each AI pass's own error counts (40 draws per
+pass). Nomenclator marks are not in any stream, so nomenclator elements decode as letters in all readings alike.
+`downstream.py`, `downstream.json`.
+
+| | digit error | plaintext letters differing from the human-stream plaintext | readability (Italian LM, log-prob per character, higher is better) |
+|---|---|---|---|
+| **R6** human stream | | | -2.84 |
+| R6 AI passes 1, 2, 3 | 3.3%, 5.1%, 3.4% | 9.8%, 10.1%, 8.4% | -3.03, -2.98, -3.04 |
+| R6 three-pass vote | 2.7% | 8.1% | -3.02 |
+| R6 random-error control (120 draws) | 3.9% | 10.4% (sd 2.3) | -3.15 |
+| **R7** human stream | | | -2.93 |
+| R7 AI passes 1, 2, 3 | 2.1%, 2.2%, 1.6% | 4.6%, 6.4%, 4.1% | -2.99, -2.96, -2.91 |
+| R7 three-pass vote | 1.8% | 3.9% | -2.93 |
+| R7 random-error control (120 draws) | 2.0% | 4.9% (sd 1.0) | -3.09 |
+
+1. **A digit error rate of 2% to 5% becomes a plaintext letter divergence of 4% to 10%**, about 2 to 3 times as
+   large, because one wrong digit can change a letter, merge or split a letter, or shift where a null splits a word.
+2. **In letters changed, the AI's errors do about as much damage as random errors of the same size** (R6 8% to 10%
+   against 10.4% plus or minus 2.3; R7 4% to 6% against 4.9% plus or minus 1.0). There is no sign here that they are
+   either much worse or much better.
+3. **In readability, the AI's errors are gentler than random ones.** Plaintext from the AI readings stays closer to
+   Italian than plaintext from random errors of the same size (R6 -3.0 against -3.15; R7 -2.9 to -3.0 against -3.09).
+   One reading, R7 pass 3 (-2.91), scores slightly above the human stream (-2.93). A plausible reason, not tested, is
+   that the AI confuses look-alike digits that decode to similar letters (for instance 8, 6 and 4, which map to the
+   vowels a, o and e), whereas random errors do not.
+4. **The three-pass vote is the best reading on both documents,** at 3.9% to 8.1% letter divergence, matching its
+   better digit rate.
+
+Limits specific to this test: two documents, one key and one hand; the baseline is the human-stream decode, not the
+true plaintext, so it contains the human transcription's own errors and the lost nomenclator elements; readability is
+judged by one language model; the random control is uniform noise, an idealisation; no one has read the plaintexts.
+
 ## Limits (read before quoting any number)
 - **This is not the frozen 41-document sample.** The frozen sample (`sample.json`) was drawn from a frame that turned out
   too loose: for many documents `reference_file` was only a length-measuring script and "images in the folder" were
   article figures. A clean pairing of a human transcription with page images of the same record exists for about ten
   documents; these four digit-cipher documents were the ones run. They are a convenience subset chosen after the
   audit, not a random draw. The frozen sample stays in the repository as committed.
-- **Not run:** r1873, the Pillon telegram, and the downstream solver test (key recovery from AI vs human
-  transcription). The letter pairs (carpio, ferdinand) and the two further digit documents (hellen R1953, kauderbach
+- **Not run:** r1873 and the Pillon telegram. The downstream test was run on santacroce R6 and R7 only (next
+  section); the other eight documents have no decoder that works from a bare digit or sign stream. The letter pairs (carpio, ferdinand) and the two further digit documents (hellen R1953, kauderbach
   R2078) are reported in the next two sections; that is ten documents from at least six hands in all.
 - **One reference per document.** DECODE transcriptions carry their own errors and uncertainty marks (stripped here).
   The error rates are upper bounds on the AI's error where the reference is wrong, and unknown where it is right but
