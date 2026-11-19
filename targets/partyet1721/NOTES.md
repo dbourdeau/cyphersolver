@@ -1,6 +1,6 @@
 # Partyet 1721: the consul at Cadiz to the Conseil de Marine, 7 April 1721 (catalogue 541)
 
-Status: read (Brice Dudout, 28 Oct 2026; 35 of 35 words read in their sense, 33 certain, 2 probable; Daniel Bourdeau's 95% rule).
+Status: read, by the floor for short texts (19 Nov 2026; recounted 18 Nov 2026 over cipher words, sure words only: 33 of 35, 94.3%). Before the recount: read (Brice Dudout, 28 Oct 2026; 35 of 35 words read in their sense, 33 certain, 2 probable; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#partyet-1721
@@ -50,3 +50,19 @@ restored from the phrase "pour le bien du s..." and its place among the s- words
 attested in three glossed letters in the same table: "pour le bien du service" = 347.261.80.144.392 (AE/B/I/230,
 Gibraltar, 7 June 1725, the very same sequence), "au service du Roy" = 50.392.144.377 (AE/B/I/239, 28 Nov 1730),
 "au service de Sa M. C." = 50.80.144.392... (AE/B/I/239, 12 Dec 1730).
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+35 cipher words: 33 certain, 2 probable (dernie{r}, déci{dé}, whose endings are lost in the binding). Sure words only:
+**33 of 35 = 94.3%**: class **read -> read in part** (superseded on 19 Nov 2026 by the floor for short texts, below) (was 100%). The two endings are lost in the binding, so only the
+original or another copy could settle them. No image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
+
+## Floor for short texts (19 Nov 2026)
+
+README rule of 19 Nov 2026 (owner's decision): a document of fewer than 40 cipher words is read when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more; never for 40 words or more. Applied to the counts of 18 Nov above, nothing recounted, for the documents under 95%:
+
+- an-ae-b-i-226-f92v: 35 cipher words, 2 holes -> **read** (floor used)
+
+Every document is now read: the class is **read** (no change from before the recount of 18 Nov).

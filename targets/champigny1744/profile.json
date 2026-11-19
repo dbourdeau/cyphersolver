@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "anom-c8a-56-f57",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "ANOM, COL C8 A 56 fols. 57-57v",
    "date": "17 August 1744",
    "year": 1744,
@@ -122,10 +122,11 @@
    ],
    "what": "381 groups read; 5 words restored, 7 probable, 1 unresolved (320).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), from the reading's own count: 142 of 155 (0.916); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-30", "verdict": "not applicable", "notes": "validated by the contributor on a held-out glossed letter (ANOM COL C8 A 56 fol. 79: 0.894 of characters, shuffled keys at most 0.578; see NOTES Validation); no token-aligned pairs file was contributed"}, 
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "Key rebuilt from contemporary glosses of sibling letters of the same year and code, validated on a held-out glossed letter.",
@@ -133,9 +134,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.994,
+  "fraction_read": 0.916,
   "fraction_read_method": "measured",
-  "fraction_read_source": "154/155 words read in their sense; 142 certain, 7 probable, 5 restored, 1 unresolved.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 142 of 155 cipher words certain (the reading's own count); 7 probable, 5 restored and 1 unresolved are holes. Before: 154 of 155 (0.994), probable and restored counted as read.",
   "first_break": true,
   "verification": [
    "contemporary decipherment",
@@ -159,14 +160,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "summary": "Protection for inhabitants who stay neutral; four louis d'or per deserter returned; those who hide deserters will be treated as enemies.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Sonnet 5.5",
      "date": "2026-10-30",
      "note": "Read as French sentences: three long sentences build in the established text (neutrality offered, deserters to be returned for four louis d'or, treatment as enemies otherwise); 13 of 15 sentences clean in reading.md. Holes: the unresolved group 320 (agissent/obeissent) and the marked restorations."
-    }
+    },
+    "read_share": 0.916,
+    "note": "18 Nov 2026, cipher words only, sure words only: 142 of 155 cipher words sure (91.6%); 7 probable, 5 restored, 1 unresolved are holes. Before 0.994."
    }
   ],
   "key_file": "key.tsv",
