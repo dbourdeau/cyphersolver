@@ -195,4 +195,8 @@ The transcription and the reading are WAINUT's (lccompany). Our corrections bear
   (no schema field refers to it yet). Checker Brice Dudout (project); a model wrote the rules, cut the thumbnails, built and
   scored the sheets. X2: 5 signs, controls 2/2 (campo r05, bare 2 of "quatro o" r07, verificata r14, loco b04, -sco b06);
   x3: 2 signs (cosa v02, pace v10) and x4: 1 sign (periculo bv08), on sheets shared with pandolfini1514 (controls 2/2 each).
-  All eight looped ʒ, as transcribed; no token changed. Result: the transcription is confirmed on these eight signs.
+  All eight looped ʒ, as transcribed; no token changed.
+- **Under the floor.** #789 asks for at least 8 target signs per sheet. X2 has 5, x3 has 2 and x4 has 1, so none reaches it;
+  sheets are not added together. The sign check of pandolfini1515 is under the floor: the eight signs agree with the
+  transcription, but they do not count as a sign check of this target.
+- The checker of every sheet is the author of the PR; the label claims nothing about the key.
