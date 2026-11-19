@@ -58,7 +58,7 @@ than character agreement (declared). The ceiling is the resolution of the images
 ## Reading (`reading_322.md`, `translation_322.md`)
 
 Block 1 about 74 words (41 certain, 27 probable, 6 unresolved, about 92%); block 2 about 24 (9, 4, 11, about 54%); block 3 about
-70 (30, 18, 22, about 69%). Overall about 77% with probable words, 0 restored: read in part. Recounted 19 Nov 2026 from the marks of `reading_322.md` (the block counts above are the first, approximate count): 146 units, 84 certain, 45 probable, 17 unresolved groups; at 3 words a group 180 words, 46.7% sure alone (#728). Content: once Rocciafort arrives the King will send an
+70 (30, 18, 22, about 69%). Overall about 77% with probable words, 0 restored: read in part. Recounted 19 Nov 2026 from the marks of `reading_322.md` (the block counts above are the first, approximate count): 146 units, 84 certain, 45 probable, 17 unresolved groups; at 3 words a group 180 words, 46.7% sure alone (#728). By block: 1 = 46, 22, 5 groups (55.4%); 2 = 7, 4, 3 groups (35.0%); 3 = 31, 19, 9 groups (40.3%), as in the status line of `reading_322.md`. Content: once Rocciafort arrives the King will send an
 ambassador to Rome, believed to be the bishop of "Lancres" (see not identified), empowered to negotiate everything with the Pope;
 the informant (code .51.) expects the same quarrel as the Pope's with the bishop of Marseille; after Ariosti's visit the King asked
 that the Venetian ambassador be approached so that Venice give back Monselice, Este and Montagnana to the Este.
@@ -123,10 +123,10 @@ entries in the #789 format; no schema field refers to that file yet.
 - **W** (310; rule written 18 Nov 2026 before the sheet, SHA-256 3a7d52ac...): 10 signs and 2 controls (2/2). As transcribed
   4 (S^2 of monstrono; t of "fra" in A9, C1, H1); corrected 4 (S -> 5 in B1, C1, C3 x2); "none / other shape" 2 (the J of
   "di J e" in A8 and D8, remark "an f with two bars", recoded J#).
-- **x3** (311, 322; rule SHA-256 d1261351...): 7 signs of 1514 and 2 controls (2/2), with 2 signs of pandolfini1515 on the
-  same sheet. All 7 are the looped ʒ expected for c.
-- **x4** (307, 310, 311, 322, 333; rule SHA-256 f7888348...): 15 signs of 1514 and 2 controls (2/2), with 1 sign of
-  pandolfini1515. c-words: 9 looped ʒ, 1 flat 2 (ricercare, 311 A7), 1 "none / other shape" (costì, 333 L2, remark "Z",
+- **x3** (311, 322; rule SHA-256 d1261351...): 7 signs of 1514 and 2 signs of pandolfini1515 (9 target signs on the sheet)
+  and 2 controls (2/2). All 7 are the looped ʒ expected for c.
+- **x4** (307, 310, 311, 322, 333; rule SHA-256 f7888348...): 15 signs of 1514 and 1 sign of pandolfini1515 (16 target
+  signs on the sheet) and 2 controls (2/2). c-words: 9 looped ʒ, 1 flat 2 (ricercare, 311 A7), 1 "none / other shape" (costì, 333 L2, remark "Z",
   read as ʒ); b-words: 4 flat 2. No token changed.
 - Sheets, rules and answers are not in the repository; no image or derivative included.
 
@@ -159,5 +159,7 @@ counts as 3 words, as for 310.
 
 The checker of every sheet is the author of the PR; the label claims nothing about the key.
 
-Under the floor of #789 (at least 8 target signs per sheet; sheets are not added together): W has 10 signs of 1514 and x4 has 15,
-both above it; x3 has 7 signs of 1514, one under it.
+Under the floor of #789 (at least 8 target signs per sheet; sheets are not added together). We apply the floor **per target, not
+per sheet**: only the signs of this target count, not the signs of pandolfini1515 on the same sheet. W has 10 signs of 1514 and
+x4 has 15 (16 on the sheet with 1 of 1515), both above it; x3 has 7 signs of 1514 (9 on the sheet with 2 of 1515), one under it,
+although the sheet as a whole carries 9.
