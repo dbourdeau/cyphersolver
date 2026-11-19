@@ -93,7 +93,7 @@
   "nulls": {
    "present": false
   },
-  "key_order": "alphabetical",
+  "key_order": "partly alphabetical",
   "word_division": "none"
  },
  "conditions": {
@@ -149,6 +149,16 @@
    ],
    "what": "Both letters aligned word by word and counted under rule #728: 163 cipher words, 161 sure, 2 probable ({avoit}, {casaque}, in the passage struck through by the decipherer), 0 restored, 0 unresolved.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Independent test of key.tsv (as at 1abb47a, no value added or corrected) on the one ciphered letter of carton 170.1 (Louvois to Réveillon, Versailles, 19 Mar 1674, 'Duplicata', 201 groups, contemporary gloss group by group). Preregistered and frozen by SHA-256 before any transcription (c170-1/PREREG.md, 3e5b337b...; fusion rules c170-1/PREREG-ADDENDUM-fusion.md, 80002b78..., before decoding): two transcriptions without the key (201/201 groups identical), blind arbitration, one measurement. Criterion fixed in advance: M >= 0.85 and >= best of 200 permuted keys + 0.30, on at least 300 gloss letters. Not measurable: 282 gloss letters. Descriptive only: M = 0.879 (145/165), best control 0.127; 208 = o confirmed, 293 and 74 absent; 9 new values fall in order and are not added. The formal independent test stays open.",
+   "result": "partial"
   },
   {
    "date": "2026-11-18",
@@ -207,7 +217,13 @@
     "state": "read",
     "read_share": 0.979,
     "summary": "The French plenipotentiaries at Cologne want to know whether Réveillon can hold Kaiserswerth with his French and Swiss troops, with Germans inside the place, in case the Elector of Cologne turns his coat and listens to the Emperor; the matter is to stay between Chamilly, Réveillon and Bréant.",
-    "note": "Existing: the contemporary decipherment, checked word by word against the rebuilt key. 96 cipher words: 94 sure, 2 probable, 0 restored, 0 unresolved."
+    "note": "Existing: the contemporary decipherment, checked word by word against the rebuilt key. 96 cipher words: 94 sure, 2 probable, 0 restored, 0 unresolved.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #798 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-19",
+     "note": "Grade given by the reviewer, not by the author of the reading: stated in the review of pull request #798 and entered here at the reviewer's request. reading.md read as sentences against translation.md: coherent French (Bréant to Réveillon, Kaiserswerth: whether the garrison can hold against an approach of the enemy); the two probable words {avoit} and {casaque} are in the one passage the decipherer struck through. A decoder written by the reviewer from key.tsv reproduces the decryption file passage by passage (245 groups, every group in the key). The reading is the contemporary decipherment read against a key rebuilt from it: sure means agreement with that gloss plus sense, not an independent test. Transcription not checked against images (research use only). A model's reading: no person has checked it."
+    }
    },
    {
     "doc": "gourjault-170-4",
@@ -220,7 +236,13 @@
     "state": "read",
     "read_share": 1.0,
     "summary": "The ambassadors assure Réveillon he will be informed of everything: the Elector of Cologne has promised to listen to no proposal from the Emperor until he has the King's answer to a letter he is sending by a gentleman of his chamber.",
-    "note": "Existing: the contemporary decipherment, checked group by group against the rebuilt key. 67 cipher words, all sure."
+    "note": "Existing: the contemporary decipherment, checked group by group against the rebuilt key. 67 cipher words, all sure.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #798 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-19",
+     "note": "Grade given by the reviewer, not by the author of the reading: stated in the review of pull request #798 and entered here at the reviewer's request. reading.md read as sentences against translation.md: coherent French (Bréant to Réveillon: the Elector of Cologne's word, his letter to the King); no probable word. A decoder written by the reviewer from key.tsv reproduces the decryption file passage by passage (149 groups, every group in the key). The reading is the contemporary decipherment read against a key rebuilt from it: sure means agreement with that gloss plus sense, not an independent test. Transcription not checked against images (research use only). A model's reading: no person has checked it."
+    }
    }
   ],
   "key_file": "key.tsv",
