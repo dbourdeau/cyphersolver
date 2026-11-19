@@ -135,6 +135,21 @@ pass). Nomenclator marks are not in any stream, so nomenclator elements decode a
 4. **The three-pass vote is the best reading on both documents,** at 3.9% to 8.1% letter divergence, matching its
    better digit rate.
 
+**The same test on the Opus 5.5 and Fable 5.2 passes** (`downstream_opus.json`, `downstream_fable.json`; their own
+results are in `RESULTS_opus.md` and `RESULTS_fable.md`). Plaintext letters differing from the human-stream decode, with
+the random-error control in brackets:
+
+| | R6 (3 passes) | R7 (3 passes) |
+|---|---|---|
+| Sonnet 5.5 | 8.4% to 10.1% (control 10.4%) | 4.1% to 6.4% (4.9%) |
+| Opus 5.5 | 5.5% to 7.7% (6.3%) | 2.5% to 4.7% (3.1%) |
+| Fable 5.2 | 3.2% to 5.2% (4.4%) | 1.6% to 2.7% (2.3%) |
+
+Readability stays above the random control for every model (R6: Opus -2.89 to -2.97 against -3.03, Fable -2.84 to -2.90
+against -2.97; R7: Opus -2.88 to -2.93 against -3.02, Fable -2.87 to -2.89 against -3.00). Letters changed track the
+digit error at about 2.5 to 3 times for all three models, as for Sonnet. Some AI readings score above the human stream
+on readability (human stream: R6 -2.84, R7 -2.93), which is a sign that the human stream is itself not error-free.
+
 Limits specific to this test: two documents, one key and one hand; the baseline is the human-stream decode, not the
 true plaintext, so it contains the human transcription's own errors and the lost nomenclator elements; readability is
 judged by one language model; the random control is uniform noise, an idealisation; no one has read the plaintexts.
