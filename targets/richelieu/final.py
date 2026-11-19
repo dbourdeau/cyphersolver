@@ -17,6 +17,12 @@ KEY = {
 NOMEN = {'43': 'NAME-43?', '47': '47(=17 f)', '51': 'le Roi', '52': 'la Reine mère', '54': 'Monsieur',
          '58': 'Mme de Chevreuse', '59': 'princesse Marie', '60': 'Mme de Longueville',
          '66': 'card. de La Valette', '83': "l'Espagne", '84': "l'Angleterre", '92': 'la Lorraine', '2': '2?'}
+# Extension of Nov 2026 from the sibling letters in fr. 3828, 3825, 3835 (texts/key.md, "Extension"): word code 41
+# and nine names, each from an Avenel footnote outside the held-out letters. None occurs in ff. 87, 89.
+KEY['41'] = 'que'
+NOMEN.update({'55': 'M. le Prince', '61': "le duc d'Epernon", '62': 'Montmorency', '67': 'Calori',
+              '68': 'le cardinal de Berulle', '69': 'le garde des sceaux', '95': 'Nismes', '96': 'Castres',
+              '97': 'Montauban'})
 
 def sym(t):
     if t.startswith('~'):
