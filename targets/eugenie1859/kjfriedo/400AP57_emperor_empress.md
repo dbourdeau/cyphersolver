@@ -1,6 +1,20 @@
 # AN 400AP/57, d. 1: Emperor ↔ Empress telegrams and Lasry's key (17 Nov 2026)
 
-Contributed by Jozef Krajčovič (kjfriedo) with an AI model (Claude). Images in `images/400AP57/` (greyscale, 1400 px; Archives nationales, 400AP/57). Groups and proposed values are in `400AP57_emperor_empress_tokens.tsv`. The groups were read from the images by one reader and not checked by a second, except img 366, which Dan Bourdeau's check (PR #768) read independently and found in agreement.
+Contributed by Jozef Krajčovič (kjfriedo) with an AI model (Claude). The images are not stored in this repository; see `LICENCE_v3.md`. To see a page, open the [AN viewer for the Fonds Napoléon](https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_053754), go to 400AP/57, dossier 1, choose "Consulter les archives numérisées associées" and go to the image number below. Frame = 2330 + image number.
+
+| image | AN microfilm frame |
+|---|---|
+| img 180 | `DAFANCH97_MIC014002510` |
+| img 188 | `DAFANCH97_MIC014002518` |
+| img 235 | `DAFANCH97_MIC014002565` |
+| img 244 | `DAFANCH97_MIC014002574` |
+| img 257 | `DAFANCH97_MIC014002587` |
+| img 305 | `DAFANCH97_MIC014002635` |
+| img 362 | `DAFANCH97_MIC014002692` |
+| img 363 | `DAFANCH97_MIC014002693` |
+| img 366 | `DAFANCH97_MIC014002696` |
+| img 410 | `DAFANCH97_MIC014002740` |
+ Groups and proposed values are in `400AP57_emperor_empress_tokens.tsv`. The groups were read from the images by one reader and not checked by a second, except img 366, which Dan Bourdeau's check (PR #768) read independently and found in agreement.
 
 **Licence and credit:** CC BY 4.0 for the report and `400AP57_emperor_empress_tokens.tsv`. The images are reproductions of "Archives nationales, 400AP/57, dossier 1"; their reuse is subject to the Archives nationales terms.
 

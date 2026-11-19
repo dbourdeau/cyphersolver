@@ -1,6 +1,6 @@
 # Scan check of the token streams and a held-out test of the frozen v2 dictionary (17 Nov 2026)
 
-By Jozef Krajčovič (kjfriedo), with an AI model (Claude). Licence: CC BY 4.0 for the text, tables and script. Images: Archives nationales, 400AP/…; Gallica (BnF), NAF 11355. This answers the two conditions in `PROJECT_CHECK.md` §3.
+By Jozef Krajčovič (kjfriedo), with an AI model (Claude). Licence: CC BY 4.0 for the text, tables and script. Pages cited: Archives nationales, 400AP/144 img 181 (frame `DAFANCH97_MIC032003596`, viewable in the AN viewer and not stored here); Gallica (BnF), NAF 11355. This answers the two conditions in `PROJECT_CHECK.md` §3.
 
 ## 1. Token streams compared with the Gallica scan
 Source: Gallica `btv1b52517729k`, full-size IIIF images (`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52517729k/f<n>/full/max/0/default.jpg`).
@@ -27,7 +27,7 @@ Note the offset: IIIF `f<n>` = Gallica PDF page n+2. The PDF pages used in `prin
 
 ## 2. Held-out test: frozen v2 dictionary against f11r nouveau
 - **Frozen dictionary:** `prince_key_dictionary_v2.tsv` as merged in PR #285, SHA-256 `a23bdb32…18c3`. It was built from f7, f10, f11F, r11 and the f12 alignment. Its author had **not** seen the decipherment of f11r (400AP/144 img 181), which was first read on 17 Nov 2026.
-- **Held-out text:** the 27 groups of f11r nouveau, with the values written under them on img 181.
+- **Held-out text:** the 27 groups of f11r nouveau, with the values written under them on 400AP/144 img 181 (frame `DAFANCH97_MIC032003596`).
 - **Overlap:** 11 of the 27 codes are in v2. **10 of the 11 are correct.** The one error is 1344, which v2 had as "ville" (tier C); its value is "pas".
   - By tier: A 8/8, B 1/1, C 1/2.
   - Codes whose v2 value came **only from the f12 alignment** (no external decipherment): 1040, 1344, 1682, 1299, 2041, 512. Of these, **5 of 6** are correct.
