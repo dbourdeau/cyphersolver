@@ -1,0 +1,8 @@
+# Règle de sélection — planche capilupi1546 (lettre c, soir 18/11/2026), écrite AVANT de choisir les signes et avant toute réponse
+
+Entrée : `ecarts.json` produit par `scripts/substitutions.py` (transcriptions figées final/ = dudout/transcription_*.txt, clé figée KEY-1555.json, reading.md de la cible).
+1. Candidats : écarts lecture/décodage dont UNE correction d'un seul chiffre (remplacement par un chiffre 0-7 ; pas de suppression, pas de 8 ou 9 isolé = nulle ajoutée) rend le mot de la lecture, ET dont le mot est RESTITUÉ [x] (gain réel sous la règle des 95 % de Daniel). Les {x} ne sont pas testés (déjà comptés lus).
+2. Ordre : (a) tous les candidats de 05r (seul document sous le seuil) ; (b) la série « mm » = code 11 sur les autres folios (une lacune déclarée du profil), dans l'ordre 04r, 06r, 06v ; (c) les autres candidats [x] dans l'ordre des folios 02r, 06r, 06v, 07r. On prend les 10 premiers. Un candidat est écarté (et remplacé par le suivant) si, vu à l'image native, le signe cible ne peut pas être encadré seul (ligature, tache couvrant deux chiffres).
+3. Deux contrôles : un chiffre net de chaque forme la plus testée (5 et 7 courts), pris dans un groupe sûr, non marqué [a/b], ? ou ^.
+4. Options : 2 ou 3 formes de chiffres découpées dans le même folio ou un folio voisin de la même main, chacune prise dans un code que la clé confirme par un mot sûr, jamais dans un signe marqué [a/b], ?, ~, ^ ou dans un mot non sûr. Chaque vignette vérifiée une par une sur la planche de contrôle locale.
+5. Ordre des questions et des options : graines 20261118 / 1546, planche_core v2 (places des références équilibrées).
