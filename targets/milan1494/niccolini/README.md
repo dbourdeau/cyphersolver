@@ -4,7 +4,11 @@ Siblings of the Milan embassy cipher, added here as agreed on issue #589 (16 and
 
 **No person has checked the transcriptions.** They were made by an AI model from the ASF images listed below.
 
-## Result (first blind pass, figure of record)
+## Earlier record, and how this blind pass relates to it
+
+Our first look at these passages was a sighted working decode of 10 Nov 2026, deposited unfiled as the earlier record in Zenodo, doi:10.5281/zenodo.24267269 (part2-unfiled_10Nov2026), and described on #589 as read. This blind pass supersedes it: docs 42, 81 and 90 now score 61.5%, 50.0% and 33.3%, so the 10 Nov readings of those docs are withdrawn.
+
+## Result (the blind pass, figure of record)
 
 | Doc | Leaf, date | Cipher signs | Strict judge (word units) | Shuffle, seed 20261112 / 7 (>= real, of 5,000) | Class |
 |---|---|---|---|---|---|
@@ -22,7 +26,7 @@ All four are below our own 65% line, so none is filed as a reading. Doc 42 decod
 3. Blind sheet: neutral labels S01-S67 with shape descriptions only (`blind/SHEET.tsv`, built by `scripts/build_sheet.py`); the label-to-key map `sheet_to_key.tsv` was kept out of the reader's folder. The reader saw only the sheet, `blind/BRIEF.md` and the eight crops.
 4. Blind transcription frozen 2026-11-19T01:03:11Z (`blind/FREEZE.txt`), then decoded once (`scripts/decode_once.py blind > decode_once.txt`, reproduces byte for byte).
 5. A separate judge (`judge/JUDGE_BRIEF.md`) saw only the decode and the clear words around each run: `judge/judge.tsv`, `judge/JUDGE_NOTES.md`.
-6. Shuffle control: `scripts/shuffle.py blind <wordlist>` (dictionary cover, letter values permuted among signs; word list of Ariosto and Dante not committed, md5 083a93d9885337306f524c2b188bf6a5), output `shuffle_out.txt`.
+6. Shuffle control: `scripts/shuffle.py blind <wordlist>` (dictionary cover, letter values permuted among signs), output `shuffle_out.txt`. The word list (Ariosto and Dante, md5 083a93d9885337306f524c2b188bf6a5) is not committed, so the control cannot be rerun byte for byte from this folder; the maintainer's rerun with another Italian lexicon gave the same pattern (#797).
 
 The main session captured the images and knew the key; it did not transcribe or judge.
 
