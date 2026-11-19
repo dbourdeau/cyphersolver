@@ -1,7 +1,7 @@
 # Letter 1 (fol. 120r-v): English translation
 
 Working translation of reading_120.md; [?] marks a probable word, [...] an unresolved one. The sender is not named in the
-cipher; the address on the back ("To our dear faithful Johann von Russebruch") and the "we/us" style fit the lord of
+cipher; the address on the back ("To our dear faithful Johann von Russebruck") and the "we/us" style fit the lord of
 Heinsberg, Count Johann II of Nassau-Saarbrücken, writing to his officer.
 
 Dear faithful one. As you lately wrote to us about all the [?hindrances] concerning the money and the exchange, and that

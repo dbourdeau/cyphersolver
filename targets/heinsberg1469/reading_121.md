@@ -20,7 +20,7 @@ da, so sagent im, daz er mit uch ride.
 ## Notes
 
 - [?rent[m]eister]: "rent=" ends line 1, the next line begins "einster"; the sign before "=" is blotted (pass A
-  {del:?}), probably the m. Johan Hucking is named with Johann von Russebruch on fol. 112v of the same file.
+  {del:?}), probably the m. Johan Hucking is named with Johann von Russebruck on fol. 112v of the same file.
 - [?einch] (einich, any): probable.
 - [...|dame] (D-T-E-o): a name or "dan me"; unresolved.
 - Ache = Aachen.

@@ -1,8 +1,8 @@
 # Letter 1 (fol. 120r-v): reading
 
 LAV NRW Abt. Rheinland, AA 0582 (Herrschaft Heinsberg, Akten), B 2, fol. 120r (36 lines) and 120v (12 lines, then the
-address in clear: "Unsern lieben getruwen Johanne von Russeb[ruch]"). Undated; filed with the letters of 1469.
-Language: Middle High German of the Rhine-Franconian chancery type (daz, zu, zit, uf, uch), not Ripuarian.
+address in clear: "Unsern lieben getruwen Johanne von Russeb[ruck]"). Undated; filed with the letters of 1469.
+Language: 15th-century German (Early New High German), a chancery language with Rhine-Franconian features (daz, zu, zit, uf, uch), not the Rhine-Maas written language of the Heinsberg region.
 
 Read from decryption_120_passA.txt and decryption_120_passB.txt. Sign values (key.tsv): L = d or b, P = h or ch,
 2 = u or v; these are values of the key, not changes. Marks: [?word] probable, [...|signs] unresolved,
