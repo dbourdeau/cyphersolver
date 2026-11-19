@@ -17579,7 +17579,7 @@
    "shelfmark": "BnF, Français 3828 nos. 8, 10, 17, 18, 19, 21, 26; Français 3835 no. 15",
    "folio_note": "8 letters",
    "cls": "A",
-   "status": "BAM: 'Lettre, avec chiffre'. Not digitised. Siblings fr. 3829 ff. 87, 89 read by Daniel (14 Sept 2026).",
+   "status": "Existing, printed deciphered (Avenel, Lettres du cardinal de Richelieu III, 1858) and verified with the key (PR #813, open, 19 Nov 2026): the letters are printed with the figures in place and his glosses; the key for fr. 3829 ff. 87, 89 reproduces them (368 of 374 cipher words sure). Not digitised at the BnF. Siblings fr. 3829 ff. 87, 89 read by Daniel (14 Sept 2026).",
    "why": "Richelieu's ciphered letters from the Suse campaign; key exists.",
    "importance": 3,
    "solvability": 1,
@@ -17594,13 +17594,27 @@
    ],
    "seen": "catalogue",
    "source": "BnF Archives et manuscrits sweep",
-   "prior_art": "key known (Daniel fr. 3829); these letters not in repo; your fr. 3829 ff. 87, 89 reading (SOLVED_CATALOGUE) was found word for word in Avenel 1858, so these 1629 letters may also be printed there (not verified)",
+   "prior_art": "existing (Avenel 1858, t. III), verified with the key for fr. 3829 ff. 87, 89 (PR #813, open); the earlier 'may also be printed there (not verified)' is superseded.",
    "access": "archive",
    "needs_archive_scan": "yes",
    "access_note": "not scanned: BnF Département des Manuscrits, not digitised per BAM; reproduction order needed",
    "ark": "",
    "scored": "sweep",
    "vetting": {
+    "date": "2026-11-19",
+    "by": "project session 19 Nov 2026 (Claude Code agent, Claude Sonnet 5.5), from PR #813 (bdudout, open) and the archive.org OCR of Avenel III",
+    "supersedes": "The 29 Oct 2026 verdict partly_read rested on one letter matched (fol. 30); PR #813 (open) now prints all nine 1629 letters of lead 1577 and lead 2744 as found in Avenel III and checks his glosses with the key.",
+    "seen": {
+     "kind": "transcription",
+     "where": "Avenel, Lettres, instructions diplomatiques et papiers d'Etat du cardinal de Richelieu, t. III (1858), archive.org lettresinstructi03richuoft OCR (djvu text) re-read 19 Nov 2026 for the headings and dates of CXLVI-CLXVII; the nine letters themselves as transcribed and counted in PR #813 (open), targets/richelieu/texts/fr3828_avenel_figures.txt.",
+     "extent": "Nine Richelieu letters of 21 Mar - 25 May 1629 (Rance and the Queen Mother): CXIX, CXXXV, CXLVI, CXLVII, CLIII, CLIV, CLV, CLVIII, CLXVII, printed with the cipher figures in place and the editor's decipherment of each run in a footnote.",
+     "cipher": "Runs of two-digit figures and code numbers in clear French text, with Avenel's footnote glosses (he says he recomposed the cipher from Affaires etrangeres documents, note to CXXXV). By PR #813's own account (not re-run here): the key recovered for fr. 3829 ff. 87, 89, without Avenel's text, reproduces his glosses, 368 of 374 cipher words sure; one pre-registered test on CLIV and CLV (333 figures held out): 0.940 against 0.456 for the best of 200 shuffled tables."
+    },
+    "closed": "Existing (Avenel 1858), verified with the key. The eight letters of this lead (fr. 3828 nos. 8, 10, 17, 18, 19, 21, 26; fr. 3835 no. 15) are printed in Avenel t. III: CXLVI (fol. 24), CXLVII (fol. 30), CLIII (fol. 48), CLIV (fol. 51), CLV (fol. 54), CLVIII (fol. 59, Avenel's heading 'fol. 69'), CLXVII (fol. 73, Avenel's heading 'fol. 78'), CXIX (fr. 3835 no. 15, fol. 46), each with the figures and his decipherment in footnotes; PR #813 (open) checks them with the key for fr. 3829 ff. 87, 89 (four small differences with his glosses). Nothing is left to read; not a catalogue candidate. Folio numbers: Avenel's headings for CLVIII and CLXVII read 'fol. 69' and 'fol. 78' in the archive.org OCR (and lead 2744 copied them); PR #813 gives fr. 3828 no. 21 as fol. 59 and no. 26 as fol. 73. Which is right (a printed slip, an older foliation or the PR's reading) was not settled here without the BnF volume; fol. 59 is used below as the corrected value of the PR, 'fol. 69' kept as Avenel's printed heading.",
+    "key_check": "Key for fr. 3829 ff. 87, 89 held in targets/richelieu; applied to all nine letters in PR #813 (open), pre-registered test passed (0.940 against 0.456), by that PR's own account.",
+    "verdict": "read"
+   },
+   "vetting_superseded": {
     "date": "2026-10-29",
     "by": "claude vetting batch n02",
     "seen": {
@@ -17620,8 +17634,7 @@
     "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Rance, Richelieu, 3828, 3835, 3829 searched: sibling reading only.",
     "closed": "Avenel (Lettres du cardinal de Richelieu, vol. III, 1858) prints fr. 3828 fol. 30 (Richelieu to Rance, Suze, 20 April 1629, 'Fonds Bethune 9322 fol. 30') with the numerals partly resolved in editor's footnotes (le roi, la fin a Rome, septembre), so at least this one of the 8 letters has a printed reading; the others were not matched.",
     "verdict": "partly_read"
-   },
-   "vetting_note": "Not online (BAM fr. 3828/3835, 'Lettre, avec chiffre'). Opened Avenel, Lettres ... du cardinal de Richelieu vol. 3 (archive.org lettresinstructi03richuoft): it prints Richelieu to Rance letters of Mar-May 1629 (21 and 31 Mar, 30 Apr, 2 May) from Bibl. imp. Fonds Bethune, some with numerals left (e.g. 39 26 22 ...), others deciphered; the BAM numbers of fr. 3828 (nos. 8-26) cannot be matched to Avenel dates without the item list, so which letters are printed and deciphered is unsettled. Earlier key_lookup closure withdrawn (no reading on record for these)."
+   }
   },
   {
    "id": 1589,
@@ -52554,7 +52567,7 @@
    "shelfmark": "BnF Manuscrits, fr. 3826, fr. 3823, fr. 3855",
    "folio_note": "fr. 3826 nos. 8, 10, 17, 18, 19 and two more (ff. 24-54); fr. 3823 no. 28 (f. 77); fr. 3855 no. 15 (f. 46)",
    "cls": "A",
-   "status": "SHELFMARK CORRECTION (audit 16 Nov 2026): BnF fr. 3828 (Anc. 9322) nos. 8, 10, 17, 18, 19, 21, 26; fr. 3825 (Anc. 9319) no. 28; fr. 3835 (Anc. 9329) no. 15. Confirms batch B: fr. 3826, 3823 and 3855 have no cipher item. Richelieu to Rance and to the queen, 14 Apr - 25 May 1629 = fr. 3828; \"Nouvelles, avec chiffre, adressees a M. de Rance, Suze, 21 mars\" = fr. 3825 no. 28; Richelieu to Rance (undated) = fr. 3835 no. 15. No decipherment in the notices; Avenel t. III prints them with the cipher explained (batch B; lead verdict read). Not on Gallica. Printed catalogue entry (Omont/Delisle printed Catalogue general des manuscrits francais, Ancien fonds (1868-1895; archive.org cataloguemanfran / p1cataloguegnr volumes, OCR)) lists these pieces as \"avec chiffre\" / \"en chiffre\" with no decipherment noted; where the catalogue says \"avec chiffre et dechiffrement\" a decipherment is attached and the piece is not counted here. Not viewed. Overlaps lead 1577 (Richelieu to Rance, 7 letters) in subject; the folio sets here are in other volumes (fr. 3826, 3823, 3855), to be checked against 1577 at merge.",
+   "status": "Existing, printed deciphered (Avenel, Lettres du cardinal de Richelieu III, 1858) and verified with the key (PR #813, open, 19 Nov 2026). Shelfmark correction (audit 16 Nov 2026): BnF fr. 3828 (Anc. 9322) nos. 8, 10, 17, 18, 19, 21, 26; fr. 3825 (Anc. 9319) no. 28; fr. 3835 (Anc. 9329) no. 15; fr. 3826, 3823 and 3855 have no cipher item. Folio correction: CLVIII is fr. 3828 no. 21, fol. 59 (not fol. 69, which is Avenel's printed heading as the OCR reads it). Not digitised at the BnF. Overlaps lead 1577 (eight of the nine).",
    "why": "Richelieu's own Susa letters; the repo already holds lead 1577 for fr. 3828/3835 and the solved fr. 3829 ff. 87, 89, so this adds the other volumes of the run.",
    "importance": 4,
    "solvability": 4,
@@ -52569,14 +52582,27 @@
    ],
    "seen": "catalogue",
    "source": "Omont BnF catalogue sweep",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
+   "prior_art": "existing (Avenel 1858, t. III), verified with the key for fr. 3829 ff. 87, 89 (PR #813, open).",
    "needs_archive_scan": "yes",
    "access_note": "fr. 3825, 3828, 3835 notices (cc50265f, cc502685, cc50276w) carry no Gallica link; not digitised. Avenel 1858 is on archive.org.",
    "ark": "",
    "access": "archive",
    "scored": "vetted",
-   "vetting_note": "Vetting pass 14 Nov 2026 (Omont sweep): Not online; no Gallica ark; overlaps lead 1577 (Rance 1629): resolve with that lead. General warning: Omont's volume numbers are OCR readings and his folio numbers an older foliation, so check each row against the Gallica title before use.",
    "vetting": {
+    "date": "2026-11-19",
+    "by": "project session 19 Nov 2026 (Claude Code agent, Claude Sonnet 5.5), from PR #813 (bdudout, open) and the archive.org OCR of Avenel III",
+    "supersedes": "Corrects the folio of CLVIII ('fol. 69' in the 16 Nov 2026 block, copied from the archive.org OCR of Avenel's heading) to the BnF folio 59 of PR #813, and adds the verification with the key from that PR (open).",
+    "seen": {
+     "kind": "transcription",
+     "where": "Avenel, Lettres, instructions diplomatiques et papiers d'Etat du cardinal de Richelieu, t. III (1858), archive.org lettresinstructi03richuoft OCR (djvu text) re-read 19 Nov 2026 for the headings and dates of CXLVI-CLXVII; the nine letters themselves as transcribed and counted in PR #813 (open), targets/richelieu/texts/fr3828_avenel_figures.txt.",
+     "extent": "Nine Richelieu letters of 21 Mar - 25 May 1629 (Rance and the Queen Mother): CXIX, CXXXV, CXLVI, CXLVII, CLIII, CLIV, CLV, CLVIII, CLXVII, printed with the cipher figures in place and the editor's decipherment of each run in a footnote.",
+     "cipher": "Runs of two-digit figures and code numbers in clear French text, with Avenel's footnote glosses (he says he recomposed the cipher from Affaires etrangeres documents, note to CXXXV). By PR #813's own account (not re-run here): the key recovered for fr. 3829 ff. 87, 89, without Avenel's text, reproduces his glosses, 368 of 374 cipher words sure; one pre-registered test on CLIV and CLV (333 figures held out): 0.940 against 0.456 for the best of 200 shuffled tables."
+    },
+    "closed": "Existing (Avenel 1858, t. III), verified with the key (PR #813, open). All nine pieces are Richelieu's 1629 letters printed by Avenel with the cipher groups explained; eight of the nine are lead 1577. CLVIII (fr. 3828 no. 21, 2 May 1629) is BnF fol. 59 (the 'fol. 69' of the earlier block is Avenel's printed heading as the OCR reads it, not the BnF folio). Folio numbers: Avenel's headings for CLVIII and CLXVII read 'fol. 69' and 'fol. 78' in the archive.org OCR (and lead 2744 copied them); PR #813 gives fr. 3828 no. 21 as fol. 59 and no. 26 as fol. 73. Which is right (a printed slip, an older foliation or the PR's reading) was not settled here without the BnF volume; fol. 59 is used below as the corrected value of the PR, 'fol. 69' kept as Avenel's printed heading.",
+    "key_check": "Key for fr. 3829 ff. 87, 89 held in targets/richelieu; applied to all nine letters in PR #813 (open), pre-registered test passed (0.940 against 0.456), by that PR's own account.",
+    "verdict": "read"
+   },
+   "vetting_superseded": {
     "date": "2026-11-16",
     "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 19 vetting",
     "seen": {
