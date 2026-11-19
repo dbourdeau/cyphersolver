@@ -35,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-We report what agentic large language models (LLMs) achieved on historical cipher targets from any region, dated \YearMin--\YearMax\ (mostly European diplomatic letters, with \NnonEurope\ targets from North America, Latin America, East Asia and the Middle East), attacked between \DateFirst\ and \DateLast. Each target has a fixed profile: the cipher system, the documents, what the model started from, whether a reading already existed, the ordered solution steps, and an outcome split into \emph{method} (how the text was obtained) and \emph{extent} (complete or partial). The text was obtained for \Nobtained\ of the \Nworked\ targets that could be worked (\PctObtained\,\%), but that figure hides the methods. The key was recovered here for \Nrecovered: \NCT\ from the ciphertext alone, \NAPT\ from plaintext beside the cipher and \NEPT\ from plaintext found elsewhere. For \Napplied\ a key that already existed was found and applied. For \Ndeciph\ a decipherment already existed. From ciphertext alone the model recovered the key in \NctoCT\ of \Ncto\ attempts. On the \Nclean\ targets with no known earlier reading, the text was obtained for \Ncleanobtained. The model's main strength was locating keys, cribs and decipherments; its main failures were noisy transcriptions, short texts and large nomenclators without key material.
+We report what agentic large language models (LLMs) achieved on historical cipher targets from any region, dated \YearMin--\YearMax\ (mostly European diplomatic letters, with \NnonEurope\ targets from North America, Latin America, East Asia and the Middle East), attacked between \DateFirst\ and \DateLast. Each target has a fixed profile: the cipher system, the documents, what the model started from, whether a reading already existed, the ordered solution steps, and an outcome split into \emph{method} (how the text was obtained) and \emph{extent} (complete or partial). The text was obtained for \Nobtained\ of the \Nworked\ targets that could be worked (\PctObtained\,\%), but that figure hides the methods. The key was recovered here for \Nrecovered: \NCT\ from the ciphertext alone, \NAPT\ from plaintext beside the cipher and \NEPT\ from plaintext found elsewhere. For \Napplied\ a key that already existed was found and applied. For \Ndeciph\ a decipherment already existed. From ciphertext alone the model recovered the key in \NctoCT\ of \Ncto\ attempts. On the \Nclean\ targets with no known earlier reading, the text was obtained for \Ncleanobtained. The model's main strength was locating keys, cribs and decipherments; its main failures were noisy transcriptions, short texts and large nomenclators without key material. Measured blind against human transcriptions of ten documents, the best model's transcription error was 3.3\,\% overall and 2.0\,\% on digit ciphers, but 14\,\% on one difficult hand.
 \end{abstract}
 
 \section{Introduction}
@@ -139,10 +139,46 @@ In all, \NNA\ targets are classed not applicable: \NnotCipher\ turned out not to
 
 \paragraph{Ordnungspolizei radiograms, 1942 (not solved).} Seven parts of 27~February 1942 in the German police Doppelkasten, a double Playfair in which each pair passes twice through the same two boxes, 970 letters under one key. The agent implemented the system from the German manuals and attacked it with annealing, iterated local search, tempering, relaxation and SAT. All of these failed on synthetic texts of the same length with a known key: the double pass leaves a local search no gradient. A known-plaintext solver it wrote recovers the boxes from 80 to 111 plaintext pairs on synthetic data, but no plaintext of these messages is available.
 
+\section{Transcription accuracy}
+\label{sec:transcription}
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+document & signs & human & Sonnet & Opus & Fable \\
+ & & min. & \% & \% & \% \\
+\midrule
+santacroce R6, 1552 & 1,540 & 60 & 3.9 & 2.3 & 1.5 \\
+santacroce R7, 1552 & 1,321 & 170 & 2.0 & 1.2 & 0.9 \\
+dandini R72, 1580 & 1,059 & 30 & 4.4 & 3.9 & 2.8 \\
+hellen R1953, 1752 & 2,858 & 120 & 1.5 & 1.0 & 0.9 \\
+kauderbach R2078, 1754 & 2,522 & 200 & 4.0 & 2.7 & 2.2 \\
+hellen R1049, 1756 & 1,661 & 280 & 9.6 & 4.8 & 4.6 \\
+\midrule
+ferdinand R1889, 1635$^*$ & 684 & 120 & 3.2 & 3.6 & 2.5 \\
+ferdinand R1890, 1640$^*$ & 1,443 & 135 & 3.0 & 3.5 & 2.8 \\
+carpio R1009, 1677$^*$ & 798 & 120 & 18.0 & 17.1 & 14.0 \\
+carpio R1010, 1677$^*$ & 609 & 120 & 15.9 & 17.7 & 14.1 \\
+\midrule
+all, pooled & 14,495 & 1,355 & 5.1 & 4.1 & 3.3 \\
+\bottomrule
+\end{tabular}
+\caption{\label{tab:transcription} Blind transcription from page images against the DECODE manual transcription of the same record: error rate (edit distance per reference sign), mean of three passes per model. Human: the transcription time recorded in DECODE. $^*$Letters and digits; the others are digits only.}
+\end{table}
+
+Most documents in the corpus were transcribed by the agent from images (Section~\ref{sec:corpus}), so every reading depends on that step. To measure it, we took the ten documents of the corpus for which DECODE holds a manual transcription of the same record together with matching page images: Italian, French, Spanish and Latin letters of 1552--1756, six written in digits and four mixing digits and letters, 14,495 signs in all. Each was transcribed blind three times by each of three models (Claude Sonnet~5.5, Opus~5.5 and Fable~5.2), every pass by a fresh sub-agent given only the page images cut into overlapping horizontal bands. Each transcription was compared with the DECODE one as a stream of signs (digits, and lower-case letters where the cipher uses them; separators, crosses and dots ignored) by edit distance. The DECODE transcriptions require a login and are not served to anonymous clients, so they are unlikely to have been in the models' training data.
+
+Table~\ref{tab:transcription} gives the results. Pooled over the ten documents, the error rate is 5.1\,\% for Sonnet, 4.1\,\% for Opus and 3.3\,\% for Fable (95\,\% intervals from a hierarchical bootstrap over documents and passes: 3.0--8.3, 2.3--7.1 and 1.8--5.7). Fable had the lowest error on every one of the ten documents (sign test, $p=0.002$); Opus improved on Sonnet on all six digit documents but on only one of the four with letters. On the digit documents Fable's rate is 2.0\,\% (1.1--3.2).
+
+The spread between documents is larger than between models. Two clear hands are read at about 99\,\%, while two Spanish letters of 1677 in small crossed numbers and letter pairs stay at 14 to 18\,\% for every model. Their errors are systematic: a crossed 1 read as 4, the letters b and o read as the digits 6 and 0; and Sonnet read the open 4 of a French hand as 2 almost everywhere. Systematic misreadings survive repetition: a majority vote over three passes changed the rate by at most 1.2 points, sometimes for the worse. Disagreement between passes is a useful warning but catches only part of the errors (15 to 71\,\% of first-pass errors): where the passes disagreed the first pass was wrong 23 to 88\,\% of the time, where they agreed 0.5 to 13\,\%. Cutting the pages differently (whole pages, narrower bands) or rewording the prompt moved a single pass by up to about 1.5 points beyond the range of the standard passes.
+
+The DECODE transcriptions of the ten documents took 22.6 hours by their transcribers' records. For the eight documents with a recorded model time, a pass took 5.7 minutes against 1,035 minutes, about 180 times faster; the human transcribers also recorded marks and clear text that the models were not asked to give.
+
 \section{Where the models failed}
 \label{sec:failures}
 
-\paragraph{Transcription.} The largest single cause of failure was the transcription, not the cryptanalysis. The agent transcribed every document of \Nimg\ worked targets from images and obtained the text for \Nimgobtained\ of them, but the Bordeaux case shows how a transcription that looks usable can defeat a correct solver. Controls with injected transcription noise are cheap and diagnostic, and we recommend them as a standard step.
+\paragraph{Transcription.} The largest single cause of failure was the transcription, not the cryptanalysis. The agent transcribed every document of \Nimg\ worked targets from images and obtained the text for \Nimgobtained\ of them, but the Bordeaux case shows how a transcription that looks usable can defeat a correct solver, and Section~\ref{sec:transcription} shows how unevenly the error falls across hands. Controls with injected transcription noise are cheap and diagnostic, and we recommend them as a standard step.
 
 \paragraph{Short texts and large nomenclators.} Large nomenclators on a few hundred tokens were beyond reach without a key or a crib, as they are for human analysts. The agent's value here was in finding the key: on the DECODE record of a sibling letter, in the same archive volume, or in a printed edition.
 
@@ -165,11 +201,13 @@ In all, \NNA\ targets are classed not applicable: \NnotCipher\ turned out not to
 
 \paragraph{No fixed budget.} Sessions varied in length, model and operator, and the first author supplied logins and in a few cases a source. The record is of what happened, not of a controlled experiment.
 
+\paragraph{The transcription reference is not error-free.} Section~\ref{sec:transcription} counts every disagreement with the DECODE transcription as an error of the model, but the human transcriptions have errors of their own. At the 332 places where most of the nine model readings agreed against the reference, two model adjudicators shown the page agreed with each other on 76\,\% of items and sided with the models about as often as with the reference. A blind check of 40 of their agreed verdicts by one author did not support them (agreement on 13 of the 22 items the author could decide). We therefore report error rates against the unmodified reference and leave the reference's own error rate unmeasured; it needs expert adjudication. The ten documents are a convenience sample, about six hands of which two use letters, chosen because a manual transcription and matching images existed.
+
 \paragraph{Contamination.} A model may have seen a printed decipherment in training. The prior-reading field addresses this directly, and the \Nclean\ targets with no known prior reading are the clean subset. For the others, the profile records whether the work used the prior reading, and the method records whether the key was rebuilt or applied.
 
 \section{Conclusion}
 
-On historical ciphers, an agentic LLM behaves less like a solver than like a research assistant that can also write solvers. It reads the manuscript, finds the key or the decipherment in the archive or in print, recognises a crib in the clear text, and exploits structure such as an alphabetical key. Of the \Nobtained\ targets whose text it obtained, the key was recovered here for \Nrecovered, and from the ciphertext alone for \NCT. Its failures follow the classical limits: short texts, large nomenclators, double encipherment and noisy transcriptions. Classifying outcomes by method keeps these two contributions apart, and we recommend it to anyone reporting decipherments made with such tools. The profile schema, the \Ntargets\ profiles and the working record behind them (notes, transcriptions, code and commit history) are released with the paper so that later work can check any profile against its sources and add targets and models on the same terms.
+On historical ciphers, an agentic LLM behaves less like a solver than like a research assistant that can also write solvers. It reads the manuscript, finds the key or the decipherment in the archive or in print, recognises a crib in the clear text, and exploits structure such as an alphabetical key. Of the \Nobtained\ targets whose text it obtained, the key was recovered here for \Nrecovered, and from the ciphertext alone for \NCT. Its failures follow the classical limits: short texts, large nomenclators, double encipherment and noisy transcriptions. Its own transcriptions, measured blind on ten documents, are about 97\,\% correct sign by sign for the best model, but some hands defeat every model in the same systematic way, and repeating the pass does not fix them. Classifying outcomes by method keeps these two contributions apart, and we recommend it to anyone reporting decipherments made with such tools. The profile schema, the \Ntargets\ profiles and the working record behind them (notes, transcriptions, code and commit history) are released with the paper so that later work can check any profile against its sources and add targets and models on the same terms.
 
 \ifanon\else
 \section*{Acknowledgements}
