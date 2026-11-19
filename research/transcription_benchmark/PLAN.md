@@ -4,7 +4,7 @@ Goal: measure how accurately the AI transcribes cipher pages, beyond the single 
 groups exactly right, 95.8%; every miss one digit; 8 of 12 flagged). Uses only material in this repository or fetchable
 from public archives. Nobody else is asked for anything.
 
-Status: Phase 0 script written (`inventory.py`); nothing else run. The 97% figure quoted in conversation is NOT in the
+Status (19 Nov 2026): Phases 0-4 run on a four-document subset; results in RESULTS.md. Phases 5-7 not run. The 97% figure quoted in conversation is NOT in the
 repository; do not quote it publicly until Phase 3 produces it.
 
 ## What is on hand (counts from profile.json, 17 Nov 2026 session)
