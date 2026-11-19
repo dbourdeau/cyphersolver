@@ -111,6 +111,16 @@ Conventions). In short:
   transcription and decryption file of every document, and the key file, in `profile.json` `outcome.texts` /
   `outcome.key_file` (see `docs/_texts.py`); the site shows them in a "Full texts" section.
 - Large images stay out of git; link them (Gallica, DECODE, the archive's viewer) or describe where they are.
+- **Conditions of use of the images.** Read the conditions that came with the images before you give them to an AI
+  assistant. Reproductions ordered from an archive or its photographer often carry conditions, and an image whose
+  reuse terms you have not confirmed is linked, not committed. Say in the pull request what conditions came with the
+  images and who agreed to them. Two cases reported to us (issue #754): the Archivio Apostolico Vaticano's reproduction
+  office, asked on 17 Nov 2026 whether copies ordered from it could be analysed with an AI assistant, quoted § 6 of its
+  order form, which forbids using the reproductions "per processi di elaborazione, analisi o archiviazione tramite
+  sistemi di Intelligenza Artificiale", not only for training (this is the wording of its e-mail of 17 Nov 2026; the form
+  itself has not been seen, and AAV images reached through DECODE come under DECODE's own terms, which have not been
+  checked); and a Casanatense reproduction ordered from the library's photographer, "for private study only" and not to
+  be republished, where whether AI reading is within that was not asked.
 - Leave the generated files alone (`docs/*.html` built by `docs/_build_site.py`, `docs/search.json`,
   `docs/pages.json`, `docs/writeups.html`). They are rebuilt when the contribution is merged.
 - Say in the description how you want to be credited (full name, initials or a handle, and a link if you like).
