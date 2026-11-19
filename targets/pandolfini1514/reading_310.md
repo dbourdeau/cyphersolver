@@ -4,9 +4,9 @@ ASF Mediceo avanti il Principato LXXII, doc. 310 (cc. 380r-381v, pos. 759-762): 
 
 ## Status
 
-**Read in part: 897 units (a word, or an unresolved group counted as one): 705 certain, 109 probable, 0 restored, 83 unresolved groups** (recounted 19 Nov 2026 after the four S -> 5 corrections of the transcription and the reading {disse} for J# = ss; see the note below). An unresolved group often covers 2-5 words: counting 3 words per group, 1,063 words, **76.6% read by sense and 66.3% certain alone** (rule of #728) (the mechanical 91% overstates it). By block: A about 80%, B 80%, C 65%, D 65%, E 70%, F 70%, G 80%, H 80%. Below the 95% rule.
+**Read in part: 895 units (a word, or an unresolved group counted as one): 703 certain, 109 probable, 0 restored, 83 unresolved groups** (recounted 19 Nov 2026 after the four S -> 5 corrections of the transcription and the reading {disse} for J# = ss; see the note below). An unresolved group often covers 2-5 words: counting 3 words per group, 1,061 words, **66.3% certain alone (the read share under the README rule, #728) and 76.5% with the probable words** (the mechanical 91% overstates it). By block: A about 80%, B 80%, C 65%, D 65%, E 70%, F 70%, G 80%, H 80%. Below the 95% rule.
 
-Changes of 19 Nov 2026 (blind sign-shape sheet W, checked by Brice Dudout, controls 2/2): the sign transcribed S is a 5 in B1 (domandono), C1 (ultimamente), C3 (mandato, simil): domandono and mandato become certain, ultimamente and simil stay probable (their other signs are not settled). The S^2 of monstrono and the t before 7^5 in 'fra' (A9, C1, H1) were checked and are as transcribed: those gaps come from the key or the hand. The sign written J# in 'di J# e' (A8, D8) is a long s with two bars; # marks doubling in this cipher (t# tt, c# cc, 4# ll), so J# = ss by analogy and both groups read {disse}: probable, not in key v6. Raw lines B1, C1 and C3 above are re-decoded from the corrected transcription.
+Changes of 19 Nov 2026 (blind sign-shape sheet W, checked by Brice Dudout, controls 2/2): the sign transcribed S is a 5 in B1 (domandono), C1 (ultimamente), C3 (mandato, simil): domandono and mandato become certain, ultimamente and simil stay probable (their other signs are not settled). The S^2 of monstrono and the t before 7^5 in 'fra' (A9, C1, H1) were checked and are as transcribed: those gaps come from the key or the hand. The sign written J# in 'di J# e' (A8, D8) is a long s with two bars; # marks doubling in this cipher (t# tt, c# cc, 4# ll), so J# = ss by analogy and both groups read {disse}: probable, not in key v6. The two tokens are now J# in `transcription_310.txt` (A8 J? -> J#, D8 J -> J#; the checker answered "none / other shape" and wrote "an f with two bars" for both). Raw lines A8, B1, C1, C3 and D8 above are re-decoded from the corrected transcription (key v6 has no J#, so A8 and D8 show `?`). Net change of the count against main (701/109/85): two words become certain (domandono, mandato), two groups become probable ({disse} ×2).
 
 Reservations (declared): (1) pos. 759 (block A) was transcribed by an agent that knew the key: NOT blind; (2) codes not resolved: .22. (probably lanzichenech, from the clear 316 of mid-March, not added to the key), 20./23., .uij.; (3) blocks C, D and E need re-reading on HD images.
 
@@ -19,7 +19,7 @@ Reservations (declared): (1) pos. 759 (block A) was transcribed by an agent that
     A5 i o ri t ra g h a con li ca pi tu li e ? pe di ti per ancora o si a s pe c ta da l ca n to di que s t maesta i l du b
     A6 di su fo r t et li a l t ri o ra to ri di inghilterra che si t ro vo no qui u so n di re che lo a cc o r do se g u i ra
     A7 a h o mo do et co s to ro da l ca n to lo ro non ci fa nn o du ci ta ti o ne
-    A8 de ll a che h i s ci a ve nu n do di a n g li te rr a di f e h a ve re ri n con t ro a h ca le s i l
+    A8 de ll a che h i s ci a ve nu n do di a n g li te rr a di ? e h a ve re ri n con t ro a h ca le s i l
     A9 n ra te ve s co vo s pa g no lo pa le a me si s pa si ti s t ll e qui et re fe re n do li a vo qui a l du ca di
     A10 su fo r t i l p re fa to du ca li re s po se i l p re fa to n ra te va i n a n g li te rr a per me c t re
     A11 fu o co ? qua e non li ri u s ci ra et mi di co to che i l fu o co non va da piu p re s to di o sa h a che n s t ra si
@@ -50,7 +50,7 @@ Reservations (declared): (1) pos. 759 (block A) was transcribed by an agent that
     D5 me s to si po t ra ve ni re di ? a qua l che nu o vo t ra c ta to et ca pi tu la ti o ne n ra me pa ti du a re
     D6 ne i o so se i l p re fa to o ra to re si vo le va i n te n de re per con to de ll e co se de l cattolico a l qua le
     D7 me s ta maesta r? che si ri t ra e da ll e pa ro le nu e po r ta o di o non pi ll i o lo et a n da n do i o
-    D8 ci per i n co r te i l cristianissimo i n u n lu n go di s co r so de ll e co se de l papa di f e a ll o o ra to re
+    D8 ci per i n co r te i l cristianissimo i n u n lu n go di s co r so de ll e co se de l papa di ? e a ll o o ra to re
     D9 ci senza et a me co h a ve va ma n da to la g h i s ci a i n h re to i n a n g li te rr a m e ? pe di to et che
     D10 de c te va la co sa per con c lu sa et che e ra i l ve ro che re s ta va qua l che ? di di f f i cu l t per con to di
     D11 s co ti a ma che a n che que s ta si a s se c te re pa e ?

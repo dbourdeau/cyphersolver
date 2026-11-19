@@ -189,4 +189,10 @@ The transcription and the reading are WAINUT's (lccompany). Our corrections bear
 - **The letter stays read in part.** Level: AI decipherment, human-checked on a sample of signs. Keys v6 and v6b have never
   been measured.
 - No image or derivative is included (ASF MAP CXXXVII, doc. 666).
-
+- **Sign-check record (held here until #789).** The record was first filed as `outcome.human_check`; it is withdrawn from
+  `profile.json` because the schema defines `human_check` as a check without AI help, and these sheets were prepared by AI
+  agents. It will go into `outcome.sign_check` once #789 is merged; `sign_check_pending.json` holds the entries in that format
+  (no schema field refers to it yet). Checker Brice Dudout (project); a model wrote the rules, cut the thumbnails, built and
+  scored the sheets. X2: 5 signs, controls 2/2 (campo r05, bare 2 of "quatro o" r07, verificata r14, loco b04, -sco b06);
+  x3: 2 signs (cosa v02, pace v10) and x4: 1 sign (periculo bv08), on sheets shared with pandolfini1514 (controls 2/2 each).
+  All eight looped ʒ, as transcribed; no token changed. Result: the transcription is confirmed on these eight signs.

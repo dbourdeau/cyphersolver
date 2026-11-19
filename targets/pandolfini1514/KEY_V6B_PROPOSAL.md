@@ -56,7 +56,7 @@ certain. A c-word confirmed ʒ stays certain. Doubtful shapes keep the v6 value.
 | letter | certain / probable / restored / unresolved (v6 -> v6b) | read by sense | certain alone (v6 -> v6b) |
 |---|---|---|---|
 | 666 (pandolfini1515; our count, 817 units) | 607/165/15/27 -> 613/159/15/27 | 94.5% | 74.3% -> 75.0% |
-| 310 (3 words per unresolved group, 1,063) | 705/109/0/83 -> 709/105/0/83 | 76.6% | 66.3% -> 66.7% |
+| 310 (3 words per unresolved group, 1,061) | 703/109/0/83 -> 707/105/0/83 | 76.5% | 66.3% -> 66.6% |
 | 307 (291) | 205/57/0/29 -> 208/54/0/29 | 90.0% | 70.4% -> 71.5% |
 | 309 (83) | 59/16/0/8, unchanged | 90.4% | 71.1% |
 | 311 (533) | 424/42/1/66 -> 426/40/1/66 | 87.4% | 79.5% -> 79.9% |
@@ -72,4 +72,4 @@ The words that become certain are:
 
 The share read by sense does not change anywhere: v6b turns probable words into certain ones and adds no word read.
 **Both targets stay "read in part".**
-The 310 figures already include the four S -> 5 corrections of `transcription_310.txt` (sheet W, 18 Nov 2026).
+The 310 figures already include the four S -> 5 and two J? / J -> J# corrections of `transcription_310.txt` (sheet W, 18 Nov 2026); recounted 19 Nov 2026 from the marks of `reading_310.md` (895 units, 703/109/0/83).
