@@ -4,7 +4,7 @@ ASF Mediceo avanti il Principato LXXII, doc. 311 (cc. 382r-v, pos. 763-764): con
 
 ## Status
 
-**Read in part: about 534 units, 424 certain, 44 probable, 1 restored ([24], written in clear inside the cipher), 65 unresolved groups.** Mechanical rate about 88%; an unresolved group often covers 2-3 words, so the real rate is **about 80-85%**. By block: A about 86%, B 88%, B continued 61%, C 91% (B15-B16 nearly illegible), P.S. 86%. Below the 95% rule.
+**Read in part: about 534 units, 424 certain, 44 probable, 1 restored ([24], written in clear inside the cipher), 65 unresolved groups; at 3 words a group 664 cipher words, 424/664 = 63.9% sure alone (rule #728; the restored [24] counts as a hole).** With probable words, by sense (not the #728 rule): mechanical rate about 88% (468/534 units); an unresolved group often covers 2-3 words, so about 80-85% by sense. By block, by sense: A about 86%, B 88%, B continued 61%, C 91% (B15-B16 nearly illegible), P.S. 86%. Below the 95% rule.
 
 Declared: the transcription is NOT blind (doubtful shapes settled while reading), so 'certain' here means read by the key without retouching on a transcription whose doubtful shapes were settled by reading.
 
