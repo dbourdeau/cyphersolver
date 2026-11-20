@@ -169,6 +169,9 @@ def model_family(t):
 def tex(s): return str(s).replace('\\', '/').replace('&', '\\&').replace('%', '\\%').replace('_', '\\_').replace('#', '\\#').replace('$', '\\$')
 
 
+def got(t): return t['ext'] in ('complete', 'partial')   # text obtained = read in full or in part; a key whose text does not read is not obtained
+
+
 def mark(t): return tex(t['target']) + ('$^\\dagger$' if t.get('external') else '')
 
 
@@ -178,6 +181,7 @@ def pct(a, b): return f'{100 * a / b:.0f}' if b else '0'
 # The paper reports the project's own work. Set True to add the contributed targets (provenance 'contributed') as a
 # lower block in each group table, a section, a table and an appendix list; the paper's text would need them back too.
 INCLUDE_CONTRIBUTED = False
+SECOND_OPERATOR = 'dudout'    # contributors.json id; his contributed targets get their own section (20 Nov 2026)
 CONTRIBUTED = []          # set in main(): the contributed targets, shown under the project targets in each group table
 
 
@@ -238,7 +242,7 @@ def main():
     rec = [t for t in ps if t['method'] in MT.KEY_RECOVERED]
     app = [t for t in ps if t['method'] in (EXT_KEY, KNOWN)]
     dec = [t for t in ps if t['method'] == DECIPH]
-    obtained = [t for t in worked if t['method'] != NOT]
+    obtained = [t for t in worked if got(t)]
     m('Ntargets', len(ps)); m('Ndocs', sum(t['ndocs'] for t in ps)); m('Nworked', len(worked))
     m('Nobtained', len(obtained)); m('PctObtained', pct(len(obtained), len(worked)))
     m('Ncomplete', sum(1 for t in obtained if t['ext'] == 'complete')); m('Npartial', sum(1 for t in obtained if t['ext'] == 'partial'))
@@ -249,6 +253,8 @@ def main():
         m('N' + k + 'partial', sum(1 for t in ps if t['method'] == meth and t['ext'] == 'partial'))
     m('Nrecovered', len(rec)); m('Napplied', len(app)); m('Ndeciph', len(dec))
     m('Nrecoveredcomplete', sum(1 for t in rec if t['ext'] == 'complete'))
+    m('NkeyOnly', sum(1 for t in worked if MT.key_only(t['method'], t['ext'])))
+    m('NkeyOnlyCT', sum(1 for t in worked if t['method'] == CT and t['ext'] == 'none'))
     m('NnotCipher', sum(1 for t in ps if t['method'] == NA and t['cls'] == 'not a cipher'))
     m('NoffLine', sum(1 for t in ps if t['method'] == NA and t['cls'] == 'offline only'))
     m('NnaOther', by[NA] - M['NnotCipher'] - M['NoffLine'])
@@ -283,22 +289,26 @@ def main():
     m('NCTnotcto', sum(1 for t in ps if t['method'] == CT and t['attack'] != 'ciphertext-only')); m('NctoNot', sum(1 for t in cto if t['method'] == NOT))
     m('NctoPct', pct(M['NctoCT'], len(cto)))
     crib = [t for t in worked if t['attack'] == 'crib']
-    m('Ncrib', len(crib)); m('Ncribobtained', sum(1 for t in crib if t['method'] != NOT))
+    m('Ncrib', len(crib)); m('Ncribobtained', sum(1 for t in crib if got(t)))
     keyed = [t for t in worked if attack_group(t) == 'a key (archive, print, sibling)']
-    m('Nkeyed', len(keyed)); m('Nkeyedobtained', sum(1 for t in keyed if t['method'] != NOT)); m('Nkeyedpct', pct(M['Nkeyedobtained'], len(keyed)))
+    m('Nkeyed', len(keyed)); m('Nkeyedobtained', sum(1 for t in keyed if got(t))); m('Nkeyedpct', pct(M['Nkeyedobtained'], len(keyed)))
     decs = [t for t in worked if attack_group(t) == 'decipherment or known plaintext']
-    m('Ndecstart', len(decs)); m('Ndecstartobtained', sum(1 for t in decs if t['method'] != NOT))
+    m('Ndecstart', len(decs)); m('Ndecstartobtained', sum(1 for t in decs if got(t)))
 
     # contamination
     clean = [t for t in worked if t['prior'] == 'no']
-    m('Nclean', len(clean)); m('Ncleanobtained', sum(1 for t in clean if t['method'] != NOT))
+    m('Nclean', len(clean)); m('Ncleanobtained', sum(1 for t in clean if got(t)))
     m('Ncleanrecovered', sum(1 for t in clean if t['method'] in MT.KEY_RECOVERED))
     m('NcleanCT', sum(1 for t in clean if t['method'] == CT))
     m('NcleanApplied', sum(1 for t in clean if t['method'] in (EXT_KEY, KNOWN)))
-    m('Ncleancomplete', sum(1 for t in clean if t['method'] != NOT and t['ext'] == 'complete'))
-    ctprior = [t for t in ps if t['method'] == CT and t['prior'] != 'no']
+    m('Ncleancomplete', sum(1 for t in clean if got(t) and t['ext'] == 'complete'))
+    ctprior = [t for t in ps if t['method'] == CT and t['prior'] not in ('no', U)]   # a reading known to exist (unknown left out)
     m('NCTprior', len(ctprior)); m('NCTclean', by[CT] - len(ctprior))
     m('NCTpriorbefore', sum(1 for t in ctprior if t['found'] == 'before attempt'))
+    m('NCTpriorused', sum(1 for t in ps if t['method'] == CT and t['prior_used'] is True))
+    mixed = [t for t in ps if t['prov'] == 'mixed']
+    m('NmixedCT', sum(1 for t in mixed if t['method'] == CT)); m('NmixedSA', sum(1 for t in mixed if 'lasry' in solvers(t)))
+    m('NmixedSACT', sum(1 for t in mixed if 'lasry' in solvers(t) and t['method'] == CT))
     m('NpriorFoundDuring', sum(1 for t in worked if t['prior'] not in ('no', U) and t['found'] == 'during attempt'))
     m('NpriorFoundBefore', sum(1 for t in worked if t['prior'] not in ('no', U) and t['found'] == 'before attempt'))
     m('Nprintprior', sum(1 for t in ps if t['prior'] == 'in print'))
@@ -330,7 +340,7 @@ def main():
     m('Ndocspublished', sum(1 for b in alldocs if b == 'published'))
     m('PctDocsllm', pct(M['Ndocsllm'], len(alldocs)))
     img = [t for t in worked if t['trby'] and all(b == 'llm from images' for b in t['trby'])]
-    m('Nimg', len(img)); m('Nimgobtained', sum(1 for t in img if t['method'] != NOT))
+    m('Nimg', len(img)); m('Nimgobtained', sum(1 for t in img if got(t)))
 
     # contributions of the targets whose text already existed
     m('Ndeciphtranscribed', sum(1 for t in dec if 'transcription' in t['contribution']))
@@ -392,7 +402,7 @@ def main():
     reg = json.loads((ROOT / 'contributors.json').read_text(encoding='utf-8'))['contributors']
     name = {c['id']: c['name'] for c in reg}
     cworked = [t for t in cs if t['method'] != NA]
-    cobt = [t for t in cworked if t['method'] != NOT]
+    cobt = [t for t in cworked if got(t)]
     m('Ncontrib', len(cs)); m('Ncontribworked', len(cworked)); m('Ncontribobtained', len(cobt))
     m('Ncontribcomplete', sum(1 for t in cobt if t['ext'] == 'complete')); m('Ncontribpartial', sum(1 for t in cobt if t['ext'] == 'partial'))
     cby = collections.Counter(t['method'] for t in cs)
@@ -413,7 +423,7 @@ def main():
     ccto = [t for t in cworked if t['attack'] == 'ciphertext-only']
     m('Nccto', len(ccto)); m('NcctoCT', sum(1 for t in ccto if t['method'] == CT))
     cclean = [t for t in cworked if t['prior'] == 'no']
-    m('Ncclean', len(cclean)); m('Nccleanobtained', sum(1 for t in cclean if t['method'] != NOT))
+    m('Ncclean', len(cclean)); m('Nccleanobtained', sum(1 for t in cclean if got(t)))
     m('NccleanCT', sum(1 for t in cclean if t['method'] == CT))
     cko = collections.Counter(t['key_order'] for t in cs if t['method'] == CT)
     m('NcCTalpha', cko['alphabetical'] + cko['partly alphabetical']); m('NcCTrandom', cko['random'] + cko['keyword-derived'])
@@ -426,6 +436,60 @@ def main():
     m('NcontribCountries', len({c for t in cs for c in t['ctry']}))
     cfirst = sorted(t['first'][:10] for t in cs if t['first'][:4] == '2026')
     m('ContribDateFirst', dstr(cfirst[0]) if cfirst else '?')
+
+    # ---- the second operator: the contributed targets credited to SECOND_OPERATOR as solver. They are LLM work under
+    # another person's rules (his agents, his protocol), so the paper reports them in their own section and table,
+    # apart from the project's figures. The other contributors' targets stay out (INCLUDE_CONTRIBUTED).
+    bs = [t for t in cs if SECOND_OPERATOR in solvers(t)]
+    bworked = [t for t in bs if t['method'] != NA]
+    bobt = [t for t in bworked if got(t)]
+    bby = collections.Counter(t['method'] for t in bs)
+    m('NB', len(bs)); m('NBworked', len(bworked)); m('NBobtained', len(bobt))
+    m('NBcomplete', sum(1 for t in bobt if t['ext'] == 'complete')); m('NBpartial', sum(1 for t in bobt if t['ext'] == 'partial'))
+    for meth in MT.METHODS:
+        k = ABBR[meth]
+        m('NB' + k, bby[meth])
+        m('NB' + k + 'complete', sum(1 for t in bs if t['method'] == meth and t['ext'] == 'complete'))
+        m('NB' + k + 'partial', sum(1 for t in bs if t['method'] == meth and t['ext'] == 'partial'))
+    m('NBrecovered', sum(1 for t in bs if t['method'] in MT.KEY_RECOVERED))
+    m('NBapplied', bby[EXT_KEY] + bby[KNOWN])
+    bcto = [t for t in bworked if t['attack'] == 'ciphertext-only']
+    m('NBcto', len(bcto)); m('NBctoCT', sum(1 for t in bcto if t['method'] == CT))
+    bclean = [t for t in bworked if t['prior'] == 'no']
+    m('NBclean', len(bclean)); m('NBcleanobtained', sum(1 for t in bclean if got(t)))
+    m('NBcleanCT', sum(1 for t in bclean if t['method'] == CT))
+    m('NBclaude', sum(1 for t in bs if any('claude' in x.lower() for x in t['models'])))
+    m('NBmodelunknown', sum(1 for t in bs if not t['models']))
+    m('NBheldout', sum(1 for t in bs if as_dict(t['prof']['outcome'].get('validation')).get('verdict') == 'pass'))
+    m('NBshared', sum(1 for t in bs if len(set(solvers(t))) > 1))
+    m('NBmixed', sum(1 for t in ps if t['prov'] == 'mixed' and SECOND_OPERATOR in solvers(t)))
+    m('NBdocs', sum(t['ndocs'] for t in bs)); m('NBsteps', sum(len(t['steps']) for t in bs))
+    byears = [t['year'] for t in bs if t['year']]
+    m('NBYearMin', min(byears)); m('NBYearMax', max(byears))
+    m('NBlanguages', len({l for t in bs for l in t['langs']}))
+    m('NBnonEurope', sum(1 for t in bs if t['region'] not in ('Europe', U)))
+    bfirst = sorted(t['first'][:10] for t in bs if t['first'][:4] == '2026')
+    m('NBDateFirst', dstr(bfirst[0]) if bfirst else '?')
+    brow = [r'\begin{table}[t]', r'\centering\small', r'\begin{tabular}{@{}lrrr@{}}', r'\toprule',
+            r'outcome method & $n$ & complete & partial \\', r'\midrule']
+    for meth in MT.METHODS:
+        if meth in (NA, NOT):
+            brow += [r'\midrule', '%s & %d & -- & -- \\\\' % (SHORT[meth], bby[meth])]
+        else:
+            brow.append('%s & %d & %d & %d \\\\' % (SHORT[meth], bby[meth], M['NB' + ABBR[meth] + 'complete'], M['NB' + ABBR[meth] + 'partial']))
+    brow += [r'\midrule', 'all & %d & %d & %d \\\\' % (len(bs), M['NBcomplete'], M['NBpartial']), r'\bottomrule', r'\end{tabular}',
+             r'\caption{\label{tab:second} Outcome method and extent for the %d targets of the second operator '
+             r'(Section~\ref{sec:second}). They are not counted in Table~\ref{tab:methods}.}' % len(bs), r'\end{table}', '']
+    SECOND_TABLE = '\n'.join(brow)
+    bA = [r'{\scriptsize', r'\begin{longtable}{@{}lrlllr@{}}',
+          r'\caption{\label{tab:allsecond} The targets of the second operator (Section~\ref{sec:second}), by date of the earliest document. Methods as in Table~\ref{tab:all}.}\\',
+          r'\toprule', r'target & year & language & system & method & extent \\', r'\midrule', r'\endfirsthead',
+          r'\toprule', r'target & year & language & system & method & extent \\', r'\midrule', r'\endhead', r'\bottomrule', r'\endlastfoot']
+    for t in sorted(bs, key=lambda t: (t['year'] or 9999, t['target'])):
+        bA.append('%s & %s & %s & %s & %s & %s \\\\' % (tex(t['target']), t['year'] or '--', tex(', '.join(sorted(t['langs'])) or '--'),
+                                                      tex(family(t)), ABBR[t['method']], t['ext']))
+    bA += [r'\end{longtable}}', '']
+    SECOND_APPENDIX = '\n'.join(bA)
 
     # per-contributor table (names in the camera-ready version only; the submission shows C1, C2 ...)
     EOL = ' \\\\'
@@ -495,7 +559,7 @@ def main():
         else:
             rows.append(f'{SHORT[meth]} & {by[meth]} & {M["N" + ABBR[meth] + "complete"]} & {M["N" + ABBR[meth] + "partial"]} \\\\')
         if meth == ADJ_PT:
-            rows.append(f'\\quad\\emph{{key recovered, all routes}} & \\emph{{{len(rec)}}} & \\emph{{{M["Nrecoveredcomplete"]}}} & \\emph{{{len(rec) - M["Nrecoveredcomplete"]}}} \\\\')
+            rows.append(f'\\quad\\emph{{key recovered, all routes}} & \\emph{{{len(rec)}}} & \\emph{{{M["Nrecoveredcomplete"]}}} & \\emph{{{sum(1 for t in rec if t['ext'] == 'partial')}}} \\\\')
     rows += ['\\midrule', f'all targets & {len(ps)} & {M["Ncomplete"]} & {M["Npartial"]} \\\\', '\\bottomrule', '\\end{tabular}',
              f'\\caption{{\\label{{tab:methods}} Outcome method and extent for the {len(ps)} targets. The first three methods '
              'recover the key here; the next two apply a key that already existed; the sixth transcribes and checks a '
@@ -533,6 +597,7 @@ def main():
     rows += ['\\bottomrule', '\\end{tabular}}',
              f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~solved in part by an outside contributor.}}', '\\end{table*}', '']
     T.append('\n'.join(rows))
+    T.append(SECOND_TABLE)
     if INCLUDE_CONTRIBUTED: T.append(CONTRIB_TABLE)
     (OUT / 'tables.tex').write_text('\n'.join(T), encoding='utf-8')
 
@@ -547,12 +612,13 @@ def main():
         A.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                  f'{ABBR[t["method"]]} & {t["ext"]} & {t["tokens"] if t["tokens"] else "--"} \\\\')
     A += ['\\end{longtable}}', '']
+    A.append(SECOND_APPENDIX)
     if INCLUDE_CONTRIBUTED: A.append(CONTRIB_APPENDIX)
     (OUT / 'appendix.tex').write_text('\n'.join(A), encoding='utf-8')
 
     # ---- data release, same corpus
     rows_ = []
-    for t in (everyone if INCLUDE_CONTRIBUTED else ps):
+    for t in (everyone if INCLUDE_CONTRIBUTED else ps + bs):    # the second operator's targets are in the release, marked by provenance
         prof = t['prof']
         base = {'target': t['target'], 'title': prof['title']}
         for sect in ('system', 'conditions', 'outcome'): ex.flat(prof[sect], sect, base)
