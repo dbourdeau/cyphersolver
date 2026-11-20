@@ -75,7 +75,7 @@
 </div>
 
 <h2 id="the-box-and-the-letter"><span class="num">01</span> The box and the letter</h2>
-<p>Cart. 1597 holds 174 DECODE records: 115 key sheets (nos. 1&ndash;114 and 169&ndash;171) and 59 ciphertexts. The key sheets are neat copies headed with correspondents' names (Cosimo de' Medici, Roberto de' Malatesti, Antonio da Pistoia, 1458&ndash;68) and the Naples inventory shows they are later reconstructions, so they are not a key to the letters. The letters use a dozen or so different sign alphabets, so every alphabet needs its own key; the catalogue lists them separately (items 2399&ndash;2413, one key per entry). This page covers one letter, R5464, which is long enough for a statistical attack: 3,279 signs, 60 distinct.</p>
+<p>Cart. 1597 holds 174 DECODE records: 115 key sheets (nos. 1&ndash;114 and 169&ndash;171) and 59 ciphertexts. The key sheets are neat copies headed with correspondents' names (Cosimo de' Medici, Roberto de' Malatesti, Antonio da Pistoia, 1458&ndash;68) and the Naples inventory shows they are later reconstructions, so they are not a key to the letters. The letters use a dozen or so different alphabets of graphic signs, so every alphabet needs its own key; the catalogue lists them separately (items 2399&ndash;2413, one key per entry). This page covers one letter, R5464, which is long enough for a statistical attack: 3,279 signs, 60 distinct.</p>
 
 <h2 id="what-the-controls-say"><span class="num">02</span> What the controls say</h2>
 <p>The solver's score on the real signs is compared with the score on the same signs shuffled. For Italian the ratio is 1.65; for Latin 1.38, Spanish 1.36, French 1.32, German lowest. Simulated Italian ciphers with 0, 8 and 15% sign noise were run the same way to see how much a misread sign costs. The letter families that come out are coherent by shape: the V-shaped signs fall on <i>e</i>, the &phi;-shaped on <i>o</i>, the hooked-stroke signs on <i>n</i>, the R-shaped on <i>s</i>.</p>
@@ -96,9 +96,10 @@
 <h2 id="what-remains-uncertain"><span class="num">05</span> What remains uncertain</h2>
 <ul>
 <li>Which of the 60 sign classes are one letter written two ways, and which look-alikes are one sign: 40 of 60 homophone assignments agree across runs.</li>
-<li>Every other letter of the box: R5465, R5463 and one more family show signals only.</li>
+<li>Every other letter of the box: in our own runs R5465, R5463 and one more family show signals only.</li>
 <li>The date, the writer and the recipient: nothing in the letter names them.</li>
 </ul>
+<p>An outside contributor, Prabal Gupta (prabal-rje), has sent keys and decodes of other letters of the box, made from the ciphertext alone. Pull request 494 (integrated 13 November 2026) holds R5463, R5464 and R5465, on our sign labels. Pull request 825 (20 November 2026) holds ten pages of nine more records, on his own transcription of the DECODE images: R5415, R5416, R5419, R5421, R5432, R5439, R5445, R5453 and R5456. For the second set we applied each key table to its rows with our own decoder and obtained his decode on every line. None of them is a reading by the standard of this project: the decodes have no word division, no key sheet or clear text checks the keys, and we have made no sentence-level reading of them. The files are in the repository folders named under Sources.</p>
 <p>The next step is better images. A request to the Archivio di Stato di Milano for 400 dpi photographs of the stamped leaves 158, 159, 164 and 165 is drafted, not sent.</p>
 
 <!-- replay:start -->
@@ -108,6 +109,8 @@
 <ul>
 <li>Archivio di Stato di Milano, Carteggio Visconteo-Sforzesco, Potenze sovrane, Cancelleria segreta, cart. 1597; images via DECODE, record R5464.</li>
 <li>George Lasry, CrypTool Text Solver (CTTS), Apache 2.0, run headless with period Italian, Latin and other corpora.</li>
+<li>Contributed keys and decodes: Prabal Gupta (prabal-rje), pull requests 494 and 825, in <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sforza1597/outside_prabal-rje_2026-11-12">outside_prabal-rje_2026-11-12/</a> and <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sforza1597/outside_prabal-rje_2026-11-19">outside_prabal-rje_2026-11-19/</a>. The rows of the second folder are his transcription of the DECODE images of records R5415, R5416, R5419, R5421, R5432, R5439, R5445, R5453 and R5456; no DECODE image is reproduced.</li>
+<li>M. H&eacute;der and B. Megyesi, &ldquo;The DECODE Database of Historical Ciphers and Keys: Version 2&rdquo;, HistoCrypt 2022, <a href="https://doi.org/10.3384/ecp188397">doi.org/10.3384/ecp188397</a>.</li>
 </ul>
 <p class="muted">Notes, code and the sign transcription: <a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sforza1597">targets/sforza1597/</a>.</p>
 <!-- cite:start -->
