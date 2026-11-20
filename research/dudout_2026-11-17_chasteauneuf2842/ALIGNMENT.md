@@ -154,7 +154,7 @@ them a possible "recherché"), 5 in line 4, 2 in line 5 and 4 in line 6.
 
 ## What this changes
 
-- The slip deciphers the foot block (lines 1-3 to "d'Espaigne"): the alignment holds sign by sign, with 5 signs out.
+- The slip deciphers the foot block (lines 1-3 to "d'Espaigne"): the alignment holds sign by sign, with 7 signs out (85 of 92 line up, 1 of them doubtful; recount of 18 Nov, PR #782).
 - The slip also follows the top block: its later words ("& des protestans", "en donner occasion par le secours",
   "veulent donner a ceux de la religion pour les maintenir contre les edits du Roy") are in the top block, in the same
   order, and the block ends with the "le roy" sign where the slip ends "du Roy". This supports the reading that the slip
