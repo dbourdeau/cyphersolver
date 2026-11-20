@@ -245,3 +245,29 @@ is unchanged (its units do not include the sign groups).
 
 **Limits.** One checker, inside the project. Two controls show little on their own. The signs were chosen because they were
 doubtful: a diagnostic, not a sample of the text. No person has audited the model's part. This is not a `human_check`.
+
+## Sign check K2, 20 Nov 2026 (R4844 sign words)
+
+Follow-up of sheet K, for its three new shapes. Same level and roles (checker: Brice Dudout, the contributor; an AI model,
+Claude Opus 5.5, wrote the rule, chose the signs, cut the thumbnails, built and scored the sheet and read the remark). No
+image, crop or thumbnail is committed: the images are the DECODE study images of R4844, not reproduced.
+
+**Rule.** `sign_check/sheet-K2-rule.md` (in French, as written), SHA-256
+de905a2656743a872a68e3d154bdb0a6f0ae6c72cef47dffdc5962f9acc803e4, written and hashed on 20 Nov 2026 before any thumbnail
+and any answer. Unlike sheet K it has a written integration clause. The 19 sign groups were searched for other cases of the
+three shapes: "an L with a stroke below" had a second possible case (the "=" of "attempt", where an upright reaches the
+struck-out interlinear: perhaps the stem of a letter of the gloss); "dots above and below" a possible second case (group 2);
+"a dot then a trait" none, so it was not asked. Three targets, two controls (the dotted r of "Sterling", the # of "attempt").
+
+**Answers.** `sign_check/sheet-K2-answers.json`, exported 2026-11-19T23:31:13Z (SHA-256
+130e58077cc9c911417400142ba956182ea508e39b9708c73c0486afe8b7951d); results `sign_check/sheet-K2-results.tsv`. Controls 2 of 2.
+Group 14, fifth sign: "=", with the remark that the "L with a stroke below" he saw on sheet K was an error: the upright is a p
+of the line above. Group 4, fourth sign: "=". Group 2, fifth sign: dot below.
+
+**Effect.** By the clause, the fifth sign of group 14 is a p (as in "plot" and "attempt", certain words): it is relabelled EQ
+(it was transcribed ⊥) and **suspition** becomes certain. The lead "L with a stroke below" is withdrawn, and with it the idea
+of an "= with upright" variant (the upright in "attempt" is likewise outside the sign). Groups 2 and 4 stay unresolved.
+Sure groups: 13 of 19 = 0.684 -> **14 of 19 = 0.737** (R4844 sign words, `dudout/reading_R4844_signs.md`). The target's
+fraction_read (0.36) does not count R4844's units and is unchanged. Still read in part (fewer than 40 words, 5 holes).
+
+**Limits.** One checker inside the project; two controls; signs chosen because doubtful. Not a `human_check`.
