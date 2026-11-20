@@ -1,0 +1,151 @@
+# T-S NS J479: Judaeo-Arabic jottings in an invented sign alphabet (Cambridge University Library, Cairo Geniza)
+
+Cambridge University Library, Taylor-Schechter New Series J479; Princeton Geniza Project (PGP) document 8804. One
+paper folio, both sides covered with jottings in many directions. Lead from the Hebrew-script sweep of 6 Nov 2026
+(`research/sweep_2026-11_hebrew/`), ranked first of the unread pre-1400 Arabic/Hebrew-script ciphers on 20 Nov 2026.
+
+## Prior work (contamination question)
+
+- **PGP record 8804** (read 20 Nov 2026): Judaeo-Arabic "in an idiosyncratic (unique?) cipher"; no earlier than the
+  mid-13th century (hand, formulary, a poem by al-Būṣīrī, 1213-95). Contents listed: (1) the alphabet several times,
+  right to left and left to right; (2) the signature *al-faqīr Isḥāq al-yahūdī* several times; (3) two verses of the
+  *Qaṣīdat al-Burda* (أمن تذكر جيران بذي سلم); (4) legal jargon *jarā dhālika fī ākhir jumādā al-thāmī(!) sanat ar[...]*;
+  (5) two pornographic sections, one ending כל הדה כדב ("all this is lies"). Also two lines of an Arabic-script petition,
+  scattered Arabic words and one Hebrew-script word כסתבאן. No transcription or translation is published there.
+- **Alan Elbaum**, Cambridge Genizah blog, 22 Jun 2022 ("Secret codes and erotic prose"): about 22 signs written in a
+  row several times; mapped to the Hebrew alphabet; language Judaeo-Arabic; an annotated photocopy with Hebrew letters
+  over the signs (`img/elbaum_annot.png`, 1200 px, low resolution). Mamluk or Ottoman date.
+- Elbaum writes that he came across the fragment while looking for uncatalogued or minimally catalogued documentary
+  fragments, and quotes the two Burda verses in S. P. Stetkevych's translation (*The Mantle Odes*, 2010, p. 92).
+- So **Elbaum has a working key and has read parts** (the items above). No full reading is published. Our attempt
+  starts from the images and the alphabet rows; Elbaum's annotated copy is used only to find lines and, later, to
+  check, and that use is recorded here. Anything we find goes to Elbaum before it is published.
+
+## Access
+
+- Cambridge IIIF by plain curl: `https://images.lib.cam.ac.uk/iiif/MS-TS-NS-J-00479-000-0000{1,2}.jp2`. Full size
+  3097 x 4366 and 3069 x 4319 (info.json). `stitch.py` fetches 1024-px regions and stitches `img/full1.jpg`,
+  `img/full2.jpg`; `img/p1.jpg`, `p2.jpg` are the 2000-px versions. Images git-ignored.
+- Elbaum's images: `genizahfragments.lib.cam.ac.uk/wp-content/uploads/2025/05/t-s_ns_j479r.jpg` and
+  `..._annotated.png`.
+
+## Method
+
+1. The alphabet rows at the foot of side 2 (22 signs). `glyph_chart.png` labels them I U E A N 4 c B d - < p P q w O
+   6 S X 9 C 7 in the order they stand on the page, left to right.
+2. Shape transcription of both sides with these labels (`tr_side1.md`, `tr_side2.md`).
+3. A Judaeo-Arabic stand-in model, `lang` model `ja-translit` (Arabic papyrus editions and the Qur'an written in
+   Hebrew letters, Geniza spelling; `build_ja_corpus.py`).
+4. Substitution solve (`solve.py`), crib on the Burda verses and the signature.
+
+## Steps
+
+1. 20 Nov 2026. PGP record, Elbaum's blog post and annotated copy read; full-resolution images stitched.
+2. 20 Nov 2026. Alphabet row read; glyph chart made. Common short groups suggest מן and the article אל.
+
+3. 20 Nov 2026. Side 2 transcribed in shape labels by an agent (`tr_side2.md`, 351 signs; it added variant labels
+   a s 8 n 2 y h e t g z 5). Frequencies: I 23, - 18, p 16, P 16, < 11 ... in 171 text signs.
+4. 20 Nov 2026. **Key and direction found (`readkey.py`).** The scribe writes **left to right**: signs inside a word
+   and words inside a line run left to right, and the alphabet rows are in Hebrew order from left to right:
+   I א, U ב, E ג, A ד, N ה, 4 ו, c ז, B ח, d ט, - י, < כ, p ל, P מ, q נ, w ס, O ע, 6 פ, S צ, X ק, 9 ר, C ש, 7 ת.
+   Variants: a = ת (also for ة), s = ר, 8 = ר, e = ח. The transcriber's p/P and d/q are sometimes swapped.
+   Read this way, side 2 gives:
+   - the two Burda verses: אמן תדכר גיראן בדי סלם / מזגת דמעא גרי מן מקלה בדם / אם הבת אלריח מן תלקא כאטמה /
+     ואומט אלברק פי אלטלמא מן אצם (lines S2L09, S2L07-08, S2L06, S2L05; ض and ظ both written ט);
+   - the legal phrase גרי דלך פי אכר גמאדי אלתא[מי] (S2L02);
+   - the Hebrew-script word of PGP, כסתבאן (S2L15), here in cipher;
+   - the frequent short words פי, יא, מן.
+   The system is a simple substitution of the 22 Hebrew letters, written left to right, with a few variant signs.
+
+5. 20 Nov 2026. Side 1 transcribed in shape labels by a second agent (`tr_side1.md`, 328 signs in 18 cipher rows plus
+   three Arabic-script lines; new labels e y h z b f o 8 m; f is the side-1 form of P = מ). Under the key: the
+   signature אלפקיר אסחאק אליהודי in both margin columns and in S1L11, S1L13; S1L01 ends כל הדה כדב ("all this is
+   lies"); S1L06 has אלחמד ללאה רב אלעאלמין; S1L02-05 an erotic passage (קער, רחמה, זבי, גואה, כוסהא, ידכל).
+   Only the Arabic petition (S1AR02-03) is upside down relative to the cipher lines.
+6. 20 Nov 2026. **Elbaum's annotated copy shows side 1 turned 180°**, with his Hebrew letters reading right to left
+   above the signs. So the scribe wrote normally, right to left, and the cipher lines are photographed upside down;
+   our left-to-right key is the same key seen the other way up. His legible readings agree with ours where checked
+   (חנאמ?ת כל הדה כדב; אל קער; רחמה). This copy was looked at after the key was found, for checking only.
+7. 20 Nov 2026. Two agents re-read every line in Hebrew letters under the key, without Elbaum's copy
+   (`tr_hebrew_side1.md`, `tr_hebrew_side2.md`).
+
+8. 20 Nov 2026. **Reading compiled (`reading.md`).** What reads: the signature (four times), the two Burda verses
+   (with the scribe's phonetic spellings: tanwīn as נ, rhyme vowel as י, ג/ז swapped in מגזת), the date formula
+   (גרי דלך פי אכר גמאדי אלתאמי), כסתבאן twice, a love-poetry line (יא כי מן אלהגר יא כלי ...), אלחמד ללאה רב
+   אלעאלמין, and an erotic passage in Egyptian colloquial about a woman named Raḥma (אל קער בתאע רחמה, זבי, כסהא,
+   ידכל) ending חמאמתי כל הדה כדב, "my dove, all this is lies". Dots mark ض/ظ (under ט), ذ (under ד) and خ (under כ).
+   About 314 of 450 non-alphabet cipher letters (70%) are in passages that read: **read in part**.
+
+9. 20 Nov 2026. **Variant alphabet on side 1.** In the side-1 alphabet row S1L14 the 7-sign stands in the ב (and ש)
+   slot and the loop-with-tail sign in the צ (and ת) slot. In side-1 text the loop-with-tail is ת (בתאע, חמאמתי) and
+   the 7-shaped sign is ב: the S1L04 verb ויתכ then reads ויבכ, the same verb as יבכ in S1L02 (بكّ "to press, ram";
+   sexual sense not yet checked in a dictionary). A further agent is attacking the seven unread rows with all slot
+   variants (`tr_hard_rows.md`).
+
+10. 20 Nov 2026. **Hard rows** (an agent, `tr_hard_rows.md`; Elbaum's copy used as a check, readings from it marked).
+    - **S1L03 is an alphabet row** ב-ל written with the page turned 180° (its "odd" signs are c, 4, E upside down).
+    - **The verb is يبكّ** (Lisān al-ʿArab, بكك: "بَكَّ الرجلُ المرأةَ إذا جهدها في الجماع"); S1L02 יבכ גואה and S1L04
+      ויבכ גוה כסהא are parallel. ينيك does not fit the three signs.
+    - **S2L10 contains רחמה** (Raḥma) again. S2L17's last word may begin يا ليت. S1L10 is a letter trial
+      (near-palindromes, each letter in both of its forms).
+    - Slot comparison of all 12 alphabet rows: 7 serves for ת, ש and ב; the loop-tail for ת and צ; צ has five forms;
+      ר four (9, s, 8, 5). In the text 7 is only ב (side 1), the loop-tail only ת.
+11. 20 Nov 2026. **Year** (an agent, `tr_year.md`). The date formula continues one line: **סנת אר** ("the year
+    fo[ur]..."), PGP's *sanat ar[...]*, and stops against an alphabet row; no number follows anywhere on the leaf. The
+    year ended in 4 or was a round x40 (units come first in Arabic), after c. 1250. S1L13's "174" is three key
+    signs (אתו/אבו), not a year.
+12. 20 Nov 2026. Recount after steps 10-11: about 304 of 407 non-alphabet cipher signs read (75%); without the
+    letter trial S1L10, about 80% of the text rows.
+
+13. 20 Nov 2026. **Dating from formulas and vocabulary** (an agent, `dating_evidence.md`, sources cited there).
+    - The petition pairing "المواقف العالية ... اعلاها الله تعالى" is found in only two Geniza petitions: ENA 3754.11
+      (PGP 12757, c. 1600) and T-S Ar.41.14 (PGP 21062, "late"). Qalqashandī and the Mamluk chronicles have
+      "al-mawāqif al-sharīfa", never "al-ʿāliya".
+    - "جمادى الثاني" (masculine) is rare before the 15th century: about 100 dated Geniza documents and the Arabic
+      Papyrology Database up to the 16th century use ākhir/ākhira (one Maghribi exception, 1415).
+    - The Burda floor: al-Būṣīrī d. c. 1294-97; earliest dated Egyptian copies c. 1365.
+    - No dating value: بتاع (already 1217), كستبان, "جرى ذلك", the spelling.
+    - **Most likely c. 1400-1650 CE (c. 800-1060 AH), probably 15th-16th century.** With step 11, the Hijri year
+      ended in 4 or was a round x40. The weakest link: both late-leaning arguments rest on absence in small samples;
+      Ottoman court registers were not searched.
+
+14. 20 Nov 2026. **Orientation of every open row** (an agent, `tr_turned_rows.md`). S1L07 was written with the page
+    turned (in the turned crop X has its dot below and N, C, < take chart shapes): [...]?ל קרשכד הדה אלפרא, only הדה
+    reads; the blot at its end belongs to the margin column. S1L08, S2L10, S2L13 and S1L13 are in the main
+    orientation; S1L08's repeated ל-pairs look like letter practice. No sign moves from unread to read; count about
+    302 of 406 non-alphabet signs (74%).
+15. 20 Nov 2026. The user asked for the write-up and a pull request with Brice Dudout as reviewer, publishing before
+    Elbaum is contacted (the user's decision; Elbaum credited on the page).
+
+## Result
+
+Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent
+short words פי, יא, מן fixed every sign; the Burda verses then confirmed the key letter for letter. A simple
+substitution of the 22 Hebrew letters with a few variant signs and diacritic dots, Judaeo-Arabic plaintext. Read in
+part (about 74% of the non-alphabet cipher signs). Elbaum had mapped the signs and read parts before us (PGP 8804); his reading is unpublished, and his
+legible annotations agree with ours.
+
+## Remaining gaps
+
+- S1L07 except הדה, S1L08, S2L10 except רחמה, S2L13, S2U01 (about 75 signs) - blocker: open-codes; clear signs that read
+  as letters but give no Arabic after every slot variant and both orientations were tried (steps 10, 14); S1L08 and
+  S2U01 look like letter practice. Needs a reader of Egyptian colloquial Judaeo-Arabic and Elbaum's own readings.
+- First words of S1L05 and S1L06, the tail of S1L13, the last word of S2L17 - blocker: open-codes; letters read,
+  meaning not found.
+- Holes in the paper (the word after من الهجر in S2L19, 0-4 letters at the start of S1L07, a few in the middle of S1L08) - blocker: illegible; lost in holes.
+
+Not counted as gaps: S1L10 is a letter trial, not text (near-palindromes, each letter in both of its forms); the
+Arabic-script lines on side 1 (petition and top line) are not cipher and are read only provisionally.
+
+## Escalation
+
+- [x] siblings: the Geniza's other cipher fragments (T-S NS 70.1, T-S AS 205.186, T-S AS 187.240, T-S 13J18.19) use
+  other systems; no sibling leaf by Isḥāq found in PGP.
+- [n/a] clear-pages: a single practice sheet; the only clear text is the Arabic-script petition, which is not a
+  decipherment.
+- [x] known-keys: the scribe's own twelve alphabet rows compared slot by slot (`tr_hard_rows.md`); every variant value
+  tried on the open rows.
+- [x] print: PGP 8804, Elbaum's 2022 blog post and annotated copy (as a check), the Burda's standard text; nothing
+  else published on the fragment (`dating_evidence.md`).
+- [x] key-rebuild: frequency, word-pattern and crib work; the variant alphabet of S1L14 gave the verb ويبكّ.
+- [x] retry: every open row re-read in both orientations with all variants (steps 10, 14).
