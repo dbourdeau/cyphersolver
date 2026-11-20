@@ -1,0 +1,120 @@
+# The Botti letters to Cardinal Gualterio, 1710 to 1713
+
+British Library, Add MS 20443 (papers of Cardinal F. A. Gualterio). DECODE records R8468 to R8470, R8617, R8618 and R8659 to R8718: 51 records, 194 pages with cipher rows.
+
+Status: in progress. This folder is a contribution from outside (prabal-rje), sent as a pull request. The maintainer sets the status, the class and the reading review.
+
+## What the documents are
+
+- Letters to Cardinal Filippo Antonio Gualterio, 1710 to 1713, by the year numbers on the pages.
+- The British Library's catalogue ([record](https://searcharchives.bl.uk/catalog/040-002090742)) describes the volume: "LETTERS of the Abbate Carlo Camillo Botti, and his uncle, the Abbate Lazaro Botti, to Card. Gualterio; Ravenna, etc., 19 Jan. 1708-26 Mar. 1713."
+- It adds: "Chiefly holograph. Many in cipher, with decipherings."
+- **A doubt:** so the letters may have two writers. I do not know which letters each wrote. The volume also holds copies of Gualterio's letters to Botti (from f. 294). I take each letter here to go to Gualterio; that is a doubt too.
+- This ledger's catalogue entry 295 names "DECODE R8617-R8718, 48 records". DECODE has three more records of the volume with cipher: R8468, R8469 and R8470. This folder covers all 51.
+
+## The system
+
+- **The letters with dots (46):** number codes with a dot after each code, and spaces between groups. Most codes from 0 to 21, and two letter-like signs, stand for letters. Some codes of two to four digits stand for words, names and some letters.
+- **The letters without dots (5):** the same codes, written with no dots. Some pages write signs of their own.
+- The cipher writes double letters twice.
+- `key-and-read/key.tsv` gives each code, its value, the source of the value, its count and the clerk's agreement at its places.
+
+## The key
+
+| Source | What it gives |
+| --- | --- |
+| The ciphertext (my own key) | 21 codes for letters; code 17 as r, open between r and q |
+| The clerk's decipherment on the page | 14 values: 110 Mons.re, 116 subito, 145 ue, 50 cardinale, 53 abbate, 5u Card., 62 Ruffo, 65 conte, 93 Ferrara; and the letter values of 00, 01, 18, 1u and 71 |
+| A page of the letters without dots | the values of sign labels on six pages (`key-and-read/key-page-signs.tsv`) |
+| Open | 90 rare codes (191 tokens in the letters with dots) |
+
+- No value came from another person's key. The Gualterio cipher tables (British Library, Add MS 20244) were not opened.
+- The decode of the letters with dots uses the values from the ciphertext only. It shows the 14 values from the clerk as `·`. The decode of the letters without dots uses them.
+
+## The transcription
+
+- My own transcription of the DECODE images: two readings of each page and a reconciliation.
+- 191 files, one for each page with cipher digits: 2,568 rows, 59,042 digits, 3,261 doubt marks and 1,596 notes.
+- The rows of the 1710 letters are the hardest: there the two readings of a page agree least.
+- Clear words inside a cipher row are not copied: `[not copied]` stands in their place.
+- `TRANSCRIPTION.md` gives the marks and the counts for each record.
+
+## The frozen read
+
+- The read as it stands in my repository, https://github.com/prabal-rje/branicki-1757/tree/main/botti-1710, from its commits of 19 November 2026 (09:05 and 09:11, UTC−5).
+- The key was fixed on 16 November 2026 before any clear row of the clerk was opened. `key-and-read/README.md` gives the order of events.
+- This folder adds no hash table and no other record of provenance.
+
+## The decode
+
+- Each record page gives the decode row by row, and names the cipher row of each line.
+- 35,235 code tokens on 143 pages; 34,561 show a value.
+- No document builds sentences. By the read bar, each of the 51 documents is "decoded, not read" in `profile.json`.
+
+## Why no word count
+
+This ledger's rule of 19 November 2026 counts sure cipher words. I give no word count, for three reasons:
+
+1. No reading divides these decodes into words. The spaces of the page do not mark every word: many groups run several words together.
+2. The decode also breaks at the notes of the transcription. So one word can stand in two or three groups.
+3. A fully decoded group is only the output of the key. No reading checks it as a word.
+
+So each record page counts code tokens, open codes and items that are not codes, under those names. The floor for texts of under 40 words is not used: no document is claimed read.
+
+## Earlier readers
+
+- **The clerk of the time:** 29 letters with dots carry a decipherment above the cipher rows, and R8618 carries a few words of the clerk's hand. DECODE marks inline plaintext on these 30 records. This folder does not copy that text. 14 code values come from it, and `check.md` grades the blind decode against it.
+- **The Gualterio cipher tables** at the British Library (Add MS 20244): this ledger's catalogue names them for entry 295. They are not on DECODE, and they are not online by this ledger's note. I did not open them.
+- **DECODE:** all 51 records give status "N/A" and cipher type "Unknown" (checked 16 November 2026).
+- **This ledger:** entry 295 stands in the list of letters readable with keys in hand. No target folder and no reading names Add MS 20443 (checked 16 November 2026). A code search found the name "Botti" in two key files of `targets/bay1706`. I did not open them.
+- **Print:** not searched.
+
+## Remaining gaps
+
+- Code 17 (255 tokens): r or q - blocker: open-codes; the clerk writes r 66 times and q 39 times at its places.
+- 90 rare codes with no value (191 tokens in the letters with dots) - blocker: no-key-material; the Gualterio cipher tables (Add MS 20244) may give them; not opened.
+- Five pages not shown (R8662 T003, R8666 T003, R8674 T001, R8677 T001, R8710 T004) - blocker: unknown; their decode was made, and it is not sure.
+- R8618 T002 - blocker: unknown; several tries on 16 to 18 November did not decode it; one code stands between spaces, and the word breaks are not known.
+- R8468 T003 and T007 - blocker: illegible; T003 is a clipped fragment; on T007 the values of five sign labels are not sure.
+- 45 pages under 100 digits or with no cipher digit - blocker: too-short.
+- No reading in sentences for any document - blocker: not-attempted.
+
+## Escalation
+
+- [x] siblings: one key for all 51 records (the letters without dots read with the key of the letters with dots; `check.md`)
+- [x] clear-pages: the clerk's decipherments on 29 letters, as a grade and for 14 code values (`check.md`)
+- [ ] known-keys: the Gualterio cipher tables (BL Add MS 20244) not opened; the two key files of `targets/bay1706` that name Botti not opened
+- [ ] print: not searched
+- [x] key-rebuild: the key from the ciphertext alone (`key-and-read/`)
+- [ ] retry: a reading in sentences of the decode
+
+## Files
+
+| File | What it holds |
+| --- | --- |
+| `NOTES.md` | these notes |
+| `profile.json` | the profile |
+| `README.md` | the summary, the numbers and the table of records |
+| `check.md` | what was checked against what |
+| `r8468.md` to `r8718.md` | one page for each of the 51 records |
+| `key-and-read/` | `key.tsv`, `key-page-signs.tsv` and the order of events of the frozen read |
+| `TRANSCRIPTION.md` | the transcription: what it is, its marks and its counts |
+| `transcription/` | the cipher rows: one file for each page with cipher digits |
+
+The record pages, the key and the summaries come from my repository, https://github.com/prabal-rje/branicki-1757/tree/main/botti-1710. The changes for this folder:
+
+- Each record page names the cipher row of each decode line.
+- Each record page gives counts, and marks the summary as a guess.
+- `key.tsv` gains one credit line.
+- No value and no decoded row changed.
+
+The scripts of the read, the grade and the decode are not in this folder.
+
+## Credit
+
+- **DECODE**, the database of historical ciphers of the DECRYPT project: records R8468 to R8470, R8617, R8618 and R8659 to R8718 (51 records; the table of records lists them). Each record page links its DECODE record page, `https://de-crypt.org/decrypt-web/RecordsView/<n>`.
+- **The archive:** British Library, Add MS 20443 (papers of Cardinal F. A. Gualterio): letters of the Abbate Carlo Camillo Botti and of his uncle, the Abbate Lazaro Botti, to Cardinal Gualterio, 1708 to 1713 ([British Library catalogue](https://searcharchives.bl.uk/catalog/040-002090742)).
+- **The database:** Héder, M. and Megyesi, B. (2022), "The DECODE Database of Historical Ciphers and Keys: Version 2", HistoCrypt, https://doi.org/10.3384/ecp188397.
+- **The clerk of the time** who wrote decipherments on 29 of these letters: 14 code values of the key come from that text. `key-and-read/key.tsv` marks each one.
+
+DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published.
