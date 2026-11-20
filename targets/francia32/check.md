@@ -9,19 +9,19 @@ Credit:
 
 ## 1. The key against the decipherments of the time
 
-Two letters carry a decipherment of the time in the same record. My transcription covers those leaves too. This folder does not copy them, so these two measures cannot be re-run from this folder alone.
+Two letters carry a decipherment of the time in the same record. My transcription covers those leaves too. `decifrato/` holds the transcription of the clerk's lines. `scripts/check_decifrato.py` runs both measures from the files of this folder.
 
 | Record | Cipher pages | Decipherment of the time | Letters of the decode | Letters of the decipherment | Matched letters of the decode | Share | With the pair values shuffled |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| R5613 | f. 45v | f. 46r | 144 | 509 | 123 | .854 | .138 (of 159 letters) |
+| R5613 | f. 45v | f. 46r | 144 | 459 | 121 | .840 | .138 (of 159 letters) |
 | R5621 | ff. 229v, 231r, 231v | f. 230r, dated 26 March 1591 | 250 | 645 | 212 | .848 | .172 (of 274 letters) |
 
 ### What the share counts
 
 - **The letters of the decode:** the decode of the cipher rows with key no. 65. Code letters, symbols, three-digit codes, signs not in the key, `?` and clear words are removed. Only rows with 10 or more digit signs count.
-- **The letters of the decipherment:** my transcription of the clerk's lines. For a sign with two readings, the left one counts.
-  - f. 230r: lines L29 to L42 of my transcription, the clerk's text.
-  - f. 46r: every line after the heading "Decifrato". These lines also hold the words of the archive's stamp.
+- **The letters of the decipherment:** my transcription of the clerk's lines. For a sign with two readings, the left one counts. The label words of the transcription's notes ("underlined:", "superscript:") do not count.
+  - f. 230r: lines L29 to L42 of my transcription, the clerk's text (`decifrato/R5621_f230r.txt`).
+  - f. 46r: lines L20 to L30, the clerk's text (`decifrato/R5613_f046r.txt`).
 - **On both sides:** accents are dropped; u and v count as one letter, and so do i and j; a doubled letter counts once.
 - **The share:** the matching blocks of the two letter strings, in order, found by Python's `difflib.SequenceMatcher` (no junk rule). Their total length is divided by the letters of the decode.
 - **The control:** the 22 pair values of the key shuffled once, with a fixed seed (3). Everything else is the same. The shuffled decode has its own number of letters, and its share divides by that number.
@@ -31,8 +31,8 @@ Two letters carry a decipherment of the time in the same record. My transcriptio
 - **It is a second measure on R5621.** Brice Dudout's held-out test of this letter came before mine (`targets/sega1590`: 268 of 287 characters, 56 of 65 words). My measure uses other units. This folder documents no held-out protocol of its own.
 - **It counts letters, not words.** A letter matches when it falls in a matching block. The share does not test whether the decode makes sense.
 - **It does not use the whole decipherment.** The clerk's text is longer than the decode, because it also covers clear words of the letter. The share divides by the letters of the decode.
-- **The stamp on f. 46r.** Matching blocks can change when letters are added. I ran the R5613 check once more on lines L20 to L30 only, without the stamp: 478 letters of the decipherment, 123 of 144 decode letters matched, .854 again.
-- **Re-run.** I ran the check script again on 19 November 2026, with this ledger's `targets/sega1590/key.tsv`. It gave the same four numbers. The numbers rest on that run; the script and the clerk's lines are not in this folder.
+- **The stamp and two labels on f. 46r.** The count takes lines L20 to L30. The words of the archive's stamp below them, and two label words of the transcription ("underlined", "superscript"), are outside it: 459 letters of the decipherment, 121 of 144 decode letters matched, .840.
+- **Re-run.** `python3 scripts/check_decifrato.py`, run in this folder, gives every number of the table. It reads the rows in `transcription/`, the clerk's lines in `decifrato/` and the key of `scripts/decode.py`.
 
 ## 2. Which pages share the key
 
@@ -97,7 +97,7 @@ Three of these faults put 32 units among those with a value: 20 for ∞, 1 for #
 
 ## 3. Limits
 
-- **The rows are my own transcription of the DECODE images.** A misread digit gives a wrong letter or a broken pair. The vowel signs above the digits are the weakest part.
+- **The rows are a transcription of the DECODE images.** A misread digit gives a wrong letter or a broken pair. The vowel signs above the digits are the weakest part.
 - **Sign forms.** On some pages my transcription writes a vowel sign in another form. `key/key.tsv` lists the forms that the decode reads as the key's signs. A raised mark gives `?`.
 - **The decode** keeps the faults listed in section 2: row labels read as code letters, dropped signs, and no mark where an unresolved span stands between complete units.
 - **No reading.** The decode is not divided into words, and this folder gives no reading in sentences. So it gives no read share by the rule of 19 November 2026.

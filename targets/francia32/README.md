@@ -2,7 +2,7 @@
 
 Filippo Sega, bishop of Piacenza and nuncio in Paris, writes to Rome during the war of the League. Most of his letters here are mostly in clear, with cipher passages. The duplicate R5615 is almost all in cipher.
 
-This folder gives my own transcription of the DECODE images of nine records: R5612 to R5618, R5620 and R5621. It also gives the decode of 28 pages with A. Meister's printed key no. 65 (1906).
+This folder gives a transcription of the DECODE images of nine records: R5612 to R5618, R5620 and R5621. It also gives the decode of 28 pages with A. Meister's printed key no. 65 (1906).
 
 - The state of each decoded page is "from key".
 - The folder holds no reading in sentences, so each decoded document is "decoded, not read".
@@ -10,19 +10,19 @@ This folder gives my own transcription of the DECODE images of nine records: R56
 
 ## Where this folder goes
 
-The maintainer asked that these pages join `targets/sega1590` and `targets/sega1591b`. This folder keeps them together, so that the files of each record can move as one.
+The maintainer places the records himself, as the column "Goes with" shows. This folder keeps them together, so that the files of each record can move as one.
 
 | Record | Folios with cipher | Goes with | In this ledger before this folder | What this folder adds |
 | --- | --- | --- | --- | --- |
 | [R5612](r5612.md) | 17r, 17v | `sega1590` | read by Brice Dudout | a second transcription and its decode |
-| [R5613](r5613.md) | 45v | `sega1590` | George Lasry read the Paris copy of the same letter (`sega1591`); Brice Dudout's notes name the decipherment of the time | the rows, the decode and one measure (.854) |
+| [R5613](r5613.md) | 45v | `sega1591` | George Lasry read the Paris copy of the same letter (`sega1591`); Brice Dudout's notes name the decipherment of the time | the rows, the decode and one measure (.840, 121 of 144 letters) |
 | [R5614](r5614.md) | 47r, 48r | `sega1590` | nothing | the rows and the decode |
 | [R5615](r5615.md) | 49v to 54v | `sega1591b` | read in part by Brice Dudout | a second transcription and its decode |
 | [R5616](r5616.md) | 61v to 63v | `sega1590` | nothing | the rows and the decode |
 | [R5616](r5616.md) | 71r, 71v | `sega1590` | read by Brice Dudout | a second transcription and its decode |
 | [R5617](r5617.md) | 106v, 107r | `sega1590` | nothing | the rows and the decode |
-| [R5618](r5618.md) | 184v | `sega1590` | Brice Dudout tested key no. 65 on it and rejected it | the rows; no decode |
-| [R5620](r5620.md) | 190r | `sega1590` | nothing | the rows; no decode |
+| [R5618](r5618.md) | 184v | catalogue entry 881, as an open lead | Brice Dudout tested key no. 65 on it and rejected it | the rows; no decode |
+| [R5620](r5620.md) | 190r | catalogue entry 881, as an open lead | nothing | the rows; no decode |
 | [R5621](r5621.md) | 229v, 231r, 231v | `sega1590` | Brice Dudout's held-out test of key no. 65 | a second transcription, its decode and a second measure (.848) |
 
 R5619 has no images on DECODE. It is not here.
@@ -52,7 +52,7 @@ These dates rest on my own record. This folder adds no hash table and no other r
 | Digit signs | 16,230 (492 doubtful) |
 | Pages decoded with key no. 65 | 28 |
 | Pages of the main group (24): units with a value in the key | .80 to .99 a page |
-| Agreement with the decipherments of the time | .854 (R5613), .848 (R5621) |
+| Agreement with the decipherments of the time | .840 (R5613, 121 of 144), .848 (R5621, 212 of 250) |
 | The same with the key's pair values shuffled | .138 (R5613), .172 (R5621) |
 | Pages not decoded: low shares under key no. 65 | 2 (R5618 f. 184v, .58; R5620 f. 190r, .60) |
 | A decoded page that does not read | R5616 f. 71v (.67 units with a value) |
@@ -134,6 +134,7 @@ Not read:
 - `r5612.md` to `r5621.md`: one page for each record, with the decode row by row.
 - `key/`: the key table of the decode, with the source of each value, and a note.
 - `scripts/decode.py`: makes the decode lines from the rows.
+- `scripts/check_decifrato.py` and `decifrato/`: the two measures of `check.md`, section 1, and the clerk's lines of f. 46r and f. 230r that they use.
 - `TRANSCRIPTION.md`: what the rows are, their marks and their counts.
 - `transcription/`: the rows, one file for each of the 30 cipher pages.
 

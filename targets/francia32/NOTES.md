@@ -14,7 +14,7 @@ Credit:
 
 - Letters of Filippo Sega, bishop of Piacenza and nuncio in Paris, to Rome, from November 1590 to July 1591.
 - Most of these letters are mostly in clear, with cipher passages and short groups. The duplicate R5615 is almost all in cipher.
-- They belong with `targets/sega1590` and `targets/sega1591b`, as the maintainer asked. `README.md`, "Where this folder goes", maps each record.
+- The maintainer places them in `targets/sega1590`, `targets/sega1591b` and `targets/sega1591`, and R5618 and R5620 with catalogue entry 881. `README.md`, "Where this folder goes", maps each record.
 
 ## The system
 
@@ -42,7 +42,7 @@ Key no. 65 gives .58 and .60 units with a value on R5618 and R5620. I make no cl
 
 ## The transcription
 
-- My own transcription of the DECODE images, finished on 13 November 2026.
+- Transcription of the DECODE images, finished on 13 November 2026.
 - 30 cipher pages, 383 rows, 16,230 digit signs, of which 492 doubtful.
 - The rows hold the cipher runs of 10 or more digit signs. Shorter groups are not in them.
 - `TRANSCRIPTION.md` gives the marks and the counts. The rows are in `transcription/`.
@@ -59,7 +59,7 @@ Key no. 65 gives .58 and .60 units with a value on R5618 and R5620. I make no cl
 `check.md` gives them in full.
 
 - **R5621:** of the 250 letters of the decode, 212 match the decipherment of the time on f. 230r, in order (.848). With the pair values shuffled: .172.
-- **R5613:** of the 144 letters of the decode, 123 match the decipherment of the time on f. 46r, in order (.854). With the pair values shuffled: .138.
+- **R5613:** of the 144 letters of the decode, 121 match the decipherment of the time on f. 46r, in order (.840). With the pair values shuffled: .138.
 - For R5621, Brice Dudout's held-out test came before mine. The share .848 is a second measure of that letter, with no held-out protocol of its own.
 
 ## Earlier readers
@@ -92,15 +92,17 @@ Key no. 65 gives .58 and .60 units with a value on R5618 and R5620. I make no cl
 | --- | --- |
 | `NOTES.md` | these notes |
 | `profile.json` | the profile |
-| `README.md` | the summary, the map to `sega1590` and `sega1591b`, the numbers, the counts and the marks of the decode |
+| `README.md` | the summary, the map of the records, the numbers, the counts and the marks of the decode |
 | `check.md` | the two measures against the decipherments of the time, the units with a value, and the page groups |
 | `r5612.md` to `r5621.md` | one page for each record |
 | `key/` | `key.tsv` and its note |
 | `scripts/decode.py` | the decoder: rows in, decode lines out |
+| `scripts/check_decifrato.py` | the two measures of `check.md`, section 1 |
+| `decifrato/` | the clerk's lines of f. 46r and f. 230r, which the two measures use |
 | `TRANSCRIPTION.md` | what the rows are, their marks and their counts |
 | `transcription/` | the rows: one file for each of the 30 cipher pages |
 
-The check script is not in this folder. It needs the clerk's lines, and this folder does not copy them.
+`scripts/check_decifrato.py` runs the two measures from the rows and the clerk's lines of this folder.
 
 ## Credits
 
