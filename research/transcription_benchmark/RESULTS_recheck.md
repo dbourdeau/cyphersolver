@@ -14,7 +14,7 @@ Digit streams. Not fully independent: the notes show ours were at some point che
 | R912 | rakoczi1704 | 4,420 | 4.7% | 81 (1.8%) | 95 | 31 |
 
 Most of the difference is coverage (groups one side has and the other lacks), not digits read differently. Two DECODE
-transcribers differ by about 2% (`human_ceiling.json`).
+transcribers differ by 1.3% pooled over 16 records (`human_ceiling_wide.json`).
 
 ## B. One fresh blind Fable pass against ours
 

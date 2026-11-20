@@ -3,7 +3,7 @@
   python dashboard_data.py -> dashboard/round2_docs.json, round2_strata.json, round1_docs.json, round1_models.json,
                               human_ceiling.json
 Inputs: scores2.json, scores2_adjusted.json, frame2/sample2.json (round two); scores*.json, stats.json (round one);
-human_ceiling.json. Error rate = edits / reference signs.
+human_ceiling_wide.json. Error rate = edits / reference signs.
 """
 import html
 import json
@@ -93,10 +93,11 @@ def main():
     json.dump({"rows": mrows, "meta": meta("stats.json (hierarchical bootstrap over documents and passes)")},
               open(OUT / "round1_models.json", "w", encoding="utf-8"), indent=1)
 
-    hc = json.load(open(HERE / "human_ceiling.json"))
-    hrows = [{"record": "R" + k, "transcribers": " vs ".join(v["transcribers"]), "signs": v["signs"], "edits": v["edits"],
-              "disagreement": v["disagreement"]} for k, v in hc.items() if v["used"]]  # R72 left out: stretch mismatch
-    json.dump({"rows": hrows, "meta": meta("human_ceiling.json (fitting alignment, two DECODE transcribers)")},
+    hc = json.load(open(HERE / "human_ceiling_wide.json"))["rows"]  # independent pairs only (see its "excluded")
+    hrows = [{"record": v["record"], "transcribers": " vs ".join(v["transcribers"]), "signs": v["signs"], "edits": v["edits"],
+              "disagreement": v["disagreement"]} for v in hc if v["used"]]
+    hrows.sort(key=lambda r: r["disagreement"])
+    json.dump({"rows": hrows, "meta": meta("human_ceiling_wide.json (fitting alignment, two different DECODE transcribers, 16 records)")},
               open(OUT / "human_ceiling.json", "w", encoding="utf-8"), indent=1)
     print(len(rows), "round-two docs;", strata[0], "|", len(r1rows), "round-one docs;", len(mrows), "model rows;", len(hrows), "pairs")
 

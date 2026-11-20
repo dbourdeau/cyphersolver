@@ -109,7 +109,7 @@ also lets a consistent digit swap be renamed (same both-halves rule) changes lit
 - So the plain pooled figures are upper bounds on misreading: they also carry order, reference conventions and label
   choice. The adjusted score (8.6% pooled, median 4.6%) removes what the alignment can attribute to those; it still
   counts every disagreement with the DECODE reference, including the reference's own errors (human-to-human
-  disagreement on the pilot pairs: 1.96%).
+  disagreement: 1.3% pooled over 16 records, see Limits).
 
 ## Against round one
 - Round one, Fable, 10 documents: 3.3% pooled (2.0% digit-only). Round two, 36 correspondences: 8.6% pooled
@@ -121,6 +121,11 @@ also lets a consistent digit swap be renamed (same both-halves rule) changes lit
 ## Limits
 - One pass per document (round one had three); no vote, no disagreement flag.
 - The reference is one DECODE transcriber per document; its errors count against the model. Human-to-human disagreement
-  on three Acciaiuoli records is 1.96% (`human_ceiling.json`); a wider check is running (`scan_doubles.py`).
+  is 1.3% of signs pooled (median 0.9%, 0.1-5.1% by record) over 16 records, five transcriber pairs and 18,508 signs
+  (`human_ceiling_wide.json`, from `scan_doubles.py`: 140 of 3,692 records carry two or more text files, 28 by
+  differently named transcribers; dropped: 8 whose second file is not the same text, 4 not independent). By pair:
+  KaJo/OliNi 0.6% (3 records), Matt F/NiLan 0.8% (8), EHum/KaJo 0.6% (1), Midas/NiLan 2.0% (3, the pilot in
+  `human_ceiling.json`), EHum/Midas 5.1% (1). The second transcription usually sits in a decryption file and may have
+  been started from the first, so 1.3% may understate independent readers.
 - Letter stratum: 6 documents, and label conventions dominate.
 - Prompts were generic per stratum; round one's described each document, which may explain part of the gap.
