@@ -42,7 +42,7 @@ The main system is not checked against a key. The archive's key table serves the
 3. 19 November 2026, 15:31: the ledger's maintainer named Ferrai's footnote, on issue 802.
 4. 19 November 2026, 15:53 and 15:56: the text of the print fixed from two readings of the page images, then the rule declared; the comparison ran once at 15:56.
 
-So the check came after the read. The rule and the text of the print were fixed before the comparison opened my read. I changed no key, no row and no reading after it.
+So the check came after the read. The rule and the text of the print were fixed before the comparison opened my read. After it, I changed no value of the main key, no row and no reading of R4054.
 
 **The rule.** The print's letters and my read's letters are aligned as two letter streams, after fixed spelling rules (u = v; i = j = y; h does not count; doubled letters count once; "et" = "e"; Latin x = s, ct = tt, ti = zi before a vowel; m = n before p and b). A place that my read does not show counts as one letter that does not agree. The floor is the highest agreement of two texts that should not match: my read reversed, and a passage of my read outside the matched region of the same length.
 
@@ -91,6 +91,14 @@ Before I used the table, I read the five letters of the earlier system from the 
 - An earlier, smaller check against two clear lines above rows of R4034 gave "does not support" (10 of 32 letters against a floor of 15). One of the two lines turned out to be a described pen stroke, not writing. The other line alone is too short for a result.
 - The table is my reading of the table's images, read twice. An error that both readings share stays in it.
 
+**Code 29.** The code that the table does not hold is code 29, with 70 tokens: 12 in R4035 and 58 in R4037.
+
+- I looked at the table again for 29. The table shows no 29 without a bar. Its only 29 has a bar and is the word sign "Madon̄a". The table gives t one sign, 79.
+- So the decode takes 29 = t from ciphertext, the value of the blind read. `key/key-table-R4033.tsv` holds it on a line of its own, with that source.
+- With 29 = t, 1,737 of the 1,791 code tokens of the five letters have a value with no doubt (.970). 17 tokens hold a code that the key does not hold.
+- At each of the 70 places, my readings of R4035 and R4037 use the t as it stands, with no change.
+- Daniel Bourdeau, the ledger's maintainer, rebuilt this grade from my key files with his own decoder and got the same numbers (pull request 822).
+
 ## 4. The decode and the frozen read
 
 The decode on each record page is the key applied to the codes of the cut. The frozen read (`key/frozen-read.md`) is the read as it stands on my public pages. They differ in two ways:
@@ -98,10 +106,12 @@ The decode on each record page is the key applied to the codes of the cut. The f
 - **Doubtful digits.** The frozen read hides each code that holds a doubtful digit (114 code tokens in the 14 letters). The decode shows the key's value for these codes in `⟨ ⟩`.
 - **Seven places.** At 7 places the frozen read shows the value of a two-digit code (26 = i; once 25 = a) on both codes of its cut, code 2 and code 6 (once code 5). The key gives "o" and a hidden code. The places: R4042 image 2, C01; R4044 image 1, C01; R4045 image 1, C03; R4048 image 3, C01 and C02 (2 places); R4052 image 3, C04. I left the frozen read as it is.
 - **Token counts.** The cut of the 13 letters of the read has 4,730 code tokens. My public page gives 4,726, and the count column of `key/key-main.tsv` sums to 4,719. I did not find the cause of these differences.
-- **The earlier decode.** The decode of the five earlier letters is the table applied to the codes of the cut. An older decode of them, on my public pages, leaves out the table's sign & at 21 places. The decode here gives it.
+- **The earlier decode.** The decode of the five earlier letters is the key of the earlier system applied to the codes of the cut: the table (reading A) and code 29 = t, from ciphertext. An older decode of them, on my public pages, leaves out the table's sign & at 21 places. The decode here gives it.
 - **Bars.** My rows of R4034 mark 12 digits under a bar. The grade of the earlier blind read speaks of 14 barred code tokens (16 digits) in R4034. I did not settle this difference.
 
 ## 5. What is not checked
 
 - No key checks the main system.
-- The readings supply letters and words. They mark most supplied letters with brackets, but not all of them. The decode is the reference.
+- The readings of the main system supply letters and words. They mark most supplied letters with brackets, but not all of them. The decode is the reference.
+- No key checks code 29 = t. It rests on the blind read and on the sense of the decode at its 70 places.
+- The readings of R4034 to R4038 rest on the decode of the cipher passages. The clear text around the passages is not in this folder.

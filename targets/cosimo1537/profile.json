@@ -633,6 +633,24 @@
    ],
    "what": "R4054 against a printed sister letter (Ferrai 1882, p. 136 n. 1): 279 of 417 aligned letters agree (.669), floor .516; 'cannot tell'. After the read.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Code 29 of the earlier system (70 tokens): the archive's table looked at again; it shows 29 only barred, as a word sign. The decode takes 29 = t from ciphertext, the value of the blind read of 16 Nov 2026; 1,737 of 1,791 code tokens get a value with no doubt.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Readings in sentences of R4034 to R4038, from the decode, with an English translation; every letter that the key does not give is marked. 446 cipher words, 346 sure, 100 holes (295 sure if code 29 is a hole); 2 of 21 sentences and fragments have at most one hole in ten words.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -652,13 +670,14 @@
     "records": "R4034 to R4038",
     "method": "read with known key",
     "extent": "none",
-    "basis": "The archive's key table R4033, as I read it; 1,667 of 1,791 code tokens get a value with no doubt; the documents are decoded, not read."
+    "basis": "The archive's key table R4033, as I read it, with code 29 = t from ciphertext (the table shows 29 only barred, as a word sign); 1,737 of 1,791 code tokens get a value with no doubt, 1,667 of them from the table; readings in sentences of the five letters, 446 cipher words, 346 sure; the documents are decoded, not read."
    }
   ],
   "method_basis": "The main key was found from the cipher text alone, with the cut; the archive's key table does not serve the main system. The earlier letters are decoded with the archive's key table.",
   "contribution": [
    "transcription",
-   "key recovered"
+   "key recovered",
+   "key extended or corrected"
   ],
   "codes_open": {
    "tokens_open": 609
@@ -701,8 +720,9 @@
     "detail": "the archive's key table serves the earlier system only"
    },
    {
-    "item": "codes of the earlier letters that the table, as I read it, does not hold",
-    "blocker": "no-key-material"
+    "item": "17 code tokens of the earlier letters with a code that the key does not hold",
+    "blocker": "no-key-material",
+    "detail": "code 29 (70 tokens), which the table shows only barred, takes t from ciphertext; no key checks it"
    },
    {
     "item": "R4043, R4044, R4045, R4050, R4052 and R4053 show short pieces only",
@@ -721,8 +741,29 @@
     "decryption": "r4034.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "My words, a paraphrase of the decode: The tithes. Cosimo asks that the state be spared for now, as it is exhausted by such an exaction. The King of France, His Majesty's help, the Emperor's favour and the Emperor's mind toward Italy are named. Niccolini is to draw the matter out as long as he can, with no offer, because time can bring much advantage.",
-    "note": "No reading: 11 words that a word sign or word code gives with no doubt are sure; the number of cipher words and of holes is not known. README.md."
+    "summary": "My words, a paraphrase of the reading: The tithes. Cosimo writes that he begged someone not to burden a party, at present so exhausted, with such a levy; the code for that party has no value. His Majesty's aid is named. A doubtful word sign that the table gives as the Emperor stands at four places: his favour, his mind, his coming near Italy. After \"il prefat\", a doubtful barred sign gives the table's King of France; cut otherwise, it gives \"Arciuescouo\" (archbishop). Niccolini is to draw the matter out as long as he can, with no offer, because time can bring much advantage. The passage probably names the case of \"Altopaso\" (perhaps Altopascio).",
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 112 cipher words, 77 sure, 35 holes; read share 0.688. Under the read bar; 0 of 8 sentences and fragments have at most one hole in ten words. README.md.",
+    "reading": [
+     "De[l]e decime.",
+     "Più che [p]er altro.",
+     "[...]",
+     "[M]olto caldamente che fusi con [lui], e suplicavolo per parte di quelo, che fusi contento non molestare [4̅7̅] di presente tanto exausto con tale exatione.",
+     "Il prefat[o] Re di Fra[n]za e",
+     "Di Sua Maestà lo aiuto & [fa]vore del Imper[ato]re più in lungo che potrete, senza venire a oferta alcuna.",
+     "Dela mente del Imper[ato]re.",
+     "O esendosi avi[c]inato l'Imper[ato]re a Italia, m[e]tere tempo in mezo & tirare la cosa più in lungo che si può, perche il tempo ci può porta[r]e [53] molta comodità … esendo la mente del Imper[ato]re tale … non solo sopra q[u]esta cosa dele decime, ma sopra la causa di {Altopaso}."
+    ],
+    "translation": [
+     "[Of the] tithes.",
+     "More than [for] anything else.",
+     "[...]",
+     "[Very] [earnestly] that I should be with [him], and I was begging him on behalf of that one, that he should be content not to trouble [...], at present [so] exhausted, with such an exaction.",
+     "The [aforesaid] [King] [of] [France] [and]",
+     "His Majesty's aid and the [Emperor]'s [favour] for as [long] as you can, without coming to any offer.",
+     "Of the [Emperor]'s mind.",
+     "Or, [the] [Emperor] having [drawn near] to Italy, [to put] time in between and draw the matter out as long [as] one can, because time can [bring] us [...] much advantage … the [Emperor]'s mind [being] such … not only on [this] [matter] [of the] [tithes] [but] on [the] case of {Altopaso}."
+    ],
+    "read_share": 0.688
    },
    {
     "doc": "R4035",
@@ -731,8 +772,17 @@
     "decryption": "r4035.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "My words, a paraphrase of the decode: The pieces that show: His Holiness; growth out of the ruin of others; to proceed in this business as the prince does at Genoa.",
-    "note": "No reading: 2 words that a word sign or word code gives with no doubt are sure; the number of cipher words and of holes is not known. README.md."
+    "summary": "My words, a paraphrase of the reading: The passage names those who have grown and fattened on the ruin of others and on ours, and His Holiness doing worse to this city and state. It ends: \"to proceed in this business as the Prince will do at Genoa\".",
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 29 cipher words, 26 sure, 3 holes; read share 0.897. If code 29 = t, from ciphertext, does not count as given by the key: 17 sure, 12 holes (0.586). Under the read bar; 1 of 2 sentences and fragments have at most one hole in ten words. README.md.",
+    "reading": [
+     "Crescuti & ingrasati delle rovine delli altri, de[l]e nostre, [c]he Sua Santità faci pegio a qu[e]sta cità & stato.",
+     "Procedere in questo negotio come farà il Principe a Genova."
+    ],
+    "translation": [
+     "Grown and fattened on the ruins of others, [on] ours, [that] His Holiness should do worse to [this] city and state.",
+     "To proceed in this business as the Prince will in Genoa."
+    ],
+    "read_share": 0.897
    },
    {
     "doc": "R4036",
@@ -741,8 +791,17 @@
     "decryption": "r4036.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "My words, a paraphrase of the decode: Only one row reads, in part. No sense can be given.",
-    "note": "No reading: 0 words that a word sign or word code gives with no doubt are sure; the number of cipher words and of holes is not known. README.md."
+    "summary": "My words, a paraphrase of the reading: One row gives a conditional sentence with several supplied letters. It may name an amount of ten thousand. No sure sense can be given.",
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 12 cipher words, 1 sure, 11 holes; read share 0.083. Under the read bar; 0 of 2 sentences and fragments have at most one hole in ten words. README.md.",
+    "reading": [
+     "[...] … {da}",
+     "Se ve[n]ga bisog[n]o, and[r]ò [a] fermare a dieci {mi[la]}."
+    ],
+    "translation": [
+     "[...] … {from}",
+     "[If] [need] [arises], [I shall go] [to] [settle] at [ten] {thousand}."
+    ],
+    "read_share": 0.083
    },
    {
     "doc": "R4037",
@@ -751,8 +810,23 @@
     "decryption": "r4037.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "My words, a paraphrase of the decode: The two papal tithes on Florence. Cosimo will act as Prince Doria acts for the city of Genoa. A proposal: to be content with half of the two tithes, one raised now and one a year later, by a Florentine commissioner whom His Holiness appoints. Church censures and an interdict are named.",
-    "note": "No reading: 30 words that a word sign or word code gives with no doubt are sure; the number of cipher words and of holes is not known. README.md."
+    "summary": "My words, a paraphrase of the reading: The two papal tithes on Florence. Cosimo writes that he was given to understand that he should proceed in this business as he sees \"the prince … Doria\" and the city of Genoa proceed. A proposal: to be content with half of the two tithes, one raised now and one a year later, by a Florentine commissioner whom His Holiness appoints. Church censures and an interdict are named.",
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 243 cipher words, 201 sure, 42 holes; read share 0.827. If code 29 = t, from ciphertext, does not count as given by the key: 159 sure, 84 holes (0.654). Under the read bar; 1 of 7 sentences and fragments have at most one hole in ten words. README.md.",
+    "reading": [
+     "Ala corte del [...] per ordine di quelo & di queli sua consiglieri mi è st[at]o fato in[t][e]ndere che in questo negotio dele [d]ecime io mi governi & proceda in quel modo me[d]esimo che io vederò governarsi & proce[d]ere al princip[e]… Doria & ala cità di Genova.",
+     "Il deto signore princ[i]pe & quela cità non sono ven[u]ti con [...] ad acordo o co[m][po]sitione alcuna … haveva dele al[t]re dificultà & cose di più importantia da resolvere con [...] dele dec[i]me nostre di qua, ma che tuto proceda dala dureza de [...], dove va lo interese del denaro.",
+     "Qualche re[s]peto & consideratione a me non nota, di gravare & stringere [...], al Marchese cioè, & del ordine & comisione che io tengo in questa parte dal [...].",
+     "Contentarsi de [l]a metà di le due decime da exigersi l'u[na] di presente & l'altra di qui a uno ano, per uno comisario fiorentino deputato da l[a] Sua Santità per magiore iustificatione & scarico del animo suo … del deto comisario, un[o] suo fidato.",
+     "& se {le} procederà ale censure & interdeti, ce ne dorà e[t] hare[m]o patientia. La cità è stata interdeta con qualche più colore, & questa sia la ultima resolutione. Si acet[e]rano le due decime poste da [...], una dele quali habia [a] esere … [pe]r quela, l'altra per la cità … da exigersi per comi[ss]arii fiorentini, quanto al ordine & … [c]omisione che io tengo dala corte del [...]."
+    ],
+    "translation": [
+     "At the court [of the] [...], by order of [that one] and of those counsellors of his, I [was] made [to understand] that in this business of the [tithes] I should conduct myself and proceed in the [same] way that I shall see the [Prince] … Doria and the city of Genoa conduct themselves and [proceed].",
+     "The said lord [Prince] and that city have not [come] to any agreement or [settlement] with [...] … he had [other] difficulties and things of greater importance to resolve with [...] about our [tithes] here, but that it all proceeds from the hardness of [...], where the interest of the money lies.",
+     "Some [regard] and consideration unknown to me, of burdening and pressing [...], to the Marquis, that is, and of the order and commission that I hold in this matter from the [...].",
+     "To be content with [the] half of the two tithes to be collected, the [one] at present and [the] [other] a year from now, by a Florentine commissioner deputed by [the] His Holiness for greater justification and relief of his conscience … of the said commissioner, [a] trusted one of his.",
+     "And if {she} proceeds to censures and interdicts, it will grieve us [and] [we shall have] patience. The city has been put under interdict with somewhat more pretext, and let this be the final resolution. The two tithes imposed by [...] [will be accepted], one of which is [to] be … [for] that one, the other for the city … to be collected by Florentine [commissioners], as to the order and … [commission] that I hold from the court of the [...]."
+    ],
+    "read_share": 0.827
    },
    {
     "doc": "R4038",
@@ -761,8 +835,15 @@
     "decryption": "r4038.md",
     "state": "decoded, not read",
     "language": "it",
-    "summary": "My words, a paraphrase of the decode: Niccolini is to accept the extension, as they have said. He is to seek a better condition. Any further advantage is left to him.",
-    "note": "No reading: 5 words that a word sign or word code gives with no doubt are sure; the number of cipher words and of holes is not known. README.md."
+    "summary": "My words, a paraphrase of the reading: Niccolini is to accept the extension \"se[c]ondo Clemente\" (perhaps \"as under Pope Clement\"), as they have said, and have it issued as in the copy that is sent to him. If they knew of it, they would not want it so broad, or would want better terms. Any further advantage is left to him.",
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 50 cipher words, 41 sure, 9 holes; read share 0.820. Under the read bar; 0 of 2 sentences and fragments have at most one hole in ten words. README.md.",
+    "reading": [
+     "Ad[ve]…rtendo Vostra Signor[i]a che aceti la estensione, se[c]ondo Clemente come loro hano deto, & poi si espedisca confor[m]e ala co[p]ia che se li manda, perche quando ne havesino notitia, o non la voriano così ampla o con meglio condit[i]one. Inoltre, potendosi vantag[i]are in cosa alcuna, lo rimetiamo in lei."
+    ],
+    "translation": [
+     "[Ad…vising] Your [Lordship] to accept the extension [according to] Clement, as they have said, and then let it be issued [in accordance] with the [copy] that is sent to you, because if they had notice of it, they would either not want it so broad or would want it on better [terms]. Furthermore, if [advantage] can be [gained] in [any] thing, we leave it to you."
+    ],
+    "read_share": 0.82
    },
    {
     "doc": "R4039",

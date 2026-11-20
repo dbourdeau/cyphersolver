@@ -18,13 +18,13 @@ Status: in progress. This folder is a contribution from outside (prabal-rje), se
 
 | Source | What it gives |
 | --- | --- |
-| The archive's key table, DECODE record R4033, as I read it (`key/key-table-R4033.tsv`) | every value of the earlier system's decode |
+| The archive's key table, DECODE record R4033, as I read it (`key/key-table-R4033.tsv`) | every value of the earlier system's decode, apart from code 29 |
 | My own key from ciphertext (`key/key-main.tsv`) | every value of the main system's decode: 21 codes with a value |
-| My own blind key of the earlier system (`key/key-earlier-blind.tsv`) | no value of the decode; it is graded against the table in `check.md`, section 3 |
+| My own blind key of the earlier system (`key/key-earlier-blind.tsv`) | one value of the decode: code 29 = t, from ciphertext, which the table does not hold (`key/key-table-R4033.tsv` holds it on a line of its own); the key is graded against the table in `check.md`, section 3 |
 
 ## The transcription
 
-- My own transcription of the DECODE images: 19 files in `transcription/`, one for each letter.
+- A transcription of the DECODE images: 19 files in `transcription/`, one for each letter.
 - `TRANSCRIPTION.md` gives the form, the marks, the known challenges and the counts.
 
 ## The order of events
@@ -37,6 +37,7 @@ The order of events is part of the result. The times are UTC−5.
 4. 19 November 2026, 09:05: the read of both systems public on my repository, https://github.com/prabal-rje/branicki-1757/tree/main/cosimo-1537.
 5. 19 November 2026, after that: I looked up the affair of Biagio della Campana in Ferrai (1882) and Staffetti.
 6. 19 November 2026, 15:31: the ledger's maintainer named Ferrai's footnote with a sister letter (issue 802). At 15:56 my read of R4054 was compared with it: "cannot tell" (`check.md`, section 2).
+7. 19 November 2026, in the evening: I looked at the archive's table again for code 29. It shows 29 only with a bar, as a word sign. The decode of the earlier letters then took 29 = t from ciphertext, and I made the readings of R4034 to R4038 from that decode.
 
 The check against the print came after the read. The times rest on my own record. This folder adds no hash table and no other record of provenance.
 
@@ -51,7 +52,8 @@ The check against the print came after the read. The times rest on my own record
 
 ## The readings and the counts
 
-- The readings are the ones of my public pages, unchanged. They mark supplied letters with brackets, but not every letter that stands on a hidden code. The decode is the reference.
+- The readings of the main system are the ones of my public pages; R4046 has one change, which its page states. They mark supplied letters with brackets, but not every letter that stands on a hidden code. The decode is the reference.
+- The readings of R4034 to R4038 are not on my public pages. I made them on 19 November 2026 from the decode of this folder, with code 29 = t. They mark every letter and word that the key does not give. Together they have 446 cipher words: 346 sure and 100 holes (295 sure if every word on code 29 is a hole).
 - Every document is marked "decoded, not read". `README.md`, "The counts by the word rule", gives the number of cipher words, the sure words and the holes of each document, and how they are counted.
 
 ## Other support of the main system
@@ -71,9 +73,9 @@ The check against the print came after the read. The times rest on my own record
 
 - 609 code tokens of the main system have no value - blocker: open-codes; each of these codes has fewer than 30 tokens, except code 36 (45 tokens), which the read gives as a null.
 - The main key is not checked against a key - blocker: no-key-material; the archive's table serves the earlier system only.
-- Some codes of the earlier letters are not in the table as I read it - blocker: no-key-material.
+- 17 code tokens of the earlier letters hold a code that the key does not hold - blocker: no-key-material. Code 29 (70 tokens) takes t from ciphertext; no key checks it.
 - R4043, R4044, R4045, R4050, R4052 and R4053 show short pieces only - blocker: too-short.
-- The readings hold holes in most sentences - blocker: not-attempted; a reading pass against the images may close some.
+- The readings hold holes in most sentences - blocker: not-attempted; a reading pass against the images may close some. In R4034 to R4038, 2 of 21 sentences and fragments have at most one hole in ten words.
 
 ## Escalation
 
@@ -101,8 +103,8 @@ The record pages, the keys and the frozen read come from my repository, https://
 ## Credits
 
 - **DECODE**, the database of historical ciphers of the DECRYPT project: records R4034 to R4039, R4041 to R4050 and R4052 to R4054, and R4033 (the key table). The record pages: https://de-crypt.org/decrypt-web/RecordsView/4033, https://de-crypt.org/decrypt-web/RecordsView/4034, https://de-crypt.org/decrypt-web/RecordsView/4035, https://de-crypt.org/decrypt-web/RecordsView/4036, https://de-crypt.org/decrypt-web/RecordsView/4037, https://de-crypt.org/decrypt-web/RecordsView/4038, https://de-crypt.org/decrypt-web/RecordsView/4039, https://de-crypt.org/decrypt-web/RecordsView/4041, https://de-crypt.org/decrypt-web/RecordsView/4042, https://de-crypt.org/decrypt-web/RecordsView/4043, https://de-crypt.org/decrypt-web/RecordsView/4044, https://de-crypt.org/decrypt-web/RecordsView/4045, https://de-crypt.org/decrypt-web/RecordsView/4046, https://de-crypt.org/decrypt-web/RecordsView/4047, https://de-crypt.org/decrypt-web/RecordsView/4048, https://de-crypt.org/decrypt-web/RecordsView/4049, https://de-crypt.org/decrypt-web/RecordsView/4050, https://de-crypt.org/decrypt-web/RecordsView/4052, https://de-crypt.org/decrypt-web/RecordsView/4053, https://de-crypt.org/decrypt-web/RecordsView/4054.
-- **The archive:** Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1. The archive's key table (DECODE record R4033) gives the values of the earlier system.
+- **The archive:** Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1. The archive's key table (DECODE record R4033) gives the values of the earlier system, apart from code 29.
 - **The database:** Mihály Héder and Beáta Megyesi (2022), "The DECODE Database of Historical Ciphers and Keys: Version 2", HistoCrypt, https://doi.org/10.3384/ecp188397.
 - **The transcription, the keys from ciphertext, the decode and the readings:** prabal-rje.
 
-DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published. The digit rows in `transcription/` are my own transcription of the DECODE images. No DECODE transcription file is in this folder.
+DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published. The digit rows in `transcription/` are a transcription of the DECODE images. No DECODE transcription file is in this folder.
