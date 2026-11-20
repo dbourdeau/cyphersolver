@@ -175,3 +175,30 @@ counted "entendre" as a ninth hole, but its letters come from the key.
 
 **Limits.** One checker, inside the project. Two controls show little on their own. The signs were chosen because they were
 doubtful: a diagnostic, not a sample of the text. No person has audited the model's part. This is not a `human_check`.
+
+## Sign check J2, 20 Nov 2026
+
+Follow-up of sheet J, for its one reservation: on q08 the checker had chosen NEW_W for "Roisieux" (f67r-21#16) but remarked
+"one more loop on the left". Sheet J2 asks whether that loop is a variant of the omega seen elsewhere in the letter. Same
+level, same roles as sheet J (checker: Brice Dudout, the contributor; an AI model, Claude Opus 5.5, wrote the rule, chose the
+signs, cut the thumbnails, built and scored the sheet and read the remark). No image, crop or thumbnail is committed.
+
+**Rule.** `sign_check/sheet-J2-rule.md` (in French, as written), SHA-256
+ae85d19d4cf3933e97157c5d32f239e6d2060631dce109b5a32bc117af4322b4, written and hashed on 20 Nov 2026 before any thumbnail was
+cut and before any answer. Six other omegas of f. 67r were looked at; none shows the loop clearly. Four targets (Roisieux,
+{deux}, ceulx, ceux), two controls (XO of "demande", INF of "lequel"). The shape "omega with loop" (the Roisieux sign itself)
+is offered only on the other omegas, never on Roisieux. Integration: a failed control drops the sheet; {deux} becomes certain
+if its sign is seen as an omega; Roisieux stays certain only if it is seen as an omega or if another omega is seen "with loop",
+otherwise it becomes probable.
+
+**Answers.** `sign_check/sheet-J2-answers.json`, exported 2026-11-19T23:31:53Z (SHA-256
+da6973745c9f05c5ece78ebe66c3dc4626d0af6322f87de8b3c4a54836492330). Controls 2 of 2. {deux}, ceulx, ceux: NEW_W. Roisieux:
+"none / other shape", remark "forme 2 de la q1", which names the "omega with loop" option of q01, whose thumbnail is the
+Roisieux sign itself. So the checker sees that sign as its own shape, not as an omega, and sees no other omega with the loop.
+
+**Effect.** f67r-13#26 {XO|NEW_W} -> NEW_W in `transcription.txt` and `decryption.txt` ("deux" from the key); "deux" becomes
+certain and "Roisieux" becomes probable ({Roisieux}: the token NEW_W is kept, the value x of the looped shape is not attested
+elsewhere). Key K4 unchanged. Count on `reading.md` (sure words only, rule of #728): 308/479 = 64.3% before and after;
+certain + probable 426/479 = 88.9%. Still read in part. With sheet J: 4 controls passed of 4, 13 target signs.
+
+**Limits.** As for sheet J: one checker inside the project, few controls, signs chosen because doubtful. Not a `human_check`.
