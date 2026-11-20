@@ -33,7 +33,7 @@ Status: in progress. This folder is a contribution from outside (prabal-rje), se
 
 ## The transcription
 
-- My own transcription of the DECODE images: two readings of each page and a reconciliation.
+- A transcription of the DECODE images: two readings of each page and a reconciliation.
 - 191 files, one for each page with cipher digits: 2,568 rows, 59,042 digits, 3,261 doubt marks and 1,596 notes.
 - The rows of the 1710 letters are the hardest: there the two readings of a page agree least.
 - Clear words inside a cipher row are not copied: `[not copied]` stands in their place.
@@ -48,7 +48,7 @@ Status: in progress. This folder is a contribution from outside (prabal-rje), se
 ## The decode
 
 - Each record page gives the decode row by row, and names the cipher row of each line.
-- 35,235 code tokens on 143 pages; 34,561 show a value.
+- 35,235 code tokens and decode units on 143 pages: 26,044 code tokens of the letters with dots and 9,191 decode units of the letters without dots. 34,561 show a value.
 - No document builds sentences. By the read bar, each of the 51 documents is "decoded, not read" in `profile.json`.
 
 ## Why no word count
@@ -66,12 +66,13 @@ So each record page counts code tokens, open codes and items that are not codes,
 - **The clerk of the time:** 29 letters with dots carry a decipherment above the cipher rows, and R8618 carries a few words of the clerk's hand. DECODE marks inline plaintext on these 30 records. This folder does not copy that text. 14 code values come from it, and `check.md` grades the blind decode against it.
 - **The Gualterio cipher tables** at the British Library (Add MS 20244): this ledger's catalogue names them for entry 295. They are not on DECODE, and they are not online by this ledger's note. I did not open them.
 - **DECODE:** all 51 records give status "N/A" and cipher type "Unknown" (checked 16 November 2026).
-- **This ledger:** entry 295 stands in the list of letters readable with keys in hand. No target folder and no reading names Add MS 20443 (checked 16 November 2026). A code search found the name "Botti" in two key files of `targets/bay1706`. I did not open them.
+- **This ledger:** entry 295 stands in the list of letters readable with keys in hand. No target folder and no reading names Add MS 20443 (checked 16 November 2026). Two key files of `targets/bay1706` (`keys/DOC_R588_D2150_2150.txt` and `keys/DOC_R556_D2828_2828.txt`) hold the name "Bottigor" or "Bottiger", not "Botti". They are not about these letters (read on 19 November 2026).
 - **Print:** not searched.
 
 ## Remaining gaps
 
 - Code 17 (255 tokens): r or q - blocker: open-codes; the clerk writes r 66 times and q 39 times at its places.
+- Code 17 before code 10 (`17.10.`): 74 places in the rows of the letters with dots where both signs are sure, and 26 more where a sign is doubtful (100 in all, by the leading reading of each doubtful sign). At one more place (R8695 T003 C13), a sign marked `[?]` follows 10. At the 72 sure places on pages decoded here, the decode gives 52 groups, most often raesto (8), raale (5), raesta (4) and rael (3); with 17 = q and 10 = u, these four read questo, quale, questa and quel. Some groups read with r, for example fratello, tragedia and ringrazio - blocker: open-codes; the key keeps 17 as r and 10 as a.
 - 90 rare codes with no value (191 tokens in the letters with dots) - blocker: no-key-material; the Gualterio cipher tables (Add MS 20244) may give them; not opened.
 - Five pages not shown (R8662 T003, R8666 T003, R8674 T001, R8677 T001, R8710 T004) - blocker: unknown; their decode was made, and it is not sure.
 - R8618 T002 - blocker: unknown; several tries on 16 to 18 November did not decode it; one code stands between spaces, and the word breaks are not known.
@@ -83,7 +84,8 @@ So each record page counts code tokens, open codes and items that are not codes,
 
 - [x] siblings: one key for all 51 records (the letters without dots read with the key of the letters with dots; `check.md`)
 - [x] clear-pages: the clerk's decipherments on 29 letters, as a grade and for 14 code values (`check.md`)
-- [ ] known-keys: the Gualterio cipher tables (BL Add MS 20244) not opened; the two key files of `targets/bay1706` that name Botti not opened
+- [ ] known-keys: the Gualterio cipher tables (BL Add MS 20244) not opened
+- [x] known-keys: the two key files of `targets/bay1706` name "Bottigor" or "Bottiger"; they are not about these letters
 - [ ] print: not searched
 - [x] key-rebuild: the key from the ciphertext alone (`key-and-read/`)
 - [ ] retry: a reading in sentences of the decode
