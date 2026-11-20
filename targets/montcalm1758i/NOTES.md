@@ -1,5 +1,7 @@
 # Montcalm's 1758 court code ("code I"): the Marine ministry's deciphering table, sheet e001295272
 
+On 19 November 2026, close-ups of the Lévis volume identified by Brice Dudout confirmed the Marine key and supported 158 of 161 previously missing, doubtful or disputed entries, including all of groups 1–20. The new readings are in `key/levis_detail_concordance.tsv` and `key/levis_second_readings.tsv`. They have not been incorporated into the frozen `key/table_e001295272.tsv`.
+
 Status: in progress (contribution folder only, no site page yet; Daniel is free to write, edit or replace one).
 
 Contributed by Andrew Beling, with AI agents, 13-14 November 2026. All transcription and testing below was done by
