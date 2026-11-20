@@ -7,7 +7,7 @@
 <meta name="description" content="The French resident Antoine de Bordeaux to Brienne, London, 30 May 1653, intercepted by Thurloe (BL Add MS 4200 ff. 88-90): an 810-token nomenclator of the Brienne office." data-full="The French resident Antoine de Bordeaux to Brienne, London, 30 May 1653, intercepted by Thurloe (BL Add MS 4200 ff. 88-90): an 810-token nomenclator of the Brienne office. A ciphertext-only solver failed on the provisional transcription. The English Deciphering Branch's key sheet for 'Mr. Bordeaux', BL Add MS 32263 f. 1 (DECODE R7537), filed in a separate key volume, was found to fit and applied after the transcription was corrected against the page images (two glyphs had been merged, tokens dropped and diacritics lost); about twenty tokens stay open. The Council heard the deputies of rebel Bordeaux before Cromwell gave the French envoy his audience; the treaty is still unsigned; Brienne should hold back French mediation.">
 <link rel="stylesheet" href="style.css?v=74da6bb8">
 <meta name="date" content="2026-09-18">
-<meta name="last-modified" content="2026-11-07">
+<meta name="last-modified" content="2026-11-20">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -62,14 +62,14 @@
 <p class="readjump"><a href="#texts">Go to the full text &darr;</a></p><!-- /readjump -->
   <p class="sub">British Library, Add MS 4200, ff. 88&ndash;90, among Thurloe&rsquo;s papers &middot; 810 cipher tokens over 156 symbols in Tomokiyo&rsquo;s transcription (813 over 149 in the corrected one) between clear opening and close &middot; no decipherment on the leaf, the English worksheets unfinished</p>
   <p class="sub">The English Deciphering Branch&rsquo;s key sheet for &ldquo;Mr. Bordeaux&rdquo;, BL Add MS 32263 f. 1, filed in a separate volume, was found to fit and was applied after the transcription was checked against the page images &middot; the letter is deciphered except about twenty tokens &middot; no earlier decipherment was found in print &middot; the ciphertext-only attack of 16 September failed because of transcription errors; its model of the cipher was correct</p>
-  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-18">18 September 2026</time> &middot; updated <time datetime="2026-11-07">7 November 2026</time></p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-09-18">18 September 2026</time> &middot; updated <time datetime="2026-11-20">20 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#extkey" title="read after matching with key from external sources">external key matched</a> &middot; Extent: complete &middot; <a href="atlas.html#slug=bordeaux1653">On the map</a></p><!-- /outcome -->
 <p class="credits">Credits &middot; <a href="contributors.html#tomokiyo">Satoshi Tomokiyo</a> (transcription) &middot; <a href="contributors.html#lasry">George Lasry</a> (pointer to a source) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal solved" aria-hidden="true"><span>key matched</span></div>
 </section>
 
 <main>
-<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#first">The first attempt, and why it failed</a><a href="#key">The English key sheet</a><a href="#reading">The decipherment</a><a href="#context">What it says</a><a href="#open">What remains open</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#letter">The letter</a><a href="#first">The first attempt, and why it failed</a><a href="#key">The English key sheet</a><a href="#reading">The decipherment</a><a href="#context">What it says</a><a href="#open">What remains open</a><a href="#ctts">The page in CTTS</a><a href="#texts">Full texts</a><a href="#sources">Sources</a></nav>
 <div class="callout glance" data-term-ok>
 <p class="gl-top"><strong>At a glance</strong><span class="gl-res">External key matched &middot; complete</span></p>
 <dl>
@@ -180,6 +180,29 @@ Prince Rupert, whose fleet had used French ports. 43&#8254; (<em>si les</em> {43
 <li><strong>42&uml;.</strong> The sheet has <em>fort</em>; the sense of <em>capables de fort prendre</em> would be better served by <em>faire</em>. The value is left as the sheet gives it.</li>
 <li><strong>The key sheet&rsquo;s date.</strong> <em>Aug. 20th 1832</em> is how the heading reads. Whether it records a later re-solution or a copy of an older key was not investigated.</li>
 </ul>
+
+<h2 id="ctts"><span class="num">07</span> The page in CTTS</h2>
+<p>On 20 November 2026, following George Lasry&rsquo;s advice to build a gold-standard set of transcriptions, the first page of the letter (f. 88r) was transcribed again, this time sign by sign in
+<a href="https://github.com/CrypToolProject/CTTS" rel="noopener">CTTS</a> (CrypTool Transcriber &amp; Solver, version 3.7.0). In CTTS every sign gets a box on the image and a symbol type, and all
+the signs of one type can be laid side by side, so a sign filed under the wrong type stands out. This pass was made without reference to the transcription used for the decipherment above.</p>
+<ul>
+<li><strong>How it was made.</strong> The page was cut into five bands, each straightened on its own, and a script drew 238 candidate boxes around the ink. A Fable 5.2 agent that saw only the bands and
+the numbered boxes labelled every box (222 signs in 94 types), and flagged 13 boxes holding two signs, 40 holding part of one, 16 stains, and 8 signs with no box. Claude Opus 5.5 then made the corrections
+in CTTS itself, by driving the program&rsquo;s window with computer use while Daniel Bourdeau watched: 43 minutes in CTTS after about 5 minutes in a browser review tool, and 13 minutes of fixes after
+a validation round.</li>
+<li><strong>Result.</strong> 224 signs in 83 types on the page. 172 of the final boxes are first-pass boxes left as they were; 52 were redrawn, split, merged or added.</li>
+<li><strong>How good the first pass was.</strong> Taken box by box, the Fable labels differ from the final project in 28.1&nbsp;% of signs, because the boxes were wrong, not the labels. Read
+with the agent&rsquo;s own notes (pieces merged, double boxes split, missed signs put in), they differ in 3.6&nbsp;% (218 of 224 signs agree). The first CTTS pass reached 4.0&nbsp;%, so the work in CTTS was
+mostly box surgery. The last six errors (a 90 taken for <em>q o</em>, 6&uml; and 5&uml; taken without their dot, 332 and 344 cut short, the sign under the stain at the head of the third band) had all been
+noted as doubtful by the first pass. Each was settled on an enlarged view of the band with no colour overlay.</li>
+<li><strong>Against the transcription used here.</strong> 219 of 223 tokens agree. Where they differ, the image supports the CTTS reading: 96 with a single bar (the transcription has 96=), one 63
+without a prime, the bar of <em>3 96&#8254;</em> standing over the 96 only (the transcription has 396&#8254;, one of the open codes above), and the sign under the stain, which CTTS marks as doubtful (?52&prime;)
+where the transcription takes 52&prime; from the duplicate of the opening. These are candidate corrections to the transcription and have not been made, so the decipherment above is unchanged. One more point
+is for the decipherment, not the transcription: in <em>[..] separ&eacute;es(?)</em> the clerk wrote a plain 4, while the sense wants the crossed 4- (<em>s</em>). Both transcriptions record the 4.</li>
+<li><strong>Checked by a person.</strong> Every reading in this pass was made by a model, and the final project was compared with the transcription used here, so it is not independent of it.
+A person then went over the final CTTS sign table on 20 November 2026 and found it correct except for ?52&prime;, the sign under the stain, which stays unconfirmed.</li>
+</ul>
+<figure data-credit="British Library, Add MS 4200 f. 88r, via DECODE R8390; sign table exported from CTTS 3.7.0"><img src="bordeaux1653_ctts_key.jpg" width="1376" height="1145" decoding="async" srcset="thumbs/bordeaux1653_ctts_key-960.webp 960w, bordeaux1653_ctts_key.jpg 1376w" sizes="(max-width: 1000px) 100vw, (min-width: 1800px) 1240px, 940px" alt="CTTS symbol table: one coloured row per sign type (15, 17, 20, 20 with two dots, 25 with a prime, 4 with a stroke, d, ll, m, u, x and so on), each followed by the cut-out images of every sign of that type on the page" loading="lazy"><figcaption>The page as CTTS sees it after correction: each symbol type with every sign of that type cut from f. 88r. The rows marked <em>!part</em> or <em>!split</em> without signs are first-pass types left empty after the corrections. <span class="credit">Image: British Library, Add MS 4200 f. 88r, via DECODE R8390; sign table exported from CTTS 3.7.0.</span></figcaption></figure>
 
 <!-- texts:start -->
 <h2 id="texts">Full texts</h2>
@@ -388,7 +411,7 @@ Portuguese a resolution on his peace treaty. ... De Bordeaux. London, 30 May 165
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/bordeaux1653.json"></figure>
 <!-- replay:end -->
-<h2 id="sources"><span class="num">07</span> Sources</h2>
+<h2 id="sources"><span class="num">08</span> Sources</h2>
 <ul>
 <li>British Library, Add MS 4200 ff. 88&ndash;90 (the letter), f. 92 and ff. 93&ndash;93v (frequency count and duplicate of the ending), the duplicate of the opening, and the English contact tables
 ff. 74, 78: DECODE records R8390, R8391, R8393, R8386, R8388, R8389 (<a href="https://de-crypt.org" rel="noopener">de-crypt.org</a>, login).</li>
@@ -397,6 +420,8 @@ ff. 74, 78: DECODE records R8390, R8391, R8393, R8386, R8388, R8389 (<a href="ht
 and the image of Lasry&rsquo;s 1654 key.</li>
 <li>T. Birch (ed.), <em>A Collection of the State Papers of John Thurloe</em>, vol. 1 (1742); F. Guizot, <em>Histoire de la R&eacute;publique d&rsquo;Angleterre et de Cromwell</em>, vol. 2 (1854), appendix: other
 despatches of Bordeaux in 1653, not this one.</li>
+<li>The CTTS pilot of 20 November 2026: the pipeline, the project table and its notes in <code translate="no">research/ctts/</code>, with the report
+<code translate="no">bordeaux1653_ctts_computer_use_report.pdf</code>. The CTTS project files are not published, because they hold cut-outs of the Library&rsquo;s images.</li>
 </ul>
 <p class="muted">The key sheet transcription (<code translate="no">key7537.txt</code>), the values added from context (<code translate="no">key_guess.txt</code>), the corrected transcription (<code translate="no">ct2.txt</code>), the decoder
 (<code translate="no">apply_key.py</code>), the decipherment (<code translate="no">plaintext_1653.txt</code>), and the 16 September solver with its controls are in the repository (<code translate="no">targets/bordeaux/</code>). The British Library&rsquo;s images are not
@@ -404,13 +429,13 @@ reproduced, because the Library&rsquo;s terms require its permission to publish 
 
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau and Satoshi Tomokiyo, “Bordeaux to Brienne, London, 30 May 1653”, Cyphersolver, posted 18 September 2026, updated 7 November 2026, repository commit 89068eb772, https://cyphersolver.com/bordeaux1653.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Satoshi Tomokiyo, “Bordeaux to Brienne, London, 30 May 1653”, Cyphersolver, posted 18 September 2026, updated 7 November 2026, repository commit 89068eb772, https://cyphersolver.com/bordeaux1653.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-bordeaux1653,
+<p class="citetext">Daniel Bourdeau and Satoshi Tomokiyo, “Bordeaux to Brienne, London, 30 May 1653”, Cyphersolver, posted 18 September 2026, updated 20 November 2026, repository commit bae6495569, https://cyphersolver.com/bordeaux1653.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau and Satoshi Tomokiyo, “Bordeaux to Brienne, London, 30 May 1653”, Cyphersolver, posted 18 September 2026, updated 20 November 2026, repository commit bae6495569, https://cyphersolver.com/bordeaux1653.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-bordeaux1653,
   author = {Daniel Bourdeau and Satoshi Tomokiyo},
   title = {Bordeaux to Brienne, London, 30 May 1653},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 18 September 2026, updated 7 November 2026, repository commit 89068eb772},
+  note = {posted 18 September 2026, updated 20 November 2026, repository commit bae6495569},
   url = {https://cyphersolver.com/bordeaux1653.html}
 }">Copy BibTeX</button></p>
 </details>

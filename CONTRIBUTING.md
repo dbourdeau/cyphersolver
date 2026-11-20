@@ -54,6 +54,15 @@ in the key. Check them against the images, correct the labels or the key, decryp
 sentences hold. Mark every value the model proposed from context alone as doubtful (`[?word]`) until it holds at every
 occurrence or a contemporary text confirms it. Record each round, failures included, as a solution step.
 
+**Doubtful signs are checked, not carried (20 Nov 2026).** Write down every sign you were unsure of while
+transcribing. If a model made the first pass, ask it to list its doubts: in our first CTTS pilot (Bordeaux 1653) every
+error left after correction was one the model had flagged and nobody had checked. Settle each doubt against the sign
+enlarged with no overlay, against the decoded text, and against an independent transcription where one exists. List
+them in the target's NOTES.md under `## Transcription doubts`
+(`- <sign> (<where>) - read: <reading>; checked: image, decode[, transcription]; <evidence>`, or `- none: <why>`). A
+doubt that stays unresolved keeps its mark (`?52'`, `[4]`). Editing boxes in a tool such as CTTS gives a usable file;
+the checks are what make the transcription accurate (README Conventions).
+
 ## Searching an archive with your AI
 
 Every catalogue entry started as a lead: a ciphered document in an archive that nobody seems to have read. The leads

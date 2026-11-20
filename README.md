@@ -1127,6 +1127,19 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   unknown" in the reading's notes, and on the page where such a mark could change the class.
   `research/reading_audit/v2_score.holes` does the count for `v10_relabel.py`. Before this date a mark counted once
   however much it covered (ronquillo1676 R982: 0.954 by marks, 0.914 by words).
+- **Doubtful signs are checked, not carried (20 Nov 2026).** Transcription accuracy comes from a good first reading
+  plus checking every doubt. Whoever transcribes, a person or a model, lists each sign they were unsure of. Each one is
+  then settled against (1) **the image**: the sign enlarged, with no box or colour overlay (overlays hide dots, primes
+  and stained digits); (2) **the decoded text**: whether the reading makes sense in context; and (3) **an independent
+  transcription** where one exists (a duplicate copy, a second transcriber, an edition). The doubts and their verdicts go
+  in the target's NOTES.md under `## Transcription doubts`, one line each:
+  `- <sign> (<where>) - read: <reading>; checked: image, decode[, transcription]; <evidence>`, or `- none: <why>`. A
+  doubt none of the checks settles keeps its mark in the transcription (`?52'`) or the reading (`[4]`). Tools that edit
+  boxes and types (CTTS, by hand or driven by a model through computer use) produce a usable transcription file; they
+  do not make the reading better. The Bordeaux 1653 CTTS pilot (`research/ctts/`): the model's first pass, with its
+  own notes applied, had 218 of 224 signs right. Correcting the boxes in CTTS changed no reading, and the last six
+  fixes all came from checking doubts the first pass had itself flagged. `_check_writeup.py` requires the section on
+  readings whose page is first built from 21 Nov 2026 and warns on older ones (audit section S).
 - **Outcome method.** Every target is classed by how its text was obtained, in George Lasry's categories (email of
   21 Sept 2026) plus one for complete existing decipherments: *key recovered from ciphertext-only*; *key recovered
   based on plaintext from external sources* (an edition, a calendar, a copy elsewhere); *key recovered based on adjacent
