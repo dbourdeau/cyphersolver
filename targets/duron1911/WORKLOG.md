@@ -1,0 +1,17 @@
+# WORKLOG (catalogue 1462 siblings, 20 Nov 2026; Claude Code, model claude-opus-5-5)
+
+- 2026-11-20 setup: cloned repo; read CONTRIBUTING, README conventions, duron1911/NOTES.md and dudout/*, hernandez1911, mccarty1911, dallas1911 notes.
+- 2026-11-20 prior-art: repo grep for every undeciphered shelfmark of catalogue 1462: only 1648.2-3 and 1354.1 had been tried (dudout PREREG-C06, failed); others untouched.
+- 2026-11-20 images: fetched page 1 of 17 undeciphered/partly read telegrams and 30 scans of key cards CMXV.16.1557.1 over plain http from visor.cehm.org.mx (kept outside the repo).
+- 2026-11-20 transcription: siblings/transcription.txt (10 telegrams), from the images.
+- 2026-11-20 hypothesis: Presidio telegrams of 27-31 Mar 1911 signed B. Hernández / B. H. Leroy use the Hernández swap card (as 1420.3-6). Applied to 1420.5-6, 1420.6-6, 1430.3-3, 1432.3-4, 1447.1-3: Spanish emerges in all (siblings/decryption.txt).
+- 2026-11-20 control: 1430.3-3 decoding matches the period pencil gloss at the head of the form ("Total 160 h - Diga si viene refuerzo y"), not used to find the key.
+- 2026-11-20 key confirmed: 1695.1-2 coded groups read "josepinfda" with the Clave G.A. card; matches the pencil gloss "Jose Pineda".
+- 2026-11-20 partial: 1695.2-2 with Clave G.A. gives only "aton" and "oucsenn?s", same places the period gloss stops; not read.
+- 2026-11-20 failure: 1648.2-3 (Gabriel): swap and G.A. cards give nonsense; pencil "No se entiende" on the form.
+- 2026-11-20 failure: 3344.1 (Villa 1914): two-digit syllabary card (1557.1 scan 3), 2 orders x 100 digit offsets, lexicon-segmentation score: no reading. Gutenberg returned 503, so lang/ es-modern could not be built; lang/lexicons/es.json.gz used instead.
+- 2026-11-20 observation: 1561.10-13 is garbled clear text, not cipher. Images of 1695.1-2 and 1695.2-2 carry crossed pencil labels (2-2 / 1-2).
+- 2026-11-20 duron 1777.1-6 itself: nothing new; its open gaps (danlel, dak) not touched.
+- 2026-11-20 rerun with lang/ es-modern (gutenberg.org 503; corpus fetched from the gutenberg.pglaf.org mirror for this run only, no repo change): 3344.1 syllabary card, 200 offset variants: best -4.88/char (real Spanish about -1.6): no reading (siblings/lm1914.py).
+- 2026-11-20 solver control: simple-substitution anneal (siblings/solve.py) on a 70-letter Spanish control enciphered with a random alphabet: recovered exactly (-1.32/char).
+- 2026-11-20 failure: same solver on Gabriel 1648.2-3 (76 coded letters): best -3.59/char, gibberish. Gabriel is not a simple monoalphabetic substitution of Spanish (or is too corrupted).
