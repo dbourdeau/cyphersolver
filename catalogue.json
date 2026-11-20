@@ -73933,6 +73933,9 @@
    "solvability": 5,
    "difficulty": 2,
    "verify": "Build the table from the glossed Niccolini pages; read the four passages.",
+   "outcome": "attempted, open",
+   "known": "Attempted twice, not read. 19 Nov 2026 (Malcolm McBratney, PR #797, targets/milan1494/niccolini/): the four passages transcribed blind and decoded once with the 1494 key of targets/milan1494; strict word count doc 42 16/26 (61.5%), doc 49 0/5, doc 81 4/8, doc 90 2/6, all below the 65% line. 20 Nov 2026 (Brice Dudout, PR #830, niccolini/gabbrielli25/): Gabbrielli's key no. 25 (Piero Alamanni, 1492; K_G25) tested on Niccolini's glossed letters, 0.4987 against a bar of 0.85, not validated; it was not applied to the bare passages.",
+   "open": "All four passages. Not tried: a key built from Niccolini's own glossed letters of 1492-93 in this filza; a value-by-value comparison of K_G25 with the 1494 key.",
    "links": [
     {
      "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=42&c=",
@@ -74030,7 +74033,7 @@
    "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXIV, doc. 96 (cc. 220-221)",
    "folio_note": "c. 220r clear; c. 220v from line 6 to the foot: runs of figure/sign groups (\"÷ 11 6 π b 7\", \"p π b v c q m\", \"v p y π\", \"22 λ p ÷ 11 o v 11 4\") between clear words; c. 221r: runs in lines 1-6, 9-14, 20-24; c. 221v: first lines, signature.",
    "cls": "A",
-   "status": "Bare (1272 px): no interlinear clear text. The same sign family is glossed in Niccolini's and Ridolfi's letters of 1492-94 in this filza; key sheet LXXII 178 is endorsed \"Alamanni Piero\" (his Naples cipher of 1489-92). 14 Nov 2026 (Andrew Aymeloglu, issue #589): the key is MAP LXXII 183 (the Milan embassy sheet, as for Ridolfi's letters of October 1494, catalogue 2382), not Alamanni's Naples sheet LXXII 178; read in part, 11 of 91 cipher words unread; in progress in targets/milan1494/. Not tried: Gabbrielli's key no. 25 (Piero Alamanni, 1492; Ilardi microfilm reel 58, issue #610).",
+   "status": "Bare (1272 px): no interlinear clear text. The same sign family is glossed in Niccolini's and Ridolfi's letters of 1492-94 in this filza; key sheet LXXII 178 is endorsed \"Alamanni Piero\" (his Naples cipher of 1489-92). 14 Nov 2026 (Andrew Aymeloglu, issue #589): the key is MAP LXXII 183 (the Milan embassy sheet, as for Ridolfi's letters of October 1494, catalogue 2382), not Alamanni's Naples sheet LXXII 178; read in part, 11 of 91 cipher words unread; in progress in targets/milan1494/. Not tried: Gabbrielli's key no. 25 (Piero Alamanni, 1492; Ilardi microfilm reel 58, issue #610). 20 Nov 2026: that key is now transcribed in targets/milan1494/niccolini/gabbrielli25/kg25/K_G25.json (from the Yale scan of Gabbrielli's sheet, PR #830); it failed its test on Niccolini's glossed letters (0.4987 against 0.85) and is still not tried on these two leaves.",
    "why": "The orator's despatch from Ludovico Sforza's court on the eve of Charles VIII's descent (spring 1494), unread, with key material in the same and the next filza.",
    "importance": 3,
    "solvability": 5,
@@ -85529,81 +85532,6 @@
    "repository": "bnf"
   },
   {
-   "id": 2732,
-   "counted": true,
-   "year": 1530,
-   "date": "c. 1525-1535",
-   "title": "Cipher letter in the Montmorency papers, Bonnivet volume (BnF fr. 3027, Gallica view 69)",
-   "correspondents": "unknown (volume opens with letters of admiral Bonnivet to the marshal of Montmorency)",
-   "place": "unknown",
-   "language": "French",
-   "region": "France",
-   "period": "1497-1559",
-   "shelfmark": "BnF Manuscrits, fr. 3027",
-   "folio_note": "fr. 3027: one letter in cipher seen at Gallica view 69 (about 20 lines of symbols, addressed to the marshal de Montmorency). Rescoped 16 Nov 2026: the Omont items first cited here (nos. 34, 49, 70, 72, ff. 67-202, about 12 letters) belong to a later volume, not fr. 3027; the amount of cipher in fr. 3027 itself is not known.",
-   "cls": "C",
-   "status": "Cipher letter seen on Gallica (openapi IIIF view 69 of fr. 3027). Audit of 16 Nov 2026: the Omont folio and item numbers do not belong to this volume, so only the leaf actually seen is claimed.",
-   "why": "A cipher letter in a 16th-century hand with plain-text passages interleaved, no decipherment on the leaf.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
-   "verify": "Page through the rest of fr. 3027 on Gallica for further cipher leaves; check that none has a decipherment; compare Tomokiyo and DECODE for the same leaf.",
-   "links": [
-    {
-     "label": "Gallica, fr. 3027",
-     "href": "https://gallica.bnf.fr/ark:/12148/btv1b9060066q"
-    },
-    {
-     "label": "BnF Archives et manuscrits, fr. 3027",
-     "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49486k"
-    },
-    {
-     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
-     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
-    }
-   ],
-   "seen": "image",
-   "source": "Omont BnF catalogue sweep",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
-   "needs_archive_scan": "no",
-   "access_note": "Gallica volume(s) online: fr. 3027; openapi.bnf.fr IIIF works with curl",
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), Omont BnF sweep vetting",
-    "seen": {
-     "kind": "scan",
-     "where": "openapi.bnf.fr IIIF images of Gallica ark btv1b9060066q (BnF fr. 3027, 123 views; the Gallica description opens with letters of admiral Bonnivet to the marshal de Montmorency, which confirms the shelfmark), 14 Nov 2026",
-     "extent": "One letter looked at: view 69, a letter written in cipher signs (about 20 lines of symbols run together with a few plain words), addressed on a following view A monsr le mareschal de Montmorency. The rest of the volume was not paged; the Omont items earlier cited (nos. 34, 49, 70, 72; ff. 67-202) were shown by the 16 Nov 2026 audit to belong to another volume.",
-     "cipher": "Symbol cipher in a 16th-century cursive hand, the plain-text passages interleaved; no interlinear or marginal decipherment on the leaf and no clear copy on the facing view."
-    },
-    "prior_art": {
-     "decode": "decode_search.py, 14 Nov 2026: 'Bonnivet' 0 records; 'Montmorency' returns only BnF NAF 4206 (Dinteville and du Bellay, R9467-9477), none from fr. 3027 (the DECODE id 3027 in the Cryptoole snapshot is an unrelated British Library record).",
-     "tomokiyo": "Tomokiyo's GL.htm page (copy in targets/gramont1529) lists Lasry's deciphered Montmorency-period ciphers in fr. 3015, 3022, 3029, 3092 and fr. 2996; fr. 3027 is not named there. Web search for 'fr. 3027' with Bonnivet/Montmorency (14 Nov 2026) found nothing.",
-     "lasry": "Not in the GL.htm copy held here; the AI-assisted list (sect. 4) is not held locally and was not re-read, so a reading there is not excluded.",
-     "edition": "No printed edition of the Bonnivet-Montmorency letters of fr. 3027 found; Omont's catalogue lists the pieces 'en chiffre' without a decipherment.",
-     "literature": "Nothing found by web search (14 Nov 2026)."
-    },
-    "searches": [
-     {
-      "query": "decode_search.py Bonnivet; Montmorency",
-      "result": "0; and NAF 4206 only."
-     },
-     {
-      "query": "Tomokiyo cryptiana fr.3027 Montmorency Bonnivet",
-      "result": "nothing"
-     }
-    ],
-    "key_check": "No key known. Neighbouring volumes of the Montmorency papers (fr. 3015, 3022) carry deciphered ciphers of the same years that could be tried; not tested.",
-    "duplicates": "known.py 'fr. 3027', 'Bonnivet' (14 Nov 2026): only this lead and its sweep row.",
-    "verdict": "open"
-   },
-   "repository": "bnf"
-  },
-  {
    "id": 2737,
    "counted": true,
    "year": 1617,
@@ -87780,7 +87708,7 @@
      "kind": "scan",
      "where": "Gallica fr. 15571, ark btv1b90618802, IIIF views 41-43 (f. 37-38), viewed 15 Nov 2026 (700-px sheet)",
      "extent": "f. 37: cipher block of about seven lines at the top of the leaf, then clear text",
-     "cipher": "Sign cipher seen at the top of f. 37; clear text below and on f. 38 (a different letter in another hand). The decipherment Tomokiyo mentions is f. 36 for ff. 34-35, not for this block; none on or with f. 37."
+     "cipher": "Sign cipher seen at the top of f. 37; clear text below and on f. 38 (a different letter in another hand). The decipherment Tomokiyo mentions is f. 36 for ff. 34-35, not for this block; none on or with f. 37. Overtaken on 17 Nov 2026: by Brice Dudout's alignment (PR #760; recount PR #782) the slip on f. 36 also follows this block in order, with 80 of its 189 signs not aligned; see status."
     },
     "prior_art": {
      "decode": "known.py plus the DECODE dumps (views.jsonl, views_b, views_c) and the Cryptoole snapshot, 15 Nov 2026: no record for fr. 15566-15572 outside the Matignon/Mayenne 1586 leaves of fr. 15571-15572 (other folios); the dumps are partial, so \"not on DECODE\" is as far as they go.",
