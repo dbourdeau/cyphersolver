@@ -53,6 +53,7 @@ In all: 24,483 of 27,152 shown letters agree (90.2%).
 
 - **A run file's key:** R5297 p2, R5480 p1, R5504 p1, R5505 p2, R5509 p1, R5511 p1, R5513 p1, R5516 p1, R5519 p1, R5520 p1, R5521 p1, R5522 p1, R5523 p1, R5524 p1, R5529 p1, R5533 p1, R5533 p2, R5541 p1, R5543 p2, R5559 p1, R5563 p1, R5563 p2, R5564 p1, R5565 p1, R5574 p1, R5582 p1, R5583 p1, R5584 p1.
 - **The frozen read's table:** R5297 p1, R5521 p2, R5521 p3, R5542 p1.
+- **Key not confirmed:** R5516 p1, R5564 p1, R5583 p1. Each page has, on average, under 9 signs for each label, and no key sheet and no clear passage checks its key.
 
 ## 5. Limits
 
