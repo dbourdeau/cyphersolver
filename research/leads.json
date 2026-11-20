@@ -36760,6 +36760,42 @@
    "ark": "",
    "scored": "sweep",
    "vetting": {
+    "date": "2026-11-17",
+    "by": "Brice Dudout (dudout, L'Europe chiffrée), with Claude (Anthropic, Claude Opus 5.5) as agent",
+    "seen": {
+     "kind": "scan",
+     "where": "Rome, Biblioteca Casanatense, Ms. 1309, c. 3r: paid colour reproduction, 3752 x 5000 px, received 17 Nov 2026 (image © 2026 Giovanni De Angelis / SIAE, Biblioteca Casanatense; private study, not reproduced here). Compared with Philadelphia, University of Pennsylvania Libraries, Ms. Codex 553 (OPenn, CC BY 4.0), ff. 1r-9v (images 3355_0028 to 0045).",
+     "extent": "The whole of Casanatense c. 3r read at full size (17 lines plus the catchword 'forando'); Penn ff. 1r-6r read in full to find the parallel text, which is Penn f. 5v, last six lines, to f. 6r, line 11.",
+     "cipher": "None on c. 3r. The leaf is a clear Italian copy. Its first lines are the end of a letter: 'dieci righe di cifra, et à V.S. Ill.ma faccio humilissima r[iverenz]a'. Penn f. 5v gives the whole sentence: 'Saran con questa dieci righe di Cifra'. So the original dispatch enclosed ten lines of cipher. The register does not copy those lines as cipher. The next paragraph, in clear in both copies ('1000 Mi hà avvisato, che havendo l'Ambasciatore Zeno quà scritto ... che cerchi divertirlo del far officio'), is probably their content. The only coded element on the leaf is the cover number 1000 for the informant, which Penn writes as '1000 Mille'. Penn f. 5r has a second four-figure cover number after 'in Roma'. Nothing on c. 3r is cipher to be solved."
+    },
+    "prior_art": {
+     "decode": "decode_search.py 'Zacchia', 'Casanatense', 'Ludovisi' (17 Nov 2026): 0 records each. The search is shallow, so this is weak evidence.",
+     "tomokiyo": "No Zacchia or Venice 1621 nunciature page found on Cryptiana in the 4 Nov sweep (lead's prior_art); not searched again, as there is no ciphertext.",
+     "lasry": "No Ludovisi-era nunciature key in Lasry's list as checked on 4 Nov (lead's prior_art); not searched again, as there is no ciphertext.",
+     "edition": "No printed edition of Zacchia's Venice letters of 1621 was found (one web search on 17 Nov 2026). Ploncher (ASI 9, 1882) prints only the 1623 Sarpi letters of Ms. 1308. The Folger holds a Strozzi transcript of Ludovisi's letters to the nuncio for 1622; it is the other side of the correspondence.",
+     "literature": "Angione, 'Politica e informazione a Venezia' (2020), on the preceding Donati nunciature (1618-1621), covers the archival setting but not this register."
+    },
+    "key_check": "No key tested: the leaf holds no ciphertext. The cover numbers (1000 and the four-figure number on Penn f. 5r) belong to a numerical nomenclator. Its key is not in either register.",
+    "duplicates": "known.py 'Ms. 1309' 'Zacchia' 'Codex 553' (17 Nov 2026): only lead 2202 itself, with its vetting block of 4 Nov 2026. No open issue or pull request names 2202 (gh search, 17 Nov 2026).",
+    "searches": [
+     {
+      "query": "known.py 'Ms. 1309' 'Zacchia' 'Codex 553'",
+      "result": "Only lead 2202 and its own vetting block of 4 Nov 2026 (not_cipher)."
+     },
+     {
+      "query": "gh pr/issue list -R dbourdeau/cyphersolver --state all --search '2202 OR Zacchia OR Ludovisi OR Casanatense'",
+      "result": "Only closed PR #286, which deals with other catalogue numbers. No work on this register."
+     },
+     {
+      "query": "web: Laudivio Zacchia nunziatura Venezia 1621 lettere Ludovisi cifra edizione",
+      "result": "No edition of the 1621 letters and no study of their cipher. Found only the Folger transcript of Ludovisi's side (1622) and Angione 2020 on the Donati nunciature."
+     }
+    ],
+    "verdict": "not_cipher",
+    "closed": "Confirms the verdict of 4 Nov 2026 on the leaf named by the Manus record. Casanatense Ms. 1309, c. 3r, seen at full size, has no ciphertext. 'Dieci righe di cifra' are words of the letter: 'Saran con questa dieci righe di Cifra' (Penn f. 5v) refers to a cipher enclosure that the register does not copy as cipher. The register gives a clear paragraph in its place, '1000 Mi hà avvisato ...'. It concerns ambassador Zeno, the Jesuits and the Pope, and is the same in both copies. This paragraph is probably the content of the ten lines. The 'nomi propri cifrati' are cover numbers such as 1000. One correction to the earlier block: the lines are not omitted. Their content seems to be copied in clear, so the original dispatch, if it survives with its cipher (Vatican, Segreteria di Stato, Venezia; not checked), would form a cipher/clear pair.",
+    "supersedes": "The block of 4 Nov 2026 (not_cipher) rested on the Penn scans and the Manus record. This block keeps that verdict and adds what that block lacked: the Casanatense leaf c. 3r itself, seen at full size. It also corrects one statement. The ten cipher lines are not left out of the register: the clear paragraph that follows the letter ('1000 Mi hà avvisato ...') appears to give their content."
+   },
+   "vetting_superseded": {
     "verdict": "not_cipher",
     "closed": "Penn Ms. Codex 553 (scans viewed on Colenda IIIF) is a clear-text register of Zacchia's letters in which proper names appear as numbers (e.g. 1000) and the nuncio writes that 'dieci righe di cifra' accompany a letter without the lines being copied; the Casanatense Ms. 1309 record says the same, so there is no ciphertext block, only isolated nomenclator numbers.",
     "date": "2026-11-04"
