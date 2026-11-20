@@ -113,8 +113,8 @@ None affects the recovered alphabet.
 Avenel t. III prints nine more letters of Feb-May 1629 to Rancé and the Queen Mother with their figures in place
 (nos. CXIX, CXXXV, CXLVI, CXLVII, CLIII, CLIV, CLV, CLVIII, CLXVII). Under a pre-registered held-out test the fr. 3829
 key reproduces his decipherment of CLIV + CLV (0.940 against a best shuffled control of 0.456): a verification of
-Avenel and of the key, "read from existing decipherment". Strict count 352/374 cipher words (values taken from his
-notes are holes): five letters read, four read in part. Method and count: `texts/fr3828_method.md`; reading
+Avenel and of the key, "read from existing decipherment". Strict count 337/374 cipher words (values taken from his
+notes to these letters are holes, the base codes 54, 59, 60 included): three letters read, six read in part. Method and count: `texts/fr3828_method.md`; reading
 `texts/fr3828_reading.md`; key `texts/key.md` (Extension). The manuscripts were not seen.
 
 ## What remains

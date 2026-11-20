@@ -22,6 +22,8 @@ Conventions:
   CLIV 84 = *les Anglois* / *Angleterre* (table: l'Angleterre). They are written `{x}` and listed here. Under the strict
   count (owner's decision on #813, 19 Nov 2026) they are holes, like the ten values of the `key.md` Extension where
   they are read (CXIX 68, 69; CXLVI 69; CLIII 55, 61, 62, 95, 96, 97; CLXVII 41, 67, 68): see `fr3828_method.md`.
+  The base codes 54 (Monsieur), 59 (princesse Marie) and 60 (Mme de Longueville), named by the key table, are holes
+  too in the count (20 Nov 2026): their values come from Avenel's notes to these letters (`key.md`).
 - `[d'une affaire]` in CLXVII is Avenel's own supply in the clear text ("il manque ici, dans le manuscrit, un mot").
 
 ## CXIX — fr. 3835 no. 15 (Béthune 9329 fol. 46), to Rancé, [15 (?) February 1629]

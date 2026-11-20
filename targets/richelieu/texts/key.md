@@ -33,6 +33,26 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 
   Cleartext jargon also used: *Castor* = le Roi, *Lysandre* = la Reine mère (Avenel).
 
+### Where each base code comes from (20 Nov 2026, question on #813)
+
+The ten base codes above were entered on 14 Sept 2026 (commit 2787a883, "this work + Avenel's footnotes across
+vol. III") and left unchanged on 23 Oct 2026, when only 39 was corrected. No source letter or note was recorded for
+them then; `avenel.py` searched the OCR of the whole volume. What the printed volume gives (page images checked for
+`ff87-89_avenel_figures.txt`, `fr3828_avenel_figures.txt` and `avenel3_others_figures.txt`):
+
+| Code | Occurs in ff. 87, 89 | Avenel's glosses |
+|---|---|---|
+| 51, 52, 58, 66, 83, 84, 92 | yes | his notes to ff. 87, 89 themselves (CXCIX pp. 368-369, CCV pp. 381-383) |
+| 54 Monsieur | no | notes to the nine letters: CXXXV p. 263 n. 2; CXLVI p. 275 nn. 4, 6; CXLVII p. 277 n. 8; CLIV p. 294 n. 3; CLVIII p. 301 n. 5; CLXVII p. 321 nn. 6, 9. Outside them: CCCXIV p. 570 n. 9 (March 1630) |
+| 59 princesse Marie | no | notes to the nine letters only: CXXXV p. 263 n. 1 ("La Longueville et Marie de Mantoue"); CLXVII p. 321 nn. 8, 9. CLVIII p. 300 nn. 5, 6 and CCCXIV p. 570 n. 6 gloss it "M. de Mantoue" / "duc de Mantoue" |
+| 60 Mme de Longueville | no | notes to the nine letters only: CXXXV p. 262 n. 4 ("Dans ce chiffre, 60 signifie toujours Mme de Longueville"), p. 263 nn. 1, 3; CLXVII p. 321 n. 8. (60 in CCXLV belongs to Châteauneuf's cipher, another table.) |
+
+So 59 and 60 can only have come from Avenel's notes to these nine letters, and 54 most probably did (eight
+glosses there, one elsewhere, in 1630). Under the owner's rule on #813 (a value taken from Avenel's note to one of
+these nine letters is a hole where it is counted) all three are counted as holes in the nine letters
+(`fr3828_measure/word_count.tsv`: 337/374). They do not occur in ff. 87, 89; in the 1630 pieces a value fixed from
+the 1629 letters is a value from another letter and stays sure.
+
 ## Extension from fr. 3828, 3825, 3835 (Nov 2026)
 
 Added by Brice Dudout (with Claude Opus 5.5), 19 Nov 2026, when the key above was applied unchanged to the nine
