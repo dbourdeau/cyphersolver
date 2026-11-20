@@ -6,10 +6,10 @@ Luis Fernández de Córdoba, Duke of Sessa, imperial ambassador in Rome, writes 
 
 ## What this folder holds
 
-- `transcription/`: my own transcription of the DECODE images, one file for each record (1,347 rows).
+- `transcription/`: a transcription of the DECODE images, one file for each record (1,347 rows).
 - `key/key.tsv`: the table of the decode. Each label of my rows has its value, its kind and its source.
 - `key/decode.py`: a short script. It applies `key/key.tsv` to the rows files and gives every decode line (`python3 key/decode.py --check`).
-- `key/added-values.tsv`: the values that I added to the ledger's key, each with its clear text and the date when I took it.
+- `key/added-values.tsv`: the values that I added to the ledger's key, each with its source and the date when I took it.
 - `r9873.md` to `r9905.md`: one page for each record: its counts, a short summary, the credit of earlier readings, and the decode row by row.
 - `TRANSCRIPTION.md`: what the rows are, their marks and their counts.
 - `check.md`: what I checked against what.
@@ -23,7 +23,7 @@ Luis Fernández de Córdoba, Duke of Sessa, imperial ambassador in Rome, writes 
   - Where KS4 gives two values (`njn` = ha / han), the decode shows the value before the slash. This touches 40 units.
   - No other value of KS4 changes.
 - **The names of my labels:** my rows name some groups and signs differently from the ledger's transcriptions. A map of 41 Latin labels and 19 sign labels joins the two. I made it by aligning my rows with the ledger's transcriptions of R9873, R9898 and f. 128 (14 pages). My sign names change from page to page, so a sign read through the map off its aligned page is marked doubtful.
-- **Values that I added (63):** codes that KS4 does not hold. 62 come from clear texts of the same letters. One, `cib` = su, comes from two copies of one dispatch (R9879, R9880) read with the key, with a weak value of the clerk copies. 31 rest on 2 or more agreeing places. 32 rest on one place that agrees with a value of the clerk copies (16 strong and 16 weak clerk values). 47 of the 63 rest wholly or in part on files of this target: the ledger's readings of R9873, R9898 and f. 128, and Daniel Bourdeau's transcriptions of the period decipherments ff. 140, 172 and 324. `key/added-values.tsv` names the source of each one. They read 1,186 units here; 246 of these units carry my `~` doubt in the rows, and the decode does not mark them doubtful.
+- **Values that I added (63):** codes that KS4 does not hold. 35 come from clear texts of the time, and 27 from this ledger's readings of R9873, R9898 and f. 128. One, `cib` = su, comes from two copies of one dispatch (R9879, R9880) read with the key, with a weak value of the clerk copies. 31 rest on 2 or more agreeing places. 32 rest on one place that agrees with a value of the clerk copies (16 strong and 16 weak clerk values). 47 of the 63 rest wholly or in part on files of this target: the ledger's readings of R9873, R9898 and f. 128, and Daniel Bourdeau's transcriptions of the period decipherments ff. 140, 172 and 324. `key/added-values.tsv` names the source of each one. They read 1,186 units here; 246 of these units carry my `~` doubt in the rows, and the decode does not mark them doubtful.
 - **Against `key_working.md`:** 4 of the 63 values are already in `key_working.md`, though not in KS4 (`cao`, `qel`, `lar`, `z y`). So 59 are additions to `key_working.md`. 20 of the 59 give the same value as a KS4 code one sign away; they may be my spellings of the ledger's codes.
 - **Clear words (34 labels, 364 units):** short labels of mixed rows that are clear Spanish words, not cipher. The decode marks them `_x_`. They are not counted as cipher units.
 - **Clerk values (1,094 units):** values from a key that I fitted on the clerks' decipherments of the time. They are not in the ledger's key. `key/key.tsv` lists them as kind "clerk value", and the decode shows them as `[x]`. I never count them as read.
@@ -147,7 +147,7 @@ Each record page ends with the decode, row by row. It is the plain output of `ke
 ## Limits
 
 - Every record is decoded, not read. The decode has holes in most rows. No record here builds sentences.
-- **The rows** are my own transcription. Two passes over the same pages agree on about two thirds of the three-letter codes. A misread sign gives a wrong value or a hole.
+- **The rows** are a transcription of the DECODE images. Two passes over the same pages agree on about two thirds of the three-letter codes. A misread sign gives a wrong value or a hole.
 - **The sign names** of my rows change from page to page. Off the 14 aligned pages, a sign read through the map is doubtful.
 - **27 of the added values** rest only on the ledger's own readings of R9873, R9898 and f. 128. Those readings use some values that the ledger marks as adopted on sense. So these 27 values are only as sure as those readings.
 - **16 of the added values** rest on one place and a weak value of the clerk copies. The check of that rule passed on few units (15 right, 0 wrong).
@@ -160,7 +160,8 @@ Each record page ends with the decode, row by row. It is the plain output of `ke
 - **DECODE**, the database of historical ciphers of the DECRYPT project: records R9873 to R9881, R9883 to R9887, R9889 to R9901 and R9903 to R9905. Record pages: https://de-crypt.org/decrypt-web/RecordsView/ followed by the number, for example https://de-crypt.org/decrypt-web/RecordsView/9873. Héder and Megyesi (2022), "The DECODE Database of Historical Ciphers and Keys: Version 2", HistoCrypt, https://doi.org/10.3384/ecp188397.
 - **The archive:** Real Academia de la Historia, Madrid, Colección Salazar y Castro A-31 (9/31) and A-34 (9/34).
 - **The key:** Daniel Bourdeau (`key_working.md`) and Brice Dudout (KS4).
-- **The clear texts behind the added values:** Biblioteca Nacional de España, MSS/20214/52-1; the clear leaves of the Real Academia de la Historia, A-31 ff. 140, 172, 324, 482, 485 and 516; the ledger's readings of R9873, R9898 and f. 128.
+- **The clear texts of the time behind the added values:** Biblioteca Nacional de España, MSS/20214/52-1; the clear leaves of the Real Academia de la Historia, A-31 ff. 140, 172, 324, 482, 485 and 516.
+- **The ledger's readings behind the added values:** R9873, R9898 and f. 128.
 - **Dates:** the Calendar of State Papers, Spain, vols. ii and iii.1.
 
-DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published. The rows in `transcription/` are my own transcription. No DECODE transcription file is in this folder.
+DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published. The rows in `transcription/` are a transcription of the DECODE images. No DECODE transcription file is in this folder.

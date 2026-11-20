@@ -52,10 +52,10 @@ All numbers are real unless marked "planted".
 
 ## 4. The added values
 
-62 values were fixed from clear texts of the same letters, and `cib` from two copies of one dispatch read with the key (`key/added-values.tsv`):
+62 values were fixed from texts of the same letters (35 from clear texts of the time, 27 from this ledger's readings), and `cib` from two copies of one dispatch read with the key (`key/added-values.tsv`):
 
-- Each cipher row, read with the key, was aligned with a clear text. A row counted only when it aligned better than every row aligned with an unrelated Spanish text of the 15th century.
-- A unit with no value got a candidate where the units on each side matched the clear text letter for letter, with 2 or more exact letters on each side.
+- Each cipher row, read with the key, was aligned with one of these texts. A row counted only when it aligned better than every row aligned with an unrelated Spanish text of the 15th century.
+- A unit with no value got a candidate where the units on each side matched that text letter for letter, with 2 or more exact letters on each side.
 - A value entered the key when 2 or more places agreed, or when one place agreed with a value of the clerk copies. These rules changed no value of the ledger's key.
 
 **Checks before the real run.** "Wrong" counts units. The go rule: at most 0.10 wrong.

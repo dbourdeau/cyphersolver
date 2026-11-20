@@ -12,7 +12,7 @@ Status: decoded, not read (all 30 records).
 ## The system and the key
 
 - The cipher of this target: a mixed nomenclator with three-letter code groups, single signs for letters, the switch `f~` and the opener `v db` (`key_working.md`).
-- The key of the decode is KS4 (Brice Dudout), with two departures (`qes` = es from `key_working.md` pass 3; the value before the slash for `njn`), 63 values that I added (62 from clear texts of the same letters, `cib` from two copies of one dispatch) and 34 labels that I read as clear words (`key/added-values.tsv`).
+- The key of the decode is KS4 (Brice Dudout), with two departures (`qes` = es from `key_working.md` pass 3; the value before the slash for `njn`), 63 values that I added (35 from clear texts of the time, 27 from this ledger's readings of R9873, R9898 and f. 128, `cib` from two copies of one dispatch) and 34 labels that I read as clear words (`key/added-values.tsv`).
 - `key/key.tsv` gives each label of my rows, its value, its source and the date when I took it. `key/decode.py` applies it to the rows.
 
 ## The reading
@@ -30,8 +30,9 @@ Status: decoded, not read (all 30 records).
 
 ## Escalation
 
-- [x] key: the ledger's key KS4 applied; values added only from clear texts of the same letters (18 November 2026)
-- [x] clear texts: BNE MSS/20214/52-1; RAH A-31 ff. 140, 172, 324, 482, 485, 516; the ledger's readings of R9873, R9898 and f. 128
+- [x] key: the ledger's key KS4 applied; values added only from clear texts of the time and this ledger's readings of the same letters, and `cib` from two copies of one dispatch (18 November 2026)
+- [x] clear texts of the time: BNE MSS/20214/52-1; RAH A-31 ff. 140, 172, 324, 482, 485, 516
+- [x] this ledger's readings: R9873, R9898 and f. 128
 - [ ] a reading in sentences, record by record, against the images
 
 ## Credit
