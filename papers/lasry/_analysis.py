@@ -577,33 +577,34 @@ def main():
                        ['\\bottomrule', '\\end{tabular}',
                         f'\\caption{{\\label{{tab:corpus}} The corpus by century of the earliest document and by plaintext language '
                         f'(a target with letters in two languages counts under both; {len(langs)} languages in all).}}', '\\end{table}', '']))
-    T.append(group_table(ps, lambda t: t['region'] if t['region'] != U else 'not recorded', 'region (most documents)',
+    AT = []   # tables placed in the appendix to keep the body within the page limit (20 Nov 2026)
+    AT.append(group_table(ps, lambda t: t['region'] if t['region'] != U else 'not recorded', 'region (most documents)',
                          'Outcome by region of the correspondence: the region named by most documents of the target (Europe where no other is named).', 'region',
                          order=[EUROPE, 'North America', 'Latin America', 'East Asia', 'Middle East and South Asia', 'Oceania', 'not recorded']))
     T.append(group_table(ps, attack_group, 'starting point', 'Outcome by what the attack started from (profile field conditions.attack).', 'attack',
                          order=['ciphertext only', 'crib from clear text', 'decipherment or known plaintext', 'a key (archive, print, sibling)', 'none recorded']))
-    T.append(group_table(ps, family, 'cipher family', 'Outcome by cipher family, from the system types in the profile.', 'family'))
+    AT.append(group_table(ps, family, 'cipher family', 'Outcome by cipher family, from the system types in the profile.', 'family'))
     T.append(group_table(ps, prior_group, 'prior reading', 'Outcome by whether a reading of the text existed anywhere before this project, and when it was found (the contamination question).', 'prior',
                          order=['none known', 'existed, known before the attempt', 'existed, found during the attempt', 'existed, found after or not at all', 'existed, when found unknown', 'unknown']))
-    T.append(group_table(ps, lambda t: lenband(t['tokens']), 'ciphertext tokens', 'Outcome by ciphertext length (enciphered tokens summed over the documents of a target).', 'length',
+    AT.append(group_table(ps, lambda t: lenband(t['tokens']), 'ciphertext tokens', 'Outcome by ciphertext length (enciphered tokens summed over the documents of a target).', 'length',
                          order=['$<$ 250', '250--999', '1,000--4,999', '$\\geq$ 5,000', 'unknown']))
     # Table: the ciphertext-only key recoveries
     ct = sorted([t for t in ps if t['method'] == CT], key=lambda t: (t['year'] or 9999))
-    rows = ['\\begin{table*}[t]', '\\centering\\small', '\\resizebox{\\textwidth}{!}{%', '\\begin{tabular}{@{}lrllrll@{}}', '\\toprule',
+    rows = ['\\begin{table}[t]', '\\centering\\small', '\\resizebox{\\textwidth}{!}{%', '\\begin{tabular}{@{}lrllrll@{}}', '\\toprule',
             'target & year & language & system & tokens & key order & extent \\\\', '\\midrule']
     for t in ct:
         rows.append(f'{mark(t)} & {t["year"] or "--"} & {tex(", ".join(sorted(t["langs"])) or "--")} & {tex(family(t))} & '
                     f'{t["tokens"] if t["tokens"] else "--"} & {tex(t["key_order"])} & {t["ext"]} \\\\')
     rows += ['\\bottomrule', '\\end{tabular}}',
-             f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~solved in part by an outside contributor.}}', '\\end{table*}', '']
-    T.append('\n'.join(rows))
-    T.append(SECOND_TABLE)
+             f'\\caption{{\\label{{tab:ct}} The {len(ct)} targets whose key was recovered from the ciphertext alone. $^\\dagger$~solved in part by an outside contributor.}}', '\\end{table}', '']
+    AT.append('\n'.join(rows))
+    AT.append(SECOND_TABLE)
     if INCLUDE_CONTRIBUTED: T.append(CONTRIB_TABLE)
     (OUT / 'tables.tex').write_text('\n'.join(T), encoding='utf-8')
 
     # ---- appendix
     head = 'target & year & language & system & method & extent & tokens \\\\'
-    A = ['\\onecolumn', '{\\scriptsize', '\\begin{longtable}{@{}llrlllr@{}}',
+    A = ['\\onecolumn'] + AT + ['\\clearpage', '{\\scriptsize', '\\begin{longtable}{@{}llrlllr@{}}',
          '\\caption{\\label{tab:all} Every target in the corpus, by date of the earliest document. Methods: '
          + '; '.join(f'{ABBR[x]} {SHORT[x]}' for x in MT.METHODS) + '. $^\\dagger$~solved in part by an outside contributor. Full profiles are in the data release.}\\\\',
          '\\toprule', head.replace('target & year', 'target & year'), '\\midrule', '\\endfirsthead',
