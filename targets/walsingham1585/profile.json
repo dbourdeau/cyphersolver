@@ -290,6 +290,18 @@
    "kind": "verification",
    "what": "Blind sign sheet K on the R4844 sign words (DECODE R4844; text only, no image): ten doubtful signs in probable or unresolved groups, chosen by a rule written and hashed before the sheet, plus two controls (2 of 2). Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet, scored it and read the free-text remarks. Seven answers gave the shape that makes the letter (2 corrected, 5 as transcribed), three were 'none / other shape' (new shapes, one case each, not given a value). Groups 12 (traine) and 16 (Scroupe) become certain; 4 and 2 stay unresolved, 14 (suspition) and 9 ([a]bsent) stay probable. Sure groups 11 -> 13 of 19 (0.579 -> 0.684). The rule has no written integration clause: it names the shape that makes each word, and the strict application (a group becomes certain only when every target in it gets that shape) was written after the answers. Still read in part; fraction_read unchanged (the sign groups are not among its units).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "Blind sign sheet K2 on the R4844 sign words (DECODE R4844; text only, no image), follow-up of the three new shapes of sheet K: three targets and two controls (2 of 2), chosen by a rule with a written integration clause, hashed before the sheet (sign_check/sheet-K2-rule.md). Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet, scored it and read the remark. Group 14, fifth sign: '=' (the checker withdrew his sheet-K answer 'L with a stroke below'); groups 2 and 4: shapes only, still unresolved. Sure groups 13 -> 14 of 19 (0.684 -> 0.737). sign_key.tsv unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "reading",
+   "what": "Review of PR #821 (Daniel Bourdeau): group 14 (suspition) kept probable, since sheets K and K2 gave opposite answers on its fifth sign; group 16 (Scroupe) kept probable, since only ≡ = p was settled and, read with sign_key.tsv (MP = l, ψ without a row), the group gives 's?rouple'. Sure groups 14 -> 12 of 19 (0.632). Still read in part; fraction_read unchanged.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -347,7 +359,7 @@
     "role": "transcription",
     "date": "2026-11-09",
     "source": "DECODE R4689, R4835, R4836, R4845, R4844",
-    "note": "sign words of the deciphered pairs with their glosses; sign key partial on held-out R4845 (0.646 vs 0.213); R4844 sign words read in part, 16 of 19 groups (dudout/); 19 Nov 2026, blind sign sheet K: 13 of 19 groups certain; 20 Nov 2026, sheet K2: 14 of 19"
+    "note": "sign words of the deciphered pairs with their glosses; sign key partial on held-out R4845 (0.646 vs 0.213); R4844 sign words read in part, 16 of 19 groups (dudout/); 19 Nov 2026, blind sign sheet K: 13 of 19 groups certain; 20 Nov 2026, sheet K2: 14 of 19; review of #821: 12 of 19"
    },
    {
     "who": "dudout",
@@ -418,9 +430,9 @@
     "decryption": "dudout/reading_R4844_signs.md",
     "state": "read in part",
     "language": "en",
-    "read_share": 0.737,
+    "read_share": 0.632,
     "summary": "Walsingham to Wotton, 10 Sep 1585: the Master of Gray's plot is to be judged; the Queen will not make herself a party; no violent course; Wotton is to be absent at the attempt, keep his train at Stirling and avoid suspicion; a postscript on Lord Scrope's letter about the secret plot, not kept secret enough.",
-    "note": "20 Nov 2026, after blind sign sheet K2 (NOTES, Sign check K2): group 14 (suspition) moves from P to S (its fifth sign is \"=\", p), so 14 of 19 groups are certain, 2 probable, 3 unresolved: 14 of 19 = 0.737. 19 Nov 2026, after blind sign sheet K (NOTES, Sign check K): groups 12 (traine) and 16 (Scroupe) move from P to S, so 13 of 19 groups are certain, 3 probable, 3 unresolved: 13 of 19 = 0.684 (was 11 of 19 = 0.579). 16 of 19 sign groups read, 3 unresolved (groups 2, 4, 10); 16 Nov 2026, sure words only: 11 groups are graded S (certain), 5 are P (probable, one with a restored letter) and count as holes, so 11 of 19 = 0.579. Before 0.86, the share of sign letters read for sense with the probable and the restored letters counted as read (about 100 of 116; certain about 69 of 116 = 0.59); the reading file dudout/reading_R4844_signs.md still carries the 0.86 line. Key partial by our protocol (0.646 vs 0.213 on held-out R4845). v10_relabel.py cannot reproduce the count (the grades are in a table column, not marked in the text).",
+    "note": "20 Nov 2026, review of #821 (NOTES, Review of #821): group 14 ({suspition}: sheets K and K2 disagree on its fifth sign) and group 16 ({Scroupe}: MP is l in sign_key.tsv and ψ has no row, so the key gives 's?rouple') go back to probable: 12 of 19 groups certain, 4 probable, 3 unresolved: 12 of 19 = 0.632. 20 Nov 2026, after blind sign sheet K2 (NOTES, Sign check K2): group 14 (suspition) moves from P to S (its fifth sign is \"=\", p), so 14 of 19 groups are certain, 2 probable, 3 unresolved: 14 of 19 = 0.737. 19 Nov 2026, after blind sign sheet K (NOTES, Sign check K): groups 12 (traine) and 16 (Scroupe) move from P to S, so 13 of 19 groups are certain, 3 probable, 3 unresolved: 13 of 19 = 0.684 (was 11 of 19 = 0.579). 16 of 19 sign groups read, 3 unresolved (groups 2, 4, 10); 16 Nov 2026, sure words only: 11 groups are graded S (certain), 5 are P (probable, one with a restored letter) and count as holes, so 11 of 19 = 0.579. Before 0.86, the share of sign letters read for sense with the probable and the restored letters counted as read (about 100 of 116; certain about 69 of 116 = 0.59); the reading file dudout/reading_R4844_signs.md still carries the 0.86 line. Key partial by our protocol (0.646 vs 0.213 on held-out R4845). v10_relabel.py cannot reproduce the count (the grades are in a table column, not marked in the text).",
     "reading_review": {
      "grade": "B",
      "by": "Brice Dudout (with Claude)",
