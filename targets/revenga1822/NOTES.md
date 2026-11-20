@@ -4,7 +4,7 @@ Status: in progress. Contributed by WAINUT (27 Oct 2026). Key recovered from the
 deciphered in part on a first-pass transcription (a dozen holes and doubtful words, about 110 slips corrected from the
 sense and listed in corrections.md). Section 7 reports the second transcription of all four frames and the check of the z sign. The site page and the ledger rows are left to the maintainer.
 
-**Reading status after the second pass.** The review of 14 November gave the first-pass Spanish reading grade B and reported 0.868 across clear and cipher text. Its profile estimated 0.82 for the cipher passages. The present pass checked the transcription on the film and leaves the sure cipher-word fraction unknown. The proposed class is decoded, not read pending assessment of the settled transcription. The profile retains the original reviewer’s entry and the dated review below.
+**Reading status after the second pass.** The review of 14 November gave the first-pass Spanish reading grade B and reported 0.868 across clear and cipher text. Its profile estimated 0.82 for the cipher passages. The 19 November audit below identifies 129 sure cipher-word occurrences in that reading. Missing text and unresolved word boundaries leave the whole-letter fraction unknown. The owner accepted the state “decoded, not read” under the sure-word rule. The original grade-B assessment is recorded below.
 
 Catalogue 641. Contributed by WAINUT (https://github.com/WAINUTAI). The work was done with AI language-model agents;
 the cipher was transcribed from the NARA frames with a vision-capable language model. An independent agent re-read
@@ -138,7 +138,7 @@ keys -7.61 (max -5.70); a key annealed onto the shuffled ciphertext at best -4.5
 places have a value, but that is not a share read as sense. Measured on the reading: the deciphered passages of
 `reading.md` score hole rate 0.18 on `docs/_check_reading.py --file` (historical estimate 0.82).
 That estimate includes about 110 first-pass slips corrected from the sense (`corrections.md`). Section 7 reports
-their subsequent check on the frames. The profile records `fraction_read` as `unknown` pending sentence review. The checker scores the whole of `reading.md` 0.586 of sentences clean. This is short of the 95 % read bar.
+their subsequent check on the frames. The profile records `fraction_read` as `unknown`; see the 19 November word count below. The checker scores the whole of `reading.md` 0.586 of sentences clean. This is short of the 95 % read bar.
 
 ## 6. Prior work
 
@@ -269,8 +269,16 @@ The four words with expected z support the proposed g value; they are not an ind
 
 The earlier collation lists 231 entries (200 disagreements and 31 doubtful readings); that historical count is not the remainder of this new alignment. The new alignment has 271 non-sure columns: 244 unequal first choices and 27 doubtful equal choices.
 
-## Dating correction proposed after Brice’s review
+## Dating correction proposed after Brice Dudout’s review
 
-Brice’s comment on PR 764 (https://github.com/dbourdeau/cyphersolver/pull/764#issuecomment-6955975760) proposes May–June 1821 rather than 1822, citing the Madrid mission and the reference to Apodaca. The earlier May–June 1822 argument above is retained as the history of an unconfirmed inference, not an established date. The 1822 handover date does not itself date the intercepted letter. The profile now records the year as unknown and the 1821 proposal explicitly. No new archival dating evidence was obtained, and the historical target folder name is unchanged.
+Brice Dudout’s comment on PR 764 (https://github.com/dbourdeau/cyphersolver/pull/764#issuecomment-6955975760) proposes May–June 1821 rather than 1822, citing the Madrid mission and the reference to Apodaca. The earlier May–June 1822 argument above is retained as the history of an unconfirmed inference, not an established date. The 1822 handover date does not itself date the intercepted letter. The profile now records the year as unknown and the 1821 proposal explicitly. No new archival dating evidence was obtained, and the historical target folder name is unchanged.
+
+## 19 November 2026: sure cipher words
+
+**129 word occurrences** in the Spanish reading pass a conservative test. Every cipher character and its word boundaries agree between the first and blind transcriptions. The position must also survive the settled transcription and reproduce the published word under the key. Only key values expressly described as firm in `key.txt` are counted. Capitalization is editorial. Accents must already be supported, and ñ is kept distinct from n. For example, C01 positions 6–9 give *dos* and C39 positions 12–18 give *nulidad*. C05 mechanically gives *destiepro*, so the restored *destierro* is excluded.
+
+There are 341 complete, unbracketed word proposals inside the 58 sets of guillemets in `reading.md`. Of those, a further 23 are mechanically exact using values without the explicit firm label, 12 require editorial accents, 35 lack sure agreement on signs or boundaries, one conflicts with the settled reading, one abuts an uncertain fragment edge, and 140 lack a uniquely aligned exact first-pass word. The ledger also records 17 bracketed proposed words, three word fragments and six stand-alone gap marks. Clear text contributes no words to this count. The number of cipher words in unrepresented or damaged text is unknown, and some surviving word boundaries remain unresolved. Dividing 129 by 341 would describe the editorial proposals only. The document’s `fraction_read` remains `unknown`.
+
+From the repository root run `python3 -I targets/revenga1822/second_pass/word_audit/audit.py`. The script checks both archived mechanical outputs for all 56 groups and regenerates the [word ledger](second_pass/word_audit/words.tsv), [quotation concordance](second_pass/word_audit/groups.tsv) and [counts and input hashes](second_pass/word_audit/result.json). The matching word must occupy the same place across all minimum unit-cost word alignments. The script then checks the raw signs and delimiters against the [independent transcription agreement](second_pass/agreement_positions.tsv) and against the settled sequence. Positions are one-based within the corresponding joined groups, with `ll` written as two characters. No images, dictionaries or Python packages are required.
 
 AI agents did this work; no person has checked it.
