@@ -1,6 +1,6 @@
 # R4844 (Add MS 32657 ff. 194-195, Walsingham to Wotton, the Court, 10 Sep 1585): the sign words read with sign_key.tsv
 
-Status: read in part (about 86% of the sign letters read for sense; 16 of 19 sign groups read, 3 unresolved; 19 Nov 2026, after blind sign sheet K: 13 groups certain, 3 probable, 3 unresolved).
+Status: read in part (about 86% of the sign letters read for sense; 16 of 19 sign groups read, 3 unresolved; 19 Nov 2026, after blind sign sheet K: 13 groups certain, 3 probable, 3 unresolved; 20 Nov 2026, after sheet K2: 14 certain, 2 probable, 3 unresolved).
 Key: `sign_key.tsv` (frozen before the held-out test) plus the post-measurement additions listed in its header.
 The struck-out interlinear of the time is not used. Grades: S = certain, P = probable, R = restored, I = unresolved.
 
@@ -19,7 +19,7 @@ The struck-out interlinear of the time is not used. Grades: S = certain, P = pro
 | 11 | f.194v l.4 | c TD TD d HASH EQ TD | **attempt** | S | "at the *attempt*" |
 | 12 | f.194v l.5 | (W) TD DIV c r N2 d □4 φ | **traine** | S (sheet K, 19 Nov 2026) | "ward your *traine*" |
 | 13 | f.194v l.5-6 | □ Δ MP / DIV TD f DIV MP g N2 W | **Sterling** = Stirling | S | "at *Stirling*" |
-| 14 | f.194v l.6 | DIV K DIV DIV ⊥ DIV r TD h N2 ... | **suspition** | P | "& avoyde *suspicion*" |
+| 14 | f.194v l.6 | DIV K DIV DIV EQ DIV r TD h N2 ... | **suspition** | S (sheet K2, 20 Nov 2026) | "& avoyde *suspicion*" |
 | 15 | P.S. | MP L DIV E f | **lorde** | S | "from the *Lorde*" |
 | 16 | P.S. | DIV ψ DIV L m ≡ MP d | **Scroupe** (Lord Scrope?) | S (sheet K, 19 Nov 2026) | "... *Scroupe*" |
 | 17 | P.S. | DIV f ψ DIV d c TD | **secreat** (secret) | S | "touching [his?] *secreat*" |
@@ -42,3 +42,9 @@ stroke through it), but the second is another shape (a dot, then a trait), so th
 third and fourth signs have their dot below (s), the fifth is another shape (an L with a stroke below), so suspition stays
 probable. Group 9: the sign after e is another shape (a trait with a dot above and below), so [a]bsent stays probable.
 Group 2: the fifth sign has its dot below (s); the group stays unresolved. Sure groups: 11 of 19 -> 13 of 19 (0.684).
+
+Sign sheet K2, 20 Nov 2026 (NOTES, Sign check K2): controls 2 of 2. Group 14, fifth sign: the checker now sees a plain "="
+(p) and remarks that the "L with a stroke below" of sheet K was his error: the upright is a p of the line above. The fifth
+sign is relabelled EQ (it was transcribed ⊥) and suspition becomes certain. Group 4, fourth sign: "=" (shape only; the group
+stays unresolved). Group 2, fifth sign: dot below, not dots above and below (shape only; unresolved). Sure groups: 13 of 19
+-> 14 of 19 (0.737).
