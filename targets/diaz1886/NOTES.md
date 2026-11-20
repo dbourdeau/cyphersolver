@@ -58,7 +58,7 @@ What was looked for is a reading of any of these telegrams, or a key to their co
 
 ## 6. What was used, and who did what
 - **Jacob Houtrouw** chose the target, ruled on its scope and on each rule of the work, ran the blind readers' chats, and sends this.
-- **AI models, at his direction.** `claude-fable-5-2` copied the numerals and wrote the scripts and these notes. `claude-opus-5-5`, as it named itself, made the blind second readings and, in a separate auditing session, compared the readings and checked the copy.
+- **AI models, at his direction.** `claude-fable-5-2` copied the numerals and wrote the scripts and these notes. `claude-opus-5-5`, as it named itself, made the blind second readings and, in a separate auditing session, compared the readings and checked the copy. The session that wrote these notes ran on `claude-opus-5-5` from 21:07 GMT on 20 Nov 2026, by its log; on that model it made their last changes, sealed the plan of section 7 and opened the pull request.
 - **Tools:** the Python script in `scripts/`; RFC 3161 time stamps from FreeTSA, DigiCert and Sectigo (`timestamps/`).
 - **No person has yet checked a passage against the images without AI help.**
 
