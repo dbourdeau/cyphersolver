@@ -51,7 +51,7 @@ The rule of 19 November 2026 counts sure cipher words only. A word is sure here 
 | [R4043](r4043.md) | 28 October 1538 | main, from ciphertext | 9 | 94 | 79 (0.840) | not known | 0 | not known | not known | decoded, not read |
 | [R4044](r4044.md) | 8 November 1538 | main, from ciphertext | 6 | 50 | 42 (0.840) | not known | 0 | not known | not known | decoded, not read |
 | [R4045](r4045.md) | 13 November 1538 | main, from ciphertext | 6 | 98 | 71 (0.724) | not known | 0 | not known | not known | decoded, not read |
-| [R4046](r4046.md) | 17 November 1538 | main, from ciphertext | 5 | 85 | 80 (0.941) | 15 | 7 | 8 | 0.467 | decoded, not read |
+| [R4046](r4046.md) | 17 November 1538 | main, from ciphertext | 5 | 85 | 80 (0.941) | 15 | 8 | 7 | 0.533 | decoded, not read |
 | [R4047](r4047.md) | 18 January 1539 | main, from ciphertext | 24 | 636 | 550 (0.865) | 83 | 44 | 39 | 0.530 | decoded, not read |
 | [R4048](r4048.md) | 9 February 1539 | main, from ciphertext | 4 | 61 | 53 (0.869) | 9 | 3 | 6 | 0.333 | decoded, not read |
 | [R4049](r4049.md) | 28 February 1539 | main, from ciphertext | 13 | 321 | 242 (0.754) | 39 | 12 | 27 | 0.308 | decoded, not read |
@@ -107,4 +107,4 @@ Each record page gives a summary, and where one stands, a reading in Italian and
 - **The database:** Mihály Héder and Beáta Megyesi (2022), "The DECODE Database of Historical Ciphers and Keys: Version 2", HistoCrypt, https://doi.org/10.3384/ecp188397.
 - **The transcription, the keys from ciphertext, the decode and the readings:** prabal-rje.
 
-DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published. The digit rows in `transcription/` are my own transcription of the DECODE images. No DECODE transcription file is in this folder.
+DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published. The digit rows in `transcription/` are a transcription of the DECODE images. No DECODE transcription file is in this folder.
