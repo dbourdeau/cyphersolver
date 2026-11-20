@@ -1,0 +1,19 @@
+RESULTAT P05 (20/11/2026) — plan B (gloses partielles, alignement local) — NON VALIDE
+PREREG-P05.md 0a17c250…6fec ; measure_p05.py 3c8a111c…05db (PREREG-P05.sha256, gelé 09:01 avant toute nouvelle transcription).
+Transcriptions (sous-agents aveugles Opus, SPOF_2 …/p05-work/{B,E,A}) :
+  T3 B (443-444) P05_SIGNES_T3 4b2be986…dbb4 (32 séq., 1 028 F / 192 X / 15 K) ;
+  bords P03 E P05_BORDS_P03 80527318…a66e (73 séq. : 17 gauche, 1 droite, 55 incertaine) ;
+  arbitrage A′ P05_SIGNES_FINAL d0974edb…37ec + journal P05_ARBITRAGE 0b32525f…97e8 (233 désaccords T2/T3, 78 jetons changés vs T2) ;
+  444-07 : pas de séquence chiffrée (clair) → P05_GLOSE_AJOUT vide (0b458c6c…77b3), P05_GLOSE_FINAL = P04_GLOSE_T2 (a1d9de8f…cb5e7).
+  Hachés avant mesure : P05_FINAL_AVANT_MESURE.sha256. Sortie brute : RESULTAT_P05_brut.txt (RESULTAT_P05_brut.sha256).
+Unités : 39 (doc. 97 : 21, 531 lettres, 701 F ; P03 : 18, 247 lettres, 254 F) ; total 778 lettres de glose ≥ 300 ; 955 F, 114 X, 18 K.
+Filtre T97 : 9 séquences de 443/444 exclues. Part X: 0,105 < 0,20. Plafond b/g/z 1,7 %.
+DÉCISIF : accord local K_G25 = 0,4987 ; témoins clé (2380) max 0,3123 (moy. 0,2769) ; témoins glose (2381) max 0,3201 (moy. 0,2826).
+  Critère ≥ 0,85 ET ≥ 0,3201 + 0,30 = 0,6201 → NON VALIDE.
+Non décisif : doc. 97 0,5367 (témoin clé 0,3296, glose 0,3842) ; P03 0,4170 (0,2955 / 0,3198) ; 443 0,5306 ; 444 0,5753 ; 299 0,5056 ;
+  pages P03 courtes (11-89 lettres) entre 0,18 et 0,51 ; mots ≥ 3 lettres retrouvés 0,085.
+Lecture (non décisive, sans rien changer) : K_G25 dépasse les 400 témoins (+0,18 sur le meilleur), donc un lien partiel est
+  probable, mais l'accord est très loin de 0,85 et en dessous du blanc « 30 % de jetons faux » (0,75) : soit K_G25 n'est qu'en partie
+  la clé de Niccolini (valeurs différentes pour des formes fréquentes), soit la transcription F (1272 px, 233 désaccords T2/T3 sur
+  ~1 220 jetons ≈ 19 %) est trop bruitée, soit les deux. K_G25 n'est PAS validée ; ce n'est pas une infirmation stricte.
+Portion GRILLÉE (doc. 97 443-444 et pages P03 158, 159, 161, 167, 254, 299, 300, 351). Nues 2380 NON décodées. Rien publié.
