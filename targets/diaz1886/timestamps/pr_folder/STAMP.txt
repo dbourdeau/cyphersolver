@@ -1,10 +1,10 @@
-LABEL: diaz1886_pr_folder_draft4
-Local UTC: 20261120T212302Z
+LABEL: diaz1886_pr_folder_draft5
+Local UTC: 20261120T234758Z
 Files: 34 (every file of the folder outside timestamps/pr_folder/)
-Manifest SHA-256: b3120f9d4bcd3401f05458d4e738c6b17d9fd4664a56c61880b48138680b53c9
-RFC 3161, freetsa.org: status Granted, time Nov 20 21:23:01 2026 GMT
-RFC 3161, timestamp.digicert.com: status Granted, time Nov 20 21:23:01 2026 GMT
-RFC 3161, timestamp.sectigo.com: status Granted, time Nov 20 21:23:01 2026 GMT
+Manifest SHA-256: ebf7f71854d6ca0ff066a39cbbf252626ce8b740ce796d65f445f3641521b619
+RFC 3161, freetsa.org: status Granted, time Nov 20 23:47:57 2026 GMT
+RFC 3161, timestamp.digicert.com: status Granted, time Nov 20 23:47:57 2026 GMT
+RFC 3161, timestamp.sectigo.com: status Granted, time Nov 20 23:47:57 2026 GMT
 Verify DigiCert and Sectigo: openssl ts -verify -data MANIFEST.sha256 -in MANIFEST.sha256.<authority>.tsr -CAfile <a bundle of public root certificates>
 Verify FreeTSA: the same, with -CAfile and -untrusted set to FreeTSA's own root and signing certificates, as its site publishes them
 Check the files: sha256sum -c timestamps/pr_folder/MANIFEST.sha256, run from the folder
