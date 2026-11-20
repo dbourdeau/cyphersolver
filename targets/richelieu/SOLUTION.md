@@ -42,6 +42,9 @@ Homophonic substitution, two-digit figures, with a small nomenclature.
 
   Cleartext jargon also used: *Castor* = le Roi, *Lysandre* = la Reine mère (Avenel).
 
+  The full key, with its Nov 2026 extension (41 = *que* and nine more names from Avenel's notes on the sibling letters
+  of Feb-May 1629), is `texts/key.md`; that file, not this table, is the key of record.
+
 ## Cribs that broke it (in order)
 
 1. `14 19` before/after *de, pour, bien que* → **la**.
@@ -104,6 +107,15 @@ manuscript (his accents and punctuation kept).
 - `25` for `26` in *Vautier*; `16` for `26` in *Vantelet*; `14` for `24` in *de Rome*.
 - `22` for `23`, `11` for `13` in *Champagne*; `47` for `17` in *frontière*; missing `19` in *au bois*.
 None affects the recovered alphabet.
+
+## 19-20 Nov 2026: the nine sibling letters (BnF fr. 3828, 3825, 3835)
+
+Avenel t. III prints nine more letters of Feb-May 1629 to Rancé and the Queen Mother with their figures in place
+(nos. CXIX, CXXXV, CXLVI, CXLVII, CLIII, CLIV, CLV, CLVIII, CLXVII). Under a pre-registered held-out test the fr. 3829
+key reproduces his decipherment of CLIV + CLV (0.940 against a best shuffled control of 0.456): a verification of
+Avenel and of the key, "read from existing decipherment". Strict count 352/374 cipher words (values taken from his
+notes are holes): five letters read, four read in part. Method and count: `texts/fr3828_method.md`; reading
+`texts/fr3828_reading.md`; key `texts/key.md` (Extension). The manuscripts were not seen.
 
 ## What remains
 

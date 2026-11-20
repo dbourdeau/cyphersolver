@@ -19,9 +19,9 @@ Conventions:
   *mistrese*; Avenel notes the clerk left out the a).
 - Code values taken from Avenel's note at that place rather than the key table (the 19 Nov 2026 rule counts them as
   context values): CLVIII 59 = *M. de Mantoue* twice (table: princesse Marie; Avenel: a slip of the secretary);
-  CLIV 84 = *les Anglois* / *Angleterre* (table: l'Angleterre). They are written `{x}` and listed here; our count
-  treats them as read (Avenel's printed gloss at the place, pre-registered rule); see `fr3828_method.md` for the
-  stricter count.
+  CLIV 84 = *les Anglois* / *Angleterre* (table: l'Angleterre). They are written `{x}` and listed here. Under the strict
+  count (owner's decision on #813, 19 Nov 2026) they are holes, like the ten values of the `key.md` Extension where
+  they are read (CXIX 68, 69; CXLVI 69; CLIII 55, 61, 62, 95, 96, 97; CLXVII 41, 67, 68): see `fr3828_method.md`.
 - `[d'une affaire]` in CLXVII is Avenel's own supply in the clear text ("il manque ici, dans le manuscrit, un mot").
 
 ## CXIX — fr. 3835 no. 15 (Béthune 9329 fol. 46), to Rancé, [15 (?) February 1629]

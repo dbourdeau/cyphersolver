@@ -40,7 +40,9 @@ sibling letters that Avenel prints with their figures (t. III, nos. CXIX, CXXXV,
 CLVIII, CLXVII; `fr3828_reading.md`, `fr3828_method.md`). The letter values 10–38 and the word codes 39, 40, 42 are
 unchanged. The entries below are **taken from Avenel's footnotes**, each at a place where his note glosses the figure
 and the decoded runs next to it agree with the note; none comes from the two letters held out for the test (CLIV,
-CLV). Like the earlier nomenclator entries, they rest on Avenel, not on the ciphertext alone.
+CLV). Like the earlier nomenclator entries, they rest on Avenel, not on the ciphertext alone. Under the strict count (owner's decision on
+#813, 19 Nov 2026) a value fixed from the printed decipherment of the same letters, or from context, is a hole where
+it is read: writing it here does not make the word sure (`fr3828_method.md`).
 
 | Code | Meaning | Source (Avenel t. III) |
 |---|---|---|
