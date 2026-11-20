@@ -10,6 +10,8 @@ Two readers independently transcribed the same five shuffled crops from Philip�
 | 34r, line 5, right edge | R | tae | tae, low confidence | No value assigned. Reader C allowed final *c*. |
 | 34r, line 7 | B | dide | dide | *Su Magestad*, His Majesty. |
 
+A later inspection with Daniel Bourdeau’s proposed *tac* in view favored final *c* in crop R. The Simancas reconstruction lists *tac* for prince. The earlier answers above are the frozen ones. [Image and review of the four titles](../beling_october1552/NOTES.md)
+
 The Simancas reconstruction of 1866 lists all three title codes. A contemporary gloss also supports *saa* for *duque*. In the Brussels dispatch of 23 December 1549, c. 76r, *Saa* begins a cipher run annotated *Duq octauio*. The October spelling remains uncertain. The repository’s earlier collation of the March 1549 cipher on c. 15r with its clear slip on c. 17r also reports *dide* and *quod*. [Simancas reconstruction, D/00203, no. 243](https://www.cultura.gob.es/dam/jcr:bfe499e7-ee87-4bdd-b172-d687f189a705/cifra.pdf) · [December manuscript](https://edl-jarvis.cultura.gov.it/meta/iiif/d824fd53-2d20-4daf-b854-7b654a8d0248/manifest) · [Earlier collation](../NOTES.md) · [October manuscript, 32r](https://edl-jarvis.cultura.gov.it/images/iiif/db/f4a6478c-c3af-4e7a-8800-6f41235cf2bf/full/1200,/0/default.jpg)
 
 Reader A selected the clusters and had opened excerpts from notes containing known code values. A’s reading is retained as an informed observation. B and C saw only crops, with no key or earlier reading. C worked after the registered comparison finished. The plan’s advance time estimate was two minutes late. The recorded hash time was 20:32:25 EST on 19 November. The five selected clusters give no denominator for a whole-letter reading.
