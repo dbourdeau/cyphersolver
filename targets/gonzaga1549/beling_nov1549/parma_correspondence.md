@@ -10,4 +10,6 @@ Charles V’s letter to Ferrante Gonzaga of 14 November distinguishes Camillo Or
 
 A direct test would require a duplicate of the November letter or a contemporary decipherment that can be aligned with the same sign. Druffel’s p. 337 n. 3 also cites Ferrante to Charles on 21 December about keeping the French out of Parma, with the abbreviated Vienna citation “Wien. Ital.” The entry gives a lead for that separate dispatch.
 
+Gonzaga reported Ottavio’s proposed exchange directly on 29 November. Charles’s answer survives in Modena, and Gonzaga later quoted a passage from it. [The two letters and the printed quotation](goselini_and_the_parma_letters.md)
+
 AI agents did this work; no person has checked it.
