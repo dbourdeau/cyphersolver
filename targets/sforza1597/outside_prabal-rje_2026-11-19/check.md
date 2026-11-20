@@ -27,6 +27,7 @@ In all: 5,925 of 6,590 shown letters agree (89.9%).
 
 - **A run file's key:** R5415 p1, R5416 p1, R5419 p1, R5421 p1, R5432 p1, R5439 p1, R5453 p1, R5453 p2, R5456 p1.
 - **The frozen read's table:** R5445 p1.
+- **Key not confirmed:** R5445 p1. It has, on average, under 9 signs for each label, and no key sheet and no clear passage checks its key.
 
 ## 4. Limits
 
