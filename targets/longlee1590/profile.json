@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "longlee1590",
- "title": "Longlée to Henri IV, duplicate of a dispatch from Madrid [Dec 1589 - Feb 1590]: unpublished, read in part (64.3% certain words; 88.9% with probable)",
+ "title": "Longlée to Henri IV, duplicate of a dispatch from Madrid [Dec 1589 - Feb 1590]: unpublished, read in part (63.7% certain words; 88.7% with probable)",
  "documents": [
   {
    "id": "bne-mss994-f67",
@@ -153,6 +153,18 @@
    "kind": "verification",
    "what": "Blind sign sheet J on ff. 67r-67v (DECODE R2253): nine signs whose shape decides a word, chosen by a rule written and hashed before the sheet, plus two controls (2 of 2). Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet, scored it and read one free-text remark. Eight answers named a K4 shape that makes the word, one was 'none / other shape' (Vre Mate, f. 67v, now probable). Nine tokens of transcription.txt changed, key K4 unchanged. Then the places of the 16 Nov 2026 decrypt audit still unmarked were marked {x}: du, qu'il, quant, s'attend, d'auantaige, Mate (f. 67r), chacun, demandes. Sure words only: 310/478 = 0.649 -> 308/479 = 0.643 (316/479 = 0.660 before the marking); certain + probable 0.872 -> 0.889. Still read in part.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "Blind sign sheet J2 on f. 67r (DECODE R2253), follow-up of sheet J's one reservation (the looped sign of 'Roisieux'): four omegas of the letter and two controls (2 of 2), chosen by a rule written and hashed before the sheet (sign_check/sheet-J2-rule.md). Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet, scored it and read one free-text remark. {deux}, ceulx and ceux seen as omegas; the Roisieux sign seen as its own shape, with no other omega showing the loop. One token of transcription.txt changed (f67r-13#26 -> NEW_W), key K4 unchanged. 'deux' certain, 'Roisieux' probable: sure words 308/479 = 0.643 before and after.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "reading",
+   "what": "Review of PR #820 (Daniel Bourdeau): 'prisse' (f67v-02) and 'duc' (f67r-29), certain on the first label of untested hesitation tokens {SS|S5} and {D1|S5}, marked probable; 'de' in '{Tousinet} [de] deux' (f67r-13), with no letters in decryption.txt, marked restored. Sure words only 308/479 = 0.643 -> 305/479 = 0.637; certain + probable 0.889 -> 0.887. Still read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -164,9 +176,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.643,
+  "fraction_read": 0.637,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Sure words only, over cipher words (rule of PR #728), counted on reading.md on 19 Nov 2026 after blind sign sheet J and after marking {x} the places of the decrypt audit (16 Nov 2026) where a word given as certain still differed from decryption.txt: 479 cipher words, 308 certain, 118 probable, 8 restored, 45 unresolved (estimated words per segment); 308/479 = 0.643. Certain + probable = 426/479 = 0.889. Unchanged after blind sign sheet J2 (20 Nov 2026): 'deux' became certain and 'Roisieux' probable. Before: 478 words, 310 certain, 107 probable, 8 restored, 53 unresolved; the profile then gave certain + probable, 417/478 = 0.872 (sure words only, as printed: 310/478 = 0.649; with the 12 audit places as holes about 298/478 = 0.623).",
+  "fraction_read_source": "Sure words only, over cipher words (rule of PR #728), counted on reading.md on 19 Nov 2026 after blind sign sheet J and after marking {x} the places of the decrypt audit (16 Nov 2026) where a word given as certain still differed from decryption.txt: 479 cipher words, 308 certain, 118 probable, 8 restored, 45 unresolved (estimated words per segment); 308/479 = 0.643. Certain + probable = 426/479 = 0.889. Unchanged after blind sign sheet J2 (20 Nov 2026): 'deux' became certain and 'Roisieux' probable. Review of #820 (20 Nov 2026): 'prisse' and 'duc' (first labels of untested hesitation tokens {SS|S5}, {D1|S5}) marked probable and 'de' in '{Tousinet} [de] deux' (no letters in decryption.txt) restored: 305 certain, 120 probable, 9 restored, 45 unresolved; 305/479 = 0.637; certain + probable 425/479 = 0.887. Before: 478 words, 310 certain, 107 probable, 8 restored, 53 unresolved; the profile then gave certain + probable, 417/478 = 0.872 (sure words only, as printed: 310/478 = 0.649; with the 12 audit places as holes about 298/478 = 0.623).",
   "verification": [
    "matched control",
    "historical consistency"
@@ -200,7 +212,7 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.643,
+    "read_share": 0.637,
     "summary": "Pierre de Ségusson, sieur de Longlée, the French resident at Madrid, wrote in cipher to Henry IV early in 1590. The packet was intercepted: its copy, “Dupp. d’une despesche”, is now in the Biblioteca Nacional de España, with two other letters of Longlée that the Spaniards had deciphered by Luis Valle de la Cerda. Those two letters (3 March and 1 April 1590) were edited by Albert Mousset in 1912 from the originals at the French Foreign Office; this one was not, and no contemporary decipherment accompanies the copy. We publish the reading as far as we could take it, gaps included: 88.9% of the words certain or probable, 64.3% certain (19 Nov 2026), below the 95% threshold we hold ourselves to. It shows an envoy of the Duke of Mercœur at Madrid asking that Philip II declare openly against Henry IV and seize the goods of royalist Frenchmen.",
     "reading_review": {
      "grade": "B",

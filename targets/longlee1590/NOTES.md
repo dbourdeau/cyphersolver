@@ -1,6 +1,6 @@
 # Longlée to Henri IV, duplicate of a dispatch from Madrid [December 1589 - February 1590] (BNE Mss/994, ff. 67r-67v)
 
-Status: in progress. Read in part (19 Nov 2026, after blind sign sheet J and the marking of the decrypt-audit places: 479 cipher words, 308 certain, 118 probable, 8 restored, 45 unresolved; sure words only 308/479 = 64.3%, certain + probable 88.9%; see Sign check J, 19 Nov 2026. Brice Dudout, 11 Nov 2026, after three blind re-reading plates; 478 cipher words: 310 certain, 107 probable, 8 restored, 53 unresolved (estimated); 87.2% read, below the 95% rule. 2 Nov 2026: 481 words, 86.3%).
+Status: in progress. Read in part (20 Nov 2026, after blind sign sheets J and J2, the marking of the decrypt-audit places and the review of #820: 479 cipher words, 305 certain, 120 probable, 9 restored, 45 unresolved; sure words only 305/479 = 63.7%, certain + probable 88.7%; see Review of #820, 20 Nov 2026. 19 Nov 2026: 308 certain, 118 probable, 8 restored, 45 unresolved, 308/479 = 64.3%. Brice Dudout, 11 Nov 2026, after three blind re-reading plates; 478 cipher words: 310 certain, 107 probable, 8 restored, 53 unresolved (estimated); 87.2% read, below the 95% rule. 2 Nov 2026: 481 words, 86.3%).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Published there as an explained partial reading:
 https://bdudout.github.io/europe-chiffree/en/documents.html#longlee-1590
@@ -28,7 +28,7 @@ letter against Mousset: characters 0.874 against at best 0.361 for 200 shuffled-
 
 ## Reading
 
-Partial reading, explained; unpublished to our knowledge. Rule applied: Daniel Bourdeau’s, 95% of words read for sense to publish a decipherment. On 19 Nov 2026, after blind sign sheet J and the marking of the decrypt-audit places, of 479 cipher words: 308 certain (64.3%), 118 probable (24.6%), 8 restored (1.7%), 45 unresolved (9.4%); certain + probable 426 / 479 = 88.9% (Sign check J, 19 Nov 2026). Before (count of 11 Nov 2026), of 478 cipher words: 310 certain (64.9%), 107 probable {x} (22.4%), 8 restored [x] (1.7%), 53 unresolved ‹…› (11.1%, the number of words estimated for each segment); certain + probable: 417 / 478 = 87.2% (88.9% counting the restored ones). The count of 2 Nov 2026 on the same letter was 481 words, 313 / 102 / 8 / 58 = 86.3%; the total moved from 481 to 478 because five passages are now segmented differently (`reading.md`). Below the 95% threshold: this is not a complete decipherment. Words are simply missing: each unresolved one stays visible in place, with the letters the key gives. F. 67r reads at 89.7%, f. 67v at 82.6%.
+Partial reading, explained; unpublished to our knowledge. Rule applied: Daniel Bourdeau’s, 95% of words read for sense to publish a decipherment. On 19 Nov 2026, after blind sign sheet J and the marking of the decrypt-audit places, of 479 cipher words: 308 certain (64.3%), 118 probable (24.6%), 8 restored (1.7%), 45 unresolved (9.4%); certain + probable 426 / 479 = 88.9% (Sign check J, 19 Nov 2026). Before (count of 11 Nov 2026), of 478 cipher words: 310 certain (64.9%), 107 probable {x} (22.4%), 8 restored [x] (1.7%), 53 unresolved ‹…› (11.1%, the number of words estimated for each segment); certain + probable: 417 / 478 = 87.2% (88.9% counting the restored ones). The count of 2 Nov 2026 on the same letter was 481 words, 313 / 102 / 8 / 58 = 86.3%; the total moved from 481 to 478 because five passages are now segmented differently (`reading.md`). Below the 95% threshold: this is not a complete decipherment. Words are simply missing: each unresolved one stays visible in place, with the letters the key gives. F. 67r reads at 89.7%, f. 67v at 82.6% (11 Nov 2026). On 20 Nov 2026, after the review of #820 (prisse and duc probable, [de] restored): 305 certain (63.7%), 120 probable, 9 restored, 45 unresolved; certain + probable 425 / 479 = 88.7%; f. 67r 91.0%, f. 67v 84.5%.
 Files: `transcription.txt` (sign labels), `decryption.txt` (K4, mechanical), `reading.md` (French, tagged, with the
 count), `translation.md` (English summary), `key_K4.tsv`, `validation.txt`, `BLIND-REREADING.md` (the plates of 11 Nov 2026).
 
@@ -92,7 +92,7 @@ decrypt is `decryption.txt`; the 12 places are in this section), and one note li
 **Marked on 19 Nov 2026 (contributor).** After blind sign sheet J (Sign check J, 19 Nov 2026), the contributor marks the places still unmarked, so that the sure-word count is honest. Of the 12 places: Roisieu and l'argent are now read from the key with no emendation (sheet J: Roisieux, l'argent), and "Vre Mate" on f. 67v is {Vre} {Mate} (sheet J, answer "none / other shape"). The other nine: `partdeduc` {du}, `quelieust` {qu'il}, `accorderhquant` {quant}, `sattendeici` {s'attend}, `dauentaige` {d'auantaige}, `aurematcequi` Vre {Mate}, `chacung` {chacun}, `demandees` {demandes}; `uoulueentendre` needs no new mark, since the extra e sits in {uoulu}, already probable, and "entendre" is read from the key. The first five were looked at for sheet J and left out of it: their sign is clear, so the emendation stays an emendation. That is 8 words moved from certain to probable; certain + probable does not change.
 
 ## Remaining gaps
-- 45 words in unresolved segments (19 Nov 2026; 53 on 11 Nov), mostly f. 67v (f. 67v is 84.5% read, f. 67r 91.3%, certain + probable) - blocker: illegible; hesitant or look-alike sign shapes (Ω, 9 and ϱ; small attached loops) in the only images used, the DECODE study images R2253 views 4 and 5. The validated key is not at fault.
+- 45 words in unresolved segments (19 and 20 Nov 2026; 53 on 11 Nov), mostly f. 67v (f. 67v is 84.5% read, f. 67r 91.0%, certain + probable, 20 Nov 2026) - blocker: illegible; hesitant or look-alike sign shapes (Ω, 9 and ϱ; small attached loops) in the only images used, the DECODE study images R2253 views 4 and 5. The validated key is not at fault.
 
 ## Escalation
 - [x] siblings: the two other letters of the piece (ff. 64-65v, 1 April 1590; ff. 68-69, 3 March 1590) are edited by Mousset (1912) and were used to calibrate and validate the key
@@ -100,7 +100,7 @@ decrypt is `decryption.txt`; the 12 places are in this section), and one note li
 - [x] known-keys: Mousset's printed table (K0) and the keys K1-K3 were tried; K1-K3 failed validation and K4 was adopted
 - [x] print: Mousset 1912 (nothing for 15 Oct 1588 - 3 Mar 1590), Cryptiana, Ruble and the Calendar of State Papers, Foreign 1589-1596 (not read page by page) checked; nothing found
 - [x] key-rebuild: Mousset's table recalibrated on the hand of these copies (K4), validated at 0.874 of characters on a reserved portion of the 1 April letter
-- [ ] retry: two plates of doubtful signs were re-read on 2 November 2026 and the letter re-decoded with K4 unchanged (85.8% to 86.3%); three more blind plates on 11 November 2026 (FL2-L, TS/LS A+B, crossed o = OX), K4 unchanged (86.3% to 87.2%). Not tried: a sharper scan of ff. 67r-67v (BNE Digital was not checked), which could resolve the remaining shapes; blind sign sheet J on 19 November 2026 (9 signs, controls 2 of 2), K4 unchanged (87.2% to 88.9% certain + probable)
+- [ ] retry: two plates of doubtful signs were re-read on 2 November 2026 and the letter re-decoded with K4 unchanged (85.8% to 86.3%); three more blind plates on 11 November 2026 (FL2-L, TS/LS A+B, crossed o = OX), K4 unchanged (86.3% to 87.2%). Not tried: a sharper scan of ff. 67r-67v (BNE Digital was not checked), which could resolve the remaining shapes; blind sign sheet J on 19 November 2026 (9 signs, controls 2 of 2), K4 unchanged (87.2% to 88.9% certain + probable); blind sign sheet J2 on 20 November 2026 (4 omegas, controls 2 of 2), K4 unchanged (88.9%, then 88.7% after the review of #820)
 
 ## Re-reading of 11 November 2026 (Brice Dudout)
 Follow-up to PR #212. Three blind plates of sign shapes on the DECODE images (no value or gloss shown, controls from the
@@ -202,3 +202,16 @@ elsewhere). Key K4 unchanged. Count on `reading.md` (sure words only, rule of #7
 certain + probable 426/479 = 88.9%. Still read in part. With sheet J: 4 controls passed of 4, 13 target signs.
 
 **Limits.** As for sheet J: one checker inside the project, few controls, signs chosen because doubtful. Not a `human_check`.
+
+## Review of #820, 20 Nov 2026
+
+Three conservative marks, as asked in the review of PR #820 (Daniel Bourdeau, 20 Nov 2026); no token, sign or key value
+changed.
+- "prisse" (f67v-02, token {SS|S5}) and "duc" (f67r-29, token {D1|S5}, "{le} {duc} de Portugal") were certain, though each
+  stands on the first label of a hesitation token that no sheet has tested. They are now probable.
+- "{Tousinet} [de] deux" (f67r-13): `decryption.txt` gives "…tousinetdeuxoutrois…", with no letters for "de". The word is
+  now restored, as in `reading.md`.
+
+Count on `reading.md` (sure words only, rule of #728): 308/479 = 64.3% -> **305/479 = 63.7%** (f. 67r 203/311, f. 67v
+102/168); probable 118 -> 120, restored 8 -> 9, unresolved 45; certain + probable 426/479 = 88.9% -> 425/479 = 88.7%.
+Still read in part.
