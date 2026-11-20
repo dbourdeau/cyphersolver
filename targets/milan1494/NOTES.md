@@ -117,6 +117,14 @@ As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MA
 - Shuffle control (5,000 at seeds 20261112 and 7): doc 42 0 and 0, doc 81 0 and 1; docs 49 and 90 fail (14/10, 158/139).
 - Doc 42 decodes in part ("el re di Francia ... dal governo [22] ... e apto ad governare lui per non"), which suggests the 1494 sheet is close to the 1492-93 key but differs in some signs. A key from Niccolini's glossed letters was not built.
 
+## Gabbrielli key no. 25 on Niccolini's glossed letters (14-20 Nov 2026, Brice Dudout with Claude): attempted, not read
+
+Brice Dudout tested key no. 25 of Gabbrielli's *Chiavi delle cifre ... Dieci di Balìa*, vol. 1 ("an. 1492, Alamannis (de) Petrus", filza 39; Ilardi microfilm reel 58, Yale Dataverse doi:10.60600/YU/XKVOWE). The key was transcribed twice, the second pass blind, and frozen as K_G25. It was then tested against the contemporary interlinear glosses of Niccolini's letters in MAP LXXIV, in four pre-registered stages. Files, hashes and scripts are in `niccolini/gabbrielli25/README.md`. All transcriptions are blind passes by AI agents with neutral labels F01-F39, and no person has checked them.
+
+- P02 (doc. 78, pos. 329-331), P03 (pos. 158, 159, 161, 167, 351, 254, 300, 299) and P04 (doc. 97, pos. 443-444): not measurable. Too few signs sit under a complete gloss (15, 86 and 0 F signs, against a floor of 300). Nothing was decoded.
+- P05 (plan B: partial glosses, local alignment, 39 runs, 778 gloss letters): 0.4987 against a bar of 0.85. Best key control 0.3123, best gloss control 0.3201 (200 each). Failed. K_G25 beats every control, so it is probably related to Niccolini's cipher, but it is not his key as it stands, or the 1272 px transcriptions are too noisy (19% T2/T3 disagreement), or both.
+- K_G25 was not applied to the bare passages, and no decoding of catalogue 2380 is presented. Malcolm McBratney's blind transcriptions in `niccolini/blind/` were not used.
+
 ## Remaining gaps
 
 - 32 + 17 words chosen by sense and 54 + 12 forced words still rest on ambiguous signs (signs not sorted with confidence; b, 6 and others at 1272 px) - blocker: none yet; the shape sorts of ÷ and d/l were one pass each by agents that had the labels, and nobody has re-sorted them blind; doc. 114 is used up as a test (failed, 0.838 against 0.85) and Ridolfi's glossed letters 101-110 have not been used
@@ -128,6 +136,7 @@ As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MA
 - The clear text of the four letters was read from the same images and not collated - blocker: none yet
 - Higher-resolution images - blocker: needs-physical-access; the ASF server serves 1272 px at most
 - Niccolini 2380 (docs 42, 49, 81, 90) attempted, not read with the 1494 key (`niccolini/README.md`) - blocker: not-attempted: a key from Niccolini's own glossed letters of 1492-93 in this filza (docs 6, 21, 32, 35-37, 59, 62, 72, 78, 81 c. 176r, 97), then a declared second pass on docs 42 and 81; docs 49 and 90 are too short for the shuffle control.
+- Gabbrielli key no. 25 (K_G25, Alamanni 1492) on Niccolini's glossed letters: failed (P05 0.4987 against 0.85; `niccolini/gabbrielli25/README.md`); doc. 97 pos. 443-444 and pos. 158, 159, 161, 167, 254, 299, 300, 351 are used up - blocker: not-attempted: Dieci di Balìa, Responsive, filza 39 (not online) and higher-resolution images; K_G25 not compared sign by sign with `aaymeloglu/key.json`
 
 ## Escalation
 
@@ -151,3 +160,4 @@ As agreed on issue #589, the four bare cipher passages of Angelo Niccolini in MA
 | `aaymeloglu/README_aaymeloglu.md`, `aaymeloglu/AUDIT.md`, `aaymeloglu/audit/` | the contributor's account, the history of the work and the second model's review |
 | `aaymeloglu/own_decode.py` | the project's decoder and count |
 | `alamanni_en.md` | the project's full English of Alamanni's letter (14 Nov 2026) |
+| `niccolini/gabbrielli25/` | Gabbrielli key no. 25 frozen as K_G25, the blind transcriptions of the glossed letters, PREREGs P02-P05 with hashes and scripts, and the results (failed) |

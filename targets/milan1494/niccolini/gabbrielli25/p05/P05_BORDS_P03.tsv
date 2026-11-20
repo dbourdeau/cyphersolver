@@ -1,0 +1,78 @@
+# P05 — marquage des bords de glose (P03), marqueur aveugle E, 2026-11-20
+# Méthode : repérage de chaque segment sur l image (profil d encre par ligne + recadrages PIL Lanczos x2.2-x5 + autocontraste, dans crops/), comparaison des abscisses du 1er/dernier signe du segment et du 1er/dernier mot lisible de la glose. Aucun signe ni glose modifié, aucun déchiffrement.
+# Règle stricte : gauche/droite seulement si le mot de glose recouvre le signe de bord ; décalage d un signe ou plus, mot de bord illisible, ou glose au-dessus d une autre partie => incertaine. Si les deux bords coïncident => gauche.
+# Remarque : sur 299 et 158 la glose commence souvent ~1 signe à droite du 1er signe ; ces cas sont marqués incertaine. Ordre des lignes = LISTE_A_MARQUER.tsv.
+id	bord	remarque
+158-17-1	gauche	« che » (boucle du c) au-dessus du 1er signe H
+158-18-1	incertaine	1er mot lisible « fusse » au-dessus du 3e signe ; « magno » finit ~3 signes avant π
+158-18-2	incertaine	« francia » commence avant le 1er signe ∂ (au-dessus de r̃c) ; trait jusqu'à la fin
+158-19-1	gauche	signe unique H : la glose « [?]k » commence au-dessus de H
+158-19-2	incertaine	glose commence juste après le 1er signe a (au-dessus du 2e) ; trait jusqu'à la fin
+158-20-1	incertaine	« uomini » au-dessus des signes 4-6 ; à droite seulement un trait, rien de lisible
+158-21-2	incertaine	glose surtout au-dessus du segment précédent ; « uno » finit au-dessus du 1er-2e signe
+158-21-3	incertaine	glose commence avant B (au-dessus du segment 2) ; fin faible + trait
+158-22-1	incertaine	« da » au-dessus du 4e-5e signe ; « governo » finit avant ttt
+158-22-2	incertaine	1er mot visible au-dessus du 3e signe ; dernier mot ~3 signes avant la fin
+158-23-1	incertaine	« che » au-dessus des signes 3-4 ; « abati » finit avant h H
+158-24-1	incertaine	glose très pâle ; 1er élément au-dessus des signes 3-4 ; fin illisible
+158-26-1	incertaine	glose pâle commence vers le 2e-4e signe ; dernier mot lisible « se » au milieu, illisible au-delà
+158-27-1	gauche	mot partiellement lisible « [?]ben » commence au-dessus de ∂/ʒ (1er-2e signe) ; « uccisi » finit au milieu
+158-30-1	gauche	« quello » commence au-dessus du 1er signe (H, après « apu ») ; glose déborde à droite
+158-31-1	incertaine	« et » au-dessus de 11 (4e signe), « periculo » finit au-dessus de 6, ~8 signes avant la fin
+159-01-1	incertaine	« no » au-dessus du 2e signe (π) ; glose finit bien avant la fin du segment
+159-01-2	incertaine	glose commence au-dessus de « vedendo » (avant le segment) ; derniers éléments illisibles
+159-02-1	incertaine	« [?]ra » commence au-dessus du 2e signe ; « lunga » finit ~2 signes avant la fin
+159-03-1	incertaine	« sollevar » commence au-dessus du 2e signe (après L) ; finit ~4 signes avant la fin
+159-04-1	gauche	« luogo » commence au-dessus de o6 (1er signe)
+159-04-2	incertaine	glose commence au-dessus des signes 4-5 ; trait seul à droite
+159-05-1	incertaine	« meno » au-dessus du 3e signe ; glose finit ~ au milieu de la ligne, segment continue jusqu'à 100
+159-07-1	incertaine	« piglino » au-dessus des signes 3-5 ; « re » au-dessus de 100, pas du dernier 9
+159-08-1	incertaine	1er mot lisible « francia » au-dessus des signes 3-5 ; finit avant 6 c o p
+161-17-1	incertaine	« del » au-dessus du 3e signe (b) ; « governar » finit bien avant la fin
+161-18-1	gauche	« tu » au-dessus de E (1er signe)
+161-19-1	incertaine	« Le » au-dessus du 3e signe (6) ; « nuova » au milieu puis trait
+161-20-1	incertaine	« o » au-dessus du 2e-3e signe ; « romano » finit à mi-ligne
+161-21-1	incertaine	« et » au-dessus du 3e-4e signe ; trait jusqu'à la fin
+161-23-1	incertaine	« apprezzare » au-dessus du 2e signe (trait seul au-dessus du 1er) ; glose finit avant e 6 ⊙ 9
+161-26-1	incertaine	1er élément (illisible) au-dessus de π (2e signe) ; « Galeazzo » au milieu
+167-04-1	incertaine	1er mot lisible « ho » au-dessus du 2e-3e signe (trace illisible au-dessus du 1er) ; fin avant 11÷ʃ
+167-05-1	incertaine	glose commence ~2 signes après le 1er signe ; fin de glose loin avant la fin du chiffré
+167-07-1	incertaine	glose commence après K:ttt (au-dessus du 2e-3e signe) ; fin non alignée
+167-10-1	incertaine	glose commence au-dessus du 3e-4e signe ; fin au milieu
+167-10-2	gauche	« sei » au-dessus de L/6 en tête ; fin avant π x
+167-11-1	incertaine	glose commence au-dessus du 3e signe
+351-19-1	gauche	« arigliano » commence au ras du 1er signe (léger décalage) ; finit au milieu
+351-19-2	incertaine	glose commence au-dessus du 2e signe ; finit loin avant ttt
+351-20-2	incertaine	glose commence vers le 4e signe ; finit au milieu
+351-21-1	gauche	« intratenere » au-dessus du 1er signe (après ÷) ; finit au milieu
+351-22-1	incertaine	glose commence au-dessus du 2e signe ; finit avant ttt
+351-28-1	incertaine	glose « cardinale » au-dessus de la fin de la ligne 27, pas au-dessus du chiffré de la l.28
+254-03-1	gauche	« m.r » au-dessus de ttt ; « Galeazo » finit au-dessus de M (2 bords)
+254-08-1	incertaine	début ~ 2e-3e signe (trait ambigu au-dessus du 1er) ; glose déborde à droite sur « et »
+254-08-2	incertaine	glose « mot. dis. governo » à droite/au-dessous du segment, pas au-dessus
+254-15-1	gauche	« el/et » au-dessus du 1er signe 5 ; « reputatione » finit au milieu
+300-11-1	droite	« nõs » finit au-dessus du dernier ÷π ; « tu » juste à droite de E (gauche douteux)
+300-28-1	incertaine	« molto » au-dessus des signes 3-4 seulement
+299-15-1	incertaine	« nor » au-dessus du 2e-3e signe ; finit au milieu
+299-16-1	incertaine	glose au-dessus des signes 3-6
+299-16-2	gauche	« immenso » commence au-dessus du 1er signe ; finit au milieu
+299-18-2	incertaine	glose décalée d'~1 signe à droite aux deux bords
+299-19-1	incertaine	« nõ » au-dessus du 2e signe ; trait seul ensuite
+299-20-1	incertaine	« apprendere » au-dessus du 2e-3e signe ; finit au milieu
+299-21-1	incertaine	« ch » illisible/non transcrit au-dessus du 1er signe, « una » au 3e ; fin au milieu
+299-22-1	incertaine	glose commence au 2e-3e signe ; trait jusqu'à la fin
+299-23-1	incertaine	« et » au-dessus du 2e signe (π)
+299-24-1	incertaine	« L'amor » au 2e-3e signe (crochet au-dessus du 1er)
+299-25-1	gauche	« era » chevauche le 1er signe m ; fin + trait
+299-26-1	incertaine	« deffenderlo » au-dessus du 2e signe
+299-26-2	incertaine	« maligno » commence juste après le 1er signe x
+299-27-1	incertaine	« piggior » au-dessus du 2e signe
+299-28-2	incertaine	« usar » commence avant le 1er signe (au-dessus du texte clair)
+299-29-1	gauche	« farei » au-dessus de n (1er signe)
+299-30-1	incertaine	glose commence au 2e signe
+299-31-1	incertaine	glose au-dessus des signes du milieu
+299-31-2	incertaine	mot unique décalé à gauche (commence au-dessus du clair)
+299-32-1	gauche	« di » au-dessus de m (1er signe) ; « cosa » + trait
+299-37-2	incertaine	« dar » au-dessus de ʒ (3e signe, après 66) ; finit au milieu
+299-38-1	gauche	« als. » au-dessus du 1er signe
+299-38-2	gauche	« uogla » chevauche le 1er signe ; queue jusqu'à c
