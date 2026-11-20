@@ -77,26 +77,32 @@ Read share over cipher words only (README Conventions, 16 and 19 Nov 2026; `fr38
 Avenel's printed decipherment of the same letters, or from context, is a hole at the place where it is counted; values
 written in `key.md` after the fact do not make it sure. So the ten values of the Extension (41, 55, 61, 62, 67, 68, 69,
 95, 96, 97), 59 read "M. de Mantoue" in CLVIII and 84 read "les Anglois" in CLIV are holes, written `{x}` in
-`word_count.tsv`.
+`word_count.tsv`. So are the base codes 54 (Monsieur), 59 (princesse Marie) and 60 (Mme de Longueville) (20 Nov 2026,
+owner's question on #813): they do not occur in ff. 87, 89, and their values are glossed in Avenel's notes to these
+nine letters (59 and 60 only there, 54 also once in 1630); see `key.md`, "Where each base code comes from".
 
 | Letter | Read / cipher words | Share | Holes | Class |
 |---|---|---|---|---|
 | CXIX | 49/51 | 0.961 | 2 | read |
-| CXXXV | 24/24 | 1.000 | 0 | read |
-| CXLVI | 44/45 | 0.978 | 1 | read |
-| CXLVII | 14/15 | 0.933 | 1 | read by the floor for < 40 words (`floor_used`, 15 cipher words, 1 hole) |
+| CXXXV | 19/24 | 0.792 | 5 | read in part |
+| CXLVI | 42/45 | 0.933 | 3 | read in part |
+| CXLVII | 13/15 | 0.867 | 2 | read by the floor for < 40 words (`floor_used`, 15 cipher words, 2 holes) |
 | CLIII | 48/55 | 0.873 | 7 | read in part |
-| CLIV | 46/49 | 0.939 | 3 | read in part |
+| CLIV | 45/49 | 0.918 | 4 | read in part |
 | CLV | 54/56 | 0.964 | 2 | read |
-| CLVIII | 42/45 | 0.933 | 3 | read in part |
-| CLXVII | 31/34 | 0.912 | 3 | read in part (over the floor of 2) |
-| **Total** | **352/374** | **0.941** | 22 | |
+| CLVIII | 41/45 | 0.911 | 4 | read in part |
+| CLXVII | 26/34 | 0.765 | 8 | read in part |
+| **Total** | **337/374** | **0.901** | 37 | |
 
 The holes: CXLVII *septembre* (last figure 29 = a); CLIII, CLIV, CLV twice *le 20 mai* (20 = d in the key, read as
 the number, as Avenel says); CLV *veuille* (figures *veule*); CLVIII *maistresse* (figures *mistrese*); the Extension
 values where they are read (CXIX 68, 69; CXLVI 69; CLIII 55, 61, 62, 95, 96, 97; CLXVII 41, 67, 68); CLVIII 59 twice
 (*M. de Mantoue*, against *princesse Marie* in the table); CLIV 84 twice (*les Anglois*, *mal aus Anglois*, Avenel
-nn. 10, 11).
+nn. 10, 11); the base codes 54, 59, 60 wherever they occur (15 words: CXXXV 54, 59, 60 ×3; CXLVI 54 ×2;
+CXLVII 54; CLIV 54; CLVIII 54; CLXVII 54 ×2, 59 ×2, 60).
+
+The strict count filed on 20 Nov 2026 before the base codes were traced (352/374 = 0.941, five letters read) is
+replaced by this one.
 
 The count filed first (19 Nov 2026) took the values fixed from Avenel's note at the place as read, as pre-registered:
 368/374 (0.984), all nine letters read. It is replaced by the strict count above; the measure itself (0.940) is not
