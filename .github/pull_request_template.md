@@ -21,6 +21,8 @@ A mechanical decryption is not a reading (George Lasry, 22 Oct 2026). For each d
 ```
 
 - [ ] The reading was checked against the images, and the tools used (AI included) are named in NOTES.md.
+- [ ] Every doubtful sign is listed in NOTES.md `## Transcription doubts` with what settled it: the enlarged image
+      (no overlay), the decoded text, and an independent transcription where one exists (or `- none: <why>`).
 
 - [ ] If the key is recovered but the text does not read yet, the method says how the key was obtained and the documents are marked "decoded, not read" (that is a fine state to submit). To go further: let a model complete nomenclator entries and split the decryption into text, check where it stops making sense against the images, fix the transcription or key, repeat (CONTRIBUTING, "From a key to a reading")
 
