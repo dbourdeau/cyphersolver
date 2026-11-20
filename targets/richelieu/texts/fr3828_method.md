@@ -73,30 +73,37 @@ measure: letter values and word codes unchanged; a nomenclator figure gets a val
 at that place and the decoded runs beside it agree; nothing taken from CLIV or CLV (`key.md`, "Extension").
 
 Read share over cipher words only (README Conventions, 16 and 19 Nov 2026; `fr3828_measure/count_words.py` on
-`word_count.tsv`): a code is one word; a figure valued by Avenel's note at that very place is counted as read (his
-printed decipherment), as pre-registered.
+`word_count.tsv`): a code is one word. **Strict count** (owner's decision on #813, 19 Nov 2026): a code value fixed from
+Avenel's printed decipherment of the same letters, or from context, is a hole at the place where it is counted; values
+written in `key.md` after the fact do not make it sure. So the ten values of the Extension (41, 55, 61, 62, 67, 68, 69,
+95, 96, 97), 59 read "M. de Mantoue" in CLVIII and 84 read "les Anglois" in CLIV are holes, written `{x}` in
+`word_count.tsv`.
 
 | Letter | Read / cipher words | Share | Holes | Class |
 |---|---|---|---|---|
-| CXIX | 51/51 | 1.000 | 0 | read |
+| CXIX | 49/51 | 0.961 | 2 | read |
 | CXXXV | 24/24 | 1.000 | 0 | read |
-| CXLVI | 45/45 | 1.000 | 0 | read |
-| CXLVII | 14/15 | 0.933 | 1 | read by the floor for < 40 words (1 hole); recorded "read in part" in `profile.json` because `docs/_texts.py` does not apply the floor yet |
-| CLIII | 54/55 | 0.982 | 1 | read |
-| CLIV | 48/49 | 0.980 | 1 | read |
+| CXLVI | 44/45 | 0.978 | 1 | read |
+| CXLVII | 14/15 | 0.933 | 1 | read by the floor for < 40 words (`floor_used`, 15 cipher words, 1 hole) |
+| CLIII | 48/55 | 0.873 | 7 | read in part |
+| CLIV | 46/49 | 0.939 | 3 | read in part |
 | CLV | 54/56 | 0.964 | 2 | read |
-| CLVIII | 44/45 | 0.978 | 1 | read |
-| CLXVII | 34/34 | 1.000 | 0 | read |
-| **Total** | **368/374** | **0.984** | 6 | |
+| CLVIII | 42/45 | 0.933 | 3 | read in part |
+| CLXVII | 31/34 | 0.912 | 3 | read in part (over the floor of 2) |
+| **Total** | **352/374** | **0.941** | 22 | |
 
-The six holes: CXLVII *septembre* (last figure 29 = a); CLIII, CLIV, CLV twice *le 20 mai* (20 = d in the key, read
-as the number, as Avenel says); CLV *veuille* (figures *veule*); CLVIII *maistresse* (figures *mistrese*).
+The holes: CXLVII *septembre* (last figure 29 = a); CLIII, CLIV, CLV twice *le 20 mai* (20 = d in the key, read as
+the number, as Avenel says); CLV *veuille* (figures *veule*); CLVIII *maistresse* (figures *mistrese*); the Extension
+values where they are read (CXIX 68, 69; CXLVI 69; CLIII 55, 61, 62, 95, 96, 97; CLXVII 41, 67, 68); CLVIII 59 twice
+(*M. de Mantoue*, against *princesse Marie* in the table); CLIV 84 twice (*les Anglois*, *mal aus Anglois*, Avenel
+nn. 10, 11).
 
-**Stricter count.** If only the figures of Daniel's table count as read (no value taken from Avenel's notes, i.e.
-without the extension and the two context readings of 59 in CLVIII): CXIX 49/51 (0.961), CXLVI 44/45 (0.978),
-CLIII 48/55 (0.873), CLVIII 42/45 (0.933), CLXVII 31/34 (0.912, 3 holes, over the floor); the others unchanged.
-CLIII and CLXVII then fall to "read in part". Under the 19 Nov 2026 rule a reviewer may also count CLVIII's two 59s
-(glossed "M. de Mantoue" against the table's "princesse Marie") as holes: 42/45, read in part.
+The count filed first (19 Nov 2026) took the values fixed from Avenel's note at the place as read, as pre-registered:
+368/374 (0.984), all nine letters read. It is replaced by the strict count above; the measure itself (0.940) is not
+affected, since it uses the letter values 10-38 only.
+
+The plaintext of these nine letters is Avenel's printed decipherment, checked with the key: "read from existing
+decipherment" in George Lasry's categories (`profile.json`, `outcome.parts`).
 
 ## What the key adds to Avenel
 
@@ -108,7 +115,7 @@ CLIII and CLXVII then fall to "read in part". Under the 19 Nov 2026 rule a revie
   the clerk's slip).
 - Three usages not in the fr. 3829 key: 40 used as the syllable *de/dé* inside words; 20 used as the number in
   "le 20 mai"; 59 glossed "M. de Mantoue" in CLVIII against "princesse Marie" elsewhere (left unsettled).
-- Ten values: 41 que and nine names (`key.md`).
+- Ten values: 41 que and nine names (`key.md`), from Avenel's notes; holes in the strict count.
 
 ## Limits
 
