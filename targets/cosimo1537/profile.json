@@ -32,7 +32,7 @@
   },
   {
    "id": "R4035",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1 (DECODE R4035, image name 214_1_05)",
    "date": "24 December 1537",
    "year": 1537,
@@ -86,7 +86,7 @@
   },
   {
    "id": "R4037",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1 (DECODE R4037, image name 214_1_23)",
    "date": "16 February 1538",
    "year": 1538,
@@ -113,7 +113,7 @@
   },
   {
    "id": "R4038",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1 (DECODE R4038, image name 214_1_28)",
    "date": "4 March 1538",
    "year": 1538,
@@ -577,7 +577,7 @@
    "language models, not named at the contributor's request"
   ],
   "first_date": "2026-11-13",
-  "last_date": "2026-11-19"
+  "last_date": "2026-11-20"
  },
  "solution": [
   {
@@ -651,29 +651,38 @@
    ],
    "what": "Readings in sentences of R4034 to R4038, from the decode, with an English translation; every letter that the key does not give is marked. 446 cipher words, 346 sure, 100 holes (295 sure if code 29 is a hole); 2 of 21 sentences and fragments have at most one hole in ten words.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Integration review of PR #822 (AI agent, for the maintainers; not a person). A decoder written by the reviewer from key/key-table-R4033.tsv and the digit rows reproduces the 78 decode rows of R4034 to R4038 (1,791 code tokens: 1,667 with a value from the table, 70 on code 29, 17 on a code the key does not hold, 37 doubtful). An own alignment of the five readings with the decode finds no unmarked departure and recounts the cipher words as the contributor gives them. All 70 tokens of code 29 fall on an unchanged t of the readings; the contributor's public key file of 19 Nov 2026 14:05 UTC is byte-identical to key/key-earlier-blind.tsv and holds 29 = t. Read as sentences: R4035, R4037 and R4038 build coherent Italian (reading review grade B, read in part: 26 of 29, 201 of 243 and 41 of 50 cipher words sure); R4034 does so only in passages 4, 6 and 8 and R4036 does not, and both stay decoded, not read. The digit rows and the key table were not checked against the DECODE images.",
+   "result": "partial"
   }
  ],
  "outcome": {
-  "class": "not read",
+  "class": "read in part",
   "key": "partial",
-  "method": "key recovered from ciphertext-only",
+  "method": "read with known key",
   "parts": [
+   {
+    "label": "The earlier system, with the archive's key table",
+    "records": "R4034 to R4038",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "The archive's key table R4033, as the contributor read it, with code 29 = t from ciphertext (the table shows 29 only barred, as a word sign); 1,737 of 1,791 code tokens get a value with no doubt, 1,667 of them from the table. R4035, R4037 and R4038 are read in part (26 of 29, 201 of 243 and 41 of 50 cipher words sure; reading review of 20 Nov 2026, a model's reading); R4034 (77 of 112) and R4036 (1 of 12) are decoded, not read."
+   },
    {
     "label": "The main system, from ciphertext",
     "records": "R4039, R4041 to R4050, R4052 to R4054",
     "method": "key recovered from ciphertext-only",
     "extent": "none",
     "basis": "Key and cut from the cipher text alone, fixed 16 Nov 2026; 4,442 of 5,051 code tokens get a value; not checked against a key; the documents are decoded, not read."
-   },
-   {
-    "label": "The earlier system, with the archive's key table",
-    "records": "R4034 to R4038",
-    "method": "read with known key",
-    "extent": "none",
-    "basis": "The archive's key table R4033, as I read it, with code 29 = t from ciphertext (the table shows 29 only barred, as a word sign); 1,737 of 1,791 code tokens get a value with no doubt, 1,667 of them from the table; readings in sentences of the five letters, 446 cipher words, 346 sure; the documents are decoded, not read."
    }
   ],
-  "method_basis": "The main key was found from the cipher text alone, with the cut; the archive's key table does not serve the main system. The earlier letters are decoded with the archive's key table.",
+  "method_basis": "The only text of the folder that reads is R4035, R4037 and R4038, read in part with the archive's key table (DECODE R4033, as the contributor read it) and one value from ciphertext, code 29 = t; so the method is named from that part. The main key (14 letters) was found from the cipher text alone, with the cut; the archive's table does not serve it, and its documents are decoded, not read (second part: key obtained, text not read).",
   "contribution": [
    "transcription",
    "key recovered",
@@ -682,6 +691,9 @@
   "codes_open": {
    "tokens_open": 609
   },
+  "fraction_read": 0.194,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Unit: code tokens of the cut, recounted 20 Nov 2026 from the codes lines of the 19 record pages: 6,842 (1,791 earlier system, 5,051 main system). Only the documents that build sentences count (R4035, R4037, R4038): 133 + 970 + 224 = 1,327 of their 1,349 tokens have a value with no doubt (121 + 912 + 224 from the archive's table, 12 + 58 on code 29 = t from ciphertext); 1,327 / 6,842 = 0.194. By cipher words in those three letters: 26 + 201 + 41 = 268 of 322 sure (0.832). The other 16 documents are decoded, not read, and count as 0.",
   "verification": [
    "historical consistency"
   ],
@@ -697,9 +709,14 @@
     "who": "prabal",
     "role": "solution",
     "date": "2026-11-16",
-    "note": "the main key from ciphertext, the frozen read, the decode with the archive's key table, the readings and the checks; the documents are marked decoded, not read",
+    "note": "the main key from ciphertext, the frozen read, the decode with the archive's key table, the readings and the checks; filed with every document marked decoded, not read",
     "source": "https://github.com/prabal-rje/branicki-1757/tree/main/cosimo-1537",
     "published": true
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the archive's key table of the time, DECODE record R4033, applied to R4034 to R4038 in the contributor's reading of it"
    },
    {
     "who": "bourdeau",
@@ -730,7 +747,33 @@
    },
    {
     "item": "holes in most sentences of the readings",
-    "blocker": "not-attempted"
+    "blocker": "not-attempted",
+    "detail": "a reading pass against the images may close some; the 14 letters of the main system, R4034 and R4036 are decoded, not read"
+   },
+   {
+    "item": "R4034 builds sentences only in passages 4, 6 and 8",
+    "blocker": "not-attempted",
+    "detail": "77 of 112 cipher words sure; passages 1, 2, 5 and 7 are two to six cipher words each and passage 3 does not read; rows L10, L12, L14 and L26 are lines of clear text with cipher inside, and the clear words are not in the folder"
+   },
+   {
+    "item": "R4036 gives no sure sense",
+    "blocker": "too-short",
+    "detail": "two rows, 35 code tokens, 4 of them doubtful; 1 of 12 cipher words sure"
+   },
+   {
+    "item": "the sign transcribed 29 in R4035 and R4037 (70 tokens): 2 or 7 on the images",
+    "blocker": "not-attempted",
+    "detail": "29 occurs only in R4035 and R4037, where 79 never occurs, and 79 only in R4034 and R4038, where 29 never occurs; if the images show 79 the table gives t. The same question for 52 in [c]he (57 = c) and 82 in re[s]peto (87 = s). Proposed to the contributor in the review of PR #822; not looked at"
+   },
+   {
+    "item": "R4037: the eight unread words [...] stand on the codes 1 1 (three times) and 10 (five times)",
+    "blocker": "not-attempted",
+    "detail": "the table has the barred word signs 1̅1̅ (Imꝑʳᵉ) and 1̅0̅ (Papa); the rows of R4035 to R4038 mark no bar. Whether the images show one is not looked at"
+   },
+   {
+    "item": "R4034, image 1, C03: code 4̅7̅ has no value",
+    "blocker": "not-attempted",
+    "detail": "the table as read has 4̅6̅ on two lines between 4̅5̅ and 4̅8̅ (stato di firenze, questo stato); whether the second is 4̅7̅ is not looked at on the table's image"
    }
   ],
   "texts": [
@@ -742,27 +785,9 @@
     "state": "decoded, not read",
     "language": "it",
     "summary": "My words, a paraphrase of the reading: The tithes. Cosimo writes that he begged someone not to burden a party, at present so exhausted, with such a levy; the code for that party has no value. His Majesty's aid is named. A doubtful word sign that the table gives as the Emperor stands at four places: his favour, his mind, his coming near Italy. After \"il prefat\", a doubtful barred sign gives the table's King of France; cut otherwise, it gives \"Arciuescouo\" (archbishop). Niccolini is to draw the matter out as long as he can, with no offer, because time can bring much advantage. The passage probably names the case of \"Altopaso\" (perhaps Altopascio).",
-    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 112 cipher words, 77 sure, 35 holes; read share 0.688. Under the read bar; 0 of 8 sentences and fragments have at most one hole in ten words. README.md.",
-    "reading": [
-     "De[l]e decime.",
-     "Più che [p]er altro.",
-     "[...]",
-     "[M]olto caldamente che fusi con [lui], e suplicavolo per parte di quelo, che fusi contento non molestare [4̅7̅] di presente tanto exausto con tale exatione.",
-     "Il prefat[o] Re di Fra[n]za e",
-     "Di Sua Maestà lo aiuto & [fa]vore del Imper[ato]re più in lungo che potrete, senza venire a oferta alcuna.",
-     "Dela mente del Imper[ato]re.",
-     "O esendosi avi[c]inato l'Imper[ato]re a Italia, m[e]tere tempo in mezo & tirare la cosa più in lungo che si può, perche il tempo ci può porta[r]e [53] molta comodità … esendo la mente del Imper[ato]re tale … non solo sopra q[u]esta cosa dele decime, ma sopra la causa di {Altopaso}."
-    ],
-    "translation": [
-     "[Of the] tithes.",
-     "More than [for] anything else.",
-     "[...]",
-     "[Very] [earnestly] that I should be with [him], and I was begging him on behalf of that one, that he should be content not to trouble [...], at present [so] exhausted, with such an exaction.",
-     "The [aforesaid] [King] [of] [France] [and]",
-     "His Majesty's aid and the [Emperor]'s [favour] for as [long] as you can, without coming to any offer.",
-     "Of the [Emperor]'s mind.",
-     "Or, [the] [Emperor] having [drawn near] to Italy, [to put] time in between and draw the matter out as long [as] one can, because time can [bring] us [...] much advantage … the [Emperor]'s mind [being] such … not only on [this] [matter] [of the] [tithes] [but] on [the] case of {Altopaso}."
-    ],
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 112 cipher words, 77 sure, 35 holes; read share 0.688. Under the read bar; 0 of 8 sentences and fragments have at most one hole in ten words. README.md. Integration review of PR #822 (20 Nov 2026, AI agent): stays decoded, not read; it builds sentences only in passages 4, 6 and 8, and the clear words around its short cipher runs are not in the folder.",
+    "reading": "r4034.md",
+    "translation": "r4034.md",
     "read_share": 0.688
    },
    {
@@ -770,19 +795,21 @@
     "label": "R4035, Cosimo I to Niccolini, 24 December 1537",
     "transcription": "transcription/R4035_digits.txt",
     "decryption": "r4035.md",
-    "state": "decoded, not read",
+    "state": "read in part",
     "language": "it",
     "summary": "My words, a paraphrase of the reading: The passage names those who have grown and fattened on the ruin of others and on ours, and His Holiness doing worse to this city and state. It ends: \"to proceed in this business as the Prince will do at Genoa\".",
-    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 29 cipher words, 26 sure, 3 holes; read share 0.897. If code 29 = t, from ciphertext, does not count as given by the key: 17 sure, 12 holes (0.586). Under the read bar; 1 of 2 sentences and fragments have at most one hole in ten words. README.md.",
-    "reading": [
-     "Crescuti & ingrasati delle rovine delli altri, de[l]e nostre, [c]he Sua Santità faci pegio a qu[e]sta cità & stato.",
-     "Procedere in questo negotio come farà il Principe a Genova."
-    ],
-    "translation": [
-     "Grown and fattened on the ruins of others, [on] ours, [that] His Holiness should do worse to [this] city and state.",
-     "To proceed in this business as the Prince will in Genoa."
-    ],
-    "read_share": 0.897
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 29 cipher words, 26 sure, 3 holes; read share 0.897. If code 29 = t, from ciphertext, does not count as given by the key: 17 sure, 12 holes (0.586). Under the read bar; 1 of 2 sentences and fragments have at most one hole in ten words. README.md. Integration review of PR #822 (20 Nov 2026, AI agent): read in part, grade B; 3 holes, one over the floor for a text under 40 cipher words. A word on code 29 counts as given by the key (NOTES.md).",
+    "reading": "r4035.md",
+    "translation": "r4035.md",
+    "read_share": 0.897,
+    "cipher_words": 29,
+    "holes": 3,
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #822 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-20",
+     "note": "Grade given by the reviewer, not by the author of the reading. The two numbered Italian passages on r4035.md read as sentences against their English: both are coherent (those grown and fattened on the ruins of others and of ours, His Holiness doing worse to this city and state; to proceed in this business as the Prince will at Genoa). The three holes are one letter each (de[l]e, [c]he, qu[e]sta). B, not A: these are two clauses of a letter in clear and cipher whose clear lines are not in the folder. By the sentence score (a sentence is clean with at most one hole in ten words) 1 of the 2 is clean; the grade rests on the reading as sentences, which the README makes the test. A decoder written by the reviewer from key/key-table-R4033.tsv and the digit rows reproduces the 7 decode rows; an own alignment finds no unmarked departure of the reading from the decode and recounts 29 cipher words, 26 sure, 3 holes. Three holes is one over the floor for a text under 40 cipher words, so read in part. Not checked: the digit rows and the key table against the DECODE images. A model's reading: no person has checked it."
+    }
    },
    {
     "doc": "R4036",
@@ -792,15 +819,9 @@
     "state": "decoded, not read",
     "language": "it",
     "summary": "My words, a paraphrase of the reading: One row gives a conditional sentence with several supplied letters. It may name an amount of ten thousand. No sure sense can be given.",
-    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 12 cipher words, 1 sure, 11 holes; read share 0.083. Under the read bar; 0 of 2 sentences and fragments have at most one hole in ten words. README.md.",
-    "reading": [
-     "[...] … {da}",
-     "Se ve[n]ga bisog[n]o, and[r]ò [a] fermare a dieci {mi[la]}."
-    ],
-    "translation": [
-     "[...] … {from}",
-     "[If] [need] [arises], [I shall go] [to] [settle] at [ten] {thousand}."
-    ],
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 12 cipher words, 1 sure, 11 holes; read share 0.083. Under the read bar; 0 of 2 sentences and fragments have at most one hole in ten words. README.md. Integration review of PR #822 (20 Nov 2026, AI agent): stays decoded, not read; no sure sense can be given (1 of 12 cipher words sure).",
+    "reading": "r4036.md",
+    "translation": "r4036.md",
     "read_share": 0.083
    },
    {
@@ -808,42 +829,42 @@
     "label": "R4037, Cosimo I to Niccolini, 16 February 1538",
     "transcription": "transcription/R4037_digits.txt",
     "decryption": "r4037.md",
-    "state": "decoded, not read",
+    "state": "read in part",
     "language": "it",
     "summary": "My words, a paraphrase of the reading: The two papal tithes on Florence. Cosimo writes that he was given to understand that he should proceed in this business as he sees \"the prince … Doria\" and the city of Genoa proceed. A proposal: to be content with half of the two tithes, one raised now and one a year later, by a Florentine commissioner whom His Holiness appoints. Church censures and an interdict are named.",
-    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 243 cipher words, 201 sure, 42 holes; read share 0.827. If code 29 = t, from ciphertext, does not count as given by the key: 159 sure, 84 holes (0.654). Under the read bar; 1 of 7 sentences and fragments have at most one hole in ten words. README.md.",
-    "reading": [
-     "Ala corte del [...] per ordine di quelo & di queli sua consiglieri mi è st[at]o fato in[t][e]ndere che in questo negotio dele [d]ecime io mi governi & proceda in quel modo me[d]esimo che io vederò governarsi & proce[d]ere al princip[e]… Doria & ala cità di Genova.",
-     "Il deto signore princ[i]pe & quela cità non sono ven[u]ti con [...] ad acordo o co[m][po]sitione alcuna … haveva dele al[t]re dificultà & cose di più importantia da resolvere con [...] dele dec[i]me nostre di qua, ma che tuto proceda dala dureza de [...], dove va lo interese del denaro.",
-     "Qualche re[s]peto & consideratione a me non nota, di gravare & stringere [...], al Marchese cioè, & del ordine & comisione che io tengo in questa parte dal [...].",
-     "Contentarsi de [l]a metà di le due decime da exigersi l'u[na] di presente & l'altra di qui a uno ano, per uno comisario fiorentino deputato da l[a] Sua Santità per magiore iustificatione & scarico del animo suo … del deto comisario, un[o] suo fidato.",
-     "& se {le} procederà ale censure & interdeti, ce ne dorà e[t] hare[m]o patientia. La cità è stata interdeta con qualche più colore, & questa sia la ultima resolutione. Si acet[e]rano le due decime poste da [...], una dele quali habia [a] esere … [pe]r quela, l'altra per la cità … da exigersi per comi[ss]arii fiorentini, quanto al ordine & … [c]omisione che io tengo dala corte del [...]."
-    ],
-    "translation": [
-     "At the court [of the] [...], by order of [that one] and of those counsellors of his, I [was] made [to understand] that in this business of the [tithes] I should conduct myself and proceed in the [same] way that I shall see the [Prince] … Doria and the city of Genoa conduct themselves and [proceed].",
-     "The said lord [Prince] and that city have not [come] to any agreement or [settlement] with [...] … he had [other] difficulties and things of greater importance to resolve with [...] about our [tithes] here, but that it all proceeds from the hardness of [...], where the interest of the money lies.",
-     "Some [regard] and consideration unknown to me, of burdening and pressing [...], to the Marquis, that is, and of the order and commission that I hold in this matter from the [...].",
-     "To be content with [the] half of the two tithes to be collected, the [one] at present and [the] [other] a year from now, by a Florentine commissioner deputed by [the] His Holiness for greater justification and relief of his conscience … of the said commissioner, [a] trusted one of his.",
-     "And if {she} proceeds to censures and interdicts, it will grieve us [and] [we shall have] patience. The city has been put under interdict with somewhat more pretext, and let this be the final resolution. The two tithes imposed by [...] [will be accepted], one of which is [to] be … [for] that one, the other for the city … to be collected by Florentine [commissioners], as to the order and … [commission] that I hold from the court of the [...]."
-    ],
-    "read_share": 0.827
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 243 cipher words, 201 sure, 42 holes; read share 0.827. If code 29 = t, from ciphertext, does not count as given by the key: 159 sure, 84 holes (0.654). Under the read bar; 1 of 7 sentences and fragments have at most one hole in ten words. README.md. Integration review of PR #822 (20 Nov 2026, AI agent): read in part, grade B. A word on code 29 counts as given by the key (NOTES.md).",
+    "reading": "r4037.md",
+    "translation": "r4037.md",
+    "read_share": 0.827,
+    "cipher_words": 243,
+    "holes": 42,
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #822 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-20",
+     "note": "Grade given by the reviewer, not by the author of the reading. The five numbered Italian passages on r4037.md (seven sentences) read as sentences against their English: all are coherent Italian (Cosimo was given to understand, at a court named by an unread sign, that he should proceed in the business of the tithes as Prince Doria and the city of Genoa do; they have reached no agreement; half of the two tithes, one now and one in a year, through a Florentine commissioner deputed by His Holiness; censures and interdict would be borne with patience). B: raw. Of its 42 holes in 243 cipher words, 22 are words with one to three letters marked inside, 4 are words on a doubted digit taken as the decode gives them, 2 are a short word supplied or probable, 6 are breaks of the rows and 8 are unread words that stand on the codes 1 1 and 10; the sentences can still be followed. By the sentence score (a sentence is clean with at most one hole in ten words) 1 of its 7 sentences is clean, which is why the contributor filed it as decoded, not read; the grade rests on the reading as sentences, which the README makes the test. A decoder written by the reviewer from key/key-table-R4033.tsv and the digit rows reproduces the 36 decode rows; an own alignment finds no unmarked departure of the reading from the decode and recounts 243 cipher words, 201 sure, 42 holes in the contributor's convention (an elided l' counted as a word). Not checked: the digit rows and the key table against the DECODE images. A model's reading: no person has checked it."
+    }
    },
    {
     "doc": "R4038",
     "label": "R4038, Cosimo I to Niccolini, 4 March 1538",
     "transcription": "transcription/R4038_digits.txt",
     "decryption": "r4038.md",
-    "state": "decoded, not read",
+    "state": "read in part",
     "language": "it",
     "summary": "My words, a paraphrase of the reading: Niccolini is to accept the extension \"se[c]ondo Clemente\" (perhaps \"as under Pope Clement\"), as they have said, and have it issued as in the copy that is sent to him. If they knew of it, they would not want it so broad, or would want better terms. Any further advantage is left to him.",
-    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 50 cipher words, 41 sure, 9 holes; read share 0.820. Under the read bar; 0 of 2 sentences and fragments have at most one hole in ten words. README.md.",
-    "reading": [
-     "Ad[ve]…rtendo Vostra Signor[i]a che aceti la estensione, se[c]ondo Clemente come loro hano deto, & poi si espedisca confor[m]e ala co[p]ia che se li manda, perche quando ne havesino notitia, o non la voriano così ampla o con meglio condit[i]one. Inoltre, potendosi vantag[i]are in cosa alcuna, lo rimetiamo in lei."
-    ],
-    "translation": [
-     "[Ad…vising] Your [Lordship] to accept the extension [according to] Clement, as they have said, and then let it be issued [in accordance] with the [copy] that is sent to you, because if they had notice of it, they would either not want it so broad or would want it on better [terms]. Furthermore, if [advantage] can be [gained] in [any] thing, we leave it to you."
-    ],
-    "read_share": 0.82
+    "note": "Reading in sentences and English translation on the record page, made from the decode. Counts by the word rule (an estimate): 50 cipher words, 41 sure, 9 holes; read share 0.820. Under the read bar; 0 of 2 sentences and fragments have at most one hole in ten words. README.md. Integration review of PR #822 (20 Nov 2026, AI agent): read in part, grade B.",
+    "reading": "r4038.md",
+    "translation": "r4038.md",
+    "read_share": 0.82,
+    "cipher_words": 50,
+    "holes": 9,
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #822 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-20",
+     "note": "Grade given by the reviewer, not by the author of the reading. The passage on r4038.md (two sentences) reads as sentences against its English: coherent Italian (Niccolini is to accept the extension se[c]ondo Clemente, as they have said, and have it issued as in the copy sent to him, because if they knew of it they would not want it so broad or would want better terms; any further advantage is left to him). B: seven of the nine holes are one or two letters changed or supplied inside a word (Ad[ve]…rtendo, Signor[i]a, se[c]ondo, confor[m]e, co[p]ia, condit[i]one, vantag[i]are), one is a break of the row and one a word on a doubted digit. By the sentence score (a sentence is clean with at most one hole in ten words) neither of the 2 sentences is clean, which is why the contributor filed it as decoded, not read; the grade rests on the reading as sentences, which the README makes the test. A decoder written by the reviewer from key/key-table-R4033.tsv and the digit rows reproduces the 8 decode rows; an own alignment finds no unmarked departure of the reading from the decode and recounts 50 cipher words, 41 sure, 9 holes. Not checked: the digit rows and the key table against the DECODE images. A model's reading: no person has checked it."
+    }
    },
    {
     "doc": "R4039",
@@ -990,6 +1011,6 @@
    "key/key-main.tsv",
    "key/key-table-R4033.tsv"
   ],
-  "notes": "Contributed by prabal-rje as a pull request. The status, the class and the reading review are for the maintainer. documents[].length.tokens are the code tokens of the cut, counted from the record pages; docs/_check_profile.py --measure did not run, so measured is false. The counts by the word rule are estimates (README.md)."
+  "notes": "Contributed by prabal-rje as a pull request. The contributor filed every document as decoded, not read and left the status, the class and the reading review to the maintainers. At the integration of PR #822 (20 Nov 2026) an AI agent reviewing for the maintainers set the class, the parts, the method named from the part that reads, the states of R4035, R4037 and R4038 and their reading reviews; no person has checked that reading. documents[].length.tokens are the code tokens of the cut, counted from the record pages; docs/_check_profile.py --measure did not run, so measured is false. The counts by the word rule are estimates (README.md)."
  }
 }

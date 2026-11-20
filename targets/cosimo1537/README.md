@@ -11,7 +11,7 @@ Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1. DECODE 
 | R4040 | another system, with too few codes | not in this folder |
 | R4051 | no cipher | not in this folder |
 
-Every document here is marked "decoded, not read". The readings are partial, and most sentences hold holes. A reviewer can change this. R4034 to R4038 have readings in sentences, made from the decode.
+Every document here was filed as "decoded, not read". The readings are partial, and most sentences hold holes. A reviewer can change this. R4034 to R4038 have readings in sentences, made from the decode. Maintainers' note, 20 November 2026: the review at integration read R4035, R4037 and R4038 as sentences and marks them "read in part"; the other 16 documents stay "decoded, not read" (`NOTES.md`).
 
 ## The numbers
 
@@ -38,7 +38,7 @@ The rule of 19 November 2026 counts sure cipher words only. A word is sure here 
 - So the number of cipher words and the read share are estimates.
 - A break `…` can stand for clear words, which the rule leaves out. The files do not show which breaks do. Each break counts as a hole, so the share is the lower of the two.
 - The readings of R4034 to R4038 mark every letter and word that the key does not give, as their pages say. Each marked word is a hole, and so is each `…` and each `[...]`. Each `…` and each `[...]` counts as one word, extent unknown.
-- A word on code 29 takes t from ciphertext. The counts give both cases: with 29 = t as a value of the key, and with every word on code 29 as a hole ("if 29 is a hole" below).
+- A word on code 29 takes t from ciphertext. The counts give both cases: with 29 = t as a value of the key, and with every word on code 29 as a hole ("if 29 is a hole" below). Maintainers' note, 20 November 2026: the first is the count of record; a word on code 29 counts as given by the key (`NOTES.md`).
 - A document with no reading: only the words that a word sign or a word code gives with no doubt are sure. Its number of cipher words and of holes is not known.
 - The sure words of the main system come from my key from ciphertext. If a value of such a key does not count as given by the key, no word of the main system is sure.
 - The floor for texts under 40 cipher words: each document with an estimate under 40 words has more than 2 holes, so the floor does not make it read. For a document with no reading, the floor cannot be judged.
@@ -46,10 +46,10 @@ The rule of 19 November 2026 counts sure cipher words only. A word is sure here 
 | Record | Date | System | Rows | Code tokens | With a value | Cipher words | Sure | Holes | Read share | State |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [R4034](r4034.md) | 17 December 1537 | earlier, from key | 25 | 407 | 379 (0.931) | 112 | 77 | 35 | 0.688 | decoded, not read |
-| [R4035](r4035.md) | 24 December 1537 | earlier, from key; 29 from ciphertext | 7 | 136 | 133 (0.978) | 29 | 26 (if 29 is a hole: 17) | 3 (12) | 0.897 (0.586) | decoded, not read |
+| [R4035](r4035.md) | 24 December 1537 | earlier, from key; 29 from ciphertext | 7 | 136 | 133 (0.978) | 29 | 26 (if 29 is a hole: 17) | 3 (12) | 0.897 (0.586) | read in part |
 | [R4036](r4036.md) | 8 February 1538 | earlier, from key | 2 | 35 | 31 (0.886) | 12 | 1 | 11 | 0.083 | decoded, not read |
-| [R4037](r4037.md) | 16 February 1538 | earlier, from key; 29 from ciphertext | 36 | 984 | 970 (0.986) | 243 | 201 (if 29 is a hole: 159) | 42 (84) | 0.827 (0.654) | decoded, not read |
-| [R4038](r4038.md) | 4 March 1538 | earlier, from key | 8 | 229 | 224 (0.978) | 50 | 41 | 9 | 0.820 | decoded, not read |
+| [R4037](r4037.md) | 16 February 1538 | earlier, from key; 29 from ciphertext | 36 | 984 | 970 (0.986) | 243 | 201 (if 29 is a hole: 159) | 42 (84) | 0.827 (0.654) | read in part |
+| [R4038](r4038.md) | 4 March 1538 | earlier, from key | 8 | 229 | 224 (0.978) | 50 | 41 | 9 | 0.820 | read in part |
 | [R4039](r4039.md) | 4 October 1538 | main, from ciphertext | 57 | 1,945 | 1,814 (0.933) | 321 | 188 | 133 | 0.586 | decoded, not read |
 | [R4041](r4041.md) | 10 October 1538 | main, from ciphertext | 12 | 140 | 121 (0.864) | 26 | 16 | 10 | 0.615 | decoded, not read |
 | [R4042](r4042.md) | 28 October 1538 | main, from ciphertext | 13 | 257 | 228 (0.887) | 30 | 12 | 18 | 0.400 | decoded, not read |
