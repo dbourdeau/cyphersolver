@@ -2167,7 +2167,7 @@ PAGES = [
          rights='Manuscript rights: The National Archives, Kew'),
     dict(slug='walsingham1585', label='Walsingham 1585', year='1585', y=1585.65, place='London &rarr; Scotland', st='partial', stt='read in part &mdash; 3 sign groups open',
          title='Walsingham to Edward Wotton in Scotland, 1585',
-         blurb='Four letters of July to September 1585 (Add MS 32657, DECODE R4838&ndash;R4840, R4844) in clear English with a two-digit name code. The code was recovered mainly from the glosses in the Calendar of State Papers, Scotland vol. 8 (1914), which calendars two of the letters; the other two are transcribed here. The words in graphic signs, whose interlinear decipherment was blotted out, are deciphered in part with a sign key learnt from letters deciphered at the time in the same volume: 16 of 19 groups, 11 of them certain.',
+         blurb='Four letters of July to September 1585 (Add MS 32657, DECODE R4838&ndash;R4840, R4844) in clear English with a two-digit name code. The code was recovered mainly from the glosses in the Calendar of State Papers, Scotland vol. 8 (1914), which calendars two of the letters; the other two are transcribed here. The words in graphic signs, whose interlinear decipherment was blotted out, are deciphered in part with a sign key learnt from letters deciphered at the time in the same volume: 16 of 19 groups, 12 of them certain.',
          quote='&ldquo;The best is to deal warily with them all&rdquo;',
          rights='Manuscript rights: British Library, Add MS 32657 (images via DECODE)'),
     dict(slug='wotton1585', label='Wotton 1585', year='1585', y=1585.7, place='Scotland &rarr; London', st='solved', stt='read &mdash; clear drafts, code names identified',
