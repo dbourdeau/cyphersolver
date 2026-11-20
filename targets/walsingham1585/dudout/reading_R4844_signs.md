@@ -1,6 +1,6 @@
 # R4844 (Add MS 32657 ff. 194-195, Walsingham to Wotton, the Court, 10 Sep 1585): the sign words read with sign_key.tsv
 
-Status: read in part (about 86% of the sign letters read for sense; 16 of 19 sign groups read, 3 unresolved; 19 Nov 2026, after blind sign sheet K: 13 groups certain, 3 probable, 3 unresolved; 20 Nov 2026, after sheet K2: 14 certain, 2 probable, 3 unresolved).
+Status: read in part (about 86% of the sign letters read for sense; 16 of 19 sign groups read, 3 unresolved; 19 Nov 2026, after blind sign sheet K: 13 groups certain, 3 probable, 3 unresolved; 20 Nov 2026, after sheet K2: 14 certain, 2 probable, 3 unresolved; 20 Nov 2026, review of #821: suspition and Scroupe kept probable, 12 certain, 4 probable, 3 unresolved).
 Key: `sign_key.tsv` (frozen before the held-out test) plus the post-measurement additions listed in its header.
 The struck-out interlinear of the time is not used. Grades: S = certain, P = probable, R = restored, I = unresolved.
 
@@ -19,9 +19,9 @@ The struck-out interlinear of the time is not used. Grades: S = certain, P = pro
 | 11 | f.194v l.4 | c TD TD d HASH EQ TD | **attempt** | S | "at the *attempt*" |
 | 12 | f.194v l.5 | (W) TD DIV c r N2 d □4 φ | **traine** | S (sheet K, 19 Nov 2026) | "ward your *traine*" |
 | 13 | f.194v l.5-6 | □ Δ MP / DIV TD f DIV MP g N2 W | **Sterling** = Stirling | S | "at *Stirling*" |
-| 14 | f.194v l.6 | DIV K DIV DIV EQ DIV r TD h N2 ... | **suspition** | S (sheet K2, 20 Nov 2026) | "& avoyde *suspicion*" |
+| 14 | f.194v l.6 | DIV K DIV DIV EQ DIV r TD h N2 ... | **{suspition}** | P (sheets K and K2 disagree, see below) | "& avoyde *suspicion*" |
 | 15 | P.S. | MP L DIV E f | **lorde** | S | "from the *Lorde*" |
-| 16 | P.S. | DIV ψ DIV L m ≡ MP d | **Scroupe** (Lord Scrope?) | S (sheet K, 19 Nov 2026) | "... *Scroupe*" |
+| 16 | P.S. | DIV ψ DIV L m ≡ MP d | **{Scroupe}** (Lord Scrope?) | P (MP and ψ not settled, see below) | "... *Scroupe*" |
 | 17 | P.S. | DIV f ψ DIV d c TD | **secreat** (secret) | S | "touching [his?] *secreat*" |
 | 18 | P.S. | EQ MP L - | **plot** | P | "*plot*" |
 | 19 | P.S. | NUL Δ4 DIV d ψ DIV f c ψ τ d | **secreacie** (secrecy) | S | "not carried with that *secrecy*" (same form as R4845 H9) |
@@ -48,3 +48,21 @@ Sign sheet K2, 20 Nov 2026 (NOTES, Sign check K2): controls 2 of 2. Group 14, fi
 sign is relabelled EQ (it was transcribed ⊥) and suspition becomes certain. Group 4, fourth sign: "=" (shape only; the group
 stays unresolved). Group 2, fifth sign: dot below, not dots above and below (shape only; unresolved). Sure groups: 13 of 19
 -> 14 of 19 (0.737).
+
+Review of #821, 20 Nov 2026 (Daniel Bourdeau): two groups go back to probable. Sure groups: 14 of 19 -> **12 of 19
+(0.632)**; read in part.
+- Group 14 (suspition): the fifth sign got two opposite answers from the same checker, an hour apart. On sheet K it was
+  "other shape"; on K2 it was "=", and the K2 question was written knowing the K answer. The sign column also has more
+  s-signs than the word needs. The group stays {suspition} until someone else settles that sign.
+- Group 16 (Scroupe): the sheet settled only ≡ = p. Sign by sign, with `sign_key.tsv`:
+
+  | sign | DIV | ψ | DIV | L | m | ≡ | MP | d |
+  |---|---|---|---|---|---|---|---|---|
+  | key | r, also s | (no row) | r | o | u/o (added after the measure) | p (sheet K) | **l** | e |
+  | "Scroupe" | S | c | r | o | u | p | ? | e |
+
+  Eight signs for seven letters. MP is l in the key, as in "plot" (groups 1, 18) and "lorde" (group 15) of the same
+  postscript; "MP sometimes p" was added only after the measurement. ψ has no row; it is read c in "secreat" and
+  "secreacie" (groups 17, 19) by context only. Read with the key, the group gives "s?rouple", perhaps "scrouple", not
+  "Scroupe". The group stays {Scroupe} until MP and ψ are settled. Whether it names Lord Scrope is a separate question.
+

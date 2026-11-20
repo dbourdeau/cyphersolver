@@ -127,7 +127,7 @@ hand; the files do not mark them, so `v10_relabel.py` cannot reproduce these cou
   **15 of 20 = 0.75**, from 0.957 (a figure over the whole letter, clear included, taken from `clear_gaps_pass2.md`).
   On the `texts/key.md` grades alone, without the pairs' glosses, it is 10 of 20 = 0.50. **State read -> read in part.**
   The clear words and their `[..]` gaps are not cipher and are not counted.
-- **R4844 sign words** (Dudout; updated 19 Nov 2026 after blind sign sheet K, see Sign check K: groups 12 and 16 now S, **13 of 19 = 0.684**): 19 sign groups, **11 graded S (certain)**, 5 graded P (probable, one with a restored
+- **R4844 sign words** (Dudout; updated 20 Nov 2026 after sheets K and K2 and the review of #821, see Review of #821: 12 groups S, 4 P, 3 unresolved, **12 of 19 = 0.632**; sheet K alone 13 of 19, sheet K2 14 of 19). Count of 16 Nov 2026: 19 sign groups, **11 graded S (certain)**, 5 graded P (probable, one with a restored
   letter; holes) and 3 unresolved: **11 of 19 = 0.579**, from 0.86, which counted the sign letters with the probable
   and restored ones as read (certain letters about 69 of 116 = 0.59). Stays read in part. The reading file
   `dudout/reading_R4844_signs.md` is Dudout's and still carries its own 86% line.
@@ -140,7 +140,7 @@ hand; the files do not mark them, so `v10_relabel.py` cannot reproduce these cou
 
 ## Remaining gaps
 - R4844 as a whole decoded, not read (sign words or open codes in nearly every sentence; reading audit 22 Oct 2026) - blocker: too-short; see the sign-words and name-code lines below
-- R4844 sign words (~14 words, ~120 signs) - blocker: too-short; homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out
+- R4844 sign words (19 groups, ~120 signs) - blocker: too-short; homophonic sign alphabet, interlinear decipherment blotted out. A partial sign key now exists (`dudout/sign_key.tsv`, learnt on the glossed sign words of R4689, R4835, R4836; 0.646 vs 0.213 on held-out R4845), and two blind sign sheets (K, K2) were run: 12 of 19 groups certain, 4 probable, 3 unresolved (20 Nov 2026). Open: groups 2, 4, 10; the fifth sign of group 14; MP and ψ in group 16
 - name codes 13, 14, 23, 30, 32, 37 - blocker: no-key-material; not glossed in CSP or Wotton drafts; context too thin
 - clear-text gaps [..] in reading_R4840/R4844 - blocker: illegible; second pass 14 Oct 2026 on the DECODE images (`clear_gaps_pass2.md`): of 46 places, 32 read H/C, 8 M, 6 illegible (blots, stains, struck interlinear words); merged for R4844 into `reading_R4844_r2.txt` on 22 Oct 2026 (R4840's nine corrections still to merge into reading_R4840.txt)
 
@@ -152,6 +152,7 @@ hand; the files do not mark them, so `v10_relabel.py` cannot reproduce these cou
 - [n/a] key-rebuild: the name code is a list of names with no internal order to bracket, and its open numbers occur once or twice in thin context; the sign alphabet is ~120 homophonic signs with nulls and no crib, below what an anneal can fix (a crib from SP 52/38 copies would be needed first)
 - [x] retry: clear-text gaps re-read on the images 14 Oct 2026 (`clear_gaps_pass2.md`); name-code grades unchanged (the new words fix no open number)
 - [x] retry (22 Oct 2026): R4844 re-read under the reread brief; pass-2 readings merged (`reading_R4844_r2.txt`); images out of reach (DECODE login); sign words and open codes unchanged (`texts/R4844_reread_log.md`)
+- [x] retry (19-20 Nov 2026): blind sign sheets K (10 signs) and K2 (3 signs) on the R4844 sign words, controls 2 of 2 on each, `dudout/sign_key.tsv` unchanged; sure groups 11 -> 13 -> 14 of 19, then 12 of 19 = 0.632 after the review of #821 (K and K2 disagree on group 14; group 16 rests on MP and ψ, not settled); read in part
 
 ## 2026-09-30 (quotation list for George Lasry)
 
@@ -271,3 +272,19 @@ Sure groups: 13 of 19 = 0.684 -> **14 of 19 = 0.737** (R4844 sign words, `dudout
 fraction_read (0.36) does not count R4844's units and is unchanged. Still read in part (fewer than 40 words, 5 holes).
 
 **Limits.** One checker inside the project; two controls; signs chosen because doubtful. Not a `human_check`.
+
+## Review of #821, 20 Nov 2026 (R4844 sign words)
+
+Two groups go back to probable after the review of PR #821 (Daniel Bourdeau, 20 Nov 2026); no sign label or key value is
+changed.
+- Group 14, {suspition}: sheets K and K2 gave opposite answers on its fifth sign. Sheet K said "other shape, an L with a
+  stroke below"; sheet K2, written knowing that answer, said "=". The group also has more s-signs than the word needs. It
+  stays probable unless another checker settles that sign.
+- Group 16, {Scroupe}: the sheet settled only ≡ = p. Sign by sign (`dudout/reading_R4844_signs.md`): DIV s/r, ψ (no row in
+  `sign_key.tsv`; c only by context in groups 17, 19), DIV r, L o, m u, ≡ p, MP **l** (as in "plot" and "lorde" in the same
+  postscript; "sometimes p" added after the measurement), d e. That is "s?rouple", perhaps "scrouple": eight signs for the
+  seven letters of "Scroupe". It stays probable until MP and ψ are settled.
+
+Sure groups: 14 of 19 -> **12 of 19 = 0.632** (12 S, 4 P, 3 unresolved). Still read in part. fraction_read (0.36) does not
+count R4844's units and is unchanged.
+
