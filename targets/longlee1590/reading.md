@@ -3,16 +3,16 @@
 plain word = certain; {x} = probable; [x] = restored from the sense; ‹segment|n› = unresolved, letters given by the key,
 n = number of words the segment is ESTIMATED to cover (counted as n words, not one). "Vre Mate" = Vostre Majesté (2 words).
 Passages grouped by sentence, not by manuscript line.
-# Note of 16 Nov 2026: this is the contributor's reading (Brice Dudout), kept as his; it is not the output of the key. The mechanical decrypt is `decryption.txt`. Note of 19 Nov 2026: after blind sign sheet J, the places of the decrypt audit where a word given as certain still differs from the decrypt are marked {x} (NOTES.md, Sign check J, 19 Nov 2026).
+# Note of 16 Nov 2026: this is the contributor's reading (Brice Dudout), kept as his; it is not the output of the key. The mechanical decrypt is `decryption.txt`. Note of 19 Nov 2026: after blind sign sheet J, the places of the decrypt audit where a word given as certain still differs from the decrypt are marked {x} (NOTES.md, Sign check J, 19 Nov 2026). Note of 20 Nov 2026: after blind sign sheet J2, "deux" (f. 67r) is certain and "Roisieux" is probable (NOTES.md, Sign check J2, 20 Nov 2026); the counts below do not change.
 
 ## f. 67r
 Auec ocasion que m'est {uenue} de ‹tuoier|1› a {Baionne} le {dupplicata} de ma derniere despeche i'ai {uoulu} entendre a Vre {Mate} ce qui {s'offre} ici {depuis} {que} i'en ‹afia|2› {acheminé} l'original
 confirmant ‹e|1› bonne {sante} du roi {catholique} et {que} ie n'i uoi pas d'aultres {mouuements} ne preparatifs de {guerre} {que} {ceulx} {que} ‹idrcts|2› par mes precedents {d'armee} [de] soixante ou quatre uingt {uaisseaulx}
 pour {s'opposser} {aux} {anglois} {s'ils} {auroient} {quelque} deseing de molester ces costes de deca comme ils ont acoustume {deuers} Flandres ‹teles|2› le reste de toute ceste armee et aux ‹parestatcntlaisabl?|4›
-le {uingtuniesme} de ce mois arriua ici le sieur Tornasoni gentilhome {florentin} ung {neueu} du sieur Pietro Paule {Tousinet} de {deux} {ou} trois aultres {qui} {l'accompaignent}
+le {uingtuniesme} de ce mois arriua ici le sieur Tornasoni gentilhome {florentin} ung {neueu} du sieur Pietro Paule {Tousinet} de deux {ou} trois aultres {qui} {l'accompaignent}
 Tornasoni {enuoie} deuers le roi {catholique} de la part {du} duc de Mercure les coniectures de sa {commission} sont [de] demander {que} le dict roi {se} declare ouuertement contre Vre Mate
 {et} interdisse le commerce {aux} francois qui ne seront de la ligue et leur face arester leurs {personnes} biens marchandises et nauires a {ceux} qui ne ‹auuront|2› et ‹pouerle|2›
-{afin} il ne {fault} doubter {qu'il} ne demande de l'argent {et} {l'on} dict que {ce} {semblable} doit {estre} demande par Roisieux le quel {s'attend} ici {chacun} iour de la {part} du duc de Maienne
+{afin} il ne {fault} doubter {qu'il} ne demande de l'argent {et} {l'on} dict que {ce} {semblable} doit {estre} demande par {Roisieux} le quel {s'attend} ici {chacun} iour de la {part} du duc de Maienne
 ie ne ueulx pas {asseurer} que ce soit {leur} charge car ie n'ai pas {ces} {aduis} de tel lieu que ‹iossassea?aermar|3› {qu'ils} {fussent} trescertains et bien {qu'ils} {feissent} ces {demandes}
 ie ne uoi point {qu'il} i eust de raison de les accorder {quant} a l'argent ie croie {qu'il} leur en sera {tousiours} donne {pour} entretenir la {guerre} {etc} du {reste} ie metrai peine de m'en {esclarcir}
 {le} duc de Portugal ‹meconltinlera|2› encor quelque {temps} ‹augoulernee|2› ‹ment|1› des {pais} {bas} celui de {Sauoie} {demande} secours ‹pouii|1›
