@@ -1,0 +1,64 @@
+# William Gifford to Thomas Throgmorton, Brussels, 5/15 June 1595
+
+A page of the British Library’s Cotton cipher notes preserves four successive reports from William Gifford’s June dispatch to Thomas Throgmorton. The National Archives holds the surviving final leaf of the letter and Thomas Phelippes’s English decipher. Five numerical entries and four words enciphered with the alphabet marked 2 can be checked against that decipher. The contribution identifies a dated counterpart for part of the Cotton notes and verifies readings already present in the historical papers. It adds zero newly recovered historical words. [Cotton Caligula B VIII, ff. 327–332](https://link.gale.com/apps/doc/MC4318883115/SPOL) · [SP 12/252, ff. 127–128, decipher](https://link.gale.com/apps/doc/MC4304480276/SPOL) · [SP 12/252, f. 129r, original fragment](https://link.gale.com/apps/doc/MC4304480277/SPOL)
+
+## The passage and the five figures
+
+On Cotton f. 327r (opening 331), look for the bishoprics of Malines and Bruges. Next come Bruce and a letter involving 147, the Scottish king’s intentions if an army appears in the field, and Paget’s report that Cecil the priest went to Spain with the consent of the English council. The same reports follow one another on SP 12/252 f. 127v. The council clause continues at the head of f. 128r. Green gives the same sequence on p. 54, no. 66.I. Cotton f. 327r also glosses 23 as Paget and 75 as England. The original leaf for this earlier passage is missing. [Cotton opening 331](https://link.gale.com/apps/doc/MC4318883115/SPOL) · [English decipher, opening 134](https://link.gale.com/apps/doc/MC4304480276/SPOL) · [Green, 1869, pp. 54–55](https://archive.org/details/bub_gb_ozz8aAZ_niQC/page/n83/mode/2up)
+
+Cotton f. 332v (opening 337) has a numbered roster. On SP 12/252 opening 135 the final leaf, f. 129r, faces the end of the decipher, f. 128v. Three figures occur in the same sentence about the nuncio, the pope and Scotland. Two more occur in the farewell. The spellings below are normalized. [Cotton worksheet](https://link.gale.com/apps/doc/MC4318883115/SPOL) · [Original and facing English decipher](https://link.gale.com/apps/doc/MC4304480277/SPOL)
+
+| Figure | Cotton entry | Position on the facing State Papers witnesses |
+| --- | --- | --- |
+| 82 | The nuncio | Subject of “will adde” in the sentence about enhancing someone’s credit. |
+| 2 | The pope | Person with whom that credit will be enhanced. |
+| 74 | Scotland | Place at the close of the same sentence, “negociation of Scotland” in the decipher. |
+| 40 | Owen | First in the sequence 40, 31, 24, 32. The decipher has Owen, 31, Father Holte, 32. |
+| 24 | Father Holt | Third in the same sequence. |
+
+The original reads 83 before the reference to the pope. An independent reader gave 53 for the figure in the decipher. Neither reading affects the place of 2 or 74. Cotton 31 has cancelled or overwritten writing, 32 and 54 appear blank, and no separate entry numbered 53 was identified. Two independent readers could give no complete name for the damaged row in the position of 83. The decipher supports Father Persons for 26, but the Cotton row is overwritten. The five above exclude all these uncertain entries. [Original and facing decipher](https://link.gale.com/apps/doc/MC4304480277/SPOL) · [Cotton roster](https://link.gale.com/apps/doc/MC4318883115/SPOL)
+
+## Checking the alphabet marked 2
+
+Two readers independently transcribed twelve isolated groups from f. 129r without seeing the key or English decipher. For each agreed letter, find it in the row marked 2 and take the letter above it in the header. The final 2 selects that row. The header merges I/J and U/V. The table spells out the four whole results; V in the normalized alphabet can stand for English U. Each of these words can also be located by the ordinary words on the original. [Cotton f. 332v](https://link.gale.com/apps/doc/MC4318883115/SPOL) · [Original f. 129r](https://link.gale.com/apps/doc/MC4304480277/SPOL)
+
+| Group | Both readers | Output | Physical position in Phelippes’s decipher |
+| --- | --- | --- | --- |
+| C | RYHV2 | OVER | SP 12/252 f. 128r, final paragraph beside 54, “of some sent over”. |
+| D | NMOO2 | KILL | Next line of the same paragraph, “to kill him and now”. |
+| J | ZVMXH2 | WRITE | F. 128v, second body line, asking the writer to write to the bishop of Cassano. |
+| L | WSDZ2 | SPAW | F. 128v, body lines 4–5, “From / the Spaw you shall heare more”. |
+
+**The first registered test stopped before substitution.** Its 120-word reference had to begin “it troubled”. The independent clear reader instead found an apparent “is troubled” near 54 and could not certify the required passage. The reference had zero words. No substitutions or controls were run under this plan. The two ciphertext readings arrived later.
+
+A secondary plan used the same twelve groups, the previously recorded rows, and two fixed images whose transcriptions were still unknown. The investigator had seen the ciphertext readings and earlier accounts of the prose. Eight groups supplied 33 agreed stem letters. The English transcript contained 306 word positions, 289 usable. In group order, the best sequence of matching substrings scored 16 letters, across four groups, with lookup from the selected row to the header. The reverse direction scored zero. The largest of 1,000 shuffled-key scores, taking the better direction in each, was 9. Sixteen exceeds the registered minimum of 12 in at least three groups. No control reached 16. The reference and ciphertext are from the same historical dispatch. [State Papers witnesses](https://link.gale.com/apps/doc/MC4304480277/SPOL)
+
+The first fixed image showed **f. 127v** although its filename and reference labels said 128r. Its OVER belongs to a different report. The automatic comparison for KILL matched only ILL within an unrelated *will*. Only WRITE and SPAW matched the intended positions automatically. The correct final paragraph on f. 128r was inspected after the run and supplies the local context for OVER and KILL. The scored files retain the original labels and scores. Other eligible groups emitted SO?E, AR??VED, B??KE and RV?NED. Groups B and H lacked agreed selectors, F had unequal lengths, and G had fewer than three agreed letters. Only the row marked 2 produced complete words. No independent reading for rows 4, 6 or 8 follows from this trial. [English decipher, opening 134](https://link.gale.com/apps/doc/MC4304480276/SPOL) · [Facing English decipher, opening 135](https://link.gale.com/apps/doc/MC4304480277/SPOL)
+
+## The numbered names in May
+
+Six names written above numbers in the 9 May original agree with the Cotton list. The name sequence in the Captain White passage includes Holt and Moody, whom Green’s printed abstract leaves among the “others”. A sixth June entry can also be checked at the phrase about writing to the bishop of Cassano (20). The separate test on other May passages had no eligible numeral/gloss pairs. [Manuscript comparison and limitations](numbered_names/README.md) · [Seven entries with exact locations](numbered_names/FIGURES.tsv)
+
+## Did the June alphabet also work in May?
+
+Two tests compared the Cotton alphabet with contemporary interlinear glosses in other William Gifford letters. Each used two independent readers for isolated cipher groups and a third reader for the English glosses. On the letter catalogued under 10 May, SP 12/252, ff. 37r–v (Green no. 16), none of ten groups had both a complete agreed group and a secure single-word gloss at the same position. The registered test stopped with no substitutions and no controls. [SP 12/252 f. 37, openings 38–39](https://link.gale.com/apps/doc/MC4304480222/SPOL) · [Green, pp. 40–41](https://archive.org/details/bub_gb_ozz8aAZ_niQC/page/n69/mode/2up)
+
+On the separate letter catalogued under 9 May, SP 12/252, f. 19r (Green no. 8), 34 groups were compared. Ten had complete, agreed ciphertext with a final 2. Only T08 also had a secure gloss. Both transcribed RQH2. The June row gives ONE, while the independent gloss reader wrote *our*. The test scored zero whole words, tied by all 1,000 shuffled controls. Its threshold required three distinct matches and twelve letters. Only one comparison qualified, so the test had too little evidence to meet that threshold even if T08 had matched. The rule for attempting unglossed groups required a pass. They remain untested. These letters leave reuse of the June alphabet in May unresolved. [SP 12/252 f. 19r, opening 20](https://link.gale.com/apps/doc/MC4304480214/SPOL) · [Green, no. 8, pp. 36–37](https://archive.org/details/bub_gb_ozz8aAZ_niQC/page/n65/mode/2up)
+
+## What was known
+
+The Cotton catalogue’s old no. 102 already lists Dr Gifford, a Throckmorton at Rome, and an appended key. It gives 17 May. Hsuan-Ying Tu identified William, called the letter undated, followed the catalogue’s J. Throckmorton and attributed the deciphering notes to Phelippes. Tu discusses the selector instruction on f. 332v, feminine disguises on f. 327v and a query about 83 and 73 on f. 329v. Satoshi Tomokiyo identified four shifted alphabets, read the recipient as Thomas and reported uncertainty about the damaged docket’s year. Green identifies Thomas Throgmorton and dates SP 12/252, nos. 66.I–II to Brussels, 5/15 June 1595. Pollen distinguishes William from his cousin Gilbert. The dated parallel identifies material on f. 327r. The time of compilation and authorship of each Cotton annotation remain open. [Cotton catalogue, Caligula B VIII, no. 102](https://archive.org/details/gri_33125005958521) · [Tu, Sheffield PhD, 2012, p. 91, nn. 103–106](https://etheses.whiterose.ac.uk/id/eprint/5680/1/Hsuan-Ying%20Tu%20PhD%20thesis.pdf#page=92) · [Tomokiyo, section on ff. 327–332](https://cryptiana.web.fc2.com/code/elizabeth.htm) · [Green, pp. 54–55](https://archive.org/details/bub_gb_ozz8aAZ_niQC/page/n83/mode/2up) · [Pollen, introduction p. xlii](https://archive.org/details/maryqueenofscots00polluoft)
+
+A 20 November 2026 search found that upstream catalogue no. 1009 already mentions the June State Papers pair in connection with the adjacent Paget letter. The Edmondes project cites Tomokiyo’s Cotton example separately. The public DECODE search for Gifford found R3889 from SP 53/17 (1586). A search for SP 12/252 returned no record. OpenAlex found Tu under the Cotton shelfmark and Gifford, and returned no work under the two shelfmark phrases together. These searches yielded no prior collation of this passage and the five figures. Unindexed editions and scholarship remain outside that conclusion. [Upstream catalogue](https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json) · [DECODE R3889](https://de-crypt.org/decrypt-web/RecordsView/3889) · [Tu’s thesis](https://etheses.whiterose.ac.uk/id/eprint/5680/)
+
+## Which dispatches the Cotton volume contains
+
+Opening 333 brings the end of June material face to face with the start of the 9 May dispatch. Opening 334 carries its dated 15 May continuation. The annotator put the surname *Liggons* over 43 in both letters. The copy confirms the earlier May output *one*. A later exact comparison also matched *some* and *all*. It missed its three-word threshold. [Five-word comparison and replay](may09_parallel/README.md) [The two letters, the speaker and the Captain White passage](numbered_names/cotton_copies.md)
+
+## Reproducing the check
+
+Run `python3 -I -B verify.py` from this folder. It uses the two complete readers’ tables, transcribed header and rows, scored reference, and frozen scoring functions in `june/`. It compares the two directional results and every one of the 1,000 controls with the archived run. Run `python3 -I -B verify_may.py` for the May checks. It replays the original scorers against all 44 inputs in temporary directories and compares both result files and all May 9 controls byte for byte. Only the archival-image fingerprint lines are omitted from the temporary verification manifests. The June and May timestamped plans, original scoring scripts, reader returns, later f. 128r transcription and freeze records are preserved. The freeze records include the fingerprints of archival images available in the cited manuscript viewers. Manuscript images are omitted from this contribution.
+
+AI agents compared the manuscripts for Andrew Beling using his institutional Gale access. No person has checked the readings. This contribution supplies transcriptions and observations. The project has no separate reproduction agreement for the images. [Gale terms](https://www.cengagegroup.com/legal/terms-gale/)
+
+AI agents did this work; no person has checked it.
