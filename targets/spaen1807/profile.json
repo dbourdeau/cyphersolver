@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "target": "spaen1807",
+  "title": "G. C. van Spaen’s marked Vienna dispatches, January–March 1807",
+  "documents": [
+    {
+      "id": "no7",
+      "date": "24 January 1807",
+      "year": 1807,
+      "country": "Kingdom of Holland",
+      "language": "French",
+      "shelfmark": "Nationaal Archief, 2.01.08, inventory 248, scans 105–106",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "Contemporary French decipherment in the same file, transcribed in vienna_contribution/january/vienna_clear_copy.txt."
+      },
+      "read": "not read",
+      "length": {
+        "tokens": 330,
+        "unit": "code groups",
+        "measured": true,
+        "file": "vienna_contribution/january/vienna_groups.tsv"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Two independent cipher-panel readings of inventory 248, scans 105–106.",
+        "notes": "One row per physical position in january/vienna_groups.tsv. The measured count includes every unresolved slot. The full population of distinct underlying groups is unknown."
+      }
+    },
+    {
+      "id": "no23",
+      "date": "21 March 1807",
+      "year": 1807,
+      "country": "Kingdom of Holland",
+      "language": "French",
+      "shelfmark": "Nationaal Archief, 2.01.08, inventory 248, scans 2–6",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "Contemporary French decipherment in the same file, transcribed in vienna_contribution/march/train23.txt."
+      },
+      "read": "not read",
+      "length": {
+        "tokens": 745,
+        "unit": "code groups",
+        "measured": true,
+        "file": "vienna_contribution/march/groups23.tsv"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Two independent cipher-panel readings of inventory 248, scans 2–6.",
+        "notes": "One row per physical position in march/groups23.tsv. The measured count includes every unresolved slot. The full population of distinct underlying groups is unknown."
+      }
+    },
+    {
+      "id": "no26",
+      "date": "28 March 1807",
+      "year": 1807,
+      "country": "Kingdom of Holland",
+      "language": "French",
+      "shelfmark": "Nationaal Archief, 2.01.08, inventory 248, scans 173–175",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "Contemporary French decipherment in the same file, transcribed in vienna_contribution/references/reference26.txt."
+      },
+      "read": "not read",
+      "length": {
+        "tokens": 355,
+        "unit": "code groups",
+        "measured": true,
+        "file": "vienna_contribution/march/groups26.tsv"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Two independent cipher-panel readings of inventory 248, scans 173–175.",
+        "notes": "One row per physical position in march/groups26.tsv. The measured count includes every unresolved slot. The full population of distinct underlying groups is unknown."
+      }
+    },
+    {
+      "id": "no21",
+      "date": "14 March 1807",
+      "year": 1807,
+      "country": "Kingdom of Holland",
+      "language": "French",
+      "shelfmark": "Nationaal Archief, 2.01.08, inventory 248, scans 14–17",
+      "cleartext_in_document": "unknown",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "Contemporary French decipherment in the same file, transcribed in vienna_contribution/references/heldout21.txt."
+      },
+      "read": "not read",
+      "length": {
+        "tokens": 432,
+        "unit": "code groups",
+        "measured": true,
+        "file": "vienna_contribution/march14/groups21.tsv"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Two independent cipher-panel readings of inventory 248, scans 14–17.",
+        "notes": "One row per physical position in march14/groups21.tsv. The measured count includes every unresolved slot. The full population of distinct underlying groups is unknown."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "code"
+    ],
+    "summary": "Marked numerical groups represent French words and word parts.",
+    "symbol_kind": "digits and symbols",
+    "digit_groups": {
+      "width": "variable"
+    },
+    "distinct_symbols": "unknown",
+    "diacritics": {
+      "used": true,
+      "note": "Superscripts and trailing strokes distinguish numerical groups in the strict transcriptions."
+    },
+    "homophones": {
+      "used": "unknown"
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "word parts",
+        "common words"
+      ]
+    },
+    "nulls": {
+      "present": "unknown"
+    },
+    "key_order": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "found": "before attempt",
+      "used": true,
+      "where": "Period decipherments in Nationaal Archief, 2.01.08 inv. 248. No. 23 trained the table. The two March test references were sealed separately. Before fitting, the investigator had seen a small view of scan 174 including part of a French page. The January investigator had seen its clear copy."
+    },
+    "inputs": [
+      "images",
+      "transcription",
+      "known plaintext"
+    ],
+    "attack": "known plaintext",
+    "models": "unknown",
+    "human_role": "Andrew Beling directed this project. AI agents transcribed the documents and performed the tests.",
+    "first_date": "2026-11-19",
+    "last_date": "2026-11-20"
+  },
+  "solution": [
+    {
+      "kind": "access",
+      "date": "2026-11-19",
+      "what": "Revisited the November 14 inventory survey, identified period decipherments and separated the Vienna papers from the Düsseldorf target.",
+      "result": "worked"
+    },
+    {
+      "kind": "transcription",
+      "what": "Two readers transcribed each cipher panel independently before reconciliation. The French references were transcribed separately.",
+      "result": "worked"
+    },
+    {
+      "kind": "control",
+      "what": "January within-letter test matched two of five predictions, both de. Of 1,000 shuffled controls, 226 tied or exceeded that score. The investigator had seen the French reference.",
+      "result": "failed"
+    },
+    {
+      "kind": "solver",
+      "technique": [
+        "beam/DP decoding",
+        "plaintext matching"
+      ],
+      "what": "Two monotone dynamic-programming alignments against the period copy for No. 23 agreed on 93 marked group candidates, 53 whole words and 40 fragments.",
+      "result": "partial"
+    },
+    {
+      "kind": "prediction",
+      "what": "The frozen table predicted 43 whole tokens for No. 26. 32 matched the sealed French source within the registered position window. Best shuffled score 16.",
+      "result": "worked"
+    },
+    {
+      "kind": "prediction",
+      "what": "The same table predicted 61 tokens for No. 21. 48 matched the sealed source within the registered window. Best shuffled score 20. The sole complete word assembled from fragments missed.",
+      "result": "worked"
+    },
+    {
+      "kind": "sibling key",
+      "what": "In the separate Düsseldorf comparison only two word placements were testable, below the minimum of eight. The unread companion was left untested.",
+      "result": "failed"
+    },
+    {
+      "kind": "verification",
+      "what": "Independent readings of the later inventory 204A annotations placed the reported 227 in a Munich dispatch. None of the notes entered the Vienna fit.",
+      "result": "worked"
+    }
+  ],
+  "outcome": {
+    "validation": {
+      "date": "2026-11-20",
+      "verdict": "not applicable",
+      "notes": "This contribution has sparse, position-tolerant word predictions and no continuous token-aligned reading for an n-gram test. The frozen March protocols compare the fixed table against two historical decipherments and 1,000 shuffled tables per letter."
+    },
+    "class": "not read",
+    "key": "partial",
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "The March table was fitted to No. 23 and its contemporary decipherment in the same archive file.",
+    "first_break": false,
+    "contribution": [
+      "transcription",
+      "key recovered"
+    ],
+    "verification": [
+      "contemporary decipherment",
+      "statistical test"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "ajbeling",
+        "role": "solution",
+        "note": "Partial reconstruction and two prospective cross-letter tests of the marked numerical table, with AI agents. All four historical readings predate this work."
+      },
+      {
+        "who": "contemporary",
+        "role": "key or decipherment used",
+        "source": "Nationaal Archief, 2.01.08, inv. 248",
+        "note": "French clear copies used for training and comparison."
+      }
+    ],
+    "key_file": "vienna_contribution/march/key.tsv",
+    "texts": [
+      {
+        "doc": "no7",
+        "label": "No. 7, 24 January",
+        "transcription": "vienna_contribution/january/vienna_groups.tsv",
+        "contemporary": "vienna_contribution/january/vienna_clear_copy.txt",
+        "state": "decoded, not read",
+        "language": "fr",
+        "summary": "The period copy discusses General Vincent’s mission and what the French ambassador knew about it.",
+        "note": "Historical French reference. The project used this letter for fitting; it supplies no independent reconstructed reading."
+      },
+      {
+        "doc": "no23",
+        "label": "No. 23, 21 March",
+        "transcription": "vienna_contribution/march/groups23.tsv",
+        "contemporary": "vienna_contribution/march/train23.txt",
+        "state": "decoded, not read",
+        "language": "fr",
+        "summary": "The period copy describes preparations to travel to Holland and reports plans for an Austrian militia.",
+        "note": "Historical French reference. The project used this letter for fitting; it supplies no independent reconstructed reading."
+      },
+      {
+        "doc": "no26",
+        "label": "No. 26, 28 March",
+        "transcription": "vienna_contribution/march/groups26.tsv",
+        "contemporary": "vienna_contribution/references/reference26.txt",
+        "state": "decoded, not read",
+        "language": "fr",
+        "summary": "The period copy reports artillery moved at night and discusses conflicting reports about its destination.",
+        "decryption": "vienna_contribution/march/label_coverage26.tsv",
+        "note": "Sparse output of the fixed March candidate table, including every slot."
+      },
+      {
+        "doc": "no21",
+        "label": "No. 21, 14 March",
+        "transcription": "vienna_contribution/march14/groups21.tsv",
+        "contemporary": "vienna_contribution/references/heldout21.txt",
+        "state": "decoded, not read",
+        "language": "fr",
+        "summary": "The period copy reports a conversation with Count Stadion and a request for leave.",
+        "decryption": "vienna_contribution/march14/label_coverage21.tsv",
+        "note": "Sparse output of the fixed March candidate table, including every slot."
+      }
+    ],
+    "notes": "The selected predictions use a positional tolerance and count words against historical references. They supply no document-wide read share. Three whole-word candidates matched every opportunity across both held-out letters. Most of the 93 entries remain provisional."
+  }
+}
