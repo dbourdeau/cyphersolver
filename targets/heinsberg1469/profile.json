@@ -1,0 +1,281 @@
+{
+ "schema_version": 1,
+ "target": "heinsberg1469",
+ "title": "Heinsberg 1469 (catalogue 1618): two letters in an invented sign alphabet to Johann von Russebruck, officer of the lord of Heinsberg; simple substitution recovered from letter 1, tested on letter 2, both read",
+ "documents": [
+  {
+   "id": "fol120_letter1",
+   "read": "read",
+   "shelfmark": "Landesarchiv NRW, Abteilung Rheinland (Duisburg), AA 0582 Herrschaft Heinsberg, Akten, B 2, fol. 120r-v",
+   "date": "undated; filed with the letters of 1469 (pencil '[1469]')",
+   "year": 1469,
+   "country": "Germany",
+   "route": "Count Johann II of Nassau-Saarbrücken, lord of Heinsberg (probable, from the address and style) -> Johann von Russebruck, his officer",
+   "places": {
+    "from": "unknown",
+    "to": "Heinsberg (probable)"
+   },
+   "language": "German (15th-century chancery language, Early New High German, with Rhine-Franconian features)",
+   "cleartext_in_document": "separate passages",
+   "pages": 2,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the address on the back is in clear. The folder's summary (fol. 109r, 'Heinsberg 1469') lists 'Zwei chiffrirte Schreiben an Johann'."
+   },
+   "length": {
+    "tokens": 2299,
+    "distinct": 24,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription_120_passA.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Photographs taken in the reading room on 17 Nov 2026 by Elke Schwedmann (WGfF, Bezirksgruppe Ruhr) for this project; held privately for study, not published (Landesarchiv NRW).",
+    "image_quality": "good",
+    "notes": "Two blind passes by two independent AI agents with their own codes (pass A 2299 signs, pass B 2242); the passes differ mainly on vertical strokes (d/b). 36 lines on the recto, 12 cipher lines on the verso, then the address in clear."
+   }
+  },
+  {
+   "id": "fol121_letter2",
+   "read": "read",
+   "shelfmark": "Landesarchiv NRW, Abteilung Rheinland (Duisburg), AA 0582 Herrschaft Heinsberg, Akten, B 2, fol. 121r",
+   "date": "undated; filed with the letters of 1469 (pencil '[1469]')",
+   "year": 1469,
+   "country": "Germany",
+   "route": "Count Johann II of Nassau-Saarbrücken, lord of Heinsberg (probable, from the address and style) -> Johann von Russebruck, his officer",
+   "places": {
+    "from": "unknown",
+    "to": "Heinsberg (probable)"
+   },
+   "language": "German (15th-century chancery language, Early New High German, with Rhine-Franconian features)",
+   "cleartext_in_document": "separate passages",
+   "pages": 1,
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the address on the back is in clear. The folder's summary (fol. 109r, 'Heinsberg 1469') lists 'Zwei chiffrirte Schreiben an Johann'."
+   },
+   "length": {
+    "tokens": 372,
+    "distinct": 21,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription_121_passA.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Photographs taken in the reading room on 17 Nov 2026 by Elke Schwedmann (WGfF, Bezirksgruppe Ruhr) for this project; held privately for study, not published (Landesarchiv NRW).",
+    "image_quality": "good",
+    "notes": "Two blind passes (pass A 372 signs, pass B 359), 10 lines; address on fol. 121v in clear."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution of about 21 invented signs (circle, inverted V, 8, q-shape, 2-shape, crossed 4, T, inverted T with hook, bracket, box with two dots, domes with a dot, strokes, curls) for the letters of German; word division kept, hyphens at line ends. One sign carries d and b (or the d and b signs are too alike for the transcribers), one carries h and ch, one u and v. No nomenclator and no homophones seen.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 21,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "notes": "Two dots over the box are part of the sign n. Key in key.tsv; frozen copy in heldout/KEY_frozen.tsv."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "No decipherment on the leaves or in the file (fol. 109-121 seen). No edition or regest of the file's contents found (catalogue vetting of 3 Nov 2026: DECODE, Tomokiyo, Lasry, edition literature); no issue, pull request or target in this repository on Heinsberg before this one.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Elke Schwedmann (WGfF, Bezirksgruppe Ruhr) photographed the folder at the archive for the project. AI language-model agents (Claude) transcribed, recovered the key, ran the held-out test, read and reviewed. No human palaeographer checked the text.",
+  "tools": [
+   "photographs",
+   "scripts/ (decoder, normalisation, held-out measure)"
+  ],
+  "models": [
+   "Claude (Anthropic) agents, Opus, viewing the images"
+  ],
+  "first_date": "2026-11-17",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-11-17",
+   "kind": "access",
+   "what": "Photographs of AA 0582 B 2 fol. 1-74 and 109-121 by Elke Schwedmann (WGfF, Bezirksgruppe Ruhr), 16-17 Nov 2026; the two cipher letters are fol. 120 and 121.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "transcription",
+   "what": "Two blind passes by two independent AI agents, each with its own sign codes and atlas; correspondence of codes in key.tsv.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "solver",
+   "technique": [
+    "frequency analysis",
+    "repeat/pattern analysis",
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "Preregistration frozen (heldout/PREREG.md, SHA-256) before any key search: letter 1 for training, letter 2 held out. On letter 1 only: frequent short words (und 32x, uns 20x, die, daz, du, wir, mit) gave the substitution by hand; the whole letter read at once.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "control",
+   "technique": [
+    "language-model scoring",
+    "statistical test"
+   ],
+   "what": "One measure on letter 2 (held out, both passes) with the key, lexicon and script frozen by SHA-256: lexical coverage S = 0.580 (pass A) and 0.548 (pass B) against at most 0.073 for 200 keys with permuted values. Preregistered outcome: PARTIAL (threshold 0.85 not reached, margin over the controls 0.48-0.51); the low coverage comes from the lexicon (letter 1 vocabulary plus a hand list), since the decryption of letter 2 reads throughout.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "reading",
+   "what": "Both letters read with every doubtful word marked; strict counts letter 1: 535 sure, 6 probable, 2 restored, 3 unresolved of 546 words (99.1 %); letter 2: 85 sure, 2 probable, 1 unresolved of 88 (98.9 %).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "verification",
+   "technique": [
+    "key matching",
+    "other"
+   ],
+   "what": "Independent AI reviewer: own decoder from key.tsv reproduces both mechanical decryptions (549/549 and 90/90 words); sentences read against the translations; 12 places checked on the photographs (r02, r10, r16, r22, r24, r27, r36, v01, v02, 121 l. 2, 5, 9). Corrections taken over: r27 'niemt', Korfurst[en] and dat[u]m marked as restored.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Repository issues, pull requests and targets searched for Heinsberg, Russebruck, 1618, ar-776: nothing. Catalogue vetting (3 Nov 2026) found no edition or decipherment.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Substitution recovered from letter 1 by frequent words; frozen and tested on letter 2 (held out).",
+  "first_break": true,
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "sender or date identified"
+  ],
+  "fraction_read": 0.99,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Strict word counts in reading_120.md and reading_121.md (sure + probable over all words of both letters).",
+  "verification": [
+   "matched control",
+   "independent verification",
+   "historical consistency"
+  ],
+  "provenance": "project",
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "key recovered and both letters read (Claude agents); photographs by Elke Schwedmann (WGfF, Bezirksgruppe Ruhr) of Landesarchiv NRW AA 0582 B 2",
+    "date": "2026-11-17"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "two blind passes by AI agents",
+    "date": "2026-11-17"
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "heldout/KEY_frozen.tsv"
+  ],
+  "gaps": [
+   {
+    "item": "Letter 1, r18: two words ('3rude', 'sen'); r35: 'gedin'",
+    "blocker": "not-attempted",
+    "detail": "Unresolved; the first sign of r18 occurs only here."
+   },
+   {
+    "item": "Letter 2, l. 9: 'dame'",
+    "blocker": "not-attempted",
+    "detail": "A name or 'dan me'; unresolved."
+   }
+  ],
+  "texts": [
+   {
+    "doc": "fol120_letter1",
+    "label": "Letter 1, fol. 120r-v (48 cipher lines)",
+    "transcription": [
+     "transcription_120_passA.txt",
+     "transcription_120_passB.txt"
+    ],
+    "decryption": [
+     "decryption_120_passA.txt",
+     "decryption_120_passB.txt"
+    ],
+    "reading": "reading_120.md",
+    "translation": "translation_120.md",
+    "language": "de",
+    "state": "read",
+    "summary": "To his officer: Krumel's loan. Ask him to wait a month or six weeks, or else take his money and return the letters of debt with a sealed receipt; his letters stipulate Electors' gulden struck before their date, so offer four gulden per hundred as surcharge in other coin; find out what bond the new lenders want, whether Godart von Flodrop will lend for the redemption, and ask the Vogt of Roermond not to press for his money now.",
+    "note": "546 words: 535 sure, 6 probable, 2 restored, 3 unresolved.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (Claude, review session)",
+     "date": "2026-11-17",
+     "note": "Reads as coherent prose over 48 lines about deferring and repaying Krumel's loan (sealed receipt, Electors' gulden, a four-per-hundred surcharge, Godart von Flodrop, the Vogt of Roermond); translation faithful. Doubtful: r18 (two unresolved words), r35-36, v02 phrasing. Own decoder reproduces the decryption 549/549 words; 9 places checked on the photographs; its corrections (r27 niemt, restorations marked) were taken over."
+    }
+   },
+   {
+    "doc": "fol121_letter2",
+    "label": "Letter 2, fol. 121r (10 lines)",
+    "transcription": [
+     "transcription_121_passA.txt",
+     "transcription_121_passB.txt"
+    ],
+    "decryption": [
+     "decryption_121_passA.txt",
+     "decryption_121_passB.txt"
+    ],
+    "reading": "reading_121.md",
+    "translation": "translation_121.md",
+    "language": "de",
+    "state": "read",
+    "summary": "To his officer: come to Aachen on Friday evening or Saturday morning with Hucking the rent-master, the money and the needed letters; tell Krumel to come too; the lord's envoy will be there; keep Heinsberg safe meanwhile.",
+    "note": "88 words: 85 sure, 2 probable, 1 unresolved.",
+    "reading_review": {
+     "grade": "A",
+     "by": "independent AI language-model agent (Claude, review session)",
+     "date": "2026-11-17",
+     "note": "Reads as clean connected prose throughout: the officer is told to come to Aachen with Hucking and the money, bring the needed letters, summon Krumel and keep Heinsberg secure during the absence. Translation is faithful; only 'dame' is unresolved and the rent[m]eister restoration is marked. Own decoder reproduces the decryption 90/90 words."
+    }
+   }
+  ]
+ }
+}
