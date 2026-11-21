@@ -194,6 +194,23 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     these two positions. Not opened in CTTS; the rows `-`, `<5`, w and 2, and the new `7` and `f` contents, are not yet
     confirmed by the person.
 
+    **Per-side sort of the 7 / dash shapes (21 Nov 2026, a fork of the session, on the owner's "yes apply it").** The label test
+    (`test_labels_known.py`: nine rows with an established reading decoded from each label version, difflib letter ratio:
+    blind first pass 0.52, first correction 0.86, round 5 0.84, round 6-7 0.82) showed round 6's size rule had moved three
+    yods of the Burda lines (S2L09 twice, S2L07 once) from `-` to `7`. The long `>`-shaped stroke is the yod on side 2 (גיראן,
+    ידי, גרי, פי), while on side 1 it is the scribe's bet in S1L02 יבכ and S1L04 ויבכ but also the yod in the margin
+    signatures, so the side-1 rule is not settled. Applied (`apply_perside_j479.py`, `corrections8.tsv`): the three yods back
+    to `-`; the resh loop of אלברק (S2L05_10) `?7` to `?8`; the two side-1 text 7 boxes not yet marked (S1L08_5, S1L13_6)
+    marked uncertain. Agreement with the established readings 0.841. **Now 699 boxes in 82 types, 180 uncertain, 517 certain
+    boxes in 34 table rows** (`-` 28, `J` 4, `7` 3, `f` 20, `8` 7). Decoding the open rows (S1L05-08, S1L13, S2L10, S2L13,
+    S2L17, S2U01) from these labels (`decode_ctts.py`) gave **no new word**: the correction work has not improved the reading.
+
+    **Person's review of the key, stated (21 Nov 2026, Daniel Bourdeau).** After the rounds above (24 rows ticked, 46
+    cut-outs circled and removed, the P-to-f, 7/dash and `a` points applied, and the final table sent to him), the owner
+    states that he reviewed the CTTS key as a human, so it counts as human-reviewed. What that covers: the printed table
+    of 518 certain boxes in 34 rows, by eye and without AI; it does not cover the 181 boxes marked uncertain, nor the
+    box geometry in the project files, which were not opened in CTTS.
+
 ## Result
 
 Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent
