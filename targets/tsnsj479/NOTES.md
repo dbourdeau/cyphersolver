@@ -208,8 +208,28 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     **Person's review of the key, stated (21 Nov 2026, Daniel Bourdeau).** After the rounds above (24 rows ticked, 46
     cut-outs circled and removed, the P-to-f, 7/dash and `a` points applied, and the final table sent to him), the owner
     states that he reviewed the CTTS key as a human, so it counts as human-reviewed. What that covers: the printed table
-    of 517 certain boxes in 34 rows, by eye and without AI; it does not cover the 180 boxes marked uncertain, nor the
+    of 518 certain boxes in 34 rows, by eye and without AI; it does not cover the 181 boxes marked uncertain, nor the
     box geometry in the project files, which were not opened in CTTS.
+
+    **More boxes made certain (21 Nov 2026, on the owner's "can't we do better").** 24 of the 180 uncertain boxes sit in rows with an
+    established reading (the Burda lines S2L05-09, the signature S1L11, S1L01, S1L02, S1L04, S2L15) and decode to the verified
+    letter; they lost their `?` (`settle_by_reading_j479.py`, `settled9.tsv`). These are certain because the verified text needs
+    this sign here, not because the person checked them by eye, so the table is less independent of the reading for them.
+    **Now 699 boxes in 82 types, 156 uncertain, 541 certain boxes in 37 table rows.** Of the 156: 60 sit in the alphabet rows and
+    columns (the slot fixes the letter; not yet used), the rest in text rows, many of them badly placed boxes that need
+    redrawing in CTTS, plus the cut-outs and rows the owner circled or questioned.
+
+    **Alphabet rows settled by slot position (21 Nov 2026, on the owner's "yes, do it").** A reviewer matched each of the 60 uncertain
+    boxes in the 13 alphabet bands to its slot in the Hebrew order (`alpha_decisions.json`, `apply_alpha_j479.py`,
+    `alpha_applied.tsv`): 29 settled, 12 relabelled and settled, 3 fragments deleted, 16 kept uncertain (out-of-sequence boxes,
+    shapes that do not fit the slot, one p/P doubt). Row directions: left to right in S2L23, S2L22, S2L21, S2U02, S2U03,
+    S1L09, S1L15; right to left in S2L20 (box n is slot 23-n) and S1L14; the columns S2V01, S2V02 read right to left with
+    the glyphs turned 180 degrees; S1L03 is a turned alphabet B-to-L; S1L16 is letter practice. Broken sequences: S2V01 (two
+    O, two I, a repeated tail), S2V02 (a mount hole over slots 10-12), S1L09 (slot 1 holds a 7-shape), S1L15 (t and y skipped),
+    S1L14 (an extra sign after the last I), S2U02 (I U E A twice), S2U03 (tail n, 2, I), S2L22 (box 18 is E where S belongs). These
+    boxes are certain by position (the slot fixes the letter and the shape does not contradict it), not by an independent look at
+    the shape; weaker settles: S2V01_21, S2V01_9, S2V02_17, S2U03_6, S2L20_4, and S2V01_24 and 25 judged one A. **Now 696 boxes in 80
+    types, 112 uncertain, 582 certain boxes in 38 table rows.** Agreement with the established readings unchanged (0.841).
 
 ## Result
 

@@ -21,7 +21,7 @@ def dec(boxes, labels, band, side):
         out += ('b' if side == 1 else 't') if lab == '7' else H.get(lab, '*')
     return out
 print('version  ' + ' '.join(f'{b:6s}' for b in KNOWN) + '  mean')
-for v in ['', '5', '6', '7', '8']:
+for v in ['', '5', '8', '9', '10']:
     try:
         bx = json.load(open(P / f'boxes_corrected{v}.json', encoding='utf-8')); lb = json.load(open(P / f'labels_corrected{v}.json', encoding='utf-8'))
     except FileNotFoundError: continue

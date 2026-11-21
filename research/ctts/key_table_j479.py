@@ -17,7 +17,7 @@ HEB = dict(zip(ORDER, 'אבגדהוזחטיכלמנסעפצקרשת'))
 HEB.update({'a': 'ת', 's': 'ר', '8': 'ר', '5': 'ר', 'Bc': 'ח', 'J': 'י', '<5': 'כ', 'e': 'ח', 'f': 'מ', 'b': 'ל', 't': 'ן'})   # y, n, o: no letter established
 colors = [l.split(';')[0] for l in open(P / 'ctts' / 'colors.txt', encoding='utf-8') if l.strip()]
 CORR = any(a.startswith('--corrected') for a in sys.argv)
-SUF = next((a[-1] for a in sys.argv if a.startswith('--corrected') and a[-1].isdigit()), '')
+SUF = next((a[len('--corrected'):] for a in sys.argv if a.startswith('--corrected') and a[len('--corrected'):].isdigit()), '')
 boxes = json.load(open(P / (f'boxes_corrected{SUF}.json' if CORR else 'boxes_final.json'), encoding='utf-8'))
 labels = json.load(open(P / (f'labels_corrected{SUF}.json' if CORR else 'labels_final.json'), encoding='utf-8'))
 status = None if CORR else json.load(open(P / 'status_final.json'))
