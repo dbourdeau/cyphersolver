@@ -39,7 +39,7 @@
   },
   {
    "id": "m367-83-0114",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "NARA RG 59, 763.72/9377, M367 roll 83, image 0114",
    "date": "28 February 1918",
    "year": 1918,
@@ -156,10 +156,11 @@
    ],
    "what": "Eight garbles in the reply located and restored, each forced by its word (mostly Morse confusions, two overstrikes).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728): cable 1 16/16 (read), cable 2 41/50 (0.82, read in part); the nine restored letters are now marked in the text of reading.md, not only in its header.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-11-02", "verdict": "not applicable", "notes": "A Vigenère key (the 8-letter word FEBRUARY) found from the reply and confirmed on a second, unused cable that decrypts to 94 of 94 letters of English with 0 of 1,000 shuffles reaching its score; the n-gram validator is built for homophonic and nomenclator keys."}, 
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
   "method_basis": "Period from repeats, key from frequencies on the reply; confirmed on the other cable.",
@@ -168,9 +169,9 @@
    "key recovered",
    "catalogue correction"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.864,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Cable 1: 94/94 letters. Cable 2: 297/305 letters direct, 8 restored garbles; every word read; final OK and 17527 not interpreted.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): cable 1 16 of 16 words, cable 2 41 of 50 (the 9 words with a restored letter are holes, now marked in reading.md); 57 of 66 over both. Before: counted in letters (94/94 and 305/305 read in their sense).",
   "first_break": true,
   "verification": [
    "matched control",
@@ -201,7 +202,9 @@
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: one complete telegraphic question in English; 9 letters restored over the whole reading.md (both cables), no hole."
-    }
+    },
+    "read_share": 1.0,
+    "note": "18 Nov 2026, cipher words only, sure words only: 16 of 16 words sure; stays read."
    },
    {
     "doc": "m367-83-0114",
@@ -211,14 +214,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "en",
-    "state": "read",
+    "state": "read in part",
     "summary": "No automatic stations between Honolulu and San Francisco; wavelengths 4,000 m or above; a suspicious automatic station heard in the US since 15 February.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: four complete telegraphic sentences (stations, wavelengths, the suspicious station heard since 15 Feb); restored letters only, no hole. The 44% sentence score comes from the telegraphic style and PERIOD markers."
-    }
+    },
+    "read_share": 0.82,
+    "note": "18 Nov 2026, cipher words only, sure words only: 41 of 50 words sure (82.0%); the 9 words with a restored letter (8 transmission garbles, 1 letter left out by the encipherer) are holes. Before: all 305 letters counted as read in their sense."
    }
   ],
   "key_file": "key.txt",

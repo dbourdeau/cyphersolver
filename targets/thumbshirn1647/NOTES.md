@@ -1,6 +1,6 @@
 # thumbshirn1647: the Saxe-Altenburg envoys at the Westphalian congress (LATh - StA Altenburg, Schönbergische Sammlung Nr. 85): 1647 key rebuilt and validated; a postscript of 1648/49 read with Thumbshirn's key
 
-Status: read (Brice Dudout, 9 Nov 2026; postscript 0837 read 23/23 words, 20 certain and 3 probable, with the period key of image 0003 unchanged; the 1647 homophonic key rebuilt from the decipherments of the time and validated on a held-out letter, 0.966 vs best of 200 shuffled keys 0.245). New text: the postscript only; the 1647 cipher passages have their decipherments of the time.
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 20 of 23, 87.0%). Was read (Brice Dudout, 9 Nov 2026; postscript 0837 read 23/23 words, 20 certain and 3 probable, with the period key of image 0003 unchanged; the 1647 homophonic key rebuilt from the decipherments of the time and validated on a held-out letter, 0.966 vs best of 200 shuffled keys 0.245). New text: the postscript only; the 1647 cipher passages have their decipherments of the time.
 
 Contributed by Brice Dudout (L'Europe chiffrée), with Claude Opus 5.5 agents. Source: **Landesarchiv Thüringen - Staatsarchiv
 Altenburg, Schönbergische Sammlung, Nr. 85**; digitisation **ThULB Jena** (urn:nbn:de:urmel-stat-251122), licence **CC BY 3.0**
@@ -55,3 +55,20 @@ None for the target texts: the postscript reads in full and the 1647 passages ar
 - [x] print: ThULB record, Acta Pacis Westphalicae, Meiern, Brunert checked; no edition of Nr. 85
 - [n/a] key-rebuild: the 1647 key is validated and 0837 reads with the period key
 - [n/a] retry: nothing unread
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+Postscript 0837: 23 cipher words, 20 certain, 3 probable (three numbers marked uncertain in the transcription). Sure
+words only: **20 of 23 = 87.0%**: class **read -> read in part** (was 100%). The key is the period key, unchanged; the
+one-digit slip rule could apply only after the three numbers are looked at on the image, which was not done here.
+`research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
+
+## Floor for short texts (19 Nov 2026)
+
+README rule of 19 Nov 2026 (owner's decision): a document of fewer than 40 cipher words is read when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more; never for 40 words or more. Applied to the counts of 18 Nov above, nothing recounted, for the documents under 95%:
+
+- nr85-0837: 23 cipher words, 3 holes -> stays read in part (more than 2 holes)
+
+The class stays **read in part**.

@@ -1,6 +1,6 @@
 # Sanguszko archive 1662: anonymous enciphered letter, 31 July 1662 (catalogue 443)
 
-Status: read (Brice Dudout, 29 Oct 2026; 71 of 71 words read in their sense, 67 certain, 3 probable, 1 restored, 0 unresolved; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 67 of 71, 94.4%). Was read (Brice Dudout, 29 Oct 2026; 71 of 71 words read in their sense, 67 certain, 3 probable, 1 restored, 0 unresolved; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 29 Oct 2026. Published write-up (local, to be pushed when the GitHub account is restored):
 https://bdudout.github.io/europe-chiffree/en/documents.html#asang-1662
@@ -38,3 +38,12 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - “Do not believe every spirit.” First Epistle of John 4:1, “nie każdemu duchowi wierzcie” in the Wujek Bible (1599): a warning against false rumours.
 - Probable words and the restored word. {kogs}: letters certain; we take it as “kogoś” (someone), written short; a proper name is not excluded. kozdem{u} and Cur{f}irst: on the reverse, two groups occur only once and were not in the key drawn from the front: Ꝑt33, a variant of ϕt33 (u), and Mig4, f from the sense (Curfirst = Kurfürst). zapowiedzie[i]li: one group is partly covered by an ink blot; place and sense give i.
 - Punctuation. Stops and commas are the cipher’s own; “Gd. anska” is written with a stop in the middle (“do Gdańska”). Between “Sam” and “zdrowie” the writer left a few words in clear (“… MM Pan”), not transcribed in full here (uncertain reading) and not counted.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+The reading already counts the enciphered part only: 71 cipher words, 67 certain, 3 probable ({kogs}, kozdem{u},
+Cur{f}irst), 1 restored (zapowiedzie[i]li). Sure words only: **67 of 71 = 94.4%**, just under the bar: class
+**read -> read in part**. The old 100% counted the probable and restored words as read. Not recounted word by word
+here (the reading's own figures are used); no image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
