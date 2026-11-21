@@ -2,15 +2,14 @@
 # source: G120 = in Gabbrielli's key no. 120 for Acciaioli (gabbrielli-120.md); v6 = Brice Dudout's Pandolfini key;
 #         190/191 = fixed by the cipher letter 190 against its clear copy 191
 #         (190-calibration.md), whose own shape names I matched to mine by description; 192 = fixed on this letter by sense.
-# kind second = a second value of a sign already in the table. decode.py does not apply it: the reading takes it at the
-#         places listed in 192-repairs.tsv and marks each one in brackets.
+# Second values of signs already in this table are in key-second.tsv; decode.py does not apply them. The reading takes
+#         one only at the places listed in 192-repairs.tsv and marks each in brackets.
 vowel	1	u	G120	superscript figure
 vowel	2	o	G120	superscript; written as a flat tilde in this hand
 vowel	3	i	G120	
 vowel	4	e	G120	
 vowel	5	a	G120	
 base	2	c	G120	G120 has two 2-like signs, a plain 2 = b and a z-like 2 = c; the token 2 covers both (sign2_forms.tsv)
-second	2	b	G120	the plain 2 of G120; read at the 14 places of 192-repairs.tsv
 base	3	d	G120	
 base	4	g	G120	
 base	5	m	G120	
@@ -19,7 +18,6 @@ base	7	r	G120
 base	d	r	v6	
 base	8	t	G120	
 base	9	v	G120	
-second	9	z	190/191	9 with a vowel is z as well as v in 190/191 (senza, forteze); G120's z is a 9 with a bar or hook on its tail (sign g)
 base	x	l	G120	
 base	y	f	G120	
 base	r	s	G120	
@@ -51,7 +49,6 @@ bare	Z	t	G120	dash joined to a small loop, always before 7 (tr)
 bare	Ø	t	G120	circle cut by one slanting stroke: altra V03, distribuito V04, riscontro V06
 bare	g#	gg	G120	g-like sign with two short bars: passaggio R04, V04
 bare	A	m	G120	before p and b: tempesta, Ciampagna, imbarcato
-second	A	bene	G120	word sign, a pencil addition in G120; the triangle standing alone is bene in 190/191 (non stanno bene, sarà bene)
 bare	5	m	v6	
 bare	n	p	G120	pi-like sign: procedere, pratiche, prelati (190/191)
 bare	Q	e	190/191	beta-like sign: le lettere, solieri (190/191). Dudout's e is a barred circle, which here is x
@@ -77,7 +74,6 @@ word	R	quando	G120	R = quando in key 120
 word	qu	più	G120	
 word	T^m	Sua Maestà	G120	
 word	L^r	vostra	190/191	la Magnificentia Vostra (190/191); plural by sense at R01
-second	L^r	vostre	192	plural after Signorie, R01
 word	M^n	nientedimeno	G120	M with a raised n, R19; the two signs after it are struck through
 word	M^0	nostro	190/191	benefitio di Nostro Signore (190/191, one place)
 word	D^1	chi	G120	comunichi, richiamarlo, da chi maneggia (190/191)
@@ -87,9 +83,9 @@ code	20	Svizzeri	G120
 code	2	papa	G120	
 code	22	Lanzichinecchi	G120	key 120
 code	15	Vinitiani	192	by context: the rout of 15 reported by Martelli, Florence's man at Vicenza (Venetian defeat of 7 Oct 1513); in doc. 190 a 15 stands for Rubertet
-number	2	2	192	2 mila
-number	5	5	192	5 cento
-number	8	8	192	8 cento lance
+number	=2	2	192	2 mila; the = is editorial (192-transcription.txt)
+number	=5	5	192	5 cento
+number	=8	8	192	8 cento lance
 number	10	10	192	
 number	11	11	192	la vostra delli 11
 number	12	12	192	
