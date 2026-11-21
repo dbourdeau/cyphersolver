@@ -84,3 +84,43 @@ Secondary check, informative only and declared uninformative before the run: ali
 interlinear glosses, C = 1.000 but 1.000 for the best shuffled key too (a 27-letter sparse gloss aligns anywhere in 677 letters).
 Found by reading after the measurement (not part of the test): five transcription choices of the arbitration were wrong (see the header of
 transcription-f16041-271.txt) and g8 is m on this page; corrected, the reading reaches 95.0% of words (reading-f16041-271.md).
+
+== 6. Key K-C04 re-tested on a NEW page: BnF fr. 16041 f. 272 r (17 Nov 2026) ==
+Pre-registration PREREG-KC04 (SHA-256 e9d3ea33..., hashed 16:52 CET, before any transcription or decoding of the block). Key K-C04 (ac46f07f...)
+= K-C03.1 + g8 = m and X with doubled arms (new3) = u, both learned on f. 271 after its measurement (key-f16041-272r.tsv).
+Block B = view 552 (f. 272 r), a whole page in cipher (24 lines), the next page of the f. 271 letter; never transcribed, decoded or measured before
+(seen only at 900 px for its layout). Prior art checked first: no other target, PR or issue (any author) on fr. 16041 f. 272; Tomokiyo cites ff. 259 and 264 only.
+Transcription: two blind passes by two AI sub-agents (crops only, shape names, no key, no values; 752 signs each, hashed 195f1adf... and 80a6862d...);
+92 differences settled on the image by rules written down before any decoding (mostly naming: the cursive alpha, the long s with a loop, = against //);
+frozen (cbdfabc0..., 752 signs without the separators). Deviation from the pre-registration, declared before the arbitration: pass A was to be
+done by the contributor's agent itself; it was done by a second blind sub-agent instead.
+Measure (same script and definition as section 5, seed 272). Two bars were fixed in advance: (a) the bar asked for in the brief, "0.85 and best
+control + 0.30", expressed as a share of the lexical ceiling, R = M5 / 0.634 (0.634 = mean M5 of our four clear readings of pp. 513, 517, 518 and
+f. 271), declared likely to fail; (b) the bar of sections 3-5: M5 >= 0.45 and >= best control + 0.30; gap >= 0.30 alone = partial.
+Result (one run): 752 signs, 732 with a value (0.973); M5 = 0.414 (fr 0.414, it 0.359); best control 0.097 (median 0.033); gap 0.317.
+R = 0.65 < 0.85: bar (a) not met. Bar (b): M5 below 0.45, gap above 0.30: PARTIAL. The block is used up.
+Found by reading after the measurement (not part of the test): the sign transcribed g8 is e on this page (K-C04 had m, from f. 271: the
+passes gave the name g8 to two different small looped signs), and several = were transcribed where the sense needs // (t). Both lower M5.
+Reading: reading-f16041-272r.md, 179 words, 114 certain / 44 probable / 21 unresolved: strict 63.7%, certain + probable 88.3%; read in part.
+
+== 7. Key K-C05 tested once on a NEW page: BnF fr. 16041 f. 272 v (17 Nov 2026, evening) ==
+Pre-registration PREREG-KC05 (SHA-256 f62420d9..., hashed 18:23 CET, before any transcription or decoding of the block). Key K-C05 (3f21bdd8...,
+key-f16041-272v.tsv) = K-C04 + five values learned on f. 272 r after its measurement (used up, learning only): g8 = e (was m; 8 read words give e,
+3 are in unresolved words, none gives m), new4 = l (6 of 6), new6 = u (3 of 3), ß = x (3 x against 2 a), sdot = m (1 case, the other pass named it ss = m).
+Not put in the key: = for // and o for dl on f. 272 r are naming errors; the shape rules given to the passes were sharpened instead (eq only if a stroke is
+horizontal; dl only if the stem touches the circle). Informative, on pages already seen: f. 272 r 0.414 -> 0.499, f. 271 v 0.462 -> 0.443 (g8 = m there).
+Block B = view 553 (f. 272 v), the cipher lines of the page (18 lines; the clear lines at the foot not used); never transcribed, decoded or measured
+(seen at 600 px for its layout). Chosen over f. 273 r, which is mostly in clear. Prior art checked first: no PR or issue of any author on fr. 16041 beyond
+#278, #557, #767 and issue #206; nothing in this repository on f. 272 v.
+Interlinear glosses (about ten short ones) masked in grey on every image given to the passes and to the arbiter; not read before the measurement.
+Transcription: two blind passes by two AI sub-agents (shape names, no key, no values; 522 and 521 signs, hashed e618e797... and 0178dbd5...);
+two new shapes seen by both renamed alike before comparison (c4, dlx); 60 differences settled on the image by a THIRD blind AI sub-agent with written
+shape rules (no key, no values); frozen (4b339f50..., 522 signs without the separators) before any decoding. Declared deviation: neither pass was made by
+the contributor's own agent (both blind sub-agents), as in section 6.
+Measure (same script and definition as sections 5-6, seed 2722; bars unchanged from section 6, fixed in the pre-registration):
+(a) R = M5 / 0.634 >= 0.85 (M5 >= 0.539) and M5 >= best control + 0.30; (b) M5 >= 0.45 and gap >= 0.30; gap >= 0.30 alone = partial.
+Result (one run, 19:03 CET): 522 signs, 508 with a value (0.973); M5 = 0.391 (fr 0.391, it 0.363); best control 0.095 (median 0.019); gap 0.296.
+R = 0.62 < 0.85: bar (a) not met. Bar (b): M5 below 0.45 and gap below 0.30 by 0.004: FAILED, though the key ranks first of 201. The block is used up.
+Found by reading after the measurement (not part of the test): new3 reads o on this page; o again transcribed where the sense needs dl in about ten words.
+Reading: reading-f16041-272v.md, 120 words, 73 certain / 19 probable / 1 restored / 27 unresolved: strict 60.8%, certain + probable 76.7%; read in part.
+Frozen files of this test are committed in kc05-frozen/ (pre-registration in French, key, block, script, hashes).
