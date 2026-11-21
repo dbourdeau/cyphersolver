@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "ags-3594-156",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "AGS, EST,LEG,3594,156 (PARES 3586918), image 1",
    "date": "19 May 1638",
    "year": 1638,
@@ -159,10 +159,11 @@
    ],
    "what": "3594,156 transcribed and read with K3f (+ hnf = Vuestra Majestad).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728): 89 of 94 on the repository files (0.947), 87 of 94 (0.926) on the corrected files; class read -> read in part.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-11-02", "verdict": "not applicable", "notes": "The key was validated in the target's own pre-registered held-out test (3594,160 against its clear copy 3594,159: 0.896 of characters, 0.784 of words; 200 permuted-value controls at the 99th percentile 0.343 and 0.204); the n-gram validator was not rerun."}, 
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "Key rebuilt from other letters of the same cipher with their contemporary plain copies, validated on a held-out pair, then applied to 3594,156.",
@@ -170,9 +171,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.989,
+  "fraction_read": 0.947,
   "fraction_read_method": "measured",
-  "fraction_read_source": "94 words in the cipher portion (“V. M.” counted as two): 89 certain, 3 probable (marqués, me, faltando), 1 restored from the sense (haciendo), 1 unresolved (code 197).",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 89 of 94 cipher words certain on the repository files (3 probable, 1 restored, 1 unresolved as holes); 87 of 94 (0.926) on the corrected transcription and reading proposed on PR #710. Before: 93 of 94 (0.989), probable counted as read.",
   "first_break": true,
   "verification": [
    "matched control",
@@ -201,14 +202,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "es",
-    "state": "read",
+    "state": "read in part",
     "summary": "In the spring of 1638 the Spanish ambassador at Genoa had to lay in munitions on the spot. The King had ordered the Marquis Pablo Jerónimo Pallavicino (“Palavesín”) to advance him the money; the Marquis was stalling. Velasco told the King in cipher: if he failed his suppliers, they would fail him in turn.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: coherent Spanish dispatch (Palavesín delaying the royal order on munitions money); one unresolved group (197, a name) and a few {probable} words, scattered."
-    }
+    },
+    "read_share": 0.947,
+    "note": "18 Nov 2026, cipher words only, sure words only: 89 of 94 words certain on the repository files (94.7%); 87 of 94 (92.6%) on the corrected files proposed on #710 (18 Nov 2026). Probable, restored and unresolved words are holes."
    },
    {
     "doc": "ags-3594-160",
