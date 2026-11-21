@@ -1,0 +1,220 @@
+{
+ "schema_version": 1,
+ "target": "binasco1592",
+ "title": "Pedro de Mendoza, conde de Binasco, to Philip II, Genoa, 25 June 1592: AGS EST,LEG,1424,43, numeric syllabary with a letter nomenclator, read in part",
+ "documents": [
+  {
+   "id": "1424-43",
+   "read": "read in part",
+   "shelfmark": "AGS, EST,LEG,1424,43 (PARES 3645975)",
+   "date": "1592-06-25",
+   "year": 1592,
+   "country": "Italy",
+   "route": "Pedro de Mendoza, conde de Binasco, Genoa -> Philip II",
+   "language": "Spanish",
+   "pages": 3,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment filed with it (PARES description: 'Carta parcialmente cifrada', no 'Descifrada en' link, checked 28 Oct 2026).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 729,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/t43_p1_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus) for Brice Dudout, 28 Oct 2026, one pass (transcription/t43_p1-3_cipher.txt)",
+    "image_quality": "good",
+    "notes": "729 units over three images (18 + 23 + 7 lines); no second blind pass yet."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Numeric syllabary in rows of five per consonant (b 10, c 15 ... z 100), vowels forward or reversed by row, marks for n, r, s, l; letter-signs for vowels; a nomenclator of short letter codes (pal duque, Tas Rey, hum gente, Zim ...).",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 10
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Same hand as EST,LEG,1424,78; 1424,2 is in another hand with other sign habits."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Period decipherments of sibling letters (1424,79 of 1424,78; 1424,1 of 1424,2; 1424,77 of 1424,76; marginal notes on 1424,70/71); none for 1424,43",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout directed; transcription, key reconstruction, preregistered measurements and reading by Claude.",
+  "tools": [
+   "decode.py, score.py (200 controls)",
+   "mesure.py (C05 M1/M2)"
+  ],
+  "models": [
+   "Claude Opus 5.5",
+   "Claude Fable 5.2"
+  ],
+  "sessions": 5,
+  "first_date": "2026-10-28",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "key from source",
+   "what": "Syllabary rows, marks and letter nomenclator learnt by aligning 1424,78 with its period decipherment 1424,79; key v1 frozen by SHA-256.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "v1 on held-out 1424,2 vs period decipherment 1424,1: 0.661 characters / 0.540 words; best of 200 controls 0.493 / 0.248; bar 0.85 / 0.75.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "v2 (+21 codes from 1424,2/1) on held-out 1424,76 vs 1424,77 (38 words): 0.723 / 0.474; controls 0.559 / 0.237.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "hypothesis",
+   "what": "Letter nomenclator in alphabetical order (0 discordances on 351 period code pairs vs min 85 in 20,000 shuffles); predicted values frozen, not adopted.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "C05 on the marginal decipherments of 1424,70/71 (166 units, indicative): M1 0.479 / 0.333 vs controls 0.391 / 0.167; M2 2 of 3 predicted codes exact (p = 0.003), window 2 of 3: failed its criterion.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "1424,43 recounted with hum = gente, mel = dineros, Tas = Rey from the period glosses: 89.8% of 403 words sure + probable.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from period decipherments filed with sibling letters in the same legajo; not validated on a held-out portion at the programme's bar.",
+  "parts": [
+   {
+    "label": "1424,43 cipher parts",
+    "records": "AGS EST,LEG,1424,43",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "key_v2.json + four codes attested in 1424,70"
+   }
+  ],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "decipherment with ambiguous key"
+  ],
+  "class": "read in part",
+  "fraction_read": 0.898,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading/t43_reading_es.txt, Daniel's rule (sure + probable over 403 words, 14 Nov 2026 recount)",
+  "key": "partial",
+  "codes_open": {
+   "open": 10,
+   "tokens_open": 37
+  },
+  "gaps": [
+   {
+    "item": "codes Zim, Jas, dir, tur, ne, gim, rol, dis, Jee, qua(e)",
+    "blocker": "open-codes",
+    "detail": "no period decipherment attests them; Zim x5, Jas x4"
+   },
+   {
+    "item": "validation on a fresh portion of 300+ units in the hand of 1424,78",
+    "blocker": "needs-physical-access",
+    "detail": "pairs online in legajo 1424 used up or struck through; original cipher of 1424,72 and originals of 1424,70/71/75 not found online"
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "matched control",
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "notes": "Preliminary reading, contributor's own review; key not validated. Held-out tests (preregistered, not docs/_validate.py): Three preregistered held-out tests, all significant against 200 controls but below 0.85 / 0.75; the last (C05) failed its own criterion.",
+  "texts": [
+   {
+    "doc": "1424-43",
+    "label": "Binasco to Philip II, Genoa, 25 June 1592, cipher parts",
+    "transcription": [
+     "transcription/t43_p1_cipher.txt",
+     "transcription/t43_p2_cipher.txt",
+     "transcription/t43_p3_cipher.txt"
+    ],
+    "decryption": [
+     "reading/t43_reading_es.txt"
+    ],
+    "summary": "A Corsican privateer recruiting in a Genoese port for Provence; Montmorency at Villeneuve raising money and men against Lesdiguières and Savoy; Lorraine, Béarn and the election; Genoa resolves to fortify Savona and La Spezia.",
+    "language": "es",
+    "reading": "reading/t43_reading_en.md",
+    "translation": "reading/t43_reading_en.md",
+    "state": "read in part",
+    "read_share": 0.898,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-17",
+     "note": "Preliminary; not a second reader. Key not validated; one transcription pass."
+    }
+   }
+  ],
+  "key_file": [
+   "key_v2.json"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Transcription, key from the period decipherments, preregistered tests and reading (Claude for Brice Dudout).",
+    "date": "2026-11-17",
+    "source": "this folder"
+   }
+  ]
+ }
+}
