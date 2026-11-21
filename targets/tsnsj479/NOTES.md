@@ -208,7 +208,7 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     **Person's review of the key, stated (21 Nov 2026, Daniel Bourdeau).** After the rounds above (24 rows ticked, 46
     cut-outs circled and removed, the P-to-f, 7/dash and `a` points applied, and the final table sent to him), the owner
     states that he reviewed the CTTS key as a human, so it counts as human-reviewed. What that covers: the printed table
-    of 518 certain boxes in 34 rows, by eye and without AI; it does not cover the 181 boxes marked uncertain, nor the
+    of 517 certain boxes in 34 rows, by eye and without AI; it does not cover the 180 boxes marked uncertain, nor the
     box geometry in the project files, which were not opened in CTTS.
 
 ## Result
