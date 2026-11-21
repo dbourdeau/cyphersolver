@@ -8,10 +8,18 @@ This stretch does **not** read: ll. 2-3 do not build a sentence. Lines 8-14 (the
 
 ## Reading
 
-… noch nicht zu vernehmen, die Landts[…] […]. […] [?w]ir dennoch nur [?b]eit ihr endes halber […] ursach[…]
-[?be]schwerungen ich ag[…] [di]eses orts halber […] dagegen denselben etwas tentiert we[r]en solte, zumahl nicht
-unbewandt, w[?a]s und ob en gebührender manutenirung der [?Keiserm.] Mait. und [?des] Reich[s], wie auch [K. Chur…]
-bei di[…]n boni […] ungelegen.
+Revised 20 Nov 2026 on the CTTS re-transcription (`R4500_ctts_tokens.txt`, `R4500_ctts_test.md`), with the marked
+signs valued (9 with a bow = b/w, 0 with dots or bow = z, triangle with bar = ll, long s with two crosses = ss):
+
+… noch nicht zu vernehmen, die [?L]andts ta[…] […] [?w]ir dennoch nur [?s]eit ihr end[…]s halber ihr ursac[h]…
+[?be]schwerungen ich ag[…] [di]eses orts halber […] dagegen denselben etwas tentiert werden solte, zu[m]ahl nicht
+unbewandt, w[a]s und o[b] en gebührender manutenirung der [K]eiser[l.] Mait. und de[m] Reich, wie auch [K. Churf.]
+bei diesen conjuncturn gelegen;
+
+Before (23 Oct 2026): "… we[r]en solte … der [?Keiserm.] Mait. und [?des] Reich[s], wie auch [K. Chur…] bei di[…]n boni
+[…] ungelegen." The CTTS signs carry "werden" (l. 4, a 1 the old transcription missed), "bei diesen conjuncturn
+gelegen" (l. 7: theta, not crossed t; the "blotted" signs are clear), "die" (l. 1) and "ihr" (l. 2). Lines 1-3 still do
+not build a sentence; from "dagegen" (l. 4) to the end of l. 7 the text builds a clause with six supplied letters.
 
 ## Notes
 

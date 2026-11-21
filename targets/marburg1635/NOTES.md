@@ -2,6 +2,21 @@
 
 Status: in progress (was: read, ≈97% of tokens; nine signs at the end of line 1 open)
 
+20 Nov 2026, CTTS re-transcription (gold-standard pipeline, `research/ctts/README.md`; full record
+`texts/R4500_ctts_test.md`, tokens `texts/R4500_ctts_tokens.txt`). The page was cut into 14 line bands, a blind Fable
+5.2 first pass labelled the candidate boxes from the image alone, and Claude Opus 5.5 corrected it in CTTS by computer
+use, with every doubt checked on 3x overlay-free crops before `cipher_tokens.txt` was compared. **582 signs.** First
+pass: 17.7% sign error raw, 5.7% with its own notes applied, against the final CTTS project; final CTTS against
+`cipher_tokens.txt`: 3.0% (565 of 576 match; S11 I6, marks not counted). The old transcription dropped every mark;
+CTTS records them, and they belong to the key: **9 with a bow = b/w** (bei, bericht, unbewandt), **0 with two dots or a
+bow = z** (zu-, anzudeuten), **triangle with a bar = ll** (allen, aller-, sollen), **long s with two cross strokes = ss**
+(unterlassen). No base value changes (an LM test keeps 9 = u, T = c, F = s, q = m as the best fit). Transcription
+errors fixed: l. 4 a missing 1 ("werden", as the gloss), l. 7 `X 8 0 7` is theta ("bei diesen conjuncturn gelegen";
+the three "blotted" signs are clear), l. 12 X is F ("sein"), l. 2 the "?" is four signs `7 4 1 2` ("ihr"), l. 6 the
+second q is a hook (abbreviation mark), l. 10 the burn hole keeps the tops of 7 6 ("Baiern"), l. 1 the first sign is a
+dotted 1 ("die"). Lines 4-7 now build a clause; lines 1-3 still do not, and two CTTS readings in l. 2 (theta/s) make
+that decode slightly worse, so they stay doubtful. The CTTS project is model-made until a person checks it.
+
 23 Oct 2026, re-reading (REREAD_BRIEF, batch b30): lines 1-7 re-examined. Record and image re-opened (no attachment);
 gloss of ll. 1-4 re-read on native crops and aligned with the decode; no label or key value changed. Partial reading
 `texts/R4500_l01-07_reading.md` ("... dagegen denselben etwas tentiert weren solte, zumahl nicht unbewandt, was und ob
@@ -47,6 +62,10 @@ of the signs read.
 
 So the table is a letter-for-letter substitution with a few homophones (a: 5, 8, A; s: 2, F), written mostly in digits.
 
+Marked signs (CTTS re-transcription, 20 Nov 2026; the earlier transcription dropped the marks): 9 with a bow = b or w
+(6x; plain 9 = b once more, in "Baiern"); 0 with two dots or with a bow = z (2x); triangle with a bar = ll (3x); long s
+with two cross strokes = ss (2x; in l. 5 "o?en" it is unsettled). A hook after `1 2` (3x) is an abbreviation mark.
+
 ## Reading (normalised; [..] = conjectural)
 
 > ... noch nicht zu vernehmen, [die Landtschaft ...] ... [unleserlich] ..., das kann dieses orths halber observiren,
@@ -69,12 +88,30 @@ line 1 and ~6 blotted signs in lines 7 and 9, about 15 of 590 signs. 96.8% measu
 read; key recovered. After the line 9 correction of 30 Sept (below): 97.4% (538 signs, 14 unread: nine in line 1, one in
 line 2, three in line 7, one in line 10).
 
+## Transcription doubts
+
+From the CTTS re-transcription of 20 Nov 2026 (`texts/R4500_ctts_tokens.txt`, `?x` there); each checked on a 3x
+overlay-free crop of the line band, against the decode, and against `cipher_tokens.txt` afterwards.
+
+- ?1 (l. 1, first sign) - read: 1; checked: image, decode, transcription; dotted short stroke (old: 7); gives "die" as the gloss
+- ?9 (l. 1, seventh sign from the end) - read: 9; checked: image, decode, transcription; rho-shaped loop with a long left descender (old: ?); "ta?d inhae-" does not build either way
+- ?F (l. 2, after 6 0 0 8) - read: F, alternative T; checked: image, decode, transcription; oval with a loop rising left (old: T); LM and "ennoch" favour T
+- T (l. 2, after 6 0 1) - read: T; checked: image, decode, transcription; clear theta (old: F); LM favours F ("endss"), neither builds
+- ?F (l. 2 blot, l. 3 blot, l. 11 stain) - read: F; checked: image, decode, transcription; tall cross-stroked long s under ink (old: X, F, F)
+- ?A (l. 3, before 3 9 1 7) - read: A; checked: image, decode, transcription; pointed sign overrun by the gloss (old: A)
+- ?7 ?6 (l. 10, burn hole) - read: 7 6; checked: image, decode, transcription; top of a 7 and a looped ascender survive (old: one ?); gives "Baiern"
+- 4 (l. 5 "zu?ahl", l. 6 "de? Reich") - read: 4; checked: image, decode, transcription; angular 4 with a long bar, the form that is h in l. 11; the sense wants m
+- 9~ (l. 6 and l. 9, "?eiser") - read: 9 with bow; checked: image, decode, transcription; the bow is b/w elsewhere, the sense wants K
+
 ## Remaining gaps
 - cipher lines 2-3 decoded, not read - blocker: illegible; re-read 23 Oct 2026 (b30, `texts/R4500_l01-07_reread_log.md`): the gloss is faded and cramped and departs from the signs at "insonderheit" and "observiren"; ll. 4-7 now build a clause (`texts/R4500_l01-07_reading.md`), score 0.00 / holes 0.20, so lines 1-7 stay decoded, not read
 
 - End of line 1 (~9 signs, `W 5 ? 1 7 0 4 5 6`) - blocker: illegible; cramped under the faded gloss on the only scan.
-- Line 7 "ueidiesen boni" - blocker: illegible; single signs blotted on the same scan. (Line 9 "serue st" was listed
-  here until 30 Sept; its signs are clear and read "dieser Vestung", see the correction below.)
+  CTTS (20 Nov 2026) reads every sign, `W 5 ?9 1 7 0 4 5 6`, with the seventh rho-shaped and doubtful; the decode
+  "ta?d inhae-" still does not build.
+- Two signs of line 2 (after `6 0 0 8`, after `6 0 1`) - blocker: illegible; theta and the d-shaped s are written alike
+  in this hand, CTTS and `cipher_tokens.txt` disagree at both, and the LM prefers the older readings; recorded as
+  doubtful in `texts/R4500_ctts_tokens.txt`.
 
 ## Escalation
 - [x] siblings: all 126 records R4452-R4577 of the volume downloaded; no clear copy of this letter
@@ -84,8 +121,16 @@ line 2, three in line 7, one in line 10).
 - [x] key-rebuild: homophonic anneal on de-1500s plus hand fixes; key recovered
 - [x] retry: lines 1-2 and the doubtful signs re-viewed at 3-4x zoom; still open
 - [x] retry (23 Oct 2026): gloss of ll. 1-4 re-read and aligned word by word; ll. 4-7 rebuilt as a clause; ll. 1-3 still open
+- [x] retry (20 Nov 2026): sign-level re-transcription in CTTS from the image (blind first pass, overlay-free crops of
+  every doubt): 17 transcription differences, marks recorded and valued (9~ = b/w, 0¨/0~ = z, D‾ = ll, F- = ss); ll. 4-7
+  now build a clause, ll. 1-3 still open (`texts/R4500_ctts_test.md`)
+- [ ] reader review of the corrected ll. 4-7 clause (reading gate) before the class or fraction read is raised
 
 ## Corrections
+
+- **20 Nov 2026 (CTTS re-transcription, `texts/R4500_ctts_test.md`).** Line 7 "ueidiesen boni", listed under Remaining
+  gaps since September: the signs are clear on the CTTS crops, and `X 8 0 7` was a misread theta, so the line reads "bei
+  diesen conjuncturn gelegen". Line 4 lacked a 1 ("werden"), line 12 X is F ("sein"), line 2 "?" is `7 4 1 2` ("ihr").
 
 - **30 Sept 2026 (reported while quotations were pulled for Lasry's list; checked on the scan).** Line 9: its first
   three signs `F 6 12`, marked unread as blotted, are clear on `IMG_R4500_I26572_P.jpg` (main checkout
