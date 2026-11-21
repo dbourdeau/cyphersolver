@@ -344,6 +344,84 @@ would take the nine lines to 92 of 100 and the remainder to 159 of 177 if none o
 `v2_score.py` hole rate: nine lines 0.039 before, 0.088 after; remainder 0.079 before, 0.107 after. The page was not
 changed: its "Key: code_table.tsv" line is inside the generated texts block.
 
+## No. 85 and No. 74, 21 Nov 2026 (leads 992 and 991; contributed by Andrew Beling, with AI agents)
+
+Done by AI agents on 21 Nov 2026; no person has checked it. Working records: [`beling/no85_no74_2026-11-21/`](beling/no85_no74_2026-11-21/README.md).
+
+**What the film has.** No. 85 (27 May 1812) is on reel 3 as a duplicate: frames 0195 right, 0196 and 0197 left. The clerk's
+interlinear words on the code block of 0196 left stop at "Dominions" (854 649 1433, Do-min-ion-s, line 11); the rest of that
+line and lines 12-16 are bare (Ford 4:338 ends the passage at "dominions." without a note). On 0197 left two runs of code stand
+bare in the clear text: Ford 4:339 "[Here two lines of cypher not decyphered]" and "[here three lines of cypher not
+decyphered]". For No. 74 (2 Nov 1811, frame 0168) the clerk wrote a separate sheet (frames 0170-0171) on which three groups are
+copied in figures, 387.1431.1101, with a cross and the note "Error in Cypher." (Ford 4:270).
+
+**Transcription.** Two agents copied every group of 0196 left, 0197 left and 0168 (both leaves) and the clerk's sheet, blind to
+each other, to any table, to the files of this folder and to print (796 tokens; the same number at 717; doubted by neither at
+600). A third agent later read 0197 and the first line of 0168 blind as well. The right leaf of 0168 has 20 lines of code.
+
+**Check before reading (plan written first, one run).** The code sheet (NARA M97 roll 13 frames 1056-1057, Weber WE028;
+`../morris1813/beling/key/`), unchanged, against the clerk's own decipherment of these two despatches, number by number, scored
+only where both transcribers read the same number without doubt; pass mark 0.85; control, the sheet's values shuffled 1,000 times.
+No. 85 (clerk's words over the groups, 112 scored numbers): 0.929 and 0.911 on the two transcriptions, largest control 0.062.
+No. 74 (aligned with the clerk's sheet, 367 scored numbers): 0.935 and 0.932, largest control 0.131. Both pass. Of the eight
+misses of the first part, five are places where the readers took the clerk's small writing as "ri", "news", "have", "in", "ce"
+and the sheet has mi, view, har, ir, re; Ford, who printed from the Department's decipherment, has "armament", "views",
+"harbored", "irretrievably", which are the sheet's values, so these are taken as misreadings of the clerk's hand, not faults of
+the sheet (the third agent's report records the opposite view). One is a real difference: 350 is fla on the sheet and stands
+in con-fi-den-ce.
+
+**The two lines** (`no85_two_lines.txt`, 26 groups; `texts/no85_two_lines_reading.md`): "You will here perceive some uncertainty
+how far the neutral intention[s] and expectation[s] of Sweden herself extend." 17 words, all read. Not in print; not read here
+before.
+
+**The three lines** (`no85_three_lines.txt`, 35 groups, two cut or blotted; `texts/no85_three_lines_reading.md`): "and the
+Swedish meaning of it is to be [?expounded] by the hope of being {+in}demnified [?in] Norway [?for] the los[s] of Finland".
+23 words, 20 read = 0.870. The holes: 116x with its last figure blotted (pound 1160, or plain 1138); 1626, a number the code
+does not have (in, 1426, is one digit away); 9x cut by the gutter (for, 981). 1436 (is) stands where in-dem-ni-fied wants 1426.
+With the clear text around it: "If the English Regent's new Proclamation respecting the Orders in Council is to elucidate the
+English meaning of neutrality, and the Swedish meaning of it is to be ... by the hope of being indemnified ... Norway ... the
+loss of Finland, the roots of that neutrality are not very profound." Not in print; not read here before.
+
+**The six lines after "Dominions"** (`no85_foot.txt`, 75 groups; `texts/no85_foot_reading.md`): a second reading of the lines
+first read with the rebuilt table on 22 Sept 2026 (`ford1812b_notes.md`), now with the code sheet. It agrees with that reading
+and adds the sheet value of each number that does not fit (1236 ground, 209 pres, 49 United States, 1501 A, 820 delegate, all
+five in three independent transcriptions), Sweden (39) for the 49 where the September reading guessed "they", and that the dots
+after "Norway" are line filler, not "without". 55 words, 51 read = 0.927.
+
+**No. 74, the three groups "in error".** On the sheet 387 is sue, 1431 into, 1101 P. The line is 199 888 1399 143x 387 1431
+1101 948 668 869 ...: how long this [is] sue into P Russia and Austria, that is, "How long this is-sue into P-russia and Austria
+will be suffered to remain open is extremely doubtful." No number needs changing. The clerk took "is" for the verb, could make
+nothing of "sue into p", and wrote "Russia" where the code has Prussia; thirteen lines further on (left leaf line 14, 668 1101
+948) he read the same pair as "Prussia". How firm: **Prussia** is firm (1101 and 948 are read alike by all, and the third agent,
+blind to the clerk's sheet, reached it independently). **issue** rests on the clerk's own figures: he had the paper and copied
+387, and wrote "is"; on the film two of the three blind readers took the first figure of 387 for an 8 (887, lo), and the last
+figure of the group before it is too faint to tell 5 (ir) from 6 (is). In "It is understood" on frame 0196 the clerk likewise
+wrote "is" over a group both transcribers read as 1435 (one of them with 1436 as an alternative). `codes_ford1812b.txt` (0168 left line 1) is left as it was.
+
+**Print.** Ford 4:270, 338-339 only, with the gaps. Internet Archive full-text search on three phrases of the surrounding clear
+text (21 Nov 2026): copies of Ford's volume and nothing else. Founders Online ("neutrality of Sweden", "suffered to remain
+open"): no results. Not seen: Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society,
+not online), which should have the plain words.
+
+## Transcription doubts
+
+For No. 85 (the three files of 21 Nov 2026). The doubts of No. 88 are in the sections on the image checks above.
+
+- 548 (no85_two_lines l.2, last group) - read: 548; checked: image, decode, transcription; one blind reader 528 (ei), one 548; the third reader's second look and an enlargement show the open-topped 4; ext-end
+- 1369 (no85_two_lines l.2) - read: 1369; checked: image, decode, transcription; two readers gave 1269 as an alternative (a punctuation sign on the sheet), the third read 1369 without doubt; exp-ect-tation
+- 668 (no85_three_lines l.1) - read: 668; checked: image, decode, transcription; at the gutter; one reader gave 608 (mai) as an alternative
+- 398 (no85_three_lines l.2) - read: 398; checked: image, decode, transcription; one reader 298 (ext), one 298 or 398, the third 398; the 9 and 8 are fainter; Sw-ed-ish
+- 116x (no85_three_lines l.2) - read: not read; checked: image, decode, transcription; last figure blotted (1164 or 1168 to three readers, neither with sense); counted as a hole
+- 1436 (no85_three_lines l.3, second time) - read: 1436; checked: image, decode, transcription; clearly written, the sheet's "is" where in-dem-ni-fied wants 1426; one-digit rule
+- 1626 (no85_three_lines l.3) - read: 1626; checked: image, decode, transcription; clearly written to three readers; no such number; a hole
+- 9x (no85_three_lines l.3, last group) - read: not read; checked: image, decode; cut by the gutter after a 9 and the start of an 8 or 4; the decode has no value for it; a hole
+- 891 (no85_three_lines l.4) - read: 891; checked: image, decode, transcription; middle figure blotted (alternatives 89, 841 without sense); lose, for the noun
+- 1184, 809, 471, 195, 897, 1507, 1576, 1523 (no85_foot) - read: as given; checked: image, decode, transcription; in each, one of the two blind readers gave an alternative; the other reader, the transcription of 22 Sept 2026 and an enlargement agree with the reading given
+- 352 (no85_foot l.5) - read: 352; checked: decode, transcription; alternatives 252 and 362 given by one reader each; the September transcription has 352; not looked at again on an enlargement
+- 565 (no85_foot l.4) - read: 565; checked: image, decode, transcription; one reader 585 (lay), one 585 or 565; the September transcription 565; on an enlargement the middle figure is the 6 of 569 in the line above
+- 1236, 209, 49, 1501, 820 (no85_foot l.2-3) - read: as written; checked: image (1501, 820), decode, transcription; the same in all three transcriptions; the sheet values give no sense (see the reading)
+- 23x, 89x (no85_foot l.1, l.2, last groups) - read: not read; checked: image, decode; cut by the gutter; the decode has no value for them; holes
+
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
@@ -353,6 +431,11 @@ changed: its "Key: code_table.tsv" line is inside the generated texts block.
 - rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; the M97 sheet gives acious / account, which does not fit 'as a pre-' (14 Nov 2026)
 - rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; the M97 sheet gives wick (14 Nov 2026); the image shows 1185 and a stroke cut by the gutter
 - rem88 l.11 570 ('it tol he said'): the M97 sheet gives tol / toe, which does not read; the image shows 570, not 500 (was) - blocker: no-key-material
+- no85_three_lines l.2 116x (ex-..-ed: pound 1160 or plain 1138) - blocker: illegible; last figure blotted on frame 0197 (21 Nov 2026)
+- no85_three_lines l.3 1626 (indemnified ... Norway): no such number; in (1426) is one digit away but a whole word - blocker: needs-physical-access; only the original or the letterbook copy could show what was meant (21 Nov 2026)
+- no85_three_lines l.3 9x (Norway ... the loss): cut by the gutter; for (981) fits - blocker: needs-physical-access (21 Nov 2026)
+- no85_foot l.1 23x (exten-), l.2 89x (the lo..), cut by the gutter - blocker: needs-physical-access (21 Nov 2026)
+- no85_foot l.3 49 (United States on the sheet, Sweden 39 wanted) and 1501 (A on the sheet, 'be' wanted) - blocker: needs-physical-access; the numbers are clear on the duplicate (21 Nov 2026)
 
 ## Escalation
 
@@ -362,6 +445,7 @@ changed: its "Key: code_table.tsv" line is inside the generated texts block.
 - [x] print: Ford 4:357-358 prints both passages as not decyphered; no other printed reading found; JQA's diary (Primary Source Cooperative) confirms the two strokes at Wilna
 - [x] key-rebuild: table rebuilt to 1,166 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)
 - [x] retry (14 Nov 2026): the seven one-digit groups looked at on frames 0206 and 0207 enlarged; five read under the one-digit rule, 669 and 1585 stay holes
+- [x] siblings (21 Nov 2026): No. 85's two bare passages on 0197 and the six bare lines of 0196 left read with the code sheet after a pre-registered check against the clerk's decipherment of Nos. 85 and 74 (0.911-0.935, controls at most 0.131); the three 'error' groups of No. 74 read as they stand
 - [x] retry: No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 confirmed; 1097 and 1383 read as JQA's own overwritten digits
 
 ## Next
@@ -372,3 +456,6 @@ changed: its "Key: code_table.tsv" line is inside the generated texts block.
   original, the duplicate or the letterbook copy could show the misread digit or slip. Still unaligned: the 1812
   blocks of Nos. 77, 78, 81 and the remaining lines of No. 85
   (0196L 12-23) are not yet aligned.
+- 21 Nov 2026: the remaining lines of No. 85 and its two bare passages on 0197 are now transcribed and read (section above).
+  JQA's letterbook copy of No. 85 and No. 74 (Adams Papers reel 136, MHS) would settle the holes and show whether 49, 1501
+  and 1626 are the duplicate's slips.
