@@ -1,5 +1,7 @@
 # Montcalm's 1758 court code ("code I"): the Marine ministry's deciphering table, sheet e001295272
 
+On 19 November 2026, close-ups of the Lévis volume identified by Brice Dudout confirmed the Marine key and supported 158 of 161 previously missing, doubtful or disputed entries, including all of groups 1–20. The new readings are in `key/levis_detail_concordance.tsv` and `key/levis_second_readings.tsv`. They have not been incorporated into the frozen `key/table_e001295272.tsv`.
+
 Status: in progress (contribution folder only, no site page yet; Daniel is free to write, edit or replace one).
 
 Contributed by Andrew Beling, with AI agents, 13-14 November 2026. All transcription and testing below was done by
@@ -25,7 +27,7 @@ the four letters give back 92-94% of Casgrain's printed clear text, against 13-3
   64 "conflicts" to be faults of our aligner.
 - **No other letter in this code was found** (see Search for more text). So the table opens no new plaintext yet.
 - **Cells 1 to 20 are off the photograph.** The top edge of the sheet is cut on the LAC image (cells 1-10 absent,
-  11-20 show only the feet of letters), and LAC serves nothing larger than 775 pixels wide.
+  11-20 show only the feet of letters). The separate Lévis copy supplies all twenty in the close-up comparison below.
 
 ## The table (key/)
 
@@ -270,10 +272,7 @@ digitised. So the cipher of f.194 is not online.
 
 ## Remaining gaps
 
-- Cells 1-20 of the table: off the LAC photograph. blocker: needs-physical-access (ANOM COL C11E 10 f.288).
-- 138 doubtful cells, chiefly short syllables, at 775 pixels. The 57 doubtful cells the four letters use are settled in
-  `key/table_settled_from_casgrain.tsv` (14 Nov 2026); four values the letters need are contradicted by the image
-  (151, 355, 437, 591). blocker: needs-physical-access (a better image) for the doubtful cells the letters never use.
+- The Lévis copy supplies groups 1–20. After an independent follow-up, groups 52, 251 and 638 still lack two unqualified matching readings. The evidence for 151, 355, 437 and 591 is discussed in the close-up comparison below. The 14 November results above record what the earlier ANOM photograph and Casgrain’s text showed at that time.
 - No second text in the code read: the clear text of F3 15 f.194 (1 Sep 1758) is now transcribed above, but its
   figures, and the 12 Apr 1759 cipher piece, are not online. blocker: needs-physical-access (ANOM scan of COL F3 15
   f.194).
@@ -281,3 +280,23 @@ digitised. So the cipher of f.194 is not online.
 ## Sources
 
 See `sources.md`.
+
+## The close-up photographs of the Lévis copy
+
+Library and Archives Canada has 24 detail photographs of the numerical and alphabetical tables in the Lévis papers. The older catalogue record dates them to 1760. Another record for the same sheets dates them to 1758. The two photographic sets share the ruling, entries and ink stain at groups 7 and 17. The details are e000000080_a1 through d3 and e000000081_a1 through b6. Brice Dudout identified the Lévis series in his review of the Bougainville target. [Detailed photographs, catalogue 2395471](https://recherche-collection-search.bac-lac.gc.ca/eng/Home/Record?app=fonandcol&IdNumber=2395471) · [Montcalm sheets, catalogue 4006636](https://recherche-collection-search.bac-lac.gc.ca/eng/home/record?app=fonandcol&IdNumber=4006636) · [Dudout’s archival reference](https://github.com/dbourdeau/cyphersolver/pull/769#issuecomment-7017895101)
+
+Two readers looked up 14 groups without seeing the proposed values. These groups had different values in each of four previously documented codes. They agreed on 13 groups, all 13 matching the Marine table at COL C11E 10 f. 288. Group 408 remains a hole in the test. The Bougainville code, the War code and Vaudreuil sheet 276 each matched zero. The precommitted rule required 12/14, a lead of seven, and a score above every one of 1,000 shuffled controls. The strongest control matched five. The test plan SHA-256 was 4224185d794fa02a2d387292f4f39eacd03995e16e72962b3e301bad4c9b5893. All earlier tests on the small display images missed. Bougainville scored 0/14 on the first numerical selection. On a separate set of 14 numerical entries, no value had two certain readings. The alphabet scored 2/25, level with the best shuffle. The two Canadian catalogue records depict one physical manuscript. The older photograph of ANOM COL C11E 10 f. 288 depicts a separate witness to the same code.
+
+The two readers then supplied independent entries for all 20 groups missing from the earlier photograph. They also reviewed every one of its 138 doubtful cells and three cells formerly marked clear that the printed letters called into question. Of the 161 positions, 155 have a jointly certain reading. Of the 138 doubtful positions, 83 reproduce the earlier value under normalization, 49 differ and six remain open. In the separate set of 69 earlier values inferred or assessed using the printed letters, 62 match the new readings, six differ and one remains open. Literal differences can reflect spelling or use of part of a key entry.
+
+For example, the key gives 151 *possible*, 355 *homme*, 437 *comme* and 591 *lors*. Group 355 matches the required *homme* exactly. Groups 151 and 437 support the prefixes *possib* and *comm* in the printed-letter alignment. The letters do not account for the two entries’ full endings. The fourth preserves a discrepancy with the syllable *po* required in the printed passage. Group 19 reads *avis* on the sheet and had been inferred as *avi*. The six unresolved groups are 52, 251, 469, 476, 638 and 685. Both readers’ original entries and certainty judgments are in the concordance. Comparison ignores case, accents, spaces and punctuation. The original 700-cell transcription and the 14 November reading figures remain the baseline for the published letters. No new letter plaintext is claimed.
+
+Two fresh readers checked the six remaining positions on both faces of the Lévis copy without seeing earlier readings. Both independently read 469 *hache*, 476 *forme* and 685 *sort*. At 52 and 251 only one reader regarded the ending as clear. At 638 the two returned *oient* and *orient*. Summing the original agreements and the separately documented follow-up gives 158 supported readings among these 161 groups. See `key/levis_second_readings.tsv` for both passes. The separate reviewer query at group 492 falls outside that denominator. Both the numerical and alphabetic sides give *contraire*, as the original table proposed.
+
+The archived plan, standard-library scorer and 1,000 individual control scores are in `validation/levis/`. Run `python3 -I validation/levis/check.py` from this target directory. The source paths in the frozen plan identify the original local research inputs by checksum. The SHA identifies the unaltered plan and does not independently establish its date.
+
+See `key/levis_detail_concordance.tsv` for the 161 positions and `key/levis_identification.tsv` for all four sets of 14 reference values. To reproduce the controls, shuffle a fresh copy of the fourteen consensus values in file order for each trial, using one Python `random.Random(17590132)` generator. Include the empty value, which always scores zero. Record the largest exact positional match across the four models on every trial.
+
+The original [Carillon dispatch of 1 September 1758](https://recherche-anom.culture.gouv.fr/ark:/61561/3072288) is now discoverable in the ANOM inventory under COL F3 15 f. 194, with microfilm reference 247 MIOM 13. The online notice supplies the description. The cipher figures on f. 194r–v would allow an independent comparison with the later clear copy referenced above.
+
+Andrew Beling, with AI agents. AI agents did this work; no person has checked it.

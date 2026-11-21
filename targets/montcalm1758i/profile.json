@@ -192,7 +192,7 @@
       "Python comparison scripts"
     ],
     "first_date": "2026-11-12",
-    "last_date": "2026-11-14"
+    "last_date": "2026-11-19"
   },
   "solution": [
     {
@@ -266,7 +266,31 @@
     {"date": "2026-11-14", "kind": "verification", "technique": ["key matching"], "what": "Integration check of PR #583 (round 13). The four sha256 values of key/FREEZE.txt match the files. decode_letters.py re-run: all four similarities and shuffle figures identical (0.938, 0.921, 0.939, 0.935). An own decoder from the frozen table gives the same four decode files. Strict word count, table alone, a word of Casgrain's text counted only when every letter of it comes from cells marked clear: I1 82 of 122 (67.2%), I2 23 of 31 (74.2%), I3 169 of 233 (72.5%), I4 265 of 371 (71.4%); with doubtful cells also counted 79.5, 83.9, 82.0 and 82.7%. Table against the LAC image e001295272 (same sha256 as recorded), 80 cells of blocks 301-394 and 401-494 read at five times enlargement: 71 agree; 8 of the 9 differences are on cells the table marks doubtful (one, 474 t, is the contributor's own post-freeze correction), 1 on a clear cell (492). Outcome method changed from 'read after matching with key from external sources' to 'read from existing decipherment': the text is Casgrain's printed clear text.", "result": "worked"},
     {"date": "2026-11-13", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1292 tokens, 273 types, fr-1750-nospace order 4: reading -2.13 per letter; random keys -3.164 (z 11.4); key annealed onto shuffled ciphertext best -2.198 (mean -2.212, z 8.4); annealer on the real text -2.167. Verdict: pass.", "result": "worked"},
     {"date": "2026-11-14", "kind": "verification", "technique": ["key matching", "beam/DP decoding", "contextual inference"], "what": "Follow-up to #583: the 69 cells of sheet e001295272 that Casgrain's four letters use and that are doubtful, off the photograph (1-20), or shown misread were settled from Casgrain's clear text aligned with his figures (settle_from_casgrain.py; every occurrence in results/casgrain_implied_values.tsv) and looked at again on the LAC image. Separate table key/table_settled_from_casgrain.tsv; frozen table unchanged. Status: 34 confirmed on image, 23 image permits (including clear cells 564 er->cr and 688 eu->cu), 4 image contradicts (151, 355, 437, 591), 8 off the photograph. Daniel's whole-word measure (clear cells only), frozen -> after settling (confirmed and permits only): I1 67.2 -> 91.8%, I2 74.2 -> 90.3%, I3 72.5 -> 91.4%, I4 71.4 -> 90.0%; letter similarity 0.938/0.921/0.939/0.935 -> 0.973/0.937/0.974/0.961. Circular: values are read from the same letters they are measured on.", "result": "worked"},
-    {"date": "2026-11-14", "kind": "access", "technique": ["other"], "what": "Clear text of Montcalm to the minister, Carillon, 1 Sep 1758 (ANOM COL F3 15 f.194, 'Lettre chiffree') transcribed from LAC's handwritten transcript, Heritage reel C-10528 frames 1188-1189 (186 words). The transcript has no figures; the enciphered original at ANOM is not digitised (ANOM online search and FranceArchives checked again). Recorded in NOTES as known plaintext of a letter whose cipher is unseen; nothing encoded.", "result": "partial"}
+    {"date": "2026-11-14", "kind": "access", "technique": ["other"], "what": "Clear text of Montcalm to the minister, Carillon, 1 Sep 1758 (ANOM COL F3 15 f.194, 'Lettre chiffree') transcribed from LAC's handwritten transcript, Heritage reel C-10528 frames 1188-1189 (186 words). The transcript has no figures; the enciphered original at ANOM is not digitised (ANOM online search and FranceArchives checked again). Recorded in NOTES as known plaintext of a letter whose cipher is unseen; nothing encoded.", "result": "partial"},
+    {
+      "date": "2026-11-19",
+      "kind": "control",
+      "what": "The small MIKAN 4006636 images gave 0/14 against the Bougainville entries, 0/14 for each of three further candidate tables, and 2/25 in the alphabet test. None met its prespecified criterion.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "control",
+      "what": "On the 24 published detail photographs of MIKAN 2395471, 13 of 14 groups selected in advance matched the Marine table. The War, Bougainville and Vaudreuil tables each scored zero and the best of 1,000 shuffled controls scored five.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "transcription",
+      "what": "Two blind readers checked 161 previously missing, doubtful or disputed entries on the Lévis copy. Their first passes agreed at 155 positions, including all of groups 1–20. Their full results are in key/levis_detail_concordance.tsv.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "transcription",
+      "what": "Two further blind readings agreed at groups 469, 476 and 685, bringing the total supported by two readings to 158/161. Groups 52, 251 and 638 remain open. See key/levis_second_readings.tsv.",
+      "result": "partial"
+    }
    ],
   "outcome": {"validation": {"date": "2026-11-13", "model": "fr-1750-nospace", "file": "validation.tsv", "tokens": 1292, "types": 273, "tokens_per_type": 4.73, "score": -2.13, "nulls": {"random keys": {"n": 200, "mean": -3.164, "sd": 0.091, "max": -2.929, "z": 11.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.212, "sd": 0.01, "max": -2.198, "z": 8.4, "p": 0.1429}}, "power": -2.167, "verdict": "pass", "notes": "claimed per-occurrence score -2.13; polyphony 0.0; 15 unread tokens left out; annealer on the real text from random keys reached -2.167"}, 
     "class": "already solved",
@@ -285,6 +309,13 @@
     "verification": ["contemporary decipherment", "key confirms", "statistical test"],
     "provenance": "contributed",
     "credits": [
+      {
+        "who": "dudout",
+        "role": "pointer",
+        "date": "2026-11-19",
+        "source": "https://github.com/dbourdeau/cyphersolver/pull/769#issuecomment-7017895101",
+        "note": "Brice Dudout identified the François de Lévis volume containing the comparator key and the two Blaye letters."
+      },
       {
         "who": "ajbeling",
         "role": "solution",
@@ -394,14 +425,9 @@
     "fraction_read_source": "letters/*.tr: Casgrain's printed clear text covers every paragraph of figures (1307 groups). The frozen table alone gives a value to 1292 of the 1307 groups (results/letters_test.json).",
     "gaps": [
       {
-        "item": "Table cells 1-20",
-        "blocker": "needs-physical-access",
-        "detail": "Off the top edge of the LAC photograph; ANOM COL C11E 10 f.288 would settle them."
-      },
-      {
-        "item": "138 doubtful table cells",
-        "blocker": "needs-physical-access",
-        "detail": "Short syllables at 775 px; a better image is needed. Seven are shown wrong by the letters (key/corrections_post_freeze.tsv)."
+        "item": "Marine key entries 52, 251 and 638",
+        "blocker": "illegible",
+        "detail": "At 52 and 251 only one reader regarded the ending as clear. At 638 the two readings differ. The Lévis readings are in the concordance and follow-up files. The original frozen table remains in key/table_e001295272.tsv."
       }
     ],
     "notes": "No new plaintext: the letters were read by the clerks and printed by Casgrain. The contribution is the identification and transcription of the period table and its blind test. No other text in this code was found online (NOTES.md)."
