@@ -1,8 +1,8 @@
 # Meza Salinas warns Bernardo Reyes about a pamphlet
 
-12 October 1901 ? CEHM, DLI.34.6704.1
+12 October 1901 · CEHM, DLI.34.6704.1
 
-Meza Salinas writes that the Flores Mag?n brothers plan to distribute a pamphlet attacking Reyes and the president. The letter names the Pan-American Congress and gives the planned print run as 40,000.
+Meza Salinas writes that the Flores Magón brothers plan to distribute a pamphlet attacking Reyes and the president. The letter names the Pan-American Congress and gives the planned print run as 40,000.
 
 ## How the text was obtained
 

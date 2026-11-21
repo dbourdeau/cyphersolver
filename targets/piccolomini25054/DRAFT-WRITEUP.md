@@ -1,12 +1,12 @@
 # A partially deciphered letter in the Piccolomini archive
 
-Date unconfirmed ? SOA Z?mrsk, Rodinn? archiv Piccolomini?, inv. 25054, frame 453
+Date unconfirmed · SOA Zámrsk, Rodinný archiv Piccolominiů, inv. 25054, frame 453
 
-The mixed clear and enciphered letter discusses a conversation and the return of the addressee. A title resembling S.A. occurs several times in the clear text. Its expansion and the speaker?s identity remain open.
+The mixed clear and enciphered letter discusses a conversation and the return of the addressee. A title resembling S.A. occurs several times in the clear text. Its expansion and the speaker’s identity remain open.
 
 ## How the text was obtained
 
-The 17-value table comes from the visible annotations and Italian context. A deciphered sibling, inv. 25040, provides a comparison with the same values, including the names in Baron Engfurt. The replay covers 157 figures in 15 runs.
+The 17-value table comes from the visible annotations and Italian context. A deciphered sibling, inv. 25040, provides a comparison with the same values, including the title and name Baron Engfurt. The replay covers 157 figures in 15 runs.
 
 ## What remains open
 
@@ -25,7 +25,7 @@ Read in part, 25 of 32 cipher words. The source text is Italian.
 
 ## Credit and sources
 
-Anna Beck and Larry Beck, with the help of ChatGPT. V. Vlnas for the thesis photographs.
+Anna Beck and Larry Beck, with the help of ChatGPT. Václav Vlnas for the thesis photographs.
 
 - [Source](https://theses.cz/id/p3p2kb/)
 - [Submission and review](https://github.com/dbourdeau/cyphersolver/issues/790)

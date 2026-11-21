@@ -1,12 +1,12 @@
 # Two cipher recipes in a Dresden manuscript
 
-Undated in the submitted evidence ? SLUB Dresden, Mscr.Dresd.J.345, ff. 248v?250r
+Undated in the submitted evidence · SLUB Dresden, Mscr.Dresd.J.345, ff. 248v–250r
 
-One recipe claims a cure for leprosy. The next gives instructions for writing in the sun?s circle. These are historical claims from the manuscript. Four lines on f. 250r begin a separate text on the signs of the planets.
+One recipe claims a cure for leprosy. The next gives instructions for writing in the sun’s circle. These are historical claims from the manuscript. Four lines on f. 250r begin a separate text on the signs of the planets.
 
 ## How the text was obtained
 
-The contributors applied the manuscript?s alphabet on f. 248v to the cipher recipes. The 53 physical rows are filed with red divider marks and unedited sign replays. Earlier review compared sampled signs and dividers with the manuscript.
+The contributors applied the manuscript’s alphabet on f. 248v to the cipher recipes. The 53 physical rows are filed with red divider marks and unedited sign replays. Earlier review compared sampled signs and dividers with the manuscript.
 
 ## What remains open
 

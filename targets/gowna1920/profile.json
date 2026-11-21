@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "gowna",
-   "shelfmark": "IE-MA-CP-03-21, PDF pp. 11?13",
+   "shelfmark": "IE-MA-CP-03-21, PDF pp. 11–13",
    "year": 1920,
    "country": "Ireland",
    "language": "English",
@@ -86,8 +86,8 @@
    "key recovered"
   ],
   "fraction_read": 0.9333333333333333,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Issue review and filed word counts. See NOTES.md.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: 42 of 43 body cipher words (divide editorial hyphens); 42 of 45 with edge groups.",
   "verification": [
    "key confirms"
   ],
@@ -107,11 +107,17 @@
     "state": "read in part",
     "summary": "The Gowna police telegram, gowna.",
     "reading": "reading.md",
-    "read_share": 0.9333333333333333
+    "read_share": 0.9333333333333333,
+    "language": "en",
+    "reading_review": {
+     "grade": "A",
+     "by": "Codex independent claims review, Gowna and Meza",
+     "date": "2026-11-21",
+     "note": "Read the combined English and checked the 19 literal lines. The complete telegram copies each have 190 positions. The body contains one doubtful day word and there are two open edge groups. The review used the filed transcriptions and did not recheck the images."
+    }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Draft profile. The separate reading reviews have not yet been recorded.",
   "gaps": [
    {
     "item": "opening and closing groups",
@@ -121,6 +127,11 @@
     "item": "day of the month",
     "blocker": "illegible"
    }
-  ]
+  ],
+  "validation": {
+   "date": "2026-11-21",
+   "verdict": "not applicable",
+   "notes": "The training fragment and copies repeat the same message; exact replay is evidence of fit, without a fresh independent test corpus."
+  }
  }
 }

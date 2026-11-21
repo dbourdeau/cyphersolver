@@ -1,6 +1,6 @@
-A: `ha tenuto meco un discorso et consolato mi` [clear: `col dire, ch'egli`] `[poiea] [eder] certo il ritorno di uostra ecclentia`.
+A: `ha tenuto meco un discorso et consolato mi` [clear: `col [dirmi?], ch'egli`] `[poiea] [eder] certo il ritorno di uostra ecclentia`.
 
-B: [clear: `mi pare ch'`] `ci st[i]mi poco` [clear: `e ... mi rispose è vero l'inimico`] `de i nostri generali` [clear: `non`] `stima che il Picolomini`.
+B: [clear: `mi pare ch'`] `ci st[i]mi poco` [clear: `e [S.A.?] mi rispose è vero l'inimico`] `de i nostri generali` [clear: `non`] `stima che il Picolomini`.
 
 C: [clear: `se V.E.`] `sara destinato` [clear: `a`] `ritorna{t→r}ci` [clear: `mi farà somma gratia`] `di auisarmelo`.
 

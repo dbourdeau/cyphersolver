@@ -133,8 +133,8 @@
    "transcription"
   ],
   "fraction_read": 0.9774193548387097,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "303 of 310 sure cipher words across the two complete recipes using the conservative bracket count. The four-line fragment is outside this count.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "The two complete recipe readings give 150/154 and 153/156 sure cipher words; the f. 250r fragment is outside both recipe counts.",
   "verification": [
    "key confirms"
   ],
@@ -165,7 +165,14 @@
     "summary": "Two cipher recipes in a Dresden manuscript, 249r.",
     "reading": "249r-reading.md",
     "read_share": 0.974025974025974,
-    "translation": "249r-translation.md"
+    "translation": "249r-translation.md",
+    "language": "de",
+    "reading_review": {
+     "grade": "A",
+     "by": "Codex independent claims review, Piccolomini and Dresden",
+     "date": "2026-11-21",
+     "note": "The German readings and translations are coherent. The review checked the known alphabet, sign output and the conservative denominators of 154 and 156 words. Image spot checks are recorded in the prior review."
+    }
    },
    {
     "doc": "249v",
@@ -175,26 +182,34 @@
     "summary": "Two cipher recipes in a Dresden manuscript, 249v.",
     "reading": "249v-reading.md",
     "read_share": 0.9807692307692307,
-    "translation": "249v-translation.md"
+    "translation": "249v-translation.md",
+    "language": "de",
+    "reading_review": {
+     "grade": "A",
+     "by": "Codex independent claims review, Piccolomini and Dresden",
+     "date": "2026-11-21",
+     "note": "The German readings and translations are coherent. The review checked the known alphabet, sign output and the conservative denominators of 154 and 156 words. Image spot checks are recorded in the prior review."
+    }
    },
    {
     "doc": "250r",
     "transcription": "250r-transcription.txt",
     "decryption": "250r-literal.tsv",
     "state": "decoded, not read",
-    "summary": "Two cipher recipes in a Dresden manuscript, 250r."
+    "summary": "Two cipher recipes in a Dresden manuscript, 250r.",
+    "language": "de"
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Draft profile. The separate reading reviews have not yet been recorded.",
   "gaps": [
    {
     "item": "damaged cipher signs and quantity mark",
     "blocker": "illegible"
    },
    {
-    "item": "later cipher leaves outside these files",
-    "blocker": "not-attempted"
+    "item": "beginning of the third text on f. 250r",
+    "blocker": "illegible",
+    "detail": "The first cipher sign is doubtful. The later leaves are outside the scope of these two recipes."
    }
   ]
  }

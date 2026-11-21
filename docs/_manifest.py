@@ -56,6 +56,8 @@ PAGES = [
          blurb='A four-page Latin cipher letter on the Sforza marriage alliance with the new king of Hungary, with the dowry raised from 150,000 to 200,000 ducats. Harrison Bornstein recovered the key from the clear minute kept in Milan and read 561 of 624 words (89.9%), under the 95% bar.',
          quote='&ldquo;In christo pater et domine pater honorande&hellip;&rdquo;',
          rights='Letter: Hungarian National Archives, DL 46150, via Hungaricana; reading by Harrison Bornstein (PR #199)'),
+    dict(slug='claver1497', label='Juan Claver to the Catholic Monarchs', year='19 June 1497', y=1497, place='Milan', st='solved', stt='read',
+         title='Juan Claver to the Catholic Monarchs', blurb='Claver relays reports of troops leaving Burgundy after the archduke sought French support.', quote='', rights='Archive images linked in Sources'),
     dict(slug='adrian1520', label='Adrian of Utrecht to Charles V 1520', year='1520', y=1520.69, place='Valladolid &rarr; Charles V', st='solved', stt='key from external plaintext',
          title='Adrian of Utrecht to Charles V, 9 September 1520',
          blurb='Six cipher lines in the regent of Castile&rsquo;s letter during the Comuneros revolt, printed in 1897 without them as not translatable. Brice Dudout rebuilt the Cardinal&rsquo;s dotted trigraph code from his other letters, validated it on a fresh pair (0.882 of characters), and read the paragraph: 43 of 46 words.',
@@ -91,6 +93,10 @@ PAGES = [
          blurb='Ferdinand I&rsquo;s resident at the Porte, Giovanni Maria Malvezzi, sent Vienna an enciphered Latin copy of three letters of Henry II to Suleiman, among them the credence for the sieur d&rsquo;Huyson, with his own Italian notes (HHStA T&uuml;rkei I 7-2-18). Brice Dudout deciphered it with Malvezzi&rsquo;s alphabet from DECODE R367/R386, calibrated on a sibling copy against its decipherment of the time and tested blind on a letter of 1550: about 97.5% of some 1,550 word groups. Henry asks the Sultan to have the Swiss included in the truce with Charles V and Ferdinand, warns against the Cr&eacute;py articles slipped into the Emperor&rsquo;s ratification, and asks for the Ottoman fleet.',
          quote='&ldquo;tunc michi scripsit literas lusorias et ridicolas&rdquo;',
          rights='&Ouml;sterreichisches Staatsarchiv, HHStA StAbt T&uuml;rkei I 7-2-18; no image reproduced'),
+    dict(slug='dresdenj345', label='Dresden cipher recipes', year='1596–1700 (manuscript catalogue)', y=1650, place='Dresden manuscript', st='partial', stt='read in part',
+         title='Dresden cipher recipes', blurb='Two recipes use a cipher alphabet copied on the facing leaf.', quote='', rights='Archive images linked in Sources'),
+    dict(slug='philadelphia10a132', label='Latin conjuration in MS 10a 132', year='c. 1550', y=1550, place='Philadelphia manuscript', st='partial', stt='read in part',
+         title='Latin conjuration in MS 10a 132', blurb='A one-letter shift reveals a Latin love-binding conjuration and a cancelled opening.', quote='', rights='Archive images linked in Sources'),
     dict(slug='siguenza1554', label='Pacheco to Granvelle 1554', year='1554', y=1554.25, place='Naples &rarr; Granvelle', st='solved', stt='key from adjacent plaintext',
          title='Pacheco to Granvelle, April&ndash;June 1554',
          blurb='Five letters of the viceroy of Naples to the bishop of Arras on money, troops and the war of Siena. Their cipher passages carry a decipherment written at the time, and Michael Brackx rebuilt the chancery syllabary from it: 887 signs transcribed, 98% valued.',
@@ -451,6 +457,8 @@ PAGES = [
          blurb='A short cipher letter of Spain&rsquo;s ambassador at Genoa (AGS Estado leg. 3598 no. 44) whose plain original is not online. Brice Dudout learned the 1643 table on other letters of the bundle and tested it on a held-out pair (0.881 of characters, 0.834 of words; a first test fell below the criterion and is reported), then read 135 of 137 words. The Grand Duke of Tuscany answers the request for troops by referring it to his resident in Madrid, which Eraso calls a way of gaining time. Contributed by Brice Dudout.',
          quote='&ldquo;gozar&aacute; del beneficio del tiempo&rdquo;',
          rights='Archivo General de Simancas (PARES); text and translation: Brice Dudout, CC BY 4.0'),
+    dict(slug='piccolomini25054', label='Piccolomini letter 25054', year='Undated', y=1646, place='Piccolomini archive', st='partial', stt='read in part',
+         title='Piccolomini letter 25054', blurb='The letter mixes Italian prose with numerical cipher, including a passage about Piccolomini’s return.', quote='', rights='Archive images linked in Sources'),
     dict(slug='ridolfi1646', footer_date='November 2026', label='Ridolfi to Arcos, Rome 1646', year='1646', y=1646.35, place='Rome &rarr; Naples', st='partial', stt='key from the ciphertext',
          title='Ludovico Ridolfi to the duque de Arcos, Rome, 8 May 1646',
          blurb='A five-page Italian letter to the viceroy of Naples written all in numbers, with no decipherment and no edition. Brice Dudout contributed a key proposed from the cipher of pages 1&ndash;4 and tested once on the fifth page, held out from the start (0.817 against 0.487 and 0.600 for the controls). After his blind re-reading of the doubtful digits on the images, 396 of 431 words are read, not counting restored words or code values given by the sense alone: the Pope refuses passage to the cavalry sent to help the Grand Duke of Tuscany, and Bouillon may come to terms with the French.',
@@ -1544,6 +1552,8 @@ PAGES = [
          blurb='A code of four-digit groups rebuilt from the Swedish decipherment written over a despatch of January 1740, tested held out on a glossed French page of 1741 (222 of 282 groups right, shuffled keys at most 51), and used to read a letter of the comte de Castellane and the envoys&rsquo; reply to it (its continuation of 1,961 groups was contributed on 16 November 2026), which have no gloss: a general divan at the Porte and an invitation to a congress, then a plea that Sweden and the Porte act together against Russia; a Latin letter signed Ibrahim Effendi is read with the same key. A second glossed page, the Khan of Crimea&rsquo;s letter of 1742, agrees with the key at 487 of 602 groups. The three bare documents are read in part (1,092 of 1,260 words).',
          quote='&ldquo;un divan g&eacute;n&eacute;ral &agrave; la Porte&rdquo;',
          rights='Riksarkivet, Stockholm, Diplomatica Turcica, SE/RA/2119/2119.1/I/9/21, I/9/26, I/9/27, I/9/28, I/9/29 (R0003582, R0003635, R0003636, R0003637, R0003653), via Riksarkivet IIIF; despatch and key by the project, the 1741 pages, the Khan&rsquo;s letter and Lit. B by WAINUT'),
+    dict(slug='meza1901', label='Meza Salinas to Bernardo Reyes', year='12 October 1901', y=1901, place='Mexico', st='solved', stt='read',
+         title='Meza Salinas to Bernardo Reyes', blurb='Meza Salinas warns Bernardo Reyes that the Flores Magón brothers plan to distribute a pamphlet.', quote='', rights='Archive images linked in Sources'),
     dict(slug='carranza1915', label='Carranza telegrams 1915', year='1915', y=1915.4, place='Veracruz &rarr; generals and agents', st='partial', stt='key from the ciphertext',
          title='Carranza&rsquo;s coded telegrams from Veracruz, May and June 1915',
          blurb='Ten coded telegrams of Venustiano Carranza&rsquo;s headquarters to generals and buying agents, listed as open with no content on the CEHM cards: orders on ammunition, money and rifles, which the contributor places in the war against Villa. Six use number keys that run four times through the alphabet from varying start letters, four use swapped letter pairs; Prabal Gupta reports finding the keys from the ciphertext alone. The key family may already be in print.',
@@ -1580,6 +1590,8 @@ PAGES = [
          blurb='A nine-line cipher passage in a journal of the negotiations over Erfurt, read in part with a regular substitution key that Brice Dudout recovered from the cipher: the Elector is said to have won thirty thousand thalers for the Erfurt rights. The key is partial on its held-out test.',
          quote='&ldquo;er habe den seinen bey Teufel holen geschwohren&rdquo;',
          rights='Journal: Landesarchiv Th&uuml;ringen &ndash; Staatsarchiv Altenburg, Sch&ouml;nbergische Sammlung Nr. 107 (ThULB Jena, CC BY 3.0); key and reading by Brice Dudout'),
+    dict(slug='gowna1920', label='Gowna police telegram', year='12 May 1920', y=1920, place='Gowna', st='partial', stt='read in part',
+         title='Gowna police telegram', blurb='The three surviving copies describe two vehicles connected to the burning of Gowna barracks.', quote='', rights='Archive images linked in Sources'),
     dict(slug='flak1940', label='Flak Command Black Forest 1940', year='1940', y=1940.4, place='Munich &rarr; Black Forest', st='solved', stt='key from adjacent plaintext',
          title='Radio messages of the Flak Command Black Forest, April to June 1940',
          blurb='Luftwaffe radio messages of 21 days, 9 April to 4 June 1940, in a double columnar transposition whose two keys change every day. The first two, of 17 May (24 and 28 columns), were read after Harumi-Matsuba recovered the day&rsquo;s keys from the recipient&rsquo;s fair copy: platoons of Reserve Light Flak Battalion 932 handed over to the command; 1,016 of 1,023 letters are right as plaintext. The message of 4 June 1940 was added on 12 November 2026 (Brice Dudout), and the keys of nineteen more days, found by Jacob Houtrouw, on 14 November 2026.',
@@ -3701,3 +3713,15 @@ IMAGES['crawford1814'] = ('crawford1814_cipher.jpg', 'Frame 0064R, lines 1&ndash
 IMAGES['jerash749'] = None
 
 IMAGES['oslo365'] = None
+
+IMAGES['gowna1920'] = None
+
+IMAGES['meza1901'] = None
+
+IMAGES['piccolomini25054'] = None
+
+IMAGES['dresdenj345'] = ('dresdenj345_lead.jpg', 'The opening cipher lines of f. 249r, with red word dividers', 'SLUB Dresden, Mscr.Dresd.J.345, f. 249r, scan 503 via IIIF, Public Domain Mark 1.0')
+
+IMAGES['philadelphia10a132'] = None
+
+IMAGES['claver1497'] = None

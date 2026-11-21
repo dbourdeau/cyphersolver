@@ -1,6 +1,6 @@
 # The Gowna police telegram
 
-12 May 1920 ? Irish Military Archives, IE-MA-CP-03-21, pp. 11?13
+12 May 1920 · Irish Military Archives, IE-MA-CP-03-21, pp. 11–13
 
 The three copies preserve a police telegram describing two vehicles connected to the burning of Gowna barracks. The collated body describes a dark open Ford and a covered grey van. Separate correspondence from GHQ describes a plan involving whiskey stores. The surviving file does not explain the difference.
 

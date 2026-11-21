@@ -4,7 +4,7 @@ General Don Bernardo Reyes
 
 Dear General and friend,
 
-The [?Flores] Magón brothers will publish a leaflet on the 23rd of this month in which you and the [?president] will be [?insulted], supposedly with the aim of exposing the administration's immorality before the Pan-American Congress. Forty thousand copies will be distributed; they have already been ordered printed.
+The Flores Magón brothers will publish a leaflet on the 23rd of this month in which you and the president will be insulted, supposedly with the aim of exposing the administration's immorality before the Pan-American Congress. Forty thousand copies will be distributed; they have already been ordered printed.
 
 When I can speak with you, or with someone trustworthy, I will tell you everything that has been done and is being done in the states.
 

@@ -86,8 +86,8 @@
    "key recovered"
   ],
   "fraction_read": 1.0,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Issue review and filed word counts. See NOTES.md.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "aligned.tsv: 23 runs, 24 words with hablar con split; 21 literal, 3 attested by period typescript.",
   "verification": [
    "key confirms"
   ],
@@ -102,6 +102,18 @@
     "who": "beck",
     "role": "solution",
     "source": "https://github.com/dbourdeau/cyphersolver/issues/791"
+   },
+   {
+    "who": "dudout",
+    "role": "pointer",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/791",
+    "note": "Identified the period typescript, DLI.34.6703.2."
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "source": "https://www.cehm.org.mx/Buscador/FichaBasica/120051?Tipo=A",
+    "note": "The contemporary typed decipherment attests three cipher slips."
    }
   ],
   "texts": [
@@ -113,10 +125,21 @@
     "summary": "Meza Salinas warns Bernardo Reyes about a pamphlet, meza.",
     "reading": "reading.md",
     "read_share": 1.0,
-    "translation": "translation.md"
+    "translation": "translation.md",
+    "language": "es",
+    "reading_review": {
+     "grade": "A",
+     "by": "Codex independent claims review, Gowna and Meza",
+     "date": "2026-11-21",
+     "note": "The Spanish and English read coherently. The 46-entry table gives the 142 groups exactly. Brice Dudout’s prior archive note attests the three slip corrections from the contemporary typescript. This review checked the filed texts and earlier archive note."
+    }
    }
   ],
   "key_file": "key.tsv",
-  "notes": "Draft profile. The separate reading reviews have not yet been recorded."
+  "validation": {
+   "date": "2026-11-21",
+   "verdict": "not applicable",
+   "notes": "The source-audited alignment uses substantially the same letter as the context used to infer the key. The typed witness checks the three slips; the replay is not a held-out statistical test."
+  }
  }
 }
