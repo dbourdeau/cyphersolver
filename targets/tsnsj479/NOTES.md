@@ -117,6 +117,19 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
 15. 20 Nov 2026. The user asked for the write-up and a pull request with Brice Dudout as reviewer, publishing before
     Elbaum is contacted (the user's decision; Elbaum credited on the page).
 
+16. 20 Nov 2026. **CTTS sign table (first pass, model-made; for the user's review).** Following the repository's CTTS
+    pipeline (`research/ctts/README.md`): 46 straightened bands (one per cipher row, signs turned upright; the
+    margin columns and upside-down lines included), candidate boxes from a finer segmenter for separate-stroke signs
+    (`research/ctts/segment_glyphs.py`, 682 boxes), and two blind first-pass labelling agents (one per side; overlays
+    and the sign chart only). The blind labels were then aligned with this target's transcription band by band
+    (`research/ctts/align_j479.py`): 336 of 637 boxes agree on the shape, 91 disagree,
+    162 boxes and 204 transcription signs have no counterpart, 14 boxes were cut. The
+    first pass is therefore not yet a gold standard: the remaining boxes need a person in CTTS. The CTTS project files
+    (`positions/`, `colors.txt`: 46 images, 637 boxes, 97 symbol types, uncertain boxes marked `?`) are in the
+    git-ignored `research/ctts/projects/tsnsj479/ctts/`. The page's sign table shows only the 336 agreed boxes
+    (`research/ctts/key_table_j479.py`, drawn here in CTTS's style, not exported from the CTTS window). Not checked
+    by a person; CTTS was not driven.
+
 ## Result
 
 Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent
