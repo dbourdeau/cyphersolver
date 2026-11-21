@@ -4,7 +4,7 @@ ASF Mediceo avanti il Principato LXXII, doc. 309 (c. 378r, pos. 755): letter of 
 
 ## Status
 
-**Read in part: 83 cipher words, 59 certain, 16 probable, 0 restored, 8 unresolved = 90% read by sense.** Block A 31 words (about 94%), block B 52 words (about 88%). Below the 95% rule.
+**Read in part: 83 cipher words, 59 certain, 16 probable, 0 restored, 8 unresolved = 59/83, 71.1% sure alone (rule #728; each unresolved place counted as one word, see NOTES.md).** With probable words, by sense (not the #728 rule): 75/83 = 90%. By block, by sense: block A 31 words (about 94%), block B 52 words (about 88%). Below the 95% rule.
 
 ## Raw decoding, key v6 (unretouched, `frozen/decode_v6.py`)
 
