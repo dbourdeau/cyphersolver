@@ -1,6 +1,6 @@
 # Roberto Acciaiuoli, Amiens, 23 October 1513 (MAP LXXII, doc. 192)
 
-The holes are those of the Italian reading: `[...]` an unread word, `[?word]` a word proposed for signs that do not spell it, `[15]`, `[?26]`, `[?47]` numbers with no value.
+The holes are those of the Italian reading: `[...]` an unread word, `[?word]` a word proposed for signs that do not spell it, `[15]`, `[?26]`, `[?47]` numbers with no value. Words in which the Italian brackets a single letter or a second key value (*[B]orgogna*, *[bene]*) are translated without the mark; they are holes in the count all the same.
 
 In a postscript to my last, of the 20th, I told Your Lordships that the Most Christian King, in assigning the garrisons, had ordered Monsieur de Bourbon sent into Burgundy with 8 hundred lances and 10 thousand Landsknechte; and that if the Swiss did not stir from home, it would have been no wonder if, with the expense unexpectedly on his back and the fortresses at risk, a passage were made [?to your side] of the mountains. Had it [?succeeded] happily, it would again have been no wonder [...] [?they could] and, once across and [?before], that the drive of [?20] were joined to the backing of [15], and that with the strength of the French galleys and of 12 thousand Landsknechte any great enterprise could be thought of.
 

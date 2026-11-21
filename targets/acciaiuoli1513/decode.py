@@ -15,7 +15,7 @@ HERE = Path(__file__).resolve().parent
 
 
 def load_key(path=HERE / "key.tsv"):
-    key = {"vowel": {}, "base": {}, "bare": {}, "word": {}, "code": {}, "number": {}, "open": {}}
+    key = {"vowel": {}, "base": {}, "bare": {}, "word": {}, "code": {}, "number": {}, "open": {}, "second": {}}
     for line in path.read_text().splitlines():
         if line and not line.startswith("#"):
             kind, sign, value, *_ = line.split("\t")
@@ -41,6 +41,8 @@ def value(token, key):
     """Value of one unambiguous token, or None when the key has none."""
     if token.startswith(".") and token.endswith("."):
         return "#" + token.strip(".") if token.strip(".") in key["code"] else None
+    if token.startswith("="):
+        return token if token[1:] in key["number"] else None
     if token in key["code"] and token.isdigit() and len(token) > 1:
         return "#" + token
     if token in key["number"] and token.isdigit() and len(token) > 1:
