@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "luppi1510",
- "title": "'Luppius tuus' (Florentine chancery) to Niccolo Machiavelli at the French court, private letter in cipher, [14 August] 1510 (catalogue 1549)",
+ "title": "'Luppius tuus' (Florentine chancery) to Niccolo Machiavelli at the French court, letter in cipher, [14 August] 1510 (catalogue 1549)",
  "documents": [
   {
    "id": "I-3",
@@ -68,7 +68,7 @@
    "published reading"
   ],
   "attack": "none",
-  "human_role": "Contributors pointed to the sender (Andrew Aymeloglu, issue #590) and to the edition (Andrew Beling with AI agents, PR #804); the project checked neither on the printed pages.",
+  "human_role": "Andrew Aymeloglu identified the chancery connection (issue #590). AI agents located Fachard's printed text (PR #804) and checked Simonetta's published attribution for Andrew Beling. No person has checked this comparison.",
   "tools": [
    "web search",
    "Internet Culturale image viewer"
@@ -78,7 +78,7 @@
   ],
   "sessions": "unknown",
   "first_date": "2026-10-29",
-  "last_date": "2026-11-19"
+  "last_date": "2026-11-20"
  },
  "solution": [
   {
@@ -99,6 +99,11 @@
   {
    "kind": "literature search",
    "what": "Fachard (2011), VI, doc. 269, pp. 490-492 named by PR #804 (19 Nov 2026): prints the letter deciphered, month August editorial; accepted from the PR's citation, printed pages not read here.",
+   "result": "worked"
+  },
+  {
+   "kind": "literature search",
+   "what": "Compared Fachard VI, doc. 269, with Simonetta in Lettere (2022), II, pp. 834–836, 848. Simonetta identifies Giovanni da Poppi as the writer of the 17 August letter and proposes that I/3 is the letter he sent three days earlier.",
    "result": "worked"
   }
  ],
@@ -143,6 +148,6 @@
     "published": true
    }
   ],
-  "notes": "Closed as printed deciphered; the month (August) is the edition's, the manuscript has day 14 and the year."
+  "notes": "Fachard prints the decipherment. August is editorial. Simonetta attributes I/3 to Giovanni da Poppi and suggests that the cipher signature was written in error."
  }
 }
