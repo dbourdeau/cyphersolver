@@ -49,3 +49,57 @@ Doubtful letters were re-read on the scans by Brice Dudout in blind panels befor
 ## Remaining gaps
 
 - Codes marked doubtful (status "douteux") or unread ([?]) in `decryption.txt` / `reading.md`.
+
+## Read share with sure codes only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): sure only; a probable, inferred or unread unit is a hole. A Chinese telegram is wholly in cipher, and its unit here is the code: one four-figure code is one character, so
+the share is counted in codes, not words (a word is one or two characters; no word count is made). Counted from the
+status column of `decryption.txt`: `ok` and `confirmé:…` are sure; `douteux` (doubtful, the `{x}` of `reading.md`) and
+`illisible` are holes.
+
+| telegram | codes | sure | share | holes | state |
+|---|---|---|---|---|---|
+| 0055a | 10 | 10 | 1.000 | — | read |
+| 0097 | 7 | 7 | 1.000 | — | read |
+| 0101a | 11 | 11 | 1.000 | — | read |
+| 0110a | 10 | 10 | 1.000 | — | read |
+| N04 | 88 | 81 | 0.920 | 7 douteux | read in part |
+| N10 | 15 | 15 | 1.000 | — | read |
+| N31 | 34 | 28 | 0.824 | 6 douteux | read in part |
+| N15 | 9 | 6 | 0.667 | 3 douteux | read in part |
+| N20 | 49 | 44 | 0.898 | 5 douteux | read in part |
+| N22 | 12 | 12 | 1.000 | — | read |
+| N29 | 54 | 53 | 0.981 | 1 douteux | read |
+| N34 | 181 | 165 | 0.912 | 16 douteux | read in part |
+| V4A | 84 | 72 | 0.857 | 11 douteux, 1 illisible | read in part |
+| V4C | 70 | 51 | 0.729 | 19 douteux | read in part |
+| V4G | 25 | 24 | 0.960 | 1 douteux | read |
+| V4F | 21 | 17 | 0.810 | 4 douteux | read in part |
+| V4H | 18 | 16 | 0.889 | 2 douteux | read (floor) |
+| V4J | 28 | 28 | 1.000 | — | read |
+| V4I | 22 | 18 | 0.818 | 4 douteux | read in part |
+| V4K | 17 | 16 | 0.941 | 1 douteux | read (floor) |
+
+**684 of 765 codes sure (89.4%)**; 11 of 20 telegrams under the bar, so the target goes **read -> read
+in part**. Before, the doubtful codes were counted as read. Many telegrams are short: one doubtful code puts a
+telegram of under 20 codes below 95%. The codes marked `douteux` are counted as they stand; none was re-read on the
+scans for this count. Counted by a script on
+`decryption.txt`; `v10_relabel.py` does not measure Chinese readings.
+
+## Floor for short texts (19 Nov 2026)
+
+README rule of 19 Nov 2026 (owner's decision): a document of fewer than 40 cipher words is read when its holes are at most 5% of its cipher words or at most 2 words, whichever allows more; never for 40 words or more; for Chinese telegraphic codes one code is one word. Applied to the counts of 18 Nov above, nothing recounted, for the documents under 95%:
+
+- v4h: 18 codes, 2 holes -> **read** (floor used)
+- v4k: 17 codes, 1 hole -> **read** (floor used)
+- n04: 88 codes, 7 holes -> stays read in part (40 or more)
+- n31: 34 codes, 6 holes -> stays read in part (more than 2 holes)
+- n15: 9 codes, 3 holes -> stays read in part (more than 2 holes)
+- n20: 49 codes, 5 holes -> stays read in part (40 or more)
+- n34: 181 codes, 16 holes -> stays read in part (40 or more)
+- v4a: 84 codes, 12 holes -> stays read in part (40 or more)
+- v4c: 70 codes, 19 holes -> stays read in part (40 or more)
+- v4f: 21 codes, 4 holes -> stays read in part (more than 2 holes)
+- v4i: 22 codes, 4 holes -> stays read in part (more than 2 holes)
+
+The class stays **read in part**.

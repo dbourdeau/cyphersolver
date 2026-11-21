@@ -99,15 +99,17 @@
    ],
    "what": "Chinese text punctuated and translated; doubtful codes marked.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted with sure codes only (README rule of PR #728) from the status column of decryption.txt: 18 of 19 codes (0.947); 1 of 1 telegrams under 95%; class read -> read in part.", "result": "partial"},
+  {"date": "2026-11-19", "kind": "verification", "what": "Floor for short texts (README, 19 Nov 2026: under 40 codes, at most 2 holes) applied to the 18 Nov counts: 0117 (18/19) read; class read in part -> read.", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-27", "verdict": "not applicable", "notes": "Chinese plaintext through the telegraph code: the letter n-gram test cannot run on Chinese characters; the readings were checked by sense"}, 
   "class": "read",
   "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "fraction_read": 1.0,
+  "fraction_read": 0.947,
   "fraction_read_method": "measured",
-  "fraction_read_source": "19 of 19 codes give a character (doubtful codes counted as read; see decryption.txt).",
+  "fraction_read_source": "Sure codes only (18 Nov 2026): 18 of 19 codes marked ok (or confirmed) in decryption.txt; doubtful and illegible codes are holes; 1 of 1 telegrams under 95%. Before: probable (doubtful) codes counted as read. Floor for short texts (README, 19 Nov 2026): 0117 (18/19) under 40 codes with at most 2 holes, so read; every document is now read and the class stays read.",
   "first_break": true,
   "verification": [
    "historical consistency"
@@ -139,7 +141,14 @@
     "language": "zh",
     "state": "read",
     "summary": "San Francisco → “Hsuweilin”, Tokyo, 1914. Alphabetical condenser: 20 consonants b … z (with w, x, y; without k) × vowels a e i o u, numbered 01 … 99, 00 consonant by consonant.",
-    "reading_review": {"grade": "A", "by": "Claude Opus 5.5 (PR review on merge)", "date": "2026-10-27", "note": "1 telegram of 19 codes, one doubtful ({移}); reads cleanly; the place 桑洪 is left unidentified in the translation."}
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5 (PR review on merge)",
+     "date": "2026-10-27",
+     "note": "1 telegram of 19 codes, one doubtful ({移}); reads cleanly; the place 桑洪 is left unidentified in the translation."
+    },
+    "read_share": 0.947,
+    "note": "18 Nov 2026, sure codes only: 18 of 19 codes \"ok\" in decryption.txt (94.7%); codes marked doubtful (douteux, {x} in reading.md) or illegible are holes. 19 Nov 2026, floor for short texts (README): 19 codes, 1 hole; under 40 codes with at most 2 holes, so read (the floor is used)."
    }
   ],
   "key_file": "key.tsv"
