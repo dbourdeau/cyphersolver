@@ -144,7 +144,7 @@
    "unknown"
   ],
   "first_date": "2026-11-04",
-  "last_date": "2026-11-06"
+  "last_date": "2026-11-21"
  },
  "solution": [
   {
@@ -188,6 +188,15 @@
    ],
    "what": "Issue #606 (Brice Dudout): the telegram of 19 July 1909, DLI.39.7681.1, carries a pencil gloss 'mañana publicará carta Club iniciador'. Read here on the public CEHM image: 47 56 14 32 19 24 15 37 17 and 24 32 57 14 decrypt with key.tsv to publicara and club. 14 = B and 19 = I, until now fixed by one word of the letter each, are given by a contemporary clear; eleven occurrences of strict values confirmed; nothing contradicted. The public image of the letter of 15 July was fetched too: its 77 groups agree with transcription_7680.txt.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "Issue #245, comments of 14 and 21 Nov 2026 (Alberto Garvía García): he asked that the code 79 be shown as a provisional 'Sr. Presidente' instead of '?'. Checked on the public CEHM image of the telegram DLI.39.7677.1 (visor.cehm.org.mx, plain http, 2009 x 2636, not in git), read by an AI model at full size: the cipher lines read 79-1-26-3-41-20-8-11 decla-rado 15-48-31-17-7-16 aclara-ción Ruégote 2-54-47-1-38-3-54 carta mía; the pencilled plain text below the signature begins 'Sr. Presidente enemigo declarado'. The cipher carries the words Sr. Presidente (79), enemigo, aplaza and esperes and leaves declarado, aclaración, Ruégote and carta mía clear, so 79 is the only group where 'Sr. Presidente' stands; it opens the same clause in the letter. The last number of the first line, 11, which was cut off on the phone screenshots, is complete. 79 is a phrase code matched by position in one telegram, so it is shown as provisional and stays unread in every count.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -228,7 +237,7 @@
    {
     "item": "the special codes 79 and 77",
     "blocker": "open-codes",
-    "detail": "each occurs once in the letter; 79 is faintly aligned to \"Sr. Presidente\" in the 15 July telegram"
+    "detail": "77 occurs once and nothing narrows it; 79 is provisionally \"Sr. Presidente\": on the public image of the 15 July telegram it is the one group before the seven numbers of enemigo, where the pencilled plain text has \"Sr. Presidente\" (read here 21 Nov 2026), and it opens the same clause in the letter; a phrase code matched by position in one telegram, so it stays unread in the counts"
    },
    {
     "item": "segment C (28 23 24 54 2) read as quejándose only by assuming 24 is a slip for an o code",
