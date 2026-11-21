@@ -160,6 +160,15 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     `m`; `s` and `t` have no certain box left. All remain model-made. **Now 699 boxes in 83 types, 127 uncertain, 570
     certain boxes in 38 table rows.**
 
+    **Person's check of the table (21 Nov 2026, Daniel Bourdeau, on the printed table, without AI).** He ticked rows
+    I, U, p, q, O, 6, S and X as correct; circled 33 cut-outs as wrong (rows A, N, 4, c, B, J, <, w, 9, 7, 5, 8, a, b, f and
+    six P cut-outs); drew a long circle with an arrow over the right-hand half of row J (five boxes) meaning they belong in
+    `-`; put question marks beside h, m, n and o, and wrote "d" beside o. Applied (`apply_user_marks_j479.py`,
+    `marks_applied.tsv`): the circled and questioned boxes are marked uncertain (so they leave the table), the five J
+    boxes became `-`, and the o box (S2L22_9, the alphabet row's tet position) became `d`. Rows he did not mark (E, A to c
+    apart from the circled cut-outs, B, Bc, d, -, <5, C, 2, e, y, z ...) are not confirmed by anyone. **Now 699 boxes in 82
+    types, 169 uncertain, 528 certain boxes in 34 table rows.** Not opened in CTTS.
+
 ## Result
 
 Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent

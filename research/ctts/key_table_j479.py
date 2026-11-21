@@ -17,7 +17,7 @@ HEB = dict(zip(ORDER, 'אבגדהוזחטיכלמנסעפצקרשת'))
 HEB.update({'a': 'ת', 's': 'ר', '8': 'ר', '5': 'ר', 'Bc': 'ח', 'J': 'י', '<5': 'כ', 'e': 'ח', 'f': 'מ', 'b': 'ל', 't': 'ן'})   # y, n, o: no letter established
 colors = [l.split(';')[0] for l in open(P / 'ctts' / 'colors.txt', encoding='utf-8') if l.strip()]
 CORR = any(a.startswith('--corrected') for a in sys.argv)
-SUF = '3' if '--corrected3' in sys.argv else ('2' if '--corrected2' in sys.argv else '')
+SUF = '4' if '--corrected4' in sys.argv else ('3' if '--corrected3' in sys.argv else ('2' if '--corrected2' in sys.argv else ''))
 boxes = json.load(open(P / (f'boxes_corrected{SUF}.json' if CORR else 'boxes_final.json'), encoding='utf-8'))
 labels = json.load(open(P / (f'labels_corrected{SUF}.json' if CORR else 'labels_final.json'), encoding='utf-8'))
 status = None if CORR else json.load(open(P / 'status_final.json'))
@@ -48,7 +48,7 @@ H = 78; W = 1376; LW = 190
 sheet = Image.new('RGB', (W, H * len(types) + 56), (250, 248, 242)); d = ImageDraw.Draw(sheet)
 d.text((12, 14), 'Sign table: T-S NS J479 (Cambridge UL), corrected CTTS project, boxes not marked uncertain (model-made, not person-checked)' if CORR else 'Sign table: T-S NS J479 (Cambridge UL), boxes where the blind pass and the transcription agree', fill=(40, 40, 40), font=fs)
 names = [l.split(';')[1] for l in open(P / 'ctts' / 'colors.txt', encoding='utf-8') if l.strip()]
-y = 40; cache = {}
+y = 40; cache = {}; drawn_ids = {}
 for t in types:
     d.rectangle((0, y, W, y + H - 4), fill=(235, 232, 224))
     # CTTS colours the symbol type; the swatch is that type's CTTS colour (JavaFX 0xRRGGBBAA)
@@ -66,8 +66,9 @@ for t in types:
         s = min((H - 14) / cr.height, 84 / cr.width)
         cr = cr.resize((max(1, int(cr.width * s)), max(1, int(cr.height * s))), Image.LANCZOS)
         if x + cr.width > W - 6: break
-        sheet.paste(cr, (x, y + (H - 4 - cr.height) // 2)); x += cr.width + 10
+        sheet.paste(cr, (x, y + (H - 4 - cr.height) // 2)); drawn_ids.setdefault(t, []).append((f"{img[:-4]}_{b['n']}", x + cr.width // 2)); x += cr.width + 10
     y += H
 sheet = sheet.crop((0, 0, W, y + 6))
+json.dump(drawn_ids, open(P / 'table_drawn.json', 'w', encoding='utf-8'), ensure_ascii=False)
 sheet.save(OUT, quality=88)
 print(OUT, sheet.size, len(types), 'types,', sum(len(v) for v in byt.values()), 'agreed boxes')
