@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "nassau1620",
- "title": "Willem Lodewijk of Nassau to Johann VII, cipher letters of spring 1620 (S 995): all four pieces read in part (1,184 of 1,430 words, 82.8%, counting only certain words; the contributor counted 96.4%)",
+ "title": "Willem Lodewijk of Nassau to Johann VII, cipher letters of spring 1620 (S 995): all four pieces read in part (1,193 of 1,430 words, 83.4%, counting only certain words; the contributor counted 96.4%)",
  "documents": [
   {
    "id": "hhstaw-s995-f20-21",
@@ -235,6 +235,12 @@
    "kind": "verification",
    "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), sure words only, an unvalued code a hole. The four readings hold the cipher only (the clear opening and closing are not in them). Counted with the contributor's tags (plain = certain; {x} probable, restored and unresolved words and the nomenclator signs [A], [B], [Q] ... as holes): letter 1 636 of 747 (0.851, was 0.981), letter 3 348 of 439 (0.793, was 0.926), letter 5 141 of 172 (0.820, was 0.988), postscript 59 of 72 (0.819, was 0.972); together 1,184 of 1,430 (0.828, was 0.964). Letters 1 and 5 and the postscript move from read to read in part. The contributor's own count, probable words as read and nomenclator signs left out, stays his figure.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "what": "Blind sign sheet D on letter 3 (fols. 41r-41v): ten doubtful signs, each in a probable word whose status rests on that sign alone, chosen by a rule written and hashed before the sheet, plus two controls. Brice Dudout answered; an AI model wrote the rule, cut the thumbnails, built the sheet and scored it. Controls 2 of 2; 9 signs gave the shape of the reading's word (6 corrected, 3 doubts removed), 1 confirmed a slip of the encipherer ('vbereilet' stays probable). Nine probable words become certain: letter 3 348 -> 357 certain of 439 (0.793 -> 0.813); all four pieces 1,184 -> 1,193 of 1,430 (0.828 -> 0.834). Still read in part.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -246,9 +252,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.828,
+  "fraction_read": 0.834,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Sure words only, over cipher words (16 Nov 2026): 1,184 certain words of 1,430, the 1,388 cipher words of the contributor's count plus 42 nomenclator signs ([A], [B], [Q] ...) counted as unvalued codes; the 154 probable, 25 restored and 25 unresolved words and the nomenclator signs are holes. Contributor's rule before: 0.964 = certain + probable of 1,388 cipher words (script count on the *_reading.md files, nomenclator signs not counted).",
+  "fraction_read_source": "Sure words only, over cipher words (16 Nov 2026; letter 3 updated 19 Nov 2026 after blind sign sheet D, nine probable words made certain): 1,193 certain words of 1,430, the 1,388 cipher words of the contributor's count plus 42 nomenclator signs ([A], [B], [Q] ...) counted as unvalued codes; the 145 probable, 25 restored and 25 unresolved words and the nomenclator signs are holes. Before 19 Nov 2026: 1,184 of 1,430 (0.828). Contributor's rule before: 0.964 = certain + probable of 1,388 cipher words (script count on the *_reading.md files, nomenclator signs not counted).",
   "verification": [
    "statistical test",
    "key confirms",
@@ -263,7 +269,7 @@
    {
     "who": "dudout",
     "role": "solution",
-    "note": "key identified in C 667 img 55 and validated; letters 1, 3, 5 and postscript transcribed and read (the contributor's count, 16 Nov 2026 recount: 82.8% certain words)",
+    "note": "key identified in C 667 img 55 and validated; letters 1, 3, 5 and postscript transcribed and read (the contributor's count, 16 Nov 2026 recount: 82.8% certain words; 83.4% after sign sheet D, 19 Nov 2026)",
     "date": "2026-11-04"
    },
    {
@@ -325,15 +331,15 @@
     "translation": "letter3_translation.md",
     "language": "de",
     "state": "read in part",
-    "read_share": 0.793,
+    "read_share": 0.813,
     "summary": "Answer to Johann's defence plan for the Lower [Q]: militia plus a regular corps, muster by Circles, no invasion towards the Weser this year, provisions and artillery train.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-11-04",
-     "note": "Read as sentences 4 Nov 2026 (German, 1620 spelling): Answer to Johann's defence plan for the Lower [Q]: militia plus a regular corps, muster by Circles, no invasion towards the Weser this year, provisions and artillery train. 430 cipher words, 348 certain, 50 probable, 16 restored, 16 unresolved = 92.6% (96.3% with restored); nomenclator signs left in brackets. Grade B: 16 unresolved words grouped in fol. 41v lines 21-25, where two sentences have holes."
+     "note": "Read as sentences 4 Nov 2026 (German, 1620 spelling): Answer to Johann's defence plan for the Lower [Q]: militia plus a regular corps, muster by Circles, no invasion towards the Weser this year, provisions and artillery train. 430 cipher words, 348 certain, 50 probable, 16 restored, 16 unresolved = 92.6% (96.3% with restored); after sign sheet D (19 Nov 2026) 357 certain, 41 probable, same share; nomenclator signs left in brackets. Grade B: 16 unresolved words grouped in fol. 41v lines 21-25, where two sentences have holes."
     },
-    "note": "16 Nov 2026, cipher words only, sure words only: 348 of 439 cipher words read (79.3%): 430 words by the contributor's count plus 9 nomenclator sign(s) counted as unvalued codes, minus 50 probable, 16 restored and 16 unresolved words, all holes (before 0.926, the contributor's certain-plus-probable share with the nomenclator signs left out). The reading file holds the cipher only, so nothing was split; the legend and the quoted clear passages in the file are not part of the count, and v10_relabel.py cannot reproduce the figure (it counts the legend, and does not treat the {x} and bracketed signs as holes)."
+    "note": "19 Nov 2026, after blind sign sheet D (NOTES, Sign check D): nine probable words made certain (gelegt, verschiedenen, will, so, westphalische, leger, ahnmahnung, letz, werde); 357 of 439 cipher words read (81.3%), was 348 (79.3%). 16 Nov 2026, cipher words only, sure words only: 348 of 439 cipher words read (79.3%): 430 words by the contributor's count plus 9 nomenclator sign(s) counted as unvalued codes, minus 50 probable, 16 restored and 16 unresolved words, all holes (before 0.926, the contributor's certain-plus-probable share with the nomenclator signs left out). The reading file holds the cipher only, so nothing was split; the legend and the quoted clear passages in the file are not part of the count, and v10_relabel.py cannot reproduce the figure (it counts the legend, and does not treat the {x} and bracketed signs as holes)."
    },
    {
     "doc": "hhstaw-s995-f44",
