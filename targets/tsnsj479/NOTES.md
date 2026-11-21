@@ -136,6 +136,20 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     person has checked the sign table. The page's table (`key_table_j479.py --corrected`) shows the 592 boxes not marked
     uncertain, drawn here in CTTS's style, not exported from the CTTS window.
 
+    **Second round (21 Nov 2026), after a line-by-line review of the sign table (`ctts_table_review.md`).** The review found
+    four errors that change the key and about 70 doubtful cut-outs. 282 boxes (every box in the confused rows U, a, 7, P, p,
+    q, d, the resh rows 9/s/8/5, and every flagged cut-out) were re-judged by two reviewers on enlarged crops with context
+    (`prep_recheck_j479.py`, `apply_recheck_j479.py`): 58 relabelled, 4 deleted, 17 split, 37 more marked uncertain. Main
+    findings: **the cup U (ב) exists only on side 2 (12 boxes)**; on side 1 all 14 flagged U boxes were the tailed loop and
+    became `a` (ת) (side 1 now has 15 `a`, 0 U); the 7 row held mostly plain strokes (side 1 now has 2 sevens, side 2 has 4);
+    on side 2 the `s` row is the same sign as `8` (6 of 7 relabelled); P/p and q/f/d were redrawn by the curl and stem rules.
+    The table no longer prints Hebrew letters for `y`, `n`, `o` (never established) and puts ר on `5`. **Now 711 boxes in
+    86 types, 140 uncertain, 569 certain boxes in the table (36 rows); 530 of the transcription's 679 signs line up in
+    sequence** (down from 585, because the review corrected the transcription's own side-1 labels, e.g. U for a tailed
+    loop). Still open: many boxes are badly placed (too tall, narrow or touching a neighbour) and were not redrawn, a few
+    sit on the mount edge, K and the S row are single or mixed shapes; the project has not been opened in CTTS and no person
+    has checked it.
+
 ## Result
 
 Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent

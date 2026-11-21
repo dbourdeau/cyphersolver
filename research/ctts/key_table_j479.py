@@ -14,11 +14,12 @@ OUT = sys.argv[1]
 PER = int(sys.argv[sys.argv.index('--per-row') + 1]) if '--per-row' in sys.argv else 14
 ORDER = 'I U E A N 4 c B d - < p P q w O 6 S X 9 C 7'.split()
 HEB = dict(zip(ORDER, 'אבגדהוזחטיכלמנסעפצקרשת'))
-HEB.update({'a': 'ת', 's': 'ר', '8': 'ר', 'e': 'ח', 'f': 'מ', 'b': 'ל', 't': 'ן', 'y': 'ר', 'n': 'ה', 'o': 'ע'})
+HEB.update({'a': 'ת', 's': 'ר', '8': 'ר', '5': 'ר', 'e': 'ח', 'f': 'מ', 'b': 'ל', 't': 'ן'})   # y, n, o: no letter established
 colors = [l.split(';')[0] for l in open(P / 'ctts' / 'colors.txt', encoding='utf-8') if l.strip()]
-CORR = '--corrected' in sys.argv
-boxes = json.load(open(P / ('boxes_corrected.json' if CORR else 'boxes_final.json'), encoding='utf-8'))
-labels = json.load(open(P / ('labels_corrected.json' if CORR else 'labels_final.json'), encoding='utf-8'))
+CORR = '--corrected' in sys.argv or '--corrected2' in sys.argv
+SUF = '2' if '--corrected2' in sys.argv else ''
+boxes = json.load(open(P / (f'boxes_corrected{SUF}.json' if CORR else 'boxes_final.json'), encoding='utf-8'))
+labels = json.load(open(P / (f'labels_corrected{SUF}.json' if CORR else 'labels_final.json'), encoding='utf-8'))
 status = None if CORR else json.load(open(P / 'status_final.json'))
 byt = {}
 for img, bx in boxes.items():
