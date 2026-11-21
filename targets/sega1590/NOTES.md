@@ -43,3 +43,7 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - Sega's letter of 2 July 1591 (DECODE R5618, https://de-crypt.org/decrypt-web/RecordsView/5618) uses another system (digits without signs, many 1s, 7s, 9s): by a criterion fixed before calculation, key 65 segments only 62.5% of its pairs (threshold 85%) and was rejected.
 - Letter of 16 Jan 1591: Sega says Mayenne ("Umena", 128) wrote "non so che di bono per me a Roma", that he needs no stronger intercession with the Pope than that of the Duke of Bavaria, and that he has awaited "quel pomo" for many years (hypothesis: the red hat; Sega was made cardinal by Innocent IX in December 1591).
 - Prior work: no edition of Sega's 1590-1591 dispatches found (the Acta Nuntiaturae Gallicae do not cover Sega; M. Penzi 2017 is a study).
+
+## contributed Francia 32 transcriptions
+
+[Prabal Gupta?s Francia 32 files](francia32/README.md) ([PR #823](https://github.com/dbourdeau/cyphersolver/pull/823)) contain the sign rows, the literal output and the two checks against contemporary decipherments. R5612 and R5616 ff. 71r?71v supply alternate transcriptions of the two letters read here. R5614, R5616 ff. 61v?63v, R5617 and R5621 are supplementary mechanical decodes. They need readings in sentences and have no measured word share. R5618 and R5620 remain undecoded under key 65 and belong with catalogue 881. The percentage for this target covers its two original readings.

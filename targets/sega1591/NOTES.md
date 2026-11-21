@@ -83,3 +83,7 @@ Lasry sent his report on this item as a PDF, extracted with `research/reading_au
 ## Dudout corrections, 29 Oct 2026
 - A contemporary decipherment of Sega's letter of 9 Jan 1591 exists in AAV Segr. Stato Francia 32 (DECODE R5613, view 4, headed 'Decifrato'); the profile's 'plaintext: none known' needs revising. The legation key is Meister 1906 key no. 65; checked on R5621 f. 230 (decifrato of 21 Dec 1590) against ff. 228v, 231: 268/287 letters (0.93). Related Sega 1590 letters: R5612 (26 Nov 1590, 82/84 words), R5616 f. 71r-v (16 Jan 1591, 52/52 words) read with key 65, and R5618 (2 Jul 1591) in another system. Per his email, R5615 (duplicate, early Jan 1591) reads 95.1% on its first part only.
 (Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)
+
+## contributed Francia 32 transcriptions
+
+[Prabal Gupta?s Francia 32 files](../sega1590/francia32/README.md) ([PR #823](https://github.com/dbourdeau/cyphersolver/pull/823)) contain the sign rows, the literal output and the two checks against contemporary decipherments. R5613 f. 45v is the Vatican witness of the 9 January letter, with a contemporary decipherment on f. 46r. The contributor?s independent rows and key-65 output accompany George Lasry?s reading of the Paris witness. The two outputs do not count as two readings.
