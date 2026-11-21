@@ -81,3 +81,44 @@ Reproduced with my own decoder from the key rule (not the contributor's files): 
 **One key, one entry.** The other 1911 targets use other keys (`../mexico1911/`: the "Herrera. Moreno." card, 26 signs; `../hernandez1911/`: five letter swaps; `../mccarty1911/`: the Clave G.A. digraphic card; `../nuevaclave1911/`: a turning grille), so this is its own entry. No other target, lead or open pull request of this round holds CMXV.18.1777.1-6.
 
 **Corrections made.** The credits line says AI agents. The SHA-256 of the frozen transcription quoted in `dudout/VALIDATION.md` and above (100db048...) is that of the batch file `T-sanantonio-duron-v1.txt`, which is not in the pull request; the `transcription.txt` here is a commented excerpt (90c1f7e9...), and `measure_c06.py` (e99f7c57...) is not included, so the archive-key measure is not reproduced; `PREREG-C06.md` matches its hash. The order of events (protocol frozen at 16:12 CET before decoding) is by the contributor's record. The name `Daniel` against `Ismael` is not resolved. Narváez 2019 was not checked.
+
+## Siblings of catalogue 1462 read with the archive's cards (20 Nov 2026, Daniel Jalkut, with Claude Code / claude-opus-5-5)
+
+Work in `siblings/` (transcription, `decode.py`, decryption, readings with translations) and `WORKLOG.md`. None of it
+changes the Durón reading above. These telegrams use keys other than Durón's, so by "one key, one entry" the Hernández-card
+telegrams belong with `../hernandez1911/` and the Clave G.A. ones with `../mccarty1911/`. They are filed here only because the brief for catalogue 1462 said to.
+
+- **Hernández swap card** (l-a n-e r-i s-o t-u; CMXV.16.1557.1 scans 15-16), known key applied to the Presidio
+  telegrams of Braulio Hernández ("B. H. Leroy", "E. H. Leroy"), 27-31 March 1911:
+  - CMXV.15.1430.3-3 (28 Mar): "Total cie{n}to sesenta hombres. Diga si viene re{f}uerzo y cañón." Read. A period
+    pencil gloss at the head of the form ("Total 160 h - Diga si viene refuerzo y ...") gives the same text, so the
+    telegram was deciphered at the time (it is not in 1795.1). It should leave the undeciphered list.
+  - CMXV.15.1420.5-6 (27 Mar, 9:35 am): "[?Sánchez] [?tiene] [?cien] ochenta hombres. Venga Villarreal [...] y tenga
+    listo [...] [?cañón]. Salgo por él mañana [?a] [?mediodía]." Read in part: 10 sure of 19 words (53 %).
+  - CMXV.15.1420.6-6 (27 Mar, 3:08 pm): words salgo, hoy, carta, Luque, arreglos (5 of at least 10). Decoded, not read.
+  - CMXV.15.1432.3-4 (29 Mar): coded words total, Luque, entrevista (3 of 13). Decoded, not read.
+  - CMXV.15.1447.1-3 (31 Mar): mostly clear; coded `revru Lorur Lichrh` = "invita sitiar Chih." (reviewer's reading)
+    and `Orgtn` = sigue (4 of 10 coded groups). Decoded, not read.
+- **Clave G.A. card** (`../mccarty1911/key.tsv`): CMXV.17.1695.1-2 is listed as partly read and the CEHM record prints
+  "José Pineda"; the typed list 1795.1 has the whole telegram (scan 21, entry 113). What is added: the gloss covers all
+  four coded groups, and the card gives the same ("José Pin{e}da", one slip). 1695.2-2 gives only fragments ("aton",
+  "oucsenn?s"), where the period gloss also stops; in 1795.1 entry 114, right after it, is blank.
+- **Not read:** 1648.2-3 (Gabriel, probably Gabriel Madero, who signs "Gabriel" in 1795.1 entries 103 and 111; the form
+  carries the pencil note "No se entiende"); 34.3344.1 (Villa, 1914), where the two-digit syllabary card of 1557.1
+  scan 3 does not read it as is or with any additive digit offset. 16.1561.10-13 is not cipher: 1795.1 types it in clear
+  (scan 12, entry 66).
+- **Typed list CMXV.18.1795.1 searched (20 Nov 2026):** all 45 scans fetched, OCR'd with tesseract (unreliable: it
+  missed "Luque" on scan 19), then the pages for the sibling dates read by eye. The main series runs entries 1-143
+  (scans 1-27); a second, separately numbered series (scans 28-45) is mostly Vázquez Gómez's Washington traffic, April-May. Results: no Presidio telegram of
+  27-31 March (entries 23 to 25 run 25 March, 28 March San Antonio, 1 April); 1561.10-13 = entry 66; 1695.1-2 =
+  entry 113; entry 114 blank. The page with entries 94-97 (26-29 April) is missing from the scan sequence (scan 17 ends
+  at 93, scan 18 starts at 98), so 1648.2-3 (27 April) cannot be checked against it.
+- **Shelf labels:** the image fetched as 1695.1-2 carries the pencil label "1695 (2-2)" and vice versa (cf. the 1561.3/4-13 swap).
+- Untouched: 14.1354.1, 18.1770.1-4 (numeric code groups), 31.3092.3-6, 35.3433.1-2, 35.3464.1, 35.3492.2-3 (viewed or fetched only).
+- Method: known key applied (Hernández card; Clave G.A.); 1695.1-2 is an existing decipherment (1795.1 entry 113). Already
+  published: no edition found in the repository's prior-art notes. The pencil glosses on 1430.3-3 and 1695.1-2 are
+  period decipherments.
+- **Language-model reruns (20 Nov 2026):** with `es-modern` (corpus fetched from the gutenberg.pglaf.org mirror because
+  gutenberg.org returned 503), the 1914 syllabary test still gives no reading (best -4.88 per char). A simple-substitution
+  solver that recovers a 70-letter control exactly gets only -3.59 (gibberish) on Gabriel 1648.2-3: so Gabriel is not
+  a simple substitution of Spanish, or is too corrupted to break (`siblings/solve.py`, `siblings/lm1914.py`).

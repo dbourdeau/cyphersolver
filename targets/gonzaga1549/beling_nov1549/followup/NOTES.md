@@ -1,0 +1,28 @@
+# Charles V to Ferrante Gonzaga, 14 November 1549
+
+A Brussels dispatch of **27 May 1549**, from the same sender to the same recipient, has an unusually close parallel. Its contemporary Spanish decipherment at sfasc. III c.12r line 8 reads “hallarse embaraçados con Ingleses.” In the paired cipher on c.31r line 10, positions 9–14, the earlier sign transcription gives ha·ll·a·r·se·e. The last two signs are y-cross and omega. They account separately for the pronoun and the start of the following word. The May manuscript and its decipherment are two forms of one dispatch. The passage concerns the French, uses third-person *se*, and does not quote the November dispatch. The May sign transcript was made by one reader who had seen the opening words of several blocks. [May cipher](https://edl-jarvis.cultura.gov.it/meta/iiif/bbdff1f6-f75f-44e1-b9d0-c66a83a9a7a9/manifest) · [May contemporary decipherment](https://edl-jarvis.cultura.gov.it/meta/iiif/968f7688-4b71-44f2-9954-737adabf92c3/manifest)
+
+In November the preceding words give “por donde verniamos a hallar”. Three visible bodies precede the m sign at B22. Both earlier WAINUT passes give x Q 5, whose table values are no·s·e. On that reading the sequence divides *hallarnos | embara…*. The project's sign file starts at the second body and gives s·e·m·ba. Printing *hallarse | embara…* from that file uses one e twice, unless the editor marks a contraction or supplies a second e. Should the first body have the rival **de** value, the literal sequence would instead be *hallar·de·s·e·m·ba…*. These alternatives explain exactly which strokes and letters require a decision. May confirms that the phrase existed and shows an encipherment of its word boundary. [November B22 opening](https://edl-jarvis.cultura.gov.it/images/iiif/db/963b622c-4b40-4e28-9be0-512c9b095b16/336,2815,212,93/full/0/default.jpg)
+
+The held-out comparison of B22.1 against 26 archive specimens **missed**. Each reference was classified with its entire manuscript line held out. At the middle ink threshold, 24/26 reference classifications were correct, above the best 20/26 in 1,000 label permutations. The target itself was closer to the no family at thresholds 64 and 96 and to de at 128. The nearest-family to runner-up distance ratios were 0.87944, 0.93697 and 0.80116 respectively. Each exceeds the preset maximum of 0.80, including the last when kept at full precision. Only 6/8 se examples were recognized at each threshold, below the required 80 percent. The earlier two readers' competing judgments are still unresolved. The closed reference set also omits cancellations and other possible values.
+
+## The cross in eleven November spellings
+
+Nine occurrences concern Ottavio/Octauio, two remittimos/remictimos. The independent Figueroa K4 table assigns tt on the authority of its K1 source. WAINUT assigned ct from the November letter. The May cipher transcriber's two other tokens named tt-cross occur beside forms of *hazer*. The existing May post-hoc alignment assigns **ze** and **z** at them. Neither attests the spelling in dispute or establishes a new value for November. A different Figueroa test on the 1547 paired clear copy had already failed to anchor its two plus signs.
+
+A separate frozen comparison masked each of **44 crosses in five 1553 Figueroa letters** and looked for entire words attested in nine separately transcribed clear files (509 distinct normalized words of six or more letters). The key and all cross positions stayed fixed. Three crosses had any qualifying glossary match. None supplied tt or ct. All 1,000 permuted tables tied on zero, so the test **missed**. Several files in the glossary overlap or describe the same document. They are spelling examples, not 509 independent observations. This was a lexical comparison against different dispatches by several hands. The two-pass transcription and arbitration of the Genoa letters survive in a single exported transcript per letter, without the individual readers' votes at each cross. The eleven November spellings and the published strict count of 817/910 stay open to editorial review. [Figueroa corpus and reference copies](https://github.com/dbourdeau/cyphersolver/tree/main/targets/figueroa1534) · [November letter](https://edl-jarvis.cultura.gov.it/meta/iiif/bf3cf88e-72bf-4608-8e75-a0390e17284b/manifest)
+
+## Reproduction
+
+Use the [frozen March transcript](https://github.com/ajbeling/cyphersolver/blob/e5a07c1e3f6a5654c42dc1fc23135b7ec20c53a8/targets/gonzaga1549/beling_march1553/spanish_enclosure.txt) for the input to the lexical test. Its expected digest is in lexicon_inputs.tsv. The November entries of the original combined freeze log are in FREEZE.txt.
+
+For the shape test, name the archival native tiles as in atlas_tiles.tsv and place them together. Use Python 3 with Pillow. For the lexical test use Python 3 and the repository's existing Figueroa, Gonzaga, May and March source files. Supply existing output directories of your choice in the commands below. Input digests, per-locus results and every control are included.
+
+```sh
+python3 -I -B shape.py --atlas path/to/targets/figueroa1534/validation/atlas.tsv --tiles path/to/tiles --output shape-output
+python3 -I -B lexicon.py --targets path/to/targets --march path/to/beling_march1553/spanish_enclosure.txt --output lexicon-output
+```
+
+Andrew Beling with AI agents. The antecedent sign transcriptions, May collation and reference atlas are credited in the Gonzaga and Figueroa target records to Daniel Bourdeau, WAINUT, Malcolm McBratney and Brice Dudout.
+
+AI agents did this work; no person has checked it.
