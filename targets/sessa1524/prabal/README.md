@@ -71,6 +71,7 @@ These counts are units. One unit is a code group or a sign: a word, a syllable o
 - **Doubtful:** units that the ledger's key reads, with a doubt mark: a sign that I doubt in my rows, a sign read through the map off its aligned page, or a value of the clerk copies that differs from the key's value.
 - **Added entries:** units read by the 63 values that I added. "Nulls" are entries that read as no letter. 246 of these units carry my `~` doubt.
 - **Clerk value only:** units that only a value of the clerk copies reads. Not counted as read.
+- **Note of the maintainers (20 November 2026, integration of pull request 826):** the 9 units written `f~`, the switch between clear and cipher (R9875 2, R9883 2, R9900 2, R9904 3), are counted under "Doubtful", because the rule that a unit ending in `~` is doubtful also takes the `~` of the switch's own label. So 760 switch marks and openers and 2,200 doubtful units can also be read 769 and 2,191, and the share below 14,306 of 20,998 where it gives 14,297: 68.1% either way. The decode is the same either way, since a switch shows nothing.
 
 **About "68.1% of 20,998 units".** Our repository gives this number. It is a share of units, not a read share by the rule of this ledger. It counts 12,351 units with a letter value of the ledger's key, 760 switch marks and openers, and 1,186 units of the added entries: 14,297 of 20,998. It leaves out the 2,200 doubtful units and the 1,094 units with a clerk value only. By the word rule of 19 November 2026, every record here is "decoded, not read", so the folder adds no read words.
 

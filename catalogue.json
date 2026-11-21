@@ -41553,7 +41553,7 @@
    "solvability": 2,
    "difficulty": 3,
    "score_note": "Scored from the British Library Archives and Manuscripts catalogue description during the Oct 2026 venice_milan_print sweep (research/venice_milan_print/bl_harvest.py, bl_clean.json); not viewed",
-   "verify": "Get images; look for an Azzurini table in Gualterio's cipher tables, BL Add MS 20582 (catalogue 040-002090908) and Add MS 20244 (cited in catalogue 295); DECODE has the Gualterio-Botti letters (Add MS 20443, R8617-R8718).",
+   "verify": "Get images; look for an Azzurini table in Gualterio's cipher tables, BL Add MS 20582 (catalogue 040-002090908) and Add MS 20244 (cited in catalogue 295); DECODE has the Gualterio-Botti letters (Add MS 20443, R8468-R8470 and R8617-R8718; decoded, not read, in targets/botti1710).",
    "links": [
     {
      "label": "BL catalogue BL Add MS 20504",
@@ -73933,6 +73933,9 @@
    "solvability": 5,
    "difficulty": 2,
    "verify": "Build the table from the glossed Niccolini pages; read the four passages.",
+   "outcome": "attempted, open",
+   "known": "Attempted twice, not read. 19 Nov 2026 (Malcolm McBratney, PR #797, targets/milan1494/niccolini/): the four passages transcribed blind and decoded once with the 1494 key of targets/milan1494; strict word count doc 42 16/26 (61.5%), doc 49 0/5, doc 81 4/8, doc 90 2/6, all below the 65% line. 20 Nov 2026 (Brice Dudout, PR #830, niccolini/gabbrielli25/): Gabbrielli's key no. 25 (Piero Alamanni, 1492; K_G25) tested on Niccolini's glossed letters, 0.4987 against a bar of 0.85, not validated; it was not applied to the bare passages.",
+   "open": "All four passages. Not tried: a key built from Niccolini's own glossed letters of 1492-93 in this filza; a value-by-value comparison of K_G25 with the 1494 key.",
    "links": [
     {
      "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=74&d=42&c=",
@@ -74030,7 +74033,7 @@
    "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXIV, doc. 96 (cc. 220-221)",
    "folio_note": "c. 220r clear; c. 220v from line 6 to the foot: runs of figure/sign groups (\"÷ 11 6 π b 7\", \"p π b v c q m\", \"v p y π\", \"22 λ p ÷ 11 o v 11 4\") between clear words; c. 221r: runs in lines 1-6, 9-14, 20-24; c. 221v: first lines, signature.",
    "cls": "A",
-   "status": "Bare (1272 px): no interlinear clear text. The same sign family is glossed in Niccolini's and Ridolfi's letters of 1492-94 in this filza; key sheet LXXII 178 is endorsed \"Alamanni Piero\" (his Naples cipher of 1489-92). 14 Nov 2026 (Andrew Aymeloglu, issue #589): the key is MAP LXXII 183 (the Milan embassy sheet, as for Ridolfi's letters of October 1494, catalogue 2382), not Alamanni's Naples sheet LXXII 178; read in part, 11 of 91 cipher words unread; in progress in targets/milan1494/. Not tried: Gabbrielli's key no. 25 (Piero Alamanni, 1492; Ilardi microfilm reel 58, issue #610).",
+   "status": "Bare (1272 px): no interlinear clear text. The same sign family is glossed in Niccolini's and Ridolfi's letters of 1492-94 in this filza; key sheet LXXII 178 is endorsed \"Alamanni Piero\" (his Naples cipher of 1489-92). 14 Nov 2026 (Andrew Aymeloglu, issue #589): the key is MAP LXXII 183 (the Milan embassy sheet, as for Ridolfi's letters of October 1494, catalogue 2382), not Alamanni's Naples sheet LXXII 178; read in part, 11 of 91 cipher words unread; in progress in targets/milan1494/. Not tried: Gabbrielli's key no. 25 (Piero Alamanni, 1492; Ilardi microfilm reel 58, issue #610). 20 Nov 2026: that key is now transcribed in targets/milan1494/niccolini/gabbrielli25/kg25/K_G25.json (from the Yale scan of Gabbrielli's sheet, PR #830); it failed its test on Niccolini's glossed letters (0.4987 against 0.85) and is still not tried on these two leaves.",
    "why": "The orator's despatch from Ludovico Sforza's court on the eve of Charles VIII's descent (spring 1494), unread, with key material in the same and the next filza.",
    "importance": 3,
    "solvability": 5,
@@ -75411,6 +75414,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered a key from the ciphertext alone and decoded R5415 (one page) (PR #825, 20 Nov 2026; targets/sforza1597/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key.",
+   "open": "A reading in sentences (the decodes have no word division). R5417, R5418 and R5424 are not covered. His rows were not compared with the images. His Latin for R5415 is not checked.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
    "vetting": {
@@ -75483,6 +75489,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered keys from the ciphertext alone and decoded R5416, R5419 and R5456 (one page each) (PR #825, 20 Nov 2026; targets/sforza1597/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the keys.",
+   "open": "A reading in sentences (the decodes have no word division). His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
    "vetting": {
@@ -75562,6 +75571,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje decoded R5445 p. 1 (225 signs, 44 labels) (PR #825, 20 Nov 2026; targets/sforza1597/outside_prabal-rje_2026-11-19/), by his statement with the key he recovered from the ciphertext alone on R5516, R5519 and R5522 of cart. 1598 (entry 2634): decoded, not read. Our own decoder reproduces his decodes. Key not confirmed: no key sheet or clear text checks it, in the review of PR #825 his key scores below a hill-climb on the shuffled signs, and the key table is taken from his own frozen read.",
+   "open": "A reading in sentences (the decodes have no word division). The link to the key of entry 2634 rests on the contributor's statement. R5437, R5443, R5444, R5447 and R5467 are not covered. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
    "vetting": {
@@ -75847,6 +75859,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered one key from the ciphertext alone and decoded R5453 pp. 1-2 (PR #825, 20 Nov 2026; targets/sforza1597/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key.",
+   "open": "A reading in sentences (the decodes have no word division). R5462 is not covered. His rows were not compared with the images. His year lead (30 November 1491) is not checked.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
    "vetting": {
@@ -75919,6 +75934,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered a key from the ciphertext alone and decoded R5439 (one page) (PR #825, 20 Nov 2026; targets/sforza1597/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key.",
+   "open": "A reading in sentences (the decodes have no word division). R5380 and R5391 are not covered. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Vetted 6 Nov 2026 on full DECODE PDFs (account cookie): ciphertext seen, all 115 cart. 1597 key sheets viewed, prior art searched; no key matched to this family yet.",
    "vetting": {
@@ -82986,6 +83004,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje matched the archive's key sheet DECODE R5347 (cart. 1597 no. 47) to this family: with it R5488, R5528 and R5579 (4 pages) decode into Italian without word division (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/). Our own decoder reproduces his decodes from his key-sheet tables. Decoded, not read.",
+   "open": "A reading in sentences of R5488, R5528 and R5579; by the contributor's count 7 of the 28 joined labels of R5488 hold two signs of the sheet. R5581 is not covered. His rows and his reading of the sheet were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83004,7 +83025,8 @@
      "edition": "No edition; Simonetta's rules and the Tranchedino codex (Vienna Cod. 2398) are the printed context.",
      "literature": "Tranchedino codex lists c. 300 Milanese keys; not matched to these letters."
     },
-    "key_check": "The 93 key sheets of cart. 1598 (DECODE R5235-R5611, record_type 2) and the 115 of cart. 1597 were fetched; none has yet been compared with this family, and no transcription was made.",
+    "key_check": "The 93 key sheets of cart. 1598 (DECODE R5235-R5611, record_type 2) and the 115 of cart. 1597 were fetched. One sheet of cart. 1597 fits: prabal-rje matched R5347 (cart. 1597 no. 47) to R5488, R5528 and R5579 and decoded them with it (PR #825, 20 Nov 2026; see key_held). The cart. 1598 sheets have not been compared with this family, and we made no transcription of our own.",
+    "key_held": "DECODE R5347, the archive's key sheet Sforzesco cart. 1597 no. 47: matched to this family by prabal-rje (PR #825, 20 Nov 2026) and applied to R5488, R5528 and R5579 (4 pages; targets/sforza1598/outside_prabal-rje_2026-11-19/); his decodes were reproduced here from his key-sheet tables with our own decoder. Decoded, not read. R5581 is not covered, and his reading of the sheet was not compared with the image.",
     "duplicates": "Split from catalogue 1311 (same box); sibling box cart. 1597 is catalogue 1310, split into ids 2399-2408 (targets/sforza1597); no shared DECODE records.",
     "verdict": "open",
     "key_in_volume": "cart. 1598 key sheets (93 DECODE key records, list in targets/sforza1598/list1598.json); not yet matched to this family."
@@ -83148,6 +83170,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. Two keys from the ciphertext alone, made independently: ours (targets/sforza1598/famC/hand/, about 0.47 word share; NOTES of 15 Nov 2026) and prabal-rje's for R5504 p. 1 and R5505 p. 2 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/), decoded, not read. On R5504 p. 1, lines 1 to 16, 62% of the letters of our decode fall in blocks common with his (at most 45% in 100 shuffles of his key values).",
+   "open": "A reading in sentences. His rows cover R5504 p. 1 and R5505 p. 2 only; ours cover R5502, R5503, R5506 p. 1, R5514, R5517, R5518 and lines 1 to 16 of R5504 p. 1 and R5505 p. 1 (NOTES); R5515 is faint and not transcribed. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83305,6 +83330,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered keys from the ciphertext alone and decoded R5520, R5523 and R5541 (one page each) (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the keys.",
+   "open": "A reading in sentences (the decodes have no word division). R5535 and R5537 are not covered. His rows were not compared with the images. His year lead (1465 or before) is not checked.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83382,6 +83410,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered keys from the ciphertext alone and decoded R5559 p. 1 and R5563 pp. 1-2 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the keys.",
+   "open": "A reading in sentences (the decodes have no word division). R5555 and R5556 are not covered. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83454,6 +83485,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered one key from the ciphertext alone and decoded R5516 p. 1, R5519 and R5522 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key. Key not confirmed on R5516 p. 1 (537 signs on 61 labels: in the review of PR #825 his key scores below a hill-climb on the shuffled signs). By his statement the same key decodes R5445 p. 1 of cart. 1597 (entry 2403); not confirmed.",
+   "open": "A reading in sentences (the decodes have no word division). R5516 p. 2 is not covered. The link to R5445 (entry 2403) rests on the contributor's statement. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83727,6 +83761,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered one key from the ciphertext alone and decoded R5511 and R5513 (one page each) (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key.",
+   "open": "A reading in sentences (the decodes have no word division). R5512 is not covered. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83805,6 +83842,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered one key from the ciphertext alone and decoded R5564, R5565, R5582 p. 1 (rows 1 to 16), R5583 and R5584 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key. Key not confirmed on R5564 p. 1 and R5583 p. 1 (503 signs on 64 labels, 439 on 51: in the review of PR #825 his key scores below a hill-climb on the shuffled signs).",
+   "open": "A reading in sentences (the decodes have no word division). The rest of R5582 is not covered. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -83944,6 +83984,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered a key from the ciphertext alone and decoded R5574 (one page) (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key.",
+   "open": "A reading in sentences (the decodes have no word division). R5568 is not covered. His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -84011,6 +84054,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered one key from the ciphertext alone and decoded R5524 and R5529 (one page each) (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key.",
+   "open": "A reading in sentences (the decodes have no word division). His rows were not compared with the images.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -84078,6 +84124,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered a key from the ciphertext alone on R5521 p. 1 and decoded R5521 pp. 1-3 and R5542 with it (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the key. The key tables of R5521 pp. 2-3 and of R5542 are taken from his own frozen read, so their agreement with it does not test the key.",
+   "open": "A reading in sentences (the decodes have no word division). R5521 p. 4 is not covered. His rows were not compared with the images. His year lead (20 July 1492) and his Latin for R5542 are not checked.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -84256,6 +84305,9 @@
    "needs_archive_scan": "no",
    "access_note": "scans on DECODE (free login)",
    "ark": "",
+   "known": "Nothing read. prabal-rje recovered keys from the ciphertext alone and decoded R5297 pp. 1-2, R5480, R5509, R5533 pp. 1-2 and R5543 p. 2 (PR #825, 20 Nov 2026; targets/sforza1598/outside_prabal-rje_2026-11-19/): decoded, not read. Our own decoder reproduces his decodes; no key sheet or clear text checks the keys. The key table of R5297 p. 1 is taken from his own frozen read, so its agreement with it does not test the key.",
+   "open": "A reading in sentences (the decodes have no word division). The other 33 records of this group are not covered. His rows were not compared with the images. His French for R5533 and R5543 is not checked.",
+   "as_of": "2026-11-20",
    "access": "online",
    "vetting_note": "Blocked: DECODE records (cart. 1598/1591) need login; no other image source. 'Da cifra' leaf unverified.",
    "vetting": {
@@ -85524,81 +85576,6 @@
     "duplicates": "known.py on fr. 3422 and on the Nevers 1589 terms found no catalogue entry or target for these six letters; nevers1589 (fr. 3977) and nevers1588 (fr. 3976) are other volumes.",
     "date": "2026-11-16",
     "by": "claude session 16 Nov 2026 (Claude Opus 5.5), wave 20 vetting",
-    "verdict": "open"
-   },
-   "repository": "bnf"
-  },
-  {
-   "id": 2732,
-   "counted": true,
-   "year": 1530,
-   "date": "c. 1525-1535",
-   "title": "Cipher letter in the Montmorency papers, Bonnivet volume (BnF fr. 3027, Gallica view 69)",
-   "correspondents": "unknown (volume opens with letters of admiral Bonnivet to the marshal of Montmorency)",
-   "place": "unknown",
-   "language": "French",
-   "region": "France",
-   "period": "1497-1559",
-   "shelfmark": "BnF Manuscrits, fr. 3027",
-   "folio_note": "fr. 3027: one letter in cipher seen at Gallica view 69 (about 20 lines of symbols, addressed to the marshal de Montmorency). Rescoped 16 Nov 2026: the Omont items first cited here (nos. 34, 49, 70, 72, ff. 67-202, about 12 letters) belong to a later volume, not fr. 3027; the amount of cipher in fr. 3027 itself is not known.",
-   "cls": "C",
-   "status": "Cipher letter seen on Gallica (openapi IIIF view 69 of fr. 3027). Audit of 16 Nov 2026: the Omont folio and item numbers do not belong to this volume, so only the leaf actually seen is claimed.",
-   "why": "A cipher letter in a 16th-century hand with plain-text passages interleaved, no decipherment on the leaf.",
-   "importance": 2,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the printed catalogue description during the 14 Nov 2026 Omont BnF sweep (research/sweep_2026-11-14_omont_bnf/); not viewed",
-   "verify": "Page through the rest of fr. 3027 on Gallica for further cipher leaves; check that none has a decipherment; compare Tomokiyo and DECODE for the same leaf.",
-   "links": [
-    {
-     "label": "Gallica, fr. 3027",
-     "href": "https://gallica.bnf.fr/ark:/12148/btv1b9060066q"
-    },
-    {
-     "label": "BnF Archives et manuscrits, fr. 3027",
-     "href": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49486k"
-    },
-    {
-     "label": "Printed catalogue (archive.org OCR), Ancien fonds",
-     "href": "https://archive.org/details/cataloguemanfran02bibluoft"
-    }
-   ],
-   "seen": "image",
-   "source": "Omont BnF catalogue sweep",
-   "prior_art": "open as far as checked (14 Nov 2026): known.py on the shelfmark and the correspondents, grep of catalogue.json, leads.json, targets/*/NOTES.md and the Tomokiyo pages in research/gallica_sweep/src; no web search for this row",
-   "needs_archive_scan": "no",
-   "access_note": "Gallica volume(s) online: fr. 3027; openapi.bnf.fr IIIF works with curl",
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "vetting": {
-    "date": "2026-11-14",
-    "by": "claude session 14 Nov 2026 (Claude Sonnet 5.5), Omont BnF sweep vetting",
-    "seen": {
-     "kind": "scan",
-     "where": "openapi.bnf.fr IIIF images of Gallica ark btv1b9060066q (BnF fr. 3027, 123 views; the Gallica description opens with letters of admiral Bonnivet to the marshal de Montmorency, which confirms the shelfmark), 14 Nov 2026",
-     "extent": "One letter looked at: view 69, a letter written in cipher signs (about 20 lines of symbols run together with a few plain words), addressed on a following view A monsr le mareschal de Montmorency. The rest of the volume was not paged; the Omont items earlier cited (nos. 34, 49, 70, 72; ff. 67-202) were shown by the 16 Nov 2026 audit to belong to another volume.",
-     "cipher": "Symbol cipher in a 16th-century cursive hand, the plain-text passages interleaved; no interlinear or marginal decipherment on the leaf and no clear copy on the facing view."
-    },
-    "prior_art": {
-     "decode": "decode_search.py, 14 Nov 2026: 'Bonnivet' 0 records; 'Montmorency' returns only BnF NAF 4206 (Dinteville and du Bellay, R9467-9477), none from fr. 3027 (the DECODE id 3027 in the Cryptoole snapshot is an unrelated British Library record).",
-     "tomokiyo": "Tomokiyo's GL.htm page (copy in targets/gramont1529) lists Lasry's deciphered Montmorency-period ciphers in fr. 3015, 3022, 3029, 3092 and fr. 2996; fr. 3027 is not named there. Web search for 'fr. 3027' with Bonnivet/Montmorency (14 Nov 2026) found nothing.",
-     "lasry": "Not in the GL.htm copy held here; the AI-assisted list (sect. 4) is not held locally and was not re-read, so a reading there is not excluded.",
-     "edition": "No printed edition of the Bonnivet-Montmorency letters of fr. 3027 found; Omont's catalogue lists the pieces 'en chiffre' without a decipherment.",
-     "literature": "Nothing found by web search (14 Nov 2026)."
-    },
-    "searches": [
-     {
-      "query": "decode_search.py Bonnivet; Montmorency",
-      "result": "0; and NAF 4206 only."
-     },
-     {
-      "query": "Tomokiyo cryptiana fr.3027 Montmorency Bonnivet",
-      "result": "nothing"
-     }
-    ],
-    "key_check": "No key known. Neighbouring volumes of the Montmorency papers (fr. 3015, 3022) carry deciphered ciphers of the same years that could be tried; not tested.",
-    "duplicates": "known.py 'fr. 3027', 'Bonnivet' (14 Nov 2026): only this lead and its sweep row.",
     "verdict": "open"
    },
    "repository": "bnf"
@@ -87780,7 +87757,7 @@
      "kind": "scan",
      "where": "Gallica fr. 15571, ark btv1b90618802, IIIF views 41-43 (f. 37-38), viewed 15 Nov 2026 (700-px sheet)",
      "extent": "f. 37: cipher block of about seven lines at the top of the leaf, then clear text",
-     "cipher": "Sign cipher seen at the top of f. 37; clear text below and on f. 38 (a different letter in another hand). The decipherment Tomokiyo mentions is f. 36 for ff. 34-35, not for this block; none on or with f. 37."
+     "cipher": "Sign cipher seen at the top of f. 37; clear text below and on f. 38 (a different letter in another hand). The decipherment Tomokiyo mentions is f. 36 for ff. 34-35, not for this block; none on or with f. 37. Overtaken on 17 Nov 2026: by Brice Dudout's alignment (PR #760; recount PR #782) the slip on f. 36 also follows this block in order, with 80 of its 189 signs not aligned; see status."
     },
     "prior_art": {
      "decode": "known.py plus the DECODE dumps (views.jsonl, views_b, views_c) and the Cryptoole snapshot, 15 Nov 2026: no record for fr. 15566-15572 outside the Matignon/Mayenne 1586 leaves of fr. 15571-15572 (other folios); the dumps are partial, so \"not on DECODE\" is as far as they go.",
