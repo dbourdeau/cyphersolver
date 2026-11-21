@@ -195,7 +195,13 @@
    "technique": [
     "plaintext matching"
    ],
-   "what": "Issue #245, comments of 14 and 21 Nov 2026 (Alberto Garvía García): he asked that the code 79 be shown as a provisional 'Sr. Presidente' instead of '?'. Checked on the public CEHM image of the telegram DLI.39.7677.1 (visor.cehm.org.mx, plain http, 2009 x 2636, not in git), read by an AI model at full size: the cipher lines read 79-1-26-3-41-20-8-11 decla-rado 15-48-31-17-7-16 aclara-ción Ruégote 2-54-47-1-38-3-54 carta mía; the pencilled plain text below the signature begins 'Sr. Presidente enemigo declarado'. The cipher carries the words Sr. Presidente (79), enemigo, aplaza and esperes and leaves declarado, aclaración, Ruégote and carta mía clear, so 79 is the only group where 'Sr. Presidente' stands; it opens the same clause in the letter. The last number of the first line, 11, which was cut off on the phone screenshots, is complete. 79 is a phrase code matched by position in one telegram, so it is shown as provisional and stays unread in every count.",
+   "what": "Issue #245, comments of 14 and 21 Nov 2026 (Alberto Garvía García): he asked that the code 79 be shown as a provisional 'Sr. Presidente' instead of '?'. Checked on the public CEHM image of the telegram DLI.39.7677.1 (visor.cehm.org.mx, plain http, 2009 x 2636, not in git), read by an AI model at full size: the cipher lines read 79-1-26-3-41-20-8-11 decla-rado 15-48-31-17-7-16 aclara-ción Ruégote 2-54-47-1-38-3-54 carta mía; the pencilled plain text below the signature begins 'Sr. Presidente enemigo declarado'. The cipher carries the words Sr. Presidente (79), enemigo, aplaza and esperes and leaves declarado, aclaración, Ruégote and carta mía clear, so 79 is the only group where 'Sr. Presidente' stands; it opens the same clause in the letter. The last number of the first line, 11, which was cut off on the phone screenshots, is complete. 79 is a phrase code matched by position in one telegram, read by one AI reader; the owner decided on 21 Nov 2026 that the plain text beside it gives the value (next step).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "reading",
+   "what": "Decision of the owner (Daniel Bourdeau, 21 Nov 2026) on issue #245: the plain text beside 79 gives its value under the README rule of 19 Nov 2026, so 79 is read as 'Sr. Presidente'. Treated like the other values a contemporary clear gives (26, 41, 20, 11, 14, 19): outside the strict count of 29, marked telegram7677 in key.tsv. The special codes are counted apart (codes_open: 1 open, 77); 84 of 89 and the strict count do not change.",
    "result": "worked"
   }
  ],
@@ -235,9 +241,9 @@
   ],
   "gaps": [
    {
-    "item": "the special codes 79 and 77",
+    "item": "the special code 77",
     "blocker": "open-codes",
-    "detail": "77 occurs once and nothing narrows it; 79 is provisionally \"Sr. Presidente\": on the public image of the 15 July telegram it is the one group before the seven numbers of enemigo, where the pencilled plain text has \"Sr. Presidente\" (read here 21 Nov 2026), and it opens the same clause in the letter; a phrase code matched by position in one telegram, so it stays unread in the counts"
+    "detail": "it occurs once in the letter and nothing narrows it (79 is read as \"Sr. Presidente\" from the plain text of the 15 July telegram, outside the strict count)"
    },
    {
     "item": "segment C (28 23 24 54 2) read as quejándose only by assuming 24 is a slip for an o code",
@@ -257,8 +263,13 @@
   ],
   "notes": "Key proposed by Alberto Garvía García (28 strict values in his count; the project counts 60 = Y too, 29), checked against the CEHM images by an AI reader on 6 Nov 2026 (VERIFICATION.md). Read in part: the letter of 15 July (segment C tentative) and the names in the note of 29 July.",
   "fraction_read": 0.944,
+  "codes_open": {
+   "open": 1,
+   "total": 2,
+   "tokens_open": 1
+  },
   "fraction_read_method": "measured",
-  "fraction_read_source": "Counted by hand from key.tsv and the decryption files: letter of 15 July 75 of 75 alphabetic groups read as letters of words (two of them, 24 in quejándose and 48 in situación, only by assuming a one-number slip; the codes 79 and 77 are not read) and the note of 29 July 9 of 14 (LIMANTOUR; the second name, 5 groups, is tentative and not counted): 84 of 89 = 94.4%. The control telegrams are not counted.",
+  "fraction_read_source": "Counted by hand from key.tsv and the decryption files: letter of 15 July 75 of 75 alphabetic groups read as letters of words (two of them, 24 in quejándose and 48 in situación, only by assuming a one-number slip; the special codes are counted apart in codes_open: 79 is read as \"Sr. Presidente\" from the plain text of the 15 July telegram, 77 is not read) and the note of 29 July 9 of 14 (LIMANTOUR; the second name, 5 groups, is tentative and not counted): 84 of 89 = 94.4%. The control telegrams are not counted.",
   "key_file": "key.tsv",
   "texts": [
    {
