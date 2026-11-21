@@ -1,3 +1,5 @@
+Status: in progress (read in part, about 74%; the open rows give letters but no Arabic and have no outside blocker; PR #834 is open and Elbaum has not been contacted)
+
 # T-S NS J479: Judaeo-Arabic jottings in an invented sign alphabet (Cambridge University Library, Cairo Geniza)
 
 Cambridge University Library, Taylor-Schechter New Series J479; Princeton Geniza Project (PGP) document 8804. One
@@ -176,6 +178,21 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     the 13 circled boxes are marked uncertain. **Now 699 boxes in 82 types, 182 uncertain, 515 certain boxes in 34 table
     rows.** In all the person circled 46 cut-outs and moved five J boxes to `-`; h, m, n, o (questioned) are out of the
     table. Rows not yet confirmed: `-`, `<5`, w, 2, and the questioned h, m, n, o. Not opened in CTTS.
+
+    **Round 6 (21 Nov 2026), the owner's two points.** (a) The owner flagged the six circled P cut-outs as probably `f`:
+    all twelve P boxes circled in the two passes (6 + 6) show the f shape (a stem with a loop at top right crossing into
+    a lower-left loop) and became `f`. (b) The owner thought the 7s are `>`s. A reviewer measured the scribe's alphabet
+    rows (S2L23, S2U02, S1L14, S1L09, S2L20): the 10th sign (yod, `-`) is always small (height 26-47, aspect 0.4-0.6, a flat
+    dash with a short hook), the 22nd (`7`) is tall (height 78 or more) with a curl and a long straight diagonal tail, and
+    the Burda word פי (S2L05) has the small dash. So the hypothesis holds in part: 6 long `>`-shaped boxes of the old `-` row
+    became `7`; the small dashes stay `-`; 5 round J hooks became `-` (the series from dash with short hook to rounded hook is
+    continuous in S2L09_8 and S1L09 box 11; the 4 large deep-C hooks are in no alphabet slot and stay `J`); 3 old 7 boxes
+    went elsewhere (two to `I`, one to `-`); 14 boxes marked uncertain. (c) The owner noted the last three cut-outs of row `a` do not fit: S2L06_5 (a long wavy stroke, perhaps w) is marked
+    uncertain, S2L06_21 (a narrow strip over a P stem, overlapping the next box) deleted, and S2L06_22 (one box over a P and an a)
+    split into `P` and `a` (`apply_round7_j479.py`). **Now 699 boxes in 82 types, 179 uncertain, 518 certain boxes in 34
+    table rows** (`-` 25, `J` 4, `7` 7, `f` 20, `P` 18, `a` 23). The alphabet rows S2V01-02 could not be read for
+    these two positions. Not opened in CTTS; the rows `-`, `<5`, w and 2, and the new `7` and `f` contents, are not yet
+    confirmed by the person.
 
 ## Result
 
