@@ -1,0 +1,378 @@
+{
+ "schema_version": 1,
+ "target": "bonde1675code246",
+ "title": "Carl Bonde to a Chancery Councillor (\"Herr Cantzlirådet\"), Paris, 18/28 Nov 1675: one letter in a second code (numbers 1-246, one number a letter) on images 113R-114L of the Bonde volume (Riksarkivet, Diplomatica Gallica; same volume as catalogue 2317), read in part from its period gloss; draft key at 0.66 resubstitution, not validated",
+ "documents": [
+  {
+   "id": "letter_1675-11-13",
+   "read": "read in part",
+   "shelfmark": "Stockholm, Riksarkivet, Diplomatica Gallica, SE/RA/2105/I/A/24/54 (Envoyén Carl Bonde, Brev till Kungl. Maj:t 1674-1678; image series R0003797), images 113R (33 cipher lines) and 114L (32 cipher lines)",
+   "date": "Paris d. 18/28 Novembris 1675: the cipher (114L G32, 18/28 in figures) and the gloss (114L line 4, first read d. 13 or 13/23) agree; both upper numbers read 18 on blind digit-form checks by Brice Dudout (15 and 17 Nov 2026)",
+   "year": 1675,
+   "country": "Sweden",
+   "route": "Carl Bonde, Swedish envoy (Paris) -> a Chancery Councillor (Herr Cantzlirådet) in Stockholm; perhaps H. Hoghusen (postscript of image 112R), not confirmed",
+   "places": {
+    "from": "Paris",
+    "to": "Stockholm"
+   },
+   "language": "Swedish",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "The Swedish chancery's ink gloss between the cipher lines of 113R (G01-G33) and 114L (lines 1-4, then 1675), the clear of the whole letter written continuously (about 2.2 letters of gloss per cipher number, so it runs ahead of the cipher and covers the bare lines of 114L). A later pencil hand wrote letters over the first numbers of 113R and under the last line of 114L (Novembris).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 1279,
+    "distinct": 121,
+    "unit": "letters",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Riksarkivet IIIF, full-size images of 113 and 114 (lbiiif.riksarkivet.se, R0003797_00113 and _00114), line strips and zooms; no images published here",
+    "image_quality": "fair",
+    "corrections": 52,
+    "notes": "Counted by our scripts, so measured is false: 390 numbers in 113R L01-L18 and 588 in 114L G01-G32 (pass 3), plus 301 in 113R L19-L33, which are kept aside (held out before any key, frozen by SHA-256, never decoded, not in this folder). Three passes by Claude Opus 5.5 sub-agents: pass 2 blind to pass 1 (367 of 392 numbers of 113R L01-L18 the same); pass 3 re-read 321 doubtful positions with two blind readers each (293 agreed) and an arbiter on the image for the other 28; 45 numbers changed and 18 positions dropped. Glosses crossing the numbers make some readings uncertain. Pass 4 (15 Nov 2026): Brice Dudout corrected 7 numbers of 113R on a blind digit-form sheet (3 of 3 controls right)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Homophonic substitution, one number a letter, numbers 1-246 separated by dots, no syllables, code words or nulls found; Swedish plaintext.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "dots"
+  },
+  "distinct_symbols": 121,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 10,
+   "max_per_consonant": 8,
+   "per_letter": {
+    "a": 10,
+    "b": 4,
+    "c": 4,
+    "d": 6,
+    "e": 5,
+    "f": 5,
+    "g": 5,
+    "h": 4,
+    "i": 8,
+    "k": 3,
+    "l": 6,
+    "m": 6,
+    "n": 8,
+    "o": 6,
+    "p": 3,
+    "r": 6,
+    "s": 6,
+    "t": 8,
+    "u": 3,
+    "v": 5,
+    "y": 1,
+    "z": 1,
+    "ä": 2,
+    "å": 2,
+    "ö": 3
+   }
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "Not KEY_v10 of the main Bonde system (bonde1676, McBratney): different value range (9-18, 216, 246 frequent here). The postscript of image 112R, sent 'efter gamla chiffrer', is in a third letter-for-letter code (34=o, 42=u, values 335 and 484), not this one.",
+  "notes": "Counts are from the draft key (key/key.tsv): 120 values over 25 letters, from the 978 training numbers; 121 distinct numbers seen there (62 without a value; one reading of 346 is above the range). Homophone counts are those of the draft key, not of a complete table."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "The chancery's interlinear gloss on 113R-114L is the decipherment of the time. No edition or study of this second code was found (our search for the volume, Nov 2026; bonde1676 NOTES and prior_solution for the printed sources checked there).",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "archive decipherment",
+  "human_role": "Brice Dudout set the task and the rules (protocol frozen by SHA-256 before each step, a held-out portion, blind second readings) and approved each step (the Fable run, the third pass, the issue). Claude agents transcribed, read the gloss, checked it blind and built the key. He read 21 doubtful digits and 3 controls on a blind digit-form sheet (pass 4, the cipher date). No reading by a person without AI; no human palaeographer checked the gloss.",
+  "tools": [
+   "Riksarkivet IIIF images, line strips and zooms (PIL)",
+   "semi-global alignment of decoded numbers against the concatenated gloss with majority vote (scripts/build_key3.py)",
+   "simulated annealing with a Swedish 4-gram model for the starting key",
+   "blind multiple-choice re-reading of gloss letters (protocol/PROTOCOLE-VERIF.md)"
+  ],
+  "models": [
+   "claude-opus-5-5 (transcription passes, blind checks, key, this folder)",
+   "claude-fable-5-2 (palaeographic reading of the gloss G01-G20, API run of 14 Nov 2026; key proposal from the pass-4 numbers, API run of 15 Nov 2026)"
+  ],
+  "first_date": "2026-11-06",
+  "last_date": "2026-11-15"
+ },
+ "solution": [
+  {
+   "date": "2026-11-06",
+   "kind": "access",
+   "what": "Riksarkivet R0003797 images fetched over IIIF (full size for 100-116); 114L seen to be another code (values 1-246), its upper lines glossed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "statistics",
+   "what": "113R found to be in the same code as 114L (9-18, 216, 246 frequent; both open 17.246), outside KEY_v10 of the main system (values from 19).",
+   "technique": [
+    "frequency analysis",
+    "key matching"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "hypothesis",
+   "what": "One number a letter: pencil letters h e r c a n t z l i r å d over 113R L01 and N o v e m b r i s under the last line of 114L, one per number. Gloss lines carry about 2.2 letters per cipher number, so the gloss (113R G01-G33 + 114L lines 1-4) is the clear of the whole letter, bare lines of 114L included.",
+   "technique": [
+    "key-structure hypothesis",
+    "plaintext matching"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Numbers of 113R L01-L18 and 114L G01-G32 transcribed twice (pass 2 blind to pass 1; 94% agreement on 113R); 113R L19-L33 transcribed by two blind sub-agents and an arbiter and frozen as a held-out portion, never seen by the key builder.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "solver",
+   "what": "Starting key by simulated annealing (Swedish 4-gram model) and alignment on the 114L glosses; decodes 114L into the words of gloss G19-G33. Resubstitution 0.58, under the 0.85 floor: no test.",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring",
+    "plaintext matching"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Gloss G01-G20 of 113R read from the images by Fable 5.2; blind check of 151 items by three Opus sub-agents: 4 of 51 sampled sure letters disagree (7.8%, under the 10% bar), 83 of 95 doubtful groups kept.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "solver",
+   "what": "Key rebuilt by alignment of the decoded numbers against the concatenated gloss and majority vote (method frozen before), 125 values: resubstitution 0.619, under 0.85: no test, held-out lines not decoded.",
+   "technique": [
+    "plaintext matching"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Third pass of the numbers: 321 doubtful positions, two blind readers each, arbiter for 28; 45 numbers changed, 18 positions dropped.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "solver",
+   "what": "Key rebuilt on the pass-3 numbers with fixed abbreviation rules (ADDENDUM-3): 120 values, resubstitution 0.653 (113R 0.736, 114L 0.599). Still under 0.85: no test, held-out lines kept aside. Draft key filed as such.",
+   "technique": [
+    "plaintext matching"
+   ],
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Daniel Bourdeau checked on the images that the last line of 114L is Novembris one number a letter, not read by KEY_v10, and that the gloss reaches the signature on 114L line 4 (issue #629).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "reading",
+   "what": "Gloss G01-G20 normalised into Swedish sentences and translated: 16 of 161 words holes (read share 0.90). G21-G33 and 114L gloss left decoded, not read.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "transcription",
+   "what": "Pass 4: blind digit-form sheet answered by Brice Dudout (21 doubtful numbers, 3 controls all right): 7 numbers of 113R corrected; the cipher date's upper number is 18 (18/28 Novembris against the gloss's d. 13).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "what": "Blind digit-form check answered by Brice Dudout (17 Nov evening; 1 control right): the second digit of the gloss date on 114L line 4 looks like the 8 of this page, not the 3: the gloss reads d. 18 (18/28), like the cipher. The date question raised in #647 is closed; the frozen pass transcriptions keep their first reading (13).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "solver",
+   "what": "Key re-voted on the pass-4 numbers (same 120 values): resubstitution 0.6605. Fable 5.2 key proposal (144 values, block table): 0.6544 by our scoring, under 0.85: no test, held-out lines not decoded. The block table (alternating runs of 9-10 cells a-h, i-q, r-z; å ä ö on 161-169) is confirmed against shuffled keys on the same key.",
+   "technique": [
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "read from existing decipherment",
+  "method_basis": "The text is the Swedish chancery's interlinear decipherment of 1675 written between the cipher lines of 113R (and 114L lines 1-4); G01-G20 are read here as sentences. A draft key rebuilt from that gloss agrees with it at 0.66 on its own training text (resubstitution), which is not a validation; the held-out lines 113R L19-L33 were not decoded.",
+  "parts": [
+   {
+    "label": "the letter's text",
+    "records": "113R-114L",
+    "method": "read from existing decipherment",
+    "extent": "partial",
+    "basis": "period gloss G01-G20 read as sentences (read share 0.90); G21-G33 and the 114L gloss read only in part"
+   },
+   {
+    "label": "the second code's key",
+    "records": "113R L01-L18, 114L G01-G32",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "draft key of 120 values rebuilt from the interlinear gloss; 0.66 character agreement on its own training text after pass 4 (a Fable 5.2 proposal: 0.654), not validated on held-out lines"
+   }
+  ],
+  "first_break": false,
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "verification": [
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the Swedish chancery's interlinear decipherment (gloss) of the letter on 113R and 114L lines 1-4, the reading and the source of the draft key",
+    "date": "1675",
+    "source": "https://sok.riksarkivet.se/bildvisning/R0003797_00113"
+   },
+   {
+    "who": "mcbratney",
+    "role": "pointer",
+    "note": "KEY_v10 of the main Bonde system (bonde1676), against which this second code was recognised; his finding that the chancery gloss carries the clear",
+    "date": "2026-11-12",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/453"
+   },
+   {
+    "who": "bourdeau",
+    "role": "verification",
+    "note": "checked on the images that the last line of 114L is Novembris one number a letter and that the gloss reaches the signature on 114L line 4",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/629"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "113R-114L identified as one letter in a second code (1-246), its gloss as the clear of the whole letter, with Claude agents",
+    "date": "2026-11-14",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/629"
+   },
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "second code 1-246: the period gloss G01-G20 read in part (Fable 5.2, blind Opus check) and a draft key (0.65 resubstitution, not validated), with Claude agents",
+    "date": "2026-11-15",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/629"
+   },
+   {
+    "who": "dudout",
+    "role": "transcription",
+    "note": "three passes of the 1,279 numbers of 113R-114L (second blind, third with arbitration), with Claude agents",
+    "date": "2026-11-14"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "gloss G21-G33 of 113R and 114L lines 1-4 (the second half of the letter)",
+    "blocker": "illegible",
+    "detail": "read by sub-agents with many unread or doubtful words; a careful palaeographic reading is needed"
+   },
+   {
+    "item": "scattered holes in G01-G20 (16 words)",
+    "blocker": "illegible",
+    "detail": "listed under 'Notes on the holes' in readings/113R_gloss_G01-G20.md"
+   },
+   {
+    "item": "113R L19-L33 (301 numbers)",
+    "blocker": "not-attempted",
+    "detail": "kept aside as a held-out test for the draft key, never decoded"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "letter_1675-11-13",
+    "label": "113R, gloss lines G01-G20 (the first half of the letter)",
+    "transcription": [
+     "transcriptions/113R_L01-L18_pass1.tsv",
+     "transcriptions/113R_L01-L18_pass2_blind.tsv",
+     "transcriptions/113R_L01-L18_pass3_final.tsv",
+     "transcriptions/113R_L01-L18_pass4_final.tsv"
+    ],
+    "contemporary": [
+     "gloss/113R_G01-G20_fable.tsv",
+     "gloss/113R_G05-G20_after_blind_check.tsv"
+    ],
+    "decryption": "decryptions/113R_L01-L18_draftkey.txt",
+    "reading": "readings/113R_gloss_G01-G20.md",
+    "translation": "translations/113R_gloss_G01-G20_en.md",
+    "language": "sv",
+    "state": "read in part",
+    "read_share": 0.901,
+    "summary": "Carl Bonde, Swedish envoy in Paris, asks a Chancery Councillor in Stockholm, who had shown him affection there, to put to Charles XI his request to take the 4,000 riksdaler granted for his maintenance in Paris from the subsidies due in January; the sum does not cover his costs, but he will spare nothing in the King's service, provided he is not shut out of the royal grace the other ministers enjoy. A letter in a separate code, deciphered at the time between the lines.",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5, the agent that normalised and translated this gloss reading (not a person, not independent of the reading; the gloss letters were read by Claude Fable 5.2 and blind-checked by Opus sub-agents)",
+     "date": "2026-11-15",
+     "note": "Read through as sentences against the translation: three connected sentences of chancery Swedish (request, the 4,000 riksdaler from the January subsidies, the complaint about royal grace), holes marked in place and explained; 16 of 161 words are holes (research/reading_audit/v2_score.py: hole rate 0.099; the plain sentence score is 0 because the word list lacks the period spelling). The reviewer of the pull request should record their own grade."
+    },
+    "note": "The cipher of 113R L19-L33, whose clear lies in G10-G18, is kept aside (held-out, never decoded), so the transcription here covers L01-L18. The decryption file is the mechanical decode with the draft key, given for comparison; the reading is the period gloss."
+   },
+   {
+    "doc": "letter_1675-11-13",
+    "label": "114L cipher G01-G32, with gloss G19-G33 of 113R and 114L lines 1-5 (the second half)",
+    "transcription": [
+     "transcriptions/114L_G01-G32_pass1.tsv",
+     "transcriptions/114L_G01-G32_pass2_blind.tsv",
+     "transcriptions/114L_G01-G32_pass3_final.tsv"
+    ],
+    "contemporary": [
+     "gloss/113R_G19-G33_subagents.tsv",
+     "gloss/114L_lines1-5_gloss.tsv"
+    ],
+    "decryption": "decryptions/114L_G01-G32_draftkey.txt",
+    "language": "sv",
+    "state": "decoded, not read",
+    "summary": "The end of the letter: Bonde's confidence in being helped, the King, serving with zeal and affection, seeking an occasion to show it, signed Carolus Bonde, Paris, 18 (Old Style) Nov 1675.",
+    "note": "The gloss of these lines was read by Opus sub-agents with many holes, and the draft-key decode is a resubstitution (0.599 on these lines): words show through but no sentences are claimed."
+   }
+  ],
+  "key_file": "key/key.tsv",
+  "notes": "A second key of the Bonde volume, filed as its own target at Daniel Bourdeau's request (issue #629). The 0.66 is a resubstitution figure, stated as such; no claim to a new reading."
+ }
+}
