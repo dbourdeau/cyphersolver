@@ -1,0 +1,30 @@
+# Roberto Acciaiuoli, Amiens, 23 ottobre 1513 (MAP LXXII, doc. 192)
+
+The cipher of both faces as continuous Italian. The unedited output of the key is `192-literal.txt`; this file is the reading made from it. Spelling is the cipher's; word division, capitals and punctuation are editorial. Everything the key does not give for the signs as transcribed is in brackets, and a word with a bracket in it is counted as a hole:
+
+- `[...]` is an unread word and `[... 2]` two (sizes are estimates from the number of signs). `[?word]` is a word I propose for signs that do not spell it.
+- Letters in brackets inside a word are supplied or corrected. Among them are the 20 places of `192-repairs.tsv`: `[b]` where the sign 2, c in the key, is read with its second value b (14 places); `[bene]` where the triangle, m in the key, is read as the word sign (twice); `[z]` in *[f]ran[z]ese*, `[e]` in *vostr[e]*, `[a]` in *trov[a]ndosi* and `[o]` in *f[o]rza*.
+- `[+]` after the last word is the final sign of V19, a plain cross (n in the key), which I do not read.
+- `{Name}` is a code number resolved by Gabbrielli's key no. 120: 2 Papa, 4 Cristianissimo, 6 Inghilterra, 20 Svizzeri, 22 Lanzichinecchi. `[15]`, `[?26]` and `[?47]` are numbers with no value. Plain figures are numerals.
+
+After the cipher the letter closes in clear, with Acciaiuoli's commendation and the date *Ex Amiens, die xxiii Octobris M.D.XIII*; that is not part of the reading below.
+
+## Reading
+
+Per una poscripta dell'ultima mia de' venti io significai alle Signorie vostr[e] che {Cristianissimo}, nel distri[b]uire le gvernigione, haveva ordinato di mandare in [B]orgogna monsignor di [B]or[b]ona con 8 cento lance et 10 mila {Lanzichinecchi}; et che quando {Svizzeri} non si movessino da casa, non saria suto maraviglia che, inexpecttatamente trov[a]ndosi la spesa adosso et le forteze in pericolo, si fussi facto un passaggi[o] di [?costà] da' monti. Quando fussi [?successo] felicemente, non saria suto ancora maraviglia per [...] [?potevono] et passati et [?avanti] che l'impeto de' [?20] si fussi messo insieme con le spalle de' [15], et che la f[o]rza delle galee [f]ran[z]ese et di 12 mila {Lanzichinecchi} si poteva pensare [i]n ogni gran factione.
+
+Hora, sendo conparsa la vostra delli 11 con la copia della lettera di [...] Martelli significativa della ropta di [15], a rivolto sottosopra questo disegno et pensiero, et in tucto è necessario si ponga da parte. Né so quello sien per [?deliberare] di [?nuovo].
+
+Per le parole del {Cristianissimo}, col quale ora a lungo parlai, si vede li ha dato questa cosa molestia et ropto qualche disegno; et di quanto sia per fare di presente non pare [bene] resoluto, perché da un canto lo preme la paura de' {Svizzeri} quando venissino in [B]orgogna, dall'altro lo sdegno contro a [?26] et [?47], de' quali [?mi parlò] ora molto iratamente, dicendomi: e' si excusano col dire [?d'essere] suti forzati per la paura dello ex[e]rcito anglese; et sendo io loro soprano signore, non hanno hauto rigvardo di mettermi el reame in pericolo, né per loro si è tenuto di farmelo perdere.
+
+Et mi dixe che havevon mandato uno a [?posta] da monsignore a [...] excusarsi et per ritrarre qualcosa dell'animo del Re; et che monsignore li aveva risposto che nessuno poteva meglio sapere l'animo di {Cristianissimo} che lor medesimi, e quali erono conscii se li havevono facto ing[i]uria o no; et che examinassino le conscientie loro, et trovando non lo haver [?offenso], ne sperassino [bene]; ma trovando haverli facto ing[i]uria, ne expectassino la punitione.
+
+Nientedimeno el respecto della triegva di Spagna et la stagione del verno potria ramorzare lo sdegno et voltare li animi a riposarsi questo verno; et potria questo romore et demonstratione ancora farsi per assicurarsi in futuro che qual[che] principe non dessi loro più ricept[o] alli nimici loro.
+
+Le gente disegnate per andare in gvernigione non sono ancora andate, né son per moversi insino che non ci è la partita di {Inghilterra}, la quale non può tardare a venire. [...] venne nuova a {Cristianissimo} come quella Maestà si trovava a [...], et di g[i]à haveva im[b]arcato e [...] lecto et tucti [...] arnesi, né [?mancava] se non la sua persona; tale [...] ne era [?andato] a Cales et quivi s'era [?imbarcato] con una parte de[ll]e gente, et un'altra parte se n'era im[b]arcato in [...] altro porto di Fian[?d]ra, che vengono havere distri[b]uito el passaggio loro in tre parte per più conmodità; et [... 2] le [co]se de[l] Re secure et le forze di Sua Maestà in tale [?effetto] che non ha da du[b]itare di niente.
+
+Et quando {Svizzeri} insultassino di [?qua] a questi tempi, [?troverebbono] un riscontro di 2 mila 5 cento lance et 14 mila {Lanzichinecchi}, el quale exercito non è per diminuirsi né licentiarsi; et tucti si metteranno da pochi giorni in la in Ciampa[g]na et [B]orgogna, e 'l resto delle gente d'arm[e] sarà messa in su queste [f]rontiere. Et ora {Cristianissimo} mi dixe: scrivete [...] li[b]eramente che io [?sono] al securo et senza suspecto; et se li {Svizzeri} ci movono per assaltarsi, noi ci [b]atterèno al ogni modo.
+
+[Ci]rca lo spirituale non si [?può] dirne altro se non che si fa l'ordinato [... 2] mandare e prelati a Roma, et non credo passino molti giorni dopo Tucti Sancti che partiranno di qua. Et {Cristianissimo} non [?potria] [?trovarsi] meglio di[s]posto che si [?truova] [?a] conpiacere {Papa} d'ogni cosa; et Sua Maestà et questi del consiglio et tucti li [... 4] deli[bera]ti a questo medesimo et d'animo da non li negare cosa nessuna.
+
+Et trovandosi questo [... 2] per [... 2] in [...] [b]uon riposo et di [...] tanto tur[b]amento, non sendo [se]gvita la tempesta et piova che si mons[t]rava quattro [?mesi] sono, [?hanno] rallargato [...] el tempo, et ridocte le cose in termine che per questo verno non sono per alterarsi, pare che Dio monstri la via [a] nostro [?Signore] a pervenire al [?suo] fine desiderato di quietare la cristianità, a che Dio li conceda gratia, che di qua credo sia per trovare quella facilità che desidera[+].
