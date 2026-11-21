@@ -1,0 +1,126 @@
+{
+ "schema_version": 1,
+ "target": "gowna1920",
+ "title": "The Gowna police telegram",
+ "documents": [
+  {
+   "id": "gowna",
+   "shelfmark": "IE-MA-CP-03-21, PDF pp. 11?13",
+   "year": 1920,
+   "country": "Ireland",
+   "language": "English",
+   "read": "read in part",
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "letters",
+    "measured": false,
+    "file": "transcription.tsv"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/829"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Reciprocal table recovered from the damaged ciphertext using a dictionary and historically informed substitution design.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "The contributors supplied their transcription, key and reading.",
+  "models": [
+   "ChatGPT"
+  ]
+ },
+ "solution": [
+  {
+   "kind": "reading",
+   "what": "Reciprocal table recovered from the damaged ciphertext using a dictionary and historically informed substitution design.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Reciprocal table recovered from the damaged ciphertext using a dictionary and historically informed substitution design.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.9333333333333333,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Issue review and filed word counts. See NOTES.md.",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "beck",
+    "role": "new cipher with solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/829"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "gowna",
+    "transcription": "transcription.tsv",
+    "decryption": "literal.tsv",
+    "state": "read in part",
+    "summary": "The Gowna police telegram, gowna.",
+    "reading": "reading.md",
+    "read_share": 0.9333333333333333
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Draft profile. The separate reading reviews have not yet been recorded.",
+  "gaps": [
+   {
+    "item": "opening and closing groups",
+    "blocker": "open-codes"
+   },
+   {
+    "item": "day of the month",
+    "blocker": "illegible"
+   }
+  ]
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "target": "piccolomini25054",
+ "title": "A partially deciphered letter in the Piccolomini archive",
+ "documents": [
+  {
+   "id": "25054",
+   "shelfmark": "SOA Z?mrsk, RA Piccolomini?, inv. 25054",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "Italian",
+   "read": "read in part",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ]
+   },
+   "length": {
+    "tokens": 157,
+    "unit": "code groups",
+    "measured": false,
+    "file": "physical-lines.md"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/790"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "known plaintext",
+  "human_role": "The contributors supplied their transcription, key and reading.",
+  "models": [
+   "ChatGPT"
+  ]
+ },
+ "solution": [
+  {
+   "kind": "reading",
+   "what": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The number table draws on the period interlinear hints and Italian context. Its values were checked against a deciphered sibling.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.78125,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Issue review and filed word counts. See NOTES.md.",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "annabeck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/790"
+   },
+   {
+    "who": "beck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/790"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "25054",
+    "transcription": "physical-lines.md",
+    "decryption": "literal.tsv",
+    "state": "read in part",
+    "summary": "A partially deciphered letter in the Piccolomini archive, 25054.",
+    "reading": "reading.md",
+    "read_share": 0.78125,
+    "translation": "translation.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Draft profile. The separate reading reviews have not yet been recorded.",
+  "gaps": [
+   {
+    "item": "seven cipher words and uncertain clear title S.A.",
+    "blocker": "illegible"
+   }
+  ]
+ }
+}

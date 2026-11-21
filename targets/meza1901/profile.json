@@ -1,0 +1,122 @@
+{
+ "schema_version": 1,
+ "target": "meza1901",
+ "title": "Meza Salinas warns Bernardo Reyes about a pamphlet",
+ "documents": [
+  {
+   "id": "meza",
+   "shelfmark": "CEHM DLI.34.6704.1",
+   "year": 1901,
+   "country": "Mexico",
+   "language": "Spanish",
+   "read": "read",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "separate collection"
+    ]
+   },
+   "length": {
+    "tokens": 142,
+    "unit": "code groups",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/791"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Contributors report using the Spanish plain-text context of the same letter. A separate period decipherment attests three cipher slips.",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive"
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "crib",
+  "human_role": "The contributors supplied their transcription, key and reading.",
+  "models": [
+   "ChatGPT"
+  ]
+ },
+ "solution": [
+  {
+   "kind": "reading",
+   "what": "Contributors report using the Spanish plain-text context of the same letter. A separate period decipherment attests three cipher slips.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Contributors report using the Spanish plain-text context of the same letter. A separate period decipherment attests three cipher slips.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Issue review and filed word counts. See NOTES.md.",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "annabeck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/791"
+   },
+   {
+    "who": "beck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/791"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "meza",
+    "transcription": "transcription.txt",
+    "decryption": "literal.txt",
+    "state": "read",
+    "summary": "Meza Salinas warns Bernardo Reyes about a pamphlet, meza.",
+    "reading": "reading.md",
+    "read_share": 1.0,
+    "translation": "translation.md"
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Draft profile. The separate reading reviews have not yet been recorded."
+ }
+}

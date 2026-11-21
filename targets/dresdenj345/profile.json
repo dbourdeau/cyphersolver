@@ -1,0 +1,201 @@
+{
+ "schema_version": 1,
+ "target": "dresdenj345",
+ "title": "Two cipher recipes in a Dresden manuscript",
+ "documents": [
+  {
+   "id": "249r",
+   "shelfmark": "SLUB Dresden, Mscr.Dresd.J.345",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "German",
+   "read": "read",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "249r-transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/787"
+   }
+  },
+  {
+   "id": "249v",
+   "shelfmark": "SLUB Dresden, Mscr.Dresd.J.345",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "German",
+   "read": "read",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "249v-transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/787"
+   }
+  },
+  {
+   "id": "250r",
+   "shelfmark": "SLUB Dresden, Mscr.Dresd.J.345",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "German",
+   "read": "not read",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ]
+   },
+   "length": {
+    "tokens": "unknown",
+    "unit": "symbols",
+    "measured": false,
+    "file": "250r-transcription.txt"
+   },
+   "transcription": {
+    "by": "mixed",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/787"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "The facing manuscript alphabet on f. 248v gives the sign values.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown"
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "key from archive",
+  "human_role": "The contributors supplied their transcription, key and reading.",
+  "models": [
+   "ChatGPT"
+  ]
+ },
+ "solution": [
+  {
+   "kind": "reading",
+   "what": "The facing manuscript alphabet on f. 248v gives the sign values.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "Filed the issue evidence and checked the line replay against the submitted transcription and key.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "The facing manuscript alphabet on f. 248v gives the sign values.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.9774193548387097,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "303 of 310 sure cipher words across the two complete recipes using the conservative bracket count. The four-line fragment is outside this count.",
+  "verification": [
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "beck",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/787"
+   },
+   {
+    "who": "panesar",
+    "role": "solution",
+    "source": "https://github.com/dbourdeau/cyphersolver/issues/787"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "source": "SLUB Dresden, f. 248v"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "249r",
+    "transcription": "249r-transcription.txt",
+    "decryption": "249r-literal.tsv",
+    "state": "read",
+    "summary": "Two cipher recipes in a Dresden manuscript, 249r.",
+    "reading": "249r-reading.md",
+    "read_share": 0.974025974025974,
+    "translation": "249r-translation.md"
+   },
+   {
+    "doc": "249v",
+    "transcription": "249v-transcription.txt",
+    "decryption": "249v-literal.tsv",
+    "state": "read",
+    "summary": "Two cipher recipes in a Dresden manuscript, 249v.",
+    "reading": "249v-reading.md",
+    "read_share": 0.9807692307692307,
+    "translation": "249v-translation.md"
+   },
+   {
+    "doc": "250r",
+    "transcription": "250r-transcription.txt",
+    "decryption": "250r-literal.tsv",
+    "state": "decoded, not read",
+    "summary": "Two cipher recipes in a Dresden manuscript, 250r."
+   }
+  ],
+  "key_file": "key.tsv",
+  "notes": "Draft profile. The separate reading reviews have not yet been recorded.",
+  "gaps": [
+   {
+    "item": "damaged cipher signs and quantity mark",
+    "blocker": "illegible"
+   },
+   {
+    "item": "later cipher leaves outside these files",
+    "blocker": "not-attempted"
+   }
+  ]
+ }
+}
