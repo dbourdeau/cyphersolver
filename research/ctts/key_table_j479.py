@@ -16,15 +16,20 @@ ORDER = 'I U E A N 4 c B d - < p P q w O 6 S X 9 C 7'.split()
 HEB = dict(zip(ORDER, 'אבגדהוזחטיכלמנסעפצקרשת'))
 HEB.update({'a': 'ת', 's': 'ר', '8': 'ר', 'e': 'ח', 'f': 'מ', 'b': 'ל', 't': 'ן', 'y': 'ר', 'n': 'ה', 'o': 'ע'})
 colors = [l.split(';')[0] for l in open(P / 'ctts' / 'colors.txt', encoding='utf-8') if l.strip()]
-boxes = json.load(open(P / 'boxes_final.json', encoding='utf-8'))
-labels = json.load(open(P / 'labels_final.json', encoding='utf-8'))
-status = json.load(open(P / 'status_final.json'))
+CORR = '--corrected' in sys.argv
+boxes = json.load(open(P / ('boxes_corrected.json' if CORR else 'boxes_final.json'), encoding='utf-8'))
+labels = json.load(open(P / ('labels_corrected.json' if CORR else 'labels_final.json'), encoding='utf-8'))
+status = None if CORR else json.load(open(P / 'status_final.json'))
 byt = {}
 for img, bx in boxes.items():
     for k, b in enumerate(bx):
-        if status[img][k] != 'agree':
+        lab = labels[img][str(b['n'])]
+        if CORR:
+            if lab[0] in '?_#':
+                continue
+        elif status[img][k] != 'agree':
             continue
-        byt.setdefault(labels[img][str(b['n'])].rstrip('.?'), []).append((img, b))
+        byt.setdefault(lab.rstrip('.?'), []).append((img, b))
 types = [t for t in ORDER if t in byt] + sorted(t for t in byt if t not in ORDER)
 try:
     f = ImageFont.truetype('arial.ttf', 30); fh = ImageFont.truetype('arial.ttf', 26); fs = ImageFont.truetype('arial.ttf', 15)
@@ -32,7 +37,7 @@ except OSError:
     f = fh = fs = ImageFont.load_default()
 H = 78; W = 1376; LW = 190
 sheet = Image.new('RGB', (W, H * len(types) + 56), (250, 248, 242)); d = ImageDraw.Draw(sheet)
-d.text((12, 14), 'Sign table: T-S NS J479 (Cambridge UL), boxes where the blind pass and the transcription agree', fill=(40, 40, 40), font=fs)
+d.text((12, 14), 'Sign table: T-S NS J479 (Cambridge UL), corrected CTTS project, boxes not marked uncertain (model-made, not person-checked)' if CORR else 'Sign table: T-S NS J479 (Cambridge UL), boxes where the blind pass and the transcription agree', fill=(40, 40, 40), font=fs)
 names = [l.split(';')[1] for l in open(P / 'ctts' / 'colors.txt', encoding='utf-8') if l.strip()]
 y = 40; cache = {}
 for t in types:

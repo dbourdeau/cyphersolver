@@ -117,18 +117,24 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
 15. 20 Nov 2026. The user asked for the write-up and a pull request with Brice Dudout as reviewer, publishing before
     Elbaum is contacted (the user's decision; Elbaum credited on the page).
 
-16. 20 Nov 2026. **CTTS sign table (first pass, model-made; for the user's review).** Following the repository's CTTS
-    pipeline (`research/ctts/README.md`): 46 straightened bands (one per cipher row, signs turned upright; the
-    margin columns and upside-down lines included), candidate boxes from a finer segmenter for separate-stroke signs
-    (`research/ctts/segment_glyphs.py`, 682 boxes), and two blind first-pass labelling agents (one per side; overlays
-    and the sign chart only). The blind labels were then aligned with this target's transcription band by band
-    (`research/ctts/align_j479.py`): 336 of 637 boxes agree on the shape, 91 disagree,
-    162 boxes and 204 transcription signs have no counterpart, 14 boxes were cut. The
-    first pass is therefore not yet a gold standard: the remaining boxes need a person in CTTS. The CTTS project files
-    (`positions/`, `colors.txt`: 46 images, 637 boxes, 97 symbol types, uncertain boxes marked `?`) are in the
-    git-ignored `research/ctts/projects/tsnsj479/ctts/`. The page's sign table shows only the 336 agreed boxes
-    (`research/ctts/key_table_j479.py`, drawn here in CTTS's style, not exported from the CTTS window). Not checked
-    by a person; CTTS was not driven.
+16. 20 Nov 2026. **CTTS project, corrected by hand-editing the project files (model-made; for the user's review).**
+    Following the repository's CTTS pipeline (`research/ctts/README.md`): 46 straightened bands (one per cipher row,
+    signs turned upright; margin columns and upside-down lines included), candidate boxes from a finer segmenter for
+    separate-stroke signs (`research/ctts/segment_glyphs.py`, 682 boxes), two blind first-pass labelling agents (one
+    per side; overlays and the sign chart only). 5c: the blind labels were aligned with this target's transcription
+    band by band (`align_j479.py`): 336 of 637 boxes agreed, 91 disagreed, 162 boxes and 204 transcription signs had no
+    counterpart. So the first pass was not a gold standard. Correction (`prep_review_j479.py`, `apply_decisions_j479.py`):
+    two reviewers decided every non-agreeing box and every missing sign on enlarged, overlay-free crops, with the
+    transcription in view (so the corrected project is no longer independent of it): 167 type changes, 81 boxes deleted
+    (stains, fragments of neighbouring lines), 3 merges, 15 splits, 129 boxes added, 103 signs marked uncertain (`?` in
+    the type name). Result: **697 boxes in 84 symbol types over 46 images**; 585 of the transcription's 679 signs line up
+    with the boxes in sequence. About 58 transcription tokens were wrong on the image (S1L03, S1L07, S1L01, S2L04-06, S2L10
+    among them; the alphabet columns S2V01-02 do not correspond to the transcription at all). New labels: `#` (overwritten
+    clusters, S1L12, S1V02) and `K` (one sign at the end of S1V01). Computer use of the CTTS window was not available,
+    so, as in the it1583 pilot, the corrections were written to `positions/` and `colors.txt` (git-ignored project folder
+    `research/ctts/projects/tsnsj479/ctts/`) for CTTS to restore; the project has not been opened or checked in CTTS and no
+    person has checked the sign table. The page's table (`key_table_j479.py --corrected`) shows the 592 boxes not marked
+    uncertain, drawn here in CTTS's style, not exported from the CTTS window.
 
 ## Result
 
