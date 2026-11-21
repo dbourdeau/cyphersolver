@@ -204,7 +204,13 @@
     "state": "read in part",
     "read_share": 0.872,
     "summary": "Louis XII has ordered Bourbon into Burgundy with lances and Landsknechte; news of a rout has overturned a plan; the king is angry at people who yielded to the English; the English king embarks at Calais; the king says he is secure and will fight if the Swiss move; the prelates leave for Rome after All Saints.",
-    "note": "192-literal.txt is the unedited output of key.tsv. The reading departs from it at the 20 places of 192-repairs.tsv and wherever it prints brackets; every departure is marked and counted as a hole. read_share counts words read with nothing supplied or changed (660 of 757)."
+    "note": "192-literal.txt is the unedited output of key.tsv. The reading departs from it at the 20 places of 192-repairs.tsv and wherever it prints brackets; every departure is marked and counted as a hole. read_share counts words read with nothing supplied or changed (660 of 757).",
+    "reading_review": {
+     "grade": "B",
+     "by": "OpenAI Codex, integration review of PR #841 for the maintainers (AI reviewer)",
+     "date": "2026-11-21",
+     "note": "Read the continuous Italian against the English. The dispatch is coherent but raw, with proposed words, marked repairs and unresolved groups. Replayed the raw key on all 41 lines and removed one duplicated R01 in the filed output. Reviewed the 20-row repair list and the failed sign-2 separation. The contributor reports 660/757 sure; a separate markup-based tally gave 659/759, also read in part. The earlier maintainer review checked three manuscript passages; this pass compared committed texts and did not recheck the images."
+    }
    }
   ],
   "gaps": [
