@@ -1,6 +1,6 @@
 # Philip IV to Cardinal Albornoz, Madrid, 24 July 1648 (catalogue 747)
 
-Status: read (Brice Dudout, 28 Oct 2026; 353 of 359 cipher groups read, about 97% certain, about 1% probable, 6 unresolved (4 of them code signs); restored groups not counted separately; counted in groups, not words; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 123 of 134, 91.8%). Was read (Brice Dudout, 28 Oct 2026; 353 of 359 cipher groups read, about 97% certain, about 1% probable, 6 unresolved (4 of them code signs); restored groups not counted separately; counted in groups, not words; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#albornoz-1648
@@ -83,3 +83,14 @@ Prior work, checked on 28 October 2026. Daniel Bourdeau’s catalogue lists thes
 
 - Four code signs found only here: 74 (probably "que"), underlined A ("los [A]s", perhaps "inconvenientes"),
   124 (twice) and ✗11; and the group read "el" before "respondió". Another letter in the same cipher would settle them.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+Counted on `reading.md`, with the italic clear formulas (opening sentence and closing) left out: **134 cipher words,
+123 sure, 11 holes** — three words with a probable letter (so{b}re, Ve{o}, {Be}atitud), two restored words ([que],
+[de]) and six unresolved groups (‹74›, ‹el›, ‹A›s, ‹124› twice, ‹✗11›; four of them code signs). **123 of 134 = 91.8%**,
+under the bar: class **read -> read in part**. The key stays recovered. The old figure (353 of 359 groups, 0.983)
+counted cipher groups, with the probable groups as read. Counted by a script that takes every marked word as a hole,
+then checked by eye; one reviewer, no image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup (it gives 0.989 over the whole file).
