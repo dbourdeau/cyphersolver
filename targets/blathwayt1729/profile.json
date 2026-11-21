@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "huntington-mssbla-191-p5",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "The Huntington Library, William Blathwayt papers (Addenda), mssBLA 191, p. 5",
    "date": "summer 1729 (forwarded 8 August 1729)",
    "year": 1729,
@@ -120,10 +120,11 @@
    ],
    "what": "141 groups read with K2; 17 probable words from the alphabetical place in the code book and the sense.",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728), from the reading's own count: 88 of 108 certain (0.815); class read -> read in part.", "result": "partial"}
  ],
  "outcome": {
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
   "method": "read with known key",
   "method_basis": "Code table rebuilt from contemporary decipherments of sister pieces in the same collection, validated on a held-out glossed piece.",
@@ -131,9 +132,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.972,
+  "fraction_read": 0.815,
   "fraction_read_method": "measured",
-  "fraction_read_source": "105/108 words read in their sense; 88 certain (81.5%), 17 probable (15.7%), 3 unresolved (2.8%).",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 88 of 108 cipher words certain (the reading's own count); 17 probable {x} (numbers absent from the contemporary decipherments) and 3 unresolved are holes. Before: 105 of 108 (0.972), probable counted as read.",
   "first_break": true,
   "verification": [
    "contemporary decipherment",
@@ -157,14 +158,16 @@
     "reading": "reading.md",
     "translation": "translation.md",
     "language": "fr",
-    "state": "read",
+    "state": "read in part",
     "summary": "The informer thanks Milord, complains that Mr Keene does not like him nor thank him for past services, and asks for orders for his conduct during the accommodation.",
     "reading_review": {
      "grade": "A",
      "by": "Claude Sonnet 5.5",
      "date": "2026-10-30",
      "note": "Read as French sentences and translated: a letter to Milord thanking him, complaining of Mr Keene and asking for orders; three unresolved holes (214, se<711>s, <pr>es) marked in the text and the 17 probable words are placed by the code book's alphabetical order. 12 of 17 sentences clean by the scorer, which counts the marked words as holes."
-    }
+    },
+    "read_share": 0.815,
+    "note": "18 Nov 2026, cipher words only, sure words only: 88 of 108 words sure (81.5%); the 17 probable code numbers and 3 unresolved are holes. Before 0.972, probable counted as read."
    }
   ],
   "key_file": "key.tsv",

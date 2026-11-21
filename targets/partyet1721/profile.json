@@ -130,7 +130,9 @@
    ],
    "what": "OCR sweep of glossed cipher letters 1717-1730 (AE/B/I/223-240): 392 = service in three glosses (1725, 1730).",
    "result": "worked"
-  }
+  },
+  {"date": "2026-11-18", "kind": "verification", "what": "Read share recounted over cipher words only, sure words only (README rule of PR #728): 33 of 35 (0.943); class read -> read in part.", "result": "partial"},
+  {"date": "2026-11-19", "kind": "verification", "what": "Floor for short texts (README, 19 Nov 2026: under 40 cipher words, at most 2 holes) applied to the 18 Nov counts: an-ae-b-i-226-f92v (33/35) read; class read in part -> read.", "result": "worked"}
  ],
  "outcome": {
   "class": "read",
@@ -141,9 +143,9 @@
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 1.0,
+  "fraction_read": 0.943,
   "fraction_read_method": "measured",
-  "fraction_read_source": "35/35 words read in their sense; 33 certain (94%), 2 probable (dernie{r}, déci{dé}: ends in the binding); 392 = service attested in glossed letters of 1725 and 1730.",
+  "fraction_read_source": "Cipher words only, sure words only (18 Nov 2026): 33 of 35 cipher words certain; the 2 probable words (endings lost in the binding) are holes. Before: 35 of 35 (1.0). Floor for short texts (README, 19 Nov 2026): an-ae-b-i-226-f92v (33/35) under 40 cipher words with at most 2 holes, so read; every document is now read and the class stays read.",
   "first_break": true,
   "verification": [
    "contemporary decipherment",
@@ -173,7 +175,9 @@
      "by": "Claude Opus 5.5 (for Brice Dudout)",
      "date": "2026-10-31",
      "note": "Read as sentences 31 Oct 2026: the 35-word cipher passage is one coherent sentence pair joining the clear text on both sides; two endings lost in the binding, no hole."
-    }
+    },
+    "read_share": 0.943,
+    "note": "18 Nov 2026, cipher words only, sure words only: 33 of 35 cipher words sure (94.3%); dernie{r} and déci{dé}, endings lost in the binding, are holes. Before 1.0. 19 Nov 2026, floor for short texts (README): 35 cipher words, 2 holes; under 40 cipher words with at most 2 holes, so read (the floor is used)."
    }
   ],
   "key_file": "key.tsv",
