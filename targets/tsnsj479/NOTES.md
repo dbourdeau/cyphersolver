@@ -169,6 +169,14 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     apart from the circled cut-outs, B, Bc, d, -, <5, C, 2, e, y, z ...) are not confirmed by anyone. **Now 699 boxes in 82
     types, 169 uncertain, 528 certain boxes in 34 table rows.** Not opened in CTTS.
 
+    **Second pass of the person's check (21 Nov 2026, same person, on the redrawn table of 528 boxes).** Ticked: I, U, E,
+    A, 4, c, B, Bc, d, <, p, q, 6, S, X, 9, C, 7, 5, b, e, f, y, z (one tick sits between rows E and A, taken for both,
+    and one between N and 4, taken for 4). Circled 13 cut-outs: N (1, the M-shaped S2L15_6), J (1), P (6), O (1, the plain
+    ring S1L05_1), 8 (1), a (3). Not marked: `-`, `<5`, w, 2. Applied (`apply_user_marks2_j479.py`, `marks2_applied.tsv`):
+    the 13 circled boxes are marked uncertain. **Now 699 boxes in 82 types, 182 uncertain, 515 certain boxes in 34 table
+    rows.** In all the person circled 46 cut-outs and moved five J boxes to `-`; h, m, n, o (questioned) are out of the
+    table. Rows not yet confirmed: `-`, `<5`, w, 2, and the questioned h, m, n, o. Not opened in CTTS.
+
 ## Result
 
 Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent
