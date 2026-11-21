@@ -1,0 +1,318 @@
+{
+ "schema_version": 1,
+ "target": "fuensalida1688",
+ "title": "Charles II to the conde de Fuensalida, governor of Milan, 1688 and 1690: AHNOB FRIAS,C.61 cipher letters; the letter of 25 Nov 1688 without translation decoded with a key not validated",
+ "documents": [
+  {
+   "id": "c62-1688-11-25",
+   "read": "read in part",
+   "shelfmark": "AHNOB, FRIAS,C.61 (PARES 3962172), image 62",
+   "date": "1688-11-25",
+   "year": 1688,
+   "country": "Spain",
+   "route": "Charles II (Secretariat of State, Alonso Carnero), Buen Retiro -> conde de Fuensalida, governor of Milan",
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None: the archivist's cover note says this is the one letter of the bundle without translation.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 149,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/c62_25nov1688_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5) for Brice Dudout, 14 Nov 2026: two blind passes, arbitrated on the image",
+    "image_quality": "fair",
+    "notes": "Agreement between passes 0.905; 339|319 left open."
+   }
+  },
+  {
+   "id": "d145-1690-11-30",
+   "read": "not read",
+   "shelfmark": "AHNOB, FRIAS,C.61 (PARES 3962173), images 25-26 (address no. 146)",
+   "date": "1690-11-30",
+   "year": 1690,
+   "country": "Spain",
+   "route": "Charles II, Madrid -> conde de Fuensalida",
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None found; images 28-29 are the translation of another letter.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 333,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/d145_30nov1690_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus 5.5), 14 Nov 2026: two blind passes, disagreements not settled on the image",
+    "image_quality": "fair"
+   }
+  },
+  {
+   "id": "d141-1690-11-09",
+   "read": "read",
+   "shelfmark": "AHNOB, FRIAS,C.61 (PARES 3962173), image 11 (D.141); translation images 19-20 (FRIAS 61/144)",
+   "date": "1690-11-09",
+   "year": 1690,
+   "country": "Spain",
+   "route": "Charles II, Madrid -> conde de Fuensalida",
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Period traducción filed in the same unit (images 19-20).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 439,
+    "unit": "mixed",
+    "measured": true,
+    "file": "transcription/d141_9nov1690_cipher.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude (Opus), 28 Oct and 3 Nov 2026 (transcription/d141_9nov1690_cipher.txt)",
+    "image_quality": "fair",
+    "notes": "Existing: used only as a test pair for K3."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "nomenclator",
+   "syllabic",
+   "homophonic"
+  ],
+  "summary": "Secretariat cipher of Charles II: 3-digit nomenclator (101-964, blocks by initial), 1-2 digit numbers for letters and syllables with homophones, vowel + substituted-consonant pairs (as = da, ey = se, ez = el), punctuation and nulls.",
+  "symbol_kind": "digits and letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": true
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "names",
+    "places",
+    "titles"
+   ],
+   "unread_groups": 7
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "none",
+  "notes": "Three hands (A, B, C). A second system (3-digit code only) is used for D.139/D.140 of 9 Nov 1690 and is not treated."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Period traducciones filed with almost every letter of FRIAS C.61 D.106-162; none for 25 Nov 1688 or 30 Nov 1690",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout directed and checked doubtful signs on two blind plates; transcription, key, preregistered measurements and reading by Claude.",
+  "tools": [
+   "score.py (LCS characters / words, 200 value-permuted controls)",
+   "train.py (hard-EM alignment)"
+  ],
+  "models": [
+   "Claude Opus 5.5",
+   "Claude Fable 5.2"
+  ],
+  "sessions": 5,
+  "first_date": "2026-10-28",
+  "last_date": "2026-11-17"
+ },
+ "solution": [
+  {
+   "date": "2026-10-28",
+   "kind": "key from source",
+   "what": "K1/K2 aligned on period cipher / traducción pairs D.106-111, D.137-138.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "verification",
+   "what": "K2 on held-out D.112/113: 0.768 characters, 0.636 words (best control 0.608 / 0.171).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-03",
+   "kind": "verification",
+   "what": "K3 (+8 pairs) on held-out D.130/131: 0.733 characters (bar 0.85).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "K3 on D.141 vs its newly found period translation D.144: 0.789; K4 on D.132/133: 0.786; K4 on images 58-59/61-62: 0.738 (bar 0.85).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "K5 (hard-EM over 23 pairs) on held-out images 36-37/39: 0.899 characters, 0.801 words; best control 0.703 / 0.180; margin +0.30 in characters not met.",
+   "result": "failed",
+   "technique": [
+    "EM alignment",
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "reading",
+   "what": "25 Nov 1688 read with K5 (exploratory): 62 words, 54 sure, 8 probable; with K4: 95.2%.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "Key rebuilt from period traducciones filed with the other letters of the same bundles; it ranks first against every control but failed the preregistered 0.85 + 0.30 bar each time.",
+  "parts": [
+   {
+    "label": "25 Nov 1688",
+    "records": "FRIAS,C.61, PARES 3962172 image 62",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "K5.tsv, not validated"
+   },
+   {
+    "label": "9 Nov 1690 (D.141)",
+    "records": "FRIAS,C.61, PARES 3962173 images 11, 19-20",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "period traducción D.144"
+   },
+   {
+    "label": "30 Nov 1690",
+    "records": "FRIAS,C.61, PARES 3962173 images 25-26",
+    "method": "not solved",
+    "extent": "partial",
+    "basis": "K5 decoding, 80.9% exploratory"
+   }
+  ],
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "decipherment with ambiguous key",
+   "catalogue correction"
+  ],
+  "class": "read in part",
+  "fraction_read": 0.952,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading/c62_25nov1688_reading_K4.txt (63 words, sure + probable 60); the K5 reading has 62 of 62 sure or probable; both exploratory, key not validated",
+  "key": "partial",
+  "codes_open": {
+   "open": 7,
+   "tokens_open": 29
+  },
+  "gaps": [
+   {
+    "item": "30 Nov 1690 (images 25-26), 29 of 152 words",
+    "blocker": "open-codes",
+    "detail": "codes 335, 357, 103, 460, 44, 667, 607 unknown; pass disagreements not settled"
+   },
+   {
+    "item": "validation of K5 on a fresh pair of 300+ tokens",
+    "blocker": "needs-physical-access",
+    "detail": "no unused pair left in 3962172/3962173; 3962184 has only clear originals; other units of 3962171 still to open"
+   }
+  ],
+  "grades": "unknown",
+  "verification": [
+   "matched control",
+   "contemporary decipherment"
+  ],
+  "provenance": "contributed",
+  "notes": "Exploratory reading; key not validated; contributor's own review. Held-out tests (preregistered, not docs/_validate.py): Seven preregistered held-out tests (K1-K5), all rank 1 of 201, none at >= 0.85 characters and >= best control + 0.30; the control was later found to favour long decodings.",
+  "texts": [
+   {
+    "doc": "c62-1688-11-25",
+    "label": "Charles II to Fuensalida, Buen Retiro, 25 Nov 1688",
+    "transcription": [
+     "transcription/c62_25nov1688_cipher.txt",
+     "transcription/c62_25nov1688_pass2.txt"
+    ],
+    "decryption": [
+     "reading/c62_25nov1688_reading_K5.txt",
+     "reading/c62_25nov1688_reading_K4.txt"
+    ],
+    "summary": "The King approves Fuensalida's handling of the Prince-Abbot of Saint Gall's complaint to Count Casati about French raids on Swiss places, and asks to be kept informed.",
+    "language": "es",
+    "reading": "reading/c62_25nov1688_en.md",
+    "translation": "reading/c62_25nov1688_en.md",
+    "state": "read in part",
+    "read_share": 0.952,
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-17",
+     "note": "Exploratory: key not validated at the bar; two blind transcription passes; not a second reader."
+    }
+   },
+   {
+    "doc": "d145-1690-11-30",
+    "label": "Charles II to Fuensalida, Madrid, 30 Nov 1690",
+    "transcription": [
+     "transcription/d145_30nov1690_cipher.txt",
+     "transcription/d145_30nov1690_pass2.txt"
+    ],
+    "decryption": [
+     "reading/d145_30nov1690_decoding_K5.txt"
+    ],
+    "language": "es",
+    "state": "decoded, not read",
+    "read_share": 0.809,
+    "summary": "On the order of battle of the armies, the Duke of Savoy, Prince Eugene and a question of precedence ('la derecha').",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude (Opus 5.5), contributor's own",
+     "date": "2026-11-17",
+     "note": "Decoding only; 29 words unread; lines 5-6 not yet sentences."
+    }
+   }
+  ],
+  "key_file": [
+   "K5.tsv"
+  ],
+  "credits": [
+   {
+    "who": "dudout",
+    "role": "solution",
+    "note": "Transcription, key from the period translations, preregistered tests and exploratory reading (Claude for Brice Dudout).",
+    "date": "2026-11-17",
+    "source": "this folder"
+   }
+  ]
+ }
+}
