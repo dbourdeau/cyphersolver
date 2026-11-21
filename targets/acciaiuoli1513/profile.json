@@ -72,7 +72,7 @@
    "known plaintext"
   ],
   "attack": "sibling key",
-  "human_role": "Andrew Aymeloglu requested the investigation, the second-model review and the submission.",
+  "human_role": "Andrew Aymeloglu requested the investigation, the second-model review, the submission and the revision after review.",
   "models": [
    "Claude Fable 5.2 (Anthropic)",
    "OpenAI Codex"
@@ -84,7 +84,7 @@
    "DECODE database"
   ],
   "first_date": "2026-11-20",
-  "last_date": "2026-11-20"
+  "last_date": "2026-11-21"
  },
  "solution": [
   {
@@ -134,20 +134,26 @@
    "what": "Gabbrielli's keys no. 89 and no. 111 for Acciaioli checked for the numbers 15, 26, 47: both are different ciphers.",
    "result": "failed",
    "date": "2026-11-20"
+  },
+  {
+   "kind": "control",
+   "what": "After Dan Bourdeau's review: every departure from the key marked in the reading and counted as a hole; figures written as numerals; two blind surveys of the 67 places of the sign 2 by fresh Claude instances (sign2_forms.tsv). The squat form goes with b at 12 of the 14 places read b but also stands at 4 of the 53 read c, over the bar set beforehand, so no sign is renamed.",
+   "result": "partial",
+   "date": "2026-11-21"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "recovered",
-  "method": "key recovered based on plaintext from external sources",
-  "method_basis": "The system was recognised from Dudout's pandolfini1514 key; the values were then fixed by the 190/191 cipher and clear pair of the same day and confirmed by Gabbrielli's nineteenth-century reconstruction of Acciaioli's cipher (no. 120), which is independent of this letter. Values resting on this letter alone are marked 192 in key.tsv.",
+  "method": "read with known key",
+  "method_basis": "Gabbrielli's nineteenth-century reconstruction of Acciaioli's cipher (no. 120), made from other letters, gives the text: by the source column of key.tsv, 1,774 of the 1,887 signs take a Gabbrielli value. No plaintext of this letter was used. The system was first recognised from Dudout's pandolfini1514 key, and the cipher letter 190 with its clear copy 191 of the same day added or corrected a few values (the beta-like e, the word signs vostra and nostro); values resting on this letter alone are marked 192 in key.tsv.",
   "contribution": [
    "transcription",
-   "key recovered"
+   "key extended or corrected"
   ],
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "reading-it.md, cipher words: 692 of about 770 read from the signs with nothing supplied; 21 more carry a supplied letter, 30 are proposed words marked [?word], 25 are unread (sizes estimated from the number of signs), 2 are the unidentified number 15. Elided forms counted as two words.",
-  "fraction_read": 0.9,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading-it.md, cipher words under ## Reading: 660 of 757 are the key's output with nothing supplied or changed. The 97 holes are 41 words with a bracketed letter or second key value (among them the 20 departures of 192-repairs.tsv), 26 proposed words marked [?word], 25 unread words and 5 numbers with no value. Elided forms count as one word; the clear closing is not counted.",
+  "fraction_read": 0.872,
   "verification": [
    "historical consistency",
    "key confirms"
@@ -195,9 +201,9 @@
     "translation": "translation-en.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.9,
+    "read_share": 0.872,
     "summary": "Louis XII has ordered Bourbon into Burgundy with lances and Landsknechte; news of a rout has overturned a plan; the king is angry at people who yielded to the English; the English king embarks at Calais; the king says he is secure and will fight if the Swiss move; the prelates leave for Rome after All Saints.",
-    "note": "192-literal.txt is the unedited output of key.tsv. The reading departs from it at the 23 places of 192-repairs.tsv and wherever it prints brackets. read_share counts words read with nothing supplied."
+    "note": "192-literal.txt is the unedited output of key.tsv. The reading departs from it at the 20 places of 192-repairs.tsv and wherever it prints brackets; every departure is marked and counted as a hole. read_share counts words read with nothing supplied or changed (660 of 757)."
    }
   ],
   "gaps": [
@@ -207,12 +213,22 @@
     "detail": "superscript vowels not separable at the 1272 px of the public images"
    },
    {
-    "item": "30 proposed words marked [?word]",
+    "item": "26 proposed words marked [?word]",
     "blocker": "illegible",
     "detail": "the signs as transcribed do not spell them; mostly one vowel or one consonant off"
    },
    {
-    "item": "number 15 (twice), numbers 26 and 47 (R12)",
+    "item": "20 declared departures from the key: the sign 2 read b at 14 places, bene twice, four single signs",
+    "blocker": "illegible",
+    "detail": "the plain 2 (b) and the z-like 2 (c) of Gabbrielli's key are not told apart reliably on these images: in two blind surveys (sign2_forms.tsv) the squat form goes with b at 12 of 14 places but also stands at 4 of 53 places read c"
+   },
+   {
+    "item": "22 words with a supplied letter",
+    "blocker": "illegible",
+    "detail": "one sign off or not written"
+   },
+   {
+    "item": "number 15 (twice), numbers 26 and 47 (R12), a doubtful 20 (R5)",
     "blocker": "open-codes",
     "detail": "not in Gabbrielli's key no. 120; 15 proposed as the Venetians from Sanudo"
    },

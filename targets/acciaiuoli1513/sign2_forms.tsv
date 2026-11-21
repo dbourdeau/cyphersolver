@@ -1,0 +1,79 @@
+# The sign 2 with a superscript in doc. 192: form seen at each of its 67 places (21 Nov 2026).
+# reading = the consonant the reading takes there (b = one of the 14 places of 192-repairs.tsv, c = the key's value).
+# Round 1: two Claude instances, each shown only the sign cut out of the image (x8), no reading, no key, no neighbours.
+#   Criterion written and hashed before the survey (sha256 c4488fdc...): from the top of the sign only,
+#   R = curved head as in a printed 2, Z = flat bar meeting the diagonal at a corner, D = doubtful.
+# Round 2: two further instances, each shown the boxed sign with the signs beside it for scale, no reading, no key.
+#   Criterion written after round 1 had been joined to the readings (sha256 7aeec299...), so not a first look:
+#   S = squat 2, lower than its neighbours, small hooked head, long base; T = tall z; D = doubtful.
+#   Bar set before round 2: rename a token only if both readers give S, and only if both give S at no more than 3 of
+#   the 53 places read c. Both gave S at 4, so no token is renamed.
+# The boxes were placed by two other instances that had the transcription and were told not to judge shape.
+line	index	token	reading	round1_A	round1_B	round2_C	round2_D
+R01	28	2^5	c	Z	Z	T	D
+R02	5	2^1	b	R	R	D	D
+R02	32	2^2	b	Z	D	S	S
+R02	44	2^2	b	R	Z	S	S
+R02	46	2^2	b	R	R	S	S
+R02	50	2^4	c	R	R	T	T
+R02	55	2^4	c	Z	Z	T	T
+R03	18	2^5	c	D	D	D	D
+R04	19	2^2	c	R	R	S	S
+R04	36	2^2	c	Z	Z	T	T
+R05	3	2^4	c	Z	Z	D	D
+R07	36	2^2	c	Z	Z	D	T
+R08	10	2^5	c	Z	D	T	D
+R09	2	2^4	c	Z	Z	T	T
+R09	26	2^4	c	R	R	S	D
+R09	41	2^2	c	Z	Z	D	D
+R10	21	2^2	c	Z	Z	S	D
+R11	18	2^5	c	Z	Z	T	T
+R11	39	2^2	b	R	R	S	S
+R12	35	2^4	c	Z	Z	T	T
+R12	43	2^1	c	Z	Z	T	T
+R12	46	2^2	c	R	R	D	D
+R13	20	2^3	c	Z	Z	T	D
+R14	21	2^2	c	Z	Z	T	T
+R15	11	2^2	c	Z	Z	S	D
+R15	24	2^1	c	D	D	D	D
+R15	37	2^2	c	Z	D	D	D
+R17	3	2^3	c	Z	Z	T	T
+R17	36	2^3	c	Z	Z	T	D
+R20	51	2^1	c	Z	Z	T	D
+R21	15	2^3	c	Z	Z	T	T
+R21	25	2^4	c	R	R	S	S
+R21	33	2^3	c	Z	Z	T	T
+R22	46	2^3	c	R	R	T	D
+V02	10	2^5	b	Z	D	S	S
+V02	12	2^5	c	D	R	T	D
+V02	43	2^2	c	R	R	S	S
+V03	2	2^5	c	Z	Z	T	T
+V03	42	2^5	b	Z	Z	S	S
+V03	44	2^5	c	R	R	T	D
+V04	28	2^1	b	R	Z	S	S
+V05	6	2^2	c	D	D	D	D
+V05	12	2^4	c	D	D	D	D
+V05	18	2^1	c	Z	Z	T	T
+V05	38	2^3	b	Z	Z	T	T
+V06	37	2^2	c	Z	Z	T	T
+V06	46	2^4	c	Z	Z	T	T
+V07	3	2^4	c	Z	Z	T	T
+V07	17	2^3	c	R	R	T	D
+V07	30	2^4	c	Z	Z	T	T
+V08	13	2^3	c	Z	Z	T	T
+V08	20	2^2	b	R	R	S	S
+V09	19	2^4	b	R	R	S	S
+V09	32	2^1	c	Z	Z	D	D
+V10	1	{2^3/t^3}	c	D	D	D	D
+V10	15	2^3	c	Z	Z	T	T
+V10	16	2^5	b	R	R	S	S
+V11	3	2^5	c	Z	Z	T	D
+V13	13	2^4	c	Z	D	D	D
+V13	19	2^2	c	Z	Z	T	T
+V14	2	2^4	c	R	R	S	S
+V14	23	2^2	c	Z	Z	T	T
+V15	9	2^1	b	Z	Z	S	S
+V15	21	2^5	b	R	R	S	S
+V16	31	2^2	c	Z	Z	T	T
+V18	19	2^4	c	Z	Z	D	D
+V18	42	2^3	c	R	D	D	D
