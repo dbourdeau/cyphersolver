@@ -351,3 +351,14 @@ from info.json, not the manifest.
 `key.tsv`; `transcription_<doc>.txt`, `decryption_<doc>.txt`, `reading_<doc>.md`, `translation_<doc>.md` for cc07r, cc09, cc11r, cc16, cc20,
 cc23r, cc73-74 and cc13r lines 1-8; `retranscription_log.tsv`, `retranscription_log_1636.tsv`, `retranscription_log_c7r.tsv`; `VERIFY.md`,
 `FINAL_VERIFY.md`, the independent checks, unchanged; `scripts/`. The images and working files are not in this folder.
+
+## Prior art found in print (Brice Dudout, 17 Nov 2026)
+
+All seven 1630 letters read here are printed in clear, cipher passages included, in M. Parenti's *Lettere inedite di Fulvio
+Testi* (*Memorie di religione, di morale e di letteratura*, ser. II, XIII, 1842, and XV, 1843) and again in M. L. Doglio's
+edition, *Lettere*, vol. 1 (Laterza 1967), nos. 205-207, 210, 211, 213 and 216, which is online with OCR at the Internet Archive
+(236TestiLettere1Si254). The decryptions agree with the printed letters on 93-99.7% of cipher letters, against 23-61% for the
+best wrong letter. So for c. 7r, cc. 9, c. 11r, c. 13r (the whole letter, no. 210), cc. 16, cc. 20 and c. 23r the reading is
+existing at edition level. The print settles [?compiamo] (compiangiamo), [?roliet] (Roli et), [?coni] (così) and the clear
+[?Inviato predetto] (all'Interprete). The 1636 letter and the Forni and Ottonelli letters are not in Doglio. Details, table and
+script: `dudout/README.md`, `dudout/compare_doglio.py`, `dudout/doglio_comparison.tsv`.
