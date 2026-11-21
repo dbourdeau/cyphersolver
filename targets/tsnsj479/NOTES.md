@@ -150,6 +150,16 @@ paper folio, both sides covered with jottings in many directions. Lead from the 
     sit on the mount edge, K and the S row are single or mixed shapes; the project has not been opened in CTTS and no person
     has checked it.
 
+    **Third round (21 Nov 2026), on the user's reading of the table.** The user saw that three rows each hold two shapes and
+    asked for every row from f downward to be re-reviewed. 168 boxes (rows B, -, <, f, g, h, m, n, o, s, t, y, z) were
+    re-judged on enlarged crops (`prep`/`apply_recheck3_j479.py`): **B splits into `B` (pointy printed, 14) and `Bc` (round
+    cursive, 6, all on side 1); `-` into `-` (the `>`-like flat top with a diagonal tail, 26) and `J` (backward C, 15);
+    `<` into `<` (plain angle, 10) and `<5` (5-shape with a long top stroke, 31)**; the reviewer called four `J`/`-` boundary
+    cases by judgement. Below f: 12 boxes deleted (mount-edge ghosts, cracks, a stray cluster), f cut from 19 to 11 certain
+    boxes (the rest were stroke clusters or `f` look-alikes, now uncertain), three `s`/`y` boxes became `a`, one `n` became
+    `m`; `s` and `t` have no certain box left. All remain model-made. **Now 699 boxes in 83 types, 127 uncertain, 570
+    certain boxes in 38 table rows.**
+
 ## Result
 
 Key recovered from the ciphertext: the scribe's own alphabet rows (unlabelled, in Hebrew order) plus the frequent
