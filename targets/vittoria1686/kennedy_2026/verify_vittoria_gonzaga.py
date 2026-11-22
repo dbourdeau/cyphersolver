@@ -14,10 +14,18 @@ Zero-dependency core mode verifies:
   - Structural key-entropy proof: exact 9-pair adjacent-swapped 5-step Italian alphabet (p = 1/18!)
   - Cipher Index of Coincidence (IoC) and Shannon character entropies (H1, H2)
 
-Optional statistical mode (when IT_pack.npz & IT_top_lexicon_words.json are present):
+Optional statistical mode (runs automatically when bundled IT_pack.npz & IT_top_lexicon_words.json
+are present in this directory, or via IT_PACK_PATH / IT_LEX_PATH):
   - Blind unsupervised bijective Simulated Annealing trained solely on Letter 1 (1686)
   - Chronological held-out validation on unseen Letters 2-4 (1688-1691)
   - 50,000-trial Monte Carlo Italian quadgram permutation test + 10,000-trial lexicon permutation test
+
+Bundled Italian language-model inputs (public-domain/synthetic Renaissance & diplomatic Italian,
+166,644 characters from Machiavelli/Galileo/diplomatic prose + 3,600 morphological lexicon words,
+Jelinek-Mercer log10(0.65 P4 + 0.25 P3 + 0.08 P2 + 0.02 P1) + 1.08 clipped to [-6.75, -1.20],
+zero overlap with any Vittoria Gonzaga text):
+  - IT_pack.npz               SHA-256: 85b56a0ed63dc27fed2d64ad3a1b4572c19d4726461c0faa4540d98d22245d99
+  - IT_top_lexicon_words.json SHA-256: a55772a4727b3cacfa9a6904849714e93f23afde65ce1986311db53cf09db455
 """
 
 from __future__ import annotations
@@ -588,15 +596,15 @@ def main() -> None:
             row["count_L2_L4"] = c_ho[code]
         row["count_total"] = row["count_L1"] + row["count_L2_L4"]
 
-    with open(os.path.join(HERE, "vittoria_key_table.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(HERE, "vittoria_key_table.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(key_table, f, ensure_ascii=False, indent=2)
 
-    with open(os.path.join(HERE, "vittoria_key_table.tsv"), "w", encoding="utf-8") as f:
+    with open(os.path.join(HERE, "vittoria_key_table.tsv"), "w", encoding="utf-8", newline="\n") as f:
         f.write("code\tplain\tpair_group\tcount_L1\tcount_L2_L4\tcount_total\tnotes\n")
         for r in key_table:
             f.write(f"{r['code']}\t{r['plain']}\t{r['pair_group']}\t{r['count_L1']}\t{r['count_L2_L4']}\t{r['count_total']}\t{r['notes']}\n")
 
-    with open(os.path.join(HERE, "vittoria_corpus.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(HERE, "vittoria_corpus.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump({"letters": CORPUS, "parsed": parsed_by_letter, "decoded": decoded_transcripts}, f, ensure_ascii=False, indent=2)
 
     # -----------------------------------------------------------------------
@@ -804,6 +812,17 @@ def main() -> None:
         lmc_ho_t = mc_lexicon(test_words, canon_upper, False, 10000, 66, "L2-L4 1688-91 Held-Out (Proposed Key)")
         lmc_ho_b = mc_lexicon(test_words, bij_key, False, 10000, 77, "L2-L4 1688-91 Held-Out (Blind Bijective SA)")
 
+        with open(pack_path, "rb") as f:
+            pack_sha256 = hashlib.sha256(f.read()).hexdigest()
+        with open(lex_path, "rb") as f:
+            lex_sha256 = hashlib.sha256(f.read().replace(b"\r\n", b"\n")).hexdigest()
+        report["language_model_inputs"] = {
+            "it_pack_file": os.path.basename(pack_path),
+            "it_pack_sha256": pack_sha256,
+            "it_lexicon_file": os.path.basename(lex_path),
+            "it_lexicon_sha256_lf": lex_sha256,
+            "provenance": "Self-contained Renaissance & diplomatic Italian corpus (166,644 A-Z chars from Machiavelli/Galileo/diplomatic prose + 3,600 morphological lexicon words; Jelinek-Mercer log10(0.65 P4 + 0.25 P3 + 0.08 P2 + 0.02 P1) + 1.08 clipped to [-6.75, -1.20]; zero overlap with Vittoria Gonzaga letters)",
+        }
         report["blind_unsupervised_sa_L1_only"] = {
             "solver": "21-to-21 bijective Simulated Annealing on L1 (1686) alone (60 restarts x 20k steps, Italian quadgrams only, no cribs, no swapped-pair prior)",
             "runtime_seconds": round(sa_sec, 2),
@@ -827,7 +846,7 @@ def main() -> None:
         print("\n[INFO] IT_pack.npz not found at default path — ran zero-dependency deterministic checks (Unique Decodability, Round-Trip, Structural, IoC).")
 
     rep_path = os.path.join(HERE, "verification_report.json")
-    with open(rep_path, "w", encoding="utf-8") as f:
+    with open(rep_path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
     print(f"\nVERIFICATION COMPLETE. Wrote report -> {rep_path}")
 
