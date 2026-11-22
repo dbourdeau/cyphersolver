@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "target": "vindob11016",
+ "title": "Arabic letter in a secret script, Ihnas, 9th c. (ÖNB P.Vindob. A. P. 11016)",
+ "documents": [
+  {
+   "id": "recto1-11",
+   "shelfmark": "ÖNB Papyrussammlung, P.Vindob. A. P. 11016 recto, lines 1-11",
+   "date": "3rd c. AH / 9th c. AD",
+   "year": 850,
+   "country": "Egypt",
+   "route": "unknown (Ihnas / Herakleopolis, Egypt)",
+   "language": "unknown",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "none found; ÖNB description: 'Inhalt unbekannt', unpublished"
+   },
+   "length": {
+    "tokens": 129,
+    "distinct": 36,
+    "unit": "symbols",
+    "measured": true,
+    "file": "tr/draft1_signs.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ÖNB IIIF DTL_4865249 canvas 1 at 636 px, line crops upscaled 3x",
+    "image_quality": "poor",
+    "notes": "Four readings (tr/reader1.md, second_reader.md, reader3.md, reader4.md); majority consensus in tr/consensus2.txt: 77 signs with a majority label, 9 wildcards. The measured length is that of draft 1."
+   },
+   "read": "not read"
+  }
+ ],
+ "system": {
+  "types": [
+   "undetermined"
+  ],
+  "summary": "Right-to-left secret script of about 18 Greek/Coptic-like signs joined like Arabic, with an Arabic-looking word-final group and colon dividers; Karabacek (1894) took it for a substitution cipher of Arabic; system not established.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "unknown",
+  "doubled_letters": "unknown",
+  "sibling_key": "unknown",
+  "notes": "The circle makes up about a quarter of the signs (null, vowel sign or alif?). The colon marks may be dividers or letter dots."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Karabacek, PERF Fuehrer (1894) p. 226 no. 844: claims a key, prints three sign groups with readings (one is line 1), no full reading; Bogensperger and Reinfandt, Tyche 34 (2019): the signs differ from the dinar numerals of A.P. 5584 and are unread.",
+   "found": "during attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Requested the investigation and publication.",
+  "tools": [
+   "Python annealer (sa2.py)",
+   "Arabic, vocalised Arabic, Coptic and Greek n-gram models",
+   "names lexicon test"
+  ],
+  "models": [
+   "Claude Opus 5.5",
+   "Claude Fable 5.2"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-15",
+  "last_date": "2026-11-22"
+ },
+ "solution": [
+  {
+   "date": "2026-11-15",
+   "kind": "access",
+   "what": "ÖNB IIIF API back up; manifest DTL_4865249 and three 636x2464 views fetched, line crops upscaled 3x.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "solver",
+   "technique": [
+    "other"
+   ],
+   "what": "Compared the 11 lines with the Vienna numeral table A.P. 1255. Four sign assignments match reversed numerical order within each abjad tier. Applying the proposed key yields no continuous reading.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching",
+    "statistical test"
+   ],
+   "what": "Word-order and continuous-span checks on all four reader-9 variants. No attested consecutive group pair. The seven-letter line 9 exact hit in variant C is equalled or exceeded in 164 of 999 within-line sign shuffles. See RESULT.md.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The fold reproduces historical assignments but no independently verified sentence. The four reader-9 transcriptions yield no adjacent group pair attested in the documentary-letter corpus.",
+  "contribution": [
+   "none"
+  ],
+  "class": "not read",
+  "fraction_read": 0,
+  "verification": [
+   "none"
+  ],
+  "notes": "The group on line 1 matches Karabacek’s printed example. The interpretation of the raised ring on line 4 remains uncertain."
+ }
+}
