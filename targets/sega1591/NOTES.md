@@ -86,4 +86,4 @@ Lasry sent his report on this item as a PDF, extracted with `research/reading_au
 
 ## contributed Francia 32 transcriptions
 
-[Prabal Gupta?s Francia 32 files](../sega1590/francia32/README.md) ([PR #823](https://github.com/dbourdeau/cyphersolver/pull/823)) contain the sign rows, the literal output and the two checks against contemporary decipherments. R5613 f. 45v is the Vatican witness of the 9 January letter, with a contemporary decipherment on f. 46r. The contributor?s independent rows and key-65 output accompany George Lasry?s reading of the Paris witness. The two outputs do not count as two readings.
+[Prabal Gupta's Francia 32 files](../sega1590/francia32/README.md) ([PR #823](https://github.com/dbourdeau/cyphersolver/pull/823)) contain the sign rows, the literal output and the two checks against contemporary decipherments. R5613 f. 45v is the Vatican witness of the 9 January letter, with a contemporary decipherment on f. 46r. The contributor's independent rows and key-65 output accompany George Lasry's reading of the Paris witness. The two outputs do not count as two readings.

@@ -53,4 +53,4 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 
 ## contributed Francia 32 transcriptions
 
-[Prabal Gupta?s Francia 32 files](../sega1590/francia32/README.md) ([PR #823](https://github.com/dbourdeau/cyphersolver/pull/823)) contain the sign rows, the literal output and the two checks against contemporary decipherments. R5615 supplies a second transcription and mechanical key-65 decode of ff. 49v?54v. The document?s existing reading and word count are the basis for its partial classification.
+[Prabal Gupta's Francia 32 files](../sega1590/francia32/README.md) ([PR #823](https://github.com/dbourdeau/cyphersolver/pull/823)) contain the sign rows, the literal output and the two checks against contemporary decipherments. R5615 supplies a second transcription and mechanical key-65 decode of ff. 49v–54v. The document's existing reading and word count are the basis for its partial classification.
