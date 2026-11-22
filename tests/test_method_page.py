@@ -59,7 +59,7 @@ class Counts(unittest.TestCase):
                          validation={'date': 'x', 'verdict': 'pass'},
                          human_check={'date': 'x', 'by': 'p', 'passage': 'l. 1', 'result': 'confirmed'},
                          sign_check=[{'date': 'x', 'checker': 'p', 'checker_kind': 'project', 'model_roles': ['sheet'],
-                                      'signs_checked': 9, 'controls': 2, 'controls_passed': 2, 'rule': 'NOTES'},
+                                      'signs_checked': 9, 'controls': 2, 'controls_passed': 2, 'rule': 'NOTES', 'rule_hash': 'b' * 64},
                                      {'date': 'y', 'checker': 'q', 'checker_kind': 'external', 'model_roles': [],
                                       'signs_checked': 8, 'controls': 2, 'controls_passed': 1, 'rule': 'NOTES'}]),
             'b': profile([{'reading_review': rr('Someone Else')}, {'reading_review': rr('Claude (for Xavier Y)')},
@@ -151,8 +151,14 @@ class ReducedTree(unittest.TestCase):
 
 class SignLevel(unittest.TestCase):
     def test_meets_level(self):
-        ok = {'signs_checked': 8, 'controls': 2, 'controls_passed': 2}
+        ok = {'signs_checked': 8, 'controls': 2, 'controls_passed': 2, 'checker': 'Named reader',
+              'rule': 'Frozen before answers', 'rule_hash': 'a' * 64}
         self.assertTrue(MP.sign_level(ok))
+        for field in ('checker', 'rule', 'rule_hash'):
+            incomplete = ok.copy()
+            del incomplete[field]
+            self.assertFalse(MP.sign_level(incomplete))
+        self.assertFalse(MP.sign_level(dict(ok, rule_hash='invalid')))
         self.assertFalse(MP.sign_level(dict(ok, controls_passed=1)))
         self.assertFalse(MP.sign_level(dict(ok, signs_checked=7)))
         self.assertFalse(MP.sign_level(dict(ok, controls=1, controls_passed=1)))
@@ -161,7 +167,8 @@ class SignLevel(unittest.TestCase):
     def test_below_level(self):
         # a sheet whose counts reach the floor but whose record says why it is below the level (review of #789,
         # 19 Nov 2026: a rule written after the answers) does not meet it
-        ok = {'signs_checked': 13, 'controls': 2, 'controls_passed': 2}
+        ok = {'signs_checked': 13, 'controls': 2, 'controls_passed': 2, 'checker': 'Named reader',
+              'rule': 'Frozen before answers', 'rule_hash': 'a' * 64}
         self.assertTrue(MP.sign_level(ok))
         self.assertFalse(MP.sign_level(dict(ok, below_level='integration rule written after the answers')))
         self.assertTrue(MP.sign_level(dict(ok, below_level='')))
