@@ -19,9 +19,19 @@ def dec(run):
     if len(d) % 2: out.append('|odd')
     return ''.join(out).upper()
 
-pat = re.compile(r'(?<![\w])(?!15[0-9]{2})(?:\d{2,}|θ|μ)(?: (?:\d+|θ|μ))*')
+# A figure run is any run of two or more digits (or one of the two no. 249 signs). Only dates written in
+# clear are skipped: the year 1565 and the day '16' of 'a 16. de Jullio' (no. 249).
+pat = re.compile(r'(?<![\w])(?:\d{2,}|θ|μ)(?: (?:\d+|θ|μ))*')
+
+def clear_date(line, m):
+    run = m.group(0).strip()
+    return run == '1565' or (run == '16' and line[m.end():m.end() + 8] == '. de Jul')
+
+def sub(m, line):
+    if clear_date(line, m): return m.group(0)
+    return '<' + ' '.join(dec(t) for t in m.group(0).split()) + '>'
 for line in open(sys.argv[1] if len(sys.argv) > 1 else 'transcription.txt', encoding='utf-8'):
     line = line.rstrip('\n')
     if line.startswith('#'): continue
     if line.startswith('=='): print(line); continue
-    print(pat.sub(lambda m: '<' + ' '.join(dec(t) for t in m.group(0).split()) + '>', line))
+    print(pat.sub(lambda m: sub(m, line), line))
