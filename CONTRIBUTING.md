@@ -149,7 +149,15 @@ the repository ([`.github/CODEOWNERS`](.github/CODEOWNERS) and the ruleset on `m
 - **A reading merges only with its sources and a `reading_review` graded A or B**, recorded by the reviewer, not by the
   author of the reading. Anything doubtful stays open with a comment saying what is missing; either maintainer can ask
   the other for a second look before a merge.
-- **Nothing merges with a failing check.** "Check write-ups" and "Reading check" are required.
+- **Check both jobs on the current PR revision before merging.** GitHub Actions reports `gate` from Check write-ups
+  and `reading` from Reading check. Both workflows run on every pull request. A change outside the targets can pass
+  the reading job with zero affected targets. When a job is missing, resolve the conflict or authorize the fork
+  workflow as appropriate, then wait for both results.
+- The proposed main-branch ruleset change in issue #719 would require both job names from GitHub Actions. Until
+  maintainers approve and enable it, verify the two results during review.
+- In a reading review, identify who read the text, any model assistance, and the reviewer's relationship to the
+  original reading. Record an AI session acting for a maintainer as a model review. A reviewer's independence
+  requires a separate reader and an account of what material that reader saw.
 - Promotion of a lead to the catalogue stays a separate step after review, never part of a contributor's pull request.
 
 The site rebuild pushes with its deploy key, outside these rules; it changes generated files only. The owner's
