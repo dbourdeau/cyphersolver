@@ -565,6 +565,94 @@ def featured_html(E, keys, n=10):
             f'<div class="fstrip">{"".join(card(e, g) for e, g in pick)}</div>\n')
 
 
+def ww1_challenges_html():
+    """Render the partner's unsolved messages from the checked-in listing snapshot."""
+    from urllib.parse import urlencode
+
+    base = 'https://www.ww1ciphers.com'
+    snapshot = json.loads((pathlib.Path(__file__).parent / '_ww1_cases.json').read_text(encoding='utf-8'))
+    groups = []
+    for category, heading in (('undeciphered', 'Identified codes'), ('unidentified', 'From the Unidentified list')):
+        cases = snapshot[category]
+        series = collections.defaultdict(list)
+        for slug, case in cases.items():
+            source = f'{base}/message/{slug}'
+            title = case['title']
+            query = urlencode({
+                'template': 'solution.yml',
+                'title': f'Solution: WWI cipher {slug}',
+                'target': source,
+                'documents': title,
+            })
+            issue = html.escape(f'{REPO}/issues/new?{query}', quote=True)
+            series[case['series']].append(
+                f'<li><a href="{html.escape(source, quote=True)}">{esc(title)}</a> · '
+                f'<a href="{issue}" aria-label="Report a result for {html.escape(title, quote=True)}">Report a result</a></li>'
+            )
+        lists = ''.join(
+            f'<details class="ww1-series"><summary>{esc(label)} ({len(items)})</summary>'
+            f'<ul>{"".join(items)}</ul></details>\n'
+            for label, items in series.items()
+        )
+        groups.append(f'<details class="about ww1-group"><summary>{heading} ({len(cases)})</summary>\n{lists}</details>\n')
+    count = sum(len(snapshot[category]) for category in ('undeciphered', 'unidentified'))
+    return rf'''<section aria-labelledby="ww1-challenges" id="ww1-collection">
+<h2 id="ww1-challenges">World War I cipher challenges</h2>
+<p>{count} unsolved messages from George Lasry’s WWI Ciphers collection. Each case page has its transcript,
+cipher background and archive links where available. When reporting a result, include how you’d like to be credited
+so Cyphersolver and WWI Ciphers can update their records.</p>
+<p>Source lists, checked {fmt_day(snapshot['checked'])}:
+<a href="{base}/messages/undeciphered">Undeciphered</a> ·
+<a href="{base}/messages/unidentified">Unidentified</a></p>
+<div id="ww1-filter" hidden>
+  <label for="ww1-q">Search WWI challenges</label>
+  <input type="search" id="ww1-q" placeholder="Series, shelfmark or date">
+  <span id="ww1-count" aria-live="polite"></span>
+</div>
+{"".join(groups)}</section>
+<script>
+(() => {{
+  const section = document.getElementById('ww1-collection');
+  const input = section.querySelector('#ww1-q');
+  const count = section.querySelector('#ww1-count');
+  const groups = Array.from(section.querySelectorAll('.ww1-group'), group => ({{
+    group,
+    series: Array.from(group.querySelectorAll('.ww1-series'), series => ({{
+      series,
+      cases: Array.from(series.querySelectorAll('li'), row => ({{
+        row, text: (series.firstElementChild.textContent + ' ' + row.firstElementChild.textContent).toLowerCase()
+      }}))
+    }}))
+  }}));
+  section.querySelector('#ww1-filter').hidden = false;
+  input.addEventListener('input', () => {{
+    const query = input.value.trim().toLowerCase();
+    const terms = query.split(/\s+/);
+    let matches = 0;
+    for (const {{group, series}} of groups) {{
+      let groupMatches = 0;
+      for (const entry of series) {{
+        let seriesMatches = 0;
+        for (const {{row, text}} of entry.cases) {{
+          const visible = terms.every(term => text.includes(term));
+          row.hidden = !visible;
+          seriesMatches += Number(visible);
+        }}
+        entry.series.hidden = seriesMatches === 0;
+        entry.series.open = Boolean(query && seriesMatches);
+        groupMatches += seriesMatches;
+      }}
+      group.hidden = groupMatches === 0;
+      group.open = Boolean(query && groupMatches);
+      matches += groupMatches;
+    }}
+    count.textContent = query ? matches + (matches === 1 ? ' match' : ' matches') : '';
+  }});
+}})();
+</script>
+'''
+
+
 # archive towns the gazetteer does not have, [lat, lon] (approximate, for a ring on the map)
 MAP_TOWNS = {'College Park, Maryland': [38.99, -76.94], 'Santiago': [-33.45, -70.67], 'Kraków': [50.06, 19.94], 'Nepomuk': [49.49, 13.58],
              'Arnhem': [51.98, 5.91], 'Zámrsk': [50.00, 16.13], 'Cluj-Napoca': [46.77, 23.59], 'Aarau': [47.39, 8.05],
@@ -856,13 +944,14 @@ def build_html():
   <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {len(gone)} moved out to <a href="writeups.html">write-ups</a> · entries last checked {fmt_day(AS_OF)}</p>
   <h1>The Unsolved <span class="stk">Catalogue<a class="sticker" href="#list" title="Pick a cipher below"><span><b>Help<br>Solve!</b><small>pick one below</small></span></a></span></h1>
   <p class="sub">Historical cipher letters that nobody has read. Pick one, open its page, and give that page&rsquo;s address to your AI agent: the page holds the sources, what has been tried and the instructions.</p>
+  <p><a href="#ww1-challenges">World War I cipher challenges</a></p>
   <ol class="steps"><li><b>1</b>pick a row</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back what it finds</li><li class="jsonly"><button type="button" class="deal" id="deal" title="Open one of the ciphers that can be tried from a desk, picked at random">Deal me a cipher</button></li></ol>
 {summary_html(E, keys, len(gone), prs)}
 </section>
 
 <main>
 <div id="hashnote" hidden></div>
-{featured_html(E, keys)}<h2 id="list">The ciphers</h2>
+{featured_html(E, keys)}{ww1_challenges_html()}<h2 id="list">The ciphers</h2>
 <div class="cbar" id="cbar">
 <nav class="views jsonly" role="tablist" aria-label="Which ciphers">{tabs}</nav>
 <p class="vdesc" id="vdesc">{VIEWS[0][2]}</p>
