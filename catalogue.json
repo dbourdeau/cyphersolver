@@ -47841,7 +47841,7 @@
    "shelfmark": "British Library, IOR/R/15/2/450 (File 10/23 Code Messages - BAPCO); system described in IOR/R/15/2/423 (File 10/5 BAPCO Codes)",
    "folio_note": "196 images; typed 5-letter groups (e.g. f. 4r COSLE QQQQQ BABIX ...) interleaved with 'Outward cable ... Service: CODE' plain copies for the censor",
    "cls": "A",
-   "status": "Not on DECODE. 423 (OCR'd on QDL): code approved Jan 1944 'on the understanding that the pad is not worked through more than once'; security officer judged it of small resistance to cryptography; plain-language copies to the censor were a condition. Pairs not yet matched 14 Nov 2026 (issue #542): Jacob Houtrouw announced work on this entry (by his report, all 45 coded cables transcribed and 43 matched to the censor's plain copies by date and length); announced in the invitation thread and recorded as a claim until 28 Nov 2026 (a notice against double work, research/SWEEP.md).",
+   "status": "Not on DECODE. 423 (OCR'd on QDL): code approved Jan 1944 'on the understanding that the pad is not worked through more than once'; security officer judged it of small resistance to cryptography; plain-language copies to the censor were a condition. In issue #542 Jacob Houtrouw reported transcribing 45 cables and matching 43 to the censor copies. He released his claim on 21 November 2026 and reported that none of seven tests for structure in the pad passed. The result is by the contributor's report. The test files are not filed here.",
    "why": "A documented WWII commercial pad cipher with plaintext-ciphertext pairs; shows how a company code was vetted and used under censorship",
    "importance": 2,
    "solvability": 4,
@@ -47886,13 +47886,7 @@
    },
    "access": "online",
    "access_note": "online (backfilled 28 Oct 2026 from the entry: seen: image)",
-   "repository": "bl",
-   "reserved": {
-    "by": "Jacob Houtrouw",
-    "since": "2026-11-14",
-    "until": "2026-11-28",
-    "kind": "claim"
-   }
+   "repository": "bl"
   },
   {
    "id": 1535,
@@ -90632,7 +90626,7 @@
   {
    "id": 2946,
    "counted": true,
-   "source": "ASF MAP contact-sheet scan of filze V and XI (targets/pucci1438/scan_f05*.md, scan_f11*.md), 15 Nov 2026",
+   "source": "ASF MAP contact-sheet scan of filze V and XI (the pucci1438 sweep: scan_f05*.md, scan_f11*.md), 15 Nov 2026",
    "score_note": "Scored after viewing the full image, 15 Nov 2026",
    "seen": "image",
    "needs_archive_scan": "no",
@@ -90675,17 +90669,23 @@
     },
     "prior_art": {
      "decode": "DECODE list API (all 10,106 records, 15 Nov 2026) filtered for Florence/Milan/Mantua/Urbino holders before 1460 and for 'mediceo'/'medici' shelfmarks: no Mediceo avanti il Principato record at all. Nearest: key records R5691-R5698 (ASFi_SIVol1_5-12, Gabbrielli's 1862 'Alfabeti ... del carteggio dei Dieci di Balia dal 1424 al 1530', 1425-1432, private, images not seen) and the Dieci di Balia Responsive ciphertexts R3753ff.",
-     "tomokiyo": "Tomokiyo's cryptiana index (local copy targets/beatrice1482/sources/cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
-     "lasry": "Lasry's GL.htm (local copy targets/rome1536/work_clearcopy/GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
+     "tomokiyo": "Tomokiyo's cryptiana index (local copy beatrice1482 source cache, cryptiana-index.html) grepped for 1430-1439, Cosimo, Averardo, Sforza, Gonzaga, Montefeltro, Orsini: no page on these letters.",
+     "lasry": "Lasry's GL.htm (local copy rome1536 source cache, GL.htm) grepped for the same terms: nothing on 1430s Florence; no Lasry paper on 1430s Medici letters known.",
      "edition": "No edition of MAP V or XI cipher passages known; the ASF MAP inventory (Archivio Mediceo avanti il Principato, Inventario, 1951-63) calendars the filze without decipherments; web search 15 Nov 2026 found none.",
      "literature": "Web searches 15 Nov 2026 (Sforza-Cosimo 1438-39 lettere cifrate; Gonzaga-Cosimo 1439 cifra; Averardo/Bernardo d'Alamanno 1431 Lorenzana cifra) found only general Medici and Lucca-war literature (Ross 1910, Lives of the early Medici); no study of these cipher passages."
     },
     "key_check": "Key not held; the same system is deciphered interlinearly in MAP XI 691-694 (same filza), not yet rebuilt or tested.",
-    "duplicates": "known.py run on 'Gonzaga 1439', 'Gianfrancesco Gonzaga', 'Cosimo', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond targets/pucci1438 (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
+    "duplicates": "known.py run on 'Gonzaga 1439', 'Gianfrancesco Gonzaga', 'Cosimo', 'MAP XI', 'MAP V', 'Mediceo avanti il Principato, V', 'filza XI': no hit in catalogue.json, leads.json, decode_updates or the targets beyond the pucci1438 sweep (where they were found; folder not yet on main); unrelated: Guidantonio Vespucci lead 2383, Federico da Montefeltro 1447 lead.",
     "verdict": "open",
     "key_in_volume": "Same filza: MAP XI 691-694 (Gonzaga to Cosimo, 31 Dec 1439) is in the same sign set with a contemporary interlinear decipherment; key not yet rebuilt or tested."
    },
-   "repository": "asf"
+   "repository": "asf",
+   "reserved": {
+    "by": "Jacob Houtrouw",
+    "since": "2026-11-21",
+    "until": "2026-12-05",
+    "kind": "claim"
+   }
   },
   {
    "id": 2948,
