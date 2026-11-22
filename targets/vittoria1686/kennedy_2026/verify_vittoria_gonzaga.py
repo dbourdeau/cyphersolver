@@ -661,7 +661,7 @@ def main() -> None:
     if os.path.isfile(pack_path) and os.path.isfile(lex_path):
         import numpy as np
 
-        it_pack = np.load(pack_path, allow_pickle=True)
+        it_pack = np.load(pack_path, allow_pickle=False)
         QG = it_pack["quadgrams_456976"].astype(np.float64)
         with open(lex_path, "r", encoding="utf-8") as f:
             IT_LEX_UV = set(w.upper().replace("V", "U") for w in json.load(f))
