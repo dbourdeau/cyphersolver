@@ -1,4 +1,4 @@
-# Cistarelli?s step-of-five numbering
+# Cistarelli's step-of-five numbering
 
 Chimdindu Denalex Orakwue proposed the alphabetical progression in [issue #843](https://github.com/dbourdeau/cyphersolver/issues/843). The numeric spine assigns multiples of five from 5 to 95 in alphabetic order, leaves 50 unused, and uses 96 for u/v. The table also contains ten proposed secondary values.
 

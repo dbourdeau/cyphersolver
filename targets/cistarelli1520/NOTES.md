@@ -89,4 +89,4 @@ The R1137 anneal key on line 7 gives "adlmodegmo?racentogseti?tipodtare". A join
 
 ## Contributed arithmetic key hypothesis
 
-Chimdindu Denalex Orakwue?s [step-of-five key](orakwue-step5/README.md) and [literal output](orakwue-step5/literal.txt) reproduce 675 assigned positions out of 708 on the two stored transcriptions. Several lines remain unread.
+Chimdindu Denalex Orakwue's [step-of-five key](orakwue-step5/README.md) and [literal output](orakwue-step5/literal.txt) reproduce 675 assigned positions out of 708 on the two stored transcriptions. Several lines remain unread.
