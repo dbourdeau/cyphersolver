@@ -71,3 +71,16 @@ Checked visually against native-resolution Biblioteca Estense Universitaria IIIF
 
 - **Archival images:** Consulted online via Biblioteca Estense Universitaria di Modena / Lodovico Media Library under **CC BY-NC-SA** terms (official IIIF manifests linked in `../NOTES.md`). No Modena images are committed in this folder or pull request. A prior-art and reproduction inquiry was sent to the Biblioteca Estense Universitaria di Modena on 21 Nov 2026.
 - **Tools used:** Python dynamic-programming tokenizer, blind bijective simulated annealing, and Monte Carlo verification (`verify_vittoria_gonzaga.py` with bundled `IT_pack.npz` and `IT_top_lexicon_words.json`), assisted by AI paleographic workflows and verified visually against native Modena IIIF images.
+
+## Reading review, 22 November 2026
+
+Codex reviewed the four Italian readings alongside their English translations for the maintainers and sampled the Estense images at 1,200 pixels wide. The grades describe sentence coherence. The photographs were sampled on the folios named below.
+
+| Letter | Grade | Review |
+|---|---|---|
+| 2 April 1686 | B | The petition about the San Paolo sequestration and the need for Spanish protection reads continuously. On 3v the clear references to Don Paolo Ruffo and the Marquis of Casale Nuovo frame the number runs, and the clear passage giving ten years follows the safeguard. The English supplies an object in ?kept [us unaware]?. The restored endings in the Italian and the uncertain clear surname on 4r qualify the word count. |
+| 13 April 1688 | A | The cipher-bearing passage on 11r is one sentence about a summons for 1,000 ducats with interest at five percent. The scan shows the number 1000 within the run and the rate at its end. The translation conveys the transaction. Several abbreviated words are expanded in the edition. |
+| 4 September 1691 | B | On 22r the number run follows Fra Basilio?s departure for San Nicandro and ends before the reference to Molfetta. The reading explains why he left. The sense continues across the edited excerpts, but the final passage on 23r leaves the proposed letters of injunction uncertain. |
+| 16 October 1691 | A | On 20r the number run begins after the writer says the matter was within his discretion and ends before Pompeo has the affidavits drawn up. The account of the shipment and the grain export licences on 21r is coherent in both languages. The English identifies the duke editorially and retains the uncertainty over the bank vouchers. |
+
+The 381/397 agreement measures alphabetic tokens against the proposed canonical key. The contributor's 266/267 figure uses a different unit and includes editorial expansions. A project sure-word count needs to distinguish expanded words and values inferred from context before changing the catalogue classification.
