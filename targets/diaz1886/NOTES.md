@@ -2,7 +2,7 @@
 
 Status: in progress
 
-**Transcribed, not read.** This folder holds the numerals of ten of the telegrams of catalogue 1460 and nothing else: no key and no decode. A key is being rebuilt from translated sister telegrams; it will be tested under a plan that was sealed and time-stamped on 20 Nov 2026, before any telegram here was decoded, and the result will be added here whichever way it falls (section 7).
+**Transcribed, not read.** This folder holds the numerals of ten of the telegrams of catalogue 1460 and nothing else: no key and no decode. A key is being rebuilt from translated sister telegrams and tested under a plan that was sealed and time-stamped on 20 Nov 2026, before any telegram here was decoded; the plan is in `timestamps/plan/`, and the result will be added here whichever way it falls (section 7).
 
 Contributed by Jacob Houtrouw (`houtrouw`), with AI models working at his direction. Section 6 says what was used and who did what.
 
@@ -29,15 +29,25 @@ The archive is the Centro de Estudios de Historia de México Carso (CEHM), Fondo
 The address of each image, the time it was fetched and the SHA-256 of the file as it came are in `sources.tsv` and at the head of each transcription file. "Open": more than one reading of the group is on record.
 
 ## 3. How the numerals were copied
-1. **A first reading** of all ten, on 19 Nov 2026, by an AI model (`claude-fable-5-2`) from the archive's images at full size. It was made in the session that was also studying translated sister telegrams, so it was not blind to the kind of system.
+1. **A first reading** of all ten, on 19 Nov 2026, by an AI model (`claude-fable-5-2`). It read each message from crops of the archive's image at 0.76 to 1.6 times full size, cut around the message and, by its note, down to the signature. It saw each leaf whole only at reduced size: DLI.2.397.1 at 1,000 pixels wide, about half of full size; page 1 of the nine others as thumbnails 330 pixels wide, about a fifth; the second pages of DLI.4.771.1 and DLI.5.907.1 as thumbnails 230 pixels wide. It was made in the session that was also studying translated sister telegrams, so it was not blind to the kind of system.
 2. **A blind second reading** of six of the ten, on 19 and 20 Nov, by another AI model (`claude-opus-5-5`, as it named itself) in two separate chats. Each was given only cut images of the messages and a task sheet that asked for the digits by their shape; it was told nothing of the source or of the system. It read 186 groups: 173 with the same digits as the first reading, 13 with others.
 3. **A comparison by script,** by a third session that audits the work. Its points on the copy are answered in versions 2 to 4 of the copy.
 4. **The rule of the copy** (`numerals_v4.tsv`). Where the two readings give the same digits, that is the reading. Where they differ, the blind reading stands first, because it was made by shape alone, and the other is kept beside it. A reader's own second thoughts are kept too. A group with more than one reading on record is *open*: 40 of the 360 are. Nothing was chosen by eye, and nothing by what a reading might decode to.
 5. **Four telegrams have one reading only** (DLI.4.771.1, DLI.5.907.1, DLI.5.909.1, DLI.5.921.1): 174 groups.
 
+**Below the signatures.** The first reading's note, written and time-stamped when the reading was made (SHA-256 `5189f57c202aa7edae0ec9c967934e6a0ca7d872b63b662d34e0f0727904410d`; FreeTSA, DigiCert and Sectigo, 19 Nov 2026, 02:01:50 GMT), records what it saw there, leaf by leaf:
+- **DLI.5.909.1, DLI.5.910.1, DLI.5.920.1 and DLI.5.921.1:** writing below the signature, seen "at thumbnail size, too small to read"; none of it was enlarged.
+- **DLI.5.907.1:** "a block of sentences below the signature on page 2", seen at the same size; none of it was enlarged, and of page 2 only the part down to the signature was.
+- **DLI.4.771.1:** on the strip that is page 2, below the signature, "a date in another hand ("Julio 18") and the top of one written line, cut by the strip's edge, of which no word was made out". The date was read on a crop of the strip at about three quarters of full size.
+- **DLI.2.397.1, DLI.5.924.1, DLI.5.933.1 and DLI.5.950.1:** the note records nothing below the signature.
+
+From 19 Nov whatever stands below a target's signature has been kept closed, so this list is the note's account, not a new look at the leaves. The note itself will be added with the outcome (`timestamps/README.md`). By the maintainer's review of 21 Nov, the archive's listing calls the writing below the signature on DLI.5.909.1 and DLI.5.921.1 Reyes's drafts of replies; that listing is closed here too and was not opened.
+
+**They stay in the test.** By Jacob Houtrouw's ruling of 21 Nov 2026 the telegrams with writing below the signature stay in the scored test, as the plan was sealed, since nothing of that writing was read. In the step after the scored runs, in which unknown words are completed from context, every completion on DLI.4.771.1, DLI.5.907.1, DLI.5.909.1, DLI.5.910.1, DLI.5.920.1 and DLI.5.921.1 will be marked as made by a reader who knew that writing stands below the signature, though not what it says. DLI.5.950.1 is out of the scored test for another reason (section 5).
+
 Three clerks' hands are told apart and called A, B and C here. Hand C is the least firm: on DLI.5.924.1 the two readings differ at 6 of 46 groups.
 
-The transcription files give the message only, line by line: the words in clear as written, and each group by the reading that stands first. `~` follows a group with a small stroke above it, and `?` a group that is open. `open_groups.tsv` lists every open group with its other readings, and every place where the two readings differ on a stroke or on the mark after a group.
+The transcription files give the message only, line by line: the words in clear as written, and each group by the reading that stands first. `~` follows a group with a small stroke above it, and `?` a group that is open. `open_groups.tsv` lists every open group with its other readings, and every place where the two readings differ on a stroke or on the mark after a group. A group that the first reader doubted and no second reading checked is not marked in the transcription files; it is listed under Transcription doubts.
 
 ## 4. What the numerals show (`groups_output.txt`)
 Counts only. This folder gives no value of its own for any group; section 5 names one value that is in print.
@@ -63,13 +73,41 @@ What was looked for is a reading of any of these telegrams, or a key to their co
 - **No person has yet checked a passage against the images without AI help.**
 
 ## 7. What is in progress
-A first test of a key rebuilt from translated sister telegrams. The method is the one that the row of this catalogue proposes: "a key can be rebuilt from translated pairs". Its plan was sealed on 20 Nov 2026, before any telegram of this folder was decoded: SHA-256 `2e84dbbd3a74f764e58d79be2a717503c15d4201c38aa0acd7c81c67395ae89a`, time-stamped at 21:19:40 GMT by FreeTSA, DigiCert and Sectigo. In outline: tables are built from translated telegrams of the same months and frozen; they are tested on other translated telegrams, held back and cut above their translations by the auditing session and copied by a reader who knows no table; then the telegrams of this folder are decoded once by the frozen tables. A miss will be printed as fully as a hit. The plan, its receipts and the outcome will be added to this folder.
+A first test of a key rebuilt from translated sister telegrams. The method is the one that the row of this catalogue proposes: "a key can be rebuilt from translated pairs". Its plan was sealed on 20 Nov 2026, before any telegram of this folder was decoded: SHA-256 `2e84dbbd3a74f764e58d79be2a717503c15d4201c38aa0acd7c81c67395ae89a`, time-stamped at 21:19:40 GMT by FreeTSA, DigiCert and Sectigo. In outline: tables are built from translated telegrams of the same months and frozen; the telegrams of this folder are decoded once by the frozen tables; and the tables are tested on other translated telegrams, held back and cut above their translations by the auditing session and copied by a reader who knows no table. A miss will be printed as fully as a hit. The plan and its receipts are in `timestamps/plan/`; its section 4 gives the runs in their order. Its section 11 names the values that the frozen tables give one word, *que*, in each period; no other value of the tables is in this folder. The outcome will be added here.
 
 The catalogue entry is marked as being worked on by Jacob Houtrouw from 19 Nov to 3 Dec 2026.
 
+## Transcription doubts
+The first reading marked 52 groups doubtful. Twenty of them stand in the four telegrams read once, and they are listed here one line each, in the form of the README's rule of 20 Nov 2026. A `/` in a group is a tall stroke that may be the digit 1 or the tail of a letter in the line above, as the first reading wrote it; "read" is the reading that stands first in the copy.
+
+Each of the twenty was checked against the image only: by the first reader, on 19 Nov, on its crops of the image (section 3), without box or overlay, and none was settled there. The evidence is as its note recorded it then. None is checked against a decode: the plan sealed on 20 Nov (section 7) decodes the copy as it stands, and a doubt settled by what the decode says would be settled by the thing under test. The sealed plan makes no such check. Each will be checked against the decode after the scored runs, outside the score, and the verdict added here. None is checked against another transcription, since none of these four telegrams has one yet (Escalation, 2). The copy is not changed for this list, because it is an input of the sealed plan: `numerals_v4.tsv` keeps these groups marked in its column `doubtful`; the transcription files give the reading that stands first and do not mark them; and `open_groups.tsv` does not list them, as no other reading of them is on record in the copy.
+
+- `3889` (DLI.4.771.1, line 2) - read: 3889; checked: image; the last digit, 9 or 7. Not settled.
+- `2843` (DLI.4.771.1, line 3) - read: 2843; checked: image; the last digit lies under a blot. Not settled.
+- `2971` (DLI.4.771.1, line 6) - read: 2971; checked: image; the third digit, 7 or 1; the same four digits stand clear on DLI.5.907.1, page 2, line 4. Not settled.
+- `5838` (DLI.4.771.1, page 2, line 2) - read: 5838; checked: image; the third digit, 3 or 9. Not settled.
+- `1643` (DLI.5.907.1, line 4) - read: 1643; checked: image; the first stroke may be the tail of the q in the line above, which gives 643. Not settled.
+- `/306` (DLI.5.907.1, line 10) - read: 306; checked: image; a tall stroke before it, the digit 1 (1306) or the tail of a letter (306). Not settled.
+- `/2804` (DLI.5.907.1, line 10) - read: 2804; checked: image; by shape 12804; the stroke was taken as a tail because 2804 stands clear on page 2, line 1: consistency, not shape. Not settled.
+- `/322` (DLI.5.907.1, line 12) - read: 322; checked: image; a tall stroke before it: 1322 or 322. Not settled.
+- `821` (DLI.5.907.1, page 2, line 2) - read: 821; checked: image; crossed by a tall stroke, taken as the tail of a letter in the line above; else 8121. Not settled.
+- `301` (DLI.5.907.1, page 2, line 2) - read: 301; checked: image; crossed by a tall stroke, taken as the tail of a letter in the line above; else 3101. Not settled.
+- `540` (DLI.5.909.1, line 2) - read: 540; checked: image; a short dash stands between the 5 and the 40. Not settled.
+- `3462` (DLI.5.909.1, line 4) - read: 3462; checked: image; two tall strokes cross it, after the 34 and after the 62, taken as the tails of the two q marks above; stroke for digit it would be 341621. The choice leaned on the same pair, 3462 4157, on DLI.5.921.1, line 2: consistency, not shape. Not settled.
+- `251/` (DLI.5.909.1, line 5) - read: 251; checked: image; a tall stroke after it: 251 or 2511. The choice leaned on 251 on DLI.5.950.1, line 4, itself doubtful there. Not settled.
+- `/235` (DLI.5.909.1, line 5) - read: 235; checked: image; a tall stroke before it: 235 or 1235. Not settled.
+- `193` (DLI.5.921.1, line 2) - read: 193; checked: image; the first stroke, digit or tail: 193 or 93. Not settled.
+- `166` (DLI.5.921.1, line 2) - read: 166; checked: image; it follows a looped flourish from the line above: 166 or 66. Not settled.
+- `3462` (DLI.5.921.1, line 2) - read: 3462; checked: image; one tall stroke crosses it after the 34; else 34162. The choice leaned on the same pair, 3462 4157, on DLI.5.909.1, line 4: consistency, not shape. Not settled.
+- `160` (DLI.5.921.1, line 3) - read: 160; checked: image; the first stroke, digit or tail: 160 or 60. Not settled.
+- `5663` (DLI.5.921.1, line 4) - read: 5663; checked: image; two tall strokes, before it and after the 5, taken as tails. The choice leaned on 5663 standing clear on DLI.5.920.1, line 4: consistency, not shape. Not settled.
+- `//60` (DLI.5.921.1, line 4) - read: 60; checked: image; two tall strokes before the 60: 60, 160 or 1160. Not settled.
+
+The other 32 doubtful groups stand in the six telegrams read twice, and each was checked against the blind second reading, a transcription made by shape alone. At 12 the second reader read the same digits without doubt, and the copy gives them as read. At 11 it read the same digits and doubted them too, and at 9 it read others; those 20 are open and listed in `open_groups.tsv`. All 52 are in `numerals_v4.tsv`, with both readings where there are two.
+
 ## Remaining gaps
 - **All 360 groups** of the ten telegrams are without a value in this folder.
-- **40 groups are open,** and 174 rest on one reading.
+- **40 groups are open,** and 174 rest on one reading; the first reader doubted 20 of the 174, and the image did not settle them (Transcription doubts).
 - **The other telegrams of catalogue 1460** are not copied.
 - **Two signs are not understood here:** `cs` after a low number, and `q'`.
 
@@ -87,4 +125,4 @@ The catalogue entry is marked as being worked on by Jacob Houtrouw from 19 Nov t
 - `sources.tsv`: for each telegram, what the archive's listing says of it, and each image's address, time of fetching, size and SHA-256.
 - `groups_output.txt`: the counts of section 4.
 - `scripts/make_data_files.py`: writes the transcription files, `open_groups.tsv` and `groups_output.txt` from `numerals_v4.tsv` and `sources.tsv`.
-- `timestamps/`: the time stamps on the copy and on this folder; the blind readers' answers as received, with their stamps and task sheets; and what all of that shows.
+- `timestamps/`: the time stamps on the copy and on this folder; the sealed plan of section 7, with its receipts; the blind readers' answers as received, with their stamps and task sheets; and what all of that shows.
