@@ -6,13 +6,15 @@ H = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(H, 'decode.py'), encoding='utf-8').read()
 ns = {}
 exec(src.split('pat = re.compile')[0], ns)          # KEY, SIGNS
-pat = re.compile(r'(?<![\w])(?!15[0-9]{2})(?:\d{2,}|θ|μ)(?: (?:\d+|θ|μ))*')
+pat = re.compile(r'(?<![\w])(?:\d{2,}|θ|μ)(?: (?:\d+|θ|μ))*')   # as in decode.py; clear dates skipped below
 out = ['# model: es-golden-age', '# source: transcription.txt + transcription_249.txt with decode.py KEY/SIGNS; mk_validation.py',
        '# note: nos. 247 and 249, same key']
 for fn in ('transcription.txt', 'transcription_249.txt'):
     for line in open(os.path.join(H, fn), encoding='utf-8'):
         if line.startswith('#') or line.startswith('=='): continue
-        for m in pat.finditer(line.rstrip('\n')):
+        line = line.rstrip('\n')
+        for m in pat.finditer(line):
+            if m.group(0).strip() == '16' and line[m.end():m.end() + 8] == '. de Jul': continue   # the day of 'a 16. de Jullio'
             for run in m.group(0).split():
                 if run == '1565': continue
                 if run in ns['SIGNS']: out.append(f"{run}\t{ns['SIGNS'][run]}"); continue
