@@ -2,14 +2,14 @@
 
 Status: read in part.
 
-Larry Beck and Sonny Panesar, with ChatGPT, applied the adjacent alphabet on f. 248v to recipes on ff. 249r and 249v. The earlier review verified the line replays and sampled the divider marks. Its sure-word figures were 150 of 154 on f. 249r and 153 of 156 on f. 249v if the two words in the legible phrase with uncertain sense count as holes. The four cipher lines beginning f. 250r belong to a third text. Catalogue 1164 covers further leaves and stays open. Historical medical claims belong to the manuscript. The alphabet and literal sign replays accompany the latest divider transcriptions.
+Larry Beck and Sonny Panesar, with ChatGPT, applied the adjacent alphabet on f. 248v to recipes on ff. 249r and 249v. The earlier review verified the line replays and sampled the divider marks. The sure-word figures are 150 of 154 on f. 249r and 155 of 156 on f. 249v. The latter includes the two legible words *in iren*, whose meaning remains uncertain. The four cipher lines beginning f. 250r belong to a third text. Catalogue 1164 covers further leaves and stays open. Historical medical claims belong to the manuscript. The alphabet and literal sign replays accompany the latest divider transcriptions.
 
 Source submission and review: https://github.com/dbourdeau/cyphersolver/issues/787
 
 ## Transcription doubts
 
 - f. 249r lines 3, 8, 14 and 24 - read: helfe?, st?delin, so?l and tugen?; checked: image as described by the contributor or prior review, decode; The contributor checked the sign shapes against the facing alphabet. The quantity on line 18 remains open as a separate mark.
-- f. 249v heading and f. 250r first sign - read: krei? and ?un; checked: image as described by the contributor or prior review, decode; The filed proxy rows preserve both open signs. The alphabet separates i and y. No y sign was filed in the 53 rows.
+- f. 249v heading and f. 250r first sign - read: krei? and ?un; checked: image as described by the contributor or prior review, decode; The filed proxy rows preserve both open signs. The alphabet separates i and y. In the [follow-up sign check](https://github.com/dbourdeau/cyphersolver/issues/787#issuecomment-7077603313), the contributors checked all 123 positions transcribed I against the facing alphabet: 63 on f. 249r, 54 on f. 249v and six on f. 250r. None securely showed the closed-loop sign labelled y with two dots.
 
 ## Remaining gaps
 

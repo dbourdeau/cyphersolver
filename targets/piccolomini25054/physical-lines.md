@@ -17,3 +17,5 @@ Backticks enclose the numbers. Each pair corresponds to one cipher sign. A slash
 | 15 | C3 | so[m?]ma gratia `22 44 12 24 44 25 12 54 33 31 13 14` e se [S.A.?] |
 
 On line 2 the earlier submission read *col dire*. The word may be *dirmi*; the final strokes are crowded. On line 7 *si* completes *rispo-* in the preceding line. On lines 10-11, *argo-* continues as *mentare i sensi* (argomentare). On line 13 *ticolare* completes *par-* on the preceding line. The same contracted form resembling *S.A.* recurs on lines 4, 6, 8, 11, 15 and 16. Its expansion and the person's identity remain open. On line 14 the eighth sign of the second run is still provisionally **34** (alternative **54**). The 11 rows retain 15 runs and 157 signs; the additional slashes written at the transition into prose do not add any signs. [Vlnas, appendix photograph 25054.jpg](https://theses.cz/id/p3p2kb/P_lohy_A_a_B.zip)
+
+[The nine clear Italian lines](clear-italian-lines.md) are filed separately.
