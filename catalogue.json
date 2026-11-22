@@ -87430,6 +87430,77 @@
    "repository": "unidentified"
   },
   {
+   "id": 2832,
+   "counted": true,
+   "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
+   "score_note": "A partial historical key survives. The short text and ambiguous signs limit solvability.",
+   "seen": "image",
+   "needs_archive_scan": "yes",
+   "prior_art": "Karabacek (1894), no. 844, printed examples. The APD has a description. No continuous decipherment was located.",
+   "region": "Other",
+   "year": 850,
+   "date": "3rd c. AH / 9th c. AD",
+   "language": "Arabic",
+   "period": "unknown",
+   "title": "Vienna A.P. 11016 (PERF 844), eleven lines of secret writing from Ihnas",
+   "correspondents": "unknown writers (documentary papyrus from Ihnas / Herakleopolis, Archduke Rainer papyrus collection)",
+   "place": "Ihnas, Egypt",
+   "shelfmark": "OeNB, Papyrussammlung, P.Vindob. A. P. 11016 (digital object data.onb.ac.at/dtl/4865249)",
+   "folio_note": "Two fragments written on both sides. The secret writing occupies recto lines 1 to 11. An ordinary Arabic letter follows, and the verso contains a declaration with witnesses.",
+   "cls": "B",
+   "status": "The eleven lines remain unread. Karabacek printed tentative examples in 1894. A numerical reversal explains his assignments and reproduces his line 1 group, but gives no independently verified sentence.",
+   "why": "An early Egyptian manuscript on which a proposed historical key can be checked against the original writing and a contemporary numeral table.",
+   "importance": 5,
+   "solvability": 2,
+   "difficulty": 4,
+   "verify": "The public recto is 636 pixels wide. Progress depends on distinguishing ambiguous signs or identifying another specimen with an independently attested reading.",
+   "links": [
+    {
+     "label": "Investigation and transcription",
+     "href": "https://dbourdeau.github.io/cyphersolver/perf844.html"
+    },
+    {
+     "href": "https://api.onb.ac.at/iiif/presentation/v3/manifest/DTL_4865249",
+     "label": "ONB IIIF manifest"
+    },
+    {
+     "href": "http://data.onb.ac.at/dtl/4865249",
+     "label": "OeNB digital object"
+    },
+    {
+     "href": "https://search.onb.ac.at/primo-explore/search?query=any,contains,Geheimschrift&tab=default_tab&search_scope=ONB_gesamtbestand&vid=ONB&lang=de_DE&offset=0",
+     "label": "OeNB Primo search (Geheimschrift)"
+    }
+   ],
+   "access_note": "Images open again (15 Nov 2026) at https://api.onb.ac.at/iiif/presentation/v3/manifest/DTL_4865249; viewer http://data.onb.ac.at/dtl/4865249. Maximum image width 636 px, so small signs are hard; a higher-resolution scan would need an ONB request.",
+   "ark": "",
+   "access": "online",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-15",
+    "by": "claude session 15 Nov 2026 (Claude Opus 5.5), retry of the ONB image route",
+    "seen": {
+     "kind": "scan",
+     "where": "ONB IIIF manifest DTL_4865249, canvas 1 (recto) and 3 (recto with colour chart), 636x2464 px, viewed 15 Nov 2026; upscaled crops of the two fragments read",
+     "extent": "Recto lines 1-11 (fragment 1 lines 1-5, fragment 2 lines 6-11), about 100-120 signs",
+     "cipher": "Secret script of mixed signs (Greek/Coptic-like letters such as chi and beta, circles, Arabic letter forms, word dividers like colons), right to left; an ordinary Arabic letter follows on the same side, the verso is a legal declaration with witnesses. No decipherment, gloss or interlinear reading on either side; ONB: \"Inhalt unbekannt\"."
+    },
+    "prior_art": {
+     "decode": "DECODE holds no Arabic papyri; known.py over the DECODE dumps, catalogue, leads and targets: no hit for 11016, Ihnas or the shelfmark outside this lead (15 Nov 2026).",
+     "tomokiyo": "Tomokiyo (cryptiana) covers European ciphers; nothing on Arabic papyri.",
+     "lasry": "GL.htm has no Arabic or papyrus entries.",
+     "edition": "Karabacek (1894), no. 844, printed examples. The APD has a description. No continuous decipherment was located.",
+     "literature": "Bogensperger and Reinfandt (Tyche 34, p. 12) distinguish the signs from the dinar numerals of A.P. 5584. Grohmann (1952), p. 93, lists the piece among examples of secret writing."
+    },
+    "key_check": "Karabacek's printed values agree with the abjad fold. Across four sign transcriptions, no adjacent group pair matches consecutive documentary-letter words. Names and formulas from the clear Arabic passages have also been tested.",
+    "duplicates": "known.py \"11016\", \"Geheimschrift\", \"Ihnas\", \"Vindob. A\" (15 Nov 2026): only this lead and the sweep READMEs that found it; the sibling P.Vindob. A.P. 9911 is mirror writing, not cipher.",
+    "verdict": "open"
+   },
+   "repository": "onb",
+   "outcome": "attempted, open",
+   "as_of": "2026-11-22"
+  },
+  {
    "id": 2836,
    "counted": true,
    "source": "OeNB Primo (search.onb.ac.at) in Chrome, deep pass, 15 Nov 2026",
