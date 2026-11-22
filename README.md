@@ -1123,7 +1123,7 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   verification level when a person picked, blind, the shape they see for signs chosen by a rule written before the
   review sheet was built and dated before any answer (`outcome.sign_check`, `profile.schema.json`; the method page,
   section 08). A sheet meets the level only with **at least 2 controls with a known answer, all answered correctly**
-  (an answer "none / other" on a control is a failure), and **at least 8 target signs** once the answers a faulty
+  (an answer "none / other" on a control is a failure), and **at least 8 signs from each target counted at this level** once the answers a faulty
   thumbnail touched are removed. **The checker is named**, with whether they are inside or outside the project, and
   the record says what an AI model did (rule, thumbnails, sheet, scoring, remarks). **The label says nothing about the
   key**: it checks sign shapes, not the key, a code value or the reading, and it never changes the class, the state or
