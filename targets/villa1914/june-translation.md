@@ -1,0 +1,1 @@
+I think it highly advisable that Chao accompany you on the campaign. [Probably Terrazas] does not realize the danger posed by that general’s coming. I send you my warm regards. The Military Governor, F. Ávila.
