@@ -38,7 +38,7 @@
   ],
   "summary": "Italian simple substitution on 22 signs built on a running horizontal stroke, words divided by points; u and v share two signs; Sienese 'ch' spelling; one code sign (TH) unread.",
   "symbol_kind": "symbols",
-  "distinct_symbols": 22,
+  "distinct_symbols": 21,
   "diacritics": {
    "used": false
   },
@@ -123,6 +123,7 @@
    "result": "worked"
   },
   {"date": "2026-10-14", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 471 tokens, 20 types, it-cinquecento order 4: reading -2.184 per letter; random keys -5.093 (z 6.6); key annealed onto shuffled ciphertext best -3.224 (mean -3.289, z 28.7); annealer on the real text -2.417. Verdict: pass.", "result": "worked"},
+  {"date": "2026-11-21", "kind": "verification", "what": "Checked the files against the rev. 2 transcription while preparing a HistoCrypt submission: transcripts/no25.tok and no25_signs.tok still held the first-pass signs (11 positions differ: Y for seven X, G for one S, PH2 for one Q, plus for two F; 22 distinct) and keys/no25_key.txt still had XB = t and a G sign. Regenerated the token files from the rev. 2 transcription (496 tokens, 21 distinct) and wrote the rev. 2 key (XB = z, no G). The reading, the readings of every word and validation.tsv are unchanged (they were made from the rev. 2 reading).", "result": "worked"},
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcripts/no25.txt / no25_signs.tok and the reading transcripts/no25_reading.txt; key keys/no25_key.txt", "result": "worked"}
  ],
  "outcome": {"validation": {"date": "2026-10-14", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 471, "types": 20, "tokens_per_type": 23.55, "score": -2.184, "nulls": {"random keys": {"n": 200, "mean": -5.093, "sd": 0.444, "max": -3.879, "z": 6.6, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.289, "sd": 0.039, "max": -3.224, "z": 28.7, "p": 0.1429}}, "power": -2.417, "verdict": "pass", "notes": "claimed per-occurrence score -2.184; polyphony 0.0; 25 unread tokens left out; annealer on the real text from random keys reached -2.417"}, 
@@ -160,7 +161,7 @@
      "transcripts/no25_signs.tok"
     ],
     "decryption": "transcripts/no25_reading.txt",
-    "summary": "An undated, unsigned slip: a lord will not ride as the people there wished but will leave without further halt, by Lajatico, then Radicondoli and Casole, probably next Saturday; the Signoria of Siena is asked to provide bread, wine and fodder in those places. Key recovered ciphertext-only; 477 of 496 signs in words read as Italian.",
+    "summary": "An undated, unsigned slip: a lord will not ride as the people there wished but will leave without further halt, by Lajatico, then Radicondoli and Casole, probably next Saturday; the Signoria of Siena is asked to provide bread, fodder and victuals in those places. Key recovered ciphertext-only; 477 of 496 signs in words read as Italian.",
     "translation": "transcripts/no25_en.md",
     "language": "it",
     "read_share": 0.992
