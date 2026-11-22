@@ -1,0 +1,11 @@
+LABEL: diaz1886_plan_sealed
+File: PREREG_diaz1460_pilot_v1M_SEALED_2026-11-20_2119Z.md (in this folder, byte for byte the contributor's file of that name; NOTES.md, section 7)
+SHA-256: 2e84dbbd3a74f764e58d79be2a717503c15d4201c38aa0acd7c81c67395ae89a
+RFC 3161, freetsa.org: status Granted, time Nov 20 21:19:40 2026 GMT
+RFC 3161, timestamp.digicert.com: status Granted, time Nov 20 21:19:40 2026 GMT
+RFC 3161, timestamp.sectigo.com: status Granted, time Nov 20 21:19:40 2026 GMT
+Verify DigiCert and Sectigo: openssl ts -verify -data PREREG_diaz1460_pilot_v1M_SEALED_2026-11-20_2119Z.md -in PREREG_diaz1460_pilot_v1M_SEALED_2026-11-20_2119Z.md.<authority>.tsr -CAfile <a bundle of public root certificates>
+Verify FreeTSA: the same, with -CAfile and -untrusted set to FreeTSA's own root and signing certificates, as its site publishes them
+Not shown by the stamps: that no run came before the plan. That rests on the contributor's session log and record chain.
+The files the plan names by their SHA-256 (its section 13) are with the contributor and are not in this folder.
+OpenTimestamps: none made
