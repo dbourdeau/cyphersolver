@@ -1,12 +1,12 @@
-# Catalogue 1570 (`vittoria1686`) — Independent Full-Corpus Completion & Ink Audit
+# Catalogue 1570 (`vittoria1686`) — Independent Full-Corpus Completion & Visual Check
 
 **Contributor:** Matthew Kennedy (Independent Researcher, ORCID `0009-0000-7198-7250`)  
 **Date:** 21 November 2026  
-**Builds on:** **WAINUT / `LcCompany`**, PR `#226` (3 Nov 2026, `targets/vittoria1686/`), which first recovered the swapped-pair numerical key and read 172/198 number words (86.9%) via AI agents without human paleographic verification.
+**Builds on:** **WAINUT / `LcCompany`**, PR `#226` (3 Nov 2026, `targets/vittoria1686/`), which first recovered the swapped-pair numerical key and read 172/198 number words (86.9%).
 
 ## Summary of New Additions Beyond PR `#226`
 
-1. **Previously untranscribed lower half of `c. 4r` (`L1_4r_13`–`L1_4r_24b`):** Adds ~70 cipher words omitted in PR `#226` (the entire passage on the "gentleman of Rome", *"non have un tozzo di pane assegnato"*, the interlinear self-correction `102020^{75}30902010` = *accresca*, and the prayer for the birth of a *Principino*), bringing the corpus to **267 cipher words (`1,028` alphabetic tokens) + `16` nomenclator words + `2` unmarked plain numerals (`1000`, `50`)**. Also confirms `3 = z` in `8573370` (*tozzo*, `c. 4r`) alongside 4 Letter-1-only dropped-zero `3[0]=e` collisions (`0/48` in Letters 2–4).
+1. **Previously untranscribed lower half of `c. 4r` (`L1_4r_13`–`L1_4r_24b`):** Adds ~70 cipher words omitted in PR `#226` (the entire passage on the "gentleman of Rome", *"non have un tozzo di pane assegnato"*, the interlinear self-correction `102020^{75}30902010` = *accresca*, and the prayer for the birth of a *Principino*), bringing the corpus to **267 cipher words (`251` alphabetic / `1,028` tokens + `16` nomenclator) plus `2` unmarked plain numerals (`1000`, `50`) = `269` total entries**. Also confirms `3 = z` in `8573370` (*tozzo*, `c. 4r`) alongside 4 Letter-1-only dropped-zero `3[0]=e` collisions (`0/48` in Letters 2–4).
 2. **Resolution of all open gaps in `targets/vittoria1686/NOTES.md` (`## Remaining gaps`):**
    - **`c. 3v`:** `[?stimo]` → **`stamo`** (`908510607`); `[?sperate]` → **`disperate`** (`155090653075108530`); `[?sequestratore]` (`seculnorio`) → **`secutorio`** (`903020285775507`, legal writ of execution); `[?Spagna]` (`spaltta`) → **`Spagna`** (`906510405510`); `carriate` → **`Carriati`** (Prince of Cariati); `[...]` (`banatte`) → **`abbatte`** (`10.5..5.10858530`).
    - **`c. 4r`:** `[?tutti] [?politici] [?nelli]` → **`tutti pollicinelli`** (`852858550 65745455020505530454550`); `[...]` (`uocire`) → **`uscire`** (`29020507530`); `[?S.]` (`g`) → **`9:` = `S.`** (dropping `0` before colon abbreviation mark in `S. Paulo`); cleartext idiom confirmed as *esser di volata*.
@@ -21,7 +21,7 @@
 
 ## Transcription doubts
 
-Checked against native-resolution Biblioteca Estense Universitaria IIIF crops (`cc. 3v, 4r, 21r` verified visually stroke-by-stroke; no overlay):
+Checked visually against native-resolution Biblioteca Estense Universitaria IIIF crops (`cc. 3v, 4r, 21r`; no overlay):
 
 - `450`, `2010550`, `902304045108550` (`c. 3v` L4) - read: `li`, `cani`, `suegl[i]ati`; checked: image, decode; Letter 1 shows adjacent-`5` haplography across token boundaries (`45+50` written `450`; `55+50` written `550`) and omitted `50` in `sueglati`. By Letter 4 (`c. 21r` L6), Vittoria writes full `4550` (*li*).
 - `2074545[1/2]0853075104530` (`c. 4r` L1) - read: `Collaterale`; checked: image, decode; the first `1` in `10` has a curved top loop resembling `2` (either hooked `1` paralleling Letter 4 curved `1`s or a minor `20`-for-`10` pen slip).
@@ -34,5 +34,5 @@ Checked against native-resolution Biblioteca Estense Universitaria IIIF crops (`
 
 ## Conditions of Use of Images & Tools Used
 
-- **Archival images:** Consulted online via Biblioteca Estense Universitaria di Modena / Lodovico Media Library under **CC BY-NC-SA** terms (official IIIF manifests linked in `../NOTES.md`). **Zero Modena images are committed** in this folder or pull request. A formal inquiry regarding prior local transcriptions and commercial reproduction procedures has been sent to Biblioteca Estense Universitaria di Modena (`ga-esten@cultura.gov.it`, 21 Nov 2026).
-- **Tools used:** Python dynamic-programming tokenizer, blind bijective simulated annealing, and Monte Carlo verification (`verify_vittoria_gonzaga.py`), assisted by AI paleographic workflows and visually audited against native Modena IIIF crops by Matthew Kennedy and an independent human-level visual reviewer.
+- **Archival images:** Consulted online via Biblioteca Estense Universitaria di Modena / Lodovico Media Library under **CC BY-NC-SA** terms (official IIIF manifests linked in `../NOTES.md`). No Modena images are committed in this folder or pull request. A prior-art and reproduction inquiry was sent to the Biblioteca Estense Universitaria di Modena on 21 Nov 2026.
+- **Tools used:** Python dynamic-programming tokenizer, blind bijective simulated annealing, and Monte Carlo verification (`verify_vittoria_gonzaga.py`), assisted by AI paleographic workflows and verified visually against native Modena IIIF images.
