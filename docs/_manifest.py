@@ -11,6 +11,10 @@ PAGES = [
          title='The secret writing on the Ihnās papyrus (Vienna PERF 844)',
          blurb='Eleven lines precede an ordinary Arabic letter. A six-sign group matches a historical example, but the rest of the passage remains unread.',
          quote='', rights='Austrian National Library, A.P. 11016, and Karabacek, exhibition catalogue (1894), p. 226.'),
+    dict(slug='oslo365', label='Michigan–Oslo papyrus', year='2nd century CE', y=150, place='Egypt', st='stuck', stt='open investigation',
+         title='Five line endings on the Michigan–Oslo papyrus', blurb='A name in the Isis spell on the front fits two tentative letters on the back. A third would have to be beta where the editor reads tau.', quote='', rights='Letter alignment from GEMF 8'),
+    dict(slug='jerash749', label='Jerash silver scroll', year='Before 749 CE', y=749, place='Jerash, Jordan', st='stuck', stt='open investigation',
+         title='A curve on the Jerash silver scroll', blurb='A curved stroke recurs in lines 6 and 9. The neighboring upright remains ambiguous, leaving the proposed Arabic reading unresolved.', quote='', rights='Baum, Herter and Lepper, unfolded CT volume, CC BY 4.0'),
     dict(slug='rok800', label='R&ouml;k runestone', year='c. 800', y=800, place='&Ouml;sterg&ouml;tland', st='found', stt='already read',
          title='The R&ouml;k runestone: its cipher runes checked',
          blurb='The longest runic inscription mixes plain Younger Futhark with twig-rune coordinates, a one-step shift along the rune row and an Elder Futhark substitution. Bugge, Wess&eacute;n and Rundata had read them; here each key was derived again from the stone&rsquo;s own text and agrees. A damaged line cannot be restored, and the meaning is still debated.',
@@ -3699,3 +3703,6 @@ IMAGES['montcalm1757w'] = ('montcalm1757w_annex.jpg', 'The first lines of the an
 IMAGES['crawford1814'] = ('crawford1814_cipher.jpg', 'Frame 0064R, lines 1&ndash;13: &ldquo;to a determination 1554 1229 1036 1048 very 1025 1390&rdquo;, to sacrifice every thing for the friendship of England', 'US National Archives, RG 59, Despatches from US Ministers to France vol. 15, M34 roll 18 frame 0064 (right page), via catalog.archives.gov')
 
 IMAGES['perf844'] = ('perf844_line1.jpg', 'The first line of secret writing', 'Austrian National Library, Vienna, A.P. 11016, recto, line 1')
+IMAGES['jerash749'] = None
+
+IMAGES['oslo365'] = None
