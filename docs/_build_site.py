@@ -854,14 +854,15 @@ def catintro_html():
     op = [e for e in es if C.is_open(e)]
     ys = [e['year'] for e in op if isinstance(e.get('year'), int)]
     seen = sum(1 for e in op if 'image' in str(e.get('seen')) or e.get('seen') == 'viewed')
-    return (f'<!-- catintro:start -->\n<p>{len(op):,} undeciphered letters and series from {min(ys)} to {max(ys)}. Each carries its shelfmark, the prior art '
-            f'checked, a difficulty class and the check that would confirm it is genuinely open; {seen} have been looked at on the image.</p>\n<!-- catintro:end -->')
+    return (f'<!-- catintro:start -->\n<p>{len(op):,} undeciphered letters, messages and series from {min(ys)} to {max(ys)}. '
+            f'Entries link to their sources and carry the available shelfmarks and checks. {seen} have been looked at on the image.</p>\n<!-- catintro:end -->')
 
 
 def cattop_html(n=6):
     """The highest-priority open entries of the Unsolved Catalogue, for the index."""
     import _catalogue_page as C
-    top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e)], key=lambda e: (-C.priority(e), e['id']))[:n]
+    top = sorted([e for e in C.DATA['entries'] if e['counted'] and C.is_open(e) and C.priority(e) >= 0],
+                 key=lambda e: (-C.priority(e), e['id']))[:n]
     li = ''.join(f'  <li><a href="solve/{e["id"]}.html">{C.people_html(e) or C.blank_html(e)}<span class="t">{C.esc(e["title"])}</span>'
                  f'<span class="pr"><small>priority</small> {C.priority(e):.1f}</span><span class="yr">{C.esc(e["date"])}</span></a></li>\n' for e in top)
     return f'<!-- cattop:start -->\n<h3 class="listhead">Top of the queue</h3>\n<ul class="list cattop">\n{li}</ul>\n<!-- cattop:end -->\n'

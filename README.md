@@ -1032,7 +1032,8 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   `python docs/_check_catalogue.py --claim <id> "<name>"` marks it for 14 days (at most 3 live claims per person;
   renewed only by sending work). It is a notice against double work and holds back nobody else's result; a finder's
   reservation has priority. The rule is in `research/SWEEP.md`, "Claiming a catalogue entry you did not find".
-- **Catalogue vetting bar** (28 Oct 2026). `catalogue.json` holds vetted leads only. What sweeps find goes to
+- **Catalogue vetting bar** (28 Oct 2026). `catalogue.json` holds vetted leads and unsolved messages sourced from George Lasry’s
+  WWI Cipher Repository. The imported WWI entries record the source list, check date and case URL. What sweeps find goes to
   `research/leads.json` and enters the catalogue only when its `vetting` block records all of these: (1) **seen**: the
   ciphertext was looked at on a scan, facsimile or printed transcription, with where, how much cipher, and that no
   decipherment is on or with it (an archive-only item may say "not online" if it carries `access: "archive"` and
