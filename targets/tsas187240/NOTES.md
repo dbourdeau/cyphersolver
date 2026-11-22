@@ -1,3 +1,17 @@
+# Cambridge T-S AS 187.240 — Cairo Geniza pen trials
+
+## Reading checked on 22 November 2026
+
+The dotted Hebrew groups reconstruct the alphabet with its five final forms. The sequence כך למם נן shows the ordinary and final forms of kaf, mem and nun in order. The right column of the recto continues Psalm 45:2 into verse 3. The verso repeats אומר אני מעשי למלך. [Cambridge recto](https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00187-00240/1) · [Cambridge verso](https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00187-00240/2) · [Parallel exercise](https://geniza.princeton.edu/en/documents/40486/)
+
+The glyphs below the ruled line on the verso remain unread. In the working transcription the middle example has 15 signs in its first row and 14 in its second, counting the cup and treating the central wave as two signs. These are provisional counts for a single example. The transcription below and in glyphs.txt predates the correction of the Hebrew material.
+
+With the cup omitted, למד מם נון סמך עין fits the first row and its two wide gaps. The next letter names fail the repeat constraints of the second row. Run `python -X utf8 five_way_tests.py` from this directory for the seeded shuffle check (666 of 1,000 lists fit the first row). Different signs may represent the same letter in that test. The direction, boundaries and letter values remain open.
+
+## Earlier working notes (6 November 2026)
+
+These observations record the earlier hypothesis of two cipher blocks. The alphabet and Psalm identifications above supersede that hypothesis.
+
 # T-S AS 187.240: Geniza bifolio with Hebrew-letter and glyph cipher blocks (Cambridge University Library)
 
 Status: in progress
