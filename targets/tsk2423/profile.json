@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "target": "tsk2423",
+  "title": "Two fragments of a Cairo Genizah cipher recipe book",
+  "documents": [
+    {
+      "id": "T-S K24.23",
+      "shelfmark": "T-S K24.23",
+      "date": "Probably 11th century (palaeographic estimate)",
+      "year": "unknown",
+      "country": "unknown",
+      "language": "Judeo-Arabic and Hebrew",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Bohak, pp. 14–15, for the heading and formulas.",
+        "partial": true
+      },
+      "length": "unknown",
+      "transcription": {
+        "by": "mixed",
+        "source": "Manuscript photograph and Bohak’s printed readings."
+      }
+    },
+    {
+      "id": "ENA 3211.2",
+      "shelfmark": "ENA 3211.2",
+      "date": "Probably 11th century (palaeographic estimate)",
+      "year": "unknown",
+      "country": "unknown",
+      "language": "Judeo-Arabic and Hebrew",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Bohak, pp. 14–15, for the repeated heading and the short reverse inscription mentioning iron and a day.",
+        "partial": true
+      },
+      "length": "unknown",
+      "transcription": {
+        "by": "mixed",
+        "source": "Manuscript photograph and Bohak’s printed readings."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "monoalphabetic"
+    ],
+    "summary": "Cipher signs substitute for Hebrew letters in parts of the booklet.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": "unknown",
+    "diacritics": "unknown",
+    "homophones": "unknown",
+    "nomenclator": "unknown",
+    "nulls": "unknown",
+    "key_order": "unknown"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in print",
+      "where": "https://albert.ias.edu/bitstreams/b463280e-28c4-4605-b811-75bfa57ddc38/download",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "published key",
+      "published reading"
+    ],
+    "attack": "published key",
+    "human_role": "Selected this target and requested publication of the partial reading.",
+    "models": [
+      "Codex"
+    ]
+  },
+  "solution": [
+    {
+      "kind": "verification",
+      "what": "Compared the glossed title, the repeated words and the damaged line endings across the fragments.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "method": "read with known key",
+    "method_basis": "Bohak published a cipher key for these fragments.",
+    "contribution": [
+      "transcription"
+    ],
+    "key": "partial",
+    "fraction_read": "unknown",
+    "fraction_read_source": "No defensible denominator for the damaged fragments.",
+    "gaps": [
+      {
+        "item": "Cut line ends on both strips",
+        "blocker": "illegible"
+      },
+      {
+        "item": "Short damaged groups and diagram note ending",
+        "blocker": "too-short"
+      }
+    ],
+    "verification": [
+      "key confirms"
+    ],
+    "credits": [
+      {
+        "who": "gideon-bohak",
+        "role": "key or decipherment used",
+        "note": "Published the key, heading and repeated formulas.",
+        "source": "https://albert.ias.edu/bitstreams/b463280e-28c4-4605-b811-75bfa57ddc38/download"
+      }
+    ],
+    "texts": [
+      {
+        "doc": "T-S K24.23",
+        "transcription": "cambridge.txt",
+        "decryption": "cambridge.txt",
+        "translation": "cambridge-en.txt",
+        "state": "read in part",
+        "language": "jrb",
+        "reading_review": {
+          "grade": "B",
+          "by": "Codex",
+          "date": "2026-11-22",
+          "note": "Reviewed surviving phrases. Missing line ends interrupt the text."
+        },
+        "summary": "The surviving heading concerns ophthalmia. The accompanying notes distinguish individual readings from restorations."
+      },
+      {
+        "doc": "ENA 3211.2",
+        "transcription": "ena.txt",
+        "decryption": "ena.txt",
+        "translation": "ena-en.txt",
+        "state": "read in part",
+        "language": "jrb",
+        "reading_review": {
+          "grade": "B",
+          "by": "Codex",
+          "date": "2026-11-22",
+          "note": "Reviewed surviving phrases. Missing line ends interrupt the text."
+        },
+        "summary": "The surviving heading concerns ophthalmia. The accompanying notes distinguish individual readings from restorations."
+      }
+    ],
+    "class": "read in part"
+  }
+}
