@@ -9,15 +9,15 @@ Author: Matthew Kennedy (ORCID: 0009-0000-7198-7250)
 Date:   November 2026
 
 Zero-dependency core mode verifies:
-  - Gate 0: Deterministic DP unique decodability of every cipher word (zero language hints)
-  - Gate 3: 100.00% exact round-trip re-encoding back to diplomatic manuscript digit strings
+  - Deterministic DP unique decodability of every cipher word (no language hints)
+  - 100.00% exact round-trip re-encoding back to diplomatic manuscript digit strings
   - Structural key-entropy proof: exact 9-pair adjacent-swapped 5-step Italian alphabet (p = 1/18!)
   - Cipher Index of Coincidence (IoC) and Shannon character entropies (H1, H2)
 
 Optional statistical mode (when IT_pack.npz & IT_top_lexicon_words.json are present):
-  - Gate 1: Blind unsupervised bijective Simulated Annealing trained ONLY on Letter 1 (1686)
-  - Gate 2: Strict chronological held-out validation on Letters 2-4 (1688-1691, unseen)
-  - Gate 4: 50,000-trial Monte Carlo Italian quadgram null clearance + 10,000-trial lexicon MC
+  - Blind unsupervised bijective Simulated Annealing trained solely on Letter 1 (1686)
+  - Chronological held-out validation on unseen Letters 2-4 (1688-1691)
+  - 50,000-trial Monte Carlo Italian quadgram permutation test + 10,000-trial lexicon permutation test
 """
 
 from __future__ import annotations
@@ -317,7 +317,7 @@ CORPUS = {
 
 
 # ---------------------------------------------------------------------------
-# 2. GATE 0: DETERMINISTIC UNIQUE-DECODABILITY DP PARSER (ZERO LANGUAGE HINTS)
+# 2. DETERMINISTIC UNIQUE-DECODABILITY DP PARSER (NO LANGUAGE HINTS)
 # ---------------------------------------------------------------------------
 def dp_tokenize_all(raw_word: str) -> Tuple[List[List[str]], str, str]:
     """
@@ -427,7 +427,7 @@ def compute_entropies(seq: List[str]) -> Tuple[float, float]:
 
 def main() -> None:
     print("=" * 78)
-    print("VITTORIA & FAUSTINA GONZAGA (1686-1691) — FOUR-GATE DETERMINISTIC VERIFIER")
+    print("VITTORIA & FAUSTINA GONZAGA (1686-1691) — REPRODUCIBLE VERIFICATION SUITE")
     print("=" * 78)
 
     total_words = 0
@@ -524,13 +524,13 @@ def main() -> None:
     test_true_chars = true_letters_for_words(test_words)
     all_true_chars = train_true_chars + test_true_chars
 
-    print(f"[GATE 0] Unique Decodability (zero language priors): {unique_words}/{total_words} "
+    print(f"[DP-UNIQ] Unique Decodability (no language priors): {unique_words}/{total_words} "
           f"(100.00%, {ambig_words} ambiguous, {failed_words} failed)")
-    print(f"         Breakdown: {total_cipher_words} cipher words ({len(train_words)+len(test_words)} alphabetic, "
+    print(f"          Breakdown: {total_cipher_words} cipher words ({len(train_words)+len(test_words)} alphabetic, "
           f"{total_nomenclator} nomenclator), {total_numerals} cleartext numerals ('1000', '50')")
-    print(f"         Atomic alphabetic cipher tokens: {len(all_stream)} total "
+    print(f"          Atomic alphabetic cipher tokens: {len(all_stream)} total "
           f"(L1 1686: {len(train_stream)}, L2-L4 1688-1691: {len(test_stream)})")
-    print(f"[GATE 3] Exact Round-Trip Re-Encoding: {rt_exact}/{total_words} (100.00%)")
+    print(f"[RT-100%] Exact Round-Trip Re-Encoding: {rt_exact}/{total_words} (100.00%)")
     print(f"[STRUCT] 9-Pair Adjacent-Swapped 5-Step Bijection Chance Prob: 1/18! = {struct_p:.3e}")
     print(f"[CRYPTO] Cipher IoC = {ioc_all:.5f} (L1={ioc_l1:.5f}, L2-L4={ioc_ho:.5f}; Italian expected=0.07380)")
     print(f"         Shannon Entropies: H1 = {h1_all:.4f} bits/tok, H2 = {h2_all:.4f} bits/tok")
@@ -600,7 +600,7 @@ def main() -> None:
         json.dump({"letters": CORPUS, "parsed": parsed_by_letter, "decoded": decoded_transcripts}, f, ensure_ascii=False, indent=2)
 
     # -----------------------------------------------------------------------
-    # OPTIONAL STATISTICAL VERIFICATION (GATES 1, 2, 4) IF ITALIAN PACK PRESENT
+    # OPTIONAL STATISTICAL VERIFICATION IF ITALIAN PACK PRESENT
     # -----------------------------------------------------------------------
     pack_path = os.environ.get("IT_PACK_PATH", os.path.join(HERE, "IT_pack.npz"))
     lex_path = os.environ.get("IT_LEX_PATH", os.path.join(HERE, "IT_top_lexicon_words.json"))
@@ -622,14 +622,14 @@ def main() -> None:
             "distinct_alpha_symbols_L1": len(set(train_stream)),
             "distinct_alpha_symbols_L2_L4": len(set(test_stream)),
         },
-        "gate_0_unique_decodability": {
+        "unique_decodability": {
             "unique": unique_words,
             "total": total_words,
             "ambiguous": ambig_words,
             "failed": failed_words,
             "pass": (unique_words == total_words and ambig_words == 0 and failed_words == 0),
         },
-        "gate_3_round_trip": {
+        "round_trip": {
             "exact": rt_exact,
             "total": total_words,
             "accuracy": f"{100.0 * rt_exact / total_words:.2f}%",
@@ -662,7 +662,7 @@ def main() -> None:
             idx = ((arr_int[:-3] * 26 + arr_int[1:-2]) * 26 + arr_int[2:-1]) * 26 + arr_int[3:]
             return float(QG[idx].sum())
 
-        # GATE 1: Pure 1-to-1 Bijective Blind SA on L1 (1686) ALONE — zero cribs, zero swapped-pair prior
+        # 1-to-1 Bijective Blind SA on L1 (1686) alone — no cribs, no swapped-pair prior
         IT_ALPH = [ord(c) - 65 for c in "ABCDEFGHILMNOPQRSTUVZ"]
         train_syms = sorted(set(train_stream))
         assert len(train_syms) == 21
@@ -714,12 +714,12 @@ def main() -> None:
         tok_acc_train = sum(1 for a, b in zip(bij_train_dec, train_true_chars) if eq_uv(a, b))
         tok_acc_test = sum(1 for a, b in zip(bij_test_dec, test_true_chars) if eq_uv(a, b))
 
-        print(f"\n[GATE 1] Pure 1-to-1 Bijective Blind SA on L1 (1686) ONLY ({sa_sec:.1f}s, ZERO CRIBS):")
-        print(f"         Canonical symbol accuracy:   {sym_acc_canon}/21 ({100.0*sym_acc_canon/21:.2f}%)")
-        print(f"         Train L1 (1686) token acc:   {tok_acc_train}/{len(train_stream)} ({100.0*tok_acc_train/len(train_stream):.2f}%)")
-        print(f"         HELD-OUT L2-L4 (1688-91):    {tok_acc_test}/{len(test_stream)} ({100.0*tok_acc_test/len(test_stream):.2f}%)")
+        print(f"\n[BLIND SA] 1-to-1 Bijective Blind SA on L1 (1686) only ({sa_sec:.1f}s, no cribs):")
+        print(f"           Canonical symbol accuracy:   {sym_acc_canon}/21 ({100.0*sym_acc_canon/21:.2f}%)")
+        print(f"           Train L1 (1686) token acc:   {tok_acc_train}/{len(train_stream)} ({100.0*tok_acc_train/len(train_stream):.2f}%)")
+        print(f"           Held-out L2-L4 (1688-91):    {tok_acc_test}/{len(test_stream)} ({100.0*tok_acc_test/len(test_stream):.2f}%)")
 
-        # GATE 2 & 4: 50,000-trial Monte Carlo Quadgram Null Clearance
+        # 50,000-trial Monte Carlo Quadgram Permutation Test
         def mc_quadgram(stream_toks: List[str], true_chars: List[str], kmap: Dict[str, str], n_trials: int, seed: int, label: str):
             syms = sorted(set(stream_toks))
             sm = {s: i for i, s in enumerate(syms)}
@@ -737,25 +737,25 @@ def main() -> None:
                 nulls[b0 : b0 + bs] = QG[qidx].mean(axis=1)
             mu, sd, mx = float(nulls.mean()), float(nulls.std(ddof=1)), float(nulls.max())
             z = (true_qg - mu) / sd
-            beats = int((nulls >= true_qg).sum())
-            emp_p = (beats + 1) / (n_trials + 1)
+            exceedances = int((nulls >= true_qg).sum())
+            emp_p = (exceedances + 1) / (n_trials + 1)
             p_gauss = 0.5 * math.erfc(z / math.sqrt(2.0))
             print(f"[MC 50k — {label}] n={len(stream_toks)} | Score={true_qg:.4f} | Null={mu:.4f}+/-{sd:.4f} "
-                  f"| MaxNull={mx:.4f} (+{true_qg-mx:.4f}) | Z=+{z:.2f}s | Beats={beats}/{n_trials} (Gauss p={p_gauss:.2e})")
+                  f"| MaxNull={mx:.4f} (+{true_qg-mx:.4f}) | Z=+{z:.2f}s | NullExceedances={exceedances}/{n_trials} (Gauss p={p_gauss:.2e})")
             return {
                 "label": label, "n_tokens": len(stream_toks), "n_trials": n_trials,
                 "score": true_qg, "null_mean": mu, "null_std": sd, "null_max": mx,
                 "margin_over_max_null": true_qg - mx, "z_score": z,
-                "beats": beats, "emp_p_upper": emp_p, "gauss_p": p_gauss,
+                "null_exceedances": exceedances, "emp_p_upper": emp_p, "gauss_p": p_gauss,
             }
 
         canon_upper = {k: v.upper() for k, v in CANONICAL_ALPHA_KEY.items()}
-        mc_l1 = mc_quadgram(train_stream, train_true_chars, canon_upper, 50000, 11, "L1 1686 (True Key)")
-        mc_ho_t = mc_quadgram(test_stream, test_true_chars, canon_upper, 50000, 22, "L2-L4 1688-91 HELD-OUT (True Key)")
-        mc_ho_b = mc_quadgram(test_stream, bij_test_dec, bij_key, 50000, 33, "L2-L4 1688-91 HELD-OUT (Blind Bijective SA from 1686)")
-        mc_all = mc_quadgram(all_stream, all_true_chars, canon_upper, 50000, 44, "Full 4-Letter Corpus (True Key)")
+        mc_l1 = mc_quadgram(train_stream, train_true_chars, canon_upper, 50000, 11, "L1 1686 (Proposed Key)")
+        mc_ho_t = mc_quadgram(test_stream, test_true_chars, canon_upper, 50000, 22, "L2-L4 1688-91 Held-Out (Proposed Key)")
+        mc_ho_b = mc_quadgram(test_stream, bij_test_dec, bij_key, 50000, 33, "L2-L4 1688-91 Held-Out (Blind Bijective SA from 1686)")
+        mc_all = mc_quadgram(all_stream, all_true_chars, canon_upper, 50000, 44, "Full 4-Letter Corpus (Proposed Key)")
 
-        # 10,000-trial Independent Modern Italian Lexicon Null Clearance
+        # 10,000-trial Independent Modern Italian Lexicon Permutation Test
         def mc_lexicon(words_list, kmap: Dict[str, str], use_dropped_e: bool, n_trials: int, seed: int, label: str):
             filtered = [
                 (pid, raw_w, toks) for pid, raw_w, toks, sup in words_list
@@ -791,45 +791,45 @@ def main() -> None:
             nh_arr = np.array(nh, dtype=np.float64)
             mu, sd, mx = float(nh_arr.mean()), float(nh_arr.std(ddof=1)), int(nh_arr.max())
             z = (true_h - mu) / sd
-            beats = int((nh_arr >= true_h).sum())
+            exceedances = int((nh_arr >= true_h).sum())
             print(f"[LEX 10k — {label}] Hits={true_h}/{len(filtered)} ({100.0*true_h/len(filtered):.1f}%) "
-                  f"| Null={mu:.2f}+/-{sd:.2f} (Max={mx}) | Z=+{z:.2f}s | Beats={beats}/{n_trials}")
+                  f"| Null={mu:.2f}+/-{sd:.2f} (Max={mx}) | Z=+{z:.2f}s | NullExceedances={exceedances}/{n_trials}")
             return {
                 "label": label, "true_hits": true_h, "total_words": len(filtered),
                 "hit_rate_pct": round(100.0 * true_h / len(filtered), 2),
-                "null_mean": mu, "null_std": sd, "null_max": mx, "z_score": z, "beats": beats,
+                "null_mean": mu, "null_std": sd, "null_max": mx, "z_score": z, "null_exceedances": exceedances,
             }
 
-        lmc_l1 = mc_lexicon(train_words, canon_upper, True, 10000, 55, "L1 1686 (True Key)")
-        lmc_ho_t = mc_lexicon(test_words, canon_upper, False, 10000, 66, "L2-L4 1688-91 HELD-OUT (True Key)")
-        lmc_ho_b = mc_lexicon(test_words, bij_key, False, 10000, 77, "L2-L4 1688-91 HELD-OUT (Blind Bijective SA)")
+        lmc_l1 = mc_lexicon(train_words, canon_upper, True, 10000, 55, "L1 1686 (Proposed Key)")
+        lmc_ho_t = mc_lexicon(test_words, canon_upper, False, 10000, 66, "L2-L4 1688-91 Held-Out (Proposed Key)")
+        lmc_ho_b = mc_lexicon(test_words, bij_key, False, 10000, 77, "L2-L4 1688-91 Held-Out (Blind Bijective SA)")
 
-        report["gate_1_blind_unsupervised_sa_L1_only"] = {
-            "solver": "Pure 21-to-21 bijective Simulated Annealing on L1 (1686) alone (60 restarts x 20k steps, Italian quadgrams only, zero cribs, zero swapped-pair prior)",
+        report["blind_unsupervised_sa_L1_only"] = {
+            "solver": "21-to-21 bijective Simulated Annealing on L1 (1686) alone (60 restarts x 20k steps, Italian quadgrams only, no cribs, no swapped-pair prior)",
             "runtime_seconds": round(sa_sec, 2),
             "canonical_symbol_accuracy": f"{sym_acc_canon}/21 ({100.0*sym_acc_canon/21:.2f}%)",
             "train_L1_token_accuracy": f"{tok_acc_train}/{len(train_stream)} ({100.0*tok_acc_train/len(train_stream):.2f}%)",
             "heldout_L2_L4_token_accuracy": f"{tok_acc_test}/{len(test_stream)} ({100.0*tok_acc_test/len(test_stream):.2f}%)",
             "blind_bijective_key": bij_key,
         }
-        report["gate_2_and_4_mc_quadgram_50k"] = {
-            "L1_train_true": mc_l1,
-            "L2_L4_heldout_true": mc_ho_t,
+        report["mc_quadgram_50k"] = {
+            "L1_train_proposed": mc_l1,
+            "L2_L4_heldout_proposed": mc_ho_t,
             "L2_L4_heldout_blind_sa": mc_ho_b,
-            "full_corpus_true": mc_all,
+            "full_corpus_proposed": mc_all,
         }
-        report["gate_2_and_4_mc_lexicon_10k"] = {
-            "L1_train_true": lmc_l1,
-            "L2_L4_heldout_true": lmc_ho_t,
+        report["mc_lexicon_10k"] = {
+            "L1_train_proposed": lmc_l1,
+            "L2_L4_heldout_proposed": lmc_ho_t,
             "L2_L4_heldout_blind_sa": lmc_ho_b,
         }
     else:
-        print("\n[INFO] IT_pack.npz not found at default path — ran zero-dependency deterministic gates (Gates 0, 3, Structural, IoC).")
+        print("\n[INFO] IT_pack.npz not found at default path — ran zero-dependency deterministic checks (Unique Decodability, Round-Trip, Structural, IoC).")
 
     rep_path = os.path.join(HERE, "verification_report.json")
     with open(rep_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
-    print(f"\nALL GATES PASSED! Wrote verification report -> {rep_path}")
+    print(f"\nVERIFICATION COMPLETE. Wrote report -> {rep_path}")
 
 
 if __name__ == "__main__":
