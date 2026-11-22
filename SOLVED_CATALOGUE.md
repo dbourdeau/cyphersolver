@@ -128,6 +128,9 @@ but are not "solved" in the sense of the title.
 
 ## 2. Partly read (key recovered in part, long stretches read)
 
+[Cairo Genizah recipe book (T-S K24.23 and ENA 3211.2)](https://dbourdeau.github.io/cyphersolver/tsk2423.html). Partial reading with Bohak’s published key. The continuous recipe remains open.
+
+
 | # | Target | Date | Read | State | What broke it | Where the AI did the work* |
 |---|---|---|---|---|---|---|
 | 393 | **The Doge and Senate of Venice → Giovanni Mocenigo, ambassador with Henry III** (subscribed by the secretary Marco Ottobon), BNE Mss/994 ff. 34–38 (DECODE R2252) (contributed by aaymeloglu) | 27 Apr 1589 | 14 Nov 2026 | 692 of 747 words (92.6%): Gondi's request for help for Henry III, and the Senate's answer of 24 April, read at 95.7% (no aid for now; intercession with Sixtus V, as over Saluzzo); open: gutter losses, blots, the clerk's slips | read after matching with key from external sources, partial | Key matched from the Council of Ten's *Zifra Prima* (DECODE R1789, Oct 2026); the full transcription from the BNE scans and the reading by aaymeloglu (issue #552), each lookup checked against the project's own key transcription |
