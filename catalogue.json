@@ -91716,6 +91716,92 @@
     "key_in_volume": "Same filza: MAP V 295 and 303 (Bernardo's letters of Dec 1431) in the same system carry interlinear decipherments; key not yet rebuilt or tested."
    },
    "repository": "asf"
+  },
+  {
+   "id": 2959,
+   "counted": true,
+   "year": 1139,
+   "date": "after 1 Nisan 1139 (inferred, PGP / India Book IV)",
+   "title": "Isaac Ibn Ezra to Halfon, 1139 (cipher on verso line 5)",
+   "correspondents": "Yishaq b. Avraham Ibn Ezra (Spain) -> Halfon b. Netanel ha-Levi",
+   "place": "Spain (al-Andalus)",
+   "language": "Judaeo-Arabic (Hebrew script), code in Greek/Coptic numerals",
+   "period": "unknown",
+   "shelfmark": "Cambridge University Library, T-S 13J18.19 (India Book IV, 41 = H55; PGPID 9097)",
+   "folio_note": "Verso line 5. Eleven visible signs in apparent groups of five, two and four.",
+   "cls": "B",
+   "status": "Open on the available evidence. The India Book edition gives provisional sign values. The two disputed published proposals concern the recto. The contents of the later Spanish chapter are indexed, and its discussion of the verso still needs direct checking.",
+   "why": "An early dated use of numeral signs in Andalusi Judaeo-Arabic correspondence. The passage is short enough that an independent sign identification or key would be especially valuable.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "verify": "Compare the two final hooks with the hooked sign on recto line 12. Check Martinez Delgado and Ashur, Encriptando mensajes, pp. 91-98, for a verso reading or independent sign identifications. Use the front as a cross-check on any proposed key.",
+   "links": [
+    {
+     "label": "PGP 9097",
+     "href": "https://geniza.princeton.edu/en/documents/9097/"
+    },
+    {
+     "label": "Cambridge manuscript image, verso",
+     "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-00013-J-00018-00019-000-00002.jp2/full/full/0/default.jpg"
+    },
+    {
+     "label": "CypherSolver research note and reproducible tests",
+     "href": "https://dbourdeau.github.io/cyphersolver/ibnezra1139.html"
+    },
+    {
+     "label": "Spanish volume contents, chapter begins on p. 91",
+     "href": "https://spainshobo.net/html/user_data/detalle/192136detalle.pdf"
+    }
+   ],
+   "prior_art": "India Book IV B no. 41 leaves the cipher unresolved. Reported Gil and Fleischer proposals concern recto 11-12. The text of the Spanish chapter on this manuscript remains unchecked.",
+   "needs_archive_scan": "no",
+   "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 5685 x 8199 px by regions",
+   "region": "Other",
+   "source": "Verso passage from research lead 2885",
+   "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Daniel Bourdeau with Codex, building on vetting for lead 2885",
+    "verdict": "open",
+    "seen": {
+     "kind": "scan",
+     "where": "Cambridge University Library IIIF verso photograph and the India Book IV B edition as reproduced on PGP 9097.",
+     "extent": "Eleven visible marks on verso line 5. The edition prints provisional values and provides no plaintext for this passage.",
+     "cipher": "Apparent Greek/Coptic numeral signs in a Judaeo-Arabic letter. The mechanism and several sign values remain uncertain."
+    },
+    "prior_art": {
+     "decode": "decode_search.py on 'Halfon', 'Ibn Ezra' and 'Coptic': 0 records each. Not on DECODE.",
+     "tomokiyo": "No Cryptiana page found on Geniza numeral codes (site-restricted web search on Geniza / Coptic numerals / Hebrew letters returned none).",
+     "lasry": "GL.htm fetched 15 Nov 2026: no Geniza, Hebrew, Judaeo-Arabic or Coptic entry; no Lasry paper on this letter known.",
+     "edition": "India Book IV B no. 41 leaves the cipher unresolved. Reported Gil and Fleischer proposals concern recto 11-12. The text of the Spanish chapter on this manuscript remains unchecked.",
+     "literature": "PGP 9097 (MR, PG): 'substitution mechanism that has not yet been determined'; PGP's verso note proposes corrections to the numeral values. Cambridge GRU note ''Coptic' numerals and Genizah studies' and Elbaum's NS J479 blog (Ashur: India Book merchants used Coptic numerals as an uncracked code) add no reading."
+    },
+    "key_check": "Follow-up tests covered direct numeral-to-letter mapping, affine substitution and repeated-sign patterns. No shared key verified. The Geniza comparison specimens listed in lead 2885 remain leads for further testing.",
+    "duplicates": "Checked the catalogue source for the shelfmark and PGP 9097. Lead 2885 covers the whole letter. PR 870 documents the research and this entry covers only verso line 5.",
+    "searches": [
+     {
+      "query": "PGP 9097 record and scholarship page (India Book IV B no. 41 headnote, edition, translation)",
+      "result": "Friedman's headnote: Gil-Fleischer identified word 1 as 'marsha'at' and word 2 as 'tarakh', methods differ, word 3 unsolved, matter open; IB IV prints the signs as letters (ta'ashgam, yima'ah, asqatam aq a.hh)."
+     },
+     {
+      "query": "Gil Fleischer \"Yehuda ha-Levi and his circle\" Coptic numerals code Ibn Ezra Halfon letter",
+      "result": "Book identified (Gil and Fleischer 2001); no online text of pp. 282-285 and no other discussion of this code found."
+     },
+     {
+      "query": "Geniza cipher Coptic numerals Hebrew letters (Cryptiana site search)",
+      "result": "No Cryptiana page; PGP records of Coptic-numeral alphabets (Bodl. heb. f 102/28) and the Cambridge NS J479 blog, neither reading this letter."
+     },
+     {
+      "query": "Exact shelfmark and chapter title Encriptando mensajes, publisher and preview searches",
+      "result": "The contents identify the manuscript at p. 91. The two reported recto proposals are documented on PGP. No accessible chapter text or published verso reading was located."
+     }
+    ]
+   },
+   "repository": "unidentified"
   }
  ]
 }
