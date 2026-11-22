@@ -62,3 +62,7 @@ Nothing was changed in the key, the transcription or the reading. After: 92 of 2
 - 17 doubtful words and 9 words not read, listed in `repairs_numbers.md`, among them c. 21r [?vuol], where the last sign looks like 85, and c. 22v [?Vesc.].
 - "i carre da tratte di grano": the sense is clear, but carre for carra or carri is left as the groups give it.
 - c. 12v was not viewed. The clear parts of the letters are not transcribed.
+
+## Independent completion and ink audit, 21 Nov 2026 (Matthew Kennedy)
+
+An independent full-corpus completion and visual ink audit covering all four letters (267 cipher words / 1,028 alphabetic tokens + 16 nomenclator words + 2 unmarked plain numerals, including the previously untranscribed lower half of `c. 4r`), resolving all five nomenclator codes (`104=che`, `159=per`, `109=Duca`, `182=V.E.`, `13=et`), `3=z`, and the doubtful/unread passages listed under `## Remaining gaps` above (`stamo disperate`, `secutorio`, `Spagna`, `abbatte`, `tutti pollicinelli`, `uscire`, `citat(ion)e ... d(ucat)i 1000 ... inter(ess)i`, `il vescovo lo voleva carcerare`, `luogo ten(en)te di Cam(er)a ... precet(t)i`), is placed in `kennedy_2026/` (`kennedy_2026/NOTES.md`, `key_kennedy.tsv`, `transcription_full.txt`, `decryption_full.txt`, `reading_full.md`, `translation_full.md`, and `verify_vittoria_gonzaga.py`). WAINUT's 3 Nov 2026 files and `profile.json` are left untouched pending maintainer review.
