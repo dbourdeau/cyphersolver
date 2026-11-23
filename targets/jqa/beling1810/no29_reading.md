@@ -1,0 +1,88 @@
+# No. 29, 19/31 October 1810: model reading of the coded passages
+
+**Model reading (Claude Opus 5.5, claude-opus-5-5), made on 22 Nov 2026 from `no29_decode.txt` alone.**
+**Reading made with the key sheet alone; no plaintext witness; not checked by a person.**
+
+John Quincy Adams, St Petersburg, to the Secretary of State, No. 29, 19/31 October 1810 (NARA M35 reel 2, frames 185R-189L).
+No other file, reading or edition was opened.
+
+Marking used:
+- plain roman word: built from sheet values of the groups (first or second transcription);
+- *italic* word: clear English written in the manuscript, not coded;
+- word built with a rebuilt-table value: plain, listed in the notes;
+- `[?word]`: groups give no sense, word inferred from context;
+- `a[b]c`: the bracketed letters or syllable are supplied (no group gives them);
+- `[...]`: one word unread; `[... n]`: n words unread.
+
+"First" = the first transcription (A-E); "second" = the blind second transcription (22 Nov). "n (second) vs m (first)" means I followed the second.
+
+---
+
+## A (first A, 185R lines 1-14; second 0185_R passage 1 and 0186_L passage 1)
+
+> You cannot fail to have remarked in the [...] [ac]count of [t]he last conferen[ce] with the Chan[cellor], but his expression to me that the at[ta]chment [?of] this government to the United States was more obstinate than he believed I was aware of; and you will have per[ceived] [indi]cations in my [?correspondence] previous to that date, that I was more aware of what had occurred in the interview between the French Ambassador and the Emperor in person than the Count himself probably kn[ew]. The influence of France has been very actively at work here ever since the month of February last to ac[...] from Russia [...] a total exclu[sion] of all American vessels from the Russian ports, by an order like those which the Kings of Prussia and of Denmark have been compelled to issue, or at least a prohibition of all the [co]lonial [ar]ticles, which, as they form almost *Entirely* their cargoes of the American vessels coming to this country, would nearly have accom[pli]shed [?the] [...] of ex[c]luding our flag as a direct order to that effect.
+
+Notes A.
+- (a) Second followed against first: 302 fa vs 802; 1023 ch vs 1022; 1385 the vs 1395; 1561 380 402 1372 obstinate vs 1501 380 402 1572; 684 are vs 864 (twice: "aware"); 1186 will vs 1136; 167 my vs 96; 467 vi vs 409; 469° view vs 489°; 1383 than vs 138; 182 1081 himself vs 132 1331; 1451 kn vs 1457; 1254 has (second's alternative) vs 125; 464 very vs 414; 1507 567 897 actively vs 1587 589 897; 235 since vs 255; 1153° ports vs 1158°; 1438/1436 is vs 1430; 908 or vs 918; 1393 they vs 1398; 65 America vs 85; 1429 ing vs 1439; 1050 country vs 1152; 1507 ac vs 1587; 520 ed vs 521; 569 to vs 559; 322 fect vs 32. First followed against second: 1006 can vs 1016; 569 to vs 509; 528 me vs 628; 974 flu vs 994; 1001 C vs 1081 (exclu-); 439 ni vs 489 (colonial).
+- Rebuilt-table values used: 528 = me (sheet "ei"); 467 = vi (sheet "ui") in "previous"; 580 = ti (sheet "traction") in "[ar]ticles".
+- Inferred and supplied: 150° (mor) gives no word, then 1049 Count read as "[ac]count"; 169 "he" read "[t]he"; "conferen[ce]" lacks a ce group; the group after "Chan" (1010 cape/part, second 1015 cause or 1016 ce) gives no "cellor", so "Chan[cellor]" is supplied from the conference context. "at[ta]chment": 699 at + 1352 (sheet box/no, Bassano) + 1023 ch + 637 ment; 1352 is likely 1362 ta, the same word recurs in E as at ta ... ment. 1570 (occur/occu) before "this government" gives no sense; "[?of]" (likely 1576 misread). 1014^ cation after 1123 per: "per[ceived] [indi]cations" supplied. "[?correspondence]": 167 my + 1046 cor + 784 bul + 1160 pound / 1150 Poland + 546 ence; only cor- and -ence fit. "believed" = be live ied, kept as built. "kn[ew]": 1451 kn + 289 ex. "to ac[...] from Russia [...]": 1507 ac then 999 from 948 Russia 553 thousand/ty; the verb and 553 unread. "exclu[sion]": 286 (evit/evi) gives no ending, likely 236 sion. "American" here is 65 America + 402 na (401 N is the usual group). "[co]lonial": 1067 S / 1087 set stand where co (1037) is needed. "accom[pli]shed": 1044/[cancelled] con stands where pli is needed. "[?the] [...]": 138 mity/theh, 133 mir, then 1091 sever + 1532 air / 1552 oa unread. "ex[c]luding": 1101 P / 1081 self stand for c.
+- Second has the run 1561 380 402 1372 ("obstinate") twice, the first underlined; first has "underline" at that place. Read once.
+
+## B (first B, 186L; second 0186_L passage 2) — after "The French Ambassador heard of this meeting,"
+
+> and finding that the report in cir[cu]lation was in[cre]asing, the odium of France almost uni[ver]sal here, he [?authorised] the deni[al] that any such demand had been [?made] by him or on the part of France, [?added] that perhaps the Russian government of their [?own] accord would [?adopt] this measure.
+
+Notes B.
+- (a) Second followed against first: 747 report vs 741; 1459 lation vs 1457; 500 was vs 520; 153 most vs 158; 1070 sal vs 1096; 439 ni vs 489; 1317 been vs 187; 908 or vs 915; 1110 part vs 1101; 1385 the vs 1386; the run 1576 1386 948 1507+ 910 (of their [own] accord) is in the second only (the first has "underline" there); 1399 this vs 1499. First followed against second: 668 and vs 658; 1384 that vs 1386.
+- Rebuilt-table values used: 451 = u (sheet "UV") in "uni[ver]sal".
+- Inferred and supplied: "cir[cu]lation": 1071 same / 1051 county unread. "in[cre]asing": the group after "in" is clipped (first) or read 1 (second). "uni[ver]sal": 413 / 453 / 433 give no "ver". "[?authorised]": groups 863/865, 1407/1400 (tho), 1464 (ri), 36/1462, 565 and 520 ed; only "tho ri ... ed" fits, verb chosen from context. "deni[al]": 809 de + 439 ni + 1385/1585 (likely 1535 al). "[?made]": 615 many in both (605 = made). "[?added]": 1515 adv + 812 ded. "[?own]": 948 Russia (943 = own). "[?adopt]": 1515 adv + 913/918 + 1301 B. Group 792 "by" (second only, before 1515) left out.
+
+## C (first C, 186L and 188; second 0186_L passage 3 and 0188 passage 1)
+
+> In the month of April a propo[si]tion was made in the Council of the Empire [?to] prohibit the importation of refined sugar. This [ar]ticle was probably chosen by way of experiment, as the one which presented the strongest arguments in [?favour] of a prohibition, and it was proposed and [sup]ported in Council by Count Romanzoff himself. The Count's own *purpose*, I presume, was to comply thus far with the views of France, and at the same time to promote the agriculture and manufactures of Russia by diminishing its [ar]ticles of im[port]ation, while every en[cour]agement should be given to its exportation. [?He], I *believe*, did not consider the commerce with the United States as likely to [?be] at all affected by [?the] measure, or rather that if affect[ed] at all it would be *advantageously*. From the United States scarcely any refined sugar had been importe[d], and by a prohibition of this article he [?supposed] that their importation of raw sugars, now principally brought here by [?American] vessels, would be much in[cre]ased. But the prohibit[o]ry project was by no [?means] confined to the article of refined sugar. I have this copy of a memorial which was [la]id before the Council proposing and urging the prohibition of all the colonial articles excepting raw sugars, dyewo[od]s, and even [... 2] [?cotton] [...], and apothecary dru[gs] [...], also brandy, rum, spirituous liquors, and sundry other articles [?of] luxury, and of manufactures. It was in the name of a com[mer]cial house who had recently applied a very large capital to the establishment of a sugar refinery; but it was written by a Frenchman who but a few months before had been an exchange broker at Paris. Among the arguments for the prohibition advanced in this memorial, that of *anticipating* the demand which would sooner or later be made by France was explic[i]tly set forth. The debates in the Imperial [?Council] upon the pro[po]sal respecting refined sugar [?were] not only warm but vehement, and ultimately the opinion of the members was unanimous, with the exception of Count Romanzoff, against the prohibition.
+
+Notes C.
+- (a) Second followed against first (186L part): 565 tion vs 585; 500 was 505 made vs 565 1125; 1426 in vs 1045; 1048 Council vs 1045; 539 em vs 589; 341 fin vs 840; 383 su vs 353; 560 ti vs 580; 500 was vs 510; 1023 ch vs 1025; 1116 pe vs 1110; 1385 the 1594 one vs 1545 1574; 520 ed vs 570; 382 str vs 332; 272 est vs 292; 565 tion vs 585 (and in every later "prohibition"); 500 was vs 580; 1373 ted vs 1293; 1048 Council vs 1045; 1049 Count vs 1449 (twice); 943 own vs 948; 500 was vs 510; 558 thus vs 557; 813 far vs 815; 469° views vs 489°; 699 at 1385 the vs 696 1345; 490 ur vs 190; 30° manufacture vs 89°; 649 min vs 549; 1177 while vs 1197; 653 Y vs 673; 545 en vs 525; 90 should 1310 be 1216 gi vs 69 91 1511 1210; 1190 with vs 1196; 908 or vs 948; 1416 if vs 1410; 1310 be vs 1516. (188 part): 1073 680 1016 scarce- vs 1099 676 1016; 674 any vs 894; 422 ned vs 622; 680 ar vs 880; 1156 possess not used; 1386 their vs 1576; 383 su vs 883 (raw sugars); 162 much vs 182; 1411 iect vs 1401; 1044 con vs 1464; 680 ar 560 ti vs 880 580; 781 re 341 fin 520 ed vs 701 34 4590; 1399 this vs 1389; 1176 which vs 1174; 500 was vs 501; 1407 id vs 1449; 1048 Council vs 1045; 668 and vs 805; 1216 gi vs 1210; 292 except vs 792; 383 su vs 883; 1289 dy vs 1259; 675 ap vs 695; 1289° dy vs 1259°; 258 spi vs 254; 668 and vs 678; 392 sun vs 692; 894 lu vs 594; 1028 ci vs 1029; 675 ap vs 695; 464 very vs 404; 1375 ten (second's alternative) vs 1395; 289 ex vs 259; 1300 er vs 1587; 680 ar vs 880; 1384 that vs 1394; 908 or vs 918; 1060 ct vs 1080; 1116 pe vs 1110; 1484 rm (second's alternative) vs 1434; 668 and vs 653; 1325° bers vs 1225°; 565 tion vs 585. First followed against second: 1337 bit vs 1357 (prohibit); 680 ar (second's alternative) for arguments; 1154^ pos vs 1155^; 1426 in vs 1420 (Council); 209 pres; 1071 same 563 time vs 1091 565; 460 ven vs 480; 1576 of vs 1575 (prohibition of this article); 651 X vs 551 (luxury); 186 ho vs 1866 (house); 1453 la 1379 ter vs 1453 1399 (later); 1087 set vs 1081 (set forth); 1426 in vs 1420 (advanced in).
+- Rebuilt-table values used: 1420 = in (sheet "igue") in "in [?favour]"; 478 = ume (sheet "cal") in "presume"; 813 = far (sheet "deem"); 550 and 580 = ti (sheets "enemy", "traction") in "article", "articles" (second 02 and 08) and "prohibit[o]ry"; 489 = ni (sheet "upper") in "colonial"; 451 = u (sheet "UV") in "luxury" and "unanimous"; 781 = re (sheet "bu") in "recently", "refined" (first 188 line 16 and line 30); 505 = made (sheet "eal"). ("written" is 1200 sheet "wr" + 1440 it + 1375 ten, all sheet.)
+- Inferred and supplied: "propo[si]tion": 1094 she (1098 = si). "[?to]": 509 earth/de (likely 569). "[ar]ticle(s)": 880 li / 080 stand for 680 ar. "[?favour]": 618 March / 814 deep. "[sup]ported": 898 sheet blank, rebuilt "sw". "im[port]ation": 1253 hard / 1053 court (1153 = port). "en[cour]agement": 1053 court gives "court"; kept as en- + [cour] + age ment. "[?He]": 179 hi / 159 mour. "[?be]": 1380 test (1310 = be). "[?the]": 1699 has no value. "affect[ed]": 540 embass (likely 520 ed). "importe[d]": 501 E gives no d. "[?supposed]": 893 low + 1154/1156 pos + 520 ed. "[?American]": 854 do + 401 N (first), 85°? + 402 na (second; first digit blotted, 65 = America would fit). "in[cre]ased": in + 1154 pos + as + ed. "prohibit[o]ry": pro hi bi ti ry. "[?means]": 680° ar (630° = mean, as in D). "[la]id": 1435 ir (1453 = la). "dyewo[od]s": 1593° once / 1373° ted (1573 = od). "even [... 2] [?cotton] [...]": 451 u, 380°/300° sti, 1087 set, 571+ ton, 1037 co, 1039 coast / 1 Maryland; only "ton co" hints at cotton, order not clear. "dru[gs] [...]": 1277 dru then 1271° down / 1281° dul + 558 thus/tled unread. "[?of] luxury": 1475 / 1575. "com[mer]cial": 569 to / 539 em. "explic[i]tly": ex pli ct ly. "[?Council]": 1045 copy (1048 = Council). "pro[po]sal": 1145 plied (1148 = po). "[?were]": 1189 wise / 1109 Paris. "vehement" from second (first has 653 Y after it, which could make "vehementy"; second has "and").
+
+## D (first D, 188-189L; second 0188_R passage 2 and 0189_L passage 1)
+
+> The Emperor was reluctant, even at their severi[ty] [...], which has been exercised with rega[rd] to the cargoes. The Council assented to it against the *inclination* of every one [?of] its members, and the publi[c] opinion here, which is *universally* against the act, [a]scribes it as *universally* to the [inter]ference of the French Ambassador, or by means of his person[al] interviews with the Emperor.
+
+Notes D.
+- (a) Second followed against first: 781 re 894 lu 1060 ct 673 ant vs 731 594 1080 573 (first's 731 re used for "re-"); 1254 has vs 1384; 1202 ga vs 1209; 569 to vs 669; 1523 against vs 1322; 653 Y 1594 one vs 673 1578; 634 mem vs 632; 230 publi vs 280; 1523 against (second's alternative) vs 1023; 1510 act vs 1516; 327 fer vs 329; 630° mean vs 650°; 184 his vs 134; 469° views vs 489°. First followed against second: 1176 which (both); 668 and vs 658; 1436 is vs 1486.
+- Rebuilt-table values used: 781 = re (sheet "bu") in "rega[rd]".
+- Inferred and supplied: "severi[ty] [...]": after se ve ri, first has 997 Friday/fol, second 1404 ic + 778 bro; none gives ty. "rega[rd]": 780 bru/burg unread. "[?of]": 1578 / 1478 (1576 = of). "publi[c]": 1071 same / 1501 A. "[a]scribes": 1001 C / 1901 (no value) + 1074 scr + 1401 I + 1326 bes. "[inter]ference": 1480 rive (1430 = inter). "person[al]": 1585 ok / 1385 the (1535 = al).
+
+## E (first E, 189L; second 0189_L passages 2 and 3) — after "On the 5th of August I had the honour of writing you,"
+
+> that the French Ambassador had then made no direct demand for the ex[c]lusion of American vessels from the Russian ports, but that I apprehended such a demand would not much longer be delayed.
+>
+> [clear: On the 5th of September I informed you] that suggestions to this effect had then been made personal[ly] to the Emperor by the French Ambass[ad]or, and that the Emperor had expressed his determination not to yield to them. I understand from a good source that these suggestions have been more distin[ct]ly made through the regular official channels, and have been directly resisted by Count Romanzoff as well as by the Emperor, who fla[tly] *dignified* his resolution [?not] to exclude American vessels from his ports, but manifested some displeasure that the proposition should have been made to him. Count Romanzoff, I pres[ume], alluded to this circumstance when he said their atta[ch]ment to the United States was more obstinate than I was aware of.
+
+Notes E.
+- (a) Second followed against first: 1388 then (second's alternative) vs 1384; 605 made vs 665 (four times); 1153° ports vs 1173° (twice); 675 ap vs 975; 416 nd vs 410 (twice); 360 not vs 380; 162 much vs 182; 1300 er vs 1380; 297 express vs 299; 184 his vs 134 (twice); 360 not vs 380; 480 under vs 490; 1016 ce vs 1010; 1426 in vs 1126; 534° el vs 524°; 844 dir 518 ect 897 ly vs 544 1074 897; 781 re vs 701; 1167+ wel vs 1087+; 289 ex vs 259; 845 dis vs 345; 565 tion vs 585; 1068 sa vs 1058; 1407 id vs 1427; 1561 380 402 1372 obstinate vs 1383...; 684 are vs 864. First followed against second: 1388 then vs 1588 (second passage); 1392 these vs 1592; 1576 of vs 1076/1070 (official); 870 aw vs 890; 1001 C vs 1081 (exclude); 1513 ad (first's "overwritten 1513?") in the first "Ambassador"; 1310 be.
+- Rebuilt-table values used: 451 = u (sheet "UV") in "regular" and "displeasure"; 781 = re (sheet "bu") in "resisted". ("well" is 1167 sheet "wel" with + doubling the l.)
+- Inferred and supplied: "ex[c]lusion": 1101 P / 1081 self. "personal[ly]": 899 (sheet blank, rebuilt "sy") / 497 wa. "Ambass[ad]or": 1535 al in both (1513 = ad). "determination" is built from de ter 543 (sheet "emi") nation, which spells "deteremination"; kept. "yield" is the sheet's "yeild". "I understand": the second's extra 360? (blotted) after I left out. "distin[ct]ly": 851 dist + 1426 in + 1061 cu + 897 ly (1060 = ct). "fla[tly]": 350 fla + 1597 only / 1599 ood. "[?not]": 300 extreme, underlined in the second (360 = not); the first has "underline" here. "pres[ume]": 477 ult / 475 virtue. "atta[ch]ment": 1029 cir stands for ch.
+
+---
+
+## Summary
+
+Adams reports that Count Romanzoff's remark about Russia's "obstinate" attachment to the United States reflected French pressure since February 1810 to have American vessels excluded from Russian ports, or at least colonial goods prohibited; a prohibition of refined sugar proposed by Romanzoff himself in April, backed by a French-written memorial asking for a much wider ban, was debated hotly and rejected by every other member of the Council. He adds that the public blames the recent severity against the cargoes on the French Ambassador's influence on the Emperor, and that the Ambassador's suggestions, made personally and through official channels, have been resisted by both Romanzoff and the Emperor, who declared his resolution not to exclude American vessels and was displeased the proposal was made.
+
+## Counts
+
+Counted from the reading text above (the bracketed clear-text cue in E not counted).
+
+| | A | B | C | D | E | total |
+|---|---|---|---|---|---|---|
+| coded word positions written (holes included) | 176 | 49 | 340 | 61 | 146 | 772 |
+| plain (manuscript) words | 1 | 0 | 4 | 3 | 1 | 9 |
+| inferred words [?word] | 3 | 5 | 12 | 1 | 1 | 22 |
+| words with supplied letters | 13 | 4 | 16 | 6 | 7 | 46 |
+| unread [...] (words) | 4 | 0 | 4 | 1 | 0 | 9 |
+| holes, all kinds | 20 | 9 | 32 | 8 | 8 | 77 |
+
+Coded words fully built from group values (no hole): 695 of 772.
