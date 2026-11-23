@@ -371,12 +371,13 @@ the sheet (the third agent's report records the opposite view). One is a real di
 in con-fi-den-ce.
 
 **The two lines** (`no85_two_lines.txt`, 26 groups; `texts/no85_two_lines_reading.md`): "You will here perceive some uncertainty
-how far the neutral intention[s] and expectation[s] of Sweden herself extend." 17 words, all read. Not in print; not read here
+how far the neutral intention[s] and expectation[s] of Sweden herself extend." 17 words, 15 read = 0.882, read in part: the s of
+intention[s] and expectation[s] is supplied from the plural mark, so both are holes (README Conventions, 16 Nov 2026). Not in print; not read here
 before.
 
 **The three lines** (`no85_three_lines.txt`, 35 groups, two cut or blotted; `texts/no85_three_lines_reading.md`): "and the
 Swedish meaning of it is to be [?expounded] by the hope of being {+in}demnified [?in] Norway [?for] the los[s] of Finland".
-23 words, 20 read = 0.870. The holes: 116x with its last figure blotted (pound 1160, or plain 1138); 1626, a number the code
+23 words, 19 read = 0.826. The holes: los[s] (the sheet gives lose; the s is supplied); 116x with its last figure blotted (pound 1160, or plain 1138); 1626, a number the code
 does not have (in, 1426, is one digit away); 9x cut by the gutter (for, 981). 1436 (is) stands where in-dem-ni-fied wants 1426.
 With the clear text around it: "If the English Regent's new Proclamation respecting the Orders in Council is to elucidate the
 English meaning of neutrality, and the Swedish meaning of it is to be ... by the hope of being indemnified ... Norway ... the
@@ -386,7 +387,8 @@ loss of Finland, the roots of that neutrality are not very profound." Not in pri
 first read with the rebuilt table on 22 Sept 2026 (`ford1812b_notes.md`), now with the code sheet. It agrees with that reading
 and adds the sheet value of each number that does not fit (1236 ground, 209 pres, 49 United States, 1501 A, 820 delegate, all
 five in three independent transcriptions), Sweden (39) for the 49 where the September reading guessed "they", and that the dots
-after "Norway" are line filler, not "without". 55 words, 51 read = 0.927.
+after "Norway" are line filler, not "without". 55 words, 50 read = 0.909 (objection[s], with its s supplied from the plural
+mark, is a hole).
 
 **No. 74, the three groups "in error".** On the sheet 387 is sue, 1431 into, 1101 P. The line is 199 888 1399 143x 387 1431
 1101 948 668 869 ...: how long this [is] sue into P Russia and Austria, that is, "How long this is-sue into P-russia and Austria
@@ -402,6 +404,17 @@ wrote "is" over a group both transcribers read as 1435 (one of them with 1436 as
 text (21 Nov 2026): copies of Ford's volume and nothing else. Founders Online ("neutrality of Sweden", "suffered to remain
 open"): no results. Not seen: Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society,
 not online), which should have the plain words.
+
+**Counts and weaknesses (recount of 22 Nov 2026).** The counts above follow the rule of 16 Nov 2026: a word with a supplied
+or emended letter is a hole. The first count of 21 Nov had taken intention[s], expectation[s], objection[s] and los[s] as read
+(17 of 17, 20 of 23, 51 of 55). Four further weaknesses, stated plainly:
+- The test plan was frozen before the run, but its SHA-256 (494b6a49...) was recorded only in our local files; the frozen
+  plan and the file of checksums are not in this folder, so the freeze cannot be checked from the repository.
+- Two disputed digits were settled partly by sense: 548 against 528 (two lines, last group; *end* makes a word, *ei* does not)
+  and 398 against 298 (three lines, *Sw-ed-ish*), each with an enlargement and the third reader also favouring 548 and 398.
+- "issue" in No. 74 rests on the clerk's figure 387; on the film two of three blind readers saw 887 (*lo*, no sense).
+- Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society) was not seen. It should
+  carry the plain words and would settle the holes.
 
 ## Transcription doubts
 
