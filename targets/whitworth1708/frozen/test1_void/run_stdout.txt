@@ -1,0 +1,65 @@
+{
+ "run_at": "2026-11-21T03:43:44-05:00",
+ "table_sha256": "ae94010b82bd42e45bdeacfbe347bbcb2b47d6d6b36287afff629289e61eb856",
+ "table_frozen_at": "2026-11-21T03:43:36-05:00",
+ "table_size": 49,
+ "tier_A": 34,
+ "tier_B": 15,
+ "build": {
+  "groups": 473,
+  "distinct": 261,
+  "runs": 35,
+  "unaligned_runs": 0,
+  "in_sample": {
+   "hits": 131,
+   "covered": 131,
+   "groups": 473,
+   "hit_letters": 319,
+   "letters": 1385,
+   "untiled_runs": 0,
+   "H": 1.0,
+   "coverage": 0.2769556025369979,
+   "letter_share": 0.23032490974729242
+  },
+  "logliks": [
+   -4017.4,
+   -4047.6,
+   -3960.4,
+   -3969.2,
+   -3991.0,
+   -3950.0,
+   -4008.3,
+   -3952.5,
+   -3899.9,
+   -4016.8
+  ]
+ },
+ "held_out": {
+  "hits": 84,
+  "covered": 87,
+  "groups": 357,
+  "hit_letters": 193,
+  "letters": 1040,
+  "untiled_runs": 0,
+  "H": 0.9655172413793104,
+  "coverage": 0.24369747899159663,
+  "letter_share": 0.18557692307692308
+ },
+ "exact_runs": 1,
+ "held_runs": 32,
+ "control1": {
+  "n": 1000,
+  "median": 0.1724137931034483,
+  "p95": 0.25287356321839083,
+  "p99": 0.2988505747126437,
+  "max": 0.3563218390804598
+ },
+ "control2": {
+  "n": 31,
+  "median": 0.11494252873563218,
+  "p99": 0.1839080459770115,
+  "max": 0.1839080459770115
+ },
+ "verdict": "VOID"
+}
+python3 -I scripts/run_test.py transcriptions/runs_f114.json  test  121.18s user 0.38s system 99% cpu 2:01.73 total

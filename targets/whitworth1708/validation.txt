@@ -1,0 +1,54 @@
+# Validation of the partial key, catalogue 863 / lead 1151 (whitworth1708): two held-out tests, each written down and
+# hashed before it was run, each run once. Contributor's own tests (not docs/_validate.py). All by AI agents; no person
+# has checked them. That each plan predates its run rests on the hashes and clock times in these local files
+# (frozen/plans/HASHES_2.txt, frozen/test2/table2_frozen.sha256, frozen/test1_void/HASHES.txt); there is no public
+# timestamp.
+#
+# TEST 1, 21 Nov 2026: VOID by its own rule. Reported, not counted.
+# - Plan frozen/test1_void/TEST_PLAN_whitworth1708.md (hashed 03:41 EST). Table built from one bare duplicate (stamped
+#   f. 114) and the 1886 print alone, by alignment; tested on the other duplicate of the same day (f. 112) against the
+#   print. Marks: VOID under 100 covered groups; PASS at H >= 0.80 with a margin of 0.30 over shuffled tables.
+# - Result (frozen/test1_void/run_stdout.txt): table 49 numbers; 87 of 357 held-out groups covered, 84 fit the print
+#   (0.966); shuffled tables 0.30 at the 99th percentile. 87 < 100, so the test is VOID: it says nothing by its own
+#   rule, and its table was not kept.
+#
+# TEST 2, 22 Nov 2026: PASS, on a small sample.
+# - Plan frozen/plans/TEST_PLAN_2_whitworth1708.md, hashed with every input at 21:18:37 EST (frozen/plans/HASHES_2.txt).
+# - Building text: the two received originals of 22 Sept / 3 Oct 1708 (SP 91/5, stamped ff. 90 and 110) with the
+#   office's decipherment written above the groups (interlined_1708-09-22_*.txt; single AI readings). A group counted
+#   only where that reading agrees with the two blind readings of the bare duplicate: 785 of 832 groups.
+# - Key rule: tier S = a number standing alone under one office word, never alone under another; tiers A and B = the
+#   first test's aligner, started from the tier S values, ten seeds, kept only where all ten agree.
+#   Frozen at 21:21:29 EST before the held-out file was opened: 246 numbers (139 S, 62 A, 45 B), sha256
+#   4f39e3e8a9ee6d362398436d3e954c7846f1670711ccca49bff1f885990d422f (frozen/test2/table2_frozen.tsv; key.tsv has the same values).
+# - Held out: ALL 112 code groups of the bare duplicate of 1/12 Sept 1708 (stamped f. 49), two blind AI transcriptions
+#   identical in every group, in 15 stretches, each paired with the 1886 print (Sbornik vol. 50 No. 22) by its clear-
+#   word neighbours; five boundaries set by hand from clear words and print alone (frozen/transcriptions/overrides_f049.tsv).
+# - Score H = groups whose key value fits the print in the best tiling / groups whose number is in the key.
+# - Controls: 1,000 tables with the key's values shuffled over its numbers (seed 1708); every stretch scored against
+#   another stretch's print (reported only).
+# - Marks fixed in advance: VOID under 40 covered groups (the first test's 100 is out of reach on a letter of 112
+#   groups; the plan says so) or if the shuffled 99th percentile is above 0.50; PASS at H >= 0.80 AND H >= that
+#   percentile + 0.30; otherwise MISS.
+# Result as recorded (frozen/test2/run2_stdout.txt, frozen/test2/test2_result.json):
+groups 112; in the key 78 (0.696); fit the print 69; H = 0.885; coded letters under hits 185 of 328 (0.564)
+by tier: S 48 of 51, A 16 of 18, B 5 of 9; 34 groups (33 numbers) are not in the key
+control 1 (shuffled tables): median 0.10, 95th percentile 0.15, 99th percentile 0.17, highest 0.22; margin 0.72
+control 2 (other stretches' print): highest 0.14
+DECISION: PASS. The letter is spent: nothing was re-measured and key.tsv keeps the frozen values.
+#
+# Afterwards (description only, changes no score):
+# - The nine misses: four are the print's spelling (warned / war-n-d, engage / engag, Moscovites / muscovi, humored /
+#   -ur-); one is word order (the code has "... and persons", the print "persons and effects"); four are the key's or
+#   the reading's (219 po, 36 a, 505 court, 236 post). 236 = "post" is wrong and should be "st"; with "st" the score
+#   would have been 70 of 78. The recorded score stays 69.
+# - An AI checker that had not made the test (frozen/test2/VERIFY_test2.md): all 17 hashes match; a rerun gives the
+#   same table byte for byte and the same scores; no path from the held-out letter into the table; the hand-set
+#   boundaries give the test no hit. Counting only key values of three or more letters: 31 of 36 (0.861) against 0.11
+#   for the shuffled control. It read the nine missed groups and about 45 others on the f. 49 images as transcribed.
+# - What the pass shows: the office's decipherment of 22 Sept / 3 Oct gives a table that reads a different despatch of
+#   three weeks earlier far better than chance. What it does not show: an independent solution (every value is
+#   drawn from the office's words), or anything beyond 112 groups. The print used for scoring descends from the
+#   same office's decipherment of the other copy of that despatch (stamped f. 42, not seen here).
+# To rerun: copy frozen/ somewhere, empty its test2/ folder, and run `python scripts/run_test2.py` there (about three
+# minutes, standard library only, deterministic).
