@@ -8,7 +8,7 @@ Humieres and Humières: none on these leads.
 ## Leads
 
 - **1204** (Martinique despatches, ANOM COL C8 A 51, 56, 58, 59): `partly_read` again, with new evidence. The three
-  pieces the block of 3 Nov 2026 had not viewed all carry the ministry's decipherment on the leaf.
+  pieces the block of 3 Nov 2026 had not viewed (for C8 A 51 f. 109, its cipher part) all carry the ministry's decipherment on the leaf.
 - **2730** (letters "avec chiffre" to Humières, BnF fr. 3329, 3409, 4717): `unvetted`, not digitised; field corrections
   below.
 
