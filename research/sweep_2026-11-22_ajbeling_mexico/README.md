@@ -25,13 +25,16 @@ by following a footnote, one from a printed book. No person has checked the tran
    cypher"; we found it on the film by paging the frames around Butler's papers of October 1830. One leaf, two pages,
    dated "Mexico 30 October 1830", "Dear Sir", unsigned. Plain English, with code numbers standing among the plain
    words from the second paragraph on: 55 numbers (43 different values, 1 to 614) and 4 signs. Nothing is written
-   over the numbers or in the margins; frames 230-232 and 234-236 carry no decipherment either. Transcribed twice
+   over the numbers or in the margins. Frames 232 and 234 were looked at and have no decipherment; frames 230-231
+   were seen only at a glance and 235-236 only in the catalog's machine text, which shows none. Transcribed twice
    from the image, the second time blind; the readings that still differ (215 or 315, 110 or 116, 527 or 327, 525 or
    523, the cut-off group) are listed in our notes and are not given here as settled.
-   - **Not the State Department code.** The State Department code of these years (1385 = the; Butler's own letters of
-     1834 use it) was tested once with a plan written first. Part 1, range: pass mark 25% of the numbers above 660;
-     result 0 of 54 (Butler's 1834 letters in that code: 65%). Part 2, three context probes and whether the runs read
-     as English: 0 of 3, no run reads. Both parts failed: the letter is not in that code. Nothing else was tried.
+   - **Not the State Department code.** A test against the State Department code of these years (1385 = the; Butler's
+     own letters of 1834 use it), with its plan and the table frozen before the run, missed. Three context probes fixed
+     before any look-up all failed (0 of 3), and no run of numbers reads as English. No number is above 660 (0 of
+     54), where 65% of the numbers in Butler's 1834 letters in that code are; that the range would not fit was known
+     when the plan was written, so only the probes are a real test. Nothing else was tried. The plan and result are
+     held in our local files, not in this folder.
    - **Who it was written to is not established.** The endorsement below the text reads "Mr Butler / To J. S. M— /
      my private Cypher", closed by a bracket. Its second line is an abbreviation of a few letters ending in a capital
      M and a dash, not a written-out name; our two readings agree on "J. S. M—" and neither is sure of the first two
