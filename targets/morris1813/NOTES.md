@@ -505,6 +505,21 @@ project has not looked at the three places on the frames for this rule, so the r
 counted as holes. Next step: look at the three places on the frames. If they are confirmed: No. 13 72 of 72, No. 24
 128 of 130 (0.985), 62 holes in 2,609 words (0.976); the class does not change (No. 17 stays at 0.941).
 
+**The three places looked at on the film (Andrew Beling, with AI agents, 22 Nov 2026; `beling/slips_2026-11-22/`).**
+The page has the transcription's number in all three places, on every copy: No. 13 has 510 and 146 on frame 0084
+(coded lines 1 and 2) and on the left leaf of frame 0088; No. 24 has 593 on frames 0220, 0205 and 0196. In 510 the last
+figure is a small oval like the 0s of 1190 and 1060 on the same line, where this hand's 6 has a tall stem (76, 766,
+1060); in 146 the last figure has that stem; in 593 the last figure is an open two-lobed 3 like the 3 of 813 next to it,
+not a closed 8. Second reading blind: a helper agent given only the crops and the question "what number is written"
+read 146 and 146, and 593 on all three copies; on the two tight crops of 510 it read 576 (0084) and 570 (0088), taking
+the middle stroke for a 7, and a second blind helper given the line strips (H and J), which keep the
+comparison figures, read 510 on both copies with high confidence. So 510 rests on one blind reading, of the line strips. On 0196 the clerk's decipherment begins "I am
+inform[ed]" over 101 and has nothing over 593.813.367 (view K). So these are the writer's
+slips, not misreadings here, and the one-digit rule applies: `sour{+ce}`, `vis{+it}`, `{+Si}r` in the readings.
+Recounted with `word_share.py`: No. 13 72 of 72 (1.000), No. 24 128 of 130 (0.985); the thirteen texts 2,609 words,
+62 holes, **0.976** (the twelve letters 2,259 words and 52 holes, frame 0039 by hand 350 and 10, unchanged). The class
+does not change: No. 17 stays at 0.941 and the target stays read in part.
+
 **Credit.** The observation is Brice Dudout's (PR #570). The image check, the count and the change are the
 project's. Andrew Beling's transcription of the sheet and WAINUT's block reversal are as before.
 
@@ -517,7 +532,7 @@ project's. Andrew Beling's transcription of the sheet and WAINUT's block reversa
 - 575.1060 in No. 19, an adverb before "guards" - blocker: open-codes; se with two strokes + ti gives no word, and the
   three copies agree.
 - Words read from context where Morris's group does not give the word (counted as holes) - blocker: open-codes;
-  1569 for United States (No. 24, No. 26), 593.813 for Sir (No. 24), 145 with a stroke for relative and
+  1569 for United States (No. 24, No. 26), 145 with a stroke for relative and
   131 for re (No. 18), 1457, 1040 and 780.400.35 (No. 18), 209.13, 1150 and 572.1101 (No. 19), 1351, 681, 1450, 1037,
   1167 and 1060.1046 (Cevallos note), 1159 (No. 17), and the inferred words of the PR #200 letters and frame 0039. The
   key sheet is complete for these numbers: they are slips or private usages of the writer, and each needs another
@@ -603,6 +618,8 @@ These are not gaps in the reading (12 Nov 2026):
 - `beling/letters/1814-11-20_Cevallos/` and `beling/letters/1814-06-21_No17/` (added at integration, 12 Nov 2026):
   `transcription.txt`, `line_by_line_decode.txt`, `reading.txt`; the first also `translation.txt`
 - `word_share.py`, `word_share.txt`: the share of coded words read in each letter reading, by one rule
+- `beling/slips_2026-11-22/` (22 Nov 2026): the image check of the three one-digit places, `README.md`,
+  `readings.tsv` with the frame links and pixel boxes the two blind readings were cut from (the crops are not committed)
 - `claiborne/` (folded in on 14 Nov 2026 from `targets/claiborne1806`, PR #564 and PR #581, Brice Dudout): `transcription.txt`
   (the groups of the three letters lined up with Wagner's words), `transcription_corrections.tsv` (three corrections seen on
   the images), `we028_check.py` (the code sheet under the block reversal, unchanged, against Wagner's words), `key.tsv` (the
