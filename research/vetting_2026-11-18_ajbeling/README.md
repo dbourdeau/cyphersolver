@@ -38,8 +38,8 @@ No word of the June letter is read.
 CONTRIBUTING asks that `catalogue.json` is not edited in a pull request, so this correction is only proposed
 (`saintmain_956.md`):
 
-- `date`: Green (1867) p. 309, item 18 prints **Jan. 18** (1593); the entry says 19 Jan. The 19th is the date of the
-  Parliament mentioned in the letter. Two of three readers read the day in the closing as 18, one preferred 28; the
+- `date`: Green (1867) p. 309, item 18 prints **Jan. 18** (1593); the entry says 19 Jan. The letter mentions a Parliament summoned
+  for 19 February, and Green's next item, no. 19, is dated 19 January. Two of three readers read the day in the closing as 18, one preferred 28; the
   docket on f. 40v has 1592/3.
 - `shelfmark`: TNA SP 12/244 ff. 39-40 (Gale scans 40-42; [record](https://link.gale.com/apps/doc/MC4304381018/SPOL)).
   The entry's `verify` field points to SP 12/243.
