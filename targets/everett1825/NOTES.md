@@ -201,4 +201,9 @@ A verification and a source find, not a new reading; details and files in `belin
   cri, which 1057 does not give either) and 1388 ("then" for 1383 "than", a whole-word group, outside the one-digit
   rule) the group on the film does not give the word. No word of either reading changes; the transcription files
   were not edited.
+- Of the 8, 628 and 1564 rest on one model reader; at 845 and 880 the first digit is ambiguous (reader 1 gave 345
+  and 380, reader 2 845 and 880, each with the other as alternative), though Dudout's 843 and 330 are excluded
+  either way. 16 of the 27 groups rest on one reader.
+- The transcription of the period decipherment (`beling/period_decipherment.txt`) has one reader; no second
+  reader has checked it.
 
