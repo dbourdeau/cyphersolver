@@ -1,0 +1,236 @@
+{
+ "schema_version": 1,
+ "target": "wellington1922",
+ "title": "'J. W. Wellington' to 'José González' (Félix Díaz), n.d. [1922?] (catalogue 1445, CEHM-Carso DCXXI.6.588.1): the 60 cipher runs of folios 2-3 not printed by Narváez, read in part with his key 313",
+ "documents": [
+  {
+   "id": "DCXXI.6.588.1",
+   "read": "read in part",
+   "shelfmark": "CEHM-Carso, Fondo DCXXI Archivo de Félix Díaz, DCXXI.6.588.1",
+   "date": "unknown",
+   "year": 1922,
+   "country": "Mexico",
+   "route": "'J. W. Wellington' (a felicista agent of the Puebla junta) -> 'José González', New Orleans (Félix Díaz's cover name in this fondo)",
+   "places": {
+    "from": "probably Puebla (the junta named in the letter)",
+    "to": "New Orleans"
+   },
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "pages": 3,
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "Two words in ink over two runs of folio 2 ('Contingentes', 'Republica') and one pencil word in the margin of folio 2 ('Inminencia', the decipherment of run f2.12). No other decipherment. Narváez (2019, p. 369) prints his decipherment of folio 2 paragraphs 2-3 and names folio 1's two runs."
+   },
+   "length": {
+    "tokens": 1605,
+    "distinct": 27,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_DCXXI.6.588.1.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM-Carso viewer images DCXXI.6.588.1.0004.jpg (folio 2) and .0005.jpg (folio 3)",
+    "image_quality": "fair",
+    "notes": "Folio 2 clear; folio 3 faint (pale typing, watermark over the right margin, ink loops of the signature), read on contrast-stretched crops. Pass 1 and a blind pass 2 by separate AI agents: folio 2 agrees on every letter; folio 3 differs at about ten signs, each settled in NOTES.md (Transcription doubts)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "polyalphabetic"
+  ],
+  "summary": "Gronsfeld-type shift over the 27-letter Spanish alphabet (A-N, Ñ, O-Z) with the key 313 (cipher = plain +3, +1, +3, repeating), the cycle starting at the first letter of each run and running on through it; spaces dropped inside a run; runs typed in capitals inside clear Spanish.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 27,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "none",
+  "notes": "Key published by Narváez (2019, pp. 367-368; 2015, pp. 125-126). Typing slips: about a dozen single wrong letters, one swap, and a few runs where the cycle is lost."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "partial",
+   "where": "Narváez 2015 pp. 126-127 and 2019 pp. 364-369: key, folio 1's two runs (printed as 'Juárez Escalante'; the cipher gives Suárez), folio 2 paragraphs 2-3; he says the rest decode with 313 and prints none of it.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "published key",
+   "cleartext context"
+  ],
+  "attack": "published key",
+  "human_role": "Andrew Beling set the task and the rules (plan frozen before decoding, blind second transcription, strict counting); AI agents transcribed, decoded, read and counted. No human palaeographer checked the text.",
+  "tools": [
+   "CEHM-Carso viewer images",
+   "scripts in this folder (decryption, random-key control, word count)"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic), viewing the images; a second instance for the blind transcription"
+  ],
+  "first_date": "2026-11-23",
+  "last_date": "2026-11-23"
+ },
+ "solution": [
+  {
+   "date": "2026-11-23",
+   "kind": "literature search",
+   "what": "Narváez 2019 pp. 364-369 read from photographs of the book: key 313, fig. 6 (folio 2), decipherment of folio 2 paragraphs 2-3 printed, the rest left to the reader. Repository checked: no target, PR or issue on DCXXI.6.588.1 (PR #512 is the Sánchez letter).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "access",
+   "what": "Five images fetched from visor.cehm.org.mx (plain http, one at a time, no login).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "what": "60 runs (folio 2 paragraphs 4-7, all of folio 3) transcribed by one agent, then blind by a second agent from its own crops; disagreements on folio 3 only, settled on the image (NOTES.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Plan frozen before decoding (SHA-256 e02991a7...): key 313 unchanged, cycle per run, 1,000 random 3-digit keys as controls. Run once.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "what": "Final transcription: key 313 scores -2.444 (Spanish bigrams); it ties only with 3-1-3 itself drawn among the 1,000 random keys; best other key 3-1-7 at -3.617; controls' mean -5.353. Plan, hash, script and output were written within nine seconds, so the plan's priority rests on our word; the key and rule are Narváez's published ones.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "what": "Runs divided into words in their clear sentences, every departure marked; scripts/count_words.py checks the marks against the decryption: 247 clean words of an estimated 296 word places (0.834).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "what": "Independent review by a separate AI agent: blind transcription of three runs (folios 1-3) and blind decoding agree letter for letter; it found the decoder skipped unsure signs without advancing the key (fixed: f2.19's last 17 letters became a hole), that folio 1's run reads SUAREZ (Narváez prints Juárez), and readings of slipped runs with a shifted cycle (reported post hoc, not counted).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "what": "POST HOC, not counted: one shift of the 3-1-3 cycle per run reads f3.10 (las personas que integran nuestra junta), f3.13 (war names J. Siliceo, F. Sánchez, Miguel Altamirano, Luis Mora; 'F. Sánchez' is the signature of sanchez1922) and part of f3.20.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-23",
+   "verdict": "not applicable",
+   "notes": "A Gronsfeld-type key is not a letter-to-value table; the key is published (Narváez) and applied unchanged under a frozen plan, with a random-key control."
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Narváez's published key 313 for this letter (2015 pp. 126-127; 2019 pp. 364-369), applied unchanged to the runs he did not print; this completes his reading.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.834,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "247 clean words of an estimated 296 word places in the 60 runs (scripts/count_words.py): each unread stretch's words estimated from its letters (5.36 letters per clean word); 275 places, 0.898, if each stretch counts as one word. A word with any repaired, supplied or doubtful letter is a hole.",
+  "verification": [
+   "matched control",
+   "contemporary decipherment",
+   "historical consistency"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "narvaez",
+    "role": "key or decipherment used",
+    "note": "key 313 for this letter, and his decipherment of folio 2 paragraphs 2-3 and folio 1's two runs (not repeated here)",
+    "date": "2019",
+    "source": "R. Narváez, Criptografía diplomática, política y militar en México (1813-1926) (Mexico, 2019), pp. 364-369, fig. 6; earlier Documenta & Instrumenta 13 (2015), pp. 125-126"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "the 60 runs of folios 2-3 from the CEHM images, two passes (second blind), with AI agents",
+    "date": "2026-11-23",
+    "source": "pull request (this folder)"
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "note": "the 60 runs decrypted with Narváez's key and read, with AI agents",
+    "date": "2026-11-23",
+    "source": "pull request (this folder)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "DCXXI.6.588.1",
+    "label": "'J. W. Wellington' to 'José González', n.d.: 60 cipher runs of folios 2-3",
+    "transcription": "transcription_DCXXI.6.588.1.txt",
+    "decryption": "decryption_DCXXI.6.588.1.txt",
+    "reading": "reading_DCXXI.6.588.1.md",
+    "translation": "translation_DCXXI.6.588.1.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "A felicista agent reports to Félix Díaz: fear of discouragement for lack of a united force; General Mallén, serving Obregón, has turned Torruco against Cástulo Pérez; Federico Córdoba falsely claims to act for Peláez and Díaz; a movement is ready throughout the state; the Puebla junta's officers and members are named (Lic. José María Camacho, president; Fidencio E. López; Miguel Márquez Galindo; Dr. Alberto Moreno; Machorro, Alvarado, Osorio, García, Pomposo Bonilla); Lic. Ricardo Suárez Escalante (not 'Juárez' as printed by Narváez) is to be called 'Ricardo Lobato'.",
+    "note": "247 clean words of an estimated 296 word places in the 60 runs (holes: 11 one-letter slips, 'que es', 'ultimas', 'tenemos' chosen with the decode, 4 words with a sign on which the blind second pass differs, 5 unidentified words, 6 stretches with no words). Further runs read only post hoc with a shift in the key cycle (NOTES.md), not counted. Narváez's printed part is not counted. Correction: folio 1's run decodes SUAREZ ESCALANTE, not 'Juárez' as Narváez prints.",
+    "read_share": 0.834
+   }
+  ],
+  "key_file": [
+   "key.txt"
+  ],
+  "gaps": [
+   {
+    "item": "f3.07 after 'ESTAR UD. EN' (8 letters)",
+    "blocker": "illegible",
+    "detail": "Under the watermark and an overtyping."
+   },
+   {
+    "item": "f2.19 after the overtyped sign (17 letters), f3.10 after 'LOS NOMBRES' (37), f3.13 the war names (41), f3.20 after 'POMPOSO' (43)",
+    "blocker": "not-attempted",
+    "detail": "Slips in the key cycle; read post hoc with a one-place shift (NOTES.md), not counted until a frozen test."
+   },
+   {
+    "item": "[?ARMORA] (f3.11), [?CELA] (f3.22)",
+    "blocker": "too-short",
+    "detail": "One occurrence each."
+   },
+   {
+    "item": "[?PARECER], [?EN], [?DOCUMENTOS], [?TESORERO]",
+    "blocker": "illegible",
+    "detail": "Faint signs on which the two transcriptions differ."
+   },
+   {
+    "item": "Faint letters of folio 3",
+    "blocker": "needs-physical-access",
+    "detail": "No human check; a better image or the original would settle them."
+   }
+  ]
+ }
+}
