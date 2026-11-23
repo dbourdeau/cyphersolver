@@ -63,6 +63,8 @@ All work was done on 23 Nov 2026 by AI agents (Claude Opus 5.5) run by Andrew Be
 8. **Key construction** (later on 23 Nov): see "How the key was made" above. Plan hashed before the search; the plan and search script stay outside the package because they also contain tables printed in the book; the summary with controls is `work/runs/fold_test.json`.
 9. **Fourth blind reading of the doubtful letters** (later on 23 Nov, `review/blind_reading_doubtful_letters.md`): a helper agent given only a crop of the photograph read every group and closed in on the doubtful ones. It adds new doubts at positions 7, 29, 83, 129, 152, 208 and 220 (listed below); at each the reading used is that of the three earlier transcriptions, which agree. It reads position 241 as F ("probable", alternative P) and 243 as X.
 
+10. **Statistical key validation: prepared, not run.** `validation.tsv` aligns all 246 cipher letters with the reading. The 13 marked letters carry the reading, and the extra N in "falsas" counts as a null. The repository's validator (`python docs/_validate.py eaglepass1917`) needs the `es-modern` model, which builds from Project Gutenberg texts. They are not cached on our machine, Gutenberg returned HTTP 503 at the first try, and fetching from it was outside this session's permitted sites. So the test is still owed. It does apply here: a one-alphabet key over 246 letters is within its range. It has not been marked not applicable.
+
 To re-run: `python3 -I targets/eaglepass1917/decrypt.py` from the repository root rewrites `decryption.txt` (standard library only). For a doubtful letter, use for example `--alt 121=N`. The solver scripts in `work/scripts/` need numpy and point to local paths on our machine (the corpus is not committed). They are kept as the record of the runs.
 
 ## Reading
@@ -130,15 +132,31 @@ The repository's key replay (`python docs/_replay.py eaglepass1917`, through `re
 
 ## Remaining gaps
 
-- The archive's own image of leg. 507, exp. 6 is not seen. Every letter here comes from a halftone in a printed book photographed by phone. The reading should be checked against the original, especially positions 40, 121 and 241. This is the open step.
-- The original telegram of 16 April and the second key list (with "clave 31") are in the same file and not seen.
-- Cipher H, J and K: values predicted by the TIRANO fold only (k, j, h); no occurrence checks them.
-- The link between "clave treintaiuno" and TIRANO is not known.
-- US intercepts of 1917 embassy-consular traffic (NARA M1194, M1085) were not searched and could hold a contemporary decipherment.
+One line per piece that is not read letter for letter from the key, with its blocker.
+
+- Position 40, "por" (overtyped letter) - blocker: needs-physical-access; the letter is typed over, and whether the sender corrected it can only be seen on the archive original (AHGE-SRE, AEMEUA leg. 507, exp. 6); the book prints a halftone.
+- Positions 121, 129 and 241 and the other doubtful letters listed under Transcription doubts - blocker: needs-physical-access; F/P, M/N and W/F are at the limit of the book's halftone, so a sharper photograph of the book cannot settle them; only the archive's image can.
+- The nine sender's slips (presentar, presidente, necesito, periodistas, que, falsas, noticias, alemanes, comprobarlo) - blocker: needs-physical-access; they read from the sense and are clear on all four readings of the photograph; only the original can confirm that the sender typed them so, rather than the halftone misleading us.
+- How "clave treintaiuno" leads to the keyword TIRANO - blocker: needs-physical-access; the second key list, which may hold TIRANO as no. 31, is in the same file and is not printed.
+
+Not gaps in the reading, but open: cipher H, J and K never occur, so their values (k, j, h) are predictions from the TIRANO construction only.
 
 ## Escalation
 
-- Ask AHGE-SRE for images of leg. 507, exp. 6 (this telegram, the 16 April original, the two key lists, the consuls' complaints and the Lobo telegrams).
+- [x] siblings: the other items of the same file that the book prints were opened from our photographs. Lobo to Bonillas (fig. 14, pull request 902) is a different system (index of coincidence 0.047; this key gives no Spanish). Arredondo's reply (fig. 11) is in clear. The 16 April original, the consuls' complaints and the two key lists are in leg. 507, exp. 6 and need the archive. US intercepts of 1917 embassy-consular traffic (NARA M1194, M1085) were not searched.
+- [x] clear-pages: checked the clear heading and address on the sheet, and the book's pp. 338-342 (the consuls' complaints, figs. 11-13). None holds a decipherment, and Narváez prints no reading.
+- [x] known-keys: tried every key we hold for this series and decade.
+  - The Murciélago square with list word 31 (Escultor), under a frozen plan: missed. Word 82 (Rodín) does not fit either, since the index of coincidence is flat.
+  - The 1915 Clave Garduño (p. 311): only one pair is shared, but the table is built the same way from the keyword GARDUÑO.
+  - Seguín's 1916 plana (fig. 7, nine rows): no row matches.
+  - Every `key*.tsv` in the repository at 7d9b91fb8 was scanned for reciprocal letter keys: none is a Mexican key of 1913-1917.
+- [x] print: searched Narváez 2019 (our OCR of pp. 311-345 and the photographs of pp. 338-345) and found no reading. The repository's catalogue, leads and `known.py` have no entry. Cryptiana and Narváez's 2025 *Historia Mexicana* article were checked, and web searches for the telegram's phrases found nothing (first review, 23 Nov). Lasry's list was not checked.
+- [x] key-rebuild: the key was extended from what reads. The rare letters D, M and N were set by the reciprocal pairing. The whole alphabet was then rebuilt from the keyword construction (TIRANO folded), which predicts H, J and K (`work/scripts/fold_check.py`, `work/runs/fold_test.json`).
+- [x] retry: every hole and doubtful letter was re-read in four readings of the photograph (two blind ones among them) and regraded with the full key on 23 Nov.
+  - No hole closes.
+  - K at 243 would give h, which makes no word, so X (= a) is kept.
+  - The counts under the alternative readings are given above.
+- Next step outside this session: ask AHGE-SRE for images of leg. 507, exp. 6 (this telegram, the 16 April original, the two key lists, the consuls' complaints and the Lobo telegrams).
 
 ## Files
 
