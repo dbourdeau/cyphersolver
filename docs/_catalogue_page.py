@@ -569,20 +569,53 @@ def summary_html(E, keys, n_gone, prs):
             f'Before starting, read the entry&rsquo;s page and the work still in review: {prl}</div>\n</div>')
 
 
+WWI_FEATURES = {
+    # Catalogue ID: (card title, NARA T1022 roll, frame of the cipher crop).
+    3095: ('ALACHI double transposition', 580, 669),
+    3147: ('Verkehrsbuch ten-letter telegram to Bruges', 1248, 513),
+    3152: ('Verkehrsbuch telephone message on censorship', 1109, 916),
+    3154: ('Boy-Ed private code from New York', 686, 607),
+    3155: ('AFB naval wireless telegram', 1249, 502),
+}
+
+
 def featured_html(E, keys, n=10):
-    """The strip above the list: the highest-priority desk-ready ciphers that have a picture, each a card."""
-    pool = sorted(((e, entry_image(e)) for e, k in zip(E, keys) if in_view(k, 'try') and priority(e) >= 0), key=lambda x: (-priority(x[0]), x[0]['id']))
-    pick = [(e, g) for e, g in pool if g][:n]
-    if len(pick) < 4: return ''
-    def card(e, g):
-        r = RP.info(RP.of(e))
-        return (f'<a class="fc" href="{entry_href(e)}"><span class="fi"><img src="{g[0]}" alt="" loading="lazy"></span>'
-                f'<span class="fm"><b>{priority(e):.1f}</b><span>{esc(year_label(e))}</span><span class="badge {e["cls"]}">{e["cls"]}</span></span>'
-                f'<span class="ft">{esc(e["title"])}</span><span class="fa">{esc(r.get("short") or r["name"])} · no. {e["id"]}</span></a>')
-    return (f'<h2 id="start">{len(pick)} to start with</h2>\n'
-            f'<p class="vdesc">The highest-priority ciphers that can be tried from a desk and already have a page photographed here. '
-            f'Each picture is a crop from the work on that cipher or on a piece of the same series; its source is credited on the linked pages.</p>\n'
-            f'<div class="fstrip">{"".join(card(e, g) for e, g in pick)}</div>\n')
+    """Pair WWI Repository cases with the highest-priority photographed cases available online."""
+    pool = sorted((e for e, k in zip(E, keys) if in_view(k, 'try') and is_open(e) and priority(e) >= 0),
+                  key=lambda e: (-priority(e), e['id']))
+    by_id = {e['id']: e for e in pool if e.get('ww1')}
+    featured = [by_id[i] for i in WWI_FEATURES if i in by_id]
+    featured = featured[:n // 2]
+    local = [(e, image) for e in pool if not e.get('ww1') and (image := entry_image(e))]
+    local = local[:n - len(featured)]
+    count = len(featured) + len(local)
+    if count < 4: return ''
+
+    def card(e, image=None):
+        if e.get('ww1'):
+            title, roll, frame = WWI_FEATURES[e['id']]
+            image_path = f'ww1-featured/{e["id"]}.webp'
+            archive = f'NARA RG 242, T1022 roll {roll}, frame {frame}'
+            source = f'NARA {roll}/{frame} · no. {e["id"]}'
+            alt = f'Cipher detail from {archive}'
+        else:
+            r = RP.info(RP.of(e))
+            title, image_path, archive, alt = e['title'], image[0], '', ''
+            source = f'{r.get("short") or r["name"]} · no. {e["id"]}'
+        credit = f' title="{html.escape(archive)}"' if archive else ''
+        lead = f'<span class="fi"><img src="{image_path}" alt="{html.escape(alt)}"{credit} loading="lazy"></span>'
+        href = html.escape(entry_href(e), quote=True)
+        badge = f'<span class="badge {e["cls"]}">{e["cls"]}</span>' if e['cls'] else ''
+        return (f'<a class="fc" href="{href}">{lead}'
+                f'<span class="fm"><b>{priority(e):.1f}</b><span>{esc(year_label(e))}</span>{badge}</span>'
+                f'<span class="ft">{esc(title)}</span><span class="fa">{esc(source)}</span></a>')
+
+    source_intro = ('Open a case from <a href="https://www.ww1ciphers.com/">George Lasry&rsquo;s WWI Cipher Repository</a> '
+                    'or a photographed cipher from our catalogue.') if featured else 'Open a photographed cipher from our catalogue.'
+    cards = ''.join(card(e) for e in featured) + ''.join(card(e, image) for e, image in local)
+    return (f'<h2 id="start">{count} to start with</h2>\n'
+            f'<p class="vdesc">{source_intro} All can be tried from a desk.</p>\n'
+            f'<div class="fstrip">{cards}</div>\n')
 
 
 # archive towns the gazetteer does not have, [lat, lon] (approximate, for a ring on the map)
@@ -879,7 +912,8 @@ def build_html():
   <p class="kicker">{min(years)}–{max(years)} · {len(E)} ciphers · {len(gone)} moved out to <a href="writeups.html">write-ups</a> · entries last checked {fmt_day(AS_OF)}</p>
   <h1>The Unsolved <span class="stk">Catalogue<a class="sticker" href="#list" title="Pick a cipher below"><span><b>Help<br>Solve!</b><small>pick one below</small></span></a></span></h1>
   <p class="sub">Historical cipher letters and messages that nobody has read. Pick a row to open its case page for the sources and what is known.</p>
-  <p><a href="#v=try&amp;source=ww1" data-go="try" data-source="ww1">Browse WWI Cipher Repository entries</a></p>
+  <p><a href="https://www.ww1ciphers.com/"><strong>George Lasry&rsquo;s WWI Cipher Repository</strong></a> &middot;
+  <a href="#v=try&amp;source=ww1" data-go="try" data-source="ww1">Browse its entries in our catalogue</a></p>
   <ol class="steps"><li><b>1</b>pick a row</li><li><b>2</b>open its page</li><li><b>3</b>point your agent at the URL</li><li><b>4</b>send back what it finds</li><li class="jsonly"><button type="button" class="deal" id="deal" title="Open one of the ciphers that can be tried from a desk, picked at random">Deal me a cipher</button></li></ol>
 {summary_html(E, keys, len(gone), prs)}
 </section>
