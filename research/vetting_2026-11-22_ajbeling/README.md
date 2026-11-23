@@ -7,12 +7,12 @@ Humieres and Humières: none on these leads.
 
 ## Leads
 
-- **1204** (Martinique despatches, ANOM COL C8 A 51, 56, 58, 59): `partly_read` again, with new evidence. The three
-  pieces the block of 3 Nov 2026 had not viewed (for C8 A 51 f. 109, its cipher part) all carry the ministry's decipherment on the leaf.
+- **1204** (Martinique despatches, ANOM COL C8 A 51, 56, 58, 59): `read`. Every piece the lead names carries the
+  ministry's decipherment on the leaf, apart from the enclosure C8 A 56 f. 57, which `targets/champigny1744` reads.
 - **2730** (letters "avec chiffre" to Humières, BnF fr. 3329, 3409, 4717): `unvetted`, not digitised; field corrections
   below.
 
-Count: partly_read 1, unvetted 1.
+Count: read 1, unvetted 1.
 
 ## 1204
 
@@ -23,13 +23,21 @@ Seen on the ANOM page images, 22 Nov 2026 (IIIF, one request every seven seconds
 | C8 A 51 f. 109 | ark:/61561/zn401hgefcg | Fort-Royal, 21 Dec 1740, Champigny, duplicate | ff. 109v-113r, about 100-110 lines, clear passages between | above every line (all 20 lines of f. 110r checked) |
 | C8 A 58 f. 33 | ark:/61561/zn401uptqh | Martinique, 10 Mar 1748, Caylus, duplicate | ff. 33r-34r, about 90 lines | in the left margin, continued below the signature and onto f. 34v |
 | C8 A 59 f. 158 | ark:/61561/zn401rsnkma | Fort-Royal, 14 Nov 1751, Bompar and Hurson, duplicate | ff. 158r-161r, about 140 lines | above every line (all 24 lines of f. 159v checked); a second hand rewrites a few glosses |
+| C8 A 56 f. 54 | ark:/61561/zn401utsvwe | Fort-Royal, 17 Aug 1744, Champigny | ff. 54r-56v, about 100 lines; enclosure f. 57-57v, 381 groups | above every line of the letter; the enclosure f. 57 is bare (see below) |
+| C8 A 56 f. 73 | ark:/61561/zn401c104yw | Fort-Royal, 16 Nov 1744, Champigny, duplicate | ff. 73r-77v, about 150 lines | above every line (all 13 lines of f. 75v checked) |
+| C8 A 56 f. 85 | ark:/61561/zn401zyx1xd | 24 Nov 1744, Champigny | ff. 85r-88r, clear and code mixed, about 80 lines | above every line (ff. 87r and 87v checked) |
+| C8 A 56 f. 253 | ark:/61561/zn401mllfgb | 6 Feb 1745, Champigny | ff. 253r-255r, about 75 lines | above every line (f. 254r checked) |
 
 Line counts are by eye from contact sheets. Nothing was transcribed: a period decipherment is on each leaf.
 
-With the five pieces seen on 3 Nov and those attested by `targets/champigny1744`, every piece the lead names has been
-read at the time or since, except **C8 A 56 ff. 73, 85 and 253**: neither the 3 Nov block nor `champigny1744` records
-looking at them. The calendar's "part of this letter has not been decrypted" for f. 54 is its enclosure f. 57, which
-`champigny1744` reads. If ff. 73, 85 and 253 are glossed too, 1204 can close as read at the time.
+Images FRANOM23_C8A_051_0204-0214, _058_0059-0066, _059_0268-0279 and _056_0096-0107, 0133-0146, 0157-0166,
+0463-0471. Image _056_0097 (f. 54r) is damaged on the server: the full image returns an error and only its right half
+could be fetched, with black blocks; every line it shows is glossed.
+
+The calendar's "part of this letter has not been decrypted" for f. 54 is its enclosure, the bare copy of Knowles's
+notice on f. 57-57v (48 lines, 381 groups), which `champigny1744` reads. The letter ff. 54-56v itself is glossed. With
+the five pieces seen on 3 Nov and those attested by `champigny1744`, every piece the lead names is now read at the time
+or since, so 1204 closes as `read`.
 
 Two of the dates sit outside the war the lead's title names: f. 109 is of 1740 and f. 158 of 1751; only C8 A 58 f. 33
 (March 1748) falls in King George's War.
