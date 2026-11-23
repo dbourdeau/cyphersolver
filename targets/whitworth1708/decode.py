@@ -49,7 +49,7 @@ for sid, place, groups, printed in st:
     lines.append(f'S{int(sid):02d} ({place})  {groups}\n   key:   {dec}\n   1886:  {printed}\n')
 text = '\n'.join(lines)
 if '--write' in sys.argv:
-    open(P('decryption_1708-09-01.txt'), 'w', encoding='utf-8').write(text)
+    open(P('decryption_1708-09-01.txt'), 'w', encoding='utf-8', newline='\n').write(text)
 else:
     assert open(P('decryption_1708-09-01.txt'), encoding='utf-8').read() == text, 'decryption file is not what the key gives'
 print(f'1708-09-01: {len(st)} coded stretches, {n_all} numbers, {n_in} in the key: ok')

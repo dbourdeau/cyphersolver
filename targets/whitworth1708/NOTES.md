@@ -40,8 +40,8 @@ Each pair below was confirmed on the pages (both numbers are written on them).
 Catalogue 863's check is to "match SP 91/5/298 with SP 91/5/294". That match is done: old f. 298 (stamped 112) is the bare duplicate
 of the private letter whose deciphered original is old f. 294 (stamped 110), and old f. 300 is likewise the bare
 duplicate of old f. 274. The duplicate's groups and the original's agree in sequence apart from scattered digits
-(`compare/`). The seven other items of catalogue 863, in SP 91/6 (1709), were not seen (Remaining gaps), so the entry
-as a whole is not closed by this folder.
+(`compare/`). The seven other items of catalogue 863, in SP 91/6 (1709), were seen only after this folder was first
+offered, on 22-23 November 2026; nothing from them is in this folder (Remaining gaps).
 
 ## 2. Sources and images
 
@@ -113,6 +113,9 @@ The floor for a valid test was 40 covered groups, set in the plan, because the w
 test's floor of 100 could not be met on it. A pass here is a statement about 78 groups.
 
 That the plan predates the run rests on the hashes and clock times in these files. There is no public timestamp.
+The held-out letter was first opened before the plan: its page images were saved on 21 November 2026 at 09:35 EST, and
+its two blind transcriptions were made on 22 November between 21:08 and 21:14 EST (they are among the hashed inputs).
+What came after the freeze was the first use of any key value on it.
 
 The nine misses, looked at afterwards: four are the print's spelling (warned for war-n-d, engage, Moscovites,
 humored); one is word order (the code has "... and persons", the print "persons and effects"); four are the key's or
@@ -192,7 +195,7 @@ against the two blind readings of the bare duplicates:
 
 - the 34 groups (33 numbers) of the duplicate of 1/12 Sept 1708 that are not in the key, and with them 30 of its 77 coded words - blocker: open-codes; the original of that despatch (stamped f. 42) should carry the office's words for every one of them, and 19 other 1708 originals in the volume are catalogued "partly in cipher"; none of these was seen
 - 236 (post, should be st), and 219, 36 and 505, which missed on the held-out letter - blocker: open-codes; more glossed occurrences would settle them
-- the other items of catalogue 863, in SP 91/6: catalogue ff. 9, 99, 144, 210, 213, 222, 225 (1709), "partly in undecoded cipher" - blocker: not-attempted; not seen. The Sbornik prints despatches of the same dates (Nos. 45, 60, 70, 81, 83-84); No. 81 (29 July / 9 Aug 1709) opens with an ellipsis before the words "Not to give you the trouble of farther decyphering", so the opening of that despatch may be in code and unprinted
+- the other items of catalogue 863, in SP 91/6: catalogue ff. 9, 99, 144, 210, 213, 222, 225 (1709): the key was not tested on them or extended from them - blocker: not-attempted; seen on State Papers Online on 22-23 November 2026, after this folder was first offered, by AI agents; nothing from them is in this folder. On one AI reading, with the groups counted once: each item is a bare copy of a despatch whose other copy in the same volume carries the office's words above the groups (catalogue f. 213, stamped f. 211, is itself that deciphered copy), and the Sbornik prints the despatches (Nos. 45, 60, 70-71, 81, 83). Correction: this line said the opening of No. 81 (29 July / 9 Aug 1709), which the print replaces with an ellipsis, might be in code and unprinted. It is not: on stamped f. 211 the opening is in clear, and the 21 coded groups carry the office's words, which are the words No. 81 prints (two AI readings of that page)
 - no person has read any group or word against the images - blocker: not-attempted; all readings are AI readings, the checks included
 - the interlined originals were typed once - blocker: not-attempted; their groups were cross-checked against the duplicates, their words only against the print
 

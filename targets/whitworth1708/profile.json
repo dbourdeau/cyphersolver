@@ -279,7 +279,7 @@
       "tokens": 112,
       "notes": "Contributor's pre-registered held-out test (not docs/_validate.py), by AI agents. Plan and every input hashed before the run (frozen/plans/HASHES_2.txt); table frozen before the held-out file was opened; one measurement: 69 of 78 covered groups fit the 1886 print (0.885) against 0.17 for the 99th percentile of 1,000 shuffled tables; marks fixed in advance (at least 40 covered groups, H >= 0.80, margin >= 0.30). A small sample: 112 held-out groups, 78 covered. A first test on 21 Nov 2026 (table from the print alone) was void by its own rule, 87 covered groups where 100 were required (frozen/test1_void/). That the plans predate the runs rests on local hashes and clock times only. Key not changed after the measurement, although one value is now known to be wrong (236)."
     },
-    "provenance": "mixed",
+    "provenance": "contributed",
     "credits": [
       {
         "who": "contemporary",
@@ -313,7 +313,7 @@
       },
       {
         "who": "ajbeling",
-        "role": "verification",
+        "role": "solution",
         "note": "Andrew Beling, with AI agents: a table of 246 numbers of the code rebuilt from the office's decipherment and tested once on a held-out duplicate, 0.885 against 0.17 (validation.txt). A confirmation of the 1708 decipherment, not an independent solution",
         "date": "2026-11-22"
       }
@@ -330,9 +330,9 @@
         "detail": "kept as frozen and marked in key.tsv; more glossed occurrences would settle them"
       },
       {
-        "item": "the SP 91/6 items of catalogue 863 (catalogue ff. 9, 99, 144, 210, 213, 222, 225; 1709), 'partly in undecoded cipher'",
+        "item": "the SP 91/6 items of catalogue 863 (catalogue ff. 9, 99, 144, 210, 213, 222, 225; 1709): the key was not tested on them or extended from them",
         "blocker": "not-attempted",
-        "detail": "not seen. Sbornik vol. 50 prints despatches of the same dates (Nos. 45, 60, 70, 81, 83-84); No. 81 (29 July / 9 Aug 1709) opens with an ellipsis before 'Not to give you the trouble of farther decyphering', so its opening may be in code and unprinted"
+        "detail": "seen on State Papers Online (licensed) on 22-23 Nov 2026, after this folder was first offered, by AI agents; nothing from them is in this folder. On one AI reading, with the groups counted once: each item is a bare copy of a despatch whose other copy in the same volume carries the office's words above the groups (catalogue f. 213, stamped f. 211, is itself that deciphered copy), and Sbornik vol. 50 prints the despatches (Nos. 45, 60, 70-71, 81, 83). Correction: this entry said the opening of No. 81 (29 July / 9 Aug 1709), which the print replaces with an ellipsis, might be in code and unprinted. It is not: on stamped f. 211 the opening is in clear, and the 21 coded groups carry the office's words, which are the words No. 81 prints (two AI readings of that page)"
       },
       {
         "item": "no person has read any group or word against the images; the two originals were typed once",
@@ -369,6 +369,8 @@
         "language": "en",
         "state": "decoded, not read",
         "read_share": 0.61,
+        "cipher_words": 77,
+        "holes": 30,
         "cipher_markup": "⟨⟩",
         "summary": "In the coded passages Whitworth says he has warned the English merchants not to engage too far on credit, since if the King of Sweden breaks in he cannot see where the Russians would raise money; their persons and effects will be safe at Archangel; the end of the war may be best observed by the ministers who follow that king; and on the affront to the ambassador he hopes to stop all by recrimination without seeming too much concerned (from the 1886 print; with the key alone 47 of the 77 coded words come out whole).",
         "note": "decryption_1708-09-01.txt is key.tsv applied group by group, unedited, with the 1886 print's words for each stretch beside it and labelled as the print's. The reading marks every word the key does not give whole as a hole filled from the print."
