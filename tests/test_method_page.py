@@ -20,11 +20,21 @@ def profile(texts=(), **outcome):
 
 class Kinds(unittest.TestCase):
     def test_classes(self):
-        self.assertEqual(MP.kind_of('Claude Opus 5.5 (for Brice Dudout)'), 'model')
-        self.assertEqual(MP.kind_of('Brice Dudout (with Claude)'), 'person+model')
-        self.assertEqual(MP.kind_of('Andrew Beling'), 'person')
-        self.assertEqual(MP.kind_of("project (the project's verification pass)"), 'unclear')
-        self.assertEqual(MP.kind_of('integration pass (a model session, not a person)'), 'model')
+        # one classifier: docs/_reader_kind.py, called through kind_of(review)
+        by = lambda b, **kw: dict({'grade': 'A', 'by': b, 'date': '2026-11-16'}, **kw)
+        self.assertEqual(MP.kind_of(by('Claude Opus 5.5 (for Brice Dudout)')), 'model')
+        self.assertEqual(MP.kind_of(by('Brice Dudout (with Claude)')), 'person+model')
+        self.assertEqual(MP.kind_of(by('Andrew Beling')), 'person')
+        self.assertEqual(MP.kind_of(by("project (the project's verification pass)")), 'unclear')
+        self.assertEqual(MP.kind_of(by('integration pass (a model session, not a person)')), 'model')
+        # a reader_kind written in the record wins over the rule
+        self.assertEqual(MP.kind_of(by('Andrew Beling', reader_kind='person assisted by model')), 'person+model')
+
+    def test_same_classifier_as_reader_kind(self):
+        import _reader_kind as RK
+        for b in ('Claude Opus 5.5', 'Brice Dudout (with Claude)', 'Andrew Beling', 'project (x)', "Rundata (Uppsala University)"):
+            r = {'by': b}
+            self.assertEqual(MP.kind_of(r), MP.KIND[RK.kind_of(r)])
 
     def test_edition(self):
         self.assertTrue(MP.EDITION.search('Rundata (Uppsala University)'))
@@ -164,20 +174,6 @@ class SignLevel(unittest.TestCase):
         self.assertFalse(MP.sign_level(dict(ok, controls=1, controls_passed=1)))
         self.assertFalse(MP.sign_level({'signs_checked': 'unknown', 'controls': 2, 'controls_passed': 2}))
 
-    def test_below_level(self):
-        # a sheet whose counts reach the floor but whose record says why it is below the level (review of #789,
-        # 19 Nov 2026: a rule written after the answers) does not meet it
-        ok = {'signs_checked': 13, 'controls': 2, 'controls_passed': 2, 'checker': 'Named reader',
-              'rule': 'Frozen before answers', 'rule_hash': 'a' * 64}
-        self.assertTrue(MP.sign_level(ok))
-        self.assertFalse(MP.sign_level(dict(ok, below_level='integration rule written after the answers')))
-        self.assertTrue(MP.sign_level(dict(ok, below_level='')))
-
-    def test_schema_declares_below_level(self):
-        schema = json.loads((pathlib.Path(__file__).resolve().parent.parent / 'profile.schema.json').read_text(encoding='utf-8'))
-        item = schema['properties']['outcome']['properties']['sign_check']['items']
-        self.assertEqual(item['properties']['below_level']['type'], 'string')
-
 
 class Wording(unittest.TestCase):
     def test_review_of_19_nov(self):
@@ -200,6 +196,18 @@ class Wording(unittest.TestCase):
         self.assertIn('deploy key', en)
         self.assertIn('clé de déploiement', fr)
         self.assertIn('These are the project&rsquo;s rules', en)
+
+    def test_first_batch_sentence_and_no_below_level(self):
+        c = MP.review_counts(ROOT)
+        en, fr = MP.page_en(c, 7, {}), MP.page_fr(c, 7, {})
+        for page in (en, fr):
+            for slug in ('ridolfi1646', 'lopehurtado1520', 'genes1638'):
+                self.assertIn('<code>%s</code>' % slug, page)
+        self.assertIn('was not part of the first batch', en)
+        self.assertIn('ne faisait pas partie du premier lot', fr)
+        # below_level is not a rule of the level: gone from the README, the schema and the code
+        for f in ('README.md', 'profile.schema.json', 'docs/_method_page.py'):
+            self.assertNotIn('below_level', (ROOT / f).read_text(encoding='utf-8'))
 
     def test_one_french_file_name(self):
         import _check_writeup as CW
