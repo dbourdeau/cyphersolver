@@ -1,5 +1,6 @@
 # List every occurrence of the key gaps in transcription 2, by aligning each decoded sign to the 19th-century text.
 import json
+import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))  # so that python3 -I finds common.py
 from common import *
 from decode import VAL, value, reftext, norm
 T=load(O+'transcription_T2.txt')
@@ -41,7 +42,7 @@ for si,rj in pairs:
     if rj is None: out['unaligned_signs'].append(f'{k} sign {p} [{c}]')
 for s,k,p,c in items:
     if s is None: out['dropped_as_null'].append(f'{k} sign {p} [{c}]')
-json.dump(out,open(O+'key_gap_occurrences.json','w'),indent=1)
+json.dump(out,open(O+'key_gap_occurrences.json','w',encoding='utf-8',newline='\n'),indent=1)
 for kk,v in out.items(): print(kk,len(v)); print('  '+'\n  '.join(v[:40]))
 from collections import Counter
 conf=Counter(); occ={}
@@ -56,4 +57,4 @@ gaps_ref=[ (j,b[j],W[widx[j]]) for si,j in pairs if si is None and j is not None
 print('ref letters with no sign:',len(gaps_ref), [f'{l} in {w}' for _,l,w in gaps_ref])
 out['mismatches']={f'{c} (key {v}) for {pl}':occ[(c,pl)] for (c,v,pl),nn in conf.most_common()}
 out['plaintext_letters_without_sign']=[f'{l} in "{w}"' for _,l,w in gaps_ref]
-json.dump(out,open(O+'key_gap_occurrences.json','w'),indent=1)
+json.dump(out,open(O+'key_gap_occurrences.json','w',encoding='utf-8',newline='\n'),indent=1)

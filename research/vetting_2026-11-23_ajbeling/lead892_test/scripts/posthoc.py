@@ -1,6 +1,7 @@
 # POST HOC, not part of the hashed plan: relabel three signs the sign sheet linked to the wrong key description
 # (U = KEY_BRIEF's Sh-like g; ^ = turned-y h of k367; ?? looped sign = q, not in the key), and rescore transcription 2.
 import json
+import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))  # so that python3 -I finds common.py
 from common import *
 import decode as D
 V=dict(D.VAL); V['U']='g'; V['^']='h'; V['??']='q'

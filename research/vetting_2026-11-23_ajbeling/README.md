@@ -13,7 +13,7 @@ on our decodes. The archive cites a page of Austro-Turcica 1541-1552 (ed. Nehrin
 
 | Item | Language, extent | Decipherment or clear text on record | Our decode (`lead892_test/`, `lead892_rest/`) |
 |---|---|---|---|
-| 8-2-22, Malvezzi to Ferdinand, 24 Mar | Italian, four cipher passages (about 46 lines) in the original, all again in the duplicate | 16th-century decipherment between the lines of every cipher line of the original | two passages (10 lines): 0.739 of the letters of my reading of the gloss, under the 0.80 pass mark |
+| 8-2-22, Malvezzi to Ferdinand, 24 Mar | Italian, four cipher passages (about 46 lines) in the original, all again in the duplicate | 16th-century decipherment between the lines, on every cipher line of the images viewed | two passages (10 lines): 0.739 of the letters of my reading of the gloss, under the 0.80 pass mark |
 | 8-2-24, Ferdinand to Malvezzi, 25 Mar | Latin, 26 cipher lines | clear draft at 8-2-10 fol. 74 (AIS 7048141, images 9-10); modern pencil decipherment over lines 1-3 | 0.875 of the draft's letters; pass |
 | 8-3-10, Malvezzi to Ferdinand, 22 Apr | Italian, about 50 cipher lines | 16th-century decipherment between the lines throughout | fol. 160r (10 lines): 0.783 of the letters of my reading of the gloss, under the 0.80 pass mark |
 | 8-3-12, Ferdinand to Malvezzi, 28 Apr | Latin, 42 lines (original) and 29 (duplicate) | 19th-century decipherment filed with it (images 5-6) | 0.924 of the decipherment's letters; pass |
@@ -23,7 +23,7 @@ on our decodes. The archive cites a page of Austro-Turcica 1541-1552 (ed. Nehrin
   descriptions, the 19th-century decipherment of 8-3-12, the clear draft of 8-2-24 and the archive's citation of
   Austro-Turcica; it had not seen any cipher. ("No decipherment" is in the lead's `status` field, not in the 29 Oct
   block.) New here: all five items seen at reading size; three of the five are Latin, not Italian as the lead says;
-  the 16th-century interlinear decipherments over every cipher line of the originals of 8-2-22 and 8-3-10; the
+  the 16th-century interlinear decipherments over the cipher lines of the originals of 8-2-22 and 8-3-10 (every line on the images viewed); the
   19th-century decipherment of 9-1-2; the pencil gloss on 8-2-24; and tests of the 1548 key on all five. Verdict
   from partly_read to read.
 - **Lead 2682** (vetted `read`, 16 Nov 2026) covers the rest of Türkei I Kt. 8-9 "beyond the ones in leads 891/892".
@@ -79,7 +79,7 @@ copies also use signs the brief does not list: a looped q, & and a star as nulls
 - Witnesses (`witness/`), transcribed after the plan: the clear draft of 8-2-24; the 19th-century decipherment of
   9-1-2 (read before the plan; disclosed there); the interlinear glosses of 8-3-10 and 8-2-22, which are a weak
   witness (fast cursive between dense lines; guesses marked).
-- Run `python3 scripts/score.py` and `python3 scripts/agree.py` (they use `../lead892_test/scripts`).
+- Run `python3 scripts/score.py` and `python3 scripts/agree.py` (they use `../lead892_test/scripts`). The aligner needs numpy.
 
 | Item | Witness letters | T2, letters (pass mark) | T1 | 200 shuffled keys, mean / best | Words read, T2 |
 |---|---|---|---|---|---|
@@ -126,7 +126,7 @@ Bourdeau's `targets/malvezzi1548` key brief, with our sign links, reads a 1550 l
     from the same sign sheet; an independent reviewer's own blind transcription of lines A01-A10 agrees 0.927 with
     T1 and 0.923 with T2, mostly on signs one of us marked as doubtful.
 - Decoding and scoring are mechanical:
-  - Scripts are in `scripts/`. Run `python3 scripts/decode.py` and `python3 scripts/agree.py`.
+  - Scripts are in `scripts/`. Run `python3 scripts/decode.py` and `python3 scripts/agree.py` (the aligner needs numpy).
   - Decodes are in `decode_T*.txt` (word level, holes in brackets) and `mechanical_T*.txt` (per line).
   - The reference is `reference_19c_decipherment.txt`, transcribed after the plan.
 

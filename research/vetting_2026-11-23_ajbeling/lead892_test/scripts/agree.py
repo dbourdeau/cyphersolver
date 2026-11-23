@@ -1,3 +1,4 @@
+import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))  # so that python3 -I finds common.py
 from common import *
 A=load(O+'transcription_T1.txt'); B=load(O+'transcription_T2.txt')
 tot=same=0; diffs=[]

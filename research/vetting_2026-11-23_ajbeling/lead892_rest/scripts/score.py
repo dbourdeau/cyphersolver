@@ -88,7 +88,7 @@ if __name__=='__main__':
             for sec in (False,True):
                 sc,match,got,ref=score(decode(T,labels,VAL,sec),words); wr,txt=wordsread(words,match,got)
                 key=tag+('_secondary' if sec else '_primary'); r[key]={'letters':round(sc,4),'words_read':wr}
-                open(O+f'results/decode_{item}_{key}.txt','w').write(txt+'\n')
+                open(O+f'results/decode_{item}_{key}.txt','w',encoding='utf-8',newline='\n').write(txt+'\n')
         rng=random.Random(1550); cs=[]
         for _ in range(200):
             vv=vals[:]; rng.shuffle(vv); V2=dict(VAL); V2.update(dict(zip(codes,vv)))
@@ -96,4 +96,4 @@ if __name__=='__main__':
         r['controls_T2']={'n':200,'mean':round(sum(cs)/len(cs),4),'max':round(max(cs),4)}
         r['pass']=r['T2_primary']['letters']>=mark and r['T2_primary']['letters']>max(cs)
         res[item]=r; print(item,json.dumps(r))
-    json.dump(res,open(O+'results/scores.json','w'),indent=1)
+    json.dump(res,open(O+'results/scores.json','w',encoding='utf-8',newline='\n'),indent=1)
