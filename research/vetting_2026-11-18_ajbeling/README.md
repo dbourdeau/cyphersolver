@@ -31,7 +31,11 @@ once, and **both missed** (`NOTES_results.md`; plans with their SHA-256 in `PLAN
 - July and August, four names per letter, three hits needed with one in each letter: 2 of 8, both in August (3 of
   1,000 shuffles reached 2).
 
-No word of the June letter is read.
+No word of the June letter is read. The two misses do not rule out that the letters use the first key (75.V): the
+tests checked only a few named slots.
+
+`barnes/` and `wicham/` are a record of work. The verdicts and `lead_updates` above rest on Green's calendars and on
+the dated, foliated originals; they do not depend on the transcriptions or tests in those folders.
 
 ## Catalogue 956, for the maintainers (not edited here)
 
