@@ -36,7 +36,7 @@ noticias complots al[e]manes. Debemos poder co[m]probarlo caso nec[e]sario.
 | 153 | noticias | noticsas | C | Z | C clear |
 | 205 | alemanes | altmanes | T | P | T clear (e/t exchange) |
 | 225 | comprobarlo | cocprobarlo | S | F | S clear |
-| 241 | necesario | necmsario | F | P | F in all three transcriptions; F and P are hard to tell apart on this halftone |
+| 241 | necesario | necmsario | F | P | F in all four readings; F and P are hard to tell apart on this halftone |
 
 Nine are shown to be slips in what the sender typed; 241 (necesario) is a probable slip on the F/P pair this halftone confuses most; 40 (por) is an overtyped letter whose intent is unknown. See NOTES.md, "What kind of hole each one is".
 
