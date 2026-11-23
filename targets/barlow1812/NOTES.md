@@ -90,10 +90,13 @@ repair. `python decode.py` re-derives the three files from the transcriptions an
 ## 6. Readings
 
 `reading_1812-09-25.md` and `reading_1812-10-25.md` give each letter whole, as sentences, with the coded words in
-italics. Read share (words read over words plus holes, a supplied word counting as a hole): 0.978 and 0.994 for
-the whole letters; 0.824 and 0.885 over the coded words alone (34 and 26 words). The repository's sentence check
-(`docs/_check_reading.py`) is a different measure, the share of sentences without a hole: 0.812 and 0.877. Both letters are marked "read in
-part": the profile counts over the coded words (0.85 together, 51 of 60), as lee1813 does.
+italics. Read share, counted over the coded words only, a word being read when the key alone gives all of it:
+25 of 34 (0.735) in the September letter and 22 of 26 (0.846) in the note, 47 of 60 together (0.783). The 13
+holes are the eight words with a value supplied from the sense (`[?word]`), the word with an unread number
+(`[163]th`) and the four words with a letter supplied inside them (`{+s}poliations`, `{+exp}ected`, `mod{+e}`,
+`wel{+l}`). `profile.json` carries the same counts (`fraction_read`, and `cipher_words` and `holes` for each
+text). The repository's sentence check (`docs/_check_reading.py`) is a different measure, the share of sentences
+without a hole: 0.812 and 0.877. Both letters are marked "read in part".
 
 ### Notes on the coded words, 25 September 1812
 
@@ -118,6 +121,8 @@ part": the profile counts over the coded words (0.85 together, 51 of 60), as lee
 
 - **{+s}poliations, {+exp}ected, mod{+e}:** the three numbers that are blotted or miswritten on the film (761, 1353,
   750) and are read from the word they stand in; each is inside a word whose other numbers are read from the key.
+  Each of the three words counts as a hole: the key is rebuilt, not a surviving key of the time, so the
+  repository's rule for a one-digit slip does not apply.
 
 ### Notes on the coded words, 25 October 1812
 
@@ -134,13 +139,13 @@ part": the profile counts over the coded words (0.85 together, 51 of 60), as lee
 - **in regard** (24106): 1114 841 then 531 in copy A and 537 in copy B. Reg is in the key; neither 531 nor 537
   is. One of the two copies has miscopied the number; we cannot say which.
 - **well** (24106): 896, written 89 with a raised 6 and a small sign beneath it in both copies; the key has "wel"
-  from Thomas Barlow's letter of 1813.
+  from Thomas Barlow's letter of 1813. The second l is supplied (`wel{+l}`), so the word counts as a hole.
 - In copy A the last two numbers of 24106 are unclear (the first written like 714, the second a 5 and a blot);
   copy B has 314 54, "as France".
 
 ### Our own review of the readings (21 November 2026)
 
-An AI agent of ours that had made none of the readings reviewed both letters by the repository's rule. It first read
+An AI agent of ours (model `claude-opus-5-5`) that had made none of the readings reviewed both letters by the repository's rule. It first read
 all 157 code numbers from the frames by their shape, before opening any file of this folder, and agreed with 153
 (the four others: the blotted group of 232R12, the 1700 written like 1780, and two numbers already marked
 doubtful in the Bassano copies). It read more than 50 lines of the clear text against the frames and found no
@@ -157,6 +162,11 @@ two AI readers who were given only the images, in a folder holding nothing else,
 The pass marks were written down first: each reader to agree with the first transcription on at least 95% of the
 numbers, and at least 98% of the numbers to be matched by one reader or the other. Every number on which both
 readers differed from the first transcription was then looked at again on the image.
+
+The order of plan and readings rests on our own local records (session log and file times), which are not
+public. The plan for Monroe to Barlow, 16 June 1812, was written at 01:37 Eastern on 21 Nov 2026, a minute after
+its two readers were started and before either handed in (01:41 and 01:42) or the comparison was run (01:43).
+The plan for the other thirteen rows was written at 02:15, before their readers were started.
 
 | Source | Numbers | Reader A | Reader B | Either | Misread in the first transcription |
 |---|---|---|---|---|---|
