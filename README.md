@@ -1127,9 +1127,7 @@ cd richelieu && pip install requests && python build_ngrams.py && python solve.p
   thumbnail touched are removed. **The checker is named**, with whether they are inside or outside the project, and
   the record says what an AI model did (rule, thumbnails, sheet, scoring, remarks). **The label says nothing about the
   key**: it checks sign shapes, not the key, a code value or the reading, and it never changes the class, the state or
-  the read share. It is not a `human_check`, which is a check of a passage against the image without AI help. A sheet
-  whose counts reach the floor but that falls short in another way (a rule written after the answers, controls that
-  cannot exclude an answer by position) is recorded with `below_level` saying why, and does not count at the level.
+  the read share. It is not a `human_check`, which is a check of a passage against the image without AI help.
 - **Holes are counted by words (14 Nov 2026).** The read share counts unread words, not hole marks. A bare mark,
   `[...]`, `[?]` or `{?}`, is one unread word. A hole that covers more carries its size: `[... 4]` is four unread
   words. Count the unread cipher groups or words under the mark, from the decode or the transcription; where groups do

@@ -18,33 +18,27 @@ footer, contents strip and dateline like any other page. The French page is a tr
 import collections, html, json, pathlib, re, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
+if str(HERE) not in sys.path:
+    sys.path.insert(0, str(HERE))
 ROOT = HERE.parent
 REPO = 'https://github.com/dbourdeau/cyphersolver'
 
-# --- who signed a reading_review (same rule as count_reviews.py) ------------------------------------------------
-MODEL = re.compile(r'claude|anthropic|opus|sonnet|fable|haiku|\bgpt|chatgpt|codex|openai|gemini|'
-                   r'\bmodel\b|\bAI\b|agent|session|reading audit|integration (pass|review)', re.I)
-# names neither a model nor a person: a pass by the project as a whole ("project (the project's verification pass)")
-UNCLEAR = re.compile(r'^\s*(project|integration|the project)\b', re.I)
-# a person named first, who says a model assisted: "Brice Dudout (with Claude)", "Andrew Beling, with two ... (Claude)"
-PERSON_ASSISTED = re.compile(r"^\s*[A-Z][\w.]*\.?\s+[A-Z][\w-]+(\s*\((with|review assisted|claude|grade confirmed)|,\s*with)",
-                             re.I)
+# --- who signed a reading_review: one classifier, docs/_reader_kind.py (reader_kind, else by rule from `by`) ----
+import _reader_kind as RK                       # HERE is on sys.path when run as a script or imported as _method_page
 # a "person" string that names a published edition or an institution rather than a reviewer
 EDITION = re.compile(r'\((?:[^)]*\b(?:university|universit\w*|thesaurus|edition|edited)\b)[^)]*\)', re.I)
 # a review whose own record says the reader was not independent of the work
 NOT_INDEPENDENT = re.compile(r'not independent|same session', re.I)
 # a review signed by an agent working for the author of the reading ("Author's agents (...)", "Claude (for <author>)")
 AUTHORS_AGENT = re.compile(r"\bauthor'?s\b", re.I)
+# the page's labels for the reader kinds of docs/_reader_kind.py
+KIND = {'model': 'model', 'person assisted by model': 'person+model', 'person': 'person', None: 'unclear'}
 
 
-def kind_of(by):
-    """model | person+model | person | unclear, by count_reviews.py's rule."""
-    by = by or ''
-    if not MODEL.search(by):
-        return 'unclear' if UNCLEAR.search(by) else 'person'
-    if PERSON_ASSISTED.search(by):
-        return 'person+model'
-    return 'model'
+def kind_of(r):
+    """model | person+model | person | unclear for one reading_review (a dict): docs/_reader_kind.py kind_of, its
+    "not stated" being 'unclear' here."""
+    return KIND[RK.kind_of(r)]
 
 
 def authors_agent(by, authors):
@@ -91,8 +85,6 @@ def reading_check_failures(files, audit):
     """(failing, total): reading targets that would fail the Reading check (docs/_texts.py reading_problems, without
     the sentence score) if a pull request touched them. (None, None) when _texts cannot be imported."""
     try:
-        if str(HERE) not in sys.path:
-            sys.path.insert(0, str(HERE))
         import _texts
     except Exception:
         return None, None
@@ -120,16 +112,15 @@ SIGN_MIN_SIGNS, SIGN_MIN_CONTROLS = 8, 2      # the sign-check level's floor (me
 
 def sign_level(s):
     """True when one outcome.sign_check sheet meets the level's floor: at least SIGN_MIN_CONTROLS controls, all
-    passed, and at least SIGN_MIN_SIGNS target signs counted. Anything not a number ("unknown") does not meet it, nor
-    does a sheet whose record says why it is below the level (below_level: e.g. a rule written after the answers)."""
+    passed, and at least SIGN_MIN_SIGNS target signs counted. Anything not a number ("unknown") does not meet it.
+    A sheet also needs a named checker, a rule and a 64-hex rule_hash (the four conditions of the README)."""
     num_ = lambda k: s.get(k) if isinstance(s.get(k), int) and not isinstance(s.get(k), bool) else None
     signs, ctl, ok = num_('signs_checked'), num_('controls'), num_('controls_passed')
     return (None not in (signs, ctl, ok) and ctl >= SIGN_MIN_CONTROLS and ok == ctl and signs >= SIGN_MIN_SIGNS
             and isinstance(s.get('checker'), str) and bool(s['checker'].strip())
             and isinstance(s.get('rule'), str) and bool(s['rule'].strip())
             and isinstance(s.get('rule_hash'), str)
-            and re.fullmatch(r'[0-9a-fA-F]{64}', s['rule_hash']) is not None
-            and not s.get('below_level'))
+            and re.fullmatch(r'[0-9a-fA-F]{64}', s['rule_hash']) is not None)
 
 
 def review_counts(root=ROOT, audit=None, names=None):
@@ -191,9 +182,9 @@ def review_counts(root=ROOT, audit=None, names=None):
                 continue
             graded_here = True
             c['rr'] += 1
-            k = kind_of(r.get('by'))
+            k = kind_of(r)
             kinds[k] += 1
-            if k == 'person' and EDITION.search(r.get('by') or ''):
+            if k == 'unclear' and EDITION.search(r.get('by') or ''):
                 c['rr_edition'] += 1
             if NOT_INDEPENDENT.search(f"{r.get('by') or ''} {r.get('note') or ''}"):
                 c['rr_not_independent'] += 1
@@ -401,8 +392,8 @@ def page_en(c, queue, names):
                  total=['All verdicts', '', n(c['verdicts_total'])])
     signers = table(['Who signed the grade', 'Entries'], [
         ['an AI model', f"{n(k['model'])} ({F['model_pct']})"], ['a person assisted by an AI model', n(k['person+model'])],
-        ['a person, no AI model named', f"{n(k['person'])} ({n(c.get('rr_edition', 0))} of them name a published edition, not a reviewer)"],
-        ['cannot tell', n(k['unclear'])]], total=['All graded entries', f"{n(c['rr'])}, in {n(c['rr_profiles'])} records"])
+        ['a person, no AI model named', n(k['person'])],
+        ['cannot tell', f"{n(k['unclear'])} ({n(c.get('rr_edition', 0))} of them name a published edition, not a reviewer)"]], total=['All graded entries', f"{n(c['rr'])}, in {n(c['rr_profiles'])} records"])
     checks = table(['Check', 'When it runs', 'What it checks', 'What it does not check'], [
         ['Check write-ups', 'every push to <code>main</code> and every pull request',
          'page heads, dead links and HTML markup; the unit tests of the scripts', 'nothing about the readings themselves'],
@@ -526,7 +517,7 @@ def page_en(c, queue, names):
 <p>The record (<code>sign_check</code> in <code>profile.json</code>) gives the date; who answered, and whether that person is inside or outside the project; what an AI model did (wrote the rule, cut the thumbnails, built the sheet, scored the answers, interpreted free-text remarks); how many signs were checked and how they were chosen (a section of the target&rsquo;s NOTES); how many controls passed; and the results: as transcribed, corrected, unresolved, not counted. A write-up shows it as one sentence, for example: &ldquo;9 doubtful signs checked blind by a project member, on a sheet an AI model built and scored; rule in NOTES; controls 2 of 2; 2 as transcribed, 7 corrected, 1 not counted (faulty thumbnail)&rdquo;.</p>
 <p>A sheet meets the level only with at least {SIGN_MIN_CONTROLS} controls, all passed, and at least {SIGN_MIN_SIGNS} target signs once the answers touched by a faulty thumbnail are removed. An answer &ldquo;none / other&rdquo; on a control counts as a failure. Whatever an answer contradicts is recoded or marked in the reading first. These are the project&rsquo;s rules (README, Conventions; the owner&rsquo;s decision of 19 November 2026): the checker is named, and the label says nothing about the key. The dated rule and its SHA-256 identify the criteria recorded before the answers. On shared sheets, count the signs for each target separately.</p>
 <p><b>The level says how a reading was checked, not how much of the text counts as read.</b> It never changes the class, the state or the read share: a reading can carry it and keep the state <code>read in part</code>. It checks the shapes of signs, not the key, the value of a code or the reading as a whole. The signs are chosen because they are doubtful, so the check is a diagnostic, not a random sample, and it says nothing about the signs that were not shown. Two passed controls show little on their own: a checker who is right one time in two passes both one time in four. It is not a <code>human_check</code>, which the schema defines as a check without AI help.</p>
-<p>The first readings to carry it are those whose key was built on part of the material (the document or sister letters in the same cipher) and passed a test on a passage not used to build it, against a threshold written first; the write-up gives the history of attempts. On these first readings <b>the checker is the contributor</b> of the reading, a project member who answered the sheets of his own readings: the check is not independent, and the record and the write-up say so. {n(c['sc_profiles'])} records carry a <code>sign_check</code> ({n(c['sc'])} sheets, {n(c['sc_level'])} meeting the level, {n(c['sc_external'])} answered by someone outside the project).</p>
+<p>The first readings to carry it are those whose key was built on part of the material (the document or sister letters in the same cipher) and passed a test on a passage not used to build it, against a threshold written first; the write-up gives the history of attempts. On these first readings <b>the checker is the contributor</b> of the reading, a project member who answered the sheets of his own readings: the check is not independent, and the record and the write-up say so. {n(c['sc_profiles'])} records carry a <code>sign_check</code> ({n(c['sc'])} sheets, {n(c['sc_level'])} meeting the level, {n(c['sc_external'])} answered by someone outside the project). The <code>ridolfi1646</code> sheet counts at the level and was not part of the first batch; the <code>lopehurtado1520</code> and <code>genes1638</code> sheets of the first batch are not at the level (their rules were not hashed).</p>
 
 <h2 id="checks"><span class="num">09</span> What the automated checks require</h2>
 <p>Two checks run on GitHub by themselves (continuous integration, CI).</p>
@@ -608,8 +599,8 @@ def page_fr(c, queue, names):
                  total=['Tous les verdicts', '', n(c['verdicts_total'])])
     signers = table(['Qui a signé la note', 'Entrées'], [
         ['un modèle d’IA', f"{n(k['model'])} ({F['model_pct']})"], ['une personne assistée d’un modèle d’IA', n(k['person+model'])],
-        ['une personne, sans modèle nommé', f"{n(k['person'])} (dont {n(c.get('rr_edition', 0))} désignent une édition publiée, pas un relecteur)"],
-        ['on ne sait pas', n(k['unclear'])]], total=['Toutes les entrées notées', f"{n(c['rr'])}, dans {n(c['rr_profiles'])} fiches"])
+        ['une personne, sans modèle nommé', n(k['person'])],
+        ['on ne sait pas', f"{n(k['unclear'])} (dont {n(c.get('rr_edition', 0))} désignent une édition publiée, pas un relecteur)"]], total=['Toutes les entrées notées', f"{n(c['rr'])}, dans {n(c['rr_profiles'])} fiches"])
     checks = table(['Contrôle', 'Quand il tourne', 'Ce qu’il vérifie', 'Ce qu’il ne vérifie pas'], [
         ['Check write-ups', 'à chaque envoi sur <code>main</code> et à chaque demande de fusion',
          'les en-têtes des pages, les liens morts et le balisage HTML ; les tests unitaires des scripts', 'rien sur les lectures elles-mêmes'],
@@ -723,7 +714,7 @@ def page_fr(c, queue, names):
 <p>La fiche (<code>sign_check</code> dans <code>profile.json</code>) donne la date ; qui a répondu, et si cette personne est du projet ou extérieure ; ce qu’un modèle d’IA a fait (écrit la règle, découpé les vignettes, construit la planche, dépouillé les réponses, interprété les remarques libres) ; combien de signes ont été vérifiés et comment ils ont été choisis (une section des NOTES de la cible) ; combien de contrôles ont réussi ; et les résultats : tels que transcrits, corrigés, non résolus, non comptés. La page d’une lecture le dit en une phrase, par exemple : « 9 signes douteux vérifiés à l’aveugle par un membre du projet, sur une planche construite et dépouillée par un modèle d’IA ; règle dans les NOTES ; contrôles 2 sur 2 ; 2 tels que transcrits, 7 corrigés, 1 non compté (vignette fautive) ».</p>
 <p>Une planche n’atteint le niveau qu’avec au moins {SIGN_MIN_CONTROLS} contrôles, tous réussis, et au moins {SIGN_MIN_SIGNS} signes cibles une fois retirées les réponses touchées par une vignette fautive. Une réponse « aucune / autre » à un contrôle compte comme un échec. Ce qu’une réponse contredit est d’abord recodé ou marqué dans la lecture. Ce sont les règles du projet (README, Conventions ; décision du propriétaire du 19 novembre 2026) : le vérificateur est nommé, et le libellé ne dit rien de la clé. La date de la règle et son empreinte SHA-256 identifient les critères enregistrés avant les réponses. Pour une planche commune, compter les signes de chaque cible séparément.</p>
 <p><b>Le niveau dit comment une lecture a été vérifiée, pas quelle part en est lue.</b> Il ne change jamais la classe, l’état ni la part lue : une lecture peut le porter et garder l’état <code>read in part</code>. Il vérifie la forme des signes, pas la clé, la valeur d’un code ni la lecture dans son ensemble. Les signes sont choisis parce qu’ils sont douteux : c’est un diagnostic, pas un échantillon tiré au hasard, et il ne dit rien des signes qui n’ont pas été montrés. Deux contrôles réussis disent peu de chose à eux seuls : un vérificateur qui a raison une fois sur deux les réussit tous les deux une fois sur quatre. Ce n’est pas une <code>human_check</code>, que le schéma définit comme une vérification sans aide de l’IA.</p>
-<p>Les premières lectures à le porter sont celles dont la clé a été construite sur une partie du matériau (le document ou des lettres sœurs du même chiffre) et a réussi un test sur un passage qui n’a pas servi à la construire, contre un seuil écrit d’abord ; la page de la lecture donne l’historique des essais. Sur ces premières lectures, <b>le vérificateur est le contributeur</b> de la lecture, membre du projet, qui a répondu aux planches de ses propres lectures : la vérification n’est pas indépendante, et la fiche comme la page de la lecture le disent. {n(c['sc_profiles'])} fiches portent une <code>sign_check</code> ({n(c['sc'])} planches, dont {n(c['sc_level'])} au niveau et {n(c['sc_external'])} remplies par une personne extérieure au projet).</p>
+<p>Les premières lectures à le porter sont celles dont la clé a été construite sur une partie du matériau (le document ou des lettres sœurs du même chiffre) et a réussi un test sur un passage qui n’a pas servi à la construire, contre un seuil écrit d’abord ; la page de la lecture donne l’historique des essais. Sur ces premières lectures, <b>le vérificateur est le contributeur</b> de la lecture, membre du projet, qui a répondu aux planches de ses propres lectures : la vérification n’est pas indépendante, et la fiche comme la page de la lecture le disent. {n(c['sc_profiles'])} fiches portent une <code>sign_check</code> ({n(c['sc'])} planches, dont {n(c['sc_level'])} au niveau et {n(c['sc_external'])} remplies par une personne extérieure au projet). La planche de <code>ridolfi1646</code> compte au niveau et ne faisait pas partie du premier lot ; les planches de <code>lopehurtado1520</code> et de <code>genes1638</code>, du premier lot, ne sont pas au niveau (leurs règles n’ont pas été hachées).</p>
 
 <h2 id="controles"><span class="num">09</span> Ce que les contrôles automatiques imposent</h2>
 <p>Deux contrôles tournent seuls sur GitHub (intégration continue, ou CI).</p>
