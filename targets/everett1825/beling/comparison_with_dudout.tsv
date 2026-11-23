@@ -1,11 +1,11 @@
 # The 27 groups where our transcription (transcription_six_sections.txt) and Brice Dudout's files (../dudout/texts) differ, the three runs where they have different groups, and what the film shows.
 # Counts: python scripts/compare.py (1,113 groups in both, 1,086 agree, 27 differ). dudout_value = his decryption file; our_value = the State Department code sheet, NARA M97 roll 13 frames 1056-1057 (../../morris1813/beling/key/codebook_M97_13_transcription.csv).
 # period_decipherment = the word in the State Department's decipherment, M31 roll 27 frames 0110-0111 (period_decipherment.txt). reader1/reader2 = blind model readings of the film (film_check/readings.tsv; '-' = not asked).
-# film_supports: which transcription the film supports at this group; 'as written' = the film shows our digits, but the word wanted is Dudout's (a slip by the encoder, which his value already emends).
+# film_supports: which transcription's digits the film supports at this group; 'as written' = the film shows our digits, but the group does not give the word the sense wants (rows 21 and 26).
 n	our_locus	crop	dudout_locus	dudout_group	dudout_value	our_group	our_value	period_decipherment	reader1	reader2	film_supports	how_firmly
 1	112R.04.6	Q30	p01_0112.L4.7	623	[me]	628	me	to me	628 (sure)	-	ours	fair: one reader, sure
 2	112R.05.10	Q06	p01_0112.L5.10	433	[ve]	458	ve	believe	4[5/8/3]8 (unsure)	458 (fairly sure; alt 452)	ours	fair: reader 1 unsure of the middle digit, reader 2 fairly sure
-3	112R.06.8	Q34	p01_0112.L6.8	843	{di}	845	dis	dissimulation	345 (alt 845) (unsure)	845 (fairly sure; alt 345)	ours	firm on the last digit (both readers 5); first digit 8 or 3, both readers
+3	112R.06.8	Q34	p01_0112.L6.8	843	{di}	845	dis	dissimulation	345 (alt 845) (unsure)	845 (fairly sure; alt 345)	ours	firm on the last digit (both readers 5); first digit: reader 1 345 (alt 845), reader 2 845 (alt 345); Dudout's 843 excluded either way
 4	113L.03.9	Q33	p02_0113.L3.9	1031	[self]	1081	self	himself	1081 (alt 1031) (fairly sure)	1081 (fairly sure; alt 1031)	ours	firm: both readers 1081
 5	113L.04.11	Q14	p02_0113.L4.11	184	his	124	contra	his patron	184 (sure)	-	Dudout	fair: one reader, sure
 6	113R.01.10	Q29	p03_0113.L1.10	182	him	152	mos	him (on a mission)	182 (sure)	-	Dudout	fair: one reader, sure
@@ -23,12 +23,12 @@ n	our_locus	crop	dudout_locus	dudout_group	dudout_value	our_group	our_value	peri
 18	114R.10.11	Q10	p05_0114.L10.11	1197	{work}	1497	rs	(no matching words in the period decipherment)	1197 (sure)	-	Dudout	fair: one reader, sure
 19	114R.12.9	Q17	p05_0114.L12.9	284	ever	254	sp	every	284 (sure)	-	Dudout	fair: one reader, sure
 20	114R.15.4	Q09	p05_0114.L15.4	1086v	serve·v	1056{bv}	credit	servants	1086 (alt 1036) (fairly sure)	1086 (fairly sure; alt 1036)	Dudout	firm: both readers 1086
-21	114R.17.1	Q23	p05_0114.L17.1	1057vvv	[cri]·vvv	1257{bv3}	hath	describing	1[2/4]57 (fairly sure (2nd digit unsure))	1257 (fairly sure; alt 1457)	ours (as written)	fair: both readers 1257, second digit not sure; the word is describing, so the writer slipped (1257 for 1057) and Dudout's value is an emendation
+21	114R.17.1	Q23	p05_0114.L17.1	1057vvv	[cri]·vvv	1257{bv3}	hath	describing	1[2/4]57 (fairly sure (2nd digit unsure))	1257 (fairly sure; alt 1457)	ours (as written)	fair: both readers 1257, second digit not sure. 1257 is hath in the code sheet; describing wants cri, which 1057 (crisis on the code sheet, crees in the jqa table) does not give either, so Dudout's [cri] stays from sense whichever group is written
 22	115L.01.6	Q04	p06_0115.L1.6	1479	{riv}	1179	who	rival	1479 (sure)	-	Dudout	fair: one reader, sure
 23	115L.02.8	Q26	p06_0115.L2.8	1098	si	1092	sh	sink	1098 (sure)	-	Dudout	fair: one reader, sure
-24	115L.07.7	Q05	p06_0115.L7.7	330	[li]	880	li	inclined	380 (alt 880) (fairly sure)	880 (fairly sure; alt 380)	ours	fair: reader 2 880 (alt 380), reader 1 380 (alt 880); neither reads 330
+24	115L.07.7	Q05	p06_0115.L7.7	330	[li]	880	li	inclined	380 (alt 880) (fairly sure)	880 (fairly sure; alt 380)	ours	fair: reader 2 880 (alt 380), reader 1 380 (alt 880); the second digit is 8 for both, so Dudout's 330 is excluded either way
 25	121L.07.6	Q35	p18_0121.L6.6	1354	{br}	1384	that	M. de [name]	1354 (alt 1384) (fairly sure)	1354 (fairly sure; alt 1384)	Dudout	firm: both readers 1354
-26	121L.10.4	Q31	p18_0121.L9.4	1383	than	1388	then	than	1388 (alt 1386) (fairly sure)	1388 (fairly sure; alt 1385 (if the last digit is a corrected 5))	ours (as written)	fair: both readers 1388; reader 2 notes the last digit may be written over another; 1388 is then in the key, the word is than
+26	121L.10.4	Q31	p18_0121.L9.4	1383	than	1388	then	than	1388 (alt 1386) (fairly sure)	1388 (fairly sure; alt 1385 (if the last digit is a corrected 5))	ours (as written)	fair: both readers 1388; reader 2 notes the last digit may be written over another. 1388 is then, the word wanted is than (1383): a one-digit slip, but a whole-word group, so under the one-digit rule (README Conventions, 14 Nov 2026) it does not count as read
 27	121L.11.8	Q25	p18_0121.L10.8	692	as	693	ase	as	692 (sure)	-	Dudout	fair: one reader, sure
 shift	114L.13.4-9	Q07	p04_0114.L13.4-9	1254 1535 37 598+ 1576 1385	al ... of the	1254 37 31 598{b+} 1385 1388		altogether less of the	1254 . 1535 . 37 . 598 . 1576 . 1385 (sure on digits)	-	Dudout	fair: one reader, sure on digits (1254 1535 37 598 1576 1385)
 shift	114L.20.6-9	Q13	p04_0114.L20.6-9	1385 1028 470 1436	the ... vil ...	1385 1228 1028 1436		civilisation	1385 . 1028 . 470 . 1436 . 864 (sure)	-	Dudout	fair: one reader, sure (1385 1028 470 1436 864)
