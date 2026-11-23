@@ -1,0 +1,249 @@
+{
+ "schema_version": 1,
+ "target": "acciaiuoli1513",
+ "title": "Roberto Acciaiuoli to the Signoria from Amiens, 23 October 1513: Bourbon to Burgundy, the king's anger and the English embarkation (catalogue 2351)",
+ "documents": [
+  {
+   "id": "map-lxxii-192",
+   "read": "read in part",
+   "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza LXXII, doc. 192 (old c. 234), recto and verso",
+   "date": "23 October 1513",
+   "year": 1513,
+   "country": "Florence",
+   "language": "Italian",
+   "route": "Roberto Acciaiuoli, Florentine orator at the French court (Amiens) to the Signoria (Magnifici viri)",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment of doc. 192 found. Docs. 190 and 191 of the same filza are a cipher letter of the same day and its contemporary clear copy."
+   },
+   "length": {
+    "tokens": 1887,
+    "distinct": 153,
+    "unit": "symbols",
+    "measured": true,
+    "file": "192-transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Claude from ASF images 79574 and 79575 (1272 px), with the key in hand; two blind passes over the whole letter and two over thirteen lines by further Claude instances; reviewed by Codex.",
+    "image_quality": "fair"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Consonant sign with the vowel as a superscript figure (1-5 = u, o, i, e, a), bare letter signs with homophones, doubled-consonant signs, word signs, and numbers as code words.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 153,
+  "diacritics": {
+   "used": true,
+   "note": "The superscript figure is the vowel."
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true
+  },
+  "nulls": {
+   "present": true
+  },
+  "key_order": "unknown",
+  "sibling_key": "Same system as pandolfini1514 (Brice Dudout's key v6). Acciaiuoli's own cipher is Gabbrielli's key no. 120 (DECODE R5807)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "found": "not found",
+   "used": false,
+   "where": "Catalogue 2351 vetting (Canestrini vol. II) and a search of Desjardins-Canestrini vol. II and Sanudo vol. XVII found no decipherment or edition of doc. 192."
+  },
+  "inputs": [
+   "images",
+   "sibling key",
+   "key from archive",
+   "known plaintext"
+  ],
+  "attack": "sibling key",
+  "human_role": "Andrew Aymeloglu requested the investigation, the second-model review, the submission and the revision after review.",
+  "models": [
+   "Claude Fable 5.2 (Anthropic)",
+   "OpenAI Codex"
+  ],
+  "tools": [
+   "Python 3, decode.py",
+   "Pillow",
+   "ASF digitized manuscript images",
+   "DECODE database"
+  ],
+  "first_date": "2026-11-20",
+  "last_date": "2026-11-21"
+ },
+ "solution": [
+  {
+   "kind": "key from source",
+   "what": "Codex applies Dudout's pandolfini1514 key v6 to a first transcription and reads the Bourbon passage.",
+   "result": "partial",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "transcription",
+   "what": "Claude re-transcribes both faces from enlarged line strips with the key in hand; two fresh instances make blind passes from shape names alone.",
+   "result": "worked",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "key from source",
+   "what": "Doc. 190 aligned sign by sign against its clear copy 191; corrections fitted on nine lines, 84-94% agreement on 93 held-out signs whose clear word was read before decoding.",
+   "result": "worked",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "reading",
+   "what": "Reading with v6 plus the 190/191 values: 85% of signs. A sign count including bracketed corrections was first reported as 96% of words, which overstated it.",
+   "result": "partial",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "transcription",
+   "what": "Second blind round on the thirteen hardest lines from tighter crops; signs both readers agree on are adopted. Opens V8-10 and clauses at V1, V5, R6, R12. The number 26 read at R12 is withdrawn, then restored with a query after review.",
+   "result": "worked",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "key from source",
+   "what": "Gabbrielli's key no. 120 for Acciaioli found on DECODE (R5807) and transcribed: confirms the values and 22 = Lanzichinecchi, corrects se to quando, adds quanto, ora, tanto, galee.",
+   "result": "worked",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "control",
+   "what": "Codex reviews the reading against the manuscript and key images: strict word count 86-90%, not 96%; corrects nientedimeno, perché, facto, passaggio; asks for queries on supplied words. Applied where confirmed on crops; status set to read in part.",
+   "result": "worked",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "key from source",
+   "what": "Gabbrielli's keys no. 89 and no. 111 for Acciaioli checked for the numbers 15, 26, 47: both are different ciphers.",
+   "result": "failed",
+   "date": "2026-11-20"
+  },
+  {
+   "kind": "control",
+   "what": "After Dan Bourdeau's review: every departure from the key marked in the reading and counted as a hole; figures written as numerals; two blind surveys of the 67 places of the sign 2 by fresh Claude instances (sign2_forms.tsv). The squat form goes with b at 12 of the 14 places read b but also stands at 4 of the 53 read c, over the bar set beforehand, so no sign is renamed.",
+   "result": "partial",
+   "date": "2026-11-21"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "Gabbrielli's nineteenth-century reconstruction of Acciaioli's cipher (no. 120), made from other letters, gives the text: by the source column of key.tsv, 1,774 of the 1,887 signs take a Gabbrielli value. No plaintext of this letter was used. The system was first recognised from Dudout's pandolfini1514 key, and the cipher letter 190 with its clear copy 191 of the same day added or corrected a few values (the beta-like e, the word signs vostra and nostro); values resting on this letter alone are marked 192 in key.tsv.",
+  "contribution": [
+   "transcription",
+   "key extended or corrected"
+  ],
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading-it.md, cipher words under ## Reading: 660 of 757 are the key's output with nothing supplied or changed. The 97 holes are 41 words with a bracketed letter or second key value (among them the 20 departures of 192-repairs.tsv), 26 proposed words marked [?word], 25 unread words and 5 numbers with no value. Elided forms count as one word; the clear closing is not counted.",
+  "fraction_read": 0.872,
+  "verification": [
+   "historical consistency",
+   "key confirms"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "aymeloglu",
+    "role": "solution",
+    "date": "2026-11-20",
+    "note": "Transcription, key table, reading and translation with Claude (Anthropic); first pass and review with OpenAI Codex."
+   },
+   {
+    "who": "dudout",
+    "role": "key or decipherment used",
+    "note": "pandolfini1514 key v6, which identified the system and first opened the letter."
+   },
+   {
+    "who": "gabbrielli",
+    "role": "key or decipherment used",
+    "note": "Key no. 120, Acciaioli (de) Roberto, 1512-14 (DECODE R5807)."
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "MAP LXXII doc. 191, the clear copy of the cipher letter doc. 190 of the same day."
+   },
+   {
+    "who": "bourdeau",
+    "role": "new cipher",
+    "note": "catalogue 2351 and the pointer to docs. 190/191."
+   }
+  ],
+  "key_file": [
+   "key.tsv",
+   "key-second.tsv",
+   "gabbrielli-120.md",
+   "192-repairs.tsv"
+  ],
+  "texts": [
+   {
+    "doc": "map-lxxii-192",
+    "transcription": "192-transcription.txt",
+    "decryption": "192-literal.txt",
+    "reading": "reading-it.md",
+    "translation": "translation-en.md",
+    "language": "it",
+    "state": "read in part",
+    "read_share": 0.872,
+    "summary": "Louis XII has ordered Bourbon into Burgundy with lances and Landsknechte; news of a rout has overturned a plan; the king is angry at people who yielded to the English; the English king embarks at Calais; the king says he is secure and will fight if the Swiss move; the prelates leave for Rome after All Saints.",
+    "note": "192-literal.txt is the unedited output of key.tsv. The reading departs from it at the 20 places of 192-repairs.tsv and wherever it prints brackets; every departure is marked and counted as a hole. read_share counts words read with nothing supplied or changed (660 of 757).",
+    "reading_review": {
+     "grade": "B",
+     "by": "OpenAI Codex, integration review of PR #841 for the maintainers (AI reviewer)",
+     "date": "2026-11-21",
+     "note": "Read the continuous Italian against the English. The dispatch is coherent but raw, with proposed words, marked repairs and unresolved groups. Replayed the raw key on all 41 lines and removed one duplicated R01 in the filed output. Reviewed the 20-row repair list and the failed sign-2 separation. The contributor reports 660/757 sure; a separate markup-based tally gave 659/759, also read in part. The earlier maintainer review checked three manuscript passages; this pass compared committed texts and did not recheck the images."
+    }
+   }
+  ],
+  "gaps": [
+   {
+    "item": "25 unread words (R5, V1, V5, V13, V14-15 and single words)",
+    "blocker": "illegible",
+    "detail": "superscript vowels not separable at the 1272 px of the public images"
+   },
+   {
+    "item": "26 proposed words marked [?word]",
+    "blocker": "illegible",
+    "detail": "the signs as transcribed do not spell them; mostly one vowel or one consonant off"
+   },
+   {
+    "item": "20 declared departures from the key: the sign 2 read b at 14 places, bene twice, four single signs",
+    "blocker": "illegible",
+    "detail": "the plain 2 (b) and the z-like 2 (c) of Gabbrielli's key are not told apart reliably on these images: in two blind surveys (sign2_forms.tsv) the squat form goes with b at 12 of 14 places but also stands at 4 of 53 places read c"
+   },
+   {
+    "item": "22 words with a supplied letter",
+    "blocker": "illegible",
+    "detail": "one sign off or not written"
+   },
+   {
+    "item": "number 15 (twice), numbers 26 and 47 (R12), a doubtful 20 (R5)",
+    "blocker": "open-codes",
+    "detail": "not in Gabbrielli's key no. 120; 15 proposed as the Venetians from Sanudo"
+   },
+   {
+    "item": "word signs B with a raised 1 and F with a mark above",
+    "blocker": "open-codes",
+    "detail": "not in the key"
+   }
+  ]
+ }
+}
