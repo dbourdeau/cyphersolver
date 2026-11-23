@@ -206,4 +206,9 @@ A verification and a source find, not a new reading; details and files in `belin
   either way. 16 of the 27 groups rest on one reader.
 - The transcription of the period decipherment (`beling/period_decipherment.txt`) has one reader; no second
   reader has checked it.
+- Conditions of the images: the frames are NARA microfilm (RG 59, M31 roll 27) served by the National Archives
+  Catalog. The Catalog record (naId 188610348) gives access and use as "Unrestricted", and NARA's notice says that
+  materials produced by Federal agencies are generally in the public domain and may be reproduced without
+  permission. No conditions came with the images and nothing was signed. Nobody at NARA was asked about AI
+  readers; Andrew Beling decided to use the frames with them on this basis.
 
