@@ -1,6 +1,6 @@
 # taulet1866: copybook of colonel Bernardo Taulet, Jalet (Falset), Jan-Mar 1866 (catalogue 2444)
 
-Status: read (classed at integration, 10 Nov 2026, by the read bar: all 144 cipher words read as sense, N.99 76 words, 71 certain and 5 probable; N.94 68 words, 54 certain and 14 probable; 0 restored, 0 unresolved; no gap open in the text). Key: partial, recorded apart: by the contributor's own protocol the key failed twice (held-out S33 0.981 against the best of 200 shuffled keys 0.704, margin 0.277; re-test on new material N.94 0.960 against 0.699, margin 0.261; both under the 0.30 rule). Brice Dudout submitted it as "read in part" because of the key; the project's read bar judges the text, and records the key state separately.
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: N.99 71 of 76, 93.4%; N.94 54 of 68, 79.4%). Was read (classed at integration, 10 Nov 2026, by the read bar: all 144 cipher words read as sense, N.99 76 words, 71 certain and 5 probable; N.94 68 words, 54 certain and 14 probable; 0 restored, 0 unresolved; no gap open in the text). Key: partial, recorded apart: by the contributor's own protocol the key failed twice (held-out S33 0.981 against the best of 200 shuffled keys 0.704, margin 0.277; re-test on new material N.94 0.960 against 0.699, margin 0.261; both under the 0.30 rule). Brice Dudout submitted it as "read in part" because of the key; the project's read bar judges the text, and records the key state separately.
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry 2444 (Daniel Bourdeau's
 PARES sweep of AHN Diversos-Colecciones, vetted 9 Nov 2026). A short pointer was sent in issue #367 (9 Nov 2026); this is
@@ -114,3 +114,11 @@ Content:
 Prior work checked 9 Nov 2026: "Taulet" and "5928106" occur only in catalogue.json and in sweep/vetting files of the
 repository; no target, nothing in known.py; two web searches found nothing on Taulet or a published Spanish military
 cipher table of 1866.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+These notes already give the certain-only figures: N.99 **71 of 76 (93.4%)**, N.94 **54 of 68 (79.4%)**, 125 of 144 in
+all (86.8%). Under the rule of PR #728 they decide the class: both documents and the target go **read -> read in part**.
+The key stays partial (recorded apart). No recount, no image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.

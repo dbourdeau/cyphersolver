@@ -1,6 +1,6 @@
 # Sega 1590: Filippo Sega, Bishop of Piacenza, Paris, 26 November 1590 and 16 January 1591 (AAV Francia 32, ff. 17r-v and 71r-v)
 
-Status: read (Brice Dudout, 29 Oct 2026; two letters, 134 of 136 enciphered words read in their sense: 26 Nov 1590, 82 of 84 (79 certain, 3 probable, 2 unresolved); 16 Jan 1591, 52 of 52 (46 certain, 6 probable); Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 26 Nov 1590 79 of 84, 94.0%; 16 Jan 1591 46 of 52, 88.5%). Was read (Brice Dudout, 29 Oct 2026; two letters, 134 of 136 enciphered words read in their sense: 26 Nov 1590, 82 of 84 (79 certain, 3 probable, 2 unresolved); 16 Jan 1591, 52 of 52 (46 certain, 6 probable); Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 29 Oct 2026. Not in the current catalogue (it was listed as no. 881, "Sega, Francia 32", an entry since withdrawn); submitted as a new cipher with solution.
 Published write-up (local, to be pushed when the GitHub account is restored): https://bdudout.github.io/europe-chiffree/en/documents.html#sega-1590
@@ -43,3 +43,12 @@ Files: `transcription.txt`, `decryption.txt`, `reading.md`, `translation.md`, `k
 - Sega's letter of 2 July 1591 (DECODE R5618, https://de-crypt.org/decrypt-web/RecordsView/5618) uses another system (digits without signs, many 1s, 7s, 9s): by a criterion fixed before calculation, key 65 segments only 62.5% of its pairs (threshold 85%) and was rejected.
 - Letter of 16 Jan 1591: Sega says Mayenne ("Umena", 128) wrote "non so che di bono per me a Roma", that he needs no stronger intercession with the Pope than that of the Duke of Bavaria, and that he has awaited "quel pomo" for many years (hypothesis: the red hat; Sega was made cardinal by Innocent IX in December 1591).
 - Prior work: no edition of Sega's 1590-1591 dispatches found (the Acta Nuntiaturae Gallicae do not cover Sega; M. Penzi 2017 is a study).
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+From the counts already in these notes, over the enciphered words only: 26 Nov 1590 **79 of 84 certain (94.0%)**, the 3
+probable and 2 unresolved words (<canonizatorio>, <c>) as holes; 16 Jan 1591 **46 of 52 (88.5%)**, the 6 probable words
+as holes. Both letters and the target go **read -> read in part** (was 134 of 136, 98.5%). The key is Meister's
+published key no. 65; the probable words are the reader's. No image re-read. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
