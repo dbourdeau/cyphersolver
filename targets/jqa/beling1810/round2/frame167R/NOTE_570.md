@@ -11,8 +11,10 @@ In the first round of the 1810 test, our first transcription of No. 25 had 570 o
 ## What the film shows
 
 The image is NARA M35 reel 2, frame 167R, passage A, line 9: `1382. 790. 5?0. ultimately 731 1411 520.`
-- `167R_group_tight.jpg`: the group, enlarged 4 times. Box 290,935,385,1005 on the catalog image, cut from our copy of the half-frame 167R.
-- `167R_line_context.jpg`: its line and the next one, enlarged 1.3 times. Box 30,940,800,1080.
+- The group, enlarged 4 times: box 290,935,385,1005 on the catalog image of the half-frame 167R.
+- Its line and the next one, enlarged 1.3 times: box 30,940,800,1080.
+
+The two crops are not committed; they can be cut again from the catalog image with these boxes.
 
 The first figure is a 5 and the last a 0. The middle figure is a short, heavy slanted stroke on the baseline. A thin dash above it runs on from the 5's flag.
 
@@ -32,4 +34,4 @@ None of the four new readings gives 570 as its main reading. The two transcriber
 
 So this frame gives no clear second example of 570 for *was*, and our earlier 570 was most likely a misreading of ours. The frame does not exclude 570. The open 570 in No. 88 is not affected either way.
 
-The crop readers were told which group to read but not why, and were given no plaintext, table or candidates. (Wording revised on 23 Nov 2026 after an independent review.)
+The crop readers were told which group to read but not why, and were given no plaintext, table or candidates. (Wording revised on 23 Nov 2026 after a review by a separate AI agent of ours, Claude Opus 5.5, that had not built this package.)

@@ -30,15 +30,14 @@ The coded passages of four of these despatches are in print:
 - `heldout_1810.py`: the test, importing `../align.py`. `heldout_1810.txt` is its output: per passage, per despatch, pooled, the 100 shuffled tables, and the group-by-group alignment.
 - `transcriptions/`: the two transcriptions of No. 21, No. 24 and No. 29, and their comparison (`compare_transcriptions.py`, `compare_no21.txt`, `compare_no24.txt`, `compare_no29.txt`). The second transcriptions of No. 24 and No. 29 were made blind by separate helper agents. They worked from the NARA images alone; no earlier transcription, table or plaintext was given. No. 21's second reading is from 22 Oct 2026; it is not independent, since its reader had seen the first sequence in its task text.
 - `codes_1810_no24_second.txt`, `heldout_no24_second.txt`: after the registered run, No. 24 scored again on its blind second transcription. This is post hoc and not part of the pass mark.
-- `decode_no29.py`, `no29_decode.txt`: No. 29 decoded with the key sheet alone (NARA M97 roll 13 frames 1056-1057, Weber WE028, as transcribed in `../../morris1813/beling/key/codebook_M97_13_transcription.csv`, unchanged), from both transcriptions. The table's value is given where it differs.
-- `no29_reading.md`: No. 29 written as sentences from `no29_decode.txt` alone, by a model. It is labelled in the file as a reading made with the key sheet alone, with no plaintext witness, not checked by a person.
+- No. 29 has no witness and is not read in this folder. Its transcriptions are here only for the reader-agreement figures. A decode with the key sheet and a model's sentences from it, which `PLAN.md` and `PLAN2.md` mention, are kept out of this folder (23 Nov 2026, after review); the plans are unchanged so that their hashes hold.
 
 - `round2/`: the second round, run after the first missed. It holds:
   - `PLAN2.md` and `PLAN2.sha256`, written before scoring;
   - `build_round2.py`, `codes_1810_round2.txt` and `reader_agreement.txt`;
   - `heldout_round2.txt`, the run;
-  - `no29_agreed.txt`, `no29_recount.py` and `no29_recount.txt`;
-  - `frame167R/`, the note and crops on the 570 of No. 25.
+  - `no29_agreed.txt`, the No. 29 groups the two blind readings agree on, written by `build_round2.py`;
+  - `frame167R/`, the note on the 570 of No. 25 (the crops are not committed; their boxes are in the note).
 - `transcriptions_round2/`: the fresh blind readings X, Y and Z.
 
 ## Results
@@ -47,4 +46,4 @@ See `../NOTES.md`, section "Adams's despatches of 1810 (held-out test, 22 Nov 20
 
 ## Images
 
-The images are NARA microfilm M35 (Despatches from U.S. Ministers to Russia) reel 2, frames 137-189, on catalog.archives.gov. They are linked, not committed, with one exception: the two small crops of frame 167R in `round2/frame167R/`. The Massachusetts Historical Society's Adams Papers film was not used here and is not reproduced.
+The images are NARA microfilm M35 (Despatches from U.S. Ministers to Russia) reel 2, frames 137-189, on catalog.archives.gov. They are linked, not committed. The Massachusetts Historical Society's Adams Papers film was not used here and is not reproduced.
