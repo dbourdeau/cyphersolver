@@ -105,8 +105,11 @@ two-digit syllabary card of 20 Nov filed in `targets/duron1911/` (`siblings/syl.
 - On both October telegrams the positive control, this folder's table, beat all shuffles but failed the plan's word
   criterion, so by the plan's rule the test is void here. Only the May result (in blanquet1914) is a clean test.
 
-Summary: `keytest_2026-11-22/results_summary.tsv`. The test script and full results stay out because they hold the
-Villa key values and a copy of Jalkut's card.
+Summary: `keytest_2026-11-22/results_summary.tsv`. Script: `keytest_2026-11-22/keytest.py`, which reads the three keys
+by repo path (`targets/limantour1909/key.tsv`; `targets/villa1914/key.tsv` of pull request #865, head b35ba1997, given
+with `--villa` while it is not on main; `targets/duron1911/siblings/syl.py`). It is the frozen run's script with only
+the input paths changed; rerun on 23 Nov 2026, its output is byte for byte the frozen run's results (SHA-256 e720c99a...
+in `run.sha256`). The full results are not committed; the script writes them.
 
 ## Transcription doubts
 
@@ -115,8 +118,8 @@ Villa key values and a copy of Jalkut's card.
 
 ## Remaining gaps
 
-- 14 Oct, 9 of 16 words - blocker: no-key-material; groups 20, 53, 108, 113, 132, 140 and 147 have no tested value and one group is illegible; only the July draft and the 8 Oct telegram carry glosses.
-- 15 Oct, 26 of 29 words - blocker: no-key-material; 28 of 104 groups have no value, and the values that would complete four more words failed their separate test.
+- 14 Oct, 9 of 16 words - blocker: not-attempted; untried: the period sheet CEHM DLXXIII.1.28.8-23 ("alfabeto y sílabas"), in the same fonds, has not been compared with these groups; groups 20, 53, 108, 113, 132, 140 and 147 have no tested value and one group is illegible; only the July draft and the 8 Oct telegram carry glosses.
+- 15 Oct, 26 of 29 words - blocker: not-attempted; untried: the period sheet CEHM DLXXIII.1.28.8-23 ("alfabeto y sílabas"), in the same fonds, has not been compared with these groups; 28 of 104 groups have no value, and the values that would complete four more words failed their separate test.
 
 ## Escalation
 

@@ -84,6 +84,7 @@ e4ddf8a5dc81ad6d49e18f99a91eb44ee72c96008a40926abe82412505452ecf). On this teleg
 passed every criterion, so this is a clean test. The limantour1909 key and the Villa key of open pull request #865 (not
 upstream) cover too few groups to test. Daniel Jalkut's two-digit card (`targets/duron1911/siblings/syl.py`) missed:
 it beat 2 of 1,000 shuffles read row-column and 888 read column-row.
+The script is `../tellez1913/keytest_2026-11-22/keytest.py`; it names the key files by repo path.
 
 ## Transcription doubts
 
