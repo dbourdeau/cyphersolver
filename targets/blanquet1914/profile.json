@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "blanquet1914",
+ "title": "Blanquet to Rubio Navarrete, 19 May 1914: a War Ministry telegram in \"Clave núm. 109\" (CEHM DLXXIII), decoded, not read",
+ "documents": [
+  {
+   "id": "cehm-dlxxiii-2-41-22-41",
+   "read": "not read",
+   "shelfmark": "CEHM-Carso, DLXXIII.2.41.22-41",
+   "date": "19 May 1914",
+   "year": 1914,
+   "country": "Mexico",
+   "route": "Mexico City -> Zacatecas",
+   "places": {
+    "from": "Mexico City",
+    "to": "Zacatecas"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Handwritten telegram, clear Spanish with Clave núm. 109 groups; no contemporary decipherment."
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer",
+    "image_quality": "fair"
+   },
+   "length": {
+    "tokens": 98,
+    "unit": "code groups",
+    "measured": true,
+    "file": "may19.runs"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "Printed numerical table of 160 numbers (Clave núm. 109: letters with homophones for the vowels, syllables, military words), numbers set in the clear text",
+  "symbol_kind": "digits",
+  "distinct_symbols": 160,
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": true,
+   "kinds": [
+    "common words",
+    "titles"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "partly alphabetical",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not in the repository before 22 Nov 2026, the Tomokiyo index, or R. Narváez's 2015 and 2025 articles. Narváez, Criptografía diplomática, política y militar en México 1813-1926 (SRE, 2019), checked 21-22 Nov 2026 from photographs of a loan copy (chapters VII-XI, pp. 261-410, and the index, pp. 487-495): it prints neither the telegram(s) nor the key.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "first_date": "2026-11-18",
+  "last_date": "2026-11-22",
+  "human_role": "Andrew Beling chose the target, set the rules (frozen plans, blind transcriptions, controls) and photographed the Narváez book; AI agents transcribed, rebuilt and tested the key and wrote up.",
+  "models": [
+   "AI agents run by Andrew Beling; the model of each step is not recorded in the work files (Claude Opus 5.5, Anthropic, for the 22 Nov 2026 steps)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "19 May 1914 and 25 Mar 1914 telegrams transcribed by two blind AI readers: 90/98 and 100/107 positions agreed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "sibling key",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Clave núm. 109 (rubio1913/key.tsv, Brice Dudout) applied unchanged to the held-out 19 May telegram: 90/98 groups, beat 1,000/1,000 shuffles.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "control",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Same key on the 25 Mar 1914 telegram to Huerta (DLXXIII.2.41.17-41): beat 418/1,000 shuffles (miss).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Narváez 2019, chapters VII-XI and index, checked from photographs: neither the telegram nor Clave 109 printed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "control",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Frozen test of the limantour1909 key, the Villa key of open PR 865 and Jalkut's two-digit card (duron1911): the first two cover too few groups; the card beat 2 and 888 of 1,000 shuffles (miss); Clave 109 control passed.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Strict count (every letter from the key): 15 of 25 cipher words.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "recovered",
+  "method": "read with known key",
+  "method_basis": "The printed key sheet issued to Rubio (DLXXIII.1.28.14-23), transcribed by Brice Dudout in rubio1913, applied unchanged.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 0.6,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "15 of 25 cipher words with every letter from the key (may19_words.tsv).",
+  "first_break": true,
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "19 May, 10 of 25 words",
+    "blocker": "illegible",
+    "detail": "eight groups cut, faint or under the watermark on the viewer images"
+   },
+   {
+    "item": "25 Mar telegram to Huerta",
+    "blocker": "no-key-material",
+    "detail": "Clave 109 missed; the presidential code is not in the fonds"
+   }
+  ],
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "new cipher",
+    "note": "with AI agents: telegram transcribed blind twice and decoded with Clave 109",
+    "date": "2026-11-22",
+    "source": "pull request draft (not yet opened)"
+   },
+   {
+    "who": "dudout",
+    "role": "key or decipherment used",
+    "note": "Clave núm. 109 key sheet identified and transcribed (rubio1913/key.tsv)",
+    "date": "2026-10-29",
+    "source": "targets/rubio1913/"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "cehm-dlxxiii-2-41-22-41",
+    "label": "19 May 1914, Blanquet to Rubio (DLXXIII.2.41.22-41)",
+    "transcription": "may19.runs",
+    "decryption": "decryption_may19.txt",
+    "reading": "reading_may19.md",
+    "language": "es",
+    "state": "decoded, not read",
+    "summary": "Rubio is told to refrain from representations about certain individuals and to proceed with energy."
+   }
+  ],
+  "key_file": "../rubio1913/key.tsv",
+  "provenance": "contributed"
+ }
+}
