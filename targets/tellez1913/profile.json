@@ -188,6 +188,15 @@
    ],
    "what": "Strict count (every letter from a tested value): 14 Oct 7/16 words, 15 Oct 3/29 (7/29 with the untested additions).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Key-test script committed as keytest_2026-11-22/keytest.py, reading the Limantour, Villa (pull request 865) and Jalkut key files by repo path; otherwise the frozen script of 22 Nov. Rerun: output byte for byte the frozen results (SHA-256 e720c99a in run.sha256). Gaps of the two October telegrams relabelled untried: the period sheet DLXXIII.1.28.8-23 (alfabeto y sílabas) has not been compared.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -209,13 +218,13 @@
   "gaps": [
    {
     "item": "14 Oct, 9 of 16 words",
-    "blocker": "no-key-material",
-    "detail": "groups 20, 53, 108, 113, 132, 140, 147 without a tested value; one illegible group"
+    "blocker": "not-attempted",
+    "detail": "untried: the period sheet CEHM DLXXIII.1.28.8-23 (\"alfabeto y sílabas\"), in the same fonds, has not been compared with these groups; groups 20, 53, 108, 113, 132, 140, 147 without a tested value; one illegible group"
    },
    {
     "item": "15 Oct, 26 of 29 words",
-    "blocker": "no-key-material",
-    "detail": "28 of 104 groups without a value; the additions that would complete four words failed their test"
+    "blocker": "not-attempted",
+    "detail": "untried: the period sheet CEHM DLXXIII.1.28.8-23 (\"alfabeto y sílabas\"), in the same fonds, has not been compared with these groups; 28 of 104 groups without a value; the additions that would complete four words failed their test"
    }
   ],
   "credits": [
@@ -224,7 +233,7 @@
     "role": "new cipher",
     "note": "with AI agents: table rebuilt and tested; two telegrams transcribed and decoded",
     "date": "2026-11-22",
-    "source": "pull request draft (not yet opened)"
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/905"
    },
    {
     "who": "dudout",
@@ -243,6 +252,8 @@
     "reading": "reading_oct14.md",
     "language": "es",
     "state": "decoded, not read",
+    "cipher_words": 16,
+    "holes": 9,
     "summary": "Railway and telegraph cut; asks for another repair train from Laredo."
    },
    {
@@ -253,6 +264,8 @@
     "reading": "reading_oct15.md",
     "language": "es",
     "state": "decoded, not read",
+    "cipher_words": 29,
+    "holes": 26,
     "summary": "The line is destroyed; relief of a detachment; too few words read for more."
    }
   ],
