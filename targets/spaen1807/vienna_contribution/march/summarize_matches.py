@@ -6,7 +6,7 @@ from pathlib import Path
 p=Path(__file__).resolve().parent
 
 def read(f):
-    with (p/f).open() as sig:return list(csv.DictReader(sig,delimiter='\t'))
+    with (p/f).open(encoding='utf-8',newline='') as sig:return list(csv.DictReader(sig,delimiter='\t'))
 
 groups=read('groups26.tsv');preds=read('predictions26.tsv');matches=read('transfer_matches.tsv')
 occ=defaultdict(list)
@@ -16,7 +16,7 @@ for r in preds:
     assert a==b
     code=groups[a-1]['strict']
     occ[code,r['word']].append(a)
-f=(p/'held_support_by_code.tsv').open('w')
+f=(p/'held_support_by_code.tsv').open('w',encoding='utf-8',newline='')
 wr=csv.writer(f,delimiter='\t',lineterminator='\n')
 wr.writerow(['code','word','matched','attempted','all_locations','matched_reference_indices','all_match_nonoverlapping_windows'])
 for (c,w),o in sorted(occ.items()):

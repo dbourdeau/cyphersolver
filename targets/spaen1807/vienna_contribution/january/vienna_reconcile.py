@@ -17,7 +17,7 @@ qualifications_a = {
 
 def parse(path):
     lines = {}
-    for line in path.read_text().splitlines():
+    for line in path.read_text(encoding='utf-8').splitlines():
         match = re.fullmatch(r'([abAB])(\d+) (.*)', line)
         if not match:
             continue
@@ -48,7 +48,7 @@ for label in a:
         stroke = read[3] if read[3] == check[3] else '?'
         key = num + mark + stroke if '?' not in (num,mark,stroke) else '?'
         rows.append([len(rows)+1,label,idx,first,second,note,num,mark,stroke,key])
-with (out/'vienna_groups.tsv').open('w') as f:
+with (out/'vienna_groups.tsv').open('w',encoding='utf-8',newline='') as f:
     writer = csv.writer(f,delimiter='\t',lineterminator='\n')
     writer.writerow(('ordinal','line','position','reader_a','reader_b','a_note','digits','superscript','trailing_stroke','strict_key'))
     writer.writerows(rows)
