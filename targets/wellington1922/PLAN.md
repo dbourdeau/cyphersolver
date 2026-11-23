@@ -34,8 +34,8 @@ A run is "read" only if every word in it is verbatim or repaired and the words b
   plan says (PARECER, EN, DOCUMENTOS, TESORERO).
 - After the independent review the decoder was fixed so that an unsure sign ("?") keeps its place in the key cycle;
   the first decoder had skipped it. This turned ATINAS ORIENTACIÓN (f2.19) from read to a hole (NOTES.md).
-- With the final transcription, `scripts/control.py` gives key 313 -2.444; best other key 3-1-7, -3.617
-  (`control_313.txt`).
+- With the final transcription and the fixed decoder, `scripts/control.py` gives key 313 -2.469; best other key
+  3-1-7, -3.626 (`control_313.txt`).
 - The plan's line-break fallback is not used in the counts. Readings that need a shift in the key cycle were found
   after the run by the reviewer and are reported post hoc under their own rule (NOTES.md), not counted.
 - Counting follows the repository's strict rule (a repaired or doubtful word is a hole), stricter than the plan's
@@ -49,4 +49,4 @@ work folder with its scripts and outputs) froze a restart rule for the key cycle
 not been seen on: the cycle may restart (shift 3) at the first letter of a word, once per unread stretch, or a run
 may continue the previous run's cycle across punctuation; 1,000 shuffles of each stretch as controls; pass at 80% of
 letters in words and above the controls' 99th percentile. Result: f3.07's tail (8 letters) and f3.22's tail (4) are too
-short and missed; f3.20's end needs a skip inside PROPIA, outside the rule, a miss. The counts are unchanged by it.
+short and missed; f3.20's end meets the script's mark only because its word list splits PRORIA, and the sense needs a skip inside PROPIA, outside the rule, so it is not counted as a pass (`scripts/restart_test.py`, `restart_test.txt`). The counts are unchanged by it.

@@ -35,7 +35,7 @@
     "by": "llm from images",
     "source": "CEHM-Carso viewer images DCXXI.6.588.1.0004.jpg (folio 2) and .0005.jpg (folio 3)",
     "image_quality": "fair",
-    "notes": "Folio 2 clear; folio 3 faint (pale typing, watermark over the right margin, ink loops of the signature), read on contrast-stretched crops. Pass 1 and a blind pass 2 by separate AI agents: folio 2 agrees on every letter; folio 3 differs at about ten signs, each settled in NOTES.md (Transcription doubts)."
+    "notes": "Folio 2 clear; folio 3 faint (pale typing, watermark over the right margin, ink loops of the signature), read on contrast-stretched crops. Pass 1 and a blind pass 2 by separate AI agents: folio 2 agrees on every letter; folio 3 differs at about ten signs, each settled in NOTES.md (Transcription doubts). A blind pass 3 by two further AI agents agrees except at six signs already marked doubtful."
    }
   }
  ],
@@ -60,7 +60,7 @@
   },
   "key_order": "not applicable",
   "word_division": "none",
-  "notes": "Key published by Narváez (2019, pp. 367-368; 2015, pp. 125-126). Typing slips: about a dozen single wrong letters, one swap, and a few runs where the cycle is lost."
+  "notes": "Key published by Narváez (2019, pp. 367-368; 2015, pp. 126-127). Typing slips: about a dozen single wrong letters, one swap, and a few runs where the cycle is lost."
  },
  "conditions": {
   "prior_solution": {
@@ -117,7 +117,7 @@
   {
    "date": "2026-11-23",
    "kind": "control",
-   "what": "Final transcription: key 313 scores -2.444 (Spanish bigrams); it ties only with 3-1-3 itself drawn among the 1,000 random keys; best other key 3-1-7 at -3.617; controls' mean -5.353. Plan, hash, script and output were written within nine seconds, so the plan's priority rests on our word; the key and rule are Narváez's published ones.",
+   "what": "Final transcription, fixed decoder: key 313 scores -2.469 (Spanish bigrams); it ties only with 3-1-3 itself drawn among the 1,000 random keys; best other key 3-1-7 at -3.626; controls' mean -5.353 (control_313.txt). Plan, hash, script and output were written within nine seconds, so the plan's priority rests on our word; the key and rule are Narváez's published ones.",
    "result": "worked"
   },
   {
@@ -129,7 +129,7 @@
   {
    "date": "2026-11-23",
    "kind": "verification",
-   "what": "Independent review by a separate AI agent: blind transcription of three runs (folios 1-3) and blind decoding agree letter for letter; it found the decoder skipped unsure signs without advancing the key (fixed: f2.19's last 17 letters became a hole), that folio 1's run reads SUAREZ (Narváez prints Juárez), and readings of slipped runs with a shifted cycle (reported post hoc, not counted).",
+   "what": "Independent review by a separate AI agent of ours (Claude Opus 5.5, 23 Nov 2026, 00:35-00:55 EST; a model check, not a person's): blind transcription of three runs (folios 1-3) and blind decoding agree letter for letter; it found the decoder skipped unsure signs without advancing the key (fixed: f2.19's last 17 letters became a hole), that folio 1's run reads SUAREZ (Narváez prints Juárez), and readings of slipped runs with a shifted cycle (reported post hoc, not counted).",
    "result": "worked"
   },
   {
@@ -144,13 +144,13 @@
   {
    "date": "2026-11-23",
    "kind": "transcription",
-   "what": "Third transcription of all 60 runs, blind (two separate AI agents from their own crops, measuring the typewriter pitch): it agrees with the transcription letter for letter except at six signs already marked doubtful (f2.19 s20, f3.04 s5, f3.07 s13-16, f3.10 s42, f3.12 s110, f3.14 s151). It agrees with pass 1 where pass 2 differed in EN (f3.07) and DOCUMENTOS, TESORERO (f3.12), which become clean (250 clean words); it confirms every sign of the one-letter slips and of the stretches that give no words, so those are slips of the typist or encipherer, not misreadings.",
+   "what": "Third transcription of all 60 runs, blind (two separate AI agents from their own crops, measuring the typewriter pitch): it agrees with the transcription letter for letter except at six signs already marked doubtful (f2.19 s20, f3.04 s5, f3.07 s13-16, f3.10 s42, f3.12 s110, f3.14 s151). It agrees with pass 1 where pass 2 differed in EN (f3.07) and DOCUMENTOS, TESORERO (f3.12), which become clean (250 clean words); it agrees on every sign of the one-letter slips and of the stretches that give no words, which supports their being slips of the typist or encipherer rather than misreadings (model readers, Claude Opus 5.5, about 10:00-10:50 EST; no person has checked).",
    "result": "worked"
   },
   {
    "date": "2026-11-23",
    "kind": "hypothesis",
-   "what": "POST HOC, not counted: every shift of the cycle found so far puts the start of the 3-1-3 cycle on the first letter of a word (f2.19 PAULATINAS, f3.10 DE LAS PERSONAS, f3.20 BONILLA), as the Sánchez letter does at every word, or continues the previous run across a colon (f3.13 after f3.12's 130 letters). A rule frozen on this (plan SHA-256 c17933f5...) found nothing new: the stretches it had not seen (f3.07 tail, 8 letters; f3.22 tail, 4) are too short to beat shuffled controls, and f3.20's end reads COMO VOCAL EN LA PROPIA JUNTA only with a one-place skip inside PROPIA, outside the rule. Outside support: the CEHM catalogue names JOSÉ SILICEO and RICARDO LOBATO in a later Wellington letter (DCXXI.6.624.1) and gives J. W. Wellington as a pseudonym of Fidencio E. López (DCXXI.8.731.1).",
+   "what": "POST HOC, not counted: every shift of the cycle found so far puts the start of the 3-1-3 cycle on the first letter of a word (f2.19 PAULATINAS, f3.10 DE LAS PERSONAS, f3.20 BONILLA), as the Sánchez letter does at every word, or continues the previous run across a colon (f3.13 after f3.12's 130 letters). A rule frozen on this (plan SHA-256 c17933f5...; scripts/restart_test.py, restart_test.txt) found nothing new: the stretches it had not seen (f3.07 tail, 8 letters; f3.22 tail, 4) are too short to beat shuffled controls, and f3.20's end reads COMO VOCAL EN LA PROPIA JUNTA only with a one-place skip inside PROPIA, outside the rule (the script's mark is met only because its word list splits PRORIA), so it is not counted as a pass. Outside support: the CEHM catalogue names JOSÉ SILICEO and RICARDO LOBATO in a later Wellington letter (DCXXI.6.624.1) and gives J. W. Wellington as a pseudonym of Fidencio E. López (DCXXI.8.731.1).",
    "result": "partial",
    "technique": [
     "key-structure hypothesis"
@@ -185,7 +185,7 @@
     "role": "key or decipherment used",
     "note": "key 313 for this letter, and his decipherment of folio 2 paragraphs 2-3 and folio 1's two runs (not repeated here)",
     "date": "2019",
-    "source": "R. Narváez, Criptografía diplomática, política y militar en México (1813-1926) (Mexico, 2019), pp. 364-369, fig. 6; earlier Documenta & Instrumenta 13 (2015), pp. 125-126"
+    "source": "R. Narváez, Criptografía diplomática, política y militar en México (1813-1926) (Mexico, 2019), pp. 364-369, fig. 6; earlier Documenta & Instrumenta 13 (2015), pp. 126-127"
    },
    {
     "who": "ajbeling",
@@ -214,7 +214,9 @@
     "state": "read in part",
     "summary": "A felicista agent reports to Félix Díaz: fear of discouragement for lack of a united force; General Mallén, serving Obregón, has turned Torruco against Cástulo Pérez; Federico Córdoba falsely claims to act for Peláez and Díaz; a movement is ready throughout the state; the Puebla junta's officers and members are named (Lic. José María Camacho, president; Fidencio E. López; Miguel Márquez Galindo; Dr. Alberto Moreno; Machorro, Alvarado, Osorio, García, Pomposo Bonilla); Lic. Ricardo Suárez Escalante (not 'Juárez' as printed by Narváez) is to be called 'Ricardo Lobato'.",
     "note": "250 clean words of an estimated 296 word places in the 60 runs (holes: 11 one-letter slips, 'que es', 'ultimas', 'tenemos' chosen with the decode, 'parecer' with an overtyped sign, 4 unidentified words: 20 hole words; and 5 stretches with no words). Further runs read only post hoc with a restart of the key cycle (NOTES.md), not counted. Narváez's printed part is not counted. Correction: folio 1's run decodes SUAREZ ESCALANTE, not 'Juárez' as Narváez prints.",
-    "read_share": 0.845
+    "read_share": 0.845,
+    "cipher_words": 296,
+    "holes": 46
    }
   ],
   "key_file": [
