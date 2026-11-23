@@ -3,19 +3,17 @@
 
 usage: build_table.py TOKENS.json PROPOSALS.tsv OUT.tsv [--brackx]
   TOKENS.json   written by check_manual.py (the 653 groups, Brackx's digits, with the draft letters of each)
-  PROPOSALS.tsv proposals/transcription_corrections.tsv (comment lines start with #)
-  --brackx      build on Brackx's digits as transcribed (no proposed change applied): key/code_table_F_partial.tsv
-  without it    build with all eight proposed digit changes applied: key/code_table_F_with_proposals.tsv
-                (this is how the table of 21 Nov was built)"""
+  PROPOSALS.tsv proposals/transcription_corrections.tsv (comment lines start with #), read only to find the
+                eight places where a digit change is proposed
+  OUT.tsv       key/code_table_F_partial.tsv
+The table is built on Brackx's digits as transcribed. No proposed digit change is applied: the proposals stay
+unapplied until a person has looked at the film. --brackx (the earlier way to ask for this) is accepted and ignored."""
 import sys, json, csv, collections
-BRACKX = '--brackx' in sys.argv
+BRACKX = True   # Brackx's digits only; the mode that applied the proposals was removed on 23 Nov 2026
 args = [a for a in sys.argv[1:] if a != '--brackx']
 tok = json.load(open(args[0]))['tokens']
 _rows = list(csv.DictReader((l for l in open(args[1], encoding='utf-8') if not l.startswith('#')), delimiter='\t'))
-corr = {} if BRACKX else {int(r['token_index']): (int(r['brackx']), int(r['proposed'])) for r in _rows}
-# digit changes that the two blind readers of 21 Nov did not read on the film: kept as readings of the text,
-# but such a use does not count towards "confirmed by repeated use"
-EMENDED = set() if BRACKX else {int(r['token_index']) for r in _rows if r.get('readers_1_2', '').startswith('not confirmed')}
+EMENDED = set()
 N_TRAIN = 568
 FAMILY = {1078, 172, 174, 826, 663, 1126, 240, 151, 152, 1031, 355, 664, 474, 257}
 JOINT = {634, 169, 716, 354, 1098, 470, 730, 216, 148, 714, 649, 593, 1154, 1022, 830, 540, 630, 41, 153, 998, 1186,
@@ -28,7 +26,6 @@ UNSURE = {383: 'd in extraor-d-inaire; "de (la)" before Chambre, where 363/362 =
           802: 'between "je compte" and "a cet egard": a comma, a null or a word not in the draft',
           411: 'between "delai" and "Il faut": punctuation (the draft has a colon)',
           1126: 'utile or utilite: stands for "utiles" once and once where the corrected draft reads "facilite" over an earlier word; value rests on that reading of the draft',
-          251: 'ai in n-ai, n-ay-ez, consul-ai-re, but the NUMBER is a conjecture: Brackx and two blind readers read 257 on the film at all three places (second choice 251); 251 rests on the text and on the run 253 ainsi, 254 ajouter, 257 al',
           469: 'no letters: first group of the despatch and inside m-o-i-(469)-s at the end; a null'}
 NOTE = {496: 'port in ap-port-eront, rap-port-s, port-eurs; also stands for "pui" in pui-s-se-nt (not explained)',
         257: 'al: a l(ouverture), prairi-al. The film also reads 257 at three places where the text has "ai" (see 251 and corrections)',
@@ -38,7 +35,6 @@ NOTE = {496: 'port in ap-port-eront, rap-port-s, port-eurs; also stands for "pui
         405: 'en / ent (15 times)', 39: 're (rez in au-rez, ver-rez)',
         175: 'se (session written se-si-on)', 855: 'pre (propres written pro-pre)'}
 if BRACKX:
-    UNSURE.pop(251, None)
     NOTE.update({
         257: 'al: a l(ouverture), prairi-al; also stands three times where the text has "ai" (n-ai, n-ay-ez, consul-ai-re): proposed 251, see proposals/',
         100: 'sur (two uses); a third place where the text has "sur" reads 108 or 128 on the film (see 108)',
@@ -54,9 +50,6 @@ if BRACKX:
 PROP = {int(r['token_index']) for r in _rows} if BRACKX else set()   # the eight places where a change is proposed
 by = collections.defaultdict(list)
 for i, (g, draft, meaning, kind) in enumerate(tok):
-    if i in corr:
-        assert corr[i][0] == g, (i, g, corr[i])
-        g = corr[i][1]
     val = meaning if kind == 'text' else {'null': '(null)', 'stop': '(full stop)', 'unknown': '(unknown)'}[kind]
     by[g].append((i, val))
 
