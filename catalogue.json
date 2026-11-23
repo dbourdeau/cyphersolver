@@ -115006,6 +115006,87 @@
    "difficulty": 5,
    "scored": "rule",
    "score_note": "Provisional WWI score from source metadata. Importance reflects commercial, administrative or otherwise limited context. Solvability and difficulty reflect the material listed: the system is unconfirmed in this score and the series offers little material for comparison."
+  },
+  {
+   "id": 3668,
+   "counted": true,
+   "year": 850,
+   "date": "9th century (Zironi places the codex in the middle third)",
+   "title": "Three lines of cipher in a Bavarian grammatical manuscript, Clm 6411",
+   "correspondents": "Unidentified scribe",
+   "place": "Bavaria; exact place of inscription uncertain",
+   "language": "Undetermined; Latin is the proposed underlying language",
+   "region": "Germany",
+   "period": "unknown",
+   "shelfmark": "Bayerische Staatsbibliothek, Clm 6411, fol. 1r",
+   "folio_note": "Three lines of large signs at the head of the opening recto; torn and faded near the upper right. Two lines in ordinary script immediately below.",
+   "cls": "B",
+   "status": "The third line ends with an upright and a chevron repeated in the same order. If each sign has a fixed reading of one or more letters, the plaintext must repeat a sequence at least two letters long. Neither copy of the ordinary-script note below contains such a repetition in any of the four spellings tested. The note could still be a clue to the meaning. The three cipher lines remain unread.",
+   "why": "A ninth-century inscription with repeated distinctive signs and comparative alphabets in contemporary manuscript culture. The image is sufficient to prepare a diplomatic transcription.",
+   "verify": "Look for an independently labelled counterpart to a recurring sign, especially the mirrored bowls, among the manuscripts cited by Bischoff. A passage from the grammar on the reverse fits several repeated signs, but requires two missing positions and ends inside a word.",
+   "importance": 3,
+   "solvability": 2,
+   "difficulty": 4,
+   "score_note": "The signs are large but some are damaged, and the text is short.",
+   "links": [
+    {
+     "label": "BSB, Clm 6411, fol. 1r",
+     "href": "https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3"
+    },
+    {
+     "label": "Bischoff, typology, section 28",
+     "href": "https://www.mgh-bibliothek.de/dokumente/b/b023446.pdf"
+    },
+    {
+     "label": "Zironi, discussion and note 1",
+     "href": "https://cris.unibo.it/retrieve/f93c2157-ab07-40f7-bc57-1cc2654ca6ba/Zironi%20-%20BFK.pdf"
+    },
+    {
+     "label": "Transcription, source comparisons and reproducible tests",
+     "href": "https://github.com/dbourdeau/cyphersolver/blob/main/research/clm6411/NOTES.md"
+    }
+   ],
+   "seen": "image",
+   "needs_archive_scan": "no",
+   "source": "Bavarian medieval mixed-alphabet review, 22 November 2026",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-22",
+    "by": "Codex (GPT-6), catalogue research",
+    "seen": {
+     "kind": "scan",
+     "where": "https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3; Bavarian State Library IIIF manifest bsb00012886, canvas 1r (0003). Inspected the 1300-pixel scan.",
+     "extent": "Three lines of large signs at the head of the opening recto; torn and faded near the upper right. Two lines in ordinary script immediately below.",
+     "cipher": "Three oversized rows of recurring angular and curved forms are separated visually from the normal script below. The right end of the first line is faded. There are no interlinear glosses between the three rows."
+    },
+    "prior_art": {
+     "decode": "Local DECODE file has no match for Clm 6411 or bsb00012886.",
+     "tomokiyo": "The local unsolved.htm list has no match for the shelfmark or digitization ID.",
+     "lasry": "The local GL.htm key inventory has neither identifier.",
+     "edition": "Bischoff’s section 28 explicitly calls the three-line cryptogram unsolved and illustrates the leaf. The nearby suggested reading ‘Deo gratas’ refers to Paris lat. 12048, a different manuscript.",
+     "literature": "Zironi discusses f. 1r specifically, identifying fanciful Greek and Hebrew forms and suggesting Latin equivalents without transcribing a recovered sentence. Later shelfmark searches also return studies of ordinary and Tironian glosses elsewhere in the codex. No passage-level reading of these three lines found."
+    },
+    "key_check": "Bischoff compares a mixed-alphabet family, including Karlsruhe 340 and Vienna 2223, using several signs per Latin letter. He only tentatively associates Clm 6411 with it. No demonstrated mapping for these lines was located.",
+    "duplicates": "Current and upstream catalogue and leads were checked for Clm 6411 and bsb00012886. Neither identifies another record for f. 1r. Open issues searched by manuscript number and new ID, with zero matches.",
+    "searches": [
+     {
+      "query": "Clm 6411 Geheimschrift 1r Tironische Noten Bischoff Freising",
+      "result": "Located Bischoff’s explicit unsolved assessment and separated the first-page cryptogram from the manuscript’s glosses."
+     },
+     {
+      "query": "Clm 6411 cryptogram decipherment Hebrew Greek folio 1r solution Bischoff Zironi",
+      "result": "Zironi discusses three lines and links the exact scan. No plaintext is given for that passage."
+     },
+     {
+      "query": "6411 Kryptogramm Freisinger Handschrift entschlüsselt Geheimschriften Nievergelt drei Zeilen",
+      "result": "Located codicological and gloss scholarship, no demonstrated continuous reading of the three lines."
+     }
+    ],
+    "verdict": "open"
+   },
+   "repository": "bsb",
+   "outcome": "attempted, open"
   }
  ]
 }

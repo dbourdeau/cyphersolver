@@ -1,0 +1,48 @@
+# Clm 6411, folio 1r · catalogue 3668
+
+No continuous reading established. The ordinary-script note is repeated. Günter Glauche transcribes it as *alocus ceroficon domus dominicus dei cella*, flags the second word, and questions the relationship to the three lines above. On the clearer copy the medial letter in *ceroficon* also resembles a long s. Either spelling gives the same repeat pattern. [Glauche, p. 217](https://www.digitale-sammlungen.de/en/view/bsb00093399?page=244) · [Manuscript](https://www.digitale-sammlungen.de/en/view/bsb00012886?page=3)
+
+## Sign record
+
+The following IDs record shapes, with uncertain positions assigned independent IDs. The row lengths follow Bischoff's drawing. The scan has additional faint traces at the right. The code makes no claim about their values or even whether they are letters. [Bischoff, drawing at the foot of p. 24](https://www.mgh-bibliothek.de/dokumente/b/b023446.pdf#page=13)
+
+| Row | IDs | Shapes in order |
+|---|---|---|
+| 1 | X A B C D E F G H J | damaged triangle, triangle, sloping hooked form, angular S, box, left-facing bowl with right descender, mirrored bowl, chevron, pi-like form, curved trace |
+| 2 | E G F K L K M N | bowl, chevron, mirrored bowl, angled sign with foot, tall curl, angled sign with foot, descending hook, long horizontal hook |
+| 3 | Q R O P Y G Y G | faint angle, faint pi-like form, fork, K-like sign, upright, chevron, upright, chevron |
+
+## Checks
+
+* The 37-letter ordinary text contains zero four-letter windows whose first pair repeats immediately. The clear four-sign sequence at the end of row 3 requires precisely that pattern under any fixed one-letter value per sign. Reversing the row preserves the pattern.
+* Run `python research/clm6411/check_readings.py` to recombine whole words of the note. There are 48 ordered selections of 26 letters allowing each word at most once. None matches in any of the eight choices of direction for the three rows. The program allows different signs to represent the same letter.
+* The optional `--latin-text` argument checks every 26-letter window of a UTF-8 plain text. Applied to the visible text of Isidore's first book (73,083 normalized letters) and to the Latin verse-text field of a Vulgate transcription (3,050,928 normalized letters), it returned zero matches in all eight directions. For the Bible the verses were joined in file order and lower-case ae and oe ligatures expanded. These checks apply to the transcriptions used, without allowances for scribal spelling changes, abbreviations or extra signs. [Isidore, book I](https://www.thelatinlibrary.com/isidore/1.shtml) · [Vulgate TSV](https://github.com/LukeSmithxyz/vul/blob/master/vul.tsv)
+
+Zironi suggests Latin equivalents and gives a manuscript link in note 1. That passage supplies no table assigning Latin values to individual signs. Bischoff names Karlsruhe, Karlsr. 340, p. 110, and Vienna, Cod. 2223, among his mixed-alphabet examples, and places the Munich inscription in this group tentatively. A value independently attested for the distinctive bowl pair or the footed sign would provide a test across several positions. [Zironi, pp. 9–10](https://cris.unibo.it/retrieve/f93c2157-ab07-40f7-bc57-1cc2654ca6ba/Zironi%20-%20BFK.pdf) · [Bischoff, §28](https://www.mgh-bibliothek.de/dokumente/b/b023446.pdf)
+
+## Comparative manuscripts and the middle line
+
+Karlsruhe 340, manuscript p. 110, is scan 8145503. The pencilled 110 is visible at the upper left. The two large red lines below the colophon contain an angular form resembling the third Munich sign. There are no individual Latin glosses over these red signs. The mixed-alphabet comparison in Bischoff consequently gives no directly labelled value for that shape on this page. The ordinary-script text above belongs to Reginmaar's colophon, continued from the previous page. [Karlsruhe 340, p. 110](https://digital.blb-karlsruhe.de/id/8145503) · [Bamberg manuscript database](https://glossen.germ-ling.uni-bamberg.de/bstk/322)
+
+St Gall 876, pp. 278–280, gives a dated comparison around 800. On p. 279 the Greek row has consecutive q-shaped and p-shaped forms for koppa and rho after pi. On p. 278 the Hebrew row also has adjacent p-shaped and q-shaped forms for qoph and sade, in the opposite order on the page. The Munich bowls are open and several letter forms qualify as possible models. The manuscript comparison supports the plausibility of the shapes without securing a Latin letter for either. [Fleming, pp. 192–195, fig. 7.1](https://users.pfw.edu/dfleming/FlemingPublications/Fleming_Bede_HebrewAlphabets.pdf#page=27)
+
+The note below the inscription motivates the eight-letter Latin words *dominica* and *basilica*. Either can occupy the whole second row left to right if each sign has one value and different signs may share a value. Both give I at positions 4 and 6. Carrying the same assignments to positions 6–8 of the first row requires DMO or BSA respectively. In the final four positions of the third row they require a repeated pair ending in O or A respectively. Neither predicts a continuous reading across the rows. *Ecclesia* fails on the middle row because it requires L and S for its one repeated sign. Of 6,891 distinct eight-letter forms in the Vulgate file used above, 534 have positions 4 and 6 alike. This count uses lowercase verse text only, ASCII letter sequences, J/I and V/U equivalence, and expanded ae/oe ligatures. It measures how weak the one-row constraint is, independently of the semantic clue.
+
+The Austrian catalogue links Vienna Cod. 2223 (bibliographic record AC13957754) to digital object 4891537. Its resolver redirects to viewer object 10013670. The image host timed out during inspection, so no reading from the Vienna leaves is entered here. Bischoff identifies fols. 20r, 20v, 21r, 56r and 72v for comparison. [Austrian manuscript record](https://manuscripta.at/?ID=11403) · [Vienna digitization](https://data.onb.ac.at/dtl/4891537)
+
+## What the damaged right edge changes
+
+The native recto is 2,334 by 3,600 pixels. The tear interrupts row 2 and faint strokes extend farther right in row 1. Comparing the mirrored verso locates an ornamental initial on the opposite side of the same area. I could not count additional complete characters there. The signs at the end of row 3 lie clear of this damage. [Native recto crop](https://api.digitale-sammlungen.de/iiif/image/v2/bsb00012886_00003/1300,90,880,580/full/0/default.jpg) · [Verso](https://www.digitale-sammlungen.de/en/view/bsb00012886?page=4)
+
+The script `check_lacunae.py` accepts UTF-8 plain text. It adds zero through three independently unconstrained positions to the physical right end of each of rows 1 and 2. It applies all eight choices of row direction after inserting those positions. These are sensitivity tests. The value three is an exploratory limit. The 128 layouts include the original eight.
+
+* Eutyches' *Ars de uerbo* starts on the reverse of this very leaf. Across 70,691 normalized letters of the DigilibLT edition there is a single matching passage, in four overlapping alignments. Each reads all three rows right to left and inserts two unknowns into row 2. It falls in the examples following *cor cordis concordo*, where *discordo recordor* precedes *odor odoror odoraris*. Every alignment ends inside *odoraris*. With two unknowns in each line, the box, plain chevron, footed angular sign and K-shaped sign would all have to mean O, even before counting doubtful signs. This exceeds the three forms per letter reported in Bischoff's regional parallels. It also gives the first two triangular signs different values. The manuscript might use another system, but this fit has no independent confirmation. [DigilibLT edition, DLT000172](https://github.com/lascivaroma/digiliblt/blob/master/sources/dlt000172.xml)
+* The same 128 layouts yielded seven hits in the 3,050,928-letter Vulgate. They cluster in two verses, Ezekiel 28:19 and John 7:29. Every window begins and ends inside a word, and each requires a change of direction between rows. The results do not support either as a quotation. For replication, use the final tab-separated field of each verse from the previously linked TSV. For Eutyches use the string value of the TEI body. Preserve the edition's text and normalize with the script before scanning.
+
+## Fixed syllables and abbreviations
+
+The two visibly repeated upright-and-chevron pairs at the end of row 3 impose a constraint even when a sign represents several letters. If each of these two signs always has a nonempty reading, then their four signs must produce two adjacent copies of a string at least two letters long. Reversing the line preserves this property. Run `python research/clm6411/check_expansions.py` to enumerate every such substring, allowing the other signs any nonempty readings.
+
+There are zero such substrings in each spelling tested (ceroficon or cerosicon, dei or di). All sixteen ordered combinations of two copies were also checked. When their spellings differ there are zero matches. When identical, only the entire two-copy text is a match, leaving nothing for the other signs. This rules out a continuous copy of the ordinary lines under those assumptions, including fixed syllabic expansions. A semantic clue, variable abbreviation or nonphonetic mark would require independent evidence.
+
+Bischoff's handwritten notes identify Greek material on later leaves of the same manuscript. These entries concern the grammatical text and supply no sign-by-sign reading for folio 1r. [Bischoff's manuscript notes](https://www.mgh-bibliothek.de/digilib/h/h001460_21_8.pdf)
