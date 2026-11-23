@@ -29,7 +29,7 @@ by following a footnote, one from a printed book. No person has checked the tran
    were seen only at a glance and 235-236 only in the catalog's machine text, which shows none. Transcribed twice
    from the image, the second time blind; the readings that still differ (215 or 315, 110 or 116, 527 or 327, 525 or
    523, the cut-off group) are listed in our notes and are not given here as settled.
-   - **Not the State Department code.** A test against the State Department code of these years (1385 = the; Butler's
+   - **A frozen test with three context probes missed.** A test against the State Department code of these years (1385 = the; Butler's
      own letters of 1834 use it), with its plan and the table frozen before the run, missed. Three context probes fixed
      before any look-up all failed (0 of 3), and no run of numbers reads as English. No number is above 660 (0 of
      54), where 65% of the numbers in Butler's 1834 letters in that code are; that the range would not fit was known
@@ -53,7 +53,7 @@ by following a footnote, one from a printed book. No person has checked the tran
    27 Nov (oficio A-743) whether his office had the "Murciélago" key. Narváez did not find Lobo's answer, and the
    "Murciélago" square printed in the book (fig. 8, p. 335) fails on the pictured telegram. Fig. 14 pictures the
    telegram of 25 Nov (three typed lines of five-letter groups); the one of 26 Nov is not pictured. The caption says
-   1916, p. 345 says November 1917; the year is open. We have not transcribed the figure.
+   1916, p. 345 says November 1917; the year is open. The row sorts under 1917, the year of the book's text. We have not transcribed the figure.
 
 ## Left out
 
