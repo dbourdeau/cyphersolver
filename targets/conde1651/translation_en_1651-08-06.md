@@ -41,7 +41,7 @@ AD Dordogne 2 E 1841/18-14, photos P1370710-711. English translation of `reading
 
 **P12** — [to] do the worst [they] [could]
 
-**P13** — *I beg you … to use all your care for* … the outcome in {these} {gentlemen}
+**P13** — *I beg you … to use all your care for* … the outcome in {these} gentlemen
 
 (That is, the outcome with these gentlemen.)
 
@@ -59,7 +59,7 @@ AD Dordogne 2 E 1841/18-14, photos P1370710-711. English translation of `reading
 
 **P19** — [their] divisions
 
-**P20** — {I} am delighted at the {good} {disposition} {of} ‹96›; keep {him} always {in} {these} {good} [feelings] and [promise]
+**P20** — {I} am delighted at the {good} disposition {of} ‹96›; keep {him} always {in} {these} {good} [feelings] and [promise]
 him {on} my behalf every kind {of} favour {and} {of affection}, and that I {shall} always {do} all {things} possible for his
 advantage {and} for [his] [views]
 

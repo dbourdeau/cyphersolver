@@ -26,7 +26,7 @@ AD Dordogne 2 E 1841/18-11, photos P1370702-703. English translation of `reading
 
 **P6** — {to leave} {here} Monsieur de Guyonnet
 
-**P7** — [the outcome] of the affair {of} ‹96› with {the} {Parlement}, {and} {of} {giving} to ‹96›
+**P7** — the outcome of the affair {of} ‹96› with {the} {Parlement}, {and} {of} {giving} to ‹96›
 
 **P8** — {drawing}
 
@@ -50,13 +50,13 @@ AD Dordogne 2 E 1841/18-11, photos P1370702-703. English translation of `reading
 
 **P17** — {the sending} of
 
-**P18** — {man}; {write} to him to
+**P18** — man; {write} to him to
 
 (With the clear *vre* before it: "the sending of your man".)
 
 **P19** — {hold} himself ready at the earliest, so that at my
 
-**P20** — {arrival} in {the} Guyenne I may find {it}
+**P20** — {arrival} in {the} Guyenne I may find [it]
 
 **P21** — in the state {needed}
 

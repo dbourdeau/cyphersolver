@@ -43,12 +43,14 @@ All five letters transcribed (two blind passes + blind arbiter per group, blind/
 
 | Letter | Shelfmark | Cipher signs | Cipher words | Sure | Probable | Restored | Unresolved | Share |
 |---|---|---|---|---|---|---|---|---|
-| 6 Aug (PS 8 Aug) | 18-14 | 427 | 154 | 75 | 60 | 14 | 5 | 0.487 |
+| 6 Aug (PS 8 Aug) | 18-14 | 427 | 154 | 77 | 58 | 14 | 5 | 0.500 |
 | 13 Aug | 18-12 | 383 | 155 | 92 | 51 | 6 | 6 | 0.594 |
 | 17 Aug | 18-3 | 635 | 264 | 170 | 78 | 6 | 10 | 0.644 |
-| 25 Aug (PS 27 Aug) | 18-11 | 238 | 113 | 64 | 42 | 2 | 5 | 0.566 |
+| 25 Aug (PS 27 Aug) | 18-11 | 238 | 113 | 66 | 40 | 2 | 5 | 0.584 |
 | 3 Sep (PS 4 Sep) | 18-10 | 235 | 102 | 73 | 25 | 0 | 4 | 0.716 |
-| **Total** | | 1,918 | 788 | 474 | 256 | 28 | 30 | **0.602** |
+| **Total** | | 1,918 | 788 | 478 | 252 | 28 | 30 | **0.607** |
+
+Counts after the blind sign check of 23 Nov 2026 (section "Sign check"); before it: 6 Aug 75/60/14/5, 25 Aug 64/42/2/5, total 474 sure (0.602).
 
 (Brianson dated the first letter 5–6 Aug in 1983; his typescript and the letter say 6 Aug, postscript 8 Aug.)
 
@@ -64,6 +66,51 @@ Word level, each checked against the signs (details in each reading file):
 
 ## K2b (key_K2b.tsv) — not validated
 Corrections found after decoding: the transcribers' low π = Brianson's « pi-barré » (e), their « w » = his « u » (n), their б-shaped « sigma » = his U/V « 6 » (u/v); 19′ = le, and 18′ = la (his grid's acute row seems shifted by one column); 45ˇ avoir, 98 bien, 48 du, 83′ pas, etc. No fresh held-out portion remains, so K2b is not validated and is never used for a sure word.
+
+## Sign check, 23 Nov 2026
+
+Level sought: "AI decipherment, human-checked on a sample of signs" (`outcome.sign_check`, held in `sign_check_pending.json`
+until the field is in profile.schema.json; files in `sign_check/`). It checks how fourteen doubtful or decisive signs are
+written, not the key as a whole, and it changes neither the class (already solved) nor the state (read in part).
+
+**Sheet.** Seventeen questions: fourteen targets and three controls. Each question boxes one sign (a superscript mark, a digit
+or a symbol) and offers shapes cut from sure words of the same hand, plus "none / other shape", "cannot tell", "illegible"
+and "not a sign". No gloss, reading, value, place or date was shown. The three controls are signs of sure words with a known
+answer (¯ of 18¯ Bordeaux, 9 of 94′ plus, ¨ of 96¨ ie): **all three correct (3 of 3)**. The targets: seven signs that carry
+our corrections to Brianson's typescript (A1-A7), five doubtful signs or sign names (B1-B5), two code shapes whose value stays
+out of the sheet (C1-C2).
+
+**Who did what.** The checker is Brice Dudout (a member of the project, not an independent reader). An AI model (Claude Opus 5.5)
+wrote the selection rule, cut the thumbnails, built the sheet, scored the answers and read the remarks. The answer key
+(which option is which) stayed private until the answers were exported, and is not committed. No image, crop or thumbnail is
+committed (see "Images").
+
+**Rule.** `sign_check/sheet-C-rule.md` (in French, as written), SHA-256
+5661bbd0f8aa1b5f32f37e8b563e848fd2b170b8140ffa46e95a4bddcf2eebdd, written and hashed before the thumbnails were cut and
+before any answer. Its integration clause (section "Intégration") was applied as written, with no change. Answers:
+`sign_check/sheet-C-answers.json`, exported 2026-11-23T19:41:21Z, SHA-256
+f28aa79635beb692f77e543327e711d666a9ebd24f2be70d1092c4699fd6355f; results: `sign_check/sheet-C-results.tsv`.
+
+**Effect (by the clause; the blind files in `blind/`, the frozen key and K2b were not touched).** Settled signs are marked `!`
+in transcription.txt and decryption.txt is updated for them.
+- The seven corrections to Brianson are confirmed at the sheet: « division » (A1), « chevalier » (A2), « l'alarme » (A3),
+  « plus » (A4), « dans » (A5), « Guyenne » (A6), and « homme » (A7), which becomes sure.
+- New sure words (+4): « l'aboutissement » (B1, the sign is Π = l, not a low π; 25 Aug), « homme » (A7, 25 Aug), « messieurs »
+  (B3, the sign is a 6 = v/u, not the sigma of the key; 6 Aug), « disposition » (B5, 46¨; 6 Aug).
+- B2 was answered with the other proposed shape: the mark on 19 in « ie {19} puisse » (25 Aug) is ¨, so K2b's 19′ = le is
+  not supported there, and « le » goes from probable to restored. No sure word lost.
+- B4 (mark on 97 in « {besoin} », 3 Sep): "none / other shape", remark « Deux traits »: word unchanged (probable).
+- C1 (59, 13 Aug): the first digit is 5; the code stays unread. C2 (stroke right of 99, 6 Aug): "none / other shape", remark
+  that it is not a mark above a digit but rather a comma before the clear text; by the clause the word is unchanged
+  (‹99›, unresolved either way).
+- K2b: the sigma-to-6 naming (B3) is supported on the transcription at that place; 19′ = le (B2) is not. K2b stays not
+  validated (a shape check validates no value).
+- Counts: 6 Aug 75 -> **77** / 154; 25 Aug 64 -> **66** / 113; the other letters unchanged; total 474 -> **478** / 788
+  (0.602 -> **0.607**). The rule foresaw at most 479 (B4 would have made the fifth) and at most a loss of 4.
+
+**Limits.** One checker inside the project; three controls; the signs were chosen because they were doubtful or decisive and
+the options were cut from the same hand: a diagnostic, not a sample of the text. No person has audited the model's part. This is
+not a `human_check`. The check does not touch the open codes.
 
 ## The Roman-numeral name table (P1370715–717)
 
@@ -146,5 +193,6 @@ No reading_review recorded (left to the reviewer). No image or crop in this fold
   other edition known to us. Not seen: Brianson's papers at the SHD (GR 1KT 211 / 1 Kmi 62); Lenet's papers and the
   Chantilly decipherment tables (leads.json 1846, Ms 1876) not searched for other letters in this key.
 - [x] key-rebuild: K2b from the decoded letters (key_K2b.tsv), kept apart and not validated.
-- [ ] retry: the probable words resting on doubtful marks were put to a blind sign sheet (17 questions, prepared
-  23 Nov 2026); the open codes need another letter in the same key.
+- [x] retry: the doubtful marks and digits that decide a word were put to a blind sign sheet (14 targets, 3 controls,
+  23 Nov 2026; section "Sign check") and the words regraded: 474 -> 478 sure. The open codes need another letter in the
+  same key (Remaining gaps).
