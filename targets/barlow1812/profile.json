@@ -137,7 +137,7 @@
       "claude-opus-5-5"
     ],
     "first_date": "2026-10-19",
-    "last_date": "2026-11-22"
+    "last_date": "2026-11-23"
   },
   "solution": [
     {
@@ -190,8 +190,8 @@
   "outcome": {
     "class": "read in part",
     "key": "partial",
-    "method": "read with known key",
-    "method_basis": "No key sheet survives. The key was rebuilt from ten letters in the same code that were deciphered at the time (key.md): the State Department's decipherment of Barlow's despatch of 29 Sep 1811, the clerks' writing between the lines of five later despatches, and Monroe's and Madison's coded letters to Barlow with the recipient's or Madison's decipherment between the lines. It was then applied to the two passages that have none.",
+    "method": "key recovered based on adjacent plaintext",
+    "method_basis": "No key sheet is known: the key was recovered from the decipherments of the time of ten other letters in the same code (key.md: the State Department's decipherment of Barlow's despatch of 29 Sep 1811, the clerks' writing between the lines of five later despatches, and the decipherments between the lines of Monroe's and Madison's letters to Barlow and of Barlow's letter to Madison), and then applied to the two passages here, which carry none.",
     "contribution": [
       "transcription",
       "key recovered"
@@ -205,20 +205,20 @@
       },
       {
         "label": "Barlow to Monroe, 25 Sep 1812 (64 numbers), no decipherment",
-        "method": "read with known key",
+        "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "reading_1812-09-25.md: 59 numbers from the key; four words completed from the sense, 'the' before United States marked doubtful (the number is written like 1780), one number unread; read_share 0.978 whole letter, 0.824 over the coded words"
+        "basis": "reading_1812-09-25.md, with the key recovered from the other letters: 59 of 64 numbers have a value in it; of the 34 coded words 25 are read from it alone (0.735) and nine are holes: four words completed from the sense, 'the' before United States (the number is written like 1780), one number unread, and three words with a letter read from the word where the number is blotted or miswritten ({+s}poliations, {+exp}ected, mod{+e})"
       },
       {
         "label": "Barlow to Bassano, 25 Oct 1812 (46 and 47 numbers in two copies), no decipherment",
-        "method": "read with known key",
+        "method": "key recovered based on adjacent plaintext",
         "extent": "partial",
-        "basis": "reading_1812-10-25.md: 42 and 44 numbers from the key; three words completed from the sense; read_share 0.994 whole letter, 0.885 over the coded words"
+        "basis": "reading_1812-10-25.md, with the key recovered from the other letters: 42 of 46 and 44 of 47 numbers have a value in it; of the 26 coded words 22 are read from it alone (0.846) and four are holes: three words completed from the sense and wel{+l}, where the key gives 'wel' and the second l is supplied"
       }
     ],
-    "fraction_read": 0.85,
+    "fraction_read": 0.783,
     "fraction_read_method": "measured",
-    "fraction_read_source": "Coded words of the two readings (60): 51 read from the key alone; the nine with a supplied value ([?word]) or an unread number count as holes (the strict count used for lee1813). Over all words of the two letters, clear text included, the share is 0.988 (738 of 747).",
+    "fraction_read_source": "reading_1812-09-25.md and reading_1812-10-25.md, coded words (in italics) only: 47 of 60 read from the key alone (25 of 34 and 22 of 26). The 13 holes are the eight words with a value supplied from the sense ([?word]), the word with an unread number ([163]th) and the four words with a letter supplied inside them ({+s}poliations, {+exp}ected, mod{+e}, wel{+l}).",
     "codes_open": {
       "open": 9,
       "total": 80,
@@ -286,7 +286,9 @@
         "reading": "reading_1812-09-25.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.978,
+        "read_share": 0.735,
+        "cipher_words": 34,
+        "holes": 9,
         "summary": "Barlow reports that indemnities for past spoliations are at last under discussion on a footing more favorable than he expected, that his note of June has convinced everyone in the imperial confidence, that the Emperor's decision is expected in a few days, and that the treaty will meet no difficulty once the mode of indemnity is agreed."
       },
       {
@@ -297,7 +299,9 @@
         "reading": "reading_1812-10-25.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.994,
+        "read_share": 0.846,
+        "cipher_words": 26,
+        "holes": 4,
         "summary": "Accepting Bassano's invitation to Wilna, Barlow warns that if the project (the treaty of commerce and the convention of indemnities), whose execution would cost the imperial treasury little or nothing, is rejected, the President can see in it nothing but a determined refusal of justice on the part of his Imperial Majesty, which must embarrass the American government in its operations in regard to England as well as France."
       }
     ],
