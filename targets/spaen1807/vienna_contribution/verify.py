@@ -132,7 +132,46 @@ def replay(scratch, locations):
           'rows and cross-letter support tables reproduced byte-for-byte.')
 
 
+def dusseldorf():
+    """Check the 19 November bare-number screen on Düsseldorf No. 6 and rerun it."""
+    folder = BUNDLE / 'dusseldorf'
+    repo_annex = BUNDLE.parents[1] / 'spaen1808' / 'annex_groups.txt'
+    where = {
+        'output/codex_2026-11-17b/nov19_late/spaen1808_projection/PLAN.md': folder / 'PLAN.md',
+        'output/codex_2026-11-17b/nov19_late/shortlist/march/key.tsv': BUNDLE / 'march' / 'key.tsv',
+        'sources/research-repo/targets/spaen1808/annex_groups.txt': repo_annex,
+        'output/spaen1808_2026-11-14/transcription/annex_pass2.txt': folder / 'annex_pass2.txt',
+    }
+    records = list(digest_lines(folder / 'FREEZE.txt'))
+    if sorted(name for _, name in records) != sorted(where):
+        raise ValueError('Unexpected entries in dusseldorf/FREEZE.txt')
+    for wanted, name in records:
+        if digest(where[name]) != wanted:
+            raise ValueError(f'Düsseldorf commitment mismatch: {name}')
+    with tempfile.TemporaryDirectory(prefix='vienna-dusseldorf-') as tmp:
+        root = Path(tmp) / 'targets'
+        work = root / 'spaen1807' / 'vienna_contribution'
+        (work / 'dusseldorf').mkdir(parents=True)
+        (work / 'march').mkdir()
+        (root / 'spaen1808').mkdir()
+        for name in ('screen.py', 'annex_pass2.txt'):
+            shutil.copyfile(folder / name, work / 'dusseldorf' / name)
+        shutil.copyfile(BUNDLE / 'march' / 'key.tsv', work / 'march' / 'key.tsv')
+        shutil.copyfile(repo_annex, root / 'spaen1808' / 'annex_groups.txt')
+        completed = subprocess.run([sys.executable, '-I', '-B', str(work / 'dusseldorf' / 'screen.py')],
+                                   cwd=tmp, text=True, capture_output=True)
+        if completed.returncode:
+            raise RuntimeError(f'dusseldorf/screen.py failed:\n{completed.stderr}')
+        for name in ('bare_numbers.tsv', 'slots.tsv', 'predictions.tsv', 'result.json'):
+            if (work / 'dusseldorf' / name).read_bytes() != (folder / name).read_bytes():
+                raise ValueError(f'Replay mismatch: dusseldorf/{name}')
+    res = json.loads((folder / 'result.json').read_text())
+    print(f"Düsseldorf No. 6: 4 frozen inputs match; {res['covered_slots']} eligible placements over "
+          f"{res['strict_comparable']} agreed positions (minimum 8). Outputs reproduced byte-for-byte; not scored.")
+
+
 if __name__ == '__main__':
     locations = verify_archive()
     with tempfile.TemporaryDirectory(prefix='vienna-evidence-') as tmp:
         replay(Path(tmp), locations)
+    dusseldorf()
