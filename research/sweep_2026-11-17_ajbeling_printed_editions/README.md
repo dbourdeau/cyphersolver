@@ -5,12 +5,13 @@ person has checked any of it. Nothing here is deciphered except where a test is 
 this pull request adds this folder only (CONTRIBUTING.md: "as a pull request with nothing else in it"), so the merge
 into `research/leads.json`, the coverage update and the index row are left to the maintainers.
 
-**Result: 18 rows in `candidates.json`, none with a `vetting` block.** Two are printed ciphertexts (the numbers are set
-in type and the editor says they are unread); sixteen are manuscript leads where an edition or calendar says a passage
+**Result: 17 rows in `candidates.json`, none with a `vetting` block.** Two are printed ciphertexts (the numbers are set
+in type and the editor says they are unread); fifteen are manuscript leads where an edition or calendar says a passage
 is in cipher and was not deciphered, but does not print it. The duplicate check was run on origin/main da9b4c93c
 (17 Nov 2026) and run again on 7d9b91fb8 (22 Nov 2026: `known.py` on the distinctive names, a search of
 `research/leads.json` and `catalogue.json` for each row's names and years, and `merge.py` restricted to this folder,
-which reports 18 rows, 18 new): no row is covered. Seen means seen in the printed edition (`seen: "print"`): no manuscript was viewed for any row.
+which reported 18 rows, 18 new): no row is covered. On 23 Nov one row (Castiglione, 1525) was withdrawn after an
+independent review (see "Not offered"), leaving 17; `merge.py` restricted to this folder then reports 17 rows, 17 new. Seen means seen in the printed edition (`seen: "print"`): no manuscript was viewed for any row.
 
 | # | Year | Item | Holder (as the source gives it) | Cipher |
 |---|---|---|---|---|
@@ -27,11 +28,10 @@ which reports 18 rows, 18 new): no row is covered. Seen means seen in the printe
 | 10 | 1546 | report to Ulm, Schmalkaldic war | Stadtarchiv Ulm (inference) | two passages |
 | 11 | 1630 | Casale letter (Mazarini to F. Barberini: inference) | not named | four lines |
 | 12 | 1650 | Hyde → Toby Mathew | Clarendon MSS (inference) | "the remainder" |
-| 13 | 1525 | letters to Castiglione's circle, 1525-26 | "filza 160" | three passages |
-| 14 | 1807 | French consul in Egypt (Drovetti: inference) | consular series (inference) | three lines |
-| 15 | 1594 | Henri IV → Bellièvre | BnF manuscripts | two lines |
-| 16 | 1644 | d'Estrades, The Hague | AE CP Hollande 33 f. 216 | one line |
-| 17 | 1627 | Zucconi → Cesare Gonzaga, intercepted | not located | many lines, partly deciphered then |
+| 13 | 1807 | French consul in Egypt (Drovetti: inference) | consular series (inference) | three lines |
+| 14 | 1594 | Henri IV → Bellièvre, 10 Oct | BnF fr. 15910 | two lines |
+| 15 | 1644 | d'Estrades, The Hague | AE CP Hollande 33 f. 216 | one line |
+| 16 | 1627 | Zucconi → Cesare Gonzaga, intercepted | not located | many lines, partly deciphered then |
 
 Each row's `status`, `prior_art` and `verify` give the editor's words, what was checked and the next step. Facts taken
 from another research note and not checked again by us are marked "reported, not re-checked by us".
@@ -110,6 +110,12 @@ Dartmouth's "Cypher letter K" of 1775 (key leads, below). The CO 5/96-111 despat
 
 ## Not offered, and why
 
+- **Withdrawn on 23 Nov 2026 until a modern edition is checked:** Baldassarre Castiglione as papal nuncio, on his way
+  to Spain, to Cardinal Giovanni Salviati and Count Guido Rangoni, Lyon and Barcelona, Jan-Feb 1525 (Martinati 1890,
+  Documenti XIV-XVII, pp. 70-72, from the Carte Strozziane, Archivio di Stato di Firenze, "filza 160"): four passages
+  marked in cipher (reported by the reviewer, not re-checked by us). The row as first written misdescribed these as letters to Castiglione's circle with three passages.
+  Castiglione's letters have a modern edition (Lettere famigliari e diplomatiche, ed. La Rocca, Stella and Morando,
+  Einaudi 2016) that may print them with a decipherment; we could not open it, so the row is not offered.
 - **Already read, or a duplicate:** Jerviswood 1702-08 (read in print, see above); Raimondo to Giovanni de' Medici,
   27 Jun 1521 ("Segue un pezzo in cifra non decifrata", Archivio storico italiano n.s. 8 p. 30): upstream's Internet
   Archive full-text sweep saw the same note and set it aside (`research/ia_fulltext/README.md`, "too short, no
