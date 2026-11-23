@@ -3,7 +3,8 @@
 #   [?xxx]  decoded letters we cannot identify as a word: a hole
 #   "|" = line break inside a run (as "/" in the transcription): " | " between words, "|" inside a word
 #   [... extent unknown]  a stretch that does not decode to words; counted as one hole (its true extent is unknown)
-#   A word that contains a sign on which the blind second transcription differs is marked [?word] (a hole), as the plan says;
+#   A word that contains a sign on which the blind second transcription differs is marked [?word] (a hole), as the plan says,
+#   unless a third, blind transcription (23 Nov 2026) agrees with pass 1 there (EN, DOCUMENTOS, TESORERO; NOTES.md);
 #   TENEMOS (f3.02), whose overtyped sign was chosen with the decode, is marked {TENEMOS/TENEMOS} (a hole).
 # scripts/count_words.py checks that the marked letters equal the decryption and counts the words.
 f2.01	QUE CUNDA
@@ -50,12 +51,12 @@ f3.03	RECIBAMOS SUS ULTIMAS {M/D}|ISPOSICIONES
 f3.04	SU [?PARECER]
 f3.05	DEL JEFE DE LAS OPERACIONES
 f3.06	EL SR CORONA
-f3.07	ESTAR UD [?EN] [... extent unknown: NORLOAAS]
+f3.07	ESTAR UD EN [... extent unknown: NORLOAAS]
 f3.08	SABER A PUNTO FIJO DONDE SE ENCUENTRA UD
 f3.09	APLAZADO SU VIAJE {E/A} LOS EEUU
 f3.10	LOS NOMBRES [... extent unknown: FCLCQ|PGPSQLAUOUGGQVCGTYNOSEURRCHUORA]
 f3.11	LIC JO{T/S}E MARIA CAMACHO PTE FIDENCI|O E LOPEZ SRIO MIGUEL MARQUEZ GALINDO PROSECRETARIO DR ALBERTO MORENO TESO|RERO Y FRANCISCO MACHORRO MIGUEL ALVARADO LIC ARTURO OSORIO LIC LUIS GARCI|A [?ARMORA] Y POMPOSO BONILLA VOCALES
-f3.12	LAS PERSONAS QUE DE{C/B}EN FIRMAR [?DO|CUMENTOS] Y QUE SON EL PTE EL SECRETARIO EL P{Ñ/R}OSECRETARIO Y EL [?TESORERO] HAN AD|OPTADO COMO NOMBRES DE {H/G}UERRA RESPECTIVAMENTE
+f3.12	LAS PERSONAS QUE DE{C/B}EN FIRMAR DO|CUMENTOS Y QUE SON EL PTE EL SECRETARIO EL P{Ñ/R}OSECRETARIO Y EL TESORERO HAN AD|OPTADO COMO NOMBRES DE {H/G}UERRA RESPECTIVAMENTE
 f3.13	[... extent unknown: HUIJKCCQFQCNAJEXÑIEW|EJCLRCMGTALQYJWIQÑOPC]
 f3.14	RESPECTO A LA PERSONA QUE SIN SER MIEMBRO DE LA JUNTA REALIZA CONMIGO LO|S TRABAJOS MAS DELICADOS Y DE ESTUDIO Y {T/Q}UE E{R/S} EL LIC RICARDO SUAREZ ESCALANTE | DE QUIEN HE HABLADO A UD CONSTANTEMENTE EN MIS ULT{MI/IM}AS CARTAS DESDE HOY LO MEN|CIONARE CON SU NOMBRE DE GUERRA QUE ES RICARDO LOBATO
 f3.15	DE CONSTITUIRSE LA JUNTA SALIO ELECTO EL LIC JU{Y/A}N CR|ISOSTOMO BONILLA

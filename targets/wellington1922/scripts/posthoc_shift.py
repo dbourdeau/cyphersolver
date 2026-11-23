@@ -1,24 +1,33 @@
-"""POST HOC, NOT COUNTED. Rule (written after the reviewer's observation, 23 Nov 2026): where a run stops giving
-words, the 3-1-3 cycle may be resumed one or two places on (phase 1 or 2) from one stated letter to the end of the
-run, once per run; an unreadable sign ("?") may instead be dropped (the typist's struck sign), which is the same as a
-one-place shift. The point is marked <+1> or <+2> (or <drop>) in the output. The letters after the point are the
-unedited output of that phase. Nothing here enters the counts in NOTES.md or profile.json.
+"""POST HOC, NOT COUNTED. Where a run stops giving words, the 3-1-3 cycle is resumed at a stated letter.
+First noticed by the independent reviewer (one shift of the cycle per run); restated on 23 Nov 2026 after a third,
+blind transcription confirmed every sign of these runs: in each case the cycle restarts (shift 3) at the first letter
+of a word ("restart"), as the Sanchez letter (targets/sanchez1922) does at every word, or a run continues the cycle
+of the run before it across a colon ("continue"). f3.20 needs a second, one-place skip inside PROPIA ("<+1>"), which
+the restart rule does not cover. The letters after each point are the unedited output of that phase.
+Nothing here enters the counts in NOTES.md or profile.json.
 python scripts/posthoc_shift.py > posthoc_shift.txt"""
 import sys, os
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from decrypt import runs, A
-def dec(s, phase=0):
-    return ''.join(A[(A.index(c) - [3, 1, 3][(i + phase) % 3]) % 27] for i, c in enumerate(s))
-# run id: (letter index where the shift starts, 0-based in the run's letters with "/" removed; phase or 'drop')
-SHIFTS = {'f2.19': (19, 'drop'), 'f3.10': (10, 2), 'f3.13': (0, 1), 'f3.20': (20, 1)}
 here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 T = {rid: s.replace('/', '') for rid, _, _, s in runs(os.path.join(here, 'transcription_DCXXI.6.588.1.txt'))}
-print('# POST HOC, NOT COUNTED: one shift of the 3-1-3 cycle per run (rule in scripts/posthoc_shift.py)')
-for rid, (at, ph) in SHIFTS.items():
-    s = T[rid]; head = dec(s[:at]) if at else ''
-    if ph == 'drop':
-        head = dec(s[:at]); tail = s[at + 1:]; out = head + '<drop>' + dec(tail, at % 3)
-    else:
-        out = head + f'<+{ph}>' + dec(s[at:], (at + ph) % 3)
+# run id: list of (letter index, 0-based in the run's letters with "/" removed, where the key position changes; new key position)
+# key position 0 = shift 3 (a restart); for "continue", the key position the previous run would reach.
+POINTS = {
+    'f2.19': [(16, 0, 'restart')],                                   # PAULATINAS
+    'f3.10': [(10, 0, 'restart')],                                   # DE LAS PERSONAS ...
+    'f3.13': [(0, len(T['f3.12']) % 3, 'continue f3.12')],           # f3.12 has 130 letters: 130 mod 3 = 1
+    'f3.20': [(20, 0, 'restart'), (57, (57 - 20 + 1) % 3, '+1')],         # BONILLA ...; PROP<+1>IA
+}
+def dec_from(s, pos):
+    return ''.join(A[(A.index(c) - [3, 1, 3][(pos + i) % 3]) % 27] if c in A else c for i, c in enumerate(s))
+print('# POST HOC, NOT COUNTED: restarts of the 3-1-3 cycle (rule and reasons in scripts/posthoc_shift.py and NOTES.md)')
+for rid, pts in POINTS.items():
+    s = T[rid].replace('?', 'Ñ')   # f2.19 sign 20: Ñ typed over B (blind passes 2 and 3); as a letter of PAULATINAS it gives L
+    out, prev, pos = '', 0, 0
+    for at, newpos, label in pts:
+        out += dec_from(s[prev:at], pos) + f'<{label}>'
+        prev, pos = at, newpos
+    out += dec_from(s[prev:], pos)
     print(f'{rid}\t{out}')

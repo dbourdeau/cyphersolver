@@ -123,7 +123,7 @@
   {
    "date": "2026-11-23",
    "kind": "reading",
-   "what": "Runs divided into words in their clear sentences, every departure marked; scripts/count_words.py checks the marks against the decryption: 247 clean words of an estimated 296 word places (0.834).",
+   "what": "Runs divided into words in their clear sentences, every departure marked; scripts/count_words.py checks the marks against the decryption: 247 clean words of an estimated 296 word places (0.834); 250 (0.845) after the third transcription below.",
    "result": "partial"
   },
   {
@@ -136,6 +136,21 @@
    "date": "2026-11-23",
    "kind": "hypothesis",
    "what": "POST HOC, not counted: one shift of the 3-1-3 cycle per run reads f3.10 (las personas que integran nuestra junta), f3.13 (war names J. Siliceo, F. Sánchez, Miguel Altamirano, Luis Mora; 'F. Sánchez' is the signature of sanchez1922) and part of f3.20.",
+   "result": "partial",
+   "technique": [
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "what": "Third transcription of all 60 runs, blind (two separate AI agents from their own crops, measuring the typewriter pitch): it agrees with the transcription letter for letter except at six signs already marked doubtful (f2.19 s20, f3.04 s5, f3.07 s13-16, f3.10 s42, f3.12 s110, f3.14 s151). It agrees with pass 1 where pass 2 differed in EN (f3.07) and DOCUMENTOS, TESORERO (f3.12), which become clean (250 clean words); it confirms every sign of the one-letter slips and of the stretches that give no words, so those are slips of the typist or encipherer, not misreadings.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "what": "POST HOC, not counted: every shift of the cycle found so far puts the start of the 3-1-3 cycle on the first letter of a word (f2.19 PAULATINAS, f3.10 DE LAS PERSONAS, f3.20 BONILLA), as the Sánchez letter does at every word, or continues the previous run across a colon (f3.13 after f3.12's 130 letters). A rule frozen on this (plan SHA-256 c17933f5...) found nothing new: the stretches it had not seen (f3.07 tail, 8 letters; f3.22 tail, 4) are too short to beat shuffled controls, and f3.20's end reads COMO VOCAL EN LA PROPIA JUNTA only with a one-place skip inside PROPIA, outside the rule. Outside support: the CEHM catalogue names JOSÉ SILICEO and RICARDO LOBATO in a later Wellington letter (DCXXI.6.624.1) and gives J. W. Wellington as a pseudonym of Fidencio E. López (DCXXI.8.731.1).",
    "result": "partial",
    "technique": [
     "key-structure hypothesis"
@@ -155,9 +170,9 @@
   "contribution": [
    "transcription"
   ],
-  "fraction_read": 0.834,
+  "fraction_read": 0.845,
   "fraction_read_method": "measured",
-  "fraction_read_source": "247 clean words of an estimated 296 word places in the 60 runs (scripts/count_words.py): each unread stretch's words estimated from its letters (5.36 letters per clean word); 275 places, 0.898, if each stretch counts as one word. A word with any repaired, supplied or doubtful letter is a hole.",
+  "fraction_read_source": "250 clean words of an estimated 296 word places in the 60 runs (scripts/count_words.py): each unread stretch's words estimated from its letters (5.38 letters per clean word); 275 places, 0.909, if each stretch counts as one word. A word with any repaired, supplied or doubtful letter is a hole.",
   "verification": [
    "matched control",
    "contemporary decipherment",
@@ -198,8 +213,8 @@
     "language": "es",
     "state": "read in part",
     "summary": "A felicista agent reports to Félix Díaz: fear of discouragement for lack of a united force; General Mallén, serving Obregón, has turned Torruco against Cástulo Pérez; Federico Córdoba falsely claims to act for Peláez and Díaz; a movement is ready throughout the state; the Puebla junta's officers and members are named (Lic. José María Camacho, president; Fidencio E. López; Miguel Márquez Galindo; Dr. Alberto Moreno; Machorro, Alvarado, Osorio, García, Pomposo Bonilla); Lic. Ricardo Suárez Escalante (not 'Juárez' as printed by Narváez) is to be called 'Ricardo Lobato'.",
-    "note": "247 clean words of an estimated 296 word places in the 60 runs (holes: 11 one-letter slips, 'que es', 'ultimas', 'tenemos' chosen with the decode, 4 words with a sign on which the blind second pass differs, 5 unidentified words, 6 stretches with no words). Further runs read only post hoc with a shift in the key cycle (NOTES.md), not counted. Narváez's printed part is not counted. Correction: folio 1's run decodes SUAREZ ESCALANTE, not 'Juárez' as Narváez prints.",
-    "read_share": 0.834
+    "note": "250 clean words of an estimated 296 word places in the 60 runs (holes: 11 one-letter slips, 'que es', 'ultimas', 'tenemos' chosen with the decode, 'parecer' with an overtyped sign, 5 unidentified words, 6 stretches with no words). Further runs read only post hoc with a restart of the key cycle (NOTES.md), not counted. Narváez's printed part is not counted. Correction: folio 1's run decodes SUAREZ ESCALANTE, not 'Juárez' as Narváez prints.",
+    "read_share": 0.845
    }
   ],
   "key_file": [
@@ -212,9 +227,9 @@
     "detail": "Under the watermark and an overtyping."
    },
    {
-    "item": "f2.19 after the overtyped sign (17 letters), f3.10 after 'LOS NOMBRES' (37), f3.13 the war names (41), f3.20 after 'POMPOSO' (43)",
-    "blocker": "not-attempted",
-    "detail": "Slips in the key cycle; read post hoc with a one-place shift (NOTES.md), not counted until a frozen test."
+    "item": "f2.19 after DESINTEGRACIONES (21 letters), f3.10 after 'LOS NOMBRES' (36), f3.13 the war names (41), f3.20 after 'POMPOSO' (44)",
+    "blocker": "too-short",
+    "detail": "Slips in the key cycle, read post hoc (paulatinas orientación; de las personas que integran nuestra junta; J. Siliceo, F. Sánchez, Miguel Altamirano y Luis Mora; Bonilla, hermano del Lic., como vocal en la propia junta), with the CEHM catalogue naming José Siliceo; not counted, as the restart rule frozen afterwards had no unseen stretch long enough to test it (NOTES.md)."
    },
    {
     "item": "[?ARMORA] (f3.11), [?CELA] (f3.22)",
@@ -222,9 +237,9 @@
     "detail": "One occurrence each."
    },
    {
-    "item": "[?PARECER], [?EN], [?DOCUMENTOS], [?TESORERO]",
+    "item": "[?PARECER] (f3.04)",
     "blocker": "illegible",
-    "detail": "Faint signs on which the two transcriptions differ."
+    "detail": "Its fifth sign is S and B typed over each other; S gives PARECER, B nothing, so it is settled only by the decode. (EN, DOCUMENTOS, TESORERO were settled by a third, blind transcription on 23 Nov 2026.)"
    },
    {
     "item": "Faint letters of folio 3",

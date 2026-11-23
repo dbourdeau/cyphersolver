@@ -41,3 +41,12 @@ A run is "read" only if every word in it is verbatim or repaired and the words b
 - Counting follows the repository's strict rule (a repaired or doubtful word is a hole), stricter than the plan's
   "verbatim / repaired / holes", and estimates the words hidden by each unread stretch: 247 clean of an estimated 296
   word places (0.834); 275 places if each stretch counts as one word.
+
+## Added 23 Nov 2026 (after the third transcription)
+
+A second plan (SHA-256 c17933f51479fbe15089478113b062a85e628ba9626d4709fd522569440ba5c7, kept in the contributor's
+work folder with its scripts and outputs) froze a restart rule for the key cycle before running it on stretches it had
+not been seen on: the cycle may restart (shift 3) at the first letter of a word, once per unread stretch, or a run
+may continue the previous run's cycle across punctuation; 1,000 shuffles of each stretch as controls; pass at 80% of
+letters in words and above the controls' 99th percentile. Result: f3.07's tail (8 letters) and f3.22's tail (4) are too
+short and missed; f3.20's end needs a skip inside PROPIA, outside the rule, a miss. The counts are unchanged by it.
