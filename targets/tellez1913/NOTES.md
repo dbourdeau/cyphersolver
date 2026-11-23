@@ -27,8 +27,10 @@ Guillermo Rubio Navarrete):
   ([record 137860](https://www.cehm.org.mx/Buscador/FichaBasica/137860?Tipo=A)), and Téllez's 8 Oct 1913 telegram
   DLXXIII.1.32.3-41 ([record 137925](https://www.cehm.org.mx/Buscador/FichaBasica/137925?Tipo=A)), used for training.
 
-Images: CEHM public viewer. The viewer states no reuse licence, so the images are linked, not committed. Only text
+Images: CEHM public viewer. The site has no terms-of-use page and its pages state no reuse licence; the footer reads "Todos los Derechos Reservados". So the images are linked, not committed. Only text
 recognised from them is committed (the transcriptions, and Apple Vision text in `*.jpg.vision.tsv`).
+
+The `*.sha256` files record the paths of the working folder where the runs were made, so `shasum -c` on them fails here; `AUDIT.py` and `rerun_tests.py` check them against the files in this folder. `SHA256SUMS` at the top of this folder lists every committed file by its path here (`shasum -a 256 -c SHA256SUMS`).
 
 ## System and key
 
@@ -120,7 +122,7 @@ Villa key values and a copy of Jalkut's card.
 
 - [x] siblings: the 8 Oct telegram (1.32.3-41; its second sheet found after the test) used; the catalogue records of the next three shelfmarks after 15 Oct checked, none described as cipher.
 - [x] clear-pages: the July pencil draft is the only contemporary decipherment found; its glosses are in the table.
-- [x] known-keys: Clave 109 (rubio1913), the limantour1909 key, the Villa key of #865 and Jalkut's card tried; none fits.
+- [x] known-keys: the limantour1909 key and the Villa key of #865 (not upstream) cover too few groups to test (19-31%). Jalkut's card missed on both telegrams (14 Oct: 542 and 370 of 1,000 shuffles beaten; 15 Oct: 196 and 192), but the test is void here because this folder's own table, the positive control, failed the plan's word criterion. Clave 109 (rubio1913) belongs to the War Ministry traffic and was not scored on these two telegrams.
 - [x] print: Narváez 2015, 2025 and the 2019 book (chapters VII-XI and index) checked; no reading.
 - [x] key-rebuild: table extended from the July glosses and the 8 Oct telegram; the October 14 additions tested and missed.
 - [n/a] retry: no new tested value since the 15 Oct test; the period sheet DLXXIII.1.28.8-23 is the next thing to compare.

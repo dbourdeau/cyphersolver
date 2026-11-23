@@ -13,9 +13,9 @@ Guerra y Marina, con el General Guillermo Rubio Navarrete" (CEHM DLXXIII.1.28.14
 This telegram goes the other way, from the Ministry to Rubio. The key is read in place from `../rubio1913/key.tsv`
 and not copied; no value was added or changed.
 
-Under the one-key rule this telegram belongs with rubio1913, since it shares the key. It is kept in its own folder
-for now so that Brice's finished target, and his open pull request #808 on the same NOTES.md and profile.json, are not
-disturbed. The maintainers may fold it into rubio1913 later. Nothing in `rubio1913/` is changed. The October 1913
+This telegram uses Brice Dudout's Clave 109, so by the one-key rule it belongs in rubio1913. It is kept in its own
+folder only so as not to collide with his open pull request #808, which edits the same NOTES.md and profile.json. Once
+#808 is merged, Brice or Daniel may move it into rubio1913 (one document, its steps and a NOTES section), or I can. Nothing in `rubio1913/` is changed. The October 1913
 telegrams to Téllez use another table and are in `targets/tellez1913/`.
 
 ## Document
@@ -27,8 +27,10 @@ groups in 14 runs between clear Spanish. [Record 138008](https://www.cehm.org.mx
 Comparison: DLXXIII.2.41.17-41, [Rubio] to Huerta, 25 Mar 1914, one recovered sheet, 107 groups
 ([record 138003](https://www.cehm.org.mx/Buscador/FichaBasica/138003?Tipo=A)).
 
-Images: CEHM public viewer. The viewer states no reuse licence, so the images are linked, not committed. Only text
+Images: CEHM public viewer. The site has no terms-of-use page and its pages state no reuse licence; the footer reads "Todos los Derechos Reservados". So the images are linked, not committed. Only text
 recognised from them is committed (the two blind transcriptions in `read_one/` and `read_two/`).
+
+The `*.sha256` files record the paths of the working folder where the runs were made, so `shasum -c` on them fails here; `AUDIT.py` and `rerun_tests.py` check them against the files in this folder. `SHA256SUMS` at the top of this folder lists every committed file by its path here (`shasum -a 256 -c SHA256SUMS`).
 
 ## Test
 
