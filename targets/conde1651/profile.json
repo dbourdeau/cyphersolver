@@ -221,7 +221,7 @@
   "validation": {
    "date": "2026-11-23",
    "verdict": "pass",
-   "notes": "Held-out P1370688 (17 Aug letter, pp. 2-3), 410 signs, reference = Brianson's typescript capitals: K2 0.869 vs best control 0.293 (criterion >= 0.85 and >= control + 0.30). Our 1655 Condé-Barrière key on the same portion: 0.205 (fail). Two keys scored in one run (declared). Portion burnt."
+   "notes": "Held-out P1370688 (17 Aug letter, pp. 2-3), 410 signs measured, reference = Brianson's typescript capitals (prereg/reference_brianson_688.txt, held outside the repository, SHA-256 in prereg/PREREG.sha256): K2 0.869 vs best control 0.293 (criterion >= 0.85 and >= control + 0.30). Step not in PREREG.md: before scoring, the '?' flags of the arbitrated transcription (29 of the 412 held-out signs) were removed mechanically, the sign kept as read (prereg/transcription_mesure.json, now in the repository; its SHA-256 was added to PREREG.sha256 at 02:06 on 23 Nov 2026, after PREREG.md was frozen at 01:43 and before the result file at 02:08, by file times). With the flags kept, as filed in blind/P688_arbiter.json, the same score.py gives 0.792 vs best control 0.296: fail. The pass therefore rests on that step, which was declared as a deviation after the run but was not pre-registered (validation.json, flags_step). Our 1655 Condé-Barrière key on the same portion: 0.205 (fail). Two keys scored in one run (declared). Portion burnt."
   },
   "class": "already solved",
   "key": "recovered",
@@ -257,19 +257,19 @@
   ],
   "gaps": [
    {
-    "item": "unresolved name codes",
+    "item": "unresolved name and word codes: 96, 97, 99 (bare), 59 (bare), 66′, 98′, 12~, 35~, 62′, 8¯, 83¯, 29¨ and the 17 Aug marginal insertion (85, 95)",
     "blocker": "open-codes",
-    "detail": "96, 97, 99 (bare), 66′, 98′, 12~, 35~, 85, 95, 8¯, 62′; Brianson (1983): 96 probably du Dognon, 97 very probably Laisné"
+    "detail": "Absent from Brianson's key; he left them ?/n too (1983: 96 probably du Dognon, 97 very probably Laisné). The 1652 Roman-numeral name table of the same bundle (P1370715-717) is another system: 0 of 9 known names agree, none resolved (NOTES-addendum)."
    },
    {
-    "item": "K2b corrections",
-    "blocker": "no-key-material",
-    "detail": "symbol-name correspondences and 18′/19′ grid shift (key_K2b.tsv) not validated"
+    "item": "K2b: symbol-name correspondences, the 18′/19′ grid shift and about 20 values found after decoding (key_K2b.tsv)",
+    "blocker": "too-short",
+    "detail": "No fresh held-out portion of at least 300 signs remains (P1370688 burnt, the four other letters used to find K2b), so K2b is not validated and gives no sure word."
    },
    {
-    "item": "17 Aug letter, 4th page",
-    "blocker": "illegible",
-    "detail": "P1370689 is a grey frame; date/close not seen"
+    "item": "17 Aug letter, 4th page (P1370689)",
+    "blocker": "needs-physical-access",
+    "detail": "The photograph is a grey frame; the end of the letter (from 'travaillez de [mesme] sorte'), its date and close were not seen. A new photograph at the AD Dordogne would give it."
    }
   ],
   "texts": [
@@ -281,7 +281,8 @@
     "reading": "reading_1651-08-06.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "75 of 154 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript."
+    "summary": "75 of 154 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript.",
+    "translation": "translation_en_1651-08-06.md"
    },
    {
     "doc": "1651-08-13",
@@ -291,7 +292,8 @@
     "reading": "reading_1651-08-13.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "92 of 155 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript."
+    "summary": "92 of 155 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript.",
+    "translation": "translation_en_1651-08-13.md"
    },
    {
     "doc": "1651-08-17",
@@ -301,7 +303,8 @@
     "reading": "reading_1651-08-17.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "170 of 264 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript."
+    "summary": "170 of 264 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript.",
+    "translation": "translation_en_1651-08-17.md"
    },
    {
     "doc": "1651-08-25",
@@ -311,7 +314,8 @@
     "reading": "reading_1651-08-25.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "64 of 113 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript."
+    "summary": "64 of 113 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript.",
+    "translation": "translation_en_1651-08-25.md"
    },
    {
     "doc": "1651-09-03",
@@ -321,7 +325,8 @@
     "reading": "reading_1651-09-03.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "73 of 102 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript."
+    "summary": "73 of 102 cipher words sure (rule of #728); the letter is already fully deciphered in Brianson's unpublished typescript.",
+    "translation": "translation_en_1651-09-03.md"
    }
   ],
   "key_file": "key.tsv"
