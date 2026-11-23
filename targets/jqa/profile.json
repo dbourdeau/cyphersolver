@@ -515,6 +515,15 @@
    ],
    "what": "Review corrections: the two lines (17 cipher words, 2 holes) are 'read' under the short-text floor of README Conventions (19 Nov 2026), recorded as floor_used, cipher_words 17, holes 2, so outcome.texts agrees with documents[]; the third agent's blind reading described exactly (528 first, 548 on a second look; 116x, 891/841 and the gutter group left open); the six-line comparison with the September reading gives its two exceptions and the one-digit rule for 1236, 209 and 820; the test plan's preface names the replaced test name.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Held-out test of code_table.tsv on Adams's despatches of 1810 (Andrew Beling, with AI agents; beling1810/). Plan and pass mark hashed before the run (agreement >= 0.80 and >= best of 100 shuffled tables + 0.30). 22 coded passages of Nos. 21, 23, 24, 25, 27 and 28 (NARA M35 reel 2, 3,083 groups, our first transcriptions) aligned with align.py, unchanged, against their independent plaintexts (Ford 3:469; the period decipherments on frames 156-159, 169-172, 178-179, 184). Coverage 0.922, agreement 0.730, shuffled best 0.125 (median 0.077): MISS by the mark set, though far from chance; strict read words 1,186 of 2,331 (0.509). Blind second transcriptions by helper agents agree with the first at 0.716 (No. 24) and 0.751 (No. 29); No. 24 rescored post hoc on its second transcription: 0.814. No. 29 (no witness) decoded with the M97 sheet alone (no29_decode.txt) and written as sentences by a model (no29_reading.md; 695 of 772 coded words without holes, 0.900; not checked by a person). The table is not changed.",
+   "result": "failed"
   }
  ],
  "outcome": {

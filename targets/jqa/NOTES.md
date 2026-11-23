@@ -419,6 +419,78 @@ or emended letter is a hole. The first count of 21 Nov had taken intention[s], e
 - Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society) was not seen. It should
   carry the plain words and would settle the holes.
 
+## Adams's despatches of 1810 (held-out test, 22 Nov 2026)
+
+Andrew Beling, with AI agents; files in `beling1810/` (README there). Nothing outside that folder changes the table,
+the clerk files or the readings of No. 88.
+
+**What.** Adams's despatches Nos. 21-29 of 1810 (NARA M35 reel 2) are in this code, as noted in section 1 for frame
+0155. Seven have coded passages. Six can be paired with an independent plaintext: No. 21 with Ford 3:469, and Nos. 23,
+24, 25, 27 and 28 with the decipherments made in the Department and filed with them (frames 156-159, 169-172,
+178-179, 184). No 1810 material went into `code_table.tsv`, so these 22 passages, 3,083 groups, are a held-out test of
+it. No. 29 (19/31 Oct 1810, frames 185R-189L) has no decipherment and is decoded with the key sheet alone.
+
+**In print.** Ford vol. 3 prints Nos. 21, 23 and 24 with their coded passages in clear and in italics (3:469,
+3:486-496, 3:503-507), and No. 22, which has no code. The 1980 documentary volume *The United States and Russia: The
+Beginning of Relations, 1765-1815* prints No. 27 with both passages (seen only through the Internet Archive's full-text
+search of its loan copy). *American State Papers, Foreign Relations* vol. 3 has none of them. Nos. 25 and 28 were not
+found in print, and No. 29 was not found in print or in a contemporary decipherment.
+
+**Plan, written first.** `beling1810/PLAN.md`, hashed before the first run (`PLAN.sha256`, 22:40 EST). The measure is
+`align.py`'s own alignment, imported unchanged, with the table alone: the share of valued groups whose table value
+falls on the witness letters at that place. The control is 100 tables with the value sets shuffled among the numbers.
+The pass mark is pooled agreement >= 0.80 and >= the best shuffled table + 0.30.
+
+**Result: MISS.** Over 3,083 groups:
+- 2,843 have a value in the table (coverage 0.922).
+- Agreement is **0.730**. The shuffled tables reach best 0.125 and median 0.077.
+- The separation from chance is large, but agreement is under the 0.80 that was set, so by the plan this is a miss.
+
+| Despatch | Groups | Agreement | Coverage | Read words, strict |
+|---|---|---|---|---|
+| No. 21, 16 Aug 1810 | 33 | 0.719 | 0.970 | 14/21 (0.667) |
+| No. 23, 5 Sep | 1,014 | 0.721 | 0.927 | 417/829 (0.503) |
+| No. 24, 20 Sep | 458 | 0.708 | 0.904 | 164/366 (0.448) |
+| No. 25, 30 Sep | 1,266 | 0.739 | 0.920 | 456/845 (0.540) |
+| No. 27, 12 Oct | 267 | 0.760 | 0.936 | 117/196 (0.597) |
+| No. 28, 10/22 Oct | 45 | 0.690 | 0.933 | 18/74 (0.243) |
+| All | 3,083 | 0.730 | 0.922 | 1,186/2,331 (0.509) |
+
+Read words, strict: a word of the witness counts only when every letter comes from a group whose table value the
+alignment places there. By that count the table alone reads half the words. The passages are read, but from the period
+decipherments, not from this table.
+
+**Why under 0.80: the transcriptions.** Two transcriptions were made for three despatches; the second readings of
+Nos. 24 and 29 were made blind by helper agents from the film alone (`beling1810/transcriptions/`). Agreement number
+by number:
+- No. 21: 33 of 33.
+- No. 24: 330 of 461 (0.716).
+- No. 29: 878 of 1,169 (0.751).
+
+Most of the differences are 0/6/8, 3/8 and 5/0. Scored on its blind second transcription after the registered run
+(post hoc, not part of the pass mark), No. 24 goes from 0.708 to **0.814** agreement and from 164 to 223 of 363 read
+words (`heldout_no24_second.txt`). So much of the shortfall is our reading of the film, not the table. Nos. 23 and 25
+have one transcription, and Nos. 27 and 28 one made after the witness had been read. No. 28-A is largely washed out.
+
+**No. 29, with the key sheet alone** (`no29_decode.txt`, both transcriptions decoded with
+`../morris1813/beling/key/codebook_M97_13_transcription.csv`, unchanged). A model wrote it as sentences from the decode
+alone (`no29_reading.md`): 772 coded words, 77 holes (22 inferred, 46 with supplied letters, 9 unread), 695 built from
+group values, 0.900. About ten of the group values used come from the rebuilt table where the sheet gives none or another.
+
+It says that French pressure since February 1810 had worked to shut American ships out of Russian ports, or at least to
+ban colonial goods. A ban on refined sugar, proposed in April and backed by a French-written memorial, was debated in
+the Council and rejected. The Emperor declared his resolution not to exclude American vessels.
+
+This is a model reading, not checked by a person and with no witness: decoded and read in part, not counted in any
+share here.
+
+**Two single values met in passing** (alignment output, not checked on the film):
+- 570, which the table has as *tol* (H, 11x) and which No. 88 writes where *was* is wanted, aligns with *was* in No. 25-A
+  ("but [570] ultimately rejected", frame 167R). It aligns with *tol(d)* in No. 23-D.
+- 1185, *wick* on the sheet, spells Sles*wick* in No. 25-D; that confirms the sheet's value, which does not fit No. 88.
+
+Neither changes anything here. The 570 in No. 25 should be looked at on frame 167R.
+
 ## Transcription doubts
 
 For No. 85 (the three files of 21 Nov 2026). The doubts of No. 88 are in the sections on the image checks above.
