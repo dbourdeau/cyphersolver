@@ -90,7 +90,7 @@
     "by": "llm from images",
     "source": "NARA M35 reel 3 frame 0197 (National Archives Catalog record 188725601)",
     "image_quality": "poor",
-    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026 (beling/no85_no74_2026-11-21/trans_A, trans_B), merged; a third agent read the passage blind afterwards and agrees at every group. One group differed between the two (528/548), settled on an enlargement. The plural mark after 1378 and 1369 is not in the file (see we028_no85.tsv). The film is pure black and white. python docs/_check_profile.py --measure: 26 tokens."
+    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026 (beling/no85_no74_2026-11-21/trans_A, trans_B), merged; a third agent read it blind afterwards. Its blind reading agreed at every group except the last of the two lines, where it first read 528 and on a second look 548; it left 116x, 891/841 and the gutter group open, as the transcribers did. One group differed between the two (528/548), settled on an enlargement. The plural mark after 1378 and 1369 is not in the file (see we028_no85.tsv). The film is pure black and white. python docs/_check_profile.py --measure: 26 tokens."
    }
   },
   {
@@ -120,7 +120,7 @@
     "by": "llm from images",
     "source": "NARA M35 reel 3 frame 0197 (National Archives Catalog record 188725601)",
     "image_quality": "poor",
-    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026, merged; a third agent's blind reading agrees at every group. 116x: the last figure is blotted; 9x: cut by the binding gutter after the 9 (both counted as tokens by --measure: 35). 1436 and 1626 stand on the film as written."
+    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026, merged; a third agent read it blind afterwards. Its blind reading agreed at every group except the last of the two lines, where it first read 528 and on a second look 548; it left 116x, 891/841 and the gutter group open, as the transcribers did. 116x: the last figure is blotted; 9x: cut by the binding gutter after the 9 (both counted as tokens by --measure: 35). 1436 and 1626 stand on the film as written."
    }
   },
   {
@@ -489,7 +489,7 @@
   {
    "date": "2026-11-21",
    "kind": "verification",
-   "what": "A third agent read frame 0197 and the first eight groups of frame 0168 from its own enlargements before opening the sheet or the transcriptions: the same numbers at every group of 0197, the same reading of both runs (it proposed ex-plain-ed, 1138, where ex-pound-ed, 1160, had been proposed; both are recorded, the word is a hole), and 'P-russia' on 0168. It read 887 where the clerk's sheet has 387, so 'issue' rests on the clerk's figures. Ten numbers of the test detail checked against frame 0196: nine as the file says, one clerk's word misplaced by a transcriber.",
+   "what": "A third agent read frame 0197 and the first eight groups of frame 0168 from its own enlargements before opening the sheet or the transcriptions: its blind reading agreed at every group of 0197 except the last of the two lines (first 528, on a second look 548), leaving 116x, 891/841 and the gutter group open as the transcribers did; the same reading of both runs (it proposed ex-plain-ed, 1138, where ex-pound-ed, 1160, had been proposed; both are recorded, the word is a hole), and 'P-russia' on 0168. It read 887 where the clerk's sheet has 387, so 'issue' rests on the clerk's figures. Ten numbers of the test detail checked against frame 0196: nine as the file says, one clerk's word misplaced by a transcriber.",
    "result": "partial"
   },
   {
@@ -505,6 +505,15 @@
     "other"
    ],
    "what": "Recount of the three No. 85 readings under README Conventions (16 Nov 2026: a word with a supplied or emended letter is a hole): intention[s], expectation[s], objection[s] (s supplied from the plural mark) and los[s] (the sheet gives lose) are now holes. Two lines 15 of 17 = 0.882, now read in part (was 17 of 17, read); three lines 19 of 23 = 0.826 (was 20); six lines 50 of 55 = 0.909 (was 51). NOTES.md also states the weaknesses: the plan's freeze hash is local only; 548 and 398 settled partly by sense; 'issue' rests on the clerk's 387 against 887 read by two of three film readers; the Adams letterbook copy (reel 136) not seen.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Review corrections: the two lines (17 cipher words, 2 holes) are 'read' under the short-text floor of README Conventions (19 Nov 2026), recorded as floor_used, cipher_words 17, holes 2, so outcome.texts agrees with documents[]; the third agent's blind reading described exactly (528 first, 548 on a second look; 116x, 891/841 and the gutter group left open); the six-line comparison with the September reading gives its two exceptions and the one-digit rule for 1236, 209 and 820; the test plan's preface names the replaced test name.",
    "result": "partial"
   }
  ],
@@ -700,10 +709,13 @@
     "decryption": "texts/no85_two_lines_decryption.md",
     "reading": "texts/no85_two_lines_reading.md",
     "language": "en",
-    "state": "read in part",
+    "state": "read",
     "read_share": 0.882,
     "summary": "After reporting that the English negotiator Thornton has probably pledged his government's consent to the neutrality of Sweden, Adams adds in code that there is some uncertainty how far the neutral intentions and expectations of Sweden herself extend.",
-    "note": "21 Nov 2026 (Andrew Beling, with AI agents), recounted 22 Nov 2026 under README Conventions of 16 Nov 2026: 17 words, 15 read = 0.882; holes intention[s] and expectation[s] (the s supplied from the plural mark). 26 groups, 24 sure and 2 probable in we028_no85.tsv. No reading review recorded yet: for the reviewer."
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents), recounted 22 Nov 2026 under README Conventions of 16 Nov 2026: 17 words, 15 read = 0.882, read under the short-text floor (README Conventions, 19 Nov 2026: under 40 cipher words, at most 2 holes); holes intention[s] and expectation[s] (the s supplied from the plural mark). 26 groups, 24 sure and 2 probable in we028_no85.tsv. No reading review recorded yet: for the reviewer.",
+    "floor_used": true,
+    "cipher_words": 17,
+    "holes": 2
    },
    {
     "doc": "no85-three-lines",

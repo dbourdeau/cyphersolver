@@ -357,7 +357,7 @@ copied in figures, 387.1431.1101, with a cross and the note "Error in Cypher." (
 
 **Transcription.** Two agents copied every group of 0196 left, 0197 left and 0168 (both leaves) and the clerk's sheet, blind to
 each other, to any table, to the files of this folder and to print (796 tokens; the same number at 717; doubted by neither at
-600). A third agent later read 0197 and the first line of 0168 blind as well. The right leaf of 0168 has 20 lines of code.
+600). A third agent later read 0197 and the first line of 0168 blind as well. Its blind reading agreed at every group except the last of the two lines, where it first read 528 and on a second look 548; it left 116x, 891/841 and the gutter group open, as the transcribers did. The right leaf of 0168 has 20 lines of code.
 
 **Check before reading (plan written first, one run).** The code sheet (NARA M97 roll 13 frames 1056-1057, Weber WE028;
 `../morris1813/beling/key/`), unchanged, against the clerk's own decipherment of these two despatches, number by number, scored
@@ -371,8 +371,9 @@ the sheet (the third agent's report records the opposite view). One is a real di
 in con-fi-den-ce.
 
 **The two lines** (`no85_two_lines.txt`, 26 groups; `texts/no85_two_lines_reading.md`): "You will here perceive some uncertainty
-how far the neutral intention[s] and expectation[s] of Sweden herself extend." 17 words, 15 read = 0.882, read in part: the s of
-intention[s] and expectation[s] is supplied from the plural mark, so both are holes (README Conventions, 16 Nov 2026). Not in print; not read here
+how far the neutral intention[s] and expectation[s] of Sweden herself extend." 17 words, 15 read = 0.882: the s of
+intention[s] and expectation[s] is supplied from the plural mark, so both are holes (README Conventions, 16 Nov 2026). Read under the
+short-text floor (README Conventions, 19 Nov 2026: fewer than 40 cipher words, at most 2 holes): 15 of 17, 2 holes. Not in print; not read here
 before.
 
 **The three lines** (`no85_three_lines.txt`, 35 groups, two cut or blotted; `texts/no85_three_lines_reading.md`): "and the
@@ -384,11 +385,12 @@ English meaning of neutrality, and the Swedish meaning of it is to be ... by the
 loss of Finland, the roots of that neutrality are not very profound." Not in print; not read here before.
 
 **The six lines after "Dominions"** (`no85_foot.txt`, 75 groups; `texts/no85_foot_reading.md`): a second reading of the lines
-first read with the rebuilt table on 22 Sept 2026 (`ford1812b_notes.md`), now with the code sheet. It agrees with that reading
-and adds the sheet value of each number that does not fit (1236 ground, 209 pres, 49 United States, 1501 A, 820 delegate, all
+first read with the rebuilt table on 22 Sept 2026 (`ford1812b_notes.md`), now with the code sheet. It agrees with that reading,
+except that 49 is United States on the sheet where September guessed 'they' and the dots after 'Norway' are line filler, and adds the sheet value of each number that does not fit (1236 ground, 209 pres, 49 United States, 1501 A, 820 delegate, all
 five in three independent transcriptions), Sweden (39) for the 49 where the September reading guessed "they", and that the dots
 after "Norway" are line filler, not "without". 55 words, 50 read = 0.909 (objection[s], with its s supplied from the plural
-mark, is a hole).
+mark, is a hole). Three of the five numbers that do not fit (1236, 209, 820) count as read under the one-digit rule; 49 and
+1501 are holes.
 
 **No. 74, the three groups "in error".** On the sheet 387 is sue, 1431 into, 1101 P. The line is 199 888 1399 143x 387 1431
 1101 948 668 869 ...: how long this [is] sue into P Russia and Austria, that is, "How long this is-sue into P-russia and Austria
@@ -407,7 +409,8 @@ not online), which should have the plain words.
 
 **Counts and weaknesses (recount of 22 Nov 2026).** The counts above follow the rule of 16 Nov 2026: a word with a supplied
 or emended letter is a hole. The first count of 21 Nov had taken intention[s], expectation[s], objection[s] and los[s] as read
-(17 of 17, 20 of 23, 51 of 55). Four further weaknesses, stated plainly:
+(17 of 17, 20 of 23, 51 of 55). The two lines, at 15 of 17 with 2 holes, are "read" only under the short-text floor of
+19 Nov 2026 (`floor_used` in profile.json); the other two are read in part. Four further weaknesses, stated plainly:
 - The test plan was frozen before the run, but its SHA-256 (494b6a49...) was recorded only in our local files; the frozen
   plan and the file of checksums are not in this folder, so the freeze cannot be checked from the repository.
 - Two disputed digits were settled partly by sense: 548 against 528 (two lines, last group; *end* makes a word, *ei* does not)

@@ -1,4 +1,4 @@
-> Repository copy of the plan frozen before the run (sha256 of the frozen file: 494b6a49967dcf9999e9c9aed7466f951c54f1fdf0799dec8c5dc875c152052d). Three local file paths are replaced by descriptions in brackets; nothing else is changed. Its heading gives the writing time as 03:20-03:40 and the amendments as 03:50-03:55; by the file times the plan was written about 03:35 and amended at 03:47, before the run at 03:49.
+> Repository copy of the plan frozen before the run (sha256 of the frozen file: 494b6a49967dcf9999e9c9aed7466f951c54f1fdf0799dec8c5dc875c152052d). Three local file paths, and the name of an earlier test that is not contributed, are replaced by descriptions; nothing else is changed. Its heading gives the writing time as 03:20-03:40 and the amendments as 03:50-03:55; by the file times the plan was written about 03:35 and amended at 03:47, before the run at 03:49.
 
 # Test plan: our "1385 = the" table against the clerk's decipherment of John Quincy Adams's Nos. 85 and 74
 
