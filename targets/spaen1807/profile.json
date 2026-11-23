@@ -154,27 +154,33 @@
       "known plaintext"
     ],
     "attack": "known plaintext",
-    "models": "unknown",
-    "human_role": "Andrew Beling directed this project. AI agents transcribed the documents and performed the tests.",
-    "first_date": "2026-11-19",
+    "models": [
+      "gpt-6.2-astra",
+      "gpt-6.1-terra",
+      "claude-opus-5-5"
+    ],
+    "human_role": "Andrew Beling directed this project. AI agents transcribed the documents and performed the tests. Models, from the Codex app logs of 19–20 November 2026: reader A of every cipher panel and of the inventory 204A annotations ran on gpt-6.1-terra; reader B on gpt-6.2-astra; the coordinating agent (which transcribed and sealed the French references) and the agent that fitted the table, froze the plans and scored the tests on gpt-6.2-astra. The 14 November survey that located the letters was made by a Claude Opus 5.5 agent with helper agents.",
+    "first_date": "2026-11-14",
     "last_date": "2026-11-20"
   },
   "solution": [
     {
       "kind": "access",
-      "date": "2026-11-19",
-      "what": "Revisited my 14 November inventory survey (my own working notes, made with AI agents, not in this repository), identified period decipherments and separated the Vienna papers from the Düsseldorf target.",
+      "date": "2026-11-14",
+      "what": "14 November: my inventory survey (my own working notes, made with a Claude Opus 5.5 agent and helper agents, not in this repository) paged inventory 248 and listed nine Vienna cipher dispatches with period decipherments, and separated the Vienna papers from the Düsseldorf target. Revisited on 19 November.",
       "result": "worked"
     },
     {
       "kind": "transcription",
-      "what": "Two readers transcribed each cipher panel independently before reconciliation. The French references were transcribed separately.",
-      "result": "worked"
+      "what": "Two readers transcribed each cipher panel independently before reconciliation: No. 7 at 21:44 and 21:46 UTC, No. 23 at 21:52–21:56, No. 26 at 22:00–22:03 and No. 21 at 22:11–22:14 (file write times in the agents’ logs; reader A gpt-6.1-terra, reader B gpt-6.2-astra). The French references were transcribed separately by the coordinating agent; No. 26 sealed at 22:05:53 UTC and No. 21 at 22:11:41 UTC.",
+      "result": "worked",
+      "date": "2026-11-19"
     },
     {
       "kind": "control",
-      "what": "January within-letter test matched two of five predictions, both de. Of 1,000 shuffled controls, 226 tied or exceeded that score. The investigator had seen the French reference.",
-      "result": "failed"
+      "what": "January within-letter test, plan and inputs frozen at 21:49:11 UTC: it matched two of five predictions, both de. Of 1,000 shuffled controls, 226 tied or exceeded that score. The investigator had seen the French reference.",
+      "result": "failed",
+      "date": "2026-11-19"
     },
     {
       "kind": "solver",
@@ -182,28 +188,33 @@
         "beam/DP decoding",
         "plaintext matching"
       ],
-      "what": "Two monotone dynamic-programming alignments against the period copy for No. 23 agreed on 93 marked group candidates, 53 whole words and 40 fragments.",
-      "result": "partial"
+      "what": "Plan frozen at 22:05:30 UTC. Two monotone dynamic-programming alignments against the period copy for No. 23 agreed on 93 marked group candidates, 53 whole words and 40 fragments; the table and predictions were frozen at 22:07:38 UTC.",
+      "result": "partial",
+      "date": "2026-11-19"
     },
     {
       "kind": "prediction",
-      "what": "The frozen table predicted 43 whole tokens for No. 26. 32 matched the sealed French source within the registered position window. Best shuffled score 16.",
-      "result": "worked"
+      "what": "The frozen table (22:07:38 UTC) predicted 43 whole tokens for No. 26. 32 matched the French source sealed at 22:05:53 UTC within the registered position window. Best shuffled score 16.",
+      "result": "worked",
+      "date": "2026-11-19"
     },
     {
       "kind": "prediction",
-      "what": "The same table predicted 61 tokens for No. 21. 48 matched the sealed source within the registered window. Best shuffled score 20. The sole complete word assembled from fragments missed.",
-      "result": "worked"
+      "what": "Plan frozen at 22:11:18 UTC, reference sealed at 22:11:41 and predictions frozen at 22:14:48. The same table predicted 61 tokens for No. 21. 48 matched the sealed source within the registered window. Best shuffled score 20. The sole complete word assembled from fragments missed.",
+      "result": "worked",
+      "date": "2026-11-19"
     },
     {
       "kind": "sibling key",
-      "what": "In the separate Düsseldorf comparison only two word placements were testable, below the minimum of eight. The unread companion was left untested. Plan, No. 6 transcription and script in vienna_contribution/dusseldorf/.",
-      "result": "failed"
+      "what": "Plan and inputs frozen at 22:21:19 UTC. In the separate Düsseldorf comparison only two word placements were testable, below the minimum of eight. The unread companion was left untested. Plan, No. 6 transcription and script in vienna_contribution/dusseldorf/.",
+      "result": "failed",
+      "date": "2026-11-19"
     },
     {
       "kind": "verification",
-      "what": "Independent readings of the later inventory 204A annotations placed the reported 227 in a Munich dispatch. None of the notes entered the Vienna fit.",
-      "result": "worked"
+      "what": "After both tests, two readers read the later inventory 204A annotations independently (22:16 and 22:18 UTC) and placed the reported 227 in a Munich dispatch. None of the notes entered the Vienna fit.",
+      "result": "worked",
+      "date": "2026-11-19"
     }
   ],
   "outcome": {
@@ -249,7 +260,7 @@
         "state": "decoded, not read",
         "language": "fr",
         "summary": "The period copy discusses General Vincent’s mission and what the French ambassador knew about it.",
-        "note": "Historical French reference. The project used this letter for fitting; it supplies no independent reconstructed reading."
+        "note": "Historical French reference. No. 7 was the separate January within-letter test, which missed. It was not used to fit the March table, no January value entered that table, and it supplies no independent reconstructed reading."
       },
       {
         "doc": "no23",
