@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "target": "bouille1780",
+  "title": "Bouillé to the minister, Martinique, 29 Mar 1780, no. 398 (ANOM COL C8 A 79 ff.57-59v): two cipher passages with a modern archival translation, key K8 checked, and an untranslated postscript of 11 Apr",
+  "documents": [
+    {
+      "id": "A",
+      "read": "read",
+      "shelfmark": "ANOM COL C8 A 79 ff.58v and 59 (IREL images FRANOM23_C8A_079_0084, 0086)",
+      "date": "29 Mar 1780",
+      "year": 1780,
+      "country": "France",
+      "route": "Bouillé, Martinique -> minister of the Navy, Versailles",
+      "places": {
+        "from": "Martinique",
+        "to": "Versailles"
+      },
+      "language": "French",
+      "pages": 2,
+      "cleartext_in_document": "separate passages",
+      "plaintext": {
+        "location": [
+          "separate folio"
+        ],
+        "source": "Modern archivist's translation 'Traduction des passages chiffrés' on a sheet headed 'Ministère d'État - Affaires culturelles', bound in as image 0085.",
+        "partial": false
+      },
+      "length": {
+        "tokens": 363,
+        "unit": "code groups",
+        "measured": true,
+        "file": "cipher.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "ANOM IREL colour images (1632-1672 px wide), crops x2.2",
+        "image_quality": "good"
+      }
+    },
+    {
+      "id": "B",
+      "read": "read in part",
+      "shelfmark": "ANOM COL C8 A 79 f.59v (IREL image 0087), postscript 'P.S. du 11 avril'",
+      "date": "11 Apr 1780",
+      "year": 1780,
+      "country": "France",
+      "route": "Bouillé, Martinique -> minister of the Navy, Versailles",
+      "places": {
+        "from": "Martinique",
+        "to": "Versailles"
+      },
+      "language": "French",
+      "pages": 1,
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "none"
+        ],
+        "source": "Not in the modern translation sheet.",
+        "partial": false
+      },
+      "length": {
+        "tokens": 30,
+        "unit": "code groups",
+        "measured": false,
+        "file": "ps_f59v.txt"
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "ANOM IREL image 0087",
+        "image_quality": "good",
+        "notes": "Ends at the foot of f.59v; a continuation, if any, would be on image 0088, not downloaded."
+      }
+    }
+  ],
+  "system": {
+    "types": [
+      "syllabic",
+      "homophonic",
+      "nomenclator"
+    ],
+    "summary": "Numerical syllabary/nomenclator of about 850 numbers, homophones, code names for islands",
+    "symbol_kind": "digits",
+    "distinct_symbols": 390,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": true,
+      "kinds": [
+        "syllables",
+        "common words",
+        "places"
+      ]
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "random",
+    "word_division": "none"
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in archive",
+      "where": "Modern translation sheet bound with the letter (image 0085); not in targets/bouille1778, martinique1778, grassebouille1779 or the catalogue (checked 23 Nov 2026).",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "sibling key"
+    ],
+    "attack": "sibling key",
+    "human_role": "Brice Dudout downloaded the ANOM images (IREL, 23 Nov 2026) and set the rules (protocol hashed before any computation, key frozen by its upstream SHA-256, one measurement); AI agents transcribed, measured and wrote up. No person has checked the transcription.",
+    "models": [
+      "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+    ],
+    "first_date": "2026-11-23",
+    "last_date": "2026-11-23"
+  },
+  "solution": [
+    {
+      "date": "2026-11-23",
+      "kind": "transcription",
+      "technique": [
+        "other"
+      ],
+      "what": "Both passages (363 groups) and the 11 April postscript (30 groups) transcribed.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-23",
+      "kind": "control",
+      "technique": [
+        "statistical test",
+        "plaintext matching"
+      ],
+      "what": "Frozen key K8 of targets/grassebouille1779 (SHA-256 6dbabfcd..., unchanged) vs the modern translation: 0.9483 characters vs best of 200 shuffled keys 0.2550 (mean 0.157); criterion >= 0.85 and >= best + 0.30.",
+      "result": "worked"
+    },
+    {
+      "date": "2026-11-23",
+      "kind": "reading",
+      "technique": [
+        "contextual inference"
+      ],
+      "what": "Postscript of 11 Apr decoded with K8 (after the measurement): 'L'escadre part après-demain jeudi au nombre de vingt-deux vaisseaux ; j'ai embarqué tro[is ...]'.",
+      "result": "partial"
+    }
+  ],
+  "outcome": {
+    "class": "already solved",
+    "key": "not applicable",
+    "method": "read with known key",
+    "method_basis": "Main passages: modern archival translation, confirmed by K8. Postscript: read with known key (K8), not translated before as far as checked.",
+    "contribution": [
+      "transcription"
+    ],
+    "fraction_read": 0.92,
+    "fraction_read_method": "estimated",
+    "fraction_read_source": "Passages A: translation complete; 206/232 words (88.8%) also supported letter-for-letter by K8. Postscript B: 15 of about 17 words read, sentence cut at the foot of the page.",
+    "first_break": false,
+    "verification": [
+      "contemporary decipherment",
+      "statistical test",
+      "key confirms",
+      "historical consistency"
+    ],
+    "validation": {
+      "date": "2026-11-23",
+      "verdict": "pass"
+    },
+    "credits": [
+      {
+        "who": "dudout",
+        "role": "key or decipherment used",
+        "note": "key K8 of targets/grassebouille1779 (validated 28 Oct 2026), frozen before this letter",
+        "date": "2026-10-28"
+      },
+      {
+        "who": "anom",
+        "role": "pointer",
+        "note": "a 20th-century archivist's translation sheet of the cipher (Ministère d'État - Affaires culturelles), bound as image 0085 of C8 A 79; not a period decipherment, and it omits the postscript of f. 59v. Not reproduced here.",
+        "date": "20th century"
+      },
+      {
+        "who": "dudout",
+        "role": "verification",
+        "date": "2026-11-23",
+        "note": "passages of C8 A 79 ff.58v-59v transcribed; K8 validated on them; postscript of 11 Apr 1780 decoded"
+      }
+    ],
+    "provenance": "mixed"
+  }
+}

@@ -1,0 +1,159 @@
+{
+ "schema_version": 1,
+ "target": "vaudreuil1760b",
+ "title": "Vaudreuil to Berryer, Montréal, 29 Aug 1760 (ANOM COL F3 16 ff.115-119): the cipher letter announcing the loss of Canada, with its period decipherment, and the 1757 table checked on it",
+ "documents": [
+  {
+   "id": "A",
+   "read": "read",
+   "shelfmark": "ANOM COL F3 16 (Moreau de Saint-Méry), ff.115-119 (IREL images FRANOM82_247MIOM013_F3_016_187-195, microfilm 247 MIOM 13)",
+   "date": "29 Aug 1760",
+   "year": 1760,
+   "country": "France",
+   "route": "Vaudreuil, Montréal -> Berryer, Versailles",
+   "places": {
+    "from": "Montréal",
+    "to": "Versailles"
+   },
+   "language": "French",
+   "pages": 9,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "printed edition"
+    ],
+    "source": "Period decipherment above every line; Parkman, Montcalm and Wolfe II (1884) pp.380-381 translates passages (English); Richard 1899 calendar summarises it (lead 1208).",
+    "partial": false
+   },
+   "length": {
+    "tokens": 561,
+    "unit": "code groups",
+    "measured": true,
+    "file": "cipher_ff115.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "ANOM IREL full-resolution microfilm images",
+    "image_quality": "good",
+    "notes": "Only ff.115r-v (the measured portion, 561 groups, about a quarter of the letter) transcribed; ff.116-119 read from the gloss only."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "700-entry table of numbered words, place and ship names, syllables and single letters (1757 Vaudreuil table), with names and titles left in clear and phonetic spelling.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-3",
+   "separation": "spaces"
+  },
+  "distinct_symbols": 394,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": "unknown",
+   "max_per_consonant": "unknown"
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 700,
+   "kinds": [
+    "syllables",
+    "common words",
+    "names",
+    "places"
+   ],
+   "unread_groups": 77
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "sibling_key": "The same 1757 table reads cat. 1388 (8 Apr 1759), 1389 (10 Apr 1759) and 1390 (16 Apr 1759) of C11A 104 in full; cat. 1392 (Trémais) uses another code. Sheet e001295272 of the same volume does not fit.",
+  "notes": "Table in numerical order only on the sheet used (the alphabetical sheets e001295267/69 give the same entries by word)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Interlinear period decipherment on the original; partial English translation in Parkman 1884.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "key from archive"
+  ],
+  "attack": "key from archive",
+  "human_role": "Brice Dudout downloaded the ANOM images (IREL, 23 Nov 2026) and set the rules (protocol hashed before any computation, key frozen by its upstream SHA-256, one measurement); AI agents transcribed, measured and wrote up. No person has checked the transcription.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout"
+  ],
+  "first_date": "2026-11-23",
+  "last_date": "2026-11-23"
+ },
+ "solution": [
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "ff.115r-v: 561 groups and the interlinear gloss transcribed apart.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "plaintext matching"
+   ],
+   "what": "Frozen 1757 Vaudreuil table (our KEY_v2.tsv, SHA-256 7b5aecb2..., the key of targets/vaudreuil1759a-c) on ff.115r-v vs the gloss: 0.9739 characters vs best of 200 shuffled tables 0.2221 (mean 0.142); criterion >= 0.85 and >= best + 0.30.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "already solved",
+  "key": "not applicable",
+  "method": "read from existing decipherment",
+  "method_basis": "The period decipherment gives the text; the 1757 table (C11E 10, LAC e001295274) is shown to be still in use on 29 Aug 1760.",
+  "contribution": [
+   "transcription"
+  ],
+  "fraction_read": 1.0,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "Gloss legible throughout on the images; on ff.115r-v 294/318 gloss words (92.5%) also supported letter-for-letter by the table.",
+  "first_break": false,
+  "verification": [
+   "contemporary decipherment",
+   "statistical test",
+   "key confirms"
+  ],
+  "validation": {
+   "date": "2026-11-23",
+   "verdict": "pass"
+  },
+  "credits": [
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "interlinear period decipherment on F3 16 ff.115-119",
+    "date": "1760-08-29"
+   },
+   {
+    "who": "dudout",
+    "role": "verification",
+    "date": "2026-11-23",
+    "note": "ff.115r-v transcribed from the ANOM images; the 1757 table validated on them"
+   }
+  ],
+  "provenance": "mixed"
+ }
+}
