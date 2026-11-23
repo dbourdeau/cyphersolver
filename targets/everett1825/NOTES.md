@@ -131,8 +131,8 @@ compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
 
 ## Remaining gaps
 
-- groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done).
-- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed here; read by Brice Dudout on 27 Oct 2026 (above), whose transcription is expected in a pull request; the pencil "Decyphered" on p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026, below).
+- groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done). Values on the State Department code sheet (`../morris1813/beling/key/`); 125 contrary also in the period decipherment (22 Nov 2026); not applied to the readings.
+- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, transcribed and read by Brice Dudout (`dudout/`) and transcribed again in `beling/` (22 Nov 2026); the pencil "Decyphered" on p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026, below).
 
 ## Escalation
 
@@ -194,8 +194,11 @@ A verification and a source find, not a new reading; details and files in `belin
   27 differ; with WAINUT's passage A 74 of 74, B and C 278 of 281. Dudout's p. 18 files leave out one code line
   (`1440 1082+D 569 1310 1541 480 262 1599 1384 1385`, "it seems to be also understood that the"), which his
   reading has.
-- The 27 differing groups were checked on the film by two blind model readers (not a person): Dudout's digit at 18,
-  Beling's at 8 (628, 458, 845, 1081, 1564, 880, where Dudout has the word from sense or open; and 1257 for
-  "describing", 1388 for "than", where the written group is a slip and the reading's value an emendation), 1
-  undecided (p. 5 line 3, 1385 or 1345). No word of either reading changes; the transcription files were not edited.
+- The 27 differing groups were read blind on the film by an AI model reader with no candidates given; the 11 it was
+  unsure of went to a second blind reader that saw the whole line (model readings, not a person's). Dudout's digit
+  at 18, Beling's at 8, 1 undecided (p. 5 line 3, 1385 or 1345). Of the 8: at 628, 458, 845, 1081, 1564 and 880
+  Dudout has the word from sense or open and the group gives it from the key; at 1257 ("hath"; "describing" wants
+  cri, which 1057 does not give either) and 1388 ("then" for 1383 "than", a whole-word group, outside the one-digit
+  rule) the group on the film does not give the word. No word of either reading changes; the transcription files
+  were not edited.
 
