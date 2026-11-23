@@ -131,9 +131,8 @@ compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
 
 ## Remaining gaps
 
-- comparison with Brice Dudout's transcription and reading of pp. 14-15 and 17-18 - blocker: not-attempted; his pull request will carry his files.
 - groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done).
-- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed here; read by Brice Dudout on 27 Oct 2026 (above), whose transcription is expected in a pull request; the pencil "Decyphered" on p. 4 points to a lost or unfound contemporary decipherment.
+- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed here; read by Brice Dudout on 27 Oct 2026 (above), whose transcription is expected in a pull request; the pencil "Decyphered" on p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026, below).
 
 ## Escalation
 
@@ -179,3 +178,24 @@ proposed from context alone is not a word read, REREAD_BRIEF "The iterative loop
 95% (0.949, 0.917, 0.948, 0.944) and are now `read in part` in `outcome.texts`; pp. 4, 5, 17 and 18 stay `read`
 (0.969, 0.988, 0.973, 0.967). The sense-only words were not checked group by group on the film here, apart from the
 overlay rows for "me", "soon" and "of". The target's class was and stays read in part.
+
+## 22 Nov 2026: the period decipherment, and the group-by-group comparison (Andrew Beling, `beling/`)
+
+A verification and a source find, not a new reading; details and files in `beling/README.md`.
+
+- The State Department's decipherment of all six coded parts is on the same reel: M31 roll 27 frame 0110 (right page,
+  parts 1-4) and 0111 (both pages, parts 4-6; parts 5 and 6 marked "14 & 15" and "17 & 18"). Writer and date unknown.
+  Transcription: `beling/period_decipherment.txt`. It reads as both readings here do, and settles the two places
+  where they differ: 70 = necessary with "ity" written above ("the necessity of recognition"), 125 = contrary.
+- All eight open groups have values on the State Department code sheet already in the repository
+  (`../morris1813/beling/key/codebook_M97_13_transcription.csv`): 125 contrary, 126 convey, 211 pret, 258 spi,
+  850 dispose, 917 os, 1354 br, 1512 acy (the values Dudout proposed).
+- Three transcriptions compared (`beling/scripts/compare.py`): with Dudout's files 1,113 groups in both, 1,086 agree,
+  27 differ; with WAINUT's passage A 74 of 74, B and C 278 of 281. Dudout's p. 18 files leave out one code line
+  (`1440 1082+D 569 1310 1541 480 262 1599 1384 1385`, "it seems to be also understood that the"), which his
+  reading has.
+- The 27 differing groups were checked on the film by two blind model readers (not a person): Dudout's digit at 18,
+  Beling's at 8 (628, 458, 845, 1081, 1564, 880, where Dudout has the word from sense or open; and 1257 for
+  "describing", 1388 for "than", where the written group is a slip and the reading's value an emendation), 1
+  undecided (p. 5 line 3, 1385 or 1345). No word of either reading changes; the transcription files were not edited.
+
