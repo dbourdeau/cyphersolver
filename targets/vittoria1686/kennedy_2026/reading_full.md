@@ -24,7 +24,7 @@ Già siamo a tempo [che] si sono svegl[i]ati li cani tutti *insieme; altro* reme
 
 ### c. 11r
 
-*Antonio mi ha mandato a punto che stava scrivendo una* citat[ion]e di D. Paulo Ruffo [per] li d[ucat]i 1000 di Bisceglia una con l'inter[ess]i a *5 per 100.*
+*Antonio mi ha mandato a punto che stava scrivendo una* citat[ion]e di D. Paulo Ruffo [per] li d[ucat]i *1000* di Bisceglia una con l'inter[ess]i a *5 per 100.*
 
 ## Letter 3 — cc. 22r–23v (Naples, Santa Chiara, 4 September 1691; Vittoria Gonzaga to Vincenzo Gonzaga)
 
@@ -52,4 +52,4 @@ Già siamo a tempo [che] si sono svegl[i]ati li cani tutti *insieme; altro* reme
 
 *Dico che V.E. habbia da ricercare tutto il carico* e poi dare un taglio. *Accluse qui sono 4 partite di [?Banchi].*
 
-Il [Duca] di Torre Maggiore mi ha fatto scrivere da Pompeo, [che] vuol [che] io li facci havere 50 carre di tratte di grano, e ho risposto con cerim[oni]e e [che] *per hora non erano* aperte le tratte, e la Cam[er]a le teneva in porte di ferro, *sì come è, riserbandole per* il stato di Milano. *Io sono mal pensante, V.E. lo sa, e così me formo* concetto [che] lui habbia bisogno di denari, *e benché chiamò il suo Agente.*
+Il [Duca] di Torre Maggiore mi ha fatto scrivere da Pompeo, [che] vuol [che] io li facci havere *50* carre di tratte di grano, e ho risposto con cerim[oni]e e [che] *per hora non erano* aperte le tratte, e la Cam[er]a le teneva in porte di ferro, *sì come è, riserbandole per* il stato di Milano. *Io sono mal pensante, V.E. lo sa, e così me formo* concetto [che] lui habbia bisogno di denari, *e benché chiamò il suo Agente.*
