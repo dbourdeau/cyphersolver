@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Independent held-out scorer for Delacroix 1797 (reviewer's own code; see REVIEW_PLAN_heldout.md).
-usage: my_heldout.py CIPHER TESTTEXT FROZEN_TABLE.json MANUAL_ALIGNMENT [BOUNDARY]"""
+usage: reviewer_heldout.py CIPHER TESTTEXT FROZEN_TABLE.json MANUAL_ALIGNMENT [BOUNDARY]"""
 import json, random, re, sys, unicodedata
 
 def norm(s):

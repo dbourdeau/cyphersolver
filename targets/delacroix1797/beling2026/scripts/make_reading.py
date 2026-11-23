@@ -2,7 +2,8 @@
 """Build the reading: the clear draft's words (transcriptions/clear_draft_test_text.txt) laid on the 653 groups by the
 hand alignment (key/alignment_by_group.txt), with every letter that the key (key/code_table_F_partial.tsv) does NOT
 give for Brackx's digits (any value the table records for the group, column all_values) put in square brackets. Draft words with no group at all are shown as <<not in the groups: ...>>.
-usage: python make_reading.py ../transcriptions/clear_draft_test_text.txt ../key/alignment_by_group.txt ../key/code_table_F_partial.tsv"""
+usage: python make_reading.py ../transcriptions/clear_draft_test_text.txt ../key/alignment_by_group.txt ../key/code_table_F_partial.tsv [../proposals/transcription_corrections.tsv]
+With the proposals file, the letters at the eight places where a digit change is proposed are also marked."""
 import csv, re, sys, unicodedata
 
 def base(c):
@@ -20,6 +21,9 @@ for r in csv.DictReader(open(sys.argv[3], encoding='utf-8'), delimiter='\t'):
         if a: vals.add(''.join(base(c) for c in a))
     key[int(r['group'])] = vals
     cls[int(r['group'])] = r['class']
+PROP = set()
+if len(sys.argv) > 4:
+    PROP = {int(r['token_index']) for r in csv.DictReader((l for l in open(sys.argv[4], encoding='utf-8') if not l.startswith('#')), delimiter='\t')}
 mark = [False] * len(text)       # letters not given by the key
 omit = [False] * len(text)       # letters of draft words with no group
 pos = 0; n_groups = 0; n_marked_groups = 0
@@ -38,7 +42,7 @@ for line in open(sys.argv[2], encoding='utf-8'):
         lets = '' if v in ('0', '.', '?') else v.split('!')[0]
         span = letters[pos:pos + len(lets)]
         assert ''.join(b for _, b in span) == lets, (t, pos, ''.join(b for _, b in span))
-        if lets and (lets not in key.get(g, set()) or cls.get(g) == 'C'):
+        if lets and (lets not in key.get(g, set()) or cls.get(g) == 'C' or n_groups - 1 in PROP):
             n_marked_groups += 1
             for i, _ in span: mark[i] = True
         pos += len(lets)
