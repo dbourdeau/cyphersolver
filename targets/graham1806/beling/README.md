@@ -44,5 +44,6 @@ print-disabled loan. **A reader without the book cannot rerun the table test.** 
 test of Wagner's words and the statistics on the 22 Nov numbers. To rerun the table test, transcribe the tables you
 want to try into a tab-separated file (header line; columns `code`, `number`, `element`) and pass it with `--weber`.
 Our own file holds WE016-WE028. It was parsed from the text layer of an interlibrary-loan scan and was not corrected
-by hand. Its SHA-256 is recorded in `results.json`. Several WE023 misses are errors in that text layer (879, 1159,
-967, 848 and 1593; see NOTES), so a clean transcription should score a few words higher, not lower.
+by hand. Its SHA-256 is recorded in `results.json`. Several WE023 misses look like errors in that text layer (879, 1159, 967;
+1593 is unreadable in it; see NOTES). The page images have not been checked, so a clean transcription may score a few
+words higher.

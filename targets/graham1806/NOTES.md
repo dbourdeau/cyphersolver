@@ -65,14 +65,19 @@ copy of Weber 1979.** A reader without the book can rerun the held-out test and 
   the 118 groups it covers on 0009-0011 (200 permuted keys: mean 1.6, best 13). The reverse gives 90 of 91 (best 11).
   The table that scores best on 0006-0008 alone is WE023, and it scores 222 strict and 234 lenient of 243 words on
   0009-0011. **The 2 Jan 1806 letter is in WE023 number for number, as the Madison editors said.**
-- **Where WE023 misses.** Most of the 13 lenient misses look like errors in our text layer of Weber, which was not
-  corrected by hand (879, 1159, 967, 848, 1593). The rest are Wagner's word choices ("near" over the group for
-  "nearly"). Graham's own departures, on the image: he writes 1225 for "are" four times beside 1228 three times, and
-  848 in "mulattoe". The page images of Weber have not been checked at these cells.
+- **Where WE023 misses.** Four of the 13 lenient misses fall on cells that look like errors in our text layer of
+  Weber, which was not corrected by hand (879 twice, 1159, 967), and 1593 is unreadable in it. One is Graham's (848 in
+  "mulattoe"). The rest are:
+  - Wagner's word choices ("near" over the group for "nearly", "nothing" over "no");
+  - endings the scorer does not allow (enemies, and themselves twice);
+  - three words whose syllables do not join as he wrote them (frontiers, Indians, classes).
+
+  Graham also writes 1225 for "are" four times, beside 1228 three times. Weber's page images have not been checked at
+  these cells.
 - **The [22 Nov] extract is not in that code.**
   - The January key gives a value for none of the 18 open or conjectured numbers.
-  - WE023's entries at those numbers are syllables and words of its *pa-pre* stretch, which give no sense in the
-    extract. The January letter itself writes "President" with a group in that stretch, not 67.
+  - At 17 of the 18, WE023's entries are syllables and words of its *pa-pre* stretch that give no sense in the
+    extract. At 30 its entry could fit ("I would 30. now arrest"), but one place cannot carry the code. The January letter itself writes "President" with a group in that stretch, not 67.
   - Only 11 of the 613 readable January groups are 77 or below. Eighteen distinct numbers drawn evenly from 1-1593
     would all fall at 77 or below with a probability of about 2 × 10^-24.
   - So either the extract is in a different, smaller code, or the numerals printed on Founders are not Graham's
@@ -99,14 +104,14 @@ copy of Weber 1979.** A reader without the book can rerun the held-out test and 
 - Print: James E. Lewis, *The Burr Conspiracy: Uncovering the Story of an Early American Crisis* (Princeton, 2017) may
   print or describe his partial key. Not checked (no access).
 - Images: LoC catalogue mm75014415: 100 items, 1 container, 1 microfilm reel (no. 17,112, 1977), no online images;
-  findingaids.loc.gov sits behind a bot check. the 2 Jan 1806 sibling is filmed and online, NARA T260 roll 8
+  findingaids.loc.gov sits behind a bot check. The 2 Jan 1806 sibling is filmed and online, NARA T260 roll 8
   frames 0006-0012 (naId 221215877).
 - Retry: not possible from the ciphertext alone. 21 numeric groups with no repeats beyond 18/46/73 is far too short
   for a solver.
 
 ## Next steps
 
-1. Done 22 Nov 2026 (`beling/`): Weber's WE023 at groups 10-77 does not fit the extract, although it reads the
-   2 Jan 1806 letter. Optional: check Weber's page images at 848, 879, 967, 1159, 1311 and 1593.
+1. Done 22 Nov 2026 (`beling/`): Weber's WE023 at groups 10-77 does not fit the extract (one possible word, at 30),
+   although it reads the 2 Jan 1806 letter. Optional: check Weber's page images at 848, 879, 967, 1159, 1311 and 1593.
 2. Ask the Madison Papers (UVA) or James E. Lewis for the partial key and the group numbers of the decoded words.
 3. Order LoC microfilm 17,112 frames for the two letters.
