@@ -1,6 +1,6 @@
 # stubbs1700 — Letter in three ciphers to George Stubbs, University College, Oxford (SAL THO/57/127), c. 1698–1701
 
-Source: Society of Antiquaries of London, archives, THO/57/127 (Thorpe Bequest; THO/57 = original letters mainly to John Thorpe senior, 1684–1768). Catalogue: « Letter or letters in three different cyphers addressed to George Stubbs, University College, Oxford », 18th c. Images © Society of Antiquaries of London, supplied for private study: **not distributed, no crop or derivative included**. Cite « Society of Antiquaries of London, archives ».
+Source: Society of Antiquaries of London, archives, THO/57/127 (Thorpe Bequest; THO/57 = original letters mainly to John Thorpe senior, 1684–1768). Catalogue: « Letter or letters in three different cyphers addressed to George Stubbs, University College, Oxford », 18th c. Images © Society of Antiquaries of London, read from its online catalogue (see Conditions of use of the images): **not distributed, no crop or derivative included**. Cite « Society of Antiquaries of London, archives ».
 
 ## Prior art
 None found: DECODE (Stubbs, Stubbes, Thorpe, Antiquaries: no record; Oxford: only Civil War items), cyphersolver catalogue/leads/issues, web search. First reading.
@@ -42,6 +42,25 @@ Read in part (below 95 %). Most probable words are single transcription slips (s
 
 ## Content
 An Oxford student (« my most dearly beloved alma mater ») writes to Stubbs from Salisbury at assize time: the night ride, Cupid keeping him awake, the cathedral spire (« pyramid ») and Harnham Hill; he delivers Stubbs's letters, meets an old gentleman who praises Stubbs, his friend George Hayward, the coffee house, verses on a smock race given to Tom Hill by Mr Taylor; the fop Elderton, Peg Kingsman's shop, Betty Bachelour, the cathedral sermon, « my dearest Mrs Horrell »; dinner with a witty lady author of « Fatal Friendship »; ten men hanged at the assizes; closes « atque hic finis erat ». Latin: « semper eum magna iuvenum stipante caterva » (Virgil, *Aen.* 1.497); « iam monte petitus rideo anhelantem dura ad fastigia turbam » (as deciphered; source not identified). Sender not named in what was read.
+
+## Remaining gaps
+- P1 key not validated (held-out 0.848 < 0.85) - blocker: no-key-material; no fresh held-out portion of the p. 1 cipher remains for a second measure (the portion is burnt, and the rest of the page served as training)
+- P3 glyphs (γ-like 7 merged with 7; h/k not separated in the margin rows) - blocker: illegible; separating them needs a new look at the original or a higher-resolution image
+- Whether the images may be analysed with an AI assistant - blocker: not-attempted; not asked of the Society of Antiquaries (see Conditions of use of the images)
+
+## Escalation
+- [n/a] siblings: one letter; the three pages are in three different alphabets
+- [n/a] clear-pages: no clear copy or decipherment with the letter
+- [n/a] known-keys: no key sheet known for these ciphers
+- [x] print: DECODE, the cyphersolver catalogue, leads and issues, and a web search found no earlier reading (Prior art above)
+- [x] key-rebuild: one key per page by annealing on a training portion; one measure per page
+- [ ] retry: p. 1 would need a fresh held-out portion; none left in this letter
+
+## Conditions of use of the images
+- The four images (three pages and the address) were read from the Society of Antiquaries of London's online catalogue, https://collections.sal.org.uk/tho.57.127, where the pages carry the notice "All images are copyright of the Society of Antiquaries and must not be reproduced without prior permission." We treat that as study only (the "Private study only" wording is our summary of it, as in issue #754, not a phrase of the Society's). No images, crops or derivatives are in this pull request.
+- The Society's archivist pointed us to the letters on 23 Nov 2026 ("already digitised and can be seen on our catalogue") and wrote that she would be "very keen to see them become part of your project". That is welcome of the decipherment, not a permission to reproduce images, and it says nothing about AI.
+- On 23 Nov 2026 Brice Dudout wrote back with this result and asked whether the Society would allow one image on L'Europe chiffrée, with credit; no answer yet. Nobody has signed or agreed to any further condition; the only terms we know are the catalogue notice.
+- AI analysis was not raised with the archive: neither the Society's messages nor ours mention it, so the Society has not agreed to AI transcription or analysis. The transcription and reading were done with AI assistants on the strength of the catalogue's study use alone.
 
 ## Doubts
 - p. 1 key not validated (0.848).
