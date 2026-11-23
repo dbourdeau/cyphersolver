@@ -489,7 +489,60 @@ share here.
   ("but [570] ultimately rejected", frame 167R). It aligns with *tol(d)* in No. 23-D.
 - 1185, *wick* on the sheet, spells Sles*wick* in No. 25-D; that confirms the sheet's value, which does not fit No. 88.
 
-Neither changes anything here. The 570 in No. 25 should be looked at on frame 167R.
+Neither changes anything here. The 570 in No. 25 should be looked at on frame 167R (done in the second round below: the film has 500 or 510, not 570).
+
+### Second round: doubly read groups only (22 Nov 2026, after the miss)
+
+The first test above **missed** and stays as registered. Its own finding was that single transcriptions agree with a
+blind second reading at only 0.72-0.75. So a second round was run, labelled as such, scoring only what two blind
+readers agree the film says. Its plan and pass mark are in `beling1810/round2/PLAN2.md`, hashed at 23:15 EST before
+any second-round score (`PLAN2.sha256`). The pass mark is unchanged: 0.80, and the best of 100 shuffled tables + 0.30.
+It was stated in advance that No. 24's post hoc 0.814 is not counted.
+
+**Readings.** Fresh blind transcriptions were made by helper agents (Claude Opus 5.5), from the M35 reel 2 frames only:
+no plaintext, no table, no earlier reading, no candidates, and washed-out groups marked rather than guessed
+(`beling1810/transcriptions_round2/`; each header gives reader, time and images).
+- Nos. 23, 25, 27 and 28 have two each (readers X and Y).
+- Nos. 24 and 29 have one more (reader Z). With the blind second readings of round 1, each has two.
+
+A group is scored only where the two readings give the same number; every other group is a hole that is not scored.
+
+**How far the two blind readings agree** (`round2/reader_agreement.txt`):
+- No. 23: 920 of 1,020 (0.902).
+- No. 24: 438 of 461 (0.950).
+- No. 25: 1,200 of 1,270 (0.945).
+- No. 27: 218 of 284 (0.768).
+- No. 28: 37 of 144 (0.257); passage A on frame 182 is washed out (20 of 117).
+- No. 29: 1,083 of 1,168 (0.927).
+- No. 21: 33 of 33, as before.
+
+**Result: PASS** (`round2/heldout_round2.txt`, run once). There are 2,718 agreed groups with a value in the table.
+Agreement with the witness is **0.853**; the best shuffled table reaches 0.128 (median 0.075). By despatch:
+- No. 23: 0.865.
+- No. 24: 0.849.
+- No. 25: 0.874.
+- No. 27: 0.719.
+- No. 28: 0.788.
+- No. 21: 0.719.
+
+Strict read words, counting every unagreed group as a hole: 1,386 of 2,317 (0.598), against 0.509 in round 1.
+
+What it means and what it does not:
+- The table, rebuilt from 1811-12 alone, gives the witness's letters for about 85% of the 1810 groups that two readers
+  read alike. The round-1 shortfall was mostly our transcription.
+- The second round was decided on after seeing the first. The readers are all the same model, so their shared
+  misreadings pass the agreement filter. The filter keeps the clearer groups.
+- The table itself is not changed, and nothing here counts towards the No. 88 figures.
+
+**No. 29 on agreed groups only** (`round2/no29_agreed.txt`, `round2/no29_recount.py`). Of the 781 words of the model
+reading (manuscript clear words left out), 582 (0.745) rest wholly on agreed groups whose sheet value the alignment
+confirms. The other 199 are holes: 77 were already marked in the reading, and the rest touch a group the readers do not
+agree on or a value the sheet does not give. This is stricter than the reading's own count (0.900). It is still a
+model reading with no witness, not checked by a person.
+
+**Frame 167R, the 570 of No. 25-A** (`round2/frame167R/NOTE_570.md`, with crops). Neither blind transcriber reads 570:
+both have 500. The two crop readers give 500 and 510, and both judge a 7 unlikely. The 570 of our first transcription was
+a misreading. This frame gives no second example of 570 for *was*, and the open 570 in No. 88 is unaffected.
 
 ## Transcription doubts
 

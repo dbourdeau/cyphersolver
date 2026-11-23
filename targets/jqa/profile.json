@@ -524,6 +524,15 @@
    ],
    "what": "Held-out test of code_table.tsv on Adams's despatches of 1810 (Andrew Beling, with AI agents; beling1810/). Plan and pass mark hashed before the run (agreement >= 0.80 and >= best of 100 shuffled tables + 0.30). 22 coded passages of Nos. 21, 23, 24, 25, 27 and 28 (NARA M35 reel 2, 3,083 groups, our first transcriptions) aligned with align.py, unchanged, against their independent plaintexts (Ford 3:469; the period decipherments on frames 156-159, 169-172, 178-179, 184). Coverage 0.922, agreement 0.730, shuffled best 0.125 (median 0.077): MISS by the mark set, though far from chance; strict read words 1,186 of 2,331 (0.509). Blind second transcriptions by helper agents agree with the first at 0.716 (No. 24) and 0.751 (No. 29); No. 24 rescored post hoc on its second transcription: 0.814. No. 29 (no witness) decoded with the M97 sheet alone (no29_decode.txt) and written as sentences by a model (no29_reading.md; 695 of 772 coded words without holes, 0.900; not checked by a person). The table is not changed.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Second round of the 1810 held-out test, decided after the first missed (beling1810/round2/PLAN2.md, hashed 23:15 EST before scoring; same pass mark; No. 24's post hoc 0.814 not counted). Fresh blind transcriptions by helper agents from the M35 reel 2 frames only (two each of Nos. 23, 25, 27, 28; one more each of Nos. 24 and 29); only groups the two readings agree on scored. Reader agreement: No. 23 0.902, No. 24 0.950, No. 25 0.945, No. 27 0.768, No. 28 0.257 (frame 182 washed out), No. 29 0.927. Run once: 2,718 agreed valued groups, agreement 0.853, shuffled best 0.128 (median 0.075): PASS; strict read words 1,386 of 2,317 (0.598). Caveats: a second round after a miss; all readers the same model; the filter keeps the clearer groups. No. 29 recounted on agreed groups with the sheet: 582 of 781 words (0.745). Frame 167R: the group before 'ultimately' is 500 or 510 on four new readings, not 570. The table is not changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

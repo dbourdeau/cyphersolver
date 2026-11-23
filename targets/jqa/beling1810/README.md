@@ -32,6 +32,14 @@ The coded passages of four of these despatches are in print:
 - `decode_no29.py`, `no29_decode.txt`: No. 29 decoded with the key sheet alone (NARA M97 roll 13 frames 1056-1057, Weber WE028, as transcribed in `../../morris1813/beling/key/codebook_M97_13_transcription.csv`, unchanged), from both transcriptions. The table's value is given where it differs.
 - `no29_reading.md`: No. 29 written as sentences from `no29_decode.txt` alone, by a model. It is labelled in the file as a reading made with the key sheet alone, with no plaintext witness, not checked by a person.
 
+- `round2/`: the second round, run after the first missed. It holds:
+  - `PLAN2.md` and `PLAN2.sha256`, written before scoring;
+  - `build_round2.py`, `codes_1810_round2.txt` and `reader_agreement.txt`;
+  - `heldout_round2.txt`, the run;
+  - `no29_agreed.txt`, `no29_recount.py` and `no29_recount.txt`;
+  - `frame167R/`, the note and crops on the 570 of No. 25.
+- `transcriptions_round2/`: the fresh blind readings X, Y and Z.
+
 ## Results
 
 See `../NOTES.md`, section "Adams's despatches of 1810 (held-out test, 22 Nov 2026)".
