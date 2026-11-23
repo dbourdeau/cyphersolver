@@ -254,6 +254,11 @@ PAGES = [
          blurb='DECODE R1154, catalogued as a cipher letter of 1504, is plain Italian of 29 May 1505 to Cardinal Ippolito d&rsquo;Este, printed by Berzeviczy in 1914. The queen writes no more because she has no cipher.',
          quote='&ldquo;et per non havere cifra: non ce extendemo altramente per questa&rdquo;',
          rights='Printed edition: Berzeviczy, 1914. ASMo manuscript not reproduced.'),
+    dict(slug='tsnsj479', label='Geniza cipher sheet', year='c. 1400&ndash;1650', y=1500, place='Egypt (Cairo Geniza)', st='partial', stt='read in part',
+         title='Is&#7717;&#257;q the Jew&rsquo;s cipher sheet, Cairo Geniza (T-S NS J479)',
+         blurb='A Geniza practice sheet in an invented sign alphabet for Judaeo-Arabic. The scribe wrote his alphabet out twelve times, several partly; read in Hebrew order it gave the key, and two verses of the Burda came out with only phonetic spellings and two slips. About three quarters of the text reads: the Burda, a date formula, his signature, a line of love poetry and an erotic passage. Alan Elbaum had mapped the signs first.',
+         quote='&ldquo;My dove, all this is lies&rdquo; &middot; the last line of the erotic passage',
+         rights='Images: Cambridge University Library, T-S NS J479, via Cambridge Digital Library'),
     dict(slug='puebla1506', label='De Puebla to Almaz&aacute;n 1506', year='1506', y=1506.3, place='London &rarr; Miguel P&eacute;rez de Almaz&aacute;n', st='partial', stt='known key applied &middot; partial',
          title='De Puebla to Almaz&aacute;n, London, 21 April 1506',
          blurb='Ferdinand&rsquo;s ambassador in London writes to the King&rsquo;s secretary while Philip and Juana wait at Falmouth to sail for Castile (AGS Patronato Real leg. 54 doc. 78). The cipher passages, in Puebla&rsquo;s First Cipher, were deciphered with Satoshi Tomokiyo&rsquo;s reconstruction of the table: Katharine&rsquo;s people had her write letters for their own interest, and her household is finely dressed, the day before she told her father she was all but naked. Contributed by WAINUT; the clear text around the cipher and the lines 11&ndash;17 fragments stay open.',
@@ -3697,6 +3702,7 @@ IMAGES['ewsum1535'] = ('ewsum1535_lead.jpg', 'Left page, top: the writer&rsquo;s
 IMAGES['qaysarani1350'] = ('qaysarani1350_lead.jpg', 'F. 106v, the first two cipher lines, with red letters over the first five signs (at the right)', 'University of Pennsylvania, Kislak Center, LJS 51, f. 106v, via OPenn (image 0084_0217)')
 IMAGES['montcalm1757w'] = ('montcalm1757w_annex.jpg', 'The first lines of the annexed cipher sheet, p. 517: &ldquo;Quebec sera toujours quoique l&rsquo;on y fasse une mauvaise place&rdquo; above its groups', 'Service historique de la D&eacute;fense, GR A1 3457 pi&egrave;ce 180, copy p. 517, Library and Archives Canada, MG4 B1 reel C-12578, frame 0537, via Canadiana H&eacute;ritage')
 IMAGES['crawford1814'] = ('crawford1814_cipher.jpg', 'Frame 0064R, lines 1&ndash;13: &ldquo;to a determination 1554 1229 1036 1048 very 1025 1390&rdquo;, to sacrifice every thing for the friendship of England', 'US National Archives, RG 59, Despatches from US Ministers to France vol. 15, M34 roll 18 frame 0064 (right page), via catalog.archives.gov')
+IMAGES['tsnsj479'] = ('tsnsj479_lead.jpg', 'Burda verse 2b in the scribe&rsquo;s sign alphabet, side 2, as photographed', 'Cambridge University Library, T-S NS J479, side 2, via Cambridge Digital Library IIIF')
 
 IMAGES['jerash749'] = None
 
