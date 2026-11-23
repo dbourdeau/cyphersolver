@@ -1,6 +1,6 @@
 # Count of Siruela to Philip IV, Genoa, 19 May 1638 (catalogue 755, item EST,LEG,3594,156)
 
-Status: read (Brice Dudout, 28 Oct 2026; 93 of 94 words read in their sense, 89 certain, 3 probable, 1 restored, 1 unresolved; Daniel Bourdeau's 95% rule).
+Status: read in part (18 Nov 2026, recounted over cipher words, sure words only: 89 of 94, 94.7%; 87 of 94, 92.6%, on the corrected files). Was read (Brice Dudout, 28 Oct 2026; 93 of 94 words read in their sense, 89 certain, 3 probable, 1 restored, 1 unresolved; Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 28 Oct 2026. Published write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#genes-1638
@@ -56,3 +56,16 @@ Files: `transcription.txt`, `decryption.txt` (each line and its token values), `
 ## Remaining gaps
 
 - Code 197 (the person in whose absence Pallavicino was to pay) and code 205 (restored as "haciendo") occur only here.
+
+## Read share over cipher words only, sure words only (18 Nov 2026)
+
+Rule applied as written in PR #728 (owner's decision of 16 Nov 2026, README Conventions "The read share counts cipher words only"): the share is counted over the words written in cipher, sure words only; a word marked probable {x}, restored [x] or unresolved ‹x›, or carrying one such letter, is a hole; holes are counted by words.
+
+On the repository files: 94 words ("V. M." as 2), 89 certain, 3 probable, 1 restored, 1 unresolved: **89 of 94 = 94.7%**.
+On the corrected transcription and reading proposed on PR #710 (18 Nov 2026, after Brice Dudout's blind check of 9
+signs and 2 controls): 87 certain, 5 probable ({marqués}, {aquí}, {instancias}, {faltando}, {quien}), 1 restored
+([haciendo]), 1 unresolved (197): **87 of 94 = 92.6%**. Either way under the bar: class **read -> read in part**. The
+comment of 18 Nov on #710 kept "read" by counting probable words as read (97.9%); that does not hold under the rule
+of #728. One reviewer. `research/reading_audit/v10_relabel.py` (PR #728 branch) does not reproduce this count: it does not treat {x} or ‹x› as holes, and this reading declares no cipher or clear markup.
+
+Floor for short texts (README, 19 Nov 2026): does not apply, 94 cipher words (the floor is for fewer than 40).
