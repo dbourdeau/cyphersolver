@@ -2,12 +2,12 @@
 
 Key: K2 (key.tsv, column value_K2; frozen before decoding, prereg/PREREG-2-reading.md). Transcription: transcription.txt (two blind passes + blind arbiter, blind/). Mechanical decode: decryption.txt (`·` = null 318, `*n` = code not in the key, `?` = weak code or unsettled digit).
 
-Count by rule #728 (tools/count728.py, output count728_detail.txt): each decoded line is cut into words over a lexicon (words of the period glosses, of the clear text of the two letters, and tools/lexicon-extra.txt); a word is SURE only if all its groups are supported key values (status S) with an agreed transcription and the decoded string is that word exactly. Markup in count728_detail.txt: plain = sure; {x} = word with a weak value or unsettled digit (hole); ‹x› = stretch that does not segment into words (holes: one per started 5 letters); ‹[G]› = gutter loss (one hole). Values fixed from target context are never used.
+Count by rule #728 (tools/count728.py, output count728_detail.txt): each decoded line is cut into words over a lexicon (words of the period glosses, of the clear text of the two letters, and tools/lexicon-extra.txt); a word is SURE only if all its groups are supported key values (status S) with an agreed transcription and the decoded string is that word exactly. Markup in count728_detail.txt: plain = sure; {x} = word with a weak value or unsettled digit (hole); ‹x› = stretch that does not segment into words (holes: one per started 5 letters); ‹[G]› = gutter loss (one hole). Values fixed from target context are never used. Nine groups marked `!` in transcription.txt were settled by the blind sign check of 23 Nov 2026 (NOTES.md, Sign check, 23 Nov 2026); the count was redone with them (T1 106 -> 108, T2 348 -> 355 sure words; the two figures before the check were 0.416 and 0.415).
 
 | letter | cipher groups | sure words | holes | cipher words | read (sure / cipher words) |
 |---|---|---|---|---|---|
-| T1, 18 Feb 1737 (0060-0062) | 350 | 106 | 149 | 255 | 0.416 |
-| T2, 2 Apr 1737 (0092-0096) | 1194 | 348 | 490 | 838 | 0.415 |
+| T1, 18 Feb 1737 (0060-0062) | 350 | 108 | 147 | 255 | 0.424 |
+| T2, 2 Apr 1737 (0092-0096) | 1194 | 355 | 486 | 841 | 0.422 |
 
 Both: **read in part** (well under half the cipher words sure). The figure is conservative: the segmentation counts any stretch with a weak or missing code as holes, and some weak codes may well be right while some long fitted values (e.g. 54 lation, 22 uelila) are surely wrong.
 

@@ -37,7 +37,7 @@ for name,pages in [('T1','0060S,0061L,0061R,0062L'),('T2','0092S,0093L,0093R,009
             for t,s in g:
                 c=cc(t); v=K.get(c)
                 vals.append(nz(v) if v is not None else None)
-                ok.append(v is not None and ST.get(c)=='S' and s in('agree','arb-sure'))
+                ok.append(v is not None and ST.get(c)=='S' and s in('agree','arb-sure','planche-sure'))
             n=len(g); INF=10**9
             # dp[i] = (holes, -sure) best; words: j..i groups
             best=[(INF,0,None)]*(n+1); best[0]=(0,0,None)
