@@ -12,6 +12,7 @@ its "Also noted" list rewritten between <!-- table:start --> / <!-- table:end --
 <!-- also:end --> markers; the prose around them is hand-written and left alone.
 """
 import json, html, pathlib, re, datetime, collections
+from urllib.parse import urlencode
 import _methods as M
 import _claims
 import _repositories as RP
@@ -311,7 +312,6 @@ _ARCH = None
 def entry_href(e):
     """Where a catalogue row leads: a 'Help obtain' entry needs an archive, not an agent prompt, so it goes to its
     request on the To the Archive page (archives.html#c<id>) when the ledger has one; every other entry to its own page."""
-    if e.get('ww1'): return e['links'][0]['href']
     global _ARCH
     if _ARCH is None:
         f = pathlib.Path(__file__).resolve().parent.parent / 'archive_requests.json'
@@ -986,11 +986,10 @@ def outcome_text(e):
 
 
 def issue_url(e, template='solution.yml'):
-    from urllib.parse import urlencode
     target = f'catalogue {e["id"]}'
     params = {'template': template, 'title': f'Solution: {target}', 'target': target}
     if e.get('ww1'):
-        params['documents'] = f'{e["shelfmark"]}\n{entry_href(e)}'
+        params['documents'] = '\n'.join([e['shelfmark'], *(href for _, href in link_pairs(e) if href)])
     return f'{REPO}/issues/new?' + urlencode(params)
 
 
@@ -1117,9 +1116,17 @@ def frame_html(e):
 
 
 def solve_page(e, shell):
+    facts = f'''<dl class="facts">
+    <dt>Date</dt><dd>{esc(e["date"])}</dd>
+    <dt>Correspondents</dt><dd>{people_html(e)}{esc(e["correspondents"] or "unknown")}</dd>
+    <dt>Place</dt><dd>{esc(e["place"] or "unknown")}</dd>
+    <dt>Language</dt><dd>{esc(e["language"])}</dd>
+    <dt>Held at</dt><dd>{esc(e["shelfmark"])}{(" · " + esc(e["folio_note"])) if e.get("folio_note") else ""}</dd>
+    <dt>Images</dt><dd>{ark_links(e) or "&mdash;"}</dd>
+  </dl>'''
     if e.get('ww1'):
-        source = html.escape(entry_href(e))
         report = html.escape(issue_url(e))
+        reports_query = urlencode({'q': f'is:issue in:title "catalogue {e["id"]}"'})
         listing = e['ww1']['listing']
         checked = fmt_day(e['ww1']['checked'])
         description = f'{e["why"]}. An unsolved message listed by George Lasry’s WWI Cipher Repository.'
@@ -1137,19 +1144,19 @@ def solve_page(e, shell):
   <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. {e["id"]} · WWI Cipher Repository</p>
   <h1>{esc(e["title"])}</h1>
   <p class="sub">{esc(e["why"])}</p>
+  {facts}
 </section>
 <main>
   <p>George Lasry’s <a href="https://www.ww1ciphers.com/messages/{listing}">{listing.capitalize()} list</a> showed this message as unsolved when checked on {checked}.</p>
   <div class="btns">
-    <a class="primary" href="{source}">Open the case at WWI Cipher Repository</a>
-    <a href="{report}">Report a result</a>
+    <a href="{REPO}/issues?{reports_query}">View reports and discussion</a>
+    <a class="primary" href="{report}">Report a result</a>
   </div>
   <p>See the source case for the transcript, cipher background and archive links where available. Include your preferred credit when submitting a result.</p>
   {scores}
 </main>
 '''
         return solve_document(e, shell, body, description)
-    links = ' · '.join(f'<a href="{h}" rel="noopener">{esc(t)}</a>' if h else esc(t) for t, h in link_pairs(e)) or '&mdash;'
     folders = ''.join(f'<li><a href="{notes_url(f)}" rel="noopener">targets/{f}/NOTES.md</a>: what was tried and ruled out '
                       f'(<a href="{REPO}/tree/main/targets/{f}" rel="noopener">the folder</a>)</li>' for f in target_folders(e))
     prog = ''.join(f' <a href="{notes_url(f)}" rel="noopener">targets/{f}</a> is working on this cipher (status: {esc(st)}).' for f, _, st in progress(e))
@@ -1165,21 +1172,13 @@ def solve_page(e, shell):
     elif prog:
         prog = (f'<div class="callout blue"><p><strong>In progress here.</strong>{prog} Read its NOTES.md before you start, and hand it to '
                 f'your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>\n')
-    who = people_html(e)
     title = esc(e['title'])
     url = SITE + solve_href(e)
     body = f'''<section class="hero solve">
   <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. {e["id"]} · class {e["cls"]} · priority {priority(e):.1f} · {esc(short_outcome(e))}</p>
   <h1>{title}</h1>
   <p class="sub">{esc(e["why"])}</p>
-  <dl class="facts">
-    <dt>Date</dt><dd>{esc(e["date"])}</dd>
-    <dt>Correspondents</dt><dd>{who}{esc(e["correspondents"])}</dd>
-    <dt>Place</dt><dd>{esc(e["place"])}</dd>
-    <dt>Language</dt><dd>{esc(e["language"])}</dd>
-    <dt>Held at</dt><dd>{esc(e["shelfmark"])}{(" · " + esc(e["folio_note"])) if e.get("folio_note") else ""}</dd>
-    <dt>Images</dt><dd>{links}</dd>
-  </dl>
+  {facts}
 </section>
 
 <main>
