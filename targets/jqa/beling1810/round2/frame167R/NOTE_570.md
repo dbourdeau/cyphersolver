@@ -23,11 +23,13 @@ The first figure is a 5 and the last a 0. The middle figure is a short, heavy sl
 | Blind transcriber X (No. 25, round 2) | whole frame | 500 |
 | Blind transcriber Y (No. 25, round 2) | whole frame | 500 |
 | Helper 1 | the two crops only, asked "what number is written" | 500, medium-low confidence; alternative 510; 7 ruled out (this hand's 7s drop below the line; the dash is the 5's flag) |
-| Helper 2 | the same | 510, medium-high confidence; alternative 570; 7 judged less likely for the same two reasons |
+| Helper 2 | the same | 510, medium-high confidence; main alternative 570 (the dash as a 7's top bar); 7 judged less likely for the same two reasons |
 | Our first transcription (Oct 2026, single reader) | frame | 570 |
 
 ## Result
 
-None of the four new readings gives 570. The two transcribers read 500, which is *was* in the table and on the sheet, and fits the decipherment's *was*. The two crop readers split between 500 and 510, and both judge a 7 unlikely.
+None of the four new readings gives 570 as its main reading. The two transcribers read 500, which is *was* in the table and on the sheet, and fits the decipherment's *was*. The two crop readers split between 500 and 510. Helper 2 names 570 as its main alternative: the thin dash above the middle stroke could be a 7's top bar. Reading the dash as the 5's flag is an interpretation, though both helpers judge a 7 less likely, since this hand's 7s drop below the line.
 
-So this frame gives no second example of 570 for *was*. Our earlier 570 was a misreading of ours. The open 570 in No. 88 is not affected either way.
+So this frame gives no clear second example of 570 for *was*, and our earlier 570 was most likely a misreading of ours. The frame does not exclude 570. The open 570 in No. 88 is not affected either way.
+
+The crop readers were told which group to read but not why, and were given no plaintext, table or candidates. (Wording revised on 23 Nov 2026 after an independent review.)

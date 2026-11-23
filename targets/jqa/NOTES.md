@@ -433,8 +433,10 @@ it. No. 29 (19/31 Oct 1810, frames 185R-189L) has no decipherment and is decoded
 **In print.** Ford vol. 3 prints Nos. 21, 23 and 24 with their coded passages in clear and in italics (3:469,
 3:486-496, 3:503-507), and No. 22, which has no code. The 1980 documentary volume *The United States and Russia: The
 Beginning of Relations, 1765-1815* prints No. 27 with both passages (seen only through the Internet Archive's full-text
-search of its loan copy). *American State Papers, Foreign Relations* vol. 3 has none of them. Nos. 25 and 28 were not
-found in print, and No. 29 was not found in print or in a contemporary decipherment.
+search of its loan copy). *American State Papers, Foreign Relations* vol. 3 has none of them. Part of No. 25 is in
+print: Paul Cernovodeanu, "American Diplomatic Dispatches on the 1806-1812 Russo-Turkish War and on Bessarabia's Rapture," *Revue Roumaine d'Histoire* XXXVII (1998), 1-2, 19-41, p. 29, prints its closing paragraph and the first paragraph of passage G (our research file of 22 Oct 2026,
+from a scan read then; not re-opened for this package). The rest of No. 25, and No. 28, were not found in print, and
+No. 29 was not found in print or in a contemporary decipherment.
 
 **Plan, written first.** `beling1810/PLAN.md`, hashed before the first run (`PLAN.sha256`, 22:40 EST). The measure is
 `align.py`'s own alignment, imported unchanged, with the table alone: the share of valued groups whose table value
@@ -463,7 +465,8 @@ decipherments, not from this table.
 **Why under 0.80: the transcriptions.** Two transcriptions were made for three despatches; the second readings of
 Nos. 24 and 29 were made blind by helper agents from the film alone (`beling1810/transcriptions/`). Agreement number
 by number:
-- No. 21: 33 of 33.
+- No. 21: 33 of 33, counting its alternative readings; not independent: the second reader had seen the first
+  sequence in its task text (it says so), and three of its first-choice numbers differ (1259, 1398, 237).
 - No. 24: 330 of 461 (0.716).
 - No. 29: 878 of 1,169 (0.751).
 
@@ -489,7 +492,7 @@ share here.
   ("but [570] ultimately rejected", frame 167R). It aligns with *tol(d)* in No. 23-D.
 - 1185, *wick* on the sheet, spells Sles*wick* in No. 25-D; that confirms the sheet's value, which does not fit No. 88.
 
-Neither changes anything here. The 570 in No. 25 should be looked at on frame 167R (done in the second round below: the film has 500 or 510, not 570).
+Neither changes anything here. The 570 in No. 25 should be looked at on frame 167R (done in the second round below: four new readings give 500 or 510, none 570; 570 not excluded).
 
 ### Second round: doubly read groups only (22 Nov 2026, after the miss)
 
@@ -514,7 +517,8 @@ A group is scored only where the two readings give the same number; every other 
 - No. 27: 218 of 284 (0.768).
 - No. 28: 37 of 144 (0.257); passage A on frame 182 is washed out (20 of 117).
 - No. 29: 1,083 of 1,168 (0.927).
-- No. 21: 33 of 33, as before.
+- No. 21: 33 of 33 as before, but not two independent readings (see round 1); its 32 valued groups are kept in the
+  pooled figure as registered and left out in the figure below.
 
 **Result: PASS** (`round2/heldout_round2.txt`, run once). There are 2,718 agreed groups with a value in the table.
 Agreement with the witness is **0.853**; the best shuffled table reaches 0.128 (median 0.075). By despatch:
@@ -526,6 +530,20 @@ Agreement with the witness is **0.853**; the best shuffled table reaches 0.128 (
 - No. 21: 0.719.
 
 Strict read words, counting every unagreed group as a hole: 1,386 of 2,317 (0.598), against 0.509 in round 1.
+
+Without No. 21, whose two readings are not independent: 2,686 valued groups, agreement 0.854, strict words 1,372 of
+2,296 (0.598). The pass does not depend on it.
+
+After the fact, and not part of the registered test, the independent reviewer of 23 Nov 2026 scored each fresh blind
+reading alone, without the agreement filter (No. 21 left out). Reading 1 gives 0.816 and reading 2 gives 0.814 with
+`heldout_1810.py`; with the reviewer's own scorer they give 0.811 and 0.810. So the fresh readings alone are about
+0.81. The filter adds about 0.04, and the round-1 transcriptions were the main problem.
+
+Order of the second round. The last blind reading came back at 23:13 EST. `PLAN2.md` was hashed at 23:15:10, two minutes
+later, and the run began at 23:16. The passage mapping in `PLAN2.md` uses the readers' own run labels, so their files
+had been opened (for labels, not scores) before the hash. The order rests on local file times only; both commits carry
+one git time. `round2/no29_recount.txt` counts 1,169 group positions for No. 29, where `reader_agreement.txt` counts
+1,168 (the recount reads the hole tokens of `no29_agreed.txt`); the agreed count, 1,083, is the same in both.
 
 What it means and what it does not:
 - The table, rebuilt from 1811-12 alone, gives the witness's letters for about 85% of the 1810 groups that two readers
@@ -541,8 +559,10 @@ agree on or a value the sheet does not give. This is stricter than the reading's
 model reading with no witness, not checked by a person.
 
 **Frame 167R, the 570 of No. 25-A** (`round2/frame167R/NOTE_570.md`, with crops). Neither blind transcriber reads 570:
-both have 500. The two crop readers give 500 and 510, and both judge a 7 unlikely. The 570 of our first transcription was
-a misreading. This frame gives no second example of 570 for *was*, and the open 570 in No. 88 is unaffected.
+both have 500. The two crop readers give 500 and 510; one names 570 as its main alternative, since the thin dash above
+the middle stroke could be a 7's top bar, though both judge a 7 less likely. The 570 of our first transcription was most
+likely our misreading, but the frame does not exclude 570. It gives no clear second example of 570 for *was*, and the
+open 570 in No. 88 is unaffected.
 
 ## Transcription doubts
 
