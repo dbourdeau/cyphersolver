@@ -292,6 +292,18 @@ Nothing was changed in the key, the group files or the readings; `key/key_entrie
 - About 50 pages of bare System B in Codex 534 ff. 1-113 (listed in bare/bare_passages.md) - blocker: not-attempted; out of this package's scope, readable with key v3
 - Clear text around the runs of 25r, 26r, 28v, 56r-57r, 63r, 70v (transcribed 16 Nov 2026, most words doubtful) - blocker: illegible; needs a palaeographer before those entries can be read
 
+## Transcription doubts
+Clear words around the runs of 25r, 26r, 28v, 56r-57r, 63r and 70v (two AI passes of 16 Nov 2026, pass A not blind
+to pass B; `readings/clear_context_533.md`). Doubtful cipher signs are marked in `readings/runs_533.tsv` and are
+not repeated here. None of the doubts below is settled.
+- clear word before 25r a - read: dovuto(?) al by both passes, fondat[o](?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- clear words before 28v a - read: Particolari(?): V.S. by both passes, Per Napoli(?) V.S. in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open, colon or full stop unsure
+- clear word before 56r a - read: del giardino(?) (pass A) or Pagiardine(?) (pass B), Del pardi[n]e(?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- clear words before 63r a - read: Come nell'altro foglio(?) et by both passes, come voll[e] avviso(?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- "a" before DUSSELDORF (57r) - read: a(?) by both passes, a single stroke that may be a cipher sign; checked: image (two passes), decode not applicable (outside the recorded run); open
+- "94" (26r line 7, between clear words) - read: 94 by both passes (pass B: "a 94 a[nni](?)"), written like cipher digits; `transcriptions/reconciled_533_v2.tsv` has no run on that line, so it may be an unrecorded run or a figure in the clear text; checked: image (two passes), decode (no run recorded, so nothing decoded); open
+- the other doubtful clear words - read: marked (?) in `readings/clear_context_533.md`, counted per entry in `readings/clear_context_533.tsv` (clear_doubtful: 19, 14, 15, 31, 5, 20); checked: image (two passes), decode not applicable (clear text); open, needs a palaeographer
+
 ## Escalation
 - [x] siblings: Codex 534 paged (ff. 120-586 surveyed; ff. 1-119 on contact sheets); Codex 531 and 536 sampled; the interlined 534 letters are the key source
 - [x] clear-pages: no clear copy or decipherment of any Codex 533 run anywhere in the volume (every leaf paged)
