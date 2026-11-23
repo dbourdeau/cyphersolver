@@ -65,7 +65,7 @@ All work was done on 23 Nov 2026 by AI agents (Claude Opus 5.5) run by Andrew Be
 
 10. **Statistical key validation: prepared, not run.** `validation.tsv` aligns all 246 cipher letters with the reading. The 13 marked letters carry the reading, and the extra N in "falsas" counts as a null. The repository's validator (`python docs/_validate.py eaglepass1917`) needs the `es-modern` model, which builds from Project Gutenberg texts. They are not cached on our machine, Gutenberg returned HTTP 503 at the first try, and fetching from it was outside this session's permitted sites. So the test is still owed. It does apply here: a one-alphabet key over 246 letters is within its range. It has not been marked not applicable.
 
-To re-run: `python3 -I targets/eaglepass1917/decrypt.py` from the repository root rewrites `decryption.txt` (standard library only). For a doubtful letter, use for example `--alt 121=N`. The solver scripts in `work/scripts/` need numpy (so they do not run under plain `python3 -I`) and read files by absolute paths on our machine, outside the repository (the corpus, the pass 1 and pass 2 files as first saved, and the repository copy of 7d9b91fb8); the corpus is not committed. They are kept as the record of the runs, which the first reviewer reran on our machine byte for byte; the reading does not depend on them, only on `key.tsv`, `transcription.txt` and `decrypt.py`.
+To re-run, from the repository root, standard library only, under `python3 -I`: `targets/eaglepass1917/decrypt.py` rewrites `decryption.txt` unchanged (for a doubtful letter, use for example `--alt 121=N`); `targets/eaglepass1917/count_words.py` prints the strict counts of the table below (26 of 37, 159 of 246, and the three alternatives); `work/scripts/fold_check.py` checks the TIRANO fold (21 of 21); `docs/_replay.py eaglepass1917` runs the key replay. Each gave the same output in two runs on 23 Nov. The solver scripts in `work/scripts/` need numpy (so they do not run under plain `python3 -I`) and read files by absolute paths on our machine, outside the repository (the corpus, the pass 1 and pass 2 files as first saved, and the repository copy of 7d9b91fb8); the corpus is not committed. They are kept as the record of the runs, which the first reviewer reran on our machine byte for byte, and which were rerun twice more on 23 Nov (afternoon) with every committed file in `work/runs/` except `fold_test.json` coming out identical; the reading does not depend on them, only on `key.tsv`, `transcription.txt` and `decrypt.py`.
 
 ## Reading
 
@@ -75,7 +75,7 @@ See `reading.md` (Spanish, holes marked) and `translation.md`.
 
 > To present them to the censorship committee appointed by President Wilson, I need you to send me as soon as possible the names of journalists and information agents who spread false news and stir up opinion, chiefly with news of German plots. We must be able to prove it if necessary.
 
-**Counts.**
+**Counts** (`python3 -I targets/eaglepass1917/count_words.py`).
 
 | basis | words | letters in clean words |
 |---|---|---|
@@ -161,7 +161,7 @@ Not gaps in the reading, but open: cipher H, J and K never occur, so their value
 ## Files
 
 - `transcription.txt` (readings used, doubts marked), `transcription_pass1.txt`, `transcription_pass2.txt`
-- `key.tsv`, `decrypt.py`, `decryption.txt`, `reading.md`, `translation.md`, `profile.json`
+- `key.tsv`, `decrypt.py`, `decryption.txt`, `count_words.py` (strict counts), `reading.md`, `translation.md`, `profile.json`
 - `work/PLAN.md`, `work/PLAN.sha256`, `work/scripts/` (solver, controls, keyword test), `work/runs/` (every seed and score; `keyword_test.json`)
 - `review/` (the independent reviewer's blind transcription, solution and solver; `blind_reading_doubtful_letters.md`, the fourth blind reading)
 - `work/scripts/fold_check.py`, `work/runs/fold_test.json` (the key construction)
