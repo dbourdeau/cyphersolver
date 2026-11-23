@@ -428,7 +428,8 @@ the clerk files or the readings of No. 88.
 0155. Seven have coded passages. Six can be paired with an independent plaintext: No. 21 with Ford 3:469, and Nos. 23,
 24, 25, 27 and 28 with the decipherments made in the Department and filed with them (frames 156-159, 169-172,
 178-179, 184). No 1810 material went into `code_table.tsv`, so these 22 passages, 3,083 groups, are a held-out test of
-it. No. 29 (19/31 Oct 1810, frames 185R-189L) has no decipherment and is decoded with the key sheet alone.
+it. No. 29 (19/31 Oct 1810, frames 185R-189L) has no decipherment. It is not scored and not read here; its two
+transcriptions are used only to measure how far blind readers agree.
 
 **In print.** Ford vol. 3 prints Nos. 21, 23 and 24 with their coded passages in clear and in italics (3:469,
 3:486-496, 3:503-507), and No. 22, which has no code. The 1980 documentary volume *The United States and Russia: The
@@ -441,7 +442,8 @@ No. 29 was not found in print or in a contemporary decipherment.
 **Plan, written first.** `beling1810/PLAN.md`, hashed before the first run (`PLAN.sha256`, 22:40 EST). The measure is
 `align.py`'s own alignment, imported unchanged, with the table alone: the share of valued groups whose table value
 falls on the witness letters at that place. The control is 100 tables with the value sets shuffled among the numbers.
-The pass mark is pooled agreement >= 0.80 and >= the best shuffled table + 0.30.
+The pass mark is pooled agreement >= 0.80 and >= the best shuffled table + 0.30. The order of plan and run rests on
+local file times only; the transcriptions and witnesses had been read before the plan was written (`PLAN.md` says which).
 
 **Result: MISS.** Over 3,083 groups:
 - 2,843 have a value in the table (coverage 0.922).
@@ -475,17 +477,10 @@ Most of the differences are 0/6/8, 3/8 and 5/0. Scored on its blind second trans
 words (`heldout_no24_second.txt`). So much of the shortfall is our reading of the film, not the table. Nos. 23 and 25
 have one transcription, and Nos. 27 and 28 one made after the witness had been read. No. 28-A is largely washed out.
 
-**No. 29, with the key sheet alone** (`no29_decode.txt`, both transcriptions decoded with
-`../morris1813/beling/key/codebook_M97_13_transcription.csv`, unchanged). A model wrote it as sentences from the decode
-alone (`no29_reading.md`): 772 coded words, 77 holes (22 inferred, 46 with supplied letters, 9 unread), 695 built from
-group values, 0.900. About ten of the group values used come from the rebuilt table where the sheet gives none or another.
-
-It says that French pressure since February 1810 had worked to shut American ships out of Russian ports, or at least to
-ban colonial goods. A ban on refined sugar, proposed in April and backed by a French-written memorial, was debated in
-the Council and rejected. The Emperor declared his resolution not to exclude American vessels.
-
-This is a model reading, not checked by a person and with no witness: decoded and read in part, not counted in any
-share here.
+**No. 29 is not read here.** A decode of No. 29 with the key sheet alone, and sentences a model wrote from it, were
+made on 22 Nov 2026. With no witness and no person's check they are not a reading this folder records, and they are
+left out of it (working files kept locally). `PLAN.md` and `PLAN2.md` mention them; the plans are left unchanged so that
+their hashes hold.
 
 **Two single values met in passing** (alignment output, not checked on the film):
 - 570, which the table has as *tol* (H, 11x) and which No. 88 writes where *was* is wanted, aligns with *was* in No. 25-A
@@ -520,7 +515,14 @@ A group is scored only where the two readings give the same number; every other 
 - No. 21: 33 of 33 as before, but not two independent readings (see round 1); its 32 valued groups are kept in the
   pooled figure as registered and left out in the figure below.
 
-**Result: PASS** (`round2/heldout_round2.txt`, run once). There are 2,718 agreed groups with a value in the table.
+**Each blind reading alone, without the filter: about 0.81.** After the fact, and outside both plans, our reviewer, a
+separate AI agent (Claude Opus 5.5) that had not built this package, scored each blind reading alone, without the
+agreement filter (No. 21 left out), on the night of 22-23 Nov 2026 (about 23:30-00:15 EST). Reading 1 (X, and the
+round-1 second reading of No. 24) gives 0.816 and reading 2 (Y, and Z for No. 24) gives 0.814 with `heldout_1810.py`;
+with the reviewer's own scorer they give 0.811 and 0.810. So the fresh readings alone are about 0.81, and the
+round-1 transcriptions were the main problem.
+
+**Result with the agreement filter: PASS by the second plan** (`round2/heldout_round2.txt`, run once). There are 2,718 agreed groups with a value in the table.
 Agreement with the witness is **0.853**; the best shuffled table reaches 0.128 (median 0.075). By despatch:
 - No. 23: 0.865.
 - No. 24: 0.849.
@@ -534,31 +536,19 @@ Strict read words, counting every unagreed group as a hole: 1,386 of 2,317 (0.59
 Without No. 21, whose two readings are not independent: 2,686 valued groups, agreement 0.854, strict words 1,372 of
 2,296 (0.598). The pass does not depend on it.
 
-After the fact, and not part of the registered test, the independent reviewer of 23 Nov 2026 scored each fresh blind
-reading alone, without the agreement filter (No. 21 left out). Reading 1 gives 0.816 and reading 2 gives 0.814 with
-`heldout_1810.py`; with the reviewer's own scorer they give 0.811 and 0.810. So the fresh readings alone are about
-0.81. The filter adds about 0.04, and the round-1 transcriptions were the main problem.
-
 Order of the second round. The last blind reading came back at 23:13 EST. `PLAN2.md` was hashed at 23:15:10, two minutes
 later, and the run began at 23:16. The passage mapping in `PLAN2.md` uses the readers' own run labels, so their files
 had been opened (for labels, not scores) before the hash. The order rests on local file times only; both commits carry
-one git time. `round2/no29_recount.txt` counts 1,169 group positions for No. 29, where `reader_agreement.txt` counts
-1,168 (the recount reads the hole tokens of `no29_agreed.txt`); the agreed count, 1,083, is the same in both.
+one git time.
 
 What it means and what it does not:
 - The table, rebuilt from 1811-12 alone, gives the witness's letters for about 85% of the 1810 groups that two readers
   read alike. The round-1 shortfall was mostly our transcription.
 - The second round was decided on after seeing the first. The readers are all the same model, so their shared
-  misreadings pass the agreement filter. The filter keeps the clearer groups.
+  misreadings pass the agreement filter. The filter keeps the clearer groups; it adds about 0.04 to the unfiltered 0.81.
 - The table itself is not changed, and nothing here counts towards the No. 88 figures.
 
-**No. 29 on agreed groups only** (`round2/no29_agreed.txt`, `round2/no29_recount.py`). Of the 781 words of the model
-reading (manuscript clear words left out), 582 (0.745) rest wholly on agreed groups whose sheet value the alignment
-confirms. The other 199 are holes: 77 were already marked in the reading, and the rest touch a group the readers do not
-agree on or a value the sheet does not give. This is stricter than the reading's own count (0.900). It is still a
-model reading with no witness, not checked by a person.
-
-**Frame 167R, the 570 of No. 25-A** (`round2/frame167R/NOTE_570.md`, with crops). Neither blind transcriber reads 570:
+**Frame 167R, the 570 of No. 25-A** (`round2/frame167R/NOTE_570.md`; the crops are not committed, their boxes are in the note). Neither blind transcriber reads 570:
 both have 500. The two crop readers give 500 and 510; one names 570 as its main alternative, since the thin dash above
 the middle stroke could be a 7's top bar, though both judge a 7 less likely. The 570 of our first transcription was most
 likely our misreading, but the frame does not exclude 570. It gives no clear second example of 570 for *was*, and the
