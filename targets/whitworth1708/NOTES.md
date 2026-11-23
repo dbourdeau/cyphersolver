@@ -18,7 +18,8 @@ An earlier test, with a table built from the print alone, was void by its own ru
 table alone the bare duplicate is "decoded, not read": 47 of its 77 coded words come out whole.
 
 This confirms the office's decipherment and gives a reusable part of the code. It is not an independent solution:
-every value in the table is the office's, or an alignment with the office's words.
+every value in the table is drawn from the office's words. Which group carries which part of a word is our alignment,
+and one such split (236) is wrong.
 
 ## 1. Documents
 
@@ -36,14 +37,16 @@ Each pair below was confirmed on the pages (both numbers are written on them).
 | 1708-09-01 | Whitworth to Boyle, Moscow, 1/12 Sept 1708, duplicate | f. 49 | f. 233 | 112 groups on two pages | none |
 | | the same, original (not seen) | f. 42 | f. 226 | "partly in cipher" | presumably the office's |
 
-Catalogue 863 asks to "match SP 91/5/298 with SP 91/5/294". They match: old f. 298 (stamped 112) is the bare duplicate
+Catalogue 863's check is to "match SP 91/5/298 with SP 91/5/294". That match is done: old f. 298 (stamped 112) is the bare duplicate
 of the private letter whose deciphered original is old f. 294 (stamped 110), and old f. 300 is likewise the bare
 duplicate of old f. 274. The duplicate's groups and the original's agree in sequence apart from scattered digits
-(`compare/`). The other items of catalogue 863, in SP 91/6 (1709), were not seen (Remaining gaps).
+(`compare/`). The seven other items of catalogue 863, in SP 91/6 (1709), were not seen (Remaining gaps), so the entry
+as a whole is not closed by this folder.
 
 ## 2. Sources and images
 
-- The manuscripts were read from the page images of State Papers Online, 1509-1714 (Gale), under a library licence.
+- The manuscripts were read, by AI agents, from the page images of State Papers Online, 1509-1714 (Gale), under a
+  library licence.
   **No image or crop is in this folder**; the licence does not allow it. What is here is our transcription.
 - Catalogue records: old f. 226 <https://discovery.nationalarchives.gov.uk/details/r/C6719667>, old f. 274
   <https://discovery.nationalarchives.gov.uk/details/r/C6719686>, old f. 294
