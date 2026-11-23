@@ -8,9 +8,9 @@ You will here perceive some uncertainty how far the neutral intention[s] and exp
 
 ## Count (words, 21 Nov 2026)
 
-17 words, 17 read = 1.000. No holes.
+17 words, 15 read = 0.882 (README Conventions, 16 Nov 2026: a word with a supplied or emended letter counts as a hole). Holes: intention[s] and expectation[s], whose s is supplied from the plural mark. Read in part.
 
-- intention[s], expectation[s]: 1378 and 1369 are each followed on the film by a small raised circle, the plural mark of this code (on frame 0196 the clerk writes "intentions" over 1378 with the same mark). The transcription file does not carry the mark; `we028_no85.tsv` does.
+- intention[s], expectation[s] (two holes: the s is supplied): 1378 and 1369 are each followed on the film by a small raised circle, the plural mark of this code (on frame 0196 the clerk writes "intentions" over 1378 with the same mark). The transcription file does not carry the mark; `we028_no85.tsv` does.
 - expectation: 295 exp, 518 ect, 1369 tation (the t is doubled by the syllables).
 - extend: 298 ext, 548 end. One of the two blind transcribers read the last group 528 (ei); the other, the verifier's second look and a fourth look at an enlargement read 548 (the open-topped 4 of this hand).
 

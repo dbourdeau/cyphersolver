@@ -8,7 +8,7 @@
 
 ## Count (words, 21 Nov 2026)
 
-55 words, 51 read = 0.927. Holes: [?extensive], [?loss], [?Sweden], [?be]. Read in part.
+55 words, 50 read = 0.909 (README Conventions, 16 Nov 2026: a word with a supplied or emended letter counts as a hole). Holes: [?extensive], [?loss], [?Sweden], [?be], objection[s]. Read in part.
 
 - [?extensive]: 289 ex, 1375 ten, then **23x** cut by the binding gutter; 239 sive would finish the word.
 - {+gu}lph: **1236** (sheet: ground) for 1238 gu, 1452 l, 1127 ph. 1236 in both blind transcriptions and in the September transcription. 1238 is the group written for gu in con-ti-gu-ous four lines above. One-digit rule.
@@ -19,7 +19,7 @@
 - in{+dem}nified: 1426 in, **820** (sheet: delegate) for 821 dem, 439 ni, 335 fied. 820 in all three transcriptions and on an enlargement; frame 0197 has 821 in the same word. One-digit rule.
 - eventually: 283 event, 454 val, 897 ly (u and v are one letter on the sheet).
 - acquisition: 1507 ac, 709 qui, 1098 si, 565 tion. One transcriber read 585 (lay), the other 585 or 565; the September transcription and an enlargement have 565.
-- objection[s]: 81 is followed on the film by the raised circle, the plural mark.
+- objection[s] (a hole: the s is supplied): 81 is followed on the film by the raised circle, the plural mark.
 - The three spaced dots after "Norway" fill the end of a line on the film; they are not a word (the September reading has "without ..." there).
 
 Five numbers in six lines stand on the film and give no sense as written, four of them one step from a number that does. This copy is the duplicate; whether the slips are Adams's or a copyist's the film does not show.
