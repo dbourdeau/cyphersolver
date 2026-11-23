@@ -340,7 +340,7 @@ clear text around their runs was not transcribed. That text is now transcribed, 
   39; 26r 25 and 17 of 31; 28v 13 and 4 of 19; 56r-57r 37 and 14 of 45; 63r 10 and 6 of 11; 70v 20 and 7 of 27.
   Sure cipher words are as before (0 of 4, 4 of 18, 1 of 5, 3 of 3, 3 of 6, 0 of 1). No sentence containing a run
   builds with only scattered holes.
-- **Two clauses read as clauses:** 26r "Vorrei che V.S. con una Curiosità(?) mi mandasse(?) un(?) RELATION[E] DEL
+- **Two clauses read as clauses:** 26r "Vorrei che V.S. con una Curiosità(?) mi mandassi(?) un(?) RELATION[E] DEL
   [... 8]" (I would like V.S. ... to send me a report of ...), and 57r "che V.S. haveva(?) scritto(?) per [...]
   viaggio(?) a(?) DUSSELDORF" (that V.S. had written for [...] journey to Düsseldorf), whose sentence begins on 56v
   in words neither pass could read. On 56r the clause around MIA FIGLIA does not read. So we do not dispute
