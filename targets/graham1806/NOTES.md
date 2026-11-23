@@ -3,6 +3,9 @@
 Status: no write-up. Attempted and closed open 26 Oct 2026: nothing added to the Madison Papers editors' partial
 decode, so there is no page. Blocked from outside: no images online and the code's key (Weber 1979 pp. 419-30) was
 not obtained (see Escalation). Reopen if someone supplies Weber's table, Lewis's key or the LoC microfilm frames.
+22 Nov 2026: Weber's table was tried (section "The 2 Jan 1806 sibling in Weber's WE023"). It reads the January
+sibling but not the [22 Nov] extract, so the target stays open and still has no write-up. The LoC frames are what is
+left.
 
 ## The documents
 
@@ -33,32 +36,77 @@ alone: the manuscript is needed.
   editors' "West?" for 73 is wrong and "president?" sits on the wrong number (67). This is unchecked: it rests on a row
   position read from OCR coordinates, not on the page.
 
+## The 2 Jan 1806 sibling in Weber's WE023 (Andrew Beling, with AI agents, 11 and 22 Nov 2026)
+
+Files: [`beling/`](beling/README.md). Weber's table is cited, not copied. **The table test cannot be rerun without a
+copy of Weber 1979.** A reader without the book can rerun the held-out test and the 22 Nov statistics.
+
+- **Source.** The 2 Jan 1806 letter is online. NARA T260 roll 8 (Territorial Papers, Orleans), file unit
+  [221215877](https://catalog.archives.gov/id/221215877), frames 0006-0011, docket 0012. The letter starts on frame
+  0006. It is the recipient's copy, with Jacob Wagner's words written above the code. Frame hashes are in
+  `beling/README.md`.
+- **Transcription.** 57 coded runs, 614 groups, 275 distinct (`beling/transcription_2jan1806.txt`). **It is not
+  strictly blind:** Wagner's words are on the same images as the digits. Frames 0006-0009 were read before any table
+  was opened. Frames 0010-0011 were read after about 40 groups had been looked up in WE023, and groups re-read after a
+  lookup are marked doubtful and left out. Two groups on 0008 first read as 114 were corrected to 1114 on a zoom after
+  the first run. A second reader has not checked it.
+- **Table test** (418 usable words). For each word: do the table's elements at those numbers spell Wagner's word?
+  Lenient allows one letter of difference. Controls: 200 shuffles of each table
+  (`beling/PLAN.md`, `beling/verify.py`, `beling/results.json`). No pass mark was set before the first run.
+
+  | table | strict | lenient | best of 200 shuffles (strict / lenient) |
+  |---|---|---|---|
+  | WE023 | 383 | 405 | 9 / 42 |
+  | WE016, WE018, WE022, WE024-WE028 | 0-4 | 0-10 | 4-13 / 13-41 |
+
+  The first run on 11 Nov drew all tables' shuffles from one random stream and gave a best of 36 for WE023. The rerun
+  seeds each table separately. The real scores are the same in both runs.
+- **Held out, no table.** A key built from Wagner's single-group words on frames 0006-0008 gives his word for 116 of
+  the 118 groups it covers on 0009-0011 (200 permuted keys: mean 1.6, best 13). The reverse gives 90 of 91 (best 11).
+  The table that scores best on 0006-0008 alone is WE023, and it scores 222 strict and 234 lenient of 243 words on
+  0009-0011. **The 2 Jan 1806 letter is in WE023 number for number, as the Madison editors said.**
+- **Where WE023 misses.** Most of the 13 lenient misses look like errors in our text layer of Weber, which was not
+  corrected by hand (879, 1159, 967, 848, 1593). The rest are Wagner's word choices ("near" over the group for
+  "nearly"). Graham's own departures, on the image: he writes 1225 for "are" four times beside 1228 three times, and
+  848 in "mulattoe". The page images of Weber have not been checked at these cells.
+- **The [22 Nov] extract is not in that code.**
+  - The January key gives a value for none of the 18 open or conjectured numbers.
+  - WE023's entries at those numbers are syllables and words of its *pa-pre* stretch, which give no sense in the
+    extract. The January letter itself writes "President" with a group in that stretch, not 67.
+  - Only 11 of the 613 readable January groups are 77 or below. Eighteen distinct numbers drawn evenly from 1-1593
+    would all fall at 77 or below with a probability of about 2 × 10^-24.
+  - So either the extract is in a different, smaller code, or the numerals printed on Founders are not Graham's
+    groups. Only the manuscript can settle which.
+- **The November manuscripts.** The 12 Nov letter, the [22 Nov] extract and the 28 Nov covering letter are in the
+  Library of Congress Burr Conspiracy Collection (MSS14415), a single bound volume, Box 1, Reel 1 (microfilm 17,112).
+  The finding aid has no item list, and the volume is not digitised. So the frames have to be found on the reel.
+
 ## Remaining gaps
 
 | groups | blocker |
 |---|---|
-| 10 19 30 33 35 36 39 41 51 61 65 77 (no reading) | no-key-material: Weber pp. 419-30 not available here; Lewis's key unpublished |
-| 18 46 54 67 71 73 (conjectures) | same: need the key or the manuscript to confirm |
+| 10 19 30 33 35 36 39 41 51 61 65 77 (no reading) | needs-physical-access: not in WE023, the January code (`beling/`); the manuscript (LoC microfilm 17,112) is needed to see what Graham wrote; Lewis's key unpublished |
+| 18 46 54 67 71 73 (conjectures) | same: WE023 does not confirm them; the manuscript is needed |
 | all code groups of the decoded words | needs-physical-access: Burr Conspiracy Collection is not digitised (LoC microfilm 17,112) |
 
 ## Escalation
 
 - Siblings: Founders search (author Graham, keyword code) gives 7 coded Graham letters: Madrid 1802-03 (key not found;
-  Pinckney-era), 2 Jan 1806 (State Department code, Weber 419-30), 12 and 22 Nov 1806. The 2 Jan 1806 letter is the
-  sibling to align once a page image or Weber's table is in hand.
+  Pinckney-era), 2 Jan 1806 (State Department code, Weber 419-30), 12 and 22 Nov 1806. The 2 Jan 1806 letter was
+  aligned on 22 Nov 2026 (above): it is in WE023, and the 22 Nov extract is not.
 - Clear pages: none known; Graham's 28 Nov 1806 covering letter (the "next" link from 02-13-02-0081 on Founders) describes the extract; not yet read for clear restatements.
 - Known keys: Pinckney and THE=972 ruled out (above); Weber pp. 419-30 is the candidate.
 - Print: James E. Lewis, *The Burr Conspiracy: Uncovering the Story of an Early American Crisis* (Princeton, 2017) may
   print or describe his partial key. Not checked (no access).
 - Images: LoC catalogue mm75014415: 100 items, 1 container, 1 microfilm reel (no. 17,112, 1977), no online images;
-  findingaids.loc.gov sits behind a bot check. NARA RG 59 Territorial Papers Orleans vol. 8 may be filmed (M-series)
-  and would give the 2 Jan 1806 sibling with Wagner's decode.
+  findingaids.loc.gov sits behind a bot check. the 2 Jan 1806 sibling is filmed and online, NARA T260 roll 8
+  frames 0006-0012 (naId 221215877).
 - Retry: not possible from the ciphertext alone. 21 numeric groups with no repeats beyond 18/46/73 is far too short
   for a solver.
 
 ## Next steps
 
-1. Someone with a library copy of Weber reads pp. 419-30 at groups 10-77 and checks them against the context
-   (`founders_22nov.txt`). If they fit, the extract can be read as "external key matched".
+1. Done 22 Nov 2026 (`beling/`): Weber's WE023 at groups 10-77 does not fit the extract, although it reads the
+   2 Jan 1806 letter. Optional: check Weber's page images at 848, 879, 967, 1159, 1311 and 1593.
 2. Ask the Madison Papers (UVA) or James E. Lewis for the partial key and the group numbers of the decoded words.
 3. Order LoC microfilm 17,112 frames for the two letters.
