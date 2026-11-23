@@ -29,6 +29,9 @@ runs (folio 2 paragraphs 4-7, all of folio 3) are transcribed three times (secon
 - Folio 3 is **faint** (pale typing, an archive watermark over the right margin of paragraphs 1-2, ink loops of the
   signature over paragraph 4 and the postscript). Its runs were read on contrast-stretched crops (red channel).
 
+- Scope: only the 60 runs above. Folio 1's two runs and folio 2 paragraphs 2-3 are Narváez's printed reading; they
+  are not transcribed or counted here (folio 1's first run was checked for the Suárez correction only).
+
 ## System and key
 
 Gronsfeld-type shift over the 27-letter Spanish alphabet (A-N, Ñ, O-Z): cipher = plain + 3, +1, +3, repeating, spaces
@@ -77,45 +80,18 @@ decode being used.
 
 ## Transcription doubts
 
-- f2.19 sign 20, before the line break (folio 2, paragraph 5) - read: "?" (an overtyped sign); checked: image, decode,
-  transcription; pass 1 could not read it, pass 2 read Ñ typed over B or H. It holds its place in the key cycle, and
-  with it the 17 letters after the line break give no words (a hole). If the sign is a struck-out letter and is
-  dropped, they give ATINAS ORIENTACIÓN: listed under "Post hoc", not counted.
-- f2.27/f2.28 (folio 2, paragraph 6) - read: two runs ("para que" between them); checked: image, transcription; pass 2
-  took them as one run broken at the line end. No effect on the decryption: f2.27 has 21 letters, a whole number of
-  3-1-3 cycles.
-- f3.02 sign 2 (folio 3, paragraph 1) - read: F; checked: image, decode, transcription; the first four signs are
-  overtyped (WFPH over another typing); pass 2 read E or F; F gives TENEMOS, E gives TDNEMOS. Chosen with the decode,
-  so TENEMOS is counted as a hole.
-- f3.03 signs 18 and 20 and the first sign of the second line - read: D, N, Q; checked: image, decode, transcription;
-  under the watermark; pass 2 D or E, N or Y, Q or O. The word gives MISPOSICIONES ({M/D}ISPOSICIONES, a hole) with
-  these readings.
-- f3.04 sign 5 - read: S; checked: image, decode, transcription; S typed over B (pass 2); pass 1 had B. S gives SU
-  PARECER; as the passes differ, the plan makes PARECER a hole ([?PARECER]). Pass 3: B, perhaps over S. The cell holds
-  both letters (S and B struck over each other; the clear "su" just before is struck out too); B gives nothing, so S
-  is chosen by the decode and PARECER stays a hole.
-- f3.07 signs 9-17 (folio 3, paragraph 2) - read: HTWDSXGFPPPUÑPDDT, signs 9 and 13-16 unsure; checked: image,
-  transcription; under the watermark and a dark overtyping; pass 1 read C for sign 9 (the watermark's C), pass 2 P; the
-  image shows P. Pass 3 (blind) reads P, so pass 1's final reading and both blind passes agree: EN is now counted
-  clean. Signs 13-16 stay unsure ([Ñ|N] [P|F] D [D|E]; pass 3: S, illegible, D, [B|E|Ñ], under the "Carlos Slim"
-  stamp); the stretch after EN is a hole.
-- f3.10 sign 42 (an earlier version said 41) - read: K; pass 3 [H|K], an ink blot on the next sign; checked: image, transcription; pass 2 H or K. Inside a stretch that does not decode
-  either way (a hole).
-- f3.12, three places (folio 3, paragraph 2) - read: P at sign 18; no letter before F at the start of line 2; no V in
-  BHMWHT; checked: image, decode, transcription; pass 2 read F, a faint I, and BHMVWHT. On the enhanced image sign 18
-  is a faint P, the mark before the line is fainter than the type and not a letter, and BHMWHT has one letter between M
-  and H at most. Pass 2's readings break the run into nonsense (DECEC..., FESMG..., TGQOT...); pass 1's give DECEN FIRMAR
-  DOCUMENTOS ... TESORERO HAN ADOPTADO. Pass 3 (blind) agrees with pass 1 at all three places (P; no letter before F; BHMWHT), with the line's 63-64 signs
-  fitting the pitch, so DOCUMENTOS and TESORERO are now counted clean.
-- f3.14 sign 151 (third line) - read: H; pass 2 H or I (prefers H); pass 3 I; checked: image, decode; H gives
-  CONSTANTEMENTE, I gives CONSTANTFMENTE. On this line the H prints as two stems with a very faint bar (compare the H
-  three signs on), and the pitch allows one sign: H, as passes 1 and 2 prefer. Counted clean (pass 1 and pass 2 agree).
-- f3.12 sign 110 - read: I (TGHIXH); pass 2 I or H; pass 3 [H|I|L]; on the enhanced image the H before it has its bar
-  and this sign is one stem: I. It is the slip in {H/G}UERRA (I for H, one step), a hole either way.
-- f2.19 sign 20 - pass 2 Ñ over B or H; pass 3 Ñ over B (or B over Ñ): the cell is a corrected typing (see Post hoc).
-- f3.19 sign 6 - read: H; pass 2 H or M; checked: image, decode (SUS IDEAS).
-- f3.18, f3.20, f3.22 - letters crossed by the ink loops of the signature (M in f3.18, S in f3.20, D/R in f3.22); read
-  through the stroke; checked: image, transcription; both passes agree.
+- f2.19 sign 20, before the line break (folio 2, paragraph 5) - read: "?" (an overtyped sign: Ñ typed over B); checked: image, decode, transcription; pass 1 could not read it, pass 2 read Ñ over B or H, pass 3 (blind) Ñ over B. Kept as "?", it holds its place in the key cycle, and the 17 letters after the line break give no words (a hole). As Ñ, it is the letter due in PAULATINAS under the post hoc restart (below); not counted.
+- f2.27/f2.28 (folio 2, paragraph 6) - read: two runs ("para que" between them); checked: image, decode, transcription; pass 2 took them as one run broken at the line end, pass 3 two runs. The decode is the same either way: f2.27 has 21 letters, a whole number of 3-1-3 cycles.
+- f3.02 sign 2 (folio 3, paragraph 1) - read: F; checked: image, decode, transcription; the first four signs are overtyped (WFPH over another typing); pass 2 read E or F; pass 3 F over E; on our crop the order of the two layers cannot be told. F gives TENEMOS, E gives TDNEMOS. Chosen with the decode, so TENEMOS is counted as a hole.
+- f3.03 signs 18 and 20 and the first sign of the second line - read: D, N, Q; checked: image, decode, transcription; under the watermark; pass 2 D or E, N or Y, Q or O; pass 3 [D|B|E], [N|M], Q. The word gives MISPOSICIONES ({M/D}ISPOSICIONES, a hole) with these readings.
+- f3.04 sign 5 - read: S; checked: image, decode, transcription; S and B typed over each other (pass 1 B, pass 2 S over B, pass 3 B perhaps over S; the clear "su" just before is struck out too). S gives SU PARECER, B gives nothing, so S is chosen by the decode and PARECER is a hole ([?PARECER]).
+- f3.07 signs 9-17 (folio 3, paragraph 2) - read: HTWDSXGFPPPUÑPDDT, signs 13-16 unsure; checked: image, decode, transcription; under the watermark, an overtyping and the "Carlos Slim" stamp. Sign 9: pass 1 first read C (the watermark's C), passes 2 and 3 (blind) read P (pass 3: F possible), the image shows P; P gives EN, counted clean under the rule above (pass 1 and a blind pass agree). Signs 13-16 stay unsure ([Ñ|N] [P|F] D [D|E]; pass 3: S, illegible, D, [B|E|Ñ]); the 8 letters after EN give no words either way (a hole).
+- f3.10 sign 42 - read: K; checked: image, decode, transcription; pass 2 H or K, pass 3 [H|K] with an ink blot on the next sign. Inside a stretch that gives no words with either letter (a hole).
+- f3.12 sign 18, the start of line 2 and BHMWHT (folio 3, paragraph 2) - read: P; no sign before F; BHMWHT; checked: image, decode, transcription; pass 2 read F, a faint I, and BHMVWHT, which break the run into nonsense (DECEC..., FESMG..., TGQOT...). Pass 3 (blind) agrees with pass 1 at all three places (a paper crease makes the F look like IF; the line's 63-64 signs fit the pitch), so DOCUMENTOS and TESORERO are counted clean.
+- f3.12 sign 110 - read: I (TGHIXH); checked: image, decode, transcription; pass 2 I or H, pass 3 [H|I|L]; on the enhanced image the H before it has its bar and this sign is one stem. It is the slip in {H/G}UERRA (I for H, one step); a hole with either reading.
+- f3.14 sign 151 (third line) - read: H; checked: image, decode, transcription; pass 2 H or I (prefers H), pass 3 I. H gives CONSTANTEMENTE, I gives CONSTANTFMENTE. On this line the H prints as two stems with a very faint bar (compare the H three signs on), and the pitch allows one sign. Counted clean (pass 1 and pass 2 agree); a stricter count, which also holds EN, would give 248.
+- f3.19 sign 6 - read: H; checked: image, decode, transcription; pass 2 H or M, pass 3 H (SUS IDEAS).
+- f3.18, f3.20, f3.22 (M in f3.18, S in f3.20, D/R in f3.22) - read: M, S, D and R, through the ink loops of the signature; checked: image, decode, transcription; all three passes agree.
 
 ## Plan and control
 
@@ -145,10 +121,12 @@ transcription.
 `reading_DCXXI.6.588.1.md` (the runs in their clear sentences), `translation_DCXXI.6.588.1.md`.
 `python scripts/count_words.py` checks the marks against the decryption and counts **250 clean words** (247 before the third transcription settled EN, DOCUMENTOS and TESORERO). Holes: 11
 one-letter slips, TUEER for "que es" (2), ULTMIAS, TENEMOS (sign chosen with the decode), PARECER (an overtyped sign
-settled by the decode), 5 unidentified words, and 6 stretches that give no words. Counting each stretch as one word
-gives 275 word places (0.909); estimating each stretch's words from its letters (5.38 letters per clean word) gives
-**296 word places, 250 clean (0.845)**, the figure used here. (The post hoc readings below put about 28 words in
-the four longest stretches, against the estimate's 26.5; none is counted.)
+settled by the decode) and 4 unidentified words (RYN, ARMORA, BNOIJNA, CELA), which makes 20 hole words, plus 5
+stretches that give no words (f2.19 17 letters, f3.07 8, f3.10 36, f3.13 41, f3.20 37). Counting each stretch as one
+word gives 275 word places (0.909); estimating each stretch's words from its letters (5.38 letters per clean word,
+about 25.9 words) gives **296 word places, 250 clean (0.845)**, the figure used here. (The post hoc readings below
+give 28 words where the count has two unidentified words and four stretches estimated at about 24.3 words; none is
+counted.)
 
 `python docs/_check_reading.py wellington1922` (23 Nov 2026, after the third transcription): reading 0.417 (20 of 48 sentences
 clean; 0.396 before it), decryption 0.184. Most of the words it does not know are modern Spanish words and names that its period word
@@ -197,7 +175,7 @@ one the cycle **restarts (shift 3) at the first letter of a word**, which is wha
   letter due there. (The earlier post hoc reading dropped that sign and gave RYN ATINAS.)
 - f3.10: LOS NOMBRES `<restart>` DE LAS PERSONAS QUE I{Q/N}TEGRAN NUESTRA JUNTA.
 - f3.13: `<continue f3.12>` J. SILICEO, F. SÁNCHEZ, MIGUEL ALTAMIRANO Y LUIS MORA: f3.12 has 130 letters (130 mod 3 =
-  1), and f3.13, after "respectivamente:", carries on its cycle. These are the war names of the president, secretary,
+  1), and f3.13, after "respectivamente:", carries on its cycle. On this reading these would be the war names of the president, secretary,
   deputy secretary and treasurer. **"F. Sánchez" is the signature of the Sánchez letter of 12 Jan 1922
   (`../sanchez1922/`, "F. Vbpfihc.")**: on this reading it is the war name of the secretary, Fidencio E. López.
 - f3.20: DESIGNAR AL SR. D. POMPOSO `<restart>` BONILLA, HERMANO DEL LIC., COMO VOCAL EN LA PROP `<+1>` IA JUNTA
@@ -211,7 +189,7 @@ stretch's signs as controls (pass: at least 80% of the letters in words and abov
 had little unseen material: f3.07's tail and f3.22's tail are too short (shuffles reach 100% too) and missed; f3.20's
 end reads only with the skip inside PROPIA, which the rule does not allow, so that is a miss for the rule. On the
 stretches already seen it beats the shuffles (f3.10 0.94 against a control maximum of 0.89; f3.13 0.93 against 0.83),
-which shows the readings are not an artefact of trying many restart points, but these are not blind tests. So none of
+which suggests (the rule was formed on these stretches, and the scorer's word list includes this letter's names) the readings are not an artefact of trying many restart points, but these are not blind tests. So none of
 these words is counted.
 
 **Outside support (CEHM catalogue, searched 23 Nov 2026).** The record of another letter signed "J. W. Wellington"
@@ -226,12 +204,15 @@ Fidencio E. López, who signs as Wellington here and, on the f3.13 reading, as F
 
 - Image 0001: a handwritten slip listing, in order, the cipher words of the Sánchez letter DCXXI.3.323.1
   (`../sanchez1922/`): "Landeros / nombrar una Junta / Tlaxcala / "El Látigo" / Figueroa / Mixteca Baja, Oax. /
-  Miguel Gutiérrez / Manuel Márquez / Arturo Osorio / Rodolfo Urdapilleta / Francisco Machorro / Lic. Yulas / Emilio /
-  Manuel Cortez / Plazuela Parral #1 / Puebla, Pue." It is that letter's plaintext in order (without
-  "Goitia" and the signature). It confirms YULAS as decoded; for "Baja" and "Cortez" it supplies the words, which the
-  cipher does not spell, so under the strict rule they stay repaired words (the cipher's "fpufv" is CORTÉS with S, not
-  Z, and its fourth sign, T, missing; "ybld" spells VAIA). Reported to that target separately (a
-  "Fuller reading" note), not used here.
+  Miguel Gutiérrez / Manuel Márquez / Arturo Osorio / Rodolfo Urdapilleta / Francisco Machorro / Lic. ?ulas / Emilio /
+  Manuel Cortez / Plazuela Parral #1 / Puebla, Pue." That is that letter's plain text in order, without "Goitia" and
+  the signature. It differs from the signs at that letter's three holes:
+  - "?ulas": its capital is this hand's J (or F), not a Y, so probably Julas. The signs spell YULAS exactly.
+  - "Baja": the signs spell VAIA.
+  - "Cortez": the signs give COR?ES, either CORTES with its fourth sign dropped or CORES with a skip in the key cycle.
+
+  So it supplies words that the cipher does not settle, and the upstream target keeps all three as holes. It is
+  reported to that target separately (a "Fuller reading" note) and is not used here.
 - Image 0002: a handwritten form "Junta de Puebla" with the headings Pres., Sec., Pro[sec.], Tes., Vocales, left blank.
   It matches the officers named on folio 3.
 
@@ -249,18 +230,13 @@ Fidencio E. López, who signs as Wellington here and, on the f3.13 reading, as F
 
 ## Remaining gaps
 
-- f3.07 after ESTAR UD. EN (8 letters) - blocker: illegible; under the watermark and an overtyping.
-- f2.19 after DESINTEGRACIONES (21 letters), f3.10 after LOS NOMBRES (36), f3.13 the four war names (41), f3.20 after
-  POMPOSO (44) - blocker: too-short; restarts of the key cycle, read post hoc above (with catalogue support for
-  f3.13); the restart rule was frozen and tested on 23 Nov 2026, but the only unseen stretches were too short to
-  decide it, so these are not counted.
+- f3.07 after ESTAR UD. EN (8 letters) - blocker: illegible; under the watermark, an overtyping and the stamp.
+- f2.19 after DESINTEGRACIONES (21 letters), f3.10 after LOS NOMBRES (36), f3.13 the four war names (41), f3.20 after POMPOSO (44) - blocker: too-short; here this means too little unseen text to test the restart rule. These are slips in the key cycle, read post hoc above (with catalogue support for f3.13). The restart rule was frozen and tested on 23 Nov 2026, but the only stretches it had not been seen on were too short to decide it, so these are not counted.
 - [?ARMORA] (f3.11), [?CELA] (f3.22) - blocker: too-short; one occurrence each.
-- [?PARECER] - blocker: illegible; S and B typed over each other, chosen by the decode. (EN, DOCUMENTOS and TESORERO
-  were settled by the third transcription.)
-- Folio 1's two runs and folio 2 paragraphs 2-3 are Narváez's reading; not re-transcribed here (folio 1's first run
-  checked for the Suárez correction only) - blocker: not-attempted.
-- No human check of folio 3's faint letters - blocker: needs-physical-access (a better image or the original would
-  settle the faint signs).
+- [?PARECER] (f3.04) - blocker: illegible; S and B typed over each other, chosen by the decode. EN, DOCUMENTOS and TESORERO were settled by the third transcription.
+- No human check of folio 3's faint letters - blocker: needs-physical-access; a better image or the original would settle the faint signs.
+
+Outside this target: folio 1's two runs and folio 2 paragraphs 2-3 are Narváez's printed reading. They are not transcribed or counted here; folio 1's first run was checked for the Suárez correction only.
 
 ## Escalation
 
