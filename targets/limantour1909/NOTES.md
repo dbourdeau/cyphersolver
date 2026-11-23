@@ -40,7 +40,7 @@ Research documentation offered for incorporation under CC BY 4.0, with attributi
 
 ## Remaining gaps
 
-- The special code 77 - blocker: open-codes; it occurs once and nothing narrows it. (79 is read as "Sr. Presidente" from the plain text of the 15 July telegram: section "Code 79" below.)
+- The special code 77 - blocker: too-short; one group, standing once in the letter, with no other occurrence and no plain text beside it, so nothing narrows it. (79 is read as "Sr. Presidente" from the plain text of the 15 July telegram: section "Code 79" below.)
 - Segment C (28 23 24 54 2) is read as quejándose only by assuming 24 is a slip for an o code (contributor's proposal) - blocker: needs-physical-access; the original must show whether a number was corrected or mistyped
 - The second name in the 29 July note (24 46 42 1 31, CREEL?) and the faint handwritten plaintext above it - blocker: illegible; 46 and 42 rest on one word; the handwriting above the cipher is faint even on the clearer images
 - A check on the CEHM originals by a human - blocker: needs-physical-access; the first check was on private screenshots. Since 14 Nov 2026 the public CEHM image of the letter (visor.cehm.org.mx over plain http) has been read here too and agrees (section of 14 Nov 2026); the two control telegrams and the note were not fetched again; no human has checked the originals
