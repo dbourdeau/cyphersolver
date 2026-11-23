@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="../">
-<title>No. 1164: Alchemical miscellany with a section of "Geheimschrift" (Bl. 248 ff.), SLUB Mscr.Dresd.J.345 — help solve it</title>
+<title>No. 1164: Alchemical miscellany in secret script, the remaining leaves after f. 249v (Dresden J.345) — help solve it</title>
 <link rel="canonical" href="https://cyphersolver.com/solve/1164.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Cyphersolver">
 <meta property="og:url" content="https://cyphersolver.com/solve/1164.html">
-<meta property="og:title" content="No. 1164: Alchemical miscellany with a section of &quot;Geheimschrift&quot; (Bl. 248 ff.), SLUB Mscr.Dresd.J.345">
+<meta property="og:title" content="No. 1164: Alchemical miscellany in secret script, the remaining leaves after f. 249v (Dresden J.345)">
 <meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
 <meta name="description" content="Possible alchemical cipher of the early 17th century in a Saxon court-library manuscript. An unread cipher of 1596-1700, with instructions for an AI agent.">
 <link rel="stylesheet" href="style.css?v=74da6bb8">
@@ -48,8 +48,8 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1164 · class C · priority 2.1 · open</p>
-  <h1>Alchemical miscellany with a section of "Geheimschrift" (Bl. 248 ff.), SLUB Mscr.Dresd.J.345</h1>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1164 · class C · priority 2.1 · attempted, open</p>
+  <h1>Alchemical miscellany in secret script, the remaining leaves after f. 249v (Dresden J.345)</h1>
   <p class="sub">Possible alchemical cipher of the early 17th century in a Saxon court-library manuscript.</p>
   <dl class="facts">
     <dt>Date</dt><dd>1596-1700</dd>
@@ -72,7 +72,7 @@ This page: https://cyphersolver.com/solve/1164.html
 You are helping a public research project read historical cipher letters that nobody has read yet.
 
 THE CIPHER
-  Title:          Alchemical miscellany with a section of "Geheimschrift" (Bl. 248 ff.), SLUB Mscr.Dresd.J.345
+  Title:          Alchemical miscellany in secret script, the remaining leaves after f. 249v (Dresden J.345)
   Date:           1596-1700
   Correspondents: unknown
   Place:          unknown
@@ -82,20 +82,22 @@ THE CIPHER
     - Kalliope record: http://kalliope-verbund.info/DE-611-HS-3063531
 
 WHAT IS KNOWN
-  Status: Kalliope (DE-611-HS-3063531) contents list only. Probably an alchemical sign alphabet; undated within 1596-1700.
-  Outcome so far: not yet attempted by the project
+  Status: The two complete recipes on ff. 249r–v were read with the known alphabet on f. 248v, and the start of f. 250r is filed as a fragment. The cipher section continues beyond these recipes.
+  Outcome so far: attempted, open
   Prior-art check: open (checked 28 Oct 2026: known.py)
   Check first: View the SLUB scan of Bl. 248-249.
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/dresdenj345/NOTES.md
+  Related write-up: https://cyphersolver.com/dresdenj345.html
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/dresdenj345/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/dresdenj345/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +137,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/dresdenj345/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1164&amp;target=catalogue+1164
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -152,12 +154,12 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p class="frame confirmed"><b>Cipher located and confirmed.</b> f. 248v: alphabet headed in clear 'Diesz ist dasz Alphabet zu volgen dem buech', Latin letters a-z over invented Hebrew-like signs. f. 249r onward: full pages in those signs with word spaces, a monoalphabetic substitution. No interlinear or marginal decipherment on the leaves viewed. Tried on the f. 249r heading, the alphabet gives roughly 'Wilt einen menschen', so the plaintext is German. (SLUB IIIF, manifest https://iiif.slub-dresden.de/iiif/2/479379637/manifest.json (digital.slub-dresden.de itself is 403 in Chrome now); images 502, 503, 511, 515, 519, 523, 527, 530 viewed, id479379637/502 = f. 248v, /503 = f. 249r.; checked 2026-11-03 by claude leads review batch c17) <a href="https://iiif.slub-dresden.de/iiif/2/479379637/manifest.json" rel="noopener">open that page</a></p>
 <h2>What is known</h2>
 
-
-<p><b>Status and prior art.</b> Kalliope (DE-611-HS-3063531) contents list only. Probably an alchemical sign alphabet; undated within 1596-1700.</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open (checked 28 Oct 2026: known.py).</p>
+<p><span class="ko"><i class="k">written up</i> <a href="dresdenj345.html" title="Dresden cipher recipes, SLUB Dresden, Mscr.Dresd.J.345">dresdenj345</a></span></p>
+<p><b>Status and prior art.</b> The two complete recipes on ff. 249r–v were read with the known alphabet on f. 248v, and the start of f. 250r is filed as a fragment. The cipher section continues beyond these recipes.</p>
+<p><b>Outcome so far.</b> attempted, open Prior-art check: open (checked 28 Oct 2026: known.py).</p>
 <p><b>Check first.</b> View the SLUB scan of Bl. 248-249.</p>
-
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/dresdenj345/NOTES.md" rel="noopener">targets/dresdenj345/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/dresdenj345" rel="noopener">the folder</a>)</li></ul>
+<p>Related write-up: <a href="dresdenj345.html">dresdenj345.html</a></p>
 
 <h2>Scores</h2>
 <dl class="facts">
@@ -179,7 +181,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=a7fa3a33"></script>
+<script src="catalogue-data.js?v=756d9d41"></script>
 <script src="site.js?v=74da6bb8"></script>
 </body>
 </html>
