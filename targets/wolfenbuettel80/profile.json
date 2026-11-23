@@ -1,0 +1,146 @@
+{
+ "schema_version": 1,
+ "target": "wolfenbuettel80",
+ "title": "A ciphered reader's judgment in the Wolfenbüttel alchemical miscellany",
+ "documents": [
+  {
+   "id": "103v",
+   "shelfmark": "Herzog August Bibliothek, Cod. Guelf. 80.4 Aug. 8°, f. 103v, four lines",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "German",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No parallel reading located."
+   },
+   "length": {
+    "tokens": 52,
+    "distinct": 20,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "decipher.py and NOTES.md",
+    "image_quality": "good"
+   },
+   "read": "read"
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "A substitution using numeral-like forms, strokes and marked variants, with word dividers and occasional words split over lines.",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 20,
+  "diacritics": {
+   "used": true,
+   "note": "The crossed 5 and marked 6 carry different values from their plain forms."
+  },
+  "homophones": {
+   "used": "unknown"
+  },
+  "nomenclator": {
+   "present": "unknown"
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "key_order": "unknown",
+  "word_division": "separator symbol"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Selected the target.",
+  "models": [
+   "GPT-6"
+  ],
+  "tools": [
+   "search.py",
+   "decipher.py",
+   "repository word-frequency lexicons"
+  ]
+ },
+ "solution": [
+  {
+   "kind": "transcription",
+   "what": "Distinguished numeral-like shapes in the four lines and two following cipher words. Several marked signs were initially conflated.",
+   "result": "partial"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Searched keys against word-internal and boundary four-letter frequencies. The German trial recovered also, dises, ist and distil.",
+   "result": "worked"
+  },
+  {
+   "kind": "reading",
+   "what": "Resolved the shared letters of mich, der rechte and philosophei against the enlarged folio. The first group in line three remains uncertain.",
+   "result": "partial"
+  },
+  {
+   "kind": "verification",
+   "what": "The resulting key reads Latin words including sulphurem and salem on f. 105r and the body/soul labels on f. 104v.",
+   "result": "worked"
+  },
+  {
+   "kind": "access",
+   "what": "Surveyed the complete HAB facsimile and located earlier marginal annotations in the same cipher.",
+   "result": "worked"
+  },
+  {
+   "kind": "verification",
+   "what": "The dotted circle gives w in weisse on scan 00030 and in worden and wol on 00155. The rare consonant signs in the coin name on 00155 recur in wec?? on 00218. Historical weckg supports reading the noun as Weg, while the order of the two proposed consonant values remains provisional.",
+   "result": "worked"
+  },
+  {"date": "2026-11-22", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 48 tokens, 16 types, de-1500s order 4: reading -1.993 per letter; Verdict: too short.", "result": "partial"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-22", "model": "de-1500s", "file": "validation.tsv", "tokens": 48, "types": 16, "tokens_per_type": 3.0, "score": -1.993, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -1.993; polyphony 0.0; 4 unread tokens left out; annealer on the real text from random keys reached n/a"},
+  "class": "read",
+  "key": "partial",
+  "method": "key recovered from ciphertext-only",
+  "verification": ["historical consistency"],
+  "notes": "The eleven words of the four-line judgment on f. 103v read as sense. The last two consonant values in the word for Weg and the precise forms of two s readings are provisional. The record covers the four-line document. Other cipher annotations supplied comparisons.",
+  "method_basis": "The first German words emerged from a substitution search on the transcribed cipher. Other inscriptions in the same volume checked and extended the mapping.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": "103v",
+    "label": "The four-line note on folio 103v",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.txt",
+    "translation": "translation.txt",
+    "language": "de",
+    "state": "read",
+    "summary": "A reader judges the preceding alchemical work to be the true way of philosophy. Four tentative letter values are marked in the German reading.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Codex",
+     "date": "2026-11-22",
+     "note": "One continuous German sentence. The strict key leaves four signs open and the reading marks all four."
+    }
+   }
+  ]
+ }
+}
