@@ -12,6 +12,24 @@ import tempfile
 BUNDLE = Path(__file__).resolve().parent
 DIGEST_LINE = re.compile(r"^([0-9a-f]{64})  (.+)$")
 
+# The frozen scripts must stay byte for byte as hashed on 19 November 2026, so they cannot be edited
+# to pass encoding='utf-8' and newline=''. They are run through this wrapper instead, which gives
+# every text-mode open() in them those two defaults. On macOS and Linux it changes nothing.
+RUNNER = """import builtins, io, runpy, sys
+_open = io.open
+def _utf8_open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None):
+    if 'b' not in mode:
+        if encoding in (None, 'locale'):
+            encoding = 'utf-8'
+        if newline is None:
+            newline = ''
+    return _open(file, mode, buffering, encoding, errors, newline, closefd, opener)
+io.open = builtins.open = _utf8_open
+script = sys.argv[1]
+sys.argv = sys.argv[1:]
+runpy.run_path(script, run_name='__main__')
+"""
+
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -25,7 +43,7 @@ def relative(name):
 
 
 def digest_lines(path):
-    for line in path.read_text().splitlines():
+    for line in path.read_text(encoding='utf-8').splitlines():
         match = DIGEST_LINE.fullmatch(line)
         if match:
             yield match[1], str(relative(match[2]))
@@ -40,7 +58,7 @@ def verify_archive():
         if digest(BUNDLE / name) != wanted:
             raise ValueError(f'Bundle digest mismatch: {name}')
 
-    with (BUNDLE / 'PATH_MAP.tsv').open() as stream:
+    with (BUNDLE / 'PATH_MAP.tsv').open(encoding='utf-8', newline='') as stream:
         mapping = {r['original_path']:r for r in csv.DictReader(stream, delimiter='\t')}
     commits = ('january/VIENNA_FREEZE.txt', 'march/PLAN_FREEZE.txt',
                'march/PREDICTION_FREEZE.txt', 'march14/PLAN_FREEZE.txt',
@@ -80,8 +98,8 @@ def replay(scratch, locations):
         return target
 
     def run(name, *args):
-        completed = subprocess.run([sys.executable, '-I', '-B', str(scratch / locations[name]), *map(str,args)],
-                                   cwd=scratch, text=True, capture_output=True)
+        completed = subprocess.run([sys.executable, '-I', '-B', str(runner), str(scratch / locations[name]),
+                                    *map(str,args)], cwd=scratch, text=True, capture_output=True)
         if completed.returncode:
             raise RuntimeError(f'{name} failed:\n{completed.stderr}')
 
@@ -89,6 +107,10 @@ def replay(scratch, locations):
         for name in names:
             if (scratch / locations[name]).read_bytes() != (BUNDLE / name).read_bytes():
                 raise ValueError(f'Replay mismatch: {name}')
+
+    runner = scratch / '_utf8_runner.py'
+    with runner.open('w', encoding='utf-8', newline='') as stream:
+        stream.write(RUNNER)
 
     # Stage source and fixed inputs only, so no saved result can masquerade as regenerated output.
     for name in locations:
@@ -121,7 +143,7 @@ def replay(scratch, locations):
         run(folder+'/score_heldout.py',reference)
         compare(*(folder+'/'+name for name in ('transfer_controls.tsv','transfer_matches.tsv',
                                                'transfer_result.json')))
-        res = json.loads((BUNDLE / folder / 'transfer_result.json').read_text())
+        res = json.loads((BUNDLE / folder / 'transfer_result.json').read_text(encoding='utf-8'))
         print(f"No. {doc}: {res['exact_matches']}/{res['predictions']} exact window matches, "
               f"{res['distinct_matched_words']} distinct; best of 1,000 controls {res['control_max']}. "
               f"{'PASS' if res['passed'] else 'MISS'}.")
@@ -165,7 +187,7 @@ def dusseldorf():
         for name in ('bare_numbers.tsv', 'slots.tsv', 'predictions.tsv', 'result.json'):
             if (work / 'dusseldorf' / name).read_bytes() != (folder / name).read_bytes():
                 raise ValueError(f'Replay mismatch: dusseldorf/{name}')
-    res = json.loads((folder / 'result.json').read_text())
+    res = json.loads((folder / 'result.json').read_text(encoding='utf-8'))
     print(f"Düsseldorf No. 6: 4 frozen inputs match; {res['covered_slots']} eligible placements over "
           f"{res['strict_comparable']} agreed positions (minimum 8). Outputs reproduced byte-for-byte; not scored.")
 
