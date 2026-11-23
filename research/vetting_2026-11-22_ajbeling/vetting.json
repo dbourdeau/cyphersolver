@@ -1,0 +1,45 @@
+{
+ "1204": {
+  "date": "2026-11-22",
+  "by": "Andrew Beling (ajbeling), with AI agents (Claude, claude-opus-5-5)",
+  "seen": {
+   "kind": "scan",
+   "where": "ANOM page images by IIIF, 22 Nov 2026: COL C8 A 51 f. 109 (record ark:/61561/zn401hgefcg, images FRANOM23_C8A_051_0204-0214), C8 A 58 f. 33 (ark:/61561/zn401uptqh, FRANOM23_C8A_058_0059-0066), C8 A 59 f. 158 (ark:/61561/zn401rsnkma, FRANOM23_C8A_059_0268-0279), and C8 A 56 f. 54 (ark:/61561/zn401utsvwe, FRANOM23_C8A_056_0096-0107), f. 73 (ark:/61561/zn401c104yw, 0133-0146), f. 85 (ark:/61561/zn401zyx1xd, 0157-0166) and f. 253 (ark:/61561/zn401mllfgb, 0463-0471); each with its neighbouring leaves. Image FRANOM23_C8A_056_0097 (f. 54r) is damaged on the server: the full image returns an error and only its right half could be fetched, with black blocks in it.",
+   "extent": "C8 A 51 ff. 109-113 (Champigny, Fort-Royal, 21 Dec 1740, duplicate): f. 109r clear, then about 100-110 lines of numbers to f. 113r with clear passages between. C8 A 58 ff. 33-34 (Caylus, Martinique, 10 Mar 1748, duplicate): about 90 lines. C8 A 59 ff. 158-161 (Bompar and Hurson, Fort-Royal, 14 Nov 1751, duplicate): about 140 lines. C8 A 56 ff. 54-56v (Champigny, Fort-Royal, 17 Aug 1744): about 100 lines, with its enclosure f. 57-57v (48 lines, 381 groups, the copy of Knowles's notice). C8 A 56 ff. 73-77v (Champigny, Fort-Royal, 16 Nov 1744, duplicate): about 150 lines, nearly all code. C8 A 56 ff. 85-88 (Champigny, 24 Nov 1744): clear and code mixed, about 80 lines of numbers. C8 A 56 ff. 253-255 (Champigny, 6 Feb 1745): about 75 lines. All to the minister (Maurepas). Line counts by eye from contact sheets (within about 10%); one page of each checked line by line at full size.",
+   "cipher": "Number code in groups of up to three digits. Every letter carries the ministry's contemporary decipherment: French above each line on C8 A 51 f. 109, C8 A 59 f. 158 and C8 A 56 ff. 54, 73, 85 and 253 (checked line by line: all 20 lines of C8 A 51 f. 110r, 24 of C8 A 59 f. 159v, 22 of C8 A 56 f. 56r, 13 of f. 75v, about 20 each of ff. 87r, 87v and 254r); C8 A 58 f. 33 has it in a narrow column in the left margin, continued below the signature on f. 34r and onto f. 34v. The only bare code is the enclosure C8 A 56 f. 57-57v (381 groups), which the calendar's 'part of this letter has not been decrypted' describes; f. 54r itself is glossed on every line that the damaged image shows."
+  },
+  "prior_art": {
+   "decode": "decode_search.py on C8A, Caylus, Champigny, Bompar and Martinique (22 Nov 2026): no record of these letters; Champigny finds only R7624 (BL Add MS 32263 f. 111), a different intercept.",
+   "tomokiyo": "Not searched for these three: the decipherment is on the leaves, so a later study would not change the verdict.",
+   "lasry": "Not searched on the web for these three, for the same reason.",
+   "edition": "ANOM online inventory for the three items: '(chiffrée)' or 'lettre en partie chiffrée', nothing about a decipherment. Taillemite's printed inventory of C8A not opened. No printed text of the letters known.",
+   "literature": "targets/champigny1744 (Dudout, 28 Oct 2026) reads f. 57, the enclosure of C8 A 56 f. 54, with a key built from the 1744 glosses; that enclosure is the part the inventory calls 'not decrypted'. Nothing on the 1740, 1748 or 1751 pieces."
+  },
+  "key_check": "Not needed: each letter carries its own decipherment, and the one bare piece, C8 A 56 f. 57, is read in targets/champigny1744 with a key from the 1744 glosses. Whether the 1740, 1748 and 1751 pieces use that 1744 code was not tested.",
+  "duplicates": "known.py 'C8 A 58', 'C8 A 59', 'C8 A 51', Caylus, Bompar, Hurson (22 Nov 2026): only this lead and its sweep row. No pull request or issue names lead 1204 or these folios.",
+  "searches": [
+   {
+    "query": "ANOM IIIF manifests for C8 A 51 f. 109, C8 A 58 f. 33, C8 A 59 f. 158, with their neighbouring leaves",
+    "result": "All three carry the clerk's decipherment (interlinear on ff. 109 and 158, in the margin and after the signature on f. 33); no separate decipherment sheet is filed, none is needed."
+   },
+   {
+    "query": "ANOM online inventory entries for the three items",
+    "result": "'(chiffrée)' or 'lettre en partie chiffrée'; dates 21 Dec 1740, 10 Mar 1748, 14 Nov 1751; no word about a decipherment."
+   },
+   {
+    "query": "known.py and repository search for Caylus, Bompar, Hurson, C8 A 51, C8 A 58, C8 A 59",
+    "result": "Nothing beyond lead 1204 and research/calames_biblissima; targets/champigny1744 covers C8 A 56 f. 57 only."
+   },
+   {
+    "query": "ANOM IIIF manifests for C8 A 56 ff. 54, 73, 85, 253, with neighbouring leaves (22 Nov 2026)",
+    "result": "All four letters glossed between the lines; f. 54's undeciphered part is the enclosure f. 57 (images 0103-0104), bare, 381 groups, read in targets/champigny1744; f. 54r image 0097 partly damaged on the server."
+   }
+  ],
+  "verdict": "read",
+  "closed": "Read. Every piece the lead names carries the ministry's contemporary decipherment on the leaf, except the enclosure C8 A 56 f. 57, which is read in targets/champigny1744. Seen 22 Nov 2026: C8 A 51 f. 109 (Champigny, 21 Dec 1740) and C8 A 59 f. 158 (Bompar and Hurson, 14 Nov 1751) between the lines; C8 A 58 f. 33 (Caylus, 10 Mar 1748) in the margin and after the signature; C8 A 56 ff. 54 (17 Aug 1744), 73 (16 Nov 1744), 85 (24 Nov 1744) and 253 (6 Feb 1745), Champigny, between the lines. Seen 3 Nov 2026: C8 A 56 ff. 13, 79, 323 and C8 A 51 f. 116. Attested by targets/champigny1744: ff. 40, 44, 54-56v, 59, 63, 67.",
+  "supersedes": "Changes the verdict of 3 Nov 2026 from partly_read to read. New evidence: the pieces that block had not viewed (C8 A 51 f. 109, C8 A 58 f. 33, C8 A 59 f. 158) and the three nobody had recorded (C8 A 56 ff. 73, 85, 253) have now been seen and all are deciphered on the leaf; the calendar's 'part of this letter has not been decrypted' for C8 A 56 f. 54 is its bare enclosure f. 57, read since in targets/champigny1744. Also: f. 109 is of 1740 and f. 158 of 1751, outside King George's War."
+ },
+ "2730": {
+  "unvetted": "Not digitised: BnF fr. 3329, fr. 3409 and fr. 4717 have no Gallica copy (catalogue records ark:/12148/cc497913, cc49879s, cc57767r show none, and Gallica's search for 'Français 3329' and its manuscript search for Humières with 'chiffre' find printed books and other volumes only, 22 Nov 2026); the leaves need a BnF reproduction order or the Richelieu reading room. Corrections from the BnF record of fr. 3329, read 22 Nov 2026, which agree with research/audit_2026-11-16_omont_shelfmarks: no. 81 (Maineville, Chenonceaux, 7 May 1577) is f. 164 and no. 82 (Pierre de Roncherolles, Pont-Saint-Pierre, 9 May 1577) f. 165, not ff. 104-105; no. 107 (Maineville, 'D'Ennet', 30 Sept, 'Avec chiffre', f. 197) is missing from the lead; no. 1 is a 'Table de déchiffrement anonyme' and no. 2 a 'Table de chiffrement de Monsieur de Humières pour correspondre avec Monsieur d'Entragues', so they are not a matched pair and no. 2 need not be the key of these letters; the governor of Péronne is named in the same volume as 'J[acques de] Humyeres' (no. 84, f. 168, 18 May 1577), not Jean, and the record does not call him marquis. The audit also notes fr. 3409 no. 39 ('Chiffre') and fr. 4717 no. 11 ('Clef d'un chiffre') as keys in the other two volumes."
+ }
+}

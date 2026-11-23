@@ -1,0 +1,10 @@
+LABEL: diaz1886_results_note
+File: NOTE_diaz1460_pilot_results_v1M_2026-11-22_1755Z.md (in this folder, byte for byte the contributor's file of that name; NOTES.md, section 7)
+SHA-256: 68c3f4ec92f4b4c53e0031edd02dd8b01bbae700e4a068702556959d2c94357e
+RFC 3161, freetsa.org: status Granted, time Nov 22 17:56:34 2026 GMT
+RFC 3161, timestamp.digicert.com: status Granted, time Nov 22 17:56:34 2026 GMT
+RFC 3161, timestamp.sectigo.com: status Granted, time Nov 22 17:56:34 2026 GMT
+Verify DigiCert and Sectigo: openssl ts -verify -data NOTE_diaz1460_pilot_results_v1M_2026-11-22_1755Z.md -in NOTE_diaz1460_pilot_results_v1M_2026-11-22_1755Z.md.<authority>.tsr -CAfile <a bundle of public root certificates>
+Verify FreeTSA: the same, with -CAfile and -untrusted set to FreeTSA's own root and signing certificates, as its site publishes them
+Not shown by the stamps: that the note's figures are right. The runs' outputs it names are with the contributor and are not in this folder.
+OpenTimestamps: none made
