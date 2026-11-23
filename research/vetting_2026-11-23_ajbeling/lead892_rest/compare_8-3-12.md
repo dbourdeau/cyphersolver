@@ -15,10 +15,11 @@ sign.
 | B07-B08 | *rebus et negotiis **istis** nostris magnopere* | *rebus et negotiis nostris magnopere* |
 
 On the image the signs of A11 read d-i-l-e-c-t-i-o-n-i-s e-t m-a-i-e-s-t-a-t-i-s, of A12 e-i-u-s, of A15 l-i-c-a and of
-B08 t-i-i-s i-s-t-i-s with no damage. HathiTrust full-text search finds "mentem dilectionis" in Austro-Turcica
-1541-1552 (its only hit) and does not find "mentem dilectissimi fratris" anywhere, so on the first point the edition
-prints what the cipher says. The two other phrases were not found in either form (search-only volume; spelling or
-OCR may differ).
+B08 t-i-i-s i-s-t-i-s with no damage. An independent AI reviewer confirmed all three on the image. HathiTrust
+full-text search finds "mentem dilectionis" in Austro-Turcica 1541-1552 and does not find "mentem dilectissimi
+fratris"; but that is a two-word phrase hit in a volume of Ferdinand's letters, where *dilectio* is his usual word for
+Charles V, so it does not show how the edition prints this letter. The two other phrases were not found in either
+form (search-only volume; spelling or OCR may differ).
 
 ## B. Spelling in the cipher; the decipherer normalised it
 
