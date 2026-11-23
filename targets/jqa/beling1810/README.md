@@ -14,7 +14,8 @@ The coded passages of four of these despatches are in print:
 - **Ford**, *Writings of JQA* vol. 3 (1914), prints No. 21 (pp. 467-471; the coded sentence on p. 469, in italics, footnoted "Cypher"). It prints No. 23 (pp. 486-496; all seven coded passages, in italics, "Italics represent cypher") and No. 24 (pp. 503-507; all three, footnoted "Cypher"). No. 22 (pp. 475-480) has no code. Ford did not print Nos. 25-29. No. 25 appears only in a footnote extract of its clear text (p. 477).
 - **No. 27**: both coded passages are printed in clear in *The United States and Russia: The Beginning of Relations, 1765-1815* (1980). Seen through the Internet Archive's full-text search of its loan copy `unitedstatesruss0000unse`, snippets only, page not seen. Romanzoff's line "more obstinate than you are aware of" is quoted in many histories. Adams's diary (*Memoirs* vol. 2) gives the same conversation.
 - **ASP**: *American State Papers, Foreign Relations* vol. 3 prints none of Nos. 21-29 (OCR search of `americanstatepap_o03unit`). For vol. 5, p. 443, cited for No. 27 in a catalogue, no free OCR copy was found, and the full-text search found none of No. 27's phrases in any American State Papers item. Not seen.
-- **Not found in print** (in the sources searched): Nos. 25 and 28 have their period decipherments only. No. 29 has no decipherment at all.
+- **No. 25, in part**: Paul Cernovodeanu, "American Diplomatic Dispatches on the 1806-1812 Russo-Turkish War and on Bessarabia's Rapture," *Revue Roumaine d'Histoire* XXXVII (1998), 1-2, 19-41, p. 29, prints No. 25's closing paragraph and the first paragraph of passage G (recorded in our research file of 22 Oct 2026; not re-opened for this package).
+- **Not found in print** (in the sources searched): the rest of No. 25, and No. 28, have their period decipherments only. No. 29 has no decipherment at all.
 
 ## Files
 
@@ -27,7 +28,7 @@ The coded passages of four of these despatches are in print:
 
   Witness texts: the period decipherments as read from frames 156-159, 169-172, 178-179 and 184. In No. 24-B, a crease hides five words; there Ford's wording is used. No. 21's witness is Ford's sentence.
 - `heldout_1810.py`: the test, importing `../align.py`. `heldout_1810.txt` is its output: per passage, per despatch, pooled, the 100 shuffled tables, and the group-by-group alignment.
-- `transcriptions/`: the two transcriptions of No. 21, No. 24 and No. 29, and their comparison (`compare_transcriptions.py`, `compare_no21.txt`, `compare_no24.txt`, `compare_no29.txt`). The second transcriptions of No. 24 and No. 29 were made blind by separate helper agents. They worked from the NARA images alone; no earlier transcription, table or plaintext was given. No. 21's second reading is from 22 Oct 2026, also source-only.
+- `transcriptions/`: the two transcriptions of No. 21, No. 24 and No. 29, and their comparison (`compare_transcriptions.py`, `compare_no21.txt`, `compare_no24.txt`, `compare_no29.txt`). The second transcriptions of No. 24 and No. 29 were made blind by separate helper agents. They worked from the NARA images alone; no earlier transcription, table or plaintext was given. No. 21's second reading is from 22 Oct 2026; it is not independent, since its reader had seen the first sequence in its task text.
 - `codes_1810_no24_second.txt`, `heldout_no24_second.txt`: after the registered run, No. 24 scored again on its blind second transcription. This is post hoc and not part of the pass mark.
 - `decode_no29.py`, `no29_decode.txt`: No. 29 decoded with the key sheet alone (NARA M97 roll 13 frames 1056-1057, Weber WE028, as transcribed in `../../morris1813/beling/key/codebook_M97_13_transcription.csv`, unchanged), from both transcriptions. The table's value is given where it differs.
 - `no29_reading.md`: No. 29 written as sentences from `no29_decode.txt` alone, by a model. It is labelled in the file as a reading made with the key sheet alone, with no plaintext witness, not checked by a person.
@@ -46,4 +47,4 @@ See `../NOTES.md`, section "Adams's despatches of 1810 (held-out test, 22 Nov 20
 
 ## Images
 
-The images are NARA microfilm M35 (Despatches from U.S. Ministers to Russia) reel 2, frames 137-189, on catalog.archives.gov. They are linked, not committed. The Massachusetts Historical Society's Adams Papers film was not used here and is not reproduced.
+The images are NARA microfilm M35 (Despatches from U.S. Ministers to Russia) reel 2, frames 137-189, on catalog.archives.gov. They are linked, not committed, with one exception: the two small crops of frame 167R in `round2/frame167R/`. The Massachusetts Historical Society's Adams Papers film was not used here and is not reproduced.
