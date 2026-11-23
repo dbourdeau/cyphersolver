@@ -1,6 +1,6 @@
 # Reading of DCXXI.6.588.1 ("J. W. Wellington" to "José González", folios 2-3)
 
-<!-- State: read in part. 247 clean words of an estimated 296 word places in the 60 runs (0.834; 275 if each unread stretch counts as one word), scripts/count_words.py. Marks: CAPITALS = deciphered (accents added); {x/y} key gives x, read y (a hole); [?xxx] unidentified (a hole); [... extent unknown] no words. Clear text in lower case as typed. Notes on the holes: NOTES.md. -->
+<!-- State: read in part. 250 clean words of an estimated 296 word places in the 60 runs (0.845; 275 if each unread stretch counts as one word), scripts/count_words.py. Marks: CAPITALS = deciphered (accents added); {x/y} key gives x, read y (a hole); [?xxx] unidentified (a hole); [... extent unknown] no words. Clear text in lower case as typed. Notes on the holes: NOTES.md. -->
 
 ## Folio 2
 
@@ -45,12 +45,12 @@ hacía referencia en mi anterior, fecha 25 ppdo.
 
 ### Paragraph 2
 
-EL SR. CORONA me ha dicho que en virtud de no ESTAR UD. [?EN] [... extent unknown] y no SABER A PUNTO
+EL SR. CORONA me ha dicho que en virtud de no ESTAR UD. EN [... extent unknown] y no SABER A PUNTO
 FIJO DÓNDE SE ENCUENTRA UD. ha APLAZADO SU VIAJE {E/A} LOS EE. UU. Por tanto, juzgo pertinente dar a conocer a Ud.
 LOS NOMBRES [... extent unknown]: LIC. JO{T/S}É MARÍA CAMACHO, PTE.; FIDENCIO E. LÓPEZ, SRIO.; MIGUEL MÁRQUEZ GALINDO,
 PROSECRETARIO; DR. ALBERTO MORENO, TESORERO; Y FRANCISCO MACHORRO, MIGUEL ALVARADO, LIC. ARTURO OSORIO, LIC. LUIS
-GARCÍA [?ARMORA] Y POMPOSO BONILLA, VOCALES. == LAS PERSONAS QUE DE{C/B}EN FIRMAR [?DOCUMENTOS] Y QUE SON EL PTE., EL
-SECRETARIO, EL P{Ñ/R}OSECRETARIO Y EL [?TESORERO] HAN ADOPTADO COMO NOMBRES DE {H/G}UERRA RESPECTIVAMENTE: [... extent
+GARCÍA [?ARMORA] Y POMPOSO BONILLA, VOCALES. == LAS PERSONAS QUE DE{C/B}EN FIRMAR DOCUMENTOS Y QUE SON EL PTE., EL
+SECRETARIO, EL P{Ñ/R}OSECRETARIO Y EL TESORERO HAN ADOPTADO COMO NOMBRES DE {H/G}UERRA RESPECTIVAMENTE: [... extent
 unknown].
 
 
