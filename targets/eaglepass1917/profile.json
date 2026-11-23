@@ -41,7 +41,7 @@
   "types": [
    "monoalphabetic"
   ],
-  "summary": "Simple substitution with a reciprocal alphabet: pairs A-X, B-U, C-S, D-Q, E-P, F-M, G-L, I-Z, N-W, O-V, R-Y, T stands for itself (H, J, K unseen); five-letter groups with irregular group lengths, word division lost. Not the Murciélago square named in the heading.",
+  "summary": "Simple substitution with a reciprocal alphabet made from the keyword TIRANO: TIRANOBCDEFGHJKLMPQSUVWXYZ folded on itself, giving A-X, B-U, C-S, D-Q, E-P, F-M, G-L, H-K, I-Z, N-W, O-V, R-Y, with T and J standing for themselves (H, J, K unseen in the text); irregular group lengths, word division lost. Not the Murciélago square named in the heading.",
   "symbol_kind": "letters",
   "distinct_symbols": 22,
   "homophones": {
@@ -56,8 +56,9 @@
   "diacritics": {
    "used": false
   },
-  "key_order": "random",
-  "word_division": "none"
+  "key_order": "keyword-derived",
+  "word_division": "none",
+  "sibling_key": "The 1915 'Clave Garduño' table printed by Narváez (2019, p. 311) is the same construction with the keyword GARDUÑO on 27 letters; not this key. Found by our construction search, not used in the solve."
  },
  "conditions": {
   "prior_solution": {
@@ -131,7 +132,7 @@
    "technique": [
     "exhaustive search"
    ],
-   "what": "Keyword-mixed alphabets (3,791 keywords incl. MURCIELAGO, both directions, 26 offsets): best score -3144.2, below the shuffles; not a keyword alphabet.",
+   "what": "Keyword-mixed alphabets set against the plain alphabet (3,791 keywords incl. MURCIELAGO, both directions, 26 offsets): best score -3144.2, below the shuffles; not a shifted keyword alphabet. Folding was not tried in this step (see the key-construction step).",
    "result": "ruled out"
   },
   {
@@ -141,6 +142,16 @@
     "simulated annealing"
    ],
    "what": "Independent reviewer: own blind transcription, own solver and corpus (Spanish Wikipedia), before seeing this work: same key, same sentence word for word.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "exhaustive search"
+   ],
+   "what": "Key construction: the recovered pairs are the keyword alphabet TIRANO + rest folded on itself (noticed by eye, then checked under a frozen plan): about 23,000 keywords, 26/27-letter alphabets, folds and two-row pairings; TIRANO is the only fit; controls 50/50 planted keys found, 0/3,000 random reciprocal keys fit. Predicts H = k, K = h, J = j.",
    "result": "worked"
   },
   {
