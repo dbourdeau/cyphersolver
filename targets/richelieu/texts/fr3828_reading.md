@@ -14,8 +14,9 @@ Conventions:
 - Spelling: word division, apostrophes, accents and capitals added; u/v and i/j written by sound (the key has 26 = u/v,
   21 = i/j). Nothing else is normalised: *efet*, *colation*, *Meaus*, *aus*, *afaire*, *aler* are the figures' spelling.
 - `[?x]` = a word the figures as printed do not give; the reading follows Avenel's footnote; counted as a hole. The
-  four cases: CXLVII *septembre* (last figure 29 = a: *septembra*); "le 20 mai" in CLIII, CLIV and CLV twice (20 is
-  the key's d; Avenel takes it as the number); CLV *veuille* (figures *veule*); CLVIII *maistresse* (figures
+  five cases: CXLVII *septembre* (last figure 29 = a: *septembra*); "le 20 mai" in CLIII, CLIV and CLV twice (20 is
+  the key's d; Avenel takes it as the number); CLV *veuille* (figures *veule*); CLV *articles* (figures
+  *articlesignes*, one s for *articles* and *signés*: 23 Nov 2026, review of #813); CLVIII *maistresse* (figures
   *mistrese*; Avenel notes the clerk left out the a).
 - Code values taken from Avenel's note at that place rather than the key table (the 19 Nov 2026 rule counts them as
   context values): CLVIII 59 = *M. de Mantoue* twice (table: princesse Marie; Avenel: a slip of the secretary);
@@ -63,7 +64,7 @@ De Suze, ce 21e mars.
 ## CXLVI — fr. 3828 no. 8 (Béthune 9322 fol. 24), to Rancé, 14 April 1629
 
 Je suis extremement fasché du mal de teste de ⟦{la Reine mère}⟧. … L'honneur qu'il y a long temps que j'ay d'estre
-⟦près d'elle⟧ me fait croire que les desplaisirs qu'il a de l'affaire de ⟦{Monsieur}⟧ sont cause en partie de son mal;
+⟦près d'ele⟧ me fait croire que les desplaisirs qu'il a de l'affaire de ⟦{Monsieur}⟧ sont cause en partie de son mal;
 je voudrois de bon cœur que ceste affaire fust terminée au contentement de Lysandre, il faut tascher de la terminer;
 ⟦les gens de {Monsieur}⟧ verront bien maintenant que ⟦ce mariage⟧ n'est plus une affaire à laquelle il puisse penser,
 et partant seront-ils plus faciles à ⟦le porter à⟧ donner contentement à ⟦{le Roi} et {la Reine mère}⟧.
@@ -143,7 +144,7 @@ bon, s'il luy plaist, que ceste occasion si pressée n'ait pas permis à ⟦{le 
 ## CLV — fr. 3828 no. 19 (Béthune 9322 fol. 54), to Rancé, Susa, 1 May 1629
 
 Depuis vous avoir escrit ⟦la pais de {l'Angleterre}⟧, M. l'ambassadeur de ⟦Venise⟧ estant en doute si
-⟦{l'Angleterre}⟧ voudra point 2 ⟦ambassadeurs, un grand et un⟧ autre, en envoiant 2 ⟦en contrechange⟧.
+⟦{l'Angleterre}⟧ voudra point 2 ⟦ambassadeeurs, un grand et un⟧ autre, en envoiant 2 ⟦en contrechange⟧.
 
 J'ay creu qu'il estoit à propos que vous sceussiez que si ⟦{l'Angleterre} en veut⟧ 2, l'intention de ⟦{le Roi}⟧ est
 d'envoyer MM. ⟦d'Elbeuf et Chasteauneuf⟧. C'est pourquoy si ⟦{la Reine mère}⟧ reçoit nouvelles ⟦de Contarini de
@@ -151,7 +152,7 @@ d'envoyer MM. ⟦d'Elbeuf et Chasteauneuf⟧. C'est pourquoy si ⟦{la Reine mè
 ⟦d'Elbeuf⟧ qu'il ⟦parte incontinant⟧ pour ⟦aler en {l'Angleterre}⟧.
 
 Cependant ⟦{la Reine mère}⟧ sçaura aussy, s'il luy plaist, que le courrier qui doi(t) partir ⟦de {l'Angleterre}
-le⟧ 1 ⟦mai⟧ luy apportera nouvelles si le dit sieur ⟦Contarini⟧ aura ⟦les articles signés de la pais et⟧ s'il faut
+le⟧ 1 ⟦mai⟧ luy apportera nouvelles si le dit sieur ⟦Contarini⟧ aura ⟦les [?articles] signés de la pais et⟧ s'il faut
 ⟦la publier à Paris le [?20] mai⟧.
 
 De Suze, le 1er may 1629.
@@ -202,9 +203,12 @@ absolument trompé, …
   "Septembre"). Where Avenel's note stops with "…" (CXIX nn. 3, 5, 7, 11; p. 235 nn. 2, 4), the cipher run is covered
   by what he gives; the rest of the sentence is in clear.
 - *des Sevenes* (CLIII): 40 ~25 27 26 35 22 35 25 = de + ss + evenes; the doubled s spans *des* and *Sevenes*.
-- *ambassadeurs* (CLV): the figures give ambassa + 40 (de) + 30 (e) + urs, i.e. *ambassadeeurs*; read as
-  *ambassadeurs* like Avenel, not counted as a hole (40 used as a syllable, `key.md`); a reviewer may prefer to mark it.
-- *les articles signés* (CLV): one s (25) serves the end of *articles* and the start of *signés*.
+- *ambassadeeurs* (CLV): the figures give ambassa + 40 (de) + 30 (e) + urs; printed as the figures spell it, as in
+  the 1630 reading (CLVI), and counted as read: the word is there, with one e too many (40 used as a syllable, `key.md`).
+- *près d'ele* (CXLVI): the figures give pres + 40 (de) + le, one l; printed as spelled, counted as read.
+- *les [?articles] signés* (CLV): one s (25) serves the end of *articles* and the start of *signés* (also on the page
+  image of Avenel p. 297); the plural is not in the figures, so *articles* is a hole (23 Nov 2026) and CLV is read in
+  part, 53/56.
 - Avenel CXXXV n. 4: 60 "signifie toujours Mme de Longueville", but here perhaps M. de Longueville (who receives the
   courier); the table value is kept.
 - CLIII n. 10: 62 = Montmorency, though Ventadour made the *dégât* of Castres (Avenel).

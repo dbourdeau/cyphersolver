@@ -50,7 +50,7 @@ them then; `avenel.py` searched the OCR of the whole volume. What the printed vo
 So 59 and 60 can only have come from Avenel's notes to these nine letters, and 54 most probably did (eight
 glosses there, one elsewhere, in 1630). Under the owner's rule on #813 (a value taken from Avenel's note to one of
 these nine letters is a hole where it is counted) all three are counted as holes in the nine letters
-(`fr3828_measure/word_count.tsv`: 337/374). They do not occur in ff. 87, 89; in the 1630 pieces a value fixed from
+(`fr3828_measure/word_count.tsv`: 337/375). They do not occur in ff. 87, 89; in the 1630 pieces a value fixed from
 the 1629 letters is a value from another letter and stays sure.
 
 ## Extension from fr. 3828, 3825, 3835 (Nov 2026)

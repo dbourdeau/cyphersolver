@@ -89,17 +89,22 @@ nine letters (59 and 60 only there, 54 also once in 1630); see `key.md`, "Where 
 | CXLVII | 13/15 | 0.867 | 2 | read by the floor for < 40 words (`floor_used`, 15 cipher words, 2 holes) |
 | CLIII | 48/55 | 0.873 | 7 | read in part |
 | CLIV | 45/49 | 0.918 | 4 | read in part |
-| CLV | 54/56 | 0.964 | 2 | read |
+| CLV | 53/56 | 0.946 | 3 | read in part |
 | CLVIII | 41/45 | 0.911 | 4 | read in part |
-| CLXVII | 26/34 | 0.765 | 8 | read in part |
-| **Total** | **337/374** | **0.901** | 37 | |
+| CLXVII | 27/35 | 0.771 | 8 | read in part |
+| **Total** | **337/375** | **0.899** | 38 | |
 
 The holes: CXLVII *septembre* (last figure 29 = a); CLIII, CLIV, CLV twice *le 20 mai* (20 = d in the key, read as
-the number, as Avenel says); CLV *veuille* (figures *veule*); CLVIII *maistresse* (figures *mistrese*); the Extension
+the number, as Avenel says); CLV *veuille* (figures *veule*); CLV *articles* (figures *articlesignes*, one s); CLVIII *maistresse* (figures *mistrese*); the Extension
 values where they are read (CXIX 68, 69; CXLVI 69; CLIII 55, 61, 62, 95, 96, 97; CLXVII 41, 67, 68); CLVIII 59 twice
 (*M. de Mantoue*, against *princesse Marie* in the table); CLIV 84 twice (*les Anglois*, *mal aus Anglois*, Avenel
 nn. 10, 11); the base codes 54, 59, 60 wherever they occur (15 words: CXXXV 54, 59, 60 ×3; CXLVI 54 ×2;
 CXLVII 54; CLIV 54; CLVIII 54; CLXVII 54 ×2, 59 ×2, 60).
+
+Corrected 23 Nov 2026 (owner's review of #813, 20 Nov): CLXVII has five 52 in the figures and the table had four
+(the one in "je suplie {52} de se faire monstrer mes lettres" was missing), so 27/35; CLV *articles* is a hole, the
+figures giving *articlesignes* with one s (53/56, read in part). The filed 20 Nov total was 337/374 (0.901); the
+earlier counts below were also on 374 words, without that 52.
 
 The strict count filed on 20 Nov 2026 before the base codes were traced (352/374 = 0.941, five letters read) is
 replaced by this one.
