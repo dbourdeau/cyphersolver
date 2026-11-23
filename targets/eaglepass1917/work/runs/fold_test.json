@@ -1,5 +1,5 @@
 {
- "what": "Frozen-plan construction test of the eaglepass1917 key, run 23 Nov 2026 about 10:30 EST by an AI agent (Claude Opus 5.5). The plan (SHA-256 f6372af4f261a71559eb772e0a757856081aa68812c3977ff34f8ba493cedee2) and the search script are kept outside this package because they also hold keys printed in the Narvaez book.",
+ "what": "Frozen-plan construction test of the eaglepass1917 key, run 23 Nov 2026 10:24-10:25 EST (plan written and hashed 10:23) by an AI agent (Claude Opus 5.5). The plan (SHA-256 f6372af4f261a71559eb772e0a757856081aa68812c3977ff34f8ba493cedee2) and the search script are kept outside this package because they also hold keys printed in the Narvaez book.",
  "honest_start": "The TIRANO fold was first noticed by eye in the eleven recovered pairs; the search below checks it and looks for any other fit. It is not a blind discovery.",
  "constructions": "keyword alphabet (keyword without repeats, rest of the alphabet ascending or descending), 26 and 27 letters (27 with N-tilde), (a) folded on itself about every axis, (b) written in two rows and paired with every offset, second row as written or reversed; empty keyword = plain alphabet (shifted and reversed pairings)",
  "keywords": {
@@ -76,5 +76,6 @@
    "match": 19
   }
  ],
- "family_note": "The same search finds that the 1915 'Clave Garduno' table printed by Narvaez (p. 311) is the fold of the 27-letter keyword alphabet GARDUNO (with N-tilde); no fit for row 2 of Seguin's 1916 plana (fig. 7). The tables themselves are not reproduced here."
+ "family_note": "The same search finds that the 1915 'Clave Garduno' table printed by Narvaez (p. 311) is the fold of the 27-letter keyword alphabet GARDUNO (with N-tilde); no fit for row 2 of Seguin's 1916 plana (fig. 7). The tables themselves are not reproduced here.",
+ "controls_meaning": "The positive control only checks the search code. The random control bounds the false-fit rate at about 0.1%; analytically a random reciprocal key matches a given candidate on the 12 facts the telegram fixes (11 pairs + T) with probability about 3e-14, so about 1e-7 over the 3.7 million keys searched. An independent AI reviewer's wider search (11.7 million keys, adding columnar-transposed keyword alphabets) also found only TIRANO (a model check)."
 }
