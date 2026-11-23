@@ -18,9 +18,11 @@ runs (folio 2 paragraphs 4-7, all of folio 3) are transcribed three times (secon
   **DCXXI.6.588.1**. Typed letter, 3 folios, signed in ink "J. W. Wellington", to "Señor don José González, N. O."
   (New Orleans), the cover name under which Félix Díaz received this fondo's letters (as in `../sanchez1922/`). No date.
   The item also holds two handwritten slips (images 0001-0002; see "Other leaves of the item").
-- Images (CEHM viewer, plain http, no login):
-  `http://visor.cehm.org.mx/assets/docx/fondos/jzd/DCXXI/6/588/1/DCXXI.6.588.1.000{1,2,3,4,5}.jpg`
-  (0003 folio 1, 0004 folio 2, 0005 folio 3). The site marks its images "Todos los Derechos Reservados": they are
+- Images (CEHM viewer, plain http, no login): folio 1
+  http://visor.cehm.org.mx/assets/docx/fondos/jzd/DCXXI/6/588/1/DCXXI.6.588.1.0003.jpg, folio 2
+  http://visor.cehm.org.mx/assets/docx/fondos/jzd/DCXXI/6/588/1/DCXXI.6.588.1.0004.jpg, folio 3
+  http://visor.cehm.org.mx/assets/docx/fondos/jzd/DCXXI/6/588/1/DCXXI.6.588.1.0005.jpg (the two slips are .0001.jpg
+  and .0002.jpg). The site marks its images "Todos los Derechos Reservados": they are
   linked here, not committed.
 - Date: none on the letter. Narváez (2019, p. 364) puts it at the start of the 1920s. The letter reports that Murguía,
   with Cándido Aguilar, has crossed the border and that Peláez is trying to land on the Veracruz coast, and it names
@@ -44,7 +46,8 @@ three-digit rule is already in this repository: `../sanchez1922/key.tsv` and `do
 *Documenta & Instrumenta* 13 (2015), pp. 107-132 (open access,
 https://revistas.ucm.es/index.php/DOCU/article/view/49742), at pp. 126-127: the rule, the worked example
 "Contingentes", folio 1's runs, and the statement that the remaining runs decode with 313 (page numbers as checked by
-the independent reviewer of this package, who read the article). And Narváez, *Criptografía diplomática, política y
+the independent reviewer of this package, an AI agent of ours (Claude Opus 5.5, 23 Nov 2026, 00:35-00:55 EST), who
+read the article; one model reader). And Narváez, *Criptografía diplomática, política y
 militar en México (1813-1926)* (Mexico, 2019), pp. 364-369: fig. 6 (p. 366) reproduces folio 2; pp. 367-368 derive
 the key from the two words written in ink over two runs of folio 2 ("Contingentes", "Republica"); p. 369 prints his
 decipherment of folio 2 paragraph 2 and the end of paragraph 3. His printed table and pages are not reproduced here.
@@ -73,8 +76,9 @@ seen pass 1). Folio 2: the passes agree on every letter. Folio 3: they differ at
 Pass 3 (23 Nov 2026), blind, by two further AI agents from their own crops (one for folio 3 paragraphs 1-2, one for
 the rest), each measuring the typewriter pitch (about 21.7 px a sign) to check for missing or extra signs: it agrees
 with this transcription on all 1,605 letters except six signs listed below (f2.19 s20, f3.04 s5, f3.07 s13-16, f3.10
-s42, f3.12 s110, f3.14 s151), and finds no missing, squeezed or extra sign. In particular it confirms every sign of the
-one-letter slips and of the stretches that give no words: those are slips of the typist or encipherer, not misreadings.
+s42, f3.12 s110, f3.14 s151), and finds no missing, squeezed or extra sign. In particular it agrees on every sign of the
+one-letter slips and of the stretches that give no words, which supports their being slips of the typist or
+encipherer rather than misreadings (a model reading, not a person's).
 Rule used for the counts: a doubtful sign is settled when pass 1 and at least one blind pass agree on it without the
 decode being used.
 
@@ -100,20 +104,24 @@ each run, running on across line breaks; 1,000 random 3-digit keys as controls (
 
 **Order.** The plan, its hash, the decoding script and its output were written within nine seconds of each other
 (00:37:33-00:37:42 EST, 23 Nov 2026, file times); nothing on disk proves that the plan came before the first decoding.
+The evidence was opened earlier: the five CEHM images were fetched at 00:22 EST and pass 1 was saved at 00:25:37 (file
+times), and Narváez's pages had been read from photographs of the book on 21 Nov 2026.
 It matters little here: the key, the alphabet and the phase rule are Narváez's published ones, so there was nothing
 to tune except the handling of line breaks, which the plan states.
 
-**Control.** Final transcription (`control_313.txt`): key 313 -2.444; controls' mean -5.353. Key 313 ties with one
-control only, which is 3-1-3 itself, drawn by chance; 999 of 1,000 are lower; the best other key, 3-1-7, scores
--3.617 (-3.664 on the first transcription).
+**Control.** Final transcription and the fixed decoder (`control_313.txt`, `python3 -I scripts/control.py
+<AFIM_Epistolario_T2_djvu.txt>`): key 313 -2.469; controls' mean -5.353. Key 313 ties with one control only, which is
+3-1-3 itself, drawn by chance; 999 of 1,000 are lower; the best other key, 3-1-7, scores -3.626 (-3.664 on the first
+transcription with the first decoder).
 
 **Script fix (after the independent review).** The first decoder skipped an unsure sign ("?") without advancing the
 key, which shifted the rest of such a run by one place. `scripts/decrypt.py` now keeps the place. What changed:
 f2.19 - the first run had read ATINAS ORIENTACIÓN after the line break only because the "?" was skipped; with the
 place kept those 17 letters give no words, so ORIENTACIÓN moved from clean to hole (the struck-sign reading is now
 post hoc). f3.02 and f3.07 had "?" in the first transcription; their final transcription has no "?" (both passes and
-the image), so the fix does not touch them. The control score changed from -2.505 to -2.444 with the corrected
-transcription.
+the image), so the fix does not touch them. The control score is -2.505 on the first transcription with the
+first decoder and -2.469 on the final transcription with the fixed one (an intermediate run with the first decoder
+gave -2.444).
 
 ## Reading
 
@@ -160,11 +168,11 @@ junta, will be called "Ricardo Lobato"; Lic. Juan Crisóstomo Bonilla, first ele
   the decode, so the word is a hole. Pass 3 (blind) reads F typed over E, but on our enhanced crop the order of the two
   layers cannot be told, so it stays a hole.
 - Stretches with no words: f2.19 after the line break (17 letters), f3.07 after EN (8, partly under the watermark),
-  f3.10 after LOS NOMBRES (37), f3.13 (41), f3.20 after the name (36). Counted by estimate from their letters.
+  f3.10 after LOS NOMBRES (36), f3.13 (41), f3.20 after the name (37). Counted by estimate from their letters.
 
 ## Post hoc: slips in the key cycle (not counted)
 
-First found after the registered run by the independent reviewer of this package as "one shift of the cycle per run";
+First found after the registered run by the independent reviewer of this package (the AI agent named above) as "one shift of the cycle per run";
 restated on 23 Nov 2026 after the third, blind transcription confirmed every sign of these runs (so the irregularity is
 in the typescript, not in our reading). `scripts/posthoc_shift.py`, output `posthoc_shift.txt`. In every case but
 one the cycle **restarts (shift 3) at the first letter of a word**, which is what the Sánchez letter
@@ -183,11 +191,14 @@ one the cycle **restarts (shift 3) at the first letter of a word**, which is wha
   inside PROPIA, which is not a restart.
 - Not reached: f3.07 after EN (8 letters, partly under the stamp), f3.22 after ENCAREZCO (CELA, 4 letters).
 
-**Frozen test (23 Nov 2026, plan SHA-256 c17933f51479..., in the contributor's work folder, not committed).** The
+**Frozen test (23 Nov 2026, plan SHA-256 c17933f51479..., in the contributor's work folder, not committed; script
+`scripts/restart_test.py`, output `restart_test.txt`).** The
 restart rule was written down before it was run on any stretch it had not been seen on, with 1,000 shuffles of each
 stretch's signs as controls (pass: at least 80% of the letters in words and above the controls' 99th percentile). It
 had little unseen material: f3.07's tail and f3.22's tail are too short (shuffles reach 100% too) and missed; f3.20's
-end reads only with the skip inside PROPIA, which the rule does not allow, so that is a miss for the rule. On the
+end meets the script's mark (coverage 1.00 against a control 99th percentile of 0.82) only because its word list
+splits PRORIA into PRO RIA; the sense needs a skip inside PROPIA, which the rule does not allow, so we do not count it
+as a pass. On the
 stretches already seen it beats the shuffles (f3.10 0.94 against a control maximum of 0.89; f3.13 0.93 against 0.83),
 which suggests (the rule was formed on these stretches, and the scorer's word list includes this letter's names) the readings are not an artefact of trying many restart points, but these are not blind tests. So none of
 these words is counted.
@@ -254,5 +265,6 @@ Outside this target: folio 1's two runs and folio 2 paragraphs 2-3 are Narváez'
 
 `transcription_DCXXI.6.588.1.txt`, `decryption_DCXXI.6.588.1.txt`, `marked_DCXXI.6.588.1.txt`,
 `reading_DCXXI.6.588.1.md`, `translation_DCXXI.6.588.1.md`, `key.txt`, `PLAN.md`, `control_313.txt`,
-`posthoc_shift.txt`, `scripts/decrypt.py`, `scripts/control.py`, `scripts/count_words.py`,
-`scripts/posthoc_shift.py`, `profile.json`.
+`posthoc_shift.txt`, `restart_test.txt`, `scripts/decrypt.py`, `scripts/control.py`, `scripts/count_words.py`,
+`scripts/posthoc_shift.py`, `scripts/restart_test.py`, `profile.json`. `.gitattributes` keeps the files byte for byte,
+so the plan's SHA-256 (lines 4-20 of `PLAN.md`) holds on any checkout.
