@@ -3,7 +3,7 @@
 Daniel Bourdeau's review of pull request #665 listed these six entries as "decoded, not read" because the clear text
 around the runs was not transcribed. This file gives that clear text, sentence by sentence, with the cipher words
 joined in, so that a reader can judge whether each entry builds a sentence. **Result: none of the six does.** Two
-clauses read as clauses (26r, "Vorrei che V.S. ... mi mandasse ... RELATION[E] DEL ..."; 57r, "che V.S. haveva
+clauses read as clauses (26r, "Vorrei che V.S. ... mi mandassi ... RELATION[E] DEL ..."; 57r, "che V.S. haveva
 scritto per ... viaggio ... DUSSELDORF"), but in every sentence most clear words are doubtful, and the six entries
 stay "decoded, not read". The cipher words are unchanged (`key/key_v3.json`, `readings/runs_533.tsv`,
 `readings/words_533_strict.tsv`; no key value and no cipher word was re-decided).
@@ -100,7 +100,7 @@ accusare a V.S. la (?) sua (?) lettera" is read by both):
 
 Reconciled, second sentence (from line 9; no full stop to the foot of the page; it goes on to f. 26v, not
 transcribed):
-> Vorrei che V.S. con una Curiosità(?) mi mandasse(?) un(?) RELATION[E] DEL [... 8] SCA[..]UG[..]IO[..]E ET
+> Vorrei che V.S. con una Curiosità(?) mi mandassi(?) un(?) RELATION[E] DEL [... 8] SCA[..]UG[..]IO[..]E ET
 > il Dominio/Panire(?) HAVRÀ [... 1] CON L[..] venuto/quello(?) accettato(?) V.S. che non mi dice tanto(?) quello
 > nuovo(?) che V.S. mi diede(?) ...
 
@@ -108,7 +108,7 @@ English (AI agent): "I would like V.S., with some curiosity(?), to send me a REP
 Dominion(?) WILL HAVE [...] WITH [...] ... accepted(?) V.S., who does not tell me so much(?) that news(?) which V.S.
 gave(?) me ..."
 
-Judgement: the opening clause reads, and RELATION[E] DEL fits it ("mi mandasse una relatione del ..."): with the
+Judgement: the opening clause reads, and RELATION[E] DEL fits it ("mi mandassi una relatione del ..."): with the
 noun "relatione" the article should be "una", and both passes see "un" or "un(?)", which is either Cosimo's
 shortening or a misreading. After DEL come the eight groups without a value and three unread words, so the clause
 stops being a sentence. Runs a and b decode to no word. Pass B also notes on line 7 a pair of signs, "94", written
