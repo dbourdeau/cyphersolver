@@ -45,9 +45,14 @@ offered, on 22-23 November 2026; nothing from them is in this folder (Remaining 
 
 ## 2. Sources and images
 
-- The manuscripts were read, by AI agents, from the page images of State Papers Online, 1509-1714 (Gale), under a
-  library licence.
-  **No image or crop is in this folder**; the licence does not allow it. What is here is our transcription.
+- The manuscripts were read, by AI agents, from the page images of State Papers Online, 1509-1714 (Gale).
+  Conditions of the images: Gale's Terms of Use. Andrew Beling reached the database through his reader account at
+  the Folger Shakespeare Library, signed in himself, and is the one who agreed to them. They allow personal
+  research use and the download of reasonable portions; they forbid automated access and text and data mining, and
+  do not say whether an AI assistant may read pages for a signed-in reader. The agents opened the volumes he named
+  and downloaded those pages under his supervision; nothing was mined or used to train a model.
+  **No image or crop is in this folder**: the images are for personal research use and are not ours to share. What
+  is here is our transcription.
 - Catalogue records: old f. 226 <https://discovery.nationalarchives.gov.uk/details/r/C6719667>, old f. 274
   <https://discovery.nationalarchives.gov.uk/details/r/C6719686>, old f. 294
   <https://discovery.nationalarchives.gov.uk/details/r/C6719691>, old f. 298
