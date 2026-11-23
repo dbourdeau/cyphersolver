@@ -1,54 +1,81 @@
 # Vetting, Andrew Beling (2026-11-23)
 
-Run by Andrew Beling (ajbeling) with AI agents (Claude Opus 5.5, with three helper agents for the blind transcriptions).
+Run by Andrew Beling (ajbeling) with AI agents (Claude Opus 5.5, with three helper agents for the blind
+transcriptions). An independent AI reviewer (Claude Opus 5.5) checked the package on 23 Nov 2026; its corrections are
+applied here.
 
 ## Lead 892: read (supersedes the block of 29 Oct 2026, which said partly_read)
 
 Ferdinand I and his resident at the Porte, Giovanni Maria Malvezzi, 1550: HHStA Wien, StAbt Türkei I 8-2-22,
 8-2-24, 8-3-10, 8-3-12 and 9-1-2. Every ciphered passage of the five items has a decipherment or a clear text on
-record, and all five are printed in Austro-Turcica 1541-1552 (ed. Nehring, 1995). Nothing in the lead is unread.
+record, on the leaf or filed with it, so nothing in the lead is unread. The verdict rests on those decipherments, not
+on our decodes. The archive cites a page of Austro-Turcica 1541-1552 (ed. Nehring, 1995) for each item.
 
 | Item | Language, extent | Decipherment or clear text on record | Our decode (`lead892_test/`, `lead892_rest/`) |
 |---|---|---|---|
-| 8-2-22, Malvezzi to Ferdinand, 24 Mar | Italian, four cipher passages (about 46 lines) in the original, all again in the duplicate | 16th-century decipherment between the lines of every cipher line of the original; printed (see below) | two passages (10 lines) decoded: 0.739 of the gloss's letters, under the 0.80 pass mark |
+| 8-2-22, Malvezzi to Ferdinand, 24 Mar | Italian, four cipher passages (about 46 lines) in the original, all again in the duplicate | 16th-century decipherment between the lines of every cipher line of the original | two passages (10 lines): 0.739 of the letters of my reading of the gloss, under the 0.80 pass mark |
 | 8-2-24, Ferdinand to Malvezzi, 25 Mar | Latin, 26 cipher lines | clear draft at 8-2-10 fol. 74 (AIS 7048141, images 9-10); modern pencil decipherment over lines 1-3 | 0.875 of the draft's letters; pass |
-| 8-3-10, Malvezzi to Ferdinand, 22 Apr | Italian, about 50 cipher lines | 16th-century decipherment between the lines throughout; printed | fol. 160r (10 lines) decoded: 0.783 of the gloss's letters, under the 0.80 pass mark |
-| 8-3-12, Ferdinand to Malvezzi, 28 Apr | Latin, 42 lines (original) and 29 (duplicate) | 19th-century decipherment filed with it (images 5-6); printed | 0.924 of the decipherment's letters; pass |
-| 9-1-2, Ferdinand to Malvezzi, 3 Oct | Latin, 3 cipher lines | 19th-century decipherment filed with it (image 3); printed | 0.911 of the decipherment's letters; pass |
+| 8-3-10, Malvezzi to Ferdinand, 22 Apr | Italian, about 50 cipher lines | 16th-century decipherment between the lines throughout | fol. 160r (10 lines): 0.783 of the letters of my reading of the gloss, under the 0.80 pass mark |
+| 8-3-12, Ferdinand to Malvezzi, 28 Apr | Latin, 42 lines (original) and 29 (duplicate) | 19th-century decipherment filed with it (images 5-6) | 0.924 of the decipherment's letters; pass |
+| 9-1-2, Ferdinand to Malvezzi, 3 Oct | Latin, 3 cipher lines | 19th-century decipherment filed with it (image 3) | 0.911 of the decipherment's letters; pass |
 
-- **Languages.** Three of the five are Latin (Ferdinand's 8-2-24, 8-3-12, 9-1-2); the lead says Italian for all.
-- **Print.** HathiTrust full-text search of Austro-Turcica 1541-1552 (mdp.39015038445451, search only), 23 Nov 2026,
-  phrases taken from the decipherments. Each phrase below returned that volume (with no other hit unless said):
-  - 8-3-12: "quemadmodum a Rege suo sibi iussum", "Transmittimus ad te cum hisce", "mentem dilectionis".
-  - 9-1-2: "de successibus omnibus certiores facere pergas".
-  - 8-3-10 (cipher passages on fol. 160r): "ogniuno se lamenta", "aspettano corrieri". Not found: "arrogante superbo".
-  - 8-2-22 (both decoded passages): "nove de Soria", "inimico del Turco" with Tartaria, "non se dechiara el tempo",
-    "movimento alchuno". Not found: "amotinarsi contra", "la prima guerra che se fara", "gran chan de tartaria".
-  - 8-2-24: "pro toto regno nobis permittendo", "petitionem Transsylvaniae" (both also fit the draft of 17 March,
-    8-2-10, printed on pp. 410-415, so the hits do not prove which letter they come from). Not found: "gradatim descendas".
-  So the edition prints the deciphered wording of the cipher passages, not a summary that leaves them out. The
-  misses are most likely the editor's spelling or OCR against my reading of a cursive gloss; page numbers could not be
-  shown (search-only volume).
-- **What our decode adds to the print.** For the two Italian letters, nothing that I could see: the decode agrees with
-  the gloss where both are clear, and the edition's text cannot be read here to compare word by word. For 8-2-24 the
-  decode shows that the letter sent follows the draft, with *Ras* for "Principem Turcarum" and the code word *zus*
-  where the draft has "Transylvaniae" (`targets/malvezzi1548/KEY_BRIEF.md` gives *zus* as "Hungariae imperium").
-  For 8-3-12 the cipher reads *mentem dilectionis et maiestatis eius caesareae*, *traductione italica* and *negotiis
-  istis nostris*, where the 19th-century decipherment has *dilectissimi fratris ... suae*, *italiana* and no
-  *istis*; the edition has "mentem dilectionis", so it already follows the cipher there
-  (`lead892_rest/compare_8-3-12.md`).
-- **Brice Dudout's 1550 test is not one of these five.** It is in `targets/huyson1547` (calibrated on Türkei I 7-3-20,
-  tested blind on 8-3-8).
+- **What this block changes against the block of 29 Oct.** That block already noted, from the archive's
+  descriptions, the 19th-century decipherment of 8-3-12, the clear draft of 8-2-24 and the archive's citation of
+  Austro-Turcica; it had not seen any cipher. ("No decipherment" is in the lead's `status` field, not in the 29 Oct
+  block.) New here: all five items seen at reading size; three of the five are Latin, not Italian as the lead says;
+  the 16th-century interlinear decipherments over every cipher line of the originals of 8-2-22 and 8-3-10; the
+  19th-century decipherment of 9-1-2; the pencil gloss on 8-2-24; and tests of the 1548 key on all five. Verdict
+  from partly_read to read.
+- **Lead 2682** (vetted `read`, 16 Nov 2026) covers the rest of Türkei I Kt. 8-9 "beyond the ones in leads 891/892".
+  It names 8-2-22, 8-2-24 and 8-3-10 as the overlap to match against this lead, and records from the Vienna inventory
+  regests on Hungaricana that the Malvezzi cipher pieces in those boxes carry their decipherments and are printed in
+  Nehring. The two leads do not duplicate each other: 892 holds these five items, 2682 the remainder; the evidence
+  here, from the leaves, agrees with 2682's.
+- **Print.** For each item the archive's description says "Ediert in: Austro-Turcica 1541-1552 ..." with pages
+  415-418, 418-419, 433-434, 437 and 513. No page of the edition was seen (HathiTrust holds it search-only). HathiTrust
+  full-text phrase searches on 23 Nov 2026 support the citation: phrases from the decipherments of each item returned
+  that volume (8-3-12 "quemadmodum a Rege suo sibi iussum", "Transmittimus ad te cum hisce"; 9-1-2 "de successibus
+  omnibus certiores facere pergas"; 8-3-10 "ogniuno se lamenta", "aspettano corrieri"; 8-2-22 "nove de Soria", "non
+  se dechiara el tempo", "movimento alchuno"; 8-2-24 "pro toto regno nobis permittendo", "petitionem
+  Transsylvaniae"), and some did not (8-3-10 "arrogante superbo"; 8-2-22 "amotinarsi contra"; 8-2-24 "gradatim
+  descendas"). The Italian phrases come from my own reading of the glosses. For 8-2-24 the hits may come from the
+  draft of 17 March (8-2-10, printed on pp. 410-415), which shares this wording. Only the URLs and result titles were
+  noted, no result pages saved (`search_log_hathitrust.md`).
+- **What our decode adds.** For the two Italian letters, nothing I can show. For 8-2-24 the decode follows the draft,
+  with *Ras* where the draft has "Principem Turcarum" and the code word *zus* where it has "Transylvaniae"
+  (`targets/malvezzi1548/KEY_BRIEF.md` gives *zus* as "Hungariae imperium"). For 8-3-12 the cipher reads *mentem
+  dilectionis et maiestatis eius caesareae*, *traductione italica* and *negotiis istis nostris*, where the
+  19th-century decipherment has *dilectissimi fratris ... suae*, *italiana* and no *istis*
+  (`lead892_rest/compare_8-3-12.md`; an independent reviewer confirmed all three on the image). "mentem dilectionis"
+  is a HathiTrust phrase hit in Austro-Turcica, but in a volume of Ferdinand's letters that may be another letter, so
+  it does not show how the edition prints this one.
+
+## The key used, and whose it is
+
+All tests use Daniel Bourdeau's `targets/malvezzi1548/KEY_BRIEF.md` (from DECODE R367/R386), unedited: SHA-256
+`66f98502297ed3ff111122bae75b21c309325b8adc1f4cc8c37d9fcd8c7793fd`, the same as upstream. They do not use Brice
+Dudout's K-C01 (`targets/huyson1547/key_KC01.json`, SHA-256 `c53e36e5...d873127`). The key describes its signs in
+words; the links from those words to the 1550 sign shapes (`lead892_test/sign_values_frozen_key.json`) are ours,
+frozen before any decoding, and some were wrong (listed below: square u = g, turned y = h, pi with feet = g, among
+others). Scores are of "KEY_BRIEF plus our links".
+
+What the tests show: with those links the key beats every one of 200 shuffled keys on all five items (an independent
+reviewer re-ran 2,000 with another seed and code: best shuffled 0.414-0.511); it reads the three Latin letters above
+their pass marks; the two Italian samples fall below the pass mark against my own reading of the glosses. The 1550
+copies also use signs the brief does not list: a looped q, & and a star as nulls, alpha for x.
 
 ## The tests on the other four items (`lead892_rest/`)
 
 - Plan and pass marks written and hashed before any transcription was decoded or any witness transcribed:
-  `PLAN_malvezzi_rest.md`, `.sha256` (15:19 UTC, 23 Nov 2026). The key and its sign links are those of the 8-3-12
-  test, unchanged.
+  `PLAN_malvezzi_rest.md`, `.sha256` (15:19 UTC, 23 Nov 2026). The key and our sign links are those of the 8-3-12
+  test, unchanged. Times written inside the plan, the transcription and witness headers of this round are wrong (I
+  wrote them later than the files were made): the plan was hashed at 10:19 Eastern, T1 saved 10:24 (Latin) and 10:41
+  (Italian), T2 10:39, the witnesses 10:42-10:43, the scores 10:45.
 - Transcriptions: T1 by the orchestrating agent (not blind: it knew the key and had seen the witnesses; said in the
   file); T2 by a separate helper agent that saw only the line images and the sign sheet with codes. T2 is the primary.
   Agreement T1/T2 (`results/agreement.txt`): 8-2-24 0.951, 9-1-2 0.857, 8-3-10 0.876, 8-2-22 0.897; part of the
-  difference is naming (T1 wrote the reversed c as `c` and a d-like sign as `3?`, T2 as unlisted signs).
+  difference is naming (T1 wrote the reversed c as `c` and a d-like sign as `3?`, T2 as unlisted signs). An
+  independent reviewer's own transcription of 8-2-24 lines P04-P08 agrees 0.943 with T2 and 0.933 with T1.
 - Witnesses (`witness/`), transcribed after the plan: the clear draft of 8-2-24; the 19th-century decipherment of
   9-1-2 (read before the plan; disclosed there); the interlinear glosses of 8-3-10 and 8-2-22, which are a weak
   witness (fast cursive between dense lines; guesses marked).
@@ -68,15 +95,16 @@ links in Malvezzi's hand (his reversed 6 is written like a d and was not on the 
 code words (*Ras*, *ki*, *ka*, *zos*) set against glossed words. They are reported as misses. The secondary scores
 (the three sign links learned on 8-3-12) change little: 0.793 and 0.741.
 
-Sign-sheet links that these four items show to be wrong, as on 8-3-12 (not edits to the key): the inverted-V sign
-that the transcribers coded `lam` is the key's caret **f** (*fuit*, *flumio*, *firma*); the pi with feet is **g**
+Sign-sheet links (ours) that these four items show to be wrong, as on 8-3-12 (not edits to the key): the inverted-V
+sign that the transcribers coded `lam` is often the key's caret **f** (*fuit*, *flumio*, *firma*), though `lam` also
+stands for h (*hoc*, P08), so the two shapes are not cleanly separated; the pi with feet is **g**
 (*regno*, *agere*); the 8-shaped circle on a stem coded `qo` is often **d** (*concedendo*, *quondam*); the reversed c
 is **b**.
 
 ## The test on 8-3-12 (`lead892_test/`)
 
-The letter was deciphered long ago, so this is evidence for the vetting, not a new target. It tests whether the
-upstream `targets/malvezzi1548` key reads a 1550 letter unchanged.
+The letter was deciphered long ago, so this is evidence for the vetting, not a new target. It tests whether Daniel
+Bourdeau's `targets/malvezzi1548` key brief, with our sign links, reads a 1550 letter.
 
 ### Method
 
@@ -85,13 +113,18 @@ upstream `targets/malvezzi1548` key reads a 1550 letter unchanged.
   - `PLAN_malvezzi1550.md.sha256`, timestamped 05:24 UTC, 23 Nov 2026.
 - Frozen key: `targets/malvezzi1548/KEY_BRIEF.md`, SHA-256 `66f98502...93fd`.
 - The key describes its signs in words. Each 1550 shape was linked to a key description before decoding, in
-  `sign_values_frozen_key.json`.
+  `sign_values_frozen_key.json`. The plan quotes its hash as "50a3a583...1cb37"; the file's hash is
+  `50a3a58369d51c5e02bc36dfbd619282e694aaa86c1d89c3a0161b1e13bcf127`. The fragment in the plan is a slip; the file
+  (00:23 Eastern) is older than the plan (00:24) and was not changed after. The plan's "about 00:45 Eastern" is also
+  wrong: the file was written at 00:24.
 - Disclosure: the agent that wrote the plan had already read the opening lines of the 19th-century decipherment on
   an 800 px survey image. The two transcribers had not seen it.
 - Two transcriptions of the original's 42 cipher lines were made by two separate helper agents. They saw only the
   line images and a sign sheet with codes and no values:
   - `transcription_T1.txt` and `transcription_T2.txt`.
-  - They agree on 979 of 999 aligned signs (0.980).
+  - They agree on 979 of 999 aligned signs (0.980). That is agreement between our own two helpers, both working
+    from the same sign sheet; an independent reviewer's own blind transcription of lines A01-A10 agrees 0.927 with
+    T1 and 0.923 with T2, mostly on signs one of us marked as doubtful.
 - Decoding and scoring are mechanical:
   - Scripts are in `scripts/`. Run `python3 scripts/decode.py` and `python3 scripts/agree.py`.
   - Decodes are in `decode_T*.txt` (word level, holes in brackets) and `mechanical_T*.txt` (per line).
@@ -106,7 +139,8 @@ upstream `targets/malvezzi1548` key reads a 1550 letter unchanged.
 
 - The pass mark was 0.85, so the test passes.
 - 200 keys shuffled among the sign codes score mean 0.358 and best 0.430.
-- The decode builds Latin sentences from beginning to end. The key did not change between 1548 and 1550.
+- The decode builds Latin sentences from beginning to end. The 1548 key brief, with our links, reads this 1550
+  letter; the letter also uses signs the brief does not list (below).
 
 ### Observations for the key's owner, not edits to `targets/malvezzi1548`
 
@@ -176,4 +210,4 @@ The records:
   between the lines or filed with it.
 - Austro-Turcica's page numbers for the hits (search-only volume), and a word-by-word comparison of the edition with
   the decodes.
-- An independent review of these files.
+- An independent AI review was made on 23 Nov 2026 and its corrections applied; no person has reviewed the package.
