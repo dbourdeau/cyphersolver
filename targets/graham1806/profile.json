@@ -95,7 +95,7 @@
   "key_order": "unknown",
   "word_division": "unknown",
   "doubled_letters": "unknown",
-  "sibling_key": "Graham 2 Jan 1806 (Founders 02-11-02-0004) decoded by Wagner with the State Department code printed in Weber pp. 419-30; not obtained.",
+  "sibling_key": "Graham 2 Jan 1806 (Founders 02-11-02-0004; NARA T260 roll 8 frames 0006-0011) is in Weber 1979 WE023 (pp. 419-30) number for number: 383 strict of 418 words (beling/, 22 Nov 2026). The [22 Nov] extract is not in it.",
   "notes": "Pinckney legation code and Armstrong's THE=972 code ruled out on the open groups."
  },
  "conditions": {
@@ -113,14 +113,15 @@
   "tools": [
    "Founders Online",
    "loc.gov JSON API",
-   "Internet Archive search-inside (layout only)"
+   "Internet Archive search-inside (layout only)",
+   "NARA catalog images"
   ],
   "models": [
    "claude-opus-5-5"
   ],
-  "sessions": 1,
+  "sessions": 2,
   "first_date": "2026-10-26",
-  "last_date": "2026-10-26"
+  "last_date": "2026-11-22"
  },
  "solution": [
   {
@@ -155,6 +156,53 @@
    "kind": "access",
    "what": "Weber 1979 is a print-disabled loan; table layout seen in search-inside only (73/74 near present/president); a bulk sweep was stopped and not used.",
    "result": "failed"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "access",
+   "what": "Graham's 2 Jan 1806 letter with Wagner's interlinear words found online: NARA T260 roll 8 (naId 221215877), frames 0006-0012.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "transcription",
+   "what": "2 Jan 1806: 57 coded runs, 614 groups, 275 distinct, each under Wagner's word (beling/transcription_2jan1806.txt). Not strictly blind: Wagner's words are on the same images; 0010-0011 read after about 40 WE023 lookups.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "sibling key",
+   "what": "Weber's tables WE016-WE028 (cited, not copied) scored on the 418 usable words: WE023 383 strict and 405 lenient, the others 0-4 and 0-10; 200 shuffles per table (rerun 22 Nov with per-table seeds: WE023 best shuffle 9 strict, 42 lenient).",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "control",
+   "what": "Held-out split of Wagner's words, no table: key from 0006-0008 gives 116 of 118 covered groups on 0009-0011 (200 permuted keys, best 13); reverse 90 of 91 (best 11).",
+   "technique": [
+    "statistical test"
+   ],
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "sibling key",
+   "what": "January key and WE023 at the 18 open or conjectured numbers of the [22 Nov] extract: no value from the key, no sense from WE023; 18 distinct numbers all at 77 or below (11 of 613 January groups are) has probability about 2e-24 under the January code.",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "access",
+   "what": "LoC Burr Conspiracy Collection (MSS14415): the November manuscripts are in one bound volume, Box 1, Reel 1 (microfilm 17,112); no item list, not digitised.",
+   "result": "failed"
   }
  ],
  "outcome": {
@@ -171,17 +219,25 @@
   "gaps": [
    {
     "item": "groups 10 19 30 33 35 36 39 41 51 61 65 77",
-    "blocker": "no-key-material"
+    "blocker": "needs-physical-access"
    },
    {
     "item": "conjectures 18 46 54 67 71 73",
-    "blocker": "no-key-material"
+    "blocker": "needs-physical-access"
    },
    {
     "item": "group numbers of the decoded words",
     "blocker": "needs-physical-access"
    }
   ],
-  "notes": "Attempted, open. Next: Weber pp. 419-30 from a library copy; Lewis's key; LoC microfilm 17,112."
+  "notes": "Attempted, open. The January sibling is in Weber's WE023 but the [22 Nov] extract is not (beling/, 22 Nov 2026); next: LoC microfilm 17,112 to see the numbers Graham wrote; Lewis's key.",
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "2 Jan 1806 sibling (NARA T260 roll 8) transcribed and matched to Weber's WE023; the [22 Nov] extract shown not to be in it; Burr Conspiracy Collection location (with AI agents)",
+    "date": "2026-11-22"
+   }
+  ]
  }
 }
