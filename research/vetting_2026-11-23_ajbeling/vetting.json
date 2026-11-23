@@ -1,0 +1,55 @@
+{
+ "892": {
+  "date": "2026-11-23",
+  "by": "Andrew Beling (ajbeling), with AI agents",
+  "supersedes": "The block of 29 Oct 2026 kept the verdict partly_read without seeing any cipher and said 'no decipherment'. New evidence: the five archive records were read and all their images viewed; 8-3-12 and 9-1-2 each have a 19th-century decipherment filed with them; three of the five items are Latin, not Italian; HathiTrust full-text search finds the deciphered Latin of 8-3-12 and of 9-1-2 in Austro-Turcica. The verdict stays partly_read with these corrections.",
+  "seen": {
+   "kind": "scan",
+   "where": "Austrian State Archives, AIS records https://www.archivinformationssystem.at/detail.aspx?ID=7048237, https://www.archivinformationssystem.at/detail.aspx?ID=7048241, https://www.archivinformationssystem.at/detail.aspx?ID=7048434, https://www.archivinformationssystem.at/detail.aspx?ID=7048437, https://www.archivinformationssystem.at/detail.aspx?ID=7079699; all 21 images viewed on 23 Nov 2026 (8-3-12 at 4000 px across; the other items at 800 px across, for description only). Images not reproduced here.",
+   "extent": "8-2-22 (Malvezzi to Ferdinand, Constantinople, 24 Mar 1550, Italian, original and copy, 8 images, partly ciphered); 8-2-24 (Ferdinand to Malvezzi, Vienna, 25 Mar 1550, Latin, about 25 cipher lines, 2 images); 8-3-10 (Malvezzi to Ferdinand, Constantinople, 22 Apr 1550, Italian, partly ciphered, 2 images); 8-3-12 (Ferdinand to Malvezzi, Brno, 28 Apr 1550, Latin, original 42 cipher lines and duplicate 29 lines, plus a 19th-century decipherment, 6 images); 9-1-2 (Ferdinand to Malvezzi, Augsburg, 3 Oct 1550, Latin, about 6 cipher lines, plus a 19th-century decipherment, 3 images).",
+   "cipher": "Graphic-sign homophonic cipher of Malvezzi's alphabet (signs such as circle on a stem, hash, two bars, Greek letters, numerals for doubled letters, null words Cum, Porro, Spo, Dar; code word Ras). 8-3-12 images 5-6 and 9-1-2 image 3 are 19th-century decipherments headed 'Entzifferung', giving the whole ciphered text of 8-3-12 and the ciphered passage of 9-1-2 in Latin. The original of 8-3-12 was transcribed sign by sign twice blind and decoded with the upstream malvezzi1548 key (lead892_test/)."
+  },
+  "prior_art": {
+   "decode": "Not on DECODE for these five items (block of 29 Oct 2026); not searched again, as the archive's own decipherments and the print below settle the verdict.",
+   "tomokiyo": "No Cryptiana page for these 1550 letters (block of 29 Oct 2026); not searched again.",
+   "lasry": "No Lasry work on these items (block of 29 Oct 2026); not searched again.",
+   "edition": "Austro-Turcica 1541-1552, ed. Karl Nehring (Munich 1995), HathiTrust mdp.39015038445451, search only. The archive cites it for 8-2-22 pp. 415-418, 8-2-24 pp. 418-419, 8-3-10 pp. 433-434, 8-3-12 p. 437, 9-1-2 p. 513. HathiTrust full-text phrase searches on 23 Nov 2026 each returned this volume as the only hit: 'quemadmodum a Rege suo sibi iussum' and 'Transmittimus ad te cum hisce' (8-3-12) and 'de successibus omnibus certiores facere pergas' (9-1-2). So the edition prints the deciphered Latin of those two letters, not only a summary. Page numbers of the hits could not be displayed (the in-volume search page did not render); the other three items were not searched.",
+   "literature": "In this repository: targets/malvezzi1548 (Daniel Bourdeau, the 1548 letter and the key from DECODE R367/R386) and targets/huyson1547 (Brice Dudout: key K-C01 calibrated on Türkei I 7-3-20 and tested blind on Türkei I 8-3-8, 1550). Neither uses any of these five items. No open issue or pull request names lead 892, Malvezzi or Türkei (gh search, 23 Nov 2026)."
+  },
+  "key_check": "Tested on 8-3-12 (original): the upstream targets/malvezzi1548/KEY_BRIEF.md key, unchanged, decoded mechanically from the second blind transcription matches 0.924 of the 952 letters of the 19th-century decipherment (pass mark 0.85 set in a hashed plan; 200 shuffled keys mean 0.358, best 0.430); 124 of 170 words read with no supplied letter. The cipher did not change between 1548 and 1550.",
+  "key_held": "targets/malvezzi1548 (DECODE R367, R386); targets/huyson1547/key_KC01.json",
+  "duplicates": "Catalogue 500 lists Türkei I 7-1-4, 7-2-18, 7-2-25, 7-3-39, 8-3-8, 8-3-11, 8-4-6, 9-1-8, none of these five; targets/huyson1547 read 7-2-18 and used 7-3-20 and 8-3-8; no other lead or target names these shelfmarks.",
+  "searches": [
+   {
+    "query": "AIS detail pages 7048237, 7048241, 7048434, 7048437, 7079699",
+    "result": "Descriptions read: language, dates, 'chiffriert' or 'teilweise chiffriert'; 8-3-12 'Dechiffrierung aus dem 19. Jh. liegt bei'; 8-2-24 'nicht chiffriertes Konzept liegt fol. 74 (8-2-10)'; all five 'Ediert in: Austro-Turcica' with pages."
+   },
+   {
+    "query": "HathiTrust full-text phrase 'quemadmodum a Rege suo sibi iussum'",
+    "result": "1 result: Austro-Turcica 1541-1552 (1995), search only."
+   },
+   {
+    "query": "HathiTrust full-text phrase 'Transmittimus ad te cum hisce'",
+    "result": "1 result: Austro-Turcica 1541-1552 (1995), search only."
+   },
+   {
+    "query": "HathiTrust full-text phrase 'de successibus omnibus certiores facere pergas'",
+    "result": "1 result: Austro-Turcica 1541-1552 (1995), search only (9-1-2)."
+   },
+   {
+    "query": "HathiTrust full-text all words 'sororii Contestabilis'",
+    "result": "27 results, Austro-Turcica among them."
+   },
+   {
+    "query": "Google Books for 'Austro-Turcica' Malvezzi 1550 Brunae",
+    "result": "Not answered: the books API returned its daily quota error and the web search showed an unusual-traffic page."
+   },
+   {
+    "query": "gh search issues and pull requests: malvezzi, Türkei, Turkei, 892, Ferdinand",
+    "result": "None open on these items (issue 746 is ferdinand1552, another letter)."
+   }
+  ],
+  "verdict": "partly_read",
+  "closed": "Read in the 19th century and printed: 8-3-12 (Ferdinand to Malvezzi, Brno, 28 Apr 1550) and the ciphered passage of 9-1-2 (3 Oct 1550) have 19th-century decipherments filed with them in the archive, and HathiTrust search finds their Latin in Austro-Turcica 1541-1552 (pp. 437 and 513 as cited by the archive). The upstream malvezzi1548 key reads 8-3-12 unchanged (lead892_test/). Unread: 8-2-24 (Latin, about 25 lines; clear draft at 8-2-10 fol. 74), Malvezzi's Italian letters 8-2-22 and 8-3-10, the duplicate of 8-3-12; whether Austro-Turcica prints their ciphered passages was not checked."
+ }
+}
