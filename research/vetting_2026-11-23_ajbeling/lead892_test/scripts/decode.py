@@ -1,4 +1,5 @@
 import json, random, re, sys
+import os as _os, sys as _sys; _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))  # so that python3 -I finds common.py
 from common import *
 VAL=json.load(open(O+'sign_values_frozen_key.json'))
 NUM={'12':'tt','13':'ss','14':'rr','16':'nn','3':None}
@@ -69,9 +70,9 @@ if __name__=='__main__':
             else: outw.append(''.join(c if ok else '['+(gg or '-')+']' for c,ok,gg in zip(w,mm,g)))
         res[tag]=(sc,wr,nw)
         print(tag,'letters',len(ref),'agree',round(sc,4),'words read',wr,'/',nw,round(wr/nw,4))
-        open(O+f'decode_{tag}.txt','w').write(' '.join(outw)+'\n')
+        open(O+f'decode_{tag}.txt','w',encoding='utf-8',newline='\n').write(' '.join(outw)+'\n')
         mech=' | '.join(k+': '+''.join(('/'.join(sorted(x)) if isinstance(x,set) else x) if (len(x)==1 or x=='§') else '('+'/'.join(sorted(x))+')' for x in v) for k,v in lines.items())
-        open(O+f'mechanical_{tag}.txt','w').write(mech.replace(' | ','\n')+'\n')
+        open(O+f'mechanical_{tag}.txt','w',encoding='utf-8',newline='\n').write(mech.replace(' | ','\n')+'\n')
         if tag=='T2':
             codes=[c for c,v in VAL.items() if not v.startswith('NOT') and v not in ('null','Imperator Turcorum')]
             vals=[VAL[c] for c in codes]
