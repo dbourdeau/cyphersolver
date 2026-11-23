@@ -62,6 +62,96 @@
     "image_quality": "unknown",
     "notes": "rem88.txt: 257 code groups, 7 with digits lost in the microfilm gutter (142x, 21x, 15xx, 11xx, 1xxx, 55x, 13xx), counted as unread. python measure.py counts the groups; docs/_check_profile.py --measure counts 298 tokens including the clear line."
    }
+  },
+  {
+   "id": "no85-two-lines",
+   "read": "read",
+   "shelfmark": "NARA M35 reel 3 frame 0197 left (duplicate of No. 85); Ford, Writings of JQA 4:339 '[Here two lines of cypher not decyphered]'",
+   "date": "27 May 1812",
+   "year": 1812,
+   "country": "United States",
+   "route": "St Petersburg -> Washington",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The clerk's interlinear decode of No. 85 stops on frame 0196; nothing is written over these groups; Ford prints the gap."
+   },
+   "length": {
+    "tokens": 26,
+    "distinct": 26,
+    "unit": "code groups",
+    "measured": true,
+    "file": "no85_two_lines.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M35 reel 3 frame 0197 (National Archives Catalog record 188725601)",
+    "image_quality": "poor",
+    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026 (beling/no85_no74_2026-11-21/trans_A, trans_B), merged; a third agent read it blind afterwards. Its blind reading agreed at every group except the last of the two lines, where it first read 528 and on a second look 548; it left 116x, 891/841 and the gutter group open, as the transcribers did. One group differed between the two (528/548), settled on an enlargement. The plural mark after 1378 and 1369 is not in the file (see we028_no85.tsv). The film is pure black and white. python docs/_check_profile.py --measure: 26 tokens."
+   }
+  },
+  {
+   "id": "no85-three-lines",
+   "read": "read in part",
+   "shelfmark": "NARA M35 reel 3 frame 0197 left (duplicate of No. 85); Ford 4:339 '[here three lines of cypher not decyphered]'",
+   "date": "27 May 1812",
+   "year": 1812,
+   "country": "United States",
+   "route": "St Petersburg -> Washington",
+   "language": "English",
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Nothing is written over these groups; Ford prints the gap."
+   },
+   "length": {
+    "tokens": 35,
+    "distinct": 27,
+    "unit": "code groups",
+    "measured": true,
+    "file": "no85_three_lines.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M35 reel 3 frame 0197 (National Archives Catalog record 188725601)",
+    "image_quality": "poor",
+    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026, merged; a third agent read it blind afterwards. Its blind reading agreed at every group except the last of the two lines, where it first read 528 and on a second look 548; it left 116x, 891/841 and the gutter group open, as the transcribers did. 116x: the last figure is blotted; 9x: cut by the binding gutter after the 9 (both counted as tokens by --measure: 35). 1436 and 1626 stand on the film as written."
+   }
+  },
+  {
+   "id": "no85-foot",
+   "read": "read in part",
+   "shelfmark": "NARA M35 reel 3 frame 0196 left, code block lines 11-16 (duplicate of No. 85); not in Ford (4:338 ends at 'dominions.')",
+   "date": "27 May 1812",
+   "year": 1812,
+   "country": "United States",
+   "route": "St Petersburg -> Washington",
+   "language": "English",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "The clerk's interlinear words stop at 'Dominions' on line 11; the rest of the block has nothing written over it, and Ford does not print it."
+   },
+   "length": {
+    "tokens": 75,
+    "distinct": 60,
+    "unit": "code groups",
+    "measured": true,
+    "file": "no85_foot.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "NARA M35 reel 3 frame 0196 (National Archives Catalog record 188725601)",
+    "image_quality": "poor",
+    "notes": "Two blind transcriptions by AI agents on 21 Nov 2026, merged, and compared afterwards with the transcription of 22 Sept 2026 in ford1812b_notes.md (the same numbers except its 84+ for 89x and 23? for 23x). 23x and 89x are cut by the binding gutter. python docs/_check_profile.py --measure: 75 tokens."
+   }
   }
  ],
  "system": {
@@ -377,6 +467,54 @@
    "kind": "verification",
    "what": "Marking round of the decrypt audit: ten places bracketed in the two No. 88 readings without changing a letter (nine lines: impa[ir]ed, [it], al[l], event[s], affair[s]; remainder: disclose[d], sy[st]em, proposi[tion], mak[ing], [to]), and a sentence added to each file's head comment. Hole rate (v2_score.py): nine lines 0.039 to 0.088, remainder 0.079 to 0.107. The word counts and read shares were not redone; whether any of the ten is a mark on the film was not checked.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "transcription",
+   "what": "Leads 992 and 991 (Andrew Beling, with AI agents). Frames 0168, 0170-0171, 0196, 0197 of NARA M35 reel 3 fetched from the National Archives Catalog; every code group of No. 85 (0196 left, 0197 left) and No. 74 (0168, both leaves) and the clerk's decyphered sheet of No. 74 transcribed twice by agents blind to each other, to any table and to this folder: 796 tokens, the same number at 717, doubted by neither at 600.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "control",
+   "what": "Pre-registered check (beling/no85_no74_2026-11-21/TEST_PLAN.md, written before any number was looked up): the M97 code sheet, unchanged, against the clerk's own decipherment of Nos. 85 and 74, number by number, scored only where both transcribers agree without doubt; pass mark 0.85; 1,000 shuffled-table controls. No. 85: 0.929 and 0.911 (largest control 0.062); No. 74: 0.935 and 0.932 (largest control 0.131). Passed, one run.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "reading",
+   "what": "Code sheet applied unchanged to the groups the clerk left bare. Frame 0197, first run: 17 words, all read. Second run: 20 of 23 words (116x blotted; 1626 not a number of the code; 9x cut by the gutter; 1436 for 1426 under the one-digit rule). Frame 0196 lines 11-16: 51 of 55 words, a second reading of the lines first read on 22 Sept 2026 (five numbers stand on the film with sheet values that give no sense: 1236, 209, 49, 1501, 820). No. 74: the three groups the clerk marked 'Error in Cypher' (387 1431 1101) are sue, into, P on the sheet: is-sue into P-russia; no number needs changing.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "verification",
+   "what": "A third agent read frame 0197 and the first eight groups of frame 0168 from its own enlargements before opening the sheet or the transcriptions: its blind reading agreed at every group of 0197 except the last of the two lines (first 528, on a second look 548), leaving 116x, 891/841 and the gutter group open as the transcribers did; the same reading of both runs (it proposed ex-plain-ed, 1138, where ex-pound-ed, 1160, had been proposed; both are recorded, the word is a hole), and 'P-russia' on 0168. It read 887 where the clerk's sheet has 387, so 'issue' rests on the clerk's figures. Ten numbers of the test detail checked against frame 0196: nine as the file says, one clerk's word misplaced by a transcriber.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "literature search",
+   "what": "Ford 4:270, 338-339 prints the gaps; Internet Archive full-text search on three phrases of the clear text beside them returns only copies of Ford's volume; Founders Online has no result for 'neutrality of Sweden' or 'suffered to remain open'. JQA's letterbook copy (Adams Papers reel 136, MHS) not seen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Recount of the three No. 85 readings under README Conventions (16 Nov 2026: a word with a supplied or emended letter is a hole): intention[s], expectation[s], objection[s] (s supplied from the plural mark) and los[s] (the sheet gives lose) are now holes. Two lines 15 of 17 = 0.882, now read in part (was 17 of 17, read); three lines 19 of 23 = 0.826 (was 20); six lines 50 of 55 = 0.909 (was 51). NOTES.md also states the weaknesses: the plan's freeze hash is local only; 548 and 398 settled partly by sense; 'issue' rests on the clerk's 387 against 887 read by two of three film readers; the Adams letterbook copy (reel 136) not seen.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Review corrections: the two lines (17 cipher words, 2 holes) are 'read' under the short-text floor of README Conventions (19 Nov 2026), recorded as floor_used, cipher_words 17, holes 2, so outcome.texts agrees with documents[]; the third agent's blind reading described exactly (528 first, 548 on a second look; 116x, 891/841 and the gutter group left open); the six-line comparison with the September reading gives its two exceptions and the one-digit rule for 1236, 209 and 820; the test plan's preface names the replaced test name.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -466,6 +604,26 @@
    {
     "item": "rem88 l.11 570 (it ... he said): the M97 sheet gives tol / toe; 'was' would be 500",
     "blocker": "no-key-material"
+   },
+   {
+    "item": "no85_three_lines l.2 116x (ex-..-ed): last figure blotted on frame 0197; pound (1160) or plain (1138)",
+    "blocker": "illegible"
+   },
+   {
+    "item": "no85_three_lines l.3 1626 between indemnified and Norway: no such number in the code; in (1426) is one digit away but a whole word",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "no85_three_lines l.3 9x and no85_foot 23x, 89x: groups cut by the binding gutter (for, exten-sive, loss wanted)",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "no85_foot l.3 49 (United States on the sheet; Sweden, 39, wanted) and 1501 (A on the sheet; 'be' wanted): clear on the duplicate, sense against them",
+    "blocker": "needs-physical-access"
+   },
+   {
+    "item": "No. 74 (frame 0168 left l.1): 'is-sue into P-russia' for the clerk's three 'error' groups rests, for 'issue', on the clerk's own figures 387 and his 'is'; on the film the first figure of 387 was read 8 by two of three blind readers",
+    "blocker": "needs-physical-access"
    }
   ],
   "notes": "14 Nov 2026, image check: the seven one-digit groups Brice Dudout proposed to correct were looked at on frames 0206-0207; by the one-digit rule (owner's decision of 14 Nov 2026, README Conventions) five count as read, 669 (a whole word) and 1585 (digit overwritten, word incomplete) stay holes. Remainder 0.927, nine lines 0.970: read in part kept, the remainder is under 95%. 22 Sept 2026, third pass: the code table grew from 962 to 1,070 numbers with the clerk decodes on 0047, 0048, 0210-0211, 0247 and eight 1811-1812 despatches aligned with Ford (No. 95 against the Department's clear copy); No. 88 re-read against the image a third time (792, 1061, 588, 1384 corrected). 0.910 -> 0.974: meets the read bar; both parts of the letter (Ford's nine lines 0.970, the remainder 0.957) read. Grades counted over the 375 sense groups by measure.py. 22 Sept 2026: code rebuilt from eight more clerk-decoded frames and 39 Ford-aligned 1811 blocks; No. 88 re-read and measured for sense. Below the 95% read bar overall (0.910), so read in part; Ford's nine lines alone reach 0.955 counting grade-I values (0.895 without). More interlinear pages remain on reel 3 (0047, 0056-57, 0211, 0228-29, 0233, 0247) and Ford prints the 1812 decipherments; these are the route to the open groups. Model ids: claude-opus-5 (18 Sept), claude-opus-5-5 (22 Sept). outcome.grades counts the 355 No. 88 groups read as sense (gap 101 H 7 C 11 M 8 I; remainder 184 H 17 C 16 M 11 I).",
@@ -499,6 +657,12 @@
     "who": "ajbeling",
     "role": "transcription",
     "note": "transcription of the State Department code sheet, NARA M97 roll 13 frames 1056-1057 (in ../morris1813/beling/key/), used unchanged for the check of 14 Nov 2026"
+   },
+   {
+    "who": "ajbeling",
+    "role": "solution",
+    "date": "2026-11-21",
+    "note": "No. 85 (27 May 1812): the two passages on frame 0197 that Ford printed as not decyphered, read with the surviving code sheet after a pre-registered check of the sheet against the clerk's decipherment of Nos. 85 and 74; second reading of the six bare lines of frame 0196; No. 74: the three groups the clerk marked as an error read as they stand (is-sue into P-russia). With AI agents; no person has checked it."
    }
   ],
   "texts": [
@@ -537,11 +701,51 @@
     "state": "read in part",
     "read_share": 0.927,
     "note": "14 Nov 2026, with the M97 code sheet: 177 words, 161 sure, 11 probable, 2 restored, 3 unresolved (1508, 1185, 570). Brice Dudout's count takes sure and probable as read: 172 of 177 = 0.972. By the strict rule of this project only the sure words count: 161 of 177 = 0.910 (the v10 tool gives 0.905, since it also counts the marker of the clear passage); under the 95% bar, so read in part. It was 0.938 on 24 Oct 2026, when the words on gutter-cut groups and one-digit slips were not marked. Image check and one-digit rule, 14 Nov 2026: certainly (1864 for 1364), battle (588 or 568) and directly (508 for 518) count as read; to (669 for 569) is a whole word and stays a hole. 164 of 177 = 0.927, still under 95%: read in part."
+   },
+   {
+    "doc": "no85-two-lines",
+    "label": "No. 85, 27 May 1812: the two lines Ford printed as not decyphered (frame 0197)",
+    "transcription": "no85_two_lines.txt",
+    "decryption": "texts/no85_two_lines_decryption.md",
+    "reading": "texts/no85_two_lines_reading.md",
+    "language": "en",
+    "state": "read",
+    "read_share": 0.882,
+    "summary": "After reporting that the English negotiator Thornton has probably pledged his government's consent to the neutrality of Sweden, Adams adds in code that there is some uncertainty how far the neutral intentions and expectations of Sweden herself extend.",
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents), recounted 22 Nov 2026 under README Conventions of 16 Nov 2026: 17 words, 15 read = 0.882, read under the short-text floor (README Conventions, 19 Nov 2026: under 40 cipher words, at most 2 holes); holes intention[s] and expectation[s] (the s supplied from the plural mark). 26 groups, 24 sure and 2 probable in we028_no85.tsv. No reading review recorded yet: for the reviewer.",
+    "floor_used": true,
+    "cipher_words": 17,
+    "holes": 2
+   },
+   {
+    "doc": "no85-three-lines",
+    "label": "No. 85, 27 May 1812: the three lines Ford printed as not decyphered (frame 0197)",
+    "transcription": "no85_three_lines.txt",
+    "decryption": "texts/no85_three_lines_decryption.md",
+    "reading": "texts/no85_three_lines_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.826,
+    "summary": "Adams's comment on Swedish neutrality: if the Regent's new proclamation on the Orders in Council shows what England means by neutrality, and Sweden's meaning of it is shown by her hope of being indemnified with Norway for the loss of Finland, the roots of that neutrality are not very deep.",
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents): 23 words, 19 read = 0.826 (recounted 22 Nov 2026: los[s], with its s supplied, is a hole). Holes: los[s], [?expounded] (116x, last figure blotted; pound 1160 or plain 1138), [?in] (1626, not a number of the code), [?for] (9x, cut by the gutter). indemnified counts under the one-digit rule (1436 for 1426). No reading review recorded yet: for the reviewer."
+   },
+   {
+    "doc": "no85-foot",
+    "label": "No. 85, 27 May 1812: the six lines after 'Dominions' that the clerk left bare (frame 0196)",
+    "transcription": "no85_foot.txt",
+    "decryption": "texts/no85_foot_decryption.md",
+    "reading": "texts/no85_foot_reading.md",
+    "language": "en",
+    "state": "read in part",
+    "read_share": 0.909,
+    "summary": "The end of the Swedish chargé's assurances to the Emperor Alexander: Finland is separated from the rest of Sweden by a wide gulph, and for its loss Sweden might hope to be indemnified eventually by the acquisition of Norway; the Emperor assured him he would have no objections and make no opposition.",
+    "note": "21 Nov 2026 (Andrew Beling, with AI agents): a second reading, with the code sheet, of the lines first read with the rebuilt table on 22 Sept 2026 (ford1812b_notes.md). 55 words, 50 read = 0.909 (recounted 22 Nov 2026: objection[s], with its s supplied, is a hole). Holes: [?extensive] and [?loss] (groups cut by the gutter), [?Sweden] (49, United States on the sheet), [?be] (1501, A on the sheet). gulph, province and indemnified count under the one-digit rule (1236, 209, 820). No reading review recorded yet: for the reviewer."
    }
   ],
   "key_file": [
    "code_table.tsv",
-   "key_we028_no88.tsv"
+   "key_we028_no88.tsv",
+   "key_we028_no85.tsv"
   ]
  }
 }

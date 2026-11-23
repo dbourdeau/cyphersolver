@@ -63,7 +63,7 @@
   <p class="sub">Adams wrote in his own legation code, not Armstrong&rsquo;s; its key was rebuilt from the State Department clerk&rsquo;s decodes and Ford&rsquo;s printed decipherments, and the passages Ford left out of despatch No. 88 now decrypt: by the word count of 14 November 2026, 97 of 100 words of the nine lines and 164 of 177 of the remainder.</p>
   <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-10-15">15 October 2026</time> &middot; updated <time datetime="2026-11-14">14 November 2026</time></p>
 <p class="outcome">Method: <a href="glossary.html#adjpt" title="key recovered based on adjacent plaintext">key from adjacent plaintext</a> &middot; Extent: partial (97% of cipher tokens valued, not the word count) &middot; <a href="atlas.html#slug=jqa">On the map</a></p><!-- /outcome -->
-<p class="credits">Credits &middot; <a href="contributors.html#dudout">Brice Dudout</a> (verification) &middot; <a href="contributors.html#ajbeling">Andrew Beling</a> (transcription) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used) &middot; <a href="contributors.html#ford">Worthington Chauncey Ford</a> (key or decipherment used)</p><!-- /credits -->
+<p class="credits">Credits &middot; <a href="contributors.html#ajbeling">Andrew Beling</a> (transcription, solution) &middot; <a href="contributors.html#dudout">Brice Dudout</a> (verification) &middot; <a href="contributors.html#contemporary">Contemporary key or decipherment</a> (key or decipherment used) &middot; <a href="contributors.html#ford">Worthington Chauncey Ford</a> (key or decipherment used)</p><!-- /credits -->
 <div class="seal partial" aria-hidden="true"><span class="long">adjacent plaintext</span></div>
 </section>
 
@@ -464,7 +464,164 @@ PR #596, before the image check and the one-digit rule, 161 of 177 = 0.910.
   558 thus fits.
 - [rather]: the image shows 927 (sheet: oud); 727 is rather, and 7/9 are confused in this hand. JQA wrote only em
   (539) for empire.</pre></details>
-<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/code_table.tsv">code_table.tsv</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/key_we028_no88.tsv">key_we028_no88.tsv</a></p>
+<h3>No. 85, 27 May 1812: the two lines Ford printed as not decyphered (frame 0197)</h3>
+<p>After reporting that the English negotiator Thornton has probably pledged his government&#x27;s consent to the neutrality of Sweden, Adams adds in code that there is some uncertainty how far the neutral intentions and expectations of Sweden herself extend.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/no85_two_lines.txt">no85_two_lines.txt</a></p><pre translate="no">663 1186 178 1123 1018 250 479 1021 1364 776 199 313 1385
+435 1426 1378 668 295 518 1369 1576 39 177 1081 298 548</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/texts/no85_two_lines_decryption.md">no85_two_lines_decryption.md</a></p><pre translate="no"># No. 85, 27 May 1812: the &quot;two lines of cypher not decyphered&quot; (no85_two_lines.txt), decryption
+
+NARA M35 reel 3 frame 0197, left leaf (duplicate of No. 85), lines 1-2 of the code: 26 groups with nothing written over them; Ford 4:339 &quot;[Here two lines of cypher not decyphered]&quot;. Transcription: two blind readings merged, 21 Nov 2026 (`beling/no85_no74_2026-11-21/`). First block: the State Department code sheet (NARA M97 roll 13 frames 1056-1057, Weber WE028; `key_we028_no85.tsv`) applied group by group, unedited: one value per group in the order of the transcription, `{n}` = no value (a number not on the sheet, or digits lost). Second block, for comparison: `python render.py no85_two_lines.txt`, the rebuilt `code_table.tsv` (? = grade M or I value, CAPS X = digit lost). Status and note for every group: `we028_no85.tsv`. The reading follows the sheet.
+
+## Group by group (code sheet)
+
+```
+you will here per ceive some un cer tain ty how far the
+neutral in tention and exp ect tation of Sweden her self ext end
+```
+
+## Group by group (render.py, code_table.tsv)
+
+```
+you will here per ceived some un cer tain ty how far the
+neutra in tentions and ex rect tation of Sweden her self ex end
+26 of 26   by grade: H=18 C=8 M=0 I=0
+```</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/texts/no85_two_lines_reading.md">no85_two_lines_reading.md</a></p><pre translate="no">&lt;!-- Reading of the first undeciphered passage of No. 85 (27 May 1812), written out 21 Nov 2026 (Andrew Beling with AI agents) from texts/no85_two_lines_decryption.md: syllable groups joined into words. Letters in square brackets are supplied from the plural mark on the film. Nothing else is supplied. --&gt;
+
+# J. Q. Adams, No. 85, 27 May 1812: the two lines the Department did not decipher
+
+## Reading
+
+You will here perceive some uncertainty how far the neutral intention[s] and expectation[s] of Sweden herself extend.
+
+## Count (words, 21 Nov 2026)
+
+17 words, 15 read = 0.882 (README Conventions, 16 Nov 2026: a word with a supplied or emended letter counts as a hole). Holes: intention[s] and expectation[s], whose s is supplied from the plural mark. Read under the short-text floor (README Conventions, 19 Nov 2026: fewer than 40 cipher words, at most 2 holes): 15 of 17, 2 holes.
+
+- intention[s], expectation[s] (two holes: the s is supplied): 1378 and 1369 are each followed on the film by a small raised circle, the plural mark of this code (on frame 0196 the clerk writes &quot;intentions&quot; over 1378 with the same mark). The transcription file does not carry the mark; `we028_no85.tsv` does.
+- expectation: 295 exp, 518 ect, 1369 tation (the t is doubled by the syllables).
+- extend: 298 ext, 548 end. One of the two blind transcribers read the last group 528 (ei); the other, the verifier&#x27;s second look and a fourth look at an enlargement read 548 (the open-topped 4 of this hand).
+
+## Where it stands in the despatch
+
+Clear text before it (Ford 4:339): &quot;I mentioned in my last letter my doubts of what England will understand by this neutrality.&quot; Clear text after it: &quot;If the English Regent&#x27;s new Proclamation respecting the Orders in Council is to elucidate the English meaning of neutrality,&quot; and then the second undeciphered passage (texts/no85_three_lines_reading.md).</pre></details>
+<h3>No. 85, 27 May 1812: the three lines Ford printed as not decyphered (frame 0197) <span class="st partial">read in part</span></h3>
+<p>Adams&#x27;s comment on Swedish neutrality: if the Regent&#x27;s new proclamation on the Orders in Council shows what England means by neutrality, and Sweden&#x27;s meaning of it is shown by her hope of being indemnified with Norway for the loss of Finland, the roots of that neutrality are not very deep.</p>
+<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (83% here); the holes are marked in the reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/no85_three_lines.txt">no85_three_lines.txt</a></p><pre translate="no">668
+1385 398 520 1438 630 1429 1576 1440 1436 569 1310 289 116x 520
+792 1385 195 1576 1310 1429 1436 821 439 335 1626 357 1162 9x
+1385 891 1576 341 1453 416</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/texts/no85_three_lines_decryption.md">no85_three_lines_decryption.md</a></p><pre translate="no"># No. 85, 27 May 1812: the &quot;three lines of cypher not decyphered&quot; (no85_three_lines.txt), decryption
+
+NARA M35 reel 3 frame 0197, left leaf: one group at the end of the line &quot;...the English meaning of neutrality,&quot; and the three lines after it, 35 groups, two of them cut by the binding gutter (116x has its last figure blotted, 9x is cut); Ford 4:339 &quot;[here three lines of cypher not decyphered]&quot;. Transcription: two blind readings merged, 21 Nov 2026 (`beling/no85_no74_2026-11-21/`). First block: the State Department code sheet (NARA M97 roll 13 frames 1056-1057, Weber WE028; `key_we028_no85.tsv`) applied group by group, unedited: one value per group in the order of the transcription, `{n}` = no value (a number not on the sheet, or digits lost). Second block, for comparison: `python render.py no85_three_lines.txt`, the rebuilt `code_table.tsv` (? = grade M or I value, CAPS X = digit lost). Status and note for every group: `we028_no85.tsv`. The reading follows the sheet.
+
+## Group by group (code sheet)
+
+```
+and
+the sw ed ish mean ing of it is to be ex {116x} ed
+by the hope of be ing is dem ni fied {1626} nor way {9x}
+the lose of fin la nd
+```
+
+## Group by group (render.py, code_table.tsv)
+
+```
+and
+the sw ed ish mean ing of it is to be ex 116X ed
+by the hope of be ing is dem? ni fied? {1626} nor without? 9X
+the sum of Fin la nd?
+32 of 33   by grade: H=25 C=3 M=3 I=1
+```</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/texts/no85_three_lines_reading.md">no85_three_lines_reading.md</a></p><pre translate="no">&lt;!-- Reading of the second undeciphered passage of No. 85 (27 May 1812), written out 21 Nov 2026 (Andrew Beling with AI agents) from texts/no85_three_lines_decryption.md: syllable groups joined into words. [?word] = a word supplied from the sense (a hole); {+x} = a group one digit away from the value the word wants, read under the one-digit rule; letters in square brackets are supplied. --&gt;
+
+# J. Q. Adams, No. 85, 27 May 1812: the three lines the Department did not decipher
+
+## Reading
+
+… and the Swedish meaning of it is to be [?expounded] by the hope of being {+in}demnified [?in] Norway [?for] the los[s] of Finland …
+
+## Count (words, 21 Nov 2026)
+
+23 words, 19 read = 0.826 (README Conventions, 16 Nov 2026: a word with a supplied or emended letter counts as a hole). Holes: [?expounded], [?in], [?for], los[s]. Read in part.
+
+- [?expounded]: 289 ex, **116x**, 520 ed. The first three figures, 116, are clear to three readers; the last is blotted and crossed by a descender from the line above (read 1164 or 1168: we, went, no sense). 1160 pound changes only the blotted figure and answers &quot;elucidate&quot; in the clause before; 1138 plain (ex-plain-ed, the verifier&#x27;s suggestion) changes the third figure. The sense is the same either way; the word is counted as a hole.
+- {+in}demnified: 1310 be, 1429 ing, **1436** (sheet: is) for 1426 in, 821 dem, 439 ni, 335 fied. 1436 is clearly written (three readers and a fourth look). In the same word on frame 0196 Adams wrote 1426 (no85_foot.txt line 3). One-digit rule.
+- [?in]: **1626**, clearly written (three readers and a fourth look; the verifier adds that the second figure is an open loop that may be this hand&#x27;s 4). The code ends at 1600. 1426 in is one digit away, but the group is a whole word, so it stays a hole.
+- [?for]: **9x**, a 9 and the start of an 8 or a 4, then the binding gutter. 981 for fits what shows.
+- los[s] (a hole: the s is supplied): 891 is lose on the sheet, which has no &quot;loss&quot;; the middle figure is blotted (alternatives given by the readers: 89, 841, neither with sense) and a stroke runs under the group. The same word, cut by the gutter after 89, stands in &quot;for the los[s] of this province&quot; on frame 0196.
+- Swedish: 398 sw, 520 ed, 1438 ish. One transcriber read 298 (ext); the other gave 398 as an alternative and the verifier read 398; the 9 and 8 are in fainter ink.
+- and: 668 stands at the binding gutter at the end of the clear line, the 8 touching it.
+
+## Where it stands in the despatch
+
+Clear text before it (Ford 4:339): &quot;If the English Regent&#x27;s new Proclamation respecting the Orders in Council is to elucidate the English meaning of neutrality,&quot; and after it: &quot;the roots of that neutrality are not very profound.&quot;</pre></details>
+<h3>No. 85, 27 May 1812: the six lines after &#x27;Dominions&#x27; that the clerk left bare (frame 0196) <span class="st partial">read in part</span></h3>
+<p>The end of the Swedish chargé&#x27;s assurances to the Emperor Alexander: Finland is separated from the rest of Sweden by a wide gulph, and for its loss Sweden might hope to be indemnified eventually by the acquisition of Norway; the Emperor assured him he would have no objections and make no opposition.</p>
+<p class="muted">Builds coherent sentences, but under the read bar of 95% of words read as sense (91% here); the holes are marked in the reading.</p>
+<details class="ftext"><summary>Transcription</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/no85_foot.txt">no85_foot.txt</a></p><pre translate="no">668 1075 1123 863 792 249 1184 809 668 289 1375 23x
+1501 1236 1452 1127 999 1385 1461 1576 39 790 1384 981 1385 89x
+1576 1399 209 471 1016 49 646 1124 195 569 1501 1426 820 439
+335 283 454 897 792 1385 1507 709 1098 565 1576 357 1162
+569 1176 1385 16 692 395 520 182 1384 169 90 1259 352 81 668
+1523 1176 169 90 611 352 83</pre></details>
+<details class="ftext"><summary>Decryption</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/texts/no85_foot_decryption.md">no85_foot_decryption.md</a></p><pre translate="no"># No. 85, 27 May 1812: the six lines after &quot;Dominions&quot; that the clerk left bare (no85_foot.txt), decryption
+
+NARA M35 reel 3 frame 0196, left leaf, from the fourth group of line 11 of the code block to its end (line 16): 75 groups, two cut by the gutter. The clerk&#x27;s interlinear words stop at &quot;Dominions&quot; (854 649 1433, Do-min-ion-s); Ford 4:338 ends the passage there without a note. A first table reading of these lines is in `ford1812b_notes.md` (22 Sept 2026). Transcription: two blind readings merged, 21 Nov 2026 (`beling/no85_no74_2026-11-21/`). First block: the State Department code sheet (NARA M97 roll 13 frames 1056-1057, Weber WE028; `key_we028_no85.tsv`) applied group by group, unedited: one value per group in the order of the transcription, `{n}` = no value (a number not on the sheet, or digits lost). Second block, for comparison: `python render.py no85_foot.txt`, the rebuilt `code_table.tsv` (? = grade M or I value, CAPS X = digit lost). Status and note for every group: `we028_no85.tsv`. The reading follows the sheet.
+
+## Group by group (code sheet)
+
+```
+and se per ated by so wi de and ex ten {23x}
+A ground L ph from the rest of Sweden but that for the {89x}
+of this pres vin ce United States might perhaps hope to A in delegate ni
+fied event val ly by the ac qui si tion of nor way
+to which the emperor as sur ed him that he should have no objection and
+against which he should make no opposition
+```
+
+## Group by group (render.py, code_table.tsv)
+
+```
+and se? per you by so wi? de and ex ten 23X
+a round? ll ph? from the rest of Sweden but that for the 89X
+of this pres vin ce unitedstates might perhaps hope to a in {820} ni
+fied? event ual? ly by the ac quite si tion of nor without?
+to which the emperor as sur ed him that he should have no objection and
+against which he should make no opposition
+72 of 73   by grade: H=59 C=6 M=7 I=0
+```</pre></details>
+<details class="ftext"><summary>Reading</summary><p class="muted"><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/texts/no85_foot_reading.md">no85_foot_reading.md</a></p><pre translate="no">&lt;!-- Reading of the six lines of No. 85 (27 May 1812) after the clerk&#x27;s last interlinear word, written out 21 Nov 2026 (Andrew Beling with AI agents) from texts/no85_foot_decryption.md: syllable groups joined into words. [?word] = a word supplied from the sense (a hole); {+x} = a group one digit away from the value the word wants, read under the one-digit rule; letters in square brackets are supplied. A first reading of these lines, made with the rebuilt table on 22 Sept 2026, is in ford1812b_notes.md; this one uses the code sheet and agrees with it. --&gt;
+
+# J. Q. Adams, No. 85, 27 May 1812: the six lines after &quot;Dominions&quot;
+
+## Reading
+
+… and seperated by so wide and [?extensive] a {+gu}lph from the rest of Sweden — but that for the [?loss] of this {+pro}vince [?Sweden] might perhaps hope to [?be] in{+dem}nified eventually by the acquisition of Norway . . . to which the Emperor assured him that he should have no objection[s], and against which he should make no opposition.
+
+## Count (words, 21 Nov 2026)
+
+55 words, 50 read = 0.909 (README Conventions, 16 Nov 2026: a word with a supplied or emended letter counts as a hole). Holes: [?extensive], [?loss], [?Sweden], [?be], objection[s]. Read in part.
+
+- [?extensive]: 289 ex, 1375 ten, then **23x** cut by the binding gutter; 239 sive would finish the word.
+- {+gu}lph: **1236** (sheet: ground) for 1238 gu, 1452 l, 1127 ph. 1236 in both blind transcriptions and in the September transcription. 1238 is the group written for gu in con-ti-gu-ous four lines above. One-digit rule.
+- [?loss]: **89x**, cut by the gutter after 89, a small cross under it. 891 (sheet: lose) stands whole in &quot;the los[s] of Finland&quot; on frame 0197.
+- {+pro}vince: **209** (sheet: pres) for 219 pro, 471 vin, 1016 ce. 209 in all three transcriptions. One-digit rule.
+- [?Sweden]: **49** (sheet: United States) in all three transcriptions, which gives no sense; 39 Sweden, one digit away, stands in the line above. A whole word, so it stays a hole. The September reading guessed &quot;they&quot;.
+- [?be]: **1501** (sheet: A) in all three transcriptions and on an enlargement; the sense wants &quot;be&quot; (1310). No one-step slip explains it.
+- in{+dem}nified: 1426 in, **820** (sheet: delegate) for 821 dem, 439 ni, 335 fied. 820 in all three transcriptions and on an enlargement; frame 0197 has 821 in the same word. One-digit rule.
+- eventually: 283 event, 454 val, 897 ly (u and v are one letter on the sheet).
+- acquisition: 1507 ac, 709 qui, 1098 si, 565 tion. One transcriber read 585 (lay), the other 585 or 565; the September transcription and an enlargement have 565.
+- objection[s] (a hole: the s is supplied): 81 is followed on the film by the raised circle, the plural mark.
+- The three spaced dots after &quot;Norway&quot; fill the end of a line on the film; they are not a word (the September reading has &quot;without ...&quot; there).
+
+Five numbers in six lines stand on the film and give no sense as written, four of them one step from a number that does. This copy is the duplicate; whether the slips are Adams&#x27;s or a copyist&#x27;s the film does not show.
+
+## Where it stands in the despatch
+
+It continues the passage Ford prints at 4:338, which ends &quot;so contiguous to the rest of the Russian dominions.&quot; (the Swedish chargé d&#x27;affaires&#x27;s assurances to the Emperor Alexander about Finland).</pre></details>
+<p class="ftext">Key: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/code_table.tsv">code_table.tsv</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/key_we028_no88.tsv">key_we028_no88.tsv</a>, <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/jqa/key_we028_no85.tsv">key_we028_no85.tsv</a></p>
 <!-- texts:end -->
 <!-- replay:start -->
 <figure class="sreplay" data-src="steps/jqa.json"></figure>
@@ -491,13 +648,13 @@ the sense audit (<code translate="no">sense88.tsv</code>, <code translate="no">m
 
 <!-- cite:start -->
 <details class="cite" id="cite"><summary>Cite this page</summary>
-<p class="citetext">Daniel Bourdeau, Brice Dudout and Andrew Beling, “John Quincy Adams at St Petersburg: despatch No. 88, 25 June 1812”, Cyphersolver, posted 15 October 2026, updated 14 November 2026, repository commit 482b32ddbb, https://cyphersolver.com/jqa.html.</p>
-<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, Brice Dudout and Andrew Beling, “John Quincy Adams at St Petersburg: despatch No. 88, 25 June 1812”, Cyphersolver, posted 15 October 2026, updated 14 November 2026, repository commit 482b32ddbb, https://cyphersolver.com/jqa.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-jqa,
-  author = {Daniel Bourdeau and Brice Dudout and Andrew Beling},
+<p class="citetext">Daniel Bourdeau, Andrew Beling and Brice Dudout, “John Quincy Adams at St Petersburg: despatch No. 88, 25 June 1812”, Cyphersolver, posted 15 October 2026, updated 14 November 2026, repository commit 31295a96a3, https://cyphersolver.com/jqa.html.</p>
+<p class="citebtns"><button type="button" data-copy="Daniel Bourdeau, Andrew Beling and Brice Dudout, “John Quincy Adams at St Petersburg: despatch No. 88, 25 June 1812”, Cyphersolver, posted 15 October 2026, updated 14 November 2026, repository commit 31295a96a3, https://cyphersolver.com/jqa.html.">Copy citation</button><button type="button" data-copy="@misc{cyphersolver-jqa,
+  author = {Daniel Bourdeau and Andrew Beling and Brice Dudout},
   title = {John Quincy Adams at St Petersburg: despatch No. 88, 25 June 1812},
   year = {2026},
   howpublished = {Cyphersolver},
-  note = {posted 15 October 2026, updated 14 November 2026, repository commit 482b32ddbb},
+  note = {posted 15 October 2026, updated 14 November 2026, repository commit 31295a96a3},
   url = {https://cyphersolver.com/jqa.html}
 }">Copy BibTeX</button></p>
 </details>

@@ -760,6 +760,7 @@ def glossary_html():
         '<h2 id="methods">Methods</h2>\n<p>The first three are cryptanalysis: the key was recovered here. The next three '
         'applied a key or decipherment that already existed; the work was transcription and decipherment. Whether someone had '
         'solved an item before, and when that was found, is stated on each write-up.</p>\n'
+        '<p><a href="experiments/blind-340/index.html">Try a blind ciphertext-only experiment</a> with three new 340-symbol grids and a verified decoder.</p>\n'
         f'<dl class="gloss">\n{meth}</dl>\n\n'
         '<h2 id="extent-complete-or-partial">Extent</h2>\n<p><b>Complete</b>: at least 95% of the cipher symbols give sense, '
         'every document is covered, and what stays open is scattered code groups or pieces blocked from outside. '

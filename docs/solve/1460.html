@@ -48,7 +48,7 @@
 </div>
 
 <section class="hero solve">
-  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1460 · class A · priority 6.5 · open</p>
+  <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. 1460 · class A · priority 6.5 · in progress</p>
   <h1>Porfirio Díaz (and his secretary Rafael Chousal) → Gen. Bernardo Reyes: about 45 cipher telegrams the catalogue marks "sin traducción"</h1>
   <p class="sub">Díaz's direct orders to his northern proconsul across 25 years (Coahuila 1885-86, the Garza revolt 1891-92, the Reyes crisis of July 1909); the untranslated ones are exactly those whose content is unknown.</p>
   <dl class="facts">
@@ -62,7 +62,7 @@
 </section>
 
 <main>
-<div class="callout blue"><p><strong>Being worked on.</strong> Jacob Houtrouw announced work on this cipher on 2026-11-19; the notice stands until 2026-12-03. It is there to avoid double work and holds nothing back: a verified result from anyone is still merged and credited.</p></div>
+<div class="callout blue"><p><strong>In progress here.</strong> <a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/diaz1886/NOTES.md" rel="noopener">targets/diaz1886</a> is working on this cipher (status: in progress). Read its NOTES.md before you start, and hand it to your agent with this page: it records what was transcribed, tried and ruled out, and the next step.</p></div>
 <h2>Hand this page to your AI agent</h2>
 <p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
 <p class="urlline">https://cyphersolver.com/solve/1460.html</p>
@@ -71,6 +71,10 @@
 This page: https://cyphersolver.com/solve/1460.html
 
 You are helping a public research project read historical cipher letters that nobody has read yet.
+
+START HERE: the project is already working on this cipher. Read these notes before anything else and
+build on them; they record what was transcribed, tried and ruled out, and the next step:
+  https://github.com/dbourdeau/cyphersolver/blob/main/targets/diaz1886/NOTES.md  (status: in progress)
 
 THE CIPHER
   Title:          Porfirio Díaz (and his secretary Rafael Chousal) → Gen. Bernardo Reyes: about 45 cipher telegrams the catalogue marks "sin traducción"
@@ -87,19 +91,20 @@ THE CIPHER
 
 WHAT IS KNOWN
   Status: CEHM records read "Sin traducción" / "[Legajo sin traducción]" with type "Telegrama cifrado"; hundreds of sibling Díaz-Reyes cipher telegrams in the same fondo carry summaries of their content, so a key can be rebuilt from translated pairs. Ángel &amp; Morales-Luna 2008 print a Díaz substitution table (Díaz-Bravo) from the Porfirio Díaz archive (Universidad Iberoamericana).
-  Outcome so far: not yet attempted by the project
+  Outcome so far: In progress here, in targets/diaz1886/.
   Prior-art check: open as far as checked (28 Oct 2026: known.py, Narváez articles, Ángel &amp; Morales-Luna 2008); Narváez 2019 book not seen.
   Check first: View a translated and an untranslated telegram of the same month at CEHM (e.g. DLI.5.907.1 against its Oct 1886 neighbours); check whether the Díaz telegrams use the same table as the Díaz archive at UIA; Narváez 2019 ch. VI.
   Class A: a sibling letter with a decipherment is in the same volume or series, so matching it is the first move.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/diaz1886/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/diaz1886/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/diaz1886/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -139,7 +144,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/diaz1886/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+1460&amp;target=catalogue+1460
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -158,9 +163,9 @@ If you cannot open issues or pull requests, write this report for your human to 
 
 
 <p><b>Status and prior art.</b> CEHM records read "Sin traducción" / "[Legajo sin traducción]" with type "Telegrama cifrado"; hundreds of sibling Díaz-Reyes cipher telegrams in the same fondo carry summaries of their content, so a key can be rebuilt from translated pairs. Ángel &amp; Morales-Luna 2008 print a Díaz substitution table (Díaz-Bravo) from the Porfirio Díaz archive (Universidad Iberoamericana).</p>
-<p><b>Outcome so far.</b> Not yet attempted by the project. Prior-art check: open as far as checked (28 Oct 2026: known.py, Narváez articles, Ángel &amp; Morales-Luna 2008); Narváez 2019 book not seen..</p>
+<p><b>Outcome so far.</b> In progress here, in targets/diaz1886/. Prior-art check: open as far as checked (28 Oct 2026: known.py, Narváez articles, Ángel &amp; Morales-Luna 2008); Narváez 2019 book not seen..</p>
 <p><b>Check first.</b> View a translated and an untranslated telegram of the same month at CEHM (e.g. DLI.5.907.1 against its Oct 1886 neighbours); check whether the Díaz telegrams use the same table as the Díaz archive at UIA; Narváez 2019 ch. VI.</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/diaz1886/NOTES.md" rel="noopener">targets/diaz1886/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/diaz1886" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -183,7 +188,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=a7fa3a33"></script>
+<script src="catalogue-data.js?v=be97dd4d"></script>
 <script src="site.js?v=8e3ff372"></script>
 </body>
 </html>

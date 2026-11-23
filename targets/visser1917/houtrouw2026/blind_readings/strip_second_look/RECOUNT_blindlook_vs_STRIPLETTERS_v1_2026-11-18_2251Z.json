@@ -1,0 +1,399 @@
+{
+ "what": "a second count of the blind look against STRIPLETTERS_v1; decides nothing",
+ "table_sha256": "2bf9d77a875bb568aba12f13ea5c3df62ad023ca778be7c78bcc434b8f1d287b",
+ "letters_sha256": "9e01d64e6e901a2892976bd9418f8aefdc09769c1e82a7d2b3df719b0dcadc4c",
+ "counts": {
+  "chat sure": 9,
+  "chat by order": 14,
+  "chat not read": 4,
+  "chat sure: blind same first letter, marked sure": [
+   4,
+   11,
+   16,
+   23,
+   27
+  ],
+  "chat sure: blind same first letter, not marked sure": [],
+  "chat sure: blind differs": [
+   12,
+   13,
+   22,
+   24
+  ],
+  "chat by order: blind read": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   17,
+   19,
+   21
+  ],
+  "chat by order: blind not read": [
+   14,
+   18
+  ],
+  "chat by order: blind same first letter": [
+   21
+  ],
+  "chat by order: chat letter among blind alternates only": [
+   1
+  ],
+  "chat by order: blind read, differs, chat letter not among its letters": [
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   17,
+   19
+  ],
+  "chat not read: blind not read either": [
+   15,
+   20,
+   25
+  ],
+  "chat not read: blind read": [
+   26
+  ],
+  "blind marked sure (any part)": [
+   4,
+   11,
+   13,
+   16,
+   23,
+   27
+  ]
+ },
+ "rows": [
+  {
+   "place": 1,
+   "chat_letter": "a",
+   "chat_grade": "by order",
+   "blind_cell": "R? (A?)",
+   "blind_first": "r",
+   "blind_alts": [
+    "a"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": true
+  },
+  {
+   "place": 2,
+   "chat_letter": "b",
+   "chat_grade": "by order",
+   "blind_cell": "L? (U?)",
+   "blind_first": "l",
+   "blind_alts": [
+    "u"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 3,
+   "chat_letter": "c",
+   "chat_grade": "by order",
+   "blind_cell": "u? (v?)",
+   "blind_first": "u",
+   "blind_alts": [
+    "v"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 4,
+   "chat_letter": "d",
+   "chat_grade": "sure",
+   "blind_cell": "d",
+   "blind_first": "d",
+   "blind_alts": [],
+   "blind_sure": "yes",
+   "first_agrees": true,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 5,
+   "chat_letter": "e",
+   "chat_grade": "by order",
+   "blind_cell": "d? (a?)",
+   "blind_first": "d",
+   "blind_alts": [
+    "a"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 6,
+   "chat_letter": "f",
+   "chat_grade": "by order",
+   "blind_cell": "t? (x?)",
+   "blind_first": "t",
+   "blind_alts": [
+    "x"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 7,
+   "chat_letter": "g",
+   "chat_grade": "by order",
+   "blind_cell": "q? (ø?)",
+   "blind_first": "q",
+   "blind_alts": [
+    "ø"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 8,
+   "chat_letter": "h",
+   "chat_grade": "by order",
+   "blind_cell": "A?",
+   "blind_first": "a",
+   "blind_alts": [],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 9,
+   "chat_letter": "i",
+   "chat_grade": "by order",
+   "blind_cell": "A?",
+   "blind_first": "a",
+   "blind_alts": [],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 10,
+   "chat_letter": "j",
+   "chat_grade": "by order",
+   "blind_cell": "y? (x?)",
+   "blind_first": "y",
+   "blind_alts": [
+    "x"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 11,
+   "chat_letter": "k",
+   "chat_grade": "sure",
+   "blind_cell": "K",
+   "blind_first": "k",
+   "blind_alts": [],
+   "blind_sure": "yes",
+   "first_agrees": true,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 12,
+   "chat_letter": "l",
+   "chat_grade": "sure",
+   "blind_cell": "V? (U?)",
+   "blind_first": "v",
+   "blind_alts": [
+    "u"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 13,
+   "chat_letter": "ll",
+   "chat_grade": "sure",
+   "blind_cell": "L + V?",
+   "blind_first": "lv",
+   "blind_alts": [],
+   "blind_sure": "L yes, V no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 14,
+   "chat_letter": "m",
+   "chat_grade": "by order",
+   "blind_cell": "not read",
+   "blind_first": null,
+   "blind_alts": [],
+   "blind_sure": "—",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 15,
+   "chat_letter": null,
+   "chat_grade": "not read",
+   "blind_cell": "not read",
+   "blind_first": null,
+   "blind_alts": [],
+   "blind_sure": "—",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 16,
+   "chat_letter": "o",
+   "chat_grade": "sure",
+   "blind_cell": "O",
+   "blind_first": "o",
+   "blind_alts": [],
+   "blind_sure": "yes",
+   "first_agrees": true,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 17,
+   "chat_letter": "p",
+   "chat_grade": "by order",
+   "blind_cell": "t?",
+   "blind_first": "t",
+   "blind_alts": [],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 18,
+   "chat_letter": "q",
+   "chat_grade": "by order",
+   "blind_cell": "not read",
+   "blind_first": null,
+   "blind_alts": [],
+   "blind_sure": "—",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 19,
+   "chat_letter": "r",
+   "chat_grade": "by order",
+   "blind_cell": "T? (Y?)",
+   "blind_first": "t",
+   "blind_alts": [
+    "y"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 20,
+   "chat_letter": null,
+   "chat_grade": "not read",
+   "blind_cell": "not read",
+   "blind_first": null,
+   "blind_alts": [],
+   "blind_sure": "—",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 21,
+   "chat_letter": "t",
+   "chat_grade": "by order",
+   "blind_cell": "t? (E?)",
+   "blind_first": "t",
+   "blind_alts": [
+    "e"
+   ],
+   "blind_sure": "no",
+   "first_agrees": true,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 22,
+   "chat_letter": "u",
+   "chat_grade": "sure",
+   "blind_cell": "z + l?",
+   "blind_first": "zl",
+   "blind_alts": [],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 23,
+   "chat_letter": "x",
+   "chat_grade": "sure",
+   "blind_cell": "X",
+   "blind_first": "x",
+   "blind_alts": [],
+   "blind_sure": "yes",
+   "first_agrees": true,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 24,
+   "chat_letter": "y",
+   "chat_grade": "sure",
+   "blind_cell": "d? (&?)",
+   "blind_first": "d",
+   "blind_alts": [
+    "&"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 25,
+   "chat_letter": null,
+   "chat_grade": "not read",
+   "blind_cell": "not read",
+   "blind_first": null,
+   "blind_alts": [],
+   "blind_sure": "—",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 26,
+   "chat_letter": null,
+   "chat_grade": "not read",
+   "blind_cell": "n? (m?)",
+   "blind_first": "n",
+   "blind_alts": [
+    "m"
+   ],
+   "blind_sure": "no",
+   "first_agrees": false,
+   "chat_letter_among_alts": false
+  },
+  {
+   "place": 27,
+   "chat_letter": "v",
+   "chat_grade": "sure",
+   "blind_cell": "V",
+   "blind_first": "v",
+   "blind_alts": [],
+   "blind_sure": "yes",
+   "first_agrees": true,
+   "chat_letter_among_alts": false
+  }
+ ]
+}
