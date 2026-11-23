@@ -14,11 +14,14 @@ Status: read in part (Andrew Beling, with AI agents, 23 Nov 2026). 26 of 37 word
 ## System and key
 
 - **Simple substitution** with a reciprocal alphabet (`key.tsv`): A-X, B-U, C-S, D-Q, E-P, F-M, G-L, I-Z, N-W, O-V, R-Y, and T stands for itself.
-- **How the key was made: the keyword alphabet TIRANO, folded.** Write TIRANO and then the rest of the alphabet in order, TIRANOBCDEFGHJKLMPQSUVWXYZ (26 letters, no Ñ), round a circle, and pair each letter with the one opposite it across the line through T: I-Z, R-Y, A-X, N-W, O-V, B-U, C-S, D-Q, E-P, F-M, G-L, H-K, with T and J standing for themselves. This gives all 21 observed values exactly (`work/scripts/fold_check.py`).
-  - It was first noticed by eye; a search under a frozen plan then checked it (`work/runs/fold_test.json`): about 23,000 keywords (corpus words, the 100 words of the consular list in fig. 9, the words of Narváez ch. IX, MURCIELAGO and the number words), 26- and 27-letter alphabets, folds about every axis and two-row pairings at every offset. TIRANO folded through T is the only fit. Controls: 50 of 50 planted fold keys were found; 0 of 3,000 random reciprocal keys fitted any candidate.
-  - It predicts the cipher letters that never occur: H = k, K = h, J = j (I = z and A = x also follow from the pairs).
+- **How the key was made: the keyword alphabet TIRANO, folded.** Write TIRANO and then the rest of the alphabet in order, TIRANOBCDEFGHJKLMPQSUVWXYZ (26 letters, no Ñ), round a circle, and pair each letter with the one opposite it across the line through T: I-Z, R-Y, A-X, N-W, O-V, B-U, C-S, D-Q, E-P, F-M, G-L, H-K, with T and J standing for themselves. This reproduces `key.tsv` exactly (`work/scripts/fold_check.py`).
+  - **What the telegram itself fixes:** 11 pairs (B-U, C-S, D-Q, E-P, F-M, G-L, N-W, O-V, R-Y, X-A, Z-I) and T standing for itself: 12 independent facts. (The "21 observed values" of `key.tsv` count both sides of a pair, and D, M and N were set earlier by the pairing, not by the text.)
+  - **Order of work, plainly:** TIRANO was noticed by eye in the recovered pairs **before** the plan for the search was written; the search under the frozen plan (SHA-256 f6372af4..., written 10:23 EST, run 10:24-10:25) is a confirmation and a check for rivals, not a discovery. The key values themselves were fixed at 00:42, ten hours earlier, and were not changed to fit TIRANO.
+  - **The search** (`work/runs/fold_test.json`): about 23,000 keywords (corpus words, the 100 words of the consular list in fig. 9, the words of our OCR of Narváez ch. IX, MURCIELAGO and the number words), 26- and 27-letter alphabets, folds about every axis and two-row pairings at every offset, 3.7 million distinct keys. TIRANO folded through T is the only fit.
+  - **What the controls show:** the positive control (50 of 50 planted fold keys found) only checks that the search code works. The random control (0 of 3,000 random reciprocal keys fitted) only bounds the false-fit rate at about 0.1%. The chance that a random reciprocal key matches a given candidate on these 12 facts is about 3 in 10^14, so about 1 in 10 million over the whole search. An independent AI reviewer (a model check, not a person's) ran a wider search of its own, adding columnar-transposed keyword alphabets (11.7 million keys), and also found one fit, TIRANO.
+  - **Predictions, not observations:** cipher A, H, I, J and K never occur in the telegram. A = x and I = z follow from the pairs; H = k, K = h and J = j come from the construction alone, with no check in this text.
   - TIRANO is not word 31 of the printed list (fig. 9, which runs alphabetically from Cabillo; no. 31 is Escultor) and does not appear in it. How "clave treintaiuno" points to TIRANO is not known: perhaps word 31 of the second, unprinted list.
-  - The same construction underlies the 1915 "Clave Garduño" printed by Narváez (p. 311): it is the 27-letter keyword alphabet GARDUÑO folded the same way. So this telegram's key belongs to a known family of Mexican consular keys: a keyword, folded. The book's table is not reproduced here.
+  - The same construction underlies the 1915 "Clave Garduño" printed by Narváez (p. 311): it is the 27-letter keyword alphabet GARDUÑO (the table's own name) folded the same way; all 13 pairs and the fixed J agree. This rests on one transcription of that table (by an AI reviewer from our photograph), which the exact fit supports. As far as our OCR of pp. 311-312 shows, the book does not name the keyword, so this observation appears to be new. The book's table is not reproduced here.
 - **Unseen letters:** cipher A, H, I, J and K do not occur; their values above come only from the construction.
 - **Evidence:**
   - The index of coincidence is 0.071, flat over periods 1-12. That is one alphabet, not a keyword run through the Murciélago square named in the heading.
@@ -58,7 +61,7 @@ All work was done on 23 Nov 2026 by AI agents (Claude Opus 5.5) run by Andrew Be
 7. **Model reading by an independent reviewer** (`review/`). Before seeing this work, a separate AI agent made its own blind transcription and solved it with its own code (`review/my_solve.py`) and its own corpus (Spanish Wikipedia extracts, not committed). It got the same paired key and the same Spanish sentence, word for word (`review/independent_solution.txt`). It also re-ran the scripts in `work/scripts/` and reproduced every run file byte for byte. This is a model reading, not a person's.
 
 8. **Key construction** (later on 23 Nov): see "How the key was made" above. Plan hashed before the search; the plan and search script stay outside the package because they also contain tables printed in the book; the summary with controls is `work/runs/fold_test.json`.
-9. **Fourth blind reading of the doubtful letters** (later on 23 Nov, `review/blind_reading_doubtful_letters.md`): a helper agent given only a crop of the photograph read every group and closed in on the doubtful ones. It adds five new doubts (positions 7, 29, 152, 208, 220, listed below); at each the reading used is that of the three earlier transcriptions, which agree. It reads position 241 as F, with F used as one of its reference shapes, and 243 as X.
+9. **Fourth blind reading of the doubtful letters** (later on 23 Nov, `review/blind_reading_doubtful_letters.md`): a helper agent given only a crop of the photograph read every group and closed in on the doubtful ones. It adds new doubts at positions 7, 29, 83, 129, 152, 208 and 220 (listed below); at each the reading used is that of the three earlier transcriptions, which agree. It reads position 241 as F ("probable", alternative P) and 243 as X.
 
 To re-run: `python3 -I targets/eaglepass1917/decrypt.py` from the repository root rewrites `decryption.txt` (standard library only). For a doubtful letter, use for example `--alt 121=N`. The solver scripts in `work/scripts/` need numpy and point to local paths on our machine (the corpus is not committed). They are kept as the record of the runs.
 
@@ -77,6 +80,7 @@ See `reading.md` (Spanish, holes marked) and `translation.md`.
 | readings in `transcription.txt` | 26 / 37 (70.3%) | 159 / 246 (64.6%) |
 | if position 121 is N | 25 / 37 (67.6%) | 148 / 246 (60.2%) |
 | if position 241 is P (against the photographs) | 27 / 37 (73.0%) | 168 / 246 (68.3%) |
+| every preferred reading of the fourth blind reading (7 F, 29 X, 129 F, 220 G) | 23 / 37 (62.2%) | 136 / 246 (55.3%) |
 
 The repository's key replay (`python docs/_replay.py eaglepass1917`, through `replay.py`) reports "reproduces (every difference marked)": 27 of 37 words exact and 233 of 246 letters exact. Ten words are marked. It scores "falsas" as exact because it charges the extra cipher letter N to the gap beside the bracket. The strict count above charges it to the word, which gives 26 of 37.
 
@@ -87,9 +91,11 @@ The repository's key replay (`python docs/_replay.py eaglepass1917`, through `re
 - The other slips: presen{t}ar (F), p{o}r (Y), pre{s}idente (S, possibly seseo), q{u}e (V), an extra N in falsas, notic{i}as (C), co{m}probarlo (S), nec{e}sario (F).
 
 **What kind of hole each one is** (from the four readings of the photograph):
-- Sender's slips, clear on the photograph, that a better image would not change: presentar (11), presidente (45, 50), necesito (59, 61), periodistas (108), noticias (153), alemanes (205), comprobarlo (225), necesario (241: F in all four readings).
-- Sender's slips at a place where the original itself is marked: por (40: the letter is overtyped, so the typed original may show what lies under it); que (131: V is clear, and a slash stands right after it, perhaps the sender's own correction mark); falsas (142: the extra N sits in a crowded group whose first letter may be overtyped).
-- None of the eleven is a misreading of ours. Only the archive's original of leg. 507, exp. 6 could settle the three marked places; a sharper photograph of the book could not, because the book prints a halftone of an overtyped sheet.
+- Sender's slips, clear in all four readings: presentar (11), presidente (45, 50; 45 may be a seseo spelling rather than an enciphering slip), necesito (59, 61), periodistas (108, P or F but never T), noticias (153), alemanes (205), comprobarlo (225), falsas (142, an extra letter N).
+- Sender's slip beside a mark: que (131): V is clear, and a light slash follows it, which may be a correction mark.
+- **Probable** slip: necesario (241). All four readings give F, but the fourth calls it only probable, with P as the alternative, and F against P is the pair this halftone confuses most. P would make the word clean.
+- **Not shown to be a slip:** por (40). The letter is overtyped, so the sender may have corrected it. What lies under it can only be seen on the archive original.
+- So "sender's slip" is shown for nine holes, probable for one (241) and open for one (40). Only the archive's original of leg. 507, exp. 6 can settle 40, 131 and 241; a sharper photograph of the book might help with 241 but not with the overtyping.
 - **The held-out tail.** On pass 1 the held-out key read the last word as "necmswrio". Two things cause it: pass 1 read K at 243, a letter absent from letters 1-170 (the other three readings give X, which gives a); and F at 241 is a sender's slip (m for e). With X the tail reads "necmsario", one slip.
 
 ## Transcription doubts
@@ -99,6 +105,9 @@ The repository's key replay (`python docs/_replay.py eaglepass1917`, through `re
 - [S/E] (position 152, VTZSC) - read: S; checked: image, decode, transcription; faint in the fourth blind reading; S gives "noticias".
 - [W/V] (position 208, TFXWP) - read: W; checked: image, decode, transcription; narrow in the fourth blind reading; W gives "alemanes".
 - [Q/G] (position 220, QPYSV) - read: Q; checked: image, decode, transcription; the fourth blind reading has G; Q gives "poder".
+- [Q] (position 83, OPQXQ) - read: Q; checked: image, decode, transcription; the fourth blind reading sees the letter struck over (an ink mass with a Q or O shape inside); still read Q, which gives "brevedad"; no count change.
+- [P/F] (position 101, PYZVQ) - read: P; checked: image, decode, transcription; bracketed in the earlier reviewer's blind transcription and "probable" in the fourth; P gives "periodistas".
+- [W/F] (position 129, SZVWDV) - read: W; checked: image, decode, transcription; the fourth blind reading has F (alternatives P, W) and says it looks overtyped; W gives "información", F would make it a hole (25 of 37).
 - [P/F] (position 23, ZTPSP) - read: P; checked: image, decode, transcription; F and P alike on the halftone; the three transcriptions read P, giving "comité censura".
 - [Y/X] (position 40, XQVEY) - read: Y; checked: image, decode, transcription; the letter is heavily inked, apparently typed over; neither Y nor X gives the o of "por", so the word is a hole.
 - [F/P] (position 73, FPFXR) - read: F; checked: image, decode, transcription; passes 1 and 2 read F, and the reviewer changed P to F on a closer look; F gives "mándeme mayor".
@@ -112,7 +121,8 @@ The repository's key replay (`python docs/_replay.py eaglepass1917`, through `re
 - [F/P] (position 241, SFCXY) - read: F; checked: image, decode, transcription; all three transcriptions read F, which gives "necmsario" (a hole); P would give "necesario". Kept as F because the photographs show F.
 - [X/K] (position 243, SFCXY) - read: X; checked: image, decode, transcription; pass 2 and the reviewer read X and pass 1 read K; the letter looks like X over K.
 - [Z/E] (position 245, ZV) - read: Z; checked: image, decode, transcription; Z gives "necesario".
-- The "/" in SZVWDV/PEYV - not a letter; typed or pen stroke, not settled.
+- [/] (between positions 131 and 132, SZVWDV/PEYV) - read: not a letter, dropped; checked: image, decode, transcription; a thin slanted stroke, lighter than the type, in all four readings; typed or pen, and whether it marks a correction, not settled.
+
 
 ## Related
 

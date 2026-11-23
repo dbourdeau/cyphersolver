@@ -38,7 +38,7 @@ noticias complots al[e]manes. Debemos poder co[m]probarlo caso nec[e]sario.
 | 225 | comprobarlo | cocprobarlo | S | F | S clear |
 | 241 | necesario | necmsario | F | P | F in all three transcriptions; F and P are hard to tell apart on this halftone |
 
-All eleven are slips in what the sender typed, not misreadings of ours; at 40, 131 and 142 the original itself is marked (overtyping, a slash, a crowded group). See NOTES.md, "What kind of hole each one is".
+Nine are shown to be slips in what the sender typed; 241 (necesario) is a probable slip on the F/P pair this halftone confuses most; 40 (por) is an overtyped letter whose intent is unknown. See NOTES.md, "What kind of hole each one is".
 
 ## Words clean only under a doubtful reading
 
@@ -46,7 +46,7 @@ All eleven are slips in what the sender typed, not misreadings of ours; at 40, 1
   transcriptions prefer N. If N, this word is a hole too.
 - mándeme mayor (position 73): read F (two transcriptions, and the reviewer after a closer look); P would give "mándemeeayor".
 - que (position 130): cipher D occurs only here; its value q rests on the reciprocal pair with cipher Q = d.
-- censura (29, Y/X) and poder (220, Q/G): new doubts from a fourth blind reading of the photograph; the three earlier transcriptions agree on the reading used. If both went against, 24 of 37 words would be clean. The other new doubts (7, 152, 208) fall in words that are holes already (presentar, noticias, alemanes).
+- censura (29, Y/X), información (129, W/F, possibly overtyped) and poder (220, Q/G): new doubts from a fourth blind reading of the photograph; the three earlier transcriptions agree on the reading used. With every preferred reading of the fourth blind reading (7 F, 29 X, 129 F, 220 G), 23 of 37 words (136 of 246 letters) would be clean. The other new doubts (7, 152, 208) fall in words that are holes already (presentar, noticias, alemanes).
 
 ## Count (37 words, 246 letters)
 
