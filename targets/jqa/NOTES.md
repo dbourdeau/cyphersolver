@@ -419,6 +419,12 @@ or emended letter is a hole. The first count of 21 Nov had taken intention[s], e
 - Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society) was not seen. It should
   carry the plain words and would settle the holes.
 
+**Integration review, 23 Nov 2026 (PR #885; an AI agent for the maintainers, not a person).** The three texts were decoded
+again from the sheet transcription with a separate lookup: `key_we028_no85.tsv` agrees with the sheet on all 90 rows and the
+output equals the code-sheet blocks of the three decryption files. The readings were read as sentences against Ford's clear
+text on each side and the counts recounted (15 of 17, 19 of 23, 50 of 55). `reading_review` grade B is recorded on the three
+texts in profile.json. The film was not looked at in this pass. The page `docs/jqa.html` has the new section 05.
+
 ## Transcription doubts
 
 For No. 85 (the three files of 21 Nov 2026). The doubts of No. 88 are in the sections on the image checks above.
