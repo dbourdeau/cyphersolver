@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
-"""Build the partial table of the code ("cipher F") from the hand-corrected alignment."""
+"""Build the partial table of the code ("cipher F") from the hand-corrected alignment.
+
+usage: build_table.py TOKENS.json PROPOSALS.tsv OUT.tsv [--brackx]
+  TOKENS.json   written by check_manual.py (the 653 groups, Brackx's digits, with the draft letters of each)
+  PROPOSALS.tsv proposals/transcription_corrections.tsv (comment lines start with #)
+  --brackx      build on Brackx's digits as transcribed (no proposed change applied): key/code_table_F_partial.tsv
+  without it    build with all eight proposed digit changes applied: key/code_table_F_with_proposals.tsv
+                (this is how the table of 21 Nov was built)"""
 import sys, json, csv, collections
-tok = json.load(open(sys.argv[1]))['tokens']
-_rows = list(csv.DictReader(open(sys.argv[2]), delimiter='\t'))
-corr = {int(r['token_index']): (int(r['brackx']), int(r['proposed'])) for r in _rows}
-# digit changes that two blind readers did not read on the film (21 Nov 2026): kept as readings of the text,
+BRACKX = '--brackx' in sys.argv
+args = [a for a in sys.argv[1:] if a != '--brackx']
+tok = json.load(open(args[0]))['tokens']
+_rows = list(csv.DictReader((l for l in open(args[1], encoding='utf-8') if not l.startswith('#')), delimiter='\t'))
+corr = {} if BRACKX else {int(r['token_index']): (int(r['brackx']), int(r['proposed'])) for r in _rows}
+# digit changes that the two blind readers of 21 Nov did not read on the film: kept as readings of the text,
 # but such a use does not count towards "confirmed by repeated use"
-EMENDED = {int(r['token_index']) for r in _rows if r.get('second_reading_2026-11-21', '').startswith('not confirmed')}
+EMENDED = set() if BRACKX else {int(r['token_index']) for r in _rows if r.get('readers_1_2', '').startswith('not confirmed')}
 N_TRAIN = 568
 FAMILY = {1078, 172, 174, 826, 663, 1126, 240, 151, 152, 1031, 355, 664, 474, 257}
 JOINT = {634, 169, 716, 354, 1098, 470, 730, 216, 148, 714, 649, 593, 1154, 1022, 830, 540, 630, 41, 153, 998, 1186,
@@ -28,6 +37,21 @@ NOTE = {496: 'port in ap-port-eront, rap-port-s, port-eurs; also stands for "pui
         767: 'Adams. First time without a group for "M.", second time 935 = M(onsieur)',
         405: 'en / ent (15 times)', 39: 're (rez in au-rez, ver-rez)',
         175: 'se (session written se-si-on)', 855: 'pre (propres written pro-pre)'}
+if BRACKX:
+    UNSURE.pop(251, None)
+    NOTE.update({
+        257: 'al: a l(ouverture), prairi-al; also stands three times where the text has "ai" (n-ai, n-ay-ez, consul-ai-re): proposed 251, see proposals/',
+        100: 'sur (two uses); a third place where the text has "sur" reads 108 or 128 on the film (see 108)',
+        361: 'del in de l(impatience); a second place where the text has "del" reads 381 on the film (see 381)',
+        108: 'sur here only; proposed 100 (= sur twice); blotted; no blind reader read 100',
+        381: 'del here only; proposed 361; blotted; no blind reader read 361',
+        808: 'con here only (le-con); proposed 898 (= con four times); the film shows 898 with "80" written above (3 of 3 blind readers)',
+        1024: 'ap in m-ap-porte-ront; also where the text has "e" (pri-e): proposed 1034 there (1033, 1035 = e; 2 of 3 blind readers)',
+        327: 'que (6 uses); also once where the text has "d" (d-envoyer): proposed 527 there (527 = d; 2 of 3 blind readers)'})
+    # 108, 381 and 808 occur only at a proposal place: their value is unsure until the digit is settled
+    for g in (108, 381, 808):
+        UNSURE[g] = NOTE.pop(g)
+PROP = {int(r['token_index']) for r in _rows} if BRACKX else set()   # the eight places where a change is proposed
 by = collections.defaultdict(list)
 for i, (g, draft, meaning, kind) in enumerate(tok):
     if i in corr:
@@ -50,6 +74,11 @@ for g in sorted(by):
     shortest = min(cnt, key=len)
     fam = all(common_prefix(shortest, v) >= max(1, len(shortest) - 1) for v in cnt)
     n_film = sum(1 for i, _ in occ if i not in EMENDED)
+    if BRACKX:   # class from the uses away from the eight proposal places (those places are marked in the reading)
+        cnt = collections.Counter(v for i, v in occ if i not in PROP) or cnt
+        n_film = sum(1 for i, _ in occ if i not in PROP)
+        fam = all(common_prefix(min(cnt, key=len), v) >= max(1, len(min(cnt, key=len)) - 1) for v in cnt)
+        main = sorted(cnt.items(), key=lambda kv: (-kv[1], len(kv[0]), kv[0]))[0][0]
     if g in UNSURE: cls = 'C'
     elif n_film < 2 and len(occ) >= 2 and len(cnt) == 1: cls = 'B' if n_film == 1 else 'C'
     elif len(occ) >= 2 and (len(cnt) == 1 or fam or g in FAMILY): cls = 'A'
@@ -59,8 +88,8 @@ for g in sorted(by):
     note = UNSURE.get(g) or NOTE.get(g, '')
     rows.append([g, main, len(occ), len(occ) - n_film, cls, '; '.join('%s x%d' % kv for kv in vals) if len(vals) > 1 else '',
                  sum(1 for i, _ in occ if i < N_TRAIN), sum(1 for i, _ in occ if i >= N_TRAIN), note])
-w = csv.writer(open(sys.argv[3], 'w'), delimiter='\t', lineterminator='\n')
-w.writerow(['group', 'value', 'occurrences', 'of_which_emended', 'class', 'all_values', 'in_first_568', 'in_last_85', 'note'])
+w = csv.writer(open(args[2], 'w'), delimiter='\t', lineterminator='\n')
+w.writerow(['group', 'value', 'occurrences', 'at_proposal_places' if BRACKX else 'of_which_emended', 'class', 'all_values', 'in_first_568', 'in_last_85', 'note'])
 w.writerows(rows)
 c = collections.Counter(r[4] for r in rows)
 tokc = collections.Counter()

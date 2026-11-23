@@ -1,9 +1,9 @@
 # Independent held-out scorer: plan (written before running it)
 
-Written by an AI agent (Claude Opus 5.5), 22 Nov 2026, about 21:30 EST, before `scripts/my_heldout.py` was run.
+Written by an AI agent (Claude Opus 5.5), 22 Nov 2026, about 21:30 EST, before `scripts/reviewer_heldout.py` was run.
 
-Inputs: the session's frozen training table `work/real/table_train_frozen.json` (sha256 8854344a..., checked);
-Brackx's groups 569-653 (0-based 568-652); the draft text `test_text_merged.txt`, normalised by my own code
+Inputs: the session's frozen training table `tests/table_train_frozen.json` (sha256 8854344a..., checked);
+Brackx's groups 569-653 (`../ciphertext.txt`, his digits) (0-based 568-652); the draft text `transcriptions/clear_draft_test_text.txt`, normalised by my own code
 (lower case, accents removed, letters a-z only), cut at letter 1928 (the session's boundary; I also report the
 boundary implied by the hand alignment).
 
@@ -14,4 +14,6 @@ Controls: 1,000 shuffled keys (the table's chunks dealt at random among its grou
 
 Pass mark (the session's, unchanged): at least 40 predictions, at least 70% of them fit, and fits above the 99th
 percentile of the shuffled keys. A second, simpler check: compare each frozen-table prediction with the session's
-hand alignment (`alignment_manual.txt`) at the same group.
+hand alignment (`key/alignment_by_group.txt`) at the same group.
+
+File names updated on 22 Nov 2026 to those in this folder (the plan was written with the local working names); nothing else changed.

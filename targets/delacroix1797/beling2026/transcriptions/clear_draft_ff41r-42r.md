@@ -7,13 +7,14 @@ microfilm, about 950 x 1,440 pixels): [f. 41r](https://archivesdiplomatiques.dip
 [f. 42r](https://archivesdiplomatiques.diplomatie.gouv.fr/ark:/14366/bg45qmrw70n9/20350b61-e4d4-4561-ae72-5403928abb96).
 
 Who read it: two AI agents (Claude Opus), each working alone from the images on 21 Nov 2026, 01:07 to 01:13 EST
-(`transcription_A/`, `transcription_B/`). A third AI agent (this file's writer) compared them and looked at the image
-where they differed, 01:32 to 01:36 EST. No person has checked it.
+(`clear_draft_reader_A.txt`, `clear_draft_reader_B.txt`). A third AI agent (this file's writer) compared them and looked at the image
+where they differed, after the test text had been fixed (01:32 EST, 21 Nov); this file was written at 01:52 EST.
+No person has checked it.
 
 Agreement: of about 510 words on the three pages the two readings differ in 24 places; 23 are accents, capitals,
 line-end marks or one reader flagging doubt where the other did not. **One is a difference of wording:** f. 41r line 22,
-"aurez tenu" (reader A, doubtful) against "avez tenu" (reader B). On the image I read "aurez"; the code groups later
-gave au-rez (`350 39`), so "aurez" stands.
+"aurez tenu" (reader A, doubtful) against "avez tenu" (reader B). The test text took reader A's reading, by the plan's
+rule; I looked at the image after the test text was fixed and read "aurez".
 
 Conventions: line breaks as in the manuscript; spelling as written; capitals normalised (the clerk writes capital-shaped
 C, S and V at the start of many words); `[x]` = letters lost in the binding gutter and supplied; `{x?}` = doubtful
@@ -44,7 +45,7 @@ the start of lines 8-9.
 19 à y ajouter. Les instructions que vous a laissées
 20 le Citoyen Adet, avant son départ, se trouvant
 21 précisément conformes à cette dépêche, je ne puis
-22 qu'approuver le langage que vous aurez tenu au      [DISPUTED: A "aurez?", B "avez"; image and code: aurez]
+22 qu'approuver le langage que vous aurez tenu au      [DISPUTED: A "aurez?", B "avez"; test text: A by the plan's rule; image read afterwards: aurez]
 23 gouvernement américain, d'après ces instructions
 24                                              Les    [catchword]
 ```
@@ -112,5 +113,5 @@ enciphering (to avoid "utilité ... utiles"), or the heavy word is "utilité" it
 20 {C} {DL}                                                [initials or paraph; not read with confidence]
 ```
 
-The text used for the tests (`test_text_merged.txt`) is the letter body from "Les Consuls" to "ce mois", final wording,
+The text used for the tests (`clear_draft_test_text.txt`) is the letter body from "Les Consuls" to "ce mois", final wording,
 with "M." written "Monsieur", "gouv.t" written "gouvernement" and "29" written "vingt neuf".

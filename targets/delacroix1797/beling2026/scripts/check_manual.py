@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate alignment_manual.txt against the cipher and the test text; write the table."""
+"""Validate the hand alignment (key/alignment_by_group.txt; alignment_manual.txt in the first session) against the cipher and the test text; write the table."""
 import sys, os, json, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import align_em as A

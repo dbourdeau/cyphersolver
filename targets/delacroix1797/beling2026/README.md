@@ -16,23 +16,36 @@ target's status changes is the maintainers' call.
    "Politique N° 5". Found on 21 Nov 2026 in the archive's online viewer. This is the "minute" the target's NOTES name
    as what would move it.
 2. **A test fixed beforehand shows the draft is the text behind Brackx's 653 groups** (table below).
-3. **A partial table of the code ("cipher F")** follows from the pair: 296 numbers with a value, 136 of them
-   confirmed by two or more uses that agree.
+3. **A partial table of the code ("cipher F")** follows from the pair. On Brackx's digits as transcribed
+   (`key/code_table_F_partial.tsv`): 297 numbers with a value, 136 confirmed by two or more uses that agree, 148 on a
+   single use, 13 unsure. The table of 21 Nov applied all eight proposed digit changes, which the earlier notes did not
+   say; it is kept as `key/code_table_F_with_proposals.tsv` (296 numbers, 136 confirmed, 149 single use, 11 unsure;
+   251 and 1034 occur only under the proposed changes). What each change does to the table, with the blind readers'
+   support, is in `key/proposal_dependent_entries.tsv`.
 4. **The American copy lacks one clause of the draft**: "Le Citoyen Ade[t] *est arrivé à Paris, il y a quinze jours:
    Il* a eu son audience" has no groups for the words in italics (the groups run `81 973 | 82 727 969`, a-de | a eu
    son). Probably a copyist's skip; where it happened cannot be told from the film.
 
 This is a reading from the period's clear text, not a solution of the code from the numbers. Read share of the
 reading, measured on Brackx's digits as transcribed: 0.939 (27 of 444 cipher words marked), so **read in part** by
-the 95% bar. The holes are the eight digit places below, the eleven unsure values, and a few groups that stand for
-something other than their value elsewhere. Caution: 149 values rest on one use in this letter, so the share measures
+the 95% bar. The holes are the eight places where a digit change is proposed (marked whatever is decided), the unsure
+values, and a few groups that stand for something other than their value elsewhere. Caution: 148 values rest on one use in this letter, so the share measures
 how consistently the table gives the draft; the evidence that the draft is the text is the test.
 
 ## The test (plan written and hashed before the draft's wording was opened)
 
 Plan: `plan/TEST_PLAN.md`; hashes of the plan, the scripts, the ciphertext and the test text: `plan/FREEZE_before_reading_draft.txt`
 (plan 01:31 EST, test text 01:32 EST, results 01:43 EST on 21 Nov 2026). These are local file times and SHA-256 sums only;
-there is no outside timestamp (no RFC 3161 stamp), so the order of events rests on our record.
+there is no outside timestamp (no RFC 3161 stamp), so the order of events rests on our record. The freeze file uses the
+first session's local names: `work/ciphertext_brackx_upstream.txt` is `../ciphertext.txt` and `test_text_merged.txt` is
+`transcriptions/clear_draft_test_text.txt` (same sha256); the scripts keep their names. The plan's writer had
+seen the two draft readers' short reports (their line counts and hard spots such as "[facilité?]", "Boston"), not the draft's wording.
+
+**Which digits each step used.** Tests 1, 2a, 2b and 3 (the full alignment, the frozen training table and its 36 of 43)
+ran on Brackx's digits exactly as upstream (`../ciphertext.txt`, sha256 663e0a42..., recorded in the freeze file), as
+the plan required. The hand alignment `key/alignment_by_group.txt`, the decryption and the reading are on Brackx's
+digits too. Only the table of 21 Nov (`key/code_table_F_with_proposals.tsv`) applied the eight proposed changes; the
+frozen test files are left as they were.
 
 | Test | Pass mark set beforehand | Result | Controls | Verdict |
 |---|---|---|---|---|
@@ -65,8 +78,10 @@ Test 2a is reported as a miss: its controls score almost as high, because 11 of 
 | `transcriptions/clear_draft_ff41r-42r.md` | the draft, line by line, merged from two blind AI readings (`clear_draft_reader_A.txt`, `clear_draft_reader_B.txt`); one wording dispute ("aurez"/"avez"), settled |
 | `transcriptions/clear_draft_test_text.txt` | the letter body used in the tests (frozen) |
 | `key/alignment_by_group.txt` | each of the 653 groups with the draft letters it stands for (made by hand after the tests) |
-| `key/code_table_F_partial.tsv` | the partial table: class A confirmed by 2+ agreeing uses (136), B one use (104), B2 one use, only the joint value of a pair or triple sure (45), C unsure (11) |
-| `decryptions/decryption_1797-07-13.txt` | the table applied to Brackx's digits, unedited (`scripts/decode.py`) |
+| `key/code_table_F_partial.tsv` | the partial table on Brackx's digits: class A confirmed by 2+ agreeing uses (136), B one use (103), B2 one use, only the joint value of a pair or triple sure (45), C unsure (13). Column `at_proposal_places` counts uses at the eight places where a change is proposed; the class is judged on the other uses, and every value a number takes is in `all_values` |
+| `key/code_table_F_with_proposals.tsv` | the table of 21 Nov, built with all eight proposed changes applied (A 136, B 104, B2 45, C 11) |
+| `key/proposal_dependent_entries.tsv` | for each of the eight places: the entry on Brackx's digits, the entry under the proposal, and the blind readers' support |
+| `decryptions/decryption_1797-07-13.txt` | `key/code_table_F_partial.tsv` applied to Brackx's digits, unedited (`scripts/decode.py`) |
 | `readings/reading_1797-07-13.md`, `translations/translation_1797-07-13.md` | the French text by sentences with holes marked (`scripts/make_reading.py`), and an English translation |
 | `proposals/transcription_corrections.tsv` | eight digit changes offered to Brackx's transcription, with three blind readings of the film |
 | `plan/`, `tests/` | the plan, its hashes, the run log and the results of tests 1-3, the frozen training table |
@@ -76,6 +91,11 @@ Test 2a is reported as a miss: its controls score almost as high, because 11 of 
 To reproduce (Python 3 with numpy): `python scripts/run_tests.py ../ciphertext.txt transcriptions/clear_draft_test_text.txt <turner> out`
 then `python scripts/heldout.py score ../ciphertext.txt out/alignment_full.json 568 tests` (scores the frozen table in `tests/`),
 and `python scripts/reviewer_heldout.py ../ciphertext.txt transcriptions/clear_draft_test_text.txt tests/table_train_frozen.json key/alignment_by_group.txt`.
+The tables: `python scripts/check_manual.py ../ciphertext.txt transcriptions/clear_draft_test_text.txt key/alignment_by_group.txt tokens.json`,
+then `python scripts/build_table.py tokens.json proposals/transcription_corrections.tsv key/code_table_F_partial.tsv --brackx`
+and, without `--brackx`, `key/code_table_F_with_proposals.tsv` (both rebuild byte for byte). Then
+`python scripts/decode.py ../ciphertext.txt key/code_table_F_partial.tsv` and
+`python scripts/make_reading.py transcriptions/clear_draft_test_text.txt key/alignment_by_group.txt key/code_table_F_partial.tsv proposals/transcription_corrections.tsv`.
 `<turner>` is the plain text of Turner, *Correspondence of the French Ministers to the United States, 1791-1797* (1904),
 archive.org item `correspondenceof00turnrich`, file `correspondenceof00turnrich_djvu.txt` (sha256 42cdda7c...), used
 only for control passages; not committed. Test 2b takes about ten minutes on 14 cores.
@@ -84,7 +104,7 @@ only for control passages; not committed. Test 2b takes about ten minutes on 14 
 
 The digits are Brackx's; we change none. Proposals, each read blind on the film (NARA M30 roll 4, frames 0244-0245)
 by three AI readers given shuffled line crops and nothing else (two on 21 Nov, one on 22 Nov):
-- 808 (245 left, line 12, 8th group) - read: 898 with "80" written above (3 of 3); checked: image, decode (898 = con five times; le-con)
+- 808 (245 left, line 12, 8th group) - read: 898 with "80" written above (3 of 3); checked: image, decode (898 = con four times; le-con)
 - 1024 (245 left, line 13, 1st) - read: 1034 (2 of 3; the third 1084, second choice 1034); third digit blotted; checked: image, decode (1033, 1035 = e; pri-e)
 - 327 (245 left, line 25, 8th) - read: 527 (2 of 3; the third 327); checked: image, decode (527 = d three times; d'envoyer)
 - 257 at three places where the text has "ai" (244 right line 11, 9th; 244 right line 17, 6th; 245 left line 15, 4th) - read: 257 by most readers (251 first choice for the third reader at two of the three places); checked: image, decode; unresolved: either the clerk wrote 257 (= al) for 251, or the code has something we do not understand; 251 = ai is a conjecture from the text and the run 253 ainsi, 254 ajouter, 257 al
@@ -92,8 +112,8 @@ by three AI readers given shuffled line crops and nothing else (two on 21 Nov, o
 - 381 (245 left, line 25, 11th) - read: 381 (3 of 3, blotted); unresolved; the text wants "del" (361 = de l')
 - 383 (244 right, line 7, 3rd), where the text wants "de la" - read: 383 (third reader's second choice 363; 363 = de la elsewhere); unresolved
 - seen in passing on 21 Nov: 300 read 308 by two readers (244 right line 5), 1105 read 1185 or 1195 (245 left line 20); both single-use values, numbers in doubt
-The eleven unsure values (class C) were read on the film by the third reader at all 21 of their places: every first
-reading agrees with Brackx, so their doubt is in the value, not the digits.
+The eleven unsure values of the 21 Nov table were read on the film by the third reader at all 21 of their places: every
+first reading agrees with Brackx, so their doubt is in the value, not the digits.
 
 ## What the code looks like (observations from the table)
 
@@ -102,8 +122,8 @@ reading agrees with Brackx, so their doubt is in the value, not the digits.
 - **Neither one-part nor plain two-part.** Over the whole table, number order and alphabetical order of the values do not
   agree (Spearman 0.08; shuffled 99.5th percentile 0.16), as the target's NOTES found. But neighbouring numbers are in
   alphabetical order far more often than chance: 76% of adjacent pairs ascend against 50% for shuffled values (99.5th
-  percentile 55%), e.g. 2-10 ce, celui, cer, ces; 251-257 ai, ainsi, ajouter, al; 493-500 point, politique, port,
-  possible. So the table is made of short alphabetical runs placed in an order that is not alphabetical
+  percentile 55%), e.g. 2-10 ce, celui, cer, ces; 253-257 ainsi, ajouter, al; 493-500 point, politique, port,
+  possible (figures from the table on Brackx's digits). So the table is made of short alphabetical runs placed in an order that is not alphabetical
   (`scripts/code_structure.py`). Common syllables and letters recur in several runs (e, s, se, d, m, i, et), which is
   where most far-apart homophones sit; 16 of 30 values with two or more numbers keep them within a small block, as the
   target's NOTES inferred (81-83 a, 972-973 de, 265-269 le/les, 799-800 vous).
@@ -118,7 +138,7 @@ reading agrees with Brackx, so their doubt is in the value, not the digits.
   "général"; 496 stands for "port" three times and once where the draft has "pui(ssent)"; 268/269 give "les" where the
   draft has "le". These are listed as holes in the reading.
 - **One letter only.** No second text in this code has been found (39CP/48 paged in full, 39CP/47 spot checked: they
-  hold the ministry's decipherments of Létombe's despatches, not the numbers), so the 149 single-use values are
+  hold the ministry's decipherments of Létombe's despatches, not the numbers), so the 148 single-use values are
   untested outside this letter.
 - **Test 2a missed**; it is reported, not counted.
 - **Readers.** All transcription readers and both checking sessions are AI agents (Claude Opus). No person has read the
