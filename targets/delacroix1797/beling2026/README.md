@@ -1,8 +1,9 @@
 # delacroix1797: the clear draft of despatch No. 5 found, matched to the 653 groups, and a partial table of the code
 
 Contributed by Andrew Beling, with AI agents (Claude Opus), 21-22 Nov 2026. This folder adds to Daniel Bourdeau's
-target `targets/delacroix1797` (catalogue 649) and changes nothing outside it: the target's `NOTES.md`,
-`profile.json`, `ciphertext.txt` (Michael Brackx's transcription) and `solver/` are untouched. Whether and how the
+target `targets/delacroix1797` (catalogue 649). Outside it, the only change is a short section at the end of the
+target's `NOTES.md` on the order of events (asked for in review); `profile.json`, `ciphertext.txt` (Michael Brackx's
+transcription) and `solver/` are untouched. Whether and how the
 target's status changes is the maintainers' call.
 
 ## What was found
@@ -18,10 +19,10 @@ target's status changes is the maintainers' call.
 2. **A test fixed beforehand shows the draft is the text behind Brackx's 653 groups** (table below).
 3. **A partial table of the code ("cipher F")** follows from the pair. On Brackx's digits as transcribed
    (`key/code_table_F_partial.tsv`): 297 numbers with a value, 136 confirmed by two or more uses that agree, 148 on a
-   single use, 13 unsure. The table of 21 Nov applied all eight proposed digit changes, which the earlier notes did not
-   say; it is kept as `key/code_table_F_with_proposals.tsv` (296 numbers, 136 confirmed, 149 single use, 11 unsure;
-   251 and 1034 occur only under the proposed changes). What each change does to the table, with the blind readers'
-   support, is in `key/proposal_dependent_entries.tsv`.
+   single use, 13 unsure. The eight proposed digit changes are not applied anywhere in this folder, and stay unapplied
+   until a person has looked at the film. (The table of 21 Nov had applied all eight; it was removed from this folder
+   on 23 Nov.) What each change would do to the table, with the blind readers' support, is in
+   `key/proposal_dependent_entries.tsv`.
 4. **The American copy lacks one clause of the draft**: "Le Citoyen Ade[t] *est arrivé à Paris, il y a quinze jours:
    Il* a eu son audience" has no groups for the words in italics (the groups run `81 973 | 82 727 969`, a-de | a eu
    son). Probably a copyist's skip; where it happened cannot be told from the film.
@@ -36,7 +37,12 @@ how consistently the table gives the draft; the evidence that the draft is the t
 
 Plan: `plan/TEST_PLAN.md`; hashes of the plan, the scripts, the ciphertext and the test text: `plan/FREEZE_before_reading_draft.txt`
 (plan 01:31 EST, test text 01:32 EST, results 01:43 EST on 21 Nov 2026). These are local file times and SHA-256 sums only;
-there is no outside timestamp (no RFC 3161 stamp), so the order of events rests on our record. The freeze file uses the
+there is no outside timestamp (no RFC 3161 stamp), so the order of events (plan, then draft) rests on our record.
+The draft was first opened earlier the same night, by the AI agent that found it: its request log has f. 41r fetched
+from the archive at 00:52:04 EST (05:52:04 UTC) on 21 Nov 2026, the earliest record of the draft we hold, and that agent read the heading and margin. The two
+blind readers transcribed it from 01:07 to 01:13 EST. So the plan was written after the draft was on our machine;
+what it rests on is that the agent who wrote the plan had not seen the draft's wording, which is the session's own
+statement and again a local record. The freeze file uses the
 first session's local names: `work/ciphertext_brackx_upstream.txt` is `../ciphertext.txt` and `test_text_merged.txt` is
 `transcriptions/clear_draft_test_text.txt` (same sha256); the scripts keep their names. The plan's writer had
 seen the two draft readers' short reports (their line counts and hard spots such as "[facilité?]", "Boston"), not the draft's wording.
@@ -44,8 +50,7 @@ seen the two draft readers' short reports (their line counts and hard spots such
 **Which digits each step used.** Tests 1, 2a, 2b and 3 (the full alignment, the frozen training table and its 36 of 43)
 ran on Brackx's digits exactly as upstream (`../ciphertext.txt`, sha256 663e0a42..., recorded in the freeze file), as
 the plan required. The hand alignment `key/alignment_by_group.txt`, the decryption and the reading are on Brackx's
-digits too. Only the table of 21 Nov (`key/code_table_F_with_proposals.tsv`) applied the eight proposed changes; the
-frozen test files are left as they were.
+digits too. No file in this folder applies the eight proposed changes; the frozen test files are left as they were.
 
 | Test | Pass mark set beforehand | Result | Controls | Verdict |
 |---|---|---|---|---|
@@ -79,8 +84,7 @@ Test 2a is reported as a miss: its controls score almost as high, because 11 of 
 | `transcriptions/clear_draft_test_text.txt` | the letter body used in the tests (frozen) |
 | `key/alignment_by_group.txt` | each of the 653 groups with the draft letters it stands for (made by hand after the tests) |
 | `key/code_table_F_partial.tsv` | the partial table on Brackx's digits: class A confirmed by 2+ agreeing uses (136), B one use (103), B2 one use, only the joint value of a pair or triple sure (45), C unsure (13). Column `at_proposal_places` counts uses at the eight places where a change is proposed; the class is judged on the other uses, and every value a number takes is in `all_values` |
-| `key/code_table_F_with_proposals.tsv` | the table of 21 Nov, built with all eight proposed changes applied (A 136, B 104, B2 45, C 11) |
-| `key/proposal_dependent_entries.tsv` | for each of the eight places: the entry on Brackx's digits, the entry under the proposal, and the blind readers' support |
+| `key/proposal_dependent_entries.tsv` | for each of the eight places: the entry on Brackx's digits, what the entry would be under the proposal (not applied), and the blind readers' support |
 | `decryptions/decryption_1797-07-13.txt` | `key/code_table_F_partial.tsv` applied to Brackx's digits, unedited (`scripts/decode.py`) |
 | `readings/reading_1797-07-13.md`, `translations/translation_1797-07-13.md` | the French text by sentences with holes marked (`scripts/make_reading.py`), and an English translation |
 | `proposals/transcription_corrections.tsv` | eight digit changes offered to Brackx's transcription, with three blind readings of the film |
@@ -92,8 +96,8 @@ To reproduce (Python 3 with numpy): `python scripts/run_tests.py ../ciphertext.t
 then `python scripts/heldout.py score ../ciphertext.txt out/alignment_full.json 568 tests` (scores the frozen table in `tests/`),
 and `python scripts/reviewer_heldout.py ../ciphertext.txt transcriptions/clear_draft_test_text.txt tests/table_train_frozen.json key/alignment_by_group.txt`.
 The tables: `python scripts/check_manual.py ../ciphertext.txt transcriptions/clear_draft_test_text.txt key/alignment_by_group.txt tokens.json`,
-then `python scripts/build_table.py tokens.json proposals/transcription_corrections.tsv key/code_table_F_partial.tsv --brackx`
-and, without `--brackx`, `key/code_table_F_with_proposals.tsv` (both rebuild byte for byte). Then
+then `python scripts/build_table.py tokens.json proposals/transcription_corrections.tsv key/code_table_F_partial.tsv`
+(rebuilds byte for byte; the proposals file is read only to mark the eight places). Then
 `python scripts/decode.py ../ciphertext.txt key/code_table_F_partial.tsv` and
 `python scripts/make_reading.py transcriptions/clear_draft_test_text.txt key/alignment_by_group.txt key/code_table_F_partial.tsv proposals/transcription_corrections.tsv`.
 `<turner>` is the plain text of Turner, *Correspondence of the French Ministers to the United States, 1791-1797* (1904),
