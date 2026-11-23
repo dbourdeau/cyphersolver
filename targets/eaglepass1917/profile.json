@@ -1,0 +1,213 @@
+{
+ "schema_version": 1,
+ "target": "eaglepass1917",
+ "title": "Mexican embassy, Washington, to the consul at Eagle Pass, 17 Apr 1917: a reciprocal one-alphabet telegram sent as \"clave Murciélago\", read in part",
+ "documents": [
+  {
+   "id": "ahge-sre-aemeua-507-6-eaglepass",
+   "read": "read in part",
+   "shelfmark": "AHGE-SRE, Archivo de la Embajada de México en Estados Unidos, leg. 507, exp. 6 (not seen); text from Narváez 2019, p. 339, fig. 10",
+   "date": "17 Apr 1917",
+   "year": 1917,
+   "country": "Mexico",
+   "route": "Washington -> Eagle Pass, Texas",
+   "places": {
+    "from": "Washington, D.C.",
+    "to": "Eagle Pass, Texas"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Typed repetition of a telegram of 16 April; heading and address in clear; no contemporary decipherment known. Narváez prints no reading."
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "photographs of the halftone figure in Narváez 2019, p. 339, fig. 10 (loan copy); archive image not seen",
+    "image_quality": "poor"
+   },
+   "length": {
+    "tokens": 246,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription.txt"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution with a reciprocal alphabet: pairs A-X, B-U, C-S, D-Q, E-P, F-M, G-L, I-Z, N-W, O-V, R-Y, T stands for itself (H, J, K unseen); five-letter groups with irregular group lengths, word division lost. Not the Murciélago square named in the heading.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 22,
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "random",
+  "word_division": "none"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Narváez 2019 (pp. 338-342) pictures the telegram and says it stayed impenetrable to the consul; he prints no reading. Not in the repository (catalogue, leads, known.py, 23 Nov 2026), Cryptiana, or Narváez's 2025 Historia Mexicana article; web searches for its phrases found nothing.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "first_date": "2026-11-23",
+  "last_date": "2026-11-23",
+  "human_role": "Andrew Beling photographed the Narváez book, chose the target and set the rules (frozen plan, blind transcriptions, controls, independent review); AI agents transcribed, solved, reviewed and wrote up. No person has checked the reading.",
+  "models": [
+   "Claude Opus 5.5 (Anthropic), agents run by Andrew Beling"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-23",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Two transcriptions from the book photographs, the second blind; a third, blind, by an independent reviewer. 246 letters each; they differ only at the doubtful letters listed in NOTES.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key matching"
+   ],
+   "what": "The book's Murciélago square with key word 31 of the printed consular list (Escultor), plan frozen first.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "statistics",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Index of coincidence 0.071, flat over periods 1-12: one alphabet, not a repeating key.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Plan hashed before the runs; the solver on three shuffles of the 246 letters (best -2924 to -2964, no Spanish) and on three 246-letter passages of real Spanish under random keys (99.2-99.6% of letters right).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Simple substitution solve on Spanish letter 4-grams, 40 restarts per text; the rare letters D, L, M, N, O set by the reciprocal pairing and the sense. Held-out: the key from letters 1-170 reads 171-246 unchanged apart from the slips and cipher K (absent from 1-170).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "technique": [
+    "exhaustive search"
+   ],
+   "what": "Keyword-mixed alphabets (3,791 keywords incl. MURCIELAGO, both directions, 26 offsets): best score -3144.2, below the shuffles; not a keyword alphabet.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "simulated annealing"
+   ],
+   "what": "Independent reviewer: own blind transcription, own solver and corpus (Spanish Wikipedia), before seeing this work: same key, same sentence word for word.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Telegraphic Spanish read end to end: 26 of 37 words clean; 11 words with one or two sender's slips (five are e/t exchanges) read from the sense.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "Simulated annealing on Spanish letter statistics, validated by shuffled and enciphered controls at this length and by an independent blind solve; the rare letters fixed by the reciprocal pairing the other 18 letters show.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.703,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "26/37 words come out of the key uncorrected with the readings in transcription.txt (159/246 letters); 25/37 if position 121 is N; 11 holes, every one completed from the sense.",
+  "first_break": true,
+  "verification": [
+   "matched control",
+   "independent verification",
+   "historical consistency"
+  ],
+  "gaps": [
+   {
+    "item": "11 of 37 words with a sender's slip",
+    "blocker": "illegible",
+    "detail": "slips as typed on the sheet; position 121 (M/N), 241 (F/P) and 40 (overtyped) are reading doubts on a halftone in a book; the archive's own image is not seen"
+   }
+  ],
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "new cipher with solution",
+    "note": "with AI agents: transcribed twice (blind), key recovered from the cipher text, read in part, English translation",
+    "date": "2026-11-23",
+    "source": "pull request draft (not yet opened)"
+   },
+   {
+    "who": "narvaez",
+    "role": "pointer",
+    "note": "published the telegram (Criptografía diplomática, política y militar en México, SRE 2019, p. 339, fig. 10) and its context; prints no reading",
+    "date": "2019",
+    "source": "Narváez 2019, pp. 338-342"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "ahge-sre-aemeua-507-6-eaglepass",
+    "label": "Washington, 17 April 1917, embassy to the consul at Eagle Pass (repetition of the 16 April telegram)",
+    "transcription": "transcription.txt",
+    "decryption": "decryption.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "es",
+    "state": "read in part",
+    "summary": "Asks the consul, for the censorship committee appointed by President Wilson (the Committee on Public Information), for the names of journalists and information agents spreading false news, chiefly of German plots, with proof if needed."
+   }
+  ],
+  "key_file": "key.tsv",
+  "provenance": "contributed"
+ }
+}
