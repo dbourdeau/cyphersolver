@@ -938,7 +938,7 @@ def build_html():
 {sources_html(E, town)}
 
 <h2 id="about">About the catalogue</h2>
-<p>WWI Cipher Repository entries use George Lasry’s published status and link directly to his case pages. Entries without a Cyphersolver priority score show a dash.</p>
+<p>WWI Cipher Repository entries use George Lasry’s published status and link directly to his case pages. Their provisional scores use case and series descriptions, identified cipher systems, and related deciphered examples where available.</p>
 <p>Historical cipher documents that nobody has read: ciphertext with no decipherment known in the document itself, in DECODE, in Tomokiyo&rsquo;s and Lasry&rsquo;s lists, in the edition or in the literature. It began with the French diplomatic volumes on Gallica and the records DECODE marks not decrypted, and grew through sweeps of archive portals, finding aids and printed calendars (<a href="#where">where the ciphers are</a>). Since the October 2026 sweeps a new find enters only after vetting: the ciphertext seen, prior art searched, keys recorded, duplicates checked; the rest wait as leads. {len(counted)} entries are counted targets, {len(E) - len(counted)} are noted only.</p>
 <p>Class <b>A</b> means a sibling with a decipherment in the same volume, <b>B</b> a partial key or a known family in print, <b>C</b> no key and no sibling. An entry read, partly read, resolved or found in print leaves the catalogue and is written up (<a href="#v=gone" data-go="gone">left the catalogue</a>); one attempted here without a reading stays, tagged <b>attempted, open</b>; one a target folder is working on is tagged <b>in progress</b>, read at each rebuild from the head of the folder&rsquo;s NOTES.md. Data: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json" rel="noopener">catalogue.json</a> · text: <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CATALOGUE.md" rel="noopener">CATALOGUE.md</a> · how to send a result: <a href="contribute.html">contribute</a>.</p>
 <details class="about"><summary>How the scores were set</summary>
@@ -1123,6 +1123,16 @@ def solve_page(e, shell):
         listing = e['ww1']['listing']
         checked = fmt_day(e['ww1']['checked'])
         description = f'{e["why"]}. An unsolved message listed by George Lasry’s WWI Cipher Repository.'
+        scores = ''
+        if priority(e) >= 0:
+            scores = f'''<h2>Priority score</h2>
+  <dl class="facts">
+    <dt>Priority with default weights</dt><dd>{priority(e):.1f} of 10</dd>
+    <dt>Importance</dt><dd>{e["importance"]} of 5</dd>
+    <dt>Solvability</dt><dd>{e["solvability"]} of 5</dd>
+    <dt>Difficulty</dt><dd>{e["difficulty"]} of 5</dd>
+  </dl>
+  <p>{esc(e["score_note"])}</p>'''
         body = f'''<section class="hero solve">
   <p class="kicker"><a href="catalogue.html">Unsolved Catalogue</a> · no. {e["id"]} · WWI Cipher Repository</p>
   <h1>{esc(e["title"])}</h1>
@@ -1135,6 +1145,7 @@ def solve_page(e, shell):
     <a href="{report}">Report a result</a>
   </div>
   <p>See the source case for the transcript, cipher background and archive links where available. Include your preferred credit when submitting a result.</p>
+  {scores}
 </main>
 '''
         return solve_document(e, shell, body, description)
