@@ -379,18 +379,12 @@ def dp_tokenize_all(raw_word: str) -> Tuple[List[List[str]], str, str]:
 
 
 def decode_word(pid: str, raw_w: str, toks: List[str], sup: str, kind: str) -> str:
+    """Pure unedited mechanical key output matching key_kennedy.tsv (no editorial overrides)."""
     if kind == "numeral":
-        return toks[0]
+        return CANONICAL_ALPHA_KEY[toks[0]] if toks[0] in CANONICAL_ALPHA_KEY else toks[0]
     if kind == "nomenclator":
         return f"[{NOMENCLATOR[toks[0]]}]"
-    is_dropped_e = (pid, raw_w) in L1_DROPPED_ZERO_E_WORDS
-    chars = []
-    for t in toks:
-        if t == "3" and is_dropped_e:
-            chars.append("e")
-        else:
-            chars.append(CANONICAL_ALPHA_KEY[t])
-    word = "".join(chars)
+    word = "".join(CANONICAL_ALPHA_KEY[t] for t in toks)
     if sup:
         word += f"({sup[1:]})"
     if raw_w.endswith(".") and not raw_w.endswith(".5."):
