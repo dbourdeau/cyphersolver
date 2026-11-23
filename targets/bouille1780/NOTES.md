@@ -24,9 +24,9 @@ Guichen refused, his squadron short of water. The British at St Lucia now fear a
 southern islands then cruise with the squadron and 3,000 men; "nous avons manqué un coup superbe qui pouvoit
 terminer la guerre". Guichen's instructions forbid risking the fleet or keeping any island.
 
-## Postscript of 11 April (f.59v, not in the modern translation; read with K8 after the test)
+## Postscript of 11 April (f.59v-60; translated on the second modern sheet, image 0088; read with K8 after the test, before that sheet was seen)
 `P.S. du 11 avril` 250 278 503 391 361 178 88 103 402 636 / 101 651 361 331 339 776 44 44 641 304 191 251 727 841 516
 → "L'escadre par{t} après-de[main] jeudi au nombre de vingt-deux vaisseaux ; j'ai embarqué tro[is …]".
 {part}: 503 = par (K8) + 391 (t?); [main]: 361 178 decode "de bien", read "demain" by sense (11 Apr 1780 was a
 Tuesday, so "après-demain jeudi" = 13 Apr, the day Guichen's fleet sailed from Fort-Royal before the battle of
-Martinique, 17 Apr 1780). The sentence runs past the foot of f.59v; image 0088 was not downloaded.
+Martinique, 17 Apr 1780). The postscript continues on f.60. Image 0088 (fetched 23 Nov 2026, after the PR was opened) is a second modern translation sheet, "Traduction du P.S. chiffré f° 59 v° et 60": it gives the whole postscript in clear (3,000 men for landing and 1,500 as extra crew; Rodney at St Lucia with 22 ships; Bouillé on the Couronne; Barbados and Tobago; the Saint-Domingue convoy under the Fier and the Boudeuse). Our K8 reading of the opening agrees with it, including the restored "après-demain". The postscript is therefore not new.
