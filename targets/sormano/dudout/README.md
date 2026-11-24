@@ -121,3 +121,13 @@ Run it with `python3 scripts/measure65.py <worktree> no65_signs_reread.txt ../n6
   *questa sua*); f. 120r L23 *causa* (not *cosa*). *Duca* and *Papa* are spelled out in cipher on f. 120r.
 
 Based on Lasry's key, Arya Patel's identification of f. 123, and your no. 66 re-read and transcriptions.
+
+## 24 Nov 2026: blind sign sheet 2411 (`sign_check/`)
+Seven doubtful signs of no. 63 were put to Brice Dudout as a blind sheet, with controls 3/3. Five words become sure:
+meter, rendera, lega, oficio and deposition. The reader's remark "italic n = n with inward tail" was adopted, so
+italic n = e, and "et" (f. 115r) is now read as probable.
+
+`no63_signs_2411.txt` and `no63_reading_2411.md` are the 24 Nov versions. The frozen 12 Nov files are unchanged.
+
+Words (841): sure 743 -> **748**, probable 52 -> 48, unresolved 25 -> 24. Sure + probable 94.5% -> **94.6%**, still
+under 95%. Details are in `sign_check/README.md`.
