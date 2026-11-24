@@ -9,7 +9,8 @@ applied here.
 Ferdinand I and his resident at the Porte, Giovanni Maria Malvezzi, 1550: HHStA Wien, StAbt Türkei I 8-2-22,
 8-2-24, 8-3-10, 8-3-12 and 9-1-2. Every ciphered passage of the five items has a decipherment or a clear text on
 record, on the leaf or filed with it, so nothing in the lead is unread. The verdict rests on those decipherments, not
-on our decodes. The archive cites a page of Austro-Turcica 1541-1552 (ed. Nehring, 1995) for each item.
+on our decodes. Austro-Turcica 1541-1552 (ed. Nehring, 1995) prints all five with the cipher passages in clear
+(below).
 
 | Item | Language, extent | Decipherment or clear text on record | Our decode (`lead892_test/`, `lead892_rest/`) |
 |---|---|---|---|
@@ -31,24 +32,32 @@ on our decodes. The archive cites a page of Austro-Turcica 1541-1552 (ed. Nehrin
   regests on Hungaricana that the Malvezzi cipher pieces in those boxes carry their decipherments and are printed in
   Nehring. The two leads do not duplicate each other: 892 holds these five items, 2682 the remainder; the evidence
   here, from the leaves, agrees with 2682's.
-- **Print.** For each item the archive's description says "Ediert in: Austro-Turcica 1541-1552 ..." with pages
-  415-418, 418-419, 433-434, 437 and 513. No page of the edition was seen (HathiTrust holds it search-only). HathiTrust
-  full-text phrase searches on 23 Nov 2026 support the citation: phrases from the decipherments of each item returned
-  that volume (8-3-12 "quemadmodum a Rege suo sibi iussum", "Transmittimus ad te cum hisce"; 9-1-2 "de successibus
-  omnibus certiores facere pergas"; 8-3-10 "ogniuno se lamenta", "aspettano corrieri"; 8-2-22 "nove de Soria", "non
-  se dechiara el tempo", "movimento alchuno"; 8-2-24 "pro toto regno nobis permittendo", "petitionem
-  Transsylvaniae"), and some did not (8-3-10 "arrogante superbo"; 8-2-22 "amotinarsi contra"; 8-2-24 "gradatim
-  descendas"). The Italian phrases come from my own reading of the glosses. For 8-2-24 the hits may come from the
-  draft of 17 March (8-2-10, printed on pp. 410-415), which shares this wording. Only the URLs and result titles were
-  noted, no result pages saved (`search_log_hathitrust.md`).
+- **Print.** Austro-Turcica 1541-1552 (ed. Nehring, Munich 1995) prints all five letters with their cipher
+  passages in clear, set between /: and :/. Seen on 24 Nov 2026 by an AI agent of ours (Claude Opus 5.5) in the
+  Bavarian State Library's free digital copy, https://www.digitale-sammlungen.de/en/view/bsb00150599, from the
+  library's own OCR text of the scans (printed page = scan - 14); the page images were not viewed:
+  - No. 155, pp. 415-418: 8-2-22 (source "f. 111r-114v, Original"). Two passages in /: :/, "De novo sonno venute
+    nove de Soria ... esso meco" and "Circa l'armata del mare ... quello che Dio vorä"; our two decoded passages
+    (S01-S04, E01-E06) are the start of the first and the whole of the second.
+  - No. 156, pp. 418-419: 8-2-24, the letter of 25 March 1550 (source "f. 123r-v, Original; f. 74r-v,
+    Dechiffrierung"), so the edition prints this letter, with its text from the draft on fol. 74 of 8-2-10, not the
+    draft of 17 March. The whole cipher passage, "Quamvis tibi per proximas ... gradatim descendas", is in
+    /: :/; the edition reads "alias" where we left the draft's "ats" unexpanded.
+  - No. 163, pp. 433-434: 8-3-10 (source "f. 160r-161v, Original"). One passage in /: :/ from "Sir, da molti giorni
+    in qua Rustan Passa" to "sei che se armano qua", which includes our fol. 160r lines (M01-M10).
+  - No. 165, p. 437: 8-3-12 (source "f. 169r-v, 171r-v, Original; 170r-v, Dechiffrierung"). The whole cipher text,
+    "Transmittimus ad te ... non dubitamus", in /: :/.
+  - No. 193, p. 513: 9-1-2 (source "f. 166r-v, Dechiffrierung; f. 167r, Original"). "Teque gratiose requirimus ...
+    certiores facere pergas" in /: :/.
+  The HathiTrust phrase searches of 23 Nov (`search_log_hathitrust.md`) were made before the print was seen.
 - **What our decode adds.** For the two Italian letters, nothing I can show. For 8-2-24 the decode follows the draft,
   with *Ras* where the draft has "Principem Turcarum" and the code word *zus* where it has "Transylvaniae"
   (`targets/malvezzi1548/KEY_BRIEF.md` gives *zus* as "Hungariae imperium"). For 8-3-12 the cipher reads *mentem
   dilectionis et maiestatis eius caesareae*, *traductione italica* and *negotiis istis nostris*, where the
   19th-century decipherment has *dilectissimi fratris ... suae*, *italiana* and no *istis*
-  (`lead892_rest/compare_8-3-12.md`; an independent reviewer confirmed all three on the image). "mentem dilectionis"
-  is a HathiTrust phrase hit in Austro-Turcica, but in a volume of Ferdinand's letters that may be another letter, so
-  it does not show how the edition prints this one.
+  (`lead892_rest/compare_8-3-12.md`; an independent reviewer confirmed all three on the image). In No. 165 the
+  edition prints *mentem dilectionis et Maiestatis eius Caesareae*, *traductiones Italica*, *Drogutum*, *indutiarum*
+  and *Teudes* as the cipher has them, and *negotiis nostris* without *istis*.
 
 ## The key used, and whose it is
 
@@ -175,16 +184,13 @@ transcription 2 scores 0.940 of letters and 132 of 170 words.
 
 ### Images
 
-Archive images are not included. The Austrian State Archives' fee schedule ("Entgelte", 28 Aug 2026, section 2,
-"Publikationen") requires two things for every reproduction used in a publication, including on the web:
-
-- "ein vollständiger Quellennachweis", a full source reference;
-- "ein kostenloses Belegexemplar", a free copy of the publication sent to the archive.
-
-It adds: "Die Verwendung von Vervielfältigungen ist entlang der Lizenz CC BY-ND erlaubt" (use of reproductions is
-allowed along the lines of the CC BY-ND licence). Line crops and a sign sheet are adaptations, and the free copy has
-not been arranged. `lead892_rest/scripts/line_boxes.py` gives the pixel boxes of every line used, so the crops can be
-remade from the archive's images.
+Conditions of the images: they are from the Austrian State Archives' public archive information system
+(Haus-, Hof- und Staatsarchiv, Türkei I 8-2-22, 8-2-24, 8-3-10, 8-3-12, 9-1-2, and 8-2-10 for the draft), read
+without sign-in by AI agents working for Andrew Beling, one image at a time. Since 1 September 2026 the archive
+allows its reproductions to be published under CC BY-ND with a full source reference and a deposit copy; its terms
+say nothing about AI readers or automated access. Nobody at the archive was asked; Andrew Beling decided on the use
+himself. No image is in the repository. `lead892_rest/scripts/line_boxes.py` gives the pixel boxes of every line
+used, so the crops can be remade from the archive's images.
 
 The records:
 
@@ -201,13 +207,14 @@ The records:
   - HathiTrust full-text search in Chrome; its check page cleared on its own.
 - What did not:
   - Google Books: API daily quota error, and an unusual-traffic page on the web search.
-  - HathiTrust's in-volume search page did not render, so I have no page numbers.
+  - HathiTrust's in-volume search page did not render, so I had no page numbers; the Bavarian State Library's
+    digital copy (24 Nov) gave them.
 
 ## What is left
 
 - Nothing in lead 892 is unread. Not transcribed by us: the other two cipher passages of 8-2-22 and the duplicate
   (images 5-8), fol. 160v-161r of 8-3-10, and the duplicate of 8-3-12; each original passage carries a decipherment
   between the lines or filed with it.
-- Austro-Turcica's page numbers for the hits (search-only volume), and a word-by-word comparison of the edition with
-  the decodes.
+- A word-by-word comparison of the edition with the decodes (only the points named above were compared), and the
+  edition's page images (only the library's OCR text was read).
 - An independent AI review was made on 23 Nov 2026 and its corrections applied; no person has reviewed the package.
