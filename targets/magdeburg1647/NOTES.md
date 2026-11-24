@@ -536,3 +536,22 @@ f.6 recto stays decoded, not read: its 19 unvalued name signs and 19 unconfirmed
 **Profile.** `outcome.class` stays read in part and `outcome.method` stays "read with known key" (owner's decision). `fraction_read` 0.3814 → 0.0432, re-measured as cipher words of the documents that read / all cipher words filed: (54 + 82 + 34) / 3,935 (f.5, f.6 100, f.7 82, f.101 34, f.102 84, f.104 100, f.204 52, Beling annexes 3,429). The old figure was the strict share of single words on the five held-out slips at first pass; those per-slip figures are unchanged in the table of counts above. `documents[]`: f101 read, f6 not read.
 
 **Not done.** f.102, f.104, f.204 (no clear draft found) and the Beling annexes were not re-read; f.210 and f.212 have clear copies in Nr. 540 and a source-assisted edition by the contributor, and were left at the state the integration check of 14 Nov set. The R5 transcriptions have no second reader.
+
+## 24 Nov 2026 - No. 29, view 244: three blind sign-shape sheets (Brice Dudout, with Claude), `dudout/no29_fr244_sign_check/`
+
+A new pass on view 244 only. It builds on McBratney's blind16 transcription and judge and on Beling's prior work, and
+changes none of their files. The figure of record (77.4% on views 244-245) is unchanged and No. 29 stays decoded, not
+read. No image or derivative is filed (LASA licence).
+
+- **Sheet A (g/q).** 10 words read.
+- **Sheet B (g/q, g/y).** 10 words read. Two of them are {probable}: cuius, from a distinct capital form "G-maj"
+  valued c by sense, and erclaret.
+- **Sheet C (t/l, d/e/c, final f/n).** All 8 decided targets confirm the transcription: the scribe left these letters
+  in clear (n for f, e for d, l for t). 9 words read that way, all {probable}.
+- **Extension.** The sheet C rule applied mechanically to the rest of the view, not checked by eye, reads 29 more
+  {probable} words.
+- **View 244 words read:** 188 -> 198 -> 208 -> 217 -> **246 of 432 (56.9%)**; 206 (47.7%) without any {probable}.
+  S letters 1961 -> 2024 of 2438.
+- **Controls.** Sheet A: 2 valid controls, both passed (C2 was boxed on the wrong sign). Sheet B: 2 valid, both passed.
+  Sheet C: 3/3 passed. Recorded as `outcome.sign_check`.
+- **Next.** An eye check of the extension family by family, the two badly boxed targets of sheet B, then view 245.
