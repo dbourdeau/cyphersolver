@@ -1,0 +1,312 @@
+{
+ "schema_version": 1,
+ "target": "baselANV9",
+ "title": "Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century): key recovered from the volume's own clear copy, three held-out passages decoded, not read (contributed by Malcolm McBratney with Claude)",
+ "documents": [
+  {
+   "id": "anv9",
+   "read": "not read",
+   "shelfmark": "Basel, Universitätsbibliothek, UBH AN V 9 (old shelfmark K IV 19), the cipher leaves transcribed here: ff. 4r and 4v (training), 15r lines 1-12 (H1), 159r (H2), 34r rims of pentacles 3 and 4 (H3); e-manuscripta.ch, https://doi.org/10.7891/e-manuscripta-185551",
+   "date": "17th century (UB Basel catalogue: 1600-1699)",
+   "year": "unknown",
+   "country": "unknown",
+   "language": "Latin",
+   "pages": 5,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "The volume's own clear copy: ff. 101r-155r give the text of ff. 3r-96v and ff. 166r-170r that of ff. 158r-162r, 'aber in normaler Schrift geschrieben' (Steinmann's unprinted description, PRIOR_ART.md). The held-out passages' counterparts are ff. 109v (H1), 167r (H2) and 123r (H3). The volume also holds its key: f. 99r (Danish notes) with a German translation on f. 98r, viewed here only after the decode.",
+    "partial": true
+   },
+   "length": {
+    "tokens": 2132,
+    "distinct": 96,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "e-manuscripta IIIF page images 2000 px wide (https://www.e-manuscripta.ch/i3f/v20/<page id>/full/2000,/0/default.jpg, FETCH_LOG.txt), with zoomed crops; the pentacle rims from a polar unwrap (scripts/unwrap.py)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Length: _check_profile.py --measure transcription.txt --drop-first gives 2634 whitespace tokens = 2132 signs + 475 word separators (/) + 12 line fillers (Fill) + 15 line-end hyphens (Eq); distinct 99 = 96 sign labels with their marks + /, Fill and Eq. By page: f. 4r 546 signs, f. 4v 681, f. 15r lines 1-12 290, f. 159r 563, f. 34r rims 52. With the dot above, the dot below and the diaeresis split off as tokens of their own (scripts/common.py): training 1,383 key tokens, held-out 1,034 (work/decode_counts.txt). One reader (Claude Opus 5.5), one pass; the training leaves were transcribed with the clear copy beside them and the held-out leaves by a reader who already knew most of the system (FREEZE_TX.txt). 8 signs not identified (?), 1 in training and 7 held out. Frozen before any key building (FREEZE_TX.txt). Not checked by a person."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic",
+   "syllabic",
+   "nomenclator"
+  ],
+  "summary": "A secret alphabet of invented and digit-like signs for Latin letters, with signs for common letter groups (et, er, es, it, st, ct, sc, nt, ae), a few word signs (qui, quod, quam, que, non), and marks on a sign that add m (dot above) or n (dot below) or double its letter (two dots above).",
+  "symbol_kind": "symbols",
+  "distinct_symbols": 51,
+  "diacritics": {
+   "used": true,
+   "note": "A dot above a sign adds m and a dot below adds n after its letter; two dots above double the letter; two dots on the line repeat a vowel written earlier in the word (the key leaf: the letter before with a dot in its middle) and three dots a letter further back; a bar or a loop on a sign makes another sign (Bx~ non, Oe~, Tk@, Dl@)."
+  },
+  "homophones": {
+   "used": true,
+   "max_per_vowel": 3,
+   "max_per_consonant": 4
+  },
+  "nomenclator": {
+   "present": true,
+   "entries": 7,
+   "kinds": [
+    "common words"
+   ]
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "kept",
+  "doubled_letters": "special sign",
+  "notes": "51 base sign labels (SIGNS.md, the placeholder ? not counted) and 6 marks; the recovered key (KEY.tsv) values 62 tokens and two rules. Homophones counted from KEY.tsv: e has 6, D1 and Cd, s has 6s, 6v, Ph and Ar; several of these are word-final forms or context signs on the key leaf (Ea a, Lr t, Pl r and Ar s final; D1 e after r, i after t). The 7 word signs met in training are Oe\" quod, Oe^m quam, Oei qui, Oe~ (quas or quae in training, quem on the leaf), Q3 que, Bx~ non and 5~ (igitur, no letters in the key); the key leaf lists more (quae, enim, autem) and calls them abbreviations as usual in Latin. Line fillers and line-end hyphens carry no value. The volume's own key leaf (f. 99r, Danish; German translation f. 98r) is the same key; it was compared only after the decode (work/keyleaf_vs_key.tsv)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "In the volume itself: the clear copy (ff. 101r-155r, 166r-170r) and the key leaf f. 99r with its German translation f. 98r (Steinmann's description; swisscollections). No edition, study or published decipherment of the cipher found in Cyphersolver's issues and repository, DECODE, the web or Schmeh's list of encrypted books (PRIOR_ART.md). Not opened: Skinner and Rankine 2008, Mathers 1889, Boudet's census of Clavicula manuscripts.",
+   "found": "before attempt",
+   "used": true
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "human_role": "Malcolm McBratney directed the work and set its rules (prior art first; the adjacent-plaintext track; the key leaves kept unseen until the key was frozen; transcription and key frozen before one decode; held-out passages; a separate strict judge; the first pass as the figure of record; shuffle controls), and the swisscollections record was read in his own Chrome session after he cleared its bot check. Claude sessions did the transcription, key recovery, decode, judging, reading and translation. No person has read the signs or the text without AI.",
+  "tools": [
+   "scripts/solve.py: dynamic-programming word alignment of the training cipher words to the clear copy's words, and an EM emission model over segmentations (forward-backward, Viterbi); reads the training files only",
+   "scripts/decode_once.py: the one decode with the frozen key",
+   "judge/count.py: re-adds the strict judge's word tags",
+   "scripts/score_clear.py: Levenshtein letter match against the clear copy",
+   "scripts/shuffle.py: 5,000 shuffled keys at two seeds, scored with the la-letters model from lang/ and by clear-copy match",
+   "scripts/lexcheck.py: share of decoded letters in words of the shared Latin lexicon (lang/lexicons/la.json.gz)",
+   "scripts/unwrap.py: polar unwrap of the pentacle rims for transcription",
+   "docs/_validate.py with validation.tsv (model la)"
+  ],
+  "models": [
+   "Claude Opus 5.5 (Anthropic): the solver session (prior art, transcription, key recovery, decode, controls) [stated by the contributor]",
+   "Claude Opus 5.5 (Anthropic): the strict judge, a separate session given only judge/BRIEF.txt and judge/decode.txt [stated by the contributor]",
+   "Claude Opus 5.5 (Anthropic): the session that assembled this folder, reading.md, translation.md and validation.tsv"
+  ],
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-25"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Prior art before any transcription (11:59-12:10 UTC): Cyphersolver issues and issue bodies, the repository (catalogue, leads, COVERAGE), DECODE public search, web searches, Schmeh's list of encrypted books, Steinmann's unprinted description (UB Basel PDF) and the swisscollections record (PRIOR_ART.md). No reading, edition or study of the cipher found; the catalogue names the clear copy and the key leaves.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "IIIF manifest 5353221 (380 canvases) and page images at 2000 px by plain curl (FETCH_LOG.txt). The e-manuscripta title page and swisscollections showed bot checks to curl, not passed by the script; swisscollections was read in the contributor's own browser. The key leaves ff. 98-99 (canvases 199-206) were quarantined in scripts/fetch.sh until the key was frozen.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Split recorded before any key building (SPLIT.md): training ff. 4r-4v against the clear ff. 101r-102r; held out H1 f. 15r lines 1-12, H2 f. 159r, H3 f. 34r rims of pentacles 3 and 4. Transcribed by sign shape with neutral labels (SIGNS.md): 2,132 signs, 51 base labels, 8 signs not identified. Frozen at 12:51:30 UTC (FREEZE_TX.txt). The training leaves were transcribed with the clear copy beside them.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding",
+    "plaintext matching"
+   ],
+   "what": "Run 1 (scripts/solve.py, training files only): word alignment of cipher to clear words and an EM emission model, 300 word pairs. Two modelling faults found on the training data: the dots above the oe-sign split off as a doubling mark (giving quo + d for quod), and one-sign words of four letters (quam, quae) unable to align (work/KEY_run1.tsv, SOLVE_LOG.md).",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "beam/DP decoding",
+    "plaintext matching",
+    "key-structure hypothesis"
+   ],
+   "what": "Run 2, the key of record: 301 word pairs, no cipher word unpaired, 62 tokens valued. Two context rules adopted on training counts (bar 70%): two dots on the line = the nearest preceding vowel of the word (34 of 43), two dots above = the letter twice (14 of 14). Ambiguous tokens take their majority value (Cl r 9 / i 6; Dl@ s 9 / us 8 / as 7). Key frozen at 12:55:46 UTC (FREEZE_KEY.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "One decode of the three held-out passages with the frozen key (scripts/decode_once.py, DECODE.txt): 1,034 key tokens, 10 with no key value, 1,138 letters; no emendation. The placeholder label ? (sign not identified) carries the value i from its one training use, so the 7 unidentified held-out signs decode as i.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Separate strict judge (Claude Opus 5.5, given only judge/BRIEF.txt and judge/decode.txt) scored each letter S (in a word that reads as sense), E (one-letter slip) or N: H1 229/367 = 62.4% (below the contributor's 65% line), H2 470/702 = 67.0%, H3 48/69 = 69.6%, all 747/1,138 = 65.6% (judge/judge.tsv, re-added by judge/count.py; the lenient count, for sensitivity only, gives 73.6%).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "plaintext matching"
+   ],
+   "what": "After the decode the clear counterparts were located and transcribed: f. 109v (H1), 167r (H2) and 123r (H3, against SPLIT.md's expectation that the pentacles had none). Clear letters reproduced (Levenshtein, abbreviations expanded): H1 311/425 = 73.2%, H2 616/733 = 84.0%, H3 61/73 = 83.6%, all 988/1,231 = 80.3% (score/score_clear_out.txt). Identical words in order: 43.4%, 42.8%, 57.1% (score/worddiff_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Shuffle control: the key's values permuted among its 58 base tokens (the three mark tokens and the two-dot rule fixed), 5,000 keys at each of seeds 20261112 and 7, scored with the la-letters model (lang/) and by clear-copy match: 0 of 5,000 reach the real key on any statistic, z 5.2 to 7.2 for the model and 10.6 to 14.1 for the clear match (score/shuffle_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "The volume's key leaf f. 99r (Danish) was viewed only after the key freeze and the decode and transcribed with this project's labels (tx/KEYLEAF_f099r.txt). Of the 52 recovered values it covers, 46 agree; 4 differ (Dl@ s where the leaf has us, Oe~ quas for quem, Lmt an for at, D3 o where the leaf has a positional rule); Cl depends on context on the leaf; the two-dot rule is an approximation of the leaf's. 10 recovered tokens are not on the leaf (work/keyleaf_vs_key.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "statistics",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "Lexicon check, not the judge: the share of decoded letters in words of the shared Latin lexicon is H1 30.8%, H2 44.0%, H3 36.2%, against 79.8%, 77.1% and 54.8% for the clear copy (score/lexcheck_out.txt). In-sample fit on the training leaves: 92.8% of clear letters reproduced (score/train_fit_out.txt).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "reading",
+   "what": "reading.md and translation.md made by the assembling session from DECODE.txt and the judge's word tags, nothing emended: words read as sense H1 35/77 (0.455), H2 70/133 (0.526), H3 8/15 (0.533), all 113/225 (0.502); docs/_check_reading.py finds no clean sentence (H1 0/7, H2 0/11, H3 0/2). All three passages filed 'decoded, not read', the target 'not read'. A decoder written here from KEY.tsv and the transcriptions reproduces DECODE.txt on 37 of 37 lines (validation.tsv).",
+   "result": "partial"
+  },
+  {"date": "2026-11-25", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1024 tokens, 49 types, la order 4: reading -2.639 per letter; random keys -4.459 (z 5.0); key annealed onto shuffled ciphertext best -2.782 (mean -2.817, z 6.5); annealer on the real text -2.553. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-25", "model": "la", "file": "validation.tsv", "tokens": 1024, "types": 49, "tokens_per_type": 20.9, "score": -2.639, "nulls": {"random keys": {"n": 200, "mean": -4.459, "sd": 0.366, "max": -3.726, "z": 5.0, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.817, "sd": 0.028, "max": -2.782, "z": 6.5, "p": 0.1429}}, "power": -2.553, "verdict": "pass", "notes": "claimed per-occurrence score -2.639; polyphony 0.016; 10 unread tokens left out; annealer on the real text from random keys reached -2.553"}, 
+  "class": "not read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The key was recovered from cipher ff. 4r-4v aligned word by word with the volume's own clear copy (ff. 101r-102r), frozen, and then used for one decode of three held-out passages (a strict judge finds 747 of 1,138 letters in words that read as sense; the decode reproduces 80.3% of the clear copy's letters); the volume's key leaf f. 99r, viewed only afterwards, agrees on 46 of 52 values. The decode does not yet read as sentences.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.502,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, counted with research/reading_audit/v10_relabel.measure_text over the three held-out passages: 113 of 225 decoded words read as sense (H1 35/77 = 0.455, H2 70/133 = 0.526, H3 8/15 = 0.533); one-letter slips (word(?)), no-sense words ([?word]) and signs with no key value ([?]) are holes. Strict judge by letters: 747/1,138 = 0.656 (judge/judge.tsv). The rest of the volume's cipher is not transcribed.",
+  "verification": ["independent clear copy", "key confirms", "statistical test"],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "new cipher with solution",
+    "note": "Basel UB AN V 9 brought in with the key recovered from the volume's clear copy, one decode of three held-out passages, a strict judge and controls, with Claude (Anthropic: Opus 5.5 solver, judge and assembly)",
+    "date": "2026-11-24"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "ff. 4r, 4v, 15r (lines 1-12), 159r and 34r (two pentacle rims), from the e-manuscripta images, with Claude (Anthropic)",
+    "date": "2026-11-24"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Holes in the three decoded passages: 112 of 225 words (H1 42 of 77, H2 63 of 133, H3 7 of 15)",
+    "blocker": "not-attempted",
+    "detail": "one-letter slips and no-sense words from key faults the judge's errors show (the sign 1, b in the key, where the sense wants a; r or rr for te or i; irr for the Xri abbreviation of Christi; c for h; final t decoded as n) and the placeholder value of ?; an amended key (the key leaf, more training) and a second decode would close many; under the contributor's protocol the first pass stays the figure of record and a second decode is reported apart"
+   },
+   {
+    "item": "10 held-out tokens with no key value (Oei~ 3, Bx@ 2, Pe~, 5b~, Yy, Sz, Ec)",
+    "blocker": "not-attempted",
+    "detail": "none occurs in the training leaves; the key leaf gives some (for example quae), not applied here"
+   },
+   {
+    "item": "8 signs transcribed ? (not identified): f. 4r l. 17, f. 15r ll. 5 and 9 (2), f. 159r ll. 3, 7 and 22, f. 34r pentacle 4",
+    "blocker": "not-attempted",
+    "detail": "not re-read on the image after the decode (freeze rule); the 7 held-out ones decode as i through the placeholder key entry"
+   },
+   {
+    "item": "The rest of the volume's cipher: ff. 3r-96v (conjurations, pentacles 33r-55v, 97r-v) and ff. 158r-162r (Septem sigilla), apart from the passages transcribed here",
+    "blocker": "not-attempted",
+    "detail": "not transcribed or decoded; the clear copy ff. 101r-155r and 166r-170r gives the same text per the catalogue"
+   },
+   {
+    "item": "Pentacle inscriptions with no clear counterpart (about 112, a count stated by the contributor's session and not made here)",
+    "blocker": "not-attempted",
+    "detail": "new text: not transcribed or decoded yet; the two rims decoded here (f. 34r) do have a counterpart on f. 123r"
+   },
+   {
+    "item": "Prior art in print: Skinner and Rankine, The Veritable Key of Solomon (2008); Mathers (1889); Boudet's census of Clavicula manuscripts",
+    "blocker": "needs-physical-access",
+    "detail": "not opened; web searches found no mention of a Basel cipher copy"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "anv9",
+    "label": "H1: f. 15r, lines 1-12, conjurations (held out)",
+    "transcription": "tx/f015r.txt",
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "reading_section": "H1",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.455,
+    "summary": "The end of one conjuration and the beginning of the next ('Alia coniuratio') in the Clavicula Salomonis: the spirits are adjured by the teachings of the faith, the saints, and the life of Christ (the Annunciation, the coming, the Nativity, the circumcision, the baptism, the fast, the Transfiguration on Mount Tabor). The volume's clear copy has the passage on f. 109v.",
+    "note": "Strict judge 229/367 letters = 62.4%, below the contributor's own 65% line; 35 of 77 words read as sense; no clean sentence."
+   },
+   {
+    "doc": "anv9",
+    "label": "H2: f. 159r, Sigillum Iovis (held out)",
+    "transcription": "tx/f159r.txt",
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "reading_section": "H2",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.526,
+    "summary": "The instructions for the seal of Jupiter in the Septem sigilla planetarum: cast in English tin on a day of Jupiter when the Moon enters Libra, with the planet's figure on one face and a priest-philosopher with a book on the other, and kept in sky-blue silk; carried, it wins love, grace and favour, increases fortune and frees its bearer from fear. Contents from the decode and the volume's clear copy (f. 167r).",
+    "note": "Strict judge 470/702 letters = 67.0%; 70 of 133 words read as sense; no clean sentence (0 of 11)."
+   },
+   {
+    "doc": "anv9",
+    "label": "H3: f. 34r, rims of pentacles 3 and 4 (held out)",
+    "transcription": "tx/f034r_p34.txt",
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "reading_section": "H3",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "decoded, not read",
+    "read_share": 0.533,
+    "summary": "The rim inscriptions of two pentacles: the bearer will fear neither the devil nor phantoms, and will not perish in arms. Contents from the volume's clear copy (f. 123r); the decode has a hole where 'non' stands in pentacle 4.",
+    "note": "Strict judge 48/69 letters = 69.6%; 8 of 15 words read as sense; no clean sentence (0 of 2)."
+   }
+  ],
+  "key_file": "KEY.tsv",
+  "notes": "Held-out design: the key was built from ff. 4r-4v against the clear copy only; ff. 15r, 159r and 34r were decoded once with the frozen key, scored by a separate strict judge and, after the decode, against the clear copy. Blindness limits (FREEZE_TX.txt): the training leaves were transcribed with the clear copy beside them; the held-out leaves were transcribed by a reader who knew most of the system; the first two lines of H2's clear page were seen at contact-sheet size before the decode. The key leaf was viewed only after the key freeze and the decode (the contributor's record; the file times agree, and the RFC 3161 stamps of 21:21 UTC come after all of it). Class 'not read': the decode puts 65.6% of letters in words that read as sense but builds no clean sentence, so each passage is 'decoded, not read' under README Conventions ('A reading must read'); the contributor's working class was 'read in part'. Verification is of the key: the volume's clear copy (80.3% of its letters reproduced on the held-out passages) and its key leaf (46 of 52 values). The shuffle control and the judge are model work and are in the solution steps."
+ }
+}
