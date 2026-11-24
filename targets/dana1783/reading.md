@@ -10,7 +10,8 @@
 # Seven numbers cut or missing at the frame edge of the triplicate (11, 20, 15, 27, 11, 26, 1: the s of is, the o of
 # or, the a of measure, the m of may, the f of influence, the l of properly, the n of hence) are taken from the
 # clerk's transcript of No. 23 in PCC item 109 (naId 2316037, object 207), which gives them in full. They are not
-# marked here; transcription.txt still shows what the triplicate shows.
+# marked here; transcription.txt still shows what the triplicate shows, and transcription_item109.txt is the
+# clerk's transcript with all 215 numbers.
 # Count: 52 words, 5 holes (In, is, any, irresistable, influence): 47 of 52 = 0.904.
 
 [I]n an [Administration] like this, which [i]s not guided by an[y] settled principles or system, you can be certain of no measure.

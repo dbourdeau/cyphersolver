@@ -1,6 +1,6 @@
 # Delacroix to Létombe, Paris, 25 Messidor an V (13 July 1797): despatch No. 5 in a French numeric code (catalogue 649)
 
-Status: in progress (read in part since 23 Nov 2026, from the ministry's clear draft found by Andrew Beling, PR #884; the write-up, the catalogue 649 fields and the DECODE queue entry are still owed)
+Status: read in part (key recovered from external plaintext: the ministry's clear draft found by Andrew Beling, PR #884; owner's decision of 23 Nov 2026; written up 24 Nov 2026, `docs/delacroix1797.html`)
 
 **State, 24 Nov 2026.** Method: key recovered from external plaintext (`outcome.method` "key recovered based on
 plaintext from external sources"). Class: read in part. Key: partial. Owner's decision of 23 Nov 2026 on PR #884. The
@@ -9,7 +9,7 @@ Andrew Beling, with AI agents, found it, laid it on Brackx's 653 groups and buil
 (`beling2026/`). Read share 0.939 (27 holes; 444 cipher words by the contributor's script, 442 by our reviewer's count,
 415 of 442). Strict share 0.667: 296 of 444 words rest only on values confirmed by two or more agreeing uses; 121 words
 rest on at least one of the 148 single-use values and count as probable (`strict_share.py`). See "Integration of PR
-#884" below.
+#884" and "Write-up steps, 24 Nov 2026" below.
 
 The sections from "What the numbers show" to "Second round" record the ciphertext-only attempt of 2 Nov 2026, which
 established no value: what they say about the meaning of groups is hypothesis, and most of it is now replaced by the
@@ -126,15 +126,22 @@ spot checked by the contributor; the CADN article is still unseen.)
 
 - 8 places where a digit change to Brackx's transcription is proposed (257 three times, 108, 808, 1024, 381, 327) - blocker: illegible; blotted or doubtful digits on the film, three blind AI readers each, only 898, 1034 and 527 supported by two or more; none applied until a person has looked at NARA M30 roll 4 frames 0244-0245
 - 17 groups with an unsure (class C) value: 383, 496, 526, 571, 1122, 1126, 347 - blocker: no-key-material; each stands for different draft letters at different places, and only this one letter in the code is known
-- 4 groups whose table value differs from the draft's letters (175 ses/se, 855 pres/pre, 355 iez/ez, 20 ay/ai) - blocker: no-key-material; the draft is the minute, not the copy that was enciphered, and the sent wording is not held
-- the 148 single-use values, on which 121 words of the reading rest - blocker: no-key-material; untested outside this letter, no second text in this code found (39CP/48 paged in full by the contributor, 39CP/47 spot checked only)
-- the received No. 5 or a deciphered copy in CADN 519PO/1 art. 1, and AMAE CP États-Unis vol. 47 in full - blocker: needs-physical-access; the CADN article is not digitised as far as found, vol. 47 not paged in full
+- 4 groups whose table value differs from the draft's letters (175 ses/se, 855 pres/pre, 355 iez/es, once ez, 20 ay/ai) - blocker: no-key-material; the draft is the minute, not the copy that was enciphered, and the sent wording is not held
+- the 148 single-use values, on which 121 words of the reading rest - blocker: no-key-material; untested outside this letter, and no second text in this code is known: none on NARA frames 0236-0252, none among the targets, catalogue and leads searched again on 24 Nov 2026 (the only French diplomatic texts of these years there, `astrea1799`, Rozier to Talleyrand 1798, and catalogue 521, Rivals to Sieyès 1798, are not online), none in 39CP/48 (paged in full by the contributor); 39CP/47 was spot checked by the contributor only
+- the received No. 5 or a deciphered copy in CADN 519PO/1 art. 1 - blocker: needs-physical-access; the article is not digitised as far as found
+
+Open lead, not an unread piece: 39CP/47 (January to June 1797, 938 images online) has not been paged in full for a text
+in numbers, and the other volumes of the series have not been looked at. The contributor's spot check of 39CP/47 and
+full paging of 39CP/48 found the ministry's decipherments of Létombe's despatches and no numbers. On 24 Nov 2026 the
+paging was not done here: the archive's viewer opens with a notice of its conditions of reuse that the reader must
+accept, and that is the owner's to accept, not a session's ("Write-up steps" below).
 
 ## Transcription doubts
 
 The digits are Brackx's (`ciphertext.txt`), unchanged. The doubts below are the contributor's, each read blind on the
-film (NARA M30 roll 4, frames 0244-0245) by three AI readers; no person and not the project has looked at the film for
-them. Full list with the readers' answers: `beling2026/proposals/transcription_corrections.tsv` and
+film (NARA M30 roll 4, frames 0244-0245) by three AI readers. Brackx's issue #122 lists several of the same places
+(808, 1024, 381, 108, 1105) among the readings he checked twice at full resolution when he transcribed; since then no
+person has looked at the film for them, and the project only at 300 and 1105 (below). Full list with the readers' answers: `beling2026/proposals/transcription_corrections.tsv` and
 `beling2026/README.md`, "Transcription doubts".
 
 - 808 (245 left, line 12, 8th group) - read: 898 with "80" written above (3 of 3 readers); checked: image, decode (898 = con four times; le-con); proposed, not applied
@@ -144,30 +151,36 @@ them. Full list with the readers' answers: `beling2026/proposals/transcription_c
 - 108 (244 right, line 19, 1st) - read: 108 or 128, no reader 100; checked: image, decode; unresolved, the text wants "sur" (100)
 - 381 (245 left, line 25, 11th) - read: 381 (3 of 3, blotted); checked: image, decode; unresolved, the text wants "del" (361)
 - 383 (244 right, line 7, 3rd) - read: 383 (one second choice 363); checked: image, decode; unresolved, the text wants "de la" (363)
-- 300 (244 right line 5) and 1105 (245 left line 20) - read: 308 by two readers, and 1185 or 1195; checked: image; single-use values, numbers in doubt, seen in passing by the contributor
+- 300 (244 right, line 5, 10th) and 1105 (245 left, line 20, 1st) - read: 300 or 308 (308 by two of the contributor's readers), and 1105, 1185 or 1195; checked: image, decode; seen in passing by the contributor; looked at again on the frames at twice their size on 24 Nov 2026 (an AI reading for the maintainers, not a person): the last digit of 300 has the same looped form as the last digit of 630 two groups on, and the third digit of 1105 is a filled loop over show-through; each number occurs once, so the decode gives the draft's letters (the l of fédéral; France) under any of these readings and cannot decide; unresolved, Brackx's digits kept
 
 ## Escalation
 
-- [x] siblings: frames 0236-0252 have no decipherment (Brackx); catalogue and leads searched for Létombe, Delacroix, Talleyrand, Adet, Fauchet: `astrea1799` (Rozier 1798, ciphertext not online) only, and no shared key shown; the contributor paged 39CP/48 in full and spot checked 39CP/47: the ministry's decipherments of Létombe's despatches, no second text in numbers
+- [x] siblings: frames 0236-0252 have no decipherment (Brackx); catalogue and leads searched for Létombe, Delacroix, Talleyrand, Adet, Fauchet: `astrea1799` (Rozier 1798, ciphertext not online) only, and no shared key shown; the contributor paged 39CP/48 in full and spot checked 39CP/47: the ministry's decipherments of Létombe's despatches, no second text in numbers; searched again 24 Nov 2026 over the catalogue, the leads and every target profile of 1789-1803: nothing new online (catalogue 521, Rivals to Sieyès 1798, is in the Archives nationales, not online)
 - [x] clear-pages: heading and close only on the NARA copy; King's No. 53 has no decipherment; the clear draft found in Paris, CP États-Unis vol. 48, ff. 41r-42r (Beling, 21 Nov 2026)
-- [x] known-keys: seven French numeric keys in the repo tried, all within chance
-- [x] print: Turner 1904, web searches; Schnakenbourg 2026 paywalled; Nasatir and Monell not seen
+- [x] known-keys: seven French numeric keys in the repo tried, all within chance; 24 Nov 2026, the table compared number by number with every key file under `targets/` (`key_compare.py`): the seven French keys agree on 0 of their 39 to 209 shared numbers, and no file of the 174 compared agrees on more than 3
+- [x] print: Turner 1904, web searches; Schnakenbourg 2026 paywalled; Nasatir and Monell not seen; 24 Nov 2026, four web searches on the draft's wording, on King's No. 53 and on the ministry's cipher: no printed or quoted text of No. 5 and no table
 - [x] key-rebuild: 2 Nov annealers and hand phrase matching gave no key; 21 Nov the contributor's table from the draft: 297 numbers, 136 confirmed by two or more uses
-- [n/a] retry: every group already has a table value; the 29 marked groups need a person on the film or a second text in the code, not another run
+- [x] retry: 24 Nov 2026, the table applied again to all 653 groups and compared with the reading by `docs/_replay.py` (`replay.py`): no difference that the reading leaves unmarked; every group already has a table value, so the 29 marked groups need a person on the film or a second text in the code, not another run
 
 ## Files
 
 `ciphertext.txt` (Brackx's transcription), `cribs.tsv` (unverified hypotheses of 2 Nov, superseded by the table),
 `solver/` (scripts; the Turner text, model tables and logs are in the untracked local `.work/delacroix1797/`), `img/`
 (NARA frames 0243-0245, not to be committed), `beling2026/` (the contribution of PR #884: draft transcription,
-alignment, partial table, decryption, reading, translation, tests), `strict_share.py` (the strict share).
+alignment, partial table, decryption, reading, translation, tests), `strict_share.py` (the strict share),
+`key_compare.py` (the table against every key file in the repository), `replay.py`, `replay.tsv`, `replay.json` (the
+key replay), `mk_validation.py`, `validation.tsv` (the pairs for `docs/_validate.py`), `mk_reveal.py` (the passage
+shown on the page, `docs/reveal/delacroix1797.json`).
 
 ## Order of events in `beling2026/` (Andrew Beling, with AI agents)
 
 The claim that the test plan came before the draft was read rests on local file times and SHA-256 sums only (no
 outside timestamp). The draft (CP États-Unis vol. 48, f. 41r) was first opened on 21 Nov 2026 at 00:52:04 EST, by the
-AI agent that found it (its request log); two blind AI readers transcribed it 01:07-01:13 EST; the plan was written at
-01:31 EST and hashed at 01:32 EST by an agent that, by its own record, had not seen the draft's wording. See
+AI agent that found it (its request log); two blind AI readers transcribed it 01:07-01:13 EST; the plan was written and
+hashed (with the scripts and the ciphertext) at 01:31 EST and the test text fixed at 01:32 EST
+(`plan/FREEZE_before_reading_draft.txt`), by an agent that, by its own record, had seen the two readers' short reports
+(line counts and hard spots such as "[facilité?]", "Boston") but not the draft's wording. (This line read "hashed at
+01:32" until the claims review of 24 Nov 2026.) See
 `beling2026/README.md`, "The test".
 
 ## Integration of PR #884 (maintainers, 23-24 Nov 2026)
@@ -180,7 +193,12 @@ rest on the 148 single-use values count as probable, with a strict share beside 
   filed decryption; the contributor's second scorer for the held-out test gives 36 of 43 predictions on the last 85
   groups (1,000 shuffled keys: mean 12.3, at most 18); the frozen hashes match.
 - **Not checked by us:** the draft against the archive's images (the viewer needs JavaScript), the NARA film, and
-  tests 1, 2a and 2b by rerun. Every reader of the draft and of the film is an AI agent; no person has looked.
+  tests 1, 2a and 2b by rerun. Who read what (corrected after the claims review of 24 Nov 2026; this line read "Every
+  reader of the draft and of the film is an AI agent; no person has looked", which the profile's transcription record
+  contradicts): the 653 groups were transcribed from the film by Michael Brackx, recorded in `profile.json` as a
+  person's transcription (issue #122, where he lists the doubtful readings he checked twice); the draft was read only
+  by AI agents (two readers and a third that merged them), and no person has read it; the eight digit proposals rest
+  on the contributor's AI readers; no person has compared the reading with the film.
 - **Read share.** 27 words carry a mark: 0.939 (444 cipher words by `beling2026/scripts/make_reading.py`, 442 by our
   reviewer's count, 415 of 442). The reading is the draft laid on the groups, so this share is circular by design: it
   says how consistently the table gives the draft.
@@ -195,5 +213,53 @@ rest on the 148 single-use values count as probable, with a strict share beside 
 - **The draft is not the sent text.** One clause has no groups in the American copy ("est arrivé à Paris, il y a
   quinze jours: Il"); the groups carry "utilité" where the draft's overwritten word reads "facilité".
 - **Old attempt.** `outcome.parts` keeps the ciphertext-only attempt of 2 Nov as its own part, not solved.
-- **Still owed:** the write-up page and its claims review, catalogue 649 known/open, the README row, and the DECODE
-  queue entry (Brackx's transcription and the partial table, held until Brackx and Beling agree).
+- **Owed at that date, done on 24 Nov 2026** (next section): the write-up page, catalogue 649 known/open, the README
+  row, and the DECODE queue entry (held until Brackx and Beling agree). The page's claims review is the coordinator's.
+
+## Write-up steps, 24 Nov 2026 (an AI agent for the maintainers; not a person)
+
+Stopping point by the six escalation steps: every marked group and every single-use value waits on a person looking
+at the film or on a second text in this code, and no second text is known. One lead stays open (39CP/47 in full, see
+"Remaining gaps").
+
+- **Siblings.** The catalogue, `research/leads.json` and every target profile of 1789-1803 searched again for French
+  diplomatic texts in numbers: `astrea1799` (Rozier, whom this despatch names, to Talleyrand, 1798; the numbers are
+  on a Massachusetts Historical Society microfilm, not online) and catalogue 521 (Rivals to Sieyès, 1798, Archives
+  nationales 284AP/12, not online). Nothing to apply the table to.
+- **Known keys, direct comparison** (`python key_compare.py`). With the table in hand the 2 Nov scan can be made
+  exact: for each key file under `targets/` that lists numbers with values, the numbers this letter uses that carry
+  the same value in both. 174 key files compared. The seven French keys of the 2 Nov scan agree on none of their
+  shared numbers (Bouillé K6 0 of 129, Damas 0 of 131, the Martinique table 0 of 130, Mercier 1761 0 of 50, Ennery
+  1765 0 of 209, d'Affry code X 0 of 39, Champigny 1744 0 of 81). The most any file reaches is 3 of 47 (the Danish
+  chancery's French syllabary of `petkum1665`). No key held here is this code or an edition of it.
+- **Print.** Four web searches (the draft's wording "hazards de la mer", "mauvaise foi des porteurs", "recours au
+  chiffre"; Rozier, Mozard and Hauterive with Létombe; King's No. 53 and "no means of decyphering"; the ministry's
+  cipher of 1797): no printed or quoted text of No. 5 and no table of the code.
+- **Key replay** (`python docs/_replay.py delacroix1797`; adapter `replay.py`). The table applied to Brackx's 653
+  groups and compared with the reading: 441 words by the tool's division (it does not divide at hyphens, so New-yorck
+  twice and Etats-unis once count as one word each, which is the 444 of `make_reading.py` less 3); 414 exact (93.9%),
+  27 marked in the reading (the tool lists 26 as marked and one, `[ay]ent`, as an i/y difference), none unmarked.
+  Where the table lists two values for a number the listed one that the alignment has is taken; the adapter's header
+  says how class C numbers and the proposal places are handled.
+- **Statistical validation** (`python mk_validation.py`, then `python docs/_validate.py delacroix1797 --write`):
+  underdetermined. 622 groups read, 285 numbers, 2.18 uses per number. The reading scores -1.938 per letter on the
+  `fr-modern` model; random keys of the same shape -2.514 on average (z 10.1); but a key of the same shape fitted to
+  the shuffled groups reaches -1.935 on average and -1.927 at best, and the fitting search on the real groups reaches
+  -1.911. So the letter model cannot tell this table from a fitted one on a text this short; the test neither confirms
+  nor refutes it. The reading is real French by construction (it is the draft). The evidence that the draft is the
+  text behind the groups stays the contributor's held-out test.
+- **Two doubtful numbers looked at on the frames** (300 and 1105, "Transcription doubts"): not settled.
+- **The Paris volumes.** The archive's record pages and its search are plain pages (a search for 39CP/47 gives the
+  record `ark:/14366/dg3f7hv6c1bq`, "1797, janv.-juin", 938 images; 39CP/48 is `ark:/14366/bg45qmrw70n9`, 841
+  images). The images open only in its viewer, a JavaScript application: use Chrome for it. Opened in Chrome, the
+  viewer shows a notice, "Conditions de réutilisation", with one button to accept the ministry's conditions of
+  reproduction and reuse. Accepting terms is the owner's act, so the session stopped there: the draft was not seen on
+  the images and 39CP/47 was not paged. A scripted call to the viewer's own interface was refused by the session's
+  permission rules after one answer (record metadata only, no image) and was not tried again.
+- **Catalogue 649** is taken out of `catalogue.json`, as the write-up skill says for a target written up, and listed
+  in `CATALOGUE.md` under "Read or resolved here, and removed"; the README row carries what the entry held, the
+  offline key material included. **DECODE:** no record of this despatch is known (none in the notes, the
+  profile, the vetting of 2 Nov or the local DECODE harvest); the queue entry is a skip with a hold: Brackx's
+  transcription and Beling's draft transcription, table and decryption are not sent before they agree.
+- **Image.** The page's crop is cut from NARA frame 0244 (right page, heading and first five lines). No image of the
+  Paris draft is used.

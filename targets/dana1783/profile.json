@@ -60,9 +60,11 @@
   },
   "nomenclator": {
    "present": true,
-   "entries": 4,
+   "entries": 78,
    "kinds": [
-    "common words"
+    "common words",
+    "names",
+    "places"
    ],
    "unread_groups": 1
   },
@@ -73,12 +75,12 @@
   "word_division": "none",
   "doubled_letters": "written twice",
   "sibling_key": "Livingston's own cipher to Dana, which Dana says he laid aside (P.S. of No. 23; letter of 23 Sept 1782, Wharton V pp. 752-754); not used here.",
-  "notes": "distinct_symbols = 27 table numbers and 4 code groups seen. nomenclator.entries counts the groups seen in No. 23, not Dana's list (78 words by the review's count, not transcribed here). 24 Nov 2026: 31 = Administration, 137 and 168 = Minister, from Dana's own table (PCC 89 vol. II p. 656); the table's example runs N, W, I and restarts at N after a word number, which is the reset described next. The rest of this note is of 27 Oct 2026. After each of 31, 137 and 168 the next letter is under N: the groups reset the key to N (the earlier 'No. 1' sheet prescribes such a restart after an arbitrary character). The text after the opening 29 starts under W, which the reset does not explain, so the opening [29]n an [31] is not confirmed."
+  "notes": "distinct_symbols = 27 table numbers and 4 groups above 27 seen in No. 23. nomenclator.entries = the 78 words of Dana's list (three numbers each, 30-263), transcribed into key.txt on 24 Nov 2026 from his sheet; three of its numbers occur in No. 23, and unread_groups is the 29 that is not in the list. On the sheet the three alphabet columns are headed W, a, r (Dana's key word is War); WIN is the same key in Lovell's convention, where the key letter is the one numbered 1. 24 Nov 2026: 31 = Administration, 137 and 168 = Minister, from Dana's own table (PCC 89 vol. II p. 656); the table's example runs N, W, I and restarts at N after a word number, which is the reset described next. The rest of this note is of 27 Oct 2026. After each of 31, 137 and 168 the next letter is under N: the groups reset the key to N (the earlier 'No. 1' sheet prescribes such a restart after an arbitrary character). The text after the opening 29 starts under W, which the reset does not explain, so the opening [29]n an [31] is not confirmed."
  },
  "conditions": {
   "prior_solution": {
    "exists": "no",
-   "where": "24 Nov 2026: the Hawkins transcripts (PCC item 109, naId 2316037) were checked for Dana's table (objects 103-104) and No. 23 (object 207): the transcript gives the cipher numbers, no decipherment. Earlier: Wharton VI (1889) prints the passage as cipher without decipherment; the key sheet 'No. 1' in PCC 59 vol. 1 pp. 137-138 is an earlier, different scheme (checked after the break); the Madison Papers note says it is not decoded there. Wharton VI p. 464 'The key to Mr. Dana's cipher is missing' belongs to Dana to J. Adams, 1 June 1783, not to No. 23. Original and duplicate of No. 23, the Hawkins transcripts, Giunta, the MHS Dana Papers and the Papers of John Adams vol. 13 (Dana to JA, 4 Oct 1782, and notes, which describe Dana's cipher) not checked. A parallel independent reading by Brice Dudout was published the same day as this one (Europe chiffrée, 27 Oct 2026): a blind break of the same three alphabets, then Dana's own table of October 1782 found at PCC 89 vol. II p. 656; neither used the other.",
+   "where": "24 Nov 2026: the Hawkins transcripts (PCC item 109, naId 2316037) were checked for Dana's table (objects 103-104) and No. 23 (object 207): the transcript gives the cipher numbers, no decipherment. Earlier: Wharton VI (1889) prints the passage as cipher without decipherment; the key sheet 'No. 1' in PCC 59 vol. 1 pp. 137-138 is an earlier, different scheme (checked after the break); the Madison Papers note says it is not decoded there. Wharton VI p. 464 'The key to Mr. Dana's cipher is missing' belongs to Dana to J. Adams, 1 June 1783, not to No. 23. 24 Nov 2026, write-up pass: Wharton V-VI searched in full text (no decipherment; of Dana's despatches from No. 9 on only No. 23 is marked as carrying cipher); the Adams Papers on Founders Online (Papers of John Adams 13 pp. 547-551 and 15 pp. 1-4, 19-21) decode three word numbers in Dana's letters to John Adams with the copy of the cipher sent to Adams and say nothing of No. 23. Not checked: the original and duplicate of No. 23 (not beside the triplicate in the volume, not located), Giunta's The Emerging Nation, Weber 1979 pp. 560-563, and Dana's own file copy of No. 23 in his Official letter-books at the Massachusetts Historical Society (Dana Family Papers vols. 24-25; microfilm P-646 reel 3; not digitised), which may hold the passage in words. A parallel independent reading by Brice Dudout was published the same day as this one (Europe chiffrée, 27 Oct 2026): a blind break of the same three alphabets, then Dana's own table of October 1782 found at PCC 89 vol. II p. 656; neither used the other.",
    "found": "not found",
    "used": false
   },
@@ -221,6 +223,57 @@
    "kind": "verification",
    "what": "Integration review (AI agent, for the maintainers) opened the NARA images by curl. Dana's own sheet, PCC 89 vol. II p. 656 (naId 502963402, object 262, file 407345), one AI reading at reduced size: alphabets a = 15, 6, 20 and n = 1, 19, 6; Adams 30 61 92, Administration 1 2 3; Franklin 123 154 185, Minister 7 8 9; the example and its numbers; 'This goes by a private & safe hand' (the bearer J. Q. Adams is from Dana's letter at p. 648, not from the sheet). The numbers follow their word (Army 35, America 33; 'America. 33. 64. 95'), so 137 and 168 are Minister. 216-263 are sixteen words, Spanish to Warontzow; 264-305 are blank. Object 207 of item 109 laid beside transcription.txt line by line: 215 numbers, all 208 agree, the seven completed numbers are there. So 31, 137 and 168 are read with the writer's own table and the seven numbers are confirmed from a clerk's copy of the despatch (not the triplicate's own sheet). 29 stays open. reading.md recounted: 52 words, 5 holes (In; is, any, irresistable, influence with a slip or the skipped key position), 0.904: read in part. Not checked: the whole sheet number by number; the other words; which copy the clerk had; the original and duplicate of No. 23. No person has checked an image.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "Write-up pass (AI agent, for the maintainers). The clerk's copy of the passage (PCC item 109 p. 202, object 207) transcribed into transcription_item109.txt: eleven lines, 215 numbers. Compared with transcription.txt by script: the 208 fully visible numbers are the same in the same order; the four cut numbers are 11, 15, 27, 26; 20, 11 and 1 stand at the three line ends. So the seven letters the triplicate lacks are in a transcription file.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Page 730 enlarged with no overlay at the doubtful places. The first number is 29: its second figure has the tail of the 9 in the 19 beside it, not the round 3 of the three 23s on the same line. The three numbers Dana wrote in the wrong column (23 in line 1, 12 in line 2, 24 in line 6) are as transcribed, and nothing stands between 7 and 26 in line 5, so the skipped key column is not a lost number. The line ends are as transcription.txt describes them. Recorded in NOTES.md, Transcription doubts.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "key from source",
+   "what": "Dana's sheet (PCC 89 vol. II p. 656, object 262) read at full size and laid beside the clerk's copy (item 109, objects 103-104): the three alphabet columns are headed W, a, r (key word War; WIN is the same key in Lovell's convention); the whole word list transcribed into key.txt, 78 words (Adams 30 to French 60, Franklin 123 to Spain 153, Spanish 216 to Warontzow 231), 264-305 blank. Nothing on the sheet uses 28 or 29, so 29 gets no value from the writer's own key.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Siblings: the leaves next to the cipher in PCC 89 vol. 2 opened (objects 307-319). Pages 723-726 are No. 22 (10 March 1783 O.S.), p. 727 opens '(Tript. No. 23.)', p. 731 opens '(Dupl. No. 24)' of 11 April O.S. No second copy of No. 23 stands here; the original and duplicate were not found.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Print: Wharton V and VI (full text, Internet Archive) searched by script for 'cipher', 'cypher' and for figures inside Dana's letters. Of the 28 letters to Livingston that Wharton prints from No. 9 (14 Oct 1782) to 17 Aug 1783 (counted by script from the OCR text) only No. 23 carries a cipher note; the only other figures are 121 and 134.57 in his letter to John Adams of 1 June 1783. So print gives no second text in this key to try the table on. Wharton prints some letters with omissions, and the manuscripts of the other despatches were not paged through.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Founders Online, read in Chrome (curl and WebFetch get an empty page): the Adams Papers editors read three word numbers in Dana's letters to John Adams with the copy of the cipher Dana sent him, dated 18 Oct 1782 O.S.: 121 Franklin, 134.57 minister of France (1 June 1783), 165.37 minister of Berlin, taken as a slip for 165.57 (6 June 1783). These do not fit the sheet sent to Livingston (Franklin 123, Minister 137 and 168, France 59, Berlin 39): the two copies are numbered differently, and by the editors' values the Adams list seems to begin at 28. Tried on 29: as a word number it starts the key again and the next three numbers give e, o, i. No value for 29. The Adams sheet itself was not seen (Papers of John Adams 13 p. 549, image link dead; Weber 1979 not consulted). The Madison Papers note was opened too (Papers of James Madison 7 pp. 268-272, n. 9): of Dana's three despatches of 6, 11 and 14 April 1783 only eight lines of the first are in cipher, so Nos. 24 and 25 give no second text.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Clear copy looked for: the Adams Papers cite 'MHi: Francis Dana Letterbooks, Official, 1782-1784' for Dana's letters to Livingston; the Massachusetts Historical Society's guide to the Dana Family Papers lists vols. 24-25, Official letterbooks 1781-1784 (microfilm P-646 reel 3), with no digital content (only vol. 23.1, the private letter-book, is online). Dana's own file copy of No. 23 exists and is not online; whether it has the passage in words or in numbers is not known.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Retry and reading review. 29 and the four words with an error of Dana's run again with the full table and the clerk's numbers: same numbers, no new value; all five stay holes. Key replay (replay.py, docs/_replay.py): key.txt applied to the 215 numbers gives 48 of the 52 words of reading.md letter for letter, 4 differ with a mark ([I]n, [i]s, an[y], influ[e]nce), none without; the replay has the two key-column events written in (29 uses one column; one column skipped before the le of irresistable). reading.md read as sentences against decryption.txt and against a second decryption by Dana's rule with nothing corrected: four complete English sentences; 52 words, 5 holes, 0.904; above the short-text floor, so read in part. reading_review grade A recorded; it replaces the review of 14 Nov 2026, made before the file was rewritten.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -256,15 +309,15 @@
    "notes": "claimed per-occurrence score -1.921; polyphony 0.0; 8 unread tokens left out; annealer on the real text from random keys reached -2.786"
   },
   "class": "read in part",
-  "key": "partial",
+  "key": "recovered",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "The WIN table was recovered from the eight cipher lines alone (period and alphabet size by index of coincidence, shifts by scoring). The three word codes 31, 137 and 168 are not from the ciphertext: they are read with the writer's own key, Dana's table of October 1782 found in the same volume (PCC 89 vol. II p. 656, Brice Dudout; viewed 24 Nov 2026; clerk's copy in PCC item 109, Andrew Beling). 29 stays without value.",
+  "method_basis": "The WIN table was recovered from the eight cipher lines alone (period and alphabet size by index of coincidence, shifts by scoring). The three word codes 31, 137 and 168 are not from the ciphertext: they are read with the writer's own key, Dana's table of October 1782 found in the same volume (PCC 89 vol. II p. 656, Brice Dudout; viewed 24 Nov 2026; clerk's copy in PCC item 109, Andrew Beling), whose three alphabets are the ones recovered. 29 stays without value: it is not in the table.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Tokens: 214 of 215 given a value (211 letter positions, of which 7 cut or missing on the triplicate are taken from the clerk's transcript in PCC item 109; 31, 137, 168 from Dana's table; 29 open). Words (README rule, recounted 24 Nov 2026 with research/reading_audit/v2_score.holes on reading.md): 52 words, 5 holes (In; is, any, irresistable, influence), read_share 0.904. If the seven numbers from the clerk's copy were counted as supplied, 42 of 52 = 0.808. docs/_check_reading.py on reading.md: readable, clean share 0.8, hole rate 0.07.",
+  "fraction_read_source": "Tokens: 214 of 215 given a value (211 letter positions, of which 7 cut or missing on the triplicate are taken from the clerk's transcript in PCC item 109, transcription_item109.txt; 31, 137, 168 from Dana's table; 29 open). Words (README rule, recounted 24 Nov 2026 with research/reading_audit/v2_score.py on reading.md, and again by hand in the reading review of the same day): 52 words, 5 holes (In; is, any, irresistable, influence), read_share 0.904. If the seven numbers from the clerk's copy were counted as supplied, 42 of 52 = 0.808. Key replay (replay.json): 48 of 52 words are the key's output, 4 differ with a mark, none without. docs/_check_reading.py on reading.md: readable, clean share 0.8, hole rate 0.07.",
   "fraction_read": 0.995,
   "codes_open": {
    "open": 1,
@@ -273,6 +326,7 @@
   },
   "verification": [
    "independent verification",
+   "key confirms",
    "historical consistency",
    "statistical test"
   ],
@@ -322,28 +376,39 @@
   ],
   "gaps": [
    {
-    "item": "group 29 (1 of 215 tokens)",
-    "blocker": "open-codes",
-    "detail": "in neither the alphabets (1-27) nor the word list (from 30) of Dana's table; read as a slip for i from the sentence; one occurrence. Dana's other 1783 despatches in this cipher are still to be tried"
+    "item": "group 29 (1 of 215 numbers; the word In)",
+    "blocker": "needs-physical-access",
+    "detail": "not in Dana's table (alphabets 1-27, words from 30); written 29 on the triplicate (seen enlarged) and in the clerk's copy; one occurrence; i is taken from the sentence. Only another copy from Dana's side could settle it: his file copy of No. 23 in the Official letter-books at the Massachusetts Historical Society (Dana Family Papers vols. 24-25; microfilm P-646 reel 3; not digitised), or the original or duplicate of the despatch (not beside the triplicate in PCC 89 vol. 2; not located)"
+   },
+   {
+    "item": "four words with an enciphering error of Dana's: is, any, influence (a letter under the wrong column), irresistable (a key column skipped)",
+    "blocker": "needs-physical-access",
+    "detail": "the numbers are as he wrote them (image, Brice Dudout's transcription and the clerk's copy agree) and the corrections are ours, so the words count as holes; the same letter-book copy, if it has the passage in words, is the only thing that would give them without a correction"
    }
   ],
   "texts": [
    {
     "doc": "no23",
     "label": "No. 23, St Petersburg, 6 Apr 1783 (O.S.), PCC 89 vol. 2 p. 730",
-    "transcription": "transcription.txt",
-    "decryption": "decryption.txt",
+    "transcription": [
+     "transcription.txt",
+     "transcription_item109.txt"
+    ],
+    "decryption": [
+     "decryption_item109.txt",
+     "decryption.txt"
+    ],
     "reading": "reading.md",
     "language": "en",
     "state": "read in part",
     "read_share": 0.904,
     "summary": "Dana, waiting in vain for the Russian court to receive him, explains why he cannot predict the outcome: in an Administration not guided by settled principles or system nothing can be counted on, what the Minister adopt in this hour may be opposed by another influence in the next, and properly speaking there is no Minister here. One group (29) is open.",
-    "note": "Recounted 24 Nov 2026: 52 words, 5 holes (In, from the open group 29; is, any, irresistable, influence, each with a letter Dana enciphered wrongly or after a skipped key position, bracketed in reading.md). Administration and Minister are read from Dana's own table (key.txt). The seven numbers cut or missing on the triplicate are taken from the clerk's transcript in PCC item 109 and are not marked. Dana's spelling kept. The reading_review below is of 14 Nov 2026 and describes the file before this change (0.855, four groups open); the sentences are the same.",
+    "note": "Recounted 24 Nov 2026: 52 words, 5 holes (In, from the open group 29; is, any, irresistable, influence, each with a letter Dana enciphered wrongly or after a skipped key position, bracketed in reading.md). Administration and Minister are read from Dana's own table (key.txt). The seven numbers cut or missing on the triplicate are taken from the clerk's transcript in PCC item 109 (transcription_item109.txt, the second transcription file) and are not marked. Dana's spelling kept. Two decryption files: decryption_item109.txt is key.txt applied to the clerk's 215 numbers with nothing corrected (python replay.py; the two key-column events are stated in its header); decryption.txt is the output of decrypt.py on the triplicate, of 27 Oct 2026, which prints the letters after the corrections and lists each correction under the lines.",
     "reading_review": {
      "grade": "A",
-     "by": "Claude (session of 14 Nov 2026)",
-     "date": "2026-11-14",
-     "note": "Read reading.md against decryption.txt line by line. Four coherent English sentences; the letter stream divides into words without remainder; seven letters completed at a cut number or supplied at a line end are bracketed, four code groups are left as [29], [31], [137], [168]. The reading normalises one spelling (decode irresistable, reading irresistible), as its header says. read_share 0.855, so read in part. Image not re-opened in this pass."
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "note": "Grade given by the reviewer, not by the author of the reading; it replaces the grade A of 14 Nov 2026 (Claude, session of 14 Nov 2026), which read the file before it was rewritten on 24 Nov (0.855, four groups open; that review stays in the solution steps and in NOTES.md). reading.md read as sentences against decryption.txt and against a second decryption made for the review, Dana's rule as his sheet states it applied to the 215 numbers with nothing corrected: the two agree, and the reading departs from the key's output only at its five marked places. Four complete English sentences (an Administration not guided by settled principles; what the Minister adopt in this hour may be opposed by an irresistable influence in the next; properly speaking there is no Minister here; hence my present difficulty). Recounted by the README rule: 52 words, 5 holes ([I]n from the group 29, which is not in the table; [i]s, an[y], influ[e]nce, a letter Dana put under the wrong column; irresistab[le], after a key column he skipped), 47 of 52 = 0.904. The text has 52 cipher words, so the short-text floor (under 40 words) does not apply and the 95% bar does: read in part. The reviewer looked at p. 730 enlarged with no overlay (the first number is 29; the three wrong-column numbers are as transcribed; nothing stands between 7 and 26 in line 5) and at the clerk's copy (PCC item 109 p. 202), which gives the seven numbers the triplicate lacks; Administration and Minister were checked on Dana's sheet (p. 656). The key replay (replay.py, replay.tsv) gives 48 of 52 words as the key's output and 4 marked, none unmarked. A model's reading and a model's review: no person has checked it."
     }
    },
    {
@@ -353,8 +418,10 @@
     "decryption": "dudout/decryption.txt",
     "reading": "dudout/reading.md",
     "language": "en",
-    "state": "read",
+    "state": "read in part",
+    "read_share": 0.827,
     "summary": "Brice Dudout's reading of the same eight lines with Dana's own table (PCC 89 vol. II p. 656): the three word codes read as Administration and Minister.",
+    "note": "His files are kept as he sent them on 27 Oct 2026. State set to read in part on 24 Nov 2026 so that it follows the same README rule as the first entry (a word with a corrected or supplied letter is a hole): by his own marks 9 of the 52 words carry such a letter (‹I›n, ‹i›{s}, an‹y›, {o}r, me{a}sure, {m}ay, in{f}lu‹e›nce, proper{l}y, he{n}ce), 43 of 52 = 0.827, counted by hand; the house counter does not know his marks. The seven letters in { } are since given by the clerk's copy (transcription_item109.txt), which leaves the same places as in the first entry. His own figure is about 98% (209 of his 213 groups would be 0.981; how he counted is not stated in his files).",
     "reading_review": {
      "grade": "A",
      "by": "Claude (session of 14 Nov 2026)",
@@ -364,6 +431,6 @@
    }
   ],
   "key_file": "key.txt",
-  "notes": "Contributed by WAINUT (catalogue 485). The decryption needs ten interventions out of 211 letter positions (three slips, four completed cut numbers, three supplied line-end letters) plus one skipped key position; all are explicit in decrypt.py. No earlier decipherment found; the search was not exhaustive, so first_break = true stands until the MHS Dana Papers and the original and duplicate of No. 23 are checked. The PCC 59 key sheet 'No. 1' was found and checked after the break and is a different scheme, so the method stays ciphertext-only. 24 Nov 2026: Dana's own table (PCC 89 vol. II p. 656) viewed and its copy in PCC item 109 found by Andrew Beling (issue #898): 31, 137, 168 read with it; the seven completed numbers confirmed by the item 109 transcript of No. 23 (a clerk's copy), so that gap is closed; 29 is the one open group. The table reading is Brice Dudout's, the break WAINUT's. All image readings are AI readings. No site page exists yet."
+  "notes": "Contributed by WAINUT (catalogue 485). The decryption needs ten interventions out of 211 letter positions (three slips, four completed cut numbers, three supplied line-end letters) plus one skipped key position; all are explicit in decrypt.py. No earlier decipherment found; the search was not exhaustive, so first_break = true stands until the MHS Dana Papers and the original and duplicate of No. 23 are checked. The PCC 59 key sheet 'No. 1' was found and checked after the break and is a different scheme, so the method stays ciphertext-only. 24 Nov 2026: Dana's own table (PCC 89 vol. II p. 656) viewed and its copy in PCC item 109 found by Andrew Beling (issue #898): 31, 137, 168 read with it; the seven completed numbers confirmed by the item 109 transcript of No. 23 (a clerk's copy), so that gap is closed; 29 is the one open group. The table reading is Brice Dudout's, the break WAINUT's. All image readings are AI readings. 24 Nov 2026, write-up pass: outcome.key set to recovered (the three alphabets were recovered and are the ones on Dana's sheet; the word list is his own, now in key.txt; 29 is not in the key and cannot be recovered from one occurrence); the five holes each need a copy that is not online (gaps); page docs/dana1783.html written."
  }
 }

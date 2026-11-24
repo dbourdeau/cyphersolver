@@ -217,6 +217,37 @@
    "kind": "verification",
    "what": "Integration of PR #876 (AI agent, for the maintainers; not a person): reading.md, f. 152 sentence 4, printed \"elle a\" and counted 12 words; the \"a\" is group 355 at 0154 R4 (transcription.txt), a null in key.tsv and shown as a null in decryption.txt. The word is taken out: sentence 4 has 11 words and 2 holes, f. 152 134 of 150, the five pieces 239 of 271 (0.882, as before to three places). The question whether the reproduction may be analysed with an AI assistant is taken out of the gaps: it is a condition of use (NOTES.md), not an unread piece of the text. No image opened.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "sibling key",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Write-up (AI agent, for the maintainers; not a person): the keys of the same state and decade held in the repository compared by number with key.tsv: George Lasry's key for Vergier to Pontchartrain, 1696 (targets/vergier1696: le 196, que 259, de 133), Bazeries's Grand Chiffre of 1691 (targets/feuquieres: 91 Mon, 333 Di) and Tomokiyo's 1690 code of Louis XIV to Castagnères (le 195); here le 91, que 333, de 138. None is this table.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Write-up: print and clear copies looked for. archive.org full text searched for phrases of the clear passages and for the five letters by date, three web searches. Hurmuzaki, Documente, Supl. I vol. 1 prints extracts of Châteauneuf's despatches of 1691-92 from the archives of the French foreign ministry (its \"Vol. 23\" and \"Vol. 24\", presumably the Turquie series of the Correspondance politique; not checked) on Moldavia, Wallachia, Transylvania and Poland, none of the passages in cipher here; Kaufmann, Dr. Israel Conegliano (1895) tells the affair of the Venetians under French protection from the Venetian side and prints no French letter; the CADN répertoire lists a volume of his correspondence with the court at Nantes (166PO/A/6, microfilm 2 Mi 2217), not seen. No print of the five pieces, and no clear copy online.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "contextual inference"
+   ],
+   "what": "Write-up, retry of the open groups (no image opened). The layout of the table worked out from key.tsv: ten columns by the last digit, alphabetical down each column and running on from one column to the next, syllables (a e i o u) before words; all attested values but two (233, 200) fit. The 14 groups without a value and the 57 of 0154 R3 run again against the layout and their sentences: 305 vostre, 280 juge, 146 ambassadeur, 166 alliés or allemands, 196 avantages or articles, 108 contre, 69 enten(dre); 177 probably a slip for 172 (ne); 33 ... 59 a pair cancelling what stands between them (2 of 2 occurrences), 61 cancelling the group before it (the decipherment of the time passes over 234 61 at 0453 L2 of f. 452), 64 perhaps the same, 152 and 232 then cancelled groups. None is attested by a glossed line, so all stay holes and the retry changes no count.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Write-up: key replay (replay.py, docs/_replay.py): key.tsv applied to transcription.txt and compared with reading.md. First run: 18 words printed otherwise than the key gives, unmarked: four already counted as holes; six printed in a regular spelling (passeports, presteroient, parust, faites, seuls, d'empescher), now printed as the clerk spelled them; devez (47 and 49 are also z in the glossed letters); Turcs, vous and République for the word codes 145, 335 and 174 (the first two attested in that form in the glossed letters, the third not); and \"consentement\" in f. 155, spelled co-m-se-n-te-ment (28 for 38), now a hole. f. 155 25 of 30, the five pieces 238 of 271 (0.878). After these changes the replay reproduces the reading with no unmarked difference (262 words: 239 exact, 1 i/y, 1 s/z, 15 marked, 6 unread, 10 open numbers).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -228,9 +259,19 @@
   "class": "read in part",
   "key": "partial",
   "method": "key recovered based on adjacent plaintext",
-  "fraction_read": 0.882,
+  "method_basis": "The key was rebuilt from the decipherment written at the time between the lines of the letter of 17 Jan 1694 (f. 376) in the same volume, with eight values added after the measure from the decipherment of the letter of 21 Sep 1694 (f. 452), and applied to five pieces that carry none.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "codes_open": {
+   "open": 14,
+   "total": 152,
+   "tokens_open": 16
+  },
+  "fraction_read": 0.878,
   "fraction_read_method": "measured",
-  "fraction_read_source": "rule of #728: 239 sure words of 271 cipher words (reading.md); probables, restorations and context-only values are holes. 240 of 272 until 24 Nov 2026: sentence 4 of f. 152 counted \"a\" on group 355 (0154 R4), a null in key.tsv.",
+  "fraction_read_source": "rule of #728: 238 sure words of 271 cipher words (reading.md); probables, restorations and context-only values are holes. 239 of 271 until the key replay of 24 Nov 2026: \"consentement\" in f. 155 is spelled co-m-se-n-te-ment (28 for 38) and is now a hole. 240 of 272 before that: sentence 4 of f. 152 counted \"a\" on group 355 (0154 R4), a null in key.tsv.",
   "first_break": true,
   "verification": [
    "historical consistency"
@@ -241,14 +282,22 @@
     "who": "dudout",
     "role": "solution",
     "note": "Reproduction ordered from the Archives nationales; key from the volume's period decipherments; five undeciphered pieces read in part",
-    "date": "2026-11-20"
+    "date": "2026-11-20",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/876"
+   },
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "decipherments written at the time between the lines of the letters of 17 Jan 1694 (f. 376) and 21 Sep 1694 (f. 452) of the same volume, the source of the key",
+    "date": "1694",
+    "source": "Archives nationales, AE/B/I/381, ff. 376 and 452"
    }
   ],
   "gaps": [
    {
-    "item": "unresolved code groups",
-    "blocker": "open-codes",
-    "detail": "305, 280, 177, 69, 57, 146, 152, 61, 64, 33, 59, 196, 108, 232, 166"
+    "item": "code groups without an attested value",
+    "blocker": "needs-physical-access",
+    "detail": "305, 280, 177, 69, 146, 152, 61, 64, 33, 59, 196, 108, 232, 166, and the 57 of 0154 R3 (its value st gives no sense there): each occurs once or twice, in these five pieces only (61 once in f. 452, passed over by the decipherment of the time); a value can only be attested by the 16 further glossed pieces of the volume, not reproduced, or by clear copies, if they survive elsewhere (the foreign ministry volumes that Hurmuzaki cites; CADN 166PO/A/6); none was found online. Probable values from the layout of the table are in NOTES, not counted. Blocker was open-codes until 24 Nov 2026"
    },
    {
     "item": "gutter losses",
@@ -262,8 +311,8 @@
    },
    {
     "item": "355 = null rather than \"a\"",
-    "blocker": "open-codes",
-    "detail": "one occurrence in the glossed letter (after Benincasa), no second glossed letter to test it; key.tsv and decryption.txt treat it as a null, the frozen KEY_v1/v2 say \"a\""
+    "blocker": "needs-physical-access",
+    "detail": "one occurrence in the glossed letter (after Benincasa), none in f. 452; it can only be tested on another glossed piece of the volume, and none is reproduced; key.tsv and decryption.txt treat it as a null, the frozen KEY_v1/v2 say \"a\". Blocker was open-codes until 24 Nov 2026"
    }
   ],
   "texts": [
@@ -276,7 +325,10 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "134 of 150 cipher words sure.",
+    "read_share": 0.893,
+    "cipher_words": 150,
+    "holes": 16,
+    "summary": "Châteauneuf puts to the King that the Venetians, at war with the Porte, should lose the French protection under which some two hundred of them still lived at Constantinople, and that the trade of Venice to the Levant should pass to ships carrying French passports, with a penalty for French merchants who lend their names. 134 of 150 cipher words sure.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #876 (AI agent, for the maintainers); not a person",
@@ -293,7 +345,11 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "26 of 30 cipher words sure.",
+    "read_share": 0.833,
+    "cipher_words": 30,
+    "holes": 5,
+    "note": "25 of 30 since the key replay of 24 Nov 2026: \"consentement\" is spelled co-m-se-n-te-ment (28 for 38) and is now a hole. The reading review below was made the same day on the earlier text, which counted 26 of 30.",
+    "summary": "The King's reply: whatever the case may be, Châteauneuf must not give up, by any consent, what was stipulated by the capitulations made between the King and the Grand Seigneur. 25 of 30 cipher words sure.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #876 (AI agent, for the maintainers); not a person",
@@ -310,7 +366,10 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "31 of 35 cipher words sure.",
+    "read_share": 0.886,
+    "cipher_words": 35,
+    "holes": 4,
+    "summary": "Three cipher passages in a letter on Fabre's reports: the order to keep the Venetians out of the Grand Seigneur's ports under the protection of France, England or Holland; that it should not appear that Châteauneuf had given his consent; and the siege of La Canée, which had stirred the Turks. 31 of 35 cipher words sure.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #876 (AI agent, for the maintainers); not a person",
@@ -327,7 +386,10 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "13 of 18 cipher words sure.",
+    "read_share": 0.722,
+    "cipher_words": 18,
+    "holes": 5,
+    "summary": "Fabre has spoken to the Grand Vizier of the plan no longer to receive Venetian ships in the Grand Seigneur's ports under any protection; the Vizier said he would confer with the Reis Effendi. 13 of 18 cipher words sure.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #876 (AI agent, for the maintainers); not a person",
@@ -344,7 +406,10 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "35 of 38 cipher words sure.",
+    "read_share": 0.921,
+    "cipher_words": 38,
+    "holes": 3,
+    "summary": "Had Châteauneuf solicited \"ce Commandement\" from the Grand Vizier, he writes, it would have been at a time when the enemies were publishing that the King was about to conclude his peace, and the minister could have let himself be deceived by that false rumour. 35 of 38 cipher words sure.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #876 (AI agent, for the maintainers); not a person",

@@ -72,7 +72,7 @@
   "conditions": {
     "prior_solution": {
       "exists": "in archive",
-      "where": "No reading of the copy in code was found anywhere. The plaintext survives as the ministry's clear draft, Archives diplomatiques, CP États-Unis vol. 48, ff. 41r-42r (online viewer). Not known on 2 Nov 2026, when the ciphertext-only attempt was made. Found by Andrew Beling's AI agent on 21 Nov 2026: f. 41r first opened 00:52:04 EST (its request log); two blind AI readers transcribed it 01:07-01:13 EST; the test plan was written 01:31 EST and hashed 01:32 EST by an agent that, by its own record, had not seen the draft's wording. The order rests on local file times and SHA-256 sums only, no outside timestamp. The reading is the draft laid on the groups.",
+      "where": "No reading of the copy in code was found anywhere. The plaintext survives as the ministry's clear draft, Archives diplomatiques, CP États-Unis vol. 48, ff. 41r-42r (online viewer). Not known on 2 Nov 2026, when the ciphertext-only attempt was made. Found by Andrew Beling's AI agent on 21 Nov 2026: f. 41r first opened 00:52:04 EST (its request log); two blind AI readers transcribed it 01:07-01:13 EST; the test plan was written and hashed 01:31 EST and the test text fixed 01:32 EST, by an agent that, by its own record, had seen the two readers' short reports but not the draft's wording. The order rests on local file times and SHA-256 sums only, no outside timestamp. The reading is the draft laid on the groups.",
       "found": "during attempt",
       "used": true
     },
@@ -89,13 +89,16 @@
       "Turner 1904 language model",
       "Claude in Chrome",
       "contributor: EM alignment and held-out test (beling2026/scripts/)",
-      "strict_share.py"
+      "strict_share.py",
+      "key_compare.py",
+      "docs/_replay.py (replay.py)",
+      "docs/_validate.py (mk_validation.py)"
     ],
     "models": [
       "claude-opus-5-5",
       "claude-fable-5-2"
     ],
-    "sessions": 2,
+    "sessions": 3,
     "first_date": "2026-11-02",
     "last_date": "2026-11-24"
   },
@@ -265,13 +268,13 @@
     {
       "date": "2026-11-21",
       "kind": "transcription",
-      "what": "Contributor: the draft transcribed by two blind AI readers (01:07-01:13 EST) and merged; one wording dispute (aurez/avez) settled by the contributor. No person has read the draft.",
+      "what": "Contributor: the draft transcribed by two blind AI readers (01:07-01:13 EST) and merged; one wording dispute (aurez/avez) went into the test text as reader A's aurez by the plan's rule, and a third AI agent of the contributor's read aurez on the image afterwards. No person has read the draft.",
       "result": "worked"
     },
     {
       "date": "2026-11-21",
       "kind": "control",
-      "what": "Contributor: test plan written 01:31 EST and hashed 01:32 EST, by the session's own statement before its writer saw the draft's wording (local file times and SHA-256 only). Test 1, letters per group 3.42 (pass mark 2.0-6.0). Test 2a, repeated runs 0.83 against controls up to 1.00: a miss, reported. Test 2b, full EM alignment 0.77 against 80 controls up to 0.17: pass. Tests 1, 2a, 2b not rerun by the project.",
+      "what": "Contributor: test plan written and hashed 01:31 EST, test text fixed 01:32 EST, by the session's own statement before its writer saw the draft's wording (it had seen the readers' short reports) (local file times and SHA-256 only). Test 1, letters per group 3.42 (pass mark 2.0-6.0). Test 2a, repeated runs 0.83 against controls up to 1.00: a miss, reported. Test 2b, full EM alignment 0.77 against 80 controls up to 0.17: pass. Tests 1, 2a, 2b not rerun by the project.",
       "result": "worked",
       "technique": [
         "EM alignment",
@@ -316,9 +319,56 @@
       "kind": "verification",
       "what": "Integration: the reading read through as sentences with the decryption beside it (reading_review, grade B). Not done: the draft against the archive images, the film, a rerun of tests 1, 2a, 2b.",
       "result": "partial"
-    }
-  ],
-  "outcome": {
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "sibling key",
+      "what": "Write-up: the catalogue, the leads and every target profile of 1789-1803 searched again for French diplomatic texts in numbers. Found only astrea1799 (Rozier to Talleyrand, 1798; numbers on a Massachusetts Historical Society microfilm) and catalogue 521 (Rivals to Sieyès, 1798, Archives nationales): neither is online. No second text to apply the table to.",
+      "result": "failed",
+      "technique": [
+        "key matching"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "sibling key",
+      "what": "Write-up: the partial table compared number by number with every key file under targets/ that lists numbers with values (key_compare.py, 174 files; null: each key's values shuffled over its own numbers, 200 times). The seven French keys of the 2 Nov scan agree on 0 of their 39 to 209 shared numbers; the most any file reaches is 3 of 47 (petkum1665). No key held here is this code.",
+      "result": "ruled out",
+      "technique": [
+        "key matching",
+        "statistical test"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "literature search",
+      "what": "Write-up: four web searches (the draft's wording; Rozier, Mozard and Hauterive with Létombe; King's No. 53; the ministry's cipher of 1797). No printed or quoted text of No. 5 and no table of the code found.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "verification",
+      "what": "Write-up: key replay (docs/_replay.py with replay.py). The table applied to the 653 groups and compared with the reading: 441 words by the tool's division (no division at hyphens; 444 by make_reading.py), 414 exact (0.939), 27 marked in the reading (26 listed as marked, one as an i/y difference), no unmarked difference.",
+      "result": "worked",
+      "technique": [
+        "plaintext matching"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "access",
+      "what": "Write-up: the Paris volumes. The archive's record pages and search are plain pages (39CP/47, January to June 1797, 938 images; 39CP/48, 841 images); the images open only in its viewer, which in Chrome shows a notice of conditions of reuse with one button to accept. Not accepted on the owner's behalf, so the draft was not seen on the images and 39CP/47 was not paged in full for a text in numbers.",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "verification",
+      "what": "Write-up: the two doubtful single-use numbers 300 and 1105 looked at on the NARA frames at twice their size (an AI reading). Not settled: the last digit of 300 has the same looped form as the last digit of 630 beside it; the third digit of 1105 is a filled loop over show-through. Brackx's digits kept.",
+      "result": "partial"
+    },
+    {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 622 tokens, 285 types, fr-modern order 4: reading -1.938 per letter; random keys -2.514 (z 10.1); key annealed onto shuffled ciphertext best -1.927 (mean -1.935, z -0.3); annealer on the real text -1.911. Verdict: underdetermined.", "result": "partial"}
+   ],
+  "outcome": {"validation": {"date": "2026-11-24", "model": "fr-modern", "file": "validation.tsv", "tokens": 622, "types": 285, "tokens_per_type": 2.18, "score": -1.938, "nulls": {"random keys": {"n": 200, "mean": -2.514, "sd": 0.057, "max": -2.341, "z": 10.1, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.935, "sd": 0.007, "max": -1.927, "z": -0.3, "p": 0.5714}}, "power": -1.911, "verdict": "underdetermined", "notes": "claimed per-occurrence score -1.908; polyphony 0.077; 31 unread tokens left out; annealer on the real text from random keys reached -1.911"}, 
     "method": "key recovered based on plaintext from external sources",
     "method_basis": "A partial table of the code was built by laying the ministry's clear draft (CP États-Unis vol. 48, ff. 41r-42r) on the 653 groups; owner's decision of 23 Nov 2026 on PR #884.",
     "parts": [
@@ -344,10 +394,8 @@
     "key_file": "beling2026/key/code_table_F_partial.tsv",
     "fraction_read": 0.939,
     "fraction_read_method": "measured",
-    "fraction_read_source": "beling2026/readings/reading_1797-07-13.md: cipher words with a [..] mark counted as holes, 27 holes; 444 words by beling2026/scripts/make_reading.py, 442 by the round-4 reviewer's token count (415 of 442), 0.939 either way. Strict share beside it (owner, 23 Nov 2026: words resting on the 148 single-use values count as probable): 296 of 444 words rest only on values confirmed by two or more agreeing uses, 0.667; 121 words are probable; strict_share.py.",
-    "verification": [
-      "independent clear copy"
-    ],
+    "fraction_read_source": "beling2026/readings/reading_1797-07-13.md: cipher words with a [..] mark counted as holes, 27 holes; 444 words by beling2026/scripts/make_reading.py, 442 by the round-4 reviewer's token count (415 of 442), 0.939 either way. Strict share beside it (owner, 23 Nov 2026: words resting on the 148 single-use values count as probable): 296 of 444 words rest only on values confirmed by two or more agreeing uses, 0.667; 121 words are probable; strict_share.py. Key replay of 24 Nov 2026 (docs/_replay.py): 414 of 441 words exact by the tool's division, which does not divide at hyphens, 0.939.",
+    "verification": ["independent clear copy"],
     "texts": [
       {
         "doc": "M30-004-0244",
@@ -383,22 +431,22 @@
         "detail": "each stands for different draft letters at different places; only this one letter in the code is known, so nothing decides between them"
       },
       {
-        "item": "4 groups whose table value differs from the draft's letters (175 ses/se, 855 pres/pre, 355 iez/ez, 20 ay/ai)",
+        "item": "4 groups whose table value differs from the draft's letters (175 ses/se, 855 pres/pre, 355 iez/es, once ez, 20 ay/ai)",
         "blocker": "no-key-material",
         "detail": "the draft is the minute, not the copy that was enciphered; the sent wording is not held"
       },
       {
         "item": "the 148 single-use values (121 words of the reading rest on at least one)",
         "blocker": "no-key-material",
-        "detail": "untested outside this letter; no second text in this code found (39CP/48 paged in full by the contributor, 39CP/47 spot checked only)"
+        "detail": "untested outside this letter; no second text in this code is known: none on NARA frames 0236-0252, none among the targets, catalogue and leads (searched again 24 Nov 2026; astrea1799 and catalogue 521 are not online), none in 39CP/48 (paged in full by the contributor); 39CP/47 (938 images online) was spot checked by the contributor only and is an open lead, not paged here because the archive's viewer asks the reader to accept its conditions of reuse"
       },
       {
-        "item": "the received No. 5 or a deciphered copy, CADN 519PO/1 art. 1; AMAE CP États-Unis vol. 47 in full",
+        "item": "the received No. 5 or a deciphered copy, CADN 519PO/1 art. 1",
         "blocker": "needs-physical-access",
-        "detail": "CADN article not digitised as far as found; vol. 47 not paged in full"
+        "detail": "the article is not digitised as far as found"
       }
     ],
-    "notes": "Verification: the clear draft is also the source of the table, so it confirms nothing by itself; the evidence that it is the text behind the groups is the contributor's held-out test (36 of 43 against at most 18 for shuffled keys), not recorded as a statistical test here because docs/_validate.py was not run. Owner's decision of 23 Nov 2026: method key recovered from external plaintext, class read in part, single-use values count as probable. Every reader of the draft and of the film is an AI agent; no person has looked. Not checked by the project: the draft against the archive's images, the film, tests 1, 2a and 2b by rerun. Write-up, catalogue 649 known/open and the DECODE queue entry (held until Brackx and Beling agree) are still owed.",
+    "notes": "Verification: the clear draft is also the source of the table, so it confirms nothing by itself; the evidence that it is the text behind the groups is the contributor's held-out test (36 of 43 against at most 18 for shuffled keys), not recorded as a statistical test here: the project's own check (docs/_validate.py, 24 Nov 2026) is underdetermined, a key of the same shape fitted to the shuffled groups scores as well as the reading. Owner's decision of 23 Nov 2026: method key recovered from external plaintext, class read in part, single-use values count as probable. The 653 groups are Michael Brackx's transcription from the film (a person's, transcription.by); every reader of the draft is an AI agent; the eight digit proposals rest on the contributor's AI readers; no person has compared the reading with the film. Not checked by the project: the draft against the archive's images (its viewer asks the reader to accept conditions of reuse; not accepted on the owner's behalf), the film for the eight proposals, tests 1, 2a and 2b by rerun. Written up 24 Nov 2026; catalogue 649 removed as written up; no DECODE record is known and the queue entry is a hold until Brackx and Beling agree. Open lead: 39CP/47 in full.",
     "credits": [
       {
         "who": "brackx",
