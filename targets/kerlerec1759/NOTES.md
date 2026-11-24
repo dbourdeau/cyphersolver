@@ -184,7 +184,11 @@ Checked when pull request #586 was integrated (round 13).
 - One key, one entry: the Kerlérec code book is not one of the Canada codes (`targets/montcalm1757w`,
   `targets/montcalm1758i`, `targets/vaudreuil1760`); no target in the repository uses it. Catalogue entries 829 and 830
   (Kerlérec despatches of 1756-57 in the Loudoun papers, not seen) should be in the same code book by Pusch's account
-  of its use from 1755 to 1762; that has not been tested.
+  of its use from 1755 to 1762. Update, 24 Nov 2026 (issue #894, Andrew Beling with AI agents): by writer and date
+  829 is probably despatch no. 135 of 28 Jan 1757 (ANOM COL C13A 40 ff. 27r-28r, transcribed here) and 830 no. 127 of
+  12 Dec 1756 (C13A 39 ff. 190r-191). No. 127's first line shares 105 299 = "toutes" with no. 135: same code. The
+  Huntington sheets themselves are still not seen and their numbers are not compared, so both entries stay open,
+  narrowed.
 - Why the folder stays `Status: in progress`: two things can still be worked. Pusch counts 30
   glossed despatches; only nos. 194 and 228 are transcribed here, so the 124 codes taken from his table alone, and
   perhaps the three open codes, could be tied to clerks' pairs from the others. And lead 1207 is being vetted in
@@ -216,6 +220,14 @@ images are kept locally, not committed), group by group with folio and line, wit
 or 7 (the hands' 3 and 5 are the main risk); doubtful digits are marked `?` and commented in the files. Not yet
 transcribed from Pusch's list: nos. 117, 127, 138, 141, 143, 144, 146, 150, the despatch of 12 and 23 August 1758,
 nos. 247, 256, 263, 277, 279, 284, 308 and 332 (C13A 39-43).
+
+No. 127 located, 24 Nov 2026 (issue #894): 12 Dec 1756, ANOM COL C13A 39 ff. 190-191, images 0378-0380, headed
+"N.o 127. / Troisième", addressed "Monseigneur". Only its first line is read: `105 299 232 299 222 207 (49 above) 310
+139 230 (180 above) 197 60 260`, under "Toutes mes lettres sont remplies de"; the rest is not transcribed. That line
+was read twice by the contributor's AI agents and once at integration by an AI agent; no person has checked it. Image
+route (plain curl works, no bot check):
+`https://recherche-anom.culture.gouv.fr/iiif/pool2/anom-rediffusion/MINISTERES/SEM/C13/C13A_39/FRANOM50_C13A_39_0378/FOND.TIF/full/max/0/default.jpg`
+(no. 135, f. 27r: `.../C13A_40/FRANOM50_C13A_40_0054/FOND.TIF/full/max/0/default.jpg`).
 
 **Segmenting without Pusch's table** (`scripts/clerks_segment.py`). The clerk's running plaintext is aligned with the
 code stream using only values already established from clerks' glosses (to start, the 164 codes of

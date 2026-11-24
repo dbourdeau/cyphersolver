@@ -1,6 +1,6 @@
 # grantham1778: Lord Grantham to Lord Weymouth, No. 35, Aranjuez, 18 June 1778 (catalogue 1285): deciphered at the time; a preliminary partial table of the code
 
-Status: in progress (the despatch was read in 1778; the table of the code is preliminary and partial; folder only, no site page; Daniel is free to write the page or change anything here).
+Status: in progress (catalogue 1285 was removed on 24 Nov 2026 as read at the time, issue #895; the despatch was read in 1778; the table of the code is preliminary and partial; folder only, no site page; Daniel is free to write the page or change anything here).
 
 Contributed by Andrew Beling, with AI agents. Everything said to be read below was read from images by AI agents. **No
 person has checked any image reading.**
