@@ -158,6 +158,14 @@ Not gaps in the reading, but open: cipher H, J and K never occur, so their value
   - The counts under the alternative readings are given above.
 - Next step outside this session: ask AHGE-SRE for images of leg. 507, exp. 6 (this telegram, the 16 April original, the two key lists, the consuls' complaints and the Lobo telegrams).
 
+## Conditions of the source
+
+The cipher text is transcribed from the figure on p. 339 (fig. 10) of Narváez, *Criptografía diplomática, política
+y militar en México* (SRE, 2019), which Andrew Beling borrowed on interlibrary loan and photographed himself. The
+book's legal page reads "D. R. © Secretaría de Relaciones Exteriores"; no licence or other conditions came with it.
+AI agents working for him read the photographs. Nobody was asked about AI readers; he decided on the use himself.
+No photograph, figure or table from the book is in the repository.
+
 ## Files
 
 - `transcription.txt` (readings used, doubts marked), `transcription_pass1.txt`, `transcription_pass2.txt`
