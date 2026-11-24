@@ -1,4 +1,4 @@
-# baselANV9: English translation of reading.md
+# baselanv9: English translation of reading.md
 
 <!-- Translated from reading.md by Claude Opus 5.5 (the session that assembled this folder), 25 Nov 2026, for the contributor. It is the contributor's translation: not checked by a person, by a Latinist or against any edition of the Clavicula Salomonis. -->
 <!-- Marks: an English word followed by (?) translates a word that the judge scored as a one-letter slip, rendered as the word it is taken for. [...] stands for a hole of the reading (a word scored N, or a sign with no key value); one [...] may cover several holes in a row. Words in round brackets without (?) are added for English sense. Read words are translated as they stand, also where they do not fit their context (quo, ut reges). -->

@@ -1,4 +1,4 @@
-# baselANV9: Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century)
+# baselanv9: Clavicula Salomonis and Septem sigilla planetarum in a secret alphabet, Basel UB, UBH AN V 9 (17th century)
 
 Status: in progress. Contributed by pull request, not yet written up, and a new target: the volume is in neither `catalogue.json` nor `research/leads.json`. The key was recovered from cipher ff. 4r-4v aligned with the volume's own clear copy, frozen, and used for one decode of three held-out passages. A separate strict judge finds 747 of 1,138 decoded letters in words that read as sense (65.6%: H1 62.4%, below the contributor's own 65% line; H2 67.0%; H3 69.6%), and the decode reproduces 988 of 1,231 letters of the clear copy (80.3%). Counted in words, 113 of 225 read as sense (0.502) and no sentence is clean, so each passage is "decoded, not read" and the target is filed not read: key recovered from adjacent plaintext, text not read. The volume's own key leaf, viewed only after the decode, agrees on 46 of the 52 values it covers. The page, ledgers, DECODE queue entry and any catalogue or lead entry are left to the maintainers.
 
@@ -154,7 +154,7 @@ Shuffle control (`score/shuffle_out.txt`), seed 20261112; seed 7 gives the same 
 | clear-copy match, H2 | 0.840 | 0.299 (0.042) | 0.467 | 13.0 | 0 / 5,000 |
 | clear-copy match, H3 | 0.836 | 0.271 (0.053) | 0.479 | 10.6 | 0 / 5,000 |
 
-Statistical validation (`docs/_validate.py baselANV9 --write`, 25 Nov 2026, model `la`, order 4 without spaces; `validation.tsv`) [measured]: 1,024 read tokens, 49 types; the reading scores -2.639 per letter; random keys of the same structure -4.459 (sd 0.366, z 5.0, n 200); a key annealed onto shuffled ciphertext at best -2.782 (mean -2.817, z 6.5); **verdict: pass**. The annealer started from random keys on the real text reaches -2.553, higher than the reading: the letter model alone does not single out this key. `validation.tsv` was made here from the frozen key and the transcriptions, and reproduces `DECODE.txt` on 37 of 37 lines.
+Statistical validation (`docs/_validate.py baselanv9 --write`, 25 Nov 2026, model `la`, order 4 without spaces; `validation.tsv`) [measured]: 1,024 read tokens, 49 types; the reading scores -2.639 per letter; random keys of the same structure -4.459 (sd 0.366, z 5.0, n 200); a key annealed onto shuffled ciphertext at best -2.782 (mean -2.817, z 6.5); **verdict: pass**. The annealer started from random keys on the real text reaches -2.553, higher than the reading: the letter model alone does not single out this key. `validation.tsv` was made here from the frozen key and the transcriptions, and reproduces `DECODE.txt` on 37 of 37 lines.
 
 Lexicon check, a mechanical pointer and not the judge (`score/lexcheck_out.txt`): decoded letters in words of the shared Latin lexicon H1 30.8%, H2 44.0%, H3 36.2%, against 79.8%, 77.1% and 54.8% for the clear copy.
 
@@ -243,6 +243,8 @@ Copied unchanged from the contributor's working folder (sha256, first 16 hex) [m
 Not committed: the page images, crops and contact sheets; the downloaded IIIF manifests, METS record, Steinmann PDF and catalogue HTML; `__pycache__`. They are in the stamp manifest where it lists them.
 
 Made here (25 Nov 2026): `transcription.txt` (the five files of `tx/` that `FREEZE_TX.txt` lists, put together unchanged), `reading.md`, `translation.md`, `validation.tsv` (input for `docs/_validate.py`), `profile.json`, this file. No images.
+
+Name: the folder is `baselanv9`, in lower case as the site's page slugs and checkers require. The working folder (`basel_anv9`) and the files copied from it call the target `baselANV9`; they are left unchanged, so their hashes still hold.
 
 ## Limits
 

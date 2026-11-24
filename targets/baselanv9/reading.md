@@ -1,4 +1,4 @@
-# baselANV9: the three held-out passages of Basel UB, UBH AN V 9, as decoded with the frozen key
+# baselanv9: the three held-out passages of Basel UB, UBH AN V 9, as decoded with the frozen key
 
 <!-- Made on 25 Nov 2026 by Claude Opus 5.5 (the session that assembled this folder) from DECODE.txt (one pass with the frozen key KEY.tsv) and the strict judge's word tags (judge/count.py, judge/judge.tsv). No letter of the decode is changed and none is supplied. -->
 <!-- Marks: word(?) = a word the judge scored E (one letter wrong, missing or extra), left as decoded; it counts as a hole. [?word] = a word the judge scored N (no sense), with its decoded letters after the question mark; a hole. [?] = a sign the key gives no value (? in DECODE.txt); a hole, and inside a word (sanct[?]) it makes the word a hole. -->
