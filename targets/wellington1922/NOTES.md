@@ -261,6 +261,14 @@ Outside this target: folio 1's two runs and folio 2 paragraphs 2-3 are Narváez'
 - [x] retry: restarts of the key cycle; post hoc readings above; a frozen restart rule tested with shuffle controls on
   23 Nov 2026 found no unseen stretch long enough to decide it (not counted)
 
+## Conditions of the images
+
+The images are on CEHM-Carso's public viewer (DCXXI.6.588.1), which needs no sign-in. AI agents working for Andrew
+Beling fetched the five page images one at a time on 23 November 2026. CEHM's site carries "Todos los Derechos
+Reservados" in its footer, publishes no terms of use and says nothing about AI readers. No conditions came with the
+images and nothing was signed. Nobody at CEHM was asked; Andrew Beling decided on the use himself. No image is in
+the repository or shared.
+
 ## Files
 
 `transcription_DCXXI.6.588.1.txt`, `decryption_DCXXI.6.588.1.txt`, `marked_DCXXI.6.588.1.txt`,
