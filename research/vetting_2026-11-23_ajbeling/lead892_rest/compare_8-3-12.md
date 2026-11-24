@@ -15,11 +15,10 @@ sign.
 | B07-B08 | *rebus et negotiis **istis** nostris magnopere* | *rebus et negotiis nostris magnopere* |
 
 On the image the signs of A11 read d-i-l-e-c-t-i-o-n-i-s e-t m-a-i-e-s-t-a-t-i-s, of A12 e-i-u-s, of A15 l-i-c-a and of
-B08 t-i-i-s i-s-t-i-s with no damage. An independent AI reviewer confirmed all three on the image. HathiTrust
-full-text search finds "mentem dilectionis" in Austro-Turcica 1541-1552 and does not find "mentem dilectissimi
-fratris"; but that is a two-word phrase hit in a volume of Ferdinand's letters, where *dilectio* is his usual word for
-Charles V, so it does not show how the edition prints this letter. The two other phrases were not found in either
-form (search-only volume; spelling or OCR may differ).
+B08 t-i-i-s i-s-t-i-s with no damage. An independent AI reviewer confirmed all three on the image. Austro-Turcica 1541-1552, No. 165
+(p. 437; seen 24 Nov 2026 by an AI agent of ours in the library's OCR text of the Bavarian State Library copy
+bsb00150599), prints *mentem dilectionis et Maiestatis eius Caesareae* and *traductiones Italica* as the cipher has
+them, and *negotiis nostris* without *istis*.
 
 ## B. Spelling in the cipher; the decipherer normalised it
 
