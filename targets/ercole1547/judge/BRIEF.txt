@@ -1,0 +1,26 @@
+Judge brief: ercole1547 (Ercole II d'Este to his secretary Claudio, Ferrara, 8 Jan 1547; Estense, Campori, c. 16v)
+
+You are an independent judge. Do not improve the text. Do not emend. Score what is in judge/decode.txt as it stands.
+
+The file gives the first-pass decode of 8 cipher lines, decoded letters only, with no word division (the cipher has
+none). Language: sixteenth-century Italian of the Ferrara chancery (northern forms are normal: de for di, uolemo,
+como, lassare, u for v, single or double consonants at will). The text runs on from line to line; a word may be split
+across a line end. Lines 7-8 are the held-out lines: the key was built without them.
+
+Marks in the file: "?" = a sign with no key value; "{L4s}" = an unresolved code sign (probably a person). Neither is a
+decoded letter: leave them out of the count.
+
+Score every decoded letter:
+  S = the letter stands in a word that reads as sense in the language, in its place in the sentence
+  E = the letter is a one-letter slip (one letter wrong, missing or extra) in an otherwise readable word; score the
+      wrong or extra letter E and the rest of that word S; a missing letter costs one E on the neighbouring letter
+  N = the letter is in a stretch that makes no sense
+
+Report, with the counts shown:
+  1. per line: letters, S, E, N, and S / letters
+  2. held-out lines 7-8 together: S / letters
+  3. build lines 1-6 together: S / letters
+  4. whole page: S / letters (this is the per-letter figure of record; the project's own line is 65%)
+  5. your word division of each line, with E and N letters marked, so the count can be checked
+  6. one sentence on what the passage says, and any place where you think the reading is doubtful
+Do not use any other file in this folder.
