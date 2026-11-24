@@ -131,3 +131,13 @@ italic n = e, and "et" (f. 115r) is now read as probable.
 
 Words (841): sure 743 -> **748**, probable 52 -> 48, unresolved 25 -> 24. Sure + probable 94.5% -> **94.6%**, still
 under 95%. Details are in `sign_check/README.md`.
+
+## 24 Nov 2026 (late): blind sign sheet 2411-95 (`sign_check/`)
+Three unread groups of no. 63 that hinged on one pi / italic-n sign were put to Brice Dudout as a second blind sheet
+(controls 3/3). All three are the italic n (e): "et" and "e" (f. 116r l.16, sure) and "egli° era" (f. 116r l.31,
+probable: word cut by sense). `no63_signs_2411_95.txt` and `no63_reading_2411_95.md` are the new versions; earlier
+files are unchanged.
+
+Words (841): sure 748 -> **750**, probable 48 -> 49, unresolved 24 -> 21. Sure + probable 94.6% -> **95.01%**, at the
+line by 0.05 word; 94.99% with our stricter tokenisation (839 words); 89.2% on sure words alone. State left to the
+maintainer. Details in `sign_check/README.md`.
