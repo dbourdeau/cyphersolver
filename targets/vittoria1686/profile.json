@@ -110,7 +110,7 @@
    "cleartext context"
   ],
   "attack": "ciphertext-only",
-  "human_role": "WAINUT set the task (catalogue 1570) and the rules; AI language-model agents located the letters, transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked the text. Completion of 21-23 Nov 2026 (PR #853): Matthew Kennedy, who had WAINUT's key and reading (PR #226), states that he designed the workflow, did the palaeographic checking, the historical research and the final verification, and checked all final transcriptions, key values and readings against the scans himself; the model he names did first-pass visual triage, scripting and Italian drafting. His statement, not checked here.",
+  "human_role": "WAINUT set the task (catalogue 1570) and the rules; AI language-model agents located the letters, transcribed, built the key, read and checked. No target-specific human intervention. No human palaeographer checked WAINUT's text. Completion of 21-23 Nov 2026 (PR #853): Matthew Kennedy, who had WAINUT's key and reading (PR #226), states that he designed the workflow, did the palaeographic checking, the historical research and the final verification, and checked all final transcriptions, key values and readings against the scans himself; the model he names did first-pass visual triage, scripting and Italian drafting. His statement, not checked here. No maintainer or person outside the project has checked any transcription; the fifth letter (24 Nov 2026) was transcribed, decrypted and read by an AI agent for the maintainers and read again by a second AI agent.",
   "tools": [
    "Estense IIIF images",
    "scripts in this folder (decoder, mark checker)",
@@ -139,7 +139,7 @@
     "contextual inference",
     "key-structure hypothesis"
    ],
-   "what": "Table built by hand from cc. 3v and 4r using word divisions and context; swapped-pair pattern noticed.",
+   "what": "Table built by WAINUT's AI language-model agents, without a solver, from cc. 3v and 4r using word divisions and context; swapped-pair pattern noticed.",
    "result": "worked"
   },
   {
@@ -280,23 +280,35 @@
   {
    "date": "2026-11-24",
    "kind": "verification",
-   "what": "Recount by the sure-word rule over the five letters, scripts/count_words.py (cipher words from the transcription files, holes from the reading files, the two adjustments of the image check of 24 Nov on Letter 4). With only 104 sure: Letters 1-4 237 of 267 (the figure carried), Letter 5 129 of 155. With 104, 159, 13, 182 and 109 sure: Letter 1 141 of 155, Letter 2 12 of 15, Letter 3 19 of 24, Letter 4 70 of 73 (95.9%), Letter 5 137 of 155 (88.4%); all five 379 of 422, 43 holes, 89.8%. Read in part. Every hole has an outside blocker (the writer's abbreviations and slips, a blot, a three-letter word, code groups that stand once or twice with no key sheet), so the target is at a stopping point. No reading review of Letter 5 yet: its author does not sign one.",
+   "what": "Recount by the sure-word rule over the five letters, scripts/count_words.py (cipher words from the transcription files, holes from the reading files, the two adjustments of the image check of 24 Nov on Letter 4). With only 104 sure: Letters 1-4 237 of 267 (the figure carried), Letter 5 129 of 155. With 104, 159, 13, 182 and 109 sure: Letter 1 141 of 155, Letter 2 12 of 15, Letter 3 19 of 24, Letter 4 70 of 73 (95.9%), Letter 5 137 of 155 (88.4%); all five 379 of 422, 43 holes, 89.8%. Read in part. Every hole has an outside blocker (the writer's abbreviations and slips, a blot, a three-letter word, code groups that stand once or twice with no key sheet), so the target is at a stopping point. Letter 5's reading was not graded by its author; its second reader came later the same day (below).",
    "result": "worked"
   },
-  {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1631 tokens, 26 types, it-cinquecento order 4: reading -2.036 per letter; random keys -5.16 (z 5.9); key annealed onto shuffled ciphertext best -3.244 (mean -3.272, z 64.2); annealer on the real text -2.036. Verdict: pass.", "result": "worked"}
+  {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1631 tokens, 26 types, it-cinquecento order 4: reading -2.036 per letter; random keys -5.16 (z 5.9); key annealed onto shuffled ciphertext best -3.244 (mean -3.272, z 64.2); annealer on the real text -2.036. Verdict: pass.", "result": "worked"},
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Second reader of the letter of 18 Sept 1691 and claims review of the page (an AI agent for the maintainers, not the agent that made the reading; not a person; scripts outside the repository). Its own decoder from kennedy_2026/key_kennedy.tsv gives decryption_cc24v-25r.txt on all 18 lines (603 groups, 155 cipher words). The reading was read as Italian sentences against the decode and the English; every departure from the key output is marked except the word division sene > se ne (twice), now stated in the reading file's header. Code grades agreed (104, 159, 13, 182, 109 sure; 171, 161 probable). Eight places on cc. 24v and 25r compared with the Estense images: all as transcribed. Grade B recorded as the letter's reading_review. Found on c. 4r (Letter 1, L1_4r_20): a hooked stroke over the 55 of an[n]i, as Kennedy's note records ('ink macron over 55'), the stroke that made danno a sure word on c. 20r.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Recount with anni counted sure (scripts/count_words.py, the adjustment added beside the two of Letter 4): Letter 1 142 of 155 (91.6%, 13 holes); all five 380 of 422, 42 holes, 90.0%. Letters 2-5 unchanged. Read in part, unchanged: Letter 4 alone is over 95%. The page, the ledgers and NOTES.md were corrected from the claims review: WAINUT's key built by WAINUT's AI agents (PR #226, the first to recover it), the differences between the two keys on the code values, Kennedy's statement that he checked his transcription against the scans, and that no maintainer or outside person has checked any transcription.",
+   "result": "worked"
+  }
  ],
  "outcome": {"validation": {"date": "2026-11-24", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 1631, "types": 26, "tokens_per_type": 62.73, "score": -2.036, "nulls": {"random keys": {"n": 200, "mean": -5.16, "sd": 0.533, "max": -3.748, "z": 5.9, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.272, "sd": 0.019, "max": -3.244, "z": 64.2, "p": 0.1429}}, "power": -2.036, "verdict": "pass", "notes": "claimed per-occurrence score -2.036; polyphony 0.0; 16 unread tokens left out; annealer on the real text from random keys reached -2.036"}, 
   "class": "read in part",
   "key": "partial",
   "method": "key recovered from ciphertext-only",
-  "method_basis": "Table built by hand from the numbers of cc. 3v and 4r with their word divisions and the context of the clear text around them; no contemporary decipherment. Annealing with no key on a blind sample recovered 11 of 18 letter values.",
+  "method_basis": "Table built by WAINUT's AI language-model agents, without a solver, from the numbers of cc. 3v and 4r with their word divisions and the context of the clear text around them; no contemporary decipherment. Annealing with no key on a blind sample recovered 11 of 18 letter values.",
   "contribution": [
    "transcription",
    "key recovered"
   ],
-  "fraction_read": 0.898,
+  "fraction_read": 0.9,
   "fraction_read_method": "measured",
-  "fraction_read_source": "scripts/count_words.py, 24 Nov 2026, over the five letters: 379 of 422 cipher words sure, 43 holes (Letter 1 141 of 155; Letter 2 12 of 15; Letter 3 19 of 24; Letter 4 70 of 73; Letter 5, cc. 24v-25r, 137 of 155), with the code values 104, 159, 13, 182 and 109 graded sure after the fifth letter (key_additions_2026-11-24.tsv). Cipher words from the transcription files, holes from the reading files, with the two adjustments of the image check of 24 Nov 2026 on Letter 4 (danno written in full; the word under the blot before ho a hole). With only 104 sure, as before the fifth letter: Letters 1-4 237 of 267 (Matthew Kennedy's strict count of 23 Nov 2026, recounted by the review of PR #853 and again here), all five 366 of 422. Before that: reading_numbers.md, scripts/check_marks.py numbers, 172 of 198 number words (0.869) on WAINUT's transcription of 3 Nov 2026, which lacks the lower half of c. 4r.",
+  "fraction_read_source": "scripts/count_words.py, 24 Nov 2026, over the five letters: 380 of 422 cipher words sure, 42 holes, 90.0% (Letter 1 142 of 155; Letter 2 12 of 15; Letter 3 19 of 24; Letter 4 70 of 73; Letter 5, cc. 24v-25r, 137 of 155), with the code values 104, 159, 13, 182 and 109 graded sure after the fifth letter (key_additions_2026-11-24.tsv). Cipher words from the transcription files, holes from the reading files, with the two adjustments of the image check of 24 Nov 2026 on Letter 4 (danno written in full; the word under the blot before ho a hole) and the one of the second reader of 24 Nov 2026 on Letter 1 (anni on c. 4r has the same doubling stroke over its 55; the reading file prints an[n]i). With only 104 sure, as before the fifth letter: Letters 1-4 237 of 267 by Matthew Kennedy's strict count of 23 Nov 2026 (recounted by the review of PR #853), 238 of 267 with anni counted sure; all five 367 of 422. Before that: reading_numbers.md, scripts/check_marks.py numbers, 172 of 198 number words (0.869) on WAINUT's transcription of 3 Nov 2026, which lacks the lower half of c. 4r.",
   "codes_open": {
    "open": 8,
    "total": 13,
@@ -308,7 +320,7 @@
    {
     "who": "lccompany",
     "role": "solution",
-    "note": "number table recovered; number passages read in part",
+    "note": "number table first recovered, by WAINUT's AI language-model agents (no target-specific human intervention, as WAINUT states); number passages read in part; code values 104 che and 159 (a doubtful per)",
     "date": "2026-11-03"
    },
    {
@@ -326,7 +338,7 @@
    {
     "who": "dragstripfarm",
     "role": "solution",
-    "note": "Matthew Kennedy, PR #853: completion of the reading over all four letters, 237 of 267 cipher words by the strict count; values proposed for the codes 159, 109, 182 and 13; statistical checks. By his statement, with Gemini 4 (gemini-4-neon-xhigh, via Google Antigravity IDE) for first-pass visual triage, scripting and Italian drafting, the glyphs, key and readings checked by him against the scans.",
+    "note": "Matthew Kennedy, PR #853, building on WAINUT's key and reading (PR #226): completion of the reading over all four letters, 237 of 267 cipher words by the strict count; values proposed for the codes 159, 109, 182 and 13; statistical checks. By his statement, with Gemini 4 (gemini-4-neon-xhigh, via Google Antigravity IDE) for first-pass visual triage, scripting and Italian drafting, the glyphs, key and readings checked by him against the scans.",
     "date": "2026-11-21",
     "source": "https://github.com/dbourdeau/cyphersolver/pull/853"
    },
@@ -364,14 +376,14 @@
     "detail": "The group is under a blot on the native-size crop; the three readings cannot be told apart."
    },
    {
-    "item": "23 cipher words in which the reading supplies letters the writer did not write (14 in Letter 1, 3 in Letter 2, 4 in Letter 3, 2 in Letter 4): ten abbreviations (Vic[ari]a, p[ad]re, citat[ion]e, d[ucat]i, inter[ess]i, ten[en]te, Cam[er]a twice, precet[t]i, cerim[oni]e), the four word-final 3 of Letter 1 read as e, and nine words with a letter or an ending left out or written twice (no[n], tenut[o], svegl[i]ati, remedi[o], the dittography di, figli[o], an[n]i, s[i], vesco[vo])",
+    "item": "22 cipher words in which the reading supplies letters the writer did not write (13 in Letter 1, 3 in Letter 2, 4 in Letter 3, 2 in Letter 4): ten abbreviations (Vic[ari]a, p[ad]re, citat[ion]e, d[ucat]i, inter[ess]i, ten[en]te, Cam[er]a twice, precet[t]i, cerim[oni]e), the four word-final 3 of Letter 1 read as e, and eight words with a letter or an ending left out or written twice (no[n], tenut[o], svegl[i]ati, remedi[o], the dittography di, figli[o], s[i], vesco[vo])",
     "blocker": "too-short",
-    "detail": "The writer's abbreviations and slips, not a missing key: relabelled on 24 Nov 2026 from the contributor's no-key-material. Holes by the sure-word rule (README Conventions, 19 Nov 2026) however plain the word is; nothing outside the letters can add what she did not write. The blocker list has no word for a writer's abbreviation; too-short is the nearest. dan[n]o left this group on 24 Nov 2026: the doubling stroke is on the image. svegl[i]ati (c. 3v) was checked on a native-size region the same day: the ink has no 50 between 45 and 10, so the hole stands (kennedy_2026/transcription_full.txt, which gives the 50, is wrong there and was not edited)."
+    "detail": "The writer's abbreviations and slips, not a missing key: relabelled on 24 Nov 2026 from the contributor's no-key-material. Holes by the sure-word rule (README Conventions, 19 Nov 2026) however plain the word is; nothing outside the letters can add what she did not write. The blocker list has no word for a writer's abbreviation; too-short is the nearest. dan[n]o left this group on 24 Nov 2026: the doubling stroke is on the image. an[n]i (c. 4r) left it the same day for the same stroke over its 55, recorded in Kennedy's note and seen on the image by the second reader. svegl[i]ati (c. 3v) was checked on a native-size region the same day: the ink has no 50 between 45 and 10, so the hole stands (kennedy_2026/transcription_full.txt, which gives the 50, is wrong there and was not edited)."
    },
    {
     "item": "Clear-text doubts [?Galioto] / [?Galeota] (c. 4r) and [?Banchi] for B.i (c. 21r)",
     "blocker": "needs-physical-access",
-    "detail": "The contributor's statement; not looked at in the check of 24 Nov 2026. Clear text, outside the count of 30 holes. The cipher word anima against ansia (c. 4r), listed here until 24 Nov 2026, is settled on the image: anima."
+    "detail": "The contributor's statement; not looked at in the check of 24 Nov 2026. Clear text, outside the count of holes. The cipher word anima against ansia (c. 4r), listed here until 24 Nov 2026, is settled on the image: anima."
    }
   ],
   "key_file": [
@@ -379,7 +391,7 @@
    "kennedy_2026/key_kennedy.tsv",
    "key_additions_2026-11-24.tsv"
   ],
-  "notes": "Later on 24 Nov 2026 the letter of 18 Sept 1691 (cc. 24v-25r) was transcribed, decrypted with key_kennedy.tsv and read (transcription_cc24v-25r.txt, decryption_cc24v-25r.txt, reading_cc24v-25r.md, translation_cc24v-25r.md): 137 of 155 cipher words. It tests the code groups that were open: 159 per, 13 et, 182 V.E. and 109 Duca read at every place and are graded sure (key_additions_2026-11-24.tsv); eight new groups stay open. All five letters: 379 of 422, 89.8%, read in part; the target is at a stopping point. The reading of the fifth letter has no reading review yet (its author does not sign one). Earlier the same day: two contributions stand side by side. WAINUT (PR #226, 3 Nov 2026): the key and a reading of the number passages then transcribed, 172 of 198 words. Matthew Kennedy (PR #853, 21-23 Nov 2026): all four letters with the lower half of c. 4r, 237 of 267 cipher words by the strict count. The two keys have the same letter values; they differ on c. 20r (13 et against 15 d') and in the code values (159 per sure or doubtful; 109 and 182 Duca and V.E. or not identified; 3 = z only in Kennedy's). Neither is chosen as the target's key. Letters 2 and 3 are under 40 cipher words with 4 and 5 holes, so the short-text floor does not apply. Stopping-point check of 24 Nov 2026: the place on c. 20r is 13 on the image, so its transcription is Kennedy's and its value is open; kennedy_2026/key_kennedy.tsv covers every sign transcribed and key.tsv, the first key, has the same letter values. The target is in progress, not written up: a fifth letter in the same cipher, cc. 24v-25r of 18 Sept 1691, is not transcribed, and it has the open code groups again. The class and the fraction above describe the four letters transcribed.",
+  "notes": "Later on 24 Nov 2026 the letter of 18 Sept 1691 (cc. 24v-25r) was transcribed, decrypted with key_kennedy.tsv and read (transcription_cc24v-25r.txt, decryption_cc24v-25r.txt, reading_cc24v-25r.md, translation_cc24v-25r.md): 137 of 155 cipher words. It tests the code groups that were open: 159 per, 13 et, 182 V.E. and 109 Duca read at every place and are graded sure (key_additions_2026-11-24.tsv); eight new groups stay open. All five letters: 380 of 422, 90.0%, read in part (anni on c. 4r counted sure for its doubling stroke after the second reader); the target is at a stopping point. The reading of the fifth letter was not graded by its author; a second reader (another AI agent for the maintainers, not a person) gave it grade B the same day. No maintainer or person outside the project has checked any transcription; Matthew Kennedy states that he checked his own against the scans. Earlier the same day: two contributions stand side by side. WAINUT (PR #226, 3 Nov 2026): the key and a reading of the number passages then transcribed, 172 of 198 words. Matthew Kennedy (PR #853, 21-23 Nov 2026): all four letters with the lower half of c. 4r, 237 of 267 cipher words by the strict count. The two keys have the same letter values; they differ on c. 20r (13 et against 15 d') and in the code values (159 per sure or doubtful; 109 and 182 Duca and V.E. or not identified; 3 = z only in Kennedy's). Neither is chosen as the target's key. Letters 2 and 3 are under 40 cipher words with 4 and 5 holes, so the short-text floor does not apply. Stopping-point check of 24 Nov 2026: the place on c. 20r is 13 on the image, so its transcription is Kennedy's and its value is open; kennedy_2026/key_kennedy.tsv covers every sign transcribed and key.tsv, the first key, has the same letter values. The target is in progress, not written up: a fifth letter in the same cipher, cc. 24v-25r of 18 Sept 1691, is not transcribed, and it has the open code groups again. The class and the fraction above describe the four letters transcribed.",
   "texts": [
    {
     "doc": "numbers",
@@ -409,12 +421,12 @@
     "translation": "kennedy_2026/translation_cc03r-04v_1686-04-02.md",
     "language": "it",
     "state": "read in part",
-    "read_share": 0.91,
+    "read_share": 0.916,
     "cipher_words": 155,
-    "holes": 14,
+    "holes": 13,
     "clear_markup": "*",
     "summary": "The two nuns to their brother: Don Paolo Ruffo means to lift the sequestration of San Paolo and they fear a sale of the goods; the Marquis of Casale Nuovo is seeking a writ of execution in the Vicaria; the only remedy is a safeguard from Spain; at the Collaterale no one can be trusted. Then praise of a young gentleman from Rome who has no crust of bread assigned to him, and his prayer for the birth of a little prince.",
-    "note": "Matthew Kennedy, PR #853 (21-23 Nov 2026), key kennedy_2026/key_kennedy.tsv. 155 cipher words, 14 holes by the strict count (kennedy_2026/NOTES.md; recounted by the review of the pull request). The clear text is in italics in the reading file.",
+    "note": "Matthew Kennedy, PR #853 (21-23 Nov 2026), key kennedy_2026/key_kennedy.tsv. 155 cipher words, 14 holes by the strict count (kennedy_2026/NOTES.md; recounted by the review of the pull request), 13 since the second reader of 24 Nov 2026: an[n]i (c. 4r, L1_4r_20) has a doubling stroke over its 55 (Kennedy's own note: 'ink macron over 55'; the stroke is on the image), the stroke that made danno a sure word on c. 20r, so scripts/count_words.py counts it sure. The reading file, which prints an[n]i, was not edited. The clear text is in italics in the reading file.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #853 (AI agent, for the maintainers); not a person",
@@ -489,7 +501,7 @@
      "by": "integration review of PR #853 (AI agent, for the maintainers); not a person",
      "date": "2026-11-24",
      "reader_kind": "model",
-     "note": "Read as sentences with the English beside it and against the decryption lines, 24 Nov 2026: c. 20r and the long passage of c. 21r on the grain licences read as continuous Italian. [Duca], [V.E.] and [et] are code values taken from context on one use each, and the 50 before carre is i in the decryption. Grade B. Codex's review of 22 Nov 2026 for the maintainers (kennedy_2026/NOTES.md) predates the literal decryption. No image opened."
+     "note": "Read as sentences with the English beside it and against the decryption lines, 24 Nov 2026: c. 20r and the long passage of c. 21r on the grain licences read as continuous Italian. [Duca], [V.E.] and [et] are code values taken from context on one use each, and the 50 before carre is i in the decryption. Grade B. (Later the same day the letter of 18 Sept 1691 gave them more places, 13 and 182 three each and 109 two, and they were graded sure: key_additions_2026-11-24.tsv.) Codex's review of 22 Nov 2026 for the maintainers (kennedy_2026/NOTES.md) predates the literal decryption. No image opened."
     }
    },
    {
@@ -506,7 +518,8 @@
     "holes": 18,
     "clear_markup": "*",
     "summary": "She has taken the cipher sheet out of a letter of the Duke of Torre Maggiore and copies it: the Duke will wait for October to load the grain when the boats come, and adds that no one knows what this blessed plague is, that in the province of Bari they die of hunger, and that time will reveal it. A two-line run in the clear text before it says she does not know how Monsignore will take it.",
-    "note": "Transcribed, decrypted with kennedy_2026/key_kennedy.tsv and read by an AI agent for the maintainers (Claude Opus 5.5), 24 Nov 2026; not a person. 155 cipher words, 18 holes by the sure-word rule (scripts/count_words.py): seven words with supplied letters (Monsig[nor]e, l[ette]ra, esec[u]t[ion]e, carricam[ent]o, dic[e], negot[i]o, rovin[a]to), two words where a clear group gives no word (ricausranno, bcri), and nine uses of the eight code groups with no sure value. Codes graded sure in key_additions_2026-11-24.tsv are counted as read. No reading review: the author of the reading does not sign one, and a second reader is owed. The clear text is in italics in the reading file and only the words next to the cipher are given."
+    "note": "Transcribed, decrypted with kennedy_2026/key_kennedy.tsv and read by an AI agent for the maintainers (Claude Opus 5.5), 24 Nov 2026; not a person. 155 cipher words, 18 holes by the sure-word rule (scripts/count_words.py): seven words with supplied letters (Monsig[nor]e, l[ette]ra, esec[u]t[ion]e, carricam[ent]o, dic[e], negot[i]o, rovin[a]to), two words where a clear group gives no word (ricausranno, bcri), and nine uses of the eight code groups with no sure value. Codes graded sure in key_additions_2026-11-24.tsv are counted as read. The author of the reading did not grade it; a second reader, another AI agent and not a person, read it the same day and gave grade B (reading_review below). The clear text is in italics in the reading file and only the words next to the cipher are given.",
+    "reading_review": {"grade": "B", "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person", "date": "2026-11-24", "reader_kind": "model", "note": "Second reader, not the agent that made the reading. An own decoder from kennedy_2026/key_kennedy.tsv (.5. taken as 5 = b) applied to transcription_cc24v-25r.txt gives decryption_cc24v-25r.txt on all 18 lines (603 groups, 155 cipher words). The reading was read as Italian sentences against the decode and the English: every departure from the key output is marked (seven abbreviations or a final bare 3, ricausranno and bcri, the probable and unvalued codes), except the word division sene > se ne (twice), which the header does not state. 18 holes, 137 of 155 sure (88.4%). Code grades agreed: 104, 159, 13, 182 and 109 sure (for 182 the clear V.E. of cc. 21r and 24v speaks against V.S.), 171 and 161 probable. Eight places compared with the Estense images (c. 24v ll. 3-6, 8, 10, 13; c. 25r l. 2): all as transcribed; del and aspettaro rest on the decode where the 4/8 forms break the hand's habit, as the doubts list says. The sentences cohere: the Duke's sheet on waiting for October to load the grain, the plague, hunger at Bari, 'il tempo lo scoprira'. Not smooth where two open codes stand together ([200] sento [165]; [185] [162]; [?questo] [168]) and in 'hanno altro male che la fame', which wants a negative the cipher does not have. Grade B."}
    }
   ]
  }

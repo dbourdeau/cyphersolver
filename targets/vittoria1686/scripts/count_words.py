@@ -11,7 +11,9 @@ graded sure. The cipher words found in each reading must equal those of its tran
 
 Two adjustments to Letter 4 come from the image check of 24 Nov 2026 (NOTES.md): danno is written in full with
 its doubling stroke (the reading file prints dan[n]o), and the word before ho on c. 21r is under a blot (the
-reading file prints e). The contributors' files are not edited.
+reading file prints e). One adjustment to Letter 1 comes from the second reader of 24 Nov 2026: anni on c. 4r
+(L1_4r_20) has the same doubling stroke over its 55 (Kennedy's note: "ink macron over 55"; the reading file
+prints an[n]i), so it is counted sure like danno. The contributors' files are not edited.
 
 Two gradings are printed: before the fifth letter (only 104 che sure, as on 24 Nov 2026) and after it
 (key_additions_2026-11-24.tsv: 104, 159, 13, 182 and 109 sure).
@@ -102,6 +104,8 @@ def main():
     for name, tr, rd in LETTERS:
         tw = transcription_words(tr)
         rw = reading_words(rd)
+        if name.startswith('Letter 1'):                   # doubling stroke over the 55 of anni, as for danno
+            rw = ['anni' if t == 'an[n]i' else t for t in rw]
         if name.startswith('Letter 4'):
             rw = ['danno' if t == 'dan[n]o' else t for t in rw]
             i = next(k for k in range(len(rw) - 1) if rw[k] == 'e' and rw[k + 1] == 'ho')
