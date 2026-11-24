@@ -202,3 +202,15 @@ on Gallica views 123-124 in `dudout/`, frozen before decoding, and measured once
 against 0.874 for `n65_transcription.md`, all 400 controls below (shuffled text max 0.901). `dudout/no65_reading_reread.md`
 has 99.3% of the cipher words sure or probable and no unresolved word. The looped b-sign reads rr twice (Ferrara,
 arrivò) and z once (contenteza) in these lines. No. 65 was already read (0.993); it stays read.
+
+## 24 Nov 2026 - no. 63, blind sign sheet (Brice Dudout, with Claude), `dudout/sign_check/`
+Seven doubtful signs of the re-read stretch (f. 115r l. 28 - f. 116v) were put to Brice Dudout as a blind sheet. The
+rule was hashed before the thumbnails, and the controls passed 3/3.
+
+- **Five words become sure:** meter, rendera, lega (not lesa), oficio and deposition.
+- **Italic n = e.** The reader remarked that the italic n and the n with inward tail are one form. That was adopted
+  (italic n = e; pi alone carries n), which reads "in compagna et per eser qui" (probable).
+- **Count.** Of 841 cipher words: sure 743 -> 748, probable 52 -> 48, unresolved 25 -> 24. Sure or probable
+  94.5% -> 94.6%, so still under the 95% bar and no. 63 ff. 115-116 stays read in part.
+- **Files.** `dudout/no63_signs_2411.txt` and `dudout/no63_reading_2411.md`; the frozen 12 Nov files are unchanged.
+  No image is committed (Gallica).
