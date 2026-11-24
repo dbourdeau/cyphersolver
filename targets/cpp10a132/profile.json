@@ -1,0 +1,436 @@
+{
+ "schema_version": 1,
+ "target": "cpp10a132",
+ "title": "A cipher love charm conjuring rue in a 16th-century Italian medical miscellany, College of Physicians of Philadelphia Ms. 10a 132, pp. 75, 76 and verso of 76 (catalogue 2130): key recovered from the ciphertext alone (contributed by Malcolm McBratney with Claude)",
+ "documents": [
+  {
+   "id": "p75r",
+   "read": "read",
+   "shelfmark": "College of Physicians of Philadelphia, Historical Medical Library, Ms. 10a 132, p. 75 (TEI '75r'), lines 1-3, struck through (OPenn image 6207_0112)",
+   "date": "first half of the 16th century (OPenn: 1500-1550); undated charm",
+   "year": 1550,
+   "country": "Italy",
+   "language": "Latin (north Italian spelling)",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No key, gloss, interlinear or printed reading found (PRIOR_ART.md); OPenn notes only 'Fol.76 in cipher'."
+   },
+   "length": {
+    "tokens": 100,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_p75r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "OPenn master TIFFs (FETCH_LOG.txt)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "Cipher letters counted by decode_once.py (decode_counts.txt). _check_profile.py --measure --letters --drop-first gives 103: it also counts the clear numeral xij (3); 103 - 3 = 100. A struck first start of the text of p. 76; clear ear remedies follow on the page (not counted)."
+   }
+  },
+  {
+   "id": "p76r",
+   "read": "read",
+   "shelfmark": "College of Physicians of Philadelphia, Historical Medical Library, Ms. 10a 132, p. 76 (TEI '76r') (OPenn image 6207_0114)",
+   "date": "first half of the 16th century (OPenn: 1500-1550); undated charm",
+   "year": 1550,
+   "country": "Italy",
+   "language": "Latin (north Italian spelling)",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No key, gloss, interlinear or printed reading found (PRIOR_ART.md); OPenn notes only 'Fol.76 in cipher'."
+   },
+   "length": {
+    "tokens": 609,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_p76r.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "OPenn master TIFFs (FETCH_LOG.txt)",
+    "corrections": 0,
+    "image_quality": "good",
+    "notes": "decode_once.py counts 609. --measure --letters --drop-first gives 624: it also counts the clear numerals iiij, iij, xx iiij (4 + 3 + 6 = 13) and the S of the two sign labels S01, S02 (2); 624 - 15 = 609."
+   }
+  },
+  {
+   "id": "p76v",
+   "read": "read in part",
+   "shelfmark": "College of Physicians of Philadelphia, Historical Medical Library, Ms. 10a 132, verso of 76 (TEI '76v') (OPenn image 6207_0115)",
+   "date": "first half of the 16th century (OPenn: 1500-1550); undated charm",
+   "year": 1550,
+   "country": "Italy",
+   "language": "Latin (north Italian spelling)",
+   "pages": 1,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No key, gloss, interlinear or printed reading found (PRIOR_ART.md); OPenn notes only 'Fol.76 in cipher'."
+   },
+   "length": {
+    "tokens": 428,
+    "unit": "letters",
+    "measured": true,
+    "file": "transcription_p76v.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "OPenn master TIFFs (FETCH_LOG.txt)",
+    "corrections": 0,
+    "image_quality": "fair",
+    "notes": "decode_once.py counts 428. --measure --letters --drop-first gives 431: it also counts the clear numeral iij (3); 431 - 3 = 428. Line ends of lines 2-12 are hidden in the gutter of the photograph. Held-out page: the key was recovered without it."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution of each letter by the next letter of the 23-letter Latin alphabet (a>b ... u>x, x>y), word division kept, numerals in clear.",
+  "symbol_kind": "letters",
+  "distinct_symbols": 20,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "doubled_letters": "written twice",
+  "notes": "20 cipher letters in use; a, l, z never occur. Two ordinary scribal abbreviation signs (pro, -rum) occur inside the cipher and have no key value."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: DECODE (search and dump), this repository, OPenn record and TEI, web searches for the charm's formula (PRIOR_ART.md); catalogue 2130 vetting of 3 Nov 2026 (Tomokiyo, Lasry/HistoCrypt: nothing). Hirsch 1983 no. 646 not opened (print only).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney directed the work and set its rules (prior art first, transcription and key frozen before one decode, a held-out page, a separate strict judge, first pass as the figure of record, shuffle controls). Claude sessions did the transcription, key recovery, decode, judging, reading and translation. No reading by a person without AI.",
+  "tools": [
+   "solve.py: shift test over four alphabets and a free-substitution hill-climb, scored with lang/ la-letters (order 5)",
+   "decode_once.py (one decode)",
+   "shuffle.py: 5,000 shuffled keys at two seeds",
+   "judge/count.py (re-adds the judge's scores)"
+  ],
+  "models": [
+   "Claude Fable 5.2 (Anthropic): the solver session (transcription, key recovery, decode, controls) [stated by the contributor]",
+   "Claude Opus 5.5 (Anthropic): the strict judge, and the session that assembled this folder, reading.md and translation.md"
+  ],
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-24"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Prior art before the transcription was frozen: DECODE public search and dump, this repository, the OPenn record and TEI (Hirsch 646 cited), web searches incl. 'coniuro te ruta' (PRIOR_ART.md). No key, decipherment or reading found; Hirsch 1983 not opened (print only).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "OPenn web JPEGs of pp. 74-77 and master TIFFs of 6207_0112, 0114, 0115 fetched; sha1 of the TIFFs matches OPenn's manifest (FETCH_LOG.txt). The verso of 76, not viewed by the 3 Nov vetting, is cipher too.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "All 39 cipher lines transcribed by letter shape from the master TIFFs, 14 doubtful letters marked; frozen with the train/held-out split (FREEZE_TX.txt). 11 line ends of the verso lost in the gutter.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
+   "what": "While transcribing, the system was recognised by eye (qfs = per, bnfo = amen, tboubn = santam: each letter replaced by its successor). Recorded in the freeze as a limit on blindness; not used as the key of record.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis",
+    "statistical test"
+   ],
+   "what": "Train split (709 letters): 20 different letters, a j l v w z absent; IC 0.0783 against about 0.072 for Latin: monoalphabetic.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring"
+   ],
+   "what": "lm.load('la') (default Latin model): the Gutenberg corpus fetch failed with HTTP 503; switched to la-letters.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "exhaustive search",
+    "key-structure hypothesis",
+    "language-model scoring"
+   ],
+   "what": "Every shift in four alphabets (23, 24, 21 and 26 letters) on train, scored with la-letters: shift back by one best at -2.444 per character in the 23-, 24- and 26-letter alphabets; the 21-letter alphabet fails; next best -5.746, worst -8.813.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Free substitution with no shift assumed, 6 seeds x 8 restarts x 6,000 steps on train: 27 of 48 restarts converge at -2.444 on the key equal to the shift-by-one key in all 20 letters; 21 restarts stall between -3.95 and -5.02 (solve_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Key frozen (FREEZE_KEY.txt); one decode of all 1,137 letters, held-out verso included, no emendation (decode_once.py, DECODE.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Separate strict judge (Claude Opus 5.5), given only the brief and the decode, scored each letter S/E/N: p. 75 96/100, p. 76 601/609, verso (held-out) 408/428 = 95.3%, all 1105/1137 = 97.2%.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "5,000 shuffled keys at seeds 20261112 and 7, la-letters: the real key beats every shuffle on full, train and held-out (z 9.5 to 10.8; 0 of 5,000 each).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "reading.md and translation.md made from the decode with holes and slips marked, nothing emended; read share by words 224/241 = 0.929 (p. 75 0.952, p. 76 0.977, verso 0.856). docs/_check_reading.py: 2 of 20 sentences clean (word list lacks period spellings); 13 of 20 counting only marked holes.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1137 tokens, 20 types, la-letters order 4: reading -2.354 per letter; random keys -6.758 (z 7.6); key annealed onto shuffled ciphertext best -4.381 (mean -4.394, z 131.4); annealer on the real text -2.354. Verdict: pass.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-24",
+   "model": "la-letters",
+   "file": "validation.tsv",
+   "tokens": 1137,
+   "types": 20,
+   "tokens_per_type": 56.85,
+   "score": -2.354,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -6.758,
+     "sd": 0.578,
+     "max": -5.29,
+     "z": 7.6,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -4.394,
+     "sd": 0.016,
+     "max": -4.381,
+     "z": 131.4,
+     "p": 0.1429
+    }
+   },
+   "power": -2.354,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -2.354; polyphony 0.0; 0 unread tokens left out; annealer on the real text from random keys reached -2.354"
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The shift-by-one key was recovered from p. 75 and p. 76 alone, by a shift test and by a free-substitution hill-climb that agree in all 20 letters, and then deciphered the held-out verso.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.929,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md: cipher words read as sense, 224 of 241 (holes by research/reading_audit/v2_score.holes; clear numerals left out; one-letter slip words counted as read). By page: p. 75 20/21, p. 76 127/130, verso 77/90. Strict judge by letters: 1105/1137 = 0.972 (judge/judge.tsv).",
+  "verification": [
+   "statistical test"
+  ],
+  "first_break": true,
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "catalogue 2130: key recovered from the ciphertext alone, one decode, strict judge and shuffle controls, with Claude (Anthropic)",
+    "date": "2026-11-24"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "pp. 75, 76 and verso of 76 from the OPenn master images, with Claude (Anthropic)",
+    "date": "2026-11-24"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Verso of 76, line ends of lines 2-12 hidden in the gutter of the OPenn photograph",
+    "blocker": "needs-physical-access",
+    "detail": "11 line ends, about one to three letters each; 8 words of the reading cut and one word of unknown extent after 'preter'; needs a flatter photograph or the book"
+   },
+   {
+    "item": "Two blotted words on the verso: l.9 'quoqon_e', l.7 '_um'",
+    "blocker": "illegible",
+    "detail": "heavy blots on the master image"
+   },
+   {
+    "item": "Words that do not read: 'oue' (p. 76 l.21), 'quaquoque' (verso l.3)",
+    "blocker": "illegible",
+    "detail": "the key is complete; these are the letters as written and transcribed; only the image or the book could change them"
+   },
+   {
+    "item": "14 doubtful letters (c/e, p/long s), kept as transcribed",
+    "blocker": "illegible",
+    "detail": "not rechecked on the image after the decode (freeze rule); 11 give sense as transcribed; NOTES.md, Transcription doubts"
+   },
+   {
+    "item": "Scribal abbreviation signs S01 (pro) and S02 (-rum) inside the cipher",
+    "blocker": "no-key-material",
+    "detail": "ordinary scribal abbreviations, given no key value; p[r]ofetas and angelo[rum] counted as holes"
+   },
+   {
+    "item": "Clear numerals: p. 76 l.4 'xx.iiij' blotted (24, or a corrected 29?); p. 75 l.3 'xij?' where p. 76 has '10'",
+    "blocker": "illegible",
+    "detail": "clear text, not counted in any figure"
+   },
+   {
+    "item": "Hirsch 1983, catalogue no. 646, not seen",
+    "blocker": "needs-physical-access",
+    "detail": "print only; OPenn's note derives from it"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "p75r",
+    "label": "p. 75",
+    "transcription": [
+     "transcription_p75r.txt",
+     "TRANSCRIPTION.tsv"
+    ],
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read",
+    "read_share": 0.952,
+    "clear_markup": "⟨⟩",
+    "reading_section": "p. 75",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5, the session that assembled this folder (a model; not independent of the reading and translation it made)",
+     "reader_kind": "model",
+     "independent": false,
+     "date": "2026-11-24",
+     "note": "Read as sentences in reading.md: the opening invocation of the charm, struck through. 21 cipher words, 1 hole (blot in ange[...]rum); 3 slip words (cunm, spiritui, materm) counted as read, as the judge's E class. docs/_check_reading.py scores the whole file 2 of 20 sentences clean because its Latin word list lacks the scribe's spellings (NOTES.md)."
+    },
+    "summary": "The struck first start of the charm: 'I conjure you, rue, in the name of the Father, the Son and the Holy Spirit, by holy mother, by the twelve(?) choirs of angels and archangels'. Below it on the page, clear ear remedies."
+   },
+   {
+    "doc": "p76r",
+    "label": "p. 76",
+    "transcription": [
+     "transcription_p76r.txt",
+     "TRANSCRIPTION.tsv"
+    ],
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read",
+    "read_share": 0.977,
+    "clear_markup": "⟨⟩",
+    "reading_section": "p. 76",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude Opus 5.5, the session that assembled this folder (a model; not independent of the reading and translation it made)",
+     "reader_kind": "model",
+     "independent": false,
+     "date": "2026-11-24",
+     "note": "Read as sentences in reading.md: the long conjuration of rue by the Trinity, Mary, apostles, evangelists, patriarchs, prophets, angels, the heavens and the life of Christ, then the start of a second conjuration by the evil spirits. 130 cipher words, 3 holes (p[r]ofetas and angelo[rum], abbreviation signs with no key value; 'oue'); 5 slip words counted as read."
+    },
+    "summary": "A love charm conjuring the herb rue (ruta) by the Trinity, the Virgin, the apostles, evangelists, patriarchs, prophets, choirs of angels, sun, moon, stars, saints, heavens and the life of Christ, so that the rue has power to do all the speaker wishes; then a second conjuration of rue by the evil spirits."
+   },
+   {
+    "doc": "p76v",
+    "label": "Verso of 76",
+    "transcription": [
+     "transcription_p76v.txt",
+     "TRANSCRIPTION.tsv"
+    ],
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "la",
+    "state": "read in part",
+    "read_share": 0.856,
+    "clear_markup": "⟨⟩",
+    "reading_section": "Verso of 76",
+    "reading_review": {
+     "grade": "B",
+     "by": "Claude Opus 5.5, the session that assembled this folder (a model; not independent of the reading and translation it made)",
+     "reader_kind": "model",
+     "independent": false,
+     "date": "2026-11-24",
+     "note": "Read as sentences in reading.md: the effect of the charm (the person touched with the rue is not to go, stand, drink, eat, sleep or take carnal pleasure with anyone but the speaker, and is to love the speaker alone) and the instruction to gather the rue in the person's name and say it three times. Coherent, but raw where the gutter cuts line ends. 90 cipher words, 13 holes (10 gutter or blot losses, 3 words without sense); held-out page."
+    },
+    "summary": "The second conjuration's effect: the person the speaker touches with the rue may not go, stand, drink, eat, sleep or take carnal pleasure with anyone else, and is to love the speaker alone while the rue is carried; then: gather the rue in the name of the person by whom you wish to be loved, and say it three times."
+   }
+  ],
+  "key_file": "KEY.tsv",
+  "notes": "Held-out design: the verso of 76 (428 of 1,137 letters, 37.6%) was not used to recover the key. Limit on blindness: the system was recognised by eye while transcribing, though the transcription was frozen before any solving run."
+ }
+}

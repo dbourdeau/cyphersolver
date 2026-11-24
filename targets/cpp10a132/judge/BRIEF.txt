@@ -1,0 +1,21 @@
+JUDGE BRIEF: cpp10a132 (one decode, frozen key, no emendation)
+
+You are given judge/decode.txt: the decoded letters of a cipher text, line by line, exactly as one mechanical pass
+produced them. Language expected: Latin written by a north Italian hand about 1500-1550 (spellings such as "santam"
+for sanctam, "paradixi", "misa", single for double consonants are period spelling, not errors, if the word is
+recognisable). Words run across line ends (e.g. "sant / os").
+
+Score EVERY decoded letter (a-z only) with one of:
+  S = the letter stands in a word that reads as sense in the language
+  E = the letter is a one-letter slip in an otherwise readable word (score the slip letter E, the rest of the word S)
+  N = no sense
+Do not score: clear numerals in { }, the scribe's points . and /, and the marks # (a drawn sign the key gives no value
+for), _ (one illegible letter), ~ (text lost in a blot or the gutter). A word broken by # _ or ~ is scored on the
+letters that are there: S if the word is still recognisable, N if not.
+The single letters between points on p76r l.1 and l.3 (p e f e s / d n i x) are initials; judge whether they make
+sense as initials in context and score them S or N accordingly.
+Do not emend, do not re-divide beyond obvious line-end joins, do not consult any other reading.
+
+Report: per line S/E/N counts; totals for each page (p75r, p76r, p76v); the HELD-OUT figure (p76v alone, the key was
+built without it); and the full figure. Percentage read = S / (S+E+N). Our line is 65%.
+Letter counts for checking: p75r 100, p76r 609, p76v 428, total 1137.

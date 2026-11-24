@@ -1,0 +1,67 @@
+train words 158 letters 709
+freq f:94 b:73 s:66 k:64 o:55 t:55 u:54 n:48 x:47 q:40 p:39 d:18 m:15 e:8 g:7 i:7 h:7 c:6 r:4 y:2
+IC 0.0783 (Latin about 0.072, random/21 about 0.048)
+absent letters: ajlvwz
+
+== A. shift hypothesis, all shifts, three alphabets ==
+-2.444  alph 26 modern  shift -1  all-letters-in-alphabet=True  cwnm jwro te rwta jnnomjne patrjs et fjlj et spjrjtwj sanctj
+-2.444  alph 24 (with v after u)  shift -1  all-letters-in-alphabet=True  cvnm ivro te rvta innomine patris et fili et spiritvi sancti
+-2.444  alph 23 (a-z less j,v,w)  shift -1  all-letters-in-alphabet=True  cunm iuro te ruta innomine patris et fili et spiritui sancti
+-3.802  alph 21 (no k,y)  shift -1  all-letters-in-alphabet=False  cunm #uro te ruta #nnom#ne patr#s et f#l# et sp#r#tu# sanct#
+-5.746  alph 26 modern  shift -10  all-letters-in-alphabet=True  tned anif kv inkr aeefdaev grkiaj vk waca vk jgaiakna jretka
+-5.923  alph 24 (with v after u)  shift -5  all-letters-in-alphabet=True  yrih ernk pa nrpv eiikheia lvpneo ap bege ap olenepre oviype
+...worst -8.813
+
+== B. free substitution, hill-climb with restarts (la-letters, order 5, spaces) ==
+seed 20261112 restart 0 score -4.073  funm ouca ti cute onnamoni setcor it bopo it rsoco
+seed 20261112 restart 1 score -4.046  curt iuse da sudo irretira hodsim ad fini ad mhisi
+seed 20261112 restart 2 score -4.980  mrch erat in aris eccthecn usiaeo ni dele ni oueae
+seed 20261112 restart 3 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 20261112 restart 4 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 20261112 restart 5 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 20261112 restart 6 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 20261112 restart 7 score -4.161  curo iunh te nuta irrhoire matnis et pili et smini
+seed 7 restart 0 score -3.974  furt ouca ni cune orratori hencos in domo in shoco
+seed 7 restart 1 score -3.967  nurt ouce si cusa orretori hascom is polo is mhoco
+seed 7 restart 2 score -5.016  hnco anil er inet accloacr bteiau re paga re ubaia
+seed 7 restart 3 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 7 restart 4 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 7 restart 5 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 7 restart 6 score -4.457  bnlo ancu di cnde alluoali hedcat id fama id thaca
+seed 7 restart 7 score -4.053  fert iemu da medo irrutira nodmis ad hici ad snimi
+seed 1 restart 0 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 1 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 2 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 3 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 4 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 5 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 6 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 1 restart 7 score -4.089  hucs outa ni tune occasoci fentom in xolo in mfoto
+seed 2 restart 0 score -4.047  fert iesu da sedo irrutira hodsim ad bini ad mhisi
+seed 2 restart 1 score -4.192  curo auth ni tune arrhoari sentam in fala in msata
+seed 2 restart 2 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 2 restart 3 score -4.408  beri oemh da medu orrhiora tudmos ad cono ad stomo
+seed 2 restart 4 score -3.950  gurt oune di nuda orretori cadnos id polo id scono
+seed 2 restart 5 score -4.112  bino aimh tu mite annhoanu cetmas ut fala ut scama
+seed 2 restart 6 score -4.011  purt oule di luda orretori fadlos id como id sfolo
+seed 2 restart 7 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 0 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 1 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 2 score -4.257  fort iolh ua loue irrhtira ceulis au nimi au scili
+seed 3 restart 3 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 4 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 5 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 6 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 3 restart 7 score -4.279  dura ouch ni cune orrhaori sencot in mopo in tsoco
+seed 4 restart 0 score -4.745  fnta inol ur onus ittlaitr psuoie ru cibi ru epioi
+seed 4 restart 1 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 4 restart 2 score -3.951  durt ouca ni cune orratori hencos in bolo in shoco
+seed 4 restart 3 score -4.176  runs iume da mudo innesina todmic ad libi ad ctimi
+seed 4 restart 4 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 4 restart 5 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 4 restart 6 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+seed 4 restart 7 score -2.444  cunm iuro te ruta innomine patris et fili et spiri
+
+best free key score -2.444
+b>a c>b d>c e>d f>e g>f h>g i>h k>i m>l n>m o>n p>o q>p r>q s>r t>s u>t x>u y>x
+cunm iuro te ruta innomine patris et fili et spiritui sancti amen per santam materm per choros angerum et archangilorum cunm iuro te ruta innomine p e f e s tui santi amen per santam mariam mater d n i x per apostulos per eu angilistas per patriarchas per pofetas per choros angelo et arcang elorum per cherubin et sarafin per sol et lunam per stellas per omnes sant os paradixi per omnes celos per a
