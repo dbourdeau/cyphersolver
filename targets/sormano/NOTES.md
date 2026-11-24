@@ -214,3 +214,11 @@ rule was hashed before the thumbnails, and the controls passed 3/3.
   94.5% -> 94.6%, so still under the 95% bar and no. 63 ff. 115-116 stays read in part.
 - **Files.** `dudout/no63_signs_2411.txt` and `dudout/no63_reading_2411.md`; the frozen 12 Nov files are unchanged.
   No image is committed (Gallica).
+
+## 24 Nov 2026 (late) - no. 63, blind sign sheet 2411-95 (Brice Dudout, with Claude), `dudout/sign_check/`
+Three unread groups that hinged on a single pi / italic-n sign were put to Brice Dudout as a second blind sheet (rule
+hashed before anything was shown; controls 3/3). All three are the italic n (e): *et*, *e* (sure) and *egli° era*
+(probable, word cut by sense). Of 841 cipher words: sure 748 -> 750, probable 48 -> 49, unresolved 24 -> 21; sure or
+probable 94.6% -> 95.01%. This is at the 95% line by 0.05 word only, it is 94.99% with a stricter tokenisation (839
+words) and 89.2% on sure words alone, so we do not claim it as exceeded and leave the state to the maintainer.
+Files: `dudout/no63_signs_2411_95.txt`, `dudout/no63_reading_2411_95.md`. No image is committed (Gallica).
