@@ -377,7 +377,8 @@
    "result": "worked",
    "technique": ["statistical test"]
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction", "statistical test"], "what": "R4936 g/q shape check, place by place (sign_check/). (1) Blind sheet T answered by Brice Dudout: 8 g read t, 1 q read u, 2 c read y, 3 controls; rule hashed before the thumbnails were cut (sheet-T-rule.md, SHA-256 7f08d4fd...). Controls 3/3; the 8 t places show a short hook (relabelled g->q), the u place a long loop (q->g), c->e at fegyvert, c kept at kyralyoknak. (2) AI pass (Claude) on the other 142 g-shaped places, protocol hashed in two parts before the unseen places (ai-protocol-partA.md, ai-protocol-partAB.md), blind calibration on 21 mixed crops 9/9 with the human answers and 3/3 controls (the agent had read the human answers): g read t 94 hook, 0 loop, 12 doubtful; g read u 27 loop, 4 hook (tagged g=u:hook), 5 doubtful. 102 g->q relabels in all in R4936_align.tsv and R4936-transcription-b15.txt (R4936_corrections.tsv; mechanical decode R4936-mechanical-b15.txt). Frozen key unchanged, reading unchanged. Count (tools/R4936_count728.py, 341 cipher words = 338 rows + 3 [...] runs): sure words 232 -> 234 on the human places alone; 302 if the AI places are counted, which they are not until a reader who has not seen the answers checks them (decision of 24 Nov 2026). State left to the reviewer.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -408,11 +409,10 @@
     "decryption": ["R4936_reading_lines.txt", "R4936-mechanical.txt"],
     "summary": "Numbered instructions in the prince's 'we' to Ferenc Bethlen at Warsaw, 1645, with clear Hungarian links: the King must be persuaded and the Respublica should not disgrace itself or bow to the Turk; the King is asked to hire 3,000 musketeers and 1,000 dragoons (at least 2,000 and 1,000) for Transylvania; money at Danzig; recruits to Munkacs and Makovica; news of Bregy and Croissy.",
     "language": "hu",
-    "state": "read in part",
+    "state": "decoded, not read",
     "reading": "R4936_reading.md",
     "translation": "R4936_en.md",
-    "read_share": 0.886,
-    "note": "Verify sweep 23 Oct 2026 (reading audit v2): back to decoded, not read. The b15 reading (R4936_reading.md, kept as a partial reading) puts 130 of its 1,932 letters (6.7%, in 99 of 338 words; 114 are t read on a figure labelled g, whose own value is u) on the other member of a look-alike pair; the brief's limit is about 3% unless a contemporary or printed text confirms them, and none exists (only a later pencil gloss under line 1). Checked on the DECODE image IMG_R4936_I28640_P1 at 3x: the g- and q-shaped figures do not separate at the scan's 1,704-px resolution, so the choices rest on sense. Scores: explicit holes 0.941 (32/34) as published; 0.147 (5/34) with the look-alike words counted as holes; 0.029 plain (modern hu word list). Blocker: illegible (scan resolution; a better image of Keresdi_Bethlen_14 would settle g/q) 24 Nov 2026: 302 of 341 cipher words (88.6%) now read without a look-alike letter after a place-by-place g/q shape check (blind human check by Brice Dudout, 8 + 1 places, 3/3 controls; then an AI shape check calibrated on those answers, 9/9 blind agreement, 3/3 controls, protocol hashed before any unseen place; see NOTES.md). The frozen key is unchanged and no value was added. Under the 95% read bar, so read in part."
+    "note": "Verify sweep 23 Oct 2026 (reading audit v2): back to decoded, not read. The b15 reading (R4936_reading.md, kept as a partial reading) puts 130 of its 1,932 letters (6.7%, in 99 of 338 words; 114 are t read on a figure labelled g, whose own value is u) on the other member of a look-alike pair; the brief's limit is about 3% unless a contemporary or printed text confirms them, and none exists (only a later pencil gloss under line 1). Checked on the DECODE image IMG_R4936_I28640_P1 at 3x: the g- and q-shaped figures do not separate at the scan's 1,704-px resolution, so the choices rest on sense. Scores: explicit holes 0.941 (32/34) as published; 0.147 (5/34) with the look-alike words counted as holes; 0.029 plain (modern hu word list). Blocker: illegible (scan resolution; a better image of Keresdi_Bethlen_14 would settle g/q)."
    },
    {
     "doc": "R4937",
@@ -518,9 +518,9 @@
     "detail": "54 cipher letters in three spans; the word occurs once; the family key otherwise decodes the spans unchanged (23 Oct 2026)"
    },
    {
-    "item": "R4936 (read in part, 302 of 341 cipher words, 0.886): about 27 letters on look-alike alternates, 12 doubtful g=t places, 5 q=u, 3 c=y, 3 g=g, four u written with the hook shape (mutatnanak twice, instructioban, tule), plus five [?words] and two [...] runs",
+    "item": "R4936 (decoded, not read): after the g/q shape check of 24 Nov 2026, 26 letters rest on the other member of a look-alike pair (12 doubtful g=t, 5 q=u, 3 c=y, 3 g=g, 3 single), four u are written with the hook of the t figure (g=u:hook), and the 94 g->q relabels made by an AI pass count as probable until a blind reader checks them (sure words 234 of 341 on the human places alone, 302 with the AI places); plus five [?words] and three [...] runs",
     "blocker": "illegible",
-    "detail": "at 3-4x the g-shaped figure shows a short hook (t) or a long loop (u) in most places (24 Nov 2026), but 17 places stay doubtful; the DECODE scan is 1,704 px wide with no larger file; no contemporary or printed decipherment confirms the choices (verify sweep 23 Oct 2026). 23 Oct 2026 (r2h): R4938 and R4939 do not settle it (R4938's spans have no t; R4939 is another hand, whose g and q do separate at the same scan width)"
+    "detail": "the DECODE scan (1,704 px wide, no larger file) did not separate the hand's g and q at 3x (23 Oct 2026); at 3-4x a short hook (t) or a long loop (u) shows at most places, 17 stay doubtful (24 Nov 2026, sign_check/); no contemporary or printed decipherment confirms the choices (verify sweep 23 Oct 2026). 23 Oct 2026 (r2h): R4938 and R4939 do not settle it (R4938's spans have no t; R4939 is another hand, whose g and q do separate at the same scan width)"
    },
    {
     "item": "R4937: the run after 'megsegni' (l. 3) and the end of l. 13",
