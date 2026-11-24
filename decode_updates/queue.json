@@ -2552,7 +2552,8 @@
   "riksarkivet4284": {
    "writeup": "https://dbourdeau.github.io/cyphersolver/riksarkivet4284.html",
    "key": {
-    "none": "No key recovered or found; box keys R4310 and R4296 do not fit."
+    "decode": "R4325",
+    "how": "the horizontal alphabet strip on I25940 (Chifferklaver låda II:152), matched by Dolly Moulekhi (issue #98, 25 Oct 2026) and checked on the image; four numbers per letter; the larger numbers are not resolved"
    },
    "cite": null,
    "fields": {},
@@ -2560,12 +2561,19 @@
     "R4284": {
      "decode_status": "Non-decrypted",
      "proposed": "Non-decrypted",
-     "note": "Latin letter in comma-separated numbers (822 groups, ~170 forms) with clear Latin connectives; archival note 'Legat ... till L. Camerarius bref för 1628' (filed with the letters to Ludwig Camerarius, 1628). A second leaf tests a letter cipher on four phrases (effusorem sanguinis, pestem patriae, praeter naturalem, disturbatorem religionis). Homophonic Latin annealing and box keys R4310 and R4296 failed; not deciphered. Transcription attached.",
+     "note": "Last part of Gustav II Adolf's letter to Axel Oxenstierna, Stockholm, 18 Nov 1627: Swedish in comma-separated numbers (822 groups, ~170 forms) with clear Latin connectives. Dated and named from the printed edition, Rikskansleren Axel Oxenstiernas skrifter och brefvexling II:1 (1888), no. 296, pp. 362-367, which prints the letter from another copy with Lars Grubbe's decipherment of the time; R4284 is the part from p. 366 (identified by Andrew Beling, 2026). R4284 has no dateline; the day 18 is the editors', from the register. The archival note 'Legat ... till L. Camerarius bref för 1628' is the filing, not the date. The key is the alphabet strip of DECODE R4325 (matched by Dolly Moulekhi, 2026): it gives 729 of 754 numbers a letter; 23 larger numbers are unresolved. Decoded, no reading or translation yet. A second leaf tests a letter cipher on four phrases (effusorem sanguinis, pestem patriae, praeter naturalem, disturbatorem religionis). Transcription attached.",
      "reading": null,
      "sent": false,
      "reading_not_needed": true,
      "fields": {
-      "start_year": "1628 (archival note on p. 1)"
+      "start_year": 1627,
+      "start_month": 11,
+      "start_day": 18,
+      "origin_city": "Stockholm",
+      "sender": "Gustav II Adolf",
+      "receiver": "Axel Oxenstierna",
+      "plaintext_lang": "Swedish",
+      "cleartext_lang": "Latin"
      },
      "transcription": [
       "targets/riksarkivet4284/r4284_transcription.txt"

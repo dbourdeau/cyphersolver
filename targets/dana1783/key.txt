@@ -2,11 +2,37 @@
 # Periodic numerical table of the Lovell type. Alphabet of 27 signs: a..z and &.
 # Key word WIN, used cyclically letter by letter. Under key letter K the plaintext letter K is written 1,
 # the next letter 2, and so on round the alphabet: number = (p - K) mod 27 + 1 (a = 0 ... & = 26).
-# Numbers above 27 are code groups. Their meanings are not known (no code list found).
+# Numbers above 27 are word numbers of Dana's own list (below). On 27 Oct 2026 the list had not been found.
 #
 # plain:  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z  &
 W      : 6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  1  2  3  4  5
 I      :20 21 22 23 24 25 26 27  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
 N      :15 16 17 18 19 20 21 22 23 24 25 26 27  1  2  3  4  5  6  7  8  9 10 11 12 13 14
 #
-# Code groups seen: 29, 31, 137, 168 (meaning unknown).
+# Dana's own table of October 1782: PCC 89 vol. II p. 656 (NARA naId 502963402, object 262), found by Brice Dudout
+# (27 Oct 2026), viewed in the integration review of 24 Nov 2026 (one AI reading at reduced size). A clerk's copy is
+# in PCC item 109 (naId 2316037, objects 103-104), found by Andrew Beling (issue #898).
+# On the sheet the alphabets stand in the order N, W, I (a = 15, 6, 20; n = 1, 19, 6), and its example
+# "When the Army of America go" = 10 13 24 1 25 27 19 35 2 11 33 21 20 runs N, W, I.
+# Rule (item 109 copy): "When you come to an arbitrary character, begin your Key word anew. # Or to a Cypher above
+# 27": after a word number the key starts again at N.
+#
+# Word list: three numbers per word, the word followed by its numbers. Blocks 30-122, 123-215, 216-263; 264-305 blank.
+# Only the words below were read on p. 656; the full list (31 + 31 + 16 words) is not transcribed yet.
+# word              numbers        source
+Adams               30  61  92     p. 656, first word of block 30-122
+Administration      31  62  93     p. 656 ("Administration 1 2 3", last figures)
+America             33  64  95     example on p. 656 (33); "America. 33. 64. 95" in the item 109 copy
+Army                35             example on p. 656; 66 and 97 would follow by the pattern, not read
+Franklin           123 154 185     p. 656, first word of block 123-215
+Men                136 167 198     item 109 copy ("Men 6 7 8", last figures)
+Minister           137 168 199     p. 656 ("Minister 7 8 9", last figures)
+Spanish            216 232 248     p. 656, first word of block 216-263
+Warontzow (Count)  231 247 263     p. 656, last word of block 216-263
+# Between Spanish and Warontzow, in order on p. 656 (numbers by position, not read one by one): State, Stockholm,
+# Sweden, Swedish, Tartars, Treaty, Troops, Turkish, Turkey, United Provinces, United States, Vergennes (Count),
+# Versailles, Vienna.
+#
+# Groups seen in No. 23: 31 = Administration, 137 and 168 = Minister (read with the table).
+# 29 is in neither the alphabets (1-27) nor the word list (from 30): open; read as a slip for i from the sentence.
+# In the N position i is 23.
