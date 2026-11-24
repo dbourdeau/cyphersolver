@@ -319,9 +319,9 @@
   "class": "read in part",
   "gaps": [
    {
-    "item": "R4844 sign words (~14 words, ~120 signs)",
+    "item": "R4844 sign words (19 groups, ~120 signs)",
     "blocker": "too-short",
-    "detail": "homophonic sign alphabet, no crib, no key, interlinear decipherment blotted out"
+    "detail": "homophonic sign alphabet, interlinear decipherment blotted out. A partial sign key exists (dudout/sign_key.tsv, learnt on the glossed sign words of R4689, R4835, R4836; 0.646 vs 0.213 on held-out R4845), and two blind sign sheets (K, K2) were run: 12 of 19 groups certain, 4 probable, 3 unresolved (20 Nov 2026). Open: groups 2, 4, 10; the fifth sign of group 14; MP and ψ in group 16"
    },
    {
     "item": "name codes 13, 14, 23, 30, 32, 37",
@@ -346,7 +346,7 @@
   "verification": [
    "historical consistency"
   ],
-  "notes": "All four letters readable; two already in print as calendar abstracts. Name code mostly identified; the ~14 sign words of 10 Sep 1585 unread. fraction_read is a rough estimate from NOTES, not a count: name numbers mostly identified (6 of 16 open), the ~14 sign words of R4844 unread.",
+  "notes": "All four letters readable; two already in print as calendar abstracts. Name code mostly identified. The sign words of 10 Sep 1585 (19 groups) were not read by the project's own attempt; with the partial sign key contributed by Brice Dudout (9 Nov 2026, learnt on the deciphered pairs R4689, R4835, R4836) 12 groups are certain, 4 probable and 3 unresolved after blind sign sheets K and K2 and the review of #821 (20 Nov 2026). R4844 as a whole stays decoded, not read. fraction_read 0.362 is 25 of 69 units (fraction_read_source); R4844's units are not counted in it.",
   "credits": [
    {
     "who": "boyd",
@@ -379,10 +379,10 @@
    },
    {
     "label": "sign alphabet of the 10 Sep 1585 letter",
-    "records": "R4844 (ff. 194-195): about 23 sign words, about 120 signs",
+    "records": "R4844 (ff. 194-195): 19 sign groups, about 120 signs (about 23 sign words in the count of 22 Oct 2026)",
     "method": "not solved",
     "extent": "none",
-    "basis": "homophonic sign alphabet with dot/dash nulls; Wotton's interlinear decipherment blotted out on purpose; no key on DECODE or in Tomokiyo, no crib in Wotton's drafts; too short to break"
+    "basis": "The project's own attempt (21 Sept 2026): homophonic sign alphabet with dot/dash nulls; Wotton's interlinear decipherment blotted out on purpose; no key on DECODE or in Tomokiyo, no crib in Wotton's drafts; too short to break. Contributed since (Brice Dudout, 9 Nov 2026): a partial sign key learnt on the glossed sign words of the deciphered pairs R4689, R4835, R4836 in the same volume (dudout/sign_key.tsv; 0.646 vs 0.213 on held-out R4845, partial by the protocol) gives 16 of the 19 sign groups; after blind sign sheets K and K2 and the review of #821 (20 Nov 2026) 12 are certain, 4 probable and 3 unresolved (third outcome.texts entry, read_share 0.632). Open: groups 2, 4, 10; the fifth sign of group 14; MP and ψ in group 16. Method and extent still record the project's own attempt; whether this part is reclassed on the contributed key has not been decided"
    }
   ],
   "texts": [
@@ -418,7 +418,7 @@
      "reading_R4844_r2.txt",
      "clear_gaps_pass2.md"
     ],
-    "summary": "Walsingham to Wotton on the articles set down by the Master of Gray, the banished lords and Arran, with about fourteen words in a separate sign alphabet that stay unread (Wotton's interlinear decipherment is blotted out); a postscript says a go-between [23] deals between the King and the Jesuits.",
+    "summary": "Walsingham to Wotton on the articles set down by the Master of Gray, the banished lords and Arran, with about fourteen words in a separate sign alphabet, left unread in this transcription (Wotton's interlinear decipherment is blotted out; the next entry gives them as far as the partial sign key reads them); a postscript says a go-between [23] deals between the King and the Jesuits.",
     "note": "Re-read 22 Oct 2026 (texts/R4844_reread_log.md): no decipherment exists (Wotton’s interlinear one is blotted), CSP Scotland viii does not calendar the letter, and the DECODE images are behind the login and not in the checkout. The 14 Oct gap readings (clear_gaps_pass2.md) were merged into reading_R4844_r2.txt (_check_reading 0.45 -> 0.50), but every sentence of the body still carries a sign word (11 groups, about 120 signs, homophonic with nulls, no crib, no key: too short) or an open name code (13, 14, 23, 30, 32, 37). Fragments only.",
     "state": "decoded, not read",
     "language": "en"
@@ -435,9 +435,9 @@
     "note": "20 Nov 2026, review of #821 (NOTES, Review of #821): group 14 ({suspition}: sheets K and K2 disagree on its fifth sign) and group 16 ({Scroupe}: MP is l in sign_key.tsv and ψ has no row, so the key gives 's?rouple') go back to probable: 12 of 19 groups certain, 4 probable, 3 unresolved: 12 of 19 = 0.632. 20 Nov 2026, after blind sign sheet K2 (NOTES, Sign check K2): group 14 (suspition) moves from P to S (its fifth sign is \"=\", p), so 14 of 19 groups are certain, 2 probable, 3 unresolved: 14 of 19 = 0.737. 19 Nov 2026, after blind sign sheet K (NOTES, Sign check K): groups 12 (traine) and 16 (Scroupe) move from P to S, so 13 of 19 groups are certain, 3 probable, 3 unresolved: 13 of 19 = 0.684 (was 11 of 19 = 0.579). 16 of 19 sign groups read, 3 unresolved (groups 2, 4, 10); 16 Nov 2026, sure words only: 11 groups are graded S (certain), 5 are P (probable, one with a restored letter) and count as holes, so 11 of 19 = 0.579. Before 0.86, the share of sign letters read for sense with the probable and the restored letters counted as read (about 100 of 116; certain about 69 of 116 = 0.59); the reading file dudout/reading_R4844_signs.md still carries the 0.86 line. Key partial by our protocol (0.646 vs 0.213 on held-out R4845). v10_relabel.py cannot reproduce the count (the grades are in a table column, not marked in the text).",
     "reading_review": {
      "grade": "B",
-     "by": "Brice Dudout (with Claude)",
-     "date": "2026-11-09",
-     "note": "the sign words read as words in the clear sentences of R4844; coherent but with three gaps and several probable words"
+     "by": "integration review of PR #821 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-20",
+     "note": "Grade given by the reviewer, not by the author of the reading; it replaces the contributor's own entry of 9 Nov 2026 (grade B, Brice Dudout with Claude). The 19 sign groups of dudout/reading_R4844_signs.md were recounted from the grade column: 12 certain, 4 probable ({suspition}, {Scroupe}, [a]bsent, the postscript plot), 3 unresolved (groups 2, 4, 10), so 12 of 19 = 0.632. Set into the clear sentences of reading_R4844_r2.txt, the certain words read as English (the plot set downe by 39; of best iudgment; make her selfe a partye; any violent course; at the attempt; your traine at Sterling; from the lorde; secreat; secreacie). Coherent but raw: seven groups are holes and the letter as a whole stays decoded, not read. The SHA-256 values of the rules and answers of sheets K and K2 were verified on the committed files. Not checked against the DECODE images (login needed): no sign was looked at. A model's reading: no person has checked it."
     }
    },
    {
