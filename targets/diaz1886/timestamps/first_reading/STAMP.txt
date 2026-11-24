@@ -1,0 +1,10 @@
+LABEL: diaz1886_first_reading_note
+File: READING_diaz1460_pilot10_numerals_v1_2026-11-19_0201Z.md (in this folder, byte for byte the contributor's file of that name; NOTES.md, section 3)
+SHA-256: 5189f57c202aa7edae0ec9c967934e6a0ca7d872b63b662d34e0f0727904410d
+RFC 3161, freetsa.org: status Granted, time Nov 19 02:01:50 2026 GMT
+RFC 3161, timestamp.digicert.com: status Granted, time Nov 19 02:01:50 2026 GMT
+RFC 3161, timestamp.sectigo.com: status Granted, time Nov 19 02:01:50 2026 GMT
+Verify DigiCert and Sectigo: openssl ts -verify -data READING_diaz1460_pilot10_numerals_v1_2026-11-19_0201Z.md -in READING_diaz1460_pilot10_numerals_v1_2026-11-19_0201Z.md.<authority>.tsr -CAfile <a bundle of public root certificates>
+Verify FreeTSA: the same, with -CAfile and -untrusted set to FreeTSA's own root and signing certificates, as its site publishes them
+The table and the script that the note names are with the contributor and are not in this folder.
+OpenTimestamps: none made

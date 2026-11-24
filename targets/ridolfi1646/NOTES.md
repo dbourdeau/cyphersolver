@@ -136,7 +136,8 @@ basis of this section.
   stayed restored the strict count would be 391/431 = 90.7% (412/431 = 95.6% on the contributor's count).
 - Not checkable from the repository: that the integration rule was hashed before the sheet was opened (the rule and the
   answer file are not in the folder; their hashes b61a4fd7... and c692c679... are the contributor's statement), and the
-  images themselves (PARES HTTP 429 again).
+  images themselves (PARES HTTP 429 again). Since 19 Nov 2026 the rule and the answer file are in `sign_check/`
+  (see "Sign checks" below); the timing still rests on the contributor's record.
 - `FREEZE.sha256` and `POST-MESURE.sha256` check out except for the lexicon file, which is not in the folder (it is
   `lang/lexicons/it.json.gz` decompressed, as the Files table says).
 - `_check_reading.py` gives 0.365 on `reading.md`; the marks (brackets, braces, code numbers) break the words it looks for.
@@ -253,3 +254,7 @@ is its artefacts.
 | `translation.md` | English translation |
 | `validation.txt` | protocol order, the single measurement and its reservations |
 | `frozen/` | the hashed working files (French): PREREG.md, FREEZE.sha256, POST-MESURE.sha256, RESULTAT.md, the proposer's key and readings, our decoder, metric, calibration and measure scripts with their outputs, transcription v1; BLIND-REREADING.md (the blind re-reading of 11 Nov 2026, in English) and v2/ (the readings with the 12 confirmed words unmarked, the counting script and its output). The lexicon `lexique-it-cyphersolver.json` listed in FREEZE.sha256 is `lang/lexicons/it.json.gz` of this repository, decompressed (same SHA-256). |
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here the record itself said that AI agents prepared the sheet (crops and reference thumbnails); they also wrote the rule, built the HTML sheet and scored the answers, and Brice Dudout, the contributor of the reading, only chose the shapes. The record therefore moves to `outcome.sign_check`: 19 signs, controls 2 of 2, 12 corrected, 6 as transcribed, 1 undecided. `sign_check/REGLE-INTEGRATION.md` (the integration rule, in French) and `sign_check/reponses-brice-2026-11-11.json` (the answers as exported) are the files the hashes above were taken on, byte for byte (SHA-256 b61a4fd7... and c692c679...); the thumbnails, the images and the private shape-to-digit map stay out. By the file times of the working folder the rule was written at 11:20 CET on 11 Nov 2026, the sheet built at 11:22 and the answers exported at 13:54; the hashes were not published before the answers, so this timing rests on the contributor's record. The checker is the contributor, not an independent reader.

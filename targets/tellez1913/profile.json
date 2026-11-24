@@ -1,0 +1,278 @@
+{
+ "schema_version": 1,
+ "target": "tellez1913",
+ "title": "Rubio Navarrete to Joaquín Téllez, 14 and 15 Oct 1913: two federal telegrams in the División del Bravo syllabary (CEHM DLXXIII), decoded, not read",
+ "documents": [
+  {
+   "id": "cehm-dlxxiii-1-32-5-41",
+   "read": "not read",
+   "shelfmark": "CEHM-Carso, DLXXIII.1.32.5-41",
+   "date": "14 Oct 1913",
+   "year": 1913,
+   "country": "Mexico",
+   "route": "Lampazos -> Laredo",
+   "places": {
+    "from": "Lampazos",
+    "to": "Laredo"
+   },
+   "language": "Spanish",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Typed telegram, clear Spanish with numerical passages; no contemporary decipherment."
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer",
+    "image_quality": "fair"
+   },
+   "length": {
+    "tokens": 53,
+    "unit": "code groups",
+    "measured": true,
+    "file": "oct14.runs"
+   }
+  },
+  {
+   "id": "cehm-dlxxiii-1-32-6-41",
+   "read": "not read",
+   "shelfmark": "CEHM-Carso, DLXXIII.1.32.6-41",
+   "date": "15 Oct 1913",
+   "year": 1913,
+   "country": "Mexico",
+   "route": "Lampazos -> Laredo",
+   "places": {
+    "from": "Lampazos",
+    "to": "Laredo"
+   },
+   "language": "Spanish",
+   "pages": 2,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "Handwritten telegram, clear Spanish with numerical passages; no contemporary decipherment."
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "CEHM public viewer",
+    "image_quality": "fair"
+   },
+   "length": {
+    "tokens": 104,
+    "unit": "code groups",
+    "measured": true,
+    "file": "oct15.runs"
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "syllabic"
+  ],
+  "summary": "Numerical syllabary (numbers 1-255 for letters, syllables and a few words) set in the clear text; table rebuilt here from pencil glosses",
+  "symbol_kind": "digits",
+  "distinct_symbols": "unknown",
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": "unknown"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "key_order": "unknown",
+  "word_division": "partial"
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "Not in the repository before 22 Nov 2026, the Tomokiyo index, or R. Narváez's 2015 and 2025 articles. Narváez, Criptografía diplomática, política y militar en México 1813-1926 (SRE, 2019), checked 21-22 Nov 2026 from photographs of a loan copy (chapters VII-XI, pp. 261-410, and the index, pp. 487-495): it prints neither the telegram(s) nor the key.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "known plaintext"
+  ],
+  "attack": "known plaintext",
+  "first_date": "2026-11-18",
+  "last_date": "2026-11-22",
+  "human_role": "Andrew Beling chose the target, set the rules (frozen plans, blind transcriptions, controls) and photographed the Narváez book; AI agents transcribed, rebuilt and tested the key and wrote up.",
+  "models": [
+   "AI agents run by Andrew Beling; the model of each step is not recorded in the work files (Claude Opus 5.5, Anthropic, for the 22 Nov 2026 steps)"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-18",
+   "kind": "key from source",
+   "technique": [
+    "plaintext matching",
+    "contextual inference"
+   ],
+   "what": "Table rebuilt from the pencil glosses of the 19 Jul 1913 draft (DLXXIII.1.30.17-49) and the 8 Oct 1913 telegram (DLXXIII.1.32.3-41); 71 entries frozen (candidate.tsv).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Original 26 July values on the held-out 14 Oct telegram: 17/53 groups, beat 667/1,000 shuffles.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "71-entry table on the held-out 14 Oct telegram: 43/53 groups, beat 999/1,000 shuffles; complete words la, Laredo, de, esa, plaza, tren, en.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "15 Oct telegram transcribed by two blind AI readers; 98 of 104 positions agreed, six kept unknown.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "78-entry table (71 plus seven values from 14 Oct) on the held-out 15 Oct telegram: 76/104 groups, beat 1,000/1,000 shuffles; the seven additions tested alone beat 984/1,000 (miss).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "literature search",
+   "technique": [
+    "other"
+   ],
+   "what": "Narváez 2019, chapters VII-XI and index, checked from photographs: no reading and no matching table.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "control",
+   "technique": [
+    "key matching",
+    "statistical test"
+   ],
+   "what": "Frozen test of the limantour1909 key, the Villa key of open PR 865 and Jalkut's two-digit card (duron1911): the first two cover too few groups; the card beat at most 542/1,000; void for October because the positive control failed the plan's word criterion.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "reading",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Strict count (every letter from a tested value): 14 Oct 7/16 words, 15 Oct 3/29 (7/29 with the untested additions).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "control",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Key-test script committed as keytest_2026-11-22/keytest.py, reading the Limantour, Villa (pull request 865) and Jalkut key files by repo path; otherwise the frozen script of 22 Nov. Rerun: output byte for byte the frozen results (SHA-256 e720c99a in run.sha256). Gaps of the two October telegrams relabelled untried: the period sheet DLXXIII.1.28.8-23 (alfabeto y sílabas) has not been compared.",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "key": "partial",
+  "method": "key recovered based on adjacent plaintext",
+  "method_basis": "The table was rebuilt from pencil syllables written over the groups of a July 1913 draft and from an 8 Oct 1913 telegram with its clear text, frozen, and tested on the two held-out telegrams.",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.222,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "Cipher words with every letter from a tested value: 14 Oct 7/16, 15 Oct 3/29; 10/45 together.",
+  "first_break": true,
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "14 Oct, 9 of 16 words",
+    "blocker": "not-attempted",
+    "detail": "untried: the period sheet CEHM DLXXIII.1.28.8-23 (\"alfabeto y sílabas\"), in the same fonds, has not been compared with these groups; groups 20, 53, 108, 113, 132, 140, 147 without a tested value; one illegible group"
+   },
+   {
+    "item": "15 Oct, 26 of 29 words",
+    "blocker": "not-attempted",
+    "detail": "untried: the period sheet CEHM DLXXIII.1.28.8-23 (\"alfabeto y sílabas\"), in the same fonds, has not been compared with these groups; 28 of 104 groups without a value; the additions that would complete four words failed their test"
+   }
+  ],
+  "credits": [
+   {
+    "who": "ajbeling",
+    "role": "new cipher",
+    "note": "with AI agents: table rebuilt and tested; two telegrams transcribed and decoded",
+    "date": "2026-11-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/905"
+   },
+   {
+    "who": "dudout",
+    "role": "identification",
+    "note": "rubio1913: identified the 1-255 syllabary traffic and the July pencil draft as unread",
+    "date": "2026-10-29",
+    "source": "targets/rubio1913/NOTES.md"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "cehm-dlxxiii-1-32-5-41",
+    "label": "14 Oct 1913, Rubio to Téllez (DLXXIII.1.32.5-41)",
+    "transcription": "oct14.runs",
+    "decryption": "decryption_oct14.txt",
+    "reading": "reading_oct14.md",
+    "language": "es",
+    "state": "decoded, not read",
+    "cipher_words": 16,
+    "holes": 9,
+    "summary": "Railway and telegraph cut; asks for another repair train from Laredo."
+   },
+   {
+    "doc": "cehm-dlxxiii-1-32-6-41",
+    "label": "15 Oct 1913, Rubio to [Téllez] (DLXXIII.1.32.6-41)",
+    "transcription": "oct15.runs",
+    "decryption": "decryption_oct15.txt",
+    "reading": "reading_oct15.md",
+    "language": "es",
+    "state": "decoded, not read",
+    "cipher_words": 29,
+    "holes": 26,
+    "summary": "The line is destroyed; relief of a detachment; too few words read for more."
+   }
+  ],
+  "key_file": [
+   "candidate.tsv",
+   "candidate15.tsv"
+  ],
+  "provenance": "contributed"
+ }
+}

@@ -344,6 +344,235 @@ would take the nine lines to 92 of 100 and the remainder to 159 of 177 if none o
 `v2_score.py` hole rate: nine lines 0.039 before, 0.088 after; remainder 0.079 before, 0.107 after. The page was not
 changed: its "Key: code_table.tsv" line is inside the generated texts block.
 
+## No. 85 and No. 74, 21 Nov 2026 (leads 992 and 991; contributed by Andrew Beling, with AI agents)
+
+Done by AI agents on 21 Nov 2026; no person has checked it. Working records: [`beling/no85_no74_2026-11-21/`](beling/no85_no74_2026-11-21/README.md).
+
+**What the film has.** No. 85 (27 May 1812) is on reel 3 as a duplicate: frames 0195 right, 0196 and 0197 left. The clerk's
+interlinear words on the code block of 0196 left stop at "Dominions" (854 649 1433, Do-min-ion-s, line 11); the rest of that
+line and lines 12-16 are bare (Ford 4:338 ends the passage at "dominions." without a note). On 0197 left two runs of code stand
+bare in the clear text: Ford 4:339 "[Here two lines of cypher not decyphered]" and "[here three lines of cypher not
+decyphered]". For No. 74 (2 Nov 1811, frame 0168) the clerk wrote a separate sheet (frames 0170-0171) on which three groups are
+copied in figures, 387.1431.1101, with a cross and the note "Error in Cypher." (Ford 4:270).
+
+**Transcription.** Two agents copied every group of 0196 left, 0197 left and 0168 (both leaves) and the clerk's sheet, blind to
+each other, to any table, to the files of this folder and to print (796 tokens; the same number at 717; doubted by neither at
+600). A third agent later read 0197 and the first line of 0168 blind as well. Its blind reading agreed at every group except the last of the two lines, where it first read 528 and on a second look 548; it left 116x, 891/841 and the gutter group open, as the transcribers did. The right leaf of 0168 has 20 lines of code.
+
+**Check before reading (plan written first, one run).** The code sheet (NARA M97 roll 13 frames 1056-1057, Weber WE028;
+`../morris1813/beling/key/`), unchanged, against the clerk's own decipherment of these two despatches, number by number, scored
+only where both transcribers read the same number without doubt; pass mark 0.85; control, the sheet's values shuffled 1,000 times.
+No. 85 (clerk's words over the groups, 112 scored numbers): 0.929 and 0.911 on the two transcriptions, largest control 0.062.
+No. 74 (aligned with the clerk's sheet, 367 scored numbers): 0.935 and 0.932, largest control 0.131. Both pass. Of the eight
+misses of the first part, five are places where the readers took the clerk's small writing as "ri", "news", "have", "in", "ce"
+and the sheet has mi, view, har, ir, re; Ford, who printed from the Department's decipherment, has "armament", "views",
+"harbored", "irretrievably", which are the sheet's values, so these are taken as misreadings of the clerk's hand, not faults of
+the sheet (the third agent's report records the opposite view). One is a real difference: 350 is fla on the sheet and stands
+in con-fi-den-ce.
+
+**The two lines** (`no85_two_lines.txt`, 26 groups; `texts/no85_two_lines_reading.md`): "You will here perceive some uncertainty
+how far the neutral intention[s] and expectation[s] of Sweden herself extend." 17 words, 15 read = 0.882: the s of
+intention[s] and expectation[s] is supplied from the plural mark, so both are holes (README Conventions, 16 Nov 2026). Read under the
+short-text floor (README Conventions, 19 Nov 2026: fewer than 40 cipher words, at most 2 holes): 15 of 17, 2 holes. Not in print; not read here
+before.
+
+**The three lines** (`no85_three_lines.txt`, 35 groups, two cut or blotted; `texts/no85_three_lines_reading.md`): "and the
+Swedish meaning of it is to be [?expounded] by the hope of being {+in}demnified [?in] Norway [?for] the los[s] of Finland".
+23 words, 19 read = 0.826. The holes: los[s] (the sheet gives lose; the s is supplied); 116x with its last figure blotted (pound 1160, or plain 1138); 1626, a number the code
+does not have (in, 1426, is one digit away); 9x cut by the gutter (for, 981). 1436 (is) stands where in-dem-ni-fied wants 1426.
+With the clear text around it: "If the English Regent's new Proclamation respecting the Orders in Council is to elucidate the
+English meaning of neutrality, and the Swedish meaning of it is to be ... by the hope of being indemnified ... Norway ... the
+loss of Finland, the roots of that neutrality are not very profound." Not in print; not read here before.
+
+**The six lines after "Dominions"** (`no85_foot.txt`, 75 groups; `texts/no85_foot_reading.md`): a second reading of the lines
+first read with the rebuilt table on 22 Sept 2026 (`ford1812b_notes.md`), now with the code sheet. It agrees with that reading,
+except that 49 is United States on the sheet where September guessed 'they' and the dots after 'Norway' are line filler, and adds the sheet value of each number that does not fit (1236 ground, 209 pres, 49 United States, 1501 A, 820 delegate, all
+five in three independent transcriptions), Sweden (39) for the 49 where the September reading guessed "they", and that the dots
+after "Norway" are line filler, not "without". 55 words, 50 read = 0.909 (objection[s], with its s supplied from the plural
+mark, is a hole). Three of the five numbers that do not fit (1236, 209, 820) count as read under the one-digit rule; 49 and
+1501 are holes.
+
+**No. 74, the three groups "in error".** On the sheet 387 is sue, 1431 into, 1101 P. The line is 199 888 1399 143x 387 1431
+1101 948 668 869 ...: how long this [is] sue into P Russia and Austria, that is, "How long this is-sue into P-russia and Austria
+will be suffered to remain open is extremely doubtful." No number needs changing. The clerk took "is" for the verb, could make
+nothing of "sue into p", and wrote "Russia" where the code has Prussia; thirteen lines further on (left leaf line 14, 668 1101
+948) he read the same pair as "Prussia". How firm: **Prussia** is firm (1101 and 948 are read alike by all, and the third agent,
+blind to the clerk's sheet, reached it independently). **issue** rests on the clerk's own figures: he had the paper and copied
+387, and wrote "is"; on the film two of the three blind readers took the first figure of 387 for an 8 (887, lo), and the last
+figure of the group before it is too faint to tell 5 (ir) from 6 (is). In "It is understood" on frame 0196 the clerk likewise
+wrote "is" over a group both transcribers read as 1435 (one of them with 1436 as an alternative). `codes_ford1812b.txt` (0168 left line 1) is left as it was.
+
+**Print.** Ford 4:270, 338-339 only, with the gaps. Internet Archive full-text search on three phrases of the surrounding clear
+text (21 Nov 2026): copies of Ford's volume and nothing else. Founders Online ("neutrality of Sweden", "suffered to remain
+open"): no results. Not seen: Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society,
+not online), which should have the plain words.
+
+**Counts and weaknesses (recount of 22 Nov 2026).** The counts above follow the rule of 16 Nov 2026: a word with a supplied
+or emended letter is a hole. The first count of 21 Nov had taken intention[s], expectation[s], objection[s] and los[s] as read
+(17 of 17, 20 of 23, 51 of 55). The two lines, at 15 of 17 with 2 holes, are "read" only under the short-text floor of
+19 Nov 2026 (`floor_used` in profile.json); the other two are read in part. Four further weaknesses, stated plainly:
+- The test plan was frozen before the run, but its SHA-256 (494b6a49...) was recorded only in our local files; the frozen
+  plan and the file of checksums are not in this folder, so the freeze cannot be checked from the repository.
+- Two disputed digits were settled partly by sense: 548 against 528 (two lines, last group; *end* makes a word, *ei* does not)
+  and 398 against 298 (three lines, *Sw-ed-ish*), each with an enlargement and the third reader also favouring 548 and 398.
+- "issue" in No. 74 rests on the clerk's figure 387; on the film two of three blind readers saw 887 (*lo*, no sense).
+- Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society) was not seen. It should
+  carry the plain words and would settle the holes.
+
+## Adams's despatches of 1810 (held-out test, 22 Nov 2026)
+
+Andrew Beling, with AI agents; files in `beling1810/` (README there). Nothing outside that folder changes the table,
+the clerk files or the readings of No. 88.
+
+**What.** Adams's despatches Nos. 21-29 of 1810 (NARA M35 reel 2) are in this code, as noted in section 1 for frame
+0155. Seven have coded passages. Six can be paired with an independent plaintext: No. 21 with Ford 3:469, and Nos. 23,
+24, 25, 27 and 28 with the decipherments made in the Department and filed with them (frames 156-159, 169-172,
+178-179, 184). No 1810 material went into `code_table.tsv`, so these 22 passages, 3,083 groups, are a held-out test of
+it. No. 29 (19/31 Oct 1810, frames 185R-189L) has no decipherment. It is not scored and not read here; its two
+transcriptions are used only to measure how far blind readers agree.
+
+**In print.** Ford vol. 3 prints Nos. 21, 23 and 24 with their coded passages in clear and in italics (3:469,
+3:486-496, 3:503-507), and No. 22, which has no code. The 1980 documentary volume *The United States and Russia: The
+Beginning of Relations, 1765-1815* prints No. 27 with both passages (seen only through the Internet Archive's full-text
+search of its loan copy). *American State Papers, Foreign Relations* vol. 3 has none of them. Part of No. 25 is in
+print: Paul Cernovodeanu, "American Diplomatic Dispatches on the 1806-1812 Russo-Turkish War and on Bessarabia's Rapture," *Revue Roumaine d'Histoire* XXXVII (1998), 1-2, 19-41, p. 29, prints its closing paragraph and the first paragraph of passage G (our research file of 22 Oct 2026,
+from a scan read then; not re-opened for this package). The rest of No. 25, and No. 28, were not found in print, and
+No. 29 was not found in print or in a contemporary decipherment.
+
+**Plan, written first.** `beling1810/PLAN.md`, hashed before the first run (`PLAN.sha256`, 22:40 EST). The measure is
+`align.py`'s own alignment, imported unchanged, with the table alone: the share of valued groups whose table value
+falls on the witness letters at that place. The control is 100 tables with the value sets shuffled among the numbers.
+The pass mark is pooled agreement >= 0.80 and >= the best shuffled table + 0.30. The order of plan and run rests on
+local file times only; the transcriptions and witnesses had been read before the plan was written (`PLAN.md` says which).
+
+**Result: MISS.** Over 3,083 groups:
+- 2,843 have a value in the table (coverage 0.922).
+- Agreement is **0.730**. The shuffled tables reach best 0.125 and median 0.077.
+- The separation from chance is large, but agreement is under the 0.80 that was set, so by the plan this is a miss.
+
+| Despatch | Groups | Agreement | Coverage | Read words, strict |
+|---|---|---|---|---|
+| No. 21, 16 Aug 1810 | 33 | 0.719 | 0.970 | 14/21 (0.667) |
+| No. 23, 5 Sep | 1,014 | 0.721 | 0.927 | 417/829 (0.503) |
+| No. 24, 20 Sep | 458 | 0.708 | 0.904 | 164/366 (0.448) |
+| No. 25, 30 Sep | 1,266 | 0.739 | 0.920 | 456/845 (0.540) |
+| No. 27, 12 Oct | 267 | 0.760 | 0.936 | 117/196 (0.597) |
+| No. 28, 10/22 Oct | 45 | 0.690 | 0.933 | 18/74 (0.243) |
+| All | 3,083 | 0.730 | 0.922 | 1,186/2,331 (0.509) |
+
+Read words, strict: a word of the witness counts only when every letter comes from a group whose table value the
+alignment places there. By that count the table alone reads half the words. The passages are read, but from the period
+decipherments, not from this table.
+
+**Why under 0.80: the transcriptions.** Two transcriptions were made for three despatches; the second readings of
+Nos. 24 and 29 were made blind by helper agents from the film alone (`beling1810/transcriptions/`). Agreement number
+by number:
+- No. 21: 33 of 33, counting its alternative readings; not independent: the second reader had seen the first
+  sequence in its task text (it says so), and three of its first-choice numbers differ (1259, 1398, 237).
+- No. 24: 330 of 461 (0.716).
+- No. 29: 878 of 1,169 (0.751).
+
+Most of the differences are 0/6/8, 3/8 and 5/0. Scored on its blind second transcription after the registered run
+(post hoc, not part of the pass mark), No. 24 goes from 0.708 to **0.814** agreement and from 164 to 223 of 363 read
+words (`heldout_no24_second.txt`). So much of the shortfall is our reading of the film, not the table. Nos. 23 and 25
+have one transcription, and Nos. 27 and 28 one made after the witness had been read. No. 28-A is largely washed out.
+
+**No. 29 is not read here.** A decode of No. 29 with the key sheet alone, and sentences a model wrote from it, were
+made on 22 Nov 2026. With no witness and no person's check they are not a reading this folder records, and they are
+left out of it (working files kept locally). `PLAN.md` and `PLAN2.md` mention them; the plans are left unchanged so that
+their hashes hold.
+
+**Two single values met in passing** (alignment output, not checked on the film):
+- 570, which the table has as *tol* (H, 11x) and which No. 88 writes where *was* is wanted, aligns with *was* in No. 25-A
+  ("but [570] ultimately rejected", frame 167R). It aligns with *tol(d)* in No. 23-D.
+- 1185, *wick* on the sheet, spells Sles*wick* in No. 25-D; that confirms the sheet's value, which does not fit No. 88.
+
+Neither changes anything here. The 570 in No. 25 should be looked at on frame 167R (done in the second round below: four new readings give 500 or 510, none 570; 570 not excluded).
+
+### Second round: doubly read groups only (22 Nov 2026, after the miss)
+
+The first test above **missed** and stays as registered. Its own finding was that single transcriptions agree with a
+blind second reading at only 0.72-0.75. So a second round was run, labelled as such, scoring only what two blind
+readers agree the film says. Its plan and pass mark are in `beling1810/round2/PLAN2.md`, hashed at 23:15 EST before
+any second-round score (`PLAN2.sha256`). The pass mark is unchanged: 0.80, and the best of 100 shuffled tables + 0.30.
+It was stated in advance that No. 24's post hoc 0.814 is not counted.
+
+**Readings.** Fresh blind transcriptions were made by helper agents (Claude Opus 5.5), from the M35 reel 2 frames only:
+no plaintext, no table, no earlier reading, no candidates, and washed-out groups marked rather than guessed
+(`beling1810/transcriptions_round2/`; each header gives reader, time and images).
+- Nos. 23, 25, 27 and 28 have two each (readers X and Y).
+- Nos. 24 and 29 have one more (reader Z). With the blind second readings of round 1, each has two.
+
+A group is scored only where the two readings give the same number; every other group is a hole that is not scored.
+
+**How far the two blind readings agree** (`round2/reader_agreement.txt`):
+- No. 23: 920 of 1,020 (0.902).
+- No. 24: 438 of 461 (0.950).
+- No. 25: 1,200 of 1,270 (0.945).
+- No. 27: 218 of 284 (0.768).
+- No. 28: 37 of 144 (0.257); passage A on frame 182 is washed out (20 of 117).
+- No. 29: 1,083 of 1,168 (0.927).
+- No. 21: 33 of 33 as before, but not two independent readings (see round 1); its 32 valued groups are kept in the
+  pooled figure as registered and left out in the figure below.
+
+**Each blind reading alone, without the filter: about 0.81.** After the fact, and outside both plans, our reviewer, a
+separate AI agent (Claude Opus 5.5) that had not built this package, scored each blind reading alone, without the
+agreement filter (No. 21 left out), on the night of 22-23 Nov 2026 (about 23:30-00:15 EST). Reading 1 (X, and the
+round-1 second reading of No. 24) gives 0.816 and reading 2 (Y, and Z for No. 24) gives 0.814 with `heldout_1810.py`;
+with the reviewer's own scorer they give 0.811 and 0.810. So the fresh readings alone are about 0.81, and the
+round-1 transcriptions were the main problem.
+
+**Result with the agreement filter: PASS by the second plan** (`round2/heldout_round2.txt`, run once). There are 2,718 agreed groups with a value in the table.
+Agreement with the witness is **0.853**; the best shuffled table reaches 0.128 (median 0.075). By despatch:
+- No. 23: 0.865.
+- No. 24: 0.849.
+- No. 25: 0.874.
+- No. 27: 0.719.
+- No. 28: 0.788.
+- No. 21: 0.719.
+
+Strict read words, counting every unagreed group as a hole: 1,386 of 2,317 (0.598), against 0.509 in round 1.
+
+Without No. 21, whose two readings are not independent: 2,686 valued groups, agreement 0.854, strict words 1,372 of
+2,296 (0.598). The pass does not depend on it.
+
+Order of the second round. The last blind reading came back at 23:13 EST. `PLAN2.md` was hashed at 23:15:10, two minutes
+later, and the run began at 23:16. The passage mapping in `PLAN2.md` uses the readers' own run labels, so their files
+had been opened (for labels, not scores) before the hash. The order rests on local file times only; both commits carry
+one git time.
+
+What it means and what it does not:
+- The table, rebuilt from 1811-12 alone, gives the witness's letters for about 85% of the 1810 groups that two readers
+  read alike. The round-1 shortfall was mostly our transcription.
+- The second round was decided on after seeing the first. The readers are all the same model, so their shared
+  misreadings pass the agreement filter. The filter keeps the clearer groups; it adds about 0.04 to the unfiltered 0.81.
+- The table itself is not changed, and nothing here counts towards the No. 88 figures.
+
+**Frame 167R, the 570 of No. 25-A** (`round2/frame167R/NOTE_570.md`; the crops are not committed, their boxes are in the note). Neither blind transcriber reads 570:
+both have 500. The two crop readers give 500 and 510; one names 570 as its main alternative, since the thin dash above
+the middle stroke could be a 7's top bar, though both judge a 7 less likely. The 570 of our first transcription was most
+likely our misreading, but the frame does not exclude 570. It gives no clear second example of 570 for *was*, and the
+open 570 in No. 88 is unaffected.
+
+## Transcription doubts
+
+For No. 85 (the three files of 21 Nov 2026). The doubts of No. 88 are in the sections on the image checks above.
+
+- 548 (no85_two_lines l.2, last group) - read: 548; checked: image, decode, transcription; one blind reader 528 (ei), one 548; the third reader's second look and an enlargement show the open-topped 4; ext-end
+- 1369 (no85_two_lines l.2) - read: 1369; checked: image, decode, transcription; two readers gave 1269 as an alternative (a punctuation sign on the sheet), the third read 1369 without doubt; exp-ect-tation
+- 668 (no85_three_lines l.1) - read: 668; checked: image, decode, transcription; at the gutter; one reader gave 608 (mai) as an alternative
+- 398 (no85_three_lines l.2) - read: 398; checked: image, decode, transcription; one reader 298 (ext), one 298 or 398, the third 398; the 9 and 8 are fainter; Sw-ed-ish
+- 116x (no85_three_lines l.2) - read: not read; checked: image, decode, transcription; last figure blotted (1164 or 1168 to three readers, neither with sense); counted as a hole
+- 1436 (no85_three_lines l.3, second time) - read: 1436; checked: image, decode, transcription; clearly written, the sheet's "is" where in-dem-ni-fied wants 1426; one-digit rule
+- 1626 (no85_three_lines l.3) - read: 1626; checked: image, decode, transcription; clearly written to three readers; no such number; a hole
+- 9x (no85_three_lines l.3, last group) - read: not read; checked: image, decode; cut by the gutter after a 9 and the start of an 8 or 4; the decode has no value for it; a hole
+- 891 (no85_three_lines l.4) - read: 891; checked: image, decode, transcription; middle figure blotted (alternatives 89, 841 without sense); lose, for the noun
+- 1184, 809, 471, 195, 897, 1507, 1576, 1523 (no85_foot) - read: as given; checked: image, decode, transcription; in each, one of the two blind readers gave an alternative; the other reader, the transcription of 22 Sept 2026 and an enlargement agree with the reading given
+- 352 (no85_foot l.5) - read: 352; checked: decode, transcription; alternatives 252 and 362 given by one reader each; the September transcription has 352; not looked at again on an enlargement
+- 565 (no85_foot l.4) - read: 565; checked: image, decode, transcription; one reader 585 (lay), one 585 or 565; the September transcription 565; on an enlargement the middle figure is the 6 of 569 in the line above
+- 1236, 209, 49, 1501, 820 (no85_foot l.2-3) - read: as written; checked: image (1501, 820), decode, transcription; the same in all three transcriptions; the sheet values give no sense (see the reading)
+- 23x, 89x (no85_foot l.1, l.2, last groups) - read: not read; checked: image, decode; cut by the gutter; the decode has no value for them; holes
+
 ## Remaining gaps
 
 - rem88 seven groups with lost digits (142x, 21x, 15xx, 11xx, 10xx, 55x, 13xx) - blocker: needs-physical-access; cut by the binding gutter on the microfilm of frame 0207 (every line end); the original and duplicate of No. 88 are not on reel 3, and JQA's letterbook copy (MHS) is not online. Context fixes most of them (in-, pre-, sa-id, tem-p-t) but they are counted unread
@@ -353,6 +582,11 @@ changed: its "Key: code_table.tsv" line is inside the generated texts block.
 - rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; the M97 sheet gives acious / account, which does not fit 'as a pre-' (14 Nov 2026)
 - rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; the M97 sheet gives wick (14 Nov 2026); the image shows 1185 and a stroke cut by the gutter
 - rem88 l.11 570 ('it tol he said'): the M97 sheet gives tol / toe, which does not read; the image shows 570, not 500 (was) - blocker: no-key-material
+- no85_three_lines l.2 116x (ex-..-ed: pound 1160 or plain 1138) - blocker: illegible; last figure blotted on frame 0197 (21 Nov 2026)
+- no85_three_lines l.3 1626 (indemnified ... Norway): no such number; in (1426) is one digit away but a whole word - blocker: needs-physical-access; only the original or the letterbook copy could show what was meant (21 Nov 2026)
+- no85_three_lines l.3 9x (Norway ... the loss): cut by the gutter; for (981) fits - blocker: needs-physical-access (21 Nov 2026)
+- no85_foot l.1 23x (exten-), l.2 89x (the lo..), cut by the gutter - blocker: needs-physical-access (21 Nov 2026)
+- no85_foot l.3 49 (United States on the sheet, Sweden 39 wanted) and 1501 (A on the sheet, 'be' wanted) - blocker: needs-physical-access; the numbers are clear on the duplicate (21 Nov 2026)
 
 ## Escalation
 
@@ -362,6 +596,7 @@ changed: its "Key: code_table.tsv" line is inside the generated texts block.
 - [x] print: Ford 4:357-358 prints both passages as not decyphered; no other printed reading found; JQA's diary (Primary Source Cooperative) confirms the two strokes at Wilna
 - [x] key-rebuild: table rebuilt to 1,166 numbers (`consolidate.py` + `overrides.tsv`, every override with its reason); alphabetical-slot bracketing (`slots.py`, `slot_inferences.tsv`, grade I)
 - [x] retry (14 Nov 2026): the seven one-digit groups looked at on frames 0206 and 0207 enlarged; five read under the one-digit rule, 669 and 1585 stay holes
+- [x] siblings (21 Nov 2026): No. 85's two bare passages on 0197 and the six bare lines of 0196 left read with the code sheet after a pre-registered check against the clerk's decipherment of Nos. 85 and 74 (0.911-0.935, controls at most 0.131); the three 'error' groups of No. 74 read as they stand
 - [x] retry: No. 88 re-read against the image a third time: 792 (not 492), 1061 (not 1081), 588 (not 888), 1384 (not 1385) corrected; 570 confirmed; 1097 and 1383 read as JQA's own overwritten digits
 
 ## Next
@@ -372,3 +607,6 @@ changed: its "Key: code_table.tsv" line is inside the generated texts block.
   original, the duplicate or the letterbook copy could show the misread digit or slip. Still unaligned: the 1812
   blocks of Nos. 77, 78, 81 and the remaining lines of No. 85
   (0196L 12-23) are not yet aligned.
+- 21 Nov 2026: the remaining lines of No. 85 and its two bare passages on 0197 are now transcribed and read (section above).
+  JQA's letterbook copy of No. 85 and No. 74 (Adams Papers reel 136, MHS) would settle the holes and show whether 49, 1501
+  and 1626 are the duplicate's slips.

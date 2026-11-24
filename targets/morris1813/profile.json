@@ -937,6 +937,15 @@
    ],
    "what": "The sign 370 checked on the code sheet (project check, on the owner's decision; observation by Brice Dudout, PR #570). NARA M97 roll 13 frames 1056 and 1057 fetched from catalog.archives.gov (medialz/dc-metro/rg-059/603720/M97/M97-013/M97-013-1056.jpg and -1057.jpg, 4288 x 3728 and 4304 x 3744, bitonal) and the cells enlarged. Numerical sheet (1057), sheet numbers 1261-1270 = Morris 361-370: , ; : . ! ? a dash, ( ), a double quotation mark, and in 1270 a small upright S-like sign with a loop in the middle and a hooked foot, like a section sign; the d of 'down' in the cell below runs into its foot. No word or syllable in the ten cells. Alphabetical sheet (1056), last column: after the figures 0-9 the same eleven marks are printed in the same order, each with its number written beside it (1261 to 1269, then a faint 1270 beside a printed sign of the same shape, a 2-like curl over a second curl). So 370 is the last entry of the sheet's list of punctuation marks on both halves. Recount in the transcriptions (one count per place, copies not counted twice): 22 places in the thirteen texts (frame 0039 3, No. 12 2, No. 13 2, No. 17 1, No. 18 4, No. 19 2, Cevallos note 6, No. 24 1, 24 March 1815 1; none in Nos. 14, 25, 26, 28), every one directly after the full stop 364 (twice across a line break) and before a new sentence, the coded signature or the end of the coded text; copy B of No. 13 leaves the final one out. Verdict: punctuation, not a word; which mark exactly (a section or paragraph sign) is not settled on this film. word_share.py changed to leave [370] out of words and holes: No. 12 0.983, No. 13 0.972 (72 words, 2 holes), No. 17 0.941 (34, 2), No. 18 0.971, No. 19 0.962 (104, 4), Cevallos 0.980, No. 24 0.977, 24 March 1815 0.978, frame 0039 0.971 (350, 10); Nos. 14, 25, 26, 28 unchanged. Thirteen texts: 2,609 coded words, 65 holes, 0.975 (was 2,631, 87, 0.967). Nos. 13 and 19 pass to read; No. 17 stays under 95%, so the class stays read in part.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "The three one-digit places of the claims review of 14 Nov 2026 looked at on the film (Andrew Beling, with AI agents; beling/slips_2026-11-22/README.md). No. 13 510 (sour-ce wants 516 ce) and 146 (vis-it wants 140 it) on frames 0084 and 0088 (left leaf); No. 24 593 (Sir wants 598 si before 813 R) on frames 0220, 0205 and 0196. First reading by the coordinating agent, with the comparison figures on the same line; second reading blind, by a helper agent given only the crops and the question what number is written: 146 and 146, 593 three times; on the two tight crops of 510 it read 576 and 570 (the middle stroke taken for a 7), and a second blind helper given the line strips read 510 on both copies (high confidence, the last figure matching the 0s of 1190 and 1060). So 510 rests on one blind reading, of the line strips. The manuscript has 510, 146 and 593 on every copy: the writer's slips, not misreadings here. On 0196 the clerk writes nothing over 593.813.367. One-digit rule applied: No. 13 72 of 72 (1.000), No. 24 128 of 130 (0.985); thirteen texts 2,609 words, 62 holes, 0.976 (word_share.py plus frame 0039 by hand, 350 words, 10 holes). The class does not change (No. 17 stays at 0.941).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -949,8 +958,8 @@
    "key extended or corrected"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "Over the thirteen texts worked: 2,609 coded words in the readings, 65 of them holes (word_share.py for the twelve letters in beling/letters/, 2,259 words and 55 holes, and the same rule by hand for frame 0039: 350 words, 10 holes). A hole is an unread group, a guessed [?word] or a word with supplied letters. Since 14 Nov 2026 the sign 370 is counted as punctuation, neither word nor hole (22 places; before that 2,631 words, 87 holes, 0.967). This is a share of words, not of groups, and it does not cover the other coded frames of the roll, which are further copies or carry a clerk's decipherment and were not worked here.",
-  "fraction_read": 0.975,
+  "fraction_read_source": "Over the thirteen texts worked: 2,609 coded words in the readings, 62 of them holes (word_share.py for the twelve letters in beling/letters/, 2,259 words and 52 holes, and the same rule by hand for frame 0039: 350 words, 10 holes). A hole is an unread group, a guessed [?word] or a word with supplied letters. Since 22 Nov 2026 three one-digit slips seen on the film are counted as read under the one-digit rule (No. 13 sour{+ce}, vis{+it}; No. 24 {+Si}r; before that 65 holes, 0.975). Since 14 Nov 2026 the sign 370 is counted as punctuation, neither word nor hole (22 places; before that 2,631 words, 87 holes, 0.967). This is a share of words, not of groups, and it does not cover the other coded frames of the roll, which are further copies or carry a clerk's decipherment and were not worked here.",
+  "fraction_read": 0.976,
   "parts": [
    {
     "label": "Code identification: the JQA table with Morris's sixteen blocks of 100 in reverse order (block_map.tsv)",
@@ -968,7 +977,7 @@
     "label": "Letters of 4 and 11 April and 11 May 1814, 27 January and 24 March 1815 (PR #200)",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "beling/letters/: word shares 0.983, 0.972, 0.962, 0.957 and 0.978 (word_share.py); two readers on the first four, one on the last; Woolfley (2013) quotes the two April passages"
+    "basis": "beling/letters/: word shares 0.983, 1.000, 0.962, 0.957 and 0.978 (word_share.py); two readers on the first four, one on the last; Woolfley (2013) quotes the two April passages"
    },
    {
     "label": "Nos. 18, 19 and 28 (20 September and 27 October 1814, 12 May 1815): no decipherment on the frames",
@@ -980,7 +989,7 @@
     "label": "Nos. 24 and 25 (30 December 1814, 6 January 1815) and the Cevallos note of 20 November 1814: a clerk's decipherment on another copy",
     "method": "read after matching with key from external sources",
     "extent": "partial",
-    "basis": "the readings confirm contemporary decipherments: key-only decode against the clerk's words 0.904 (No. 24, frame 0196) and 0.945 (No. 25, frame 0174), shuffled keys at most 0.343, neither test blind; word shares 0.977, 1.000 and 0.980; the Cevallos numerals were transcribed with the clerk's copy already seen"
+    "basis": "the readings confirm contemporary decipherments: key-only decode against the clerk's words 0.904 (No. 24, frame 0196) and 0.945 (No. 25, frame 0174), shuffled keys at most 0.343, neither test blind; word shares 0.985, 1.000 and 0.980; the Cevallos numerals were transcribed with the clerk's copy already seen"
    },
    {
     "label": "No. 17 (21 June 1814): the three coded lines on frame 0111",
@@ -1139,7 +1148,7 @@
     "detail": "se with two strokes + ti; no reading established; the three copies agree"
    },
    {
-    "item": "words where Morris's group does not give the word wanted, read from context and counted as holes: 1569 for United States (No. 24, No. 26), 593.813 for Sir (No. 24), 145 with a stroke for relative and 131 for re (No. 18), 1457, 1040, 780.400.35 (No. 18), 209.13, 1150, 572.1101 (No. 19), 1351, 681, 1450, 1037, 1167, 1060.1046 (Cevallos note), 1159 (No. 17), and the inferred words of the PR #200 letters and frame 0039",
+    "item": "words where Morris's group does not give the word wanted, read from context and counted as holes: 1569 for United States (No. 24, No. 26), 145 with a stroke for relative and 131 for re (No. 18), 1457, 1040, 780.400.35 (No. 18), 209.13, 1150, 572.1101 (No. 19), 1351, 681, 1450, 1037, 1167, 1060.1046 (Cevallos note), 1159 (No. 17), and the inferred words of the PR #200 letters and frame 0039",
     "blocker": "open-codes",
     "detail": "the key sheet is complete for these numbers; they are slips or private usages of the writer, and each needs another occurrence or a clear copy to settle"
    },
@@ -1211,12 +1220,12 @@
     "reading": "beling/letters/1814-04-11_No13/reading.txt",
     "language": "en",
     "state": "read",
-    "read_share": 0.972,
+    "read_share": 1.0,
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Two coherent sentences; two word endings inferred. Until 14 Nov 2026 the sign 370, which stands twice, was counted as two unread words (0.946, read in part); it is a punctuation sign of the code sheet and is no longer counted, so 70 of 72 coded words (0.972)."
+     "note": "Two coherent sentences; two word endings inferred. Until 14 Nov 2026 the sign 370, which stands twice, was counted as two unread words (0.946, read in part); it is a punctuation sign of the code sheet and is no longer counted, so 70 of 72 coded words (0.972). 22 Nov 2026: sour[?ce] and vis[?it] are the writer's one-digit slips 510 and 146, seen on both copies (frames 0084, 0088) and counted as read under the one-digit rule (sour{+ce}, vis{+it}): 72 of 72 (1.000). The sentences are unchanged."
     },
     "summary": "Morris means to go to Madrid shortly, to be nearer the source of authentic information; he has not heard from Monroe since reaching Europe and acts on his own discretion."
    },
@@ -1318,13 +1327,13 @@
     "contemporary": "beling/letters/1814-12-30_No24/clerk_decipherment_0196.txt",
     "language": "en",
     "state": "read",
-    "read_share": 0.977,
+    "read_share": 0.985,
     "summary": "From a source he trusts: the Council of State is preparing a report to the king recommending a declaration of war on the United States over Louisiana and Florida; 47,000 soldiers and 5,000 officers back from France, at least 160,000 under arms, and two expeditions of ten thousand fitting out at Cadiz for Mexico and Buenos Aires, to sail early in January.",
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Read as sentences against the decode and the clerk's words on frame 0196: coherent. 'United States' is group 1569 (December in the key) and stays marked as inferred. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): reads in full and agrees with the clerk's decipherment on frame 0196, which was read after the decode, so the agreement supports and is not independent; he leaves the opening groups 593.813 as numbers, where this reading has [?Sir] (593 probably a slip for 598) and counts it as a hole."
+     "note": "Read as sentences against the decode and the clerk's words on frame 0196: coherent. 'United States' is group 1569 (December in the key) and stays marked as inferred. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): reads in full and agrees with the clerk's decipherment on frame 0196, which was read after the decode, so the agreement supports and is not independent; he leaves the opening groups 593.813 as numbers, where this reading has [?Sir] (593 probably a slip for 598) and counts it as a hole. 22 Nov 2026: 593 is on all three copies (frames 0220, 0205, 0196), a one-digit slip for 598 si before 813 R, counted as read under the one-digit rule ({+Si}r): 128 of 130 (0.985)."
     }
    },
    {

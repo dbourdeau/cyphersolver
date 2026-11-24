@@ -462,7 +462,8 @@ EXPLORE_GROUPS = [
     ('Try and take part', [('secret', 'Write a secret letter', 'Seal a message in a real historical cipher'),
                            ('contribute', 'Contribute', 'Send a solution, a new cipher or a check of a reading')]),
     ('Reference', [('glossary', 'Glossary', 'How each cipher was solved, and the terms used'),
-                   ('corrections', 'Corrections', 'What was published and then corrected or withdrawn')])]
+                   ('corrections', 'Corrections', 'What was published and then corrected or withdrawn'),
+                   ('method', 'Method and review', 'How a reading is made, checked and graded, and by whom')])]
 EXPLORE = [e for _, items in EXPLORE_GROUPS for e in items]
 CHEVRON = ('<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" '
            'stroke="currentColor" stroke-width="1.6"/></svg>')
@@ -760,6 +761,7 @@ def glossary_html():
         '<h2 id="methods">Methods</h2>\n<p>The first three are cryptanalysis: the key was recovered here. The next three '
         'applied a key or decipherment that already existed; the work was transcription and decipherment. Whether someone had '
         'solved an item before, and when that was found, is stated on each write-up.</p>\n'
+        '<p><a href="experiments/blind-340/index.html">Try a blind ciphertext-only experiment</a> with three new 340-symbol grids and a verified decoder.</p>\n'
         f'<dl class="gloss">\n{meth}</dl>\n\n'
         '<h2 id="extent-complete-or-partial">Extent</h2>\n<p><b>Complete</b>: at least 95% of the cipher symbols give sense, '
         'every document is covered, and what stays open is scattered code groups or pieces blocked from outside. '
@@ -781,7 +783,7 @@ def footer_html(current):
             prev = order[i-1] if i > 0 else None; nxt = order[i+1] if i+1 < len(order) else None
     cur = next((p for p in PAGES if p['slug'] == current), None)
     rights = f' &middot; {cur["rights"]}' if cur and cur.get('rights') else ''
-    links = ['<a href="index.html">Overview</a>']
+    links = ['<a href="index.html">Overview</a>', '<a href="method.html">Method and review</a>']
     if prev: links.append(f'<a href="{prev["slug"]}.html" rel="prev">&larr; {prev["label"]} {prev["year"]}</a>')
     if nxt: links.append(f'<a href="{nxt["slug"]}.html" rel="next">{nxt["label"]} {nxt["year"]} &rarr;</a>')
     if cur and current not in SURVEYS:
@@ -1452,6 +1454,9 @@ if __name__ == '__main__':
     print('further: %d partial readings' % F.build_html(PAGES))
     import _archives_page as AR                 # archives.html: requests for archives and libraries, from archive_requests.json
     print('archives: %d open requests' % AR.build_html(PAGES))
+    import _method_page as MP                   # method.html and method-fr.html: the review figures, counted from the profiles
+    mp = MP.build_html(PAGES, PROFILES)
+    print(f"method: {mp['rr']} graded entries, {mp['kinds']['model']} by a model")
     import _key_evolution_page as KE            # key-evolution.html: the profiles' cipher systems counted by half-century
     print('key evolution: %d systems' % KE.build_html())
     sys.path.insert(0, str(HERE.parent / 'tools')); import seed_archive_requests as SAR
