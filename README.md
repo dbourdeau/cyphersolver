@@ -35,7 +35,7 @@ are being written up with George Lasry as a paper on how LLMs perform against hi
 |---|---|---|
 | [Key recovered from ciphertext-only](#key-recovered-from-ciphertext-only) | 124 | 41 |
 | [Key recovered based on plaintext from external sources](#key-recovered-based-on-plaintext-from-external-sources) | 26 | 10 |
-| [Key recovered based on adjacent plaintext](#key-recovered-based-on-adjacent-plaintext) | 141 | 43 |
+| [Key recovered based on adjacent plaintext](#key-recovered-based-on-adjacent-plaintext) | 141 | 42 |
 | [Read after matching with key from external sources](#read-after-matching-with-key-from-external-sources) | 48 | 14 |
 | [Read with known key](#read-with-known-key) | 131 | 61 |
 | [Read from existing decipherment](#read-from-existing-decipherment) | 109 | 80 |
