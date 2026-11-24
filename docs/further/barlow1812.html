@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="../">
+<title>Barlow to Monroe and to Bassano, autumn 1812: two passages in the Paris legation code — read it further</title>
+<meta name="description" content="A cipher read in part (78.3%), with its open gaps and instructions for an AI agent to take it further.">
+<link rel="stylesheet" href="style.css?v=18e8715e">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body id="top" class="pg-solve pg-further1">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><div class="grp"><h4>Start here</h4><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li></ul></div><div class="grp"><h4>Maps and patterns</h4><ul><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="key-evolution.html"><b>How keys changed</b><span class="d">Kinds of key, their signs and their size, 1400 to 1950</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li></ul></div><div class="grp"><h4>Try and take part</h4><ul><li><a href="secret.html"><b>Write a secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li><li><a href="contribute.html"><b>Contribute</b><span class="d">Send a solution, a new cipher or a check of a reading</span></a></li></ul></div><div class="grp"><h4>Reference</h4><ul><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="corrections.html"><b>Corrections</b><span class="d">What was published and then corrected or withdrawn</span></a></li><li><a href="method.html"><b>Method and review</b><span class="d">How a reading is made, checked and graded, and by whom</span></a></li></ul></div><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html" aria-current="page">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div><span id="content" tabindex="-1"></span></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <p class="kicker"><a href="further.html">Read further</a> · read 78.3% · key from adjacent plaintext &middot; partial</p>
+  <h1>Barlow to Monroe and to Bassano, autumn 1812: two passages in the Paris legation code</h1>
+  <p class="sub">Two short coded passages in the last despatches of Joel Barlow, the American minister in Paris: his despatch to James Monroe of 25 September 1812 and the copies sent home of his note of 25 October to the Duke of Bassano. Neither has a decipherment on the film. Andrew Beling rebuilt 623 numbers of the legation&rsquo;s code (the = 1700) from ten other letters that were deciphered at the time; that key alone gives 47 of the 60 coded words, and eight more are completed from the sense. Barlow reports that indemnities for past spoliations are under discussion, and warns Bassano that a rejection would be taken as a refusal of justice. The key is not validated by a held-out test. Contributed by Andrew Beling, with AI agents.</p>
+  <dl class="facts">
+    <dt>Date</dt><dd>1812</dd>
+    <dt>Read now</dt><dd>78.3% of the cipher tokens give sense</dd>
+    <dt>Write-up</dt><dd><a href="barlow1812.html">barlow1812.html</a></dd>
+    <dt>Files</dt><dd><a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/barlow1812" rel="noopener">targets/barlow1812</a></dd>
+    <dt>Open gaps</dt><dd><span class="gap">no key known ×3</span><span class="gap">hard to read on the scan ×3</span></dd>
+  </dl>
+</section>
+
+<main>
+<h2>Hand this page to your AI agent</h2>
+<p>Give your agent (Claude, ChatGPT or any assistant that can open web pages) this address and ask it to do the task on the page:</p>
+<p class="urlline">https://dbourdeau.github.io/cyphersolver/further/barlow1812.html</p>
+<p>Or copy the block below into the chat. It is the whole task: the reading, every open gap, what has been tried, the steps, and how to report back.</p>
+<div class="agentbox"><span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b><small>give this to your agent</small></span></span><button type="button" class="copy">Copy</button><pre id="agent">TASK: take a partial decipherment further: Barlow to Monroe and to Bassano, autumn 1812: two passages in the Paris legation code
+This page: https://dbourdeau.github.io/cyphersolver/further/barlow1812.html
+
+You are helping a public research project finish reading historical cipher letters. This one is read in part:
+the key works, but some pieces are still open. Your job is to close one or more of the open gaps below.
+
+THE READING
+  Write-up:   https://dbourdeau.github.io/cyphersolver/barlow1812.html (read it first: how the text was read, the key, the reading)
+  Date:       1812
+  Outcome:    key from adjacent plaintext · partial
+  Read now:   78.3% of the deciphered cipher tokens give sense (pieces below may be untouched)
+  Files:      https://github.com/dbourdeau/cyphersolver/tree/main/targets/barlow1812 (NOTES.md, key, transcription, reading, scripts)
+
+OPEN GAPS (from NOTES.md, "## Remaining gaps")
+  1. [no-key-material: needs a new source] 815 (twice), 1567 and 1404 in the September letter; 624, 706 and 103 in the note to Bassano - blocker: no-key-material; no decipherer of the time gives them a value, they occur nowhere else in the ten key letters, no sheet of this code is known, and no other letter in the code with a decipherment is online (section 10); each has a value from the sense in `proposals.tsv`, marked [?] in the readings; by their place in the list five of the seven fit and 706 and 103 are in doubt (section 10).
+  2. [no-key-material: needs a new source] 163, the day in "my note of the [163]th June" - blocker: no-key-material; no value and none proposed; the note meant is probably that of 5 June 1812 (section 10), but nothing gives the number a value.
+  3. [no-key-material: needs a new source] 531 (copy A) or 537 (copy B) in "regard" - blocker: no-key-material; the two copies differ in this one number and neither has a value from a decipherer; by its place in the list 537 is ard and 531 a copyist's slip (section 10).
+  4. [illegible: needs a new source] The blotted group after 745 in the September letter (232R12) - blocker: illegible; overwritten, only the last digit is clear; read 761 ("s") from the word.
+  5. [illegible: needs a new source] 1353 written like 1553 (232R14) and the blotted 750 (23301) - blocker: illegible; miswritten or blotted on the only film of the only copy, and read from the word ({+exp}ected, mod{+e}); each word is counted as a hole.
+  6. [illegible: needs a new source] "the" before United States, written like 1780 (232R19) - blocker: illegible; a whole-word number, so no neighbour can confirm the digit on the only film; marked [?the].
+
+ALREADY TRIED (from NOTES.md, "## Escalation")
+  [x] siblings: all 296 frames of M34 roll 16 opened; coded text only on frames 11, 232-233, 240-247, 249-250 and 291-295, all used; four more letters in the code found outside the roll (Library of Congress and a sale photograph); 24 Nov 2026: the fifteen Madison and Barlow letters of 1811-1812 on Founders Online have code in two only, both already used, and the RG 59 triage lists no other frame in this code (section 10)
+  [x] clear-pages: frames 15-16 are the State Department's decipherment of frame 11 (used for the key); no clear copy or decipherment of either letter read here is on the roll; the two copies of the note to Bassano compared with each other
+  [x] known-keys: no key sheet for this code is known; it is not the JQA code that Crawford used from Paris in 1813 (there the = 1385 and of = 1576; here the = 1700 and of = 631); 24 Nov 2026: the WE028 sheet, the held rows of WE025, Armstrong's code, King's code and the JQA table compared number by number, no number with the same value (section 10); Weber's other printed tables not held and not tested
+  [x] print: section 8 (American State Papers, Wait, Todd, the Monroe and Madison editions, Brant 1958, Weber 1979; exact-phrase searches of Founders Online, Internet Archive, HathiTrust and Google Books); four later books not read page by page; 24 Nov 2026: the Madison edition's notes to the letter of 26 Sep 1812 identify the note of 5 June 1812, and Tomokiyo's Cryptiana article on the State Department code names the THE=1700 code with no table (section 10)
+  [x] key-rebuild: 623 values rebuilt from ten letters deciphered at the time; every source read again by two AI readers and 56 misread numbers corrected (section 7); 24 Nov 2026: the open numbers tested by their place in the word list of the State Department sheet, the test did not reach its marks and no value is taken from it (section 10)
+  [x] retry: the nine open numbers looked for in all ten key letters after the corrections: none occurs there; "justice" recovered from copy B's different spelling; 24 Nov 2026: 163, 103 and 531 looked at again on the frames, each as transcribed
+
+STEPS
+0. Set up. If you can run a shell, fork and clone the repository and work inside it:
+     git clone https://github.com/dbourdeau/cyphersolver.git
+   Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/barlow1812/NOTES.md in full, and the
+   key, transcription and reading files it names; lang/README.md (shared language models).
+   Work in targets/barlow1812/. Add your findings to NOTES.md under a dated heading without rewriting what is there, and
+   update the "## Remaining gaps" line of every gap you close. Keep WORKLOG.md there: one dated line per step
+   (hypothesis, value tried, solver run, crib, control), failures included. Do not edit docs/ (the site is generated).
+   If you cannot run a shell, fetch the files from the links above and keep your work in files you send with the issue.
+1. Pick a gap. Start with the ones marked "doable now" (open-codes, not-attempted, left-open): the images and the key
+   are online, so they need only work. A gap marked "needs a new source" (no-key-material, too-short, illegible,
+   needs-physical-access) can be closed only by something new: a key
+   or a deciphered sibling found elsewhere, a better image, a printed edition or calendar, a photograph from the archive.
+   For those, search for that material first, and say where you looked even when you find nothing.
+2. Start from the existing key and transcription in the folder. Do not rebuild the key from scratch, and do not
+   re-read parts that are already read unless you find an error in them.
+3. For a code group or sign value: list every place the group occurs, show how each reads with the value you propose,
+   and say what still does not fit. For a passage: re-read it at the image and give the folio and line. For a missing
+   letter or leaf: say where it is held and how it can be reached.
+4. Measure again. Apply the key to the whole text, write the reading file, and count the share of cipher tokens that
+   give sense (not an estimate). The reading is "complete" only when (1) at least 95% of its cipher tokens give sense;
+   (2) no gap is left untried; (3) every letter in it is covered; (4) what stays open is scattered code groups or names,
+   or pieces blocked from outside. Otherwise it stays "partial": say which gaps are still open and why.
+5. Be honest. Mark every uncertain word with [?], leave unread groups as their numbers or signs, and never fill a gap
+   with a plausible guess. A gap retried and still open, with what was ruled out, is worth reporting.
+
+REPORT BACK
+With a clone: open a pull request with your changes to targets/barlow1812/. Say in the description which gaps you worked on,
+  the share read before and after, and how you want to be credited (name, initials or handle, and a link).
+Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml&amp;title=Further+reading%3A+barlow1812&amp;page=barlow1812.html
+  Give the write-up, the gap you worked on (its line in Remaining gaps, or the code group, folio and line), what you
+  propose, the evidence (every occurrence, the images or sources), the share read before and after, your step log,
+  and the tools and AI model you used.
+If you cannot open issues or pull requests, write this report for your human to send. Credit goes to the person who sends it.</pre></div>
+
+<h2>Open gaps</h2>
+<p><span class="gap w">gold</span> can be done now: the images and the key are online, it needs only work. <span class="gap">grey</span> needs a new source first: a key, a better scan, an edition or the archive.</p>
+<ul class="gaplist"><li><span class="gap">no key known</span> 815 (twice), 1567 and 1404 in the September letter; 624, 706 and 103 in the note to Bassano - blocker: no-key-material; no decipherer of the time gives them a value, they occur nowhere else in the ten key letters, no sheet of this code is known, and no other letter in the code with a decipherment is online (section 10); each has a value from the sense in `proposals.tsv`, marked [?] in the readings; by their place in the list five of the seven fit and 706 and 103 are in doubt (section 10).</li><li><span class="gap">no key known</span> 163, the day in "my note of the [163]th June" - blocker: no-key-material; no value and none proposed; the note meant is probably that of 5 June 1812 (section 10), but nothing gives the number a value.</li><li><span class="gap">no key known</span> 531 (copy A) or 537 (copy B) in "regard" - blocker: no-key-material; the two copies differ in this one number and neither has a value from a decipherer; by its place in the list 537 is ard and 531 a copyist's slip (section 10).</li><li><span class="gap">hard to read on the scan</span> The blotted group after 745 in the September letter (232R12) - blocker: illegible; overwritten, only the last digit is clear; read 761 ("s") from the word.</li><li><span class="gap">hard to read on the scan</span> 1353 written like 1553 (232R14) and the blotted 750 (23301) - blocker: illegible; miswritten or blotted on the only film of the only copy, and read from the word ({+exp}ected, mod{+e}); each word is counted as a hole.</li><li><span class="gap">hard to read on the scan</span> "the" before United States, written like 1780 (232R19) - blocker: illegible; a whole-word number, so no neighbour can confirm the digit on the only film; marked [?the].</li></ul>
+<h2>Already tried</h2><ul class="esc"><li>&#9745; <b>siblings</b> all 296 frames of M34 roll 16 opened; coded text only on frames 11, 232-233, 240-247, 249-250 and 291-295, all used; four more letters in the code found outside the roll (Library of Congress and a sale photograph); 24 Nov 2026: the fifteen Madison and Barlow letters of 1811-1812 on Founders Online have code in two only, both already used, and the RG 59 triage lists no other frame in this code (section 10)</li><li>&#9745; <b>clear-pages</b> frames 15-16 are the State Department's decipherment of frame 11 (used for the key); no clear copy or decipherment of either letter read here is on the roll; the two copies of the note to Bassano compared with each other</li><li>&#9745; <b>known-keys</b> no key sheet for this code is known; it is not the JQA code that Crawford used from Paris in 1813 (there the = 1385 and of = 1576; here the = 1700 and of = 631); 24 Nov 2026: the WE028 sheet, the held rows of WE025, Armstrong's code, King's code and the JQA table compared number by number, no number with the same value (section 10); Weber's other printed tables not held and not tested</li><li>&#9745; <b>print</b> section 8 (American State Papers, Wait, Todd, the Monroe and Madison editions, Brant 1958, Weber 1979; exact-phrase searches of Founders Online, Internet Archive, HathiTrust and Google Books); four later books not read page by page; 24 Nov 2026: the Madison edition's notes to the letter of 26 Sep 1812 identify the note of 5 June 1812, and Tomokiyo's Cryptiana article on the State Department code names the THE=1700 code with no table (section 10)</li><li>&#9745; <b>key-rebuild</b> 623 values rebuilt from ten letters deciphered at the time; every source read again by two AI readers and 56 misread numbers corrected (section 7); 24 Nov 2026: the open numbers tested by their place in the word list of the State Department sheet, the test did not reach its marks and no value is taken from it (section 10)</li><li>&#9745; <b>retry</b> the nine open numbers looked for in all ten key letters after the corrections: none occurs there; "justice" recovered from copy B's different spelling; 24 Nov 2026: 163, 103 and 531 looked at again on the frames, each as transcribed</li></ul>
+
+
+<h2>Send a result</h2>
+<p>One closed gap counts: a code group valued, a passage re-read, a key or clear copy found elsewhere. It is credited to you on the write-up.</p>
+<div class="btns"><a class="primary" href="https://github.com/dbourdeau/cyphersolver/issues/new?template=further-reading.yml&amp;title=Further+reading%3A+barlow1812&amp;page=barlow1812.html" rel="noopener">Open a further-reading issue</a><a href="https://github.com/dbourdeau/cyphersolver/issues/new/choose" rel="noopener">Other kinds of report</a><a href="contribute.html#further">How credit works</a><a href="further.html">&larr; All partial readings</a></div>
+</main>
+
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="further/barlow1812.html#top">Top &uarr;</a></nav>
+</div></footer>
+<script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
+<script src="site.js?v=18e8715e"></script>
+</body>
+</html>
