@@ -152,3 +152,19 @@ Count measured on our copy (the owner recounts on the repository): 485 words, 32
 
 **Possible effect on 1789.** If 1886 = al is right here, the two occurrences counted as "p" for 1886 in the 1789 pairs
 (`key_K4.tsv`: 1886 al 17/21, p:2) need a look. The 1789 targets are not changed by this entry.
+
+**Sign check, 23 Nov 2026 (sheet N).** A second forced-choice sheet, built to a rule written and hashed before any thumbnail
+was cut (`sign_check/planche-N-rule.md`, SHA-256 007e5abf…0808b36). Brice Dudout answered 7 questions: 3 known-answer controls
+(695 3rd digit = 5, 786 3rd digit = 6, 2154 4th digit = 4) and 4 targets, each a digit that is shaped between two readings;
+the clean reference shapes were cut from groups whose digits are settled by the key. Controls 3/3. The four targets, by the
+integration clause as written:
+- k.74v.13/3 `1116` -> **`1110`** (0): 1110 = pro (49/52); the word is "proiekt", as in k.74v.29 (same run 1110 360 460 1426).
+- k.75v.28/8 `1167` -> **`1117`** (1): 1117 = przy (102/106); "przystąpili".
+- k.75v.30/5 `293` -> **`295`** (5): 295 = hetmana (3/8 in the pairs).
+- k.74v.23/5 `2044` -> **`2004`** (0): 2004 = bedzie (31/75).
+These four groups are marked `!` in the transcription (read at the sheet). Each word is now fully given by the key and
+counted sure: proiekt, przystąpili (which absorbs the former `{1167}` and `stąpili`), hetmana, będzie. Count on our copy:
+483 words (two merged), 325 sure, 6 probable, 108 with supplied or dropped letters, 44 unread; sure and probable 331 of 483
+(68.5%, was 328 of 485). `outcome.fraction_read` and `read_share` carry 0.685. The class stays **read in part**; the lying loop
+(1886^, 1001^) was not asked again (same homograph as on sheet D). One reviewer. Answers, results and rule are in `sign_check/`;
+no image is committed. The entry `sign_check_pending.json` follows the convention of the other targets (the schema has no field yet).
