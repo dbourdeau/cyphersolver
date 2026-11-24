@@ -1,0 +1,283 @@
+{
+ "schema_version": 1,
+ "target": "ostermann1737",
+ "title": "A. I. Ostermann in the Empress's name to I. P. Kalushkin, Russian resident in Persia, 17 April 1737 (O.S.), GAAO Astrakhan f. 394 op. 1 dop. d. 11 l. 21 (catalogue 1247): key recovered from the ciphertext alone, twenty cipher lines read in part (contributed by Malcolm McBratney with Claude)",
+ "documents": [
+  {
+   "id": "l21",
+   "read": "read in part",
+   "shelfmark": "GKUAO GAAO (State Archive of Astrakhan Oblast), f. 394, op. 1 dop., d. 11, l. 21; image from Wikimedia Commons, File:Шифрованное письмо вице-канцлера Остермана резиденту в Персии Калушкину, 1737.jpg",
+   "date": "17 April 1737 (O.S.; 28 April N.S.), as given on the Commons file page",
+   "year": 1737,
+   "country": "Russia",
+   "language": "Russian (Collegium of Foreign Affairs, pre-reform spelling)",
+   "pages": 1,
+   "cleartext_in_document": "separate passages",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No key, decipherment, interlinear or printed reading found (PRIOR_ART.md). The clear opening of the leaf is the rescript itself, not a decipherment. Not checked: the Astrakhan archive's exhibition caption, Soboleva at page level, AVPRI f. 77."
+   },
+   "length": {
+    "tokens": 787,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_l21.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Wikimedia Commons thumbnail through thumb.php, 713x1020, md5 992c3531700364eeca36943e86b9d1a1 (FETCH_LOG.txt); 5x crops of each line",
+    "corrections": 0,
+    "image_quality": "fair",
+    "notes": "Length: _check_profile.py --measure transcription_l21.txt --drop-first gives 896 whitespace tokens = 787 sign tokens + 101 group gaps (|) + 1 illegible sign [...] + 7 tokens of clear text and marks in braces; 787 counted here (33 labels; SIGNS.md sums to 787). Of the 787, 17 are the divider S26 (12) and the flourish S33 (5), leaving 770 letter signs (shuffle_out.txt, judge/judge.tsv). One reader (Claude Fable 5.2), one pass, from a re-encoded thumbnail one pixel short of the original; doubtful distinctions W/U, V/b, 8/y, x/X, D/A, p/n, q/Y (SIGNS.md). Frozen with the split before any solving (FREEZE_TX.txt). Not checked by a person."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "One-to-one substitution of 31 signs for Russian letters; the signs are Cyrillic letters, digits and marks with other values (В = к, ш = о, 8 = и, 2 = с ...). One sign (S28, a large У) is the ligature ѿ = 'от'. A slanted stroke (S26) divides and a flourish (S33) ends lines; neither is a letter. The key does not tell ѣ from е or і from и.",
+  "symbol_kind": "letters and symbols",
+  "distinct_symbols": 33,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "random",
+  "word_division": "partial",
+  "doubled_letters": "written twice",
+  "notes": "33 sign labels (SIGNS.md): 31 letter signs (S29 ф and S32 щ have one training use each), the ligature S28 (от, 2 uses), the divider S26 and the flourish S33 (KEY.tsv). Gaps between groups were transcribed; they mostly fall at words, but prepositions are joined to the next word and words break at line ends. No alphabetical order was seen in the table [derived from KEY.tsv]."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found: Cyphersolver issues, PRs and repository, DECODE public search (gate record), the Commons file page, web searches in Russian and English, before and after the decode (PRIOR_ART.md). SPbII RAN f. 178 op. 3 lists 1739 rescripts to Kalushkin with 'Шифр и дешифрант' (other documents, unpublished, key unknown). Not checked: the Astrakhan archive's exhibition caption (unreachable), Soboleva at page level, AVPRI f. 77, HathiTrust and Google Books full text.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney directed the work and set its rules (prior art first, transcription and key frozen before one decode, held-out lines, a separate strict judge, first pass as the figure of record, shuffle controls). Claude sessions did the transcription, key recovery, decode, judging, reading and translation. No reading by a person without AI.",
+  "tools": [
+   "scripts/rulm.py: own Russian 5-gram character model from 160 ru.wikisource pages of 1700-1749 documents (lmsrc/)",
+   "scripts/solve.py: simulated annealing over one-to-one keys",
+   "decode_once.py (one decode)",
+   "shuffle.py: 5,000 shuffled keys at two seeds",
+   "judge/count.py (re-adds the judge's scores)"
+  ],
+  "models": [
+   "Claude Fable 5.2 (Anthropic): the solver session (transcription, key recovery, decode, controls) [stated by the contributor]",
+   "Claude Opus 5.5 (Anthropic): the strict judge, and the session that assembled this folder, reading.md and translation.md"
+  ],
+  "first_date": "2026-11-24",
+  "last_date": "2026-11-24"
+ },
+ "solution": [
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Prior art before transcription: Cyphersolver issues, PRs and repository, DECODE (gate record), the Commons file page, web searches in Russian and English, the SPbII RAN f. 178 op. 3 finding aid (PRIOR_ART.md). No key, decipherment or reading of this leaf found.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Commons original: HTTP 429 four times; 500px thumb: 429; archive.astrobl.ru PNG and exhibition page and the Wayback copy: proxy tunnel closed. Working image: thumb.php rendering 713x1020, md5 992c3531... (FETCH_LOG.txt).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "transcription",
+   "what": "20 cipher lines transcribed by sign shape from 5x line crops, blind to any key: 787 sign tokens, 33 labels, 1 illegible sign. Frozen at 10:46 UTC with the split training = lines 1-16, held-out = lines 17-20 (FREEZE_TX.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "statistics",
+   "technique": [
+    "frequency analysis"
+   ],
+   "what": "Lines 1-16, 637 signs: IC 0.0552, top sign S03 14.4%; fits one-to-one substitution on Russian (SOLVE_LOG 0).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference"
+   ],
+   "what": "Hand guess: the free-standing group S03 S06 S16 as 'отъ' or 'онъ'; not pursued (it is 'онъ') (SOLVE_LOG 1).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Annealing on lines 1-16, own 5-gram model with spaces, S26 and S33 as dividers, 30,000 steps, 8 seeds on the corpus at 143 pages: 8 of 8 the same key; 6 of 6 at 160 pages; the same key with a 4-gram model without spaces, 4 seeds (SOLVE_LOG 2-4).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "manual reconstruction"
+   ],
+   "what": "The one hand edit: S28 (2 uses, both in training lines) changed from the solver's ѣ to the ligature ѿ = 'от', from 'онъ _ себя' and '_править' (SOLVE_LOG 5, KEY.tsv note).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Key frozen at 10:55 UTC (FREEZE_KEY.txt), then one decode of all 20 lines, held-out lines 17-20 included, no emendation (decode_once.py, DECODE.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "5,000 shuffled keys at seeds 20261112 and 7: 0 of 5,000 reach the real key on the whole text (z 16.6, 16.9), held-out lines 17-20 (z 13.5, 13.8) and training lines 1-16 (z 16.9, 17.2) (shuffle_out.txt).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Separate strict judge (Claude Opus 5.5), given only the brief and the decode, scored each letter S/E/N: training lines 1-16 613/622 = 98.6%, held-out lines 17-20 147/148 = 99.3%, all 760/770 = 98.7% (S 760, E 10, N 0); every line at or above 94.3% (judge/judge.tsv).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "After the decode, two plaintext phrases searched on the web ('Калушкину' 1737 'Абдул Баки'; 'бденно смотреть и прилежно разведывать'): no hit (PRIOR_ART.md 7).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "reading.md and translation.md made from the decode, nothing emended: 152 words, 9 one-letter slip words marked (?) and 3 words with a supplied letter, all counted as holes; read share 140/152 = 0.921 (149/152 = 0.980 if the slips were counted as read).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "docs/_validate.py not run to a result: lang/ has no Russian model. The solver's own model (scripts/rulm.py) is outside lang/ and was not added to the registry.",
+   "result": "failed"
+  }
+ ],
+ "outcome": {
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "The key was recovered from cipher lines 1-16 alone by annealing with a Russian 5-gram model (the same key in every seed), with one hand edit from two training contexts (S28 = 'от'), frozen, and then decoded the held-out lines 17-20 to Russian on the first pass (147 of 148 letters). No crib or outside plaintext was used.",
+  "contribution": [
+   "transcription",
+   "key recovered",
+   "catalogue correction"
+  ],
+  "fraction_read": 0.921,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "reading.md, counted with research/reading_audit/v10_relabel.measure_text: 140 of 152 words read as sense, counting as holes the 9 one-letter slip words (marked (?)) and the 3 words with a supplied letter; 149/152 = 0.980 if the slips were counted as read. Strict judge by letters: 760/770 = 0.987 (judge/judge.tsv).",
+  "verification": [
+   "none"
+  ],
+  "first_break": true,
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "solution",
+    "note": "catalogue 1247: key recovered from cipher lines 1-16, frozen, one decode, strict judge and shuffle controls, with Claude (Anthropic: Fable 5.2 solver, Opus 5.5 judge and assembly)",
+    "date": "2026-11-24"
+   },
+   {
+    "who": "mcbratney",
+    "role": "transcription",
+    "note": "l. 21, 20 cipher lines, from the Wikimedia Commons image, with Claude (Anthropic)",
+    "date": "2026-11-24"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Better image: only a 713x1020 re-encoded thumbnail was read; the Commons original (HTTP 429) and the archive's PNG (unreachable) were not obtained",
+    "blocker": "needs-physical-access",
+    "detail": "a full-resolution image from GAAO or the Commons original would settle the doubtful sign pairs (SIGNS.md) and the slips"
+   },
+   {
+    "item": "Six of the ten judged slips are о for е (подтворждаютца, порсицкимъ, случао, имоешъ twice, порсицкои)",
+    "blocker": "illegible",
+    "detail": "possibly two minim signs confused at this resolution (S03 three minims = о, S04 two minims = е), in the transcription or in the clerk's hand; not emended; needs the signs re-read on a better image"
+   },
+   {
+    "item": "Other slips: которыхъъ (extra ъ), сосланось (н for л), констянтинополя (я for а), разведыъа (ъ for в)",
+    "blocker": "illegible",
+    "detail": "one letter each; not emended; a second reading of the signs on a better image is needed"
+   },
+   {
+    "item": "Marks above the line at the ends of lines 8 and 15 ({sup. flourish}, {sup. y}), and the flourish at the end of line 10",
+    "blocker": "illegible",
+    "detail": "transcribed as marks, not signs; the sense wants писа[л] and разведыва[ть]; the line 15 mark may be the sign S08 (т) written above the line; not decoded"
+   },
+   {
+    "item": "One illegible sign in line 16 (происходи[...]ъ, т by sense)",
+    "blocker": "illegible",
+    "detail": "a blot on the thumbnail"
+   },
+   {
+    "item": "The text continues after line 20 ('тебе всячески ...') on a leaf that was not imaged",
+    "blocker": "needs-physical-access",
+    "detail": "only l. 21 is on Commons; GAAO f. 394 op. 1 dop. d. 11 holds the next leaf"
+   },
+   {
+    "item": "Weak key values: S29 ф and S32 щ (one training use each); S28 ligature от (two uses, set by hand)",
+    "blocker": "too-short",
+    "detail": "S32 also gives щ in held-out 'обраще|ния'; S29 occurs once"
+   },
+   {
+    "item": "Prior-art gaps: the Astrakhan archive's exhibition caption; Soboleva at page level; AVPRI f. 77 (the Collegium's clear draft); the 1739 rescripts with 'дешифрант' in SPbII RAN f. 178 op. 3",
+    "blocker": "needs-physical-access",
+    "detail": "the exhibition page was unreachable from the sandbox; the rest is in print or in archives not online"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "l21",
+    "label": "l. 21, cipher lines 1-20",
+    "transcription": [
+     "transcription_l21.txt",
+     "TRANSCRIPTION.tsv"
+    ],
+    "decryption": "DECODE.txt",
+    "reading": "reading.md",
+    "translation": "translation.md",
+    "language": "ru",
+    "state": "read in part",
+    "read_share": 0.921,
+    "reading_review": {"grade": "B", "by": "integration review of PR #935 (AI agent, for the maintainers); not a person", "date": "2026-11-24", "note": "Read as sentences in reading.md: one continuous passage of chancery Russian (the conference protocols sent, the vice-chancellor's letter to the Shah to be forwarded, Kalushkin to watch the Shah and the Turks and Abdul Baki Khan's return from Constantinople), coherent from end to end, breaking off at line 20. 152 words, 140 sure (0.921): 9 one-letter slips and 3 supplied letters held as holes. Own decoder reproduces DECODE.txt on 20 of 20 lines; the reading spells the decode exactly. Four places (lines 1, 2, 3, 17) compared with the Commons thumbnail. Replaces the review signed by the contributor's own assembling session, which a reader who is not the author may not stand in for."},
+    "summary": "The rescript tells Kalushkin that nothing new is resolved and the former decrees stand; it sends the protocols of the conferences held with the Persian ambassador; since the ambassador asked the vice-chancellor to write to the Shah himself, the vice-chancellor has done so by the Empress's order, and Kalushkin is to forward that letter fittingly, and to watch what passes between the Shah and the Turks and how the Shah's ambassador Abdul Baki Khan has come back from Constantinople, a Turkish ambassador having gone to the Shah with him; the leaf breaks off on what he is to do about that Turkish ambassador."
+   }
+  ],
+  "key_file": "KEY.tsv",
+  "notes": "Held-out design: lines 17-20 (148 of 770 letters) were not used to recover the key; they had been seen as images during transcription (one leaf only), but no decode of them existed before the key freeze. Transcription by one model reader in one pass from a thumbnail; no person has checked it. Verification is recorded as none: the repository's statistical validation (docs/_validate.py) could not run, as lang/ has no Russian model (validation.tsv is prepared for it). The shuffle control (0 of 5,000 at two seeds, own model) and the strict judge (a model session) are in the solution steps, not counted as verification here."
+ }
+}

@@ -1,0 +1,48 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), 9 cipher pages, one decode, strict single pass
+Files read: BRIEF.txt and decode.txt only. Decode scored as written; nothing emended.
+
+UNIT RULES
+- 1 unit = 1 decoded letter. '?' (doubtful marker), ';', '=', '.', spaces: not units. The letter before a '?' is judged as a letter.
+- '#' and '_' = 1 unit each, always N (brief rule). '___' = 3 N.
+- No { } clear-script text occurs in this decode, so nothing excluded.
+- S = letter in a word that reads as 16th-c. German / Latin chemical term. Period spellings accepted (uor, uil, wirt, waser, tzehen, langck, wegck, nigck, mercury/mercurio, precipitiret, figiret, on = ohne, hir, sin/nict/wide with a letter omitted: omissions cost nothing because no wrong letter is present).
+- E = one wrong letter in an otherwise readable word (substitution or one extra letter).
+- N = letter or sign with no sense (unknown signs; 'gr' p.148a L08).
+- judge.tsv markup: [x] = E letters, <x> = N units, plain letters = S. Script check: the letters in every row's reading match decode.txt exactly.
+
+TOTALS (S / E / N; strict = S/(S+E+N))
+p.151   485 / 10 / 1  total 496  485/496 = 97.8%
+p.152   451 / 16 / 4  total 471  451/471 = 95.8%
+p.153   391 /  9 / 0  total 400  391/400 = 97.8%
+p.154   486 / 10 / 0  total 496  486/496 = 98.0%
+p.155   460 / 10 / 1  total 471  460/471 = 97.7%
+p.157a  331 /  6 / 0  total 337  331/337 = 98.2%
+p.148a  430 /  9 / 6  total 445  430/445 = 96.6%
+p.149a  432 /  9 / 1  total 442  432/442 = 97.7%
+p.150a  409 /  4 / 2  total 415  409/415 = 98.6%
+ALL     S = 485+451+391+486+460+331+430+432+409 = 3875
+        E = 10+16+9+10+10+6+9+9+4 = 83
+        N = 1+4+0+0+1+0+6+1+2 = 15
+        total = 3875+83+15 = 3973; strict = 3875/3973 = 97.5%
+
+RECURRING SLIPS (count of E letters by decoded letter)
+- r where u/v is wanted: 35 [r] slips (prluer = pulver, ror/ron = vor/von, rirten, hrndert, genrg, neren, darron, rolget, soril; one r for z in 'melret'). By far the main slip: one cipher sign seems to be read as r when u/v is meant.
+- f where long s is wanted: 12 (wafer, lafet, gifet, mufet, weifen, gefefe, daf, fliefen).
+- l for k/o/r/u: 6 (lonnet, lreftiger, dancleet, alsl, uol, plluer). e for p: 3 (erecipitiret, ereciei); other e extras 3.
+- doubled t (konnett, salttz x2, filttz, gemolett): 5. o for a/e (mol, uormeren, gemolett, on, ro): 5.
+- Unknown signs: '#' 7 (four in fi# = fix, prec#pitiret, bora# = borax, bi#e = bixe), '_' 5 units.
+
+GISTS (recipe level only)
+p.151: Continuation of a recipe for a fixed red precipitate (powder) of mercury; the sealed glass is kept in its oven over weeks, then set in sand with heat raised in stages, and tested for fixity.
+p.152: The same recipe continued: the powder is multiplied by repeating the process with ever larger shares of 'mercurius solis', each round making it stronger for medicine and for tingeing metals.
+p.153: Start of a recipe for turning common quicksilver into good gold with this 'precipitate of sol': purified quicksilver is combined with the red powder, sealed and kept until it becomes a crimson-red powder.
+p.154: Continuation: the red powder is repeatedly combined with further common quicksilver, sealed and heated for weeks, each round again giving a red powder.
+p.155: End of that recipe: further rounds as before, then a section on turning the powder into gold in a crucible with a flux (borax) in a wind furnace; a note that quicksilver new to the powder is not yet medicine.
+p.157a: Start of a recipe for preparing salt of tartar (calcined wine-stone) by dissolving in warm distilled water and filtering through a felt into a flask, with a reference to a drawing ('wie hir gemolett ist').
+p.148a: Continuation: discard the dregs, distil the water off in sand until the tartar salt is left in the flask, with a warning to use a new flask each time because the salt cracks the glass.
+p.149a: Continuation: the salt is ground, redissolved in distilled water, filtered and dried down again, repeating the cycle.
+p.150a: End: repeat ten or twelve times until the salt is snow-white; this salt is called 'arcanum philosophorum', and is then put in a clean wooden box and set aside.
+
+UNUSUAL
+- Pages are cut mid-sentence at both ends (p.151 L01 and p.150a L22), so the sequence is a running text; p.157a then 148a/149a/150a reads as one continuous recipe.
+- p.153 L05 ('gu.temgolde') and p.154 L03 ('silberder') have a '.' or no divider inside words; scored by letters, so no effect.
