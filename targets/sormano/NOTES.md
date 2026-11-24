@@ -222,3 +222,11 @@ hashed before anything was shown; controls 3/3). All three are the italic n (e):
 probable 94.6% -> 95.01%. This is at the 95% line by 0.05 word only, it is 94.99% with a stricter tokenisation (839
 words) and 89.2% on sure words alone, so we do not claim it as exceeded and leave the state to the maintainer.
 Files: `dudout/no63_signs_2411_95.txt`, `dudout/no63_reading_2411_95.md`. No image is committed (Gallica).
+
+## 25 Nov 2026 - no. 63, blind sign sheet 2411-95b (Brice Dudout, with Claude), `dudout/sign_check/`
+Two single-sign doubts whose form can be seen on the image were put to Brice Dudout as a third blind sheet (rule hashed
+before the thumbnails; controls 3/3): the looped B (z) gives *diligenza* (was diligen[tia]) and the barred looped delta
+(o) gives *serviva o al tirar Papa in lega* (was unread), both sure. Of 841 cipher words: sure 750 -> 752, restored
+9 -> 8, unresolved 21 -> 20; sure or probable 95.01% -> 95.24% (801/841, margin 2.05 words), and 95.23% (799/839) with
+our stricter tokenisation, so the line is reached on both counts. Sure words alone: 89.4%. The state is left to the
+maintainer. Files: `dudout/no63_signs_2411_95b.txt`, `dudout/no63_reading_2411_95b.md`. No image is committed (Gallica).

@@ -141,3 +141,13 @@ files are unchanged.
 Words (841): sure 748 -> **750**, probable 48 -> 49, unresolved 24 -> 21. Sure + probable 94.6% -> **95.01%**, at the
 line by 0.05 word; 94.99% with our stricter tokenisation (839 words); 89.2% on sure words alone. State left to the
 maintainer. Details in `sign_check/README.md`.
+
+## 25 Nov 2026: blind sign sheet 2411-95b (`sign_check/`)
+Two single-sign doubts of no. 63 were put to Brice Dudout as a third blind sheet (controls 3/3): the looped sign of
+"diligen-" is the looped B (z): **diligenza** (was diligen[tia], restored), and the first sign of (5)v9 is the barred
+looped delta (o): **serviva o al tirar Papa in lega** (was unread). Both sure. `no63_signs_2411_95b.txt` and
+`no63_reading_2411_95b.md` are the new versions; earlier files are unchanged.
+
+Words (841): sure 750 -> **752**, restored 9 -> 8, unresolved 21 -> 20. Sure + probable 95.01% -> **95.24%** (801/841,
+margin 2.05 words); 95.23% (799/839) with our stricter tokenisation; 89.4% on sure words alone. State left to the
+maintainer. Details in `sign_check/README.md`.
