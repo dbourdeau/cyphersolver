@@ -211,6 +211,12 @@
    ],
    "what": "Five pieces decoded with KEY_v2 (v1 + omitted f. 376 values + f. 452 gloss values); context-only values counted as holes.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Integration of PR #876 (AI agent, for the maintainers; not a person): reading.md, f. 152 sentence 4, printed \"elle a\" and counted 12 words; the \"a\" is group 355 at 0154 R4 (transcription.txt), a null in key.tsv and shown as a null in decryption.txt. The word is taken out: sentence 4 has 11 words and 2 holes, f. 152 134 of 150, the five pieces 239 of 271 (0.882, as before to three places). The question whether the reproduction may be analysed with an AI assistant is taken out of the gaps: it is a condition of use (NOTES.md), not an unread piece of the text. No image opened.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -224,7 +230,7 @@
   "method": "key recovered based on adjacent plaintext",
   "fraction_read": 0.882,
   "fraction_read_method": "measured",
-  "fraction_read_source": "rule of #728: 240 sure words of 272 cipher words (reading.md); probables, restorations and context-only values are holes.",
+  "fraction_read_source": "rule of #728: 239 sure words of 271 cipher words (reading.md); probables, restorations and context-only values are holes. 240 of 272 until 24 Nov 2026: sentence 4 of f. 152 counted \"a\" on group 355 (0154 R4), a null in key.tsv.",
   "first_break": true,
   "verification": [
    "historical consistency"
@@ -258,11 +264,6 @@
     "item": "355 = null rather than \"a\"",
     "blocker": "open-codes",
     "detail": "one occurrence in the glossed letter (after Benincasa), no second glossed letter to test it; key.tsv and decryption.txt treat it as a null, the frozen KEY_v1/v2 say \"a\""
-   },
-   {
-    "item": "AI analysis of the reproduction",
-    "blocker": "not-attempted",
-    "detail": "the Archives nationales were not asked whether the images may be analysed with an AI assistant; the order was placed declaring private use"
    }
   ],
   "texts": [
@@ -275,12 +276,12 @@
     "translation": "translation.md",
     "language": "fr",
     "state": "read in part",
-    "summary": "135 of 151 cipher words sure.",
+    "summary": "134 of 150 cipher words sure.",
     "reading_review": {
      "grade": "B",
      "by": "integration review of PR #876 (AI agent, for the maintainers); not a person",
      "date": "2026-11-24",
-     "note": "Decryption reproduced by the round-5 review from key.tsv and the arbitrated transcription (48 of 48 lines, all five pieces). Read here as sentences in reading.md, with the clear words it quotes, and in translation.md: twelve passages on ending French protection of the Venetians at the Porte and keeping the Venice trade for ships with French passports. The French builds sentences; unresolved groups are marked (305, 280, 177, 57, 146, 152, 61, 33, 59). Grade B: raw, the passages hold together only through the quoted clear text. Sentence 4 still prints 'elle a' and counts 12 words: that 'a' is group 355 (0154 R4), a null in key.tsv since ed395f62da, and the file's own rule says nulls give no word, so the figures by that rule are 134 of 150 for f. 152 and 239 of 271 in all (filed 135 of 151 and 240 of 272, not changed here). Key not validated at the pre-registered bar (0.830 < 0.85). Not checked: the images, tools/em.py, that the keys were frozen before the measure."
+     "note": "Decryption reproduced by the round-5 review from key.tsv and the arbitrated transcription (48 of 48 lines, all five pieces). Read here as sentences in reading.md, with the clear words it quotes, and in translation.md: twelve passages on ending French protection of the Venetians at the Porte and keeping the Venice trade for ships with French passports. The French builds sentences; unresolved groups are marked (305, 280, 177, 57, 146, 152, 61, 33, 59). Grade B: raw, the passages hold together only through the quoted clear text. Sentence 4 still prints 'elle a' and counts 12 words: that 'a' is group 355 (0154 R4), a null in key.tsv since ed395f62da, and the file's own rule says nulls give no word, so the figures by that rule are 134 of 150 for f. 152 and 239 of 271 in all (filed 135 of 151 and 240 of 272; corrected in reading.md, NOTES.md and this profile later on 24 Nov 2026, after the 355 of 0154 R4 was confirmed as a null in key.tsv, transcription.txt and decryption.txt). Key not validated at the pre-registered bar (0.830 < 0.85). Not checked: the images, tools/em.py, that the keys were frozen before the measure."
     }
    },
    {

@@ -15,7 +15,7 @@ Count by rule #728: only sure words count; probable, restored and unresolved wor
    — 17 words, 4 holes (305 prob. "Vostre", 280 prob. "juge", 177 prob. "ne"; "ici" ends on a doubtful group 117?).
 2. {… veritablement a prendre} les capitulations à la lettre on {peut faire …} — 6 words, 0 holes.
 3. [répon]dre à la République que ce n'est que par tolérance et la simplicité des Turcs que les Vénitiens [ont] vécu ici en tems de guerre et {que le Visir plus éclairé semble être en droit …} — 26 words, 2 holes (69 "‹69›dre", 103 "ont" context only).
-4. {… conforme aux interests des Turcs} ‹57› que si cette {résolution} est préjudiciable à la République elle a {ne doit en accuser que les Amb.rs d'Hollande et d'Angleterre} — 12 words, 2 holes (57; "re‹355›lution" lacks the syllable so).
+4. {… conforme aux interests des Turcs} ‹57› que si cette {résolution} est préjudiciable à la République elle {ne doit en accuser que les Amb.rs d'Hollande et d'Angleterre} — 11 words, 2 holes (57; "re‹355›lution" lacks the syllable so). Corrected 24 Nov 2026: "elle a" counted a word on the 355 of 0154 R4, which key.tsv gives as a null; it was 12 words.
 5. {… faire remarquer qu'il y avoit} ici deux cens Vénitiens qui y vivoient sous la protection des trois ‹146›s de crainte qu'il {n'exigeast sur le champ} — 16 words, 1 hole (146: "the three [crowns/nations]").
 6. qu'on les fist sortir et qu'on ne m'imputast {l'iniquité d'une telle ouverture} — 8 words, 0 holes.
 7. {mais je ne doute point que} il ne les veuille faire retirer quelque jour {quand il y aura fait reflexion} — 8 words, 0 holes.
@@ -25,7 +25,7 @@ Count by rule #728: only sure words count; probable, restored and unresolved wor
 11. {il faudroit deffendre qu'on n'y chargeast aucun effet} à l'adresse de nos ennemis et imposer ‹33› po‹59› {une peine considerable pour les marchands} — 9 words, 2 holes.
 12. {marchands françois qui} leur presteroient leurs noms — 4 words, 0 holes.
 
-f. 152: **135 sure of 151 cipher words = 0.894** (read in part).
+f. 152: **134 sure of 150 cipher words = 0.893** (read in part).
 
 ## f. 155 — Louis XIV's reply of 27 Jun 1691 to the letter of 19 Apr 1691 (copy; cipher on 0156 L; the 19 Apr letter itself has no cipher)
 
@@ -51,4 +51,4 @@ f. 152: **135 sure of 151 cipher words = 0.894** (read in part).
 
 ## Total
 
-240 sure of 272 cipher words = **0.882**. No piece reaches the "read" bar (>= 95 %, or <= 2 holes under 40 words).
+239 sure of 271 cipher words = **0.882**. No piece reaches the "read" bar (>= 95 %, or <= 2 holes under 40 words).

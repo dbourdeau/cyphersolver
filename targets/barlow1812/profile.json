@@ -185,9 +185,10 @@
       "kind": "verification",
       "what": "Andrew Beling contribution: two further AI agents that had made none of the readings checked the folder. A verifier applied the key with its own script (same counts and sentences) and read the 157 numbers on the frames (144 by shape; the other 13 are the blotted or miswritten ones listed in the transcription headers). A second agent of ours, acting as reviewer, read all 157 numbers by shape before opening the folder (153 agree), read the decryptions as sentences and found both coherent with scattered holes (its own grade A, not recorded as a reading_review, which is the repository reviewer's to give); the four changes it asked for were made.",
       "result": "worked"
-    }
-  ],
-  "outcome": {
+    },
+    {"date": "2026-11-23", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 101 tokens, 68 types, en-modern order 4: reading -2.064 per letter; random keys -2.859 (z 6.4); key annealed onto shuffled ciphertext best -1.879 (mean -1.901, z -11.6); annealer on the real text -1.827. Verdict: underdetermined.", "result": "partial"}
+   ],
+  "outcome": {"validation": {"date": "2026-11-23", "model": "en-modern", "file": "validation.tsv", "tokens": 101, "types": 68, "tokens_per_type": 1.49, "score": -2.064, "nulls": {"random keys": {"n": 200, "mean": -2.859, "sd": 0.124, "max": -2.603, "z": 6.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.901, "sd": 0.014, "max": -1.879, "z": -11.6, "p": 1.0}}, "power": -1.827, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.064; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -1.827"}, 
     "class": "read in part",
     "key": "partial",
     "method": "key recovered based on adjacent plaintext",

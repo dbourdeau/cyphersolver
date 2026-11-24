@@ -15,7 +15,7 @@ One numeric nomenclator (groups 3-368) for all five pieces, 1691 to 1694, for le
 Two independent blind passes (P1 forward, P2 reverse order, AI agents without key) and a blind arbiter on the 12 disagreements/gutter places (blind/). 597 groups; 13 diff blocks between passes, settled by the arbiter; 4 groups lost in the binding.
 
 ## Result
-Read in part. 240 of 272 cipher words sure (0.882): f. 152 135/151, f. 155 26/30, f. 232 31/35, f. 239 13/18, f. 433 35/38 (reading.md). No period decipherment of these five pieces exists in the volume (inventory: "la partie chiffrée n'est pas déchiffrée").
+Read in part. 239 of 271 cipher words sure (0.882): f. 152 134/150, f. 155 26/30, f. 232 31/35, f. 239 13/18, f. 433 35/38 (reading.md; 240 of 272 and 135/151 until 24 Nov 2026, when the "a" that sentence 4 of f. 152 counted on the null 355 at 0154 R4 was taken out). No period decipherment of these five pieces exists in the volume (inventory: "la partie chiffrée n'est pas déchiffrée").
 
 ## Historical gist
 1691: Châteauneuf proposes to Louis XIV that the Venetians (at war with the Porte) lose the French protection under which some 200 of them still traded at Constantinople "by tolerance", and that their Levant trade pass instead on French ships with passports from La Haye (ambassador at Venice) or himself, with penalties for French merchants lending their names; the King answers that no consent may give up rights stipulated by the capitulations. 1692: Fabre is to keep Venetian ships out of Ottoman ports under any (French, English, Dutch) flag without Châteauneuf appearing to have consented; the Venetian siege of La Canée had stirred the Turks against Venice. 1694: Châteauneuf avoided pressing the Vizier while the enemies spread the rumour of an imminent French peace.
@@ -25,7 +25,6 @@ Read in part. 240 of 272 cipher words sure (0.882): f. 152 135/151, f. 155 26/30
 - Four groups lost in the binding (0233 L, 0243 L, 0439 L) - blocker: illegible; the gutters are cut in the reproduction, a flat re-shoot is needed
 - Validation of KEY_v2 - blocker: needs-physical-access; the 16 other glossed pieces of AE/B/I/381 (f. 131, 222, 261, 289, 317, 325, 330, 339, 398, 400, 409, 422, 425, 448, 470, 472) are not ordered, and f. 452 is spent; they would give a fresh held-out portion
 - 355 = null rather than "a" - blocker: open-codes; one occurrence in the glossed letter, no second glossed letter to test it on
-- Whether the reproduction may be analysed with an AI assistant - blocker: not-attempted; not raised with the Archives nationales (see Conditions of use of the images)
 
 ## Escalation
 - [x] siblings: the five pieces compared with each other; one nomenclator found for 1691 to 1694
@@ -38,7 +37,7 @@ Read in part. 240 of 272 cipher words sure (0.882): f. 152 135/151, f. 155 26/30
 ## Conditions of use of the images
 - Source: Archives nationales, AE/B/I/381. Brice Dudout ordered the reproduction on 2 Nov 2026 through the Archives nationales' online inventory service (reproduction no. 102 974 276), as an ordinary digital file, declaring private use. The invoice (RE-2026-0337, 30.20 EUR for AE/B/I/381 and AE/B/I/414) was paid by Brice Dudout on 17 Nov 2026, and the 51 JPEG files arrived on 20 Nov 2026 by a download link.
 - No written conditions of reuse came with the files or with the invoice e-mail, as far as our records show; we have not read the invoice PDF or the delivery message for terms. Whether reuse of the images is allowed has not been confirmed, so the images are not committed or distributed (the files give shelfmark and image numbers only).
-- Nobody has agreed to AI analysis: the question was not put to the Archives nationales. AI analysis was not raised with the archive. The pieces were transcribed and read with AI assistants on the strength of the private-use order alone.
+- Nobody has agreed to AI analysis: the question was not put to the Archives nationales. This is a question of the conditions of use, not an unread piece of the text, so it is no longer listed under Remaining gaps (24 Nov 2026). The pieces were transcribed and read with AI assistants on the strength of the private-use order alone.
 
 ## File map for the hashes
 `prereg/SHA256SUMS_prereg.txt` was written in the working folder, where the transcriptions sat in `transcr/`. In this

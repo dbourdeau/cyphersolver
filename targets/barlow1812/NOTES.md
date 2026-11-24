@@ -244,6 +244,18 @@ Images were read by AI agents (model ids in `profile.json`) in strips at full re
 transcriptions; the scripts and the full evidence set are in the contributor's project files and can be supplied.
 `decode.py` in this folder needs only the standard library.
 
+**Statistical validation, 24 Nov 2026 (at integration of PR #878; an AI agent for the maintainers, not a person).**
+`mk_validation.py` writes `validation.tsv` from `decryption_1812-09-25.txt` and `decryption_1812-10-25_A.txt`: 110 numbers,
+each with its `key.tsv` value; the 9 with only a proposal or no value are unread, struck-out numbers are left out, and
+copy B, which repeats copy A, is not added. `python docs/_validate.py barlow1812 --write` (model en-modern): 101 read
+tokens, 68 types, 251 letters; reading -2.064 per letter; random keys of the same structure -2.859 (best -2.603, z 6.4);
+a key refitted to the shuffled text -1.901 (best -1.879); the same annealer on the real text -1.827. Verdict:
+**underdetermined**. The reading is far better than a random key, but a key fitted freely to shuffled text scores
+better than the reading, so on 251 letters the letter model cannot tell this reading from an overfitted one. The
+test neither confirms nor contradicts the key; what supports it is the decipherments of the time it was rebuilt from
+(section 3) and the blind check of section 7. Recorded in `profile.json` (`outcome.validation` and a solution step; the
+script dated them 23 Nov by the machine's clock).
+
 ## Transcription doubts
 
 Every code number that is blotted, or on which one of the AI readings differed. "transcription" below means the
