@@ -517,6 +517,42 @@
    "result": "partial"
   },
   {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Held-out test of code_table.tsv on Adams's despatches of 1810 (Andrew Beling, with AI agents; beling1810/). Plan and pass mark hashed before the run (agreement >= 0.80 and >= best of 100 shuffled tables + 0.30). 22 coded passages of Nos. 21, 23, 24, 25, 27 and 28 (NARA M35 reel 2, 3,083 groups, our first transcriptions) aligned with align.py, unchanged, against their independent plaintexts (Ford 3:469; the period decipherments on frames 156-159, 169-172, 178-179, 184). Coverage 0.922, agreement 0.730, shuffled best 0.125 (median 0.077): MISS by the mark set, though far from chance; strict read words 1,186 of 2,331 (0.509). Blind second transcriptions by helper agents agree with the first at 0.716 (No. 24) and 0.751 (No. 29); No. 24 rescored post hoc on its second transcription: 0.814. No. 29 has no witness and is not scored. The table is not changed.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Second round of the 1810 held-out test, decided after the first missed (beling1810/round2/PLAN2.md, hashed 23:15 EST before scoring; same pass mark; No. 24's post hoc 0.814 not counted). Fresh blind transcriptions by helper agents from the M35 reel 2 frames only (two each of Nos. 23, 25, 27, 28; one more each of Nos. 24 and 29); only groups the two readings agree on scored. Reader agreement: No. 23 0.902, No. 24 0.950, No. 25 0.945, No. 27 0.768, No. 28 0.257 (frame 182 washed out), No. 29 0.927. Run once: 2,718 agreed valued groups, agreement 0.853, shuffled best 0.128 (median 0.075): PASS; strict read words 1,386 of 2,317 (0.598). Caveats: a second round after a miss; all readers the same model; the filter keeps the clearer groups. Frame 167R: the group before 'ultimately' is 500 or 510 on four new readings, not 570. The table is not changed.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "key matching"
+   ],
+   "what": "Corrections after a review of the 1810 package by a separate AI agent of ours (Claude Opus 5.5, 22-23 Nov 2026, not the builder) (wording only; no score rerun):\n- Cernovodeanu (Revue Roumaine d'Histoire 1998, p. 29) prints part of No. 25 (passage G); now cited where No. 25 was said not to be in print.\n- No. 21's two readings are not independent; the round-2 score without No. 21 is 0.854 on 2,686 groups.\n- The 167R note now says 'most likely our misreading', and that one crop reader names 570 as its main alternative.\n- The order of the second round is stated as resting on local file times.\n- The reviewer's post hoc figure is recorded as such: each fresh blind reading scored alone gives about 0.81.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Changes after the maintainers' review of the 1810 package (no score changed): rebased on main after the No. 85 work; the docs/_page_sources.json edit and the two frame 167R crops removed from the commits; the page leads with the registered miss (0.730) and the unfiltered 0.81 of each blind reading alone, then the 0.853 labelled as needing the agreement filter and a second round decided after the miss; the No. 29 decode and model reading taken out of NOTES, the page and the folder (no witness, not checked by a person); the reviewer named. heldout_1810.py rerun on both rounds: 0.730 on 3,083 groups and 0.853 on 2,718 agreed groups, as before.",
+   "result": "worked"
+  },
+  {
    "date": "2026-11-23",
    "kind": "verification",
    "technique": [

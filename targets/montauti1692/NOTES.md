@@ -290,6 +290,19 @@ Nothing was changed in the key, the group files or the readings; `key/key_entrie
 - Clear text of 1r lines 5-6 and 11-13, 1v lines 1 and 3 - blocker: illegible; needs a palaeographer
 - 35v line 0.635 signs 21-30 - blocker: illegible; the two passes and the image check leave both readings open
 - About 50 pages of bare System B in Codex 534 ff. 1-113 (listed in bare/bare_passages.md) - blocker: not-attempted; out of this package's scope, readable with key v3
+- Clear text around the runs of 25r, 26r, 28v, 56r-57r, 63r, 70v (transcribed 16 Nov 2026, most words doubtful) - blocker: illegible; needs a palaeographer before those entries can be read
+
+## Transcription doubts
+Clear words around the runs of 25r, 26r, 28v, 56r-57r, 63r and 70v (two AI passes of 16 Nov 2026, pass A not blind
+to pass B; `readings/clear_context_533.md`). Doubtful cipher signs are marked in `readings/runs_533.tsv` and are
+not repeated here. None of the doubts below is settled.
+- clear word before 25r a - read: dovuto(?) al by both passes, fondat[o](?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- clear words before 28v a - read: Particolari(?): V.S. by both passes, Per Napoli(?) V.S. in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open, colon or full stop unsure
+- clear word before 56r a - read: del giardino(?) (pass A) or Pagiardine(?) (pass B), Del pardi[n]e(?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- clear words before 63r a - read: Come nell'altro foglio(?) et by both passes, come voll[e] avviso(?) in runs_533.tsv; checked: image (two passes), decode not applicable (clear text); open
+- "a" before DUSSELDORF (57r) - read: a(?) by both passes, a single stroke that may be a cipher sign; checked: image (two passes), decode not applicable (outside the recorded run); open
+- "94" (26r line 7, between clear words) - read: 94 by both passes (pass B: "a 94 a[nni](?)"), written like cipher digits; `transcriptions/reconciled_533_v2.tsv` has no run on that line, so it may be an unrecorded run or a figure in the clear text; checked: image (two passes), decode (no run recorded, so nothing decoded); open
+- the other doubtful clear words - read: marked (?) in `readings/clear_context_533.md`, counted per entry in `readings/clear_context_533.tsv` (clear_doubtful: 19, 14, 15, 31, 5, 20); checked: image (two passes), decode not applicable (clear text); open, needs a palaeographer
 
 ## Escalation
 - [x] siblings: Codex 534 paged (ff. 120-586 surveyed; ff. 1-119 on contact sheets); Codex 531 and 536 sampled; the interlined 534 letters are the key source
@@ -324,3 +337,33 @@ is committed. The full images stay with Penn; folio numbers and manifests are in
 Andrew Beling, with AI agents (Claude): the key rebuilt from the Codex 534 interlines, the tests, the two transcriptions
 of Codex 533, the reading. The first letter was checked by a second AI agent of ours that read it blind from the images
 first. The recipient's interlinear decipherments in Codex 534 (Montauti or his secretary, 1690) supply the key.
+
+## Clear sentences around six runs (16 Nov 2026, Andrew Beling, with AI agents)
+
+The review of pull request #665 listed ff. 25r, 26r, 28v, 56r-57r, 63r and 70v as "decoded, not read" because the
+clear text around their runs was not transcribed. That text is now transcribed, sentence by sentence, in
+`readings/clear_context_533.md` (counts in `readings/clear_context_533.tsv`; the blind pass as written in
+`readings/verify/clear_passB_blind_2026-11-16.md`). No key value and no cipher word was changed.
+
+- **Two passes.** Pass B by a separate AI agent from image crops only, blind to every transcription and to the
+  decoded words. Pass A by the packaging agent, made after pass B and knowing the decoded words, so the agreement
+  figures are an upper bound. A clear word is counted sure only when both read it the same and neither marks it.
+- **Result: all six stay "decoded, not read".** Clear words read the same by both passes, and sure: 25r 37 and 20 of
+  39; 26r 25 and 17 of 31; 28v 13 and 4 of 19; 56r-57r 37 and 14 of 45; 63r 10 and 6 of 11; 70v 20 and 7 of 27.
+  Sure cipher words are as before (0 of 4, 4 of 18, 1 of 5, 3 of 3, 3 of 6, 0 of 1). No sentence containing a run
+  builds with only scattered holes.
+- **Two clauses read as clauses:** 26r "Vorrei che V.S. con una Curiosità(?) mi mandassi(?) un(?) RELATION[E] DEL
+  [... 8]" (I would like V.S. ... to send me a report of ...), and 57r "che V.S. haveva(?) scritto(?) per [...]
+  viaggio(?) a(?) DUSSELDORF" (that V.S. had written for [...] journey to Düsseldorf), whose sentence begins on 56v
+  in words neither pass could read. On 56r the clause around MIA FIGLIA does not read. So we do not dispute
+  "decoded, not read" for 56r-57r.
+- **Corrections to the clear words recorded in `readings/runs_533.tsv`** (left unchanged there): 63r a, both passes
+  read "Come nell'altro foglio(?) et", not "come voll[e] avviso(?)"; 28v a, "Particolari(?): V.S.", not "Per
+  Napoli(?) V.S."; 25r a, "dovuto(?) al", not "fondat[o](?)"; 56r a, "del giardino(?) a(?)" (pass A) or
+  "Pagiardine(?) a(?)" (pass B), not "Del pardi[n]e(?)". The "a" of "viaggio a Dusseldorf" (57r) is a single stroke
+  that may be a cipher sign.
+- **Not settled:** pass B sees two digit-like signs "94" between plain words on 26r line 7, where
+  `transcriptions/reconciled_533_v2.tsv` has no run; not checked further.
+- **Image used:** the lower 45% of f. 56v, fetched once from Penn's IIIF server at full size (16 Nov 2026, HTTP 200);
+  all other leaves from images already held. No image is committed.
+- All readers are AI agents; no person has checked. The clear text needs a palaeographer.

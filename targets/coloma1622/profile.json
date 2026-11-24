@@ -302,13 +302,66 @@
    "file": "validation.txt",
    "notes": "Contributor's pre-registered held-out tests (not docs/_validate.py), characters against contemporary clears, thresholds >= 0.85 and >= +0.30: C02 0.761 vs 0.437 (partial), H3 0.690 vs 0.419 (failed), H5 0.814 vs 0.466 (partial); C01 (M5, no clear) 0.333 vs 0.169 (failed); H4 burned without measurement (show-through). MSS/18428 letter (PR #560): key CLE_M02 (C04 extended from the clears of MSS/18428), lexical measurements, contributor's protocol: M01 on part B -2.381 against -2.35, gap 0.499 against 0.60: FAILED; M02 on part A -2.383 against -2.25, gap 1.029 against 0.30: PARTIAL. Not validated."
   },
-  "human_check": {
-   "date": "2026-11-11",
-   "by": "Brice Dudout",
-   "passage": "res227-122, the boxed sign of 4 conjectures and 2 controls on sheet FS1 (f.1v ll. 5, 10, 14, 15, 18) and of 13 points and 2 controls on sheet FL2-C; earlier the 16 questions of sheet M16 (5 Nov 2026)",
-   "result": "corrected",
-   "note": "Blind choice of the sign shape on the BNE images among reference shapes cut from the same letter, no value or gloss shown; the sheets were prepared by AI agents, the choices are his alone. FS1: controls 2/2, 4 of 4 shapes confirmed, 4 tokens of the transcription changed (hízo, deseaba, bastaría, este); declared fault: the expected shape stood third on all six questions, so the controls cannot exclude an answer by position. FL2-C: controls 2/2, 3 points for the proposals, 4 against, 5 unknown marked signs. Sheets, rules and answers are not in the repository; not re-checked on the images by the project."
-  },
+  "sign_check": [
+   {
+    "date": "2026-11-05",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 16,
+    "controls": 0,
+    "controls_passed": 0,
+    "rule": "NOTES, Read in part (5 Nov 2026): sheet M16, pre-registered and hashed by the AI agents before it was built (BLIND-REREADING.md, PR #279)",
+    "sheet_faults": "none found",
+    "note": "Sheet M16 (5 Nov 2026, res227-122): 16 questions, shapes only. It confirmed the transcribed token in eight places, moved \"puede\" and \"cosa\" to probable, and showed three marked signs the pre-registration did not foresee (4+, q with a stroke below, x with two dots below; NOTES, Declared deviations 2). It had no control, so it does not meet the level. The sheet, its rule and the answers are not in the repository. The checker is the contributor of the reading. Recorded until 19 Nov 2026 as outcome.human_check; moved here because AI agents built and scored the sheet (a human_check is a check without AI help)."
+   },
+   {
+    "date": "2026-11-11",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 13,
+    "controls": 2,
+    "controls_passed": 2,
+    "unresolved": 5,
+    "rule": "BLIND-REREADING.md, section 3 (sheet FL2-C, 11 Nov 2026); integration rule 6adc16e1... written after the answers were received, before the shape-to-reading map was applied to them",
+    "sheet_faults": "none found",
+    "note": "Sheet FL2-C (11 Nov 2026): 13 points on the signs that the code-value proposals depended on, plus 2 controls (faz, xa), both passed. 3 answers for the proposals, 4 against, 5 \"none\" with a remark (new marked signs, not in the key). The checker is the contributor of the reading. Recorded until 19 Nov 2026 as outcome.human_check; moved here because AI agents built and scored the sheet (a human_check is a check without AI help)."
+   },
+   {
+    "date": "2026-11-11",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring"
+    ],
+    "signs_checked": 4,
+    "controls": 2,
+    "controls_passed": 2,
+    "corrected": 4,
+    "unresolved": 0,
+    "not_counted": 0,
+    "rule": "BLIND-REREADING.md, section 4 (sheet FS1, 11 Nov 2026): rule REGLE-INTEGRATION hashed before the sheet was built",
+    "rule_hash": "29231542e4f12607fd45f91b342c8fc18fc263418ac13da4763deccfd459e75b",
+    "sheet_faults": "Position bias: after the shuffle the six expected shapes (4 targets and 2 controls) all stood in position \"shape 3\", and all six answers are \"shape 3\", so the controls cannot exclude an answer by position (NOTES, Declared deviations 6).",
+    "note": "Sheet FS1 (11 Nov 2026): four conjectures by sense on restored words (hízo, deseaba, bastaría, este); all four shapes confirmed and the four transcription tokens changed; each word at best probable. Fewer than 8 signs: below the level. Answers SHA-256 391e2f24fb0f23e5a493a9e43a3c56834bdef159e95ae567ff7e149ad2d2483c; the sheet, the rule and the answers are not in the repository. The checker is the contributor of the reading. Recorded until 19 Nov 2026 as outcome.human_check; moved here because AI agents built and scored the sheet (a human_check is a check without AI help)."
+   }
+  ],
   "provenance": "contributed",
   "credits": [
    {
