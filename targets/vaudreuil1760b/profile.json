@@ -1,12 +1,12 @@
 {
  "schema_version": 1,
  "target": "vaudreuil1760b",
- "title": "Vaudreuil to Berryer, Montréal, 29 Aug 1760 (ANOM COL F3 16 ff.115-119): the cipher letter announcing the loss of Canada, with its period decipherment, and the 1757 table checked on it",
+ "title": "Vaudreuil to Berryer, Montréal, 29 Aug 1760 (ANOM COL F3 16 ff.115r-v, the first two pages of ff.115-119): the cipher letter announcing the loss of Canada, with its period decipherment, and the 1757 table checked on it",
  "documents": [
   {
    "id": "A",
    "read": "read",
-   "shelfmark": "ANOM COL F3 16 (Moreau de Saint-Méry), ff.115-119 (IREL images FRANOM82_247MIOM013_F3_016_187-195, microfilm 247 MIOM 13)",
+   "shelfmark": "ANOM COL F3 16 (Moreau de Saint-Méry), ff.115r-v (IREL images FRANOM82_247MIOM013_F3_016_187-188, microfilm 247 MIOM 13); the letter continues on ff.116-119 (images 189-195), not in this entry",
    "date": "29 Aug 1760",
    "year": 1760,
    "country": "France",
@@ -16,14 +16,14 @@
     "to": "Versailles"
    },
    "language": "French",
-   "pages": 9,
+   "pages": 2,
    "cleartext_in_document": "interspersed",
    "plaintext": {
     "location": [
      "interlinear",
      "printed edition"
     ],
-    "source": "Period decipherment above every line; Parkman, Montcalm and Wolfe II (1884) pp.380-381 translates passages (English); Richard 1899 calendar summarises it (lead 1208).",
+    "source": "Period decipherment above every line (gloss_ff115.txt); Parkman, Montcalm and Wolfe II (1884) pp.380-381 translates passages of the letter (English); Richard 1899 calendar summarises it (lead 1208).",
     "partial": false
    },
    "length": {
@@ -36,7 +36,7 @@
     "by": "llm from images",
     "source": "ANOM IREL full-resolution microfilm images",
     "image_quality": "good",
-    "notes": "Only ff.115r-v (the measured portion, 561 groups, about a quarter of the letter) transcribed; ff.116-119 read from the gloss only."
+    "notes": "ff.115r-v only (561 groups and the gloss). ff.116-119 are not transcribed and are outside this entry."
    }
   }
  ],
@@ -115,7 +115,7 @@
     "statistical test",
     "plaintext matching"
    ],
-   "what": "Frozen 1757 Vaudreuil table (our KEY_v2.tsv, SHA-256 7b5aecb2..., the key of targets/vaudreuil1759a-c) on ff.115r-v vs the gloss: 0.9739 characters vs best of 200 shuffled tables 0.2221 (mean 0.142); criterion >= 0.85 and >= best + 0.30.",
+   "what": "Frozen 1757 Vaudreuil table (targets/vaudreuil1759a/dudout/key.tsv, the key of targets/vaudreuil1759a-c; same values as our local KEY_v2.tsv, SHA-256 7b5aecb2..., which differs only by its English header) on ff.115r-v vs the gloss: 0.9739 characters vs best of 200 shuffled tables 0.2221 (mean 0.142); criterion >= 0.85 and >= best + 0.30.",
    "result": "worked"
   }
  ],
@@ -128,8 +128,8 @@
    "transcription"
   ],
   "fraction_read": 1.0,
-  "fraction_read_method": "estimated",
-  "fraction_read_source": "Gloss legible throughout on the images; on ff.115r-v 294/318 gloss words (92.5%) also supported letter-for-letter by the table.",
+  "fraction_read_method": "measured",
+  "fraction_read_source": "gloss_ff115.txt: 318/318 gloss words of ff.115r-v legible; 294/318 (92.5%) also supported letter for letter by the table. ff.116-119 not counted.",
   "first_break": false,
   "verification": [
    "contemporary decipherment",
@@ -144,7 +144,7 @@
    {
     "who": "contemporary",
     "role": "prior solution",
-    "note": "interlinear period decipherment on F3 16 ff.115-119",
+    "note": "interlinear period decipherment on F3 16 ff.115r-v (it continues on ff.116-119)",
     "date": "1760-08-29"
    },
    {

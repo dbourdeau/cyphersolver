@@ -1,6 +1,8 @@
 # Bouillé to the minister, Martinique, 29 Mar 1780, no. 398 (ANOM COL C8 A 79 ff.57-59v)
 
-Status: draft for Daniel (nothing pushed). Brice Dudout with AI agents (Claude Opus 5.5), 23 Nov 2026. Images:
+Status: read (from the modern archivist's translation, images 0085 and 0088; K8 checked on it).
+
+Brice Dudout with AI agents (Claude Opus 5.5), 23 Nov 2026. Images:
 Archives nationales d'outre-mer (France), COL C8 A 79, IREL FRANOM23_C8A_079_0079-0087 (free reuse, ANOM decision
 2018-1, with credit); not in this folder. Same code as targets/bouille1778, martinique1778, grassebouille1779
 (Bouillé's "chiffre du 25 avril 1778"); one key, one entry: Daniel may fold this into grassebouille1779.
@@ -13,6 +15,12 @@ image 0106) used in grassebouille1779. Not in the catalogue or targets (checked 
 ## Test (protocol hashed before any computation: PREREG_fr.md, SHA-256 bfff864f...)
 - Key: K8 of targets/grassebouille1779 (`key.tsv`, SHA-256 6dbabfcd...), unchanged; nulls 163, 586, 257 empty.
 - Portion: both passages, 363 groups, vs the modern translation; both hashed before the run.
+- Files: the reference text is `validation/reference.txt` (our transcription of the translation sheet, image 0085;
+  "Archives nationales d'outre-mer (France), COL C8 A 79, Traduction des passages chiffrés", free reuse under ANOM
+  decision 2018-1, which covers the documents of the series, this sheet included). `validation/SHA256.txt` is the
+  hash list frozen before the run, with our working names: `chiffre.txt` = `cipher.txt`, `mesure.py` = `measure.py`,
+  `../cle/key_K8_grassebouille1779.tsv` = `targets/grassebouille1779/key.tsv`; all four hashes match the files in the
+  repository. Rerun: `python3 measure.py ../grassebouille1779/key.tsv cipher.txt validation/reference.txt`.
 - **Result: 0.9483 characters; best of 200 shuffled keys 0.2550 (mean 0.157) → pass.** Words 206/232 (88.8%).
 - K8 values the run suggests (not applied): 137 (in "rentrer"), 111 (objecté), 835 (eau), 92 (besoins), 702
   (craignent), 425 (sorte), 591 (différence), 571 (désire), 728 (glorieuses), 296 (aucune).
