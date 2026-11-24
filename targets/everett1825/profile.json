@@ -99,7 +99,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-27",
-  "last_date": "2026-10-27"
+  "last_date": "2026-11-22"
  },
  "solution": [
   {
@@ -171,6 +171,12 @@
    "kind": "verification",
    "what": "Reading review of the nine outcome.texts entries: WAINUT's three passages (everett1825_reading.md) and Brice Dudout's eight pages (dudout/texts/*_reading.md) read as sentences against their group-by-group decryptions; all coherent with scattered marked holes, grade A recorded on each. Word-level read_share measured on the deciphered passages of the eight pages (unresolved groups as holes): 1.0, 1.0, 0.969, 0.969, 0.988, 0.958, 0.991, 1.0; counting words given whole from sense as holes too, pp. 1, 2, 3 and 6 fall to 0.949, 0.917, 0.948, 0.944. The two readings of pp. 17-18 were not reconciled (WAINUT [?cause] / [125] against Dudout {measure} / {contrary}). Frames not re-opened.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "what": "Andrew Beling contribution (beling/): the State Department's period decipherment of all six coded parts found on M31 roll 27 frames 0110-0111 and transcribed; it settles 70 necessary (\"ity\" above) and 125 contrary. Three transcriptions compared group by group (with Dudout's files 1,113 in both, 1,086 agree, 27 differ; WAINUT's A 74/74, B-C 278/281); a code line missing from dudout/texts/p18 found. The 27 differing groups read blind by an AI model reader with no candidates given; the 11 it was unsure of went to a second blind reader that saw the whole line (crops, positions and readings in beling/film_check): Dudout's digit at 18, Beling's at 8, 1 undecided; ten control readings correct. Of the 8, 628 and 1564 rest on one model reader and 845 and 880 are ambiguous in the first digit (345 or 845, 380 or 880). The transcription of the period decipherment has one reader. No reading changed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -231,18 +237,24 @@
     "role": "solution",
     "date": "2026-10-27",
     "note": "the eight enciphered pages of the Notes (pp. 1-6 on images 0112-0115, pp. 17-18): 1111 of 1127 groups read with the jqa table and a justified overlay (dudout/)"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "date": "2026-11-22",
+    "note": "period decipherment of the six coded parts found (M31 roll 27 frames 0110-0111) and transcribed; group-by-group comparison of three transcriptions with a blind film check of the 27 differences (beling/)"
    }
   ],
   "gaps": [
    {
     "item": "groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words",
     "blocker": "open-codes",
-    "detail": "no value in the table; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done)"
+    "detail": "no value in the table; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done). Values on the State Department code sheet (../morris1813/beling/key/): 125 contrary, 126 convey, 211 pret, 258 spi, 850 dispose, 917 os, 1354 br, 1512 acy; 125 contrary also in the period decipherment (22 Nov 2026); not applied to the readings"
    },
    {
     "item": "coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups)",
     "blocker": "not-attempted",
-    "detail": "found on the review check of frames 0112-0118: pp. 1-3 carry short coded runs, pp. 4-5 are wholly in code and p. 6 opens with nine coded lines; not transcribed. A pencil 'Decyphered' at the foot of p. 4 suggests a contemporary decipherment, not found."
+    "detail": "found on the review check of frames 0112-0118: pp. 1-3 carry short coded runs, pp. 4-5 are wholly in code and p. 6 opens with nine coded lines; transcribed and read by Brice Dudout (dudout/) and transcribed again in beling/ (22 Nov 2026). The pencil 'Decyphered' at the foot of p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026)."
    }
   ],
   "texts": [

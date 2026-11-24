@@ -453,12 +453,29 @@
    "total": 127,
    "tokens_open": 116
   },
-  "human_check": {
-   "date": "2026-11-11",
-   "by": "Brice Dudout",
-   "passage": "letter of 20 Nov. 1715: nine doubtful digits on views 0380-0387 (blind plate W1 of digit shapes, two controls)",
-   "result": "corrected",
-   "note": "shapes of digits only, not words or key values: three digits corrected (28 to 25 twice, 16/26 to 66), six first readings confirmed, both controls passed; by the contributor's record. No person has read a passage of the readings against the scans."
-  }
+  "sign_check": [
+   {
+    "date": "2026-11-11",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring"
+    ],
+    "signs_checked": 9,
+    "controls": 2,
+    "controls_passed": 2,
+    "as_transcribed": 6,
+    "corrected": 3,
+    "unresolved": 0,
+    "not_counted": 0,
+    "rule": "NOTES, Sign check W1 (letter of 20 November 1715); sign_check/sheet-W1-rule.md, written and hashed 11 Nov 2026 before the sheet was built",
+    "rule_hash": "463ae30674278151f9b0acee6fb8fb5fc541545c21862027ad12f3f7dcf16402",
+    "sheet_faults": "one frame re-set before any answer was exported; no thumbnail found faulty",
+    "note": "Sheet W1, letter of 20 November 1715 only. Digits whose answer changes the class of a word. The checker is the contributor of the reading. Answers: sign_check/sheet-W1-answers.json (exported 2026-11-11T21:50:19Z); results: sign_check/sheet-W1-results.tsv. Three digits corrected (embrasser, mal, beaucoup now sure). Recorded until 19 Nov 2026 as outcome.human_check; moved here because an AI model built and scored the sheet."
+   }
+  ]
  }
 }

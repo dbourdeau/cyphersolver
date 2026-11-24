@@ -125,3 +125,11 @@ needed.
 
 `ciphertext.txt` (Brackx's transcription), `cribs.tsv` (unverified hypotheses), `solver/` (scripts; the Turner text, model
 tables and logs are in the untracked local `.work/delacroix1797/`), `img/` (NARA frames 0243-0245, not to be committed).
+
+## Order of events in `beling2026/` (Andrew Beling, with AI agents)
+
+The claim that the test plan came before the draft was read rests on local file times and SHA-256 sums only (no
+outside timestamp). The draft (CP États-Unis vol. 48, f. 41r) was first opened on 21 Nov 2026 at 00:52:04 EST, by the
+AI agent that found it (its request log); two blind AI readers transcribed it 01:07-01:13 EST; the plan was written at
+01:31 EST and hashed at 01:32 EST by an agent that, by its own record, had not seen the draft's wording. See
+`beling2026/README.md`, "The test".

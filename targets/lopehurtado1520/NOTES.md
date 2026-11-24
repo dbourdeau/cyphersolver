@@ -18,13 +18,15 @@ Five days after Tordesillas was retaken from the Comuneros, Lope Hurtado de Mend
 homophonic letter substitution (≈ 35 signs: barred o = t, cross = s, 9 = a, ſ = g, ⊤ = z…), words separated, a few dotted sigla for persons (·fre·, ·lis·, ·los·, ·lus·, ·ym·); the last words of the letter in mixed plain text
 
 An archivist's slip in the bundle says the key is in a letter of 23 September; it is not there. The key was
-rebuilt from the letter itself (`key_K4.tsv`). Validation: lines 1v 11-17 were transcribed and frozen before any
-value was fixed and used for none; K4 reads them at 0.827 of words, against shuffled-key controls median 0.288,
-99th percentile 0.519, max 0.596.
+rebuilt from the letter itself (`key_K4.tsv`). Validation: lines 1v 11-17 were transcribed and frozen (SHA-256
+afaf04bd...) before any decoding. The one test on them was of key **K2** (27 Oct 2026): 0.827 of words against
+shuffled-key controls 99th percentile 0.519, a pass by +0.008 over the bar (>= 0.70 and >= p99 + 0.30 = 0.819). The
+passage was then read and reused for K3 and K4, so it is spent, and the key in this folder (K4) was not measured on a
+fresh passage. Corrected on 19 Nov 2026; see Key tests and sign checks.
 
 ## Reading
 
-First published decipherment, to our knowledge. About 920 cipher words (1r: 44 lines; 1v: 42 lines, the last mixed with plain text). Read: ≈ 97.7% of the words (≈ 95.4% certain, ≈ 2.3% probable readings {x}); ≈ 2.3% remain unresolved ‹…›, marked in the text. Twelve doubtful signs were decided by a targeted visual re-reading by Brice Dudout (a sheet of sign shapes, with no interpretation offered). The dotted sigla (·fre·, ·lis·, ·los·, ·lus·, ·ym·) are not resolved. Measured by words (the cipher separates words), each ‹…› passage counted as two words.
+First published decipherment, to our knowledge. About 920 cipher words (1r: 44 lines; 1v: 42 lines, the last mixed with plain text). Read: ≈ 97.7% of the words (≈ 95.4% certain, ≈ 2.3% probable readings {x}); ≈ 2.3% remain unresolved ‹…›, marked in the text. Twelve doubtful signs were decided by a targeted visual re-reading by Brice Dudout (a sheet of sign shapes, with no interpretation offered; sheet C06, an AI-built sheet with no controls, now recorded in `outcome.sign_check`). The dotted sigla (·fre·, ·lis·, ·los·, ·lus·, ·ym·) are not resolved. Measured by words (the cipher separates words), each ‹…› passage counted as two words.
 
 Files: `transcription.txt`, `decryption.txt` (each line with its reading), `reading.md` (Spanish),
 `translation.md` (English). Doubtful signs were settled by a targeted visual review by Brice Dudout (12 signs,
@@ -43,7 +45,7 @@ Files: `transcription.txt`, `decryption.txt` (each line with its reading), `read
 
 ## Method and prior work
 
-Method: (1) transcription of the signs from the PARES images in a working notation; (2) the cipher cannot be read with the key of the letter of 23 September 1520 (PTR,LEG,2,36,2, suggested by J. Paz’s slip): the values are incompatible; (3) the repeated words “vuestra magestad” break a homophonic letter substitution; key K1 built on 1r ll. 1–16 only and frozen (SHA-256); (4) held-out validation: 1v ll. 1–11, transcribed after the freeze, give 0.747 of words found in a Spanish lexicon against 0.326 at the 99th percentile of 200 control keys (permuted values); a second portion, 1v ll. 11–17, transcribed and frozen before any decoding, gives 0.827 with key K2 (controls p99 0.519) and 0.827 with the final key K4 (p99 0.519; K4 = K3 less one value, ſ = s, dropped after Brice Dudout’s re-reading); (5) full reading, word by word, with near-identical signs decided against a lexicon (Quijote, Danvila). Rates: see “State of the reading”.
+Method: (1) transcription of the signs from the PARES images in a working notation; (2) the cipher cannot be read with the key of the letter of 23 September 1520 (PTR,LEG,2,36,2, suggested by J. Paz’s slip): the values are incompatible; (3) the repeated words “vuestra magestad” break a homophonic letter substitution; key K1 built on 1r ll. 1–16 only and frozen (SHA-256); (4) held-out validation: 1v ll. 1–11, transcribed after the freeze, give 0.747 of words found in a Spanish lexicon against 0.326 at the 99th percentile of 200 control keys (permuted values); a second portion, 1v ll. 11–17, transcribed and frozen before any decoding, gives 0.827 with key K2 (controls p99 0.519); that is the only test on it. The same passage was re-scored afterwards with K3 and with the final key K4 (0.827 both; K4 = K3 less one value, S = s, dropped after Brice Dudout’s re-reading), which is not a fresh test (see Key tests and sign checks); (5) full reading, word by word, with near-identical signs decided against a lexicon (Quijote, Danvila). Rates: see “State of the reading”.
 
 Prior work, checked on 27 October 2026. Daniel Bourdeau’s catalogue counts the letter among the unsolved items, and his repository holds no reading of the 1520 letters (only 1522–1523). Danvila prints the letter of 23 September (deciphered) and the plain-text letter of 10 December, not this one. Searches in PARES and on the web find nothing. To our knowledge, this is the first published reading.
 
@@ -103,3 +105,55 @@ Placement of the marks (same day): the reading is the contributor's (Brice Dudou
 ## Remaining gaps
 
 - About 21 unresolved words (marked ‹…›), one in r26 described in the notes.
+
+## Key tests and sign checks, reconciled (19 Nov 2026)
+
+This section replaces two statements above that disagreed: that K4 was tested on lines 1v 11-17 "used for no value", and
+the 28 Oct `human_check`. Figures are from the contributor's files.
+
+**Key history.** Each key was frozen by SHA-256; the bar was fixed before the first test (lexicon share >= 0.70 and >= the
+99th percentile of 200 permuted-value keys + 0.30).
+
+| key | what it is | measured on | result |
+|---|---|---|---|
+| K1 (b3bd1693...) | built on 1r ll. 1-16 | 1v ll. 1-11, transcribed after the freeze (95 words) | 0.747 against p99 0.326: pass. These lines were then read. |
+| K2 (4226c152...) | K1 + shapes told apart on 1r ll. 1-31 only | 1v ll. 11-17, frozen before any decoding (afaf04bd..., 52 words) | **0.827 against p99 0.519 + 0.30 = 0.819: pass by +0.008.** The only test on this passage. Line 11 is also the last line of K1's test portion. The transcriber knew K1 (not blind). |
+| K3 (2104bee6...) | K2 + F = h, ȸ = p (from 1v), X = x, S = s | the same passage, re-scored | 0.827. Not a fresh test: by then the passage had been read with the rest of 1v, and whether any of the four values was suggested by it is not recorded. |
+| K4 (2d0e0aac..., `key_K4.tsv`) | K3 less S = s, after sheet C06 (q12, "holgado") | the same passage, re-scored | 0.827. Not a fresh test. **The key in this folder was not measured on a fresh passage.** |
+
+A later local key K5 (K4 + one new sign, value x, provisional, from sheet L) is not in this folder and was not measured on a
+fresh passage either. A key test on lines not yet read is still to be done.
+
+**Sign checks** (`outcome.sign_check`; files in `sign_check/`). Level sought: "AI decipherment, human-checked on a sample of
+signs". It checks how signs are written, not the key or the reading, and it changes neither the class nor the read share. In
+both sheets the checker is Brice Dudout, the contributor of this reading (a project member, not an independent reader): one
+boxed sign per question, shapes cut from sure words of the same letter, plus "none / other shape" (and, on sheet L,
+"illegible" and "not a sign"); no value, gloss or word shown. An AI model (Claude Opus 5.5) chose the signs, cut the
+thumbnails, built the sheets, scored the answers and interpreted the free-text remarks. The answer keys stay private; their
+content for each question is in the results tables. No image or thumbnail is committed.
+
+- **Sheet C06, 27-28 Oct 2026** (`sign_check/sheet-C06-answers.json`, exported 2026-10-27T22:55:06Z, SHA-256
+  599f92a43fc0b6d0fb4e493ec48bc1228fedb61eddd0008a79f02a632486d50e; `sign_check/sheet-C06-results.tsv`). 12 doubtful signs in the unresolved words
+  of r26, v08, v09, v18, v31, v38 and in "cardenal" (v27), "o?gado" (r38). The questions were chosen when the sheet was
+  built; no rule was written apart. **It had no control, so it does not meet the level.** Until 19 Nov 2026 the profile
+  recorded it as `outcome.human_check` (28 Oct, "12 doubtful signs"); it was moved to `sign_check` because an AI model built
+  and scored it. Its answers settled holgado, cardenal, necesidad, oficio (2nd sign only), era and four signs of r26, v31,
+  v38; q01 (r26) stays unresolved. Its q12 answer led to K4.
+- **Sheet L, 18 Nov 2026** (`sign_check/sheet-L-answers.json`, exported 2026-11-18T11:45:32Z, SHA-256
+  9df2a04b772ec245fc219bf9d870572d244236797898235c2134d7bb9ee3ce63; `sign_check/sheet-L-results.tsv`). Rule, fixed on 18 Nov 2026 before the answers,
+  written in French in our files and **not hashed** (given here in English): (1) the 4 signs that the decrypt audit found
+  with no row in the key (#, z, ı, '), one case each; (2) for each pattern repeated in at least 2 unmarked words, the
+  clearest case (O / w+t: cosa; Z / looped n: señores, menester; 7 / barred 7: como, voto; q: dixiere; Z / d: tiene;
+  U / -o: obispado); (3) two controls with a known answer in sure words of 1r, on the same shape families (O of "junta",
+  Z of "conde"); (4) nothing that C06 had settled; a question on ƀ / ȸ (v16) was dropped because its example thumbnails
+  could not be told apart. Controls 2 of 2. 12 target signs: 8 corrected (tiene, cosa, voto, como, pesado z = Z = d,
+  menester 1st sign, the ' of r12 is part of a q, the ı of r32 is a cross t), 1 as transcribed (# is a sign of its own,
+  distinct from F: the row "#<TAB>u" of `key_K4.tsv` is right, but a reader that skips lines starting with # loses it), 3
+  unresolved (señores, obispado, and the 3rd sign of dixiere, a shape of its own described as at C06 q01; provisional value
+  x, not added to `key_K4.tsv`). No answer contradicts a value of K4.
+- **Not yet done.** What an answer contradicts is to be recoded or marked in the reading first. The corrections of both
+  sheets (17 signs) are applied in our local copy only; `transcription.txt`, `decryption.txt`, `reading.md` and
+  `reading_marked.md` here are unchanged.
+- **Limits.** One checker, inside the project. Sheet L's two controls show little on their own; sheet C06 has none. The
+  signs were chosen because they were doubtful: a diagnostic, not a sample of the text. No person has audited the model's
+  part. The level, if shown, says nothing about the key; the key's state is the table above.
