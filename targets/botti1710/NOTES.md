@@ -41,14 +41,15 @@ Status: in progress. This folder is a contribution from outside (prabal-rje), se
 
 ## The frozen read
 
-- The read as it stands in my repository, https://github.com/prabal-rje/branicki-1757/tree/main/botti-1710, from its commits of 19 November 2026 (09:05 and 09:11, UTC−5).
+- The frozen read of the initial 143 pages stands in my repository, https://github.com/prabal-rje/branicki-1757/tree/main/botti-1710, from its commits of 19 November 2026 (09:05 and 09:11, UTC-5).
+- Four previously withheld dotted pages (R8666 T003, R8674 T001, R8677 T001, and R8710 T004) were decoded on 22 November 2026 (`branicki-1757` commit `681ed424180eb3690b2fd33928fce4de9ace553d`, 2026-11-22 21:34:50 UTC-5) and are outside the 19 November frozen read. R8666 and R8674 carry no clerk's decipherment; R8677 and R8710 carry a clerk's decipherment that had already been opened for grading the 29 glossed letters on 16 to 19 November, so those two pages are not claimed as blind. The decode of all four pages here is the unedited mechanical output of the unchanged 16 November ciphertext-only key (`scripts/decode_four_pages.py`), showing all 14 clerk-derived values as `·`.
 - The key was fixed on 16 November 2026 before any clear row of the clerk was opened. `key-and-read/README.md` gives the order of events.
 - This folder adds no hash table and no other record of provenance.
 
 ## The decode
 
 - Each record page gives the decode row by row, and names the cipher row of each line.
-- 35,235 code tokens and decode units on 143 pages: 26,044 code tokens of the letters with dots and 9,191 decode units of the letters without dots. 34,561 show a value.
+- 35,757 code tokens and decode units on 147 pages: 26,566 code tokens of the letters with dots (including 522 tokens across the four pages added on 22 November 2026) and 9,191 decode units of the letters without dots. 35,062 show a value.
 - No document builds sentences. By the read bar, each of the 51 documents is "decoded, not read" in `profile.json`.
 
 ## Why no word count
@@ -74,7 +75,7 @@ So each record page counts code tokens, open codes and items that are not codes,
 - Code 17 (255 tokens): r or q - blocker: open-codes; the clerk writes r 66 times and q 39 times at its places.
 - Code 17 before code 10 (`17.10.`): 74 places in the rows of the letters with dots where both signs are sure, and 26 more where a sign is doubtful (100 in all, by the leading reading of each doubtful sign). At one more place (R8695 T003 C13), a sign marked `[?]` follows 10. At the 72 sure places on pages decoded here, the decode gives 52 groups, most often raesto (8), raale (5), raesta (4) and rael (3); with 17 = q and 10 = u, these four read questo, quale, questa and quel. Some groups read with r, for example fratello, tragedia and ringrazio - blocker: open-codes; the key keeps 17 as r and 10 as a.
 - 90 rare codes with no value (191 tokens in the letters with dots) - blocker: no-key-material; the Gualterio cipher tables (Add MS 20244) may give them; not opened.
-- Five pages not shown (R8662 T003, R8666 T003, R8674 T001, R8677 T001, R8710 T004) - blocker: unknown; their decode was made, and it is not sure.
+- One page not shown (R8662 T003, right margin clipped) - blocker: unknown; its decode was made, and it is not sure.
 - R8618 T002 - blocker: unknown; several tries on 16 to 18 November did not decode it; one code stands between spaces, and the word breaks are not known.
 - R8468 T003 and T007 - blocker: illegible; T003 is a clipped fragment; on T007 the values of five sign labels are not sure.
 - 45 pages under 100 digits or with no cipher digit - blocker: too-short.
@@ -102,6 +103,7 @@ So each record page counts code tokens, open codes and items that are not codes,
 | `key-and-read/` | `key.tsv`, `key-page-signs.tsv` and the order of events of the frozen read |
 | `TRANSCRIPTION.md` | the transcription: what it is, its marks and its counts |
 | `transcription/` | the cipher rows: one file for each page with cipher digits |
+| `scripts/decode_four_pages.py` | reproducible unedited mechanical decode of R8666 T003, R8674 T001, R8677 T001, and R8710 T004 from `key-and-read/key.tsv` |
 
 The record pages, the key and the summaries come from my repository, https://github.com/prabal-rje/branicki-1757/tree/main/botti-1710. The changes for this folder:
 
