@@ -56,7 +56,7 @@ words not counted as read):
 
 | Piece | words | certain | probable | restored | unresolved | read without restorations | state |
 |---|---|---|---|---|---|---|---|
-| ff. 13r-15r | 1,001 | 906 | 47 | 13 | 35 | 95.2% | read |
+| ff. 13r-15r | 1,001 | 875 | 78 | 13 | 35 | 95.2% | read |
 
 Before the reading was counted, Brice Dudout answered a blind proof-reading of 13 sign forms, all outside H. It was pre-registered
 and hashed, and the sheet was tested for leaks. It showed forms only, never values, and each answer had a consequence fixed in advance.
