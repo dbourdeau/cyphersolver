@@ -70,7 +70,7 @@ describes Richelieu: "although he is not of this King's Council, it is he who go
    words stay restored. Ignoring the marks would have given 88.7% on the 5 Nov count.
 3. **About ten restorations correct a transcribed token from the sense**; the sheet confirmed the token in eight of them.
 4. **C01's held-out lines are part of the target letter** (measured with an earlier key, then read with the later one).
-5. **One reader**: an AI agent transcribed and read; Brice Dudout answered the shape sheets only (M16, FL2-C, FS1). No palaeographer checked.
+5. **One reader**: an AI agent transcribed and read; Brice Dudout answered the shape sheets only (M16, FL2-C, FS1), which AI agents prepared and scored (recorded under `outcome.sign_check` since 19 Nov 2026). No palaeographer checked.
 6. **Position bias on the sheet FS1.** After the shuffle, the six expected shapes (4 conjectures + 2 controls) all fell in
    position "shape 3" (chance about 0.14%), and all six answers are "shape 3", so on that sheet the controls cannot tell a
    reading of the shape from an answer by position. Brice Dudout confirmed afterwards that he chose each answer by the
@@ -234,6 +234,8 @@ API (origin/main 895f21c4, 5 Nov 2026). Lead 1602 (Feria to Coloma) is vetted "p
 clears and credit the pointer. Nothing on DECODE, at Cryptiana (Tomokiyo) or in Lasry's lists. WAINUT and Brackx have no part
 in this target. Not read: Guill Ortega 2007, Herrero García 2023 (see deviation 9).
 
+**Also working on these ciphers (18 Nov 2026).** A researcher at the Real Biblioteca (Madrid) told us in November 2026 that he is also working on the ciphers of Coloma's embassy in London (1622-1624); he is not named here until he agrees to be. We do not know whether his work covers this letter or its key, and nothing is claimed here about his results. We wrote to him about this letter on 18 Nov 2026 and are waiting for his reply.
+
 ## Credits
 
 - `dudout`: transcription, key, the tests, the reading, the blind sheets (Brice Dudout answered them).
@@ -241,12 +243,13 @@ in this target. Not read: Guill Ortega 2007, Herrero García 2023 (see deviation
 - `dudout` (PR #560, 14 Nov 2026): the MSS/18428 letter of images 13 right - 15 left: inventory of the volume (issue #367), transcription, key CLE_M02, measurements M01 and M02, reading and translation.
 - `contemporary`: for the MSS/18428 letter, the decipherments by Gondomar's secretary of the six other cipher letters of the volume (`mss18428/CONTEMPORARY-CLEARS.md`).
 - `bourdeau`: pointer (catalogue 1601, leads 1602 and 1271 = catalogue entry 1271 for MSS/18428).
+- Not a credit role, for the record: a researcher at the Real Biblioteca, also working on the ciphers of Coloma's embassy in London (1622-1624) (see Prior work), sent the image of the 1615 nomenclator used in `RB-1615-COMPARISON.md`.
 
 ## Files
 
 `mss18428/`: the MSS/18428 letter (PR #560): transcription, decryption, reading, translation, key CLE_M02, validation, contemporary clears.
 `transcription.txt`, `decryption.txt` (word by word: tokens, key values, word), `key.tsv` (CC BY 4.0), `validation.txt`,
-`reading.md` (normalised text and word table), `translation.md`, `BLIND-REREADING.md` (11 Nov: new code values, sheets FL2-C and FS1,
+`RB-1615-COMPARISON.md` (18 Nov 2026: a 1615 nomenclator of the Real Biblioteca compared with the key; not the key), `reading.md` (normalised text and word table), `translation.md`, `BLIND-REREADING.md` (11 Nov: new code values, sheets FL2-C and FS1,
 hashes, counts), `profile.json`.
 
 ## Integration check (14 Nov 2026, PR #560): the MSS/18428 letter folded in
@@ -288,3 +291,25 @@ files in `mss18428/` (the contributor's NOTES and profile kept as `NOTES_PR560.m
   this PR; Herrero García (*Avisos* 100, 2023) and the *Correspondencia oficial* of Gondomar (Documentos inéditos, 1936-1945) not read.
 - **Catalogue 1271** (MSS/18428) leaves the catalogue: six of its seven cipher letters carry a decipherment of the time and the seventh is
   read in part here.
+
+
+## 18 Nov 2026: a 1615 nomenclator compared, and the count under the cipher-words rule (#728)
+
+- **Comparison** (`RB-1615-COMPARISON.md`): Real Biblioteca II/1850, f. 20, a Spanish nomenclator dated 1615 by the library,
+  against the values of this system that a contemporary clear supports. 1 of 45 letter and syllable signs and 1 of 40 code words
+  agree (the code word by an effect of alphabetical order); common words of the same initial are 22 pairs in the same order
+  and 19 reversed. Same family, different table; nothing points to a sister table; no value is carried into the key or the
+  reading. The cifra general of 1620 published in *Avisos* 28 (98), 2022, shares no value either (13 syllable groups, 17 code words).
+  No image of the Real Biblioteca and no entry of its 1615 table is in the repository (the table is the library's; counts only).
+- **Prior work**: a researcher at the Real Biblioteca is also working on the ciphers of Coloma's embassy in London (1622-1624) (see Prior work); we wrote to him on
+  18 Nov 2026 and await his reply.
+- **Count under #728** (cipher words only, sure words only, `{x}` and `[x]` are holes, counted by words): recounted by script on
+  the word table of `reading.md` as it stands on main: 421 cipher words (the 3 clear rows of the table and 6 surplus tokens are not counted):
+  **347 certain, 42 probable `{x}`, 28 restored `[x]`, 4 unresolved**. Sure words: 346/421 = **82.2%** (the certain words less
+  'casa', code _60_ placed by the sense). Unchanged; under 95%: **read in part**. For the record only (not a class): certain +
+  probable 389/421 = 92.4%.
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here the record itself said that AI agents prepared the sheets. The three sheets move to `outcome.sign_check`, none at the level "AI decipherment, human-checked on a sample of signs": M16 (5 Nov 2026, 16 signs) had no control; FL2-C (11 Nov 2026, 13 points, controls 2 of 2) reaches the counts, but its integration rule was written after the answers had been received, so it is recorded with `below_level`; FS1 (11 Nov 2026, 4 signs, controls 2 of 2) has fewer than 8 signs, and its controls cannot exclude an answer by position (deviation 6). The sheets, rules and answers are not in the repository. Nothing in the reading changes.
+

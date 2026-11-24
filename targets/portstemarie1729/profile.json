@@ -152,6 +152,18 @@
    ],
    "what": "Strict recount while verifying the duplicate PR #448 (targets/newcastle1729, same document and key): of the 141 groups, 116 carry a value glossed in the sibling letters (decode.py on pairs_A.tsv and pairs_B.tsv); the 18 tokens filled from the sense and the alphabetical order (pairs_zinf.tsv) and the 7 unread are holes. Read share 0.823, class set to read in part, key partial. Group 1118: filled here as 'trouver', but mssBLA 194 (HDL 60893 l. 14, checked on the image, retouched ink) glosses it 'tain'; both recorded, group marked [?trouver / ?tain], neither adopted. The earlier 134 of 141 (0.95) is withdrawn. The two pairs files hold 1,055 glossed pairs (364 distinct codes), not the 942 first reported.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): texts/key.md applied to texts/p5_transcription.txt and compared with texts/p5_reading.md; 13 of 81 compared words departed. Six were an artefact: remarks in the value column of key.md on the inferred rows were taken for values; the remarks were moved to a new note column, no value changed. After: 7 of 83. The rest: four glossed words emended without a mark (adresse for ad-ri-ser, [?fe]rez for ri, sçavoir for sçavoi, Mandez for man-des), the syllable 'se' of group 1019 missing from the reading before [?maine]s, and two normalised spellings (Keene, accommodement). Reading files not changed; whether 945 on p. 5 is 943 was not checked on the image.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marked the unmarked departures found by the decrypt audit: in texts/p5_reading.md, [ ] round the supplied letters of four words (adr[es]se, [?fe]r[ez], sçavoi[r], Mande[z]); no letter changed. The dropped syllable 'se' of group 1019 is stated in the header, not marked. Header corrected and the two normalised spellings stated. Page: the same marks in the quoted reading and three words added to the sentence on brackets. Audit script: 4 of 83 words depart. v2_score hole rate of the reading line 0.259 before, 0.286 after; read_share not changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

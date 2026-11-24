@@ -106,10 +106,16 @@
       "kind": "reading",
       "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.957 (whole), 0.974 (deciphered passages); state read.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): cipher_markup ** declared on the entry (Lasry's bold = deciphered passages), v10_relabel.py dry run gives 189 letter-run tokens, 13 holes, 0.936; counted by words (README rules) the bold text is 177 words plus 4 bare [?] marks = 181 cipher words, 13 holes (including Emp[ereur]), 168 of 181 = 0.928, which is the figure kept. Before: 0.957 whole text, 0.974 deciphered passages with 5 unread groups. 0.928 < 0.95, so read -> read in part. Not re-deciphered here.",
+      "result": "partial"
     }
   ],
   "outcome": {
-    "class": "read",
+    "class": "read in part",
     "key": "unknown",
     "method": "key recovered based on adjacent plaintext",
     "parts": [
@@ -124,9 +130,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.974,
+    "fraction_read": 0.928,
     "fraction_read_method": "measured",
-    "fraction_read_source": "24 Oct 2026, deciphered passages of George Lasry's full Readable text (lasry/report/readable.md, report PDF of 24 Oct 2026): 0.974; whole text 0.957 (v10_relabel.measure).",
+    "fraction_read_source": "Cipher words only (16 Nov 2026): George Lasry's Readable text marks the deciphered passages in bold and the clear text of the letter in plain type, so the bold words are the cipher words (cipher_markup **): 177 words plus the 4 bare [?] marks, each one unread word = 181 cipher words; 13 holes (4 bare [?] marks, pro[?]z and 8 bracketed-letter words: parei[l], l[e?], uou[d?], q[u]alite, Emp[ereur], ceu[x], escriue[z], sui[s]); 168 of 181 = 0.928. The v10_relabel.py dry run counts letter-run tokens (189, bracketed words split into pieces, elisions split) and gives 0.936 = 1 - 13/(189 + 13); the word count is the one kept. Before 0.974 (the deciphered passages with 5 unread groups, bracketed letters not counted) and 0.957 (whole text, clear included).",
     "verification": [
       "contemporary decipherment"
     ],
@@ -147,18 +153,26 @@
         "label": "George Lasry's excerpt and translation (BnF cipher research, 10 Oct 2026)",
         "decryption": "lasry/report/readable.md",
         "summary": "Charles IX to Jean de Vulcob, 7 March 1573. Instructions about the Polish royal election discuss Anjou, Archduke Ernest, rival candidates and reports from the Duke of Lorraine’s court.",
-        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: Transcribed; Deciphered. Measured 24 Oct 2026: whole text 0.957 (v10_relabel.measure, 291 words); deciphered passages alone 0.974 (189 words, 5 unread groups, 0 doubtful words; a bare ? counted as unread). State: read.",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/: his full Readable text by folio is the reading (bold = deciphered, plain = the letter's clear text); he gives a translation of the excerpt only. Report status: Transcribed; Deciphered. 16 Nov 2026, cipher words only (cipher_markup **): 0.928 (181 cipher words, 13 holes: 4 bare [?] marks, pro[?]z and 8 words with bracketed or doubtful letters; the tool's letter-run count gives 0.936); before 0.957 over the whole text, clear included, and 0.974 over the deciphered passages with only the unread groups counted. State: read in part.",
         "reading": "lasry/report/readable.md",
         "translation": "lasry/report/translation_excerpt.md",
         "language": "fr",
-        "read_share": 0.957,
-        "state": "read",
+        "read_share": 0.928,
+        "state": "read in part",
         "reading_review": {
           "grade": "B",
           "by": "Claude Opus 5.5",
           "date": "2026-10-24",
           "note": "George Lasry's report PDF (24 Oct 2026): full Readable text by folio (bold = deciphered), read against his excerpt, his summary and the key image; whole text 0.957, deciphered passages 0.974. Not re-deciphered here."
-        }
+        },
+        "cipher_markup": "**"
+      }
+    ],
+    "gaps": [
+      {
+        "item": "the 4 unread [?] marks and the pro[?]z group in Lasry's readable text, and the 8 words with bracketed or doubtful letters (parei[l], l[e?], uou[d?], q[u]alite, Emp[ereur], ceu[x], escriue[z], sui[s])",
+        "blocker": "not-attempted",
+        "detail": "this is George Lasry's decipherment, not re-deciphered here; the project checked one sample against the image (13 Oct 2026) and has not tried the holes against the Gallica image or the interlinear plaintext"
       }
     ]
   }

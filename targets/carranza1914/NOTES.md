@@ -98,6 +98,31 @@ No earlier work on it in the repository; Brice Dudout's note of 29 Oct 2026 on t
 `targets/carranza1915/` (catalogue 1464) is a different fondo (CDLXXX), year and system.
 Narváez 2019 and 2025 and M. W. González, *Con Carranza*, were not read (see `targets/murguia1914/NOTES.md`).
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/audit.py` re-applies `key_frozen.tsv` to the transcription and compares the letters with the
+reading file. It flagged this target: 7 of 60 compared words depart, each by a letter c in the reading that its
+decrypt does not give.
+
+Cause: an artefact of the script, not of the key or the reading. The key holds c twice (groups 18 and 28), and
+the decryption has it ("cooperar", "coss", "establezca"). The script skips every line of the reading file that begins
+with `>`, which is the reading itself, and so compares the section "Coded runs" at the end of the file. There it
+takes the run labels `C02` to `C08` for text: the 7 letters c are those 7 labels. Example: the signs give
+"...de saltillo" (end of C01) then "salga a cooperar" (C02), and the script reads "saltillo c salga".
+
+Checked with an own snippet (not a script of this folder): a decoder written from `key_frozen.tsv` (60 entries)
+gives the eight lines of `decryption_LXVIII-1.23.3165.1.txt`; 227 of the 235 groups have a value and the other 8 are
+the groups with an unread figure. In the coded-run lines of the reading every letter is the key's value or sits inside
+one of the 10 marks (2 repairs, 8 guesses for unread groups), and the capitals of the reading above match those
+lines. No unmarked emendation was found.
+
+Changed: nothing but this section and one step in `profile.json`. No key value was added.
+
+After: the script's figure is unchanged (7 of 60), because the cause is in the script. With the labels `C0n |` left
+out of the comparison it gives 0 of 53 words; on the coded runs alone, both sides, 0 of 59.
+
+Not checked: the groups against the image, and the clear words of the sheet.
+
 ## Remaining gaps
 
 - 8 groups with an unread figure (C01 g9, g13, g36; C06 g14, g31; C07 g10, g25; C08 g15) - blocker: illegible. Faint

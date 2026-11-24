@@ -31,7 +31,7 @@ reading is accepted, it must show for each document (George Lasry, 22 Oct 2026):
    place (`[...]`, `[?word]`, `[47]` for an unidentified code). A few holes are fine; holes in almost every sentence
    are not, and mean the transcription or the key needs another pass against the images.
 2. **An English translation** of those sentences, with the same holes. Not needed if the plaintext is English.
-3. The decryption itself, line by line against the transcription, so the reading can be checked.
+3. The decryption itself, line by line against the transcription, so the reading can be checked. It is the unedited output of the key; anything the reading changes or supplies beyond it is marked in the reading (README Conventions, 16 Nov 2026).
 
 A document counts as read only when 95% of its words read as sense (the README read bar); one that builds coherent
 sentences under that is marked "read in part". Holes are counted by words: `[...]` is one unread word, and a hole that
@@ -53,6 +53,15 @@ language. Then look at where the result stops making sense: those places often r
 in the key. Check them against the images, correct the labels or the key, decrypt again and repeat until the
 sentences hold. Mark every value the model proposed from context alone as doubtful (`[?word]`) until it holds at every
 occurrence or a contemporary text confirms it. Record each round, failures included, as a solution step.
+
+**Doubtful signs are checked, not carried (20 Nov 2026).** Write down every sign you were unsure of while
+transcribing. If a model made the first pass, ask it to list its doubts: in our first CTTS pilot (Bordeaux 1653) every
+error left after correction was one the model had flagged and nobody had checked. Settle each doubt against the sign
+enlarged with no overlay, against the decoded text, and against an independent transcription where one exists. List
+them in the target's NOTES.md under `## Transcription doubts`
+(`- <sign> (<where>) - read: <reading>; checked: image, decode[, transcription]; <evidence>`, or `- none: <why>`). A
+doubt that stays unresolved keeps its mark (`?52'`, `[4]`). Editing boxes in a tool such as CTTS gives a usable file;
+the checks are what make the transcription accurate (README Conventions).
 
 ## Searching an archive with your AI
 
@@ -111,6 +120,16 @@ Conventions). In short:
   transcription and decryption file of every document, and the key file, in `profile.json` `outcome.texts` /
   `outcome.key_file` (see `docs/_texts.py`); the site shows them in a "Full texts" section.
 - Large images stay out of git; link them (Gallica, DECODE, the archive's viewer) or describe where they are.
+- **Conditions of use of the images.** Read the conditions that came with the images before you give them to an AI
+  assistant. Reproductions ordered from an archive or its photographer often carry conditions, and an image whose
+  reuse terms you have not confirmed is linked, not committed. Say in the pull request what conditions came with the
+  images and who agreed to them. Two cases reported to us (issue #754): the Archivio Apostolico Vaticano's reproduction
+  office, asked on 17 Nov 2026 whether copies ordered from it could be analysed with an AI assistant, quoted § 6 of its
+  order form, which forbids using the reproductions "per processi di elaborazione, analisi o archiviazione tramite
+  sistemi di Intelligenza Artificiale", not only for training (this is the wording of its e-mail of 17 Nov 2026; the form
+  itself has not been seen, and AAV images reached through DECODE come under DECODE's own terms, which have not been
+  checked); and a Casanatense reproduction ordered from the library's photographer, "for private study only" and not to
+  be republished, where whether AI reading is within that was not asked.
 - Leave the generated files alone (`docs/*.html` built by `docs/_build_site.py`, `docs/search.json`,
   `docs/pages.json`, `docs/writeups.html`). They are rebuilt when the contribution is merged.
 - Say in the description how you want to be credited (full name, initials or a handle, and a link if you like).

@@ -37,3 +37,10 @@ DECODE's "Non-decrypted, graphic signs, numerical" describes the series, not thi
 The reading existed in print from 1809 and was found by a web search in this session, after the images had been
 examined. The only step taken before the search was a tentative identification of ② as Arran from context:
 Arran passed secretly through London to Cecil in late August 1559.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R4860 was listed without a transcription. Checked the folder, the DECODE public API record
+(`decrypt-web/api/view/Records/4860`) and the record page: no transcription anywhere, and none is possible, because
+the letter has no cipher (see "The documents" above). `outcome.texts` now says so in `transcription_missing`. The
+images could not be looked at again: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. R4847 is unchanged (`transcription.txt`).

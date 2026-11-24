@@ -169,6 +169,54 @@ By a second AI language-model reader that is not the contributor, and with no hu
 - Method: key recovered based on adjacent plaintext (see above).
 - Statistical validation added (`validation.tsv`).
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher only. The marked reading of each
+document was aligned line by line with its transcription, where the clear words stand in double quotes: those words
+are left out (holes in them too: the binding losses of 794.01, 794.20 and 798.09 fall in clear words); clear letters
+joined to a run (*hier*, *angelanget*, *nachrichtung*) make a cipher word; a word broken across a line is counted once
+(the earlier count took each half as a word). Read = verbatim from the signs; a repair, a context fill, a guess, a hole
+`[...]` or `[51]` is not read; a line end in the binding where nothing is lost (`{[...]/}`) is read, as it supplies
+nothing. The repairs are the writer's slips against a rebuilt key: no key of the time survives, so the one-digit-slip
+rule does not make them read.
+
+| doc | before (clear words included) | cipher words | verbatim | share | class |
+|---|---|---|---|---|---|
+| c793 | 260/286 (0.909) | 167 | 142 | **0.850** | read in part |
+| ps797 | 151/161 (0.938) | 84 | 72 | **0.857** | read in part |
+| ps717 | 68/71 (0.958) | 66 | 63 | **0.955** | read |
+| l819 | 62/64 (0.969) | 36 | 34 | **0.944** | **read -> read in part** (the slips *lanctag*, *würcde*) |
+| w787 | 99/106 (0.934) | 46 | 35 | **0.761** | read in part |
+| w813 | 64/72 (0.889) | 57 | 50 | **0.877** | read in part |
+| all six | 704/760 (0.926) | 456 | 396 | **0.868** | read in part (unchanged) |
+
+Whole letter, clear included, not the measure: the "before" column. A gap line for the repairs is added below.
+
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` compared four of the six texts: 132 of 410 words depart from the mechanical decrypt
+(c793 89 of 219, ps797 37 of 85, ps717 2 of 61, w813 4 of 45). None of it is an unmarked change.
+
+- Clear words. The transcriptions give the clear German words of the page in double quotes between the number runs
+  (105 words in c793, 82 in ps797, 12 in w813, 2 in ps717); `scripts/decrypt.py` copies them, the audit script applies
+  the key only and so does not have them. Example, 793.02-03: decrypt "befinden ... ihren march", reading "befinden,
+  welche ihren march bis hier nach Cößlin fortgestellet".
+- Stated convention. 3.3 decrypts "uu" and the readings write "w" (head of each `reading_*.md`). Example: "uuider",
+  "wider".
+- Order and layout. `transcription_c793.txt` has the scans in the order 793, 795, 794 and the reading in the order
+  793, 794, 795; each reading file holds the text twice (sentence text, then the marked block), and the script takes
+  both. The marks `{x/y}` of the marked block are counted by it as marked (15 in c793).
+
+Checked with an own snippet that reads the files and writes nothing: the six `decryption_*.txt` are what
+`scripts/decrypt.py`'s functions give from `transcription_*.txt` and `key.tsv`, identical; all 148 lines of the six
+marked blocks, resolved to the mechanical side of their marks, equal the decryption line (case, punctuation, spacing,
+u/v, i/j and uu/w apart); the sentence text of each reading equals the reading side of its marked block (w787 and w813
+add the note "clear text not edited" between passages). Unmarked departures: 0.
+
+Changed: nothing but this section and the profile step. The figures of the script are the same after.
+
+Not checked: the transcriptions against the scans; `key.tsv` against anything but its use.
+
 ## Remaining gaps
 
 - Line ends of scans 794 and 798 - blocker: needs-physical-access; letters lost in the binding of the left-hand pages
@@ -177,6 +225,10 @@ By a second AI language-model reader that is not the contributor, and with no hu
 - 788.20-788.24 and the line ends of scan 788 - blocker: needs-physical-access; four holes, letters lost in the binding.
 - The clear word before "etwa" on 797.20 - blocker: illegible; not read from the viewer image.
 - 787.a "S{i/c}hweden" - blocker: illegible; 2 or 12 not settled on the image.
+- The marked repairs in cipher words (15 words) - blocker: no-key-material; the writer's one-digit slips (bald, also,
+  gestatten, landtag, würde ...), one added letter and one dropped stray group, read from the sense against the
+  rebuilt key; no key of the time survives to show the slip, so they count as not read (16 Nov 2026). l819 falls under
+  95% on its two.
 - Number 51 (813.a, 814.12) - blocker: open-codes; not a letter, from context a person, perhaps the Elector (a guess).
 - Scans 723-724 (17 Aug 1655, another code) - blocker: no-key-material; numbers up to four digits mixed with letters, no
   key of that code is known; the catalogue item stays open for it.

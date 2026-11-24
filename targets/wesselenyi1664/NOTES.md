@@ -1,6 +1,6 @@
 # R674 — Ferenc Wesselényi to Leopold I(?): cipher passages in a Latin draft (c. 1663–64)
 
-Status: read (22 Sept 2026). Key: recovered for letters (reversed alphabet, the alphabet of DECODE key R672); two
+Status: read in part (deciphered 22 Sept 2026; read in part by the cipher-word count of 16 Nov 2026). Key: recovered for letters (reversed alphabet, the alphabet of DECODE key R672); two
 code numbers open. Written up: docs/wesselenyi1664.html.
 
 MNL OL E 199 (Wesselényi family archive), 8. pallium 1. 01, old number "E 199 IV/3.t.-1" on the leaf (DECODE R674,
@@ -45,8 +45,25 @@ Transcription: DECODE DOC_R674_D1892 (EK, 2020), checked against the image; one 
 
 **23 Oct 2026, verification 5 (plain bar; research/reading_audit/VERIFY5_BRIEF.md)**: the draft is Latin (not French): explicit-hole bar. reading.md blockquote: explicit 0.778, plain 0.222 (small Latin word list); holes are codes 60 and 64 and doubtful clear words. Rescored with research/reading_audit/v2_score.py (plain word-list share and explicit-hole share); both figures are in each entry's reading_review note. Keeps read.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions (16 Nov 2026): the read share counts the words written in cipher; the clear Latin around them
+stays out of both sides. Cipher and clear are told apart by the markup of `reading.md`: the cipher runs are the
+**bold** stretches inside the `>` blockquote, everything else in the quote is clear text in the hand.
+
+- R674: 0.977 -> **0.902** (37 of 41 cipher words read). Sixteen bold runs, 41 words; unread: code 60 (once),
+  code 64 (twice), one word each, and *Spork*, written `7 9 11 8 15` with the writer's slip 9 (q) for 10 (p): the
+  one-digit-slip rule lets such a word count as read only with the surviving period key, and this key was recovered
+  here (R672 shares its alphabet but is not the draft's key), so the word is a hole though the name is plain.
+  *Haster, Snaidau* is one run, two words. The recorded 0.977 was not a whole-letter figure: the measure skipped `>` lines and
+  scored the commentary below the quote. No whole-letter figure is kept.
+- Class: read -> **read in part** (under 95%). The letter tokens are unchanged: 241 of 244 (98.8%) give sense. Of
+  the four unread words, three are the two codes, which have no key material; the fourth is the slipped *Spork*
+  (Remaining gaps gains a line for it).
+
 ## Remaining gaps
 - code 60 ("Dominus Generalis [60]", once) - blocker: no-key-material; not in R672 (60 = Ka there) or in any of the Fasc. 327 Konv. D keys (R676–R690) or Teleki keys R665–R673; a person, probably the imperial commander in the sector (de Souches? not provable)
+- *Spork* (7 9 11 8 15, the writer's slip 9 for 10 = p), counted unread in the cipher-word share of 16 Nov 2026 - blocker: no-key-material; the slip is on the image and the name is plain, but the one-digit-slip rule needs the surviving period key, and the draft's own key does not survive (R672 is a relative)
 - code 64 (twice: "nos ad [64] in castris", "videns [64]") - blocker: no-key-material; a place or its townsmen that might take an imperial garrison; no key with these numbers found
 
 ## Escalation

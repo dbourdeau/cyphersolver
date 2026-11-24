@@ -1,0 +1,122 @@
+{
+ "folder": "longlee1590",
+ "causes": {
+  "A": "key_K4.tsv lacks nine labels that occur in transcription.txt and that decryption.txt handles: N_ROI (1, 'leroi'), N_PORTUGAL (1, 'portugal'), DOT (30, no value), MK (3), NEW_3PAR, NEW_SIG, NEW_PCT (1 each, no value), ZG (2, printed '?'). The repository key file is not the contributor's working key (hash b39635fe... quoted, file is 8cfd785b...). decryption.txt prints i where the key says y (QB, QBL)",
+  "B": "12 places in words printed as certain (no braces): 4 letters changed, 1 added, 7 left out; 8 of 335 unbracketed words by the audit's own count on decryption.txt in page order",
+  "C": "'Vre Mate' printed for 'uremat' (1 place, counted in B)",
+  "D": "reading.md carries a legend and a count table; unresolved segments ‹…|n› are printed with the key's letters",
+  "F": "main cause of the flag: the script gives no letter for the 137 {A|B} hesitation tokens (first label is used; S1 = s gives the 'missing' s), and transcription.txt has f. 67v before f. 67r while reading.md has f. 67r first, so only 64% aligned (222 of 478 words)"
+ },
+ "before": "53 of 222 words depart (texts compared: 1)",
+ "after": "53 of 222 words depart (texts compared: 1); unchanged by the script (it does not read {A|B} tokens or merge key files). By hand, decryption.txt against reading.md in page order: 8 of 335 unbracketed words depart, 94 departing letters are inside {} or []",
+ "files_changed": [
+  "targets/longlee1590/key_K4_supplement.tsv",
+  "targets/longlee1590/NOTES.md",
+  "targets/longlee1590/profile.json"
+ ],
+ "key_values_added": [
+  {
+   "sign": "N_ROI",
+   "value": "le roi",
+   "source": "transcription.txt:34 (f67r-14) against decryption.txt f67r-14"
+  },
+  {
+   "sign": "N_PORTUGAL",
+   "value": "portugal",
+   "source": "transcription.txt:49 (f67r-29) against decryption.txt f67r-29"
+  },
+  {
+   "sign": "DOT",
+   "value": "∅ (no value)",
+   "source": "30 occurrences before TRI, decryption.txt prints nothing"
+  },
+  {
+   "sign": "MK",
+   "value": "∅ (no value)",
+   "source": "decryption.txt f67r-01, f67r-03, f67r-26"
+  },
+  {
+   "sign": "NEW_3PAR",
+   "value": "∅ (no value)",
+   "source": "decryption.txt f67v-14"
+  },
+  {
+   "sign": "NEW_SIG",
+   "value": "∅ (no value)",
+   "source": "decryption.txt f67v-16"
+  },
+  {
+   "sign": "NEW_PCT",
+   "value": "∅ (no value)",
+   "source": "decryption.txt f67r-28"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 12,
+  "examples": [
+   {
+    "text": "f. 67r",
+    "decrypt": "delapartdeducdemercure",
+    "reading": "de la part du duc de Mercure",
+    "where": "decryption.txt f67r-14/15; reading.md line 12"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "ieneuoipointquelieustderaison",
+    "reading": "ie ne uoi point qu'il i eust de raison",
+    "where": "decryption.txt f67r-25; reading.md line 16"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "quantalaigent",
+    "reading": "quant a l'argent",
+    "where": "decryption.txt f67r-25/26; reading.md line 16"
+   },
+   {
+    "text": "f. 67v",
+    "decrypt": "dauentaige",
+    "reading": "d'auantaige",
+    "where": "decryption.txt f67v-08; reading.md line 21"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "aurematcequi",
+    "reading": "a Vre Mate ce qui",
+    "where": "decryption.txt f67r-03; reading.md line 8"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "parroisieuelequelsattendeicichacungiour",
+    "reading": "par Roisieu le quel s'attend ici chacun iour",
+    "where": "decryption.txt f67r-21; reading.md line 14"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "cesdemandeesie",
+    "reading": "ces demandes ie",
+    "where": "decryption.txt f67r-24/25"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "accorderhquant",
+    "reading": "accorder quant",
+    "where": "decryption.txt f67r-25"
+   },
+   {
+    "text": "f. 67v",
+    "decrypt": "uremateedepuis",
+    "reading": "Vre Mate {depuis}",
+    "where": "decryption.txt f67v-07"
+   },
+   {
+    "text": "f. 67r",
+    "decrypt": "uoulueentendre",
+    "reading": "{uoulu} entendre",
+    "where": "decryption.txt f67r-02/03"
+   }
+  ]
+ },
+ "page_statements_false": [],
+ "remaining": "No docs/longlee1590.html exists (Status: in progress), so no page was checked. NOTES and the decryption.txt header say the decrypt is 'mechanical, never retouched' with key_K4.tsv: true only with the contributor's working key, which holds labels the repository file lacks; the working key itself is not in the repository, so the supplement records what decryption.txt shows, not the contributor's rows. Images, plates and the 310/107/8/53 count not checked. The 12 unmarked places should be {probable} under the file's own rule: decision needed (contributed reading, Brice Dudout).",
+ "confidence": "high"
+}

@@ -209,3 +209,20 @@ Remaining gaps and escalation for this piece are in the main sections above.
 - `964_f8_cipher.txt`: the 16 runs of figures only
 - `964_f8_reading.md`, `964_f8_translation.md`: the reading as German sentences, and its English translation
 - `repeats.py`: the repeat table, the shuffle control and the f. 6 cross-check (standard library)
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher. Neither entry had a read share.
+
+| document | before | after | state |
+|---|---|---|---|
+| 964 f. 6 (`texts/964_f6_reading.md`) | none | 1.0 (21 of 21 cipher words) | read, unchanged |
+| 964 ff. 8r-8v (`wainut/964_f8_reading.md`) | none (whole piece 0.896) | 0.862 (56 of 65) | read in part, unchanged |
+
+- How the cipher was separated: both readings put the contemporary interlinear decipherment of the figure runs in
+  ⟨ ⟩ inside the clear text; the ⟨ ⟩ words are the cipher. On ff. 8r-8v the five barred stretches stand outside the
+  ⟨ ⟩ and are cipher too.
+- Holes on ff. 8r-8v: [?bewürket], [...], [?dienstlich] and [?befürchtet] inside the ⟨ ⟩, and the five barred stretches,
+  one word each, because their size in words is not known. The uncertain words of the clear text ([?jetzt],
+  [?hereinkommenden], the word before C2, [?hätten], [?begreiflich], [?Verporten]) are not counted. If the barred
+  stretches are nulls ("Barred stretches" above), the share is 56 of 60 (0.933).

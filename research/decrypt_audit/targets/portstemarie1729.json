@@ -1,0 +1,56 @@
+{
+ "folder": "portstemarie1729",
+ "causes": {
+  "B": "4 glossed words emended without a mark (adresse for ad-ri-ser, [?fe]rez for ri, sçavoir for sçavoi, Mandez for man-des) plus the syllable 'se' of group 1019 dropped before [?maine]s (not seen by the script)",
+  "C": "2 words: Keene for Ken-ne; accommodement (46 has both glosses, script takes the first)",
+  "F": "6 of the 13 departing words: remarks in the value column of texts/key.md on the 16 inferred rows ('(inferred, 0 attestations)', '(position only, 0 glossed here)') were taken for values"
+ },
+ "before": "13 of 81 words depart (texts compared: 1)",
+ "after": "7 of 83 words depart (texts compared: 1)",
+ "files_changed": [
+  "targets/portstemarie1729/texts/key.md",
+  "targets/portstemarie1729/NOTES.md",
+  "targets/portstemarie1729/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 5,
+  "examples": [
+   {
+    "text": "mssBLA191-p5",
+    "decrypt": "ad ri ser (21 945 1017)",
+    "reading": "adresse",
+    "where": "texts/p5_reading.md:5 (groups ct_p5.txt:4)"
+   },
+   {
+    "text": "mssBLA191-p5",
+    "decrypt": "[?fe] ri (460 945)",
+    "reading": "[?fe]rez",
+    "where": "texts/p5_reading.md:5"
+   },
+   {
+    "text": "mssBLA191-p5",
+    "decrypt": "sçavoi (1038)",
+    "reading": "sçavoir",
+    "where": "texts/p5_reading.md:5"
+   },
+   {
+    "text": "mssBLA191-p5",
+    "decrypt": "man des (694 282)",
+    "reading": "Mandez",
+    "where": "texts/p5_reading.md:5 (ct_p5.txt:13)"
+   },
+   {
+    "text": "mssBLA191-p5",
+    "decrypt": "des se [?maine] s (282 1019 711 1013)",
+    "reading": "des [?maine]s",
+    "where": "texts/p5_reading.md:5 (ct_p5.txt:7)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Everything else carries a value glossed in the sibling letters.\" (reading header shown on docs/portstemarie1729.html) — four words outside brackets print letters the glosses do not give (adresse, [?fe]rez, sçavoir, Mandez)"
+ ],
+ "remaining": "Whether the groups read 945 (ri) on p. 5 are 943 (re) was not checked on the image; the key.md table now has a fourth column, which docs/_build_site.py will render on the next build (not built here).",
+ "confidence": "high"
+}

@@ -318,6 +318,12 @@
    ],
    "what": "Integration check of PR #447: all six scripts re-run, hash lists check, outputs identical (m0271 0.7824 against threshold 0.6284, margin 0.4162; round 2 on 96 lines 0.709, margin 0.317; post hoc on 167 lines 0.728, margin 0.341; collation 1,202 of 1,225 tokens; cipher B 48 of 53 groups on m0062). Own decoder written from key.txt: m0272 reads as Portuguese. About 150 numbers of m0272 ll. 2-5 compared with the DigitArq image: all agree, one doubtful (28*) marked as such. Read share recounted strictly (doubtful signs as holes): 0.950, not the contributor's 0.966. Round 2's exclusion rule is a flaw its author states; the pre-registered figure stands as the test.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Full-texts audit: cipher B (document B) listed in outcome.texts with the run transcriptions of m0063 and m0062 and the gloss table and decode already in beling/ (results/cipherB_m0063.txt), state not prose (glossed names and phrases). No file changed; the other cipher B pages remain untranscribed.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -446,6 +452,16 @@
      "note": "Read as sentences against an independent decode of transcription.txt. Passages 1 (m0265.01-18, after the chego fix), 3 (m0268 line), 4 (m0269.02-12), 5 (m0269 last line) and 6 (m0273 last 12 lines) A; passage 2 (m0266.02-05, four lines, two fragments, a cut word) B. Covers only the ~45 transcribed lines (about 15% of cipher A)."
     },
     "note": "Only about 45 of some 290 cipher lines are transcribed; the reading covers those lines. read_share is 1 - hole rate of research/reading_audit/v2_score.py on reading.md. The sentence check (docs/_check_reading.py) is low because the open code groups and names (Thou, Comminges, Bordeaux) and words outside the period Portuguese word list count as holes. m0265.02 'chego' (first person: the writer has come from The Hague) corrected from 'chegou' at the merge review, 27 Oct 2026. 12 Nov 2026 (Andrew Beling, beling/): all 250 lines now transcribed and decoded (beling/results/decode_all.txt); m0271 and the round-2 pages read in beling/results/m0271_reading.md and round2_reading.md, without a translation or a reading_review. read_share 0.873 is still that of reading.md."
+   },
+   {
+    "doc": "B",
+    "label": "Cipher B, Rome 1664: the glossed cipher runs of scans m0063 and m0062",
+    "transcription": ["beling/cipherB/m0063_runs.txt", "beling/cipherB/m0062_runs.txt"],
+    "decryption": "beling/results/cipherB_m0063.txt",
+    "language": "pt",
+    "state": "not prose",
+    "summary": "Short enciphered words and phrases inside clear Portuguese letters from Rome, each with a gloss of the time: do Papa, do Cardeal, ninguem, enemigo, nosso, publico, filho de hum ferreiro, protector. No connected text.",
+    "note": "Names and short phrases, not a text: every cipher run of m0063 (11 runs) and the six glossed runs of m0062, each with the gloss of the time, read by one reader. The decryption file is the letter table built from the m0063 glosses, its leave-one-out check and the decode of the runs (m0062 as a check: 48 of 53 groups known, all agree). The other cipher B pages (m0055-m0062 beyond these runs, m0065, m0069-75, m0098, m0113, m0116-117, m0170) are not transcribed. Cipher B is not counted in fraction_read."
    }
   ],
   "key_file": [

@@ -109,6 +109,18 @@
    "kind": "reading",
    "what": "Whole cipher read with the key and checked against the minute: 60 cipher words, 54 certain, 3 probable, 3 restored, 0 unresolved.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: of the 18 of 70 words the audit flags in reading.md, 17 are clear words of the sent page printed between the cipher passages and 1 is ver[ste]rking: the key gives verking, four letters are missing (s, t, e, r), the brackets hold three and the notes say three. The other 59 cipher words follow key.tsv letter for letter or carry a mark (3 probable, 2 more restored). No key value missing; no file changed apart from NOTES.md and this step.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Mark corrected in reading.md after the decrypt audit: ver[ste]rking to ver[ster]king, so that the four letters the key does not give (s, t, e, r) are inside the bracket; the note 'omitting three letters' corrected to four, in reading.md and on the page. No letter changed; counts unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {

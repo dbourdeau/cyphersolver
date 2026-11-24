@@ -124,6 +124,52 @@ Re-measured: 246 of 274 (89.8%); codes read as letters 5 of 14.
   the sense words. The target stays below 95%: the 29 open tokens are the corrupt name (11+1), the S5 stretch (14+2)
   and the stray e (1), all with confirmed figures and fixed values.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit` re-applied `key.json` to `ct_neal.txt` and compared the letters with
+`APUG568-239_reading.md`: 14 of 57 words depart (25%), five unmarked gaps and one marked.
+
+Mechanical decrypt (key.json on ct_neal.txt, nothing edited, codes as [nnn]):
+
+    S1 iobs[508]
+    S2 in[513]niohannohrspacbuetuber[568]
+    S3 nachderoberpfaltzundgegendie[442]
+    S4 etwaauchdeinschlesieiagirende[361]dazuziehen
+    S5 darau[778]guteachtgebenundsobaldteichseingegen[773]ehender[464]au[772]solche[766]eisenouirechtezu[775]dem[767]o?eingutenfursichtigkeitnachuolgen
+    S6 durchespionensieko[770]endassiemo[783]en
+    S7 wohinerseinenarchezurichtenentgegenwolten
+
+Causes:
+
+- Clear text and markers (most of the 14 words): the reading file sets the seven cipher spans in the clear words
+  around them, in ⟨ ⟩ ("⟨So wollt der herr General Major⟩", "⟨mich aber von zeit zu zeit⟩"), and prints […] for the two
+  unread runs. The audit takes the ⟨ ⟩ words for text the key should give. Nothing wrong.
+- Unmarked emendation, 3 words in `APUG568-239_reading.md`, whose header says "no letter changed":
+  "die in" where the decrypt has d e i n (line 13); "Schlesien" where the decrypt has schlesiei, 93 = i (line 13);
+  "Marche" where the decrypt has arche, the M supplied (line 18). All three are named as slips of the copy above and
+  marked in `reading.md` ({n}, (M)arche) and in `decode.py` (EMEND); only the sentence reading prints them bare.
+  Not bracketed here: the wording of reading files is not changed in this pass.
+- Key file incomplete: the five codes read as letters on 22 Sept (766 = w, 770 = m, 772 = f, 778 = f, 783 = g) were
+  held only in `decode.py` (CODELETTERS) and `validation.tsv`. They are now in `key_codeletters.tsv`, listed with
+  `key.json` in `outcome.key_file`. Neither reading file applies them (both keep [778] and the rest as codes).
+- Reading files behind the key and the transcription: `key.json` has 60 = m and 12 = p, so the decrypt gives
+  "mo[783]en" and, in S2, "ohrspacbuet"; `APUG568-239_reading.md` and `reading.md` print "[?]o[783]en" / "?o[783]en",
+  and `reading.md` still shows "?" under the 12 of S2. `reading.md` also prints figure rows older than `ct_neal.txt`
+  (S4 "66 ... 36" for 86 and 86, S5 "48 57" for 48 47), with the letters of the corrected figures under them.
+
+Changed: `key_codeletters.tsv` added, `outcome.key_file` now lists both files. Figures after: 14 of 57, unchanged (the
+audit tries each key file apart, and the departures are clear text and the three words above). Unexplained: nothing.
+
+Marked on 16 Nov 2026: three places in `APUG568-239_reading.md`, in [ ] as the file already uses them: "d[i]e in",
+"Schlesie[n]", "[M]arche". No letter was added, removed or changed. Its header line "Word division and capitals only;
+no letter changed" now says that three letters are changed or supplied and names them with the decrypt beside each.
+Left unmarked: nothing. Not done: "[?]o[783]en" still stands where `key.json` gives m (a letter the key gives and the
+reading withholds, not a departure to mark), and `reading.md` was not touched. Page (`docs/baner1640.html`): the
+sentence that the copy drops a 12 from Espionen now says Neal's transcription dropped it and the manuscript has it;
+"E(sp)ionen" in the page's reading now reads "Espionen". The audit now finds 0 of 45 compared words departing (was
+14 of 57). Hole rate of the reading file (`research/reading_audit/v2_score.py`, de): 0.147 before, 0.171 after;
+the text was already read in part, and `read_share` was not changed.
+
 ## Remaining gaps
 
 - S2 name after "Johann" (11 tokens, read "ohrspacbuet", plus the lone n after [513]) - blocker: needs-physical-access; the figures are confirmed on the manuscript and every value is fixed by other words (12 = p since 5 Oct), so the only known copy is corrupt; the sent original or a register copy in Banér's papers (Riksarkivet) is needed and is not digitised.

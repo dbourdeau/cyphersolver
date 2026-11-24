@@ -5214,6 +5214,22 @@
    "by": "Andrew Beling, with AI agents, from the decipherment of the time",
    "year": 1757,
    "note": "Numbers for letters, syllables, words and names, no alphabetical order. Indexed from the interlinear decipherment of the cipher passages of SHD GR A1 3457 pieces 179-180 (LAC copy, reel C-12578); conflicting values kept; two numbers with unsettled digits kept out; 52 further values from the 1756-1759 letters in the same code kept apart (key/W_sibling_values.tsv). Not the key sheet of the time."
+  },
+  {
+   "id": "k-morier1808",
+   "label": "Morier 1808 figure key: homophonic, figures 2-99 for letters, 62 figures",
+   "kind": "rebuilt here",
+   "by": "Brice Dudout, with an AI model, from the ciphertext alone",
+   "year": 1808,
+   "note": "Two to five figures a letter, u/v and i/j merged, a few 3-4 figure code words (8674 Persia). Annealed on two copies of one letter and frozen; two held-out tests. Not the page,word code of Jones's 1802 book."
+  },
+  {
+   "id": "k-tremais1759",
+   "label": "Trémais's own cipher of 1759, rebuilt in part (about 220 numbers)",
+   "kind": "rebuilt here",
+   "by": "ministry of the Marine, for Querdisien Trémais",
+   "year": 1759,
+   "note": "A numeric table given to Trémais with his instruction of 3 February 1759; the table itself is not found. Rebuilt from his letter of 22 September 1759 and its contemporary decipherment, where he wrote both homophones of most units, and extended from the letter of 6 November (targets/tremais1759/key.tsv)."
   }
  ],
  "links": [
@@ -8438,6 +8454,24 @@
    "target": "montcalm1757w",
    "how": "rebuilt from",
    "note": "indexed from the decipherment written between the lines of the same pages; the reading is that decipherment, not a decoding with the index"
+  },
+  {
+   "key": "k-weber-we025",
+   "target": "crawford1814",
+   "how": "read unchanged",
+   "note": "the 156 rows for the numbers in this letter, cut from the transcription frozen for poinsett1813, applied unchanged with the code's printed marks; 283 of 292 groups read from the table, nine supplied from the sense"
+  },
+  {
+   "key": "k-morier1808",
+   "target": "morier1808",
+   "how": "rebuilt from",
+   "note": "annealed from the ciphertext of IOR/L/PS/9/67/18 and /20 only, with no plaintext; the contemporary clear text in the margin of /19 was seen after the reading"
+  },
+  {
+   "key": "k-tremais1759",
+   "target": "tremais1759",
+   "how": "rebuilt from",
+   "note": "Values from the September pair give 84% of the November groups a value; about 60 more added or corrected from November."
   }
  ],
  "sources": [
@@ -9830,6 +9864,14 @@
   {
    "source": "s-cyphersolver",
    "key": "k-montcalm-w1757"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-morier1808"
+  },
+  {
+   "source": "s-cyphersolver",
+   "key": "k-tremais1759"
   }
  ],
  "unlinked": {
@@ -11192,6 +11234,16 @@
    "key": "k-vaudreuil1757-272",
    "target": "montcalm1757w",
    "note": "the Marine table for Montcalm of 1758 (sheet e001295272): 0 of 281 shared numbers agree, against shuffled maxima of 3"
+  },
+  {
+   "key": "k-vaudreuil1757",
+   "target": "tremais1759",
+   "note": "Vaudreuil table, sheet 274: 0.063 against 0.229 for shuffled keys (Dudout, PR 273)"
+  },
+  {
+   "key": "k-vaudreuil1757-272",
+   "target": "tremais1759",
+   "note": "sheet 272 has 98 rivière, 108 tion, 115 guerre; Trémais has 98 il, 108 r, 115 M. Bigot (23 Nov 2026)"
   }
  ]
 }

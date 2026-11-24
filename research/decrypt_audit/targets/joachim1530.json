@@ -1,0 +1,49 @@
+{
+ "folder": "joachim1530",
+ "causes": {
+  "B": "13 position-specific emendations (listed in key.json 'emendations' and reading_tokens.tsv) printed without brackets in clair331_reading.md, plus 'partite' for 'parutite' stated in the header only; 14 letters in 14 words",
+  "D": "8 places: the clear margin sums (DCCCᵐ scuti, CLᵐ scuti ... Somma: M DCCL scuti) printed inside the reading",
+  "F": "the script applies only the alphabet of key.json, not its line/position emendation list"
+ },
+ "before": "27 of 98 words depart (texts compared: 1)",
+ "after": "27 of 98 words depart (texts compared: 1)",
+ "files_changed": [
+  "targets/joachim1530/NOTES.md",
+  "targets/joachim1530/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 14,
+  "examples": [
+   {
+    "text": "clair331-f156-157",
+    "decrypt": "mageso a",
+    "reading": "magesta",
+    "where": "clair331_reading.md:14 (key.json emendation line 1 pos 18)"
+   },
+   {
+    "text": "clair331-f156-157",
+    "decrypt": "peruenbti",
+    "reading": "pervenuti",
+    "where": "clair331_reading.md:14 (line 2 pos 26)"
+   },
+   {
+    "text": "clair331-f156-157",
+    "decrypt": "abaiia",
+    "reading": "abadia",
+    "where": "clair331_reading.md:19 (line 13 pos 9)"
+   },
+   {
+    "text": "clair331-f156-157",
+    "decrypt": "parutite",
+    "reading": "partite",
+    "where": "clair331_reading.md:15 (stated in header, READING.md prints par[u?]tite)"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"letters are the decode's (u/v as v where appropriate, as READING.md shows them), except \\\"partite\\\"\" (reading header shown on docs/joachim1530.html) — 13 further letters are emended; the page says so elsewhere (\"Thirteen local contextual emendations ... are individually listed in the key and token audit\")"
+ ],
+ "remaining": "All 14 are declared in the folder (key.json, reading_tokens.tsv, READING.md) but not marked inline; decision on bracketing is central. NOTES Status line says 'read' while profile class is 'read in part' (not touched). profile.json was re-dumped with indent=1, so its diff is larger than the one added step. Dots not re-checked on the images.",
+ "confidence": "high"
+}

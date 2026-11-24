@@ -113,6 +113,48 @@ the letter is glossed and printed, so this is a verification only.
 - 38 values seen once (probable); 171, 278 unresolved; groups 15, 40, 53, 61, 113, 178, 215 not in the table.
 - The other drafts of 11,2/15-16 were not swept for further cipher.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) applied `key.tsv` to `transcription.txt` (the 541 held-out groups) and
+compared the letters with `reading.md`: 30 of 172 compared words depart, none in brackets. `reading.md` marks its
+departures with italics, not brackets, and says so in its header, so the audit could not see the marks.
+
+Checked word by word against `decryption.txt` (letters of `frozen/05_DECODE.txt`), with w/u, v/u, j/i/y folded:
+
+- 24 words are in italics and follow the Latin written under the groups, as the header of `reading.md` states: 7 with
+  a hole (Saxonico, dimissos, optime, opprimamini, tot, ecquid, Schillerum) and 17 where the decode slips (for
+  example "paax" read *Pax*, "uile" read *vina*, "mon" read *Monet*, where the "et" has no group).
+- 3 words, "Caesaris" and "Caesar" twice, are not in italics where the key file gives "imperatoris", "imperator".
+  Group 225 is one code word that serves both (System and key above; `pairs.tsv` has it under forms of Caesar in 5
+  of its 13 places, lines 58, 68, 88, 285, 312, and under forms of imperator in 8). `key.tsv` holds "imperator" only.
+- 2 words follow the draft's Latin with no italics and no code value behind them: "Dn." after the first "Exc."
+  (no group stands for it; the decode has "excel ilgen") and "Gallos" (232.46 decodes "galliam"; listed as a
+  difference under Validation above and in the header of `decryption.txt`, not marked in `reading.md`).
+- 1 word is normalised: "quae" where the decode has "que" (186).
+- "Exc." twice stands for the decode's "excel" (the draft's abbreviation; letters dropped, none added), and "ita"
+  is printed plain although the decode has "ita?" (a group read with doubt, 201?); the closing lines of `reading.md`
+  count "ita" among the eight hole words.
+
+So 24 departures are marked by the file's own convention and 6 words carry letters the decode does not give with
+no mark (3 Caesar, Dn., Gallos, quae). The wording of `reading.md` was not changed.
+
+Changed: three comment lines added to the header of `key.tsv` recording that 225 also stands for Caesar, with the
+`pairs.tsv` lines. No value in the table was changed: the table is the frozen key (`frozen/03_KEY.json`), and the
+measurement of 10 Nov 2026 was made with "imperator". The figure after is therefore the same, 30 of 172.
+
+Not consistent with the above: the closing lines of `reading.md` say the italic words include "the code word 225 =
+Caesar/imperator", but the three Caesar words are not in italics. Not checked: the images, and why 232.46 stands
+over "Gallos" in the draft.
+
+Marked on 16 Nov 2026: 6 places put in italics in `reading.md`, the file's own mark: Dn., Gallos, Caesaris, Caesar
+(twice) and quae. No letter was changed. Left unmarked: "ita" (its letters are as decoded; the "?" after it is a
+separate illegible group) and "Exc." twice (the draft's abbreviation of the decode's "excel"; no letter added). The
+closing lines of `reading.md` were corrected: "Words in italics: 24" to 30, with the six words named and the note on
+"ita". On `docs/jablonski1705.html` the same three words in the quoted passage (Dn., Gallos, Caesaris) were put in
+italics and the sentence counting the italic words was corrected (7 hole words and 23 more: 17 slips, 3 for 225, and
+Dn., Gallos, quae). The copy of `reading.md` in the page's generated Full texts block is rebuilt by the site build and
+was not touched. `research/reading_audit/v2_score.py` (la): hole rate 0.035 before, 0.041 after.
+
 ## Remaining gaps
 
 - the two "ex aliena Cifra" runs on 11,2/15 no 33, scan 72 (25 groups) - blocker: no-key-material; they do not read with this key, and Ráday's own key (the clavis in the Ráday archive, Benda 1954) has not been seen

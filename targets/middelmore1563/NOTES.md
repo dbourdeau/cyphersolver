@@ -45,3 +45,11 @@ The fit is consistent; the full key was not rebuilt, since the printed text give
 
 Status → Decrypted (reading in print, Forbes ii); dates 19 Jul 1563 (R9246 main letter) and 26 Jul 1563; place Rouen /
 Vallemont; language English; R9247 duplicates R9246 image 3; f.155 top belongs to an earlier letter.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+The 19 July letter (R9246, 46 passages) was listed without a transcription. In order: (1) the
+folder has only `transcription_26jul.txt`, seven passages of the 26 July letter; (2) the DECODE record (public API
+and record page) carries three images, no transcription; (3) the images could not be fetched: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. So
+`transcription_missing` is recorded on the 19 July entry. What unblocks it: the three images through a DECODE
+account, then a transcription checked by decoding against `texts/R9246_19jul_forbes.txt`. Nothing else changed.

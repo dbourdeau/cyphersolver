@@ -534,6 +534,24 @@ the key and the 10 Nov letter stay under *key recovered based on adjacent plaint
 text is in the folder and aligned with the decode, those two letters can be classed read from the existing decipherment.
 `codes_open` is 10 (2, 3, 5, 8, 9, 31, 62, 80, and 67, 69 with low proposals), not 8.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher.
+
+| document | before | after | state |
+|---|---|---|---|
+| 10 Nov 1601, f. 34 (`reading_10nov.md`) | 0.993 | 0.968 (180 of 186 cipher words) | read, unchanged |
+
+- Measure defect: the reading is a > blockquote, which `v10_relabel` skips, so the recorded 0.993 was measured on the
+  commentary below it, not on the letter. Over the whole blockquote, clear included, the letter is at 0.980.
+- How the cipher was separated: the reading sets the enciphered passages in *italics* and the clear text of the sent
+  letter in roman; only the italics were counted.
+- Holes: [que], [car autrement] (two words), [seroit …] (one word, extent unknown) and [faites semblant] (two words:
+  the sent text, which differs from the minute; with it read, 182 of 186, 0.978). [Sillery's brother] stands for
+  *mon frere*, which the cipher has, and counts as two words read.
+- The class stays read in part (the 9 and 22 Nov letters are decoded, not read); `fraction_read` (0.2, estimated) is
+  unchanged.
+
 ## Remaining gaps
 
 The 9 Nov 1601 (f. 33) and 22 Nov 1601 cipher runs are decoded, not read (2,849 tokens; reading audit 22 Oct 2026); the two letter lines below carry their blockers. The glyph transcription (~70% accurate) caps the decode; re-transcribe on full-resolution crops, using the glossed leaves ff. 49v-50r, 53r, 56r to fix the confusable glyphs.

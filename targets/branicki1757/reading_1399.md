@@ -2,6 +2,8 @@
 
 Code groups are read where `numbers.md` gives a value. `[?word]` is a doubtful reading, and `[195]` is a code group that stays open. Numbers that act as punctuation or nulls are left out, and the decryption keeps them.
 
+This is the contributor's reading, not the output of the key: where the decryption has a slip it prints the word meant, and it words the number groups, mostly without a mark. The output of the key is `decryption_1399.txt`; `reading_1399_marked.md` is this text with every letter the key does not give in square brackets (added by the project, 16 Nov 2026).
+
 Monsieur,
 
 J'ay reçu celle dont vous m'avés honoré du 6 du courant, à laquelle j'aurois très volontiers répondu sur le champ, si le tems me l'avoit en quelque façon pu permettre, mais étant encor en voyage lors de l'expédition de la poste, pour laquelle l'on nous laissa à peine le tems requi, je ne pus satisfaire à mes desirs en cette rencontre.

@@ -27,3 +27,11 @@ without images. The Feb–Mar 1560 letters on R9220 read with the third cipher, 
 No images exist online: no other DECODE record covers ff.100-101, and the BL record (040-002109587) is not digitised. Not done: no ciphertext seen, so no token alignment. Nothing new is added, so catalogue entry 96 is removed
 and there is no site page. The DECODE correction (split into two letters, give their dates, cite CSP/Forbes)
 is queued in `decode_updates/queue.json`.
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R3026a and R3026b were listed without a transcription. In order: (1) the folder holds only Forbes's
+printed text; (2) DECODE R3026 (public API record and record page, fetched again today) has no image and no
+document attached; (3) there is no image to transcribe from: no other DECODE record covers ff. 100-101 and the
+British Library has not digitised the volume (above). So `transcription_missing` is recorded on both entries. What
+unblocks it: images of BL Add MS 4136 ff. 100-101 from the British Library, or their upload to DECODE.

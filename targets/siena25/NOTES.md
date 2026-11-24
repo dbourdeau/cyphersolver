@@ -21,8 +21,11 @@ git-ignored in the main checkout's siena1421 working folder). Slip, 11 lines, al
 
 ## Transcription and key
 
-- `transcripts/no25.txt`, `no25.tok`, `no25_signs.tok`: 496 tokens in 65 point-divided words, 22 signs built on a
-  running horizontal stroke (agent E). Measured 14 Oct 2026: 496 tokens, 22 distinct.
+- `transcripts/no25.txt`, `no25.tok`, `no25_signs.tok`: 496 tokens in 65 point-divided words, 21 signs built on a
+  running horizontal stroke (agent E; the TH sign is one of the 21). The token files and `keys/no25_key.txt` were first
+  written from the first-pass transcription (22 distinct: Y for seven signs that are X, G for one S, PH2 for one Q, plus
+  for two F, and XB = t in the key); on 21 Nov 2026 they were regenerated from the rev. 2 transcription, which is the
+  one the reading and the validation use (496 tokens, 21 distinct).
 - Italian, simple substitution (Sienese 'ch' spelling). `homsolve2.py` (words=1, it-cinquecento) gave the key
   unaided; hand fixes H = h, Y = m (`keys/no25_key.txt`). None of the 43 filed keys of fasc. 1 fits.
 - Verification pass (agent E, `transcripts/no25_reading.txt`, transcription rev. 2): Y and X are two glyphs
@@ -33,7 +36,7 @@ git-ignored in the main checkout's siena1421 working folder). Slip, 11 lines, al
 "Noi aviamo chompreso che questo signiore no chavalcharà per lo modo che chostoro di qui voreveno, e dilivera senza
 altra presa fare di qui partirsi e d'esare chostà, e crediamo sarà sabato prossimo, e farano la via di Laiaticho, e poi
 di là si partirano e l'altro dì sarano a Radichondoli e per quello paese e ancho a Chasole ... e però richordiamo a la
-signoria vostra che ne' detti luoghi faciate provedere di pane, vino, biada ... per fante propio significharemo a la
+signoria vostra che ne' detti luoghi faciate provedere di pane, viada, vituagia, chome vi pare chovenirsi ... per fante propio significharemo a la
 magnificientia vostra." An armed lord's route from the Volterra side (Lajatico) through Radicondoli and Casole into
 Sienese territory; Siena asked to provision it. Undated.
 

@@ -136,7 +136,8 @@ basis of this section.
   stayed restored the strict count would be 391/431 = 90.7% (412/431 = 95.6% on the contributor's count).
 - Not checkable from the repository: that the integration rule was hashed before the sheet was opened (the rule and the
   answer file are not in the folder; their hashes b61a4fd7... and c692c679... are the contributor's statement), and the
-  images themselves (PARES HTTP 429 again).
+  images themselves (PARES HTTP 429 again). Since 19 Nov 2026 the rule and the answer file are in `sign_check/`
+  (see "Sign checks" below); the timing still rests on the contributor's record.
 - `FREEZE.sha256` and `POST-MESURE.sha256` check out except for the lexicon file, which is not in the folder (it is
   `lang/lexicons/it.json.gz` decompressed, as the Files table says).
 - `_check_reading.py` gives 0.365 on `reading.md`; the marks (brackets, braces, code numbers) break the words it looks for.
@@ -181,6 +182,50 @@ issue and are not copied here. The comparison below was made token by token and 
 Recorded as a same-day independent corroboration of the key (one key, one entry): a `verification` credit in
 `profile.json`, "independent verification" in `outcome.verification`.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `key.tsv` to `transcription.txt` and compared the letters with `reading.md`:
+41 of 390 compared words depart (11%), 39 unmarked gaps. The files were then compared here group by group
+(own read-only snippet: first reading of each a/b alternative, dots dropped, codes left out). Causes:
+
+- **Audit artefact, most of the 39 gaps.** (1) The script took the description in the value column for a value:
+  `X` = "punctuation (comma or full stop)" became the letters "punctuationcomma" at each of the X signs, and the
+  descriptions of the unresolved codes ("unresolved (a title: ambassador / resident?)") became text. (2) It does not
+  know the convention of the transcription that a trailing `'` is the superscript dot, so each dotted group (`42'`,
+  `27'`, `41'`, `43'`) was dropped: these are the "missing" s, r, c, t, e.g. `38 25 42' 23` = paso printed by the audit as
+  "pa[]o". `key.tsv` holds every value concerned (the `'` row included); nothing is missing from it.
+- **Transcription and reading out of step, 12 words, not bracketed in the reading.** `transcription.txt` is the
+  frozen v1 and was left unchanged on purpose; the reading prints the digit confirmed at the blind re-reading of
+  11 Nov 2026. So the mechanical decrypt of the published transcription gives another letter in 12 words that the
+  reading prints as certain, without brackets: 1.01 il (decrypt i-du), 1.17 atacatto (ata-i-atto, b-alternative),
+  2.01 lontano (lontane), 2.01 miglia (mig-lo-a), 2.13 perche (n-e-r-che), 3.20 risolutione (ris-[243]-lutione,
+  b-alternative), 4.04 al (a-du), 4.04 Signor (sognor), 4.05 al (a-du), 4.13 mandero (ma-f-dero), 4.19 termini
+  (termino, b-alternative), 5.07 oferte (ofer-b). All 12 are listed in the table "Corrections confirmed on the images"
+  of `reading.md`; they are not marked in the clause-by-clause text, and no transcription file carries the corrected
+  digits. Five of them (1.17, 2.01 miglia, 2.13, the two groups of 4.04) rest on the single blind reader (see
+  "Integration check (12 Nov 2026)").
+- **Marked departures, 11 words.** The 9 restored words are in square brackets and match the table. Two words in
+  braces differ from the decrypt by one letter, which the braces mark as probable without saying what was changed:
+  2.21 {spiagge} (decrypt spiaggie) and 5.07 {doppiar} (decrypt dopiar; `validation.txt` quotes "dopiar").
+- Apart from these 23 places the reading is letter for letter the decrypt (1,853 letters and code places compared).
+
+Changed: nothing in `key.tsv`, the transcription or the reading; this section and one profile step. The audit figure
+is therefore the same after as before (41 of 390), and by the count made here 12 words depart without a bracket.
+To decide centrally: bracket the 12 words, or publish a transcription v2 with the 12 confirmed digits beside the
+frozen v1 so that the reading follows from a published file. Not checked: the images (the digits themselves).
+
+Marked on 16 Nov 2026. In `reading.md` the 12 words are now marked, 12 places in 10 clauses, with square brackets round
+the letters that the published transcription does not give (i[l], ata[c]atto, lontan[o], migl[i]a, [p]erche,
+ris[o]lutione, a[l], S[i]gnor, a[l], ma[n]dero, termin[i], ofer[te]); no letter was changed. Brackets inside a word
+distinguish them from the 9 restored words, which are bracketed whole; a header paragraph says so, says that they are
+still counted as certain, and names `decryption.txt` as the unedited output of the key. The header line "plain =
+certain (every group read directly with key.tsv)" now adds "for 12 words after a corrected digit". {spiagge} and
+{doppiar} were left as they are (already in braces) and their decrypt forms are given in the header. The
+transcription was not rewritten. On the page, the table row for the certain words now carries the same qualification.
+The counts (390 / 27 / 9 / 5) were not changed. `research/reading_audit/v2_score.py` on `reading.md` (it): hole rate
+0.153 before the marks, 0.177 after. The decrypt audit now gives 33 of 390 words departing (41 before); what is left
+is its artefacts.
+
 ## Remaining gaps
 
 - 9 restored words - blocker: open-codes; none is settled by the independent transcription of issue #421 either; after the blind re-reading on the images (11 Nov 2026), 6 are groups whose image shows the digit of transcription v1 (probable cipher-clerk error, nothing more to read on the image), 1 is undecided (quando 1.12), 1 is a group the encipherer left out (di 1.06) and 1 is a value seen only once (47 = z, lunghezza 5.02; a second use of 47 would settle it)
@@ -209,3 +254,7 @@ Recorded as a same-day independent corroboration of the key (one key, one entry)
 | `translation.md` | English translation |
 | `validation.txt` | protocol order, the single measurement and its reservations |
 | `frozen/` | the hashed working files (French): PREREG.md, FREEZE.sha256, POST-MESURE.sha256, RESULTAT.md, the proposer's key and readings, our decoder, metric, calibration and measure scripts with their outputs, transcription v1; BLIND-REREADING.md (the blind re-reading of 11 Nov 2026, in English) and v2/ (the readings with the 12 confirmed words unmarked, the counting script and its output). The lexicon `lexique-it-cyphersolver.json` listed in FREEZE.sha256 is `lang/lexicons/it.json.gz` of this repository, decompressed (same SHA-256). |
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here the record itself said that AI agents prepared the sheet (crops and reference thumbnails); they also wrote the rule, built the HTML sheet and scored the answers, and Brice Dudout, the contributor of the reading, only chose the shapes. The record therefore moves to `outcome.sign_check`: 19 signs, controls 2 of 2, 12 corrected, 6 as transcribed, 1 undecided. `sign_check/REGLE-INTEGRATION.md` (the integration rule, in French) and `sign_check/reponses-brice-2026-11-11.json` (the answers as exported) are the files the hashes above were taken on, byte for byte (SHA-256 b61a4fd7... and c692c679...); the thumbnails, the images and the private shape-to-digit map stay out. By the file times of the working folder the rule was written at 11:20 CET on 11 Nov 2026, the sheet built at 11:22 and the answers exported at 13:54; the hashes were not published before the answers, so this timing rests on the contributor's record. The checker is the contributor, not an independent reader.

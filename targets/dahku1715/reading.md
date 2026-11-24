@@ -3,6 +3,10 @@
 Marks: plain = certain (every letter given by the key); {x} = probable (one or two signs off, or a letter the key does
 not give, settled by the sense); [x] = restored letters inside a clear word (no cipher word is restored); ‹x› = unresolved
 (the decryption as it stands). Clear words of the letter are kept as written. Line references as in transcription.txt.
+Spelling: the Polish diacritics (ł, ś, ć, ż, ó, ę, ą) and the punctuation are added in the reading; the key has no sign
+for them and the decryption column has none.
+d11: the clear word is `=potewaz` in transcription.txt and is printed po[ni]eważ here; the letters in [ ] are not in the
+transcription, which has t at that place. Which of the two is right was not checked on the image.
 
 The key is frozen and partial by our protocol (see validation.txt). After the measurement Brice Dudout answered a blind
 shape plate on the barred sign `V` (planche V, 5 Nov 2026, 23:41): at d05 and e05 it has the shape of `W` (= z), so it is
@@ -21,7 +25,7 @@ keeps V = g).
 | d08 | odsendomirza nato odniesli ta- | od Sendomirza. Na to odnieśli ta- |
 | d09 | ki respons ZE DEKLAROWAC Y TYM z | -ki respons, że deklarować y tym ‹N› |
 | d10 | niemoze wassistecy zwoyskim | nie może {w} {assistencyi} z woyskim, |
-| d11 | POTEWAZ wprzod trzeba wiedziec | ponieważ wprzód trzeba wiedzieć, |
+| d11 | POTEWAZ wprzod trzeba wiedziec | po[ni]eważ wprzód trzeba wiedzieć, |
 | e01 | IAKY resoliacio da w im prymas | iaky {rezolucyą} da ‹C› {im} prymas |
 | e02 | poslom sendomirskim DOMEY POSL- | posłom sendomirskim. Domey posł- |
 | e03 | NYM woisko zas nieoddaliac da- | -[a]nym woisko zaś nie oddaliać {de-} |
@@ -55,5 +59,5 @@ The planche V did not change the share: d05 moves from certain to probable, e05 
 … u JMD krakowskiey W.D.: posłowie sendomirscy ‹zto› ‹e› {w} ‹kostalacio› aby ‹N› chciał assistere z woiskim koronnym
 {pospolitego} {ruszenia} {wdztwa} {sendomirskiego}, które determinowano pro die nona Octobris, y żeby woiska koronnego
 {nie oddalać} od Sendomirza. Na to odnieśli taki respons, że deklarować y tym ‹N› nie może {w assistencyi} z woyskim,
-ponieważ wprzód trzeba wiedzieć, iaky {rezolucyą} da ‹C› {im} prymas posłom sendomirskim. Domey posł[a]nym woisko zaś nie
+po[ni]eważ wprzód trzeba wiedzieć, iaky {rezolucyą} da ‹C› {im} prymas posłom sendomirskim. Domey posł[a]nym woisko zaś nie
 oddaliać {deklarował}, tylko {za Wisłę} przeprawić z ‹kodzarzyc› prosto ‹nadra› ‹zo› stronę ‹a› domieszky deklarować.

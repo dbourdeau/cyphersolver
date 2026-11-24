@@ -168,6 +168,18 @@
    "kind": "control",
    "what": "Integration check (round 7, 13 Nov 2026): check_marks.py, signs.py and the checkers re-run (154 of 165 = 93.3% verbatim reproduced); own second decoder from key_frozen.tsv matches decryption_malen1.txt on all 33 lines; scan 2 fetched from the archive viewer's Zoomify tiles, and the line layout and word counts of L07-L10 agree (not a sign-by-sign blind transcription). Strict share stays 154 of 165 = 93.3%; with the 4 unresolved code-number occurrences (60, 59 twice, 68) as holes 154 of 169 = 91.1%. Letter 2 Dutch passages and a blind transcription are workable, so the target stays in progress.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): 51 of 229 words reported as departing from the key (letter 1: 45 of 197; letter 2: 6 of 32). All are artefacts of the audit script: it decrypted the line labels 'Lnn:' as the sign L (a) and ran the clear script in <...> through the key. A separate read-only decoder from key.tsv reproduces decryption_malen1.txt (31 of 33 lines; L22 and L29 differ only by '?' printed for '&') and decryption_malen2.txt (8 of 8), and the marked block of reading_malen1.md, marks undone, gives the same letters as the decrypt on all 33 lines. No key value added or changed. One unmarked letter in the running text only: d'Hollande (signs: diollande; marked {i/h} in the marked block). Audit figures unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit, marking: the one unmarked departure, in the running text of reading_malen1.md, marked d'[H]ollande (signs: diollande); one header line added above the running text stating its marks. No letter changed; marked block untouched. v2_score (fr) hole rate 0.068 before, 0.070 after.",
+   "result": "worked"
   }
  ],
  "outcome": {

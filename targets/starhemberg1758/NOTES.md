@@ -55,6 +55,13 @@ Checked here:
   repository and may know more.
 - Outcome: read after matching with key from external sources (the 1752 tables), by the contributor (provenance contributed).
 
+## 14 Nov 2026: reading review (audit section J)
+
+The German reading and the English of `aaymeloglu/edition.md` were read as sentences with `aaymeloglu/alignment.tsv`
+beside them, and a `reading_review` recorded in `profile.json`, grade A: the enciphered text is three long sentences
+and each holds from end to end; the holes are single words (*stattlich?*, *bereit?*, *Verlangen?*, the defective 119).
+State stays read in part (0.904). Nothing was checked on the photographs or on the DECODE key tables in this pass.
+
 ## Remaining gaps
 - The five digits added from the photographs and the eleven digit repairs: - blocker: needs-physical-access; the photographs are Pillon's
   and not shareable. Ask Pillon (or Tomokiyo) for a check, as the contributor suggests.

@@ -82,7 +82,7 @@
   ],
   "sessions": 2,
   "first_date": "2026-09-17",
-  "last_date": "2026-10-14"
+  "last_date": "2026-11-14"
  },
  "solution": [
   {
@@ -103,7 +103,9 @@
    "what": "Split from the former whole-volume target esp318 under the one-key rule (George Lasry, 14 Oct 2026): no. 5 is in Escrivà's cipher, a different key from the other ciphered letters of the volume. Own folder, profile, page and ledgers.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Parisi 2020 linked by DOI (modern article, not copied); no ciphertext transcription exists (project work).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption = Parisi 2020 linked by DOI (modern article, not copied); no ciphertext transcription exists (project work).", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "what": "Parisi's printed text (2020, pp. 173-174, read in targets/esp318/lit/parisi2020.txt and in the article PDF fetched again from riviste.unimi.it) translated into English, sentence for sentence (texts/no5_en.md); the limits of the cipher part taken from the leaf (clear to 'me havea declarato', clear again from 'Et perché longamente').", "result": "worked"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Opened f. 5r (targets/esp318/full/f005r.jpg) to transcribe the cipher: about 22 lines of graphic signs with Latin-letter nomenclator groups, a stain down the middle; the sign table of Parisi 2004 survives in the repository only as text without its glyphs. Not transcribed; recorded as transcription_missing.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -128,7 +130,10 @@
     "label": "Esp. 318 no. 5, Federico III to the Catholic Monarchs, 11 Jan 1497",
     "decryption": "https://doi.org/10.54103/2611-318X/14378",
     "summary": "Federico III of Naples to Ferdinand and Isabella, San Germano, 11 Jan 1497, enciphered by the Spanish ambassador Joan Ram Escrivà in his own cipher: Federico confirms the pre-agreement for the marriage of his nine-year-old son Ferrando, duke of Calabria, to one of the Spanish infantas.",
-    "note": "The whole letter is printed by Ivan Parisi (2020, Studi di storia medioevale e di diplomatica n.s. IV, pp. 157-177, open access), a modern publication: linked by DOI, not copied. No transcription of the ciphertext was made here (project work); the scans are in targets/esp318/full/."
+    "note": "The whole letter is printed by Ivan Parisi (2020, Studi di storia medioevale e di diplomatica n.s. IV, pp. 157-177, open access; the text is on pp. 173-174), a modern publication: linked by DOI, not copied. The translation (14 Nov 2026) is of his printed text. No transcription of the ciphertext: see transcription_missing; the scans are in targets/esp318/full/.",
+    "translation": "texts/no5_en.md",
+    "language": "it",
+    "transcription_missing": "The cipher on f. 5r (about 22 lines, scan in targets/esp318/full/f005r.jpg, opened again on 14 Nov 2026) is written in graphic signs of Escrivà's homophonic alphabet with Latin-letter nomenclator groups (qix, qao, vee ...), and a stain down the middle of the leaf covers part of every line. The sign table (Parisi 2004, Pedralbes 24, appendix II, 'Alfabeto n. 1') is in the repository only as extracted text (targets/garcilaso1498/lit/parisi2004.txt), where the glyphs are lost, so a faithful transcription needs a sign inventory first, which was not built in this pass. To unblock: the printed alphabet table of Parisi 2004, then a line-by-line transcription checked on Parisi's 2020 text."
    }
   ]
  }

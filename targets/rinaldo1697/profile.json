@@ -141,6 +141,12 @@
    "kind": "literature search",
    "what": "Catalogue, leads, targets and open PRs of this repository; two web searches. No edition or decipherment found.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit: key.tsv re-applied to transcription_c73.txt and compared with reading_marked_c73.txt. The 18 of 60 departing words were an artefact of the audit script: it does not strip the line labels V01-V17 and folds v to u, so each label counted as a letter u absent from the decrypt. A separate line-by-line check found the letters of the marked reading equal to the key values of the letter groups on all 27 lines, and the bracketed codes equal to the code groups; no unmarked emendation. No file changed; the script's figure is unchanged (18 of 60; 1 of 46 with labels removed).",
+   "result": "worked"
   }
  ],
  "outcome": {

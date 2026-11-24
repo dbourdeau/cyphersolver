@@ -95,7 +95,7 @@ sibling, the cipher is not readable from the material available.
 ## Remaining gaps
 
 - R1126 cipher pp. 1–2: 77 of 492 words not counted as read under the strict count (54 restored by sense from the clear copy of pp. 3-4, 23 unresolved) - blocker: illegible; faint small upper signs and look-alike labels on the Vestigia images (residual transcription error 2-3%), these words rest on the period clear copy; a better ASMo image is the only route
-- R1127 cipher (5 lines, ~40 columns) - blocker: too-short; plus faded and torn, same unknown key
+- R1127 cipher (5 lines, 46 columns) - blocker: too-short; faded and torn, one unadjudicated transcription; decoded with the R1126 key on 14 Nov 2026 it gives no Italian (`R1127_decryption.txt`), and the images are not reachable here to re-read it
 
 ## Escalation
 
@@ -120,3 +120,21 @@ designated in advance. Pages 3-4 of R1126 are a period clear copy of the ciphere
 words); a key frozen before that copy was opened aligns with it at 0.765 / 0.667 (controls at most 0.35). The text is therefore not new; the contribution is the key and the identification of the copy. Reading of pp. 1-2:
 84.3% of words read under the strict 95% rule (415 of 492: 290 sure, 125 probable; 95.3% if the 54 words restored by sense are counted); probable and restored words rest on the copy. See `dudout/README.md`.
 
+## 14 Nov 2026: full-texts pass, R1127 listed
+
+R1127 had no `outcome.texts` entry, and `documents[]` said "not transcribed" although `t1127.txt` (and the bare
+columns, `t1127_cols.txt`: 46 columns, 39 distinct, measured) has been in the folder since 21-22 Sept. Corrected.
+
+Decryption produced: `apply_key.py` applies Dudout's reading key (`dudout/key_K3v2_reading.json`) with the same sign
+merges as `dudout/R1126_decryption.txt` (check: it reproduces 40 of that file's 43 lines exactly; the other 3 differ
+at u/1, the a+9 merge and a struck passage, none present in R1127). Output `R1127_decryption.txt`:
+
+    L01 bo da ro a … de qua n to e … …
+    L02 ti a ‹k/7› mae ∅ ‹-/g› he g li de
+    L03 mo … ho ∅ re ∅ ‹-/g› po … …
+    L04 … i l pa re a ta do rep
+    L05 … la a mi ci pa n
+
+This does not read as Italian. R1127 is listed as `decoded, not read`. The R1127 gap stays as in Remaining gaps
+(too-short; faded and torn), with the key now known but the single transcription not re-readable here: the images
+are not in the checkout and DECODE serves full images only to a logged-in session.

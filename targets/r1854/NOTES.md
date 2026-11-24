@@ -1,6 +1,6 @@
 # R1854 image 2 — an unnamed Gonzaga agent (Rome) to Gianfrancesco Gonzaga, 9 August 1428
 
-Read 22 Sept 2026 (key recovered from the ciphertext alone); written up at docs/r1854.html. Split on 14 Oct 2026 under
+Read in part (16 Nov 2026, recounted over cipher words: 283 of 333, 85.0%). Read 22 Sept 2026 (key recovered from the ciphertext alone); written up at docs/r1854.html. Split on 14 Oct 2026 under
 the one-key rule (George Lasry): DECODE R1854 "Mantova enciphered letters" holds four letters to Gianfrancesco
 Gonzaga in four ciphers, and each is now its own entry. This folder and slug keep image 2. The others, each a
 different cipher with its own page:
@@ -56,8 +56,39 @@ newly read; replaces "vellent venire(?) [?] ipsas"). Re-count: P2 1757/1802 (0.9
 The 11 Oct validation ran on the four keys pooled; `mk_validation.py` now writes one `validation.tsv` per entry and
 `_validate.py` was re-run on this key alone. `make_profile.py` wrote the old combined profile and is superseded.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. Image 2
+is wholly in cipher (the clear date at the foot is not in the reading), so every word of the Latin section of
+`reading_p2.md` counts; the header paragraphs, the English summary and the measure, counted before, are not the
+reading. Each word was aligned with the decode of `p2v3.txt` by `key7.txt` (`python show.py p2v3.txt key7.txt`).
+
+- P2: 0.963 -> **0.850** (283 of 333 words). Class **read -> read in part**.
+- Holes (50). Marked in the reading (23): vel[le], pra[n]dere, [in], num[ero?], ve[..], the [?] after "ad", [p]arte,
+  contineat(?), [de]liberationem, the [..] after "visitabit", a[d], sinis[t]r[u]m, [C]arolus, the [?] after "dicit",
+  u[t], vel(l)e(nt), the [?] after "matris", "quod" and "quem" and after the second "Victorius", amiti(?),
+  excusare(?), and the unvalued code ARO. Each [?] or [..] is one word, the least the decode shows there (one to two
+  letters each). Repaired without a mark where the decode gives other letters (27): Orlandis (orslandis), Victorius
+  (uicorius), reversurum (reuerserum), Senensis (senensiess), ante (ate), conversatur (conuersatmr), et tandem (qui
+  tandem), Iovis (iouiss), quo (que), the fragment "ud" after Palme, non (noin), breve (breua), ipsis (ipsisi), quartus
+  (quartm), inclinasse se (inclinasesse), contingeret (continueret), et quod (ett queod), Nam (nai), Victorius
+  (dictorius), que (cui), persuaserat (persuasemerat), fieri omnino (efeieri omneino), Victorius (sictoris), dixerit
+  (deixerit), and one unread sign between "predicto" and "Verum" (one word).
+- The key is rebuilt from the ciphertext, not a period key, so the one-digit-slip rule does not apply and a repaired
+  letter is a hole. Some of these may be misreadings in `p2v3.txt` rather than the writer's slips; an image re-check
+  was not part of this recount.
+- Counted read: ARW = cardinalis, a code given with its value (twice), and the single letters the cipher writes for
+  double ones (comitisam, iohanes, retulise, iuserit, puela, ese, teras), which is the writer's spelling, not a slip;
+  senper and exonnerando likewise.
+- By the marks alone the figure would be 0.931 (308 of 331). The sign count, 1,757 of 1,802 signs (0.975), is a
+  different measure and stays as fraction_read.
+- Measure declaration: `reading_section: Latin`. `research/reading_audit/v10_relabel.py` gives 0.934 with it: it
+  cannot see the repairs the reading makes without a mark, counts sinis[t]r[u]m as two holes and ARO and vel(l)e(nt)
+  as read. The hand count is the figure of record.
+
 ## Remaining gaps
 - P2 code ARO (1×, "in filium [ARO]") and ~45 signs in doubtful spans (L15 "habet m num b de ue ad", L27, L31-32) - blocker: too-short; single occurrence, no sibling letter in this cipher
+- P2 letters supplied or repaired in the reading (marked, and 27 words repaired without a mark), counted unread in the cipher-word share (16 Nov 2026) - blocker: no-key-material; the key is rebuilt, so the slip rule does not apply, and no period key or second copy is known (the R1853 register keys do not fit); an image re-check might show some to be misreadings in p2v3.txt (not done in this recount)
 
 ## Escalation
 - [x] siblings: R1853 (register, 14 images) read for keys; all other Mantova records on DECODE opened (R7858-R7888 = Archivio Gonzaga E.I.2 b. 423, 16th-17th c. keys; R7888-R7890 = 1395 Armanini); none for 1428-30; the other three letters of R1854 are in other ciphers

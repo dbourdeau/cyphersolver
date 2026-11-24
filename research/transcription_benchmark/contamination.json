@@ -1,0 +1,15 @@
+{
+ "checked": "2026-11-19",
+ "question": "Could the human reference transcriptions have been in the models' training data?",
+ "method": "For each of the ten DECODE records: the record page was read with a logged-in session (stored cookie) and its 'Access Mode' field noted; the reference transcription file was requested from de-crypt.org/decrypt-custom/filesrv/ without any cookie, and one file (R7) was requested with the cookie.",
+ "records": {
+  "R72": "Authentication required", "R1049": "Authentication required", "R6": "Authentication required",
+  "R7": "Authentication required", "R1953": "Authentication required", "R2078": "Authentication required",
+  "R1009": "Authentication required", "R1010": "Authentication required", "R1889": "Authentication required",
+  "R1890": "Authentication required"
+ },
+ "anonymous_request": "all ten files: HTTP 200 but the body is DECODE's 17,947-byte forbidden.png placeholder, not the text",
+ "logged_in_request": "DOC_R7_D1625_1625.txt: HTTP 200, 4,202 bytes, text/plain (the transcription)",
+ "conclusion": "The reference transcriptions are not served to anonymous clients, so an ordinary web crawl would not have collected them. This lowers the contamination risk; it does not rule it out (registered users can download them, and parts of some documents may be quoted in print or online).",
+ "page_images": "The page images were not checked here; some DECODE records serve images publicly. Images alone carry no transcription."
+}

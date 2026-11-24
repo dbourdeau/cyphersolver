@@ -82,6 +82,20 @@ from context for the rest. The Received ledgers of the same months may also hold
 telegrams (adjacent plaintext). Neither has been done: the archive.org and eHistory OR texts did not come through
 from this machine on 27 Oct.
 
+## Read share over cipher words only (16 Nov 2026)
+
+Recount for the rule that the read share counts cipher words only. Each reading file (`reading/mssEC19_p1-7.md`,
+`addition_2026-11-12/reading/{U1,U2,U3,McPhail,Grant}.md`) holds the telegram text alone: the ledger's operator heading
+and the check words after the signature are already outside the body (see each `_notes.md`), and the heading line
+inside a telegram ("Washington, February fifth ... For Colonel McCallum"), the addressee, the forwarded message in
+McPhail and the signature are code words read with the keys, so they are cipher. There is no clear text in the
+measured body. Recounted by hand: T1-T11 665 words, 0 holes (1.0); U1 34/0 (1.0); U2 25 words, 1 hole [?unity]
+(0.962); U3 35 words, 6 holes (0.854); McPhail 261 words, 3 holes (0.989); Grant 58/0 (1.0). Nothing changes: no figure,
+no state, no class; `v10_relabel.py` already gives these figures from the whole body ("not split" in its tsv means
+there is no marked clear text, not that clear words are counted). The one-line headings the reading gives each
+telegram in `reading/mssEC19_p1-7.md` ("To Sheldon, Fort Monroe, twenty-seventh January") are the ledger's own and
+carry no hole, so they would not change the figure either way.
+
 ## Remaining gaps
 
 - Corpus: harvest of the 67 items still running at the time of writing; telegram counts per ledger in

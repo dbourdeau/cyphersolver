@@ -61,6 +61,40 @@ cipher; Winchester, St Albans and York are Wolsey's benefices) and [Q] as [il Re
 All grade I, in square brackets, not key values; coverage figures unchanged. Details in READING.md; the page now
 prints the introduction and the six entries as one continuous passage.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` applies the `alphabet` of `key.json` to `ciphertext_rechecked.txt` and compares the letters with
+`clair331_reading.md`: 27 of 98 compared words depart (28%). Checked here sign by sign against `reading_literal.txt` and
+`reading_emended.txt`. Nothing was changed; the figure after is the same.
+
+Causes found:
+
+- Clear material in the reading (8 places): the margin sums, which are in clear in the manuscript, are printed inside the
+  running text ("circa DCCCᵐ scuti", "contanti CLᵐ scuti", ... and the closing "Somma: M DCCL scuti"), with "[m/m notation]
+  scuti". The script takes them for letters the key does not give. Nothing wrong.
+- The 13 local emendations, not marked in the reading: the alphabet alone gives `reading_literal.txt`; `clair331_reading.md`
+  prints `reading_emended.txt`. The 13 changed letters are listed by line and position in `key.json` (`emendations`) and in
+  `reading_tokens.tsv`, and READING.md says so, but in `clair331_reading.md` none is bracketed and its header says "letters
+  are the decode's". The words: magesta (mageso-a), quanto (quano-o), si (or), pervenuti (pervenbti), intrate (intrgte),
+  de casa (df), Vinchiestri (Vinchieso-ri), abadia (abaiia), sancto (sancoo), rebatuti (rebgtuti), insieme (insdeme),
+  asignati (asiana-ti), circa (cdrca). The script reads only the alphabet, not the position list, so all 13 show as departures.
+- One more letter change, stated but not bracketed: "partite" for the decode's "parutite" (said in the header of
+  `clair331_reading.md`; READING.md prints "par[u?]tite").
+
+Apart from these 14 letters and the clear sums, `clair331_reading.md` is letter for letter `reading_emended.txt` (u/v folded;
+[S2], [D], [Q] kept). No key value is missing from `key.json`. Whether the 13 emended letters and "partite" should carry
+brackets in `clair331_reading.md` is left to the audit's central decision. The dots themselves were not re-checked on the images.
+
+Marked on 16 Nov 2026. In `clair331_reading.md` the 13 emended letters of `key.json` are now each in [ ] inside their word
+(mages[t]a, quan[t]o, [s]i, perven[u]ti, intr[a]te, d[e] casa, Vinchies[t]ri, aba[d]ia, sanc[t]o, reb[a]tuti, ins[i]eme,
+asi[g]nati, c[i]rca) and "partite" is printed "[partite]" (the whole word, since the change is a letter left out). 14 places,
+no letter of the text changed. Header: "letters are the decode's ... except partite" now says the letters are those of
+`reading_emended.txt`, with the 13 emendations in [ ]. READING.md and `reading_emended.txt` were not changed: they state the
+emendations in their own way. The page was not changed: the header it shows is in a generated block and follows the file at
+the next build; the quotation in its section on the reading comes from READING.md. The audit script now gives 16 of 97 words
+(the clear sums). `v2_score.py` hole rate: 0.092 before, 0.208 after, because it counts each word holding a bracketed letter
+as a hole. `read_share` (0.91) and the class in the profile were not changed.
+
 ## Remaining gaps
 
 - `[D]` (four occurrences), `[Q]` (two), `[S2]` (one): blocker: no-key-material. Wolsey and a royal title are plausible for D and S2; Q may be a pronoun or title. None has a verified expansion. Do not substitute whole words as if recovered from a key.

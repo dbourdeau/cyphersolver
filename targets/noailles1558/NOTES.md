@@ -126,6 +126,40 @@ column of the table (below).
 - `reading.md` prints "ordre" unmarked though its signs are tentative; with it as a hole the strict share is 0.538 instead of 0.548. Not re-measured here.
 - Brackx's 0.75 / 0.84 are from his first post, with the earlier key.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/` re-applied `brackx/key_r5.tsv` to `brackx/transcription_f60r_f60v.txt` and compared the
+letters with `reading.md`: 25 of 71 compared words depart (35%), 5 unmarked gaps, all "only in reading". The three
+files and `brackx/decode_tvd_r5.txt` were then compared here line by line. Causes:
+
+- **Audit artefact, 4 of the 5 gaps.** (1) The key row of the sign labelled `#` (= i, firm, 9 tokens) begins with
+  `#`, so the script skipped it as a comment line and decoded none of the nine `#` signs: the "missing" i of
+  maulvais (A1) and conduitte (A2). (2) The line labels `A2` and `B2` of `reading.md` were taken for text: the
+  "a" after pauure- and the "b" after monseigneur. The key file holds the value; nothing is missing from it.
+- **Letters changed without a mark, 2 words** (Brackx's reading, copied unchanged from
+  `brackx/reading_original.md`). C5: the signs `Zo dag A t qx 5 q f` decode r-i-t-a-i-l-e-s, one `5` = l; the
+  reading prints "ritailles" with two. C3: `y W dag q D ^ z Ab A` decodes v-u-i-e-n-n-e-n-t (`W` = u, firm);
+  the reading prints "viennent", the u dropped. The audit shows the first and cannot show the second, since it
+  counts only letters the reading adds. `reading_original.md` says "The spelling is the decode's".
+- **Spelling, 2 words.** C4 "ny ... ny": the decode has n-i (`D #` twice); the audit folds i and y.
+- **Marked or noted.** In B1 "[?5 signs: gloss ...e Seigneur]" covers `GS J H2 X I`, of which `J` decodes s (firm);
+  the s is inside the bracket. In C4 "[?8 signs: e r o · a r d]" lists seven signs (`q Zo w +o t Zo 9`).
+  "ordre" (A1) printed plain on tentative values was already noted at the claims review of 12 Nov 2026.
+- Everything else in the reading is the decode letter for letter. The 25 words of the audit figure follow from the
+  dropped `#` row and the labels, which break the alignment around them; by the comparison made here 2 words depart
+  without a mark and 2 by spelling.
+
+Changed: nothing in the key, the transcription or the reading; this section and one profile step. The audit figure
+is therefore the same after as before (25 of 71). To decide centrally: whether "ritai[l]les" and "v[u]iennent" are
+marked in `reading.md`, which is kept as Brackx's text unchanged. Not checked: the signs on the images.
+
+Marked on 16 Nov 2026. Nothing was marked inside the reading: it is Brackx's text and stays as he wrote it. The
+header of `reading.md` now says that it is his reading and not the unedited output of the key, names
+`brackx/decode_tvd_r5.txt` as that output, and lists the three departures (viennent, ritailles, ny). On the page, the
+sentence quoting block C now gives the key's forms after the quotation. `brackx/reading_original.md`, which says "The
+spelling is the decode's", was left as contributed. `research/reading_audit/v2_score.py` on `reading.md` (fr): hole
+rate 0.268, the same before and after.
+
 ## Remaining gaps
 - start of each marginal gloss line on f. 60r, and with it the five large signs that open block B and the four after "affaires" in block A - blocker: needs-physical-access; swallowed by the binding; needs the page opened flat
 - f. 60v C2, C4, C5 unread groups: Beling's cribs from the outer gloss (11 Nov 2026, `beling/README.md` section 5) give tentative `+o` z, `Ob` r, `lp` ost, but C2 "u l", C4 "e r o" and C5 "t h ?" do not meet the gloss as read - blocker: open-codes; open work, not only an image limit: the cribs exist and the decode does not yet meet them; next is a re-reading of gloss lines 4-8 (soft at Gallica's native resolution; a sharper image from the BnF would help) together with a re-look at the signs of those three stretches

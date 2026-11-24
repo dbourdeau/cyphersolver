@@ -133,6 +133,15 @@
       "kind": "reading",
       "what": "George Lasry's report PDF (24 Oct 2026) received and extracted to lasry/report/ (summary, key image, excerpt and translation, full Readable text by folio); outcome.texts now points at his full text. Read share 0.998 (whole), 0.826 (deciphered passages); state read in part.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the bold deciphered words of f43r in Lasry's readable.md, 140 words; 29 holes (16 bare ?, 10 doubtful-marked words, servit[e]ur and d[e] twice). Result: read_share 0.998 (whole letter, mostly clear) -> 0.793 (111/140); fraction_read 0.826 -> 0.793; class read in part unchanged.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -151,9 +160,9 @@
     "contribution": [
       "none"
     ],
-    "fraction_read": 0.826,
+    "fraction_read": 0.793,
     "fraction_read_method": "measured",
-    "fraction_read_source": "24 Oct 2026: the deciphered passages on f43r in George Lasry's Readable text (lasry/report/readable.md) 0.826 (bare ? counted as unread); the whole letter, mostly clear text, 0.998 (v10_relabel.measure).",
+    "fraction_read_source": "16 Nov 2026, cipher words only: the bold (deciphered) words of f43r in George Lasry's Readable text (lasry/report/readable.md), 140 words, 29 holes (16 bare ?, 10 words marked doubtful with ?, 3 with a supplied letter: servit[e]ur, d[e] twice): 111/140 = 0.793. Before: 0.826 (24 Oct, bare ? counted as unread, 133 words by v10). Whole letter, clear included, not the measure: 0.998 (v10_relabel.measure).",
     "verification": [
       "independent verification"
     ],
@@ -177,11 +186,11 @@
         "summary": "Méry de Vic writes after the assassination of Henri III and the accession of Henri IV. The opening cleartext reports the arrival of the news and local allegiances. The cipher reports troops near Limoges and divided loyalties; later cleartext discusses expenses, elections, intercepted dispatches and cannon for rebel forts.",
         "language": "fr",
         "state": "read in part",
-        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 6/6 pages transcribed; Partly deciphered. Measured 24 Oct 2026: whole text 0.998 (v10_relabel.measure, 2117 words); deciphered passages alone 0.826 (133 words, 16 unread groups, 10 doubtful words; a bare ? counted as unread). The whole letter passes the 95% bar only because it is mostly clear text; the cipher block on f43r alone does not (four signs and about twelve groups without a value in his key), so read in part. State: read in part.",
+        "note": "George Lasry's report PDF (24 Oct 2026), extracted to lasry/report/ (lasry_pdf_extract.py): his full Readable text by folio is the reading; he gives a translation of the excerpt only (lasry/report/translation_excerpt.md), no full translation. Report status: 6/6 pages transcribed; Partly deciphered. Measured 24 Oct 2026: whole text 0.998 (v10_relabel.measure, 2117 words); deciphered passages alone 0.826 (133 words, 16 unread groups, 10 doubtful words; a bare ? counted as unread). The whole letter passes the 95% bar only because it is mostly clear text; the cipher block on f43r alone does not (four signs and about twelve groups without a value in his key), so read in part. State: read in part. Read share over cipher words only (16 Nov 2026): the bold words of readable.md, 111 of 140 (0.793); holes are the 16 bare ?, the 10 words marked doubtful and 3 with a supplied letter. Whole letter, clear included, not the measure: 0.998.",
         "transcription": "texts/f43r_cipher_decode.tsv",
         "translation": ["lasry/report/translation_excerpt.md", "texts/f43r_en.md"],
         "reading": "lasry/report/readable.md",
-        "read_share": 0.998,
+        "read_share": 0.793,
         "reading_review": {
           "grade": "B",
           "by": "Claude Opus 5.5",

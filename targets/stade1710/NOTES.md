@@ -1,6 +1,6 @@
 # Charles XII to the Council of the Realm and to his envoys, Bender, 26 April 1710 (catalogue 599)
 
-Status: read (Brice Dudout, 27 Oct 2026; 639 of 640 cipher groups read in their sense, 628 certain (by difference), 6 probable, 5 clerk's slips read from the sense, 1 unresolved (group 212); counted in groups, not words; Daniel Bourdeau's 95% rule).
+Status: read in part (16 Nov 2026, recounted over cipher words: 278 of 303, 91.7%). Was read (Brice Dudout, 27 Oct 2026; 639 of 640 cipher groups read in their sense, 628 certain (by difference), 6 probable, 5 clerk's slips read from the sense, 1 unresolved (group 212); counted in groups, not words).
 
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#stade-1710
@@ -26,7 +26,7 @@ Structure of the nomenclator, deduced from the recovered values (no table of thi
 - 212–304: endings, alphabetical (e.g. 245 en, 267 ing, 304 tion)
 - 310–1102: words and names, from “af” to “Wismar” (proper names at the end) (e.g. 552 fred, 653 Konung, 956 stille, 1033 wapen)
 
-Full key as recovered: `key.tsv` (334 values).
+Full key as recovered: `key.tsv` (334 values as frozen; 339 since 16 Nov 2026, see "Decrypt audit").
 
 ## Reading
 
@@ -49,11 +49,91 @@ Files: `transcription.txt` (both copies, groups line by line), `decryption.txt` 
 
 ## Method and prior work
 
-Method: (1) the key was rebuilt by crib. A ciphered troop list in the file (fols. 73 and 82) was aligned with its clear draft (fol. 74); totals and officers’ names fixed the numbers and the first values, then the alphabetical structure of the table. (2) The key was frozen (SHA-256 fingerprint recorded) and applied to pages never opened before: a German letter to von Müllern (fol. 100, 93% of words recognised) and two pages of a letter to the King (fols. 78v and 79r, 96%). By the same measure, control keys (permuted values, shuffled groups) reach at most 77–80%. (3) Charles XII’s letter was read by comparing the two copies. (4) Brice Dudout checked the doubtful numbers blind on the image (16 points).
+Method: (1) the key was rebuilt by crib. A ciphered troop list in the file (fols. 73 and 82) was aligned with its clear draft (fol. 74); totals and officers’ names fixed the numbers and the first values, then the alphabetical structure of the table. (2) The key was frozen (SHA-256 fingerprint recorded) and applied to pages never opened before: a German letter to von Müllern (fol. 100, 93% of words recognised) and two pages of a letter to the King (fols. 78v and 79r, 96%). By the same measure, control keys (permuted values, shuffled groups) reach at most 77–80%. (3) Charles XII’s letter was read by comparing the two copies. (4) Brice Dudout checked the doubtful numbers blind on the image (16 points), on two sheets that AI agents built and scored (see "Sign checks" below).
 
 Prior work, checked on 27 October 2026: Daniel Bourdeau’s catalogue lists no. 599 as open, not attempted. We found no edition of this letter: not in Konung Karl XII:s egenhändiga bref (Carlson, 1893, autograph letters only), nor in the Handlingar rörande Skandinaviens historia, nor by web search (Swedish, English, German). The Historiska handlingar volumes and the Riksarkivet registers are not searchable online. What we present is a reading of the Stade cipher copies. The Rådet’s clear copy is probably kept in the Riksarkivet; we have not consulted it.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. The
+reading marks the words that are clear in the copy with square brackets (`Conventions: [..] clear in the copy`), and
+`decryption.txt` shows the same split (`[clear]` against number groups), so the cipher words are the words outside the
+brackets. Counted by hand on `reading.md`: the copy for the envoys 134 cipher words, the copy for the Rådet 169, **303**
+in all; **25 holes**: the words with a probable {x} value or a probable letter ({ge(r)na} twice, {sig}, {det} twice,
+{Dansk}e three times, {andra} twice, nöj{ak}tig, satisfa{c}tion, {fort}, {emot}, {allt}så, {gärna}, Statä{r}herrorna,
+dan{a}, {wilkor}, {slut}es, be{s}tämma), the clerk's slips read from the sense (att ‹att›, Konung‹se›en, ‹slores›; three of the five slips listed in the notes above, sig, the c of satisfa-tion and the r of Statä-herrorna, are already among the 21 probable-value words, so they are counted once) and
+the unread group 212 in bo‹s-tag-are-i-212›t. **278 of 303 read: 91.7%.** The old figure was 639 of 640 cipher groups
+(0.998), counted in groups, so the 6 probable values and 5 slips weighed little there. Class **read -> read in part**; the key stays recovered.
+The words in square brackets (clear in the copy, including the unreadable bits of the fast hand) are neither read nor
+unread and stay out of both counts. Whole letter, clear included, not the measure: the tool's 0.823 over the whole
+reading. Taking the probable and slipped words as read, only the 212 word and `slores` are holes (301 of 303, 99.3%):
+the probable readings are what holds the figure under the bar. `v10_relabel.py` cannot reproduce the count: square
+brackets are not among the markups it can declare, so it measures the whole reading (0.823, "not split").
+
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) applied `key.tsv` to `transcription.txt` and compared the letters
+with `reading.md` (case, accents, u/v and i/j/y folded). Before: 26 of 259 compared words departed, the key
+covering 94% of the groups. After the key file was completed (below): 29 of 268, the key covering 98%; more words
+are compared because fewer groups are missing, and the departures that remain are in the reading, not in the key.
+
+Causes, checked group by group against `decryption.txt` (640 group=value pairs; its group numbers agree with
+`transcription.txt` on every line):
+
+- Key file incomplete (A). `key.tsv` lacked five groups that the reading uses: 25 {ak}, 238 {det}, 345 {andra},
+  473 {Dansk}, 891 såsom (12 occurrences in all). It gave 88 as the placeholder "?54" where the reading has sk
+  ("sk-o-le", L34), 1049 as ⟨wis?⟩ where the reading has {wilkor}, and 183 as "1" where the reading writes "en".
+  The PR review of 27 Oct had already noted 238, 473, 345, 25, 1049 and 160. Example: "på {Dansk}e sidan" could
+  not be regenerated from the key file.
+- Spelling normalised without a statement (C). The Conventions line of `reading.md` names only [..], ‹x› and {x},
+  but the reading doubles consonants the cipher writes single (o-s "os" printed "oss" five times; "oförrät",
+  "förskafa", "uprätta", "et", "betäma" printed "oförrätt", "förskaffa", "upprätta", "ett", "be{s}tämma"), respells
+  vowels (be-te-n-k "obetenksamhet" printed "obetänksamhet" twice; mo-st "most" printed "måst" twice; lo-n-g "long"
+  printed "lång" twice; hand-der printed "händer") and adds diacritics the cipher does not write (about 22 words:
+  "giora" printed "giöra", "pa" printed "på", "noi-ak-tig" printed "nöjaktig").
+- Letters supplied or changed without a mark (B), nine words: ro-ra "herrora" printed "herrorna" in both copies,
+  and in the envoys' copy sta-t-ä-r printed "Stater" (ä to e); fi-en-te-lig-heter printed "fiendteligheter";
+  ut 183 "ut en" printed "uti en"; kom-ma printed "kommas"; he-l-t printed "heelt"; Minist-i printed "Ministri";
+  w-ä-r-t (61 66 52 93, both copies) printed "wårt". Also in the Rådet copy "hwartill de låtit sig" is printed
+  outside brackets although `decryption.txt` L08 gives those four words as clear text, and the groups "ra" after
+  the struck word in L31 are replaced by ‹…›. None of these was changed here; the wording of the reading is
+  left for a central decision.
+- Marked departures (no defect): {ge(r)na}, {sig} for 108, satisfa{c}tion for 31, Statä{r} for 58, Konung‹se›en,
+  be{s}tämma, dan{a}.
+
+Changed in `key.tsv` (each with a comment line giving its source): added 25, 238, 345, 473 (probable values, from
+the Notes above and `decryption.txt`) and 891 (from `decryption.txt` E08 and L33); 88 "?54" to sk (second-series
+rule 54 + 34, `decryption.txt` L34); 1049 ⟨wis?⟩ to ⟨wilkor?⟩ (Notes above); 183 "1" to "en (1)" (System above,
+`decryption.txt` L21). The file now holds 339 values; the frozen key had 334, and the SHA-256 named in its header
+did not match the file before this change either (the file carries a header line).
+
+Left as they were: 160 is qi in the key (place in the q series) and "qui" in `decryption.txt` ("re-qui-re-ra-de");
+58 stays unknown in the key, its {r} in "Statä{r}" is a clerk's slip read from the other copy, not a key value;
+85, 90 and 92 still carry placeholders ("?51", "?56", "?58") and do not occur in the letter; 212 is unread.
+The clear passages of the two copies were not compared with the images.
+**Marked on 16 Nov 2026.** No place was marked inside `reading.md`: it is the contributor's established text and is
+kept as contributed. Its header now says so in one paragraph, names `decryption.txt` as the output of the key, states
+the spelling normalisation, and lists the nine words that carry a letter the groups do not give and the four clear
+words printed outside brackets; these 13 words stay unmarked in the text. No letter of the reading changed. On
+the page, "334 values" (twice) became "339 values" and "spelling of the copies kept" became "spelling normalised
+(doubled consonants, å, ä, ö)".
+
 ## Remaining gaps
 
-- One group unresolved; six probable readings and five clerk's slips flagged on the write-up.
-- The rest of the Stade file (Rep. 5a Nr. 670) holds further cipher letters not covered here.
+- group 212 in `bo-s-tag-are-i-212-t` (Rådet copy) and the garbled `slores` - blocker: no-key-material; no table of this cipher survives in the file, 212 is the first ending of the table and the clear text before it is poorly read
+- the probable values set from the table's alphabetical order and the sense (andra, allt, wilkor, Dansk, det, ge(r)na, sig and others) and five clerk's slips read from the sense - blocker: no-key-material; no table of this cipher survives; the Rådet's clear copy, probably in the Riksarkivet, was not consulted and its registers are not searchable online (27 Oct 2026)
+
+The rest of the Stade file (Rep. 5a Nr. 670) holds further cipher letters not covered here; they are outside this target (catalogue 599, narrowed).
+
+## Escalation
+
+- [n/a] siblings: the rest of the file holds other letters, not covered here; the two copies of this letter were read against each other and cross-checked
+- [n/a] clear-pages: no clear copy is online; the Rådet's clear copy is probably in the Riksarkivet, not consulted, registers not searchable online (27 Oct 2026); not done in this recount
+- [x] known-keys: K1710 was applied to the troop list and to other letters of the same file (fol. 100, fols. 78v-79r)
+- [x] print: 27 Oct 2026, Carlson's autograph letters, Handlingar rörande Skandinaviens historia and a web search in Swedish, English and German found no edition; not repeated in this recount
+- [x] key-rebuild: the key was rebuilt from the ciphered troop list and its clear draft, then the alphabetical order of the table
+- [n/a] retry: the probable values rest on the table's alphabetical position and the sense, with no further text to test them on; not rerun in this recount
+
+## Sign checks: moved from human_check (19 Nov 2026)
+
+Daniel Bourdeau's review of PR #789 (19 Nov 2026) asked who prepared the sheets behind `outcome.human_check`, which the schema defines as a check against the image without AI help. Here AI agents prepared them: they chose the places, cut the images, built the two HTML sheets (C01, 5 places, and C03, 11 places, both 27 Oct 2026) and scored the answers; Brice Dudout, the contributor of the reading, only answered. The record therefore moves to `outcome.sign_check`, two sheets. C01: [B.B.] confirmed, 58, 61. 43. and 838 as read, and a clear word answered "wirl ?" (read wil(l)); its options were candidate numbers and words, not only shapes. C03: 108, 43, 68, 160, 169 and 25 as the reading needs; at four places the copy has another number than the sense wants (179 for 149, 296 for 269, 31 for 35, 108 for 908), the clerk's slips listed above; one answer "other" (689 and another digit). Neither sheet had a control and no selection rule was written apart, so neither meets the level "AI decipherment, human-checked on a sample of signs". A later sheet (T, 18 Nov 2026: 10 numbers and 2 controls, all answered as expected) is in the contributor's working folder; it is not recorded here, because its rule and answers are not in the repository.

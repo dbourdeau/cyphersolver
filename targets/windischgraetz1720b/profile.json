@@ -5,7 +5,7 @@
  "documents": [
   {
    "id": "No. 2",
-   "read": "read",
+   "read": "read in part",
    "shelfmark": "SOA Plzeň, RA Windischgrätz inv. 694 karton 5 (autograph, DECODE R5021); inv. 5 book 5 pp. 404-407 (copy, DECODE R5022)",
    "date": "13 Apr 1720",
    "year": 1720,
@@ -190,7 +190,8 @@
    "result": "worked"
   },
   {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Nos. 2, 3 and 6 linked to dec_R5018_letters.md, which gives each cipher passage's numbers and signs with its decryption; key_file key5018.md", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): German (explicit-hole bar): passages in their clear context explicit 1.0 for Nos. 2, 3, 6. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"}
+  {"date": "2026-10-23", "kind": "verification", "technique": ["statistical test", "manual reconstruction"], "what": "Verification 5 (plain bar, 23 Oct 2026): German (explicit-hole bar): passages in their clear context explicit 1.0 for Nos. 2, 3, 6. Rescored with research/reading_audit/v2_score.py; all entries keep read; reading_review notes record both scores.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the ⟦ ⟧ spans of the readings, clear words left out, holes by words. No. 2: 0.964 -> 0.900 (9/10; versten[den]), read -> read in part. No. 3: 0.972 -> 0.963 (26/27; Pr[o]posi[t]ion one word, one hole), stays read. No. 6: 1.0 (18/18). Target read -> read in part; fraction_read 1.0 (192/192 signs) -> 0.964 (53/55 cipher words).", "result": "worked"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -199,11 +200,15 @@
    "transcription",
    "key extended or corrected"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "recovered",
-  "fraction_read": 1.0,
+  "fraction_read": 0.964,
   "fraction_read_method": "measured",
-  "fraction_read_source": "dec_R5018_letters.md: 192 cipher tokens of Nos. 2, 3, 6 (37 + 88 + 67); signs marked ? but read in context counted read.",
+  "fraction_read_source": "No2_reading.md, No3_reading.md, No6_reading.md, cipher words only (the ⟦ ⟧ spans; recounted 16 Nov 2026): 53 of 55 words read (No. 2 9/10, No. 3 26/27, No. 6 18/18); the two holes are letters the reading supplies ([den], [o]/[t]). By signs, 192 of 192 cipher tokens of Nos. 2, 3, 6 (37 + 88 + 67) read (dec_R5018_letters.md), the figure carried until 16 Nov 2026.",
+  "gaps": [
+   {"item": "No. 2, 'versten[den]': letters the writer left out of the cipher (it ends VERSTEN before the clear 'werden')", "blocker": "needs-physical-access", "detail": "every sign that is there is read; the missing letters cannot be recovered from any file here. The checker offers no blocker type for letters left out; this is the nearest."},
+   {"item": "No. 3, 'Pr[o]posi[t]ion': two letters written with the wrong sign (P for O, Z for T); the word is certain", "blocker": "needs-physical-access", "detail": "the wrong signs are what the register copy has (the only witness) and no file here can change them; the checker offers no better type. Counted as one unread word; No. 3 stays read at 26/27."}
+  ],
   "codes_open": {
    "open": 0,
    "total": "unknown",
@@ -229,8 +234,8 @@
    }
   ],
   "texts": [
-   {"doc": "No. 2", "label": "No. 2, Vienna, 13 Apr 1720 (R5021 autograph, R5022 copy)", "transcription": "dec_R5018_letters.md", "decryption": "dec_R5018_letters.md", "summary": "Charles VI to Windischgrätz: whether [Spain] and Orleans will in the end come to terms with one another again, and how one could free oneself entirely from the burden of the Barrier.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): German, not English: explicit-hole bar. The cipher passages of No. 2 in dec_R5018_letters.md put into their quoted clear context (research/reading_audit/v5b_w18.py): plain 1.0 (3/3), explicit 1.0. Keeps read."}, "language": "de", "state": "read", "reading": "No2_reading.md", "translation": "No2_en.md", "read_share": 0.964},
-   {"doc": "No. 3", "label": "No. 3, Vienna, 24 Jul 1720 (R5023 copy)", "transcription": "dec_R5018_letters.md", "decryption": "dec_R5018_letters.md", "summary": "Beretti Landi, the Spanish envoy at The Hague, proposed in his court's name a marriage between one of the Emperor's children and Anjou's sons; Charles will stay on good terms with that court, but 'both are so small' that nothing is to be made known yet, an early trace of the Austro-Spanish marriage scheme of 1725.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): German, not English: explicit-hole bar. The cipher passages of No. 3 in dec_R5018_letters.md put into their quoted clear context (research/reading_audit/v5b_w18.py): plain 1.0 (4/4), explicit 1.0. Keeps read."}, "language": "de", "state": "read", "reading": "No3_reading.md", "translation": "No3_en.md", "read_share": 0.972},
+   {"doc": "No. 2", "label": "No. 2, Vienna, 13 Apr 1720 (R5021 autograph, R5022 copy)", "transcription": "dec_R5018_letters.md", "decryption": "dec_R5018_letters.md", "summary": "Charles VI to Windischgrätz: whether [Spain] and Orleans will in the end come to terms with one another again, and how one could free oneself entirely from the burden of the Barrier.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): German, not English: explicit-hole bar. The cipher passages of No. 2 in dec_R5018_letters.md put into their quoted clear context (research/reading_audit/v5b_w18.py): plain 1.0 (3/3), explicit 1.0. Keeps read."}, "language": "de", "state": "read in part", "reading": "No2_reading.md", "translation": "No2_en.md", "read_share": 0.9, "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher is the ⟦ ⟧ spans of No2_reading.md (und Orleans; mit einander versten[den]; von dem onere der Barriere), the clear words quoted around them left out. 9 of 10 words read, versten[den] a hole: 0.900, read in part. Whole excerpt, clear included, not the measure: 27/28 = 0.964."},
+   {"doc": "No. 3", "label": "No. 3, Vienna, 24 Jul 1720 (R5023 copy)", "transcription": "dec_R5018_letters.md", "decryption": "dec_R5018_letters.md", "summary": "Beretti Landi, the Spanish envoy at The Hague, proposed in his court's name a marriage between one of the Emperor's children and Anjou's sons; Charles will stay on good terms with that court, but 'both are so small' that nothing is to be made known yet, an early trace of the Austro-Spanish marriage scheme of 1725.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): German, not English: explicit-hole bar. The cipher passages of No. 3 in dec_R5018_letters.md put into their quoted clear context (research/reading_audit/v5b_w18.py): plain 1.0 (4/4), explicit 1.0. Keeps read."}, "language": "de", "state": "read", "reading": "No3_reading.md", "translation": "No3_en.md", "read_share": 0.963, "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher is the ⟦ ⟧ spans of No3_reading.md, the clear words around them left out; 27 cipher words (the word pieces er and en at the joins with the clear counted as words), Pr[o]posi[t]ion one hole: 26/27 = 0.963, stays read. Whole excerpt, clear included, not the measure: 0.972 (69/71, which counted Pr[o]posi[t]ion as two holes)."},
    {"doc": "No. 6", "label": "No. 6, Vienna, 11 Apr 1722 (R5024 copy)", "transcription": "dec_R5018_letters.md", "decryption": "dec_R5018_letters.md", "summary": "To Windischgrätz as plenipotentiary at the Congress of Cambrai, on his talks with Beretti about a Spanish marriage: Beretti is 'embittered against me and Austria', but it is not bad to make use of him and show him every consideration.", "reading_review": {"grade": "A", "by": "Claude Opus 5.5", "date": "2026-10-23", "note": "v5 check 23 Oct 2026 (plain bar, VERIFY5_BRIEF): German, not English: explicit-hole bar. The cipher passages of No. 6 in dec_R5018_letters.md put into their quoted clear context (research/reading_audit/v5b_w18.py): explicit 1.0 (4/4), plain 0.5 (Beretti, convenienz, inutili et honorifico). Keeps read."}, "language": "de", "state": "read", "reading": "No6_reading.md", "translation": "No6_en.md", "read_share": 1.0}
   ],
   "key_file": "key5018.md"

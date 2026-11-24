@@ -207,3 +207,11 @@ material); class stays read in part.
 ## 23 Oct 2026: R805 and R795 back to decoded, not read (translation wave)
 - The translation wave could not build sentences from R805 (0.50 explicit holes) or R795 (gaps in most sentences; some "·" marks taken as nulls hide letters, e.g. ke·elmes = kegyelmes). Both are set to **decoded, not read**.
 - Remaining gap: R805, R795 - re-transcribe the digits on the DECODE images aligned with the interlinear, as for R793/R796 - blocker: not-attempted.
+
+## Read share over cipher words only (16 Nov 2026)
+
+Checked, no change. The readings (`texts/R7xx_reading.md`) hold the cipher text alone: the clear Hungarian and Latin
+passages between the cipher lines are set apart under their own heading ("Clear passages in the letter") and are not
+in the count. `research/reading_audit/v10_relabel.py` over the reading bodies gives the recorded figures: R784 0.952
+(read), R796 0.892, R793 0.914, R794 0.890, R823 0.891, R765 0.895, R757 0.890, R741 0.889 (read in part). Class
+unchanged (read in part). No measure declaration is needed: the clear passages are cut by their heading.

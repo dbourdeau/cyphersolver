@@ -258,3 +258,19 @@ Integration check (14 Nov 2026):
 - Not checked: that f. 77 belongs to key 129 (R8701 is private on DECODE; no session here), beyond the two name values.
 - Credit: aaymeloglu, identification (outcome.credits). No page section is rewritten; one sentence is added in section 04 of docs/rupert.html.
 
+## 14 Nov 2026 — full-texts pass: decryption files for the four unread items
+
+`outcome.texts` listed no decryption file for Maurice 1645, f. 9, f. 10 and R8433. `trials.py` (standard library,
+uses `keys.py`, `test_letters.py`, `aaymeloglu_f10/key129.txt`) now writes:
+
+- `f10_decryption.txt`: this folder's `f10_transcription.txt` with the fixed values of key no. 129 over their groups,
+  line by line. 189 of 715 whole groups take a value (26.4%; the contributor's own transcription gives 190 of 715).
+  Fragments only ("to send ... to your Majesty ... for which", "having not 596 d a w or d"): f. 10 stays not read.
+- `maurice1645_trials.txt`, `f9_trials.txt`, `trevor1645_trials.txt`: not decryptions. Each shows the transcription
+  under the two letter tables kept in this folder that were tried on 9 Oct (key 118, Ormond and Prince Rupert, with
+  its nulls and word bands; the letter table of key 125): no English in any of them. The other keys tried (key 123,
+  Digby-Walsingham, R8744/R8745, R8741, Tomokiyo's royalist keys, Lasry's five SP 106 keys) are on DECODE or in
+  sibling folders and were not replayed today.
+
+The f. 10 entry's note and summary, which still said "no key fits", now give the 14 Nov identification. No state,
+class or figure changed; Remaining gaps and Escalation stand as written.

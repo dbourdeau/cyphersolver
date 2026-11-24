@@ -220,3 +220,16 @@ Re-checked against re-fetched DECODE images (R7774, R7775; `img/`, git-ignored):
 - [x] print: done 2026-09-30. Butler 1913 prints R7770, R7771, R7772, R7773 and R7775 with the cipher deciphered (nos. XVIII, XXI–XXIII, LXVI; shown from HathiTrust's page-level word data, page text not seen), but not R7774. Love 2001 quotes the f. 50 and f. 60v passages from the letters as received. Birch 1749 (three texts) and HMC Salisbury IV have none of them. List and Analysis vols 3–5 remain unseen (in copyright). (2026-09-21: blocked; HathiTrust Cloudflare 403, Google Books captcha)
 - [x] key-rebuild: substitution key rebuilt from the/of/to and long words across the six records
 - [x] retry: 3 Oct 2026, R7774 and R7775 re-read from the images (line 1-2 of f. 109v added, "carryinge"); 2 Oct 2026. R7772 images re-fetched from DECODE; f. 59 re-read with the full key and read in full (one new sign, | = q); the person signs regraded: f. 59 has none, the lone "9:" before f. 58v stays a mark or Soissons (Butler p. 56 has no "Soissons")
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R7770, R7771, R7773, R7774 and R7775 were listed without a transcription. In order: (1) the folder has
+a sign-by-sign file only for f. 59 of R7772 (`f59_r7772.txt`); `reading.txt` is plaintext and `validation.tsv` is
+the f. 59 pairs; (2) the five DECODE records (public API and record pages) carry images only; (3) the images could
+not be fetched: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. The cipher lines were not rebuilt from `reading.txt` with the key: that would be a
+re-encipherment, not the cipher as written (the key has homophones and variant forms). So `transcription_missing`
+is recorded on the five entries. What unblocks it: the images through a DECODE account; the signs are those of
+`texts/key.md`, so each passage can be transcribed and checked by decoding against `reading.txt`.
+
+This matters more here than for the sibling targets: the key was recovered from the ciphertext, and five of the six
+records still show no ciphertext in the repository.

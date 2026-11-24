@@ -149,6 +149,12 @@
    "kind": "verification",
    "what": "Issue #553 (aaymeloglu) integrated: own decoder aaymeloglu/own_decode.py reproduces reading.txt; the 134-glyph sequence matches Tomokiyo's position by position apart from five splits; splits not checked on the R8345 image (private, no login); strict count 27/35 words = 77%.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Audit section J: the reading read as sentences and a reading review recorded (grade A; state stays read in part, 27 of 35 words). DECODE's public API tried for R8345: the record answers, the ciphertext is marked private, so the five glyph splits remain unchecked on the image.",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -197,7 +203,13 @@
     "state": "read in part",
     "language": "sco",
     "read_share": 0.771,
-    "summary": "Moray tells Wood that letting Mary remain at Carlisle and sending Lord Fleming home has done great harm, and that if she comes home it will ruin the whole, as far as the reading goes; the last word is unresolved."
+    "summary": "Moray tells Wood that letting Mary remain at Carlisle and sending Lord Fleming home has done great harm, and that if she comes home it will ruin the whole, as far as the reading goes; the last word is unresolved.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read the Scots and the English of aaymeloglu/reading.md against the key output in reading.txt. The postscript is two sentences, 35 words. The first holds entire but for the person sign (The suffering of [Q] remane in Carlyle, and sending haym of the Lord Fleming, hes done greit evil). The second holds as far as 'Gif the [Q2] cummis haom thair' and then has four holes in eleven words; its ending is not read. So one sentence reads and one reads in half: read in part (27 of 35 words). The key was found by a dictionary-guided annealer on 134 glyphs and its five glyph splits are not checked on the image (DECODE R8345: the public API marks the ciphertext private, login needed)."
+    }
    }
   ],
   "key_file": "aaymeloglu/key.json",

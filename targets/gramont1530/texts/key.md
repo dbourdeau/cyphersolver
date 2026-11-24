@@ -15,3 +15,5 @@ COM/CON signs. Lasry's table as transcribed:
 Readings on the leaf settle three of Lasry's five unknown signs from context: **8Δ = PAPE**
 ("de la part du 8Δ", "8Δ trouvé bon"), **key-ring sign = ROY** ("congratuler avec le ⚷ de la venue de la
 royne"), and **ʃʃ-on-a-stem is a null in word-initial position** (line 1). g serves for B, V and E: context decides.
+
+14 Nov 2026 (after the sign-by-sign transcription, `gramont1530_transcription.txt`): two of the unknown signs are identified, 8Δ = PAPE and the key-ring sign = ROY. The ʃʃ null is not confirmed: the sign stands between *le* and Z̄ in line 1 and has no value. The `4t` sign reads *et* at its four places; COM writes *con-* and *com-*.

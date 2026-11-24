@@ -859,7 +859,9 @@
    "what": "v6 spelling check (23 Oct 2026, research/reading_audit/v6_spelling_files.txt): the modernised spelling of 22 Oct restored: nos. 01, 03, 04, 05, 19, 20 word by word from the OCR of Forbes, A Full View ii (1741), which prints the originals' spelling (v6_align.py --ocr: long s, recurrence check, OCR slips refused by hand); nos. 06, 08, 11, 15, 16, 17, 22 by hand from the figures' spellings recorded in no01-no23_reread_log.md, decipher_*.md and the corrections tsv (kepe, terme, sonnes, hote, bel awaye, hir, ernest, congratulacion, condoleaunce, intervewe, forain realmes, dispach, unserched, lokes, Scotish, speake, Secretarie, feate, somwhat, tyme, necessarie); no. 18 has nothing to restore (names and code signs); holes and brackets kept, no word changed. Rescored with research/reading_audit/v2_score.py: no01_reading.md plain 0.935 -> 0.516, explicit holes 1.0 -> 1.0; no03_reading.md plain 1.0 -> 0.654, explicit holes 1.0 -> 1.0; no04_reading.md plain 0.918 -> 0.689, explicit holes 1.0 -> 1.0; no05_reading.md plain 0.895 -> 0.474, explicit holes 1.0 -> 1.0; no06_reading.md plain 1.0 -> 1.0, explicit holes 1.0 -> 1.0; no08_reading.md plain 0.87 -> 0.87, explicit holes 0.913 -> 0.913; no11_reading.md plain 0.889 -> 0.778, explicit holes 0.889 -> 0.889; no15_reading.md plain 0.5 -> 0.5, explicit holes 0.833 -> 0.833; no16_reading.md plain 0.8 -> 0.8, explicit holes 0.8 -> 0.8; no17_reading.md plain 0.882 -> 0.824, explicit holes 0.941 -> 0.941; no18_reading.md plain 0.333 -> 0.333, explicit holes 1.0 -> 1.0; no19_reading.md plain 0.833 -> 0.667, explicit holes 1.0 -> 1.0; no20_reading.md plain 1.0 -> 0.5, explicit holes 1.0 -> 1.0; no22_reading.md plain 0.714 -> 0.429, explicit holes 0.857 -> 0.857. The plain share falls with period spelling against a modern word list; the explicit-hole share, the bar for period spelling, is unchanged or the change comes from the new header lines in files without a '## Reading' heading. No state changes.",
    "result": "worked"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 18 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 2 of 18 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only, for every letter marked read. Clear text taken out by the readings' own marks: ⟨ ⟩ in nos. 01, 03, 04, 05, 19 and 20 (clear_markup declared), italics for the cipher in no. 02 (cipher_markup declared); the other readings are all cipher (Forbes copied only the cipher stretches), and their header comments, which quote the calendar and had been counted, are not the reading. No. 21 counted from the plaintext column of decipher_E.md section 3. Read -> read in part: 08 0.965 -> 0.912, 11 0.971 -> 0.900, 13 0.981 -> 0.889, 16 0.984 -> 0.900, 17 0.966 -> 0.904, 21 0.972 -> 0.935, 22 0.988 -> 0.944. Stay read: 06 0.994 -> 0.958, 18 0.982 -> 0.958, 03 0.998 -> 0.990; 01, 02, 04, 05, 19, 20 unchanged at 1.0. Read 16 -> 9, read in part 2 -> 9. Class read in part and fraction_read (0.78, passages in letters that build sentences) unchanged.", "result": "partial"},
+  {"date": "2026-11-16", "kind": "verification", "what": "No. 21: Forbes, A Full View, vol. II (1741), p. 238 (archive.org 10622892bsb) checked as a possible independent text of the letter. It prints the four doubtful words (treason, their trust, sone), but Forbes deciphered the passages himself from the originals with the key filed in Add MS 4136 (his deciphering file; the 1735 testimonial in the volume praises his decyphering), so the print is an earlier decipherment of the same cipher, not an independent text. No. 21 stays read in part at 0.935.", "result": "failed"}
  ],
  "outcome": {
   "method": "read with known key",
@@ -895,7 +897,9 @@
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 287-289; all 13 passages checked. Not transcribed before. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.968 clean on the body (unchanged)."
     },
-    "read_share": 1.0
+    "read_share": 1.0,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the clear text Forbes prints around the passages is marked ⟨ ⟩ (clear_markup declared) and left out: 222 cipher words, no hole, 1.0 (unchanged)."
    },
    {
     "doc": "02",
@@ -912,7 +916,9 @@
     "state": "read",
     "language": "en",
     "reading": "no02_reading.md",
-    "read_share": 1.0
+    "read_share": 1.0,
+    "cipher_markup": "*",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher stretches are in italics (cipher_markup declared) and the clear text around them is left out: 310 cipher words, no hole, 1.0 (unchanged)."
    },
    {
     "doc": "03",
@@ -930,7 +936,9 @@
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 350-351; 16 passages; \"musters\" carried by the print only. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed (the existing [?musters] kept), 0 replaced; 1.0 clean (unchanged)."
     },
-    "read_share": 0.998
+    "read_share": 0.99,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the clear text Forbes prints is marked ⟨ ⟩ (clear_markup declared) and left out: 103 words read and one hole, [?musters]: 0.998 -> 0.99. Stays read."
    },
    {
     "doc": "04",
@@ -948,7 +956,9 @@
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 357-359; 58 passages, 1-24 checked glyph by glyph, f. 168 by sign class and spot checks. Not transcribed before. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.984 clean (unchanged)."
     },
-    "read_share": 1.0
+    "read_share": 1.0,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the clear text Forbes prints is marked ⟨ ⟩ (clear_markup declared) and left out: 314 cipher words, no hole, 1.0 (unchanged)."
    },
    {
     "doc": "05",
@@ -966,7 +976,9 @@
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 385-386; the 12 passages of decipher_A Letter 2. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.895 clean (unchanged)."
     },
-    "read_share": 1.0
+    "read_share": 1.0,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the clear text Forbes prints is marked ⟨ ⟩ (clear_markup declared) and left out: 61 cipher words, no hole, 1.0 (unchanged)."
    },
    {
     "doc": "06",
@@ -984,7 +996,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vi no. 1078. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced; 1.0 clean (unchanged)."
     },
-    "read_share": 0.994
+    "read_share": 0.958,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 23 words read and one hole, [?nor]: 0.994 -> 0.958. Stays read."
    },
    {
     "doc": "07",
@@ -1003,7 +1016,7 @@
     "summary": "Smith to Cecil, Valence, 1 Sep 1564: the Scots-French practice against the amity of England and Scotland; the Lord of Murray and the lords favouring religion; Huntly; the bishops and the Pope's council; Lethington, his brother at Bruges, the Bishop of Glasgow and a French pension; the Queen of Scots and Lord Robert; the old Pope; the King of Spain and the Queen of Scots (CSP vii 642 §3).",
     "transcription": "decipher_D.md",
     "decryption": "decipher_D.md",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "reading": "no08_reading.md",
     "translation": "no08_en.md",
@@ -1013,7 +1026,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 642. Open: four single signs ((2), (11), ẓ, ï). Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 4 words bracketed (1 supplied: [The] Lord of Murray, passage 7 has no article; 3 partly: [?The Earl of] Huntly, passage 14, the first sign is not on the key sheet), 1 replaced (passage 10 \"that way\" -> \"that wise\", .T ξπ9:L); clean 0.913 -> 0.870, stays read."
     },
-    "read_share": 0.965
+    "read_share": 0.912,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 114 words read and 11 holes: […] four times, [The], [?some], [?my] twice, [?marry], and [?The Earl of], which stands for one sign (the key's Earl sign with a doubt, decipher_D.md) and counts as one hole: 0.965 -> 0.912 (114 of 125). Under 95%: read in part. v10_relabel.py gives 0.905 because it sizes [?The Earl of] as three words."
    },
    {
     "doc": "09",
@@ -1044,7 +1058,7 @@
     "summary": "Smith to Cecil, Marseilles, 13 Nov 1564: never in so great a trouble; a post for Scotland goes by Dieppe or by sea, all by the Cardinal of Lorraine; the matter is hot, chiefly the marriage matter, who shall bear the bell away; his men in England by whom he dare speak (CSP vii 793).",
     "transcription": "decipher_D.md",
     "decryption": "decipher_D.md",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "reading": "no11_reading.md",
     "translation": "no11_en.md",
@@ -1054,7 +1068,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 793. ·∂ read [?sea] from the calendar here and in no. 15; ⊙ read [?Dieppe]; two signs open. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 1 replaced (passage 4 \"Into\" -> \"In\", the sign is ! = in); 0.889 clean (unchanged)."
     },
-    "read_share": 0.971
+    "read_share": 0.9,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 45 words read and 5 holes: […], [?he], [?Dieppe] (the key has Calais for this sign, the calendar Dieppe), [?sea] (the key's 'doubt' sign) and the supplied [bear]: 0.971 -> 0.900 (45 of 50). Under 95%: read in part."
    },
    {
     "doc": "12",
@@ -1080,7 +1095,7 @@
     "summary": "Smith to Cecil, Arles, 22 Nov 1564: the Emperor's house (the Archduke Charles) and a marriage with the Queen's Majesty (CSP vii 808).",
     "transcription": "decipher_D.md",
     "decryption": "decipher_D.md",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "reading": "no13_reading.md",
     "translation": "no13_en.md",
@@ -1090,7 +1105,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 808. Two passages; T: in the second unexplained. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced; 1.0 clean (unchanged)."
     },
-    "read_share": 0.981
+    "read_share": 0.889,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. Two passages: the Emperor sign, and 'Marriage with [?there] the Queen's Majesty'; 8 words read (the word split of v10_relabel.py, Queen's as two) and one hole: 0.981 -> 0.889. Under 95%: read in part."
    },
    {
     "doc": "14",
@@ -1134,7 +1150,7 @@
     "summary": "Smith to Cecil, Toulouse, 9 Feb 1564/5: congratulation and condolence; the French and the interview; the Queen's Majesty; the Emperor's house (Charles of Austria); this French offer (CSP vii 979).",
     "transcription": "decipher_D.md",
     "decryption": "decipher_D.md",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "reading": "no16_reading.md",
     "translation": "no16_en.md",
@@ -1144,7 +1160,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vii no. 979. The first five signs of (1) open. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 1 word bracketed (supplied: [the] French, passage 7 is :F alone), 0 replaced; 0.80 clean (unchanged)."
     },
-    "read_share": 0.984
+    "read_share": 0.9,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 27 words read and 3 holes: […] twice in passage 1 (its first five signs are not on the key sheet) and the supplied [the]: 0.984 -> 0.900. Under 95%: read in part."
    },
    {
     "doc": "17",
@@ -1152,7 +1169,7 @@
     "summary": "Smith to Cecil, Bourbon-l'Archambault, 22 Mar 1565/6: not that crown; the young King and Queen of Scots; intelligence and practices in England and foreign realms; the Pope's and King of Spain's hands; privy dispatches and couriers out of Scotland; the ambassadors of Spain and Scotland and the Cardinal of Lorraine; the Bishop of Glasgow looks to be a cardinal; popery in Scotland and England; a fat Scottish woman, married, the conveyer of letters to Lady Lennox (CSP viii 208).",
     "transcription": "decipher_A.md",
     "decryption": "decipher_A.md",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "reading": "no17_reading.md",
     "translation": "no17_en.md",
@@ -1162,7 +1179,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign viii no. 208. 23 of 27 passages read; five single signs open. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced (\"be in that\" is the second line of passage 5, ! ·T); 0.941 clean (unchanged)."
     },
-    "read_share": 0.966
+    "read_share": 0.904,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 103 words read and 11 holes: [?Not], [?King], Spain['s] (a supplied letter), [?hands], [?Go], [?came], and […] five times: 0.966 -> 0.904. Under 95%: read in part."
    },
    {
     "doc": "18",
@@ -1180,7 +1198,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign viii no. 327. One sign open in (3). Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 0 replaced; 0.667 clean (unchanged)."
     },
-    "read_share": 0.982
+    "read_share": 0.958,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 23 words read and one hole, […]: 0.982 -> 0.958. Stays read."
    },
    {
     "doc": "19",
@@ -1198,7 +1217,9 @@
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 119; \"secretary\" = the key's secret sign + a-r-y, so every italic word is carried by the figures. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 0.833 clean (unchanged)."
     },
-    "read_share": 1.0
+    "read_share": 1.0,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the clear text Forbes prints is marked ⟨ ⟩ (clear_markup declared) and left out: 28 cipher words, no hole, 1.0 (unchanged)."
    },
    {
     "doc": "20",
@@ -1216,7 +1237,9 @@
      "date": "2026-10-22",
      "note": "Forbes, A Full View ii (1741), printed from the original with the deciphered words in italic; the cipher passages of Add MS 4136 aligned one to one with the italic stretches and checked on the glyphs with key R9261 (no01-no23_reread_log.md). Forbes ii 123 (OCR line garbled; read on the page image). One short group (maбγ) has no value and carries no printed word. Verified word by word 22 Oct 2026 (verify2_smith_align.py: reading aligned with Forbes's print, the source; OCR garbles checked on a second OCR): 0 words bracketed, 0 replaced; 1.0 clean (unchanged)."
     },
-    "read_share": 1.0
+    "read_share": 1.0,
+    "clear_markup": "⟨⟩",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the clear text Forbes prints is marked ⟨ ⟩ (clear_markup declared) and left out: 11 cipher words, no hole, 1.0 (unchanged)."
    },
    {
     "doc": "21",
@@ -1230,9 +1253,10 @@
      "date": "2026-10-22",
      "note": "decipher_E.md 3: reads as English sentences (you must hold firm and fast: Frenchmen will come to reason; trust no Frenchman of what religion so ever he be ...; as soon as ever they be able they will thither with all their force), two code words read from Forbes."
     },
-    "state": "read",
+    "state": "read in part",
     "language": "en",
-    "read_share": 0.972
+    "read_share": 0.935,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the reading is the plaintext column of decipher_E.md section 3 (the six passages of 15/17 Dec 1562); the 0.972 recorded before was measured over the whole file, five letters and its commentary. 62 cipher words, 58 read; holes: treason[?] (F. taken as the treason code from Forbes, not confirmed by the key image), their trust (T·7·, read as their + trust [?], two words) and the b[?] sign in 'as soon as ever' (one word): 0.972 -> 0.935. The codes for reason, trust, they and will are on the key sheet (KEY.md) and count as read. The four doubtful words stand in Forbes, A Full View, vol. II (1741), p. 238, but that print is Forbes's own decipherment of the same cipher with the same key (Add MS 4136 is his deciphering file), not an independent text of the letter, so they stay holes (checked 16 Nov 2026). Under 95%: read in part. Not reproducible with v10_relabel.py: the reading is a table, which the tool does not measure, and the file holds four other letters."
    },
    {
     "doc": "22",
@@ -1240,7 +1264,7 @@
     "summary": "Smith to the Queen, 4 Nov 1563: De Montaigne, whose carte of La Rochelle Smith sends; letters given him to Lord Robert and Mr Secretary; the other letters he carried himself; the feat Smith wrote of is most necessary at this time (CSP vi 1366).",
     "transcription": "decipher_E.md",
     "decryption": "decipher_E.md",
-    "state": "read",
+    "state": "read in part",
     "language": "en",
     "reading": "no22_reading.md",
     "translation": "no22_en.md",
@@ -1250,7 +1274,8 @@
      "date": "2026-10-22",
      "note": "Cipher passages re-read on the DECODE image with key R9261 (no01-no23_reread_log.md, no01-no23_corrections.tsv). The clear text of the letter is not in print, so the reading is the passages themselves; the CSP Foreign summary gives their setting and agrees with them. CSP Foreign vi no. 1366. Every word now carried; \"sent\" for the copy's :b marked [?]. Verified word by word 22 Oct 2026 (verify2_smith_mark.py: passages checked against the glyph strings and, where unsettled, the DECODE image and key sheet): 0 words bracketed, 1 replaced (l. 4 \"of that same matter\" -> \"of the same matter\", T. = the); 0.714 clean (unchanged)."
     },
-    "read_share": 0.988
+    "read_share": 0.944,
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): Forbes copied only the cipher stretches, so the reading is all cipher; the header comment (with the calendar's summary), counted before, is not the reading. 68 words read and 4 holes: [?do], [?sent], [?whom], [?other]: 0.988 -> 0.944. Under 95%: read in part."
    },
    {
     "doc": "23",
@@ -1271,6 +1296,11 @@
     "item": "single code signs in nos. 08, 11, 15, 16, 17, 18 (about 15 signs, one occurrence each)",
     "blocker": "no-key-material",
     "detail": "not on the key sheet R9261; the clear text of these letters (SP 70) is not in print, CSP Foreign gives summaries only"
+   },
+   {
+    "item": "words partly carried or supplied in nos. 08, 11, 13, 16, 17, 21 and 22 ([?some], [?Dieppe], [?sea], [bear], [?there], Spain['s], [?do], treason[?], their trust [?] and others), counted unread in the cipher-word share (16 Nov 2026)",
+    "blocker": "no-key-material",
+    "detail": "the signs give only part of the word or a value the key does not confirm; the clear text of these letters is not in print (for no. 21 Forbes prints the text, which fits the words but does not fix the signs)"
    },
    {
     "item": "no. 23, advertisements from France, 31 Jan 1562/3 (R9236 f. 140), four short lines",

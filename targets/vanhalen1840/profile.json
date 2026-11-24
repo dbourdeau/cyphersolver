@@ -137,6 +137,12 @@
    ],
    "what": "Integration of pull request #408 after an independent read-only verification: SHA-256 of all frozen files match; a second decoder from key.tsv reproduces decryption.txt (0 differences); P01 re-run identical (0.880, 0.760, margin 0.120); C1 0.880, C2 -1.051 vs -1.357, C3 -1.051 vs -1.102 (missed by 0.029; other Quijote text); calibration re-run 0.75/0.21/0.08, power 82.7%. Larger controls: 0 of 6,000 shuffled keys and 5 of 6,000 group shuffles score as well as the key. With transcription pass 2 (S8 no. 4 = 18) C3 would pass by 0.004; C3 passes in 3 to 6 of 30 seed blocks. Corrections applied: test recorded as failed, key partial, class read in part (27/30 = 0.90), 144 numbers not 146, the 40 structural key values labelled conjecture. Transcription not checked on the images (PARES HTTP 429).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit, 16 Nov 2026): the letter flagged, 29 of 57 words depart from the key's output. Checked run by run, read-only: the departures are the plain words around the runs printed in reading.md (those of frozen/clair.txt) and the two words marked with braces, {custodiar} and {dichosa}, a mark the audit does not count. S3-S7 are letter for letter the key's output; S1, S2, S8 differ only in the three marked words. No unmarked emendation; nothing changed besides NOTES and this step; images not checked.",
+   "result": "worked"
   }
  ],
  "outcome": {

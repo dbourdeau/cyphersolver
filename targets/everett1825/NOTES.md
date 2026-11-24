@@ -131,9 +131,8 @@ compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
 
 ## Remaining gaps
 
-- comparison with Brice Dudout's transcription and reading of pp. 14-15 and 17-18 - blocker: not-attempted; his pull request will carry his files.
-- groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done).
-- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, not yet transcribed here; read by Brice Dudout on 27 Oct 2026 (above), whose transcription is expected in a pull request; the pencil "Decyphered" on p. 4 points to a lost or unfound contemporary decipherment.
+- groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done). Values on the State Department code sheet (`../morris1813/beling/key/`); 125 contrary also in the period decipherment (22 Nov 2026); not applied to the readings.
+- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, transcribed and read by Brice Dudout (`dudout/`) and transcribed again in `beling/` (22 Nov 2026); the pencil "Decyphered" on p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026, below).
 
 ## Escalation
 
@@ -153,3 +152,63 @@ compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
 ## The eight enciphered pages read by Brice Dudout (27-28 Oct 2026)
 
 Frames 0112-0115 (pp. 1-6) and pp. 17-18: 1111 of 1127 groups read with the jqa table and a graded overlay. See `dudout/README.md`. This answers the "next step" above.
+
+## 14 Nov 2026: reading review recorded
+
+All nine `outcome.texts` entries were read as sentences against their decryptions (Claude, session of 14 Nov 2026) and a
+`reading_review` grade A recorded on each in `profile.json`:
+
+- `everett1825_reading.md` (passages A, B, C): coherent, holes marked; read in part, read_share 0.904, unchanged.
+- `dudout/texts/p01`-`p06`, `p17`, `p18` `_reading.md`: the deciphered passages run on from the clear text as coherent
+  sentences. Word-level `read_share` measured on the passages in «guillemets», a word with an unresolved group ‹n› being
+  a hole: p. 1 1.0 (59 words), p. 2 1.0 (36), p. 3 0.969 (96), p. 4 0.969 (162), p. 5 0.988 (173), p. 6 0.958 (72),
+  p. 17 0.991 (113), p. 18 1.0 (92). If the words given whole from sense ([x], overlay grade S: many, me, I, of, Russia,
+  soon, above, enable, is, Russian) are counted as holes too, pp. 1, 2, 3 and 6 come to 0.949, 0.917, 0.948 and 0.944,
+  just under the 95% bar; the state was left `read` because those values rest on a group, most with a slot or a repeat
+  (overlay.tsv). Both figures are in each entry's `note`.
+
+Not done: the two readings of pp. 17-18 still differ in two places (WAINUT `[?cause]` and `[125]`, Dudout `{measure}`
+and `{contrary}`); the comparison in Remaining gaps stays open. No reading file was changed; frames not re-opened.
+
+## 14 Nov 2026: pp. 1, 2, 3 and 6 of Brice Dudout's reading set to read in part
+
+The reading review of today recorded two word counts for his eight pages: one counting only words with an unresolved
+group as holes, one counting also the words given whole from sense. The second is the one the read bar means (a value
+proposed from context alone is not a word read, REREAD_BRIEF "The iterative loop"). By it pp. 1, 2, 3 and 6 are under
+95% (0.949, 0.917, 0.948, 0.944) and are now `read in part` in `outcome.texts`; pp. 4, 5, 17 and 18 stay `read`
+(0.969, 0.988, 0.973, 0.967). The sense-only words were not checked group by group on the film here, apart from the
+overlay rows for "me", "soon" and "of". The target's class was and stays read in part.
+
+## 22 Nov 2026: the period decipherment, and the group-by-group comparison (Andrew Beling, `beling/`)
+
+A verification and a source find, not a new reading; details and files in `beling/README.md`.
+
+- The State Department's decipherment of all six coded parts is on the same reel: M31 roll 27 frame 0110 (right page,
+  parts 1-4) and 0111 (both pages, parts 4-6; parts 5 and 6 marked "14 & 15" and "17 & 18"). Writer and date unknown.
+  Transcription: `beling/period_decipherment.txt`. It reads as both readings here do, and settles the two places
+  where they differ: 70 = necessary with "ity" written above ("the necessity of recognition"), 125 = contrary.
+- All eight open groups have values on the State Department code sheet already in the repository
+  (`../morris1813/beling/key/codebook_M97_13_transcription.csv`): 125 contrary, 126 convey, 211 pret, 258 spi,
+  850 dispose, 917 os, 1354 br, 1512 acy (the values Dudout proposed).
+- Three transcriptions compared (`beling/scripts/compare.py`): with Dudout's files 1,113 groups in both, 1,086 agree,
+  27 differ; with WAINUT's passage A 74 of 74, B and C 278 of 281. Dudout's p. 18 files leave out one code line
+  (`1440 1082+D 569 1310 1541 480 262 1599 1384 1385`, "it seems to be also understood that the"), which his
+  reading has.
+- The 27 differing groups were read blind on the film by an AI model reader with no candidates given; the 11 it was
+  unsure of went to a second blind reader that saw the whole line (model readings, not a person's). Dudout's digit
+  at 18, Beling's at 8, 1 undecided (p. 5 line 3, 1385 or 1345). Of the 8: at 628, 458, 845, 1081, 1564 and 880
+  Dudout has the word from sense or open and the group gives it from the key; at 1257 ("hath"; "describing" wants
+  cri, which 1057 does not give either) and 1388 ("then" for 1383 "than", a whole-word group, outside the one-digit
+  rule) the group on the film does not give the word. No word of either reading changes; the transcription files
+  were not edited.
+- Of the 8, 628 and 1564 rest on one model reader; at 845 and 880 the first digit is ambiguous (reader 1 gave 345
+  and 380, reader 2 845 and 880, each with the other as alternative), though Dudout's 843 and 330 are excluded
+  either way. 16 of the 27 groups rest on one reader.
+- The transcription of the period decipherment (`beling/period_decipherment.txt`) has one reader; no second
+  reader has checked it.
+- Conditions of the images: the frames are NARA microfilm (RG 59, M31 roll 27) served by the National Archives
+  Catalog. The Catalog record (naId 188610348) gives access and use as "Unrestricted", and NARA's notice says that
+  materials produced by Federal agencies are generally in the public domain and may be reproduced without
+  permission. No conditions came with the images and nothing was signed. Nobody at NARA was asked about AI
+  readers; Andrew Beling decided to use the frames with them on this basis.
+

@@ -29,6 +29,11 @@ A partial outcome ("read in part") is a stopping point only when it is justified
 `## Remaining gaps` section (every unread piece with a blocker type) and an `## Escalation` checklist (every
 standard move done or marked n/a with a reason), and profile.json has outcome.fraction_read and outcome.gaps.
 See partial_problems() and the writeup skill, section 0a.
+
+A reading (class "read" or "read in part") lists its doubtful signs in NOTES.md "## Transcription doubts", each with
+its reading and its checks (enlarged image, decoded text, independent transcription where one exists), or "- none:
+<why>" (README Conventions, 20 Nov 2026). Required on pages first built from DOUBTS_FROM, a warning before; audit
+section S. See doubt_problems().
 """
 import sys, re, json, pathlib, subprocess, time, functools
 
@@ -45,7 +50,7 @@ def tdir(folder):
 SITE = 'https://dbourdeau.github.io/cyphersolver/'
 SURVEYS = {'solved', 'highlights', 'top25'}
 INDEX_PAGES = {'siena1421'}   # a page that only lists the write-ups a split series became (Siena, Concistoro 2308)
-TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404'}   # interactive and reference pages, not write-ups
+TOOL_PAGES = {'atlas', 'keys', 'key-evolution', 'secret', 'indus-bench', 'glossary', 'contributors', 'contribute', 'further', 'archives', 'findings', '404', 'method', 'method-fr', 'corrections'}   # interactive and reference pages, not write-ups
 # The famous undeciphered targets (Indus script, Voynich, Beale, Kryptos ...) are written up on the site but keep no
 # profile.json and stay out of the LLM-performance paper data (owner's rule, 23 Sept 2026).
 FAMOUS = {'indus', 'voynich', 'beale', 'kryptos', 'dorabella', 'zodiac', 'z340', 'z13', 'linear_a', 'lineara',
@@ -210,6 +215,40 @@ def partial_problems(folder):
     if 'fraction_read' not in out: probs.append('profile.json outcome.fraction_read missing (share of tokens read)')
     if not out.get('gaps'): probs.append('profile.json outcome.gaps missing (mirror the Remaining gaps list)')
     return True, probs, set(blockers) - EXTERNAL
+
+# README Conventions, "Doubtful signs are checked, not carried" (20 Nov 2026; Bordeaux 1653 CTTS pilot): every sign the
+# transcriber (person or model) was unsure of is listed in NOTES.md "## Transcription doubts" with what settled it.
+# Required on pages first built from DOUBTS_FROM; a warning on older pages.
+DOUBTS_FROM = '2026-11-21'
+DOUBT_LINE = ('"- <sign> (<where>) - read: <reading>; checked: image, decode[, transcription]; <evidence>", '
+              'or "- none: <why>"')
+
+def doubt_problems(folder):
+    """None when the rule does not apply (no reading: class not read / read in part, or a famous target);
+    else the problems with the folder's "## Transcription doubts" section ([] = fine). Each doubt names its reading
+    and its checks: the enlarged image without overlays and the decoded text always; an independent transcription
+    where one exists (a duplicate copy, a second transcriber, an edition). A doubt none of them settles stays open."""
+    if folder in FAMOUS: return None
+    try: prof = json.loads(read(tdir(folder) / 'profile.json') or '{}')
+    except ValueError: return None
+    if (prof.get('outcome') or {}).get('class') not in ('read', 'read in part'): return None
+    sec = section(read(tdir(folder) / 'NOTES.md'), 'Transcription doubts')
+    if sec is None:
+        return ['NOTES.md has no "## Transcription doubts" section (one line per doubtful sign: ' + DOUBT_LINE + ')']
+    lines = [l.strip() for l in sec.splitlines() if l.strip().startswith(('-', '*'))]
+    if not lines: return ['"## Transcription doubts" lists nothing (write "- none: <why>" when no sign was doubtful)']
+    probs = []
+    for l in lines:
+        m = re.match(r'[-*]\s*none\b[:\s-]*(.*)$', l, re.I)
+        if m:
+            if len(m.group(1).strip()) < 10: probs.append(f'"none" without a reason: {l[:90]}')
+            continue
+        if not re.search(r'\bread:\s*\S', l, re.I): probs.append(f'doubt without "read: <reading>": {l[:90]}')
+        m = re.search(r'\bchecked:\s*([^;]*)', l, re.I)
+        if not m: probs.append(f'doubt without "checked: image, decode[, transcription]": {l[:90]}'); continue
+        missing = [c for c in ('image', 'decode') if c not in m.group(1).lower()]
+        if missing: probs.append(f'doubt not checked against the {" and the ".join(missing)}: {l[:90]}')
+    return probs
 
 def git(*args):
     try: return subprocess.run(['git', *args], cwd=ROOT, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=20).stdout
@@ -604,6 +643,15 @@ def check_slug(slug):
         if part:
             item(not probs, f'{folder}: "read in part" is justified (gaps with blockers, escalation checklist, coverage)'
                  + ''.join(f'\n         - {p}' for p in probs))
+    # doubtful signs are checked, not carried (README Conventions, 20 Nov 2026): hard for pages first built from
+    # DOUBTS_FROM (or not built yet), a warning on older pages
+    first = (dates().get(slug) or {}).get('first')
+    for folder in sorted(folders):
+        dp = doubt_problems(folder)
+        if dp is None: continue
+        item(not dp, f'{folder}: every doubtful sign is listed and checked in NOTES.md "## Transcription doubts" '
+             f'(image, decode, independent transcription where one exists; README Conventions)'
+             + ''.join(f'\n         - {p}' for p in dp), warn=bool(first) and first < DOUBTS_FROM)
     # a finished target read from DECODE records queues its DECODE edits (decode_updates/, see the skill)
     try:
         dq = json.loads(read(ROOT / 'decode_updates' / 'queue.json') or '{}').get('targets', {})
@@ -918,6 +966,24 @@ def audit(brief=False):
     if not brief:
         for d, sv in bad:
             print(f'   {d}/  (' + (_replay.line(sv) if sv else 'never run: python docs/_replay.py ' + d) + ')')
+    # 14. transcription doubts (README Conventions, 20 Nov 2026): informational for pages built before DOUBTS_FROM;
+    # a page built from that date with a missing or incomplete section counts as a problem
+    pdates = dates()
+    page_of = {f: s for r in rows for s in r['slugs'] for f in r['dirs']}
+    lacking, faulty, new_bad = 0, 0, []
+    for d in dirs:
+        dp = doubt_problems(d)
+        if not dp: continue
+        if dp[0].startswith('NOTES.md has no'): lacking += 1
+        else: faulty += 1
+        slug = page_of.get(d)          # no page yet: the per-page check enforces it when the page is written
+        first = (pdates.get(slug) or {}).get('first') if slug else None
+        if slug and (not first or first >= DOUBTS_FROM): new_bad.append((d, dp))
+    print(f'S. Transcription doubts (README Conventions, "Doubtful signs are checked, not carried"): {lacking} readings with no '
+          f'"## Transcription doubts" section, {faulty} with an incomplete one; {len(new_bad)} of them on pages from {DOUBTS_FROM} (required there)')
+    for d, dp in new_bad:
+        print(f'   {d}/  ({dp[0][:110]}' + (f'; +{len(dp) - 1} more' if len(dp) > 1 else '') + ')')
+    problems += len(new_bad)
     return problems, gaps
 
 # ---------------------------------------------------------------------------

@@ -1,5 +1,8 @@
 # R1073 - d'Affry, The Hague, 25 January 1757 (no. 133): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R1073.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186 scan
 42R (margin "No 133. Dat: 25. Janvier 1757. A: à R:"), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`), checked line by line against the scan by WAINUT's reviewer (21 Oct 2026). The register

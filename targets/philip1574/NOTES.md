@@ -46,7 +46,7 @@ Pasha in Constantinople, free since 1573, with 15 escudos a month to serve near 
 letter from Hürrem Bey, chief interpreter of the Sultan; the King answers encouraging him to continue in Spanish
 service and offering him refuge in Spain, and a second letter goes to Mostafa, a Milanese renegade engineer who had
 been at La Goleta and now sailed with Uluç Ali in the Turkish fleet. Esquivia carries both letters; Don Juan is to
-decide how to use them. The letter is dated a week before La Goleta fell (13 Sept 1574).
+decide how to use them. The letter is dated about two weeks before La Goleta fell (13 Sept 1574, 16 days after 28 Aug).
 
 ## Independent verification by Brice Dudout (PR #570, 14 Nov 2026)
 
@@ -61,6 +61,18 @@ root as its argument): the same figures. `read_share` is now 0.998 (was 1.0); th
 The scans: the rendition address in Source now answers 410 Gone (checked here too, 14 Nov 2026) and, by his report, the
 deepzoom paths of `scans.json` answer 404. The lines not compared with the key (below) therefore cannot be checked from
 this route at present.
+
+## Read share over cipher words only (16 Nov 2026)
+
+Old figure 0.998 (14 Nov, Brice Dudout's count of 406 words and one hole). Recounted by hand on `clear_version.md`: the
+whole sheet is the decipherment of the cipher blocks of scan 1 and the end on scan 2, so every word of it is cipher
+except (1) the closing dateline *madrid xxviij de ag[ost]o 1574*, clear in the original too, four words, taken out of the
+count, and (2) at most seven words (*de lo qual os he querido avisar*, which the original wrote in clear once; the files do
+not show which of the two occurrences in the sheet it is: not split, left in the count). Sure words only: *[?]oran* (Hürrem Bey's
+first letter unread) is a hole, and so is *saber*, where the cipher spells *hazer* (the decipherer's word disagrees with
+the cipher); codes 161 and g 90 are counted as read: their values (*turco*, *Porque*) are the words of the clear version at those places, a single context each, so the key marks them `(?)` but the reading does not. **0.998 -> 0.995 (401 of 403)**;
+class stays read. `v10_relabel.py` with `bracket_expansions` declared gives 0.996 on 466 words and 2 holes: it also scores the file's introduction and heading, and its two holes are the heading's
+"[brackets]" and *[?]oran*; it does not mark *saber* or the dateline, so it does not reproduce the hand count.
 
 ## Remaining gaps
 

@@ -2,6 +2,8 @@
 
 Code groups are read where `numbers.md` gives a value. `[?word]` is a doubtful reading. Numbers that act as punctuation or nulls are left out, and the decryption keeps them.
 
+This is the contributor's reading, not the output of the key: where the decryption has a slip it prints the word meant, and it words the number groups, mostly without a mark. The output of the key is `decryption_1400.txt`; `reading_1400_marked.md` is this text with every letter the key does not give in square brackets (added by the project, 16 Nov 2026).
+
 Nieswiz, ce onze septembre mil sept cent cinquante six
 
 Monsieur,

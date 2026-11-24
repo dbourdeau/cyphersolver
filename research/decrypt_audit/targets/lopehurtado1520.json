@@ -1,0 +1,67 @@
+{
+ "folder": "lopehurtado1520",
+ "causes": {
+  "A": "4 signs of the transcription have no row in key_K4.tsv (# x2, z x2, ı x1, ' x2; 6 words: aun, cuerda, pesado x2 ...); no file states their values, nothing added",
+  "B": "about 59 words of the decryption.txt line readings print a letter no value of the sign gives, unmarked (cota>cosa, con>como, sedores>señores); 39 places where 63 transcribed signs are left out of the reading (2 marked)",
+  "C": "reading.md respells about 25 words of the line readings (h added x9, Venavente>Benavente x3, acetar>aceptar x3, rr), convention unstated; decryption.txt header says 'spelling kept'",
+  "D": "clear words of 1v 38-41 and sigla, about 20 words; nothing wrong",
+  "E": "transcription not updated after the visual review of 28 Oct (holgado, cardenal, necesidad, oficio: 4 words); lines v01-v10 are in 'sign labels of key K1', K1 not in folder (U read o there, u in K4)",
+  "F": "audit takes only the first value of signs the key declares polyphonic (b e|h|p, q v|b, X e|p|x, F a|l|h): 60 letters, 54 words"
+ },
+ "before": "174 of 851 words depart (texts compared: 1)",
+ "after": "174 of 851 words depart (texts compared: 1); no key change was justified",
+ "files_changed": [
+  "targets/lopehurtado1520/NOTES.md",
+  "targets/lopehurtado1520/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 59,
+  "count_note": "about; 78 unmarked departing words in decryption.txt line readings by letter alignment, less ~7 sigla/clear misalignments, 6 words with signs absent from the key, 4 review words, 2 U words; plus 37 unmarked places where transcribed signs are dropped",
+  "examples": [
+   {
+    "text": "1r l.20",
+    "decrypt": "cota",
+    "reading": "cosa",
+    "where": "decryption.txt r20 (also r14 danota>dañosa, v16 cotas>cosas)"
+   },
+   {
+    "text": "1r l.33",
+    "decrypt": "con",
+    "reading": "como",
+    "where": "decryption.txt r33"
+   },
+   {
+    "text": "1r l.7",
+    "decrypt": "quirir",
+    "reading": "requerir",
+    "where": "decryption.txt r07"
+   },
+   {
+    "text": "1v l.19",
+    "decrypt": "sedores",
+    "reading": "señores",
+    "where": "decryption.txt v19"
+   },
+   {
+    "text": "1r l.42",
+    "decrypt": "reivolver lo todo",
+    "reading": "revolver todo",
+    "where": "decryption.txt r42"
+   },
+   {
+    "text": "1v l.1",
+    "decrypt": "uvis(e|h|p)ado",
+    "reading": "obispado",
+    "where": "decryption.txt v01"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Brice Dudout’s text, spelling of the letter kept, punctuation and accents added.\" — reading.md adds h (haze, Hizo, haga, hará), prints Benavente for Venavente, aceptar for acetar, correo for coreo",
+  "\"the certain words rest on the recovered key and the held-out check\" — about 59 unmarked words print a letter that the key does not give for the transcribed sign",
+  "\"A homophonic substitution of about 37 signs\" / key table — the transcription also uses #, z, ı and ' which the table does not hold (not false, incomplete)"
+ ],
+ "remaining": "Images not consulted: whether each silent correction is a transcription slip or a change to the text is unknown. Values of #, z, ı, ' not established by any file. K1 sign labels of v01-v10 not available. Counts come from an automatic letter alignment per line, not from reading each word.",
+ "confidence": "medium"
+}

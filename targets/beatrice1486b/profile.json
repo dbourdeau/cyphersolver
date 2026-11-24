@@ -22,15 +22,16 @@
     "partial": false
    },
    "length": {
-    "tokens": "unknown",
+    "tokens": 445,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "transcr/R1143_transcription.txt"
    },
    "transcription": {
     "by": "published",
     "source": "MDE III (1877), no. 75, pp. 93-96; manuscript decipherment slips in images P1/P4",
     "image_quality": "good",
-    "notes": "Identified older reading by manuscript/edition comparison; no fresh exhaustive glyph transcript. R1143 photographs include repeated views with slips moved."
+    "notes": "14 Nov 2026: the cipher passages (13 lines on page 1, three short lines on page 3) transcribed sign by sign from the public Vestigia 1976 photographs into transcr/R1143_transcription.txt, 445 signs (measured on the sign labels, without the word-break bars, dots, blots and clear words); a single AI transcription, not checked by a person, 3 signs marked doubtful. Before that: identified older reading by manuscript/edition comparison; no fresh exhaustive glyph transcript. R1143 photographs include repeated views with slips moved."
    },
    "read": "read"
   }
@@ -120,6 +121,24 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the OCR extract of MDE III (1877) no. 75 as decryption; the contemporary slips exist only on the DECODE images (not transcribed) and no glyph transcription of the cipher exists (project work).",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "access",
+   "what": "Looked for a transcription of the cipher: none in the folder, none on DECODE R1143 (six images only; full-size DECODE images need a login). Found the letter in the open Vestigia database as document 1976 (ASMo CPE b. 1623, 2, fasc. 1, no. 18), six public photographs.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "transcription",
+   "what": "Transcribed the cipher passages sign by sign from the Vestigia photographs with shape labels (transcr/R1143_transcription.txt): 13 lines on page 1 and three short lines on page 3, 445 signs, 41 distinct labels. By Claude (session of 14 Nov 2026), not checked by a person.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Checked the transcription by decoding: one value per sign, taken from the printed reading (MDE III no. 75) and the two slips, reproduces the whole passage as Italian (che ... vostro figliolo sia tanto amato ... se conferisca qua; lo prefato Andriolo). Not agreeing: 'aaate' where the print has Abbate (one sign doubtful), the sign L in 'su[L]icare' and '[L]illo' (print supplicare, slip quello), and the cipher writes esso, dali, el contrario where the print has epso, dalo, il contrario. Figures 16, 19, 21 and G 2, G 7 stand for names and a link word; x4 and n carry no letter. No key file written: the values come from the existing reading.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -154,6 +173,7 @@
    {
     "doc": "R1143",
     "label": "Buda, 2 May 1486",
+    "transcription": "transcr/R1143_transcription.txt",
     "decryption": "readings/r1143_mde3_ocr.txt",
     "summary": "Beatrice of Aragon to her sister Eleonora of Ferrara: the Duke of Milan and the Duke of Bari support Ippolito d'Este, against the account of Cardinal Ascanio's envoy, the abbot of Forlì, and Andriolo is asked to come to Hungary. Contemporary decipherment slips are photographed over the cipher; the decryption here is the uncorrected OCR of the reading printed in MDE III (1877) no. 75.",
     "reading": "readings/R1143_reading.md",

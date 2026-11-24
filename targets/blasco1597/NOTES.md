@@ -98,3 +98,11 @@ Lasry sent his report on this item as a PDF, extracted with `research/reading_au
 - [x] print: no edition of the unread passages found
 - [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
 - [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
+
+## 14 Nov 2026: decryption listed in outcome.texts
+
+The full-texts check (`docs/_texts.py`) reported "no decryption file" for George Lasry's entry: his Readable text by folio
+(`lasry/report/readable.md`, extracted unedited from his report PDF of 24 Oct 2026; see `lasry/report/ATTRIBUTION.md`) was listed
+only as the reading. It is now also listed as the entry's decryption. No text was changed and nothing was re-deciphered here.
+His report status: 3/4 pages transcribed; 1 more in part; 3/3 cipher pages deciphered. Still open: the transcription of the cipher itself, which is not in the
+PDF or in this folder; it has been requested from George Lasry (`research/reading_audit/TRANSCRIPTIONS_WANTED.md`).

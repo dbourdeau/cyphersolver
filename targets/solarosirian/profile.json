@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "target": "solarosirian",
+  "title": "Enigmatic Book of the Solar-Osirian Unity: second gilded shrine of Tutankhamun (Carter 237) and tomb of Ramesses IX (KV 6). Egyptian enigmatic (cryptographic) writing, not a cipher in the usual sense; one pre-registered measured check of the convention, failed its threshold",
+  "documents": [
+    {
+      "id": "kv6-guilmant",
+      "shelfmark": "Tomb of Ramesses IX (KV 6), third corridor, right wall, enigmatic legends and annotation: Guilmant, Le tombeau de Ramsès IX, MIFAO 15 (IFAO 1907), pl. LXXXI legends 2-9 and 48-58, pl. LXXX legends 15-21, pl. LXXVII cols. 1-5 (labelled LXXVI in the frozen C13 files; corrected in C14)",
+      "date": "c. 1110 BC",
+      "year": -1110,
+      "country": "Egypt",
+      "language": "Egyptian",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Published reading: J. C. Darnell, OBO 198 (2004; not consulted here) and J. C. Darnell & C. Manassa Darnell, WAW 39 (SBL Press 2018), ch. 7 (consulted; translation without transliteration).",
+        "partial": false
+      },
+      "length": {
+        "tokens": 269,
+        "distinct": 46,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Guilmant 1907 line drawings (archive.org MIFAO15), page images at 300 dpi. Pass 1: Claude Opus 5.5 sub-agent; pass 2: Claude Opus 5.5 via the API; arbitrated on the image by the sub-agent. No human epigrapher checked it.",
+        "image_quality": "good",
+        "notes": "Shape codes (Gardiner where possible, named classes otherwise). Blind human shape check (16 Nov 2026, after the measure): Brice Dudout checked 12 doubtful signs, each with two candidate shapes and without the expected reading or our transcription; 8 neither shape, 1 agrees with our arbitrated transcription (C19-03 = M23x2), 3 do not (B56-01, C18-03, F1-09). The shape classes are not stable on the doubtful signs at this resolution. Marked not read: by the read rule (only sure words count; probable and restored units are holes) 1 of the 31 Ramesses IX units is read (Khepri, xpr); the text is read in Darnell 2004 and Darnell & Darnell 2018, not by this project."
+      },
+      "read": "not read"
+    },
+    {
+      "id": "shrine2-plII-lower",
+      "shelfmark": "Second gilded shrine of Tutankhamun (Carter 237, Grand Egyptian Museum), left side, lower register: Piankoff, Les chapelles de Tout-Ankh-Amon, MIFAO 72 fasc. 2 (IFAO 1951), pl. II",
+      "date": "c. 1325 BC",
+      "year": -1325,
+      "country": "Egypt",
+      "language": "Egyptian",
+      "cleartext_in_document": "interspersed",
+      "plaintext": {
+        "location": [
+          "printed edition"
+        ],
+        "source": "Published reading: Piankoff, MIFAO 72 fasc. 1 (1952); Darnell 2004 (not consulted); Darnell & Darnell 2018, ch. 7 (Side 2, scenes 15-17). Drioton, JEA 35 (1949), not opened.",
+        "partial": false
+      },
+      "length": {
+        "tokens": 159,
+        "distinct": 13,
+        "unit": "symbols",
+        "measured": false
+      },
+      "transcription": {
+        "by": "llm from images",
+        "source": "Piankoff 1951 plate (IFAO, in copyright: not reproduced here), about 15 px per sign in the copy used. Two passes (Claude Opus 5.5 sub-agent; Claude Opus 5.5 via the API).",
+        "image_quality": "poor",
+        "notes": "Too small to read: both passes are guesses here; no reading claimed (0/7 reference values right)."
+      },
+      "read": "not read"
+    }
+  ],
+  "system": {
+    "types": [
+      "not a cipher"
+    ],
+    "summary": "Not a cipher in the usual sense, and not classical hieroglyphic writing either: Egyptian enigmatic (cryptographic) writing, a learned sign-substitution convention of New Kingdom netherworld books. No secret key: most signs keep their ordinary value and a minority are replaced by other signs on scribal rules (acrophony, look-alike signs, rare spellings); the language is ordinary Egyptian. The same monuments also carry texts in ordinary hieroglyphs, which were not measured.",
+    "symbol_kind": "symbols",
+    "distinct_symbols": 49,
+    "diacritics": {
+      "used": false
+    },
+    "homophones": {
+      "used": true
+    },
+    "nomenclator": {
+      "present": false
+    },
+    "nulls": {
+      "present": false
+    },
+    "key_order": "not applicable",
+    "word_division": "none",
+    "notes": "Values learned on exposed blocks (C03-C12), table v5: kneeling man / bar = n; hills / trapeze = h (acrophony of h3st); S28 = s; double reed / two strokes = y; V13 = t; wick = h; slope = q; three dots = plural; forked bar = w; arrow = p. About one sign in four substituted on the Ramesses IX register 2 line (C11). Homophones: several shapes write n, and several write h. Values found only after the C13 measure (table v6, frozen in C14, never measured): knob = p, slanted flagpole = ntr, inverted hill = dw, V6 = sh by acrophony."
+  },
+  "conditions": {
+    "prior_solution": {
+      "exists": "in print",
+      "where": "Drioton 1949 (JEA 35; not opened); Piankoff 1952 (MIFAO 72 fasc. 1; consulted); Darnell 2004 (OBO 198, sign-by-sign edition; not consulted); Darnell & Darnell 2018 (WAW 39, translation; consulted).",
+      "found": "before attempt",
+      "used": true
+    },
+    "inputs": [
+      "images",
+      "transcription",
+      "published reading"
+    ],
+    "attack": "known plaintext",
+    "human_role": "Brice Dudout brought the target and set the protocol rules (pre-registration frozen by SHA-256, one held-out measurement, thresholds fixed in advance). He does not read hieroglyphs. After the measure he checked 12 doubtful signs blind (two candidate shapes each, no reading shown): 8 neither shape, 1 agrees with our transcription (C19-03 = M23x2), 3 do not (B56-01, C18-03, F1-09). No Egyptologist checked the transcription or the reading.",
+    "tools": [
+      "pre-registration frozen by SHA-256",
+      "permutation test (200 shuffled tables)",
+      "two-pass transcription with arbitration"
+    ],
+    "models": [
+      "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (C13-C14, including two API runs)",
+      "Claude Opus (C01-C04, C06-C07, C10-C12; version not recorded per session)",
+      "Claude Fable 5.1 (C05 re-reading, same session, partly dependent)",
+      "Codex (C08-C09 re-readings, as recorded in the project log)"
+    ],
+    "sessions": 14,
+    "first_date": "2026-10-11",
+    "last_date": "2026-11-16"
+  },
+  "solution": [
+    {
+      "date": "2026-10-12",
+      "kind": "hypothesis",
+      "what": "Learned a sign-substitution table on an exposed block (shrine pl. IV, 17-column text, aligned on Piankoff's published transliteration).",
+      "result": "partial",
+      "technique": [
+        "manual reconstruction",
+        "plaintext matching"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "prediction",
+      "what": "Exploratory tests in C03-C12 on other shrine and Ramesses IX passages; some frozen before comparison, some not (C07 knew Darnell's general translation). Not used as evidence of success.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "control",
+      "what": "Pre-registered single measurement of the frozen table v5 on a held-out 428-sign portion no session had read (269 Ramesses IX + 159 shrine signs). Reference values aligned after the blind reading was frozen, from Darnell & Darnell 2018, by a separate model run that did not see the table. M = 27/65 = 0.415 against 200 permuted tables (best 0.154, mean 0.018); bar 0.70 and best + 0.30: FAILED. Secondary, no decision: substitution entries 18/26, ordinary values 9/39; Ramesses IX 27/58, shrine 0/7.",
+      "result": "failed",
+      "technique": [
+        "statistical test"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "reading",
+      "what": "Unit-level reading after comparison (37 units): 1 sure (xpr, Khepri), 3 probable (xprw 'manifestations'; Hr 'face'; Ra ... nb), 12 restored from the publication, 21 unresolved. The repeated snake legend was predicted blind as one repeated name (structure only; the word, 'One Who Is Shot', is Darnell's).",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "control",
+      "what": "C14: table v6 frozen with the four values found after C13, but no unused enigmatic portion of 300 signs remains in Guilmant's plates (the only unread text, pl. LXXVIII-LXXIX, about 120 signs, is ordinary hieroglyphs). No measurement made.",
+      "result": "failed"
+    }
+  ],
+  "outcome": {
+    "class": "already solved",
+    "key": "partial",
+    "method": "not solved",
+    "first_break": false,
+    "method_basis": "The texts are read and published by Darnell (2004; with Manassa Darnell 2018). This project did not obtain the text: its frozen substitution table was measured once on a held-out portion and failed the pre-set bar (0.415 < 0.70), although far above the permuted controls. The table-only output is 'decoded, not read' on the repository's definitions, so no outcome.texts entry and no reading_review grade are recorded (see NOTES.md, Reading review). The permutation test (200 permuted tables) is reported in NOTES.md; it was not run through docs/_validate.py, so verification stays 'none'.",
+    "contribution": [
+      "none"
+    ],
+    "fraction_read_method": "measured",
+    "fraction_read_source": "C13 measurement (working files in dudout/): 27 of the 428 held-out signs were given a value that the reference confirms. The table gives some value to 301/428 (70 %), but only 65 could be checked against the reference and 27 were right. Three units: M = 27/65 (pre-registered measure, checkable signs only); fraction_read = 27/428 (all held-out signs, unchecked ones counted unread); fraction_coherent = 1/37 (read rule, sure words only, probable and restored units counted as holes). See NOTES.md, Reading.",
+    "fraction_read": 0.063,
+    "fraction_coherent": 0.027,
+    "verification": [
+      "none"
+    ],
+    "provenance": "contributed",
+    "credits": [
+      {
+        "who": "darnell",
+        "role": "prior solution",
+        "note": "The Enigmatic Netherworld Books of the Solar-Osirian Unity, OBO 198 (2004): edition and reading of these texts. Not consulted by the contributor (no copy available).",
+        "date": "2004",
+        "published": true
+      },
+      {
+        "who": "darnell",
+        "role": "key or decipherment used",
+        "note": "With C. Manassa Darnell, The Ancient Egyptian Netherworld Books, WAW 39 (SBL Press 2018), ch. 7: translation used to align the reference and to check the reading.",
+        "date": "2018",
+        "published": true
+      },
+      {
+        "who": "manassa-darnell",
+        "role": "key or decipherment used",
+        "note": "With J. C. Darnell, WAW 39 (SBL Press 2018), ch. 7: translation used as the reference.",
+        "date": "2018",
+        "published": true
+      },
+      {
+        "who": "piankoff",
+        "role": "prior solution",
+        "note": "Les chapelles de Tout-Ankh-Amon, MIFAO 72 (IFAO 1951-1952): shrine plates (fasc. 2) and transliterations (fasc. 1), used to align the learning block.",
+        "date": "1951",
+        "published": true
+      },
+      {
+        "who": "drioton",
+        "role": "prior solution",
+        "note": "La cryptographie de la chapelle de Toutankhamon, JEA 35 (1949): an early published study (not opened).",
+        "date": "1949",
+        "published": true
+      },
+      {
+        "who": "guilmant",
+        "role": "transcription",
+        "note": "Le tombeau de Ramses IX, MIFAO 15 (IFAO 1907): line drawings of the Ramesses IX wall, from which the held-out portion was transcribed.",
+        "date": "1907",
+        "published": true
+      },
+      {
+        "who": "dudout",
+        "role": "new cipher",
+        "note": "Brought the target and set the protocol; Claude agents run by him transcribed the held-out signs, measured and read. The text itself was already solved (Darnell).",
+        "date": "2026-11-16"
+      }
+    ],
+    "notes": "Not a cipher in the usual sense: Egyptian enigmatic writing (see NOTES.md). The one decisive test (C13) failed its pre-set bar; the measured portions are spent. No image of any plate is included."
+  }
+}

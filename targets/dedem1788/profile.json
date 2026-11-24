@@ -338,6 +338,12 @@
       "kind": "verification",
       "what": "Issue #244 (EscalatorStudios): code 2704 was entered as 'anno 2 voorige jaar'. Scan 0004 of NA 1.02.20 inv. 785 (downloaded from the reporter's link) read directly: the faded entry in the 'te meer' cell, row 4, is the abbreviation 'ann.t 2 voorige Car.s', annuleert 2 voorige caracters (cancel the 2 preceding characters). Key table corrected, R2122 decode regenerated with b19_dedem_decode.py (one line changes); no reading changes (the opener 2504 2604 2704 was never read). The reporter's comparison entry 1429 on scan 0002 not settled.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "what": "Recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. R2120 (tx/R2121_reading.md): the heading and the sign-off of the decipherer left out, 0.991 -> 0.990 (701 words, 7 holes), still read. R2122 (tx/R2122_reading.md): the clear passages of the letter, taken from the guillemets of tx/R2122_decode.txt, put in italics and left out (clear_markup *), 0.958 -> 0.925 (267 cipher words, 247 read, 20 holes), read -> read in part. R2131: the reading is the cipher paragraph alone, 0.872 stands. Class read in part unchanged; fraction_read 1.0 -> 0.97 (989 of 1,022 cipher words).",
+      "result": "partial"
     }
   ],
   "outcome": {
@@ -380,7 +386,7 @@
       "catalogue correction"
     ],
     "class": "read in part",
-    "fraction_read": 1.0,
+    "fraction_read": 0.97,
     "grades": {
       "H": 0,
       "C": 0,
@@ -415,7 +421,7 @@
     ],
     "key": "recovered",
     "fraction_read_method": "measured",
-    "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. R2120 (633 groups, read from its contemporary decipherment) of 941 groups in R2120, R2122 (258) and R2131 (50) (documents[].length) = 0.673. Withdrawn as a reading figure: 0.41, the share of the 301 non-null groups of R2122 and R2131 with a firm table value (alpha/decoded_targets_v2.txt), which counted values given, not sentences. 23 Oct 2026 (b19): R2122 and R2131 now read with Kroll's codebook (NA 1.02.20 inv. 785), so all three documents read: (633 + 258 + 50) / 941 groups = 1.0.",
+    "fraction_read_source": "22 Oct 2026, reading audit: only documents that build sentences count. R2120 (633 groups, read from its contemporary decipherment) of 941 groups in R2120, R2122 (258) and R2131 (50) (documents[].length) = 0.673. Withdrawn as a reading figure: 0.41, the share of the 301 non-null groups of R2122 and R2131 with a firm table value (alpha/decoded_targets_v2.txt), which counted values given, not sentences. 23 Oct 2026 (b19): R2122 and R2131 now read with Kroll's codebook (NA 1.02.20 inv. 785), so all three documents read: (633 + 258 + 50) / 941 groups = 1.0. 16 Nov 2026 (read share over cipher words only, README Conventions): replaced by the pooled cipher-word share of the three readings, 989 of 1,022 (R2120 701 of 708, R2122 247 of 267, R2131 41 of 47); the group counts above counted every document as read. R2122 and R2131 are under the 95% bar, so the class stays read in part.",
     "gaps": [
       {
         "item": "R2122 and R2131: 14 groups whose codebook value gives no sense where they stand (1230, 1330 x2, 80, 760 x2, 3928, 1605, 1463, 2622 in R2122; 319, 591 in R2131) and 4414 (no such code)",
@@ -440,7 +446,9 @@
         "language": "nl",
         "reading": "tx/R2121_reading.md",
         "translation": "tx/R2121_en.md",
-        "read_share": 0.991
+        "read_share": 0.99,
+        "clear_markup": "*",
+        "note": "16 Nov 2026, read share over cipher words only (README Conventions): the letter is wholly cipher except the decipherer's heading ('Gedat 22e December 1788. Missive van den Heer ...') and the closing line ('Ik heb de Eer &c. ... geteekend ... van de Gelder'), which are left out (clear_markup * in tx/R2121_reading.md, markup only). 701 words, 7 holes ([?conerentie], [?vinden], [?begin des briefs] as three words, [?dezelve], one [...]): 0.991 -> 0.990, still read."
       },
       {
         "doc": "DECODE R2122",
@@ -451,7 +459,7 @@
           "tx/R2122_reading.md"
         ],
         "summary": "Two cipher blocks (258 groups) in a clear letter to Van de Spiegel, decoded in part with the block-alphabetical table of the second pass; the firm words (envoyé, Porta, negociatie, Republicq, Leening) are consistent with the loan theme of the R2121 crib. Values, not sense: the running reading is fragmentary.",
-        "state": "read",
+        "state": "read in part",
         "language": "nl",
         "reading": "tx/R2122_reading.md",
         "translation": "tx/R2122_en.md",
@@ -461,7 +469,9 @@
           "date": "2026-10-22",
           "note": "Read 23 Oct 2026 (b19) with the codebook itself, 'Kroll. Un Chiffre', Nationaal Archief 1.02.20 (legatie Turkije) inv. 785: every group looked up on the scans (key/kroll785_values.tsv), the cipher re-read on the DECODE images, clear salutation and close transcribed; the whole letter reads (Van Dedem's demarches after the resolution of 2 October, the Porte's wish for a loan negotiation in the Republic passed to the Prussian envoy, his distrust of the English ambassador, a Swedish subsidy). Holes: 1230, 1330 (twice), 80, 760 (twice), 4414 (no such code), 3928, 1605, 1463 give no sense where they stand. Clean-sentence share of the body 0.222 on the checker's modern Dutch list, 0.933 counting explicit holes only (period spelling, as for battier1686)."
         },
-        "read_share": 0.958
+        "read_share": 0.925,
+        "clear_markup": "*",
+        "note": "16 Nov 2026, read share over cipher words only (README Conventions): the cipher words are the reading minus the clear passages of the letter (salutation, 'genoegsaam werkeloos ... bespeuren', 'kan ik ... versekeren', 'niets van goed effect ... geoordeeld', 'ignoreren', 'bloot gesteld ... geeven', the English-ambassador sentence up to 'getuygenis', and the close), which tx/R2122_decode.txt gives between guillemets and which are now in italics in tx/R2122_reading.md (clear_markup *, markup only). 267 cipher words, 247 read and 20 holes, 0.958 -> 0.925, read -> read in part. Holes by words, sure words only: [1230], [1330] twice, [80], [760] twice, [4414] and [?Maison] (groups whose codebook value gives no sense, one each), [?troupes], [?de Middellandsche Zee] (3 words), [?de Keizer van Rusland] (4 words), and the supplied [dat] three times and [heb]. The 0.958 counted the clear passages as read (whole letter, clear included, not the measure). v10_relabel.py with the declaration gives 0.925."
       },
       {
         "doc": "DECODE R2131",
@@ -483,7 +493,7 @@
           "note": "Read 23 Oct 2026 (b19) with the codebook 'Kroll. Un Chiffre' (NA 1.02.20 inv. 785): the Ottoman Porte bound itself to the Prussian envoy the day before yesterday to stay neutral in the war with the French and make no further alliance with that nation. Transcription corrected on the DECODE image (2261 -> 2262, 311 -> 317?); open: 319 (Son Altesse where 'alle' is needed), 591 ('g' after 'verbond'). Clean-sentence share 0.200 on the checker's modern Dutch list, 0.800 counting explicit holes only."
         },
         "read_share": 0.872,
-        "note": "24 Oct 2026: 87.2% of the words of tx/R2131_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+        "note": "24 Oct 2026: 87.2% of the words of tx/R2131_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part. 16 Nov 2026: the reading file holds only the cipher paragraph (the rest of the letter is clear and not transcribed), so the whole reading is cipher words and 0.872 (41 of 47) stands; no declaration is needed."
       }
     ],
     "key_file": "key/kroll785_values.tsv",

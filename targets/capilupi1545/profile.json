@@ -219,6 +219,13 @@
    "kind": "literature search",
    "what": "Four web searches found no edition; the Chiesi essay and one calendar entry not seen.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "what": "Full-texts audit: the digits of c. 48r and c. 49r decoded mechanically with the frozen key of system Y held in capilupi1546 (dudout/KEY-1555.json, longest code first; scripts/decode_digits.py -> decryption_c48.txt, decryption_c49r.txt). c. 49r decodes to nearly continuous Italian (l'ambasciador di Francia ha deto ... mostrando di voler ad ogni modo pace col re ...), c. 48r to Italian runs broken by the blot and by undivided strings. Both pages were in the build set of that key and the digits are a single first pass, so this is not an independent test and both are listed as decoded, not read.",
+   "result": "partial",
+   "technique": ["key matching"]
   }
  ],
  "outcome": {
@@ -314,6 +321,26 @@
      "date": "2026-11-03",
      "note": "Read as sentences 3 Nov 2026. The Italian builds sentences that can be followed paragraph by paragraph and match the English: the summons, Doria and Genoa, the Farnese marriage and whether Pope and Emperor agree, the plan to have a third party write a warning letter, whether {IMA} should stay at Mantua or come to court, and the Augsburg wish to push the Emperor against the Lutherans. Much of the letter is in clear text, though, and the cipher stretches depend on normalising raw spellings ('uerra' read as guerra, 'aoo' as anno, 'dralunoet' as tra l'uno et) and on guessed words in [?]. There are about nine [...] gaps; they bunch up in the Sed paragraph ('anci haver [...] sempre datto con [...]') and in the paragraph on the life of {IMA} ('in caso pure che [...]', 'ove [?e] o andarsene'), and that second paragraph only half parses. 'verso il [?fin]' is left unexplained. All five code words ({QUAN}, {IMA}, {SED}, {ULIR}, {LUS}) stay unresolved in both reading and translation, so who did what depends on the summary's guesses, not on the text."
     }
+   },
+   {
+    "doc": "c48",
+    "label": "c. 48r, Camillo to Ippolito Capilupi, 23 Feb 1546 (digit cipher, system Y of capilupi1546)",
+    "transcription": "transcription_c48.txt",
+    "decryption": "decryption_c48.txt",
+    "language": "it",
+    "state": "decoded, not read",
+    "summary": "Clear frame: Camillo tells his brother to inform Don Ferrante that after closing the letters he spoke to someone named in cipher. The decode gives Italian runs ('il qual mi ha deto hor basta', 'il cardinale ricercandoli io', 'piu pensioni rispose hora non') but no connected sentence.",
+    "note": "Mechanical decode of the first-pass digits (one pass, blots on line A3) with the frozen key of system Y held in ../capilupi1546 (dudout/KEY-1555.json; scripts/decode_digits.py). Italian runs, broken by the blot and by strings that do not divide into words (lcofe, socedatomoi, bamze lonasiare). Not read: the digits need a second transcription from the image, and this page was in the build set of the key, so the decode is no independent test. reading_c48.md holds the clear text of the page only."
+   },
+   {
+    "doc": "c49r",
+    "label": "c. 49r, Camillo Capilupi, 28 Feb 1546 (digit cipher, system Y of capilupi1546)",
+    "transcription": "transcription_c49r.txt",
+    "decryption": "decryption_c49r.txt",
+    "language": "it",
+    "state": "decoded, not read",
+    "summary": "As decoded, not yet read to the bar: the French ambassador has told someone that the Emperor sent for him three days ago and kept him two hours, showing that he wants peace with the King by all means and a marriage for his son, and asked him to write to the King on what conditions.",
+    "note": "Mechanical decode of the first-pass digits (one pass, 5 doubtful digits, faded ink) with the frozen key of system Y held in ../capilupi1546 (dudout/KEY-1555.json; scripts/decode_digits.py). Divided into words with no letter changed it runs: 'l ambasciador di francia ha deto a ferars[?] che l imp il mando a dimandare tre di sono [?] il t[?]ene da due hore ragionando in dolcet[?]a mostrando di uoler ad ogni modo pace col re uoler che suo sfigliuolo pigli la figlia de orre che lo scriuess al re con [?] quali conditioni non'. Kept as decoded, not read: the digits are one pass and were in the build set of the key; ferars[?], limp and 'de orre' are not settled; the passage breaks off at the foot of c. 49r (cc. 49v-50 not transcribed). A second transcription from the Estense image and cc. 49v-50 would make it a reading."
    }
   ]
  }

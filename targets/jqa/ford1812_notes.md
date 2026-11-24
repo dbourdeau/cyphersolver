@@ -20,7 +20,7 @@ Frames 0188R, 0194L, 0196L, 0199L, 0214 and 0215 carry a later interlinear plain
 with Ford except 0199L 1424 (gloss "ex-pressions", Ford "impressions"; No. 95 confirms 1424 = im four times).
 Right-hand line ends lost in the gutter (0194L, 0196L, 0215, 0229) were split per line or marked GAP.
 
-Not done: 0196L lines 12-23 and the two No. 85 passages on 0197 that Ford prints as "[two/three lines of cypher not
+Not done (the No. 85 items were done on 21 Nov 2026, see NOTES.md "No. 85 and No. 74"): 0196L lines 12-23 and the two No. 85 passages on 0197 that Ford prints as "[two/three lines of cypher not
 decyphered]" (4:339); 0211 (coded lines with a gloss; read in `clerk_0210_0211.tsv` by the other session); the 1812 blocks of Nos. 77, 78, 81.
 
 ## Bearing on No. 88

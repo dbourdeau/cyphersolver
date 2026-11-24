@@ -1,6 +1,8 @@
 # Philip IV to the Marquis of Santa Cruz, Madrid, 6 December 1630: established text (Spanish)
 
-Conventions: {x} = probable reading; ‹…› = unresolved group; [x] = restored from the sense; *italics* = written in plain text in the original. Spelling normalised; punctuation and accents added.
+Marks of 16 Nov 2026 (decrypt audit): this file is the contributor's reading as he gave it. The same text with every word that departs from the key output bracketed is `reading_marked.md`.
+
+Conventions: {x} = probable reading; ‹…› = unresolved group; [x] = restored from the sense; *italics* = written in plain text in the original. Spelling normalised; punctuation and accents added. Spelling changes (h added, b for u, j for x, c for z, cc for c) are not marked. The unedited output of the key is decryption.txt.
 
 *Don Phelipe, por la gracia de Dios rey de Castilla, de León, de Aragón, de las dos Sicilias, de Jerusalén, de Portugal, de Navarra y de las Indias, etc., duque de Milán, etc. Marqués de Santa Cruz, primo, del mi Consejo de Estado, mi teniente general de la mar y governador y capitán general del Estado de Milán.*
 

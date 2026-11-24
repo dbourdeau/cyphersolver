@@ -1,6 +1,6 @@
 # Duke of Sessa → Charles V, February–April 1523 — RAH Salazar A-27 (9/27), DECODE R9660–R9666
 
-Status: in progress (23 Oct 2026, consistency pass: R9660 ff. 141v-146v still need the sign-by-sign re-transcription named in Remaining gaps, not-attempted). Read in part (follow-up 2026-09-21: R9665 read in full; R9660 transcribed in full and ~57% read)
+Status: in progress (16 Nov 2026: R9660 ff. 141v-146v were re-read sign by sign on 12 Nov 2026, below, except three lines that were not re-checked; see Remaining gaps). Read in part: R9665 16 of 17 cipher words (0.941, 16 Nov 2026); R9660 decoded, not read. (The 23 Oct status, "R9665 read in full; R9660 ~57% read", is superseded.)
 
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): **R9665's three cipher
 runs read** (two confirmed by the contemporary glosses). **R9660 is decoded, not read**: open groups and spelled
@@ -85,7 +85,7 @@ favour; Siena after Petrucci's death (Francesco and Fabio Petrucci); the Datario
 ## Remaining gaps
 - R9660 decoded, not read (about 2,050 cipher tokens; after b34 a hole about every fifth word; only f. 141r's first cipher paragraph builds sentences) - blocker: no-key-material; about 100 code groups (472 occurrences) unattested in any deciphered Sessa page, the code not alphabetical
 - R9660 decipherment (of this duplicate or of the first copy), if it survives - blocker: needs-physical-access; RAH volume 9/27, not imaged (seven DECODE records only; RAH Biblioteca Digital refuses automated access)
-- R9660 spelled runs that do not form words as transcribed, ff. 141v-146v - blocker: not-attempted; a sign-by-sign re-transcription at full size, as done for f. 141r in b34
+- R9660 spelled runs that do not form words as transcribed, ff. 141v-146v: re-read sign by sign on 12 Nov 2026 (below); spelled runs without sense and 25 doubtful signs remain, and lines 143v l. 16, 145v l. 11 and 146r l. 8 were not re-checked - blocker: not-attempted; those three lines
 - R9661-R9664 cipher text re-read (CSP 534, 540, 541, 544) - blocker: needs-physical-access; read at the time and calendared by Bergenroth; the full decipherments are those same unimaged leaves
 - groups open in the sessa1524 key (vo, per, hay) - blocker: needs-physical-access; inherited, no attestation in any decipherment on DECODE
 
@@ -132,3 +132,16 @@ probable, 74.0% sure only), not the 2,634 + 188 + 765 (78.7%) of `count95.txt`: 
 difference (0.6 point) is noted. Corrections: strict share used as the headline (sure only; probable = context-only values
 are holes), the quote bug named as a change made after the result. Not checked: the sign changes against the DECODE
 images (login).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. `R9665_reading.md` marks the three
+cipher runs in ⟦ ⟧ and quotes clear words around them, so the cipher was taken as the ⟦ ⟧ spans: "Su Santidad por esta
+bula es declarado contra Francia", "[?los] al de Ancona", "Su Santidad mejoro ayer". That is 17 words, 16 read;
+[?los] is doubtful (the clerk's gloss is partly covered and the alignment of the name is tentative).
+
+- R9665: 0.96 (whole excerpt, clear included, not the measure) -> **0.941** (16/17). Read -> **read in part**.
+- R9660: decoded, not read, unchanged.
+
+The target stays read in part. Every sign of R9665 has a value from the key or the gloss; the doubtful word is
+under a partly covered gloss on the leaf (reading_r9665.txt). Remaining gaps and Escalation are unchanged.

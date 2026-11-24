@@ -240,6 +240,15 @@
       "kind": "verification",
       "what": "Follow-up by Andrew Beling (PR #413), verified and integrated: in corpus/interlined_spans.tsv 769 stands alone under a clerk's word 465 times, 453 as 'the' and never as 'and'; 710 is 'and' or '&' 164 of 168 times and never 'the'; so the 769 of No. 29 line 15 has no parallel, and with one copy on the film it cannot be told whose slip it was. 269 found a second time under an interlined 'the' on M30 roll 6 frame 0013 (10 Jan 1799); on the frame the first digit could be 2 or a corrected 7, so it stays grade I. key.tsv row for 269 corrected (n 2, second sighting doubtful). No reading changes.",
       "result": "worked"
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "verification",
+      "technique": [
+        "manual reconstruction"
+      ],
+      "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the italic decoded words of reading_no29.md, 76 (the italic heading Note. excluded), 11 holes (ten [?word], overtur[e]). Result: No. 29 read_share 0.994 (whole despatch with clear words) -> 0.855 (65/76); class read in part unchanged; fraction_read 0.855 unchanged.",
+      "result": "worked"
     }
   ],
   "outcome": {
@@ -259,7 +268,7 @@
     },
     "fraction_read": 0.855,
     "fraction_read_method": "measured",
-    "fraction_read_source": "reading_no29.md: decoded words only, 76 words with 11 holes (the ten context-only words marked [?word] and one supplied letter, overtur[e]); 0.994 over the whole despatch's reading with its clear words, frames 0092-0096 (research/reading_audit/v10_relabel.py share).",
+    "fraction_read_source": "reading_no29.md: decoded words only, 76 words with 11 holes (the ten context-only words marked [?word] and one supplied letter, overtur[e]); the measure since 16 Nov 2026 (cipher words only). Whole letter, clear included, not the measure: 0.994 over the whole despatch's reading with its clear words, frames 0092-0096 (research/reading_audit/v10_relabel.py share).",
     "grades": {
       "C": 105,
       "M": 3,
@@ -325,9 +334,9 @@
         "reading": "reading_no29.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.994,
+        "read_share": 0.855,
         "summary": "King reports on Sweden: under the late regency (Duke Karl's guardianship, which ended when Gustav IV Adolf took over the government on 1 Nov 1796; Svenskt biografiskt lexikon, 'Gustav IV Adolf') Swedish policy favoured France; the young King is more national in outlook and French influence at Stockholm is less, so the President's answer to the Swedish overtures, declining them 'for the present', should be well received there. The overture is the Swedish minister Engeström's proposition to Thomas Pinckney, which Pickering answered through King on 17 Sept 1796 (Pickering to John Adams, 24 Sept 1798, Founders Online, Adams Papers 99-02-02-3023). The despatch then turns, in clear, to the Maryland Bank Stock, Captain Home and seamen.",
-        "note": "read_share 0.994 is measured over the whole despatch, whose clear pages (frames 0093-0096) are now transcribed; on the decoded words of the coded paragraph alone it is 0.855 (65 of 76). Marked read in part: ten coded words rest on this letter's context alone and are marked [?word].",
+        "note": "Read share over cipher words only (16 Nov 2026): the decoded words of the coded paragraph, in italics in reading_no29.md, 65 of 76 read (0.855); the holes are the ten [?word] and overtur[e]. Whole letter, clear included, not the measure: 0.994 over the whole despatch (frames 0092-0096). Marked read in part: ten coded words rest on this letter's context alone and are marked [?word].",
         "reading_review": {
           "grade": "A",
           "by": "Andrew Beling",

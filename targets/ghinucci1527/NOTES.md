@@ -156,3 +156,15 @@ out that the two have nothing in common but superscript numbers: different write
 George Lasry's contributed edition moved to `targets/gilino1527/` with their own page (`docs/gilino1527.html`); this
 folder became `targets/ghinucci1527/` (`docs/ghinucci1527.html`). `docs/superscript.html` now only points to both.
 `mk_validation.py` and `validation.tsv` were rebuilt for R8613 alone, scored with the Latin model `la`.
+
+## 14 Nov 2026: full-texts pass, R8590 listed
+
+`outcome.texts` had no entry for R8590 (key source, Vesp. C IV f.315). The folder holds no file of its cipher: on
+9 Oct the first cipher line was read against the interlinear decipherment and only the values were kept (ten
+`key.tsv` rows cite R8590). The DECODE full image could not be fetched in this session: without the login the file
+server returns a placeholder ("Insufficient permissions to see the full image"); `img/` is git-ignored and absent.
+
+Done: L&P iv 5300 opened on British History Online (vol4/pp2313-2332) and its entry saved as `r8590_lp5300.md`
+(the calendar quotes the deciphered Latin, ciphered words in italics), with the `key.tsv` rows that cite the letter.
+R8590 is listed in `outcome.texts` as `not prose` (key source) with `transcription_missing`. Open: a token
+transcription of R8590 (blocker: image behind the DECODE login). Nothing in the R8613 reading changes.

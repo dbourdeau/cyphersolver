@@ -48,3 +48,7 @@ Puig's note 2 to this letter cites another letter of Comuel, doc. 661, which he 
 ## Assumptions for George's review
 - This letter is split from Benedict XIII's because its key is not shown to be his; it is not shown to differ either.
   If the ACB original shows Benedict's sign alphabet, it belongs back in benedict1399.
+
+## 14 Nov 2026, full-texts audit: no transcription of the cipher
+
+The audit asks for the cipher as written beside the decipherment. Looked in order: (1) the folder holds only Puig's printed text (`texts/`), no cipher; (2) the folder names no DECODE record for this letter, and Puig 1920 (appendix CXXXV, p. 578) prints the deciphered words in italics, not the signs; (3) no image of the letter is reachable (ACB, not digitised; Puig's only cipher facsimile, p. 475, is of Benedict XIII's letter of 22 June 1400). So `outcome.texts` now carries `transcription_missing` with that reason. Nothing else changed: class, method and the reading are as before. Unblocked only by an image or an on-site transcription of the ACB original (same blocker as in Remaining gaps).

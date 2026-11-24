@@ -97,3 +97,11 @@ deciphered passages 0.909. His status: 6/6 pages transcribed; 2/6 pages decipher
 - [x] print: no edition of the deciphered passages known to this project (24 Oct 2026)
 - [n/a] key-rebuild: the key reconstruction is George Lasry's, not this project's work
 - [x] retry: his full Readable text (24 Oct 2026) read and measured; holes left as he marks them
+
+## 14 Nov 2026: decryption listed in outcome.texts
+
+The full-texts check (`docs/_texts.py`) reported "no decryption file" for George Lasry's entry: his Readable text by folio
+(`lasry/report/readable.md`, extracted unedited from his report PDF of 24 Oct 2026; see `lasry/report/ATTRIBUTION.md`) was listed
+only as the reading. It is now also listed as the entry's decryption. No text was changed and nothing was re-deciphered here.
+His report status: 6/6 pages transcribed; 2/6 pages deciphered; 4 more in part. Still open: the transcription of the cipher itself, which is not in the
+PDF or in this folder; it has been requested from George Lasry (`research/reading_audit/TRANSCRIPTIONS_WANTED.md`).

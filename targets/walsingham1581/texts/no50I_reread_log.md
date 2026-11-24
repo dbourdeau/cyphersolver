@@ -79,3 +79,20 @@ their contexts once every line is checked, or (c) Biermann and Lasry's plaintext
   but the holes of lines 2-10 (14 open labels, merged-label words) keep the document far below 0.60: **decoded, not
   read**.
 - Look-alike share: the position corrections touch 3 of 562 tokens; the merged labels of b37 (10, 35, 13) about 10.
+
+## 14 Nov 2026: third look (Claude, session of 14 Nov 2026; audit section J), nothing lifted
+
+- Is there a text now? cryptiana `mary3.htm` re-fetched: unchanged since 16 Sept 2026 (still only the opening clause,
+  "Some symbols remain to be identified"). DECODE's public API answers for R3839 and marks the ciphertext private: the
+  f. 138 image needs a login, and there was none in this session. So no glyph could be checked in this pass.
+- The decode (`no50I_decode.txt`) re-read as sentences. Proposals from context, **not adopted** (no image, no text):
+  label 91 (the key's unknown circle with a dot) = WITH at both its places (3:4 "pas in [92] with one capitane
+  Carrvil", 13:38 "vel closit or not, with hard vam and sealed of the vnicorne", where *vam* would be wax); label 43 =
+  WHICH and not w ("the pacqvet [which] I thovght to adres"); 6:35-40 *vhtici* = *vhtil I* with the look-alike l (38)
+  for c (37) ("I durst vryte nothing of importance be him vhtil I may have some profe and asevrance of his
+  fidelitie"). Each rests on sense alone; the first holds at the sign's two occurrences, the others have one each.
+- Even with these three, 13 of the 14 open labels stay without a value, so the explicit-hole share would stay far below
+  0.60. The document stays **decoded, not read**, and since it is the target's only document the target is classed
+  `not read`; the method is now `read with known key` (the key published for this document, applied through the
+  concordance), which is how the decode was obtained. What would finish it is unchanged: the Biermann-Lasry
+  plaintext (unpublished), or the values of the key's unknown signs.

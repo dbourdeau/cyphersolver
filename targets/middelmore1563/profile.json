@@ -144,7 +144,8 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): Forbes ii (1741) printed texts of both letters copied from the archive.org OCR to texts/; the 26 July spot-check signs (transcription_26jul.txt, 7 passages only); the cipher of the 19 July letter and the rest of 26 July were never transcribed (project work)",
    "result": "partial"
-  }
+  },
+  {"date": "2026-11-14", "kind": "access", "what": "Full-texts audit, R9246 (19 July letter): looked for a transcription in the folder (only transcription_26jul.txt, seven passages of the other letter), on the DECODE record (public API and record page: three images, no transcription). Tried to fetch the images to transcribe the 46 passages: DECODE answers an anonymous request with its 'forbidden' placeholder, and no session is available here. transcription_missing recorded on the 19 July entry.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -164,7 +165,7 @@
     {"who": "forbes", "role": "key or decipherment used", "note": "A Full View ii (1741) pp. 470-75, 490-92: both letters printed with the cipher deciphered", "date": "1741", "source": "Patrick Forbes, A Full View of the Public Transactions in the Reign of Q. Elizabeth, vol. II (London 1741), pp. 470-75, 490-92"}
   ],
   "texts": [
-   {"doc": "R9246", "label": "R9246 ff. 155-157, Rouen, 19 July 1563 (passages (1)-(46))", "decryption": "texts/R9246_19jul_forbes.txt", "summary": "Henry Middelmore to Secretary Cecil from Rouen during the siege of Newhaven (Le Havre): his audience with the Prince of Condé after Barlow's departure, and the French King's march on Newhaven. Printed in full, deciphered, by Forbes (1741).", "language": "en", "read_share": 1.0},
+   {"doc": "R9246", "label": "R9246 ff. 155-157, Rouen, 19 July 1563 (passages (1)-(46))", "decryption": "texts/R9246_19jul_forbes.txt", "transcription_missing": "Never transcribed: the 46 numbered passages of the 19 July letter (BL Add MS 4136 ff. 155-157, Forbes's copy, graphic signs and figures) were identified from the printed text, not copied; only seven passages of the 26 July letter were transcribed (transcription_26jul.txt). The DECODE images of this record need a signed-in session: on 14 Nov 2026 an anonymous request for them to decrypt-custom/filesrv returned DECODE's 'forbidden' placeholder, only 200 px thumbnails are public, and the record (public API and record page) carries no transcription. No DECODE session is available in this checkout and the images fetched earlier were git-ignored and are no longer here. Unblocks it: the record's images through a DECODE account (or from the British Library), then a transcription against a sign inventory for Middelmore's cipher, checked by decoding against texts/R9246_19jul_forbes.txt.", "summary": "Henry Middelmore to Secretary Cecil from Rouen during the siege of Newhaven (Le Havre): his audience with the Prince of Condé after Barlow's departure, and the French King's march on Newhaven. Printed in full, deciphered, by Forbes (1741).", "language": "en", "read_share": 1.0},
    {"doc": ["R9246", "R9247"], "label": "R9246 f. 157 = R9247, Vallemont, 26 July 1563 (passages (1)-(26))", "transcription": "transcription_26jul.txt", "decryption": "texts/R9246_26jul_forbes.txt", "summary": "Middelmore to Cecil from Vallemont, two leagues from Fécamp: his grief and sorrows at the dangers to Newhaven. Printed in full, deciphered, by Forbes (1741); R9247 is a duplicate image of the same page.", "language": "en", "read_share": 1.0}
   ]
  }

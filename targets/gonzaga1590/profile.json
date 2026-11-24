@@ -161,6 +161,18 @@
    "kind": "verification",
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): the three page transcriptions ct_92r/ct_92v/ct_93r and the reading reading.md (clear and deciphered text together)",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026). The cipher is the bold passages of reading.md; the nested bold round 'non hò mancato' and 'sin hora' on f. 93r was read as one cipher passage. Holes were counted by words, and the four unread stretches were sized from their letter counts (2, 6, 1, 1 words; an estimate). Nulls are not holes, and the hole after 'di Monsignor' is in the clear. Result: 212 read, 12 unread, 0.946 (was 0.991, measured over the whole file with the clear text). The letter goes from read to read in part, and so does the class; fraction_read (878 of 923 tokens) is unchanged.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Gonzaga recount revised to the README sizing rule (a hole mark covers the least number of words the decode shows, an estimate). Letter runs were sized at one word per 13 letters (the longest cipher word read here), and a code word counts as a word on its own: unread stretches 1, 4, 1 and 1 words, plus 2 part-words. Result: 9 unread of 221 cipher words, 0.959 >= 0.95. The letter and the class go back to read. The mean-length sizing (4.6 letters a word) gave 0.946 and is withdrawn as the measure.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -222,7 +234,9 @@
     "summary": "Vincenzo I Gonzaga, Duke of Mantua, writes to his uncle Louis de Gonzague, duc de Nevers: he reports the rumour that Sixtus V was poisoned by the Spaniards, welcomes Henri IV's expected conversion, and assures Nevers (for the King) of his devotion to the French crown against the 'common enemy', a guarded pro-Bourbon declaration of September 1590. Deciphered with Nevers cipher no. 35 (BnF fr. 3995 f. 64).",
     "translation": "f92_en.md",
     "language": "it",
-    "read_share": 0.991
+    "read_share": 0.959,
+    "state": "read",
+    "note": "16 Nov 2026 (revised the same day): read share over cipher words only 0.959. That is 212 cipher words read and 9 unread, counted in the bold (deciphered) passages of reading.md. Holes are counted by words, with each unread stretch at the least number of words its decode allows (README, an estimate). A letter run counts at least one word per 13 letters, 13 being the longest cipher word read in this letter, and a code word counts as a word on its own. That gives: 92r l5 tail, 10 letters, 1 word; 92r l8 middle, 24 letters + the code 26 Inglesi + 2 letters, 4 words; 92v, 6 letters, 1 word; the 93r l8 code group, 1 word. The part-words c[..] and per[?] add 1 each. The nulls {0Δ}, {4-sign}, {9} are not holes, and the [..] after 'di Monsignor' is in the clear. Stays read. At 4.6 letters a word (the mean of the read cipher), the first count of the day, it would be 0.946 (12 unread); with bare marks, 0.968. Whole letter, clear included, not the measure: 0.991."
    }
   ]
  }

@@ -1,6 +1,6 @@
 # Ludwik Wąsowicz to Aleksander Michał Lubomirski, 1662-1663 (catalogue 439)
 
-Status: read (Brice Dudout, 27 Oct 2026; seven letters, cipher passages counted in number groups, not words: about 95% of the groups or more in each letter, R7504 100%, R7510 about 98.7%; certain, probable, restored and unresolved groups not counted separately (marked in reading.md); Daniel Bourdeau's 95% rule).
+Status: read in part (16 Nov 2026, recounted over cipher words: 251 of 281, 89.3%; only R7509 reaches 95%). Was read (Brice Dudout, 27 Oct 2026; seven letters, cipher passages counted in number groups, not words: about 95% of the groups or more in each letter, R7504 100%, R7510 about 98.7%; certain, probable, restored and unresolved groups not counted separately (marked in reading.md); Daniel Bourdeau's 95% rule).
 
 Contributed by Brice Dudout (Europe chiffrée), 27 Oct 2026. Write-up:
 https://bdudout.github.io/europe-chiffree/en/documents.html#krakow-1663
@@ -47,6 +47,49 @@ following R7509.
 
 Method: (1) transcription of table R7501, a nineteenth-century reconstruction, checked on the only letter already deciphered (R7502, interlinear clear text and the working sheet R7511); (2) application without change to the unglossed letters: correct Polish comes out at once (“zgodę z woyskiem dwor dotrzymawac usiłuie”); (3) blind validation on the letter of 5 May 1663, held out: protocol written before computing, numbers transcribed by shape and frozen (SHA-256) before any decoding, measured with a Polish lexicon, controls with permuted tables and shuffled texts (0.389 against 0.083); (4) reading by sense, marked, of the doubtful groups only; numbers outside the table (36, 93…) explained as slips or overwritings: there is no nomenclator.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only, and a
+letter corrected in a key rebuilt here is a hole. Each reading is "text in context": the clear Polish around the
+cipher passages (elided as `[…]` or kept as context) is not cipher and is not counted. The cipher words are the groups
+of each `R75xx_decryption.txt` (a group is a run between `|` marks or a line break, a hyphen mark joining the two halves of one word), matched to
+the reading; a word is a hole when the reading marks it ({x}, ‹x›, [x]) or its decryption carries a blotted or ambiguous
+number or a number without value. Counted by hand (the old figures counted numbers, 1,561 of 1,587, 98.4%):
+
+| letter | cipher words | sure | share | holes |
+|---|---|---|---|---|
+| R7503, 29 Nov 1662 | 2 | 1 | 0.50 | ru‹y›ki (69 written for 96) |
+| R7504, undated | 22 | 20 | 0.909 | p[a]nem, Tekiel‹e›mu |
+| R7505, 25 Jan 1663 | 19 | 18 | 0.947 | [do]syc |
+| R7506, 17-18 Feb 1663 | 29 | 26 | 0.897 | ‹z›udiencyach, kon‹36›idencyą, {n}ie |
+| R7507, 19 Mar 1663 | 29 | 25 | 0.862 | oderwac, z{a}wiązku, ‹przezęidą›, komendyrowani‹e› |
+| R7508, 5 May 1663 | 48 | 36 | 0.75 | {ze}by, {p}ilniey, cho{d}ził, {około}, Marszał{ek}, dworowi, rozumienia, marszałka, iesli, {oderwie}, {iak}‹ł›, od |
+| R7509, 9 Dec 1663 | 6 | 6 | 1.0 | none |
+| R7510, 9 Dec 1663 (cont.) | 126 | 119 | 0.944 | list[u], d{a}no, teraźnie[y]szych, a{n}i, ‹d›ytności, upo[do]bał, ‹z› |
+
+Total 251 of 281 = **0.893**. R7508 is counted by reading words (its groups run words together: "w czym", "onimsątu"),
+R7510 by cipher groups, the least number of words the decode shows (an estimate: about nine of its groups hold two
+words, which would put it at about 0.95). Seven letters go **read -> read in part**; R7509 (6 words) stays read; the
+class goes **read -> read in part**; the key stays recovered. Judgement calls: p[a]nem in R7504 is counted a hole
+because the reading brackets the a (if pnem is the writer's contraction the letter is 21 of 22, 0.955); [do]syc in R7505
+decides that letter (18 of 19 against 19 of 19); the blotted digits of R7508 that the reading settles without a mark
+(dworowi, rozumienia, marszałka, iesli, od) are holes because the decryption marks them ambiguous. `v10_relabel.py` (dry run) gives 0.87, 0.927, 0.85,
+0.914, 0.945, 0.971, 0.893 and 0.963 for the eight readings: it scores the whole reading, clear context included, and
+counts the `[…]` elisions as holes, so it cannot reproduce the counts.
+
 ## Remaining gaps
 
-- R7502 and R7511 not read; a few numbers without value (marked ‹n›).
+- R7508: 12 of 48 cipher words carry a blotted or ambiguous number (a flat-topped 3 read as 5, overwritten digits) - blocker: illegible; the DECODE images are restricted and not in the checkout, and the transcription was frozen for the blind test, its errors identified only afterwards
+- R7510: numbers lost in the tear of the right edge or cut off at line end (list[u], upo[do]bał, teraźnie[y]szych), the slips a{n}i, ‹d›ytności, d{a}no and the overwritten ‹z› - blocker: illegible; tear of the right edge, DECODE images restricted
+- R7507: oderwac, z{a}wiązku, ‹przezęidą› and the end of komendyrowani‹e› - blocker: illegible; blotted digits and a word outside the line crop
+- R7506, R7504, R7503, R7505: ‹z›udiencyach, kon‹36›idencyą (36 is not in the table), {n}ie, p[a]nem, Tekiel‹e›mu, ru‹y›ki, [do]syc - blocker: too-short; one copy of each letter and a table with no value for these numbers, so nothing to check them against
+- R7502 and R7511 not read; a few numbers without value (marked ‹n›) - blocker: no-key-material; R7502 is deciphered at the time between the lines and on R7511, outside this target
+
+## Escalation
+
+- [x] siblings: R7502 (deciphered between the lines) and the working sheet R7511 were the check of the table before the blind test
+- [n/a] clear-pages: only R7502 has a clear text of the time; none for the letters of this target
+- [x] known-keys: the nineteenth-century table R7501 was applied unchanged and checked blind on R7508
+- [n/a] print: not searched in this recount; the notes record these as the first published decipherment to our knowledge
+- [n/a] key-rebuild: the key is the table R7501, one number per letter, with no gap to bracket; the numbers outside it are slips
+- [n/a] retry: the blotted digits were not re-read on the images in this recount (DECODE restricted, images not in the checkout)

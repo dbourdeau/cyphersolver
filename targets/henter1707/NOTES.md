@@ -1,6 +1,6 @@
 # Mihály Hentér → Ferenc Rákóczi II, Constantinople, 8 July 1707
 
-Status: read (paragraphs 3-4 re-read 23 Oct 2026, batch b28)
+Status: read in part (16 Nov 2026, recounted over cipher words: paragraphs 1-2 50 of 53, paragraphs 3-4 62 of 66; paragraphs 3-4 re-read 23 Oct 2026, batch b28)
 
 **Result, 20 September 2026:** DECODE R496 is not an undeciphered letter. A
 contemporary or near-contemporary plaintext has been written between the cipher
@@ -106,9 +106,39 @@ and the related [Aetas article](https://acta.bibl.u-szeged.hu/38710/1/aetas_2014
 4. Page description: one folio, with the letter on the recto and address on the
    verso; DECODE exposes two image files despite listing one page.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher, holes by words, sure words only. The
+letter is wholly in cipher, so every word of both readings counts; nothing had to be separated.
+
+- Paragraphs 1-2 (`texts/mnl-g15-d80-f38_decryption.md`, the normalized interlinear, up to "melyre ígérte magát";
+  the next sentence, "[Közvetítője] azt izené ... de a magyar […]", is where the paragraphs 3-4 reading starts, and
+  that reading re-reads it from the figures): 0.98 -> **0.943** (50 of 53 words). Holes: the sentence on the kuruc
+  envoys, which the file gives only as a bracketed description (counted as one word, extent unknown), and
+  "[kihallgatást nyerjen / bővebben meghallgattassék]" (two words, the least the alternatives show). **Read -> read
+  in part.** Counted with the overlapping sentence in its old form it would be 0.922 (59 of 64).
+- Paragraphs 3-4: unchanged, 0.939 (62 of 66), read in part.
+- Both parts are under the bar, so the class goes **already solved -> read in part** (extent partial); fraction_read
+  1.0 -> 0.941 (112 of 119 words). The method stays "read from existing decipherment".
+- Measure declaration: `cipher_markup: >` on paragraphs 1-2. The tool measures the whole blockquote of the file,
+  paragraphs 3-4 in their old normalized form included, and gives 0.912; it has no way to take paragraphs 1-2 alone
+  without a heading in the file. The hand count is the figure of record.
+
+## 14 Nov 2026: transcription of paragraphs 1-2 not possible without the DECODE login
+
+The audit asked for a transcription file for the first `outcome.texts` entry (paragraphs 1-2). Checked in order:
+no sign transcription of these paragraphs in the folder (`texts/mnl-g15-d80-f38_p3-4_cipher.tsv` holds paragraphs 3-4
+and the end of paragraph 2 only); the DECODE public API record R496 has no transcription (`private_ciphertext` true, no
+attachment); the image `IMG_R496_I3689_P1.png` asked from the file server without a login returns a placeholder reading
+"Insufficient permissions to see the full image". The session had no DECODE cookie and no browser, so the signs could not
+be transcribed. Recorded in the profile as `transcription_missing` with this reason. What unblocks it: a logged-in DECODE
+session, then the rows of paragraphs 1-2 transcribed in the sign names already used for paragraphs 3-4.
+
 ## Remaining gaps
 
+- paragraph 2: the short sentence on the kuruc envoys and the phrase [kihallgatást nyerjen / bővebben meghallgattassék] (3 words counted unread) - blocker: illegible; the interlinear hand overlaps the cipher there (a Hungarian palaeographer is needed); paragraphs 1-2 were not decoded sign by sign under the interlinear
 - paragraphs 3-4: closed 23 Oct 2026 (read, b28); four words stay [?] on look-alike signs (tiszteket, valtoztatni, uram, pedig) - blocker: illegible
+- cipher signs of paragraphs 1-2 not transcribed (the reading of these paragraphs rests on the interlinear) - blocker: needs access; the DECODE image of R496 is behind the login (14 Nov 2026)
 
 ## Escalation
 

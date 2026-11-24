@@ -4,7 +4,7 @@ Gallica btv1b9060724s canvases 300 (f. 156r), 301 (f. 156v), 302 (f. 157r, clear
 Transcription: ct_f156.txt (recto), ct_f156v.txt (verso, pass 2 at full scale; pass 1 in ct_f156v_pass1.txt). Measured
 with measure.py (measure.log).
 
-**Status: read** (README read bar). Recto 307 of 316 tokens read as sense (97.2 %); verso 614 of 645 (95.2 %, pass 3
+**Status: read in part** (16 Nov 2026: 220 of 249 cipher words sure, 0.884, with the gloss-supplied words in braces and the supplied letters as holes; NOTES). Signs, 3 Oct 2026: Recto 307 of 316 tokens read as sense (97.2 %); verso 614 of 645 (95.2 %, pass 3
 of 3 Oct 2026; pass 2 88.2 %, pass 1 67.2 %). The letter: 921 of 961 (95.8 %). f. 157r is clear (the end of the letter: "… la main de Dieu. Lequel je
 supplie, Madame, vous donner en parfaite santé tres contente vie. De Varsovia le xxiiij jour d'avril 1573", and a
 postscript in clear about the Diet: forty thousand horse, the great tent, the Emperor's ambassadors). Control

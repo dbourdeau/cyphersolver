@@ -55,18 +55,8 @@
     "source": "f. 148 deciphered between the lines in 1811; printed in Ompteda's Nachlaß vol. 2, no. 22, pp. 59-60",
     "partial": false
    },
-   "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
-    "unit": "code groups",
-    "measured": false
-   },
-   "transcription": {
-    "by": "llm from images",
-    "source": "not transcribed",
-    "image_quality": "good",
-    "notes": "Not transcribed."
-   }
+   "length": {"tokens": 2472, "distinct": "unknown", "unit": "symbols", "measured": true, "file": "transcription/f148-149v_digits.txt"},
+   "transcription": {"by": "llm from images", "source": "NLA HA Arcinsys images aufn_0165 R, aufn_0166 and aufn_0167 R (curl)", "image_quality": "fair", "notes": "ff. 148-149v transcribed digit by digit on 14 Nov 2026 (52 lines, 2,472 digit places counted by script, one of them unread). Length is in digits, not groups: the grouping phase shifts between lines, so a 4-digit count is not claimed. f. 148r (interlined, small film) is unreliable in places."}
   }
  ],
  "system": {
@@ -188,6 +178,12 @@
    "kind": "verification",
    "what": "Closed catalogue 2012 as found in print: removed from catalogue.json (record kept in research/vetting_2026-10/removed_2026-11-02.json), listed in SOLVED_CATALOGUE.md section 4; DECODE new-record proposal queued.",
    "result": "worked"
+  },
+  {
+    "date": "2026-11-14",
+    "kind": "transcription",
+    "what": "Fetched aufn_0165-0167 (curl) and transcribed the digits of the P.S., ff. 148-149v, line by line (transcription/f148-149v_digits.txt, 2,472 digits). Check without a key: cut in 4-digit groups, ff. 148v-149v give 423 groups exactly, 98 of them found among the 397 distinct groups of the two f. 134 files; the matching phase shifts from line to line, so miscounted digits or a mixed group length are not excluded. Not aligned with the printed text.",
+    "result": "partial"
   }
  ],
  "outcome": {
@@ -240,7 +236,7 @@
    {
     "doc": "ps",
     "label": "P.S. of the same day (Nachlaß vol. 2 no. 22)",
-    "transcription": "",
+    "transcription": "transcription/f148-149v_digits.txt",
     "decryption": [
      "texts/ompteda_nachlass2_1869_nr21-22_ocr.txt"
     ],
@@ -253,7 +249,8 @@
      "by": "Claude (for the project)",
      "date": "2026-11-06",
      "note": "Read the printed German of the 1869 edition (raw OCR, long-s errors) as sentences against the 1811 interlinear on f. 134 and f. 148, and translated it in full (texts/translation_nr21-22_en.md). The text builds coherent German throughout. The undeciphered sheets ff. 134v-150 were not decoded here, so this reviews the printed plaintext, not a decipherment."
-    }
+    },
+    "note": "Transcription added 14 Nov 2026: transcription/f148-149v_digits.txt, the digits of ff. 148-149v line by line (2,472 digits; a single AI transcription from the NLA images, not checked by a person; f. 148r, crossed by the interlinear, is the weak page). Not aligned with the print: no key exists."
    }
   ]
  }

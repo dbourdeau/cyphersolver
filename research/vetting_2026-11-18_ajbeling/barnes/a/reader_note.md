@@ -1,0 +1,19 @@
+# Barnes, blind visual inventory A
+
+I read scan 149 (2008 × 1491) and scan 150 (2018 × 1566) locally. My first inspection used the 1214 × 760 viewer screenshot supplied under batch18d. It showed three successive body baselines of mixed numeral-like and graphic writing, a shorter small line below, and further signs in the sideways margin. Its bottom was cropped. I used the two complete JPEGs for every coordinate and recorded reading in the TSVs. I did not open a key, a calendar entry, a plaintext, or another transcription.
+
+Scan 149 shows the recto on the right, with 75 and 140 at its upper right, 178 at its foot and a round stamp at its upper left. The folded/endorsed leaf opposite is separate. Scan 150 shows the matching largely blank verso at left, with a later date in the center and a smaller sideways endorsement near its right edge, approximately “xiiij. March. 1592. / written to J. by …”. The other, densely written leaf at right is another text. Neither the endorsement nor the facing text provides a continuation of the recto’s cipher.
+
+## How to realign the marks
+
+Use barnes_scan149.jpg in sources/raw/codex_2026-11-17b/batch18e/folger. Pixel coordinates start at its original top-left corner. run_inventory.tsv gives a generous window and two neighboring textual or physical landmarks for each locus. position_inventory.tsv gives approximate centers, in reading order, as x positions for horizontal runs or y positions for the sideways writing. To read the margin upright, rotate the full leaf 90° counterclockwise. Coordinates always refer to the unrotated original. R1–R5 and T1–T4 PNGs are crops, with original-axis rulers for comparison. In particular R2a–R2b overlap and form one physical text line. R5 covers the five isolated lower-body signs.
+
+There are 133 observed marks or joined groups across fourteen locations. A decimal character denotes its visible shape only. Separate digit positions in 100, 72 etc. do not assert separate cipher tokens. “crossed-2” denotes a recurrent curved-head descending stroke crossed by a shelf. “double-cross” denotes a single horizontal cutting two oblique uprights. “barred-II” denotes an upright pair between two bars. A label ending ? is provisional. A literal ? is a hole, potentially spanning more than one sign when the strokes touch, or in B1 a possible ordinary word at the uncertain left boundary. Groups retain their exact horizontal placement even when unresolved. Ordinals are observed positions, not counts of underlying cipher units. Some folded or heavily crossed strokes could admit a different segmentation. The line immediately above B4 contains deleted material that I cannot recover reliably.
+
+The sharper dark writing in the body and margin contains both Arabic-numeral forms and distinct shapes, including repeated multi-position sequences. Scan 149 supports a genuine partial diplomatic transcription. Fainter script over runs and isolated marks is visible on the same leaf. I have not transcribed it or used it to identify any cipher sign. I1 is a drawn symbol, and I2–I5 resemble ordinary initials. Their inclusion records their appearance and position without establishing a coding function. Ordinary monetary amounts and the page and date numbers elsewhere on the leaf are excluded.
+
+The next step is to register a second blind inventory to the same original-pixel centers. Compare clear numerals separately from graphic forms. Adjudicate the joined loops in B1 and B2, the B4 end, and the blots in M3 and M4 before assigning a sign count or grouping adjacent digits. A larger archival image or direct examination of the thin interline would help where ink already coalesces in this JPEG.
+
+The complete source SHA-256 values are 1550c7e3f3aa06c645b44e6e7266745e89f0509024d1fcc503e99a4732ffdb79 (149) and 3d8e41deddbc95df068afaae8506c4248b1cb6e9fff657414aaf62c2efb86f4a (150).
+
+AI agents did this work; no person has checked it.

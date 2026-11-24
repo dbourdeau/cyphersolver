@@ -191,3 +191,28 @@ Lasry's reading.
 ## Dudout corrections, 29 Oct 2026
 - Lasry's b1/b2 (lasry2022 'additional document') are DECODE R2077 views P3 (f. 5v) and P4 (f. 6r), Henri IV to Breves, Paris 5 Jan 1610 (BnF fr. 3541). Lasry's key restricted to the labels seen in R2077 covers 25 of 38 tokens of the 10 Nov passage, all agreeing (200 shuffles: max 0.20); the other 13 are homophones absent from R2077.
 (Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. `reading.txt` (Brice Dudout's
+passages) puts the clear text of the letters in {braces}, so the cipher was taken as everything outside them. The
+15 Sept reading's header leaves out "que", but `reading.txt` has it in cipher (the barred 72), so it is counted.
+
+- 15 Sept 1610: 0.955 (whole sentence, clear included, not the measure) -> **0.867** (13 of 15 cipher words;
+  acompagne[?e], the E3/Z2 look-alike, and [?de] are holes; 14/15 = 0.933 if the look-alike counted as read).
+  Read -> **read in part**.
+- 10 Nov 1610, Dudout: 0.938 -> **0.900** (9 of 10; re[?c]ognoissant; the hole se[roit] is in the clear text and is
+  left out). Read in part already.
+- 10 Nov 1610, Lasry's excerpt: 1.0, unchanged. The additional document (b1 0.953, b2 0.98, both images 0.96) is
+  wholly in cipher, unchanged.
+
+The target stays read in part. Neither of the regent's two passages now meets the read bar; the holes are the
+three signs listed under Remaining gaps. Remaining gaps and Escalation are unchanged.
+
+Which 10 Nov figure counts (claims review, 16 Nov 2026): the profile carries two readings of the same passage,
+Dudout's (0.900, read in part) and Lasry's (1.0, read). They are separate entries because they are separate readings
+by different people, and each is measured on its own markup. Dudout's marks re[?c]ognoissant as a hole: on view 112
+the sign is the key's b. Lasry's CTTS key gives that sign the value c, from this word alone, and his reading marks
+nothing. The class of the passage follows the lower, marked reading: the 10 Nov passage is read in part, and so is the
+target. Lasry's entry keeps his own figure as his reading. Nothing in the files settles the sign beyond his key's
+single use of it, so nothing is changed.

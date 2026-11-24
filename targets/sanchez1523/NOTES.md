@@ -100,3 +100,20 @@ in part**.
 - [x] print: Bergenroth CSP Spain 2 for May-June; the August letters not calendared
 - [x] key-rebuild: pem = -mos from three aligned occurrences
 - [x] retry: 23 Oct 2026 (b34) every image of R9767, R9768, R9769, R9770 opened at full resolution
+
+## 14 Nov 2026, full-texts audit: transcriptions
+
+The audit asks for the cipher as written beside each decryption.
+
+- **R9767, R9769**: the cipher had been transcribed on 23 Oct 2026 inside the alignment tables. Their cipher columns are now
+  copied without change into `R9767_transcription.txt` (the two passages of f. 563r) and `R9769_transcription.txt` (the
+  paragraph of f. 570v) and listed in `outcome.texts`. No image was opened again; both files say so in their header.
+- **R9770**: the copy's cipher paragraph (ff. 573r-573v) was never transcribed; `transcription_missing`.
+- **R9670, R9671, R9672, R9674, R9677, R9689, R9690**: never transcribed (viewed or identified by folio in September);
+  `transcription_missing`.
+- Blocker for the eight: without a login DECODE serves only 200-px thumbnails (a full-size request returns the
+  placeholder image "Insufficient permissions to see the full image"); the record pages and the public API carry no
+  transcription or attachment; `bibliotecadigital.rah.es` answered with a bot check. A logged-in fetch of the DECODE
+  images unblocks it.
+- No change to class, method, states or fraction_read.
+

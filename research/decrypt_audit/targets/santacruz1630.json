@@ -1,0 +1,85 @@
+{
+ "folder": "santacruz1630",
+ "causes": {
+  "A": "key_K6A.tsv keeps one (modal) value per token and drops codes aligned <2 times; reading uses second homophone values (fer=do x8, X=t x8, q=b/d x8, P=Casal x7, C=comi/comu x6, QX=t/n x4, J=ciudad x2) and 10 codes absent from the file printed unmarked in about 19 words (104 despacho, xol fo-, tan -nar, fru diligencia, plo cuidado, hon Piamonte, 165, gli, 205, 122); the bulk of 141 words departing otherwise unmarked",
+  "B": "within the 141, not separated one by one: abbreviations expanded unmarked ('mi s r s' > ministros x3), final letters supplied (copia>copias, veni>venir), decrypted letters left out ('se os ‹fri› z e' printed 'se os ‹fri›')",
+  "C": "stated in reading.md ('Spelling normalised'): h added x38, u>b x20, x>j x9, z>c x8, ss>s; 57 words depart by spelling only",
+  "D": "75 departing words are marked {x} [x] ‹x›; plain-text opening in italics"
+ },
+ "before": "219 of 1112 words depart (texts compared: 1)",
+ "after": "219 of 1112 words depart (texts compared: 1); additions file parsed but the audit applies one value per token",
+ "files_changed": [
+  "targets/santacruz1630/key_K6A_additions.tsv (new)",
+  "targets/santacruz1630/profile.json",
+  "targets/santacruz1630/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "hon",
+   "value": "piamonte",
+   "source": "NOTES.md, System"
+  },
+  {
+   "sign": "155",
+   "value": "franceses",
+   "source": "NOTES.md, Justification of the probable and restored words (Infanta pair D.31/D.32)"
+  },
+  {
+   "sign": "X",
+   "value": "t (second value beside r)",
+   "source": "validation/D167_cipher.txt line 4 'X 71 K' = neu-t-ra-l in D168_plain.txt"
+  },
+  {
+   "sign": "fer",
+   "value": "do (second value beside de)",
+   "source": "validation/D167_cipher.txt line 11 '9 fer' = procura-n-do"
+  },
+  {
+   "sign": "fri",
+   "value": "di",
+   "source": "validation/D167_cipher.txt line 10 'v fri pen s' = ello-s di-ce-n"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 141,
+  "count_note": "upper bound: words departing other than by spelling and unmarked; most are values missing from the key file (A), not separated from true emendations",
+  "examples": [
+   {
+    "text": "D.213",
+    "decrypt": "mi s r s",
+    "reading": "ministros",
+    "where": "decryption.txt line 11 / reading.md para 1"
+   },
+   {
+    "text": "D.213",
+    "decrypt": "se na de r",
+    "reading": "senador",
+    "where": "decryption.txt line 5"
+   },
+   {
+    "text": "D.213",
+    "decrypt": "co e la de caso l",
+    "reading": "ciudadela de Casal",
+    "where": "decryption.txt line 23"
+   },
+   {
+    "text": "D.213",
+    "decrypt": "se os ‹fri› z e e n otra ‹104›",
+    "reading": "se os ‹fri› en otro despacho",
+    "where": "decryption.txt line 207"
+   },
+   {
+    "text": "D.213",
+    "decrypt": "por lo que ma ‹104› r ‹104› r lo s a le ma ne s",
+    "reading": "por lo que mira a despedir los alemanes",
+    "where": "decryption.txt line 203"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"1,112 are certain (every syllable or code has an attested value in the pairs)\" — cannot be checked from the folder: the key file holds one value per token and lacks ten codes the reading prints unmarked; the pairs and working keys are not in the folder",
+  "\"28 probable, 22 restored from the sense and 9 unresolved\" — one of the nine, ‹fri›, has the value di in the folder's own held-out pair (D.167 line 10), giving 'se os dize'; not false when written, now open to revision"
+ ],
+ "remaining": "The 141 words were classified by replacement pattern, not read one by one; second homophone values cannot be verified without the 14 training pairs (not in the folder). Token 104 is read both as 'despacho' and inside 'mira a despedir'. Images not consulted. Decision needed: resolve ‹fri› as di in the reading; whether to bring the full EM value table into the folder.",
+ "confidence": "medium"
+}

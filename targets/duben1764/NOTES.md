@@ -140,11 +140,25 @@ Catalogue 450: Frederick II's letter of 3 March 1765 in this group is printed in
 vol. 24, no. 15458. That covers one letter only. Düben's own code letters (systems A and B above) are not affected. Next:
 identify which K 259 images hold the 3 March 1765 letter and compare them with the PC text as a crib for its system.
 
+## Decrypt audit, 16 Nov 2026
+
+The audit (`research/decrypt_audit/`) applied the system B key to the two system B transcriptions and compared the letters with the text listed as the reading: 5 Oct 1764, 74 of 358 words depart (21%); 31 Dec 1764, 40 of 501 (8%); together 114 of 859. The system A texts and the 1771 fragments were not compared by the script. Each gap was traced to its groups with a snippet that decodes whole groups with `dudout/c04/key_systemB_c04.json` (the key the script itself chose as the best fit for both texts).
+
+- What is compared is not a reading made from the key. For both letters the profile's `reading` is the transcription of the clear of the time (`tx/p1764-10-05.final.txt`, image 120; `dudout/c04/frozen/127-128_final.txt`, images 127-128), and the key was rebuilt from those clears. A departure therefore marks a place where the partial key does not regenerate the clear; nothing in the clear was changed to fit a decode, and no letter was found changed without a mark.
+- Audit artefact. For 5 Oct the script used "longest match" on the characters: a group that the key lacks was cut into shorter signs (644 became 6, 4, 4 = "res os os"; 333 became 3, 3, 3 = "ne ne ne") and the line labels "119L.01" were read as groups (119 = "r"). For 31 Dec it split on spaces and dropped every group written with a mark (774' = "roi", 724' = "tion", 514?). With whole groups and the marks removed the figures are 76 of 358 (44 gaps) and 28 of 501 (19 gaps).
+- Key partial, as recorded. Of the 44 gaps of 5 Oct, 18 touch a group with no value in key c04 (644, 180, 36, 734, 333 three times, 145, 209, 635, 566 twice, 397, 349, 728, 562, 552, 413, 438; 25 of the 821 groups have no value), e.g. 119L.06 "con 333 el" under "façon dont elle". Of the 19 gaps of 31 Dec, 2 do (481 150 761 under "Novembre"; 236).
+- Key value shorter than or different from the clear: 9 gaps of 5 Oct and 4 of 31 Dec touch a group whose key value is empty, and 12 and 11 a group with a value that does not give the clear's letters. Examples: 387 = "on" where the clear has "l'honneur" (three times); 24 = "" where the clear has "be" (besoin, absorbe, beaucoup twice); 398 320 510 = "effi fi a" under "efficace". Some are the cipher and the clear differing in wording, as `dudout/c04/README.md` already says: 122L.04 the cipher gives "pro cu re[r]", the clear "accorder"; 118.03 the cipher repeats "pro pre".
+- Transcription doubt: 5 gaps of 5 Oct and 2 of 31 Dec touch a group marked "?" in the transcription and no group without a value (118.01 "501?" under "jus[tice]").
+
+Nothing was changed in the key files. The values that the clears suggest for 24, 333, 387 and 566 are in no file of this folder (the alignment table `dudout/c04/align_121-124L_to_127-128.json` gives 24 as empty and 333 as null), so they were not added. The figures are the same after as before. The file listed as the decryption of 5 Oct, `dudout/decode_1764-10-05.txt`, is the decode under the frozen key c03 of 12 Nov; no decode of that letter under c04 is in the folder. `outcome.method_basis` in the profile still describes only the 1771 fragments. Not checked: the system A texts, the transcriptions against the images, and which of the "value" gaps are key errors and which are differences between the cipher and the draft.
+
+Marked on 16 Nov 2026: nothing. Both published texts are the clears of the time, so no word was marked inside them, and the four values the clears suggest (24, 333, 387, 566) were not added to any key. The one-line header saying that each file is a contemporary clear and not the output of the key was not added either: `tx/p1764-10-05.final.txt` and `dudout/c04/frozen/127-128_final.txt` are both listed with their SHA-256 in the pre-registration lists (`dudout/frozen/SHA256SUMS-PREREG`, `dudout/c04/frozen/SHA256SUMS-PREREG`), their hashes match today, and a header line would break that match. What each file is stands here and in the profile labels instead: the key's own output is `dudout/decode_1764-10-05.txt` (key c03) for 5 Oct 1764 and `dudout/c04/decode_121-124L_key_c04.txt` (key c04) for 31 Dec 1764. There is no write-up page.
+
 ## Remaining gaps
 
-- System A (6 Mar 1764, 15 Nov 1765): both letters were deciphered at the time and key_c01 decodes both (14 Nov section). Open,
-  all workable: the strict word count and English translation of each period decipherment (the 102R-103L.08 part of the clear
-  for 6 Mar; the gloss for 15 Nov, rearranged to the cipher's order with key_c01), then `outcome.texts` entries; locating the cipher
+- System A (6 Mar 1764, 15 Nov 1765): both letters were deciphered at the time and key_c01 decodes both (14 Nov section). Done
+  on 14 Nov 2026 (last section): strict word counts, readings and English translations of both period decipherments, and their
+  `outcome.texts` entries. Open, all workable: comparing the clear pages 102R-103R with their images; locating the cipher
   of the rest of the 6 Mar clear (103L.08 on: 100R-101L is a candidate); key_c01 is partial (197 groups with a value; 58 of the
   169 group types of 101R have none) and some values are mis-cut by the alignment ("kie" = je, "limp", "sama", "ontje");
   two group readings doubtful on the images (101 L09 last group 187 or 184; 96 L02 409 or 609). Identify the writer "C. F." of
@@ -157,7 +171,8 @@ identify which K 259 images hold the 3 March 1765 letter and compare them with t
 - Chiffer n:o 1, 15 June 1764 (108R-110R): done through its clear 109R-110L (14 Nov, PR #582; strict 337 of 342 words). Open,
   workable: the end of the cipher on 110R is not in the frozen transcription; 74 groups differ between the two passes.
 - The other letters of Chiffer n:o 1 (inventory in `dudout/system_a/INVENTORY_chiffer1.md`), workable from the online images:
-  15 May 1764 (104R or 105R-108L; clear 106R-107L), 20/31 Aug 1764 (110R-115; clear 116-117), 100R (perhaps the rest of
+  15 May 1764 (104R or 105R-108L; clear 106R-107L; 105R-108L has a raw key_c01 decode since 14 Nov 2026, decoded, not read:
+  the clear is not transcribed and the transcription is one preliminary pass), 20/31 Aug 1764 (110R-115; clear 116-117), 100R (perhaps the rest of
   6 Mar; *14 Nov 2026: it is the end of letter 96, see the last section*), and the two without an identified clear, 87-89 (value profile unlike system A) and 90R-93L (94-95, a clear
   letter of 30 Jan, may belong to one of them).
 - Read the other clear pages for any that is a true decipherment (no compositional corrections).
@@ -428,3 +443,18 @@ Remaining for catalogue 1616, after this: no workable gap in the two letters' te
 cipher of 103L.08-103R.13 (not in the volume; needs another file or is lost), so that part of the 6 Mar text cannot be
 checked against a cipher; the writer "C. F.?" of 15 Nov 1765. Not done here: a reviewer's `reading_review`; a second
 reading of the 100R transcription.
+
+## 14 Nov 2026: 5 Oct 1764 strict count, and a raw key_c01 decode of 15/4 May 1764
+
+From the files in the folder (no image opened). A parallel pass of the same day also set out and translated the two
+system A letters (6 Mar 1764, 15 Nov 1765); the section above did that work against the images and is the one kept,
+and the parallel reading files were not merged.
+
+- **5 Oct 1764 (system B).** Strict count of the clear (`tx/p1764-10-05.final.txt`): 365 word tokens, 5 marked
+  doubtful, 0.986 (`read_share` in `outcome.texts`). Counts are whitespace word tokens; a token carrying `[?` is a hole.
+- **15/4 May 1764 (105R-108L).** `tx/d1764-05_key_c01.txt`: key_c01, unchanged, on Payne's preliminary transcription:
+  615 of 838 groups of 100 or more get a value (0.734). It opens "jai ra avoi ec ... con no is sama n" where the clear
+  on 106R is reported to begin "J'ai reçu ..." (inventory), but no sentence holds and nothing was measured against a
+  clear. State: decoded, not read. No control was run; this is not a test of the key.
+- `documents[]`: the 5 Oct 1764 document still said "not read ... does not fit the cipher in order", withdrawn on
+  12 Nov; corrected.

@@ -742,6 +742,17 @@ f. 334r and the f. 334v runs re-read from the images in the R9634 notation (`r96
 against the faded copy: *que esta muy sospechoso el papa que de alla* (`zub`) *se le haya mandado lo que ha fecho*.
 New values: `zub` = alla, `3` = h confirmed, `ʒ` = y and `⊤` = x probable. Details in `read_r9656.md`.
 
+## Read share over cipher words only (16 Nov 2026): R9652
+
+The fixed measuring tool listed R9652 under the bar (0.966 -> 0.939 once the "What it says" section was no longer
+counted). R9652 is written entirely in clear (`read_r9652.md`): under the rule that the read share counts the words
+written in cipher, it has no cipher words, so no read share is recorded. The 0.966 had been measured over the clear
+transcription and counted its expanded abbreviations (v. m[agesta]d, su S[antida]d, p[apa]) as holes. Whole letter,
+clear included, not the measure: 0.993 (291 words; the blank date [x] and the bracketed [visorrey] as holes), with
+`bracket_expansions: true` declared on the entry, since the file says its brackets expand abbreviations; the tool
+reproduces 0.993 with it and no longer flags the entry. The state stays read (nothing in the letter is unread); the
+target's class, read in part, and fraction_read (0.042) do not change.
+
 ## Remaining gaps
 - R9646 (decoded, not read; runs 4-5): zip, zob, ʃof and the spelled ð∠89&Ho, 8ʒtoo, ð∠47 ɣ?8δHo - blocker: no-key-material; codes seen once in 21 letters, the looped sign keyed nowhere (re-read 22 Oct 2026, b13)
 - R9656 (decoded, not read): ɲ4∠&ɣ̊t (l. 6), ɣαδ8 (l. 9), teɡ∂ ϯ∠8ɣ̊oo (l. 13), ϙ8, 8x& (l. 14), zarɣ̊, ßϑ7, code 30 - blocker: no-key-material; f. 335r copy illegible in the left half of each line after background subtraction (b13)

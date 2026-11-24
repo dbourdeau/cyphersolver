@@ -598,6 +598,12 @@
    "kind": "literature search",
    "what": "Catalogue 1554: three web searches found no edition or decipherment; no book was opened.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): 425 of 2,725 words flagged in eleven texts. Cause found in the audit script, not the records: the line labels (L01, D05 ...) were read as signs in the transcriptions and as letters in the decryptions, which gives one false departure per line; the degree mark of the readings' editorial repairs is not known to the audit. Own check: key.tsv by the rule of scripts/decode.py reproduces the eleven main decryption files line for line except decryption_0103r.txt L11 ([SUA MAESTA] against the now doubtful [?SUA MAESTA]); in the two readings no word outside a degree mark or brackets has a letter the signs do not give. dudout/decryption_0114r_dudout.txt not compared. No file of the key, transcriptions, decryptions or readings changed.",
+   "result": "worked"
   }
  ],
  "outcome": {

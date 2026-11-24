@@ -75,7 +75,7 @@ la reina *onde? per?* con lei si farà l'aco[r?]-
 **L23** -do ⟨8⟩ ⟨Q⟩. Intendete che la *che?* è d(i)sposata chol
 ⟨28⟩ de ⟨P1⟩; ch'io credo
 
-**L24** che tal ⟨P+⟩ no andrà *prima?*. El legato che c'era venuto per
+**L24** che tal ⟨P+⟩ no andrà *prima?*. El (l)egato che c'era venuto per
 ⟨D⟩ *che* ⟨P1⟩ no
 
 **L25** acetarà, *a tanto fatto che* ⟨P1⟩ l'à acetato e [deta?]

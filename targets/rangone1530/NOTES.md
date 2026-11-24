@@ -147,3 +147,18 @@ overall 245/264 = **92.8%**. Not 95%: A6's 12 signs are the block.
 `cipher.txt`, `tokens.txt`, `key.json` (final; `?` = unread), `key_fregoso.json` (the annealer's key before hand
 corrections), `reading.md`, `measure.py` (sense measure), `solve.py`, `solve2.py`, `sens.py`, `spaced.py`, `show.py`. Images git-ignored: `img/`
 (DECODE R4249), `full3082/`, `full330/`, `full331/` (Gallica natives).
+
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. Each reading's header names its
+cipher stretch, so the clear sentences quoted around it were left out:
+
+- B, fr. 3082 f. 42 ("il Fre·goso" and "tolse" to the end): 0.952 (whole excerpt, clear included, not the measure) ->
+  **0.875** (28 of 32 words; holes [?]en, ruina[r], f[?], rovi[n]are). Read -> **read in part**.
+- A, fr. 3070 f. 81 ("'l fa instantia" to "oferte", "essendo" to "tenderui"): 0.915 -> **0.778** (28 of 36; holes
+  [a m]e as two words, ven[i]re, o[?], the unread stretch after "le mie" as one word, extent unknown, [s]ignore and
+  [?]icon[?]uorano as two). Read in part already.
+
+The target stays read in part. The sign count of `measure.py` (245/264, 92.8%) is a different unit and is unchanged.
+Remaining gaps and Escalation are unchanged: the holes are the runs of once-occurring signs listed there and the
+supplied letters (ruina[r], rovi[n]are, ven[i]re, [s]ignore), which the cipher does not have or writes with another sign.

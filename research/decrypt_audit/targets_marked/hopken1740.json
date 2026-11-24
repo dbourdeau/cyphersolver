@@ -1,0 +1,38 @@
+{
+ "folder": "hopken1740",
+ "marked": [
+  {
+   "file": "targets/hopken1740/reading_khan1742.md",
+   "places": 28
+  }
+ ],
+ "left_unmarked": {
+  "count": 28,
+  "why": "28 respelt words in the five readings of 1741-1742 (6 khan, 3 Lit. A, 6 Castellane, 7 reply, 6 Lit. B), each verified against the marked files and named in the file headers under rule 4; plus word codes rendered in French/Latin (stated convention) and the 5 places of 1324 = et (value held in key_1742.tsv). reading_sv.txt is the contemporary gloss: header only (rule 2)."
+ },
+ "headers_changed": [
+  "reading_sv.txt: first line extended with 'This is the chancery decipherer's text as written over the groups, not the output of key.tsv; the key applied group by group is decryption.txt.'",
+  "reading_khan1742.md: none -> 'Marks (added 16 Nov 2026 ...)' paragraph after the title",
+  "reading_lita_1741.md, reading_castellane_oct1741.md, reading_reply_oct1741.md: none -> 'Conventions (stated 16 Nov 2026 ...)' paragraph after the title",
+  "reading_litB.md: Marks line 'Everything else is the key value.' -> '... the key value, except the word code ottporten rendered Porta, capitals, word division and punctuation, and the six forms of Excellent- (cipher ex-ce-l-en)'",
+  "about_reading_khan1742.txt: 'spelling as in the cipher, accents added' -> 'spelling as in the cipher except six words (listed in the header of reading_khan1742.md), accents added' + a sentence on the new marks"
+ ],
+ "page_changes": [
+  "'are verbatim and 3 have a marked repair;' -> 'are verbatim and 3 have a repair marked in marked_lita_1741.txt;'",
+  "'23 carry a marked repair and' -> '23 carry a repair marked in marked_khan1742.txt and'"
+ ],
+ "page_counts_now_stale": [
+  "none changed by the marks: the page's Khan counts (205 verbatim, 23 repaired, 28 gloss-only of 256) are against the frozen key_1741.tsv and come from marked_khan1742.txt, which was not touched; the embedded reading texts in the generated texts block are stale until the site is rebuilt"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/hopken1740/reading_khan1742.md",
+   "before": 0.003,
+   "after": 0.029,
+   "state_in_profile": "read"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "Correction to my first report: 16 words (21 values) carried unmarked repairs, not 18 (frontières was counted twice and réputer follows the cipher). I also marked 7 words whose group is not in key_1742.tsv as [?y] (ce, aux x2, comme, V., commencement, mois), verified against key and transcription; the marked file does not say whether each comes from the gloss or the sense. I did not point outcome.texts[].reading at marked_khan1742.txt: it is a piece-by-piece working form (pieces joined by +, no accents, row labels), not the sentence text the schema asks for, so I marked the reading in the folder's {x/y} convention instead; decide if that is acceptable. The after hole rate includes the new header paragraph (the scorer reads the whole file; 509 words against 350); explicit-holes clean share 1.0 -> 0.932. The two reading files with CRLF line ends (khan, Lit. A) keep CRLF. scripts/make_texts.py would overwrite the reading_sv.txt header if rerun. Header-only files were not scored."
+}

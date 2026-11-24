@@ -1,8 +1,9 @@
 # William H. Crawford to James Monroe, Paris, 5 Nov 1814 ("Despatch No 33-2, Private"): a coded letter in WE025
 
-Contributed by Andrew Beling, with AI agents, 15 November 2026. Status: read, with nine groups supplied from the
-sense (section 3). No printed text or period decipherment of the coded part was found (section 5).
-The site page and the ledger rows are left to the maintainer.
+Contributed by Andrew Beling, with AI agents, 15 November 2026. Status: read in part: 223 of 246 words of the coded
+passages (90.7%) read as the key gives them, under the 95% bar; nine groups supplied from the sense (section 3). No
+printed text or period decipherment of the coded part was found (section 5).
+Written up: docs/crawford1814.html.
 
 ## 1. The document
 
@@ -67,7 +68,27 @@ first of four figures has no matching letter in a two-letter element, and it is 
 
 Also: 66L02 "284 95" (that circumstance) is read as written, with [be brought by] supplied, as Crawford's sentence
 lacks a verb there (285 951 would be "be brought"); 66L14 556 with one r-stroke is read la[s]t (lat[ter] is possible);
-791 speci is read speci[fied]. 65R01 1025 thing is read "Things" (no mark seen).
+791 speci is read spec[ified] (the bracket also takes in the i the group gives, so that the key replay aligns it). 65R01 1025 has a small diamond over its last figure (things): missed in both
+transcriptions, it was seen on frame 0065 after the maintainer's review of PR #735 pointed to it, and added to the
+transcription as 1025' on 16 Nov 2026 (`decode.py` rerun; the decryption and `validation.tsv` change in that group only).
+
+Mended in the reading where no mark is written, and unmarked there until 16 Nov 2026: "very" (written in clear,
+64R01) as "every"; 1046 spire without its stroke in [conspiracy] (64R12); 1228 1359 re-ult as re[s]ult; 328 887 fam-ili
+as famil[y]; 739 mean as mean[s]; 578, which the table copy gives as "eney", as the end of regen[c]y; and two words
+with no group under them, [and] in "troops and others" (64R07, between 1116 and 783) and [of] in "the fate of the
+King" (65R03, between 1556 and 1355), found by the key replay. On 16 Nov 2026 these were bracketed in the reading
+(the clear "very" is left as it is: clear words are not marked); no word of the reading was changed.
+
+**Read share, by words (16 Nov 2026, on the review of PR #735).** `replay.py` applies WE025 with Crawford's marks to
+the transcription and compares it with the reading through `docs/_replay.py`. The groups run on without word division,
+so words are the words of the reading that the groups carry: 225 of 241 are the key's output (93.4%), and every
+difference is marked. For the read bar every word that is not the key's output counts as a hole: the nine supplied
+groups ([say], [A] and [a] three times, decis[ive], Rom[e], [these], [any]); right[s], ma[de], la[s]t and spec[ified];
+the five mendings of cipher words above ([conspiracy], re[s]ult, famil[y], mean[s], regen[c]y). The replay takes
+Rom[e] and [conspiracy] for the key's output (their dropped letters are bracketed, and it passes over such a gap) and
+does not count the five words the reading supplies where no group stands, [be brought by] (three words), [and] and
+[of]; all seven are counted here as holes. Result: 223 of 246 words, 0.907, under the 95% bar: read in
+part. Counted by groups, as before, 283 of 292 give the word of the reading from the table value as written.
 
 **What it says (Crawford's report, in his words; none of it is established fact):** he believes the French government
 has resolved to sacrifice everything for England's friendship; the King, far from being jealous of British troops in
@@ -90,7 +111,7 @@ Duke of Orleans; the genuine republicans joining either of the last two.
   run once more, both outputs kept.
 - **`docs/_validate.py`** on `validation.tsv` (the nine supplied groups left unread): 283 tokens over 157 types
   (1.8 per type); reading -1.850 against random keys -2.760 (z 6.6) but a key refitted to shuffled text scores the
-  same (-1.855), so the verdict is "underdetermined": with so few tokens per type the letter model cannot separate a code
+  same (-1.855), so the verdict is "underdetermined" (run on 15 Nov, before 1025' was added; not rerun): with so few tokens per type the letter model cannot separate a code
   reading from a fitted key on this text. The shuffle test above, which permutes the printed table rather than fitting
   one, is the test that bears on this reading.
 - **Clear words**: "discussions at Vienna" (64R15) was misread by both readers at first and settled on a crop.
@@ -167,15 +188,27 @@ described above; it did not re-read the other lines. No person has checked any o
 
 ## Remaining gaps
 
-- The nine supplied groups (section 3). Blocker: none outside; the slips are inferred from the sense (one slip of
-  the same kind is attested in September, section 7); the four groups written 1512 and 812 are not settled.
-- A period decipherment or clear copy: the clerk's fair copy (last page on 0067R), the Crawford papers (Library of
-  Congress), the Monroe papers (New York Public Library) and Green (1965) not seen. Blocker: needs access.
+- Nine supplied groups (section 3) - blocker: open-codes; 1512 four times, 1276, 556, 361, 1474 and 812: the slips are
+  inferred from the sense (one slip of the same kind is attested in September, section 7); the four groups written
+  1512 and 812 are not settled; the 16 Dec 1814 letter with its period decipherment could test Crawford's slips.
+- Supplied letters and words and mended words - blocker: needs-physical-access; right[s], ma[de], la[s]t,
+  spec[ified], [be brought by], [and] (64R07), [of] (65R03) and the five mended words (section 3): the groups give
+  no more, and only a clear copy of the time (the clerk's fair copy, of which only the last page, 0067R, is on the
+  roll) could settle them.
+- A period decipherment or clear copy - blocker: needs-physical-access; the clerk's fair copy (last page on 0067R), the
+  Crawford papers (Library of Congress), the Monroe papers (New York Public Library) and Green (1965) not seen.
 
 ## Escalation
 
-- Siblings: done on 15 Nov 2026 (section 7): frames 0025, 0031 and 0032 of the same roll, 81 groups with the clerk's
+- [x] siblings (15 Nov 2026, section 7): frames 0025, 0031 and 0032 of the same roll, 81 groups with the clerk's
   decipherment. Not done: Crawford's other WE025 letters on this roll.
-- Print: the sources in section 5 checked; Green (1965) and the Crawford papers remain.
-- Retry: the 16 Dec 1814 private letter (roll 18 frames 0129-0131, same code) has a period decipherment on the
-  Library of Congress duplicate (Monroe Papers reel 5, images 938-941) and can test Crawford's slips; not done here.
+- [x] clear-pages: neighbouring frames 0059-0063 and 0067-0070 checked for a decipherment (section 1); only the last
+  page of the clerk's clear fair copy (0067R) is on the roll.
+- [x] known-keys: the code is WE025, applied unchanged from Weber's printed table (section 2); the September passage on
+  0025R is in WE028, Crawford's older code.
+- [x] print: the sources in section 5 checked; Green (1965) and the Crawford papers remain.
+- [n/a] key-rebuild: the code's own printed table is used unchanged; nothing in it is rebuilt or extended here.
+- [x] retry (15-16 Nov 2026): the groups of "troops" read from their marks (section 7); the supplied groups set against
+  the September 1814 check (no pair contradicts them); 1025 looked at again on the frame and its diamond added. The
+  16 Dec 1814 private letter (roll 18 frames 0129-0131, same code), which has a period decipherment on the Library of
+  Congress duplicate (Monroe Papers reel 5, images 938-941), can test Crawford's slips; not done here.

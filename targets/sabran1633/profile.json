@@ -448,7 +448,8 @@
    "result": "worked"
   },
   {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-  {"date": "2026-10-25", "kind": "verification", "technique": ["other"], "what": "Harumi-Matsuba reverted the f. 66r c139_23c correction to z (issue #97, commit b1959b0), as found wrong on the image here: the decode reads secre[t]; second-reading agreement 92.3-92.6% overall, 91.9% on f. 66r; contributed/ synced.", "result": "worked"}
+  {"date": "2026-10-25", "kind": "verification", "technique": ["other"], "what": "Harumi-Matsuba reverted the f. 66r c139_23c correction to z (issue #97, commit b1959b0), as found wrong on the image here: the decode reads secre[t]; second-reading agreement 92.3-92.6% overall, 91.9% on f. 66r; contributed/ synced.", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "technique": ["manual reconstruction"], "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): the bold words of the 18 '### French' sections of lasry2022/READING.md, 1,076 (code readings one word each); 226 holes (209 tentative code readings, 3 doubtful readings, one blotted word, 13 supplied letters). Result: read_share 0.929 (clear and cipher together) -> 0.790 (850/1,076); per letter 0.321-1.0, only letter 1 over the bar; class read in part unchanged; fraction_read (sign coverage 0.9609) unchanged.", "result": "worked"}
  ],
  "outcome": {
   "validation": {
@@ -584,8 +585,8 @@
     },
     "state": "read in part",
     "reading": "lasry2022/READING.md",
-    "read_share": 0.929,
-    "note": "24 Oct 2026: 92.9% of the words of lasry2022/READING.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part."
+    "read_share": 0.790,
+    "note": "Read share over cipher words only (16 Nov 2026): the bold (cipher) words of the 18 '### French' sections of lasry2022/READING.md, 1,076 words (a bracketed code reading counted as one word), 226 holes: 209 tentative code readings ([Savoie?], [France?] ...), 3 doubtful readings (word[?], [r?]), the blotted se[blot]s and 13 words with a supplied letter (the key is rebuilt, so no slip rule): 850/1,076 = 0.790. Per letter from 0.321 (f. 54) to 1.0 (f. 73v); only letter 1 (Baluze 155, 0.986) meets the bar on its own. Whole letter, clear included, not the measure: 0.929 (24 Oct 2026, v2_score explicit holes). Coherent sentences but under the 95% read bar, so read in part."
    },
    {
     "doc": [

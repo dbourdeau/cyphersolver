@@ -90,3 +90,7 @@ Readings with [?] are uncertain in the secretary's hand; the glosses were read f
 Nothing to the reading, which existed in 1531. It corrects DECODE: R9962 is "Non-decrypted" but the decipherment is
 in R9961's images 21-23; R9962 duplicates R9961 images 1-4. The sender's name is Giovanni Antonio Muscetula (signs
 "Jo. Ant. Muscetula"); "Muxetula" is the docket spelling.
+
+## 14 Nov 2026, full-texts audit: no transcription of the cipher (R9961)
+
+The audit asks for the cipher as written beside each decryption. Looked in order: (1) no transcription in the folder under another name (R9961: The cipher (about 90 lines on AGS scans 001-006, 009, 011-012, 017) was never transcribed; only the contemporary decipherment sheet (doc. 91 bis) was.); (2) the DECODE record page and public API carry no transcription or attachment; (3) the image is not reachable from this session: without a login DECODE serves 200-px thumbnails only (a full-size request returns the placeholder "Insufficient permissions to see the full image"), and PARES answered 429 Too Many Requests. So `outcome.texts` carries `transcription_missing` with that reason. A logged-in fetch of the DECODE images unblocks it. No change to class, method, states or fraction_read.

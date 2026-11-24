@@ -114,7 +114,8 @@
   {"date": "2026-10-22", "kind": "verification", "what": "Reading audit, per-document pass (George Lasry's sentence test): the only text is a Google Books link that returns 403 to scripts; nothing of the letter is in the repository. Relabelled decoded, not read; class already solved kept because the decipherment is in print.", "result": "partial", "technique": ["language-model scoring", "statistical test"]},
   {"date": "2026-10-23", "kind": "access", "what": "Google Books jscmd=click3 endpoint (signed page-image URLs) answered for Puig 1920 (CuOlkxWnk-EC); pages fetched at 1600 px (research/reading_audit/b26_gbooks_fetch.py), scratchpad only. The book page itself stays CAPTCHA-walled.", "result": "worked"},
   {"date": "2026-10-23", "kind": "transcription", "what": "Puig's text of the letter (pp. 562-563, app. CXVII (index CXVI); ACB 'Documentos inéditos del obispo Çapera' no. 669) transcribed with his spelling and abbreviations, his italics (the decipherment) marked: texts/comuel1415_reading.md, English texts/comuel1415_en.md, log texts/comuel1415_reread_log.md.", "result": "worked"},
-  {"date": "2026-10-23", "kind": "verification", "what": "Reading body scored (b17_score.py, la): 0.275 (22/80) on the classical word list, 0.988 (79/80) counting explicit holes only (medieval Latin abbreviations and spellings unknown to the list); every sentence read as coherent. Relabelled read (grade A). Not checked against figures: no image of the cipher.", "result": "worked", "technique": ["language-model scoring"]}
+  {"date": "2026-10-23", "kind": "verification", "what": "Reading body scored (b17_score.py, la): 0.275 (22/80) on the classical word list, 0.988 (79/80) counting explicit holes only (medieval Latin abbreviations and spellings unknown to the list); every sentence read as coherent. Relabelled read (grade A). Not checked against figures: no image of the cipher.", "result": "worked", "technique": ["language-model scoring"]},
+  {"date": "2026-11-14", "kind": "access", "what": "Full-texts audit (section I): looked for a transcription of the cipher. None in the folder; none in Puig 1920, who prints the decipherment in italics and no cipher signs; no image of the letter exists (NOTES: ACB Cisma d'Occident papers, not digitised). Recorded outcome.texts transcription_missing with the reason; nothing transcribed.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -144,6 +145,7 @@
   "texts": [
    {
     "doc": "comuel1415",
+    "transcription_missing": "The cipher itself is not in hand and cannot be transcribed here: the letter is in the Arxiu Capitular de Barcelona (Cisma d'Occident papers), which the folder's NOTES record as not digitised; Puig y Puig 1920 (appendix CXVI (printed CXVII), pp. 562-563) prints only the deciphered words, in italics, never the cipher signs, and his one cipher facsimile (p. 475) is of another letter. Unblocked by an image or an on-site transcription of the ACB original.",
     "label": "Comuel to Climent, 21 Dec 1415",
     "decryption": "texts/comuel1415_reading.md",
     "summary": "Pedro Comuel to Francesc Climent, 21 Dec 1415, in Benedict XIII's circle during the Schism: a secret mission to the Queen of Castile. Puig y Puig printed the letter in 1920 (appendix CXVI, printed CXVII, pp. 562-563) with the deciphered passages in italics.",

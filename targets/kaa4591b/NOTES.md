@@ -116,6 +116,61 @@ and the runs that make no word [...] is now `sysB/R9322_reading.md`: 0.605 expli
 rate 0.121), plain 0.105. Keeps read, marginally: f. 121 (Łaski) holds; f. 122 (King John for Lazarus the Jew) rests
 on many one-letter emendations and its date and signature lines do not resolve.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `sysB/key_from_glosses.tsv` to the transcriptions and compared
+the result with the published readings. It could compare two of the four letters: R9322 (6 of 383 words departing) and
+R9403 (202 of 358 words departing), together 208 of 741. R9417 and R9323 were not compared (under 40% of the decrypt
+was found in the reading).
+
+**R9403: the key file did not hold this letter's table.** Every departure was e against r (`btulitmihi[e]uffus` against
+`obtulit mihi [r]uffus`). `key_from_glosses.tsv` has X = e and AST = r; the codes of `r9403/transcription.tsv` were
+written with AST = e and X = r. That exchange is stated above ("The key (System B)") and in the profile's
+`method_basis`, but the table itself existed only as the `KEY` dictionary hard-coded in `r9403/build.py` (lines 6-7).
+It is now written out as `r9403/key_r9403.tsv` (20 signs, each value copied from that dictionary, with a column saying
+whether it agrees with `key_from_glosses.tsv`; 18 agree, AST and X do not) and listed second in `outcome.key_file`.
+No value was taken from the reading. After the change the audit gives 0 of 416 words departing for R9403.
+
+That zero is not a check of the reading. `r9403/build.py` wrote the sign codes of `transcription.tsv` from the
+reading with this same table (see the Caveat under "R9403" above), so decrypting them returns the reading by
+construction. There is no transcription of R9403 made from the image independently of the reading in this folder.
+
+**R9322: 6 words, unchanged.** Three are effects of the audit script: `do / minacio` (the sign file writes the last
+sign of l. 6 as `M~` and the script dropped it), `futu[?]rum` (sign written `U2=`), and `[...] in nobis` (a marked
+hole). Three are places where `sysB/R9322_reading.md` prints letters the signs do not give, without a mark:
+
+- P1 l. 2-3: the signs give `illustriss` (line end), the reading prints `illustrissime dominacionis`;
+- P1 l. 3-4: the signs give `illus` (line end), the reading prints `illustrissime dominacioni`;
+- P2 l. 3: the signs give `principis`, the reading prints `princeps`.
+
+The first two are completions of words cut at the line end (the gloss has `illustris`, `illus`), the third is an
+emendation. They are listed here and left as they are; the reading files were not changed.
+
+Figures after: 6 of 799 words departing (R9322 6 of 383, R9403 0 of 416).
+
+Not explained, and not checked at the image: which letters carry which x. `key_from_glosses.tsv` (X = e 95 times,
+AST = r 50 times) was built on the glossed lines of R9322 and R9417 as first coded. The 23 Oct 2026 re-reading
+(`sysB/R9417-R9323_reread_log.md`, `sysB/R9417_corrections.tsv`) found that on R9417 the gloss fixes plain x = r and
+starred x = e, the R9403 values, and `sysB/R9323_reading.md` states the same for R9323. If that holds, three of the four
+letters use the table of `r9403/key_r9403.tsv` and only R9322 is coded with the table of `key_from_glosses.tsv`; whether
+R9322 really differs or its two crosses were coded the other way round has not been looked at. The sentence above that
+R9403 exchanges e and r against "the one key" should be read with this in mind.
+
+Marked on 16 Nov 2026. Three places in `sysB/R9322_reading.md`, in that file's own marks, no letter changed:
+`illustriss[ime] dominacionis` (signs `illustriss`), `illus[trissime] dominacioni` (signs `illus`), and
+`[?princeps]` (signs `principis`; the genitive does not fit the address "Illustrissime ... frater et amice", so the
+reading's word is kept and marked). Nothing known was left unmarked; R9417 and R9323 were not compared by the audit
+and were not checked word by word here. No header line of a reading file changed. `r9403/transcription.tsv` has a
+new second header line: it was generated from the reading by `build.py` and is not an independent transcription.
+`research/reading_audit/v2_score.py` (la) on `sysB/R9322_reading.md`: hole rate 0.121 before, 0.129 after; explicit
+holes 0.605 (23/38) before, 0.579 (22/38) after. `read_share`, state and class were not changed. On the page two
+sentences were corrected: the lede now says the key deciphers all four "with the signs for e and r exchanged in
+R9403", and the key section no longer calls the R9403 values "the reverse of the glossed letters" (it says the reverse
+of the key file, and that the 23 October re-reading found the same values in R9417 and R9323). The page's meta
+description (in the head) still carries the withdrawn 95.3% figure and was not touched. After the audit script's later
+change (line labels skipped) it reports 5 words departing for R9403, all a line-initial `U2` (u) of `r9403/signs.txt`
+taken for a line label; that is an effect of the script.
+
 ## Remaining gaps
 - R9323 l. 10, two words before "ducere noluit" - blocker: illegible; faint signs
 - R9417 the owl word sign (P2 l. 27), "queiter" (l. 16), [?anestris], [?sies], the 6-shaped sign read k - blocker: no-key-material; one occurrence each, the gloss stops at l. 14

@@ -1,6 +1,6 @@
 # Puente Nacional parte, 6 June 1832 (catalogue 1466)
 
-Outcome: read in part, key recovered from the ciphertext alone. About 86% of the cipher words read (127 of 147).
+Outcome: read in part, key recovered from the ciphertext alone. 124 of 149 cipher words read (83.2%, recounted 16 Nov 2026; was about 86%, 127 of 147).
 
 CEHM-Carso, Fondo I-2 (Manuscritos de Luis Gutiérrez Cañedo), I-2.5.340.1: one page, 22 cipher lines and a dateline,
 "Puente Nacional, 6 junio 1832, a las siete de la noche", unsigned (CEHM: "En clave", "Parte manuscrito").
@@ -23,6 +23,15 @@ A report to a general ("V.E."): the enclosed note will say that at daybreak next
 leave; V.E.'s notes of the 2nd arrived this evening; no movement has been made or planned on the road, he hopes V.E.
 will combine his force with those leaving Jalapa so as to act with decision; the enemy's sudden movement makes the
 retreat difficult; supplies for only five or six days.
+
+## Read share over cipher words only (16 Nov 2026)
+
+Old figure 0.86 (127 of 147 words of `transcription.txt` without a [?]). Recounted by hand and with `v10_relabel.py` on
+`reading.txt`: the 22 lines are all cipher; the dateline ("Puente Nacional, 6 de junio de 1832 ...") is in clear and is
+now marked with angle brackets in the file (markup only, no word changed; entry declares `clear_markup` as ⟨⟩) so that it stays
+out of both numerator and denominator. Holes by words, as `v10_relabel.py` counts them: 15 bare [?] (one word each; line 4 shows five), five part-words
+(oc[?], c[?], pr[?], [?]s, and c[?]m[?], which has two holes) and four supplied letters (S[r], dificulta[d], d[a], r[ecurs]os) = 25 holes; "149 words" is v10's unit (read words plus hole count); **0.86 -> 0.832 (124 of 149)**.
+The class stays read in part. Remaining gaps and Escalation unchanged.
 
 ## Remaining gaps
 - line 4 (five words) and the end of line 3 ("que oc...") - blocker: illegible; cursive vowel marks run together, single scan

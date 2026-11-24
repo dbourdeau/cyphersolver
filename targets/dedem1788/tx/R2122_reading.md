@@ -6,33 +6,33 @@ Chiffre", Nationaal Archief 1.02.20 (legatie Turkije) inv. 785, scans 0002-0005 
 decode `R2122_decode.txt`), and the clear text of the letter transcribed from the same images.
 
 Conventions: cipher words are carried by their groups, clear words by the letter; `[?word]` partly carried; `[word]`
-supplied (nothing carries it); `[…]` unread; `[1230]` a group whose codebook value gives no sense here. Spelling as
+supplied (nothing carries it); `[…]` unread; *italics* the clear words of the letter; `[1230]` a group whose codebook value gives no sense here. Spelling as
 the codebook and the letter give it; words the code spells in pieces are joined (el+der+s = elders, du+r+ven = durven,
 ver+ne+der+ing = vernedering). The opening groups 2504 2604 2704 are markers, not text: begin des briefs, a blank slot, and "annuleert 2 voorige caracters" (corrected 5 Nov 2026, issue #244); none is read.
 
 ## Reading
 
-Duplicaat. Hoog Edele Gestrenge Heer!
+*Duplicaat. Hoog Edele Gestrenge Heer!*
 
 Van begrip zijnde, dat het belang en politique systema van Haar Hoog Mogenden en dat van [1230] derzelve twee nieuw
 geallieerden en [1330] tegenwoordig toestand van zaaken, door de resolutie van den twee October, meer als ooit vooraf
 voor een en het zelfde moet gehouden worden, zijn zo bij de Porta als elders al mijn demarches, welke tot de ontfang
-van die resolutie door het manqueeren van de [?troupes] instructie genoegsaam werkeloos hebben moeten blijven, daarna,
-in allen deele geregeld, en het avantage hebbende bij elke gelegendheyd ten klaarsten te bespeuren [dat] het gantsch
-Ministerie een bijzonder vertrouwen in mij steld, kan ik UHoogEd: Gest: (na waarheyd) versekeren [dat] mijne
-insinuaties niets van goed effect geweest zijn, en ik niet twijfel of dezelve zullen bij continuatie van aanbelang
-genoeg gerekent worden, om ingang te vinden.
+van die resolutie door het manqueeren van de [?troupes] instructie *genoegsaam werkeloos hebben moeten blijven, daarna,
+in allen deele geregeld, en het avantage hebbende bij elke gelegendheyd ten klaarsten te bespeuren* [dat] het gantsch
+Ministerie een bijzonder vertrouwen in mij steld, *kan ik UHoogEd: Gest: (na waarheyd) versekeren* [dat] mijne
+insinuaties *niets van goed effect geweest zijn, en ik niet twijfel of dezelve zullen bij continuatie van aanbelang
+genoeg gerekent worden, om ingang te vinden.*
 
-Uyt eerst voormelden hoofde, heb ik mede dienstig geoordeeld de Envoyé van Pruissen het verlangen van de Ottomanische
-Porta omtrent het doen eener Negociatie in de Republiek niet geheel te moeten laaten ignoreren, ten einde de Koning
+*Uyt eerst voormelden hoofde, heb ik mede dienstig geoordeeld* de Envoyé van Pruissen het verlangen van de Ottomanische
+Porta omtrent het doen eener Negociatie in de Republiek niet geheel te moeten laaten *ignoreren*, ten einde de Koning
 zijn Meester, wie zijn belang zeker mede is [dat] de Porta tegenwoordig niet verleegen gelaaten, noch aan eenig
-ongepaste vernedering bloot gesteld word, daar van tot deszelfs narige opening te geeven.
+ongepaste vernedering *bloot gesteld word, daar van tot deszelfs narige opening te geeven.*
 
-Ik [heb] het zelfde omtrent de Engelsche Ambassadeur niet durven observeeren, wijl daar hoogenaamt geen staat op te
+Ik [heb] het zelfde omtrent de Engelsche Ambassadeur niet durven observeeren, *wijl daar hoogenaamt geen staat op te
 maaken is, en hij een allergevaarlijkst sujet en vol intrigues is, en hij zo ras het met zijn particulier belang
 strookt, steets gewoon is van zijn eigen woorden die van een ander te maaken, en om tot zijn doel te geraaken, zig met
 duijzenderley leugens op te houden en zijn beste vrienden te compromitteren, durvende ik mij ter overlegging van dien
-gerust beroepen en verlaaten op het getuygenis dat Zijne Majesteit de Koning van Pruissen en alle andere hoven welke
+gerust beroepen en verlaaten op het getuygenis* dat Zijne Majesteit de Koning van Pruissen en alle andere hoven welke
 alhier een minister hebben daarvan kunnen geeven.
 
 En zonder [80] minst moeite zou ik het verleenen van een nieuw subsidie aan Zweeden geheel tegen konnen [1330], doch
@@ -42,10 +42,10 @@ alles zeer agterhouden [760] handeld en nooit iets daarvan [4414] te kennen ge [
 continuatie dat point aanraaden. En het geen niet weinig die zaak zou goed doen, is de reussite der bekende
 Negociatie, dewijl daar na direct een som nadien kant kon gebruikt worden.
 
-Verder voor dit keer UHoogEd: Gestrenge attentie niet willende ophouden, refereer ik mij omtrent het publique nieuws
+*Verder voor dit keer UHoogEd: Gestrenge attentie niet willende ophouden, refereer ik mij omtrent het publique nieuws
 tot mijn schrijven van gisteren en heeden aan de Heer Griffier, waar mede ik onder versekering van mijn respect met
 alle verschuldigde hoogagting d'eer heb te verblijven. Hoog Edele Gestrenge Heer! UHoogEd: Gestrenge onderd: en
-gehoorz: dienaar. Pera van Constantinopolen den 15 Jan. 1789.
+gehoorz: dienaar. Pera van Constantinopolen den 15 Jan. 1789.*
 
 ## Notes
 

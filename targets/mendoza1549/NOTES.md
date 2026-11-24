@@ -83,6 +83,42 @@ the decipherer's slip, the cipher never had "mandamos" here); "a vuestra Escelen
 (42r "a V.E. ... no comuniq en Corte": no "que", and the cipher has "la"); "tirano" (42r "tiriano"). These four
 places show c. 42r is a decipherment made from c. 44r, not the draft it was enciphered from.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) applied `key.tsv` (column "value", the most frequent value of each sign)
+to `transcription_44r.txt` and compared the letters with `reading_44r.md`: 23 of 149 compared words depart, none
+marked in that file.
+
+Cause, checked by hand and with a read-only snippet: every departure is one of the repairs already marked in
+`reading_44r_marked.md`. That file carries 38 marks in 28 of its 154 words; with the marks resolved it gives the
+same letters as `reading_44r.md` (compared with case, accents, u/v and i/j/y folded: identical). Of the 38 places,
+35 take a second value of a sign that stands for more than one value in our naming, and each of these second values
+is listed for its sign in the fourth column of `key.tsv` ("all values") and in place in `align_44r.txt`: for
+example `x` is de in 8 places and no in 6, so the decrypt gives "govierde" and "de quise" where the reading has
+"govierno" and "no quise" (marked `{de/no}`, L03 and L08). The other 3 are the signs left unexplained and dropped
+(`o` in Florencia, `p` in vez, `S` in Juan; marked `{-l}`, `{-n}`, `{-se}`). So `reading_44r.md`, the file the
+profile names as the reading, prints 28 repaired words with no mark in the file itself; it refers to
+`reading_44r_marked.md` in its last line. The audit counts 23 words and not 28 because it compares only the gaps
+between its anchors and folds letters.
+
+No other kind of departure was found: no word supplied without a sign, no normalisation beyond the editorial
+punctuation and accents that the header of `reading_44r.md` states, no clear text interleaved, and the
+transcription and the reading are in step. `decryption_44r.txt` was not regenerated here (the folder's scripts were
+not run); the snippet rebuilt the per-place values from `align_44r.txt` and `key.tsv` only.
+
+Nothing was changed in the key, the transcription, the readings or the profile's file names. The figure after is
+the same, 23 of 149. The departures will stay in any letter-by-letter comparison until the merged sign names are
+split (first item below) or the reading named in the profile carries the marks. Not checked: the images, and
+whether the second values are right; they come from the alignment with c. 42r.
+
+Marked on 16 Nov 2026: no mark was added by hand. `reading_44r_marked.md` already holds all 38 marks (28 words) and,
+with the marks resolved, has the same letters as `reading_44r.md`, so `profile.json` `outcome.texts[0].reading` now
+names `reading_44r_marked.md`. `reading_44r.md` stays as the sentence form without marks (its last line refers to the
+marked file); no header line was changed. `research/reading_audit/v2_score.py` (es): `reading_44r.md` hole rate 0.0
+(149 words), `reading_44r_marked.md` 0.017 (356 words; the count includes the file's header prose). The folder-mode
+reading checker scored the marked block lower when it sat in `reading_44r.md` (see "Dan's reading checker" below);
+that score will now apply to the file the profile names.
+
 ## Remaining gaps
 
 - Shape splits - blocker: not-attempted; `x` stands for both de (8 places) and no (6), `o'` for ga (3) and ta (2),

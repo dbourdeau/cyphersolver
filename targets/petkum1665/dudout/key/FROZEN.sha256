@@ -1,0 +1,13 @@
+# SHA-256 recorded on 11 Nov 2026 (contributor's log, no external timestamp), in the order of events.
+# Protocol (key/PROTOCOL_fr.md is append-only; earlier states = first N bytes, checked by scripts/verify_hashes.py)
+7b92cffb1ed5e957d5f947e699cf99ec258402046071b791908d1e2232105b58  key/PROTOCOL_fr.md[:2580]  15:12 CET, before any transcription
+aeaa6c2f224a217d4d930e4c40c6d8283fa0b415558cf5257ab4d14d39b81ce0  key/PROTOCOL_fr.md[:3464]  15:21, with addendum 1, at the freeze of T
+7bfbaefe6b3d1f4edd1aa8328cec42aaa126c656b10e31c9e8c6ba98850b68e4  key/table_T.py  15:21, key T frozen
+a42a2d1f3a7151e2708a19e2df4e31facc97c3352903cc63737e84c7e2ae8301  key/table_T.json  15:21 (= output of table_T.py)
+f5cca9a3214221b5444928e2da255c2c76c39d5d17164c3aaec969497e9da889  transcriptions/H_561.txt  15:25, held-out 1 frozen before measure 1
+09deb56ba8a1dd94b415203f95000d3f644d412a34dd3f9b2d3f00cde02c29d9  key/PROTOCOL_fr.md  15:31, with addendum 2, at the freeze of T2
+271d6668136304097ba65a8f2093a7d0246d17d89f946da4422b1ada97de5b24  key/table_T2.py  15:31, key T2 frozen
+fc79cda563964d8446275042e8acceca34b1016bc04bc3abaf97ff02d8dfefee  key/table_T2.json  15:31 (= output of table_T2.py)
+cf5d55a2145137fc1209840217532b3e27fcf91dad6efeb472bc9482eee828a8  transcriptions/H2.txt  15:36, held-out 2 frozen before measure 2
+# Written 14 Nov 2026 for this folder (derived, not frozen on 11 Nov):
+2a8b10527cad305a5870454e4b6f7e8676481783fba83cf4a935284840a01fd5  key/key_T2.tsv  = python3 -I scripts/make_key_tsv.py

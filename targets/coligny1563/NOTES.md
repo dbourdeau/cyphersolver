@@ -62,3 +62,12 @@ same correspondents as the three letters above. The record made in foix1563 on 2
   printed Coligny letters of late January (for example "surprendre le dict Lyon par escalade", Forbes ii c. 319).
   Catalogue 93 is very likely in print too. That was not checked passage by passage here.
 
+
+## 14 Nov 2026: full-texts audit, the missing transcription
+
+R9237, R9238, R9239 and R9240 were listed without a transcription of the cipher. In order: (1) the
+folder holds only Forbes's clear text, its reading and translation; (2) the four DECODE records (public API and
+record pages) carry images only, no transcription or document, and cryptiana `elizabeth.htm` has none; (3) the
+images could not be fetched to transcribe the signs: DECODE serves the images of this record only to a signed-in session (an anonymous request to `decrypt-custom/filesrv` returned the `forbidden.png` placeholder, 17,947 bytes; the 200 px thumbnails are public and useless for signs). No DECODE session is available in this checkout and the images an earlier session fetched were git-ignored and are gone. So `transcription_missing` is recorded on the four entries.
+What unblocks it: the nine images through a DECODE account, then a transcription against a sign inventory built
+from the Condé key (DECODE R335), checked by decoding against Forbes's text. Nothing else changed.

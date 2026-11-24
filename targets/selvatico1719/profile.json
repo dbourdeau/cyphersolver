@@ -391,6 +391,13 @@
    ],
    "what": "Held-out test scripted against a corrected gloss file: 44 of 63 gloss words exact with the frozen key; of 56 with no uncovered code group, 44 exact, 7 need only a post-test value, 4 differ in a marked ending, 1 miss. No letter value contradicted.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "sibling key",
+   "what": "Full-texts audit: the six letters this target does not read (10 Jun, 29 Jul, 8 Aug, 12 Aug 1722; '2 gennaio'; '10 dicembre') listed in outcome.texts with this folder's two transcription passes (work/pass_a_1722.txt, work/pass_b_1722.txt) and a mechanical decode of pass A with the frozen 1719 key (scripts/decode_1722_1719key.py -> decryption_1722_1719key.txt): 533 of 1,623 groups take a letter (33%, the figure of scripts/test_1722.py), no words. State decoded, not read; the reading of these letters is in targets/riva1722.",
+   "result": "ruled out",
+   "technique": ["key matching"]
   }
  ],
  "outcome": {
@@ -472,6 +479,16 @@
     "read_share": 0.61,
     "summary": "Fragments only: the succession of Tuscany, Lorraine excluded, Monferrato, 'in mancanza delle linee viventi', Mademoiselle de Valois, 'seminar confusione'. 'Queen mother' and 'Duchess of Berry' are conjectures.",
     "note": "190 tokens, 116 without a mark (61%), but many unmarked tokens are fragments ('d', 'far', 'li le e se-'); the independent reviewer estimates about 50% reads as sense and graded the reading C. Decoded with the frozen key, not read."
+   },
+   {
+    "doc": ["jun10_1722", "jul29_1722", "aug8_1722", "aug12_1722", "jan2_undated", "dec10_undated"],
+    "label": "The four Vienna letters of 1722 and the two undated letters (cc. 21-26, 35-36, 2-3, 14-15): another table",
+    "transcription": ["work/pass_a_1722.txt", "work/pass_b_1722.txt"],
+    "decryption": "decryption_1722_1719key.txt",
+    "language": "it",
+    "state": "decoded, not read",
+    "summary": "Not read in this target. Number groups inside clear Italian letters from Vienna; the clear words between the groups are in the transcription. The same six letters are read in part, with the Riva table, in targets/riva1722.",
+    "note": "Two sign-level passes of this target (A and B; 1497 of 1664 groups agree, NOTES). The decryption is the frozen 1719 key applied unchanged to pass A, shown for checking and not a reading: 533 of 1,623 groups (33%) take a letter and no word comes out, because these letters use another table. For their reading see targets/riva1722 (key K3; one key, one entry), which has its own transcriptions of the same letters. Not counted in this target's fraction_read."
    }
   ],
   "key_file": "key.tsv",

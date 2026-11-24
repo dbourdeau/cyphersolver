@@ -78,6 +78,16 @@ decode, plain 0.355). Its clear decipherment (f. 97r, `DOC_R196_D1449`, recorded
 is now `texts/R196_decipherment.txt`; it agrees with the decode clause by clause (2754 pubblic-, 2131 ancora, 2141 come,
 2349 avvis-, 2907 due, 2189 quest-). Reading `texts/R196_reading.md`, English `_en.md`, plain 1.0; keeps read, grade A.
 
+## Read share over cipher words only (16 Nov 2026)
+
+Recount for the rule that the read share counts cipher words only. All eight records are wholly enciphered
+despatches (`ciphertext_all.txt` is figures throughout), and each reading is the Secretariat of State's clear
+decipherment or Lasry's decode aligned word by word with the figures, so every word of every reading body is a cipher
+word and there is no clear text to leave out ("not split" in the tool's tsv means there is no marked clear text). Recounted by hand:
+R25 288 words, 1 hole (0.997); R195 139 words, 7 holes (0.952, the margin of the bar: [?solamente], [?assicurato] and
+the five words of [?della gente di quei paesi]); R196 1.0; R197-R199 1.0; R200 343 words, 1 hole in the body, 0.995 ->
+**0.997** (the second [?Spagna] stands in the Notes); R201 1.0. No state, class or page figure changes.
+
 ## Remaining gaps
 - closed 22 Oct 2026: R25, R195, R200, R201 read from the Secretariat's clear decipherments on DECODE (texts/R*_reading.md)
 - R200 code 2339 (an ambassador; the fair copies leave it blank, the draft gives 'di Spagna') - blocker: no-key-material

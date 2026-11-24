@@ -19,16 +19,17 @@
     "partial": true
    },
    "length": {
-    "tokens": "unknown",
-    "distinct": "unknown",
+    "tokens": 1622,
+    "distinct": 78,
     "unit": "symbols",
-    "measured": false
+    "measured": true,
+    "file": "R2789_transcription.txt"
    },
    "transcription": {
-    "by": "published",
-    "source": "Lasry overlay checked against authenticated DECODE scans and Destray's Gallica facsimile",
+    "by": "llm from images",
+    "source": "Destray's facsimile on Gallica (ark:/12148/bpt6k932364m, views f88 and f89, IIIF full size), signs labelled from George Lasry's key table of 25 May 2022 (cryptiana GL.htm)",
     "image_quality": "good",
-    "notes": "The published overlay leaves several groups as question marks; READING.md preserves those gaps. No independent sign-by-sign ciphertext transcription was made."
+    "notes": "14 Nov 2026: R2789_transcription.txt, 42 lines, 1622 signs (78 distinct labels) plus 34 vertical strokes; 1656 tokens with the strokes on _check_profile.py --measure --drop-first. 47 signs marked doubtful. A single AI transcription not checked by a person; look-alike signs (D1/O3, P1/F1/N2, E2/QUE, V4/LL/POUR, B1/S1) were labelled by sense, so those labels are not independent of the plaintext. The earlier READING.md is a copy of Lasry's overlay, not of the signs."
    }
   }
  ],
@@ -109,7 +110,10 @@
    "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): READING.md (the project's transcription of Lasry's overlay) and cryptiana GL.htm as decryptions; no ciphertext transcription (project work).",
    "result": "partial"
   },
-  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"}
+  {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 1 of 1 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "access", "what": "Looked for an existing transcription of the cipher signs: none in the folder; DECODE R2789 public API record and record page carry two images and no transcription or document attachment; cryptiana GL.htm carries Lasry's key table and plaintext overlays as images, no sign transcription. The DECODE images (614 and 707 px wide) and Destray's facsimile on Gallica (openapi.bnf.fr IIIF, views f88 and f89, 3330 x 4796 px) were fetched without a login.", "result": "worked"},
+  {"date": "2026-11-14", "kind": "transcription", "what": "Transcribed both pages sign by sign from the Gallica facsimile, in 3-line crops, labelling each sign from George Lasry's key table (R2789_transcription.txt: 42 lines, 1622 signs, 78 distinct labels, 34 vertical strokes, 47 signs marked doubtful). Single AI transcription, not checked by a person; several look-alike pairs of signs were labelled by sense.", "result": "partial"},
+  {"date": "2026-11-14", "kind": "verification", "what": "Decoded the transcription by its labels (R2789_decode.txt) and compared it with READING.md line by line: every line agrees with Lasry's overlay; where READING.md has a gap the decode mostly shows a word sign or letters (line r01 'QUE VOUS CONGNOISSES [TRES] BIEN L HVMEVR DE CEVLX A', r18 'QV IL N EN SERA RIEN CONCLVD QUE JE N EN SOIS PREMIE-'). Nine unknown signs (U1-U9) and the queried word signs stay unvalued. The sentence reading and translation were not redone.", "result": "partial"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -128,12 +132,14 @@
    {
     "doc": "R2789",
     "label": "Charles IX to Philibert du Croc, undated (1565-67 or 1572)",
+    "transcription": "R2789_transcription.txt",
     "decryption": [
      "READING.md",
+     "R2789_decode.txt",
      "http://cryptiana.web.fc2.com/code/GL.htm"
     ],
     "summary": "Charles IX tells his ambassador in Scotland, Philibert du Croc, to use his judgment and follow his instructions for the country's peace; above all his nephew, the young James VI, is to be well brought up, keep the Scots' traditional attachment to France, and not marry before Charles has been told and can send his intention. The postscript orders him to keep the English from gaining a foothold in Scotland. READING.md is a working transcription of George Lasry's plaintext overlay published on Tomokiyo's cryptiana GL.htm (25 May 2022), with its gaps kept.",
-    "note": "No transcription of the cipher signs exists (project work); the letter is printed in facsimile in Destray, Philibert Du Croc (1924), doc. XLIII. 24 Oct 2026: 92.8% of the words of R2789_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
+    "note": "Transcription (14 Nov 2026): R2789_transcription.txt, a single AI transcription of the signs from Destray's facsimile (Philibert Du Croc, 1924, doc. XLIII, Gallica), labelled with Lasry's key table and not checked by a person; R2789_decode.txt is its mechanical decode. The decode gives letters and word signs in several places where READING.md has a gap (it was copied from the overlay at low resolution); R2789_reading.md has not been redone from it. 24 Oct 2026: 92.8% of the words of R2789_reading.md read as sense (v2_score explicit holes); coherent sentences but under the 95% read bar, so read in part.",
     "reading": "R2789_reading.md",
     "translation": "R2789_en.md",
     "language": "fr",

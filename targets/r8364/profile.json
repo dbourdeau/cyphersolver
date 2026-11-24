@@ -180,7 +180,13 @@
    "date": "2026-10-01"
   },
   {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 12 tokens, 8 types, en-modern order 4: reading -2.386 per letter; Verdict: too short.", "result": "partial"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt / cipher_tokens.txt (the cipher items in context) and reading.txt (the letter with the readings and the unread items marked)", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription.txt / cipher_tokens.txt (the cipher items in context) and reading.txt (the letter with the readings and the unread items marked)", "result": "worked"},
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026). The cipher items in < > of reading.txt were taken one by one. Cover-name markers after a name in clear ([9] after Glascoe twice; 3 after Glascoe and Hall) carry no cipher and were left out. The 8 cipher words: VALERY read (grade M); [9] alone x3, tt and the lone 3, inferred as Alençon from the Folger/Read summary (grade I, not sure words); the nine-sign run (extent unknown, one word) and II unread. 1/8 = 0.125 (5/8 = 0.625 if the grade-I identifications counted). Was 0.977 over the whole letter, clear text included. The letter goes from read to read in part; the class was already read in part, and the token figure (6 of 26, 0.23) is unchanged.",
+   "result": "partial"
+  }
  ],
  "outcome": {"validation": {"date": "2026-10-11", "model": "en-modern", "file": "validation.tsv", "tokens": 12, "types": 8, "tokens_per_type": 1.5, "score": -2.386, "nulls": {}, "verdict": "too short", "notes": "claimed per-occurrence score -2.386; polyphony 0.0; 14 unread tokens left out; annealer on the real text from random keys reached n/a"}, 
   "method": "key recovered based on plaintext from external sources",
@@ -236,7 +242,9 @@
     "decryption": "reading.txt",
     "summary": "Walsingham's letter-book copy of Burghley's letter of 29 Jan 1573 to Walsingham, ambassador in France, about Alençon's agents (Maisonfleur as 'Davison', La Mole as 'the laste gentleman') and the ship sent to (St) Valery. The six-sign place name is read as VALERY; the boxed [9] as Alençon from the Folger/Conyers Read summary (via Adam Wright); the nine-sign run and the name codes 3, tt and II stay unread.",
     "language": "en",
-    "read_share": 0.977
+    "read_share": 0.125,
+    "state": "read in part",
+    "note": "16 Nov 2026: read share over cipher words only 0.125. The cipher words are the items in < > of reading.txt (cipher_tokens.txt), minus the boxed [9] and the 3 where they follow a cover-name in clear (Glascoe [9] twice, Glascoe 3, Hall 3 twice), markers that carry no cipher. That leaves 8: the six-sign port, read VALERY (grade M, counted read as in fraction_read); [9] standing alone three times, tt and the lone 3, identified with Alençon from the Folger/Conyers Read summary (grade I, inferred from the clear sense, so not sure words, as in fraction_read); the nine-sign run (extent unknown, counted as one word) and II, unread. 1 read of 8. With the grade-I identifications counted it would be 5 of 8 (0.625). Under the 95% bar, so read in part. Whole letter, clear included, not the measure: the 0.977 recorded before."
    }
   ]
  }

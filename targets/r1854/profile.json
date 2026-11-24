@@ -172,7 +172,8 @@
    "result": "worked"
   },
   {"date": "2026-10-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1781 tokens, 51 types, la order 4: reading -2.122 per letter; random keys -4.721 (z 7.5); key annealed onto shuffled ciphertext best -3.037 (mean -3.071, z 40.1); annealer on the real text -2.145. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass sign transcription p2v3.txt (first pass ct_p2.txt) and the Latin reading reading_p2.md; key key7.txt (keys.txt = key7 with comments)", "result": "worked"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): second-pass sign transcription p2v3.txt (first pass ct_p2.txt) and the Latin reading reading_p2.md; key key7.txt (keys.txt = key7 with comments)", "result": "worked"},
+  {"date": "2026-11-16", "kind": "verification", "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), holes by words, sure words only. The letter is wholly in cipher; measured on the Latin section of reading_p2.md (reading_section declared), each word aligned with the decode of p2v3.txt by key7.txt (show.py). 23 marked holes and 27 words repaired without a mark (the key is rebuilt, so the slip rule does not apply); single letters for doubles counted read as the writer's spelling, ARW = cardinalis read. 0.963 -> 0.850 (283 of 333 words); 0.931 by the marks alone. Read -> read in part, and the target with it. The tool gives 0.934 with the declaration.", "result": "partial"}
  ],
  "outcome": {"validation": {"date": "2026-10-15", "model": "la", "file": "validation.tsv", "tokens": 1781, "types": 51, "tokens_per_type": 34.92, "score": -2.122, "nulls": {"random keys": {"n": 200, "mean": -4.721, "sd": 0.347, "max": -3.952, "z": 7.5, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -3.071, "sd": 0.024, "max": -3.037, "z": 40.1, "p": 0.1429}}, "power": -2.145, "verdict": "pass", "notes": "claimed per-occurrence score -2.122; polyphony 0.0; 26 unread tokens left out; annealer on the real text from random keys reached -2.145"}, 
   "method": "key recovered from ciphertext-only",
@@ -183,7 +184,7 @@
    "sender or date identified",
    "catalogue correction"
   ],
-  "class": "read",
+  "class": "read in part",
   "key": "partial",
   "fraction_read": 0.975,
   "fraction_read_method": "measured",
@@ -200,6 +201,11 @@
     "item": "code ARO (1x, 'in filium [ARO]') and about 45 signs in doubtful spans (L15, L27, L31-32)",
     "blocker": "too-short",
     "detail": "single occurrences; no sibling letter in this cipher"
+   },
+   {
+    "item": "letters supplied or repaired in the reading (vel[le], pra[n]dere, sinis[t]r[u]m and others marked; 27 words repaired without a mark where the decode gives other letters), counted unread in the cipher-word share",
+    "blocker": "no-key-material",
+    "detail": "the key is rebuilt from the ciphertext, so a repaired letter cannot be credited under the one-digit-slip rule; only a period key or another copy of the letter could settle them, and none is known (the R1853 register keys do not fit); an image re-check might show some to be misreadings in p2v3.txt, which was not done in this recount"
    }
   ],
   "notes": "Split 14 Oct 2026 from the four-letter R1854 entry; the pooled validation of 11 Oct 2026 was re-run on this key alone.",
@@ -216,7 +222,10 @@
     "summary": "Marriage negotiations reported through ser Vittorio and Giovanni de Orlandis: a countess agrees to the match of her daughter; the subjects object that the lord of Mantua is too far away and that 'Carolus est nimis iuvenis ad talia' (Carlo Gonzaga, b. 1417); Antonio Colonna and the cousins of domina Palma are mentioned.",
     "translation": "R1854-P2_en.md",
     "language": "la",
-    "read_share": 0.963
+    "read_share": 0.85,
+    "state": "read in part",
+    "reading_section": "Latin",
+    "note": "16 Nov 2026, read share over cipher words only (README Conventions): the letter is wholly in cipher (the clear date at the foot is not in the reading); measured on the '## Latin' section (reading_section declared). 283 of 333 words read (0.850). Holes (50): the 23 the reading marks (supplied letters such as vel[le], pra[n]dere, sinis[t]r[u]m, [C]arolus, u[t], vel(l)e(nt); the [?] and [..] spans, each one word, the least the decode shows; contineat(?), amiti(?), excusare(?); the unvalued code ARO) and 27 words the reading repairs without a mark where the decode of p2v3.txt with key7.txt gives other letters (for example orslandis, uicorius, reuerserum, conuersatmr, qui tandem for et tandem, breua, quartm, continueret, nai for Nam, persuasemerat, debere efe ieri omne ino; one unread sign after predicto and the fragment 'ud' after Palme counted as one word each). The key is rebuilt from the ciphertext, so the one-digit-slip rule does not apply and a repaired letter is a hole. Counted read: ARW = cardinalis (a code given with its value, twice) and the single letters the cipher writes for double ones (comitisam, iohanes, retulise, iuserit), a spelling, not a slip. Before: 0.963 (whole file, header and notes counted). By the marks alone 0.931 (308 of 331). Under 95%: read in part. v10_relabel.py gives 0.934 with the declaration: it cannot see the unmarked repairs."
    }
   ],
   "key_file": [

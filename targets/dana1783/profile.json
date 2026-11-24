@@ -203,6 +203,12 @@
    "kind": "literature search",
    "what": "Brice Dudout's parallel reading (https://bdudout.github.io/europe-chiffree/en/documents.html#dana-1783): he broke the three shifted alphabets blind (frequencies, English 4-grams), then found Dana's table of October 1782 at PCC 89 vol. II p. 656 (alphabets from n, w, i; nomenclator 30-305, three numbers per word; keyword restarts after numbers above 27), whose columns match the break. Values for the open groups: 31 Administration, 137 and 168 Minister, 29 a slip for i. Lines 1-5 agree with the reading here wherever both give a value. The sheet itself not yet viewed here.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-14",
+   "kind": "verification",
+   "what": "Reading review of both entries for No. 23: reading.md and dudout/reading.md read as sentences against their decryptions; four coherent sentences each, completions and code groups marked; grade A recorded on each. Dana's 1782 table sheet was not viewed, so 31, 137 and 168 stay open in the first reading.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -318,7 +324,13 @@
     "state": "read in part",
     "read_share": 0.855,
     "summary": "Dana, waiting in vain for the Russian court to receive him, explains why he cannot predict the outcome: at a court not guided by settled principles or system nothing can be counted on, what one party adopts may be overturned by another influence the next hour, and properly speaking there is no [168] here. Four code groups are open.",
-    "note": "Letters completed or supplied at line ends are in square brackets in reading.md. Spelling 'irresistable' normalised. reading_review left to the maintainer."
+    "note": "Letters completed or supplied at line ends are in square brackets in reading.md. Spelling 'irresistable' normalised.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read reading.md against decryption.txt line by line. Four coherent English sentences; the letter stream divides into words without remainder; seven letters completed at a cut number or supplied at a line end are bracketed, four code groups are left as [29], [31], [137], [168]. The reading normalises one spelling (decode irresistable, reading irresistible), as its header says. read_share 0.855, so read in part. Image not re-opened in this pass."
+    }
    },
    {
     "doc": "no23",
@@ -328,7 +340,13 @@
     "reading": "dudout/reading.md",
     "language": "en",
     "state": "read",
-    "summary": "Brice Dudout's reading of the same eight lines with Dana's own table (PCC 89 vol. II p. 656): the three word codes read as Administration and Minister."
+    "summary": "Brice Dudout's reading of the same eight lines with Dana's own table (PCC 89 vol. II p. 656): the three word codes read as Administration and Minister.",
+    "reading_review": {
+     "grade": "A",
+     "by": "Claude (session of 14 Nov 2026)",
+     "date": "2026-11-14",
+     "note": "Read dudout/reading.md against dudout/decryption.txt. The same four sentences, coherent, with the word codes filled from Dana's table of October 1782 as his README reports (31 Administration, 137 and 168 Minister); deduced letters in braces, corrected slips in ‹›, Dana's spelling kept. The table sheet (PCC 89 vol. II p. 656) was not viewed in this pass, so the three code values rest on the contributor's report."
+    }
    }
   ],
   "key_file": "key.txt",

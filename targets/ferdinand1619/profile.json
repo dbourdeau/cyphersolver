@@ -326,6 +326,12 @@
    "technique": ["statistical test"],
    "what": "v3 verification: reading.txt scored 0.0 (bracketed clear text read as supplied words). Joined into R9426_reading.md (research/reading_audit/v3a_ferd.py): 0.644 explicit-hole, hole rate 0.124, plain 0.311. Keeps read, marginal.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "verification",
+   "what": "Checked the files while preparing a HistoCrypt submission: the heading of transcription.txt (and its copy on the page) named the sender as Ferdinand II and the place as Wien; the letter is from Ferdinand of Bavaria, Elector of Cologne, written at Bonn, as the NOTES say. Corrected the heading. Also checked mechanically that each of the 352 letter words (words of two-digit tokens) decodes with key.txt to a word of the matching line of reading.txt (0 missing; check_decode.py in the deposit), and re-ran count_r9425.py (1524 of 1567 = 97.3%). Key, transcription and readings unchanged.",
+   "result": "worked"
   }
  ],
  "outcome": {

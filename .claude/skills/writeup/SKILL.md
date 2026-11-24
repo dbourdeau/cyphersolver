@@ -66,6 +66,12 @@ not from memory. The slug is the folder name unless a page already exists under 
   entry without it. `python docs/_check_reading.py <folder>` scores the sentences (language-neutral: a sentence is
   clean with at most one hole in ten words) and points the reader at the weak ones; it is not the verdict. The headline percentage on the page is never a token-run
   figure for a text that does not read.
+- **Doubtful signs are checked, not carried (README Conventions, 20 Nov 2026).** NOTES.md carries
+  `## Transcription doubts`: one line per sign the transcriber (person or model) was unsure of,
+  `- <sign> (<where>) - read: <reading>; checked: image, decode[, transcription]; <evidence>`, or `- none: <why>`.
+  Check each against the sign enlarged with no overlay, the decoded text, and an independent transcription where one
+  exists; one that stays unresolved keeps its mark. `_check_writeup.py` refuses a reading without it on pages first
+  built from 21 Nov 2026 (older pages: a warning; audit section S).
 - **No cipher type without evidence.** Until part of the text is read, name the system only as far as measured
   evidence goes ("a transposition: letter frequencies match Spanish"). Do not name a specific system, or say what
   its users were taught or would have been given, unless a source is cited; families not yet excluded are

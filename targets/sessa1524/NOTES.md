@@ -179,6 +179,9 @@ deciphered occurrence anywhere), and R9898's bleed-through pages, which do not r
 - group `per` - blocker: no-key-material; absent from R9873, R9898, R9899 and every other downloaded page
 - `hay` = aunque is tentative - blocker: no-key-material; no deciphered occurrence, and it does not read *aunque* in R9873 f. 81r
 - clause *los m-re que r-ido los que no m-r-e-van* (f. 128) - blocker: no-key-material; one sign value still wrong, no sibling decipherment covers it
+- R9873 to R9905, the 30 records of `prabal/` (prabal-rje's rows): 3,407 cipher units with no value and 1,094 with a clerk value only - blocker: no-key-material; no clear text fixes them by the rules of `prabal/check.md`, section 4
+- R9873 to R9905, the 30 records of `prabal/` (prabal-rje's rows): the decode does not build sentences; all 30 are decoded, not read - blocker: open-codes; holes in most rows, 2,200 doubtful units
+- R9873 to R9905, the 30 records of `prabal/` (prabal-rje's rows): 4,910 `?` positions of the rows - blocker: not-attempted; these rows do not tell clear writing from signs that were not read
 
 ## Escalation
 - [x] siblings: R9899 (A-34 ff. 194-195) checked 23 Oct 2026, one marginal decipherment (`hog` querria); R9878 duplicate collated; R9881, R9883/4, R9890, R9893, R9834, R9897, R9898 read against their clears (passes 1-14); R9873 and R9898 transcribed in full (pass 16)
@@ -212,3 +215,9 @@ cipher/clear pairs (BNE 52-1 with R9873, 52-4, 52-10, 52-14, and R9893), frozen,
 pair BNE 52-6 (4 Jun 1524): characters 0.860, words 0.772, 200 shuffled-key controls max 0.274 / 0.174. Of the 670
 cipher words, 590 are certain, 33 probable, 7 restored and 40 unresolved: 94.0%, under the 95% bar. Files and limits
 in `dudout/README.md`.
+
+## Contribution (prabal, 19 Nov 2026): thirty records decoded, not read
+
+- DECODE R9873 to R9881, R9883 to R9887, R9889 to R9901 and R9903 to R9905 (Real Academia de la Historia, Salazar A-31 and A-34): a transcription of the DECODE images, the decode of each record with KS4 and 63 added values, and the key table. Files and limits: `prabal/README.md`.
+- Every record is decoded, not read. They add nothing to the read figure of this target.
+- Credit: DECODE, the database of historical ciphers of the DECRYPT project (https://de-crypt.org/decrypt-web/RecordsView/9873 and the other record numbers); Héder and Megyesi (2022), HistoCrypt, https://doi.org/10.3384/ecp188397. No DECODE image is published.

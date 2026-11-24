@@ -93,6 +93,79 @@ keys make it unnecessary.
 - **Merged 3 Nov 2026** (`apply_key.py` now reads all four pair files): `key_bouille.tsv` 123 -> 346 groups; f.88 **166 of 181 tokens valued (91.7%), 95 of 109 distinct; strict sense proxy 155/181 = 85.6%** (was 123 = 68.0% / 58.0%). Conflicts listed by `apply_key.py` (46 aux/avec, 12 i/e, 25 meme/noms, 345 c/it, 307 ba/ou, 505 e/y ...) keep the more frequent value first; 46 and 12 still to settle on the images. Reading now: "l'état de la situation des troupes au 1er de ce mois ... j'attends ... d'autant plus d'... (667 pa ti en ce) ... [pou]vant mettre un garnison de ga-r-ni-[son] ... la garnison de [138] que trois mille trois cents hommes effectifs ... je vous en verrai l'état de la situation ... moitié par la Martinique et moitié par la Guadeloupe".
 - Still open (14 groups): 26, 138, 146, 260, 481, 495, 509, 568, 619, 645, 667, 710, 809, 819; 619, 667, 495, 26, 260, 509, 138, 710 occur in no paired letter. The three-digit numbers (568 ...) are probably the troop counts.
 
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key_bouille.tsv` to the five transcriptions and compared the
+letters with the published texts: 140 of 1,150 words depart (f. 19: 15 of 85; f. 70: 13 of 113; f. 114: 100 of 697;
+f. 88: 11 of 189; f. 101: 1 of 66). Checked by hand against `read/*_decryption.txt`, which are the unedited output of
+the key (first value of each row) with the `tentative.tsv` values in braces. Comparing those files with the readings
+gives the same figures for the three letters read here (13 of 85, 13 of 113, 97 of 698). Counts below are a hand
+classification of the departures listed by the script, not a second measurement.
+
+- **f. 88 and f. 101 (12 words): artefact of the audit.** For these two the profile lists no reading, so the audit
+  compared the key output with `read/f88_decryption.txt` and `read/f101_letter_decryption.txt`, and took the line
+  labels `L1:` ... and `C1:` for letters (the nine "l" and one "c"). Nothing departs.
+- **Normalisation, about two thirds of the departures in f. 19, f. 70, f. 114 (roughly 60 of 95 places).** The reading
+  files are modern French sentences "built from the decoded syllables" (profile, `reading_review.note`); the key gives
+  word groups in one fixed form and period spelling. Plural and agreement letters are added (`cent` to "cents",
+  `quelque` to "quelques", `elle ont` to "elles ont", `un garnison` to "une garnison"), -oi- is printed -ai- eight
+  times in f. 114 (`anglois`, `au roit`, `se roit`, `re u s si rois`, `vo u dro is`, `se roient`, `pour roient`,
+  `fo i ble`), `deffen` is printed "défen", `isles` "île", `jusque au` "jusqu'au". The convention is stated in the
+  profile note, not in the reading files.
+- **Second value of a key row, 2 places.** 373 is `commence/commerce` in the key; the decryption prints the first
+  value, the readings print "commerce" (f. 19, twice).
+- **Letters or words printed without brackets that the key does not give, about 35 places** (f. 19: 3; f. 70: 8;
+  f. 114: about 24). Three kinds:
+  - an unvalued group filled silently: f. 114 `ra s se m [541] ient` printed "rassemblaient", `l' [261] p hi on`
+    "l'Amphion" (twice), `d' [296] ser vi ce` "d'aucun service", `pe ti [50] batiments` "petits bâtiments",
+    `un [214] fi ci er` "officier" (twice), `fré [883] te` "frégates"; f. 19 `e xi s [762] es` "existantes",
+    `ce [390] is` "ce mois". The same groups are bracketed elsewhere in the same files (`[pas]` for 296, `[ceux]` for 58);
+  - a valued syllable replaced: f. 70 `pour le it er au co m ple t` printed "pour le mettre au complet",
+    `qui it u r ni s sent` "qui fournissent", `a ve il` "avril", `int er objet sa nt` "intéressant"; f. 114
+    `e x pe te ment` "Expériment", `lon a e` "longue", `le s nu ver` "les sauver", `fré` "français", `de ve na nt`
+    "devient", `au vent et la la ti tu de` "au vent à la latitude" (twice);
+  - words supplied or dropped: f. 114 "douze [cents] hommes" has no `cent` in the cipher, `cour ant [791] de` is
+    printed "sans courir le risque de", `doit tenu autant ainsi que` "doit tenir autant que", `se ront pri` after
+    "l'escorte" is left out; f. 70 "il est bien" has no `est`; in f. 19 the margin lines M1-M2 (`mo is de no ve m bre`)
+    are printed inside the sentence ("ce mois de novembre").
+- **Values used in the readings and held in no key file.** 208 = j'ai is a context value in this file (f. 101 section)
+  and is printed unbracketed three times in `read/f114_reading.md` ("j'ai eu", "j'ai envoyé", "j'ai faites") and
+  bracketed in `read/f101_reading.md`; the f. 114 section above lists 208 as unvalued. 678 = fin, 762 = tant, 390 = mo,
+  58 = ceux, 20 = majesté, 584 = égard are context values of the f. 101 and f. 19 sections. None is in
+  `key_bouille.tsv` or `tentative.tsv`. They were not added: each is a context guess, and the decryption files are
+  generated from `tentative.tsv`, so adding rows would put them out of step with it.
+- **Clear words, 2 places.** "Saint-Christophe" and "Vous jugerez" are in clear in the transcription (`[[St] [Christophe]]`).
+
+Changed: `profile.json` `outcome.key_file` now lists `tentative.tsv` next to `key_bouille.tsv`, because
+`make_decryptions.py` reads both (values 5, 538, 614, 667, 495, 568, 481, 26, 260). No key value was added or changed,
+and no reading or decryption file was touched. The audit figures are the same after the change (140 of 1,150): the
+script does not merge two key files, and the departures are in the readings, not in the key.
+
+Not explained: 545 = `it` (seven gloss occurrences) gives nonsense at the two places of f. 70 where the transcription
+notes a vertical bar after it (L9 "fournissent", L13 "mettre"); whether `545 |` is another sign was not checked on
+the image. 296 is filled as "pas", "aucun" and left open at different places. The images were not opened in this audit.
+
+**Marked on 16 Nov 2026.** Every place found by reading each line of `read/f19_decryption.txt`, `f70_decryption.txt`
+and `f114_decryption.txt` against its reading (the whole text, not only the places the script listed) is now in
+brackets in the reading files: 2 in `read/f19_reading.md` (exis[tant]es, [mo]is), 8 in `read/f70_reading.md`
+([de], [la], av[r]il, [fo]urnissent, [les], [mettre], [est], intér[es]sant), 43 in `read/f114_reading.md`. Only
+brackets were added; no letter was changed. The earlier "about 35" was an estimate from the script's list; the count
+by line is 53. Each of the three files, which had no header, now has one comment line: modern spelling and grammar
+supplied without a mark, [ ] = not given by the key, [...] = not read, and the name of the decryption file. Not marked,
+because a mark cannot show them: syllables the key gives and the sentence leaves out (f. 114 `tre` in "paraît aisé",
+`ainsi` after "autant", `un es` after "commande", `se ront pri` after "l'escorte", `qui y sont` before "relatives",
+`et` before "Vous jugerez"; f. 70 `je [257] a` before "la Martinique", the t of `sont etat`, and the stretch
+`d' e nous l' le ns po s te de guerre et de pre de mille` printed "[...]"). Not marked, as normalisation covered by
+the header: plural and agreement letters, -ai- for -oi-, 373 printed "commerce", `nouvelle` printed "nouveaux". Where
+the key's word may be right and the reading wrong: f. 114 `vi n g t de ce m bre` (vingt décembre) is printed
+"vingt de ce [mois]", and `de ve na nt` (devenant) "dev[ie]nt". Audit after marking: 79 of 1,119 words depart
+(f. 19: 11 of 85; f. 70: 5 of 108; f. 114: 63 of 682; f. 88 and f. 101: 0), all of the normalised kind or left-out
+syllables. Hole rate (`research/reading_audit/v2_score.py`, fr) before and after: f. 19 0.083 to 0.104, f. 70 0.055 to
+0.117, f. 114 0.043 to 0.104; `read_share` in the profile (0.936, 0.958, 0.959, share of groups valued) was not
+changed. Page `docs/martinique1778.html`: "The key reads straight through it" and "filled by context where the
+sentence allows and bracketed where it does not" reworded; the French quotations on the page still print
+"existantes", "mois", "j'ai eu", "réglées" and "devient" without the brackets.
+
 ## Remaining gaps
 
 - 5 of 181 tokens of f. 88 carry no interlinear value (667 im, 495 minist, 568 i, 481 suffisante, 260 incessamment? by context in tentative.tsv); none of them occurs in a glossed letter (the glossed letters f. 3, f. 5, f. 31, f. 123, f. 144 are all paired) - blocker: no-key-material

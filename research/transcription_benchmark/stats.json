@@ -1,0 +1,176 @@
+{
+ "all": {
+  "documents": 10,
+  "models": {
+   "sonnet": {
+    "pooled": 0.0512,
+    "ci95": [
+     0.0304,
+     0.0833
+    ]
+   },
+   "opus": {
+    "pooled": 0.0407,
+    "ci95": [
+     0.0229,
+     0.0714
+    ]
+   },
+   "fable": {
+    "pooled": 0.0328,
+    "ci95": [
+     0.018,
+     0.0573
+    ]
+   }
+  },
+  "pairs": {
+   "sonnet - opus": {
+    "diff": 0.0104,
+    "ci95": [
+     0.0007,
+     0.0224
+    ],
+    "bootstrap_p": 0.0356,
+    "docs_where_opus_lower": "7 of 10",
+    "sign_test_p": 0.3438
+   },
+   "sonnet - fable": {
+    "diff": 0.0184,
+    "ci95": [
+     0.01,
+     0.0303
+    ],
+    "bootstrap_p": 0.0,
+    "docs_where_fable_lower": "10 of 10",
+    "sign_test_p": 0.002
+   },
+   "opus - fable": {
+    "diff": 0.008,
+    "ci95": [
+     0.0039,
+     0.0153
+    ],
+    "bootstrap_p": 0.0,
+    "docs_where_fable_lower": "10 of 10",
+    "sign_test_p": 0.002
+   }
+  }
+ },
+ "digit-only": {
+  "documents": 6,
+  "models": {
+   "sonnet": {
+    "pooled": 0.0398,
+    "ci95": [
+     0.0221,
+     0.0653
+    ]
+   },
+   "opus": {
+    "pooled": 0.0248,
+    "ci95": [
+     0.015,
+     0.037
+    ]
+   },
+   "fable": {
+    "pooled": 0.0201,
+    "ci95": [
+     0.0113,
+     0.0319
+    ]
+   }
+  },
+  "pairs": {
+   "sonnet - opus": {
+    "diff": 0.015,
+    "ci95": [
+     0.0059,
+     0.0298
+    ],
+    "bootstrap_p": 0.0,
+    "docs_where_opus_lower": "6 of 6",
+    "sign_test_p": 0.0312
+   },
+   "sonnet - fable": {
+    "diff": 0.0197,
+    "ci95": [
+     0.0101,
+     0.0341
+    ],
+    "bootstrap_p": 0.0,
+    "docs_where_fable_lower": "6 of 6",
+    "sign_test_p": 0.0312
+   },
+   "opus - fable": {
+    "diff": 0.0047,
+    "ci95": [
+     0.0023,
+     0.0083
+    ],
+    "bootstrap_p": 0.0,
+    "docs_where_fable_lower": "6 of 6",
+    "sign_test_p": 0.0312
+   }
+  }
+ },
+ "letter-and-digit": {
+  "documents": 4,
+  "models": {
+   "sonnet": {
+    "pooled": 0.0866,
+    "ci95": [
+     0.0305,
+     0.1725
+    ]
+   },
+   "opus": {
+    "pooled": 0.0904,
+    "ci95": [
+     0.0352,
+     0.176
+    ]
+   },
+   "fable": {
+    "pooled": 0.0721,
+    "ci95": [
+     0.0266,
+     0.1412
+    ]
+   }
+  },
+  "pairs": {
+   "sonnet - opus": {
+    "diff": -0.0038,
+    "ci95": [
+     -0.0178,
+     0.01
+    ],
+    "bootstrap_p": 0.518,
+    "docs_where_opus_lower": "1 of 4",
+    "sign_test_p": 0.625
+   },
+   "sonnet - fable": {
+    "diff": 0.0145,
+    "ci95": [
+     0.0031,
+     0.0342
+    ],
+    "bootstrap_p": 0.0002,
+    "docs_where_fable_lower": "4 of 4",
+    "sign_test_p": 0.125
+   },
+   "opus - fable": {
+    "diff": 0.0183,
+    "ci95": [
+     0.0064,
+     0.0388
+    ],
+    "bootstrap_p": 0.0002,
+    "docs_where_fable_lower": "4 of 4",
+    "sign_test_p": 0.125
+   }
+  }
+ }
+}

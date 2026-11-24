@@ -113,7 +113,8 @@
    "what": "Transcribed the decipherment (ff. 74r-v, 53 lines) and the clear opening and close from strip crops of the full-resolution scans; listed the code signs the decipherer left unresolved.",
    "result": "worked"
   },
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption reading.md (the contemporary decipherment, transcribed in full); the cipher on ff. 73r-v was never transcribed (project work).", "result": "partial"}
+  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): decryption reading.md (the contemporary decipherment, transcribed in full); the cipher on ff. 73r-v was never transcribed (project work).", "result": "partial"},
+  {"date": "2026-11-14", "kind": "access", "what": "Full-texts audit, R8347: looked for a transcription of the cipher signs in the folder (none; reading.md is the decipherment of the time), on the DECODE record (public API and record page: four images and Tomokiyo's key image, no transcription) and on cryptiana mary.htm (key image only). Tried to fetch the images of ff. 73r-v to transcribe them: DECODE answers an anonymous request with its 'forbidden' placeholder, and no session is available here. transcription_missing recorded.", "result": "failed"}
  ],
  "outcome": {
   "method": "read from existing decipherment",
@@ -133,6 +134,7 @@
     "doc": "R8347",
     "label": "R8347, Mary to Archbishop Hamilton, Bolton 18 Jan 1569",
     "decryption": "reading.md",
+    "transcription_missing": "Never transcribed: the cipher body (ff. 73r-v, about 62 lines of invented signs) was only spot-checked against Tomokiyo's key; reading.md is the decipherment of the time on ff. 74r-v. The DECODE images of this record need a signed-in session: on 14 Nov 2026 an anonymous request for them to decrypt-custom/filesrv returned DECODE's 'forbidden' placeholder, only 200 px thumbnails are public, and the record (public API and record page) carries no transcription. No DECODE session is available in this checkout and the images fetched earlier were git-ignored and are no longer here. The record's one attachment is Tomokiyo's key image, not a transcription. Unblocks it: the record's images through a DECODE account (or from the British Library), then a transcription against a sign inventory taken from Tomokiyo's Mary-Hamilton key (cryptiana mary.htm, mary_hamilton.png), checked by decoding against reading.md.",
     "summary": "Mary Queen of Scots, held at Bolton Castle, to John Hamilton, Archbishop of St Andrews, leader of her party in Scotland, 18 January 1569: she has been asked to consent that her son be delivered into Elizabeth's hands, will not do so, and asks her faithful subjects to show they will never agree to such terms; the clear close concerns a commission for Argyll, Eglinton, Cassillis and Boyd.",
     "note": "Decryption = the contemporary decipherment on ff. 74r-v, transcribed here in full with the clear opening and close (reading.md). No transcription of the cipher signs themselves (ff. 73r-v, about 62 lines): project work.",
     "translation": "reading_en.md",

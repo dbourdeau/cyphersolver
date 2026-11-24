@@ -1,0 +1,77 @@
+{
+ "folder": "jqa",
+ "causes": {
+  "A": "the readings follow the State Department code sheet (we028_no88.tsv) since 14 Nov 2026, the profile named only the rebuilt code_table.tsv: about 10 words differ for that reason (neither, immoderate, immediately, possible, Russian, Russia, Prussia, demonstration, centre, dishonourable)",
+  "B": "8 words unbracketed and unexplained in the folder: second 'it' (gap l.4), events, all, affairs (gap l.9-10), disclosed (rem l.1), system (rem l.3, sy-em), proposition (rem l.4, pro-po-si for), making to (rem l.12, 611 500 = make was: 2 words counted as making, to). Plus 'impaired' for im-pas-ion-ed, documented in NOTES section 3 and under the reading but not bracketed",
+  "C": "spelling: Wilna (will-na), illness, meet (met), rigorously, dishonourable (honor), negotiate/negotiation (negociat-), success: 8 words",
+  "D": "clear words written in the code lines (scarcely x2, undoubtedly, In the German Gazettes, troops, Prince Kurakin's) and the clear passage in rem88.txt: the script counts them as supplied",
+  "E": "gap88.txt and rem88.txt do not carry the manuscript's marks (superscript o = -s, mark under a group = doubled letter / -ed): documented for 1457 = ll and 908 + plural (Chancellor's) and 1535 = all (rem l.11); some of the B words may be such marks, not checked on the film"
+ },
+ "before": "33 of 261 words depart (texts compared: 2)",
+ "after": "29 of 260 with the sheet key alone (nine lines 13 of 96, remainder 16 of 164); detail.py still prints 33 of 261 because it keeps the key file nearest the reading, which is code_table.tsv (it holds the rebuilt values the reading wants at the slip groups)",
+ "files_changed": [
+  "targets/jqa/key_we028_no88.tsv (new)",
+  "targets/jqa/profile.json",
+  "targets/jqa/NOTES.md"
+ ],
+ "key_values_added": [
+  {
+   "sign": "209 groups of gap88.txt and rem88.txt (all but 1864)",
+   "value": "sheet value",
+   "source": "targets/jqa/we028_no88.tsv, column 'sheet value', line given per row in the new file; 262 st and 649 min from its 'read as' column; all 209 equal a reading in targets/morris1813/beling/key/codebook_M97_13_transcription.csv"
+  }
+ ],
+ "unmarked_emendations": {
+  "count": 9,
+  "examples": [
+   {
+    "text": "No. 88 remainder",
+    "decrypt": "thought of make was Russia (611 500 948)",
+    "reading": "thought of making to Russia",
+    "where": "targets/jqa/rem88.txt line 12-13; texts/no88_remainder_reading.md line 12-13"
+   },
+   {
+    "text": "No. 88 remainder",
+    "decrypt": "with A pro po si for the E va cu ation (219 1148 1098 981)",
+    "reading": "with a proposition for the evacuation",
+    "where": "rem88.txt line 4"
+   },
+   {
+    "text": "No. 88 remainder",
+    "decrypt": "been dis close to (674 983 1317)",
+    "reading": "been disclosed to",
+    "where": "rem88.txt line 1"
+   },
+   {
+    "text": "No. 88 remainder",
+    "decrypt": "A sy em (1501 399 539)",
+    "reading": "a system",
+    "where": "rem88.txt line 3"
+   },
+   {
+    "text": "No. 88 nine lines",
+    "decrypt": "ed before it can scarcely fa il (520 1318 1440 1006)",
+    "reading": "impaired before it, it can scarcely fail",
+    "where": "gap88.txt line 4"
+   },
+   {
+    "text": "No. 88 nine lines",
+    "decrypt": "at al event it is (699 1535 283)",
+    "reading": "At all events it is",
+    "where": "gap88.txt line 9"
+   },
+   {
+    "text": "No. 88 nine lines",
+    "decrypt": "im pas ion ed (1424 1112 1433 520)",
+    "reading": "impaired",
+    "where": "gap88.txt lines 3-4; documented NOTES section 3"
+   }
+  ]
+ },
+ "page_statements_false": [
+  "\"Key: code_table.tsv\" (Full texts) — the two readings shown there follow the code sheet (we028_no88.tsv), which differs from the table in about 40 groups of No. 88",
+  "\"The rebuilt table gives every group a value (python render.py gap88.txt), and all 133 give sense in the running text\" — dated on the page as the 22 September count; the table's values at 818, 1575, 1585, 1398 are not the sheet's, and im-pas-ion-ed, 'it' and 'events' are not what the groups give"
+ ],
+ "remaining": "Whether disclosed, events, all, affairs, proposition, making are marks on the film that the transcriptions omit, or words supplied: not checked (no network, film not looked at). 'to' for 500 = was and the second 'it' cannot be marks. The profile's read counts (97 of 100, 164 of 177) count these words as read. code_table.tsv was not changed; the sheet CSV lives in another target and was only read.",
+ "confidence": "medium"
+}

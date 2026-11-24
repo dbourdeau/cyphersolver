@@ -33,7 +33,7 @@
     "image_quality": "good",
     "notes": "Made here from the four images, then checked line by line against them with the key in hand (five passes). Two rows of page 2 had been blended from two physical lines and one row was a phantom; found by tracking baselines."
    },
-   "read": "read"
+   "read": "read in part"
   }
  ],
  "system": {
@@ -122,7 +122,12 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["EM alignment", "repeat/pattern analysis", "plaintext matching"],
+   "kind": "solver",
+   "technique": [
+    "EM alignment",
+    "repeat/pattern analysis",
+    "plaintext matching"
+   ],
    "what": "Soft-EM forward-backward alignment of R1874 code groups (DECODE transcription, 5-forms unmerged: '21'=51, '13'=53) to the decipherment, 5 segment pairs, 2,398 groups; first run with nulls allowed collapsed, rerun with 1-4 letters per group converged.",
    "result": "worked"
   },
@@ -158,7 +163,11 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "solver", "technique": ["hill climbing", "language-model scoring"],
+   "kind": "solver",
+   "technique": [
+    "hill climbing",
+    "language-model scoring"
+   ],
    "what": "LM hill-climb over key values for weak/unknown groups.",
    "result": "failed"
   },
@@ -176,7 +185,10 @@
   },
   {
    "date": "2026-09-22",
-   "kind": "hypothesis", "technique": ["key-structure hypothesis"],
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis"
+   ],
    "what": "The word codes are alphabetical within each prefix row's blocks (53: papa 47, part 73, per 74, piu 77, qual 84, quel 87, ques 88), which brackets every open code.",
    "result": "worked"
   },
@@ -216,10 +228,75 @@
    "result": "partial",
    "date": "2026-09-30"
   },
-  {"date": "2026-10-11", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1268 tokens, 153 types, it-cinquecento order 4: reading -1.965 per letter; random keys -3.023 (z 12.3); key annealed onto shuffled ciphertext best -2.332 (mean -2.349, z 38.8); annealer on the real text -2.291. Verdict: pass.", "result": "worked"},
-  {"date": "2026-10-22", "kind": "verification", "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription tx/groups.txt and decipherment tx/plain.txt; effective key written from decode.py to texts/key.tsv, with this letter's overrides key_over.json (base key ../r1874/key2.json)", "result": "worked"}
+  {
+   "date": "2026-10-11",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 1268 tokens, 153 types, it-cinquecento order 4: reading -1.965 per letter; random keys -3.023 (z 12.3); key annealed onto shuffled ciphertext best -2.332 (mean -2.349, z 38.8); annealer on the real text -2.291. Verdict: pass.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verification",
+   "what": "Full texts listed in outcome.texts (George Lasry's request of 22 Oct 2026): transcription tx/groups.txt and decipherment tx/plain.txt; effective key written from decode.py to texts/key.tsv, with this letter's overrides key_over.json (base key ../r1874/key2.json)",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "manual reconstruction"
+   ],
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026): tx/R1862_reading.md marks the clear passages with ⟨ ⟩ and leaves the cipher unmarked; the clear passages were removed and the rest of the Reading section counted, 545 words. Holes: the twelve unvalued word-band codes (vo[51708]lari and [5370]i among them), eighteen [?word], co[n], [a]lcun, cardina[le], [g]loria (letters the cipher does not have), the eight words with the clerk's one-digit slips (key rebuilt here, so the slip rule does not apply), and the line P2 L22 (14 groups, sized as about 6 words, an estimate). Abbreviation expansions of the cipher's own sp (Sp[agnuo]li, Sp[agna], Spa[gna]) counted read. Result: read share 0.953 -> 0.912 (497/545; 0.920 with P2 L22 as one bare mark); R1862 and the target move from read to read in part; fraction_read (0.991 of groups valued) and fraction_coherent (0.95, line measure) unchanged.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the script found 58 of 494 words of tx/R1862_reading.md departing from texts/key.tsv applied to tx/groups.txt. Checked by hand: texts/key.tsv is identical to decode.py's effective key and, with the transcription's ?/^ doubt marks stripped (49 groups; the audit script does not strip them, which causes most of the flag) and the 8 clerk's slips of key_over.json read through, regenerates tx/plain.txt exactly on all 125 rows. Between plain.txt and the reading 11 places change a letter with no mark (eccelso, si era, di dirgli, Spa[gna], sprezzo, se le, segretezza, uniti, queste, quale, questa), against the reading header's statement that letters are as the decipherment gives them; the 8 slip corrections are not marked in the reading either. No file other than NOTES.md and profile.json changed; the reading's wording is left for a central decision.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Marks only, no letter changed, in tx/R1862_reading.md: 10 supplied letters and the 8 clerk's slips read through put in [ ], the cipher 'e' moved out of the clear-passage marks, and the header sentence 'Letters as the decipherment gives them' completed with these exceptions; the l left out in Spa[gna] cannot be bracketed and is stated in the header. Hole rate by research/reading_audit/v2_score.py 0.051 before, 0.070 after (868 words); read_share, state and class not changed.",
+   "result": "worked"
+  }
  ],
- "outcome": {"validation": {"date": "2026-10-11", "model": "it-cinquecento", "file": "validation.tsv", "tokens": 1268, "types": 153, "tokens_per_type": 8.29, "score": -1.965, "nulls": {"random keys": {"n": 200, "mean": -3.023, "sd": 0.086, "max": -2.789, "z": 12.3, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.349, "sd": 0.01, "max": -2.332, "z": 38.8, "p": 0.1429}}, "power": -2.291, "verdict": "pass", "notes": "claimed per-occurrence score -1.959; polyphony 0.005; 12 unread tokens left out; annealer on the real text from random keys reached -2.291"}, 
+ "outcome": {
+  "validation": {
+   "date": "2026-10-11",
+   "model": "it-cinquecento",
+   "file": "validation.tsv",
+   "tokens": 1268,
+   "types": 153,
+   "tokens_per_type": 8.29,
+   "score": -1.965,
+   "nulls": {
+    "random keys": {
+     "n": 200,
+     "mean": -3.023,
+     "sd": 0.086,
+     "max": -2.789,
+     "z": 12.3,
+     "p": 0.005
+    },
+    "shuffled refit": {
+     "n": 6,
+     "mean": -2.349,
+     "sd": 0.01,
+     "max": -2.332,
+     "z": 38.8,
+     "p": 0.1429
+    }
+   },
+   "power": -2.291,
+   "verdict": "pass",
+   "notes": "claimed per-occurrence score -1.959; polyphony 0.005; 12 unread tokens left out; annealer on the real text from random keys reached -2.291"
+  },
   "method": "key recovered based on plaintext from external sources",
   "method_basis": "The key was rebuilt here by EM alignment of a different letter, DECODE R1874 (Mocenigo, Madrid, ASVe Busta 30), with its contemporary decipherment, and then applied to R1862 (Busta 27, Rome), where about 30 word codes were added from context and alphabetical order and three values corrected.",
   "contribution": [
@@ -228,7 +305,7 @@
    "key extended or corrected",
    "sender or date identified"
   ],
-  "class": "read",
+  "class": "read in part",
   "fraction_read": 0.991,
   "grades": {
    "H": 0,
@@ -236,7 +313,12 @@
    "M": 0,
    "I": 0
   },
-  "verification": ["key confirms", "historical consistency", "matched control", "statistical test"],
+  "verification": [
+   "key confirms",
+   "historical consistency",
+   "matched control",
+   "statistical test"
+  ],
   "notes": "Key rebuilt from the sibling R1874 by EM alignment, then extended from context and from the alphabetical order of the word band. 99.1% of the code-group tokens have a value. Share reading as sense: 0.95 measured line by line against a period Italian model with neighbour context (measure.py), 0.92 by a stricter 25-character sliding window (measure_tok.py), 0.96 by a hand audit token by token. The clerk's own one-digit encipherment slips are recorded in key_over.json _slips and read through, as his spelling slips (sivoia, germinia, voro) are.",
   "gaps": [
    {
@@ -248,6 +330,11 @@
     "item": "one line, P2 L22 (14 groups), image-true after four independent readings and still giving no sense",
     "blocker": "no-key-material",
     "detail": "every group in it is a structural grid value, so it turns on a clerk's slip or a word outside the corpus; exhaustive single- and double-substitution searches returned nothing"
+   },
+   {
+    "item": "words counted unread in the cipher-word share (16 Nov 2026): eighteen [?word] readings, four letters the clerk left out (co[n], [a]lcun, cardina[le], [g]loria) and eight words with his one-digit code slips",
+    "blocker": "no-key-material",
+    "detail": "written so on the image (sixteen image passes); the slips are read through with a key rebuilt here, which the one-digit-slip rule does not cover; settling them needs the chancery's own key or another copy of the despatch, neither of which survives on DECODE or in the ASVe key records"
    },
    {
     "item": "the ambassador's name",
@@ -264,7 +351,11 @@
   "fraction_coherent": 0.95,
   "fraction_read_method": "measured",
   "credits": [
-    {"who": "contemporary", "role": "key or decipherment used", "note": "chancery decipherment of the sibling R1874 (Mocenigo, Madrid 1628), aligned to rebuild the key"}
+   {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "chancery decipherment of the sibling R1874 (Mocenigo, Madrid 1628), aligned to rebuild the key"
+   }
   ],
   "texts": [
    {
@@ -276,7 +367,9 @@
     "reading": "tx/R1862_reading.md",
     "translation": "tx/R1862_en.md",
     "language": "it",
-    "read_share": 0.953
+    "read_share": 0.912,
+    "state": "read in part",
+    "note": "Read share over cipher words only (16 Nov 2026): tx/R1862_reading.md, everything in the Reading section outside the ⟨ ⟩ clear passages, 545 cipher words, 48 unread: the twelve unvalued word-band codes (two inside words, vo[51708]lari and [5370]i), eighteen [?word] doubtful readings, four words with a letter the cipher does not have (co[n], [a]lcun, cardina[le], [g]loria), the eight words carrying the clerk's one-digit code slips (key_over.json _slips: esprimersi, confidenza, altrove, cosi, Mantova, considerati, piu, preparati; the key is rebuilt here, not the surviving period key, so README's one-digit-slip rule does not apply), and the unread line P2 L22 sized at about 6 words (14 groups at the letter's 2.4 groups per word; an estimate; 0.920 if it is counted as one bare mark). Sp[agnuo]li, Sp[agna] and Spa[gna] expand the clerk's abbreviation sp written in the cipher and count as read; the closing ellipsis is the end of the cipher, not a hole. Recorded 0.953 before (whole reading, clear passages included)."
    }
   ],
   "key_file": [

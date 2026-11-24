@@ -1,0 +1,31 @@
+{
+ "folder": "dahku1715",
+ "causes": {
+  "A": "1 word: ‹kodzarzyc› (e05) uses V = z where key.tsv has V = g; a stated, position-specific override (d05, e05) recorded in the key.tsv comment and reading.md head; not expressible in the sign table, key left unchanged",
+  "B": "1 clear word (not cipher): d11 '=potewaz' in transcription.txt/decryption.txt, 'ponieważ' in reading.md (table and running text), unmarked",
+  "C": "Polish diacritics added in 15 cipher words (poslowie -> posłowie) although the reading is titled 'spelling of the letter'; audit folds them, not counted",
+  "D": "13 clear words of the letter in the running text (aby, które, żeby, że, deklarować, y, tym, ponieważ, iaky, Domey, posł[a]nym, tylko, prosto) and the markers ‹N› x2, ‹C› (+ 'chciał' counted only as neighbour of ‹N›)",
+  "F": "the audit put the '=word' clear words of the transcription through the key as if their letters were sign names ('=aby' -> 'sw'), which is why the 13 clear words count as departures"
+ },
+ "before": "18 of 63 words depart (texts compared: 1)",
+ "after": "18 of 63 words depart (texts compared: 1); unchanged; by hand 0 unmarked letter changes in cipher words, 1 in a clear word",
+ "files_changed": [
+  "targets/dahku1715/NOTES.md",
+  "targets/dahku1715/profile.json"
+ ],
+ "key_values_added": [],
+ "unmarked_emendations": {
+  "count": 1,
+  "examples": [
+   {
+    "text": "scan 3, d11 (clear word)",
+    "decrypt": "=potewaz (transcription.txt:20, decryption.txt:13)",
+    "reading": "ponieważ",
+    "where": "targets/dahku1715/reading.md:24 (table) and :58 (running text)"
+   }
+  ]
+ },
+ "page_statements_false": [],
+ "remaining": "Whether the manuscript has 'potewaz' or 'ponieważ' at d11 (image not seen; the page's Full texts show both forms). key.tsv re-applied to all 350 signs reproduces decryption.txt exactly; the 39 certain words match it.",
+ "confidence": "high"
+}

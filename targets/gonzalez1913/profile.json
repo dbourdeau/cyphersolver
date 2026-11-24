@@ -170,6 +170,12 @@
    "kind": "verification",
    "what": "Integration check (13 Nov 2026): CEHM image LXVIII-1.7.890.1.0001 fetched over plain http (no refusal); M01-M12 (about 190 groups, typed and clear) compared at full resolution: every group agrees; the typed date reads 22 on the scan. Strict share confirmed: 59 of 61 coded words verbatim (96.7%), read.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit, 16 Nov 2026): the audit reported 12 of 65 words of the reading departing from the decrypt, each an extra m. Cause: the run labels M01 to M16 in the reading's 'Coded runs' section are taken as the letter m; no key value is missing. An own decoder written from key.tsv reproduces the sixteen lines of the decryption file and of the reading's coded runs, with only the two marked exceptions ({eln/[?]} in M01, l{o/a}s in M15); with the labels removed from a scratch copy the audit gives 0 of 54 words departing. No file changed except NOTES and this step.",
+   "result": "worked"
   }
  ],
  "outcome": {

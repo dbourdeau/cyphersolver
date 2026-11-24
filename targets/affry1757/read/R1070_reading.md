@@ -1,5 +1,8 @@
 # R1070 - d'Affry, The Hague, 22 July 1757 (no. 210, to Bernis): reading
 
+What this file is: the clerk's clear copy of the letter in the Fagel register, a decipherment of the time. It is not the
+output of this folder's key; the keyed decode is `read/R1070.md`.
+
 Rests on: the contemporary clear copy of this despatch in the Fagel register, Nationaal Archief 1.10.29 inv. 5186
 scans 255R-256L (margin "No 210. Dat: 22. Juillet 1757. A: à B."), transcribed by WAINUT (21 Oct 2026,
 `wainut/register_clear.txt`), checked line by line against the scans 23 Oct 2026 (v5). The register is the deciphered

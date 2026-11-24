@@ -1,0 +1,36 @@
+{
+ "folder": "kaa4591b",
+ "marked": [
+  {
+   "file": "targets/kaa4591b/sysB/R9322_reading.md",
+   "places": 3
+  }
+ ],
+ "left_unmarked": {
+  "count": 0,
+  "why": "all three reported places marked; R9417 and R9323 readings were never compared by the audit and were not checked word by word"
+ },
+ "headers_changed": [
+  "r9403/transcription.tsv: (none) -> new line 2 '# Generated from the reading by build.py (the sign codes were not copied from the image): this is not an independent transcription.'"
+ ],
+ "page_changes": [
+  "'...carry only short glosses on their first lines) and deciphers all four.' -> '...carry only short glosses on their first lines) and, with the signs for e and r exchanged in R9403, deciphers all four.'",
+  "'In R9403 the starred x is e and the plain x is r, the reverse of the glossed letters, and some shapes differ; the raw decode of R9417's first page shows the same exchange, so it is taken as a variant of the one key.' -> 'In R9403 the starred x is e and the plain x is r, the reverse of that key file, and some shapes differ; the re-reading of 23 October 2026 found the same values in R9417 (its glossed lines included) and in R9323, so it is taken as a variant of the one key (r9403/key_r9403.tsv).'"
+ ],
+ "page_counts_now_stale": [
+  "\"R9322 (87.7%)\" (body, and read_share 0.877 in profile.json): v2_score hole rate is now 0.129",
+  "NOTES '0.605 explicit-hole (23/38 sentence windows, hole rate 0.121)' for R9322: now 0.579 (22/38), 0.129",
+  "meta description in <head> (not touched): '1,184 of 1,243 words (95.3%) are deciphered; ... R9417 and R9323 are decoded, not read' - withdrawn in NOTES on 22-23 Oct"
+ ],
+ "hole_rate": [
+  {
+   "file": "targets/kaa4591b/sysB/R9322_reading.md",
+   "before": 0.121,
+   "after": 0.129,
+   "state_in_profile": "read in part"
+  }
+ ],
+ "falls_below_read_bar": false,
+ "wording_changed": false,
+ "notes": "R9322 was already under the read bar (read in part). Not changed, by the brief's limits: the meta description in <head>, and the 'Full texts ... so that the reading can be used and checked' sentence inside the generated texts block (the new transcription header will reach the page at the next rebuild). The updated audit script (LABEL2) now strips a line-initial 'U2 ' in r9403/signs.txt as a line label: R9403 shows 5 words departing (all u), R9322 7 of 382; an audit artefact, to fix in audit.py. Open decision unchanged: whether key_from_glosses.tsv (X = e) holds only for R9322; the page sentence now says what the re-reading log says, not checked at the image. The third mark keeps the reading's 'princeps' against the key's 'principis'."
+}

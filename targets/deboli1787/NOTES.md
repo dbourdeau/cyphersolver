@@ -95,3 +95,7 @@ with the AKP 269 clears, kept for a later test.
 The key and the despatches are of the time (the King's cabinet). Brice Dudout: sorting of ZbPop 3, transcription of the key
 444 and of 14 pieces, test of the key, partial readings and summaries. Daniel Bourdeau: catalogue entries 415/416 and the
 deboli1788-1791 work this builds on.
+
+## 14 Nov 2026 full-texts audit
+
+The 14 entries of `outcome.texts` had no `summary`. Each now has one, condensed from the English summaries of `translation.md` (written 5-6 Nov 2026 from the readings); probable names are marked probable as there. No text file changed and nothing new was read.

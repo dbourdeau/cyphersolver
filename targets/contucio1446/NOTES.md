@@ -81,6 +81,20 @@ envoys' wording at Venice is new detail.
 - [x] key-rebuild: *pec* added from the gloss; *utinam* tested for a sense value: none fixed
 - [n/a] retry: one code word open, nothing else unread
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions, 16 Nov 2026: the read share counts the words written in cipher.
+
+| document | before | after | state |
+|---|---|---|---|
+| R7911, f. 148r-v | 0.9956 (the token share, 225 of 226 signs) | 0.954 (62 of 65 cipher words) | read, unchanged |
+
+- How the cipher was separated: `reading.md` sets the cipher in **bold** inside the clear Italian; the seven bold
+  passages were counted and the clear text and the English blocks left out.
+- Holes: the code word [utinam], and *Ragona*[?] and *parve*[?], where one sign's shape is uncertain (sure words only;
+  the sense fixes both, and with them accepted the share is 64 of 65, 0.985).
+- The token figure (225 of 226, 99.6%) on the page and in the README is unchanged.
+
 ## Sources
 
 - BnF italien 1583 ff. 148, 151, 152, via DECODE R7911, R7912, R7913 (images not public domain).

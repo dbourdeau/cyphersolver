@@ -125,6 +125,18 @@
    "kind": "reading",
    "what": "Decryption cut into words and read by sense: 63 cipher words, 39 certain, 14 probable, 0 restored, 10 unresolved (84.1%); two signs (N, C) left as probable names.",
    "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit flag (18 of 63 words depart) checked by hand: key.tsv re-applied to the 350 signs of transcription.txt reproduces decryption.txt exactly; the 39 certain words of reading.md have the letters of the decryption. The 18 departures are 13 clear words of the letter that the audit put through the key, the markers ‹N› (twice) and ‹C› with one neighbouring word, and ‹kodzarzyc› (V read z at d05 and e05, stated in key.tsv and reading.md). One unmarked difference in a clear word: d11 '=potewaz' in the transcription, 'ponieważ' in the reading; image not seen. 0 unmarked letter changes in cipher words. No file changed except NOTES and this step.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Repair round of the decrypt audit: the clear word of d11 marked po[ni]eważ at its 2 places in reading.md (transcription.txt has =potewaz; not settled, image not seen); two header notes added (diacritics and punctuation added in the reading; d11). No letter of the reading changed. v2_score hole rate 0.024 before, 0.037 after.",
+   "result": "worked"
   }
  ],
  "outcome": {

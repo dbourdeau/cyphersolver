@@ -298,6 +298,18 @@
    ],
    "what": "Integration of PR #422 after an independent verification. Reproduced: the ten frozen hashes; 13 of 14 glossed figures of no. 24 agree with key no. 25 (0.929; 200 shuffled keys mean 0.053, best 0.357; a wider control of 3 x 2,000 shuffles, best 0.357 to 0.429); a second parser and scorer give the same 13 of 14; runs_mechanical.txt identical. Two of the 14 are not independent of the figure correction: the glosses l and u sit over the figures Beling re-read (95 93 to barred 9, 56, 93), though the image supports him. On the Gallica images (openapi.bnf.fr IIIF) the run figures agree 25 of 25 in no. 24 and 17 of 17 in no. 60. No. 25 l. 34: the verifier's look agrees with Beling (38 93 and a barred 9, 'du [Roy]') against Brackx's barred 39 ('du M. de La Noue'); both readings are kept and Brackx is to be asked. Not checked: the key sheet names and cities, the clear text beyond the run lines, the 30-odd word differences in no. 25. Done here: ct_3623_twodigit.txt corrected (110 tokens, 43 distinct); texts entries for nos. 24 and 60 with English translations written from Beling's French; both read as sentences; read shares measured with research/reading_audit/v10_relabel.py: no. 24 0.957 (761 words, 34 holes), no. 60 0.938 (45 words, 3 holes); the verifier's count without the bracketed abbreviation expansions is about 0.98 and 0.956. In no. 24 line 20 the figure 17 carries an overbar on the image (one look here): set as barred 17, comte de Soissons, where Beling has the number 17.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Read share recounted over cipher words only (README Conventions, 16 Nov 2026), by hand, sure words only, holes by words, cipher words = the braced runs of nos. 24 and 60 and the six cipher runs of no. 25 (brackx2026/n25_groups.md), clear text around them left out. No. 25 0.925 -> 0.909 (20 of 22; the disputed end of the l. 34 run is one hole); no. 24 0.957 -> 0.857 (18 of 21), read -> read in part; no. 60 0.938 -> 1.0 (3 of 3, the Launan/Launay gloss conflict noted), read in part -> read. Class read in part unchanged; fraction_read 0.94 -> 0.89 (41 of 46 cipher words).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Coordinator decision, 16 Nov 2026: no. 60 recounted with Launan not sure (the gloss reads Launay where the key gives n): 2 of 3, 0.667, state stays read in part (too short for a class, blocker too-short); the promotion to read made earlier the same day is withdrawn. fraction_read 0.89 -> 0.87 (40 of 46).",
+   "result": "partial"
   }
  ],
  "outcome": {
@@ -321,9 +333,9 @@
    "key extended or corrected"
   ],
   "class": "read in part",
-  "fraction_read": 0.94,
+  "fraction_read": 0.87,
   "fraction_read_method": "measured",
-  "fraction_read_source": "research/reading_audit/v10_relabel.py share on the three reading files, pooled: texts/n25_reading.md (Brackx) 892 words, 72 holes: 0.925; texts/n24_reading.md (Beling) 761 words, 34 holes: 0.957; texts/n60_reading.md (Beling) 45 words, 3 holes: 0.938; together 1,698 words and 109 holes: 0.940. Bracketed abbreviation expansions, doubtful and supplied words all count as holes. No. 78 (one unread group in another code) is not in the figure.",
+  "fraction_read_source": "research/reading_audit/v10_relabel.py share on the three reading files, pooled: texts/n25_reading.md (Brackx) 892 words, 72 holes: 0.925; texts/n24_reading.md (Beling) 761 words, 34 holes: 0.957; texts/n60_reading.md (Beling) 45 words, 3 holes: 0.938; together 1,698 words and 109 holes: 0.940. Bracketed abbreviation expansions, doubtful and supplied words all count as holes. No. 78 (one unread group in another code) is not in the figure. 16 Nov 2026 (read share over cipher words only, README Conventions): replaced by the cipher-word share over the three letters, 40 of 46 (no. 25 20 of 22, no. 24 18 of 21, no. 60 2 of 3, Launan counted not sure), counted by hand; the 0.940 above was measured over each reading with its clear text and is not the measure. No. 78 is not in the figure.",
   "key": "partial",
   "codes_open": {
    "open": 1,
@@ -358,6 +370,11 @@
     "item": "No. 78 (f. 111r), one group of about six mixed signs",
     "blocker": "too-short",
     "detail": "a single group, probably a name, in a different mixed code"
+   },
+   {
+    "item": "no. 60: the name Launan (the contemporary gloss reads Launay), three cipher words in all",
+    "blocker": "too-short",
+    "detail": "two names in cipher; the key gives n, the gloss y; too few words for a share that decides a class"
    }
   ],
   "credits": [
@@ -403,9 +420,9 @@
     "translation": "texts/n25_en.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.925,
+    "read_share": 0.909,
     "summary": "An unsigned newsletter to the duc de Nevers from the royal army, 5 June 1590: Paris pressed by famine and division, the legate and the Spanish ambassador at the end of their resources, the Pope awaiting the Holy Spirit, Mayenne gathering weak forces, Villeroy working for peace in vain; in cipher, the union, Chaseron's affairs, the League, and the comte de Soissons's distrust, of M. de La Noue in Michael Brackx's reading shown here, of the King in Andrew Beling's second reading.",
-    "note": "25 Oct 2026: Brackx's reading with Nevers key no. 25; 0.925 of words read as sense (v10); one cipher figure unread. 11 Nov 2026: a second reader (Beling, beling/transcription/n25_second_reading.md, compared in beling/results/n25_compare.md) differs in about 30 places; the text shown is Brackx's, unchanged. At l. 34 Beling reads 38 93 and a barred 9, 'du [Roy]', where Brackx has barred 39, 'du M. de La Noue'; the independent verifier's look at the image agrees with Beling. Beling's other alternatives, one reader each: 'elle demeura a Gonnesse' for 'd'ille derechef a Compiegne', 'd'Auvergne' for 'd'Arques', 'a la puissance' for 'a la misericorde'. The page has 58 in 'l'union'; 56 is an emendation of the encipherer.",
+    "note": "25 Oct 2026: Brackx's reading with Nevers key no. 25; 0.925 of words read as sense (v10); one cipher figure unread. 11 Nov 2026: a second reader (Beling, beling/transcription/n25_second_reading.md, compared in beling/results/n25_compare.md) differs in about 30 places; the text shown is Brackx's, unchanged. At l. 34 Beling reads 38 93 and a barred 9, 'du [Roy]', where Brackx has barred 39, 'du M. de La Noue'; the independent verifier's look at the image agrees with Beling. Beling's other alternatives, one reader each: 'elle demeura a Gonnesse' for 'd'ille derechef a Compiegne', 'd'Auvergne' for 'd'Arques', 'a la puissance' for 'a la misericorde'. The page has 58 in 'l'union'; 56 is an emendation of the encipherer. 16 Nov 2026, read share over cipher words only (README Conventions), by hand, sure words only, holes by words: the six cipher runs of brackx2026/n25_groups.md hold 22 words: l'union (1), de chaseron (2), seruice (1), la ligue (2), 'comte de Soissons [?] il se defie du M[onsieur] de la noue' (the unread figure 3 is one hole) and 'de la defiance du comte de Soissons' (7). 20 of 22 read, 0.909 (0.925 over the whole letter, clear included, not the measure). The end of the l. 34 run (barred 39, 'M. de la Noue', Brackx; barred 9, '[Roy]', Beling, with the independent verifier's look agreeing) is not sure, so it counts as one hole, the least number of words the competing readings show (an estimate); the 58 for 56 in l'union is read as the encipherer's slip against the surviving key sheet (one digit, the other groups of the word read), and the supplied [de] before it sits in clear text and is not counted. The tool v10_relabel.py cannot reproduce this figure: the reading file carries no cipher marks, so no declaration is added and the file is Brackx's, unchanged. Under 95%: read in part, as before.",
     "reading_review": {
      "grade": "B",
      "by": "Claude Opus 5.5",
@@ -424,10 +441,11 @@
     "reading": "texts/n24_reading.md",
     "translation": "texts/n24_en.md",
     "language": "fr",
-    "state": "read",
-    "read_share": 0.957,
+    "state": "read in part",
+    "read_share": 0.857,
+    "cipher_markup": "{}",
     "summary": "An unsigned newsletter to the duc de Nevers from the royal camp before Paris, 11 to 15 June 1590: little hope of peace; copies wanted by Nevers obtainable only through La Guiche, ill at Compiegne; the King's night march against Saint-Paul at Meaux; a commission refused as burdensome at Senlis; the bread of the poor in Paris; La Chastre said to be worked on through Madame la princesse and Beauvais-Nangis; four soldiers who seized the keep of Vincennes hanged; the army's quarters around Paris on the 14th; Richelieu dead and his office of grand provost given to Fontenay; Brigard refused a passport to Mayenne; Mayenne's siege of Crecy-en-Laonnois raised. In cipher: Guise, La Guiche, 'de Ludouic', 'intelligences', 'le Roy luy avoit', La Chastre.",
-    "note": "11 Nov 2026: transcribed and deciphered with Nevers key no. 25 by Andrew Beling (PR #422), one reader, a first pass. 12 Nov 2026: English translation written at the integration check; read share 0.957 by v10_relabel (761 words, 34 holes: 15 doubtful places, one unread passage, the bracketed expansions); without the expansions about 0.98 (the verifier's count). The run figures were confirmed on the image at the verification; the clear text beyond the run lines was not. In line 20 the barred 17 (comte de Soissons) is the integration check's single look; Beling has the number 17.",
+    "note": "11 Nov 2026: transcribed and deciphered with Nevers key no. 25 by Andrew Beling (PR #422), one reader, a first pass. 12 Nov 2026: English translation written at the integration check; read share 0.957 by v10_relabel (761 words, 34 holes: 15 doubtful places, one unread passage, the bracketed expansions); without the expansions about 0.98 (the verifier's count). The run figures were confirmed on the image at the verification; the clear text beyond the run lines was not. In line 20 the barred 17 (comte de Soissons) is the integration check's single look; Beling has the number 17. 16 Nov 2026, read share over cipher words only (README Conventions): the cipher words are the braced runs of texts/n24_reading.md, {duc de Guise} 3, {M. la Guiche} 3, {de Ludouic} 2, {intelligences} 1, {comte de Soissons} 3, {le Roy lu[y] au[o]it} 4, {M. de la Chastre} 4, plus the margin figure set as the doubtful word [?Paris]: 21 words. 18 read; holes 3: lu[y] and au[o]it (letters supplied in the encipherer's text) and [?Paris]. 0.957 (761 words, the whole letter with its clear text, not the measure) -> 0.857, read -> read in part. The clear-text doubts (the 15 doubtful words and the unread passage of l. 48) are in clear text and do not count. v10_relabel.py with cipher_markup {} gives 0.900 (18 of 20): it does not see [?Paris], which stands between clear words.",
     "reading_review": {
      "grade": "A",
      "by": "project (integration check of PR #422), after the contributor's own reader",
@@ -447,9 +465,10 @@
     "translation": "texts/n60_en.md",
     "language": "fr",
     "state": "read in part",
-    "read_share": 0.938,
+    "read_share": 0.667,
+    "cipher_markup": "{}",
     "summary": "A slip of five lines to the duc de Nevers: what the writer wrote about the sieur Ludouic is true; having seen the extract of Nevers's letters, someone confirmed it to him, and will also say how it stands with Launan (the decipherer of the time wrote Launay). Both names are in cipher; neither person is identified.",
-    "note": "11 Nov 2026: transcribed and deciphered by Andrew Beling (PR #422), one reader. Read share 0.938 by v10_relabel (45 words, 3 holes), under the 95% bar; about 0.956 without the bracketed expansion. A possible 'au s[ieu]r de Launay' before the second run is one look by the verifier and is recorded as a candidate in the reading file.",
+    "note": "11 Nov 2026: transcribed and deciphered by Andrew Beling (PR #422), one reader. Read share 0.938 by v10_relabel (45 words, 3 holes), under the 95% bar; about 0.956 without the bracketed expansion. A possible 'au s[ieu]r de Launay' before the second run is one look by the verifier and is recorded as a candidate in the reading file. 16 Nov 2026, read share over cipher words only (README Conventions): the cipher words are {Ludouic} and {de Launan}, 3 words. The contemporary gloss over the last figure of the second run reads y (Launay) where the key gives n and the reading follows the key, so Launan is counted not sure: 2 of 3, 0.667 (0.938 over the whole slip, clear included, not the measure), read in part. Three words are too short for a class (blocker: too-short). The two doubtful words [?il] and [?s'] are in clear text and do not count. v10_relabel.py skips the entry (under five words) and would see no hole in Launan, so it cannot reproduce the figure.",
     "reading_review": {
      "grade": "A",
      "by": "project (integration check of PR #422), after the contributor's own reader",

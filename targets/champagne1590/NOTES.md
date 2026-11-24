@@ -234,10 +234,46 @@ line 8 fifth figure 56, line 22 "99 9b 56 93 35", the barred 22, 51, 44, the pla
 - The verifier's looser count (about 0.98 and 0.956 without the bracketed expansions) is not published: one rule per page.
 - "25 of 25" figures agreeing for no. 24: the two runs hold 24 figures, 29 with the five single figures; not reconciled.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions now count the read share over the words written in cipher only. The recorded figures (0.925, 0.957,
+0.938; 0.940 together) were measured over each reading with its clear text, doubtful clear words and bracketed
+expansions of abbreviations included. Recounted by hand, sure words only, holes by words:
+
+| Letter | Old (whole letter, clear included) | New (cipher words) | State |
+|---|---|---|---|
+| no. 25 (Brackx) | 0.925 | **0.909** (20 of 22) | read in part, unchanged |
+| no. 24 (Beling) | 0.957 | **0.857** (18 of 21) | **read -> read in part** |
+| no. 60 (Beling) | 0.938 | **0.667** (2 of 3) | read in part, unchanged (too short for a class) |
+| together (fraction_read) | 0.940 | **0.87** (40 of 46) | class read in part, unchanged |
+
+- Separation. No. 24 and no. 60: the cipher words are the braced runs of `texts/n24_reading.md` and `n60_reading.md`
+  (the file's own convention: "cipher runs ... in braces"), 21 and 3 words; the clear newsletter around them is left
+  out, and so are its 15 doubtful clear words and the unread passage of l. 48. No. 25: Brackx's reading marks no
+  cipher, so the cipher words are taken from his alignment table `brackx2026/n25_groups.md` (six runs, 22 words:
+  l'union 1, de chaseron 2, seruice 1, la ligue 2, the Soissons run 9 (comte de Soissons 3 and il se defie du 4 read,
+  plus its two holes), the defiance run 7).
+- Holes. No. 24 (3): lu[y] and au[o]it (letters supplied in the encipherer's text) and the margin figure set as the
+  doubtful [?Paris]. No. 25 (2): the unread figure 3 in the Soissons run, and the end of the l. 34 run, "du M[onsieu]r
+  de la noue" (Brackx, barred 39) or "du [Roy]" (Beling, barred 9; the independent verifier's look agrees with
+  Beling), which is not sure and counts as one hole, the least number of words the competing readings show (an
+  estimate). The 58 written for 56 in l'union is read as the encipherer's slip against the surviving key sheet (one
+  digit, the rest of the word read; both readers see 58 on the page). The supplied [de] before l'union is in clear
+  text and is not counted.
+- No. 60: the contemporary gloss over the last figure of the second run reads y (Launay) where the key gives n and the
+  reading follows the key, "de Launan". Launan is counted not sure: 2 of 3 (0.667), read in part, too short for a class
+  (blocker: too-short). An earlier version of this section promoted no. 60 to read on 3 of 3; withdrawn by decision the same day.
+- Tool. `v10_relabel.py` with `cipher_markup: {}` gives 0.900 for no. 24 (18 of 20: it does not see [?Paris], which
+  stands between clear words); it skips no. 60 (under five words, and would see no hole in Launan) and no. 25 (no cipher marks in the file, left
+  undeclared, the file is Brackx's and unchanged). The hand counts are the figures of record.
+- fraction_read 0.94 -> 0.87 (40 of 46 cipher words); it is a share of words, not of cipher groups (63 of 64 groups of
+  no. 25 decode). Class read in part, unchanged: no. 24 and no. 25 are under the bar, no. 60 is too short and no. 78 is unread.
+
 ## Remaining gaps
 
 - No. 25: 72 holes in the reading (doubtful clear words such as [?poix] [?doigt], [?Lamour], [?balliages] [?de] [?flandre], the besieged town in K, and the bracketed expansions) and the isolated figure 3 in the Soissons run - blocker: illegible; contrast-enhanced enlargements of the native scan did not resolve them (Brackx); the second reader (Beling, 11 Nov 2026) agrees on 14 of the 37 marked words, reads 13 otherwise and leaves 10 doubtful for both; a reader of 16th-century French hands is needed
 - No. 25 l. 34: the run ends 'du M. de La Noue' (barred 39, Brackx) or 'du [Roy]' (barred 9, Beling; the independent verifier's look at the Gallica image agrees with Beling) - blocker: illegible; two readers disagree on the same strokes; Michael Brackx is to be asked to look again (not yet asked, see the integration check); both readings are shown until then
+- No. 60: Launan against the gloss Launay, three cipher words in all (2 of 3, 0.667) - blocker: too-short; too few words for a share that decides a class
 - Nos. 24 and 60: one reader (Beling, 11 Nov 2026); 15 doubtful places and one unread passage in no. 24, two doubtful words in no. 60; the barred 17 in no. 24 line 20 and 'au s[ieu]r de Launay' in no. 60 are single looks; who Ludouic and Launay were - blocker: illegible; a second reader of the clear text is the next step; the names are not found on the web (beling/names_check.md, four searches)
 - No. 78 (f. 111r), one group of about six mixed signs - blocker: too-short; a single group, probably a name, in a different mixed code
 

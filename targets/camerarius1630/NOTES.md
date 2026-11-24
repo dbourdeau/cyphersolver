@@ -108,3 +108,19 @@ of the time. Several letters exist in two copies (402/404, 405/407, 409/411, 410
 - [ ] print: F. H. Schubert, *Ludwig Camerarius* (1955), and Stålhane 1934 not opened.
 - [x] key rebuild: letter table and code list rebuilt from the glosses and tested (contributor's record).
 - [ ] retry: once originals are found, read 432, 460, 454; a bare letter with no original is the ciphertext-only test of the list.
+
+## 14 Nov 2026: full-texts pass, the glossed letters listed
+
+- **438R-440L and 444R.** Their transcriptions were in the folder but not in `outcome.texts`. `decode_glossed.py`
+  (standard library) replaces each cipher element by its letter (`key.tsv`) or by the gloss of the time recorded for
+  the group on the same image (`codes_438-444.tsv`; otherwise another image, otherwise `codes.tsv`, marked `?`) and
+  writes `decryption_438-440.txt` and `decryption_444R.txt`. The output reads as Latin with the glosses in braces
+  (`_check_reading.py` on 438-440: clean share 0.6, hole rate 0.128), uninflected and unrepaired. Both entries are
+  `decoded, not read`: no reading as sentences and no English translation were written in this pass. The postscript
+  and close of 438-440 are the text already read from the duplicate 442; the first part of the letter (438R) and
+  444R have no reading yet. Next step, with no outside blocker: write `reading_438-440.md`, `reading_444R.md` and
+  their translations from these decodes and the glosses.
+- **402-419 and 498.** Held only as `codes.tsv` (code group, gloss, image): listed together as `not prose`. The
+  running text of those letters, and the spelled passages the letter table was learned from, are not in the folder.
+- `documents[].read` says "read" for 438-440 and 444 (they carry decipherments of the time); the texts entries say
+  what this folder holds of them. Nothing in the reading of 442 or in the figures changed.

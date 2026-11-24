@@ -191,9 +191,37 @@
    "what": "Packaging: governor of Rennes in 1594 looked up: René Marec de Montbarot (captain and governor of Rennes 1583-1605; lieutenant of the King for the bishopric of Rennes from 1593). No reference found on his religion.",
    "result": "partial"
   },
-  {"date": "2026-11-15", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.", "result": "partial"},
-  {"date": "2026-11-15", "kind": "literature search", "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.", "result": "ruled out"},
-  {"date": "2026-11-16", "kind": "verification", "technique": ["other"], "what": "Integration check of pull request #666 (15 and 16 Nov 2026). The 651 cipher letters of transcription/cipher_letters.txt (equal to pass1.txt) compared with the print: p. 559 on leaf 581 of Internet Archive 11576077bsb fetched afresh and on the committed crop, p. 560 on the committed crop; all 16 runs agree. Scripts re-run in a scratch copy: frozen key sha256 matches; held-out score -4.0950, 200 shuffled keys at most -4.6513; (7, 8, 10) chosen on either half ranks 1 of 2,024 on the other; all as recorded. scripts/sure_words.py re-run: reading/sure_words.tsv reproduced byte for byte, 57 sure words of 147, 95 with every letter allowed by the tested key, 58 of 636 read letters outside it (shift 20: 35, shift 11: 18, other: 5; recounted here from the letters column). The review of 15 Nov had counted 63 by taking every word without a sense mark; the contributor's 57 leaves out four words with a letter outside the tested key and two weak ones, and is the stricter count kept. No earlier target, catalogue entry or lead for this letter; targets/stowe166 names it as outside its six letters. The manuscript was not seen by anyone here; no person has checked the reading.", "result": "worked"}
+  {
+   "date": "2026-11-15",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 636 tokens, 25 types, en-1640s order 4: reading -2.986 per letter; polyphonic: 12% of read tokens differ from their type's commonest value. Verdict: not applicable.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-15",
+   "kind": "literature search",
+   "what": "SP 78/33 ff. 345-348 collated with this letter, from the copy saved on site at the Library of Congress on 14 November 2026 in State Papers Online (AI agents, two independent passes; no person has checked it; licensed images not included): a different letter of the same day, signed and addressed to Burghley, wholly in clear, with its clerk's copy; no sentence in common, no decipherment. Edmondes's cipher passages to Burghley of 13 and 23 July 1594 (ff. 349v, 366) are in signs and figures, not this letter cipher, so the addressee is given as an unnamed lord. List and Analysis of State Papers, Foreign Series, Elizabeth I, vol. 5 (list and pp. 236-246) read: no summary of this letter; Brittany section not seen. Reading, key, counts and tests unchanged.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "technique": [
+    "other"
+   ],
+   "what": "Integration check of pull request #666 (15 and 16 Nov 2026). The 651 cipher letters of transcription/cipher_letters.txt (equal to pass1.txt) compared with the print: p. 559 on leaf 581 of Internet Archive 11576077bsb fetched afresh and on the committed crop, p. 560 on the committed crop; all 16 runs agree. Scripts re-run in a scratch copy: frozen key sha256 matches; held-out score -4.0950, 200 shuffled keys at most -4.6513; (7, 8, 10) chosen on either half ranks 1 of 2,024 on the other; all as recorded. scripts/sure_words.py re-run: reading/sure_words.tsv reproduced byte for byte, 57 sure words of 147, 95 with every letter allowed by the tested key, 58 of 636 read letters outside it (shift 20: 35, shift 11: 18, other: 5; recounted here from the letters column). The review of 15 Nov had counted 63 by taking every word without a sense mark; the contributor's 57 leaves out four words with a letter outside the tested key and two weak ones, and is the stricter count kept. No earlier target, catalogue entry or lead for this letter; targets/stowe166 names it as outside its six letters. The manuscript was not seen by anyone here; no person has checked the reading.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "verification",
+   "what": "Decrypt audit (research/decrypt_audit): the generic script reported 280 of 727 words of reading/reading.md departing from the key. All of it is an artefact: the script took the columns base_value -> values_in_reading of keys/key_table.tsv for a key (18 letters to themselves, a, b, d, q -> e, x, z -> a) and applied it to the calendar's clear English in transcription/calendar_entry.txt; no cipher letter was compared. Checked with a read-only recount instead: the 651 cipher letters of calendar_entry.txt equal transcription/cipher_letters.txt; reading_hand.tsv and decryption.txt give one plain letter per printed letter, 636 read and 15 '?'; the 52 printed-plain pairs and their counts equal key_table.tsv exactly; 578 of the 636 read letters are allowed by keys/frozen_key.json and 58 are not (as NOTES section 4 states); the bold text of reading.md has the same letters plus three that are marked there: 'e w' for the printed roman 'to' (he will, marked †) and the supplied '(v)' of (v)ehement. No unmarked letter change. key_table.tsv is written from the reading (scripts/make_reading.py), so agreement with it does not check the reading; the frozen key does, for 578 letters. No file changed but NOTES and this step.",
+   "result": "worked"
+  }
  ],
  "outcome": {
   "class": "read in part",
@@ -205,7 +233,11 @@
    "key recovered",
    "decipherment with ambiguous key"
   ],
-  "verification": ["matched control", "independent verification", "historical consistency"],
+  "verification": [
+   "matched control",
+   "independent verification",
+   "historical consistency"
+  ],
   "fraction_read": 0.388,
   "fraction_read_method": "measured",
   "fraction_read_source": "Sure words only (README Conventions; reading/sure_words.tsv, written by scripts/sure_words.py, 15 Nov 2026): 57 of 147 (38.8%). A word is sure when every letter is read and comes from the tested key, the shifts (7, 8, 10) frozen before the held-out test, with no value chosen by sense (the printed letter takes its commonest value, covering at least 70% of its uses) and no weak reading. Of the other 90: 38 words are allowed by the tested key but take a value chosen by sense, 29 need a letter outside it (shift 20, shift 11 or a value added by hand), 6 are weak, 5 are unread letter runs and 12 are the undeciphered person signs and figures (55 twice, the m-sign twice, the ho- and oo-signs, 4s, 300 twice, 26 three times). Daniel Bourdeau's review counts 63 of 147; the six words his count adds are gouuerment, the (A10), he (A10), the (A11), which need a letter outside the tested key, and h and ill, which take the printed roman 'to' as cipher. Our earlier figure, counting every word read: 130 of 147 (0.884); without the signs 130 of 135; by letters 636 of 651 printed cipher letters (0.977).",
@@ -230,7 +262,18 @@
     "detail": "Only the Hatfield manuscript can confirm them."
    }
   ],
-  "validation": {"date": "2026-11-15", "model": "en-1640s", "file": "validation.tsv", "tokens": 636, "types": 25, "tokens_per_type": 25.44, "score": -2.986, "nulls": {}, "verdict": "not applicable", "notes": "polyphonic: 12% of read tokens differ from their type's commonest value"},
+  "validation": {
+   "date": "2026-11-15",
+   "model": "en-1640s",
+   "file": "validation.tsv",
+   "tokens": 636,
+   "types": 25,
+   "tokens_per_type": 25.44,
+   "score": -2.986,
+   "nulls": {},
+   "verdict": "not applicable",
+   "notes": "polyphonic: 12% of read tokens differ from their type's commonest value"
+  },
   "credits": [
    {
     "who": "ajbeling",

@@ -321,6 +321,66 @@ Re-measured (measure_sense.py, now on the image transcriptions): R1073 0.939 -> 
 0.968 -> 0.967, R1070 0.965 -> 0.955 (the corrected digits lose two values), R1068 unchanged; letters with no
 contemporary decipherment 0.906 -> 0.908; all groups 8,760/9,306 -> 8,787/9,327 = 0.942.
 
+## Decrypt audit, 16 Nov 2026
+
+`research/decrypt_audit/detail.py` re-applies the key files of the profile to each transcription and compares the letters
+with the published reading. Before: three texts compared (R1072, R1074, R2067), 323 of 956 words depart (106 of 341,
+113 of 332, 104 of 283), none marked.
+
+Causes, in order of weight:
+
+- The published readings are not the output of the key. Since 23 Oct 2026 `read/R*_reading.md` give the clerks' clear
+  copies in the Fagel register (NA 1.10.29 inv. 5186/5187), in the clerk's spelling; each file says so in its header,
+  and the keyed decodes are kept beside them as `read/R*.md` (sections "verification 3", "verification 5" and "r2q"
+  above). So wherever the key and the register differ, the reading has the register's word. Example, R1072: the
+  figures 727 582 147 give "mois l italien", the reading has "moi l'Angelo" (named in the header of the reading).
+  Counted with every value the folder holds (all three layers, the 17 disagreeing inferred groups at their first-listed
+  value), on R1072, R1074 and R2067: 142 places, 264 of
+  1,030 words. 102 are a keyed group whose value is not the register's word (388 keyed "cent" where the register has
+  "les"; 414 "angleterre" at "Anglois"; 605 "inconvenient" in R1074; 1186, 842, 631, the two-valued groups of
+  Remaining gaps); 25 are endings the code does not write and the clerk does (s, e, x: "Royaume[s]", "un[e]"); 15 sit
+  at one of the 28 groups of these three letters that have no value in any file. None of these places is marked inside
+  the reading text; the header gives the count of mismatching groups (60 for R1072) and names the notable ones.
+- The key was spread over several files and the audit applies one table at a time. The profile named `key_M.json` and
+  `key_X.tsv`; the values actually used (measure_sense.py, wainut/align_register.py) are key_X.tsv over key_M.json over
+  the H/M rows of `read/R*_new.tsv`, with 105 and 107 as nulls. Of the 555/537/457 groups of R1072/R1074/R2067, 59/41/36
+  take their value from key_X.tsv and 17/31/21 from the inferred rows only. Example: 459 "to" in "com-p-to-it"
+  (key_X.tsv) was missing from the decrypt made with key_M.json alone.
+- Audit artefacts: `key_M.json` holds the literal string "null" for 107 and 119, which the script printed as letters;
+  a doubtful group written a|b in `transcr/` is dropped or doubled by its tokeniser.
+- Five profile entries (R1054, R1068, R1070, R1073, R1076) still named the DECODE DOC file as transcription, although
+  the image-checked `transcr/R*.txt` of 27 Oct 2026 replaced it.
+
+Changed:
+
+- `key_merged.tsv` (new): one row per group, 803 rows, with a source column (620 from key_M.json, 161 from key_X.tsv
+  with the key_M value each replaces, 20 inferred values with file and line, the nulls). It holds no new value. The 17
+  inferred-only groups on which the `read/R*_new.tsv` files disagree (727 moi/mois, 631 avoit/avoir, 945, 989 ...)
+  have no row and are listed at its foot. Added to `outcome.key_file` after the two existing files.
+- `profile.json`: the transcription of R1054, R1068, R1070, R1073 and R1076 now points at `transcr/R*.txt`.
+- No reading, decode or translation file was touched.
+
+After: eight texts compared, 505 of 1,983 words depart (25%); the three of the first run 288 of 1,028 (R1072 99 of 377,
+R1074 107 of 358, R2067 82 of 293). The script's count and the 264 above differ because it tokenises a|b groups
+otherwise. R1064 and R1067 are still not compared by the script; not looked into.
+
+Not explained or not done: the 142 places were classed by script (which groups stand at the gap), not each read
+against the register scan. Whether a keyed group that differs from the register is a wrong key value, a second value
+of the group, a slip of the intercept copy or a slip of the clerk is not settled per place. The readings of the other
+seven register-based letters were not gone through place by place. The write-up page gave the R1074 loan as
+"two millions" and quoted "des gens si maladroits", both from the keyed decode; the register reading has "Vingt
+Millions" (675 = vingt in key_X.tsv) and "des Personnes si mal adroites" (corrected, see below).
+
+Marked on 16 Nov 2026: no place marked inside any reading. The ten `read/R*_reading.md` are another source's text,
+the clerks' clear copies in the Fagel register, so the 142 places where the figures give another word stay unmarked
+in the text (they are in `wainut/align/R*.tsv`, status mismatch). Header: each of the ten files now has one line under
+its title, "What this file is", saying that it is the register's clear copy and not the output of this folder's key,
+and naming `read/R<rec>.md` as the keyed decode (R1054, R1064 and R1076 with the exception their headers already
+state: the figures are followed at the listed places). No letter of any reading text changed. Page
+`docs/affry1757.html`, R1074 paragraph: "two millions" to "twenty millions" and the quotation "des gens si maladroits"
+to "des Personnes si mal adroites", as the published reading has them. Left as they are on the page: "the Italian"
+for the man the register calls l'Angelo, and the sentence that each letter was decrypted with the key.
+
 ## Remaining gaps
 
 - 45 groups without a value that the register does not settle (listed above under "Not adopted") - blocker: no-key-material; the register piece is noise or the occurrences disagree

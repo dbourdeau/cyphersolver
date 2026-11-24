@@ -1,6 +1,6 @@
 # Willem Lodewijk of Nassau to his brother Johann VII, cipher letters of spring 1620 (HHStAW Abt. 171 Nr. S 995) — catalogue no. 566
 
-Status: read in part (Brice Dudout, 4 Nov 2026; letters 1 and 5 and the postscript of fol. 53r read, 97.2% or more; letter 3 read in part, 92.6% certain + probable, 96.3% with restored; all four pieces: 1388 cipher words, 1184 certain, 154 probable, 25 restored, 25 unresolved; 96.4% certain + probable, 98.2% with restored; nomenclator signs unresolved, in brackets; prior-work checks still open, see below).
+Status: read in part (16 Nov 2026, recounted over sure cipher words: 1,184 of 1,430, 82.8%, all four pieces under 95%; the contributor's figures that follow count probable words as read and leave the nomenclator signs out; Brice Dudout, 4 Nov 2026; letters 1 and 5 and the postscript of fol. 53r read, 97.2% or more; letter 3 read in part, 92.6% certain + probable, 96.3% with restored; all four pieces: 1388 cipher words, 1184 certain, 154 probable, 25 restored, 25 unresolved; 96.4% certain + probable, 98.2% with restored; nomenclator signs unresolved, in brackets; prior-work checks still open, see below).
 
 Contributed by Brice Dudout (Europe chiffrée), with Claude Opus 5.5 agents. Catalogue entry no. 566 (your Archivportal-D sweep).
 To be published on: https://bdudout.github.io/europe-chiffree/en/documents.html#nassau-1620
@@ -46,6 +46,28 @@ plan for the Lower [Q] (very probably the Lower Palatinate): militia plus a regu
 Union, no invasion towards the Weser expected this year, provisions first. Letter 5 hopes he will continue in his charge and finds it
 dangerous to write such things "ohne chifer". The postscript is about officers' pay fixed by the late Elector and table money in the field.
 
+## Read share over cipher words only (16 Nov 2026)
+
+README Conventions count the read share over the words written in cipher, sure words only: a word marked probable
+(`{x}`), restored (`⟨x⟩`) or unresolved (`‹…›`) is a hole, and an unvalued code (the nomenclator signs `[A]`, `[B]`, `[Q]` ...)
+is a hole too. The readings hold the cipher only (the clear opening and closing of each letter are quoted after the
+reading, outside the count), so nothing had to be separated. Counted from the tags of the `*_reading.md` files by script:
+
+| piece | words (contributor) | nomenclator signs | certain | read share, was -> now | class |
+|---|---|---|---|---|---|
+| Letter 1, fols. 20r-21v | 722 | 25 | 636 | 0.981 -> **0.851** (636 of 747) | read -> read in part |
+| Letter 3, fols. 41r-41v | 430 | 9 | 348 | 0.926 -> **0.793** (348 of 439) | read in part |
+| Letter 5, fols. 44r-44v | 165 | 7 | 141 | 0.988 -> **0.820** (141 of 172) | read -> read in part |
+| Postscript, fol. 53r | 71 | 1 | 59 | 0.972 -> **0.819** (59 of 72) | read -> read in part |
+| **All** | 1,388 | 42 | 1,184 | 0.964 -> **0.828** (1,184 of 1,430) | read in part |
+
+The old figures were the contributor's (certain plus probable, nomenclator signs not counted), and stay his; the
+separators `[3] [ℰ] [ω] [⁘]` are not words, and `[3ℰ]` in the postscript is two separators. The key is a period key (the
+key book), but the one-digit-slip rule does not apply: the probable words are dots or shapes read one way where the
+transcription shows another, not slips of the writer. fraction_read 0.964 -> 0.828. No measure declaration: the
+reading files carry no clear text to mark, and `v10_relabel.py` counts the legend at the head of each file and does not
+read `{x}` or the bracketed signs as holes, so the hand count above is the figure of record.
+
 ## Limits
 
 - Nomenclator not resolved. The capitals and symbols ([A], [A̅], [A·], [A°], [As], [Am], [B], [Q], [M], [O], [⊙], [2̲], [∇], [V], [W]) are printed as they stand, with no conjecture in the text. From the sense only: [A] and [B] stand for persons or authorities; [Q] “Lower” occurs twice, feminine, and very probably means the Lower Palatinate (Unterpfalz); [O] and [⊙] seem to be rivers; [∇] precedes a number (“[∇] gulden”) or a rank. The list of capitals (C 667, images 20–54) has not been seen.
@@ -71,6 +93,7 @@ Method: (1) the key was not reconstructed: it is written in the family key book 
 - Nomenclator capitals and symbols ([A], [B], [Q], [M], [O], [⊙], [∇], [V], [W] ...); the list of capitals in C 667 images 20-54 has not been seen - blocker: no-key-material; the key book's list was not among the images used, and no copy of it is in hand.
 - Ciphered dates ("Datum [D] den [W]/[W] [S]. [y x° w]"): number signs unresolved, so the letters are dated only by context - blocker: open-codes; the signs occur once per letter and nothing in the text narrows them.
 - Postscript fol. 53r, line 16, runs to the edge of the leaf; its continuation has not been seen - blocker: needs-physical-access; verso or a neighbouring leaf not imaged in the digitisation used.
+- 154 probable words ({x}), 25 restored and 25 unresolved words, now counted as holes - blocker: needs-physical-access; the HHStAW scans were used for research only and are not in the repository, and the probable shapes were re-read blind for letter 3 only (21 of 22 confirmed)
 - Prior work in print not seen: K. Wolf (1937), L. Paul (1966), W. Hahlweg (1973), and the origin of the pencil slip on fol. 1 - blocker: needs-physical-access; print copies and an enquiry to the Hessisches Hauptstaatsarchiv.
 
 (Letter 1 fol. 21v lines 23-24, not re-transcribed at high magnification, is a doubt inside read text and is kept under Limits.)

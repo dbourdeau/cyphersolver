@@ -72,6 +72,15 @@ From `../king1797` (contributed by Andrew Beling, pull request #398; checked on 
 The verdict of this folder is unchanged: both texts were already in print, and it keeps no page. The key and its write-up are
 under `../king1797` (one key, one entry).
 
+## 14 Nov 2026: the code-group transcriptions copied into this folder
+
+The audit asked for a transcription file for each of the two despatches. The code groups were transcribed on 11 Nov 2026 in
+`../king1797/checks/bare_items.tsv` (blind, from NARA M30 roll 7 frames 007-0141/0142 and 007-0162). Its rows for the two 1801
+items are copied unchanged, with a header naming the source, into `king_1801-04-25_transcription.tsv` (124 code groups, counted
+by script) and `king_1801-06-08_transcription.tsv` (12 code groups), and listed under `outcome.texts[].transcription`. Nothing
+was transcribed again and no image was opened here. The decode of these groups with King's 769 code and its comparison with the
+print stay in `../king1797` (NOTES section 6). The Escalation lines below date from 26 Oct 2026, before the images were found.
+
 ## Escalation
 
 - [x] siblings: the other King despatches in vol. 9 that Wagner decoded are the obvious key source; not viewable online

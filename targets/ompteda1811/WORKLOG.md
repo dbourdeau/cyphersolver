@@ -13,3 +13,4 @@
 - 2026-11-06 Check against the cipher: aufn_0152 L line 5 has 3061 3178 (durch den), 1697 (der), 3900 (König) at group boundaries where the print has "durch den Herzog, den der König von Preußen"; line 14 has 2964 (Hardenberg). Worked.
 - 2026-11-06 Stopped the transcription agents (contents known); saved the OCR of nos. 21-22 to texts/.
 - 2026-11-06 Closed catalogue 2012 as found in print (removed from catalogue.json, kept in the removed log, SOLVED_CATALOGUE.md section 4); DECODE new-record proposal queued.
+- 2026-11-14 P.S. ff. 148-149v transcribed from aufn_0165-0167 (transcription/f148-149v_digits.txt, 2,472 digit places); listed in outcome.texts. Group-phase check only; not aligned with the print.

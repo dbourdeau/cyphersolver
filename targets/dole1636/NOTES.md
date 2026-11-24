@@ -54,3 +54,40 @@ The clear text is printed: É. Longin (ed.), "Le siège de Dole par le prince de
 Contribution here: the transcription of the cipher, the key, and a reading made from the numbers alone (before Longin was found).
 Differences from the draft: "par son altesse" (draft "par S. A."), "à plain" (draft "à plein"); Longin also brackets
 "de Mercy et de Forgats" and "accueillir", not read on fol. 191.
+
+## Decrypt audit, 16 Nov 2026
+
+The decrypt audit (`research/decrypt_audit/`) re-applied `key.tsv` to `transcription.txt` and compared the letters with
+`reading.md`. It reported 136 of 493 words departing (28%), the same pooled figure for each of the three texts it
+compared, because all texts of the profile share one transcription file and one reading file.
+
+Causes, checked by decrypting each passage line by line with `key.tsv` and setting it against the same line of `reading.md`
+(104 passages with a reading, 437 words):
+
+- Audit artefact (most of the figure). The audit decrypts the whole file, so the passage labels are taken for cipher:
+  in `transcription.txt` the label `A19` gives 19 = g and `A18` gives 1 = p, while in `reading.md` the same labels give the
+  letter a. That is the "a missing 11 times" and "p, i, c, d, n, r where the reading has a". The lines of Longin's printed
+  text under each passage of fols. 191-183 are a second copy of the text and count as "only in the reading". `key.tsv` is
+  complete: every number of the transcription that is read without a doubt mark has its value there.
+- Marked departures (not defects): 9 probable words where the decrypt differs by a letter ({honnorable} for hinnirable,
+  {Mirebeau} for mireberu, ~apparance for enalarance, ~pays for pas ...), and the 23 restored words of fol. 389.
+- Unmarked letter changes, 4 words: P1 and P4 "pourez" (40 = s, decrypt poures), A02 "soyez" (decrypt soyes), A01 "affaires"
+  (the numbers 35 21 35 15 38 25 40 give afaires, one f). They are printed as certain words.
+- One doubtful number printed as certain: R1 "pour", where the first number is transcribed 15(1.5), read 15 = i or 1 5 = po;
+  {piège} in the same line is marked probable, "pour" is not.
+- One lost stretch not shown in the reading: A17, edge lost between "le" and "renfort" in the transcription, nothing in the reading.
+- `decryption.txt`, fol. 389 part: 52 is printed I in six places (SOIES, AIONS, QUOI twice, ENUOIE, MESHUI) while `key.tsv` has
+  52 = y and the fol. 191 part prints Y (RIGNY). The header "with key.tsv (unchanged)" is not exact for those six letters.
+
+Nothing was changed in the key, the transcription or the readings: no key value is missing and the wording of the
+reading is not edited here. The audit figure is therefore the same after (136 of 493). By the line-by-line count,
+5 of 437 words of `reading.md` carry an unmarked departure from the decrypt (the four spellings and "pour"). Not checked:
+the numbers against the images, and fol. 200 (its reading is the period gloss, not a decryption).
+
+Marked on 16 Nov 2026. `reading.md`, 5 places, in the file's own marks: poure[z] (P1, P4), soye[z] (A02), af[f]aires (A01), with
+[ ] round the letter the numbers do not give, and {pour} in R1 (probable, doubtful number). One header line added to
+`reading.md` saying what [ ] inside a word means. No letter of the text changed. Left unmarked: the lost edge in A17 (a mark
+there would add a sign for which the reading has no text). The count tables in `reading.md` were not recomputed: with "pour"
+now probable, fols. 191 + 127v would be 112 certain and 12 probable (certain + probable unchanged at 124), and the four
+bracketed words are still counted as certain there. Header of `decryption.txt` changed: "(unchanged)" removed and "In the
+fol. 389 part 52 is printed I (key.tsv: y)" added. `v2_score.py` hole rate of `reading.md`: 0.063 before, 0.069 after.
