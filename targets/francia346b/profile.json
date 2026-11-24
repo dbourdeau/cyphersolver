@@ -1,0 +1,272 @@
+{
+ "schema_version": 1,
+ "target": "francia346b",
+ "title": "Francia 346, alternate digit key: R5634, R5638, and R5639 (Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346; catalogue 880)",
+ "documents": [
+  {
+   "id": "R5634",
+   "read": "not read",
+   "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346, ff. 190r-190v (DECODE R5634)",
+   "date": "1633?",
+   "year": 1633,
+   "country": "Papal State",
+   "route": "unknown -> unknown (Francia 346 dossier)",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary clerk's decipherment present on the leaves; not opened, copied, or checked here."
+   },
+   "length": {
+    "tokens": 1211,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Machine transcription of the DECODE images (prabal-rje); not verified by a person.",
+    "notes": "23 rows, 1211 digits, 54 unread gaps."
+   }
+  },
+  {
+   "id": "R5638",
+   "read": "not read",
+   "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346, ff. 218r-218v (DECODE R5638)",
+   "date": "1633?",
+   "year": 1633,
+   "country": "Papal State",
+   "route": "unknown -> V.E. (Francia 346 dossier)",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary clerk's decipherment present on the leaves; not opened, copied, or checked here."
+   },
+   "length": {
+    "tokens": 2874,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Machine transcription of the DECODE images (prabal-rje); not verified by a person.",
+    "notes": "33 rows, 2874 digits, 16 unread gaps."
+   }
+  },
+  {
+   "id": "R5639",
+   "read": "not read",
+   "shelfmark": "Archivio Apostolico Vaticano, Segreteria di Stato, Francia 346, ff. 220r-220v (DECODE R5639)",
+   "date": "1633?",
+   "year": 1633,
+   "country": "Papal State",
+   "route": "unknown -> V.E. (Francia 346 dossier)",
+   "language": "Italian",
+   "pages": 2,
+   "cleartext_in_document": "none",
+   "plaintext": {
+    "location": [
+     "separate folio"
+    ],
+    "source": "Contemporary clerk's decipherment present on the leaves; not opened, copied, or checked here."
+   },
+   "length": {
+    "tokens": 2335,
+    "unit": "symbols",
+    "measured": false
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Machine transcription of the DECODE images (prabal-rje); not verified by a person.",
+    "notes": "30 rows, 2335 digits, 57 unread gaps."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "homophonic"
+  ],
+  "summary": "Unspaced continuous digits using two-digit letter codes (with homophones) interleaved with single-digit nulls (1, 3, 4, 5, 6, 7, 8, 9) and two-digit nulls (01, 04); separate key from targets/francia346 (Ceva).",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "1-2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 59,
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": true
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": true,
+   "count": 10
+  },
+  "key_order": "random",
+  "word_division": "none",
+  "doubled_letters": "written twice",
+  "sibling_key": "Distinct from targets/ceva1632 and targets/francia346 (tested in scripts/test_ceva_mismatch.py with R5635 as positive control)."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "in archive",
+   "where": "Contemporary clerk's decipherment on the leaves in Francia 346; not opened before freezing the key (FROZEN.sha256).",
+   "found": "before attempt",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "transcription"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Built the pipeline, chose the records, froze the ciphertext-only read before checking any clerk text, and approved publication.",
+  "tools": [
+   "own Python scripts"
+  ],
+  "models": [
+   "language models, not named"
+  ]
+ },
+ "solution": [
+  {
+   "date": "2026-11-22",
+   "kind": "transcription",
+   "technique": [
+    "other"
+   ],
+   "what": "Machine transcription of six DECODE pages (R5634 ff. 190r-190v, R5638 ff. 218r-218v, R5639 ff. 220r-220v; 86 rows, 6,420 digits, 127 unread gaps). Not verified by a person.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-22",
+   "kind": "solver",
+   "technique": [
+    "language-model scoring",
+    "automated search (unspecified)"
+   ],
+   "what": "59-code key recovered from ciphertext alone (18 firm core two-digit letters, homophones, 8 single-digit nulls, 2 two-digit nulls, and 22 tentative rare codes), frozen in branicki-1757 commit 681ed424 (2026-11-22 21:34:50 UTC-5; FROZEN.sha256) before opening any clerk's decipherment on the leaves.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "statistics",
+   "technique": [
+    "statistical test",
+    "beam/DP decoding"
+   ],
+   "what": "Reproducible unedited mechanical decode (scripts/decode.py) and Ceva-key mismatch test (scripts/test_ceva_mismatch.py) on lang/lexicons/it.json.gz with R5635 positive control and 100 digit-shuffled controls: Ceva fits R5635 (23.1% >=5-letter word coverage, Z=+4.4) and fails on R5638/R5639 (4.1%/8.2%), whereas key.tsv fits R5638/R5639 (45.3%/42.5%, Z=+28.0/+28.2) and fails on R5635 (0.0%, Z=+0.3).",
+   "result": "worked"
+  }
+ ],
+ "outcome": {
+  "class": "not read",
+  "method": "key recovered from ciphertext-only",
+  "first_break": false,
+  "method_basis": "59-code unspaced 1- and 2-digit key recovered from ciphertext alone and applied mechanically via scripts/decode.py; clerk's decipherments on the leaves were not opened.",
+  "contribution": [
+   "transcription",
+   "decipherment with ambiguous key"
+  ],
+  "verification": [],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "prabal",
+    "role": "transcription",
+    "date": "2026-11-22",
+    "note": "machine transcription of six DECODE pages (R5634, R5638, R5639); not verified by a person"
+   },
+   {
+    "who": "prabal",
+    "role": "solution",
+    "date": "2026-11-22",
+    "note": "ciphertext-only 59-code key (frozen commit 681ed424, FROZEN.sha256), unedited mechanical decode (scripts/decode.py), and Ceva mismatch test (scripts/test_ceva_mismatch.py); filed as decoded, not read; cipher words not counted",
+    "source": "https://github.com/prabal-rje/branicki-1757/tree/main/francia-346-full",
+    "published": true
+   }
+  ],
+  "key_file": "key.tsv",
+  "texts": [
+   {
+    "doc": "R5634",
+    "label": "R5634, ff. 190r-190v",
+    "transcription": [
+     "transcription/R5634_f190r_digits.txt",
+     "transcription/R5634_f190v_digits.txt"
+    ],
+    "decryption": "r5634.md",
+    "state": "decoded, not read",
+    "language": "it",
+    "summary": "Short, broken letter (54 unread gaps) touching on compensation for pensions ('ricompenza delle queste penzioni'), letting a pension suffer ('far patire la penzione'), and a particular obligation ('tenuto particolarmente'). (Working guess from the decode; not a reading.)",
+    "note": "23 rows, 1211 digits, 557 letters, 122 nulls, 54 gaps. Decoded, not read; cipher words not counted."
+   },
+   {
+    "doc": "R5638",
+    "label": "R5638, ff. 218r-218v",
+    "transcription": [
+     "transcription/R5638_f218r_digits.txt",
+     "transcription/R5638_f218v_digits.txt"
+    ],
+    "decryption": "r5638.md",
+    "state": "decoded, not read",
+    "language": "it",
+    "summary": "Cleanest of the three records (16 unread gaps): an enclosed letter ('l'agiunta lettera') and separate cipher sheet ('un foglio di cifra') to V.E., considering renouncing a priory ('il priorato', 'il renuntiarglielo'), taking four thousand scudi ('pigliare li quattro mila scudi') on provision to reimburse himself rather than serve as a salaried servant ('servitore provizionato'), written in great confidence. (Working guess from the decode; not a reading.)",
+    "note": "33 rows, 2874 digits, 1361 letters, 153 nulls, 16 gaps. Decoded, not read; cipher words not counted."
+   },
+   {
+    "doc": "R5639",
+    "label": "R5639, ff. 220r-220v",
+    "transcription": [
+     "transcription/R5639_f220r_digits.txt",
+     "transcription/R5639_f220v_digits.txt"
+    ],
+    "decryption": "r5639.md",
+    "state": "decoded, not read",
+    "language": "it",
+    "summary": "Companion letter to R5638 (57 unread gaps) on the same priory and pension settlement ('con penzione, nell'altra ricompenza', 'aggiungere il dar di quattro', 'l'equivalente del priorato ... pigliare il rimanente', 'non per interesse di veruna sorte', 'in risposta l'avviso del suo arrivo'). (Working guess from the decode; not a reading.)",
+    "note": "30 rows, 2335 digits, 1103 letters, 134 nulls, 57 gaps. Decoded, not read; cipher words not counted."
+   }
+  ],
+  "gaps": [
+   {
+    "item": "127 unread gaps and unverified digits in the machine transcription (54 in R5634, 16 in R5638, 57 in R5639)",
+    "blocker": "illegible",
+    "detail": "human check against DECODE images needed"
+   },
+   {
+    "item": "22 tentative rare codes in key.tsv (including 1-digit 0=l and 2=b)",
+    "blocker": "open-codes",
+    "detail": "causes single-letter slips and occasional segmentation ambiguity"
+   },
+   {
+    "item": "contemporary clerk's decipherment on the leaves not yet opened for held-out grading",
+    "blocker": "not-attempted"
+   },
+   {
+    "item": "no sentence-level reading verified under the 19 Nov rule",
+    "blocker": "not-attempted"
+   }
+  ],
+  "notes": "Contributed by prabal-rje for issue #879. Folder slug francia346b is provisional and can be renamed per maintainer preference. Class stays not read (decoded, not read; cipher words not counted).",
+  "key": "partial",
+  "parts": [
+   {
+    "label": "Ciphertext-only key recovery and unedited mechanical decode of R5634, R5638, R5639",
+    "records": "R5634, R5638, R5639",
+    "method": "key recovered from ciphertext-only",
+    "extent": "none",
+    "basis": "59-code key frozen in branicki-1757 commit 681ed424 (2026-11-22 21:34:50 UTC-5; FROZEN.sha256) before opening any clerk's line. Unedited mechanical decode via scripts/decode.py; Ceva mismatch verified via scripts/test_ceva_mismatch.py with R5635 positive control. Class stays not read (decoded, not read; cipher words not counted)."
+   }
+  ]
+ }
+}
