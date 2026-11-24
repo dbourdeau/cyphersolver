@@ -2,7 +2,7 @@
 
 Status: in progress
 
-Worked 23 Nov 2026 in one session. **Not solved.** The scan was found, the colophon was read, and the "secret
+Worked 23 Nov 2026 in one session. **Not solved; classed not read** (the enciphered name is unread; only the clear colophon around it is read). The scan was found, the colophon was read, and the "secret
 script" is most likely two-tier writing in ordinary letters, not a cipher. No word of the copyist's name is read
 with confidence: a first reading ("Muhammad ibn Abd Allah") was withdrawn when an enhanced image showed that
 "Ubayd Allah" fits the same strokes. No site page: the name is not read and nothing has had a second reader.
