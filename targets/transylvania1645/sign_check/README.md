@@ -106,3 +106,32 @@ Counts after sheet C (`python3 tools/R4936_count728.py`):
 |---|---|---|---|---|---|
 | human places only (AI = probable) | **239** | 98 | 1 | 3 | **0.701** |
 | AI places counted as sure | 312 | 25 | 1 | 3 | 0.915 |
+
+## Part 4. Blind sheet D, answered by a human (Brice Dudout), 24 Nov 2026 (late)
+
+- `sheet-D-rule.md` (in French, byte for byte; first hash 9460a1d7..., amendment 1 written after the first contact sheet
+  and before anything was shown, final SHA-256 0df64ad7...). Targets: the 6 places where the sense wanted a value the
+  label did not carry: the 5 `q=u` places (casu L15 s3, ectum L17 s3, suspectusok L18 s16, szuksegunk L19 s17,
+  industriaia L31 s25) with options short hook / long loop, and the `h=h` place (ha, L23 s43) with options h / long r.
+  3 controls (a long r, a hook, a loop on read words).
+- `sheet-D-key.json`: question order, which option is which form, the boxes; opened only after the answers were exported.
+- `sheet-D-answers.json`: the exported answers, 9 questions, no remark.
+- `sheet-D-results.tsv`: answers decoded with the key, with the effect of each.
+
+Controls 3/3. Results:
+- The 5 `q=u` places are all **long loops**, not hooks: relabelled q -> g (u supported by the shape), tag `q=u` removed.
+  The hook "q" of the transcription was wrong at these 5 places.
+- The `h=h` place (ha) is a **long r**: relabelled h -> r (h in the key, supported by the shape), tag `h=h` removed.
+
+6 labels changed (R4936_corrections.tsv, transcription, alignment, mechanical decode); key and reading unchanged.
+
+Counts after sheet D (`python3 tools/R4936_count728.py`):
+
+| | sure | {probable} | [restored] | <unresolved> | sure share |
+|---|---|---|---|---|---|
+| human places only (AI = probable) | **244** | 93 | 1 | 3 | **0.716** |
+| AI places counted as sure | **318** | 19 | 1 | 3 | **0.933** |
+
+industriaia gains only in the second view: it keeps one AI g->q relabel (L31 s27). This is the ceiling of what shape can
+settle: 95% (324/341) is not reached. The 19 remaining {probable} words are cipher-maker slips (g=g x3, a=a, n=n),
+c=y x3, g=t x4 and the [?words]; hyszem needs a transcription fix (two figures "c e"), not done here.
