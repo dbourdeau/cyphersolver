@@ -96,3 +96,47 @@ The other n tokens (pi presumed) and the looped delta read as U in "bozUSnuzg" (
 - Blind reader of the sign forms: Brice Dudout.
 - Selection rule, sheet and integration: Claude (AI agent).
 - Images: Gallica / BnF.
+
+# Sheet 2411-95b (25 Nov 2026, Brice Dudout, with Claude): two single-sign groups, to clear the line
+
+After sheet 2411-95 the stretch stood at 799 of 841 words sure or probable (95.01%), at the line by 0.05 word only. Two
+doubts that each hinge on one sign whose form can be seen on the image were put to Brice Dudout as a third blind sheet:
+one boxed sign per question, the forms shown as thumbnails cut from the same letter, no values, no readings, three
+control signs: **3/3 passed**.
+
+The selection rule (`sheet-2411-95b-rule.md`, in French, byte for byte, SHA-256 b589c88e...) was written and hashed
+before the thumbnails were built. The key (`sheet-2411-95b-key.json`, box coordinates on the Gallica views only) was
+opened after the answers (`sheet-2411-95b-answers.json`) were exported. Results: `sheet-2411-95b-results.tsv`.
+Images: Gallica btv1b9060015d (public), views 119-121. No image is committed.
+
+## What the answers fix
+1. f. 115r l.28+ (s115_10): the looped sign after do9yS7n has the form of the looped B (z, as in "Abruzz", f. 115v):
+   *con ogni cura et diligenza si dovrebe°* (was "diligen[tia]", restored). Sure.
+2. f. 115v (v115_24): the first sign of (5)v9 is the barred looped delta (o): *il che non poco conferiva et serviva o al
+   tirar Papa in lega, o per il meno...* (was unread). Sure.
+
+The frozen key is unchanged; only these two signs of the sign file change (`../no63_signs_2411_95b.txt`,
+`../no63_reading_2411_95b.md`). No sure word is broken (one decoded line differs).
+
+## Recount (95% rule, the same 841-word base)
+
+| | sure | probable | restored | unresolved | code signs | sure + probable |
+|---|---|---|---|---|---|---|
+| after sheet 2411-95 | 750 | 49 | 9 | 21 | 12 | 799/841 = 95.01% |
+| after sheet 2411-95b | **752** | 49 | **8** | **20** | 12 | **801/841 = 95.24%** |
+
+95% of 841 is 798.95 words: the margin is now 2.05 words (was 0.05). With the stricter tokenisation of our counting
+script (apostrophes split, 839 words) it is 750 sure + 49 probable = 799/839 = **95.23%**, so the line is now reached
+on both counts (it was 94.99% there). This holds on sure + probable ("read by sense"); on sure words alone it is
+752/841 = 89.4%. Rule M was not re-run (the it-cinquecento corpus could not be downloaded); only two signs changed.
+The state (read in part or read) is left to the maintainer.
+
+## Not put to the sheet
+"egli era" (f. 116r l.31: the group runs on with no visible cut) and vol[e]ndo (no sign between the two letters) cannot
+be decided from the form; the other unread groups need several signs or give a value without a word. The T/b and
+pi/italic-n probables are unchanged.
+
+## Credit
+- Blind reader of the sign forms: Brice Dudout.
+- Selection rule, sheet and integration: Claude (AI agent).
+- Images: Gallica / BnF.
