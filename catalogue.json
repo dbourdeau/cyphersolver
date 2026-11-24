@@ -43420,65 +43420,6 @@
    "repository": "anom"
   },
   {
-   "id": 1392,
-   "counted": true,
-   "year": 1759,
-   "date": "6 Nov 1759",
-   "title": "Trémais → the minister, cipher letter, Montréal",
-   "correspondents": "Charles-François Pichot de Querdisien Trémais (commissaire sent to audit Bigot) → minister of the Marine",
-   "place": "Montréal",
-   "language": "French",
-   "region": "Americas",
-   "period": "1701-1800",
-   "shelfmark": "ANOM, COL C11A 104, ff.346-347v (CABAC_PIAF_60950)",
-   "folio_note": "3 images",
-   "cls": "B",
-   "status": "Still open (Brice Dudout, 5 Nov 2026), two facts for the entry. (a) The PREVIOUS Trémais cipher letter, 22 Sept 1759, is at ff. 342-343v (New France Archives NFA 27540) and is existing: its contemporary decipherment is bound right after it, ff. 344-345 ('Copie de la lettre en chiffre de M. Querdisien Trémais, dattée du Canada le 22 7bre 1759'), and is copied in the LAC C11A transcripts, reel C-2402 (vol. 104 part 2) pp. 523-527, with a bureau note dated 21 Nov 1759 ('cela ne dit rien et n'éclaircit rien...'). (b) The 6 Nov letter is the covering letter for a copy of the 22 Sept one, mostly in clear with cipher runs; it is NOT in the transcript. Trémais's code is his own, not the Vaudreuil C11E 10 table (0.063 against a best of 0.229 for 200 shuffled keys on f. 342). A partial key rebuilt from the 22 Sept pair by known plaintext reaches 0.704 on a held-out page (best shuffled 0.272): real but incomplete, not validated. Images are only 624-1125 px; HD scans are needed. Earlier note: Title only (\"Lettre chiffrée ... au ministre\"), no content summary, unlike the deciphered despatches around it: the ANOM/LAC describers apparently could not read it. Not on DECODE, not in repo. Trémais was sent in 1758 to investigate the Bigot frauds; his cipher may differ from Vaudreuil's.",
-   "why": "Secret report of the investigator behind the \"Affaire du Canada\" (Bigot trial), just after the fall of Quebec.",
-   "importance": 4,
-   "solvability": 3,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 LAC / Canadian manuscripts sweep (research/canada_lac/); not viewed (LAC image server central.bac-lac.gc.ca returned 503 to scripts)",
-   "verify": "View images on nouvelle-france.org (LAC image server; retry or use a browser); check the LAC C11A transcript reels on heritage.canadiana.ca (\"Archives des Colonies: Série C 11 A (transcrits)\", reels C-2380 ff.) for a deciphered copy; then test the C11E 10 key.",
-   "links": [
-    {
-     "label": "New France Archives record (images)",
-     "href": "https://nouvelle-france.org/eng/item/details?id=27542"
-    }
-   ],
-   "seen": "image",
-   "source": "New France Archives (nouvelle-france.org, LAC/ANOM) sweep",
-   "prior_art": "open (checked 28 Oct 2026: known.py, web search for Vaudreuil/Beauharnois/New France ciphers; no published decipherment found)",
-   "needs_archive_scan": "no",
-   "access_note": "images on nouvelle-france.org from the LAC image server (answered 503 on 28 Oct 2026; retry)",
-   "ark": "",
-   "scored": "vetted",
-   "access": "online",
-   "vetting_note": "needs Antoine Roy, 'Dossier ... Tremais', ANQ Rapport 1959-60 pp. 3-22: collections.banq.qc.ca sends Chrome to its security page 'Technical problem' (indispo.banq.qc.ca) and no archive.org copy was found. Numeric groups seen earlier on the leaf; this edition may print the deciphered letter. The C11A transcript reels on Canadiana are also unchecked.",
-   "vetting": {
-    "date": "2026-11-04",
-    "by": "Claude Sonnet 5.5 vetting agent",
-    "seen": {
-     "kind": "scan",
-     "where": "https://nouvelle-france.org/eng/item/details?id=27542 (New France Archives viewer, LAC images of ANOM COL C11A 104 fol. 346-347v, CABAC_PIAF_60950), opened in Chrome 4 Nov 2026; all 3 images viewed and zoomed; no bot check appeared.",
-     "extent": "3 images: f.346 recto (page 1 of the letter), the open spread f.346v-347 (two full pages of numbers), and f.347v with the closing lines and the 1759 'Canada, M. Bernier, commissaire a Montreal' docket leaf (f.348). About 110 lines of cipher in all; dated 'A Montreal le 6 9bre 1759', signed Querdisien Tremais.",
-     "cipher": "French nomenclator or code: lines of comma-separated 2- and 3-digit numbers (range seen about 12 to 700, e.g. '440, 261, 219, 227, 108, 177, 231') running through whole paragraphs, with clear French words standing among the groups ('Lorsque j'ay lieu de compter que vous aurez recu la lettre...', 'Monseigneur', 'Je suis avec un profond respect', a postscript 'P.S. Vous avez, Monseigneur, regle mon appointement...'). Three-line clear note at the head giving routes of dispatch. A short clear marginal note (a few lines, too small to read at the zoom used) sits beside the numbers on f.346. No decipherment, interlinear gloss or clerk's expansion is written on any of the three images, and no deciphered copy is bound with them."
-    },
-    "prior_art": {
-     "decode": "Not on DECODE: known.py on 'Tremais', 'Querdisien' and 'C11A 104' finds only leads.json, research/canada_lac and the catalogue's Vaudreuil C11A 104 entries; the harvested DECODE dump has no Trémais record.",
-     "tomokiyo": "Search of Tomokiyo's cryptiana pages for New France ciphers (also done for catalogue 1388-1391) found nothing on Vaudreuil, Montcalm, Bigot or Trémais; not listed on cryptiana.web.fc2.com as far as the searches show.",
-     "lasry": "No Lasry or HistoCrypt item on New France or Trémais found in 4 Nov 2026 searches (HistoCrypt papers returned were on other French ciphers).",
-     "edition": "Not found in NY Colonial Documents vol. 10 (archive.org documentsrelativ10brod djvu text grepped for Tremais, Tremais, Querdisien: no hit). Antoine Roy, 'Dossier Charles-Francois Pichot de Querdisien Tremais', ANQ Rapport 1959-60 pp. 3-22 (cited in the Dictionary of Canadian Biography entry) was not opened (collections.banq.qc.ca blocked, no archive.org copy): it may print the letter deciphered, so a reading in print is not excluded.",
-     "literature": "Dictionary of Canadian Biography entry on Pichot de Querdisien Tremais (biographi.ca, read 4 Nov 2026) says he 'received a code to use for correspondence' and cites AN Col. B 109, 110, 113, 115 and C11A 104, but no decipherment; web searches in French and English for a deciphered 6 Nov 1759 letter found nothing."
-    },
-    "key_check": "No key tried. DCB says the ministry gave Tremais a code (instructions in AN Col. B 109-115 not seen). The only New France table known is the 1757-58 Montcalm/Vaudreuil chiffre, ANOM COL C11E 10 ff.285-290v (nouvelle-france.org id 15213), a code table with numbers to about 700, the same range as these groups; it is not transcribed and was not tried on this letter.",
-    "key_held": "None held for this letter; the C11E 10 Montcalm/Vaudreuil table (see key_check) is the nearest candidate and is untested.",
-    "duplicates": "known.py 'Tremais', 'Querdisien', 'C11A 104' on 4 Nov 2026: only lead 1392 and sibling Vaudreuil C11A 104 entries in the catalogue (1388 ff.54-66 and neighbours; different writer, date and folios); no DECODE or repo record for Tremais.",
-    "verdict": "open"
-   },
-   "repository": "anom"
-  },
-  {
    "id": 1406,
    "counted": true,
    "year": 1902,
