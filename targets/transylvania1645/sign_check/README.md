@@ -25,7 +25,8 @@ outside timestamp, so the order "frozen before looked at" rests on our log.
 - `sheet-T-results.tsv`: answers decoded with the key. Controls 3/3. T1-T8: 8/8 hook -> g->q at the 8 places.
   T9: loop -> q->g (u supported). C1 fegyvert: e -> c->e (y supported). C2 kyralyoknak: c -> y not supported, unchanged.
 - The sheet was built and scored by AI agents (Claude); the answers are the human's. Not a human_check in the
-  schema's sense; `../sign_check_pending.json` holds the entry for `outcome.sign_check` once that field exists.
+  schema's sense; the entry is `outcome.sign_check` in `../profile.json` (moved there unchanged from
+  `sign_check_pending.json` at the integration of 24 Nov 2026, the field being in the schema).
 
 ## Part 2. Place-by-place pass by an AI agent (Claude), calibrated on part 1
 

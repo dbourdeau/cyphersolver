@@ -68,7 +68,7 @@ fraction_read 0.59 (estimated; R4938 and R4939 untranscribed).
 
 ## Remaining gaps
 
-- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026; state unchanged by the 24 Nov 2026 shape check below): 26 letters (1.3%) still on look-alike alternates after the check (12 doubtful g=t places, 5 q=u, 3 c=y, 3 g=g, a, h, n), four u written with the hook (g=u:hook), 94 g->q relabels made by an AI pass that count as probable until a blind reader checks them, five [?words] and three [...] runs (reading lines 9, 16, 22) - blocker: illegible; the DECODE scan (1,704 px, no larger file) leaves 17 g-shaped places undecided at 3-4x, and no contemporary or printed text confirms the choices
+- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026; state unchanged by the 24 Nov 2026 shape check below): 26 letters (1.3%) still on look-alike alternates after the check (12 doubtful g=t places, 5 q=u, 3 c=y, 3 g=g, a, h, n), four u written with the hook (g=u:hook), 94 g->q relabels made by an AI pass that count as probable until a blind reader checks them, eight [?words] and three [...] runs (reading lines 9, 16, 22) - blocker: illegible; the DECODE scan (1,704 px, no larger file) leaves 17 g-shaped places undecided at 3-4x, and no contemporary or printed text confirms the choices
 - R4937 l. 3 run after 'megsegni' and the end of l. 13 - blocker: illegible; decode to letter strings that are not words, checked at 2.2x
 - R4938 (1647): three cipher spans (54 letters) decoded with the family key 23 Oct 2026; one word ('ailunkker') unread - blocker: too-short (occurs once). The clear letter around the spans is not transcribed (clear text, not a cipher gap).
 - R4939 (1648): read 23 Oct 2026 (r2h); lines 03-09 keep about 12 unread words - blocker: illegible (figures decode to non-words with every look-alike pair tried, 3x crops of the 1,704-px scan; no printed text).
@@ -167,4 +167,8 @@ Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not re
   review state is the reviewer's to record.
 - **Images.** None are committed. The images are DECODE R4936 (access level 2); they are not republished and the crops
   used stay private. The use of an AI assistant on these images was not raised with the archive.
+- **Record.** Sheet T is in `profile.json` as `outcome.sign_check` (moved unchanged from `sign_check_pending.json` at the
+  integration of 24 Nov 2026): 11 signs, 3 controls, all passed, which meets the floor of the sign-check level (README
+  Conventions). It checks sign shapes only and changes neither the state of R4936 nor any count. The reading has eight
+  [?words], not five as the gap line first said (corrected the same day).
 - Credit: Brice Dudout (human reviewer, 11 places on sheet T), AI-assisted shape check as stated above; DECODE for the images.

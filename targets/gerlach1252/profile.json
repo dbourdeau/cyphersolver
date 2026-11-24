@@ -455,6 +455,16 @@
    ],
    "what": "Page-label correction after the blind pass: scan 0150 was written '157a' by the batch B blind reader; MAPPING.tsv (recorded before transcription, hashed in FREEZE.txt) gives p.157 of the main sequence, and '157a' is scan 0160 (batch C). On the image the number reads '157' with an 'a' on a triangular corner piece beside it (patch or fold); not checked by a person on the volume. Label corrected to p.157 in transcription_/decryption_/reading_/translation_p141-160 only; no token, letter or mark changed; the frozen files in blind/p141-160/B keep '157a'. Content (recipe level, Claude's summary from the judges' gists, unchecked): gold in aqua regis to an oil, digestion and the precipitation of the mercury of gold (pp.141-149); the red precipitate multiplied and used on quicksilver (pp.151-155); salt of tartar, the 'arcanum philosophorum' (pp.157, 148a-150a); mercurius solis purified and digested in an oak ball, then a gold calx, 'Ingressus' (pp.151a-160). No person has checked the readings.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "other"
+   ],
+   "what": "Check by the project of pp.141-160 (PR #930), by a model session for the maintainers, not a person (NOTES, 'Check by the project (PR #930, 24 Nov 2026)'). A decoder written here from key_v2.tsv and the three BLIND.tsv gives the filed letters on 621 of 621 lines (12,051 signs, 191 doubt-marked, 7 #, 0 labels not in the key); all non-image hashes of the FREEZE and FREEZE_blind files match; the judge figures re-add from the marks (A 4,054/4,085, B 3,875/3,973, C 3,965/4,007; 11,894 of 12,065); the three shuffle controls re-run as sent give the filed figures (0 of 5,000 at both seeds each). Scan 0134 re-fetched has the packet's md5 and sha256; 348 signs on scans 0134, 0150, 0151 and 0161 agree with the BLIND labels and the page numbers are as MAPPING.tsv says. About 2,639 words by the judges' word breaks, 92.9% unmarked (88.1% with the words on doubt-marked signs held as probable); coherent recipe prose read as sentences on six pages; class left at decoded, not read (English a page summary, doubts not checked on the images). 21 of the 54 labels of SHEET_v2.md hint their letter (26.8% of signs). The order of events (one commit) rests on the contributor's record. Passed on, a model's reading not compared with Kohn's sheet: the 'Jupiter-like' sign, # six times in batch B and 4L at p.141 L03, wants x at all seven places. Not checked: the other 27 scans, the 191 doubts one by one, the freeze times.",
+   "result": "worked"
   }
  ],
  "outcome": {

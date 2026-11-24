@@ -506,6 +506,31 @@
   "fraction_read": 0.58,
   "fraction_read_method": "estimated",
   "fraction_read_source": "22-23 Oct 2026: see earlier steps. 23 Oct 2026 (r2h): R4939 transcribed (1,631 cipher letters, measured) and read; R4938's cipher spans transcribed (54 letters, measured), decoded, not counted. Read: R4937 869 + R4942 252 + R4940 23 + R4939 1,631 = 2,775 of 1,956 + 869 + 252 + 23 + 1,631 + 54 = 4,785 cipher letters = 0.58, measured on our transcriptions.",
+  "sign_check": [
+   {
+    "date": "2026-11-24",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 11,
+    "controls": 3,
+    "controls_passed": 3,
+    "as_transcribed": 1,
+    "corrected": 10,
+    "unresolved": 0,
+    "not_counted": 0,
+    "rule": "sign_check/sheet-T-rule.md, written before any thumbnail was cut and before the answers, with a written integration clause",
+    "rule_hash": "7f08d4fd8ce0d43c5358f6ddd67bf533553cb1fe8c1ebfdbb2abefb35c6ad998",
+    "sheet_faults": "none found",
+    "note": "R4936 p. 1 (DECODE R4936, image private), family key unchanged, reading unchanged. Eight g-shaped figures read t (lines 1-13) all answered 'short hook' (= the hand's t figure): relabelled g->q; one q read u answered 'long loop': relabelled q->g; one c read y answered e: relabelled c->e; another c read y answered c (reading not supported there). Letters on look-alike alternates 130 -> 120 of 1,932; sure words 232 -> 234 of 341 cipher words (0.680 -> 0.686, #728 count); R4936 stays decoded, not read. The other 106 g=t sites were not changed by this sheet; they were then checked one by one by an AI pass calibrated on these answers (sign_check/README.md, part 2), whose 94 g->q relabels count as probable until a blind reader checks them (decision 24 Nov 2026). Answers: sign_check/sheet-T-answers.json (SHA-256 62a7d87bef589f3b39a8bbd60c7a06659ee36c198e90fc05144f2e171c3a35ba). Not a human_check: AI agents built and scored the sheet."
+   }
+  ],
   "gaps": [
    {
     "item": "R4939 lines 03-09: unread groups (about 12 words) before the letter's main sentences",
@@ -518,7 +543,7 @@
     "detail": "54 cipher letters in three spans; the word occurs once; the family key otherwise decodes the spans unchanged (23 Oct 2026)"
    },
    {
-    "item": "R4936 (decoded, not read): after the g/q shape check of 24 Nov 2026, 26 letters rest on the other member of a look-alike pair (12 doubtful g=t, 5 q=u, 3 c=y, 3 g=g, 3 single), four u are written with the hook of the t figure (g=u:hook), and the 94 g->q relabels made by an AI pass count as probable until a blind reader checks them (sure words 234 of 341 on the human places alone, 302 with the AI places); plus five [?words] and three [...] runs",
+    "item": "R4936 (decoded, not read): after the g/q shape check of 24 Nov 2026, 26 letters rest on the other member of a look-alike pair (12 doubtful g=t, 5 q=u, 3 c=y, 3 g=g, 3 single), four u are written with the hook of the t figure (g=u:hook), and the 94 g->q relabels made by an AI pass count as probable until a blind reader checks them (sure words 234 of 341 on the human places alone, 302 with the AI places); plus eight [?words] and three [...] runs",
     "blocker": "illegible",
     "detail": "the DECODE scan (1,704 px wide, no larger file) did not separate the hand's g and q at 3x (23 Oct 2026); at 3-4x a short hook (t) or a long loop (u) shows at most places, 17 stay doubtful (24 Nov 2026, sign_check/); no contemporary or printed decipherment confirms the choices (verify sweep 23 Oct 2026). 23 Oct 2026 (r2h): R4938 and R4939 do not settle it (R4938's spans have no t; R4939 is another hand, whose g and q do separate at the same scan width)"
    },

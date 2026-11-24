@@ -1455,6 +1455,16 @@
       ],
       "what": "docs/_check_reading.py on texts/260195-72L-PS_klingenberg_reading.md (runs only, no clear German between them): 0.569, 'marginal' (29/51 sentences clean, most of them the file's English header lines; holes 0.192), under the 0.60 line; the decryption file 0.0 (0/7). No reviewer has recorded a reading_review and the cipher words read at 33 of 46 (71.7%), so the P.S. is filed decoded, not read. No person has checked the transcription, the judging, the reading or the English.",
       "result": "partial"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "verification",
+      "technique": [
+        "statistical test",
+        "other"
+      ],
+      "what": "Check by the project of the 72L-72R P.S. blind decode (PR #931), by a model session for the maintainers, not a person (NOTES, 'Check by the project (PR #931, 24 Nov 2026)'). A decoder written here from the sign rows of key.tsv, maps M3 and v4 and sheet_to_key.tsv gives the filed decryption on 5 of 5 rows (117 tokens, 111 valued, 6 holes, 18 doubt-flagged, 4 struck groups); all 18 hashes of FREEZE.txt verify, the two packet crops rebuilt from image 48574280 fetched again; judge figures recounted (104 S, 4 E, 9 N of 117; 33 of 46 words, 27 of 46 with the words on doubt-flagged tokens held as probable); shuffle control re-run as sent (real -1.9969, 0 of 5,000 at both seeds). All 117 tokens and 4 struck groups compared with the image: no difference. Passed on, a model's reading of the image (probable): the clear word before run 2 reads 'nigst' (most likely schleu-nigst across the line end), not 'nicht' as the frozen transcription, the reading and the translation give it; both S20~ signs show a y-like body under a flat top bar, so the open point is that sign's value, not a slip; before run 4 the clear text has 'M. Müller weilen [sie] vielleicht'. PRIOR_ART.md line 3 has 'Christoph' Klingenberg for Paul (hashed file, not edited). Class left at decoded, not read; the order of events (one commit) rests on the contributor's record. Not checked: the value of the bar-topped sign, 459 or 454, the six unvalued codes.",
+      "result": "worked"
     }
   ],
   "outcome": {

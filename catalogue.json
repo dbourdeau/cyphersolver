@@ -39816,9 +39816,12 @@
    "region": "Other",
    "period": "1701-1800",
    "shelfmark": "GKUAO GAAO (Astrakhan), f. 394, op. 1 dop., d. 11, l. 21",
-   "folio_note": "one leaf",
+   "folio_note": "one leaf (l. 21): a clear opening, then 20 cipher lines, 787 sign tokens of 33 labels (770 letter signs, 17 dividers and flourishes) and one blotted sign; the text runs on to the next leaf of d. 11, which is not imaged (counted 24 Nov 2026, targets/ostermann1737/)",
    "cls": "C",
-   "status": "Commons description gives the shelfmark, calls it a cipher rescript; no decipherment noted.",
+   "status": "Commons description gives the shelfmark, calls it a cipher rescript; no decipherment on the leaf. Key recovered from the ciphertext alone and the 20 cipher lines read in part in targets/ostermann1737/ (PR #935, 24 Nov 2026); in progress, not written up.",
+   "known": "Key recovered from the ciphertext alone by Malcolm McBratney working with Claude (PR #935, merged 24 Nov 2026): built on cipher lines 1-16, frozen, then one decode of all 20 lines (770 letter signs; the held-out lines 17-20 give 147 of 148 letters sense). Read in part, 140 of 152 words sure (0.921), in targets/ostermann1737/ (in progress, not written up). The project reproduced the decode on 20 of 20 lines and read the Russian as sentences. No earlier key or reading found.",
+   "open": "Ten one-letter slips (six of them o for e: the sign of three minims where the two-minim e is wanted; at the two places checked the thumbnail shows three minims, so only a better image can say whether the clerk or the transcription is at fault) and three supplied letters; the marks above the ends of lines 8 and 15; one blotted sign in line 16; the rest of the rescript on the next leaf of d. 11, not imaged. Only a 713 x 1020 thumbnail was read: the Commons original is 714 x 1021, and the archive's own PNG (a Wayback copy of 2 Aug 2021 exists) was not obtained.",
+   "as_of": "2026-11-24",
    "why": "Russian diplomatic cipher towards Persia in Nadir Shah's years; Russian figure ciphers are rarely worked.",
    "importance": 2,
    "solvability": 2,
@@ -39829,6 +39832,10 @@
     {
      "label": "Commons",
      "href": "https://commons.wikimedia.org/wiki/Category:Skoropis"
+    },
+    {
+     "label": "Project folder targets/ostermann1737 (in progress)",
+     "href": "https://github.com/dbourdeau/cyphersolver/tree/main/targets/ostermann1737"
     }
    ],
    "seen": "image",
@@ -39842,8 +39849,8 @@
     "seen": {
      "kind": "facsimile",
      "where": "Wikimedia Commons file 'Shifrovannoe pismo vitse-kantslera Ostermana rezidentu v Persii Kalushkinu, 1737.jpg' (714x1021 px, downloaded and viewed), from GKUAO GAAO f. 394 op. 1 dop. d. 11 l. 21",
-     "extent": "one leaf: a 4-line clear opening, then about 17 lines of cipher",
-     "cipher": "Clear heading 'Ukaz nashemu rezidentu Kalushkinu' and an opening sentence acknowledging the rescript of 6 January and relations nos. 10, 11 and 12; then about 17 lines of a symbol cipher (mixed Cyrillic letters, digits and signs) with no decipherment written on or between the lines of the leaf."
+     "extent": "one leaf: a 4-line clear opening, then 20 lines of cipher (counted 24 Nov 2026 in targets/ostermann1737/; this vetting first said about 17)",
+     "cipher": "Clear heading 'Ukaz nashemu rezidentu Kalushkinu' and an opening sentence acknowledging the rescript of 6 January and relations nos. 10, 11 and 12; then 20 lines (first given as about 17) of a symbol cipher (mixed Cyrillic letters, digits and signs) with no decipherment written on or between the lines of the leaf."
     },
     "prior_art": {
      "decode": "known.py 'Ostermann', 'Kalushkin' (harvested DECODE dump, which is what was run): only this lead and its sweep files; deboli1788 mentions Ostermann in another context; no DECODE record.",
@@ -49104,83 +49111,6 @@
    },
    "repository": "estense",
    "outcome": "attempted, open"
-  },
-  {
-   "id": 1570,
-   "counted": true,
-   "year": 1688,
-   "date": "2 Apr 1686 - 16 Oct 1691",
-   "title": "Vittoria Gonzaga, nun at Santa Chiara, → her brother, five letters partly in cipher (four read in part; the fifth, of 18 Sept 1691, not transcribed)",
-   "correspondents": "Vittoria Gonzaga (17th-18th c., nun) → a brother (not named)",
-   "place": "Santa Chiara, Naples",
-   "language": "Italian",
-   "region": "Italy",
-   "period": "1651-1700",
-   "shelfmark": "Biblioteca Estense Universitaria, Modena, Autografoteca Campori: Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 3-4; Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 11-12; Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 22-23; Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 20-21; Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 24-25",
-   "folio_note": "02-04-1686: Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 3-4 (Lettera parzialmente cifrata. Il destinatario è un fratello. Data topica specifica: \"Santa Chiara\".); 13-04-1688: Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 11-12 (Lettera parzialmente cifrata. Il destinatario è un fratello. Data topica specifica: \"Santa Chiara\".); 04-09-1691: Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 22-23 (Lettera parzialmente cifrata. Il destinatario è un fratello. Data topica specifica: \"Santa Chiara\".); 16-10-1691: Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 20-21 (Lettera parzialmente cifrata. Il destinatario è un fratello. Data topica specifica: \"Santa Chiara\".); 18-09-1691: Lettera G, Gonzaga, Vittoria (Sec. XVII-XVIII), cc. 24-25 (the record says only: Il destinatario è un fratello. Data topica specifica: \"Santa Chiara\"; seen 24 Nov 2026: a short run of numbers and about 15 lines of them on cc. 24v-25r)",
-   "cls": "C",
-   "status": "Estense catalogue (Lodovico Media Library / Estense Digital Library): Lettera parzialmente cifrata. Il destinatario è un fratello. Data topica specifica: \"Santa Chiara\". No decipherment mentioned in the record. Not on DECODE, not in the repo (known.py (your repo + DECODE + Cryptoole list) on the names: no hits). ",
-   "why": "A private family cipher between a Gonzaga nun and her brother, four letters over five years (enough text for a ciphertext-only attack).",
-   "importance": 2,
-   "solvability": 4,
-   "difficulty": 3,
-   "score_note": "Scored from the archive description during the Oct 2026 Italy sweep; not viewed",
-   "verify": "View the scans (Mirador viewer on Lodovico, IIIF manifest); check for a decipherment on the verso or a clear minute elsewhere",
-   "links": [
-    {
-     "label": "02-04-1686 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=c9e23554-5ac5-4f19-b69a-2afff92d9bd5"
-    },
-    {
-     "label": "13-04-1688 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=bf531a45-4b5f-4dcc-8fa6-b998f8688d4a"
-    },
-    {
-     "label": "04-09-1691 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=e7f8b77c-bdcb-43d1-843b-bea02df7f201"
-    },
-    {
-     "label": "16-10-1691 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=6d986a52-84d8-4c9d-b9b4-98a326d97739"
-    },
-    {
-     "label": "18-09-1691 record",
-     "href": "https://lodovico.medialibrary.it/media/schedadl.aspx?id=eab58d9b-6ca2-44c8-bc90-eb88a5c05fb0"
-    }
-   ],
-   "seen": "image",
-   "source": "Biblioteca Estense (Lodovico Media Library) sweep",
-   "prior_art": "open (checked 29 Oct 2026: known.py (your repo + DECODE + Cryptoole list))",
-   "access": "online",
-   "needs_archive_scan": "no",
-   "access_note": "online: Biblioteca Estense, Lodovico Media Library (Mirador viewer from the record page; IIIF manifest edl-jarvis.cultura.gov.it/meta/iiif/<id>/manifest); licence stated CC BY-NC-SA",
-   "ark": "",
-   "scored": "vetted",
-   "vetting": {
-    "date": "2026-10-29",
-    "by": "claude vetting batch n02",
-    "seen": {
-     "kind": "scan",
-     "where": "Estense IIIF manifests edl-jarvis.cultura.gov.it/meta/iiif/<uuid>/manifest (record ids in the lead's links), images fetched at 25% (about 1400 px) and viewed 2 Nov 2026: Vittoria Gonzaga, Santa Chiara: 2 Apr 1686 (c9e23554 cc. 3-4), 13 Apr 1688 (bf531a45 cc. 11-12), 4 Sep 1691 (e7f8b77c cc. 22-23), 16 Oct 1691 (6d986a52 cc. 20-21).",
-     "extent": "Four letters to a brother, each in clear Italian with one to three short blocks of number groups: 2 Apr 1686 about 20 lines; 13 Apr 1688 two blocks of about 4 lines; 4 Sep 1691 two blocks of about 3 lines; 16 Oct 1691 two blocks of 8-10 lines. About 400 groups in all.",
-     "cipher": "Short numeric nomenclator: groups of 2-4 digits strung together (recurring 1550, 50, 30, 75, 10, 2, 507) without word breaks, run on within clear sentences. No decipherment, interlining or key on any leaf."
-    },
-    "prior_art": {
-     "decode": "DECODE: known.py searches the harvested DECODE views (research/catalogue_harvest/decode); no record for these names or this shelfmark. A web search for DECODE/de-crypt.org with Autografoteca Campori / Estense found no Estense Campori record (the live DECODE site was not searched record by record).",
-     "tomokiyo": "Tomokiyo cryptiana: web searches (Este/Ferrara/Modena cipher, Gonzaga, the correspondents) found no cryptiana page on this item; Estense cipher literature found is about the Archivio di Stato di Modena cifrari, not the Campori autographs.",
-     "lasry": "Lasry: web searches (Lasry/Megyesi/Kopal with Este, Modena, Gonzaga, Italian 16th-18th c. ciphers) found only papal and syllabic cipher papers, nothing on these Estense letters; GL.htm not consulted for these names.",
-     "edition": "Edition: no edition found; web searches for Vittoria Gonzaga, Santa Chiara, 1686-1691 letters returned nothing printed.",
-     "literature": "Literature: no study of this nun's cipher found; the Gonzaga cipher studies found concern other centuries."
-    },
-    "key_check": "No key held in repo for these letters (known.py 'Vittoria Gonzaga' and 'Santa Chiara' hit only the lead). About 400 digit groups in total is short for a ciphertext-only attack on a nomenclator; no held key to test.",
-    "duplicates": "known.py run on the correspondents, shelfmark and place names: no catalogue, target, DECODE-harvest or Cryptoole hit other than the lead itself; Vittoria Gonzaga and Santa Chiara searched: no other record.",
-    "verdict": "open"
-   },
-   "outcome": "attempted, open",
-   "known": "Four of the five letters read in part, not written up (targets/vittoria1686/, in progress): 237 of 267 cipher words sure (88.8%; 2 Apr 1686 141 of 155, 13 Apr 1688 11 of 15, 4 Sept 1691 19 of 24, 16 Oct 1691 66 of 73). Key recovered from the ciphertext alone by WAINUT (PR #226, 3 Nov 2026): the alphabet numbered in fives with each neighbouring pair swapped (a 10, b 5 ... s 90, t 85), o usually 7, u/v 2, 104 che. Matthew Kennedy (PR #853, 21-23 Nov 2026) transcribed all four letters again with the lower half of c. 4r, added 3 = z and proposed values from context for 159, 109, 182 and 13. No decipherment of the time, no key sheet and no edition found. The writer dates from Santa Chiara in Naples.",
-   "open": "The fifth letter, cc. 24-25 of 18 Sept 1691, which the library does not mark as cipher: a short run and about 15 lines of numbers on cc. 24v-25r, found 24 Nov 2026; a sample reads with the same letter values; not transcribed. It has 109, 13, 159 and 182 again and groups not met in the other letters. On the four letters read in part: the values of 159 (per), 109 (Duca), 182 (V.E.) and 13, each from context on one or two uses; one three-letter group on c. 23r; one word under a blot on c. 21r; 23 words where the writer abbreviated or dropped letters.",
-   "as_of": "2026-11-24",
-   "repository": "estense"
   },
   {
    "id": 1571,
@@ -74486,7 +74416,7 @@
    "counted": true,
    "year": 1514,
    "date": "31 Aug 1514 (\"Vallodolit die ultima aug.ti M.D.XIIII\")",
-   "title": "Antonio Pucci, Leo X's nuncio to Portugal, at the court of Ferdinand the Catholic, Valladolid, 31 August 1514: about 13 lines of letter-and-figure cipher, bare",
+   "title": "Antonio Pucci, Leo X's nuncio to Portugal, at the court of Ferdinand the Catholic, Valladolid, 31 August 1514: about 13 lines of letter-and-figure cipher, printed deciphered in 1861 except the close",
    "correspondents": "Antonio Pucci (signed \"Ser.r Ant.s Puccius\"), papal nuncio on his way to Portugal -> Lorenzo de' Medici",
    "place": "Valladolid",
    "language": "Italian (letter/figure cipher between clear words)",
@@ -74495,12 +74425,15 @@
    "shelfmark": "Archivio di Stato di Firenze, Mediceo avanti il Principato, filza CXXXVII, doc. 644 (cc. 652-652 bis)",
    "folio_note": "c. 652r: clear report of the audience, then about 13 lines of cipher (lower-case letters b, d, f, g, l, m, x and digits, with numbers 22, 31, 42, 43, 92, 100 standing alone, probably code numbers) between clear words; the lower third clear (a horse from the Count of Almazán, falcons, music); c. 652v: closing and signature; c. 652 bis: address to Lorenzo de' Medici.",
    "cls": "B",
-   "status": "Bare (1272 px on the recto, 800 px on the verso; neighbours 643 and 645 are clear).",
+   "status": "No decipherment on the leaf (1272 px on the recto, 800 px on the verso; neighbours 643 and 645 are clear), but the cipher passage is printed deciphered in Desjardins, Négociations diplomatiques de la France avec la Toscane, II (1861), p. 665, no. XXIV, all but its close (found 24 Nov 2026, review of issue #923).",
+   "known": "Desjardins, Négociations diplomatiques de la France avec la Toscane, II (1861), p. 665, no. XXIV, prints the passage deciphered, from \"Questa Maestà, per la esclusione del parentado\" to \"con farlo capo e pagargli lo esercito\". By the print, 99 = Giuliano de' Medici, 100 = the Archduke, 92 the King, 31 the Emperor, 22 the Venetians. The cipher letters are the Italian alphabet moved one place, with ligature signs and number codes: Prabal's alphabet (prabal-rje, issue #923), checked on the image of c. 652r. The print was matched to this letter by the review of issue #923 (24 Nov 2026); it had already been noted in targets/corsi1513/PRIOR_ART.md (prior-art check of 10 Nov 2026 in Malcolm McBratney's corsi1513 contribution), which the vetting of 6 Nov did not see.",
+   "open": "Only the close is unprinted: from code 43 in line 12 of c. 652r to the end of line 14, before \"Partendomi sabato\" in clear. Prabal's reading of it (issue #923) is in fragments, and no reading of it is on record. Codes 97 and 42 stand outside the printed passage and get no value from it.",
+   "as_of": "2026-11-24",
    "why": "Another cipher of the 1514 Spanish embassy, apparently a different hand and table from Corsi's.",
    "importance": 2,
    "solvability": 3,
    "difficulty": 3,
-   "verify": "Read the signature and the month on c. 652v at full size; transcribe; compare with the Corsi table.",
+   "verify": "Transcribe lines 12-14 of c. 652r sign by sign and read the close with the alphabet moved one place and the code values of Desjardins II p. 665; collate lines 4-12 with the print.",
    "links": [
     {
      "href": "https://archiviodistatofirenze.cultura.gov.it/map/ricerca/ricerca-su-filza/?f=137&d=644&c=",
@@ -74528,7 +74461,7 @@
    "access_note": "scans public on the ASF MAP site, no login, curl works: /map/ricerca/ricerca-su-filza/?f=<filza>&d=<doc> and IIIF /iipsrv/iipsrv.fcgi?IIIF=/data/iip-data/asfi/mediceo_avanti_principato/00100137/A000NNNN.ptif (about 1272 px max); image id = 132517 + position - 1 for filza CXXXVII",
    "seen": "image",
    "needs_archive_scan": "no",
-   "prior_art": "open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document or on the writer; no lead or catalogue entry names the writer; DECODE dumps in the repo have no ASF MAP CXXXVII record except leads 2320/2321; Tomokiyo, Lasry and the printed editions not searched in this run.",
+   "prior_art": "Printed except the close: Desjardins, Négociations diplomatiques II (1861), p. 665, no. XXIV (review of issue #923, 24 Nov 2026; already in targets/corsi1513/PRIOR_ART.md, 10 Nov 2026). Earlier: open as far as checked (6 Nov 2026): known.py finds nothing on the filza and document or on the writer; no lead or catalogue entry names the writer; DECODE dumps in the repo have no ASF MAP CXXXVII record except leads 2320/2321; Tomokiyo, Lasry and the printed editions not searched in this run.",
    "ark": "",
    "scored": "vetted",
    "vetting": {
@@ -74544,7 +74477,7 @@
      "decode": "known.py on \"CXXXVII, doc. 644\", \"Pucci\", \"Almazan\": only this lead and its sweep (other Pucci hits are Vespucci rows); no DECODE record.",
      "tomokiyo": "cryptiana italian.htm, crypto.htm and spanish.htm fetched 6 Nov 2026 and grepped for Pucci, Portugal, 1514: no hit; the only Florentine pages are Gabbrielli 1425, Siena 1478 and Guicciardini ca. 1590-93 (a later family), and the Spanish page has Ferdinand-Vich 1515, not this.",
      "lasry": "Local GL.htm (targets/gramont1529) grepped for Pucci, Medici, 1514: no hit (only Catherine de Medicis items); no Lasry paper on this correspondence.",
-     "edition": "No edition of Antonio Pucci's 1514 nunciature letters found: L'Estasi di Santa Cecilia di Raffaello (Bologna 1983) cites his letters to Lorenzo and Goro Gheri from Portugal (1514) for art history; Archivio storico italiano (1880) mentions him as nuncio in Lisbon. Neither prints this letter or its cipher.",
+     "edition": "No edition of Antonio Pucci's 1514 nunciature letters found: L'Estasi di Santa Cecilia di Raffaello (Bologna 1983) cites his letters to Lorenzo and Goro Gheri from Portugal (1514) for art history; Archivio storico italiano (1880) mentions him as nuncio in Lisbon. Neither prints this letter or its cipher. Corrected 24 Nov 2026: the letter is printed, its cipher passage deciphered up to \"pagargli lo esercito\", in Desjardins, Négociations diplomatiques de la France avec la Toscane, II (1861), p. 665, no. XXIV (vetting.note).",
      "literature": "Agenti presso la Santa Sede (2021) and Faenza (2003) date his Lisbon mission 1513-14; no study deciphers his letters."
     },
     "searches": [
@@ -74563,7 +74496,8 @@
     ],
     "key_check": "No key tried; a different table from Corsi's (code numbers standing alone). No reading on record.",
     "duplicates": "known.py on \"CXXXVII, doc. 644\", \"Pucci\", \"Almazan\": no catalogue entry, other lead or target.",
-    "verdict": "open"
+    "verdict": "open",
+    "note": "24 Nov 2026, review of issue #923 (AI agent, for the maintainers; not a person): narrowed, not closed. This vetting of 6 Nov missed the print: Desjardins, Négociations diplomatiques de la France avec la Toscane, II (1861), p. 665, no. XXIV, prints the cipher passage deciphered, from \"Questa Maestà, per la esclusione del parentado\" to \"con farlo capo e pagargli lo esercito\" (read in the archive.org OCR text, gri_33125010469852, not on the page image). targets/corsi1513/PRIOR_ART.md had noted it on 10 Nov, and \"No reading on record\" in key_check is wrong for that part. The alphabet (Prabal, prabal-rje, issue #923) was checked on the image of c. 652r. The entry stays open for the unprinted close, from code 43 in line 12 to the end of line 14. For later vettings: grep targets/*/PRIOR_ART.md for the document before promoting a lead."
    },
    "repository": "asf"
   },

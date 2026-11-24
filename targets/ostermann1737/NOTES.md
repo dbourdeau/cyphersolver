@@ -1,6 +1,6 @@
 # ostermann1737: A. I. Ostermann in the Empress's name to I. P. Kalushkin, Russian resident in Persia, 17 April 1737 (O.S.), GAAO Astrakhan f. 394 op. 1 dop. d. 11 l. 21 (catalogue 1247)
 
-Status: in progress. Contributed by pull request, not yet written up: the key was recovered from cipher lines 1-16 alone, frozen, and used for one decode of all 20 cipher lines (strict judge 760 of 770 letters, 98.7%; held-out lines 17-20 147 of 148, 99.3%). By the README read bar, counted in words, 140 of 152 words read as sense (0.921) with the one-letter slips counted as holes, so the target is filed read in part. The page, ledgers, DECODE queue and catalogue edit are left to the maintainers.
+Status: in progress. Contributed by pull request, not yet written up: the key was recovered from cipher lines 1-16 alone, frozen, and used for one decode of all 20 cipher lines (strict judge 760 of 770 letters, 98.7%; held-out lines 17-20 147 of 148, 99.3%). By the README read bar, counted in words, 140 of 152 words read as sense (0.921) with the one-letter slips counted as holes, so the target is filed read in part. The page, ledgers, DECODE queue and catalogue edit are left to the maintainers (24 Nov 2026: the DECODE queue entry, a held skip, and the catalogue 1247 edit are done; the page and ledgers wait for the write-up).
 
 Contributed by Malcolm McBratney (Brisbane), working with Claude (Anthropic): Claude Fable 5.2 the solver session, Claude Opus 5.5 the strict judge and the assembly of this folder.
 
@@ -137,6 +137,26 @@ Not checked: the Astrakhan archive's virtual exhibition page and caption (unreac
 - Extent: **20 cipher lines, not "about 17"** (vetting.seen.extent and .cipher). Count: 787 sign tokens (33 labels), of which 770 letter signs and 17 dividers and flourishes, giving 770 decoded letters; one illegible sign.
 - The text runs on past l. 21 ("тебе всячески ..."): the next leaf of d. 11 holds the rest.
 - Status: key recovered from the ciphertext alone, read in part, in `targets/ostermann1737/`.
+
+Edited by the maintainers at the integration, 24 Nov 2026: catalogue 1247 now gives 20 cipher lines and 770 letter signs, the known and open pieces and a link to this folder. The entry stays in the catalogue until the write-up.
+
+## Check by the project (PR #935, 24 Nov 2026)
+
+Checked by a model session for the project (an AI agent, not a person) on the pull request as filed (head 37ddd5dbbe). No person has checked the transcription, the decode, the reading or the translation. Class, counts and credits are unchanged.
+
+- Decode: a decoder written here (label to value from `KEY.tsv`, divider and flourish dropped, groups as transcribed) gives the text of `DECODE.txt` and `judge/decode.txt` on 20 of 20 lines: 787 sign tokens = 770 letter signs + 17 marks (S26 12, S33 5); 33 labels; 7 doubts; 1 blot. S28 (от) has 2 uses, both in training lines; S29 1; S32 2 (1 training, 1 held-out).
+- Judge figures re-added from `judge/judge.tsv`: training 613 of 622, held-out 147 of 148, all 760 of 770; per line as in "Figures" above.
+- Words recounted from `reading.md`: 152 words, 9 slip words marked (?) and 3 with a supplied letter: 140 of 152 (0.921), 149 of 152 with the slips. The reading's letters, the supplied letters taken out, equal the decode's letters exactly (only capitals differ): no unmarked departure.
+- Read as sentences: coherent chancery Russian from end to end, breaking off at line 20; the translation follows it. Read in part by the README bar. The `reading_review` signed by the contributor's assembling session was replaced by the project's (grade B, 24 Nov 2026): the review is recorded by a reader who is not the author.
+- Hashes: `FREEZE_TX.txt` and `FREEZE_KEY.txt` match their files; 25 of 25 committed entries of `stamps/MANIFEST.sha256` match; the manifest hashes to 5f924682..., as `STAMP_LOG.txt` says, and both RFC 3161 tokens carry that digest (11:01:35Z).
+- Order of events: `FREEZE_KEY.txt` line 6 lists the sha256 of `DECODE.txt`, so that file was written after the decode existed and cannot show that the key was fixed first. Everything came in one commit; the order (transcription freeze 10:46Z, key freeze 10:55Z) rests on the contributor's record.
+- Image: the Commons thumbnail (md5 992c3531..., as `FETCH_LOG.txt`) compared with the transcription at four places, line 1 whole, the right halves of lines 2 and 3 and the left of line 17 (with S27 я in "констянтино"): all agree. Counted on the full leaf: 20 cipher lines from "Въ цѣлости" on, not "about 17".
+- Three minims: at two of the о-for-е places (подтв-о-рждаютца, line 2; сп-о-рсицкимъ, line 3) the thumbnail shows a clear three-minim sign (S03), so at this resolution they are as written, not misread here. Whether the original has two minims there needs a better image.
+- The marks above the line (a model's reading of the thumbnail, not checked by a person): above the end of line 8 an a-shaped sign, the shape of S17 (л); above the end of line 15 the y-shaped S08 (т), as the gap line below suggests. Letters written above the line at line ends are normal in this hand (the clear opening has them). Read as signs they give писал and разведыват[ь] from the key, so the blocker "illegible" given for these two marks under Remaining gaps is in doubt; a second pass that reads them as signs is the next step. The frozen transcription is unchanged.
+- Better image: the Commons original is 714 x 1021 (Commons API, and `FETCH_LOG.txt` line 3), one pixel more than the 713 x 1020 thumbnail that was read, so it settles nothing. The archive's own PNG has a Wayback copy (snapshot of 2 Aug 2021, `web.archive.org/web/20210802062718/https://archive.astrobl.ru/sites/archive.astrobl.ru/files/300-let/f-394-op-1-dop-d-11-l-21.png`, from the availability API). The project could not download it (the direct host reset the connection; the Wayback fetch gave an empty reply), so it is not shown to be larger.
+- Method stays "key recovered from ciphertext-only": annealing with the solver's own Russian model; the one hand edit (S28 = от) is disclosed and comes from two training contexts; no crib or outside plaintext. The statistical validation cannot run (`lang/` has no Russian model), and the shuffle control could not be re-run here (the solver's model and corpus pages are not committed).
+- Prior art, the project's pass: Sbornik IRIO vol. 114 (Cabinet of Ministers papers, 1736; archive.org full text) grepped, no Kalushkin; the 1737 volume was not found online in a quick search. Nothing contradicts "no earlier key or reading found".
+- Not checked: the 7 doubts and the blot sign by sign, the four other о-for-е places, the archive's PNG, the shuffle control and the annealing, the times in the freeze files, the names and setting against a source.
 
 ## Remaining gaps
 
