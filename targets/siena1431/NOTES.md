@@ -269,3 +269,10 @@ Brice Dudout read 12 places of R4812 P2 blind (9 targets, 3 controls, 3/3). The 
 The places fall on letters already read or inside runs that stay unread. So the understood letters stay at 1,815 of
 2,279 (79.6%) and no word changes. A relabelled copy of the transcription and reading is in the folder. Next: a pass
 over the 162 "t" places, starting inside the unread runs.
+
+## 24 Nov 2026 - no. 24: the merged "c" label, blind sheet (Brice Dudout, with Claude), `dudout/sign_check_2411b/`
+Our transcription uses one label "c" (and partly "e") for two signs of R4755: the plain open c (h) and the c with a
+tongue (n). Brice Dudout read 11 places of R4812 P2 blind (8 targets, 3 controls, 3/3). He asked whether the two are
+one form; both merges break sure words (all n: 26, all h: 100), and the image keeps them apart, so two signs are kept.
+3 plain c (one gives "par che", one falls in an unread run, one would give "vegho": "vegno" kept, its n now probable)
+and 5 tongued c on letters already read. Understood letters stay at 1,815 of 2,279 (79.6%); no word changes.
