@@ -19,9 +19,9 @@
    "cleartext_in_document": "separate passages",
    "plaintext": {
     "location": [
-     "none"
+     "separate folio"
     ],
-    "source": "Manning III (1925) doc. 1134 p. 2062 prints passage A as '[Here follow six lines in cipher, without decodification.]'; passages B and C are not printed."
+    "source": "The State Department's period decipherment of all six coded parts of the Notes, M31 roll 27 frames 0110 (right page, parts 1-4) and 0111 (parts 4-6), writer and date unknown; found by Andrew Beling on 22 Nov 2026, transcribed in beling/period_decipherment.txt by one AI reader with no second reader. Manning III (1925) doc. 1134 p. 2062 prints passage A as '[Here follow six lines in cipher, without decodification.]'; passages B and C are not printed."
    },
    "length": {
     "tokens": 355,
@@ -79,9 +79,9 @@
  },
  "conditions": {
   "prior_solution": {
-   "exists": "unpublished",
-   "where": "Manning III (1925) doc. 1134 p. 2062 prints passage A undecoded and omits B and C; one web search found no decipherment. Not checked: another copy, a separate State Department file, the Clay Papers. A pencil note 'Decyphered' at the foot of MS p. 4 (frame 0114) suggests a decipherment was made in the Department; it was not found. A parallel independent reading of all the cipher (pp. 1-6, 14-15, 17-18) by Brice Dudout was published the same day as this one (Europe chiffrée, 27 Oct 2026); neither used the other.",
-   "found": "not found",
+   "exists": "in archive",
+   "where": "Found on 22 Nov 2026 by Andrew Beling, after the readings here were made: the State Department's period decipherment of all six coded parts, M31 roll 27 frames 0110-0111, just before the Notes on the same reel. No reading file was made from it or changed from it. By the owner's decision of 23 Nov 2026 pp. 1-6 are classed as read from existing decipherment, pp. 14-18 stay read with known key. Earlier record: Manning III (1925) doc. 1134 p. 2062 prints passage A undecoded and omits B and C; one web search found no decipherment. Not checked: another copy, a separate State Department file, the Clay Papers. A pencil note 'Decyphered' at the foot of MS p. 4 (frame 0114) suggests a decipherment was made in the Department; it was not found until 22 Nov 2026. A parallel independent reading of all the cipher (pp. 1-6, 14-15, 17-18) by Brice Dudout was published the same day as this one (Europe chiffrée, 27 Oct 2026); neither used the other.",
+   "found": "after reading",
    "used": false
   },
   "inputs": [
@@ -99,7 +99,7 @@
   ],
   "sessions": 1,
   "first_date": "2026-10-27",
-  "last_date": "2026-11-22"
+  "last_date": "2026-11-24"
  },
  "solution": [
   {
@@ -177,18 +177,38 @@
    "kind": "verification",
    "what": "Andrew Beling contribution (beling/): the State Department's period decipherment of all six coded parts found on M31 roll 27 frames 0110-0111 and transcribed; it settles 70 necessary (\"ity\" above) and 125 contrary. Three transcriptions compared group by group (with Dudout's files 1,113 in both, 1,086 agree, 27 differ; WAINUT's A 74/74, B-C 278/281); a code line missing from dudout/texts/p18 found. The 27 differing groups read blind by an AI model reader with no candidates given; the 11 it was unsure of went to a second blind reader that saw the whole line (crops, positions and readings in beling/film_check): Dudout's digit at 18, Beling's at 8, 1 undecided; ten control readings correct. Of the 8, 628 and 1564 rest on one model reader and 845 and 880 are ambiguous in the first digit (345 or 845, 380 or 880). The transcription of the period decipherment has one reader. No reading changed.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Integration of PR #900 (owner's decision of 23 Nov 2026): pp. 1-6 made their own part in outcome.parts, read from existing decipherment (the period decipherment on frames 0110-0111; the clerk's corrections of his own key values noted; its transcription has one AI reader and no second reader); pp. 14-18 stay read with known key. The not-attempted gap for pp. 1-6 removed. The 39 crops of beling/film_check/crops removed from the repository with the contributor's agreement; positions.tsv, readings.tsv (pixel boxes) and the frame links kept. The eight value edits to dudout/texts that the film check supports (628, 458, 845, 1081, 1564, 1257, 880, 1388) are listed in NOTES as proposed and not applied: 628 and 1564 rest on one model reader, 845 and 880 are ambiguous in the first digit, no person has looked. No reading file changed; no page re-measured; frames not opened in this pass.",
+   "result": "worked"
   }
  ],
  "outcome": {
   "class": "read in part",
   "key": "partial",
   "method": "read with known key",
-  "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches, applied unchanged; context words marked [?], eight groups open.",
+  "method_basis": "The JQA code table (../jqa/code_table.tsv), rebuilt in targets/jqa for JQA's 1811-1812 St Petersburg despatches, applied unchanged; context words marked [?], eight groups open. This is the primary part (pp. 14-18, catalogue 638); pp. 1-6 are a separate part, see outcome.parts.",
+  "parts": [
+   {
+    "label": "Notes of a conversation with Mr Zea, MS pp. 14-18 (frames 0119-0121; passages A, B, C; catalogue 638)",
+    "method": "read with known key",
+    "extent": "partial",
+    "basis": "The JQA code table applied unchanged (WAINUT; Brice Dudout's parallel reading of pp. 17-18 with the same table and an overlay). Eight groups open in the reading, read share 0.904."
+   },
+   {
+    "label": "Notes of a conversation with Mr Zea, MS pp. 1-6 (frames 0112-0115)",
+    "method": "read from existing decipherment",
+    "extent": "partial",
+    "basis": "Owner's decision of 23 Nov 2026 (PR #900). The State Department's period decipherment of these passages is on M31 roll 27 frames 0110-0111 (parts 1-4), found by Andrew Beling on 22 Nov 2026. The clerk's errors are noted: he worked from the key and corrected himself at 625 (mation, to many), 1593 (once, to understood), 1596 (ongue, to of), 1525 (agent, to personal), 483 (until, to -ing), 797 (done, to Tune, faint). Its transcription (beling/period_decipherment.txt) has one AI reader and no second reader; a few words are uncertain and some line ends of frame 0111 are lost at the binding. The reading files are Brice Dudout's (dudout/texts, made with the JQA table before the decipherment was found); they agree with it in sense and were not changed. Extent partial because pp. 1, 2, 3 and 6 stay under the 95% bar on the strict count."
+   }
+  ],
   "contribution": [
    "transcription"
   ],
   "fraction_read_method": "measured",
-  "fraction_read_source": "everett1825_reading.md: read_share = 1 - hole rate of docs/_check_reading.py --file (0.096); 23 holes in about 240 words. Scope: the three passages on frames 0119-0121 (MS pp. 14-18) only; the coded passages on MS pp. 1-6 (frames 0112-0115) are not transcribed (see gaps).",
+  "fraction_read_source": "everett1825_reading.md: read_share = 1 - hole rate of docs/_check_reading.py --file (0.096); 23 holes in about 240 words. Scope: the three passages on frames 0119-0121 (MS pp. 14-18) only; the coded passages on MS pp. 1-6 (frames 0112-0115) are a separate part (outcome.parts) with their own read_share on each page in outcome.texts.",
   "fraction_read": 0.904,
   "codes_open": {
    "open": 8,
@@ -239,6 +259,11 @@
     "note": "the eight enciphered pages of the Notes (pp. 1-6 on images 0112-0115, pp. 17-18): 1111 of 1127 groups read with the jqa table and a justified overlay (dudout/)"
    },
    {
+    "who": "contemporary",
+    "role": "key or decipherment used",
+    "note": "the State Department's period decipherment of the six coded parts of the Notes, NARA M31 roll 27 frames 0110-0111 (writer and date unknown); the basis on which pp. 1-6 are classed as read from existing decipherment (owner, 23 Nov 2026)"
+   },
+   {
     "who": "ajbeling",
     "role": "verification",
     "date": "2026-11-22",
@@ -252,9 +277,9 @@
     "detail": "no value in the table; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done). Values on the State Department code sheet (../morris1813/beling/key/): 125 contrary, 126 convey, 211 pret, 258 spi, 850 dispose, 917 os, 1354 br, 1512 acy; 125 contrary also in the period decipherment (22 Nov 2026); not applied to the readings"
    },
    {
-    "item": "coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups)",
-    "blocker": "not-attempted",
-    "detail": "found on the review check of frames 0112-0118: pp. 1-3 carry short coded runs, pp. 4-5 are wholly in code and p. 6 opens with nine coded lines; transcribed and read by Brice Dudout (dudout/) and transcribed again in beling/ (22 Nov 2026). The pencil 'Decyphered' at the foot of p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026)."
+    "item": "eight groups of dudout/texts where the film check supports another digit (628, 458, 845 on p. 1; 1081 on p. 2; 1564 on p. 3; 1257 on p. 5; 880 on p. 6; 1388 on p. 18), one place undecided (p. 5 line 3, 1385 or 1345), and the code line missing from his p. 18 files",
+    "blocker": "illegible",
+    "detail": "proposed, not applied: the film was read by AI model readers only; 628 and 1564 rest on one reader, 845 and 880 are ambiguous in the first digit; a person must look at frames 0112-0115 and 0121 before a transcription file is edited. Pp. 1, 2, 3 and 6 stay read in part on the strict count until then."
    }
   ],
   "texts": [
@@ -281,6 +306,7 @@
     "transcription": "dudout/texts/p01_0112_transcription.txt",
     "decryption": "dudout/texts/p01_0112_decryption.txt",
     "reading": "dudout/texts/p01_0112_reading.md",
+    "contemporary": "beling/period_decipherment.txt",
     "language": "en",
     "state": "read in part",
     "summary": "Zea’s frankness may be natural to him, but he told Everett many things he could not believe himself – dissimulation, which public men must practise to some extent.",
@@ -299,6 +325,7 @@
     "transcription": "dudout/texts/p02_0113_transcription.txt",
     "decryption": "dudout/texts/p02_0113_decryption.txt",
     "reading": "dudout/texts/p02_0113_reading.md",
+    "contemporary": "beling/period_decipherment.txt",
     "language": "en",
     "state": "read in part",
     "summary": "Zea is said to have entered the cabinet through Ugarte, himself a creature of Russia; he soon broke with his patron and had him removed…",
@@ -317,6 +344,7 @@
     "transcription": "dudout/texts/p03_0113_transcription.txt",
     "decryption": "dudout/texts/p03_0113_decryption.txt",
     "reading": "dudout/texts/p03_0113_reading.md",
+    "contemporary": "beling/period_decipherment.txt",
     "language": "en",
     "state": "read in part",
     "summary": "… on a mission to Turin, though Zea himself is thought to be committed to Russian policy. Portrait: prepossessing, rather above middle height, robust but inelegant, bald, clear complexion, good teeth – rare in Spain, where most men, the King first, ruin theirs by smoking.",
@@ -335,6 +363,7 @@
     "transcription": "dudout/texts/p04_0114_transcription.txt",
     "decryption": "dudout/texts/p04_0114_decryption.txt",
     "reading": "dudout/texts/p04_0114_reading.md",
+    "contemporary": "beling/period_decipherment.txt",
     "language": "en",
     "state": "read",
     "summary": "He rolls his eyes so as to show the whites; tame face in silence, warm and frank in speech; a polished gentleman, fluent in French, at ease in English, less Spanish in air than any Spaniard Everett has met; liberal in conversation and abreast of the age, so that any illiberal notion he voices…",
@@ -353,6 +382,7 @@
     "transcription": "dudout/texts/p05_0114_transcription.txt",
     "decryption": "dudout/texts/p05_0114_decryption.txt",
     "reading": "dudout/texts/p05_0114_reading.md",
+    "contemporary": "beling/period_decipherment.txt",
     "language": "en",
     "state": "read",
     "summary": "… must be held for a purpose, against his real principles. Said to share the anticlerical prejudices of liberals; works days and several nights a week, rare among the King’s servants; a remarkable man among the prime ministers of Spain and Europe – if he is not soon overthrown…",
@@ -371,6 +401,7 @@
     "transcription": "dudout/texts/p06_0115_transcription.txt",
     "decryption": "dudout/texts/p06_0115_decryption.txt",
     "reading": "dudout/texts/p06_0115_reading.md",
+    "contemporary": "beling/period_decipherment.txt",
     "language": "en",
     "state": "read in part",
     "summary": "… by the strong rival party, he will vanish; if he lasts some years, his ministry will mark an epoch.",
@@ -421,6 +452,6 @@
    }
   ],
   "key_file": "../jqa/code_table.tsv",
-  "notes": "Contributed by WAINUT (catalogue 638). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md."
+  "notes": "Contributed by WAINUT (catalogue 638). Same code as ../jqa; nothing there is changed. Proposed table changes (not applied) are in NOTES.md. 24 Nov 2026: two parts (outcome.parts); the eight value edits to dudout/texts are proposed in NOTES, not applied."
  }
 }

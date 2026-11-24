@@ -9,7 +9,9 @@ reversal and frame 0039; Andrew Beling, PR #200 and PR #415: the key sheet and t
 added at the integration of 12 Nov 2026. The state of each text, the counts and the corrections are in
 "Integration check (12 Nov 2026)" below; that section is the latest word where it differs from the older ones.
 The word counts and the state of each text were changed once more on 14 Nov 2026, when the sign 370 was taken as
-punctuation: the figures in force are in "The sign 370 on the image (14 Nov 2026)".
+punctuation: the figures in force are in "The sign 370 on the image (14 Nov 2026)", as amended on 22 Nov 2026 (three
+one-digit slips seen on the film: 2,609 words, 62 holes, 0.976) and on 24 Nov 2026 (No. 17 read under the short-text
+floor; "Integration of PR #901" at the end of that section).
 Sections 1 to 6 are the record of the first contribution (27 Oct 2026), which used the table rebuilt in
 [`../jqa`](../jqa/NOTES.md) and read frame 0039 at 0.678; the reading of frame 0039 was replaced on 31 Oct 2026
 (PR #200, 0.965 of the words).
@@ -519,6 +521,25 @@ slips, not misreadings here, and the one-digit rule applies: `sour{+ce}`, `vis{+
 Recounted with `word_share.py`: No. 13 72 of 72 (1.000), No. 24 128 of 130 (0.985); the thirteen texts 2,609 words,
 62 holes, **0.976** (the twelve letters 2,259 words and 52 holes, frame 0039 by hand 350 and 10, unchanged). The class
 does not change: No. 17 stays at 0.941 and the target stays read in part.
+
+**Integration of PR #901 (maintainers, 24 Nov 2026; owner's decision of 23 Nov 2026).**
+
+- *No. 17 is read under the short-text floor.* It has 34 cipher words and 2 holes ([?present], [?prudent]), 0.941.
+  README Conventions (19 Nov 2026): a text of fewer than 40 cipher words is read when its holes are at most 5% or at
+  most 2 words. Recorded in `profile.json` on its `outcome.texts` entry (`floor_used`, `cipher_words` 34, `holes` 2).
+  The sentences above that say No. 17 "stays read in part" are the state before this decision. The two words stay
+  marked in the reading and stay in the gaps.
+- *The target stays read in part.* Open: which mark 370 is, and the group 575.1060 in No. 19 (both in Remaining gaps).
+  Frame 0039 also stays read in part, as a fragment reread with the clear copies in view.
+- *Figures in force:* 2,609 coded words, 62 holes, 0.976. The 62 are 5 unread or unsettled groups and 57 words guessed
+  or with letters supplied (24 in the PR #200 letters, 23 in the other seven, 10 on frame 0039).
+- *Our own look at the three places.* In round 4 of the review of PR #901 an AI agent for the maintainers (not a
+  person) fetched NARA M31 roll 14 frames 0084, 0088, 0196 and 0220 and cropped them itself: 510 and 146 are on
+  frames 0084 and 0088 as written, 593 is clear on 0220 and less clear on the dark frame 0196. Frame 0205 was not
+  opened, and the rest of the texts was not re-read. This line is added to the `reading_review` notes of Nos. 13 and
+  24, where the sentence of 22 Nov is now marked as the contributor's.
+- *Page and ledgers.* `docs/morris1813.html` re-read against this file and the profile and corrected (No. 17, the
+  hole counts of section 07, the credit for PR #901). The README row now reads 97.6%.
 
 **Credit.** The observation is Brice Dudout's (PR #570). The image check, the count and the change are the
 project's. Andrew Beling's transcription of the sheet and WAINUT's block reversal are as before.

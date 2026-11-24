@@ -1,6 +1,6 @@
 # Alexander H. Everett to Henry Clay, Madrid, 25 Sep 1825: three coded passages in the JQA code
 
-Status: in progress. Next step: compare with Brice Dudout's reading of all the cipher, pp. 1-6 included (below; his pull request will carry his transcription), rather than transcribing frames 0112-0115 afresh; then the retry step on the sibling despatches.
+Status: in progress. Two parts since 24 Nov 2026 (owner's decision of 23 Nov): MS pp. 14-18 read with known key (read in part), MS pp. 1-6 read from existing decipherment (the period decipherment on frames 0110-0111). Next steps: a person's look at the film for the eight proposed value edits (below), the code-sheet values for the eight open groups, the retry step on the sibling despatches, then the write-up.
 Contributed by WAINUT (27 Oct 2026). Read in part with the JQA code table (`../jqa/code_table.tsv`, applied
 unchanged): 347 of 355 groups have a table value; 8 groups are open and some words rest on context only. The site
 page and the ledger rows are left to the maintainer.
@@ -42,9 +42,10 @@ Madrid legation in 1823-1825.
   a check of frames 0112-0118 made after the review shows why: the same Notes (endorsed as the duplicate sent with
   despatch No. 7 of 25 Sept 1825) carry further coded passages on MS pp. 1-6 (frames 0112-0115): short runs on
   pp. 1-3, pp. 4-5 wholly in code, and nine coded lines opening p. 6; about 80 lines, very roughly 900 groups.
-  Pp. 7-13 (frames 0115-0118) are clear. Those passages are **not transcribed** here (see Remaining gaps). A pencil
-  "Decyphered" at the foot of p. 4 suggests the Department deciphered them; no decipherment was found. There is no
-  interlinear decipherment on pp. 14-18. Marks: a lozenge after a group = -s (plural or possessive), like the superscript o in `../jqa`; a caret
+  Pp. 7-13 (frames 0115-0118) are clear. Those passages are not in this file: they are transcribed in `dudout/texts`
+  and in `beling/transcription_six_sections.txt`. A pencil "Decyphered" at the foot of p. 4 suggests the Department
+  deciphered them; the decipherment was found on 22 Nov 2026 on frames 0110-0111 (section of 22 Nov below). There is
+  no interlinear decipherment on pp. 14-18. Marks: a lozenge after a group = -s (plural or possessive), like the superscript o in `../jqa`; a caret
   after it = -ed; a cross under 1535 = all (al, all, als by the next letter, as in `../jqa`) and under 1167 = well; a
   tick under a group truncates it (108 comply -> compl in ac-compl-ish; 563 time -> tim in le-gi-tim-).
 - **Decryption** (`everett1825_decryption.txt`, `python decode.py everett1825_transcription.txt`): 347 of 355 groups
@@ -132,7 +133,10 @@ compared group by group. Catalogue 638 was removed on 27 Oct 2026 as read.
 ## Remaining gaps
 
 - groups 125, 126, 211, 258, 850, 917, 1354, 1512 and the context-only words listed above - blocker: open-codes; Everett's other cipher despatches of 1825-1826 on reel 27 are the next source of occurrences (retry not done). Values on the State Department code sheet (`../morris1813/beling/key/`); 125 contrary also in the period decipherment (22 Nov 2026); not applied to the readings.
-- the coded passages on MS pp. 1-6 of the same Notes (frames 0112-0115, about 80 lines, very roughly 900 groups) - blocker: not-attempted; found on the review check, transcribed and read by Brice Dudout (`dudout/`) and transcribed again in `beling/` (22 Nov 2026); the pencil "Decyphered" on p. 4 points to the period decipherment found on frames 0110-0111 (22 Nov 2026, below).
+- eight groups of `dudout/texts` where the film check supports another digit (628, 458, 845, 1081, 1564, 1257, 880, 1388), one place undecided (p. 5 line 3, 1385 or 1345) and the code line missing from his p. 18 files - blocker: illegible; proposed, not applied (section of 24 Nov below): the film was read by AI model readers only, 628 and 1564 by one reader, 845 and 880 ambiguous in the first digit; a person must look at the frames before a transcription file is edited
+
+The coded passages on MS pp. 1-6 are no longer a gap (24 Nov 2026): they are their own part, read from existing
+decipherment, with Brice Dudout's reading (`dudout/`) and the period decipherment (`beling/period_decipherment.txt`).
 
 ## Escalation
 
@@ -212,3 +216,42 @@ A verification and a source find, not a new reading; details and files in `belin
   permission. No conditions came with the images and nothing was signed. Nobody at NARA was asked about AI
   readers; Andrew Beling decided to use the frames with them on this basis.
 
+## 24 Nov 2026: integration of PR #900 (maintainers; owner's decision of 23 Nov 2026)
+
+- **Two parts** (`outcome.parts` in `profile.json`). MS pp. 14-18 (passages A, B, C, catalogue 638) stay "read with
+  known key": the JQA table applied unchanged. MS pp. 1-6 become their own part, "read from existing decipherment":
+  the State Department's decipherment of those passages is on frames 0110-0111, parts 1-4. `outcome.method` stays
+  "read with known key" as the primary part. The reading files of pp. 1-6 are Brice Dudout's, made with the table
+  before the decipherment was found; none was changed.
+- **The clerk's errors, noted.** The period decipherer worked from the key and corrected himself: 625 mation to
+  many, 1593 once to understood, 1596 ongue to of, 1525 agent to personal, 483 until to -ing, 797 done to "Tune"
+  (faint), 908 or with "Ton" above (`beling/README.md`). At these places he and Dudout agree against the key.
+- **Readers.** The transcription of the period decipherment has one AI reader and no second reader; a few words are
+  uncertain and some line ends of frame 0111 are lost at the binding. Our review opened frame 0111 and saw the
+  decipherment there ("5 part", "6 part", "(ity)" over "necessary"); frame 0110, which carries parts 1-4, was not
+  opened by us.
+- **The gap `not-attempted` for pp. 1-6 is removed** from Remaining gaps and from `outcome.gaps`.
+- **Crops removed.** The 39 crops of `beling/film_check/crops/` were taken out of the repository (Andrew Beling
+  agreed). `beling/film_check/positions.tsv` and `readings.tsv` keep the pixel box of every place and the frame
+  links, so each crop can be cut again from the NARA frame.
+- **Eight value edits proposed, not applied.** The film check supports another digit than `dudout/texts` at eight
+  places. No file under `dudout/texts` was edited, and `everett1825_transcription.txt` was not edited either.
+
+  | Place (Dudout's file) | His group and value | Group the film check supports | Its value on the code sheet | Word | Support |
+  |---|---|---|---|---|---|
+  | p. 1 line 4, 7th | 623 `[me]` | 628 | me | to me | one model reader, sure |
+  | p. 1 line 5, 10th | 433 `[ve]` | 458 | ve | believe | reader 1 unsure of the middle digit, reader 2 fairly sure |
+  | p. 1 line 6, 8th | 843 `{di}` | 845 | dis | dissimulation | first digit ambiguous (345 or 845); 843 excluded either way |
+  | p. 2 line 3, 9th | 1031 `[self]` | 1081 | self | himself | both readers 1081 |
+  | p. 3 line 5, 6th | 1364, open | 1564 | observe | as I observe | one model reader, sure |
+  | p. 5 line 17, 1st | 1057 `[cri]` | 1257 | hath | describing | both readers 1257, second digit not sure; neither group gives cri, so the word stays from sense |
+  | p. 6 line 7, 7th | 330 `[li]` | 880 | li | inclined | first digit ambiguous (380 or 880); 330 excluded either way |
+  | p. 18 line 9, 4th | 1383 than | 1388 | then | than | both readers 1388; a whole-word group, so the one-digit rule does not make it read |
+
+  One more place is undecided (p. 5 line 3: 1385 or 1345; the sense and the period decipherment want 1385). The code
+  line `1440 1082+D 569 1310 1541 480 262 1599 1384 1385` ("it seems to be also understood that the") is missing from
+  his p. 18 transcription and decryption files, though his reading has the words; it is not restored here. If the
+  edits are accepted after a person has looked at the film, six words move from "from sense" or open to "read from
+  the key" (me, ve, dis, self, li, observe), pp. 1, 2, 3 and 6 are measured again and those pages are reviewed again.
+- **Not done here:** no frame opened in this pass, no page re-measured, no reading_review added. There is no site
+  page and no README results row for this target yet; both wait for the write-up.

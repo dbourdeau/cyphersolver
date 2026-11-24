@@ -145,7 +145,7 @@
   },
   {
    "id": "1814-06-21_No17",
-   "read": "read in part",
+   "read": "read",
    "shelfmark": "NARA RG 59, Despatches from US Ministers to Spain vol. 12, microfilm M31 roll 14 (naId 188606645), frames 0107-0111 ('No 17 duplicate'): nine pages in clear, the date in code on 0107, three coded lines and the coded signature on 0111",
    "date": "21 June 1814",
    "year": 1814,
@@ -946,6 +946,12 @@
    ],
    "what": "The three one-digit places of the claims review of 14 Nov 2026 looked at on the film (Andrew Beling, with AI agents; beling/slips_2026-11-22/README.md). No. 13 510 (sour-ce wants 516 ce) and 146 (vis-it wants 140 it) on frames 0084 and 0088 (left leaf); No. 24 593 (Sir wants 598 si before 813 R) on frames 0220, 0205 and 0196. First reading by the coordinating agent, with the comparison figures on the same line; second reading blind, by a helper agent given only the crops and the question what number is written: 146 and 146, 593 three times; on the two tight crops of 510 it read 576 and 570 (the middle stroke taken for a 7), and a second blind helper given the line strips read 510 on both copies (high confidence, the last figure matching the 0s of 1190 and 1060). So 510 rests on one blind reading, of the line strips. The manuscript has 510, 146 and 593 on every copy: the writer's slips, not misreadings here. On 0196 the clerk writes nothing over 593.813.367. One-digit rule applied: No. 13 72 of 72 (1.000), No. 24 128 of 130 (0.985); thirteen texts 2,609 words, 62 holes, 0.976 (word_share.py plus frame 0039 by hand, 350 words, 10 holes). The class does not change (No. 17 stays at 0.941).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Integration of PR #901 (owner's decision of 23 Nov 2026). No. 17 recorded as read under the short-text floor: 34 cipher words, 2 holes (floor_used, cipher_words, holes on its outcome.texts entry). The target stays read in part while the mark 370 and the group 575.1060 of No. 19 are open; frame 0039 stays read in part as a fragment reread with the clear copies in view. The reviewer's own line for the three one-digit places added to the reading_review notes of Nos. 13 and 24: in round 4 of the review of PR #901 an AI agent for the maintainers (not a person) fetched NARA M31 roll 14 frames 0084, 0088, 0196 and 0220, cropped them itself and read 510, 146 and 593 as written; frame 0205 was not opened. word_share.py rerun at review: twelve letters 2,259 words and 52 holes; with frame 0039 (350, 10) 2,609 words, 62 holes, 0.976. Page re-read against NOTES and profile, README row updated.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -994,8 +1000,8 @@
    {
     "label": "No. 17 (21 June 1814): the three coded lines on frame 0111",
     "method": "read after matching with key from external sources",
-    "extent": "partial",
-    "basis": "53 groups; one sentence, two words inferred (0.941)"
+    "extent": "complete",
+    "basis": "53 groups; one sentence, two words inferred (34 cipher words, 2 holes, 0.941); read under the short-text floor (owner's decision, 23 Nov 2026)"
    },
    {
     "label": "Claiborne to Madison, 24 Oct 1805, 13 Jan and 25 Nov 1806 (NARA T260 rolls 7-8; claiborne/): the same reversed-block numbering; in progress",
@@ -1102,6 +1108,13 @@
     "role": "prior solution",
     "note": "the State Department clerk's Spanish decipherment of the Cevallos note of 20 November 1814 on the copy on frames 0169-0170; seen before the numerals of 0115-0116 were transcribed",
     "date": "1815"
+   },
+   {
+    "who": "ajbeling",
+    "role": "verification",
+    "note": "PR #901: the three one-digit places (510 and 146 in No. 13, 593 in No. 24) looked at on every copy on the film, with blind second readings by AI agents; beling/slips_2026-11-22/",
+    "date": "2026-11-22",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/901"
    },
    {
     "who": "woolfley",
@@ -1225,7 +1238,7 @@
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Two coherent sentences; two word endings inferred. Until 14 Nov 2026 the sign 370, which stands twice, was counted as two unread words (0.946, read in part); it is a punctuation sign of the code sheet and is no longer counted, so 70 of 72 coded words (0.972). 22 Nov 2026: sour[?ce] and vis[?it] are the writer's one-digit slips 510 and 146, seen on both copies (frames 0084, 0088) and counted as read under the one-digit rule (sour{+ce}, vis{+it}): 72 of 72 (1.000). The sentences are unchanged."
+     "note": "Two coherent sentences; two word endings inferred. Until 14 Nov 2026 the sign 370, which stands twice, was counted as two unread words (0.946, read in part); it is a punctuation sign of the code sheet and is no longer counted, so 70 of 72 coded words (0.972). Added by Andrew Beling in PR #901, 22 Nov 2026, not by the reviewer of PR #415: sour[?ce] and vis[?it] are the writer's one-digit slips 510 and 146, seen on both copies (frames 0084, 0088) and counted as read under the one-digit rule (sour{+ce}, vis{+it}): 72 of 72 (1.000). The sentences are unchanged. Integration review of PR #901 (AI agent, for the maintainers; not a person), 24 Nov 2026, grade B for these places only: 510 and 146 seen on the film as written, on frames 0084 and 0088 (our own crops, round 4 of the review); the one-digit rule applies; the rest of the text was not re-read."
     },
     "summary": "Morris means to go to Madrid shortly, to be nearer the source of authentic information; he has not heard from Monroe since reaching Europe and acts on his own discretion."
    },
@@ -1253,13 +1266,17 @@
     "decryption": "beling/letters/1814-06-21_No17/line_by_line_decode.txt",
     "reading": "beling/letters/1814-06-21_No17/reading.txt",
     "language": "en",
-    "state": "read in part",
+    "state": "read",
     "read_share": 0.941,
+    "floor_used": true,
+    "cipher_words": 34,
+    "holes": 2,
+    "note": "Read under the short-text floor (README Conventions, 19 Nov 2026; owner's decision of 23 Nov 2026 on PR #901): 34 cipher words, 2 holes ([?present], [?prudent]), 0.941. Under 95%, but a text of fewer than 40 cipher words with at most 2 holes counts as read. The two inferred words stay marked and stay in the gaps.",
     "reading_review": {
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "One sentence, coherent; two words inferred (a blotted group and a syllable that misfits). Transcribed and read by the same reviewer on 12 Nov 2026. With the sign 370 no longer counted (14 Nov 2026) two of 34 coded words are holes, 0.941: still under the 95% bar."
+     "note": "One sentence, coherent; two words inferred (a blotted group and a syllable that misfits). Transcribed and read by the same reviewer on 12 Nov 2026. With the sign 370 no longer counted (14 Nov 2026) two of 34 coded words are holes, 0.941: still under the 95% bar. 24 Nov 2026: state set to read by the short-text floor (34 cipher words, 2 holes; owner's decision of 23 Nov 2026); the sentence was not read again and the frame not re-opened."
     },
     "summary": "After nine pages in clear on the king's return, Morris ends in code: in this unexpected state of things he thinks it best to stay quiet until he hears from Monroe."
    },
@@ -1333,7 +1350,7 @@
      "grade": "A",
      "by": "integration review of PR #415 (a model reading, not a person)",
      "date": "2026-11-12",
-     "note": "Read as sentences against the decode and the clerk's words on frame 0196: coherent. 'United States' is group 1569 (December in the key) and stays marked as inferred. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): reads in full and agrees with the clerk's decipherment on frame 0196, which was read after the decode, so the agreement supports and is not independent; he leaves the opening groups 593.813 as numbers, where this reading has [?Sir] (593 probably a slip for 598) and counts it as a hole. 22 Nov 2026: 593 is on all three copies (frames 0220, 0205, 0196), a one-digit slip for 598 si before 813 R, counted as read under the one-digit rule ({+Si}r): 128 of 130 (0.985)."
+     "note": "Read as sentences against the decode and the clerk's words on frame 0196: coherent. 'United States' is group 1569 (December in the key) and stays marked as inferred. Andrew Beling recorded his own review on 12 Nov 2026 (grade A, with two independent AI-agent readings): reads in full and agrees with the clerk's decipherment on frame 0196, which was read after the decode, so the agreement supports and is not independent; he leaves the opening groups 593.813 as numbers, where this reading has [?Sir] (593 probably a slip for 598) and counts it as a hole. Added by Andrew Beling in PR #901, 22 Nov 2026, not by the reviewer of PR #415: 593 is on all three copies (frames 0220, 0205, 0196), a one-digit slip for 598 si before 813 R, counted as read under the one-digit rule ({+Si}r): 128 of 130 (0.985). Integration review of PR #901 (AI agent, for the maintainers; not a person), 24 Nov 2026, grade B for these places only: 593 seen on the film as written, clearly on frame 0220 and less clearly on the dark frame 0196 (our own crops, round 4 of the review); the one-digit rule applies; frame 0205 and the rest of the text were not re-read."
     }
    },
    {
@@ -1430,6 +1447,6 @@
    "block_map.tsv",
    "beling/key/codebook_M97_13_transcription.csv"
   ],
-  "notes": "Contributed by WAINUT (catalogue 650, PR #114: the block reversal and frame 0039) and Andrew Beling, with AI agents (PR #200: the WE028 key sheet, five letters and frame 0039 reread; PR #415: Nos. 18, 19, 24, 25, 28). Integrated 12 Nov 2026: read_share on every letter is the word share of word_share.py (README read bar: unread groups, guessed words and supplied letters are holes); the contributor's own figure for the five PR #415 letters is a share of groups (0.981, 0.955, 0.980, 1.000, 1.000; beling/scripts/read_share.py). On frame 0039 it is the project's recount by the same rule (350 words, 10 holes, 0.971; Andrew Beling's count in PR #200 was 0.965, and the recount at integration, with 370 as a hole, 0.963). The Cevallos note and the No. 17 lines were transcribed and read at integration by one reader. codes_open covers the seven letters in the decode650 format (1,709 groups, 512 distinct): the groups with no reading at all are 575 and 1060. Rule of 12 Nov amended on 14 Nov 2026 (owner's decision, after Brice Dudout's observation in PR #570 and a look at the code sheet on NARA M97 roll 13 frames 1056-1057): the sign 370 is the eleventh and last entry of the sheet's list of punctuation marks and follows the full stop 364 at all 22 places, so it is punctuation, neither a word nor a hole; before that each [370] was one hole (2,631 words, 87 holes, 0.967; No. 13 0.946, No. 19 0.943, No. 17 0.914; codes_open 3 open, 16 tokens). Nos. 13 and 19 are now over the 95% bar; No. 17 (0.941) is not, so the class stays read in part. The order of the contributor's work (numerals frozen before decoding) is by the contributor's record: the pull request is a single commit. Same code as ../jqa; Morris's block order is in block_map.tsv. 14 Nov 2026: the former target claiborne1806 (Brice Dudout, PR #564 and PR #581) is folded in under claiborne/ (one key, one entry): Claiborne's 1805 copy has the same reversed blocks. That part is in progress (the letters of 18 and 19 Nov 1806 at the Library of Congress and the printed edition were not seen); its texts are Wagner's decipherments and its figures (295 of 328 words mechanically) are kept apart from fraction_read, which covers the thirteen Morris texts only."
+  "notes": "Contributed by WAINUT (catalogue 650, PR #114: the block reversal and frame 0039) and Andrew Beling, with AI agents (PR #200: the WE028 key sheet, five letters and frame 0039 reread; PR #415: Nos. 18, 19, 24, 25, 28). Integrated 12 Nov 2026: read_share on every letter is the word share of word_share.py (README read bar: unread groups, guessed words and supplied letters are holes); the contributor's own figure for the five PR #415 letters is a share of groups (0.981, 0.955, 0.980, 1.000, 1.000; beling/scripts/read_share.py). On frame 0039 it is the project's recount by the same rule (350 words, 10 holes, 0.971; Andrew Beling's count in PR #200 was 0.965, and the recount at integration, with 370 as a hole, 0.963). The Cevallos note and the No. 17 lines were transcribed and read at integration by one reader. codes_open covers the seven letters in the decode650 format (1,709 groups, 512 distinct): the groups with no reading at all are 575 and 1060. Rule of 12 Nov amended on 14 Nov 2026 (owner's decision, after Brice Dudout's observation in PR #570 and a look at the code sheet on NARA M97 roll 13 frames 1056-1057): the sign 370 is the eleventh and last entry of the sheet's list of punctuation marks and follows the full stop 364 at all 22 places, so it is punctuation, neither a word nor a hole; before that each [370] was one hole (2,631 words, 87 holes, 0.967; No. 13 0.946, No. 19 0.943, No. 17 0.914; codes_open 3 open, 16 tokens). Nos. 13 and 19 are now over the 95% bar; No. 17 (0.941) is not, so the class stays read in part. 24 Nov 2026 (owner's decision of 23 Nov on PR #901): No. 17 is read under the short-text floor (34 cipher words, 2 holes); the class still stays read in part, because the mark 370 and the group 575.1060 in No. 19 are open and frame 0039 is a fragment reread with the clear copies in view. The order of the contributor's work (numerals frozen before decoding) is by the contributor's record: the pull request is a single commit. Same code as ../jqa; Morris's block order is in block_map.tsv. 14 Nov 2026: the former target claiborne1806 (Brice Dudout, PR #564 and PR #581) is folded in under claiborne/ (one key, one entry): Claiborne's 1805 copy has the same reversed blocks. That part is in progress (the letters of 18 and 19 Nov 1806 at the Library of Congress and the printed edition were not seen); its texts are Wagner's decipherments and its figures (295 of 328 words mechanically) are kept apart from fraction_read, which covers the thirteen Morris texts only."
  }
 }
