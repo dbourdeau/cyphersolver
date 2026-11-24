@@ -1294,7 +1294,8 @@
       ],
       "what": "Integration check of PR #676 (r20). RALLYTOTHEFRONT applied with a separate decoder to the filed letters and to each of the four blind transcriptions of the 11 April lower telegram: against the plaintext given, 1 letter differs on the filed letters (20), 6 on B1, 9 on B2, 12 on helper A, 11 on helper B; 15 places in all, of which five have no reader's first choice (20, 34, 64, 76, 77). NARA frame 0046 fetched again (sha256 d458c966..., as recorded): the six F the key needs lack the tick of the clerk's E; letter 20 is T; letter 77 is not settled; pencil 15s are visible. Own control with the shared English quadgram model: the fixed key on the two later blind transcriptions scores -3.66 and -3.71 per letter, the filed letters -2.25, against -4.10 for the best of 40 shuffles each hill-climbed over all 15-letter keys (median -4.44); an own short hill-climb recovers ...YTOTHEFRONT on B2 and ...TOTHEFRON. on B1. The contributor's frozen word test stays a miss (11 of 22 against 15). Levy telegram decrypted again with COMPLETE VICTORY: same words. The contributor's run_verify.py was not re-run (it needs /usr/share/dict/words, absent here); its printed plaintexts equal ours. Web and Internet Archive search for the phrase as a key: nothing found.",
       "result": "worked"
-    }
+    },
+    {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction"], "what": "Three blind sign sheets (dudout/sign_check_2411/), Brice Dudout reader, built and scored by AI agents (Claude): 39 glyphs of vol. 196 fr. 0018, 0065, 0071, 0064 and 0056 where the glyph read in the aided alignment differs from the letter COME RETRIBUTION predicts; rules hashed before the thumbnails; controls 9/9. 29 glyphs re-read as the key predicts, 8 divergences confirmed as the clerk's own, 2 unresolved. Words no longer marked uncertain: fr. 0018 22 -> 28 of 44; 0065 11 -> 15 of 18; 0071 9 -> 12 of 14; 0064 8 -> 9 of 13; 0056 (D. W. Adams) 19 -> 22 of 27 (read_measure and reading files). Key and alignments unchanged; states left to the maintainer.", "result": "partial"}
   ],
   "outcome": {
     "class": "read in part",
@@ -1312,6 +1313,11 @@
       "key confirms",
       "independent clear copy",
       "historical consistency"
+    ],
+    "sign_check": [
+      {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 14, "controls": 3, "controls_passed": 3, "as_transcribed": 3, "corrected": 11, "unresolved": 0, "not_counted": 0, "rule": "dudout/sign_check_2411/sheet-A-rule.md (24 Nov 2026, before the thumbnails and the answers)", "rule_hash": "9e91460552be145769dca42ee17b53c670ba4937d10444228e8375480e6db2a0", "sheet_faults": "the F option showed two examples and only the first is the clerk's F (reviewer remark); the second (g4p1, F of FIM, no lower bar) is labelled F2 (no value); the 7 F answers match the first form", "note": "vol. 196 fr. 0018 (Taylor to Beauregard, 10 Feb 1865), aided alignment nov1, key unchanged. 11 glyphs re-read as the key predicts (F at g1p2, g5p4, g10p3, g12p2, g18p2, g24p4, g25p3; L g11p4; M g9p1, g15p2; E g14p1); 3 divergences confirmed as the clerk's own (g16p2 E, g7p2 V, g12p1 V). Words unmarked: BRANTLEYS, EXPIRE, THESE, TOTAL, OVER, TWO (22 -> 28 of 44). Not a human_check: AI agents built and scored the sheet."},
+      {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 15, "controls": 3, "controls_passed": 3, "as_transcribed": 3, "corrected": 11, "unresolved": 1, "not_counted": 0, "rule": "dudout/sign_check_2411/sheet-B-rule.md, written before any thumbnail was cut and before the answers, with a written integration clause", "rule_hash": "9602d769ad8a8260c10b39427f462906bc65e772ee26095138a7055c64d01476", "sheet_faults": "none reported", "note": "NARA RG 109 ch. II vol. 196, fr. 0065 (Taylor to Maury, 13 Mar 1865) and fr. 0071 (Surget to Taylor, 17 Mar 1865). Reading by Payne/nov1 (aided alignment nov9); key unchanged. 11 glyphs re-read as the key predicts (0065: g2p3 I, g5p5 F, g13p5 M, g17p4 M; 0071: g5p2 F, g5p3 F, g8p5 F, g8p6 F, g9p7 F, g9p8 M, g9p9 F). 3 divergences confirmed as the clerk's own (0065 g14p1 T, g19p1 T; 0071 g13p4 N). 0065 g15p2: form T chosen, neither read I nor key F: unresolved. Words now unmarked: 0065 FOR, EIGHT, THOMAS, RELIEVING; 0071 MOBILE, COMPEL, EVACUATION. Not a human_check: AI agents built the sheet; Brice answered. 0065 11 -> 15 of 18, 0071 9 -> 12 of 14 unmarked words."},
+      {"date": "2026-11-24", "checker": "Brice Dudout", "checker_kind": "project", "model_roles": ["rule", "thumbnails", "sheet", "scoring", "remarks"], "signs_checked": 10, "controls": 3, "controls_passed": 3, "as_transcribed": 2, "corrected": 7, "unresolved": 1, "not_counted": 0, "rule": "dudout/sign_check_2411/sheet-C-rule.md plus sheet-C-rule-amendment-1.md (0064 g6p1 withdrawn: pencil mark on the sign), written before any thumbnail was cut and before the answers, with a written integration clause", "rule_hash": "a51d2e226442d72e67e51c5fc86864ec11abcc7380d0cde1ad663f793304ca42", "sheet_faults": "none reported", "note": "NARA RG 109 ch. II vol. 196, fr. 0064 (Taylor to the Secretary of War, 13 Mar 1865) and fr. 0056 (to D. W. Adams, 9 Mar 1865). Reading by Payne/nov1 (aided alignment nov9); key unchanged. 7 glyphs re-read as the key predicts (0064: g8p5 K, g9p2 L, g14p8 L; 0056: g9p4 F, g9p5 L, g17p5 V, g18p2 I). 2 divergences confirmed as the clerk's own (0064 g9p3 T, g10p1 T). 0056 g6p1: form P chosen (shape of the sure P at 0056 g3p4, a distractor option), neither read I nor key J: unresolved. Words now unmarked: 0064 RESERVES (last word); 0056 MONTGOMERY, ENGINES, SUPT. Not a human_check: AI agents built the sheet; Brice answered. 0064 8 -> 9 of 13, 0056 19 -> 22 of 27 unmarked words."}
     ],
     "provenance": "contributed",
     "notes": "23 documented telegrams, with different reading states and explicit raw/reconstructed distinctions. Includes existing printed and pencil decipherments, known-key contextual readings and earlier key recovery from external plaintext. New November 9 work covers seven further messages; see REPORT-2026-11-09.md and WORKLOG.md. March 8\u20139 recipient-specific evidence does not establish a universal key switch. Overall fraction unknown: remaining passages across three volumes are not exhaustively inventoried. No complete-target or novel-plaintext claim; model reviews are not independent handwriting verification. 15 Nov 2026 (PR #676): two further telegrams entered; the 11 April lower telegram uses a fifth key, RALLY TO THE FRONT, recovered from the ciphertext alone (method for that document: key recovered from ciphertext-only), not found in any key list opened.",
@@ -1426,6 +1432,12 @@
         "note": "vol. 196 fr. 0030 and 0031-0032 (21 Feb 1865) read; blind transcription, pre-registered measure (the Maury telegram failed it at offset 0), post hoc key break; order of events by the contributor's record",
         "date": "2026-11-12",
         "source": "https://github.com/dbourdeau/cyphersolver/pull/438"
+      },
+      {
+        "who": "dudout",
+        "role": "verification",
+        "note": "three blind sign sheets on vol. 196 fr. 0018, 0065, 0071, 0064 and 0056 (Brice Dudout reader, sheets built and scored by AI agents; dudout/sign_check_2411/): 29 glyphs re-read as the key predicts, 8 clerk divergences confirmed; 20 words no longer marked uncertain",
+        "date": "2026-11-24"
       },
       {
         "who": "ajbeling",
@@ -1686,9 +1698,9 @@
         "reading": "v196-0018-beauregard_reading.md",
         "language": "en",
         "state": "decoded, not read",
-        "read_share": 0.5,
+        "read_share": 0.6364,
         "summary": "Provisional brigade/furlough telegram; extensive glyph uncertainty retained.",
-        "note": "Known key applied, heavily provisional contextual reconstruction; no full prior plaintext located in bounded OR49/1 and47/2 searches. Cipher-only word measure in v196-0018-beauregard_read_measure.txt; 22/44 marked uncertain. Overall target remains in progress. Source, method, uncertainty and manuscript/printed variants: v196-0018-beauregard_reading_notes.md."
+        "note": "Known key applied, heavily provisional contextual reconstruction; no full prior plaintext located in bounded OR49/1 and47/2 searches. Cipher-only word measure in v196-0018-beauregard_read_measure.txt; 16/44 marked uncertain after the blind sign sheet of 24 Nov 2026 (was 22/44; dudout/sign_check_2411/). Overall target remains in progress. Source, method, uncertainty and manuscript/printed variants: v196-0018-beauregard_reading_notes.md."
       },
       {
         "doc": "v11-0077b",
@@ -1770,9 +1782,9 @@
         "reading": "v196-0064-personnel_reading.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.6153846153846154,
+        "read_share": 0.6923,
         "summary": "Provisional proposal to replace Brandon with Tucker in Mississippi reserves command.",
-        "note": "Cipher-only lexical measure in v196-0064-personnel_read_measure.txt: 5/13 uncertain words. Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0064-personnel_reading_notes.md. Global target remains in progress.",
+        "note": "Cipher-only lexical measure in v196-0064-personnel_read_measure.txt: 4/13 uncertain words after the blind sign sheet of 24 Nov 2026 (was 5/13; dudout/sign_check_2411/). Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0064-personnel_reading_notes.md. Global target remains in progress.",
         "reading_review": {
           "grade": "B",
           "by": "OpenAI Codex, model review; not independent handwriting or human review",
@@ -1788,9 +1800,9 @@
         "reading": "v196-0065-maury_reading.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.6111111111111112,
+        "read_share": 0.8333,
         "summary": "Provisional expectation of troops for possible relief of Mobile.",
-        "note": "Cipher-only lexical measure in v196-0065-maury_read_measure.txt: 7/18 uncertain words. Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0065-maury_reading_notes.md. Global target remains in progress.",
+        "note": "Cipher-only lexical measure in v196-0065-maury_read_measure.txt: 3/18 uncertain words after the blind sign sheet of 24 Nov 2026 (was 7/18; dudout/sign_check_2411/). Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0065-maury_reading_notes.md. Global target remains in progress.",
         "reading_review": {
           "grade": "B",
           "by": "OpenAI Codex, model review; not independent handwriting or human review",
@@ -1806,9 +1818,9 @@
         "reading": "v196-0071-surget_reading.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.6428571428571429,
+        "read_share": 0.8571,
         "summary": "Provisional attributed Orleans report concerning Mobile, Selma and Montgomery.",
-        "note": "Cipher-only lexical measure in v196-0071-surget_read_measure.txt: 5/14 uncertain words. Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0071-surget_reading_notes.md. Global target remains in progress.",
+        "note": "Cipher-only lexical measure in v196-0071-surget_read_measure.txt: 2/14 uncertain words after the blind sign sheet of 24 Nov 2026 (was 5/14; dudout/sign_check_2411/). Separate from glyph agreement. Known-key aided reconstruction; source and limitations in v196-0071-surget_reading_notes.md. Global target remains in progress.",
         "reading_review": {
           "grade": "B",
           "by": "OpenAI Codex, model review; not independent handwriting or human review",
@@ -1842,9 +1854,9 @@
         "reading": "v196-0056-dw_reading.md",
         "language": "en",
         "state": "read in part",
-        "read_share": 0.7037037037037037,
+        "read_share": 0.8148,
         "summary": "Do not move rolling stock unless surplus to current needs; save it if necessary, and consider moving unneeded cars on pretext of helping Georgia railroads.",
-        "note": "Cipher-only lexical measure in v196-0056-dw_read_measure.txt: 8/27 marked uncertain. Unequal ROAD group retains faint possibly cancelled initial R; downstream phase conditional on exclusion. Raw and reconstruction remain separate. See reading_notes and earlier gapped lead.",
+        "note": "Cipher-only lexical measure in v196-0056-dw_read_measure.txt: 5/27 marked uncertain after the blind sign sheet of 24 Nov 2026 (was 8/27; dudout/sign_check_2411/). Unequal ROAD group retains faint possibly cancelled initial R; downstream phase conditional on exclusion. Raw and reconstruction remain separate. See reading_notes and earlier gapped lead.",
         "reading_review": {
           "grade": "B",
           "by": "OpenAI Codex, model review; not independent handwriting/human review",
