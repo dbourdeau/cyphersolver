@@ -258,3 +258,14 @@ take in this entry's work of 14 Oct. Kept as he wrote it there; this entry's rea
    Jan 1438; Mantua's marquisate dates from Sept 1433), or do you keep 1431-1432?
 3. The dorse of no. 24 (8 run-over cipher lines) closes "Crist[ofa]no ... si racoman[d]a": do you read it too?
 4. Why "No. 6?": is the pencil number on R4795 unclear on your image?
+
+## 24 Nov 2026 - no. 24: the merged "t" sign, blind sheet (Brice Dudout, with Claude), `dudout/sign_check_2411a/`
+Our transcription uses one label "t" for three signs of R4755: + (o), the footed t (q) and the o+t ligature (f).
+Brice Dudout read 12 places of R4812 P2 blind (9 targets, 3 controls, 3/3). The hand keeps the forms apart:
+- 5 plain + (o);
+- 3 "+o" (the key's i-sign, a cross with a round on its right arm), one of them {probable};
+- 1 cross with two dots, a form not on the key sheet, with no value.
+
+The places fall on letters already read or inside runs that stay unread. So the understood letters stay at 1,815 of
+2,279 (79.6%) and no word changes. A relabelled copy of the transcription and reading is in the folder. Next: a pass
+over the 162 "t" places, starting inside the unread runs.
