@@ -130,3 +130,10 @@ The scripts of the read, the grade and the decode are not in this folder.
 - **The clerk of the time** who wrote decipherments on 29 of these letters: 14 code values of the key come from that text. `key-and-read/key.tsv` marks each one.
 
 DECODE's images are for research use only. They may not be redistributed or published without permission from the archive. No DECODE image is published.
+
+## 24 Nov 2026 - code 17 checked by a blind reader (Brice Dudout, with Claude), `dudout/`
+A blind sheet of 14 questions (11 signs, 3 controls, 3/3) asked which digit follows the 1 in the "17" groups of R8469
+and R8470. At 9 sites it is a 7, and every site with a sure context is q (quale, questa, quanto, qua); at 2 sites
+(proprio, risposi) it is a 2, i.e. code 12 = r misread as 17. Proposal, {probable}: 17 = q, and 10 after 17 = u. On the
+11 groups, 2 give an Italian word before and 9 after, with no sure word broken. The other "17" tokens are not switched
+(dinari, rema would break). Details and files in `dudout/README.md`; no DECODE image is committed.
