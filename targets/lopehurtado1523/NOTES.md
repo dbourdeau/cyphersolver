@@ -174,3 +174,17 @@ adds that the tables do not list every change.
 ## Dudout corrections, 29 Oct 2026
 - Pacheco y de Leyva, La politica espanola en Italia, vol. I (1919), no. 120 prints the Abbot of Najera's letter of 2 May 1523 (RAH Salazar A-28 ff. 1-2, 'claro y cifra') deciphered: this is the 'Claro' leaf noted beside R9667. The same edition prints about 33 letters of 1522 from BNE Sigt. mod. 18.678 (nos. 49-105); catalogue 1274 is closed as read.
 (Brice Dudout, research/dudout_2026-10-29/; his findings, not re-checked here.)
+
+## 24 Nov 2026 - R9866 / R9868 / R9869: two blind sign-shape sheets (Brice Dudout, with Claude), `sign_check/`
+These sheets test the look-alike families listed above, on the DECODE images (private, not republished). The rules
+were hashed before the thumbnails, and the controls passed 3/3 on each sheet. Key and readings unchanged; no value added.
+
+- **Barred m.** m̶ = f only. The c places carry the long barred f (blind at reputacion; an AI look at every m̶ found
+  20 long barred f in R9866 and 1 barred m). The rows are in `R9866_corrections.tsv`.
+- **Three-bar cross = b** at four places. R9866 R13 l14 and R6 l21 are relabelled ʇʇ -> ʇʇʇ.
+- **Two forms of their own:**
+  - a looped H with a long bar (`ʇʇH`), a by sense only {probable}, at avrian and sacarlo;
+  - a looped delta (`∂b`) at R9866 R14 l18, with no value.
+- **"resistir" (R7 l24)** has the long barred f (c): flagged, not decided.
+- **"medio" (R3 l9, ʋ)** is proposed; it gives 0.827 if adopted.
+- **Counts unchanged:** R9866 0.823, R9868 0.825, R9869 0.764. Status unchanged.
