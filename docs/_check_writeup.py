@@ -165,10 +165,13 @@ def read_bar(folder):
     if any((g.get('blocker') == 'not-attempted') for g in out.get('gaps') or []): why.append('a gap is not-attempted')
     docs_open = [d.get('id') for d in prof.get('documents') or [] if d.get('read') in ('read in part', 'not read')]
     if docs_open: why.append('documents not read in full: ' + ', '.join(map(str, docs_open[:4])))
-    # the per-document read bar (24 Oct 2026): every text entry read, each at 95% of its words read as sense
+    # the per-document read bar (24 Oct 2026): every text entry read, each at 95% of its words read as sense, or a
+    # short text that meets the short-text floor (README Conventions, 19 Nov 2026; _texts.floor_problem)
+    import _texts
     under = [str(t.get('label') or t.get('doc')) for t in out.get('texts') or []
              if (t.get('state') or 'read') in ('read in part', 'decoded, not read')
-             or (isinstance(t.get('read_share'), (int, float)) and t['read_share'] < READ_BAR)]
+             or (isinstance(t.get('read_share'), (int, float)) and t['read_share'] < READ_BAR
+                 and _texts.floor_problem(t) is not None)]
     if under: why.append('texts under 95% of words read as sense: ' + ', '.join(under[:4]))
     if out.get('fraction_read_method') == 'estimated': why.append('fraction_read is estimated, not measured')
     return not why, why
