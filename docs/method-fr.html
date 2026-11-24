@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Méthode et relecture &mdash; comment une lecture est établie, contrôlée et notée</title>
+<meta name="description" content="Comment chaque lecture de Cyphersolver est transcrite, déchiffrée, testée et notée, qui fait chaque étape, et ce que les contrôles ne couvrent pas." data-full="Comment chaque lecture de Cyphersolver est transcrite, déchiffrée, testée et notée, qui fait chaque étape, et ce que les contrôles ne couvrent pas. Les chiffres sont comptés dans les fiches à chaque construction du site.">
+<link rel="alternate" hreflang="en" href="https://cyphersolver.com/method.html">
+<link rel="alternate" hreflang="fr" href="https://cyphersolver.com/method-fr.html">
+<link rel="stylesheet" href="style.css?v=8e3ff372">
+<meta name="date" content="2026-11-24">
+<meta name="last-modified" content="2026-11-24">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- social:start -->
+<link rel="canonical" href="https://cyphersolver.com/method-fr.html">
+<link rel="alternate" type="application/atom+xml" title="Cyphersolver: new write-ups" href="https://cyphersolver.com/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cyphersolver">
+<meta property="og:url" content="https://cyphersolver.com/method-fr.html">
+<meta property="og:title" content="Méthode et relecture &mdash; comment une lecture est établie, contrôlée et notée">
+<meta property="og:description" content="Comment chaque lecture de Cyphersolver est transcrite, déchiffrée, testée et notée, qui fait chaque étape, et ce que les contrôles ne couvrent pas.">
+<meta property="og:image" content="https://cyphersolver.com/hero_poster.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- social:end -->
+</head>
+<body id="top">
+<header class="nav"><a class="skip" href="#content">Skip to content</a><div class="in">
+  <a class="brand" href="index.html"><span class="glyph">972</span><span>Cyphersolver</span></a>
+  <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitemenu"><span></span><span></span><span></span><i>Menu</i></button>
+  <nav id="sitemenu" class="links" aria-label="Site">
+    <details class="menu"><summary>Write-ups <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel wp"><div class="foot"><a class="all" href="writeups.html">All write-ups, with filters &rarr;</a><a href="findings.html">All findings, newest first</a><a href="writeups.html#src=notes">Results only in the notes</a></div></div></details>
+    <details class="menu"><summary>Explore <svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+      <div class="panel ex"><div class="grp"><h4>Start here</h4><ul><li><a href="highlights.html"><b>Highlights</b><span class="d">Twenty favourites: the funny, the historic, the ingenious, the hardest</span></a></li><li><a href="top25.html"><b>Top 25 unsolved ciphers</b><span class="d">Twenty-five ciphers with no accepted reading, ranked</span></a></li></ul></div><div class="grp"><h4>Maps and patterns</h4><ul><li><a href="atlas.html"><b>Atlas</b><span class="d">Every letter drawn on the map, five centuries of it</span></a></li><li><a href="key-evolution.html"><b>How keys changed</b><span class="d">Kinds of key, their signs and their size, 1400 to 1950</span></a></li><li><a href="keys.html"><b>Key web</b><span class="d">Which key opened which letter</span></a></li></ul></div><div class="grp"><h4>Try and take part</h4><ul><li><a href="secret.html"><b>Write a secret letter</b><span class="d">Seal a message in a real historical cipher</span></a></li><li><a href="contribute.html"><b>Contribute</b><span class="d">Send a solution, a new cipher or a check of a reading</span></a></li></ul></div><div class="grp"><h4>Reference</h4><ul><li><a href="glossary.html"><b>Glossary</b><span class="d">How each cipher was solved, and the terms used</span></a></li><li><a href="corrections.html"><b>Corrections</b><span class="d">What was published and then corrected or withdrawn</span></a></li><li><a href="method.html"><b>Method and review</b><span class="d">How a reading is made, checked and graded, and by whom</span></a></li></ul></div><div class="foot"><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">The code and the working notes on GitHub &#8599;</a></div></div></details>
+    <span class="navlab">Help</span>
+    <a class="navcat" href="catalogue.html">Catalogue<span class="sticker" aria-hidden="true"><span><b>Help<br>Solve!</b></span></span></a>
+    <a class="navcat" href="further.html">Read further<span class="sticker alt" aria-hidden="true"><span><b>Finish<br>It!</b></span></span></a>
+    <a class="navcat" href="archives.html">To the archive<span class="sticker arc" aria-hidden="true"><span><b>Go<br>Look!</b></span></span></a>
+    <a href="contributors.html">Contributors</a>
+    <button class="searchbtn" type="button" aria-label="Search the site" aria-keyshortcuts="/ Control+K"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Search</span><kbd>/</kbd></button>
+    <button class="theme" type="button" aria-label="Switch between dark and light" title="Dark / light"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg></button>
+  </nav>
+</div><span id="content" tabindex="-1"></span></header>
+<div class="search" id="search" hidden>
+  <div class="sbox" role="dialog" aria-modal="true" aria-label="Search the site">
+    <form class="sform" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="sq" placeholder="Search names, places, shelfmarks, words of the cipher&hellip;" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres">
+      <button type="button" class="sclose" aria-label="Close search">Esc</button>
+    </form>
+    <div class="sres" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="shint"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>&crarr;</kbd> open</span><span><kbd>Esc</kbd> close</span><span class="sn" id="sn"></span></div>
+  </div>
+</div>
+
+<section class="hero">
+  <p class="kicker">Référence &middot; méthode &middot; relecture</p>
+  <h1>Méthode et relecture</h1>
+  <p class="sub">Comment une lecture de ce site est établie, contrôlée et notée. Qui fait chaque étape. Ce que les contrôles ne couvrent pas. Chaque décompte de cette page est refait dans le dépôt à chaque construction du site.</p>
+  <p class="meta">Daniel Bourdeau &middot; posted <time datetime="2026-11-24">24 November 2026</time></p>
+  <p class="langswitch"><a href="method.html" hreflang="en" lang="en">English version</a></p>
+</section>
+
+<main>
+<nav class="toc" aria-label="On this page"><span>On this page</span><a href="#ce-qu-est-le-projet">Ce qu’est ce projet</a><a href="#etapes">Les étapes d’une lecture</a><a href="#sources">Sources et travaux antérieurs</a><a href="#transcription">Transcription</a><a href="#cle">Comment la clé est obtenue</a><a href="#dechiffre-n-est-pas-lu">Un déchiffrement n’est pas encore une lecture</a><a href="#controles-statistiques">Le test statistique contre les faux positifs</a><a href="#relecture">La note de lecture et la vérification humaine</a><a href="#controles">Ce que les contrôles automatiques imposent</a><a href="#ia">La part de l’IA</a><a href="#corrections">Corrections et contestations</a><a href="#chercheurs">Pour les chercheurs, et comment citer</a></nav>
+<div class="callout glance"><p><b>En bref</b></p>
+<ul>
+<li>Le travail est fait surtout par des modèles d’IA, pilotés par des personnes.</li>
+<li>La note de lecture (A ou B) est donnée par un modèle d’IA pour 94&nbsp;% des entrées. Ce n’est pas une relecture humaine.</li>
+<li>Une vérification d’un passage sur l’image par une personne, sans IA, est déclarée dans 4 fiches.</li>
+<li>Les contrôles automatiques vérifient la forme d’une lecture. Ils ne vérifient pas qu’elle est juste.</li>
+<li>Toute lecture peut être contestée. Les corrections restent dans l’historique du dépôt.</li>
+</ul></div>
+
+<h2 id="ce-qu-est-le-projet"><span class="num">01</span> Ce qu’est ce projet</h2>
+<p>Cyphersolver est un registre ouvert de chiffres historiques. Les chiffres y sont travaillés avec des modèles d’IA. Le registre sert aussi de banc d’essai informel de ce que ces modèles savent en faire.</p>
+<p>Des personnes pilotent les modèles d’IA&nbsp;: les mainteneurs du projet et des contributeurs extérieurs.</p>
+<p>Le registre compte 905 fiches de cibles. 498 relèvent du travail du projet, 341 sont des contributions extérieures et 66 sont mixtes.</p>
+<p>Ce registre n’est pas une édition critique. Ses résultats n’ont pas été évalués par des pairs au sens académique.</p>
+<p>Mots employés sur cette page&nbsp;:</p>
+<ul>
+<li>Une <b>cible</b> est un dossier du dépôt&nbsp;: un document chiffré ou un groupe de documents.</li>
+<li>Sa <b>fiche</b> est le fichier <code translate="no">profile.json</code>, à champs fixes. Les notes de travail sont dans <code translate="no">NOTES.md</code>.</li>
+<li>Un <b>article</b> est la page du site consacrée à la cible.</li>
+</ul>
+<p>Les règles complètes sont dans le <a href="https://github.com/dbourdeau/cyphersolver/blob/main/README.md" rel="noopener"><code translate="no">README</code></a> (section Conventions), <a href="https://github.com/dbourdeau/cyphersolver/blob/main/CONTRIBUTING.md" rel="noopener"><code translate="no">CONTRIBUTING.md</code></a> et <a href="https://github.com/dbourdeau/cyphersolver/blob/main/profile.schema.json" rel="noopener"><code translate="no">profile.schema.json</code></a>, en anglais.</p>
+
+<h2 id="etapes"><span class="num">02</span> Les étapes d’une lecture</h2>
+<table>
+<thead><tr><th>Étape</th><th>Faite le plus souvent par</th><th>Ce qui est contrôlé</th></tr></thead>
+<tbody>
+<tr><td>1. Trouver le document et ses lectures antérieures</td><td>un agent d’IA, piloté par une personne</td><td>depuis le 28 octobre 2026, une grille pour le catalogue (§&nbsp;03)</td></tr>
+<tr><td>2. Transcrire le chiffré</td><td>un modèle d’IA, à partir des images</td><td>pas de double transcription systématique (§&nbsp;04)</td></tr>
+<tr><td>3. Obtenir la clé</td><td>un modèle d’IA, ou une clé qui existait déjà</td><td>le test statistique, quand il s’applique (§&nbsp;07)</td></tr>
+<tr><td>4. Établir le texte et le traduire</td><td>un modèle d’IA (la méthode est dans CONTRIBUTING)</td><td>la part de mots lus, <code translate="no">read_share</code> (§&nbsp;06)</td></tr>
+<tr><td>5. Noter la lecture A ou B</td><td>un modèle d’IA, pour 94&nbsp;% des entrées</td><td>la présence de la note (§&nbsp;08)</td></tr>
+<tr><td>6. Vérifier un passage sur l’image, sans IA</td><td>une personne, dans 4 fiches</td><td>rien d’automatique (§&nbsp;08)</td></tr>
+<tr><td>7. Intégrer au dépôt</td><td>un mainteneur&nbsp;; pour une demande de fusion, celui qui n’en est pas l’auteur</td><td>l’approbation, pour les demandes de fusion (§&nbsp;09)</td></tr>
+</tbody>
+</table>
+
+<h2 id="sources"><span class="num">03</span> Sources et travaux antérieurs</h2>
+<p>Chaque image du site doit être créditée à sa source&nbsp;: détenteur, cote, folio, et voie d’accès (Gallica, DECODE, visionneuse d’un service d’archives, IIIF, édition). C’est la règle du README. Elle n’est pas vérifiée page par page.</p>
+<p>Les images restent soumises aux conditions de leurs détenteurs. Les textes sont sous licence CC BY 4.0, le code sous licence MIT.</p>
+<p>Depuis le 28 octobre 2026, un document n’entre au <a href="catalogue.html">catalogue</a> que si sa fiche montre deux choses. Le chiffré a été vu sur une image. Les lieux habituels d’un déchiffrement antérieur ont été consultés&nbsp;: DECODE, les listes de Satoshi Tomokiyo, l’inventaire ou l’édition imprimée, et la littérature. Les entrées plus anciennes ne sont pas passées par cette grille.</p>
+<p>Une fiche peut dire si une lecture existait avant celle du projet. 848 fiches sur 905 répondent. 497 signalent une lecture antérieure, complète ou partielle. Pour 76 d’entre elles, elle n’a été trouvée qu’après la lecture du projet.</p>
+<p>Le contrôleur des articles demande de créditer dans la fiche une lecture antérieure imprimée, en ligne, inédite ou partielle. 268 des 307 fiches concernées le font. Une solution antérieure jamais publiée n’est montrée en entier qu’avec l’accord de son auteur.</p>
+
+<h2 id="transcription"><span class="num">04</span> Transcription</h2>
+<p>Recopier le chiffré depuis le manuscrit est déjà une source d’erreur. Les fiches disent qui a transcrit chaque document.</p>
+<table>
+<thead><tr><th>Transcrit par</th><th>Documents</th></tr></thead>
+<tbody>
+<tr><td>un modèle d’IA, à partir des images</td><td>1&#8239;864</td></tr>
+<tr><td>plusieurs sources combinées</td><td>241</td></tr>
+<tr><td>DECODE</td><td>154</td></tr>
+<tr><td>une édition imprimée</td><td>113</td></tr>
+<tr><td>une personne travaillant pour le projet</td><td>11</td></tr>
+<tr><td>autre, ou non indiqué</td><td>71</td></tr>
+<tr><td><b>Tous les documents</b></td><td><b>2&#8239;454</b></td></tr>
+</tbody>
+</table>
+<p>Il n’y a pas de double transcription à l’aveugle systématique. Les notes de certaines cibles comparent deux transcriptions&nbsp;; le projet ne publie pas de taux d’accord d’ensemble.</p>
+<p>Une transcription est parfois corrigée après que la clé a été trouvée. La lecture peut alors dépendre de la clé qu’elle doit mettre à l’épreuve. Les articles ne le signalent pas de façon uniforme.</p>
+<p>Pour 14 cibles, toutes des contributions extérieures, les fichiers de travail ont été horodatés&nbsp;: un jeton RFC 3161 et une preuve OpenTimestamps sur l’empreinte SHA-256 d’une liste de fichiers. Cela permet de prouver que les fichiers listés existaient à cette date.</p>
+
+<h2 id="cle"><span class="num">05</span> Comment la clé est obtenue</h2>
+<p>Chaque fiche range sa méthode dans l’une des catégories du <a href="glossary.html">glossaire</a> (en anglais).</p>
+<table>
+<thead><tr><th>Comment la clé a été obtenue</th><th>Fiches</th></tr></thead>
+<tbody>
+<tr><td>clé reconstituée ici par cryptanalyse&nbsp;: à partir du seul chiffré, d’un texte clair trouvé ailleurs, ou d’un texte clair voisin du chiffré</td><td>360</td></tr>
+<tr><td>clé ou déchiffrement qui existait déjà, appliqué ici</td><td>353</td></tr>
+<tr><td>ni clé ni texte obtenus (<code translate="no">not solved</code>)</td><td>139</td></tr>
+<tr><td>pas un chiffre, ou document inaccessible</td><td>53</td></tr>
+<tr><td><b>Toutes les fiches</b></td><td><b>905</b></td></tr>
+</tbody>
+</table>
+<p>Un résultat négatif doit venir avec un <b>témoin</b>&nbsp;: un texte synthétique de même longueur, de même alphabet et de même système, que le même solveur parvient à casser. C’est la règle du README. Elle n’est pas contrôlée&nbsp;: 21 des 139 fiches <code translate="no">not solved</code> déclarent un témoin.</p>
+<p>Un <b>test sur une portion tenue à l’écart</b> consiste à trouver la clé sans regarder une partie du texte, puis à essayer la clé sur cette partie. Aucune règle du projet ne l’exige. Certains contributeurs le font et le décrivent dans les notes de la cible.</p>
+<p>Dans le protocole que suivent certains contributeurs, une clé trouvée par cryptanalyse l’est <b>sur une partie du texte seulement</b>. Le reste n’est pas analysé et sert de validation. Les étapes sont les suivantes&nbsp;: choisir la portion tenue à l’écart avant tout travail dessus&nbsp;; geler la clé par une empreinte SHA-256&nbsp;; puis déchiffrer une seule fois la portion tenue à l’écart, sans retoucher la clé. Le test est réussi quand la part des lettres qui font sens atteint 0,85 et dépasse d’au moins 0,30 la meilleure de 200 clés mélangées. Les notes de ces cibles donnent l’empreinte, la portion et le score, y compris quand le test échoue.</p>
+
+<h2 id="dechiffre-n-est-pas-lu"><span class="num">06</span> Un déchiffrement n’est pas encore une lecture</h2>
+<p>Une clé qui change le chiffré en mots ne donne pas encore un texte. Chaque document d’une fiche porte l’un de quatre états. Les noms sont ceux des fiches, en anglais.</p>
+<table>
+<thead><tr><th>État</th><th>Ce que cela veut dire</th><th>Documents</th></tr></thead>
+<tbody>
+<tr><td><code translate="no">read</code> (lu)</td><td>des phrases cohérentes, une traduction anglaise, et au moins 95&nbsp;% de mots lus</td><td>1&#8239;048</td></tr>
+<tr><td><code translate="no">read in part</code> (lu en partie)</td><td>des phrases cohérentes et une traduction, mais moins de 95&nbsp;% de mots lus</td><td>703</td></tr>
+<tr><td><code translate="no">decoded, not read</code> (décodé, non lu)</td><td>un décodage qui ne forme pas de phrases&nbsp;: montré, mais pas compté comme lecture</td><td>487</td></tr>
+<tr><td><code translate="no">not prose</code> (pas de la prose)</td><td>une table de chiffre, une liste de codes, des nombres ou des noms</td><td>61</td></tr>
+<tr><td><b>Toutes les entrées</b></td><td></td><td><b>2&#8239;299</b></td></tr>
+</tbody>
+</table>
+<p><b>La part de mots lus</b> (<code translate="no">read_share</code>) ne compte que les mots chiffrés. Dans une lettre qui mêle texte clair et chiffre, elle se mesure sur les mots écrits en chiffre&nbsp;; les mots en clair qui les entourent ne sont ni lus ni non lus et restent hors du numérateur comme du dénominateur.</p>
+<p>Seuls les mots sûrs comptent comme lus. Un mot est lu quand la clé le donne, ou le texte clair voisin, sans rien restituer. Un mot probable (<code translate="no">&#123;x&#125;</code>), un mot inféré ou restitué, un mot de note M et un code non valué sont des trous, de même qu’une lettre restituée à l’intérieur d’un mot. <code translate="no">read_share</code> vaut 1 moins la part des trous parmi les mots chiffrés. Elle est comptée par un script quand la lecture déclare son balisage.</p>
+<p>Le seuil de 95&nbsp;% s’applique aux mots chiffrés de chaque document. <b>Plancher des textes courts&nbsp;:</b> un document de moins de 40 mots chiffrés est <code translate="no">read</code> quand ses trous font au plus 5&nbsp;% de ses mots chiffrés ou au plus 2 mots, selon ce qui en permet le plus. Le plancher ne s’applique jamais à un texte de 40 mots ou plus, et la page et la fiche indiquent le nombre de trous et que le plancher a servi.</p>
+<p>Ce nombre compte les trous que le lecteur a marqués. Il ne dit pas si les mots lus sont justes.</p>
+<p><b>Le déchiffrement et la lecture sont deux fichiers.</b> Le déchiffrement est la clé appliquée à la transcription, signe par signe, sans aucune retouche&nbsp;: un mot que la clé donne faux y reste faux. La lecture est ce texte mis en phrases, et toute lettre ou tout mot que la clé ne donne pas pour les signes tels que transcrits y est marqué&nbsp;; les lettres marquées sont des trous. Un texte qui est un déchiffrement d’époque, une copie au net ou une édition est signalé comme tel. Cette règle date du 16 novembre 2026 (README, Conventions). Un audit des 54 cibles signalées par son script a trouvé des mots qui s’écartent de la clé, sans marque, dans 35 d’entre elles&nbsp;; des marques ont été ajoutées dans 31 cibles (858 endroits). Le script n’a pas pu comparer 757 textes sur 938 à leur clé&nbsp;: des lectures faites avant cette date peuvent donc encore contenir des modifications non marquées. L’audit est dans <a href="https://github.com/dbourdeau/cyphersolver/tree/main/research/decrypt_audit" rel="noopener"><code translate="no">research/decrypt_audit</code></a>.</p>
+<p>208 documents à l’état <code translate="no">read</code> n’ont pas de <code translate="no">read_share</code> enregistré. Pour eux, les 95&nbsp;% ne sont pas mesurés document par document.</p>
+<p>Le seuil de 95&nbsp;% est propre au projet. Aucune norme du domaine n’en fixe un.</p>
+<p>Un cas particulier. Dans un code lu avec la clé d’époque conservée, un groupe qui s’écarte d’un seul chiffre de la valeur qu’exige le sens compte comme lu, à trois conditions. L’erreur se voit sur l’image. Les autres groupes du mot viennent de la clé. Les groupes corrigés forment le mot entier. Le groupe est marqué <code translate="no">{+...}</code> dans le texte.</p>
+
+<h2 id="controles-statistiques"><span class="num">07</span> Le test statistique contre les faux positifs</h2>
+<p>Le risque&nbsp;: une clé qui a assez de valeurs libres peut produire des mots, même quand elle est fausse.</p>
+<p>Le test est <a href="https://github.com/dbourdeau/cyphersolver/blob/main/docs/_validate.py" rel="noopener"><code translate="no">docs/_validate.py</code></a>. Il donne un score à la lecture avec un modèle de lettres de l’époque (suites de 4 lettres). Puis il compare ce score à deux références&nbsp;:</p>
+<ul>
+<li>des clés tirées au hasard, de même structure&nbsp;;</li>
+<li>des clés ajustées par la même recherche sur le chiffré mélangé (6 mélanges).</li>
+</ul>
+<p>Une lecture <b>réussit</b> quand son score dépasse d’au moins 5 écarts-types celui des clés au hasard, dépasse toutes les clés ajustées sur le texte mélangé, et dépasse leur moyenne d’au moins 3 écarts-types.</p>
+<table>
+<thead><tr><th>Verdict</th><th>Sens</th><th>Fiches</th></tr></thead>
+<tbody>
+<tr><td><code translate="no">pass</code> (réussi)</td><td>les trois conditions ci-dessus</td><td>169</td></tr>
+<tr><td><code translate="no">weak</code> (faible)</td><td>au moins 1 écart-type au-dessus des clés ajustées sur le mélange, sans réussir</td><td>23</td></tr>
+<tr><td><code translate="no">underdetermined</code> (indécidable)</td><td>la recherche fait mieux que la lecture sur le vrai chiffré&nbsp;: le test ne tranche pas</td><td>26</td></tr>
+<tr><td><code translate="no">too short</code> (trop court)</td><td>moins de 40 symboles lus, ou moins de 80 lettres</td><td>13</td></tr>
+<tr><td><code translate="no">fail</code> (échec)</td><td>une clé ajustée sur le texte mélangé fait aussi bien</td><td>3</td></tr>
+<tr><td><code translate="no">not applicable</code> (non applicable)</td><td>transposition, texte clair non alphabétique, ou symboles à plusieurs valeurs (plus de 10&nbsp;%)</td><td>100</td></tr>
+<tr><td><b>Tous les verdicts</b></td><td></td><td><b>334</b></td></tr>
+</tbody>
+</table>
+<p>Les contrôles automatiques n’exigent pas ce test. Sur les 322 fiches dont la clé a été reconstituée ici et dont le texte a été obtenu en tout ou en partie, 67 n’ont pas de verdict&nbsp;: 66 sont des résultats de contributeurs extérieurs (43 George Lasry, 18 WAINUT, 4 Andrew Aymeloglu et 1 SeldomPhooey) et 1 est mixte.</p>
+<p>Ce que le test ne montre pas&nbsp;:</p>
+<ul>
+<li>il note des lettres&nbsp;: il ne vérifie ni le sens, ni une valeur de code proposée d’après le contexte&nbsp;;</li>
+<li>il ne tient pas compte du nombre de lectures testées&nbsp;;</li>
+<li>sur les textes courts et les chiffres homophoniques, il ne tranche souvent pas&nbsp;;</li>
+<li>à notre connaissance, aucun statisticien extérieur ne l’a examiné.</li>
+</ul>
+
+<h2 id="relecture"><span class="num">08</span> La note de lecture et la vérification humaine</h2>
+<p>Une <b>note de lecture</b> (<code translate="no">reading_review</code>) est enregistrée dans la fiche, document par document. Un lecteur a lu le déchiffrement comme des phrases. Il lui donne A ou B&nbsp;:</p>
+<ul>
+<li>A&nbsp;: des phrases cohérentes, avec des trous épars&nbsp;;</li>
+<li>B&nbsp;: cohérent mais brut (sans espaces, en capitales, en lignes de décodeur), et remis en forme dans la lecture ou la traduction.</li>
+</ul>
+<p>A et B ne sont pas des notes d’exactitude. Elles disent que le texte forme des phrases. Elles ne disent pas qu’il a été comparé aux images.</p>
+<p>La note est exigée pour les documents <code translate="no">read</code> et <code translate="no">read in part</code>. Le schéma admet une personne ou un modèle d’IA désigné comme tel. CONTRIBUTING veut que la note soit enregistrée par le relecteur, pas par l’auteur. Aucun contrôle automatique ne regarde qui l’a donnée.</p>
+<p><b>La plupart des notes A et B sont attribuées par un modèle d’IA.</b></p>
+<table>
+<thead><tr><th>Qui a signé la note</th><th>Entrées</th></tr></thead>
+<tbody>
+<tr><td>un modèle d’IA</td><td>1&#8239;429 (94&nbsp;%)</td></tr>
+<tr><td>une personne assistée d’un modèle d’IA</td><td>54</td></tr>
+<tr><td>une personne, sans modèle nommé</td><td>7</td></tr>
+<tr><td>on ne sait pas</td><td>36 (dont 2 désignent une édition publiée, pas un relecteur)</td></tr>
+<tr><td><b>Toutes les entrées notées</b></td><td><b>1&#8239;526, dans 554 fiches</b></td></tr>
+</tbody>
+</table>
+<p>Pour au moins 75 entrées, la fiche dit elle-même que le lecteur n’était pas indépendant du travail (par exemple, la même session). Au moins 155 autres sont signées par un agent qui travaille pour l’auteur de la lecture. Ces entrées ne remplissent pas, ou pas clairement, la règle de CONTRIBUTING.</p>
+<p>243 documents <code translate="no">read</code> ou <code translate="no">read in part</code> n’ont pas de note propre. Pour 234 d’entre eux, le contrôle reprend la note de l’audit des lectures du 22 octobre 2026, donnée par un modèle d’IA. 1 ont une note d’audit qui n’est ni A ni B, et 8 n’ont aucune note. Ils ne sont pas comptés dans le tableau.</p>
+<p><b>La seconde relecture d’une lecture est donc un lecteur-modèle, associé aux contrôles automatiques. Ce n’est pas une relecture humaine.</b></p>
+<p>La <b>vérification humaine</b> (<code translate="no">human_check</code>) est autre chose. Une personne compare un passage à l’image, sans aide de l’IA, et note le résultat&nbsp;: confirmé, corrigé ou en désaccord. C’est déclaré dans la fiche. Cela concerne 4 fiches (4 confirmés).</p>
+<p>Quand un caractère ou un alphabet est douteux, un contributeur peut faire des <b>relectures ciblées à l’aveugle</b>. Une personne voit seulement le signe douteux, découpé dans l’image, à côté de deux ou trois formes candidates. Elle ne voit ni la lecture attendue, ni la glose, ni le contexte. Elle choisit la forme qu’elle voit. Cela confirme ou infirme une valeur, une lecture ou un alphabet entier, sans le biais de connaître la réponse. C’est une vérification de la forme des signes, pas une relecture du texte, et elle est notée comme telle.</p>
+<p>100 fiches déclarent aussi une «&nbsp;independent verification&nbsp;»&nbsp;: quelqu’un d’extérieur au projet a vérifié la lecture sur les images ou avec sa propre clé. Ce champ ne dit pas si cette personne a utilisé un modèle d’IA.</p>
+<p>232 lectures dont la clé a été reconstituée ou rapprochée ici <a href="contributors.html#verify">attendent une vérification indépendante</a>.</p>
+<p class="cmuted"><b>Comment ces chiffres sont comptés.</b> Une entrée notée est un élément de <code translate="no">outcome.texts</code> dans la fiche <code translate="no">profile.json</code> d’une cible qui porte un <code translate="no">reading_review</code>, quel que soit son état. Seuls les fichiers <code translate="no">targets/&lt;dossier&gt;/profile.json</code> sont comptés. Le signataire est classé d’après le champ <code translate="no">by</code>&nbsp;: <i>modèle</i> s’il nomme un modèle d’IA, un agent ou une session d’IA et qu’aucune personne n’est nommée d’abord&nbsp;; <i>personne assistée d’un modèle d’IA</i> si une personne est nommée d’abord et dit qu’un modèle d’IA l’a assistée&nbsp;; <i>personne</i> si aucun modèle n’est nommé&nbsp;; <i>on ne sait pas</i> s’il ne nomme ni l’un ni l’autre («&nbsp;project verification pass&nbsp;»). «&nbsp;Non indépendant&nbsp;» et «&nbsp;agent qui travaille pour l’auteur&nbsp;» sont repérés par une recherche de mots dans <code translate="no">by</code> et <code translate="no">note</code>&nbsp;: ce sont des bornes basses. Compter par document ou par cible donne d’autres totaux. La règle est dans <a href="https://github.com/dbourdeau/cyphersolver/blob/main/docs/_method_page.py" rel="noopener"><code translate="no">docs/_method_page.py</code></a>.</p>
+
+<h3 id="signes">Un niveau de vérification&nbsp;: déchiffrement par IA, vérifié par une personne sur un échantillon de signes</h3>
+<p>Entre aucune vérification et une relecture complète sur les images, une lecture peut porter le niveau <b>Déchiffrement par IA, vérifié par une personne sur un échantillon de signes</b>. Un modèle d’IA a transcrit et déchiffré le texte. Une personne a ensuite choisi, à l’aveugle, la forme qu’elle voit pour un ensemble de signes, sur une planche de relecture&nbsp;:</p>
+<ul>
+<li>une règle écrite avant la construction de la planche, et datée avant toute réponse, choisit les signes&nbsp;: formes douteuses, signes dont dépendent plusieurs mots, groupes de code&nbsp;;</li>
+<li>chaque question encadre un seul signe sur sa ligne. Les options sont des formes découpées dans le même document, plus «&nbsp;aucune / autre forme&nbsp;», «&nbsp;illisible&nbsp;» et «&nbsp;pas un signe&nbsp;», qui laissent le mot marqué. Aucune glose, lecture, valeur ni aucun lieu n’est montré&nbsp;;</li>
+<li>au moins deux contrôles à réponse connue sont mêlés aux questions, pris à des endroits aussi difficiles que les cibles. La correspondance reste privée jusqu’à l’export des réponses.</li>
+</ul>
+<p>La fiche (<code translate="no">sign_check</code> dans <code translate="no">profile.json</code>) donne la date&nbsp;; qui a répondu, et si cette personne est du projet ou extérieure&nbsp;; ce qu’un modèle d’IA a fait (écrit la règle, découpé les vignettes, construit la planche, dépouillé les réponses, interprété les remarques libres)&nbsp;; combien de signes ont été vérifiés et comment ils ont été choisis (une section des NOTES de la cible)&nbsp;; combien de contrôles ont réussi&nbsp;; et les résultats&nbsp;: tels que transcrits, corrigés, non résolus, non comptés. La page d’une lecture le dit en une phrase, par exemple&nbsp;: «&nbsp;9 signes douteux vérifiés à l’aveugle par un membre du projet, sur une planche construite et dépouillée par un modèle d’IA&nbsp;; règle dans les NOTES&nbsp;; contrôles 2 sur 2&nbsp;; 2 tels que transcrits, 7 corrigés, 1 non compté (vignette fautive)&nbsp;».</p>
+<p>Une planche n’atteint le niveau qu’avec au moins 2 contrôles, tous réussis, et au moins 8 signes cibles une fois retirées les réponses touchées par une vignette fautive. Une réponse «&nbsp;aucune / autre&nbsp;» à un contrôle compte comme un échec. Ce qu’une réponse contredit est d’abord recodé ou marqué dans la lecture. Ce sont les règles du projet (README, Conventions&nbsp;; décision du propriétaire du 19 novembre 2026)&nbsp;: le vérificateur est nommé, et le libellé ne dit rien de la clé. La date de la règle et son empreinte SHA-256 identifient les critères enregistrés avant les réponses. Pour une planche commune, compter les signes de chaque cible séparément.</p>
+<p><b>Le niveau dit comment une lecture a été vérifiée, pas quelle part en est lue.</b> Il ne change jamais la classe, l’état ni la part lue&nbsp;: une lecture peut le porter et garder l’état <code translate="no">read in part</code>. Il vérifie la forme des signes, pas la clé, la valeur d’un code ni la lecture dans son ensemble. Les signes sont choisis parce qu’ils sont douteux&nbsp;: c’est un diagnostic, pas un échantillon tiré au hasard, et il ne dit rien des signes qui n’ont pas été montrés. Deux contrôles réussis disent peu de chose à eux seuls&nbsp;: un vérificateur qui a raison une fois sur deux les réussit tous les deux une fois sur quatre. Ce n’est pas une <code translate="no">human_check</code>, que le schéma définit comme une vérification sans aide de l’IA.</p>
+<p>Les premières lectures à le porter sont celles dont la clé a été construite sur une partie du matériau (le document ou des lettres sœurs du même chiffre) et a réussi un test sur un passage qui n’a pas servi à la construire, contre un seuil écrit d’abord&nbsp;; la page de la lecture donne l’historique des essais. Sur ces premières lectures, <b>le vérificateur est le contributeur</b> de la lecture, membre du projet, qui a répondu aux planches de ses propres lectures&nbsp;: la vérification n’est pas indépendante, et la fiche comme la page de la lecture le disent. 9 fiches portent une <code translate="no">sign_check</code> (15 planches, dont 4 au niveau et 0 remplies par une personne extérieure au projet). La planche de <code translate="no">ridolfi1646</code> compte au niveau et ne faisait pas partie du premier lot&nbsp;; les planches de <code translate="no">lopehurtado1520</code> et de <code translate="no">genes1638</code>, du premier lot, ne sont pas au niveau (leurs règles n’ont pas été hachées).</p>
+
+<h2 id="controles"><span class="num">09</span> Ce que les contrôles automatiques imposent</h2>
+<p>Deux contrôles tournent seuls sur GitHub (intégration continue, ou CI).</p>
+<table>
+<thead><tr><th>Contrôle</th><th>Quand il tourne</th><th>Ce qu’il vérifie</th><th>Ce qu’il ne vérifie pas</th></tr></thead>
+<tbody>
+<tr><td>Check write-ups</td><td>à chaque envoi sur <code translate="no">main</code> et à chaque demande de fusion</td><td>les en-têtes des pages, les liens morts et le balisage HTML&nbsp;; les tests unitaires des scripts</td><td>rien sur les lectures elles-mêmes</td></tr>
+<tr><td>Reading check</td><td>à chaque demande de fusion, sur les seules cibles qu’elle modifie</td><td>pour chaque document <code translate="no">read</code> ou <code translate="no">read in part</code>&nbsp;: une note A ou B (la sienne, ou celle de l’audit) et une traduction anglaise&nbsp;; un <code translate="no">read_share</code> d’au moins 0,95 pour un document <code translate="no">read</code>, s’il est enregistré&nbsp;; l’accord entre la classe de la cible et l’état de ses documents</td><td>qui a donné la note&nbsp;; le test statistique&nbsp;; le témoin&nbsp;; toute comparaison avec les images&nbsp;; les cibles que la demande ne touche pas</td></tr>
+</tbody>
+</table>
+<p>Les autres règles (le test statistique, le crédit des lectures antérieures, la vérification humaine, la grille du catalogue) sont vérifiées par des scripts lancés à la main. Elles ne bloquent pas une fusion.</p>
+<p>Aujourd’hui, 2 des 665 cibles qui présentent une lecture ne passeraient pas le Reading check si une demande de fusion les modifiait.</p>
+<p><b>L’intégration.</b> Une modification d’un résultat entre dans le dépôt par une demande de fusion approuvée par un mainteneur qui n’en est pas l’auteur (CONTRIBUTING, «&nbsp;Review and merging&nbsp;»). Un jeu de règles sur la branche <code translate="no">main</code> en applique une partie&nbsp;: il exige une demande de fusion et la relecture d’un responsable du code (<a href="https://github.com/dbourdeau/cyphersolver/blob/main/.github/CODEOWNERS" rel="noopener"><code translate="no">CODEOWNERS</code></a>), mais pas que les deux contrôles passent, ce que CONTRIBUTING demande aussi. L’administrateur du dépôt et la reconstruction automatique du site (par une clé de déploiement) peuvent envoyer sur <code translate="no">main</code> sans demande de fusion, et le propriétaire l’a fait directement&nbsp;: la règle ne s’applique donc pas à toute modification.</p>
+
+<h2 id="ia"><span class="num">10</span> La part de l’IA</h2>
+<p>Les fiches nomment les modèles d’IA qui ont fait le travail (<code translate="no">conditions.models</code>). Elles disent ce qu’a fait la personne (<code translate="no">conditions.human_role</code>)&nbsp;: fournir des images ou des accès, indiquer une source, corriger une lecture.</p>
+<p>Les scripts, les clés et les transcriptions sont versionnés. Le README donne les commandes qui reproduisent deux résultats.</p>
+<p>Une étape faite par un modèle d’IA ne peut pas être rejouée à l’identique&nbsp;: transcrire une image, proposer une valeur de code d’après le contexte. Les modèles sont propriétaires.</p>
+<p>Le coût de chaque résultat (usage des modèles, argent, temps humain) n’est pas publié.</p>
+
+<h2 id="corrections"><span class="num">11</span> Corrections et contestations</h2>
+<p>Toute lecture peut être contestée ou vérifiée.</p>
+<p>Sur GitHub, le <a href="https://github.com/dbourdeau/cyphersolver/issues/new?template=verification.yml" rel="noopener">formulaire Verification</a> demande le passage et les images utilisées, chaque point où votre lecture s’accorde avec la page ou s’en écarte, et les valeurs de clé que vous changeriez.</p>
+<p>Sans compte GitHub, écrivez par <a href="contribute.html#email">courriel</a>.</p>
+<p>Chaque article porte à son pied un lien «&nbsp;Contest or verify this reading&nbsp;». Indiquez le passage, les images, et les endroits où votre lecture diffère. Aucun délai de réponse n’est promis.</p>
+<p>Une correction est portée sur la page avec sa date, reste dans l’historique du dépôt et est inscrite au <a href="corrections.html">journal des corrections</a> (en anglais)&nbsp;: la date, les pages, ce qui a changé, qui l’a signalé et pourquoi c’était faux. Le journal commence le 16 novembre 2026.</p>
+
+<h2 id="chercheurs"><span class="num">12</span> Pour les chercheurs, et comment citer</h2>
+<p>Cryptologues, paléographes, archivistes et historiens peuvent&nbsp;:</p>
+<ul>
+<li>vérifier une lecture sur les images (<a href="contributors.html#verify">la liste en attente de vérification</a>)&nbsp;;</li>
+<li>prolonger une lecture partielle (<a href="further.html">Read further</a>)&nbsp;;</li>
+<li>consulter un document dans son service d’archives (<a href="archives.html">To the archive</a>).</li>
+</ul>
+<p>Les contributions sont créditées dans la fiche (<code translate="no">outcome.credits</code>) et sur la page <a href="contributors.html">Contributors</a>.</p>
+<p>Chaque article a un bloc «&nbsp;Cite this page&nbsp;» avec une notice BibTeX&nbsp;: la date de mise en ligne, celle de la dernière modification et le commit du dépôt dont le site est issu. Une page peut changer à la même adresse&nbsp;: citez le commit et la date de consultation. Il n’y a pas de DOI.</p>
+
+</main>
+<footer><div class="in">
+  <span>Daniel Bourdeau, September 2026 &middot; Text released under CC BY 4.0</span>
+  <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
+</div></footer>
+<script src="site.js?v=8e3ff372"></script>
+</body>
+</html>
