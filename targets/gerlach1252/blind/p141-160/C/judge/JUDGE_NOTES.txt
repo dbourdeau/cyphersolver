@@ -1,0 +1,83 @@
+JUDGE NOTES: Gerlach, Occulta scripta chymica (Wellcome MS.309), decode of pp.151a-157a, 158-160
+Judge: independent strict judge, one pass. Read only BRIEF.txt and decode.txt. Decode scored as written, not emended.
+
+UNIT RULES
+- One unit = one decoded letter a-z, or one '_' / '#' (unknown sign, always N).
+- '?' after a letter: '?' itself not counted; the letter is judged on its merits.
+- Text in { } (clear-script B A M D) excluded. Punctuation (; . : =) not counted.
+- Words re-segmented by the judge; words split across lines are judged as whole words, letters counted on their own line.
+- S = letter in a word that reads as 16th-c. German / Latin chemical term (period spellings allowed: u for v, ck/gk endings,
+  gemolet/gemalet, mol, oell, uir, ihar, erbeiten, bodem, lem, nim).
+- E = the wrong letter in an otherwise sense word (substitution or one extra letter). Two wrong letters in one word = 2 E.
+- N = letter with no sense. Missing letters (renes, greiniget, a-lenthalben, m-chen, ren, wer-g-n) have no unit to score
+  and are not counted; they are listed below.
+- Long-s convention: the decode writes 'f' where the word needs s / ss / sz (difem, weifen, lafet, daf, wafer, gifet, mufet,
+  dafelbige, frefen, schlifet, ingresuf, ingrfus ...). It is consistent across all pages, so it is scored S as the
+  decode's rendering of long-s / sz. 30 such letters. Sensitivity figure given below.
+- Page-opening fragment 'lewege' (p.151a L01, tail of allewege) scored S.
+- Marking in judge.tsv column 3: [x] = E letter, <x> = N unit, ^f = f read as long-s (S).
+
+TOTALS (S, E, N; strict = S/(S+E+N))
+p.151a  421  3  0   421/424 = 99.29%
+p.152a  470  7  0   470/477 = 98.53%
+p.153a  420  9  0   420/429 = 97.90%
+p.154a  246  2  0   246/248 = 99.19%
+p.155a  275  3  0   275/278 = 98.92%
+p.156a  439  4  0   439/443 = 99.10%
+p.157a  414  3  0   414/417 = 99.28%
+p.158   442  3  0   442/445 = 99.33%
+p.159   431  1  1   431/433 = 99.54%
+p.160   407  6  0   407/413 = 98.55%
+Sum S = 421+470+420+246+275+439+414+442+431+407 = 3965
+Sum E = 3+7+9+2+3+4+3+3+1+6 = 41
+Sum N = 1
+Units = 3965+41+1 = 4007
+OVERALL strict = 3965/4007 = 98.95%
+Sensitivity: if the 30 long-s 'f' letters were scored E instead of S: (3965-30)/4007 = 3935/4007 = 98.20%.
+Letter totals per line were checked by script against decode.txt (all 208 lines match).
+
+ALL E AND N UNITS (41 E, 1 N)
+151a: ge[e]schwinde; t[r]t (tut); [l]olbelein (kolbelein)
+152a: in[e] (ins); so[u]is (solis); se[b]ten (seiten); m[a]t (mit); hase[e]nfusichen; wi[i]der; teil[l]
+153a: sub[e]imiret (sublimiret); [w]llewege; tzwantzig[i]k; mol[l]; [g]lar (klar); christal[g]; d[w]s (das);
+      ph[o]losophorum; m[d]che (mache)
+154a: [p][u]ltzern (holtzern)
+155a: [r]ttem (guttem); d[w]umen (daumen); kugel[l]
+156a: [r]nsers (unsers); k[r]gel (kugel); zei[b]net (zeichnet); er[l]ennen (erkennen)
+157a: [l]ar[t]tet (read as wartet; 2 E); wer[g]n (werden)
+159:  kolbe[s] (kolben); dafel<_> (unknown sign, N)
+160:  d[g] (den); [t]aser (waser); gol[s] (golt); [l]m (im); wi[d] (wie); si[t] (sie)
+Omissions noted (not scored): renes (reines), greiniget, a-lenthalben, m-chen (machen), ingrfus / ingresuf (ingressus),
+ren (rein), wergn (werden), uir (vier, period form).
+
+RECURRING SLIPS
+- r for u (trt, rttem, rnsers, krgel): 4.
+- w for a (wllewege, dws, dwumen): 3. l for k (lolbelein, erlennen) and l for i/w (lm, larttet).
+- Doubled final l (teill, moll, kugell) and doubled vowel (geeschwinde, haseenfusichen, wiider).
+- f for long-s / sz throughout (convention, scored S).
+
+GISTS (recipe level only)
+p.151a: End of a preceding step (closed with the clear-script B.A.M.D. mark).
+        Then the start of a recipe for purifying 'mercurius solis' by grinding it with prepared salt of tartar
+        and subliming it in a small coated flask.
+p.152a: Continuation: the sublimation of the mercurius solis, collecting the sublimate from the helm and flask,
+        and repeating the grinding with fresh salt of tartar.
+p.153a: The repeated sublimation brings the mercurius solis to a clear, crystal-like purity; thanks to God (B.A.M.D.).
+        Then a note that the purified mercury is now ready to be set in to make the philosophers' stone.
+p.154a: Heading: how the wooden ball (kugel) should be made and the small glass set in it.
+        Instructions for sealing the purified mercury, in God's name, in a thick Venetian glass.
+p.155a: How full the glass is to be, and a recipe for the oak-wood ball in two fitted halves to hold it
+        (refers to a drawing).
+p.156a: Fitting and padding the glass inside the ball with cotton wool, marking which side is up,
+        and laying it in a box of warm horse dung.
+p.157a: The digestion: the matter turns to a thick water or oil, then shows all the colours, and comes to its end
+        with God's help (B.A.M.D.). New heading 'Ingressus': it is a very fine prepared gold calx, made so it will take the tincture.
+p.158:  Recipe for the gold calx begins: gold alloyed with silver, granulated, parted in aqua fortis (schedewasser),
+        and the gold residue washed and dried.
+p.159:  The gold so purified by quartation is dissolved in aqua regis and worked together with prepared
+        common salt in the flask.
+p.160:  The spirit is driven off, the salt washed out with distilled water until a fine gold calx remains,
+        and a description of the vessel to hold it (two-piece, round, on three legs; refers to a drawing).
+
+ANYTHING UNUSUAL
+- Text reads as continuous, coherent sense across all ten pages; the only unknown sign is the '_' on p.159 L03.

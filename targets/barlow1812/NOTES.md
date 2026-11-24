@@ -57,8 +57,9 @@ How the table grew:
    Madison to Barlow, 11 August 1812; Barlow to Madison, 26 September 1812, each deciphered between the lines at
    the time. 655 numbers.
 3. **Blind check (21 Nov 2026).** Every source re-read by two AI readers who saw only the images; section 7.
-   649 numbers, of which 623 have a value from a decipherer and 21 a word; the other five occur only in the
-   passages read here.
+   644 numbers in `key.tsv` (recounted 24 Nov 2026), of which 623 have a value from a decipherer and 21 are seen only
+   inside a word. This line read 649 numbers, "the other five" occurring only in the passages read here; nothing in
+   the folder gives 649, and the open numbers of the passages are nine, none of them in `key.tsv`.
 
 ## 4. Transcription
 
@@ -244,6 +245,89 @@ Images were read by AI agents (model ids in `profile.json`) in strips at full re
 transcriptions; the scripts and the full evidence set are in the contributor's project files and can be supplied.
 `decode.py` in this folder needs only the standard library.
 
+**Statistical validation, 24 Nov 2026 (at integration of PR #878; an AI agent for the maintainers, not a person).**
+`mk_validation.py` writes `validation.tsv` from `decryption_1812-09-25.txt` and `decryption_1812-10-25_A.txt`: 110 numbers,
+each with its `key.tsv` value; the 9 with only a proposal or no value are unread, struck-out numbers are left out, and
+copy B, which repeats copy A, is not added. `python docs/_validate.py barlow1812 --write` (model en-modern): 101 read
+tokens, 68 types, 251 letters; reading -2.064 per letter; random keys of the same structure -2.859 (best -2.603, z 6.4);
+a key refitted to the shuffled text -1.901 (best -1.879); the same annealer on the real text -1.827. Verdict:
+**underdetermined**. The reading is far better than a random key, but a key fitted freely to shuffled text scores
+better than the reading, so on 251 letters the letter model cannot tell this reading from an overfitted one. The
+test neither confirms nor contradicts the key; what supports it is the decipherments of the time it was rebuilt from
+(section 3) and the blind check of section 7. Recorded in `profile.json` (`outcome.validation` and a solution step; the
+script dated them 23 Nov by the machine's clock).
+
+## 10. Escalation steps at the write-up (24 Nov 2026; an AI agent for the maintainers, not a person)
+
+Made before the page was written, to see whether the open numbers could still be had from material that is online.
+None of these steps changes a reading or the read count.
+
+- **Other letters in the code.** Founders Online, the Madison and Barlow correspondence from 17 November 1811 to
+  26 September 1812: fifteen letters, of which the editors' source notes mark code in two only (Madison to Barlow,
+  11 August 1812; Barlow to Madison, 26 September 1812), both already among the ten key letters. (The pages were
+  searched for the editors' words "encoded", "decoded", "code", "cypher"; the letters were not each read through.)
+  The text-layer triage of the National Archives' RG 59 films (`research/nara_triage_a`, a sample, not a full
+  reading) lists no coded frame of 1810-1814 that could be this code outside M34 roll 16: roll 15 frame 0314 (1810)
+  is in Armstrong's code (972 = the), M35 roll 3 is J. Q. Adams's, M34 roll 17 is Crawford's of 1813.
+- **Cryptiana and DECODE.** S. Tomokiyo, "State Department Code: 1797-1866" (cryptiana.web.fc2.com/code/state.htm,
+  read on 24 Nov 2026 through a page-summary tool, not line by line), names a THE=1700 code for Barlow's letter to
+  Madison of 26 September 1812 (key not found) and for Thomas Barlow's letter of 10 February 1813, and says the
+  French deciphered most of the former. It gives no table and neither letter of this folder. The duplicate search
+  (`known.py "Joel Barlow"`) finds no DECODE record.
+- **Known tables, number by number.** The code tables held in the repository were set against `key.tsv`: the State
+  Department sheet WE028 (`../morris1813/beling/key/codebook_M97_13_transcription.csv`, 576 numbers in common), 419
+  rows of WE025 (`../poinsett1813`, `../crawford1814`; 150 in common), Armstrong's code (`../armstrong/key972.js`, 218), Rufus
+  King's (`../king1797`, 269) and the table of `../jqa` (434). In none of them does a number have the value it has
+  here. Weber's other printed tables are not in the repository and were not tested.
+- **The word list is that of the State Department sheet.** 584 of the 623 values are entries of the WE028 sheet, and
+  short runs stand in the same order at the same spacing (133 ti, 137 tin, 138 tion here; 560, 564, 565 on the
+  sheet). The two codes are numberings of word lists of one family. This code is not that sheet and not a
+  reordering of its blocks: the spacing drifts (den to di is 5 numbers here and 10 on the sheet).
+- **Test of the open numbers by their place in the list** (`we028_structure_plan.md`, written before the run;
+  `we028_structure.py`; `we028_structure.tsv`). Control: each of 571 valued numbers left out and predicted from its
+  neighbours. Only 47 could be predicted by the rule (the plan asked for 100), and 43 of them were right (0.915; the
+  plan asked for 0.95). **The test did not reach its marks, so no value is taken from it.** The four misses (320
+  as/ast, 704 de/demand, 862 army/same, 1047 port/bat) may be errors of the table and not of the order; 862 is the
+  conflict already listed in `key.md`. They were not followed up. What the order shows for each open number is
+  given as a remark only (grade I, inferred from position, which the read count does not take). By the rule the test
+  made no prediction for eight of the nine numbers (the neighbours below and above point to different entries), and
+  its one interpolated value, aph for 531, is not the word the sense needs (`we028_structure.tsv`). The remarks:
+  - 815: 812 is ning, and the sheet runs ning, ninth, nish, nity, nk (446-450). In the key letters 814 stands in
+    "Spanish" and 816 in "think" (`key_evidence.tsv`), which are nish and nk at the sheet's spacing. Counting from
+    812, 815 would fall on nity, the proposal from the sense; counting from 818 (no) above, it would fall on fix.
+  - 537 and 531: here ar is 535 and are 538; the sheet has ar, an unread entry, arch, ard, are (680-684), so 537
+    would be arch counting from 535 and ard counting from 538. 531 stands between ap (530) and appear (532), where
+    the rule gives aph, not ard. This does not settle which copy is wrong: the test failed its control, and the
+    contributor's note above (in regard) leaves it open.
+  - 624: between like (623) and live (625), where the sheet has ling and little. Consistent with little.
+  - 1567: between journ (1564) and know (1568), where an entry in k belongs. The sheet breaks off there and gives
+    nothing more.
+  - 1404: between ge (1403) and great (1405). The sheet's entry before great is gre, which gives pro/gre/s: the
+    same word, with the value gre where `proposals.tsv` has gres. Counting from 1403 below it would be ged.
+  - 706: the number next after den (705), four numbers before di (710). The sheet has dent, dep, depart, depend,
+    der, des, design, det, dev between den and di, so det directly after den is out of the order unless this list
+    lacks the entries before it. We see no other word for [706]/er/min/ed, and both copies have 706. The proposal
+    stands, with this doubt.
+  - 103: between dispose (102) and done (105); the rule gives dist from below and dom from above, not ti. 133 is ti
+    in the key, so copy A's 103 may be a slip for 133 (i/us/ti/ce). The word is read from copy B in any case.
+  - 163: between yet (156) and the comma (168). The sheet gives nothing.
+- **The note of June.** The Madison edition (Presidential Series 5:354-57, n. 5, read on Founders Online) identifies "my note of the fifth
+  June" in Barlow's private letter of 26 September as his letter of 5 June 1812 to the Duke of Dalberg, enclosed in
+  his despatch to Monroe of 13 July 1812; of "my note of the 11th June" earlier in the same letter it says the note
+  has not been found (n. 3). Section 6 above says both places are the pair 939 1126. By its place in the list 939
+  stands among the words in fif- (933 fi and 935 ficial here; fi 330, ficial 332, fifteen 336, fifth 337 on the
+  sheet), so "11th" may be the decipherer's slip and both places may mean the note of 5 June (a remark from position
+  only; `key.md` keeps 939 as an open conflict). If the despatch of 25 September speaks of the same note, [163]th
+  would be "5th". Nothing gives 163 a value, and it stays
+  unread. The enclosure was not looked for on the roll, and the Library of Congress images of the letter of
+  26 September were not opened here.
+- **Images.** Frames 0232 and 0241 were fetched from the National Archives Catalog and 163 (232R16), 103 (24103)
+  and 531 (24106) looked at enlarged, with no overlay: each is clear and is as transcribed.
+- **One key, one target.** Both letters use the same code (1700 the, 631 of, 1114 in and the four numbers of
+  "imperial", 1039 1627 1014 1132, stand in both).
+  `targets/barlow1807` is not related: it is Sir George Barlow at Fort William in 1807 (catalogue 1245), another
+  writer and another cipher.
+
 ## Transcription doubts
 
 Every code number that is blotted, or on which one of the AI readings differed. "transcription" below means the
@@ -275,10 +359,15 @@ All checks were made by AI agents on enlarged strips of the frames, with no over
 
 One line per open piece (detail in sections 4 and 6):
 
-- 815 (twice), 1567 and 1404 in the September letter; 624, 706 and 103 in the note to Bassano - blocker: open-codes; no decipherer of the time gives them a value and they occur nowhere else in the ten key letters; each has a value from the sense in `proposals.tsv`, marked [?] in the readings.
-- 163, the day in "my note of the [163]th June" - blocker: open-codes; no value and none proposed; Madison's decipherment of the sister letter gives the day once as 11th and once as fifth.
-- 531 (copy A) or 537 (copy B) in "regard" - blocker: open-codes; the two copies differ in this one number and neither has a value.
+- 815 (twice), 1567 and 1404 in the September letter; 624, 706 and 103 in the note to Bassano - blocker: no-key-material; no decipherer of the time gives them a value, they occur nowhere else in the ten key letters, no sheet of this code is known, and no other letter in the code with a decipherment is online (section 10); each has a value from the sense in `proposals.tsv`, marked [?] in the readings; by their place in the list five of the seven fit and 706 and 103 are in doubt (section 10).
+- 163, the day in "my note of the [163]th June" - blocker: no-key-material; no value and none proposed; the note meant is probably that of 5 June 1812 (section 10), but nothing gives the number a value.
+- 531 (copy A) or 537 (copy B) in "regard" - blocker: no-key-material; the two copies differ in this one number and neither has a value from a decipherer; by its place in the list 537 is ard and 531 a copyist's slip (section 10).
 - The blotted group after 745 in the September letter (232R12) - blocker: illegible; overwritten, only the last digit is clear; read 761 ("s") from the word.
+- 1353 written like 1553 (232R14) and the blotted 750 (23301) - blocker: illegible; miswritten or blotted on the only film of the only copy, and read from the word ({+exp}ected, mod{+e}); each word is counted as a hole.
+- "the" before United States, written like 1780 (232R19) - blocker: illegible; a whole-word number, so no neighbour can confirm the digit on the only film; marked [?the].
+
+The thirteenth hole, wel{+l} in the note to Bassano, is not a gap that anything could close: the key gives "wel" for
+896, the second l is supplied, and the rule counts a word with a supplied letter as a hole.
 
 Not gaps in the text, but limits of the checking: every reading of the numbers so far is by AI agents (four
 readings of each number in these letters, six with the verifier and the reviewer; three of each in the key's
@@ -290,16 +379,17 @@ Princeton copy of Monroe to Barlow, 16 June 1812 (lead 1279), would add occurren
 
 ## Escalation
 
-- [x] siblings: all 296 frames of M34 roll 16 opened; coded text only on frames 11, 232-233, 240-247, 249-250 and 291-295, all used; four more letters in the code found outside the roll (Library of Congress and a sale photograph)
+- [x] siblings: all 296 frames of M34 roll 16 opened; coded text only on frames 11, 232-233, 240-247, 249-250 and 291-295, all used; four more letters in the code found outside the roll (Library of Congress and a sale photograph); 24 Nov 2026: the fifteen Madison and Barlow letters of 1811-1812 on Founders Online have code in two only, both already used, and the RG 59 triage lists no other frame in this code (section 10)
 - [x] clear-pages: frames 15-16 are the State Department's decipherment of frame 11 (used for the key); no clear copy or decipherment of either letter read here is on the roll; the two copies of the note to Bassano compared with each other
-- [x] known-keys: no key sheet for this code is known; it is not the JQA code that Crawford used from Paris in 1813 (there the = 1385 and of = 1576; here the = 1700 and of = 631)
-- [x] print: section 8 (American State Papers, Wait, Todd, the Monroe and Madison editions, Brant 1958, Weber 1979; exact-phrase searches of Founders Online, Internet Archive, HathiTrust and Google Books); four later books not read page by page
-- [x] key-rebuild: 623 values rebuilt from ten letters deciphered at the time; every source read again by two AI readers and 56 misread numbers corrected (section 7)
-- [x] retry: the nine open numbers looked for in all ten key letters after the corrections: none occurs there; "justice" recovered from copy B's different spelling
+- [x] known-keys: no key sheet for this code is known; it is not the JQA code that Crawford used from Paris in 1813 (there the = 1385 and of = 1576; here the = 1700 and of = 631); 24 Nov 2026: the WE028 sheet, the held rows of WE025, Armstrong's code, King's code and the JQA table compared number by number, no number with the same value (section 10); Weber's other printed tables not held and not tested
+- [x] print: section 8 (American State Papers, Wait, Todd, the Monroe and Madison editions, Brant 1958, Weber 1979; exact-phrase searches of Founders Online, Internet Archive, HathiTrust and Google Books); four later books not read page by page; 24 Nov 2026: the Madison edition's notes to the letter of 26 Sep 1812 identify the note of 5 June 1812, and Tomokiyo's Cryptiana article on the State Department code names the THE=1700 code with no table (section 10)
+- [x] key-rebuild: 623 values rebuilt from ten letters deciphered at the time; every source read again by two AI readers and 56 misread numbers corrected (section 7); 24 Nov 2026: the open numbers tested by their place in the word list of the State Department sheet, the test did not reach its marks and no value is taken from it (section 10)
+- [x] retry: the nine open numbers looked for in all ten key letters after the corrections: none occurs there; "justice" recovered from copy B's different spelling; 24 Nov 2026: 163, 103 and 531 looked at again on the frames, each as transcribed
 
 ## Files
 
 `profile.json`, `NOTES.md`, `key.tsv`, `key.md`, `key_evidence.tsv`, `proposals.tsv`, `decode.py`,
 `transcription_1812-09-25.txt`, `transcription_1812-10-25_A.txt`, `transcription_1812-10-25_B.txt`,
 `collation_copyB.md`, `decryption_1812-09-25.txt`, `decryption_1812-10-25_A.txt`, `decryption_1812-10-25_B.txt`,
-`reading_1812-09-25.md`, `reading_1812-10-25.md`.
+`reading_1812-09-25.md`, `reading_1812-10-25.md`. Added by the maintainers on 24 Nov 2026: `mk_validation.py`,
+`validation.tsv` (section 9); `we028_structure_plan.md`, `we028_structure.py`, `we028_structure.tsv` (section 10).

@@ -419,6 +419,14 @@ or emended letter is a hole. The first count of 21 Nov had taken intention[s], e
 - Adams's own letterbook copy (Adams Papers microfilm reel 136, Massachusetts Historical Society) was not seen. It should
   carry the plain words and would settle the holes.
 
+**Integration review, 23 Nov 2026 (PR #885; an AI agent for the maintainers, not a person).** The three texts were decoded
+again from the sheet transcription with a separate lookup: `key_we028_no85.tsv` agrees with the sheet on all 90 rows and the
+output equals the code-sheet blocks of the three decryption files. The readings were read as sentences against Ford's clear
+text on each side and the counts recounted (15 of 17, 19 of 23, 50 of 55). `reading_review` grade B is recorded on the three
+texts in profile.json. The film was not looked at in this pass. The page `docs/jqa.html` has the new section 05.
+
+**Page re-read, 24 Nov 2026 (after PR #904; an AI agent for the maintainers, not a person).** `docs/jqa.html` was read against this file and `profile.json`. Section 4.3 (the contributor's) gives the registered miss (0.730) first, then the 0.81 of each blind reading alone, then the filtered 0.853. Changed on the page: the table of contents lists section 05; the glance box credits the 1810 test and names its result a miss; section 4.3 says the order of plan and run rests on local file times, adds 1185 = Sles-wick, that No. 29 is not read and that the 1980 volume was seen only through full-text search; the 1185 line and the 'reel 2 frame 0155' line of "What remains open" (frame 155 is passage C of No. 24, which has a period decipherment); Sources lists reel 2 frames 137-189, Ford vol. 3, the 1980 volume, Cernovodeanu and `beling1810/`. `profile.json`: a verification credit for the 1810 test. Not checked: the witness texts against Ford vol. 3 or the film; the 0.816 and 0.814, which have no output file in the folder.
+
 ## Adams's despatches of 1810 (held-out test, 22 Nov 2026)
 
 Andrew Beling, with AI agents; files in `beling1810/` (README there). Nothing outside that folder changes the table,
@@ -580,7 +588,7 @@ For No. 85 (the three files of 21 Nov 2026). The doubts of No. 88 are in the sec
 - gap88 l.2 a group cut by the gutter after 908 (Chancellor's ... and advice), not in gap88.txt - blocker: needs-physical-access; frame 0206, left leaf, line end (14 Nov 2026)
 - rem88 l.6 669 for 569 to: a one-digit slip on the image, but a whole word, so not covered by the one-digit rule - blocker: needs-physical-access; only the original or the duplicate could show 569 (14 Nov 2026)
 - rem88 l.5 1508 before [pre]-liminary - blocker: no-key-material; the M97 sheet gives acious / account, which does not fit 'as a pre-' (14 Nov 2026)
-- rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; the M97 sheet gives wick (14 Nov 2026); the image shows 1185 and a stroke cut by the gutter
+- rem88 l.9 1185 ('He [took?] it as a demonstration') - blocker: no-key-material; the M97 sheet gives wick (14 Nov 2026); the image shows 1185 and a stroke cut by the gutter. 22 Nov 2026: in the 1810 test 1185 aligns with Sles-wick in No. 25-D (alignment output, not checked on the film), which supports the sheet value and does not help here
 - rem88 l.11 570 ('it tol he said'): the M97 sheet gives tol / toe, which does not read; the image shows 570, not 500 (was) - blocker: no-key-material
 - no85_three_lines l.2 116x (ex-..-ed: pound 1160 or plain 1138) - blocker: illegible; last figure blotted on frame 0197 (21 Nov 2026)
 - no85_three_lines l.3 1626 (indemnified ... Norway): no such number; in (1426) is one digit away but a whole word - blocker: needs-physical-access; only the original or the letterbook copy could show what was meant (21 Nov 2026)

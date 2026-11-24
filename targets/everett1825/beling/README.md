@@ -54,8 +54,9 @@ runs on pp. 4 and 5 where the two transcriptions have different groups.
 
 ## The film check (`film_check/`)
 
-Every one of the 27 differing groups and the three runs was cut from the catalog JPEGs (`film_check/crops/`, at
-the frame's own resolution; the pixel box of each is in `film_check/readings.tsv`), together with eight groups where
+Every one of the 27 differing groups and the three runs was cut from the catalog JPEGs (at the frame's own
+resolution; the pixel box of each is in `film_check/readings.tsv`; the crops were removed from the repository by the
+maintainers on 24 Nov 2026, with the contributor's agreement, and can be cut again from the boxes), together with eight groups where
 both transcriptions agree, as controls, and the "ity" insertion. The positions were written down before any
 reading, without the candidate values (`film_check/positions.tsv`). An AI helper agent that had seen nothing
 else was given only the crops (shuffled, under neutral ids) and the question "what number is written": all 39
@@ -90,12 +91,12 @@ read bar on the strict count), and the missing p. 18 line. None of this is appli
 - `comparison_with_dudout.tsv`: the 27 groups and three runs, with both transcriptions, both values, the period
   decipherment's word, the two blind readings, and which the film supports.
 - `film_check/positions.tsv`: the places and pixel boxes, written before the readings, with no candidates.
-- `film_check/readings.tsv`, `film_check/crops/Q01.jpg` - `Q39.jpg`: frame links, pixel boxes and the readings
-  with their stated confidence.
+- `film_check/readings.tsv`: frame links, pixel boxes and the readings with their stated confidence. The crops
+  `Q01.jpg` - `Q39.jpg` are not committed (removed 24 Nov 2026); cut them from the boxes.
 - `scripts/compare.py`: regenerates the counts above (`--list` prints every difference). Standard library only.
 
-The microfilm is a NARA publication of federal records, in the public domain; the crops total about 400 KB and the
-frames are linked, not committed.
+The microfilm is a NARA publication of federal records, in the public domain; the frames are linked, not committed,
+and the crops (about 400 KB) are no longer committed either.
 
 ## Not done
 

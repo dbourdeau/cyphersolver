@@ -5,7 +5,9 @@ Status: in progress
 22 Oct 2026, reading audit (George Lasry's test: can sentences be built and translated?): only **R4940's two
 cipher spans read** ("votumiok", "niert dolog volna", 23 letters). **R4936, R4937 and R4942 are decoded, not read**:
 the mechanical decode and the solver outputs are letter streams with garbled words, no sentences. About 1% of the
-transcribed cipher letters read. (Superseded 23 Oct 2026: R4936, R4937 and R4942 read, see the b15 block below.)
+transcribed cipher letters read. (Superseded 23 Oct 2026: R4937 and R4942 read, see the b15 block below. R4936, read at
+b15, went back to decoded, not read at the verify sweep of 23 Oct 2026 and is still decoded, not read; the g/q shape
+check of 24 Nov 2026 is at the end of this file, and the state is left to the reviewer.)
 
 **Split on 14 Oct 2026 (one-key rule, George Lasry).** This target first grouped the ten records R4933-R4942 by their
 DECODE number range. It now keeps the Keresdi Bethlen letters in the alphabet family of R4936/R4940 (R4936, R4940, and
@@ -66,11 +68,11 @@ fraction_read 0.59 (estimated; R4938 and R4939 untranscribed).
 
 ## Remaining gaps
 
-- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026): 130 letters (6.7%) on look-alike alternates, mostly t on g-shaped figures, plus five [?words] and two unread runs (l. 9, l. 16) - blocker: illegible; the DECODE scan (1,704 px, no larger file) does not separate the hand's g and q at 3x, and no contemporary or printed text confirms the choices
+- R4937, R4942 read 23 Oct 2026 (b15). R4936 decoded, not read (verify sweep 23 Oct 2026; state unchanged by the 24 Nov 2026 shape check below): 26 letters (1.3%) still on look-alike alternates after the check (12 doubtful g=t places, 5 q=u, 3 c=y, 3 g=g, a, h, n), four u written with the hook (g=u:hook), 94 g->q relabels made by an AI pass that count as probable until a blind reader checks them, eight [?words] and three [...] runs (reading lines 9, 16, 22) - blocker: illegible; the DECODE scan (1,704 px, no larger file) leaves 17 g-shaped places undecided at 3-4x, and no contemporary or printed text confirms the choices
 - R4937 l. 3 run after 'megsegni' and the end of l. 13 - blocker: illegible; decode to letter strings that are not words, checked at 2.2x
 - R4938 (1647): three cipher spans (54 letters) decoded with the family key 23 Oct 2026; one word ('ailunkker') unread - blocker: too-short (occurs once). The clear letter around the spans is not transcribed (clear text, not a cipher gap).
 - R4939 (1648): read 23 Oct 2026 (r2h); lines 03-09 keep about 12 unread words - blocker: illegible (figures decode to non-words with every look-alike pair tried, 3x crops of the 1,704-px scan; no printed text).
-Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not read (illegible look-alikes); R4938's spans decoded, one word too short. No gap is left not-attempted (23 Oct 2026). R4939 is a different cipher (own key and hand): under the one-key rule it should become its own target before any write-up.
+Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not read (look-alikes; after the 24 Nov 2026 shape check 234 of 341 cipher words are sure on the human-checked places, 302 if the AI-checked places are confirmed by a blind reader); R4938's spans decoded, one word too short. No gap is left not-attempted (23 Oct 2026). R4939 is a different cipher (own key and hand): under the one-key rule it should become its own target before any write-up.
 
 ## Escalation
 - [x] siblings: R4936, R4937, R4940, R4942 read with one family key (23 Oct 2026)
@@ -135,3 +137,38 @@ Of the records kept here: R4937, R4939, R4940, R4942 read; R4936 decoded, not re
   securitas"; "az hol kivantatik, oeczem uram").
 - Decision: under 1 in 10: **stays read, grade B**. The three words would be better given as [?bizon]talan, azokatru-,
   kegyelme at the next pass (reading not changed here).
+
+## 24 Nov 2026 - g/q shape check of R4936, place by place (human blind sheet, then an AI pass calibrated on it)
+- **Evidence, as text, in `sign_check/`** (README.md there; no image and nothing derived from one): the rule of the
+  blind sheet T, its key, answers and results; the two parts of the AI protocol and the blind calibration; and one
+  table of the places, `sign_check/R4936-places.tsv` (line, rank in the line, word, position, reading, verdict hook /
+  loop / doubtful, human or AI). Hashes in `sign_check/SHA256SUMS.txt`.
+- **Method, in two steps, each written down before the unseen places were looked at.** (1) Blind sheet T, 14 questions
+  (8 g read t and 1 q read u on p. 1 l. 1-13, 2 c read y, 3 controls), answered by Brice Dudout from the DECODE image:
+  the 8 t places all show a short hook, the u place a long loop, the controls 3/3. The selection rule was hashed
+  (SHA-256 7f08d4fd8ce0d43c5358f6ddd67bf533553cb1fe8c1ebfdbb2abefb35c6ad998) before the thumbnails were cut. (2) An AI
+  agent (Claude) then classified the other 142 g-shaped places one by one (3x context crops, 4x zooms), calibrated on
+  those answers: a blind calibration of 21 mixed crops agreed 9/9 with the human answers and 3/3 on the controls
+  (limit: the agent had read the human answers, so the blinding covered which crop was which, not the expected
+  proportion). The protocol was hashed in two parts, part A before any unseen place (927b4cbb...), parts A+B (human
+  prototypes at 400% and the calibration result) before the remaining 133 places (bc670d63...).
+- **Result.** g read t: human 8 hook; AI 94 hook, 0 loop, 12 doubtful. g read u (AI, 36): 27 loop, 4 hook, 5 doubtful.
+  Relabelled g->q at the 8 human and the 94 AI hooks (102), q->g at T9, c->e at fegyvert: 104 labels, in
+  R4936_align.tsv and R4936-transcription-b15.txt (rows appended to R4936_corrections.tsv); mechanical decode of the
+  b15 transcription in R4936-mechanical-b15.txt (`tools/R4936_count728.py --decode`). The frozen key is unchanged, no
+  value was added and the reading is unchanged.
+- **Reserve.** No t is written with the loop, but four u are written with the hook (mutatnanak twice, instructioban,
+  tule): tagged `g=u:hook` in class_resolved, so these words are not counted sure. The hook supports t without proving it.
+- **Count** (`python3 tools/R4936_count728.py`): 341 cipher words = the 338 rows of R4936_align.tsv + the 3 `[...]` runs
+  of R4936_reading.md. Sure = row carried with no tag in class_resolved. Decision of 24 Nov 2026 (Daniel Bourdeau): the 94
+  AI relabels count as probable until a reader who has not seen the answers checks them; the 8 human places stand.
+  Sure words: 232 before; **234 of 341 (0.686) on the human places alone**; 302 of 341 (0.886) if the AI places are
+  confirmed (the 94 relabels fall in 78 words, 68 of which would become sure). R4936 stays `decoded, not read`; the
+  review state is the reviewer's to record.
+- **Images.** None are committed. The images are DECODE R4936 (access level 2); they are not republished and the crops
+  used stay private. The use of an AI assistant on these images was not raised with the archive.
+- **Record.** Sheet T is in `profile.json` as `outcome.sign_check` (moved unchanged from `sign_check_pending.json` at the
+  integration of 24 Nov 2026): 11 signs, 3 controls, all passed, which meets the floor of the sign-check level (README
+  Conventions). It checks sign shapes only and changes neither the state of R4936 nor any count. The reading has eight
+  [?words], not five as the gap line first said (corrected the same day).
+- Credit: Brice Dudout (human reviewer, 11 places on sheet T), AI-assisted shape check as stated above; DECODE for the images.

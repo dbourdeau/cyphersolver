@@ -107,6 +107,25 @@ and that Weiss printed from them.
 | `divergences_cipher_vs_gloss.tsv` | places where the decoded cipher and the contemporary decipherment differ |
 | `divergences_vs_minute.tsv` | the same places against Gachard's minute, with a verdict |
 | `reading.md` | reading (sure / {probable} / [restored]), count, English translation, summary |
+| `validation.tsv`, `mk_validation.py` | every sign in text order with the value the key gives it, for `docs/_validate.py`, and the script that makes it (24 Nov 2026) |
+
+## Transcription doubts
+
+The two blind passes agree on 984 of 1,078 aligned places (91 %); every place where they differ is in
+`transcription/cipher_reconciled_AB.tsv` (status `divergent`, `A seul`, `B seul`), and the signs each pass marked
+doubtful are in `pass_A_notes.md` and `pass_B_notes.md`. The places below are those the reading leaves open or
+probable for a transcription reason. The image checks are the contributor's blind passes on the library's scans;
+the scans are not public and were not seen at the integration or at the write-up of 24 Nov 2026. The independent
+text is the printed minute (Gachard).
+
+- c^ n u (r13, where the decipherment and the minute have "mit") - read: de-i-t; checked: image, decode, transcription; both passes give the same three signs, the decode "deit" is no word, c^ is "de" everywhere else; the word is restored as [mit] and stays open
+- g? (r23, first sign) - read: ce; checked: image, decode, transcription; doubtful in pass B; the decipherment has "ce", the minute "Et"; counted probable
+- the sign cut by the paper edge at the end of r24 - read: a fragment, not counted; checked: image, decode, transcription; "conde" before it and "ndre" at the start of v1 give "condescendre" with the minute
+- the sign after "advertisse" (v26, rank 15) - read: c or t, no key value; checked: image, decode, transcription; pass 1 has c?, pass 2 t?; the minute has "advertissement"; the word is counted probable
+- the last three signs of v26 (ranks 21 to 23) - read: 4 (r), 8? (n), tt (va); checked: image, decode, transcription; pass 1 has t? for the second; they do not spell "regarder a quoy nous vouldrons resouldre selonc ce", which is restored from the minute
+- w (51 places on both pages) - read: one form, a or l; checked: image, decode, transcription; neither pass separates two shapes; the decode needs a in 24 places and l in 23; Pich-Ponce's table has two numerals here (20 a and 10 l); not checked shape by shape
+- nz (20 places) - read: one form, d or i; checked: image, decode, transcription; pass A reads both as n; her table has 17 d and 12 i; not checked shape by shape
+- mt or nt (three or two minims) - read: as each pass has it, uncertain cases marked `mt?`; checked: image, decode, transcription; the re-derived key has "pa" for both, because some mt were read for nt; her rule gives na for mt, and the decode has "cardipaa" for cardinal and "raisonpables"
 
 ## Remaining gaps
 
@@ -132,3 +151,31 @@ afterwards (Weiss IV and Gachard IV on the Internet Archive; CSP Spain XI-XII on
 Outcome method (`profile.json`): *key recovered based on adjacent plaintext*. The cipher was decoded with a key
 re-derived from the leaf's own contemporary decipherment, and the decode was checked against the minute printed by
 Gachard; it is not a transcription of the existing decipherment alone.
+
+## Write-up (24 Nov 2026, AI agent for the maintainers)
+
+- Page `docs/charlesv1554.html`: a "found already solved" page. Gachard, the Calendar of State Papers and Pich-Ponce
+  come first; what is new here is the identification of the leaf, the check of the published cipher on a new witness
+  and the list of cipher-versus-decipherment differences. No image (the library's consent is needed).
+- Method kept as *key recovered based on adjacent plaintext*: the schema keeps *read from existing decipherment* for
+  work "with no key applied", and here a key rebuilt from the leaf's own decipherment was applied and departs from
+  that decipherment in about two dozen places. The owner's review of pull request #788 (19 Nov 2026, point 3) asked for
+  this wording. Class stays *already solved* (the text is in print); `outcome.parts` now carries one part with extent
+  *partial*, as `jablonski1705` does, so that the site and the README say partial and not complete for a decode with
+  215 of 358 words sure.
+- `conditions.prior_solution.used` set to true: the key was re-derived from the leaf's contemporary decipherment, and
+  the minute printed by Gachard settled the differences and supplied the restored words. Pich-Ponce's table was
+  compared, not applied.
+- Recount of `reading.md`: 357 words if the word split over v3-v4 is one word; 214 sure if the half-word that opens
+  the leaf (`[no]stre`) is counted as restored. The contributor's count is 215 of 358 and the reviewer's 214 of 357:
+  one word apart, about 60 % either way.
+- Statistical validation of the re-derived key (`docs/_validate.py`, pairs in `validation.tsv` made by
+  `mk_validation.py` from the reconciled transcription and the key values): 1,120 tokens, 139 types; reading -2.461
+  per letter, random keys -4.070 (z 6.8), key annealed onto shuffled ciphertext -2.534 at the mean and -2.475 at
+  best (z 2.4), annealer on the real text -2.357. Verdict: **underdetermined**. With eight tokens per sign the
+  letter model cannot tell this key from a fitted one, so the test neither confirms nor refutes it; the support for
+  the key is the decipherment on the leaf, the printed minute and Pich-Ponce's table.
+- DECODE: no record of this leaf in the local record list (10,106 records, harvested to 30 Oct 2026; searched for
+  Besançon, Granvelle, Renard). Queue entry: skip, with the reason.
+- The library asks to be told of any publication of its unpublished documents; Brice Dudout said on pull request #788
+  that he would notify it. Nothing was sent from here.

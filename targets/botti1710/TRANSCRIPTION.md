@@ -22,7 +22,7 @@ Credit:
 - Four header lines start with `#`. Then each row is one line, `C01 <body>`, in page order.
 - The labels `C01`, `C02`, ... are the rows that the transcription labels as cipher. The decode lines of the record pages name them.
 - Clear rows of the page are not copied.
-- Some rows labelled as cipher hold clear words: the clerk's words beside the codes (R8714), the writer's words, a date line or a signature. `[not copied]` stands in their place, once for each run of such words (533 places). Notes of the transcription outside brackets are dropped in the same way.
+- Some rows labelled as cipher hold clear words: the clerk's words beside the codes (R8714), the writer's words, a date line or a signature. `[not copied]` stands in their place, once for each run of such words (342 places, in 288 rows of 82 files; the 533 given here at first also counted the header line of each of the 191 files, which names the mark: corrected by the maintainers on 20 November 2026). Notes of the transcription outside brackets are dropped in the same way.
 - The decode does not take those words as codes. It shows `?` for them.
 - Each row body is as transcribed. Only one position word in nine notes of the transcription was changed, to "top" or "opening".
 - Three pages hold rows labelled as cipher with no digit: R8663 T009, R8671 T005 and R8671 T008. They have no file.

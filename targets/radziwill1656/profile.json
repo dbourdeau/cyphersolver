@@ -1,0 +1,341 @@
+{
+ "schema_version": 1,
+ "target": "radziwill1656",
+ "title": "Bogusław Radziwiłł, two ciphered German postscripts to the commandant at Słuck, Tykocin 13 Mar 1656 and Labiau 3 Dec 1656 (AGAD AR dz. IV 46; catalogue 1594): a simple substitution on two-digit odd numbers, key rebuilt from the ciphertext by SeldomPhooey",
+ "documents": [
+  {
+   "id": "A",
+   "read": "read in part",
+   "shelfmark": "AGAD (Warsaw), Archiwum Warszawskie Radziwiłłów (zesp. 354), dz. IV, 1/354/0/4/46, object 16, scans 42-43 (old ff. 40-41); szukajwarchiwach unit 17873460",
+   "date": "13 Mar 1656 (the second figure of the day is uncertain)",
+   "year": 1656,
+   "country": "Poland-Lithuania",
+   "route": "Bogusław Radziwiłł (Tykocin) -> the commandant at Słuck, probably Major Jan Gross (the contributor's inference from the cover and the neighbouring letters; not named on the postscript)",
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the contributor found no period copy or decode in units 46-47 (scans 1-93)."
+   },
+   "length": {
+    "tokens": 673,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_A.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "SeldomPhooey (issue #784, 18 Nov 2026; Claude-family AI agents), from the largest images of the archive's public viewer; cut from his table by extract.py with no value edited",
+    "corrections": 15,
+    "image_quality": "fair",
+    "notes": "112 runs, 673 groups (measured with --drop-first; the tool's distinct count of 43 takes 49 and 49? apart; 22 distinct values by decode.py). 675 groups as first transcribed; 15 changes in 14 runs after his image checks, guided by the expected word. 34 groups still written NN? and 8 unreadable in his table. Integration, 24 Nov 2026: about 35 runs compared on scans 42 and 43 in Chrome, all as he has them; two pairs not told apart (A031 45 or 43, A018 45 or 47)."
+   }
+  },
+  {
+   "id": "B",
+   "read": "read in part",
+   "shelfmark": "AGAD (Warsaw), Archiwum Warszawskie Radziwiłłów (zesp. 354), dz. IV, 1/354/0/4/46, scans 39-40 (old ff. 37-38), with a four-line note in the margin of scan 39; scan 40 is a separately signed sheet; szukajwarchiwach unit 17873460",
+   "date": "3 Dec 1656 (the last figure of the year is underlined and read as 6)",
+   "year": 1656,
+   "country": "Poland-Lithuania",
+   "route": "Bogusław Radziwiłł (Labiau) -> the commandant at Słuck, probably Major Jan Gross (the contributor's inference; not named on the postscript)",
+   "language": "German",
+   "pages": 2,
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "No decipherment on the leaves; the contributor found no period copy or decode in units 46-47 (scans 1-93)."
+   },
+   "length": {
+    "tokens": 598,
+    "unit": "symbols",
+    "measured": true,
+    "file": "transcription_B.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "SeldomPhooey (issue #784, 18 Nov 2026; Claude-family AI agents), from the largest images of the archive's public viewer; cut from his table by extract.py with no value edited",
+    "corrections": 8,
+    "image_quality": "fair",
+    "notes": "102 runs, 598 groups (measured with --drop-first; the tool's distinct count of 43 takes doubt-marked forms apart; 22 distinct values by decode.py). 8 groups changed in 7 runs after his image checks, guided by the expected word; by his account this transcription was made knowing the table. 32 groups still written NN? and 7 unreadable in his table. Integration, 24 Nov 2026: about 33 runs compared on scans 39 and 40 in Chrome, all as he has them; in B029 the sixth pair looks like 45 where he has 25 (left as transcribed)."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Simple substitution on two-digit odd numbers 11 to 57 in alphabetical order (i/j on 27, u/v on 49), written as unbroken digit runs for the secret words of a German text.",
+  "symbol_kind": "digits",
+  "digit_groups": {
+   "width": "2",
+   "separation": "contiguous"
+  },
+  "distinct_symbols": 24,
+  "diacritics": {
+   "used": true,
+   "note": "An overline over a group doubles the letter (33 with an overline = mm); the transcription writes the group twice."
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "partial",
+  "doubled_letters": "overline over the group, or the group written twice",
+  "sibling_key": "By the contributor's record the same table reads seven further letters to Major Gross in units 46-47 (Feb 1656 to Aug 1657); no readings offered; not opened here.",
+  "notes": "24 places in the table (11 to 57, odd); 22 occur. 19 carry no mark in the contributor's table (frozen test), 29, 39 and 53 are proposed (k, p, x), 41 and 55 do not occur. The cipher runs are words or parts of words set among clear words."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "unknown",
+   "where": "None found. The contributor searched this repository (17 Nov 2026), units 46-47 for a period copy or decode, the correspondents' papers he names, archive.org full text and Kotłubaj 1857 (pp. 168-176, three other letters to Gross summarised); Wasilewski 1979 unread. Catalogue vetting of 3 Nov 2026: not on DECODE, cryptiana or GL.htm; AGAD Miscellanea t. 29 and Przegląd Historyczny 1956 not opened.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "SeldomPhooey submitted the work (issue #784). By his statement Claude-family AI agents did the transcription, the key recovery and its test, the decoding, the image checks, the word division, the reading, the translation and the literature checks; no human cryptographer or historian and no other model checked it. The maintainers' AI agent re-decoded it (19 Nov 2026) and counted, validated and compared it with the scans (24 Nov 2026).",
+  "tools": [
+   "Python scripts for the key test and the decoding (the contributor's; not sent)",
+   "extract.py, decode.py, count_reading.py (integration)",
+   "docs/_validate.py with the de-1640s model",
+   "szukajwarchiwach viewer images, read in Chrome"
+  ],
+  "models": [
+   "Claude-family AI agents (the contributor's harness; model ids not given)",
+   "Claude Fable 5.2 (integration, 24 Nov 2026)"
+  ],
+  "first_date": "2026-11-17",
+  "last_date": "2026-11-24"
+ },
+ "solution": [
+  {
+   "kind": "access",
+   "what": "Contributor (issue #784 of 18 Nov 2026, which does not date its steps): scans 39-43 of unit 1/354/0/4/46 taken from the archive's public viewer at the largest size it serves.",
+   "result": "worked"
+  },
+  {
+   "kind": "transcription",
+   "what": "Contributor: first transcription of the digit groups of both postscripts by AI agents; A had 112 runs and 675 groups; 94 groups marked uncertain in all.",
+   "result": "worked"
+  },
+  {
+   "kind": "solver",
+   "technique": [
+    "unknown"
+   ],
+   "what": "Contributor: a table of two-digit odd numbers to letters built from the 'construction runs' of A alone, with no period key, decode or plaintext, then frozen. The issue does not say how the table was built.",
+   "result": "worked"
+  },
+  {
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Contributor, Test 1: the frozen table scored on 48 held-out runs of A (265 letters) against a German word-coverage threshold set in advance: 0.839 against a threshold of 0.325; best of 20 within-run shuffles 0.184; a synthetic positive control passed. His record; not recomputed here.",
+   "result": "worked"
+  },
+  {
+   "kind": "hypothesis",
+   "technique": [
+    "contextual inference",
+    "key-structure hypothesis"
+   ],
+   "what": "Contributor: 29 = k and 39 = p proposed from context (sluc-29-o for Slucko, cores-39-ondentz) and the alphabetical order; 53 = x proposed against the frozen table's k, from wala-53 beside the clear Wallax and the order. Not tested.",
+   "result": "partial"
+  },
+  {
+   "kind": "verification",
+   "what": "Contributor, Tests 2 to 4 (exposed): the unchanged table also reads B and seven further letters to Gross in units 46-47 (Feb 1656 to Aug 1657); those transcriptions were made knowing the table, so they are not independent checks. No readings of the seven letters are offered.",
+   "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "what": "Contributor: second pass over all 94 uncertain groups against the images (same model family): one group changed, 20 left unresolved, two of them read later; 18 stay unresolved.",
+   "result": "partial"
+  },
+  {
+   "kind": "transcription",
+   "what": "Contributor: garbled words checked against the images, guided by the expected word: 22 changes in 21 runs adopted (the last seven from a check of fourteen candidate readings); twelve places checked and left as transcribed because the image does not support the expected word.",
+   "result": "partial"
+  },
+  {
+   "kind": "reading",
+   "what": "Contributor: both postscripts divided into words by two readers (the second without the first division), read and translated; many cipher words marked as not understood. His status: read in part.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "literature search",
+   "what": "Contributor: this repository (17 Nov 2026), units 46-47 for a period copy or decode, the correspondents' papers, archive.org full text, Kotłubaj 1857 (three other letters to Gross summarised, neither postscript); Wasilewski 1979 not read. No decipherment found.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "verification",
+   "what": "Integration: a decoder written from his key table (not his scripts) gives his decryption for all 214 runs, 1,271 groups. The archive's viewer blocked the session, so no image was compared. The read share was put at about 79% (A) and 82% (B) from his list of uninterpreted words, an estimate replaced on 24 Nov 2026.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "verification",
+   "what": "Intake: his two tables cut from the issue unchanged (extract.py); decode.py gives his decryption for 112 of 112 runs of A and 102 of 102 of B; count_reading.py checks reading.md against his full text and the transcription (one place where his text and table differ, run A056) and counts by the README rule: A 71 of 106 cipher words (67.0%), B 60 of 99 (60.6%).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "control",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Recomputing the contributor's held-out score was not possible: the scoring script, the word list and the ids of the 48 held-out runs, asked for on 19 Nov 2026, had not been sent.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "access",
+   "what": "Integration: the archive unit opened in Chrome (curl still gets the bot-check shell); the largest images of scans 42, 43, 39 and 40 read on screen in enlarged crops with his table in hand. About 70 of the 214 runs compared, all as he has them; three pairs noted as possibly otherwise (A031 45 or 43, A018 45 or 47, B029 sixth pair 45 for his 25), nothing changed.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "reading",
+   "what": "Integration: both postscripts read as sentences against his English by an AI agent for the maintainers (reading_review). Both build sentences in their main lines; the money passage of A and the middle of B do not. No person has read the text.",
+   "result": "partial"
+  },
+  {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1256 tokens, 22 types, de-1640s order 4: reading -2.275 per letter; random keys -6.835 (z 6.2); key annealed onto shuffled ciphertext best -4.17 (mean -4.281, z 23.7); annealer on the real text -2.275. Verdict: pass.", "result": "worked"}
+ ],
+ "outcome": {"validation": {"date": "2026-11-24", "model": "de-1640s", "file": "validation.tsv", "tokens": 1256, "types": 22, "tokens_per_type": 57.09, "score": -2.275, "nulls": {"random keys": {"n": 200, "mean": -6.835, "sd": 0.732, "max": -5.099, "z": 6.2, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -4.281, "sd": 0.085, "max": -4.17, "z": 23.7, "p": 0.1429}}, "power": -2.275, "verdict": "pass", "notes": "claimed per-occurrence score -2.275; polyphony 0.0; 229 unread tokens left out; annealer on the real text from random keys reached -2.275"}, 
+  "class": "read in part",
+  "key": "partial",
+  "codes_open": {
+   "open": 0,
+   "total": 0,
+   "tokens_open": 0
+  },
+  "method": "key recovered from ciphertext-only",
+  "method_basis": "By the contributor's account the table was built from the construction runs of postscript A alone, with no period key, decode or plaintext, frozen, and scored on 48 held-out runs; three of the 22 numbers that occur (29, 39, 53) have values proposed from context and the alphabetical order. His score is not recomputed here; the house validation of the table on both texts passes (24 Nov 2026).",
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "fraction_read": 0.639,
+  "fraction_read_method": "measured",
+  "fraction_read_source": "count_reading.py on reading.md, 24 Nov 2026: 131 of the 205 cipher words of the two postscripts are sure (A 71 of 106, B 60 of 99). A hole is a word the contributor marks as not understood or uncertain, a word with a group 29, 39 or 53, a word with an unreadable group, or a word with one of the 18 groups his second pass left unresolved. By groups, the table gives a letter to 1,256 of 1,271.",
+  "verification": ["statistical test"],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "seldomphooey",
+    "role": "solution",
+    "note": "key rebuilt from the ciphertext with a frozen held-out test, decryption, reading and translation of both postscripts (Claude-family AI agents, by his statement)",
+    "date": "2026-11-18",
+    "source": "issue #784 (dbourdeau/cyphersolver)"
+   },
+   {
+    "who": "seldomphooey",
+    "role": "transcription",
+    "note": "214 cipher runs (1,271 groups) and the clear text of both postscripts, from the archive viewer images",
+    "date": "2026-11-18",
+    "source": "issue #784 (dbourdeau/cyphersolver)"
+   },
+   {
+    "who": "seldomphooey",
+    "role": "identification",
+    "note": "found the second postscript (Labiau, 3 Dec 1656, scans 39-40) in the same unit and key; proposed Major Jan Gross as the addressee (an inference)",
+    "date": "2026-11-18",
+    "source": "issue #784 (dbourdeau/cyphersolver)"
+   }
+  ],
+  "texts": [
+   {
+    "doc": "A",
+    "label": "A. Post Scriptum, Tykocin, 13 Mar 1656 (scans 42-43)",
+    "transcription": "transcription_A.txt",
+    "decryption": "decryption_A.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "reading_section": "A. Post Scriptum",
+    "cipher_markup": "**",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.67,
+    "cipher_words": 106,
+    "holes": 35,
+    "summary": "From Tykocin in March 1656, the year of the Deluge, Bogusław Radziwiłł tells the commandant at Słuck how the Lieutenant-Colonel written wala-53 (Wallax in clear) is to be relieved of the command: the letter relieving him is held back until certain men are in, the handover is to pass quietly, money cannot be sent safely, and Wallax is to be told of an arrest and kept at Słuck with his sword left to him. Several verbs and names in the cipher are not understood.",
+    "note": "The reading and the translation are the contributor's, kept as his (issue #784). decryption_A.txt is the unedited output of key.tsv on transcription_A.txt and equals the decryption column of his table (decode_A.tsv) for all 112 runs. Count of 24 Nov 2026 (count_reading.py): 106 cipher words, 35 holes (27 marked by him, 4 with a proposed value only, 3 with an unreadable group, 1 with an unresolved group), 71 sure = 67.0%; with the proposed-value words taken as read 75 of 106.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "reader_kind": "model",
+     "independent": false,
+     "note": "Grade given by the reviewer, not by the author of the reading. Section A of reading.md read as sentences against his English: nine sentences. The frame of each is coherent German (the letter relieving the Lieutenant-Colonel is held back until certain men are in; a second letter is handed over when they reach Slucko; nothing untoward at the laying down of the command; Wallax is told of an arrest, stays at Slucko, keeps his sword and is watched). 35 of the 106 cipher words are holes and they fall in every sentence but two short ones; the passage on the money, the Confederates and the flying army (lines 42.17 to 42.29) does not yet read as sentences. B and not A for that and because the spelling is the raw output of the table. Sentence pointer (the word windows of docs/_check_reading.py, holes explicit): 17 of 28 clean (0.61) with the cipher holes alone, 9 of 28 (0.32) when every clear word he marks uncertain is a hole too, so the state read in part is the reader's call on a borderline text. Three words he leaves unmarked do not stand as German words as decoded (tezen, fein, adelsch). About 35 runs of scans 42 and 43 were compared with his transcription on the archive's images the same day; the rest was not. The reader is an AI agent of the same model family as the contributor's tools, so not independent; no person has read the text."
+    }
+   },
+   {
+    "doc": "B",
+    "label": "B. P. S., Labiau, 3 Dec 1656 (scans 39-40)",
+    "transcription": "transcription_B.txt",
+    "decryption": "decryption_B.txt",
+    "reading": "reading.md",
+    "translation": "reading.md",
+    "reading_section": "B. P. S.",
+    "cipher_markup": "**",
+    "language": "de",
+    "state": "read in part",
+    "read_share": 0.606,
+    "cipher_words": 99,
+    "holes": 39,
+    "summary": "From Labiau, Radziwiłł writes that Herbacewski (written herbacews-29-i) is reported to correspond in secret with his brother-in-law Judycki and to seek to betray the fortress, and orders the Major to hold him under arrest in the castle, to have grain and victuals listed for the garrison and to deal with a sum of up to 6000 gulden. A margin note and a separately signed sheet concern a dead lieutenant, Herbacewski's wife and two doctors who asked to live at Słuck. The middle of the postscript is not understood.",
+    "note": "The reading and the translation are the contributor's, kept as his (issue #784). decryption_B.txt is the unedited output of key.tsv on transcription_B.txt and equals the decryption column of his table (decode_B.tsv) for all 102 runs. Count of 24 Nov 2026 (count_reading.py): 99 cipher words, 39 holes (22 marked by him, 12 with a proposed value only, 4 with an unreadable group, 1 with an unresolved group), 60 sure = 60.6%; with the proposed-value words taken as read 72 of 99.",
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of 24 Nov 2026 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-24",
+     "reader_kind": "model",
+     "independent": false,
+     "note": "Grade given by the reviewer, not by the author of the reading. Section B of reading.md read as sentences against his English: the postscript, the margin note and the sheet on scan 40. 39 of the 99 cipher words are holes and every sentence has some, but 12 are words whose only doubt is a proposed value and which read plainly (Herbacewski three times, Judicki, Correspondentz twice, Proben, Korn, stecke, keine, Krantz, expresser), so the accusation, the order of arrest in the castle, the listing of grain and victuals for the garrison and the close read as sentences. Lines 39.12 to 39.14 and 39.17 to 39.21, most of the margin note and the last line of scan 40 do not. B and not A for that and because the spelling is the raw output of the table. Sentence pointer (the word windows of docs/_check_reading.py, holes explicit): 18 of 26 clean (0.69) with the cipher holes alone, 10 of 26 (0.39) when every clear word he marks uncertain is a hole too. Three words he leaves unmarked do not stand as German words as decoded (lebensmit, icrigen, fuhsren). About 33 runs of scans 39 and 40 were compared with his transcription on the archive's images the same day; in run B029 the sixth pair looks like 45 where he has 25. The reader is an AI agent of the same model family as the contributor's tools, so not independent; no person has read the text."
+    }
+   }
+  ],
+  "key_file": "key.tsv",
+  "gaps": [
+   {
+    "item": "27 cipher words of A and 22 of B that the contributor marks as not understood or uncertain (words.tsv)",
+    "blocker": "not-attempted",
+    "detail": "Not re-read here against the scans, which open in Chrome since 24 Nov 2026; his own check of fourteen candidate readings changed seven places and left the rest."
+   },
+   {
+    "item": "the proposed values 29 = k, 39 = p and 53 = x, which alone keep 4 words of A and 12 of B from counting",
+    "blocker": "not-attempted",
+    "detail": "No test of them is on record; the seven further letters to Gross in units 46-47 could serve as one."
+   },
+   {
+    "item": "19 digit groups unread or unresolved (his list of 18 and the ?? of run B003), in 8 words of A and 7 of B",
+    "blocker": "illegible",
+    "detail": "Faint, ligatured or in the gutter shadow on the microfilm scans by his two passes (largest online image about 1,680 x 2,620 px); not re-read group by group here."
+   },
+   {
+    "item": "prior-art reading not finished: Wasilewski 1979, AGAD Miscellanea t. 29, Przegląd Historyczny 1956",
+    "blocker": "not-attempted",
+    "detail": "No online copy was looked for on 24 Nov 2026."
+   }
+  ],
+  "notes": "Intake of 24 Nov 2026 from issue #784; Status in progress in NOTES.md, no page yet. Still asked of the contributor: the held-out scoring script and word list or the ids of the 48 held-out runs; his own count of cipher words and holes. The note that transcription, decode and division all come from one model family stays. The Dec 1769 item 1/354/0/4/261/17 is a different cipher and is not part of this target."
+ }
+}

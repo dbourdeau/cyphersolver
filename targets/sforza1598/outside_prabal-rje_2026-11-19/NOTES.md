@@ -26,11 +26,28 @@ These years are leads, not readings. The rows give no year.
 - **R5521 and R5542:** most likely 20 July 1492. The pope is ill in the letter, and Innocent VIII died on 25 July 1492 (L. Pastor, *The History of the Popes*). On 2 July 1492 Milan urged that the bishop of Nitra be sent into Italy (A. Berzeviczy, Budapest 1914, no. CLXVII).
 - **R5520, R5523 and R5541:** 1465 or before; most likely between 1455 and 1458. Jacopo Piccinino died in 1465, and a living "King of Aragon" fits Alfonso V, who died in 1458 (*Dizionario Biografico degli Italiani*, vol. 83).
 
+## Strictly aligned sentence readings (23 November 2026)
+
+Three blind ciphertext-only letters in this folder (`R5521`, `R5523`, `R5524`; none uses the archive key sheet R5347) now carry strictly aligned word-divided Italian readings (`readings/rXXXX_reading.md`) and English translations (`readings/rXXXX_en.md`), verified mechanically by `scripts/verify_readings.py` against the unedited decodes in `key/` (zero unmarked departures; every unknown sign `?`, unread sign `[?]`, null `·`, and bracketed restoration `[x]` counts as a hole):
+
+| Record | Pages | Cipher words | Sure | Holes | Read share | Content |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| `R5521` | p1, p2, p3 | 1,126 | 693 | 433 | 0.615 | Milan, 20 July [1492], signed *Ludovicus Maria Sfortia Dux Bari*: 50,000 + 200,000 ducat marriage dispensation, Bishop of Nitra traveling via Germany/Padua, Pope Innocent VIII's urinary illness (*ardore de urina*, *excoriatione de uesiga*), Prince of Capua in Rome, rumors of the Turk's preparations |
+| `R5523` | p1 | 116 | 84 | 32 | 0.724 | Rome, 9 June [1455-1458]: confusion over Jacopo Piccinino's arrival, Tonio da Pesaro going to the King to put Piccinino in the pay of the Church |
+| `R5524` | p1 | 135 | 89 | 46 | 0.659 | Ambassador returning from the King of Catalonia, arbitration terms, Governor of the Dauphiné with 1,370 cavalry, complaint over the House of Anjou |
+| **Total** | **5 pages** | **1,377** | **866** | **511** | **0.629** | **read in part (key recovered from ciphertext-only)** |
+
+## Transcription doubts
+
+The sign transcriptions in `transcription/` are unverified machine transcriptions of the DECODE images; no person has checked them against the scans. Every `[?]` unread sign, `?` unvalued label, and polyphonic or misread sign (including `t` standing for `u`/`v`/`f` in `R5521`) stays explicitly marked inside `[x]` or `[...]` in `readings/` and counts as a hole in `scripts/verify_readings.py`.
+
+- Unknown/unread signs (`?`, `[?]`) and polyphonic `t`/`u`/`f` slips in `R5521`, `R5523`, and `R5524` (511 holes across 1,377 cipher words) - read: kept literal in `key/*_decode.txt` and bracketed `[x]` or `[...]` in `readings/`; checked: image, decode; zero unmarked departures from the unedited mechanical decodes.
+
 ## Remaining gaps
 
-- **No reading in sentences** (not-attempted): every document is decoded, not read.
-- **Labels with no value** (no-key-material): some labels have no value in the key; the decode shows `?`.
-- **R5501 p1** (not-attempted): my rows and my frozen read differ by one sign.
+- **Other records in this folder (28 additional blind pages and 4 R5347 key-sheet pages)** - blocker: open-codes; higher sign-label noise or unvalued labels (`?`) keep them as decoded, not read until higher-resolution scans settle remaining sign splits.
+- **Labels with no value (`?`)** - blocker: no-key-material; rare signs with too few occurrences to pin from ciphertext alone.
+- **R5501 p1** - blocker: illegible; rows and frozen read differ by one sign.
 
 ## Escalation
 

@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "target": "mccarty1911",
- "title": "González Garza and \"Adolfo González\" (Gustavo A. Madero), El Paso - San Antonio, March-April 1911 (CEHM-Carso CMXV): two telegrams read with the archive's \"Clave G.A.\" card",
+ "title": "González Garza and \"Adolfo González\" (Gustavo A. Madero), El Paso - San Antonio, March-April 1911 (CEHM-Carso CMXV): two telegrams read with the archive's \"Clave G.A.\" card; two more of 5 May 1911 in the same card, one deciphered at the time, one decoded, not read",
  "documents": [
   {
    "id": "cmxv-15-1432-1",
@@ -70,6 +70,75 @@
     "from": "El Paso",
     "to": "San Antonio"
    }
+  },
+  {
+   "id": "cmxv-17-1695-1",
+   "read": "read",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.17.1695.1-2",
+   "date": "5 May 1911",
+   "year": 1911,
+   "country": "United States",
+   "route": "J. González (Marfa, Texas) -> \"Mr. W. Alliphant\" = W. Olliphant, Federico González Garza (El Paso, Texas)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear",
+     "separate folio"
+    ],
+    "source": "The pencil gloss \"Jose Pineda\" over the four coded groups, and the whole telegram typed in clear in the list CMXV.18.1795.1 of the same fonds, entry 113 (CEHM scan 21). The CEHM record 12896 prints José Pineda.",
+    "partial": false
+   },
+   "length": {
+    "tokens": 20,
+    "unit": "letters",
+    "measured": true,
+    "file": "../duron1911/siblings/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Daniel Jalkut with Claude Code (claude-opus-5-5), from the CEHM viewer image (study copy, not redistributed); PR #831, the block CMXV.17.1695.1-2 of the siblings file",
+    "image_quality": "good",
+    "notes": "Telegram of 8:58 pm; clear Spanish with four coded groups (20 letters, measured with _check_profile.py --measure --letters on the coded groups of its block). The image carries the pencil shelf label \"1695 (2-2)\", but the CEHM record 12896 for 1695.1-2 describes this telegram (Nemi, Lewis, José Pineda). The PR #831 review compared the four groups and the pencil gloss with the image."
+   },
+   "places": {
+    "from": "Marfa",
+    "to": "El Paso"
+   }
+  },
+  {
+   "id": "cmxv-17-1695-2",
+   "read": "not read",
+   "shelfmark": "CEHM-Carso, Fondo CMXV (Archivo Federico González Garza), CMXV.17.1695.2-2",
+   "date": "5 May 1911",
+   "year": 1911,
+   "country": "United States",
+   "route": "\"J. Gouzateo\" (Presidio, Texas) -> \"W. Ollithant\" = W. Olliphant, Federico González Garza (El Paso, Texas)",
+   "language": "Spanish",
+   "cleartext_in_document": "interspersed",
+   "plaintext": {
+    "location": [
+     "interlinear"
+    ],
+    "source": "A broken pencil gloss over the coded groups (\"(t) at o n o ll e v a o u c p e n n o s\"; at the foot \"atono\", \"Va o\"), as the contributor transcribes it. Entry 114 of the typed list CMXV.18.1795.1, right after 1695.1-2, is blank. CEHM record 12897: \"texto en clave y algunas palabras descifradas\".",
+    "partial": true
+   },
+   "length": {
+    "tokens": 42,
+    "unit": "letters",
+    "measured": true,
+    "file": "../duron1911/siblings/transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Daniel Jalkut with Claude Code (claude-opus-5-5), from the CEHM viewer image (study copy, not redistributed); PR #831, the block CMXV.17.1695.2-2 of the siblings file",
+    "image_quality": "unknown",
+    "notes": "Telegram of 11:31 pm; clear Spanish with eight coded groups (42 letters, measured as for 1695.1-2). The image carries the pencil label \"1695 (1-2)\". Not compared with the image at the review."
+   },
+   "places": {
+    "from": "Presidio",
+    "to": "El Paso"
+   }
   }
  ],
  "system": {
@@ -96,7 +165,7 @@
  "conditions": {
   "prior_solution": {
    "exists": "in archive",
-   "where": "The key card \"Clave G.A. (una de las usadas en San Antonio)\", CMXV.16.1557.1 scans 12-13, in the same fonds; no decipherment of this telegram on the sheet or in CMXV.18.1795.1.",
+   "where": "The key card \"Clave G.A. (una de las usadas en San Antonio)\", CMXV.16.1557.1 scans 12-13, in the same fonds; no decipherment of 1432.1-4 or 1561.7-13 on the sheet or in CMXV.18.1795.1. CMXV.17.1695.1-2 was deciphered at the time: the pencil gloss \"Jose Pineda\" on the form (the CEHM record 12896 prints the name, so it was known before the attempt) and the whole telegram in CMXV.18.1795.1, entry 113, which Daniel Jalkut found after the card had given josepinfda (PR #831).",
    "found": "before attempt",
    "used": true
   },
@@ -105,13 +174,14 @@
    "key from archive"
   ],
   "attack": "key from archive",
-  "human_role": "Brice Dudout directed the work and decided what to publish. Claude (Opus) agents transcribed the card and the telegrams from the CEHM viewer images, ran the preregistered measure of the card and wrote the readings. An AI model (Claude Fable 5.2, one API run) pointed out that the coded groups of 1561.7-13 must be joined before they are cut into pairs. No human palaeographer checked the transcriptions.",
+  "human_role": "Brice Dudout directed the work and decided what to publish. Claude (Opus) agents transcribed the card and the telegrams from the CEHM viewer images, ran the preregistered measure of the card and wrote the readings. An AI model (Claude Fable 5.2, one API run) pointed out that the coded groups of 1561.7-13 must be joined before they are cut into pairs. Daniel Jalkut (PR #831, with Claude Code) transcribed the two telegrams of 5 May 1911 (1695.1-2 and 1695.2-2) from the CEHM images, applied the card and found 1695.1-2 in the typed list CMXV.18.1795.1; the PR #831 review (an AI agent) compared 1695.1-2 and entry 113 with the CEHM images. No human palaeographer checked the transcriptions.",
   "models": [
    "Claude Opus 5.5 (Anthropic), agents run by Brice Dudout (transcription, validation of the card, readings, write-up)",
-   "Claude Fable 5.2 (Anthropic), one API run (pointed out the joined groups of 1561.7-13)"
+   "Claude Fable 5.2 (Anthropic), one API run (pointed out the joined groups of 1561.7-13)",
+   "Claude Opus 5.5 (Anthropic) in Claude Code, run by Daniel Jalkut (1695.1-2 and 1695.2-2, PR #831)"
   ],
   "first_date": "2026-11-11",
-  "last_date": "2026-11-12"
+  "last_date": "2026-11-21"
  },
  "solution": [
   {
@@ -164,6 +234,42 @@
    "kind": "access",
    "what": "Housekeeping: The three telegrams in the turning grille moved out to nuevaclave1911 (one key, one entry): the card and the grille are different systems.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "transcription",
+   "what": "Daniel Jalkut (PR #831) transcribed CMXV.17.1695.1-2 and 1695.2-2 (5 May 1911) from the CEHM images, with eight other sibling telegrams of catalogue 1462 (files in ../duron1911/siblings/).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "key from source",
+   "what": "The Clave G.A. card on the four coded groups of 1695.1-2, joined and read in pairs: josepinfda (pL = f is a slip for e), the name José Pineda that the pencil gloss on the form gives.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "key from source",
+   "what": "The same card on the eight coded groups of 1695.2-2 (42 letters), at both offsets: only 'aton' (offset 1) and '...l..v..oucsenn?s' (offset 0), where the pencil gloss of the time also stops; no sentence.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "literature search",
+   "what": "The typed list CMXV.18.1795.1 searched by the contributor (45 scans, tesseract OCR, then the pages of the dates by eye): entry 113 is 1695.1-2 in full ('Nemi informa mercancías enviadas capitán Lewis decomisadas. Envíen facturas José Pineda para reclamarlas. Conviene llamen Lewis. Esperen carta.'); entry 114, right after it, is blank.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-20",
+   "kind": "verification",
+   "what": "PR #831 review (an AI agent, two rounds): own decoder from key.tsv gives josepinfda and the two offsets of 1695.2-2 as filed; the four coded groups of 1695.1-2 and the pencil 'Jose Pineda' over them compared with the CEHM image; entry 113 seen on CEHM scan 21 word for word, entry 114 blank. 1695.2-2 was not compared with its image.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "access",
+   "what": "Integration of PR #831: 1695.1-2 (read from the decipherment of the time) and 1695.2-2 (decoded, not read) filed here (one key, one entry); their files stay in ../duron1911/siblings/ and are referenced; English of 1695.1-2 added as translation_1695-1-2.md. Own decode from key.tsv repeated, equal to the filed lines; scan 21 and the crop of the gloss looked at again.",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -180,9 +286,10 @@
   ],
   "method": "read with known key",
   "key": "recovered",
-  "method_basis": "Both telegrams are read with the archive's own card \"Clave G.A.\" (CMXV.16.1557.1 scans 12-13), applied unchanged and validated beforehand against the period decipherments of eight sibling telegrams (A = 0.866 on 769 cipher letters, controls at most 0.257; thresholds fixed in advance, passed).",
+  "method_basis": "Both telegrams are read with the archive's own card \"Clave G.A.\" (CMXV.16.1557.1 scans 12-13), applied unchanged and validated beforehand against the period decipherments of eight sibling telegrams (A = 0.866 on 769 cipher letters, controls at most 0.257; thresholds fixed in advance, passed). CMXV.17.1695.1-2 (part 2) is read from the decipherment of the time (pencil gloss and CMXV.18.1795.1 entry 113), which the card confirms; 1695.2-2 is decoded with the card, not read.",
   "contribution": [
-   "transcription"
+   "transcription",
+   "catalogue correction"
   ],
   "provenance": "contributed",
   "credits": [
@@ -203,6 +310,20 @@
     "who": "contemporary",
     "role": "key or decipherment used",
     "note": "the card \"Clave G.A. (una de las usadas en San Antonio)\", CMXV.16.1557.1 scans 12-13, and the period decipherments of eight sibling telegrams used to validate it",
+    "date": "1911",
+    "published": false
+   },
+   {
+    "who": "jalkut",
+    "role": "solution",
+    "note": "transcription of CMXV.17.1695.1-2 and 1695.2-2 from the CEHM images, the Clave G.A. card applied to both, and the decipherment of 1695.1-2 found in the typed list CMXV.18.1795.1 (entry 113); PR #831",
+    "date": "2026-11-20",
+    "source": "https://github.com/dbourdeau/cyphersolver/pull/831"
+   },
+   {
+    "who": "contemporary",
+    "role": "prior solution",
+    "note": "the decipherment of the time of CMXV.17.1695.1-2: the pencil gloss \"Jose Pineda\" on the form and the whole telegram in the typed list CMXV.18.1795.1, entry 113",
     "date": "1911",
     "published": false
    }
@@ -231,13 +352,18 @@
    {
     "item": "transcriptions against the CEHM images",
     "blocker": "needs-physical-access",
-    "detail": "visor.cehm.org.mx failed TLS verification in the integrating session; no image was compared"
+    "detail": "visor.cehm.org.mx failed TLS verification in the integrating session of 12 Nov 2026, so 1432.1-4 and 1561.7-13 were not compared; the PR #831 review (20 Nov 2026) reached the images over plain http and compared 1695.1-2, a model's comparison"
+   },
+   {
+    "item": "1695.2-2: the eight coded groups give only fragments with the card",
+    "blocker": "too-short",
+    "detail": "42 coded letters; the card gives 'aton' (offset 1) and '...oucsenn?s' (offset 0), where the pencil gloss of the time also stops, and entry 114 of CMXV.18.1795.1, right after 1695.1-2, is blank, so the decipherer of the time did not finish it either; too little text to rebuild what the card does not give"
    }
   ],
-  "notes": "Two telegrams read with the archive's Clave G.A. card; the card was validated beforehand on period decipherments of eight sibling telegrams (A = 0.866, passed). By the README rule (words) 39 of 41 = 95.1% over both, but 1432.1-4 alone is 18 of 20 = 90% (two words repaired by the sense), so the target is read in part; 1561.7-13 is read in full. The card's transcription is the contributor's, checked by no second reader. The three telegrams in the turning grille are on nuevaclave1911, a different cipher with its own page.",
+  "notes": "Two telegrams read with the archive's Clave G.A. card; the card was validated beforehand on period decipherments of eight sibling telegrams (A = 0.866, passed). By the README rule (words) 39 of 41 = 95.1% over both, but 1432.1-4 alone is 18 of 20 = 90% (two words repaired by the sense), so the target is read in part; 1561.7-13 is read in full. The card's transcription is the contributor's, checked by no second reader. The three telegrams in the turning grille are on nuevaclave1911, a different cipher with its own page. Added 21 Nov 2026 from PR #831 (Daniel Jalkut): 1695.1-2 of 5 May 1911, read from the decipherment of the time (2 of 2 cipher words), and 1695.2-2, decoded, not read; neither is in the 39 of 41.",
   "fraction_read": 0.951,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Integration count by words (README rule), from reading.md and reading_1561-7-13.md: 41 words, 39 read = 95.1% (1432.1-4 18 of 20 = 90%, GALEANA and GUERRERO restored by the sense; 1561.7-13 21 of 21). The contributor counts 19 of 20 for 1432.1-4.",
+  "fraction_read_source": "Integration count by words (README rule), from reading.md and reading_1561-7-13.md: 41 words, 39 read = 95.1% (1432.1-4 18 of 20 = 90%, GALEANA and GUERRERO restored by the sense; 1561.7-13 21 of 21). The contributor counts 19 of 20 for 1432.1-4. Not in this figure: 1695.1-2 (part 2, read from the decipherment of the time, 2 of 2 cipher words; these counts are of the whole telegrams, that one of cipher words only) and 1695.2-2 (decoded, not read).",
   "key_file": "key.tsv",
   "texts": [
    {
@@ -279,6 +405,44 @@
      "date": "2026-11-12",
      "note": "All four coded words decode letter for letter with the validated card and complete the clear sentences."
     }
+   },
+   {
+    "doc": [
+     "cmxv-17-1695-1"
+    ],
+    "label": "Telegram of 5 May 1911, J. González (Marfa) to W. Olliphant (CEHM-Carso CMXV.17.1695.1-2)",
+    "transcription": "../duron1911/siblings/transcription.txt",
+    "decryption": "../duron1911/siblings/decryption.txt",
+    "reading": "../duron1911/siblings/reading.md",
+    "reading_section": "CMXV.17.1695.1-2",
+    "translation": "translation_1695-1-2.md",
+    "language": "es",
+    "state": "read",
+    "read_share": 1.0,
+    "cipher_words": 2,
+    "holes": 0,
+    "summary": "J. González at Marfa to González Garza (W. Olliphant) at El Paso: Nemi reports the goods sent by Captain Lewis seized; send the invoices with José Pineda to claim them back; call Lewis; a letter follows. The coded words are the name José Pineda.",
+    "note": "The siblings files of PR #831 hold ten telegrams: this entry is the block or section headed CMXV.17.1695.1-2 in each. Read from the decipherment of the time: the pencil gloss \"Jose Pineda\" over the four coded groups, and the whole telegram in the typed list CMXV.18.1795.1, entry 113. The card gives josepinfda (pL = f is a slip for e), so the card alone would leave Pineda with one corrected letter; the 2 cipher words are read from the decipherment.",
+    "reading_review": {
+     "grade": "A",
+     "by": "integration review of PR #831 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-21",
+     "note": "A name of two words in a clear sentence: 'Envíen facturas José Pineda para reclamarlas.' Checked: the four coded groups kopjg Ftskf Tlkap Lvnme and the pencil 'Jose Pineda' over them on the CEHM image (compared by the PR #831 review; the crop looked at again here); the whole telegram in the typed list CMXV.18.1795.1, entry 113, on CEHM scan 21, word for word as quoted (seen by the review and again here), and entry 114 blank; own decode from key.tsv gives josepinfda, equal to the filed decryption. Not checked: the clear words of the form beyond the crop of its two coded lines. A model's reading: no person has checked it."
+    }
+   },
+   {
+    "doc": [
+     "cmxv-17-1695-2"
+    ],
+    "label": "Telegram of 5 May 1911, \"J. Gouzateo\" (Presidio) to W. Olliphant (CEHM-Carso CMXV.17.1695.2-2)",
+    "transcription": "../duron1911/siblings/transcription.txt",
+    "decryption": "../duron1911/siblings/decryption.txt",
+    "reading": "../duron1911/siblings/reading.md",
+    "reading_section": "CMXV.17.1695.2-2",
+    "language": "es",
+    "state": "decoded, not read",
+    "summary": "A telegram from Presidio, 11:31 pm, in garbled clear Spanish about Luque and Mulato, with eight coded groups that the card turns into fragments only ('aton', '...oucsenn?s'), where the pencil decipherment of the time also stops.",
+    "note": "The block or section headed CMXV.17.1695.2-2 in the siblings files of PR #831. Entry 114 of CMXV.18.1795.1, right after 1695.1-2, is blank. The transcription was not compared with the image at the review."
    }
   ],
   "parts": [
@@ -288,6 +452,20 @@
     "method": "read with known key",
     "extent": "partial",
     "basis": "the archive's key card, validated on period decipherments of eight sibling telegrams (VALIDATION.md)"
+   },
+   {
+    "label": "CMXV.17.1695.1-2 (5 May 1911)",
+    "records": "cmxv-17-1695-1",
+    "method": "read from existing decipherment",
+    "extent": "complete",
+    "basis": "the pencil gloss \"Jose Pineda\" over the four coded groups and the whole telegram in the typed list CMXV.18.1795.1, entry 113; the Clave G.A. card gives josepinfda, one slip (Daniel Jalkut, PR #831)"
+   },
+   {
+    "label": "CMXV.17.1695.2-2 (5 May 1911): decoded, not read",
+    "records": "cmxv-17-1695-2",
+    "method": "read with known key",
+    "extent": "none",
+    "basis": "the Clave G.A. card gives only fragments of the eight coded groups, where the pencil gloss of the time also stops (Daniel Jalkut, PR #831)"
    }
   ]
  }

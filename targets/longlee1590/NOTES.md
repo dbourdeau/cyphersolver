@@ -215,3 +215,16 @@ changed.
 Count on `reading.md` (sure words only, rule of #728): 308/479 = 64.3% -> **305/479 = 63.7%** (f. 67r 203/311, f. 67v
 102/168); probable 118 -> 120, restored 8 -> 9, unresolved 45; certain + probable 426/479 = 88.9% -> 425/479 = 88.7%.
 Still read in part.
+
+## Integration of #820, 20 Nov 2026
+
+Done at the integration of PR #820 (maintainer session, an AI agent; nothing here was checked on the DECODE images).
+- `profile.json`: the `reading_review` is now the reviewer's (grade B), in place of the contributor-side entry of 11 Nov
+  2026. The summary of the text gives the count of 20 Nov 2026 (63.7% certain, 88.7% with the probable words), and
+  `outcome.gaps` gives 45 unresolved words. Recounted from `reading.md`: 25 of them are on f. 67r (of 311 words) and 20 on
+  f. 67v (of 168), so f. 67v has the higher share, not the higher number.
+- An untested suggestion from the review, not part of the reading and not counted: lines 29 to 30 of f. 67r, decrypted
+  `sleducdeportugalmeconltinlera ... augoulernee / mentdespaibbas`, may read "le duc de Parme continuera encor quelque
+  temps au gouuernement des pais bas". It needs three sign shapes looked at on the image: f67r-29 position 9 (the sign
+  labelled N_PORTUGAL, seen once) and the two INF at positions 19 and 41 (positions counted from 0).
+- The target stays in progress, with no page.

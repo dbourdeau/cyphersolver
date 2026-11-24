@@ -74,9 +74,9 @@
  "conditions": {
   "prior_solution": {
    "exists": "in print",
-   "where": "Contemporary decipherment on the leaf; text: Gachard, Voyages des souverains des Pays-Bas IV (1882) pp. 313-314, Tyler, CSP Spain XII (1949) pp. 46-47; key: Pich-Ponce, Cuadernos de Historia Moderna 49 (2024) pp. 27-45; Tomokiyo, Cryptiana (March 2026)",
+   "where": "Contemporary decipherment on the leaf (in hand from the start: the key was re-derived from it); text: Gachard, Voyages des souverains des Pays-Bas IV (1882) pp. 313-314, Tyler, CSP Spain XII (1949) pp. 46-47 (found after the first decode; the minute then settled the cipher-versus-decipherment differences and supplied the restored words); key: Pich-Ponce, Cuadernos de Historia Moderna 49 (2024) pp. 27-45 (found after the re-derivation; compared, not applied); Tomokiyo, Cryptiana (March 2026)",
    "found": "after reading",
-   "used": false
+   "used": true
   },
   "inputs": [
    "images",
@@ -162,9 +162,16 @@
    "kind": "reading",
    "what": "358 words: 215 sure, 131 probable, 12 restored (reading.md); r24 and v26 read from the cipher.",
    "result": "partial"
-  }
+  },
+  {
+   "date": "2026-11-24",
+   "kind": "literature search",
+   "what": "Write-up check (AI agent for the maintainers): the local DECODE record list (10,106 records, harvested to 30 Oct 2026) searched for Besançon, Granvelle and Renard: no record of Ms 1582 f. 2 (the one hit, R9959, is Renard to Prince Philip, 19 Feb 1554, at Simancas, another letter); catalogue.json and research/leads.json hold no entry for this leaf. Words of reading.md recounted: 357 if the word split over v3-v4 is one word, 214 sure if the half-word that opens the leaf ([no]stre) is counted as restored; the contributor's count is 215 of 358. One word apart, same class.",
+   "result": "worked"
+  },
+  {"date": "2026-11-24", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 1120 tokens, 139 types, fr-1530-despatches order 4: reading -2.461 per letter; random keys -4.07 (z 6.8); key annealed onto shuffled ciphertext best -2.475 (mean -2.534, z 2.4); annealer on the real text -2.357. Verdict: underdetermined.", "result": "partial"}
  ],
- "outcome": {
+ "outcome": {"validation": {"date": "2026-11-24", "model": "fr-1530-despatches", "file": "validation.tsv", "tokens": 1120, "types": 139, "tokens_per_type": 8.06, "score": -2.461, "nulls": {"random keys": {"n": 200, "mean": -4.07, "sd": 0.237, "max": -3.406, "z": 6.8, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -2.534, "sd": 0.03, "max": -2.475, "z": 2.4, "p": 0.1429}}, "power": -2.357, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.461; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached -2.357"}, 
   "method": "key recovered based on adjacent plaintext",
   "method_basis": "Decode of the cipher with a key re-derived here from the leaf's own contemporary decipherment (EM alignment of the blind transcription with the decipherment written around the cipher), checked against the minute printed by Gachard (1882); the key's structure matches the cipher published by Pich-Ponce (2024), found afterwards.",
   "contribution": [
@@ -173,6 +180,14 @@
    "catalogue correction"
   ],
   "class": "already solved",
+  "parts": [
+   {
+    "label": "Ms 1582 f. 2: the cipher passage decoded with the key re-derived from the leaf's own decipherment",
+    "method": "key recovered based on adjacent plaintext",
+    "extent": "partial",
+    "basis": "215 of 358 words sure (0.601; 0.966 with the probable words) and outcome.key is partial: the values for no and po, the two forms read w (a, l) and nz (d, i), mt/nt and the rare signs are left as re-derived, on purpose, so that the key stays a check on Pich-Ponce's table. The whole text is in print (Gachard 1882), hence class already solved; the extent of what was decoded here is partial."
+   }
+  ],
   "fraction_read": 0.601,
   "fraction_read_method": "measured",
   "fraction_read_source": "reading.md: 215 sure of 358 words (repository rule, sure words only); with probable words 346/358 = 0.966",
@@ -190,11 +205,7 @@
     "detail": "hypothesis that f. 2 was detached from the copy Weiss printed with a lacuna; not checked"
    }
   ],
-  "verification": [
-   "contemporary decipherment",
-   "independent clear copy",
-   "key confirms"
-  ],
+  "verification": ["contemporary decipherment", "independent clear copy", "key confirms"],
   "provenance": "contributed",
   "notes": "No image of the Bibliothèque municipale de Besançon is reproduced. The library dates the leaf 1555; the text is the letter of 24 Jan 1554.",
   "texts": [

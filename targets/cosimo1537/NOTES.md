@@ -2,7 +2,7 @@
 
 Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1. DECODE records R4034 to R4039, R4041 to R4050 and R4052 to R4054: 19 letters. DECODE record R4033 is the archive's key table.
 
-Status: in progress. This folder is a contribution from outside (prabal-rje), sent as a pull request. The maintainer sets the status, the class and the reading review.
+Status: in progress. This folder is a contribution from outside (prabal-rje), sent as a pull request. The maintainer sets the status, the class and the reading review. What was set on 20 November 2026 is in the section "The maintainers' review at integration" below.
 
 ## What the documents are
 
@@ -54,7 +54,49 @@ The check against the print came after the read. The times rest on my own record
 
 - The readings of the main system are the ones of my public pages; R4046 has one change, which its page states. They mark supplied letters with brackets, but not every letter that stands on a hidden code. The decode is the reference.
 - The readings of R4034 to R4038 are not on my public pages. I made them on 19 November 2026 from the decode of this folder, with code 29 = t. They mark every letter and word that the key does not give. Together they have 446 cipher words: 346 sure and 100 holes (295 sure if every word on code 29 is a hole).
-- Every document is marked "decoded, not read". `README.md`, "The counts by the word rule", gives the number of cipher words, the sure words and the holes of each document, and how they are counted.
+- Every document was filed as "decoded, not read". Maintainers' note, 20 November 2026: R4035, R4037 and R4038 are now marked "read in part" (next section); the other 16 documents stay "decoded, not read". `README.md`, "The counts by the word rule", gives the number of cipher words, the sure words and the holes of each document, and how they are counted.
+
+## The maintainers' review at integration (20 November 2026)
+
+This section is not the contributor's. It records the review of pull request 822, made for the maintainers by an AI agent. No person has checked it. The rest of these notes are the contributor's own words, apart from the lines marked as a maintainers' note or as added at integration.
+
+**What was checked**
+
+- A decoder written by the reviewer from `key/key-table-R4033.tsv` and the digit rows gives the decode of the record pages on 78 of 78 rows of R4034 to R4038. The 1,791 code tokens are 1,667 with a value from the table, 70 on code 29, 17 on a code that the key does not hold and 37 doubtful.
+- An alignment of the five readings with the decode finds no place where a reading departs from the decode without a mark. The recount of the cipher words agrees with the contributor's counts.
+- All 70 tokens of code 29 fall on a t of the readings, with no change.
+- The file `cosimo-1537/key-earlier.tsv` of the contributor's public repository, in its commit of 19 November 2026, 14:05 UTC, is byte for byte `key/key-earlier-blind.tsv` and holds 29 = t.
+- Not checked: the digit rows and the key table against the DECODE images. The reviewer did not have them.
+
+**The states of R4034 to R4038**
+
+| Record | State | Cipher words | Sure | Holes | Read share | Why |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| R4034 | decoded, not read | 112 | 77 | 35 | 0.688 | it builds sentences only in passages 4, 6 and 8; the clear words around its short cipher runs are not in the folder |
+| R4035 | read in part, grade B | 29 | 26 | 3 | 0.897 | two coherent clauses; three holes of one letter each, which is one hole over the floor for a text under 40 cipher words |
+| R4036 | decoded, not read | 12 | 1 | 11 | 0.083 | two rows; no sure sense can be given |
+| R4037 | read in part, grade B | 243 | 201 | 42 | 0.827 | five passages of coherent Italian, raw: 22 of the 42 holes are words with one to three letters marked inside, 8 are unread words on the codes 1 1 and 10 |
+| R4038 | read in part, grade B | 50 | 41 | 9 | 0.820 | two coherent sentences; seven of the nine holes are one or two letters inside a word |
+
+- The 14 letters of the main system stay "decoded, not read", as the contributor filed them.
+- The grade is a model's reading of the Italian against the English, recorded in `profile.json` (`reading_review`). It is not the contributor's, and no person has checked it.
+- By the sentence score of `docs/_check_reading.py` (a sentence is clean with at most one hole in ten words) the three letters have 1 of 2, 1 of 7 and 0 of 2 clean sentences, as their pages say. That is why they were filed as "decoded, not read". The README makes the reading as sentences the test, not that score, and the grade B rests on it: most holes are one to three letters marked inside a word that otherwise stands in the decode.
+- The target as a whole: 3 of the 19 documents are read in part. `profile.json` gives the class "read in part" and names the method from the part that reads, "read with known key" (the archive's table). The main key, from ciphertext, is the second part: key obtained, text not read.
+- Of the 6,842 code tokens of the 19 letters, 1,327 are tokens with a value and no doubt in the three letters that are read in part (0.194). By cipher words in those three letters: 268 of 322 sure (0.832).
+
+**The count rule for code 29**
+
+- Code 29 = t stands in `key/key-table-R4033.tsv`, a key file that `profile.json` names in `outcome.key_file`, on a line of its own with the source "from ciphertext". It is the value of the contributor's blind read, public since 19 November 2026, 14:05 UTC, before the review asked about it.
+- A word on code 29 counts as given by the key. The main system is counted the same way: its whole key is from ciphertext.
+- So the counts of record are 26 of 29 for R4035 and 201 of 243 for R4037. With every word on code 29 as a hole they are 17 of 29 and 159 of 243. No state depends on the choice.
+
+**Three checks on the images, proposed to the contributor and not made**
+
+- Whether the sign transcribed 29 in R4035 and R4037 is the table's 79.
+- Whether the codes 1 1 and 10 of R4037 carry the bar of the table's word signs.
+- Whether the second 4̅6̅ line of the table is 4̅7̅.
+
+"Remaining gaps" lists them with what is known.
 
 ## Other support of the main system
 
@@ -76,6 +118,14 @@ The check against the print came after the read. The times rest on my own record
 - 17 code tokens of the earlier letters hold a code that the key does not hold - blocker: no-key-material. Code 29 (70 tokens) takes t from ciphertext; no key checks it.
 - R4043, R4044, R4045, R4050, R4052 and R4053 show short pieces only - blocker: too-short.
 - The readings hold holes in most sentences - blocker: not-attempted; a reading pass against the images may close some. In R4034 to R4038, 2 of 21 sentences and fragments have at most one hole in ten words.
+
+Added at integration (20 November 2026), from the maintainers' review:
+
+- R4034 builds sentences only in passages 4, 6 and 8 - blocker: not-attempted; 77 of 112 cipher words are sure. Rows L10, L12, L14 and L26 are lines of clear text with cipher inside, and the clear words are not in the folder.
+- R4036 gives no sure sense - blocker: too-short; two rows, 35 code tokens, 4 of them doubtful, 1 of 12 cipher words sure.
+- The sign transcribed 29 in R4035 and R4037 (70 tokens) may be the table's 79 - blocker: not-attempted; 29 occurs only in R4035 and R4037, where 79 never occurs, and 79 only in R4034 and R4038, where 29 never occurs. If the images show 79, the table gives t. The same question stands for 52 in "[c]he" (57 = c) and 82 in "re[s]peto" (87 = s).
+- R4037: the eight unread words `[...]` stand on the codes 1 1 (three times, after "del" or "dal") and 10 (five times, after "il" or "l") - blocker: not-attempted; the table has the barred word signs 1̅1̅ (Imꝑʳᵉ) and 1̅0̅ (Papa), and the rows of R4035 to R4038 mark no bar. Whether the images show a bar is not looked at.
+- R4034, image 1, C03: code 4̅7̅ has no value - blocker: not-attempted; the table as read has 4̅6̅ on two lines between 4̅5̅ and 4̅8̅ ("stato di firenze", "questo stato"). Whether the second is 4̅7̅ is not looked at on the table's image.
 
 ## Escalation
 

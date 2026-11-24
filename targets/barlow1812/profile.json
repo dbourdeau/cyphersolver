@@ -49,7 +49,7 @@
       "route": "Joel Barlow, Paris -> the Duke of Bassano (French minister of foreign relations), Wilna; these copies -> James Monroe, Washington",
       "places": {
         "from": "Paris",
-        "to": "Vilnius"
+        "to": "Vilna"
       },
       "language": "English",
       "pages": 3,
@@ -117,7 +117,7 @@
   "conditions": {
     "prior_solution": {
       "exists": "no",
-      "where": "No decipherment on the film. Print check of 21 Nov 2026: the 25 Sep 1812 despatch is not printed (American State Papers Foreign Relations 3; Wait's State Papers 1819; Todd 1886; The Papers of James Monroe vol. 6); the note to Bassano is printed only as an extract that stops before the coded sentences (ASP FR 3:604; Wait 9:218-19; Todd pp. 270-71). Brant, William and Mary Quarterly 15 (1958) pp. 447-48, gives the context of the coded clause from the French archives (the eighty-licence proposal) and cites the note as received (AAE, CP Etats-Unis 69 f. 350) without quoting it; he also reports that the French foreign ministry intercepted and partly deciphered Barlow's letter to Madison of 26 Sep 1812 (CP 68 f. 346). Exact-phrase searches of Founders Online, Internet Archive, HathiTrust and Google Books found nothing. Not read page by page: Brant 1961, Hill 2005, Egan 1983, Buel 2011 (loan-only). No published table of this code found (Weber 1979 p. 187 gives one decoded sentence of a 1813 letter).",
+      "where": "No decipherment on the film. Print check of 21 Nov 2026: the 25 Sep 1812 despatch is not printed (American State Papers Foreign Relations 3; Wait's State Papers 1819; Todd 1886; The Papers of James Monroe vol. 6); the note to Bassano is printed only as an extract that stops before the coded sentences (ASP FR 3:604; Wait 9:218-19; Todd pp. 270-71). Brant, William and Mary Quarterly 15 (1958) pp. 447-48, gives the context of the coded clause from the French archives (the eighty-licence proposal) and cites the note as received (AAE, CP Etats-Unis 69 f. 350) without quoting it; he also reports that the French foreign ministry intercepted and partly deciphered Barlow's letter to Madison of 26 Sep 1812 (CP 68 f. 346). Exact-phrase searches of Founders Online, Internet Archive, HathiTrust and Google Books found nothing. Not read page by page: Brant 1961, Hill 2005, Egan 1983, Buel 2011 (loan-only). No published table of this code found (Weber 1979 p. 187 gives one decoded sentence of a 1813 letter). Checked 24 Nov 2026: S. Tomokiyo's Cryptiana article 'State Department Code: 1797-1866' names the THE=1700 code for Barlow's letter of 26 Sep 1812 (key not found) and Thomas Barlow's of 10 Feb 1813, with no table and neither letter read here; no DECODE record (known.py).",
       "found": "not found",
       "used": false
     },
@@ -129,7 +129,8 @@
     "attack": "sibling key",
     "human_role": "Andrew Beling set the tasks and the rules (second readings made without sight of the first, with pass marks written beforehand). AI agents located the sources, transcribed, aligned, checked, reviewed and wrote. No person has read the numbers or the readings against the images.",
     "tools": [
-      "decode.py (this folder): applies key.tsv and proposals.tsv to the transcriptions and checks the decryption files"
+      "decode.py (this folder): applies key.tsv and proposals.tsv to the transcriptions and checks the decryption files",
+      "we028_structure.py (this folder, maintainers, 24 Nov 2026): the open numbers against the order of the State Department sheet WE028"
     ],
     "models": [
       "unknown",
@@ -137,7 +138,7 @@
       "claude-opus-5-5"
     ],
     "first_date": "2026-10-19",
-    "last_date": "2026-11-23"
+    "last_date": "2026-11-24"
   },
   "solution": [
     {
@@ -168,7 +169,7 @@
     {
       "date": "2026-11-21",
       "kind": "verification",
-      "what": "Andrew Beling contribution: every source re-read by two AI readers each who had not seen the first reading (no person), pass marks written first (95% per reader, 98% for either). 3,297 numbers compared; 56 misread numbers corrected (32 in Barlow to Madison 26 Sep 1812, 16 in Madison to Barlow 11 Aug 1812), 22 marked doubtful; nine of fourteen sources missed a mark (two through the first transcription's errors, two through poor film, five short passages by one to four numbers). Table after correction: 649 numbers, of which 623 have a value from a decipherer of the time and 21 a word.",
+      "what": "Andrew Beling contribution: every source re-read by two AI readers each who had not seen the first reading (no person), pass marks written first (95% per reader, 98% for either). 3,297 numbers compared; 56 misread numbers corrected (32 in Barlow to Madison 26 Sep 1812, 16 in Madison to Barlow 11 Aug 1812), 22 marked doubtful; nine of fourteen sources missed a mark (two through the first transcription's errors, two through poor film, five short passages by one to four numbers). Table after correction: 644 numbers in key.tsv (recounted 24 Nov 2026; the contribution gave 649, which no file in the folder yields), of which 623 have a value from a decipherer of the time and 21 are seen only inside a word.",
       "result": "worked"
     },
     {
@@ -185,9 +186,47 @@
       "kind": "verification",
       "what": "Andrew Beling contribution: two further AI agents that had made none of the readings checked the folder. A verifier applied the key with its own script (same counts and sentences) and read the 157 numbers on the frames (144 by shape; the other 13 are the blotted or miswritten ones listed in the transcription headers). A second agent of ours, acting as reviewer, read all 157 numbers by shape before opening the folder (153 agree), read the decryptions as sentences and found both coherent with scattered holes (its own grade A, not recorded as a reading_review, which is the repository reviewer's to give); the four changes it asked for were made.",
       "result": "worked"
+    },
+    {"date": "2026-11-23", "kind": "verification", "technique": ["statistical test", "language-model scoring"], "what": "Statistical validation (docs/_validate.py): 101 tokens, 68 types, en-modern order 4: reading -2.064 per letter; random keys -2.859 (z 6.4); key annealed onto shuffled ciphertext best -1.879 (mean -1.901, z -11.6); annealer on the real text -1.827. Verdict: underdetermined.", "result": "partial"},
+    {
+      "date": "2026-11-24",
+      "kind": "literature search",
+      "what": "At the write-up (AI agent for the maintainers): looked for more letters in the code that are online. Founders Online, the fifteen Madison and Barlow letters from 17 Nov 1811 to 26 Sep 1812: the editors mark code in two only (11 Aug and 26 Sep 1812), both already among the ten key letters. The RG 59 text-layer triage (research/nara_triage_a, a sample) lists no coded frame of 1810-1814 in this code outside M34 roll 16. S. Tomokiyo's Cryptiana article 'State Department Code: 1797-1866' names the THE=1700 code (key not found) and gives no table and neither letter; known.py finds no DECODE record. Nothing new to align.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "sibling key",
+      "technique": [
+        "key matching"
+      ],
+      "what": "At the write-up: key.tsv compared number by number with the code tables held in the repository: the State Department sheet WE028 (576 numbers in common), 419 rows of WE025 (150), Armstrong's code (218), Rufus King's code (269), the JQA table (434). No number has the same value in any of them. 584 of the 623 values are entries of the WE028 sheet: the same family of word list, numbered differently. Weber's other printed tables are not held and were not tested.",
+      "result": "ruled out"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "hypothesis",
+      "technique": [
+        "key-structure hypothesis",
+        "statistical test"
+      ],
+      "what": "At the write-up: the nine open numbers tested by their place in the word list, taking the order of the WE028 sheet (we028_structure_plan.md written before the run; we028_structure.py; we028_structure.tsv). Control, each of 571 valued numbers left out: only 47 predictable by the rule (plan: 100) and 43 right (0.915; plan: 0.95). The test did not reach its marks and no value is taken from it. The rule made no prediction for eight of the nine numbers and gave aph for 531, not the ard the sense needs. As remarks only: 815 may fall on nity counting from 812 (fix from 818), 537 on ard counting from 538 (arch from 535), which does not settle which copy of regard is wrong; 624 and 1567 fit; 1404 is gre from 1405 (ged from 1403); 706 as det and 103 as ti are out of the order (103 may be a slip for 133, ti).",
+      "result": "failed"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "literature search",
+      "what": "At the write-up: the Madison edition's notes to Barlow's private letter of 26 Sep 1812 (Presidential Series 5:354-57, n. 3 and n. 5, read on Founders Online) identify 'my note of the fifth June' as Barlow's letter of 5 June 1812 to the Duke of Dalberg, enclosed in his despatch of 13 July 1812, and say no note of 11 June has been found (the same pair 939 1126 was deciphered '11th June' and 'fifth June' in that letter). The despatch of 25 Sep may mean the note of 5 June, so [163]th may be 5th; nothing gives 163 a value and it stays unread.",
+      "result": "partial"
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "verification",
+      "what": "At the write-up: NARA M34 roll 16 frames 0232 and 0241 fetched and three open numbers looked at enlarged, with no overlay: 163 (232R16), 103 (24103) and 531 (24106) are each clear and as transcribed. A crop of frame 0232 was made for the page.",
+      "result": "worked"
     }
-  ],
-  "outcome": {
+   ],
+  "outcome": {"validation": {"date": "2026-11-23", "model": "en-modern", "file": "validation.tsv", "tokens": 101, "types": 68, "tokens_per_type": 1.49, "score": -2.064, "nulls": {"random keys": {"n": 200, "mean": -2.859, "sd": 0.124, "max": -2.603, "z": 6.4, "p": 0.005}, "shuffled refit": {"n": 6, "mean": -1.901, "sd": 0.014, "max": -1.879, "z": -11.6, "p": 1.0}}, "power": -1.827, "verdict": "underdetermined", "notes": "claimed per-occurrence score -2.064; polyphony 0.0; 9 unread tokens left out; annealer on the real text from random keys reached -1.827"}, 
     "class": "read in part",
     "key": "partial",
     "method": "key recovered based on adjacent plaintext",
@@ -258,23 +297,33 @@
     "gaps": [
       {
         "item": "815 (twice), 1567, 1404 (25 Sep); 624, 706, 103 (Bassano): seven numbers with no value in any decipherment of the time",
-        "blocker": "open-codes",
-        "detail": "each occurs only in these passages; each has a value from the sense (proposals.tsv), marked [?] in the readings. More letters in this code would settle them: Eustis to Barlow, 25 Sep 1812 (catalogue 770, Clements Library, not digitised); the second copy of Monroe to Barlow, 16 Jun 1812 (lead 1279, Princeton); the note Bassano received (French foreign ministry archives, CP Etats-Unis 69 f. 350); the French decipherment of Barlow's letter of 26 Sep 1812 (CP 68 f. 346)."
+        "blocker": "no-key-material",
+        "detail": "each occurs only in these passages; no sheet of this code is known and no other letter in the code with a decipherment is online (checked 24 Nov 2026); each has a value from the sense (proposals.tsv), marked [?] in the readings; by their place in the word list (remarks only; the test failed its control) five fit and 706 and 103 are in doubt (NOTES section 10). Material that could add occurrences or test the readings, not online: Eustis to Barlow, 25 Sep 1812 (catalogue 770, Clements Library, not digitised); the note Bassano received (French foreign ministry archives, CP Etats-Unis 69 f. 350), which would test the reading of the second letter; the second copy of Monroe to Barlow, 16 Jun 1812 (lead 1279, Princeton) and the French decipherment of Barlow's letter of 26 Sep 1812 (CP 68 f. 346), copies of key letters that contain none of the open numbers, so they could only check the key's values."
       },
       {
         "item": "163, the day in 'my note of the [163]th June'",
-        "blocker": "open-codes",
-        "detail": "no value and none proposed; Madison's decipherment of the sister letter of 26 Sep 1812 gives the day once as 11th and once as fifth"
+        "blocker": "no-key-material",
+        "detail": "no value and none proposed; the note meant is probably Barlow's letter of 5 June 1812 to Dalberg (Madison edition, Presidential Series 5:354-57, n. 5), but nothing gives the number a value"
       },
       {
         "item": "531 (copy A) or 537 (copy B) in 'regard'",
-        "blocker": "open-codes",
-        "detail": "the two copies differ in this number; neither has a value"
+        "blocker": "no-key-material",
+        "detail": "the two copies differ in this number; neither has a value from a decipherer; one copy has miscopied the number and the contributor leaves open which; by its place in the word list (a remark only, the test failed its control) 537 may be ard or arch and the rule gives aph for 531, which does not settle it (NOTES section 10)"
       },
       {
         "item": "the blotted, overwritten group after 745 in the September letter (232R12)",
         "blocker": "illegible",
         "detail": "only the last digit is clear; read 761 (s) from the word spoliations"
+      },
+      {
+        "item": "1353 written like 1553 (232R14) and the blotted 750 (23301)",
+        "blocker": "illegible",
+        "detail": "miswritten or blotted on the only film of the only copy; read from the word ({+exp}ected, mod{+e}) and counted as holes"
+      },
+      {
+        "item": "'the' before United States, written like 1780 (232R19)",
+        "blocker": "illegible",
+        "detail": "a whole-word number, so no neighbour can confirm the digit; marked [?the]"
       }
     ],
     "texts": [
