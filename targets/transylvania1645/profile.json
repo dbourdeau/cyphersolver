@@ -378,7 +378,8 @@
    "technique": ["statistical test"]
   },
   {"date": "2026-10-24", "kind": "verification", "what": "Read bar applied per document (v10): 3 of 4 documents marked read measure under 95% of words read as sense (v2_score explicit holes) and are now read in part; read_share recorded for each.", "result": "partial"},
-  {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction", "statistical test"], "what": "R4936 g/q shape check, place by place (sign_check/). (1) Blind sheet T answered by Brice Dudout: 8 g read t, 1 q read u, 2 c read y, 3 controls; rule hashed before the thumbnails were cut (sheet-T-rule.md, SHA-256 7f08d4fd...). Controls 3/3; the 8 t places show a short hook (relabelled g->q), the u place a long loop (q->g), c->e at fegyvert, c kept at kyralyoknak. (2) AI pass (Claude) on the other 142 g-shaped places, protocol hashed in two parts before the unseen places (ai-protocol-partA.md, ai-protocol-partAB.md), blind calibration on 21 mixed crops 9/9 with the human answers and 3/3 controls (the agent had read the human answers): g read t 94 hook, 0 loop, 12 doubtful; g read u 27 loop, 4 hook (tagged g=u:hook), 5 doubtful. 102 g->q relabels in all in R4936_align.tsv and R4936-transcription-b15.txt (R4936_corrections.tsv; mechanical decode R4936-mechanical-b15.txt). Frozen key unchanged, reading unchanged. Count (tools/R4936_count728.py, 341 cipher words = 338 rows + 3 [...] runs): sure words 232 -> 234 on the human places alone; 302 if the AI places are counted, which they are not until a reader who has not seen the answers checks them (decision of 24 Nov 2026). State left to the reviewer.", "result": "partial"}
+  {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction", "statistical test"], "what": "R4936 g/q shape check, place by place (sign_check/). (1) Blind sheet T answered by Brice Dudout: 8 g read t, 1 q read u, 2 c read y, 3 controls; rule hashed before the thumbnails were cut (sheet-T-rule.md, SHA-256 7f08d4fd...). Controls 3/3; the 8 t places show a short hook (relabelled g->q), the u place a long loop (q->g), c->e at fegyvert, c kept at kyralyoknak. (2) AI pass (Claude) on the other 142 g-shaped places, protocol hashed in two parts before the unseen places (ai-protocol-partA.md, ai-protocol-partAB.md), blind calibration on 21 mixed crops 9/9 with the human answers and 3/3 controls (the agent had read the human answers): g read t 94 hook, 0 loop, 12 doubtful; g read u 27 loop, 4 hook (tagged g=u:hook), 5 doubtful. 102 g->q relabels in all in R4936_align.tsv and R4936-transcription-b15.txt (R4936_corrections.tsv; mechanical decode R4936-mechanical-b15.txt). Frozen key unchanged, reading unchanged. Count (tools/R4936_count728.py, 341 cipher words = 338 rows + 3 [...] runs): sure words 232 -> 234 on the human places alone; 302 if the AI places are counted, which they are not until a reader who has not seen the answers checks them (decision of 24 Nov 2026). State left to the reviewer.", "result": "partial"},
+  {"date": "2026-11-24", "kind": "verification", "technique": ["manual reconstruction"], "what": "R4936 blind sheet C (sign_check/sheet-C-*): Brice Dudout answered 22 places (19 targets, 3 controls) that the AI pass had left open: the 4 conflicts (g read u, AI hook), 10 doubtful g read t, 5 doubtful g read u. Rule hashed before any thumbnail (sheet-C-rule.md, SHA-256 bb67d671...). Controls 3/3. The 4 conflicts are long loops (u confirmed, tags g=u:hook removed; the AI hook label was wrong at all 4). g read t: 8 short hooks (relabelled g->q), 1 loop (alt-, t not supported, tag kept), 1 other form (tartani, L24 s6: a long straight tail, neither loop nor hook; labelled Q, no key value, t by sense only). g read u: 5 loops. 9 labels changed (R4936_corrections.tsv); key and reading unchanged. Count (tools/R4936_count728.py): sure 234 -> 239 of 341 on the human places (0.686 -> 0.701); 302 -> 312 (0.886 -> 0.915) if the AI relabels are confirmed. Because the AI hook label failed on all 4 conflicts, the 94 AI relabels stay probable. R4936 stays decoded, not read.", "result": "partial"}
  ],
  "outcome": {
   "validation": {
@@ -529,6 +530,29 @@
     "rule_hash": "7f08d4fd8ce0d43c5358f6ddd67bf533553cb1fe8c1ebfdbb2abefb35c6ad998",
     "sheet_faults": "none found",
     "note": "R4936 p. 1 (DECODE R4936, image private), family key unchanged, reading unchanged. Eight g-shaped figures read t (lines 1-13) all answered 'short hook' (= the hand's t figure): relabelled g->q; one q read u answered 'long loop': relabelled q->g; one c read y answered e: relabelled c->e; another c read y answered c (reading not supported there). Letters on look-alike alternates 130 -> 120 of 1,932; sure words 232 -> 234 of 341 cipher words (0.680 -> 0.686, #728 count); R4936 stays decoded, not read. The other 106 g=t sites were not changed by this sheet; they were then checked one by one by an AI pass calibrated on these answers (sign_check/README.md, part 2), whose 94 g->q relabels count as probable until a blind reader checks them (decision 24 Nov 2026). Answers: sign_check/sheet-T-answers.json (SHA-256 62a7d87bef589f3b39a8bbd60c7a06659ee36c198e90fc05144f2e171c3a35ba). Not a human_check: AI agents built and scored the sheet."
+   },
+   {
+    "date": "2026-11-24",
+    "checker": "Brice Dudout",
+    "checker_kind": "project",
+    "model_roles": [
+     "rule",
+     "thumbnails",
+     "sheet",
+     "scoring",
+     "remarks"
+    ],
+    "signs_checked": 19,
+    "controls": 3,
+    "controls_passed": 3,
+    "as_transcribed": 10,
+    "corrected": 9,
+    "unresolved": 0,
+    "not_counted": 0,
+    "rule": "sign_check/sheet-C-rule.md, written before any thumbnail was cut and before the answers, with a written integration clause",
+    "rule_hash": "bb67d6711651c4ceba92bf3a36d8ecfa5abed871ed80eaecebcf0946d425fa0d",
+    "sheet_faults": "none found",
+    "note": "R4936 (DECODE R4936, images private), family key unchanged, reading unchanged. The 19 places the AI pass left open: 4 conflicts (g read u, AI hook) all answered long loop (u confirmed, g=u:hook removed); 10 doubtful g read t: 8 short hook (g->q), 1 long loop (alt-, kept, t not supported), 1 other form (tartani: long straight tail; labelled Q, no key value, t by sense only, probable); 5 doubtful g read u: long loop (unchanged). Letters on look-alike alternates 26 -> 18; sure words 234 -> 239 of 341 (0.686 -> 0.701) on the human places; 302 -> 312 (0.886 -> 0.915) if the AI relabels are confirmed. The AI hook label failed on the 4 conflicts, so the 94 AI relabels stay probable. Answers: sign_check/sheet-C-answers.json (SHA-256 0df053b969a6096b7dd235a69ff0b06743ef30d58403b1715ada085018304de8). Not a human_check: AI agents built and scored the sheet."
    }
   ],
   "gaps": [
@@ -543,7 +567,7 @@
     "detail": "54 cipher letters in three spans; the word occurs once; the family key otherwise decodes the spans unchanged (23 Oct 2026)"
    },
    {
-    "item": "R4936 (decoded, not read): after the g/q shape check of 24 Nov 2026, 26 letters rest on the other member of a look-alike pair (12 doubtful g=t, 5 q=u, 3 c=y, 3 g=g, 3 single), four u are written with the hook of the t figure (g=u:hook), and the 94 g->q relabels made by an AI pass count as probable until a blind reader checks them (sure words 234 of 341 on the human places alone, 302 with the AI places); plus eight [?words] and three [...] runs",
+    "item": "R4936 (decoded, not read): after the g/q shape check and blind sheet C of 24 Nov 2026, 18 letters rest on the other member of a look-alike pair (4 g=t, one of them the figure Q, 5 q=u, 3 c=y, 3 g=g, 3 single) and the 94 g->q relabels made by an AI pass count as probable until a blind reader checks them (sure words 239 of 341 on the human places alone, 312 with the AI places); plus eight [?words] and three [...] runs",
     "blocker": "illegible",
     "detail": "the DECODE scan (1,704 px wide, no larger file) did not separate the hand's g and q at 3x (23 Oct 2026); at 3-4x a short hook (t) or a long loop (u) shows at most places, 17 stay doubtful (24 Nov 2026, sign_check/); no contemporary or printed decipherment confirms the choices (verify sweep 23 Oct 2026). 23 Oct 2026 (r2h): R4938 and R4939 do not settle it (R4938's spans have no t; R4939 is another hand, whose g and q do separate at the same scan width)"
    },
