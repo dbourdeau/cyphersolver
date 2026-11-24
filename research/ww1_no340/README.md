@@ -1,0 +1,47 @@
+# Berlin–Madrid telegram No. 340, 26 March 1917
+
+Catalogue entry **2959**, Bundesarchiv **RM 5/2415**, fol. 151. The heading reads “No. 340 of 26 March. Reply to telegram No. 239. Code 27082.” Zimmermann's signature is in clear. The projected readings below are hypotheses about the 37 body groups. The body remains undeciphered. [Repository entry](https://www.ww1ciphers.com/message/barch-rm5-2415-no340-27082) · [Color scan](https://www.ww1ciphers.com/assets/barch-rm5-2415-f151.jpg) · [Microfilm, frame 582](https://catalog.archives.gov/id/336420574?objectPage=582)
+
+## Transcription and identifiers
+
+- [Ciphertext](ciphertext.txt) preserves the published numerical sequence, with the four three-digit heading groups and cipher indicator on their own line. The first body group is `29798`, with `29748` a plausible reading from the images. The cancelled cell immediately before `7442` is omitted. Its visible ending may be `42`, but the cancellation ink and film shadow leave the rest uncertain. Both readings of the first group are retained in the calculation.
+- The naval cover, on frame 581, records `B. 10569`, serial `200`, and dispatch stamp `K.Z. 16146`. The word count is `52 W.`. It reconciles with 42 retained numeric groups plus ten items on the cover or in clear. Foreign Office `6852` appears on the cipher sheet. These are independently useful search terms for a duplicate. [Cover, frame 581](https://catalog.archives.gov/id/336420574?objectPage=581)
+- The heading sequence `047 141 135 620` uses the common three-digit codebook for serials, dates and formulas. Separate telegrams show `047` for No. 340 and `141 135` for 26 March and the reply formula. The comparison set supplies no independent occurrence of `620` for No. 239. The three-digit heading sits outside the 37-group body. [Code 2500 comparison](https://www.ww1ciphers.com/message/shd-1k686-134-19150817-no161-2500) · [Same-day No. 341](https://www.ww1ciphers.com/message/barch-rm5-2415-no341-18470) · [Mendelsohn, pp. 4–5](https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/friedman-documents/publications/FOLDER_270/41784749082377.pdf#page=10)
+
+## Codebook and reproducible checks
+
+Code 27082 belongs to the 18470 family. Each body group consists of a page label followed by a two-digit position. Undo the known one-step shift by cycling the tens digit backward within `0–4` or `5–9`. The units digit and page label stay as written. For example, `18877` becomes page `188`, position `67`. The conversion from 27082 page labels to 18470 pages remains missing. Givierge's `25974 = für` supports the page correspondence `259 → 271`. The target does not use that label. [Code 27082](https://www.ww1ciphers.com/code/27082) · [Code 18470 family](https://www.ww1ciphers.com/family/18470) · [Comparative study, §6.3](https://doi.org/10.1080/01611194.2026.2638191)
+
+The body has 33 distinct page labels. Labels 12, 58, 74 and 78 each occur twice. Group `1235` is an exact repeat at positions 15 and 19. A candidate layout has to account for both appearances of each shared label. The recorded single-entry forms for Cádiz, Las Palmas and cardinal 26 have incompatible suffixes regardless of page order. [Cádiz](https://www.ww1ciphers.com/message/genoa-18470-a125) · [Las Palmas](https://www.ww1ciphers.com/message/genoa-18470-b220) · [26](https://www.ww1ciphers.com/message/genoa-18470-a023)
+
+Run `python research/ww1_no340/check_layout.py` from the repository root. It checks the transcription and computes the page ranges required by specified hypotheses. The model uses 75 consecutive four-page blocks from 18470 pages 10–309, shuffles their order, and allows each page label to be used once or doubled consecutively. It tests one historical family convention. It supplies no evidence that 27082 followed that convention.
+
+## Fernando Po hypothesis
+
+The April correspondence discusses the retention of German personnel on Fernando Po and the transfer of other groups. The 1 April reply refers to a limited exception for military doctors and paymasters. Berlin No. 446 of 23 April addresses the same retention dispute. The documents support the subject as a possibility and do not quote No. 340. [1 April reply](https://politisches-archiv.diplo.de/invenio/invenio-viewer/lixe/view/a9d28c12-48c9-4b66-87de-984bad971d94#item=0&page=381) · [No. 446](https://politisches-archiv.diplo.de/invenio/invenio-viewer/lixe/view/a9d28c12-48c9-4b66-87de-984bad971d94#item=0&page=400)
+
+| Group | 27082 text | Candidate 18470 | Reading in related code material |
+| --- | --- | --- | --- |
+| 34 | `3064` | `18654` | *in* |
+| 35 | `18877` | `4167` | *Fernando Po* |
+| 36 | `8726` | `13616`, `16016`, `16716`, `4816` | *beibehalten*, *gewonnen*, *verlegt*, *angeordnet* |
+| 37 | `7808` | `11848` | *werden* |
+
+The 1915 Einsiedel telegram independently attests `4167` twice as raw `2587` in Code 89734. The gap is the proposed mapping from 27082 label `188` to 18470 page `41`. The individual candidate words for *in Fernando Po beibehalten werden* are attested, but all four page mappings in the table are conditional. Shared label `78` would put group 16 at `11858` if group 37 is *werden*. The regular cardinal schedule suggests `11858 = 450`, without an independent alignment for that group or evidence of what No. 340 might count. [Einsiedel](https://www.ww1ciphers.com/message/tna-adm223-766-19151119-einsiedel-89734) · [Beibehalten](https://www.ww1ciphers.com/message/tna-adm223-766-19151008-no3517-89734) · [Gewonnen werden](https://www.ww1ciphers.com/message/tna-adm223-766-1915-siam-memorandum-89734) · [Verlegt](https://www.ww1ciphers.com/message/genoa-18470-b025) · [Angeordnet](https://www.ww1ciphers.com/message/genoa-18470-a018) · [Numbering rules](https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/friedman-documents/publications/FOLDER_270/41784749082377.pdf#page=35)
+
+- Each ending requires at least 313 labels in the contiguous-block model. The 1917 German report describes a rough numerical range for five related codes, with exceptional higher groups. It cannot establish an exact limit for 27082. Related surviving tables document both ordinary page labels above 309 and variants that stop at 309. [1917 report, p. 9](https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/friedman-documents/reports-research/FOLDER_197/41716799075610.pdf#page=9) · [Code 12900](https://www.ww1ciphers.com/code/12900)
+- The test *wird … nicht in Fernando Po verlegt werden* uses `12537` at group 23 and `11240` or `24040` at group 33. It fits through 313. The other three verbs require at least 317 with these two additional readings. The intervening groups lack a verified reading. [Wird](https://www.ww1ciphers.com/message/genoa-18470-a004) · [Nicht](https://www.ww1ciphers.com/message/genoa-18470-a103) · [Alternate nicht](https://www.ww1ciphers.com/message/genoa-18470-a128)
+- Conversely, *weiterführ-* (`12190`, group 20) followed by *daß dieselben* (`8572`, group 21) fits through 313 with *beibehalten*, *gewonnen* or *angeordnet*. The *verlegt* version needs 317. This pair does not itself form a grammatical clause. [Weiterführ-](https://www.ww1ciphers.com/message/tna-adm223-791-19180118-no7-1303) · [Code 3512 specimen](https://www.ww1ciphers.com/assets/codebook-3512.jpg)
+
+## Archival check and outstanding evidence
+
+| Source or lead | Result |
+| --- | --- |
+| [T1022 roll 671](https://catalog.archives.gov/id/336420574?objectPage=582) | Located the same cipher sheet with naval dispatch paperwork. No plaintext on those frames. Nearby No. 341 is a different telegram. |
+| [Madrid No. 238](https://politisches-archiv.diplo.de/invenio/invenio-viewer/lixe/view/f4d6206e-7ba0-4df1-8714-07c7c4f41bd8#item=0&page=321) and [No. 240](https://politisches-archiv.diplo.de/invenio/invenio-viewer/lixe/view/f4d6206e-7ba0-4df1-8714-07c7c4f41bd8#item=0&page=322) | Both were sent late on 22 March and received on the morning of 23 March. These dates narrow the search for No. 239. The surviving adjacent pages have separate subjects and do not include No. 239. |
+| [German embassy RAV 163/852](https://politisches-archiv.diplo.de/invenio/direktlink/37d2d693-fe17-404a-9cf4-6c2ba8d0977d/) and [Colonial Office R 1001/3977](https://www.deutsche-digitale-bibliothek.de/item/UXVWAQKZC2OPGMYGIRWUYG6Q5F7LYC7Z) | Both cover the right subject and dates. Their contents remain unverified. |
+| [Naval entrance ledger RM 5/103](https://invenio.bundesarchiv.de/invenio/direktlink/5d5e2c78-a0fe-4c4a-ae09-b3216e102298/) | Covers March–April 1917 and includes the registration range containing `B. 10569`. No publicly accessible image of the entry was identified. |
+| [Room 40 March log ADM 223/652](https://discovery.nationalarchives.gov.uk/details/r/C4123542) and [Spain intercept file ADM 223/842](https://discovery.nationalarchives.gov.uk/details/r/C4396743) | The catalogue gives relevant date coverage without identifying No. 340 or No. 239. The files were not available as public downloads. |
+| [September cipher review HW 3/181](https://discovery.nationalarchives.gov.uk/details/r/C2228289) | The published English copy refers to example decipherments in supplements 11 and 12. The public release lacks those supplements. Their survival in the British file is unverified. |
+
+A second ciphertext in 27082 with a known reading, the page table, or either of the two dispatches with a surviving plaintext would provide the independent evidence needed to advance beyond these conditional readings.
