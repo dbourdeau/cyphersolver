@@ -6,10 +6,16 @@ begins on aufn 0003, whose five cipher lines carry a full interlinear decipherme
 ## Normalised reading
 
 Our words in round brackets complete an abbreviation or a letter the cipher leaves out; square brackets mark a group outside
-the key whose value was supplied from the context after the measurement (restored).
+the key whose value was supplied from the context after the measurement (restored). In "[e][s]" (no. 35-36) the s stands on 112, whose key value is o: it is the unresolved
+group no. 36 of the count below, taken from the context and marked [ ] for that reason.
 
-> ... dessen gute und ve(r)trau[l]he Freundschaft [e]s wohl im Churfürst(t)l[ich]en Collegio als auch im Evangelische[n]
-> Corpore wie a[l]le Zeit, also vornehml[ich] anietzo von n[ich]t gering[e][r] ist, und es täg[l]h Gelegen(heit) ...
+Spelling conventions of this reading (declared after the key-replay audit of 24 Nov 2026): the cipher has one sign set
+for u, v and w, so u is written u, v or w as the German needs (uohl = wohl, uie = wie, uornehm = vornehm); a is written ä
+where the word needs it (tag = täg); a group transcribed with "?" (a damaged or uncertain digit, e.g. 53? = C, 284? = g)
+is read with the value of the group it most likely is and is not marked in the text.
+
+> ... dessen gute und v[e](r)trau[l]he Freundschaft [e][s] wohl im Chur[f]ürst(t)l[ich]en Collegio als auch im Evangelische[n]
+> Corpore wie a[l]le Zeit, also vornehml[ich] anietzo von n[ich]t g(e)ring[e][r] ist, und es täg[l]h Gelegen(heit) ...
 
 Modern spelling: "... dessen gute und vertrauliche Freundschaft es wohl [sowohl?] im Churfürstlichen Collegio als auch im
 Evangelischen Corpore wie alle Zeit, also vornehmlich anjetzo von nicht geringer [Bedeutung?] ist, und es täglich Gelegenheit ..."
