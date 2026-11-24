@@ -37,6 +37,7 @@ The coded passages of four of these despatches are in print:
   - `build_round2.py`, `codes_1810_round2.txt` and `reader_agreement.txt`;
   - `heldout_round2.txt`, the run;
   - `no29_agreed.txt`, the No. 29 groups the two blind readings agree on, written by `build_round2.py`;
+  - `reader_scores.py`, `codes_1810_reader1.txt`, `codes_1810_reader2.txt` and `reader_scores.txt`: each blind reading alone, without the agreement filter (post hoc, outside both plans), scored with `heldout_1810.py`'s rules: 0.816 and 0.814;
   - `frame167R/`, the note on the 570 of No. 25 (the crops are not committed; their boxes are in the note).
 - `transcriptions_round2/`: the fresh blind readings X, Y and Z.
 
