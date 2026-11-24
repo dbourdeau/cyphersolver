@@ -15021,12 +15021,12 @@
    "skip": "No DECODE record known for Mediatheque Georges-Delaw, Sedan, fonds Gourjault carton 170 (Breant to Reveillon, 26 Dec 1673 and 8 Jan 1674): a DECODE keyword search of 19 Nov 2026 for Sedan, Gourjault, Breant and Reveillon returns 0 records (the full record list was not searched). The letters carry a contemporary interlinear decipherment; no transcription, image or crop is queued, because the images came through the SHAS and the reuse terms are awaiting the library's answer (NOTES). Revisit when it answers."
   },
   "lorenzana1432": {
-   "writeup": null,
+   "writeup": "https://dbourdeau.github.io/cyphersolver/lorenzana1432.html",
    "cite": "Andrew Aymeloglu, reading and side-by-side edition of ASF MAP V 196 (aaymeloglu/unsolved-ciphers), merged into targets/lorenzana1432/; the contemporary interlinear decipherment of doc. 140 (8 Dec 1431) supplied the key values.",
    "new_records": [
     {
      "shelfmark": "ASF, Mediceo avanti il Principato, filza V, doc. 196, c. 208r (clear postscript on c. 209r)",
-     "what": "Bernardo d'Alamanno de' Medici (Lorenzana) to Averardo de' Medici, 17 Apr 1432; Italian, about 15 cipher runs in a letter-sign substitution among clear words, no decipherment on the leaf. Read: the 58 cipher words are all decoded, 56 sign for sign and 2 with a one-letter slip (56 of 58, 0.966); the key from the 20 values on the interlinear decipherment of doc. 140 (8 Dec 1431), five more from the April page (targets/lorenzana1432/april-key.tsv, december-key.tsv); doubtful clear words marked. No DECODE record exists (catalogue 2954 vetting, 15 Nov 2026: no Mediceo avanti il Principato record at all in the 10,106-record list); docs. 140 and 143 of the same filza, the siblings the key rests on, are not on DECODE either. No page yet for the target. Suggested as a new DECODE record, status Decrypted if the owner agrees that the cipher words are the whole of the cipher.",
+     "what": "Bernardo d'Alamanno de' Medici (Lorenzana) to Averardo de' Medici, 17 Apr 1432; Italian, about 15 cipher runs in a letter-sign substitution among clear words, no decipherment on the leaf. Read: the 58 cipher words are all decoded, 56 sign for sign and 2 with a one-letter slip (56 of 58, 0.966); the key from the 20 values on the interlinear decipherment of doc. 140 (8 Dec 1431), five more from the April page (targets/lorenzana1432/april-key.tsv, december-key.tsv); doubtful clear words marked. No DECODE record exists (catalogue 2954 vetting, 15 Nov 2026: no Mediceo avanti il Principato record at all in the 10,106-record list); docs. 140 and 143 of the same filza, the siblings the key rests on, are not on DECODE either. Written up on 24 Nov 2026 (lorenzana1432.html); key replay 56 of 58 cipher words exact, statistical validation pass; no printed text found (Pellegrini 1889 prints letters of the same correspondence, not this one). Suggested as a new DECODE record, status Decrypted if the owner agrees that the cipher words are the whole of the cipher.",
      "transcription": [
       "targets/lorenzana1432/transcription.tsv",
       "targets/lorenzana1432/reading-it.md"
@@ -16106,6 +16106,65 @@
   },
   "tremais1759": {
    "skip": "Not on DECODE: no record for catalogue 1392 or the September letter (vetting 4 Nov 2026, known.py on Tremais, Querdisien and C11A 104); nothing on DECODE to correct. Transcriptions (targets/tremais1759/nov_transcription_v2.tsv, sept_cipher_aligned.tsv), the partial key (key.tsv) and the reading could go with new records if Daniel wants them."
+  },
+  "acciaiuoli1513": {
+   "writeup": "https://dbourdeau.github.io/cyphersolver/acciaiuoli1513.html",
+   "key": {
+    "decode": "R5807"
+   },
+   "cite": "P. D. Gabbrielli, cipher alphabets of the Dieci di Balìa correspondence, vol. I, no. 120 (ASF); transcription and reading by Andrew Aymeloglu with Claude (Anthropic) and OpenAI Codex, pull request #841, 20-21 Nov 2026",
+   "fields": {},
+   "records": {
+    "R5807": {
+     "decode_status": "unknown (key record)",
+     "proposed": "(no change)",
+     "note": "24 Nov 2026 (write-up of acciaiuoli1513): the images of this record show Gabbrielli's key no. 120, headed 'An. 1512-13-14. Cifra. 120. Acciaioli (de) Roberto. Carteg. de' X di Balìa, Filze n. 107. 108. 110. 113. 114. 115. 116. 117.': the cipher of Roberto Acciaioli, Florentine orator in France. By the contributor's notes the volume's key records are numbered R(5686 + N) in catalogue order but the images run one leaf behind, so that R5806 shows key 119 (Francesco Guicciardini) and R5807 shows key 120; the metadata and images of this stretch should be checked against each other (not re-checked on DECODE here). The key deciphers ASF Mediceo avanti il Principato LXXII docs. 190 and 192 (Amiens, 23 Oct 1513), which are not on DECODE, and is the same cipher, as far as the key files compare, as Francesco Pandolfini's letters of 1514-15 (targets/pandolfini1514). Gabbrielli's nos. 89 and 111, also for Acciaioli, are different ciphers (the contributor's notes list R5777 and R5799 as the other records consulted, without saying which shows which). The transcription attached was made by Andrew Aymeloglu with Claude (Anthropic).",
+     "reading": null,
+     "sent": false,
+     "reading_not_needed": true,
+     "transcription": [
+      "targets/acciaiuoli1513/gabbrielli-120.md"
+     ]
+    }
+   },
+   "new_records": [
+    {
+     "shelfmark": "ASF, Mediceo avanti il Principato, filza LXXII, doc. 192 (old c. 234)",
+     "what": "Roberto Acciaiuoli, Florentine orator at the French court, to the Signoria, Amiens, 23 Oct 1513; one leaf, cipher on both faces (41 lines, 1,887 signs), no decipherment on the leaf. Syllabic cipher with raised vowel figures, word signs and numbers for names; key: Gabbrielli's no. 120 (DECODE R5807). Deciphered in part, 660 of 757 cipher words (87.2%), by Andrew Aymeloglu with Claude (Anthropic) and OpenAI Codex (pull request #841); no person has checked the reading against the manuscript. Sibling in the same filza: doc. 190, Acciaiuoli's cipher letter of the same day to Giuliano de' Medici, with its contemporary clear copy doc. 191 (targets/acciaiuoli1513/190-transcription.txt, 191-clear.txt). Images: ASF MAP site, ids 79570-79575. Suggested as new DECODE records linked to R5807. The transcription and the reading are the contributor's: send them only with his agreement.",
+     "transcription": [
+      "targets/acciaiuoli1513/192-transcription.txt",
+      "targets/acciaiuoli1513/reading-it.md"
+     ],
+     "sent": false
+    }
+   ]
+  },
+  "barlow1812": {
+   "skip": "Not on DECODE: NARA RG 59, Despatches from US Ministers to France vol. 13, microfilm M34 roll 16 frames 0232-0233, 0240-0241 and 0246-0247, has no DECODE record (known.py 'Joel Barlow', 24 Nov 2026: none in the harvested dump); key, transcriptions and readings are in targets/barlow1812/ (Andrew Beling, PR #878)."
+  },
+  "radziwill1656": {
+   "skip": "No DECODE record known for Bogusław Radziwiłł's two ciphered German postscripts of 13 Mar and 3 Dec 1656 (AGAD, Archiwum Warszawskie Radziwiłłów, 1/354/0/4/46, scans 39-43; catalogue 1594): the issue, the NOTES and the profile name none, the catalogue vetting of 3 Nov 2026 found none, and a grep of the local DECODE harvest (research/catalogue_harvest/decode, views of 18 Sept 2026 and list of 30 Oct 2026) on 24 Nov 2026 for 'Radziw', 'Tykocin' and 'Labiau' finds only Michał Radziwiłł to Lubomirski, 1669 (catalogue 440, unrelated); DECODE itself was not searched again. Deciphered in part, in progress. HOLD: the transcription, the key table and the reading are SeldomPhooey's (issue #784); nothing is sent to DECODE before he agrees. Owed if a record is made or appears: the two transcriptions (transcription_A.txt, transcription_B.txt), the key table (key.tsv) and the metadata (German; Tykocin and Labiau; to the commandant at Słuck, probably Major Jan Gross; simple substitution on two-digit odd numbers 11 to 57)."
+  },
+  "charlesv1554": {
+   "skip": "Not on DECODE: the local record list (10,106 records, harvested to 30 Oct 2026; searched 24 Nov 2026 for Besancon, Granvelle and Renard) holds no record of Besancon BM Ms 1582 f. 2; its one hit, R9959 (Renard to Prince Philip, 19 Feb 1554, Simancas), is another letter. Nothing on DECODE to correct. The two blind transcriptions, the re-derived key and the decode are in targets/charlesv1554/ (Brice Dudout) and could go with a new record; the library's scans cannot be passed on without its consent. The cipher itself is published (Pich-Ponce 2024) and the text is in print (Gachard 1882)."
+  },
+  "delacroix1797": {
+   "skip": "No DECODE record known for Delacroix to Létombe, despatch No. 5, 25 Messidor an V (13 July 1797), NARA RG 59 M30 roll 4 frames 0244-0245 (catalogue 649, removed as written up on 24 Nov 2026): the NOTES and profile cite none, the catalogue vetting of 2 Nov 2026 found none, and a grep of the local DECODE harvest (research/catalogue_harvest/decode) of 24 Nov 2026 for 'Delacroix' and 'Letombe' finds none; DECODE itself was not searched again. Read in part with a partial table recovered from external plaintext (the ministry's clear draft, Archives diplomatiques 39CP/48 ff. 41r-42r). Owed if a record appears or is made: the metadata (a French numeric code, 653 groups; Paris to Philadelphia; a clerk's copy enclosed in Rufus King's No. 53 of 12 Nov 1797), the transcription and the partial table. HOLD: targets/delacroix1797/ciphertext.txt is Michael Brackx's transcription (issue #122), and the draft transcription, the table and the decryption in targets/delacroix1797/beling2026/ are Andrew Beling's (ajbeling, pull request #884); nothing is sent to DECODE before they agree."
+  },
+  "vittoria1686": {
+   "skip": "No DECODE record: the vetting of catalogue 1570 on 29 Oct 2026 found none for these Estense Campori letters (the live database was not queried), so there is nothing on DECODE to correct. Held, 24 Nov 2026: the target is in progress (a fifth cipher letter, cc. 24v-25r of 18 Sept 1691, is not transcribed), and a new-record proposal with the contributed transcriptions (WAINUT, PR #226; Matthew Kennedy, PR #853, with the lower half of c. 4r) is not sent before both contributors agree. Key, transcriptions and readings are in targets/vittoria1686/."
+  },
+  "chateauneuf1691": {
+   "skip": "Not on DECODE: no record for Archives nationales AE/B/I/381 or for Chateauneuf's despatches of 1691-94 (catalogue vetting of 2 Nov 2026; the harvested DECODE list searched again on 24 Nov 2026 for the shelfmark and the writer: none), so there is nothing on DECODE to correct. The transcription (targets/chateauneuf1691/transcription.txt), the partial key (key.tsv; it failed its held-out test, 0.830 against 0.85) and the readings could go with new records if Daniel wants them; the images are a private reproduction ordered by Brice Dudout (PR #876) and cannot be attached."
+  },
+  "dumas1777": {
+   "skip": "Not on DECODE: NARA RG 360, Papers of the Continental Congress, item 93 vol. 1 (M247 roll 121) and M332 roll 2 have no DECODE record (the harvested DECODE and Cryptoole dumps searched for 'Dumas' and 'Continental Congress', 24 Nov 2026: none); nothing on DECODE to correct. The key (key/key_positions.json), the reconciled transcriptions and the readings are in targets/dumas1777/ (Andrew Beling, PR #667) and could go with new records if Daniel wants them."
+  },
+  "dana1783": {
+   "skip": "Not on DECODE: NARA RG 360, Papers of the Continental Congress, item 89 vol. 2 (M247) and item 109 have no DECODE record (known.py 'Francis Dana' and 'Continental Congress' on the harvested DECODE and Cryptoole dumps, 24 Nov 2026: none); nothing on DECODE to correct. The two transcriptions, the key with Dana's word list (key.txt) and the reading are in targets/dana1783/ (WAINUT; Brice Dudout, PR #140; Andrew Beling, issue #898) and could go with a new record if Daniel wants one."
+  },
+  "everett1825": {
+   "skip": "Not on DECODE: NARA RG 59, Despatches from US Ministers to Spain vol. 25, microfilm M31 roll 27 (Everett's Notes of a conversation with Mr Zea, 25 Sep 1825; catalogue 638, removed) has no DECODE record: the NOTES and profile cite none, and the harvested DECODE and Cryptoole dumps have no hit for 'Everett', 'Zea', 'Ministers to Spain' or 'M31' (grep of 24 Nov 2026; DECODE itself was not searched again). Nothing on DECODE to correct. Owed if a record is made: the metadata (the State Department code, 1,201 groups in six passages; Madrid to Washington; frames 0112-0115 and 0119-0121, the Department's decipherment on frames 0110-0111), the collated transcription (targets/everett1825/everett1825_collated_transcription.txt), the key file (key_we028_everett1825.tsv) and the reading (everett1825_collated_reading.md). HOLD: Andrew Beling's six-section transcription (beling/transcription_six_sections.txt) and his transcription of the Department's decipherment (beling/period_decipherment.txt, PR #900) are not to be sent until he agrees, nor Brice Dudout's files (dudout/texts) and WAINUT's without theirs; the collated transcription is built from all three. The decipherment transcription has one AI reader and three known differences from frame 0111 (NOTES, 24 Nov 2026)."
   }
  }
 }

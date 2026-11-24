@@ -1,6 +1,6 @@
 # Rubio Navarrete to Joaquín Téllez, 14 and 15 October 1913: two federal telegrams in the División del Bravo syllabary (CEHM DLXXIII)
 
-Status: decoded, not read. 14 Oct 7 of 16 cipher words read, 15 Oct 3 of 29 (strict count, below). Catalogue 1468.
+Status: in progress (decoded, not read; no page). 14 Oct 7 of 16 cipher words read, 15 Oct 3 of 29 (strict count, below). Catalogue 1468.
 
 Contributed by Andrew Beling (ajbeling), with AI agents, 18-22 Nov 2026. AI agents transcribed, rebuilt the table,
 tested and wrote this; no person has checked it.

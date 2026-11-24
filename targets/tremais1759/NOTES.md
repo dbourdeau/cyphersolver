@@ -88,7 +88,7 @@ gives a wrong syllable, and with a partial key the sense cannot always choose.
   a 188-entry working key, 49 strong passages (among them mon instruction, résulté une infinité d'abus, arrêté le cours,
   prodigieuse augmentation des dépenses de cette colonie, traitement, sévèrement puni, souverainement, basse ingratitude,
   sa conduite, tempérament, déplorable confusion, mépris). Kept in `prior/`. The values taken from that work are marked
-  "issue 810" in `key_nov_extension.tsv`. No pull request yet; our comment of 19 Nov is unanswered on 23 Nov.
+  "issue 810" in `key_nov_extension.tsv`. No pull request; the contributor confirmed the credit as given here on 24 Nov 2026 and issue 810 was closed that day.
 - This session: the stacked-homophone finding, the full September alignment, the second transcription and the agreement
   measure, the two rejected tables, and the reading in `reading.md`.
 - No published reading found: Roy's dossier ("Dossier Charles-François Pichot de Querdisien Trémais", RAPQ 1959-60, pp. 3-22 as cited by the Dictionary of Canadian Biography; read on BAnQ numérique, numerique.banq.qc.ca/patrimoine/details/52327/2276324; the instruction of 3 Feb 1759 ends "On lui remet ci-joint un chiffre particulier à lui pour sa correspondance dont il ne fera usage que pour les choses secrettes dont il aura à rendre compte.") prints neither this letter nor the table;
