@@ -1,0 +1,203 @@
+{
+ "schema_version": 1,
+ "target": "roux1478",
+ "title": "Copyist's name in the colophon of an Arabic poem on Qur'an pointing, Muharram 883 AH (Fonds Roux MS 35c, f. 26v; catalogue 3812)",
+ "documents": [
+  {
+   "id": "roux35c-f26v-name",
+   "read": "read in part",
+   "shelfmark": "Aix-en-Provence, Médiathèque de la MMSH, Fonds Arsène Roux, MS 35c, f. 26v (Nakala 10.34847/nkl.756deh54, image 28, right-hand page)",
+   "date": "first days of Muharram 883 AH (April 1478)",
+   "year": 1478,
+   "country": "Morocco",
+   "route": "not a letter (a scribe's colophon)",
+   "language": "Arabic",
+   "pages": 1,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "source": "None. Van den Boogert's catalogue (1995) and the Nakala and Calames records give no reading of the name."
+   },
+   "length": {
+    "tokens": 13,
+    "unit": "symbols",
+    "measured": false,
+    "file": "transcription.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "Nakala original JPEG ROUX_MS_035c_0028.jpg (3,878 x 2,771 px, 300 dpi), crops at native resolution enlarged four to twelve times",
+    "image_quality": "poor",
+    "notes": "The count is words, not signs: about 13 words stand in the name group after 'ربه' (the two-tier part and the marginal words), estimated from the image. Pen strokes are about three pixels wide and the two tiers overlap. The rest of the colophon (three lines and the first half of line 2) is ordinary script and was read."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "not a cipher"
+  ],
+  "summary": "The end of the colophon's second line is written in two overlapping tiers with long parallel connecting strokes and runs into the margin; no substituted or invented signs were seen.",
+  "symbol_kind": "letters",
+  "distinct_symbols": "unknown",
+  "diacritics": {
+   "used": "unknown"
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "not applicable",
+  "word_division": "kept",
+  "sibling_key": "none",
+  "notes": "'Not a cipher' is a judgement from a 300-dpi image and is not settled: every stroke that can be followed is an ordinary Maghribi letter form (mim-ha-mim-dal, alif-lam, nun bowls with their dots), but about half of the group cannot be followed at all."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found. Van den Boogert 1995, item 35c: 'name of copyist written in a sort of secret script', no reading. Nakala record (2025): 'Le nom du copiste semble écrit dans une graphie secrète'. The catalogue vetting of 23 Nov 2026 searched DECODE, Cryptiana, the GL index and the literature.",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Project-level: the user posed the target by its catalogue number; no target-specific intervention.",
+  "tools": [
+   "Nakala API and IIIF image service",
+   "Python (Pillow)"
+  ],
+  "models": [
+   "claude-fable-5-2"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-23",
+  "last_date": "2026-11-23"
+ },
+ "solution": [
+  {
+   "date": "2026-11-23",
+   "kind": "access",
+   "what": "The catalogue entry had no scan. Cinumed shows a human-check slider and the Wayback Machine was unreachable; a web search turned up a Roux manuscript on Nakala, and the Nakala search API gave MS_035c (10.34847/nkl.756deh54, 33 images, Etalab 2.0 licence). All 33 fetched at 900 px by IIIF, image 28 in full.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "what": "Found the leaf by its text: image 27, left page (f. 26r) ends the poem with the author's dated verses; image 28, right page (f. 26v, same leaf by its cut corner) carries the closing verses and a four-line copyist's colophon dated early Muharram 883. Lines 1, 3 and 4 and the first half of line 2 read.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "manual reconstruction"
+   ],
+   "what": "The 'secret script' is a substitution or invented alphabet: looked for non-Arabic signs in the name group at four to twelve times enlargement, in colour and in stretched greyscale.",
+   "result": "ruled out"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Read the name group as two overlapping tiers: upper 'تعلى' closing the formula 'عفو ربه تعالى', lower 'محمد', then probably 'بن عبد الله'. Withdrawn in a later step.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "what": "Author and title, which the catalogues give as anonymous: f. 26r has 'تم بحمد الله هذا الرجز في خامس العشرين من ربيع عام ثمانمائة وعشر' and 'جاد به المنسوب للفخار ميمون'; the colophon calls the work 'الدرة'. This points to al-Durra al-jaliyya of Maymun al-Fakhkhar, finished 25 Rabi' 810. Not checked against the printed edition.",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "literature search",
+   "what": "Nakala records of MS 35, 35b and 35c and a search of the Roux collection's copyist fields for a named scribe of this hand; a web search for the poem's closing verses.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "access",
+   "what": "Sibling and clear-page pass: MS 35a (Nakala 10.34847/nkl.cf2c122o) is a work of an author who died 919 AH; 35b names no copyist; the marginal notes of f. 26v enlarged, too small to read.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "reading",
+   "technique": [
+    "manual reconstruction",
+    "contextual inference"
+   ],
+   "what": "Re-imaged the group from the blue channel with background flattening and CLAHE at six and eight times. 'تعلى' holds. The lower first word reads as well 'عبيد الله' (one dot then two dots under the stroke) as 'محمد'; the next words may be 'عبد الكريم'. None decided.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "sibling key",
+   "what": "All 73 images of MS 35b (same cover) seen at 500 px; its last page (f. 72v) ends with a colophon in the same formula as 35c and the scribe's name in Arabic letters mixed with non-Arabic signs (o, B, 7, a ṭāʾ-like loop).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "hypothesis",
+   "technique": [
+    "key-structure hypothesis",
+    "exhaustive search",
+    "contextual inference"
+   ],
+   "what": "On the Arabic letters of the 35b signature: all shifts and mirror orders of the Maghribi, Mashriqi and alphabetical orders, and ayqagh swaps within abjad value groups, scored against a list of names and colophon words.",
+   "result": "ruled out"
+  }
+ ],
+ "outcome": {
+  "method": "not solved",
+  "method_basis": "The colophon is read and the name group is explained as two-tier writing in ordinary letters; no word of the name itself is read with confidence from the 300-dpi scan.",
+  "contribution": [
+   "transcription",
+   "catalogue correction"
+  ],
+  "class": "read in part",
+  "key": "not applicable",
+  "fraction_read": 0.08,
+  "fraction_read_method": "estimated",
+  "fraction_read_source": "reading.md, line 2 after 'ربه': about 13 words in the name group, of which 1 is given a value (تعالى); [... 9] and [... 3] counted as unread.",
+  "verification": [
+   "none"
+  ],
+  "gaps": [
+   {
+    "item": "The copyist's whole name: nine or more words and the marginal words",
+    "blocker": "illegible",
+    "detail": "At 300 dpi the strokes are about three pixels wide and the two tiers overlap; the Nakala scan is the only image online. Candidates only: محمد or عبيد الله for the first word, عبد الكريم for the next two."
+   },
+   {
+    "item": "Two words in the clear part of line 2 (after 'العبد' and before 'الراجي')",
+    "blocker": "illegible",
+    "detail": "Paper damage at the first; the second has the outline ىوىد and may be a name or an epithet."
+   }
+  ],
+  "notes": "Left in progress, 23 Nov 2026. No site page. The first reading of the session ('Muhammad ibn Abd Allah') was withdrawn after an enhanced image showed a second reading that fits as well. No image is to be requested from the holder (user, 23 Nov 2026).",
+  "credits": [],
+  "texts": [
+   {
+    "transcription": "transcription.txt",
+    "decryption": "reading.md",
+    "translation": "reading.md",
+    "summary": "Copyist's colophon of a copy of a poem on Qur'an pointing: completed in the first days of Muharram 883, for the scribe himself and his brothers; his name is not read.",
+    "doc": "roux35c-f26v-name",
+    "language": "ar"
+   }
+  ]
+ }
+}
