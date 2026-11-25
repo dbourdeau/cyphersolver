@@ -59149,6 +59149,82 @@
     "duplicates": "known.py \"K12.60\" (25 Nov 2026): only this lead and sweep READMEs.",
     "closed": "key table of charakteres with gloss letters, no ciphertext (vetting_2026-11-25_geniza_and_backlog)"
    }
+  },
+  {
+   "id": 3861,
+   "counted": true,
+   "source": "Geniza follow-up sweep 26 Nov 2026 (PGP IIIF manifests, CUDL IIIF)",
+   "needs_archive_scan": "no",
+   "place": "Fustat/Cairo (Geniza)",
+   "region": "Other",
+   "period": "unknown",
+   "seen": "image",
+   "cls": "B",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 2,
+   "shelfmark": "Cambridge University Library, T-S K5.7",
+   "pgpid": 42030,
+   "title": "Four columns of ring-letter cipher signs, colon-divided (Bohak family)",
+   "year": 1100,
+   "date": "11th c. per PGP; undated on the leaf",
+   "language": "Hebrew ring-letter cipher (Bohak's system)",
+   "correspondents": "unknown",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/MS-TS-K-00005-00007-000-0000{1,2}.jp2/full/full/0/default.jpg",
+   "folio_note": "recto: four long colon-divided lines (Bohak: 26 positions each) and a few small marginal signs; verso blank (viewed 26 Nov 2026)",
+   "status": "PGP: 'magical characteres in an indecipherable cipher' (from CUDL). Image: continuous strings of the same ring-ended signs as T-S K24.19, divided by colons, so a text cipher, not a charakteres table. VETTED 26 Nov 2026: Bohak 2010 pp. 13-15 already prints this leaf with a K24.19 transliteration; duplicate of catalogue 3757.",
+   "why": "About 150 signs of a cipher whose alphabet Bohak published, on a leaf not in his edition; the answer to the cross-check question is that it is a text cipher.",
+   "verify": "Map the signs with Bohak 2010 and T-S K12.60; test the first words for magical formulae.",
+   "links": [
+    {
+     "label": "PGP 42030",
+     "href": "https://geniza.princeton.edu/en/documents/42030/"
+    }
+   ],
+   "score_note": "importance 3, solvability 3 (key in print), difficulty 2.",
+   "vetting": {
+    "date": "2026-11-26",
+    "by": "Claude Code session (Claude Sonnet 5.5), vetting of the 26 Nov 2026 Geniza follow-up rows",
+    "seen": {
+     "kind": "scan",
+     "where": "CUDL IIIF by curl, 26 Nov 2026: https://images.lib.cam.ac.uk/iiif/MS-TS-K-00005-00007-000-00001.jp2/full/full/0/default.jpg (995 x 2000 px served; native 2480 px wide), recto viewed whole; verso (...00002.jp2) viewed whole.",
+     "extent": "Recto: four long lines written down the sheet (the leaf shown turned), colon-divided ring-ended signs, plus a few small marginal signs (Hebrew-vowel-like marks, Arabic consonants); Bohak counts 26 positions per line. Verso blank.",
+     "cipher": "The same ring-ended sign set as T-S K24.19, with some extra marks; no plaintext or gloss written on the leaf. Bohak 2010 prints a four-line decipherment of it (below), so a transliteration exists outside the leaf."
+    },
+    "prior_art": {
+     "decode": "decode_search.py, 26 Nov 2026: \"Genizah\", \"Geniza\", \"Judaeo-Arabic\", \"Rylands\", \"Taylor-Schechter\", \"Bohak\" each 0 pages, 0 rows; a grep of the 8 DECODE harvest batches in research/catalogue_harvest/decode for Geniza, Genizah, Taylor-Schechter, Rylands, Judaeo, Cairo finds nothing (two \"Hebrew\" hits are a German Arndt volume and a Latin Lumen luminum, unrelated). No Geniza record is on DECODE.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched live 26 Nov 2026 (125 kB, Shift_JIS) and grepped for Geniza, Genizah, Taylor, Rylands, Bohak, K5.7, K24, 5652, Cairo, Judeo, Judaeo, Hebrew, Fustat: 0 hits (the only \"Manchester\" hits are the Earl of Manchester papers, 1702).",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry decipherments) fetched live 26 Nov 2026 (184 kB) and grepped for the same terms: 0 hits. No Lasry reading of a Geniza ring-letter text is known.",
+     "edition": "Bohak 2010, pp. 13-15 and fig. 2 (CSIC volume PDF read in full, 26 Nov 2026): he first noticed K5.7 through Wasserstrom's note \"written in some as yet indecipherable code\", and prints the four lines decoded with the K24.19 table (line 1 begins aleph yod vav dalet vav he mem kaf het gimel tet ...). He calls the result \"four lines of meaningless gibberish\": each line has 26 letters, lines 2 and 4 begin identically and cover aleph to yod, the first two and last two letters read vertically leave 22 letters, so a letter permutation is suspected, \"its exact nature still awaits further elucidation\". Catalogue 3757 (open, Codex, 23 Nov 2026) already records exactly this leaf and problem.",
+     "literature": "PGP 42030 (live 26 Nov 2026): \"Sequence of magical characteres in an indecipherable cipher ... (Information from CUDL)\", tag cipher, bibliography 0, scholarship page 404. Searches 26 Nov 2026 for K5.7 with Bohak, permutation, decipherment found no reading after Bohak 2010. The 15 Nov sweep called it charakteres, not a text cipher: Bohak's text shows it is the K24.19 cipher with a puzzling arrangement, not a plain message."
+    },
+    "key_check": "Bohak applied the K24.19 table (fig. 3) and got four lines of apparent gibberish with a recurring alef-to-yod opening; the key is therefore not what is missing, the arrangement (permutation or voces magicae) is. Nothing was tested here beyond the check that the signs on the image are of the K24.19 family.",
+    "key_in_volume": "Bohak 2010 fig. 3, p. 21, the K24.19 sign table; applied by Bohak, no reading follows.",
+    "key_held": "The fig. 3 table is in print; not re-applied here because Bohak's transliteration of the same four lines is already in print.",
+    "duplicates": "DUPLICATE of catalogue 3757 (T-S K5.7, \"inner 22 positions in each row\", vetted open 23 Nov 2026 from Bohak pp. 13-15 and fig. 2, PGP 42030). The shelfmark string differs, so the mechanical collision check does not see it. Also searched leads.json, targets/ and research/ for \"K5.7\" and \"42030\": only 3757, the Geniza sweep READMEs and this row.",
+    "searches": [
+     {
+      "query": "Bohak 2010 full text (pp. 9-23) for K 5.7 and fig. 2",
+      "result": "Four-line transliteration printed on p. 13, 26 letters per line, unresolved arrangement on p. 14."
+     },
+     {
+      "query": "catalogue.json and leads.json for K5.7, 42030",
+      "result": "Catalogue 3757 is the same leaf."
+     },
+     {
+      "query": "decode_search.py, cryptiana unsolved.htm and GL.htm (Geniza terms)",
+      "result": "0 hits."
+     },
+     {
+      "query": "web: K5.7 Bohak decipherment permutation",
+      "result": "PGP and Manchester pages only; nothing after Bohak 2010."
+     }
+    ],
+    "verdict": "duplicate",
+    "closed": "same leaf and same open problem as catalogue 3757 (Bohak 2010 pp. 13-15 fig. 2 prints the decoded four lines; the work continues under 3757)"
+   },
+   "ark": "",
+   "scored": "sweep"
   }
  ]
 }
