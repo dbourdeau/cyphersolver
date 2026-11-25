@@ -140,7 +140,7 @@
   },
   {
    "id": "R4039",
-   "read": "not read",
+   "read": "read in part",
    "shelfmark": "Florence, Archivio Niccolini di Camugliano, Fondo antico 214, inserto 1 (DECODE R4039, image name 214_1_54)",
    "date": "4 October 1538",
    "year": 1538,
@@ -671,7 +671,7 @@
  "outcome": {
   "class": "read in part",
   "key": "partial",
-  "method": "read with known key",
+  "method": "key recovered from ciphertext-only",
   "parts": [
    {
     "label": "The earlier system, with the archive's key table",
@@ -684,11 +684,11 @@
     "label": "The main system, from ciphertext",
     "records": "R4039, R4041 to R4050, R4052 to R4054",
     "method": "key recovered from ciphertext-only",
-    "extent": "none",
-    "basis": "Key and cut from the cipher text alone, fixed 16 Nov 2026; 4,442 of 5,051 code tokens get a value; not checked against a key; the documents are decoded, not read."
+    "extent": "partial",
+    "basis": "Key and cut from the cipher text alone, fixed 16 Nov 2026; 4,442 of 5,051 code tokens get a value; not checked against a key. R4039 is read in part (304 of about 454 cipher words sure, 0.67 with the marks sized, an estimate; reading review of 25 Nov 2026 at the integration of PR #927, a model's reading); R4047 and R4054 carry working readings and stay decoded, not read; the other main-system documents are decoded, not read."
    }
   ],
-  "method_basis": "The only text of the folder that reads is R4035, R4037 and R4038, read in part with the archive's key table (DECODE R4033, as the contributor read it) and one value from ciphertext, code 29 = t; so the method is named from that part. The main key (14 letters) was found from the cipher text alone, with the cut; the archive's table does not serve it, and its documents are decoded, not read (second part: key obtained, text not read).",
+  "method_basis": "Two parts read in part: R4035, R4037 and R4038 with the archive's key table (DECODE R4033, as the contributor read it) and one value from ciphertext, code 29 = t; and R4039 with the main key (14 letters), found from the cipher text alone with the cut, which the archive's table does not serve. The method is named from the ciphertext-only part, which comes first by the README priorities (reading review of 25 Nov 2026, PR #927).",
   "contribution": [
    "transcription",
    "key recovered",
@@ -697,9 +697,9 @@
   "codes_open": {
    "tokens_open": 609
   },
-  "fraction_read": 0.194,
+  "fraction_read": 0.459,
   "fraction_read_method": "measured",
-  "fraction_read_source": "Unit: code tokens of the cut, recounted 20 Nov 2026 from the codes lines of the 19 record pages: 6,842 (1,791 earlier system, 5,051 main system). Only the documents that build sentences count (R4035, R4037, R4038): 133 + 970 + 224 = 1,327 of their 1,349 tokens have a value with no doubt (121 + 912 + 224 from the archive's table, 12 + 58 on code 29 = t from ciphertext); 1,327 / 6,842 = 0.194. By cipher words in those three letters: 26 + 201 + 41 = 268 of 322 sure (0.832). The other 16 documents are decoded, not read, and count as 0.",
+  "fraction_read_source": "Unit: code tokens of the cut, recounted 20 Nov 2026 from the codes lines of the 19 record pages: 6,842 (1,791 earlier system, 5,051 main system). Only the documents that build sentences count (R4035, R4037, R4038): 133 + 970 + 224 = 1,327 of their 1,349 tokens have a value with no doubt (121 + 912 + 224 from the archive's table, 12 + 58 on code 29 = t from ciphertext); 1,327 / 6,842 = 0.194. By cipher words in those three letters: 26 + 201 + 41 = 268 of 322 sure (0.832). The other 16 documents are decoded, not read, and count as 0. 25 Nov 2026 (reading review of PR #927): R4039 is read in part and adds its 1,814 tokens with a value (README.md, 'With a value'; for the main system a value, doubt not separated): 1,327 + 1,814 = 3,141 of 6,842 = 0.459. By cipher words in the four letters: 268 + 304 = 572 of 322 + 454 = 776 sure (0.737; R4039 an estimate with the marks sized).",
   "verification": [
    "historical consistency"
   ],
@@ -877,15 +877,21 @@
     "label": "R4039, Cosimo I to Niccolini, 4 October 1538",
     "transcription": "transcription/R4039_digits.txt",
     "decryption": "r4039.md",
-    "state": "decoded, not read",
+    "state": "read in part",
     "language": "it",
     "summary": "Cosimo writes to Niccolini about a marriage negotiation and 'the matter of the wife', declaring his resolve unchanged, instructing Niccolini to cut off an unwanted negotiation driven by a man's fear of losing his penitentiary office, recalling what the same man did to Duke Alessandro and to Cosimo himself, and refusing to let another's folly harm him.",
-    "note": "Working aligned reading in readings/r4039_reading.md and translation in readings/r4039_en.md (filed as decoded, not read pending maintainer review). scripts/verify_main_readings.py: 304 sure cipher words, size-adjusted estimate 454 cipher words (150 holes, share 0.670) with each [... N] sized from the decode (max 17 symbols; raw 1-per-mark 304/440 = 0.691). Zero unmarked departures.",
+    "note": "Working aligned reading in readings/r4039_reading.md and translation in readings/r4039_en.md. scripts/verify_main_readings.py: 304 sure cipher words, size-adjusted estimate 454 cipher words (150 holes, share 0.670) with each [... N] sized from the decode (max 17 symbols; raw 1-per-mark 304/440 = 0.691). Zero unmarked departures. Integration review of PR #927 (25 Nov 2026, AI agent): read in part, grade B.",
     "reading": "readings/r4039_reading.md",
     "translation": "readings/r4039_en.md",
     "read_share": 0.67,
     "cipher_words": 454,
-    "holes": 150
+    "holes": 150,
+    "reading_review": {
+     "grade": "B",
+     "by": "integration review of PR #927 (AI agent, for the maintainers); not a person",
+     "date": "2026-11-25",
+     "note": "Grade given by the reviewer, not by the author of the reading. The four paragraphs of readings/r4039_reading.md read as sentences against readings/r4039_en.md: coherent Italian throughout; holes are mostly one letter inside a word or a short connective. An own alignment with the decode of r4039.md finds no unmarked departure; with each [... N] mark sized at max(1, round(N/5)) words, 304 of about 454 cipher words are sure (0.67, an estimate). Not checked: the rows against the DECODE images. A model's reading: no person has checked it."
+    }
    },
    {
     "doc": "R4041",
@@ -1032,6 +1038,6 @@
    "key/key-main.tsv",
    "key/key-table-R4033.tsv"
   ],
-  "notes": "Contributed by prabal-rje as a pull request. The contributor filed every document as decoded, not read and left the status, the class and the reading review to the maintainers. At the integration of PR #822 (20 Nov 2026) an AI agent reviewing for the maintainers set the class, the parts, the method named from the part that reads, the states of R4035, R4037 and R4038 and their reading reviews; no person has checked that reading. documents[].length.tokens are the code tokens of the cut, counted from the record pages; docs/_check_profile.py --measure did not run, so measured is false. The counts by the word rule are estimates (README.md)."
+  "notes": "Contributed by prabal-rje as a pull request. The contributor filed every document as decoded, not read and left the status, the class and the reading review to the maintainers. At the integration of PR #822 (20 Nov 2026) an AI agent reviewing for the maintainers set the class, the parts, the method named from the part that reads, the states of R4035, R4037 and R4038 and their reading reviews; no person has checked that reading. documents[].length.tokens are the code tokens of the cut, counted from the record pages; docs/_check_profile.py --measure did not run, so measured is false. The counts by the word rule are estimates (README.md). At the integration of PR #927 (25 Nov 2026) an AI agent reviewing for the maintainers recorded the reading review of R4039 (read in part, grade B), the extent of the main-system part, the method named from that part and the fraction read; R4047 and R4054 stay decoded, not read; no person has checked that reading."
  }
 }
