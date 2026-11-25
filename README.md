@@ -904,6 +904,12 @@ The builder is idempotent. It also regenerates the "At a glance" counts at the t
 on the index page is generated separately from [`docs/_queue.json`](docs/_queue.json) by `python _build_queue.py`,
 and the catalogue page from `catalogue.json` by `_catalogue_page.py`. The catalogue's entries are written beside it as `docs/catalogue-data.js` (the page loads it as a script, so the HTML stays small); list rows on `writeups.html` and `archives.html` are searched by their own text, so do not copy a row's text into a `data-q` attribute. Each catalogue entry names its holding archive in `repository`, an id in `repositories.json` (name, city, country, match patterns); `python docs/_repositories.py --write` fills it for new entries (promotion does it too), and the page's "Where the ciphers are" index and Archive filter come from it. `findings.html` holds every finding, newest first, and the home page mirrors the newest five (add a line at the top of its list and rebuild). The hero's "As seen in" line is built from [`press.json`](press.json) (press and blog coverage): an entry shows once it has a `url`, so an announced piece waits there with `"url": null`. `archives.html` is built from `archive_requests.json` by `_archives_page.py`; a new `blocker: needs-physical-access` gap reaches it when `python tools/seed_archive_requests.py` is run.
 
+The films (25 Nov 2026) are listed once, in `FILMS` in [`docs/_films_page.py`](docs/_films_page.py): each build writes `films.html`
+(every film with its player and write-up links) and the home page's poster shelf (between `<!-- films:start -->` and
+`<!-- films:end -->`), one row that scrolls sideways. A card opens the home-page dialog with the same `data-film` id
+(`home.js`), or links to its place on `films.html`. To add a film, put its `.mp4`, `.vtt` and poster in `docs/` and add an
+entry; add a dialog to `index.html` only if it should play in place.
+
 One reference page is generated at each build (16 Nov 2026): `corrections.html`, the public log of corrections, from [`docs/corrections.json`](docs/corrections.json)
 (`docs/_corrections_page.py`). **When a published claim, count or reading is corrected or withdrawn, add an entry to
 `corrections.json`** (date, pages, what changed, who reported it, why). `docs/_reader_kind.py` classes each reading

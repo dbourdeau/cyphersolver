@@ -16,10 +16,10 @@
 <meta property="og:image:height" content="720">
 <meta property="og:image:alt" content="A page of cipher numbers being deciphered, in pixel art">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=c428cea8">
+<link rel="stylesheet" href="style.css?v=572104d3">
 <script>document.documentElement.classList.add('js')</script>
 <meta name="date" content="2026-09-14">
-<meta name="last-modified" content="2026-11-25">
+<meta name="last-modified" content="2026-11-24">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -67,9 +67,15 @@
   <div class="hero-grid">
   <div class="hero-lead">
   <p class="sub">A shared ledger of historical ciphers: what has been deciphered, by whom and how, and why the rest still resist. <span class="aid">The project uses frontier AI models, such as Anthropic&rsquo;s Claude, to help decipher them</span>, and takes contributions from anyone.</p>
-  <div class="hero-cta"><a class="btn" href="writeups.html">See the results &rarr;</a><a class="btn alt" href="catalogue.html">Help solve one &rarr;</a><a class="filmbtn" href="hero.mp4?v=6"><span aria-hidden="true"></span>Watch the 45-second film</a><a class="filmbtn" href="genoa1527.mp4"><span aria-hidden="true"></span>Watch a cipher being solved</a><a class="filmbtn" href="qabaqibi1350.mp4"><span aria-hidden="true"></span>Watch a love poem deciphered</a><a class="filmbtn" href="burr1804.mp4"><span aria-hidden="true"></span>Watch Burr&rsquo;s secret letters deciphered</a>
+  <div class="hero-cta"><a class="btn" href="writeups.html">See the results &rarr;</a><a class="btn alt" href="catalogue.html">Help solve one &rarr;</a>
 </div>
-  <p class="meta">Daniel Bourdeau, Brice Dudout, George Lasry and contributors &middot; posted <time datetime="2026-09-14">14 September 2026</time> &middot; updated <time datetime="2026-11-25">25 November 2026</time> &middot; <a href="contribute.html#email">contact</a></p>
+<!-- films:start -->
+<nav class="filmshelf" aria-label="Films">
+  <p class="fs-h">Films</p>
+  <ul><li><a class="filmcard" href="films.html#burr" data-film="burr"><span class="fc-img"><img src="thumbs/film_burr-480.webp" width="240" height="135" alt="" loading="lazy" decoding="async"><span class="fc-play" aria-hidden="true"></span><span class="fc-len">3:35</span></span><span class="fc-t">Burr’s secret letters</span></a></li><li><a class="filmcard" href="films.html#qabaqibi1350" data-film="qabaqibi1350"><span class="fc-img"><img src="thumbs/film_qabaqibi1350-480.webp" width="240" height="135" alt="" loading="lazy" decoding="async"><span class="fc-play" aria-hidden="true"></span><span class="fc-len">3:15</span></span><span class="fc-t">A Mamluk love poem</span></a></li><li><a class="filmcard" href="films.html#genoa1527" data-film="genoa1527"><span class="fc-img"><img src="thumbs/film_genoa1527-480.webp" width="240" height="135" alt="" loading="lazy" decoding="async"><span class="fc-play" aria-hidden="true"></span><span class="fc-len">1:44</span></span><span class="fc-t">A cipher being solved</span></a></li><li><a class="filmcard" href="films.html#intro" data-film="intro"><span class="fc-img"><img src="thumbs/film_intro-480.webp" width="240" height="135" alt="" loading="lazy" decoding="async"><span class="fc-play" aria-hidden="true"></span><span class="fc-len">0:41</span></span><span class="fc-t">Cyphersolver in 45 seconds</span></a></li><li><a class="filmcard fc-all" href="films.html"><span class="fc-img"><span class="fc-n">4</span><span class="fc-nl">films</span></span><span class="fc-t">All films &rarr;</span></a></li></ul>
+</nav>
+<!-- films:end -->
+  <p class="meta">Daniel Bourdeau, Brice Dudout, George Lasry and contributors &middot; posted <time datetime="2026-09-14">14 September 2026</time> &middot; updated <time datetime="2026-11-24">24 November 2026</time> &middot; <a href="contribute.html#email">contact</a></p>
 <!-- press:start -->
   <p class="seen"><span>As seen in</span> <a class="haslogo" href="https://www.lemonde.fr/sciences/article/2026/11/16/quand-l-ia-pretend-dechiffrer-des-documents-historiques-qui-ont-resiste-aux-cryptographes_6812197_1650684.html" rel="noopener" hreflang="fr" title="Quand l&#x27;IA prétend déchiffrer des documents historiques qui ont résisté aux cryptographes"><img class="lg mono" src="press_lemonde.svg" alt="Le Monde" loading="lazy"></a> &middot; <a class="haslogo" href="https://www.historia.fr/sciences-decouvertes/sciences-techniques/les-progres-de-lia-pour-dechiffrer-les-sources-historiques-codees-sont-un-miracle-et-une-catastrophe-analyse-lexpert-george-lasry-2261773" rel="noopener" hreflang="fr" title="Les progrès de l&#x27;IA pour déchiffrer les sources historiques codées sont un miracle et une catastrophe, analyse l&#x27;expert George Lasry"><img class="lg" src="press_historia.png" width="240" height="86" decoding="async" alt="Historia" loading="lazy"></a> &middot; <a href="https://klausschmeh.net/how-dan-bourdeau-solved-dozens-of-crypto-mysteries/" rel="noopener" hreflang="en" title="How Dan Bourdeau solved dozens of crypto mysteries">Klaus Schmeh’s blog</a></p>
 <!-- press:end -->
@@ -87,7 +93,7 @@
 <button type="button" class="randbtn" aria-label="Open a random write-up">Random cipher &rarr;</button>
 <!-- live:end -->
   </div>
-  <dialog class="filmdlg" aria-label="Cyphersolver in under forty-five seconds">
+  <dialog class="filmdlg" data-film="intro" aria-label="Cyphersolver in under forty-five seconds">
   <button type="button" class="film-x" aria-label="Close the film">Close</button>
   <figure class="herovid muted" data-wait data-links="[[0, 11.25, &quot;toledo1565.html&quot;, &quot;Read García de Toledo&#x27;s letter&quot;], [11.25, 18.75, &quot;#scoreboard&quot;, &quot;See the ledger&quot;], [18.75, 32.5, &quot;catalogue.html&quot;, &quot;Open the catalogue&quot;], [32.5, 37.5, &quot;archives.html&quot;, &quot;See the requests&quot;], [37.5, null, &quot;catalogue.html&quot;, &quot;Pick a cipher&quot;], [37.5, null, &quot;#random&quot;, &quot;Random cipher&quot;], [37.5, null, &quot;contribute.html&quot;, &quot;How to contribute&quot;]]" data-term-ok>
     <div class="hv-frame">
@@ -101,11 +107,11 @@
       </div>
     </div>
     <figcaption>
-      <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:11.25">The letter</button><button type="button" data-t="11.25" style="--w:7.5">The ledger</button><button type="button" data-t="18.75" style="--w:13.75">How to contribute</button><button type="button" data-t="32.5" style="--w:8.75">To the archive</button></div>
+      <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:11.25">Letter</button><button type="button" data-t="11.25" style="--w:7.5">The ledger</button><button type="button" data-t="18.75" style="--w:13.75">How to contribute</button><button type="button" data-t="32.5" style="--w:8.75">To the archive</button></div>
     </figcaption>
   </figure>
   </dialog>
-  <dialog class="filmdlg" aria-label="A 1527 cipher letter deciphered, step by step">
+  <dialog class="filmdlg" data-film="genoa1527" aria-label="A 1527 cipher letter deciphered, step by step">
   <button type="button" class="film-x" aria-label="Close the film">Close</button>
   <figure class="herovid muted" data-wait data-key="genoa-film-played" data-links="[[0, 98, &quot;lannoy1527.html&quot;, &quot;Read the write-up of this letter&quot;], [98, null, &quot;lannoy1527.html&quot;, &quot;Read the write-up&quot;], [98, null, &quot;catalogue.html&quot;, &quot;Pick a cipher&quot;], [98, null, &quot;#random&quot;, &quot;Random cipher&quot;]]" data-term-ok>
     <div class="hv-frame">
@@ -119,12 +125,12 @@
       </div>
     </div>
     <figcaption>
-      <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:13">The letter</button><button type="button" data-t="13" style="--w:21">Every sign</button><button type="button" data-t="34" style="--w:22">The search</button><button type="button" data-t="56" style="--w:17">Key and proof</button><button type="button" data-t="73" style="--w:31">The reading</button></div>
+      <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:13">Letter</button><button type="button" data-t="13" style="--w:21">Every sign</button><button type="button" data-t="34" style="--w:22">The search</button><button type="button" data-t="56" style="--w:17">Key and proof</button><button type="button" data-t="73" style="--w:31">The reading</button></div>
       <p class="hv-credit">Lope de Soria to Charles de Lannoy, Genoa, 7 March 1527. Images: Biblioteca Estense Universitaria, Modena, Autografoteca Campori (CC BY-NC-SA). AI transcription and decipherment (Claude, Anthropic); the search shown is a re-run made for the film; narration by a synthetic voice (Kokoro).</p>
     </figcaption>
   </figure>
   </dialog>
-  <dialog class="filmdlg" aria-label="A Mamluk cipher poem deciphered, step by step">
+  <dialog class="filmdlg" data-film="qabaqibi1350" aria-label="A Mamluk cipher poem deciphered, step by step">
   <button type="button" class="film-x" aria-label="Close the film">Close</button>
   <figure class="herovid muted" data-wait data-key="ljs51-film-played" data-links="[[0, 176, &quot;qaysarani1350.html&quot;, &quot;Read the write-up of this poem&quot;], [176, null, &quot;qaysarani1350.html&quot;, &quot;Read the write-up&quot;], [176, null, &quot;catalogue.html&quot;, &quot;Pick a cipher&quot;], [176, null, &quot;#random&quot;, &quot;Random cipher&quot;]]" data-term-ok>
     <div class="hv-frame">
@@ -144,7 +150,7 @@
     </figcaption>
   </figure>
   </dialog>
-  <dialog class="filmdlg" aria-label="Aaron Burr&rsquo;s two cipher letters, 1804 and 1808, deciphered">
+  <dialog class="filmdlg" data-film="burr" aria-label="Aaron Burr&rsquo;s two cipher letters, 1804 and 1808, deciphered">
   <button type="button" class="film-x" aria-label="Close the film">Close</button>
   <figure class="herovid muted" data-wait data-key="burr1804-film-played" data-links="[[0, 205, &quot;burr1804.html&quot;, &quot;Read the 1804 write-up&quot;], [127, 205, &quot;burr1808.html&quot;, &quot;Read the 1808 write-up&quot;], [205, null, &quot;burr1804.html&quot;, &quot;1804 write-up&quot;], [205, null, &quot;burr1808.html&quot;, &quot;1808 write-up&quot;], [205, null, &quot;catalogue.html&quot;, &quot;Pick a cipher&quot;]]" data-term-ok>
     <div class="hv-frame">
@@ -159,7 +165,7 @@
       </div>
     </div>
     <figcaption>
-      <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:25">The duel</button><button type="button" data-t="25" style="--w:21">The letter</button><button type="button" data-t="46" style="--w:23">Signs and clues</button><button type="button" data-t="69" style="--w:11">The key</button><button type="button" data-t="80" style="--w:24">The reading</button><button type="button" data-t="104" style="--w:23">The question</button><button type="button" data-t="127" style="--w:29">Baltimore, 1808</button><button type="button" data-t="156" style="--w:23">Six alphabets</button><button type="button" data-t="179" style="--w:36">To Theodosia</button></div>
+      <div class="hv-ch" role="group" aria-label="Video chapters"><button type="button" data-t="0" style="--w:25">Duel</button><button type="button" data-t="25" style="--w:21">Letter</button><button type="button" data-t="46" style="--w:23">Clues</button><button type="button" data-t="69" style="--w:11">Key</button><button type="button" data-t="80" style="--w:24">Reading</button><button type="button" data-t="104" style="--w:23">Question</button><button type="button" data-t="127" style="--w:29">1808</button><button type="button" data-t="156" style="--w:23">Alphabets</button><button type="button" data-t="179" style="--w:36">Theodosia</button></div>
       <p class="hv-credit">Aaron Burr to Joseph Alston, New York, [c. 20 July] 1804, and to Theodosia Burr Alston, Baltimore, January&ndash;February 1808. Letters: Gilder Lehrman Institute of American History, GLC01523, via the Hamilton Education Program. Newspaper: <i>Georgia Republican &amp; State Intelligencer</i>, 31 July 1804. Portraits: John Vanderlyn (Aaron Burr; Theodosia Burr Alston), John Trumbull (Hamilton), Joseph Alston (print), via Wikimedia Commons, public domain. AI transcription and decipherment (Claude, Anthropic). Synthetic voices (Kokoro); score synthesised.</p>
     </figcaption>
   </figure>
@@ -328,8 +334,8 @@
   <span>Daniel Bourdeau, Brice Dudout, George Lasry and contributors, September 2026 &middot; Text released under CC BY 4.0</span>
   <nav aria-label="Footer"><a href="index.html">Overview</a><a href="method.html">Method and review</a><a href="corrections.html">Corrections</a><a href="https://github.com/dbourdeau/cyphersolver" rel="noopener">Code &#8599;</a><a href="contribute.html#email">Contact &#9993;</a><a href="feed.xml">Feed</a><a href="#top">Top &uarr;</a></nav>
 </div></footer>
-<script src="herovid.js?v=9ebad925" defer></script>
-<script src="site.js?v=c428cea8"></script>
-<script src="home.js?v=c428cea8" defer></script>
+<script src="herovid.js?v=1de060c2" defer></script>
+<script src="site.js?v=572104d3"></script>
+<script src="home.js?v=572104d3" defer></script>
 </body>
 </html>

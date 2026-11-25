@@ -26,9 +26,10 @@
 
   // the hero video: herovid.js. It waits in a dialog; the film button opens it and plays it from the start with sound,
   // closing it stops it. Without JavaScript, or without <dialog>, the button is a plain link to the file.
-  // one button per dialog, in page order
+  // the poster shelf (_films_page.py): a card opens the dialog with its data-film id; a card with no dialog stays a link
   const fds=[...document.querySelectorAll('.filmdlg')];
-  document.querySelectorAll('.filmbtn').forEach((fb,i)=>{ const fd=fds[i]; if(!fd || !fd.showModal) return;
+  document.querySelectorAll('.filmbtn,.filmcard[data-film]').forEach((fb,i)=>{
+    const fd=fb.dataset.film?document.querySelector(`.filmdlg[data-film="${fb.dataset.film}"]`):fds[i]; if(!fd || !fd.showModal) return;
     const fv=fd.querySelector('video');
     fb.addEventListener('click',e=>{ e.preventDefault(); fd.showModal(); const b=fd.querySelector('.hv-sound'); if(b) b.click(); });
     fd.addEventListener('close',()=>{ if(fv) fv.pause(); });
