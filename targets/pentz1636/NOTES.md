@@ -226,6 +226,20 @@ record.
 - **Date note (unverified, the contributor's).** The leaf may date to Feb 1644 rather than c.1629-30 (Bricka & Fridericia
   vol. V, letter 381; another citation gives vol. 2, no. 214, p. 234). Not checked here; the date stays "c.1629-30, uncertain".
 
+## Archival key sheet (25 Nov 2026)
+
+Files in `keysheet_260610_150/` (`SOURCE.md`, `sheet150_transcription.tsv`, `COMPARISON.tsv`, `COMPARISON.md`, `crops/`). Linked by Malcolm McBratney with Claude, 25 Nov 2026. Tags: [sourced] [measured] [derived] [unverified].
+
+A key sheet of this cipher is in the chancery's own key file: Rigsarkivet, TKUA Almindelig del 3 nr. 112 "Chiffer", unit 260610, image 150 (`https://api.rigsarkivet.dk/ao/v1/images/48691625`, fetched 24 Nov 2026). A sister sheet with other numbers is image 149. [sourced] The sheet names no user and no date; it was matched to Pentz by its letter values. [measured]
+
+- **It confirms Brice Dudout's key v3 (PR #545): the index layer and the tables.** Index numbers: 9 of 9 agree (62 63 64 table 1; 13 12 11 table 2; 8 9 10 table 3), including 63, 12 and 9, which he had taken from key v2. Letters: 70 of 72 agree with key v3 (table 1: 24 of 24; table 2: 24 of 24; table 3: 22 of 24). All 38 values of key v1 agree. [measured: `COMPARISON.tsv`]
+- **The two differences are e and g in table 3.** The sheet has e = 33, g = 35; Dudout's glossed 1644 values are g = 33, e = 35, which is the row on the sister sheet (image 149). His values are the attested ones for the 1644-45 letters and stand. No table-3 e or g occurs in documents 1 and 2. [measured; image 149 at overview scale only]
+- **Nulls rule.** The sheet says 65-80 and every number above 247 are nulls; the sister sheet says above 178. Dudout's 251 = null fits. His 301 = the Archbishop (contemporary marginal decipherment, 1645) breaks the rule of both sheets, so the rule is this sheet's edition, not every letter's. [measured; derived]
+- **No new letter reading.** Mark Vladimir Prizmic (working paper, Zenodo 10.5281/zenodo.24212497) has read every letter run of the Vienna letter with Dudout's key v3, "dan" included. The sheet adds an archival source for that key and no word. [sourced: Prizmic's paper]
+- **The sheet's name list does not fit Prizmic's word values. The conflict is noted, not resolved.** Sheet: 168 Rubens, 226 Minden, 165 [envoy] of the Hanse towns, 85 King of France. Prizmic, from the sense of the Vienna letter: 168 Bremen (strong), 226 Frieden (probable), 165 the English ambassador (probable as a role), 85 open. Prizmic's values fit the letter and the sheet's do not; the 1636 mission probably had its own word list, not found. [sourced; derived] On the Glückstadt recto the sheet's names do not fit either (220 220 would be "Speir Speir"). No name from the sheet is counted as read.
+- **Figures of record unchanged:** Vienna 17/33 = 51.52%, Glückstadt 25/68 = 36.76% (first pass), and the strict figures of the integration check. No file of documents 1-9 was changed, and no key file was changed.
+- **Limits.** The sheet was transcribed by one reader, not blind; no second transcription. Tomokiyo, Lasry and GitHub after 24 Nov 2026 were not searched for an earlier link between this sheet and Pentz. [unverified] No repository script or checker was run.
+
 ## Remaining gaps
 
 - Codes: Vienna 168 (3x), 226 (2x), 85, 64, 63, 12 (2x), 11, 8, 9, and 165 (key v3 of documents 3-4 reads 64, 63, 12, 11, 9, 8 as index numbers: see Documents 3-4); Glückstadt 182, 220 (2x), 232, 260 (2x), 280 (2x), 730, 767 - blocker: open-codes; no code list found; some Vienna low numbers may be index numbers (key v2).
@@ -237,6 +251,7 @@ record.
 - Ny kgl. Saml. Fol. 616c, Fridericia's Bremen Nr. 29, 30 a, TKUA Kejseren 14 - blocker: needs-physical-access; may hold copies or decipherments.
 - Short texts (Vienna 20 letter words) - blocker: too-short; the shuffle test is weak on its own.
 - The Glückstadt letter was lead 2565 and is now catalogue entry 2565 (promoted 13 Nov 2026, PR #527); it is worked in this folder - blocker: not-attempted; narrow or remove entry 2565 at write-up.
+- Code names, Vienna 85, 165, 168, 226: the chancery sheet (unit 260610, image 150) gives King of France, Hanse towns' envoy, Rubens, Minden; Prizmic's values from the sense are Bremen (168), Frieden (226), the English ambassador (165) - blocker: open-codes; the conflict is not resolved; the word list of the 1636 mission is not found (see "Archival key sheet").
 - Documents 3-4, codes 560 and 756 (image 425) - blocker: open-codes; no gloss on either; the untranscribed 1644-45 letters may give them.
 - Documents 3-4, image 425 group 29 33 28 20 (T1 i e z q) - blocker: not-attempted; perhaps a misread 23 (ietzt); the margin has "sich", which does not fit.
 - Documents 3-4, image 322 "Revellin" third figure (39 or 35) and the struck figure - blocker: not-attempted; a second look at the original or a better image.
