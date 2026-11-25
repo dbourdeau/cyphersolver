@@ -131,6 +131,7 @@ Added at integration (20 November 2026), from the maintainers' review:
 
 - Added strictly aligned word-divided Italian readings (`readings/r4039_reading.md`, `readings/r4047_reading.md`, `readings/r4054_reading.md`), English translations (`readings/r4039_en.md`, `readings/r4047_en.md`, `readings/r4054_en.md`), and `scripts/verify_main_readings.py`.
 - Every bare unread span carries its exact decode symbol count `[... N]` (max 17 symbols in R4039, 38 in R4047, 35 in R4054). Size-adjusted counts (`max(1, round(N/5))` words per `[... N]` mark): R4039 `304/454` sure (`0.670`; raw 1-per-mark `304/440` = `0.691`), R4047 `61/147` sure (`0.415`; raw `61/125` = `0.488`), R4054 `106/231` sure (`0.459`; raw `106/203` = `0.522`). All three stay filed as `decoded, not read` in `profile.json` awaiting maintainer review.
+- Maintainers' note, 25 November 2026 (integration review of PR #927, an AI agent; no person has checked it): R4039 is read in part, grade B, recorded in `profile.json` (`reading_review`); the main-system part becomes partial and the method is named from it, "key recovered from ciphertext-only". R4047 and R4054 stay `decoded, not read`.
 
 ## Transcription doubts (main-system readings)
 
