@@ -1,0 +1,255 @@
+{
+ "schema_version": 1,
+ "target": "fenian1885letter2",
+ "title": "Fenian letter \"No. II\", London, 24 June 1885 (CUA Fenian Brotherhood Collection, JSTOR community.38709311): English letter with 13 number groups in a shifted number alphabet; key recovered from the ciphertext, read in part",
+ "documents": [
+  {
+   "id": "fenian_1885-06-24_no2",
+   "read": "read in part",
+   "shelfmark": "Washington DC, The Catholic University of America, American Catholic History Research Center, Fenian Brotherhood Collection: \"Letter, no recipient and author given, June 24, 1885\" (JSTOR Community collection, https://www.jstor.org/stable/community.38709311)",
+   "date": "24 Jun 1885",
+   "year": 1885,
+   "country": "United Kingdom",
+   "route": "unknown writer, London, to an unnamed \"Dear Friend\" (recipient unknown)",
+   "places": {
+    "from": "London",
+    "to": "unknown"
+   },
+   "language": "English",
+   "pages": 4,
+   "cleartext_in_document": "mostly clear",
+   "plaintext": {
+    "location": [
+     "none"
+    ],
+    "partial": false,
+    "source": "No decipherment on the sheet, in the collection item or in anything searched (PRIOR_ART.md); books not checked."
+   },
+   "length": {
+    "tokens": 71,
+    "distinct": 19,
+    "unit": "code groups",
+    "measured": true,
+    "file": "CIPHERTEXT_PAIRS.txt"
+   },
+   "transcription": {
+    "by": "llm from images",
+    "source": "JSTOR viewer, screen zooms via Claude in Chrome (PDF not fetchable by script)",
+    "image_quality": "good",
+    "notes": "Frozen 2026-11-25T23:31:52Z (freeze/FREEZE_TX.txt, stamped). Not blind to the key: the key hypothesis was formed before the freeze (freeze/DISCLOSURE.txt). Blind AI second reading of the number runs (blind2/): 70/71 pairs agree; extra blind pair 64 at the end of G07. Length measured with docs/_check_profile.py --measure CIPHERTEXT_PAIRS.txt --digits --drop-first (71 tokens = two-digit pairs, 19 distinct, the doubtful 7?7 counted as one). No person has checked the transcription."
+   }
+  }
+ ],
+ "system": {
+  "types": [
+   "monoalphabetic"
+  ],
+  "summary": "Selected words in an English letter (names, places, key words) written as runs of two-digit numbers, one number per letter: a shifted alphabet over 60-85 (A=77 ... I=85, J=60 ... Z=76). The writer often writes only the first letters and the last letter of a word, with a dash.",
+  "symbol_kind": "digits",
+  "distinct_symbols": 19,
+  "digit_groups": {
+   "separation": "mixed"
+  },
+  "diacritics": {
+   "used": false
+  },
+  "homophones": {
+   "used": false
+  },
+  "nomenclator": {
+   "present": false
+  },
+  "nulls": {
+   "present": false
+  },
+  "key_order": "alphabetical",
+  "word_division": "kept",
+  "notes": "distinct_symbols = distinct pairs that occur (measured, 19 including the doubtful 7?7); the alphabet has 26. key_order alphabetical = the numbers run in alphabet order from A=77, wrapping 85 to 60. Separation: digits mostly run together, with spaces, commas, dots and dashes in places."
+ },
+ "conditions": {
+  "prior_solution": {
+   "exists": "no",
+   "where": "None found as far as checked: Cyphersolver issues/PRs/catalogue/leads, DECODE (live search), JSTOR item and the Fenian code-word list (community.38709677), web. Not checked: Devoy's Post Bag, Short, Whelehan, Kenna, Jenkins; HathiTrust/Google Books full text; Cyphersolver code search (401).",
+   "found": "not found",
+   "used": false
+  },
+  "inputs": [
+   "images",
+   "cleartext context"
+  ],
+  "attack": "ciphertext-only",
+  "human_role": "Malcolm McBratney found the item (browsing the CUA collection on JSTOR), set the rules (prior art first, freeze before one decode, first pass of record, 65% line, 5,000-key and ciphertext shuffles at seeds 20261112 and 7, blind second reader) and directed filing; Claude sessions transcribed, recovered the key, decoded and checked. No person has checked the transcription, key or reading.",
+  "tools": [
+   "own Python (decode.py, controls.py)",
+   "English lexicon lang/lexicons/en.json.gz (29,657 words)",
+   "Claude in Chrome (JSTOR viewer)",
+   "RFC 3161 and OpenTimestamps stamps"
+  ],
+  "models": [
+   "claude-opus-5-5 (sessions of 25-26 Nov 2026)",
+   "isolated Claude subagent as blind second reader (26 Nov 2026 AEST; exact model id not recorded)"
+  ],
+  "sessions": 1,
+  "first_date": "2026-11-25",
+  "last_date": "2026-11-25"
+ },
+ "solution": [
+  {
+   "date": "2026-11-25",
+   "kind": "access",
+   "what": "PDF GET from the sandbox refused (HTML 3,038 B); both images read in the JSTOR viewer via Claude in Chrome, screen zooms.",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "literature search",
+   "what": "Prior art: Cyphersolver issues/PRs/catalogue/leads, DECODE live search, JSTOR item and Fenian code-word list, web; books not reachable (PRIOR_ART.md).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "what": "Whole letter transcribed; 13 number groups, 71 two-digit pairs, all in 60-85 but one doubtful; 5 doubts listed; frozen and stamped 23:31:52Z. Key hypothesis formed before the freeze (disclosed).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "crib",
+   "what": "G08 '85 68 85 69 84 / 73 65 68 62 80' after 'we had the whole ... with us': x-y-x pattern read as IRI-; IRISH WORLD fits all 10 pairs under one shift, A=77.",
+   "result": "worked",
+   "technique": [
+    "repeat/pattern analysis",
+    "crib testing",
+    "key-structure hypothesis"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "solver",
+   "what": "Decoder v1 applied the frozen key; crashed on the doubtful token 7?7 (bug).",
+   "result": "failed",
+   "technique": [
+    "manual reconstruction"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "reading",
+   "what": "Decoder v2 (doubt handling fixed, key unchanged), one pass over all 13 groups: RUS-A, DEC x4, WOLFETONE, SEC[r]ET OR--, IRISH WORLD, R--S, PAT--S, AUTNONMY, OUR NAT-E L-D, C?NADA. Pairs 67/71 = 94.4%; groups with identified meaning 8/13 = 61.5% (under the 65% line: fails at group level).",
+   "result": "partial"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "what": "5 fixed test words against the English lexicon: real key 5/5; other 25 shifts 0; 5,000 random keys 0 >= real at seeds 20261112 and 7 (max 2); 5,000 ciphertext shuffles under the real key 0 >= real at both seeds (max 2). No held-out test possible.",
+   "result": "worked",
+   "technique": [
+    "statistical test"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "verification",
+   "what": "Blind second reading of the number runs by an isolated AI reader from the crops only, frozen and stamped 23:37:20Z: 70/71 pairs agree (G13 pair 2 differs, both doubtful); extra pair 64 at the end of G07 (OR--N?).",
+   "result": "worked"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "verification",
+   "technique": [
+    "statistical test",
+    "language-model scoring"
+   ],
+   "what": "Statistical validation (docs/_validate.py): 70 tokens, 18 types, en-modern order 4: reading -3.559 per letter; Verdict: too short.",
+   "result": "partial"
+  }
+ ],
+ "outcome": {
+  "validation": {
+   "date": "2026-11-26",
+   "model": "en-modern",
+   "file": "validation.tsv",
+   "tokens": 70,
+   "types": 18,
+   "tokens_per_type": 3.89,
+   "score": -3.559,
+   "nulls": {},
+   "verdict": "too short",
+   "notes": "claimed per-occurrence score -3.559; polyphony 0.0; 1 unread tokens left out; annealer on the real text from random keys reached n/a"
+  },
+  "class": "read in part",
+  "key": "recovered",
+  "method": "key recovered from ciphertext-only",
+  "verification": [
+   "matched control",
+   "historical consistency"
+  ],
+  "method_basis": "Key recovered from the ciphertext with the crib IRISH WORLD (pattern x-y-x), one parameter for all 26 values; checked on WOLFE TONE, CANADA, RUS-A, PAT--S, OUR NAT-E L-D, which were not used to build it. Figures of record (first pass, measured): pairs 67/71 = 94.4%; groups with an identified meaning 8/13 = 61.5%, UNDER the project's own 65% line, failed at group level (G02-G05 DEC, one unidentified person, and G09 R--S). G11 emended (AUTNONMY written, AUTONOMY read; 3 pairs). G13 pair 2 doubtful. Exposure: the first transcriber saw the key pattern before the freeze. Blind AI second reading 70/71 = 98.59% of pairs agree, with an extra 64 at the end of G07. Controls: 0/5,000 random keys and 0/5,000 shuffled ciphertexts at seeds 20261112 and 7; other 25 shifts 0. fraction_read = clean pairs / pairs = 67/71. No person has checked it.",
+  "fraction_read": 0.944,
+  "fraction_read_method": "measured",
+  "first_break": true,
+  "contribution": [
+   "transcription",
+   "key recovered"
+  ],
+  "provenance": "contributed",
+  "credits": [
+   {
+    "who": "mcbratney",
+    "role": "new cipher with solution",
+    "note": "Fenian letter No. II, London 24 Jun 1885 (JSTOR community.38709311): found in the CUA collection; transcription, key recovered from the ciphertext and reading, with AI agents (Claude)",
+    "date": "2026-11-26"
+   }
+  ],
+  "gaps": [
+   {
+    "item": "Book prior art: Devoy's Post Bag, Short (The Dynamite War), Whelehan (The Dynamiters), Kenna (War in the Shadows), Jenkins on F.F. Millen",
+    "blocker": "needs-physical-access",
+    "detail": "No full text reachable from the sandbox; phrases for HathiTrust/Google Books in PRIOR_ART.md."
+   },
+   {
+    "item": "Human check of the transcription and key",
+    "blocker": "not-attempted",
+    "detail": "Owed; blind AI second reading done (70/71 pairs agree)."
+   },
+   {
+    "item": "DEC (G02-G05), the man interviewed",
+    "blocker": "open-codes",
+    "detail": "Letters read; referent not identified."
+   },
+   {
+    "item": "R--S (G09)",
+    "blocker": "open-codes",
+    "detail": "Letters read; word not settled."
+   },
+   {
+    "item": "PDF not fetchable by script; working images are viewer screen zooms",
+    "blocker": "needs-physical-access",
+    "detail": "A person can download the PDF from JSTOR or ask the CUA archive."
+   },
+   {
+    "item": "Letter breaks off at the foot of side 4; continuation and Letter No. I not in this item",
+    "blocker": "needs-physical-access",
+    "detail": "Rest of the series not found in the CUA collection on JSTOR."
+   },
+   {
+    "item": "G13 pair 2 doubtful (7?7 / 4?7)",
+    "blocker": "illegible",
+    "detail": "Digit bottoms clipped at the page edge in the viewer."
+   }
+  ],
+  "key_file": "key/KEY.tsv",
+  "texts": [
+   {
+    "doc": "fenian_1885-06-24_no2",
+    "transcription": "freeze/TRANSCRIPTION.txt",
+    "decryption": "result/DECODE.txt",
+    "reading": "READING.txt",
+    "language": "en",
+    "state": "read in part",
+    "cipher_markup": "⟦⟧",
+    "summary": "The writer reports from London that his mission succeeded: with 'the Infant' he met a man written DEC, put the advantages to Russia of an understanding, said the whole Irish World was with them, and was asked whether a diversion in Canada was feasible. The letter breaks off."
+   }
+  ]
+ }
+}
