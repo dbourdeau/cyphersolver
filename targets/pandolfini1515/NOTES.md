@@ -171,3 +171,20 @@ Collision check 12 Nov 2026 (origin/main, live repository, open and recent PRs, 
   Dudout's v3 and v4 differ from v6 only by token additions (v6 is a superset), so no other known key of the series is left to try.
 - Images not compared: the ASF server reset every connection from the checking session. The reviewer's 150-sign spot check is the
   contributor's. No independent blind transcription exists (workable once the images are reachable): the target stays in progress.
+
+## Independent CTTS transcription and reading (George Lasry, 25 Nov 2026)
+
+`ctts_lasry/` holds an independent transcription of doc. 666 made in CTTS, a key recovered from the ciphertext alone,
+and a line-by-line reading (`ctts_lasry/README.md`). It was made without knowledge of this folder or of Dudout's key v6
+and compared with them only afterwards, so it answers the gap "Independent blind transcription". The system and the
+values found agree with v6 (consonant sign + vowel figure 1-5 = u o i e a, bare letters, doubling by the double bar,
+word signs, numbers between points). Points where it bears on the gaps above:
+
+- v07: the amount reads no-ve-ce-n-to mi-la s-cu-di; "mila scudi" is clean, the vowels of "novecento" lie under an ink
+  smear. This supports the conjecture [?novecento].
+- r08: "alla volta di Biagrasa" (bi-a-g-ra + bare s + a).
+- The block-end marks are read as nulls; the signs after the full stop carry no text.
+- .15. and .22. remain unidentified here too.
+- Sign names differ from `SIGN_CONVENTIONS.md` (e.g. our `phi` = Q, `c_flipped` = O, `w` = W, `Delta` = A, `a+` = α,
+  `l#` = H, `Lam^o` = V^0); no concordance table has been made yet.
+- A token-by-token comparison of this transcription with `transcription_666.txt` has not been done.
