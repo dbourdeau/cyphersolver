@@ -45,6 +45,10 @@ def norm(text, scheme='modern', spaces=True):
     """
     if scheme == 'arabic28':
         return norm_arabic(text, spaces)
+    if scheme == 'hebrew':
+        return norm_hebrew(text, spaces)
+    if scheme == 'ja':
+        return norm_ja(text, spaces)
     if scheme == 'arabic':
         t = re.sub('[ً-ٰٟـ]', '', text)
         t = re.sub('[أإآٱ]', 'ا', t)
@@ -78,7 +82,31 @@ def norm_arabic(text, spaces=True):
     return t if spaces else t.replace(' ', '')
 
 
+HE_LETTERS = 'אבגדהוזחטיכלמנסעפצקרשת'   # the 22 letters; final forms folded to the medial form
+_HE_FOLD = {'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ'}
+# Judaeo-Arabic reading of Arabic letters in Hebrew script (plain mapping: th->t, dh->d, kh->h, dad->tsade, za->tet, ghayn->ayin)
+_AR2HE = dict(zip('ابتثجحخدذرزسشصضطظعغفقكلمنهوي',
+                  'אבתתגחחדדרזסשצצטטעעפקכלמנהוי'))
+
+
+def norm_hebrew(text, spaces=True):
+    """Hebrew script reduced to the 22 consonants: points, cantillation and maqqef dropped, final forms folded."""
+    t = ''.join(_HE_FOLD.get(c, c) for c in unicodedata.normalize('NFC', text))
+    t = ''.join(c if c in HE_LETTERS else (' ' if c.isspace() or c == '\u05be' else '') for c in t)
+    t = re.sub(r' +', ' ', t).strip()
+    return t if spaces else t.replace(' ', '')
+
+
+def norm_ja(text, spaces=True):
+    """Arabic-script text read as Judaeo-Arabic in Hebrew letters (22-letter alphabet): reduced as in norm_arabic, then
+    each letter replaced by its usual Hebrew-script equivalent (28 Arabic letters merge into 22)."""
+    t = norm_arabic(text, spaces)
+    return ''.join(_AR2HE.get(c, c) for c in t)
+
+
 def alphabet(scheme='modern', spaces=True):
+    if scheme in ('hebrew', 'ja'):
+        return (' ' if spaces else '') + HE_LETTERS
     if scheme == 'arabic28':
         return (' ' if spaces else '') + AR_LETTERS
     if scheme == 'arabic':
