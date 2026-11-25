@@ -225,6 +225,43 @@
    ],
    "what": "Same annealer on 12 stretches of model-language text of equal length enciphered by a random many-to-one map onto 36 classes with the real layout: control means -2.12 (he) and -2.15 (ja), separating from the shuffled nulls by z 16.9 and 13.5 (14.1 on the firm and likely subset). A clean monoalphabetic text of this length and class count would have shown; the real stream is inside the range of its shuffles. Control text overlaps the model corpus (upper bound).",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "transcription",
+   "technique": [
+    "manual transcription"
+   ],
+   "what": "Compared blind reading 3 (pass 1, 218 marks, 57 unmerged labels, direction right to left) with transcription.txt (36 classes): the sign inventory is unstable between readers; no consensus run was made.",
+   "result": "inconclusive"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "hypothesis",
+   "technique": [
+    "statistical test"
+   ],
+   "what": "Dash groups of transcription.txt: 31 groups of 1-24 signs, none repeats except the single stems I and ?, so dashes do not behave as word breaks. Flip test on crops of line 7: no square-Hebrew letter forms; signs read as a rapid pseudo-script.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "solver",
+   "technique": [
+    "simulated annealing",
+    "language-model scoring"
+   ],
+   "what": "Annealer without word breaks (attack.py --noword, ja-from-arabic, 4 x 2500, 8 controls): real -2.393 forward / -2.363 reversed against nulls -2.488 (sd 0.067), z 1.4 / 1.9; control separation only z 3.0. he-tanakh not run (no corpus copy in this worktree). No readable output.",
+   "result": "failed"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "hypothesis",
+   "technique": [
+    "comparison with sibling texts"
+   ],
+   "what": "Viewed nine neighbouring leaves (K5.7, K24.19, K24.23, K24.24, Misc.10.60, 11.91, 22.218, ENA 3207.17, CUL Or.1080 J277) and scanned PGP records 32670-32708: none shares the K24.37 sign set or carries a sign table; K24.19/23/24/37 are the only cipher or mystery leaves in box K24. Bohak 2010 and 2011 not accessed (proof-of-work check); no Syriac, Coptic, Samaritan or Ibn Wahshiyya tables found to test.",
+   "result": "failed"
   }
  ],
  "outcome": {

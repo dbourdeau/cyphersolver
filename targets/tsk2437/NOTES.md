@@ -151,3 +151,11 @@ that the leaves were shelved together.)
 2. Mirrored-Hebrew and Hebrew-square-letter candidate sets per class (the class stream is now sign-level: K, B, ring-with-cross, G, R, X and the
    cups are the most distinctive shapes), then a constrained solver with the registered models; try right-to-left first.
 3. Contact the Princeton Geniza Project / Cambridge Genizah Research Unit (Elbaum entered the record) before any publication; nothing sent.
+
+## 25 Nov 2026: remaining routes tried (claude-sonnet-5-5)
+
+Blind reading 3 (`blind3/`, pass 1 only, 57 unmerged labels) disagrees with the 36-class inventory, so the inventory is unstable between readers. The 31 dash
+groups run 1-24 signs and none repeats (besides the single stems), so dashes are not word breaks; an annealer run without word breaks (ja-from-arabic, z 1.4 / 1.9,
+controls only z 3.0) found nothing. A flip of line 7 gives no square-Hebrew forms. Siblings viewed (K5.7, K24.19, K24.23, K24.24, Misc.10.60, 11.91, 22.218, ENA 3207.17,
+CUL Or.1080 J277) share no sign set and carry no sign table; box K24 has no other cipher leaf. Bohak 2010/2011 not accessed. Reading the leaf as a decorative or
+magical pseudo-script (no text to read) fits the evidence at least as well as a cipher. Details: `WORKLOG.md`, `profile.json`. Contacting the PGP editor was deliberately not done.
