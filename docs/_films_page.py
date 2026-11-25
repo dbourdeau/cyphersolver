@@ -16,6 +16,14 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 
 FILMS = [
+    dict(id='codebooks1787', card='Jefferson’s lost codebooks', title='The Lost Codebooks: Jefferson’s Code No. 11 and No. 16',
+         src='codebooks1787.mp4?v=1', vtt='codebooks1787.vtt?v=1', poster='codebooks1787_poster.jpg', secs=203,
+         about='No codebook survives for two of Jefferson’s diplomatic codes. Starting from Thomas Barclay’s arrest at Bordeaux in '
+               '1787, the film rebuilds them from the meanings written over the numbers, tests the editors’ guess “sea”, finds '
+               'Pinckney’s London code of 1793 at Tunis in 1801, and reads a passage of 1807 that no one had decoded.',
+         links=[('jefferson1787.html', 'Code No. 11'), ('pinckney1793.html', 'Code No. 16')],
+         credit='Code No. 16 key: Andrew Beling. Images: Library of Congress; US National Archives; portraits from Wikimedia Commons, '
+                'public domain. Synthetic narration (Kokoro); score synthesised.'),
     dict(id='burr', card='Burr’s secret letters', title='Aaron Burr’s two ciphers, 1804 and 1808',
          src='burr1804.mp4?v=2', vtt='burr1804.vtt?v=2', poster='burr1804_poster.jpg', secs=215,
          about='The Burr–Hamilton duel in cut paper, then Burr’s cipher letter to Joseph Alston a week later, deciphered sign by '
