@@ -1,0 +1,23 @@
+# Translation of cc. 78r-79r, Ercole Gonzaga to Ferrante Gonzaga, Mantua, 4 May 1544
+
+Same blocks and the same holes as `reading_0078_0079.md`.
+
+EN[A01-A06]: When the master of the horse was sent to Casale it was thought that the French meant to advance and follow up the victory; and since the marquis del Vasto had kept back no more than two thousand foot, with whom he had to defend the State of Milan or Piedmont, this was plain: Casale stood in very great danger unless we took its defence on ourselves.
+
+EN[A06-A13]: On that view the master of the horse was sent, and it did not seem to us so unreasonable to order him to give the French victuals and passage if he could not turn to the marquis del Vasto for help, and to admit no imperial troops into the town without our consent, so that we could first see carefully what troops they were and whether they would be enough to defend Casale; meaning always, whenever the marquis del Vasto should be strong enough, to turn to him for help,
+
+EN[A13-A19]: as l'Abbadino will have told Your Excellency, and after him the count of Landriano, and as you will finally have seen from the copies sent you from Madama our marchioness. And now more than ever [I am] resolved to do what we are bound to do for His Majesty, matters, thank God, being at a point where the marquis del Vasto can help us and promises to do so at need, as Your Excellency will see from the copies being sent to messer Camillo.
+
+EN[A19-A24]: Your Excellency may rest easy that sooner than fail in my duty I will leave my life there and all I have in the world. It is true that [?I would wish], if it were possible, to lose none of the states of my house; and even if that of Monferrato had to be lost, I would not want to hazard this other one here, whose importance everyone knows.
+
+EN[A24-B01]: I see the danger I am in of seeming a poor servant of His Majesty and a friend of fortune if I govern myself for the good of my house; on the other hand, if one or other of these states were lost, I know the blame [...] and the trouble I could be given [...] when the duke comes of age. Among these difficulties I have no better course than to turn to God and pray him to help me so that I lose on neither side.
+
+EN[B02-B08]: [If] I were free, as many other servants of His Majesty are, and did not have this state of my nephew in my charge, I would show the whole world how willing I am to serve him; and for all that I will show it still, but more guardedly for the reason given, which will never be such as to make me fail in the duty of a good and faithful vassal to the Emperor; and Your Excellency may assure His Majesty of it freely.
+
+EN[B08-B15]: I have sent to Mirandola since the cardinal of Ferrara passed through; the count of Mirandola went to meet him at Bondeno. As far as can be gathered, the cardinal told him only that he could give him no decision until he had negotiated with the Signoria, and that he would then inform him fully of everything.
+
+EN[B15-B24]: This man, who is messer Dominichino, assures me that no news or commission has yet come from the king since the victory, and that the count and Pietro Strozzi had written to the king that they have some six thousand men together and were waiting only for the commission; that he was to go to Venice, but that a letter had come from the king's ambassador in Venice saying he would send a man to Mirandola within two days, who, it is thought, after taking counsel with the cardinal of Ferrara, is to send word of what is to be done.
+
+EN[B24-C06]: From what he says he has gathered, from the comings and goings and from the people who come and go unrecognised, without the count himself having told him, he thinks they have designs on Tuscany, because while he was there two strangers came, one from Pisa and the other from Livorno, and from what he was told men come from those parts and go there every day. And he says he can in no way conjecture that they are to cross the Po taking artillery with them, since a bridge would have to be made, and he does not see that anyone is thinking of it.
+
+EN[C06-C15]: He will soon go back there and return here, and I will not fail to report whatever I learn. And [if] the reports seem to you to contradict each other, forgive me: I can only say what I hear, letting you know by what channel I know it. I do seem to gather from these various reports, which come from people very close to the count, that matters are handled in great secrecy, and that few know the truth of their designs. An account of everything has been given to [?the marquis] and also to the Duke of Florence.
