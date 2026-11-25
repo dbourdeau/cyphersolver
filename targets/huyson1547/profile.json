@@ -129,6 +129,12 @@
    "kind": "verification",
    "what": "Claude Opus 5.5 (PR review on merge): route Constantinople -> Augsburg (Ferdinand at the Diet when Malvezzi sent the copy, 8 Mar 1548), gaps restated, novelty wording, human_check from NOTES, distinct_symbols set unknown (63 not measured); graded A.",
    "result": "worked"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "control",
+   "what": "Held-out re-test of the frozen key on 354 cipher signs of HHStA Türkei I 8-2-24 (Ferdinand I to Malvezzi, 25 Mar 1550) against its clear draft 8-2-10 fol. 74 as transcribed by Andrew Beling (PR #945): 0.887 of characters, best of 200 shuffled keys 0.421; plan, key and transcription hashed before decoding. Transcription by one AI agent (Claude), not reviewed by a human (validation_8-2-24/).",
+   "result": "worked"
   }
  ],
  "outcome": {
@@ -166,6 +172,12 @@
     "role": "key or decipherment used",
     "note": "the decipherment made at the time of HHStA Türkei I 7-3-20 f. 44 (on f. 45), on which the alphabet was calibrated",
     "date": "2026-10-27"
+   },
+   {
+    "who": "ajbeling",
+    "role": "transcription",
+    "note": "identified and transcribed the clear draft 8-2-10 fol. 74 of HHStA Türkei I 8-2-24 (PR #945, vetting of lead 892), the reference of the held-out key test of 25 Nov 2026 (validation_8-2-24/)",
+    "date": "2026-11-25"
    }
   ],
   "gaps": [
