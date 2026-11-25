@@ -945,6 +945,15 @@ def audit(brief=False):
     for n, cs in stopped:
         print(f'   #{n} {str(entries[n].get("title", ""))[:50]}  <- ' + ', '.join(f'targets/{f}/ ({st})' for f, st, _ in cs))
     problems += len(stopped)
+    # an in-progress folder that names a catalogue number the claim rule misses leaves the entry showing Open while it
+    # is worked (catalogue 2393, George Lasry 25 Nov 2026). Listed only where the entry is open and nobody claims it.
+    missed = [(f, [i for i in ids if int(i) in entries and not entries[int(i)].get('outcome') and int(i) not in claims])
+              for f, ids in _claims.unclaimed()]
+    missed = [(f, ids) for f, ids in missed if ids]
+    print(f'K2. In-progress folders naming an open catalogue entry they do not claim: {len(missed)} (start a line with '
+          f'"Catalogue <n>." in the first 20 lines of NOTES.md if the folder works on it; otherwise ignore)')
+    for f, ids in missed:
+        print(f'   targets/{f}/  names #' + ', #'.join(ids))
     # 12. the catalogue vetting gate (_check_catalogue.py): entries from GATE_ID on need a complete vetting block
     import _check_catalogue
     fail, line = _check_catalogue.summary()
