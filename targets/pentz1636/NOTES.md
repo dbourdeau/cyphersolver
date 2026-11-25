@@ -228,7 +228,7 @@ record.
 
 ## Archival key sheet (25 Nov 2026)
 
-Files in `keysheet_260610_150/` (`SOURCE.md`, `sheet150_transcription.tsv`, `COMPARISON.tsv`, `COMPARISON.md`, `crops/`). Linked by Malcolm McBratney with Claude, 25 Nov 2026. Tags: [sourced] [measured] [derived] [unverified].
+Files in `keysheet_260610_150/` (`SOURCE.md`, `sheet150_transcription.tsv`, `COMPARISON.tsv`, `COMPARISON.md`, `crops.tsv`, `make_crops.py`; crop images not filed, re-cut from the archive's image). Linked by Malcolm McBratney with Claude, 25 Nov 2026. Tags: [sourced] [measured] [derived] [unverified].
 
 A key sheet of this cipher is in the chancery's own key file: Rigsarkivet, TKUA Almindelig del 3 nr. 112 "Chiffer", unit 260610, image 150 (`https://api.rigsarkivet.dk/ao/v1/images/48691625`, fetched 24 Nov 2026). A sister sheet with other numbers is image 149. [sourced] The sheet names no user and no date; it was matched to Pentz by its letter values. [measured]
 
