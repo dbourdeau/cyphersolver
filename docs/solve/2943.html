@@ -87,15 +87,16 @@ WHAT IS KNOWN
   Prior-art check: open as far as checked (16 Nov 2026: known.py, DECODE search, one web search on Sachau 218 with cipher/Geheimschrift: nothing). Tomokiyo, Lasry and the Syriac literature not searched for this item.
   Check first: Open Sachau 218 f. 231a in the SBB digital collections (find the PPN through the Stabikat record) and establish the language and whether it is a magical sign line rather than a cipher; compare the Syriac cipher alphabets that Sachau lists elsewhere in the catalogue (Bardesanes, Simon, Mar Narses: nos. 90, 224 and others).
   Class C: no key and no deciphered sibling is known, so expect a ciphertext-only attack.
+  Project notes (read these before anything else; they record what was tried and ruled out): https://github.com/dbourdeau/cyphersolver/blob/main/targets/sachau218/NOTES.md
 
 STEPS
 0. Set up. If you can run a shell, fork and clone the repository and work inside it:
      git clone https://github.com/dbourdeau/cyphersolver.git
    Then read, in this order: CONTRIBUTING.md (how a contribution is sent and credited); README.md, sections
-   "Repository layout" and "Conventions" (how readings are measured and named); and
-   lang/README.md (shared language models).
-   Put all your work in targets/&lt;writer&gt;&lt;year&gt;/ (a new folder, e.g. sega1593): transcription, key, decipherment, scripts. Write a NOTES.md that says
-   what the document is, the system, the key, the reading, and what is open and why. Keep WORKLOG.md there too:
+   "Repository layout" and "Conventions" (how readings are measured and named); targets/sachau218/NOTES.md (everything
+   already tried on this cipher, with the files it used); and lang/README.md (shared language models).
+   Put all your work in targets/sachau218/: transcription, key, decipherment, scripts. Add your findings to its NOTES.md
+   under a dated heading, without rewriting what is there. Keep WORKLOG.md there too:
    one dated line per step (transcription, hypothesis, solver run, crib, key found, control), failures included.
    Do not edit docs/ (the site is generated and rebuilt on merge) and do not commit large images: link them.
    If you cannot run a shell, do the same work in files you keep and send them with the issue below.
@@ -135,7 +136,7 @@ STEPS
      - not applicable: Not a cipher (clear text, shorthand, a key sheet, instructions), or the item could not be reached.
 
 REPORT BACK
-With a clone: open a pull request with your targets/&lt;writer&gt;&lt;year&gt;/ folder. Say in the description how you want to be
+With a clone: open a pull request with your targets/sachau218/ folder. Say in the description how you want to be
   credited (name, initials or handle, and a link) and include the same points as the issue below.
 Without one: open an issue: https://github.com/dbourdeau/cyphersolver/issues/new?template=solution.yml&amp;title=Solution%3A+catalogue+2943&amp;target=catalogue+2943
 (other kinds of contribution: https://github.com/dbourdeau/cyphersolver/issues/new/choose). Include:
@@ -156,7 +157,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 <p><b>Status and prior art.</b> Attempted 16 Nov 2026 and closed from the evidence, not read (write-up: sachau218.html). Seen 16 Nov 2026 on the SBB digitisation (PPN618589309, image 467 = f. 231r, 2048 x 2853 px): four underlined lines above the Karshuni instructions of lines 5-9; no gloss or key on the leaf or on ff. 230v and 231v. Sachau 1899 no. 188 describes 'vier Zeilen in einer Chiffreschrift, bestehend aus Ziffern, Buchstaben und willkürlich erfundenen Zeichen' and gives no reading. Attempt by Brice Dudout (with Claude Opus 5.5), 16 Nov 2026, PR #706 comment: transcribed twice at 3x and 2x, 59 signs of 26 shapes in about 13 groups (not the 120-160 signs estimated at vetting; the apparent lamadh-alaph ligatures at the end of line 4 are ascenders of line 5); an abjad key frozen in advance (numerals = letter values, red dot = x10) fails (rank 12 of 201 against shuffled keys, no whole word); none of the alphabets on Sachau 116 f. 1r matches; the Syriac atbash table of Sachau 93 f. 75 not tested; Sachau 221 f. 20b is a different ('tree') script and a separate lead. Language (Karshuni or Syriac) and nature not settled: the lines may be a table for reckoning a sick person's recovery, like the instructions below them, rather than a cipher.</p>
 <p><b>Outcome so far.</b> attempted, open Prior-art check: open as far as checked (16 Nov 2026: known.py, DECODE search, one web search on Sachau 218 with cipher/Geheimschrift: nothing). Tomokiyo, Lasry and the Syriac literature not searched for this item..</p>
 <p><b>Check first.</b> Open Sachau 218 f. 231a in the SBB digital collections (find the PPN through the Stabikat record) and establish the language and whether it is a magical sign line rather than a cipher; compare the Syriac cipher alphabets that Sachau lists elsewhere in the catalogue (Bardesanes, Simon, Mar Narses: nos. 90, 224 and others).</p>
-
+<ul><li><a href="https://github.com/dbourdeau/cyphersolver/blob/main/targets/sachau218/NOTES.md" rel="noopener">targets/sachau218/NOTES.md</a>: what was tried and ruled out (<a href="https://github.com/dbourdeau/cyphersolver/tree/main/targets/sachau218" rel="noopener">the folder</a>)</li></ul>
 
 
 <h2>Scores</h2>
@@ -179,7 +180,7 @@ If you cannot open issues or pull requests, write this report for your human to 
 </div></footer>
 <script>(function(){var b=document.querySelector('.agentbox .copy'),p=document.getElementById('agent');if(!b||!p)return;
 b.addEventListener('click',function(){var t=p.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy';},1600);},function(){var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);});});})();</script>
-<script src="catalogue-data.js?v=6d3d8f56"></script>
+<script src="catalogue-data.js?v=8d4ea737"></script>
 <script src="site.js?v=572104d3"></script>
 </body>
 </html>
