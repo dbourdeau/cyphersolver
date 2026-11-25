@@ -88572,6 +88572,89 @@
    "repository": "unidentified"
   },
   {
+   "id": 2884,
+   "counted": true,
+   "year": 1200,
+   "date": "undated Geniza fragment (PGP gives no date; paper)",
+   "title": "Paper fragment with eleven lines in an unidentified sign script; Arabic-script text on the other side",
+   "correspondents": "unknown",
+   "place": "Egypt (Cairo Geniza)",
+   "language": "unknown (Arabic or Judaeo-Arabic expected: the other side is in Arabic script)",
+   "period": "unknown",
+   "shelfmark": "Cambridge University Library, T-S K24.24 (PGPID 33913; the Arabic side is PGPID 32108)",
+   "folio_note": "one side: 11 lines of signs, roughly 20-25 signs a line (about 250 signs), with long slanted strokes and dots between groups; a narrow column of fainter signs down the right margin. Other side: 6-7 lines of large Arabic script (PGP: letter? 'al-mawla' mentioned)",
+   "cls": "C",
+   "status": "PGP 33913: 'Magical fragment, perhaps. Unidentified alphabet or cipher', tags cipher, magic; no scholarship record. Seen at native resolution: some signs resemble Hebrew bet, he, het and samekh, others are loops and crossed forms; it is running text in lines, not a row of charakteres. Not on DECODE. No vetting block: the T-S K box is the magic box, and the Schaefer-Shaked edition and Bohak's inventory of Geniza magical fragments were not opened.",
+   "why": "About 250 signs of continuous text with word dividers: the longest unread sign-script text found in the Geniza pass, long enough for a substitution attack if the language is Arabic.",
+   "importance": 2,
+   "solvability": 3,
+   "difficulty": 4,
+   "verify": "Check Schaefer and Shaked, Magische Texte aus der Kairoer Geniza I-III (index of T-S K fragments) and Bohak's catalogue of Geniza magical fragments for K24.24; ask the Princeton Geniza Project; rule out a known script (a cursive of Coptic, Syriac or a shorthand) before treating it as a cipher; read the Arabic side for a date or names.",
+   "links": [
+    {
+     "label": "PGP 33913",
+     "href": "https://geniza.princeton.edu/en/documents/33913/"
+    },
+    {
+     "label": "PGP 32108 (Arabic side)",
+     "href": "https://geniza.princeton.edu/en/documents/32108/"
+    },
+    {
+     "label": "CUDL image, sign side (IIIF)",
+     "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00024-000-00001.jp2/full/full/0/default.jpg"
+    }
+   ],
+   "prior_art": "none found, edition not checked (15 Nov 2026: PGP records, one web search on the shelfmark, DECODE; Schaefer-Shaked and Bohak's inventory not opened)",
+   "needs_archive_scan": "no",
+   "access_note": "CUDL IIIF by plain curl; 'full' is capped at 2000 px, native 3806 x 3664 px by regions",
+   "region": "Other",
+   "source": "Arabic sweep 15 Nov 2026 (part A)",
+   "score_note": "Scored in the Arabic sweep of 15 Nov 2026, part A (research/sweep_2026-11-15_arabic/part_A.md); image viewed at full size",
+   "seen": "image",
+   "ark": "",
+   "scored": "vetted",
+   "vetting_note": "Not established as a cipher rather than an unidentified script. The sign side is real running text with no gloss, it is not edited in Schäfer-Shaked MTKG I-III (tables of contents of all three volumes read), and nothing published on it was found; but nobody has ruled out a known script (the Geniza holds Indian-script letters that were long unidentified: Bohak's Devanagari T-S AS 159.247-248, Fragment of the Month March 2008), and Bohak's inventory of Geniza magical fragments and the MTKG Geniza-Fragmente indices (Bd. I-III) were not opened. Next step: a palaeographer's identification (Bohak or Elbaum, Princeton Geniza Project) and the MTKG registers; if no script matches, the lead can be written open. (research/vetting_2026-11-15_arabic_1/vetting.json)",
+   "vetting": {
+    "date": "2026-11-25",
+    "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+    "verdict": "open",
+    "seen": {
+     "kind": "scan",
+     "where": "Cambridge Digital Library IIIF, https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00024-000-00001.jp2 (native 3806 x 3664 px, fetched by regions), recto and verso; viewed in the 15 Nov 2026 sweep and again at native resolution for a sign-by-sign transcription on 25 Nov 2026.",
+     "extent": "One paper fragment. Recto: ten lines of slanted, connected brush cursive by the 25 Nov count (the 15 Nov count said eleven), about 230 signs in 42 shape classes (15 firm, 178 likely, 35 doubtful), with a lighter finer-pen layer in the right margin. Verso: about nine lines of bold Arabic (PGP 32108).",
+     "cipher": "Running text in an unidentified sign script, one hand, with no plaintext, gloss, key or transcription written on or filed with the leaf. Not Bohak's ring-letter cipher (K24.19/23, compared by eye); several shapes resemble Hebrew semi-cursive letters, but a bet-like sign at 14 percent does not fit Hebrew. Sign bigrams show structure (conditional entropy z -4.1 against shuffles) and six classes make up 46 percent of the signs; no numerals."
+    },
+    "prior_art": {
+     "decode": "DECODE harvest (research/catalogue_harvest/decode) grepped 25 Nov 2026 for Geniza, Taylor-Schechter, K24.24: 0 records.",
+     "tomokiyo": "cryptiana unsolved.htm fetched 25 Nov 2026, grepped for Geniza, Genizah, Taylor, K24.24: no hit.",
+     "lasry": "cryptiana GL.htm fetched 25 Nov 2026, grepped for Geniza, Genizah, Taylor, K24.24: no hit.",
+     "edition": "Princeton Geniza Project record 33913 (entered by Alan Elbaum 2021): 'Magical fragment, perhaps. Unidentified alphabet or cipher', no transcription, no bibliography; the Arabic side is PGP 32108. Not edited in Schaefer-Shaked, Magische Texte aus der Kairoer Geniza I-III (tables of contents read 15 Nov 2026) and not in Bohak's 2010 cipher family list (research/sweep_2026-11-25_geniza_literature/README.md).",
+     "literature": "Web searches on 'T-S K24.24' with cipher and secret script (15 and 25 Nov 2026): only PGP and Cambridge pages. Bohak's inventory of Geniza magical fragments and the MTKG Geniza registers were not opened; a known script (Indic, Coptic, Syriac, a shorthand) has not been ruled out by a palaeographer."
+    },
+    "key_check": "No key is known. The Bohak 2010 ring-letter key (K24.19) does not apply to these shapes by eye; no other key from the Geniza sweeps matches.",
+    "duplicates": "grep of leads.json, catalogue.json and the sweep READMEs for 'K24.24' and '33913' (25 Nov 2026): only this lead and its sweep rows. targets/tsk2424 is the owner's working target, not a duplicate.",
+    "searches": [
+     {
+      "query": "DECODE harvest grep: Geniza, Taylor-Schechter, K24.24",
+      "result": "0 records."
+     },
+     {
+      "query": "cryptiana unsolved.htm and GL.htm grep: Geniza, Genizah, Taylor, K24.24",
+      "result": "0 hits each."
+     },
+     {
+      "query": "PGP 33913 and related document 32108",
+      "result": "Description only, no scholarship, no bibliography."
+     },
+     {
+      "query": "web: 'T-S K24.24' cipher secret script",
+      "result": "PGP and Cambridge pages only; no reading."
+     }
+    ]
+   },
+   "repository": "unidentified"
+  },
+  {
    "id": 2886,
    "counted": true,
    "year": 1217,
@@ -121359,6 +121442,161 @@
    },
    "repository": "asf",
    "scored": "vetted"
+  },
+  {
+   "id": 3849,
+   "counted": true,
+   "year": 1830,
+   "date": "30 Oct 1830",
+   "title": "Anthony Butler, United States chargé d'affaires in Mexico, private letter partly in \"my private Cypher\" (55 code numbers and 4 signs among plain English)",
+   "correspondents": "Anthony Butler → addressee not established (the endorsement's second line is an abbreviation, read \"To J. S. M—\"; Narváez 2019 names Charles Th. O'Gorman)",
+   "place": "Mexico City",
+   "language": "English",
+   "region": "Americas",
+   "period": "1801-1900",
+   "shelfmark": "NARA RG 59, Despatches from United States Ministers to Mexico, microfilm M97, roll 6 (\"Volume 5\", National Archives Catalog item 189100166), frame 233",
+   "folio_note": "frame 233: one leaf, two pages, \"Mexico 30 October 1830\", \"Dear Sir\", unsigned; code numbers from the second paragraph on, standing among plain words: 55 numbers (54 whole, one cut off in the film's gutter), 43 different values from 1 to 614, separated by full stops, and 4 signs (an open triangle, a blotted triangle, an X, a small flourish). Endorsed below the text \"Mr Butler / To J. S. M— / my private Cypher\" (the initials doubtful)",
+   "cls": "C",
+   "status": "Seen on the frame image (21 Nov 2026), transcribed twice, the second time blind. No decipherment over the numbers or in the margins; frames 232 and 234 have none, the catalog's machine text of frames 230-231 and 235-236 shows none, and that text of the whole roll has no other page in this number style. Tested against the State Department code of the period in which 1385 = the: a frozen test with three context probes missed (probes fixed before any look-up, 0 of 3); no number is above 660, against 65% in Butler's 1834 letters in that code. The plan and result are held locally, not in this folder. Weber (1979) cites the letter for the words \"my private cypher\" and guesses a nomenclator; Narváez (2019, p. 131 and nn. 45-46) says the cipher passages have no clear text in the archive's copy. Not found on DECODE; not in the repository (known.py).",
+   "why": "The only text known to us in the private cipher of Jackson's agent in Mexico, written while he was negotiating the treaty of commerce; its plain words speak of \"sharp sparring\" and of matters in doubt.",
+   "importance": 3,
+   "solvability": 1,
+   "difficulty": 4,
+   "score_note": "Scored from the frame image during the Nov 2026 search of Anthony Butler's papers on NARA M97 (research/sweep_2026-11-22_ajbeling_mexico/); viewed",
+   "verify": "Open Bosch García, Documentos de la relación de México con los Estados Unidos, vol. II (UNAM 1983), at 30 Oct 1830 (its host did not answer on 22 Nov 2026); look for more text in the same cipher among Butler's private letters of 1829-31 (Van Buren and Jackson papers, Library of Congress); open frames 214-229 and 237-247 of roll 6 as images.",
+   "links": [
+    {
+     "label": "M97 roll 6, frame 233",
+     "href": "https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-006/M97-006-0233.jpg"
+    },
+    {
+     "label": "M97 roll 6 (\"Volume 5\"), National Archives Catalog item 189100166",
+     "href": "https://catalog.archives.gov/id/189100166"
+    }
+   ],
+   "seen": "image",
+   "source": "NARA M97 (Anthony Butler) search",
+   "prior_art": "open as far as checked (22 Nov 2026): known.py, DECODE (Butler, O'Gorman), the Cryptiana snapshot unsolved.htm, a web search; Weber 1979 ch. 7 n. 31 and Narváez 2019 p. 131 nn. 45-46 mention the letter and print no reading; the Bosch García edition (UNAM 1983) not opened",
+   "needs_archive_scan": "no",
+   "access_note": "Frame image free on the National Archives Catalog, no login (about 1.5 MB, JPEG).",
+   "ark": "",
+   "scored": "vetted",
+   "vetting": {
+    "date": "2026-11-25",
+    "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+    "verdict": "open",
+    "seen": {
+     "kind": "scan",
+     "where": "National Archives Catalog, NARA RG 59 M97 roll 6 frame 233, https://catalog.archives.gov/medialz/dc-metro/rg-059/603720/M97/M97-006/M97-006-0233.jpg (4024 x 3576 px, viewed at 1600 px wide and checked against the sweep transcription), 25 Nov 2026.",
+     "extent": "One leaf, two pages: letter of Mexico, 30 October 1830, \"Dear Sir\", unsigned, about 30 lines. From the second paragraph on, numbers separated by full stops stand among plain English words (for example \"Some sharp sparring has 527 recently very polite and conciliatory\"), 55 numbers with values from 1 to 614 and 4 signs (open triangle, blotted triangle, X, flourish); endorsed \"Mr Butler / To J. S. M. / my private Cypher\".",
+     "cipher": "A numeric nomenclator written into a plain English letter: whole numbers for words and phrases, signs for further values, plain words kept for the rest. No decipherment is written over the numbers, in the margins or on the neighbouring frames, and no key is filed with the letter."
+    },
+    "prior_art": {
+     "decode": "decode_search.py, 25 Nov 2026: \"Butler\" 1 record (BL Egerton MS 2550 f 31, 1646-58, unrelated), \"Anthony Butler\" 0, \"O'Gorman\" 0, \"Mexico 1830\" 0 records for this item.",
+     "tomokiyo": "cryptiana.web.fc2.com/code/unsolved.htm fetched 25 Nov 2026 and grepped for Butler and Mexico: no hit.",
+     "lasry": "cryptiana.web.fc2.com/code/GL.htm (Lasry's decipherments) fetched 25 Nov 2026 and grepped for Butler and Mexico: no hit.",
+     "edition": "Bosch Garcia, Documentos de la relacion de Mexico con los Estados Unidos, vol. II (Butler), UNAM, read as PDFs at historicas.unam.mx (docs 1-250, 25 Nov 2026): the contents list for autumn 1830 has 29 Oct (Mexico to Tornel), 1 Nov, 5 Nov (Butler to the consul) and 13 Nov (Butler to Van Buren), no item of 30 Oct 1830, so this letter is not printed there. Butler's despatch of 1829-30 complains that two of his private letters in cipher were never acknowledged (doc. 2 of the Department of State volume).",
+     "literature": "Weber 1979 ch. 7 n. 31 and Narvaez 2019 p. 131 nn. 45-46 cite the letter and print no reading (sweep of 22 Nov 2026); a web search of 25 Nov 2026 on \"my private cypher\" Butler 1830 found no decipherment."
+    },
+    "key_check": "The State Department code of the period was tried in a frozen test by the sweep (22 Nov 2026) and missed three context probes; no number exceeds 614 against 65 percent above 660 in Butler's 1834 letters in that code, so it is a different code. No Butler private code is known.",
+    "key_held": "State Department code of the 1830s (1385 = the): tested by the sweep, not a match.",
+    "duplicates": "known.py \"Anthony Butler\" and \"M97\" (25 Nov 2026): only this lead and its sweep row; no catalogue entry or target holds the letter.",
+    "searches": [
+     {
+      "query": "decode_search.py Butler, Anthony Butler, O'Gorman, Mexico 1830",
+      "result": "No DECODE record of this letter; only an unrelated 1646 Egerton row."
+     },
+     {
+      "query": "Bosch Garcia Documentos vol. II (UNAM PDFs docs 1-250), search for 30 Oct 1830, cifra, cypher",
+      "result": "Letter not in the edition; cifra marks occur only in other despatches (docs of 1830-31) where the cipher passage is bracketed and not read here."
+     },
+     {
+      "query": "Cryptiana unsolved.htm and GL.htm text search for Butler, Mexico",
+      "result": "Not listed on either page."
+     },
+     {
+      "query": "web: Anthony Butler \"my private cypher\" 1830 Mexico decipher",
+      "result": "Only the Bosch Garcia PDFs, Cambridge Americas article on the mission and Weber/Narvaez notes; no reading."
+     }
+    ]
+   },
+   "repository": "nara"
+  },
+  {
+   "id": 3855,
+   "counted": true,
+   "seen": "image",
+   "source": "Thorough Geniza sweep 25 Nov 2026 (PGP metadata dump + CUDL IIIF)",
+   "prior_art": "open as far as checked (25 Nov 2026: PGP dump, web search; see vetting)",
+   "needs_archive_scan": "no",
+   "correspondents": "unknown scribe",
+   "place": "Fustat/Cairo (Geniza)",
+   "access_note": "CUDL IIIF by plain curl: images.lib.cam.ac.uk/iiif/<id>-000-0000N.jp2/full/<w>,/0/default.jpg",
+   "shelfmark": "Cambridge University Library, T-S K24.37",
+   "pgpid": 32699,
+   "title": "Geniza paper sheet with eight lines in an invented angular script, dash-divided",
+   "year": 1200,
+   "date": "undated Geniza (K box, magic and mixed); unassessed",
+   "language": "unknown (invented script, possibly Judaeo-Arabic)",
+   "period": "unknown",
+   "folio_note": "one side, eight lines of dash-divided groups of 20-35 signs, lower part inside a dashed frame; verso not checked for text",
+   "status": "PGP: \"mysterious writing, might be mirror-image Hebrew script, needs examination\". Image shows it is not mirror Hebrew: an invented angular alphabet with dashes between sign groups.",
+   "why": "About 200 signs of one invented alphabet in word-divided lines, on a sheet from the same K24 box as the Bohak ring-letter cipher (K24.19/23) but in a different sign shape (angular, dash-divided); possible sibling of T-S K24.24.",
+   "verify": "Transcribe the 8 lines; compare sign inventory with K24.24 and with the Bohak key; test for Judaeo-Arabic by word-shape (dash groups).",
+   "importance": 3,
+   "solvability": 3,
+   "difficulty": 3,
+   "cls": "B",
+   "region": "Other",
+   "links": [
+    {
+     "label": "PGP 32699",
+     "href": "https://geniza.princeton.edu/en/documents/32699/"
+    },
+    {
+     "label": "CUDL image",
+     "href": "https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00037-000-00001.jp2/full/full/0/default.jpg"
+    }
+   ],
+   "vetting": {
+    "date": "2026-11-25",
+    "by": "Daniel Bourdeau; Claude Code session (Claude Sonnet 5.5), 25 Nov 2026",
+    "verdict": "open",
+    "seen": {
+     "kind": "scan",
+     "where": "Cambridge Digital Library IIIF, https://images.lib.cam.ac.uk/iiif/MS-TS-K-00024-00037-000-00001.jp2 (native 5673 px wide) at 1800 px, recto, 25 Nov 2026; verso at 900 px.",
+     "extent": "One paper sheet: eight lines of 20 to 35 signs each, groups divided by dashes, the lower three lines inside a ruled and dashed frame, about 200 signs.",
+     "cipher": "An angular, hooked sign script, one hand, dash-divided groups, not Hebrew, Arabic or Coptic letters and not the ring-ended signs of the Bohak cipher (K24.19/23); no plaintext, gloss, key or transcription is written on or filed with the sheet."
+    },
+    "prior_art": {
+     "decode": "decode_search.py, 25 Nov 2026: Geniza, Genizah, Taylor-Schechter, Cairo, Judaeo-Arabic: 0 records each.",
+     "tomokiyo": "cryptiana unsolved.htm fetched 25 Nov 2026, grepped for Geniza, Genizah, Cambridge Univ: no hit.",
+     "lasry": "cryptiana GL.htm fetched 25 Nov 2026, grepped for Geniza and Cambridge Univ: no hit.",
+     "edition": "Princeton Geniza Project record 32699 (25 Nov 2026): description \"mysterious writing, might be mirror-image Hebrew, needs examination\", no transcription, no scholarship page (404), no footnote; the Bohak 2010 family list in research/sweep_2026-11-25_geniza_literature/README.md does not include it.",
+     "literature": "Web search 25 Nov 2026 on \"T-S K24.37\" with cipher and secret script: only PGP pages. The literature survey of 25 Nov 2026 judged it a possible mirror imprint; the sheet seen here is written in ink on this side in an invented alphabet, so the mirror idea does not fit."
+    },
+    "key_check": "No key is known. Bohak 2010 key (K24.19 ring letters) does not apply to the angular signs; T-S K24.24 is the nearest sheet from the same box and is itself unread.",
+    "duplicates": "known.py \"K24.37\", \"32699\" (25 Nov 2026): only this lead, its sweep row and the sweep READMEs; targets/tsk2437 is the owner's working target and is not part of this vetting. Promotion of K24.37 was approved by the owner on 25 Nov 2026.",
+    "searches": [
+     {
+      "query": "decode_search.py Geniza, Genizah, Taylor-Schechter, Cairo, Judaeo-Arabic",
+      "result": "0 records for each."
+     },
+     {
+      "query": "PGP document 32699 and /scholarship/",
+      "result": "Description only; scholarship page 404."
+     },
+     {
+      "query": "web: \"T-S K24.37\" cipher secret script Bohak",
+      "result": "PGP and Cambridge pages only; no reading."
+     }
+    ]
+   },
+   "date_range_note": "period given by the sweep: 1101-1300",
+   "score_note": "Scored during the 25 Nov 2026 thorough Geniza sweep (research/sweep_2026-11-25_geniza_thorough/); image viewed by the sweep",
+   "ark": "",
+   "scored": "vetted",
+   "repository": "unidentified"
   }
  ]
 }
