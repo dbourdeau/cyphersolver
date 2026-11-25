@@ -1,4 +1,4 @@
-# No. 29, fr. 244 (view 244): three blind sign-shape sheets, 24 Nov 2026 (Brice Dudout, with Claude)
+# No. 29, fr. 244 (view 244): five blind sign-shape sheets, 24-25 Nov 2026 (Brice Dudout, with Claude)
 
 Status: decoded, not read (unchanged). This folder adds a new pass on view 244 only. It does not replace the
 blind16 figure of record (77.4% on views 244-245, `../../blind16/no29_fr244-245/`), and it changes none of
@@ -27,6 +27,10 @@ The rules were written and hashed before any thumbnail was cut (in French, byte 
 | B | `sheet-B-rule.md` | d4049497... |
 | C | `sheet-C-rule.md` | 84b3140b... |
 | C, amendment | `sheet-C-rule-amendment.md` | d4acb00c... |
+| D | `sheet-D-rule.md` | 04430d92... |
+| D, amendment (boxes) | `sheet-D-rule-amendment.md` | 44e9b799... |
+| E | `sheet-E-rule.md` | 2081e579... |
+| E, amendment (boxes) | `sheet-E-rule-amendment.md` | 59fd0751... |
 
 The C amendment replaced a doubtful e control with u and recentred the boxes, before the answers. The keys
 (`sheet-*-key.json`) were opened only after the answers (`sheet-*-answers.json`) were exported.
@@ -77,6 +81,30 @@ The rule was then applied to the rest of view 244. A word is counted only if all
 
 This reads 29 more words (34 letters), e.g. final n in werden, sein, einen, denen, and several "undt".
 
+## Sheet D: the g/q/y family (12 targets, 3 controls 3/3), 25 Nov 2026
+Sheets A and B re-entered 13 g->q and 4 q->g, so the q form of this hand is distinct from g. Sheet D checks the rest of
+that family on view 244 (words whose only failing letters are g/q/y) and asks again the two places of sheet B that were
+badly boxed.
+- Controls: the q of "zhqu" (L25), the g of "fgqu" (L32) and the initial q of "qzwbzx" (L36): 3/3 right.
+- 11 of 12 targets were seen as a different form from the transcription: 9 g->q (one of them y->q) and 2 q->g.
+  10 words read, all sure (frozen key, no new value): placeas, nochmahls, hochnachdencklich, mochte (L18, the sheet B
+  place asked again), sondern, garnison, secundum, cuiuis (cuivis), cum (L39), cum (L42).
+- **comen** (L26, judge "komen"): Brice saw q, not y. The frozen key gives "comen": c for k, as in "erclaret" (sheet B)
+  in the same hand. Counted **{probable}**.
+- L26 "urdsdhyif" (sheet B place asked again): y seen as transcribed. The scribe wrote y (k) for g (o); the word stays E.
+- The four group-initial targets (L26, L38, L39, L42) were all seen q. So the failing initials are twin-form slips of the
+  transcription, not a constant scribal fault. L22 "ggfliz" (seen g on sheet A) is the only exception so far.
+- Decision: g and q stay two signs. Merging them would break sure words, and the key is unchanged.
+
+## Sheet E: the last g/q places (4 targets, 3 controls 3/3), 25 Nov 2026
+Sheet D left L40 "ghx", L7 "ggflizglrb" (two failing letters, asked one sign per question) and L22 "ggfliz". L22 was asked
+again because the sheet A box (12 x 25 px) cut off the tail that tells g from q, and sheet A had no valid g control.
+- Controls: the g of "bqfedif" (L25), the initial q of "ghrhrb" (L38) and the g of "ozifrbqf" (L29), all sure words from
+  sheet D: 3/3 right.
+- 3 g->q re-entered. 2 words read, both sure: cum (L40) and contractis (L7, both letters seen q).
+- L22 "ggfliz": g seen again, with the whole letter boxed. The scribe wrote g (o) for c; the word stays E.
+- The g/q family of view 244 is done: only L4 "xzguld" and L22 "ggfliz" are left, both seen as transcribed.
+
 ## Counts (view 244, 432 rows of judge.tsv)
 
 | stage | words read | E letters | S letters (of 2438) |
@@ -85,14 +113,17 @@ This reads 29 more words (34 letters), e.g. final n in werden, sein, einen, dene
 | after sheet A | 198 (45.8%) | 174 | 1971 (80.8%) |
 | after sheet B | 208 (48.1%) | 164 | 1981 (81.3%) |
 | after sheet C targets | 217 (50.2%) | 155 | 1990 (81.6%) |
-| after the extension | **246 (56.9%)** | 121 | 2024 (83.0%) |
+| after the extension | 246 (56.9%) | 121 | 2024 (83.0%) |
+| after sheet D | 257 (59.5%) | 110 | 2035 (83.5%) |
+| after sheet E | **259 (60.0%)** | 107 | 2038 (83.6%) |
 
-Without any {probable} word: 206/432 (47.7%). `judge_fr244_after.tsv` is the 432 view-244 rows of judge.tsv after
-all of this, with a `change` column. `count-after-sheet-C.json` holds the counts.
+Without any {probable} word: 206/432 (47.7%) after the extension, 216/432 (50.0%) after sheet D, 218/432 (50.5%) after sheet E.
+After sheet E, by Daniel's categories: 218 sure, 41 {probable}, 76 restored (reading given by sense, not read by the key),
+39 unresolved, 58 symbols or blots with no value. That is 60.0% read, below 95%: the status stays decoded, not read.
+`judge_fr244_after.tsv` is the 432 view-244 rows of judge.tsv after all of this, with a `change` column. `count-after-sheet-C.json`, `count-after-sheet-D.json` and `count-after-sheet-E.json` hold the counts.
 
 ## Next
 - An eye check of the extension, family by family.
-- The two badly boxed targets of sheet B.
 - View 245.
 
 ## Credit
@@ -100,3 +131,7 @@ all of this, with a `change` column. `count-after-sheet-C.json` holds the counts
 - Prior work on the target: A. J. Beling.
 - Blind reader of the sign forms: Brice Dudout.
 - Sheets built, scored and integrated by Claude (AI agent).
+
+## Redaction
+
+`sheet-D-key.json` and `sheet-E-key.json`: an internal French working note (`_note`) was removed before publication. Original SHA256 of the sheet D key: e04a76c49362b4cb523c367e86aee6d0f0438904830d42cf1aef1268cfc08ce2.
